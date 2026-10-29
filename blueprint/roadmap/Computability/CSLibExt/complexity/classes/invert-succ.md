@@ -5,16 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Classes.invertSucc
 ---
 
-# Invert Succ
+# Inversion success probability
 
-Inversion success probability of a uniform probabilistic inverter `inv`
-against a one-way function family `f` at length `n` with `m` random coins:
-the fraction of pairs `(x, coins)` for which decoding
-`inv (n, f n x, coins)` back to `n` bits is a genuine preimage of `f n x`.
-The inverter receives the security parameter `n` explicitly: for variable
-output lengths it could not otherwise recover `n` from `f n x` alone, and
-the prefix-by-prefix inversion in the proof of `OWF ⇒ P ≠ NP` needs `n`.
-Success is over uniform `x` and uniform coins.
+**Inversion success probability.** Let $f$ be a family of functions, $f_n$ mapping $n$-bit
+strings to bitstrings, and let $A$ be an inverter mapping a triple $(n, y, r)$ of a length $n$,
+an output $y$ and a coin string $r$ to a bitstring. For natural numbers $n$ and $m$, the
+inversion success probability of $A$ against $f$ at length $n$ with $m$ coins is the fraction of
+the $2^{n+m}$ pairs $(x, r)$ of an $n$-bit string $x$ and an $m$-bit string $r$ such that
+$f_n(x') = f_n(x)$, where $x'$ is the $n$-bit string whose $i$-th bit is the $i$-th bit of
+$A(n, f_n(x), r)$, or false when that output has no $i$-th bit.
+
+The inverter receives the length $n$ explicitly: when output lengths vary, it could not
+otherwise recover $n$ from $f_n(x)$ alone.
 
 ## Depends on
 

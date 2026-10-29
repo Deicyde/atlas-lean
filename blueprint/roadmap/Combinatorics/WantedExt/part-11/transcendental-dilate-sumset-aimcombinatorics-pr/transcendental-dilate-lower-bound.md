@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TranscendentalDilateSumsetAIMCombinatoricsProblem264Wanted.transcendentalDilateLowerBound
 ---
 
-# Transcendental Dilate Lower Bound
+# Lower bound for sums of transcendental dilates
 
-There is an absolute `c > 0` such that `|A + αA| ≥ e^{c √(log |A|)} |A|` for every finite set
-`A` of reals and every real `α` transcendental over `ℚ`.
+**Lower bound for sums of transcendental dilates.** There is a real constant $c > 0$ such that
+for every real number $\alpha$ transcendental over $\mathbb{Q}$ and every finite set $A$ of real
+numbers,
+
+$$e^{c\sqrt{\log |A|}}\,|A| \le |A + \alpha \cdot A|,$$
+
+where $A + \alpha \cdot A = \{a + \alpha b : a, b \in A\}$.
 
 ## Depends on
 

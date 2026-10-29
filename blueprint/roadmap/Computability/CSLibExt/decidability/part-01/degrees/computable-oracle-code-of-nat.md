@@ -12,14 +12,14 @@ lean: Cslib.Decidability.computable_oracleCodeOfNat
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
+- [Oracle codes](oracle-code.md)
 - [Whether a code number decodes](decode-is-some.md)
-- [Decode Oracle Code](decode-oracle-code.md)
+- [Decoding oracle codes](decode-oracle-code.md)
 - [Decoder soundness](decode-oracle-code-fuel-sound.md)
 - [The computable decoder inverts the encoder](decode-oracle-code-encode.md)
-- [Encode Oracle Code](encode-oracle-code.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
 - [The definedness predicate is primitive recursive](nat-primrec-decode-is-some.md)
-- [Oracle Code Of Nat](oracle-code-of-nat.md)
+- [Effective enumeration of oracle codes](oracle-code-of-nat.md)
 
 ## Proof depends on
 

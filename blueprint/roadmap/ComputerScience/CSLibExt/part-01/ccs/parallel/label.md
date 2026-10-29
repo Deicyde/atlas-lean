@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.CCS.Label
 ---
 
-# Label
+# CCS labels
 
-CCS labels: a silent action, an input, or its complementary output.
+**CCS labels.** For a set of names, a CCS label is either the silent action $\tau$, the input
+on a name $a$, or the output on a name $a$.
 
 ## Depends on
 

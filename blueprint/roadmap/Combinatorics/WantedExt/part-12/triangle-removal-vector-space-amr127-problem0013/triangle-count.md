@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TriangleRemovalVectorSpaceAMR127Problem0013Wanted.triangleCount
 ---
 
-# Triangle Count
+# Number of triangles in a subset of $\mathbb{F}_2^n$
 
-The number of pairs `(x, y) ∈ 𝔽₂ⁿ × 𝔽₂ⁿ` with `x, y, x + y ∈ A`; divided by `4ⁿ` it is the
-probability `Pr_{x,y}[x, y, x + y ∈ A]` for independent uniform `x`, `y`.
+**Number of triangles in a subset of $\mathbb{F}_2^n$.** For $A \subseteq \mathbb{F}_2^n$,
+the triangle count of $A$ is the number of ordered pairs $(x, y) \in A \times A$ with
+$x + y \in A$. Divided by $4^n$, it is the probability that $x, y, x + y \in A$ for independent
+uniform $x, y \in \mathbb{F}_2^n$.
 
 ## Depends on
 

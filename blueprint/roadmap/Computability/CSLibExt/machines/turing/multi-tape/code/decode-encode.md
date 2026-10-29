@@ -8,20 +8,22 @@ lean: Cslib.Turing.MultiTapeTM.Code.decode_encode
 
 # Code round-trip
 
-**Code round-trip.**
+**Code round-trip.** For every code $c$ with $k$ work tapes, decoding the natural number
+$\operatorname{encode}(c)$ returns $c$: $\operatorname{decode}(\operatorname{encode}(c))$ is
+defined and equals $c$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Decode](decode.md)
-- [Encode](encode.md)
+- [Codes for multi-tape machines](code.md)
+- [Decoding numbers to codes](decode.md)
+- [Numeric coding of codes](encode.md)
 
 ## Proof depends on
 
-- [Equiv Table](equiv-table.md)
-- [Code Action](code-action.md)
-- [Equiv Prod](equiv-prod.md)
-- [Code Key](code-key.md)
+- [Codes as tables](equiv-table.md)
+- [Coded actions](code-action.md)
+- [Coded actions as tuples](equiv-prod.md)
+- [Keys of a code's table](code-key.md)
 
 ## Sources
 

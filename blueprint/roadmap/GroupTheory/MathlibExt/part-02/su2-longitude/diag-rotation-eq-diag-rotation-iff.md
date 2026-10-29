@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotation_eq_diagRotation_iff
 ---
 
-# Diag Rotation eq diag Rotation iff
+# When two diagonal rotations are equal
 
-Two diagonal rotations agree only if their angles differ by an
-integral multiple of `2π`.
+**When two diagonal rotations are equal.** For real numbers $a$ and $b$, the diagonal
+rotations through $a$ and through $b$ are equal if and only if $a = b + 2\pi n$ for some
+integer $n$.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
+- [Diagonal rotation](diag-rotation.md)
 
 ## Proof depends on
 
-- [Diag Rotation add int mul two pi](diag-rotation-add-int-mul-two-pi.md)
+- [Diagonal rotations are $2\pi$-periodic](diag-rotation-add-int-mul-two-pi.md)
 
 ## Sources
 

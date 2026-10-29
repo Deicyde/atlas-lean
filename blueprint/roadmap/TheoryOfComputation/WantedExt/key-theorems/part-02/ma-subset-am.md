@@ -14,8 +14,8 @@ Approach, 2009, Theorem 8.2 (MA ⊆ AM).
 
 ## Depends on
 
-- [AM](../../../../Computability/CSLibExt/complexity/classes/am.md)
-- [MA](../../../../Computability/CSLibExt/complexity/classes/ma.md)
+- [The class $\mathsf{AM}$ (Arthur–Merlin)](../../../../Computability/CSLibExt/complexity/classes/am.md)
+- [The class MA (Merlin–Arthur)](../../../../Computability/CSLibExt/complexity/classes/ma.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

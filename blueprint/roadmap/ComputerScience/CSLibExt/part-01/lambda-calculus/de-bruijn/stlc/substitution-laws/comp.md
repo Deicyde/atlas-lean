@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub.comp
 ---
 
-# Comp
+# Composition of simply typed substitutions
 
-Compose simultaneous substitutions by substituting into every image.
+**Composition of simply typed substitutions.** For substitutions $\sigma$ from a context
+$\Gamma$ to $\Delta$ and $\tau$ from $\Delta$ to $\Xi$, the composite of $\sigma$ followed by
+$\tau$ is the substitution from $\Gamma$ to $\Xi$ that sends each variable $x$ of $\Gamma$ to the
+term obtained by applying $\tau$ to $\sigma(x)$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Ty](../syntax/ty.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Subst](../substitution/subst.md)
-- [Var](../syntax/var.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

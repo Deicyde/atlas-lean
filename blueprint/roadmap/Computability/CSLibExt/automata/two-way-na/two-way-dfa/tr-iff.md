@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Automata.TwoWayDFA.tr_iff
 ---
 
-# Tr iff
+# Transition relation of a deterministic two-way automaton
 
-The transition relation of the nondeterministic rendering is the step function.
+**Transition relation of a deterministic two-way automaton.** Let $A$ be a deterministic
+two-way automaton, viewed as a nondeterministic two-way automaton. On reading the symbol $x$ in
+state $q$, it has a transition to state $q'$ with head move $m$ if and only if the transition
+function of $A$ sends $(q, x)$ to the pair $(q', m)$.
 
 ## Depends on
 
-- [Two Way DFA](two-way-dfa.md)
-- [To Two Way NA](to-two-way-na.md)
+- [Deterministic two-way automaton](two-way-dfa.md)
+- [A deterministic two-way automaton as a nondeterministic one](to-two-way-na.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Classes.qNumOf
 ---
 
-# Q Num Of
+# Number with a given binary expansion
 
-The number with binary expansion `bs`, least significant bit first.
+**Number with a given binary expansion.** A list $b_0, b_1, \ldots, b_{n-1}$ of booleans,
+read as bits with true as $1$ and false as $0$, denotes the natural number
+$\sum_{i < n} b_i 2^i$; the first entry is the least significant bit.
 
 ## Depends on
 

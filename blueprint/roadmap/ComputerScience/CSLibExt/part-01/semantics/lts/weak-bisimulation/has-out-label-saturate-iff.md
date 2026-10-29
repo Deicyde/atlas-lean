@@ -6,9 +6,18 @@ proof: formalized
 lean: Cslib.LTS.HomWeakBisimilarity.hasOutLabel_saturate_iff
 ---
 
-# Has Out Label saturate iff
+# Weakly bisimilar states enable the same weak labels
 
-Weakly bisimilar states have the same saturated outgoing labels.
+**Weakly bisimilar states enable the same weak labels.** In a labelled transition system
+with a silent label $\tau$, write $\Rightarrow$ for the reflexive-transitive
+closure of the $\tau$-transition relation. The weak transitions
+$s \stackrel{\mu}{\Longrightarrow} t$ are the trivial ones $s \stackrel{\tau}{\Longrightarrow} s$
+and the composites $s \Rightarrow s_1 \xrightarrow{\mu} s_2 \Rightarrow t$; the saturated
+system has the same states and has the weak transitions as its transitions. Two states are
+weakly bisimilar if some bisimulation of the saturated system relates them.
+If $s$ and $t$ are weakly bisimilar, then for every label $\mu$, there is a weak transition
+$s \stackrel{\mu}{\Longrightarrow} s'$ for some $s'$ if and only if there is a weak transition
+$t \stackrel{\mu}{\Longrightarrow} t'$ for some $t'$.
 
 ## Depends on
 
@@ -16,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Out Label iff](../bisimulation/has-out-label-iff.md)
+- [Bisimilar states enable the same labels](../bisimulation/has-out-label-iff.md)
 
 ## Sources
 

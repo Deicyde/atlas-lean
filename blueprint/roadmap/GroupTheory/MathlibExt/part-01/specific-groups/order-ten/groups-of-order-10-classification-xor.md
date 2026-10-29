@@ -8,11 +8,12 @@ lean: MetaMathlibExt.groups_of_order_10_classification_xor
 
 # Exclusive classification of groups of order 10
 
-**Exclusive classification of groups of order 10.** Exactly one of the two
-alternatives in `groups_of_order_10_classification` holds: a group of order 10
-cannot be isomorphic to both `C₁₀` and `D₅`, since `C₁₀` is cyclic while
-`DihedralGroup 5` is not (`DihedralGroup.not_isCyclic`), and cyclicity is
-preserved under multiplicative equivalences.
+**Exclusive classification of groups of order 10.** Let $G$ be a finite group of order $10$.
+Then exactly one of the following holds: $G$ is isomorphic to the cyclic group $C_{10}$ of order
+$10$, or $G$ is isomorphic to the dihedral group $D_5$ of order $10$.
+
+The two alternatives cannot both hold, since $C_{10}$ is cyclic, $D_5$ is not, and cyclicity is
+preserved under isomorphism.
 
 ## Depends on
 

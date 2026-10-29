@@ -6,21 +6,25 @@ proof: formalized
 lean: SL2.eigenvalues_implies_isConj_diag2
 ---
 
-# Eigenvalues implies is Conj diag2
+# Distinct eigenvalues give conjugacy to $\operatorname{diag}(s, s^{-1})$ in $\mathrm{SL}_2(F)$
 
-A matrix in `SL₂(F)` whose eigenvalues are `s` and `s⁻¹`, with `s ≠ s⁻¹`,
-is conjugate in `SL₂(F)` to `diag(s, s⁻¹)`. The proof builds the conjugating
-matrix from eigenvectors for `s` and `s⁻¹`: distinct eigenvalues give
-linearly independent eigenvectors, so the matrix of eigenvectors has
-nonzero determinant, and rescaling its first column makes the determinant `1`.
+**Distinct eigenvalues give conjugacy to $\operatorname{diag}(s, s^{-1})$ in
+$\mathrm{SL}_2(F)$.** Let $F$ be a field and let $s \in F$ with $s \ne s^{-1}$ and $s \ne 0$. If
+$M \in \mathrm{SL}_2(F)$ has eigenvalues $s$ and $s^{-1}$, that is, characteristic polynomial
+$(X - s)(X - s^{-1})$, then $M$ is conjugate in $\mathrm{SL}_2(F)$ to the diagonal matrix
+$\operatorname{diag}(s, s^{-1})$.
+
+The proof builds the conjugating matrix from eigenvectors for $s$ and $s^{-1}$: distinct
+eigenvalues give linearly independent eigenvectors, so the matrix of eigenvectors has nonzero
+determinant, and rescaling its first column makes the determinant $1$.
 
 ## Depends on
 
-- [Has Eigenvalues](has-eigenvalues.md)
+- [Elements of $\mathrm{SL}_2(F)$ with eigenvalues $s$ and $s^{-1}$](has-eigenvalues.md)
 
 ## Proof depends on
 
-- [Is Conj diag2 iff](is-conj-diag2-iff.md)
+- [Conjugacy to $\operatorname{diag}(s, s^{-1})$ in terms of a conjugator](is-conj-diag2-iff.md)
 
 ## Sources
 

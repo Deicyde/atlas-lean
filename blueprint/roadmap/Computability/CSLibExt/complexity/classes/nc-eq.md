@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Classes.nc_eq
 ---
 
-# Nc eq
+# NC is the union of its levels
 
-`NC` is the union of the `NC^k` levels, by definition.
+**NC is the union of its levels.** The class $\mathsf{NC}$ equals the union
+$\bigcup_{k \in \mathbb{N}} \mathsf{NC}^k$ of the classes $\mathsf{NC}^k$ over all natural
+numbers $k$; this holds by definition.
 
 ## Depends on
 
-- [NC](nc.md)
-- [NCK](nck.md)
+- [The class NC](nc.md)
+- [The class NC^k](nck.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 

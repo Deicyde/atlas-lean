@@ -6,10 +6,14 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.runsInSpace_of_runsInTime
 ---
 
-# Time bounds space
+# Time bounds space on one input
 
-**Time bounds space.** A deterministic `k`-tape machine running in time `T` on `w` visits at
-most `T + 1` cells of each work tape on every computation path.
+**Time bounds space on one input.** Let $M$ be a deterministic Turing machine with $k$ work
+tapes, let $w$ be an input word and let $T \in \mathbb{N}$. If $M$ runs in time $T$ on $w$, that
+is, every computation path of $M$ on $w$ with at least $T$ steps ends in a halted configuration,
+then $M$ runs in space $k(T + 1)$ on $w$: every computation path of $M$ on $w$ visits at most
+$k(T + 1)$ work-tape cells, counting the cells visited on each work tape and summing over the
+tapes.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Halted run From of runs In Time](../basic/halted-run-from-of-runs-in-time.md)
+- [A time bound forces halting](../basic/halted-run-from-of-runs-in-time.md)
 
 ## Sources
 

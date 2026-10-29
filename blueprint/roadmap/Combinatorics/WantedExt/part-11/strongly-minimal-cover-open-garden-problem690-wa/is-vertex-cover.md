@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StronglyMinimalCoverOpenGardenProblem690Wanted.IsVertexCover
 ---
 
-# Is Vertex Cover
+# Vertex cover of a hypergraph
 
-`X` is a (vertex) cover of the hypergraph with edge set `E`: it meets every edge.
+**Vertex cover of a hypergraph.** Let $E$ be a set of finite subsets of a type $V$, the edges
+of a hypergraph. A set $X \subseteq V$ is a (vertex) cover of $E$ if it meets every edge: every
+$e \in E$ contains some $v \in X$.
 
 ## Depends on
 

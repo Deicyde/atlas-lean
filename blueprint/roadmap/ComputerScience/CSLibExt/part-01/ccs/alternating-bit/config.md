@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.Config
 ---
 
-# Config
+# Alternating-bit configuration
 
-Protocol configurations: sender, data channel, receiver, acknowledgement
-channel.
+**Alternating-bit configuration.** A configuration of the alternating-bit protocol consists
+of a sender state, a state of the data channel, a receiver state and a state of the
+acknowledgement channel.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Channel](channel.md)
-- [Receiver](receiver.md)
-- [Sender](sender.md)
+- [States of a one-place channel](channel.md)
+- [Alternating-bit receiver states](receiver.md)
+- [Sender states of the data-free alternating-bit protocol](sender.md)
 
 ## Sources
 

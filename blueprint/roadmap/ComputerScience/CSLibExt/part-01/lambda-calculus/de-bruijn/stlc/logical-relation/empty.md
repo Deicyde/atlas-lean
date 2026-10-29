@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.ReducibleSub.empty
 ---
 
-# Empty
+# Substitutions on the empty context are reducible
 
-The empty context has a unique reducible substitution.
+**Substitutions on the empty context are reducible.** Every substitution from the empty
+context to closed terms is reducible, since the empty context has no variables.
 
 ## Depends on
 
-- [Reducible Sub](reducible-sub.md)
-- [Sub](../syntax/sub.md)
-- [Ty](../syntax/ty.md)
+- [Reducible substitutions](reducible-sub.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
 - [Reducible](reducible.md)
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

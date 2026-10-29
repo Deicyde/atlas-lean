@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Step.denote_eq
 ---
 
-# Denote eq
+# One reduction step preserves STLC denotation
 
-One operational reduction preserves denotation.
+**One reduction step preserves STLC denotation.** For every interpretation $I$ of the base
+types, if a term $t$ reduces to $t'$ in one step of call-by-value reduction, then $t$ and $t'$
+have the same denotation in every environment $\eta$ for their context.
 
 ## Depends on
 
-- [Env](env.md)
-- [Step](../semantics/step.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote-2.md)
-- [Ty](../syntax/ty.md)
-- [Denote](denote.md)
+- [Semantic environments](env.md)
+- [Small-step call-by-value reduction in STLC](../semantics/step.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](denote.md)
 
 ## Proof depends on
 
-- [Cons](cons.md)
-- [Denote instantiate](denote-instantiate.md)
-- [Instantiate](../substitution/instantiate.md)
-- [Value](../semantics/value.md)
+- [Extending a semantic environment in STLC](cons.md)
+- [Denotation of an instantiated STLC body](denote-instantiate.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Sources
 

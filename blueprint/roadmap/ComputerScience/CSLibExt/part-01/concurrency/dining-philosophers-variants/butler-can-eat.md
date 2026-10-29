@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.butler_can_eat
 ---
 
-# Butler can eat
+# Under a butler every philosopher can always still eat
 
-Under a butler each philosopher can always still get to eat.
+**Under a butler every philosopher can always still eat.** In the dining philosophers
+transition system of the naive protocol under a butler, for each philosopher
+$i \in \{0, 1, 2\}$, from every state reachable from the initial state (all three philosophers
+thinking) a state in which philosopher $i$ eats is reachable, in zero or more steps.
 
 ## Depends on
 
-- [State](../dining-philosophers/state.md)
-- [Butler Lts](butler-lts.md)
-- [Eating](../dining-philosophers/eating.md)
-- [Initial](../dining-philosophers/initial.md)
+- [Dining-philosophers state](../dining-philosophers/state.md)
+- [Dining philosophers with a butler](butler-lts.md)
+- [The eating valuation](../dining-philosophers/eating.md)
+- [Initial state of the dining philosophers](../dining-philosophers/initial.md)
 - [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
 - [Exists Finally](../../../../../Logic/CSLibExt/ctl/basic/exists-finally.md)
 - [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
@@ -23,9 +26,9 @@ Under a butler each philosopher can always still get to eat.
 
 ## Proof depends on
 
-- [Can Move Butler](can-move-butler.md)
-- [Move](../dining-philosophers/move.md)
-- [Phase](../dining-philosophers/phase.md)
+- [Enabled moves under a butler](can-move-butler.md)
+- [Move of a philosopher](../dining-philosophers/move.md)
+- [Phase of a philosopher](../dining-philosophers/phase.md)
 - [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 

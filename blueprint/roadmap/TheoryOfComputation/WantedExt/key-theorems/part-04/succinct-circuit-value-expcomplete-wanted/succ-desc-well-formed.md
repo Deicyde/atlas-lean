@@ -18,9 +18,9 @@ circuit is a `WellFormedCircuit`.
 
 ## Proof depends on
 
-- [ACGate](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
-- [Well Formed Circuit](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
-- [Ac Gate Of Pair](../../../../../Computability/CSLibExt/complexity/classes/ac-gate-of-pair.md)
+- [Gates of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
+- [Well-formed flat circuits](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
+- [Decoding a gate from its (kind, references) pair](../../../../../Computability/CSLibExt/complexity/classes/ac-gate-of-pair.md)
 
 ## Sources
 

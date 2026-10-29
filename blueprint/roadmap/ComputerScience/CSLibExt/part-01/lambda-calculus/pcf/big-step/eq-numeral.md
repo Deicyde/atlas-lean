@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Value.eq_numeral
 ---
 
-# Eq numeral
+# Closed values of ground type are numerals
 
-Closed values of ground type are numerals.
+**Closed values of ground type are numerals.** If a closed PCF term $v$ of the ground type of
+natural numbers is a value, then $v$ is the numeral $\mathsf{succ}^n\,\mathsf{zero}$ for some
+natural number $n$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Value](value.md)
-- [Numeral](../syntax/numeral.md)
-- [Ty](../syntax/ty.md)
-- [Nat](../syntax/nat.md)
+- [PCF terms](../syntax/tm.md)
+- [Values of PCF](value.md)
+- [PCF numerals](../syntax/numeral.md)
+- [PCF types](../syntax/ty.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Proof depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

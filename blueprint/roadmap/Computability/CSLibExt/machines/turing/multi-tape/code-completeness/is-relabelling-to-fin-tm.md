@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.isRelabelling_toFinTM
 ---
 
-# Is Relabelling to Fin TM
+# A code's machine simulates its finite-state machine
 
-The machine of a code simulates its finite-state machine up to the relabelling `Fin.val`.
+**A code's machine simulates its finite-state machine.** For every code $c$, the machine of
+$c$ simulates the finite-state machine of $c$ up to the relabelling that sends each state
+$q < N$, where $N$ is the state bound of $c$, to the natural number $q$.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [State Bound](state-bound.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [State bound of a code](state-bound.md)
 - [The finite-state machine of a code](to-fin-tm.md)
-- [To TM](../code/to-tm.md)
-- [Is Relabelling](../relabel/is-relabelling.md)
+- [The machine of a code](../code/to-tm.md)
+- [Simulation up to a state relabelling](../relabel/is-relabelling.md)
 
 ## Proof depends on
 
-- [Fin State](fin-state.md)
-- [Fin Tr](fin-tr.md)
-- [Next act mem states](../code/next-act-mem-states.md)
-- [States](../code/states.md)
-- [Tr](../code/tr.md)
-- [Relabel Action](../relabel/relabel-action.md)
+- [A number as a bounded state](fin-state.md)
+- [Transition function of a code on bounded states](fin-tr.md)
+- [Next states of a code lie in its state set](../code/next-act-mem-states.md)
+- [States of a code](../code/states.md)
+- [Transition function of a code](../code/tr.md)
+- [Relabelling the successor state of an action](../relabel/relabel-action.md)
 
 ## Sources
 

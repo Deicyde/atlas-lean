@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.URM.length_toRegs
 ---
 
-# Length to Regs
+# Length of the register list
 
-The register list has length `R + 1`.
+**Length of the register list.** For a URM program $p$ with register bound $R$ and a register
+state $\sigma$, the register list of $\sigma$ (the contents of registers $0, \dots, R$) has length
+$R + 1$.
 
 ## Depends on
 
 - [Register bound](reg-bound.md)
-- [To Regs](to-regs.md)
+- [Register list](to-regs.md)
 
 ## Sources
 

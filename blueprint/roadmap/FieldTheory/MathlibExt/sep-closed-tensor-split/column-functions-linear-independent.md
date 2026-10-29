@@ -6,10 +6,15 @@ proof: formalized
 lean: Algebra.TensorProduct.column_functions_linearIndependent
 ---
 
-# Column functions linear Independent
+# Embeddings evaluated on a basis
 
-The columns of the matrix of embeddings evaluated on a basis of `L`
-are linearly independent.
+**Embeddings evaluated on a basis.** Let $L/K$ be a finite separable field extension of
+degree $n$, let $\Omega$ be a separably closed field that is a $K$-algebra, and write
+$\mathrm{Hom}_K(L, \Omega)$ for the set of $K$-algebra homomorphisms $L \to \Omega$. Let
+$b_1, \dots, b_n$ be the basis of $L$ over $K$ chosen once and for all by `Module.finBasis`
+(a particular basis, not an arbitrary one). Then the $n$ functions
+$\mathrm{Hom}_K(L, \Omega) \to \Omega$ given by $\varphi \mapsto \varphi(b_i)$ are linearly
+independent over $\Omega$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Alg Hom card eq finrank of is Sep Closed](alg-hom-card-eq-finrank-of-is-sep-closed.md)
-- [Alg Hom linear Independent](alg-hom-linear-independent.md)
+- [Number of embeddings into a separably closed field](alg-hom-card-eq-finrank-of-is-sep-closed.md)
+- [Dedekind independence of embeddings](alg-hom-linear-independent.md)
 
 ## Sources
 

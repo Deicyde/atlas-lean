@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.IsCanonical
 ---
 
-# Is Canonical
+# Canonical terms
 
-A term is canonical when it is the erasure of an eta-long normal form.
+**Canonical terms.** A term $t$ of type $A$ in context $\Gamma$ is canonical when it is the
+underlying term of some beta-normal, eta-long normal form of type $A$ in context $\Gamma$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

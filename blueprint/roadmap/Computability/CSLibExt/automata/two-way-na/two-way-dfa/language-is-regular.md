@@ -6,20 +6,19 @@ proof: formalized
 lean: Cslib.Automata.TwoWayDFA.language_isRegular
 ---
 
-# Language is Regular
+# Finite two-way deterministic automata accept regular languages
 
-A deterministic two-way automaton over finitely many states accepts a regular
-language. The state type is in `Type`, matching Mathlib's `Language.IsRegular`, which
-quantifies over state types in `Type`.
+**Finite two-way deterministic automata accept regular languages.** The language of every
+deterministic two-way automaton with finitely many states is regular.
 
 ## Depends on
 
-- [Two Way DFA](two-way-dfa.md)
-- [Language](language.md)
+- [Deterministic two-way automaton](two-way-dfa.md)
+- [Language of a deterministic two-way automaton](language.md)
 
 ## Proof depends on
 
-- [To Two Way NA](to-two-way-na.md)
+- [A deterministic two-way automaton as a nondeterministic one](to-two-way-na.md)
 
 ## Sources
 

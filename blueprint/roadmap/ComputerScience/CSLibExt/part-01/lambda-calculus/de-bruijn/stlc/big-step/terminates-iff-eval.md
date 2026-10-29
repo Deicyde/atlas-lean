@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.terminates_iff_eval
 ---
 
-# Terminates iff eval
+# Termination in terms of big-step evaluation
 
-Termination can equivalently be stated using big-step evaluation.
+**Termination in terms of big-step evaluation.** For every closed term $t$ of type $A$, that
+is, a term in the empty typing context, $t$ terminates (it reduces to a value in finitely many
+left-to-right call-by-value steps) if and only if there is a term $v$ such that $t$ evaluates to
+$v$ in the big-step semantics, written $t \Downarrow v$.
 
 ## Depends on
 
-- [Eval](eval.md)
-- [Terminates](../logical-relation/terminates.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Big-step call-by-value evaluation in the simply typed lambda calculus](eval.md)
+- [Termination of closed terms](../logical-relation/terminates.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Of steps](of-steps.md)
-- [To steps](to-steps.md)
-- [Value](value.md)
-- [Steps](../semantics/steps.md)
-- [Value](../semantics/value.md)
+- [Small-step evaluation to a value implies big-step evaluation](of-steps.md)
+- [Big-step evaluation implies small-step evaluation](to-steps.md)
+- [Big-step evaluation produces values](value.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.size
 ---
 
-# Size
+# Size of a raw term
 
-Number of syntax nodes in a raw term.
+**Size of a raw term.** Writing $|t|$ for the size of a raw term $t$, the size counts the
+syntax nodes of $t$: a variable has size $1$, an application $f\,a$ has size $|f| + |a| + 1$,
+and a lambda abstraction $\lambda A.\,t$ has size $|t| + 1$, so the type annotation $A$ is
+not counted.
 
 ## Depends on
 
-- [Raw Tm](raw-tm.md)
+- [Raw lambda terms](raw-tm.md)
 
 ## Proof depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

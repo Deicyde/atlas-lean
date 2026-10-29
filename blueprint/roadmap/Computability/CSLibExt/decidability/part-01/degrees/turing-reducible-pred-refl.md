@@ -8,11 +8,12 @@ lean: Cslib.Decidability.turingReduciblePred_refl
 
 # Turing reducibility is reflexive
 
-**Turing reducibility is reflexive.**
+**Turing reducibility is reflexive.** Every predicate $P$ on the natural numbers is Turing
+reducible to itself.
 
 ## Depends on
 
-- [Turing Reducible Pred](turing-reducible-pred.md)
+- [Turing reducibility of predicates](turing-reducible-pred.md)
 
 ## Proof depends on
 

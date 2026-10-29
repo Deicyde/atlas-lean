@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.URM.toCoded
 ---
 
-# To Coded
+# Coded machine state
 
-The coded state of a machine state: the program counter and the register list.
+**Coded machine state.** For a URM program $p$ with register bound $R$, the coded state of a
+machine state $s$ is the pair consisting of the program counter of $s$ and the register list
+$(r_0, \dots, r_R)$ of the contents of registers $0, \dots, R$ of $s$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To Regs](to-regs.md)
+- [Register list](to-regs.md)
 
 ## Sources
 

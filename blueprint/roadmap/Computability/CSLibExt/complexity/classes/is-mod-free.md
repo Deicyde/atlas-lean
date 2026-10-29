@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Classes.IsModFree
 ---
 
-# Is Mod Free
+# Circuits without mod gates
 
-No `mod` gates.
+**Circuits without mod gates.** A flat Boolean circuit $C$ on $n$ inputs is mod-free when
+none of its gates is a mod gate.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

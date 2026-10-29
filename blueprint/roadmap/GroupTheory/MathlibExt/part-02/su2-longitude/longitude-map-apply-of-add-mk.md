@@ -13,15 +13,15 @@ through `θ`.
 
 ## Depends on
 
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
 - [Longitude Map](longitude-map.md)
 - [Longitude Subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation To Longitude Hom](diag-rotation-to-longitude-hom.md)
-- [Diag Rotation int mul two pi](diag-rotation-int-mul-two-pi.md)
+- [Diagonal rotation](diag-rotation.md)
+- [The angle homomorphism into the longitude subgroup](diag-rotation-to-longitude-hom.md)
+- [Diagonal rotation through a multiple of $2\pi$](diag-rotation-int-mul-two-pi.md)
 
 ## Sources
 

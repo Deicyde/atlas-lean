@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.ωSequence.exists_isMaxInfOcc
 ---
 
-# Exists is Max Inf Occ
+# Bounded sequences have a largest infinitely occurring value
 
-A sequence bounded by `d` has a largest infinitely occurring value, at most `d`.
+**Bounded sequences have a largest infinitely occurring value.** Let $d \in \mathbb{N}$. If a
+sequence $(p_k)_{k \in \mathbb{N}}$ of natural numbers satisfies $p_k \le d$ for all $k$, then some
+natural number $n \le d$ is the largest value occurring infinitely often in $(p_k)$.
 
 ## Depends on
 
-- [Is Max Inf Occ](is-max-inf-occ.md)
+- [Largest infinitely occurring value](is-max-inf-occ.md)
 
 ## Sources
 

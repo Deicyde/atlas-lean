@@ -6,24 +6,30 @@ proof: formalized
 lean: Cslib.Automata.SequentialTransducer.comp_output_eq
 ---
 
-# Comp output eq
+# Total output of a composite sequential transducer
 
-The total output of the composition, in terms of the second transducer's run on
-the first transducer's whole output.
+**Total output of a composite sequential transducer.** Let $S_1$ be a sequential transducer
+from $I$ to $M$, $S_2$ one from $M$ to $O$, and $C$ their composition. For a sequential
+transducer $S$ with start state $s$, initial output $\iota$ and final output map $\phi$, and a
+word $x$, let $\delta_S(s, x)$ be the state $S$ reaches by reading $x$ from $s$ and
+$\lambda_S(s, x)$ the concatenation of the words it emits along the way, and call the
+concatenation $\iota \, \lambda_S(s, x) \, \phi(\delta_S(s, x))$ the whole output of $S$ on $x$
+(acceptance plays no role). Then for every word $x$ over $I$, the whole output of $C$ on $x$
+equals the whole output of $S_2$ on the whole output of $S_1$ on $x$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
-- [Comp](comp.md)
-- [Run Out](run-out.md)
-- [Run State](run-state.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Composition of sequential transducers](comp.md)
+- [Output word of a sequential transducer run](run-out.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Proof depends on
 
-- [Comp run Out](comp-run-out.md)
-- [Comp run Out init Out](comp-run-out-init-out.md)
-- [Comp run State](comp-run-state.md)
-- [Comp run State init Out](comp-run-state-init-out.md)
+- [Output of a composite sequential transducer](comp-run-out.md)
+- [Output of the second transducer on the first one's whole output](comp-run-out-init-out.md)
+- [States reached by a composite sequential transducer](comp-run-state.md)
+- [State of the second transducer after the first one's whole output](comp-run-state-init-out.md)
 
 ## Sources
 

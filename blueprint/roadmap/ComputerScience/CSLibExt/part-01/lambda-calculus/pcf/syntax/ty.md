@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Ty
 ---
 
-# Ty
+# PCF types
 
-PCF types: simple types over the single ground type of naturals.
+**PCF types.** PCF types are the simple types over a single ground type, the type of natural
+numbers.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.computes_iff_output_of_runsInTime
 ---
 
-# Computes iff output of runs In Time
+# Output at a time bound
 
-Under a time bound `t`, a deterministic machine computes exactly the output of its
-configuration after `t` steps.
+**Output at a time bound.** If a deterministic multi-tape Turing machine runs in time $t$ on
+input $w$, then for every word $o$ the machine computes $o$ on $w$ if and only if the
+configuration reached from the initial configuration on $w$ after $t$ steps has output tape $o$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Output determinism](computes-unique.md)
-- [Halted run From of runs In Time](halted-run-from-of-runs-in-time.md)
+- [A time bound forces halting](halted-run-from-of-runs-in-time.md)
 
 ## Sources
 

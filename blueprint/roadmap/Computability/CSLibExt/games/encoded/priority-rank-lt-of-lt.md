@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.Games.EncodedParityGame.priorityRank_lt_of_lt
 ---
 
-# Priority Rank lt of lt
+# Strict monotonicity of priority ranks
 
-Ranks are strictly monotone in the priority: if `w` has a strictly
-smaller priority than `v`, the filter for `w` is a proper subset of the
-filter for `v`, since `G.priority w` is in the latter but not the former.
+**Strict monotonicity of priority ranks.** Let $G$ be an encoded parity game, and for a
+natural number $p$ let the rank of $p$ be the number of distinct priorities $q < p$ that occur
+in $G$. If $v$ and $w$ are positions of $G$ and the priority of $w$ is strictly less than the
+priority of $v$, then the rank of the priority of $w$ is strictly less than the rank of the
+priority of $v$.
+
+The priority of $w$ is counted in the rank of the priority of $v$ but not in its own rank.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 - [Priority Rank](priority-rank.md)
 
 ## Sources

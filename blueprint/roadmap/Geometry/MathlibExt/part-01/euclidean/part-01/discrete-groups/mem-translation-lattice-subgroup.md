@@ -6,16 +6,18 @@ proof: formalized
 lean: DiscreteGroups.mem_translationLatticeSubgroup
 ---
 
-# Mem translation Lattice Subgroup
+# Membership in the translation lattice subgroup
 
-The bundled subgroup has exactly the original translation-vector carrier.
+**Membership in the translation lattice subgroup.** For every group $G$ of affine isometries
+of the Euclidean plane and every vector $v$ of the plane, $v$ belongs to the translation lattice
+subgroup of $G$ if and only if $v$ belongs to the translation lattice of $G$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
 - [Translation Lattice](translation-lattice.md)
-- [Translation Lattice Subgroup](translation-lattice-subgroup.md)
+- [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 
 ## Sources
 

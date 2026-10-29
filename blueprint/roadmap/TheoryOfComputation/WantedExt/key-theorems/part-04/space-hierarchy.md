@@ -13,7 +13,7 @@ Symposium on Switching Circuit Theory and Logical Design (1965), 179-190.
 
 ## Depends on
 
-- [DSPACE](../../../../Computability/CSLibExt/machines/turing/multi-tape/time-space/dspace.md)
+- [Deterministic space classes on multi-tape machines](../../../../Computability/CSLibExt/machines/turing/multi-tape/time-space/dspace.md)
 
 ## Sources
 

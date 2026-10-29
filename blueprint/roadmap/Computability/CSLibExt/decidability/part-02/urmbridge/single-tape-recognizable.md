@@ -13,7 +13,7 @@ lean: Cslib.URM.Recognizable.singleTapeRecognizable
 ## Depends on
 
 - [Predicates recognizable by a single-tape Turing machine](../../../machines/turing/single-tape/classes/single-tape-recognizable.md)
-- [Recognizable](recognizable.md)
+- [URM-recognizable predicates](recognizable.md)
 
 ## Proof depends on
 

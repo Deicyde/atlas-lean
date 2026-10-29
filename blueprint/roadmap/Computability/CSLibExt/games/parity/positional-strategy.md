@@ -12,8 +12,8 @@ legal at the positions `p` owns. Its values elsewhere are irrelevant.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
-- [Player](player.md)
+- [Parity game](parity-game.md)
+- [Players of a parity game](player.md)
 
 ## Sources
 

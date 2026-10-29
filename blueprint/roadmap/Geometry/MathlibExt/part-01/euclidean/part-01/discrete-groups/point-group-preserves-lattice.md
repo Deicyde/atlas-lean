@@ -6,23 +6,24 @@ proof: formalized
 lean: DiscreteGroups.point_group_preserves_lattice
 ---
 
-# Point group preserves lattice
+# The point group preserves the translation lattice
 
-The point group of a group of plane isometries preserves its translation
-lattice: if `A` is the linear part of some element of `G` and `v` is a
-translation vector of `G`, then `A v` is also a translation vector of `G`.
+**The point group preserves the translation lattice.** Let $G$ be a group of affine
+isometries of the Euclidean plane. If $A$ belongs to the point group of $G$, that is, $A$ is the
+linear part of some element of $G$, and $v$ belongs to the translation lattice of $G$, then $A v$
+belongs to the translation lattice of $G$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
-- [Point Group Set](point-group-set.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
+- [Point group of a group of plane isometries](point-group-set.md)
 - [Translation Lattice](translation-lattice.md)
 
 ## Proof depends on
 
-- [Conj translation](conj-translation.md)
-- [Linear Part](linear-part.md)
+- [Conjugating a translation by a plane isometry](conj-translation.md)
+- [Linear part of a plane isometry](linear-part.md)
 
 ## Sources
 

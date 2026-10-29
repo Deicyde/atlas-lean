@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.Tape.read
 ---
 
-# Read
+# Symbol under the head of a zipper tape
 
-The symbol under the head.
+**Symbol under the head of a zipper tape.** The symbol read from a work tape given as a zipper
+$(l, r)$ is the first cell of $r$, or the blank if $r$ is empty.
 
 ## Depends on
 
-- [Tape](tape.md)
+- [Work tapes as zippers](tape.md)
 
 ## Sources
 

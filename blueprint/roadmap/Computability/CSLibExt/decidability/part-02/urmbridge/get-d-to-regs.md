@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.URM.getD_toRegs
 ---
 
-# Get D to Regs
+# Reading the register list
 
-Reading the register list returns the register contents up to `R`, and `0` beyond.
+**Reading the register list.** Let $p$ be a URM program with register bound $R$ and
+$\sigma$ a register state. For every $n$, the entry at position $n$ of the register list of
+$\sigma$, read with default $0$, is $\sigma(n)$ if $n \le R$ and $0$ otherwise.
 
 ## Depends on
 
 - [Register bound](reg-bound.md)
-- [To Regs](to-regs.md)
+- [Register list](to-regs.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.haltsAt_zero_iff
 ---
 
-# Halts At zero iff
+# Halting at step zero
 
-A machine halts at step `0` exactly from a halted configuration.
+**Halting at step zero.** A deterministic multi-tape Turing machine started in a
+configuration $c$ halts at step $0$ if and only if $c$ is halted.
 
 ## Depends on
 

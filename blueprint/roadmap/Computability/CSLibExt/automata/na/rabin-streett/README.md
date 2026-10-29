@@ -6,34 +6,34 @@ navigation: module
 
 ## NA
 
-- [Rabin](rabin.md)
+- [Rabin automaton](rabin.md)
 
 ## Rabin
 
-- [Mem language iff](mem-language-iff.md)
-- [To Muller](to-muller.md)
-- [Language to Muller](language-to-muller.md)
+- [Membership in the language of a Rabin automaton](mem-language-iff.md)
+- [Muller presentation of a Rabin automaton](to-muller.md)
+- [Rabin-to-Muller conversion preserves the language](language-to-muller.md)
 
 ## NA
 
-- [Streett](streett.md)
+- [Streett automaton](streett.md)
 
 ## Streett
 
-- [Mem language iff](mem-language-iff-2.md)
-- [To Muller](to-muller-2.md)
-- [Language to Muller](language-to-muller-2.md)
+- [Membership in the language of a Streett automaton](mem-language-iff-2.md)
+- [Muller presentation of a Streett automaton](to-muller-2.md)
+- [Streett-to-Muller conversion preserves the language](language-to-muller-2.md)
 
 ## Parity
 
-- [To Rabin](to-rabin.md)
-- [Language to Rabin](language-to-rabin.md)
-- [To Streett](to-streett.md)
-- [Language to Streett](language-to-streett.md)
-- [To Muller](to-muller-3.md)
-- [Language to Muller](language-to-muller-3.md)
+- [Rabin presentation of a parity automaton](to-rabin.md)
+- [Parity-to-Rabin conversion preserves the language](language-to-rabin.md)
+- [Streett presentation of a parity automaton](to-streett.md)
+- [Parity-to-Streett conversion preserves the language](language-to-streett.md)
+- [Muller presentation of a parity automaton](to-muller-3.md)
+- [Parity-to-Muller conversion preserves the language](language-to-muller-3.md)
 
 ## Rabin
 
-- [To Streett](to-streett-2.md)
+- [Streett automaton with the pairs of a Rabin automaton](to-streett-2.md)
 - [Run-wise Rabin/Streett duality](accepts-run-iff-not-streett.md)

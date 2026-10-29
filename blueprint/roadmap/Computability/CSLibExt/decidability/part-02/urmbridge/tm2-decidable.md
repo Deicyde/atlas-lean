@@ -13,7 +13,7 @@ lean: Cslib.URM.Decidable.tm2Decidable
 ## Depends on
 
 - [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
-- [Decidable](decidable.md)
+- [URM-decidable predicate](decidable.md)
 
 ## Proof depends on
 

@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.runFrom_initCfg
 ---
 
-# Run From init Cfg
+# Lockstep runs from the initial configuration
 
-The run of `tm'` on `x` is the relabelled run of `tm`.
+**Lockstep runs from the initial configuration.** Let $M$ and $M'$ be deterministic machines
+with $k$ work tapes over the same alphabet such that $M'$ simulates $M$ up to a state relabelling
+$f$. Then for every input word $x$ and every $t \in \mathbb{N}$, the configuration of $M'$ after
+$t$ steps on input $x$ is the configuration of $M$ after $t$ steps on input $x$ with its state
+relabelled by $f$: a state $q$ becomes $f(q)$ and the halting state stays halting.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Init Cfg](init-cfg.md)
+- [Initial configurations under relabelling](init-cfg.md)
 - [Lockstep runs](run-from.md)
 
 ## Sources

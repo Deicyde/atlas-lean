@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Classes.P
 ---
 
-# P
+# Polynomial time on multi-tape machines
 
-Deterministic polynomial time on the multi-tape model.
+**Polynomial time on multi-tape machines.** $\mathrm{P}$ is the set of languages of Boolean
+strings that lie in $\mathrm{DTIME}(n \mapsto n^d)$ for some $d \in \mathbb{N}$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [DTIME](dtime.md)
+- [Deterministic time classes on multi-tape machines](dtime.md)
 
 ## Sources
 

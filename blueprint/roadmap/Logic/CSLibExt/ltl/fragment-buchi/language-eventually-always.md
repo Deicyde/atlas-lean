@@ -19,7 +19,7 @@ holds at all but finitely many positions.
 - [Eval](eval.md)
 - [To LTL](to-ltl.md)
 - [Language](../omega-word/language.md)
-- [Eventually Always Na](../../../../Computability/CSLibExt/languages/example-infinitely-often/eventually-always-na.md)
+- [Two-state Büchi automaton for “eventually always”](../../../../Computability/CSLibExt/languages/example-infinitely-often/eventually-always-na.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ holds at all but finitely many positions.
 - [Satisfies At](../omega-word/satisfies-at.md)
 - [Mem language](../omega-word/mem-language.md)
 - [Satisfies At to LTL](satisfies-at-to-ltl.md)
-- [Eventually Always](../../../../Computability/CSLibExt/languages/example-infinitely-often/eventually-always.md)
+- [Eventually always](../../../../Computability/CSLibExt/languages/example-infinitely-often/eventually-always.md)
 
 ## Sources
 

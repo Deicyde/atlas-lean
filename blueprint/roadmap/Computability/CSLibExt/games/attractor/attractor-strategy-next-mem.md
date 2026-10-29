@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Games.ParityGame.attractorStrategy_next_mem
 ---
 
-# Attractor Strategy next mem
+# The attractor strategy moves into the stage from its controllable predecessor
 
-From a position of `p` in `cpre p` of the `n`-th stage, the attractor strategy moves into
-the `n`-th stage.
+**The attractor strategy moves into the stage from its controllable predecessor.** Let $G$ be
+a parity game, $p$ a player, $T$ a set of positions, $n$ a natural number and $S_n$ the $n$-th
+attractor stage of $T$ for $p$. If a position $v$ owned by $p$ lies in the controllable
+predecessor $\mathrm{cpre}_p(S_n)$ of $S_n$ for $p$, then the successor that the attractor
+strategy of $p$ for $T$ chooses at $v$ lies in $S_n$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
+- [Parity game](../parity/parity-game.md)
 - [Positional Strategy](../parity/positional-strategy.md)
-- [Attractor Stage](attractor-stage.md)
-- [Attractor Strategy](attractor-strategy.md)
-- [Cpre](cpre.md)
-- [Player](../parity/player.md)
+- [Attractor stages](attractor-stage.md)
+- [Attractor strategy](attractor-strategy.md)
+- [Controllable predecessor](cpre.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor Step](attractor-step.md)
+- [Attractor operator](attractor-step.md)
 
 ## Sources
 

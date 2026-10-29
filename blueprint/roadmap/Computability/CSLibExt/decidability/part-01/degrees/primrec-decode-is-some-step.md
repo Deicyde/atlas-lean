@@ -12,7 +12,7 @@ lean: Cslib.Decidability.primrec₂_decodeIsSomeStep
 
 ## Depends on
 
-- [One step of the course-of-values recursion for `decodeIsSome`](decode-is-some-step.md)
+- [One step of the course-of-values recursion for definedness](decode-is-some-step.md)
 
 ## Sources
 

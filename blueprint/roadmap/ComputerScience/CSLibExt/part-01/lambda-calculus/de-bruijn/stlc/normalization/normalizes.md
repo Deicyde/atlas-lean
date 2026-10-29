@@ -11,13 +11,13 @@ A closed term normalizes when it evaluates to a normal form.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
 - [Normal Form](../semantics/normal-form.md)
-- [Steps](../semantics/steps.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 
 ## Sources
 

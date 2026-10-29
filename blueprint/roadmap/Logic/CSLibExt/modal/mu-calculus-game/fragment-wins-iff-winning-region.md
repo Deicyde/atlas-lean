@@ -14,7 +14,7 @@ winning region of the even player in the totalized fragment game.
 ## Depends on
 
 - [Winning Region](../../../../Computability/CSLibExt/games/parity/winning-region.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [Frag Pos](frag-pos.md)
@@ -24,7 +24,7 @@ winning region of the even player in the totalized fragment game.
 ## Proof depends on
 
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
-- [Wins From](../../../../Computability/CSLibExt/games/parity/wins-from.md)
+- [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
 - [To Mu](to-mu.md)
 - [Strategy](strategy.md)
 - [Strategy Wins](strategy-wins.md)

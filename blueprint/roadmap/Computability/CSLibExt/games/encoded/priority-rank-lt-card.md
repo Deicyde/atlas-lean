@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Games.EncodedParityGame.priorityRank_lt_card
 ---
 
-# Priority Rank lt card
+# Priority ranks are below the number of priorities
 
-The rank of an occurring priority is strictly below the number of
-distinct priorities occurring: the filter defining the rank is a proper
-subset of the image, since the priority itself is in the image but not in
-its own strict filter. Source: M. Jurdziński, "Small progress measures for
-solving parity games", *Proceedings of STACS 2000*, LNCS 1770, 290-301.
+**Priority ranks are below the number of priorities.** Let $G$ be an encoded parity game,
+and for a natural number $p$ let the rank of $p$ be the number of distinct priorities $q < p$
+that occur in $G$. For every position $v$ of $G$, the rank of the priority of $v$ is strictly
+less than the number of distinct priorities that occur in $G$.
+
+The priorities below the priority of $v$ form a proper subset of the occurring priorities, since
+the priority of $v$ occurs but is not below itself.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 - [Priority Rank](priority-rank.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Games.Encoded](../../../../../sources/v2/CSLibExt.md)
+- M. Jurdziński, "Small progress measures for solving parity games", *Proceedings of STACS 2000*, LNCS 1770, 290-301.

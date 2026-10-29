@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Ty.orderBot
 ---
 
-# Order Bot
+# Least elements of PCF domains
 
-Every domain of a PCF type has a least element.
+**Least elements of PCF domains.** For every PCF type $A$, the domain denoted by $A$ has a
+least element, defined by recursion on $A$: at the ground type it is the undefined element of the
+flat domain of partial natural numbers, and at a function type $B \to C$ it is the continuous map
+that sends every argument to the least element of the domain denoted by $C$.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
-- [Dom](dom.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](dom.md)
 
 ## Proof depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

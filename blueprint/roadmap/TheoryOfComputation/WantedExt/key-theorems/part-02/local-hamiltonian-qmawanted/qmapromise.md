@@ -20,12 +20,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [QGate](../../../../../Computability/CSLibExt/complexity/classes/qgate.md)
-- [QGate Well Formed](../../../../../Computability/CSLibExt/complexity/classes/qgate-well-formed.md)
-- [Rat Enc](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
-- [Accept Prob](../../../../../Computability/CSLibExt/complexity/classes/accept-prob.md)
-- [Apply Circuit](../../../../../Computability/CSLibExt/complexity/classes/apply-circuit.md)
-- [Sq Norm](../../../../../Computability/CSLibExt/complexity/classes/sq-norm.md)
+- [Encoded 2-local quantum gate](../../../../../Computability/CSLibExt/complexity/classes/qgate.md)
+- [Well-formed quantum gate](../../../../../Computability/CSLibExt/complexity/classes/qgate-well-formed.md)
+- [Encoded rational number](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
+- [Acceptance probability of a quantum state](../../../../../Computability/CSLibExt/complexity/classes/accept-prob.md)
+- [Applying a quantum circuit to a state](../../../../../Computability/CSLibExt/complexity/classes/apply-circuit.md)
+- [Squared norm of a state vector](../../../../../Computability/CSLibExt/complexity/classes/sq-norm.md)
 - [Bitstring encodings](../../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)

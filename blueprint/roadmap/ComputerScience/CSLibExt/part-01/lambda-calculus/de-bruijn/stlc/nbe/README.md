@@ -6,18 +6,18 @@ navigation: module
 
 ## Stlc
 
-- [Sem](sem.md)
+- [Kripke semantic values](sem.md)
 
 ## Sem
 
-- [Rename](rename.md)
+- [Renaming a semantic value](rename.md)
 
 ## Stlc
 
-- [Sem Env](sem-env.md)
+- [Semantic environments](sem-env.md)
 
 ## Sem Env
 
-- [Rename](rename-2.md)
-- [Cons](cons.md)
-- [Identity](identity.md)
+- [Renaming a semantic environment](rename-2.md)
+- [Extending a semantic environment by one variable](cons.md)
+- [The identity semantic environment](identity.md)

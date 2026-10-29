@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.URM.writesTo_le_regBound
 ---
 
-# Writes To le reg Bound
+# Written registers lie within the register bound
 
-The register written by an instruction of `p` is at most the register bound.
+**Written registers lie within the register bound.** Let $p$ be a URM program with register
+bound $R$. If an instruction of $p$ writes to register $n$, then $n \le R$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ The register written by an instruction of `p` is at most the register bound.
 
 ## Proof depends on
 
-- [Max Register le reg Bound](max-register-le-reg-bound.md)
+- [Instructions stay within the register bound](max-register-le-reg-bound.md)
 
 ## Sources
 

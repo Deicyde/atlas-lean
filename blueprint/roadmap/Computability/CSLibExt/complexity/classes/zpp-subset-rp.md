@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Classes.zpp_subset_rp
 ---
 
-# Zpp subset rp
+# ZPP is contained in RP
 
-`ZPP ⊆ RP`.
+**ZPP is contained in RP.** Every decision problem in $\mathsf{ZPP}$ lies in
+$\mathsf{RP}$, that is, $\mathsf{ZPP} \subseteq \mathsf{RP}$.
 
 ## Depends on
 
-- [RP](rp.md)
+- [The class RP](rp.md)
 - [ZPP](zpp.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Co RP](co-rp.md)
+- [The class coRP](co-rp.md)
 
 ## Sources
 

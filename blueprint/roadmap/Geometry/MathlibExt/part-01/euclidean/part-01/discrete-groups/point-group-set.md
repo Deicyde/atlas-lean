@@ -5,19 +5,19 @@ statement: formalized
 lean: DiscreteGroups.pointGroupSet
 ---
 
-# Point Group Set
+# Point group of a group of plane isometries
 
-The **point group** of a group `G` of plane isometries: the set of linear
-parts of the elements of `G`.
+**Point group of a group of plane isometries.** The point group of a group $G$ of affine
+isometries of the Euclidean plane is the set of linear parts of the elements of $G$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
 
 ## Proof depends on
 
-- [Linear Part](linear-part.md)
+- [Linear part of a plane isometry](linear-part.md)
 
 ## Sources
 

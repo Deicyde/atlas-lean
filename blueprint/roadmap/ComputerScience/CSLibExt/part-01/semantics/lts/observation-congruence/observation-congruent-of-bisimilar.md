@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.LTS.observationCongruent_of_bisimilar
 ---
 
-# Observation Congruent of bisimilar
+# Strong bisimilarity implies observation congruence
 
-Strong bisimilarity implies observational congruence.
+**Strong bisimilarity implies observation congruence.** In a labelled transition system with
+a silent label $\tau$, any two strongly bisimilar states are rooted weakly bisimilar.
 
 ## Depends on
 
-- [Rooted Weakly Bisimilar](rooted-weakly-bisimilar.md)
+- [Rooted observation congruence](rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [To hom Weak Bisimilarity](../weak-bisimulation/to-hom-weak-bisimilarity.md)
-- [Rooted Weak Step](rooted-weak-step.md)
-- [Rooted Weak Step of tr](rooted-weak-step-of-tr.md)
+- [Strong bisimilarity implies weak bisimilarity](../weak-bisimulation/to-hom-weak-bisimilarity.md)
+- [Rooted weak transition](rooted-weak-step.md)
+- [Transitions are rooted weak transitions](rooted-weak-step-of-tr.md)
 
 ## Sources
 

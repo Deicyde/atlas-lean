@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.closureConvert_correct
 ---
 
-# Closure Convert correct
+# Correctness of closure conversion in the empty environment
 
-Correctness for closed programs.
+**Correctness of closure conversion in the empty environment.** If a source term $t$
+evaluates to a source value $v$ in the empty environment, then there is a target value $w$ such
+that the closure conversion of $t$ evaluates to $w$ in the empty environment and $v$ is related to
+$w$ by the value relation of closure conversion.
 
 ## Depends on
 
-- [Eval](../source/eval.md)
-- [Value](../source/value.md)
+- [Big-step semantics of the closure-conversion source](../source/eval.md)
+- [Source values of closure conversion](../source/value.md)
 - [Big-step semantics of the closure-conversion target](../target/eval.md)
 - [Target values of closure conversion](../target/value.md)
-- [Val Rel](val-rel.md)
-- [Closure Convert](closure-convert.md)
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Value relation for closure conversion](val-rel.md)
+- [Closure conversion of a program](closure-convert.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
 
 ## Proof depends on
 
 - [Target terms of closure conversion](../target/tm.md)
-- [Convert correct](convert-correct.md)
+- [Correctness of closure conversion](convert-correct.md)
 
 ## Sources
 

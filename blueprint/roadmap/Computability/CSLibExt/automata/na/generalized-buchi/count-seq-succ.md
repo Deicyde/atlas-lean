@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.NA.GenBuchi.countSeq_succ
 ---
 
-# Count Seq succ
+# Recursion step of the counter sequence
 
-The counter at time `n + 1` is the update of the counter at time `n`.
+**Recursion step of the counter sequence.** Let $g$ be a generalized Büchi automaton, $s$ an
+infinite sequence of states, and $c_0, c_1, \dots$ the counter sequence of $s$. For every $n$,
+$c_{n+1} = \mathrm{next}(c_n, s_{n+1})$, where $\mathrm{next}$ is the counter update of $g$.
 
 ## Depends on
 
-- [Gen Buchi](gen-buchi.md)
-- [Count Seq](count-seq.md)
-- [Next Count](next-count.md)
+- [Generalized Büchi automaton](gen-buchi.md)
+- [Counter sequence of a state sequence](count-seq.md)
+- [Counter update for degeneralization](next-count.md)
 
 ## Sources
 

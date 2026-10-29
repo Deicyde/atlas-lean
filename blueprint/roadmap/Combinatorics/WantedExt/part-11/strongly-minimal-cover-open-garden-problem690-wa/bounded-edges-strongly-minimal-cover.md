@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StronglyMinimalCoverOpenGardenProblem690Wanted.boundedEdgesStronglyMinimalCover
 ---
 
-# Bounded Edges Strongly Minimal Cover
+# Aharoni's strongly minimal cover conjecture
 
-The cover part of Aharoni's conjecture: every (possibly infinite) hypergraph whose edges are
-nonempty and have size at most `k`, for some `k`, has a strongly minimal cover.
+**Aharoni's strongly minimal cover conjecture.** The statement that for every type $V$, every
+set $E$ of finite subsets of $V$ (the edges of a hypergraph, possibly infinitely many) and every
+natural number $k$ such that each edge in $E$ is nonempty and has at most $k$ elements, the
+hypergraph with edge set $E$ has a strongly minimal cover.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Strongly Minimal Cover](is-strongly-minimal-cover.md)
+- [Strongly minimal cover](is-strongly-minimal-cover.md)
 
 ## Sources
 

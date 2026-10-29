@@ -5,11 +5,12 @@ statement: formalized
 lean: Manifold.scalarCurvature
 ---
 
-# Scalar Curvature
+# Scalar curvature
 
-The scalar curvature at `x`: the metric trace `∑ i, Ric(eᵢ, eᵢ)` of the Ricci curvature, for
-the orthonormal basis `e = stdOrthonormalBasis ℝ (TangentSpace I x)` ([Gud, Def. 8.32]). The
-unit `n`-sphere has scalar curvature `n (n - 1)`.
+**Scalar curvature.** The scalar curvature of a $C^\infty$ Riemannian manifold $(M, g)$ at a
+point $x$ is $\sum_i \operatorname{Ric}_x(e_i, e_i)$, the metric trace of the Ricci curvature
+$\operatorname{Ric}$, where $(e_i)$ is a fixed orthonormal basis of $T_x M$ ([Gud, Def. 8.32]).
+The unit $n$-sphere has scalar curvature $n (n - 1)$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ricci](ricci.md)
+- [Ricci curvature](ricci.md)
 
 ## Sources
 

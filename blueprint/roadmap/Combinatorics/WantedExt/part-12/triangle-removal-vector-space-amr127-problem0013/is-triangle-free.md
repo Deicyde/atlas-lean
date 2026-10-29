@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TriangleRemovalVectorSpaceAMR127Problem0013Wanted.IsTriangleFree
 ---
 
-# Is Triangle Free
+# Triangle-free subsets of $\mathbb{F}_2^n$
 
-`A ⊆ 𝔽₂ⁿ` is triangle-free: there are no `x, y` with `x, y, x + y ∈ A` (`x = y` allowed).
+**Triangle-free subsets of $\mathbb{F}_2^n$.** A set $A \subseteq \mathbb{F}_2^n$ is
+triangle-free if there are no $x, y \in A$ with $x + y \in A$ (the case $x = y$ is allowed).
 
 ## Depends on
 

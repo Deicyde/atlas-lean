@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.equivTable
 ---
 
-# Equiv Table
+# Codes as tables
 
-Codes are their tables.
+**Codes as tables.** The bijection between codes and finite lists of table entries, each a
+pair of a key and a coded action, that sends a code to its table.
 
 ## Depends on
 
-- [Code](code.md)
-- [Code Action](code-action.md)
-- [Code Key](code-key.md)
+- [Codes for multi-tape machines](code.md)
+- [Coded actions](code-action.md)
+- [Keys of a code's table](code-key.md)
 
 ## Sources
 

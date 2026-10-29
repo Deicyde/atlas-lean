@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Classes.acGateToPair
 ---
 
-# Ac Gate To Pair
+# Encoding a gate as a (kind, references) pair
 
-Serialize a flat-circuit gate into the shared `(kind, refs)` encoding used by
-decoding-based problems (Circuit Value, succinct circuits): kind `0` is an input
-variable (refs `[i]`), kind `1` a constant (refs `[b]`, true iff `b = 1`), kind `2`
-negation (refs `[a]`), kind `3` conjunction (refs = predecessors), kind `4`
-disjunction (refs = predecessors). `mod` gates have no serial encoding here;
-they serialize to the all-false gate kind `5`, which evaluates to `false`.
+**Encoding a gate as a (kind, references) pair.** A gate of a flat Boolean circuit on $n$
+inputs is encoded as a pair of a natural number (its kind) and a list of natural numbers (its
+references), the shared encoding used by decoding-based problems such as Circuit Value and
+succinct circuits: the input variable $x_i$ is encoded as $(0, [i])$; the constant true as
+$(1, [1])$ and the constant false as $(1, [0])$; the negation of gate $a$ as $(2, [a])$; the
+conjunction of the gates listed in $r$ as $(3, r)$; and the disjunction of the gates listed in $r$
+as $(4, r)$. Mod gates have no encoding of their own: every mod gate is encoded as $(5, [])$.
+
+The serial evaluator reads kind $5$ as false.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

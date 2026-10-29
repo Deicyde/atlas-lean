@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Automata.MealyMachine.toSequential_initOut
 ---
 
-# To Sequential init Out
+# Initial output of the sequential transducer of a Mealy machine
 
-The initial output of the sequential rendering of a Mealy machine is empty.
+**Initial output of the sequential transducer of a Mealy machine.** For every Mealy machine
+$M$, the initial output of the sequential transducer of $M$ is the empty word.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
-- [To Sequential](to-sequential.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Mealy machine](mealy-machine.md)
+- [Mealy machine as a sequential transducer](to-sequential.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

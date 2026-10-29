@@ -6,27 +6,32 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.denote_subst
 ---
 
-# Denote subst
+# Substitution lemma for STLC denotation
 
-Denotation commutes with simultaneous substitution.
+**Substitution lemma for STLC denotation.** For every interpretation $I$ of the base types,
+every type-preserving substitution $\sigma$ mapping each variable of a context $\Gamma$ to a term
+in a context $\Delta$, every term $t$ in context $\Gamma$ and every environment $\eta$ for
+$\Delta$, the denotation in $\eta$ of $t$ with $\sigma$ applied simultaneously to its variables
+equals the denotation of $t$ in the environment that sends each variable $x$ of $\Gamma$ to the
+denotation of $\sigma(x)$ in $\eta$.
 
 ## Depends on
 
-- [Env](env.md)
-- [Sub](../syntax/sub.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote-2.md)
-- [Denote Sub](denote-sub.md)
-- [Subst](../substitution/subst.md)
-- [Ty](../syntax/ty.md)
-- [Denote](denote.md)
+- [Semantic environments](env.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Denotation of an STLC substitution](denote-sub.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](denote.md)
 
 ## Proof depends on
 
-- [Cons](cons.md)
-- [Lift](../substitution/lift.md)
-- [Denote weaken](denote-weaken.md)
-- [Var](../syntax/var.md)
+- [Extending a semantic environment in STLC](cons.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](../substitution/lift.md)
+- [Weakening preserves STLC denotation](denote-weaken.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

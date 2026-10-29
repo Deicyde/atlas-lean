@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.eating
 ---
 
-# Eating
+# The eating valuation
 
-The atom `i` holds when philosopher `i` eats.
+**The eating valuation.** The valuation of the atoms $i \in \{0, 1, 2\}$ on the states of the
+dining philosophers: atom $i$ holds at a state exactly when philosopher $i$ is eating there, that
+is, when its phase is $2$.
 
 ## Depends on
 
-- [State](state.md)
+- [Dining-philosophers state](state.md)
 
 ## Proof depends on
 
-- [Phase](phase.md)
+- [Phase of a philosopher](phase.md)
 
 ## Sources
 

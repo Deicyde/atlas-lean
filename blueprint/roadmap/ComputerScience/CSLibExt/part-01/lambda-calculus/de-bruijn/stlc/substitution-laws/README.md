@@ -4,36 +4,36 @@ navigation: module
 
 # Substitution Laws
 
-- [Cons](cons.md)
-- [Comp](comp.md)
+- [Extension of a simply typed substitution](cons.md)
+- [Composition of simply typed substitutions](comp.md)
 
 ## Fusion of renaming and substitution
 
-- [Rename weaken](rename-weaken.md)
-- [Rename subst](rename-subst.md)
-- [Subst rename](subst-rename.md)
-- [Subst lift weaken](subst-lift-weaken.md)
-- [Subst subst](subst-subst.md)
+- [Renaming commutes with weakening for intrinsically typed STLC terms](rename-weaken.md)
+- [Renaming after substitution in the simply typed calculus](rename-subst.md)
+- [Renaming then substituting an intrinsically typed STLC term](subst-rename.md)
+- [Lifted substitution commutes with weakening for intrinsically typed STLC terms](subst-lift-weaken.md)
+- [Composition of substitutions for intrinsically typed STLC terms](subst-subst.md)
 
 ## The category of typing contexts and substitutions
 
-- [Comp id apply](comp-id-apply.md)
+- [Right identity law for composition of substitutions](comp-id-apply.md)
 
 ## Renaming substitution images
 
-- [Rename](rename.md)
-- [Rename lift apply](rename-lift-apply.md)
+- [Renaming the images of a substitution](rename.md)
+- [Lifting commutes with renaming substitution images](rename-lift-apply.md)
 
 ## Cancellation laws at a binder
 
-- [Comp single apply](comp-single-apply.md)
-- [Lift single apply](lift-single-apply.md)
+- [Composing a single substitution with a substitution](comp-single-apply.md)
+- [Lifting followed by single substitution](lift-single-apply.md)
 
 ## Naturality of single substitution
 
-- [Subst single weaken](subst-single-weaken.md)
-- [Instantiate weaken](instantiate-weaken.md)
-- [Rename instantiate](rename-instantiate.md)
-- [Subst instantiate](subst-instantiate.md)
-- [Subst cons](subst-cons.md)
-- [Instantiate eq subst cons](instantiate-eq-subst-cons.md)
+- [Single substitution cancels weakening](subst-single-weaken.md)
+- [Instantiating a weakened term](instantiate-weaken.md)
+- [Renaming commutes with instantiation](rename-instantiate.md)
+- [Substitution commutes with instantiation for intrinsically typed STLC terms](subst-instantiate.md)
+- [Substituting by an extended substitution, via lifting](subst-cons.md)
+- [Instantiation is substitution by an extended identity](instantiate-eq-subst-cons.md)

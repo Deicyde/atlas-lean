@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Classes.one_way_permutation_implies_one_way_function
 ---
 
-# One way permutation implies one way function
+# One-way permutations are one-way functions
 
-A one-way permutation is a one-way function: length preservation gives the
-polynomial output bound, the evaluator is reused verbatim, and the inversion
-success sets coincide, since `List.ofFn` is injective and `π n` is injective,
-so `ofFn (π n y) = ofFn (π n x)` iff `π n y = π n x`. The converse direction
-(one-way functions yield one-way permutations) is not proved here.
+**One-way permutations are one-way functions.** Let $\pi$ be a one-way permutation family, so
+that each $\pi_n$ maps $n$-bit strings to $n$-bit strings. Then the family that sends an $n$-bit
+string $x$ to the bitstring $\pi_n(x)$ is a one-way function family.
+
+Length preservation gives the polynomial output bound, the evaluator of $\pi$ serves unchanged,
+and the inversion success probabilities coincide because an $n$-bit string is determined by the
+list of its bits.
 
 ## Depends on
 
-- [Is One Way Function](is-one-way-function.md)
-- [Is One Way Permutation](is-one-way-permutation.md)
+- [One-way function families](is-one-way-function.md)
+- [One-way permutation families](is-one-way-permutation.md)
 
 ## Proof depends on
 
-- [Negligible](negligible.md)
-- [Invert Succ](invert-succ.md)
-- [Perm Invert Succ](perm-invert-succ.md)
+- [Negligible functions](negligible.md)
+- [Inversion success probability](invert-succ.md)
+- [Inversion success probability against a permutation family](perm-invert-succ.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

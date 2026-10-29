@@ -5,13 +5,14 @@ statement: formalized
 lean: Isometries.linearDet
 ---
 
-# Linear Det
+# Linear determinant of a plane isometry
 
-The determinant of the linear part of a plane isometry.
+**Linear determinant of a plane isometry.** The linear determinant of an isometry $f$ of
+the Euclidean plane is the determinant of the linear part of $f$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane](plane.md)
 
 ## Sources
 

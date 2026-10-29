@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.Classes.ptas_subset_apx
 ---
 
-# Ptas subset apx
+# PTAS is contained in APX
 
-`PTAS ⊆ APX`: the `PTAS` algorithm at `k = 2` achieves ratio `1 / 2`.
+**PTAS is contained in APX.** Every optimization problem in the class PTAS belongs to the
+class APX.
+
+The algorithm that the approximation scheme provides for error $1/2$ achieves the constant
+ratio $1/2$.
 
 ## Depends on
 
-- [APX](apx.md)
-- [Opt Problem](opt-problem.md)
-- [PTAS](ptas.md)
+- [The class APX](apx.md)
+- [Optimization problems](opt-problem.md)
+- [The class PTAS](ptas.md)
 
 ## Proof depends on
 
-- [Approx At](approx-at.md)
-- [Is NPO](is-npo.md)
+- [Approximation ratio at a precision](approx-at.md)
+- [NPO optimization problems](is-npo.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

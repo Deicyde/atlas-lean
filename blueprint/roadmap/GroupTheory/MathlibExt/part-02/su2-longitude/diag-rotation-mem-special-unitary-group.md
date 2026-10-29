@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotation_mem_specialUnitaryGroup
 ---
 
-# Diag Rotation mem special Unitary Group
+# Diagonal rotations lie in $\mathrm{SU}(2)$
 
-Diagonal rotations lie in `SU₂`.
+**Diagonal rotations lie in $\mathrm{SU}(2)$.** For every real number $\theta$, the
+diagonal rotation through $\theta$ is a $2 \times 2$ complex matrix that is unitary and has
+determinant $1$, that is, it lies in $\mathrm{SU}(2)$.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
+- [Diagonal rotation](diag-rotation.md)
 
 ## Proof depends on
 
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
 - [Star diag Rotation](star-diag-rotation.md)
 
 ## Sources

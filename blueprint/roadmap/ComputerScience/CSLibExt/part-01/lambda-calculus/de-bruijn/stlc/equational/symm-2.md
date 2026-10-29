@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SubSemEq.symm
 ---
 
-# Symm
+# Symmetry of pointwise semantic equality of substitutions
 
-Pointwise semantic equality is symmetric.
+**Symmetry of pointwise semantic equality of substitutions.** For every interpretation $I$ of
+the base types and all simultaneous substitutions $\sigma$ and $\tau$ from a context $\Gamma$ to a
+context $\Delta$, if $\sigma$ and $\tau$ are pointwise semantically equal in $I$, then $\tau$ and
+$\sigma$ are pointwise semantically equal in $I$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Sub Sem Eq](sub-sem-eq.md)
-- [Ty](../syntax/ty.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Pointwise semantic equality of substitutions](sub-sem-eq.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote](../denotational/denote.md)
-- [Var](../syntax/var.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of simple types](../denotational/denote.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

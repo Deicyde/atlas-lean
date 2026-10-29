@@ -244,10 +244,11 @@ public theorem_wanted sumsetSizes_inter_Icc_of_isAddTorsionFree
     {n : ℕ | ∃ A : Finset G, A.card = k ∧ (h • A).card = n} ∩
         Set.Icc (h * k - h + 1) (h * k) = {h * k - h + 1, h * k}
 
-/-- **An arithmetic progression with its second-to-last term moved.** Let $G$ be a linearly
-ordered additive commutative group, let $a \in G$ with $a > 0$, and let $k \ge 3$ and $h \ge 1$
-be natural numbers. The set $A = \{0, a, 2a, \ldots, (k - 2)a, ka\}$ has $|hA| = hk$, where
-$hA$ is the $h$-fold sumset of $A$, the set of sums of $h$ elements of $A$.
+/-- **Sumset of an arithmetic progression with its second-to-last term removed.** Let $G$ be a
+linearly ordered additive commutative group, let $a \in G$ with $a > 0$, and let $k \ge 3$ and
+$h \ge 1$ be natural numbers. The set $A = \{0, a, 2a, \ldots, (k - 2)a, ka\}$, obtained from
+$\{0, a, 2a, \ldots, ka\}$ by removing $(k - 1)a$, has $|hA| = hk$, where $hA$ is the $h$-fold
+sumset of $A$, the set of sums of $h$ elements of $A$.
 
 The paper leaves $h$ unquantified; $h \ge 1$ is needed, since $|0A| = 1$.
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: Cslib.Automata.NA.Rabin
 ---
 
-# Rabin
+# Rabin automaton
 
-A Rabin automaton: a nondeterministic automaton with a set of Rabin pairs
-`(E, F)`. A run is accepting when some pair is hit: the run visits `E` infinitely
-often and `F` only finitely often.
+**Rabin automaton.** A Rabin automaton is a nondeterministic automaton together with a set
+of Rabin pairs $(E, F)$, each a pair of sets of states. A run is accepting when some pair is
+hit: the run visits $E$ infinitely often and $F$ only finitely often.
 
 ## Depends on
 

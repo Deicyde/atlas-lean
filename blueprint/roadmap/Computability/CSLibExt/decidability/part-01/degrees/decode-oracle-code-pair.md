@@ -8,20 +8,28 @@ lean: Cslib.Decidability.decodeOracleCode_pair
 
 # The decoder, by cases on the tag
 
-**The decoder, by cases on the tag**: decoding a code number unfolds to
-decoding strictly smaller code numbers (the subcode numbers are
-`payload.unpair.1`, `payload.unpair.2`, `payload`, all below the code number
-by the pairing lemmas). This is the recursion equation used for the
-primitive-recursiveness proof below.
+**The decoder, by cases on the tag.** Write $\langle t, p \rangle$ for the pairing of natural
+numbers used by the Gödel numbering of oracle codes, $(p_1, p_2)$ for the unpairing of $p$ (so that
+$\langle p_1, p_2 \rangle = p$), and $\mathrm{dec}(n)$ for the result of the computable decoder on
+$n$, which is either an oracle code or undefined. Then for all natural numbers $t$ and $p$, the
+value $\mathrm{dec}\langle t, p \rangle$ is: $\mathsf{zero}$, $\mathsf{succ}$, $\mathsf{left}$,
+$\mathsf{right}$ or $\mathsf{oracle}$ when $p = 0$ and $t$ is $0$, $1$, $2$, $3$ or $8$
+respectively; $\mathsf{pair}(a, b)$, $\mathsf{comp}(a, b)$ or $\mathsf{prec}(a, b)$ when $t$ is
+$4$, $5$ or $6$ respectively and $\mathrm{dec}(p_1) = a$ and $\mathrm{dec}(p_2) = b$ are both
+defined; $\mathsf{rfind}(a)$ when $t = 7$ and $\mathrm{dec}(p) = a$ is defined; and undefined in
+every other case.
+
+For $t \in \{4, 5, 6, 7\}$ the numbers decoded on the right, $p_1$, $p_2$ and $p$, are at most $p$
+and hence strictly below $\langle t, p \rangle$, so this is a recursion on the code number.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Decode Oracle Code](decode-oracle-code.md)
+- [Oracle codes](oracle-code.md)
+- [Decoding oracle codes](decode-oracle-code.md)
 
 ## Proof depends on
 
-- [Decode Oracle Code Fuel](decode-oracle-code-fuel.md)
+- [Fuel-indexed decoder of oracle codes](decode-oracle-code-fuel.md)
 - [The fuel-indexed decoder agrees with the total decoder](decode-oracle-code-fuel-eq-decode.md)
 - [Pairing with a positive first argument strictly increases the second](pair-gt-snd-of-pos.md)
 - [The first unpairing component is at most the number](unpair-fst-le.md)

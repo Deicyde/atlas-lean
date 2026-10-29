@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.LTS.RootedWeaklyBisimilar.match_rootedLeft
 ---
 
-# Match rooted Left
+# Observation congruence matches rooted weak transitions
 
-Rooted observational congruence matches rooted weak transitions while
-preserving weak bisimilarity of their derivatives.
+**Observation congruence matches rooted weak transitions.** In a labelled transition system
+with a silent label $\tau$, if $p$ and $q$ are rooted weakly bisimilar and there is a rooted weak
+transition from $p$ to $p'$ with label $\mu$, then there is a state $q'$ with a rooted weak
+transition from $q$ to $q'$ with label $\mu$ such that $p'$ and $q'$ are weakly bisimilar.
 
 ## Depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
-- [Rooted Weakly Bisimilar](rooted-weakly-bisimilar.md)
+- [Rooted weak transition](rooted-weak-step.md)
+- [Rooted observation congruence](rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [S Tr](../weak-bisimulation/s-tr.md)
-- [To STr](to-str.md)
-- [Trans s Tr](trans-s-tr.md)
-- [Trans τSTr](trans-str.md)
-- [Rooted Weak Step trans](rooted-weak-step-trans.md)
+- [Weak bisimilarity transfers weak transitions](../weak-bisimulation/s-tr.md)
+- [Rooted weak transitions are weak transitions](to-str.md)
+- [A rooted silent step followed by a weak transition is rooted](trans-s-tr.md)
+- [Appending silent steps to a rooted weak transition](trans-str.md)
+- [Silent steps before a rooted weak transition](rooted-weak-step-trans.md)
 
 ## Sources
 

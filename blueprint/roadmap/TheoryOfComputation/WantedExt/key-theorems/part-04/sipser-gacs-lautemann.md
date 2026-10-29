@@ -15,8 +15,8 @@ the polynomial hierarchy", Information Processing Letters 17 (1983), 215-217.
 ## Depends on
 
 - [BPP](../../../../Computability/CSLibExt/complexity/classes/bpp.md)
-- [Pi K](../../../../Computability/CSLibExt/complexity/classes/pi-k.md)
-- [Sigma K](../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
+- [The universal levels of the polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/pi-k.md)
+- [The class $\Sigma_k^p$](../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

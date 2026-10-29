@@ -61,9 +61,13 @@ variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E
   {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I 1 M]
   [RiemannianBundle (fun x : M ↦ TangentSpace I x)]
 
-/-- The Riemannian gradient of `f : M → ℝ` at `x`: `grad f(x) = (df_x)^♯`, the inverse of the
-Riesz isomorphism `InnerProductSpace.toDual ℝ (TangentSpace I x)` applied to the differential
-`mvfderiv I f x`. It is the unique tangent vector with `inner grad v = df_x v` for all `v`. -/
+/-- **Riemannian gradient.** Let $M$ be a $C^1$ manifold modelled on a complete real normed
+space, with a Riemannian metric, and let $f : M \to \mathbb{R}$ and $x \in M$. The Riemannian
+gradient $\operatorname{grad} f(x) = (df_x)^\sharp \in T_xM$ is the image of the differential
+$df_x$ of $f$ at $x$ under the inverse of the Riesz isomorphism
+$T_xM \to (T_xM)^*$, $w \mapsto \langle w, \cdot \rangle$, given by the metric at $x$. It is the
+unique tangent vector with $\langle \operatorname{grad} f(x), v \rangle = df_x(v)$ for all
+$v \in T_xM$. -/
 def riemannianGradient (f : M → ℝ) (x : M) : TangentSpace I x :=
   (InnerProductSpace.toDual ℝ (TangentSpace I x)).symm (mvfderiv I f x)
 
@@ -111,26 +115,30 @@ variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimension
 
 variable [IsContMDiffRiemannianBundle I ∞ E (fun x : M ↦ TangentSpace I x)]
 
-/-- The covariant Hessian of `f : M → ℝ` at `x`, as a function of two tangent vectors:
-`∇²f(u, v) = (∇_u df)(v) = u(V f) - df_x(∇_u V)`, where `V` is any vector field with `V x = v`
-and `∇` is the Levi-Civita connection. Here `V` is the extension `FiberBundle.extend E v`
-(constant coordinates in the preferred chart at `x`), as in `Manifold.riemannCurvature`.
+/-- **Covariant Hessian.** Let $M$ be a smooth manifold modelled on a finite-dimensional real
+normed space, with a smooth Riemannian metric and its Levi-Civita connection $\nabla$. For
+$f : M \to \mathbb{R}$, a point $x \in M$ and tangent vectors $u, v \in T_xM$, let $V$ be the
+extension of $v$ to a vector field with constant coordinates in the preferred chart at $x$, so
+that $V(x) = v$. The Hessian of $f$ at $x$ is the real number
+$$\nabla^2 f(u, v) = d\big(y \mapsto df_y(V(y))\big)_x(u) - df_x(\nabla_u V),$$
+that is, $u(Vf) - df_x(\nabla_u V)$, where $df_y$ is the differential of $f$ at $y$.
 
-This is the textbook Hessian `∇²f = ∇(df)` (Lee, *Introduction to Riemannian Manifolds*,
-2nd ed., GTM 176, Ch. 4; on Euclidean space it is the second derivative) because the
-Levi-Civita connection of a `C^∞` metric is `C^∞`, so it sends the smooth extension to a smooth
-vector field where it is uniquely determined and the Hessian expression is tensorial. Mathlib
-does not yet prove that regularity (see the TODO in `LeviCivita.lean`); until it does, this
-agreement is a standard fact not formalized here, and `hessian` is a function of its two tangent
-arguments rather than a bundled bilinear map. -/
+This is the textbook Hessian $\nabla^2 f = \nabla(df)$, $\nabla^2 f(u, v) = (\nabla_u df)(v)$
+(Lee, *Introduction to Riemannian Manifolds*, 2nd ed., GTM 176, Ch. 4), provided the
+Levi-Civita connection sends smooth vector fields to smooth vector fields. That regularity is a
+standard fact that is not proved here, so the Hessian is defined as a function of two tangent
+vectors rather than as a bilinear map. -/
 def hessian (f : M → ℝ) (x : M) (u v : TangentSpace I x) : ℝ :=
   (mvfderiv I (fun y => (mvfderiv I f y) (FiberBundle.extend E v y)) x) u -
     (mvfderiv I f x)
       (CovariantDerivative.leviCivitaConnection I M (FiberBundle.extend E v) x u)
 
-/-- On an inner product space with its standard metric, the Riemannian gradient is Mathlib's
-Hilbert-space `gradient`. Since `TangentSpace 𝓘(ℝ, F) x` is definitionally `F`, the equality
-typechecks directly; the proof works in `F` through `NormedSpace.fromTangentSpace`. -/
+/-- **The Riemannian gradient on a Hilbert space.** Let $F$ be a real Hilbert space, viewed as
+a Riemannian manifold with the metric given by its inner product, and let $f : F \to \mathbb{R}$
+and $x \in F$. Identifying the tangent space at $x$ with $F$, the Riemannian gradient of $f$ at
+$x$ is the Hilbert-space gradient $\nabla f(x)$, the unique vector with
+$\langle \nabla f(x), w \rangle = Df(x)(w)$ for all $w \in F$, where $Df(x)$ is the Fréchet
+derivative of $f$ at $x$. -/
 theorem riemannianGradient_vectorSpace {F : Type*} [NormedAddCommGroup F]
     [InnerProductSpace ℝ F] [CompleteSpace F] (f : F → ℝ) (x : F) :
     riemannianGradient 𝓘(ℝ, F) f x = gradient f x := by
@@ -177,9 +185,15 @@ theorem riemannianGradient_vectorSpace {F : Type*} [NormedAddCommGroup F]
   -- `riemannianGradient 𝓘(ℝ, F) f x` and `h_eq` closes the goal.
   exact h_eq
 
-/-- On an inner product space, the Hessian is the derivative in direction `u` of
-`y ↦ fderiv ℝ f y v`, with no hypothesis on `f`. Tangent vectors are identified with vectors
-in `F` via `NormedSpace.fromTangentSpace`. -/
+/-- **The Hessian on Euclidean space as an iterated directional derivative.** Let $F$ be a
+finite-dimensional real inner product space, viewed as a Riemannian manifold with the metric
+given by its inner product, let $f : F \to \mathbb{R}$ and let $x \in F$. For all tangent vectors
+$u, v$ at $x$, identified with vectors of $F$, the Hessian of $f$ at $x$ is the derivative at $x$
+in direction $u$ of the function $y \mapsto Df(y)(v)$, where $Df(y)$ is the Fréchet derivative of
+$f$ at $y$: $\nabla^2 f(u, v) = D\big(y \mapsto Df(y)(v)\big)(x)(u)$.
+
+A Fréchet derivative that does not exist is taken to be $0$, so no hypothesis on $f$ is
+needed. -/
 theorem hessian_vectorSpace {F : Type*} [NormedAddCommGroup F] [InnerProductSpace ℝ F]
     [FiniteDimensional ℝ F] (f : F → ℝ) (x : F) (u v : TangentSpace 𝓘(ℝ, F) x) :
     hessian 𝓘(ℝ, F) f x u v =
@@ -197,8 +211,12 @@ theorem hessian_vectorSpace {F : Type*} [NormedAddCommGroup F] [InnerProductSpac
   rw [mvfderiv_eq_fderiv]
   rfl
 
-/-- On an inner product space, if `fderiv ℝ f` is differentiable at `x`, the Hessian is the
-second Fréchet derivative. -/
+/-- **The Hessian on Euclidean space is the second derivative.** Let $F$ be a finite-dimensional
+real inner product space, viewed as a Riemannian manifold with the metric given by its inner
+product, let $f : F \to \mathbb{R}$ and let $x \in F$. If the Fréchet derivative
+$y \mapsto Df(y)$ of $f$ is differentiable at $x$, then for all tangent vectors $u, v$ at $x$,
+identified with vectors of $F$, the Hessian of $f$ at $x$ is the second Fréchet derivative:
+$\nabla^2 f(u, v) = D^2 f(x)(u)(v)$, where $D^2 f(x)$ is the derivative of $Df$ at $x$. -/
 theorem hessian_vectorSpace_eq_fderiv_fderiv {F : Type*} [NormedAddCommGroup F]
     [InnerProductSpace ℝ F] [FiniteDimensional ℝ F] (f : F → ℝ) (x : F)
     (u v : TangentSpace 𝓘(ℝ, F) x) (h : DifferentiableAt ℝ (fderiv ℝ f) x) :

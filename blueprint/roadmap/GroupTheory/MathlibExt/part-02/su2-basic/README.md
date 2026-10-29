@@ -4,6 +4,6 @@ navigation: module
 
 # SU2 Basic
 
-- [Diag I mem](diag-i-mem.md)
-- [Antidiag mem](antidiag-mem.md)
-- [Su2 center ne top](su2-center-ne-top.md)
+- [The matrix $\operatorname{diag}(i, -i)$ is special unitary](diag-i-mem.md)
+- [The matrix with rows $(0, 1)$ and $(-1, 0)$ is special unitary](antidiag-mem.md)
+- [The center of $\mathrm{SU}(2)$ is proper](su2-center-ne-top.md)

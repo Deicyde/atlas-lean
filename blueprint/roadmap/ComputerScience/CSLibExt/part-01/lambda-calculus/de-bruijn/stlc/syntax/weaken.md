@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.weaken
 ---
 
-# Weaken
+# Weakening a simply typed term
 
-Weakening by one variable.
+**Weakening a simply typed term.** For a term $t$ of type $A$ in a context $\Gamma$ and a
+simple type $B$, write $B :: \Gamma$ for the context obtained by prepending $B$ to $\Gamma$. The
+weakening of $t$ is the term of type $A$ in the context $B :: \Gamma$ obtained by renaming $t$
+along the renaming that sends each variable of $\Gamma$ to its successor in $B :: \Gamma$.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Ty](ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](tm.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
-- [Var](var.md)
+- [Renaming a simply typed term](rename.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

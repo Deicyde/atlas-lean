@@ -6,33 +6,33 @@ navigation: module
 
 ## Stlc
 
-- [Sem Eq](sem-eq.md)
+- [Semantic equality of terms in a model](sem-eq.md)
 
 ## Sem Eq
 
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
-- [App](app.md)
-- [Lam](lam.md)
-- [Rename](rename.md)
-- [Subst](subst.md)
-- [Of step](of-step.md)
-- [Of steps](of-steps.md)
-- [Beta](beta.md)
-- [Eta](eta.md)
+- [Semantic equality is reflexive](refl.md)
+- [Symmetry of semantic equality of terms](symm.md)
+- [Transitivity of semantic equality of terms](trans.md)
+- [Semantic equality is a congruence for application](app.md)
+- [Semantic equality is a congruence for lambda abstraction](lam.md)
+- [Renaming preserves semantic equality](rename.md)
+- [Substitution preserves semantic equality](subst.md)
+- [Single-step evaluation is a semantic equation](of-step.md)
+- [Multi-step evaluation is a semantic equation](of-steps.md)
+- [Beta is sound for the denotational semantics](beta.md)
+- [Eta is sound for the denotational semantics](eta.md)
 
 ## Stlc
 
-- [Sub Sem Eq](sub-sem-eq.md)
+- [Pointwise semantic equality of substitutions](sub-sem-eq.md)
 
 ## Sub Sem Eq
 
-- [Refl](refl-2.md)
-- [Symm](symm-2.md)
-- [Trans](trans-2.md)
+- [Pointwise semantic equality of substitutions is reflexive](refl-2.md)
+- [Symmetry of pointwise semantic equality of substitutions](symm-2.md)
+- [Transitivity of pointwise semantic equality of substitutions](trans-2.md)
 
 ## Sem Eq
 
-- [Subst congr](subst-congr.md)
-- [Equivalence](equivalence.md)
+- [Semantically equal substitutions give semantically equal results](subst-congr.md)
+- [Semantic equality is an equivalence relation](equivalence.md)

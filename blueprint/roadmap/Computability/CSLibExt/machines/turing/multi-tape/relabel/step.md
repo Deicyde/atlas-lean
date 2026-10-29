@@ -6,18 +6,24 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.step
 ---
 
-# Step
+# Relabelled machines step in lockstep
 
-One step of `tm'` from a relabelled configuration is the relabelled step of `tm`.
+**Relabelled machines step in lockstep.** Let $M$ and $M'$ be multi-tape Turing machines
+with the same number of work tapes and the same alphabet, with state sets $Q$ and $Q'$, such that
+$M'$ simulates $M$ up to the state relabelling $f : Q \to Q'$. For a configuration $c$ of $M$,
+write $f_*(c)$ for the configuration of $M'$ obtained by replacing the state $q$ of $c$ by
+$f(q)$ and keeping the input head, the work tapes, the work heads and the output (a halted
+configuration stays halted). Then for every configuration $c$ of $M$, one step of $M'$ from
+$f_*(c)$ gives $f_*(c')$, where $c'$ is the result of one step of $M$ from $c$.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Apply relabel Action](apply-relabel-action.md)
-- [Relabel Action](relabel-action.md)
+- [Applying a relabelled action](apply-relabel-action.md)
+- [Relabelling the successor state of an action](relabel-action.md)
 
 ## Sources
 

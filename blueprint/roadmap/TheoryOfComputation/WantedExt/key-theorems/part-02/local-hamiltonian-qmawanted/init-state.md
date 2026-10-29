@@ -16,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Basis State](../../../../../Computability/CSLibExt/complexity/classes/basis-state.md)
-- [Tensor Prod](../../../../../Computability/CSLibExt/complexity/classes/tensor-prod.md)
-- [Zero State](../../../../../Computability/CSLibExt/complexity/classes/zero-state.md)
+- [Computational basis state of a bitstring](../../../../../Computability/CSLibExt/complexity/classes/basis-state.md)
+- [Tensor product of state vectors](../../../../../Computability/CSLibExt/complexity/classes/tensor-prod.md)
+- [All-zero state](../../../../../Computability/CSLibExt/complexity/classes/zero-state.md)
 
 ## Sources
 

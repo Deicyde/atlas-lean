@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.computes_iff_exists_evalSteps
 ---
 
-# Computes iff exists eval Steps
+# A code computes exactly what its clocked evaluator returns
 
-The machine of `c` computes `o` on `x` iff some clock makes the evaluator return `o`.
+**A code computes exactly what its clocked evaluator returns.** For a code $c$ with $k$ work
+tapes and binary words $x$ and $o$, the machine of $c$ computes $o$ on input $x$, that is, it
+eventually halts on $x$ with output $o$, if and only if there is a clock $T \in \mathbb{N}$ such
+that the clocked evaluator of $c$ run on $x$ for $T$ steps returns $o$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Eval Steps](eval-steps.md)
-- [To TM](to-tm.md)
+- [Codes for multi-tape machines](code.md)
+- [Clocked evaluator](eval-steps.md)
+- [The machine of a code](to-tm.md)
 
 ## Proof depends on
 

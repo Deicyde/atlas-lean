@@ -5,29 +5,29 @@ navigation: module
 # Hedge
 
 - [Update](update.md)
-- [Weights](weights.md)
-- [Total](total.md)
-- [Round Loss](round-loss.md)
-- [Alg Loss](alg-loss.md)
-- [Expert Loss](expert-loss.md)
-- [Exp neg mul le](exp-neg-mul-le.md)
+- [Hedge weights after a sequence of rounds](weights.md)
+- [Total weight of the Hedge experts](total.md)
+- [Loss of a Hedge round](round-loss.md)
+- [Loss of the Hedge algorithm](alg-loss.md)
+- [Total loss of an expert](expert-loss.md)
+- [The exponential lies below its chord on the unit interval](exp-neg-mul-le.md)
 - [A round costs weight in proportion to the algorithm's loss](total-update-le.md)
-- [Bounded](bounded.md)
-- [Total weights le](total-weights-le.md)
-- [Weights apply](weights-apply.md)
+- [Losses in the unit interval](bounded.md)
+- [Weight decay over a Hedge run](total-weights-le.md)
+- [Closed form of the Hedge weights](weights-apply.md)
 - [The Hedge loss bound](alg-loss-le.md)
 
 ## The second-order bound
 
-- [Round Sq](round-sq.md)
-- [Alg Sq](alg-sq.md)
-- [Nonneg](nonneg.md)
+- [Weighted second moment of a Hedge round](round-sq.md)
+- [Summed second moments of the Hedge losses](alg-sq.md)
+- [Nonnegative losses](nonneg.md)
 - [A round costs weight in proportion to the algorithm's loss, up to a second-order term](total-update-le-sq.md)
-- [Total weights le sq](total-weights-le-sq.md)
+- [Weight decay over a Hedge run, second-order form](total-weights-le-sq.md)
 - [The second-order Hedge bound](alg-loss-le-sq.md)
 
 ## Splitting a run
 
-- [Weights append](weights-append.md)
-- [Alg Loss append](alg-loss-append.md)
-- [Alg Sq append](alg-sq-append.md)
+- [A Hedge run splits at any round](weights-append.md)
+- [The Hedge loss splits at any round](alg-loss-append.md)
+- [The summed second moments split at any round](alg-sq-append.md)

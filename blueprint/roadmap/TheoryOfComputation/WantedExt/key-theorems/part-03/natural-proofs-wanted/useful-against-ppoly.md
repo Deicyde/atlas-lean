@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [PPoly](../../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
+- [Polynomial time with polynomial advice](../../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
 - [Lang Of Family](lang-of-family.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

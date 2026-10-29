@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Games.ParityGame.attractorStrategy_reaches_of_mem_attractor
 ---
 
-# Attractor Strategy reaches of mem attractor
+# The attractor strategy reaches the target from the attractor
 
-On a finite arena, from every position of the attractor the attractor strategy reaches `T`
-within fewer than `Nat.card Pos` moves.
+**The attractor strategy reaches the target from the attractor.** Let $G$ be a parity game
+with finitely many positions, $N$ of them, let $p$ be a player and $T$ a set of positions. If
+$\pi$ is a play of $G$ that conforms to the attractor strategy of $p$ for $T$ and whose initial
+position $\pi_0$ lies in the attractor of $T$ for $p$, then $\pi_i \in T$ for some $i < N$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Conforms](../parity/conforms.md)
-- [Is Play](../parity/is-play.md)
+- [Parity game](../parity/parity-game.md)
+- [Plays conforming to a strategy](../parity/conforms.md)
+- [Plays of a parity game](../parity/is-play.md)
 - [Attractor](attractor.md)
-- [Attractor Strategy](attractor-strategy.md)
-- [Player](../parity/player.md)
+- [Attractor strategy](attractor-strategy.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor Stage](attractor-stage.md)
-- [Attractor Strategy reaches](attractor-strategy-reaches.md)
-- [Attractor eq attractor Stage card](attractor-eq-attractor-stage-card.md)
+- [Attractor stages](attractor-stage.md)
+- [The attractor strategy reaches the target from an attractor stage](attractor-strategy-reaches.md)
+- [The attractor stabilizes after as many stages as there are positions](attractor-eq-attractor-stage-card.md)
 
 ## Sources
 

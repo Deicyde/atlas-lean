@@ -17,8 +17,8 @@ The longitude map is surjective: every diagonal rotation is hit.
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
 - [Longitude Map apply of Add mk](longitude-map-apply-of-add-mk.md)
 
 ## Sources

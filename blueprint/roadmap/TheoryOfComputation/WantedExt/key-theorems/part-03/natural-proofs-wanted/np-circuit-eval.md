@@ -18,9 +18,9 @@ as in the previous local evaluator.
 
 ## Proof depends on
 
-- [ACGate](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
-- [Ac Gate Of Pair](../../../../../Computability/CSLibExt/complexity/classes/ac-gate-of-pair.md)
-- [Circuit Eval](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
+- [Gates of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
+- [Decoding a gate from its (kind, references) pair](../../../../../Computability/CSLibExt/complexity/classes/ac-gate-of-pair.md)
+- [Evaluation of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
 
 ## Sources
 

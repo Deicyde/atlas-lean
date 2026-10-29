@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeRaw_erase
 ---
 
-# Normalize Raw erase
+# Raw normalization of an erased term
 
-On intrinsic inputs, raw normalization agrees with normalization by
-evaluation followed by erasure.
+**Raw normalization of an erased term.** Assume equality of base types is decidable. For
+every intrinsically typed term $t$ of type $A$ in context $\Gamma$, raw normalization of the
+erasure of $t$ in $\Gamma$ succeeds and returns the type $A$ together with the erasure of the
+normal form of $t$ computed by normalization by evaluation.
 
 ## Depends on
 
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Ty](../syntax/ty.md)
-- [Normalize Raw](normalize-raw.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Simple types](../syntax/ty.md)
+- [Normalization of raw terms](normalize-raw.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Checked](checked.md)
-- [Var](../syntax/var.md)
-- [Elaborate](elaborate.md)
-- [Elaborate erase](elaborate-erase.md)
-- [Normalize Nf](../nbe-evaluation/normalize-nf.md)
+- [Checked terms](checked.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Elaboration of raw STLC terms](elaborate.md)
+- [Elaboration inverts erasure](elaborate-erase.md)
+- [Normalization by evaluation](../nbe-evaluation/normalize-nf.md)
 
 ## Sources
 

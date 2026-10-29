@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.refl
 ---
 
-# Refl
+# Every machine is a relabelling of itself
 
-Every machine simulates itself under the identity.
+**Every machine is a relabelling of itself.** Every deterministic machine with $k$ work tapes
+simulates itself up to the identity relabelling of its states.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Relabel Action](relabel-action.md)
+- [Relabelling the successor state of an action](relabel-action.md)
 
 ## Sources
 

@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Env.rename
 ---
 
-# Rename
+# Renaming an environment
 
-Precompose an environment with a renaming.
+**Renaming an environment.** Given a renaming $\rho$ from context $\Gamma$ to context
+$\Delta$ (a type-preserving map from the variables of $\Gamma$ to those of $\Delta$) and an
+environment $\eta$ for $\Delta$, the renamed environment for $\Gamma$ sends each variable $x$ of
+$\Gamma$ to $\eta(\rho(x))$; that is, it is the composite $\eta \circ \rho$.
 
 ## Depends on
 
-- [Env](env.md)
-- [Ren](../syntax/ren.md)
-- [Ty](../syntax/ty.md)
+- [Semantic environments](env.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

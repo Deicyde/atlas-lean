@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.atomic_mutex
 ---
 
-# Atomic mutex
+# Mutual exclusion under atomic acquisition
 
-Neighbours never eat together under atomic acquisition.
+**Mutual exclusion under atomic acquisition.** In the dining philosophers transition system
+with atomic acquisition of both forks, for each philosopher $i \in \{0, 1, 2\}$, in no state
+reachable from the initial state (all three philosophers thinking) do philosopher $i$ and its
+neighbour $i + 1$ (modulo $3$) both eat.
 
 ## Depends on
 
-- [State](../dining-philosophers/state.md)
-- [Atomic Lts](atomic-lts.md)
-- [Eating](../dining-philosophers/eating.md)
-- [Initial](../dining-philosophers/initial.md)
-- [Neighbours Apart](../dining-philosophers/neighbours-apart.md)
+- [Dining-philosophers state](../dining-philosophers/state.md)
+- [Dining philosophers with atomic fork acquisition](atomic-lts.md)
+- [The eating valuation](../dining-philosophers/eating.md)
+- [Initial state of the dining philosophers](../dining-philosophers/initial.md)
+- [Neighbours-apart formula](../dining-philosophers/neighbours-apart.md)
 - [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
 - [Satisfies](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
 
 ## Proof depends on
 
-- [Can Move Atomic](can-move-atomic.md)
-- [Move Atomic](move-atomic.md)
-- [Phase](../dining-philosophers/phase.md)
+- [Enabled moves under atomic acquisition](can-move-atomic.md)
+- [Move of a philosopher under atomic acquisition](move-atomic.md)
+- [Phase of a philosopher](../dining-philosophers/phase.md)
 - [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
 - [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)

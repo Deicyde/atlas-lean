@@ -6,15 +6,17 @@ proof: formalized
 lean: DehnInvariant.dehnInvariant_replicate
 ---
 
-# Dehn Invariant replicate
+# Dehn invariant of a repeated edge
 
-The Dehn invariant of a constant edge list is the number of edges times one edge term.
+**Dehn invariant of a repeated edge.** For a natural number $n$ and an edge of length $\ell$
+and dihedral angle $\theta$, the Dehn invariant of the list consisting of $n$ copies of that edge
+is $n \cdot (\ell \otimes \theta)$ in the Dehn group, where $\theta$ is taken modulo $2\pi$.
 
 ## Depends on
 
-- [Dehn Group](dehn-group.md)
-- [Edge](edge.md)
-- [Dehn Invariant](dehn-invariant.md)
+- [Dehn group](dehn-group.md)
+- [Edge of a polyhedron](edge.md)
+- [Dehn invariant](dehn-invariant.md)
 
 ## Sources
 

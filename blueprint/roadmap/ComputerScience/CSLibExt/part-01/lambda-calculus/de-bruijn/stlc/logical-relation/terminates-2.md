@@ -6,16 +6,17 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Reducible.terminates
 ---
 
-# Terminates
+# Reducible terms terminate
 
-Every reducible term terminates.
+**Reducible terms terminate.** Every reducible closed term of the simply typed lambda
+calculus terminates.
 
 ## Depends on
 
 - [Reducible](reducible.md)
-- [Terminates](terminates.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Termination of closed terms](terminates.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

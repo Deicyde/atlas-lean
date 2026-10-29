@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Games.ParityGame.wonBy_drop_iff
 ---
 
-# Won By drop iff
+# Winning is prefix independent
 
-Winning is prefix independent.
+**Winning is prefix independent.** Let $p$ be a player of a parity game, $\pi = (\pi_0,
+\pi_1, \dots)$ an infinite sequence of positions and $j$ a natural number. Then the sequence
+$(\pi_j, \pi_{j+1}, \dots)$, obtained by dropping the first $j$ positions of $\pi$, is won by $p$
+if and only if $\pi$ is won by $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
-- [Won By](won-by.md)
-- [Player](player.md)
+- [Parity game](parity-game.md)
+- [Winner of a play in a parity game](won-by.md)
+- [Players of a parity game](player.md)
 
 ## Proof depends on
 
-- [Is Max Inf Occ](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
-- [Parity Even](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
-- [Parity Odd](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
-- [Is Max Inf Occ drop iff](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ-drop-iff.md)
+- [Largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
+- [Even max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Odd max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
+- [Prefix independence of the largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ-drop-iff.md)
 
 ## Sources
 

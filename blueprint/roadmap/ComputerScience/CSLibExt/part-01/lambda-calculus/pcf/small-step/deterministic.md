@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Step.deterministic
 ---
 
-# Deterministic
+# Determinism of PCF call-by-name reduction
 
-Reduction is deterministic.
+**Determinism of PCF call-by-name reduction.** One-step call-by-name reduction of closed PCF
+terms is deterministic: if a closed term $t$ of type $A$ reduces in one step to $t_1$ and also
+reduces in one step to $t_2$, then $t_1 = t_2$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Step](step.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Call-by-name reduction step of PCF](step.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Value](../big-step/value.md)
-- [Not step](not-step.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Numeral injective](../syntax/numeral-injective.md)
-- [Numeral not step](numeral-not-step.md)
-- [Nat](../syntax/nat.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Values of PCF](../big-step/value.md)
+- [PCF values are normal forms](not-step.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Injectivity of PCF numerals](../syntax/numeral-injective.md)
+- [PCF numerals are normal forms](numeral-not-step.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

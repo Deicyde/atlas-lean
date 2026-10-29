@@ -6,13 +6,15 @@ proof: formalized
 lean: Manifold.killingVectorFields.ext
 ---
 
-# Ext
+# Extensionality for Killing fields
 
-Two Killing fields agreeing at every point are equal.
+**Extensionality for Killing fields.** Two elements $a$ and $b$ of the space of
+Killing vector fields on a smooth Riemannian manifold $M$ that agree at every point
+$x \in M$ are equal.
 
 ## Depends on
 
-- [Killing Vector Fields](killing-vector-fields.md)
+- [Space of Killing vector fields](killing-vector-fields.md)
 
 ## Sources
 

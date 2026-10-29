@@ -11,11 +11,11 @@ Wire count: total number of input references in a circuit.
 
 ## Depends on
 
-- [ACGate](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
+- [Gates of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
 
 ## Proof depends on
 
-- [Gate Inputs](../../../../../Computability/CSLibExt/complexity/classes/gate-inputs.md)
+- [Predecessors of a gate](../../../../../Computability/CSLibExt/complexity/classes/gate-inputs.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.CCS.Process.EquationClosure
 ---
 
-# Equation Closure
+# Reflexive closure of a relation on processes
 
-A relation used to prove algebraic choice laws: related processes are
-either equal or one of the explicitly supplied equation instances.
+**Reflexive closure of a relation on processes.** Given a relation $E$ on finite CCS processes,
+its equation closure relates $P$ to $Q$ exactly when $P = Q$ or $E(P, Q)$; that is, it is the
+reflexive closure of $E$.
+
+It is used to prove the algebraic laws of nondeterministic choice up to strong bisimilarity.
 
 ## Depends on
 
-- [Process](process.md)
+- [Finite CCS processes](process.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.buffer
 ---
 
-# Buffer
+# The two-place buffer process
 
-The buffer process with the given occupancy.
+**The two-place buffer process.** For an occupancy $n \in \mathbb{N}$, the process constant
+of the go-back-N specification for the two-place buffer holding $n$ messages.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Process](../recursion/process.md)
+- [Process constants of the go-back-N model](agent.md)
+- [Channel names of go-back-N](name.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Sources
 

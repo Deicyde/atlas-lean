@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.reflect_rename
 ---
 
-# Reflect rename
+# Reflection commutes with renaming
 
-Reflection commutes with transport to a future context.
+**Reflection commutes with renaming.** For every type $A$, every renaming $\rho$ from a
+context $\Gamma$ to a context $\Delta$, and every neutral term $n$ of type $A$ in context
+$\Gamma$, transporting the semantic value obtained by reflecting $n$ at type $A$ along $\rho$
+gives the reflection at type $A$ of the neutral term $n$ renamed by $\rho$.
 
 ## Depends on
 
-- [Ren](../syntax/ren.md)
-- [Sem](../nbe/sem.md)
-- [Rename](../nbe/rename.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
-- [Lift](../syntax/lift.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [Renaming a semantic value](../nbe/rename.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
 
 ## Proof depends on
 
-- [Comp](../syntax/comp.md)
+- [Composition of renamings of simply typed contexts](../syntax/comp.md)
 
 ## Sources
 

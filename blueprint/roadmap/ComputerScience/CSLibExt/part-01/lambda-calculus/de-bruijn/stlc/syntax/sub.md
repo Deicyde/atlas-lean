@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub
 ---
 
-# Sub
+# Simultaneous substitutions of simply typed contexts
 
-Type-preserving simultaneous substitutions.
+**Simultaneous substitutions of simply typed contexts.** For contexts $\Gamma$ and $\Delta$
+(lists of simple types), a substitution from $\Gamma$ to $\Delta$ assigns to every simple type
+$A$ and every variable of type $A$ in $\Gamma$ a term of type $A$ in context $\Delta$.
 
 ## Depends on
 
-- [Ty](ty.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Tm](tm.md)
-- [Var](var.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](tm.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

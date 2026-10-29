@@ -13,10 +13,10 @@ synthesis of two-terminal switching circuits", Bell System Technical Journal 28 
 
 ## Depends on
 
-- [ACGate](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
-- [Is Mod Free](../../../../../Computability/CSLibExt/complexity/classes/is-mod-free.md)
-- [Well Formed Circuit](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
-- [Circuit Eval](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
+- [Gates of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
+- [Circuits without mod gates](../../../../../Computability/CSLibExt/complexity/classes/is-mod-free.md)
+- [Well-formed flat circuits](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
+- [Evaluation of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
 - [Wire Count](wire-count.md)
 
 ## Sources

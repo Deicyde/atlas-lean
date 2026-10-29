@@ -41,7 +41,7 @@ navigation: module
 - [Negative weight vertex](negative-weight-vertex.md)
 - [Reflexivity of the weighted free sum](weighted-free-sum-reflexive.md)
 - [Affine free sums of IDP weighted simplices at the negative weight vertex of a reflexive summand are IDP](affine-free-sum-idp.md)
-- [Affine Free Sum reflexive idp h Star Unimodal](affine-free-sum-reflexive-idp-h-star-uni.md)
+- [Affine free sums of weighted simplices at the negative weight vertex preserve reflexivity, IDP and $h^\ast$-unimodality](affine-free-sum-reflexive-idp-h-star-uni.md)
 - [Finitely many reflexive IDP multiplicity vectors](finite-idp-reflexive-multiplicities.md)
 - [Floor criterion for IDP of reflexive weighted simplices](idp-reflexive-floor-characterization.md)
 - [A necessary condition for IDP reflexive weighted simplices](idp-reflexive-implies-necessary.md)

@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Automata.NA.Buchi.hasLasso_iff_reachable
 ---
 
-# Has Lasso iff reachable
+# The lasso condition in the transition graph
 
-The lasso condition in terms of the transition graph.
+**The lasso condition in the transition graph.** A nondeterministic Büchi automaton has a
+lasso if and only if there are a start state $s_0$ and an accepting state $s$ such that $s$ is
+reachable from $s_0$ in zero or more steps of the transition graph and $s$ is reachable from
+itself in one or more steps; the transition graph has an edge from $p$ to $q$ when some symbol
+takes $p$ to $q$.
 
 ## Depends on
 
-- [Has Lasso](has-lasso.md)
-- [Step](step.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
+- [Symbol-forgetting transition graph of a Büchi automaton](step.md)
 
 ## Proof depends on
 
-- [Exists m Tr iff refl Trans Gen](exists-m-tr-iff-refl-trans-gen.md)
-- [Exists ne nil m Tr iff trans Gen](exists-ne-nil-m-tr-iff-trans-gen.md)
+- [Reachability by words is reachability in the transition graph](exists-m-tr-iff-refl-trans-gen.md)
+- [Nonempty words and paths of positive length](exists-ne-nil-m-tr-iff-trans-gen.md)
 
 ## Sources
 

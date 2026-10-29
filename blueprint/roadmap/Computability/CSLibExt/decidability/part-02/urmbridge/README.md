@@ -5,54 +5,54 @@ navigation: module
 # URMBridge
 
 - [Code of a URM instruction](encode-instr.md)
-- [Encode Instr unpair fst](encode-instr-unpair-fst.md)
-- [Encode Instr unpair snd](encode-instr-unpair-snd.md)
+- [Tag of an instruction code](encode-instr-unpair-fst.md)
+- [Payload of an instruction code](encode-instr-unpair-snd.md)
 - [One coded URM step](coded-step.md)
 - [The coded step is primitive recursive](primrec-coded-step.md)
 
 ## Coded states
 
 - [Register bound](reg-bound.md)
-- [To Regs](to-regs.md)
-- [To Coded](to-coded.md)
-- [Of Coded](of-coded.md)
-- [Length to Regs](length-to-regs.md)
-- [Get D to Regs](get-d-to-regs.md)
-- [To Regs update](to-regs-update.md)
-- [Max Register le reg Bound](max-register-le-reg-bound.md)
-- [Writes To le reg Bound](writes-to-le-reg-bound.md)
-- [Reads le reg Bound](reads-le-reg-bound.md)
-- [To Coded of Coded](to-coded-of-coded.md)
+- [Register list](to-regs.md)
+- [Coded machine state](to-coded.md)
+- [Decoding a coded state](of-coded.md)
+- [Length of the register list](length-to-regs.md)
+- [Reading the register list](get-d-to-regs.md)
+- [Updating a register updates the register list](to-regs-update.md)
+- [Instructions stay within the register bound](max-register-le-reg-bound.md)
+- [Written registers lie within the register bound](writes-to-le-reg-bound.md)
+- [Registers read by a program lie within the register bound](reads-le-reg-bound.md)
+- [Decoding and re-encoding a coded state gives it back](to-coded-of-coded.md)
 
 ## The coded step agrees with the machine step
 
-- [Pc lt of step](pc-lt-of-step.md)
-- [Get D codes](get-d-codes.md)
+- [A state that can step is running](pc-lt-of-step.md)
+- [Instruction codes by position](get-d-codes.md)
 - [A machine step is a coded step](coded-step-of-step.md)
 - [A coded step is a machine step](step-of-coded-step.md)
 
 ## Predicate classes
 
-- [Decidable](decidable.md)
-- [Recognizable](recognizable.md)
+- [URM-decidable predicate](decidable.md)
+- [URM-recognizable predicates](recognizable.md)
 
 ## Bounded execution
 
-- [Step Fn](step-fn.md)
+- [One-step function on coded states](step-fn.md)
 - [The one-step function is primitive recursive](primrec-step-fn.md)
 - [Bounded execution](exec-n.md)
-- [Exec N succ](exec-n-succ.md)
+- [Bounded execution unfolds by one step](exec-n-succ.md)
 - [Initial coded state](init-coded.md)
 - [The initial coded state is primitive recursive in the input](primrec-init-coded.md)
 - [Bounded execution is primitive recursive in the input and the step bound](primrec-exec-n.md)
-- [Init Coded eq to Coded](init-coded-eq-to-coded.md)
-- [Reached coded states are exactly the machine's reachable states](exec-n-to-coded-steps.md)
+- [The initial coded state codes the initial machine state](init-coded-eq-to-coded.md)
+- [Bounded execution only reaches codes of reachable states](exec-n-to-coded-steps.md)
 - [A halted coded state gives a halting machine run](halts-of-exec-n-halted.md)
 - [Every reachable state is reached by bounded execution](exists-exec-n-eq-of-steps.md)
-- [Bounded execution is stable once halted](exec-n-succ-of-halted.md)
-- [Bounded execution stays at its halted value](exec-n-eq-of-le.md)
-- [Output after `t` steps](halted-output.md)
-- [The output function is computable](computable-halted-output.md)
+- [Bounded URM execution is stable once halted](exec-n-succ-of-halted.md)
+- [Bounded URM execution stays at its halted value](exec-n-eq-of-le.md)
+- [Output after a given number of steps](halted-output.md)
+- [The URM output after a given number of steps is computable](computable-halted-output.md)
 
 ## The main theorem
 

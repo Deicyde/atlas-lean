@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.LTS.RootedWeaklyBisimilar
 ---
 
-# Rooted Weakly Bisimilar
+# Rooted observation congruence
 
-Rooted observational congruence: initial transitions are matched by rooted
-weak transitions and their derivatives are weakly bisimilar.
+**Rooted observation congruence.** In a labelled transition system with a silent label
+$\tau$, states $p$ and $q$ are rooted weakly bisimilar (observation congruent) when every
+transition $p \xrightarrow{\mu} p'$ is matched by a rooted weak transition from $q$ to some $q'$
+with label $\mu$ such that $p'$ and $q'$ are weakly bisimilar, and every transition
+$q \xrightarrow{\mu} q'$ is matched by a rooted weak transition from $p$ to some $p'$ with label
+$\mu$ such that $p'$ and $q'$ are weakly bisimilar.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
+- [Rooted weak transition](rooted-weak-step.md)
 
 ## Sources
 

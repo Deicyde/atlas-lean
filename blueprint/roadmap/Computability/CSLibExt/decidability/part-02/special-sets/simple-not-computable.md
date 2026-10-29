@@ -13,11 +13,11 @@ RE set, contradicting immunity.
 
 ## Depends on
 
-- [Simple](simple.md)
+- [Simple set](simple.md)
 
 ## Proof depends on
 
-- [Immune](immune.md)
+- [Immune set](immune.md)
 
 ## Sources
 

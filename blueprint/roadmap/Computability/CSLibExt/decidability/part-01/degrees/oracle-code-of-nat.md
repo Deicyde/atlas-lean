@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Decidability.oracleCodeOfNat
 ---
 
-# Oracle Code Of Nat
+# Effective enumeration of oracle codes
 
-An enumeration of oracle codes, from the explicit computable decoder
-(defaulting to `zero` off the image). Because the decoder inverts
-`encodeOracleCode`, this is an effective enumeration tied to the explicit
-Gödel numbering, not an arbitrary countable encoding.
+**Effective enumeration of oracle codes.** The $n$-th oracle code is the code that the
+computable decoder of the Gödel numbering of oracle codes assigns to $n$, or the basic code
+$\mathtt{zero}$ (the constant $0$ program) when $n$ is not the number of any code. Because the
+decoder inverts the Gödel numbering, this is an effective enumeration tied to that numbering,
+not an arbitrary countable encoding.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
+- [Oracle codes](oracle-code.md)
 
 ## Proof depends on
 
-- [Decode Oracle Code](decode-oracle-code.md)
+- [Decoding oracle codes](decode-oracle-code.md)
 
 ## Sources
 

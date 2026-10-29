@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.move
 ---
 
-# Move
+# Move of a philosopher
 
-The move of philosopher `i`: thinking to holding one fork, to eating, to
-thinking.
+**Move of a philosopher.** The state obtained from $s$ when philosopher $i$ moves: the phase
+of $i$ advances from thinking ($0$) to holding its first fork ($1$), from $1$ to eating ($2$),
+and from eating back to thinking; the phases of the other philosophers are unchanged. Whether
+the move is allowed is not checked here.
 
 ## Depends on
 
-- [State](state.md)
+- [Dining-philosophers state](state.md)
 
 ## Proof depends on
 
-- [Phase](phase.md)
-- [Set Phase](set-phase.md)
+- [Phase of a philosopher](phase.md)
+- [Updating the phase of a philosopher](set-phase.md)
 
 ## Sources
 

@@ -6,34 +6,36 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeTm_denote
 ---
 
-# Normalize Tm denote
+# NbE preserves denotation
 
-NbE normalization preserves denotation in every set-theoretic model.
+**NbE preserves denotation.** For every interpretation $I$ of the base types, every term $t$
+of type $A$ in context $\Gamma$ and every environment $\eta$ for $\Gamma$ in $I$, the NbE normal
+form of $t$ has the same denotation in $\eta$ as $t$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Denote](../denotational/denote-2.md)
-- [Ty](../syntax/ty.md)
-- [Denote](../denotational/denote.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Semantic environments](../denotational/env.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](../denotational/denote.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Cons](../denotational/cons.md)
-- [Rename](../denotational/rename.md)
-- [Nbe Related](nbe-related.md)
-- [Ren](../syntax/ren.md)
-- [Sem](../nbe/sem.md)
-- [Identity](../nbe/identity.md)
-- [Denote rename](../denotational/denote-rename.md)
-- [Rename](../syntax/rename.md)
-- [Var](../syntax/var.md)
-- [Lift](../syntax/lift.md)
-- [Identity related](identity-related.md)
-- [Nbe Eval](../nbe-evaluation/nbe-eval.md)
-- [Nbe Eval related](nbe-eval-related.md)
+- [Extending a semantic environment in STLC](../denotational/cons.md)
+- [Renaming an environment](../denotational/rename.md)
+- [Kripke realization relation for NbE](nbe-related.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [The identity semantic environment](../nbe/identity.md)
+- [Renaming lemma for STLC denotation](../denotational/denote-rename.md)
+- [Renaming a simply typed term](../syntax/rename.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
+- [The identity semantic environment realizes every environment](identity-related.md)
+- [Evaluation into the Kripke semantic domain](../nbe-evaluation/nbe-eval.md)
+- [Fundamental lemma for NbE evaluation](nbe-eval-related.md)
 
 ## Sources
 

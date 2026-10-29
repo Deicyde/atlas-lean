@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub.single
 ---
 
-# Single
+# Single-variable substitution (simply typed lambda calculus)
 
-Substitute the newest variable and leave all older variables unchanged.
+**Single-variable substitution (simply typed lambda calculus).** Write $A :: \Gamma$ for the
+context $\Gamma$ extended by a newest variable of type $A$. Given a term $a$ of type $A$ in
+context $\Gamma$, the single-variable substitution for $a$ is the substitution from
+$A :: \Gamma$ to $\Gamma$ that sends the newest variable to $a$ and sends the successor of each
+variable $x$ of $\Gamma$ to the term consisting of the variable $x$ alone.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

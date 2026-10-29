@@ -13,8 +13,8 @@ Barak, Computational Complexity: A Modern Approach, 2009, Theorem 5.4.
 
 ## Depends on
 
-- [PH](../../../../Computability/CSLibExt/complexity/classes/ph.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [The polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/ph.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SubSemEq.refl
 ---
 
-# Refl
+# Pointwise semantic equality of substitutions is reflexive
 
-Pointwise semantic equality is reflexive.
+**Pointwise semantic equality of substitutions is reflexive.** For every interpretation $I$
+of the base types and every simultaneous substitution $\sigma$ that replaces each variable of a
+context $\Gamma$ by a term of the same type in a context $\Delta$, $\sigma$ is pointwise
+semantically equal to itself in $I$: for every variable $x$ of $\Gamma$, the term $\sigma(x)$
+has the same denotation as itself in every environment for $\Delta$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Sub Sem Eq](sub-sem-eq.md)
-- [Ty](../syntax/ty.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Pointwise semantic equality of substitutions](sub-sem-eq.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote](../denotational/denote.md)
-- [Var](../syntax/var.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of simple types](../denotational/denote.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

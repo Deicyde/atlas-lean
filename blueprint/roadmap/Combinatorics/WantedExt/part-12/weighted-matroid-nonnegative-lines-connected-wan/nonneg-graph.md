@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.WeightedMatroidNonnegativeLinesConnectedWanted.nonnegGraph
 ---
 
-# Nonneg Graph
+# Graph of non-negative lines
 
-The graph on the points of non-negative weight in which two points are adjacent when some line
-of non-negative weight contains both.
+**Graph of non-negative lines.** Let $M$ be a matroid on elements of $\{0, \dots, n-1\}$ and
+let $a_0, \dots, a_{n-1}$ be real weights, the weight of a set of points being the sum of the
+weights of its points. The graph of non-negative lines has as vertices the points $i$ with
+$a_i \ge 0$, and two distinct vertices are adjacent when some line of $M$ (a flat of rank $2$)
+contains both and has non-negative weight.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Line](is-line.md)
-- [Weight](weight.md)
+- [Line of a matroid](is-line.md)
+- [Weight of a set of points](weight.md)
 
 ## Sources
 

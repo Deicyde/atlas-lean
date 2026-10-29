@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.rename
 ---
 
-# Rename
+# Renaming of raw terms
 
-Apply a de Bruijn-index renaming, lifting it at every binder.
+**Renaming of raw terms.** Given a map $\rho : \mathbb{N} \to \mathbb{N}$ on de Bruijn indices,
+renaming a raw term by $\rho$ replaces each variable $n$ by $\rho(n)$, renames both parts of an
+application by $\rho$, and renames the body of a lambda abstraction, keeping its parameter type,
+by the lifted map $\rho'$ given by $\rho'(0) = 0$ and $\rho'(n + 1) = \rho(n) + 1$.
 
 ## Depends on
 
-- [Raw Tm](../elaboration/raw-tm.md)
+- [Raw lambda terms](../elaboration/raw-tm.md)
 
 ## Proof depends on
 
-- [Lift Ren](lift-ren.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a numerical renaming](lift-ren.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

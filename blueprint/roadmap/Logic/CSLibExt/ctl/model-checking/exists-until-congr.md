@@ -18,7 +18,7 @@ satisfaction equivalence.
 
 ## Proof depends on
 
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
 
 ## Sources
 

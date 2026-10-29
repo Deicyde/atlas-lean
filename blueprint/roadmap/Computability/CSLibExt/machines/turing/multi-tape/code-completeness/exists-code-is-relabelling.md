@@ -13,13 +13,13 @@ simulated, up to an injective state relabelling, by the machine of some code.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [To TM](../code/to-tm.md)
-- [Is Relabelling](../relabel/is-relabelling.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [The machine of a code](../code/to-tm.md)
+- [Simulation up to a state relabelling](../relabel/is-relabelling.md)
 
 ## Proof depends on
 
-- [Exists injective nat eq zero](exists-injective-nat-eq-zero.md)
+- [Numbering a finite type from a chosen element](exists-injective-nat-eq-zero.md)
 - [The code of a machine simulates it](is-relabelling-of-tm.md)
 - [The code of a finite-state binary machine](of-tm.md)
 

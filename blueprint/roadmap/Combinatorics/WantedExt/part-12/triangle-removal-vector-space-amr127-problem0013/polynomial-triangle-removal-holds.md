@@ -14,7 +14,7 @@ work. (The dataset record's "polynomial bounds disproved" is a record error: the
 
 ## Depends on
 
-- [Polynomial Triangle Removal](polynomial-triangle-removal.md)
+- [Polynomial triangle removal in $\mathbb{F}_2^n$](polynomial-triangle-removal.md)
 
 ## Sources
 

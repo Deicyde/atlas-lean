@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.denote_fix_unfold
 ---
 
-# Denote fix unfold
+# Fixed-point equation for the PCF denotation of fix
 
-The fixed-point equation: `fix t` denotes the same as `t (fix t)`.
+**Fixed-point equation for the PCF denotation of fix.** For every PCF term $t$ of type
+$A \to A$ in a context $\Gamma$ and every environment $\eta$ for $\Gamma$, the denotation of
+$\mathsf{fix}\,t$ at $\eta$ equals the denotation of the application $t\,(\mathsf{fix}\,t)$ at
+$\eta$.
 
 ## Depends on
 
-- [Env](env.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote.md)
-- [Ty](../syntax/ty.md)
-- [Dom](dom.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Semantic environments for PCF](env.md)
+- [PCF terms](../syntax/tm.md)
+- [Denotation of PCF terms](denote.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](dom.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Order Bot](order-bot.md)
+- [Least elements of PCF domains](order-bot.md)
 - [Least fixed point of a Scott-continuous map](../../../../../../Order/MathlibExt/omega-complete-partial-order/continuous-hom/lfp.md)
 - [The least fixed point is a fixed point](../../../../../../Order/MathlibExt/omega-complete-partial-order/continuous-hom/lfp-eq.md)
 

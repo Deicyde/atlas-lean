@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonSubsetCountErdosProblem861Wanted.sidonCountOverTwoPowMaxDiverges
 ---
 
-# Sidon Count Over Two Pow Max Diverges
+# Erdős Problem 861, first question
 
-Erdős Problem 861, first question: `A(N) / 2^{f(N)} → ∞`.
+**Erdős Problem 861, first question.** Let $A(N)$ be the number of Sidon subsets of
+$\{1, \dots, N\}$, including the empty set and the singletons, and let $f(N)$ be the
+largest size of a Sidon subset of $\{1, \dots, N\}$. The statement is that
+$A(N) / 2^{f(N)} \to \infty$ as $N \to \infty$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Max Sidon Size](max-sidon-size.md)
-- [Sidon Subsets Up To](sidon-subsets-up-to.md)
+- [Largest Sidon subset of $\{1, \dots, N\}$ (Erdős Problem 861)](max-sidon-size.md)
+- [Sidon subsets of $\{1, \dots, N\}$](sidon-subsets-up-to.md)
 
 ## Sources
 

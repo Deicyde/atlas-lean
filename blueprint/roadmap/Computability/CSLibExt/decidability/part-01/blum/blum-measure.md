@@ -5,11 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.BlumMeasure
 ---
 
-# Blum Measure
+# Blum complexity measure
 
-A **Blum measure**: a cost assignment for programs satisfying Blum's
-two axioms — the cost is defined exactly when the program halts, and the
-graph of the cost function is decidable.
+**Blum complexity measure.** A Blum measure $\Phi$ assigns to every program $c$ and input
+$n \in \mathbb{N}$ a partially defined cost $\Phi_c(n) \in \mathbb{N}$ satisfying Blum's two axioms:
+$\Phi_c(n)$ is defined exactly when program $c$ halts on input $n$, and the relation
+$\Phi_c(n) = m$ between $c$, $n$ and $m$ is decidable.
 
 ## Depends on
 

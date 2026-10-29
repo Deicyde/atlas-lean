@@ -8,19 +8,20 @@ lean: Cslib.Decidability.decodeOracleCode_encode
 
 # The computable decoder inverts the encoder
 
-**The computable decoder inverts the encoder.**
+**The computable decoder inverts the encoder.** For every oracle code $c$, the computable
+decoder applied to the Gödel number of $c$ returns $c$.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Decode Oracle Code](decode-oracle-code.md)
-- [Encode Oracle Code](encode-oracle-code.md)
+- [Oracle codes](oracle-code.md)
+- [Decoding oracle codes](decode-oracle-code.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
 
 ## Proof depends on
 
-- [The decoder inverts the encoder](decode-oracle-code-fuel-complete.md)
+- [The fuel-indexed decoder inverts the encoder](decode-oracle-code-fuel-complete.md)
 - [Depth of an oracle code](oracle-code-depth.md)
-- [Depth is bounded by the code](oracle-code-depth-le-encode.md)
+- [Depth is bounded by the code number](oracle-code-depth-le-encode.md)
 
 ## Sources
 

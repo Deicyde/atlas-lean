@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Sub.id
 ---
 
-# Id
+# Identity PCF substitution
 
-The identity substitution.
+**Identity PCF substitution.** For every context $\Gamma$, the identity substitution from
+$\Gamma$ to $\Gamma$ sends each variable $x$ of $\Gamma$ to the term consisting of $x$ alone.
 
 ## Depends on
 
-- [Sub](sub.md)
-- [Ty](ty.md)
+- [Parallel substitutions for PCF](sub.md)
+- [PCF types](ty.md)
 
 ## Proof depends on
 
-- [Tm](tm.md)
-- [Var](var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [PCF terms](tm.md)
+- [PCF variables](var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

@@ -6,18 +6,23 @@ proof: formalized
 lean: Manifold.isGeodesicFlow_vectorSpace_iff
 ---
 
-# Is Geodesic Flow vector Space iff
+# The geodesic flow of Euclidean space is the straight-line flow
 
-The geodesic flow on Euclidean space is the straight-line flow.
+**The geodesic flow of Euclidean space is the straight-line flow.** Let $F$ be a
+finite-dimensional real inner product space, viewed as a Riemannian manifold with the metric given
+by its inner product, and identify each tangent space of $F$ with $F$, so that a point of the
+tangent bundle $TF$ is a pair $(x, v)$ with $x, v \in F$. A family of maps
+$\varphi_t \colon TF \to TF$, $t \in \mathbb{R}$, is a geodesic flow on $TF$ if and only if
+$\varphi_t(x, v) = (x + t v, v)$ for every real $t$ and every $(x, v) \in TF$.
 
 ## Depends on
 
-- [Is Geodesic Flow](../../geodesic-flow-2/is-geodesic-flow.md)
+- [Geodesic flow on the tangent bundle](../../geodesic-flow-2/is-geodesic-flow.md)
 
 ## Proof depends on
 
-- [Is Geodesic Velocity Curve](../../geodesic-flow-2/is-geodesic-velocity-curve.md)
-- [Is Geodesic Velocity Curve vector Space iff](is-geodesic-velocity-curve-vector-space.md)
+- [Geodesic velocity curves](../../geodesic-flow-2/is-geodesic-velocity-curve.md)
+- [Geodesic velocity curves in Euclidean space](is-geodesic-velocity-curve-vector-space.md)
 
 ## Sources
 

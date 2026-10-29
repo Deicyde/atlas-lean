@@ -12,7 +12,7 @@ one to the maximum depth of its children.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
+- [Oracle codes](oracle-code.md)
 
 ## Sources
 

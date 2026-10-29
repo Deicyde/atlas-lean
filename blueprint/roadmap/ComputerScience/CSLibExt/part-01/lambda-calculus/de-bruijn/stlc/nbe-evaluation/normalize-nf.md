@@ -5,23 +5,26 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeNf
 ---
 
-# Normalize Nf
+# Normalization by evaluation
 
-Reify evaluation in the identity semantic environment.
+**Normalization by evaluation.** For a term $t$ of type $A$ in context $\Gamma$, its normal
+form is the beta-normal, eta-long term of type $A$ in context $\Gamma$ obtained by reifying, at
+type $A$, the evaluation of $t$ in the identity semantic environment of $\Gamma$, which interprets
+each variable as the reflection of that variable.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Ren](../syntax/ren.md)
-- [Sem](../nbe/sem.md)
-- [Identity](../nbe/identity.md)
-- [Var](../syntax/var.md)
-- [Lift](../syntax/lift.md)
-- [Nbe Eval](nbe-eval.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [The identity semantic environment](../nbe/identity.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
+- [Evaluation into the Kripke semantic domain](nbe-eval.md)
 
 ## Sources
 

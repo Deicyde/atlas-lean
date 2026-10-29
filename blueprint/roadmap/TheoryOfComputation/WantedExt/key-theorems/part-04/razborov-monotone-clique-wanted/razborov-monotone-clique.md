@@ -13,10 +13,10 @@ Mathematics Doklady 31 (1985), 354-357.
 
 ## Depends on
 
-- [ACGate](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
-- [Is Monotone Circuit](../../../../../Computability/CSLibExt/complexity/classes/is-monotone-circuit.md)
-- [Well Formed Circuit](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
-- [Circuit Eval](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
+- [Gates of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/acgate.md)
+- [Monotone circuits](../../../../../Computability/CSLibExt/complexity/classes/is-monotone-circuit.md)
+- [Well-formed flat circuits](../../../../../Computability/CSLibExt/complexity/classes/well-formed-circuit.md)
+- [Evaluation of a flat Boolean circuit](../../../../../Computability/CSLibExt/complexity/classes/circuit-eval.md)
 - [Clique Holds](clique-holds.md)
 
 ## Sources

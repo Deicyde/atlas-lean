@@ -13,11 +13,11 @@ not RE, but the complement of a computable set is RE.
 
 ## Depends on
 
-- [Creative](creative.md)
+- [Creative set](creative.md)
 
 ## Proof depends on
 
-- [Productive](productive.md)
+- [Productive set](productive.md)
 - [A productive set is not recursively enumerable](productive-not-re.md)
 
 ## Sources

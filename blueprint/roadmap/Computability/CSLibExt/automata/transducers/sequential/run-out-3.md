@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Automata.MooreMachine.runOut
 ---
 
-# Run Out
+# Output word of a Moore machine run
 
-The output word of the run from `q` on `xs`.
+**Output word of a Moore machine run.** For a Moore machine $M$, a state $q$ and an input
+word $x$, the output word of $M$ from $q$ on $x$ is the second component of the run of $M$ from
+$q$ on $x$: the outputs of the states visited along that run, starting with the output of $q$;
+it has one more letter than $x$.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
+- [Moore machine](moore-machine.md)
 
 ## Proof depends on
 
-- [Run From](run-from-3.md)
+- [Run of a Moore machine](run-from-3.md)
 
 ## Sources
 

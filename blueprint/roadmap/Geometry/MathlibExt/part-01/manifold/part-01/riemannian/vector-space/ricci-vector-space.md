@@ -6,18 +6,21 @@ proof: formalized
 lean: Manifold.ricci_vectorSpace
 ---
 
-# Ricci vector Space
+# Euclidean space is Ricci-flat
 
-The Ricci curvature of an inner product space vanishes.
+**Euclidean space is Ricci-flat.** Let $F$ be a finite-dimensional real inner product space
+with the Riemannian metric given by its inner product on every tangent space. For every point
+$x \in F$ and all tangent vectors $v, w \in T_xF$, the Ricci curvature $\mathrm{Ric}(v, w)$ of $F$
+at $x$ is $0$.
 
 ## Depends on
 
-- [Ricci](../curvature/ricci.md)
+- [Ricci curvature](../curvature/ricci.md)
 
 ## Proof depends on
 
-- [Extend Curvature](../../vector-bundle/covariant-derivative/curvature/extend-curvature.md)
-- [Riemann Curvature](../curvature/riemann-curvature.md)
+- [Curvature expression of a covariant derivative on extensions](../../vector-bundle/covariant-derivative/curvature/extend-curvature.md)
+- [Riemann curvature endomorphism](../curvature/riemann-curvature.md)
 - [Euclidean space is flat](riemann-curvature-vector-space.md)
 
 ## Sources

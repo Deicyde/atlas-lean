@@ -13,15 +13,15 @@ plane is a translation, a rotation, a reflection, or a glide reflection.
 
 ## Depends on
 
-- [Is Glide Reflection](is-glide-reflection.md)
-- [Is Reflection](is-reflection.md)
-- [Is Rotation](is-rotation.md)
-- [Is Translation](is-translation.md)
-- [Plane](plane.md)
+- [Glide reflection](is-glide-reflection.md)
+- [Reflection](is-reflection.md)
+- [Rotation](is-rotation.md)
+- [Translation](is-translation.md)
+- [The Euclidean plane](plane.md)
 
 ## Proof depends on
 
-- [Linear Det](linear-det.md)
+- [Linear determinant of a plane isometry](linear-det.md)
 
 ## Sources
 

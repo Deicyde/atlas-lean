@@ -8,8 +8,9 @@ lean: MathlibExt.GroupTheory.MaschkeDecomposition.maschke_decomposition
 
 # Maschke's theorem
 
-**Maschke's theorem.** Every finite-dimensional complex representation of a
-finite group is equivalent to a direct sum of irreducible representations.
+**Maschke's theorem.** Every finite-dimensional complex representation $\sigma$ of a finite
+group is equivalent to the direct sum of a finite family of irreducible subrepresentations of
+$\sigma$.
 
 ## Depends on
 

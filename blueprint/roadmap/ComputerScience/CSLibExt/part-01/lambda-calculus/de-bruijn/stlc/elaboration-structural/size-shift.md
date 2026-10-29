@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.size_shift
 ---
 
-# Size shift
+# Shifting preserves the size of a raw term
 
-Shifting preserves the number of syntax nodes.
+**Shifting preserves the size of a raw term.** For all natural numbers $k$ and $c$ and every
+raw term $t$, shifting $t$ by $k$ at cutoff $c$ (adding $k$ to each variable index that is at
+least the cutoff, which grows by one under each binder) gives a raw term with the same number
+of syntax nodes as $t$.
 
 ## Depends on
 
-- [Raw Tm](../elaboration/raw-tm.md)
-- [Shift](../elaboration/shift.md)
-- [Size](../elaboration/size.md)
+- [Raw lambda terms](../elaboration/raw-tm.md)
+- [Shifting raw terms](../elaboration/shift.md)
+- [Size of a raw term](../elaboration/size.md)
 
 ## Proof depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

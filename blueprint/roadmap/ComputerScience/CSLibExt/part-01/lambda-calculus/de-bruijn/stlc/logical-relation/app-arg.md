@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Steps.appArg
 ---
 
-# App Arg
+# Evaluating the argument of a value function is a multi-step congruence
 
-Once the function is a value, multi-step evaluation is closed under the argument position.
+**Evaluating the argument of a value function is a multi-step congruence.** Let $f$ be a term
+of type $A \Rightarrow B$ and let $a$, $a'$ be terms of type $A$, all in the same context. If $f$
+is a value and $a$ evaluates to $a'$ in zero or more call-by-value steps, then the application
+$f\,a$ evaluates to $f\,a'$ in zero or more steps.
 
 ## Depends on
 
-- [Steps](../semantics/steps.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Value](../semantics/value.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Proof depends on
 
-- [Step](../semantics/step.md)
+- [Small-step call-by-value reduction in STLC](../semantics/step.md)
 
 ## Sources
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.encodeMove
 ---
 
-# Encode Move
+# Coding head moves
 
-Code a head move as a number, inverting `decodeMove`: left is `0`, stay is `1`, right is
-`2`.
+**Coding head moves.** A head move is coded as a natural number: left is $0$, stay is $1$
+and right is $2$. Decoding a move code recovers the move.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.coMA
 ---
 
-# Co MA
+# The class coMA
 
-`coMA`: complements of `MA` languages.
+**The class coMA.** coMA is the class of decision problems $L$ whose complement, the
+decision problem that accepts exactly the bitstrings that $L$ rejects, belongs to MA.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ lean: Cslib.Complexity.Classes.coMA
 
 ## Proof depends on
 
-- [MA](ma.md)
+- [The class MA (Merlin–Arthur)](ma.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

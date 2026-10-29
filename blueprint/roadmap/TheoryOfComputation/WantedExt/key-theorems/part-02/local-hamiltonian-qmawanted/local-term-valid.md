@@ -17,8 +17,8 @@ norm at most `1` (so operator norm at most `1`).
 
 ## Proof depends on
 
-- [Rat Enc](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
-- [Matrix Of Entries](../../../../../Computability/CSLibExt/complexity/classes/matrix-of-entries.md)
+- [Encoded rational number](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
+- [Matrix encoded by a list of entries](../../../../../Computability/CSLibExt/complexity/classes/matrix-of-entries.md)
 
 ## Sources
 

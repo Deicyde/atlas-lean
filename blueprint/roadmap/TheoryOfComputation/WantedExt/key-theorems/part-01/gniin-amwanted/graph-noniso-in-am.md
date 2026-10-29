@@ -15,7 +15,7 @@ Computing Research 5 (1989), 73-90.
 
 ## Depends on
 
-- [AM](../../../../../Computability/CSLibExt/complexity/classes/am.md)
+- [The class $\mathsf{AM}$ (Arthur–Merlin)](../../../../../Computability/CSLibExt/complexity/classes/am.md)
 - [Graph Non Iso Dec](graph-non-iso-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

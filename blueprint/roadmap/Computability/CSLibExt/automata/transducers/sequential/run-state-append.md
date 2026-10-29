@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Automata.SequentialTransducer.runState_append
 ---
 
-# Run State append
+# Final state of a sequential transducer on a concatenation
 
-Running on `xs ++ ys` is running on `xs` and then on `ys` from the reached state.
+**Final state of a sequential transducer on a concatenation.** For a sequential transducer
+$S$, a state $q$ and input words $x$ and $y$, the final state of the run of $S$ from $q$ on $xy$
+is the final state of the run on $y$ from the final state of the run from $q$ on $x$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
-- [Run State](run-state.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

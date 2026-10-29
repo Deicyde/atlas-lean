@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.deterministic
 ---
 
-# Deterministic
+# Determinism of PCF big-step evaluation
 
-Evaluation is deterministic.
+**Determinism of PCF big-step evaluation.** For closed PCF terms $t$, $v$, $w$ of the same
+type, if $t \Downarrow v$ and $t \Downarrow w$ under big-step call-by-name evaluation, then
+$v = w$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Eval](eval.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](eval.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Numeral injective](../syntax/numeral-injective.md)
-- [Nat](../syntax/nat.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Injectivity of PCF numerals](../syntax/numeral-injective.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

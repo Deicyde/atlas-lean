@@ -6,24 +6,25 @@ proof: formalized
 lean: Cslib.Automata.NA.Parity.language_toMuller
 ---
 
-# Language to Muller
+# Parity-to-Muller conversion preserves the language
 
-A parity automaton and its Muller presentation accept the same language, on a
-finite state space.
+**Parity-to-Muller conversion preserves the language.** If the state space is finite, then a
+parity automaton accepts the same language as its Muller presentation, the Muller automaton
+obtained by converting it to its Rabin presentation and that to a Muller automaton.
 
 ## Depends on
 
-- [Parity](../parity/parity.md)
-- [To Muller](to-muller-3.md)
-- [Parity Even](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Nondeterministic parity automaton](../parity/parity.md)
+- [Muller presentation of a parity automaton](to-muller-3.md)
+- [Even max-parity condition](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
 
 ## Proof depends on
 
-- [Language to Rabin](language-to-rabin.md)
-- [To Rabin](to-rabin.md)
-- [Rabin](rabin.md)
-- [Language to Muller](language-to-muller.md)
-- [To Muller](to-muller.md)
+- [Parity-to-Rabin conversion preserves the language](language-to-rabin.md)
+- [Rabin presentation of a parity automaton](to-rabin.md)
+- [Rabin automaton](rabin.md)
+- [Rabin-to-Muller conversion preserves the language](language-to-muller.md)
+- [Muller presentation of a Rabin automaton](to-muller.md)
 
 ## Sources
 

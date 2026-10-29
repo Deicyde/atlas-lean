@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.certificate
 ---
 
-# Certificate
+# Weak-bisimulation certificate for go-back-N
 
-The weak-bisimulation certificate: every reachable configuration with the
-number of accepted but undelivered messages, listed so that every pair can
-reach the visible actions of its buffer state through pairs listed earlier.
+**Weak-bisimulation certificate for go-back-N.** A list of $147$ pairs, each a go-back-N
+configuration together with the occupancy of the two-place buffer it simulates, namely the number
+of accepted but undelivered messages. It contains every reachable configuration, and it is
+ordered so that every pair can reach the visible actions of its buffer state through pairs listed
+earlier.
 
 ## Depends on
 
-- [Config](config.md)
+- [Go-back-N configurations](config.md)
 
 ## Proof depends on
 
-- [Receiver](receiver.md)
-- [Sender](sender.md)
+- [Receiver states of go-back-N](receiver.md)
+- [Go-back-N sender state](sender.md)
 
 ## Sources
 

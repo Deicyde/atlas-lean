@@ -21,8 +21,8 @@ reaches a `ψ`-state, with `φ` at all earlier states.
 
 ## Proof depends on
 
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

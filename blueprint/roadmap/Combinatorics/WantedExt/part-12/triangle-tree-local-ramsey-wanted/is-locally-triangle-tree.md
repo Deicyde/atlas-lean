@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.IsLocallyTriangleTree
 ---
 
-# Is Locally Triangle Tree
+# Graphs that are locally trees of triangles
 
-Locally a tree of triangles on `ℓ` vertices.
+**Graphs that are locally trees of triangles.** A graph $G$ on a vertex set $V$ is locally a
+tree of triangles on $\ell$ vertices if for every set $S$ of exactly $\ell$ vertices there is a
+tree of triangles on $V$ that contains every edge of $G$ with both endpoints in $S$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Triangle Tree](is-triangle-tree.md)
+- [Trees of triangles](is-triangle-tree.md)
 
 ## Sources
 

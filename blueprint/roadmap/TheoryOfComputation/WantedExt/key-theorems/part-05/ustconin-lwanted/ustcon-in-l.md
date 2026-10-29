@@ -12,7 +12,7 @@ connectivity in log-space", Journal of the ACM 55 (2008), 1-24 (STOC 2005).
 
 ## Depends on
 
-- [Log Space](../../../../../Computability/CSLibExt/complexity/classes/log-space.md)
+- [Deterministic logarithmic space](../../../../../Computability/CSLibExt/complexity/classes/log-space.md)
 - [Ustcon Dec](ustcon-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

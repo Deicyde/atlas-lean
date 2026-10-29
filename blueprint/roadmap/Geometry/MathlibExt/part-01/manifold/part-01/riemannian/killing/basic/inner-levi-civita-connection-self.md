@@ -6,13 +6,16 @@ proof: formalized
 lean: Manifold.IsKillingVectorField.inner_leviCivitaConnection_self
 ---
 
-# Inner levi Civita Connection self
+# Killing's equation on the diagonal
 
-A Killing field preserves lengths infinitesimally: `⟪∇_u X, u⟫ = 0`.
+**Killing's equation on the diagonal.** Let $X$ be a Killing vector field on a smooth
+Riemannian manifold $M$ with Levi-Civita connection $\nabla$. Then
+$\langle \nabla_u X, u \rangle = 0$ for every point $x \in M$ and every tangent vector
+$u \in T_x M$: a Killing field preserves lengths infinitesimally.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
+- [Killing vector field](is-killing-vector-field.md)
 
 ## Sources
 

@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Decidability.ramEval
 ---
 
-# Ram Eval
+# Output of a RAM machine
 
-The output of a RAM machine: the accumulator once halted, undefined
-while still running.
+**Output of a RAM machine.** Let $P$ be a program of length $\ell$ and $x_0, \dots, x_{k-1}$
+inputs. Run $P$ from the initial state on these inputs. If for some $t$ the program counter
+after $t$ steps is at least $\ell$, the output of $P$ on these inputs is the accumulator after
+the least such number of steps; otherwise the output is undefined.
 
 ## Depends on
 
-- [RAMInstr](raminstr.md)
+- [RAM instruction](raminstr.md)
 
 ## Proof depends on
 
-- [RAMState](ramstate.md)
-- [Ram Exec N](ram-exec-n.md)
-- [Ram Init](ram-init.md)
+- [RAM state](ramstate.md)
+- [Bounded execution of a RAM machine](ram-exec-n.md)
+- [Initial RAM state](ram-init.md)
 
 ## Sources
 

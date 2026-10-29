@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Automata.NA.Buchi.toParity
 ---
 
-# To Parity
+# Büchi automata as parity automata
 
-A Büchi automaton as a parity automaton: priority `2` on accepting states, `1` elsewhere.
+**Büchi automata as parity automata.** A nondeterministic Büchi automaton is turned into the
+nondeterministic parity automaton with the same states, transitions and start states, in which
+every accepting state has priority $2$ and every other state has priority $1$.
 
 ## Depends on
 
-- [Parity](parity.md)
+- [Nondeterministic parity automaton](parity.md)
 
 ## Sources
 

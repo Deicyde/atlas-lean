@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ThreeChromaticHypergraphDegreeErdosProblem833Wanted.threeChromaticHighDegreeVertex
 ---
 
-# Three Chromatic High Degree Vertex
+# Erdős Problem 833
 
-Erdős Problem 833: there is an absolute `c > 0` such that for every `r ≥ 2`, every finite
-`r`-uniform hypergraph with chromatic number `3` has a vertex in at least `(1 + c)^r` edges.
+**Erdős Problem 833.** The statement that there is a real $c > 0$ such that for every natural
+number $r \ge 2$, every $n$ and every hypergraph $H$ on the vertex set $\{0, \dots, n-1\}$ (a
+finite set of edges, each a set of exactly $r$ vertices) that is $3$-colorable but not
+$2$-colorable, some vertex lies in at least $(1 + c)^r$ edges of $H$.
 
 ## Depends on
 

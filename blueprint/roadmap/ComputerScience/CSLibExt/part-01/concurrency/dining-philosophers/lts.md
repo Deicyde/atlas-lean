@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.lts
 ---
 
-# Lts
+# Transition system of a dining-philosophers protocol
 
-The transition system of a protocol; the label is the philosopher that
-moves.
+**Transition system of a dining-philosophers protocol.** For a protocol $P$, the labelled
+transition system on the states whose labels are the philosophers: there is a transition from
+$s$ to $t$ labelled $i$ exactly when philosopher $i$ can move in $s$ under $P$ and $t$ is the
+state obtained from $s$ by the move of philosopher $i$.
 
 ## Depends on
 
-- [Protocol](protocol.md)
-- [State](state.md)
+- [Dining-philosophers protocol](protocol.md)
+- [Dining-philosophers state](state.md)
 
 ## Proof depends on
 
-- [Can Move](can-move.md)
-- [Move](move.md)
+- [When a philosopher can move](can-move.md)
+- [Move of a philosopher](move.md)
 
 ## Sources
 

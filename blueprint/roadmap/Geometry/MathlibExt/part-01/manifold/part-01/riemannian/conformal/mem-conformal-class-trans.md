@@ -6,13 +6,16 @@ proof: formalized
 lean: Manifold.mem_conformalClass_trans
 ---
 
-# Mem conformal Class trans
+# Conformal equivalence is transitive
 
-Transitivity of the conformal relation.
+**Conformal equivalence is transitive.** Let $M$ be a $C^\infty$ manifold modeled on a real
+normed space, and let $g$, $g'$ and $g''$ be $C^\infty$ Riemannian metrics on $M$. If $g'$ lies
+in the conformal class of $g$ and $g''$ lies in the conformal class of $g'$, then $g''$ lies in
+the conformal class of $g$.
 
 ## Depends on
 
-- [Conformal Class](conformal-class.md)
+- [Conformal class of a Riemannian metric](conformal-class.md)
 
 ## Sources
 

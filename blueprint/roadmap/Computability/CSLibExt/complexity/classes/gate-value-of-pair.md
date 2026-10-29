@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Classes.gateValue_ofPair
 ---
 
-# Gate Value of Pair
+# Serial gate evaluation agrees with typed gate evaluation
 
-Evaluation of the shared `(kind, refs)` encoding agrees with `gateValue` on
-decoded gates: the serial evaluator is the typed evaluator.
+**Serial gate evaluation agrees with typed gate evaluation.** For every list $v$ of Boolean
+values of earlier gates, every assignment of Boolean values to the $n$ inputs and every pair
+$g = (k, r)$ of a natural number $k$ (the gate kind) and a list $r$ of natural numbers (its
+references), evaluating $g$ with the serial $(\mathrm{kind}, \mathrm{refs})$ gate evaluator
+gives the same value as evaluating the gate decoded from $g$ with the gate-value function.
 
 ## Depends on
 
-- [Ac Gate Of Pair](ac-gate-of-pair.md)
-- [Gate Value](gate-value.md)
-- [Serial Gate Eval](serial-gate-eval.md)
+- [Decoding a gate from its (kind, references) pair](ac-gate-of-pair.md)
+- [Value of a gate](gate-value.md)
+- [Evaluating a serialized gate](serial-gate-eval.md)
 
 ## Proof depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

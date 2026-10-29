@@ -5,14 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TransversalCriticalTripleSystemDegreeErdosProblem834Wanted.transversalCriticalMinDegreeSeven_refuted
 ---
 
-# Transversal Critical Min Degree Seven refuted
+# Erdős Problem 834 fails for transversal-critical triple systems
 
-Resolved false for the transversal notion: Li proved that a `3`-uniform hypergraph with `τ(H) = 3`
-and `τ(H - e) = 2` for every edge has at most `10` edges, so some vertex has degree at most `6`.
+**Erdős Problem 834 fails for transversal-critical triple systems.** There are no
+$n \in \mathbb{N}$ and $3$-uniform hypergraph $H$ on the vertex set $\{0, \dots, n-1\}$ such that
+some set of at most $3$ vertices meets every edge of $H$, no set of at most $2$ vertices meets
+every edge of $H$, for every edge $e$ of $H$ some set of at most $2$ vertices meets every edge of
+$H$ other than $e$, and every vertex lies in at least $7$ edges of $H$.
+
+Writing $\tau(H)$ for the least size of a vertex set meeting every edge of $H$ and $H - e$ for
+$H$ with the edge $e$ removed, Li proved that a $3$-uniform hypergraph $H$ with $\tau(H) = 3$ and
+$\tau(H - e) = 2$ for every edge $e$ has at most $10$ edges, so some vertex has degree at most $6$.
 
 ## Depends on
 
-- [Transversal Critical Min Degree Seven](transversal-critical-min-degree-seven.md)
+- [Erdős Problem 834 for transversal-critical triple systems](transversal-critical-min-degree-seven.md)
 
 ## Sources
 

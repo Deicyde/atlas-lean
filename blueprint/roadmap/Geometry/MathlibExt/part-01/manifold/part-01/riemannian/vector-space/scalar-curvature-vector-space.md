@@ -6,18 +6,20 @@ proof: formalized
 lean: Manifold.scalarCurvature_vectorSpace
 ---
 
-# Scalar Curvature vector Space
+# Euclidean space has zero scalar curvature
 
-The scalar curvature of an inner product space vanishes.
+**Euclidean space has zero scalar curvature.** Let $F$ be a finite-dimensional real inner
+product space with the Riemannian metric given by its inner product on every tangent space. For
+every point $x \in F$, the scalar curvature of $F$ at $x$ is $0$.
 
 ## Depends on
 
-- [Scalar Curvature](../curvature/scalar-curvature.md)
+- [Scalar curvature](../curvature/scalar-curvature.md)
 
 ## Proof depends on
 
-- [Ricci](../curvature/ricci.md)
-- [Ricci vector Space](ricci-vector-space.md)
+- [Ricci curvature](../curvature/ricci.md)
+- [Euclidean space is Ricci-flat](ricci-vector-space.md)
 
 ## Sources
 

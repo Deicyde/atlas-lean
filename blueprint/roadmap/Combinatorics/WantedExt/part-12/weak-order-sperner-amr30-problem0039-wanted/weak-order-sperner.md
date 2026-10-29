@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakOrderSperner
 ---
 
-# Weak Order Sperner
+# Sperner property of the weak order
 
-The weak order on `S_n` is Sperner, for every `n`: no antichain is larger than the largest rank
-level, the rank of `σ` being its number of inversions.
+**Sperner property of the weak order.** This is the statement that for every $n$ and every
+antichain $A$ of the weak order on the permutations of $\{0, \dots, n-1\}$ (where $\sigma \le \tau$
+when the inversion set of $\sigma$ is contained in that of $\tau$), there is a $k$ such that $A$
+has at most as many elements as there are permutations with exactly $k$ inversions. Equivalently,
+no antichain is larger than the largest rank level, the rank of a permutation being its number of
+inversions.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inversions](inversions.md)
-- [Weak LE](weak-le.md)
+- [Inversion set of a permutation](inversions.md)
+- [Weak order on the symmetric group](weak-le.md)
 
 ## Sources
 

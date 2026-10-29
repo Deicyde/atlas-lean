@@ -6,11 +6,14 @@ proof: formalized
 lean: Subgroup.card_stabilizer_dvd_card
 ---
 
-# Stabilizer Divides
+# A subgroup stabilizing a subset has order dividing its size
 
-If a subgroup `H` of `G` stabilizes a finite subset `U` of `G` under left
-multiplication, then `|H|` divides `|U|`. The `H`-orbits partition `U` and
-each orbit has exactly `|H|` elements, since left multiplication is injective.
+**A subgroup stabilizing a subset has order dividing its size.** Let $G$ be a finite group,
+let $H$ be a subgroup of $G$ and let $U$ be a subset of $G$ such that $hu \in U$ for all
+$h \in H$ and $u \in U$. Then $|H|$ divides $|U|$.
+
+The $H$-orbits partition $U$ and each orbit has exactly $|H|$ elements, since left
+multiplication is injective.
 
 ## Depends on
 

@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Games.ParityGame.isTrap_winningRegion
 ---
 
-# Is Trap winning Region
+# Winning regions are traps for the opponent
 
-The winning region of `p` is a trap for the opponent.
+**Winning regions are traps for the opponent.** In a parity game $G$, the winning region of a
+player $p$, the set of positions from which $p$ has a winning positional strategy, is a trap for
+the opponent of $p$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Is Trap](is-trap.md)
+- [Parity game](../parity/parity-game.md)
+- [Trap for a player](is-trap.md)
 - [Winning Region](../parity/winning-region.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 - [Opponent](../parity/opponent.md)
 
 ## Proof depends on
 
 - [Positional Strategy](../parity/positional-strategy.md)
-- [Wins From](../parity/wins-from.md)
-- [Move mem winning Region](../parity/move-mem-winning-region.md)
-- [Next mem winning Region](../parity/next-mem-winning-region.md)
-- [Eq or eq opponent](../parity/eq-or-eq-opponent.md)
+- [Winning strategy from a position](../parity/wins-from.md)
+- [Opponent moves stay in the winning region](../parity/move-mem-winning-region.md)
+- [A winning strategy's move stays in the winning region](../parity/next-mem-winning-region.md)
+- [Every player is $p$ or the opponent of $p$](../parity/eq-or-eq-opponent.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: DehnInvariant.tetrahedralAngle
 ---
 
-# Tetrahedral Angle
+# Dihedral angle of the regular tetrahedron
 
-The dihedral angle of a regular tetrahedron, `arccos (1 / 3)`.
+**Dihedral angle of the regular tetrahedron.** The real number $\arccos(1/3)$, the dihedral
+angle of a regular tetrahedron in radians.
 
 ## Depends on
 

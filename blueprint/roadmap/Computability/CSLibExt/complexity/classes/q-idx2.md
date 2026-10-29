@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.qIdx2
 ---
 
-# Q Idx2
+# Index of a pair of bits
 
-Index of a pair of `Fin 2` values in the row-major `4 × 4` enumeration.
+**Index of a pair of bits.** A pair $(a, b)$ of bits $a, b \in \{0, 1\}$ has index $2a + b$,
+its position in the enumeration $(0, 0), (0, 1), (1, 0), (1, 1)$ of the four pairs.
 
 ## Depends on
 

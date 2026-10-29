@@ -14,7 +14,7 @@ for nondeterministic time complexity", Journal of Computer and System Sciences 7
 
 ## Depends on
 
-- [Log Space Red](../../../../../Computability/CSLibExt/complexity/classes/log-space-red.md)
+- [Log-space many-one reductions](../../../../../Computability/CSLibExt/complexity/classes/log-space-red.md)
 - [Cvp Dec](cvp-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

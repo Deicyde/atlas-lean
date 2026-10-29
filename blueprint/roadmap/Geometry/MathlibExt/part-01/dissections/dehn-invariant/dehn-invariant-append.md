@@ -6,15 +6,17 @@ proof: formalized
 lean: DehnInvariant.dehnInvariant_append
 ---
 
-# Dehn Invariant append
+# Additivity of the Dehn invariant under concatenation
 
-The Dehn invariant is additive under concatenation of edge lists.
+**Additivity of the Dehn invariant under concatenation.** For lists of edges $L_1$ and $L_2$,
+the Dehn invariant of the concatenation of $L_1$ and $L_2$ is the sum of the Dehn invariants of
+$L_1$ and $L_2$.
 
 ## Depends on
 
-- [Dehn Group](dehn-group.md)
-- [Edge](edge.md)
-- [Dehn Invariant](dehn-invariant.md)
+- [Dehn group](dehn-group.md)
+- [Edge of a polyhedron](edge.md)
+- [Dehn invariant](dehn-invariant.md)
 
 ## Sources
 

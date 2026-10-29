@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_instantiate
 ---
 
-# Cbn instantiate
+# The call-by-name CPS translation commutes with instantiation
 
-Instantiation commutes with the translation.
+**The call-by-name CPS translation commutes with instantiation.** Fix an answer type $R$ and
+write $\overline{t}$ for the call-by-name CPS translation of a term $t$. Let $N$ be a term of type
+$B$ in a context $A, \Gamma$ whose newest variable $x$ has type $A$, and let $a$ be a term of type
+$A$ in context $\Gamma$. Then translating the instantiation $N[a/x]$ of $x$ by $a$ gives the
+instantiation of the newest variable of $\overline{N}$ by $\overline{a}$:
+$\overline{N[a/x]} = \overline{N}[\overline{a}/x]$.
 
 ## Depends on
 
-- [Cbn](../call-by-name/cbn.md)
-- [Cbn Comp](../call-by-name/cbn-comp.md)
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Instantiate](../../de-bruijn/stlc/substitution/instantiate.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Call-by-name CPS translation of terms](../call-by-name/cbn.md)
+- [Computation types of the call-by-name CPS translation](../call-by-name/cbn-comp.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../../de-bruijn/stlc/substitution/instantiate.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Cbn Var](../call-by-name/cbn-var.md)
-- [Cbn subst](cbn-subst.md)
-- [Single](../../de-bruijn/stlc/substitution/single.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Call-by-name CPS translation of variables](../call-by-name/cbn-var.md)
+- [The call-by-name CPS translation commutes with substitution](cbn-subst.md)
+- [Single-variable substitution (simply typed lambda calculus)](../../de-bruijn/stlc/substitution/single.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

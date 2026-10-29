@@ -6,18 +6,20 @@ proof: formalized
 lean: Manifold.isKillingVectorField_vectorSpace_iff
 ---
 
-# Is Killing Vector Field vector Space iff
+# Killing fields on Euclidean space
 
-A field on Euclidean space is Killing iff it is smooth with skew-adjoint
-derivative at every point.
+**Killing fields on Euclidean space.** Let $F$ be a finite-dimensional real inner product
+space, viewed as a Riemannian manifold with the metric given by its inner product. A vector field
+$V$ on $F$ is Killing if and only if $V$ is $C^\infty$ and its derivative is skew-adjoint at every
+point: for all $x, u, w \in F$, $\langle DV(x)\,u, w \rangle + \langle u, DV(x)\,w \rangle = 0$.
 
 ## Depends on
 
-- [Is Killing Vector Field](../basic/is-killing-vector-field.md)
+- [Killing vector field](../basic/is-killing-vector-field.md)
 
 ## Proof depends on
 
-- [Levi Civita Vector Space](../../levi-civita-connection-vector-space-appl.md)
+- [The Levi-Civita connection of a vector space is the Fréchet derivative](../../levi-civita-connection-vector-space-appl.md)
 
 ## Sources
 

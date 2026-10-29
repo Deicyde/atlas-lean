@@ -13,7 +13,7 @@ Complexity, 1994.
 
 ## Depends on
 
-- [NL](../../../../Computability/CSLibExt/complexity/classes/nl.md)
+- [The complexity class NL](../../../../Computability/CSLibExt/complexity/classes/nl.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class P](../../../../Computability/MathlibExt/complexity/p.md)

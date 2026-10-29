@@ -6,12 +6,12 @@ navigation: module
 
 ## Sub
 
-- [Id](id.md)
-- [Of Ren](of-ren.md)
-- [Lift](lift.md)
-- [Single](single.md)
+- [Identity substitution (simply typed lambda calculus)](id.md)
+- [Substitution induced by a renaming (simply typed lambda calculus)](of-ren.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](lift.md)
+- [Single-variable substitution (simply typed lambda calculus)](single.md)
 
 ## Tm
 
-- [Subst](subst.md)
-- [Instantiate](instantiate.md)
+- [Simultaneous substitution (simply typed lambda calculus)](subst.md)
+- [Instantiating a binder body (simply typed lambda calculus)](instantiate.md)

@@ -5,16 +5,18 @@ statement: formalized
 lean: Cslib.Games.ParityGame.trapStrategy
 ---
 
-# Trap Strategy
+# Trap strategy
 
-The opponent's strategy for staying in `U`: a move into `U` when there is one (an arbitrary
-move otherwise).
+**Trap strategy.** Let $G$ be a parity game, $p$ a player and $U$ a set of positions. The trap
+strategy for $U$ is the positional strategy of the opponent of $p$ that, at each position $v$,
+moves to some position $w \in U$ with a move from $v$ to $w$ if there is one, and to an arbitrary
+position reachable from $v$ in one move otherwise.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
+- [Parity game](../parity/parity-game.md)
 - [Positional Strategy](../parity/positional-strategy.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 - [Opponent](../parity/opponent.md)
 
 ## Sources

@@ -6,17 +6,19 @@ proof: formalized
 lean: Manifold.isKillingVectorField_const
 ---
 
-# Is Killing Vector Field const
+# Translations are Killing
 
-Translations are Killing: the constant field with value `c` is Killing.
+**Translations are Killing.** Let $F$ be a finite-dimensional real inner product space,
+viewed as a Riemannian manifold with the metric given by its inner product. For every $c \in F$,
+the constant vector field $y \mapsto c$ on $F$ is Killing.
 
 ## Depends on
 
-- [Is Killing Vector Field](../basic/is-killing-vector-field.md)
+- [Killing vector field](../basic/is-killing-vector-field.md)
 
 ## Proof depends on
 
-- [Is Killing Vector Field vector Space iff](is-killing-vector-field-vector-space-iff.md)
+- [Killing fields on Euclidean space](is-killing-vector-field-vector-space-iff.md)
 
 ## Sources
 

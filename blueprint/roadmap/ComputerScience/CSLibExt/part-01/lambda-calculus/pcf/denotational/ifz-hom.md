@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.ifzHom
 ---
 
-# Ifz Hom
+# Strict zero test as a continuous map
 
-The strict zero test on `Part ℕ`, pointwise in an environment: `s₁` if the
-test is `0`, `s₂` if it is a successor, undefined if it is undefined.
+**Strict zero test as a continuous map.** Let $\alpha$ be an ω-complete partial order and let
+$t$, $s_1$, $s_2$ be Scott-continuous maps from $\alpha$ to the flat domain of partial natural
+numbers. Their strict zero test is the Scott-continuous map sending $x \in \alpha$ to $s_1(x)$ if
+$t(x)$ is defined and equal to $0$, to $s_2(x)$ if $t(x)$ is defined and nonzero, and to the
+undefined value if $t(x)$ is undefined.
 
 ## Depends on
 

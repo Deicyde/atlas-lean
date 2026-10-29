@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.RecursiveIsomorphic
 ---
 
-# Recursive Isomorphic
+# Recursively isomorphic predicates
 
-Two predicates are **recursively isomorphic** when a computable bijection
-translates membership in one to membership in the other.
+**Recursively isomorphic predicates.** Two predicates $P$ and $Q$ on $\mathbb{N}$ are
+recursively isomorphic when there is a computable bijection $f : \mathbb{N} \to \mathbb{N}$ such
+that for every $n$, $P(n)$ holds if and only if $Q(f(n))$ holds.
 
 ## Depends on
 

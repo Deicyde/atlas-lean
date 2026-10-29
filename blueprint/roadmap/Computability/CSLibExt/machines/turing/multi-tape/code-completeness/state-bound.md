@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.stateBound
 ---
 
-# State Bound
+# State bound of a code
 
-A strict upper bound on the states of a code.
+**State bound of a code.** The states of a code $c$ are the initial state $0$ and every
+successor state named in its table. The state bound of $c$ is one more than the largest of them;
+it is a strict upper bound on the states of $c$.
 
 ## Depends on
 
-- [Code](../code/code.md)
+- [Codes for multi-tape machines](../code/code.md)
 
 ## Proof depends on
 
-- [States](../code/states.md)
+- [States of a code](../code/states.md)
 
 ## Sources
 

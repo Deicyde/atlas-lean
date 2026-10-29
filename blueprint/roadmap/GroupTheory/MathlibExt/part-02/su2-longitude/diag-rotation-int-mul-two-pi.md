@@ -6,17 +6,18 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotation_int_mul_two_pi
 ---
 
-# Diag Rotation int mul two pi
+# Diagonal rotation through a multiple of $2\pi$
 
-A diagonal rotation through an integral multiple of `2π` is the identity.
+**Diagonal rotation through a multiple of $2\pi$.** For every integer $n$, the diagonal
+rotation through $2\pi n$ is the $2 \times 2$ identity matrix.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
+- [Diagonal rotation](diag-rotation.md)
 
 ## Proof depends on
 
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
 
 ## Sources
 

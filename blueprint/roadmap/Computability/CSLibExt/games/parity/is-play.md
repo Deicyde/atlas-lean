@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Games.ParityGame.IsPlay
 ---
 
-# Is Play
+# Plays of a parity game
 
-A play is an infinite sequence of positions following moves.
+**Plays of a parity game.** An infinite sequence of positions $\pi_0, \pi_1, \dots$ of a
+parity game is a play if for every $i$ there is a move from $\pi_i$ to $\pi_{i+1}$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 
 ## Sources
 

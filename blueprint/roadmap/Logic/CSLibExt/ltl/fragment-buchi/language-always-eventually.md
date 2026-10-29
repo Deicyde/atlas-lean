@@ -19,7 +19,7 @@ holds at infinitely many positions.
 - [Eval](eval.md)
 - [To LTL](to-ltl.md)
 - [Language](../omega-word/language.md)
-- [Infinitely Often Na](../../../../Computability/CSLibExt/languages/example-infinitely-often/infinitely-often-na.md)
+- [Two-state Büchi automaton for “infinitely often”](../../../../Computability/CSLibExt/languages/example-infinitely-often/infinitely-often-na.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ holds at infinitely many positions.
 - [Satisfies At](../omega-word/satisfies-at.md)
 - [Mem language](../omega-word/mem-language.md)
 - [Satisfies At to LTL](satisfies-at-to-ltl.md)
-- [Infinitely Often](../../../../Computability/CSLibExt/languages/example-infinitely-often/infinitely-often.md)
+- [Infinitely often](../../../../Computability/CSLibExt/languages/example-infinitely-often/infinitely-often.md)
 
 ## Sources
 

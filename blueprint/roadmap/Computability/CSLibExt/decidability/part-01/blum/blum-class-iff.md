@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Decidability.blumClass_iff
 ---
 
-# Eventual domination, unfolded
+# Blum classes via an explicit threshold
 
-**Eventual domination, unfolded**: membership in a Blum class means the
-cost bound holds for all inputs past some threshold.
+**Blum classes via an explicit threshold.** Let $\Phi$ be a Blum measure, $t$ a function from
+$\mathbb{N}$ to $\mathbb{N}$ and $f$ a partial function from $\mathbb{N}$ to $\mathbb{N}$. Then $f$
+lies in the Blum class of $t$ with respect to $\Phi$ if and only if there are a program $c$ that
+computes $f$ and a threshold $N$ such that for every input $n \ge N$ the cost $\Phi_c(n)$ is
+defined and at most $t(n)$.
 
 ## Depends on
 
-- [Blum Class](blum-class.md)
-- [Blum Measure](blum-measure.md)
+- [Blum complexity class](blum-class.md)
+- [Blum complexity measure](blum-measure.md)
 
 ## Sources
 

@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.URM.toCoded_ofCoded
 ---
 
-# To Coded of Coded
+# Decoding and re-encoding a coded state gives it back
 
-The coded state of the state coded back is the coded state, when the register list
-has length `R + 1`.
+**Decoding and re-encoding a coded state gives it back.** Let $p$ be a URM program with
+register bound $R$, and let $c$ be a coded state: a program counter together with a list of
+register contents. If the list has length $R + 1$, then the coded state, with respect to $p$, of
+the machine state decoded from $c$ is $c$.
 
 ## Depends on
 
-- [Of Coded](of-coded.md)
+- [Decoding a coded state](of-coded.md)
 - [Register bound](reg-bound.md)
-- [To Coded](to-coded.md)
+- [Coded machine state](to-coded.md)
 
 ## Proof depends on
 
-- [Length to Regs](length-to-regs.md)
-- [To Regs](to-regs.md)
+- [Length of the register list](length-to-regs.md)
+- [Register list](to-regs.md)
 
 ## Sources
 

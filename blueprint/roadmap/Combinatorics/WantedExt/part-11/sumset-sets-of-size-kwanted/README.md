@@ -15,5 +15,5 @@ navigation: module
 - [Equal last two gaps: an arithmetic progression or many nontrivial sums](arith-prog-or-nontrivial-sumset-card-of.md)
 - [A gap in the possible sumset sizes](card-nsmul-not-mem-icc-of-is-add-torsion.md)
 - [Sumset sizes between $hk - h + 1$ and $hk$](sumset-sizes-inter-icc-of-is-add-torsion.md)
-- [An arithmetic progression with its second-to-last term moved](card-nsmul-arith-prog-skip-penultimate.md)
+- [Sumset of an arithmetic progression with its second-to-last term removed](card-nsmul-arith-prog-skip-penultimate.md)
 - [Rajagopal's family of missing sumset sizes](card-nsmul-not-mem-icc-add-mul-of-is-add.md)

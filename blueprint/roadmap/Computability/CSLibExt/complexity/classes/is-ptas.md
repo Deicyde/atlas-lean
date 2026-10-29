@@ -5,19 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.Classes.IsPTAS
 ---
 
-# Is PTAS
+# Polynomial-time approximation schemes
 
-`PTAS`: an NPO problem such that for every `k ≥ 1`, a polynomial-time
-algorithm achieves ratio `1 - 1 / k` (i.e. error `ε = 1 / k`).
+**Polynomial-time approximation schemes.** An optimization problem $P$, with value
+$\mathrm{val}(x, s)$ of a solution $s$ for an instance $x$, admits a polynomial-time
+approximation scheme when $P$ is an NPO problem and for every integer $k \ge 1$ there is a
+polynomial-time computable algorithm $A$ on pairs of bitstrings with the following property:
+for every instance $x$ and every feasible solution $s$ for $x$, the output $A(x, 1^k)$ on $x$
+and the string $1^k$ of $k$ true bits is a feasible solution for $x$ with
+$(1 - 1/k)\,\mathrm{val}(x, s) \le \mathrm{val}(x, A(x, 1^k))$. That is, $A$ achieves
+approximation ratio $1 - 1/k$, an error of $\varepsilon = 1/k$; the algorithm may depend on $k$.
 
 ## Depends on
 
-- [Opt Problem](opt-problem.md)
+- [Optimization problems](opt-problem.md)
 
 ## Proof depends on
 
-- [Approx At](approx-at.md)
-- [Is NPO](is-npo.md)
+- [Approximation ratio at a precision](approx-at.md)
+- [NPO optimization problems](is-npo.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

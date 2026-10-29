@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SquareSumFreeSetsErdosProblem438Wanted.IsSquareSumFree
 ---
 
-# Is Square Sum Free
+# Square-sum-free sets
 
-No sum `a + b` of two (possibly equal) elements of `A` is a perfect square.
+**Square-sum-free sets.** A finite set $A$ of natural numbers is square-sum-free if for all
+$a, b \in A$, not necessarily distinct, the sum $a + b$ is not a perfect square.
 
 ## Depends on
 

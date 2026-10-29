@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.HasType.elaborate_sound
 ---
 
-# Elaborate sound
+# Soundness of elaboration
 
-Successful elaboration implies the declarative typing judgment.
+**Soundness of elaboration.** Assume equality of base types is decidable. If elaborating a raw
+term $r$ in context $\Gamma$ succeeds with type $A$ (and some intrinsically typed term of type $A$
+in $\Gamma$), then $r$ has type $A$ in $\Gamma$ under the declarative typing judgment.
 
 ## Depends on
 
-- [Checked](checked.md)
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [Lookup Var](lookup-var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Variable lookup](lookup-var.md)
 
 ## Sources
 

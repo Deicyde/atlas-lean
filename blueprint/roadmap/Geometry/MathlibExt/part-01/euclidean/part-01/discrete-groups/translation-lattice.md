@@ -12,8 +12,8 @@ vectors `v` for which translation by `v` belongs to `G`.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
 
 ## Sources
 

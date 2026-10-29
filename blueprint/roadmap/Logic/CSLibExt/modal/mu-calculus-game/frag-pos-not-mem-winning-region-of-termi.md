@@ -15,7 +15,7 @@ A terminal losing position is not in the canonical winning region of
 ## Depends on
 
 - [Winning Region](../../../../Computability/CSLibExt/games/parity/winning-region.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
@@ -27,13 +27,13 @@ A terminal losing position is not in the canonical winning region of
 
 ## Proof depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
-- [Conforms](../../../../Computability/CSLibExt/games/parity/conforms.md)
-- [Is Play](../../../../Computability/CSLibExt/games/parity/is-play.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Plays conforming to a strategy](../../../../Computability/CSLibExt/games/parity/conforms.md)
+- [Plays of a parity game](../../../../Computability/CSLibExt/games/parity/is-play.md)
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
-- [Wins From](../../../../Computability/CSLibExt/games/parity/wins-from.md)
-- [Won By](../../../../Computability/CSLibExt/games/parity/won-by.md)
-- [Not won By and won By opponent](../../../../Computability/CSLibExt/games/parity/not-won-by-and-won-by-opponent.md)
+- [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
+- [Winner of a play in a parity game](../../../../Computability/CSLibExt/games/parity/won-by.md)
+- [No play is won by both players](../../../../Computability/CSLibExt/games/parity/not-won-by-and-won-by-opponent.md)
 - [Opponent](../../../../Computability/CSLibExt/games/parity/opponent.md)
 - [Frag Move](frag-move.md)
 - [Move](move.md)

@@ -6,18 +6,21 @@ proof: formalized
 lean: Manifold.riemannianVolume_real
 ---
 
-# Riemannian Volume real
+# The Riemannian volume of the real line is Lebesgue measure
 
-Normalization check: the Riemannian volume of the real line, whose Riemannian distance is the
-usual distance, is Lebesgue measure.
+**The Riemannian volume of the real line is Lebesgue measure.** The Riemannian volume of the
+real line $\mathbb{R}$, with its standard Riemannian metric (the usual inner product on each tangent
+space) and with its usual distance, which is the Riemannian distance, is Lebesgue measure.
+
+This is a normalization check of the Riemannian volume in dimension one.
 
 ## Depends on
 
-- [Riemannian Volume](riemannian-volume.md)
+- [Riemannian volume](riemannian-volume.md)
 
 ## Proof depends on
 
-- [Normalized Hausdorff Measure](normalized-hausdorff-measure.md)
+- [Normalized Hausdorff measure](normalized-hausdorff-measure.md)
 
 ## Sources
 

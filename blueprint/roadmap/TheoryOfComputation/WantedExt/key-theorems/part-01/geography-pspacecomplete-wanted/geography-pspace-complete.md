@@ -13,7 +13,7 @@ person perfect-information games", Journal of Computer and System Sciences 16 (1
 
 ## Depends on
 
-- [PSPACE](../../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Polynomial space for decision problems](../../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Geography Dec](geography-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

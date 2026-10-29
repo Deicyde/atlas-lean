@@ -13,7 +13,7 @@ computational complexity of algorithms", Transactions of the American Mathematic
 
 ## Depends on
 
-- [DTIME](../../../../Computability/CSLibExt/machines/turing/multi-tape/time-space/dtime.md)
+- [Deterministic time classes on multi-tape machines](../../../../Computability/CSLibExt/machines/turing/multi-tape/time-space/dtime.md)
 
 ## Sources
 

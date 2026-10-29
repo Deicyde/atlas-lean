@@ -15,7 +15,7 @@ B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 3
 
 ## Depends on
 
-- [NPWith Oracle](../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
+- [NP relative to an oracle](../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

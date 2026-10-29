@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.Classes.ApproxAt
 ---
 
-# Approx At
+# Approximation ratio at a precision
 
-`ApproxAt P A k ρ`: algorithm `A` achieves approximation ratio `ρ` on `P`
-at precision tape `k`: on every instance, its output on `(x, replicate k true)`
-is feasible and worth at least `ρ` times every feasible solution's value
-(hence at least `ρ` times the optimum). The shared call convention (algorithm
-takes `(instance, unary precision tape)`) is what makes `FPTAS ⊆ PTAS ⊆ APX`
-direct: an `FPTAS` algorithm is one algorithm handling every precision tape,
-a `PTAS` has one algorithm per tape, and `APX` is the `k = 2` (ratio `1/2`)
-case.
+**Approximation ratio at a precision.** Let $P$ be a maximization problem with objective
+value $\mathrm{val}(x, s)$ for instance $x$ and solution $s$, let $A$ be an algorithm taking a
+pair of bitstrings, let $k$ be a natural number and let $\rho$ be a rational number. Then $A$
+achieves ratio $\rho$ on $P$ at precision $k$ when, for every instance $x$ and every feasible
+solution $s$ of $x$, the output $y = A(x, 1^k)$ of $A$ on $x$ and the unary string $1^k$ of $k$
+ones is a feasible solution of $x$ with $\rho \cdot \mathrm{val}(x, s) \le \mathrm{val}(x, y)$.
+
+Since every instance has a feasible solution, the output is then always feasible and worth at
+least $\rho$ times the value of every feasible solution. The approximation classes share this
+call convention: a fully polynomial-time approximation scheme is one algorithm achieving ratio
+$1 - 1/k$ at every precision $k \ge 1$, a polynomial-time approximation scheme has such an
+algorithm for each $k \ge 1$ separately, and APX asks for some ratio $\rho$ with $0 < \rho \le 1$
+at precision $2$.
 
 ## Depends on
 
-- [Opt Problem](opt-problem.md)
+- [Optimization problems](opt-problem.md)
 
 ## Sources
 

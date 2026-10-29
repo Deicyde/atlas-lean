@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Games.EncodedParityGame.priorityCompressed_lt
 ---
 
-# Priority Compressed lt
+# Bound on compressed priorities
 
-Compressed priorities are bounded by `2 * n`: the number of distinct
-priorities occurring is at most `n`.
+**Bound on compressed priorities.** For an encoded parity game $G$ on $n$ positions, every
+priority of the priority-compressed game of $G$ is strictly less than $2n$.
+
+This holds because at most $n$ distinct priorities occur in $G$.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
-- [Priority Compress](priority-compress.md)
+- [Encoded parity game](encoded-parity-game.md)
+- [Priority compression](priority-compress.md)
 
 ## Proof depends on
 
 - [Priority Rank](priority-rank.md)
-- [Priority Rank lt card](priority-rank-lt-card.md)
+- [Priority ranks are below the number of priorities](priority-rank-lt-card.md)
 
 ## Sources
 

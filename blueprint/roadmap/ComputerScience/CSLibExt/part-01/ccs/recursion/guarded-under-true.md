@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.CCS.Recursive.Process.guardedUnder_true
 ---
 
-# Guarded Under true
+# Every process is guarded beneath a prefix
 
-Once an action prefix has been crossed, every nested occurrence is guarded.
+**Every process is guarded beneath a prefix.** Every recursive CCS process $P$ is guarded
+under the flag $\mathrm{true}$: once an action prefix has been crossed, every constant
+occurrence counts as guarded.
 
 ## Depends on
 
-- [Process](process.md)
-- [Guarded Under](guarded-under.md)
+- [Recursive CCS processes](process.md)
+- [Guardedness under a prefix flag](guarded-under.md)
 
 ## Proof depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 - [Relabelling](../static-operators/relabelling.md)
 
 ## Sources

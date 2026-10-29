@@ -8,20 +8,23 @@ lean: Cslib.Automata.SequentialTransducer.isRegular_preimage
 
 # Inverse sequential transduction preserves regular languages
 
-**Inverse sequential transduction preserves regular languages**: if `L` is regular,
-then the set of inputs whose translation under `S` lands in `L` is regular. The proof
-is the product of `S` with a DFA for `L`, started in the DFA state reached on `S`'s
-initial output.
+**Inverse sequential transduction preserves regular languages.** Let $S$ be a sequential
+transducer with finitely many states, input alphabet $I$ and output alphabet $O$, and let $L$ be
+a regular language over $O$. Then the preimage of $L$ under $S$, the set of words over $I$ that
+$S$ translates to some word of $L$, is regular.
+
+The proof is the product of $S$ with a DFA for $L$, started in the DFA state reached on the
+initial output of $S$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
+- [Sequential transducer](sequential-transducer.md)
 - [Preimage](preimage.md)
 
 ## Proof depends on
 
-- [Preimage DFA](preimage-dfa.md)
-- [Preimage DFA accepts](preimage-dfa-accepts.md)
+- [Product DFA of a sequential transducer and a DFA](preimage-dfa.md)
+- [The product DFA recognizes the preimage](preimage-dfa-accepts.md)
 
 ## Sources
 

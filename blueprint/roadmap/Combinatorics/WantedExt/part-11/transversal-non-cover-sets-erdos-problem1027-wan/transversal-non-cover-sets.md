@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.transversalNonCoverSets
 ---
 
-# Transversal Non Cover Sets
+# Sets meeting but not containing the members of a family
 
-The sets `B ⊆ X = ⋃ F` that meet every member of `F` but contain none of them.
+**Sets meeting but not containing the members of a family.** For a finite family $F$ of finite
+sets of natural numbers with union $X$, this is the finite set of all $B \subseteq X$ that meet
+every member of $F$ and contain none of them.
 
 ## Depends on
 

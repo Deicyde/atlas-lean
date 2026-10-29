@@ -13,28 +13,28 @@ evaluates to the numeral `n`.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Eval](../big-step/eval.md)
-- [Denote](../denotational/denote.md)
-- [Numeral](../syntax/numeral.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
-- [Nat](../syntax/nat.md)
+- [Semantic environments for PCF](../denotational/env.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Denotation of PCF terms](../denotational/denote.md)
+- [PCF numerals](../syntax/numeral.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Proof depends on
 
-- [Lookup](../denotational/lookup.md)
-- [Sub](../syntax/sub.md)
-- [Id](../syntax/id.md)
-- [Lift](../syntax/lift.md)
-- [Approx](approx.md)
-- [Approx denote](approx-denote.md)
-- [Subst](../syntax/subst.md)
-- [Weaken](../syntax/weaken.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Variable lookup in a PCF environment](../denotational/lookup.md)
+- [Parallel substitutions for PCF](../syntax/sub.md)
+- [Identity PCF substitution](../syntax/id.md)
+- [Lifting a PCF substitution under a binder](../syntax/lift.md)
+- [Formal approximation relation](approx.md)
+- [Fundamental lemma of formal approximation](approx-denote.md)
+- [Substitution in PCF terms](../syntax/subst.md)
+- [Weakening of PCF terms](../syntax/weaken.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

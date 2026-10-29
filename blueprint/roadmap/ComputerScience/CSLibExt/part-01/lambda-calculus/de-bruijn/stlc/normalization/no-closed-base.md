@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.no_closed_base
 ---
 
-# No closed base
+# No closed terms of base type
 
-There are no closed terms of a base type in the pure, constant-free calculus.
+**No closed terms of base type.** In the pure, constant-free calculus there is no closed
+term whose type is a base type.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Steps](../semantics/steps.md)
-- [Terminates](../logical-relation/terminates.md)
-- [Value](../semantics/value.md)
-- [Terminates closed](../logical-relation/terminates-closed.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Termination of closed terms](../logical-relation/terminates.md)
+- [Values of STLC](../semantics/value.md)
+- [Termination of the call-by-value simply typed lambda calculus](../logical-relation/terminates-closed.md)
 
 ## Sources
 

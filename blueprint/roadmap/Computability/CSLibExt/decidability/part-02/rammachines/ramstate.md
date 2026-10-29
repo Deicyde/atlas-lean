@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.RAMState
 ---
 
-# RAMState
+# RAM state
 
-A **RAM state**: program counter, accumulator, and register contents.
+**RAM state.** A state of a random-access machine consists of a program counter in
+$\mathbb{N}$, an accumulator value in $\mathbb{N}$, and register contents, a function
+$\mathbb{N} \to \mathbb{N}$ giving the contents of each register.
 
 ## Depends on
 

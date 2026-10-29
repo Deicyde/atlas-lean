@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotationToLongitudeHom
 ---
 
-# Diag Rotation To Longitude Hom
+# The angle homomorphism into the longitude subgroup
 
-The additive homomorphism `ℝ →+ Additive longitudeSubgroup` sending
-`θ` to the diagonal rotation through `θ`.
+**The angle homomorphism into the longitude subgroup.** The homomorphism from the additive
+group $\mathbb{R}$ to the longitude subgroup, written additively, that sends a real number
+$\theta$ to the diagonal rotation through $\theta$, regarded as an element of the longitude
+subgroup.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ The additive homomorphism `ℝ →+ Additive longitudeSubgroup` sending
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
-- [Diag Rotation To Longitude mul](diag-rotation-to-longitude-mul.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
+- [Longitude elements multiply by adding angles](diag-rotation-to-longitude-mul.md)
 
 ## Sources
 

@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.trans
 ---
 
-# Trans
+# Relabellings compose
 
-Relabellings compose.
+**Relabellings compose.** Let $M$, $M'$ and $M''$ be multi-tape Turing machines with the same
+number of work tapes and the same alphabet, with state sets $Q$, $Q'$ and $Q''$. If $M'$
+simulates $M$ up to the state relabelling $f : Q \to Q'$ and $M''$ simulates $M'$ up to the
+state relabelling $g : Q' \to Q''$, then $M''$ simulates $M$ up to the state relabelling
+$g \circ f$.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Relabel Action](relabel-action.md)
+- [Relabelling the successor state of an action](relabel-action.md)
 
 ## Sources
 

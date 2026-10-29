@@ -6,10 +6,10 @@ navigation: module
 
 ## Semantics
 
-- [Shift Seq](shift-seq.md)
+- [Shifted sequence](shift-seq.md)
 
 ## LTS
 
-- [Finite Run](finite-run.md)
-- [Omega Run](omega-run.md)
-- [Forall state of invariant](forall-state-of-invariant.md)
+- [Finite run](finite-run.md)
+- [Infinite run](omega-run.md)
+- [Invariant principle for infinite runs](forall-state-of-invariant.md)

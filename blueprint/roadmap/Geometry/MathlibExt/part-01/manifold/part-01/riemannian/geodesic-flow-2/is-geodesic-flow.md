@@ -5,16 +5,19 @@ statement: formalized
 lean: Manifold.IsGeodesicFlow
 ---
 
-# Is Geodesic Flow
+# Geodesic flow on the tangent bundle
 
-`φ : ℝ → TangentBundle I M → TangentBundle I M` is the geodesic flow of `g` on the tangent
-bundle: `φ 0 v = v` for every `v`, the flow law `φ (t + s) v = φ t (φ s v)` holds, and every
-orbit `fun t ↦ φ t v` is a geodesic velocity curve, so `φ t v = γ̇_v(t)` where `γ_v` is the
-geodesic with initial velocity `v`. The flow is characterized, not constructed; for a `C^∞`
-metric on a boundaryless manifold (complete, for the global flow) existence and uniqueness are
-classical and not formalized here. The group law is a field; no continuity, smoothness or
-conservation of speed is assumed: those are classical properties in that smooth setting only,
-not claimed in the file's general setting.
+**Geodesic flow on the tangent bundle.** Let $M$ be a $C^2$ manifold (boundary and corners
+allowed) modeled on a finite-dimensional real space, with a $C^1$ Riemannian metric $g$. A
+family of maps $\varphi_t : TM \to TM$, $t \in \mathbb{R}$, is a geodesic flow of $g$ when
+$\varphi_0(v) = v$ for every $v \in TM$, $\varphi_{t+s}(v) = \varphi_t(\varphi_s(v))$ for all
+$t, s \in \mathbb{R}$ and $v \in TM$, and for every $v \in TM$ the orbit $t \mapsto \varphi_t(v)$
+is a geodesic velocity curve. Then $\varphi_t(v) = \gamma_v'(t)$ for a geodesic $\gamma_v$ with
+initial velocity $v$.
+
+The definition characterizes the flow and does not assert that one exists or is unique. For a
+$C^\infty$ metric on a boundaryless manifold, uniqueness is classical, and the global flow exists
+when the metric is also complete. No continuity, smoothness or conservation of speed is assumed.
 
 ## Depends on
 

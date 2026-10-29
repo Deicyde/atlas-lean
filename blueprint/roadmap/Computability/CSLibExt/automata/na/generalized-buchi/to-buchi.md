@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Automata.NA.GenBuchi.toBuchi
 ---
 
-# To Buchi
+# Degeneralization of a generalized Büchi automaton
 
-The degeneralized Büchi automaton: states are pairs of a state of `g` with a
-counter in `Fin (k + 1)`; the counter updates by `nextCount`, the start states
-have counter `0`, and the accepting states have counter `k`.
+**Degeneralization of a generalized Büchi automaton.** Let $g$ be a generalized Büchi
+automaton with $k$ acceptance sets. Its degeneralization is the Büchi automaton over the same
+alphabet whose states are the pairs $(s, i)$ of a state $s$ of $g$ and a counter value
+$i \in \{0, \dots, k\}$. On a symbol $x$ there is a transition from $(s, i)$ to $(s', i')$ iff $g$
+has a transition from $s$ to $s'$ on $x$ and $i'$ is the counter update of $i$ at the state $s'$.
+The start states are the pairs $(s, 0)$ with $s$ a start state of $g$, and the accepting states
+are the pairs $(s, k)$.
 
 ## Depends on
 
-- [Gen Buchi](gen-buchi.md)
+- [Generalized Büchi automaton](gen-buchi.md)
 
 ## Proof depends on
 
-- [Next Count](next-count.md)
+- [Counter update for degeneralization](next-count.md)
 
 ## Sources
 

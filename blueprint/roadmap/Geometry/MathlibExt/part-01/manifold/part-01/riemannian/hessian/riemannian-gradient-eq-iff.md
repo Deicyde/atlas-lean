@@ -13,7 +13,7 @@ as the differential does.
 
 ## Depends on
 
-- [Riemannian Gradient](riemannian-gradient.md)
+- [Riemannian gradient](riemannian-gradient.md)
 
 ## Proof depends on
 

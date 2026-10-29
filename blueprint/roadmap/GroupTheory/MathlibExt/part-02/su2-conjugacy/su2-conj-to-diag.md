@@ -6,10 +6,11 @@ proof: formalized
 lean: SU2.su2_conj_to_diag
 ---
 
-# Su2 conj to diag
+# Diagonalization in $\mathrm{SU}(2)$ up to conjugacy
 
-Every element of `SU₂` is conjugate in `SU₂` to a diagonal matrix
-`diag(z, conj z)` with `z * conj z = 1`.
+**Diagonalization in $\mathrm{SU}(2)$ up to conjugacy.** Every element of $\mathrm{SU}(2)$ is
+conjugate in $\mathrm{SU}(2)$ to an element of $\mathrm{SU}(2)$ that is the diagonal matrix
+$\operatorname{diag}(z, \bar z)$ for some complex number $z$ with $z \bar z = 1$.
 
 ## Depends on
 

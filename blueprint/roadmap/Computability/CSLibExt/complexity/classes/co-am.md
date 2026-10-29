@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.coAM
 ---
 
-# Co AM
+# The class coAM
 
-`coAM`: complements of `AM` languages.
+**The class coAM.** coAM is the class of decision problems $L$ whose complement, the
+decision problem that accepts exactly the bitstrings that $L$ rejects, belongs to AM.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ lean: Cslib.Complexity.Classes.coAM
 
 ## Proof depends on
 
-- [AM](am.md)
+- [The class $\mathsf{AM}$ (Arthur–Merlin)](am.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

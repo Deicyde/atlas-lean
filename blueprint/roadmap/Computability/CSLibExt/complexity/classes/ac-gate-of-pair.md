@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.Classes.acGateOfPair
 ---
 
-# Ac Gate Of Pair
+# Decoding a gate from its (kind, references) pair
 
-Decode a `(kind, refs)` pair into a typed `ACGate`. Kind `5` (unknown/mod)
-decodes to `const false`, matching the evaluator's behaviour on unknown kinds.
-An out-of-range input index (`i ≥ n`) also decodes to `const false`, matching
-the `assign.getD i false` semantics of the serial evaluator: a var gate for a
-nonexistent input reads as `false`.
+**Decoding a gate from its (kind, references) pair.** A pair $(k, r)$ of a natural number $k$
+and a list $r$ of natural numbers decodes to a gate of a flat Boolean circuit on $n$ inputs as
+follows: $(0, [i])$ decodes to the input variable $x_i$ when $i < n$ and to the constant false
+when $i \ge n$; $(1, [b])$ decodes to the constant that is true if and only if $b = 1$; $(2, [a])$
+decodes to the negation of gate $a$; $(3, r)$ decodes to the conjunction of the gates listed in
+$r$; and $(4, r)$ decodes to the disjunction of the gates listed in $r$. Every other pair,
+including every pair of kind $5$ (the encoding of a mod gate), decodes to the constant false.
+
+These defaults match the serial evaluator, which reads an unknown kind, and an input variable
+with no corresponding input, as false.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

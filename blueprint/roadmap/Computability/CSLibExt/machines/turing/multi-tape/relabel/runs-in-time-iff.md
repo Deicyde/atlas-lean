@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.runsInTime_iff
 ---
 
-# Runs In Time iff
+# Relabelling preserves time bounds
 
-Relabelling preserves time bounds.
+**Relabelling preserves time bounds.** Let $M$ and $M'$ be multi-tape Turing machines with
+the same number of work tapes and the same alphabet such that $M'$ simulates $M$ up to a state
+relabelling $f$. Then for every input $x$ and every $t \in \mathbb{N}$, $M'$ runs in time $t$ on
+$x$ if and only if $M$ runs in time $t$ on $x$.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Run From init Cfg](run-from-init-cfg.md)
-- [Halted map State iff](halted-map-state-iff.md)
-- [Runs In Time iff halted](../basic/runs-in-time-iff-halted.md)
+- [Lockstep runs from the initial configuration](run-from-init-cfg.md)
+- [Relabelling preserves halting](halted-map-state-iff.md)
+- [Time bounds of deterministic machines](../basic/runs-in-time-iff-halted.md)
 
 ## Sources
 

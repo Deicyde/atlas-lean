@@ -12,7 +12,7 @@ Turing machines", SIAM Journal on Computing 6 (1977), 675-695.
 
 ## Depends on
 
-- [PP](../../../../../Computability/CSLibExt/complexity/classes/pp.md)
+- [Probabilistic polynomial time with unbounded error](../../../../../Computability/CSLibExt/complexity/classes/pp.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Maj Sat Dec](maj-sat-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

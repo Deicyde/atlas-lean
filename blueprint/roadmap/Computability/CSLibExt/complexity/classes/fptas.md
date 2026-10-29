@@ -5,18 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Classes.FPTAS
 ---
 
-# FPTAS
+# The class FPTAS
 
-The class `FPTAS` of optimization problems with a fully polynomial-time
-approximation scheme.
+**The class FPTAS.** FPTAS is the class of optimization problems that have a fully
+polynomial-time approximation scheme.
 
 ## Depends on
 
-- [Opt Problem](opt-problem.md)
+- [Optimization problems](opt-problem.md)
 
 ## Proof depends on
 
-- [Is FPTAS](is-fptas.md)
+- [Fully polynomial-time approximation schemes](is-fptas.md)
 
 ## Sources
 

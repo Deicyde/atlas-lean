@@ -5,16 +5,16 @@ statement: formalized
 lean: Cslib.Decidability.ramResolve
 ---
 
-# Ram Resolve
+# Value of a RAM operand
 
-Resolve a RAM operand to a value in the given state: immediate is the
-literal, direct is the register contents, indirect is two register
-dereferences.
+**Value of a RAM operand.** In a RAM state with register contents $r$, an operand resolves to
+a natural number: the immediate operand $n$ resolves to $n$ itself, the direct operand $n$ to
+the contents $r(n)$ of register $n$, and the indirect operand $n$ to $r(r(n))$.
 
 ## Depends on
 
-- [RAMAddr](ramaddr.md)
-- [RAMState](ramstate.md)
+- [RAM addressing mode](ramaddr.md)
+- [RAM state](ramstate.md)
 
 ## Sources
 

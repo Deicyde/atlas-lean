@@ -5,18 +5,19 @@ statement: formalized
 lean: Manifold.FinslerMetric.IsGeodesic
 ---
 
-# Is Geodesic
+# Finsler geodesic
 
-`γ : ℝ → M` is a geodesic of the Finsler metric `F`, defined for all times, of some constant
-speed.
+**Finsler geodesic.** Let $F$ be a Finsler metric on a manifold $M$. A curve
+$\gamma : \mathbb{R} \to M$ is a geodesic of $F$ if there is a real number $c \ge 0$ such that
+$\gamma$ is a geodesic of speed $c$ of $F$ on all of $\mathbb{R}$.
 
 ## Depends on
 
-- [Finsler Metric](finsler-metric.md)
+- [Finsler metric](finsler-metric.md)
 
 ## Proof depends on
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
+- [Finsler geodesic of given speed on a set of times](is-geodesic-on-with-speed.md)
 
 ## Sources
 

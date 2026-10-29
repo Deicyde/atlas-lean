@@ -6,18 +6,18 @@ navigation: module
 
 ## PCF
 
-- [Dom](dom.md)
-- [Order Bot](order-bot.md)
-- [Env](env.md)
-- [Lookup](lookup.md)
-- [Of Fun](of-fun.md)
-- [Ifz Hom](ifz-hom.md)
+- [Domain of a PCF type](dom.md)
+- [Least elements of PCF domains](order-bot.md)
+- [Semantic environments for PCF](env.md)
+- [Variable lookup in a PCF environment](lookup.md)
+- [Environment from a family of values](of-fun.md)
+- [Strict zero test as a continuous map](ifz-hom.md)
 
 ## Tm
 
-- [Denote](denote.md)
-- [Denote fix unfold](denote-fix-unfold.md)
-- [Denote rename](denote-rename.md)
-- [Denote weaken](denote-weaken.md)
-- [Denote subst](denote-subst.md)
-- [Denote instantiate](denote-instantiate.md)
+- [Denotation of PCF terms](denote.md)
+- [Fixed-point equation for the PCF denotation of fix](denote-fix-unfold.md)
+- [PCF denotation of a renamed term](denote-rename.md)
+- [Weakening preserves the PCF denotation](denote-weaken.md)
+- [PCF denotation of a substituted term](denote-subst.md)
+- [PCF denotation of instantiation](denote-instantiate.md)

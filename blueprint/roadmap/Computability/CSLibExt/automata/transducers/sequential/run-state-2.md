@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Automata.MealyMachine.runState
 ---
 
-# Run State
+# Final state of a Mealy machine run
 
-The final state of the run from `q` on `xs`.
+**Final state of a Mealy machine run.** For a Mealy machine $M$, a state $q$ and an input
+word $x$, the final state of the run from $q$ on $x$ is the state reached by starting in $q$
+and moving, on each successive letter of $x$, to the successor state given by the transition
+function of $M$; on the empty word it is $q$.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
+- [Mealy machine](mealy-machine.md)
 
 ## Proof depends on
 
-- [Run From](run-from-2.md)
+- [Run of a Mealy machine](run-from-2.md)
 
 ## Sources
 

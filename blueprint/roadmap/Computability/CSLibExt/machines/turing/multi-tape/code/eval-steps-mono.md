@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.evalSteps_mono
 ---
 
-# Eval Steps mono
+# Monotonicity of the clocked evaluator
 
-A result within `T` steps stays the result for every larger clock.
+**Monotonicity of the clocked evaluator.** For a code $c$, a binary input $x$, a binary
+word $o$ and clocks $T \le T'$ in $\mathbb{N}$, if the clocked evaluator of $c$ on $x$ returns $o$
+with clock $T$, then it also returns $o$ with clock $T'$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Eval Steps](eval-steps.md)
+- [Codes for multi-tape machines](code.md)
+- [Clocked evaluator](eval-steps.md)
 
 ## Proof depends on
 
 - [Evaluator agreement](eval-steps-eq-some-iff.md)
-- [To TM](to-tm.md)
+- [The machine of a code](to-tm.md)
 
 ## Sources
 

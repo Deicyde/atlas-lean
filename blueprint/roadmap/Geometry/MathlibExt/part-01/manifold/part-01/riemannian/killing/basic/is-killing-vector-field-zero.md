@@ -6,13 +6,14 @@ proof: formalized
 lean: Manifold.isKillingVectorField_zero
 ---
 
-# Is Killing Vector Field zero
+# The zero field is Killing
 
-The zero vector field is Killing.
+**The zero field is Killing.** On a smooth Riemannian manifold, the zero vector field is a
+Killing vector field.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
+- [Killing vector field](is-killing-vector-field.md)
 
 ## Sources
 

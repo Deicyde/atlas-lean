@@ -12,11 +12,11 @@ The preimage of a language under a sequential transducer: the inputs whose
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Proof depends on
 
-- [Translates](translates.md)
+- [Translation by a sequential transducer](translates.md)
 
 ## Sources
 

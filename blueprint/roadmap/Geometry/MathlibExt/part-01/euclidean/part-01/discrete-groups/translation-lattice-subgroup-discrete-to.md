@@ -6,21 +6,26 @@ proof: formalized
 lean: DiscreteGroups.translationLatticeSubgroup_discreteTopology
 ---
 
-# Translation Lattice Subgroup discrete Topology
+# The translation lattice of a discrete isometry group is discrete
 
-The source's translation separation gives the bundled lattice the standard
-subspace discrete topology.
+**The translation lattice of a discrete isometry group is discrete.** Let $G$ be a group of
+affine isometries of the Euclidean plane $\mathbb{R}^2$, and suppose there is $\varepsilon > 0$
+such that every non-identity translation in $G$ moves the origin by at least $\varepsilon$, and
+every element of $G$ whose linear part $A$ is not the identity satisfies
+$\|A - I\| \ge \varepsilon$ in operator norm. Then the translation lattice of $G$, the additive
+subgroup of vectors $v$ such that translation by $v$ lies in $G$, is discrete in the subspace
+topology of $\mathbb{R}^2$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [Is Discrete](is-discrete.md)
-- [M₂](m.md)
-- [Translation Lattice Subgroup](translation-lattice-subgroup.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Separation criterion for groups of plane isometries](is-discrete.md)
+- [Isometry group of the Euclidean plane](m.md)
+- [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 
 ## Proof depends on
 
-- [Linear Part](linear-part.md)
+- [Linear part of a plane isometry](linear-part.md)
 
 ## Sources
 

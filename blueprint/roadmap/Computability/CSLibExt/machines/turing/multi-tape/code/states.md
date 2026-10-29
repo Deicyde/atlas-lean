@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.states
 ---
 
-# States
+# States of a code
 
-The states of a code: the initial state and every state its table enters.
+**States of a code.** The states of a code $c$ form the finite set of natural numbers
+consisting of the initial state $0$ and the next state of every table entry of $c$ that does
+not halt.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for multi-tape machines](code.md)
 
 ## Proof depends on
 
-- [Code Action](code-action.md)
-- [Code Key](code-key.md)
+- [Coded actions](code-action.md)
+- [Keys of a code's table](code-key.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Var
 ---
 
-# Var
+# PCF variables
 
-Typed de Bruijn variables, shared with the STLC.
+**PCF variables.** PCF uses the typed de Bruijn variables of the simply typed
+$\lambda$-calculus over a single base type: a variable of type $A$ in a context $\Gamma$ is a
+position in the list $\Gamma$ at which $A$ occurs.
 
 ## Depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

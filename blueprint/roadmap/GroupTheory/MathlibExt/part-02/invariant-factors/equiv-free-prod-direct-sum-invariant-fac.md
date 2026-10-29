@@ -6,12 +6,13 @@ proof: formalized
 lean: AddCommGroup.equiv_free_prod_directSum_invariant_factors
 ---
 
-# Equiv free prod direct Sum invariant factors
+# Fundamental theorem of finitely generated abelian groups, invariant factor form
 
-The fundamental theorem of finitely generated abelian groups, invariant
-factor form: every finitely generated abelian group is the product of a free
-abelian group and a finite product of cyclic groups `ZMod (d i)` with
-`1 < d i` and `d i ∣ d j` for `i ≤ j`.
+**Fundamental theorem of finitely generated abelian groups, invariant factor form.** Every
+finitely generated abelian group $A$ is isomorphic to
+$\mathbb{Z}^a \times \bigoplus_{i < k} \mathbb{Z}/d_i\mathbb{Z}$ for some $a, k \in \mathbb{N}$
+and natural numbers $d_0, \dots, d_{k-1}$ with $d_i > 1$ for every $i$ and $d_i \mid d_j$
+whenever $i \le j$.
 
 ## Depends on
 

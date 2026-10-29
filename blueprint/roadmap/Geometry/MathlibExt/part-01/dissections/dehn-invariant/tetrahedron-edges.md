@@ -5,18 +5,19 @@ statement: formalized
 lean: DehnInvariant.tetrahedronEdges
 ---
 
-# Tetrahedron Edges
+# Edge list of the regular tetrahedron
 
-The edge list of a regular tetrahedron: 6 edges of length `ℓ`, each with dihedral
-angle `arccos (1 / 3)`.
+**Edge list of the regular tetrahedron.** For a real number $\ell$, the edge list of a
+regular tetrahedron with edge length $\ell$ is the list of $6$ edges, each of length $\ell$ and
+dihedral angle $\arccos(1/3)$.
 
 ## Depends on
 
-- [Edge](edge.md)
+- [Edge of a polyhedron](edge.md)
 
 ## Proof depends on
 
-- [Tetrahedral Angle](tetrahedral-angle.md)
+- [Dihedral angle of the regular tetrahedron](tetrahedral-angle.md)
 
 ## Sources
 

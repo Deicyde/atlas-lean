@@ -5,13 +5,15 @@ statement: formalized
 lean: Manifold.FinslerMetric.euclidean
 ---
 
-# Euclidean
+# Euclidean Finsler metric
 
-The Euclidean Finsler metric `F(x, v) = ‖v‖` of an inner product space `F`.
+**Euclidean Finsler metric.** Let $V$ be a finite-dimensional real inner product space,
+viewed as a smooth manifold whose tangent spaces are $V$ itself. The Euclidean Finsler metric on
+$V$ is $F(x, v) = \|v\|$ for $x \in V$ and $v \in T_xV = V$.
 
 ## Depends on
 
-- [Finsler Metric](finsler-metric.md)
+- [Finsler metric](finsler-metric.md)
 
 ## Proof depends on
 

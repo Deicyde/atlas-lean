@@ -6,28 +6,32 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_denote_base
 ---
 
-# Cbn denote base
+# The call-by-name CPS translation at base types
 
-At a base type, the translation passes exactly the term's value to the
-continuation.
+**The call-by-name CPS translation at base types.** Fix an answer type $R$ and an
+interpretation of the base types. Let $t$ be a term of a base type $b$ in a context $\Gamma$, let
+$\eta$ be an environment for $\Gamma$, and let $\eta'$ be an environment for the translated
+context related to $\eta$. Then for every continuation $k$ from the values of type $b$ to the
+values of type $R$, the denotation in $\eta'$ of the call-by-name CPS translation $\overline{t}$
+of $t$, applied to $k$, equals $k$ applied to the denotation of $t$ in $\eta$.
 
 ## Depends on
 
-- [Cbn Env Rel](cbn-env-rel.md)
-- [Cbn](cbn.md)
-- [Cbn Comp](cbn-comp.md)
-- [Cbn Ty](cbn-ty.md)
-- [Env](../../de-bruijn/stlc/denotational/env.md)
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Denote](../../de-bruijn/stlc/denotational/denote-2.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Denote](../../de-bruijn/stlc/denotational/denote.md)
+- [Related environments for the call-by-name CPS translation](cbn-env-rel.md)
+- [Call-by-name CPS translation of terms](cbn.md)
+- [Computation types of the call-by-name CPS translation](cbn-comp.md)
+- [Call-by-name CPS translation of types](cbn-ty.md)
+- [Semantic environments](../../de-bruijn/stlc/denotational/env.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Denotation of an STLC term](../../de-bruijn/stlc/denotational/denote-2.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Denotation of simple types](../../de-bruijn/stlc/denotational/denote.md)
 
 ## Proof depends on
 
-- [Cbn Comp Rel](cbn-comp-rel.md)
-- [Cbn Rel](cbn-rel.md)
-- [Cbn correct](cbn-correct.md)
+- [Related computations in the call-by-name CPS translation](cbn-comp-rel.md)
+- [Logical relation for the call-by-name CPS translation](cbn-rel.md)
+- [Denotational correctness of the call-by-name CPS translation](cbn-correct.md)
 
 ## Sources
 

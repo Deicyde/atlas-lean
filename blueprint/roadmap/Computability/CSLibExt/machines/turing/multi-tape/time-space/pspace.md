@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Classes.PSPACE
 ---
 
-# PSPACE
+# Polynomial space on multi-tape machines
 
-Deterministic polynomial space on the multi-tape model.
+**Polynomial space on multi-tape machines.** $\mathrm{PSPACE}$ is the set of languages of
+Boolean strings that lie in $\mathrm{DSPACE}(n \mapsto n^d)$ for some $d \in \mathbb{N}$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [DSPACE](dspace.md)
+- [Deterministic space classes on multi-tape machines](dspace.md)
 
 ## Sources
 

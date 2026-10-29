@@ -14,7 +14,7 @@ Proceedings of the Twenty-First Annual ACM Symposium on Theory of Computing (STO
 
 ## Depends on
 
-- [Negligible](../../../../../Computability/CSLibExt/complexity/classes/negligible.md)
+- [Negligible functions](../../../../../Computability/CSLibExt/complexity/classes/negligible.md)
 - [GLGate](glgate.md)
 - [Gl Circuit Outputs](gl-circuit-outputs.md)
 - [Invert Succ](invert-succ.md)

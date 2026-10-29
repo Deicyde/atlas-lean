@@ -6,24 +6,25 @@ proof: formalized
 lean: Cslib.Games.ParityGame.mem_attractor_iff
 ---
 
-# Mem attractor iff
+# Characterization of the attractor
 
-On a finite arena, the attractor of `T` for `p` is exactly the set of positions from which `p`
-has a positional strategy forcing a visit to `T`.
+**Characterization of the attractor.** Let $G$ be a parity game with finitely many positions,
+$p$ a player and $T$ a set of positions. A position $v$ lies in the attractor of $T$ for $p$ if
+and only if some positional strategy of $p$ forces a visit to $T$ from $v$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Forces Reach](forces-reach.md)
+- [Parity game](../parity/parity-game.md)
+- [Forcing a visit to a set](forces-reach.md)
 - [Positional Strategy](../parity/positional-strategy.md)
 - [Attractor](attractor.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor Strategy](attractor-strategy.md)
-- [Forces Reach attractor Strategy](forces-reach-attractor-strategy.md)
-- [Not forces Reach of not Mem attractor](not-forces-reach-of-not-mem-attractor.md)
+- [Attractor strategy](attractor-strategy.md)
+- [The attractor strategy forces a visit](forces-reach-attractor-strategy.md)
+- [No strategy forces a visit from outside the attractor](not-forces-reach-of-not-mem-attractor.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Decidability.urmRecognizable_to_tm2Recognizable
 ---
 
-# A URM-recognizable predicate is recognizable by a multi-stack Turing machine
+# URM-recognizability implies multi-stack recognizability
 
-**A URM-recognizable predicate is recognizable by a multi-stack Turing machine.**
+**URM-recognizability implies multi-stack recognizability.**
+Every predicate $P$ on $\mathbb{N}$ that is URM-recognizable is recognizable by a multi-stack
+Turing machine.
 
 ## Depends on
 
 - [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
-- [Recognizable](../../part-02/urmbridge/recognizable.md)
+- [URM-recognizable predicates](../../part-02/urmbridge/recognizable.md)
 
 ## Proof depends on
 

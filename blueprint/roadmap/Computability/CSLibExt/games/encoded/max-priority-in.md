@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Games.EncodedParityGame.maxPriorityIn
 ---
 
-# Max Priority In
+# Maximal priority on a set of positions
 
-The maximal priority attained on a live set `U` (`0` if `U` is empty).
+**Maximal priority on a set of positions.** For an encoded parity game $G$ and a set $U$ of
+positions, the maximal priority on $U$ is the largest priority of $G$ at a position of $U$, or
+$0$ if $U$ is empty.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 
 ## Sources
 

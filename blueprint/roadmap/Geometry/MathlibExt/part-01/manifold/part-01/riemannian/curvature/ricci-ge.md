@@ -5,10 +5,13 @@ statement: formalized
 lean: Manifold.RicciGE
 ---
 
-# Ricci GE
+# Ricci curvature bounded below
 
-`M` has Ricci curvature `≥ k`, i.e. `Ric ≥ k g`: `Ric(v, v) ≥ k ‖v‖²` for every point `x` and
-every `v : T_x M`.
+**Ricci curvature bounded below.** A $C^\infty$ Riemannian manifold $(M, g)$ has Ricci curvature
+at least $k \in \mathbb{R}$, written $\operatorname{Ric} \ge k g$, when
+$\operatorname{Ric}_x(v, v) \ge k \|v\|^2$ for every point $x \in M$ and every tangent vector
+$v \in T_x M$, where $\operatorname{Ric}$ is the Ricci curvature and $\|v\|$ is the norm of $v$
+given by $g$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ricci](ricci.md)
+- [Ricci curvature](ricci.md)
 
 ## Sources
 

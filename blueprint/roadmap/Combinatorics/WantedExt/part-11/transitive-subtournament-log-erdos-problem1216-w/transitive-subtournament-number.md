@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TransitiveSubtournamentLogErdosProblem1216Wanted.transitiveSubtournamentNumber
 ---
 
-# Transitive Subtournament Number
+# Transitive subtournament number
 
-`f(n)`: the largest `m` such that every tournament on `n` vertices contains a transitive
-subtournament on `m` vertices.
+**Transitive subtournament number.** For $n \in \mathbb{N}$, $f(n)$ is the largest $m$ such
+that every tournament $T$ on $\{0, \dots, n-1\}$ is transitive on some set of exactly $m$
+vertices, that is, contains a transitive subtournament on $m$ vertices.
+
+Such $m$ exist (for instance $m = 0$) and are at most $n$, so the largest one exists.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Tournament](is-tournament.md)
-- [Is Transitive On](is-transitive-on.md)
+- [Tournaments](is-tournament.md)
+- [Transitivity on a vertex set](is-transitive-on.md)
 
 ## Sources
 

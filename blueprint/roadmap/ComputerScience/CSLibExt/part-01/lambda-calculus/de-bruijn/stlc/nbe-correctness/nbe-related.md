@@ -5,26 +5,33 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.NbeRelated
 ---
 
-# Nbe Related
+# Kripke realization relation for NbE
 
-A Kripke semantic value realizes a set-theoretic denotation when base
-neutrals have that denotation and functions preserve realization after every
-future-context renaming.
+**Kripke realization relation for NbE.** Fix an interpretation $I$ of the base types. For a
+context $\Gamma$, an environment $\eta$ for $\Gamma$ in $I$, a type $A$, a Kripke semantic value
+$v$ of type $A$ in $\Gamma$ and an element $d$ of the denotation of $A$ under $I$, the relation
+"$v$ realizes $d$ at $\eta$" is defined by recursion on $A$. At a base type, $v$ is a neutral
+term, and $v$ realizes $d$ when the denotation of $v$, read as a term, in $\eta$ equals $d$. At a
+function type $A \Rightarrow B$, $v$ realizes $d$ when for every context $\Delta$, every renaming
+$\rho : \Gamma \to \Delta$, every environment $\theta$ for $\Delta$ with $\theta \circ \rho = \eta$,
+every semantic value $a$ of type $A$ in $\Delta$ and every element $e$ of the denotation of $A$
+such that $a$ realizes $e$ at $\theta$, the semantic value $v(\rho, a)$ realizes $d(e)$ at
+$\theta$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Sem](../nbe/sem.md)
-- [Ty](../syntax/ty.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Proof depends on
 
-- [Rename](../denotational/rename.md)
-- [Ren](../syntax/ren.md)
-- [Tm](../syntax/tm.md)
-- [Denote](../denotational/denote-2.md)
-- [Var](../syntax/var.md)
+- [Renaming an environment](../denotational/rename.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

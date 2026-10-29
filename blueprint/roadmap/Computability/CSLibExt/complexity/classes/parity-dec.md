@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.parityDec
 ---
 
-# Parity Dec
+# The parity language
 
-The parity language: bitstrings with an odd number of `true` bits.
+**The parity language.** The parity decision problem accepts a bitstring exactly when an odd
+number of its entries are true.
 
 ## Depends on
 

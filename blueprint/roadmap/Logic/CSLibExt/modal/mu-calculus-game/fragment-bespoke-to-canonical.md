@@ -17,8 +17,8 @@ strictly decrease the formula).
 
 ## Depends on
 
-- [Wins From](../../../../Computability/CSLibExt/games/parity/wins-from.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
@@ -31,9 +31,9 @@ strictly decrease the formula).
 
 ## Proof depends on
 
-- [Conforms](../../../../Computability/CSLibExt/games/parity/conforms.md)
-- [Is Play](../../../../Computability/CSLibExt/games/parity/is-play.md)
-- [Won By](../../../../Computability/CSLibExt/games/parity/won-by.md)
+- [Plays conforming to a strategy](../../../../Computability/CSLibExt/games/parity/conforms.md)
+- [Plays of a parity game](../../../../Computability/CSLibExt/games/parity/is-play.md)
+- [Winner of a play in a parity game](../../../../Computability/CSLibExt/games/parity/won-by.md)
 - [Frag Move](frag-move.md)
 - [Pos move iff](pos-move-iff.md)
 - [Pos to Lose](pos-to-lose.md)

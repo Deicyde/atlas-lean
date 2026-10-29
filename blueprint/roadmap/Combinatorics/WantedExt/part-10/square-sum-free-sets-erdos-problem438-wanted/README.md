@@ -4,7 +4,7 @@ navigation: module
 
 # Square Sum Free Sets Erdos Problem438
 
-- [Is Square Sum Free](is-square-sum-free.md)
-- [Max Square Sum Free Size](max-square-sum-free-size.md)
-- [Max Square Sum Free Density](max-square-sum-free-density.md)
-- [Max Square Sum Free Density holds](max-square-sum-free-density-holds.md)
+- [Square-sum-free sets](is-square-sum-free.md)
+- [Maximum size of a square-sum-free set](max-square-sum-free-size.md)
+- [Erdős Problem 438 (statement)](max-square-sum-free-density.md)
+- [Maximal density of square-sum-free sets (Erdős Problem 438)](max-square-sum-free-density-holds.md)

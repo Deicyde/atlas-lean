@@ -14,8 +14,8 @@ and Computation 1985).
 
 ## Depends on
 
-- [Sharp P](../../../../Computability/CSLibExt/complexity/classes/sharp-p.md)
-- [Eval Oracle](../../../../Computability/CSLibExt/complexity/classes/eval-oracle.md)
+- [The counting class $\#P$](../../../../Computability/CSLibExt/complexity/classes/sharp-p.md)
+- [Evaluation of an oracle machine with adaptive queries](../../../../Computability/CSLibExt/complexity/classes/eval-oracle.md)
 - [Bitstring encodings](../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../Computability/MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)

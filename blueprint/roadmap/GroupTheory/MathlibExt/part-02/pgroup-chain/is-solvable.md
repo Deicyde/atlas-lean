@@ -6,9 +6,10 @@ proof: formalized
 lean: IsPGroup.isSolvable
 ---
 
-# Is Solvable
+# Finite p-groups are solvable
 
-Every finite `p`-group is solvable.
+**Finite p-groups are solvable.** For every prime $p$, every finite $p$-group is
+solvable.
 
 ## Depends on
 

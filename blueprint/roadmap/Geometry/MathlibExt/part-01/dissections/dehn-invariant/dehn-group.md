@@ -5,9 +5,11 @@ statement: formalized
 lean: DehnInvariant.DehnGroup
 ---
 
-# Dehn Group
+# Dehn group
 
-The **Dehn group** `ℝ ⊗[ℤ] (ℝ / 2πℤ)`, the target of the Dehn invariant.
+**Dehn group.** The Dehn group is the tensor product
+$\mathbb{R} \otimes_{\mathbb{Z}} (\mathbb{R} / 2\pi\mathbb{Z})$ of abelian groups; it is the target
+of the Dehn invariant.
 
 ## Depends on
 

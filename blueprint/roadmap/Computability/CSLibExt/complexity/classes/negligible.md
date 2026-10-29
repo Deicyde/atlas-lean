@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Classes.Negligible
 ---
 
-# Negligible
+# Negligible functions
 
-A function `e : ℕ → ℚ` is negligible if it is eventually below `1 / n ^ c` for
-every `c`.
+**Negligible functions.** A function $e : \mathbb{N} \to \mathbb{Q}$ is negligible if for
+every natural number $c$ there is a natural number $N$ such that $e(n) \le 1 / n^c$ for all
+natural numbers $n \ge N$.
 
 ## Depends on
 

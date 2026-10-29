@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Negligible](../../../../../Computability/CSLibExt/complexity/classes/negligible.md)
+- [Negligible functions](../../../../../Computability/CSLibExt/complexity/classes/negligible.md)
 - [Bitstring encodings](../../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)

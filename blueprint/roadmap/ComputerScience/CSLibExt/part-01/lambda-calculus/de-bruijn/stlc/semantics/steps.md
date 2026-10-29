@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Steps
 ---
 
-# Steps
+# Multi-step call-by-value reduction in STLC
 
-Reflexive transitive closure of evaluation.
+**Multi-step call-by-value reduction in STLC.** For terms of type $A$ in a context $\Gamma$,
+multi-step reduction is the reflexive transitive closure of one-step call-by-value reduction.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Small-step call-by-value reduction in STLC](step.md)
 
 ## Sources
 

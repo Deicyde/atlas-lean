@@ -8,24 +8,29 @@ lean: Cslib.Turing.MultiTapeTM.decidableInTimeAndSpace_iff_exists_code
 
 # Decidability over codes
 
-**Decidability over codes.** A language over `Bool` is decidable within some time and space
-bounds iff the machine of some code decides it within them.
+**Decidability over codes.** Let $L$ be a set of binary words and let $t$ and $s$ map binary
+words to natural numbers. Say a machine decides $L$ within $t$ and $s$ when, started on any
+binary word $w$, it halts with the one-bit output $\mathrm{true}$ if $w \in L$ and
+$\mathrm{false}$ otherwise, halts within $t(w)$ steps, and visits at most $s(w)$ work-tape cells.
+Then some binary multi-tape machine with finitely many states decides $L$ within $t$ and $s$ if
+and only if, for some number $k$ of work tapes, the machine of some code with $k$ work tapes
+decides $L$ within $t$ and $s$.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [To TM](../code/to-tm.md)
-- [Decides](../time-space/decides.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [The machine of a code](../code/to-tm.md)
+- [A multi-tape machine deciding a language](../time-space/decides.md)
 
 ## Proof depends on
 
-- [Codes land in `DecidableInTimeAndSpace`](decidable-in-time-and-space.md)
+- [Deciding by a code is finite-state decidability](decidable-in-time-and-space.md)
 - [Every finite-state machine has a code](exists-code-is-relabelling.md)
-- [Is Relabelling](../relabel/is-relabelling.md)
-- [Decides iff](../relabel/decides-iff.md)
-- [Runs In Space iff](../relabel/runs-in-space-iff.md)
-- [Runs In Time iff](../relabel/runs-in-time-iff.md)
-- [Decidable In Time And Space iff](../time-space/decidable-in-time-and-space-iff.md)
+- [Simulation up to a state relabelling](../relabel/is-relabelling.md)
+- [Relabelling preserves deciding a language](../relabel/decides-iff.md)
+- [Relabelling preserves space bounds](../relabel/runs-in-space-iff.md)
+- [Relabelling preserves time bounds](../relabel/runs-in-time-iff.md)
+- [Decidability within time and space bounds, unfolded](../time-space/decidable-in-time-and-space-iff.md)
 
 ## Sources
 

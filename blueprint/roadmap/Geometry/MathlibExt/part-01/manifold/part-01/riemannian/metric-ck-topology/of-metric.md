@@ -11,7 +11,7 @@ The identity equivalence between smooth metrics and the `𝒢^k(M)` synonym.
 
 ## Depends on
 
-- [Riemannian Metric With Ck](riemannian-metric-with-ck.md)
+- [The space $\mathcal{G}^k(M)$ of smooth metrics with the $C^k$ topology](riemannian-metric-with-ck.md)
 
 ## Sources
 

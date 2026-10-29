@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Value
 ---
 
-# Value
+# Values of PCF
 
-Closed values: abstractions and numerals.
+**Values of PCF.** A closed PCF term is a value when it is a $\lambda$-abstraction or the
+numeral $\mathsf{succ}^n\,\mathsf{zero}$ for some natural number $n$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [PCF types](../syntax/ty.md)
 
 ## Sources
 

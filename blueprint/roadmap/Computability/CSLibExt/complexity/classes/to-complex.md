@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.Classes.toComplex
 ---
 
-# To Complex
+# Complex number of a pair of rational encodings
 
-The complex number encoded by a pair of rational encodings (real, imaginary).
+**Complex number of a pair of rational encodings.** A pair $(e_1, e_2)$ of rational
+encodings encodes the complex number $q_1 + q_2 i$, where $q_1$ and $q_2$ are the rational
+numbers encoded by $e_1$ and $e_2$.
 
 ## Depends on
 
-- [Rat Enc](rat-enc.md)
+- [Encoded rational number](rat-enc.md)
 
 ## Proof depends on
 
-- [To Rat](to-rat.md)
+- [Rational number of an encoding](to-rat.md)
 
 ## Sources
 

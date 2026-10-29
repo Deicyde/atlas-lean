@@ -4,8 +4,8 @@ navigation: module
 
 # Sumset Partition Erdos Problem741
 
-- [Upper Density Sumset Splits](upper-density-sumset-splits.md)
-- [Has Bounded Gaps](has-bounded-gaps.md)
-- [Basis Without Bounded Gap Split](basis-without-bounded-gap-split.md)
-- [Upper Density Sumset Splits holds](upper-density-sumset-splits-holds.md)
-- [Basis Without Bounded Gap Split holds](basis-without-bounded-gap-split-holds.md)
+- [Erdős Problem 741, upper-density question](upper-density-sumset-splits.md)
+- [Sets with bounded gaps](has-bounded-gaps.md)
+- [Erdős Problem 741, bounded-gaps question](basis-without-bounded-gap-split.md)
+- [Splitting a set whose sumset has positive upper density](upper-density-sumset-splits-holds.md)
+- [An asymptotic basis of order 2 admitting no bounded-gap splitting](basis-without-bounded-gap-split-holds.md)

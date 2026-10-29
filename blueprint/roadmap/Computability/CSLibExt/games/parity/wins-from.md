@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Games.ParityGame.WinsFrom
 ---
 
-# Wins From
+# Winning strategy from a position
 
-The strategy `σ` of `p` wins from `v`: every play from `v` conforming to `σ` is won by `p`.
+**Winning strategy from a position.** Let $p$ be a player of a parity game. A positional
+strategy $\sigma$ of $p$ wins from a position $v$ when every play starting at $v$ that conforms
+to $\sigma$ (at every position owned by $p$, the play moves to the successor chosen by $\sigma$)
+is won by $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Positional Strategy](positional-strategy.md)
-- [Player](player.md)
+- [Players of a parity game](player.md)
 
 ## Proof depends on
 
-- [Conforms](conforms.md)
-- [Is Play](is-play.md)
-- [Won By](won-by.md)
+- [Plays conforming to a strategy](conforms.md)
+- [Plays of a parity game](is-play.md)
+- [Winner of a play in a parity game](won-by.md)
 
 ## Sources
 

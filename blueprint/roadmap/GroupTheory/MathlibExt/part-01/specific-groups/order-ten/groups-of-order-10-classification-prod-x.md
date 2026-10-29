@@ -6,12 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.groups_of_order_10_classification_prod_xor
 ---
 
-# Exclusive classification in the recorded product form
+# Exclusive classification of groups of order 10, product form
 
-**Exclusive classification in the recorded product form.** Exactly one of
-the `C₅ × C₂` and `D₅` alternatives holds for a group of order ten, as in
-`v1/Atlas/AlgebraNotes/targets.yaml`, lines 297-301. The product is cyclic
-and `D₅` is not, so the ordinary product classification is exclusive.
+**Exclusive classification of groups of order 10, product form.** Let $G$ be a finite group
+of order $10$, let $C_n$ denote the cyclic group of order $n$, and let $D_5$ denote the dihedral
+group of order $10$. Then exactly one of the following holds: $G$ is isomorphic to the direct
+product $C_5 \times C_2$, or $G$ is isomorphic to $D_5$.
+
+The product $C_5 \times C_2$ is cyclic and $D_5$ is not, so the two alternatives cannot both hold.
 
 ## Depends on
 
@@ -19,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Classification in the recorded product form](groups-of-order-10-classification-prod.md)
+- [Classification of groups of order 10, product form](groups-of-order-10-classification-prod.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.SpecificGroups.OrderTen](../../../../../../sources/v2/MathlibExt.md)
+- `v1/Atlas/AlgebraNotes/targets.yaml`, lines 297-301.

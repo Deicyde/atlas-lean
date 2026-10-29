@@ -8,16 +8,17 @@ lean: Cslib.Decidability.productive_not_re
 
 # A productive set is not recursively enumerable
 
-**A productive set is not recursively enumerable**: if it were `Wₑ`, its
-productive function would produce a member outside `Wₑ`.
+**A productive set is not recursively enumerable.** No productive set of natural numbers is
+recursively enumerable: if it were the $e$-th recursively enumerable set $W_e$, its productive
+function would produce a member of it outside $W_e$.
 
 ## Depends on
 
-- [Productive](productive.md)
+- [Productive set](productive.md)
 
 ## Proof depends on
 
-- [Enum RE](enum-re.md)
+- [Standard enumeration of the recursively enumerable sets](enum-re.md)
 
 ## Sources
 

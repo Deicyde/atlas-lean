@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StanchescuDifferenceSetsAIMCombinatoricsProblem231Wanted.stanchescuDifferenceBound
 ---
 
-# Stanchescu Difference Bound
+# Statement of Stanchescu's difference set bound
 
-Stanchescu's bound: for every `d ≥ 2`, every sufficiently large full-dimensional finite
-`A ⊆ ℤ^d` has `|A - A| ≥ (2d - 2 + 1/(d - 1))|A| - (2d² - 4d + 3)`.
+**Statement of Stanchescu's difference set bound.** The proposition that for every integer
+$d \ge 2$ there is a natural number $N$ such that every full-dimensional finite set
+$A \subseteq \mathbb{Z}^d$ (one not contained in an affine hyperplane) with $|A| \ge N$ satisfies
+$|A - A| \ge \left(2d - 2 + \frac{1}{d - 1}\right)|A| - (2d^2 - 4d + 3)$, where
+$A - A = \{a - b : a, b \in A\}$ is the difference set of $A$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Full Dimensional](is-full-dimensional.md)
+- [Full-dimensional sets in $\mathbb{Z}^d$](is-full-dimensional.md)
 
 ## Sources
 

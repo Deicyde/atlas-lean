@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.refl
 ---
 
-# Refl
+# Contextual equivalence in PCF is reflexive
 
-Contextual equivalence is an equivalence relation.
+**Contextual equivalence in PCF is reflexive.** Every term $t$ of type $A$ in context $\Gamma$
+is contextually equivalent to itself.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ctx Equiv](ctx-equiv.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Contextual equivalence in PCF](ctx-equiv.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Ctx](ctx.md)
-- [Plug](plug.md)
-- [Eval](../big-step/eval.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Plugging a term into a PCF context](plug.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Sources
 

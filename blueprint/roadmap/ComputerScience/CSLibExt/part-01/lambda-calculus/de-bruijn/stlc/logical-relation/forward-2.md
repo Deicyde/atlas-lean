@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Reducible.forward
 ---
 
-# Forward
+# Reducibility is closed under forward evaluation
 
-Reducibility is preserved by taking evaluation steps.
+**Reducibility is closed under forward evaluation.** Let $t$ and $t'$ be closed terms of
+the same type. If $t$ is reducible and $t$ evaluates to $t'$ in zero or more call-by-value
+steps, then $t'$ is reducible.
 
 ## Depends on
 
 - [Reducible](reducible.md)
-- [Steps](../semantics/steps.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [App Fun](app-fun.md)
-- [Terminates](terminates.md)
-- [Forward](forward.md)
+- [Multi-step evaluation is a congruence in function position](app-fun.md)
+- [Termination of closed terms](terminates.md)
+- [Termination is closed under forward evaluation](forward.md)
 
 ## Sources
 

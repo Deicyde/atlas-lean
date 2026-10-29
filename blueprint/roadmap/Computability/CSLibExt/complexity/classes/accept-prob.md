@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Classes.acceptProb
 ---
 
-# Accept Prob
+# Acceptance probability of a quantum state
 
-The acceptance probability of a state: the squared norm of its part on basis states
-with qubit `0` equal to `1` (the output qubit), by the Born rule.
+**Acceptance probability of a quantum state.** For a state vector $\psi$ on $N$ qubits, given
+by its amplitudes $\psi(s) \in \mathbb{C}$ at the basis states $s \in \{0, \dots, 2^N - 1\}$, the
+acceptance probability is the sum of $|\psi(s)|^2$ over the basis states $s$ whose qubit $0$ (the
+output qubit, the least significant bit of $s$) equals $1$. By the Born rule, for a unit vector
+$\psi$ this is the probability that measuring the output qubit gives $1$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Bit](q-bit.md)
+- [Binary digit of a natural number](q-bit.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SteinerSystemExistenceErdosProblem722Wanted.steinerSystemsExistForLargeN
 ---
 
-# Steiner Systems Exist For Large N
+# Existence conjecture for Steiner systems
 
-Erdős Problem 722 (existence of designs): for all `r < k` and all sufficiently large `n`
-satisfying the divisibility conditions `C(k - i, r - i) ∣ C(n - i, r - i)` for `0 ≤ i < r`, there
-is a Steiner system `S(r, k, n)`: a family of `k`-element subsets of `{1, …, n}` such that every
-`r`-element subset is contained in exactly one member of the family.
+**Existence conjecture for Steiner systems.** The statement that for all natural numbers
+$r < k$ there is an $N$ such that for every $n \ge N$ with
+$\binom{k-i}{r-i} \mid \binom{n-i}{r-i}$ for all $0 \le i < r$, there is a Steiner system
+$S(r, k, n)$: a family $F$ of $k$-element subsets of $\{0, \dots, n-1\}$ such that every
+$r$-element subset of $\{0, \dots, n-1\}$ is contained in exactly one member of $F$
+(Erdős Problem 722).
 
 ## Depends on
 

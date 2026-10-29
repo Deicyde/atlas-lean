@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Var.comp
 ---
 
-# Comp
+# Composition of renamings of simply typed contexts
 
-Composition of renamings.
+**Composition of renamings of simply typed contexts.** For contexts $\Gamma$, $\Delta$ and
+$\Xi$, a renaming $\rho$ from $\Gamma$ to $\Delta$ and a renaming $\sigma$ from $\Delta$ to $\Xi$,
+the composite of $\rho$ followed by $\sigma$ is the renaming from $\Gamma$ to $\Xi$ that sends
+each variable $x$ to $\sigma(\rho(x))$.
 
 ## Depends on
 
-- [Ren](ren.md)
-- [Ty](ty.md)
+- [Renamings of simply typed contexts](ren.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Var](var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

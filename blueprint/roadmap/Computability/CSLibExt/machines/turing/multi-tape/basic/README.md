@@ -6,27 +6,27 @@ navigation: module
 
 ## Machines from transition functions
 
-- [Step With](step-with.md)
-- [Step of Tr](step-of-tr.md)
-- [Run From of Tr](run-from-of-tr.md)
+- [Successor under a transition function](step-with.md)
+- [Step of a machine given by a transition function](step-of-tr.md)
+- [Runs of a machine given by a transition function](run-from-of-tr.md)
 
 ## Steps and runs
 
 - [Step determinism](step-deterministic.md)
-- [Run From succ'](run-from-succ.md)
-- [Run From of halted](run-from-of-halted.md)
-- [Halted run From mono](halted-run-from-mono.md)
+- [Peeling off the first step of a run](run-from-succ.md)
+- [Halted configurations are fixed](run-from-of-halted.md)
+- [Halting persists along a run](halted-run-from-mono.md)
 
 ## The halting step
 
-- [Halts At zero iff](halts-at-zero-iff.md)
+- [Halting at step zero](halts-at-zero-iff.md)
 - [Run composition for halting](halts-at-add.md)
-- [Run From](run-from.md)
+- [Halting step after a run prefix](run-from.md)
 
 ## Time bounds and outputs
 
-- [Halted run From of runs In Time](halted-run-from-of-runs-in-time.md)
-- [Runs In Time iff halted](runs-in-time-iff-halted.md)
+- [A time bound forces halting](halted-run-from-of-runs-in-time.md)
+- [Time bounds of deterministic machines](runs-in-time-iff-halted.md)
 - [Output determinism](computes-unique.md)
-- [Computes iff exists halts At](computes-iff-exists-halts-at.md)
-- [Computes iff output of runs In Time](computes-iff-output-of-runs-in-time.md)
+- [Computing an output means halting with it](computes-iff-exists-halts-at.md)
+- [Output at a time bound](computes-iff-output-of-runs-in-time.md)

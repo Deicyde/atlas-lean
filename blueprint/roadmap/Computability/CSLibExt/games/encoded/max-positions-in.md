@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Games.EncodedParityGame.maxPositionsIn
 ---
 
-# Max Positions In
+# Positions of maximal priority
 
-The positions of a live set `U` attaining the maximal priority on `U`.
+**Positions of maximal priority.** For an encoded parity game $G$ and a set $U$ of positions,
+the positions of maximal priority in $U$ are the positions $v \in U$ whose priority equals the
+maximal priority of $G$ on $U$.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 
 ## Proof depends on
 
-- [Max Priority In](max-priority-in.md)
+- [Maximal priority on a set of positions](max-priority-in.md)
 
 ## Sources
 

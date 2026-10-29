@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Classes.sqNorm
 ---
 
-# Sq Norm
+# Squared norm of a state vector
 
-The squared norm of a state vector.
+**Squared norm of a state vector.** For a vector $\psi \in \mathbb{C}^{2^m}$, indexed by
+$\{0, \dots, 2^m - 1\}$, its squared norm is the real number
+$\sum_{s} \overline{\psi_s}\, \psi_s = \sum_{s} |\psi_s|^2$.
 
 ## Depends on
 

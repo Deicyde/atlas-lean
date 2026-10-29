@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.ModelEq.beta
 ---
 
-# Beta
+# Model-independent beta equality
 
-Beta equality holds independently of the interpretation of base types.
+**Model-independent beta equality.** For every term $b$ of type $B$ in the variable
+context $\Gamma$ extended by a newest variable of type $A$, and every term $a$ of type $A$ in
+$\Gamma$, the application $(\lambda.\,b)\,a$ is model-equal to $b[a]$, the result of
+substituting $a$ for the newest variable of $b$.
 
 ## Depends on
 
-- [Model Eq](model-eq.md)
-- [Tm](../syntax/tm.md)
-- [Instantiate](../substitution/instantiate.md)
-- [Ty](../syntax/ty.md)
+- [Model equality of STLC terms](model-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Beta](../equational/beta.md)
+- [Beta is sound for the denotational semantics](../equational/beta.md)
 
 ## Sources
 

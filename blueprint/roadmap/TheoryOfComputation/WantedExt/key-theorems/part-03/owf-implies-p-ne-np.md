@@ -15,7 +15,7 @@ Conference (1995), 134-147 (five worlds).
 
 ## Depends on
 
-- [Is One Way Function](../../../../Computability/CSLibExt/complexity/classes/is-one-way-function.md)
+- [One-way function families](../../../../Computability/CSLibExt/complexity/classes/is-one-way-function.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)
 - [The complexity class P](../../../../Computability/MathlibExt/complexity/p.md)

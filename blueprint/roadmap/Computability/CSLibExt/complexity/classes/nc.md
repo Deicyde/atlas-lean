@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.NC
 ---
 
-# NC
+# The class NC
 
-`NC`: the union of the `NC^k` levels.
+**The class NC.** $\mathsf{NC}$ is the complexity class of decision problems that belong to
+$\mathsf{NC}^k$ for some natural number $k$, that is, $\mathsf{NC} = \bigcup_{k} \mathsf{NC}^k$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ lean: Cslib.Complexity.Classes.NC
 
 ## Proof depends on
 
-- [NCK](nck.md)
+- [The class NC^k](nck.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

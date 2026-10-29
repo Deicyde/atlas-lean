@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.URM.pc_lt_of_step
 ---
 
-# Pc lt of step
+# A state that can step is running
 
-The program counter of a state that can step is in range.
+**A state that can step is running.** If a state $s$ of a URM program $p$ makes a step to some
+state, then the program counter of $s$ is less than the number of instructions of $p$.
 
 ## Depends on
 

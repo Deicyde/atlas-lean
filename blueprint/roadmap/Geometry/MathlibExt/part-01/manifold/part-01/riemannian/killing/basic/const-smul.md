@@ -6,13 +6,14 @@ proof: formalized
 lean: Manifold.IsKillingVectorField.const_smul
 ---
 
-# Const smul
+# Real multiples of Killing fields
 
-A constant real multiple of a Killing field is Killing.
+**Real multiples of Killing fields.** On a smooth Riemannian manifold, if $X$ is a Killing
+vector field and $c$ is a real number, then $c X$ is a Killing vector field.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
+- [Killing vector field](is-killing-vector-field.md)
 
 ## Sources
 

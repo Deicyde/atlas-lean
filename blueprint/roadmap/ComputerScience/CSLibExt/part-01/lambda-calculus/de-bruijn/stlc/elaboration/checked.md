@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Checked
 ---
 
-# Checked
+# Checked terms
 
-A successful elaboration result packages the inferred type with an
-intrinsic term at that type.
+**Checked terms.** For a context $\Gamma$ of simple types, a checked term in $\Gamma$ is a pair
+$(A, t)$ of a simple type $A$ and an intrinsically typed term $t$ of type $A$ in $\Gamma$.
+
+A successful elaboration returns such a pair: the inferred type together with an intrinsic
+term at that type.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Tm](../syntax/tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 
 ## Sources
 

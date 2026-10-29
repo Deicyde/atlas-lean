@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotationToLongitude_mul
 ---
 
-# Diag Rotation To Longitude mul
+# Longitude elements multiply by adding angles
 
-Diagonal rotations compose by adding angles.
+**Longitude elements multiply by adding angles.** For real numbers $a$ and $b$, in the
+longitude subgroup the product of the diagonal rotations through $a$ and through $b$ is the
+diagonal rotation through $a + b$.
 
 ## Depends on
 
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
 - [Longitude Subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
 
 ## Sources
 

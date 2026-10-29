@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Terminates
 ---
 
-# Terminates
+# Termination of closed terms
 
-A closed term terminates when call-by-value evaluation reaches a value.
+**Termination of closed terms.** A closed term $t$ terminates when it evaluates, in
+finitely many call-by-value steps, to a value.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Steps](../semantics/steps.md)
-- [Value](../semantics/value.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Sources
 

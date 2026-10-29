@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.toAction_encodeAction
 ---
 
-# To Action encode Action
+# Decoding a coded action
 
-A coded action stands for the action it codes, with its successor state numbered.
+**Decoding a coded action.** Let $Q$ be a type, $e : Q \to \mathbb{N}$ a map and $a$ an action
+of a binary machine with $k$ work tapes and states in $Q$. The action that the coded action of
+$a$, with its successor state numbered by $e$, stands for is $a$ with its successor state
+relabelled by $e$.
 
 ## Depends on
 
-- [To Action](../code/to-action.md)
-- [Encode Action](encode-action.md)
-- [Relabel Action](../relabel/relabel-action.md)
+- [Decoding a coded action](../code/to-action.md)
+- [Coding an action](encode-action.md)
+- [Relabelling the successor state of an action](../relabel/relabel-action.md)
 
 ## Proof depends on
 
-- [Code Action](../code/code-action.md)
+- [Coded actions](../code/code-action.md)
 - [Decode Move](../code/decode-move.md)
-- [Encode Move](encode-move.md)
+- [Coding head moves](encode-move.md)
 
 ## Sources
 

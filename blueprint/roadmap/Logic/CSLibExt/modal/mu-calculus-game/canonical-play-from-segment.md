@@ -14,9 +14,9 @@ the canonical strategy follows the bespoke strategy.
 
 ## Depends on
 
-- [Conforms](../../../../Computability/CSLibExt/games/parity/conforms.md)
-- [Is Play](../../../../Computability/CSLibExt/games/parity/is-play.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Plays conforming to a strategy](../../../../Computability/CSLibExt/games/parity/conforms.md)
+- [Plays of a parity game](../../../../Computability/CSLibExt/games/parity/is-play.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
@@ -31,7 +31,7 @@ the canonical strategy follows the bespoke strategy.
 
 ## Proof depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
 - [Frag Move](frag-move.md)
 - [Pos move iff](pos-move-iff.md)

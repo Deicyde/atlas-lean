@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.lookupVar_toNat
 ---
 
-# Lookup Var to Nat
+# Lookup recovers an intrinsic variable from its index
 
-Looking up the erased index of an intrinsic variable recovers it exactly.
+**Lookup recovers an intrinsic variable from its index.** For every context $\Gamma$, type
+$A$ and intrinsic variable $x$ of type $A$ in $\Gamma$, looking up the de Bruijn index of $x$ in
+$\Gamma$ succeeds and returns the type $A$ together with $x$.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
-- [Lookup Var](lookup-var.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
+- [Variable lookup](lookup-var.md)
 
 ## Sources
 

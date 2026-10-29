@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.step_toTM
 ---
 
-# Step to TM
+# Step of the machine of a code
 
-The step of the machine of a code.
+**Step of the machine of a code.** For a code $c$, a binary input $x$ and a configuration $C$
+of the machine of $c$ on $x$, the step of the machine of $c$ sends $C$ to its successor under
+the transition function of $c$: $C$ itself if it has halted, and otherwise the result of
+applying to $C$ the action that the transition function of $c$ selects for the state of $C$ and
+the symbols under its heads.
 
 ## Depends on
 
-- [Code](code.md)
-- [To TM](to-tm.md)
-- [Tr](tr.md)
-- [Step With](../basic/step-with.md)
+- [Codes for multi-tape machines](code.md)
+- [The machine of a code](to-tm.md)
+- [Transition function of a code](tr.md)
+- [Successor under a transition function](../basic/step-with.md)
 
 ## Proof depends on
 
-- [Step of Tr](../basic/step-of-tr.md)
+- [Step of a machine given by a transition function](../basic/step-of-tr.md)
 
 ## Sources
 

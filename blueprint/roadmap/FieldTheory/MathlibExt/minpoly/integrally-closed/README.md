@@ -12,4 +12,4 @@ navigation: module
 
 ## Is Integrally Closed
 
-- [Minpoly eq map iff is Integral](minpoly-eq-map-iff-is-integral.md)
+- [Integrality via equality of minimal polynomials](minpoly-eq-map-iff-is-integral.md)

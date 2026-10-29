@@ -6,10 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.nonempty_mulEquiv_dihedralGroup_of_index_eq_two
 ---
 
-# Index Two
+# Dihedral groups from a cyclic subgroup of index two
 
-A finite group with a cyclic index-two subgroup is dihedral
-when every element outside that subgroup is an involution.
+**Dihedral groups from a cyclic subgroup of index two.** Let $G$ be a finite group and let
+$H$ be a cyclic subgroup of $G$ of index $2$. If $g^2 = 1$ for every element $g$ of $G$ that is
+not in $H$, then $G$ is isomorphic to the dihedral group $D_n$ of order $2n$, where $n = |H|$.
 
 ## Depends on
 

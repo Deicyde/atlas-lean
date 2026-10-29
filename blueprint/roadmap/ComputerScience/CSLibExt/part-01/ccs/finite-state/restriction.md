@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.CCS.Realizes.restriction
 ---
 
-# Restriction
+# Restriction preserves realization
 
-Restriction preserves realization.
+**Restriction preserves realization.** Fix a recursive specification and a list $L$ of
+blocked names. If the processes $P_x$ realize $s$, then the restricted processes
+$P_x \setminus L$ realize the code-level restriction of $s$ by $L$.
 
 ## Depends on
 
-- [Realizes](realizes.md)
-- [Restrict Steps](restrict-steps.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
-- [Specification](../recursion/specification.md)
+- [Realization of a code-level transition system](realizes.md)
+- [Code-level restriction](restrict-steps.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
+- [Recursive CCS specification](../recursion/specification.md)
 
 ## Proof depends on
 
-- [Allowed B](allowed-b.md)
-- [Complementary](../parallel/complementary.md)
+- [Boolean restriction test](allowed-b.md)
+- [Complementary labels](../parallel/complementary.md)
 - [Step](../recursion/step.md)
 - [Relabelling](../static-operators/relabelling.md)
-- [Allowed](../static-operators/allowed.md)
-- [Relabel Action](../static-operators/relabel-action.md)
+- [Actions permitted by a restriction](../static-operators/allowed.md)
+- [Relabelling an action](../static-operators/relabel-action.md)
 
 ## Sources
 

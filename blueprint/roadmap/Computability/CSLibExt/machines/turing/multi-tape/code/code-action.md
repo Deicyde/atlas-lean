@@ -5,11 +5,14 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.CodeAction
 ---
 
-# Code Action
+# Coded actions
 
-A coded action: the input-head move, for every work tape an optional symbol to write
-(`some none` writes a blank) and a head move, an optional output bit, and the next state (`none`
-halts). Moves are coded as in `decodeMove`.
+**Coded actions.** A coded action for a machine with $k$ work tapes consists of a coded
+input-head move; for each of the $k$ work tapes, an optional symbol to write, the symbol being a
+bit or the blank (so a blank can be written), together with a coded head move; an optional
+output bit; and an optional next state in $\mathbb{N}$, where no next state means halting. A
+head move is coded by a natural number: $0$ moves left, $1$ stays, and any other number moves
+right.
 
 ## Depends on
 

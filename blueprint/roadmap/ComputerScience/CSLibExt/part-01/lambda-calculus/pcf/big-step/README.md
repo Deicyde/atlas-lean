@@ -6,13 +6,13 @@ navigation: module
 
 ## Tm
 
-- [Value](value.md)
-- [Eq numeral](eq-numeral.md)
-- [Eval](eval.md)
+- [Values of PCF](value.md)
+- [Closed values of ground type are numerals](eq-numeral.md)
+- [Big-step call-by-name evaluation of PCF](eval.md)
 
 ## Eval
 
-- [Numeral](numeral.md)
-- [Of value](of-value.md)
-- [Value](value-2.md)
-- [Deterministic](deterministic.md)
+- [Numerals evaluate to themselves](numeral.md)
+- [PCF values evaluate to themselves](of-value.md)
+- [PCF evaluation results are values](value-2.md)
+- [Determinism of PCF big-step evaluation](deterministic.md)

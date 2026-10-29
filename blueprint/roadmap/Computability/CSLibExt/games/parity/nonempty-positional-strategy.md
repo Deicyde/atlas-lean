@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Games.ParityGame.nonempty_positionalStrategy
 ---
 
-# Nonempty positional Strategy
+# Positional strategies exist
 
-Every player has a positional strategy, since every position has a move.
+**Positional strategies exist.** In a parity game, every player has a positional strategy,
+since every position has a move.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Positional Strategy](positional-strategy.md)
-- [Player](player.md)
+- [Players of a parity game](player.md)
 
 ## Sources
 

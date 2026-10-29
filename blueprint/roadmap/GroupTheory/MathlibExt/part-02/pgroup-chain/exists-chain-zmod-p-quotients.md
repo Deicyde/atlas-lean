@@ -6,13 +6,14 @@ proof: formalized
 lean: IsPGroup.exists_chain_zmod_p_quotients
 ---
 
-# Exists chain zmod p quotients
+# Composition series of finite p-groups
 
-Every finite `p`-group of order `p ^ n` has a composition series
-`G = H 0 ⊃ H 1 ⊃ ⋯ ⊃ H n = ⊥` whose successive quotients are cyclic of order
-`p`: at step `i`, `H (i + 1)` is normal in `H i` and there is a surjective
-homomorphism `H i →* Multiplicative (ZMod p)` with kernel `H (i + 1)`, so by
-the first isomorphism theorem `H i ⧸ H (i + 1) ≃* Multiplicative (ZMod p)`.
+**Composition series of finite p-groups.** Let $p$ be a prime and let $G$ be a finite
+$p$-group of order $p^n$. Then there are subgroups
+$G = H_0 \supseteq H_1 \supseteq \cdots \supseteq H_n = \{1\}$ such that for each $i < n$,
+$H_{i+1}$ is a normal subgroup of $H_i$ and there is a surjective homomorphism
+$H_i \to \mathbb{Z}/p\mathbb{Z}$ with kernel $H_{i+1}$. By the first isomorphism theorem,
+$H_i / H_{i+1} \cong \mathbb{Z}/p\mathbb{Z}$ for each $i < n$.
 
 ## Depends on
 

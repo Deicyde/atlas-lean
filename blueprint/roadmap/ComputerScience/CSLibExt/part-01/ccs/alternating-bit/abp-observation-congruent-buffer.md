@@ -6,48 +6,54 @@ proof: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.abp_observationCongruent_buffer
 ---
 
-# Abp observation Congruent buffer
+# The alternating-bit protocol is observation congruent to a one-place buffer
 
-The protocol is even observation congruent (rooted weakly bisimilar) to
-the buffer: initially neither side can move silently.
+**The alternating-bit protocol is observation congruent to a one-place buffer.** In the
+labelled transition system of the protocol's recursive CCS specification, the data-free
+alternating-bit protocol over lossy one-place channels is rooted weakly bisimilar (observation
+congruent) to the one-place buffer
+$\mathit{buf} = \mathit{acc}.\overline{\mathit{del}}.\mathit{buf}$.
+
+This is stronger than weak bisimilarity; it holds because initially neither process can move
+silently.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Abp](abp.md)
-- [Buf](buf.md)
-- [Lts](lts.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
-- [Rooted Weakly Bisimilar](../../semantics/lts/observation-congruence/rooted-weakly-bisimilar.md)
+- [Process constants of the data-free alternating-bit protocol](agent.md)
+- [Alternating-bit channel names](name.md)
+- [The data-free alternating-bit protocol](abp.md)
+- [The data-free one-place buffer](buf.md)
+- [Alternating-bit transition system](lts.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
+- [Rooted observation congruence](../../semantics/lts/observation-congruence/rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [Channel](channel.md)
-- [Config](config.md)
-- [Receiver](receiver.md)
-- [Sender](sender.md)
-- [Ack Steps](ack-steps.md)
-- [Buffer](buffer.md)
-- [Buffer Steps](buffer-steps.md)
-- [Certificate](certificate.md)
-- [Config Steps](config-steps.md)
-- [Data Steps](data-steps.md)
-- [Initial](initial.md)
-- [Internal](internal.md)
-- [Receiver Steps](receiver-steps.md)
-- [Sender Steps](sender-steps.md)
-- [Spec](spec.md)
-- [System](system.md)
-- [Realizes](../finite-state/realizes.md)
-- [Constant](../finite-state/constant.md)
-- [Parallel](../finite-state/parallel.md)
-- [Restriction](../finite-state/restriction.md)
-- [Cert Check](../finite-state/cert-check.md)
-- [Par Steps](../finite-state/par-steps.md)
-- [Root Check](../finite-state/root-check.md)
-- [Rooted Weakly Bisimilar of cert Check](../finite-state/rooted-weakly-bisimilar-of-cert-check.md)
+- [States of a one-place channel](channel.md)
+- [Alternating-bit configuration](config.md)
+- [Alternating-bit receiver states](receiver.md)
+- [Sender states of the data-free alternating-bit protocol](sender.md)
+- [Transitions of the acknowledgement channel in the data-free alternating-bit protocol](ack-steps.md)
+- [The data-free one-place buffer in a given state](buffer.md)
+- [Transitions of the data-free one-place buffer](buffer-steps.md)
+- [Weak-bisimulation certificate for the data-free alternating-bit protocol](certificate.md)
+- [Alternating-bit configuration transitions](config-steps.md)
+- [Alternating-bit data channel transitions](data-steps.md)
+- [Initial alternating-bit configuration](initial.md)
+- [Internal channels of the alternating-bit protocol](internal.md)
+- [Alternating-bit receiver transitions](receiver-steps.md)
+- [Alternating-bit sender transitions](sender-steps.md)
+- [Recursive specification of the data-free alternating-bit protocol](spec.md)
+- [The alternating-bit protocol in a configuration](system.md)
+- [Realization of a code-level transition system](../finite-state/realizes.md)
+- [Constants listing their transitions realize them](../finite-state/constant.md)
+- [Parallel composition preserves realization](../finite-state/parallel.md)
+- [Restriction preserves realization](../finite-state/restriction.md)
+- [Weak-bisimulation certificate check](../finite-state/cert-check.md)
+- [Code-level parallel composition](../finite-state/par-steps.md)
+- [Direct check of the root condition](../finite-state/root-check.md)
+- [Certificate checks give rooted observation congruence](../finite-state/rooted-weakly-bisimilar-of-cert-check.md)
 
 ## Sources
 

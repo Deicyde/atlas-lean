@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.runsInTime_iff_halted
 ---
 
-# Runs In Time iff halted
+# Time bounds of deterministic machines
 
-For a deterministic machine, running in time `t` on `input` means being halted after `t`
-steps.
+**Time bounds of deterministic machines.** Let $M$ be a deterministic multi-tape Turing
+machine, $w$ an input and $t$ a natural number. Then $M$ runs in time $t$ on $w$, that is, every
+computation path of $M$ on $w$ with at least $t$ steps ends in a halted configuration, if and only
+if $M$ started in its initial configuration on $w$ is halted after $t$ steps.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Halted run From of runs In Time](halted-run-from-of-runs-in-time.md)
+- [A time bound forces halting](halted-run-from-of-runs-in-time.md)
 
 ## Sources
 

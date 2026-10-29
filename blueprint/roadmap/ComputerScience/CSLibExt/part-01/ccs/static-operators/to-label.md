@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.CCS.VisibleLabel.toLabel
 ---
 
-# To Label
+# Visible labels as CCS labels
 
-Include a visible label into the full CCS label type.
+**Visible labels as CCS labels.** The inclusion of visible labels into CCS labels sends the
+input on a channel $a$ to the input on $a$, and the output on $a$ to the output on $a$.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 - [Visible Label](visible-label.md)
 
 ## Sources

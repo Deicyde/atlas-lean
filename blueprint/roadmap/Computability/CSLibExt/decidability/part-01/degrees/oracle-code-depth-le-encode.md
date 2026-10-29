@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Decidability.oracleCodeDepth_le_encode
 ---
 
-# Depth is bounded by the code
+# Depth is bounded by the code number
 
-**Depth is bounded by the code.**
+**Depth is bounded by the code number.** For every oracle code $c$, the depth of $c$ is at most
+the code number of $c$ under the Gödel numbering of oracle codes.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Encode Oracle Code](encode-oracle-code.md)
+- [Oracle codes](oracle-code.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
 - [Depth of an oracle code](oracle-code-depth.md)
 
 ## Proof depends on

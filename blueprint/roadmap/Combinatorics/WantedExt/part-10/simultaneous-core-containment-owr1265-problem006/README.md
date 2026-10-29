@@ -4,6 +4,6 @@ navigation: module
 
 # Simultaneous Core Containment OWR1265 Problem006
 
-- [Is Core](is-core.md)
-- [Simultaneous Core Containment](simultaneous-core-containment.md)
-- [Simultaneous Core Containment holds](simultaneous-core-containment-holds.md)
+- [$s$-cores of Young diagrams](is-core.md)
+- [Containment of simultaneous cores (Olsson–Stanton question)](simultaneous-core-containment.md)
+- [Fayers–Vandehey containment theorem for simultaneous cores](simultaneous-core-containment-holds.md)

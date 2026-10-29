@@ -5,9 +5,11 @@ statement: formalized
 lean: DehnInvariant.Edge
 ---
 
-# Edge
+# Edge of a polyhedron
 
-An edge of a polyhedron, with its length and its dihedral angle in radians.
+**Edge of a polyhedron.** An edge, as recorded for the Dehn invariant, is a pair of real
+numbers: its length and its dihedral angle in radians. No positivity or range condition is
+imposed on either.
 
 ## Depends on
 

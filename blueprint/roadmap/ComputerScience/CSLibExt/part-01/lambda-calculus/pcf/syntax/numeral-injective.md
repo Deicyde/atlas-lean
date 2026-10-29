@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.numeral_injective
 ---
 
-# Numeral injective
+# Injectivity of PCF numerals
 
-Distinct numbers give distinct numerals.
+**Injectivity of PCF numerals.** In every context, the map sending a natural number $n$ to
+the numeral $\mathsf{succ}^n(\mathsf{zero})$ of type $\mathsf{nat}$ is injective: distinct
+natural numbers give distinct numerals.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Numeral](numeral.md)
-- [Ty](ty.md)
-- [Nat](nat.md)
+- [PCF terms](tm.md)
+- [PCF numerals](numeral.md)
+- [PCF types](ty.md)
+- [Natural number type of PCF](nat.md)
 
 ## Proof depends on
 
-- [Var](var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [PCF variables](var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

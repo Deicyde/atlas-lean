@@ -21,8 +21,8 @@ recovers its classical form `¬EG ¬φ`.
 ## Proof depends on
 
 - [Forall Finally iff omega and finite](forall-finally-iff-omega-and-finite.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

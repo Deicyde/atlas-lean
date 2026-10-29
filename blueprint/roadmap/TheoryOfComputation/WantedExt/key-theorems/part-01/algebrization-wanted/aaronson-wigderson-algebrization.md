@@ -14,8 +14,8 @@ version in ACM Transactions on Computation Theory 1 (2009)).
 
 ## Depends on
 
-- [NPWith Oracle](../../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
-- [PWith Oracle](../../../../../Computability/CSLibExt/complexity/classes/pwith-oracle.md)
+- [NP relative to an oracle](../../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
+- [Polynomial time with an oracle](../../../../../Computability/CSLibExt/complexity/classes/pwith-oracle.md)
 - [Is Algebraic Extension](is-algebraic-extension.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

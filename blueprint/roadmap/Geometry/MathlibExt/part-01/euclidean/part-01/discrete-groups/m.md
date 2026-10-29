@@ -5,9 +5,10 @@ statement: formalized
 lean: DiscreteGroups.M₂
 ---
 
-# M₂
+# Isometry group of the Euclidean plane
 
-The group of affine isometries of the Euclidean plane.
+**Isometry group of the Euclidean plane.** $M_2$ is the group, under composition, of affine
+isometries of the Euclidean plane onto itself.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [E2](e2.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
 
 ## Sources
 

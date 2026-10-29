@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Games.EncodedParityGame.priorityRank_le_of_le
 ---
 
-# Priority Rank le of le
+# Monotonicity of priority ranks
 
-Ranks are monotone in the priority. Source: M. Jurdziński, "Small
-progress measures for solving parity games", *Proceedings of STACS 2000*,
-LNCS 1770, 290-301.
+**Monotonicity of priority ranks.** Let $G$ be an encoded parity game, and for a natural
+number $p$ let the rank of $p$ be the number of distinct priorities $q < p$ that occur in $G$. If
+$v$ and $w$ are positions of $G$ and the priority of $w$ is at most the priority of $v$, then the
+rank of the priority of $w$ is at most the rank of the priority of $v$.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 - [Priority Rank](priority-rank.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Games.Encoded](../../../../../sources/v2/CSLibExt.md)
+- M. Jurdziński, "Small progress measures for solving parity games", *Proceedings of STACS 2000*, LNCS 1770, 290-301.

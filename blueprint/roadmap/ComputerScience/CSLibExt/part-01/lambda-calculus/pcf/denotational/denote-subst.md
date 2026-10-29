@@ -6,31 +6,36 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.denote_subst
 ---
 
-# Denote subst
+# PCF denotation of a substituted term
 
-Denotation commutes with substitution.
+**PCF denotation of a substituted term.** Let $\sigma$ be a type-preserving substitution
+assigning to each variable of a context $\Gamma$ a PCF term in a context $\Delta$, let $t$ be a
+term of type $A$ in context $\Gamma$, and let $\eta$ be an environment for $\Delta$. Then the
+denotation at $\eta$ of the term obtained by applying $\sigma$ to $t$ equals the denotation of $t$
+at the environment for $\Gamma$ that gives each variable $x$ of $\Gamma$ the value at $\eta$ of the
+denotation of $\sigma(x)$.
 
 ## Depends on
 
-- [Env](env.md)
-- [Of Fun](of-fun.md)
-- [Sub](../syntax/sub.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote.md)
-- [Subst](../syntax/subst.md)
-- [Ty](../syntax/ty.md)
-- [Dom](dom.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Semantic environments for PCF](env.md)
+- [Environment from a family of values](of-fun.md)
+- [Parallel substitutions for PCF](../syntax/sub.md)
+- [PCF terms](../syntax/tm.md)
+- [Denotation of PCF terms](denote.md)
+- [Substitution in PCF terms](../syntax/subst.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](dom.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Lift](../syntax/lift.md)
-- [Denote weaken](denote-weaken.md)
-- [Nat](../syntax/nat.md)
-- [Order Bot](order-bot.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Variable lookup in a PCF environment](lookup.md)
+- [Lifting a PCF substitution under a binder](../syntax/lift.md)
+- [Weakening preserves the PCF denotation](denote-weaken.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Least elements of PCF domains](order-bot.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 - [Least fixed point of a Scott-continuous map](../../../../../../Order/MathlibExt/omega-complete-partial-order/continuous-hom/lfp.md)
 
 ## Sources

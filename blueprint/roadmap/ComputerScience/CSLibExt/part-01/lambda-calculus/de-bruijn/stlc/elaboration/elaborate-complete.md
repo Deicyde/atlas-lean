@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.HasType.elaborate_complete
 ---
 
-# Elaborate complete
+# Completeness of elaboration
 
-Every declarative typing derivation is accepted by the elaborator.
+**Completeness of elaboration.** Assume equality of base types is decidable. If a raw term $r$
+has type $A$ in context $\Gamma$ under the declarative typing judgment, then elaborating $r$ in
+$\Gamma$ succeeds and returns the type $A$ together with some intrinsically typed term of type
+$A$ in $\Gamma$.
 
 ## Depends on
 
-- [Checked](checked.md)
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [Lookup Var](lookup-var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Variable lookup](lookup-var.md)
 
 ## Sources
 

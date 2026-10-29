@@ -5,11 +5,12 @@ statement: formalized
 lean: Manifold.AdmitsPositiveScalarCurvatureMetric
 ---
 
-# Positive Scalar Curvature
+# Manifolds admitting a metric of positive scalar curvature
 
-The smooth `n`-manifold `M` (modeled on `𝓡 n`) admits a metric of positive scalar curvature:
-some `C^∞` Riemannian metric `g` on its tangent bundle has `scalarCurvature (𝓡 n) x > 0` at every
-point `x`, the scalar curvature being computed for `g`.
+**Manifolds admitting a metric of positive scalar curvature.** A smooth manifold $M$ without
+boundary modeled on $\mathbb{R}^n$ admits a metric of positive scalar curvature when some
+$C^\infty$ Riemannian metric $g$ on its tangent bundle has scalar curvature, computed for $g$,
+strictly positive at every point of $M$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Scalar Curvature](curvature/scalar-curvature.md)
+- [Scalar curvature](curvature/scalar-curvature.md)
 
 ## Sources
 

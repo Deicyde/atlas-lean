@@ -6,10 +6,13 @@ proof: formalized
 lean: RealGalois.finrank_eq_one_or_two
 ---
 
-# Finrank eq one or two
+# Degree of a finite extension of the reals
 
-A finite-dimensional extension of `ℝ` has degree `1` or `2`: it is
-`ℝ`-algebra isomorphic to `ℝ` or to `ℂ` by `Real.nonempty_algEquiv_or`.
+**Degree of a finite extension of the reals.** If $E$ is a field that is a finite-dimensional
+algebra over $\mathbb{R}$, then the dimension of $E$ as a real vector space is $1$ or $2$.
+
+This follows because such a field $E$ is isomorphic as an $\mathbb{R}$-algebra to $\mathbb{R}$ or
+to $\mathbb{C}$.
 
 ## Depends on
 

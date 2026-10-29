@@ -12,7 +12,7 @@ lean: Cslib.URM.Recognizable.rePred
 
 ## Depends on
 
-- [Recognizable](recognizable.md)
+- [URM-recognizable predicates](recognizable.md)
 
 ## Proof depends on
 

@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.infer_eq_some_iff
 ---
 
-# Infer eq some iff
+# Type inference is sound and complete
 
-Type inference succeeds exactly at declaratively typable terms.
+**Type inference is sound and complete.** Assume equality of base types is decidable. For
+every context $\Gamma$, raw term $t$ and type $A$, type inference for $t$ in $\Gamma$ returns
+$A$ if and only if the declarative typing judgment $\Gamma \vdash t : A$ holds.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Ty](../syntax/ty.md)
-- [Infer](infer.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Simple types](../syntax/ty.md)
+- [Type inference for raw terms](infer.md)
 
 ## Proof depends on
 
-- [Checked](checked.md)
-- [Elaborate complete](elaborate-complete.md)
-- [Elaborate sound](elaborate-sound.md)
-- [Tm](../syntax/tm.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Completeness of elaboration](elaborate-complete.md)
+- [Soundness of elaboration](elaborate-sound.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Sources
 

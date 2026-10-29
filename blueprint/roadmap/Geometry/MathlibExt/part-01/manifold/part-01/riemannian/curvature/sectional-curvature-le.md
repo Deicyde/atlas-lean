@@ -5,10 +5,12 @@ statement: formalized
 lean: Manifold.SectionalCurvatureLE
 ---
 
-# Sectional Curvature LE
+# Sectional curvature bounded above
 
-`M` has sectional curvature `≤ k`: `K(u, v) ≤ k` for every point `x` and all linearly
-independent `u v : T_x M`.
+**Sectional curvature bounded above.** A $C^\infty$ Riemannian manifold $M$ has sectional
+curvature at most $k \in \mathbb{R}$ when $K(u, v) \le k$ for every point $x \in M$ and all
+linearly independent tangent vectors $u, v \in T_x M$, where $K(u, v)$ is the sectional curvature
+of the plane spanned by $u$ and $v$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sectional Curvature](sectional-curvature.md)
+- [Sectional curvature](sectional-curvature.md)
 
 ## Sources
 

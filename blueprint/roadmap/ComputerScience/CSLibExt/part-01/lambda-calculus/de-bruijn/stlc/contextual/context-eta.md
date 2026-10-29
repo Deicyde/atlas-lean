@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.ModelEq.context_eta
 ---
 
-# Context eta
+# Eta equality inside an STLC context
 
-An eta equation remains valid inside an arbitrary typed context.
+**Eta equality inside an STLC context.** Let $E$ be a typed one-hole context whose hole
+has type $A \Rightarrow B$ in variable context $\Gamma$ and which produces a term of type $C$
+in context $\Delta$. For every term $f$ of type $A \Rightarrow B$ in $\Gamma$, the term
+$E[\lambda.\,(f^{\uparrow}\,x_0)]$ is model-equal to $E[f]$, where $f^{\uparrow}$ is $f$
+weakened by a newest variable of type $A$ and $x_0$ is that variable.
 
 ## Depends on
 
-- [Model Eq](model-eq.md)
-- [Tm](../syntax/tm.md)
-- [Weaken](../syntax/weaken.md)
-- [Tm Ctx](tm-ctx.md)
-- [Plug](plug.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Model equality of STLC terms](model-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Weakening a simply typed term](../syntax/weaken.md)
+- [Typed one-hole contexts](tm-ctx.md)
+- [Plugging a term into an STLC context](plug.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Proof depends on
 
-- [Context](context.md)
-- [Eta](eta.md)
+- [Model equality is a congruence for STLC contexts](context.md)
+- [Model-independent eta equality](eta.md)
 
 ## Sources
 

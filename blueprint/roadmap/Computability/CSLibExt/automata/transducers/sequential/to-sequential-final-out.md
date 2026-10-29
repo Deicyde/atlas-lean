@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.MealyMachine.toSequential_finalOut
 ---
 
-# To Sequential final Out
+# Final outputs of the sequential transducer of a Mealy machine
 
-The final outputs of the sequential rendering of a Mealy machine are empty.
+**Final outputs of the sequential transducer of a Mealy machine.** For every Mealy machine
+$M$ and every state $q$, the final output of the sequential transducer of $M$ at $q$ is the
+empty word.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
-- [To Sequential](to-sequential.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Mealy machine](mealy-machine.md)
+- [Mealy machine as a sequential transducer](to-sequential.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

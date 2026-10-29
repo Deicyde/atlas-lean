@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.DTIME_subset_DSPACE
 ---
 
-# Time bounds space
+# Time classes are contained in space classes
 
-**Time bounds space**, for classes: `DTIME t ⊆ DSPACE t`.
+**Time classes are contained in space classes.** For every $t : \mathbb{N} \to \mathbb{N}$,
+$\mathrm{DTIME}(t) \subseteq \mathrm{DSPACE}(t)$.
 
 ## Depends on
 
-- [DSPACE](dspace.md)
-- [DTIME](dtime.md)
+- [Deterministic space classes on multi-tape machines](dspace.md)
+- [Deterministic time classes on multi-tape machines](dtime.md)
 
 ## Proof depends on
 
-- [Decides](decides.md)
-- [Space Bounded By](space-bounded-by.md)
-- [Time Bounded By](time-bounded-by.md)
-- [Space Bounded By](space-bounded-by-2.md)
-- [Decidable In Time And Space iff](decidable-in-time-and-space-iff.md)
+- [A multi-tape machine deciding a language](decides.md)
+- [Space-bounded multi-tape machine](space-bounded-by.md)
+- [Time-bounded multi-tape machine](time-bounded-by.md)
+- [Uniform time bounds give uniform space bounds](space-bounded-by-2.md)
+- [Decidability within time and space bounds, unfolded](decidable-in-time-and-space-iff.md)
 
 ## Sources
 

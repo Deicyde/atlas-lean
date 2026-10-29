@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.turingDegreeOf
 ---
 
-# Turing Degree Of
+# Turing degree of a predicate
 
-The **Turing degree** of a predicate: the degree of its characteristic function.
+**Turing degree of a predicate.** The Turing degree of a predicate $P$ on the natural numbers
+is the Turing degree of its characteristic function, that is, the class of the characteristic
+function of $P$ under Turing equivalence of partial functions
+$\mathbb{N} \rightharpoonup \mathbb{N}$.
 
 ## Depends on
 

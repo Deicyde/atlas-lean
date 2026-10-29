@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.PH
 ---
 
-# PH
+# The polynomial hierarchy
 
-`PH`: the union of the `Σ_k^p` levels.
+**The polynomial hierarchy.** The class PH is the union, over all natural numbers $k$, of the
+classes $\Sigma_k^p$ of the polynomial hierarchy.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ lean: Cslib.Complexity.Classes.PH
 
 ## Proof depends on
 
-- [Sigma K](sigma-k.md)
+- [The class $\Sigma_k^p$](sigma-k.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

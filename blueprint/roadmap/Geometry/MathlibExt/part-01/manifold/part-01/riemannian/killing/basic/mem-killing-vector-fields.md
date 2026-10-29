@@ -6,14 +6,16 @@ proof: formalized
 lean: Manifold.mem_killingVectorFields
 ---
 
-# Mem killing Vector Fields
+# Membership in the space of Killing fields
 
-Membership in `killingVectorFields` is being Killing.
+**Membership in the space of Killing fields.** A vector field $X$ on a smooth Riemannian
+manifold $M$ lies in the space of Killing vector fields on $M$ if and only if $X$ is a Killing
+vector field.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
-- [Killing Vector Fields](killing-vector-fields.md)
+- [Killing vector field](is-killing-vector-field.md)
+- [Space of Killing vector fields](killing-vector-fields.md)
 
 ## Sources
 

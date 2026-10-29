@@ -6,34 +6,34 @@ navigation: module
 
 ## Ty
 
-- [Denote](denote.md)
+- [Denotation of simple types](denote.md)
 
 ## Stlc
 
-- [Env](env.md)
+- [Semantic environments](env.md)
 
 ## Env
 
-- [Cons](cons.md)
-- [Rename](rename.md)
+- [Extending a semantic environment in STLC](cons.md)
+- [Renaming an environment](rename.md)
 
 ## Tm
 
-- [Denote](denote-2.md)
-- [Denote rename](denote-rename.md)
-- [Denote weaken](denote-weaken.md)
-- [Denote Sub](denote-sub.md)
-- [Denote subst](denote-subst.md)
-- [Denote instantiate](denote-instantiate.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Renaming lemma for STLC denotation](denote-rename.md)
+- [Weakening preserves STLC denotation](denote-weaken.md)
+- [Denotation of an STLC substitution](denote-sub.md)
+- [Substitution lemma for STLC denotation](denote-subst.md)
+- [Denotation of an instantiated STLC body](denote-instantiate.md)
 
 ## Step
 
-- [Denote eq](denote-eq.md)
+- [One reduction step preserves STLC denotation](denote-eq.md)
 
 ## Steps
 
-- [Denote eq](denote-eq-2.md)
+- [Multi-step reduction preserves STLC denotation](denote-eq-2.md)
 
 ## Eval
 
-- [Denote eq](denote-eq-3.md)
+- [Big-step evaluation preserves STLC denotation](denote-eq-3.md)

@@ -5,14 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.lookupVar
 ---
 
-# Lookup Var
+# Variable lookup
 
-Recover an intrinsically typed variable from a raw de Bruijn index.
+**Variable lookup.** Given a context $\Gamma$, a list of types, and a natural number $n$,
+looking up the de Bruijn index $n$ in $\Gamma$ either fails or returns a type $A$ together with
+an intrinsic variable of type $A$ in $\Gamma$. It is defined by recursion: lookup fails in the
+empty context; index $0$ in the context $A :: \Gamma$, obtained by adding $A$ at the front of
+$\Gamma$, returns $A$ with the zero variable; and index $n + 1$ in $B :: \Gamma$ looks up $n$ in
+$\Gamma$, fails if that fails, and otherwise returns the same type with the successor of the
+variable found.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

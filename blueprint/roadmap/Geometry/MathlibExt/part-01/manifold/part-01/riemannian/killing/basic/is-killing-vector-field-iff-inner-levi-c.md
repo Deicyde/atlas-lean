@@ -6,17 +6,22 @@ proof: formalized
 lean: Manifold.isKillingVectorField_iff_inner_leviCivitaConnection_self
 ---
 
-# Is Killing Vector Field iff inner levi Civita Connection self
+# Killing fields via the diagonal of Killing's equation
 
-Polarization: Killing is `C^∞` plus vanishing of `⟪∇_u X, u⟫` for all `u`.
+**Killing fields via the diagonal of Killing's equation.** Let $M$ be a smooth Riemannian
+manifold with Levi-Civita connection $\nabla$. A vector field $X$ on $M$ is a Killing vector
+field if and only if $X$ is smooth and $\langle \nabla_u X, u \rangle = 0$ for every point
+$x \in M$ and every tangent vector $u \in T_x M$.
+
+The converse direction is a polarization argument.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
+- [Killing vector field](is-killing-vector-field.md)
 
 ## Proof depends on
 
-- [Inner levi Civita Connection self](inner-levi-civita-connection-self.md)
+- [Killing's equation on the diagonal](inner-levi-civita-connection-self.md)
 
 ## Sources
 

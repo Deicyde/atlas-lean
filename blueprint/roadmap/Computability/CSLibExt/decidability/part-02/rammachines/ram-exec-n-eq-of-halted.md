@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.ramExecN_eq_of_halted
 ---
 
-# Bounded execution stays at its halted value
+# RAM execution stays at its halted state
 
-**Bounded execution stays at its halted value.**
+**RAM execution stays at its halted state.** Let $P$ be a program of length $\ell$, $s$ a
+state and $t_1 \le t_2$ natural numbers. If the program counter after $t_1$ steps of $P$ from
+$s$ is at least $\ell$, then the state after $t_2$ steps of $P$ from $s$ equals the state after
+$t_1$ steps.
 
 ## Depends on
 
-- [RAMInstr](raminstr.md)
-- [RAMState](ramstate.md)
-- [Ram Exec N](ram-exec-n.md)
+- [RAM instruction](raminstr.md)
+- [RAM state](ramstate.md)
+- [Bounded execution of a RAM machine](ram-exec-n.md)
 
 ## Proof depends on
 
-- [Bounded execution is stable once halted](ram-exec-n-stable.md)
+- [RAM execution is stable once halted](ram-exec-n-stable.md)
 
 ## Sources
 

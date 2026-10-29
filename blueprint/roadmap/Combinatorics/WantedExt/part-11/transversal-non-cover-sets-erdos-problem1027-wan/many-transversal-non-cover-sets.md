@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.manyTransversalNonCoverSets
 ---
 
-# Many Transversal Non Cover Sets
+# Erdős Problem 1027 (sets meeting but not containing members of a family)
 
-Erdős Problem 1027: for every `c > 0` there is `δ > 0` such that, for all large `n`, every
-family `F` of at most `c 2ⁿ` sets of size `n` with union `X` has at least `δ 2^{|X|}` sets `B ⊆ X`
-meeting every member of `F` and containing none of them.
+**Erdős Problem 1027 (sets meeting but not containing members of a family).** For every real
+$c > 0$ there is a real $\delta > 0$ such that, for all sufficiently large $n$, every finite family
+$F$ of finite sets of natural numbers, each of size $n$, with $|F| \le c \cdot 2^n$ and with union
+$X$, has at least $\delta \cdot 2^{|X|}$ subsets $B \subseteq X$ that meet every member of $F$ and
+contain none of them.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Transversal Non Cover Sets](transversal-non-cover-sets.md)
+- [Sets meeting but not containing the members of a family](transversal-non-cover-sets.md)
 
 ## Sources
 

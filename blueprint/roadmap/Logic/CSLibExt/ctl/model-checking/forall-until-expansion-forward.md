@@ -24,8 +24,8 @@ proved by prepending the step to maximal paths from the successor;
 
 - [Forall Until deadlock](../basic/forall-until-deadlock.md)
 - [Exists maximal Path](exists-maximal-path.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

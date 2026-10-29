@@ -18,8 +18,8 @@ holds now and `E[φ U ψ]` holds at some successor.
 
 ## Proof depends on
 
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Shift Seq](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Shifted sequence](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
 
 ## Sources
 

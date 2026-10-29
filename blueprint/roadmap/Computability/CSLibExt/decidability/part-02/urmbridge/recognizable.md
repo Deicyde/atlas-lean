@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.URM.Recognizable
 ---
 
-# Recognizable
+# URM-recognizable predicates
 
-A predicate is **URM-recognizable** when a URM program halts exactly on its members.
+**URM-recognizable predicates.** A predicate $P$ on the natural numbers is URM-recognizable
+when there is a URM program that, started with input $n$ in register $0$ and every other register
+$0$, halts if and only if $P(n)$ holds.
 
 ## Depends on
 

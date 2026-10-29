@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.CCS.Recursive.Specification.Guarded
 ---
 
-# Guarded
+# Guarded recursive specification
 
-A recursive specification is guarded when each defining equation is.
+**Guarded recursive specification.** A recursive specification $\Delta$, which assigns
+to each process constant $A$ a body $\Delta(A)$, is guarded when for every constant $A$ the
+body $\Delta(A)$ is a guarded process.
 
 ## Depends on
 
-- [Specification](specification.md)
+- [Recursive CCS specification](specification.md)
 
 ## Proof depends on
 
-- [Guarded](guarded.md)
+- [Guarded process](guarded.md)
 
 ## Sources
 

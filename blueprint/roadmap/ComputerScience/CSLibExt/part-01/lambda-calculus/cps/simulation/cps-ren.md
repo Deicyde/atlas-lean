@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsRen
 ---
 
-# Cps Ren
+# Translated renaming
 
-A renaming of source contexts, transported to the translated contexts.
+**Translated renaming.** Fix an answer type $R$ and write $\llbracket \Gamma \rrbracket$ for the
+context obtained by applying the call-by-value CPS type translation to every entry of $\Gamma$. A
+renaming $\rho$ from $\Gamma$ to $\Delta$ induces the renaming from $\llbracket \Gamma \rrbracket$
+to $\llbracket \Delta \rrbracket$ that sends the translation of each variable $x$ of $\Gamma$ (the
+variable at the same position) to the translation of $\rho(x)$.
 
 ## Depends on
 
-- [Cps Ty](../translation/cps-ty.md)
-- [Ren](../../de-bruijn/stlc/syntax/ren.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Call-by-value CPS translation of types](../translation/cps-ty.md)
+- [Renamings of simply typed contexts](../../de-bruijn/stlc/syntax/ren.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Cps Var](../translation/cps-var.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [CPS translation of variables](../translation/cps-var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

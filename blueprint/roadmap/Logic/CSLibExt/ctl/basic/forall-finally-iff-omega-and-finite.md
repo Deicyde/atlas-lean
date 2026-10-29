@@ -16,8 +16,8 @@ on every finite run ending at a deadlocked state.
 - [Formula](formula.md)
 - [Forall Finally](forall-finally.md)
 - [Satisfies](satisfies.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

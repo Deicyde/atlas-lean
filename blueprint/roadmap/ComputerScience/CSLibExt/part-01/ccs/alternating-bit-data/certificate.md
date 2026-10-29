@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBitData.certificate
 ---
 
-# Certificate
+# Weak-bisimulation certificate for the alternating-bit protocol with data
 
-The weak-bisimulation certificate: every reachable configuration with the
-buffer content it simulates, listed so that every pair reaches the visible
-actions of its buffer state through pairs listed earlier.
+**Weak-bisimulation certificate for the alternating-bit protocol with data.** A list of 220
+pairs, each a protocol configuration together with the buffer content it simulates: every
+reachable configuration with the buffer content it simulates, listed so that every pair reaches
+the visible actions of its buffer state through pairs listed earlier.
 
 ## Depends on
 
-- [Config](config.md)
+- [Configurations of the alternating-bit protocol with data](config.md)
 
 ## Proof depends on
 
-- [Receiver](receiver.md)
-- [Sender](sender.md)
+- [Receiver states of the alternating-bit protocol with data](receiver.md)
+- [Sender states of the alternating-bit protocol with data](sender.md)
 
 ## Sources
 

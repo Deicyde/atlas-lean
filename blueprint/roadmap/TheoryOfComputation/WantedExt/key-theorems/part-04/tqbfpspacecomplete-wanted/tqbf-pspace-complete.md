@@ -14,7 +14,7 @@ Computing (STOC 1973), 1-9; C. H. Papadimitriou, Computational Complexity, 1994,
 
 ## Depends on
 
-- [PSPACE](../../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Polynomial space for decision problems](../../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Tqbf Dec](tqbf-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

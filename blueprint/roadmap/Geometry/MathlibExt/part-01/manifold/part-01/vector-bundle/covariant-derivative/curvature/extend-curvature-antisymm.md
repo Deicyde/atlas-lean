@@ -6,14 +6,16 @@ proof: formalized
 lean: CovariantDerivative.extendCurvature_antisymm
 ---
 
-# Extend Curvature antisymm
+# Antisymmetry of the curvature expression
 
-The curvature expression is antisymmetric in its two tangent arguments:
-`R(u, v) σ = - R(v, u) σ`.
+**Antisymmetry of the curvature expression.** For every covariant derivative $\nabla$ on a
+vector bundle $V$ over a manifold $M$, every $x \in M$, all $u, v \in T_x M$ and every
+$\sigma \in V_x$, the curvature expression $R$ of $\nabla$ on extensions satisfies
+$R(u, v)\sigma = -R(v, u)\sigma$.
 
 ## Depends on
 
-- [Extend Curvature](extend-curvature.md)
+- [Curvature expression of a covariant derivative on extensions](extend-curvature.md)
 
 ## Sources
 

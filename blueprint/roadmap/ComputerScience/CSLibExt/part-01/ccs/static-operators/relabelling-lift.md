@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.CCS.StaticProcess.RelabellingLift
 ---
 
-# Relabelling Lift
+# Closure of a relation under one relabelling
 
-Lift a relation through one fixed relabelling context.
+**Closure of a relation under one relabelling.** Given a relabelling $f$ and a relation $R$
+on finite CCS processes with static operators, the lifted relation is the least relation that
+relates $P$ to $Q$ and relates the relabelling of $P$ by $f$ to the relabelling of $Q$ by $f$
+whenever $R$ relates $P$ to $Q$.
 
 ## Depends on
 
 - [Relabelling](relabelling.md)
-- [Static Process](static-process.md)
+- [Static CCS processes](static-process.md)
 
 ## Sources
 

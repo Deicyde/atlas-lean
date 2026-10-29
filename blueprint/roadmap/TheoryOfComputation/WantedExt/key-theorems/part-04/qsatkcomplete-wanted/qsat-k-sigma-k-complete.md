@@ -14,7 +14,7 @@ Approach, 2009, Chapter 5).
 
 ## Depends on
 
-- [Sigma K](../../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
+- [The class $\Sigma_k^p$](../../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Qsat KDec](qsat-kdec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

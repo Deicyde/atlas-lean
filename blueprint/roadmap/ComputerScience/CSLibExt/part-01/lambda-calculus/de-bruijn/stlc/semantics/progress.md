@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Step.progress
 ---
 
-# Progress
+# Progress for closed STLC terms
 
-A closed well-typed term is a value or can take a step.
+**Progress for closed STLC terms.** Every term $t$ of type $A$ in the empty context is
+either a value or reduces in one call-by-value step to some term $t'$.
 
 ## Depends on
 
-- [Step](step.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Value](value.md)
+- [Small-step call-by-value reduction in STLC](step.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Values of STLC](value.md)
 
 ## Proof depends on
 
-- [Closed function value is lam](closed-function-value-is-lam.md)
-- [Instantiate](../substitution/instantiate.md)
-- [Var](../syntax/var.md)
+- [Canonical forms for closed function values](closed-function-value-is-lam.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

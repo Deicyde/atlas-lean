@@ -13,7 +13,7 @@ owns Refuter-owned game positions.
 
 ## Depends on
 
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Frag Pos](frag-pos.md)
 
 ## Proof depends on

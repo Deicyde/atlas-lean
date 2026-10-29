@@ -5,21 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CanonicalTm.toNf
 ---
 
-# To Nf
+# The normal form of a canonical term
 
-Recover the eta-long normal form represented by a certified canonical
-term.
+**The normal form of a canonical term.** For a canonical term $t$ of type $A$ in context
+$\Gamma$, that is, a term that normalization returns unchanged, its normal form is the
+eta-long normal form that normalization by evaluation computes from $t$.
 
 ## Depends on
 
-- [Canonical Tm](canonical-tm.md)
-- [Ty](../syntax/ty.md)
+- [Certified canonical terms](canonical-tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Tm](../syntax/tm.md)
-- [Normalize Nf](../nbe-evaluation/normalize-nf.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Normalization by evaluation](../nbe-evaluation/normalize-nf.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Sources
 

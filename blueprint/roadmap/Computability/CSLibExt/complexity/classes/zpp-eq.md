@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Classes.zpp_eq
 ---
 
-# Zpp eq
+# ZPP is the intersection of RP and coRP
 
-`ZPP = RP ∩ coRP`, by definition.
+**ZPP is the intersection of RP and coRP.** The class $\mathsf{ZPP}$ equals
+$\mathsf{RP} \cap \mathsf{coRP}$; here this holds by definition.
 
 ## Depends on
 
-- [RP](rp.md)
+- [The class RP](rp.md)
 - [ZPP](zpp.md)
-- [Co RP](co-rp.md)
+- [The class coRP](co-rp.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 

@@ -14,7 +14,7 @@ Complexity: A Modern Approach, 2009, Corollary 3.5.
 
 ## Depends on
 
-- [EXP](../../../../Computability/CSLibExt/complexity/classes/exp.md)
+- [The class EXP](../../../../Computability/CSLibExt/complexity/classes/exp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class P](../../../../Computability/MathlibExt/complexity/p.md)

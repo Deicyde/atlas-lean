@@ -12,8 +12,8 @@ polynomial-time hierarchy", SIAM Journal on Computing 20 (1991), 865-877 (FOCS 1
 
 ## Depends on
 
-- [PH](../../../../Computability/CSLibExt/complexity/classes/ph.md)
-- [PWith Sharp P](../../../../Computability/CSLibExt/complexity/classes/pwith-sharp-p.md)
+- [The polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/ph.md)
+- [Polynomial time with a #P oracle](../../../../Computability/CSLibExt/complexity/classes/pwith-sharp-p.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

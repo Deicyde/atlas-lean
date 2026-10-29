@@ -13,7 +13,7 @@ Turing machine time hierarchy", Theoretical Computer Science 26 (1983), 327-333.
 
 ## Depends on
 
-- [NTIME](../../../../Computability/CSLibExt/complexity/classes/ntime.md)
+- [Nondeterministic time classes](../../../../Computability/CSLibExt/complexity/classes/ntime.md)
 
 ## Sources
 

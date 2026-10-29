@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBitData.buf
 ---
 
-# Buf
+# The empty one-place buffer of bits
 
-The empty one-place buffer of bits.
+**The empty one-place buffer of bits.** The process constant of the one-place buffer of bits
+with empty content.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Process](../recursion/process.md)
+- [Process constants of the alternating-bit protocol with data](agent.md)
+- [Channel names of the alternating-bit protocol with data](name.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Proof depends on
 
-- [Buffer](buffer.md)
+- [The one-place buffer of bits with given content](buffer.md)
 
 ## Sources
 

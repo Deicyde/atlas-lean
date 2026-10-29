@@ -6,44 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub.comp_id_apply
 ---
 
-# Comp id apply
+# Right identity law for composition of substitutions
 
-Two successive substitutions fuse into pointwise substitution of images. -/
-theorem subst_subst (σ : Sub Γ Δ) (τ : Sub Δ Ξ) (t : Tm Γ A) :
-    subst τ (subst σ t) = subst (Sub.comp σ τ) t := by
-  induction t generalizing Δ Ξ with
-  | var x => rfl
-  | app f a ihf iha => simp [ihf, iha]
-  | @lam A B Γ body ih =>
-      simp only [subst_lam]
-      rw [ih]
-      congr 1
-      apply subst_congr
-      intro C x
-      cases x with
-      | zero => rfl
-      | succ x => exact subst_lift_weaken τ (σ x)
-
-end Tm
-
-namespace Sub
-
-/-! ## The category of typing contexts and substitutions
+**Right identity law for composition of substitutions.** For every simultaneous substitution
+$\sigma$ from a context $\Gamma$ to a context $\Delta$ and every variable $x$ of type $A$ in
+$\Gamma$, the composite of $\sigma$ followed by the identity substitution on $\Delta$ sends $x$ to
+$\sigma(x)$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Comp](comp.md)
-- [Id](../substitution/id.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Composition of simply typed substitutions](comp.md)
+- [Identity substitution (simply typed lambda calculus)](../substitution/id.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Proof depends on
 
-- [Lift](../substitution/lift.md)
-- [Subst](../substitution/subst.md)
-- [Weaken](../syntax/weaken.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](../substitution/lift.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Weakening a simply typed term](../syntax/weaken.md)
 
 ## Sources
 

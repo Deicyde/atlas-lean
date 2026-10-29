@@ -13,9 +13,9 @@ Twelfth Annual ACM Symposium on Theory of Computing (STOC 1980), 302-309.
 
 ## Depends on
 
-- [PH](../../../../Computability/CSLibExt/complexity/classes/ph.md)
-- [PPoly](../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
-- [Sigma K](../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
+- [The polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/ph.md)
+- [Polynomial time with polynomial advice](../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
+- [The class $\Sigma_k^p$](../../../../Computability/CSLibExt/complexity/classes/sigma-k.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)

@@ -5,15 +5,18 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.EvalN
 ---
 
-# Eval N
+# Call-by-name big-step evaluation
 
-Call-by-name big-step evaluation: evaluate the function to an abstraction
-and evaluate the body instantiated with the unevaluated argument.
+**Call-by-name big-step evaluation.** Call-by-name big-step evaluation $M \Downarrow_n V$
+of the simply typed $\lambda$-calculus relates two terms of the same type in the same context
+$\Gamma$. It is the least relation closed under two rules: every abstraction $\lambda x.\,N$
+evaluates to itself, and if $f \Downarrow_n \lambda x.\,N$ and $N[a/x] \Downarrow_n v$, then
+$f\,a \Downarrow_n v$. The argument $a$ is substituted for $x$ without being evaluated.
 
 ## Depends on
 
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

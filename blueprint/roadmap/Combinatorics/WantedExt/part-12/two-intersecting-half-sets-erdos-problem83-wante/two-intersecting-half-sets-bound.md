@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TwoIntersectingHalfSetsErdosProblem83Wanted.twoIntersectingHalfSetsBound
 ---
 
-# Two Intersecting Half Sets Bound
+# Erdős Problem 83
 
-Erdős Problem 83 (Erdős, Ko and Rado): a family of `2n`-element subsets of a `4n`-element set in
-which any two members share at least two elements has at most
-`(C(4n, 2n) - C(2n, n)²) / 2` members.
+**Erdős Problem 83.** The assertion that, for every natural number $n$, every family $F$ of
+$2n$-element subsets of $\{0, \dots, 4n-1\}$ such that $|A \cap B| \ge 2$ for all $A, B \in F$
+(including $A = B$) satisfies $2|F| + \binom{2n}{n}^2 \le \binom{4n}{2n}$, that is,
+$|F| \le \frac{1}{2}\left(\binom{4n}{2n} - \binom{2n}{n}^2\right)$.
 
 ## Depends on
 

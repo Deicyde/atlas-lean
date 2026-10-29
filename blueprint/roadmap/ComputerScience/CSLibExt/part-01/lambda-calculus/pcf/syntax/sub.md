@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Sub
 ---
 
-# Sub
+# Parallel substitutions for PCF
 
-Type-preserving parallel substitutions.
+**Parallel substitutions for PCF.** A substitution from a context $\Gamma$ to a context
+$\Delta$ (lists of PCF types) assigns to every variable of $\Gamma$, of any type $A$, a PCF term
+of type $A$ in context $\Delta$.
 
 ## Depends on
 
-- [Ty](ty.md)
+- [PCF types](ty.md)
 
 ## Proof depends on
 
-- [Tm](tm.md)
-- [Var](var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [PCF terms](tm.md)
+- [PCF variables](var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

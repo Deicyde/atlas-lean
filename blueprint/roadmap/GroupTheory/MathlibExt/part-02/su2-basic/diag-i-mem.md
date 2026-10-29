@@ -6,10 +6,11 @@ proof: formalized
 lean: SU2.diag_I_mem
 ---
 
-# Diag I mem
+# The matrix $\operatorname{diag}(i, -i)$ is special unitary
 
-The diagonal matrix `diag(I, -I)` lies in `SU₂`. It is used to show that
-a central element of `SU₂` is diagonal.
+**The matrix $\operatorname{diag}(i, -i)$ is special unitary.** The complex diagonal matrix
+$\operatorname{diag}(i, -i)$, where $i$ is the imaginary unit, lies in the special unitary group
+$\mathrm{SU}(2)$ of complex $2 \times 2$ matrices.
 
 ## Depends on
 

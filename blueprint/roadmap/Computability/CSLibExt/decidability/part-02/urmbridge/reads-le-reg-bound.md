@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.URM.reads_le_regBound
 ---
 
-# Reads le reg Bound
+# Registers read by a program lie within the register bound
 
-The registers read by an instruction of `p` are at most the register bound.
+**Registers read by a program lie within the register bound.** Let $p$ be a URM program. If
+$n$ is a register read by some instruction of $p$, then $n$ is at most the register bound of
+$p$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ The registers read by an instruction of `p` are at most the register bound.
 
 ## Proof depends on
 
-- [Max Register le reg Bound](max-register-le-reg-bound.md)
+- [Instructions stay within the register bound](max-register-le-reg-bound.md)
 
 ## Sources
 

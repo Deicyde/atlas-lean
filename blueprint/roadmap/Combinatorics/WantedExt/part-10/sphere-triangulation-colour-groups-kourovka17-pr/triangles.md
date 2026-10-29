@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SphereTriangulationColourGroupsKourovka17Problem35Wanted.triangles
 ---
 
-# Triangles
+# Triangles of a sphere triangulation
 
-The triangles (2-dimensional faces) of a finite triangulation `X` of the sphere `S²` in `ℝ³`
-(the shared `FiniteSimplicialSphere 3`: a finite geometric simplicial complex in `ℝ³` whose
-underlying space is homeomorphic to `S²`).
+**Triangles of a sphere triangulation.** For a finite simplicial 2-sphere $X$ in
+$\mathbb{R}^3$, the triangles of $X$ are its faces with exactly three vertices, that is, its
+2-dimensional faces.
 
 ## Depends on
 

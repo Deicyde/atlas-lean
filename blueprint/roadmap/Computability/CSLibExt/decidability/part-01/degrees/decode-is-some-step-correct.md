@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Decidability.decodeIsSomeStep_correct
 ---
 
-# The step function is correct
+# The definedness step function is correct
 
-**The step function is correct**: applied to the table of definedness
-bits below `m`, it computes the definedness bit of `m`.
+**The definedness step function is correct.** For a natural number $n$, let $b_n$ be $1$ if
+the computable decoder returns an oracle code on $n$, and $0$ otherwise. For every natural number
+$m$, the one-step function of the course-of-values recursion for definedness, applied to the list
+$(b_0, b_1, \dots, b_{m-1})$, returns $b_m$.
 
 ## Depends on
 
 - [Whether a code number decodes](decode-is-some.md)
-- [One step of the course-of-values recursion for `decodeIsSome`](decode-is-some-step.md)
+- [One step of the course-of-values recursion for definedness](decode-is-some-step.md)
 
 ## Proof depends on
 

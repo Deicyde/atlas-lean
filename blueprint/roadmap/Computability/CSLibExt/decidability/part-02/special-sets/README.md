@@ -4,11 +4,11 @@ navigation: module
 
 # Special Sets
 
-- [Enum RE](enum-re.md)
-- [Productive](productive.md)
-- [Creative](creative.md)
-- [Immune](immune.md)
-- [Simple](simple.md)
+- [Standard enumeration of the recursively enumerable sets](enum-re.md)
+- [Productive set](productive.md)
+- [Creative set](creative.md)
+- [Immune set](immune.md)
+- [Simple set](simple.md)
 - [A productive set is not recursively enumerable](productive-not-re.md)
 - [An immune set is not recursively enumerable](immune-not-re.md)
 - [A simple set is not computable](simple-not-computable.md)

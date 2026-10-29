@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.steps
 ---
 
-# Steps
+# Big-step evaluation implies reduction in PCF
 
-Big-step evaluation is reduction to a value.
+**Big-step evaluation implies reduction in PCF.** Let $t$ and $v$ be closed PCF terms of
+type $A$. If $t$ evaluates to $v$ in the big-step call-by-name semantics, then $t$ reduces to
+$v$ in finitely many (possibly zero) call-by-name steps.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Eval](../big-step/eval.md)
-- [Steps](steps.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Multi-step call-by-name reduction of PCF](steps.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Step](step.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Call-by-name reduction step of PCF](step.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Classes.OptProblem
 ---
 
-# Opt Problem
+# Optimization problems
 
-A maximization optimization problem: a value function, a feasibility
-predicate, and a polynomial bound on feasible solution lengths. This is the
-lightweight CSLibExt bundle; the computational content (poly-time
-feasibility and poly-time objective encoding) is the separate predicate
-`IsNPO`, required by `APX`/`PTAS`/`FPTAS`. Values are nonnegative, `0` on
-infeasible solutions, and every instance has a feasible solution.
+**Optimization problems.** An optimization problem consists of a function $v$ assigning a
+rational value $v(x, s)$ to every instance $x$ and every candidate solution $s$, both bitstrings;
+a feasibility predicate saying whether $s$ is a feasible solution for $x$; and a polynomial $p$
+with natural-number coefficients such that every feasible solution $s$ for $x$ has length at
+most $p(|x|)$. It is required that $v(x, s) \ge 0$ for all $x$ and $s$, that $v(x, s) = 0$
+whenever $s$ is not feasible for $x$, and that every instance has a feasible solution.
+
+The problem is read as a maximization problem. The structure carries no computational content:
+polynomial-time feasibility and a polynomial-time encoding of the objective form a separate
+predicate (NPO), which the approximation classes APX, PTAS and FPTAS require.
 
 ## Depends on
 

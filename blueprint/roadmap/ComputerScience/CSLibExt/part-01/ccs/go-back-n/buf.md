@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.buf
 ---
 
-# Buf
+# The empty two-place buffer
 
-The empty two-place buffer.
+**The empty two-place buffer.** The two-place buffer process of the go-back-N model with
+occupancy $0$.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Process](../recursion/process.md)
+- [Process constants of the go-back-N model](agent.md)
+- [Channel names of go-back-N](name.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Proof depends on
 
-- [Buffer](buffer.md)
+- [The two-place buffer process](buffer.md)
 
 ## Sources
 

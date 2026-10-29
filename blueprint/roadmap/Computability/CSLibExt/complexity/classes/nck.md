@@ -5,12 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Classes.NCK
 ---
 
-# NCK
+# The class NC^k
 
-`NC^k`: log-space uniform circuits of polynomial size, bounded fan-in at
-most `2`, and depth `O(log^k n)` (the constant factor `c` absorbs the base
-case, so `NC^0` is constant depth). No `mod` gates. Bounded fan-in is
-essential: with unbounded fan-in this would be `AC^k`, not `NC^k`.
+**The class NC^k.** For a natural number $k$, a decision problem $L$ is in $\mathsf{NC}^k$
+when there are a constant $c$, a polynomial $p$ with natural number coefficients and a
+log-space uniform family of flat Boolean circuits $(C_n)_{n \in \mathbb{N}}$, where $C_n$ has
+$n$ inputs, such that for every $n$ the circuit $C_n$ is well formed, has no $\mathrm{mod}$
+gates, has at most two inputs at every and gate and every or gate, has at most $p(n)$ gates,
+has depth at most $c \cdot (\lfloor \log_2 (n + 1) \rfloor + 1)^k$, and, for every bitstring
+$x$ of length $n$, $L$ accepts $x$ exactly when $C_n$ has a last gate and that gate evaluates
+to true on input $x$.
+
+So $\mathsf{NC}^k$ consists of the problems decided by log-space uniform circuit families of
+polynomial size, fan-in at most $2$ and depth $O(\log^k n)$, and $\mathsf{NC}^0$ is constant
+depth. Bounded fan-in is essential: with unbounded fan-in this would be $\mathsf{AC}^k$.
 
 ## Depends on
 
@@ -18,13 +26,13 @@ essential: with unbounded fan-in this would be `AC^k`, not `NC^k`.
 
 ## Proof depends on
 
-- [ACGate](acgate.md)
-- [Is Fan In Le Two](is-fan-in-le-two.md)
-- [Is Mod Free](is-mod-free.md)
-- [Uniform Circuit Family](uniform-circuit-family.md)
-- [Well Formed Circuit](well-formed-circuit.md)
-- [Circuit Depth](circuit-depth.md)
-- [Circuit Eval](circuit-eval.md)
+- [Gates of a flat Boolean circuit](acgate.md)
+- [Circuits of fan-in at most two](is-fan-in-le-two.md)
+- [Circuits without mod gates](is-mod-free.md)
+- [Log-space uniform circuit families](uniform-circuit-family.md)
+- [Well-formed flat circuits](well-formed-circuit.md)
+- [Depth of a flat Boolean circuit](circuit-depth.md)
+- [Evaluation of a flat Boolean circuit](circuit-eval.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

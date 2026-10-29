@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.Tape.write
 ---
 
-# Write
+# Writing on a zipper tape
 
-Optionally write a symbol under the head.
+**Writing on a zipper tape.** Writing an optional symbol on a work tape leaves the tape
+unchanged when no symbol is given; given a symbol $s$ (a bit or blank), it replaces the cell
+under the head by $s$ and keeps all other cells.
 
 ## Depends on
 
-- [Tape](tape.md)
+- [Work tapes as zippers](tape.md)
 
 ## Sources
 

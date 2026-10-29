@@ -6,8 +6,8 @@ navigation: module
 
 ## Steps
 
-- [Eq of value source](eq-of-value-source.md)
-- [Value unique](value-unique.md)
+- [Values reduce only to themselves](eq-of-value-source.md)
+- [Uniqueness of the value reached by evaluation](value-unique.md)
 
 ## Stlc
 
@@ -15,26 +15,26 @@ navigation: module
 
 ## Normalizes
 
-- [Iff terminates](iff-terminates.md)
+- [Normalization and termination coincide](iff-terminates.md)
 
 ## Stlc
 
-- [Normalizes closed](normalizes-closed.md)
-- [Normal Form unique](normal-form-unique.md)
-- [Closed function evaluates to lam](closed-function-evaluates-to-lam.md)
-- [No closed base](no-closed-base.md)
-- [Same Result](same-result.md)
+- [Normalization of closed terms](normalizes-closed.md)
+- [Uniqueness of normal forms](normal-form-unique.md)
+- [Closed functions evaluate to lambda abstractions](closed-function-evaluates-to-lam.md)
+- [No closed terms of base type](no-closed-base.md)
+- [Closed terms with the same result](same-result.md)
 
 ## Same Result
 
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
-- [Of steps](of-steps.md)
-- [Anti left](anti-left.md)
-- [Anti right](anti-right.md)
-- [App](app.md)
+- [Reflexivity of having the same result](refl.md)
+- [Symmetry of having the same result](symm.md)
+- [Transitivity of having the same result](trans.md)
+- [Evaluation preserves the result of a closed term](of-steps.md)
+- [Left expansion preserves having the same result](anti-left.md)
+- [Right expansion preserves having the same result](anti-right.md)
+- [Application preserves having the same result](app.md)
 
 ## Stlc
 
-- [Same Result equivalence](same-result-equivalence.md)
+- [Having the same result is an equivalence relation](same-result-equivalence.md)

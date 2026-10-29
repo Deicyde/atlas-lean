@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Var.id
 ---
 
-# Id
+# Identity renaming of a simply typed context
 
-Identity renaming.
+**Identity renaming of a simply typed context.** For every context $\Gamma$, the identity
+renaming from $\Gamma$ to $\Gamma$ sends each variable to itself.
 
 ## Depends on
 
-- [Ren](ren.md)
-- [Ty](ty.md)
+- [Renamings of simply typed contexts](ren.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Var](var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

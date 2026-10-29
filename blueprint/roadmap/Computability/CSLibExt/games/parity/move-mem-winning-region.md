@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Games.ParityGame.move_mem_winningRegion
 ---
 
-# Move mem winning Region
+# Opponent moves stay in the winning region
 
-Winning regions are closed under the moves of the opponent: from a position of `p`'s winning
-region owned by the opponent, every move stays in the region.
+**Opponent moves stay in the winning region.** In a parity game, let $v$ be a position in the
+winning region of player $p$ that is owned by the opponent of $p$. Then every position $w$ with a
+move from $v$ to $w$ is in the winning region of $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Winning Region](winning-region.md)
-- [Player](player.md)
+- [Players of a parity game](player.md)
 - [Opponent](opponent.md)
 
 ## Proof depends on
 
 - [Positional Strategy](positional-strategy.md)
-- [Wins From](wins-from.md)
-- [Of move](of-move.md)
+- [Winning strategy from a position](wins-from.md)
+- [Winning strategies keep winning along allowed moves](of-move.md)
 
 ## Sources
 

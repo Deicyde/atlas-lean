@@ -5,10 +5,11 @@ statement: formalized
 lean: SL2.HasEigenvalues
 ---
 
-# Has Eigenvalues
+# Elements of $\mathrm{SL}_2(F)$ with eigenvalues $s$ and $s^{-1}$
 
-A matrix `M` in `SL₂(F)` has eigenvalues `s` and `s⁻¹` if its
-characteristic polynomial is `(X - s)(X - s⁻¹)`.
+**Elements of $\mathrm{SL}_2(F)$ with eigenvalues $s$ and $s^{-1}$.** Let $F$ be a field and
+let $s \in F$. A matrix $M \in \mathrm{SL}_2(F)$ has eigenvalues $s$ and $s^{-1}$ if its
+characteristic polynomial is $(X - s)(X - s^{-1})$.
 
 ## Depends on
 

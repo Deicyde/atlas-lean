@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.CCS.StaticProcess.lts
 ---
 
-# Lts
+# Transition system of CCS with restriction and relabelling
 
-The labelled transition system of finite CCS with static operators.
+**Transition system of CCS with restriction and relabelling.** The labelled transition system
+of finite CCS with static operators has the finite CCS processes with restriction and relabelling
+as states and the CCS labels as labels, and its transitions are the steps of the structural
+operational semantics of these processes.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
-- [Static Process](static-process.md)
+- [CCS labels](../parallel/label.md)
+- [Static CCS processes](static-process.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Transitions of static CCS](step.md)
 
 ## Sources
 

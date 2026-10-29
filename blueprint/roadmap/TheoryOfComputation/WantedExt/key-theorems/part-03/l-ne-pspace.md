@@ -13,8 +13,8 @@ Stearns, J. Hartmanis, and P. M. Lewis II, "Hierarchies of memory limited comput
 
 ## Depends on
 
-- [Log Space](../../../../Computability/CSLibExt/complexity/classes/log-space.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Deterministic logarithmic space](../../../../Computability/CSLibExt/complexity/classes/log-space.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

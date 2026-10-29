@@ -7,8 +7,9 @@ lean: Cslib.URM.regBound
 
 # Register bound
 
-**Register bound** of a program: the sum of the maximal registers of its instructions.
-Every register an instruction of `p` can read or write is at most `R`.
+**Register bound.** The register bound $R$ of a URM program $p$ is the sum, over the
+instructions of $p$, of the largest register index each instruction refers to. Every register
+that an instruction of $p$ can read or write is at most $R$.
 
 ## Depends on
 

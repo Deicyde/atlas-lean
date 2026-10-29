@@ -6,22 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Ctx.comp_assoc
 ---
 
-# Comp assoc
+# Associativity of PCF context composition
 
-Composition of contexts is associative.
+**Associativity of PCF context composition.** For one-hole contexts $C$ and $D$ such that the
+hole of $C$ takes terms of the type and typing context that $D$ produces, write $C \circ D$ for
+the context obtained from $C$ by replacing its hole by $D$. For PCF one-hole contexts $C_1$, $C_2$
+and $C_3$ such that the hole of $C_1$ takes terms of the type and typing context that $C_2$
+produces, and the hole of $C_2$ takes terms of the type and typing context that $C_3$ produces,
+composition is associative: $(C_1 \circ C_2) \circ C_3 = C_1 \circ (C_2 \circ C_3)$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Comp](comp.md)
-- [Ty](../syntax/ty.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Composition of PCF contexts](comp.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Ren](../syntax/ren.md)
-- [Tm](../syntax/tm.md)
-- [Nat](../syntax/nat.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [PCF renamings](../syntax/ren.md)
+- [PCF terms](../syntax/tm.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

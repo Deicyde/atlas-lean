@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.UnionFreeFamiliesErdosProblem447Wanted.maxUnionFreeSize
 ---
 
-# Max Union Free Size
+# Maximum size of a union-free family
 
-The largest size of a union-free family of subsets of `{0, …, n - 1}`.
+**Maximum size of a union-free family.** For a natural number $n$, the largest size $|F|$ of a
+union-free family $F$ of subsets of $\{0, \dots, n-1\}$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Union Free](is-union-free.md)
+- [Union-free family](is-union-free.md)
 
 ## Sources
 

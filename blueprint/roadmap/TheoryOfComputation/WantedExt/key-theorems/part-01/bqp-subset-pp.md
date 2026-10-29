@@ -16,7 +16,7 @@ Complexity: A Modern Approach, 2009, Theorem 10.2.
 ## Depends on
 
 - [BQP](../../../../Computability/CSLibExt/complexity/classes/bqp.md)
-- [PP](../../../../Computability/CSLibExt/complexity/classes/pp.md)
+- [Probabilistic polynomial time with unbounded error](../../../../Computability/CSLibExt/complexity/classes/pp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.Productive
 ---
 
-# Productive
+# Productive set
 
-A set is **productive** when a partial recursive function witnesses, for
-every index `e` of an RE subset of it, a member outside that subset.
+**Productive set.** A set $A$ of natural numbers is productive when there is a partial
+recursive function $f$ such that for every natural number $e$ with $W_e \subseteq A$, where $W_e$
+is the $e$-th recursively enumerable set in the standard enumeration, $f(e)$ is defined,
+$f(e) \in A$ and $f(e) \notin W_e$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Enum RE](enum-re.md)
+- [Standard enumeration of the recursively enumerable sets](enum-re.md)
 
 ## Sources
 

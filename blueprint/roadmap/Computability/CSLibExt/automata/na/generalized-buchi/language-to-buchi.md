@@ -14,17 +14,17 @@ automaton.
 
 ## Depends on
 
-- [Gen Buchi](gen-buchi.md)
-- [To Buchi](to-buchi.md)
+- [Generalized Büchi automaton](gen-buchi.md)
+- [Degeneralization of a generalized Büchi automaton](to-buchi.md)
 
 ## Proof depends on
 
-- [Count Seq](count-seq.md)
-- [Count Seq reach](count-seq-reach.md)
-- [Counter cross](counter-cross.md)
-- [Mem language iff](mem-language-iff.md)
-- [Next Count](next-count.md)
-- [Next Count eq zero](next-count-eq-zero.md)
+- [Counter sequence of a state sequence](count-seq.md)
+- [The degeneralization counter reaches every higher value](count-seq-reach.md)
+- [The degeneralization counter crosses every value below its target](counter-cross.md)
+- [Language of a generalized Büchi automaton](mem-language-iff.md)
+- [Counter update for degeneralization](next-count.md)
+- [The degeneralization counter resets at the top](next-count-eq-zero.md)
 
 ## Sources
 

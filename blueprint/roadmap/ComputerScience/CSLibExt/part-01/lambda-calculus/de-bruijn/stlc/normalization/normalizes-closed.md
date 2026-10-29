@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizes_closed
 ---
 
-# Normalizes closed
+# Normalization of closed terms
 
-Every closed well-typed term evaluates to a normal form.
+**Normalization of closed terms.** Every closed well-typed term normalizes: it reduces in
+zero or more call-by-value steps to a normal form.
 
 ## Depends on
 
 - [Normalizes](normalizes.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Iff terminates](iff-terminates.md)
-- [Terminates](../logical-relation/terminates.md)
-- [Terminates closed](../logical-relation/terminates-closed.md)
+- [Normalization and termination coincide](iff-terminates.md)
+- [Termination of closed terms](../logical-relation/terminates.md)
+- [Termination of the call-by-value simply typed lambda calculus](../logical-relation/terminates-closed.md)
 
 ## Sources
 

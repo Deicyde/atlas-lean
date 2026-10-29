@@ -6,26 +6,29 @@ proof: formalized
 lean: Cslib.Complexity.Classes.nck_mono
 ---
 
-# Nck mono
+# The NC hierarchy is increasing
 
-`NC^k ⊆ NC^(k+1)`: the depth bound is monotone in `k`, since the base
-`log 2 (n + 1) + 1` is at least `1`.
+**The NC hierarchy is increasing.** For every natural number $k$, every decision problem in
+$\mathsf{NC}^k$ is in $\mathsf{NC}^{k+1}$, that is, $\mathsf{NC}^k \subseteq \mathsf{NC}^{k+1}$.
+
+The depth bound of $\mathsf{NC}^k$, a constant times $(\lfloor \log_2 (n + 1) \rfloor + 1)^k$, is
+monotone in $k$ because its base is at least $1$.
 
 ## Depends on
 
-- [NCK](nck.md)
+- [The class NC^k](nck.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [ACGate](acgate.md)
-- [Is Fan In Le Two](is-fan-in-le-two.md)
-- [Is Mod Free](is-mod-free.md)
-- [Uniform Circuit Family](uniform-circuit-family.md)
-- [Well Formed Circuit](well-formed-circuit.md)
-- [Circuit Depth](circuit-depth.md)
-- [Circuit Eval](circuit-eval.md)
+- [Gates of a flat Boolean circuit](acgate.md)
+- [Circuits of fan-in at most two](is-fan-in-le-two.md)
+- [Circuits without mod gates](is-mod-free.md)
+- [Log-space uniform circuit families](uniform-circuit-family.md)
+- [Well-formed flat circuits](well-formed-circuit.md)
+- [Depth of a flat Boolean circuit](circuit-depth.md)
+- [Evaluation of a flat Boolean circuit](circuit-eval.md)
 
 ## Sources
 

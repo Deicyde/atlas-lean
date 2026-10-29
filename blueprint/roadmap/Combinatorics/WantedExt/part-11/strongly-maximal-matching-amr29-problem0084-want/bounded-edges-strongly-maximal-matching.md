@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StronglyMaximalMatchingAMR29Problem0084Wanted.boundedEdgesStronglyMaximalMatching
 ---
 
-# Bounded Edges Strongly Maximal Matching
+# Strongly maximal matchings in hypergraphs with bounded edges
 
-The refuted EGRES claim: every hypergraph whose edges all have size at most
-`k`, for some `k`, has a strongly maximal matching.
+**Strongly maximal matchings in hypergraphs with bounded edges.** The statement that for
+every vertex set $V$ and every set $E$ of finite subsets of $V$ such that some natural number $k$
+bounds the number of elements of every edge in $E$, the hypergraph with edge set $E$ has a
+strongly maximal matching.
+
+This is the claim from the EGRES list of open problems; it has since been refuted.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Strongly Maximal](is-strongly-maximal.md)
+- [Strongly maximal matching](is-strongly-maximal.md)
 
 ## Sources
 

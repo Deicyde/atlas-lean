@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.URM.initCoded_eq_toCoded
 ---
 
-# Init Coded eq to Coded
+# The initial coded state codes the initial machine state
 
-The initial coded state is the coded initial machine state.
+**The initial coded state codes the initial machine state.** For a URM program $p$ and an
+input $x$, the initial coded state for $x$ equals the coded state of the initial machine state
+with input list $[x]$.
 
 ## Depends on
 
 - [Initial coded state](init-coded.md)
-- [To Coded](to-coded.md)
+- [Coded machine state](to-coded.md)
 
 ## Proof depends on
 

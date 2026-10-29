@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.inversions
 ---
 
-# Inversions
+# Inversion set of a permutation
 
-The inversion set of `σ ∈ S_n`: the pairs of positions `i < j` with `σ j < σ i`.
+**Inversion set of a permutation.** For a permutation $\sigma$ of $\{0, \dots, n-1\}$, the
+inversion set of $\sigma$ is the set of pairs of positions $(i, j)$ with $i < j$ and
+$\sigma(j) < \sigma(i)$.
 
 ## Depends on
 

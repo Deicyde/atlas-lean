@@ -24,7 +24,7 @@ navigation: module
 - [Sum of the entries of a vector](sum-vec.md)
 - [One step of the tabulated forward algorithm](forward-step.md)
 - [Tabulated forward algorithm](forward-tab.md)
-- [The tabulated forward algorithm](likelihood-tab.md)
+- [Tabulated likelihood of a hidden Markov model](likelihood-tab.md)
 - [First maximizer of a function on a finite range](argmax-fin.md)
 - [One step of the tabulated Viterbi recursion for a hidden Markov model](viterbi-step.md)
 - [The tabulated Viterbi variables of a hidden Markov model](viterbi-tab.md)

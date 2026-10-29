@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Automata.NA.Buchi.language_toParity
 ---
 
-# Language to Parity
+# Büchi-to-parity conversion preserves the language
 
-A Büchi automaton and its parity presentation accept the same language.
+**Büchi-to-parity conversion preserves the language.** Every nondeterministic Büchi automaton
+accepts the same language of infinite words as its presentation as a parity automaton (priority
+$2$ on accepting states, $1$ elsewhere).
 
 ## Depends on
 
-- [To Parity](to-parity.md)
-- [Parity](parity.md)
-- [Parity Even](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Büchi automata as parity automata](to-parity.md)
+- [Nondeterministic parity automaton](parity.md)
+- [Even max-parity condition](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
 
 ## Proof depends on
 
-- [Parity Even iff frequently two](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even-iff-frequently-two.md)
+- [Max-parity with priorities 1 and 2 is the Büchi condition](../../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even-iff-frequently-two.md)
 
 ## Sources
 

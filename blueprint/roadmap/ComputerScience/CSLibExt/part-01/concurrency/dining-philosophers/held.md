@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.held
 ---
 
-# Held
+# Held forks
 
-Whether fork `f` is held by some philosopher.
+**Held forks.** Given a protocol and a state, fork $f$ is held exactly when some philosopher
+$i$ either has $f$ as its first fork and is in phase $1$ or $2$, or has $f$ as its second fork
+and is in phase $2$ (eating).
 
 ## Depends on
 
-- [Protocol](protocol.md)
-- [State](state.md)
+- [Dining-philosophers protocol](protocol.md)
+- [Dining-philosophers state](state.md)
 
 ## Proof depends on
 
-- [Phase](phase.md)
+- [Phase of a philosopher](phase.md)
 
 ## Sources
 

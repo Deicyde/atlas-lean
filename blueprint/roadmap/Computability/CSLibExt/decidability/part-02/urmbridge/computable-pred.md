@@ -8,11 +8,13 @@ lean: Cslib.URM.Decidable.computablePred
 
 # A URM-decidable predicate is computable
 
-**A URM-decidable predicate is computable.**
+**A URM-decidable predicate is computable.** If a predicate $P$ on the natural numbers is
+URM-decidable, then it is a computable predicate: its Boolean decision function, sending $n$ to
+whether $P(n)$ holds, is computable.
 
 ## Depends on
 
-- [Decidable](decidable.md)
+- [URM-decidable predicate](decidable.md)
 
 ## Proof depends on
 

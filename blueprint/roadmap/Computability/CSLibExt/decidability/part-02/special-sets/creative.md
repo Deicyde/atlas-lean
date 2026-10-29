@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.Creative
 ---
 
-# Creative
+# Creative set
 
-A set is **creative** when it is RE and its complement is productive.
+**Creative set.** A set $A$ of natural numbers is creative when it is recursively enumerable
+and its complement $\mathbb{N} \setminus A$ is productive.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Productive](productive.md)
+- [Productive set](productive.md)
 
 ## Sources
 

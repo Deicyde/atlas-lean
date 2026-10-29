@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.liftRen_comp
 ---
 
-# Lift Ren comp
+# Lifting commutes with composition of numerical renamings
 
-Lifting distributes over composition.
+**Lifting commutes with composition of numerical renamings.** For maps
+$\rho, \sigma : \mathbb{N} \to \mathbb{N}$, the lift of $\sigma \circ \rho$ through one binder
+equals the lift of $\sigma$ composed after the lift of $\rho$.
 
 ## Depends on
 
-- [Lift Ren](lift-ren.md)
+- [Lifting a numerical renaming](lift-ren.md)
 
 ## Sources
 

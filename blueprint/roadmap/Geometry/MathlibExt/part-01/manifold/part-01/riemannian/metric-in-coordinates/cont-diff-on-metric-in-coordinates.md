@@ -6,17 +6,21 @@ proof: formalized
 lean: Manifold.contDiffOn_metricInCoordinates
 ---
 
-# Cont Diff On metric In Coordinates
+# Smoothness of a metric in coordinates
 
-The coordinate expression of a smooth metric is smooth on the chart target.
+**Smoothness of a metric in coordinates.** Let $E$ be a finite-dimensional real normed
+space, let $M$ be a smooth manifold modeled through a model with corners $I : H \to E$, and let
+$g$ be a smooth Riemannian metric on the tangent bundle of $M$. For every chart $e$ in the maximal
+smooth atlas of $M$, the coordinate expression of $g$ in $e$, viewed as a map from $E$ to the
+continuous bilinear forms on $E$, is $C^\infty$ on the target of the extended chart $I \circ e$.
 
 ## Depends on
 
-- [Metric In Coordinates](metric-in-coordinates.md)
+- [Coordinate expression of a Riemannian metric](metric-in-coordinates.md)
 
 ## Proof depends on
 
-- [Metric In Coordinates apply](metric-in-coordinates-apply.md)
+- [Pointwise formula for a metric in coordinates](metric-in-coordinates-apply.md)
 
 ## Sources
 

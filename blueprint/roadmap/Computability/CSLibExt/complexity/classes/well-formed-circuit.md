@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.Classes.WellFormedCircuit
 ---
 
-# Well Formed Circuit
+# Well-formed flat circuits
 
-Well-formedness: every gate references only strictly earlier gates.
+**Well-formed flat circuits.** A flat Boolean circuit on $n$ inputs, given as a list of
+gates $(g_0, \dots, g_{m-1})$, is well-formed when every gate references only strictly earlier
+gates: for every $j < m$, every gate index $a$ among the inputs of $g_j$ satisfies $a < j$.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Proof depends on
 
-- [Gate Inputs](gate-inputs.md)
+- [Predecessors of a gate](gate-inputs.md)
 
 ## Sources
 

@@ -7,12 +7,15 @@ lean: Cslib.Complexity.Classes.BQP
 
 # BQP
 
-`BQP`: bounded-error quantum polynomial time; a uniform family of
-polynomial-size quantum circuits (2-local unitary gates with rational entries,
-generated in polynomial time) whose output qubit measures `1` with probability
-at least `2/3` on yes-instances and at most `1/3` on no-instances.
-`BQP ⊆ PSPACE` and `BQP ⊆ PP` are `WantedExt` statements: they need the
-path-integral / gap simulation of quantum circuits, not just this definition.
+**BQP.** The class BQP of bounded-error quantum polynomial-time decision problems consists
+of the decision problems $L$ for which there are polynomials $a$ and $q$ with natural number
+coefficients and a polynomial-time computable map sending each bitstring $x$ to a list of
+2-local quantum gates such that, for every bitstring $x$, with $n = |x|$ and $N = n + a(n)$:
+the list has at most $q(n)$ gates; each gate acts on qubits $i < j < N$ and its $4 \times 4$
+matrix, whose entries have rational real and imaginary parts, is unitary; and after the gates
+are applied in order to the state with $x$ in the computational basis on the $n$ low-order
+qubits and $a(n)$ ancilla qubits in state $0$, the probability that qubit $0$ measures $1$ is
+at least $2/3$ if $L(x)$ is true and at most $1/3$ if $L(x)$ is false.
 
 ## Depends on
 
@@ -20,12 +23,12 @@ path-integral / gap simulation of quantum circuits, not just this definition.
 
 ## Proof depends on
 
-- [QGate](qgate.md)
-- [QGate Well Formed](qgate-well-formed.md)
-- [Rat Enc](rat-enc.md)
-- [Accept Prob](accept-prob.md)
-- [Apply Circuit](apply-circuit.md)
-- [Bqp Init State](bqp-init-state.md)
+- [Encoded 2-local quantum gate](qgate.md)
+- [Well-formed quantum gate](qgate-well-formed.md)
+- [Encoded rational number](rat-enc.md)
+- [Acceptance probability of a quantum state](accept-prob.md)
+- [Applying a quantum circuit to a state](apply-circuit.md)
+- [Initial state of a BQP computation](bqp-init-state.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

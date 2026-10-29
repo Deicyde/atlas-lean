@@ -6,31 +6,34 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_congr
 ---
 
-# Denote plug congr
+# Equal denotations are preserved by plugging into PCF contexts
 
-Denotational equality is a congruence for plugging into contexts.
+**Equal denotations are preserved by plugging into PCF contexts.** Let $t$ and $u$ be PCF
+terms of type $A$ in typing context $\Gamma$ with the same denotation, and let $C$ be a one-hole
+context whose hole takes terms of type $A$ in typing context $\Gamma$. Then the terms $C[t]$ and
+$C[u]$ obtained by plugging $t$ and $u$ into the hole of $C$ have the same denotation.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Plug](plug.md)
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Denote](../denotational/denote.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Plugging a term into a PCF context](plug.md)
+- [Semantic environments for PCF](../denotational/env.md)
+- [PCF terms](../syntax/tm.md)
+- [Denotation of PCF terms](../denotational/denote.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
 
 ## Proof depends on
 
-- [Lookup](../denotational/lookup.md)
-- [Of Fun](../denotational/of-fun.md)
-- [Ren](../syntax/ren.md)
-- [Denote rename](../denotational/denote-rename.md)
-- [Rename](../syntax/rename.md)
-- [Nat](../syntax/nat.md)
-- [Order Bot](../denotational/order-bot.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Variable lookup in a PCF environment](../denotational/lookup.md)
+- [Environment from a family of values](../denotational/of-fun.md)
+- [PCF renamings](../syntax/ren.md)
+- [PCF denotation of a renamed term](../denotational/denote-rename.md)
+- [Renaming of PCF terms](../syntax/rename.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Least elements of PCF domains](../denotational/order-bot.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 - [Least fixed point of a Scott-continuous map](../../../../../../Order/MathlibExt/omega-complete-partial-order/continuous-hom/lfp.md)
 
 ## Sources

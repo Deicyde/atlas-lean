@@ -13,7 +13,7 @@ Stockmeyer, "The polynomial-time hierarchy", Theoretical Computer Science 3 (197
 
 ## Depends on
 
-- [PH](../../../../Computability/CSLibExt/complexity/classes/ph.md)
+- [The polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/ph.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)
 - [The complexity class P](../../../../Computability/MathlibExt/complexity/p.md)

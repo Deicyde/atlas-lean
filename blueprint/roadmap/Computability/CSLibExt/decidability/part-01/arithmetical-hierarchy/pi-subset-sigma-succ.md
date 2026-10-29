@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.pi_subset_sigma_succ
 ---
 
-# `Πₙ ⊆ Σₙ₊₁`
+# Every Πₙ set is Σₙ₊₁
 
-**`Πₙ ⊆ Σₙ₊₁`**: a `Πₙ` set is also `Σₙ₊₁`, by a dummy existential quantifier.
+**Every Πₙ set is Σₙ₊₁.** For every natural number $n$, every set of natural numbers in the
+class $\Pi_n$ of the arithmetical hierarchy is also in $\Sigma_{n+1}$; that is,
+$\Pi_n \subseteq \Sigma_{n+1}$, by adding a dummy existential quantifier.
 
 ## Depends on
 

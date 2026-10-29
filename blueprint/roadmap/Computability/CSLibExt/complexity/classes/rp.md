@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Classes.RP
 ---
 
-# RP
+# The class RP
 
-`RP`: randomized polynomial time with one-sided error; acceptance
-probability at least `1/2` on yes-instances, `0` on no-instances.
+**The class RP.** A decision problem $L$ is in $\mathsf{RP}$ when there are a polynomial
+$p$ with natural-number coefficients and a polynomial-time computable Boolean function $R$
+on pairs of bitstrings such that for every bitstring $x$: if $L(x)$ is true, then $R(x, r)$
+is true for at least half of the $2^{p(|x|)}$ bitstrings $r$ of length $p(|x|)$; and if
+$L(x)$ is false, then $R(x, r)$ is false for every bitstring $r$ of length $p(|x|)$.
 
 ## Depends on
 

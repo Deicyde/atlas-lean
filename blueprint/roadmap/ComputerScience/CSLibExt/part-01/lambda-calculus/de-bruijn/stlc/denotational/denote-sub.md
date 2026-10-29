@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.denoteSub
 ---
 
-# Denote Sub
+# Denotation of an STLC substitution
 
-Interpret every image of a syntactic substitution in an environment.
+**Denotation of an STLC substitution.** Given an interpretation $I$ of the base types, a
+type-preserving substitution $\sigma$ mapping each variable of a context $\Gamma$ to a term in a
+context $\Delta$, and an environment $\eta$ for $\Delta$, this is the environment for $\Gamma$
+that sends each variable $x$ to the denotation of $\sigma(x)$ in $\eta$.
 
 ## Depends on
 
-- [Env](env.md)
-- [Sub](../syntax/sub.md)
-- [Ty](../syntax/ty.md)
+- [Semantic environments](env.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Denote](denote-2.md)
-- [Var](../syntax/var.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

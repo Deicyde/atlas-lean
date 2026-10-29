@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.modelEq_of_normalizeTm_eq
 ---
 
-# Model Eq of normalize Tm eq
+# Equal NbE normal forms imply model equality
 
-Equality of computed normal forms is a sound certificate of model
-equality.
+**Equal NbE normal forms imply model equality.** If two terms $t$ and $u$ of type $A$ in
+context $\Gamma$ have the same NbE normal form, then $t$ and $u$ are model-equal.
+
+Equality of computed normal forms is thus a sound test for model equality; no converse is
+claimed.
 
 ## Depends on
 
-- [Model Eq](../contextual/model-eq.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Model equality of STLC terms](../contextual/model-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Refl](../equational/refl.md)
-- [Symm](../equational/symm.md)
-- [Trans](../equational/trans.md)
-- [Normalize Tm model Eq](normalize-tm-model-eq.md)
+- [Semantic equality is reflexive](../equational/refl.md)
+- [Symmetry of semantic equality of terms](../equational/symm.md)
+- [Transitivity of semantic equality of terms](../equational/trans.md)
+- [Every term is model-equal to its NbE normal form](normalize-tm-model-eq.md)
 
 ## Sources
 

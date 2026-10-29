@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Decidability.ramDestIndex
 ---
 
-# Ram Dest Index
+# Register written by a RAM store
 
-Resolve a RAM store destination to the register index it writes: direct
-is the named register, indirect is the contents of the named register.
+**Register written by a RAM store.** In a RAM state with register contents $r$, a store
+destination resolves to a register index: the direct destination $n$ resolves to $n$, and the
+indirect destination $n$ resolves to the contents $r(n)$ of register $n$.
 
 ## Depends on
 
-- [RAMDest](ramdest.md)
-- [RAMState](ramstate.md)
+- [RAM store destination](ramdest.md)
+- [RAM state](ramstate.md)
 
 ## Sources
 

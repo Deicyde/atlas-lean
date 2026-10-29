@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq.app
 ---
 
-# App
+# Semantic equality is a congruence for application
 
-Semantically equal functions and arguments have semantically equal applications.
+**Semantic equality is a congruence for application.** Fix an interpretation $I$ of the base
+types. If terms $f$ and $g$ of type $A \Rightarrow B$ in a context $\Gamma$ are semantically
+equal in $I$ (they have the same denotation in every environment), and terms $a$ and $b$ of type
+$A$ in $\Gamma$ are semantically equal in $I$, then the applications $f\,a$ and $g\,b$ are
+semantically equal in $I$.
 
 ## Depends on
 
-- [Sem Eq](sem-eq.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Semantic equality of terms in a model](sem-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Sources
 

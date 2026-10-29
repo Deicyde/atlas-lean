@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.buffer_silentClosure
 ---
 
-# Buffer silent Closure
+# The silent closure of the buffer is trivial
 
-The buffer takes no silent steps.
+**The silent closure of the buffer is trivial.** For every occupancy $n$, every process
+reachable from the go-back-N buffer with occupancy $n$ by zero or more silent steps is that
+buffer itself.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Buffer](buffer.md)
-- [Lts](lts.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
+- [Process constants of the go-back-N model](agent.md)
+- [Channel names of go-back-N](name.md)
+- [The two-place buffer process](buffer.md)
+- [Labelled transition system of go-back-N](lts.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Proof depends on
 
-- [Buffer Steps](buffer-steps.md)
-- [Spec](spec.md)
-- [Realizes](../finite-state/realizes.md)
-- [Constant](../finite-state/constant.md)
+- [Transitions of the two-place buffer](buffer-steps.md)
+- [Recursive CCS specification of go-back-N](spec.md)
+- [Realization of a code-level transition system](../finite-state/realizes.md)
+- [Constants listing their transitions realize them](../finite-state/constant.md)
 - [Step](../recursion/step.md)
 
 ## Sources

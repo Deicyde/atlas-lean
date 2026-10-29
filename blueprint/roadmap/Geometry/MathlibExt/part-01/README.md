@@ -11,7 +11,7 @@ navigation: transparent
 - [Polyhedra](polyhedra/README.md)
 - [Spherical](spherical/README.md)
 - [CAT0](cat0/README.md)
-- [Discrete Full Rank ZLattice](discrete-full-rank-iff-is-zlattice.md)
+- [A discrete subgroup is a lattice iff it has full rank](discrete-full-rank-iff-is-zlattice.md)
 - [Falconer Distance Set](falconer-distance-set/README.md)
 - [Lattice Point Asymptotics](lattice-point-asymptotics/README.md)
 - [Lattice Point Boundary Cubes](lattice-point-boundary-cubes/README.md)

@@ -16,8 +16,8 @@ B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 5.4
 
 ## Depends on
 
-- [MA](../../../../Computability/CSLibExt/complexity/classes/ma.md)
-- [PH](../../../../Computability/CSLibExt/complexity/classes/ph.md)
+- [The class MA (Merlin–Arthur)](../../../../Computability/CSLibExt/complexity/classes/ma.md)
+- [The polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/ph.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEnv
 ---
 
-# Sem Env
+# Semantic environments
 
-A semantic environment interprets every variable of `Γ` in a common
-future context `Δ`.
+**Semantic environments.** For contexts $\Delta$ and $\Gamma$, a semantic environment for
+$\Gamma$ in $\Delta$ assigns to every variable of $\Gamma$, of any type $A$, a semantic value of
+type $A$ in $\Delta$.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Sem](sem.md)
-- [Var](../syntax/var.md)
+- [Kripke semantic values](sem.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

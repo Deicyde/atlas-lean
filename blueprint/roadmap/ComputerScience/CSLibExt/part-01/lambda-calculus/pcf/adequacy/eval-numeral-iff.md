@@ -6,25 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.eval_numeral_iff
 ---
 
-# Eval numeral iff
+# Evaluation to a numeral agrees with the denotation
 
-A closed term of ground type evaluates to the numeral `n` exactly when it
-denotes `n`.
+**Evaluation to a numeral agrees with the denotation.** For every natural number $n$, a
+closed PCF term $t$ of ground type evaluates to the numeral $n$ if and only if the denotation
+of $t$ is the defined value $n$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Eval](../big-step/eval.md)
-- [Denote](../denotational/denote.md)
-- [Numeral](../syntax/numeral.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
-- [Nat](../syntax/nat.md)
+- [Semantic environments for PCF](../denotational/env.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Denotation of PCF terms](../denotational/denote.md)
+- [PCF numerals](../syntax/numeral.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Proof depends on
 
-- [Denote numeral](../soundness/denote-numeral.md)
+- [Closed PCF terms that evaluate to a numeral denote its value](../soundness/denote-numeral.md)
 - [Adequacy](adequacy.md)
 
 ## Sources

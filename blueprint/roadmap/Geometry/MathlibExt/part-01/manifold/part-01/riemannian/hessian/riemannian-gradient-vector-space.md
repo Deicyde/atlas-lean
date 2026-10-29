@@ -6,15 +6,18 @@ proof: formalized
 lean: Manifold.riemannianGradient_vectorSpace
 ---
 
-# Riemannian Gradient vector Space
+# The Riemannian gradient on a Hilbert space
 
-On an inner product space with its standard metric, the Riemannian gradient is Mathlib's
-Hilbert-space `gradient`. Since `TangentSpace 𝓘(ℝ, F) x` is definitionally `F`, the equality
-typechecks directly; the proof works in `F` through `NormedSpace.fromTangentSpace`.
+**The Riemannian gradient on a Hilbert space.** Let $F$ be a real Hilbert space, viewed as
+a Riemannian manifold with the metric given by its inner product, and let $f : F \to \mathbb{R}$
+and $x \in F$. Identifying the tangent space at $x$ with $F$, the Riemannian gradient of $f$ at
+$x$ is the Hilbert-space gradient $\nabla f(x)$, the unique vector with
+$\langle \nabla f(x), w \rangle = Df(x)(w)$ for all $w \in F$, where $Df(x)$ is the Fréchet
+derivative of $f$ at $x$.
 
 ## Depends on
 
-- [Riemannian Gradient](riemannian-gradient.md)
+- [Riemannian gradient](riemannian-gradient.md)
 
 ## Proof depends on
 

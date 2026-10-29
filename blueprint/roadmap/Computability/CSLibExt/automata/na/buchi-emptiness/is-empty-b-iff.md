@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Automata.NA.Buchi.isEmptyB_iff
 ---
 
-# Is Empty B iff
+# Correctness of the Büchi emptiness test
 
-`isEmptyB` decides emptiness of the accepted ω-language.
+**Correctness of the Büchi emptiness test.** For a nondeterministic Büchi automaton with
+finitely many states and finitely many symbols, with decidable equality of states, and whose
+transitions, start states and accepting states are decidable, the emptiness test returns true if
+and only if the automaton accepts no infinite word.
 
 ## Depends on
 
-- [Is Empty B](is-empty-b.md)
+- [Büchi emptiness test](is-empty-b.md)
 
 ## Proof depends on
 
-- [Has Lasso](has-lasso.md)
-- [Has Lasso iff lasso States nonempty](has-lasso-iff-lasso-states-nonempty.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
+- [Lasso detection by finite reachability](has-lasso-iff-lasso-states-nonempty.md)
 - [Lasso characterization of Büchi nonemptiness](language-nonempty-iff-has-lasso.md)
-- [Lasso States](lasso-states.md)
+- [Lasso states of a finite Büchi automaton](lasso-states.md)
 
 ## Sources
 

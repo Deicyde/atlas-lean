@@ -13,8 +13,8 @@ methods for interactive proof systems", Journal of the ACM 39 (1992), 859-868.
 
 ## Depends on
 
-- [IP](../../../../Computability/CSLibExt/complexity/classes/ip.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [The class IP](../../../../Computability/CSLibExt/complexity/classes/ip.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 
 ## Sources

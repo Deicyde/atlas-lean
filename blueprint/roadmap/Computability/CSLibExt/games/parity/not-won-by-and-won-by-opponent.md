@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Games.ParityGame.not_wonBy_and_wonBy_opponent
 ---
 
-# Not won By and won By opponent
+# No play is won by both players
 
-No play is won by both players.
+**No play is won by both players.** In a parity game, for every player $p$, no infinite
+sequence of positions (play or not) is won both by $p$ and by the opponent of $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
-- [Won By](won-by.md)
-- [Player](player.md)
+- [Parity game](parity-game.md)
+- [Winner of a play in a parity game](won-by.md)
+- [Players of a parity game](player.md)
 - [Opponent](opponent.md)
 
 ## Proof depends on
 
-- [Is Max Inf Occ](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
-- [Parity Even](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
-- [Parity Odd](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
+- [Largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
+- [Even max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Odd max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
 
 ## Sources
 

@@ -5,23 +5,31 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.system
 ---
 
-# System
+# The alternating-bit protocol in a configuration
 
-The protocol process in a configuration.
+**The alternating-bit protocol in a configuration.** Consider a configuration with sender
+state $s$, data channel state $d$, receiver state $r$ and acknowledgement channel state $k$.
+Write $\mathrm{Sender}(s)$, $\mathrm{Data}(d)$, $\mathrm{Receiver}(r)$ and $\mathrm{Ack}(k)$
+for the constants of the four agents at these states, and let $L$ be the set of internal
+channels $\mathrm{send}(b)$, $\mathrm{recv}(b)$, $\mathrm{reply}(b)$ and $\mathrm{ack}(b)$ for
+both bits $b$. The protocol process is the parallel composition of these constants with every
+internal channel restricted,
+$(((\mathrm{Sender}(s) \mid \mathrm{Data}(d)) \mid \mathrm{Receiver}(r)) \mid \mathrm{Ack}(k))
+\setminus L$.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Config](config.md)
-- [Name](name.md)
-- [Process](../recursion/process.md)
+- [Process constants of the data-free alternating-bit protocol](agent.md)
+- [Alternating-bit configuration](config.md)
+- [Alternating-bit channel names](name.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Proof depends on
 
-- [Channel](channel.md)
-- [Receiver](receiver.md)
-- [Sender](sender.md)
-- [Internal](internal.md)
+- [States of a one-place channel](channel.md)
+- [Alternating-bit receiver states](receiver.md)
+- [Sender states of the data-free alternating-bit protocol](sender.md)
+- [Internal channels of the alternating-bit protocol](internal.md)
 
 ## Sources
 

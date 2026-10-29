@@ -6,15 +6,18 @@ proof: formalized
 lean: DiscreteGroups.translationHom_injective
 ---
 
-# Translation Hom injective
+# Translations are determined by their vectors
 
-A translation is determined by its displacement vector.
+**Translations are determined by their vectors.** For vectors $v$ and $w$ of the Euclidean
+plane $\mathbb{R}^2$, if translation by $v$ and translation by $w$ are the same affine isometry,
+then $v = w$. Equivalently, the translation homomorphism $v \mapsto (x \mapsto v + x)$ from the
+additive group of the plane to the group of affine isometries of the plane is injective.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
-- [Translation Hom](translation-hom.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
+- [Translation homomorphism](translation-hom.md)
 
 ## Sources
 

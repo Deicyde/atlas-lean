@@ -4,7 +4,7 @@ navigation: module
 
 # Metric In Coordinates
 
-- [Metric In Coordinates](metric-in-coordinates.md)
-- [Metric In Coordinates apply](metric-in-coordinates-apply.md)
-- [Metric In Coordinates conformal Scale](metric-in-coordinates-conformal-scale.md)
-- [Cont Diff On metric In Coordinates](cont-diff-on-metric-in-coordinates.md)
+- [Coordinate expression of a Riemannian metric](metric-in-coordinates.md)
+- [Pointwise formula for a metric in coordinates](metric-in-coordinates-apply.md)
+- [Conformal scaling of a metric in coordinates](metric-in-coordinates-conformal-scale.md)
+- [Smoothness of a metric in coordinates](cont-diff-on-metric-in-coordinates.md)

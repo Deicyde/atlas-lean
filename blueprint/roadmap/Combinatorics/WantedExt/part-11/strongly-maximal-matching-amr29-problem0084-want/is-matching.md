@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StronglyMaximalMatchingAMR29Problem0084Wanted.IsMatching
 ---
 
-# Is Matching
+# Matching in a hypergraph
 
-A matching of the hypergraph with edge set `E`: a set of pairwise disjoint edges.
+**Matching in a hypergraph.** For a hypergraph on a vertex set $V$ whose edges form a set $E$
+of finite subsets of $V$, a set $M$ is a matching when $M \subseteq E$ and any two distinct
+members of $M$ are disjoint.
 
 ## Depends on
 

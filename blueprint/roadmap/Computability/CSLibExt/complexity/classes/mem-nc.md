@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Classes.mem_nc
 ---
 
-# Mem nc
+# Membership in NC
 
-`L ∈ NC` iff `L ∈ NC^k` for some `k`.
+**Membership in NC.** A decision problem $L$ belongs to $\mathsf{NC}$ if and only if $L$
+belongs to $\mathsf{NC}^k$ for some natural number $k$.
 
 ## Depends on
 
-- [NC](nc.md)
-- [NCK](nck.md)
+- [The class NC](nc.md)
+- [The class NC^k](nck.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 

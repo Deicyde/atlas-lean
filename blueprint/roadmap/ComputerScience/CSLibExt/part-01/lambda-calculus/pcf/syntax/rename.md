@@ -5,22 +5,28 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.rename
 ---
 
-# Rename
+# Renaming of PCF terms
 
-Rename the free variables of a term.
+**Renaming of PCF terms.** Given a renaming $\rho$ from a context $\Gamma$ to a context
+$\Delta$, the renaming along $\rho$ of a PCF term of type $A$ in context $\Gamma$ is the term of
+type $A$ in context $\Delta$ obtained by replacing each variable $x$ by $\rho(x)$. Under a
+$\lambda$-binder, $\rho$ is replaced by its lift, which sends the bound variable to itself and
+the successor of each variable $x$ of $\Gamma$ to the successor of $\rho(x)$. Renaming leaves
+zero unchanged and commutes with application, successor, predecessor, the zero test and the
+fixed-point combinator.
 
 ## Depends on
 
-- [Ren](ren.md)
-- [Tm](tm.md)
-- [Ty](ty.md)
+- [PCF renamings](ren.md)
+- [PCF terms](tm.md)
+- [PCF types](ty.md)
 
 ## Proof depends on
 
-- [Nat](nat.md)
-- [Var](var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Lift](../../de-bruijn/stlc/syntax/lift.md)
+- [Natural number type of PCF](nat.md)
+- [PCF variables](var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Lifting a renaming under a binder](../../de-bruijn/stlc/syntax/lift.md)
 
 ## Sources
 

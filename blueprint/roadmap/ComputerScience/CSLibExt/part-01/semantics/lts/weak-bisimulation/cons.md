@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.LTS.τSTr.cons
 ---
 
-# Cons
+# Prepending a silent step to the silent closure
 
-Prepend one silent step to a silent closure.
+**Prepending a silent step to the silent closure.** In a labelled transition system with a
+silent label $\tau$, write $\Rightarrow$ for the silent closure, the reflexive-transitive
+closure of the $\tau$-transition relation. If $s \xrightarrow{\tau} m$ is a transition and
+$m \Rightarrow t$, then $s \Rightarrow t$.
 
 ## Depends on
 

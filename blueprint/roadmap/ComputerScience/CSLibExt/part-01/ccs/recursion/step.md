@@ -11,9 +11,9 @@ Structural operational semantics relative to a recursive specification.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
-- [Process](process.md)
-- [Specification](specification.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](process.md)
+- [Recursive CCS specification](specification.md)
 
 ## Sources
 

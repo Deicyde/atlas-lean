@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Automata.NA.Streett.language_toMuller
 ---
 
-# Language to Muller
+# Streett-to-Muller conversion preserves the language
 
-A Streett automaton and its Muller presentation accept the same language, on a
-finite state space.
+**Streett-to-Muller conversion preserves the language.** If the state space is finite, then a
+Streett automaton $r$ accepts the same language as its Muller presentation: the Muller automaton
+with the same transitions and initial states as $r$ whose acceptance sets are the sets $S$ of
+states such that, for every Streett pair $(E, F)$ of $r$, if $S$ meets $E$ then $S$ meets $F$.
 
 ## Depends on
 
-- [Streett](streett.md)
-- [To Muller](to-muller-2.md)
+- [Streett automaton](streett.md)
+- [Muller presentation of a Streett automaton](to-muller-2.md)
 
 ## Proof depends on
 
-- [Mem language iff](mem-language-iff-2.md)
+- [Membership in the language of a Streett automaton](mem-language-iff-2.md)
 
 ## Sources
 

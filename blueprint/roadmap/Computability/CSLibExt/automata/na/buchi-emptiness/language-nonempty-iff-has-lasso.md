@@ -14,12 +14,12 @@ start state and lies on a nonempty cycle.
 
 ## Depends on
 
-- [Has Lasso](has-lasso.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
 
 ## Proof depends on
 
-- [Has Lasso of mem](has-lasso-of-mem.md)
-- [Lasso mem language](lasso-mem-language.md)
+- [An accepted word yields a lasso](has-lasso-of-mem.md)
+- [Lassos give accepted ultimately periodic words](lasso-mem-language.md)
 
 ## Sources
 

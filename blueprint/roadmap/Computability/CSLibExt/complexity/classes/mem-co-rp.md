@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Classes.mem_coRP
 ---
 
-# Mem co RP
+# Membership in coRP
 
-`L ∈ coRP` iff `Lᶜ ∈ RP`.
+**Membership in coRP.** A decision problem $L$ belongs to $\mathsf{coRP}$ if and only if its
+complement, the decision problem that accepts exactly the bitstrings $L$ rejects, belongs to
+$\mathsf{RP}$.
 
 ## Depends on
 
-- [RP](rp.md)
-- [Co RP](co-rp.md)
+- [The class RP](rp.md)
+- [The class coRP](co-rp.md)
 - [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 

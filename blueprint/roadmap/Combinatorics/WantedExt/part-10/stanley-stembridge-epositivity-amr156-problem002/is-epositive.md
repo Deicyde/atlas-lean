@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StanleyStembridgeEPositivityAMR156Problem0022Wanted.IsEPositive
 ---
 
-# Is EPositive
+# $e$-positive polynomials
 
-A polynomial in `n` variables is `e`-positive: a combination with nonnegative integer
-coefficients of the products `e_λ = ∏ᵢ e_{λᵢ}` of elementary symmetric polynomials over the
-partitions `λ` of `n`.
+**$e$-positive polynomials.** A polynomial $f$ with integer coefficients in the $n$ variables
+$x_0, \dots, x_{n-1}$ is $e$-positive when $f = \sum_{\lambda} c_\lambda e_\lambda$ for some
+natural numbers $c_\lambda$, where $\lambda = (\lambda_1, \dots, \lambda_k)$ ranges over the
+partitions of $n$ and $e_\lambda = e_{\lambda_1} \cdots e_{\lambda_k}$ is the product of the
+elementary symmetric polynomials $e_{\lambda_i}$ in $x_0, \dots, x_{n-1}$.
 
 ## Depends on
 

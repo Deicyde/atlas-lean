@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_of_denote_eq
 ---
 
-# Ctx Equiv of denote eq
+# Equal denotations imply contextual equivalence in PCF
 
-Terms with the same denotation are contextually equivalent.
+**Equal denotations imply contextual equivalence in PCF.** If two PCF terms $t$ and $u$ of
+the same type in the same typing context have the same denotation, as continuous maps from
+environments to the domain of their type, then $t$ and $u$ are contextually equivalent.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Ctx Equiv](ctx-equiv.md)
-- [Denote](../denotational/denote.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
+- [Semantic environments for PCF](../denotational/env.md)
+- [PCF terms](../syntax/tm.md)
+- [Contextual equivalence in PCF](ctx-equiv.md)
+- [Denotation of PCF terms](../denotational/denote.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
 
 ## Proof depends on
 
-- [Ctx](ctx.md)
-- [Plug](plug.md)
-- [Eval](../big-step/eval.md)
-- [Denote plug congr](denote-plug-congr.md)
-- [Eval numeral iff](../adequacy/eval-numeral-iff.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Plugging a term into a PCF context](plug.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Equal denotations are preserved by plugging into PCF contexts](denote-plug-congr.md)
+- [Evaluation to a numeral agrees with the denotation](../adequacy/eval-numeral-iff.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Sources
 

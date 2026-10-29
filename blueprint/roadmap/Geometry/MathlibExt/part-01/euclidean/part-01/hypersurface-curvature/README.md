@@ -4,13 +4,13 @@ navigation: module
 
 # Hypersurface Curvature
 
-- [Is Local Defining Function](is-local-defining-function.md)
-- [Mem](mem.md)
-- [Level Set Second Fundamental Form](level-set-second-fundamental-form.md)
-- [Level Set Mean Curvature](level-set-mean-curvature.md)
-- [Level Set Second Fundamental Form smul](level-set-second-fundamental-form-smul.md)
-- [Level Set Mean Curvature smul](level-set-mean-curvature-smul.md)
-- [Level Set Mean Curvature smul of pos](level-set-mean-curvature-smul-of-pos.md)
-- [Level Set Mean Curvature neg](level-set-mean-curvature-neg.md)
-- [Level Set Mean Curvature sphere](level-set-mean-curvature-sphere.md)
-- [Level Set Mean Curvature affine](level-set-mean-curvature-affine.md)
+- [Local defining function](is-local-defining-function.md)
+- [A point with a local defining function lies in the set](mem.md)
+- [Second fundamental form of a level set](level-set-second-fundamental-form.md)
+- [Mean curvature of a level set](level-set-mean-curvature.md)
+- [Second fundamental form under rescaling of the defining function](level-set-second-fundamental-form-smul.md)
+- [Mean curvature under rescaling of the defining function](level-set-mean-curvature-smul.md)
+- [Positive rescaling preserves the mean curvature](level-set-mean-curvature-smul-of-pos.md)
+- [Reversing the normal negates the mean curvature](level-set-mean-curvature-neg.md)
+- [Mean curvature of the unit sphere](level-set-mean-curvature-sphere.md)
+- [Hyperplanes have zero mean curvature](level-set-mean-curvature-affine.md)

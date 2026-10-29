@@ -11,13 +11,13 @@ The positions from which player `p` has a winning positional strategy.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
-- [Player](player.md)
+- [Parity game](parity-game.md)
+- [Players of a parity game](player.md)
 
 ## Proof depends on
 
 - [Positional Strategy](positional-strategy.md)
-- [Wins From](wins-from.md)
+- [Winning strategy from a position](wins-from.md)
 
 ## Sources
 

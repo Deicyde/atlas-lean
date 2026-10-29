@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.CCS.Process.communication_prefix_congr
 ---
 
-# Communication prefix congr
+# Prefix preserves strong bisimilarity in CCS with communication
 
-Prefix preserves strong bisimilarity.
+**Prefix preserves strong bisimilarity in CCS with communication.** For every CCS label $a$ and
+all CCS processes $P$ and $Q$: if $P$ and $Q$ are strongly bisimilar in the labelled transition
+system of CCS with communication, then so are the prefixed processes $a.P$ and $a.Q$.
 
 ## Depends on
 
-- [Label](label.md)
-- [Process](../choice/process.md)
-- [Communication LTS](communication-lts.md)
+- [CCS labels](label.md)
+- [Finite CCS processes](../choice/process.md)
+- [Labelled transition system of CCS with communication](communication-lts.md)
 
 ## Proof depends on
 
-- [Synchronize](synchronize.md)
-- [Raw Step](../choice/raw-step.md)
+- [Synchronization of CCS labels](synchronize.md)
+- [Operational semantics of finite CCS with a synchronization function](../choice/raw-step.md)
 
 ## Sources
 

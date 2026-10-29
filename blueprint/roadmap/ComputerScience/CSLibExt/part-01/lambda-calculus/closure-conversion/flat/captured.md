@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.captured
 ---
 
-# Captured
+# Variables captured by a lambda
 
-The outer variables a lambda with body `b` captures: the free variables of
-`λ. b`, without duplicates.
+**Variables captured by a lambda.** For a raw term $b$, the captured variables of $b$ form
+the list of free indices of $b$ at binder depth $1$ with duplicates removed: the de Bruijn
+indices $j$ such that variable $j + 1$ occurs free in $b$, that is, the free variables of the
+abstraction $\lambda.\,b$, each listed once.
 
 ## Depends on
 
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
 
 ## Proof depends on
 
-- [Free Indices](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
+- [Free indices of a raw term](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
 
 ## Sources
 

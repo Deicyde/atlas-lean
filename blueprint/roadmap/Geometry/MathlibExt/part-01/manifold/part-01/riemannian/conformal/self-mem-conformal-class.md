@@ -6,13 +6,14 @@ proof: formalized
 lean: Manifold.self_mem_conformalClass
 ---
 
-# Self mem conformal Class
+# A metric lies in its own conformal class
 
-Every metric lies in its own conformal class.
+**A metric lies in its own conformal class.** Every smooth Riemannian metric $g$ on a
+smooth manifold $M$ lies in the conformal class of $g$.
 
 ## Depends on
 
-- [Conformal Class](conformal-class.md)
+- [Conformal class of a Riemannian metric](conformal-class.md)
 
 ## Sources
 

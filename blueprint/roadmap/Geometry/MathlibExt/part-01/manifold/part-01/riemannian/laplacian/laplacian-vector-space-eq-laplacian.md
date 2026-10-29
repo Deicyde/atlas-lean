@@ -6,17 +6,19 @@ proof: formalized
 lean: Manifold.laplacian_vectorSpace_eq_laplacian
 ---
 
-# Laplacian vector Space eq laplacian
+# The Laplacian on a vector space is the flat Laplacian at twice-differentiable points
 
-On a finite-dimensional real inner product space, if `fderiv ℝ f` is differentiable
-at `x`, the manifold Laplacian on the model space agrees with Mathlib's flat Laplacian
-`Δ` (`Laplacian.laplacian`). The hypothesis is the one used by
-`hessian_vectorSpace_eq_fderiv_fderiv`: Mathlib's `Δ f x` is built from
-`fderiv ℝ (fderiv ℝ f) x`, which is `0` when `fderiv ℝ f` is not differentiable at `x`,
-while `laplacian 𝓘(ℝ, F) f x` sums the directional derivatives of
-`y ↦ fderiv ℝ f y v`. The orthonormal basis of `F` is the transfer of
-`stdOrthonormalBasis ℝ (TangentSpace 𝓘(ℝ, F) x)` along `NormedSpace.fromTangentSpace x`,
-which preserves inner products by `rfl`.
+**The Laplacian on a vector space is the flat Laplacian at twice-differentiable points.** Let
+$F$ be a finite-dimensional real inner product space with its standard Riemannian metric, let
+$f : F \to \mathbb{R}$ and $x \in F$, and let $Df$ denote the Fréchet derivative of $f$, taken to
+be $0$ at points where $f$ is not differentiable. Suppose $Df$ is differentiable at $x$, with
+derivative $D^2 f(x)$ there. Then the Laplacian $\Delta f(x)$ equals $\sum_i D^2 f(x)(b_i, b_i)$
+for any orthonormal basis $(b_i)$ of $F$, the flat Laplacian of $f$ at $x$.
+
+Without the hypothesis the two can differ: $D^2 f(x)$ is taken to be $0$ when $Df$ is not
+differentiable at $x$, while $\Delta f(x)$ is the sum, over the vectors $v$ of the orthonormal
+basis used in its definition, of the derivative at $x$ in direction $v$ of the function
+$y \mapsto Df(y)(v)$.
 
 ## Depends on
 
@@ -24,10 +26,10 @@ which preserves inner products by `rfl`.
 
 ## Proof depends on
 
-- [Hessian](../hessian/hessian.md)
-- [Hessian vector Space](../hessian/hessian-vector-space.md)
-- [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
-- [Laplacian vector Space](laplacian-vector-space.md)
+- [Covariant Hessian](../hessian/hessian.md)
+- [The Hessian on Euclidean space as an iterated directional derivative](../hessian/hessian-vector-space.md)
+- [The Hessian on Euclidean space is the second derivative](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
+- [Laplacian on a vector space as a sum of second directional derivatives](laplacian-vector-space.md)
 
 ## Sources
 

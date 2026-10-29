@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.MooreMachine.toSequential_accept
 ---
 
-# To Sequential accept
+# Every state of the sequential transducer of a Moore machine is accepting
 
-A Moore machine and its sequential rendering translate the same words.
+**Every state of the sequential transducer of a Moore machine is accepting.** For a Moore
+machine $M$, the set of accepting states of the sequential transducer associated with $M$ is the
+set of all states.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
-- [To Sequential](to-sequential-2.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Moore machine](moore-machine.md)
+- [The sequential transducer of a Moore machine](to-sequential-2.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

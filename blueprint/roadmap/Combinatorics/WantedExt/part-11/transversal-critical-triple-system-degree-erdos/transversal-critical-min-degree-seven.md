@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TransversalCriticalTripleSystemDegreeErdosProblem834Wanted.transversalCriticalMinDegreeSeven
 ---
 
-# Transversal Critical Min Degree Seven
+# Erdős Problem 834 for transversal-critical triple systems
 
-Erdős Problem 834 with the transversal notion of `3`-criticality: there is a `3`-uniform
-hypergraph `H` (`SetFamily.IsUniform H 3`, on some vertex set `Fin n`) with a transversal (a vertex
-set meeting every edge) of at most `3` vertices, none of at most `2` vertices, and for every edge
-`e` a transversal of `H - e` of at most `2` vertices (`τ(H) = 3`, `τ(H - e) ≤ 2`), in which every
-vertex lies in at least `7` edges.
+**Erdős Problem 834 for transversal-critical triple systems.** There exist $n \in \mathbb{N}$
+and a $3$-uniform hypergraph $H$ on the vertex set $\{0, \dots, n-1\}$ such that some set of at
+most $3$ vertices meets every edge of $H$, no set of at most $2$ vertices meets every edge of $H$,
+for every edge $e$ of $H$ some set of at most $2$ vertices meets every edge of $H$ other than $e$,
+and every vertex lies in at least $7$ edges of $H$.
+
+Writing $\tau$ for the least size of a vertex set meeting every edge and $H - e$ for $H$ with the
+edge $e$ removed, this asks for $\tau(H) = 3$ and $\tau(H - e) \le 2$ for every edge $e$, with
+every vertex of degree at least $7$.
 
 ## Depends on
 

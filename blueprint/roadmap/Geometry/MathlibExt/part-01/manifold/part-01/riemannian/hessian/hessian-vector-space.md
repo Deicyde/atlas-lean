@@ -6,20 +6,26 @@ proof: formalized
 lean: Manifold.hessian_vectorSpace
 ---
 
-# Hessian vector Space
+# The Hessian on Euclidean space as an iterated directional derivative
 
-On an inner product space, the Hessian is the derivative in direction `u` of
-`y ↦ fderiv ℝ f y v`, with no hypothesis on `f`. Tangent vectors are identified with vectors
-in `F` via `NormedSpace.fromTangentSpace`.
+**The Hessian on Euclidean space as an iterated directional derivative.** Let $F$ be a
+finite-dimensional real inner product space, viewed as a Riemannian manifold with the metric
+given by its inner product, let $f : F \to \mathbb{R}$ and let $x \in F$. For all tangent vectors
+$u, v$ at $x$, identified with vectors of $F$, the Hessian of $f$ at $x$ is the derivative at $x$
+in direction $u$ of the function $y \mapsto Df(y)(v)$, where $Df(y)$ is the Fréchet derivative of
+$f$ at $y$: $\nabla^2 f(u, v) = D\big(y \mapsto Df(y)(v)\big)(x)(u)$.
+
+A Fréchet derivative that does not exist is taken to be $0$, so no hypothesis on $f$ is
+needed.
 
 ## Depends on
 
-- [Hessian](hessian.md)
+- [Covariant Hessian](hessian.md)
 
 ## Proof depends on
 
-- [Levi Civita Connection extend vector Space](../vector-space/levi-civita-connection-extend-vector-spa.md)
-- [Extend model space](../vector-space/extend-model-space.md)
+- [The Levi-Civita connection of Euclidean space kills constant vector fields](../vector-space/levi-civita-connection-extend-vector-spa.md)
+- [Extending a tangent vector of a normed space gives a constant vector field](../vector-space/extend-model-space.md)
 
 ## Sources
 

@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.erase_weaken
 ---
 
-# Erase weaken
+# Erasure of a weakened term
 
-Weakening an intrinsic term erases to incrementing all its free raw
-indices.
+**Erasure of a weakened term.** For every intrinsically typed term $t$ in context $\Gamma$
+and every type $B$, the erasure of the weakening of $t$ to the context $\Gamma$ extended by
+$B$ equals the raw renaming by the successor map $n \mapsto n + 1$ (lifted at every binder)
+of the erasure of $t$. Thus every free index is incremented by one.
 
 ## Depends on
 
-- [Raw Tm](../elaboration/raw-tm.md)
-- [Rename](rename.md)
-- [Tm](../syntax/tm.md)
-- [Erase](../elaboration/erase.md)
-- [Weaken](../syntax/weaken.md)
-- [Ty](../syntax/ty.md)
+- [Raw lambda terms](../elaboration/raw-tm.md)
+- [Renaming of raw terms](rename.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](../elaboration/erase.md)
+- [Weakening a simply typed term](../syntax/weaken.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Erase rename](erase-rename.md)
-- [Var](../syntax/var.md)
-- [To Nat](../elaboration/to-nat.md)
+- [Erasure commutes with renaming](erase-rename.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](../elaboration/to-nat.md)
 
 ## Sources
 

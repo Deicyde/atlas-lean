@@ -6,10 +6,11 @@ proof: formalized
 lean: Algebra.TensorProduct.algHom_card_eq_finrank_of_isSepClosed
 ---
 
-# Alg Hom card eq finrank of is Sep Closed
+# Number of embeddings into a separably closed field
 
-The number of `K`-algebra homomorphisms from a finite separable extension
-into a separably closed field is the degree of the extension.
+**Number of embeddings into a separably closed field.** Let $L/K$ be a finite separable
+field extension and let $\Omega$ be a separably closed field that is a $K$-algebra. Then the
+number of $K$-algebra homomorphisms $L \to \Omega$ equals the degree $[L : K]$.
 
 ## Depends on
 

@@ -6,12 +6,14 @@ proof: formalized
 lean: Manifold.laplacian_norm_sq
 ---
 
-# Laplacian norm sq
+# Laplacian of the squared norm
 
-The Laplacian of the squared norm on a finite-dimensional real inner product space
-is `2 * finrank ℝ F` at every point. The Hessian of `‖·‖ ^ 2` is `2⟪·, ·⟫` by
-`fderiv_fderiv_norm_sq_apply`, and each orthonormal basis vector pairs to one. These are
-the familiar flat-space values, with the same sign convention as Mathlib's `Δ`.
+**Laplacian of the squared norm.** Let $F$ be a finite-dimensional real inner product space
+of dimension $n$ with its standard Riemannian metric. For every $x \in F$, the Laplacian of the
+function $y \mapsto \|y\|^2$ at $x$ is $2n$.
+
+The Hessian of $\|\cdot\|^2$ is $2\langle \cdot, \cdot \rangle$, so each of its diagonal entries
+in an orthonormal basis is $2$.
 
 ## Depends on
 
@@ -19,8 +21,8 @@ the familiar flat-space values, with the same sign convention as Mathlib's `Δ`.
 
 ## Proof depends on
 
-- [Hessian](../hessian/hessian.md)
-- [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
+- [Covariant Hessian](../hessian/hessian.md)
+- [The Hessian on Euclidean space is the second derivative](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
 - [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources

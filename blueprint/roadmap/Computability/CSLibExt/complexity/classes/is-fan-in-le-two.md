@@ -5,15 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Classes.IsFanInLeTwo
 ---
 
-# Is Fan In Le Two
+# Circuits of fan-in at most two
 
-Every `and`/`or`/`mod` gate has at most two predecessors (bounded fan-in).
-`NC` requires bounded fan-in: without it, `NCK` would model unbounded-fan-in
-`AC^k`, not `NC^k`.
+**Circuits of fan-in at most two.** A flat Boolean circuit $C$ on $n$ inputs has fan-in at
+most two when every and gate, or gate and mod gate of $C$ has an argument list of length at
+most $2$.
+
+Bounded fan-in is what $\mathsf{NC}$ requires: without it, the $\mathsf{NC}^k$ circuit classes
+would be the unbounded-fan-in classes $\mathsf{AC}^k$.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

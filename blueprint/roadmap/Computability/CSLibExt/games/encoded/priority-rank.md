@@ -12,7 +12,7 @@ the game: the number of distinct priorities `q < p` that occur.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 
 ## Sources
 

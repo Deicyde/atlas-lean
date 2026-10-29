@@ -12,8 +12,8 @@ Complexity: A Modern Approach, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation)
 
 ## Depends on
 
-- [EXPSPACE](../../../../Computability/CSLibExt/complexity/classes/expspace.md)
-- [NEXP](../../../../Computability/CSLibExt/complexity/classes/nexp.md)
+- [The class EXPSPACE](../../../../Computability/CSLibExt/complexity/classes/expspace.md)
+- [The complexity class NEXP](../../../../Computability/CSLibExt/complexity/classes/nexp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

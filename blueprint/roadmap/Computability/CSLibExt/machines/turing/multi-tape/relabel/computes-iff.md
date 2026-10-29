@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.computes_iff
 ---
 
-# Computes iff
+# Relabelling preserves what a machine computes
 
-Relabelling preserves outputs.
+**Relabelling preserves what a machine computes.** Let $M$ and $M'$ be deterministic machines
+with $k$ work tapes over the same alphabet such that $M'$ simulates $M$ up to a state relabelling
+$f$. Then for all words $x$ and $o$ over the alphabet, $M'$ started on input $x$ eventually halts
+with output $o$ if and only if $M$ does.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Proof depends on
 
-- [Run From init Cfg](run-from-init-cfg.md)
-- [Halted map State iff](halted-map-state-iff.md)
+- [Lockstep runs from the initial configuration](run-from-init-cfg.md)
+- [Relabelling preserves halting](halted-map-state-iff.md)
 
 ## Sources
 

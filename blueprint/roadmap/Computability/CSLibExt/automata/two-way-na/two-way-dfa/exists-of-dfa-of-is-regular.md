@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Automata.TwoWayDFA.exists_ofDFA_of_isRegular
 ---
 
-# Exists of DFA of is Regular
+# Regular languages are accepted by two-way deterministic automata
 
-Every regular language is accepted by a deterministic two-way automaton.
+**Regular languages are accepted by two-way deterministic automata.** For every regular
+language $L$ over an alphabet, there is a deterministic two-way automaton with finitely many
+states whose language is exactly $L$.
 
 ## Depends on
 
-- [Two Way DFA](two-way-dfa.md)
-- [Language](language.md)
+- [Deterministic two-way automaton](two-way-dfa.md)
+- [Language of a deterministic two-way automaton](language.md)
 
 ## Proof depends on
 
-- [Language of DFA](language-of-dfa.md)
-- [Of DFA](of-dfa.md)
+- [The two-way simulation of a DFA accepts the same language](language-of-dfa.md)
+- [A DFA as a two-way deterministic automaton](of-dfa.md)
 
 ## Sources
 

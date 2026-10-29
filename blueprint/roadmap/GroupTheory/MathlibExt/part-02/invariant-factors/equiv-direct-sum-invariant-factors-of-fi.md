@@ -6,11 +6,12 @@ proof: formalized
 lean: AddCommGroup.equiv_directSum_invariant_factors_of_finite
 ---
 
-# Equiv direct Sum invariant factors of finite
+# Invariant factor decomposition of finite abelian groups
 
-The finite case of the invariant-factor decomposition: a finite abelian
-group is a product of cyclic groups `ZMod (d i)` with `1 < d i` and
-`d i ∣ d j` for `i ≤ j`.
+**Invariant factor decomposition of finite abelian groups.** Every finite abelian group $A$
+is isomorphic to $\bigoplus_{i < k} \mathbb{Z}/d_i\mathbb{Z}$ for some $k \in \mathbb{N}$ and
+natural numbers $d_0, \dots, d_{k-1}$ with $d_i > 1$ for every $i$ and $d_i \mid d_j$ whenever
+$i \le j$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Equiv free prod direct Sum invariant factors](equiv-free-prod-direct-sum-invariant-fac.md)
+- [Fundamental theorem of finitely generated abelian groups, invariant factor form](equiv-free-prod-direct-sum-invariant-fac.md)
 
 ## Sources
 

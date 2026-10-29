@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.seated
 ---
 
-# Seated
+# Number of seated philosophers
 
-The number of philosophers holding at least one fork.
+**Number of seated philosophers.** The number of seated philosophers in a state $s$ is the
+number of philosophers that hold at least one fork in $s$, that is, whose phase is either holding
+the first fork or eating.
 
 ## Depends on
 
-- [State](../dining-philosophers/state.md)
+- [Dining-philosophers state](../dining-philosophers/state.md)
 
 ## Proof depends on
 
-- [Phase](../dining-philosophers/phase.md)
+- [Phase of a philosopher](../dining-philosophers/phase.md)
 
 ## Sources
 

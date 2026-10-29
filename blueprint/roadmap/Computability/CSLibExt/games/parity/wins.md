@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Games.Player.Wins
 ---
 
-# Wins
+# Parity winning condition of a player
 
-The parity condition won by a player, on a sequence of priorities.
+**Parity winning condition of a player.** A player wins an infinite sequence of
+natural-number priorities when the sequence satisfies that player's parity condition: the even
+player wins it when the largest priority occurring infinitely often exists and is even, and the
+odd player wins it when the largest priority occurring infinitely often exists and is odd.
 
 ## Depends on
 
-- [Player](player.md)
+- [Players of a parity game](player.md)
 
 ## Proof depends on
 
-- [Parity Even](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
-- [Parity Odd](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
+- [Even max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Odd max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
 
 ## Sources
 

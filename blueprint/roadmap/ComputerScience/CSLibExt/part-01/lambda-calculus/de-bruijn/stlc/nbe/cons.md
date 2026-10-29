@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEnv.cons
 ---
 
-# Cons
+# Extending a semantic environment by one variable
 
-Extend a semantic environment below one binder.
+**Extending a semantic environment by one variable.** Given a semantic value $a$ of type $A$
+in a context $\Delta$ and a semantic environment $\eta$ for $\Gamma$ in $\Delta$, the extended
+environment is the semantic environment for the context $A :: \Gamma$ (the context $\Gamma$ with a
+new innermost variable of type $A$) in $\Delta$ that sends the new innermost variable to $a$ and
+sends the successor of each variable $x$ of $\Gamma$ to $\eta(x)$.
 
 ## Depends on
 
-- [Sem](sem.md)
-- [Sem Env](sem-env.md)
-- [Ty](../syntax/ty.md)
+- [Kripke semantic values](sem.md)
+- [Semantic environments](sem-env.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

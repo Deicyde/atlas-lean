@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Automata.NA.Buchi.hasLasso_of_mem
 ---
 
-# Has Lasso of mem
+# An accepted word yields a lasso
 
-With finitely many states, every accepted word yields a lasso: some accepting state is
-visited twice along an accepting run, and the run between the two visits is the cycle.
+**An accepted word yields a lasso.** If a nondeterministic Büchi automaton with finitely many
+states accepts some infinite word, then it has a lasso: some accepting state is visited twice
+along an accepting run, and the run between the two visits is the cycle.
 
 ## Depends on
 
-- [Has Lasso](has-lasso.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
 
 ## Sources
 

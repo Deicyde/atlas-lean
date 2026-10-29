@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsTy
 ---
 
-# Cps Ty
+# Call-by-value CPS translation of types
 
-The call-by-value CPS translation of types, for answer type `R`.
+**Call-by-value CPS translation of types.** For a fixed answer type $R$, the translation
+$\overline{A}$ of a simple type $A$ is defined by recursion on $A$: $\overline{b} = b$ for a base
+type $b$, and $\overline{A \to B} = \overline{A} \to ((\overline{B} \to R) \to R)$.
 
 ## Depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

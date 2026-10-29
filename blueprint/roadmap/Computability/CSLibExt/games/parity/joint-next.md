@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Games.ParityGame.jointNext
 ---
 
-# Joint Next
+# Joint successor of two strategies
 
-The successor chosen jointly by a strategy of `p` and a strategy of the opponent.
+**Joint successor of two strategies.** Let $\sigma$ be a positional strategy of player $p$
+and $\tau$ a positional strategy of the opponent of $p$ in a parity game. The joint successor of
+a position $v$ is $\sigma(v)$ if $p$ owns $v$, and $\tau(v)$ otherwise.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Positional Strategy](positional-strategy.md)
-- [Player](player.md)
+- [Players of a parity game](player.md)
 - [Opponent](opponent.md)
 
 ## Sources

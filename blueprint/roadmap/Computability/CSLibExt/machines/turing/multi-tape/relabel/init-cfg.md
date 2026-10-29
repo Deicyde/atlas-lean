@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.IsRelabelling.initCfg
 ---
 
-# Init Cfg
+# Initial configurations under relabelling
 
-The initial configuration of `tm'` is the relabelled initial configuration of `tm`.
+**Initial configurations under relabelling.** Let $M$ and $M'$ be deterministic machines with
+$k$ work tapes over the same alphabet such that $M'$ simulates $M$ up to a state relabelling $f$.
+Then for every input word $x$, the initial configuration of $M'$ on $x$ is the initial
+configuration of $M$ on $x$ with its state $q$ replaced by $f(q)$.
 
 ## Depends on
 
-- [Is Relabelling](is-relabelling.md)
+- [Simulation up to a state relabelling](is-relabelling.md)
 
 ## Sources
 

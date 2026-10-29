@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.Immune
 ---
 
-# Immune
+# Immune set
 
-A set is **immune** when it is infinite and contains no infinite RE subset.
+**Immune set.** A set $A$ of natural numbers is immune when it is infinite and every
+recursively enumerable set $B \subseteq A$ is finite.
 
 ## Depends on
 

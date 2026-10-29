@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Decidability.ramExecN
 ---
 
-# Ram Exec N
+# Bounded execution of a RAM machine
 
-Bounded execution of a RAM machine: `t` steps from the initial state.
+**Bounded execution of a RAM machine.** For a program $P$, a natural number $t$ and a state
+$s$, the state after $t$ steps of $P$ from $s$ is obtained by applying one step of $P$ to $s$
+exactly $t$ times.
 
 ## Depends on
 
-- [RAMInstr](raminstr.md)
-- [RAMState](ramstate.md)
+- [RAM instruction](raminstr.md)
+- [RAM state](ramstate.md)
 
 ## Proof depends on
 
-- [Ram Step](ram-step.md)
+- [One step of a RAM machine](ram-step.md)
 
 ## Sources
 

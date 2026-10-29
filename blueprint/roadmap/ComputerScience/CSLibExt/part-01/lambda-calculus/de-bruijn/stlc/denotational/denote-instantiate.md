@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.denote_instantiate
 ---
 
-# Denote instantiate
+# Denotation of an instantiated STLC body
 
-Instantiation is interpreted by extending the semantic environment.
+**Denotation of an instantiated STLC body.** For every interpretation $I$ of the base types,
+every term $b$ of type $B$ in context $A :: \Gamma$, every term $a$ of type $A$ in context $\Gamma$
+and every environment $\eta$ for $\Gamma$, the denotation in $\eta$ of $b$ with its newest variable
+replaced by $a$ equals the denotation of $b$ in the environment that extends $\eta$ by the
+denotation of $a$ in $\eta$ for the newest variable.
 
 ## Depends on
 
-- [Env](env.md)
-- [Cons](cons.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote-2.md)
-- [Instantiate](../substitution/instantiate.md)
-- [Ty](../syntax/ty.md)
-- [Denote](denote.md)
+- [Semantic environments](env.md)
+- [Extending a semantic environment in STLC](cons.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](denote.md)
 
 ## Proof depends on
 
-- [Single](../substitution/single.md)
-- [Denote Sub](denote-sub.md)
-- [Denote subst](denote-subst.md)
-- [Subst](../substitution/subst.md)
-- [Var](../syntax/var.md)
+- [Single-variable substitution (simply typed lambda calculus)](../substitution/single.md)
+- [Denotation of an STLC substitution](denote-sub.md)
+- [Substitution lemma for STLC denotation](denote-subst.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

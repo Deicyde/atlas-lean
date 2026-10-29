@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.LTS.RootedWeakStep.trans_τSTr
 ---
 
-# Trans τSTr
+# Appending silent steps to a rooted weak transition
 
-Silent cleanup can be added to a rooted weak transition.
+**Appending silent steps to a rooted weak transition.** In a labelled transition system with
+silent action $\tau$, if there is a rooted weak transition from $s$ to $m$ with label $a$, and $t$
+is reachable from $m$ by zero or more $\tau$-transitions, then there is a rooted weak transition
+from $s$ to $t$ with label $a$.
 
 ## Depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
+- [Rooted weak transition](rooted-weak-step.md)
 
 ## Sources
 

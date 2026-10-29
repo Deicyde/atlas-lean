@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.encode_injective
 ---
 
-# Encode injective
+# Injectivity of the numeric coding of codes
 
-The coding of codes is injective.
+**Injectivity of the numeric coding of codes.** If two codes $c$ and $c'$ with the same
+number of work tapes have the same numeric code, then $c = c'$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Encode](encode.md)
+- [Codes for multi-tape machines](code.md)
+- [Numeric coding of codes](encode.md)
 
 ## Proof depends on
 
-- [Equiv Table](equiv-table.md)
-- [Code Action](code-action.md)
-- [Equiv Prod](equiv-prod.md)
-- [Code Key](code-key.md)
+- [Codes as tables](equiv-table.md)
+- [Coded actions](code-action.md)
+- [Coded actions as tuples](equiv-prod.md)
+- [Keys of a code's table](code-key.md)
 
 ## Sources
 

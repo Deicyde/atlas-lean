@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.counterExecN_eq_of_halted
 ---
 
-# Bounded execution stays at its halted value
+# Counter-machine execution is constant after halting
 
-**Bounded execution stays at its halted value.**
+**Counter-machine execution is constant after halting.** Let $p$ be a counter-machine
+program, $s$ a state, and $t_1 \le t_2$ natural numbers. If the state reached from $s$ after
+$t_1$ steps of $p$ has program counter at least the length of $p$, then the state reached from $s$
+after $t_2$ steps equals the state reached after $t_1$ steps.
 
 ## Depends on
 
-- [Counter Instr](counter-instr.md)
-- [Counter State](counter-state.md)
-- [Counter Exec N](counter-exec-n.md)
+- [Counter-machine instructions](counter-instr.md)
+- [Counter-machine states](counter-state.md)
+- [Bounded execution of a counter machine](counter-exec-n.md)
 
 ## Proof depends on
 
-- [Bounded execution is stable once halted](counter-exec-n-stable.md)
+- [Counter-machine execution is stable once halted](counter-exec-n-stable.md)
 
 ## Sources
 

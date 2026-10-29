@@ -24,8 +24,8 @@ unfolding the fixed point once per step.
 
 - [Pre Exists](../basic/pre-exists.md)
 - [Exists Until expansion](../basic/exists-until-expansion.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Shift Seq](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Shifted sequence](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
 
 ## Sources
 

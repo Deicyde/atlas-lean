@@ -7,18 +7,22 @@ lean: Cslib.Turing.MultiTapeTM.Code.toFinTM
 
 # The finite-state machine of a code
 
-**The finite-state machine of a code**: the machine of `c` with its states restricted to
-`Fin c.stateBound`.
+**The finite-state machine of a code.** For a code $c$ with $k$ work tapes and state bound
+$N$, this is the binary machine with $k$ work tapes and states $0, 1, \dots, N - 1$ that starts
+in state $0$ and, in a state $q < N$ reading $a$ under the input head and $w$ under the work
+heads, takes the action of $c$ at $(q, a, w)$, with a successor state not below $N$ replaced by
+halting. Since every state the machine of $c$ can enter is below $N$, it is the machine of $c$
+with its states restricted to those below $N$.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [State Bound](state-bound.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [State bound of a code](state-bound.md)
 
 ## Proof depends on
 
-- [Fin Tr](fin-tr.md)
-- [States](../code/states.md)
+- [Transition function of a code on bounded states](fin-tr.md)
+- [States of a code](../code/states.md)
 
 ## Sources
 

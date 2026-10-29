@@ -13,7 +13,7 @@ Theory of Computation, 3rd ed., 2013, Theorem 10.13.
 
 ## Depends on
 
-- [RP](../../../../Computability/CSLibExt/complexity/classes/rp.md)
+- [The class RP](../../../../Computability/CSLibExt/complexity/classes/rp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)

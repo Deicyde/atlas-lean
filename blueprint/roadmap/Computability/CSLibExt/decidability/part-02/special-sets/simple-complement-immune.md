@@ -12,8 +12,8 @@ lean: Cslib.Decidability.simple_complement_immune
 
 ## Depends on
 
-- [Immune](immune.md)
-- [Simple](simple.md)
+- [Immune set](immune.md)
+- [Simple set](simple.md)
 
 ## Sources
 

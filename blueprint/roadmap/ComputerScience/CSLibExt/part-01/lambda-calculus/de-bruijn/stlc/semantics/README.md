@@ -6,18 +6,18 @@ navigation: module
 
 ## Stlc
 
-- [Value](value.md)
-- [Step](step.md)
+- [Values of STLC](value.md)
+- [Small-step call-by-value reduction in STLC](step.md)
 
 ## Step
 
 - [Value irreducible](value-irreducible.md)
-- [Closed function value is lam](closed-function-value-is-lam.md)
-- [Progress](progress.md)
-- [Deterministic](deterministic.md)
+- [Canonical forms for closed function values](closed-function-value-is-lam.md)
+- [Progress for closed STLC terms](progress.md)
+- [Small-step call-by-value reduction in STLC is deterministic](deterministic.md)
 - [Normal Form](normal-form.md)
-- [Closed normal Form iff value](closed-normal-form-iff-value.md)
+- [Closed normal forms are exactly the values](closed-normal-form-iff-value.md)
 
 ## Stlc
 
-- [Steps](steps.md)
+- [Multi-step call-by-value reduction in STLC](steps.md)

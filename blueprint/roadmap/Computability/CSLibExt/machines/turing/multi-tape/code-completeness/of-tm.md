@@ -7,19 +7,25 @@ lean: Cslib.Turing.MultiTapeTM.Code.ofTM
 
 # The code of a finite-state binary machine
 
-**The code of a finite-state binary machine**: its transition table over all states and
-symbols under the heads, with states numbered by `e`. It denotes `tm` when `e` is injective and
-sends the initial state to `0` (`isRelabelling_ofTM`).
+**The code of a finite-state binary machine.** Let $M$ be a machine over the binary alphabet
+with $k$ work tapes and a finite set of states $Q$, and let $e : Q \to \mathbb{N}$. The code of
+$M$ with states numbered by $e$ has one table entry for each state $q \in Q$, symbol $a$ under
+the input head and symbols $w$ under the $k$ work heads (each a bit or blank): its key is
+$(e(q), a, w)$ and its value is the coded action of $M$ in state $q$ reading $a$ and $w$, with
+the successor state numbered by $e$. The entries are listed in an unspecified order.
+
+When $e$ is injective and sends the initial state of $M$ to $0$, the machine of this code
+simulates $M$ up to the relabelling $e$.
 
 ## Depends on
 
-- [Code](../code/code.md)
+- [Codes for multi-tape machines](../code/code.md)
 
 ## Proof depends on
 
-- [Code Action](../code/code-action.md)
-- [Code Key](../code/code-key.md)
-- [Encode Action](encode-action.md)
+- [Coded actions](../code/code-action.md)
+- [Keys of a code's table](../code/code-key.md)
+- [Coding an action](encode-action.md)
 
 ## Sources
 

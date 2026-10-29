@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.CCS.Recursive.Process.constants
 ---
 
-# Constants
+# Constants of a process
 
-Collect the distinct process constants occurring in an expression.
-Deduplication happens once after collecting all occurrences.
+**Constants of a process.** Assuming equality of process constants is decidable, the
+constants of a recursive CCS process $P$ are the list obtained from the constant occurrences
+of $P$ by removing duplicates, so that every process constant occurring in $P$ appears in it
+exactly once.
 
 ## Depends on
 
-- [Process](process.md)
+- [Recursive CCS processes](process.md)
 
 ## Proof depends on
 
-- [Constant Occurrences](constant-occurrences.md)
+- [Constant occurrences of a process](constant-occurrences.md)
 
 ## Sources
 

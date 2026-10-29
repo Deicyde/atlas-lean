@@ -4,24 +4,24 @@ navigation: module
 
 # Buchi Emptiness
 
-- [Step](step.md)
-- [Has Lasso](has-lasso.md)
-- [Mem language iff](mem-language-iff.md)
-- [Lasso mem language](lasso-mem-language.md)
-- [Has Lasso of mem](has-lasso-of-mem.md)
+- [Symbol-forgetting transition graph of a Büchi automaton](step.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
+- [Büchi acceptance condition](mem-language-iff.md)
+- [Lassos give accepted ultimately periodic words](lasso-mem-language.md)
+- [An accepted word yields a lasso](has-lasso-of-mem.md)
 - [Lasso characterization of Büchi nonemptiness](language-nonempty-iff-has-lasso.md)
-- [Exists lasso word of nonempty](exists-lasso-word-of-nonempty.md)
+- [Nonempty Büchi languages contain ultimately periodic words](exists-lasso-word-of-nonempty.md)
 
 ## Reduction to graph reachability
 
-- [Exists m Tr iff refl Trans Gen](exists-m-tr-iff-refl-trans-gen.md)
-- [Exists ne nil m Tr iff trans Gen](exists-ne-nil-m-tr-iff-trans-gen.md)
-- [Has Lasso iff reachable](has-lasso-iff-reachable.md)
+- [Reachability by words is reachability in the transition graph](exists-m-tr-iff-refl-trans-gen.md)
+- [Nonempty words and paths of positive length](exists-ne-nil-m-tr-iff-trans-gen.md)
+- [The lasso condition in the transition graph](has-lasso-iff-reachable.md)
 
 ## Decision procedure
 
-- [Start Fin](start-fin.md)
-- [Lasso States](lasso-states.md)
-- [Has Lasso iff lasso States nonempty](has-lasso-iff-lasso-states-nonempty.md)
-- [Is Empty B](is-empty-b.md)
-- [Is Empty B iff](is-empty-b-iff.md)
+- [Finite set of start states](start-fin.md)
+- [Lasso states of a finite Büchi automaton](lasso-states.md)
+- [Lasso detection by finite reachability](has-lasso-iff-lasso-states-nonempty.md)
+- [Büchi emptiness test](is-empty-b.md)
+- [Correctness of the Büchi emptiness test](is-empty-b-iff.md)

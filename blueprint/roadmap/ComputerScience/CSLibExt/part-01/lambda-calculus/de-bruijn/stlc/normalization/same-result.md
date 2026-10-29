@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SameResult
 ---
 
-# Same Result
+# Closed terms with the same result
 
-Two terms have the same result when they evaluate to a common value.
+**Closed terms with the same result.** Two closed terms $t$ and $u$ of the same type have the
+same result when there is a value $v$ such that both $t$ and $u$ reduce to $v$ in zero or more
+call-by-value steps.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Steps](../semantics/steps.md)
-- [Value](../semantics/value.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Sources
 

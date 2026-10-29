@@ -13,7 +13,7 @@ RE subset of itself.
 
 ## Depends on
 
-- [Immune](immune.md)
+- [Immune set](immune.md)
 
 ## Sources
 

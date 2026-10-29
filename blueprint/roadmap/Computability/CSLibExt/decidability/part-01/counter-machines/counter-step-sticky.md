@@ -13,9 +13,9 @@ program the state does not change.
 
 ## Depends on
 
-- [Counter Instr](counter-instr.md)
-- [Counter State](counter-state.md)
-- [Counter Step](counter-step.md)
+- [Counter-machine instructions](counter-instr.md)
+- [Counter-machine states](counter-state.md)
+- [One step of a counter machine](counter-step.md)
 
 ## Sources
 

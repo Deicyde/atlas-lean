@@ -6,20 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub.comp_single_apply
 ---
 
-# Comp single apply
+# Composing a single substitution with a substitution
 
-Composing a singleton substitution substitutes into its distinguished image.
+**Composing a single substitution with a substitution.** Let $a$ be a term of type $A$ in a
+context $\Gamma$ and $\sigma$ a substitution from $\Gamma$ to $\Delta$, and write $a[\sigma]$ for
+the result of applying $\sigma$ to $a$. The composite of the single substitution of $a$ for the
+newest variable followed by $\sigma$ agrees, at every variable $x$ of the context $\Gamma$
+extended by a newest variable of type $A$, with the extension of $\sigma$ that sends the newest
+variable to $a[\sigma]$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Comp](comp.md)
-- [Cons](cons.md)
-- [Single](../substitution/single.md)
-- [Tm](../syntax/tm.md)
-- [Subst](../substitution/subst.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Composition of simply typed substitutions](comp.md)
+- [Extension of a simply typed substitution](cons.md)
+- [Single-variable substitution (simply typed lambda calculus)](../substitution/single.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

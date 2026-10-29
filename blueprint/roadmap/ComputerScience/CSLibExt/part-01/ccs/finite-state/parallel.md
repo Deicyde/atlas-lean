@@ -6,26 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.CCS.Realizes.parallel
 ---
 
-# Parallel
+# Parallel composition preserves realization
 
-Parallel composition preserves realization.
+**Parallel composition preserves realization.** Fix a recursive specification. If the
+processes $P_x$ realize $s$ and the processes $Q_y$ realize $t$, then the parallel compositions
+$P_x \mid Q_y$, indexed by pairs $(x, y)$, realize the code-level parallel composition of $s$
+and $t$.
 
 ## Depends on
 
-- [Realizes](realizes.md)
-- [Par Steps](par-steps.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
-- [Specification](../recursion/specification.md)
+- [Realization of a code-level transition system](realizes.md)
+- [Code-level parallel composition](par-steps.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
+- [Recursive CCS specification](../recursion/specification.md)
 
 ## Proof depends on
 
-- [Complementary](../parallel/complementary.md)
-- [Synchronize](../parallel/synchronize.md)
+- [Complementary labels](../parallel/complementary.md)
+- [Synchronization of CCS labels](../parallel/synchronize.md)
 - [Step](../recursion/step.md)
 - [Relabelling](../static-operators/relabelling.md)
-- [Allowed](../static-operators/allowed.md)
-- [Relabel Action](../static-operators/relabel-action.md)
+- [Actions permitted by a restriction](../static-operators/allowed.md)
+- [Relabelling an action](../static-operators/relabel-action.md)
 
 ## Sources
 

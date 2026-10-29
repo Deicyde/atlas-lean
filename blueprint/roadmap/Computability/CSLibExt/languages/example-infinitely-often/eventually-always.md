@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.ωLanguage.Example.eventuallyAlways
 ---
 
-# Eventually Always
+# Eventually always
 
-Words whose letters are eventually all in `p`.
+**Eventually always.** For a set $p$ of symbols, the ω-language “eventually always $p$”
+consists of the infinite words $x_0 x_1 x_2 \ldots$ for which there is an $N$ with $x_k \in p$
+for all $k \ge N$.
 
 ## Depends on
 

@@ -13,8 +13,8 @@ and R. Solovay, "Relativizations of the P =? NP question", SIAM Journal on Compu
 
 ## Depends on
 
-- [NPWith Oracle](../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
-- [PWith Oracle](../../../../Computability/CSLibExt/complexity/classes/pwith-oracle.md)
+- [NP relative to an oracle](../../../../Computability/CSLibExt/complexity/classes/npwith-oracle.md)
+- [Polynomial time with an oracle](../../../../Computability/CSLibExt/complexity/classes/pwith-oracle.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 
 ## Sources

@@ -5,24 +5,23 @@ statement: formalized
 lean: Manifold.IsGeodesicVelocityCurve
 ---
 
-# Is Geodesic Velocity Curve
+# Geodesic velocity curves
 
-`u : ℝ → TangentBundle I M` is the velocity curve `t ↦ γ'(t)` of a geodesic `γ` of `g`,
-with `γ = fun t ↦ (u t).proj`. The textbook definition is `∇_{γ'} γ' = 0`; Mathlib has no
-covariant derivative along curves, so the geodesic equation is stated in weak form: pairing
-with every vector field `W` differentiable at the base point. Under the structure's own
-hypotheses the two fields force the needed regularity: testing the geodesic equation against
-the coordinate vector fields of a chart shows that the coordinates of the velocity are
-differentiable, with derivative given by the geodesic equation, which is continuous since the
-metric is `C^1`; so the base curve is `C^2` in charts. For such curves the weak form is
-equivalent to `∇_{γ'} γ' = 0` by metric compatibility along `γ`
-(`d/dt g(γ', W∘γ) = g(∇_{γ'}γ', W) + g(γ', ∇_{γ'}W)`, and the values `W(γ t)` exhaust the
-tangent space); in a chart it is the Euler-Lagrange equation
-`g(γ'', w) + (∂_{γ'} g)(γ', w) - ½ (∂_w g)(γ', γ') = 0`. The connection is applied only to
-fields differentiable at the point, where Mathlib's connection is uniquely determined
-(`CovariantDerivative.IsLeviCivitaConnection.uniqueness`) by the Koszul formula
-(`leviCivitaConnection_apply_inner`) and equals the textbook value. No smoothness of the curve
-beyond what the two fields assert is assumed.
+**Geodesic velocity curves.** Let $M$ be a $C^2$ manifold (boundary and corners allowed)
+modeled on a finite-dimensional real space, with a $C^1$ Riemannian metric
+$\langle \cdot, \cdot \rangle$ and Levi-Civita connection $\nabla$. A curve
+$u : \mathbb{R} \to TM$, with base curve $\gamma$ ($\gamma(t)$ is the base point of $u(t)$), is a
+geodesic velocity curve when for every $t \in \mathbb{R}$: $\gamma$ is differentiable at $t$ with
+velocity $\gamma'(t) = u(t)$; and for every vector field $W$ on $M$ that is differentiable at
+$\gamma(t)$, the function $s \mapsto \langle u(s), W(\gamma(s)) \rangle$ has derivative
+$\langle u(t), \nabla_{u(t)} W \rangle$ at $t$.
+
+The second condition is the weak form of the geodesic equation $\nabla_{\gamma'} \gamma' = 0$:
+by metric compatibility, $\frac{d}{dt} \langle \gamma', W \circ \gamma \rangle =
+\langle \nabla_{\gamma'} \gamma', W \rangle + \langle \gamma', \nabla_{\gamma'} W \rangle$, and the
+values $W(\gamma(t))$ exhaust the tangent space. The two conditions force $\gamma$ to be $C^2$ in
+charts, where the weak form is equivalent to $\nabla_{\gamma'} \gamma' = 0$; no further
+smoothness of the curve is assumed.
 
 ## Depends on
 

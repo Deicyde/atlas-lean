@@ -12,7 +12,7 @@ The owner of a `pos` position is `even` iff its game owner is Verifier.
 
 ## Depends on
 
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
 - [Frag Pos](frag-pos.md)

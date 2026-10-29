@@ -25,7 +25,7 @@ operations.
 
 - [The tabulated backward algorithm](backward-tab.md)
 - [Tabulated forward algorithm](../hidden-markov/forward-tab.md)
-- [The tabulated forward algorithm](../hidden-markov/likelihood-tab.md)
+- [Tabulated likelihood of a hidden Markov model](../hidden-markov/likelihood-tab.md)
 - [Smoothing step on tables](smooth-step.md)
 
 ## Sources

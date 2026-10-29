@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.MooreMachine.toSequential_finalOut
 ---
 
-# To Sequential final Out
+# Final outputs of the sequential transducer of a Moore machine
 
-The final outputs of the sequential rendering of a Moore machine are empty.
+**Final outputs of the sequential transducer of a Moore machine.** For a Moore machine $M$
+and every state $q$, the final output word at $q$ of the sequential transducer associated with
+$M$ is empty.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
-- [To Sequential](to-sequential-2.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Moore machine](moore-machine.md)
+- [The sequential transducer of a Moore machine](to-sequential-2.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

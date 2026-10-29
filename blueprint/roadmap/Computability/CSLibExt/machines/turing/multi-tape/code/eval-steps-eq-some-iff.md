@@ -8,22 +8,24 @@ lean: Cslib.Turing.MultiTapeTM.Code.evalSteps_eq_some_iff
 
 # Evaluator agreement
 
-**Evaluator agreement.** `evalSteps c x T` returns `o` iff the machine of `c` has halted
-after `T` steps on `x`, with output `o`.
+**Evaluator agreement.** For every code $c$, binary input $x$, clock $T \in \mathbb{N}$
+and binary word $o$, the clocked evaluator of $c$ on $x$ with clock $T$ returns $o$ if and
+only if the machine of $c$, run for $T$ steps from its initial configuration on $x$, has
+halted and its output is $o$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Eval Steps](eval-steps.md)
-- [To TM](to-tm.md)
+- [Codes for multi-tape machines](code.md)
+- [Clocked evaluator](eval-steps.md)
+- [The machine of a code](to-tm.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Init](init.md)
-- [Step](step.md)
-- [Represents](represents.md)
-- [Represents iterate](represents-iterate.md)
+- [Explicit configurations of the code evaluator](config.md)
+- [Initial configuration of the clocked evaluator](init.md)
+- [Evaluator step](step.md)
+- [Explicit configurations representing machine configurations](represents.md)
+- [The evaluator tracks the machine run](represents-iterate.md)
 
 ## Sources
 

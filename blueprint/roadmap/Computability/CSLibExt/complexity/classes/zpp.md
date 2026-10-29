@@ -7,7 +7,9 @@ lean: Cslib.Complexity.Classes.ZPP
 
 # ZPP
 
-`ZPP`: zero-error probabilistic polynomial time, defined as `RP ∩ coRP`.
+**ZPP.** The class $\mathsf{ZPP}$ (zero-error probabilistic polynomial time) is defined as
+the set of decision problems that lie in both $\mathsf{RP}$ and $\mathsf{coRP}$, that is,
+$\mathsf{ZPP} = \mathsf{RP} \cap \mathsf{coRP}$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ lean: Cslib.Complexity.Classes.ZPP
 
 ## Proof depends on
 
-- [RP](rp.md)
-- [Co RP](co-rp.md)
+- [The class RP](rp.md)
+- [The class coRP](co-rp.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

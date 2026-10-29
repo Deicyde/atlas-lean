@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.HasType.unique
 ---
 
-# Unique
+# Uniqueness of types for raw terms
 
-Typing is deterministic.
+**Uniqueness of types for raw terms.** Let $\Gamma$ be a context of simple types and $r$ a
+raw term. If $r$ has type $A$ in $\Gamma$ and $r$ has type $B$ in $\Gamma$ under the declarative
+typing judgment for raw terms, then $A = B$.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Ty](../syntax/ty.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [Lookup Var](lookup-var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Variable lookup](lookup-var.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.initial
 ---
 
-# Initial
+# Initial configuration of go-back-N
 
-The initial configuration: empty window based at `0`, empty channel, the
-receiver expecting `0`.
+**Initial configuration of go-back-N.** The initial configuration of the go-back-N
+protocol consists of the sender with window base $0$, no outstanding messages and next-frame
+offset $0$; the empty data channel; and the receiver expecting sequence number $0$.
 
 ## Depends on
 
-- [Config](config.md)
+- [Go-back-N configurations](config.md)
 
 ## Proof depends on
 
-- [Receiver](receiver.md)
-- [Sender](sender.md)
+- [Receiver states of go-back-N](receiver.md)
+- [Go-back-N sender state](sender.md)
 
 ## Sources
 

@@ -6,30 +6,34 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.NbeRelated.rename
 ---
 
-# Rename
+# Realization is stable under renaming
 
-Realization is stable under transport to a future context.
+**Realization is stable under renaming.** Fix an interpretation $I$ of the base types. Let
+$v$ be a Kripke semantic value of type $A$ in context $\Gamma$ that realizes an element $d$ of
+the denotation of $A$ at an environment $\eta$ for $\Gamma$. If $\rho : \Gamma \to \Delta$ is a
+renaming and $\theta$ is an environment for $\Delta$ with $\theta \circ \rho = \eta$, then the
+transport of $v$ along $\rho$ realizes $d$ at $\theta$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Rename](../denotational/rename.md)
-- [Nbe Related](nbe-related.md)
-- [Ren](../syntax/ren.md)
-- [Sem](../nbe/sem.md)
-- [Rename](../nbe/rename.md)
-- [Ty](../syntax/ty.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Renaming an environment](../denotational/rename.md)
+- [Kripke realization relation for NbE](nbe-related.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [Renaming a semantic value](../nbe/rename.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Proof depends on
 
-- [Tm](../syntax/tm.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote rename](../denotational/denote-rename.md)
-- [Rename](../syntax/rename.md)
-- [Var](../syntax/var.md)
-- [Comp](../syntax/comp.md)
-- [Lift](../syntax/lift.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Renaming lemma for STLC denotation](../denotational/denote-rename.md)
+- [Renaming a simply typed term](../syntax/rename.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Composition of renamings of simply typed contexts](../syntax/comp.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
 
 ## Sources
 

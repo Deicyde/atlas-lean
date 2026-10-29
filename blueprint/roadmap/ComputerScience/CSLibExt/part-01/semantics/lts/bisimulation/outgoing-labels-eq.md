@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.LTS.HomBisimilarity.outgoingLabels_eq
 ---
 
-# Outgoing Labels eq
+# Bisimilar states have equal sets of outgoing labels
 
-Bisimilar states have equal sets of outgoing labels.
+**Bisimilar states have equal sets of outgoing labels.** Let $s$ and $t$ be bisimilar states
+of a labelled transition system. Then the set of labels $\mu$ for which $s$ has a transition
+labelled $\mu$ equals the set of labels $\mu$ for which $t$ has a transition labelled $\mu$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Out Label iff](has-out-label-iff.md)
+- [Bisimilar states enable the same labels](has-out-label-iff.md)
 
 ## Sources
 

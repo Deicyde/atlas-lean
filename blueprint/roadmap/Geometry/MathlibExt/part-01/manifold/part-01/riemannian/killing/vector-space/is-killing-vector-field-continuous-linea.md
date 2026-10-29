@@ -6,18 +6,21 @@ proof: formalized
 lean: Manifold.isKillingVectorField_continuousLinearMap_iff
 ---
 
-# Is Killing Vector Field continuous Linear Map iff
+# Linear Killing fields on Euclidean space
 
-Infinitesimal rotations: the linear field `y ↦ A y` is Killing iff `A`
-satisfies `⟪A u, w⟫ + ⟪u, A w⟫ = 0` for all `u w`.
+**Linear Killing fields on Euclidean space.** Let $F$ be a finite-dimensional real inner
+product space, viewed as a Riemannian manifold with the metric given by its inner product, and let
+$A \colon F \to F$ be a continuous linear map. The linear vector field $y \mapsto A y$ is Killing
+if and only if $A$ is skew-adjoint: $\langle A u, w \rangle + \langle u, A w \rangle = 0$ for all
+$u, w \in F$.
 
 ## Depends on
 
-- [Is Killing Vector Field](../basic/is-killing-vector-field.md)
+- [Killing vector field](../basic/is-killing-vector-field.md)
 
 ## Proof depends on
 
-- [Is Killing Vector Field vector Space iff](is-killing-vector-field-vector-space-iff.md)
+- [Killing fields on Euclidean space](is-killing-vector-field-vector-space-iff.md)
 
 ## Sources
 

@@ -12,13 +12,13 @@ lean: Cslib.Decidability.oracleCodeOfNat_surjective
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Oracle Code Of Nat](oracle-code-of-nat.md)
+- [Oracle codes](oracle-code.md)
+- [Effective enumeration of oracle codes](oracle-code-of-nat.md)
 
 ## Proof depends on
 
-- [Encode Oracle Code](encode-oracle-code.md)
-- [The effective enumeration inverts the Gödel numbering](oracle-code-of-nat-encode.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
+- [The effective enumeration is a left inverse of the Gödel numbering](oracle-code-of-nat-encode.md)
 
 ## Sources
 

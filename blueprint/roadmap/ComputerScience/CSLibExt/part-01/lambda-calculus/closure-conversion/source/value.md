@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Source.Value
 ---
 
-# Value
+# Source values of closure conversion
 
-Source values: closures of a lambda body and its environment.
+**Source values of closure conversion.** A source value is a closure of a raw term $b$ (the
+body of a lambda) over an environment $\rho$, which is a list of source values.
 
 ## Depends on
 

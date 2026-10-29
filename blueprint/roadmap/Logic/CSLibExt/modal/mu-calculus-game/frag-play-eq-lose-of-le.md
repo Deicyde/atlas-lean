@@ -12,7 +12,7 @@ A canonical play that hits `lose` stays at `lose`.
 
 ## Depends on
 
-- [Is Play](../../../../Computability/CSLibExt/games/parity/is-play.md)
+- [Plays of a parity game](../../../../Computability/CSLibExt/games/parity/is-play.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Frag Pos](frag-pos.md)
 - [Fragment Game](fragment-game.md)

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.Sender
 ---
 
-# Sender
+# Go-back-N sender state
 
-Sender state: window base, number of outstanding messages, offset of the
+**Go-back-N sender state.** A state of the go-back-N sender is a triple of natural numbers:
+the base of the window (the sequence number of the oldest unacknowledged frame), the number of
+outstanding messages (accepted but not yet acknowledged), and the offset from the base of the
 next frame to transmit.
 
 ## Depends on

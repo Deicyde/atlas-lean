@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Automata.TwoWayDFA.ofDFA
 ---
 
-# Of DFA
+# A DFA as a two-way deterministic automaton
 
-The deterministic two-way automaton simulating a DFA, always moving its head one
-symbol to the right.
+**A DFA as a two-way deterministic automaton.** For a DFA $M$ with transition function
+$\delta$, this is the deterministic two-way automaton with the same states, start state and
+accepting states as $M$ which, in state $q$ reading a symbol $a$, goes to state $\delta(q, a)$
+and moves its head one symbol to the right.
 
 ## Depends on
 
-- [Two Way DFA](two-way-dfa.md)
+- [Deterministic two-way automaton](two-way-dfa.md)
 
 ## Sources
 

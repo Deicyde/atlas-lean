@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotationToLongitude
 ---
 
-# Diag Rotation To Longitude
+# Diagonal rotation as a longitude element
 
-The element of the longitude subgroup given by the diagonal rotation
-through `θ`.
+**Diagonal rotation as a longitude element.** For a real number $\theta$, the diagonal
+rotation through $\theta$, regarded as an element of the longitude subgroup of
+$\mathrm{SU}(2)$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ through `θ`.
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation mem special Unitary Group](diag-rotation-mem-special-unitary-group.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotations lie in $\mathrm{SU}(2)$](diag-rotation-mem-special-unitary-group.md)
 
 ## Sources
 

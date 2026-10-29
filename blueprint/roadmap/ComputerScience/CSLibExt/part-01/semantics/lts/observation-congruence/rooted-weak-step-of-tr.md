@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.LTS.rootedWeakStep_of_tr
 ---
 
-# Rooted Weak Step of tr
+# Transitions are rooted weak transitions
 
-Every strong transition is rooted weak.
+**Transitions are rooted weak transitions.** In a labelled transition system with a silent
+label $\tau$, every transition $s \xrightarrow{\mu} t$ is a rooted weak transition from $s$ to $t$
+with label $\mu$.
 
 ## Depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
+- [Rooted weak transition](rooted-weak-step.md)
 
 ## Sources
 

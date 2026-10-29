@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Sub.rename_lift_apply
 ---
 
-# Rename lift apply
+# Lifting commutes with renaming substitution images
 
-Renaming lifted substitution images is compatible with lifting the renaming.
+**Lifting commutes with renaming substitution images.** Let $\sigma$ be a substitution from
+$\Gamma$ to $\Delta$ and $\rho$ a renaming from $\Delta$ to $\Xi$. Lift $\sigma$ under a binder
+of type $A$ and rename each of its images by the lift of $\rho$ under the same binder. At every
+variable $x$ of the context $\Gamma$ extended by a newest variable of type $A$, this gives the
+same term as the lift under that binder of the substitution that renames each image of $\sigma$
+by $\rho$.
 
 ## Depends on
 
-- [Ren](../syntax/ren.md)
-- [Sub](../syntax/sub.md)
-- [Lift](../substitution/lift.md)
-- [Rename](rename.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
-- [Lift](../syntax/lift.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](../substitution/lift.md)
+- [Renaming the images of a substitution](rename.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
 
 ## Proof depends on
 
-- [Rename weaken](rename-weaken.md)
+- [Renaming commutes with weakening for intrinsically typed STLC terms](rename-weaken.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StanleyStembridgeEPositivityAMR156Problem0022Wanted.incomparabilityGraph
 ---
 
-# Incomparability Graph
+# Incomparability graph of a poset
 
-The incomparability graph `inc(P)`: distinct elements are adjacent when they are
-incomparable.
+**Incomparability graph of a poset.** The incomparability graph $\operatorname{inc}(P)$ of a
+partially ordered set $P$ is the simple graph on $P$ in which two distinct elements $x$ and $y$ are
+adjacent when they are incomparable, that is, neither $x \le y$ nor $y \le x$.
 
 ## Depends on
 

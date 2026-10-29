@@ -6,29 +6,32 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.convertFlat_scoped
 ---
 
-# Convert Flat scoped
+# Flat closure conversion preserves scoping
 
-Every code body produced by flat conversion is closed: the converted term
-is scoped wherever the accessors of its free variables are.
+**Flat closure conversion preserves scoping.** Let $t$ be a raw term, $m$ a natural number
+and $\mathrm{acc}$ a map from natural numbers to target terms. If $\mathrm{acc}(i)$ is scoped in
+$m$ for every free variable $i$ of $t$, then the flat conversion of $t$ with accessors
+$\mathrm{acc}$ is scoped in $m$. In particular every code body it contains is scoped in $1$, so
+refers only to its parameter.
 
 ## Depends on
 
 - [Target terms of closure conversion](../target/tm.md)
 - [Well-scoped target terms](../target/scoped.md)
-- [Convert Flat](convert-flat.md)
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
-- [Free Indices](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
+- [Flat closure conversion](convert-flat.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Free indices of a raw term](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
 
 ## Proof depends on
 
 - [Shifting preserves scoping](../target/shift-3.md)
 - [Shifting a target term](../target/shift.md)
-- [Captured](captured.md)
-- [Env Flat](env-flat.md)
-- [Flat Acc](flat-acc.md)
-- [Mem free Indices succ](mem-free-indices-succ.md)
-- [Snds](../correctness/snds.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Variables captured by a lambda](captured.md)
+- [Flat closure environment](env-flat.md)
+- [Accessors inside flat code](flat-acc.md)
+- [Free variables one binder deeper](mem-free-indices-succ.md)
+- [Iterated second projection](../correctness/snds.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

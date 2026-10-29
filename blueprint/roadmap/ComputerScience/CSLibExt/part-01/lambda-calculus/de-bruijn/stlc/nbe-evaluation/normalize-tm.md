@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeTm
 ---
 
-# Normalize Tm
+# Normalization of terms
 
-The underlying term of the reified normal form.
+**Normalization of terms.** For a term $t$ of type $A$ in context $\Gamma$, its normalized term
+is the term of type $A$ in context $\Gamma$ underlying the beta-normal, eta-long normal form of $t$
+computed by normalization by evaluation.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [Normalize Nf](normalize-nf.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Normalization by evaluation](normalize-nf.md)
 
 ## Sources
 

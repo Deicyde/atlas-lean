@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.ReducibleSub
 ---
 
-# Reducible Sub
+# Reducible substitutions
 
-A closing substitution is reducible when every one of its images is reducible.
+**Reducible substitutions.** A substitution $\sigma$ that replaces each variable of a
+context $\Gamma$ by a closed term of the same type is reducible when $\sigma(x)$ is reducible
+for every variable $x$ of $\Gamma$.
 
 ## Depends on
 
-- [Sub](../syntax/sub.md)
-- [Ty](../syntax/ty.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
 - [Reducible](reducible.md)
-- [Var](../syntax/var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

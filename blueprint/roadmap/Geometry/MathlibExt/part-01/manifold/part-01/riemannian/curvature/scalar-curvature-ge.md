@@ -5,9 +5,10 @@ statement: formalized
 lean: Manifold.ScalarCurvatureGE
 ---
 
-# Scalar Curvature GE
+# Scalar curvature bounded below
 
-`M` has scalar curvature `≥ k` at every point.
+**Scalar curvature bounded below.** A $C^\infty$ Riemannian manifold $M$ has scalar curvature at
+least $k \in \mathbb{R}$ when its scalar curvature at every point $x \in M$ is at least $k$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Scalar Curvature](scalar-curvature.md)
+- [Scalar curvature](scalar-curvature.md)
 
 ## Sources
 

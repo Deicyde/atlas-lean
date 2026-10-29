@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Decidability.urmDecidable_to_tm2Decidable
 ---
 
-# A URM-decidable predicate is decidable by a multi-stack Turing machine
+# URM-decidability implies multi-stack decidability
 
-**A URM-decidable predicate is decidable by a multi-stack Turing machine.**
+**URM-decidability implies multi-stack decidability.**
+Every predicate $P$ on $\mathbb{N}$ that is URM-decidable is decidable by a multi-stack Turing
+machine.
 
 ## Depends on
 
 - [Decidability by multi-stack machines](../basic/tm2-decidable.md)
-- [Decidable](../../part-02/urmbridge/decidable.md)
+- [URM-decidable predicate](../../part-02/urmbridge/decidable.md)
 
 ## Proof depends on
 

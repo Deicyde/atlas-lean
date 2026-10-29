@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.LTS.RootedWeaklyBisimilar.trans
 ---
 
-# Trans
+# Transitivity of rooted observational congruence
 
-Rooted observational congruence is transitive.
+**Transitivity of rooted observational congruence.** In a labelled transition system with
+silent action $\tau$, if $p$ is rooted observationally congruent to $q$ and $q$ is rooted
+observationally congruent to $r$, then $p$ is rooted observationally congruent to $r$.
 
 ## Depends on
 
-- [Rooted Weakly Bisimilar](rooted-weakly-bisimilar.md)
+- [Rooted observation congruence](rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
-- [Match rooted Left](match-rooted-left.md)
+- [Rooted weak transition](rooted-weak-step.md)
+- [Observation congruence matches rooted weak transitions](match-rooted-left.md)
 
 ## Sources
 

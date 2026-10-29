@@ -16,7 +16,7 @@ strategy composition is needed).
 ## Depends on
 
 - [Winning Region](../../../../Computability/CSLibExt/games/parity/winning-region.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [Frag Pos](frag-pos.md)
@@ -25,11 +25,11 @@ strategy composition is needed).
 
 ## Proof depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
-- [Wins From](../../../../Computability/CSLibExt/games/parity/wins-from.md)
-- [Move mem winning Region](../../../../Computability/CSLibExt/games/parity/move-mem-winning-region.md)
-- [Next mem winning Region](../../../../Computability/CSLibExt/games/parity/next-mem-winning-region.md)
+- [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
+- [Opponent moves stay in the winning region](../../../../Computability/CSLibExt/games/parity/move-mem-winning-region.md)
+- [A winning strategy's move stays in the winning region](../../../../Computability/CSLibExt/games/parity/next-mem-winning-region.md)
 - [To Mu](to-mu.md)
 - [To Mu injective](to-mu-injective.md)
 - [Frag Move](frag-move.md)

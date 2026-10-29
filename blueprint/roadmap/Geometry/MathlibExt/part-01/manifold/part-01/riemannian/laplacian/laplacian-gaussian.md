@@ -6,13 +6,14 @@ proof: formalized
 lean: Manifold.laplacian_gaussian
 ---
 
-# Laplacian gaussian
+# Laplacian of the Gaussian potential
 
-The Laplacian of the Gaussian potential `x ↦ (a / 2) * ‖x‖ ^ 2` on a
-finite-dimensional real inner product space is `a * finrank ℝ F`. This is the
-potential of the Gaussian gradient Ricci soliton. Each Hessian diagonal entry is `a`
-since the second derivative is scaled by `a / 2` from the squared-norm case. As above,
-this is the flat-space value with the same sign convention as Mathlib's `Δ`.
+**Laplacian of the Gaussian potential.** Let $F$ be a finite-dimensional real inner product
+space of dimension $n$ with its standard Riemannian metric. For every real number $a$ and every
+$x \in F$, the Laplacian of the function $y \mapsto \frac{a}{2}\|y\|^2$ at $x$ is $a \cdot n$.
+
+This function is the potential of the Gaussian gradient Ricci soliton; each diagonal entry of
+its Hessian in an orthonormal basis is $a$.
 
 ## Depends on
 
@@ -20,8 +21,8 @@ this is the flat-space value with the same sign convention as Mathlib's `Δ`.
 
 ## Proof depends on
 
-- [Hessian](../hessian/hessian.md)
-- [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
+- [Covariant Hessian](../hessian/hessian.md)
+- [The Hessian on Euclidean space is the second derivative](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
 - [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources

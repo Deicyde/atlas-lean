@@ -5,22 +5,27 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.FlatAccRel
 ---
 
-# Flat Acc Rel
+# Accessors implementing the free variables of a term
 
-The accessors implement every variable free in `t`.
+**Accessors implementing the free variables of a term.** Let $\rho$ be a list of source
+values of length $|\rho|$, $\rho_t$ a list of target values, $\mathrm{acc}$ a map assigning a target
+term to each natural number, and $t$ a raw term. The accessors $\mathrm{acc}$ implement $t$ for
+$\rho$ in $\rho_t$ when, for every free variable $i$ of $t$, $i < |\rho|$ and $\mathrm{acc}(i)$
+evaluates in the target environment $\rho_t$ to a target value that is related, by the flat value
+relation, to the entry of $\rho$ at index $i$ (counting from $0$).
 
 ## Depends on
 
-- [Value](../source/value.md)
+- [Source values of closure conversion](../source/value.md)
 - [Target terms of closure conversion](../target/tm.md)
 - [Target values of closure conversion](../target/value.md)
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
 
 ## Proof depends on
 
-- [Flat Val Rel](flat-val-rel.md)
+- [Flat value relation](flat-val-rel.md)
 - [Big-step semantics of the closure-conversion target](../target/eval.md)
-- [Free Indices](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
+- [Free indices of a raw term](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
 
 ## Sources
 

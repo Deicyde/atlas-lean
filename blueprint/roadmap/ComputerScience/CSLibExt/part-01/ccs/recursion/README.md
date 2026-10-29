@@ -6,21 +6,21 @@ navigation: module
 
 ## Recursive
 
-- [Process](process.md)
-- [Specification](specification.md)
+- [Recursive CCS processes](process.md)
+- [Recursive CCS specification](specification.md)
 
 ## Process
 
 - [Step](step.md)
-- [Lts](lts.md)
-- [Guarded Under](guarded-under.md)
-- [Guarded](guarded.md)
-- [Guarded Under true](guarded-under-true.md)
-- [Constant Occurrences](constant-occurrences.md)
-- [Constants](constants.md)
-- [Map Constants](map-constants.md)
-- [Guarded Under map Constants](guarded-under-map-constants.md)
+- [Labelled transition system of a recursive specification](lts.md)
+- [Guardedness under a prefix flag](guarded-under.md)
+- [Guarded process](guarded.md)
+- [Every process is guarded beneath a prefix](guarded-under-true.md)
+- [Constant occurrences of a process](constant-occurrences.md)
+- [Constants of a process](constants.md)
+- [Renaming process constants](map-constants.md)
+- [Renaming constants preserves guardedness](guarded-under-map-constants.md)
 
 ## Specification
 
-- [Guarded](guarded-2.md)
+- [Guarded recursive specification](guarded-2.md)

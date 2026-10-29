@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.closureConvertFlat_scoped
 ---
 
-# Closure Convert Flat scoped
+# Flat closure conversion of a closed term is well scoped
 
-Flat conversion of a closed program is closed, with closed code.
+**Flat closure conversion of a closed term is well scoped.** If a raw term $t$ is closed,
+then its flat closure conversion is scoped in $0$: it has no free variables, and every code
+body in it is scoped in $1$, so refers only to its parameter.
 
 ## Depends on
 
 - [Well-scoped target terms](../target/scoped.md)
-- [Closure Convert Flat](closure-convert-flat.md)
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
-- [Closed](../../de-bruijn/stlc/elaboration-structural/closed.md)
+- [Flat closure conversion of a program](closure-convert-flat.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Closed raw terms](../../de-bruijn/stlc/elaboration-structural/closed.md)
 
 ## Proof depends on
 
 - [Target terms of closure conversion](../target/tm.md)
-- [Convert Flat scoped](convert-flat-scoped.md)
-- [Free Indices](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
+- [Flat closure conversion preserves scoping](convert-flat-scoped.md)
+- [Free indices of a raw term](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
 
 ## Sources
 

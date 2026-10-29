@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.CCS.StaticProcess.Allowed
 ---
 
-# Allowed
+# Actions permitted by a restriction
 
-A restriction always permits `tau` and permits a visible action exactly
-when its channel is absent from the finite blocked-name list.
+**Actions permitted by a restriction.** Given a finite list $L$ of blocked channel names, the
+silent action $\tau$ is always permitted, and an input or an output on a channel $a$ is permitted
+exactly when $a \notin L$.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 
 ## Sources
 

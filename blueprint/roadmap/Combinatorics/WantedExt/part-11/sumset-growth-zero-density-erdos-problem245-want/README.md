@@ -4,5 +4,5 @@ navigation: module
 
 # Sumset Growth Zero Density Erdos Problem245
 
-- [Sumset Ratio Limsup At Least Three](sumset-ratio-limsup-at-least-three.md)
-- [Sumset Ratio Limsup At Least Three holds](sumset-ratio-limsup-at-least-three-holds.md)
+- [Erdős Problem 245 on sumsets of sets of density zero](sumset-ratio-limsup-at-least-three.md)
+- [Freiman's theorem on sumsets of sets of density zero](sumset-ratio-limsup-at-least-three-holds.md)

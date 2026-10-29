@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.parSteps
 ---
 
-# Par Steps
+# Code-level parallel composition
 
-Code-level parallel composition: either side moves alone, or the two sides
-synchronize on complementary labels.
+**Code-level parallel composition.** Given functions $s$ and $t$ listing the labelled
+transitions of codes $x$ and $y$, the transitions of the pair $(x, y)$ are listed in three
+blocks: $(a, (x', y))$ for each entry $(a, x')$ of $s(x)$; then $(a, (x, y'))$ for each entry
+$(a, y')$ of $t(y)$; then $(\tau, (x', y'))$ for each entry $(a, x')$ of $s(x)$ and each entry
+$(b, y')$ of $t(y)$ whose labels are complementary, that is, one is the input and the other the
+output on the same name.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 
 ## Proof depends on
 
-- [Synchronize](../parallel/synchronize.md)
+- [Synchronization of CCS labels](../parallel/synchronize.md)
 
 ## Sources
 

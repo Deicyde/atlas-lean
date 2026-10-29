@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Automata.NA.GenBuchi.nextCount
 ---
 
-# Next Count
+# Counter update for degeneralization
 
-The counter update for degeneralization: from counter `i`, awaiting the `i`-th
-acceptance set, move to `i + 1` on landing in that set, stay at `i` otherwise, and
-reset to `0` from the top value `k`.
+**Counter update for degeneralization.** Let $g$ be a generalized Büchi automaton with
+acceptance sets $F_0, \dots, F_{k-1}$. The counter update takes a counter value
+$i \in \{0, \dots, k\}$ and a state $t$ of $g$ and returns a counter value in $\{0, \dots, k\}$:
+if $i < k$, it returns $i + 1$ when $t \in F_i$ and $i$ when $t \notin F_i$; if $i = k$, it
+returns $0$.
 
 ## Depends on
 
-- [Gen Buchi](gen-buchi.md)
+- [Generalized Büchi automaton](gen-buchi.md)
 
 ## Sources
 

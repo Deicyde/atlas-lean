@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.ωSequence.ParityOdd
 ---
 
-# Parity Odd
+# Odd max-parity condition
 
-The max-parity condition, won by the odd player: the largest priority occurring infinitely
-often exists and is odd.
+**Odd max-parity condition.** A sequence $(p_k)_{k \in \mathbb{N}}$ of natural numbers
+(priorities) satisfies the odd max-parity condition if there is an odd $n$ that is the largest
+value occurring infinitely often in $(p_k)$.
+
+This is the winning condition of the odd player under the max-parity convention.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Max Inf Occ](is-max-inf-occ.md)
+- [Largest infinitely occurring value](is-max-inf-occ.md)
 
 ## Sources
 

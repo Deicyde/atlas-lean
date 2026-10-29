@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Decidability.decodeOracleCodeFuel_complete
 ---
 
-# The decoder inverts the encoder
+# The fuel-indexed decoder inverts the encoder
 
-**The decoder inverts the encoder** at any fuel above the code depth.
+**The fuel-indexed decoder inverts the encoder.** Write $\langle a, b \rangle$ for the pairing
+bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the Gödel numbering. Let $c$ be an
+oracle code with Gödel number $\langle t, p \rangle$. For every fuel $f$ strictly greater than the
+depth of $c$, the fuel-indexed decoder with fuel $f$, tag $t$ and payload $p$ returns $c$.
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Decode Oracle Code Fuel](decode-oracle-code-fuel.md)
-- [Encode Oracle Code](encode-oracle-code.md)
+- [Oracle codes](oracle-code.md)
+- [Fuel-indexed decoder of oracle codes](decode-oracle-code-fuel.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
 - [Depth of an oracle code](oracle-code-depth.md)
 
 ## Sources

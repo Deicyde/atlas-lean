@@ -6,16 +6,17 @@ proof: formalized
 lean: Cslib.Automata.MooreMachine.toSequential_initOut
 ---
 
-# To Sequential init Out
+# Initial output of the sequential transducer of a Moore machine
 
-The initial output of the sequential rendering of a Moore machine is the output
-of the start state.
+**Initial output of the sequential transducer of a Moore machine.** For every Moore machine
+$M$, the initial output of the sequential transducer of $M$ is the one-letter word consisting of
+the output of the start state of $M$.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
-- [To Sequential](to-sequential-2.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Moore machine](moore-machine.md)
+- [The sequential transducer of a Moore machine](to-sequential-2.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

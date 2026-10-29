@@ -4,7 +4,7 @@ navigation: module
 
 # Strongly Maximal Matching AMR29 Problem0084
 
-- [Is Matching](is-matching.md)
-- [Is Strongly Maximal](is-strongly-maximal.md)
-- [Bounded Edges Strongly Maximal Matching](bounded-edges-strongly-maximal-matching.md)
-- [Bounded Edges Strongly Maximal Matching refuted](bounded-edges-strongly-maximal-matching-2.md)
+- [Matching in a hypergraph](is-matching.md)
+- [Strongly maximal matching](is-strongly-maximal.md)
+- [Strongly maximal matchings in hypergraphs with bounded edges](bounded-edges-strongly-maximal-matching.md)
+- [Bounded edge size does not guarantee a strongly maximal matching](bounded-edges-strongly-maximal-matching-2.md)

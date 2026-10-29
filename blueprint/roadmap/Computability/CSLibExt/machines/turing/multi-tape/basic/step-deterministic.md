@@ -8,8 +8,9 @@ lean: Cslib.Turing.MultiTapeTM.step_deterministic
 
 # Step determinism
 
-**Step determinism.** A configuration of a deterministic machine has at most one successor
-under the step relation inherited from `MultiTapeNTM`.
+**Step determinism.** Let $M$ be a deterministic multi-tape Turing machine, with the one-step
+relation it inherits as a nondeterministic machine. If a configuration $c$ steps to both $c_1$
+and $c_2$, then $c_1 = c_2$.
 
 ## Depends on
 

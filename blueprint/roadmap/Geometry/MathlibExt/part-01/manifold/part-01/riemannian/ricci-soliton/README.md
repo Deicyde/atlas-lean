@@ -4,9 +4,9 @@ navigation: module
 
 # Ricci Soliton
 
-- [Is Gradient Ricci Soliton](is-gradient-ricci-soliton.md)
-- [Is Gradient Shrinking Ricci Soliton](is-gradient-shrinking-ricci-soliton.md)
-- [Is Gradient Ricci Soliton gaussian](is-gradient-ricci-soliton-gaussian.md)
-- [Is Gradient Shrinking Ricci Soliton gaussian](is-gradient-shrinking-ricci-soliton-gaus.md)
-- [Is Gradient Ricci Soliton gaussian iff](is-gradient-ricci-soliton-gaussian-iff.md)
-- [Is Gradient Shrinking Ricci Soliton gaussian iff](is-gradient-shrinking-ricci-soliton-gaus-2.md)
+- [Gradient Ricci soliton](is-gradient-ricci-soliton.md)
+- [Gradient shrinking Ricci soliton](is-gradient-shrinking-ricci-soliton.md)
+- [The Gaussian gradient Ricci soliton](is-gradient-ricci-soliton-gaussian.md)
+- [The Gaussian shrinking soliton](is-gradient-shrinking-ricci-soliton-gaus.md)
+- [Gaussian potentials that are gradient Ricci solitons](is-gradient-ricci-soliton-gaussian-iff.md)
+- [Gaussian potentials that are gradient shrinking Ricci solitons](is-gradient-shrinking-ricci-soliton-gaus-2.md)

@@ -10,8 +10,8 @@ navigation: module
 
 ## Visible Label
 
-- [Complement](complement.md)
-- [To Label](to-label.md)
+- [Complement of a visible label](complement.md)
+- [Visible labels as CCS labels](to-label.md)
 
 ## CCS
 
@@ -19,21 +19,21 @@ navigation: module
 
 ## Relabelling
 
-- [Apply](apply.md)
+- [Applying a relabelling to a channel name](apply.md)
 
 ## CCS
 
-- [Static Process](static-process.md)
+- [Static CCS processes](static-process.md)
 
 ## Static Process
 
-- [Of Process](of-process.md)
-- [Relabel Action](relabel-action.md)
-- [Relabel Action complementary](relabel-action-complementary.md)
-- [Allowed](allowed.md)
-- [Step](step.md)
-- [Lts](lts.md)
-- [Restriction Lift](restriction-lift.md)
-- [Restriction congr](restriction-congr.md)
-- [Relabelling Lift](relabelling-lift.md)
-- [Relabelling congr](relabelling-congr.md)
+- [Embedding finite CCS into CCS with static operators](of-process.md)
+- [Relabelling an action](relabel-action.md)
+- [Relabelling preserves complementary actions](relabel-action-complementary.md)
+- [Actions permitted by a restriction](allowed.md)
+- [Transitions of static CCS](step.md)
+- [Transition system of CCS with restriction and relabelling](lts.md)
+- [Lifting a relation through a restriction](restriction-lift.md)
+- [Restriction preserves strong bisimilarity](restriction-congr.md)
+- [Closure of a relation under one relabelling](relabelling-lift.md)
+- [Relabelling preserves strong bisimilarity](relabelling-congr.md)

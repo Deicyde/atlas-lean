@@ -6,10 +6,10 @@ proof: formalized
 lean: RealGalois.gal_card_eq_one_or_two
 ---
 
-# Gal card eq one or two
+# Galois groups over the reals have order 1 or 2
 
-The Galois group of a finite Galois extension of `ℝ` has order `1`
-or `2`.
+**Galois groups over the reals have order 1 or 2.** If $E$ is a finite Galois extension of
+$\mathbb{R}$, then the Galois group $\mathrm{Gal}(E/\mathbb{R})$ has order $1$ or $2$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finrank eq one or two](finrank-eq-one-or-two.md)
+- [Degree of a finite extension of the reals](finrank-eq-one-or-two.md)
 
 ## Sources
 

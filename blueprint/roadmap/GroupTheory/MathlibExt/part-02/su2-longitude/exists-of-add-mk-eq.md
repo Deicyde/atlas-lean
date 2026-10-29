@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.exists_ofAdd_mk_eq
 ---
 
-# Exists of Add mk eq
+# Every point of $\mathbb{R}/2\pi\mathbb{Z}$ comes from a real angle
 
-Every element of the circle group is the class of a real angle.
+**Every point of $\mathbb{R}/2\pi\mathbb{Z}$ comes from a real angle.** Every element $x$ of
+the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, is the class of some real
+number $a$.
 
 ## Depends on
 

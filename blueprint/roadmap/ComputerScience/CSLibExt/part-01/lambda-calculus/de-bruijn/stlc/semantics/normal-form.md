@@ -11,12 +11,12 @@ A term is in normal form when it has no outgoing reduction.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Small-step call-by-value reduction in STLC](step.md)
 
 ## Sources
 

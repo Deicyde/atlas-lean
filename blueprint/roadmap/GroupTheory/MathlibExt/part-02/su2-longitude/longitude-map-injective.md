@@ -18,10 +18,10 @@ from the diagonal rotation via the exponential.
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
-- [Diag Rotation eq diag Rotation iff](diag-rotation-eq-diag-rotation-iff.md)
-- [Exists of Add mk eq](exists-of-add-mk-eq.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
+- [When two diagonal rotations are equal](diag-rotation-eq-diag-rotation-iff.md)
+- [Every point of $\mathbb{R}/2\pi\mathbb{Z}$ comes from a real angle](exists-of-add-mk-eq.md)
 - [Longitude Map apply of Add mk](longitude-map-apply-of-add-mk.md)
 
 ## Sources

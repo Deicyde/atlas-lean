@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.langOf
 ---
 
-# Lang Of
+# Language of a decision problem
 
-The language (as a set of bitstrings) accepted by a decision problem.
+**Language of a decision problem.** The language of a decision problem $L$ is the set of
+bitstrings $x$ with $L(x) = \mathrm{true}$.
 
 ## Depends on
 

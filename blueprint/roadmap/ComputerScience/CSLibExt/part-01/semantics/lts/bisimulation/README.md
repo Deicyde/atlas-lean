@@ -4,6 +4,6 @@ navigation: module
 
 # Bisimulation
 
-- [Mtr](mtr.md)
-- [Has Out Label iff](has-out-label-iff.md)
-- [Outgoing Labels eq](outgoing-labels-eq.md)
+- [Bisimilarity transfers multistep transitions](mtr.md)
+- [Bisimilar states enable the same labels](has-out-label-iff.md)
+- [Bisimilar states have equal sets of outgoing labels](outgoing-labels-eq.md)

@@ -6,20 +6,22 @@ proof: formalized
 lean: Manifold.isGradientShrinkingRicciSoliton_gaussian_iff
 ---
 
-# Is Gradient Shrinking Ricci Soliton gaussian iff
+# Gaussian potentials that are gradient shrinking Ricci solitons
 
-For positive-dimensional `F`, the Gaussian potential is a gradient shrinking Ricci
-soliton with constant `c` if and only if `a = c` and `0 < c`.
+**Gaussian potentials that are gradient shrinking Ricci solitons.** Let $F$ be a real inner
+product space of positive finite dimension, viewed as a Riemannian manifold with the metric given
+by its inner product, and let $a, c \in \mathbb{R}$. The function $f(x) = \frac{a}{2} \|x\|^2$ on
+$F$ is a gradient shrinking Ricci soliton with constant $c$ if and only if $a = c$ and $c > 0$.
 
 ## Depends on
 
-- [Is Gradient Shrinking Ricci Soliton](is-gradient-shrinking-ricci-soliton.md)
+- [Gradient shrinking Ricci soliton](is-gradient-shrinking-ricci-soliton.md)
 
 ## Proof depends on
 
-- [Is Gradient Ricci Soliton](is-gradient-ricci-soliton.md)
-- [Is Gradient Ricci Soliton gaussian iff](is-gradient-ricci-soliton-gaussian-iff.md)
-- [Is Gradient Shrinking Ricci Soliton gaussian](is-gradient-shrinking-ricci-soliton-gaus.md)
+- [Gradient Ricci soliton](is-gradient-ricci-soliton.md)
+- [Gaussian potentials that are gradient Ricci solitons](is-gradient-ricci-soliton-gaussian-iff.md)
+- [The Gaussian shrinking soliton](is-gradient-shrinking-ricci-soliton-gaus.md)
 
 ## Sources
 

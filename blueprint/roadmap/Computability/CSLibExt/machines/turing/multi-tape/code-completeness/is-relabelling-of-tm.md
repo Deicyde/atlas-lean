@@ -8,26 +8,28 @@ lean: Cslib.Turing.MultiTapeTM.Code.isRelabelling_ofTM
 
 # The code of a machine simulates it
 
-**The code of a machine simulates it.** For an injective numbering `e` of the states of `tm`
-with `e tm.q₀ = 0`, the machine of `ofTM tm e` simulates `tm` up to the relabelling `e`.
+**The code of a machine simulates it.** Let $M$ be a machine over the binary alphabet with
+$k$ work tapes, a finite set of states $Q$ and initial state $q_0$, and let $e : Q \to \mathbb{N}$
+be injective with $e(q_0) = 0$. Then the machine of the code of $M$ with states numbered by $e$
+simulates $M$ up to the relabelling $e$.
 
 ## Depends on
 
 - [The code of a finite-state binary machine](of-tm.md)
-- [To TM](../code/to-tm.md)
-- [Is Relabelling](../relabel/is-relabelling.md)
+- [The machine of a code](../code/to-tm.md)
+- [Simulation up to a state relabelling](../relabel/is-relabelling.md)
 
 ## Proof depends on
 
-- [Code](../code/code.md)
-- [Act](../code/act.md)
-- [Act of TM](act-of-tm.md)
-- [Tr](../code/tr.md)
-- [Code Action](../code/code-action.md)
-- [To Action](../code/to-action.md)
-- [Encode Action](encode-action.md)
-- [Relabel Action](../relabel/relabel-action.md)
-- [To Action encode Action](to-action-encode-action.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [Action of a code at a key](../code/act.md)
+- [The code of a machine takes its coded actions](act-of-tm.md)
+- [Transition function of a code](../code/tr.md)
+- [Coded actions](../code/code-action.md)
+- [Decoding a coded action](../code/to-action.md)
+- [Coding an action](encode-action.md)
+- [Relabelling the successor state of an action](../relabel/relabel-action.md)
+- [Decoding a coded action](to-action-encode-action.md)
 
 ## Sources
 

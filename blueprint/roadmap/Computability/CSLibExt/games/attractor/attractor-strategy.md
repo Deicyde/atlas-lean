@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Games.ParityGame.attractorStrategy
 ---
 
-# Attractor Strategy
+# Attractor strategy
 
-The attractor strategy of `p` for `T`: at each position, a move into the lowest attractor stage
-reachable in one move (an arbitrary move if there is none).
+**Attractor strategy.** Let $G$ be a parity game, $p$ a player and $T$ a set of positions. The
+attractor strategy of $p$ for $T$ is the positional strategy of $p$ that at a position $v$ moves
+to a successor of $v$ lying in the $n$-th attractor stage of $T$ for $p$, for the least $n$ for
+which $v$ has such a successor, and to an arbitrary successor of $v$ if no successor of $v$ lies
+in any attractor stage.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
+- [Parity game](../parity/parity-game.md)
 - [Positional Strategy](../parity/positional-strategy.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor Stage](attractor-stage.md)
+- [Attractor stages](attractor-stage.md)
 
 ## Sources
 

@@ -13,8 +13,8 @@ small depth circuits" (STOC 1986).
 
 ## Depends on
 
-- [AC0](../../../../Computability/CSLibExt/complexity/classes/ac0.md)
-- [Majority Dec](../../../../Computability/CSLibExt/complexity/classes/majority-dec.md)
+- [The class $\mathsf{AC}^0$](../../../../Computability/CSLibExt/complexity/classes/ac0.md)
+- [The majority language](../../../../Computability/CSLibExt/complexity/classes/majority-dec.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

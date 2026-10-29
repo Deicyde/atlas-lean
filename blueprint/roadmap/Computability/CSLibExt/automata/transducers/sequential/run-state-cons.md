@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.SequentialTransducer.runState_cons
 ---
 
-# Run State cons
+# Final state of a sequential transducer run on a nonempty word
 
-The final state after reading `a :: xs` is the final state after reading `xs`
-from the successor of `q` on `a`.
+**Final state of a sequential transducer run on a nonempty word.** Let $S$ be a sequential
+transducer, $q$ a state, $a$ an input letter and $w$ an input word, and let $q'$ be the successor
+state of $q$ on $a$ under the transition function of $S$. Then the final state of the run of $S$
+from $q$ on the word $aw$ equals the final state of the run of $S$ from $q'$ on $w$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
-- [Run State](run-state.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

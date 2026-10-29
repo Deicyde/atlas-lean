@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Automata.NA.Buchi.hasLasso_iff_lassoStates_nonempty
 ---
 
-# Has Lasso iff lasso States nonempty
+# Lasso detection by finite reachability
 
-The lasso condition holds iff `lassoStates` is nonempty.
+**Lasso detection by finite reachability.** Let $A$ be a nondeterministic Büchi automaton
+with finitely many states and finitely many symbols, with decidable equality of states, and whose
+transitions, start states and accepting states are decidable. Then $A$ has a lasso if and only if
+its set of lasso states, computed by finite reachability closures as the accepting states that are
+reachable from a start state and lie on a nonempty cycle, is nonempty.
 
 ## Depends on
 
-- [Has Lasso](has-lasso.md)
-- [Lasso States](lasso-states.md)
+- [Lasso of a Büchi automaton](has-lasso.md)
+- [Lasso states of a finite Büchi automaton](lasso-states.md)
 
 ## Proof depends on
 
-- [Step](step.md)
-- [Has Lasso iff reachable](has-lasso-iff-reachable.md)
+- [Symbol-forgetting transition graph of a Büchi automaton](step.md)
+- [The lasso condition in the transition graph](has-lasso-iff-reachable.md)
 - [Mem trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin.md)
 - [Mem trans Gen Fin From](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin-from.md)
 - [Trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.certCheck
 ---
 
-# Cert Check
+# Weak-bisimulation certificate check
 
-The certificate check: both directions.
+**Weak-bisimulation certificate check.** For transition lists $s$ of implementation codes
+and $t$ of specification codes and a finite list $R$ of code pairs, the certificate check
+succeeds when both the forward check and the backward check succeed on $s$, $t$ and $R$.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 
 ## Proof depends on
 
-- [Backward Check](backward-check.md)
-- [Forward Check](forward-check.md)
+- [Backward certificate check](backward-check.md)
+- [Forward certificate check](forward-check.md)
 
 ## Sources
 

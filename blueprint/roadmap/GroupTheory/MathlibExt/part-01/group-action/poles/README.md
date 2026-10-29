@@ -5,7 +5,7 @@ navigation: module
 # Poles
 
 - [Poles](poles.md)
-- [Mem poles](mem-poles.md)
-- [Smul mem poles](smul-mem-poles.md)
-- [Image smul poles](image-smul-poles.md)
-- [Poles eq i Union fixed By](poles-eq-i-union-fixed-by.md)
+- [Characterization of poles](mem-poles.md)
+- [The action sends poles to poles](smul-mem-poles.md)
+- [The poles are invariant under the action](image-smul-poles.md)
+- [The poles as a union of fixed-point sets](poles-eq-i-union-fixed-by.md)

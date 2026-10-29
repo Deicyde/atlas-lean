@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Classes.NTMDecidesInTime
 ---
 
-# NTMDecides In Time
+# Nondeterministic decision in bounded time
 
-Nondeterministic decision in time `t`: every path of length at least
-`t |x|` halts, and acceptance is by an accepting path.
+**Nondeterministic decision in bounded time.** Let $M$ be a nondeterministic multi-tape
+Turing machine over the boolean alphabet, $t : \mathbb{N} \to \mathbb{N}$ and $L$ a set of
+bitstrings. Then $M$ decides $L$ in time $t$ if, for every input $x$, every computation path of
+$M$ on $x$ with at least $t(|x|)$ steps ends in a halted configuration, where $|x|$ is the length
+of $x$, and for every bitstring $x$, $x \in L$ if and only if some computation path of $M$ on $x$
+ends in a halted configuration whose output is the one-element list $[\mathrm{true}]$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [NTMDecides](ntmdecides.md)
+- [Nondeterministic decision](ntmdecides.md)
 
 ## Sources
 

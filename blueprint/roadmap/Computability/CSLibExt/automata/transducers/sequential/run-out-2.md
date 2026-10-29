@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Automata.MealyMachine.runOut
 ---
 
-# Run Out
+# Output word of a Mealy machine run
 
-The output word of the run from `q` on `xs`.
+**Output word of a Mealy machine run.** For a Mealy machine $M$, a state $q$ and an input
+word $x$, the output word of $M$ from $q$ on $x$ is the second component of the run of $M$ from
+$q$ on $x$: the word of output letters emitted along that run, one per input letter.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
+- [Mealy machine](mealy-machine.md)
 
 ## Proof depends on
 
-- [Run From](run-from-2.md)
+- [Run of a Mealy machine](run-from-2.md)
 
 ## Sources
 

@@ -6,33 +6,33 @@ navigation: module
 
 ## PCF
 
-- [Ty](ty.md)
-- [Nat](nat.md)
-- [Var](var.md)
-- [Tm](tm.md)
-- [Ren](ren.md)
-- [Sub](sub.md)
+- [PCF types](ty.md)
+- [Natural number type of PCF](nat.md)
+- [PCF variables](var.md)
+- [PCF terms](tm.md)
+- [PCF renamings](ren.md)
+- [Parallel substitutions for PCF](sub.md)
 
 ## Tm
 
-- [Numeral](numeral.md)
-- [Numeral injective](numeral-injective.md)
-- [Rename](rename.md)
-- [Weaken](weaken.md)
-- [Rename id](rename-id.md)
+- [PCF numerals](numeral.md)
+- [Injectivity of PCF numerals](numeral-injective.md)
+- [Renaming of PCF terms](rename.md)
+- [Weakening of PCF terms](weaken.md)
+- [Renaming a PCF term by the identity](rename-id.md)
 
 ## Sub
 
-- [Id](id.md)
-- [Lift](lift.md)
-- [Single](single.md)
-- [Cons](cons.md)
+- [Identity PCF substitution](id.md)
+- [Lifting a PCF substitution under a binder](lift.md)
+- [Single-variable substitution in PCF](single.md)
+- [Extending a PCF substitution by a term](cons.md)
 
 ## Tm
 
-- [Subst](subst.md)
-- [Instantiate](instantiate.md)
-- [Subst rename](subst-rename.md)
-- [Rename subst](rename-subst.md)
-- [Subst subst](subst-subst.md)
-- [Instantiate subst lift](instantiate-subst-lift.md)
+- [Substitution in PCF terms](subst.md)
+- [Instantiating the newest variable of a PCF term](instantiate.md)
+- [Substitution after renaming in PCF](subst-rename.md)
+- [Renaming after substitution in PCF](rename-subst.md)
+- [Composition of PCF substitutions](subst-subst.md)
+- [Instantiation after substitution under a binder](instantiate-subst-lift.md)

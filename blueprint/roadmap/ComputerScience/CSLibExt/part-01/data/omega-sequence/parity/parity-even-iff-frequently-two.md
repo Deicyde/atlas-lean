@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.ωSequence.parityEven_iff_frequently_two
 ---
 
-# Parity Even iff frequently two
+# Max-parity with priorities 1 and 2 is the Büchi condition
 
-Priorities in `{1, 2}`: the max-parity condition holds iff priority `2` occurs infinitely
-often.
+**Max-parity with priorities 1 and 2 is the Büchi condition.** Let $(p_k)_{k \in \mathbb{N}}$ be
+a sequence of natural numbers with $p_k \in \{1, 2\}$ for every $k$. Then $(p_k)$ satisfies the even
+max-parity condition if and only if $p_k = 2$ for infinitely many $k$.
 
 ## Depends on
 
-- [Parity Even](parity-even.md)
+- [Even max-parity condition](parity-even.md)
 
 ## Proof depends on
 
-- [Is Max Inf Occ](is-max-inf-occ.md)
+- [Largest infinitely occurring value](is-max-inf-occ.md)
 
 ## Sources
 

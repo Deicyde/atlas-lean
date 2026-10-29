@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Automata.MealyMachine.toSequential_accept
 ---
 
-# To Sequential accept
+# Every state of the sequential transducer of a Mealy machine is accepting
 
-A Mealy machine and its sequential rendering translate the same words.
+**Every state of the sequential transducer of a Mealy machine is accepting.** For a Mealy
+machine $M$, the set of accepting states of the sequential transducer associated with $M$ is the
+set of all states.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
-- [To Sequential](to-sequential.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Mealy machine](mealy-machine.md)
+- [Mealy machine as a sequential transducer](to-sequential.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

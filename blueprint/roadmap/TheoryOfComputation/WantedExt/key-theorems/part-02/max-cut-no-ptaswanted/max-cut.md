@@ -11,7 +11,7 @@ MAX-CUT as an optimization problem.
 
 ## Depends on
 
-- [Opt Problem](../../../../../Computability/CSLibExt/complexity/classes/opt-problem.md)
+- [Optimization problems](../../../../../Computability/CSLibExt/complexity/classes/opt-problem.md)
 
 ## Proof depends on
 

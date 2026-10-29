@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotationToLongitude_eq_of_diagRotation_eq
 ---
 
-# Diag Rotation To Longitude eq of diag Rotation eq
+# Equal rotation matrices give equal longitude elements
 
-Two longitude elements with equal diagonal rotations are equal.
+**Equal rotation matrices give equal longitude elements.** For real numbers $a$ and $b$, if
+the diagonal rotations through $a$ and through $b$ are equal as matrices, then the elements of
+the longitude subgroup given by the diagonal rotations through $a$ and through $b$ are
+equal.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation To Longitude](diag-rotation-to-longitude.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
 - [Longitude Subgroup](longitude-subgroup.md)
 
 ## Sources

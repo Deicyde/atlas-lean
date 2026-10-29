@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonSubsetCountErdosProblem861Wanted.sidonCountExponentAsymptotic_refuted
 ---
 
-# Sidon Count Exponent Asymptotic refuted
+# Erdős Problem 861, second question: negative answer
 
-Resolved false: `A(N) ≥ 2^{(1.16 + o(1)) √N}` (Saxton and Thomason, Theorem 2.11) and `f(N) ∼ √N`
-give `log₂ A(N) / f(N) ≥ 1.16 + o(1)`; erdosproblems.com/861 settles the second question negatively.
+**Erdős Problem 861, second question: negative answer.** Let $A(N)$ be the number of Sidon
+subsets of $\{1, \dots, N\}$, including the empty set and the singletons, and let $f(N)$ be the
+largest size of a Sidon subset of $\{1, \dots, N\}$. Then the ratio $\log_2 A(N) / f(N)$ does not
+tend to $1$ as $N \to \infty$; that is, $A(N) = 2^{(1 + o(1)) f(N)}$ fails.
+
+Saxton and Thomason proved $A(N) \ge 2^{(1.16 + o(1)) \sqrt{N}}$ (Theorem 2.11), and
+$f(N) \sim \sqrt{N}$, so $\log_2 A(N) / f(N) \ge 1.16 + o(1)$.
 
 ## Depends on
 
-- [Sidon Count Exponent Asymptotic](sidon-count-exponent-asymptotic.md)
+- [Erdős Problem 861, second question](sidon-count-exponent-asymptotic.md)
 
 ## Sources
 

@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEnv.rename
 ---
 
-# Rename
+# Renaming a semantic environment
 
-Rename every value in a semantic environment.
+**Renaming a semantic environment.** Given a renaming $\rho$ from a context $\Delta$ to a
+context $\Theta$ and a semantic environment $\eta$ for $\Gamma$ in $\Delta$, the renamed
+environment is the semantic environment for $\Gamma$ in $\Theta$ that sends each variable $x$ of
+type $A$ to the semantic value $\eta(x)$ renamed along $\rho$ at type $A$.
 
 ## Depends on
 
-- [Ren](../syntax/ren.md)
-- [Sem Env](sem-env.md)
-- [Ty](../syntax/ty.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Semantic environments](sem-env.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
-- [Var](../syntax/var.md)
+- [Renaming a semantic value](rename.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

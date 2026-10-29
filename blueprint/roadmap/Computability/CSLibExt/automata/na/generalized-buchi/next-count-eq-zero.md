@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Automata.NA.GenBuchi.nextCount_eq_zero
 ---
 
-# Next Count eq zero
+# The degeneralization counter resets at the top
 
-The counter resets to `0` from the top value `k`.
+**The degeneralization counter resets at the top.** Let $g$ be a generalized Büchi automaton
+with $k$ acceptance sets and let $i \in \{0, \dots, k\}$ be a counter value. If $i = k$, then for
+every state $t$ of $g$ the counter update of $i$ at $t$ is $0$.
 
 ## Depends on
 
-- [Gen Buchi](gen-buchi.md)
-- [Next Count](next-count.md)
+- [Generalized Büchi automaton](gen-buchi.md)
+- [Counter update for degeneralization](next-count.md)
 
 ## Sources
 

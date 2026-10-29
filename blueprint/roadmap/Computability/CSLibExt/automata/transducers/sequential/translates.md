@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Automata.SequentialTransducer.Translates
 ---
 
-# Translates
+# Translation by a sequential transducer
 
-`S` translates `xs` to `ys` when the run from the start state ends in an accepting
-state and the initial, per-letter, and final outputs concatenate to `ys`.
+**Translation by a sequential transducer.** A sequential transducer $S$ translates an input
+word $x$ to an output word $y$ when the run of $S$ on $x$ from its start state ends in an
+accepting state $q$ and $y$ is the concatenation of the initial output of $S$, the output words
+emitted by the transitions along the run, and the final output of $S$ at $q$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Proof depends on
 
-- [Run Out](run-out.md)
-- [Run State](run-state.md)
+- [Output word of a sequential transducer run](run-out.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

@@ -5,21 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.Classes.UniformCircuitFamily
 ---
 
-# Uniform Circuit Family
+# Log-space uniform circuit families
 
-Log-space uniformity of a circuit family: a log-space computable
-description function maps the unary input `replicate n true` (length `n`) to
-the bit-encoding of the serial circuit on `n` inputs, so the description is
-computed in space `O(log n)` in the number of inputs.
+**Log-space uniform circuit families.** A family $(C_n)_{n \in \mathbb{N}}$ of flat Boolean
+circuits, $C_n$ having $n$ inputs, is log-space uniform when there is a log-space computable
+function $D$ on bitstrings such that, for every $n$, decoding $D(1^n)$ (where $1^n$ is the string
+of $n$ ones) as a list of (gate kind, references) pairs succeeds and returns the serial encoding
+of $C_n$, that is, the list of the serial encodings of its gates in order. Since $1^n$ has
+length $n$, the description is computed in space $O(\log n)$.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Proof depends on
 
-- [Log Space Computable](log-space-computable.md)
-- [Ac Gate To Pair](ac-gate-to-pair.md)
+- [Log-space computable functions](log-space-computable.md)
+- [Encoding a gate as a (kind, references) pair](ac-gate-to-pair.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

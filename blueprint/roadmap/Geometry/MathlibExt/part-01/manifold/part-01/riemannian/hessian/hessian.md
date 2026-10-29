@@ -5,20 +5,23 @@ statement: formalized
 lean: Manifold.hessian
 ---
 
-# Hessian
+# Covariant Hessian
 
-The covariant Hessian of `f : M → ℝ` at `x`, as a function of two tangent vectors:
-`∇²f(u, v) = (∇_u df)(v) = u(V f) - df_x(∇_u V)`, where `V` is any vector field with `V x = v`
-and `∇` is the Levi-Civita connection. Here `V` is the extension `FiberBundle.extend E v`
-(constant coordinates in the preferred chart at `x`), as in `Manifold.riemannCurvature`.
+**Covariant Hessian.** Let $M$ be a smooth manifold modelled on a finite-dimensional real
+normed space, with a smooth Riemannian metric and its Levi-Civita connection $\nabla$. For
+$f : M \to \mathbb{R}$, a point $x \in M$ and tangent vectors $u, v \in T_xM$, let $V$ be the
+extension of $v$ to a vector field with constant coordinates in the preferred chart at $x$, so
+that $V(x) = v$. The Hessian of $f$ at $x$ is the real number
 
-This is the textbook Hessian `∇²f = ∇(df)` (Lee, *Introduction to Riemannian Manifolds*,
-2nd ed., GTM 176, Ch. 4; on Euclidean space it is the second derivative) because the
-Levi-Civita connection of a `C^∞` metric is `C^∞`, so it sends the smooth extension to a smooth
-vector field where it is uniquely determined and the Hessian expression is tensorial. Mathlib
-does not yet prove that regularity (see the TODO in `LeviCivita.lean`); until it does, this
-agreement is a standard fact not formalized here, and `hessian` is a function of its two tangent
-arguments rather than a bundled bilinear map.
+$$\nabla^2 f(u, v) = d\big(y \mapsto df_y(V(y))\big)_x(u) - df_x(\nabla_u V),$$
+
+that is, $u(Vf) - df_x(\nabla_u V)$, where $df_y$ is the differential of $f$ at $y$.
+
+This is the textbook Hessian $\nabla^2 f = \nabla(df)$, $\nabla^2 f(u, v) = (\nabla_u df)(v)$
+(Lee, *Introduction to Riemannian Manifolds*, 2nd ed., GTM 176, Ch. 4), provided the
+Levi-Civita connection sends smooth vector fields to smooth vector fields. That regularity is a
+standard fact that is not proved here, so the Hessian is defined as a function of two tangent
+vectors rather than as a bilinear map.
 
 ## Depends on
 

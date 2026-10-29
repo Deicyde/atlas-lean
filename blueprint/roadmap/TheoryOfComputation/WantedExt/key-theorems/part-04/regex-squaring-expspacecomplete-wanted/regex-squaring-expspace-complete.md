@@ -15,7 +15,7 @@ Meyer (STOC 1973) is membership, not universality.)
 
 ## Depends on
 
-- [EXPSPACE](../../../../../Computability/CSLibExt/complexity/classes/expspace.md)
+- [The class EXPSPACE](../../../../../Computability/CSLibExt/complexity/classes/expspace.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Regex Univ Dec](regex-univ-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.Simple
 ---
 
-# Simple
+# Simple set
 
-A set is **simple** when it is RE and its complement is immune.
+**Simple set.** A set $P$ of natural numbers is **simple** when it is recursively enumerable
+and its complement $\{n \mid \neg P(n)\}$ is immune.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Immune](immune.md)
+- [Immune set](immune.md)
 
 ## Sources
 

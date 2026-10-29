@@ -6,19 +6,19 @@ navigation: module
 
 ## Steps
 
-- [App Fun](app-fun.md)
-- [App Arg](app-arg.md)
-- [Suffix of value](suffix-of-value.md)
+- [Multi-step evaluation is a congruence in function position](app-fun.md)
+- [Evaluating the argument of a value function is a multi-step congruence](app-arg.md)
+- [Evaluation to a value passes through every reduct](suffix-of-value.md)
 
 ## Stlc
 
-- [Terminates](terminates.md)
+- [Termination of closed terms](terminates.md)
 
 ## Terminates
 
-- [Of value](of-value.md)
-- [Anti](anti.md)
-- [Forward](forward.md)
+- [Values terminate](of-value.md)
+- [Termination is closed under backward evaluation](anti.md)
+- [Termination is closed under forward evaluation](forward.md)
 
 ## Stlc
 
@@ -26,22 +26,22 @@ navigation: module
 
 ## Reducible
 
-- [Terminates](terminates-2.md)
-- [Forward](forward-2.md)
-- [Anti](anti-2.md)
-- [Iff of steps](iff-of-steps.md)
+- [Reducible terms terminate](terminates-2.md)
+- [Reducibility is closed under forward evaluation](forward-2.md)
+- [Reducibility is closed under backward evaluation](anti-2.md)
+- [Reducibility is invariant under evaluation](iff-of-steps.md)
 
 ## Stlc
 
-- [Reducible Sub](reducible-sub.md)
+- [Reducible substitutions](reducible-sub.md)
 
 ## Reducible Sub
 
-- [Empty](empty.md)
-- [Cons](cons.md)
+- [Substitutions on the empty context are reducible](empty.md)
+- [Extending a reducible substitution by a reducible term keeps it reducible](cons.md)
 
 ## Stlc
 
-- [Fundamental](fundamental.md)
-- [Reducible closed](reducible-closed.md)
-- [Terminates closed](terminates-closed.md)
+- [Fundamental theorem of the reducibility relation](fundamental.md)
+- [Closed terms are reducible](reducible-closed.md)
+- [Termination of the call-by-value simply typed lambda calculus](terminates-closed.md)

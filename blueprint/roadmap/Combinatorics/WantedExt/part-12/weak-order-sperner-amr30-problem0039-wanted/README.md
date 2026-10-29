@@ -4,7 +4,7 @@ navigation: module
 
 # Weak Order Sperner AMR30 Problem0039
 
-- [Inversions](inversions.md)
-- [Weak LE](weak-le.md)
-- [Weak Order Sperner](weak-order-sperner.md)
-- [Weak Order Sperner holds](weak-order-sperner-holds.md)
+- [Inversion set of a permutation](inversions.md)
+- [Weak order on the symmetric group](weak-le.md)
+- [Sperner property of the weak order](weak-order-sperner.md)
+- [The weak order on the symmetric group is Sperner](weak-order-sperner-holds.md)

@@ -19,8 +19,8 @@ lean: Cslib.CTL.Satisfies.existsFinally_iff_reachable
 ## Proof depends on
 
 - [Exists Finally iff](exists-finally-iff.md)
-- [Basic](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/trans.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Reachability in a labelled transition system is transitive](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/trans.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
 
 ## Sources
 

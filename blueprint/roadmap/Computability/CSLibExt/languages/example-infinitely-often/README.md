@@ -4,8 +4,8 @@ navigation: module
 
 # Example Infinitely Often
 
-- [Infinitely Often](infinitely-often.md)
-- [Eventually Always](eventually-always.md)
-- [Compl infinitely Often](compl-infinitely-often.md)
-- [Infinitely Often Na](infinitely-often-na.md)
-- [Eventually Always Na](eventually-always-na.md)
+- [Infinitely often](infinitely-often.md)
+- [Eventually always](eventually-always.md)
+- [Complement of “infinitely often”](compl-infinitely-often.md)
+- [Two-state Büchi automaton for “infinitely often”](infinitely-often-na.md)
+- [Two-state Büchi automaton for “eventually always”](eventually-always-na.md)

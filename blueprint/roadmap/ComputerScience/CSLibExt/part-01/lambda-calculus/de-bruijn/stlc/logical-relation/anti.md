@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Terminates.anti
 ---
 
-# Anti
+# Termination is closed under backward evaluation
 
-Termination is preserved by adding an evaluation prefix.
+**Termination is closed under backward evaluation.** Let $t$ and $t'$ be closed terms of
+the same type. If $t$ evaluates to $t'$ in zero or more call-by-value steps and $t'$
+terminates, then $t$ terminates.
 
 ## Depends on
 
-- [Steps](../semantics/steps.md)
-- [Terminates](terminates.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Termination of closed terms](terminates.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Step](../semantics/step.md)
-- [Value](../semantics/value.md)
+- [Small-step call-by-value reduction in STLC](../semantics/step.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Sources
 

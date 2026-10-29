@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StronglyMaximalMatchingAMR29Problem0084Wanted.IsStronglyMaximal
 ---
 
-# Is Strongly Maximal
+# Strongly maximal matching
 
-A strongly maximal matching (Aharoni): a matching `M` such that `|M' \ M| ≤ |M \ M'|`, as
-cardinals, for every matching `M'`.
+**Strongly maximal matching.** For a hypergraph with edge set $E$, a set $M$ is a strongly
+maximal matching (Aharoni) when $M$ is a matching of $E$ and every matching $M'$ of $E$
+satisfies $|M' \setminus M| \le |M \setminus M'|$, comparing the cardinalities as cardinal
+numbers.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Matching](is-matching.md)
+- [Matching in a hypergraph](is-matching.md)
 
 ## Sources
 

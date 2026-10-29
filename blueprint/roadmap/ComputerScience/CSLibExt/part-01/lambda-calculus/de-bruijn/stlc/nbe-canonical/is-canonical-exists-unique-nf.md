@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.isCanonical_existsUniqueNf
 ---
 
-# Is Canonical exists Unique Nf
+# Canonical terms have a unique normal form
 
-A canonical term has a unique normal-form witness.
+**Canonical terms have a unique normal form.** Let $t$ be a term of type $A$ in context
+$\Gamma$. If $t$ is canonical, then there is exactly one beta-normal, eta-long normal form of type
+$A$ in context $\Gamma$ whose underlying term is $t$.
 
 ## Depends on
 
-- [Is Canonical](is-canonical.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Canonical terms](is-canonical.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Proof depends on
 
-- [To Tm injective](to-tm-injective.md)
+- [Erasing normal forms is injective](to-tm-injective.md)
 
 ## Sources
 

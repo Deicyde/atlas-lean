@@ -13,7 +13,7 @@ Immerman, "Languages that capture complexity classes", SIAM Journal on Computing
 
 ## Depends on
 
-- [NL](../../../../../Computability/CSLibExt/complexity/classes/nl.md)
+- [The complexity class NL](../../../../../Computability/CSLibExt/complexity/classes/nl.md)
 - [TCOrdered Graph](tcordered-graph.md)
 - [Tc Definable](tc-definable.md)
 - [Tc Encodings](tc-encodings.md)

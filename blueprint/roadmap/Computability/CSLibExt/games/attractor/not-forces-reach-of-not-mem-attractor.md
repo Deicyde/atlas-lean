@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Games.ParityGame.not_forcesReach_of_notMem_attractor
 ---
 
-# Not forces Reach of not Mem attractor
+# No strategy forces a visit from outside the attractor
 
-From outside the attractor of `T`, no positional strategy of `p` forces a visit to `T`.
+**No strategy forces a visit from outside the attractor.** Let $G$ be a parity game, $p$ a
+player and $T$ a set of positions. If a position $v$ is not in the attractor of $T$ for $p$, then
+no positional strategy of $p$ forces a visit to $T$ from $v$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Forces Reach](forces-reach.md)
+- [Parity game](../parity/parity-game.md)
+- [Forcing a visit to a set](forces-reach.md)
 - [Positional Strategy](../parity/positional-strategy.md)
 - [Attractor](attractor.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Conforms](../parity/conforms.md)
-- [Is Play](../parity/is-play.md)
-- [Joint Next](../parity/joint-next.md)
-- [Outcome](../parity/outcome.md)
-- [Trap Strategy](trap-strategy.md)
-- [Trap Strategy avoids](trap-strategy-avoids.md)
-- [Eq or eq opponent](../parity/eq-or-eq-opponent.md)
+- [Plays conforming to a strategy](../parity/conforms.md)
+- [Plays of a parity game](../parity/is-play.md)
+- [Joint successor of two strategies](../parity/joint-next.md)
+- [Outcome of two positional strategies](../parity/outcome.md)
+- [Trap strategy](trap-strategy.md)
+- [The trap strategy avoids the target](trap-strategy-avoids.md)
+- [Every player is $p$ or the opponent of $p$](../parity/eq-or-eq-opponent.md)
 - [Opponent](../parity/opponent.md)
 
 ## Sources

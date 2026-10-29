@@ -6,18 +6,22 @@ proof: formalized
 lean: Algebra.TensorProduct.sepClosedTensorHom_injective
 ---
 
-# Sep Closed Tensor Hom injective
+# Injectivity of the evaluation homomorphism
 
-The evaluation homomorphism on pure tensors is injective: the columns
-of the embedding matrix are linearly independent.
+**Injectivity of the evaluation homomorphism.** Let $L/K$ be a finite separable field
+extension, let $\Omega$ be a separably closed field that is a $K$-algebra, and write
+$\mathrm{Hom}_K(L, \Omega)$ for the set of $K$-algebra homomorphisms $L \to \Omega$. Then the
+evaluation homomorphism of $\Omega$-algebras from $\Omega \otimes_K L$ to the algebra of
+functions $\mathrm{Hom}_K(L, \Omega) \to \Omega$, which sends $\omega \otimes l$ to the function
+$\sigma \mapsto \omega\, \sigma(l)$, is injective.
 
 ## Depends on
 
-- [Sep Closed Tensor Hom](sep-closed-tensor-hom.md)
+- [Evaluation map on the base change to a separably closed field](sep-closed-tensor-hom.md)
 
 ## Proof depends on
 
-- [Column functions linear Independent](column-functions-linear-independent.md)
+- [Embeddings evaluated on a basis](column-functions-linear-independent.md)
 
 ## Sources
 

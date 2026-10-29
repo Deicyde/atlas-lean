@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.numeral
 ---
 
-# Numeral
+# Numerals evaluate to themselves
 
-Numerals evaluate to themselves.
+**Numerals evaluate to themselves.** For every natural number $n$, the closed PCF numeral
+$\underline{n} = \mathsf{succ}^n\,\mathsf{zero}$ evaluates to itself under big-step call-by-name
+evaluation: $\underline{n} \Downarrow \underline{n}$.
 
 ## Depends on
 
-- [Eval](eval.md)
-- [Numeral](../syntax/numeral.md)
-- [Ty](../syntax/ty.md)
-- [Nat](../syntax/nat.md)
+- [Big-step call-by-name evaluation of PCF](eval.md)
+- [PCF numerals](../syntax/numeral.md)
+- [PCF types](../syntax/ty.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Proof depends on
 
-- [Tm](../syntax/tm.md)
+- [PCF terms](../syntax/tm.md)
 
 ## Sources
 

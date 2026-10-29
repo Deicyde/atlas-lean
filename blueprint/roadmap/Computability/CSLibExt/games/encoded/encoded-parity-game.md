@@ -5,12 +5,15 @@ statement: formalized
 lean: Cslib.Games.EncodedParityGame
 ---
 
-# Encoded Parity Game
+# Encoded parity game
 
-An encoded finite parity game on `Fin n`: the owner as a `Bool` (`false`
-for even, `true` for odd), the move relation as a `Bool`-valued matrix, and
-the priority as a function to `ℕ`. No seriality is assumed: restricted
-subgames need not be serial on the whole arena.
+**Encoded parity game.** An encoded finite parity game on the $n$ positions
+$0, \dots, n - 1$ consists of an owner for each position, given as a Boolean (false for the even
+player, true for the odd player), a move relation, given as a Boolean-valued $n \times n$
+matrix, and a priority for each position, given as a natural number.
+
+No seriality is assumed: a position may have no move, since restricted subgames need not be
+serial on the whole arena.
 
 ## Depends on
 

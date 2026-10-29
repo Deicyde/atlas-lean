@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonSubsetCountErdosProblem861Wanted.sidonSubsetsUpTo
 ---
 
-# Sidon Subsets Up To
+# Sidon subsets of $\{1, \dots, N\}$
 
-The Sidon subsets of `{1, …, N}`.
+**Sidon subsets of $\{1, \dots, N\}$.** For a natural number $N$, this is the finite family
+of all subsets of $\{1, \dots, N\}$ that are Sidon sets of natural numbers, including the empty
+set and the singletons.
 
 ## Depends on
 

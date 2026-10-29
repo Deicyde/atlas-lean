@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.isCanonical_normalizeTm
 ---
 
-# Is Canonical normalize Tm
+# Normalized terms are canonical
 
-Every result produced by the normalizer is canonical.
+**Normalized terms are canonical.** For every term $t$ of type $A$ in context $\Gamma$, the
+term obtained by normalizing $t$ by evaluation is canonical.
 
 ## Depends on
 
-- [Is Canonical](is-canonical.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Canonical terms](is-canonical.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Is Canonical iff normalize Tm eq](is-canonical-iff-normalize-tm-eq.md)
-- [Normalize Tm idem](normalize-tm-idem.md)
+- [Canonical terms are the fixed points of normalization](is-canonical-iff-normalize-tm-eq.md)
+- [Normalization by evaluation is idempotent](normalize-tm-idem.md)
 
 ## Sources
 

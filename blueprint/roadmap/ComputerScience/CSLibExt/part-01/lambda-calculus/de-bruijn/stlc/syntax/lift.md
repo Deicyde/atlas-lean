@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Var.lift
 ---
 
-# Lift
+# Lifting a renaming under a binder
 
-Extend a renaming under one binder.
+**Lifting a renaming under a binder.** Let $\rho$ be a renaming from a context $\Gamma$ to a
+context $\Delta$ and let $A$ be a simple type, and write $A :: \Gamma$ for the context obtained
+by prepending $A$ to $\Gamma$. The lift of $\rho$ is the renaming from $A :: \Gamma$ to
+$A :: \Delta$ that sends the variable $0$ to $0$ and sends the successor of a variable $x$ of
+$\Gamma$ to the successor of $\rho(x)$.
 
 ## Depends on
 
-- [Ren](ren.md)
-- [Ty](ty.md)
+- [Renamings of simply typed contexts](ren.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Var](var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

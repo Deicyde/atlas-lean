@@ -5,18 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.indices
 ---
 
-# Indices
+# Indices occurring in a raw term
 
-List the indices occurring in a raw term.  This intentionally includes
-bound occurrences and is useful for diagnostics rather than scoping.
+**Indices occurring in a raw term.** The list of de Bruijn indices of a raw term, read
+from left to right with repetitions: a variable with index $n$ gives $[n]$, an application
+gives the indices of the function followed by those of the argument, and a lambda abstraction
+gives the indices of its body, unshifted.
+
+Bound occurrences are intentionally included, so this list is useful for diagnostics rather
+than for scoping.
 
 ## Depends on
 
-- [Raw Tm](../elaboration/raw-tm.md)
+- [Raw lambda terms](../elaboration/raw-tm.md)
 
 ## Proof depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

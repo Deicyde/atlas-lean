@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.HasType.erase
 ---
 
-# Erase
+# Erasure preserves typing
 
-Every intrinsic term erases to a well-typed raw term.
+**Erasure preserves typing.** For every intrinsically typed term $t$ of type $A$ in context
+$\Gamma$, the erasure of $t$ has type $A$ in $\Gamma$ under the declarative typing judgment for
+raw terms.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Ty](../syntax/ty.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Raw Tm](raw-tm.md)
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
-- [Lookup Var](lookup-var.md)
-- [Lookup Var to Nat](lookup-var-to-nat.md)
+- [Raw lambda terms](raw-tm.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
+- [Variable lookup](lookup-var.md)
+- [Lookup recovers an intrinsic variable from its index](lookup-var-to-nat.md)
 
 ## Sources
 

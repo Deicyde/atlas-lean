@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.approx_expand
 ---
 
-# Approx expand
+# Formal approximation is closed under head expansion
 
-Head expansion: a term that evaluates to whatever another term evaluates to
-inherits its approximations.
+**Formal approximation is closed under head expansion.** Let $A$ be a PCF type, let $t$ and
+$t'$ be closed terms of type $A$, and let $d$ be an element of the domain of $A$. If $t$
+evaluates to every closed term $v$ to which $t'$ evaluates, and $d$ formally approximates $t'$,
+then $d$ formally approximates $t$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Approx](approx.md)
-- [Eval](../big-step/eval.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
+- [PCF terms](../syntax/tm.md)
+- [Formal approximation relation](approx.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
 
 ## Proof depends on
 
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

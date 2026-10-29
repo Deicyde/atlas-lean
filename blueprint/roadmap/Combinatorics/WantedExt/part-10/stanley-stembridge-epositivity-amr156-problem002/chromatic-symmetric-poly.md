@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.StanleyStembridgeEPositivityAMR156Problem0022Wanted.chromaticSymmetricPoly
 ---
 
-# Chromatic Symmetric Poly
+# Chromatic symmetric function in as many variables as vertices
 
-The chromatic symmetric function `X_G` of a graph on `n = |V|` vertices, in the variables
-`x₀, …, x_{n-1}`: the sum of `∏_v x_{κ v}` over all proper colourings `κ : V → Fin n`.
+**Chromatic symmetric function in as many variables as vertices.** For a simple graph $G$ on
+a finite vertex set $V$ with $n = |V|$ elements, $X_G$ is the polynomial with integer coefficients
+in the variables $x_0, \dots, x_{n-1}$ given by $X_G = \sum_{\kappa} \prod_{v \in V} x_{\kappa(v)}$,
+where $\kappa$ ranges over the proper colourings $\kappa : V \to \{0, \dots, n - 1\}$ of $G$, that
+is, the maps with $\kappa(u) \ne \kappa(v)$ whenever $u$ and $v$ are adjacent.
 
 ## Depends on
 

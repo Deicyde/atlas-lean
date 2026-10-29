@@ -12,11 +12,11 @@ lean: Cslib.Decidability.creative_re
 
 ## Depends on
 
-- [Creative](creative.md)
+- [Creative set](creative.md)
 
 ## Proof depends on
 
-- [Productive](productive.md)
+- [Productive set](productive.md)
 
 ## Sources
 

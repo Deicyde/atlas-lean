@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq.refl
 ---
 
-# Refl
+# Semantic equality is reflexive
 
-Semantic equality is reflexive.
+**Semantic equality is reflexive.** For every interpretation $I$ of the base types, every
+term $t$ is semantically equal to itself in $I$: it has the same denotation as itself in every
+environment.
 
 ## Depends on
 
-- [Sem Eq](sem-eq.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Semantic equality of terms in a model](sem-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Sources
 

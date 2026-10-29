@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.weaken
 ---
 
-# Weaken
+# Weakening of PCF terms
 
-Weakening by one variable.
+**Weakening of PCF terms.** Let $\Gamma$ be a context and $A$, $B$ types. Weakening sends a
+PCF term $t$ of type $A$ in context $\Gamma$ to the term of type $A$ in the context obtained by
+prepending a new variable of type $B$ to $\Gamma$, by renaming every free variable of $t$ to its
+successor, that is, by shifting each de Bruijn index up by one.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Ty](ty.md)
+- [PCF terms](tm.md)
+- [PCF types](ty.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Renaming of PCF terms](rename.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

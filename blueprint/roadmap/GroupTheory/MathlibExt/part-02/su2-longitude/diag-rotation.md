@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotation
 ---
 
-# Diag Rotation
+# Diagonal rotation
 
-The diagonal rotation through angle `θ` in `SU₂`: the matrix
-`diag (exp (iθ), exp (-iθ))`.
+**Diagonal rotation.** For a real number $\theta$, the diagonal rotation through $\theta$ is
+the $2 \times 2$ complex diagonal matrix $\operatorname{diag}(e^{i\theta}, e^{-i\theta})$.
 
 ## Depends on
 

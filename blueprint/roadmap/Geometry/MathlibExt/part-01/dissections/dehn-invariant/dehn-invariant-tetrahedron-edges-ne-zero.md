@@ -6,23 +6,25 @@ proof: formalized
 lean: DehnInvariant.dehnInvariant_tetrahedronEdges_ne_zero
 ---
 
-# The Dehn invariant of the regular tetrahedron is nonzero
+# Nonzero Dehn invariant of the regular tetrahedron, conditional on irrationality
 
-**The Dehn invariant of the regular tetrahedron is nonzero**, assuming
-`arccos (1 / 3) / π` is irrational.
+**Nonzero Dehn invariant of the regular tetrahedron, conditional on irrationality.** Suppose
+that $\arccos(1/3) / \pi$ is irrational. Then for every nonzero real number $\ell$, the edge list
+of a regular tetrahedron of side $\ell$ (six edges of length $\ell$, each with dihedral angle
+$\arccos(1/3)$) has nonzero Dehn invariant.
 
 ## Depends on
 
-- [Dehn Group](dehn-group.md)
-- [Dehn Invariant](dehn-invariant.md)
-- [Tetrahedral Angle](tetrahedral-angle.md)
-- [Tetrahedron Edges](tetrahedron-edges.md)
+- [Dehn group](dehn-group.md)
+- [Dehn invariant](dehn-invariant.md)
+- [Dihedral angle of the regular tetrahedron](tetrahedral-angle.md)
+- [Edge list of the regular tetrahedron](tetrahedron-edges.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
-- [Dehn Invariant replicate](dehn-invariant-replicate.md)
-- [Tmul ne zero of irrational](tmul-ne-zero-of-irrational.md)
+- [Edge of a polyhedron](edge.md)
+- [Dehn invariant of a repeated edge](dehn-invariant-replicate.md)
+- [Nonvanishing of an edge term in the Dehn group](tmul-ne-zero-of-irrational.md)
 
 ## Sources
 

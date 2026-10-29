@@ -6,20 +6,20 @@ navigation: module
 
 ## NA
 
-- [Gen Buchi](gen-buchi.md)
+- [Generalized Büchi automaton](gen-buchi.md)
 
 ## Gen Buchi
 
-- [Mem language iff](mem-language-iff.md)
-- [Next Count](next-count.md)
-- [Next Count eq self](next-count-eq-self.md)
-- [Next Count eq succ](next-count-eq-succ.md)
-- [Next Count eq zero](next-count-eq-zero.md)
-- [Count Seq](count-seq.md)
-- [Count Seq zero](count-seq-zero.md)
-- [Count Seq succ](count-seq-succ.md)
-- [Count Seq stay](count-seq-stay.md)
-- [Count Seq reach](count-seq-reach.md)
-- [Counter cross](counter-cross.md)
-- [To Buchi](to-buchi.md)
+- [Language of a generalized Büchi automaton](mem-language-iff.md)
+- [Counter update for degeneralization](next-count.md)
+- [The degeneralization counter stays when the awaited set is missed](next-count-eq-self.md)
+- [The degeneralization counter advances on a hit](next-count-eq-succ.md)
+- [The degeneralization counter resets at the top](next-count-eq-zero.md)
+- [Counter sequence of a state sequence](count-seq.md)
+- [The counter sequence starts at zero](count-seq-zero.md)
+- [Recursion step of the counter sequence](count-seq-succ.md)
+- [The degeneralization counter waits for the awaited set](count-seq-stay.md)
+- [The degeneralization counter reaches every higher value](count-seq-reach.md)
+- [The degeneralization counter crosses every value below its target](counter-cross.md)
+- [Degeneralization of a generalized Büchi automaton](to-buchi.md)
 - [Degeneralization preserves the language](language-to-buchi.md)

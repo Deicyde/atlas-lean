@@ -13,7 +13,7 @@ lean: Cslib.URM.Recognizable.tm2Recognizable
 ## Depends on
 
 - [Recognizability by multi-stack machines](../../part-01/basic/tm2-recognizable.md)
-- [Recognizable](recognizable.md)
+- [URM-recognizable predicates](recognizable.md)
 
 ## Proof depends on
 

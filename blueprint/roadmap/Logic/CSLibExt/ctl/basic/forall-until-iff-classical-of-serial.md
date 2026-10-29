@@ -24,8 +24,8 @@ least `ψ`-position and derives an `EU` witness from any earlier
 ## Proof depends on
 
 - [Exists omega Run extending of serial](exists-omega-run-extending-of-serial.md)
-- [Finite Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

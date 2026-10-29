@@ -12,8 +12,8 @@ lean: Cslib.Decidability.encodeOracleCode_injective
 
 ## Depends on
 
-- [Oracle Code](oracle-code.md)
-- [Encode Oracle Code](encode-oracle-code.md)
+- [Oracle codes](oracle-code.md)
+- [The Gödel numbering of oracle codes](encode-oracle-code.md)
 
 ## Sources
 

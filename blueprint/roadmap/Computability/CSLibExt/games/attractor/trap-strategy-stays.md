@@ -6,25 +6,26 @@ proof: formalized
 lean: Cslib.Games.ParityGame.IsTrap.trapStrategy_stays
 ---
 
-# Trap Strategy stays
+# The trap strategy stays in the trap
 
-Every play starting in a `p`-trap and conforming to the opponent's trap strategy stays in the
-trap forever.
+**The trap strategy stays in the trap.** Let $G$ be a parity game, $p$ a player and $U$ a trap
+for $p$. If $\pi$ is a play with $\pi_0 \in U$ that conforms to the trap strategy of the opponent
+of $p$ for $U$, then $\pi_i \in U$ for every $i \in \mathbb{N}$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Conforms](../parity/conforms.md)
-- [Is Play](../parity/is-play.md)
-- [Is Trap](is-trap.md)
-- [Trap Strategy](trap-strategy.md)
-- [Player](../parity/player.md)
+- [Parity game](../parity/parity-game.md)
+- [Plays conforming to a strategy](../parity/conforms.md)
+- [Plays of a parity game](../parity/is-play.md)
+- [Trap for a player](is-trap.md)
+- [Trap strategy](trap-strategy.md)
+- [Players of a parity game](../parity/player.md)
 - [Opponent](../parity/opponent.md)
 
 ## Proof depends on
 
 - [Positional Strategy](../parity/positional-strategy.md)
-- [Eq or eq opponent](../parity/eq-or-eq-opponent.md)
+- [Every player is $p$ or the opponent of $p$](../parity/eq-or-eq-opponent.md)
 
 ## Sources
 

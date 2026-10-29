@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Classes.P_subset_PSPACE
 ---
 
-# P subset PSPACE
+# P is contained in PSPACE
 
-`P ⊆ PSPACE` on the multi-tape model.
+**P is contained in PSPACE.** On the deterministic multi-tape model,
+$\mathrm{P} \subseteq \mathrm{PSPACE}$.
 
 ## Depends on
 
-- [P](p.md)
-- [PSPACE](pspace.md)
+- [Polynomial time on multi-tape machines](p.md)
+- [Polynomial space on multi-tape machines](pspace.md)
 
 ## Proof depends on
 
-- [DSPACE](dspace.md)
-- [DTIME](dtime.md)
-- [Time bounds space](dtime-subset-dspace.md)
+- [Deterministic space classes on multi-tape machines](dspace.md)
+- [Deterministic time classes on multi-tape machines](dtime.md)
+- [Time classes are contained in space classes](dtime-subset-dspace.md)
 
 ## Sources
 

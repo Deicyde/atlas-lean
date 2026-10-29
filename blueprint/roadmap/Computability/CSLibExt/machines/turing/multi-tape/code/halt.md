@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.CodeAction.halt
 ---
 
-# Halt
+# Halting action
 
-The default action of a missing table entry: halt without moving, writing or emitting.
+**Halting action.** The default action of a missing table entry: halt without moving any
+head, writing any symbol or emitting an output bit.
 
 ## Depends on
 
-- [Code Action](code-action.md)
+- [Coded actions](code-action.md)
 
 ## Sources
 

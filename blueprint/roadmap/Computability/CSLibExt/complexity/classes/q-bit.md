@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Classes.qBit
 ---
 
-# Q Bit
+# Binary digit of a natural number
 
-Bit `k` of the natural number `i`, as an element of `Fin 2`.
+**Binary digit of a natural number.** For natural numbers $k$ and $i$, this is the digit of
+$i$ at position $k$ in binary, counting from the least significant digit at position $0$, that
+is, $\lfloor i / 2^k \rfloor \bmod 2$, taken as an element of $\{0, 1\}$.
 
 ## Depends on
 

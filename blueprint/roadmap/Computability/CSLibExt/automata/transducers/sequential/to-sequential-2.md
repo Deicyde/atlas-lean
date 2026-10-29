@@ -5,16 +5,18 @@ statement: formalized
 lean: Cslib.Automata.MooreMachine.toSequential
 ---
 
-# To Sequential
+# The sequential transducer of a Moore machine
 
-A Moore machine as a sequential transducer: each transition emits the output of
-its target state, the initial output is the output of the start state, every state
-accepts, and the final outputs are empty.
+**The sequential transducer of a Moore machine.** Let $M$ be a Moore machine with transition
+function $\delta$, output function $\lambda$ and start state $q_0$. Its sequential transducer has
+the same states and the start state $q_0$; reading a letter $a$ in state $q$ it moves to
+$\delta(q, a)$ and emits the one-letter word $\lambda(\delta(q, a))$; every state is accepting;
+the initial output is the one-letter word $\lambda(q_0)$; and every final output is empty.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
-- [Sequential Transducer](sequential-transducer.md)
+- [Moore machine](moore-machine.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

@@ -5,21 +5,25 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.NbeEnvRelated
 ---
 
-# Nbe Env Related
+# Realization of environments
 
-Pointwise realization of a Kripke environment and a denotational
-environment.
+**Realization of environments.** Fix an interpretation $I$ of the base types, contexts
+$\Delta$ and $\Gamma$, an environment $\theta$ for $\Delta$ in $I$, a Kripke semantic environment
+$\xi$ assigning to each variable of $\Gamma$ a semantic value in $\Delta$, and an environment
+$\eta$ for $\Gamma$ in $I$. Then $\xi$ realizes $\eta$ at $\theta$ when for every type $A$ and
+every variable $x$ of type $A$ in $\Gamma$, the semantic value $\xi(x)$ realizes $\eta(x)$ at
+$\theta$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Sem Env](../nbe/sem-env.md)
-- [Ty](../syntax/ty.md)
+- [Semantic environments](../denotational/env.md)
+- [Semantic environments](../nbe/sem-env.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Nbe Related](nbe-related.md)
-- [Var](../syntax/var.md)
+- [Kripke realization relation for NbE](nbe-related.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

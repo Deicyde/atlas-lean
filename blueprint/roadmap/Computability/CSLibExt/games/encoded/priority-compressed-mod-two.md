@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Games.EncodedParityGame.priorityCompressed_mod_two
 ---
 
-# Priority Compressed mod two
+# Priority compression preserves parity
 
-Priority compression preserves the parity of priorities.
+**Priority compression preserves parity.** For an encoded parity game $G$ and every position
+$v$, the priority of $v$ in the priority-compressed game of $G$ has the same parity as the
+priority of $v$ in $G$.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
-- [Priority Compress](priority-compress.md)
+- [Encoded parity game](encoded-parity-game.md)
+- [Priority compression](priority-compress.md)
 
 ## Proof depends on
 

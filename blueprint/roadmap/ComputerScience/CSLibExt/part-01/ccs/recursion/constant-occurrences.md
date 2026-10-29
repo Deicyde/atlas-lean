@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.CCS.Recursive.Process.constantOccurrences
 ---
 
-# Constant Occurrences
+# Constant occurrences of a process
 
-Collect constant occurrences without deduplication.
+**Constant occurrences of a process.** The constant occurrences of a recursive CCS
+process $P$ are the list of the process constants occurring in $P$, from left to right and
+with repetitions: the inactive process $\mathbf{0}$ has none; a constant $A$ has the single
+occurrence $A$; a prefix $\alpha.Q$, a restriction $Q \setminus L$ and a relabelling $Q[f]$
+have the occurrences of $Q$; and a choice $Q + R$ or a parallel composition $Q \mid R$ has
+the occurrences of $Q$ followed by those of $R$.
 
 ## Depends on
 
-- [Process](process.md)
+- [Recursive CCS processes](process.md)
 
 ## Proof depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 - [Relabelling](../static-operators/relabelling.md)
 
 ## Sources

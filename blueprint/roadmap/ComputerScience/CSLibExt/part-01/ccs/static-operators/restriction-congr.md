@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.CCS.StaticProcess.restriction_congr
 ---
 
-# Restriction congr
+# Restriction preserves strong bisimilarity
 
-Restriction preserves strong bisimilarity.
+**Restriction preserves strong bisimilarity.** For every finite list $L$ of channel names and
+all static CCS processes $P$ and $Q$, if $P$ and $Q$ are strongly bisimilar in the labelled
+transition system of finite CCS with static operators, then so are the restricted processes
+$P \setminus L$ and $Q \setminus L$.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
-- [Static Process](static-process.md)
-- [Lts](lts.md)
+- [CCS labels](../parallel/label.md)
+- [Static CCS processes](static-process.md)
+- [Transition system of CCS with restriction and relabelling](lts.md)
 
 ## Proof depends on
 
-- [Complementary](../parallel/complementary.md)
+- [Complementary labels](../parallel/complementary.md)
 - [Relabelling](relabelling.md)
-- [Allowed](allowed.md)
-- [Restriction Lift](restriction-lift.md)
-- [Step](step.md)
-- [Relabel Action](relabel-action.md)
+- [Actions permitted by a restriction](allowed.md)
+- [Lifting a relation through a restriction](restriction-lift.md)
+- [Transitions of static CCS](step.md)
+- [Relabelling an action](relabel-action.md)
 
 ## Sources
 

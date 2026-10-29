@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Automata.MooreMachine.transduce
 ---
 
-# Transduce
+# Transduction of a Moore machine
 
-The transduction of a Moore machine: the output word on `xs` from the start state.
+**Transduction of a Moore machine.** Let $M$ be a Moore machine with start state $q_0$, and
+write $o(q)$ for the output of a state $q$. On an input word $a_1 a_2 \cdots a_n$, let $q_i$ be
+the state that $M$ moves to from $q_{i-1}$ on $a_i$. The transduction of $M$ on this word is the
+output word $o(q_0)\, o(q_1) \cdots o(q_n)$, of length $n + 1$.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
+- [Moore machine](moore-machine.md)
 
 ## Proof depends on
 
-- [Run From](run-from-3.md)
+- [Run of a Moore machine](run-from-3.md)
 
 ## Sources
 

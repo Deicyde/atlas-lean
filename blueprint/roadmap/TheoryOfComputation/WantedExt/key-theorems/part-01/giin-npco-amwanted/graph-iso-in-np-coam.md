@@ -14,7 +14,7 @@ Structural Complexity, Birkhäuser, 1993.
 
 ## Depends on
 
-- [Co AM](../../../../../Computability/CSLibExt/complexity/classes/co-am.md)
+- [The class coAM](../../../../../Computability/CSLibExt/complexity/classes/co-am.md)
 - [Graph Iso Dec](graph-iso-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

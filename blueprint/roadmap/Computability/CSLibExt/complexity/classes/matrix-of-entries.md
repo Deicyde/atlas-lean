@@ -5,19 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.Classes.matrixOfEntries
 ---
 
-# Matrix Of Entries
+# Matrix encoded by a list of entries
 
-The `4 × 4` complex matrix encoded by a list of 16 rational pairs, in row-major
-order over `Fin 2 × Fin 2`.
+**Matrix encoded by a list of entries.** Number the pairs $(a, b)$ with $a, b \in \{0, 1\}$
+by $2a + b$, and index the rows and columns of a $4 \times 4$ complex matrix by these pairs.
+Given a list $e$ of pairs of encoded rational numbers, the matrix of $e$ has in row $p$ and
+column $q$ the complex number whose real part is the first and whose imaginary part is the
+second rational of the entry of $e$ at position $4p + q$ (counting from $0$, with $p$ and $q$
+replaced by their numbers), and $0$ when $e$ has no entry at that position. A list of $16$
+pairs thus lists the entries in row-major order.
 
 ## Depends on
 
-- [Rat Enc](rat-enc.md)
+- [Encoded rational number](rat-enc.md)
 
 ## Proof depends on
 
-- [Q Idx2](q-idx2.md)
-- [To Complex](to-complex.md)
+- [Index of a pair of bits](q-idx2.md)
+- [Complex number of a pair of rational encodings](to-complex.md)
 
 ## Sources
 

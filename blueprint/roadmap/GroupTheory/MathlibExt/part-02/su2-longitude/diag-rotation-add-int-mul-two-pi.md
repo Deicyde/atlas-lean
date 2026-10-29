@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.diagRotation_add_int_mul_two_pi
 ---
 
-# Diag Rotation add int mul two pi
+# Diagonal rotations are $2\pi$-periodic
 
-The diagonal rotation through `θ + 2πn` is the same matrix as the
-diagonal rotation through `θ`.
+**Diagonal rotations are $2\pi$-periodic.** For every real number $\theta$ and every integer
+$n$, the diagonal rotation through $\theta + 2\pi n$ equals the diagonal rotation through
+$\theta$.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
+- [Diagonal rotation](diag-rotation.md)
 
 ## Proof depends on
 
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
-- [Diag Rotation int mul two pi](diag-rotation-int-mul-two-pi.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
+- [Diagonal rotation through a multiple of $2\pi$](diag-rotation-int-mul-two-pi.md)
 
 ## Sources
 

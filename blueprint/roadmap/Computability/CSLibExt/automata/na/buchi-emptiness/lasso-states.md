@@ -5,11 +5,16 @@ statement: formalized
 lean: Cslib.Automata.NA.Buchi.lassoStates
 ---
 
-# Lasso States
+# Lasso states of a finite Büchi automaton
 
-The accepting states that are reachable from a start state and lie on a nonempty cycle. One
-reachability closure from all start states is computed, then one cycle closure for each reachable
-accepting state; each closure takes `Fintype.card State` rounds.
+**Lasso states of a finite Büchi automaton.** For a nondeterministic Büchi automaton with
+finitely many states, decidable equality of states, a finite alphabet, and decidable transitions,
+start set and accepting set, the lasso states form the finite set of accepting states $s$ that are
+reachable from some start state in zero or more transitions and lie on a nonempty cycle, that is,
+$s$ is reachable from itself in one or more transitions.
+
+The set is computed by one reachability closure from all start states, then one cycle closure for
+each reachable accepting state; each closure takes as many rounds as there are states.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Step](step.md)
-- [Start Fin](start-fin.md)
+- [Symbol-forgetting transition graph of a Büchi automaton](step.md)
+- [Finite set of start states](start-fin.md)
 - [Trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)
 - [Trans Gen Fin From](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin-from.md)
 

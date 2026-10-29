@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.GoBackN.internal
 ---
 
-# Internal
+# Internal channels of go-back-N
 
-The internal channels, all restricted.
+**Internal channels of go-back-N.** The internal channels of the go-back-N protocol are
+$\mathrm{send}_k$ (sender to data channel), $\mathrm{recv}_k$ (data channel to receiver) and
+$\mathrm{ack}_k$ (receiver to sender) for $k \in \{0, 1, 2\}$; all of them are restricted.
 
 ## Depends on
 
-- [Name](name.md)
+- [Channel names of go-back-N](name.md)
 
 ## Sources
 

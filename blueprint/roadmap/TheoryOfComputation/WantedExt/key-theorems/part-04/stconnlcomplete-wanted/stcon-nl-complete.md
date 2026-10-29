@@ -14,8 +14,8 @@ H. Papadimitriou, Computational Complexity, 1994, Theorem 7.3.
 
 ## Depends on
 
-- [Log Space Red](../../../../../Computability/CSLibExt/complexity/classes/log-space-red.md)
-- [NL](../../../../../Computability/CSLibExt/complexity/classes/nl.md)
+- [Log-space many-one reductions](../../../../../Computability/CSLibExt/complexity/classes/log-space-red.md)
+- [The complexity class NL](../../../../../Computability/CSLibExt/complexity/classes/nl.md)
 - [Stcon Dec](stcon-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.LTS.RootedWeaklyBisimilar.to_homWeakBisimilarity
 ---
 
-# To hom Weak Bisimilarity
+# Observation congruence implies weak bisimilarity
 
-Observational congruence is finer than weak bisimilarity.
+**Observation congruence implies weak bisimilarity.** In a labelled transition system with
+a silent label $\tau$, any two rooted weakly bisimilar states are weakly bisimilar.
 
 ## Depends on
 
-- [Rooted Weakly Bisimilar](rooted-weakly-bisimilar.md)
+- [Rooted observation congruence](rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [Tr](../weak-bisimulation/tr.md)
-- [Rooted Weak Step](rooted-weak-step.md)
-- [To STr](to-str.md)
+- [Weak bisimilarity answers a strong step with a weak step](../weak-bisimulation/tr.md)
+- [Rooted weak transition](rooted-weak-step.md)
+- [Rooted weak transitions are weak transitions](to-str.md)
 
 ## Sources
 

@@ -6,24 +6,24 @@ navigation: module
 
 ## PCF
 
-- [Ctx](ctx.md)
+- [One-hole contexts of PCF](ctx.md)
 
 ## Ctx
 
-- [Plug](plug.md)
-- [Comp](comp.md)
-- [Plug comp](plug-comp.md)
-- [Comp assoc](comp-assoc.md)
+- [Plugging a term into a PCF context](plug.md)
+- [Composition of PCF contexts](comp.md)
+- [Plugging into a composite PCF context](plug-comp.md)
+- [Associativity of PCF context composition](comp-assoc.md)
 
 ## Tm
 
-- [Ctx Equiv](ctx-equiv.md)
-- [Denote plug congr](denote-plug-congr.md)
-- [Ctx Equiv of denote eq](ctx-equiv-of-denote-eq.md)
-- [Ctx Approx](ctx-approx.md)
-- [Denote plug mono](denote-plug-mono.md)
-- [Ctx Approx of denote le](ctx-approx-of-denote-le.md)
-- [Refl](refl.md)
-- [Congr](congr.md)
-- [Refl](refl-2.md)
-- [Ctx Equiv iff ctx Approx](ctx-equiv-iff-ctx-approx.md)
+- [Contextual equivalence in PCF](ctx-equiv.md)
+- [Equal denotations are preserved by plugging into PCF contexts](denote-plug-congr.md)
+- [Equal denotations imply contextual equivalence in PCF](ctx-equiv-of-denote-eq.md)
+- [Contextual approximation in PCF](ctx-approx.md)
+- [Plugging into a PCF context is monotone in the denotation](denote-plug-mono.md)
+- [Denotational approximation implies contextual approximation in PCF](ctx-approx-of-denote-le.md)
+- [Contextual equivalence in PCF is reflexive](refl.md)
+- [Contextual equivalence in PCF is a congruence](congr.md)
+- [Contextual approximation in PCF is reflexive](refl-2.md)
+- [Contextual equivalence is mutual contextual approximation in PCF](ctx-equiv-iff-ctx-approx.md)

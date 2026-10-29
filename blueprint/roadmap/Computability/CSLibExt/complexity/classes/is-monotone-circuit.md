@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Classes.IsMonotoneCircuit
 ---
 
-# Is Monotone Circuit
+# Monotone circuits
 
-Only `var`, `and`, `or` gates (for monotone circuits).
+**Monotone circuits.** A flat circuit $C$ on $n$ input variables, given as a list of gates, is
+monotone when every gate of $C$ is an input variable, an AND gate or an OR gate. Constant, NOT
+and mod gates are not allowed.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

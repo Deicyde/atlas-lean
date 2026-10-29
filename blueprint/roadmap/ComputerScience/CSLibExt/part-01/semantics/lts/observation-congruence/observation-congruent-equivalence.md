@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.LTS.observationCongruent_equivalence
 ---
 
-# Observation Congruent equivalence
+# Observation congruence is an equivalence relation
 
-Rooted observational congruence is an equivalence relation.
+**Observation congruence is an equivalence relation.** In every labelled transition system
+with a silent label $\tau$, rooted weak bisimilarity (observation congruence) is reflexive,
+symmetric and transitive.
 
 ## Depends on
 
-- [Rooted Weakly Bisimilar](rooted-weakly-bisimilar.md)
+- [Rooted observation congruence](rooted-weakly-bisimilar.md)
 
 ## Proof depends on
 
-- [Rooted Weak Step](rooted-weak-step.md)
-- [Trans](trans.md)
-- [Rooted Weak Step of tr](rooted-weak-step-of-tr.md)
+- [Rooted weak transition](rooted-weak-step.md)
+- [Transitivity of rooted observational congruence](trans.md)
+- [Transitions are rooted weak transitions](rooted-weak-step-of-tr.md)
 
 ## Sources
 

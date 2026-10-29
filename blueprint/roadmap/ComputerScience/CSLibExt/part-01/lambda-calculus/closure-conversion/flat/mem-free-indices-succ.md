@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.mem_freeIndices_succ
 ---
 
-# Mem free Indices succ
+# Free variables one binder deeper
 
-Membership in the free variables one binder deeper.
+**Free variables one binder deeper.** For every raw term $t$ and natural numbers $d$ and $j$,
+$j$ is a free index of $t$ at binder depth $d + 1$ if and only if $j + 1$ is a free index of $t$
+at binder depth $d$.
 
 ## Depends on
 
-- [Raw Tm](../../de-bruijn/stlc/elaboration/raw-tm.md)
-- [Free Indices](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
+- [Raw lambda terms](../../de-bruijn/stlc/elaboration/raw-tm.md)
+- [Free indices of a raw term](../../de-bruijn/stlc/elaboration-structural/free-indices.md)
 
 ## Proof depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

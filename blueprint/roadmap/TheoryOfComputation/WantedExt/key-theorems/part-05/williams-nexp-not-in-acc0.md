@@ -12,8 +12,8 @@ lower bounds", Journal of the ACM 61 (2014), 1-32 (CCC 2011).
 
 ## Depends on
 
-- [ACC0](../../../../Computability/CSLibExt/complexity/classes/acc0.md)
-- [NEXP](../../../../Computability/CSLibExt/complexity/classes/nexp.md)
+- [The class $\mathsf{ACC}^0$](../../../../Computability/CSLibExt/complexity/classes/acc0.md)
+- [The complexity class NEXP](../../../../Computability/CSLibExt/complexity/classes/nexp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

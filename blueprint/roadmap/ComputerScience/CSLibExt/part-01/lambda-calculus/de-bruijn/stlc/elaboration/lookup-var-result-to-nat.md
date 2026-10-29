@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.lookupVar_result_toNat
 ---
 
-# Lookup Var result to Nat
+# Lookup returns a variable with the queried index
 
-A successful lookup returns a variable whose erased index is precisely the
-queried index.
+**Lookup returns a variable with the queried index.** For every context $\Gamma$ and
+natural number $n$, if looking up the de Bruijn index $n$ in $\Gamma$ succeeds with a type $A$
+and an intrinsic variable $x$ of type $A$ in $\Gamma$, then the de Bruijn index of $x$ is $n$.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
-- [Lookup Var](lookup-var.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
+- [Variable lookup](lookup-var.md)
 
 ## Sources
 

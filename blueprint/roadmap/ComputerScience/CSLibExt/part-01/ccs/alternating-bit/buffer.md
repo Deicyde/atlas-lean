@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.buffer
 ---
 
-# Buffer
+# The data-free one-place buffer in a given state
 
-The buffer process.
+**The data-free one-place buffer in a given state.** For a Boolean $f$, $\mathit{buffer}(f)$ is
+the process constant for the one-place buffer that is full if $f$ is true and empty if $f$ is
+false.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Process](../recursion/process.md)
+- [Process constants of the data-free alternating-bit protocol](agent.md)
+- [Alternating-bit channel names](name.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Sources
 

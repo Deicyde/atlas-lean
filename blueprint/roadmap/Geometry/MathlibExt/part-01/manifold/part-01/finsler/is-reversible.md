@@ -5,13 +5,14 @@ statement: formalized
 lean: Manifold.FinslerMetric.IsReversible
 ---
 
-# Is Reversible
+# Reversible Finsler metric
 
-A Finsler metric is reversible if `F(-v) = F(v)` for every tangent vector `v`.
+**Reversible Finsler metric.** A Finsler metric $F$ on a manifold $M$ is reversible if
+$F(x, -v) = F(x, v)$ for every point $x \in M$ and every tangent vector $v \in T_xM$.
 
 ## Depends on
 
-- [Finsler Metric](finsler-metric.md)
+- [Finsler metric](finsler-metric.md)
 
 ## Sources
 

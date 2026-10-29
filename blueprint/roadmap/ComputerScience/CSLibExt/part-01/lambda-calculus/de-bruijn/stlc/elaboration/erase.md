@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.erase
 ---
 
-# Erase
+# Erasure of intrinsically typed terms
 
-Erase intrinsic typing information while retaining binder annotations.
+**Erasure of intrinsically typed terms.** The erasure of an intrinsically typed term in a
+context $\Gamma$ is the raw term defined by recursion: a variable becomes the raw variable whose
+index is its position in $\Gamma$ (counting from $0$ at the front); an application of $f$ to $a$
+becomes the raw application of the erasure of $f$ to the erasure of $a$; and a lambda with
+parameter type $B$ becomes the raw lambda annotated with $B$ whose body is the erasure of its
+body. Erasure thus forgets all typing information except the binder annotations.
 
 ## Depends on
 
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
 
 ## Sources
 

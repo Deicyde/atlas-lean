@@ -13,8 +13,8 @@ Sciences 4 (1970), 177-192.
 
 ## Depends on
 
-- [NPSPACE](../../../../Computability/CSLibExt/complexity/classes/npspace.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [The complexity class NPSPACE](../../../../Computability/CSLibExt/complexity/classes/npspace.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 
 ## Sources

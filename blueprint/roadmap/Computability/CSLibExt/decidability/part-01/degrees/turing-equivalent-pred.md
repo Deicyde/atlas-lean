@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.TuringEquivalentPred
 ---
 
-# Turing Equivalent Pred
+# Turing equivalence of predicates
 
-Two predicates are **Turing equivalent** when each is Turing reducible
-to the other.
+**Turing equivalence of predicates.** Two predicates $P$ and $Q$ on the natural numbers are
+Turing equivalent when the characteristic function of $P$ is Turing reducible to the
+characteristic function of $Q$ and the characteristic function of $Q$ is Turing reducible to the
+characteristic function of $P$.
 
 ## Depends on
 

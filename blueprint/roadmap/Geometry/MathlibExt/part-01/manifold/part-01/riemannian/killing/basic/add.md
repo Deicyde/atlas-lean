@@ -6,13 +6,14 @@ proof: formalized
 lean: Manifold.IsKillingVectorField.add
 ---
 
-# Add
+# Sum of Killing fields
 
-The sum of two Killing fields is Killing.
+**Sum of Killing fields.** On a smooth Riemannian manifold, the sum $X + Y$ of two Killing
+vector fields $X$ and $Y$ is a Killing vector field.
 
 ## Depends on
 
-- [Is Killing Vector Field](is-killing-vector-field.md)
+- [Killing vector field](is-killing-vector-field.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: Cslib.Decidability.Jump
 ---
 
-# Jump
+# The Turing jump
 
-The **Turing jump** of `P`: the diagonal halting set of the universal
-oracle machine with oracle `P` — the set of indices `n` for which the `n`-th
-oracle program halts on input `n`, where the `n`-th program is given by the
-effective enumeration `oracleCodeOfNat` (the computable decoder for the
-explicit Gödel numbering `encodeOracleCode`).
+**The Turing jump.** For a predicate $P$ on $\mathbb{N}$, the Turing jump $P'$ is the
+predicate that holds at $n$ exactly when the $n$-th oracle code in the effective enumeration of
+oracle codes, evaluated with the oracle that answers $1$ at $m$ if $P(m)$ holds and $0$ otherwise,
+halts on input $n$. Thus $P'$ is the diagonal halting set of the universal oracle machine with
+oracle $P$.
 
 ## Depends on
 
@@ -19,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Oracle Code Of Nat](oracle-code-of-nat.md)
-- [Oracle Eval](oracle-eval.md)
+- [Effective enumeration of oracle codes](oracle-code-of-nat.md)
+- [Evaluation of oracle codes](oracle-eval.md)
 
 ## Sources
 

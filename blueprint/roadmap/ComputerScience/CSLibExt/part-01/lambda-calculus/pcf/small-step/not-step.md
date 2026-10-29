@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Value.not_step
 ---
 
-# Not step
+# PCF values are normal forms
 
-Values are normal forms.
+**PCF values are normal forms.** If $v$ is a closed PCF value of type $A$ (an abstraction or a
+numeral), then there is no closed term $t'$ such that $v$ reduces to $t'$ in one call-by-name
+step.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Step](step.md)
-- [Value](../big-step/value.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Call-by-name reduction step of PCF](step.md)
+- [Values of PCF](../big-step/value.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Numeral not step](numeral-not-step.md)
-- [Nat](../syntax/nat.md)
-- [Var](../syntax/var.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [PCF numerals are normal forms](numeral-not-step.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [PCF variables](../syntax/var.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

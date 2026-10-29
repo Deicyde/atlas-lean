@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Games.ParityGame.wonBy_or_wonBy_opponent
 ---
 
-# Won By or won By opponent
+# Bounded priorities give every play a winner
 
-With priorities bounded by `d`, every play is won by `p` or by the opponent.
+**Bounded priorities give every play a winner.** Let $p$ be a player of a parity game in
+which every position has priority at most $d$, for some natural number $d$. Then every infinite
+sequence of positions, in particular every play, is won by $p$ or by the opponent of $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
-- [Won By](won-by.md)
-- [Player](player.md)
+- [Parity game](parity-game.md)
+- [Winner of a play in a parity game](won-by.md)
+- [Players of a parity game](player.md)
 - [Opponent](opponent.md)
 
 ## Proof depends on
 
-- [Is Max Inf Occ](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
-- [Parity Even](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
-- [Parity Odd](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
-- [Exists is Max Inf Occ](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/exists-is-max-inf-occ.md)
+- [Largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
+- [Even max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-even.md)
+- [Odd max-parity condition](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/parity-odd.md)
+- [Bounded sequences have a largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/exists-is-max-inf-occ.md)
 
 ## Sources
 

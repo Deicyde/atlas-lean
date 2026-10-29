@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.erase_injective
 ---
 
-# Erase injective
+# Erasure is injective
 
-Erasure is injective on intrinsic terms of a fixed type and context.
+**Erasure is injective.** For a fixed context $\Gamma$ and type $A$, erasure is injective on
+intrinsically typed terms of type $A$ in $\Gamma$: two such terms with the same erasure are
+equal.
 
 ## Depends on
 
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Ty](../syntax/ty.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Checked](checked.md)
-- [Elaborate](elaborate.md)
-- [Elaborate erase](elaborate-erase.md)
+- [Checked terms](checked.md)
+- [Elaboration of raw STLC terms](elaborate.md)
+- [Elaboration inverts erasure](elaborate-erase.md)
 
 ## Sources
 

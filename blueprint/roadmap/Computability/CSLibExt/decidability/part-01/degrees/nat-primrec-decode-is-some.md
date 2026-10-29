@@ -8,7 +8,9 @@ lean: Cslib.Decidability.natPrimrec_decodeIsSome
 
 # The definedness predicate is primitive recursive
 
-**The definedness predicate is primitive recursive.**
+**The definedness predicate is primitive recursive.** The function $\mathbb{N} \to \mathbb{N}$
+sending $n$ to $1$ if $n$ decodes to an oracle code under the computable decoder and to $0$
+otherwise is primitive recursive.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ lean: Cslib.Decidability.natPrimrec_decodeIsSome
 
 ## Proof depends on
 
-- [One step of the course-of-values recursion for `decodeIsSome`](decode-is-some-step.md)
-- [The step function is correct](decode-is-some-step-correct.md)
+- [One step of the course-of-values recursion for definedness](decode-is-some-step.md)
+- [The definedness step function is correct](decode-is-some-step-correct.md)
 - [The step function is primitive recursive](primrec-decode-is-some-step.md)
 
 ## Sources

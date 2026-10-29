@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnComp
 ---
 
-# Cbn Comp
+# Computation types of the call-by-name CPS translation
 
-Computations of type `A`: `(⟦A⟧ → R) → R`.
+**Computation types of the call-by-name CPS translation.** For an answer type $R$ and a simple
+type $A$, the type of call-by-name computations of type $A$ is $C(A) = (A^\ast \to R) \to R$,
+where $A^\ast$ is the call-by-name CPS translation of $A$.
 
 ## Depends on
 
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Cbn Ty](cbn-ty.md)
+- [Call-by-name CPS translation of types](cbn-ty.md)
 
 ## Sources
 

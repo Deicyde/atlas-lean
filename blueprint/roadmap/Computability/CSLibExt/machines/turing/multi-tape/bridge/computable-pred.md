@@ -8,17 +8,22 @@ lean: Cslib.Decidability.MultiTapeDecidable.computablePred
 
 # A predicate decided by a multi-tape machine is computable
 
-**A predicate decided by a multi-tape machine is computable** (Post's theorem:
-r.e. and co-r.e. imply computable).
+**A predicate decided by a multi-tape machine is computable.** Let $\alpha$ be a primcodable
+type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive
+recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-tape machine, then $p$ is
+computable, that is, $p$ is decidable and its Boolean characteristic function
+$\alpha \to \mathrm{Bool}$ is computable.
+
+This is Post's theorem applied to $p$ and its complement, both recursively enumerable.
 
 ## Depends on
 
-- [Multi Tape Decidable](multi-tape-decidable.md)
+- [Decidability by multi-tape machines](multi-tape-decidable.md)
 
 ## Proof depends on
 
-- [A predicate decided by a multi-tape machine is r.e](re-pred-2.md)
-- [A predicate decided by a multi-tape machine is co-r.e](re-pred-not.md)
+- [A predicate decided by a multi-tape machine is recursively enumerable](re-pred-2.md)
+- [A predicate decided by a multi-tape machine has a recursively enumerable complement](re-pred-not.md)
 
 ## Sources
 

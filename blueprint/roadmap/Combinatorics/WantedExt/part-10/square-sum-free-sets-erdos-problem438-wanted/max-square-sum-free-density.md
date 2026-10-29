@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SquareSumFreeSetsErdosProblem438Wanted.maxSquareSumFreeDensity
 ---
 
-# Max Square Sum Free Density
+# Erdős Problem 438 (statement)
 
-Erdős Problem 438: the largest `A ⊆ {1, …, N}` with no perfect square in `A + A` has
-`(11/32 + o(1)) N` elements.
+**Erdős Problem 438 (statement).** For a natural number $N$, let $M(N)$ be the largest size of
+a set $A \subseteq \{1, \dots, N\}$ such that no sum $a + b$ with $a, b \in A$, not necessarily
+distinct, is a perfect square. This is the statement that $M(N) / N \to 11/32$ as
+$N \to \infty$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Max Square Sum Free Size](max-square-sum-free-size.md)
+- [Maximum size of a square-sum-free set](max-square-sum-free-size.md)
 
 ## Sources
 

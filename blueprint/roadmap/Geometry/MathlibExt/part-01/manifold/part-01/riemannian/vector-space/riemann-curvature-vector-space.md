@@ -8,16 +8,18 @@ lean: Manifold.riemannCurvature_vectorSpace
 
 # Euclidean space is flat
 
-**Euclidean space is flat**: the Riemann curvature endomorphism of an inner product space,
-with its standard metric `riemannianMetricVectorSpace`, vanishes.
+**Euclidean space is flat.** Let $F$ be a finite-dimensional real inner product space with the
+Riemannian metric given by its inner product on every tangent space. For every point $x \in F$
+and all tangent vectors $u, v, w \in T_xF$, the Riemann curvature endomorphism $R$ of $F$ at $x$
+satisfies $R(u, v)w = 0$.
 
 ## Depends on
 
-- [Riemann Curvature](../curvature/riemann-curvature.md)
+- [Riemann curvature endomorphism](../curvature/riemann-curvature.md)
 
 ## Proof depends on
 
-- [Levi Civita Connection extend vector Space](levi-civita-connection-extend-vector-spa.md)
+- [The Levi-Civita connection of Euclidean space kills constant vector fields](levi-civita-connection-extend-vector-spa.md)
 
 ## Sources
 

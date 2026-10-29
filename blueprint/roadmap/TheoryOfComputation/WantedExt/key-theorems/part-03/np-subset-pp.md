@@ -12,7 +12,7 @@ Turing machines" (1977).
 
 ## Depends on
 
-- [PP](../../../../Computability/CSLibExt/complexity/classes/pp.md)
+- [Probabilistic polynomial time with unbounded error](../../../../Computability/CSLibExt/complexity/classes/pp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)

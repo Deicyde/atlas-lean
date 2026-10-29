@@ -12,8 +12,8 @@ Modern Approach, Cambridge University Press, 2009, Theorem 4.14 (PSPACE ⊆ EXP)
 
 ## Depends on
 
-- [EXP](../../../../Computability/CSLibExt/complexity/classes/exp.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [The class EXP](../../../../Computability/CSLibExt/complexity/classes/exp.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

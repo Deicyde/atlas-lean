@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Classes.basisState
 ---
 
-# Basis State
+# Computational basis state of a bitstring
 
-The computational basis state for the classical input `x`.
+**Computational basis state of a bitstring.** For a bitstring $x = (x_0, \dots, x_{n-1})$,
+reading true as $1$ and false as $0$, the computational basis state of $x$ is the vector
+$\psi : \{0, \dots, 2^n - 1\} \to \mathbb{C}$ with $\psi(s) = 1$ if $s = \sum_{k < n} x_k 2^k$
+(the number whose binary expansion is $x$, least significant bit first) and $\psi(s) = 0$
+otherwise.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Num Of](q-num-of.md)
+- [Number with a given binary expansion](q-num-of.md)
 
 ## Sources
 

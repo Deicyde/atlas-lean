@@ -24,7 +24,7 @@ depends on the choice axiom.
 ## Proof depends on
 
 - [Exists Globally expansion](exists-globally-expansion.md)
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 
 ## Sources
 

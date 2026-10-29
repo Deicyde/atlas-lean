@@ -4,7 +4,7 @@ navigation: module
 
 # Subset Sum Concentration Erdos Problem362
 
-- [Subset Sum Count Bound](subset-sum-count-bound.md)
-- [Fixed Size Subset Sum Count Bound](fixed-size-subset-sum-count-bound.md)
-- [Subset Sum Count Bound holds](subset-sum-count-bound-holds.md)
-- [Fixed Size Subset Sum Count Bound holds](fixed-size-subset-sum-count-bound-holds.md)
+- [Erdős Problem 362: subsets with a given sum](subset-sum-count-bound.md)
+- [Erdős Problem 362: subsets of a given size with a given sum](fixed-size-subset-sum-count-bound.md)
+- [Sárközy–Szemerédi bound on subsets with a given sum](subset-sum-count-bound-holds.md)
+- [Halász's bound on subsets of a given size with a given sum](fixed-size-subset-sum-count-bound-holds.md)

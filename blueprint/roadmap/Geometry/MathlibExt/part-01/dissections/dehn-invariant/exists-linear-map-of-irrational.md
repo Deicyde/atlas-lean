@@ -6,11 +6,14 @@ proof: formalized
 lean: DehnInvariant.exists_linearMap_of_irrational
 ---
 
-# Exists linear Map of irrational
+# A $\mathbb{Q}$-linear functional separating $\alpha$ from $\pi$
 
-If `α / π` is irrational, there is a `ℚ`-linear map `ℝ →ₗ[ℚ] ℝ` that vanishes at `π`
-but not at `α`: `α` lies outside the `ℚ`-span of `π`, and a linear functional on the
-quotient separates it.
+**A $\mathbb{Q}$-linear functional separating $\alpha$ from $\pi$.** Let $\alpha$ be a real
+number such that $\alpha / \pi$ is irrational. Then there is a $\mathbb{Q}$-linear map
+$f : \mathbb{R} \to \mathbb{R}$ with $f(\pi) = 0$ and $f(\alpha) \neq 0$.
+
+The idea of the proof: $\alpha$ lies outside the $\mathbb{Q}$-span of $\pi$, and a linear
+functional on the quotient separates it.
 
 ## Depends on
 

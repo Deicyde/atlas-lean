@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.MachineLearning.Hedge.roundSq
 ---
 
-# Round Sq
+# Weighted second moment of a Hedge round
 
-The weighted second moment of a round's losses, `∑ x(i) ℓ(i)²` for the played distribution
-`x = w / total w`.
+**Weighted second moment of a Hedge round.** For weights $w$ and losses $\ell$ on $n$
+experts, the round's weighted second moment is $\left(\sum_i w_i \ell_i^2\right) / W$, where
+$W = \sum_i w_i$ is the total weight; that is, $\sum_i x_i \ell_i^2$ for the played distribution
+$x = w / W$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Total](total.md)
+- [Total weight of the Hedge experts](total.md)
 
 ## Sources
 

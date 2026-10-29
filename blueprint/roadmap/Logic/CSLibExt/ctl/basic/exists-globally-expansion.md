@@ -19,8 +19,8 @@ runs; no choice is needed here.
 
 ## Proof depends on
 
-- [Omega Run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
-- [Shift Seq](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
+- [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
+- [Shifted sequence](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
 
 ## Sources
 

@@ -7,7 +7,9 @@ lean: Cslib.URM.execN
 
 # Bounded execution
 
-**Bounded execution**: `t` iterations of the one-step function.
+**Bounded execution.** For a list of instruction codes, a number $t$ and a coded state $s$,
+bounded execution applies the one-step function for these codes $t$ times, starting from
+$s$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Step Fn](step-fn.md)
+- [One-step function on coded states](step-fn.md)
 
 ## Sources
 

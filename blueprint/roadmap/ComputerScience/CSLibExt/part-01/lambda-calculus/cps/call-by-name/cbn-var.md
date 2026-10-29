@@ -5,16 +5,18 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnVar
 ---
 
-# Cbn Var
+# Call-by-name CPS translation of variables
 
-The translation of a variable: the same position in the translated
-context, now holding a computation.
+**Call-by-name CPS translation of variables.** Fix an answer type $R$ and write
+$C(A) = (A^\ast \to R) \to R$, where $A^\ast$ is the call-by-name CPS translation of a simple
+type $A$. A variable of type $A$ in a context $A_1, \dots, A_n$ is translated to the variable at
+the same position in the translated context $C(A_1), \dots, C(A_n)$, where it has type $C(A)$.
 
 ## Depends on
 
-- [Cbn Comp](cbn-comp.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Computation types of the call-by-name CPS translation](cbn-comp.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

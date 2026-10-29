@@ -6,13 +6,13 @@ navigation: module
 
 ## NA
 
-- [Parity](parity.md)
+- [Nondeterministic parity automaton](parity.md)
 
 ## Parity
 
-- [Run parity Even or parity Odd](run-parity-even-or-parity-odd.md)
+- [Every state sequence of a finite parity automaton has a parity winner](run-parity-even-or-parity-odd.md)
 
 ## Buchi
 
-- [To Parity](to-parity.md)
-- [Language to Parity](language-to-parity.md)
+- [Büchi automata as parity automata](to-parity.md)
+- [Büchi-to-parity conversion preserves the language](language-to-parity.md)

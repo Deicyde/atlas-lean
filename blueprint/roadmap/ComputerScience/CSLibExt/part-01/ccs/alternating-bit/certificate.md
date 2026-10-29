@@ -5,21 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.certificate
 ---
 
-# Certificate
+# Weak-bisimulation certificate for the data-free alternating-bit protocol
 
-The weak-bisimulation certificate: every reachable configuration, paired
-with the buffer state it simulates (`true` from the accept of a message until
-its delivery), sorted by silent distance to the next visible action.
+**Weak-bisimulation certificate for the data-free alternating-bit protocol.** The list of every
+reachable protocol configuration, paired with the buffer state it simulates (full from the accept
+of a message until its delivery), sorted by silent distance to the next visible action.
 
 ## Depends on
 
-- [Config](config.md)
+- [Alternating-bit configuration](config.md)
 
 ## Proof depends on
 
-- [Channel](channel.md)
-- [Receiver](receiver.md)
-- [Sender](sender.md)
+- [States of a one-place channel](channel.md)
+- [Alternating-bit receiver states](receiver.md)
+- [Sender states of the data-free alternating-bit protocol](sender.md)
 
 ## Sources
 

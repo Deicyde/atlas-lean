@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Games.ParityGame.IsTrap.disjoint_attractor
 ---
 
-# Disjoint attractor
+# Traps disjoint from a set avoid its attractor
 
-A `p`-trap disjoint from `T` is disjoint from the attractor of `T`: the complement of the
-attractor is the largest `p`-trap disjoint from `T`.
+**Traps disjoint from a set avoid its attractor.** Let $G$ be a parity game, $p$ a player and
+$T$ a set of positions. If a set $U$ of positions is a trap for $p$ and is disjoint from $T$, then
+$U$ is disjoint from the attractor of $T$ for $p$.
+
+Since the complement of the attractor is itself a trap for $p$ disjoint from $T$, it is the
+largest such trap.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Is Trap](is-trap.md)
+- [Parity game](../parity/parity-game.md)
+- [Trap for a player](is-trap.md)
 - [Attractor](attractor.md)
-- [Player](../parity/player.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor subset of](attractor-subset-of.md)
-- [Cpre](cpre.md)
+- [The attractor lies in every closed set](attractor-subset-of.md)
+- [Controllable predecessor](cpre.md)
 
 ## Sources
 

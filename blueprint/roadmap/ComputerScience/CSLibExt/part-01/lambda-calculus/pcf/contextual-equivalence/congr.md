@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.congr
 ---
 
-# Congr
+# Contextual equivalence in PCF is a congruence
 
-Contextual equivalence is a congruence: it is preserved by plugging into
-any context.
+**Contextual equivalence in PCF is a congruence.** Let $t$ and $u$ be PCF terms of type $A$ in
+typing context $\Gamma$. If $t$ and $u$ are contextually equivalent, then for every one-hole
+context $D$ whose hole takes terms of type $A$ in typing context $\Gamma$, the terms $D[t]$ and
+$D[u]$ obtained by plugging $t$ and $u$ into the hole of $D$ are contextually equivalent.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Plug](plug.md)
-- [Tm](../syntax/tm.md)
-- [Ctx Equiv](ctx-equiv.md)
-- [Ty](../syntax/ty.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Plugging a term into a PCF context](plug.md)
+- [PCF terms](../syntax/tm.md)
+- [Contextual equivalence in PCF](ctx-equiv.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Comp](comp.md)
-- [Plug comp](plug-comp.md)
-- [Eval](../big-step/eval.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
+- [Composition of PCF contexts](comp.md)
+- [Plugging into a composite PCF context](plug-comp.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Sources
 

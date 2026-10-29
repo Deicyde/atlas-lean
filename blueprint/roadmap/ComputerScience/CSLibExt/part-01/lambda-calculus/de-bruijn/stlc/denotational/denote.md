@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Ty.denote
 ---
 
-# Denote
+# Denotation of simple types
 
-Interpret base types by `I` and function types as Lean function spaces.
+**Denotation of simple types.** Given an interpretation $I$ assigning a type $I(b)$ to each
+base type $b$, the denotation $[\![A]\!]_I$ of a simple type $A$ is defined by recursion on $A$:
+a base type $b$ denotes $I(b)$, and a function type $A \Rightarrow B$ denotes the type of all
+functions from $[\![A]\!]_I$ to $[\![B]\!]_I$.
 
 ## Depends on
 
-- [Ty](../syntax/ty.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

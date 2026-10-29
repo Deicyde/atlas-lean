@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.elaborate_faithful
 ---
 
-# Elaborate faithful
+# Elaboration preserves the input syntax
 
-Successful elaboration preserves the complete input syntax: erasing the
-returned intrinsic certificate recovers the raw term exactly.
+**Elaboration preserves the input syntax.** Assume equality of base types is decidable. If
+elaborating a raw term $r$ in context $\Gamma$ succeeds with type $A$ and intrinsically typed
+term $t$, then the erasure of $t$ is exactly $r$.
 
 ## Depends on
 
-- [Checked](checked.md)
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Ty](../syntax/ty.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Simple types](../syntax/ty.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
-- [Lookup Var](lookup-var.md)
-- [Lookup Var result to Nat](lookup-var-result-to-nat.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
+- [Variable lookup](lookup-var.md)
+- [Lookup returns a variable with the queried index](lookup-var-result-to-nat.md)
 
 ## Sources
 

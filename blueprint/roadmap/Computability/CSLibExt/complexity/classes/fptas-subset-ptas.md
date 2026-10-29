@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.Classes.fptas_subset_ptas
 ---
 
-# Fptas subset ptas
+# FPTAS is contained in PTAS
 
-`FPTAS ⊆ PTAS`: the single `FPTAS` algorithm serves every `k`.
+**FPTAS is contained in PTAS.** Every optimization problem in the class FPTAS of
+problems with a fully polynomial-time approximation scheme belongs to the class PTAS of
+problems with a polynomial-time approximation scheme.
+
+The single fully polynomial-time algorithm serves as the algorithm for every precision $k$.
 
 ## Depends on
 
-- [FPTAS](fptas.md)
-- [Opt Problem](opt-problem.md)
-- [PTAS](ptas.md)
+- [The class FPTAS](fptas.md)
+- [Optimization problems](opt-problem.md)
+- [The class PTAS](ptas.md)
 
 ## Proof depends on
 
-- [Approx At](approx-at.md)
-- [Is NPO](is-npo.md)
+- [Approximation ratio at a precision](approx-at.md)
+- [NPO optimization problems](is-npo.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

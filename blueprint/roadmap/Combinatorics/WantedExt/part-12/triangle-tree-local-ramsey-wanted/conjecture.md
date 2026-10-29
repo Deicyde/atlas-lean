@@ -5,10 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.conjecture
 ---
 
-# Conjecture
+# Rödl's question on Ramsey graphs that are locally trees of triangles
 
-Formerly open, resolved true (`conjecture_holds` below): for every `ℓ` there is `G →₂ K₃`
-locally a tree of triangles.
+**Rödl's question on Ramsey graphs that are locally trees of triangles.** This is the
+statement that for every natural number $\ell$ there is a finite graph $G$ with at least $\ell$
+vertices such that $G \to_2 K_3$ (every colouring of the edges of $G$ with two colours contains
+a monochromatic triangle) and $G$ is locally a tree of triangles on $\ell$ vertices: for every
+set $S$ of exactly $\ell$ vertices of $G$, some tree of triangles on the vertex set of $G$
+contains every edge of $G$ with both endpoints in $S$.
+
+Posed as an open question, it has been answered in the affirmative.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Locally Triangle Tree](is-locally-triangle-tree.md)
-- [Ramseys2 Triangle](ramseys2-triangle.md)
+- [Graphs that are locally trees of triangles](is-locally-triangle-tree.md)
+- [Graphs that arrow the triangle](ramseys2-triangle.md)
 
 ## Sources
 

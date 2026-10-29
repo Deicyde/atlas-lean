@@ -6,27 +6,30 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.denote_eq
 ---
 
-# Denote eq
+# Soundness of the PCF denotational semantics
 
-Soundness: evaluation preserves denotation.
+**Soundness of the PCF denotational semantics.** Let $A$ be a PCF type and let $t$ and $v$
+be closed terms of type $A$. If $t$ evaluates to $v$ under big-step call-by-name evaluation,
+then for every environment $\eta$ of the empty context, the denotations of $t$ and $v$ at
+$\eta$ are equal.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Tm](../syntax/tm.md)
-- [Eval](../big-step/eval.md)
-- [Denote](../denotational/denote.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
+- [Semantic environments for PCF](../denotational/env.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Denotation of PCF terms](../denotational/denote.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
 
 ## Proof depends on
 
-- [Denote fix unfold](../denotational/denote-fix-unfold.md)
-- [Denote instantiate](../denotational/denote-instantiate.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Fixed-point equation for the PCF denotation of fix](../denotational/denote-fix-unfold.md)
+- [PCF denotation of instantiation](../denotational/denote-instantiate.md)
+- [Instantiating the newest variable of a PCF term](../syntax/instantiate.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

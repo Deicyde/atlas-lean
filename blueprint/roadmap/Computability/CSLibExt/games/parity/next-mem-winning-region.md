@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Games.ParityGame.next_mem_winningRegion
 ---
 
-# Next mem winning Region
+# A winning strategy's move stays in the winning region
 
-From a position of `p`'s winning region owned by `p`, the winning strategy's move stays in
-the region.
+**A winning strategy's move stays in the winning region.** In a parity game, let $\sigma$ be a
+positional strategy of player $p$ that wins from a position $v$ owned by $p$. Then the successor
+$\sigma(v)$ chosen by $\sigma$ is in the winning region of $p$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Positional Strategy](positional-strategy.md)
 - [Winning Region](winning-region.md)
-- [Wins From](wins-from.md)
-- [Player](player.md)
+- [Winning strategy from a position](wins-from.md)
+- [Players of a parity game](player.md)
 
 ## Proof depends on
 
-- [Of move](of-move.md)
+- [Winning strategies keep winning along allowed moves](of-move.md)
 
 ## Sources
 

@@ -6,15 +6,15 @@ proof: formalized
 lean: DehnInvariant.dehnInvariant_nil
 ---
 
-# Dehn Invariant nil
+# Dehn invariant of the empty edge list
 
-The Dehn invariant of the empty edge list is `0`.
+**Dehn invariant of the empty edge list.** The empty list of edges has Dehn invariant $0$.
 
 ## Depends on
 
-- [Dehn Group](dehn-group.md)
-- [Edge](edge.md)
-- [Dehn Invariant](dehn-invariant.md)
+- [Dehn group](dehn-group.md)
+- [Edge of a polyhedron](edge.md)
+- [Dehn invariant](dehn-invariant.md)
 
 ## Sources
 

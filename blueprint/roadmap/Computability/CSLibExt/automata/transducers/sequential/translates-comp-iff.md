@@ -8,23 +8,25 @@ lean: Cslib.Automata.SequentialTransducer.translates_comp_iff
 
 # Composition of sequential transducers
 
-**Composition of sequential transducers**: the composition translates `xs` to `ys`
-exactly when some intermediate word `zs` is translated by the first transducer and
-then by the second.
+**Composition of sequential transducers.** Let $S_1$ be a sequential transducer from an
+alphabet $A$ to an alphabet $B$, and $S_2$ one from $B$ to an alphabet $C$. For every word $x$
+over $A$ and every word $y$ over $C$, the composition of $S_1$ and $S_2$ translates $x$ to $y$
+if and only if there is a word $z$ over $B$ such that $S_1$ translates $x$ to $z$ and $S_2$
+translates $z$ to $y$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
-- [Translates](translates.md)
-- [Comp](comp.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Translation by a sequential transducer](translates.md)
+- [Composition of sequential transducers](comp.md)
 
 ## Proof depends on
 
-- [Comp output eq](comp-output-eq.md)
-- [Comp run State](comp-run-state.md)
-- [Comp run State init Out](comp-run-state-init-out.md)
-- [Run Out](run-out.md)
-- [Run State](run-state.md)
+- [Total output of a composite sequential transducer](comp-output-eq.md)
+- [States reached by a composite sequential transducer](comp-run-state.md)
+- [State of the second transducer after the first one's whole output](comp-run-state-init-out.md)
+- [Output word of a sequential transducer run](run-out.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

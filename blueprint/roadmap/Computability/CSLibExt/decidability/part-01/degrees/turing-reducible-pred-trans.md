@@ -8,11 +8,13 @@ lean: Cslib.Decidability.turingReduciblePred_trans
 
 # Turing reducibility is transitive
 
-**Turing reducibility is transitive.**
+**Turing reducibility is transitive.** For predicates $P$, $Q$ and $R$ on the natural
+numbers, if $P$ is Turing reducible to $Q$ and $Q$ is Turing reducible to $R$, then $P$ is Turing
+reducible to $R$.
 
 ## Depends on
 
-- [Turing Reducible Pred](turing-reducible-pred.md)
+- [Turing reducibility of predicates](turing-reducible-pred.md)
 
 ## Proof depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Classes.coRP
 ---
 
-# Co RP
+# The class coRP
 
-`coRP`: complements of `RP` languages.
+**The class coRP.** coRP is the class of decision problems $L$ whose complement, the
+decision problem that accepts exactly the bitstrings that $L$ rejects, belongs to RP.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ lean: Cslib.Complexity.Classes.coRP
 
 ## Proof depends on
 
-- [RP](rp.md)
+- [The class RP](rp.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

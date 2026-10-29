@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Classes.ACC0
 ---
 
-# ACC0
+# The class $\mathsf{ACC}^0$
 
-`ACC0`: the union over fixed moduli `m` of `AC0[mod m]`.
-A circuit family in `ACC0` uses one fixed modulus throughout.
+**The class $\mathsf{ACC}^0$.** $\mathsf{ACC}^0$ is the union of the classes
+$\mathsf{AC}^0[m]$ over all natural numbers $m$: a decision problem is in $\mathsf{ACC}^0$ when it
+is in $\mathsf{AC}^0[m]$ for some $m$. A circuit family witnessing membership uses one fixed
+modulus $m$ throughout.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A circuit family in `ACC0` uses one fixed modulus throughout.
 
 ## Proof depends on
 
-- [AC0 Mod](ac0-mod.md)
+- [The class $\mathsf{AC}^0(m)$](ac0-mod.md)
 - [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources

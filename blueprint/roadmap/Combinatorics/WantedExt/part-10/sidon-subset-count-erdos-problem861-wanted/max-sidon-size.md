@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonSubsetCountErdosProblem861Wanted.maxSidonSize
 ---
 
-# Max Sidon Size
+# Largest Sidon subset of $\{1, \dots, N\}$ (Erdős Problem 861)
 
-`f(N)`: the largest size of a Sidon subset of `{1, …, N}`.
+**Largest Sidon subset of $\{1, \dots, N\}$ (Erdős Problem 861).** For a natural number $N$,
+$f(N)$ is the largest cardinality of a Sidon subset of $\{1, \dots, N\}$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sidon Subsets Up To](sidon-subsets-up-to.md)
+- [Sidon subsets of $\{1, \dots, N\}$](sidon-subsets-up-to.md)
 
 ## Sources
 

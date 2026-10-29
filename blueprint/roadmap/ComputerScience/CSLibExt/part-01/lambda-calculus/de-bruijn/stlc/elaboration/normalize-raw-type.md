@@ -6,26 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeRaw_type
 ---
 
-# Normalize Raw type
+# Raw normalization reports the inferred type
 
-Normalizing a raw term does not change its inferred type.
+**Raw normalization reports the inferred type.** Let the base types have decidable
+equality, let $\Gamma$ be a context of simple types and let $r$ be a raw term. If normalizing
+$r$ in $\Gamma$ succeeds and returns a type $A$ together with a raw term, then type inference
+for $r$ in $\Gamma$ returns $A$.
 
 ## Depends on
 
-- [Raw Tm](raw-tm.md)
-- [Ty](../syntax/ty.md)
-- [Infer](infer.md)
-- [Normalize Raw](normalize-raw.md)
+- [Raw lambda terms](raw-tm.md)
+- [Simple types](../syntax/ty.md)
+- [Type inference for raw terms](infer.md)
+- [Normalization of raw terms](normalize-raw.md)
 
 ## Proof depends on
 
-- [Checked](checked.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Var](../syntax/var.md)
-- [Elaborate](elaborate.md)
-- [Normalize Nf](../nbe-evaluation/normalize-nf.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Checked terms](checked.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Elaboration of raw STLC terms](elaborate.md)
+- [Normalization by evaluation](../nbe-evaluation/normalize-nf.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Sources
 

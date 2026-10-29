@@ -38,18 +38,26 @@ source and in Fox–Lovász (a triangle is an ordered triple with `x + y + z = 0
 `A`; `ε` ranges over `(0, 1]`.
 -/
 
-/-- `A ⊆ 𝔽₂ⁿ` is triangle-free: there are no `x, y` with `x, y, x + y ∈ A` (`x = y` allowed). -/
+/-- **Triangle-free subsets of $\mathbb{F}_2^n$.** A set $A \subseteq \mathbb{F}_2^n$ is
+triangle-free if there are no $x, y \in A$ with $x + y \in A$ (the case $x = y$ is allowed). -/
 def IsTriangleFree {n : ℕ} (A : Finset (Fin n → ZMod 2)) : Prop :=
   ∀ x ∈ A, ∀ y ∈ A, x + y ∉ A
 
-/-- The number of pairs `(x, y) ∈ 𝔽₂ⁿ × 𝔽₂ⁿ` with `x, y, x + y ∈ A`; divided by `4ⁿ` it is the
-probability `Pr_{x,y}[x, y, x + y ∈ A]` for independent uniform `x`, `y`. -/
+/-- **Number of triangles in a subset of $\mathbb{F}_2^n$.** For $A \subseteq \mathbb{F}_2^n$,
+the triangle count of $A$ is the number of ordered pairs $(x, y) \in A \times A$ with
+$x + y \in A$. Divided by $4^n$, it is the probability that $x, y, x + y \in A$ for independent
+uniform $x, y \in \mathbb{F}_2^n$. -/
 def triangleCount {n : ℕ} (A : Finset (Fin n → ZMod 2)) : ℕ :=
   ((A ×ˢ A).filter fun p => p.1 + p.2 ∈ A).card
 
-/-- Green's question (O'Donnell, Problem 14), answered: there are constants `c, C > 0` such that if
-`ε 2ⁿ` elements must be removed from `A ⊆ 𝔽₂ⁿ` to make it triangle-free (every triangle-free
-`B ⊆ A` misses at least `ε 2ⁿ` elements of `A`), then `Pr_{x,y}[x, y, x + y ∈ A] ≥ c ε^C`. -/
+/-- **Polynomial triangle removal in $\mathbb{F}_2^n$.** This is the statement that there are
+real constants $c > 0$ and $C > 0$ such that for every $n$, every $A \subseteq \mathbb{F}_2^n$
+and every real $\varepsilon$ with $0 < \varepsilon \le 1$: if every triangle-free $B \subseteq A$
+misses at least $\varepsilon 2^n$ elements of $A$, then the triangle count of $A$ is at least
+$c \varepsilon^C 4^n$, that is, $\Pr_{x,y}[x, y, x + y \in A] \ge c \varepsilon^C$ for
+independent uniform $x, y \in \mathbb{F}_2^n$.
+
+This is Green's question as posed by O'Donnell (Problem 14); the answer is yes. -/
 def polynomialTriangleRemoval : Prop :=
   ∃ c C : ℝ, 0 < c ∧ 0 < C ∧ ∀ (n : ℕ) (A : Finset (Fin n → ZMod 2)) (ε : ℝ), 0 < ε → ε ≤ 1 →
     (∀ B ⊆ A, IsTriangleFree B → ε * 2 ^ n ≤ ((A \ B).card : ℝ)) →

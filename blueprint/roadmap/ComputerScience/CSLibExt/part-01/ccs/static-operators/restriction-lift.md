@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.CCS.StaticProcess.RestrictionLift
 ---
 
-# Restriction Lift
+# Lifting a relation through a restriction
 
-Lift a relation through one fixed restriction context.
+**Lifting a relation through a restriction.** Given a finite list $L$ of channel names and a
+relation $R$ on static CCS processes, the lifted relation relates $P$ to $Q$ exactly when either
+$R$ relates $P$ to $Q$, or $P = P' \setminus L$ and $Q = Q' \setminus L$ for some processes $P'$
+and $Q'$ that $R$ relates.
 
 ## Depends on
 
-- [Static Process](static-process.md)
+- [Static CCS processes](static-process.md)
 
 ## Sources
 

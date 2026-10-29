@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.Config.init
 ---
 
-# Init
+# Initial configuration of the clocked evaluator
 
-The initial configuration: state `0`, the input head on the first input cell, blank work
-tapes, empty output.
+**Initial configuration of the clocked evaluator.** The initial explicit configuration has
+state $0$, the input head on the first input cell (position $1$, positions being shifted by one),
+every work tape blank (both halves of its zipper empty), and empty output.
 
 ## Depends on
 
-- [Config](config.md)
+- [Explicit configurations of the code evaluator](config.md)
 
 ## Proof depends on
 
-- [Tape](tape.md)
+- [Work tapes as zippers](tape.md)
 
 ## Sources
 

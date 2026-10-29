@@ -5,14 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.RAMAddr
 ---
 
-# RAMAddr
+# RAM addressing mode
 
-A **RAM addressing mode**: immediate (the literal value `n` itself),
-direct (the contents of register `n`), or indirect (the contents of the
-register whose index is the contents of register `n`, i.e. `regs (regs n)`).
-The earlier version of this file mislabelled the immediate mode `dir` and
-the direct mode `ind`, and had no indirect mode; the three modes below are
-the Aho–Hopcroft–Ullman modes.
+**RAM addressing mode.** An addressing mode of a random-access machine specifies an operand
+by a natural number $n$ in one of three ways: immediate (the operand is the value $n$ itself),
+direct (the operand is the contents of register $n$), or indirect (the operand is the contents
+of the register whose index is the contents of register $n$).
 
 ## Depends on
 

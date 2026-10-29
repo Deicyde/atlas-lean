@@ -13,7 +13,7 @@ Theory of Computation, 3rd ed., 2013, Theorem 9.21.
 
 ## Depends on
 
-- [NC](../../../../Computability/CSLibExt/complexity/classes/nc.md)
+- [The class NC](../../../../Computability/CSLibExt/complexity/classes/nc.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class P](../../../../Computability/MathlibExt/complexity/p.md)

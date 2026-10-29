@@ -14,7 +14,7 @@ Proceedings of the Eighteenth Annual ACM Symposium on Theory of Computing (STOC 
 
 ## Depends on
 
-- [IP](../../../../../Computability/CSLibExt/complexity/classes/ip.md)
+- [The class IP](../../../../../Computability/CSLibExt/complexity/classes/ip.md)
 - [Pub IP](pub-ip.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 

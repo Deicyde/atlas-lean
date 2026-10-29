@@ -5,18 +5,18 @@ statement: formalized
 lean: Cslib.CCS.Recursive.Process.Guarded
 ---
 
-# Guarded
+# Guarded process
 
-A process expression is guarded when all constant occurrences lie beneath
-an action prefix.
+**Guarded process.** A recursive CCS process is guarded when all of its constant
+occurrences lie beneath an action prefix.
 
 ## Depends on
 
-- [Process](process.md)
+- [Recursive CCS processes](process.md)
 
 ## Proof depends on
 
-- [Guarded Under](guarded-under.md)
+- [Guardedness under a prefix flag](guarded-under.md)
 
 ## Sources
 

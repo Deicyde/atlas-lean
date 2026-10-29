@@ -5,15 +5,19 @@ statement: formalized
 lean: Manifold.IsKillingVectorField
 ---
 
-# Is Killing Vector Field
+# Killing vector field
 
-A field `X` is Killing when it is `C^∞` and satisfies Killing's equation
-`∇_i X_j + ∇_j X_i = 0` for the Levi-Civita connection of the metric itself, i.e.
-`⟪∇_u X, v⟫ + ⟪u, ∇_v X⟫ = 0`. This is `L_X g = 0`
-(see `isKillingVectorField_iff_mvfderiv_inner`). Smoothness is part of the definition
-(the textbook definition, excluding junk-value fields). The flow-by-isometries fact is
-NOT proved here. Motivation: Killing `V` gives the linear first integral `ξ ↦ g(V, ξ)`
-of geodesic flow (Burns and Matveev (2021), §10.2), not formalized here.
+**Killing vector field.** Let $M$ be a finite-dimensional smooth manifold, possibly with
+boundary or corners, with a smooth Riemannian metric $g = \langle \cdot, \cdot \rangle$ and its
+Levi-Civita connection $\nabla$. A vector field $X$ on $M$ is a Killing vector field if $X$ is
+smooth and satisfies Killing's equation: for every point $x \in M$ and all tangent vectors
+$u, v \in T_x M$,
+
+$$\langle \nabla_u X, v \rangle + \langle u, \nabla_v X \rangle = 0.$$
+
+In index notation this is $\nabla_i X_j + \nabla_j X_i = 0$, and it is equivalent to the
+vanishing of the Lie derivative $L_X g$ of the metric. Smoothness is part of the definition, as
+in the textbook definition.
 
 ## Depends on
 
@@ -22,3 +26,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.Riemannian.Killing.Basic](../../../../../../../../../sources/v2/MathlibExt.md)
+- Burns and Matveev (2021), §10.2, for motivation: a Killing field $V$ gives the linear first integral $\xi \mapsto g(V, \xi)$ of geodesic flow, not formalized here. That the flow of a Killing field consists of isometries is not proved here.

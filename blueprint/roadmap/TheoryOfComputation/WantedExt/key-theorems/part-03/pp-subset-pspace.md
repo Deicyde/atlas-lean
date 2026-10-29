@@ -13,8 +13,8 @@ Approach, 2009 (PP ⊆ PSPACE).
 
 ## Depends on
 
-- [PP](../../../../Computability/CSLibExt/complexity/classes/pp.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Probabilistic polynomial time with unbounded error](../../../../Computability/CSLibExt/complexity/classes/pp.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

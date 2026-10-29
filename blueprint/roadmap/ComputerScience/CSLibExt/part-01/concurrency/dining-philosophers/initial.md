@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.initial
 ---
 
-# Initial
+# Initial state of the dining philosophers
 
-Everybody thinking.
+**Initial state of the dining philosophers.** The state in which all three philosophers are
+thinking, that is, every phase is $0$.
 
 ## Depends on
 
-- [State](state.md)
+- [Dining-philosophers state](state.md)
 
 ## Sources
 

@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeTm_toTm
 ---
 
-# Normalize Tm to Tm
+# Normalization fixes the terms of normal forms
 
-A term already presented by an eta-long normal form normalizes to itself.
+**Normalization fixes the terms of normal forms.** For every eta-long normal form $n$ of
+type $A$ in context $\Gamma$, normalizing the underlying term of $n$ returns that term
+unchanged.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Normalize Nf](../nbe-evaluation/normalize-nf.md)
-- [Normalize Nf to Tm](normalize-nf-to-tm.md)
+- [Normalization by evaluation](../nbe-evaluation/normalize-nf.md)
+- [Normal forms are fixed points of normalization](normalize-nf-to-tm.md)
 
 ## Sources
 

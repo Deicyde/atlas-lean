@@ -5,21 +5,26 @@ statement: formalized
 lean: Cslib.Algorithms.CCS.AlternatingBit.lts
 ---
 
-# Lts
+# Alternating-bit transition system
 
-The labelled transition system of the specification.
+**Alternating-bit transition system.** The labelled transition system whose states are the
+CCS processes over the alternating-bit channel names and process constants, whose labels are the
+CCS labels over those names, and whose transitions are the steps of the CCS operational
+semantics for the recursive specification that defines each process constant (one per state of
+the sender, the data channel, the receiver, the acknowledgement channel and the one-place
+buffer) as the choice of its listed transitions.
 
 ## Depends on
 
-- [Agent](agent.md)
-- [Name](name.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
+- [Process constants of the data-free alternating-bit protocol](agent.md)
+- [Alternating-bit channel names](name.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
 
 ## Proof depends on
 
-- [Spec](spec.md)
-- [Lts](../recursion/lts.md)
+- [Recursive specification of the data-free alternating-bit protocol](spec.md)
+- [Labelled transition system of a recursive specification](../recursion/lts.md)
 
 ## Sources
 

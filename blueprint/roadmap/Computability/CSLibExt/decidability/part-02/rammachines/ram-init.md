@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.ramInit
 ---
 
-# Ram Init
+# Initial RAM state
 
-The initial RAM state on the given inputs (in registers `0, 1, …`).
+**Initial RAM state.** The initial state on inputs $x_0, \dots, x_{k-1}$ has program counter
+$0$ and accumulator $0$; register $i$ holds $x_i$ for $i < k$, and every other register holds
+$0$.
 
 ## Depends on
 
-- [RAMState](ramstate.md)
+- [RAM state](ramstate.md)
 
 ## Sources
 

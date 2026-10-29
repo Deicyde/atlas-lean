@@ -15,7 +15,7 @@ Approach, 2009, Chapter 11 (APX-hardness rules out a PTAS unless P = NP).
 
 ## Depends on
 
-- [Is PTAS](../../../../../Computability/CSLibExt/complexity/classes/is-ptas.md)
+- [Polynomial-time approximation schemes](../../../../../Computability/CSLibExt/complexity/classes/is-ptas.md)
 - [Max Cut](max-cut.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)

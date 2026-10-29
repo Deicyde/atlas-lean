@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.Classes.IsFPTAS
 ---
 
-# Is FPTAS
+# Fully polynomial-time approximation schemes
 
-`FPTAS`: an NPO problem with one polynomial-time algorithm achieving
-ratio `1 - 1 / k` for every `k ≥ 1`; since the precision tape is unary,
-polynomial time in the total input length is polynomial in `|x|` and `1 / ε`.
+**Fully polynomial-time approximation schemes.** A maximization problem $P$ has an FPTAS
+when $P$ is an NPO problem and there is one polynomial-time algorithm $A$ such that, for every
+integer $k \ge 1$, every instance $x$ and every feasible solution $s$ for $x$, the output
+$A(x, 1^k)$ of $A$ on $x$ with the unary precision tape of length $k$ is a feasible solution for
+$x$ whose value is at least $1 - 1/k$ times the value of $s$.
+
+Since the precision tape is unary, polynomial time in the total input length is polynomial
+time in $|x|$ and $1/\varepsilon$, where $\varepsilon = 1/k$.
 
 ## Depends on
 
-- [Opt Problem](opt-problem.md)
+- [Optimization problems](opt-problem.md)
 
 ## Proof depends on
 
-- [Approx At](approx-at.md)
-- [Is NPO](is-npo.md)
+- [Approximation ratio at a precision](approx-at.md)
+- [NPO optimization problems](is-npo.md)
 - [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

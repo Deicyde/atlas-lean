@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SumsetPartitionErdosProblem741Wanted.basisWithoutBoundedGapSplit
 ---
 
-# Basis Without Bounded Gap Split
+# Erdős Problem 741, bounded-gaps question
 
-Erdős Problem 741, second question: there is a basis `A` of order `2` (every sufficiently large
-integer is a sum of two elements of `A`) such that for every partition `A = A₁ ⊔ A₂` the sumsets
-`A₁ + A₁` and `A₂ + A₂` do not both have bounded gaps.
+**Erdős Problem 741, bounded-gaps question.** This proposition asserts that there is a set
+$A \subseteq \mathbb{N}$ that is an asymptotic additive basis of order $2$ (all but finitely many
+natural numbers are sums of two elements of $A$) such that for all disjoint sets
+$A_1, A_2 \subseteq \mathbb{N}$ with $A_1 \cup A_2 = A$, the sumsets
+$A_1 + A_1 = \{a + b : a, b \in A_1\}$ and $A_2 + A_2$ do not both have bounded gaps.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Bounded Gaps](has-bounded-gaps.md)
+- [Sets with bounded gaps](has-bounded-gaps.md)
 - [Asymptotic additive basis of order $n$](../../../MathlibExt/part-01/additive/basis/is-asymptotic-add-basis-of-order.md)
 
 ## Sources

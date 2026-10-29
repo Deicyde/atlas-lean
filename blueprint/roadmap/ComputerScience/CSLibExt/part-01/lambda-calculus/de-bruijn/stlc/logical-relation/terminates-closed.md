@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.terminates_closed
 ---
 
-# Terminates closed
+# Termination of the call-by-value simply typed lambda calculus
 
-Every closed well-typed term evaluates to a value.
+**Termination of the call-by-value simply typed lambda calculus.** Every closed well-typed
+term evaluates, in finitely many call-by-value steps, to a value.
 
 ## Depends on
 
-- [Terminates](terminates.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Termination of closed terms](terminates.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Terminates](terminates-2.md)
-- [Reducible closed](reducible-closed.md)
+- [Reducible terms terminate](terminates-2.md)
+- [Closed terms are reducible](reducible-closed.md)
 
 ## Sources
 

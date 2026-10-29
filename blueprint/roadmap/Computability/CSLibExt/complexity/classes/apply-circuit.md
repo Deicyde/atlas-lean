@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Classes.applyCircuit
 ---
 
-# Apply Circuit
+# Applying a quantum circuit to a state
 
-Apply a list of gates, in order, to a state vector.
+**Applying a quantum circuit to a state.** For a state vector $\psi \in \mathbb{C}^{2^N}$ on
+$N$ qubits and a list of 2-local gates $g_1, \dots, g_k$, the result of applying the circuit to
+$\psi$ is obtained by applying the gate $g_1$ to $\psi$, then $g_2$ to the result, and so on up to
+$g_k$. For the empty list it is $\psi$ itself.
 
 ## Depends on
 
-- [QGate](qgate.md)
+- [Encoded 2-local quantum gate](qgate.md)
 
 ## Proof depends on
 
-- [Apply Gate](apply-gate.md)
+- [Applying a 2-local gate to a state](apply-gate.md)
 
 ## Sources
 

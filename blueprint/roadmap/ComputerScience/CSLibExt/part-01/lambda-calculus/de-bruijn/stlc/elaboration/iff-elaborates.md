@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.HasType.iff_elaborates
 ---
 
-# Iff elaborates
+# Declarative typing agrees with elaboration
 
-The algorithmic and declarative presentations of typing coincide.
+**Declarative typing agrees with elaboration.** Assume equality of base types is decidable.
+For every context $\Gamma$, raw term $t$ and type $A$, the declarative typing judgment
+$\Gamma \vdash t : A$ holds if and only if there is an intrinsically typed term $u$ of type $A$
+in context $\Gamma$ such that elaborating $t$ in $\Gamma$ succeeds and returns the type $A$
+together with $u$.
 
 ## Depends on
 
-- [Checked](checked.md)
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Proof depends on
 
-- [Elaborate complete](elaborate-complete.md)
-- [Elaborate sound](elaborate-sound.md)
+- [Completeness of elaboration](elaborate-complete.md)
+- [Soundness of elaboration](elaborate-sound.md)
 
 ## Sources
 

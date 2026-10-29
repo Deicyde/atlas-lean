@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.pi_mono
 ---
 
-# `Πₙ ⊆ Πₙ₊₁`
+# Monotonicity of the Π hierarchy
 
-**`Πₙ ⊆ Πₙ₊₁`**: the `Π` hierarchy is monotone.
+**Monotonicity of the Π hierarchy.** For every natural number $n$, every set of natural
+numbers in the class $\Pi_n$ of the arithmetical hierarchy is also in $\Pi_{n+1}$; that is,
+$\Pi_n \subseteq \Pi_{n+1}$.
 
 ## Depends on
 

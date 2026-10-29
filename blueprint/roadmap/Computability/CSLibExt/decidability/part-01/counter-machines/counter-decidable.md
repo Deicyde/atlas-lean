@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Decidability.CounterDecidable
 ---
 
-# Counter Decidable
+# Counter-machine decidable predicates
 
-A predicate is **counter-machine decidable** when a counter machine
-computes its characteristic function.
+**Counter-machine decidable predicates.** A predicate $P$ on the natural numbers is
+counter-machine decidable when some counter-machine program computes its characteristic
+function: for every natural number $n$, the output of the program on the single input $n$ is
+defined and equals $1$ if $P(n)$ holds and $0$ otherwise.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Counter Instr](counter-instr.md)
+- [Counter-machine instructions](counter-instr.md)
 - [Characteristic function of a set of naturals](../../part-02/turing-reducible/char-fun.md)
-- [Counter Eval](counter-eval.md)
+- [Output of a counter machine](counter-eval.md)
 
 ## Sources
 

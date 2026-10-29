@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.approx_bot
 ---
 
-# Approx bot
+# The least element approximates every term
 
-`⊥` approximates every term.
+**The least element approximates every term.** For every PCF type $A$ and every closed term
+$t$ of type $A$, the least element $\bot$ of the domain of $A$ formally approximates $t$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Approx](approx.md)
-- [Ty](../syntax/ty.md)
-- [Dom](../denotational/dom.md)
-- [Order Bot](../denotational/order-bot.md)
+- [PCF terms](../syntax/tm.md)
+- [Formal approximation relation](approx.md)
+- [PCF types](../syntax/ty.md)
+- [Domain of a PCF type](../denotational/dom.md)
+- [Least elements of PCF domains](../denotational/order-bot.md)
 
 ## Proof depends on
 
-- [Eval](../big-step/eval.md)
-- [Numeral](../syntax/numeral.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SumsetGrowthZeroDensityErdosProblem245Wanted.sumsetRatioLimsupAtLeastThree_holds
 ---
 
-# Sumset Ratio Limsup At Least Three holds
+# Freiman's theorem on sumsets of sets of density zero
 
-Resolved true: Freiman proved that the limsup is at least `3`; erdosproblems.com/245 lists the
-problem as proved. Source: T. F. Bloom, Erdős Problems, Problem #245,
-https://www.erdosproblems.com/245 (status PROVED); resolution: G. A. Freiman, Foundations of a
-structural theory of set addition, Transl. Math. Monogr. 37, Amer. Math. Soc. (1973),
-erdosproblems.com/245: proved by Freiman [Fr73], https://doi.org/10.1090/mmono/037.
+**Freiman's theorem on sumsets of sets of density zero.** For $N \in \mathbb{N}$ write
+$[1, N] = \{1, \dots, N\}$, and for $A \subseteq \mathbb{N}$ write
+$A + A = \{a + b \mid a, b \in A\}$. Let $A \subseteq \mathbb{N}$ be an infinite set with
+$\lvert A \cap [1, N] \rvert / N \to 0$ as $N \to \infty$. Then for every real $\varepsilon > 0$
+there are infinitely many $N$ with
+$\lvert (A + A) \cap [1, N] \rvert > (3 - \varepsilon) \lvert A \cap [1, N] \rvert$; that is,
+$\limsup_{N \to \infty} \lvert (A + A) \cap [1, N] \rvert / \lvert A \cap [1, N] \rvert \ge 3$.
 
 ## Depends on
 
-- [Sumset Ratio Limsup At Least Three](sumset-ratio-limsup-at-least-three.md)
+- [Erdős Problem 245 on sumsets of sets of density zero](sumset-ratio-limsup-at-least-three.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SumsetGrowthZeroDensityErdosProblem245Wanted](../../../../../sources/v2/WantedExt.md)
+- T. F. Bloom, Erdős Problems, Problem #245, https://www.erdosproblems.com/245 (status PROVED); resolution: G. A. Freiman, Foundations of a structural theory of set addition, Transl. Math. Monogr. 37, Amer. Math. Soc. (1973), erdosproblems.com/245: proved by Freiman [Fr73], https://doi.org/10.1090/mmono/037.

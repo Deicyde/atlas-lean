@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq.equivalence
 ---
 
-# Equivalence
+# Semantic equality is an equivalence relation
 
-Semantic equality is an equivalence relation in every model.
+**Semantic equality is an equivalence relation.** For every interpretation $I$ of the base
+types, every context $\Gamma$ and every type $A$, semantic equality in $I$ of terms of type $A$
+in $\Gamma$ (having the same denotation in every environment) is reflexive, symmetric and
+transitive.
 
 ## Depends on
 
-- [Sem Eq](sem-eq.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Semantic equality of terms in a model](sem-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
+- [Semantic equality is reflexive](refl.md)
+- [Symmetry of semantic equality of terms](symm.md)
+- [Transitivity of semantic equality of terms](trans.md)
 
 ## Sources
 

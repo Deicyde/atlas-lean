@@ -6,31 +6,34 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.identity_related
 ---
 
-# Identity related
+# The identity semantic environment realizes every environment
 
-The identity Kripke environment realizes every denotational environment.
+**The identity semantic environment realizes every environment.** Fix an interpretation $I$
+of the base types and an environment $\eta$ for a context $\Gamma$ in $I$. Then the identity
+Kripke semantic environment on $\Gamma$, which reflects each variable as a neutral value,
+realizes $\eta$ at $\eta$.
 
 ## Depends on
 
-- [Env](../denotational/env.md)
-- [Nbe Env Related](nbe-env-related.md)
-- [Identity](../nbe/identity.md)
-- [Ty](../syntax/ty.md)
+- [Semantic environments](../denotational/env.md)
+- [Realization of environments](nbe-env-related.md)
+- [The identity semantic environment](../nbe/identity.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Cons](../denotational/cons.md)
-- [Rename](../denotational/rename.md)
-- [Nbe Related](nbe-related.md)
-- [Ren](../syntax/ren.md)
-- [Sem](../nbe/sem.md)
-- [Tm](../syntax/tm.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote rename](../denotational/denote-rename.md)
-- [Rename](../syntax/rename.md)
-- [Denote](../denotational/denote.md)
-- [Var](../syntax/var.md)
-- [Lift](../syntax/lift.md)
+- [Extending a semantic environment in STLC](../denotational/cons.md)
+- [Renaming an environment](../denotational/rename.md)
+- [Kripke realization relation for NbE](nbe-related.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Kripke semantic values](../nbe/sem.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Renaming lemma for STLC denotation](../denotational/denote-rename.md)
+- [Renaming a simply typed term](../syntax/rename.md)
+- [Denotation of simple types](../denotational/denote.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
 
 ## Sources
 

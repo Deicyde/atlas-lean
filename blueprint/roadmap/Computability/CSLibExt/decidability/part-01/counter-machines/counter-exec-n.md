@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Decidability.counterExecN
 ---
 
-# Counter Exec N
+# Bounded execution of a counter machine
 
-Bounded execution of a counter machine: `t` steps from the initial state.
+**Bounded execution of a counter machine.** For a counter-machine program $p$, a natural
+number $t$ and a state $s$, the execution of $p$ for $t$ steps from $s$ is the state obtained from
+$s$ by applying $t$ single steps of $p$.
 
 ## Depends on
 
-- [Counter Instr](counter-instr.md)
-- [Counter State](counter-state.md)
+- [Counter-machine instructions](counter-instr.md)
+- [Counter-machine states](counter-state.md)
 
 ## Proof depends on
 
-- [Counter Step](counter-step.md)
+- [One step of a counter machine](counter-step.md)
 
 ## Sources
 

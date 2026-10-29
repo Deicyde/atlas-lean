@@ -6,18 +6,17 @@ proof: formalized
 lean: Cslib.Shor.gcd_factor_of_order
 ---
 
-# Gcd factor of order
+# Shor's order-to-factor reduction
 
-Classical core of Shor's factoring algorithm: if `a ^ r ≡ 1 (mod N)` with
-`r` even, `a ^ (r / 2) ≢ 1 (mod N)` and `a ^ (r / 2) ≢ -1 (mod N)`, then
-the value `Nat.gcd (a ^ (r / 2) - 1) N` that the classical post-processing
-computes is a nontrivial factor of `N`: it divides `N` and lies strictly
-between `1` and `N`. `exists_factor_of_order` is the existential corollary.
+**Shor's order-to-factor reduction.** Let $N$, $a$ and $r$ be natural numbers with $N > 1$ and
+$a \ge 1$. Suppose $a^r \equiv 1 \pmod{N}$, $r$ is even, $a^{r/2} \not\equiv 1 \pmod{N}$ and
+$a^{r/2} \not\equiv -1 \pmod{N}$. Then $d = \gcd(a^{r/2} - 1, N)$, the value computed by the
+classical post-processing, is a nontrivial factor of $N$: $d$ divides $N$ and $1 < d < N$.
 
-In the algorithm `r` is the multiplicative order of `a` modulo `N`, so the
-hypothesis `a ^ (r / 2) ≢ 1 (mod N)` is the minimality of the order, and the
-hypothesis `a ^ (r / 2) ≢ -1 (mod N)` is the "good unit" condition. This
-module assumes that condition; it does not prove its prevalence among units.
+In the algorithm $r$ is the multiplicative order of $a$ modulo $N$, so the hypothesis
+$a^{r/2} \not\equiv 1 \pmod{N}$ is the minimality of the order, and the hypothesis
+$a^{r/2} \not\equiv -1 \pmod{N}$ is the "good unit" condition. This module assumes that
+condition; it does not prove its prevalence among units.
 
 ## Depends on
 

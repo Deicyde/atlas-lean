@@ -13,7 +13,7 @@ Papadimitriou, Computational Complexity, Addison-Wesley, 1994, Theorem 7.2.
 
 ## Depends on
 
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)

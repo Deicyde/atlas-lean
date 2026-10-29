@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.Ramseys2Triangle
 ---
 
-# Ramseys2 Triangle
+# Graphs that arrow the triangle
 
-Two-color Ramsey arrow to the triangle: `G →₂ K₃`.
+**Graphs that arrow the triangle.** A graph $G$ arrows the triangle in two colours, written
+$G \to_2 K_3$, if every colouring of the edges of $G$ with two colours contains a monochromatic
+triangle: three distinct pairwise adjacent vertices whose three edges all have the same colour.
 
 ## Depends on
 

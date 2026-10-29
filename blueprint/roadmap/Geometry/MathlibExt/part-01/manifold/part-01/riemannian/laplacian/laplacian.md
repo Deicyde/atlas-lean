@@ -34,7 +34,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hessian](../hessian/hessian.md)
+- [Covariant Hessian](../hessian/hessian.md)
 
 ## Sources
 

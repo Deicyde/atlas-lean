@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.elaborate_erase
 ---
 
-# Elaborate erase
+# Elaboration inverts erasure
 
-Erasure is a section of elaboration: every intrinsic term elaborates back
-to the same type and term.
+**Elaboration inverts erasure.** Assume equality of base types is decidable. For every
+intrinsically typed term $t$ of type $A$ in context $\Gamma$, elaborating the erasure of $t$ in
+$\Gamma$ succeeds and returns exactly the pair $(A, t)$. In other words, erasure is a section of
+elaboration.
 
 ## Depends on
 
-- [Checked](checked.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Ty](../syntax/ty.md)
-- [Elaborate](elaborate.md)
+- [Checked terms](checked.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Simple types](../syntax/ty.md)
+- [Elaboration of raw STLC terms](elaborate.md)
 
 ## Proof depends on
 
-- [Raw Tm](raw-tm.md)
-- [Var](../syntax/var.md)
-- [To Nat](to-nat.md)
-- [Lookup Var](lookup-var.md)
-- [Lookup Var to Nat](lookup-var-to-nat.md)
+- [Raw lambda terms](raw-tm.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](to-nat.md)
+- [Variable lookup](lookup-var.md)
+- [Lookup recovers an intrinsic variable from its index](lookup-var-to-nat.md)
 
 ## Sources
 

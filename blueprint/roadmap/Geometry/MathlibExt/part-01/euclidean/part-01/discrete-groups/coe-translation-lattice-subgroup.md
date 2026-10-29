@@ -6,16 +6,18 @@ proof: formalized
 lean: DiscreteGroups.coe_translationLatticeSubgroup
 ---
 
-# Coe translation Lattice Subgroup
+# Carrier of the translation lattice subgroup
 
-Forgetting the additive bundle recovers the original set.
+**Carrier of the translation lattice subgroup.** For every group $G$ of affine isometries of
+the Euclidean plane, the underlying set of the translation lattice subgroup of $G$ is the
+translation lattice of $G$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [M₂](m.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Isometry group of the Euclidean plane](m.md)
 - [Translation Lattice](translation-lattice.md)
-- [Translation Lattice Subgroup](translation-lattice-subgroup.md)
+- [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 
 ## Sources
 

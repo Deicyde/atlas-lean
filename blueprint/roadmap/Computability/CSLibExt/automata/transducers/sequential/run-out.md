@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Automata.SequentialTransducer.runOut
 ---
 
-# Run Out
+# Output word of a sequential transducer run
 
-The output word of the run from `q` on `xs`.
+**Output word of a sequential transducer run.** For a sequential transducer $S$, a state $q$
+and an input word $x$, the output word of the run from $q$ on $x$ is the concatenation of the
+output words that $S$ emits on the successive letters of $x$, starting in $q$ and moving to the
+successor state after each letter; the initial and final outputs are not included.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Proof depends on
 
-- [Run From](run-from.md)
+- [Run of a sequential transducer](run-from.md)
 
 ## Sources
 

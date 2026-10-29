@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.size_rename
 ---
 
-# Size rename
+# Renaming preserves the size of a raw term
 
-Renaming preserves the number of syntax nodes.
+**Renaming preserves the size of a raw term.** For every map $\rho : \mathbb{N} \to \mathbb{N}$
+and every raw term $t$, the renaming of $t$ by $\rho$ has the same number of syntax nodes as $t$.
 
 ## Depends on
 
-- [Raw Tm](../elaboration/raw-tm.md)
-- [Rename](rename.md)
-- [Size](../elaboration/size.md)
+- [Raw lambda terms](../elaboration/raw-tm.md)
+- [Renaming of raw terms](rename.md)
+- [Size of a raw term](../elaboration/size.md)
 
 ## Proof depends on
 
-- [Lift Ren](lift-ren.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a numerical renaming](lift-ren.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

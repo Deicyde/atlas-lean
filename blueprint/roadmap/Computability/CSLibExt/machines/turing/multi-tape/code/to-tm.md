@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.toTM
 ---
 
-# To TM
+# The machine of a code
 
-The machine of a code, a machine of CSLib's multi-tape model; it starts in state `0`.
+**The machine of a code.** The machine of a code $c$ for $k$ work tapes is the machine of
+CSLib's multi-tape model with $k$ work tapes, the binary alphabet and states in $\mathbb{N}$
+whose initial state is $0$ and whose transition function is the transition function of $c$.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for multi-tape machines](code.md)
 
 ## Proof depends on
 
-- [Tr](tr.md)
+- [Transition function of a code](tr.md)
 
 ## Sources
 

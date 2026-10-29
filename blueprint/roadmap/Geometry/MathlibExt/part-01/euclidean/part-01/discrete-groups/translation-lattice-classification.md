@@ -6,22 +6,28 @@ proof: formalized
 lean: DiscreteGroups.translation_lattice_classification
 ---
 
-# Translation lattice classification
+# Classification of translation lattices
 
-The translation lattice of a plane-isometry group satisfying the source
-separation criterion is trivial, cyclic, or a rank-two lattice.
+**Classification of translation lattices.** Let $G$ be a group of affine isometries of the
+Euclidean plane $\mathbb{R}^2$, and suppose there is $\varepsilon > 0$ such that every
+non-identity translation in $G$ moves the origin by at least $\varepsilon$, and every element of
+$G$ whose linear part $A$ is not the identity satisfies $\|A - I\| \ge \varepsilon$ in operator
+norm. Let $L$ be the translation lattice of $G$, the additive subgroup of vectors $v$ such that
+translation by $v$ lies in $G$. Then either $L = \{0\}$, or $L = \mathbb{Z}\alpha$ for some nonzero
+vector $\alpha$, or $L = \mathbb{Z}a + \mathbb{Z}b$ for some $\mathbb{R}$-linearly independent
+vectors $a$ and $b$.
 
 ## Depends on
 
-- [E2](e2.md)
-- [Is Discrete](is-discrete.md)
-- [M₂](m.md)
-- [Translation Lattice Subgroup](translation-lattice-subgroup.md)
+- [The Euclidean plane for discrete isometry groups](e2.md)
+- [Separation criterion for groups of plane isometries](is-discrete.md)
+- [Isometry group of the Euclidean plane](m.md)
+- [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 
 ## Proof depends on
 
 - [Classification of discrete additive subgroups of the plane](discrete-subgroup-r2-classification.md)
-- [Translation Lattice Subgroup discrete Topology](translation-lattice-subgroup-discrete-to.md)
+- [The translation lattice of a discrete isometry group is discrete](translation-lattice-subgroup-discrete-to.md)
 
 ## Sources
 

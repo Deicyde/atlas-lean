@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Classes.ModOnly
 ---
 
-# Mod Only
+# Circuits whose modular gates have a fixed modulus
 
-Every `mod` gate has modulus exactly `m`.
+**Circuits whose modular gates have a fixed modulus.** For a natural number $m$, a flat
+Boolean circuit on $n$ inputs satisfies the modulus-$m$ condition when every $\mathrm{mod}$
+gate in it has modulus exactly $m$; gates of the other kinds are unrestricted.
 
 ## Depends on
 
-- [ACGate](acgate.md)
+- [Gates of a flat Boolean circuit](acgate.md)
 
 ## Sources
 

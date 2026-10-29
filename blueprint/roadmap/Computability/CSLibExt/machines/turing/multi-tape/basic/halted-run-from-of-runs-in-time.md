@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.halted_runFrom_of_runsInTime
 ---
 
-# Halted run From of runs In Time
+# A time bound forces halting
 
-A deterministic machine that runs in time `t` on `input` is halted after `t` steps.
+**A time bound forces halting.** If a deterministic multi-tape Turing machine runs in time $t$
+on input $w$, then the run from the initial configuration on $w$ is halted after $t$ steps.
 
 ## Depends on
 

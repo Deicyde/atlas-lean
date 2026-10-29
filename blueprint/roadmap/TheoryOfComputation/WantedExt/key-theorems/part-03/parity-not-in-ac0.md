@@ -15,8 +15,8 @@ Eighteenth Annual ACM Symposium on Theory of Computing (STOC 1986), 6-20.
 
 ## Depends on
 
-- [AC0](../../../../Computability/CSLibExt/complexity/classes/ac0.md)
-- [Parity Dec](../../../../Computability/CSLibExt/complexity/classes/parity-dec.md)
+- [The class $\mathsf{AC}^0$](../../../../Computability/CSLibExt/complexity/classes/ac0.md)
+- [The parity language](../../../../Computability/CSLibExt/complexity/classes/parity-dec.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

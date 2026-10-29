@@ -6,9 +6,10 @@ proof: formalized
 lean: SU2.su2_trace_conj_inv
 ---
 
-# Su2 trace conj inv
+# Trace is invariant under conjugation in $\mathrm{SU}(2)$
 
-The trace is invariant under conjugation in `SU₂`.
+**Trace is invariant under conjugation in $\mathrm{SU}(2)$.** For all $P$ and $A$ in
+$\mathrm{SU}(2)$, the trace of $P A P^{-1}$ equals the trace of $A$.
 
 ## Depends on
 

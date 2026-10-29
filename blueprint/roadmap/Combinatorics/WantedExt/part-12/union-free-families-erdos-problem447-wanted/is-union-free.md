@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.UnionFreeFamiliesErdosProblem447Wanted.IsUnionFree
 ---
 
-# Is Union Free
+# Union-free family
 
-`F` is union-free: there are no distinct `A, B, C ∈ F` with `A ∪ B = C`.
+**Union-free family.** A family $F$ of subsets of $\{0, \dots, n-1\}$ is union-free if there
+are no pairwise distinct $A, B, C \in F$ with $A \cup B = C$.
 
 ## Depends on
 

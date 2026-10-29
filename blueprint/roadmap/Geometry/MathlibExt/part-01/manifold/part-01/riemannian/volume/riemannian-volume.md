@@ -5,15 +5,18 @@ statement: formalized
 lean: Manifold.riemannianVolume
 ---
 
-# Riemannian Volume
+# Riemannian volume
 
-The Riemannian volume measure of a `C^∞` Riemannian manifold `M` modeled on
-`I : ModelWithCorners ℝ E H` with `E` finite-dimensional (so `M` has dimension
-`n = finrank ℝ E`), with a `C^∞` metric (`[IsContMDiffRiemannianBundle I ∞ E _]`) and whose distance
-is the Riemannian distance (`[IsRiemannianManifold I M]`): the normalized `n`-dimensional Hausdorff
-measure of `M` (see the module docstring). The manifold and Riemannian instance arguments are not
-used in the formula; they tie the dimension to the model of `M` and restrict the definition to the
-setting in which it is the Riemannian volume.
+**Riemannian volume.** Let $E$ be a finite-dimensional real normed space, let $I$ be a model
+with corners on $E$, and let $M$ be a $C^\infty$ manifold modeled on $I$, so that $M$ has dimension
+$n = \dim_{\mathbb{R}} E$. Suppose that $M$ carries a $C^\infty$ Riemannian metric and an extended
+metric equal to the Riemannian distance (the infimum of the lengths of $C^1$ paths), and is given
+its Borel $\sigma$-algebra. The Riemannian volume of $M$ is the normalized $n$-dimensional
+Hausdorff measure of $M$.
+
+The manifold and Riemannian hypotheses are not used in the formula; they tie the dimension to the
+model of $M$ and restrict the definition to the setting in which, classically, this measure is the
+Riemannian volume, given in charts by the density $\sqrt{\det(g_{ij})}$ against Lebesgue measure.
 
 ## Depends on
 
@@ -21,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Normalized Hausdorff Measure](normalized-hausdorff-measure.md)
+- [Normalized Hausdorff measure](normalized-hausdorff-measure.md)
 
 ## Sources
 

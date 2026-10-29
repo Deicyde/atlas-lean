@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Diag Rotation](diag-rotation.md)
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
+- [Diagonal rotation](diag-rotation.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
 - [Star diag Rotation](star-diag-rotation.md)
 
 ## Sources

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rat Enc](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
+- [Encoded rational number](../../../../../Computability/CSLibExt/complexity/classes/rat-enc.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.RAMDecidable
 ---
 
-# RAMDecidable
+# RAM-decidable predicate
 
-A predicate is **RAM decidable** when a RAM machine computes its
-characteristic function.
+**RAM-decidable predicate.** A predicate $P$ on the natural numbers is RAM decidable when
+there is a RAM program, a finite list of RAM instructions, such that for every natural number $n$
+the program, started with $n$ in register $0$ and with the accumulator, the program counter and
+every other register at $0$, halts (its program counter reaches or passes the end of the
+program) with $1$ in the accumulator if $P(n)$ holds and with $0$ in the accumulator otherwise;
+that is, its RAM evaluation on the single input $n$ equals the characteristic function of $P$
+at $n$.
 
 ## Depends on
 
@@ -16,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [RAMInstr](raminstr.md)
+- [RAM instruction](raminstr.md)
 - [Characteristic function of a set of naturals](../turing-reducible/char-fun.md)
-- [Ram Eval](ram-eval.md)
+- [Output of a RAM machine](ram-eval.md)
 
 ## Sources
 

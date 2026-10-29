@@ -14,7 +14,7 @@ Computer Science (FOCS 1978), 75-83.
 ## Depends on
 
 - [BPP](../../../../Computability/CSLibExt/complexity/classes/bpp.md)
-- [PPoly](../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
+- [Polynomial time with polynomial advice](../../../../Computability/CSLibExt/complexity/classes/ppoly.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

@@ -6,26 +6,31 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_simulation_lam
 ---
 
-# Cps simulation lam
+# Simulation for terms evaluating to an abstraction
 
-The simulation theorem for a program evaluating to `λx. N`: `⟦M⟧ K`
-evaluates to `w` exactly when `K (λx. ⟦N⟧)` does.
+**Simulation for terms evaluating to an abstraction.** Fix an answer type $R$ and write
+$\llbracket \cdot \rrbracket$ for the call-by-value CPS translation of types, contexts (entrywise)
+and terms. If a term $M$ of type $A \to B$ in a context $\Gamma$ evaluates to $\lambda x. N$ under
+call-by-value big-step evaluation, then for every value $K$ of type
+$\llbracket A \to B \rrbracket \to R$ in $\llbracket \Gamma \rrbracket$ and every term $w$ of type
+$R$, the application $\llbracket M \rrbracket\, K$ evaluates to $w$ if and only if
+$K\, (\lambda x. \llbracket N \rrbracket)$ evaluates to $w$.
 
 ## Depends on
 
-- [Cps](../translation/cps.md)
-- [Cps Ty](../translation/cps-ty.md)
-- [Eval](../../de-bruijn/stlc/big-step/eval.md)
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Value](../../de-bruijn/stlc/semantics/value.md)
+- [Call-by-value CPS translation of terms](../translation/cps.md)
+- [Call-by-value CPS translation of types](../translation/cps-ty.md)
+- [Big-step call-by-value evaluation in the simply typed lambda calculus](../../de-bruijn/stlc/big-step/eval.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Values of STLC](../../de-bruijn/stlc/semantics/value.md)
 
 ## Proof depends on
 
-- [Psi Rel](psi-rel.md)
-- [Cps Var](../translation/cps-var.md)
-- [Cps simulation](cps-simulation.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Plotkin's value translation $\Psi$](psi-rel.md)
+- [CPS translation of variables](../translation/cps-var.md)
+- [Plotkin's simulation theorem, big-step form](cps-simulation.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Sources
 

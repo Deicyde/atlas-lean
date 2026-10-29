@@ -5,15 +5,21 @@ statement: formalized
 lean: Cslib.Automata.SequentialTransducer.preimageDFA
 ---
 
-# Preimage DFA
+# Product DFA of a sequential transducer and a DFA
 
-The product DFA of a sequential transducer `S` with a DFA `M` for the output
-language: it feeds `S`'s output words through `M`, starting `M` in the state reached
-on `S`'s initial output.
+**Product DFA of a sequential transducer and a DFA.** Let $S$ be a sequential transducer
+with state type $Q$, input alphabet $\Sigma$ and output alphabet $\Gamma$, and let $M$ be a DFA
+over $\Gamma$ with state type $P$. The product DFA of $S$ and $M$ is the DFA over $\Sigma$ with
+state type $Q \times P$ defined as follows. In state $(q, r)$ on a letter $a$, if $S$ moves from
+$q$ to $q'$ emitting the word $w$, it moves to $(q', r')$, where $r'$ is the state $M$ reaches
+from $r$ on $w$. Its start state is $(q_0, r_0)$, where $q_0$ is the start state of $S$ and
+$r_0$ is the state $M$ reaches from its start state on the initial output of $S$. A state
+$(q, r)$ is accepting when $q$ is an accepting state of $S$ and the state $M$ reaches from $r$
+on the final output of $S$ at $q$ is an accepting state of $M$.
 
 ## Depends on
 
-- [Sequential Transducer](sequential-transducer.md)
+- [Sequential transducer](sequential-transducer.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Games.ParityGame.Conforms
 ---
 
-# Conforms
+# Plays conforming to a strategy
 
-A play conforms to a strategy of `p` if `p` always moves as the strategy prescribes.
+**Plays conforming to a strategy.** Let $\sigma$ be a positional strategy of player $p$ in a
+parity game. An infinite sequence of positions $\pi_0, \pi_1, \dots$ (not necessarily a play)
+conforms to $\sigma$ if $\pi_{i+1} = \sigma(\pi_i)$ for every $i$ such that $p$ owns $\pi_i$.
 
 ## Depends on
 
-- [Parity Game](parity-game.md)
+- [Parity game](parity-game.md)
 - [Positional Strategy](positional-strategy.md)
-- [Player](player.md)
+- [Players of a parity game](player.md)
 
 ## Sources
 

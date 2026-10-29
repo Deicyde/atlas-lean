@@ -5,13 +5,14 @@ statement: formalized
 lean: DehnInvariant.cubeEdges
 ---
 
-# Cube Edges
+# Edge list of a cube
 
-The edge list of a cube: 12 edges of length `ℓ`, each with dihedral angle `π / 2`.
+**Edge list of a cube.** For a real number $\ell$, the edge list of a cube of side $\ell$
+consists of $12$ edges, each of length $\ell$ with dihedral angle $\pi / 2$.
 
 ## Depends on
 
-- [Edge](edge.md)
+- [Edge of a polyhedron](edge.md)
 
 ## Sources
 

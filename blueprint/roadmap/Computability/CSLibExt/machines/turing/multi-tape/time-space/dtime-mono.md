@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.DTIME_mono
 ---
 
-# DTIME mono
+# Deterministic time classes are monotone up to affine changes of the bound
 
-`DTIME` is monotone up to a linear change of the bound.
+**Deterministic time classes are monotone up to affine changes of the bound.** Let
+$t_1, t_2 : \mathbb{N} \to \mathbb{N}$ and $a, b \in \mathbb{N}$ satisfy
+$t_1(n) \le a \, t_2(n) + b$ for every $n \in \mathbb{N}$. Then
+$\mathrm{DTIME}(t_1) \subseteq \mathrm{DTIME}(t_2)$.
 
 ## Depends on
 
-- [DTIME](dtime.md)
+- [Deterministic time classes on multi-tape machines](dtime.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SumFreeSubsetCountErdosProblem748Wanted.sumFreeCount
 ---
 
-# Sum Free Count
+# Number of sum-free subsets of $\{1, \dots, n\}$
 
-`f(n)`: the number of sum-free subsets `A ⊆ {1, …, n}`, i.e. with no `a = b + c` for
-`a, b, c ∈ A` (`b = c` allowed).
+**Number of sum-free subsets of $\{1, \dots, n\}$.** For a natural number $n$, $f(n)$ is the
+number of sets $A \subseteq \{1, \dots, n\}$ that are sum-free, meaning that there are no
+$a, b, c \in A$ with $a = b + c$ (the case $b = c$ included). The empty set is counted.
 
 ## Depends on
 

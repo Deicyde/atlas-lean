@@ -40,12 +40,14 @@ homomorphism through the quotient and uses
 
 open Matrix
 
-/-- The diagonal rotation through angle `θ` in `SU₂`: the matrix
-`diag (exp (iθ), exp (-iθ))`. -/
+/-- **Diagonal rotation.** For a real number $\theta$, the diagonal rotation through $\theta$ is
+the $2 \times 2$ complex diagonal matrix $\operatorname{diag}(e^{i\theta}, e^{-i\theta})$. -/
 noncomputable def diagRotation (θ : ℝ) : Matrix (Fin 2) (Fin 2) ℂ :=
   !![Complex.exp (↑θ * Complex.I), 0; 0, Complex.exp (-(↑θ * Complex.I))]
 
-/-- A diagonal rotation is a diagonal matrix. -/
+/-- **Diagonal rotations as diagonal matrices.** For every real number $\theta$, the diagonal
+rotation through $\theta$ is the diagonal matrix whose diagonal entries are $e^{i\theta}$ and
+$e^{-i\theta}$, in that order. -/
 theorem diagRotation_eq_diagonal (θ : ℝ) : diagRotation θ =
     Matrix.diagonal ![Complex.exp (↑θ * Complex.I),
       Complex.exp (-(↑θ * Complex.I))] := by
@@ -76,7 +78,9 @@ theorem star_diagRotation (θ : ℝ) : star (diagRotation θ) = diagRotation (-�
   funext i
   fin_cases i <;> simp [← Complex.exp_conj]
 
-/-- Diagonal rotations lie in `SU₂`. -/
+/-- **Diagonal rotations lie in $\mathrm{SU}(2)$.** For every real number $\theta$, the
+diagonal rotation through $\theta$ is a $2 \times 2$ complex matrix that is unitary and has
+determinant $1$, that is, it lies in $\mathrm{SU}(2)$. -/
 theorem diagRotation_mem_specialUnitaryGroup (θ : ℝ) :
     diagRotation θ ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ := by
   rw [Matrix.mem_specialUnitaryGroup_iff]
@@ -86,7 +90,8 @@ theorem diagRotation_mem_specialUnitaryGroup (θ : ℝ) :
   · rw [Matrix.det_fin_two]
     simp [diagRotation, ← Complex.exp_add]
 
-/-- A diagonal rotation through an integral multiple of `2π` is the identity. -/
+/-- **Diagonal rotation through a multiple of $2\pi$.** For every integer $n$, the diagonal
+rotation through $2\pi n$ is the $2 \times 2$ identity matrix. -/
 theorem diagRotation_int_mul_two_pi (n : ℤ) : diagRotation (n * (2 * Real.pi)) = 1 := by
   rw [diagRotation_eq_diagonal]
   have h1 : Complex.exp (↑n * (2 * ↑Real.pi) * Complex.I) = 1 := by
@@ -102,8 +107,9 @@ theorem diagRotation_int_mul_two_pi (n : ℤ) : diagRotation (n * (2 * Real.pi))
   funext i
   fin_cases i <;> simp [h1, h2]
 
-/-- The diagonal rotation through `θ + 2πn` is the same matrix as the
-diagonal rotation through `θ`. -/
+/-- **Diagonal rotations are $2\pi$-periodic.** For every real number $\theta$ and every integer
+$n$, the diagonal rotation through $\theta + 2\pi n$ equals the diagonal rotation through
+$\theta$. -/
 theorem diagRotation_add_int_mul_two_pi (θ : ℝ) (n : ℤ) :
     diagRotation (θ + n * (2 * Real.pi)) = diagRotation θ := by
   rw [← diagRotation_add, diagRotation_int_mul_two_pi, mul_one]
@@ -125,25 +131,33 @@ def longitudeSubgroup : Subgroup (Matrix.specialUnitaryGroup (Fin 2) ℂ) where
       rw [← Matrix.star_eq_inv, Matrix.specialUnitaryGroup.coe_star]
     rw [ha, hθ, star_diagRotation]
 
-/-- The element of the longitude subgroup given by the diagonal rotation
-through `θ`. -/
+/-- **Diagonal rotation as a longitude element.** For a real number $\theta$, the diagonal
+rotation through $\theta$, regarded as an element of the longitude subgroup of
+$\mathrm{SU}(2)$. -/
 noncomputable def diagRotationToLongitude (θ : ℝ) : longitudeSubgroup :=
   ⟨⟨diagRotation θ, diagRotation_mem_specialUnitaryGroup θ⟩, ⟨θ, rfl⟩⟩
 
-/-- Diagonal rotations compose by adding angles. -/
+/-- **Longitude elements multiply by adding angles.** For real numbers $a$ and $b$, in the
+longitude subgroup the product of the diagonal rotations through $a$ and through $b$ is the
+diagonal rotation through $a + b$. -/
 theorem diagRotationToLongitude_mul (a b : ℝ) :
     diagRotationToLongitude a * diagRotationToLongitude b =
       diagRotationToLongitude (a + b) :=
   Subtype.ext (Subtype.ext (diagRotation_add a b))
 
-/-- Two longitude elements with equal diagonal rotations are equal. -/
+/-- **Equal rotation matrices give equal longitude elements.** For real numbers $a$ and $b$, if
+the diagonal rotations through $a$ and through $b$ are equal as matrices, then the elements of
+the longitude subgroup given by the diagonal rotations through $a$ and through $b$ are
+equal. -/
 theorem diagRotationToLongitude_eq_of_diagRotation_eq {a b : ℝ}
     (h : diagRotation a = diagRotation b) :
     diagRotationToLongitude a = diagRotationToLongitude b :=
   Subtype.ext (Subtype.ext h)
 
-/-- The additive homomorphism `ℝ →+ Additive longitudeSubgroup` sending
-`θ` to the diagonal rotation through `θ`. -/
+/-- **The angle homomorphism into the longitude subgroup.** The homomorphism from the additive
+group $\mathbb{R}$ to the longitude subgroup, written additively, that sends a real number
+$\theta$ to the diagonal rotation through $\theta$, regarded as an element of the longitude
+subgroup. -/
 noncomputable def diagRotationToLongitudeHom : ℝ →+ Additive longitudeSubgroup where
   toFun θ := Additive.ofMul (diagRotationToLongitude θ)
   map_zero' := by
@@ -185,8 +199,9 @@ theorem longitudeMap_apply_ofAdd_mk (θ : ℝ) :
   rw [QuotientAddGroup.lift_mk]
   rfl
 
-/-- Two diagonal rotations agree only if their angles differ by an
-integral multiple of `2π`. -/
+/-- **When two diagonal rotations are equal.** For real numbers $a$ and $b$, the diagonal
+rotations through $a$ and through $b$ are equal if and only if $a = b + 2\pi n$ for some
+integer $n$. -/
 theorem diagRotation_eq_diagRotation_iff (a b : ℝ) :
     diagRotation a = diagRotation b ↔ ∃ n : ℤ, a = b + n * (2 * Real.pi) := by
   constructor
@@ -207,7 +222,9 @@ theorem diagRotation_eq_diagRotation_iff (a b : ℝ) :
   · rintro ⟨n, rfl⟩
     exact diagRotation_add_int_mul_two_pi b n
 
-/-- Every element of the circle group is the class of a real angle. -/
+/-- **Every point of $\mathbb{R}/2\pi\mathbb{Z}$ comes from a real angle.** Every element $x$ of
+the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, is the class of some real
+number $a$. -/
 theorem exists_ofAdd_mk_eq (x : Multiplicative (AddCircle (2 * Real.pi))) :
     ∃ a : ℝ, x = Multiplicative.ofAdd (↑a : AddCircle (2 * Real.pi)) := by
   obtain ⟨a, ha⟩ := Quotient.exists_rep (Multiplicative.toAdd x)

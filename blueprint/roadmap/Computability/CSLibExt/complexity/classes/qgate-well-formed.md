@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Classes.QGateWellFormed
 ---
 
-# QGate Well Formed
+# Well-formed quantum gate
 
-A gate is well-formed on `N` qubits if it addresses qubits `i < j < N` and its
-matrix is unitary.
+**Well-formed quantum gate.** A 2-local gate acting on qubits $i$ and $j$ with entry list $e$
+is well-formed on $N$ qubits when $i < j < N$ and the $4 \times 4$ complex matrix $U$ encoded by
+$e$ is unitary, that is, $U^* U = I$.
 
 ## Depends on
 
-- [QGate](qgate.md)
+- [Encoded 2-local quantum gate](qgate.md)
 
 ## Proof depends on
 
-- [Rat Enc](rat-enc.md)
-- [Matrix Of Entries](matrix-of-entries.md)
+- [Encoded rational number](rat-enc.md)
+- [Matrix encoded by a list of entries](matrix-of-entries.md)
 
 ## Sources
 

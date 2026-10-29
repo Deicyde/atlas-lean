@@ -13,8 +13,8 @@ Theory of Computation, 3rd ed., 2013, Theorem 9.21 (NC¹ ⊆ L).
 
 ## Depends on
 
-- [Log Space](../../../../Computability/CSLibExt/complexity/classes/log-space.md)
-- [NCK](../../../../Computability/CSLibExt/complexity/classes/nck.md)
+- [Deterministic logarithmic space](../../../../Computability/CSLibExt/complexity/classes/log-space.md)
+- [The class NC^k](../../../../Computability/CSLibExt/complexity/classes/nck.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

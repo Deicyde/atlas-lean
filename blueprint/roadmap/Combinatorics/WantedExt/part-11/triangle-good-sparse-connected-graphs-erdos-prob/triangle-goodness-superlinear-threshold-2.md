@@ -19,7 +19,7 @@ https://ftp.math.fu-berlin.de/pub/math/publ/pre/1996/pr-a-96-24.ps.
 
 ## Depends on
 
-- [Triangle Goodness Superlinear Threshold](triangle-goodness-superlinear-threshold.md)
+- [Superlinear threshold for triangle-good graphs (Erdős Problem 1182)](triangle-goodness-superlinear-threshold.md)
 
 ## Sources
 

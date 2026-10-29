@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Steps.value_unique
 ---
 
-# Value unique
+# Uniqueness of the value reached by evaluation
 
-Two value endpoints of a deterministic evaluation are equal.
+**Uniqueness of the value reached by evaluation.** Let $t$ be a term in any context. If $t$
+reduces in zero or more call-by-value steps to a value $v$ and also to a value $w$, then
+$v = w$.
 
 ## Depends on
 
-- [Steps](../semantics/steps.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Value](../semantics/value.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Values of STLC](../semantics/value.md)
 
 ## Proof depends on
 
-- [Eq of value source](eq-of-value-source.md)
-- [Suffix of value](../logical-relation/suffix-of-value.md)
+- [Values reduce only to themselves](eq-of-value-source.md)
+- [Evaluation to a value passes through every reduct](../logical-relation/suffix-of-value.md)
 
 ## Sources
 

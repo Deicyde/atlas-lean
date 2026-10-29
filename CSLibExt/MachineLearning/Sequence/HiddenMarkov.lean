@@ -290,7 +290,7 @@ theorem forwardTab_get : ∀ (t : ℕ) (s : Fin n), (forwardTab x h t)[s] = forw
   | 0, s => by simp [forwardTab, forward]
   | t + 1, s => by simp [forwardTab, forwardStep, forward, forwardTab_get t]
 
-/-- **The tabulated forward algorithm.** For a hidden Markov model $h$ with states
+/-- **Tabulated likelihood of a hidden Markov model.** For a hidden Markov model $h$ with states
 $0, \dots, n - 1$ and weights in a semiring, observations $x_0, x_1, \dots$ and $t \in \mathbb{N}$,
 the tabulated likelihood at time $t$ is the sum $\sum_{s < n} v_s$ of the entries of the forward
 table $v = (v_0, \dots, v_{n-1})$ at time $t$.
@@ -310,10 +310,10 @@ section ViterbiTab
 variable [NeZero n] [CommSemiring R] [LinearOrder R] [IsOrderedRing R] (h : HMM (Fin n) O R)
 
 omit [IsOrderedRing R] in
-/-- **First maximizer of a function on a finite range.** Let $n \ge 1$ and let $R$ be a
-commutative semiring with a linear order. For a function $f$ from $\{0, \dots, n-1\}$ to $R$, the
-maximizer of $f$ is the first $i$, in the order $0, \dots, n-1$, at which $f$ attains its
-maximum, that is, $f(j) \le f(i)$ for every $j$. -/
+/-- **First maximizer of a function on a finite range.** Let $n \ge 1$ and let $R$ be a linearly
+ordered set. For a function $f$ from $\{0, \dots, n-1\}$ to $R$, the maximizer of $f$ is the first
+$i$, in the order $0, \dots, n-1$, at which $f$ attains its maximum, that is, $f(j) \le f(i)$ for
+every $j$. -/
 def argmaxFin (f : Fin n → R) : Fin n := ((List.finRange n).argmax f).getD 0
 
 omit [CommSemiring R] [IsOrderedRing R] in
@@ -362,18 +362,22 @@ theorem viterbiTab_get : ∀ (t : ℕ) (s : Fin n), (viterbiTab x h t)[s] = vite
   | t + 1, s => by simp [viterbiTab, viterbiStep, viterbi, viterbiTab_get t]
 
 /-- **Backpointer of the tabulated Viterbi algorithm.** Let $h$ be a hidden Markov model with
-states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a linearly ordered commutative
-semiring $R$, and let $a(s', s)$ be its transition weight from $s'$ to $s$. For a table
+states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a commutative semiring $R$ with a
+linear order, and let $a(s', s)$ be its transition weight from $s'$ to $s$. For a table
 $v \in R^n$ and a state $s$, the backpointer of $s$ is the first state $s'$, in the order
-$0, \dots, n-1$, that maximizes $v_{s'} \, a(s', s)$. -/
+$0, \dots, n-1$, that maximizes $v_{s'} \, a(s', s)$.
+
+No compatibility of the order with the operations is needed. -/
 def back (v : Vector R n) (s : Fin n) : Fin n := argmaxFin fun s' => v[s'] * h.trans s' s
 
 /-- **Backtracked path of the tabulated Viterbi algorithm.** Let $h$ be a hidden Markov model
-with states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a linearly ordered commutative
-semiring, and fix an observation sequence $x$. For a state $s$, the backtracked path
+with states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a commutative semiring with a
+linear order, and fix an observation sequence $x$. For a state $s$, the backtracked path
 $b_t(s) = (b_t(s)_0, \dots, b_t(s)_t)$ of length $t + 1$ is defined by recursion on $t$:
 $b_0(s)$ is the one-state path $(s)$, and $b_{t+1}(s)$ is $b_t(s')$ followed by $s$, where
-$s'$ is the backpointer of $s$ computed from the Viterbi table at time $t$. -/
+$s'$ is the backpointer of $s$ computed from the Viterbi table at time $t$.
+
+No compatibility of the order with the operations is needed. -/
 def bestPath : (t : ℕ) → Fin n → Fin (t + 1) → Fin n
   | 0, s => fun _ => s
   | t + 1, s => Fin.snoc (bestPath t (back h (viterbiTab x h t) s)) s

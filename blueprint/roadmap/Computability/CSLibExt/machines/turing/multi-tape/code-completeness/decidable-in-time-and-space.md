@@ -6,26 +6,30 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.decidableInTimeAndSpace
 ---
 
-# Codes land in `DecidableInTimeAndSpace`
+# Deciding by a code is finite-state decidability
 
-**Codes land in `DecidableInTimeAndSpace`.** A language decided by the machine of a code
-within some time and space bounds is decidable within them.
+**Deciding by a code is finite-state decidability.** Let $c$ be a code with $k$ work tapes,
+let $L$ be a set of binary words, and let $t$ and $s$ map binary words to natural numbers. If
+the machine of $c$ decides $L$, that is, started on any binary word $w$ it halts with the one-bit
+output $\mathrm{true}$ if $w \in L$ and $\mathrm{false}$ otherwise, and if on every binary word
+$w$ it halts within $t(w)$ steps and visits at most $s(w)$ work-tape cells, then some binary
+multi-tape machine with finitely many states decides $L$ within the same bounds.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [To TM](../code/to-tm.md)
-- [Decides](../time-space/decides.md)
+- [Codes for multi-tape machines](../code/code.md)
+- [The machine of a code](../code/to-tm.md)
+- [A multi-tape machine deciding a language](../time-space/decides.md)
 
 ## Proof depends on
 
-- [Is Relabelling to Fin TM](is-relabelling-to-fin-tm.md)
-- [State Bound](state-bound.md)
+- [A code's machine simulates its finite-state machine](is-relabelling-to-fin-tm.md)
+- [State bound of a code](state-bound.md)
 - [The finite-state machine of a code](to-fin-tm.md)
-- [Decides iff](../relabel/decides-iff.md)
-- [Runs In Space iff](../relabel/runs-in-space-iff.md)
-- [Runs In Time iff](../relabel/runs-in-time-iff.md)
-- [Decidable In Time And Space iff](../time-space/decidable-in-time-and-space-iff.md)
+- [Relabelling preserves deciding a language](../relabel/decides-iff.md)
+- [Relabelling preserves space bounds](../relabel/runs-in-space-iff.md)
+- [Relabelling preserves time bounds](../relabel/runs-in-time-iff.md)
+- [Decidability within time and space bounds, unfolded](../time-space/decidable-in-time-and-space-iff.md)
 
 ## Sources
 

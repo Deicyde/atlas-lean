@@ -4,6 +4,6 @@ navigation: module
 
 # Vector Space
 
-- [Is Geodesic Velocity Curve vector Space iff](is-geodesic-velocity-curve-vector-space.md)
-- [Is Geodesic Flow vector Space iff](is-geodesic-flow-vector-space-iff.md)
-- [Is Unit Geodesic Flow vector Space iff](is-unit-geodesic-flow-vector-space-iff.md)
+- [Geodesic velocity curves in Euclidean space](is-geodesic-velocity-curve-vector-space.md)
+- [The geodesic flow of Euclidean space is the straight-line flow](is-geodesic-flow-vector-space-iff.md)
+- [The unit geodesic flow of Euclidean space is the straight-line flow](is-unit-geodesic-flow-vector-space-iff.md)

@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.CCS.Label.Complementary
 ---
 
-# Complementary
+# Complementary labels
 
-Complementary visible labels synchronize; silent labels have no
-complement.
+**Complementary labels.** Two CCS labels are complementary when one is the input on a name $a$
+and the other is the output on the same name $a$, in either order. No other pair of labels is
+complementary; in particular the silent label $\tau$ has no complement.
 
 ## Depends on
 
-- [Label](label.md)
+- [CCS labels](label.md)
 
 ## Sources
 

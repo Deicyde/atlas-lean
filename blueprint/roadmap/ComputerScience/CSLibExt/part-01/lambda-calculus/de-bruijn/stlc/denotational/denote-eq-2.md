@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Steps.denote_eq
 ---
 
-# Denote eq
+# Multi-step reduction preserves STLC denotation
 
-Multi-step operational evaluation preserves denotation.
+**Multi-step reduction preserves STLC denotation.** For every interpretation $I$ of the base
+types, if a term $t$ reduces to $t'$ in zero or more steps of call-by-value reduction, then $t$
+and $t'$ have the same denotation in every environment $\eta$ for their context.
 
 ## Depends on
 
-- [Env](env.md)
-- [Steps](../semantics/steps.md)
-- [Tm](../syntax/tm.md)
-- [Denote](denote-2.md)
-- [Ty](../syntax/ty.md)
-- [Denote](denote.md)
+- [Semantic environments](env.md)
+- [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Denotation of an STLC term](denote-2.md)
+- [Simple types](../syntax/ty.md)
+- [Denotation of simple types](denote.md)
 
 ## Proof depends on
 
-- [Step](../semantics/step.md)
-- [Denote eq](denote-eq.md)
+- [Small-step call-by-value reduction in STLC](../semantics/step.md)
+- [One reduction step preserves STLC denotation](denote-eq.md)
 
 ## Sources
 

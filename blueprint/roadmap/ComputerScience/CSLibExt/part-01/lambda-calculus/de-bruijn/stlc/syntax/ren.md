@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Ren
 ---
 
-# Ren
+# Renamings of simply typed contexts
 
-Type-preserving variable renamings.
+**Renamings of simply typed contexts.** For contexts $\Gamma$ and $\Delta$ (lists of simple
+types), a renaming from $\Gamma$ to $\Delta$ assigns to every simple type $A$ and every variable
+of type $A$ in $\Gamma$ a variable of type $A$ in $\Delta$.
 
 ## Depends on
 
-- [Ty](ty.md)
+- [Simple types](ty.md)
 
 ## Proof depends on
 
-- [Var](var.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](var.md)
 
 ## Sources
 

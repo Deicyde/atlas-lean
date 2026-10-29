@@ -6,26 +6,30 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Tm.rename_subst
 ---
 
-# Rename subst
+# Renaming after substitution in the simply typed calculus
 
-Renaming after substitution can be fused into the substitution images.
+**Renaming after substitution in the simply typed calculus.** Let $\sigma$ be a substitution
+from $\Gamma$ to $\Delta$, $\rho$ a renaming from $\Delta$ to $\Xi$ and $t$ a term of type $A$ in
+$\Gamma$. Renaming by $\rho$ the result of applying $\sigma$ to $t$ gives the result of applying
+to $t$ the substitution that sends each variable $x$ of $\Gamma$ to $\sigma(x)$ renamed by
+$\rho$.
 
 ## Depends on
 
-- [Ren](../syntax/ren.md)
-- [Sub](../syntax/sub.md)
-- [Tm](../syntax/tm.md)
-- [Rename](../syntax/rename.md)
-- [Subst](../substitution/subst.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Renaming a simply typed term](../syntax/rename.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Proof depends on
 
-- [Lift](../substitution/lift.md)
-- [Rename weaken](rename-weaken.md)
-- [Weaken](../syntax/weaken.md)
-- [Lift](../syntax/lift.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](../substitution/lift.md)
+- [Renaming commutes with weakening for intrinsically typed STLC terms](rename-weaken.md)
+- [Weakening a simply typed term](../syntax/weaken.md)
+- [Lifting a renaming under a binder](../syntax/lift.md)
 
 ## Sources
 

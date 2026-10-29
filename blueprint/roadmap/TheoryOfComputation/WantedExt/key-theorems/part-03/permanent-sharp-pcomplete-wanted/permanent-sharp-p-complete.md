@@ -12,7 +12,7 @@ computing the permanent", Theoretical Computer Science 8 (1979), 189-201.
 
 ## Depends on
 
-- [Sharp PComplete](../../../../../Computability/CSLibExt/complexity/classes/sharp-pcomplete.md)
+- [$\#P$-complete functions](../../../../../Computability/CSLibExt/complexity/classes/sharp-pcomplete.md)
 - [Perm Fun](perm-fun.md)
 
 ## Sources

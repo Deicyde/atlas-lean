@@ -12,7 +12,7 @@ The canonical positional strategy induced by a bespoke strategy.
 ## Depends on
 
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Frag Pos](frag-pos.md)
 - [Strategy](strategy.md)
@@ -20,7 +20,7 @@ The canonical positional strategy induced by a bespoke strategy.
 
 ## Proof depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
 - [Frag Move](frag-move.md)

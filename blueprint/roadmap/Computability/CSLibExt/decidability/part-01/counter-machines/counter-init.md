@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.counterInit
 ---
 
-# Counter Init
+# Initial state of a counter machine
 
-The initial counter-machine state on the given inputs (in registers `0, 1, …`).
+**Initial state of a counter machine.** The initial counter-machine state on a list of inputs
+$x_0, \dots, x_{k-1}$ has program counter $0$, register $i$ holding $x_i$ for each $i < k$, and
+every other register holding $0$.
 
 ## Depends on
 
-- [Counter State](counter-state.md)
+- [Counter-machine states](counter-state.md)
 
 ## Sources
 

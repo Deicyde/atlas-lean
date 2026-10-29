@@ -12,8 +12,8 @@ A canonical play that is eventually always at `lose` is won by `odd`.
 
 ## Depends on
 
-- [Won By](../../../../Computability/CSLibExt/games/parity/won-by.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Winner of a play in a parity game](../../../../Computability/CSLibExt/games/parity/won-by.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Frag Pos](frag-pos.md)
 - [Fragment Game](fragment-game.md)
@@ -21,7 +21,7 @@ A canonical play that is eventually always at `lose` is won by `odd`.
 ## Proof depends on
 
 - [Frag Priority](frag-priority.md)
-- [Is Max Inf Occ](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
+- [Largest infinitely occurring value](../../../../ComputerScience/CSLibExt/part-01/data/omega-sequence/parity/is-max-inf-occ.md)
 
 ## Sources
 

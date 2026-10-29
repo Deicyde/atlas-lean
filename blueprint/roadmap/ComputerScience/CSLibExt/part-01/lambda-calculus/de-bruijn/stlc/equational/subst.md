@@ -6,25 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq.subst
 ---
 
-# Subst
+# Substitution preserves semantic equality
 
-Applying one substitution preserves semantic equality of terms.
+**Substitution preserves semantic equality.** For every interpretation $I$ of the base types,
+if two terms $t$ and $u$ of the same type $A$ in a context $\Gamma$ are semantically equal in $I$,
+then for every simultaneous substitution $\sigma$ from $\Gamma$ to a context $\Delta$, the result
+of applying $\sigma$ to $t$ and the result of applying $\sigma$ to $u$ are semantically equal in
+$I$.
 
 ## Depends on
 
-- [Sem Eq](sem-eq.md)
-- [Sub](../syntax/sub.md)
-- [Tm](../syntax/tm.md)
-- [Subst](../substitution/subst.md)
-- [Ty](../syntax/ty.md)
+- [Semantic equality of terms in a model](sem-eq.md)
+- [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../substitution/subst.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote Sub](../denotational/denote-sub.md)
-- [Denote subst](../denotational/denote-subst.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of an STLC substitution](../denotational/denote-sub.md)
+- [Substitution lemma for STLC denotation](../denotational/denote-subst.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Sources
 

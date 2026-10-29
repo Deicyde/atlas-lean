@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SmallDoublingTriplingAIMCombinatoricsProblem242Wanted.smallDoublingImpliesSmallTripling
 ---
 
-# Small Doubling Implies Small Tripling
+# Tao's small-doubling question (AIM Problem 3.5)
 
-Tao's question (AIM, Recent trends in additive combinatorics, Problem 3.5) as a claim: small
-doubling forces small tripling uniformly in all groups, i.e. there is `f` such that every finite
-nonempty subset `A` of every group with `|A · A| ≤ K |A|` has `|A · A · A| ≤ f(K) |A|`.
+**Tao's small-doubling question (AIM Problem 3.5).** The proposition that small doubling
+forces small tripling uniformly in all groups: there is a function $f : \mathbb{R} \to \mathbb{R}$
+such that for every group $G$, every finite nonempty subset $A \subseteq G$ and every real number
+$K$, if $|A \cdot A| \le K |A|$ then $|A \cdot A \cdot A| \le f(K) |A|$. Here
+$A \cdot A = \{ab : a, b \in A\}$ and $A \cdot A \cdot A = \{abc : a, b, c \in A\}$.
 
 ## Depends on
 

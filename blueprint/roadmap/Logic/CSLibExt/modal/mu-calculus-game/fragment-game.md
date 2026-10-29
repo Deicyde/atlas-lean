@@ -11,13 +11,13 @@ The totalized fragment game as a canonical parity game.
 
 ## Depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Frag Pos](frag-pos.md)
 
 ## Proof depends on
 
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)
 - [Frag Move](frag-move.md)

@@ -6,19 +6,25 @@ proof: formalized
 lean: Manifold.metricInCoordinates_conformalScale
 ---
 
-# Metric In Coordinates conformal Scale
+# Conformal scaling of a metric in coordinates
 
-The coordinate expression of a conformal change is the scaled coordinate expression.
+**Conformal scaling of a metric in coordinates.** Let $g$ be a smooth Riemannian metric on
+the tangent bundle of a smooth manifold $M$ modeled through a model with corners $I : H \to E$,
+let $u : M \to \mathbb{R}$ be a smooth function with $u(p) > 0$ for every $p \in M$, and let $e$
+be an open partial homeomorphism from $M$ to $H$. Write $g^e$ for the coordinate expression of
+$g$ in $e$ and $\psi$ for the inverse of the extended chart $I \circ e$. Then for every $x \in E$
+the coordinate expression of the conformally scaled metric $u g$ satisfies
+$(u g)^e(x) = u(\psi(x))\, g^e(x)$.
 
 ## Depends on
 
-- [Conformal Scale](../conformal/conformal-scale.md)
-- [Metric In Coordinates](metric-in-coordinates.md)
+- [Conformal scaling of a Riemannian metric](../conformal/conformal-scale.md)
+- [Coordinate expression of a Riemannian metric](metric-in-coordinates.md)
 
 ## Proof depends on
 
-- [Conformal Scale inner apply](../conformal/conformal-scale-inner-apply.md)
-- [Metric In Coordinates apply](metric-in-coordinates-apply.md)
+- [Inner product of a conformally scaled metric](../conformal/conformal-scale-inner-apply.md)
+- [Pointwise formula for a metric in coordinates](metric-in-coordinates-apply.md)
 
 ## Sources
 

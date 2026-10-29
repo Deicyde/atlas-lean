@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm.liftRen
 ---
 
-# Lift Ren
+# Lifting a numerical renaming
 
-Lift a numerical renaming through one binder.
+**Lifting a numerical renaming.** Given a renaming $\rho : \mathbb{N} \to \mathbb{N}$ of
+de Bruijn indices, its lift through one binder is the map $\mathbb{N} \to \mathbb{N}$ sending
+$0$ to $0$ and $n + 1$ to $\rho(n) + 1$.
 
 ## Depends on
 

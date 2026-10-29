@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Games.ParityGame.IsTrap
 ---
 
-# Is Trap
+# Trap for a player
 
-`U` is a trap for `p`: `p` cannot force the play out of `U`. Every move of `p` from `U` stays
-in `U`, and at every position of the opponent in `U` some move stays in `U`.
+**Trap for a player.** Let $G$ be a parity game and $p$ a player. A set $U$ of positions is a
+trap for $p$ when, for every position $v \in U$, every move from $v$ leads into $U$ if $v$
+belongs to $p$, and some move from $v$ leads into $U$ if $v$ does not belong to $p$. Thus $p$
+cannot force the play out of $U$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Player](../parity/player.md)
+- [Parity game](../parity/parity-game.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Sources
 

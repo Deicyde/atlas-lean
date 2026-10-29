@@ -13,11 +13,11 @@ through the negated angle.
 
 ## Depends on
 
-- [Diag Rotation](diag-rotation.md)
+- [Diagonal rotation](diag-rotation.md)
 
 ## Proof depends on
 
-- [Diag Rotation eq diagonal](diag-rotation-eq-diagonal.md)
+- [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.TimeBoundedBy.spaceBoundedBy
 ---
 
-# Space Bounded By
+# Uniform time bounds give uniform space bounds
 
-A machine with time bound `t` has space bound `k * (t n + 1)`.
+**Uniform time bounds give uniform space bounds.** Let $M$ be a deterministic Turing machine
+with $k$ work tapes and let $t : \mathbb{N} \to \mathbb{N}$. If $M$ is time bounded by $t$, then
+$M$ is space bounded by the function $n \mapsto k(t(n) + 1)$.
 
 ## Depends on
 
-- [Space Bounded By](space-bounded-by.md)
-- [Time Bounded By](time-bounded-by.md)
+- [Space-bounded multi-tape machine](space-bounded-by.md)
+- [Time-bounded multi-tape machine](time-bounded-by.md)
 
 ## Proof depends on
 
-- [Time bounds space](runs-in-space-of-runs-in-time.md)
+- [Time bounds space on one input](runs-in-space-of-runs-in-time.md)
 
 ## Sources
 

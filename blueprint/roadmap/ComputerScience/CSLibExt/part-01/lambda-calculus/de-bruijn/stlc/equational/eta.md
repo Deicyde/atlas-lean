@@ -6,25 +6,29 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq.eta
 ---
 
-# Eta
+# Eta is sound for the denotational semantics
 
-Eta is valid in every set-theoretic model.
+**Eta is sound for the denotational semantics.** For every interpretation $I$ of the base
+types and every term $f$ of type $A \Rightarrow B$ in a context $\Gamma$, let $f'$ be the
+weakening of $f$ to the context $\Gamma$ extended by a newest variable $x$ of type $A$. Then the
+term $\lambda x.\, f'\,x$, which binds $x$, is semantically equal to $f$ in $I$ (has the same
+denotation in every environment).
 
 ## Depends on
 
-- [Sem Eq](sem-eq.md)
-- [Tm](../syntax/tm.md)
-- [Weaken](../syntax/weaken.md)
-- [Ty](../syntax/ty.md)
-- [Var](../syntax/var.md)
+- [Semantic equality of terms in a model](sem-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Weakening a simply typed term](../syntax/weaken.md)
+- [Simple types](../syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Cons](../denotational/cons.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote weaken](../denotational/denote-weaken.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Extending a semantic environment in STLC](../denotational/cons.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Weakening preserves STLC denotation](../denotational/denote-weaken.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Sources
 

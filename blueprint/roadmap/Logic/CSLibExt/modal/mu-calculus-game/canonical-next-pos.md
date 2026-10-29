@@ -13,9 +13,9 @@ strategy, is a game move (it cannot be a terminal move to `win`/`lose`).
 
 ## Depends on
 
-- [Parity Game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
+- [Parity game](../../../../Computability/CSLibExt/games/parity/parity-game.md)
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
-- [Player](../../../../Computability/CSLibExt/games/parity/player.md)
+- [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
 - [Fix Free Formula](fix-free-formula.md)
 - [To Mu](to-mu.md)

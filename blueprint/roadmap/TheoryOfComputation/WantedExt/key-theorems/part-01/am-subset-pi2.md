@@ -14,8 +14,8 @@ protocol of Goldwasser-Sipser.
 
 ## Depends on
 
-- [AM](../../../../Computability/CSLibExt/complexity/classes/am.md)
-- [Pi K](../../../../Computability/CSLibExt/complexity/classes/pi-k.md)
+- [The class $\mathsf{AM}$ (Arthur–Merlin)](../../../../Computability/CSLibExt/complexity/classes/am.md)
+- [The universal levels of the polynomial hierarchy](../../../../Computability/CSLibExt/complexity/classes/pi-k.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

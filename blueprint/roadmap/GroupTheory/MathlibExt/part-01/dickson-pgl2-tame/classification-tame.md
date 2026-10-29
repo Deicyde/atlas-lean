@@ -24,7 +24,7 @@ of the resulting orbit signatures.
 
 ## Proof depends on
 
-- [Index Two](../specific-groups/dihedral/nonempty-mul-equiv-dihedral-group-of-ind.md)
+- [Dihedral groups from a cyclic subgroup of index two](../specific-groups/dihedral/nonempty-mul-equiv-dihedral-group-of-ind.md)
 - [Burnside's lemma with a uniform fixed-point count](../group-action/card-add-mul-card-sub-one-eq-card-orbits.md)
 
 ## Sources

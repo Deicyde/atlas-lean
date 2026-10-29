@@ -5,19 +5,19 @@ statement: formalized
 lean: Isometries.IsRotation
 ---
 
-# Is Rotation
+# Rotation
 
-A plane isometry is a **rotation** if it fixes a point, has linear
-determinant `1`, and is not a translation.
+**Rotation.** An isometry $f$ of the Euclidean plane is a rotation if it fixes some point
+$p$, the determinant of its linear part is $1$, and $f$ is not a translation.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane](plane.md)
 
 ## Proof depends on
 
-- [Is Translation](is-translation.md)
-- [Linear Det](linear-det.md)
+- [Translation](is-translation.md)
+- [Linear determinant of a plane isometry](linear-det.md)
 
 ## Sources
 

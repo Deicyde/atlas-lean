@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.next_act_mem_states
 ---
 
-# Next act mem states
+# Next states of a code lie in its state set
 
-The next state of every action of a code is a state of the code.
+**Next states of a code lie in its state set.** For a code $c$, a state $q$, an input symbol
+$a$ and work tape symbols $w$, if the action of $c$ at $(q, a, w)$ has a next state $q'$ (rather
+than halting), then $q'$ belongs to the set of states of $c$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Act](act.md)
-- [States](states.md)
-- [Code Action](code-action.md)
+- [Codes for multi-tape machines](code.md)
+- [Action of a code at a key](act.md)
+- [States of a code](states.md)
+- [Coded actions](code-action.md)
 
 ## Proof depends on
 
-- [Halt](halt.md)
-- [Code Key](code-key.md)
+- [Halting action](halt.md)
+- [Keys of a code's table](code-key.md)
 
 ## Sources
 

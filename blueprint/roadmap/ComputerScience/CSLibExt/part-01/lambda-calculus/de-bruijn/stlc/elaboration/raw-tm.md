@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RawTm
 ---
 
-# Raw Tm
+# Raw lambda terms
 
-Extrinsic de Bruijn syntax.  A lambda records its parameter type, while
-variables and applications carry no type information.
+**Raw lambda terms.** Raw terms are extrinsic de Bruijn syntax over a given type of base
+types: a raw term is either a variable given by a natural-number index $n$, an application
+$f\,a$ of two raw terms $f$ and $a$, or a lambda abstraction $\lambda A.\,t$ consisting of a
+simple type $A$ over the base types (the parameter type) and a raw term $t$ (the body).
+Variables and applications carry no type information.
 
 ## Depends on
 

@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Automata.MealyMachine.translates_toSequential_iff
 ---
 
-# Translates to Sequential iff
+# The sequential transducer of a Mealy machine computes its transduction
 
-A Mealy machine and its sequential rendering translate the same words.
+**The sequential transducer of a Mealy machine computes its transduction.** For every Mealy
+machine $M$, input word $x$ and output word $y$, the sequential transducer of $M$ translates $x$
+to $y$ if and only if the transduction of $M$ on $x$ is $y$.
 
 ## Depends on
 
-- [Mealy Machine](mealy-machine.md)
-- [To Sequential](to-sequential.md)
-- [Transduce](transduce.md)
-- [Translates](translates.md)
+- [Mealy machine](mealy-machine.md)
+- [Mealy machine as a sequential transducer](to-sequential.md)
+- [Transduction of a Mealy machine](transduce.md)
+- [Translation by a sequential transducer](translates.md)
 
 ## Proof depends on
 
-- [Run Out](run-out-2.md)
-- [Seq run Out eq](seq-run-out-eq.md)
-- [To Sequential accept](to-sequential-accept.md)
-- [To Sequential final Out](to-sequential-final-out.md)
-- [To Sequential init Out](to-sequential-init-out.md)
-- [Sequential Transducer](sequential-transducer.md)
-- [Run Out](run-out.md)
-- [Run State](run-state.md)
+- [Output word of a Mealy machine run](run-out-2.md)
+- [The sequential transducer of a Mealy machine has the same run outputs](seq-run-out-eq.md)
+- [Every state of the sequential transducer of a Mealy machine is accepting](to-sequential-accept.md)
+- [Final outputs of the sequential transducer of a Mealy machine](to-sequential-final-out.md)
+- [Initial output of the sequential transducer of a Mealy machine](to-sequential-init-out.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Output word of a sequential transducer run](run-out.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

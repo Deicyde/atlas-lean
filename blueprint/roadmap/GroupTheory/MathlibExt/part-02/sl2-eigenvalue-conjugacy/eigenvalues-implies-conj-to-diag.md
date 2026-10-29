@@ -6,18 +6,22 @@ proof: formalized
 lean: SL2.eigenvalues_implies_conj_to_diag
 ---
 
-# Eigenvalues implies conj to diag
+# Diagonalizing elements of $\mathrm{SL}_2(F)$ with distinct eigenvalues
 
-The source diagonalization theorem with the original scalar hypothesis.
+**Diagonalizing elements of $\mathrm{SL}_2(F)$ with distinct eigenvalues.** Let $F$ be a field,
+let $s \in F$ with $s \ne s^{-1}$, and let $M \in \mathrm{SL}_2(F)$ have eigenvalues $s$ and
+$s^{-1}$, that is, characteristic polynomial $(X - s)(X - s^{-1})$. Then there is
+$P \in \mathrm{SL}_2(F)$ such that the matrix $P M P^{-1}$ equals the diagonal matrix
+$\operatorname{diag}(s, s^{-1})$.
 
 ## Depends on
 
-- [Has Eigenvalues](has-eigenvalues.md)
+- [Elements of $\mathrm{SL}_2(F)$ with eigenvalues $s$ and $s^{-1}$](has-eigenvalues.md)
 
 ## Proof depends on
 
-- [Eigenvalues implies is Conj diag2](eigenvalues-implies-is-conj-diag2.md)
-- [Is Conj diag2 iff](is-conj-diag2-iff.md)
+- [Distinct eigenvalues give conjugacy to $\operatorname{diag}(s, s^{-1})$ in $\mathrm{SL}_2(F)$](eigenvalues-implies-is-conj-diag2.md)
+- [Conjugacy to $\operatorname{diag}(s, s^{-1})$ in terms of a conjugator](is-conj-diag2-iff.md)
 
 ## Sources
 

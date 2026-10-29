@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.SemEq
 ---
 
-# Sem Eq
+# Semantic equality of terms in a model
 
-Equality in a fixed set-theoretic model, at every semantic environment.
+**Semantic equality of terms in a model.** Fix an interpretation $I$ of the base types as types.
+Two terms $t$ and $u$ of the same type $A$ in the same context $\Gamma$ are semantically equal in
+$I$ when, for every semantic environment $\eta$ for $\Gamma$, the denotation of $t$ in $I$ at $\eta$
+equals the denotation of $u$ in $I$ at $\eta$.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Env](../denotational/env.md)
-- [Denote](../denotational/denote-2.md)
-- [Denote](../denotational/denote.md)
+- [Semantic environments](../denotational/env.md)
+- [Denotation of an STLC term](../denotational/denote-2.md)
+- [Denotation of simple types](../denotational/denote.md)
 
 ## Sources
 

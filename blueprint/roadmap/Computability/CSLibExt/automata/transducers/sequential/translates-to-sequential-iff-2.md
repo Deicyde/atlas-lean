@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Automata.MooreMachine.translates_toSequential_iff
 ---
 
-# Translates to Sequential iff
+# The sequential transducer of a Moore machine computes its transduction
 
-A Moore machine and its sequential rendering translate the same words.
+**The sequential transducer of a Moore machine computes its transduction.** For every Moore
+machine $M$, input word $x$ and output word $y$, the sequential transducer of $M$ translates $x$
+to $y$ if and only if the transduction of $M$ on $x$ is $y$.
 
 ## Depends on
 
-- [Moore Machine](moore-machine.md)
-- [To Sequential](to-sequential-2.md)
-- [Transduce](transduce-2.md)
-- [Translates](translates.md)
+- [Moore machine](moore-machine.md)
+- [The sequential transducer of a Moore machine](to-sequential-2.md)
+- [Transduction of a Moore machine](transduce-2.md)
+- [Translation by a sequential transducer](translates.md)
 
 ## Proof depends on
 
-- [Run Out eq cons](run-out-eq-cons.md)
-- [To Sequential accept](to-sequential-accept-2.md)
-- [To Sequential final Out](to-sequential-final-out-2.md)
-- [To Sequential init Out](to-sequential-init-out-2.md)
-- [Sequential Transducer](sequential-transducer.md)
-- [Run Out](run-out.md)
-- [Run State](run-state.md)
+- [Moore machine output via its sequential rendering](run-out-eq-cons.md)
+- [Every state of the sequential transducer of a Moore machine is accepting](to-sequential-accept-2.md)
+- [Final outputs of the sequential transducer of a Moore machine](to-sequential-final-out-2.md)
+- [Initial output of the sequential transducer of a Moore machine](to-sequential-init-out-2.md)
+- [Sequential transducer](sequential-transducer.md)
+- [Output word of a sequential transducer run](run-out.md)
+- [Final state of a sequential transducer run](run-state.md)
 
 ## Sources
 

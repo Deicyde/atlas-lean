@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.WeightedMatroidNonnegativeLinesConnectedWanted.IsLine
 ---
 
-# Is Line
+# Line of a matroid
 
-`L` is a line of the matroid: a flat of rank `2`.
+**Line of a matroid.** A set $L$ of points is a line of a matroid $M$ on elements of
+$\{0, \dots, n-1\}$ when $L$ is a flat of $M$ of rank $2$.
 
 ## Depends on
 

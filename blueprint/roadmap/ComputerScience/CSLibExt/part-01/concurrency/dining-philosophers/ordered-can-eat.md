@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.ordered_can_eat
 ---
 
-# Ordered can eat
+# Every philosopher can still eat under resource ordering
 
-Under the ordered protocol, from every reachable state each philosopher can
-still get to eat.
+**Every philosopher can still eat under resource ordering.** In the transition system of
+the three dining philosophers under the resource-ordered protocol, with the atom $p_j$ holding
+when philosopher $j$ eats, the initial state, in which everybody thinks, satisfies the CTL
+formula $\mathrm{AG}\,\mathrm{EF}\,p_i$ for every philosopher $i \in \{0, 1, 2\}$: from every
+state reachable from the initial state, some state in which philosopher $i$ eats is reachable.
 
 ## Depends on
 
-- [State](state.md)
-- [Eating](eating.md)
-- [Initial](initial.md)
-- [Lts](lts.md)
-- [Ordered](ordered.md)
+- [Dining-philosophers state](state.md)
+- [The eating valuation](eating.md)
+- [Initial state of the dining philosophers](initial.md)
+- [Transition system of a dining-philosophers protocol](lts.md)
+- [Resource-ordered dining-philosophers protocol](ordered.md)
 - [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
 - [Exists Finally](../../../../../Logic/CSLibExt/ctl/basic/exists-finally.md)
 - [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
@@ -25,10 +28,10 @@ still get to eat.
 
 ## Proof depends on
 
-- [Protocol](protocol.md)
-- [Can Move](can-move.md)
-- [Move](move.md)
-- [Phase](phase.md)
+- [Dining-philosophers protocol](protocol.md)
+- [When a philosopher can move](can-move.md)
+- [Move of a philosopher](move.md)
+- [Phase of a philosopher](phase.md)
 - [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 

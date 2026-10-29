@@ -14,7 +14,7 @@ checking of proofs: a new characterization of NP", Journal of the ACM 45 (1998),
 
 ## Depends on
 
-- [PCP](../../../../Computability/CSLibExt/complexity/classes/pcp.md)
+- [Probabilistically checkable proofs](../../../../Computability/CSLibExt/complexity/classes/pcp.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../Computability/MathlibExt/complexity/np.md)

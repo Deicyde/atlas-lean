@@ -14,7 +14,7 @@ and Control 71 (1986), 181-185.
 
 ## Depends on
 
-- [NEXP](../../../../../Computability/CSLibExt/complexity/classes/nexp.md)
+- [The complexity class NEXP](../../../../../Computability/CSLibExt/complexity/classes/nexp.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Succinct Three Sat Dec](succinct-three-sat-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

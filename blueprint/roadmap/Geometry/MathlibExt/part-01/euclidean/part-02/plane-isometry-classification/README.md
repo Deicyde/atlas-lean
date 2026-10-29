@@ -4,10 +4,10 @@ navigation: module
 
 # Plane Isometry Classification
 
-- [Plane](plane.md)
-- [Linear Det](linear-det.md)
-- [Is Translation](is-translation.md)
-- [Is Rotation](is-rotation.md)
-- [Is Reflection](is-reflection.md)
-- [Is Glide Reflection](is-glide-reflection.md)
+- [The Euclidean plane](plane.md)
+- [Linear determinant of a plane isometry](linear-det.md)
+- [Translation](is-translation.md)
+- [Rotation](is-rotation.md)
+- [Reflection](is-reflection.md)
+- [Glide reflection](is-glide-reflection.md)
 - [Classification of plane isometries](plane-isometry-classification.md)

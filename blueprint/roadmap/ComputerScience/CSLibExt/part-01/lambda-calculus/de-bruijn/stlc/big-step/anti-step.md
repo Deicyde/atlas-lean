@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Eval.anti_step
 ---
 
-# Anti step
+# Big-step evaluation is closed under backward reduction steps
 
-One inverse small step can be prepended to a big-step evaluation.
+**Big-step evaluation is closed under backward reduction steps.** Let $t$, $t'$ and $v$ be
+terms of the same type $A$ in the same typing context $\Gamma$. If $t$ reduces to $t'$ in one
+left-to-right call-by-value step and $t'$ evaluates to $v$ in the big-step semantics, written
+$t' \Downarrow v$, then $t \Downarrow v$.
 
 ## Depends on
 
-- [Eval](eval.md)
-- [Step](../semantics/step.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Big-step call-by-value evaluation in the simply typed lambda calculus](eval.md)
+- [Small-step call-by-value reduction in STLC](../semantics/step.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Value self](value-self.md)
-- [Instantiate](../substitution/instantiate.md)
-- [Value](../semantics/value.md)
-- [Var](../syntax/var.md)
+- [Values evaluate to themselves](value-self.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Values of STLC](../semantics/value.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

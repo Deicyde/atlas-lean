@@ -4,6 +4,6 @@ navigation: module
 
 # Volume
 
-- [Normalized Hausdorff Measure](normalized-hausdorff-measure.md)
-- [Riemannian Volume](riemannian-volume.md)
-- [Riemannian Volume real](riemannian-volume-real.md)
+- [Normalized Hausdorff measure](normalized-hausdorff-measure.md)
+- [Riemannian volume](riemannian-volume.md)
+- [The Riemannian volume of the real line is Lebesgue measure](riemannian-volume-real.md)

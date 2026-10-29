@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.UnionFreeFamiliesErdosProblem447Wanted.maxUnionFreeSizeLittleO
 ---
 
-# Max Union Free Size Little O
+# Erdős Problem 447, first question
 
-Erdős Problem 447, first question: union-free families of subsets of `[n]` have `o(2^n)`
-members.
+**Erdős Problem 447, first question.** The assertion that the maximum size of a union-free
+family of subsets of $\{0, \dots, n-1\}$ is $o(2^n)$ as $n \to \infty$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Max Union Free Size](max-union-free-size.md)
+- [Maximum size of a union-free family](max-union-free-size.md)
 
 ## Sources
 

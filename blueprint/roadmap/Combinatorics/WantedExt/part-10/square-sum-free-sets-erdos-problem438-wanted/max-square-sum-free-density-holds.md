@@ -5,20 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SquareSumFreeSetsErdosProblem438Wanted.maxSquareSumFreeDensity_holds
 ---
 
-# Max Square Sum Free Density holds
+# Maximal density of square-sum-free sets (Erdős Problem 438)
 
-Resolved true: Khalfalah, Lodha and Szemerédi proved that such `A` has at most `(11/32 + o(1)) N`
-elements, and Massias's example (the residues `1, 5, 9, 13, 14, 17, 21, 25, 26, 29, 30 mod 32`) has
-`11N/32 + O(1)`; erdosproblems.com/438 lists the problem as solved. Source: T. F. Bloom, Erdős
-Problems, Problem #438, https://www.erdosproblems.com/438 (status SOLVED); resolution: A. Khalfalah,
-S. Lodha and E. Szemerédi, Tight bound for the density of sequence of integers the sum of no two of
-which is a perfect square, Discrete Math. (2002), 243-255, max |A| ≤ (11/32 + o(1)) N; Massias's
-residues mod 32 give the lower bound (erdosproblems.com/438).
+**Maximal density of square-sum-free sets (Erdős Problem 438).** For a natural number $N$, let
+$M(N)$ be the largest size of a set $A \subseteq \{1, \dots, N\}$ such that no sum $a + b$ with
+$a, b \in A$, not necessarily distinct, is a perfect square. Then $M(N) / N \to 11/32$ as
+$N \to \infty$.
+
+Khalfalah, Lodha and Szemerédi proved $M(N) \le (11/32 + o(1)) N$, and Massias's example (the
+integers congruent to one of $1, 5, 9, 13, 14, 17, 21, 25, 26, 29, 30$ modulo $32$) gives
+$M(N) \ge 11N/32 + O(1)$.
 
 ## Depends on
 
-- [Max Square Sum Free Density](max-square-sum-free-density.md)
+- [Erdős Problem 438 (statement)](max-square-sum-free-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SquareSumFreeSetsErdosProblem438Wanted](../../../../../sources/v2/WantedExt.md)
+- T. F. Bloom, Erdős Problems, Problem #438, https://www.erdosproblems.com/438 (status SOLVED); resolution: A. Khalfalah, S. Lodha and E. Szemerédi, Tight bound for the density of sequence of integers the sum of no two of which is a perfect square, Discrete Math. (2002), 243-255, max |A| ≤ (11/32 + o(1)) N; Massias's residues mod 32 give the lower bound (erdosproblems.com/438).

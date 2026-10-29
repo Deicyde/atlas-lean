@@ -5,16 +5,19 @@ statement: formalized
 lean: Manifold.riemannCurvature
 ---
 
-# Riemann Curvature
+# Riemann curvature endomorphism
 
-The Riemann curvature endomorphism of a `C^∞` Riemannian manifold `(M, g)` at `x`:
-`R(u, v) w = ∇_u ∇_v w - ∇_v ∇_u w - ∇_[u, v] w`, the curvature expression
-(`CovariantDerivative.extendCurvature`) of the Levi-Civita connection on the extensions of
-`u`, `v`, `w`; since the Levi-Civita connection of a `C^∞` metric is `C^∞`, this is the textbook
-curvature (see the module docstring).
+**Riemann curvature endomorphism.** For a point $x$ of a $C^\infty$ Riemannian manifold $(M, g)$
+with Levi-Civita connection $\nabla$, and tangent vectors $u, v, w \in T_x M$,
 
-Sign convention of [Lang, Def. 2.1] and [Gud, Def. 8.8] (see the module docstring); the opposite
-sign convention is also common.
+$$R(u, v) w = (\nabla_X \nabla_Y W - \nabla_Y \nabla_X W - \nabla_{[X, Y]} W)(x),$$
+
+where $X$, $Y$, $W$ are the vector fields extending $u$, $v$, $w$ that have constant coordinates
+in the preferred chart at $x$. Since the Levi-Civita connection of a $C^\infty$ metric is
+$C^\infty$, this is the textbook curvature endomorphism and does not depend on the extensions.
+
+This is the sign convention of [Lang, Def. 2.1] and [Gud, Def. 8.8]; the opposite sign convention
+is also common.
 
 ## Depends on
 
@@ -22,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Extend Curvature](../../vector-bundle/covariant-derivative/curvature/extend-curvature.md)
+- [Curvature expression of a covariant derivative on extensions](../../vector-bundle/covariant-derivative/curvature/extend-curvature.md)
 
 ## Sources
 

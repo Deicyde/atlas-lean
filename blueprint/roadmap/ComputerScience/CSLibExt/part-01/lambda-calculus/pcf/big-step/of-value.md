@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.of_value
 ---
 
-# Of value
+# PCF values evaluate to themselves
 
-Values evaluate to themselves.
+**PCF values evaluate to themselves.** For every type $A$ and every closed PCF term $v$ of type
+$A$ that is a value, $v \Downarrow v$ under big-step call-by-name evaluation.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Eval](eval.md)
-- [Value](value.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](eval.md)
+- [Values of PCF](value.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Numeral](numeral.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [Numerals evaluate to themselves](numeral.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Sources
 

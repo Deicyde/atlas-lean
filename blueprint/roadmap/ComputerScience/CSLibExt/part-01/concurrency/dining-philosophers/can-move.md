@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.DiningPhilosophers.canMove
 ---
 
-# Can Move
+# When a philosopher can move
 
-Whether philosopher `i` can move: pick up its first fork, pick up its
-second fork, or (after eating) put both down.
+**When a philosopher can move.** Given a protocol and a state, philosopher $i$ can move
+exactly when it is thinking (phase $0$) and its first fork is not held by any philosopher, or it
+holds its first fork (phase $1$) and its second fork is not held by any philosopher, or it is
+eating (phase $2$), in which case its move puts both forks down.
 
 ## Depends on
 
-- [Protocol](protocol.md)
-- [State](state.md)
+- [Dining-philosophers protocol](protocol.md)
+- [Dining-philosophers state](state.md)
 
 ## Proof depends on
 
-- [Held](held.md)
-- [Phase](phase.md)
+- [Held forks](held.md)
+- [Phase of a philosopher](phase.md)
 
 ## Sources
 

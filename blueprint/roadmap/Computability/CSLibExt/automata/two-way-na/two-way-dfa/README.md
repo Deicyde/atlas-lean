@@ -6,22 +6,22 @@ navigation: module
 
 ## Automata
 
-- [Two Way DFA](two-way-dfa.md)
+- [Deterministic two-way automaton](two-way-dfa.md)
 
 ## Two Way DFA
 
-- [To Two Way NA](to-two-way-na.md)
-- [Tr iff](tr-iff.md)
-- [Determinism](tr-functional.md)
-- [Language](language.md)
-- [Mem language](mem-language.md)
-- [Language is Regular](language-is-regular.md)
-- [Of DFA](of-dfa.md)
-- [To Two Way NA of DFA](to-two-way-na-of-dfa.md)
-- [Language of DFA](language-of-dfa.md)
-- [Exists of DFA of is Regular](exists-of-dfa-of-is-regular.md)
+- [A deterministic two-way automaton as a nondeterministic one](to-two-way-na.md)
+- [Transition relation of a deterministic two-way automaton](tr-iff.md)
+- [Deterministic two-way automata have unique transitions](tr-functional.md)
+- [Language of a deterministic two-way automaton](language.md)
+- [Membership in the language of a two-way deterministic automaton](mem-language.md)
+- [Finite two-way deterministic automata accept regular languages](language-is-regular.md)
+- [A DFA as a two-way deterministic automaton](of-dfa.md)
+- [The two-way simulation of a DFA agrees with that of its NFA](to-two-way-na-of-dfa.md)
+- [The two-way simulation of a DFA accepts the same language](language-of-dfa.md)
+- [Regular languages are accepted by two-way deterministic automata](exists-of-dfa-of-is-regular.md)
 
 ## Automata
 
-- [Language is Regular](language-is-regular-2.md)
-- [Exists two Way NA of is Regular](exists-two-way-na-of-is-regular.md)
+- [Finite two-way nondeterministic automata accept regular languages](language-is-regular-2.md)
+- [Regular languages are accepted by two-way nondeterministic automata](exists-two-way-na-of-is-regular.md)

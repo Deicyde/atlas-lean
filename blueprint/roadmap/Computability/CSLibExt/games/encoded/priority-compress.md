@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Games.EncodedParityGame.priorityCompress
 ---
 
-# Priority Compress
+# Priority compression
 
-Priority compression: the game with the same owners and moves and
-priorities replaced by their compressed values. Every priority is at most
-`2 * n - 1` and strictly below `2 * n`, since at most `n` distinct
-priorities occur.
+**Priority compression.** For an encoded parity game $G$ on $n$ positions, the compressed game
+has the same owners and moves as $G$ and gives each position $v$ the priority $2r + (q \bmod 2)$,
+where $q$ is the priority of $v$ in $G$ and $r$ is the number of distinct priorities occurring
+in $G$ that are smaller than $q$.
+
+Since at most $n$ distinct priorities occur, every compressed priority is strictly below $2n$.
 
 ## Depends on
 
-- [Encoded Parity Game](encoded-parity-game.md)
+- [Encoded parity game](encoded-parity-game.md)
 
 ## Proof depends on
 
-- [Priority Compressed](priority-compressed.md)
+- [Compressed priority](priority-compressed.md)
 
 ## Sources
 

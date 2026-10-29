@@ -4,9 +4,9 @@ navigation: module
 
 # Van Der Waerden Three KErdos Problem721
 
-- [Has Mono AP](has-mono-ap.md)
-- [Forces Three K](forces-three-k.md)
-- [Van Der Waerden Three Subexponential](van-der-waerden-three-subexponential.md)
-- [Van Der Waerden Three Superpolynomial](van-der-waerden-three-superpolynomial.md)
-- [Van Der Waerden Three Subexponential holds](van-der-waerden-three-subexponential-hol.md)
-- [Van Der Waerden Three Superpolynomial holds](van-der-waerden-three-superpolynomial-ho.md)
+- [Monochromatic arithmetic progressions in an initial interval](has-mono-ap.md)
+- [Intervals forcing the van der Waerden number $W(3, k)$](forces-three-k.md)
+- [Subexponential upper bound for $W(3, k)$ (statement)](van-der-waerden-three-subexponential.md)
+- [Green's superpolynomial lower bound for $W(3, k)$ (statement)](van-der-waerden-three-superpolynomial.md)
+- [Schoen's subexponential upper bound for $W(3, k)$](van-der-waerden-three-subexponential-hol.md)
+- [Green's superpolynomial lower bound for $W(3, k)$](van-der-waerden-three-superpolynomial-ho.md)

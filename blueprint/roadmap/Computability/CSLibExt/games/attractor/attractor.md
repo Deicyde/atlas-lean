@@ -7,16 +7,19 @@ lean: Cslib.Games.ParityGame.attractor
 
 # Attractor
 
-The attractor of `T` for `p`: the least fixed point of `X ↦ T ∪ cpre p X`.
+**Attractor.** Let $G$ be a parity game, $p$ a player and $T$ a set of positions. The
+attractor of $T$ for $p$ is the least fixed point of the attractor operator
+$X \mapsto T \cup \mathrm{cpre}_p(X)$ on sets of positions, where $\mathrm{cpre}_p$ is the
+controllable predecessor for $p$.
 
 ## Depends on
 
-- [Parity Game](../parity/parity-game.md)
-- [Player](../parity/player.md)
+- [Parity game](../parity/parity-game.md)
+- [Players of a parity game](../parity/player.md)
 
 ## Proof depends on
 
-- [Attractor Step](attractor-step.md)
+- [Attractor operator](attractor-step.md)
 
 ## Sources
 

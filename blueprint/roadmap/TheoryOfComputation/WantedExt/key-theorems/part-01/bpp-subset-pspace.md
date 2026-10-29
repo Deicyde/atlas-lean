@@ -13,7 +13,7 @@ Modern Approach, 2009 (BPP ⊆ PSPACE).
 ## Depends on
 
 - [BPP](../../../../Computability/CSLibExt/complexity/classes/bpp.md)
-- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Polynomial space for decision problems](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
 - [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
 

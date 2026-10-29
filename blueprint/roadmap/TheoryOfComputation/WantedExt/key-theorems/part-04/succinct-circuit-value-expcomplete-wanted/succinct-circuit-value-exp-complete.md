@@ -15,7 +15,7 @@ value problem is log space complete for P", SIGACT News 7 (1975), 18-20.
 
 ## Depends on
 
-- [EXP](../../../../../Computability/CSLibExt/complexity/classes/exp.md)
+- [The class EXP](../../../../../Computability/CSLibExt/complexity/classes/exp.md)
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Succinct Circuit Value Dec](succinct-circuit-value-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)

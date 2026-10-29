@@ -12,15 +12,15 @@ Values cannot reduce.
 
 ## Depends on
 
-- [Step](step.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Value](value.md)
+- [Small-step call-by-value reduction in STLC](step.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Values of STLC](value.md)
 
 ## Proof depends on
 
-- [Instantiate](../substitution/instantiate.md)
-- [Var](../syntax/var.md)
+- [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources
 

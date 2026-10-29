@@ -13,7 +13,7 @@ quantity `|∇f|(x)`.
 
 ## Depends on
 
-- [Riemannian Gradient](riemannian-gradient.md)
+- [Riemannian gradient](riemannian-gradient.md)
 
 ## Sources
 

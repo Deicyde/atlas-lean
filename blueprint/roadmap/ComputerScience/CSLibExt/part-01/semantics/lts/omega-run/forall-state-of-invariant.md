@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.LTS.forall_state_of_invariant
 ---
 
-# Forall state of invariant
+# Invariant principle for infinite runs
 
-The invariant principle for infinite runs: a state predicate that
-holds initially and is preserved by every step holds at every position
-of the run.
+**Invariant principle for infinite runs.** Let $P$ be a predicate on the states of a labelled
+transition system such that, whenever $P(s)$ holds and there is a transition from $s$ to $t$ with
+some label, $P(t)$ holds. Then for every infinite run $s_0, s_1, s_2, \dots$ with $P(s_0)$, the
+predicate $P(s_k)$ holds for every $k$.
 
 ## Depends on
 
-- [Omega Run](omega-run.md)
+- [Infinite run](omega-run.md)
 
 ## Sources
 

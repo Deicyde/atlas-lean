@@ -13,8 +13,8 @@ dominated by `t'`, every function in the `t`-class is in the `t'`-class.
 
 ## Depends on
 
-- [Blum Class](blum-class.md)
-- [Blum Measure](blum-measure.md)
+- [Blum complexity class](blum-class.md)
+- [Blum complexity measure](blum-measure.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakLE
 ---
 
-# Weak LE
+# Weak order on the symmetric group
 
-The weak order on `S_n` (the inversion poset): `σ ≤ τ` iff the inversion set of `σ` is
-contained in that of `τ`.
+**Weak order on the symmetric group.** For permutations $\sigma$ and $\tau$ of
+$\{0, \dots, n-1\}$, $\sigma \le \tau$ in the weak order when the inversion set of $\sigma$ (its
+pairs of positions $(i, j)$ with $i < j$ and $\sigma(j) < \sigma(i)$) is contained in the inversion
+set of $\tau$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inversions](inversions.md)
+- [Inversion set of a permutation](inversions.md)
 
 ## Sources
 

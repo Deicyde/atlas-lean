@@ -6,30 +6,35 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_subst
 ---
 
-# Cbn subst
+# The call-by-name CPS translation commutes with substitution
 
-The translation commutes with substitution: if `τ` maps each translated
-variable to the translation of the term `σ` substitutes for it, then
-`⟦M[σ]⟧ = ⟦M⟧[τ]`.
+**The call-by-name CPS translation commutes with substitution.** Fix an answer type $R$ and
+write $\overline{t}$ for the call-by-name CPS translation of a term $t$ and $\overline{x}$ for the
+translation of a variable $x$, the variable at the same position of the translated context. Let
+$\sigma$ be a substitution from a context $\Gamma$ to a context $\Delta$ (assigning to each
+variable of $\Gamma$ a term of the same type in context $\Delta$), and let $\tau$ be a
+substitution from the translated context of $\Gamma$ to that of $\Delta$ such that
+$\tau(\overline{x}) = \overline{\sigma(x)}$ for every variable $x$ of $\Gamma$. Then for every
+term $t$ in context $\Gamma$, $\overline{t[\sigma]} = \overline{t}[\tau]$.
 
 ## Depends on
 
-- [Cbn](../call-by-name/cbn.md)
-- [Cbn Comp](../call-by-name/cbn-comp.md)
-- [Cbn Var](../call-by-name/cbn-var.md)
-- [Sub](../../de-bruijn/stlc/syntax/sub.md)
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Subst](../../de-bruijn/stlc/substitution/subst.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
+- [Call-by-name CPS translation of terms](../call-by-name/cbn.md)
+- [Computation types of the call-by-name CPS translation](../call-by-name/cbn-comp.md)
+- [Call-by-name CPS translation of variables](../call-by-name/cbn-var.md)
+- [Simultaneous substitutions of simply typed contexts](../../de-bruijn/stlc/syntax/sub.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Simultaneous substitution (simply typed lambda calculus)](../../de-bruijn/stlc/substitution/subst.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
 
 ## Proof depends on
 
-- [Cbn Ty](../call-by-name/cbn-ty.md)
-- [Cbn weaken](cbn-weaken.md)
-- [Lift](../../de-bruijn/stlc/substitution/lift.md)
-- [Subst lift weaken](../../de-bruijn/stlc/substitution-laws/subst-lift-weaken.md)
-- [Weaken](../../de-bruijn/stlc/syntax/weaken.md)
+- [Call-by-name CPS translation of types](../call-by-name/cbn-ty.md)
+- [The call-by-name CPS translation commutes with weakening](cbn-weaken.md)
+- [Lifting a substitution under a binder (simply typed lambda calculus)](../../de-bruijn/stlc/substitution/lift.md)
+- [Lifted substitution commutes with weakening for intrinsically typed STLC terms](../../de-bruijn/stlc/substitution-laws/subst-lift-weaken.md)
+- [Weakening a simply typed term](../../de-bruijn/stlc/syntax/weaken.md)
 
 ## Sources
 

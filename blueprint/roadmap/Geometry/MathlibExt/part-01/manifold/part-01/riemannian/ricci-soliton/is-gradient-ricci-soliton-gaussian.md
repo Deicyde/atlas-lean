@@ -6,21 +6,25 @@ proof: formalized
 lean: Manifold.isGradientRicciSoliton_gaussian
 ---
 
-# Is Gradient Ricci Soliton gaussian
+# The Gaussian gradient Ricci soliton
 
-The Gaussian soliton on `F` with potential `(a / 2) * ‖x‖ ^ 2` and constant `a`.
-For `a < 0` this is the expanding Gaussian.
+**The Gaussian gradient Ricci soliton.** Let $F$ be a finite-dimensional real inner product
+space, viewed as a Riemannian manifold with the metric given by its inner product, and let
+$a \in \mathbb{R}$. The function $f(x) = \frac{a}{2} \|x\|^2$ on $F$ is a gradient Ricci soliton
+with constant $a$.
+
+For $a < 0$ this is the expanding Gaussian soliton.
 
 ## Depends on
 
-- [Is Gradient Ricci Soliton](is-gradient-ricci-soliton.md)
+- [Gradient Ricci soliton](is-gradient-ricci-soliton.md)
 
 ## Proof depends on
 
-- [Hessian](../hessian/hessian.md)
-- [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
-- [Ricci](../curvature/ricci.md)
-- [Ricci vector Space](../vector-space/ricci-vector-space.md)
+- [Covariant Hessian](../hessian/hessian.md)
+- [The Hessian on Euclidean space is the second derivative](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
+- [Ricci curvature](../curvature/ricci.md)
+- [Euclidean space is Ricci-flat](../vector-space/ricci-vector-space.md)
 - [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources

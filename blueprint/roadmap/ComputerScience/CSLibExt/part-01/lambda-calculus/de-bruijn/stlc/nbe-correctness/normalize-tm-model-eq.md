@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeTm_modelEq
 ---
 
-# Normalize Tm model Eq
+# Every term is model-equal to its NbE normal form
 
-Every term is model-equal to its NbE result.
+**Every term is model-equal to its NbE normal form.** Every term $t$ of type $A$ in context
+$\Gamma$ is model-equal to its NbE normal form.
 
 ## Depends on
 
-- [Model Eq](../contextual/model-eq.md)
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Model equality of STLC terms](../contextual/model-eq.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Proof depends on
 
-- [Normalize Tm sem Eq](normalize-tm-sem-eq.md)
+- [Every term is semantically equal to its NbE normal form in each model](normalize-tm-sem-eq.md)
 
 ## Sources
 

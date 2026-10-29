@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.RenAgrees
 ---
 
-# Ren Agrees
+# Agreement of a typed and a numerical renaming
 
-A typed renaming and a numerical renaming agree when erasing every
-well-typed variable gives the prescribed numerical image.
+**Agreement of a typed and a numerical renaming.** A typed renaming $\rho$ from context
+$\Gamma$ to context $\Delta$ agrees with a map $r : \mathbb{N} \to \mathbb{N}$ when, for every
+type $A$ and every variable $x$ of type $A$ in $\Gamma$, the de Bruijn index of $\rho(x)$
+equals $r$ applied to the de Bruijn index of $x$.
 
 ## Depends on
 
-- [Ren](../syntax/ren.md)
-- [Ty](../syntax/ty.md)
+- [Renamings of simply typed contexts](../syntax/ren.md)
+- [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Var](../syntax/var.md)
-- [To Nat](../elaboration/to-nat.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Index of a typed variable](../elaboration/to-nat.md)
 
 ## Sources
 

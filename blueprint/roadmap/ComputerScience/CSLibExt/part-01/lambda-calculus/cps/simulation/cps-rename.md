@@ -12,22 +12,22 @@ The translation commutes with renaming.
 
 ## Depends on
 
-- [Comp Ty](../translation/comp-ty.md)
-- [Cps](../translation/cps.md)
-- [Cps Ren](cps-ren.md)
-- [Cps Ty](../translation/cps-ty.md)
-- [Ren](../../de-bruijn/stlc/syntax/ren.md)
-- [Tm](../../de-bruijn/stlc/syntax/tm.md)
-- [Rename](../../de-bruijn/stlc/syntax/rename.md)
-- [Ty](../../de-bruijn/stlc/syntax/ty.md)
+- [CPS computation type](../translation/comp-ty.md)
+- [Call-by-value CPS translation of terms](../translation/cps.md)
+- [Translated renaming](cps-ren.md)
+- [Call-by-value CPS translation of types](../translation/cps-ty.md)
+- [Renamings of simply typed contexts](../../de-bruijn/stlc/syntax/ren.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
+- [Renaming a simply typed term](../../de-bruijn/stlc/syntax/rename.md)
+- [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on
 
-- [Cps Var](../translation/cps-var.md)
-- [Rename weaken](../../de-bruijn/stlc/substitution-laws/rename-weaken.md)
-- [Weaken](../../de-bruijn/stlc/syntax/weaken.md)
-- [Var](../../de-bruijn/stlc/syntax/var.md)
-- [Lift](../../de-bruijn/stlc/syntax/lift.md)
+- [CPS translation of variables](../translation/cps-var.md)
+- [Renaming commutes with weakening for intrinsically typed STLC terms](../../de-bruijn/stlc/substitution-laws/rename-weaken.md)
+- [Weakening a simply typed term](../../de-bruijn/stlc/syntax/weaken.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)
+- [Lifting a renaming under a binder](../../de-bruijn/stlc/syntax/lift.md)
 
 ## Sources
 

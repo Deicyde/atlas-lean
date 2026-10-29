@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.ωLanguage.Example.compl_infinitelyOften
 ---
 
-# Compl infinitely Often
+# Complement of “infinitely often”
 
-Not infinitely often in `p` is eventually always outside `p`.
+**Complement of “infinitely often”.** For every set $p$ of symbols, the complement of the
+ω-language of infinite words with infinitely many letters in $p$ is the ω-language of infinite
+words whose letters are eventually all in the complement of $p$.
 
 ## Depends on
 
-- [Eventually Always](eventually-always.md)
-- [Infinitely Often](infinitely-often.md)
+- [Eventually always](eventually-always.md)
+- [Infinitely often](infinitely-often.md)
 
 ## Sources
 

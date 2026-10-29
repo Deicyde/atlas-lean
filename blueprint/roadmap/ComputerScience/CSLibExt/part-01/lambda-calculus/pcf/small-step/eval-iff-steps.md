@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.eval_iff_steps
 ---
 
-# Eval iff steps
+# Big-step evaluation agrees with small-step reduction in PCF
 
-Big-step evaluation coincides with reduction to a value.
+**Big-step evaluation agrees with small-step reduction in PCF.** For closed PCF terms $t$ and
+$v$ of type $A$, $t$ evaluates to $v$ in the big-step call-by-name semantics if and only if $t$
+reduces to $v$ in finitely many (possibly zero) call-by-name steps and $v$ is a value.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Eval](../big-step/eval.md)
-- [Steps](steps.md)
-- [Value](../big-step/value.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [Multi-step call-by-name reduction of PCF](steps.md)
+- [Values of PCF](../big-step/value.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Steps](steps-2.md)
-- [Value](../big-step/value-2.md)
-- [Eval](eval-2.md)
+- [Big-step evaluation implies reduction in PCF](steps-2.md)
+- [PCF evaluation results are values](../big-step/value-2.md)
+- [Reduction to a value implies big-step evaluation in PCF](eval-2.md)
 
 ## Sources
 

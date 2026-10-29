@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Semantics.shiftSeq
 ---
 
-# Shift Seq
+# Shifted sequence
 
-The suffix of a state sequence starting at index `k`.
+**Shifted sequence.** For a sequence $s_0, s_1, s_2, \dots$ and a natural number $k$, the shift
+of the sequence by $k$ is the sequence whose $i$-th term is $s_{i+k}$; that is, the suffix
+starting at index $k$, re-indexed from $0$.
 
 ## Depends on
 

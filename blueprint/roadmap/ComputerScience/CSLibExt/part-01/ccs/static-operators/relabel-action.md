@@ -5,21 +5,22 @@ statement: formalized
 lean: Cslib.CCS.StaticProcess.relabelAction
 ---
 
-# Relabel Action
+# Relabelling an action
 
-Relabel a CCS action.  Silent actions stay silent, and both polarities of
-a visible channel use the same channel table.
+**Relabelling an action.** For a relabelling $f$, the silent action $\tau$ is relabelled to
+$\tau$, an input on a channel $a$ is relabelled to the image of $a$ under $f$, and an output on
+$a$ is relabelled to the complement of the image of $a$ under $f$, each viewed as a CCS label.
 
 ## Depends on
 
-- [Label](../parallel/label.md)
+- [CCS labels](../parallel/label.md)
 - [Relabelling](relabelling.md)
 
 ## Proof depends on
 
-- [Apply](apply.md)
-- [Complement](complement.md)
-- [To Label](to-label.md)
+- [Applying a relabelling to a channel name](apply.md)
+- [Complement of a visible label](complement.md)
+- [Visible labels as CCS labels](to-label.md)
 
 ## Sources
 

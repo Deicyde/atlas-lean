@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Value
 ---
 
-# Value
+# Values of STLC
 
-Lambda abstractions are the values of the pure calculus.
+**Values of STLC.** A term of type $A$ in a context $\Gamma$ is a value exactly when it is a
+lambda abstraction.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Simple types](../syntax/ty.md)
 
 ## Sources
 

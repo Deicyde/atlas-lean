@@ -6,27 +6,30 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeRaw_hasType
 ---
 
-# Normalize Raw has Type
+# Raw normalization produces well-typed terms
 
-The output of raw normalization remains well typed.
+**Raw normalization produces well-typed terms.** Assume equality of base types is
+decidable. For every context $\Gamma$ and raw term $t$, if raw normalization of $t$ in $\Gamma$
+succeeds with a type $A$ and a raw term $t'$, then the declarative typing judgment
+$\Gamma \vdash t' : A$ holds.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Raw Tm](raw-tm.md)
-- [Ty](../syntax/ty.md)
-- [Normalize Raw](normalize-raw.md)
+- [Declarative typing of raw terms](has-type.md)
+- [Raw lambda terms](raw-tm.md)
+- [Simple types](../syntax/ty.md)
+- [Normalization of raw terms](normalize-raw.md)
 
 ## Proof depends on
 
-- [Checked](checked.md)
-- [Erase](erase-2.md)
-- [Tm](../syntax/tm.md)
-- [Erase](erase.md)
-- [Var](../syntax/var.md)
-- [Elaborate](elaborate.md)
-- [Normalize Nf](../nbe-evaluation/normalize-nf.md)
-- [Normalize Tm](../nbe-evaluation/normalize-tm.md)
+- [Checked terms](checked.md)
+- [Erasure preserves typing](erase-2.md)
+- [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
+- [Erasure of intrinsically typed terms](erase.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
+- [Elaboration of raw STLC terms](elaborate.md)
+- [Normalization by evaluation](../nbe-evaluation/normalize-nf.md)
+- [Normalization of terms](../nbe-evaluation/normalize-tm.md)
 
 ## Sources
 

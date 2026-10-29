@@ -5,23 +5,27 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox
 ---
 
-# Ctx Approx
+# Contextual approximation in PCF
 
-Contextual approximation: whatever numeral a closed ground context computes
-with `t` in its hole, it computes with `u` too.
+**Contextual approximation in PCF.** Write $C[s]$ for the term obtained by plugging $s$ into
+the hole of a one-hole context $C$. For PCF terms $t$ and $u$ of type $A$ in typing context
+$\Gamma$, $t$ contextually approximates $u$ when, for every one-hole context $C$ whose hole takes
+terms of type $A$ in typing context $\Gamma$ and which produces closed terms of the ground type
+of natural numbers, and for every natural number $n$: if $C[t]$ evaluates to the numeral $n$,
+then $C[u]$ evaluates to the numeral $n$. Evaluation is big-step call-by-name evaluation.
 
 ## Depends on
 
-- [Tm](../syntax/tm.md)
-- [Ty](../syntax/ty.md)
+- [PCF terms](../syntax/tm.md)
+- [PCF types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Ctx](ctx.md)
-- [Plug](plug.md)
-- [Eval](../big-step/eval.md)
-- [Numeral](../syntax/numeral.md)
-- [Nat](../syntax/nat.md)
+- [One-hole contexts of PCF](ctx.md)
+- [Plugging a term into a PCF context](plug.md)
+- [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
+- [PCF numerals](../syntax/numeral.md)
+- [Natural number type of PCF](../syntax/nat.md)
 
 ## Sources
 

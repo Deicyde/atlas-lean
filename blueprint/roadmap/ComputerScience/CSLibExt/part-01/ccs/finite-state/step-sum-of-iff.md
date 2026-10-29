@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.CCS.step_sumOf_iff
 ---
 
-# Step sum Of iff
+# Transitions of a sum of prefixes
 
-The transitions of a choice of prefixes are the listed ones.
+**Transitions of a sum of prefixes.** For every recursive specification, every list $l$ of
+pairs of a label and a process, every label $a$ and every process $q$, the sum of the prefixes
+listed in $l$ has a transition labelled $a$ to $q$ exactly when $(a, q)$ belongs to $l$.
 
 ## Depends on
 
-- [Sum Of](sum-of.md)
-- [Label](../parallel/label.md)
-- [Process](../recursion/process.md)
+- [Sum of prefixes](sum-of.md)
+- [CCS labels](../parallel/label.md)
+- [Recursive CCS processes](../recursion/process.md)
 - [Step](../recursion/step.md)
-- [Specification](../recursion/specification.md)
+- [Recursive CCS specification](../recursion/specification.md)
 
 ## Proof depends on
 
-- [Complementary](../parallel/complementary.md)
+- [Complementary labels](../parallel/complementary.md)
 - [Relabelling](../static-operators/relabelling.md)
-- [Allowed](../static-operators/allowed.md)
-- [Relabel Action](../static-operators/relabel-action.md)
+- [Actions permitted by a restriction](../static-operators/allowed.md)
+- [Relabelling an action](../static-operators/relabel-action.md)
 
 ## Sources
 

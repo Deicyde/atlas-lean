@@ -5,16 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.Classes.MA
 ---
 
-# MA
+# The class MA (Merlin–Arthur)
 
-`MA`: Merlin sends a polynomial-length witness `w` first, then Arthur
-flips coins `r`; acceptance probability at least `2/3` on yes-instances
-(for some `w`), at most `1/3` on no-instances (for every `w`). The triple
-is `(input, witness, random string)`, unlike `AM`'s
-`(input, random string, witness)`. `MA ⊆ AM` (by error amplification and a
-union bound over Merlin's messages) is a `WantedExt` statement, not proved
-here: the same verifier does not work, since `∃ w` after the coins is
-strictly more permissive than `∃ w` before them.
+**The class MA (Merlin–Arthur).** A decision problem $L$ is in $\mathsf{MA}$ when there are
+polynomials $p$ and $q$ with natural-number coefficients and a polynomial-time computable
+predicate $R$ on triples $(x, w, r)$ of bitstrings such that, for every bitstring $x$, with
+$N_x(w)$ the number of strings $r$ of length $p(|x|)$ for which $R(x, w, r)$ is true: if $L(x)$
+is true, then some $w$ with $|w| \le q(|x|)$ satisfies $3 N_x(w) \ge 2 \cdot 2^{p(|x|)}$; and if
+$L(x)$ is false, then every $w$ with $|w| \le q(|x|)$ satisfies $3 N_x(w) \le 2^{p(|x|)}$.
+
+So Merlin sends a witness $w$ first and Arthur then flips $p(|x|)$ coins $r$: Arthur accepts
+with probability at least $2/3$ for some $w$ on yes-instances, and with probability at most
+$1/3$ for every $w$ on no-instances. In the class AM the random string comes before the
+witness.
 
 ## Depends on
 

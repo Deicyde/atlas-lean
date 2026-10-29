@@ -12,7 +12,7 @@ reliability problems", SIAM Journal on Computing 8 (1979), 410-421.
 
 ## Depends on
 
-- [Sharp PComplete](../../../../../Computability/CSLibExt/complexity/classes/sharp-pcomplete.md)
+- [$\#P$-complete functions](../../../../../Computability/CSLibExt/complexity/classes/sharp-pcomplete.md)
 - [Count Sat Fun](count-sat-fun.md)
 
 ## Sources
