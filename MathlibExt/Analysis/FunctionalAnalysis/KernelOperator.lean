@@ -13,6 +13,7 @@ public import Mathlib.MeasureTheory.Integral.DominatedConvergence
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 public import Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli
 public import Mathlib.Topology.ContinuousMap.Bounded.Normed
+public import Mathlib.Topology.Order.ProjIcc
 
 @[expose] public section
 
@@ -27,13 +28,17 @@ A separable kernel `k (x, y) = ∑ i ∈ s, φ i x * ψ i y` gives an operator
 whose range lies in the span of the finitely many functions `φ i`, hence
 finite rank.
 
-This is a companion to the integral-operator material of the v1 book
-`IntroductionToFunctionalAnalysis` (the Green operator of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean` is an
-integral operator with a piecewise-defined kernel, and the Volterra operator
-is the integral operator with kernel `1_{y ≤ x}`; neither is a continuous
-kernel). It is not one of the 72 v1 targets, and no integral / kernel
-operator is in the pinned Mathlib or in base MathlibExt.
+These are general supporting results for the integral-operator material of
+the v1 book `IntroductionToFunctionalAnalysis`. The Green kernel
+`min x t * (1 - max x t)` in
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean` and
+`MathlibExt.Analysis.ODE.GreensOperator.greensKernel` is jointly continuous.
+Its restriction to the interval square is a continuous-kernel example here.
+The Volterra operator, with discontinuous indicator kernel `1_{y ≤ x}`, is
+already provided by
+`MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraOperator`.
+This general continuous-kernel construction is not a verbatim port of a
+single v1 target.
 
 Classical reference: F. Riesz and B. Sz.-Nagy, *Functional Analysis*,
 §§89–90 (integral operators with continuous kernels are compact).
@@ -62,27 +67,18 @@ abbrev KernelSpace := Set.Icc (0 : ℝ) 1 →ᵇ ℝ
 /-- A continuous kernel on `[0, 1] × [0, 1]`. -/
 abbrev KernelType := (Set.Icc (0 : ℝ) 1 × Set.Icc (0 : ℝ) 1) →ᵇ ℝ
 
-/-- Clamp a real number into `[0, 1]`. -/
-def kernelClamp (t : ℝ) : Set.Icc (0 : ℝ) 1 :=
-  ⟨max 0 (min t 1), le_max_left _ _, max_le zero_le_one (min_le_right _ _)⟩
-
 /-- The clamped extension of a function on `[0, 1]` to `ℝ`. -/
 def kernelExtend (f : KernelSpace) : ℝ → ℝ :=
-  fun t => f (kernelClamp t)
+  fun t => f (Set.projIcc 0 1 zero_le_one t)
 
 /-- The clamped extension is continuous. -/
 theorem kernelExtend_continuous (f : KernelSpace) : Continuous (kernelExtend f) :=
-  f.continuous.comp
-    (Continuous.subtype_mk
-      (continuous_const.max (continuous_id.min continuous_const))
-      (fun _ => ⟨le_max_left _ _, max_le zero_le_one (min_le_right _ _)⟩))
+  f.continuous.comp continuous_projIcc
 
 /-- On `[0, 1]` the clamped extension agrees with the original function. -/
 theorem kernelExtend_apply_of_mem {f : KernelSpace} {t : ℝ} (ht : t ∈ Set.Icc (0 : ℝ) 1) :
     kernelExtend f t = f ⟨t, ht⟩ := by
-  have hclamp : max 0 (min t 1) = t := by
-    rw [min_eq_left ht.2, max_eq_right ht.1]
-  simp [kernelExtend, kernelClamp, hclamp]
+  rw [kernelExtend, Set.projIcc_of_mem zero_le_one ht]
 
 /-- The clamped extension is bounded by the sup norm. -/
 theorem norm_kernelExtend_le (f : KernelSpace) (t : ℝ) : ‖kernelExtend f t‖ ≤ ‖f‖ :=
@@ -91,20 +87,14 @@ theorem norm_kernelExtend_le (f : KernelSpace) (t : ℝ) : ‖kernelExtend f t�
 /-- The integrand of the kernel operator. -/
 def kernelIntegrand (k : KernelType) (f : KernelSpace) (x : Set.Icc (0 : ℝ) 1) :
     ℝ → ℝ :=
-  fun t => k (x, kernelClamp t) * kernelExtend f t
-
-/-- The clamping map is continuous. -/
-theorem continuous_kernelClamp : Continuous kernelClamp :=
-  Continuous.subtype_mk
-    (continuous_const.max (continuous_id.min continuous_const))
-    (fun _ => ⟨le_max_left _ _, max_le zero_le_one (min_le_right _ _)⟩)
+  fun t => k (x, Set.projIcc 0 1 zero_le_one t) * kernelExtend f t
 
 /-- The integrand is jointly continuous in `(x, t)`. -/
 theorem continuous_kernelIntegrand_uncurry (k : KernelType) (f : KernelSpace) :
     Continuous (Function.uncurry (kernelIntegrand k f)) := by
   have h1 : Continuous (fun p : Set.Icc (0 : ℝ) 1 × ℝ =>
-      k (p.1, kernelClamp p.2)) :=
-    k.continuous.comp (continuous_fst.prodMk (continuous_kernelClamp.comp continuous_snd))
+      k (p.1, Set.projIcc 0 1 zero_le_one p.2)) :=
+    k.continuous.comp (continuous_fst.prodMk (continuous_projIcc.comp continuous_snd))
   have h2 : Continuous (fun p : Set.Icc (0 : ℝ) 1 × ℝ => kernelExtend f p.2) :=
     (kernelExtend_continuous f).comp continuous_snd
   exact h1.mul h2
@@ -128,7 +118,7 @@ theorem kernelValue_continuous (k : KernelType) (f : KernelSpace) :
 /-- The kernel value is bounded by `‖k‖ * ‖f‖`. -/
 theorem norm_kernelValue_le (k : KernelType) (f : KernelSpace)
     (x : Set.Icc (0 : ℝ) 1) : ‖kernelValue k f x‖ ≤ ‖k‖ * ‖f‖ := by
-  have hknorm : ∀ t, ‖k (x, kernelClamp t)‖ ≤ ‖k‖ :=
+  have hknorm : ∀ t, ‖k (x, Set.projIcc 0 1 zero_le_one t)‖ ≤ ‖k‖ :=
     fun t => k.norm_coe_le_norm _
   have hfnorm : ∀ t, ‖kernelExtend f t‖ ≤ ‖f‖ := norm_kernelExtend_le f
   calc ‖kernelValue k f x‖
@@ -205,7 +195,8 @@ theorem norm_kernelOperator_apply_sub_le (k : KernelType) (f : KernelSpace)
   have hδ : 0 ≤ δ := le_trans (norm_nonneg _) (h ⟨0, le_refl 0, zero_le_one⟩)
   have hsub : kernelOperator k f x - kernelOperator k f x'
       = ∫ t in (0 : ℝ)..1,
-          (k (x, kernelClamp t) - k (x', kernelClamp t)) * kernelExtend f t := by
+          (k (x, Set.projIcc 0 1 zero_le_one t) -
+            k (x', Set.projIcc 0 1 zero_le_one t)) * kernelExtend f t := by
     rw [kernelOperator_apply, kernelOperator_apply,
       ← intervalIntegral.integral_sub
         ((kernelIntegrand_continuous k f x).intervalIntegrable _ _)
@@ -214,18 +205,25 @@ theorem norm_kernelOperator_apply_sub_le (k : KernelType) (f : KernelSpace)
     funext t
     simp [kernelIntegrand, sub_mul]
   rw [hsub]
-  calc ‖∫ t in (0 : ℝ)..1, (k (x, kernelClamp t) - k (x', kernelClamp t)) * kernelExtend f t‖
-      ≤ ∫ t in (0 : ℝ)..1, ‖(k (x, kernelClamp t) - k (x', kernelClamp t)) * kernelExtend f t‖ :=
+  calc ‖∫ t in (0 : ℝ)..1,
+        (k (x, Set.projIcc 0 1 zero_le_one t) -
+          k (x', Set.projIcc 0 1 zero_le_one t)) * kernelExtend f t‖
+      ≤ ∫ t in (0 : ℝ)..1,
+          ‖(k (x, Set.projIcc 0 1 zero_le_one t) -
+            k (x', Set.projIcc 0 1 zero_le_one t)) * kernelExtend f t‖ :=
         intervalIntegral.norm_integral_le_integral_norm zero_le_one
-    _ = ∫ t in (0 : ℝ)..1, ‖k (x, kernelClamp t) - k (x', kernelClamp t)‖ * ‖kernelExtend f t‖ := by
+    _ = ∫ t in (0 : ℝ)..1,
+        ‖k (x, Set.projIcc 0 1 zero_le_one t) -
+          k (x', Set.projIcc 0 1 zero_le_one t)‖ * ‖kernelExtend f t‖ := by
         congr 1
         funext t
         rw [norm_mul]
     _ ≤ ∫ _t in (0 : ℝ)..1, δ * ‖f‖ := by
         have hcont_kdiff : Continuous (fun t =>
-            k (x, kernelClamp t) - k (x', kernelClamp t)) :=
-          (k.continuous.comp (continuous_const.prodMk continuous_kernelClamp)).sub
-            (k.continuous.comp (continuous_const.prodMk continuous_kernelClamp))
+            k (x, Set.projIcc 0 1 zero_le_one t) -
+              k (x', Set.projIcc 0 1 zero_le_one t)) :=
+          (k.continuous.comp (continuous_const.prodMk continuous_projIcc)).sub
+            (k.continuous.comp (continuous_const.prodMk continuous_projIcc))
         apply intervalIntegral.integral_mono_on zero_le_one
         · exact (hcont_kdiff.norm.mul
             (kernelExtend_continuous f).norm).intervalIntegrable (μ := MeasureTheory.volume) _ _
@@ -299,29 +297,35 @@ theorem finiteDimensional_range_kernelOperator_of_separable {ι : Type*} (k : Ke
     rintro z ⟨f, rfl⟩
     show kernelOperator k f ∈ M
     have hform : kernelOperator k f
-        = ∑ i ∈ s, (∫ t in (0 : ℝ)..1, ψ i (kernelClamp t) * kernelExtend f t) • φ i := by
+        = ∑ i ∈ s, (∫ t in (0 : ℝ)..1,
+            ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) • φ i := by
       apply BoundedContinuousFunction.ext
       intro x
       have hsum : (∑ i ∈ s,
-            (∫ t in (0 : ℝ)..1, ψ i (kernelClamp t) * kernelExtend f t) • φ i) x
+            (∫ t in (0 : ℝ)..1,
+              ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) • φ i) x
           = ∑ i ∈ s,
-            (∫ t in (0 : ℝ)..1, ψ i (kernelClamp t) * kernelExtend f t) * φ i x := by
+            (∫ t in (0 : ℝ)..1,
+              ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) * φ i x := by
         have h := map_sum (BoundedContinuousFunction.evalCLM ℝ x)
-          (fun i => (∫ t in (0 : ℝ)..1, ψ i (kernelClamp t) * kernelExtend f t) • φ i) s
+          (fun i => (∫ t in (0 : ℝ)..1,
+            ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) • φ i) s
         simpa only [BoundedContinuousFunction.evalCLM_apply,
           BoundedContinuousFunction.smul_apply, smul_eq_mul] using h
       rw [kernelOperator_apply, hsum]
       have hcont : ∀ i : ι, Continuous (fun t =>
-          φ i x * (ψ i (kernelClamp t) * kernelExtend f t)) := fun i =>
+          φ i x *
+            (ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t)) := fun i =>
         continuous_const.mul
-          (((ψ i).continuous.comp continuous_kernelClamp).mul (kernelExtend_continuous f))
+          (((ψ i).continuous.comp continuous_projIcc).mul (kernelExtend_continuous f))
       have hcong : (∫ t in (0 : ℝ)..1, kernelIntegrand k f x t)
           = ∫ t in (0 : ℝ)..1,
-            ∑ i ∈ s, φ i x * (ψ i (kernelClamp t) * kernelExtend f t) := by
+            ∑ i ∈ s, φ i x *
+              (ψ i (Set.projIcc 0 1 zero_le_one t) * kernelExtend f t) := by
         apply intervalIntegral.integral_congr
         intro t _
-        show k (x, kernelClamp t) * kernelExtend f t = _
-        rw [hk x (kernelClamp t), Finset.sum_mul]
+        show k (x, Set.projIcc 0 1 zero_le_one t) * kernelExtend f t = _
+        rw [hk x (Set.projIcc 0 1 zero_le_one t), Finset.sum_mul]
         exact Finset.sum_congr rfl (fun j _ => by rw [mul_assoc])
       rw [hcong, intervalIntegral.integral_finsetSum
         (fun i _ => (hcont i).intervalIntegrable _ _)]
