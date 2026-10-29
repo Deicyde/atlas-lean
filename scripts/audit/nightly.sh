@@ -6,11 +6,15 @@
 #
 # Run from a clean atlas-lean checkout of the wiki branch without v1/, as the
 # Pages workflow checks it out (git sparse-checkout set --no-cone '/*' '!/v1/').
-# PYTHON must have the Autoform the workflow pins (AUTOFORM_REF) installed, and
+# PYTHON must import Autoform from a git checkout at the AUTOFORM_REF the
+# workflow pins (the run checks), and
 # MKDOCS must run the site build the workflow pins (a command with arguments,
 # such as a uvx line, is fine); `claude` must be on PATH. LIMIT caps the
 # articles audited in one run (default 600). JOBS sets agent concurrency.
-# Nothing is pushed unless every check the workflow requires passes.
+# Nothing is pushed unless every check the workflow requires passes. When the
+# push is rejected because the branch moved during the run, the commit is
+# replayed on top and checked again; one that still cannot go out stays local,
+# and the next run replays it.
 set -euo pipefail
 
 LIMIT=${1:-600}
@@ -31,44 +35,88 @@ if [ -n "$(git status --porcelain)" ]; then
   echo "the checkout has uncommitted changes, perhaps from a failed run; commit or discard them first" >&2
   exit 1
 fi
-git fetch -q origin "$BRANCH"
-# Replays an audit commit whose push was rejected, so this run's gates check it before it goes out.
-git rebase -q --fork-point "origin/$BRANCH"
+unpushed() { git rev-list --count "origin/$BRANCH..HEAD"; }
+# Rebases unpushed audit commits onto the branch; a conflict stops the run with the checkout as it was.
+replay() {
+  git fetch -q origin "$BRANCH"
+  if ! git rebase -q --fork-point "origin/$BRANCH"; then
+    git rebase --abort
+    echo "unpushed audit commits conflict with origin/$BRANCH; rebase them by hand" >&2
+    exit 1
+  fi
+  base=$(git rev-parse "origin/$BRANCH")
+}
+# The checks must run with the Autoform the workflow pins.
+pinned_autoform() {
+  want=$(sed -n 's/^ *AUTOFORM_REF: "\([0-9a-f]*\)".*/\1/p' .github/workflows/blueprint-pages.yml)
+  here=$("$PYTHON" -c 'import autoform_cli, pathlib; print(pathlib.Path(autoform_cli.__file__).resolve().parents[1])')
+  if [ -z "$want" ] || [ "$(git -C "$here" rev-parse HEAD 2>/dev/null)" != "$want" ]; then
+    echo "the Autoform in $here is not AUTOFORM_REF ${want:-?}; check that out, and the next run replays any unpushed commits" >&2
+    exit 1
+  fi
+}
+# Regenerates the wiki and runs the checks the Pages workflow requires.
+gates() {
+  "$PYTHON" scripts/generate_wiki.py
+  "$PYTHON" -m autoform_cli check blueprint --lean-root . | tail -3
+  rm -rf site-src site
+  "$PYTHON" -m autoform_cli render blueprint --output site-src --lean-root . --require-declarations | tail -3
+  $MKDOCS build --strict
+  "$PYTHON" scripts/check_blueprint_site.py site-src site | tail -3
+}
+
+# Replays audit commits whose push was rejected, so this run's gates check them before they go out.
+replay
+pinned_autoform
 
 "$PYTHON" scripts/audit/lint_articles.py blueprint/roadmap --json "$RUN/lint.jsonl" > "$RUN/lint.log"
 head -2 "$RUN/lint.log"
 "$PYTHON" scripts/audit/build_packets.py . "$RUN/lint.jsonl" "$RUN/packets.jsonl" > "$RUN/packets.log"
 head -1 "$RUN/packets.log"
 "$PYTHON" scripts/audit/select_work.py "$RUN/packets.jsonl" scripts/audit/ledger.jsonl "$RUN/selected.jsonl" --limit "$LIMIT"
-if [ ! -s "$RUN/selected.jsonl" ]; then
+if [ -s "$RUN/selected.jsonl" ]; then
+  "$PYTHON" scripts/audit/make_batches.py "$RUN/selected.jsonl" "$RUN/batches.json"
+  # A failed batch is left out of results.json and picked again next run.
+  rm -f "$RUN/out/results.json"
+  "$PYTHON" scripts/audit/run_audit.py . "$RUN/batches.json" "$RUN/out" --jobs "$JOBS" || true
+  if [ -n "$(git status --porcelain)" ]; then
+    echo "an audit agent changed the checkout; inspect it before rerunning" >&2
+    exit 1
+  fi
+  "$PYTHON" -c 'import json, sys; sys.exit(0 if json.load(open(sys.argv[1])) else "every audit batch failed")' \
+    "$RUN/out/results.json"
+  "$PYTHON" scripts/audit/apply_fixes.py . "$RUN/selected.jsonl" "$RUN/out/results.json" scripts/audit/ledger.jsonl "$STAMP"
+elif [ "$(unpushed)" = 0 ]; then
   echo "nothing to audit"
   exit 0
 fi
-"$PYTHON" scripts/audit/make_batches.py "$RUN/selected.jsonl" "$RUN/batches.json"
-# A failed batch is left out of results.json and picked again next run.
-rm -f "$RUN/out/results.json"
-"$PYTHON" scripts/audit/run_audit.py . "$RUN/batches.json" "$RUN/out" --jobs "$JOBS" || true
-if [ -n "$(git status --porcelain)" ]; then
-  echo "an audit agent changed the checkout; inspect it before rerunning" >&2
-  exit 1
-fi
-"$PYTHON" -c 'import json, sys; sys.exit(0 if json.load(open(sys.argv[1])) else "every audit batch failed")' \
-  "$RUN/out/results.json"
-"$PYTHON" scripts/audit/apply_fixes.py . "$RUN/selected.jsonl" "$RUN/out/results.json" scripts/audit/ledger.jsonl "$STAMP"
-"$PYTHON" scripts/generate_wiki.py
-"$PYTHON" -m autoform_cli check blueprint --lean-root . | tail -3
-rm -rf site-src site
-"$PYTHON" -m autoform_cli render blueprint --output site-src --lean-root . --require-declarations | tail -3
-$MKDOCS build --strict
-"$PYTHON" scripts/check_blueprint_site.py site-src site | tail -3
+gates
 
 git add -A blueprint MathlibExt CSLibExt WantedExt scripts/audit/ledger.jsonl
-if git diff --cached --quiet; then
+if ! git diff --cached --quiet; then
+  # The ledger only grows, by one line per audited article.
+  audited=$(git diff --cached --numstat -- scripts/audit/ledger.jsonl | cut -f1)
+  git commit -q -m "Audit ${audited:-0} wiki articles ($STAMP)" -m "Automated run of scripts/audit/nightly.sh; see scripts/audit/ledger.jsonl for each article's scores and findings."
+elif [ "$(unpushed)" = 0 ]; then
   echo "no changes"
   exit 0
 fi
-# The ledger only grows, by one line per audited article.
-audited=$(git diff --cached --numstat -- scripts/audit/ledger.jsonl | cut -f1)
-git commit -q -m "Audit ${audited:-0} wiki articles ($STAMP)" -m "Automated run of scripts/audit/nightly.sh; see scripts/audit/ledger.jsonl for each article's scores and findings."
-git push -q origin "HEAD:$BRANCH"
-git log --oneline -1
+for attempt in 1 2 3; do
+  # The lease turns a push that would restore commits removed from the branch into a rejection.
+  if git push -q --force-with-lease="refs/heads/$BRANCH:$base" origin "HEAD:$BRANCH"; then
+    git log --oneline -1
+    exit 0
+  fi
+  # The branch moved during the run: replay this run's commits on top and check them again.
+  workflow=$(git hash-object .github/workflows/blueprint-pages.yml)
+  replay
+  if [ "$(git hash-object .github/workflows/blueprint-pages.yml)" != "$workflow" ]; then
+    echo "origin/$BRANCH changed the Pages workflow; update the tools it pins, and the next run replays the commits" >&2
+    exit 1
+  fi
+  gates
+  git add -A blueprint
+  git diff --cached --quiet || git commit -q --amend --no-edit
+done
+echo "the push was rejected $attempt times; the next run replays the commits" >&2
+exit 1
