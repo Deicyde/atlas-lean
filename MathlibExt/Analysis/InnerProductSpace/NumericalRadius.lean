@@ -11,6 +11,7 @@ module
 public import Mathlib.Analysis.InnerProductSpace.Rayleigh
 public import Mathlib.Analysis.InnerProductSpace.Adjoint
 public import Mathlib.Analysis.RCLike.Basic
+public import Mathlib.LinearAlgebra.Complex.Module
 
 /-!
 # The numerical radius of a bounded operator
@@ -43,15 +44,14 @@ This is a companion to the self-adjoint / spectral material of
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
 (May 2021). It is a newly proved supporting result outside the 72 v1 targets.
 The radius is linked to the existing numerical range; the Cartesian parts
-are the operator-valued forms of Mathlib's `realPart` and `imaginaryPart`.
+are coerced aliases of Mathlib's `realPart` and `imaginaryPart`.
 The two-sided estimate uses Mathlib's adjoint and Rayleigh-quotient APIs.
 
 ## Main declarations
 
 * `numericalRadius` : the numerical radius `w(T)`.
 * `cartesianRealPart` / `cartesianImagPart` : the Cartesian (self-adjoint)
-  parts of `T`. (Named to avoid Mathlib's `realPart`, which is the real-part
-  map into the self-adjoint subtype.)
+  parts of `T`, as compatible aliases of Mathlib's self-adjoint subtype values.
 * `numericalRadius_le_norm` : `w(T) ≤ ‖T‖`.
 * `norm_le_two_mul_numericalRadius` : `‖T‖ ≤ 2 * w(T)`.
 * `numericalRadius_eq_norm_of_isSelfAdjoint` : `w(T) = ‖T‖` for `T`
@@ -72,13 +72,13 @@ the supremum of `‖⟪T x, x⟫‖` over unit vectors `x`. -/
 noncomputable def numericalRadius (T : H →L[ℂ] H) : ℝ :=
   ⨆ x : { x : H // ‖x‖ = 1 }, ‖⟪T (x : H), (x : H)⟫_ℂ‖
 
-/-- The real (self-adjoint) Cartesian part of `T`: `(T + T*) / 2`. -/
+/-- The operator-valued alias of Mathlib's `realPart T`: `(T + T*) / 2`. -/
 noncomputable def cartesianRealPart (T : H →L[ℂ] H) : H →L[ℂ] H :=
-  (1 / 2 : ℂ) • (T + ContinuousLinearMap.adjoint T)
+  ↑(realPart T)
 
-/-- The imaginary (self-adjoint) Cartesian part of `T`: `(T - T*) / (2 * i)`. -/
+/-- The operator-valued alias of Mathlib's `imaginaryPart T`: `(T - T*) / (2 * i)`. -/
 noncomputable def cartesianImagPart (T : H →L[ℂ] H) : H →L[ℂ] H :=
-  (-(Complex.I / 2) : ℂ) • (T - ContinuousLinearMap.adjoint T)
+  ↑(imaginaryPart T)
 
 omit [CompleteSpace H] in
 /-- The family defining the numerical radius is bounded above by `‖T‖`. -/
@@ -201,30 +201,22 @@ theorem starRingEnd_neg_I_div_two :
 /-- The real Cartesian part is symmetric. -/
 theorem isSymmetric_cartesianRealPart (T : H →L[ℂ] H) :
     LinearMap.IsSymmetric (cartesianRealPart T : H →ₗ[ℂ] H) := by
-  intro x y
-  show ⟪cartesianRealPart T x, y⟫_ℂ = ⟪x, cartesianRealPart T y⟫_ℂ
-  simp only [cartesianRealPart, smul_apply, add_apply, inner_smul_left, inner_smul_right,
-    inner_add_left, inner_add_right, ContinuousLinearMap.adjoint_inner_left,
-    ContinuousLinearMap.adjoint_inner_right]
-  rw [starRingEnd_half]
-  ring
+  exact (show IsSelfAdjoint (cartesianRealPart T) from (realPart T).property).isSymmetric
 
 /-- The imaginary Cartesian part is symmetric. -/
 theorem isSymmetric_cartesianImagPart (T : H →L[ℂ] H) :
     LinearMap.IsSymmetric (cartesianImagPart T : H →ₗ[ℂ] H) := by
-  intro x y
-  show ⟪cartesianImagPart T x, y⟫_ℂ = ⟪x, cartesianImagPart T y⟫_ℂ
-  simp only [cartesianImagPart, smul_apply, sub_apply, inner_smul_left, inner_smul_right,
-    inner_sub_left, inner_sub_right, ContinuousLinearMap.adjoint_inner_left,
-    ContinuousLinearMap.adjoint_inner_right]
-  rw [starRingEnd_neg_I_div_two]
-  ring
+  exact (show IsSelfAdjoint (cartesianImagPart T) from (imaginaryPart T).property).isSymmetric
 
 /-- The quadratic form of the real Cartesian part is the real part of the
 quadratic form. -/
 theorem quadForm_cartesianRealPart (T : H →L[ℂ] H) (x : H) :
     ⟪cartesianRealPart T x, x⟫_ℂ = (RCLike.ofReal (RCLike.re ⟪T x, x⟫_ℂ) : ℂ) := by
-  simp only [cartesianRealPart, smul_apply, add_apply, inner_smul_left, inner_add_left,
+  simp only [cartesianRealPart]
+  rw [realPart_apply_coe, ← Complex.coe_smul, ContinuousLinearMap.star_eq_adjoint]
+  have hhalf : (((2 : ℝ)⁻¹ : ℝ) : ℂ) = (1 / 2 : ℂ) := by norm_num
+  rw [hhalf]
+  simp only [smul_apply, add_apply, inner_smul_left, inner_add_left,
     ContinuousLinearMap.adjoint_inner_left]
   rw [show ⟪x, T x⟫_ℂ = starRingEnd ℂ ⟪T x, x⟫_ℂ from (inner_conj_symm x (T x)).symm,
     starRingEnd_half, RCLike.add_conj, ← mul_assoc]
@@ -237,7 +229,14 @@ argument: for the Cartesian decomposition `T = A + i * B`, one has
 `⟪T x, x⟫ = ⟪A x, x⟫ - i * ⟪B x, x⟫`, so `⟪B x, x⟫ = -Im ⟪T x, x⟫`. -/
 theorem quadForm_cartesianImagPart (T : H →L[ℂ] H) (x : H) :
     ⟪cartesianImagPart T x, x⟫_ℂ = (RCLike.ofReal (-(RCLike.im ⟪T x, x⟫_ℂ)) : ℂ) := by
-  simp only [cartesianImagPart, smul_apply, sub_apply, inner_smul_left, inner_sub_left,
+  simp only [cartesianImagPart]
+  rw [imaginaryPart_apply_coe, ← Complex.coe_smul,
+    ContinuousLinearMap.star_eq_adjoint, smul_smul]
+  have hhalf : (((2 : ℝ)⁻¹ : ℝ) : ℂ) = (1 / 2 : ℂ) := by norm_num
+  rw [hhalf]
+  have hcoeff : -(Complex.I) * (1 / 2 : ℂ) = -(Complex.I / 2) := by ring
+  rw [hcoeff]
+  simp only [smul_apply, sub_apply, inner_smul_left, inner_sub_left,
     ContinuousLinearMap.adjoint_inner_left]
   rw [show ⟪x, T x⟫_ℂ = starRingEnd ℂ ⟪T x, x⟫_ℂ from (inner_conj_symm x (T x)).symm,
     starRingEnd_neg_I_div_two, RCLike.sub_conj,
@@ -253,23 +252,13 @@ theorem quadForm_cartesianImagPart (T : H →L[ℂ] H) (x : H) :
 /-- The Cartesian decomposition `T = A + i * B`. -/
 theorem cartesian_decomposition (T : H →L[ℂ] H) :
     T = cartesianRealPart T + Complex.I • cartesianImagPart T := by
-  show T = (1 / 2 : ℂ) • (T + ContinuousLinearMap.adjoint T)
-    + Complex.I • ((-(Complex.I / 2) : ℂ) • (T - ContinuousLinearMap.adjoint T))
-  have h1 : Complex.I • ((-(Complex.I / 2) : ℂ) • (T - ContinuousLinearMap.adjoint T))
-      = (1 / 2 : ℂ) • (T - ContinuousLinearMap.adjoint T) := by
-    rw [smul_smul]
-    have hI : Complex.I * (-(Complex.I / 2) : ℂ) = 1 / 2 := by
-      rw [mul_neg, ← mul_div_assoc, Complex.I_mul_I]
-      norm_num
-    rw [hI]
-  rw [h1]
-  module
+  exact (realPart_add_I_smul_imaginaryPart T).symm
 
 /-- The norm of the real Cartesian part is at most the numerical radius. -/
 theorem norm_cartesianRealPart_le_numericalRadius (T : H →L[ℂ] H) :
     ‖cartesianRealPart T‖ ≤ numericalRadius T := by
-  rw [ContinuousLinearMap.norm_eq_iSup_rayleighQuotient _
-    (isSymmetric_cartesianRealPart T)]
+  rw [ContinuousLinearMap.norm_eq_iSup_rayleighQuotient (cartesianRealPart T)
+    (realPart T).property.isSymmetric]
   refine Real.iSup_le ?_ (numericalRadius_nonneg T)
   intro x
   rw [ContinuousLinearMap.rayleighQuotient, ContinuousLinearMap.reApplyInnerSelf_apply,
@@ -280,8 +269,8 @@ theorem norm_cartesianRealPart_le_numericalRadius (T : H →L[ℂ] H) :
 /-- The norm of the imaginary Cartesian part is at most the numerical radius. -/
 theorem norm_cartesianImagPart_le_numericalRadius (T : H →L[ℂ] H) :
     ‖cartesianImagPart T‖ ≤ numericalRadius T := by
-  rw [ContinuousLinearMap.norm_eq_iSup_rayleighQuotient _
-    (isSymmetric_cartesianImagPart T)]
+  rw [ContinuousLinearMap.norm_eq_iSup_rayleighQuotient (cartesianImagPart T)
+    (imaginaryPart T).property.isSymmetric]
   refine Real.iSup_le ?_ (numericalRadius_nonneg T)
   intro x
   rw [ContinuousLinearMap.rayleighQuotient, ContinuousLinearMap.reApplyInnerSelf_apply,
