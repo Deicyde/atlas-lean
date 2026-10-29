@@ -40,7 +40,8 @@ inductive EditStep (α : Type u) where
   | substitute (source target : α)
   deriving Repr, BEq, DecidableEq
 
-/-- A left-to-right sequence of edit operations. -/
+/-- **Edit script.** An edit script over a type $\alpha$ is a finite list of edit steps over
+$\alpha$, applied from left to right. -/
 abbrev EditScript (α : Type u) := List (EditStep α)
 
 /-- **Unit cost of an edit step.** The cost of an edit step is $0$ for a keep step and $1$ for a

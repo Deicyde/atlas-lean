@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.odd_of_arithmeticDerivative_collatz_comm
 ---
 
-# Odd of arithmetic Derivative collatz comm
+# Positive solutions of the Collatz arithmetic differential equation are odd
 
-Every positive solution of `D(C(n)) = C(D(n))` is odd.
+**Positive solutions of the Collatz arithmetic differential equation are odd.** Let $D$ be
+the arithmetic derivative and $C$ the accelerated Collatz map. Every positive integer $n$ with
+$D(C(n)) = C(D(n))$ is odd.
 
 ## Depends on
 

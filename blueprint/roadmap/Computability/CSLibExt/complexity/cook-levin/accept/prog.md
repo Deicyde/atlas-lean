@@ -41,7 +41,7 @@ counter empty.
 - [Clause kinds of the accept generator](ak.md)
 - [Next label after a clause of the accept generator](next-c.md)
 - [First clause label of the accept generator](start.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the accept generator's literal routine](ls.md)
 - [Precomputation stages of the accept generator](ps.md)
 - [Literal routine of the accept generator](lit-p.md)
 - [Stages of the multiplication routine](../counter-view/ms.md)
@@ -49,7 +49,7 @@ counter empty.
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

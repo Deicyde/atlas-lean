@@ -11,7 +11,7 @@ Every stack holds bits.
 
 ## Depends on
 
-- [K](k-2.md)
+- [Stacks of the layout machine](k-2.md)
 
 ## Sources
 

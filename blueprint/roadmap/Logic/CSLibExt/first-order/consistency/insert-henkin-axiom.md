@@ -16,7 +16,7 @@ with the Henkin axiom for $\forall x\, \varphi$ with witness $c$ is consistent.
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Henkin axiom](henkin-axiom.md)
 
 ## Proof depends on

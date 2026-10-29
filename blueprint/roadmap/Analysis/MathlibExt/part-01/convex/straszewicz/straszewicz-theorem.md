@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.straszewicz_theorem
 ---
 
-# Straszewicz theorem
+# Straszewicz's theorem
 
-Straszewicz's theorem: every extreme point of a compact convex set in finite
-dimensions lies in the closure of the exposed points.
+**Straszewicz's theorem.** Let $E$ be a finite-dimensional real normed space and let
+$A \subseteq E$ be a compact convex set. Then every extreme point of $A$ lies in the closure of
+the set of exposed points of $A$.
 
 ## Depends on
 

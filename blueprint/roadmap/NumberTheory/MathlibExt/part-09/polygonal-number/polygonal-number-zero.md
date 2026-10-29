@@ -7,9 +7,13 @@ proof: formalized
 lean: Nat.polygonalNumber_zero
 ---
 
-# Polygonal Number zero
+# Polygonal numbers at zero
 
-Total-extension initial value at `0`; the source claims this only for `3 ≤ s`.
+**Polygonal numbers at zero.** For every natural number $s$, $p_s(0) = 0$, where $p_s(n)$ is
+the $n$-th $s$-gonal number.
+
+The source considers only $s \ge 3$; the value holds for the extension of the formula to every
+natural number $s$.
 
 ## Depends on
 

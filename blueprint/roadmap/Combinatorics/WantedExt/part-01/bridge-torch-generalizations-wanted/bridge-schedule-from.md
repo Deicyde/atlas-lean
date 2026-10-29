@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeScheduleFrom
 ---
 
-# Bridge Schedule From
+# Valid crossing sequences from a state of the bridge and torch problem
 
-Validity of a list of crossings for the bridge and torch problem with bridge
-capacity `c` and set of people `P`, starting from the state with left bank `L`
-and the torch on the left (`torchLeft = true`) or on the right
-(`torchLeft = false`). Each crossing is the set of people who cross; a crossing
-from the torch's side carries between `1` and `c` people standing on that side,
-and the list must end in the terminal state (empty left bank, torch on the
-right).
+**Valid crossing sequences from a state of the bridge and torch problem.** Let $c$ be a
+natural number and let $P$ and $L$ be finite sets of natural numbers, the people and the left
+bank. Whether a finite sequence $A_1, \dots, A_k$ of finite sets of natural numbers (the
+crossings) is valid from the left bank $L$ with the torch on a given side is defined by recursion
+on $k$. The empty sequence is valid exactly when $L = \emptyset$ and the torch is on the right.
+With the torch on the left, the sequence is valid when $A_1$ is a nonempty subset of $L$ with at
+most $c$ elements and $A_2, \dots, A_k$ is valid from the left bank $L \setminus A_1$ with the
+torch on the right. With the torch on the right, it is valid when $A_1$ is a nonempty subset of
+$P \setminus L$ with at most $c$ elements and $A_2, \dots, A_k$ is valid from the left bank
+$L \cup A_1$ with the torch on the left.
 
 ## Depends on
 

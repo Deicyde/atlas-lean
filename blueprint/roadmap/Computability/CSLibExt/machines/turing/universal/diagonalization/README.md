@@ -33,7 +33,7 @@ navigation: module
 
 ## The diagonal language
 
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 - [The diagonal language](diag.md)
 - [Decoding inverts the code stack](code-cells-of-decode-code-cells-eq-some.md)
 - [Code stacks are recognized](is-some-decode-code-cells-iff.md)
@@ -59,6 +59,6 @@ navigation: module
 - [Program of the readout machine](prog.md)
 - [The readout machine as a host component](comp.md)
 - [The readout run](run.md)
-- [Bits Poly Time](bits-poly-time.md)
+- [The readout on raw bits in polynomial time](bits-poly-time.md)
 - [The readout in polynomial time](poly-time.md)
 - [The diagonal language in polynomial time, given the reformatting machine](nonempty-diag-poly-time.md)

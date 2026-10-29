@@ -20,7 +20,7 @@ one binder, sends $0$ to $0$ and $i + 1$ to $r(i) + 1$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](lift-ren.md)
+- [Lifting a renaming under a binder, for the closure-conversion target](lift-ren.md)
 
 ## Sources
 

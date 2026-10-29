@@ -34,7 +34,7 @@ $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchanged.
 
 ## Proof depends on
 
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Testing a popped input bit](is-v-val.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 

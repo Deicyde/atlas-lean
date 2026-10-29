@@ -12,7 +12,7 @@ number of Ulam words of length $n$ is at least $2n + 4$.
 
 ## Depends on
 
-- [Ulam Word Count](ulam-word-count.md)
+- [Number of Ulam words of a given length](ulam-word-count.md)
 
 ## Sources
 

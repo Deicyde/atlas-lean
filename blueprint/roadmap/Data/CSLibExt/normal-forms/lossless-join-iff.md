@@ -18,7 +18,7 @@ $R_1 \cap R_2 \to R_2$ is derivable from $F$ by Armstrong's axioms.
 
 - [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
 - [Functional dependency](../functional-dependencies/fd.md)
-- [Lossless Join](lossless-join.md)
+- [Lossless decomposition into two schemes](lossless-join.md)
 
 ## Proof depends on
 

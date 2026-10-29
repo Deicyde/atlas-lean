@@ -22,7 +22,7 @@ encoded length remains the structural weighted path cost.
 - [Huffman tree](huffman-tree.md)
 - [Codeword lookup in a Huffman tree](code.md)
 - [Encoded length of a coding tree](encoded-length.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 - [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Proof depends on

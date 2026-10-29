@@ -6,4 +6,4 @@ navigation: module
 # Partition Sum Binomial Coefficient
 
 - [Partition-sum expansion of $\binom{nm}{l}$, unconditional form](choose-mul-eq-partition-sum-unconditiona.md)
-- [Choose mul eq partition sum](choose-mul-eq-partition-sum.md)
+- [Partition-sum expansion of $\binom{nm}{l}$](choose-mul-eq-partition-sum.md)

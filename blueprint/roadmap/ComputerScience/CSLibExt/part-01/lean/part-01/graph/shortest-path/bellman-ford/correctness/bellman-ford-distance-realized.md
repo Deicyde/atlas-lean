@@ -21,7 +21,7 @@ $\delta$.
 - [Weighted directed edge](../basic/edge.md)
 - [Weighted path in an edge list](../basic/is-weighted-path.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 - [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Proof depends on

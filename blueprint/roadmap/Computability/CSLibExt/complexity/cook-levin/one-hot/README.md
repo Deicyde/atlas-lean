@@ -40,10 +40,10 @@ navigation: module
 ## [FAM] Correctness: one literal, one clause
 
 - [Empty scratch counters of the one-hot generator](rest.md)
-- [Lit run](lit-run.md)
+- [Run of one literal routine (one-hot generator)](lit-run.md)
 - [Per-literal step cost of the one-hot generator](lit-e.md)
 - [Step budget for one one-hot clause](clause-b.md)
-- [Lits run](lits-run.md)
+- [Run of the literal routines of a clause (one-hot generator)](lits-run.md)
 - [One clause of the one-hot generator](clause-run.md)
 
 ## [FAM] Correctness: the clauses of one cell (a 2-D label chain)

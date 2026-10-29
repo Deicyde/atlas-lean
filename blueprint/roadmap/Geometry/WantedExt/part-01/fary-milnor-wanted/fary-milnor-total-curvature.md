@@ -17,7 +17,7 @@ real-analytic isotopy from $r$ to the standard circle through smooth knots.
 
 - [Smooth knot](is-smooth-knot.md)
 - [Unknotted curve](is-unknotted.md)
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 - [Total curvature of a space curve](total-curvature.md)
 
 ## Sources

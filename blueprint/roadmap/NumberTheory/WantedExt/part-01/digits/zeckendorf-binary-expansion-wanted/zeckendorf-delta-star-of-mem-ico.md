@@ -17,7 +17,7 @@ $\delta^*(y) = \delta_1^*(y)$.
 ## Depends on
 
 - [Zeckendorf Delta Star](zeckendorf-delta-star.md)
-- [Zeckendorf Delta Star One](zeckendorf-delta-star-one.md)
+- [The function $\delta_1^\ast$](zeckendorf-delta-star-one.md)
 
 ## Sources
 

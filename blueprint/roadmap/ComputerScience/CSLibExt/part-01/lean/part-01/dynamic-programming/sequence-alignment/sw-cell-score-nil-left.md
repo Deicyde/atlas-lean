@@ -18,7 +18,7 @@ sequence and $y$ is $0$.
 
 ## Proof depends on
 
-- [Sw Cell Front](sw-cell-front.md)
+- [Fuel-bounded Smith–Waterman recursion](sw-cell-front.md)
 
 ## Sources
 

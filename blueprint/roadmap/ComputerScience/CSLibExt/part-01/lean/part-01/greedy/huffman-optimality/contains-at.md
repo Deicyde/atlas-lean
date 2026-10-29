@@ -16,7 +16,7 @@ holds exactly when some leaf of $T$ of weight $v$ lies at depth $d$, the root be
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Sources
 

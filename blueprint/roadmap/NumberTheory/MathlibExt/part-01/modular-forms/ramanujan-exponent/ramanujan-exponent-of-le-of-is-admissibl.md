@@ -20,7 +20,7 @@ exponent of $F$ is at most $\delta$, then the Ramanujan exponent of $F$ is at mo
 
 ## Proof depends on
 
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 
 ## Sources
 

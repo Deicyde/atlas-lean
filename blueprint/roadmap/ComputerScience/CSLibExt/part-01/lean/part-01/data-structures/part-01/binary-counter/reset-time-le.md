@@ -18,7 +18,7 @@ cost of resetting $b$ is at most $k$.
 
 ## Proof depends on
 
-- [Reset time](reset-time.md)
+- [Cost of resetting a binary counter](reset-time.md)
 
 ## Sources
 

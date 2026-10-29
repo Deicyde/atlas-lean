@@ -30,7 +30,7 @@ multi-stack machine.
 - [Halting of a multi-stack machine on an input](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
 - [Every r.e. predicate is the halting set of a machine with finite alphabets](../../../../MathlibExt/turing-machine/recursive/halts/exists-finite-tm2-halts-on-iff-of-re-pre.md)
 - [A multi-stack machine is supported by all its labels](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/supports-univ.md)
-- [Single-tape emulation of a multi-stack machine](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 - [The emulation halts iff the multi-stack machine halts](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-eval-dom.md)
 - [The emulation visits finitely many states](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-supports.md)
 

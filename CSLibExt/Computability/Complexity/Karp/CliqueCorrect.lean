@@ -141,7 +141,9 @@ theorem length_pairs (n : ℕ) : (pairs n).length = n * (n - 1) / 2 := by
   rw [← two_mul_length_pairs]
   omega
 
-/-- No pair is listed twice (rows have distinct first components). -/
+/-- **The vertex pairs are listed without repetition.** For every natural number $n$, the list
+of pairs $(i, j)$ of natural numbers with $i < j < n$, in encoding order ($i$ ascending and, for
+each $i$, $j$ descending from $n - 1$ to $i + 1$), contains no pair twice. -/
 theorem pairs_nodup (n : ℕ) : (pairs n).Nodup := by
   rw [pairs, List.nodup_flatMap]
   refine ⟨fun i _ => List.Nodup.map (Prod.mk_right_injective i)

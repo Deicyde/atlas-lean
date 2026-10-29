@@ -49,7 +49,7 @@ ones, restoring the counter through a scratch stack.
 - [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

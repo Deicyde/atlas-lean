@@ -15,16 +15,16 @@ of $F$ by $\ell$ is satisfiable.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](restrict-2.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
 - [CNF clause](../basic/cnfclause.md)
 - [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Satisfies](../semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
 - [Lifting a satisfying assignment from a restriction](satisfies-of-satisfies-restrict.md)
-- [Satisfies restrict iff](satisfies-restrict-iff-2.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a restricted CNF formula](satisfies-restrict-iff-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources

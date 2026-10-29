@@ -10,6 +10,6 @@ navigation: module
 - [Parameter space of hypersurfaces](untitled-2.md)
 - [Hypersurfaces of bounded height](height-le.md)
 - [Everywhere locally soluble hypersurfaces](loc.md)
-- [ΡLoc](loc-2.md)
+- [Local density of everywhere locally soluble hypersurfaces](loc-2.md)
 - [Proportion of soluble hypersurfaces of bounded height](untitled-3.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Density of soluble Fano hypersurfaces](theorem-1-1.md)

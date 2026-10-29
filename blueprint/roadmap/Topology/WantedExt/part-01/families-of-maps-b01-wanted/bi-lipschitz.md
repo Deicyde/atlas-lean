@@ -29,7 +29,7 @@ $H_{t,p}^{-1}$ is $L'$-Lipschitz.
 
 ## Depends on
 
-- [Adapted To](adapted-to.md)
+- [Adapted families of maps](adapted-to.md)
 - [Boundary subpolyhedra](is-boundary-subpolyhedron.md)
 - [Convex linear polyhedra](is-polyhedron.md)
 - [Polyhedral subdivisions](subdivision.md)

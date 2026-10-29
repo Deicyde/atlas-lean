@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Layout.comp
 ---
 
-# Comp
+# The layout machine as a host component
 
-The layout machine as a host component.
+**The layout machine as a host component.** The component machine with the twelve stacks
+$X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$ of the layout machine, each holding bits, with the
+labels and the program of the layout machine, and with its stacks listed in the order
+$X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ The layout machine as a host component.
 
 ## Proof depends on
 
-- [K](k-2.md)
-- [Lab](lab-2.md)
-- [Prog](prog-2.md)
+- [Stacks of the layout machine](k-2.md)
+- [Labels of the layout machine](lab-2.md)
+- [Program of the layout machine](prog-2.md)
 - [Γ](untitled-2.md)
 
 ## Sources

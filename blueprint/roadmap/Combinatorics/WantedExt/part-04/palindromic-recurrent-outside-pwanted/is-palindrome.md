@@ -14,7 +14,7 @@ palindrome.
 
 ## Depends on
 
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

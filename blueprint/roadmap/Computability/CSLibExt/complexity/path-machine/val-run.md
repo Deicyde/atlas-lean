@@ -22,8 +22,8 @@ stack other than $X$ and $E$.
 
 - [Edge-list decoder](../karp/part-01/color/decode-es.md)
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
@@ -32,7 +32,7 @@ stack other than $X$ and $E$.
 ## Proof depends on
 
 - [Decoding the empty input](../karp/part-01/color/decode-es-nil.md)
-- [Decoding fails on a cut-off first number](../karp/part-01/color/decode-es-of-none.md)
+- [The edge-list decoder fails on a cut-off first number](../karp/part-01/color/decode-es-of-none.md)
 - [Decoding fails on a dangling half-pair](../karp/part-01/color/decode-es-of-some-none.md)
 - [Decoding one pair, then the rest](../karp/part-01/color/decode-es-of-some-some.md)
 - [Frames are reflexive](refl.md)

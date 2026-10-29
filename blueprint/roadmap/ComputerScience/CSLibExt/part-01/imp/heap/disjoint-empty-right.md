@@ -14,7 +14,7 @@ the empty heap (with the empty heap as the second heap).
 ## Depends on
 
 - [Heap](heap.md)
-- [Disjoint](disjoint.md)
+- [Disjoint heaps](disjoint.md)
 
 ## Sources
 

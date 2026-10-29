@@ -6,10 +6,12 @@ statement: formalized
 lean: ConvergesLocallyNormallyOn
 ---
 
-# Converges Locally Normally On
+# Local normal convergence of a series of functions on a set
 
-Local normal convergence of the function series `f` on `S`: every `x ∈ S`
-has a neighbourhood whose intersection with `S` carries normal convergence.
+**Local normal convergence of a series of functions on a set.** Let $X$ be a topological
+space and $E$ a seminormed additive commutative group. A series of functions
+$f_n \colon X \to E$ ($n \in \mathbb{N}$) converges locally normally on a set $S \subseteq X$ when
+every $x \in S$ has a neighbourhood $U$ such that the series converges normally on $U \cap S$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Converges Normally On](converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](converges-normally-on.md)
 
 ## Sources
 

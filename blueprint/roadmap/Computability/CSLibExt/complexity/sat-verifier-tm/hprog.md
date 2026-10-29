@@ -51,7 +51,7 @@ halts.
 - [Stack embedding of the clause-length filter into the host](emb-f.md)
 - [Stack embedding of the tokenizer into the host](emb-t.md)
 - [The embedded lookup program](lk-h.md)
-- [Stacks emptied by the cleanup](work-ks.md)
+- [Stacks emptied by the SAT verifier's cleanup](work-ks.md)
 - [Driver labels in the SAT host](c.md)
 - [Filter exits in the SAT verifier host](f.md)
 - [Tokenizer labels in the host machine](t.md)

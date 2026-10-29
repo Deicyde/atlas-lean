@@ -13,7 +13,7 @@ $t \mapsto (\cos t, \sin t, 0)$: the unit circle centred at the origin in the $x
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ clause true.
 ## Depends on
 
 - [Formulas of the random 3-SAT model](formula.md)
-- [Satisfiable](satisfiable.md)
+- [Satisfiable 3-SAT formulas](satisfiable.md)
 - [CNF formula of a random 3-SAT formula](to-cnf.md)
 - [Satisfiability of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
@@ -29,9 +29,9 @@ clause true.
 - [Extension of an assignment by false](extend-assign.md)
 - [CNF clause of a random 3-SAT clause](to-cnfclause.md)
 - [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Satisfaction of a literal](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 - [Satisfiability means having a satisfying assignment](../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 

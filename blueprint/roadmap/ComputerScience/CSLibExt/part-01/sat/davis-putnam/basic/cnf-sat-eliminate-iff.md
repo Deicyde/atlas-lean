@@ -20,7 +20,7 @@ only if $\varphi$ is satisfiable.
 
 ## Proof depends on
 
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Completeness of a Davis-Putnam step](exists-satisfies-update-of-satisfies-eli.md)
 - [Soundness of a Davis-Putnam step](satisfies-eliminate.md)
 - [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)

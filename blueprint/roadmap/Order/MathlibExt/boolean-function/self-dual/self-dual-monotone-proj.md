@@ -14,7 +14,7 @@ projection $x \mapsto x_i$ on $\{0,1\}^n$ is a self-dual monotone Boolean functi
 
 ## Depends on
 
-- [Is Self Dual Monotone](is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
 
 ## Proof depends on
 

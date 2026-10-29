@@ -17,7 +17,7 @@ every fuel bound $k$, the augmenting-path iteration started at $f$ with fuel $k$
 ## Depends on
 
 - [Flow](flow.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 - [Augmenting-path iteration with fuel](run.md)
 - [Shortest path via breadth-first search](shortest-path.md)
 

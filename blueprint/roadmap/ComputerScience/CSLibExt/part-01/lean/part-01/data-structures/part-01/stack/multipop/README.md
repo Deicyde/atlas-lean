@@ -5,7 +5,7 @@ navigation: module
 # Multipop
 
 - [MULTIPOP](multipop.md)
-- [Multipop ret](multipop-ret.md)
+- [Result of MULTIPOP](multipop-ret.md)
 - [Cost of MULTIPOP](multipop-time.md)
 - [MULTIPOP with an integer count](multipop-signed.md)
 - [MULTIPOP with a nonpositive count does nothing](multipop-signed-of-nonpos.md)

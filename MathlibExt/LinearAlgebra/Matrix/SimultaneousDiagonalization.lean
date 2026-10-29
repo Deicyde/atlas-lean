@@ -39,7 +39,11 @@ private theorem simulDiag_isSymm_congr {S : Matrix n n ℝ} (Q : Matrix n n ℝ)
   simpa using (Matrix.isHermitian_conjTranspose_mul_mul Q
     (Matrix.isHermitian_iff_isSymm.mpr hS)).isSymm
 
-/-- A real positive-definite matrix is congruent to the identity by an invertible matrix. -/
+/-- **Positive-definite matrices are congruent to the identity.** Let $P$ be a real square matrix
+with rows and columns indexed by a finite set, and suppose $P$ is positive definite: $P$ is
+symmetric and $x^{\mathsf{T}} P x > 0$ for every nonzero real vector $x$. Then there is an
+invertible real matrix $Q$ of the same size such that $Q^{\mathsf{T}} P Q = I$, where $I$ is the
+identity matrix. -/
 theorem _root_.Matrix.PosDef.exists_isUnit_transpose_mul_mul_eq_one
     {P : Matrix n n ℝ} (hP : P.PosDef) :
     ∃ Q : Matrix n n ℝ, IsUnit Q ∧ Matrix.transpose Q * P * Q = 1 := by

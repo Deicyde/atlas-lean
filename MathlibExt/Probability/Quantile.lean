@@ -77,8 +77,9 @@ theorem cdfQuantile_mem (μ : Measure ℝ) {u : ℝ} (hu : u ∈ Ioo (0 : ℝ) 1
     exact habove x hx
   simpa only [cdfQuantile, hu, ite_true] using ge_of_tendsto hright hev
 
-/-- For `u ∈ (0, 1)`, the generalized inverse is at most `x` exactly when
-the cdf at `x` is at least `u`. -/
+/-- **The quantile function as a generalized inverse of the cdf.** Let $\mu$ be a measure on
+$\mathbb{R}$ with cumulative distribution function $F_\mu$ and quantile function $Q_\mu$. For
+every $u \in (0, 1)$ and every real $x$, $Q_\mu(u) \le x$ if and only if $u \le F_\mu(x)$. -/
 theorem cdfQuantile_le_iff (μ : Measure ℝ) {u : ℝ} (hu : u ∈ Ioo (0 : ℝ) 1)
     {x : ℝ} : cdfQuantile μ u ≤ x ↔ u ≤ cdf μ x := by
   have hmem := cdfQuantile_mem μ hu

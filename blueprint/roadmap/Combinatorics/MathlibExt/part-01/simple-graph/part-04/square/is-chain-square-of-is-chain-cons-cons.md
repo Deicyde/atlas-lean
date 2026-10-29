@@ -16,7 +16,7 @@ consecutive vertices are adjacent in the square of $G$.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Sources
 

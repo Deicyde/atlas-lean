@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.smith2024UpperBound_wanted
 ---
 
-# Smith's upper bound for the Schur–Siegel–Smyth constant
+# Smith's upper bound for the Schur–Siegel–Smyth trace constant
 
-**Smith's upper bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth trace
-constant $C_{86}$, an extended real number, satisfies $C_{86} < 1.89831$.
+**Smith's upper bound for the Schur–Siegel–Smyth trace constant.** The
+Schur–Siegel–Smyth trace constant $C_{86}$, an extended real number, satisfies
+$C_{86} < 1.89831$.
 
 ## Depends on
 

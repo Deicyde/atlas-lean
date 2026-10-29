@@ -20,7 +20,7 @@ This is Theorem 7.1 of the source.
 ## Depends on
 
 - [Bianchi group](bianchi-group.md)
-- [Profinitely Rigid](profinitely-rigid.md)
+- [Profinitely rigid group](profinitely-rigid.md)
 - [Ring of integers of a field obtained by adjoining a square root to $\mathbb{Q}$](ring-of-integers.md)
 
 ## Sources

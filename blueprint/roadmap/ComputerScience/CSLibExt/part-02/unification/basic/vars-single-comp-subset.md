@@ -21,8 +21,8 @@ variable of $\sigma(x)$ is $x$, occurs in $e_1$ or $e_2$, or lies in $V(E)$.
 
 - [Lists of equations](equations.md)
 - [Substitution](subst.md)
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Variables of a term](vars.md)
 - [Variables of a list of equations](eq-vars.md)

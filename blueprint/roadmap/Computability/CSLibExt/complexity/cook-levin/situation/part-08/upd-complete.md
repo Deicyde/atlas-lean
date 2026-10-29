@@ -41,7 +41,7 @@ configuration, by the agreement of the tables with the machine's step.
 - [Index of a label/state variable](../../family/x-idx.md)
 - [Cell code of a configuration](../part-03/cell.md)
 - [Label-and-state code of a configuration](../part-03/code.md)
-- [D3Fam families (update, S-def), completeness](fam-complete.md)
+- [Transition families with a run-literal head are satisfied by the run](fam-complete.md)
 - [Position of a situation's variable](../part-01/sa.md)
 - [Situation index of a configuration](../part-03/sit-idx.md)
 - [The table-driven row update](../part-03/tab-row.md)

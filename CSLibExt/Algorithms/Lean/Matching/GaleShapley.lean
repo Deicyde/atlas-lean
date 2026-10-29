@@ -718,10 +718,17 @@ theorem exists_toOrder_eq (T : MathlibExt.Order.StrictTotalOrder (Fin n)) :
   simp only [Equiv.symm_symm]
   exact orderRank_lt_iff
 
-/-- **The algorithm serves every MathlibExt preference profile on `Fin n`**: there are rankings
-`σ, τ` presenting `mp'` and `wp'` (`mprefs σ = mp'`, `wprefs τ = wp'`), and the Gale-Shapley
-matching of those rankings is stable for `mp'` and `wp'` and proposer-optimal among all of their
-stable matchings. -/
+/-- **Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers.** Let
+the $n$ proposers and the $n$ receivers both be numbered $0, \dots, n-1$. Let each proposer $m$
+have a strict total order $<_m$ of preference on the receivers and each receiver $w$ a strict
+total order $<_w$ of preference on the proposers, where $x <_m y$ means that $m$ prefers $x$ to
+$y$, and likewise for $<_w$. Then there are permutations $\sigma_m$ (one for each proposer $m$)
+and $\tau_w$ (one for each receiver $w$) of $\{0, \dots, n-1\}$, read as rankings, such that
+$w <_m w'$ exactly when $\sigma_m^{-1}(w) < \sigma_m^{-1}(w')$ and $a <_w b$ exactly when
+$\tau_w^{-1}(a) < \tau_w^{-1}(b)$, and the Gale-Shapley matching $\mu$ of the rankings $\sigma$
+and $\tau$ is stable for these preferences and proposer-optimal: for every perfect matching $\nu$
+that is stable for these preferences and every proposer $m$, it is not the case that
+$\nu(m) <_m \mu(m)$. -/
 theorem exists_rankings_gsMatching (mp' : MPrefs (Fin n) (Fin n)) (wp' : WPrefs (Fin n) (Fin n)) :
     ∃ σ τ : Fin n → Equiv.Perm (Fin n), mprefs σ = mp' ∧ wprefs τ = wp' ∧
       IsStable mp' wp' (gsMatching σ τ) ∧

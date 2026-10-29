@@ -14,7 +14,7 @@ For example, its subsequence $033$ is order-isomorphic to $011$.
 
 ## Depends on
 
-- [Pattern containment](contains-pattern.md)
+- [Pattern containment in words](contains-pattern.md)
 
 ## Sources
 

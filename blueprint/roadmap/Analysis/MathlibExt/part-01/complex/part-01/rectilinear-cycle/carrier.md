@@ -16,7 +16,7 @@ $\operatorname{Im} z$ and $\operatorname{Im} w$.
 
 ## Depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

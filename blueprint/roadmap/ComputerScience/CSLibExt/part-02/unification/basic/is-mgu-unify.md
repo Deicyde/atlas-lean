@@ -21,7 +21,7 @@ general unifier of $E$.
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Unifier of a list of equations](unifies.md)
 - [Soundness of unification](unifies-unify.md)
 - [Most generality of unification](unify-eq-some-comp.md)

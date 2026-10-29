@@ -14,7 +14,7 @@ $x$ by $t$ and fixes every other variable, leaves $t$ unchanged.
 
 ## Depends on
 
-- [Single-variable substitution](single.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Applying a substitution to a term](subst-2.md)
 - [Variables of a term](vars.md)

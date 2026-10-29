@@ -19,7 +19,7 @@ against ElGamal is at most $\varepsilon$.
 - [ElGamal eavesdropping adversary](adversary.md)
 - [Advantage of a DDH distinguisher](ddh-advantage.md)
 - [Eavesdropping advantage against ElGamal](eav-advantage.md)
-- [Reduction](reduction.md)
+- [DDH distinguisher from an ElGamal eavesdropper](reduction.md)
 
 ## Proof depends on
 

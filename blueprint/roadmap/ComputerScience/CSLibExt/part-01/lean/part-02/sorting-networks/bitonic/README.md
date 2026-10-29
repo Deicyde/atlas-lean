@@ -7,7 +7,7 @@ navigation: module
 ## Comparators on `ℕ`-indexed wires
 
 - [Comparator on natural-number-indexed wires](cmp.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 - [Comparators within an interval](within.md)
 - [Locality of comparator networks](run-n-of-not-mem.md)
 - [Constant blocks stay constant](run-n-const.md)

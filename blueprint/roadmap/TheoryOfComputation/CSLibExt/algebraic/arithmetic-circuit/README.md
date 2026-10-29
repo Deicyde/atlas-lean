@@ -11,7 +11,7 @@ navigation: module
 - [Arithmetic gate](arithmetic-gate.md)
 - [Arithmetic circuit](arithmetic-circuit.md)
 - [Operand evaluation](evaluate.md)
-- [Evaluate](evaluate-2.md)
+- [Gate evaluation](evaluate-2.md)
 
 ## Arithmetic Circuit
 

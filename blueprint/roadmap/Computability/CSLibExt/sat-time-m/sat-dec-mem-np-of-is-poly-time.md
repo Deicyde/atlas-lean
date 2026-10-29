@@ -36,7 +36,7 @@ decoding of the input uncharged.
 
 ## Proof depends on
 
-- [Sat Verifier verifies](sat-verifier-verifies.md)
+- [The SAT verifier verifies SAT](sat-verifier-verifies.md)
 - [A timed verifier with polynomial-time output function puts its language in NP](../time-mcomplexity/mem-np-of-verifies.md)
 
 ## Sources

@@ -30,11 +30,12 @@ def HasTangentLineAt (γ : ℝ → EuclideanSpace ℝ (Fin 3)) (t : ℝ) : Prop 
       0 < |s - t| → |s - t| < δ →
       ‖(γ s - γ t) - ⟪γ s - γ t, v⟫_ℝ • v‖ ≤ ε * ‖γ s - γ t‖
 
-/-- Fréchet's Problem 117 from the Scottish Book: every Jordan curve in
-`ℝ³` with an (oriented) tangent at every point admits a parametric
-representation whose coordinate functions are differentiable in the
-parameter and whose three coordinate derivatives never vanish
-simultaneously. -/
+/-- **The claim of Fréchet's Problem 117.** The claim of Fréchet's Problem 117 from the Scottish
+Book is the statement that for every $1$-periodic continuous map
+$\gamma : \mathbb{R} \to \mathbb{R}^3$ that is injective on $[0, 1)$ and has a tangent line at
+every $t \in \mathbb{R}$, there is a $1$-periodic continuous map
+$p : \mathbb{R} \to \mathbb{R}^3$ that is injective on $[0, 1)$, has the same image as $\gamma$,
+and is differentiable at every $t \in \mathbb{R}$ with $p'(t) \ne 0$. -/
 def ScottishBookProblem117Claim : Prop :=
   ∀ γ : ℝ → EuclideanSpace ℝ (Fin 3),
     (∀ t, γ (t + 1) = γ t) →

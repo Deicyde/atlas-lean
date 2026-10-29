@@ -24,7 +24,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Quantile function of a real measure](quantile/cdf-quantile.md)
-- [Cdf Quantile le iff](quantile/cdf-quantile-le-iff.md)
+- [The quantile function as a generalized inverse of the cdf](quantile/cdf-quantile-le-iff.md)
 - [Monotonicity of the quantile function](quantile/cdf-quantile-mono-on.md)
 - [Inverse transform sampling](quantile/map-cdf-quantile-restrict-icc.md)
 - [Measurability of the quantile function](quantile/measurable-cdf-quantile.md)

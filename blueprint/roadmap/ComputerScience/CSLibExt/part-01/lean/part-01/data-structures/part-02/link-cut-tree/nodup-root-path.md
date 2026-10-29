@@ -16,7 +16,7 @@ $p$ has no repeated vertex.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Root-to-vertex path](root-path.md)
 
 ## Proof depends on

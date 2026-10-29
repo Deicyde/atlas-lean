@@ -15,7 +15,7 @@ by $acc$.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Leaf list of a segment tree](to-list.md)
 - [Accumulator traversal of a segment tree](to-list-aux.md)
 

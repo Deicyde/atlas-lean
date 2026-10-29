@@ -5,7 +5,7 @@ navigation: module
 # Unified Catalan Type Polynomials
 
 - [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
-- [Constant Coeff trinomial Neg Pow Series](constant-coeff-trinomial-neg-pow-series.md)
+- [Constant term of the trinomial series](constant-coeff-trinomial-neg-pow-series.md)
 - [The trinomial series at exponent one](trinomial-neg-pow-series-neg-one.md)
 - [Kampé de Fériet polynomials](kampe-de-feriet-hermite.md)
 - [The zeroth Kampé de Fériet polynomial](kampe-de-feriet-hermite-zero.md)

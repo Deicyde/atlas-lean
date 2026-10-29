@@ -5,7 +5,7 @@ navigation: module
 # Cartesian Tree
 
 - [Min-heap ordered binary tree](heap-ordered.md)
-- [Root key of a binary tree](root.md)
+- [Optional root key of a binary tree](root.md)
 - [A predicate holds on every key iff it holds along the inorder traversal](all-iff-forall-inorder.md)
 - [The root of a binary tree is one of its keys](mem-of-root-eq-some.md)
 - [The root of a heap-ordered tree is below every key](root-le-of-heap-ordered.md)

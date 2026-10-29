@@ -28,7 +28,7 @@ the language it denotes is infinite is decidable by a multi-stack machine.
 - [Flags of a concatenation](comp-flags.md)
 - [Flags of all nodes](flags.md)
 - [Correctness of the flag pass](flags-ok-flags.md)
-- [Infiniteness test](infinite-b.md)
+- [Infiniteness test for encoded regular expressions](infinite-b.md)
 - [Node at an index](node.md)
 - [Flags of a sum](plus-flags.md)
 - [Regular expression at a node](regex-at.md)

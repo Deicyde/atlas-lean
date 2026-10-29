@@ -24,9 +24,9 @@ the Horn satisfiability test returns true on $\varphi$ if and only if $\varphi$ 
 - [Boolean formula satisfaction check](../../dpll/solver/formula-satisfied.md)
 - [Least model candidate](least-model.md)
 - [Horn satisfiability via the least model](satisfies-least-model-iff.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ that machine halts, runs the single-tape emulation of $M$.
 ## Proof depends on
 
 - [The bottom cell of the start tape](bot-cell.md)
-- [Single-tape emulation of a multi-stack machine](emu-tm.md)
+- [Finite single-tape emulation of a multi-stack machine](emu-tm.md)
 - [The machine that prepends a symbol](cons-computer.md)
 
 ## Sources

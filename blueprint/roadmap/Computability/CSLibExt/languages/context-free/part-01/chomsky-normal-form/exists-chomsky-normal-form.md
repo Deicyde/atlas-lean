@@ -19,7 +19,7 @@ context-free grammar in Chomsky normal form that generates the same language as 
 
 - [Reduced grammars](../reduced/is-reduced.md)
 - [Unit output](../reduced/is-unit-output.md)
-- [Cnf Grammar](cnf-grammar.md)
+- [Binarization of a grammar](cnf-grammar.md)
 - [Binarization of a reduced grammar is in Chomsky normal form](cnf-grammar-is-chomsky-normal-form.md)
 - [Binarization preserves the language](cnf-grammar-language-of-reduced.md)
 - [Binarization has no empty productions](cnf-grammar-output-ne-nil.md)

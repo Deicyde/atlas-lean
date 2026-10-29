@@ -10,5 +10,5 @@ navigation: module
 - [Yield through one production](yields-of-rule.md)
 - [Yields are derivable](derives-of-yields.md)
 - [Derivable terminal words are yields](yields-of-derives.md)
-- [Yields iff derives](yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](yields-iff-derives.md)
 - [Language membership through yields](mem-language-iff-yields.md)

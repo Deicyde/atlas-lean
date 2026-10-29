@@ -13,7 +13,7 @@ the same list in $S'$ as in $S$.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources

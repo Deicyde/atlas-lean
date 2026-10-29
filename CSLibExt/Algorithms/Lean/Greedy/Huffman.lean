@@ -57,8 +57,8 @@ def HuffmanTree.weightedLeaves {α : Type u} : HuffmanTree α → List (α × Na
   | .leaf symbol weight => [(symbol, weight)]
   | .fork left right => left.weightedLeaves ++ right.weightedLeaves
 
-/-- **Leaf symbols of a Huffman tree.** The list of the symbols at the leaves of a Huffman tree,
-read from left to right, with one entry per leaf. -/
+/-- **List of leaf symbols of a Huffman tree.** The list of the symbols at the leaves of a
+Huffman tree, read from left to right, with one entry per leaf. -/
 def HuffmanTree.symbols {α : Type u} (tree : HuffmanTree α) : List α :=
   tree.weightedLeaves.map Prod.fst
 
@@ -254,9 +254,9 @@ def HuffmanTree.encode? {α : Type u} [DecidableEq α] (tree : HuffmanTree α) :
       let suffix ← tree.encode? message
       pure (code ++ suffix)
 
-/-- **Leaf symbols of a Huffman tree.** For a Huffman tree $T$ over an alphabet $\alpha$, the type
-of leaf symbols of $T$ is the subtype of those $a \in \alpha$ that occur in the list of symbols
-of $T$. -/
+/-- **Type of leaf symbols of a Huffman tree.** For a Huffman tree $T$ over an alphabet
+$\alpha$, the type of leaf symbols of $T$ is the subtype of those $a \in \alpha$ that occur in
+the list of leaf symbols of $T$. -/
 abbrev HuffmanTree.LeafSymbol {α : Type u} (tree : HuffmanTree α) :=
   {symbol : α // symbol ∈ tree.symbols}
 

@@ -19,7 +19,7 @@ optimal global score.
 
 - [Alignment](alignment.md)
 - [Valid alignment of two sequences](is-alignment.md)
-- [Alignment Score](alignment-score.md)
+- [Score of an alignment](alignment-score.md)
 - [Needleman–Wunsch is optimal](alignment-score-le-nw-score.md)
 - [Reversal preserves alignment score](alignment-score-reverse.md)
 - [Needleman–Wunsch is attained](exists-alignment-score-eq-nw-score.md)

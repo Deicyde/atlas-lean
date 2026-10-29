@@ -27,7 +27,7 @@ $\mathsf{rej}$ within $2|x| + 2$ steps.
 
 ## Proof depends on
 
-- [Rejection within a step bound](rej.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
 - [Tokenizer rejects undecodable clauses](clauses-fail.md)
 - [Tokenizer run on all clauses](clauses-run.md)
 - [One step to rejection](rej-one.md)

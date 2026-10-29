@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Bridge schedules](is-bridge-schedule.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

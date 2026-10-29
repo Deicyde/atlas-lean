@@ -18,7 +18,7 @@ permutation of the concatenated vertex list of $f$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Tree of a forest containing a vertex](find-tree.md)
 - [Removing the trees that contain a vertex](remove-tree.md)
 

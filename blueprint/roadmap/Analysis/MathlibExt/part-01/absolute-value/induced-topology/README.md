@@ -5,5 +5,5 @@ navigation: module
 
 # Induced Topology
 
-- [Induced Topology](induced-topology.md)
+- [Topology induced by an absolute value](induced-topology.md)
 - [Absolute values inducing the same topology are equivalent](induced-topology-eq-iff-is-equiv.md)

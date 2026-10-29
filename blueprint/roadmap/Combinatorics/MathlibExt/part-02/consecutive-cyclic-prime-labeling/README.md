@@ -5,10 +5,10 @@ navigation: module
 
 # Consecutive Cyclic Prime Labeling
 
-- [Cyclic Label](cyclic-label.md)
+- [Cyclic labeling of the ladder perimeter](cyclic-label.md)
 - [Adjacency in the ladder graph](ladder-adj.md)
-- [Is Consecutive Cyclic Prime Labeling](is-consecutive-cyclic-prime-labeling.md)
+- [Consecutive cyclic prime labeling of the ladder](is-consecutive-cyclic-prime-labeling.md)
 - [Cyclic labels are positive](cyclic-label-pos.md)
 - [Cyclic labels do not exceed the number of vertices](cyclic-label-le-size.md)
 - [Range of the cyclic labels](cyclic-label-mem-range.md)
-- [Cyclic Label zero offset zero](cyclic-label-zero-offset-zero.md)
+- [The cyclic label of the first position with offset zero](cyclic-label-zero-offset-zero.md)

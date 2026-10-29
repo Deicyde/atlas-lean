@@ -26,7 +26,7 @@ $\Gamma_0$ accepts, by empty stack, exactly the same language as $M$.
 - [Multi-step computation of a pushdown automaton](derives.md)
 - [Computations inside a closed set lift to the restriction](derives-restrict-of-derives.md)
 - [Computations of the restriction are computations of the automaton](derives-val-of-derives-restrict.md)
-- [Initial configuration](init-config.md)
+- [Initial configuration of a pushdown automaton](init-config.md)
 - [Lifting a stack to a set of stack symbols](lift-stack.md)
 - [Computations stay inside a closed set of stack symbols](stack-subset-of-derives.md)
 

@@ -56,8 +56,8 @@ Source: concept `jis_sem_4970e15c0be600988a8749e5`; statements
 public def IsInfiniteSquareFreeWord {α : Type*} (u : Nat → α) : Prop :=
   ∀ i k : Nat, 0 < k → ∃ j, j < k ∧ u (i + j) ≠ u (i + k + j)
 
-/-- **The ternary alphabet.** The ternary alphabet is the set $\{0, 1, 2\}$ of natural numbers less
-than $3$; its three letters play the role of $a$, $b$ and $c$.
+/-- **The ternary alphabet for square-free words.** The ternary alphabet is the set $\{0, 1, 2\}$
+of natural numbers less than $3$; its three letters play the role of $a$, $b$ and $c$.
 
 Source: concept `jis_sem_4970e15c0be600988a8749e5`; statements
 `jis_7f73597782f1028e81df5432`, `jis_81478fffd0e6a2a59cc243c2`,

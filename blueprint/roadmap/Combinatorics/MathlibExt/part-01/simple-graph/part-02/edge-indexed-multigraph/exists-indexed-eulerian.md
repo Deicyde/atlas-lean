@@ -27,7 +27,7 @@ once.
 
 - [Euler circuits in connected even graphs](../euler-circuit/exists-is-eulerian.md)
 - [Incidence](inc.md)
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Edge list of an indexed walk](edges.md)
 - [Incidence is membership in the endpoint pair](inc-iff.md)
 - [Adjacency in the underlying graph](underlying-adj.md)

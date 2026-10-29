@@ -26,7 +26,7 @@ The second is the return value of the SAT verifier on $(x, w)$.
 
 - [Clause check against an occurrence table](../sat-verifier-spec/check-spec.md)
 - [Occurrence table of a formula and a witness](../sat-verifier-spec/ents.md)
-- [Sat Verifier ret eq](../sat-verifier-spec/sat-verifier-ret-eq.md)
+- [The SAT verifier's answer through the occurrence table](../sat-verifier-spec/sat-verifier-ret-eq.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ and either $a = F_{k-1}$ or $a = F_{k-2}$.
 
 ## Depends on
 
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources

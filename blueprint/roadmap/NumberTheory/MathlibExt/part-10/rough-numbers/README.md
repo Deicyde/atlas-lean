@@ -18,4 +18,4 @@ navigation: module
 - [Products of rough numbers are rough](mul.md)
 - [Roughness is antitone in the bound](of-le.md)
 - [Only $1$ is rough and smooth at the same bound](eq-one-of-mem-smooth-numbers.md)
-- [Mem rough Numbers Up To](mem-rough-numbers-up-to.md)
+- [Rough numbers other than $1$ lie in Mathlib's rough numbers up to a bound](mem-rough-numbers-up-to.md)

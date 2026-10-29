@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lunar Unit](lunar-unit.md)
+- [Lunar unit](lunar-unit.md)
 - [Max-min product](max-min-mul.md)
 
 ## Sources

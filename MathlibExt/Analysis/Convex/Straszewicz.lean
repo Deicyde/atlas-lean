@@ -1125,8 +1125,9 @@ end GateauxExposed
 
 section StraszewiczMain
 
-/-- Straszewicz's theorem: every extreme point of a compact convex set in finite
-dimensions lies in the closure of the exposed points. -/
+/-- **Straszewicz's theorem.** Let $E$ be a finite-dimensional real normed space and let
+$A \subseteq E$ be a compact convex set. Then every extreme point of $A$ lies in the closure of
+the set of exposed points of $A$. -/
 theorem straszewicz_theorem {A : Set E} (hA_compact : IsCompact A)
     (hA_convex : Convex ℝ A) :
     A.extremePoints ℝ ⊆ closure (A.exposedPoints ℝ) := by

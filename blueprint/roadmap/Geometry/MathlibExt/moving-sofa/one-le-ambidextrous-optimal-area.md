@@ -21,7 +21,7 @@ The unit square $[0, 1] \times [0, 1]$ is an ambidextrous sofa of area $1$.
 
 - [Ambidextrous sofa shapes](is-ambidextrous-sofa.md)
 - [The unit square has area one](square-area.md)
-- [Square is Ambidextrous Sofa](square-is-ambidextrous-sofa.md)
+- [The unit square is an ambidextrous sofa](square-is-ambidextrous-sofa.md)
 - [Unit square](unit-square.md)
 
 ## Sources

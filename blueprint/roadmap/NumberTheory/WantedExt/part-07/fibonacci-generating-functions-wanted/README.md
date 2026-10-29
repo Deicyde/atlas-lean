@@ -9,7 +9,7 @@ navigation: module
 - [Value of the Gibonacci generating function at one](gibonacci-generating-value-one.md)
 - [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 - [Zero is good for every pair](is-gibonacci-good-zero.md)
-- [Is Gibonacci Good one](is-gibonacci-good-one.md)
+- [One is good for every pair](is-gibonacci-good-one.md)
 - [Generating series of a Gibonacci sequence](gibonacci-power-series-mul.md)
 - [Goodness passes to two transformed fractions](is-gibonacci-good-transform.md)
 - [Congruence criterion for good fractions](is-gibonacci-good-iff.md)

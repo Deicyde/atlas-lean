@@ -14,11 +14,11 @@ convention.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for the Umlaufsatz](plane.md)
 
 ## Proof depends on
 
-- [Planar determinant](det2.md)
+- [Planar determinant for the Umlaufsatz](det2.md)
 - [Parameter period for the Umlaufsatz](period.md)
 - [Velocity of a plane curve](velocity.md)
 

@@ -21,7 +21,7 @@ contains a literal satisfied by $v$ and a literal not satisfied by $v$.
 
 - [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Satisfaction of a literal](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources

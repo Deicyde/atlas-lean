@@ -20,7 +20,7 @@ followed by the chosen-flag pairs of $s$.
 ## Proof depends on
 
 - [Reading a list at every index](map-get-d-range.md)
-- [Pairs succ](pairs-succ.md)
+- [Vertex pairs in encoding order for one more vertex](pairs-succ.md)
 - [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources

@@ -19,7 +19,7 @@ $F_m(x)$, top first.
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Reduction computed in each mode](f.md)
 - [The KG-map machine](prog.md)
@@ -31,7 +31,7 @@ $F_m(x)$, top first.
 ## Proof depends on
 
 - [Pair-bit transform of each mode](fb.md)
-- [Next](next.md)
+- [Label after the move phase of the KG-map machine](next.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [Moving the pair bits onto stack $Y$](mv-run.md)
 - [Output phase of the KG-map machine](out-run.md)

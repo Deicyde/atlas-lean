@@ -577,7 +577,11 @@ public theorem lookup_insert {α : Type u} {β : Type v} [LinearOrder α]
   rw [lookup_eq_abstraction]
   exact abstraction_lookup_insert key value requestedHeight list.entries
 
-/-- Insertion leaves lookup of every distinct key unchanged. -/
+/-- **Skip-list insertion does not change lookup of other keys.** Let $\alpha$ be a linearly
+ordered type. For every skip list $S$ with keys in $\alpha$ and values in $\beta$, all keys $k$
+and $k'$ in $\alpha$ with $k' \ne k$, every value $v \in \beta$ and every requested height
+$h \in \mathbb{N}$, looking up $k'$ in the skip list obtained by inserting $k$ with value $v$ and
+requested height $h$ into $S$ gives the same result as looking up $k'$ in $S$. -/
 public theorem lookup_insert_of_ne {α : Type u} {β : Type v} [LinearOrder α]
     (key other : α) (value : β) (requestedHeight : Nat) (list : SkipList α β)
     (different : other ≠ key) :

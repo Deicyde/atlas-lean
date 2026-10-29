@@ -12,7 +12,7 @@ navigation: module
 - [Error position of a syndrome](error-pos.md)
 - [Syndrome table of the Hamming (7,4) code](table.md)
 - [Syndrome decoder of the Hamming code](decode.md)
-- [Error Pos syndrome single](error-pos-syndrome-single.md)
+- [The syndrome of a single-bit error locates it](error-pos-syndrome-single.md)
 - [The Hamming decoder's syndrome table is correct](is-syndrome-table-table.md)
 
 ## The code

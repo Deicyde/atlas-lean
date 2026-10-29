@@ -15,7 +15,7 @@ product and $\lVert \cdot \rVert$ is the Euclidean norm; the quotient is $0$ whe
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Proof depends on
 

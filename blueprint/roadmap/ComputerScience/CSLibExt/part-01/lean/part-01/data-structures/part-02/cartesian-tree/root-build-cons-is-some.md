@@ -15,7 +15,7 @@ linearly ordered type, the Cartesian tree of $xs$ has a root key $m$.
 ## Depends on
 
 - [Cartesian tree of a list](build.md)
-- [Root key of a binary tree](root.md)
+- [Optional root key of a binary tree](root.md)
 
 ## Proof depends on
 

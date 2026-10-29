@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook151Wanted.harmonicFunctionVanishesOnCubeEdges
 ---
 
-# Harmonic Function Vanishes On Cube Edges
+# Scottish Book Problem 151: a harmonic function vanishing on the edges of a cube
 
-There is a nonzero harmonic function, defined in a region containing a cube
-in its interior, which vanishes on all the edges of the cube. The function
-is harmonic on an open region `U` whose interior contains the cube
-`[-1, 1]³`, vanishes on every point of the cube's edges, and is nonzero
-somewhere in `U`.
+**Scottish Book Problem 151: a harmonic function vanishing on the edges of a cube.** There
+exist an open set $U \subseteq \mathbb{R}^3$ whose interior contains the closed cube
+$[-1, 1]^3$ and a function $f : \mathbb{R}^3 \to \mathbb{R}$ that is harmonic at every point of
+$U$, vanishes at every point of the edges of the cube $[-1, 1]^3$, and satisfies $f(x) \neq 0$
+for some $x \in U$.
 
 ## Depends on
 

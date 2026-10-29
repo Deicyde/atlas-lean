@@ -38,7 +38,7 @@ booleans.
 
 ## Proof depends on
 
-- [Computable](../encoding-converters/computable-2.md)
+- [Polynomial-time decoder of the canonical bit-list encoding](../encoding-converters/computable-2.md)
 - [Reduction host](reduction.md)
 - [Polynomial-time TM2-computable functions are closed under composition](../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 

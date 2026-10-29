@@ -15,7 +15,7 @@ $\prod_{P \in \operatorname{supp} D} f(P)^{D(P)}$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 
 ## Sources
 

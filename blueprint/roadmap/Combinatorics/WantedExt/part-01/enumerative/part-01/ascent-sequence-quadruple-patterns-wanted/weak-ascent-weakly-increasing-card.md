@@ -16,7 +16,7 @@ At $n = 0$ both counts are $1$, from the empty sequence.
 
 ## Depends on
 
-- [Pattern containment](contains-pattern.md)
+- [Pattern containment in words](contains-pattern.md)
 - [Weak ascent sequence](is-weak-ascent-seq.md)
 - [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 

@@ -25,7 +25,7 @@ binding of $k$.
 
 - [Hash table lookup](lookup.md)
 - [Lookup agrees with the abstraction](lookup-abstraction.md)
-- [Lookup after insertion](lookup-insert.md)
+- [Hash table lookup after insertion](lookup-insert.md)
 - [Insertion does not affect other keys](lookup-insert-of-ne.md)
 - [Insertion preserves validity of a hash table](valid-insert.md)
 

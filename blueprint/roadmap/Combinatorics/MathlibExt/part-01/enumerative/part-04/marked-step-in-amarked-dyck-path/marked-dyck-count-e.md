@@ -6,10 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.markedDyckCountE
 ---
 
-# Number of horizontal steps
+# Number of horizontal steps in a marked Dyck step sequence
 
-**Number of horizontal steps.** For a finite sequence $P$ of marked Dyck steps, $E(P)$ is the
-number of horizontal steps $E$ in $P$.
+**Number of horizontal steps in a marked Dyck step sequence.** For a finite sequence $P$ of
+marked Dyck steps, $E(P)$ is the number of horizontal steps $E$ in $P$.
 
 ## Depends on
 

@@ -11,4 +11,4 @@ navigation: module
 - [Nim heap](nim-heap.md)
 - [Equivalence of impartial games](equiv.md)
 - [Recursive characterization of P-positions](is-p-iff.md)
-- [Sprague grundy](sprague-grundy.md)
+- [Sprague–Grundy theorem](sprague-grundy.md)

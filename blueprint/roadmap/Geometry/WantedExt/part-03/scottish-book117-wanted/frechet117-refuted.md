@@ -20,7 +20,7 @@ whenever $0 < |s - t| < \delta$.
 
 ## Depends on
 
-- [Scottish Book Problem117 Claim](scottish-book-problem117-claim.md)
+- [The claim of Fréchet's Problem 117](scottish-book-problem117-claim.md)
 
 ## Sources
 

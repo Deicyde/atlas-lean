@@ -17,7 +17,7 @@ $$\sigma_r\overline{\mathrm{mex}}(n) = \sum_{k \ge 0,\; rT_k \le n} \overline{p}
 
 ## Depends on
 
-- [Overpartition Count](overpartition-count.md)
+- [Number of overpartitions](overpartition-count.md)
 - [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources

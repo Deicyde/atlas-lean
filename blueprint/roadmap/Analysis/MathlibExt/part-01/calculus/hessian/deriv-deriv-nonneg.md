@@ -7,11 +7,12 @@ proof: formalized
 lean: IsLocalMin.deriv_deriv_nonneg
 ---
 
-# Deriv deriv nonneg
+# The second derivative is nonnegative at a local minimum
 
-At a local minimum of a twice continuously differentiable real function, the second
-derivative is nonnegative. This is the necessary direction of the one-variable second derivative
-test.
+**The second derivative is nonnegative at a local minimum.** Let $g : \mathbb{R} \to \mathbb{R}$
+be twice continuously differentiable. If $g$ has a local minimum at $x$, then $g''(x) \ge 0$.
+
+This is the necessary direction of the one-variable second derivative test.
 
 ## Depends on
 

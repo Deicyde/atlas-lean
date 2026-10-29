@@ -15,7 +15,7 @@ succeeds iff $x$ is the code stack of some code.
 
 - [The code stack](../clocked/code-cells.md)
 - [Codes for single-tape machines](../code/code.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Proof depends on
 

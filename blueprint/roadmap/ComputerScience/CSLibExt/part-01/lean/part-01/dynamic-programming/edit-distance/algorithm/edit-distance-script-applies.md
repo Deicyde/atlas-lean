@@ -17,7 +17,7 @@ $s$ and $t$ transforms $s$ into $t$.
 
 - [Edit-distance cost counters](../script/edit-distance-cost.md)
 - [Edit-distance result record](../script/edit-distance-result.md)
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [An edit script transforming one list into another](../script/transforms.md)
 - [Edit distance algorithm](edit-distance.md)
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_twoAdic_oddPart_factorial_limit
 ---
 
-# Exists two Adic odd Part factorial limit
+# A 2-adic limit of the odd parts of $(2^e)!$
 
-There is a 2-adic integer `z` congruent to `od((2^(e-1))!)` modulo `2^e` for
-every `e≥1`.  The paper's limiting equality is represented by divisibility in
-`ℤ_[2]`; the explicit lower bound avoids a truncated exponent in the factorial.
+**A 2-adic limit of the odd parts of $(2^e)!$.** There is a 2-adic integer $z \in \mathbb{Z}_2$
+such that $z \equiv \operatorname{od}((2^{e-1})!) \pmod{2^e}$ in $\mathbb{Z}_2$ for every natural
+number $e \ge 1$, where $\operatorname{od}(n)$ is the odd part of $n$.
 
 ## Depends on
 

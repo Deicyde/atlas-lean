@@ -15,7 +15,7 @@ there is a task that $S$ runs at step $t$ or later.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 - [Length of a schedule](../brent/length.md)
 
 ## Sources

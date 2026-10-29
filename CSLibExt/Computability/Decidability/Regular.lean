@@ -154,8 +154,12 @@ theorem step_mem_reachable {s : σ} (hs : s ∈ M.reachable) (a : α) :
   obtain ⟨w, rfl⟩ := M.mem_reachable_iff.1 hs
   exact M.mem_reachable_iff.2 ⟨w ++ [a], M.eval_append_singleton w a⟩
 
-/-- The reachability search from `S` with at most `n` rounds, stopping as soon as a round adds
-nothing. -/
+/-- **Early-stopping DFA reachability search.** Let $M$ be a DFA over a finite alphabet whose set
+of states has decidable equality. For a natural number $n$ and a finite set $S$ of states of $M$,
+the reachability search from $S$ with at most $n$ rounds returns $S$ when $n = 0$. When
+$n = k + 1$, it returns $S$ if one round of the reachability search for $M$ sends $S$ to $S$
+itself, and otherwise it returns the search from the image of $S$ under that round with at most
+$k$ rounds. -/
 def reachableWithin : ℕ → Finset σ → Finset σ
   | 0, S => S
   | n + 1, S => if M.reachStep S = S then S else reachableWithin n (M.reachStep S)
@@ -446,7 +450,14 @@ theorem mem_reachN_iff {s₀ : ℕ} {next : ℕ → List ℕ} {B : List ℕ} (hs
     | tail _ hst ih =>
         exact hclosed (mem_reachRound.2 ⟨hB _ (hreachB ih) _ hst, Or.inr ⟨_, ih, Or.inr hst⟩⟩)
 
-/-- The reachable states of an encoded DFA. -/
+/-- **Reachable states of an encoded DFA.** For an encoded DFA $D$ over an alphabet $\alpha$ with
+decidable equality, the reachable states of $D$ form the list returned by the bounded reachability
+search on lists of states started at the start state of $D$, kept inside the states of $D$, in
+which the successors of a state $s$ are the states that the transition function of $D$ takes $s$
+to on the letters of $D$, in the order of the letters.
+
+A natural number lies in this list exactly when the automaton denoted by $D$ reaches it from its
+start state on some word. -/
 def reachable (D : EncodedDFA α) : List ℕ :=
   reachN D.start (fun s => D.letters.map (D.step s)) D.states
 
@@ -477,7 +488,11 @@ theorem mem_reachable_iff {D : EncodedDFA α} {t : ℕ} :
 
 /-! ### Emptiness -/
 
-/-- Emptiness test: no reachable state accepts. -/
+/-- **Emptiness test for encoded DFAs.** For an encoded DFA $D$ over an alphabet $\alpha$ with
+decidable equality, the emptiness test is the Boolean that is true exactly when no entry of the
+list of reachable states of $D$ is in the accepting list of $D$.
+
+It returns true exactly when the language of $D$ is empty. -/
 def isEmptyB (D : EncodedDFA α) : Bool :=
   D.reachable.all fun s => !memB D.accept s
 
@@ -572,7 +587,13 @@ theorem mem_pairReachable_iff {D E : EncodedDFA α} {p : ℕ} :
           rw [step_of_not_mem_letters ha.1, step_of_not_mem_letters ha.2]
           exact ih
 
-/-- Equivalence test: every reachable pair of states agrees on acceptance. -/
+/-- **Equivalence test for encoded DFAs.** Let $D$ and $E$ be encoded DFAs over an alphabet
+$\alpha$ with decidable equality. The equivalence test of $D$ and $E$ is the Boolean that is true
+exactly when, for every entry $p$ of the list of reachable pairs of states of $D$ and $E$, writing
+$p = \langle s, t \rangle$ with Mathlib's pairing function, $s$ is in the accepting list of $D$ if
+and only if $t$ is in the accepting list of $E$.
+
+It returns true exactly when $D$ and $E$ have the same language. -/
 def equivB (D E : EncodedDFA α) : Bool :=
   (pairReachable D E).all fun p => memB D.accept p.unpair.1 == memB E.accept p.unpair.2
 
@@ -594,7 +615,11 @@ theorem equivB_iff {D E : EncodedDFA α} : D.equivB E = true ↔ D.language = E.
 
 /-! ### Universality -/
 
-/-- Universality test: every reachable state accepts. -/
+/-- **Universality test for encoded DFAs.** For an encoded DFA $D$ over an alphabet $\alpha$ with
+decidable equality, the universality test is the Boolean that is true exactly when every entry of
+the list of reachable states of $D$ is in the accepting list of $D$.
+
+It returns true exactly when the language of $D$ contains every word over $\alpha$. -/
 def isUnivB (D : EncodedDFA α) : Bool :=
   D.reachable.all fun s => memB D.accept s
 

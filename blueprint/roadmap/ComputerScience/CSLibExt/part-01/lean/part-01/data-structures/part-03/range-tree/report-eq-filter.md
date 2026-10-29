@@ -24,7 +24,7 @@ $[a, b]$ equals the list of leaf values $x$ of $t$ with $a \le x \le b$, in left
 ## Proof depends on
 
 - [Accumulator range report](report-aux.md)
-- [Report Aux eq filter append](report-aux-eq-filter-append.md)
+- [Accumulator range report of a bounds-valid range tree](report-aux-eq-filter-append.md)
 
 ## Sources
 

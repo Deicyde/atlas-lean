@@ -6,9 +6,11 @@ statement: formalized
 lean: NewtonPolygon.newtonPolygonInterior
 ---
 
-# Newton Polygon Interior
+# Interior of the Newton polygon
 
-Interior of the Newton polygon.
+**Interior of the Newton polygon.** For a polynomial $f$ in two variables over a commutative
+semiring $k$, the interior of the Newton polygon of $f$ is its topological interior as a subset
+of $\mathbb{R}^2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Newton Polygon](newton-polygon.md)
+- [Newton polygon](newton-polygon.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ncard_repeating_decimal_ratio_eq_two_pow_omega
 ---
 
-# Ncard repeating decimal ratio eq two pow omega
+# Counting solutions of a repeating-decimal ratio equation
 
-For `n ≥ 1`, the number of `x` with exactly `n + 1` decimal digits for which some natural
-`k` satisfies `x ≤ k < 2x` and `k / x = 1 + (x - 10^n) / (10^n - 1)` (A285273) equals
-`2^ω(10^n - 1)`, where `ω` counts distinct prime factors.
+**Counting solutions of a repeating-decimal ratio equation.** For every natural number
+$n \ge 1$, the number of natural numbers $x$ with $10^n \le x < 10^{n+1}$ for which there is a
+natural number $k$ with $x \le k < 2x$ and $k / x = 1 + (x - 10^n) / (10^n - 1)$, computed in the
+rationals, (OEIS A285273) equals $2^{\omega(10^n - 1)}$, where $\omega(m)$ is the number of
+distinct prime factors of $m$.
 
 ## Depends on
 

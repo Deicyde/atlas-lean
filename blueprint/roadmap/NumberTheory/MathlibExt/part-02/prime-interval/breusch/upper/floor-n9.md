@@ -21,7 +21,7 @@ Then $\lfloor N_9(m, n)/p^j \rfloor$ equals the floor of the real number $9 Q_9 
 ## Proof depends on
 
 - [Exact formula for the scaled factorial argument $N_9$](../lower/n9-eq.md)
-- [Floor of a quotient of natural numbers](int-floor-cast.md)
+- [Integer cast of the floor of a quotient of natural numbers](int-floor-cast.md)
 
 ## Sources
 

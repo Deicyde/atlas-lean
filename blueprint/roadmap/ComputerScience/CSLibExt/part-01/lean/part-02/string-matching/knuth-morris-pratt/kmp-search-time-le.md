@@ -16,7 +16,7 @@ $|t|$ are the lengths of $p$ and $t$.
 
 ## Depends on
 
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Sources
 

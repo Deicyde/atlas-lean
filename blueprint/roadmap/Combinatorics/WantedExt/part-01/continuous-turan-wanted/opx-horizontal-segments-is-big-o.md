@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.opx_horizontal_segments_isBigO
 ---
 
-# Opx horizontal segments is Big O
+# Linear bound for separated horizontal segments
 
-Theorem 4.10: if `P` is a finite union of horizontal segments `[a_i, b_i] × {y_i}` with
-pairwise disjoint `x`-ranges and distinct heights `y_i`, then `opx(n, P) = O(n)`.
+**Linear bound for separated horizontal segments.** Let $k$ be a natural number and let
+$a_i \le b_i$ and $y_i$ be real numbers for $i = 1, \dots, k$, such that the intervals
+$[a_i, b_i]$ are pairwise disjoint and the heights $y_i$ are pairwise distinct, and let
+$P = \bigcup_{i=1}^k [a_i, b_i] \times \{y_i\}$. Then the continuous Turán number satisfies
+$\operatorname{opx}(n, P) = O(n)$ as the real number $n$ tends to infinity.
 
 ## Depends on
 

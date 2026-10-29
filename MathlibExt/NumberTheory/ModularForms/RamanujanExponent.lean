@@ -67,9 +67,12 @@ structure LocalExponentFamily (ι : Type*) where
   exponent_nonneg : ∀ i, 0 ≤ exponent i
   exponent_le_half : ∀ i, exponent i ≤ 1 / 2
 
-/-- The set of exponents occurring in a family, with `0` adjoined. The
-adjoined zero makes the supremum the correct value for an empty family
-and for the tempered case. -/
+/-- **Exponent set of a local-exponent family.** For a local-exponent family $F$ indexed by a type
+$\iota$, with local exponents $m(i)$ for $i \in \iota$, the exponent set of $F$ is the set of real
+numbers $\{0\} \cup \{m(i) : i \in \iota\}$.
+
+The adjoined $0$ makes the supremum of this set the correct value when $\iota$ is empty and in the
+tempered case, where every local exponent is $0$. -/
 def exponentSet {ι : Type*} (F : LocalExponentFamily ι) : Set ℝ :=
   {0} ∪ Set.range F.exponent
 

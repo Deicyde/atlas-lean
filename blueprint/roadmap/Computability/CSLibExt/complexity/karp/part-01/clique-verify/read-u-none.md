@@ -21,7 +21,7 @@ steps.
 - [Stacks of the CLIQUE verifier](k.md)
 - [Labels of the CLIQUE verifier](lab.md)
 - [Modes of the clique verifier](mode.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [The clique verifier's unary reader](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)

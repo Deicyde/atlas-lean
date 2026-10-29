@@ -352,11 +352,14 @@ public theorem numNodes_balance {key : α} {left right : BinaryTree α} :
     · rw [balance_eq_node_of_le (by omega) (by omega)]
       simp only [numNodes_node]
 
-/-- Rebalancing children that violate the weight invariant by at most the
-one-key weight slack
-`4 * (child.numNodes + 1) ≤ 3 * (left.numNodes + right.numNodes + 2) + 1`
-produces a balanced tree. This is the precondition that one insertion
-step maintains. -/
+/-- **Weight-balanced rebalancing restores balance.** Let $L$ and $R$ be weight-balanced trees
+and $k$ a key, and write $|t|$ for the number of keys of a tree $t$. If
+$4(|L| + 1) \le 3(|L| + |R| + 2) + 1$ and $4(|R| + 1) \le 3(|L| + |R| + 2) + 1$, then the
+rebalanced node $\mathrm{balance}(L, k, R)$ is weight-balanced.
+
+These hypotheses are the two inequalities of the weight-balance invariant for the node with
+children $L$ and $R$, each with its right-hand side increased by $1$; this is the precondition that
+one insertion step maintains. -/
 public theorem balanced_balance {key : α} {left right : BinaryTree α}
     (hBalLeft : Balanced left) (hBalRight : Balanced right)
     (hDiffLeft : 4 * (left.numNodes + 1) ≤ 3 * (left.numNodes + right.numNodes + 2) + 1)
@@ -759,10 +762,13 @@ public theorem pow_height_le {tree : BinaryTree α} (hBal : Balanced tree) :
               _ = 3 ^ (k + 1) * weight (BinaryTree.node key left right) := by
                 ring
 
-/-- The height of a balanced tree is logarithmic in its number of keys:
-`BinaryTree.height tree ≤ Nat.log2 ((tree.numNodes + 1) ^ 3) + 1`. This is the
-`Nat.log2` form of `pow_height_le`, using `(4 / 3) ^ 3 > 2` to pass from
-base `4 / 3` to base `2`. -/
+/-- **Height of a weight-balanced tree is logarithmic.** Write $|t|$ for the number of keys of a
+binary tree $t$ and $h(t)$ for its height, where the empty tree has height $0$ and a node has
+height one more than the larger height of its two subtrees. If $t$ is weight-balanced, then
+$h(t) \le \lfloor \log_2 ((|t| + 1)^3) \rfloor + 1$.
+
+The proof passes from the exponential weight lower bound in base $4/3$ to base $2$, using
+$(4/3)^3 > 2$. -/
 public theorem height_le_log2 {tree : BinaryTree α} (hBal : Balanced tree) :
     BinaryTree.height tree ≤ Nat.log2 ((tree.numNodes + 1) ^ 3) + 1 := by
   cases tree with

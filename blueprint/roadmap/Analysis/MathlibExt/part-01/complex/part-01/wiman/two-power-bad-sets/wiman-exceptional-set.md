@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 - [Power-growth exceptional set](../../../../calculus/power-growth-bad-set/power-growth-bad-set.md)
 
 ## Sources

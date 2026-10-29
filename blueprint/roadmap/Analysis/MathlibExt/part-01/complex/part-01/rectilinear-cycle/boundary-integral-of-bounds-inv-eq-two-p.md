@@ -21,7 +21,7 @@ corners $a - iT$ and $b + iT$ equals $2\pi i$.
 ## Proof depends on
 
 - [Rectangle integral of $1/s$ around the origin](boundary-rect-one-div.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

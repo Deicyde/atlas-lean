@@ -21,7 +21,7 @@ forest.
 - [Rooted ordered tree](tree.md)
 - [Valid Euler-tour tree](valid.md)
 - [Linking two rooted trees](link.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 
 ## Proof depends on
 

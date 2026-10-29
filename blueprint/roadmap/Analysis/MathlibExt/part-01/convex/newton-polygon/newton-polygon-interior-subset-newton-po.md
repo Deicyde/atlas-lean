@@ -15,8 +15,8 @@ $\mathbb{R}^2$ is contained in the Newton polygon of $f$.
 
 ## Depends on
 
-- [Newton Polygon](newton-polygon.md)
-- [Newton Polygon Interior](newton-polygon-interior.md)
+- [Newton polygon](newton-polygon.md)
+- [Interior of the Newton polygon](newton-polygon-interior.md)
 
 ## Sources
 

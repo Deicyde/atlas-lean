@@ -31,7 +31,7 @@ most $n(B + 1) + n + 2$ steps, with $S'_c = u^n$, $S'_{c'}$ empty and $P(n, S')$
 - [Runs within a step budget](run-le.md)
 - [Unary counter](cnt.md)
 - [Loop head of a for loop over a counter](for-head.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 

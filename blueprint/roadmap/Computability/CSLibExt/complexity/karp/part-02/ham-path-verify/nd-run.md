@@ -25,7 +25,7 @@ encoding of $d$ followed by $q$, and $\mathsf{Z}$ is empty.
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)

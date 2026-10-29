@@ -21,7 +21,7 @@ output stack of $E$ then holds the output on $x$, written in the output symbols 
 - [Labels of the tokenize-then-emit machine](l.md)
 - [Exit label of the tokenize-then-emit machine](fin.md)
 - [Initial stacks of the tokenize-then-emit machine](init.md)
-- [Out](out.md)
+- [Output of an emitter on a bit string](out.md)
 - [Program of the tokenize-then-emit machine](prog.md)
 - [Start label of the tokenize-then-emit machine](start.md)
 - [Alphabets of the tokenize-then-emit machine](untitled.md)

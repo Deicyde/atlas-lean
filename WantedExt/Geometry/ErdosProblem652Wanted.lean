@@ -26,7 +26,8 @@ namespace MathlibExt.Geometry.ErdosProblem652Wanted
 
 /-! Source record `EP-652` (Erdős Problem 652). -/
 
-/-- The real Euclidean plane. -/
+/-- **Euclidean plane for Erdős Problem 652.** The real Euclidean plane is the space
+$\mathbb{R}^2$ of pairs of real numbers with the Euclidean inner product and norm. -/
 abbrev Plane := EuclideanSpace ℝ (Fin 2)
 
 /-- **Points with few distinct distances.** For a finite set $X$ of points in the Euclidean plane

@@ -6,7 +6,7 @@ navigation: module
 
 - [Value of a permutation at a natural position](perm-value-at.md)
 - [Descent set of a permutation](perm-descent-set.md)
-- [Number of descents](perm-des.md)
+- [Number of descents from the descent set](perm-des.md)
 - [Major index of a permutation](perm-maj.md)
 - [Euler–Mahonian polynomial](euler-mahonian.md)
 - [The first Euler–Mahonian polynomial is $1$](euler-mahonian-one.md)
@@ -24,4 +24,4 @@ navigation: module
 - [Recursion for the Euler–Mahonian polynomials](euler-mahonian-succ-recursion.md)
 - [Product formula for equal-fold partition diamonds](partition-diamond-gen-fun.md)
 - [Product formula for multifold partition diamonds](multifold-partition-diamond-gen-fun.md)
-- [Schmidt Partition Diamond gen Fun](schmidt-partition-diamond-gen-fun.md)
+- [Generating function of Schmidt type $d$-fold partition diamonds](schmidt-partition-diamond-gen-fun.md)

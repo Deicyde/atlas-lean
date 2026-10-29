@@ -39,10 +39,10 @@ computable with respect to the canonical bit-string encodings.
 - [Bits as indices](veqv.md)
 - [Separator symbol of the verifier](vsep.md)
 - [Input-bit symbol of the verifier](v.md)
-- [F R](../package/f-r.md)
+- [The Cook–Levin reduction function](../package/f-r.md)
 - [The reduction machine as a polynomial-time computation](../package/g-comp.md)
-- [Computable](../../encoding-converters/computable-2.md)
-- [Computable](../../encoding-converters/computable-3.md)
+- [Polynomial-time decoder of the canonical bit-list encoding](../../encoding-converters/computable-2.md)
+- [Polynomial-time encoder to the canonical bit-list encoding](../../encoding-converters/computable-3.md)
 - [Polynomial-time TM2-computable functions are closed under composition](../../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 
 ## Sources

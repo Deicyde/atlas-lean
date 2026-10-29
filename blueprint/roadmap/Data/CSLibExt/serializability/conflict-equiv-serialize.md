@@ -26,7 +26,7 @@ by the first position of their transaction in $L$ is conflict-equivalent to $s$.
 - [Directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
 - [Edge of a directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
 - [Read or write access](access.md)
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 - [Operations whose relative order matters](order-matters.md)
 - [Edge of the precedence graph](precedence-edge.md)
 

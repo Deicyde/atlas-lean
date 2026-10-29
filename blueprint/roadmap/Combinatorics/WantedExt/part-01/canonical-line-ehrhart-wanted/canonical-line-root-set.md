@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 - [Property (♢)](has-diamond.md)
 - [CL-polynomials](is-cl.md)
-- [Canonical Line](canonical-line.md)
+- [Canonical line](canonical-line.md)
 
 ## Sources
 

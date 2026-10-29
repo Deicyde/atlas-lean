@@ -21,9 +21,9 @@ copies of $\mathrm{true}$, then the contents of $O$ in $S$.
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
-- [Ctr](ctr.md)
+- [Counter of the first output number of the KG-map machine](ctr.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [The KG-map machine](prog.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)

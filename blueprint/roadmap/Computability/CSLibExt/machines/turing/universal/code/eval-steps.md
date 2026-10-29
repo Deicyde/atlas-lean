@@ -19,7 +19,7 @@ blanks dropped. Otherwise there is no result.
 ## Proof depends on
 
 - [Explicit configurations](cfg.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [Clocked configuration of a code](cfg-after.md)
 - [One step of a code](step.md)
 

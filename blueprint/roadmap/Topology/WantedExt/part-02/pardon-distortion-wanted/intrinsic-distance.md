@@ -20,7 +20,7 @@ the points with parameters $s$ and $t$.
 ## Proof depends on
 
 - [Arc length between two parameters](parameter-arc-length.md)
-- [Total Arc Length](total-arc-length.md)
+- [Total arc length of a knot](total-arc-length.md)
 
 ## Sources
 

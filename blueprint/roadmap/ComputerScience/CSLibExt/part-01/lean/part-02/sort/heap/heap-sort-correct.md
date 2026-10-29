@@ -14,7 +14,7 @@ sort returns a list that is sorted in nondecreasing order and is a permutation o
 
 ## Depends on
 
-- [Heap Sort](heap-sort.md)
+- [Heap sort](heap-sort.md)
 
 ## Proof depends on
 

@@ -6,7 +6,7 @@ navigation: module
 
 ## Time M
 
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Array
 

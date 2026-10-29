@@ -25,7 +25,7 @@ The proof takes $f$ to be the arc flow of the flow computed by the Edmonds-Karp 
 ## Proof depends on
 
 - [Edmonds–Karp maximum flow](../edmonds-karp/edmonds-karp.md)
-- [Residual Cut](../edmonds-karp/residual-cut.md)
+- [Residual cut](../edmonds-karp/residual-cut.md)
 - [Arc flow of an integer flow](arc-flow.md)
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
 - [Real arc flow](real-flow.md)

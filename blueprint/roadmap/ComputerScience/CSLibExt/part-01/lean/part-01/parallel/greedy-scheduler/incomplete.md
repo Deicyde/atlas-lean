@@ -14,7 +14,7 @@ $s < t$ in which $S$ runs fewer than $p$ tasks.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 
 ## Proof depends on
 

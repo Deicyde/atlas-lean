@@ -17,7 +17,7 @@ $m$ is at most the root of every tree in $T$.
 
 ## Depends on
 
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Removing a minimum-root tree from a forest](remove-min-tree.md)
 - [Binomial tree](binomial-tree.md)
 - [Elements of a binomial tree](elements.md)

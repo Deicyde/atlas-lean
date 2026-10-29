@@ -15,7 +15,7 @@ $\nu$ under $\mathbb{P}$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Sources
 

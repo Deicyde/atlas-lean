@@ -17,7 +17,7 @@ the $n$-bit ripple-carry adder; for $g = 0$ it is the empty program.
 
 ## Proof depends on
 
-- [Line](line.md)
+- [Gates of the ripple-carry adder](line.md)
 
 ## Sources
 

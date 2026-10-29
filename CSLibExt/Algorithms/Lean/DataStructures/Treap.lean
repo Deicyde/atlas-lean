@@ -721,7 +721,9 @@ public theorem ordered_split {κ : Type u} {ν : Type v} [LinearOrder κ]
           hKeysRight, hInherited.2]
       · simp [split, hKey, hPivot, hOrderedLeft, hOrderedRight]
 
-/-- Splitting preserves min-heap priority order in both output trees. -/
+/-- **Treap split preserves heap order.** Let the keys come from a linearly ordered type and let
+$t$ be a heap-ordered treap tree. For every pivot key $k$, the lower tree and the upper tree
+produced by splitting $t$ at $k$ are both heap-ordered. -/
 public theorem heapOrdered_split {κ : Type u} {ν : Type v} [LinearOrder κ]
     {pivot : κ} {tree : Tree κ ν} (hHeap : HeapOrdered tree) :
     HeapOrdered (split pivot tree).less ∧ HeapOrdered (split pivot tree).greater := by
@@ -890,9 +892,9 @@ public theorem contents_erase {κ : Type u} {ν : Type v} [LinearOrder κ]
       contents (split key tree).less ++ contents (split key tree).greater := by
   simp [erase, contents_merge]
 
-/-- **Lookup after insertion.** Let $t$ be a valid treap with keys in a linearly ordered type,
-that is, $t$ is ordered as a binary search tree by key and as a min-heap by priority. For every
-key $k$, value $v$ and priority $p \in \mathbb{N}$, looking up $k$ in the tree obtained by
+/-- **Treap lookup after insertion.** Let $t$ be a valid treap with keys in a linearly ordered
+type, that is, $t$ is ordered as a binary search tree by key and as a min-heap by priority. For
+every key $k$, value $v$ and priority $p \in \mathbb{N}$, looking up $k$ in the tree obtained by
 inserting $k$ with value $v$ and priority $p$ into $t$ returns $v$. -/
 public theorem lookup_insert_eq {κ : Type u} {ν : Type v} [LinearOrder κ]
     {key : κ} {value : ν} {priority : Nat} {tree : Tree κ ν}

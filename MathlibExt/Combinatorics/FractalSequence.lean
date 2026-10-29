@@ -55,7 +55,9 @@ public theorem FractalSequence.pos_injective (X : FractalSequence) (i : ℕ) :
     Function.Injective (X.pos i) :=
   (X.pos_strict i).injective
 
-/-- Every positive integer occurs infinitely often in a fractal sequence. -/
+/-- **Every value occurs infinitely often in a regular fractal sequence.** Let $(x_n)_{n \ge 0}$
+be a regular fractal sequence. Then for every positive integer $k$ there are infinitely many $n$
+with $x_n = k$. -/
 public theorem FractalSequence.infinite_occurrences (X : FractalSequence) (i : ℕ) :
     Set.Infinite {n | X.seq n = i + 1} := by
   have hf : Function.Injective

@@ -7,7 +7,7 @@ navigation: module
 ## References
 
 - [Store](store.md)
-- [Step](step.md)
+- [One-step evaluation with references](step.md)
 - [Multi-step evaluation with references](steps.md)
 
 ## Step

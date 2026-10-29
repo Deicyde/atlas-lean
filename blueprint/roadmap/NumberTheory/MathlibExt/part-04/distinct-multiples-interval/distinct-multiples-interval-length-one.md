@@ -6,10 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.distinctMultiplesIntervalLength_one
 ---
 
-# Distinct Multiples Interval Length one
+# The least interval length for $n = 1$
 
-`f(1, m) = 1`: the interval `(m, m + 1]` contains the multiple `m + 1` of `1`, and the
-empty interval `(m, m]` contains nothing.
+**The least interval length for $n = 1$.** For natural numbers $n$ and $m$, let $f(n, m)$ be
+the least natural number $L$ such that the interval $(m, m + L]$ contains distinct multiples of
+$1, \dots, n$. Then $f(1, m) = 1$ for every natural number $m$: the interval $(m, m + 1]$
+contains the multiple $m + 1$ of $1$, and the empty interval $(m, m]$ contains nothing.
 
 ## Depends on
 

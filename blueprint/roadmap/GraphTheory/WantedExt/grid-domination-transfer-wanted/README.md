@@ -4,14 +4,14 @@ navigation: module
 
 # Grid Domination Transfer
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination polynomial](domination-polynomial.md)
 - [Domination state of a vertex](vertex-domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [Signatures of a row graph](domination-signature.md)
 - [All-covered signature](all-covered-signature.md)
 - [Compatible row signatures](domination-compatible.md)
-- [Occupied Count](occupied-count.md)
+- [Number of occupied vertices](occupied-count.md)
 - [Domination transfer matrix](domination-transfer-matrix.md)
 - [Almost dominating polynomial](almost-dominating-polynomial.md)
 - [A vertex is occupied exactly when it lies in the set](vertex-domination-state-eq-occupied-iff.md)

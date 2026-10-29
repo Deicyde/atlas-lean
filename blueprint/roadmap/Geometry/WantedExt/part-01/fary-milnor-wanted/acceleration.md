@@ -14,7 +14,7 @@ $s \mapsto r'(s)$, that is $r''(t)$, where a derivative that does not exist is t
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Proof depends on
 

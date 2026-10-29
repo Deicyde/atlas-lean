@@ -266,7 +266,12 @@ theorem primrec_accept : Primrec (accept (α := α)) :=
 theorem primrec_trans : Primrec (trans (α := α)) :=
   Primrec.snd.comp (Primrec.snd.comp primrec_equivProd)
 
-/-- Building an encoded DFA from its three components is primitive recursive. -/
+/-- **Assembling an encoded DFA is primitive recursive.** Let $\alpha$ be an alphabet with a
+primitive recursive encoding, and encode encoded DFAs over $\alpha$ through their start state,
+accepting states and transitions. The map sending a triple $(s, F, T)$, where $s \in \mathbb{N}$,
+$F$ is a list of natural numbers and $T$ is a list of pairs $((q, a), t)$ with $q, t \in \mathbb{N}$
+and $a \in \alpha$, to the encoded DFA over $\alpha$ with start state $s$, accepting states $F$
+and transitions $T$ is primitive recursive. -/
 theorem primrec_mk : Primrec fun p : ℕ × List ℕ × List ((ℕ × α) × ℕ) => (⟨p.1, p.2.1, p.2.2⟩ :
     EncodedDFA α) :=
   (Primrec.of_equiv_symm (e := equivProd)).of_eq fun _ => rfl

@@ -71,9 +71,9 @@ INTEGERS 26 (2026), Article A59, Section 1 (statistics). -/
 def permAscentCount {n : ℕ} (σ : Equiv.Perm (Fin n)) : ℕ :=
   (Finset.univ.filter fun i : Fin n => ∃ j : Fin n, (j : ℕ) = i + 1 ∧ σ i < σ j).card
 
-/-- **Number of descents.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$ written in
-one-line notation, $\operatorname{des}(\sigma)$ is the number of positions $i$ with $i + 1 < n$
-and $\sigma(i + 1) < \sigma(i)$.
+/-- **Number of descents of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$
+written in one-line notation, $\operatorname{des}(\sigma)$ is the number of positions $i$ with
+$i + 1 < n$ and $\sigma(i + 1) < \sigma(i)$.
 
 Source: Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*,
 INTEGERS 26 (2026), Article A59, Section 1 (statistics). -/
@@ -136,7 +136,10 @@ INTEGERS 26 (2026), Article A59, Section 1.1 and Table 1. -/
 def ContainsFlatPOPAbove {n : ℕ} (σ : Equiv.Perm (Fin n)) (j : Fin 4) : Prop :=
   ∃ f : Fin 4 ↪o Fin n, ∀ m, m ≠ j → σ (f m) < σ (f j)
 
-/-- A permutation containing a flat POP of size `4` has length at least `4`.
+/-- **Containing $P_{j+1}$ forces length at least $4$.** Let $\sigma$ be a permutation of
+$\{0, 1, \dots, n - 1\}$ and let $j \in \{0, 1, 2, 3\}$. If $\sigma$ contains the flat partially
+ordered pattern $P_{j+1}$ of size $4$, in which label $j + 1$ lies below the other three labels,
+then $n \ge 4$.
 
 Source: Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*,
 INTEGERS 26 (2026), Article A59, Section 1.1. -/
@@ -145,7 +148,10 @@ theorem four_le_of_containsFlatPOPBelow {n : ℕ} {σ : Equiv.Perm (Fin n)} {j :
   obtain ⟨f, -⟩ := h
   simpa using Fintype.card_le_of_embedding f.toEmbedding
 
-/-- A permutation containing a flat POP of size `4` has length at least `4`.
+/-- **Containing $Q_{j+1}$ forces length at least $4$.** Let $\sigma$ be a permutation of
+$\{0, 1, \dots, n - 1\}$ and let $j \in \{0, 1, 2, 3\}$. If $\sigma$ contains the flat partially
+ordered pattern $Q_{j+1}$ of size $4$, in which label $j + 1$ lies above the other three labels,
+then $n \ge 4$.
 
 Source: Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*,
 INTEGERS 26 (2026), Article A59, Section 1.1. -/
@@ -204,7 +210,12 @@ noncomputable def kingFlatPOPAboveGF (j : Fin 4) : PowerSeries (MvPolynomial (Fi
       MvPolynomial.X 0 ^ permAscentCount σ * MvPolynomial.X 1 ^ permDescentCount σ *
         MvPolynomial.X 2 ^ permLeftToRightMinCount σ * MvPolynomial.X 3 ^ permRightToLeftMinCount σ
 
-/-- The empty permutation contributes the constant term `1` of `A_P`.
+/-- **Constant term of $A_{P_{j+1}}$.** For every $j \in \{0, 1, 2, 3\}$, the coefficient of $x^0$
+in the generating function $A_{P_{j+1}}(x; p, q, u, v)$ of king permutations avoiding the flat
+partially ordered pattern $P_{j+1}$ is the constant polynomial $1$.
+
+The empty permutation is the only permutation of length $0$; it is a king permutation, it avoids
+$P_{j+1}$, and it has no ascents, descents, left-to-right maxima or right-to-left maxima.
 
 Source: Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*,
 INTEGERS 26 (2026), Article A59, Section 1.4 and proof of Theorem 3. -/
@@ -219,7 +230,12 @@ theorem constantCoeff_kingFlatPOPBelowGF (j : Fin 4) :
   · intro b _ hb
     exact absurd (Subsingleton.elim b 1) hb
 
-/-- The empty permutation contributes the constant term `1` of `Ā_Q`.
+/-- **Constant term of $\bar A_{Q_{j+1}}$.** For every $j \in \{0, 1, 2, 3\}$, the coefficient of
+$x^0$ in the generating function $\bar A_{Q_{j+1}}(x; p, q, s, t)$ of king permutations avoiding
+the flat partially ordered pattern $Q_{j+1}$ is the constant polynomial $1$.
+
+The empty permutation is the only permutation of length $0$; it is a king permutation, it avoids
+$Q_{j+1}$, and it has no ascents, descents, left-to-right minima or right-to-left minima.
 
 Source: Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*,
 INTEGERS 26 (2026), Article A59, Section 1.4 and proof of Theorem 3. -/

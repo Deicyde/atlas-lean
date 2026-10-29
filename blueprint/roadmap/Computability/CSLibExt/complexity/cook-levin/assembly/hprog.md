@@ -39,7 +39,7 @@ the final host label, where it halts.
 ## Proof depends on
 
 - [Clause kinds of the accept generator](../accept/ak.md)
-- [Stages of the literal routine](../accept/ls.md)
+- [Stages of the accept generator's literal routine](../accept/ls.md)
 - [Precomputation stages of the accept generator](../accept/ps.md)
 - [Chaining step of the host program](chain.md)
 - [Embedding of the accept generator into the host](emb-a.md)
@@ -51,7 +51,7 @@ the final host label, where it halts.
 - [Stages of the transition-clause generator's literal routine](../family/ls.md)
 - [Stages of the transition-clause generator's precomputation](../family/ps.md)
 - [Clause kinds of the initial-row generator](../init-family/cl.md)
-- [Stages of the literal routine](../init-family/ls.md)
+- [Stages of the literal routine (initial-row generator)](../init-family/ls.md)
 - [Loop phases of the initial-row generator](../init-family/ph.md)
 - [Labels of the first precomputation part](../init-family/ps1.md)
 - [Labels of the second precomputation part](../init-family/ps2.md)

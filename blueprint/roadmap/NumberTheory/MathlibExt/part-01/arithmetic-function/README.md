@@ -23,7 +23,7 @@ article_id: af_e16ea72b5bdd1c7de3e01ee2
 - [Prime-power bound for primitive non-deficient numbers](part-01/primitive-nondeficient-prime-power-bound.md)
 - [Relatively prime subset counts](part-01/mobius-formula-relatively-prime-subset-c.md)
 - [Sigma R](part-01/sigma-r/README.md)
-- [Totienomial Coefficient](part-01/totienomial-integral-factorization.md)
+- [Integrality and prime factorization of totienomial coefficients](part-01/totienomial-integral-factorization.md)
 - [Unitary Convolution](part-01/unitary-convolution/README.md)
 - [Wintner's mean-value theorem](part-01/wintner-mean-value.md)
 

@@ -24,7 +24,8 @@ and $2^N \equiv 2 \pmod{N}$. -/
 def IsEvenPseudoprime (N : ℕ) : Prop :=
   Even N ∧ 2 < N ∧ 2 ^ N ≡ 2 [MOD N]
 
-/-- The set of all even pseudoprimes. -/
+/-- **The set of even pseudoprimes.** The set of even pseudoprimes is the set of natural
+numbers $N$ such that $N$ is even, $N > 2$ and $2^N \equiv 2 \pmod{N}$. -/
 def evenPseudoprimes : Set ℕ :=
   {N | IsEvenPseudoprime N}
 

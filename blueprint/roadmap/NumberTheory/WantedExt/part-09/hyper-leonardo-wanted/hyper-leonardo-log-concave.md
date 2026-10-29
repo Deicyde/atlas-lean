@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_logConcave
 ---
 
-# Hyper Leonardo log Concave
+# Eventual log-concavity of the hyper-Leonardo numbers of positive order
 
-Proposition 14, for `r ≥ 1`: `Le^{(r)}` is log-concave from `n = 2` on,
-`Le^{(r)}_{n-1} Le^{(r)}_{n+1} ≤ (Le^{(r)}_n)²` for `n ≥ 2`. The printed range `r ≥ 0` fails
-at `r = 0`, `n = 3` (`Le₂ Le₄ = 27 > 25 = Le₃²`, the log-convexity of Proposition 10); the
-paper's proof starts its induction at `r = 1` (Proposition 13).
+**Eventual log-concavity of the hyper-Leonardo numbers of positive order.** For all natural
+numbers $r \ge 1$ and $n \ge 2$, the hyper-Leonardo numbers $Le^{(r)}_n$ of order $r$ satisfy
+$Le^{(r)}_{n-1} Le^{(r)}_{n+1} \le (Le^{(r)}_n)^2$.
+
+The source states this for $r \ge 0$, but it fails for the Leonardo numbers $Le_n = Le^{(0)}_n$
+at $n = 3$, where $Le_2 Le_4 = 27 > 25 = Le_3^2$; the source's proof starts its induction at
+$r = 1$ (Proposition 13).
 
 ## Depends on
 

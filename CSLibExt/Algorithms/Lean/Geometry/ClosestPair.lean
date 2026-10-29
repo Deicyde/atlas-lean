@@ -55,14 +55,24 @@ universe u
 
 variable {𝕜 : Type u} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]
 
-/-- Squared Euclidean distance. -/
+/-- **Squared distance in the plane.** Let $K$ be a linearly ordered field. The squared distance
+between points $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$ is $(p_1 - q_1)^2 + (p_2 - q_2)^2$. -/
 def dist2 (p q : 𝕜 × 𝕜) : 𝕜 := (p.1 - q.1) ^ 2 + (p.2 - q.2) ^ 2
 
-/-- `δ` is the least squared distance between two entries of `ps` at different positions. -/
+/-- **Least pairwise squared distance.** Let $K$ be a linearly ordered field, and write
+$d(p, q) = (p_1 - q_1)^2 + (p_2 - q_2)^2$ for the squared distance between points
+$p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. For a list $c_1, \dots, c_n$ of points of $K^2$,
+an element $\delta$ of $K$ is the least pairwise squared distance of the list when
+$\delta = d(c_i, c_j)$ for some $i < j$ and $\delta \le d(c_i, c_j)$ for all $i < j$. -/
 def IsMinPairDist2 (ps : List (𝕜 × 𝕜)) (δ : 𝕜) : Prop :=
   (∃ p q, [p, q] <+ ps ∧ dist2 p q = δ) ∧ ∀ p q, [p, q] <+ ps → δ ≤ dist2 p q
 
-/-- The least squared distance from `p` to a point of `qs`, one unit per point. -/
+/-- **Least squared distance from a point to a list.** Let $K$ be a linearly ordered field, and
+write $d(p, q) = (p_1 - q_1)^2 + (p_2 - q_2)^2$ for the squared distance between points
+$p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. For a point $p$ and a list $c_1, \dots, c_m$ of
+points of $K^2$, the least squared distance from $p$ to the list is no value if $m = 0$ and
+$\min_{1 \le k \le m} d(p, c_k)$ otherwise. Computing it is charged one unit of cost per point of
+the list, $m$ units in total. -/
 def minDistFrom (p : 𝕜 × 𝕜) : List (𝕜 × 𝕜) → TimeM ℕ (Option 𝕜)
   | [] => pure none
   | q :: qs => do
@@ -83,8 +93,14 @@ def bruteMin : List (𝕜 × 𝕜) → TimeM ℕ (Option 𝕜)
       let b ← bruteMin ps
       pure (omin a b)
 
-/-- Distances from `p` to the following strip points, stopping at the first whose squared `y`
-gap reaches `δ`. -/
+/-- **Strip scan from a point.** Let $K$ be a linearly ordered field, and write
+$d(p, q) = (p_1 - q_1)^2 + (p_2 - q_2)^2$ for the squared distance between points
+$p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. Let $\delta \in K$, let $p = (p_1, p_2)$ be a
+point of $K^2$ and $c_1, \dots, c_m$ a list of points $c_l = (x_l, y_l)$ of $K^2$, and let
+$k \le m$ be largest such that $(y_l - p_2)^2 < \delta$ for all $1 \le l \le k$. The scan from $p$
+with threshold $\delta$ returns no value if $k = 0$ and $\min_{1 \le l \le k} d(p, c_l)$
+otherwise. It is charged one unit of cost per point $c_1, \dots, c_k$: it stops at the first
+point whose squared vertical gap to $p$ is at least $\delta$, without computing its distance. -/
 def scanFrom (δ : 𝕜) (p : 𝕜 × 𝕜) : List (𝕜 × 𝕜) → TimeM ℕ (Option 𝕜)
   | [] => pure none
   | q :: qs =>
@@ -94,7 +110,11 @@ def scanFrom (δ : 𝕜) (p : 𝕜 × 𝕜) : List (𝕜 × 𝕜) → TimeM ℕ 
         pure (omin (some (dist2 p q)) r)
       else pure none
 
-/-- The strip loop over the strip sorted by `y`. -/
+/-- **Closest-pair strip scan.** Let $K$ be a linearly ordered field, $\delta \in K$ and
+$c_1, \dots, c_n$ a list of points of $K^2$. For each $i$, the strip scan runs the strip scan from
+$c_i$ with threshold $\delta$ on the later points $c_{i+1}, \dots, c_n$. It returns the least of
+the values these scans return, or no value if none of them returns a value, and its cost is the
+sum of their costs. -/
 def stripScan (δ : 𝕜) : List (𝕜 × 𝕜) → TimeM ℕ (Option 𝕜)
   | [] => pure none
   | p :: ps => do
@@ -102,7 +122,17 @@ def stripScan (δ : 𝕜) : List (𝕜 × 𝕜) → TimeM ℕ (Option 𝕜)
       let b ← stripScan δ ps
       pure (omin a b)
 
-/-- The recursion on a list sorted by `x`. -/
+/-- **Closest-pair recursion.** Let $K$ be a linearly ordered field and $c_1, \dots, c_n$ a list
+of points $c_i = (x_i, y_i)$ of $K^2$. If $n \le 3$, the recursion returns the brute-force scan of
+the list. Otherwise let $m = \lfloor n/2 \rfloor$, and run the recursion on $c_1, \dots, c_m$ and
+on $c_{m+1}, \dots, c_n$. If neither call returns a value, it returns no value. Otherwise let
+$\delta$ be the least of the returned values, let $T$ be the list of the points $c_i$ with
+$(x_i - x_m)^2 < \delta$ in their original order, sorted by second coordinate with a stable merge
+sort, and run the strip scan with threshold $\delta$ on $T$. The recursion returns
+$\min(\delta, s)$ if the strip scan returns a value $s$, and $\delta$ otherwise. In the base case
+its cost is that of the brute-force scan; otherwise it is the sum of the costs of the two
+recursive calls and of the strip scan when it is run, and splitting, filtering and sorting are
+free. -/
 def closestRec (xs : List (𝕜 × 𝕜)) : TimeM ℕ (Option 𝕜) :=
   if _h : xs.length ≤ 3 then bruteMin xs
   else do
@@ -134,8 +164,12 @@ def closestPair (ps : List (𝕜 × 𝕜)) : TimeM ℕ (Option 𝕜) :=
 
 /-! ## Answers -/
 
-/-- `r` is the answer for `ps`: any value it holds is attained by two entries at different
-positions, and every such pair is bounded below by it. -/
+/-- **Closest-pair answer.** Let $K$ be a linearly ordered field, and write
+$d(p, q) = (p_1 - q_1)^2 + (p_2 - q_2)^2$ for the squared distance between points
+$p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. For a list $c_1, \dots, c_n$ of points of $K^2$,
+an optional value $r$ (an element of $K$ or no value) is an answer for the list when every value
+$\delta$ that $r$ holds equals $d(c_i, c_j)$ for some $i < j$, and when for all $i < j$, $r$ holds
+a value $\delta$ with $\delta \le d(c_i, c_j)$. -/
 structure IsAnswer (ps : List (𝕜 × 𝕜)) (r : Option 𝕜) : Prop where
   attained : ∀ δ, r = some δ → ∃ p q, [p, q] <+ ps ∧ dist2 p q = δ
   lower : ∀ p q, [p, q] <+ ps → ∃ δ, r = some δ ∧ δ ≤ dist2 p q

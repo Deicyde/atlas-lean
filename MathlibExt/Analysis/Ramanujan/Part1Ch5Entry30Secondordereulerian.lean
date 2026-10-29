@@ -126,7 +126,9 @@ lemma chapter5Entry30Coeff_of_squarefree (a : ℕ → ℂ) (n : ℕ) (hn : n ≠
   rw [heq]
   rfl
 
-/-- The coefficient vanishes at every non-squarefree `n`. -/
+/-- **Entry 30 coefficients vanish at nonzero non-squarefree natural numbers.** For every
+function $a : \mathbb{N} \to \mathbb{C}$ and every natural number $n \ne 0$ that is not
+squarefree, the Entry 30 coefficient $c_a(n)$ is $0$. -/
 lemma chapter5Entry30Coeff_of_not_squarefree (a : ℕ → ℂ) (n : ℕ) (hn : n ≠ 0)
     (hsq : ¬Squarefree n) : chapter5Entry30Coeff a n = 0 := by
   unfold chapter5Entry30Coeff
@@ -222,19 +224,22 @@ lemma summable_chapter5Entry30Coeff_add_two (a : ℕ → ℂ) (c : ℝ) (hc : 1 
   have h := e30_coeff_norm_le a c ha (j + 2) hn
   simpa using h
 
-/-- The coefficient at `0` is `0`. -/
+/-- **The Entry 30 coefficient at zero.** For every function $a : \mathbb{N} \to \mathbb{C}$, the
+Entry 30 coefficient $c_a(0)$ is $0$. -/
 @[simp]
 lemma chapter5Entry30Coeff_zero (a : ℕ → ℂ) : chapter5Entry30Coeff a 0 = 0 := by
   unfold chapter5Entry30Coeff
   simp
 
-/-- The coefficient at `1` is `1`. -/
+/-- **The Entry 30 coefficient at one.** For every function $a : \mathbb{N} \to \mathbb{C}$, the
+Entry 30 coefficient $c_a(1)$ is $1$. -/
 @[simp]
 lemma chapter5Entry30Coeff_one (a : ℕ → ℂ) : chapter5Entry30Coeff a 1 = 1 := by
   unfold chapter5Entry30Coeff
   simp
 
-/-- At a prime `p`, the coefficient is `a p`. -/
+/-- **Entry 30 coefficients at primes.** For every function $a : \mathbb{N} \to \mathbb{C}$ and
+every prime $p$, the Entry 30 coefficient $c_a(p)$ equals $a(p)$. -/
 lemma chapter5Entry30Coeff_prime (a : ℕ → ℂ) (p : ℕ) (hp : p.Prime) :
     chapter5Entry30Coeff a p = a p := by
   have hn : p ≠ 0 := hp.ne_zero

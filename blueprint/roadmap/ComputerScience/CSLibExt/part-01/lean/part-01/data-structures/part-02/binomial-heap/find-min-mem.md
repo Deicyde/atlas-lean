@@ -16,12 +16,12 @@ element of $H$.
 ## Depends on
 
 - [Binomial heap](binomial-heap.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Minimum of a binomial heap](find-min.md)
 
 ## Proof depends on
 
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Removing a minimum-root tree from a forest](remove-min-tree.md)
 - [Removing a minimum-root tree](remove-min-tree-spec.md)
 - [Binomial tree](binomial-tree.md)

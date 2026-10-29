@@ -66,7 +66,7 @@ navigation: module
 - [Preferred-path decomposition of a link-cut tree state](paths.md)
 - [Preferred paths cover exactly the vertices of the forest](mem-paths-flat-map.md)
 - [Preferred paths cover each vertex at most once](nodup-paths-flat-map.md)
-- [Pairwise disjoint paths](pairwise-disjoint-paths.md)
+- [Preferred paths are pairwise vertex-disjoint](pairwise-disjoint-paths.md)
 - [Preferred paths have distinct vertices](nodup-of-mem-paths.md)
 - [Preferred paths of a link-cut tree state follow represented edges](is-chain-of-mem-paths.md)
 - [Access in a link-cut tree](access.md)

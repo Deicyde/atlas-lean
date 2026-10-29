@@ -20,7 +20,7 @@ and $x$ with clock $T$, then it also returns $l$ with clock $T'$.
 ## Proof depends on
 
 - [Explicit configurations](cfg.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [Clocked configuration of a code](cfg-after.md)
 - [Characterization of clocked results](eval-steps-eq-some-iff-output.md)
 - [Initial configuration of the code simulation](init.md)

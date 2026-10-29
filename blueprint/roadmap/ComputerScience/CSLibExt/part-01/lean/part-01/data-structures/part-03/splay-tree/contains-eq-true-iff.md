@@ -22,7 +22,7 @@ if and only if $x$ is a key of $t$.
 ## Proof depends on
 
 - [Splaying preserves membership](mem-splay.md)
-- [Root key of a binary tree](root.md)
+- [Root key of a splay tree](root.md)
 - [Root key after splaying a present key](root-splay-of-mem-2.md)
 - [Splay operation](splay.md)
 

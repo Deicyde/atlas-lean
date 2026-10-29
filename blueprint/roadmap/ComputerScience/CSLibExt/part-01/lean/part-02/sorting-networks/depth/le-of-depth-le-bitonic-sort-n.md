@@ -25,7 +25,7 @@ $0, \dots, 2^k - 1$ has depth at most $d$, then $k \le d$.
 - [Extension of a Boolean vector by false](../bitonic/extend-false.md)
 - [Half-cleaner](../bitonic/half-cleaner.md)
 - [Sorting comparator lists on $n$ wires have depth at least $\log_2 n$](le-two-pow-of-sorts.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 
 ## Sources
 

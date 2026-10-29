@@ -22,7 +22,7 @@ no alignment of $x$ and $y$ is banded with width $w$.
 
 - [Alignment](../sequence-alignment/alignment.md)
 - [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [The list of all alignments](../sequence-alignment/alignments.md)
 - [Band check from a starting offset](banded-from.md)
 - [Banded alignments force close lengths](is-banded-length-diff.md)

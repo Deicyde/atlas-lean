@@ -29,7 +29,7 @@ weight of $p$ (the sum of $w$ over its consecutive pairs) equals $g(v)$.
 
 ## Proof depends on
 
-- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced weights telescope along paths](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
 - [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
 - [Path recovery from Dijkstra predecessors](../../graph/shortest-path/dijkstra/path-to.md)

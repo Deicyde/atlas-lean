@@ -14,7 +14,7 @@ from $x$ to the other points of $X$ is less than $t$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for Erdős Problem 652](plane.md)
 
 ## Proof depends on
 

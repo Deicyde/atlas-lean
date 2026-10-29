@@ -22,7 +22,7 @@ reached) fails if and only if $d(t) = \infty$.
 - [Bellman-Ford path reconstruction](../basic/path-to.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 
 ## Proof depends on
 

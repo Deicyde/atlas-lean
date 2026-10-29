@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 
 ## Sources
 

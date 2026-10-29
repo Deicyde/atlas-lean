@@ -19,7 +19,7 @@ tree built from $xs$ is valid.
 
 ## Proof depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Aggregate of a segment tree](agg.md)
 - [Size of a segment tree](size.md)
 - [Leaf list of a segment tree](to-list.md)

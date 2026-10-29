@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 
 ## Sources

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.polynomialToLIP
 ---
 
-# Polynomial To LIP
+# The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$
 
-Evaluation of integer polynomials, as a ring homomorphism `ℤ[x] → LIP(U)`.
+**The evaluation map from $\mathbb{Z}[x]$ to $\mathrm{LIP}(U)$.** For $U \subseteq \mathbb{Z}$,
+the evaluation map is the ring homomorphism from $\mathbb{Z}[x]$ to the ring $\mathrm{LIP}(U)$ of
+locally integer polynomial functions on $U$ that sends each integer polynomial $p$ to the function
+$U \to \mathbb{Z}$, $u \mapsto p(u)$.
 
 ## Depends on
 

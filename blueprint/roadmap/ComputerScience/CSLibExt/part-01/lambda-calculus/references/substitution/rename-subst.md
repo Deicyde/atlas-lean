@@ -22,7 +22,7 @@ index $x$ to the renaming of $\sigma(x)$ by $\rho$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](../syntax/lift-ren.md)
 - [Lifting a substitution under a binder](../syntax/lift-sub.md)
 - [Renaming respects pointwise equality](rename-congr.md)
 - [Composition of renamings](rename-rename.md)

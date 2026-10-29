@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for Erdős Problem 652](plane.md)
 - [Points with few distinct distances](count-small-points.md)
 
 ## Sources

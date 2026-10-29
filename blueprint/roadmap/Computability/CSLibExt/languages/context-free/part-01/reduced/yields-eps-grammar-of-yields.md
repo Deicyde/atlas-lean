@@ -25,7 +25,7 @@ $w$ is empty if $\alpha'$ is empty.
 - [Nullable nonterminal](nullable.md)
 - [Language generated from a nonterminal](../basic/language-from.md)
 - [Productions of the ε-free grammar](mem-eps-grammar-rules.md)
-- [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](../../part-02/yields/yields-iff-derives.md)
 - [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources

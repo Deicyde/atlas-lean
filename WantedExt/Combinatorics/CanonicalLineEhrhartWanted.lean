@@ -28,8 +28,9 @@ open Filter Polynomial Set
 
 /-! # Ehrhart polynomials with roots on the canonical line -/
 
-/-- The canonical line is the vertical line of complex numbers with real part `-1 / 2`.
-This is the paper's `CL`, represented as a set rather than as an affine subspace.
+/-- **Canonical line.** The canonical line $\mathrm{CL}$ is the vertical line of complex numbers
+with real part $-1/2$, that is, $\mathrm{CL} = \{z \in \mathbb{C} : \operatorname{Re} z = -1/2\}$.
+
 Source: Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*,
 INTEGERS 25 (2025), Article A68, Definition of `CL`.
 -/

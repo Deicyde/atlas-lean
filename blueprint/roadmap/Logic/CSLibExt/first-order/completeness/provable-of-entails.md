@@ -21,7 +21,7 @@ then $\varphi$ is provable from $S$.
 
 ## Proof depends on
 
-- [Consistent](../consistency/consistent.md)
+- [Consistent set of formulas](../consistency/consistent.md)
 - [Model existence for first-order logic](exists-model-of-consistent.md)
 - [Provability as inconsistency with the negation](../consistency/provable-iff-not-consistent-insert-not.md)
 

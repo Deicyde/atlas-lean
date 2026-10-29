@@ -6,11 +6,12 @@ statement: formalized
 lean: Set.upperDensity
 ---
 
-# Upper Density
+# Upper density
 
-Given a set `S` in an order `β`, where all intervals bounded above are finite, we define the upper
-density of `S` (relative to a set `A`) to be the limsup of the partial densities of `S`
-(relative to `A`) for `b → ∞`.
+**Upper density.** Let $\beta$ be a preorder in which every set $\{x \in \beta \mid x \le b\}$
+is finite, and let $S, A \subseteq \beta$. The upper density of $S$ relative to $A$ is the limit
+superior, as $b \to \infty$ in $\beta$, of the partial densities of $S$ relative to $A$ at $b$.
+By default $A = \beta$.
 
 ## Depends on
 

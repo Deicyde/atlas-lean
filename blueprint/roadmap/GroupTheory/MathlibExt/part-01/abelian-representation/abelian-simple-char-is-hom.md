@@ -25,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Character Monoid Hom](character-monoid-hom.md)
-- [Coe character Monoid Hom](coe-character-monoid-hom.md)
+- [The character of a simple representation as a monoid homomorphism](character-monoid-hom.md)
+- [The character homomorphism has the character as its underlying function](coe-character-monoid-hom.md)
 
 ## Sources
 

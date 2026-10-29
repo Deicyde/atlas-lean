@@ -61,7 +61,7 @@ navigation: module
 - [Rewrites from words with one control symbol](ctl-step.md)
 - [Thue equivalence from a word with one control symbol uses only controlled steps](eqv-gen-ctl-step.md)
 - [The rewrites from words with one control symbol are confluent](confluent-ctl-step.md)
-- [A single-tape machine halts iff its start word is equivalent to `⊢ H ⊣`](tm0-halts-on-iff-eqv-gen.md)
+- [A single-tape machine halts iff its start word is Thue equivalent to the halting word](tm0-halts-on-iff-eqv-gen.md)
 - [Single-tape halting many-one reduces to the word problem of a fixed Thue system](many-one-reducible-tm0-halts-on-eqv-gen.md)
 - [Some finite Thue system has an undecidable word problem](exists-not-tm2-decidable-eqv-gen.md)
 - [The uniform word problem for Thue systems is undecidable](exists-not-tm2-decidable-thue-wp.md)

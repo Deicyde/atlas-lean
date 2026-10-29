@@ -5,7 +5,7 @@ navigation: module
 
 # Fary Milnor
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 - [Period of a parametrised knot](period.md)
 - [Velocity of a space curve](velocity.md)
 - [Acceleration of a space curve](acceleration.md)

@@ -15,12 +15,12 @@ $\Gamma - \Lambda$ has its closed carrier contained in $G$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 
 ## Proof depends on
 
 - [Rectangle filling supported in a set](filling-supported-in.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

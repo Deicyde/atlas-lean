@@ -22,7 +22,7 @@ This includes disconnected graphs: a cycle unreachable from $s$ still causes fai
 - [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
 - [Cost of the DAG shortest-path pass](../basic/cost.md)
 - [Shortest paths in a DAG with a topology check](../basic/dag-shortest-paths.md)
-- [Is Acyclic](../../../topological-sort/is-acyclic.md)
+- [Acyclic directed graph](../../../topological-sort/is-acyclic.md)
 
 ## Proof depends on
 

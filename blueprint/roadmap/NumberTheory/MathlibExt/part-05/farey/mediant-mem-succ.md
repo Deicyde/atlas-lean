@@ -7,10 +7,11 @@ proof: formalized
 lean: Farey.IsFareyNeighbor.mediant_mem_succ
 ---
 
-# Mediant mem succ
+# Mediants that enter the next Farey set
 
-If the denominators of a Farey pair sum to `n + 1`, its mediant is a new
-member of the next Farey sequence.
+**Mediants that enter the next Farey set.** Let $n$ be a natural number and let $x$ and $y$
+be Farey neighbors of order $n$ whose denominators in lowest terms sum to $n + 1$. Then the
+mediant of $x$ and $y$ belongs to the Farey set $F_{n+1}$ and does not belong to $F_n$.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ member of the next Farey sequence.
 
 ## Proof depends on
 
-- [Mediant not mem](mediant-not-mem.md)
+- [The mediant of Farey neighbors is not in the Farey set](mediant-not-mem.md)
 - [Membership in the Farey set](mem-farey-finset-iff.md)
 
 ## Sources

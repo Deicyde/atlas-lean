@@ -20,7 +20,7 @@ of Fibonacci factorials takes the value $J_{1,F} = F_3! / F_1! = 2$.
 
 - [Fibonacci factorial](fibonacci-factorial.md)
 - [Fibonacci factorial at one](fibonacci-factorial-one.md)
-- [Fibonacci Factorial three](fibonacci-factorial-three.md)
+- [Fibonacci factorial at three](fibonacci-factorial-three.md)
 
 ## Sources
 

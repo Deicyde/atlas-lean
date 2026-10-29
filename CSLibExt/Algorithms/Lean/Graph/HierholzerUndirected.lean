@@ -326,12 +326,12 @@ private theorem uhierholzer_facts (E : List (V × V)) (s t : V) (hpar : EvenExce
   exact ⟨_, by rw [hret]; exact hh, by rw [hret]; exact hl, by rw [hret]; exact hp,
     by rw [hret]; exact hstuck, hsub, by rw [htime']; exact htime⟩
 
-/-- **Hierholzer's algorithm returns a trail.** Let $E$ be a list of undirected edges and $s$, $t$
-vertices such that exactly $s$ and $t$ have odd degree in $E$ (no vertex has odd degree when
-$s = t$). Then the vertex sequence $W$ returned by the undirected Hierholzer algorithm on $E$ from
-$s$ starts at $s$ and ends at $t$, and the consecutive pairs of $W$, as unordered pairs, form a
-sub-multiset of the edges of $E$ as unordered pairs: no edge is traversed more often than it
-occurs in $E$. -/
+/-- **Undirected Hierholzer's algorithm returns a trail.** Let $E$ be a list of undirected edges
+and $s$, $t$ vertices such that exactly $s$ and $t$ have odd degree in $E$ (no vertex has odd
+degree when $s = t$). Then the vertex sequence $W$ returned by the undirected Hierholzer algorithm
+on $E$ from $s$ starts at $s$ and ends at $t$, and the consecutive pairs of $W$, as unordered
+pairs, form a sub-multiset of the edges of $E$ as unordered pairs: no edge is traversed more often
+than it occurs in $E$. -/
 theorem uhierholzer_trail (E : List (V × V)) (s t : V) (hpar : EvenExcept E s t) :
     (uhierholzer E s).ret.head? = some s ∧ (uhierholzer E s).ret.getLast? = some t ∧
       ∃ rest, (E.map usym).Perm ((walkEdges (uhierholzer E s).ret).map usym ++ rest) := by
@@ -368,7 +368,7 @@ private theorem mem_of_uReach {E R' : List (V × V)} {W : List V} {s : V}
         · simp only at hpos; omega
         · simp only at hpos; omega
 
-/-- **Hierholzer's algorithm finds Euler paths.** Let $E$ be a list of undirected edges
+/-- **Undirected Hierholzer's algorithm finds Euler paths.** Let $E$ be a list of undirected edges
 (ordered pairs of vertices) and $s$, $t$ vertices such that exactly $s$ and $t$ have odd degree in
 $E$ (no vertex has odd degree when $s = t$), and suppose the first endpoint of every edge of $E$ is
 reachable from $s$ through edges of $E$. Then the vertex sequence returned by the undirected
@@ -388,11 +388,11 @@ theorem uhierholzer_isUEulerPath (E : List (V × V)) (s t : V) (hpar : EvenExcep
   refine ⟨hh, hl, ?_⟩
   simpa using hp.symm
 
-/-- **Hierholzer's algorithm finds Euler circuits.** Let $E$ be a list of undirected edges
-(ordered pairs of vertices) in which every vertex has even degree, and let $s$ be a vertex such
-that the first endpoint of every edge of $E$ is reachable from $s$ through edges of $E$. Then the
-vertex sequence returned by the undirected Hierholzer algorithm on $E$ from $s$ is an Euler path
-of $E$ from $s$ to $s$, that is, an Euler circuit at $s$. -/
+/-- **Undirected Hierholzer's algorithm finds Euler circuits.** Let $E$ be a list of undirected
+edges (ordered pairs of vertices) in which every vertex has even degree, and let $s$ be a vertex
+such that the first endpoint of every edge of $E$ is reachable from $s$ through edges of $E$. Then
+the vertex sequence returned by the undirected Hierholzer algorithm on $E$ from $s$ is an Euler
+path of $E$ from $s$ to $s$, that is, an Euler circuit at $s$. -/
 theorem uhierholzer_isUEulerCircuit (E : List (V × V)) (s : V) (hpar : ∀ x, udeg E x % 2 = 0)
     (hreach : ∀ e ∈ E, UReach E s e.1) : IsUEulerPath E s s (uhierholzer E s).ret :=
   uhierholzer_isUEulerPath E s s (fun x => by have := hpar x; split_ifs <;> omega) hreach

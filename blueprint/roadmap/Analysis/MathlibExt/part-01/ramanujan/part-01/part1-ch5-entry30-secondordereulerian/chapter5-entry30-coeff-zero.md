@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_zero
 ---
 
-# Chapter5 Entry30 Coeff zero
+# The Entry 30 coefficient at zero
 
-The coefficient at `0` is `0`.
+**The Entry 30 coefficient at zero.** For every function $a : \mathbb{N} \to \mathbb{C}$, the
+Entry 30 coefficient $c_a(0)$ is $0$.
 
 ## Depends on
 

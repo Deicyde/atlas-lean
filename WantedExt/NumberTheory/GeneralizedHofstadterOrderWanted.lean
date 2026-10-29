@@ -614,7 +614,13 @@ public theorem_wanted hofstadterF_iterate_eq_hofCount {k : ℕ} (hk : 1 ≤ k) (
       (∀ j < k, (hofstadterF k)^[j] n = hofCount k (j < ·) n) ∧
       (∀ i, 1 ≤ i → i < k → (hofstadterF k)^[k + i - 1] n = hofCount k (· = i) (n + i))
 
-/-- For `k ≥ 1`, `L_k(n) = n + C_k^{(=k)}(n) = n + F_k^{k-1}(n)`.
+/-- **The image length $L_k$ as a letter count.** Let $k \ge 1$. Let $F_k$ be the generalized
+Hofstadter function and $F_k^{k-1}$ its $(k-1)$-fold iterate, let $x_k[0]\,x_k[1] \cdots$ be the
+fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
+$\tau_k(x_k[0] \cdots x_k[n-1])$, and let $C_k^{(=k)}(n)$ be the number of indices $0 \le i < n$
+with $x_k[i] = k$. Then for every natural number $n$, $L_k(n) = n + C_k^{(=k)}(n)$ and
+$L_k(n) = n + F_k^{k-1}(n)$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -765,14 +771,23 @@ public theorem_wanted hofstadter_single_antecedent_count {k : ℕ} (hk : 1 ≤ k
             n) atTop (𝓝 (1 - α ^ (k - 1))) ∧
       1 - α ^ (k - 1) = 2 - β
 
-/-- For `j, j' ≥ 0` and `k, k' ≥ 1`, `L_k^j ≤ L_{k'}^{j'}` iff `F_{k'}^{j'} ≤ F_k^j`; and for
-every `n`: (a) `L_k^j(n) ≤ L_{k'}^{j'}(n)` iff `F_{k'}^{j'}(m) ≤ F_k^j(m)` with `m = L_k^j(n)`;
-(b) `L_k^j(n) < L_{k'}^{j'}(n)` iff `F_{k'}^{j'}(m) < F_k^j(m)` with `m = L_{k'}^{j'}(n)`;
-(c) `L_k^j(m) ≤ L_{k'}^{j'}(m)` for `m = F_k^j(n)` implies `F_{k'}^{j'}(n) ≤ F_k^j(n)`;
-(d) `F_k^j(n) < F_{k'}^{j'}(n)` implies `L_{k'}^{j'}(m) < L_k^j(m)` for `m = F_k^j(n)`.
-In (d) the paper prints `m = F_{k'}^{j'}(n)`; its proof derives (d) as the contrapositive of
-(c), which gives `m = F_k^j(n)`. The printed form fails for `k = 1, j = 1, k' = 4, j' = 2,
-n = 8`: `F_1(8) = 4 < F_4^2(8) = 5`, but `L_4^2(5) = L_1(5) = 10`.
+/-- **Order of iterates of $L_k$ against order of iterates of $F_k$.** Let $F_k$ be the
+generalized Hofstadter function, let $x_k[0]\,x_k[1] \cdots$ be the fixed point, beginning with
+$k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other letter $i$ to
+$i + 1$, let $L_k(n)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$, and write
+$f^j$ for the $j$-fold iterate of a function $f$. Let $k, k' \ge 1$ and $j, j' \ge 0$. Then
+$L_k^j(n) \le L_{k'}^{j'}(n)$ for every $n$ if and only if $F_{k'}^{j'}(n) \le F_k^j(n)$ for
+every $n$. Moreover, for every natural number $n$:
+(a) $L_k^j(n) \le L_{k'}^{j'}(n)$ if and only if $F_{k'}^{j'}(m) \le F_k^j(m)$ for
+$m = L_k^j(n)$;
+(b) $L_k^j(n) < L_{k'}^{j'}(n)$ if and only if $F_{k'}^{j'}(m) < F_k^j(m)$ for
+$m = L_{k'}^{j'}(n)$;
+(c) if $L_k^j(m) \le L_{k'}^{j'}(m)$ for $m = F_k^j(n)$, then $F_{k'}^{j'}(n) \le F_k^j(n)$;
+(d) if $F_k^j(n) < F_{k'}^{j'}(n)$, then $L_{k'}^{j'}(m) < L_k^j(m)$ for $m = F_k^j(n)$.
+
+In (d) the paper prints $m = F_{k'}^{j'}(n)$; its proof derives (d) as the contrapositive of
+(c), which gives $m = F_k^j(n)$. The printed form fails for $k = 1$, $j = 1$, $k' = 4$,
+$j' = 2$ and $n = 8$: $F_1(8) = 4 < F_4^2(8) = 5$, but $L_4^2(5) = L_1(5) = 10$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -790,8 +805,13 @@ public theorem_wanted hofL_iterate_le_iff_hofstadterF_iterate_le {k k' : ℕ} (h
         ((hofstadterF k)^[j] n < (hofstadterF k')^[j'] n →
           (hofL k')^[j'] ((hofstadterF k)^[j] n) < (hofL k)^[j] ((hofstadterF k)^[j] n))
 
-/-- For `k, n ≥ 1` and `0 ≤ j ≤ k`: `L_k(n) ≥ L_{k+1}(n)`, i.e.
-`C_k^{(=k)}(n) ≥ C_{k+1}^{(=k+1)}(n)`, and `L_k^j(n) < L_{k+1}^{j+1}(n)`.
+/-- **Comparing $L_k$ with $L_{k+1}$.** Let $x_k[0]\,x_k[1] \cdots$ be the fixed point,
+beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other
+letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$,
+write $L_k^j$ for the $j$-fold iterate of $L_k$, and let $C_k^{(=k)}(n)$ be the number of
+indices $i < n$ with $x_k[i] = k$. For all $k \ge 1$, $n \ge 1$ and $j$ with $0 \le j \le k$:
+$L_{k+1}(n) \le L_k(n)$, $C_{k+1}^{(=k+1)}(n) \le C_k^{(=k)}(n)$, and
+$L_k^j(n) < L_{k+1}^{j+1}(n)$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -800,7 +820,11 @@ public theorem_wanted hofL_succ_comparison {k n j : ℕ} (hk : 1 ≤ k) (hn : 1 
     hofL (k + 1) n ≤ hofL k n ∧ hofCount (k + 1) (· = k + 1) n ≤ hofCount k (· = k) n ∧
       (hofL k)^[j] n < (hofL (k + 1))^[j + 1] n
 
-/-- For `k ≥ 1` and `j ≥ 0`, `L_k^j ≥ L_{k+1}^j`.
+/-- **Iterates of $L_{k+1}$ lie below iterates of $L_k$.** Let $x_k[0]\,x_k[1] \cdots$ be the
+fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
+$\tau_k(x_k[0] \cdots x_k[n-1])$, and write $L_k^j$ for the $j$-fold iterate of $L_k$. For
+every $k \ge 1$, every $j \ge 0$ and every natural number $n$, $L_{k+1}^j(n) \le L_k^j(n)$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -829,9 +853,14 @@ Theorem 23 (`jis-2026-26.3.3-thm-23`). -/
 public theorem_wanted hofstadterF_iterate_succ_le_iterate {k j : ℕ} (hk : 1 ≤ k) (hj : j ≤ k) :
     (hofstadterF (k + 1))^[j + 1] ≤ (hofstadterF k)^[j]
 
-/-- For `k ≥ 1`: `L_{k+1}^{j+1}(1) - L_k^j(1) = 1` for `0 ≤ j ≤ 2k`, and
-`= -(j-2k-1)(j-2k+2)/2` for `2k ≤ j ≤ 3k` (stated with the `2` cleared, in `ℤ`); in particular
-`L_{k+1}^{2k+2}(1) = L_k^{2k+1}(1)`; and `L_{k+1}^{j+1}(1) < L_k^j(1)` for `j ≥ 2k + 2`.
+/-- **Comparing $L_{k+1}^{j+1}(1)$ with $L_k^j(1)$.** Let $x_k[0]\,x_k[1] \cdots$ be the fixed
+point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
+$\tau_k(x_k[0] \cdots x_k[n-1])$, and write $L_k^j$ for the $j$-fold iterate of $L_k$. Let
+$k \ge 1$, and take differences in $\mathbb{Z}$. Then $L_{k+1}^{j+1}(1) - L_k^j(1) = 1$ for
+every $j \le 2k$; $2\bigl(L_{k+1}^{j+1}(1) - L_k^j(1)\bigr) = -(j - 2k - 1)(j - 2k + 2)$ for
+every $j$ with $2k \le j \le 3k$; $L_{k+1}^{2k+2}(1) = L_k^{2k+1}(1)$; and
+$L_{k+1}^{j+1}(1) < L_k^j(1)$ for every $j \ge 2k + 2$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -844,8 +873,12 @@ public theorem_wanted hofL_iterate_one_succ_sub {k : ℕ} (hk : 1 ≤ k) :
       (hofL (k + 1))^[2 * k + 2] 1 = (hofL k)^[2 * k + 1] 1 ∧
       (∀ j, 2 * k + 2 ≤ j → (hofL (k + 1))^[j + 1] 1 < (hofL k)^[j] 1)
 
-/-- For `k ≥ 1` and `j ≥ k + 2`, `L_k^j(n_j) > L_{k+1}^{j+1}(n_j)` where `n_j = 2k + 3 - j` if
-`k + 2 ≤ j ≤ 2k + 2` and `n_j = 1` if `j ≥ 2k + 2`.
+/-- **Points where $L_k^j$ exceeds $L_{k+1}^{j+1}$.** Let $x_k[0]\,x_k[1] \cdots$ be the fixed
+point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
+$\tau_k(x_k[0] \cdots x_k[n-1])$, and write $L_k^j$ for the $j$-fold iterate of $L_k$. Let
+$k \ge 1$. Then $L_{k+1}^{j+1}(2k + 3 - j) < L_k^j(2k + 3 - j)$ for every $j$ with
+$k + 2 \le j \le 2k + 2$, and $L_{k+1}^{j+1}(1) < L_k^j(1)$ for every $j \ge 2k + 2$.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,
@@ -866,9 +899,15 @@ Proposition 26 (`jis-2026-26.3.3-prop-26`). -/
 public theorem_wanted hofCount_one_succ_le {k : ℕ} (hk : 1 ≤ k) (n : ℕ) :
     hofCount (k + 1) (· = 1) n ≤ hofCount k (· = 1) n
 
-/-- For `3 ≤ i < k`: `C_k^{(=i)}(n) < C_{k+1}^{(=i)}(n)` at `n = i + L_k^{2k+2}(1)`, and
-`C_k^{(=i)}(n) > C_{k+1}^{(=i)}(n)` at `n = i + L_{k+1}^{k+i}(1)`; so the letter counts of
-`x_k` and `x_{k+1}` are not ordered for these letters.
+/-- **Witnesses that the letter counts of $x_k$ and $x_{k+1}$ are not ordered.** For a natural
+number $k$, let $\tau_k$ be the substitution sending the letter $k$ to $k\,1$ and every other
+letter $a$ to $a + 1$, let $x_k = x_k[0]\,x_k[1] \cdots$ be its fixed point beginning with $k$,
+let $C_k^{(=i)}(n)$ be the number of indices $j < n$ with $x_k[j] = i$, let $L_k(n)$ be the
+length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$, and write $L_k^j$ for the $j$-fold iterate
+of $L_k$. For all natural numbers $i$ and $k$ with $3 \le i < k$, put $n = i + L_k^{2k+2}(1)$
+and $m = i + L_{k+1}^{k+i}(1)$. Then $C_k^{(=i)}(n) < C_{k+1}^{(=i)}(n)$ and
+$C_{k+1}^{(=i)}(m) < C_k^{(=i)}(m)$, so for these letters $i$ the letter counts of $x_k$ and
+$x_{k+1}$ are not ordered.
 
 Source: Pierre Letouzey, Shuo Li, and Wolfgang Steiner, *Pointwise Order of Generalized
 Hofstadter Functions G, H, and Beyond*, Journal of Integer Sequences 29 (2026), Article 26.3.3,

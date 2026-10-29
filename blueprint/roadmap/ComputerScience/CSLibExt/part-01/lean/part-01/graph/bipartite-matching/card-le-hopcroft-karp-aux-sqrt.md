@@ -26,7 +26,7 @@ $\lfloor \sqrt{b} \rfloor$, and each further phase adds an edge.
 ## Proof depends on
 
 - [Partner arrays that describe a matching](valid.md)
-- [Card le hopcroft Karp Aux of le](card-le-hopcroft-karp-aux-of-le.md)
+- [Closing a deficit of $f$ in $f$ Hopcroft–Karp phases](card-le-hopcroft-karp-aux-of-le.md)
 - [Kőnig's certificate](card-le-of-no-free.md)
 - [First free round](first-free-round.md)
 - [When there is no first free round](first-free-round-eq-none.md)

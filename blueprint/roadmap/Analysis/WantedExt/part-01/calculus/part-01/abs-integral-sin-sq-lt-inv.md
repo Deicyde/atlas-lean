@@ -5,14 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.IntegralSinSqUnitWindowBoundWanted.abs_integral_sin_sq_lt_inv
 ---
 
-# Integral Sin Sq Unit Window Bound Wanted
+# Unit-window bound for the integral of $\sin(t^2)$
 
-Define
-
-\[
-f(x)=\int_x^{x+1}\sin(t^2)\,dt.
-\]
-Prove that $|f(x)|<1/x$ if $x>0$.
+**Unit-window bound for the integral of $\sin(t^2)$.** Let $f : \mathbb{R} \to \mathbb{R}$ be
+given by $f(x) = \int_x^{x+1} \sin(t^2)\,dt$. Then $|f(x)| < 1/x$ for every real $x > 0$.
 
 ## Depends on
 

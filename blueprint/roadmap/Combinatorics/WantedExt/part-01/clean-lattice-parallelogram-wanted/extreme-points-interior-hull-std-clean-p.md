@@ -19,7 +19,7 @@ and $w - v_i$ for even $i$ with $0 \le i < m$.
 ## Depends on
 
 - [Convergent vectors of a continued fraction](convergent-vec.md)
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources

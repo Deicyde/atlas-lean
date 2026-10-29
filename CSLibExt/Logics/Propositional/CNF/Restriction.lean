@@ -91,7 +91,9 @@ end CNFClause
 
 namespace CNF
 
-/-- The finite set of variables occurring anywhere in a CNF formula. -/
+/-- **Variables of a CNF formula.** The variables of a CNF formula $\varphi$ form the union of the
+sets of variables of its clauses, that is, the finite set of natural numbers $x$ such that some
+clause of $\varphi$ contains a literal $(x, b)$ for some polarity $b$. -/
 def vars : CNF → Finset Nat
   | [] => ∅
   | clause :: formula => clause.vars ∪ vars formula
@@ -114,9 +116,13 @@ theorem mem_vars {x : Nat} {formula : CNF} :
       simp only [vars_cons, Finset.mem_union, CNFClause.mem_vars, ih, List.mem_cons]
       aesop
 
-/-- Simplify a CNF formula using one assigned literal. Clauses containing the
-literal are true and disappear; the assigned variable disappears from every
-other clause. -/
+/-- **Restriction of a CNF formula by a literal.** Given a literal $\ell = (x, b)$, the
+restriction of a CNF formula $\varphi$ by $\ell$ is obtained by deleting every clause of $\varphi$
+that contains $\ell$ and replacing every other clause by its restriction by $\ell$, the clause
+obtained by deleting every literal whose variable is $x$, of either polarity; the remaining
+clauses keep their order.
+
+The deleted clauses are true under every assignment that gives $x$ the value $b$. -/
 def restrict (literal : Nat × Bool) : CNF → CNF
   | [] => []
   | clause :: formula =>
@@ -138,7 +144,8 @@ theorem restrict_cons (literal : Nat × Bool) (clause : CNFClause) (formula : CN
         clause.restrict literal :: CNF.restrict literal formula := by
   rfl
 
-/-- Restriction can only remove variables. -/
+/-- **Restriction does not add variables.** For every CNF formula $\varphi$ and every literal
+$\ell$, every variable of the restriction of $\varphi$ by $\ell$ is a variable of $\varphi$. -/
 theorem vars_restrict_subset (literal : Nat × Bool) (formula : CNF) :
     (formula.restrict literal).vars ⊆ formula.vars := by
   induction formula with
@@ -192,7 +199,9 @@ theorem card_vars_restrict_lt {literal : Nat × Bool} {formula : CNF}
     (formula.restrict literal).vars.card < formula.vars.card :=
   Finset.card_lt_card (vars_restrict_ssubset hmem)
 
-/-- Restriction preserves satisfaction by assignments that extend the chosen literal. -/
+/-- **Satisfaction of a restricted CNF formula.** Let $\varphi$ be a CNF formula, $\ell = (x, b)$
+a literal, and $v$ an assignment of Booleans to variables with $v(x) = b$. Then $v$ satisfies the
+restriction of $\varphi$ by $\ell$ if and only if $v$ satisfies $\varphi$. -/
 theorem satisfies_restrict_iff {assignment : Nat → Bool} {literal : Nat × Bool}
     {formula : CNF} (hassignment : assignment literal.1 = literal.2) :
     (formula.restrict literal).Satisfies assignment ↔ formula.Satisfies assignment := by

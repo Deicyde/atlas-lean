@@ -31,7 +31,7 @@ state $s$ to program counter $|P| + \ell(c)$, the same stack $\sigma$ and state 
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Stack machine configurations](config.md)
 - [Step relation of the stack machine](step.md)
 - [Instruction count of an arithmetic expression](alen.md)

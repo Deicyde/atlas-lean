@@ -23,7 +23,7 @@ $\mathrm{EQ}_{\mathrm{DFA}}$.
 ## Proof depends on
 
 - [Acceptance test for encoded DFAs](accepts-b.md)
-- [Equiv B](equiv-b-2.md)
+- [Equivalence test for encoded DFAs](equiv-b-2.md)
 - [Letters of an encoded DFA](../../../automata/da/encoded-dfa/letters.md)
 - [Correctness of the bounded reachability search](mem-reach-n-iff.md)
 - [Successors of a pair of states](pair-next.md)

@@ -491,7 +491,8 @@ theorem square_canPassOther : CanPassOther unitSquare := by
       simpa [Motion.position, squareMotionOther, min_eq_right ht',
         max_eq_left ht'] using h
 
-/-- The unit square is an ambidextrous sofa. -/
+/-- **The unit square is an ambidextrous sofa.** The unit square $[0,1] \times [0,1]$ in the
+complex plane is an ambidextrous sofa. -/
 theorem square_isAmbidextrousSofa : IsAmbidextrousSofa unitSquare :=
   ⟨square_isSofa, square_canPassZ⟩
 

@@ -27,7 +27,7 @@ $\{I\}\ \mathrm{while}\ b\ \mathrm{do}\ C$ is its invariant $I$, whatever $Q$ is
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [IMP program states](../syntax/state.md)
 
 ## Sources

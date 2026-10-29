@@ -14,7 +14,7 @@ $d$, then every augmenting path for $\mu$ has at least $d + 1$ pairs.
 
 ## Depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [First free round](first-free-round.md)
 
 ## Proof depends on

@@ -21,7 +21,7 @@ same clocked evaluator.
 
 - [Explicit configurations](../code/cfg.md)
 - [Acting on a configuration](../code/act.md)
-- [Output](../code/output.md)
+- [Output of a configuration](../code/output.md)
 - [Clocked configuration of a code](../code/cfg-after.md)
 - [Initial configuration of the code simulation](../code/init.md)
 - [Table lookup of a code](../code/lookup.md)

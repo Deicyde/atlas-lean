@@ -23,7 +23,7 @@ augmenting paths.
 
 ## Proof depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Alternating breadth-first layers](layers.md)
 - [No augmenting path is shorter than a phase's](le-length-of-is-augmenting-path.md)
 - [Phase search over candidates](phase-aux.md)

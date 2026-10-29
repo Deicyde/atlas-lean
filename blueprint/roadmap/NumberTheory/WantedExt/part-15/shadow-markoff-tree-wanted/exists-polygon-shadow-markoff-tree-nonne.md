@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_polygon_shadowMarkoffTree_nonneg_iff
 ---
 
-# Exists polygon shadow Markoff Tree nonneg iff
+# Nonnegativity on a shadow Markoff tree is governed by finitely many points
 
-There is a finite set `V ⊆ ℚ³` (a convex polygon `conv V` in an affine chart of `ℚP²`) such
-that for every initial triple `(1 + αε, 1 + βε, 1 + γε)` with `v = (α, β, γ) ∈ ℤ³`, every solution
-of its shadow Markoff tree is nonnegative if and only if `v` lies in the cone over `conv V`, i.e.
-the point `(α : β : γ)` belongs to the polygon.
+**Nonnegativity on a shadow Markoff tree is governed by finitely many points.** There is a
+finite set $V \subseteq \mathbb{Q}^3$ such that for every
+$v = (\alpha, \beta, \gamma) \in \mathbb{Z}^3$ the following are equivalent: every state $(x, y)$
+of the shadow Markoff tree of $v$, the tree of the initial triple
+$(1 + \alpha\varepsilon, 1 + \beta\varepsilon, 1 + \gamma\varepsilon)$ with $\varepsilon^2 = 0$,
+has all coordinates of its classical part $x$ and of its shadow part $y$ nonnegative; and $v = tw$
+for some rational $t \ge 0$ and some point $w$ of the convex hull of $V$ in $\mathbb{Q}^3$.
+
+In projective terms, the source describes the points $(\alpha : \beta : \gamma)$ with a
+nonnegative tree as a convex polygon in an affine chart of the rational projective plane; the
+statement above asserts only that some finite set $V$ exists.
 
 ## Depends on
 

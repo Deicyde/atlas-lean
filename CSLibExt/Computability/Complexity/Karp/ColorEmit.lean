@@ -93,8 +93,9 @@ The counter stacks hold only the clause-end symbol, used as a unary unit. -/
   | .O => Bool
   | _ => Sym
 
-/-- **Counters read by copy sites.** The three counters a copy site of the 3-coloring emitter
-can read: the next free vertex, the current OR output, and an earlier literal vertex. -/
+/-- **Counters read by copy sites of the 3-COLOR emitter.** The type with the three elements
+$n, r, u$, naming the counters of the 3-coloring emitter that a copy site can read: the next free
+vertex $n$, the current OR output $r$ and an earlier literal vertex $u$. -/
 inductive Src | n | r | u
   deriving DecidableEq
 
@@ -858,7 +859,13 @@ theorem fAB_run (b : Bool) : ∃ v', Run prog (2 * m.n + 2) ⟨some (.fA b), v, 
   rw [e] at h
   exact ⟨v', h⟩
 
-/-- Move `E` back onto `D`, symbol by symbol. -/
+/-- **3-COLOR emitter: moving the walk side back.** Let $L$ be a list of token symbols each of
+which is a walk token (a name bit, a literal marker or the clause symbol), let $m$ be a quiescent
+state of the 3-COLOR emitter whose stack $E$ (the walk's other side) holds $L$, and let $v$ be a
+Boolean. Then there is a Boolean $v'$ such that the emitter runs in exactly $|L| + 1$ steps from
+label $\mathsf{back}$ with internal state $v$ and the stacks of $m$ to label $\mathsf{putN}$ with
+internal state $v'$ and the stacks of the quiescent state obtained from $m$ by emptying $E$ and
+replacing the occurrence stack $D$ by the reverse of $L$ followed by the old contents of $D$. -/
 theorem back_run : ∀ (L : List Sym), (∀ s ∈ L, isTok s = true) → ∀ (m : MS) (v : Bool),
     m.e = L → ∃ v', Run prog (L.length + 1) ⟨some .back, v, m.stk⟩
       ⟨some .putN, v', {m with e := [], d := L.reverse ++ m.d}.stk⟩ := by

@@ -42,7 +42,7 @@ navigation: module
 
 - [Strict upper bound of a finite set of naturals](above.md)
 - [Renaming step of the substitution lemma](gen-subst-more-general.md)
-- [Substitution lemma](subst-2.md)
+- [Hindley–Milner typing is stable under type substitution](subst-2.md)
 
 ## Inversion
 

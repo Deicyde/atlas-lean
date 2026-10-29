@@ -334,9 +334,13 @@ theorem_wanted not_isNearFPerfect_two_mul_prime_pow
     (p a : ℕ) (hp : p.Prime) :
     ¬ IsNearFPerfect (2 * p ^ a)
 
-/-- **Theorem 14**, part 1: the only `[1,ℓ]`-near-perfect
-number of the form `2p^a` (any `ℓ ≥ 1`) is `18` (and `18`
-is one, for `ℓ = 1` with `d = 3`).
+/-- **The only $[1,\ell]$-near-perfect number of the form $2p^a$ is $18$.** For natural numbers
+$\ell$ and $n$, say that $n$ is $[1,\ell]$-near-perfect when some divisor $d$ of $n$ with $d < n$
+satisfies $\sigma(n) = n + d + \ell n$, where $\sigma(n)$ is the sum of the divisors of $n$. Then
+$18$ is $[1,1]$-near-perfect, and for every odd prime $p$ and all natural numbers $a$ and
+$\ell \ge 1$, if $2p^a$ is $[1,\ell]$-near-perfect then $2p^a = 18$.
+
+The divisor for $18$ is $d = 3$. This is part 1 of Theorem 14 of the source.
 
 Source: Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta,
 and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient
@@ -410,10 +414,11 @@ theorem_wanted not_isDeficientFkPerfect_two_mul_pow
     (k p a : ℕ) (hk : 2 < k) (hp : p.Prime) (hpo : Odd p) :
     ¬ IsDeficientFkPerfect k (2 * p ^ a)
 
-/-- **Theorem 19**: there is no deficient `F_k`-perfect
-number of the form `p₁^a p₂^b` (distinct odd primes,
-`k > 1`, `a, b ≥ 1`) when `a + b` is odd or both `a` and
-`b` are odd.
+/-- **No deficient $F_k$-perfect number $p_1^a p_2^b$ with $a + b$ odd or $a, b$ both odd.** Let
+$k > 1$ be a natural number, let $p_1 \ne p_2$ be odd primes and let $a, b \ge 1$ be natural
+numbers such that $a + b$ is odd or both $a$ and $b$ are odd. Then $n = p_1^a p_2^b$ is not
+deficient $F_k$-perfect: there is no divisor $d$ of $n$ with $d < n$ and
+$\sigma_k(n) + d^k = n^k + 3n$, where $\sigma_k(n) = \sum_{e \mid n} e^k$.
 
 Source: Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta,
 and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient

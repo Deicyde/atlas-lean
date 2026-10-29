@@ -23,7 +23,7 @@ of a Fibonacci heap fails if and only if the heap's list of root trees is empty.
 - [Valid Fibonacci forests](valid-2.md)
 - [Sublists of valid Fibonacci forests are valid](sublist.md)
 - [Consolidation of a forest](consolidate.md)
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Minimum root of a forest](min-root.md)
 - [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
 - [Minimum-tree removal in a Fibonacci forest](remove-min-tree-spec.md)

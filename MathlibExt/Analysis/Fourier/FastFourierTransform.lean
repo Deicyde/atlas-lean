@@ -80,7 +80,12 @@ private theorem fft_pow_mul_mod (a : ℂ) (n t K : ℕ) (ha : a ^ n = 1) :
     _ = (a ^ t) ^ (K % n) := pow_eq_pow_mod K hat
     _ = a ^ (t * (K % n)) := (pow_mul a t (K % n)).symm
 
-/-- A DFT sum at an `n`th root of unity depends only on the frequency modulo `n`. -/
+/-- **The DFT sum at a root of unity depends only on the frequency modulo the length.** Let $n$
+be a natural number and let $\omega \in \mathbb{C}$ satisfy $\omega^n = 1$. Then for every
+$f : \mathbb{N} \to \mathbb{C}$ and every natural number $K$, the discrete Fourier sum of length $n$
+at frequency $K$ equals the one at frequency $K \bmod n$:
+$$\sum_{j < n} \omega^{jK} f(j) = \sum_{j < n} \omega^{j (K \bmod n)} f(j),$$
+where $K \bmod n$ is the remainder of $K$ on division by $n$ (with $K \bmod 0 = K$). -/
 public theorem dftSum_mod (n : ℕ) (ω : ℂ) (hω : ω ^ n = 1) (f : ℕ → ℂ) (K : ℕ) :
     dftSum n ω f K = dftSum n ω f (K % n) := by
   unfold dftSum

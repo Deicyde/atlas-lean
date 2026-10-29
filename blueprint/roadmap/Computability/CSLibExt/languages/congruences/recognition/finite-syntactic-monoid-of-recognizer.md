@@ -15,7 +15,7 @@ $M$, then the syntactic monoid of $L$ is finite.
 ## Depends on
 
 - [Recognition of a language by a monoid morphism](recognizes.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 

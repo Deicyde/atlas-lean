@@ -18,8 +18,8 @@ process.
 ## Depends on
 
 - [Resource-allocation snapshot](alloc-state.md)
-- [Circular Wait](circular-wait.md)
-- [Deadlocked](deadlocked.md)
+- [Circular wait](circular-wait.md)
+- [Deadlocked set of processes](deadlocked.md)
 
 ## Proof depends on
 

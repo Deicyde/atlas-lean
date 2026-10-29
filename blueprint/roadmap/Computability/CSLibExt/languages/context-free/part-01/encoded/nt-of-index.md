@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonterminals mentioned by a grammar](used-nt.md)
+- [List of nonterminals mentioned by a grammar](used-nt.md)
 
 ## Sources
 

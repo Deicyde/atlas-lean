@@ -56,7 +56,14 @@ def WellFormed (i : QuadraticAssignmentInstance) : Prop :=
   i.2.1.length = i.1 ∧ (∀ row ∈ i.2.1, row.length = i.1) ∧
     i.2.2.1.length = i.1 ∧ ∀ row ∈ i.2.2.1, row.length = i.1
 
-/-- A permutation of total cost at most `K`. -/
+/-- **Feasible quadratic assignment instances.** An instance $(n, F, D, K)$ of quadratic
+assignment is feasible when there is a permutation $\pi$ of the numbers $0, \dots, n - 1$ such
+that
+$$
+\sum_{a < n} \sum_{b < n} F_{a b} \, D_{\pi(a) \pi(b)} \le K.
+$$
+Here $F_{a b}$ is entry $b$ of row $a$ of $F$, and likewise for $D$; an entry that is missing,
+because the matrix has too few rows or the row is too short, is read as $0$. -/
 def QuadraticAssignmentFeasible
     (i : QuadraticAssignmentInstance) : Prop :=
   ∃ perm : List ℕ, perm.Perm (List.range i.1) ∧

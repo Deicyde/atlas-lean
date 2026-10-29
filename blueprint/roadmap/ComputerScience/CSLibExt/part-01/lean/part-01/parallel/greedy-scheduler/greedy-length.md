@@ -17,7 +17,7 @@ This is a weakening of the greedy scheduling bound $pT \le n + (p - 1)D$.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 - [Greedy schedule](greedy.md)
 - [Length of a schedule](../brent/length.md)
 - [Span of a computation DAG](../brent/span.md)

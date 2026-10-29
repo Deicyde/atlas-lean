@@ -24,7 +24,7 @@ output $(i, j)$.
 - [Arithmetic circuit](arithmetic-circuit.md)
 - [Value of a gate in a circuit](evaluate-node.md)
 - [Arithmetic gate](arithmetic-gate.md)
-- [Evaluate](evaluate-2.md)
+- [Gate evaluation](evaluate-2.md)
 - [Arithmetic operand](arithmetic-operand.md)
 - [Operand evaluation](evaluate.md)
 

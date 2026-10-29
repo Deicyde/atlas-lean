@@ -449,9 +449,9 @@ theorem report_build [NeZero d] (a : Fin d) (pts : List (Fin d → Int))
       (build a pts).toList.filter (fun p => inBox lo hi p) :=
   report_eq_filter (valid_build a pts) lo hi
 
-/-- **Range report of a built kd-tree.** Let $d \ge 1$. For every starting axis $a$, every
-list $P$ of points of $\mathbb{Z}^d$ and all $lo, hi \in \mathbb{Z}^d$, the range report for
-the box $[lo, hi]$ of the kd-tree built from $P$ starting at axis $a$ is a permutation of
+/-- **Range report of a built kd-tree up to order.** Let $d \ge 1$. For every starting axis $a$,
+every list $P$ of points of $\mathbb{Z}^d$ and all $lo, hi \in \mathbb{Z}^d$, the range report
+for the box $[lo, hi]$ of the kd-tree built from $P$ starting at axis $a$ is a permutation of
 the list of entries of $P$ that lie in the box, that is, the points $p$ with
 $lo_i \le p_i \le hi_i$ for every coordinate $i$. -/
 theorem report_build_perm [NeZero d] (a : Fin d) (pts : List (Fin d → Int))
@@ -461,11 +461,11 @@ theorem report_build_perm [NeZero d] (a : Fin d) (pts : List (Fin d → Int))
   rw [report_build]
   exact (toList_build_perm a pts).filter _
 
-/-- **Range report of a built kd-tree.** Let $d \ge 1$, let $a \in \{0, \dots, d-1\}$, let $P$
-be a list of points in $\mathbb{Z}^d$ and let $lo, hi, p \in \mathbb{Z}^d$. Then $p$ occurs in
-the range report, for the box $[lo, hi]$, of the kd-tree built from $P$ by median splits
-starting at axis $a$ if and only if $p$ occurs in $P$ and $lo_i \le p_i \le hi_i$ for every
-coordinate $i$. -/
+/-- **Membership in the range report of a built kd-tree.** Let $d \ge 1$, let
+$a \in \{0, \dots, d-1\}$, let $P$ be a list of points in $\mathbb{Z}^d$ and let
+$lo, hi, p \in \mathbb{Z}^d$. Then $p$ occurs in the range report, for the box $[lo, hi]$, of the
+kd-tree built from $P$ by median splits starting at axis $a$ if and only if $p$ occurs in $P$ and
+$lo_i \le p_i \le hi_i$ for every coordinate $i$. -/
 theorem mem_report_build_iff [NeZero d] (a : Fin d) (pts : List (Fin d → Int))
     {lo hi p : Fin d → Int} :
     p ∈ (build a pts).report lo hi ↔ p ∈ pts ∧ inBox lo hi p := by

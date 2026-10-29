@@ -21,7 +21,7 @@ to $\mathrm{sch}$.
 ## Proof depends on
 
 - [Databases conforming to a schema](conforms.md)
-- [Eval](eval-2.md)
+- [Value of a query](eval-2.md)
 - [Schema of a query](schema.md)
 - [Tuple](tuple.md)
 

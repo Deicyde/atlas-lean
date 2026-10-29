@@ -97,7 +97,11 @@ theorem cost_breakEven_le {B : ℕ} (hB : 1 ≤ B) (d : ℕ) :
     have : B ≤ 2 * B - 1 := by omega
     exact Nat.mul_le_mul_right d this
 
-/-- The break-even strategy is `2`-competitive. -/
+/-- **The break-even strategy pays at most twice the optimum.** For every purchase price $B \ge 1$
+and every season length $d \in \mathbb{N}$, the cost $\mathrm{cost}_B(\mathrm{breakEven}_B, d)$ of
+the break-even strategy for a season of $d$ days is at most $2 \cdot \mathrm{opt}_B(d)$, twice
+the offline optimum $\mathrm{opt}_B(d)$. In particular, the break-even strategy is
+$2$-competitive. -/
 theorem cost_breakEven_le_two_mul {B : ℕ} (hB : 1 ≤ B) (d : ℕ) :
     cost B (breakEven B) d ≤ 2 * opt B d := by
   have h := cost_breakEven_le hB d

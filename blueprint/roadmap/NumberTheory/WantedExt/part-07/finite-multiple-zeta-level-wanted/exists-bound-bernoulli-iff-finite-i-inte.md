@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_bound_bernoulli_iff_finite_iInter
 ---
 
-# Lemma 4
+# Criterion for a uniform bound on the least non-vanishing Bernoulli index
 
-**Lemma 4** (Lemma 5.9). Problem 5.8 (a uniform bound `M` with `g_p ≤ M` for every
-prime `p ≥ 5`) holds iff for some `M ≥ 5` the set `⋂_{3 ≤ k ≤ M, k odd} I(k)` is finite,
-`I(k) = {p prime : p ∣ B_{p-k}}`.
+**Criterion for a uniform bound on the least non-vanishing Bernoulli index.** The following
+are equivalent:
+(a) there is a natural number $M$ such that for every prime $p \ge 5$ there is an odd integer
+$k$ with $3 \le k \le M$, $k < p$ and $p \nmid \operatorname{num}(B_{p-k})$;
+(b) there is a natural number $M \ge 5$ such that only finitely many primes $p$ satisfy $k < p$
+and $p \mid \operatorname{num}(B_{p-k})$ for every odd integer $k$ with $3 \le k \le M$.
 
-`g_p ≤ M` is written as the existence of an odd `3 ≤ k ≤ M`, `k < p`, with
-`p ∤ num(B_{p-k})`; `I(k)` is restricted to `p > k`, where `B_{p-k}` is defined.
+Here $B_n$ is the $n$-th Bernoulli number, with $B_1 = +1/2$ (only even indices $n \ge 2$ occur),
+and $\operatorname{num}(B_n)$ is its numerator in lowest terms.
+
+Condition (a) says that the least such $k$, the source's $g_p$, is bounded uniformly in $p$;
+condition (b) says that $\bigcap_{3 \le k \le M,\ k \text{ odd}} I(k)$ is finite, where $I(k)$ is
+the set of primes $p > k$ with $p \mid \operatorname{num}(B_{p-k})$.
 
 ## Depends on
 

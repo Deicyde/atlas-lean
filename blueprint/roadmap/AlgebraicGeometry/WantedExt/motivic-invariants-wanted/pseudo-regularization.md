@@ -17,7 +17,7 @@ is viewed as a birational map.
 ## Depends on
 
 - [Birational map](birational-map.md)
-- [Variety over a field](variety.md)
+- [Integral variety over a field](variety.md)
 
 ## Sources
 

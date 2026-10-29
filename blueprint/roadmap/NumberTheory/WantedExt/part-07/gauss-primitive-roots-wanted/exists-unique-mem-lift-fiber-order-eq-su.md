@@ -15,7 +15,7 @@ multiplicative order $p - 1$ modulo $p^2$.
 
 ## Depends on
 
-- [Lift Fiber](lift-fiber.md)
+- [Fibers of reduction modulo $p$ on units modulo $p^2$](lift-fiber.md)
 
 ## Sources
 

@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_toNat_le3
 ---
 
-# U9 to Nat le3
+# The truncated continuous Breusch function is at most 3
 
-Truncated `G9r` values are at most `3`.
+**The truncated continuous Breusch function is at most 3.** For every real $x \ge 0$, the
+continuous Breusch function $G$ satisfies $\max(G(x), 0) \le 3$.
 
 ## Depends on
 

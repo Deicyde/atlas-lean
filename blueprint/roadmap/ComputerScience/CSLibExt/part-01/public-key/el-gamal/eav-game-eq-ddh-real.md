@@ -18,13 +18,13 @@ reduction.
 ## Depends on
 
 - [ElGamal eavesdropping adversary](adversary.md)
-- [Ddh Real](ddh-real.md)
+- [Real DDH experiment](ddh-real.md)
 - [ElGamal eavesdropping experiment](eav-game.md)
-- [Reduction](reduction.md)
+- [DDH distinguisher from an ElGamal eavesdropper](reduction.md)
 
 ## Proof depends on
 
-- [Pick](pick.md)
+- [Message selected by the challenge bit](pick.md)
 - [Group exponentiation with modular exponents](../diffie-hellman/gpow.md)
 
 ## Sources

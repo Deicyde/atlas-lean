@@ -23,7 +23,7 @@ the vertices $m$ and $v$ are strongly connected exactly when $v$ lies in $B$.
 
 ## Proof depends on
 
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Each computed component is a full mutual-reachability class](component-maximal.md)
 - [Computed components have no repeated vertices](components-nodup.md)
 - [Computed components are nonempty](components-nonempty.md)

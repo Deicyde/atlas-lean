@@ -34,7 +34,7 @@ an MPCP solution.
 - [The star symbol](star.md)
 - [A star after every letter](star-after.md)
 - [A star before every letter](star-before.md)
-- [The start domino](start-domino.md)
+- [The start domino of the MPCP-to-PCP reduction](start-domino.md)
 - [Top word of a sequence of dominoes](top.md)
 - [Erasing the markers from a domino](unmap.md)
 

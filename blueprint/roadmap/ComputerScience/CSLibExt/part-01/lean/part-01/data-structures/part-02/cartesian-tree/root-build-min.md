@@ -16,7 +16,7 @@ and $m \le y$ for every element $y$ of $xs$.
 ## Depends on
 
 - [Cartesian tree of a list](build.md)
-- [Root key of a binary tree](root.md)
+- [Optional root key of a binary tree](root.md)
 
 ## Proof depends on
 

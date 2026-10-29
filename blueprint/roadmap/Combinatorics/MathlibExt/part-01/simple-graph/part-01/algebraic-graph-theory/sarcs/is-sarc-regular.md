@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [SArc](sarc.md)
+- [$s$-arc](sarc.md)
 
 ## Sources
 

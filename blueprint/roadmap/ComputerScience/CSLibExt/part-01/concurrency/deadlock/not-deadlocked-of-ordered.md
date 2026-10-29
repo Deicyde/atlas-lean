@@ -16,7 +16,7 @@ whenever some process requests $r$ and holds $r'$, then no set of processes is d
 ## Depends on
 
 - [Resource-allocation snapshot](alloc-state.md)
-- [Deadlocked](deadlocked.md)
+- [Deadlocked set of processes](deadlocked.md)
 - [Havender's resource ordering](ordered.md)
 
 ## Proof depends on

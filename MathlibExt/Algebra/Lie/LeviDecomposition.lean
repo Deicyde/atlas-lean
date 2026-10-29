@@ -734,8 +734,10 @@ private theorem levi_lie_mem_HomVanishing_of_mem_scalarMaps
   have hxw : ⁅x, w⁆ = (⟨⁅x, w.1⁆, W.lie_mem w.2⟩ : W) := rfl
   rw [hxw, sub_self]
 
-/-- Weyl's complete reducibility theorem for finite-dimensional modules over a
-semisimple Lie algebra in characteristic zero. -/
+/-- **Weyl's complete reducibility theorem.** Let $L$ be a finite-dimensional semisimple Lie
+algebra over a field $K$ of characteristic zero, and let $M$ be a finite-dimensional Lie module
+over $L$ and $K$. Then every Lie submodule $W$ of $M$ has a complement: there is a Lie submodule
+$U$ of $M$ with $W \cap U = 0$ and $W + U = M$. -/
 public theorem _root_.LieModule.exists_isCompl_of_isSemisimple
     {K L M : Type*} [Field K] [CharZero K] [LieRing L]
     [LieAlgebra K L] [Module.Finite K L] [LieAlgebra.IsSemisimple K L]

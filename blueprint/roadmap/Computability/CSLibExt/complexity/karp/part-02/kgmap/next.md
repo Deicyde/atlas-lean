@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGMap.Mode.next
 ---
 
-# Next
+# Label after the move phase of the KG-map machine
 
-Where the machine goes after moving the pair bits: output (`flip`) or subtract (`vc`).
+**Label after the move phase of the KG-map machine.** The map from the modes of the KG-map
+machine to its labels that sends the flip mode to the label output the pair bits and the
+vertex-cover mode to the subtraction label. The machine goes to this label after moving the pair
+bits.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 
 ## Sources

@@ -26,11 +26,16 @@ two endpoint maps. The endpoint order is only a reference orientation: `isRevers
 an orientation independently for each edge. This representation allows parallel edges and loops.
 -/
 
-/-- An edge crosses a vertex cut when exactly one of its endpoints lies on the chosen side. -/
+/-- **Edges crossing a cut.** Consider a multigraph with vertex set $V$ and edge set $E$ in which
+each edge has a first and a second endpoint. For a set $S \subseteq V$, an edge crosses the cut at
+$S$ when exactly one of its two endpoints lies in $S$. -/
 def CrossesCut {V E : Type} (end₁ end₂ : E → V) (S : Set V) (e : E) : Prop :=
   (end₁ e ∈ S ∧ end₂ e ∉ S) ∨ (end₁ e ∉ S ∧ end₂ e ∈ S)
 
-/-- The number of edges crossing a cut. Distinct parallel edges are counted separately. -/
+/-- **Size of a cut.** Consider a multigraph with finitely many edges in which each edge has a
+first and a second endpoint. For a set $S$ of vertices, the size of the cut at $S$ is the number
+of edges crossing it, that is, having exactly one endpoint in $S$. Distinct parallel edges are
+counted separately. -/
 noncomputable def cutSize {V E : Type} [Fintype E]
     (end₁ end₂ : E → V) (S : Set V) : ℕ := by
   classical

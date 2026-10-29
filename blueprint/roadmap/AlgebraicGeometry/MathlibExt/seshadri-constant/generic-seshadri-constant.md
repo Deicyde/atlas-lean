@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Affine Point](affine-point.md)
+- [Points of the complex affine plane](affine-point.md)
 - [Seshadri constant of ten affine points](affine-seshadri-constant.md)
 
 ## Sources

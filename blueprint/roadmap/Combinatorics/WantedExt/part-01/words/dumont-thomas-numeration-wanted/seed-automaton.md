@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

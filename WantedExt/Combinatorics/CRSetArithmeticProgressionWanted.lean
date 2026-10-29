@@ -221,12 +221,15 @@ Source: De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEG
 public theorem_wanted mem_iff_exists_mem_betaFamily {F : Set (Set S)} (hF : IsRamseyFamily F)
     (A : Set S) : A ∈ F ↔ ∃ p ∈ betaFamily F, A ∈ p
 
-/-- **Theorem 3, part 3.** For a nonempty closed `K ⊆ βS`, the family
-`F_K = {E | Ē ∩ K ≠ ∅}` (sets belonging to some member of `K`) has the Ramsey
-property and `β(F_K) = K`.
+/-- **Nonempty closed sets of ultrafilters come from Ramsey families.** Let $S$ be a set, let
+$\beta S$ be the space of ultrafilters on $S$, and let $K$ be a nonempty closed subset of
+$\beta S$. Let $\mathcal F_K$ be the collection of the sets $E \subseteq S$ with $E \in p$ for
+some $p \in K$. Then $\mathcal F_K$ is a family with the Ramsey property, and
+$\beta(\mathcal F_K) = K$, where $\beta(\mathcal F_K)$ is the set of ultrafilters on $S$ all of
+whose members lie in $\mathcal F_K$.
 
-The paper omits `K ≠ ∅`; for `K = ∅` the collection `F_K` is empty, hence not a
-family.
+The paper omits $K \ne \emptyset$; for $K = \emptyset$ the collection $\mathcal F_K$ is empty,
+hence not a family.
 
 Source: De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS
 25 (2025), Article A4, Theorem 3 (`integers-2025-A4-thm-3`). -/

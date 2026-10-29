@@ -18,7 +18,7 @@ linearly ordered type gives the meld of the one-element binomial heap containing
 ## Proof depends on
 
 - [Melding binomial heaps](meld.md)
-- [Singleton](singleton-2.md)
+- [One-element binomial heap](singleton-2.md)
 
 ## Sources
 

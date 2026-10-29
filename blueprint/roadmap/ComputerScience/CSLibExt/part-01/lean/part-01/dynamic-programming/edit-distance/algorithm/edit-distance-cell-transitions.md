@@ -22,7 +22,7 @@ $(|s| + 1)(|t| + 1)$, one per pair of a prefix of $s$ and a prefix of $t$.
 
 ## Proof depends on
 
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [Cost of an edit script](../script/cost-2.md)
 - [Edit step](../script/edit-step.md)
 - [Unit cost of an edit step](../script/cost.md)

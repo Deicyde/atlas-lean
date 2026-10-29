@@ -18,7 +18,7 @@ navigation: module
 - [The empty hash table is valid](valid-empty.md)
 - [Lookup in the empty hash table](lookup-empty.md)
 - [The empty hash table represents the empty map](abstraction-empty.md)
-- [Lookup after insertion](lookup-insert.md)
+- [Hash table lookup after insertion](lookup-insert.md)
 - [Insertion does not affect other keys](lookup-insert-of-ne.md)
 - [Insertion preserves validity of a hash table](valid-insert.md)
 - [Lookup agrees with the abstraction](lookup-abstraction.md)

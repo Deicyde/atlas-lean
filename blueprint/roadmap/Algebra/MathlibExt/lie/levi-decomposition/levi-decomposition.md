@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Compl of is Semisimple](exists-is-compl-of-is-semisimple.md)
+- [Weyl's complete reducibility theorem](exists-is-compl-of-is-semisimple.md)
 
 ## Sources
 

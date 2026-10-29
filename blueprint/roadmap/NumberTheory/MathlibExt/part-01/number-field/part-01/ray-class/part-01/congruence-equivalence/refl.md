@@ -14,7 +14,7 @@ pair consisting of a modulus of $K$ and a congruence subgroup for it is equivale
 
 ## Depends on
 
-- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Congruence subgroup pair](congruence-subgroup-pair.md)
 - [Equivalence of congruence subgroup pairs](is-equivalent.md)
 
 ## Proof depends on

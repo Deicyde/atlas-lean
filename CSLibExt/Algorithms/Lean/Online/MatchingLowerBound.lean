@@ -51,9 +51,11 @@ set_option autoImplicit false
 
 namespace Cslib.Algorithms.Lean.Online.MatchingLowerBound
 
-/-- A deterministic online bipartite matching algorithm with `a` offline (left) vertices: on each
-arrival it sees the neighbour lists of all earlier arrivals and of the current one, and proposes a
-left vertex to match the arrival to, or none. -/
+/-- **Deterministic online bipartite matching algorithm.** A deterministic online bipartite
+matching algorithm with $a$ offline (left) vertices $0, \dots, a - 1$ is given by a proposal
+rule: on each arrival it receives the neighbour lists (lists of left vertices) of all earlier
+arrivals, in order, and the neighbour list of the current arrival, and proposes a left vertex to
+match the arrival to, or none. -/
 structure OnlineMatcher (a : ℕ) where
   /-- The proposal for the current arrival, from the earlier arrivals and the current one. -/
   choose : List (List (Fin a)) → List (Fin a) → Option (Fin a)

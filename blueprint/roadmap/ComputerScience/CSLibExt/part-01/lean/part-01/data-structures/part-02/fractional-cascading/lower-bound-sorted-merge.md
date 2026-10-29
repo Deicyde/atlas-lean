@@ -16,7 +16,7 @@ is the number of its entries less than $x$.
 ## Depends on
 
 - [Lower bound of a value in a catalog](lower-bound.md)
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 
 ## Proof depends on
 

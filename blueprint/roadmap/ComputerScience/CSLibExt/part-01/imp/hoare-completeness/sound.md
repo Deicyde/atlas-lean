@@ -27,7 +27,7 @@ $s'$, then $s'$ satisfies $Q$.
 - [Entailment of assertions](../hoare/entails.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [IMP program states](../syntax/state.md)
 - [Invariant rule for while loops](../hoare/while-loop.md)

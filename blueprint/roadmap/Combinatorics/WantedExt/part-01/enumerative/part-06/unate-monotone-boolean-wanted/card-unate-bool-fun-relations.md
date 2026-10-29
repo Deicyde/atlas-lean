@@ -17,7 +17,7 @@ $BU_n \le 2^n BM_n$.
 
 ## Depends on
 
-- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Non-degenerate Boolean functions](is-nondegenerate-bool-fun.md)
 - [Unate Boolean function](is-unate-bool-fun.md)
 - [Weight of a Boolean function](bool-fun-weight.md)
 

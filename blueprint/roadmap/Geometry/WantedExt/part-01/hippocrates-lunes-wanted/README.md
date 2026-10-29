@@ -6,7 +6,7 @@ navigation: module
 # Hippocrates Lunes
 
 - [Coordinate plane for Hippocrates' lunes](plane.md)
-- [Planar determinant](det2.md)
+- [Planar determinant for Hippocrates' lunes](det2.md)
 - [Midpoint of two points in the plane](midpoint.md)
 - [Displacement vector between two points of the plane](vec.md)
 - [Squared Euclidean distance in the plane](euclidean-dist-sq.md)

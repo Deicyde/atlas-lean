@@ -14,7 +14,7 @@ succeeds and outputs $y$.
 
 ## Depends on
 
-- [Edit Script](edit-script.md)
+- [Edit script](edit-script.md)
 
 ## Proof depends on
 

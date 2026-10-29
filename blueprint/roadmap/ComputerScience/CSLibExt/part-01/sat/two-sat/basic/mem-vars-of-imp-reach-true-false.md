@@ -17,7 +17,7 @@ $\varphi$.
 
 - [Reachability in the implication graph](imp-reach.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Proof depends on
 

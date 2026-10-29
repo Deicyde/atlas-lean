@@ -25,7 +25,7 @@ replaces its original), and the preferred edges are reset.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [Validity of states with no preferred edges](valid-of-preferred-nil.md)
 - [Tree of a forest containing a vertex](find-tree.md)

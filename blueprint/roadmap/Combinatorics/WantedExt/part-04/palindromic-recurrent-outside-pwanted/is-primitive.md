@@ -20,8 +20,8 @@ word $\varphi^n(a)$.
 
 ## Proof depends on
 
-- [The ternary alphabet](sigma.md)
-- [Extend Iter](extend-iter.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
+- [Iterated images of words under a morphism](extend-iter.md)
 
 ## Sources
 

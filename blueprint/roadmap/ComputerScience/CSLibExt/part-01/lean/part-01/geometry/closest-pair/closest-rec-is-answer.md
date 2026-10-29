@@ -18,17 +18,17 @@ different positions, the recursion returns a value $\delta$ with $\delta \le d(p
 
 ## Depends on
 
-- [Is Answer](is-answer.md)
-- [Closest Rec](closest-rec.md)
+- [Closest-pair answer](is-answer.md)
+- [Closest-pair recursion](closest-rec.md)
 
 ## Proof depends on
 
 - [Brute-force closest pair](brute-min.md)
-- [Dist2](dist2.md)
-- [Min Dist From](min-dist-from.md)
+- [Squared distance in the plane](dist2.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 - [The nearest-point scan returns the least squared distance](min-dist-from-spec.md)
-- [Scan From](scan-from.md)
-- [Strip Scan](strip-scan.md)
+- [Strip scan from a point](scan-from.md)
+- [Closest-pair strip scan](strip-scan.md)
 - [The strip scan bounds every pair with a small vertical gap](strip-scan-lower.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 

@@ -13,7 +13,7 @@ when its representatives lie in $L$, which does not depend on the representative
 
 ## Depends on
 
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 
 ## Proof depends on
 

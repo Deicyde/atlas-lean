@@ -7,9 +7,13 @@ proof: formalized
 lean: Nat.polygonalNumber_one
 ---
 
-# Polygonal Number one
+# Polygonal numbers at one
 
-Total-extension initial value at `1`; the source claims this only for `3 ≤ s`.
+**Polygonal numbers at one.** For every natural number $s$, $p_s(1) = 1$, where $p_s(n)$ is
+the $n$-th $s$-gonal number.
+
+The source considers only $s \ge 3$; the value holds for the extension of the formula to every
+natural number $s$.
 
 ## Depends on
 

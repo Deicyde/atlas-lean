@@ -117,8 +117,11 @@ public theorem_wanted partition_pentagonal_sum_even (n : ℕ) (hn : 0 < n) :
     Even (∑ k ∈ (Finset.Icc (-(n : ℤ)) n).filter (fun k : ℤ => k * (3 * k + 1) / 2 ≤ (n : ℤ)),
       Fintype.card (Nat.Partition (n - (k * (3 * k + 1) / 2).toNat)))
 
-/-- `ped(n)`: the number of partitions of `n` in which the even parts are distinct (odd parts
-unrestricted); generating function `(q^4; q^4)_∞ / (q; q)_∞`.
+/-- **Partitions whose even parts are distinct.** For a natural number $n$, $\mathrm{ped}(n)$ is
+the number of partitions of $n$ in which every even part occurs exactly once; the odd parts are
+unrestricted.
+
+Its generating function is $\sum_{n \ge 0} \mathrm{ped}(n) q^n = (q^4; q^4)_\infty / (q; q)_\infty$.
 
 Source: Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd
 Parts*, INTEGERS 26 (2026), Article A60, Section 1 (definition of `ped(n)` before Theorem 1). -/
@@ -126,8 +129,12 @@ public def distinctEvenPartsCount (n : ℕ) : ℕ :=
   ((Finset.univ : Finset n.Partition).filter
     fun p => ∀ i ∈ p.parts, Even i → p.parts.count i = 1).card
 
-/-- `pod(n)`: the number of partitions of `n` in which the odd parts are distinct (even parts
-unrestricted); generating function `(-q; q^2)_∞ / (q^2; q^2)_∞`.
+/-- **Partitions whose odd parts are distinct.** For a natural number $n$, $\mathrm{pod}(n)$ is
+the number of partitions of $n$ in which every odd part occurs exactly once; the even parts are
+unrestricted.
+
+Its generating function is
+$\sum_{n \ge 0} \mathrm{pod}(n) q^n = (-q; q^2)_\infty / (q^2; q^2)_\infty$.
 
 Source: Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd
 Parts*, INTEGERS 26 (2026), Article A60, Section 3 (definition of `pod(n)` before Theorem 6). -/

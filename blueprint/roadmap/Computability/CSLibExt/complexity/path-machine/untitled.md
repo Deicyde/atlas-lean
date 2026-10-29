@@ -13,7 +13,7 @@ alphabet.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 
 ## Proof depends on
 

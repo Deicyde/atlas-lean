@@ -28,7 +28,7 @@ and has zero net outflow at every vertex other than $s$ and $t$.
 - [Augmenting a flow along a path](augment.md)
 - [Bottleneck augmentation preserves feasibility](augment-path-bottleneck-feasible.md)
 - [Bottleneck of a path](path-bottleneck.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 - [Augmenting-path iteration with fuel](run.md)
 - [Shortest path via breadth-first search](shortest-path.md)
 - [Soundness of the shortest-path search](shortest-path-sound.md)

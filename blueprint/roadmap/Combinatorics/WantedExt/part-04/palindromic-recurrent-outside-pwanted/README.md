@@ -4,10 +4,10 @@ navigation: module
 
 # Palindromic Recurrent Outside P
 
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 - [Morphisms of the ternary alphabet](morphism.md)
 - [Image of a word under a morphism](extend.md)
-- [Extend Iter](extend-iter.md)
+- [Iterated images of words under a morphism](extend-iter.md)
 - [Primitive morphisms](is-primitive.md)
 - [Palindromes](is-palindrome.md)
 - [Class P](in-class-p.md)

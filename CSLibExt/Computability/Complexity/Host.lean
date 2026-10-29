@@ -209,16 +209,16 @@ theorem move2_run {K Λ : Type} [DecidableEq K] {Γ : K → Type} {M : Λ → TM
   · rw [h2b, h1k b hab.symm htb.symm]; simp [List.map_reverse]
   · intro k hka hkt hkb; rw [h2k k hkt hkb, h1k k hka hkt]
 
-/-- **Stacks emptied by the cleanup.** For a component machine $c$ and a host stack $o$, the
+/-- **Cleanup stacks of the generic host.** For a component machine $c$ and a host stack $o$, the
 cleanup stacks are the list of all host stacks with $o$ removed, in the order of the list of
 host stacks. The cleanup empties these stacks and leaves the output stack $o$. -/
 def cleanKs (c : Comp) (o : HK c) : List (HK c) := (allKs c).filter (· ≠ o)
 
 theorem cleanKs_nodup (c : Comp) (o : HK c) : (cleanKs c o).Nodup := (allKs_nodup c).filter _
 
-/-- **Stacks emptied by the cleanup.** For a component machine $c$ and host stacks $o$ and $k$,
-the stack $k$ belongs to the list of stacks that the cleanup for the output stack $o$ empties if
-and only if $k \ne o$. -/
+/-- **Membership in the cleanup stacks of the generic host.** For a component machine $c$ and host
+stacks $o$ and $k$, the stack $k$ belongs to the list of stacks that the cleanup for the output
+stack $o$ empties if and only if $k \ne o$. -/
 theorem mem_cleanKs {c : Comp} {o k : HK c} : k ∈ cleanKs c o ↔ k ≠ o := by
   simp [cleanKs, mem_allKs]
 
@@ -331,8 +331,16 @@ def rtm : FinTM2 where
   Γk₀Fin := (inferInstance : Fintype Bool)
   m := rprog c cX cO gX start done
 
-/-- The reduction host's step bound: phase 0 and the component, then the cleanup (stacks of
-length at most the input plus the pushes so far) and the halt. -/
+/-- **Step bound of the reduction host.** Let $c$ be a component machine with stacks $c_X$ and
+$c_O$, an encoding $g_X$ of bits as symbols of $c_X$ and labels $\mathit{start}$ and
+$\mathit{done}$, and let $B$ be the push bound of the reduction host machine built from these
+data. For a polynomial $p$ with natural-number coefficients, the step bound of the reduction host
+is the polynomial in the variable $X$
+$$(B + 1)(2X + 3 + p) + X + 2.$$
+
+At an input length $n$ it counts phase 0 and the component, at most $2n + 3 + p(n)$ steps, then
+the cleanup, which takes at most one step more than the longest stack, of length at most $n$
+plus $B$ times the steps so far, and the halt. -/
 noncomputable def rtime (p : Polynomial ℕ) : Polynomial ℕ :=
   Polynomial.C (TM2Composition.pushBound (rtm c cX cO gX start done) + 1) *
       (Polynomial.C 2 * Polynomial.X + Polynomial.C 3 + p) + Polynomial.X + Polynomial.C 2
@@ -539,8 +547,22 @@ def dW : Verifier.G → Option Bool
   | .inr (some b) => some b
   | _ => none
 
-/-- The verifier host: move `x` onto `cX` and `w` onto `cW`, run the component, empty every stack
-but the output, push the answer. -/
+/-- **Verifier host program.** The program of the verifier host for a component machine $c$ with
+stacks $c_X$ and $c_W$, encodings $g_X$ and $g_W$ of bits as symbols of $c_X$ and $c_W$, and
+labels $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, on the host stacks with the work
+alphabet of the dense-SAT verifier on the input stack. On an input $x \# w$ in the pair encoding,
+phase 0 moves the symbols on top of the input stack that encode bits of $x$ onto the buffer $X_1$
+with the bit-moving loop, then moves $X_1$ onto the host's copy of $c_X$ re-encoded by $g_X$ (so
+in the original order); it pops one symbol off the input stack (the separator $\#$); it moves
+the symbols that encode bits of $w$ onto the buffer $W_1$ and then $W_1$ onto the host's copy of
+$c_W$ re-encoded by $g_W$; then it sets the state to false and goes to the renamed label of
+$\mathit{start}$. Here a label of $c$ is renamed to the cleanup label with answer true if it is
+$\mathit{yes}$, to the cleanup label with answer false if it is $\mathit{no}$ but not
+$\mathit{yes}$, and to the host's copy of itself otherwise. At the host's copy of a component
+label $l$ it runs the component's statement at $l$ on the host's copies of the component stacks,
+with every jump target renamed. The cleanup label with answer $a$ pops every stack other than the
+output stack once per round, repeating while something was popped, and then goes to the output
+label with answer $a$, which pushes $a$ on the output stack and halts. -/
 def vprog : HLab c → TM2.Stmt (HΓ c Verifier.G) (HLab c) Bool
   | .ph .m1 => moveB (Γ := HΓ c Verifier.G) .inp .X1 dX id (.ph .m1) (.ph .m2)
   | .ph .m2 => moveB (Γ := HΓ c Verifier.G) .X1 (.comp cX) some gX (.ph .m2) (.ph .sep)
@@ -570,8 +592,16 @@ def vtm : FinTM2 where
   Γk₀Fin := (inferInstance : Fintype Verifier.G)
   m := vprog c cX cW gX gW start yes no
 
-/-- The verifier host's step bound: phase 0 and the component, then the cleanup (stacks of
-length at most the input plus the pushes so far) and the output step. -/
+/-- **Step bound of the verifier host.** Let $c$ be a component machine with stacks $c_X$ and
+$c_W$, encodings $g_X$ and $g_W$ of bits as symbols of $c_X$ and $c_W$, and labels
+$\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, and let $B$ be the push bound of the verifier
+host machine built from these data. For a polynomial $p$ with natural-number coefficients, the
+step bound of the verifier host is the polynomial in the variable $X$
+$$(B + 1)(2X + 4 + p) + X + 2.$$
+
+At an input length $n$ it counts phase 0 and the component, at most $2n + 4 + p(n)$ steps, then
+the cleanup, which takes at most one step more than the longest stack, of length at most $n$
+plus $B$ times the steps so far, and the output step. -/
 noncomputable def vtime (p : Polynomial ℕ) : Polynomial ℕ :=
   Polynomial.C (TM2Composition.pushBound (vtm c cX cW gX gW start yes no) + 1) *
       (Polynomial.C 2 * Polynomial.X + Polynomial.C 4 + p) + Polynomial.X + Polynomial.C 2
@@ -587,7 +617,17 @@ theorem vtime_eval (p : Polynomial ℕ) (n : ℕ) :
 
 variable {c cX cW gX gW start yes no}
 
-/-- The verifier host runs the component at `comp l`; its exits lead to the cleanup. -/
+/-- **The verifier host embeds the component.** Let $c$ be a component machine with stacks $c_X$
+and $c_W$, maps $g_X$ and $g_W$ from bits to the alphabets of $c_X$ and $c_W$, and labels
+$\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, and suppose that the statement of $c$ at
+$\mathit{yes}$ and the statement of $c$ at $\mathit{no}$ are the halt statement. Rename the labels
+of $c$ by sending $\mathit{yes}$ to the cleanup label with answer true, $\mathit{no}$ (when it
+differs from $\mathit{yes}$) to the cleanup label with answer false, and every other label $l$ to
+the host's copy of $l$, and embed the stacks of $c$ as the host's copies over the work alphabet
+of the dense-SAT verifier. Then the verifier host program built from $c_X$, $c_W$, $g_X$, $g_W$,
+$\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$ embeds $c$: for every label $l$ of $c$, either
+the statement of $c$ at $l$ is the halt statement, or the host's statement at the renamed label
+of $l$ is the statement of $c$ at $l$ with stacks and labels translated. -/
 theorem embeds_vprog (hyes : c.prog yes = .halt) (hno : c.prog no = .halt) :
     Embeds (emb c Verifier.G) (φV c yes no) c.prog (vprog c cX cW gX gW start yes no) := by
   intro l

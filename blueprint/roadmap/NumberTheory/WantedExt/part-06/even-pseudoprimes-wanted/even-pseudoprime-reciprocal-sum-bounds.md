@@ -13,7 +13,7 @@ and `0.0059`.
 
 ## Depends on
 
-- [Even Pseudoprimes](../../../MathlibExt/part-05/even-pseudoprime/even-pseudoprimes.md)
+- [The set of even pseudoprimes](../../../MathlibExt/part-05/even-pseudoprime/even-pseudoprimes.md)
 
 ## Sources
 

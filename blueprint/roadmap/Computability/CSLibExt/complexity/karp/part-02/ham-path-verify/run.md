@@ -22,7 +22,7 @@ The machine in fact takes quadratically many steps; the theorem states only the 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [The HAMPATH verifier](../../part-01/ham-path-check/ham-check.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Start label of the Hamiltonian-path verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)

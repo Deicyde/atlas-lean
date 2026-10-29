@@ -15,7 +15,7 @@ navigation: module
 - [Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$](ncard-ceil-cot-le-eq-two-mul-sub-singlet.md)
 - [Values taken once by the ceiling of $\cot(\pi/(2m))$](ceil-cot-singleton-iff.md)
 - [Jeffery's conjecture on singletons of $\lfloor \cot(\pi/(2m)) \rfloor$](jeffery-floor-cot-singletons.md)
-- [Ncard repeating decimal ratio eq two pow omega](ncard-repeating-decimal-ratio-eq-two-pow.md)
+- [Counting solutions of a repeating-decimal ratio equation](ncard-repeating-decimal-ratio-eq-two-pow.md)
 - [Zakharov's conjecture on regions cut by cevians](cevian-max-regions.md)
 - [Zakharov's conjecture on intersection points of cevians](cevian-max-regions-intersection-count.md)
 - [Intersection points of two fans of rays](two-fan-ray-intersection-count.md)

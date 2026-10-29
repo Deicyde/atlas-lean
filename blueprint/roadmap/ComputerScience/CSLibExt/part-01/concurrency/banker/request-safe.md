@@ -18,7 +18,7 @@ $a'$ for $L$.
 
 - [Claims and allocations of processes](system.md)
 - [Safe state](safe.md)
-- [Request](request.md)
+- [Resource-request algorithm](request.md)
 
 ## Proof depends on
 

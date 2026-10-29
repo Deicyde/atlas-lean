@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Unit transpose mul mul eq one](exists-is-unit-transpose-mul-mul-eq-one.md)
+- [Positive-definite matrices are congruent to the identity](exists-is-unit-transpose-mul-mul-eq-one.md)
 
 ## Sources
 

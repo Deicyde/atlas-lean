@@ -14,7 +14,7 @@ vertex of their convex hull computed by the monotone chain algorithm is one of t
 
 ## Depends on
 
-- [Convex Hull](convex-hull.md)
+- [Convex hull by the monotone chain algorithm](convex-hull.md)
 
 ## Proof depends on
 

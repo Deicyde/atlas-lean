@@ -11,7 +11,7 @@ navigation: module
 - [Evidence lower bound of a single observation](elbo.md)
 - [Finite Kullback–Leibler formula](kl.md)
 - [Gibbs' inequality](kl-nonneg.md)
-- [ELBO = log evidence - KL](elbo-eq-log-evidence-sub-kl.md)
+- [The ELBO is the log evidence minus the KL divergence](elbo-eq-log-evidence-sub-kl.md)
 - [The ELBO is a lower bound](elbo-le-log-evidence.md)
 - [The KL divergence to the posterior is nonnegative](kl-posterior-nonneg.md)
 - [The ELBO bound is attained at the posterior](elbo-posterior.md)

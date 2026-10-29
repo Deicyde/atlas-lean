@@ -17,7 +17,7 @@ on every wire $x$ outside $[b, b + 2m)$ unchanged.
 ## Depends on
 
 - [Half-cleaner](half-cleaner.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 
 ## Proof depends on
 

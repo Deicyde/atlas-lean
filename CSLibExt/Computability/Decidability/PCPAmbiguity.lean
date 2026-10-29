@@ -63,8 +63,14 @@ the index $i$ is a terminal. -/
 def ambGrammar (P : List (Domino α)) : EncodedCFG (α ⊕ ℕ) :=
   ⟨0, (0, [ntSym 1]) :: (0, [ntSym 2]) :: (sideRules Prod.fst 1 P ++ sideRules Prod.snd 2 P)⟩
 
-/-- The leftmost derivation from `A` along an index sequence: `A → wᵢ A i` for each index but the
-last, then `A → wᵢ i`. -/
+/-- **The canonical rule sequence along an index sequence.** Let $P$ be a list of dominoes over
+$\alpha$, let $\sigma$ assign a word over $\alpha$ to each domino, let $A$ be a natural number,
+and for $i \in \mathbb{N}$ write $w_i$ for $\sigma$ applied to the $i$-th domino of $P$ (the domino
+with both words empty when $i$ is past the end of $P$). For a sequence $i_1, \dots, i_n$ of
+natural numbers, this is the list of productions, with terminals $\alpha \sqcup \mathbb{N}$ and
+nonterminals $\mathbb{N}$, consisting of $A \to w_{i_k}\, A\, i_k$ for $k = 1, \dots, n - 1$ in
+order, followed by $A \to w_{i_n}\, i_n$, where the letters of $w_{i_k}$ and the index $i_k$ are
+terminals and $A$ is a nonterminal; the empty sequence gives the empty list. -/
 def canon (side : Domino α → List α) (A : ℕ) (P : List (Domino α)) :
     List ℕ → List (ContextFreeRule (α ⊕ ℕ) ℕ)
   | [] => []
@@ -242,7 +248,11 @@ theorem leftDerivation_canon {side : Domino α → List α} {A : ℕ}
       rw [canon_cons hne]
       exact LeftDerivation.step hr hd
 
-/-- The start production `S → A`, with `A = 1` or `A = 2`. -/
+/-- **The start production $S \to A$.** For an alphabet $\alpha$ and a natural number $A$, this is
+the production with terminals $\alpha \sqcup \mathbb{N}$ and nonterminals $\mathbb{N}$ whose
+left-hand side is the nonterminal $S = 0$ and whose right-hand side is the single nonterminal $A$.
+
+In the ambiguity grammar of a PCP instance it is used with $A = 1$ and $A = 2$. -/
 def startRule (A : ℕ) : ContextFreeRule (α ⊕ ℕ) ℕ := ⟨0, [Symbol.nonterminal A]⟩
 
 /-- **Leftmost derivations in the ambiguity grammar.** Let

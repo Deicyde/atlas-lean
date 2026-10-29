@@ -25,7 +25,7 @@ $\tau^{-1}$ is $0$, so the average of $F_{\tau^{-1}}$ is taken over $1 \le e \le
 
 - [Average repeating digit](base-pdigit-average.md)
 - [Period of the base-$p$ expansion](base-pperiod.md)
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 - [The denominator $\tau_D$](tau-den.md)
 - [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 

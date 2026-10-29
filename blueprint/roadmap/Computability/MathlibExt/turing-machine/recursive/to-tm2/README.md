@@ -21,7 +21,7 @@ navigation: module
 - [Restricting a statement of the code evaluator to the wrapped machine](restrict.md)
 - [The start label lies in the support](start-mem.md)
 - [The program of the wrapped machine](fwd-prog.md)
-- [Fwd TM](fwd-tm.md)
+- [The wrapped machine of a code](fwd-tm.md)
 
 ## Stacks
 
@@ -43,7 +43,7 @@ navigation: module
 ## The main phase simulates `tr`
 
 - [Lifting stacks of tr](lift-stk.md)
-- [Label Rel](label-rel.md)
+- [Correspondence of labels between the code evaluator and the wrapped machine](label-rel.md)
 - [Simulation relation between the code evaluator and the wrapped machine](tr-rel.md)
 - [Reachability gives an iteration count](exists-iterate-eq-of-reaches.md)
 - [Main phase of the wrapped machine](main-phase.md)

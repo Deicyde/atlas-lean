@@ -15,8 +15,8 @@ at $n$.
 
 ## Depends on
 
-- [Parts LCM](parts-lcm.md)
-- [Landau Function](landau-function.md)
+- [Least common multiple of the parts of a partition](parts-lcm.md)
+- [Landau's function](landau-function.md)
 
 ## Sources
 

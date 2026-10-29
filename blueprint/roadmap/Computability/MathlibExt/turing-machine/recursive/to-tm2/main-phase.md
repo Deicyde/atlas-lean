@@ -29,7 +29,7 @@ $\mathrm{trList}([f(n)])$ on the main stack and all other stacks empty.
 ## Proof depends on
 
 - [Statements of the wrapped machine](fstmt.md)
-- [Label Rel](label-rel.md)
+- [Correspondence of labels between the code evaluator and the wrapped machine](label-rel.md)
 - [Simulation relation between the code evaluator and the wrapped machine](tr-rel.md)
 - [Reachability gives an iteration count](exists-iterate-eq-of-reaches.md)
 - [One step of the wrapped machine](fstep.md)

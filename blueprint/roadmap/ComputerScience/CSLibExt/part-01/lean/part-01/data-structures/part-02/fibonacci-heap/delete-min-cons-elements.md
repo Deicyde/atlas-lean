@@ -17,14 +17,14 @@ elements of $H$ is the multiset of elements of $H'$ with one copy of $m$ added.
 
 - [Fibonacci heap](fibonacci-heap.md)
 - [Deleting the minimum of a Fibonacci heap](delete-min.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 
 ## Proof depends on
 
 - [Valid Fibonacci forests](valid-2.md)
 - [Sublists of valid Fibonacci forests are valid](sublist.md)
 - [Consolidation of a forest](consolidate.md)
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Elements of a concatenated forest](elements-append.md)
 - [Consolidation preserves the elements](elements-consolidate.md)
 - [Minimum root of a forest](min-root.md)

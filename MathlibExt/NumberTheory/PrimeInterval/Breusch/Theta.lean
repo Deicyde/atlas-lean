@@ -128,7 +128,8 @@ lemma choose_middle_half {m : ℕ} (hm : 1 ≤ m) : Nat.choose (2*m) m ≤ 2^(2*
   omega
 
 -- (3t)!/(t !)^3 ≤ 3^{3t}, in multiplicative form.
-/-- Multinomial bound `(3 * t)! ≤ 3 ^ (3 * t) * (t!) ^ 3`. -/
+/-- **Multinomial bound for $(3t)!$.** For every natural number $t$,
+$(3t)! \le 3^{3t} (t!)^3$. -/
 lemma multinomial3_le (t : ℕ) : (3*t)! ≤ 3^(3*t) * (t !)^3 := by
   induction t with
   | zero => norm_num
@@ -393,7 +394,9 @@ lemma vp_term1 (t p : ℕ) (ht : 1 ≤ t) (hlo : t < p) (hhi : p ≤ 6 * t) :
         · exact vp_term_case5 t p ht hlo (by omega)
 
 -- Every prime in (t, 6t] divides M(t).
-/-- Every prime in `(t, 6 * t]` divides `M34 t`. -/
+/-- **Primes in $(t, 6t]$ occur in $M(t)$.** For every natural number $t \ge 1$ and every prime $p$
+with $t < p \le 6t$, the exponent of $p$ in the prime factorization of the multinomial coefficient
+$M(t) = (6t)!/((3t)!\,(2t)!\,t!)$ is at least $1$. -/
 lemma vp_M34 (t : ℕ) (ht : 1 ≤ t) (p : ℕ) (hp : p.Prime)
     (hlo : t < p) (hhi : p ≤ 6 * t) : 1 ≤ (M34 t).factorization p := by
   set B : ℕ := Nat.log p (6 * t) + 2 with hB

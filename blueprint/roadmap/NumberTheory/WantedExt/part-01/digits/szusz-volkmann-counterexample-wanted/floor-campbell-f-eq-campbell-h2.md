@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.floor_campbellF_eq_campbellH2
 ---
 
-# Floor campbell F eq campbell H2
+# The floor of Campbell's interpolation at positive integers is Campbell's sequence $h_2$
 
-Lemma 3: `⌊f(n)⌋ = h₂(n)` for every positive integer `n`, and `f(n) = h₂(n)` for `n ≥ 10`.
+**The floor of Campbell's interpolation at positive integers is Campbell's sequence $h_2$.**
+Let $f$ be Campbell's interpolation and $h_2$ Campbell's sequence. For every integer $n \ge 1$,
+$\lfloor f(n) \rfloor = h_2(n)$, and for every integer $n \ge 10$, $f(n) = h_2(n)$.
 
 ## Depends on
 

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unit Disk](unit-disk.md)
+- [Open unit disc](unit-disk.md)
 
 ## Sources
 

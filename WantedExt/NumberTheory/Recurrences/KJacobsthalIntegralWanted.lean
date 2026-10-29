@@ -87,7 +87,9 @@ def companionKJacobsthal (k : ℕ) (a b : ℤ) : ℕ → ℤ
   | 1 => b
   | n + 2 => k * companionKJacobsthal k a b (n + 1) + 2 * companionKJacobsthal k a b n
 
-/-- The companion recurrence `𝒥_{k,n+2} = k 𝒥_{k,n+1} + 2 𝒥_{k,n}`.
+/-- **Recurrence of the companion $k$-Jacobsthal numbers.** For every natural number $k$, all
+integers $a, b$ and every natural number $n$, the companion $k$-Jacobsthal numbers satisfy
+$\mathcal{J}_{k,n+2}(a, b) = k\,\mathcal{J}_{k,n+1}(a, b) + 2\,\mathcal{J}_{k,n}(a, b)$.
 
 Source: Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and
 k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74,
@@ -97,7 +99,8 @@ theorem companionKJacobsthal_add_two (k : ℕ) (a b : ℤ) (n : ℕ) :
       k * companionKJacobsthal k a b (n + 1) + 2 * companionKJacobsthal k a b n :=
   rfl
 
-/-- `𝒥_{k,2} = bk + 2a`, as listed in the paper.
+/-- **The second companion $k$-Jacobsthal number.** For every natural number $k$ and all integers
+$a, b$, the companion $k$-Jacobsthal numbers satisfy $\mathcal{J}_{k,2}(a, b) = bk + 2a$.
 
 Source: Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and
 k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74,
@@ -335,7 +338,13 @@ public theorem_wanted tendsto_lucasU_kJacobsthal_ratio (k : ℕ) (hk : 0 < k) :
       (fun n : ℕ => (lucasU (kJacobsthalParams k) (n + 1) : ℝ) / lucasU (kJacobsthalParams k) n)
       Filter.atTop (nhds ((k + Δ[k]) / 2))
 
-/-- `𝒥_{k,n} = (a/2) j_{k,n} + ((2b - ak)/2) J_{k,n}`, stated after clearing the denominator 2.
+/-- **Companion $k$-Jacobsthal numbers via Lucas sequences.** For a natural number $k$ and
+integers $a, b$, let $\mathcal{J}_{k,n}(a, b)$ be the companion $k$-Jacobsthal numbers, and let
+$J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and $k$-Jacobsthal–Lucas
+numbers, the Lucas sequences $U$ and $V$ with parameters $(P, Q) = (k, -2)$. Then for every
+natural number $n$, $2\,\mathcal{J}_{k,n}(a, b) = a\,j_{k,n} + (2b - ak)\,J_{k,n}$.
+
+The source states this as $\mathcal{J}_{k,n} = \tfrac{a}{2} j_{k,n} + \tfrac{2b - ak}{2} J_{k,n}$.
 
 Source: Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and
 k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74,

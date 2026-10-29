@@ -20,7 +20,7 @@ navigation: module
 
 - [Lemma 1 (no a-points of derivatives far to the right)](exists-no-a-point-right.md)
 - [Asymptotics of the derivatives of the reflected function (Lemma 2)](iterated-deriv-reflected-asymptotic.md)
-- [Lemma 3](exists-no-a-point-left.md)
+- [No $a$-points of derivatives far to the left (Lemma 3)](exists-no-a-point-left.md)
 - [Lemma 4 (a-points of derivatives in windows of unit height)](a-point-count-unit-window.md)
 - [Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5)](log-deriv-a-point-partial-fraction.md)
 - [Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative)](has-sum-log-deriv-a-point-of-ne-zero.md)

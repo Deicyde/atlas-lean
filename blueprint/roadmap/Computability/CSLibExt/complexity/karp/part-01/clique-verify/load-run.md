@@ -22,7 +22,7 @@ $n - 1$ on top, above $\mathit{acc}$, and the stacks $X$ and $T$ are unchanged.
 - [Stacks of the CLIQUE verifier](k.md)
 - [Labels of the CLIQUE verifier](lab.md)
 - [Modes of the clique verifier](mode.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)

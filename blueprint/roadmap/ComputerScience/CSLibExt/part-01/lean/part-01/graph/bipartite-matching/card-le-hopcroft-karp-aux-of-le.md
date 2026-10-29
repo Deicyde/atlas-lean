@@ -6,10 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_of_le
 ---
 
-# Card le hopcroft Karp Aux of le
+# Closing a deficit of $f$ in $f$ Hopcroft–Karp phases
 
-Each phase adds an edge until the matching is maximum: if the current matching is within `f`
-of a matching `M`, then `f` more phases reach at least `M`'s size.
+**Closing a deficit of $f$ in $f$ Hopcroft–Karp phases.** Let $\mu$ be a valid partner array,
+$M$ a matching of the bipartite graph and $f \in \mathbb{N}$. If $M$ has at most $f$ more pairs
+than the matched pairs of $\mu$, then $M$ has at most as many pairs as the matched pairs of the
+partner array returned by the Hopcroft–Karp phase loop with fuel $f$ from $\mu$.
+
+Each phase that finds a path adds at least one edge, and a phase that finds none leaves a maximum
+matching.
 
 ## Depends on
 

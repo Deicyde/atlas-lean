@@ -14,7 +14,7 @@ $x_1 + i y_1$.
 
 ## Depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

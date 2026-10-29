@@ -19,7 +19,7 @@ consecutive vertices $u, v$ of $p$, is positive.
 - [Flow](flow.md)
 - [Directed path](is-path.md)
 - [Bottleneck of a path](path-bottleneck.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 
 ## Proof depends on
 

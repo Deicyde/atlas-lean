@@ -19,7 +19,7 @@ $$\mathrm{nd}\text{-}P_n = \sum_{i=0}^{n} (-1)^{n-i} \binom{n}{i} P_i.$$
 
 ## Depends on
 
-- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Non-degenerate Boolean functions](is-nondegenerate-bool-fun.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ the full Ramanujan exponent.
 - [Selberg's constant is at most every dominating family's exponent](selberg-constant-le-of-dominates-selberg.md)
 - [Selberg gap of an exceptional eigenvalue](selberg-gap.md)
 - [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../selberg-spectral-gap/is-eigenvalue.md)
 - [Gap parameter of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gap.md)
 - [Congruence gaps are bounded by Selberg's constant](../selberg-spectral-gap/exceptional-gap-le-selberg-constant.md)
 - [Gap contributions of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gaps.md)

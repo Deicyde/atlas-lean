@@ -46,10 +46,11 @@ set_option autoImplicit false
 
 namespace MathlibExt.NumberTheory.GenocchiExplicitWanted
 
-/-- **Iterated forward differences of a power.** For a rational number $x$ and natural numbers
-$k$ and $n$, $\Delta^k x^n$ denotes the value at $x$ of the $k$-th iterate of the forward
-difference operator applied to the function $y \mapsto y^n$ on $\mathbb{Q}$, where the forward
-difference of $f \colon \mathbb{Q} \to \mathbb{Q}$ is the function $y \mapsto f(y + 1) - f(y)$. -/
+/-- **Iterated forward differences of a power on $\mathbb{Q}$.** For a rational number $x$ and
+natural numbers $k$ and $n$, $\Delta^k x^n$ denotes the value at $x$ of the $k$-th iterate of the
+forward difference operator applied to the function $y \mapsto y^n$ on $\mathbb{Q}$, where the
+forward difference of $f \colon \mathbb{Q} \to \mathbb{Q}$ is the function
+$y \mapsto f(y + 1) - f(y)$. -/
 noncomputable def diffPowEval (x : ℚ) (k n : ℕ) : ℚ :=
   ((fun f : ℚ → ℚ => fun y => f (y + 1) - f y)^[k]
     (fun y => y ^ n)) x
@@ -146,8 +147,9 @@ Lemma 3. -/
 theorem_wanted zerroU_succ (r k : ℕ) (hk : 1 ≤ k) :
     zerroU (r + 1) k = zerroU r (k + 1) + (k : ℚ) * zerroU r k
 
-/-- **Lemma 3**, second identity: for `n ≥ r + 1`,
-`H_{n,r} = H_{n,r-1}`.
+/-- **A step identity for the Zerroukhat–Khaldi sums $H_{n,m}$.** Let $H_{n,m}$ denote the
+Zerroukhat–Khaldi sum. For all natural numbers $n$ and $r$ with $r \ge 1$ and $n \ge r + 1$,
+$H_{n,r} = H_{n,r-1}$.
 
 Source: Schehrazade Zerroukhat and Laala Khaldi, "A Note
 on Explicit Formulas for Bernoulli and Genocchi Numbers",

@@ -227,10 +227,15 @@ theorem analyticOn_abelContinuation (f : ℕ → ℂ) {σ : ℝ}
   intro s hs
   exact (differentiableAt_abelContinuation f hs hO).differentiableWithinAt
 
-/-- Agreement with `LSeries f s` at summable points. The hypothesis `0 ≤ σ`
-is required only here, because the public `LSeries_eq_mul_integral` API
-requires it; no claim is made about `LSeries f` itself where it is
-nonsummable (there it is `0` by definition). -/
+/-- **Abel continuation agrees with the Dirichlet series.** Let $f : \mathbb{N} \to \mathbb{C}$
+have partial sums $A(n) = \sum_{k=1}^{n} f(k)$, let $\sigma \ge 0$ be a real number with
+$A(n) = O(n^\sigma)$ as $n \to \infty$, and let $s$ be a complex number with
+$\operatorname{Re} s > \sigma$ at which the Dirichlet series $\sum_{n \ge 1} f(n) n^{-s}$
+converges absolutely. Then the Abel continuation $F_f$ of $f$ satisfies
+$F_f(s) = \sum_{n=1}^{\infty} f(n) n^{-s}$.
+
+The hypothesis $\sigma \ge 0$ is inherited from the integral representation of the Dirichlet
+series used in the proof. -/
 theorem abelContinuation_eq_LSeries (f : ℕ → ℂ) {σ : ℝ} (hσ : 0 ≤ σ) {s : ℂ}
     (hs : σ < s.re) (hS : LSeriesSummable f s)
     (hO : (fun n => abelPartialSum f n) =O[atTop] fun n => ((n : ℝ) ^ σ : ℝ)) :

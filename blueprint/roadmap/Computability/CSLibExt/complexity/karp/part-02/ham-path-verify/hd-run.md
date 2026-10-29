@@ -21,7 +21,7 @@ stacks; if the check passes, these stacks are the ones it started on.
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [Stack layout during a vertex step](mid.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)

@@ -21,7 +21,7 @@ rightwards, with the bottom-of-stack flag set on its first cell and cleared on a
 
 ## Depends on
 
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Proof depends on
 

@@ -30,6 +30,6 @@ navigation: module
 - [Skip-list search agrees with bottom-level lookup](lookup-eq-abstraction.md)
 - [Insertion preserves skip-list validity](valid-insert.md)
 - [Lookup after insertion returns the inserted value](lookup-insert.md)
-- [Lookup insert of ne](lookup-insert-of-ne.md)
+- [Skip-list insertion does not change lookup of other keys](lookup-insert-of-ne.md)
 - [Reinsertion preserves tower height](height-of-insert-of-present.md)
 - [Height of a newly inserted key](height-of-insert-of-absent.md)

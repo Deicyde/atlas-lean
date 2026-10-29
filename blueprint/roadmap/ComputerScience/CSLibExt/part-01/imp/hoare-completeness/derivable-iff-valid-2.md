@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.IMP.Triple.derivable_iff_valid
 ---
 
-# Derivable iff valid
+# Derivability in the default inference system on Hoare triples is validity
 
-A triple is derivable in the default (partial-correctness) system iff it
-is valid.
+**Derivability in the default inference system on Hoare triples is validity.** For every
+Hoare triple $\{P\}\,c\,\{Q\}$, the triple is derivable in the default inference system on Hoare
+triples, which is partial-correctness Hoare logic, if and only if it is valid for partial
+correctness.
 
 ## Depends on
 

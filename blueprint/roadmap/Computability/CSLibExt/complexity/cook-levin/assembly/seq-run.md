@@ -52,7 +52,7 @@ $w_a w_h w_s w_u w_i o$.
 ## Proof depends on
 
 - [Clause kinds of the accept generator](../accept/ak.md)
-- [Stages of the literal routine](../accept/ls.md)
+- [Stages of the accept generator's literal routine](../accept/ls.md)
 - [Chaining step of the host program](chain.md)
 - [Embedding of the accept generator into the host](emb-a.md)
 - [Embedding of the shift generator into the host](emb-h.md)
@@ -62,7 +62,7 @@ $w_a w_h w_s w_u w_i o$.
 - [Stages of the multiplication routine](../counter-view/ms.md)
 - [Stages of the transition-clause generator's literal routine](../family/ls.md)
 - [Clause kinds of the initial-row generator](../init-family/cl.md)
-- [Stages of the literal routine](../init-family/ls.md)
+- [Stages of the literal routine (initial-row generator)](../init-family/ls.md)
 - [Loop phases of the initial-row generator](../init-family/ph.md)
 - [Labels of the second precomputation part](../init-family/ps2.md)
 - [Loop-body stages of the cell-shift generator](../shift/bd.md)

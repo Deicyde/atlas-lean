@@ -33,7 +33,7 @@ output alphabet and the reduction host's step bound for $p$ as time bound.
 - [Initial configuration of a finite multi-stack machine](init-list-eq.md)
 - [Reduction host program](rprog.md)
 - [The reduction host's run](rprog-run.md)
-- [Rtime](rtime.md)
+- [Step bound of the reduction host](rtime.md)
 - [Reduction host machine](rtm.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 

@@ -21,7 +21,7 @@ navigation: module
 - [β of the nonempty sets is all of βS](beta-family-nonempty-sets.md)
 - [Ultrafilters inside a Ramsey family form a closed set](is-closed-beta-family.md)
 - [Theorem 3, part 2: a Ramsey family is the union of its ultrafilters](mem-iff-exists-mem-beta-family.md)
-- [Theorem 3, part 3](is-ramsey-family-and-beta-family-eq-of-i.md)
+- [Nonempty closed sets of ultrafilters come from Ramsey families](is-ramsey-family-and-beta-family-eq-of-i.md)
 - [β(F) contains an idempotent when it is a subsemigroup](exists-idempotent-mem-beta-family.md)
 - [Left-ideal criterion for β(F)](beta-family-is-left-ideal-iff.md)
 - [Subsemigroup criterion for β(F)](beta-family-is-subsemigroup-iff.md)

@@ -17,7 +17,7 @@ navigation: module
 
 - [Vertex list of an indexed walk](support.md)
 - [Edge list of an indexed walk](edges.md)
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Characterization of indexed trails](is-trail-iff.md)
 - [Eulerian indexed walk](is-eulerian.md)
 - [Characterization of Eulerian indexed walks](is-eulerian-iff.md)
@@ -51,7 +51,7 @@ navigation: module
 - [Adding edges preserves connectedness](disjoint-sum-connected-left.md)
 - [Handshake lemma for edge-indexed multigraphs](even-sum-degree.md)
 - [Euler circuits in edge-indexed multigraphs](exists-indexed-eulerian.md)
-- [Euler circuits when the non-isolated vertices are connected](exists-indexed-eulerian-connected-suppor.md)
+- [Euler circuits in edge-indexed multigraphs whose non-isolated vertices are connected](exists-indexed-eulerian-connected-suppor.md)
 - [Line graph of an edge-indexed multigraph](line-graph.md)
 - [Adjacency in the line graph of a multigraph](line-graph-adj.md)
 - [Maximum degree of a multigraph](max-degree.md)

@@ -18,7 +18,7 @@ $t$ times to the initial configuration on the blank tape.
 
 ## Proof depends on
 
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [One step of a Busy Beaver machine](step.md)
 
 ## Sources

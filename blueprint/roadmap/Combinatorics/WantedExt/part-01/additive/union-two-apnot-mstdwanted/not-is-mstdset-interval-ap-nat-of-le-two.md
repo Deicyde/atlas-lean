@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_nat_of_le_two_mul_sub_two
 ---
 
-# Lemma 1
+# Interval plus integer progression starting in $(n + 1, 2n - 2)$ is not MSTD
 
-**Lemma 1.** For integers `n ≥ 3`, `m ≥ 2`, `d ≥ 2` and natural `x ∈ [n + 1, 2n - 2]`, `I_n ∪
-J(x, m, d)` is not an MSTD set.
+**Interval plus integer progression starting in $[n + 1, 2n - 2]$ is not MSTD.** Let
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. For natural numbers $n \ge 3$, $m \ge 2$, $d \ge 2$ and $x$ with
+$n + 1 \le x \le 2n - 2$, the set $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 

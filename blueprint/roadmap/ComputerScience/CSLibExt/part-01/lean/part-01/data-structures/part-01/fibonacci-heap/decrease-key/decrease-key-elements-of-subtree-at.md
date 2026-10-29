@@ -20,7 +20,7 @@ added.
 
 - [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
 - [Decrease-key in a Fibonacci heap](decrease-key.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-3.md)
+- [Multiset of a Fibonacci heap](../../../part-02/fibonacci-heap/elements-3.md)
 - [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 - [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 - [Subtree of a Fibonacci tree at a path](subtree-at.md)

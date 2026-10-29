@@ -297,8 +297,13 @@ theorem emQ_eq (θ' θ : ValidParams d K) :
   exact congrArg _ (Finset.sum_congr rfl fun j _ => hsplit k j)
 
 variable (xs) in
-/-- **The M-step maximizes `Q(· | θ)`**: no valid parameter `θ'` has a larger `Q(θ' | θ)` than the
-EM update `emStep xs hx θ`. -/
+/-- **The M-step of the Bernoulli mixture maximizes the EM objective.** Let
+$x_1, \dots, x_N \in \{0, 1\}^d$ be rich data: $N > 0$, and for every coordinate $j < d$ some
+$x_n$ has $j$-th coordinate $1$ and some $x_m$ has $j$-th coordinate $0$. Let $\theta$ be valid
+parameters of a mixture of $K$ products of $d$ Bernoulli distributions, and let $\theta^+$ be the
+result of the EM step applied to $\theta$. Then every valid parameter $\theta'$ satisfies
+$Q(\theta' \mid \theta) \le Q(\theta^+ \mid \theta)$, where $Q$ is the EM objective of the
+mixture's joint distribution. -/
 theorem emQ_le_emStep (hx : Rich xs) (θ' θ : ValidParams d K) :
     emQ joint xs θ' θ ≤ emQ joint xs (emStep xs hx θ) θ := by
   rw [emQ_eq, emQ_eq, Finset.sum_add_distrib, Finset.sum_add_distrib]
@@ -328,14 +333,25 @@ theorem emQ_le_emStep (hx : Rich xs) (θ' θ : ValidParams d K) :
     linarith
 
 variable (xs) in
-/-- **Each EM step for the Bernoulli mixture does not decrease the log-likelihood**. -/
+/-- **Each EM step for the Bernoulli mixture does not decrease the log-likelihood.** Let
+$x_1, \dots, x_N \in \{0, 1\}^d$ be rich data: $N > 0$, and for every coordinate $j < d$ some
+$x_n$ has $j$-th coordinate $1$ and some $x_m$ has $j$-th coordinate $0$. Let $\theta$ be valid
+parameters of a mixture of $K$ products of $d$ Bernoulli distributions. Then
+$\ell(\theta) \le \ell(\theta^+)$, where $\ell$ is the log-likelihood of the data under the
+mixture's joint distribution and $\theta^+$ is the result of the EM step applied to $\theta$. -/
 theorem logLik_le_emStep (hx : Rich xs) (θ : ValidParams d K) :
     logLik joint xs θ ≤ logLik joint xs (emStep xs hx θ) := by
   have := nonempty_of_valid θ
   exact logLik_le_of_emQ_le (fun θ x k => joint_pos θ x k) xs (emQ_le_emStep xs hx θ θ)
 
 variable (xs) in
-/-- **The log-likelihood is monotone along the EM iterates** of the Bernoulli mixture. -/
+/-- **The log-likelihood is monotone along the EM iterates of a Bernoulli mixture.** Let
+$x_1, \dots, x_N \in \{0, 1\}^d$ be rich data: $N > 0$, and for every coordinate $j < d$ some
+$x_n$ has $j$-th coordinate $1$ and some $x_m$ has $j$-th coordinate $0$. Let $\theta_0$ be valid
+parameters of a mixture of $K$ products of $d$ Bernoulli distributions, and let $\theta_t$ be the
+result of $t$ EM steps from $\theta_0$. Then $\ell(\theta_t)$ is nondecreasing in
+$t \in \mathbb{N}$, where $\ell$ is the log-likelihood of the data under the mixture's joint
+distribution. -/
 theorem logLik_iterate_emStep_monotone (hx : Rich xs) (θ₀ : ValidParams d K) :
     Monotone fun t => logLik joint xs ((emStep xs hx)^[t] θ₀) := by
   have := nonempty_of_valid θ₀

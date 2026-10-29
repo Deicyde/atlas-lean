@@ -18,7 +18,7 @@ arrivals.
 ## Depends on
 
 - [Matching in a bipartite graph](../../graph/bipartite-matching/is-matching.md)
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 - [Number of arrivals an online matcher matches](matched.md)
 - [Graph of a sequence of arrivals](to-adj.md)
 

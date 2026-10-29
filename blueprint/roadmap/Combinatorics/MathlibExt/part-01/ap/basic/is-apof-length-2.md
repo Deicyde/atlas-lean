@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is APOf Length With](is-apof-length-with-2.md)
+- [List arithmetic progressions with given start and difference](is-apof-length-with-2.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ navigation: module
 - [Small values of the count of Schreier sets avoiding multiples](schreier-avoiding-multiples-count-small.md)
 - [Parent sequence b for Schreier-type multisets](schreier-parent-b.md)
 - [The parent sequence b vanishes for small indices](schreier-parent-b-of-le.md)
-- [Schreier Parent B of mem](schreier-parent-b-of-mem.md)
+- [The parent sequence b equals one on its initial window](schreier-parent-b-of-mem.md)
 - [Recurrence for the parent sequence b](schreier-parent-b-rec.md)
 - [The parent sequence $d_{u,n}$](schreier-parent-d.md)
 - [Initial values of the parent sequence](schreier-parent-d-of-lt.md)

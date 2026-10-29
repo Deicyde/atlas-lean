@@ -18,7 +18,7 @@ The last hypothesis is the Gödel second-incompleteness content when $T$ is ZFC.
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent formal theory](consistent.md)
 - [Theories deciding halting at a state count](decides-halting.md)
 - [Formal theory](formal-theory.md)
 - [Halting on the blank tape](halts.md)

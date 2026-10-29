@@ -20,16 +20,16 @@ lists.
 ## Depends on
 
 - [Typing judgment for the lambda calculus with references](../typing/has-type.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Store](../semantics/store.md)
-- [Store Typed](../typing/store-typed.md)
+- [Well-typed stores](../typing/store-typed.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
 - [Store-typing weakening](extend-store.md)
-- [Substitution lemma](instantiate.md)
+- [Substitution lemma for the lambda calculus with references](instantiate.md)
 - [Allocation preserves store typing](append.md)
 - [Well-typed stores hold a typed value at every location](../typing/exists-of-get-elem.md)
 - [Assignment preserves store typing](set.md)

@@ -22,7 +22,7 @@ recursive in the code, the input and the clock.
 - [Explicit configurations](cfg.md)
 - [Acting on a configuration](act.md)
 - [Configurations as tuples](equiv-prod.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [Clocked configuration of a code](cfg-after.md)
 - [Initial configuration of the code simulation](init.md)
 - [Table lookup of a code](lookup.md)

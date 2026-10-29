@@ -16,9 +16,9 @@ $n \mapsto v'(2n)$ satisfies $C$.
 
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [Renaming of the original variables](../three-sat/ren.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 

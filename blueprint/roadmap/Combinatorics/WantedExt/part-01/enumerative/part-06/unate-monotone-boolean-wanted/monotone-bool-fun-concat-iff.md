@@ -15,7 +15,7 @@ monotone and $g(x) \le h(x)$ for every $x \in \{0,1\}^n$.
 
 ## Depends on
 
-- [Concatenation of Boolean functions](bool-fun-concat.md)
+- [Concatenation of two Boolean functions](bool-fun-concat.md)
 
 ## Sources
 

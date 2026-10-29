@@ -37,7 +37,7 @@ $C = M = q$.
 ## Proof depends on
 
 - [Output block of an edge number](../subset-sum-digits/edge-enc.md)
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Testing a popped input bit](is-v-val.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

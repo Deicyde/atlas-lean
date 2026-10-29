@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.schmidtPartitionDiamond_genFun
 ---
 
-# Schmidt Partition Diamond gen Fun
+# Generating function of Schmidt type $d$-fold partition diamonds
 
-Schmidt type `d`-fold partition diamonds (Dockery-Jameson-Sellers-Wilson): their generating
-function, summing only the links, is `∏_{n ≥ 1} E_d(qⁿ, 1)/(1 - qⁿ)^{d+1}`. A Schmidt type
-diamond is a finitely supported `a : ℕ →₀ ℕ` with links at positions `k(d + 1)` and folds
-`a(k(d+1) + f)`, `1 ≤ f ≤ d`, between `a(k(d+1)) ≥ a(k(d+1) + f) ≥ a((k+1)(d+1))`; its weight is
-the link sum. The infinite product is stated through its truncations: for every `N`, the
-coefficients of `qⁿ`, `n ≤ N`, of `∏_{m=1}^N (1 - q^m)^{d+1} · S(q)` and of
-`∏_{m=1}^N E_d(q^m, 1)` agree (factors with `m > N` are `1` modulo `q^{N+1}`).
+**Generating function of Schmidt type $d$-fold partition diamonds.** Let $d \ge 1$. A Schmidt
+type $d$-fold partition diamond is a finitely supported sequence $(a_p)_{p \ge 0}$ of natural
+numbers such that $a_{k(d+1)} \ge a_{k(d+1)+f} \ge a_{(k+1)(d+1)}$ for all $k \ge 0$ and all
+$f$ with $1 \le f \le d$; its weight is the sum of its links $a_{k(d+1)}$, $k \ge 0$. Let
+$s_d(w)$ be the number of such diamonds of weight $w$, and let
+$S_d(q) = \sum_{w \ge 0} s_d(w) q^w \in \mathbb{Z}[[q]]$. Then for all natural numbers $n \le N$,
+the coefficient of $q^n$ in $S_d(q) \prod_{m=1}^{N} (1 - q^m)^{d+1}$ equals the coefficient of
+$q^n$ in $\prod_{m=1}^{N} E_d(q^m, 1)$, where $E_d$ is the Euler–Mahonian polynomial.
+
+Since every factor $E_d(q^m, 1)/(1 - q^m)^{d+1}$ with $m > N$ is $1$ modulo $q^{N+1}$, the
+statement for all $N$ is equivalent to $S_d(q) = \prod_{m \ge 1} E_d(q^m, 1)/(1 - q^m)^{d+1}$.
 
 ## Depends on
 

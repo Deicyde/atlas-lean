@@ -15,7 +15,7 @@ $S \cup \{\varphi\}$ is not consistent.
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Proof depends on

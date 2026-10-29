@@ -39,9 +39,9 @@ satisfies $\Phi$ and gives $\ell$ the value $A[\sigma]$.
 - [Satisfaction depends only on the occurring variables](satisfies-of-agree.md)
 - [One step of the Tseitin encoding](tseitin-step.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 - [Truth-table evaluation](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
 

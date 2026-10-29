@@ -41,7 +41,7 @@ $$48 n (10 \log 10 - 9 \log 9) - 16 - 48 \log(2100 n) \le \log F_9(n).$$
 - [Value of Q₉](q9-eq.md)
 - [Combined main term of the Möbius-weighted Stirling sums](z9-combined.md)
 - [Main Stirling term](fmain.md)
-- [Log F9 term lower](log-f9-term-lower.md)
+- [Termwise Stirling lower bound in Breusch's argument](log-f9-term-lower.md)
 - [Logarithm of the binomial factor](log-ratio9.md)
 - [Binomial factor ratio₉](ratio9.md)
 - [The Möbius divisor table for $210$](../grid/w9.md)

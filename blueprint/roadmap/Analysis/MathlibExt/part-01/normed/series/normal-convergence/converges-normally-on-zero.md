@@ -15,7 +15,7 @@ converges normally on $S$.
 
 ## Depends on
 
-- [Converges Normally On](converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](converges-normally-on.md)
 
 ## Proof depends on
 

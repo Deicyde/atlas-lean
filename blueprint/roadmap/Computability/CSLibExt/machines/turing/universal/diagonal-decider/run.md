@@ -6,14 +6,12 @@ proof: formalized
 lean: Cslib.Turing.Universal.Diag.Check.run
 ---
 
-# The layout run
+# The checking run
 
-**The layout run.** Writing $1$ for true and $0$ for false: for every bit list $y$, the
-layout machine, started at its first label with internal state false, with $y$ on its input
-stack $X$ and all other stacks empty, reaches its final label within $18(|y| + 1)^2$ steps with
-the layout of $y$ on its output stack $O$. For $y$ equal to $1$ followed by $x$, the layout is
-the cell of $|x|^2 + 1$, the cells of the input symbols of $x$, a $0$ and $x$ reversed; for any
-other $y$ it is $0, 1, 1, 0, 0$.
+**The checking run.** For every bit list $x$, the checking machine, started at the label
+$\mathsf{dupP}$ with internal state false, with $x$ on its input stack $X$ and every other stack
+empty, reaches the label $\mathsf{done}$ within $33(|x| + 1)^2$ steps, with some internal state
+and stacks in which the output stack $O$ holds the answer of the checking machine on $x$.
 
 ## Depends on
 
@@ -38,7 +36,7 @@ other $y$ it is $0, 1, 1, 0, 0$.
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
+- [Non-destructive comparison of two counters](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Decrement](../../../../../MathlibExt/turing-machine/program/decr.md)
 - [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)

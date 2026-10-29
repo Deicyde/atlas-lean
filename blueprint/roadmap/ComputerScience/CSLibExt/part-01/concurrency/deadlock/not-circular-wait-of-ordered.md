@@ -17,7 +17,7 @@ through a chain of one or more wait-for edges.
 ## Depends on
 
 - [Resource-allocation snapshot](alloc-state.md)
-- [Circular Wait](circular-wait.md)
+- [Circular wait](circular-wait.md)
 - [Havender's resource ordering](ordered.md)
 
 ## Proof depends on

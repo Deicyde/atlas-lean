@@ -53,7 +53,7 @@ navigation: module
 ## [Coefficients of qMZVs as polynomial functions on partitions to Takeyama–Bradley–Zhao qMZVs](part-03/README.md)
 
 - [Coefficients of qMZVs as polynomial functions on partitions](part-03/exists-mv-polynomial-coeff-q-mzv-eq-sum.md)
-- [Mem q MZVSpace zero iff exists mv Polynomial](part-03/mem-q-mzvspace-zero-iff-exists-mv-polyno.md)
+- [Polynomial functions on partitions characterize $\mathcal{Z}_q$](part-03/mem-q-mzvspace-zero-iff-exists-mv-polyno.md)
 - [Quasi-shuffle product](part-03/quasi-shuffle.md)
 - [The empty word is a left unit for the quasi-shuffle product](part-03/quasi-shuffle-nil-left.md)
 - [The stuffle product of two letters](part-03/quasi-shuffle-singleton-singleton.md)
@@ -104,7 +104,7 @@ navigation: module
 - [Partition relation for bi-brackets](part-05/bi-bracket-gen-partition-relation.md)
 - [Translation between bi-brackets and the Schlesinger–Zudilin model](part-05/bi-bracket-gen-eq-sz-gen-subst.md)
 - [Generating series of OOZ-qMZVs, coefficientwise](part-05/coeff-ooz-qmzv-sz-block-index-eq-sum-cho.md)
-- [Q MZVSpace Circ one eq span bracket okounkov bz](part-05/q-mzvspace-circ-one-eq-span-bracket-okou.md)
+- [Brackets, Okounkov qMZVs and Bradley–Zhao qMZVs span $\mathcal{Z}^\circ_{q,1}$](part-05/q-mzvspace-circ-one-eq-span-bracket-okou.md)
 - [Weighted quasi-shuffle product](part-05/weighted-quasi-shuffle.md)
 - [The empty word is a left unit for the weighted quasi-shuffle](part-05/weighted-quasi-shuffle-nil-left.md)
 - [Bachmann's coefficients](part-05/bi-bracket-lambda.md)

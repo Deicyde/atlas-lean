@@ -28,8 +28,8 @@ formula does not address.
 
 - [ℓ-generalized Fibonacci sequence](is-lgeneralized-fibonacci.md)
 - [Other roots of the ℓ-generalized Fibonacci characteristic polynomial](l-generalized-fibonacci-other-roots.md)
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
+- [Possible pole of the ℓ-generalized Fibonacci zeta function at a given index](l-generalized-fibonacci-zeta-pole.md)
+- [Set of possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 - [Residue expression of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-residue.md)
 
 ## Sources

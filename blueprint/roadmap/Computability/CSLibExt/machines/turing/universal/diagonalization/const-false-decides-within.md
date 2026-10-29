@@ -23,7 +23,7 @@ steps on every input of length $n$.
 
 - [Codes for single-tape machines](../code/code.md)
 - [Explicit configurations](../code/cfg.md)
-- [Output](../code/output.md)
+- [Output of a configuration](../code/output.md)
 - [Clocked configuration of a code](../code/cfg-after.md)
 - [The clocked evaluator](../code/eval-steps.md)
 - [Characterization of clocked results](../code/eval-steps-eq-some-iff-output.md)

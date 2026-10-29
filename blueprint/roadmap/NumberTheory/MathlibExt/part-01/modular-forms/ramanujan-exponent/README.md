@@ -5,7 +5,7 @@ navigation: module
 # Ramanujan Exponent
 
 - [Family of local exponents](local-exponent-family.md)
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 - [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 - [Admissibility of an exponent for a local-exponent family](is-admissible.md)
 - [Generalized Ramanujan conjecture for a family](generalized-ramanujan-for.md)

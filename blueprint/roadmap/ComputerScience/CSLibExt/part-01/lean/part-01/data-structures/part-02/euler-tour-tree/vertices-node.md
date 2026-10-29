@@ -17,7 +17,7 @@ of $c_1, \dots, c_k$, in this order.
 ## Depends on
 
 - [Rooted ordered tree](tree.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 
 ## Proof depends on
 

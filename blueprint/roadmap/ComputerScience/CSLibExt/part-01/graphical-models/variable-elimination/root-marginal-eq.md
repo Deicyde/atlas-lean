@@ -17,7 +17,7 @@ $\{0, \dots, n\} \to \alpha$ with $x_0 = a$.
 ## Depends on
 
 - [Pairwise model on a tree](tree-model.md)
-- [Root Message](root-message.md)
+- [Root message of a tree model](root-message.md)
 - [Weight of an assignment in a tree model](weight.md)
 
 ## Proof depends on

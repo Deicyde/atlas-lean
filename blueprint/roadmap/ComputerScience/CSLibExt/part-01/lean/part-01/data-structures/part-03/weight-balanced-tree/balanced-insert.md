@@ -21,7 +21,7 @@ weight-balanced insertion is weight-balanced.
 ## Proof depends on
 
 - [Weight-balanced rebalancing](balance.md)
-- [Balanced balance](balanced-balance.md)
+- [Weight-balanced rebalancing restores balance](balanced-balance.md)
 - [Building a weight-balanced node](balanced-node.md)
 - [Weight-balanced insertion does not decrease the number of keys](le-num-nodes-insert.md)
 - [Weight-balanced insertion adds at most one key](num-nodes-insert-le.md)

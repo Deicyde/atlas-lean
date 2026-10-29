@@ -16,7 +16,7 @@ by ones.
 
 ## Depends on
 
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Batcher's odd-even merge sort](odd-even-sort-n.md)
 
 ## Proof depends on

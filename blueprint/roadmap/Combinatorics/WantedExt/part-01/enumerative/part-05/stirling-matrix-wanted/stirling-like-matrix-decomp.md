@@ -25,7 +25,7 @@ $S_\alpha(n) = V(n) \, R_\alpha(n)$.
 - [The matrix $R_\alpha(n)$](r-matrix.md)
 - [Stirling-like matrix](stirling-like-matrix.md)
 - [Stirling matrix of the second kind](stirling-matrix2.md)
-- [U Matrix](u-matrix.md)
+- [The matrix $U_\alpha(n)$](u-matrix.md)
 - [The Vandermonde matrix $V(n)$](vandermonde-matrix.md)
 
 ## Sources

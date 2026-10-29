@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.TripSternTree.nodesAtDepth
 ---
 
-# Nodes At Depth
+# Nodes at a given depth of a TRIP-Stern tree
 
-Depth `n` consists of all nodes selected by binary paths of length `n`.
+**Nodes at a given depth of a TRIP-Stern tree.** Let $T$ be a TRIP-Stern tree and $n$ a
+natural number. The set of nodes of $T$ at depth $n$ is the set of all values $y$ such that some
+binary path of length $n$ selects $y$ in $T$.
 
 ## Depends on
 

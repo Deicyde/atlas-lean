@@ -20,7 +20,7 @@ the same term as renaming $t$ by $\rho'$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](../syntax/lift-ren.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources

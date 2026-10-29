@@ -30,7 +30,7 @@ $(s, h)$", where $s$ is the store and $h$ the heap.
 
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Heap assertion](../separation-logic/hassertion.md)
 - [Entailment of heap assertions](../separation-logic/entails.md)
 - [Heap configurations](../heap-step/hconfig.md)

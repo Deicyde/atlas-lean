@@ -6,12 +6,15 @@ proof: formalized
 lean: Cslib.CookLevin.satVerifier_verifies
 ---
 
-# Sat Verifier verifies
+# The SAT verifier verifies SAT
 
-`satVerifier` verifies `satDec` with witness bound `X`: the witness
-lists assignment values for the occurring variables in occurrence order
-(length the literal count, at most the input length), and acceptance is
-equivalent to satisfiability of the decoded formula.
+**The SAT verifier verifies SAT.** The SAT verifier verifies the SAT decision problem with
+witness bound the polynomial $X$: for every list $x$ of Booleans, $x$ encodes a satisfiable CNF
+formula if and only if there is a list $w$ of Booleans, of length at most the length of $x$, such
+that the SAT verifier on $(x, w)$ returns true.
+
+The intended witness lists values for the variables occurring in the decoded formula, in order of
+occurrence; its length is the literal count, which is at most the input length.
 
 ## Depends on
 
@@ -46,9 +49,9 @@ equivalent to satisfiability of the decoded formula.
 - [Occurrence list of a CNF formula](vars-of.md)
 - [Length of the occurrence list](vars-of-length.md)
 - [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Satisfaction of a literal](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 - [Satisfiability of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 - [Satisfiability means having a satisfying assignment](../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)

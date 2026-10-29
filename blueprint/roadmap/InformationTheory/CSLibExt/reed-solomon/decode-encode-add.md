@@ -25,7 +25,7 @@ $(p(\alpha_0) + \varepsilon_0, \dots, p(\alpha_{n-1}) + \varepsilon_{n-1})$, ret
 ## Proof depends on
 
 - [What the decoder returns](decode-eq-some-iff.md)
-- [Hamming Dist eq hamming Norm sub](../linear-code/hamming-dist-eq-hamming-norm-sub.md)
+- [Hamming distance is the weight of the difference](../linear-code/hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

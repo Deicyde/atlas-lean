@@ -197,7 +197,12 @@ public theorem zeckOdometer_eq_update {x : ℕ → Bool} (hx : x ∈ zeckAdic) (
     · simp [Function.update, show ¬ j < 2 by omega, show j ≠ 2 by omega]
   · exact absurd hP ‹_›
 
-/-- On `(10)^∞` and `(01)^∞` (no two consecutive zero digits) the odometer returns `0^∞`.
+/-- **The odometer on sequences without two consecutive zeros.** Let $T$ be the Zeckendorf
+odometer and let $x = (x_k)_{k \in \mathbb{N}}$ be a digit sequence with $x_k \in \{0, 1\}$ such
+that for every $k \ge 2$ we have $x_k = 1$ or $x_{k+1} = 1$. Then $T(x)$ is the zero sequence.
+
+Among the Zeckendorf-adic integers, the sequences satisfying this hypothesis are the two whose
+digits from index $2$ on alternate, $(10)^\infty$ and $(01)^\infty$.
 
 Source: Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation:
 An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27
@@ -797,7 +802,9 @@ An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Inte
 (2024), Article 24.3.2, Section 5.1 (definition of `NIZ_k`). -/
 public def zeckNIZ (r k : ℕ) : Set (ℕ → Bool) := zeckCST r k \ zeckCST r (k - 1)
 
-/-- `NIZ_k ⊆ CST_k`.
+/-- **New-information zones lie in $\mathrm{CST}_k$.** For all $r, k \in \mathbb{N}$, the
+new-information zone $\mathrm{NIZ}_k$ of order $k$ for the shift $r$ is contained in the set
+$\mathrm{CST}_k$ for the shift $r$.
 
 Source: Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation:
 An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27

@@ -584,10 +584,13 @@ Lemma 7 (`jis-2025-25.3.8-lem-7`). -/
 public theorem_wanted upperWythoffUnsumPalindrome_isPrefix_succ_iff {i : ℕ} (hi : 1 ≤ i) :
     upperWythoffUnsumPalindrome i <+: upperWythoffUnsumPalindrome (i + 1) ↔ Odd i
 
-/-- Writing `W_i = 3 V_i 3` (`V_i` is `W_i` with its first and last digit removed): for odd
-`i ≥ 2`, `W_(i+1) = W_i 5 V_(i-1) 3`, and for even `i ≥ 2`, `W_(i+1) = 3 V_i 5 W_(i-1)`. In
-particular `|W_(i+1)| = |W_i| + |W_(i-1)|` with `|W_1| = 1`, `|W_2| = 2`, and
-`|W_i| = F_(i+1)`.
+/-- **Recursion for the words $W_i$ of the unsum gap sequence.** For each $i$ let $V_i$ be the
+word $W_i$ with its first and last digit removed, write $|W|$ for the length of a word $W$, and
+denote concatenation of words by juxtaposition. For every $i \ge 2$: if $i$ is odd, then
+$W_{i+1} = W_i \, 5 \, V_{i-1} \, 3$; if $i$ is even, then $W_{i+1} = 3 \, V_i \, 5 \, W_{i-1}$;
+and in both cases $|W_{i+1}| = |W_i| + |W_{i-1}|$. Moreover $|W_1| = 1$, $|W_2| = 2$, and
+$|W_i| = F_{i+1}$ for every $i \ge 1$, where $F_m$ is the $m$-th Fibonacci number ($F_0 = 0$,
+$F_1 = 1$).
 
 Source: Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve
 Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8,
@@ -604,9 +607,14 @@ public theorem_wanted upperWythoffUnsumPalindrome_succ :
     (upperWythoffUnsumPalindrome 1).length = 1 ∧ (upperWythoffUnsumPalindrome 2).length = 2 ∧
     ∀ i, 1 ≤ i → (upperWythoffUnsumPalindrome i).length = Nat.fib (i + 1)
 
-/-- Let `𝐕` be the Fibonacci word under the coding `a ↦ 5`, `b ↦ 3`. The palindromes `W_i`
-converge to `3𝐕`: for every position `k` (counted from zero), `W_i` has digit `(3𝐕)[k]` at
-position `k` for all large `i`.
+/-- **The words $W_i$ converge to $3$ followed by the coded Fibonacci word.** Let
+$u_0 u_1 u_2 \cdots$ be the infinite Fibonacci word over $\{0, 1\}$, indexed from $0$, and let
+$\mathbf{V}$ be the infinite word obtained from it by replacing each $0$ by $5$ and each
+$1$ by $3$. Then the words $W_i$ of the unsum gap sequence converge to the infinite word
+$3\mathbf{V}$: for every $k \ge 0$ there is $N$ such that for every $i \ge N$ the word $W_i$ has
+more than $k$ digits and its digit at position $k$ (counted from zero) is the digit of
+$3\mathbf{V}$ at position $k$, that is, $3$ if $k = 0$, and for $k \ge 1$ it is $3$ if
+$u_{k-1} = 1$ and $5$ if $u_{k-1} = 0$.
 
 Source: Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve
 Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8,

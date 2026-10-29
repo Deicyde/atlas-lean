@@ -15,7 +15,7 @@ a pair $Q$, then $Q$ is equivalent to $P$.
 
 ## Depends on
 
-- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Congruence subgroup pair](congruence-subgroup-pair.md)
 - [Equivalence of congruence subgroup pairs](is-equivalent.md)
 
 ## Proof depends on

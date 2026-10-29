@@ -40,7 +40,7 @@ $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$, in this order.
 - [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
 - [Extra ones of a copy site](../ham-path-emit-machine/ext.md)
 - [Counter read by a copy site](../ham-path-emit-machine/src-2.md)
-- [Counters read by copy sites](../ham-path-emit-machine/src.md)
+- [Counters read by HAMPATH copy sites](../ham-path-emit-machine/src.md)
 - [Bits pushed by a copy site of the HAMPATH emitter](../ham-path-emit-machine/atom.md)
 - [Step count of a list of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-cost.md)
 - [Running a chain of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-run.md)

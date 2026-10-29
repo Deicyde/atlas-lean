@@ -26,7 +26,7 @@ first derivative negative just right of the critical point, so the function decr
 
 ## Proof depends on
 
-- [Deriv deriv nonneg](deriv-deriv-nonneg.md)
+- [The second derivative is nonnegative at a local minimum](deriv-deriv-nonneg.md)
 - [Hessian entries as second Fréchet derivatives](hessian-matrix-eq-fderiv-fderiv.md)
 
 ## Sources

@@ -18,8 +18,8 @@ $v$ is read as a function on states.
 ## Depends on
 
 - [Markov decision process](mdp.md)
-- [Value Iteration](value-iteration.md)
-- [Value Iteration Vec](value-iteration-vec.md)
+- [Value iteration](value-iteration.md)
+- [Tabulated value iteration](value-iteration-vec.md)
 
 ## Proof depends on
 

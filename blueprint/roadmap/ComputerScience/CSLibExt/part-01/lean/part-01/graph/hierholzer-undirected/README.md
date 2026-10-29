@@ -24,9 +24,9 @@ navigation: module
 
 ## Correctness
 
-- [Hierholzer's algorithm returns a trail](uhierholzer-trail.md)
-- [Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
-- [Hierholzer's algorithm finds Euler circuits](uhierholzer-is-ueuler-circuit.md)
+- [Undirected Hierholzer's algorithm returns a trail](uhierholzer-trail.md)
+- [Undirected Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
+- [Undirected Hierholzer's algorithm finds Euler circuits](uhierholzer-is-ueuler-circuit.md)
 - [Cost of the undirected Hierholzer algorithm](uhierholzer-time.md)
 
 ## The converse: degrees of an Euler path

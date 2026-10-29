@@ -17,11 +17,11 @@ taken in $[0, \infty]$), then for every $x \in S$ the series $\sum_n \|f_n(x)\|$
 
 ## Depends on
 
-- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
+- [Local normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-normally-on.md)
 - [Normal convergence implies pointwise absolute convergence](summable-norm.md)
 
 ## Sources

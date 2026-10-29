@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.DominationState
 ---
 
-# Domination State
+# Domination states
 
-The state of a vertex relative to a vertex set `S` (Mertens, Definition 1): occupied
-(in `S`), covered (not in `S` but adjacent to `S`), or uncovered.
+**Domination states.** A domination state is one of three labels: uncovered, covered or
+occupied.
+
+Relative to a set $S$ of vertices of a graph, a vertex is occupied if it lies in $S$, covered if
+it lies outside $S$ but is adjacent to a vertex of $S$, and uncovered otherwise.
 
 ## Depends on
 

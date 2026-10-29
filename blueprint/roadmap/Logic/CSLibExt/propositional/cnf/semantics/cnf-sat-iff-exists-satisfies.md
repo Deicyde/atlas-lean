@@ -15,13 +15,13 @@ satisfiable if and only if there is an assignment $v : \mathbb{N} \to \{\mathrm{
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Satisfies](satisfies-3.md)
+- [Satisfaction of a CNF formula](satisfies-3.md)
 - [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](satisfies-2.md)
+- [Satisfaction of a clause](satisfies-2.md)
 - [Satisfaction of a literal](satisfies.md)
 
 ## Sources

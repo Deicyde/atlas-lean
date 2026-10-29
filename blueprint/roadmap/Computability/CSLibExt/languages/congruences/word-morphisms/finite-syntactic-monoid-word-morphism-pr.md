@@ -15,7 +15,7 @@ $h^{-1}(L) = \{w \in \Sigma^* \mid h(w) \in L\}$ is finite.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Inverse image under a word morphism](word-morphism-preimage.md)
 
 ## Proof depends on

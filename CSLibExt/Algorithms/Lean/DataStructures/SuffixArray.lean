@@ -50,7 +50,10 @@ namespace SuffixArray
 
 variable {α : Type u} [LinearOrder α]
 
-/-- The suffix of `s` starting at index `i`. Indices at or past the end give `[]`. -/
+/-- **Suffix of a list at an index.** For a list $s = (s_0, \dots, s_{n-1})$ over a linearly
+ordered alphabet and a natural number $i$, the suffix of $s$ at $i$ is the list obtained from
+$s$ by dropping its first $i$ entries: it is $(s_i, \dots, s_{n-1})$ when $i < n$ and the empty
+list when $i \ge n$. -/
 def suffix (s : List α) (i : Nat) : List α :=
   s.drop i
 
@@ -68,7 +71,10 @@ theorem suffix_length_le (s : List α) (i : Nat) : (suffix s i).length ≤ s.len
   rw [suffix_length]
   exact Nat.sub_le s.length i
 
-/-- All suffixes of `s`, longest first, ending with the empty suffix. -/
+/-- **Suffixes of a list.** For a list $s$ of length $n$ over a linearly ordered alphabet, the
+list of suffixes of $s$ is the list, for $i = 0, 1, \dots, n$ in this order, of the lists
+obtained from $s$ by dropping its first $i$ entries. It starts with $s$ itself and ends with the
+empty list. -/
 def suffixes (s : List α) : List (List α) :=
   s.tails
 

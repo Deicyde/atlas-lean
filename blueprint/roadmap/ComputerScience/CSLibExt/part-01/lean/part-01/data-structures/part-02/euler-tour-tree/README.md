@@ -15,7 +15,7 @@ navigation: module
 - [Children of a rooted tree](children.md)
 - [Size of a rooted tree](size.md)
 - [Accumulator preorder traversal](vertices-aux.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 - [Accumulator preorder traversal is append](vertices-aux-eq.md)
 - [Preorder vertex list of a node](vertices-node.md)
 - [Euler tour with an accumulator](tour-aux.md)

@@ -17,14 +17,14 @@ positions, the algorithm returns a value $\delta$ with $\delta \le d(p, q)$.
 
 ## Depends on
 
-- [Is Answer](is-answer.md)
+- [Closest-pair answer](is-answer.md)
 - [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Proof depends on
 
-- [Closest Rec](closest-rec.md)
+- [Closest-pair recursion](closest-rec.md)
 - [The closest-pair recursion is correct on lists sorted by first coordinate](closest-rec-is-answer.md)
-- [Dist2](dist2.md)
+- [Squared distance in the plane](dist2.md)
 
 ## Sources
 

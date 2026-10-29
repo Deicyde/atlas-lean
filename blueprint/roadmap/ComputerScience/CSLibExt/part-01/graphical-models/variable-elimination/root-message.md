@@ -5,10 +5,15 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.rootMessage
 ---
 
-# Root Message
+# Root message of a tree model
 
-The unnormalized marginal of the root computed by variable elimination: eliminate the vertices
-from the last one down, then read off the root's unary factor.
+**Root message of a tree model.** Let $\alpha$ be finite. The root message of a pairwise tree
+model $m$ on the vertices $0, \dots, n$ is the function $r_m : \alpha \to \mathbb{R}$ defined by
+recursion on $n$: if $n = 0$, it is the unary factor of the root $0$; if $m$ is a model on the
+vertices $0, \dots, n + 1$, it is $r_{m'}$, where $m'$ is the model on the vertices $0, \dots, n$
+obtained from $m$ by eliminating the last vertex.
+
+By variable elimination, $r_m(a)$ is the unnormalized marginal of the root at $a$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ from the last one down, then read off the root's unary factor.
 
 ## Proof depends on
 
-- [Eliminate](eliminate.md)
+- [Eliminating the last vertex of a tree model](eliminate.md)
 
 ## Sources
 

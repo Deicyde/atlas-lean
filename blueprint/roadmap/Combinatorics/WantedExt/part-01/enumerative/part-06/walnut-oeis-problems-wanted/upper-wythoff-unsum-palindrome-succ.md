@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumPalindrome_succ
 ---
 
-# Upper Wythoff Unsum Palindrome succ
+# Recursion for the words $W_i$ of the unsum gap sequence
 
-Writing `W_i = 3 V_i 3` (`V_i` is `W_i` with its first and last digit removed): for odd
-`i ≥ 2`, `W_(i+1) = W_i 5 V_(i-1) 3`, and for even `i ≥ 2`, `W_(i+1) = 3 V_i 5 W_(i-1)`. In
-particular `|W_(i+1)| = |W_i| + |W_(i-1)|` with `|W_1| = 1`, `|W_2| = 2`, and
-`|W_i| = F_(i+1)`.
+**Recursion for the words $W_i$ of the unsum gap sequence.** For each $i$ let $V_i$ be the
+word $W_i$ with its first and last digit removed, write $|W|$ for the length of a word $W$, and
+denote concatenation of words by juxtaposition. For every $i \ge 2$: if $i$ is odd, then
+$W_{i+1} = W_i \, 5 \, V_{i-1} \, 3$; if $i$ is even, then $W_{i+1} = 3 \, V_i \, 5 \, W_{i-1}$;
+and in both cases $|W_{i+1}| = |W_i| + |W_{i-1}|$. Moreover $|W_1| = 1$, $|W_2| = 2$, and
+$|W_i| = F_{i+1}$ for every $i \ge 1$, where $F_m$ is the $m$-th Fibonacci number ($F_0 = 0$,
+$F_1 = 1$).
 
 ## Depends on
 

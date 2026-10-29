@@ -40,6 +40,6 @@ navigation: module
 
 - [Keys of a y-fast trie](contents.md)
 - [Membership in a y-fast trie via representatives' buckets](mem-contents-iff.md)
-- [Valid](valid-2.md)
+- [Valid y-fast trie skeleton](valid-2.md)
 - [Representatives of a valid y-fast trie are stored keys](rep-mem-contents-of-valid.md)
 - [Keys of a valid y-fast trie are the keys in buckets](mem-contents-iff-exists-of-valid.md)

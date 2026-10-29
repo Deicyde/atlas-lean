@@ -31,7 +31,7 @@ section "The radix-2 DIT case" of Wikipedia, "Cooley–Tukey FFT algorithm".
 
 ## Proof depends on
 
-- [Dft Sum mod](dft-sum-mod.md)
+- [The DFT sum at a root of unity depends only on the frequency modulo the length](dft-sum-mod.md)
 - [Even–odd splitting of the DFT sum](dft-sum-two-mul.md)
 
 ## Sources

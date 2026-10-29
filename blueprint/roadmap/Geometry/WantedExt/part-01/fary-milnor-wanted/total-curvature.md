@@ -15,7 +15,7 @@ to be $0$ if the integrand is not integrable.
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Proof depends on
 

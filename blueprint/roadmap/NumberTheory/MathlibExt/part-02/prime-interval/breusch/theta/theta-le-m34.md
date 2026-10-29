@@ -21,7 +21,7 @@ $t = \lfloor (m+5)/6 \rfloor$, we have $m\# \le t\# \cdot M(t)$.
 ## Proof depends on
 
 - [Positivity of the multinomial coefficient $M(t)$](m34-pos.md)
-- [Vp M34](vp-m34.md)
+- [Primes in $(t, 6t)$ occur in $M(t)$](vp-m34.md)
 
 ## Sources
 

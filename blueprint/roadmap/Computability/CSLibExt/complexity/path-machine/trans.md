@@ -15,7 +15,7 @@ $S_2$ on every stack outside $B$, then $S_3$ agree with $S_1$ on every stack out
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources

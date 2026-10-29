@@ -37,8 +37,8 @@ stack.
 
 - [Generator machine for the accept family](../accept/prog.md)
 - [The host program](hprog.md)
-- [Prog](../family/prog.md)
-- [The generator](../init-family/iprog.md)
+- [Generator machine for the transition clause families](../family/prog.md)
+- [The initial-row generator](../init-family/iprog.md)
 - [The cell-shift generator](../shift/prog.md)
 - [Accepting code](../situation/part-07/acode.md)
 - [Consumption table of a situation](../situation/part-02/cn.md)

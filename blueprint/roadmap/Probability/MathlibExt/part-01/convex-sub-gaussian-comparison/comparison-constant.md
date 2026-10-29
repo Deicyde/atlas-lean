@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Admissible Constant](is-admissible-constant.md)
+- [Admissible convex sub-Gaussian comparison constants](is-admissible-constant.md)
 
 ## Sources
 

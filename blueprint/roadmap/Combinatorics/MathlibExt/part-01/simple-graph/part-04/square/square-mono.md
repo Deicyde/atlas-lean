@@ -15,7 +15,7 @@ the square of $H$.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Sources
 

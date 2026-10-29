@@ -19,7 +19,7 @@ fails if input values remain.
 
 ## Depends on
 
-- [Edit Script](edit-script.md)
+- [Edit script](edit-script.md)
 
 ## Proof depends on
 

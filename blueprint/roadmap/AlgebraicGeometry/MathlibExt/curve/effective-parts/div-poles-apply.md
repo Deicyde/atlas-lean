@@ -7,14 +7,15 @@ proof: formalized
 lean: CurveDivisor.divPoles_apply
 ---
 
-# Div Poles apply
+# Coefficients of the pole part
 
-The coefficient of the pole part is the negative part of the coefficient.
+**Coefficients of the pole part.** For every divisor $D$ on a set of points $C$ and every
+point $P \in C$, the coefficient at $P$ of the pole part $D^-$ of $D$ is $\max(-D(P), 0)$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Poles](div-poles.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
+- [Pole part of a divisor](div-poles.md)
 
 ## Sources
 

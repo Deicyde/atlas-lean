@@ -23,7 +23,7 @@ at $q$ is at most the potential of $q$ plus $2n$.
 
 - [Amortized charge of a queue operation](charge.md)
 - [Amortized cost of a sequence of queue operations](run-amortized.md)
-- [Total Charge](total-charge.md)
+- [Total charge of a sequence of queue operations](total-charge.md)
 
 ## Sources
 

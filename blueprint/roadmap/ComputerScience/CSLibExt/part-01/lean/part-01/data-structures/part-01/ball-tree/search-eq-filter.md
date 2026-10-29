@@ -27,7 +27,7 @@ the bounding spheres loses no point.
 
 - [Symmetry of squared distance](dist-sq-comm.md)
 - [Relaxed triangle inequality for squared distance](dist-sq-le-two-mul.md)
-- [Search Aux](search-aux.md)
+- [Accumulating ball-tree search](search-aux.md)
 - [Accumulating traversal of a ball tree](to-list-aux.md)
 
 ## Sources

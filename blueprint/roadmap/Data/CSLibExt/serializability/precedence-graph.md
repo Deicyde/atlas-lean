@@ -21,7 +21,7 @@ in $s$.
 ## Proof depends on
 
 - [Read or write access](access.md)
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 - [Edge of the precedence graph](precedence-edge.md)
 
 ## Sources

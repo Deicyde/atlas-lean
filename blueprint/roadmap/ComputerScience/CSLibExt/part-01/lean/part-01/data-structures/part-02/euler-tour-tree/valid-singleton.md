@@ -19,7 +19,7 @@ subtrees is valid.
 
 ## Proof depends on
 
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 - [Preorder vertex list of a node](vertices-node.md)
 
 ## Sources

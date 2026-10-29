@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditScript
 ---
 
-# Edit Script
+# Edit script
 
-A left-to-right sequence of edit operations.
+**Edit script.** An edit script over a type $\alpha$ is a finite list of edit steps over
+$\alpha$, applied from left to right.
 
 ## Depends on
 

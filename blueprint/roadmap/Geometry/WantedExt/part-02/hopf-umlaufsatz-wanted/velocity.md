@@ -13,7 +13,7 @@ taken to be $0$ where $r$ is not differentiable.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for the Umlaufsatz](plane.md)
 
 ## Sources
 

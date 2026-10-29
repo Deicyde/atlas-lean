@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.divisorCountApprox_one_sub_isBigO
 ---
 
-# Divisor Count Approx one sub is Big O
+# Trigonometric approximation of the divisor-counting function
 
-Theorem 1: `τ̃(k) = ∑_{j=1}^{k} exp(-(π²/2) k j³ sin²(kπ/j))` (the paper's (1), i.e.
-Lemma 2 with `A(j, k) = π² j²/2`) satisfies `τ̃(k) = τ(k) + O(1/(eᵏ - 1))` as `k → ∞`.
+**Trigonometric approximation of the divisor-counting function.** For a natural number $k$
+let $\tau(k)$ be the number of positive divisors of $k$ and
+
+$$\tilde\tau(k) = \sum_{j=1}^{k} \exp\left(-\frac{\pi^2}{2} k j^3 \sin^2\frac{k\pi}{j}\right).$$
+
+Then $\tilde\tau(k) - \tau(k) = O\left(\frac{1}{e^k - 1}\right)$ as $k \to \infty$.
+
+This is the exponential approximation of the divisor-counting function with
+$A(j, k) = \pi^2 j^2 / 2$.
 
 ## Depends on
 

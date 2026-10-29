@@ -9,4 +9,4 @@ navigation: module
 - [Mixed identity for generalized Fibonacci sequences](generalized-fibonacci-mixed-identity.md)
 - [Cassini identity for generalized Fibonacci sequences](generalized-fibonacci-cassini.md)
 - [Ratio limit for generalized Fibonacci sequences](generalized-fibonacci-tendsto-ratio.md)
-- [Generalized Fibonacci binet cassini and ratio limit](generalized-fibonacci-binet-cassini-and.md)
+- [Binet, Cassini, mixed identity and ratio limit for generalized Fibonacci sequences](generalized-fibonacci-binet-cassini-and.md)

@@ -18,7 +18,7 @@ of $s$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Subtree rooted at a vertex](find-subtree.md)
 - [Pruning the subtrees rooted at a vertex](prune-at.md)
 

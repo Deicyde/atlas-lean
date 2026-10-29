@@ -16,7 +16,7 @@ $T$, then the codeword of $a$ is not a prefix of the codeword of $b$.
 ## Depends on
 
 - [Huffman tree](huffman-tree.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
 - [Prefix-free code](../../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)
 
@@ -27,7 +27,7 @@ $T$, then the codeword of $a$ is not a prefix of the codeword of $b$.
 - [Decoding one codeword](decode-one.md)
 - [Following a path in a Huffman tree](decode-path.md)
 - [Root-to-leaf path code](path-code.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Sources
 

@@ -207,9 +207,11 @@ public theorem_wanted jeffery_floor_cot_singletons (n : ℕ) (hn : 1 ≤ n) :
     let B : ℕ → Prop := fun k => 2 ≤ k ∧ f (-(k : ℤ) - 1) < f (-(k : ℤ)) ∧ f (-(k : ℤ)) < f (-(k : ℤ) + 1)
     2 * Nat.nth A (n - 1) = Nat.nth B (n - 1) + n - 1
 
-/-- For `n ≥ 1`, the number of `x` with exactly `n + 1` decimal digits for which some natural
-`k` satisfies `x ≤ k < 2x` and `k / x = 1 + (x - 10^n) / (10^n - 1)` (A285273) equals
-`2^ω(10^n - 1)`, where `ω` counts distinct prime factors.
+/-- **Counting solutions of a repeating-decimal ratio equation.** For every natural number
+$n \ge 1$, the number of natural numbers $x$ with $10^n \le x < 10^{n+1}$ for which there is a
+natural number $k$ with $x \le k < 2x$ and $k / x = 1 + (x - 10^n) / (10^n - 1)$, computed in the
+rationals, (OEIS A285273) equals $2^{\omega(10^n - 1)}$, where $\omega(m)$ is the number of
+distinct prime factors of $m$.
 
 Source: Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29
 (2026), Article 26.1.8, Theorem 13 (`jis-2026-26.1.8-thm-13`). -/

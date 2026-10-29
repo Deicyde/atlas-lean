@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.sortedMerge
 ---
 
-# Sorted Merge
+# Sorted merge of two catalogs
 
-The sorted merge of two catalogs, modelled as the merge sort of their
-concatenation.
+**Sorted merge of two catalogs.** For lists $\ell_1$ and $\ell_2$ over a linearly ordered
+type, their sorted merge is the result of merge sort, with respect to $\le$, applied to the
+concatenation of $\ell_1$ followed by $\ell_2$.
+
+This models the merge of two sorted catalogs; the linear-time merge itself is not formalized.
 
 ## Depends on
 

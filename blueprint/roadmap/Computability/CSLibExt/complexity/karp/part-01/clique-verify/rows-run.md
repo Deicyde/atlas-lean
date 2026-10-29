@@ -22,7 +22,7 @@ at the rejecting label otherwise.
 - [Stacks of the CLIQUE verifier](k.md)
 - [Labels of the CLIQUE verifier](lab.md)
 - [Modes of the clique verifier](mode.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [The row-by-row check of the clique verifier](rows-ok.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)

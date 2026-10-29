@@ -21,14 +21,14 @@ navigation: module
 
 ## The operators
 
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 - [Selection](select.md)
 - [Cascade of selections](select-select.md)
 - [Selections commute](select-comm.md)
 - [Natural join](join.md)
 - [Renaming of attributes](rename.md)
-- [Join comm](join-comm.md)
-- [Join assoc](join-assoc.md)
+- [Commutativity of the natural join](join-comm.md)
+- [Associativity of the natural join](join-assoc.md)
 - [The natural join on a common schema is the intersection](join-eq-inter.md)
 - [Selection distributes over union](select-union.md)
 - [Selection distributes over difference](select-sdiff.md)
@@ -37,18 +37,18 @@ navigation: module
 - [Selection pushdown into the left operand of a join](select-join-left.md)
 - [Selection pushdown into the right operand of a join](select-join-right.md)
 - [Cascade of projections](project-project.md)
-- [Cascade of projections](project-project-of-subset.md)
-- [Select project](select-project.md)
+- [Cascade of projections onto a subset](project-project-of-subset.md)
+- [Selection commutes with projection](select-project.md)
 - [Projection distributes over union](project-union.md)
 
 ## Queries
 
 - [Relational algebra queries](expr.md)
-- [Eval](eval-2.md)
+- [Value of a query](eval-2.md)
 - [Schema of a query](schema.md)
 - [Databases conforming to a schema](conforms.md)
 - [Typing is sound](eval-is-over.md)
 - [Query equivalence](equiv.md)
 - [Selection pushdown as a query rewrite](select-join.md)
-- [Cascade of selections](select-select-2.md)
-- [Cascade of projections](project-project-2.md)
+- [Cascade of selections as a query rewrite](select-select-2.md)
+- [Cascade of projections as a query rewrite](project-project-2.md)

@@ -17,13 +17,13 @@ then the contour integral of $f$ over $\Gamma$ is $0$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 - [Rectangle filling supported in a set](filling-supported-in.md)
 - [Contour integral over a rectilinear cycle](integral.md)
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Boundary integral over a rectangle](boundary-integral.md)
 - [Cauchy–Goursat theorem for rectangles](boundary-integral-eq-zero.md)
 - [Carrier of an axis-parallel rectangle](carrier.md)

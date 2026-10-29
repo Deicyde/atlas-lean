@@ -14,11 +14,11 @@ square of order $3$; its magic sum is $12$.
 
 ## Depends on
 
-- [Is Reduced Magic Square](is-reduced-magic-square.md)
+- [Reduced magic squares](is-reduced-magic-square.md)
 
 ## Proof depends on
 
-- [Is Magic Square](is-magic-square.md)
+- [Magic squares](is-magic-square.md)
 
 ## Sources
 

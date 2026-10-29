@@ -16,13 +16,13 @@ that unifies $E$ equals the composite substitution that applies first $s$ and th
 
 - [Lists of equations](equations.md)
 - [Substitution](subst.md)
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Unifier of a list of equations](unifies.md)
 - [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on
 
-- [Single-variable substitution](single.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Size of a term](size.md)
 - [Occurs check: size bound](size-subst-lt-of-mem.md)

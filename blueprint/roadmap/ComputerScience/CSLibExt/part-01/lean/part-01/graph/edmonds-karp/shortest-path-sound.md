@@ -30,7 +30,7 @@ such that $P$ has exactly $d + 1$ vertices.
 - [Transpose of a directed adjacency graph](../directed-adjacency-2/transpose.md)
 - [Walks in the transpose are reversed walks](../directed-adjacency-2/walk-transpose-iff.md)
 - [Distance-guided path reconstruction](path-from-distances.md)
-- [Path From Distances sound](path-from-distances-sound.md)
+- [Soundness of distance-guided path reconstruction](path-from-distances-sound.md)
 
 ## Sources
 

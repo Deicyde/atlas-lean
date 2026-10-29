@@ -5,7 +5,7 @@ navigation: module
 # Script
 
 - [Edit step](edit-step.md)
-- [Edit Script](edit-script.md)
+- [Edit script](edit-script.md)
 - [Unit cost of an edit step](cost.md)
 - [Cost of an edit script](cost-2.md)
 - [Running an edit script](apply.md)

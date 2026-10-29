@@ -22,12 +22,12 @@ over all primes $p$ converges unconditionally to $1 + \sum_{n \ge 2} f_a(n)$.
 ## Proof depends on
 
 - [Entry 30 coefficients are multiplicative](chapter5-entry30-coeff-mul-of-coprime.md)
-- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Entry 30 coefficients vanish at nonzero non-squarefree natural numbers](chapter5-entry30-coeff-of-not-squarefree.md)
 - [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
-- [Chapter5 Entry30 Coeff one](chapter5-entry30-coeff-one.md)
-- [Chapter5 Entry30 Coeff prime](chapter5-entry30-coeff-prime.md)
+- [The Entry 30 coefficient at one](chapter5-entry30-coeff-one.md)
+- [Entry 30 coefficients at primes](chapter5-entry30-coeff-prime.md)
 - [Entry 30 coefficients vanish at higher prime powers](chapter5-entry30-coeff-prime-pow-of-two.md)
-- [Chapter5 Entry30 Coeff zero](chapter5-entry30-coeff-zero.md)
+- [The Entry 30 coefficient at zero](chapter5-entry30-coeff-zero.md)
 
 ## Sources
 

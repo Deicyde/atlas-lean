@@ -24,7 +24,7 @@ vertex $v$ is finite, then $g(v) \le d$ for every weight $d$ of a path in $G$ fr
 
 ## Proof depends on
 
-- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced weights telescope along paths](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
 - [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
 - [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)

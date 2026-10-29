@@ -23,7 +23,7 @@ $x$-admissible sequences correspond bijectively to the positions $\ell < |\eta^p
 - [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
 - [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

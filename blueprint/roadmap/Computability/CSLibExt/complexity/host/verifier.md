@@ -34,9 +34,9 @@ it outputs the one-element bit list $[f(x, w)]$.
 - [Phase-0 labels of the generic host](p0.md)
 - [Halting configuration of a finite multi-stack machine](halt-list-eq.md)
 - [Initial configuration of a finite multi-stack machine](init-list-eq.md)
-- [Vprog](vprog.md)
+- [Verifier host program](vprog.md)
 - [The verifier host's run](vprog-run.md)
-- [Vtime](vtime.md)
+- [Step bound of the verifier host](vtime.md)
 - [The verifier host machine](vtm.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 

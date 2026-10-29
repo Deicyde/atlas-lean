@@ -16,7 +16,7 @@ $P \in E(\overline{\mathbb{F}}_p)$ with $p^r P = 0$ is $P = 0$.
 
 ## Depends on
 
-- [Is Supersingular](is-supersingular.md)
+- [Supersingular elliptic curves](is-supersingular.md)
 
 ## Sources
 

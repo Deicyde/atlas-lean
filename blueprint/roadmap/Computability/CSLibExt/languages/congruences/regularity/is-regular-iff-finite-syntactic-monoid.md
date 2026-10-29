@@ -13,7 +13,7 @@ and only if the syntactic monoid of $L$ is finite.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 

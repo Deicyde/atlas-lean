@@ -27,7 +27,7 @@ where $\ell$ is the log-likelihood of the data under the mixture.
 - [The EM theorem](../expectation-maximization/log-lik-le-of-em-q-le.md)
 - [Parameters of a full-covariance Gaussian mixture](params.md)
 - [Validity of full-covariance Gaussian mixture parameters](valid.md)
-- [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [The M-step of the full-covariance Gaussian mixture maximizes the EM objective](em-q-le-em-step.md)
 - [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources

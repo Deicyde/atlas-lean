@@ -5,7 +5,7 @@ navigation: module
 # Minimum Equivalent Digraph
 
 - [Instances of MINIMUM EQUIVALENT DIGRAPH](minimum-equivalent-digraph-instance.md)
-- [Directed adjacency in an arc list](dadj.md)
+- [Directed adjacency for MINIMUM EQUIVALENT DIGRAPH](dadj.md)
 - [Bounded reachability in a digraph](reachable.md)
 - [Well-formed MINIMUM EQUIVALENT DIGRAPH instances](well-formed.md)
 - [Feasible MINIMUM EQUIVALENT DIGRAPH instances](minimum-equivalent-digraph-feasible.md)

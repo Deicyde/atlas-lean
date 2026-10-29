@@ -17,7 +17,7 @@ successor step and its output is $l$.
 
 - [Codes for single-tape machines](code.md)
 - [Explicit configurations](cfg.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [Clocked configuration of a code](cfg-after.md)
 - [The clocked evaluator](eval-steps.md)
 - [One step of a code](step.md)

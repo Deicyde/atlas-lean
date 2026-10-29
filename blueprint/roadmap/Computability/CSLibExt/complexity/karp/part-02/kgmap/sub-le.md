@@ -19,7 +19,7 @@ holds $U^{n-k}$, and every stack other than $A$ and $D$ has the same contents in
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [The KG-map machine](prog.md)

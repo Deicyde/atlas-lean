@@ -38,7 +38,8 @@ abbrev Heap := Finmap (fun _ : Nat => Nat)
 
 namespace Heap
 
-/-- Two heaps are disjoint when no address is allocated in both. -/
+/-- **Disjoint heaps.** Two heaps $h_1$ and $h_2$ are disjoint when no address is allocated in
+both: every address allocated in $h_1$ is not allocated in $h_2$. -/
 def Disjoint (h₁ h₂ : Heap) : Prop := ∀ a, a ∈ h₁ → a ∉ h₂
 
 /-- **Symmetry of heap disjointness.** For heaps $h_1$ and $h_2$, if $h_1$ and $h_2$ are

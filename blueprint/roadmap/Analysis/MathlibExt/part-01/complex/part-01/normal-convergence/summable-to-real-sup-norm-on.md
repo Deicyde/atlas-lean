@@ -18,7 +18,7 @@ summable.
 
 ## Depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-normally-on.md)
 - [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Sources

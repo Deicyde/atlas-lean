@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Area](word-area.md)
+- [Area of a word](word-area.md)
 
 ## Sources
 

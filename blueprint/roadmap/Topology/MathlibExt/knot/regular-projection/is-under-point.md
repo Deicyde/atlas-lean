@@ -15,7 +15,7 @@ greater height than $a$.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Parameter point](param-point.md)
 
 ## Proof depends on

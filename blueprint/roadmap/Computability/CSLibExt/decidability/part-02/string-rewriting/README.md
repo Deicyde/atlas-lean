@@ -13,7 +13,7 @@ navigation: module
 ## The dominoes
 
 - [Lifting a word to the extended alphabet](lift.md)
-- [The start domino](start-card.md)
+- [The start domino of the reduction from reachability to MPCP](start-card.md)
 - [Final domino](final-card.md)
 - [The separator domino](sep-card.md)
 - [The domino of a rewriting rule](rule-card.md)
@@ -40,7 +40,7 @@ navigation: module
 
 - [The total reduction of reachability with nonempty sides to MPCP](reduce.md)
 - [Reachability many-one reduces to MPCP](many-one-reducible-sr-mpcp.md)
-- [Reachability many-one reduces to PCP](many-one-reducible-sr-pcp.md)
+- [Reachability for rules with nonempty sides many-one reduces to PCP](many-one-reducible-sr-pcp.md)
 
 ## Thue systems
 

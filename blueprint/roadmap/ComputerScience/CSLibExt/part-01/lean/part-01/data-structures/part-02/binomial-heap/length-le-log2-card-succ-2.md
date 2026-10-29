@@ -16,7 +16,7 @@ $\lfloor \log_2 n \rfloor + 1$, where $\lfloor \log_2 0 \rfloor$ is taken to be 
 ## Depends on
 
 - [Binomial heap](binomial-heap.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Binomial tree](binomial-tree.md)
 
 ## Proof depends on

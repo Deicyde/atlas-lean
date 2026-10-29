@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opxD_isTheta_patternExD
 ---
 
-# Opx D is Theta pattern Ex D
+# Higher-dimensional continuous Turán numbers versus extremal functions
 
-Theorem 5.11: for finite `P ⊆ ℝ^d`, `opx(n, P, d) = Θ(ex(n, M_P, d))`, the constants
-depending on `P`. Stated along natural `n` (the domain of `ex`).
+**Higher-dimensional continuous Turán numbers versus extremal functions.** Let $d$ be a
+natural number and let $P \subseteq \mathbb{R}^d$ be finite. Then the $d$-dimensional continuous
+Turán number $\mathrm{opx}(n, P, d)$ and the $d$-dimensional 0-1 matrix extremal function
+$\mathrm{ex}(n, M_P, d)$ of $P$ satisfy $\mathrm{opx}(n, P, d) = \Theta(\mathrm{ex}(n, M_P, d))$
+as the natural number $n$ tends to infinity, with constants depending on $P$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 - [Extremal function of a $d$-dimensional pattern](pattern-ex-d.md)
 
 ## Sources

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Number of descents](perm-des.md)
+- [Number of descents from the descent set](perm-des.md)
 - [Major index of a permutation](perm-maj.md)
 
 ## Sources

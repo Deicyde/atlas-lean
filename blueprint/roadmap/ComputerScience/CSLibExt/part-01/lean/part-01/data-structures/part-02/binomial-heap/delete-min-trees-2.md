@@ -26,7 +26,7 @@ result, or both return the same minimum value and the same list of trees.
 - [Rank lower bound for a forest](ranks-at-least.md)
 - [Valid binomial forest](valid-2.md)
 - [Validity of binomial forests passes to sublists](sublist.md)
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Melding binomial forests](meld-trees.md)
 - [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)
 - [Removing a minimum-root tree from a forest](remove-min-tree.md)

@@ -33,4 +33,4 @@ navigation: module
 - [Upper bound on three-guess solves first correct at guess two](card-solved-in-three-first-correct-at-tw-2.md)
 - [Cyclic shift left minimizes three-guess solves among inductive strategies](perm-wordle-coeff-three-cyclic-shift-lef.md)
 - [Lucas-number count for the left-shift strategy](card-solved-in-three-first-correct-at-tw-3.md)
-- [Theorem 16](card-first-correct-at-two-cyclic-shift-l.md)
+- [Among inductive strategies, cyclic shift left minimizes three-guess solves first correct at guess two](card-first-correct-at-two-cyclic-shift-l.md)

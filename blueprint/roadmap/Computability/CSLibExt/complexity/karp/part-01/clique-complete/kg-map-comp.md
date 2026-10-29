@@ -21,7 +21,7 @@ computes the reduction of mode $m$.
 ## Proof depends on
 
 - [K](../../part-02/kgmap/k.md)
-- [Lab](../../part-02/kgmap/lab.md)
+- [Labels of the KG-map machine](../../part-02/kgmap/lab.md)
 - [The KG-map machine](../../part-02/kgmap/prog.md)
 - [Stack alphabets of the clique reduction machine](../../part-02/kgmap/untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)

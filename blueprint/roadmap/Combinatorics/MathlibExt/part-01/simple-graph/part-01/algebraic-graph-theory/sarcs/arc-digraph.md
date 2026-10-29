@@ -5,16 +5,19 @@ statement: formalized
 lean: SimpleGraph.arcDigraph
 ---
 
-# Arc Digraph
+# $s$-arc digraph
 
-If s ≥ 1 and α = (x₀, …, xₛ), we define its *head* to be the (s-1)-arc (x₁, …, xₛ) and its
-*tail* to be the (s-1)-arc (x₀, …, xₛ₋₁). If α and β are s-arcs we say that β *follows* α if there
-is an (s+1)-arc whose tail is α and whose head is β. We use X⁽ˢ⁾ to denote the directed graph with
-the s-arcs of X as its vertices, such that (α, β) is an arc if and only if β follows α.
+**$s$-arc digraph.** Let $X$ be a finite graph and $s$ a natural number. For an
+$(s+1)$-arc $\gamma = (x_0, \dots, x_{s+1})$ of $X$, its *head* is the $s$-arc
+$(x_1, \dots, x_{s+1})$ and its *tail* is the $s$-arc $(x_0, \dots, x_s)$. If $\alpha$ and
+$\beta$ are $s$-arcs of $X$, then $\beta$ *follows* $\alpha$ if there is an $(s+1)$-arc of $X$
+whose tail is $\alpha$ and whose head is $\beta$. The *$s$-arc digraph* $X^{(s)}$ is the directed
+graph whose vertices are the $s$-arcs of $X$, with an arc from $\alpha$ to $\beta$ if and only if
+$\beta$ follows $\alpha$.
 
 ## Depends on
 
-- [SArc](sarc.md)
+- [$s$-arc](sarc.md)
 
 ## Sources
 

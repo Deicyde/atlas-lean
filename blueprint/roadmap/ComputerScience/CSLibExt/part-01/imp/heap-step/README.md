@@ -51,4 +51,4 @@ navigation: module
 
 ## HSteps
 
-- [Store agree](store-agree-2.md)
+- [Heap executions only change assignable variables](store-agree-2.md)

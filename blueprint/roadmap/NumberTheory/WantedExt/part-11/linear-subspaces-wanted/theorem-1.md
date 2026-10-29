@@ -16,7 +16,7 @@ $\mathbb{R}^d$ satisfies $\beta_k(x) = \frac{d}{k(d - l)}$.
 
 ## Depends on
 
-- [Diophantine Exponent](diophantine-exponent.md)
+- [Diophantine exponent](diophantine-exponent.md)
 
 ## Sources
 

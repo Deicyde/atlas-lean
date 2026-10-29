@@ -20,7 +20,7 @@ polynomial other than $\alpha$.
 ## Depends on
 
 - [Corollary pole of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-corollary-p.md)
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
+- [Set of possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

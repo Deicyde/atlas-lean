@@ -33,7 +33,7 @@ computable in polynomial time.
 - [Stack alphabets of the SAT-to-3SAT emitter](../three-sat-emit/untitled.md)
 - [Emitter](../tok-then/emitter.md)
 - [Emitter reductions out of SAT are polynomial-time](../tok-then/is-poly-time-out.md)
-- [Out](../tok-then/out.md)
+- [Output of an emitter on a bit string](../tok-then/out.md)
 - [The SAT-to-3SAT emitter](emit3.md)
 - [The stacks of the 3SAT emitter](emit3-ks.md)
 - [The SAT-to-3SAT translation](../three-sat/to3.md)

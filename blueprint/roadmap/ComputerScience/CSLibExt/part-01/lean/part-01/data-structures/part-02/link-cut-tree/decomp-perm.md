@@ -16,7 +16,7 @@ decomposition is a permutation of the vertex list of the tree.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Preferred-path decomposition of a tree](decomp.md)
 
 ## Proof depends on

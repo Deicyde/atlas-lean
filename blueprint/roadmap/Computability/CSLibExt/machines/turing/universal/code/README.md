@@ -19,7 +19,7 @@ navigation: module
 - [Codes as tables](equiv-table.md)
 - [Table lookup of a code](lookup.md)
 - [The machine of a code](machine.md)
-- [States](states.md)
+- [States of a code](states.md)
 - [Codes denote finite machines](supports-machine.md)
 
 ## Explicit configurations
@@ -28,7 +28,7 @@ navigation: module
 - [Configurations as tuples](equiv-prod.md)
 - [TM0 configuration of a simulation configuration](to-tm0.md)
 - [Acting on a configuration](act.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [Initial configuration of the code simulation](init.md)
 - [One step of a code](step.md)
 - [One step of a code, or stay when halted](step-or-stay.md)

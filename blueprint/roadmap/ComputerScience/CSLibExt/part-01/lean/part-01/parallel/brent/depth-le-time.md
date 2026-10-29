@@ -15,7 +15,7 @@ $\operatorname{depth}(v) \le t + 1$.
 ## Depends on
 
 - [Computation DAG](dag.md)
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 - [Depth of a task in a computation DAG](depth.md)
 
 ## Sources

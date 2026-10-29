@@ -18,7 +18,7 @@ navigation: module
 - [$k$-Dyck paths of size $n$](k-dyck-words.md)
 - [Three $2$-Dyck paths of size $2$](card-k-dyck-words-two-two.md)
 - [Augmentation of a $k$-Dyck word](augment-kdyck-word.md)
-- [Augmented KDyck Paths](augmented-kdyck-paths.md)
+- [Augmented $k$-Dyck paths](augmented-kdyck-paths.md)
 - [Returns of a skew Dyck word](skew-returns.md)
 - [Long ascents of a skew Dyck word](skew-long-ascents.md)
 - [Returns and long ascents of an example skew Dyck path](skew-returns-skew-long-ascents-example.md)

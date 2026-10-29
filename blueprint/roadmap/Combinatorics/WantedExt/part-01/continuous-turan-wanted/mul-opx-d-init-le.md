@@ -15,7 +15,7 @@ $n \cdot \mathrm{opx}(n, \Pr(P), d) \le \mathrm{opx}(n, P, d + 1)$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

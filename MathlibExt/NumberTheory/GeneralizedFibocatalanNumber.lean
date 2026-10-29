@@ -89,7 +89,8 @@ theorem fibonacciFactorial_two :
       = fibonacciFactorial 1 * (Nat.fib 2 : ℚ) := rfl
   rw [h, hfib2, Nat.cast_one, fibonacciFactorial_one, one_mul]
 
-/-- `F_3! = 2` since `F_3 = 2` and `F_2! = 1`. -/
+/-- **Fibonacci factorial at three.** The Fibonacci factorial $F_3! = F_1 F_2 F_3$ of the
+Fibonacci numbers $F_1, F_2, F_3$ equals $2$, since $F_1 = F_2 = 1$ and $F_3 = 2$. -/
 theorem fibonacciFactorial_three :
     fibonacciFactorial 3 = 2 := by
   have hfib3 : Nat.fib 3 = 2 := by decide
@@ -132,8 +133,11 @@ theorem fibonacciJordanQuotient_r1 :
   rw [e, fibonacciFactorial_three, fibonacciFactorial_one]
   norm_num
 
-/-- Generalized FiboCatalan number
-`J_{r,F} * F_{2n}! / (F_n! * F_{n+r+1}!)` over `ℚ`. -/
+/-- **Generalized FiboCatalan numbers.** Let $F_m! = F_1 F_2 \cdots F_m$ denote the Fibonacci
+factorial of the Fibonacci numbers $F_1 = F_2 = 1$, $F_{k+2} = F_{k+1} + F_k$ (so $F_0! = 1$),
+and let $J_{r,F} = F_{2r+1}! / F_r!$ be the Fibonacci Jordan quotient. For natural numbers $r$
+and $n$, the generalized FiboCatalan number with parameters $r$ and $n$ is the rational number
+$J_{r,F} \, F_{2n}! / (F_n! \, F_{n+r+1}!)$. -/
 def generalizedFibonacciCatalan (r n : ℕ) : ℚ :=
   fibonacciJordanQuotient r * fibonacciFactorial (2 * n) /
     (fibonacciFactorial n * fibonacciFactorial (n + r + 1))

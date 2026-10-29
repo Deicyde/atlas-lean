@@ -14,7 +14,7 @@ to $S$ in $G$ is occupied if and only if $v \in S$.
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination state of a vertex](vertex-domination-state.md)
 
 ## Sources

@@ -138,12 +138,18 @@ theorem isNondecreasingEgyptian {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsNondecreasingUnderapproximation target a) : IsNondecreasingEgyptian a :=
   h.2.2.1
 
-/-- Every denominator in a nondecreasing underapproximation is at least two. -/
+/-- **Denominators of a nondecreasing underapproximation are at least two.** Let $n$ be a
+natural number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If
+$(a_1, \dots, a_n)$ is a nondecreasing underapproximation of $\lambda$, then $a_i \ge 2$ for
+every $1 \le i \le n$. -/
 theorem denominator_ge_two {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsNondecreasingUnderapproximation target a) (i : Fin n) : 2 ≤ a i :=
   h.isNondecreasingEgyptian.1 i
 
-/-- The denominators of a nondecreasing underapproximation are monotone. -/
+/-- **Denominators of a nondecreasing underapproximation are nondecreasing.** Let $n$ be a
+natural number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If
+$(a_1, \dots, a_n)$ is a nondecreasing underapproximation of $\lambda$, then $a_i \le a_j$
+whenever $1 \le i \le j \le n$. -/
 theorem monotone {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsNondecreasingUnderapproximation target a) : Monotone a :=
   h.isNondecreasingEgyptian.2
@@ -160,12 +166,16 @@ end IsNondecreasingUnderapproximation
 
 namespace IsStrictUnderapproximation
 
-/-- A strict underapproximation has at least one term (`n ≥ 1`). -/
+/-- **Strict underapproximations have at least one term.** Let $n$ be a natural number,
+$\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$ is a
+strict underapproximation of $\lambda$, then $n \ge 1$. -/
 theorem nonempty {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) : 0 < n :=
   h.1
 
-/-- The target of a strict underapproximation is positive. -/
+/-- **The target of a strict underapproximation is positive.** Let $n$ be a natural number,
+$\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$ is a
+strict underapproximation of $\lambda$, then $\lambda > 0$. -/
 theorem target_pos {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) : 0 < target :=
   h.2.1
@@ -177,17 +187,24 @@ theorem isStrictEgyptian {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) : IsStrictEgyptian a :=
   h.2.2.1
 
-/-- Every denominator in a strict underapproximation is at least two. -/
+/-- **Denominators of a strict underapproximation are at least two.** Let $n$ be a natural
+number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$
+is a strict underapproximation of $\lambda$, then $a_i \ge 2$ for every $1 \le i \le n$. -/
 theorem denominator_ge_two {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) (i : Fin n) : 2 ≤ a i :=
   h.isStrictEgyptian.1 i
 
-/-- The denominators of a strict underapproximation are strictly monotone. -/
+/-- **Denominators of a strict underapproximation increase strictly.** Let $n$ be a natural
+number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$
+is a strict underapproximation of $\lambda$, then $a_i < a_j$ whenever $1 \le i < j \le n$. -/
 theorem strictMono {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) : StrictMono a :=
   h.isStrictEgyptian.2
 
-/-- The reciprocal sum of a strict underapproximation is below its target. -/
+/-- **A strict underapproximation stays below its target.** Let $n$ be a natural number,
+$\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$ is a
+strict underapproximation of $\lambda$, then $\sum_{i=1}^{n} 1/a_i < \lambda$, the sum taken in
+the real numbers. -/
 theorem sum_lt {n : ℕ} {target : ℝ} {a : Fin n → ℕ}
     (h : IsStrictUnderapproximation target a) :
     ∑ i, ((a i : ℝ)⁻¹) < target :=

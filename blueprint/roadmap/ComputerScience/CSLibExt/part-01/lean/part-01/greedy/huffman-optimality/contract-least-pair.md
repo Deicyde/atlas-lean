@@ -19,7 +19,7 @@ The proof is a sibling exchange argument on the structural path cost.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 - [Weighted external path length of a Huffman weight tree](path-cost.md)
 - [Multiset of leaf weights](weights.md)
 

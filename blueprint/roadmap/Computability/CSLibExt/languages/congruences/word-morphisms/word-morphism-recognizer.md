@@ -15,7 +15,7 @@ morphism of $L$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on

@@ -13,7 +13,7 @@ navigation: module
 
 - [Stacks of the 3-coloring emitter](k.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 - [Stack of a counter](k-2.md)
 - [Unit symbol of a counter](unit.md)
 - [Copy sites of the 3-COLOR emitter](site.md)
@@ -60,7 +60,7 @@ navigation: module
 - [Moving $U$ onto $E$](dr-run.md)
 - [The 3-COLOR emitter clears its OR-output counter](clr-run.md)
 - [Adding the vertex counter to the OR output](f-ab-run.md)
-- [Back run](back-run.md)
+- [3-COLOR emitter: moving the walk side back](back-run.md)
 - [Recording the current occurrence](put-run.md)
 
 ## The edges of the site runs

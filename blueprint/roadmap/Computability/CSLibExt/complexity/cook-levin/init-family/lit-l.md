@@ -19,7 +19,7 @@ case is never used).
 
 ## Proof depends on
 
-- [Stages of the literal routine](ls.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
 
 ## Sources
 

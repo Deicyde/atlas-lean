@@ -22,7 +22,7 @@ previous contents, and with every other stack unchanged.
 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [The unary mover of the Hamiltonian path verifier](skip-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

@@ -29,8 +29,8 @@ to the canonical bitstring encodings of lists of booleans and of booleans.
 
 - [Component machine](../host/comp.md)
 - [Decider host](../host/is-poly-time-decider.md)
-- [K](../path-machine/k.md)
-- [Lab](../path-machine/lab.md)
+- [Stacks of the PATH marking machine](../path-machine/k.md)
+- [Labels of the PATH marking machine](../path-machine/lab.md)
 - [The marking machine for PATH](../path-machine/prog.md)
 - [Running time and output of the marking machine](../path-machine/run.md)
 - [Start label of the PATH marking machine](../path-machine/start.md)

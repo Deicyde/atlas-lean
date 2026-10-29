@@ -16,7 +16,7 @@ lexicographically less than or equal to the suffix of $s$ starting at $j$.
 
 ## Depends on
 
-- [Suffix](suffix.md)
+- [Suffix of a list at an index](suffix.md)
 - [Suffix array](suffix-array.md)
 
 ## Sources

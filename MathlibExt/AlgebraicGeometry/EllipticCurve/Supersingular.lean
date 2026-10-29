@@ -25,11 +25,13 @@ This file defines supersingularity over an algebraic closure of `ZMod p` through
 `p`-torsion and relates it to trivial geometric `p ^ r`-torsion for every positive `r`.
 -/
 
-/-- An elliptic curve over an algebraic closure of `ZMod p` is supersingular when every geometric
-point killed by `p` is zero.
+/-- **Supersingular elliptic curves.** Let $p$ be a prime and let $E$ be an elliptic curve over an
+algebraic closure $\overline{\mathbb{F}}_p$ of $\mathbb{Z}/p\mathbb{Z}$. Then $E$ is called
+supersingular when every point $P \in E(\overline{\mathbb{F}}_p)$ with $pP = 0$ is $P = 0$.
 
-This is the `r = 1` form of the equivalent torsion condition in arXiv:2308.11539v1,
-`main.tex`, lines 164–170.
+Source: arXiv:2308.11539v1, `main.tex`, lines 164–170, which gives the equivalent condition that
+for every positive integer $r$, every point $P$ with $p^r P = 0$ is $P = 0$; this definition is
+its case $r = 1$.
 -/
 def IsSupersingular {p : ℕ} [Fact p.Prime]
     (W : WeierstrassCurve.Affine (AlgebraicClosure (ZMod p))) [W.IsElliptic] : Prop :=

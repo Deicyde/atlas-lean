@@ -16,7 +16,7 @@ In the source's numbering of the Fibonacci numbers, which is shifted by one, thi
 
 ## Depends on
 
-- [Is Composite](../../../MathlibExt/part-04/composite/is-composite.md)
+- [Composite numbers](../../../MathlibExt/part-04/composite/is-composite.md)
 
 ## Sources
 

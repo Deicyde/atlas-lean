@@ -34,7 +34,7 @@ empty word.
 - [Injective renamings are injective on productions](../basic/map-rule-injective.md)
 - [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 - [Language membership through yields](../../part-02/yields/mem-language-iff-yields.md)
-- [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](../../part-02/yields/yields-iff-derives.md)
 - [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources

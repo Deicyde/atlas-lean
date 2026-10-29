@@ -26,14 +26,14 @@ if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise
 
 ## Proof depends on
 
-- [Rejection within a step bound](rej.md)
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [Comparing the sum with the target](cmp-run.md)
 - [Cubic bound on the verifier's phase costs](cost-le.md)
 - [Decoding a SUBSET-SUM instance](decode-ss.md)
 - [Canonical binary strings are those not ending in zero](encode-nat-decode-nat-iff.md)
 - [Moving the final sum for the comparison](fmove-run.md)
 - [Whether a bit string ends in false](last-f.md)
-- [The summing loop](loop-run.md)
+- [The summing loop of the SUBSET-SUM verifier](loop-run.md)
 - [Parsing number blocks, with fuel](nums-aux.md)
 - [Numbers chosen by a mask](pick.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)

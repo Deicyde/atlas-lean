@@ -6,7 +6,7 @@ navigation: module
 
 - [Ramanujan's 5-dissection of Euler's product](q-pochhammer-inf-five-dissection.md)
 - [Ramanujan's 7-dissection of Euler's product](q-pochhammer-inf-seven-dissection.md)
-- [Ped Nine Nine Series](ped-nine-nine-series.md)
+- [The generating series for $\mathrm{ped}_{9,9}$](ped-nine-nine-series.md)
 - [The partition function $\mathrm{ped}_{9,9}$](ped-nine-nine.md)
 - [The generating series for $\mathrm{ped}_{9,18}$](ped-nine-eighteen-series.md)
 - [The partition function $\mathrm{ped}_{9,18}$](ped-nine-eighteen.md)

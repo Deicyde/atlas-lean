@@ -6,9 +6,9 @@ navigation: module
 
 ## The machine
 
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Lab](lab.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 - [The counter unit of the PATH marking machine](one.md)
 - [The unary read instruction](read-s.md)

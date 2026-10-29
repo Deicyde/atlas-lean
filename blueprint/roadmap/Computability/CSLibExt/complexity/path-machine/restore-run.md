@@ -18,8 +18,8 @@ every other stack unchanged.
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)

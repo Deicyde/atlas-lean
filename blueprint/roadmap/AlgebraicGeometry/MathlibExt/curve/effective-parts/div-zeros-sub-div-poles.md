@@ -16,9 +16,9 @@ $D^+ - D^- = D$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Poles](div-poles.md)
-- [Div Zeros](div-zeros.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
+- [Pole part of a divisor](div-poles.md)
+- [Zero part of a divisor](div-zeros.md)
 
 ## Sources
 

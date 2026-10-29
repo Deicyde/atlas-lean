@@ -6,9 +6,11 @@ statement: formalized
 lean: NewtonPolygon.newtonPolygonBoundary
 ---
 
-# Newton Polygon Boundary
+# Boundary of the Newton polygon
 
-Boundary of the Newton polygon, via the frontier.
+**Boundary of the Newton polygon.** For a polynomial $f$ in two variables over a commutative
+semiring $k$, the boundary of the Newton polygon of $f$ is its topological boundary in
+$\mathbb{R}^2$: the closure of the Newton polygon minus its interior.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Newton Polygon](newton-polygon.md)
+- [Newton polygon](newton-polygon.md)
 
 ## Sources
 

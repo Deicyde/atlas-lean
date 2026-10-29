@@ -744,15 +744,15 @@ theorem codes_mem {J : List ℕ} (hJ : ∀ j ∈ J, j < P.length) :
       exact mem_evalForm_one.mpr ⟨_, ih fun k hk ↦ hJ k (List.mem_cons_of_mem _ hk),
         by simp [bitCodes]⟩
 
-/-- **The mismatch productions.** Let $P$ be a list of dominoes over a finite alphabet, $A$ a
-nonterminal, $s$ a map from dominoes to words (in use, the top or the bottom), $i < |P|$ an index,
-$w = s(d_i)$ for the $i$-th domino $d_i$ of $P$, and $\mathrm{code}(i)$ the unary code of $i$ as
-bits. Write letters and bits as terminals and $N_3$, $N_4$, $N_7$ for the nonterminals $3$, $4$
-and $7$. Each of the following encoded productions belongs to the mismatch productions of $A$ for
-$s$ and $P$: $A \to w\,A\,\mathrm{code}(i)$; $A \to w\,N_4\,\mathrm{code}(i)$; for each
-$m < |w|$, with $u$ the prefix of $w$ of length $m$, $A \to u\,N_7\,\mathrm{code}(i)$; and, for
-each such $m$ and each letter $a$ different from the letter of $w$ following $u$,
-$A \to u\,a\,N_3\,N_7\,\mathrm{code}(i)$. -/
+/-- **Membership in the mismatch productions.** Let $P$ be a list of dominoes over a finite
+alphabet with decidable equality, $A$ a nonterminal, $s$ a map from dominoes to words (in use, the
+top or the bottom), $i < |P|$ an index, $w = s(d_i)$ for the $i$-th domino $d_i$ of $P$, and
+$\mathrm{code}(i)$ the unary code of $i$ as bits. Write letters and bits as terminals and $N_3$,
+$N_4$, $N_7$ for the nonterminals $3$, $4$ and $7$. Each of the following encoded productions
+belongs to the mismatch productions of $A$ for $s$ and $P$: $A \to w\,A\,\mathrm{code}(i)$;
+$A \to w\,N_4\,\mathrm{code}(i)$; for each $m < |w|$, with $u$ the prefix of $w$ of length $m$,
+$A \to u\,N_7\,\mathrm{code}(i)$; and, for each such $m$ and each letter $a$ different from the
+letter of $w$ following $u$, $A \to u\,a\,N_3\,N_7\,\mathrm{code}(i)$. -/
 theorem mem_mismatchRules {side : Domino α → List α} {A i : ℕ} (hi : i < P.length)
     {e : ℕ × List (ℕ ⊕ (α ⊕ Bool))}
     (he : e = (A, (side (domino P i)).map uLetter ++ uNt A :: (bitCode i).map uBit) ∨

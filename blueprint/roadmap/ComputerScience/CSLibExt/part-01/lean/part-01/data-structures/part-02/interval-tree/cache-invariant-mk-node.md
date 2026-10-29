@@ -24,7 +24,7 @@ also satisfies the cache invariant.
 ## Proof depends on
 
 - [Interval](interval.md)
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 - [Maximum with an optional value](max-with.md)
 - [Maximum high endpoint at a node](node-max.md)
 

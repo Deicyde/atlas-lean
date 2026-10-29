@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.ElGamal.pick
 ---
 
-# Pick
+# Message selected by the challenge bit
 
-The message selected by the challenge bit: `m.2` for `true`, `m.1` for `false`.
+**Message selected by the challenge bit.** Let $G$ be a finite commutative group. For a pair
+of messages $(m_0, m_1) \in G \times G$ and a bit $b$, the selected message is $m_1$ if $b$ is
+true and $m_0$ if $b$ is false.
 
 ## Depends on
 

@@ -10,7 +10,7 @@ navigation: module
 
 ## Heap
 
-- [Disjoint](disjoint.md)
+- [Disjoint heaps](disjoint.md)
 - [Symmetry of heap disjointness](symm.md)
 - [The empty heap is disjoint from every heap](disjoint-empty-left.md)
 - [Every heap is disjoint from the empty heap](disjoint-empty-right.md)

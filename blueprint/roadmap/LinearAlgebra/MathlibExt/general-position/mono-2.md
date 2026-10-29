@@ -7,13 +7,16 @@ proof: formalized
 lean: Projectivization.IsGeneralPosition.mono
 ---
 
-# Mono
+# General position in projective space is monotone in the dimension
 
-General position through a larger dimension implies general position through a smaller one.
+**General position in projective space is monotone in the dimension.** Let $d \le e$ be
+natural numbers. If a family of points of the projective space $\mathbb{P}(V)$ of a vector space
+$V$ over a division ring $k$ is in general position through dimension $e$, then it is in general
+position through dimension $d$.
 
 ## Depends on
 
-- [Is General Position](is-general-position-3.md)
+- [General position of projective points](is-general-position-3.md)
 
 ## Sources
 

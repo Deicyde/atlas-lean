@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ascentToDescentRearrangement
 ---
 
-# Ascent To Descent Rearrangement
+# Ascent-to-descent rearrangement
 
-The paper's map `ν : 𝔖_n(y) → 𝔖_n(y)` (Definition `nu`) on words over `ℕ` written as lists;
-see `ascentToDescentRearrangementAux` for the two cases.
+**Ascent-to-descent rearrangement.** For a word $x = x_1 \cdots x_m$ over $\mathbb{N}$, the
+ascent-to-descent rearrangement of $x$ is $\nu(x) = \nu_m(x)$, the fuel-bounded
+ascent-to-descent rearrangement $\nu_N(x)$ with fuel $N = m$, the length of $x$.
+
+Every recursive call of $\nu_N$ is on a strictly shorter word, so the fuel $m$ never runs out.
 
 ## Depends on
 

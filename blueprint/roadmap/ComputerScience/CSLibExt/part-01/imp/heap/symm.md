@@ -14,7 +14,7 @@ disjoint, then $h_2$ and $h_1$ are disjoint.
 ## Depends on
 
 - [Heap](heap.md)
-- [Disjoint](disjoint.md)
+- [Disjoint heaps](disjoint.md)
 
 ## Sources
 

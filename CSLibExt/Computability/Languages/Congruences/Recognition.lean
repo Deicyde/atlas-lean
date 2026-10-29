@@ -255,13 +255,15 @@ theorem syntacticDFA_eval (L : Language Symbol) (x : List Symbol) :
     (syntacticDFA L).eval x = syntacticMorphism L (FreeMonoid.ofList x) := by
   rw [DFA.eval, syntacticDFA_evalFrom, syntacticDFA_start, one_mul]
 
-/-- The syntactic DFA accepts exactly the language from which it was constructed. -/
+/-- **The syntactic DFA accepts its language.** For every language $L$, the syntactic DFA of $L$
+accepts exactly $L$. -/
 theorem syntacticDFA_accepts (L : Language Symbol) : (syntacticDFA L).accepts = L := by
   ext x
   rw [DFA.mem_accepts, syntacticDFA_eval]
   exact syntacticMorphism_mem_accept L (FreeMonoid.ofList x)
 
-/-- Every state of the syntactic DFA is reachable. -/
+/-- **The syntactic DFA is accessible.** For every language $L$, every state of the syntactic DFA
+of $L$ is reachable: some word leads to it from the start state. -/
 theorem syntacticDFA_accessible (L : Language Symbol) : Accessible (syntacticDFA L) := by
   intro q
   obtain ⟨x, rfl⟩ := syntacticMorphism_surjective L q

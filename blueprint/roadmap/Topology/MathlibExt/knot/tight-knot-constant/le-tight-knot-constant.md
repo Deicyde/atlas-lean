@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightKnot.le_tightKnotConstant
 ---
 
-# Le tight Knot Constant
+# Admissible constants are bounded by the tight knot constant
 
-Every admissible constant is at most the tight knot constant.
+**Admissible constants are bounded by the tight knot constant.** Let $C_{22a}$ be the tight
+knot constant. Every real number $c$ that is admissible for the tight-knot inequality satisfies
+$c \le C_{22a}$ in the extended reals.
 
 ## Depends on
 

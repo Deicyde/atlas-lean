@@ -36,7 +36,7 @@ tends to infinity. Likewise $d \ge 1$ excludes $d = 0$, where the grid is a sing
 - [Threshold functions](is-threshold-function.md)
 - [Grid edge costs](grid-cost.md)
 - [Grid graph](grid-graph.md)
-- [Solvable Configuration Prob](solvable-configuration-prob.md)
+- [Probability that a random pebbling configuration is solvable](solvable-configuration-prob.md)
 
 ## Sources
 

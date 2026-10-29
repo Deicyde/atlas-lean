@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.lucasPeriodOrbitLcm_one
 ---
 
-# Lucas Period Orbit Lcm one
+# The orbit lcm of $1$ is $1$
 
-`L(1) = 1`.
+**The orbit lcm of $1$ is $1$.** For every Lucas sequence $U = U(P, Q)$ with integer
+parameters $P$ and $Q \ne 0$, $L(1) = 1$, where
+$L(n) = \operatorname{lcm}(\pi_U^0(n), \dots, \pi_U^{\omega(n)}(n))$ is the lcm of the iterates
+$\pi_U^i(n)$ of the period map $\pi_U$ of $U$, with $\pi_U^0(n) = n$, up to the orbit index
+$\omega(n)$ of $n$.
 
 ## Depends on
 

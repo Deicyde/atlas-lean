@@ -16,7 +16,7 @@ $a^{(n)}_{c p^k, s} \equiv 0 \pmod{p}$.
 
 ## Depends on
 
-- [Ducci Coeff](ducci-coeff.md)
+- [Ducci coefficients](ducci-coeff.md)
 
 ## Sources
 

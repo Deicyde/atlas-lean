@@ -4,18 +4,18 @@ navigation: module
 
 # Closest Pair
 
-- [Dist2](dist2.md)
-- [Is Min Pair Dist2](is-min-pair-dist2.md)
-- [Min Dist From](min-dist-from.md)
+- [Squared distance in the plane](dist2.md)
+- [Least pairwise squared distance](is-min-pair-dist2.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 - [Brute-force closest pair](brute-min.md)
-- [Scan From](scan-from.md)
-- [Strip Scan](strip-scan.md)
-- [Closest Rec](closest-rec.md)
+- [Strip scan from a point](scan-from.md)
+- [Closest-pair strip scan](strip-scan.md)
+- [Closest-pair recursion](closest-rec.md)
 - [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Answers
 
-- [Is Answer](is-answer.md)
+- [Closest-pair answer](is-answer.md)
 
 ## Brute force
 

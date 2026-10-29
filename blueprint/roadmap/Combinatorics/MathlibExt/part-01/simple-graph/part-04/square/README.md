@@ -4,7 +4,7 @@ navigation: module
 
 # Square
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 - [Adjacency in the graph square](square-adj.md)
 - [Monotonicity of the graph square](square-mono.md)
 - [The square of a connected graph is connected](square-2.md)

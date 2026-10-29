@@ -19,7 +19,7 @@ entries, four numbers per entry.
 - [Numbers of a list of entries](../clocked/entry-nums.md)
 - [Codes for single-tape machines](../code/code.md)
 - [Ascending keys of a list of entries](keys-ascend-from.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Proof depends on
 

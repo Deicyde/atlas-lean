@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.cutCapacity_residualCut_le
 ---
 
-# Cut Capacity residual Cut le
+# No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut
 
-The certificate cut is a minimum cut: no `s`-`t` cut has smaller capacity.
+**No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut.** Let $c$ be a capacity
+function on the vertices $0, \dots, n-1$ with natural-number values, viewed as real capacities,
+and let $s \ne t$ be vertices. Let $S_0$ be the set of vertices reachable from $s$ in the residual
+graph of the flow computed by the Edmonds–Karp algorithm on $c$, $s$, $t$. Then for every $s$-$t$
+cut $S$, the capacity of $S_0$ is at most the capacity of $S$.
 
 ## Depends on
 
 - [Edmonds–Karp maximum flow](../edmonds-karp/edmonds-karp.md)
-- [Residual Cut](../edmonds-karp/residual-cut.md)
+- [Residual cut](../edmonds-karp/residual-cut.md)
 - [Real capacities](real-cap.md)
 - [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
 - [Cut capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)

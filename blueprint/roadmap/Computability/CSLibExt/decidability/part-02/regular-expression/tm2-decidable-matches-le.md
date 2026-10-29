@@ -29,7 +29,7 @@ language of $D$ is decidable by a multi-stack machine.
 ## Proof depends on
 
 - [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
-- [Primrec mk](../../../automata/da/encoded-dfa/primrec-mk.md)
+- [Assembling an encoded DFA is primitive recursive](../../../automata/da/encoded-dfa/primrec-mk.md)
 - [The transition function of encoded DFAs is primitive recursive](../../../automata/da/encoded-dfa/primrec-step.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)

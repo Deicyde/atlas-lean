@@ -28,7 +28,7 @@ halts. The phase-0 labels for a separator and a second block halt.
 ## Proof depends on
 
 - [Phase-0 labels of the generic host](p0.md)
-- [Stacks emptied by the cleanup](clean-ks.md)
+- [Cleanup stacks of the generic host](clean-ks.md)
 - [The component's stacks inside a host](emb.md)
 - [Component labels in the reduction host](r.md)
 - [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)

@@ -15,7 +15,7 @@ navigation: module
 - [One step of FIFO paging](fifo-step.md)
 - [One FIFO step keeps the cache legal](fifo-step-legal.md)
 - [FIFO misses at most `k` times per phase](fifo-misses-phase.md)
-- [Legal Cache](legal-cache.md)
+- [Legal cache](legal-cache.md)
 - [FIFO keeps the cache legal on every request sequence](fifo-cache-legal.md)
 - [FIFO paging as an online pager](fifo-pager.md)
 - [FIFO as an online pager misses as often as the FIFO step policy](fifo-pager-misses.md)

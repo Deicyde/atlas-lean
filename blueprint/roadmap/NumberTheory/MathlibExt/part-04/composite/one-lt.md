@@ -13,7 +13,7 @@ lean: Nat.IsComposite.one_lt
 
 ## Depends on
 
-- [Is Composite](is-composite.md)
+- [Composite numbers](is-composite.md)
 
 ## Sources
 

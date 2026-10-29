@@ -8,7 +8,7 @@ navigation: module
 
 - [Heath's theorem](join-project-eq-of-holds-in.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
-- [Lossless Join](lossless-join.md)
+- [Lossless decomposition into two schemes](lossless-join.md)
 - [Lossless binary decompositions from derivable dependencies](lossless-join-of-derives.md)
 - [Converse of the lossless-join test for two schemes](derives-of-lossless-join.md)
 - [Lossless binary decompositions](lossless-join-iff.md)
@@ -17,7 +17,7 @@ navigation: module
 
 - [Join Unit](join-unit.md)
 - [Join of the projections of a relation](join-projections.md)
-- [Schema Union](schema-union.md)
+- [Union of a list of schemes](schema-union.md)
 - [Membership in a join of projections](mem-join-projections.md)
 
 ## Boyce–Codd normal form

@@ -18,14 +18,14 @@ This is the correctness of CLRS Section 33.4, with distances compared squared.
 
 ## Depends on
 
-- [Is Min Pair Dist2](is-min-pair-dist2.md)
+- [Least pairwise squared distance](is-min-pair-dist2.md)
 - [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Proof depends on
 
-- [Is Answer](is-answer.md)
+- [Closest-pair answer](is-answer.md)
 - [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
-- [Dist2](dist2.md)
+- [Squared distance in the plane](dist2.md)
 
 ## Sources
 

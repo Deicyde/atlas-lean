@@ -5,13 +5,13 @@ navigation: module
 # Sylvester Sequence
 
 - [Sylvester numbers](sylvester-number.md)
-- [Proposition 1, divisibility](sylvester-sub-dvd.md)
+- [Divisibility of differences of Sylvester numbers](sylvester-sub-dvd.md)
 - [Sylvester numbers modulo 4](sylvester-mod-eq-three-mod-four.md)
 - [Sylvester numbers modulo 36](sylvester-mod-eq-seven-mod-thirty-six.md)
 - [Sylvester numbers modulo 1764](sylvester-mod-eq-forty-three-mod-1764.md)
-- [Proposition 2, divisibility](sylvester-sq-add-one-dvd-sub.md)
+- [Alternating divisibility for Sylvester numbers](sylvester-sq-add-one-dvd-sub.md)
 - [Sylvester numbers of even index modulo 10](sylvester-even-index-mod-ten.md)
-- [Proposition 2, congruence (9), odd indices](sylvester-odd-index-mod-ten.md)
+- [Sylvester numbers of odd index modulo 10](sylvester-odd-index-mod-ten.md)
 - [Mersenne numbers in the Sylvester sequence](mersenne-sylvester-values-eq.md)
 - [The only triangular Sylvester number is $3$](triangular-sylvester-values-eq.md)
 - [No Sylvester number is perfect](sylvester-not-perfect.md)

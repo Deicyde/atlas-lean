@@ -5,11 +5,15 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.StoreTyped
 ---
 
-# Store Typed
+# Well-typed stores
 
-A store is well typed, `Γ | S ⊢ μ` (TAPL Definition 13.5.1): it has one
-entry per location of `S`, and the entry at each location is a value of the
-type `S` assigns to it.
+**Well-typed stores.** Let $\Gamma$ be a variable context and $S$ a store typing. A store
+$\mu$, a list of terms whose entry at index $l$ is the contents of location $l$, is well typed
+under $\Gamma$ and $S$, written $\Gamma \mid S \vdash \mu$, when $\mu$ and $S$ have the same
+length and, for every location $l$ less than this length, the entry of $\mu$ at $l$ is a value
+that has, under $\Gamma$ and $S$, the type that $S$ assigns to $l$.
+
+Stores here are lists of terms rather than of values, so each entry is required to be a value.
 
 ## Depends on
 
@@ -24,3 +28,4 @@ type `S` assigns to it.
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.LambdaCalculus.References.Typing](../../../../../../../sources/v2/CSLibExt.md)
+- TAPL Definition 13.5.1.

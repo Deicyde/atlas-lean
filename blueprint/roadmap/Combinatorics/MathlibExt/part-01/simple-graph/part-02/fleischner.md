@@ -25,7 +25,7 @@ it has a cycle that passes through every vertex exactly once.
 - [Vertex count of a $k$-vertex-connected graph](../part-04/vertex-connectivity/card-gt.md)
 - [Strengthened Fleischner theorem](has-strong-square-cycle.md)
 - [Characterization of the graph square](../part-04/square/eq-square-iff.md)
-- [Square](../part-04/square/square.md)
+- [Square of a graph](../part-04/square/square.md)
 
 ## Sources
 

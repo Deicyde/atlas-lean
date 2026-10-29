@@ -17,7 +17,7 @@ every $x \in S$ the series $\sum_n \|f_n(x)\|$ is summable.
 
 ## Depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-normally-on.md)
 
 ## Proof depends on
 

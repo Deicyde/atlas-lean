@@ -133,8 +133,10 @@ noncomputable def nicomachusU (k : ℕ) : ℚ :=
       ((1 - PowerSeries.X) *
         (1 - 398 * PowerSeries.X + PowerSeries.X ^ 2))⁻¹)
 
-/-- **Theorem 1, odd case**: `L_{m+1,o}(x) - R_{m+1,o}(x) =
-x·P_{m,o}(x) - x² + x³` for `m ≥ 2` (Equation (7)).
+/-- **Generalized Nicomachus identity, odd case.** Let $L_{m,o}$ be the odd-case cube sum,
+$R_{m,o}$ the odd-case square and $P_{m,o}$ the odd-case polynomial. For every natural number
+$m \ge 2$ and every real number $x$,
+$$L_{m+1,o}(x) - R_{m+1,o}(x) = x \, P_{m,o}(x) - x^2 + x^3.$$
 
 Source: Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced
 Three or More-term Generalization of Nicomachus' Identity", Theorem 1. -/
@@ -143,8 +145,10 @@ theorem_wanted nicomachusLOdd_sub_ROdd_succ_eq (m : ℕ) (hm : 2 ≤ m)
     nicomachusLOdd (m + 1) x - nicomachusROdd (m + 1) x =
       x * nicomachusPOdd m x - x ^ 2 + x ^ 3
 
-/-- **Theorem 1, even case**: `L_{m,e}(x) - R_{m,e}(x) =
-x·P_{m,e}(x) - x² + x³` for `m ≥ 2` (Equation (8)).
+/-- **Generalized Nicomachus identity, even case.** Let $L_{m,e}$ be the even-case cube sum,
+$R_{m,e}$ the even-case square and $P_{m,e}$ the even-case polynomial. For every natural number
+$m \ge 2$ and every real number $x$,
+$$L_{m,e}(x) - R_{m,e}(x) = x \, P_{m,e}(x) - x^2 + x^3.$$
 
 Source: Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced
 Three or More-term Generalization of Nicomachus' Identity", Theorem 1. -/
@@ -178,8 +182,12 @@ theorem_wanted nicomachusU_succ_eq (k : ℕ) (hk : 1 ≤ k) :
         30 * Real.sqrt ((3 + 2 * (nicomachusU k : ℝ)) *
           (23 + 22 * (nicomachusU k : ℝ)))
 
-/-- **Proposition 2 (16)**:
-`α_k = (-1 + √(11 - 10/(3 + 2u_k)))/2` for `k ≥ 1`.
+/-- **The convergents $\alpha_k$ in terms of the integers $u_k$.** Let $\alpha_k$ be the
+Kim–Stolarsky convergents, with $\alpha_1 = 1$ and
+$\alpha_{k+1} = (15 + 7\alpha_k)/(13 + 6\alpha_k)$ for $k \ge 1$, and let $u_k$ be the
+coefficient of $x^{k-1}$ in the power series expansion of
+$(1 + 502x + x^2)/((1 - x)(1 - 398x + x^2))$. For every integer $k \ge 1$,
+$$\alpha_k = \frac{-1 + \sqrt{11 - \frac{10}{3 + 2u_k}}}{2}.$$
 
 Source: Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced
 Three or More-term Generalization of Nicomachus' Identity", Proposition 2. -/

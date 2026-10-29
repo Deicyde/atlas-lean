@@ -15,7 +15,7 @@ least $n / p$ steps.
 ## Depends on
 
 - [Computation DAG](dag.md)
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 - [Length of a schedule](length.md)
 
 ## Sources

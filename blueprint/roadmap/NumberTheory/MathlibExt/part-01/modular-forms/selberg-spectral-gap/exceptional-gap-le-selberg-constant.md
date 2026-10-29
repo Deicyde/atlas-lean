@@ -20,7 +20,7 @@ Selberg constant $C_{61}$.
 
 ## Proof depends on
 
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
 
 ## Sources

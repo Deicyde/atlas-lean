@@ -16,7 +16,7 @@ twice among the pairs of all the paths of the phase.
 
 ## Depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Partner arrays that describe a matching](valid.md)
 - [First free round](first-free-round.md)
 - [Hopcroft–Karp phase](phase.md)

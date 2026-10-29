@@ -7,7 +7,7 @@ navigation: module
 - [3-clause](clause.md)
 - [Formulas of the random 3-SAT model](formula.md)
 - [Satisfaction of a 3-clause](clause-sat.md)
-- [Satisfiable](satisfiable.md)
+- [Satisfiable 3-SAT formulas](satisfiable.md)
 - [Satisfiability probability of random 3-SAT](sat-prob.md)
 - [3-clauses exist on at least three variables](clause-nonempty.md)
 - [Satisfiability probability with no clauses](sat-prob-zero.md)

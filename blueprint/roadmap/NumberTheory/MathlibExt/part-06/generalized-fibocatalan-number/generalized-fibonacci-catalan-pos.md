@@ -15,7 +15,7 @@ number.
 
 ## Depends on
 
-- [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
+- [Generalized FiboCatalan numbers](generalized-fibonacci-catalan.md)
 
 ## Proof depends on
 

@@ -16,14 +16,14 @@ with one more occurrence of $x$.
 ## Depends on
 
 - [Fibonacci heap](fibonacci-heap.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Insertion into a Fibonacci heap](insert.md)
 
 ## Proof depends on
 
 - [Melding adds the elements](elements-meld.md)
 - [Melding Fibonacci heaps](meld.md)
-- [Singleton](singleton-2.md)
+- [Singleton Fibonacci heap](singleton-2.md)
 - [Fibonacci tree](fibonacci-tree.md)
 - [Multiset of a Fibonacci tree](elements.md)
 - [One-element Fibonacci heap](singleton.md)

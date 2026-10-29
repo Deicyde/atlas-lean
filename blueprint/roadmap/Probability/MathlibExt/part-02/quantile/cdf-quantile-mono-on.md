@@ -18,7 +18,7 @@ function $Q_\mu$ is monotone on $(0, 1)$: if $0 < u \le v < 1$, then $Q_\mu(u) \
 
 ## Proof depends on
 
-- [Cdf Quantile le iff](cdf-quantile-le-iff.md)
+- [The quantile function as a generalized inverse of the cdf](cdf-quantile-le-iff.md)
 
 ## Sources
 

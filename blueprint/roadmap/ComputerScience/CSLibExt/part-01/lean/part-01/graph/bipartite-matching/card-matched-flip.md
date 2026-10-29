@@ -14,7 +14,7 @@ matched right vertex than $\mu$.
 
 ## Depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Flipping a list of pairs](flip.md)
 - [Matched right vertices](matched.md)
 

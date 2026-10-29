@@ -31,7 +31,7 @@ stage, and its internal state is a Boolean, initially false.
 - [Stages of the transition-clause generator's literal routine](ls.md)
 - [Number of literals of a transition clause](n-lits.md)
 - [Stages of the transition-clause generator's precomputation](ps.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 
 ## Sources
 

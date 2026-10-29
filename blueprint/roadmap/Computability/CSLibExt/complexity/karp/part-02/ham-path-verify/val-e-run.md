@@ -21,7 +21,7 @@ stacks unchanged.
 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Edge-list decoder](../../part-01/color/decode-es.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
@@ -33,7 +33,7 @@ stacks unchanged.
 - [The unary mover of the Hamiltonian path verifier moves a terminated number](skip-u-run.md)
 - [Interleaved stack updates in the Hamiltonian-path verifier](update-update-update-update.md)
 - [Decoding the empty input](../../part-01/color/decode-es-nil.md)
-- [Decoding fails on a cut-off first number](../../part-01/color/decode-es-of-none.md)
+- [The edge-list decoder fails on a cut-off first number](../../part-01/color/decode-es-of-none.md)
 - [Decoding fails on a dangling half-pair](../../part-01/color/decode-es-of-some-none.md)
 - [Decoding one pair, then the rest](../../part-01/color/decode-es-of-some-some.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)

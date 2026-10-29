@@ -24,7 +24,7 @@ then $r$ satisfies the unification specification for $E$.
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 
 ## Sources
 

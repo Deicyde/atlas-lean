@@ -14,7 +14,7 @@ algebraic integer, then the absolute trace of $\alpha$ is strictly positive.
 ## Depends on
 
 - [Totally positive algebraic integers](is-totally-positive.md)
-- [Absolute Trace](absolute-trace.md)
+- [Absolute trace](absolute-trace.md)
 
 ## Proof depends on
 

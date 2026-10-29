@@ -5,7 +5,7 @@ navigation: module
 
 # Coefficient Exponential Family
 
-- [Wiman Growth](wiman-growth.md)
+- [Wiman growth function](wiman-growth.md)
 - [Wiman coefficient measure](wiman-coefficient-measure.md)
 - [Tilted coefficient measure](wiman-tilted-measure.md)
 - [Point masses of the Wiman coefficient measure](wiman-coefficient-measure-singleton.md)

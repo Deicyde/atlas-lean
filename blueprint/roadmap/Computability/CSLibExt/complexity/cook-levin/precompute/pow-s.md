@@ -31,7 +31,7 @@ $b$, so the loop replaces $p$ by $p \cdot b^k$ and ends with $k = 0$.
 - [Unit targets of a multi-target transfer](tg.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

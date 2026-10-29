@@ -14,7 +14,7 @@ of the trees in its consolidation are strictly increasing in list order.
 
 ## Depends on
 
-- [Sorted Degrees](sorted-degrees.md)
+- [Forests with strictly increasing degrees](sorted-degrees.md)
 - [Consolidation of a forest](consolidate.md)
 - [Fibonacci tree](fibonacci-tree.md)
 

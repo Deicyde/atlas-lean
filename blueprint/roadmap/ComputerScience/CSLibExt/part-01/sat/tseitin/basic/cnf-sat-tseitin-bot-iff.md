@@ -23,9 +23,9 @@ $v$ of the atoms with $v(\bot)$ false.
 ## Proof depends on
 
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Tseitin correctness](eval-bool-iff-exists-satisfies-tseitin.md)
 - [Tseitin CNF](tseitin.md)
 - [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)

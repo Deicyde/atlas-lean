@@ -96,9 +96,9 @@ returns the empty list of vertices. -/
 theorem decodeW_nil : decodeW [] = some [] := by
   rw [decodeW]; simp
 
-/-- **Decoding fails on a cut-off first number.** If a list $w$ of bits is nonempty and reading a
-unary number (a run of true ended by false) from the front of $w$ fails, that is, every bit of
-$w$ is true, then the witness decoder fails on $w$. -/
+/-- **Witness decoding fails on a cut-off first number.** If a list $w$ of bits is nonempty and
+reading a unary number (a run of true ended by false) from the front of $w$ fails, that is, every
+bit of $w$ is true, then the witness decoder fails on $w$. -/
 theorem decodeW_of_none {w : List Bool} (hw : w ≠ []) (h : readUnaryLength w = none) :
     decodeW w = none := by
   rw [decodeW]

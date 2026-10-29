@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

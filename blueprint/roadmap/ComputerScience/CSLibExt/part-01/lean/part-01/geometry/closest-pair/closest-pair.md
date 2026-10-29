@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Closest Rec](closest-rec.md)
+- [Closest-pair recursion](closest-rec.md)
 
 ## Sources
 

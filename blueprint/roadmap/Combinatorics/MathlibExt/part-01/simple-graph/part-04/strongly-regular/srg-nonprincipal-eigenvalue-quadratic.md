@@ -28,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonprincipal eigenvalue quadratic](nonprincipal-eigenvalue-quadratic.md)
+- [Non-principal eigenvalues of a strongly regular graph](nonprincipal-eigenvalue-quadratic.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ $P_{a^n}$, and preserves the multiplicative order of every element of $P_a$.
 
 ## Depends on
 
-- [Lift Fiber](lift-fiber.md)
+- [Fibers of reduction modulo $p$ on units modulo $p^2$](lift-fiber.md)
 
 ## Sources
 

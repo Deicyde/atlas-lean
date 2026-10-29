@@ -22,7 +22,7 @@ The paper's positivity of $n$ is dropped (the identity holds at $n = 0$).
 
 ## Depends on
 
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 - [The rounding indicator $\delta$](higher-anumber-delta.md)
 - [The denominator $\tau_D$](tau-den.md)
 

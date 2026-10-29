@@ -25,7 +25,7 @@ gate $j$ its specified value on $x$, $y$, $c$.
 
 - [Arithmetic gate symbols](arith-gate.md)
 - [Carry wire](carry-wire.md)
-- [Line](line.md)
+- [Gates of the ripple-carry adder](line.md)
 - [Binary gate line](bin-line.md)
 - [Value of the carry wire](carry-wire-value.md)
 

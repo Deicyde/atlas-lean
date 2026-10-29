@@ -16,13 +16,13 @@ $\pi_{S_i} r$.
 
 ## Depends on
 
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Tuple over a schema](../relational-algebra/is-over.md)
 - [Restriction of a tuple](../relational-algebra/restrict.md)
 - [Join of the projections of a relation](join-projections.md)
 - [Projection of a relation](../relational-algebra/project.md)
-- [Schema Union](schema-union.md)
+- [Union of a list of schemes](schema-union.md)
 
 ## Proof depends on
 

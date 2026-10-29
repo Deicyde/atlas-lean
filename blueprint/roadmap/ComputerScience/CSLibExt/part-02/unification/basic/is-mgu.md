@@ -18,7 +18,7 @@ $s' = s \gg r$ for some substitution $r$, where $s \gg r$ applies first $s$ and 
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Unifier of a list of equations](unifies.md)
 
 ## Sources

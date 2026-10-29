@@ -18,7 +18,7 @@ $h = h_1 \cup h_2$ such that $P(s, h_1)$ and $Q(s, h_2)$.
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [IMP program states](../syntax/state.md)
 
 ## Sources

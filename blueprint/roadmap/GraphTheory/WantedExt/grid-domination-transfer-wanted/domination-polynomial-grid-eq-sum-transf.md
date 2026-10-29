@@ -20,7 +20,7 @@ the sum running over the signatures $\sigma$ of $P_m$ with no uncovered vertex.
 ## Depends on
 
 - [Signatures of a row graph](domination-signature.md)
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [All-covered signature](all-covered-signature.md)
 - [Domination polynomial](domination-polynomial.md)

@@ -22,7 +22,7 @@ support of $c$ and $d$ is at $l$.
 
 - [Stack alphabets of the wrapped machine](f.md)
 - [Labels of the wrapped machine](f-2.md)
-- [Label Rel](label-rel.md)
+- [Correspondence of labels between the code evaluator and the wrapped machine](label-rel.md)
 - [Lifting stacks of tr](lift-stk.md)
 
 ## Sources

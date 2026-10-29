@@ -14,7 +14,7 @@ $s_1^- = 35$ and $s_1^+ = 39$ holds for $n = 7$ and fails for $n = 1$.
 
 ## Depends on
 
-- [Mersenne Eta Condition](mersenne-eta-condition.md)
+- [Condition (etar) on Jacobi symbols of $M_n$](mersenne-eta-condition.md)
 
 ## Sources
 

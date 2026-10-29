@@ -21,7 +21,7 @@ stacks $R, Q$), each over the symbol alphabet of the SAT verifier.
 - [Counter comparisons of the HAMPATH verifier](../../part-02/ham-path-verify/ci.md)
 - [Stacks of the Hamiltonian path verifier](../../part-02/ham-path-verify/k.md)
 - [Labels of the Hamiltonian path verifier](../../part-02/ham-path-verify/lab.md)
-- [Prog](../../part-02/ham-path-verify/prog.md)
+- [The Hamiltonian path verifier machine](../../part-02/ham-path-verify/prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources

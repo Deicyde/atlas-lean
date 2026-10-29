@@ -32,8 +32,12 @@ namespace MetaMathlibExt
 
 open Finset
 
-/-- A square array of natural numbers is a *magic square* when every row, every column, the
-main diagonal and the anti-diagonal have one common sum.
+/-- **Magic squares.** An $n \times n$ array $M$ of natural numbers, with rows and columns
+indexed by $0, 1, \dots, n - 1$, is a *magic square* when there is a natural number $s$ such
+that every row of $M$ and every column of $M$ sums to $s$, and also $\sum_i M_{i,i} = s$ (the
+main diagonal) and $\sum_i M_{i,n-1-i} = s$ (the anti-diagonal).
+
+No condition is imposed on the entries themselves.
 
 Source: Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*,
 Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 1. -/
@@ -41,9 +45,13 @@ def IsMagicSquare {n : ℕ} (M : Matrix (Fin n) (Fin n) ℕ) : Prop :=
   ∃ s : ℕ, (∀ i, ∑ j, M i j = s) ∧ (∀ j, ∑ i, M i j = s) ∧ ∑ i, M i i = s ∧
     ∑ i, M i i.rev = s
 
-/-- A *reduced magic square of order `n`* is a magic square whose entries are
-`0, 1, …, n² - 1`, each exactly once (a magic square of order `n` with every entry reduced
-by `1`); "each exactly once" is stated as: entries are below `n²` and pairwise distinct.
+/-- **Reduced magic squares.** An $n \times n$ array $M$ of natural numbers is a *reduced magic
+square of order $n$* when it is a magic square and its entries are $0, 1, \dots, n^2 - 1$, each
+exactly once; equivalently, every entry of $M$ is less than $n^2$ and distinct cells of $M$
+hold distinct entries.
+
+These are the magic squares of order $n$ with entries $1, 2, \dots, n^2$, each exactly once,
+with every entry reduced by $1$.
 
 Source: Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*,
 Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 3. -/

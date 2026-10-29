@@ -39,8 +39,8 @@ inductive MarkedDyckStep : Type where
   | N : MarkedDyckStep
   | Nstar : MarkedDyckStep
 
-/-- **Number of horizontal steps.** For a finite sequence $P$ of marked Dyck steps, $E(P)$ is the
-number of horizontal steps $E$ in $P$.
+/-- **Number of horizontal steps in a marked Dyck step sequence.** For a finite sequence $P$ of
+marked Dyck steps, $E(P)$ is the number of horizontal steps $E$ in $P$.
 
 Source: statement `jis_f51c1ff9625da95f812ce507`;
 concept `jis_sem_1ec0710af356bb3047cb9588`. -/

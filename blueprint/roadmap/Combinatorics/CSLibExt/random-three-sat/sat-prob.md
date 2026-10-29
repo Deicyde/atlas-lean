@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 - [3-clause](clause.md)
 - [Formulas of the random 3-SAT model](formula.md)
-- [Satisfiable](satisfiable.md)
+- [Satisfiable 3-SAT formulas](satisfiable.md)
 
 ## Sources
 

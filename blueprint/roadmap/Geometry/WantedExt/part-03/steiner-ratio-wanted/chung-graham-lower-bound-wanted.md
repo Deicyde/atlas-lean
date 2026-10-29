@@ -14,7 +14,7 @@ minimal tree for $V$ divided by the length of a minimum spanning tree of $V$, is
 
 ## Depends on
 
-- [Steiner Ratio Constant](../../../MathlibExt/steiner-ratio/steiner-ratio-constant.md)
+- [The Steiner ratio of the Euclidean plane](../../../MathlibExt/steiner-ratio/steiner-ratio-constant.md)
 
 ## Sources
 

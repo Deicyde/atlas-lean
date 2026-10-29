@@ -39,7 +39,7 @@ $f(x)$.
 - [Parsing a list of booleans into self-delimiting blocks](../../../../MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
 - [Polynomial-time computable functions](../../../../MathlibExt/complexity/is-poly-time.md)
-- [Comp Computable](../../../../MathlibExt/turing-machine/composition/comp-computable.md)
+- [The composite polynomial-time TM2 computation](../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

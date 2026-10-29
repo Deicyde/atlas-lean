@@ -15,7 +15,7 @@ points $P \ne Q$ of the plane such that both $P$ and $Q$ are equichordal points 
 ## Depends on
 
 - [Equichordal point](is-equichordal-point.md)
-- [Plane](plane.md)
+- [Euclidean plane for the equichordal point problem](plane.md)
 
 ## Sources
 

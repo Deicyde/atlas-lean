@@ -27,7 +27,7 @@ its output on the output stack.
 - [Alphabets of the generic host](h.md)
 - [Phase-0 labels of the generic host](p0.md)
 - [The list of host stacks](all-ks.md)
-- [Vprog](vprog.md)
+- [Verifier host program](vprog.md)
 
 ## Sources
 

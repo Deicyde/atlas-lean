@@ -23,7 +23,7 @@ navigation: module
 - [Start-code clause of the initial row (I1)](i-code.md)
 - [Row-0 clauses for the other stacks](i-other.md)
 - [Input clauses of the initial row (I3)](i-in.md)
-- [I Cert](i-cert.md)
+- [Certificate clauses of the initial row (I4)](i-cert.md)
 - [Row-0 prefix clauses](i-pre.md)
 - [Row-0 tail clauses](i-tail.md)
 - [The init family](init-fam.md)
@@ -41,7 +41,7 @@ navigation: module
 - [Base counter of a clause kind (initial-row generator)](bc.md)
 - [Labels of the first precomputation part](ps1.md)
 - [Labels of the second precomputation part](ps2.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
 - [Labels of the initial-row generator](gl.md)
 - [Entry label of a literal routine (initial-row generator)](lit-l.md)
 - [Label after a literal routine (initial-row generator)](after.md)
@@ -49,10 +49,10 @@ navigation: module
 - [Label after a clause](next-c.md)
 - [The first read test](rd0.md)
 - [Label after a failed read test](miss.md)
-- [Labels of the initial-row generator](lb.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [The literal routine of the initial-row generator](lit-p.md)
-- [Prog](prog.md)
-- [The generator](iprog.md)
+- [The counter part of the initial-row generator](prog.md)
+- [The initial-row generator](iprog.md)
 - [The init generator as a finite multi-stack machine](init-tm.md)
 
 ## [FAM] Clause kinds: literal positions
@@ -69,7 +69,7 @@ navigation: module
 - [Per-literal step cost of the initial-row generator](lit-e.md)
 - [Step bound for one clause (initial-row generator)](clause-b.md)
 - [Run of the literal routines of a clause (initial-row generator)](lits-run.md)
-- [Clause run](clause-run.md)
+- [Run of one clause (initial-row generator)](clause-run.md)
 
 ## [FAM] Correctness: the five phase loops (counter part)
 
@@ -92,7 +92,7 @@ navigation: module
 - [Initial counters of the init generator](init-f.md)
 - [Counters after the precomputation](pre-f.md)
 - [Step bound for the precomputation](pre-b.md)
-- [Pre run](pre-run.md)
+- [Run of the precomputation (initial-row generator)](pre-run.md)
 - [The I3 loop on the whole input](i3-full.md)
 
 ## [FAM] The whole generator
@@ -103,7 +103,7 @@ navigation: module
 
 ## [BOUND] The time bound is polynomial: `initBound ≤ initC · (T + H + 1)^5`
 
-- [Init Bound uni](init-bound-uni.md)
+- [Time bound of the init generator at uniform parameters](init-bound-uni.md)
 - [Constant of the init generator's time bound](init-c.md)
 - [Polynomial time bound for the init generator](init-time.md)
 

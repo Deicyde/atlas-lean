@@ -69,8 +69,12 @@ private lemma explicitEuler_velocity_lipschitz
   simpa [φ] using
     (Convex.norm_image_sub_le_of_norm_hasDerivWithin_le hderiv hM (convex_Icc t₀ T) ht hs)
 
-/-- A solution of a `C²` ODE has a uniform quadratic explicit-Euler local error on a compact
-time interval. -/
+/-- **Uniform quadratic bound on the explicit Euler local error.** Let $E$ be a real normed
+space, let $t_0 < T$ be real numbers, let $f : \mathbb{R} \times E \to E$ be $C^2$, and let
+$x : \mathbb{R} \to E$ be differentiable at every $t \in [t_0, T]$ with $x'(t) = f(t, x(t))$.
+Then there is a constant $C \ge 0$ such that
+$\|x(t + h) - (x(t) + h f(t, x(t)))\| \le C h^2$ for every $h \in (0, T - t_0]$ and every
+$t \in [t_0, T]$ with $t + h \le T$. -/
 theorem _root_.ODE.exists_explicitEuler_localTruncationError_le
     {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     (f : ℝ → E → E) (t₀ T : ℝ) (hT : t₀ < T)

@@ -31,8 +31,10 @@ def KOutReachable (N : ℕ) (c : Fin N → Finset (Fin N)) (a b : Fin N) : Prop 
       ∀ i : Fin m, p (Fin.castSucc i) ∈ c (p (Fin.succ i)) ∨
         p (Fin.succ i) ∈ c (p (Fin.castSucc i))
 
-/-- The assignment `c` connects all `N` people: every person can reach every
-other by a chain of friends. -/
+/-- **Assignments that connect everyone.** Let $c$ assign to each person $i$ among $N$ people a
+set $c(i)$ of people, the friends of $i$. The assignment $c$ connects all $N$ people when, for
+all people $a$ and $b$, there are $m \ge 0$ and people $p_0 = a, p_1, \dots, p_m = b$ such that
+for each $j < m$, $p_j$ is a friend of $p_{j+1}$ or $p_{j+1}$ is a friend of $p_j$. -/
 def KOutConnected (N : ℕ) (c : Fin N → Finset (Fin N)) : Prop :=
   ∀ a b : Fin N, KOutReachable N c a b
 

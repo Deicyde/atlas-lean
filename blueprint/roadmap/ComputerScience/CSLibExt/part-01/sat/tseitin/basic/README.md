@@ -10,7 +10,7 @@ navigation: module
 - [Tseitin clauses for an implication](imp-clauses.md)
 - [One step of the Tseitin encoding](tseitin-step.md)
 - [One step of the linear-time Tseitin builder](acc-step.md)
-- [Connective Count](connective-count.md)
+- [Connective count of a propositional formula](connective-count.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 - [Linear-time Tseitin builder](tseitin-acc.md)
 - [The linear-time Tseitin builder agrees with the reference encoding](tseitin-acc-eq.md)

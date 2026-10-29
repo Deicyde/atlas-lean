@@ -15,7 +15,7 @@ numbers $k$ with $k(k+1)/2 \le n$.
 
 ## Depends on
 
-- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
+- [Partitions whose odd parts are distinct](distinct-odd-parts-count.md)
 - [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources

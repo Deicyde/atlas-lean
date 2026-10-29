@@ -14,7 +14,7 @@ $C \le D$ in $[0, \infty]$. If $C$ is a smooth Poincaré bound for $\mu$, then s
 
 ## Depends on
 
-- [Is Smooth Poincare Bound](is-smooth-poincare-bound.md)
+- [Smooth Poincaré bounds](is-smooth-poincare-bound.md)
 
 ## Sources
 

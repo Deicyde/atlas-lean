@@ -32,7 +32,7 @@ or bit complexity.
 - [Bellman-Ford distance table](../bellman-ford/basic/distances.md)
 - [Reachable negative cycle witness](../bellman-ford/basic/reachable-negative-cycle.md)
 - [Bellman–Ford result](../bellman-ford/basic/result.md)
-- [Bellman Ford](../bellman-ford/correctness/bellman-ford.md)
+- [Bellman–Ford algorithm](../bellman-ford/correctness/bellman-ford.md)
 - [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
 - [Cost of dense Dijkstra](../dijkstra/dijkstra-cost.md)
 - [Total Dijkstra cost](../dijkstra/total.md)

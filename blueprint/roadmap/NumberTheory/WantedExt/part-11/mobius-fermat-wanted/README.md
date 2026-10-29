@@ -12,6 +12,6 @@ navigation: module
 - [Multinomial formula for the von Mangoldt–Fermat function](von-mangoldt-fermat-eq-multinomial.md)
 - [Reduction of the Möbius–Fermat function to distinct factors](mobius-fermat-mul-factorial-eq-squarefre.md)
 - [The Möbius–Fermat function at $3^m 7^n$](mobius-fermat-three-pow-mul-seven-pow.md)
-- [Mobius Fermat three pow mul seven pow mul pow](mobius-fermat-three-pow-mul-seven-pow-mu.md)
+- [The Möbius–Fermat function at $3^m 7^n q^k$](mobius-fermat-three-pow-mul-seven-pow-mu.md)
 - [Closed form of the Möbius–Fermat function](mobius-fermat-closed-form.md)
 - [Closed form of the von Mangoldt–Fermat function](von-mangoldt-fermat-closed-form.md)

@@ -60,8 +60,13 @@ its cost: the same scan, counting the same orientation tests. For points sorted 
 runs from the last point back to the first. -/
 def upperHull (ps : List (𝕜 × 𝕜)) : TimeM ℕ (List (𝕜 × 𝕜)) := lowerHull ps.reverse
 
-/-- The hull of points sorted by `(x, y)`, counterclockwise from the first point: the lower chain,
-then the upper chain without its endpoints. -/
+/-- **Convex hull by the monotone chain algorithm.** Let $\Bbbk$ be a field with a linear order.
+The convex hull of a list $P$ of points of $\Bbbk^2$ is the lower chain of $P$ followed by the
+upper chain of $P$ with its first and last points removed, together with its cost: the cost of
+computing the lower chain plus the cost of computing the upper chain.
+
+For points sorted strictly in lexicographic $(x, y)$ order, the result runs counterclockwise from
+the first point. -/
 def convexHull (ps : List (𝕜 × 𝕜)) : TimeM ℕ (List (𝕜 × 𝕜)) := do
   let lower ← lowerHull ps
   let upper ← upperHull ps
@@ -298,7 +303,11 @@ theorem convexHull_time_le (ps : List (𝕜 × 𝕜)) : (convexHull ps).time ≤
 
 /-! ## Strict convexity of the polygon -/
 
-/-- Every consecutive triple turns strictly left. -/
+/-- **Lists of points turning strictly left.** Let $\Bbbk$ be a field with a linear order and write
+$(u_1, u_2) \times (v_1, v_2) = u_1 v_2 - v_1 u_2$ for the cross product on $\Bbbk^2$. A list
+$q_1, \dots, q_k$ of points of $\Bbbk^2$ turns strictly left when every three consecutive points
+do: $(q_{i+1} - q_i) \times (q_{i+2} - q_i) > 0$ for every $i$ with $1 \le i \le k - 2$. In
+particular, every list of fewer than three points turns strictly left. -/
 def TurnsLeft : List (𝕜 × 𝕜) → Prop
   | a :: b :: c :: rest => 0 < cross (b - a) (c - a) ∧ TurnsLeft (b :: c :: rest)
   | _ => True

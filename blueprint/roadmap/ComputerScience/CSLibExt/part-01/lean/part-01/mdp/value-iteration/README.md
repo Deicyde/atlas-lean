@@ -9,8 +9,8 @@ navigation: module
 - [Q-value of an action](q-value.md)
 - [Bellman optimality operator](bellman.md)
 - [Bellman operator of a policy](policy-bellman.md)
-- [Value Iteration](value-iteration.md)
-- [Value Iteration Vec](value-iteration-vec.md)
+- [Value iteration](value-iteration.md)
+- [Tabulated value iteration](value-iteration-vec.md)
 - [Greedy policy](greedy.md)
 - [Tabulated value iteration is correct](value-iteration-vec-get.md)
 

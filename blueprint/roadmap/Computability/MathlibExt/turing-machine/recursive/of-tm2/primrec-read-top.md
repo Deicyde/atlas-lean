@@ -26,7 +26,7 @@ states and the encoding of functions on the finite type of stack indices.
 
 - [Decoding a stack symbol](decode.md)
 - [Eventually constant functions of a finite parameter are primitive recursive](primrec-of-eventually-const-2.md)
-- [Sym List](sym-list.md)
+- [Enumeration of the relevant symbols of a stack](sym-list.md)
 
 ## Sources
 

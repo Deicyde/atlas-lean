@@ -24,4 +24,4 @@ navigation: module
 - [Vorticity](vorticity.md)
 - [Local solutions of the incompressible Euler equations](is-local-euler-equation-solution.md)
 - [Odd vector fields in three dimensions](is-odd.md)
-- [Theorem 1](theorem-1.md)
+- [Elgindi's theorem: finite-time singularity of $C^{1,\alpha}$ Euler flows](theorem-1.md)

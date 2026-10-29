@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hofL_eq_add_hofCount
 ---
 
-# Hof L eq add hof Count
+# The image length $L_k$ as a letter count
 
-For `k ≥ 1`, `L_k(n) = n + C_k^{(=k)}(n) = n + F_k^{k-1}(n)`.
+**The image length $L_k$ as a letter count.** Let $k \ge 1$. Let $F_k$ be the generalized
+Hofstadter function and $F_k^{k-1}$ its $(k-1)$-fold iterate, let $x_k[0]\,x_k[1] \cdots$ be the
+fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
+$\tau_k(x_k[0] \cdots x_k[n-1])$, and let $C_k^{(=k)}(n)$ be the number of indices $0 \le i < n$
+with $x_k[i] = k$. Then for every natural number $n$, $L_k(n) = n + C_k^{(=k)}(n)$ and
+$L_k(n) = n + F_k^{k-1}(n)$.
 
 ## Depends on
 

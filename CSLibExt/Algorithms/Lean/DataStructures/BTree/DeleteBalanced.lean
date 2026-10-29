@@ -63,7 +63,9 @@ namespace BTree
 
 variable {α : Type u}
 
-/-- The number of keys stored at the root of a tree. -/
+/-- **Number of keys at the root of a B-tree.** For a raw B-tree $T$, this is the length of the
+key list stored at the root of $T$: the number of keys of $T$ if $T$ is a leaf, and the number of
+separator keys of $T$ if $T$ is an internal node. Keys in the children are not counted. -/
 public def keyCount : BTree α → Nat
   | .leaf keys => keys.length
   | .node keys _ => keys.length

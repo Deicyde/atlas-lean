@@ -15,9 +15,9 @@ over $-\Gamma$ is the negative of the contour integral of $f$ over $\Gamma$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 - [Contour integral over a rectilinear cycle](integral.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 

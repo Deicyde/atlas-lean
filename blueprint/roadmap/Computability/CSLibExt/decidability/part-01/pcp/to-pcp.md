@@ -25,7 +25,7 @@ $(\star \diamond, \diamond)$, whose top word is a star followed by the end marke
 
 - [End domino of the MPCP-to-PCP reduction](end-domino.md)
 - [Starred image of a domino](map-domino.md)
-- [The start domino](start-domino.md)
+- [The start domino of the MPCP-to-PCP reduction](start-domino.md)
 
 ## Sources
 

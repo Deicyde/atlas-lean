@@ -24,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To Real volume convex Hull triangle](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/to-real-volume-convex-hull-triangle.md)
-- [Volume unit Square](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/volume-unit-square.md)
+- [Determinant formula for the area of a triangle](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/to-real-volume-convex-hull-triangle.md)
+- [Area of the unit square](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/volume-unit-square.md)
 
 ## Sources
 

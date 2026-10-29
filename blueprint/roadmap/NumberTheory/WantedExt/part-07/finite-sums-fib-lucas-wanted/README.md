@@ -26,6 +26,6 @@ navigation: module
 - [Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$](add-mul-fib-beta-pow-eq-sum.md)
 - [A multinomial sum of Bernoulli and Fibonacci numbers equal to one](sum-bernoulli-fib-two-eq-one.md)
 - [Euler–Lucas multinomial expansion of $(x + q/2)^m$](two-pow-mul-add-half-pow.md)
-- [Theorem 20](two-sqrt5-pow-mul-add.md)
-- [Iterated forward differences of a power](iterate-forward-diff-pow-eq-sum.md)
+- [Multinomial Genocchi–Lucas expansion of $(x + q\beta)^m$](two-sqrt5-pow-mul-add.md)
+- [Iterated forward differences of a power as an alternating binomial sum](iterate-forward-diff-pow-eq-sum.md)
 - [Genocchi numbers via Stirling numbers of the second kind](genocchi-number-div-eq-sum.md)

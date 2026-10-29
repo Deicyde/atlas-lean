@@ -35,7 +35,7 @@ time.
 - [Stack alphabets of the 3-coloring emitter](../color-emit/untitled.md)
 - [Emitter](../../part-02/tok-then/emitter.md)
 - [Emitter reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
-- [Out](../../part-02/tok-then/out.md)
+- [Output of an emitter on a bit string](../../part-02/tok-then/out.md)
 - [The 3-COLOR emitter](emit-color.md)
 - [The complete graph on four vertices as a bit string](../color/no-col.md)
 - [The 3-COLOR instance of a CNF formula](../color/to-col.md)

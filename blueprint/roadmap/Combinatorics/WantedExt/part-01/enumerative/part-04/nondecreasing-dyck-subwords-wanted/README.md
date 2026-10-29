@@ -11,7 +11,7 @@ navigation: module
 - [Non-decreasing Dyck paths of semilength $n$](nondecreasing-dyck-words.md)
 - [Five non-decreasing Dyck paths of semilength 3](card-nondecreasing-dyck-words-three.md)
 - [Thirteen non-decreasing Dyck paths of semilength 4](card-nondecreasing-dyck-words-four.md)
-- [Dyck Subword Count](dyck-subword-count.md)
+- [Number of occurrences of a subword](dyck-subword-count.md)
 - [Occurrences of UU in UUUDDD](dyck-subword-count-uu-uuuddd.md)
 - [Occurrences of UDU in UDUDUD](dyck-subword-count-udu-ududud.md)
 - [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)

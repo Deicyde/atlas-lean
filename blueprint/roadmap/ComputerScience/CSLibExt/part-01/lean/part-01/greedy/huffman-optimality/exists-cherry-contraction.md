@@ -20,7 +20,7 @@ replaces that pair by a single leaf of weight $z$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 - [Height of a weight tree](height.md)
 - [Weighted external path length of a Huffman weight tree](path-cost.md)
 - [Multiset of leaf weights](weights.md)

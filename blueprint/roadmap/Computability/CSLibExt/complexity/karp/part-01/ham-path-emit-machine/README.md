@@ -8,7 +8,7 @@ navigation: module
 
 - [Stacks of the HAMPATH emitter](k.md)
 - [Stack alphabets of the HAMPATH emitter](untitled.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 - [Stack of a HAMPATH copy-site counter](k-2.md)
 - [Unit symbol of an emitter counter](unit.md)
 - [Copy sites of the HAMPATH emitter](site.md)

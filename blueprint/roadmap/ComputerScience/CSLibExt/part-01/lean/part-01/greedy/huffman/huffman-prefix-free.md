@@ -16,7 +16,7 @@ two distinct leaf symbols of $T$, neither codeword is a prefix of the other.
 ## Depends on
 
 - [Huffman tree](huffman-tree.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
 - [Huffman's algorithm](huffman.md)
 - [Prefix-free code](../../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)

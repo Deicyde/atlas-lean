@@ -5,7 +5,7 @@ navigation: module
 # Tournament Score Sequence
 
 - [Tournament](is-tournament.md)
-- [Score](score.md)
+- [Score of a player](score.md)
 - [Reducible tournament](is-reducible.md)
 - [Circular triad](is-circular-triad.md)
 - [Exponential generating function of a shifted binomial sequence](egf-factorial-choose.md)

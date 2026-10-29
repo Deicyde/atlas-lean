@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mid Poly](mid-poly.md)
+- [Intermediate length bound of the composite machine](mid-poly.md)
 
 ## Sources
 

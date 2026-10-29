@@ -20,4 +20,4 @@ navigation: module
 - [Compiled arithmetic code pushes the value of the expression](compile-a-runs.md)
 - [Compiled Boolean code pushes the truth value of the expression](compile-b-runs.md)
 - [Compiled command code simulates big-step execution](compile-runs.md)
-- [Compile correct](compile-correct.md)
+- [Correctness of compilation to the stack machine](compile-correct.md)

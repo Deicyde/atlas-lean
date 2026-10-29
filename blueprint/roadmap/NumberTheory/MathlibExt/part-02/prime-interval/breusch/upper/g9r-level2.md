@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_level2
 ---
 
-# G9r level2
+# Level-$2$ threshold for the continuous Breusch function
 
-Level `G9r ≥ 2` forces `x ≥ 657 / 18900`.
+**Level-$2$ threshold for the continuous Breusch function.** Let $Q_9 = 210$. For every real
+$x \ge 1/(9 Q_9) = 1/1890$, if the continuous Breusch function $G$ satisfies $G(x) \ge 2$, then
+$x \ge 657/18900$.
 
 ## Depends on
 

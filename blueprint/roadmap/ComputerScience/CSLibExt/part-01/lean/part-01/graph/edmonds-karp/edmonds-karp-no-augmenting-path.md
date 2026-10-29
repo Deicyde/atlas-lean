@@ -17,7 +17,7 @@ by the Edmonds–Karp algorithm on $c$, $s$, $t$.
 
 - [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 - [Edmonds–Karp maximum flow](edmonds-karp.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 
 ## Proof depends on
 

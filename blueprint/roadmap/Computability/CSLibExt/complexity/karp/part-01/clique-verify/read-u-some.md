@@ -24,7 +24,7 @@ the bit $1$, and every stack other than $X$ and $c$ is as in $S$.
 - [Stacks of the CLIQUE verifier](k.md)
 - [Labels of the CLIQUE verifier](lab.md)
 - [Modes of the clique verifier](mode.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [The clique verifier's unary reader](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

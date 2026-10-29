@@ -32,7 +32,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists unit Lower Triangular mul submatrix is Row Echelon](exists-unit-lower-triangular-mul-submatr.md)
+- [Row echelon form via a row permutation and a unit lower-triangular matrix](exists-unit-lower-triangular-mul-submatr.md)
 
 ## Sources
 

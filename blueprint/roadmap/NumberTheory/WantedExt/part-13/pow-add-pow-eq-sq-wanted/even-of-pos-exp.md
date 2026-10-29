@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.even_of_pos_exp
 ---
 
-# Lemma 2
+# Evenness of $x$ in $n^x + (5p)^y = z^2$ when $n \equiv 2, 3 \pmod 5$
 
-**Lemma 2**: let `n ≡ 2 (mod 5)` or
-`n ≡ 3 (mod 5)`. If `y > 0` and Equation (1) has a
-nonnegative integer solution, then `x` is even.
+**Evenness of $x$ in $n^x + (5p)^y = z^2$ when $n \equiv 2, 3 \pmod 5$.** Let $p$ be a prime
+and $n$ a natural number with $n \equiv 2 \pmod 5$ or $n \equiv 3 \pmod 5$. If natural numbers
+$x$, $y$, $z$ with $y > 0$ satisfy $n^x + (5p)^y = z^2$, then $x$ is even.
 
 ## Depends on
 

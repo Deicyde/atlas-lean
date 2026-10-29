@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.inverseAckermann_eight
 ---
 
-# Inverse Ackermann eight
+# The inverse Ackermann function at 8
 
-`α(8) = 3` (`A(2, 2) = 7 < 8 ≤ 61 = A(3, 3)`).
+**The inverse Ackermann function at 8.** The inverse Ackermann function $\alpha$ satisfies
+$\alpha(8) = 3$, since $A(2, 2) = 7 < 8 \le 61 = A(3, 3)$, where $A$ is the two-argument
+Ackermann function.
 
 ## Depends on
 

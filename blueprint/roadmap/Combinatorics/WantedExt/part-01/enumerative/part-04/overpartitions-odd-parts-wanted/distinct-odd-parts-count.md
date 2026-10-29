@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.distinctOddPartsCount
 ---
 
-# Distinct Odd Parts Count
+# Partitions whose odd parts are distinct
 
-`pod(n)`: the number of partitions of `n` in which the odd parts are distinct (even parts
-unrestricted); generating function `(-q; q^2)_∞ / (q^2; q^2)_∞`.
+**Partitions whose odd parts are distinct.** For a natural number $n$, $\mathrm{pod}(n)$ is
+the number of partitions of $n$ in which every odd part occurs exactly once; the even parts are
+unrestricted.
+
+Its generating function is
+$\sum_{n \ge 0} \mathrm{pod}(n) q^n = (-q; q^2)_\infty / (q^2; q^2)_\infty$.
 
 ## Depends on
 

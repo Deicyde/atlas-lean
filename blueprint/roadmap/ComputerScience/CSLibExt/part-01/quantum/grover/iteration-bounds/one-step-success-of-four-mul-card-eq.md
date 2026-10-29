@@ -23,11 +23,11 @@ is $1$.
 ## Proof depends on
 
 - [Real amplitude vectors](../basic/amplitude.md)
-- [Grover Step](../diffusion/grover-step.md)
+- [Grover step](../diffusion/grover-step.md)
 - [Marked amplitude after a Grover step](../symmetry/marked-amplitude-next.md)
-- [Mean Amplitude](../diffusion/mean-amplitude.md)
+- [Mean amplitude](../diffusion/mean-amplitude.md)
 - [Mean amplitude after the phase oracle](../symmetry/oracle-mean.md)
-- [Phase Oracle](../basic/phase-oracle.md)
+- [Phase oracle](../basic/phase-oracle.md)
 - [Symmetric amplitude vector](../symmetry/symmetric-amplitude.md)
 - [Unmarked amplitude after a Grover step](../symmetry/unmarked-amplitude-next.md)
 

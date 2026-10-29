@@ -7,10 +7,14 @@ proof: formalized
 lean: Complex.hasSum_digamma_series
 ---
 
-# Has Sum digamma series
+# Series expansion of the complex digamma function
 
-Complex digamma expansion: for `1 < s.re`, `ψ(s) + γ` is the sum of
-`1/(j+1) - 1/(j+s)`.
+**Series expansion of the complex digamma function.** For every complex number $s$ with
+$\operatorname{Re} s > 1$, the series
+$\sum_{j=0}^{\infty} \left(\frac{1}{j+1} - \frac{1}{j+s}\right)$ of the terms of the complex
+digamma series at $s$ has sum $\psi(s) + \gamma$, where $\psi = \Gamma'/\Gamma$ is the complex
+digamma function, the logarithmic derivative of the complex Gamma function, and $\gamma$ is the
+Euler–Mascheroni constant.
 
 ## Depends on
 

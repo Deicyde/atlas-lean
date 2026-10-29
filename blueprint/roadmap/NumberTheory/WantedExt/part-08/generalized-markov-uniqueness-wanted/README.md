@@ -58,7 +58,7 @@ navigation: module
 - [The wide generalized Cohn tree](wide-gen-cohn-tree.md)
 - [The $k$-generalized Cohn tree](gen-cohn-tree.md)
 - [Children in the wide generalized Cohn tree](wide-gen-cohn-tree-append-singleton.md)
-- [Cohn Triple reachable](cohn-triple-reachable.md)
+- [Cohn steps reach every classical Cohn triple whose middle entry is largest](cohn-triple-reachable.md)
 - [Cohn steps reach every generalized Cohn triple whose middle entry is largest](gen-cohn-triple-reachable.md)
 - [Generalized Cohn triples associated with $(1, 1, 1)$](is-gen-cohn-triple-one-iff.md)
 - [Children of a generalized Cohn triple](step.md)

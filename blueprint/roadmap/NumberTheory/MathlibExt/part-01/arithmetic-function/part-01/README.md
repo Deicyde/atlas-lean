@@ -21,6 +21,6 @@ navigation: transparent
 - [Prime-power bound for primitive non-deficient numbers](primitive-nondeficient-prime-power-bound.md)
 - [Relatively prime subset counts](mobius-formula-relatively-prime-subset-c.md)
 - [Sigma R](sigma-r/README.md)
-- [Totienomial Coefficient](totienomial-integral-factorization.md)
+- [Integrality and prime factorization of totienomial coefficients](totienomial-integral-factorization.md)
 - [Unitary Convolution](unitary-convolution/README.md)
 - [Wintner's mean-value theorem](wintner-mean-value.md)

@@ -6,13 +6,18 @@ statement: formalized
 lean: MetaMathlibExt.IsConsecutiveCyclicPrimeLabeling
 ---
 
-# Is Consecutive Cyclic Prime Labeling
+# Consecutive cyclic prime labeling of the ladder
 
-A consecutive cyclic prime labeling of `P_n x P_2`: `0 < n` and the rotation
-   of the labels `1, ..., 2 * n` by `offset` along the perimeter order gives
-   relatively prime labels to every adjacent pair. If 1 is on `v_i` the order
-   runs `v_i, ..., v_n, u_n, ..., u_1, v_1, ..., v_{i - 1}` (and analogously
-   from `u_i`); here `offset` is the rotation placing the labels cyclically.
+**Consecutive cyclic prime labeling of the ladder.** Let $n$ and $s$ be natural numbers.
+Number the vertices of the ladder $P_n \times P_2$ along its perimeter by $0, 1, \dots, 2n - 1$,
+with $v_k$ at position $k - 1$ and $u_k$ at position $2n - k$ for $1 \le k \le n$. The offset $s$
+gives a consecutive cyclic prime labeling of the ladder when $n > 0$ and, for all positions
+$i, j \in \{0, \dots, 2n - 1\}$ that are adjacent in the ladder graph, the cyclic labels of $i$
+and $j$ with offset $s$ are relatively prime.
+
+The cyclic labels place $1, \dots, 2n$ consecutively along the perimeter order: if $1$ is on $v_k$
+the order runs $v_k, \dots, v_n, u_n, \dots, u_1, v_1, \dots, v_{k - 1}$ (and analogously from
+$u_k$).
 
 ## Depends on
 
@@ -21,7 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Adjacency in the ladder graph](ladder-adj.md)
-- [Cyclic Label](cyclic-label.md)
+- [Cyclic labeling of the ladder perimeter](cyclic-label.md)
 
 ## Sources
 

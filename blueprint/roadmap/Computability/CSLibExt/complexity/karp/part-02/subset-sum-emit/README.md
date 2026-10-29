@@ -9,7 +9,7 @@ navigation: module
 - [Labels of the subset-sum emitter](lab.md)
 - [Counter unit of the subset-sum emitter](u.md)
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Branch after the count comparison (SUBSET-SUM reduction machine)](cmp-out.md)
 - [The subset-sum emitter machine](prog.md)

@@ -18,7 +18,7 @@ $i \le j < 2^k$.
 
 - [Sorted on a block](sorted-on.md)
 - [Batcher's bitonic sorter on a block of wires](bitonic-sort-n.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 
 ## Proof depends on
 

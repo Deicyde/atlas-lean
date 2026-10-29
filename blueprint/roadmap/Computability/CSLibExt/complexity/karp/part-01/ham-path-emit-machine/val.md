@@ -14,7 +14,7 @@ the clause index and the detour vertex recorded in $s$.
 ## Depends on
 
 - [Quiescent states of the HAMPATH emitter](ms.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 
 ## Sources
 

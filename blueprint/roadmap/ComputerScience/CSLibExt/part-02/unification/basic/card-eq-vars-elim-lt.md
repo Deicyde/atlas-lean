@@ -17,7 +17,7 @@ by putting the equation $x = t$ in front of $E$.
 ## Depends on
 
 - [Lists of equations](equations.md)
-- [Single-variable substitution](single.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Variables of a term](vars.md)
 - [Variables of a list of equations](eq-vars.md)

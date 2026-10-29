@@ -24,7 +24,7 @@ is, every principal idele has adelic norm $1$.
 
 ## Proof depends on
 
-- [Adelic Norm](adelic-norm.md)
+- [Adelic norm](adelic-norm.md)
 - [Product formula for principal ideles](adelic-norm-principal-embedding.md)
 - [Membership in the norm-one ideles](mem-norm-one-ideles.md)
 - [Diagonal map into the ideles](../idele/principal-embedding.md)

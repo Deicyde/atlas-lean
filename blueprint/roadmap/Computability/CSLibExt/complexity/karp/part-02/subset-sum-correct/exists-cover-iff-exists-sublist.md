@@ -29,7 +29,7 @@ reduction's target for $k$, $n$ and $b$.
 - [Sublists of the reduction's numbers as vertex and pair sets](exists-sublist-ss-nums-iff.md)
 - [Vertex covers in terms of the pair bits](is-vertex-cover-to-graph-iff.md)
 - [The target in base 4](ss-target-eq.md)
-- [Sum touches eq](sum-touches-eq.md)
+- [Vertices of a set touching a vertex pair](sum-touches-eq.md)
 - [A subset sum of the reduction's numbers in base 4](sum-vtx-num-add-sum-edge-num.md)
 - [Pairs touching a vertex](../subset-sum/touches.md)
 - [Vertex numbers of the SUBSET-SUM reduction](../subset-sum/vtx-num.md)

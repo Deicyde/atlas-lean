@@ -19,10 +19,10 @@ $c_a(mn) = c_a(m)\,c_a(n)$.
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Entry 30 coefficients vanish at nonzero non-squarefree natural numbers](chapter5-entry30-coeff-of-not-squarefree.md)
 - [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
-- [Chapter5 Entry30 Coeff one](chapter5-entry30-coeff-one.md)
-- [Chapter5 Entry30 Coeff zero](chapter5-entry30-coeff-zero.md)
+- [The Entry 30 coefficient at one](chapter5-entry30-coeff-one.md)
+- [The Entry 30 coefficient at zero](chapter5-entry30-coeff-zero.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ stack holds exactly the one output symbol for $f_v(a, y)$ and whose other stacks
 
 ## Proof depends on
 
-- [V input](v-input.md)
+- [Input of the verifier on a pair](v-input.md)
 - [The idle-extended run stays at the halting configuration](../situation/part-08/run-i-halt-list.md)
 
 ## Sources

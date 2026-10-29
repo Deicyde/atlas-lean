@@ -14,7 +14,7 @@ uncovered relative to $S$ in $G$.
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination state of a vertex](vertex-domination-state.md)
 - [Dominating set](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 

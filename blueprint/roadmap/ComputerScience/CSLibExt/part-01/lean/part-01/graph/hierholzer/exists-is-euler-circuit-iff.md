@@ -24,8 +24,8 @@ as it is the target of.
 
 ## Proof depends on
 
-- [Hierholzer](hierholzer.md)
-- [Hierholzer's algorithm finds Euler circuits](hierholzer-is-euler-circuit.md)
+- [Hierholzer's algorithm](hierholzer.md)
+- [Hierholzer's algorithm finds Euler circuits in directed multigraphs](hierholzer-is-euler-circuit.md)
 - [A directed multigraph with an Euler circuit is balanced](is-balanced-of-is-euler-circuit.md)
 
 ## Sources

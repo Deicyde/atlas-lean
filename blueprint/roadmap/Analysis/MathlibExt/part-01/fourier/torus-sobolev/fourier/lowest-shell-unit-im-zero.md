@@ -17,7 +17,7 @@ Its Fourier modes come in opposite pairs $\pm k$ with equal coefficients.
 
 ## Depends on
 
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 
 ## Proof depends on
 

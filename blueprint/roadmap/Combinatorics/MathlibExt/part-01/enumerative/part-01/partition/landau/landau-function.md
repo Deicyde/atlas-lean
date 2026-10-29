@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.landauFunction
 ---
 
-# Landau Function
+# Landau's function
 
-The maximum least common multiple of the parts of a partition of `n`.
+**Landau's function.** For a natural number $n$, Landau's function at $n$ is the maximum, over
+all partitions $p$ of $n$, of the least common multiple of the parts of $p$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Parts LCM](parts-lcm.md)
+- [Least common multiple of the parts of a partition](parts-lcm.md)
 
 ## Sources
 

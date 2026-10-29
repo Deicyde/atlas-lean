@@ -14,11 +14,11 @@ $T \subseteq M$.
 
 ## Depends on
 
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 
 ## Proof depends on
 
-- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
+- [Maximal consistent sets are deductively closed in propositional natural deduction](mem-of-derivable-in.md)
 
 ## Sources
 

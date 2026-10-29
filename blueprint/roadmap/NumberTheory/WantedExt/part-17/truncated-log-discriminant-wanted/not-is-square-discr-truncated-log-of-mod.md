@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.not_isSquare_discr_truncatedLog_of_mod_four
 ---
 
-# Not is Square discr truncated Log of mod four
+# Nonsquare discriminants of $F_n$ for positive $n \equiv 0, 2, 3 \pmod 4$
 
-If `n ≡ 0, 2, 3 (mod 4)` (`n ≥ 1`), then `disc(F_n)` is not a rational square.
+**Nonsquare discriminants of $F_n$ for positive $n \equiv 0, 2, 3 \pmod 4$.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial and let
+$n \ge 1$ be a natural number with $n \equiv 0$, $2$ or $3 \pmod 4$. Then the discriminant of
+$F_n$ is not a square in $\mathbb{Q}$.
 
 ## Depends on
 

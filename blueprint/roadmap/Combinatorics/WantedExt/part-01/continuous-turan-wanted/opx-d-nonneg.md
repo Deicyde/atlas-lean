@@ -13,7 +13,7 @@ real number $n$ and set $P \subseteq \mathbb{R}^d$, $\mathrm{opx}(n, P, d) \ge 0
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Proof depends on
 

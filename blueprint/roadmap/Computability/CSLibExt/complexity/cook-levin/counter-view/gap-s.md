@@ -42,7 +42,7 @@ with $F$ except that $F'(P) = q$, and $y^g o$ is $g$ copies of $y$ followed by $
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 

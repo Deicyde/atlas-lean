@@ -21,7 +21,7 @@ of $\Gamma$, whose local exponent at $(\Gamma, \lambda)$ is $\sqrt{1/4 - \lambda
 
 - [Selberg gap of an exceptional eigenvalue](selberg-gap.md)
 - [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../selberg-spectral-gap/is-eigenvalue.md)
 - [Gap contributions of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gaps.md)
 
 ## Sources

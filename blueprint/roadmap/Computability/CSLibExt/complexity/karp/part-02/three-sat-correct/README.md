@@ -21,7 +21,7 @@ navigation: module
 
 - [Completeness of the tail of a chain](chain-tail-complete.md)
 - [Completeness of the chain of one clause](chain-complete.md)
-- [Fresh Val](fresh-val.md)
+- [Values of the fresh variables in the 3SAT translation](fresh-val.md)
 - [Completeness of the auxiliary 3SAT translation](to3-aux-complete.md)
 - [Lifting an assignment to the 3SAT translation](lift.md)
 - [The lifted assignment on renamed variables](lift-ren.md)

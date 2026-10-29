@@ -5,7 +5,7 @@ navigation: transparent
 # Coefficients of qMZVs as polynomial functions on partitions to Takeyama–Bradley–Zhao qMZVs
 
 - [Coefficients of qMZVs as polynomial functions on partitions](exists-mv-polynomial-coeff-q-mzv-eq-sum.md)
-- [Mem q MZVSpace zero iff exists mv Polynomial](mem-q-mzvspace-zero-iff-exists-mv-polyno.md)
+- [Polynomial functions on partitions characterize $\mathcal{Z}_q$](mem-q-mzvspace-zero-iff-exists-mv-polyno.md)
 - [Quasi-shuffle product](quasi-shuffle.md)
 - [The empty word is a left unit for the quasi-shuffle product](quasi-shuffle-nil-left.md)
 - [The stuffle product of two letters](quasi-shuffle-singleton-singleton.md)

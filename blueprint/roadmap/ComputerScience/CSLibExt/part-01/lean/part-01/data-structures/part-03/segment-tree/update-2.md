@@ -15,7 +15,7 @@ valid.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Point update of a segment tree](update.md)
 

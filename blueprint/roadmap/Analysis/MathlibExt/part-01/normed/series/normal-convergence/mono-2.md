@@ -16,11 +16,11 @@ normally on $S$, then it converges locally normally on $T$.
 
 ## Depends on
 
-- [Converges Locally Normally On](converges-locally-normally-on.md)
+- [Local normal convergence of a series of functions on a set](converges-locally-normally-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On](converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](converges-normally-on.md)
 - [Normal convergence passes to subsets](mono.md)
 
 ## Sources

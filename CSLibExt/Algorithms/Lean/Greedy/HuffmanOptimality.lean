@@ -33,7 +33,9 @@ set_option autoImplicit false
 
 universe u
 
-/-- A full binary tree carrying only real-valued leaf weights. -/
+/-- **Huffman weight tree.** A Huffman weight tree is a full binary tree whose leaves carry only
+real weights: it is either a leaf with a weight $w \in \mathbb{R}$, or a fork joining a left and a
+right Huffman weight tree. -/
 inductive HuffmanWeightTree where
   | leaf (weight : Real)
   | fork (left right : HuffmanWeightTree)
@@ -1575,10 +1577,14 @@ theorem huffman_optimal {α : Type u} [DecidableEq α]
     tree.weightedPathLength ≤ competitor.weightedPathLength :=
   huffman_optimal_of_mergeTrace (huffman_mergeTrace hresult) hcompetitor
 
-/-- The tree returned by `huffman` also minimizes the structural
-encoded-length objective, including the one-bit singleton code; by
-`HuffmanTree.encodedLength_eq_sum_codeLengths` this is the encoder's emitted
-cost whenever the leaf symbols are unique. -/
+/-- **Huffman's algorithm minimizes the encoded length.** Let $L$ be a list of symbol–weight
+pairs with natural-number weights, over a symbol type with decidable equality, and suppose
+Huffman's algorithm returns the tree $t$ on $L$. Then every Huffman tree $t'$ that is admissible
+for $L$, that is, whose weighted leaves listed from left to right form a permutation of $L$, has
+encoded length at least that of $t$.
+
+The encoded length charges a lone leaf for a one-bit codeword; when the leaf symbols of a tree
+are distinct, it equals the encoder's emitted cost, the total weighted codeword length. -/
 theorem huffman_encodedLength_optimal {α : Type u} [DecidableEq α]
     {input : List (α × Nat)} {tree competitor : HuffmanTree α}
     (hresult : huffman input = some tree)

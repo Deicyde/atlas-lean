@@ -24,8 +24,8 @@ $M$, $U$, $V$ and $P$ holds the same list in $S'$ as in $S$.
 
 - [Bit encoding of an edge list](../karp/part-01/color/edge-bits.md)
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [One marking pass](../path/mark-pass.md)

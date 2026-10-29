@@ -15,9 +15,9 @@ relation over its inferred schema.
 
 - [Relational algebra queries](expr.md)
 - [Databases conforming to a schema](conforms.md)
-- [Eval](eval-2.md)
+- [Value of a query](eval-2.md)
 - [Schema of a query](schema.md)
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 - [Tuple](tuple.md)
 
 ## Proof depends on

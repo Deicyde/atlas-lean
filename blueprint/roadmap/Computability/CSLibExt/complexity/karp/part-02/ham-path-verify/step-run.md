@@ -25,7 +25,7 @@ previous vertex $a$ and remaining vertices $q$.
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
 - [Stack layout between vertex steps](lay.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [One step of the HAMPATH walk](../../part-01/ham-path-check/step-ok.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)

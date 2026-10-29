@@ -24,7 +24,7 @@ it on a single tape within quadratic overhead.
 
 ## Proof depends on
 
-- [Computable](../../../../complexity/encoding-converters/computable-3.md)
+- [Polynomial-time encoder to the canonical bit-list encoding](../../../../complexity/encoding-converters/computable-3.md)
 - [Reversing and dropping the first bit is polynomial-time](computable.md)
 - [Non-blank symbols](../of-tm0/non-blank.md)
 - [The decider of a multi-stack machine](../of-recursive/decider-tm.md)
@@ -39,7 +39,7 @@ it on a single tape within quadratic overhead.
 - [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Comp Computable](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
+- [The composite polynomial-time TM2 computation](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 - [Symbols a statement may push](../../../../../MathlibExt/turing-machine/recursive/of-tm2/pushes.md)
 - [Relevant symbols of a stack](../../../../../MathlibExt/turing-machine/recursive/of-tm2/relevant.md)
 

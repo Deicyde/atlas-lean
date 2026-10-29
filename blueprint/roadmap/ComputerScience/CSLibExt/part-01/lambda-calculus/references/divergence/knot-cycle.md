@@ -18,7 +18,7 @@ $[b_0]$ steps back to $(!\ell_0)\,\mathrm{unit}$ with store $[b_0]$.
 
 - [The stored recursive function of Landin's knot](body-2.md)
 - [Cycle term of Landin's knot](loop-a.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on

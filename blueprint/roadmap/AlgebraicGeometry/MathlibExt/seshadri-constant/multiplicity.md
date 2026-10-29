@@ -14,8 +14,8 @@ the translated polynomial $f(X_0 + a_0, X_1 + a_1)$. For the zero polynomial it 
 
 ## Depends on
 
-- [Affine Point](affine-point.md)
-- [Plane Polynomial](plane-polynomial.md)
+- [Points of the complex affine plane](affine-point.md)
+- [Polynomials in two complex variables](plane-polynomial.md)
 
 ## Proof depends on
 

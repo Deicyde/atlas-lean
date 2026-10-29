@@ -4,8 +4,8 @@ navigation: module
 
 # Jaeger Modular Orientation
 
-- [Crosses Cut](crosses-cut.md)
-- [Cut Size](cut-size.md)
+- [Edges crossing a cut](crosses-cut.md)
+- [Size of a cut](cut-size.md)
 - [4k-edge-connected multigraphs](is-four-kedge-connected.md)
 - [Tail of an oriented edge](oriented-tail.md)
 - [Head of an oriented edge](oriented-head.md)

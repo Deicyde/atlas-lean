@@ -13,7 +13,7 @@ navigation: module
 - [Borsuk covers by subsets](has-borsuk-cover-iff-exact-union.md)
 - [Borsuk covers by closed sets](has-borsuk-cover-iff-closed-cover.md)
 - [Borsuk covers of nonempty sets have at least one piece](has-borsuk-cover-pos.md)
-- [Has Borsuk Cover mono](has-borsuk-cover-mono.md)
+- [Enlarging a Borsuk cover](has-borsuk-cover-mono.md)
 - [Bounds on the Borsuk number of a set](set-borsuk-number-le-iff.md)
 - [Upper bounds on the Borsuk number of a Euclidean space](dimension-borsuk-number-le-iff.md)
 - [Borsuk's conjecture in a given dimension](borsuk-conjecture-in-dimension.md)

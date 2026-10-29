@@ -17,7 +17,7 @@ $\mathsf{no}$ from the configuration $(l, v, S)$ within one step.
 
 - [Stacks of the SUBSET-SUM verifier](k.md)
 - [Labels of the SUBSET-SUM verifier](lab.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [The SUBSET-SUM verifier program](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 

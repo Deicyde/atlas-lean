@@ -19,7 +19,7 @@ satisfies $c_a(p^e) = 0$.
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Entry 30 coefficients vanish at nonzero non-squarefree natural numbers](chapter5-entry30-coeff-of-not-squarefree.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ verifier host has no repeated entries.
 ## Depends on
 
 - [Stacks of the SAT verifier host](hk.md)
-- [Stacks emptied by the cleanup](work-ks.md)
+- [Stacks emptied by the SAT verifier's cleanup](work-ks.md)
 
 ## Sources
 

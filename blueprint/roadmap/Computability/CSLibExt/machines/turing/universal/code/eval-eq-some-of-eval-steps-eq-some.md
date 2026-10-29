@@ -24,7 +24,7 @@ $l$ followed by blanks.
 ## Proof depends on
 
 - [Explicit configurations](cfg.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [TM0 configuration of a simulation configuration](to-tm0.md)
 - [Clocked configuration of a code](cfg-after.md)
 - [Characterization of clocked results](eval-steps-eq-some-iff-output.md)

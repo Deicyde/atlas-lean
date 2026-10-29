@@ -27,7 +27,7 @@ bit list of the clocked universal machine for the code $c$, the input $y$ and th
 - [The cells of a list of numbers](../clocked/cells.md)
 - [Cell-by-cell check of a code stack](chk-from.md)
 - [The cell-by-cell check agrees with code-stack decoding](chk-from-zero.md)
-- [Decode Code Cells](../diagonalization/decode-code-cells.md)
+- [Decoding a code stack](../diagonalization/decode-code-cells.md)
 - [The reformatting function in bits](../diagonalization/enc-in-diag-arg.md)
 - [Input word of a list of bits](../code/input.md)
 

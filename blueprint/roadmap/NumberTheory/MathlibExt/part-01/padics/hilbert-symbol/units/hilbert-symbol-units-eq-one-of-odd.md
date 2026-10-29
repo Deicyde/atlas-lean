@@ -22,7 +22,7 @@ as units of $\mathbb{Q}_p$, equals $1$.
 
 - [For odd $p$, a binary unit form over $\mathbb{Z}_p$ represents a unit square](chevalley-warning-hensel-lift.md)
 - [Value of the inclusion of $p$-adic integer units](unit-zp-to-qp-coe.md)
-- [Eq one iff](../../hilbert-symbol-2/eq-one-iff.md)
+- [When the $p$-adic Hilbert symbol is $1$](../../hilbert-symbol-2/eq-one-iff.md)
 
 ## Sources
 

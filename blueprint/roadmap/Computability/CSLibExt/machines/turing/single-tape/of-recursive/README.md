@@ -22,7 +22,7 @@ navigation: module
 - [Input cell of a bit](in-cell.md)
 - [The bottom cell of the start tape](bot-cell.md)
 - [States of the single-tape emulation](emu-support.md)
-- [Single-tape emulation of a multi-stack machine](emu-tm.md)
+- [Finite single-tape emulation of a multi-stack machine](emu-tm.md)
 - [The recognizer of a multi-stack machine](recognizer-tm.md)
 - [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
 - [The recognizer halts iff the multi-stack machine does](halts-on-recognizer-tm-iff.md)

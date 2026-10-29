@@ -19,7 +19,7 @@ That tree is the rerooted old tree of $x$.
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Root of a rooted tree](../euler-tour-tree/root.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Link-cut tree state](state.md)
 - [Vertex of a link-cut tree state](mem.md)
 - [Making a vertex the root in a link-cut tree state](make-root.md)

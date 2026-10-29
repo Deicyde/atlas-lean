@@ -73,9 +73,15 @@ inductive HasType : List (Ty Base) → List (Ty Base) → Term Base → Ty Base 
       (ht₁ : HasType Γ S t₁ (.ref T)) (ht₂ : HasType Γ S t₂ T) :
       HasType Γ S (.assign t₁ t₂) .unit
 
-/-- A store is well typed, `Γ | S ⊢ μ` (TAPL Definition 13.5.1): it has one
-entry per location of `S`, and the entry at each location is a value of the
-type `S` assigns to it. -/
+/-- **Well-typed stores.** Let $\Gamma$ be a variable context and $S$ a store typing. A store
+$\mu$, a list of terms whose entry at index $l$ is the contents of location $l$, is well typed
+under $\Gamma$ and $S$, written $\Gamma \mid S \vdash \mu$, when $\mu$ and $S$ have the same
+length and, for every location $l$ less than this length, the entry of $\mu$ at $l$ is a value
+that has, under $\Gamma$ and $S$, the type that $S$ assigns to $l$.
+
+Stores here are lists of terms rather than of values, so each entry is required to be a value.
+
+Source: TAPL Definition 13.5.1. -/
 def StoreTyped (Γ S : List (Ty Base)) (μ : List (Term Base)) : Prop :=
   List.Forall₂ (fun v T => v.Value ∧ HasType Γ S v T) μ S
 

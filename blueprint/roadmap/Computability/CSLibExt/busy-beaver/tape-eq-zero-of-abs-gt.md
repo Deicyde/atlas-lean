@@ -23,7 +23,7 @@ $i \in \mathbb{Z}$ with $|i| > t$, the symbol in cell $i$ after $t$ steps is $0$
 - [Head movement](move.md)
 - [Head displacement](shift.md)
 - [Head displacement bound](abs-head-le.md)
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [One step of a Busy Beaver machine](step.md)
 
 ## Sources

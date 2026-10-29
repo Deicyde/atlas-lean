@@ -21,7 +21,7 @@ $p \le 18900n/657$.
 
 ## Proof depends on
 
-- [G9r level2](g9r-level2.md)
+- [Level-$2$ threshold for the continuous Breusch function](g9r-level2.md)
 - [A level bound turns into a bound on the prime](u9-ple-of-g.md)
 - [Primes up to $1890n$ have $n/p \ge 1/1890$](u9-xlo.md)
 

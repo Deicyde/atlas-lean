@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dyckSubwordCount
 ---
 
-# Dyck Subword Count
+# Number of occurrences of a subword
 
-The number of occurrences of the contiguous subword `w` in the step list
-`l`, overlapping occurrences counted separately.
+**Number of occurrences of a subword.** For finite words $w$ and $l$ in the up step $U$ and
+the down step $D$, the number of occurrences of $w$ in $l$ is the number of suffixes of $l$,
+including $l$ itself and the empty suffix, that begin with $w$. Thus every occurrence of $w$ as a
+contiguous subword of $l$ is counted, overlapping occurrences separately.
 
 ## Depends on
 

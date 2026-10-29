@@ -19,7 +19,7 @@ $k$ times; the $0$-th iterate is $\psi$ itself.
 
 ## Proof depends on
 
-- [Grover Step](../diffusion/grover-step.md)
+- [Grover step](../diffusion/grover-step.md)
 
 ## Sources
 

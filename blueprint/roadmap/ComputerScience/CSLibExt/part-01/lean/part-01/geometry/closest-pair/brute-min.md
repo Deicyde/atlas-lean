@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Min Dist From](min-dist-from.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

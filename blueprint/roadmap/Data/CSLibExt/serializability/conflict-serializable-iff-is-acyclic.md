@@ -13,7 +13,7 @@ conflict-serializable exactly when its precedence graph is acyclic.
 
 ## Depends on
 
-- [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
+- [Acyclic directed graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
 - [Conflict-serializable schedule](conflict-serializable.md)
 - [Operation of a schedule](op.md)
 - [Precedence graph](precedence-graph.md)

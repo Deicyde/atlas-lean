@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.isKLNearPerfect_one_two_mul_prime_pow
 ---
 
-# Theorem 14
+# The only $(1,\ell)$-near-perfect number of the form $2p^a$ is $18$
 
-**Theorem 14**, part 1: the only `[1,ℓ]`-near-perfect
-number of the form `2p^a` (any `ℓ ≥ 1`) is `18` (and `18`
-is one, for `ℓ = 1` with `d = 3`).
+**The only $[1,\ell]$-near-perfect number of the form $2p^a$ is $18$.** For natural numbers
+$\ell$ and $n$, say that $n$ is $[1,\ell]$-near-perfect when some divisor $d$ of $n$ with $d < n$
+satisfies $\sigma(n) = n + d + \ell n$, where $\sigma(n)$ is the sum of the divisors of $n$. Then
+$18$ is $[1,1]$-near-perfect, and for every odd prime $p$ and all natural numbers $a$ and
+$\ell \ge 1$, if $2p^a$ is $[1,\ell]$-near-perfect then $2p^a = 18$.
+
+The divisor for $18$ is $d = 3$. This is part 1 of Theorem 14 of the source.
 
 ## Depends on
 

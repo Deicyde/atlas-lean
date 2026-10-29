@@ -14,7 +14,7 @@ $L$ and $R$ has total weight equal to the total weight of $L$ plus that of $R$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Sources
 

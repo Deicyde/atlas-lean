@@ -30,7 +30,7 @@ tree is modeled, so this is only the endpoint property of the accessed preferred
 ## Proof depends on
 
 - [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [Preferred-path decomposition of a tree](decomp.md)

@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.nearHookTableauToPathXi
 ---
 
-# Near Hook Tableau To Path Xi
+# The map $\xi$ from near-hook tableaux to lattice paths
 
-The map `ξ` of equation (eq:xi), with `H` the heart entry: for `1 ≤ i ≤ 2n + 2`, if
-`i + 2 < H` the step is `E` or `N` as `i + 1` lies in the arm or the leg; if `i + 2 = H` it is `S`
-or `W` as `i + 1` lies in the arm or the leg; if `i + 2 > H` it is `E` or `N` as `i + 2` lies in the
-arm or the leg. For a standard tableau the inspected value is never the heart, so "not in the arm"
-is "in the leg". List index `k` is `i - 1`.
+**The map $\xi$ from near-hook tableaux to lattice paths.** Let $n \in \mathbb{N}$ and let
+$T$ be a semistandard Young tableau of shape $\theta^{(n)}$, with rows and columns numbered from
+$0$; call row $0$ of $\theta^{(n)}$ the arm and the cell in row $1$ and column $1$ the heart, and
+let $H$ be the entry of $T$ in the heart. Then $\xi(T)$ is the word $(s_1, \dots, s_{2n+2})$ of
+steps in $\mathbb{Z}^2$ given as follows, where $E = (1, 0)$, $N = (0, 1)$, $S = (0, -1)$ and
+$W = (-1, 0)$. If $i + 2 < H$, then $s_i$ is $E$ if $i + 1$ is an entry of $T$ in the arm and
+$N$ otherwise. If $i + 2 = H$, then $s_i$ is $S$ if $i + 1$ is an entry of $T$ in the arm and
+$W$ otherwise. If $i + 2 > H$, then $s_i$ is $E$ if $i + 2$ is an entry of $T$ in the arm and
+$N$ otherwise.
+
+For a standard Young tableau the inspected value is never $1$ or $H$, so it lies in exactly one
+of the arm and the leg, column $0$; "otherwise" then means that it lies in the leg.
 
 ## Depends on
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.balanced_balance
 ---
 
-# Balanced balance
+# Weight-balanced rebalancing restores balance
 
-Rebalancing children that violate the weight invariant by at most the
-one-key weight slack
-`4 * (child.numNodes + 1) ≤ 3 * (left.numNodes + right.numNodes + 2) + 1`
-produces a balanced tree. This is the precondition that one insertion
-step maintains.
+**Weight-balanced rebalancing restores balance.** Let $L$ and $R$ be weight-balanced trees
+and $k$ a key, and write $|t|$ for the number of keys of a tree $t$. If
+$4(|L| + 1) \le 3(|L| + |R| + 2) + 1$ and $4(|R| + 1) \le 3(|L| + |R| + 2) + 1$, then the
+rebalanced node $\mathrm{balance}(L, k, R)$ is weight-balanced.
+
+These hypotheses are the two inequalities of the weight-balance invariant for the node with
+children $L$ and $R$, each with its right-hand side increased by $1$; this is the precondition that
+one insertion step maintains.
 
 ## Depends on
 

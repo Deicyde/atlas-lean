@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sigma_div_lt_totient_ratio_le_prod_primes
 ---
 
-# Sigma div lt totient ratio le prod primes
+# Bounds for $\sigma(n)/n$ over primes avoiding $p_j$
 
-Let `p_ℓ` be the `ℓ`-th prime (`p₁ = 2`), `1 ≤ j ≤ k`, `q₁ < ⋯ < q_k` primes distinct from
-`p_j`, `α_i ≥ 1` and `n = ∏ q_i^{α_i}`. Then
-`σ(n)/n < ∏ q_i/(q_i - 1) = n/φ(n) ≤ ∏_{ℓ ≤ k + 1, ℓ ≠ j} p_ℓ/(p_ℓ - 1)`.
-The paper prints the last link as strict; it is an equality when the `q_i` are exactly the first
-`k` primes other than `p_j` (e.g. `j = k = 1`, `n = 3`: both sides are `3/2`), and the proof
-(`p_i ≤ q_i`) gives `≤`.
+**Bounds for $\sigma(n)/n$ over primes avoiding $p_j$.** For $\ell \ge 1$ let $p_\ell$ be the
+$\ell$-th prime, so that $p_1 = 2$. Let $1 \le j \le k$, let $q_1 < \cdots < q_k$ be primes
+different from $p_j$, let $\alpha_1, \dots, \alpha_k \ge 1$, and put
+$n = \prod_{i=1}^k q_i^{\alpha_i}$. Let $\sigma(n)$ be the sum of the divisors of $n$ and let
+$\varphi$ be Euler's totient function. Then
+
+$$
+\frac{\sigma(n)}{n} < \prod_{i=1}^k \frac{q_i}{q_i - 1} = \frac{n}{\varphi(n)} \le
+\prod_{1 \le \ell \le k + 1,\ \ell \ne j} \frac{p_\ell}{p_\ell - 1}.
+$$
+
+The paper prints the last inequality as strict; it is an equality when the $q_i$ are exactly the
+first $k$ primes other than $p_j$ (for example $j = k = 1$ and $n = 3$, where both sides are
+$3/2$), and the proof ($p_i \le q_i$) gives $\le$.
 
 ## Depends on
 

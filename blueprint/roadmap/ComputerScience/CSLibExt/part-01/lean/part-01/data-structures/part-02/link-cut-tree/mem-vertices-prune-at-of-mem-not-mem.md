@@ -17,7 +17,7 @@ the tree $t'$. Then every vertex of $t$ that is not a vertex of $s$ is a vertex 
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Subtree rooted at a vertex](find-subtree.md)
 - [Pruning the subtrees rooted at a vertex](prune-at.md)
 

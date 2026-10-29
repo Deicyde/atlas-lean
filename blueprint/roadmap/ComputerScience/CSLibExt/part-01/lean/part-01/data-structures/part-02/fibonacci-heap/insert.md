@@ -19,7 +19,7 @@ first.
 ## Proof depends on
 
 - [Melding Fibonacci heaps](meld.md)
-- [Singleton](singleton-2.md)
+- [Singleton Fibonacci heap](singleton-2.md)
 
 ## Sources
 

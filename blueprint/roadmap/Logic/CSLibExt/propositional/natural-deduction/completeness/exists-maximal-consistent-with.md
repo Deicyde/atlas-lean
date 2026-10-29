@@ -15,7 +15,7 @@ $T$.
 
 ## Depends on
 
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 
 ## Sources
 

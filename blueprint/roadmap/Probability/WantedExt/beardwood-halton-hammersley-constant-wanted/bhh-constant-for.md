@@ -16,7 +16,7 @@ No existence theorem is assumed: the definition does not presuppose that a BHH l
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

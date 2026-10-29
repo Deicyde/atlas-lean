@@ -20,7 +20,7 @@ navigation: module
 - [Writing commutes with the Post–Turing reading of a tape](to-tape-write.md)
 - [Head moves commute with the Post–Turing reading of a tape](to-tape-move.md)
 - [Optional head moves commute with the Post–Turing reading of a tape](to-tape-option-move.md)
-- [To Tape mk₁](to-tape-mk.md)
+- [The Post–Turing reading of an input tape](to-tape-mk.md)
 - [Distinct tapes of non-blank symbols read as distinct TM0 tapes](to-tape-injective.md)
 - [Single-tape simulation of a Post–Turing machine](of-tm0.md)
 - [The simulation halts one step after the TM0 machine](step-of-tm0-of-step-eq-none.md)

@@ -16,7 +16,7 @@ equal to $\varphi(\Omega)$.
 ## Depends on
 
 - [Odd squarefree part](is-odd-squarefree-part.md)
-- [Mersenne Eta Condition](mersenne-eta-condition.md)
+- [Condition (etar) on Jacobi symbols of $M_n$](mersenne-eta-condition.md)
 - [The order $\Omega(m)$ of $2$, doubled when odd](mersenne-omega.md)
 
 ## Sources

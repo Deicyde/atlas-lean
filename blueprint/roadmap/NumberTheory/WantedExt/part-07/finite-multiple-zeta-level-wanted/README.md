@@ -19,5 +19,5 @@ navigation: module
 - [Decomposition of finite multiple zeta values into level-$N$ pieces](colored-finite-mzv-one-eq-pow-mul-sum-pr.md)
 - [Raising the level of finite multiple zeta values](exists-finite-mzvcolored-eq-sum-of-dvd.md)
 - [Criterion for a uniform bound on the least non-Wieferich base](exists-bound-fermat-quotient-iff-finite.md)
-- [Lemma 4](exists-bound-bernoulli-iff-finite-i-inte.md)
+- [Criterion for a uniform bound on the least non-vanishing Bernoulli index](exists-bound-bernoulli-iff-finite-i-inte.md)
 - [Regular and non-Wieferich primes give non-vanishing finite multiple zeta values](exists-finite-mzv-ne-zero-of-conjectures.md)

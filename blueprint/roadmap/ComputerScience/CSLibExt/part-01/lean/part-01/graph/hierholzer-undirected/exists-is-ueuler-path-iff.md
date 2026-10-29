@@ -28,7 +28,7 @@ such a path.
 
 - [Degrees of an undirected Euler path](even-except-of-is-ueuler-path.md)
 - [Undirected Hierholzer's algorithm](uhierholzer.md)
-- [Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
+- [Undirected Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
 
 ## Sources
 

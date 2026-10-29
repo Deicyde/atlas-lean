@@ -18,5 +18,5 @@ navigation: module
 - [Alternating binomial-Catalan sum with Lucas sequences](lucas-u-lucas-v-sum-choose-catalan-alter.md)
 - [Alternating two-binomial Catalan convolution of U and V](lucas-u-lucas-v-sum-choose-sq-catalan-al.md)
 - [Binomial sums with signs $(-1)^{\binom{k}{2}}$ and Lucas sequences](lucas-u-lucas-v-sum-choose-sign-choose-t.md)
-- [Second Order Bi Seq sum central choose mul](second-order-bi-seq-sum-central-choose-m.md)
-- [Second Order Bi Seq sum central choose mul weighted](second-order-bi-seq-sum-central-choose-m-2.md)
+- [Two-sided binomial sums of products of Lucas sequences](second-order-bi-seq-sum-central-choose-m.md)
+- [Weighted two-sided binomial sums of products of Lucas sequences](second-order-bi-seq-sum-central-choose-m-2.md)

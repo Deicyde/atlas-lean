@@ -18,11 +18,11 @@ algorithm returns no value if and only if the list has fewer than two entries.
 
 ## Proof depends on
 
-- [Is Answer](is-answer.md)
-- [Is Min Pair Dist2](is-min-pair-dist2.md)
+- [Closest-pair answer](is-answer.md)
+- [Least pairwise squared distance](is-min-pair-dist2.md)
 - [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
 - [Correctness of divide-and-conquer closest pair](closest-pair-spec.md)
-- [Dist2](dist2.md)
+- [Squared distance in the plane](dist2.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ within one step.
 - [Busy Beaver machine configuration](config.md)
 - [Head movement](move.md)
 - [Head displacement](shift.md)
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [Initial state](initial-state.md)
 - [A one-state machine that stays in its state on a blank never halts](not-halts-of-one-state-march.md)
 - [Configuration after $t$ steps](run.md)

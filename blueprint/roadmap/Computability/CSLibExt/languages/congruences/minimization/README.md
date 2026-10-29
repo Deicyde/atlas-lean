@@ -17,5 +17,5 @@ navigation: module
 - [The residual-language DFA is accessible](to-dfa-accessible.md)
 - [The minimized DFA is accessible](minimized-dfa-accessible.md)
 - [Nerode classes and reachable residuals](nerode-class-equiv-minimized-state.md)
-- [Minimized State Equiv Iterated](minimized-state-equiv-iterated.md)
+- [Reachable residuals of the minimized DFA](minimized-state-equiv-iterated.md)
 - [When finite, the minimized DFA has as many states as there are Nerode classes](minimized-dfa-card-eq-nerode.md)

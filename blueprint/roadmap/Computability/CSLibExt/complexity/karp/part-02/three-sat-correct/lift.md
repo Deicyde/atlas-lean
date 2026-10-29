@@ -19,7 +19,7 @@ is taken to be $0$ and subtraction is truncated at $0$.
 
 ## Proof depends on
 
-- [Fresh Val](fresh-val.md)
+- [Values of the fresh variables in the 3SAT translation](fresh-val.md)
 
 ## Sources
 

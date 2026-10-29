@@ -23,7 +23,7 @@ $$f_1 f_9 \sum_{n \ge 0} \mathrm{ped}_{9,9}(n) q^n = f_4 f_{18}.$$
 ## Proof depends on
 
 - [Constant term of the Euler products](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
-- [Ped Nine Nine Series](ped-nine-nine-series.md)
+- [The generating series for $\mathrm{ped}_{9,9}$](ped-nine-nine-series.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ contained in $V(A)$.
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
-- [Reg Val](reg-val.md)
+- [Languages assigned to the nonterminals of the regularity grammar](reg-val.md)
 - [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Valuation of a grammar](../../../languages/context-free/part-01/basic/is-valuation.md)
@@ -33,7 +33,7 @@ contained in $V(A)$.
 - [Bits as letters](bl.md)
 - [Shifted right-hand sides denote images of words of $g$](mem-eval-form-shift.md)
 - [The separator letter](sep.md)
-- [Shift Rule](shift-rule.md)
+- [Shifting a production into the regularity grammar](shift-rule.md)
 - [Alphabet letters in the extended alphabet](tl.md)
 - [The language $\{0^n 1^n\}$](zero-one.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)

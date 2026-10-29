@@ -35,7 +35,7 @@ $T$.
 
 ## Proof depends on
 
-- [Dlit run](dlit-run.md)
+- [One literal of the detour walk](dlit-run.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

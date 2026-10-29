@@ -836,8 +836,11 @@ private theorem pick_triangle_eq_explicit (u v : Fin 2 → ℤ) (h : pickDet u v
     · refine ⟨2, ?_⟩
       simp [pickTrianglePoints, pick_basis_apply, pickVecs]
 
-/-- Pick's area formula for a nondegenerate triangle with one vertex at the origin and the other
-two vertices in the standard integer lattice. -/
+/-- **Pick's theorem for lattice triangles with a vertex at the origin.** Let
+$u, v \in \mathbb{Z}^2$ with $u_0 v_1 - u_1 v_0 \neq 0$, and let $T \subset \mathbb{R}^2$ be
+the convex hull of $0$, $u$ and $v$. Let $I$ be the number of points of $\mathbb{Z}^2$ in the
+interior of $T$ and $B$ the number of points of $\mathbb{Z}^2$ on the boundary of $T$. Then
+the area (two-dimensional Lebesgue measure) of $T$ equals $I + B/2 - 1$. -/
 theorem _root_.MeasureTheory.toReal_volume_convexHull_lattice_triangle (u v : Fin 2 → ℤ)
     (h : u 0 * v 1 - u 1 * v 0 ≠ 0) :
     (volume (convexHull ℝ ({0, (fun i ↦ (u i : ℝ)), (fun i ↦ (v i : ℝ))} :

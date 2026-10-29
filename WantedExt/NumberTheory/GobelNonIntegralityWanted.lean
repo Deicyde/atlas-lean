@@ -498,10 +498,17 @@ public theorem_wanted gobelSequence_first_nonintegral_2600725 :
     (¬∃ z : ℤ, gobelSequence 2600725 2 9011 = z) ∧
     ∀ n, 1 ≤ n → n < 9011 → ∃ z : ℤ, gobelSequence 2600725 2 n = z
 
-/-- For every `2 ≤ k ≤ 10^7`, some positive index at most `9011` is nonintegral, directly
-encoding `N_k ≤ 9011`. Together with the preceding exact equality this says the largest
-threshold in the range is `9011`. The uncheckable claim that every value was explicitly
-determined in an external repository is deliberately omitted as instructed. Source: Yuh
+/-- **A non-integral term of $g_{k,2}$ by index $9011$ for $2 \le k \le 10^7$.** Let $g_{k,l}$
+denote the $(k, l)$-Göbel sequence. For every natural number $k$ with $2 \le k \le 10^7$, there
+is a natural number $n$ with $1 \le n \le 9011$ such that the rational number $g_{k,2}(n)$ is
+not an integer.
+
+Writing $N_k$ for the first index at which $g_{k,2}$ is not an integer, as in the paper, this
+says $N_k \le 9011$ for $2 \le k \le 10^7$; together with $N_{2600725} = 9011$, this makes $9011$
+the largest of these thresholds. The paper also reports that each of these $N_k$ was determined
+explicitly by computation; that claim is not part of this statement.
+
+Source: Yuh
 Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*,
 Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26. -/
 public theorem_wanted gobelSequence_nonintegral_index_le_9011
@@ -520,9 +527,15 @@ public theorem_wanted card_gobelSequence_prime_first_nonintegral_index :
       ∃ q, q.Prime ∧ (¬∃ z : ℤ, gobelSequence k 2 q = z) ∧
         ∀ n, 1 ≤ n → n < q → ∃ z : ℤ, gobelSequence k 2 n = z} = 8649270
 
-/-- For every `2 ≤ k ≤ 10^14`, a positive nonintegral term occurs by index `29363`.
-This is the direct formulation of `N_k ≤ 29363`, avoiding a threshold definition while
-preserving both printed bounds. Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on
+/-- **A non-integral term of $g_{k,2}$ by index $29363$ for $2 \le k \le 10^{14}$.** Let
+$g_{k,l}$ denote the $(k, l)$-Göbel sequence. For every natural number $k$ with
+$2 \le k \le 10^{14}$, there is a natural number $n$ with $1 \le n \le 29363$ such that the
+rational number $g_{k,2}(n)$ is not an integer.
+
+Writing $N_k$ for the first index at which $g_{k,2}$ is not an integer, as in the paper, this
+says $N_k \le 29363$.
+
+Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on
 Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article
 26.3.8, Theorem 29. -/
 public theorem_wanted gobelSequence_nonintegral_index_le_29363

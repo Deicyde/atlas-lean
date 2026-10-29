@@ -29,7 +29,7 @@ guard $b$ and body relation the denotation of $c$.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [The while-loop functional as a monotone map](while-order-hom.md)
 
 ## Sources

@@ -57,7 +57,8 @@ open Topology ContDiff
 local notation "ℝ²" => EuclideanSpace ℝ (Fin 2)
 local notation "ℝ³" => EuclideanSpace ℝ (Fin 3)
 
-/-- The set of points `(x, y) ∈ ℝ²` with `0 ≤ x ≤ 1`. -/
+/-- **Unit strip.** The unit strip is the set of points $(x, y) \in \mathbb{R}^2$ with
+$0 \le x \le 1$, that is, $[0, 1] \times \mathbb{R}$. -/
 abbrev unitStrip : Set ℝ² :=
   {x | x 0 ∈ Set.Icc 0 1}
 

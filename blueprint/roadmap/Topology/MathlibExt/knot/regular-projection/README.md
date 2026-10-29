@@ -46,7 +46,7 @@ navigation: module
 - [Double points of a link projection](double-point-set.md)
 - [Regular projections](is-regular-projection.md)
 - [Points with the same projection have different heights](height-at-ne-of-proj-point-eq-of-ne.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Crossing count of a regular projection](crossing-count-2.md)
 - [Double points have exactly two preimages](exists-pair-of-mem-double-point-set.md)
 - [Being the over-strand preimage of a crossing](is-over-point.md)

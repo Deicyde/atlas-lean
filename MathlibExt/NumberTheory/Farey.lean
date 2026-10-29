@@ -434,14 +434,17 @@ theorem isFareyNeighbor_iff_det_and_sum {n : ℕ} {x y : ℚ}
   · rintro ⟨hdet, hsum⟩
     exact det_one_and_sum_gt_imp_neighbor n x y hx hy hdet hsum
 
-/-- The mediant of a Farey pair is not already present at the same order. -/
+/-- **The mediant of Farey neighbors is not in the Farey set.** Let $n$ be a natural number. If
+$x$ and $y$ are Farey neighbors of order $n$, then the mediant of $x$ and $y$ does not belong to
+the Farey set $F_n$. -/
 theorem IsFareyNeighbor.mediant_not_mem {n : ℕ} {x y : ℚ}
     (h : IsFareyNeighbor n x y) : mediant x y ∉ fareyFinset n := by
   intro hmem
   exact h.2.2.2 _ hmem (mediant_between x y h.2.2.1)
 
-/-- If the denominators of a Farey pair sum to `n + 1`, its mediant is a new
-member of the next Farey sequence. -/
+/-- **Mediants that enter the next Farey set.** Let $n$ be a natural number and let $x$ and $y$
+be Farey neighbors of order $n$ whose denominators in lowest terms sum to $n + 1$. Then the
+mediant of $x$ and $y$ belongs to the Farey set $F_{n+1}$ and does not belong to $F_n$. -/
 theorem IsFareyNeighbor.mediant_mem_succ {n : ℕ} {x y : ℚ}
     (h : IsFareyNeighbor n x y) (hsum : x.den + y.den = n + 1) :
     mediant x y ∈ fareyFinset (n + 1) ∧ mediant x y ∉ fareyFinset n :=
@@ -449,8 +452,10 @@ theorem IsFareyNeighbor.mediant_mem_succ {n : ℕ} {x y : ℚ}
 
 set_option maxHeartbeats 800000 in
 -- The successor proof combines extremal finite-set choices with integer normalization.
-/-- `F_(n+1)` is `F_n` together with the mediants of the Farey pairs whose
-denominators sum to `n + 1`. -/
+/-- **Mediants generate the next Farey set.** Let $n \ge 1$ be a natural number. A rational
+number $q$ belongs to the Farey set $F_{n+1}$ if and only if $q$ belongs to $F_n$, or there are
+Farey neighbors $x$ and $y$ of order $n$ whose denominators in lowest terms sum to $n + 1$ such
+that $q$ is the mediant of $x$ and $y$. -/
 theorem farey_succ_generation {n : ℕ} (hn : 0 < n) (q : ℚ) :
     q ∈ fareyFinset (n + 1) ↔
       q ∈ fareyFinset n ∨

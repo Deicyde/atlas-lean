@@ -18,7 +18,7 @@ vertices lies on the segment $[v_{i-2}, v_i]$.
 ## Depends on
 
 - [Convergent vectors of a continued fraction](convergent-vec.md)
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources

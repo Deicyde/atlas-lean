@@ -36,7 +36,7 @@ $\sum_{j \ge 0} -c_{j+1} x^{j+1} / (j + 1)!$ converges absolutely with sum $F(x)
 - [Ramanujan's extension agrees with the partial sums at natural numbers](chapter6-convergent-sum-extension-nat-ca.md)
 - [Difference equation for Ramanujan's extension](chapter6-convergent-sum-extension-sub-su.md)
 - [Taylor expansion of Ramanujan's extension at the origin](exists-has-sum-chapter6-entry6-term.md)
-- [Has Sum chapter6 Derived Series Constant](has-sum-chapter6-derived-series-constant.md)
+- [The derivative-series constant is the sum of its series](has-sum-chapter6-derived-series-constant.md)
 - [Derivatives of Ramanujan's extension at the origin](iterated-deriv-chapter6-convergent-sum-e.md)
 
 ## Sources

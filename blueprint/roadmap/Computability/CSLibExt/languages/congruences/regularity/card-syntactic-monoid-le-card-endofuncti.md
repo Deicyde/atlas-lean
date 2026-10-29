@@ -14,7 +14,7 @@ finite. Then that syntactic monoid has at most $|Q|^{|Q|}$ elements.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 

@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Ascent sequences](../../part-04/rascal-numbers-wanted/is-ascent-seq.md)
-- [Pattern containment](contains-pattern.md)
+- [Pattern containment in words](contains-pattern.md)
 
 ## Sources
 

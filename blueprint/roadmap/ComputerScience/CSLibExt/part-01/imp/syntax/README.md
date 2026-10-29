@@ -17,4 +17,4 @@ navigation: module
 
 ## BExp
 
-- [Eval](eval-2.md)
+- [Evaluation of IMP Boolean expressions](eval-2.md)

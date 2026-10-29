@@ -134,8 +134,12 @@ public theorem_wanted choose_mul_prime_modEq_choose_div (n p l : ℕ) (hp : p.Pr
     (n.choose (l * p) : ℤ) ≡ ((n / p).choose l : ℤ)
       [ZMOD (p : ℤ) ^ max (padicValNat p n) (padicValInt p ((n : ℤ) - l * p))]
 
-/-- If `b(n) ≥ 0` and `b(n+1) ≥ C b(n)` for all `n ≥ 1`, with a constant `C ≥ 1.221`, then
-`(μ * b)(n) ≥ 0` for every `n ≥ 1`.
+/-- **Möbius transforms of sequences growing by a factor of at least $1.221$ are nonnegative.**
+Let $b$ be a sequence of real numbers and $C \ge 1.221$ a real number such that $b(n) \ge 0$ and
+$b(n+1) \ge C\, b(n)$ for every $n \ge 1$. Then for every $n \ge 1$, with $\mu$ the Möbius
+function,
+$$\sum_{d \mid n} \mu(n/d)\, b(d) \ge 0,$$
+that is, the Dirichlet convolution $\mu * b$ is nonnegative at $n$.
 
 Source: Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer
 Sequences 27 (2024), Article 24.3.3, Lemma 28 (`jis-2024-24.3.3-lem-28`). -/

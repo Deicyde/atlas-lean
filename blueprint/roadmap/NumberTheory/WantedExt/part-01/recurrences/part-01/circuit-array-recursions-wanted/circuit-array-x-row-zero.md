@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayX_row_zero
 ---
 
-# Circuit Array X row zero
+# Row zero of the one-variable circuit array
 
-Corollary 4.4: the closed form (2.6) of row `0`, `C^X₀,ₛ = (3·9^{s-2}X - 1)/(3·9^{s-2}X)` for
-`s ≥ 1` (Table 2, row `0`), and numerically `C₀,ₛ = (9^s/3 - 1)/(9^s/3)`.
+**Row zero of the one-variable circuit array.** For every natural number $s \ge 1$, the
+one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
+over $\mathbb{Q}$, satisfies $C^X_{0,s} = (3 \cdot 9^{s-2} X - 1)/(3 \cdot 9^{s-2} X)$, with an
+integer exponent (so $9^{s-2} = 1/9$ when $s = 1$), and the circuit array $C$ satisfies
+$C_{0,s} = (9^s/3 - 1)/(9^s/3)$ in $\mathbb{Q}$.
 
 ## Depends on
 

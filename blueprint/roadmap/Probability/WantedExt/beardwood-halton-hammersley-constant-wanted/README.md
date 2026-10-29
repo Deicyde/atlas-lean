@@ -5,7 +5,7 @@ navigation: module
 
 # Beardwood Halton Hammersley Constant
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 - [Cyclic successor](cyclic-next.md)
 - [Length of a closed tour](tour-length.md)
 - [Shortest tour length](shortest-tour-length.md)

@@ -235,7 +235,16 @@ def iIn (xs : List (Fin L.g)) (T H : ℕ) : CNF :=
   (List.range xs.length).map fun j => denseClause (L.numVars T H)
     [(L.cIdx H 0 k0 j ((xs[j]?).elim 0 Fin.val), true)]
 
-/-- (I4) Certificate depths `n ≤ j < m`: `⊥` or one of the codes `ycs` (sorted, distinct). -/
+/-- **Certificate clauses of the initial row (I4).** Let $L$ be a layout with label block size
+$A$, $K$ stacks and $g$ symbol codes, let $k_0$ be a stack, let $y = (y_1, \dots, y_r)$ be a list
+of natural numbers and let $n, m, T, H$ be natural numbers. For a depth $j$ and a code $x$ write
+$C_{j,x} = A + (k_0 H + j)g + x$ for the row-$0$ variable saying that stack $k_0$ holds code $x$
+at depth $j$. This is the CNF over $V = (T + 1)(A + KHg)$ variables that has, for
+$i = 0, 1, \dots, m - n - 1$ in order (no clauses if $m \le n$), the dense clause over $V$
+variables whose literals are the positive literals of the variables $C_{n+i,0}$, $C_{n+i,y_1}$,
+$\dots$, $C_{n+i,y_r}$: the cell at depth $n + i$ is empty or holds one of the codes in $y$.
+
+In use, $y$ lists the certificate codes, sorted and distinct. -/
 def iCert (n m T H : ℕ) : CNF :=
   (List.range (m - n)).map fun i => denseClause (L.numVars T H)
     ((zB L k0 H (n + i), true) :: ycs.map fun c => (L.cIdx H 0 k0 (n + i) c, true))
@@ -261,7 +270,14 @@ variables whose only literal is the positive literal of variable $z_{m+i}$. -/
 def iTail (m T H : ℕ) : CNF :=
   (List.range (H - m)).map fun i => denseClause (L.numVars T H) [(zB L k0 H (m + i), true)]
 
-/-- **The init family** (layout level). -/
+/-- **The init family.** Let $L$ be a layout, let $i_c$ be a label/state code, let $k_0$ be a
+stack, let $y$ be a list of natural numbers, let $x$ be a list of symbol codes of $L$ of length
+$\ell$, and let $m, T, H$ be natural numbers. The init family is the CNF formula obtained by
+concatenating, in this order: the start-code clause of the initial row for $i_c$, $T$, $H$ (I1);
+the row-$0$ clauses for the stacks other than $k_0$ for $T$, $H$ (I2); the input clauses of the
+initial row for $k_0$, $x$, $T$, $H$ (I3); the certificate clauses of the initial row for $k_0$,
+$y$, $n = \ell$, $m$, $T$, $H$ (I4); the row-$0$ prefix clauses for $k_0$, $n = \ell$, $m$, $T$,
+$H$ (I5); and the row-$0$ tail clauses for $k_0$, $m$, $T$, $H$ (I6). -/
 def initFam (xs : List (Fin L.g)) (m T H : ℕ) : CNF :=
   iCode L ic T H ++ iOther L k0 T H ++ iIn L k0 xs T H ++ iCert L k0 ycs xs.length m T H ++
     iPre L k0 xs.length m T H ++ iTail L k0 m T H
@@ -409,12 +425,12 @@ inductive PS2
   | t1 | t2 | t3 | t4 | nK | n (s : MS) | nD | qK | q (s : MS) | qD
   deriving DecidableEq, Fintype
 
-/-- **Stages of the literal routine.** The stages of the generator's routine that emits one
-literal of a clause: two stages copying the clause base into a target counter, a stage adding the
-literal's offset to the target, a stage decrementing the position counter, a stage comparing the
-position with the target, two restore stages for each comparison outcome (less, equal or
-greater), a stage emitting one empty slot, a halting error stage, a stage emitting the literal's
-slot, and a stage draining the target counter. -/
+/-- **Stages of the literal routine (initial-row generator).** The stages of the generator's
+routine that emits one literal of a clause: two stages copying the clause base into a target
+counter, a stage adding the literal's offset to the target, a stage decrementing the position
+counter, a stage comparing the position with the target, two restore stages for each comparison
+outcome (less, equal or greater), a stage emitting one empty slot, a halting error stage, a stage
+emitting the literal's slot, and a stage draining the target counter. -/
 inductive LS
   | cp1 | cp2 | eo | dec | cmp | r (o : Ordering) | rB (o : Ordering) | emL | bad | slot | dq
   deriving DecidableEq, Fintype
@@ -496,9 +512,9 @@ section Machine
 
 variable (L : Layout) (ic k0 : ℕ) (ycs : List ℕ)
 
-/-- **Labels of the initial-row generator.** For a layout $L$ and a list $y$ of certificate
-codes, the label type of the generator is the finite label type with parameters $g$, the number
-of symbol codes of $L$, and $n$, the length of $y$. -/
+/-- **Labels of the initial-row generator for a layout.** For a layout $L$ and a list $y$ of
+certificate codes, the label type of the generator is the type of labels of the initial-row
+generator with parameters $g$, the number of symbol codes of $L$, and $n$, the length of $y$. -/
 abbrev Lb := GL L.g ycs.length
 
 /-- **The literal routine of the initial-row generator.** For a clause kind $c$ and a literal
@@ -525,7 +541,46 @@ def litP (c : CL L.g ycs.length) (l : Fin (ycs.length + 2)) : LS → TM2.Stmt (S
   | .slot => emitR .out (encodeSlot (some (c.sg l))) (.lit c l .dq)
   | .dq => xfer (.c .Q) [] (.lit c l .dq) (GL.after c l)
 
-/-- The counter part of the generator (the read tests `rd i` halt here). -/
+/-- **The counter part of the initial-row generator.** Let $L$ be a layout with label block size
+$A$, $K$ stacks and $g$ symbol codes, let $i_c$ and $k_0$ be natural numbers and let $y$ be a list
+of $n$ certificate codes. The counter part assigns to each label of the initial-row generator for
+$g$ and $n$ a statement of the counter machine with the generator's counters and a Boolean flag,
+as follows. Every pop sets the flag to whether a unit was popped, and pushes leave it unchanged.
+Below, to copy $a$ into $b$ is to use two labels, the first moving $a$ unit by unit into both $b$
+and the scratch counter tmp and the second moving tmp back into $a$; to multiply $a \cdot b$ into
+$c$ is to run the multiplication routine adding $a \cdot b$ to $c$ with loop index md and scratch
+tmp; to add $j$ to $a$ is to prepend $j$ units to $a$ in one step; and to drain $a$ is to empty
+it one unit per step.
+
+The first precomputation part adds $g$ to Gc; copies Xn into Mm, En into Mm, Mm into Hs and Fn
+into Hs; multiplies Hs $\cdot$ Gc into HG; adds $A$ to Wc and $K$ to KA; multiplies KA $\cdot$ HG
+into Wc and drains KA; increments Tn; and multiplies Tn $\cdot$ Wc into Vc. The second part adds
+$A$ to ZA and $k_0$ to KA, multiplies KA $\cdot$ HG into ZA and drains KA; copies ZA into Z45 and
+multiplies Xn $\cdot$ Gc into Z45; copies ZA into Z6 and multiplies Mm $\cdot$ Gc into Z6; adds
+$A$ to Z1; copies ZA into Z2 and HG into Z2; adds $k_0$ to KA, multiplies KA $\cdot$ Hs into N1
+and drains KA; adds $K - k_0 - 1$ (truncated subtraction) to KA, multiplies KA $\cdot$ Hs into N2,
+drains KA and goes to the loop head of the tail phase.
+
+For a loop phase $p$ with loop-count counter $N_p$ and base counter $Z_p$, the loop head pops
+$N_p$; if a unit was popped it pushes a unit onto Id and goes to the body, otherwise it goes to
+the counter-reset label, which moves Id back into $N_p$ and goes to the label after the loop of
+$p$. The body, made of the base-copy and multiplication labels of $p$, copies $Z_p$ into CB,
+multiplies $N_p \cdot$ Gc into CB and goes to the clause-start label of the clause of phase $p$;
+the base-drain label of $p$ drains CB and goes to the loop head of $p$. The head of the input
+loop pops Xn and goes to the loop head of the phase for the stacks $k > k_0$ if Xn was empty;
+otherwise its base-copy and multiplication labels copy ZA into CB, multiply Xn $\cdot$ Gc into CB
+and go to the first read test, or to the error label if $g = 0$. The base-drain label of the
+input loop drains CB and goes to the head of the input loop. The read tests, the error label and
+the final label halt.
+
+For a clause kind $c$, the clause-start label prepends $00$ to the output; the two labels copying
+the variable count then copy Vc into $P$ and go to the label after the literal routine for $c$ and
+$\mathrm{nl}(c)$, the number of literals of $c$; the labels of literal $l$ of $c$ run the literal
+routine of $c$ for $l$; and the leading-gap label of $c$ drains $P$, prepending $01$ to the output
+for each unit, and then goes to the label after $c$.
+
+The read tests $\mathrm{rd}(i)$ halt here; the generator replaces them by tests on its input
+stack. -/
 def prog : Lb L ycs → TM2.Stmt (SΓ CK) (Lb L ycs) Bool
   | .pre1 .eg => emitR (.c .Gc) (List.replicate L.g ()) (.pre1 .cpM1)
   | .pre1 .cpM1 => xfer (.c .Xn) [⟨.c .Mm, ()⟩, ⟨.c .tmp, ()⟩] (.pre1 .cpM1) (.pre1 .cpM2)
@@ -584,7 +639,15 @@ def prog : Lb L ycs → TM2.Stmt (SΓ CK) (Lb L ycs) Bool
   | .fin c => xferE (.c .P) .out [false, true] (.fin c) (GL.nextC c)
   | .done => .halt
 
-/-- **The generator**: the counter part lifted, plus the read tests on the input stack. -/
+/-- **The initial-row generator.** Let $L$ be a layout with $g$ symbol codes, let $i_c$ and $k_0$
+be natural numbers and let $y$ be a list of certificate codes. The generator assigns to each label
+of the initial-row generator for $L$ and $y$ a machine statement with a Boolean flag on the stacks
+of the counter machine with the generator's counters plus an input stack of codes below $g$, as
+follows. At the read test label $\mathrm{rd}(i)$ for a code $i < g$, it is the read test for code
+$i$ that goes on success to the clause-start label of the input clause with code $i$ and on
+failure to the label after a failed read test for $i$. At every other label, it is the statement
+of the counter part of the generator for $L$, $i_c$, $k_0$, $y$ at that label, translated along
+the embedding of the counter stacks into the generator's stacks, with labels unchanged. -/
 def iprog : Lb L ycs → TM2.Stmt (IΓ CK (Fin L.g)) (Lb L ycs) Bool
   | .rd i => rdS (fun c => .e00 (.inp c)) GL.miss i
   | l => mapS liftE id (prog L ic k0 ycs l)
@@ -832,7 +895,18 @@ theorem lits_run {V B : ℕ} {c : CL L.g ycs.length} (hc : WF ic L.g ycs c)
       unfold litE
       omega
 
-/-- One whole clause: from `e00 c` to `nextC c`, all counters restored. -/
+/-- **Run of one clause (initial-row generator).** Let $L$ be a layout with $g$ symbol codes, let
+$i_c$ and $k_0$ be natural numbers and let $y$ be a list of $n$ certificate codes. Let $c$ be a
+clause kind for $g$ and $n$ that is well formed for $i_c$, $g$ and $y$, and let $V, B$ be natural
+numbers such that all literals of $c$ at base $B$ (for $i_c$, $g$ and $y$) are in range below $V$.
+Let $F$ be counter values of the generator with empty scratch counters such that $F(b) = B$ for
+the base counter $b$ of $c$, $F(\mathrm{Vc}) = V$ and $F(P) = 0$. Then for every output $o$ and
+flag $v$, the counter part of the generator for $L$, $i_c$, $k_0$, $y$ runs within the step bound
+$\mathrm{clauseB}(n + 2, V)$ for one clause from the clause-start label of $c$, with flag $v$,
+counters $F$ and output $o$, to the label after $c$, with flag false, counters $F$ and output
+$w \cdot o$, where $w$ is the dense encoding of the dense clause over $V$ variables built from the
+literal list of $c$ at base $B$ (for $i_c$, $g$ and $y$).
+-/
 theorem clause_run {V B : ℕ} {c : CL L.g ycs.length} (hc : WF ic L.g ycs c)
     (hBV : InR ic L.g ycs V B c) (F : CK → ℕ) (hF : Rest F) (hB : F c.bc = B) (hV : F .Vc = V)
     (hP : F .P = 0) (o : List Bool) (v : Bool) :
@@ -1376,7 +1450,14 @@ def preB (L : Layout) (k0 q T n e f : ℕ) : ℕ :=
     (q * (2 * (n + e + f) + 3) + q + 2) + (q + 1)
 
 set_option maxHeartbeats 1600000 in
-/-- The precomputation: from the input counters to `preF`, at the first loop. -/
+/-- **Run of the precomputation (initial-row generator).** Let $L$ be a layout with $K$ stacks,
+let $i_c$ and $k_0$ be natural numbers and let $y$ be a list of certificate codes. For all natural
+numbers $T, n, e, f$ and every output $o$, the counter part of the generator for $L$, $i_c$,
+$k_0$, $y$ runs within $\mathrm{preB}(L, k_0, K - k_0 - 1, T, n, e, f)$ steps, the step bound for
+the precomputation (with truncated subtraction), from the label $\mathrm{eg}$ of the first
+precomputation part (its first stage), with flag false, the initial counters for $T, n, e, f$ and
+output $o$, to the loop head of the tail phase, with flag false, the counters after the
+precomputation for $L, k_0, T, n, e, f$ and output $o$. -/
 theorem pre_run (T n e f : ℕ) (o : List Bool) :
     RunLe (prog L ic k0 ycs) (preB L k0 (L.KK - k0 - 1) T n e f)
       ⟨some (.pre1 .eg), false, st (initF T n e f) o⟩
@@ -1689,8 +1770,13 @@ theorem initBound_mono {L L' : Layout} {nY nY' k0 k0' q q' T T' n n' e e' f f' :
   unfold initBound preB loopB bodyB clauseB litE Layout.numVars Layout.rowW
   gcongr
 
-/-- With all constants `k ≥ 1` and `T = n = e = f = y ≥ 1`, every monomial is at most `k⁵ y⁵`; the
-coefficients sum to `initBound (uni 1) 1 1 1 1 1 1 1 = 18928`. -/
+/-- **Time bound of the init generator at uniform parameters.** For all natural numbers $k \ge 1$
+and $y \ge 1$, let $L$ be the uniform layout with all four parameters equal to $k$. Then the time
+bound of the init generator for $L$ with $n_Y = k_0 = q = k$ and $T = n = e = f = y$ is at most
+$18928\,k^5 y^5$.
+
+Every monomial of the bound is then at most $k^5 y^5$, and $18928$ is the value of the bound at
+$k = y = 1$. -/
 theorem initBound_uni (k y : ℕ) (hk : 1 ≤ k) (hy : 1 ≤ y) :
     initBound (Cslib.Complexity.CookLevin.Family.Layout.uni k) k k k y y y y ≤ 18928 * k ^ 5 * y ^ 5 := by
   have m : ∀ a b, a ≤ 5 → b ≤ 5 → k ^ a * y ^ b ≤ k ^ 5 * y ^ 5 := fun a b ha hb =>

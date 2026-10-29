@@ -24,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pattern containment](contains-pattern-seq.md)
+- [Classical pattern containment in a sequence](contains-pattern-seq.md)
 - [Sequences with the same relative order](same-relative-order.md)
 - [Restricted stack-sorting from a given stack](restricted-stack-sort-aux.md)
 

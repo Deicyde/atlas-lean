@@ -6,18 +6,27 @@ statement: formalized
 lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.FiniteTimeSingularity.theorem_1
 ---
 
-# Theorem 1
+# Elgindi's theorem: finite-time singularity of $C^{1,\alpha}$ Euler flows
 
-Statement of Theorem 1:
+**Elgindi's theorem: finite-time singularity of $C^{1,\alpha}$ Euler flows.** There exist a
+real number $\alpha > 0$ and a vector field $u_0 : \mathbb{R}^3 \to \mathbb{R}^3$ that is odd,
+has divergence $0$ at every point and lies in $C^{1,\alpha}(\mathbb{R}^3)$, together with a
+constant $C > 0$ such that its vorticity satisfies
+$|(\nabla \times u_0)(x)| \le C / (|x|^\alpha + 1)$ for every $x \in \mathbb{R}^3$, and there
+exist functions $p : \mathbb{R}^3 \times \mathbb{R} \to \mathbb{R}$ and
+$u : \mathbb{R}^3 \times \mathbb{R} \to \mathbb{R}^3$ such that $u(\cdot, t)$ is odd for every
+$t \in [0, 1)$, $u$ is a local solution of the incompressible Euler equations up to time $1$
+with pressure $p$ and initial data $u_0$, $u$ lies in $C^{1,\alpha}(\mathbb{R}^3 \times [0, T])$
+as a function of $(x, t)$ for every $T \in (0, 1)$, and
 
-There exist an `α > 0` and a divergence-free and odd `u₀ ∈ C^{1,α}(ℝ³)` with initial vorticity
-`‖∇ × u₀‖ ≤ C/(‖x‖^α + 1)` for some constant `C > 0` so that the unique local odd solution to
-(1.1)-(1.3) belonging to the class `C^{1,α}(ℝ³ × [0,1))` satisfies
+$$\int_0^t \sup_{x \in \mathbb{R}^3} |(\nabla \times u(\cdot, s))(x)| \, ds \to +\infty$$
 
-`lim_{t → 1⁻} ∫ s ∈ [0,t], ‖(∇ × u)(·, s)‖_{L∞} ds = +∞`.
+as $t \to 1^-$. Here $|\cdot|$ is the Euclidean norm, differentiability is over $\mathbb{R}$, and
+$\mathbb{R}^3 \times \mathbb{R}$ carries the norm $\max(|x|, |t|)$.
 
-Note: As mentioned in the paper, uniqueness of solutions up until any time `T` (when they exist)
-was already known, so the formal statement only asks for existence.
+Elgindi states the conclusion for the unique local odd solution in this class. Uniqueness of
+solutions up to any time $T$ at which they exist was already known, so only existence is
+asserted here.
 
 ## Depends on
 

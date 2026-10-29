@@ -28,7 +28,7 @@ $\Gamma$.
 
 - [Context lookup](../typing/lookup.md)
 - [The let rule under a type substitution](let-subst-ty.md)
-- [Substitution lemma](../typing/subst-2.md)
+- [Hindley–Milner typing is stable under type substitution](../typing/subst-2.md)
 - [Type schemes](../typing/scheme.md)
 - [Bound-variable supremum of a type scheme](bound-sup.md)
 - [Instantiation of a type scheme](../typing/inst.md)
@@ -36,7 +36,7 @@ $\Gamma$.
 - [Generalization of a monotype](../typing/gen.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
 - [Lists of equations](../../../../part-02/unification/basic/equations.md)
-- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Composition of substitutions on first-order terms](../../../../part-02/unification/basic/comp.md)
 - [Terms for unification](../../../../part-02/unification/basic/term.md)
 - [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 - [Unifier of a list of equations](../../../../part-02/unification/basic/unifies.md)

@@ -14,7 +14,7 @@ $\#U_n$ is the number of Ulam words of length $n$.
 
 ## Depends on
 
-- [Ulam Word Count](ulam-word-count.md)
+- [Number of Ulam words of a given length](ulam-word-count.md)
 
 ## Sources
 

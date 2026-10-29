@@ -26,8 +26,8 @@ $k \ge 1$, and a sum over an empty range is $0$. For $r = 0$ both sides are $0$.
 
 ## Proof depends on
 
-- [A ge](a-ge.md)
-- [A succ](a-succ.md)
+- [The tripling sequence never drops below its starting value](a-ge.md)
+- [Recurrence of the tripling sequence](a-succ.md)
 - [Starting value of the tripling sequence](a-zero.md)
 
 ## Sources

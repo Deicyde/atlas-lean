@@ -28,8 +28,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Det of mul](det-of-mul.md)
-- [Exists Unique has Deriv At eq continuous Linear Map](exists-unique-has-deriv-at-eq-continuous.md)
+- [Jacobi's formula when the derivative is a left multiple of the matrix](det-of-mul.md)
+- [Global existence and uniqueness for homogeneous linear ODEs](exists-unique-has-deriv-at-eq-continuous.md)
 
 ## Sources
 

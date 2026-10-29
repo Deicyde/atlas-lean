@@ -19,7 +19,7 @@ $[U]_n \le 2^n [M]_n$ and $[BU]_n \le 2^n [BM]_n$.
 ## Depends on
 
 - [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
-- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Non-degenerate Boolean functions](is-nondegenerate-bool-fun.md)
 - [Unate Boolean function](is-unate-bool-fun.md)
 - [Number of classes of Boolean functions](bool-fun-class-count.md)
 - [Weight of a Boolean function](bool-fun-weight.md)

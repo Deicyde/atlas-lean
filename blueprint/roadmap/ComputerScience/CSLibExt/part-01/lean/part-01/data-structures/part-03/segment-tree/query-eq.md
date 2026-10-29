@@ -17,7 +17,7 @@ $\min(r, n) \le l$.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Range query on a segment tree](query.md)
 - [Leaf list of a segment tree](to-list.md)

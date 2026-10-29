@@ -25,7 +25,7 @@ lean: Cslib.Decidability.SingleTapeDecidable.of_computablePred
 - [Recovering a word from its input code](reverse-tail-encode-nat-input-code.md)
 - [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 - [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
-- [Fwd TM](../../../../../MathlibExt/turing-machine/recursive/to-tm2/fwd-tm.md)
+- [The wrapped machine of a code](../../../../../MathlibExt/turing-machine/recursive/to-tm2/fwd-tm.md)
 - [The wrapped machine computes the function a code evaluates](../../../../../MathlibExt/turing-machine/recursive/to-tm2/tm2-computable-of-code.md)
 
 ## Sources

@@ -523,10 +523,10 @@ theorem gen_subst_moreGeneral (Γ : Ctx B) (τ : Ty B) (s : Subst B) :
       subst hzy
       exact absurd (lt_above hz₂) (by omega)
 
-/-- **Substitution lemma.** Let $\Gamma$ be a typing context, $e$ an expression and $\tau$ a
-monotype with $\Gamma \vdash e : \tau$. Then for every type substitution $s$,
-$s\Gamma \vdash e : s\tau$, where $s\Gamma$ applies $s$ to every scheme of $\Gamma$ and $s\tau$
-applies $s$ to $\tau$. -/
+/-- **Hindley–Milner typing is stable under type substitution.** Let $\Gamma$ be a typing
+context, $e$ an expression and $\tau$ a monotype with $\Gamma \vdash e : \tau$. Then for every
+type substitution $s$, $s\Gamma \vdash e : s\tau$, where $s\Gamma$ applies $s$ to every scheme of
+$\Gamma$ and $s\tau$ applies $s$ to $\tau$. -/
 theorem HasType.subst {Γ : Ctx B} {e : Expr} {τ : Ty B} (hτ : HasType Γ e τ) :
     ∀ s : Subst B, HasType (Γ.subst s) e (τ.subst s) := by
   induction hτ with

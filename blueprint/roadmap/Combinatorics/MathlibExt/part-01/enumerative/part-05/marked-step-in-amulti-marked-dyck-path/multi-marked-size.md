@@ -18,7 +18,7 @@ $E$ in $s$ and the sum runs over all occurrences of marked steps $N^*_t$ in $s$.
 
 ## Proof depends on
 
-- [Number of horizontal steps](multi-marked-count-e.md)
+- [Number of horizontal steps in a multi-marked step sequence](multi-marked-count-e.md)
 - [Shifted index sum of a multi-marked step sequence](multi-marked-shifted-index-sum.md)
 
 ## Sources

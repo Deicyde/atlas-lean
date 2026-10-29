@@ -16,7 +16,7 @@ $$F_{j(n+1)} = \frac{F_j}{L_k} \sum_{i=0}^{n}
 
 ## Depends on
 
-- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Fibonacci numbers extended to negative indices](fib-at-int.md)
 - [Lucas numbers at integer indices](lucas-at-int.md)
 
 ## Sources

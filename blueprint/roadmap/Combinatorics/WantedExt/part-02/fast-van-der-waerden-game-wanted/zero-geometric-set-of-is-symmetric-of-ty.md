@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_of_isSymmetricOfType
 ---
 
-# Zero Geometric Set of is Symmetric Of Type
+# Zero-geometric copies of symmetric sets
 
-If `S` is symmetric of (one-based) type `(2, n)` (resp. `(1, n - 1)`), then
-`S₂(n, k)` is a copy (resp. reflection) of `S` for some rational `k > 1`.
+**Zero-geometric copies of symmetric sets.** Let $S = \{s_0 < s_1 < \dots < s_{n-1}\}$ be a
+finite set of $n$ rational numbers, and let $i, j < n$ be such that $S$ is symmetric of type
+$(i, j)$, with positions counted from $0$. If $i = 1$ and $j = n - 1$, then there is a rational
+number $k > 1$ such that the zero-geometric set $S_2(n, k)$ is a copy of $S$. If $i = 0$ and
+$j = n - 2$, then there is a rational number $k > 1$ such that $S_2(n, k)$ is a reflection of $S$.
+
+In the paper's one-based numbering these are the types $(2, n)$ and $(1, n - 1)$.
 
 ## Depends on
 

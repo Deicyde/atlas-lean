@@ -21,7 +21,7 @@ $\sigma$ gives the same term as applying the substitution $\sigma \circ \rho$ to
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](../syntax/lift-ren.md)
 - [Lifting a substitution under a binder](../syntax/lift-sub.md)
 - [Substitution respects pointwise equality](subst-congr.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)

@@ -44,7 +44,7 @@ witnesses no longer than the input suffice.
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [SAT as a decision problem](../../cook-levin/sat-dec.md)
 - [The SAT verifier](../../sat-time-m/sat-verifier.md)
-- [Sat Verifier verifies](../../sat-time-m/sat-verifier-verifies.md)
+- [The SAT verifier verifies SAT](../../sat-time-m/sat-verifier-verifies.md)
 - [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfiability of a CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)

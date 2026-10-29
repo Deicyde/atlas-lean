@@ -17,7 +17,7 @@ sides).
 ## Depends on
 
 - [Reachability by unit productions](unit-steps.md)
-- [Nonterminals mentioned by a grammar](grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](grammar-nts.md)
 
 ## Proof depends on
 

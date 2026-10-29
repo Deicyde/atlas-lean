@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.IMP.HSteps.store_agree
 ---
 
-# Store agree
+# Heap executions only change assignable variables
 
-An execution does not change variables outside the command's
-modified set.
+**Heap executions only change assignable variables.** If a heap configuration $(c, s, h)$
+reaches a heap configuration $(c', s', h')$ in zero or more heap steps, then $s'(x) = s(x)$ for
+every variable $x$ outside the set of variables that $c$ may assign to.
 
 ## Depends on
 

@@ -16,7 +16,7 @@ $(i, k)$ equals the entry $(AB)_{ik}$ of the matrix product.
 
 ## Depends on
 
-- [Matrix Multiplication Tensor Contraction](matrix-multiplication-tensor-contraction.md)
+- [Matrix multiplication tensor contraction](matrix-multiplication-tensor-contraction.md)
 
 ## Proof depends on
 

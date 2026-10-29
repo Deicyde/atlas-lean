@@ -17,7 +17,7 @@ $\varphi$.
 ## Depends on
 
 - [Fresh variable indices](../three-sat/fresh.md)
-- [Fresh Val](fresh-val.md)
+- [Values of the fresh variables in the 3SAT translation](fresh-val.md)
 - [Lifting an assignment to the 3SAT translation](lift.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 

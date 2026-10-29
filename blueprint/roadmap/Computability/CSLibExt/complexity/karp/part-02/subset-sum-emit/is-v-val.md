@@ -13,7 +13,7 @@ SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, re
 
 ## Depends on
 
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources

@@ -18,7 +18,7 @@ $g$ by eliminating unit productions.
 
 - [Unit output](is-unit-output.md)
 - [Reachability by unit productions](unit-steps.md)
-- [Nonterminals mentioned by a grammar](grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](grammar-nts.md)
 - [Eliminating unit productions](unit-grammar.md)
 
 ## Proof depends on

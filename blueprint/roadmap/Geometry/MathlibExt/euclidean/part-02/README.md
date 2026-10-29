@@ -12,7 +12,7 @@ navigation: transparent
 - [Miquel's theorem](miquel-theorem.md)
 - [Monge Circles](monge-circles/README.md)
 - [Napoleon Theorem](napoleon-theorem/README.md)
-- [Pascal's theorem](pascal-theorem.md)
+- [Pascal's theorem in an affine plane](pascal-theorem.md)
 - [Pizza theorem](pizza-theorem.md)
 - [Pompeiu](pompeiu/README.md)
 - [Ropelength](ropelength/README.md)

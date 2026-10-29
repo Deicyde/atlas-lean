@@ -27,11 +27,11 @@ reached in round $m + 1$ and $i$ is among the left vertices reached within $m$ r
 
 - [Alternating path](alt-path.md)
 - [Unmatched left vertex](free.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Characterization of the first free round](first-free-round-eq-some.md)
 - [Phases use shortest augmenting paths](length-of-mem-phase.md)
 - [The start of an alternating chain of $L$ pairs is reached within $L$ rounds](mem-layers-length.md)
-- [Pair levels of chain](pair-levels-of-chain.md)
+- [Levels along a shortest alternating chain](pair-levels-of-chain.md)
 - [Phase search over candidates](phase-aux.md)
 - [Phase paths are disjoint augmenting paths](phase-aux-spec.md)
 

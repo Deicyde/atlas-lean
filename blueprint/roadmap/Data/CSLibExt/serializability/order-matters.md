@@ -17,7 +17,7 @@ conflict-equivalent schedule must keep.
 
 ## Proof depends on
 
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ expansion of $1$ has the digit $1$ at position $0$.
 
 - [Digit block of an expansion](has-digit-block.md)
 - [Base phi expansion](is-base-phi-expansion.md)
-- [Is Base Phi Expansion one](is-base-phi-expansion-one.md)
+- [Base phi expansion of one](is-base-phi-expansion-one.md)
 
 ## Sources
 

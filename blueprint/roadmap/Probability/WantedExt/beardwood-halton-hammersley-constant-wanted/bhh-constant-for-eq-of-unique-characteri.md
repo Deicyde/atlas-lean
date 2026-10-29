@@ -18,7 +18,7 @@ The hypothesis excludes the case with no BHH limit, where the infimum is $0$ by 
 ## Depends on
 
 - [BHH constant of a law](is-bhhconstant-for.md)
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 - [BHH constant of a sampling law](bhh-constant-for.md)
 
 ## Proof depends on

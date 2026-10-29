@@ -24,7 +24,7 @@ pair $(i, j)$ together with the adjacency bit of $\{i, j\}$ in $b$.
 
 - [Lookup in a list of pairs with distinct keys](lookup-of-mem.md)
 - [Membership in the vertex pairs](../clique-correct/mem-pairs.md)
-- [Pairs nodup](../clique-correct/pairs-nodup.md)
+- [The vertex pairs are listed without repetition](../clique-correct/pairs-nodup.md)
 
 ## Sources
 

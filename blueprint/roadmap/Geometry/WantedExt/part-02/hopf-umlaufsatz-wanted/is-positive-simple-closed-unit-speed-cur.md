@@ -16,7 +16,7 @@ $\det(u, v) = u_0 v_1 - u_1 v_0$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for the Umlaufsatz](plane.md)
 
 ## Sources
 

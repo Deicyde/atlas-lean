@@ -27,13 +27,13 @@ first $|r|$ bits dropped.
 - [Modes of the clique verifier](mode.md)
 - [Vertices that settle their pairs alone](free.md)
 - [The pair condition left to the later vertex](sat.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Walk Row run](walk-row-run.md)
+- [Walking the pairs of one row of the clique verifier](walk-row-run.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

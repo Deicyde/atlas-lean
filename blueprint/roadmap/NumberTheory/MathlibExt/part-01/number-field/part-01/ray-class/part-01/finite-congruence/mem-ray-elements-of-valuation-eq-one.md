@@ -7,15 +7,14 @@ proof: formalized
 lean: NumberField.Modulus.mem_rayElements_of_valuation_eq_one
 ---
 
-# Mem ray Elements of valuation eq one
+# Elements of valuation one at the primes dividing a modulus are ray elements
 
-Valuation-one criterion for ray elements: if the normalized valuation of `a`
-is one at every finite prime supported by `m`, then the principal fractional
-ideal `(a)` has count zero at each such prime, so `a ∈ rayElements m`.
-
-This is the converse of `rayElement_valuation_eq_one`: the converse valuation
-criterion used to turn the controlled approximation witness into a ray element.
-It is a reusable bridge toward N406, not itself the full source theorem.
+**Elements of valuation one at the primes dividing a modulus are ray elements.** Let $K$ be a
+number field, $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, and
+$a \in K^\times$. If the multiplicative $\mathfrak p$-adic valuation of $a$ equals $1$ at every
+nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$, then $a$ is
+coprime to $\mathfrak m$, that is, a ray element of $\mathfrak m$: its principal fractional ideal
+$(a)$ has exponent $0$ at every such $\mathfrak p$.
 
 ## Depends on
 
@@ -29,3 +28,4 @@ It is a reusable bridge toward N406, not itself the full source theorem.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)
+- N406 Section 21.3. This is the converse of `rayElement_valuation_eq_one`, the converse valuation criterion used to turn the controlled approximation witness into a ray element; it is a reusable bridge toward N406, not itself the full source theorem.

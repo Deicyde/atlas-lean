@@ -14,7 +14,7 @@ OR-output counter $R$, and every other site copies the next-vertex counter $N$.
 ## Depends on
 
 - [Copy sites of the 3-COLOR emitter](site.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.IsTrail
 ---
 
-# Is Trail
+# Indexed trail
 
-An indexed walk is a trail when it uses no edge identity twice.
+**Indexed trail.** An indexed walk $p$ in an edge-indexed multigraph is a trail when its edge
+list has no repeated entries, that is, $p$ traverses each edge of the multigraph at most once.
 
 ## Depends on
 

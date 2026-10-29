@@ -16,7 +16,7 @@ or there is a vertex $w$ with $u$ adjacent to $w$ and $w$ adjacent to $v$ in $G$
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Proof depends on
 

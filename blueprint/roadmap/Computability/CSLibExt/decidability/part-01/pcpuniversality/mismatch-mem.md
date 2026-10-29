@@ -37,7 +37,7 @@ derivable from $A$ in the universality grammar of $P$.
 - [A word that does not start with $w$ leaves $w$ at some position](exists-mismatch-of-not-prefix.md)
 - [Evaluating a form with one nonterminal](mem-eval-form-one.md)
 - [Evaluating a form with two nonterminals](mem-eval-form-two.md)
-- [The mismatch productions](mem-mismatch-rules.md)
+- [Membership in the mismatch productions](mem-mismatch-rules.md)
 - [The letters other than a given letter](others.md)
 - [Encoded bit terminal](u-bit.md)
 - [Encoded letter terminal](u-letter.md)

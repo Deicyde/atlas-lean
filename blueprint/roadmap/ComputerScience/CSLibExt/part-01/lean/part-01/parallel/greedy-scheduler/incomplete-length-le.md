@@ -15,7 +15,7 @@ of the steps $t < T$ are incomplete, that is, run fewer than $p$ tasks.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 - [Greedy schedule](greedy.md)
 - [Number of incomplete steps](incomplete.md)
 - [Length of a schedule](../brent/length.md)

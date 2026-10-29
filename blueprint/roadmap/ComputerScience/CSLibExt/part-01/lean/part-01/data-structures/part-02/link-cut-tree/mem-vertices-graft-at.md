@@ -17,7 +17,7 @@ a vertex of $C$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Grafting a tree below a vertex](graft-at.md)
 
 ## Proof depends on

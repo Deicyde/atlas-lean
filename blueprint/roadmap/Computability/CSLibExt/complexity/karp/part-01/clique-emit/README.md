@@ -14,7 +14,7 @@ navigation: module
 
 ## The bits pushed by the walk
 
-- [D Tok](d-tok.md)
+- [Polarity-first tokens of a literal](d-tok.md)
 - [Tokens of an item on the walked stack](item-tok.md)
 - [Bits pushed by a walk of the CLIQUE emitter](walk-bits.md)
 - [Walked items of a formula](items.md)

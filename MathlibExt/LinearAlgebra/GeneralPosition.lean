@@ -72,8 +72,11 @@ end Affine
 
 namespace Projectivization
 
-/-- An indexed family of projective points is in general position through dimension `d` if every
-subfamily of at most `d + 1` points is projectively independent. -/
+/-- **General position of projective points.** Let $k$ be a division ring and $V$ a vector space
+over $k$, with projective space $\mathbb{P}(V)$. A family $(p_i)_{i \in \iota}$ of points of
+$\mathbb{P}(V)$ is in general position through dimension $d \in \mathbb{N}$ if for every finite set
+$S \subseteq \iota$ of at most $d + 1$ indices, the subfamily $(p_i)_{i \in S}$ is projectively
+independent. -/
 def IsGeneralPosition {k : Type u} [DivisionRing k] {V : Type v} [AddCommGroup V] [Module k V]
     {ι : Type*} (d : ℕ) (p : ι → ℙ k V) : Prop :=
   ∀ s : Finset ι, s.card ≤ d + 1 → Independent (s.restrict p)
@@ -91,7 +94,10 @@ theorem Independent.isGeneralPosition {p : ι → ℙ k V} (hp : Independent p) 
   simpa [Finset.restrict_def, Function.comp_def] using
     hp.comp (fun i : s ↦ (i : ι)) Subtype.val_injective
 
-/-- General position through a larger dimension implies general position through a smaller one. -/
+/-- **General position in projective space is monotone in the dimension.** Let $d \le e$ be
+natural numbers. If a family of points of the projective space $\mathbb{P}(V)$ of a vector space
+$V$ over a division ring $k$ is in general position through dimension $e$, then it is in general
+position through dimension $d$. -/
 theorem IsGeneralPosition.mono {d e : ℕ} {p : ι → ℙ k V} (hp : IsGeneralPosition e p)
     (hde : d ≤ e) : IsGeneralPosition d p :=
   fun s hs ↦ hp s (hs.trans (Nat.add_le_add_right hde 1))

@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.companionKJacobsthal_add_two
 ---
 
-# Companion KJacobsthal add two
+# Recurrence of the companion $k$-Jacobsthal numbers
 
-The companion recurrence `𝒥_{k,n+2} = k 𝒥_{k,n+1} + 2 𝒥_{k,n}`.
+**Recurrence of the companion $k$-Jacobsthal numbers.** For every natural number $k$, all
+integers $a, b$ and every natural number $n$, the companion $k$-Jacobsthal numbers satisfy
+$\mathcal{J}_{k,n+2}(a, b) = k\,\mathcal{J}_{k,n+1}(a, b) + 2\,\mathcal{J}_{k,n}(a, b)$.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.cutSize
 ---
 
-# Cut Size
+# Size of a cut
 
-The number of edges crossing a cut. Distinct parallel edges are counted separately.
+**Size of a cut.** Consider a multigraph with finitely many edges in which each edge has a
+first and a second endpoint. For a set $S$ of vertices, the size of the cut at $S$ is the number
+of edges crossing it, that is, having exactly one endpoint in $S$. Distinct parallel edges are
+counted separately.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Crosses Cut](crosses-cut.md)
+- [Edges crossing a cut](crosses-cut.md)
 
 ## Sources
 

@@ -14,8 +14,8 @@ where the lower and upper chains meet.
 
 ## Depends on
 
-- [Turns Left](turns-left.md)
-- [Convex Hull](convex-hull.md)
+- [Lists of points turning strictly left](turns-left.md)
+- [Convex hull by the monotone chain algorithm](convex-hull.md)
 - [Cross product of plane vectors](../segment-intersection/cross.md)
 
 ## Proof depends on

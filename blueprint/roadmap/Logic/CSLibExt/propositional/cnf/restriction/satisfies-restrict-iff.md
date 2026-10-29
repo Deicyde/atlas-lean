@@ -15,7 +15,7 @@ satisfies the restriction of $C$ by $\ell$ if and only if $v$ satisfies $C$.
 ## Depends on
 
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Restriction of a clause by a literal](restrict.md)
 
 ## Proof depends on

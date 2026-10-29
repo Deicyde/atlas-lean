@@ -43,7 +43,7 @@ navigation: module
 ## Lower bounds: the intended words are derivable
 
 - [A word that does not start with $w$ leaves $w$ at some position](exists-mismatch-of-not-prefix.md)
-- [The mismatch productions](mem-mismatch-rules.md)
+- [Membership in the mismatch productions](mem-mismatch-rules.md)
 - [Every mismatched word is derivable from the mismatch nonterminal](mismatch-mem.md)
 - [The language of the universality grammar](language-univ-grammar.md)
 

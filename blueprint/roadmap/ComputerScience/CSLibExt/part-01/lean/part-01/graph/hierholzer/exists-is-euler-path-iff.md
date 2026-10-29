@@ -25,8 +25,8 @@ many edge occurrences as it is the target of (every vertex, when $s = t$).
 
 ## Proof depends on
 
-- [Hierholzer](hierholzer.md)
-- [Hierholzer's algorithm finds Euler paths](hierholzer-is-euler-path.md)
+- [Hierholzer's algorithm](hierholzer.md)
+- [Hierholzer's algorithm finds Euler paths in directed multigraphs](hierholzer-is-euler-path.md)
 - [A directed multigraph with an Euler path is semi-balanced](is-semi-balanced-of-is-euler-path.md)
 
 ## Sources

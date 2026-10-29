@@ -15,7 +15,7 @@ if $\sum_{i=1}^{k} s_i = \binom{k}{2}$ for some integer $k$ with $1 \le k < n$.
 
 - [Reducible tournament](is-reducible.md)
 - [Tournament](is-tournament.md)
-- [Score](score.md)
+- [Score of a player](score.md)
 
 ## Sources
 

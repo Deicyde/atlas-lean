@@ -20,7 +20,7 @@ The quotient is exact, since $57 \cdot 5^{2k} - 1$ is divisible by $8$.
 
 ## Depends on
 
-- [Distinct Even Parts Count](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
+- [Partitions whose even parts are distinct](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
 
 ## Sources
 

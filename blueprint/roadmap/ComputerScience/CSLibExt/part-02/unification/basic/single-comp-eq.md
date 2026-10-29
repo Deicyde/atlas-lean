@@ -17,8 +17,8 @@ $\sigma$ second equals $\sigma$.
 ## Depends on
 
 - [Substitution](subst.md)
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Applying a substitution to a term](subst-2.md)
 

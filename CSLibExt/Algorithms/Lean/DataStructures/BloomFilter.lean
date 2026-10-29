@@ -149,7 +149,9 @@ public theorem mayContain_insert_mono {α : Type u} {m : Nat} (filter : BloomFil
   rw [bit_insert_iff]
   exact Or.inl (present h hmem)
 
-/-- With at least one hash function, the empty filter reports every element absent. -/
+/-- **The empty Bloom filter reports every element absent.** Let $\alpha$ be a type, $m$ a
+natural number and $H$ a nonempty list of hash functions $\alpha \to \{0, \dots, m - 1\}$. For
+every element $x \in \alpha$, the empty Bloom filter with hash functions $H$ reports $x$ absent. -/
 public theorem mayContain_empty {α : Type u} {m : Nat} {hashes : List (α → Fin m)}
     (nonempty : hashes ≠ []) (x : α) :
     (empty hashes).mayContain x = false := by

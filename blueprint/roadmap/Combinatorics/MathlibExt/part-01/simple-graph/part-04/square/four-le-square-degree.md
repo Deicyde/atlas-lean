@@ -16,7 +16,7 @@ the square of the graph.
 ## Depends on
 
 - [$k$-vertex-connected graph](../vertex-connectivity/is-vertex-connected.md)
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Proof depends on
 

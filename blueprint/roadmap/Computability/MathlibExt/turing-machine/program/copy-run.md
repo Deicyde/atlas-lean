@@ -24,7 +24,7 @@ by $u_c^{m+p}$.
 - [Flag bit of a machine state](flag.md)
 - [Exact-length runs of a TM2 machine](run.md)
 - [Unary counter](cnt.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 

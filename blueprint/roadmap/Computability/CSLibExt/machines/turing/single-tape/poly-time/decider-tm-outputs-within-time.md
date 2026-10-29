@@ -33,7 +33,7 @@ $C t (|w| + 1 + C t + 1) + 4$ steps.
 - [The bottom cell of the start tape](../of-recursive/bot-cell.md)
 - [The answer bit of a cell](../of-recursive/cell-answer.md)
 - [States of the single-tape emulation](../of-recursive/emu-support.md)
-- [Single-tape emulation of a multi-stack machine](../of-recursive/emu-tm.md)
+- [Finite single-tape emulation of a multi-stack machine](../of-recursive/emu-tm.md)
 - [The bottom cell followed by the input word is the emulation's start tape](../of-recursive/map-val-bot-cell-cons.md)
 - [Timed outputs compose](../comp/comp-computer-2.md)
 - [The machine that prepends a symbol](../of-recursive/cons-computer.md)
@@ -41,7 +41,7 @@ $C t (|w| + 1 + C t + 1) + 4$ steps.
 - [The single-tape simulation outputs within one extra step](../of-tm0/outputs-within-time-of-tm0.md)
 - [Single-tape emulation of halting multi-stack runs](../tm2-time/exists-tm0-halt-of-tm2-halt.md)
 - [A multi-stack machine is supported by all its labels](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/supports-univ.md)
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 - [The emulation visits finitely many states](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-supports.md)
 
 ## Sources

@@ -20,7 +20,7 @@ navigation: module
 - [SEGMENTS-INTERSECT as a Boolean formula](segments-intersect-ret.md)
 - [Points of a segment lie in its bounding box](on-segment-of-mem.md)
 - [Points of a segment have direction zero](direction-eq-zero-of-mem.md)
-- [Mem segment of direction eq zero](mem-segment-of-direction-eq-zero.md)
+- [A collinear point in the bounding box lies on the segment](mem-segment-of-direction-eq-zero.md)
 
 ## Straddling
 

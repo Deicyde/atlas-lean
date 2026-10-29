@@ -22,7 +22,7 @@ $(x_1 - \operatorname{Re} w) + i(y_1 - \operatorname{Im} w)$.
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

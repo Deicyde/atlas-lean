@@ -18,7 +18,7 @@ The value at $n = 0$ does not affect limits as $n \to \infty$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

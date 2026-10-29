@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Triplewise](../../../Data/MathlibExt/set/triplewise.md)
+- [Relation holding triplewise on a set](../../../Data/MathlibExt/set/triplewise.md)
 
 ## Sources
 

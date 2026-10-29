@@ -19,7 +19,7 @@ finite subsets is.
 
 - [Classical derivability implies truth under valuations with false falsum](../semantics/eval-bool-of-cpl.md)
 - [Truth-table evaluation](../semantics/eval-bool.md)
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 - [Model existence for propositional natural deduction](bool-satisfiable-2.md)
 
 ## Sources

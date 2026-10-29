@@ -16,7 +16,7 @@ $v$ occurs in the Euler tour of $t$ if and only if $v$ is a vertex of $t$.
 
 - [Rooted ordered tree](tree.md)
 - [Euler tour](tour.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 
 ## Proof depends on
 

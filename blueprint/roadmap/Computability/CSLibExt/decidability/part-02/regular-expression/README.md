@@ -30,7 +30,7 @@ navigation: module
 - [Flags of all nodes](flags.md)
 - [Flags of a language](flags-ok.md)
 - [Correctness of the flag pass](flags-ok-flags.md)
-- [Infiniteness test](infinite-b.md)
+- [Infiniteness test for encoded regular expressions](infinite-b.md)
 
 ## The grammar of an encoded regular expression
 

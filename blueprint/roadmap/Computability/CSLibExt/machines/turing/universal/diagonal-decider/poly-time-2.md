@@ -7,7 +7,10 @@ lean: Cslib.Turing.Universal.Diag.Layout.polyTime
 
 # The layout in polynomial time
 
-**The layout in polynomial time.** A `FinTM2` writes `layout y` from the bits `y`.
+**The layout in polynomial time.** A finite multi-stack Turing machine, whose input and
+output alphabets are identified with the bits, together with a polynomial time bound, that
+computes the layout function: given a bit list $y$ as its input, it halts within the bound,
+evaluated at $|y|$, with the layout of $y$ as its output.
 
 ## Depends on
 
@@ -17,10 +20,10 @@ lean: Cslib.Turing.Universal.Diag.Layout.polyTime
 
 - [Component machine](../../../../complexity/host/comp.md)
 - [Reduction host](../../../../complexity/host/reduction.md)
-- [K](k-2.md)
-- [Lab](lab-2.md)
-- [Comp](comp-2.md)
-- [Prog](prog-2.md)
+- [Stacks of the layout machine](k-2.md)
+- [Labels of the layout machine](lab-2.md)
+- [The layout machine as a host component](comp-2.md)
+- [Program of the layout machine](prog-2.md)
 - [The layout run](run-2.md)
 - [Γ](untitled-2.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)

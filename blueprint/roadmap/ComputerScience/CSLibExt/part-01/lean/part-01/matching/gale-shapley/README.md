@@ -53,4 +53,4 @@ navigation: module
 
 - [Rank under a strict total order](order-rank.md)
 - [Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking](exists-to-order-eq.md)
-- [The algorithm serves every MathlibExt preference profile on `Fin n`](exists-rankings-gs-matching.md)
+- [Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers](exists-rankings-gs-matching.md)

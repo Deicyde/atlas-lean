@@ -43,7 +43,7 @@ then $M(f; C X^{k+1} / H^{k+1}, Q) \le B$.
 
 ## Depends on
 
-- [Int Extension](int-extension.md)
+- [Extension of an arithmetic function to the integers](int-extension.md)
 - [1-bounded function](is-one-bounded.md)
 
 ## Sources

@@ -22,7 +22,8 @@ A shared crossing-free straight-line drawing predicate for simple graphs.
 
 namespace SimpleGraph
 
-/-- The closed straight-line segment from `a` to `b` in the real plane. -/
+/-- **Closed segment in the plane.** For points $a$ and $b$ of $\mathbb{R}^2$, the closed segment
+from $a$ to $b$ is the set of points $a + t(b - a)$ with $t \in \mathbb{R}$ and $0 \le t \le 1$. -/
 public def Segment (a b : ℝ × ℝ) : Set (ℝ × ℝ) :=
   {p | ∃ t : ℝ, 0 ≤ t ∧ t ≤ 1 ∧
     p.1 = a.1 + t * (b.1 - a.1) ∧ p.2 = a.2 + t * (b.2 - a.2)}

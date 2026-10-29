@@ -105,10 +105,18 @@ representing $V$ has a solution in the adele ring $\mathbb{A}_\mathbb{Q}$, namel
 $n + 1$ adeles that generate the unit ideal of $\mathbb{A}_\mathbb{Q}$. -/
 def 𝕍Loc : Set (𝕍 d n) := { V | HasSolutionsIn V.rep.1 𝔸 }
 
-/-- The local density `ϱˡᵒᶜ_{d,n}`: the limiting proportion of degree-`d` hypersurfaces
-in `ℙⁿ` that are everywhere locally soluble, as the height bound tends to infinity.
-By a theorem of Poonen–Voloch [17, Th. 3.6], this limit exists (and is positive) for
-`(d, n) ≠ (2, 2)`, and equals a product of local densities over all places of `ℚ`. -/
+/-- **Local density of everywhere locally soluble hypersurfaces.** For natural numbers $d$ and
+$n$ and a real number $A$, let $\mathbb{V}_{d,n}(A)$ be the set of degree-$d$ hypersurfaces in
+$\mathbb{P}^n$ of height at most $A$, and let $\mathbb{V}^{\mathrm{loc}}_{d,n}$ be the set of
+everywhere locally soluble ones. The local density $\rho^{\mathrm{loc}}_{d,n}$ is the limit, as
+$A \to \infty$, of the number of elements of
+$\mathbb{V}^{\mathrm{loc}}_{d,n} \cap \mathbb{V}_{d,n}(A)$ divided by the number of elements of
+$\mathbb{V}_{d,n}(A)$, a quotient taken to be $0$ when $\mathbb{V}_{d,n}(A)$ is empty; when this
+limit does not exist, $\rho^{\mathrm{loc}}_{d,n}$ is an unspecified real number.
+
+By a theorem of Poonen–Voloch [17, Th. 3.6], this limit exists (and is positive) when
+$d \ge 2$, $n \ge 2$ and $(d, n) \ne (2, 2)$, and equals a product of local densities over all
+places of $\mathbb{Q}$. -/
 noncomputable def ρLoc : ℝ :=
   atTop.limUnder fun A ↦ (𝕍Loc d n ∩ heightLE d n A).ncard / (heightLE d n A).ncard
 
@@ -122,10 +130,11 @@ nonzero rational zero. -/
 noncomputable def ρ (A : ℝ) : ℝ :=
   { V ∈ heightLE d n A | HasSolutionsIn V.rep.1 ℚ }.ncard / (heightLE d n A).ncard
 
-/--
-Statement of Theorem 1.1:
+/-- **Density of soluble Fano hypersurfaces.** Let $d$ and $n$ be natural numbers with $d \ge 2$,
+$n \ge d$ and $(d, n) \ne (3, 3)$. Then the proportion $\rho_{d,n}(A)$ of degree-$d$
+hypersurfaces in $\mathbb{P}^n$ of height at most $A$ that have a rational point tends to the
+local density $\rho^{\mathrm{loc}}_{d,n}$ as the real number $A$ tends to $\infty$.
 
-Let `d ≥ 2` and `n ≥ d` with `(d, n) ≠ (3, 3)`. Then we have `lim_{A → ∞} ρ_{d,n}(A) = ρˡᵒᶜ_{d,n}`.
 Source: T. Browning, P. L. Boudec, and W. Sawin, `The Hasse principle for random Fano hypersurfaces`, Annals of Math, 197 (3) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2023-197-3-HassePrincipleRandomFano.lean Via leanprover/lean-eval@38361be, problem `annals_hasse_principle_random_fano`.
 -/
 public theorem_wanted theorem_1_1 (hd : 2 ≤ d) (h₁ : d ≤ n) (h₂ : (d, n) ≠ (3, 3)) :

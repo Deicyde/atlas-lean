@@ -41,7 +41,7 @@ and $k''$ (next state and action $0$).
 - [The cells of a list of numbers](cells.md)
 - [Entries of a code](entries.md)
 - [Numbers of a list of entries](entry-nums.md)
-- [Step Time](step-time.md)
+- [Step bound of one simulated step](step-time.md)
 - [One simulated step, halting case](step-run-of-step-eq-none.md)
 - [One simulated step, running case](step-run-of-step-eq-some.md)
 - [Acting on a configuration](../code/act.md)

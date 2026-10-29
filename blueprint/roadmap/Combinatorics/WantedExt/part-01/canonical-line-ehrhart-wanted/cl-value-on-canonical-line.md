@@ -14,7 +14,7 @@ is, $f$ maps the canonical line into $\mathbb{R}\, i^d$.
 ## Depends on
 
 - [CL-polynomials](is-cl.md)
-- [Canonical Line](canonical-line.md)
+- [Canonical line](canonical-line.md)
 
 ## Sources
 

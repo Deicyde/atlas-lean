@@ -16,7 +16,7 @@ of $i$ in $R$ has $\tau(j)$ occupied.
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Parameter period for the Umlaufsatz](period.md)
-- [Signed Curvature](signed-curvature.md)
+- [Signed curvature](signed-curvature.md)
 
 ## Sources
 

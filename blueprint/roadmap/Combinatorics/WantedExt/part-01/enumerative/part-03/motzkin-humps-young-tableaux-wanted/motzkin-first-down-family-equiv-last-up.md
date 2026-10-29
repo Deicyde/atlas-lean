@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.motzkinFirstDownFamily_equiv_lastUpEvenFamily
 ---
 
-# Motzkin First Down Family equiv last Up Even Family
+# A bijection between first-down and even-height last-up Motzkin prefixes
 
-Lemma 6 is the bijection between prefixes indexed by `0 ≤ k ≤ n-2` whose first
-non-up step is down and even-height prefixes indexed by `1 ≤ k ≤ ⌊n/2⌋` whose last
-non-flat step is up. The automatic natural lower bound is omitted, and `k ≤ n-2`
-is encoded as `k + 2 ≤ n` in the domain subtype.
+**A bijection between first-down and even-height last-up Motzkin prefixes.** Use the steps
+$U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if
+none of its initial segments ends below height $0$. For every natural number $n$ there is a
+bijection between the set of pairs $(k, p)$, where $k$ is a natural number with $k + 2 \le n$ and
+$p$ is a Motzkin prefix of length $n$ ending at height $k$ whose first step other than $U$ exists
+and is $D$, and the set of pairs $(k, p)$, where $k$ is a natural number with
+$1 \le k \le \lfloor n/2 \rfloor$ and $p$ is a Motzkin prefix of length $n$ ending at height $2k$
+that contains a $U$ after which every step is $F$.
 
 ## Depends on
 

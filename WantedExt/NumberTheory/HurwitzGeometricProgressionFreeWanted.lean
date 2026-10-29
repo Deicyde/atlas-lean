@@ -302,8 +302,17 @@ public theorem_wanted quaternionGreedy_ne_norm_preimage
     (hG : ∀ n ∈ G, 0 < n) :
     Gq ≠ 𝐒ᴳ G
 
-/-- Both differences `G₃*(Q_Hur ∖ {0}) ∖ S(G₃*(ℕ₊))` and `S(G₃*(ℕ₊)) ∖ G₃*(Q_Hur ∖ {0})`
-between the quaternion greedy set and the norm preimage of Rankin's greedy set are infinite.
+/-- **The quaternion greedy set and the norm preimage of Rankin's set differ infinitely.** A
+Hurwitz quaternion is a quaternion whose four rational coordinates are either all integers or all
+halves of odd integers; the norm $\mathrm{Nm}(q)$ of a quaternion $q$ is the sum of the squares of
+its coordinates. Let $\mathcal{G}$ be a set of quaternions such that a quaternion $q$ lies in
+$\mathcal{G}$ if and only if $q$ is a nonzero Hurwitz quaternion and there are no
+$a \in \mathcal{G}$ and Hurwitz quaternion $r \ne 0$ with norm $\mathrm{Nm}(r) \ne 1$,
+$ar \in \mathcal{G}$ and $q = ar^2$ (this recursion on the norm characterizes the quaternion
+greedy set). Let $G^*_3$ be Rankin's greedy set, the set of positive integers $n$ such that for
+every prime $p$ the base-$3$ digits of the exponent of $p$ in $n$ include no digit $2$, and let
+$S(G^*_3)$ be the set of Hurwitz quaternions whose norm lies in $G^*_3$. Then both
+$\mathcal{G} \setminus S(G^*_3)$ and $S(G^*_3) \setminus \mathcal{G}$ are infinite.
 
 Source: Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding
 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article
@@ -330,9 +339,19 @@ public theorem_wanted exists_hurwitz_norm_sq_not_unit_mul_sq (r : ℕ) (hr : 0 <
       ((¬ ∃ a b c : ℕ, r = a ^ 2 + b ^ 2 + c ^ 2) →
         ¬ IsUnitMulSq ((r : ℚ) : Quaternion ℚ) r)
 
-/-- Let `p` be a prime and `Q` a Hurwitz quaternion of norm `p²` that is not of the form `U R²`
-with `U` a unit and `Nm(R) = p`. Then `Q` lies in the quaternion greedy set but not in
-`S(G₃*(ℕ₊))`, and `Q²` lies in `S(G₃*(ℕ₊))` but not in the quaternion greedy set.
+/-- **Quaternions of prime-square norm separating the greedy set from Rankin's set.** A Hurwitz
+quaternion is a quaternion whose four rational coordinates are either all integers or all halves
+of odd integers; its norm $\mathrm{Nm}(q)$ is the sum of the squares of its coordinates, and a
+Hurwitz unit is a Hurwitz quaternion of norm $1$. Let $\mathcal{G}$ be a set of quaternions such
+that a quaternion $q$ lies in $\mathcal{G}$ if and only if $q$ is a nonzero Hurwitz quaternion
+and there are no $a \in \mathcal{G}$ and Hurwitz quaternion $r \ne 0$ with $\mathrm{Nm}(r) \ne 1$,
+$ar \in \mathcal{G}$ and $q = ar^2$ (this recursion on the norm characterizes the quaternion
+greedy set). Let $G^*_3$ be Rankin's greedy set, the set of positive integers $n$ such that for
+every prime $\ell$ the base-$3$ digits of the exponent of $\ell$ in $n$ include no digit $2$, and
+let $S(G^*_3)$ be the set of Hurwitz quaternions whose norm lies in $G^*_3$. Let $p$ be a prime
+and $Q$ a Hurwitz quaternion of norm $p^2$ that cannot be written as $Q = UR^2$ with $U$ a
+Hurwitz unit and $R$ a Hurwitz quaternion of norm $p$. Then
+$Q \in \mathcal{G} \setminus S(G^*_3)$ and $Q^2 \in S(G^*_3) \setminus \mathcal{G}$.
 
 Source: Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding
 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article

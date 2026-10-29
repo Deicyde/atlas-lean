@@ -6,10 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.omegaMult_zero
 ---
 
-# Omega Mult zero
+# $\omega_k$ vanishes at the zero polynomial
 
-The explicit exceptional convention in `omegaMult` gives `ω_k(0) = 0` for every
-multiplicity `k`.
+**$\omega_k$ vanishes at the zero polynomial.** For every field $F$ and every natural number $k$,
+$\omega_k(0) = 0$. Here $\omega_k(f)$ is the number of distinct monic irreducible polynomials
+dividing a nonzero polynomial $f$ over $F$ with multiplicity exactly $k$, and $\omega_k(0) = 0$
+by convention, so this records that convention.
 
 ## Depends on
 

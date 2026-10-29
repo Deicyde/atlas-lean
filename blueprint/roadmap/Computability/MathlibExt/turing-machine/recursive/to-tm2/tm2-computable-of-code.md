@@ -28,7 +28,7 @@ This node has no prerequisites.
 - [Bits as stack symbols](bool-to.md)
 - [Iterated steps of the wrapped machine](frun.md)
 - [One step of the wrapped machine](fstep.md)
-- [Fwd TM](fwd-tm.md)
+- [The wrapped machine of a code](fwd-tm.md)
 - [Main phase of the wrapped machine](main-phase.md)
 - [Stack contents of the wrapped machine](mk-stk.md)
 - [Post-phase of the wrapped machine](post-phase.md)

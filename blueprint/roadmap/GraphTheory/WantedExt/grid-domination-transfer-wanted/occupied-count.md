@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.occupiedCount
 ---
 
-# Occupied Count
+# Number of occupied vertices
 
-The number `occ(σ)` of occupied vertices of a row state.
+**Number of occupied vertices.** Let $V$ be a finite set and let $\sigma$ assign a domination
+state (uncovered, covered or occupied) to each element of $V$. The occupied count
+$\operatorname{occ}(\sigma)$ is the number of elements $i \in V$ such that $\sigma(i)$ is occupied.
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 
 ## Sources
 

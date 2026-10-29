@@ -6,13 +6,14 @@ statement: formalized
 lean: CurveDivisor.coeff
 ---
 
-# Coeff
+# Coefficient of a divisor at a point
 
-The coefficient of a point in a curve divisor.
+**Coefficient of a divisor at a point.** For a divisor $D$ on a set of points $C$ and a
+point $P \in C$, the coefficient of $D$ at $P$ is the integer $D(P)$.
 
 ## Depends on
 
-- [Curve Divisor](curve-divisor.md)
+- [Divisors on a curve](curve-divisor.md)
 
 ## Sources
 

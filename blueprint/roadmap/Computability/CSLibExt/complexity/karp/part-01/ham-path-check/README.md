@@ -16,7 +16,7 @@ navigation: module
 - [Witness encoding of a nonempty list](enc-w-cons.md)
 - [The witness encoding respects concatenation](enc-w-append.md)
 - [Decoding the empty witness](decode-w-nil.md)
-- [Decoding fails on a cut-off first number](decode-w-of-none.md)
+- [Witness decoding fails on a cut-off first number](decode-w-of-none.md)
 - [Decoding peels off the first number](decode-w-of-some.md)
 - [Decoding inverts the witness encoding](decode-w-enc-w.md)
 - [The witness decoder succeeds only on encodings](enc-w-of-decode-w.md)

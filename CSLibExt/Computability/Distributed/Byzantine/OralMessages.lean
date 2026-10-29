@@ -149,7 +149,11 @@ theorem received_of_loyal {c : G} (hc : loyal c) (v : V) (path : List G) (p : G)
   simp [received, hc]
 
 omit [DecidableEq G] [DecidableEq V] [Inhabited V] in
-/-- A traitorous commander sends what the adversary chooses for its path and the recipient. -/
+/-- **A traitorous commander sends the adversary's value.** Fix which generals are loyal and an
+adversary $\mathrm{adv}$ that assigns a value to each pair of a list of generals and a recipient.
+If the commander $c$ is a traitor, then for every value $v$, every list $\sigma$ of superiors of
+$c$ and every general $p$, the value $p$ receives from $c$ is $\mathrm{adv}(\sigma c, p)$, where
+$\sigma c$ is $\sigma$ followed by $c$. -/
 @[simp]
 theorem received_of_not_loyal {c : G} (hc : ¬ loyal c) (v : V) (path : List G) (p : G) :
     received loyal adv c v path p = adv (path ++ [c]) p := by

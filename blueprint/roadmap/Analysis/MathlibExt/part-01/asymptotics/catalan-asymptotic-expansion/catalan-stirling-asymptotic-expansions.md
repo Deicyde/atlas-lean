@@ -31,7 +31,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tendsto pow mul log catalan sub bernoulli sum](tendsto-pow-mul-log-catalan-sub-bernoull.md)
+- [All-orders logarithmic expansion of the Catalan numbers at a real shift](tendsto-pow-mul-log-catalan-sub-bernoull.md)
 
 ## Sources
 

@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Goldstine finite](goldstine-finite.md)
+- [Finite-coordinate Goldstine theorem](goldstine-finite.md)
 
 ## Sources
 

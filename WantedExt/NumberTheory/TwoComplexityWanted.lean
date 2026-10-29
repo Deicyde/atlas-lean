@@ -220,10 +220,12 @@ theorem_wanted complexityL_decomp (l n b a : ℕ) (hl : 1 < l)
     (ha : a ≤ l - 1) :
     complexityL l n = complexityL l b + a
 
-/-- **Proposition 3** (= **Theorem 1**(1)): for `m ≥ 1` and
-positive even `n` with `2^m < n ≤ 2^(m+1)`, `‖n‖₂ = m + 1`
-if and only if `n = 2^m + 2^t` for some `1 ≤ t ≤ m`
-(the case `t = m` gives `n = 2^(m+1)`).
+/-- **Even $n$ with $2^m < n \le 2^{m+1}$ and 2-complexity $m + 1$.** Write $\|n\|_2$ for the
+2-complexity of $n$. Let $m \ge 1$ and let $n$ be an even natural number with
+$2^m < n \le 2^{m+1}$. Then $\|n\|_2 = m + 1$ if and only if $n = 2^m + 2^t$ for some natural
+number $t$ with $1 \le t \le m$.
+
+The case $t = m$ gives $n = 2^{m+1}$.
 
 Source: Pengcheng Zhang, "The 2-Complexity of Even Positive
 Integers", Proposition 3 and Theorem 1. -/
@@ -284,9 +286,12 @@ theorem_wanted logb_two_add_two_le (m n : ℕ) (h2n : 2 ∣ n)
     (hform : ¬ twoComplexityAddTwoForm m n) :
     Real.logb 2 n + 2 ≤ (complexityL 2 n : ℝ)
 
-/-- **Corollary 4**, particular case: if a positive even
-`n` is a sum of at least five distinct powers of `2`, then
-`log₂ n + 2 ≤ ‖n‖₂`.
+/-- **Lower bound for the 2-complexity of even sums of five or more distinct powers of two.**
+Write $\|n\|_2$ for the 2-complexity of $n$. Let $n \ge 1$ be an even natural number and let $S$
+be a finite set of natural numbers with at least five elements such that $n = \sum_{e \in S} 2^e$.
+Then $\log_2 n + 2 \le \|n\|_2$, where $\log_2$ is the real base-2 logarithm.
+
+This is a particular case of Corollary 4 of the source.
 
 Source: Pengcheng Zhang, "The 2-Complexity of Even Positive
 Integers", Corollary 4. -/

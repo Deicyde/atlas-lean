@@ -268,9 +268,14 @@ def IsL2Quotient (Γ : Subgroup SL(2, ℤ)) (f : UpperHalfPlane → ℂ) : Prop 
     (∫⁻ z in ⋃ a ∈ (s : Set SL(2, ℤ)), (fun z => a • z) '' fundamentalDomain,
       ‖f z‖ₑ ^ 2) < ∞
 
-/-- `λ` is an eigenvalue of the hyperbolic Laplacian on `L²(Γ \ ℍ)`, in
-the smooth eigenfunction sense of this file: some nonzero smooth
-`Γ`-invariant square-integrable function satisfies `Δf = λ f`. -/
+/-- **Eigenvalues of the hyperbolic Laplacian on a modular quotient.** Let $\Gamma$ be a subgroup
+of $\mathrm{SL}(2, \mathbb{Z})$. A real number $\lambda$ is an eigenvalue of the hyperbolic
+Laplacian $\Delta$ for $\Gamma$ when there is a function $f \colon \mathbb{H} \to \mathbb{C}$ on
+the upper half plane $\mathbb{H}$ such that $f$ is not identically zero, $f$ is the restriction of
+a function on $\mathbb{C}$ that is twice continuously differentiable in the real sense on the
+upper half plane, $f(\gamma z) = f(z)$ for every $\gamma \in \Gamma$ and every $z \in \mathbb{H}$
+(Möbius action), $f$ is square-integrable on $\Gamma \backslash \mathbb{H}$, and
+$\Delta f(z) = \lambda f(z)$ for every $z \in \mathbb{H}$. -/
 def IsEigenvalue (Γ : Subgroup SL(2, ℤ)) (lam : ℝ) : Prop :=
   ∃ f : UpperHalfPlane → ℂ, f ≠ 0 ∧ IsSmooth f ∧
     (∀ γ : SL(2, ℤ), γ ∈ Γ → ∀ z : UpperHalfPlane, f (γ • z) = f z) ∧

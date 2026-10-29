@@ -6,4 +6,4 @@ navigation: module
 # Stieltjes Matrix
 
 - [Tridiagonal Stieltjes production matrix](stieltjes-matrix.md)
-- [Stieltjes Matrix Of](stieltjes-matrix-of.md)
+- [Specialized Stieltjes matrix](stieltjes-matrix-of.md)

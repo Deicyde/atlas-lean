@@ -23,7 +23,7 @@ in the diagonal language of $f$.
 - [The clocked evaluator](../code/eval-steps.md)
 - [Symbol of an input bit](../code/bit-sym.md)
 - [Decoding inverts the code stack](code-cells-of-decode-code-cells-eq-some.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Sources
 

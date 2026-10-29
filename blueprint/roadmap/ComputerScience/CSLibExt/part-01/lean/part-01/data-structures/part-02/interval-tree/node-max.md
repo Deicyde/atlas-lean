@@ -21,7 +21,7 @@ stores no cached maximum and contributes nothing.
 ## Proof depends on
 
 - [Interval](interval.md)
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 - [Maximum with an optional value](max-with.md)
 
 ## Sources

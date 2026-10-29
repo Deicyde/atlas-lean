@@ -49,9 +49,12 @@ open Cslib.Complexity.Karp (edgeBits decodeEs)
 
 /-! ### The machine -/
 
-/-- Stacks: input `X`, output `O`, the edge bits `E` (reversed between passes), junk `J`, the
-counters `S`, `T`, `N` (for `s`, `t`, `n`; `N` counts the passes left) and `U`, `V` (for an
-arc), the marks `M` (vertex `0` on top) and the parked marks `P`. -/
+/-- **Stacks of the PATH marking machine.** The PATH marking machine, run on an instance with
+source $s$, target $t$ and $n$ vertices, has eleven stacks: the input stack $X$, the output stack
+$O$, the stack $E$ of the edge bits (reversed between passes), the junk stack $J$, the counters
+$S$, $T$ and $N$ for $s$, $t$ and $n$ ($N$ counts the passes left), the counters $U$ and $V$ for
+the endpoints $u$ and $v$ of an arc, the mark stack $M$ (with the mark of vertex $0$ on top) and
+the stack $P$ of parked marks. -/
 inductive K | X | O | E | J | S | T | N | U | V | M | P
   deriving DecidableEq
 
@@ -67,10 +70,17 @@ alphabet. -/
   | .O => Bool
   | _ => Sym
 
-/-- Labels: read `s`, `t`, `n`; validate the edge list (at a pair, inside `u`, inside `v`); walk
-to `s` and set its mark, restore; the pass loop, reload the edges, the edge loop; read `u` and
-`v`; walk to `u`, restore holding its mark `b`; walk to `v` and set its mark, restore; drain `V`;
-walk to `t` and answer; answer `false`; halt. -/
+/-- **Labels of the PATH marking machine.** For an instance with source $s$, target $t$, $n$
+vertices and arcs $(u, v)$, the labels of the PATH marking machine are $\mathsf{rdS}$,
+$\mathsf{rdT}$ and $\mathsf{rdN}$ (read $s$, $t$ and $n$); $\mathsf{val0}$, $\mathsf{valU}$ and
+$\mathsf{valV}$ (validate the edge list: at a pair, inside $u$, inside $v$); $\mathsf{goS}$ and
+$\mathsf{backS}$ (walk to $s$ and set its mark, then restore); $\mathsf{pass}$ (the pass loop),
+$\mathsf{ld}$ (reload the edges) and $\mathsf{edge}$ (the edge loop); $\mathsf{rdU}$ and
+$\mathsf{rdV}$ (read $u$ and $v$); $\mathsf{go1}$ and, for each bit $b$, $\mathsf{back1}(b)$
+(walk to $u$, then restore holding its mark $b$); $\mathsf{go2}$ and $\mathsf{back2}$ (walk to
+$v$ and set its mark, then restore); $\mathsf{drV}$ (drain the counter stack $V$);
+$\mathsf{goT}$ (walk to $t$ and answer); $\mathsf{bad}$ (answer false); and $\mathsf{done}$
+(halt). -/
 inductive Lab | rdS | rdT | rdN | val0 | valU | valV | goS | backS | pass | ld | edge | rdU | rdV
   | go1 | back1 (b : Bool) | go2 | back2 | drV | goT | bad | done
   deriving DecidableEq

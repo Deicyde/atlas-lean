@@ -11,7 +11,7 @@ navigation: transparent
 - [KCyclic Partition](kcyclic-partition/README.md)
 - [Linear partition of a graph](linear-partition.md)
 - [Matrix Discrepancy](matrix-discrepancy/README.md)
-- [Paris Harrington](paris-harrington.md)
+- [Strengthened finite Ramsey theorem (Paris–Harrington principle)](paris-harrington.md)
 - [Partial Hadamard](partial-hadamard/README.md)
 - [Finite Ramsey theorem for pairs](ramsey-two-uniform.md)
 - [Restricted Gaussian Partition](restricted-gaussian-partition/README.md)

@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.chuBlock_one_two
 ---
 
-# Chu Block one two
+# The Chu difference blocks $M^1$ and $M^2$
 
-`M^1 = 1, 4, 3` and `M^2 = 1, 4, 4, 3`.
+**The Chu difference blocks $M^1$ and $M^2$.** The Chu difference block $M^1$ is the list
+$1, 4, 3$, and the Chu difference block $M^2$ is the list $1, 4, 4, 3$.
 
 ## Depends on
 

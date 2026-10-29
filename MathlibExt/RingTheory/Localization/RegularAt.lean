@@ -89,13 +89,19 @@ theorem evalAt_mk (X : Set (σ → K)) (P : X) (f : MvPolynomial σ K) :
     evalAt X P (Ideal.Quotient.mk _ f) = MvPolynomial.aeval P.1 f :=
   Ideal.Quotient.lift_mk _ _ _
 
-/-- A rational function on an affine set is regular at a point when a denominator that
-does not vanish there clears the function. -/
+/-- **Regularity of a rational function at a point.** Let $K$ be a field, $\sigma$ an index set
+and $X \subseteq K^\sigma$ a set of points whose affine coordinate ring $A$ is an integral domain.
+A rational function on $X$ is an element $r$ of the field of fractions of $A$; it is regular at a
+point $P \in X$ when there is some $g \in A$ whose value $g(P)$ under evaluation at $P$ is nonzero
+such that $g r$ lies in the image of $A$ in its field of fractions. -/
 def IsRegularAt (X : Set (σ → K)) [IsDomain (AffineCoordinateRing X)]
     (r : FractionRing (AffineCoordinateRing X)) (P : X) : Prop :=
   FractionRing.IsRegularAt (evalAt X P) r
 
-/-- Coordinate-ring elements define rational functions regular at every point. -/
+/-- **Elements of the coordinate ring are regular.** Let $K$ be a field, $\sigma$ an index set and
+$X \subseteq K^\sigma$ a set of points whose affine coordinate ring $A$ is an integral domain. For
+every $a \in A$ and every point $P \in X$, the image of $a$ in the field of fractions of $A$ is a
+rational function on $X$ that is regular at $P$. -/
 theorem isRegularAt_algebraMap (X : Set (σ → K)) [IsDomain (AffineCoordinateRing X)]
     (a : AffineCoordinateRing X) (P : X) :
     IsRegularAt X (algebraMap (AffineCoordinateRing X)

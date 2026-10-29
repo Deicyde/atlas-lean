@@ -20,7 +20,7 @@ $f^*(w) \in L$ if and only if $\varphi(w) \in A_L$.
 ## Depends on
 
 - [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
 - [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)

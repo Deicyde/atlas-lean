@@ -23,7 +23,7 @@ contains $\varphi(t)$.
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](mem-of-provable.md)
 
 ## Sources
 

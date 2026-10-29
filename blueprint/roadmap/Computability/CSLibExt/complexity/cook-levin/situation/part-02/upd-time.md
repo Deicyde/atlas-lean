@@ -32,7 +32,7 @@ $\mathrm{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [The transition clause family](../../family/family.md)
 - [Constant of the generator's time bound](../../family/gen-c.md)
 - [Initial counters of the transition-clause generator](../../family/init-f.md)
-- [Prog](../../family/prog.md)
+- [Generator machine for the transition clause families](../../family/prog.md)
 - [Encoding data for a finite TM2 machine](../part-01/enc.md)
 - [Number of situations](../part-01/n.md)
 - [Label/state code of a situation](../part-01/la.md)

@@ -21,14 +21,14 @@ root of $S$ removed and one occurrence of $k$ added.
 - [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
 - [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
 - [Decrease-key in a Fibonacci heap](decrease-key.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-3.md)
+- [Multiset of a Fibonacci heap](../../../part-02/fibonacci-heap/elements-3.md)
 - [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 - [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 
 ## Proof depends on
 
 - [Cutting a subtree splits the elements of a Fibonacci forest](cut-tree-at-elements.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-2.md)
+- [Multiset of a Fibonacci forest](../../../part-02/fibonacci-heap/elements-2.md)
 - [Root list after decrease-key](decrease-key-trees-of-cut.md)
 - [Replacing the root key of a Fibonacci tree](decrease-root.md)
 - [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)

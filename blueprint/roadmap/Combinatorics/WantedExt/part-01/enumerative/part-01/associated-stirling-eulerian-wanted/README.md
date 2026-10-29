@@ -12,7 +12,7 @@ navigation: module
 - [Logarithm of the Eulerian generating function](exp-circular-perm-egf-eq-perm-egf.md)
 - [Excedance generating function of circular permutations of at most $r$ objects](circular-rminus-perm-egf-eq.md)
 - [Excedance generating function of circular permutations of $r$ objects](circular-rcycle-perm-egf-eq.md)
-- [Exp circular RPlus Perm EGF eq](exp-circular-rplus-perm-egf-eq.md)
+- [Excedance generating function of circular permutations of more than $r$ objects](exp-circular-rplus-perm-egf-eq.md)
 - [Exponential generating function of permutations with cycle lengths at most $r$](r-minus-associated-perm-egf-eq-exp.md)
 - [Logarithm of the generating function of permutations with short cycles](exp-circular-rminus-perm-egf-eq-r-minus.md)
 - [Primitive of the Eulerian generating function](exp-eulerian-egf-primitive.md)

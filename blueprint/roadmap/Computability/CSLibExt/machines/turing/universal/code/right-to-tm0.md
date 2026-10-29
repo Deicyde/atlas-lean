@@ -16,7 +16,7 @@ end.
 ## Depends on
 
 - [Explicit configurations](cfg.md)
-- [Output](output.md)
+- [Output of a configuration](output.md)
 - [TM0 configuration of a simulation configuration](to-tm0.md)
 
 ## Sources

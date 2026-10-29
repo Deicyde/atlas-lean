@@ -16,7 +16,7 @@ connected (each is reachable from the other) if and only if $v$ lies in $B$.
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strongly connected components algorithm](components.md)
 
 ## Proof depends on

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sym List](sym-list.md)
+- [Enumeration of the relevant symbols of a stack](sym-list.md)
 
 ## Sources
 

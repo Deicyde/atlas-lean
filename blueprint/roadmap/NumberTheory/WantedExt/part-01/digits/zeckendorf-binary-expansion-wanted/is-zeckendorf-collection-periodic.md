@@ -18,7 +18,7 @@ $n \ge 2$ the immediate predecessor of $\beta^n$ in $E$ is the maximal $L$-block
 
 - [Immediate predecessor](is-immediate-predecessor.md)
 - [Zeckendorf collections](is-zeckendorf-collection.md)
-- [Periodic Theta](periodic-theta.md)
+- [The maximal $L$-block $\theta^{m+1}$](periodic-theta.md)
 - [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
 
 ## Sources

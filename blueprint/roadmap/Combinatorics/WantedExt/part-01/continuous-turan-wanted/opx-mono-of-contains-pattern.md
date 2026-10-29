@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.opx_mono_of_containsPattern
 ---
 
-# Opx mono of contains Pattern
+# Monotonicity of the continuous Turán number under containment
 
-Lemma 2.3: if `Q` contains `P`, then `opx(n, P) ≤ opx(n, Q)`. Stated for all real `n`.
+**Monotonicity of the continuous Turán number under containment.** Let $n$ be a real number
+and let $P, Q \subseteq \mathbb{R}^2$. If $Q$ contains $P$ in the sense of containment of planar
+point sets, then $\operatorname{opx}(n, P) \le \operatorname{opx}(n, Q)$.
 
 ## Depends on
 

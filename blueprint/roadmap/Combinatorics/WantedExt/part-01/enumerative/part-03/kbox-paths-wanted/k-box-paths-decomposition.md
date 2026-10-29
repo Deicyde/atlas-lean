@@ -14,7 +14,7 @@ for some augmented $(k+1)$-Dyck paths $\mu_1, \ldots, \mu_{k+1}$, each of some s
 ## Depends on
 
 - [Skew Dyck steps](skew-dyck-step.md)
-- [Augmented KDyck Paths](augmented-kdyck-paths.md)
+- [Augmented $k$-Dyck paths](augmented-kdyck-paths.md)
 - [$k$-box paths](k-box-paths.md)
 
 ## Sources

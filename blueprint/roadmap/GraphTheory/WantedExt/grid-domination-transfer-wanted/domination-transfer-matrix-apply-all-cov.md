@@ -18,11 +18,11 @@ $\tau$ is adjacent in $R$ to an occupied vertex of $\tau$, and equals $0$ otherw
 ## Depends on
 
 - [Signatures of a row graph](domination-signature.md)
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [All-covered signature](all-covered-signature.md)
 - [Domination transfer matrix](domination-transfer-matrix.md)
-- [Occupied Count](occupied-count.md)
+- [Number of occupied vertices](occupied-count.md)
 
 ## Proof depends on
 

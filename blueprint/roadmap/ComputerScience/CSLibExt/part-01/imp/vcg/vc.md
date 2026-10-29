@@ -29,7 +29,7 @@ $Q$, and $\mathrm{vc}(C', I)$ holds.
 - [Precondition of an annotated command](pre.md)
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [IMP program states](../syntax/state.md)
 
 ## Sources

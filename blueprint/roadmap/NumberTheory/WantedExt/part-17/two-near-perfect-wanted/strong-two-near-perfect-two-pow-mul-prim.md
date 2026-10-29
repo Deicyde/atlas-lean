@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_form
 ---
 
-# Strong two near perfect two pow mul prime form
+# Strongly $2$-near perfect numbers of the form $2^k p$
 
-Lemma 8: if `n = 2^k p` (`p` an odd prime) is strongly `2`-near perfect, then
-`p = (2^(k+1) - 2^a - 1) / (1 + 2^(k-a))` for some `a ≤ k`.
+**Strongly $2$-near perfect numbers of the form $2^k p$.** Let $p$ be an odd prime, let $k$
+be a natural number and let $n = 2^k p$. Suppose that $n$ is strongly $2$-near perfect, that is,
+$\sigma(n) = 2n + d + n/d$ for some divisor $d$ of $n$, where $\sigma$ is the sum-of-divisors
+function. Then there is a natural number $a \le k$ with $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$,
+that is, $p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$.
 
 ## Depends on
 

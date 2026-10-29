@@ -22,7 +22,7 @@ by a possibly empty chain of unit productions of $g$.
 
 ## Proof depends on
 
-- [Nonterminals mentioned by a grammar](grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](grammar-nts.md)
 
 ## Sources
 

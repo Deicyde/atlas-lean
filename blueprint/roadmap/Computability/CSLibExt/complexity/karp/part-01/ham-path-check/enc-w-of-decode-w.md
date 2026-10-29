@@ -20,7 +20,7 @@ encoding of $p$.
 ## Proof depends on
 
 - [Decoding the empty witness](decode-w-nil.md)
-- [Decoding fails on a cut-off first number](decode-w-of-none.md)
+- [Witness decoding fails on a cut-off first number](decode-w-of-none.md)
 - [Decoding peels off the first number](decode-w-of-some.md)
 - [Witness encoding of a nonempty list](enc-w-cons.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)

@@ -16,7 +16,7 @@ to $v$ in $G$.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Sources
 

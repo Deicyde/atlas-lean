@@ -31,7 +31,7 @@ and its first symbol is the symbol for $\mathrm{true}$.
 - [The bottom cell of the start tape](bot-cell.md)
 - [The answer bit of a cell](cell-answer.md)
 - [States of the single-tape emulation](emu-support.md)
-- [Single-tape emulation of a multi-stack machine](emu-tm.md)
+- [Finite single-tape emulation of a multi-stack machine](emu-tm.md)
 - [The emulation's final tape](exists-mem-eval-tr.md)
 - [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
 - [Outputs compose](../comp/comp-computer.md)
@@ -39,7 +39,7 @@ and its first symbol is the symbol for $\mathrm{true}$.
 - [Correctness of the prepending machine](cons-computer-outputs.md)
 - [The single-tape simulation has the same output](../of-tm0/outputs-of-tm0.md)
 - [A multi-stack machine is supported by all its labels](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/supports-univ.md)
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 - [The emulation visits finitely many states](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-supports.md)
 
 ## Sources

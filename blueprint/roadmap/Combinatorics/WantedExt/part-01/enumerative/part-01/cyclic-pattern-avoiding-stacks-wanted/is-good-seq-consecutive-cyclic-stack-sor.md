@@ -15,7 +15,7 @@ the consecutive-cyclic-pattern-avoiding stack-sorting map $s^{[321]}$.
 
 ## Depends on
 
-- [Good sequences](is-good-seq.md)
+- [Good sequences of suffix extrema](is-good-seq.md)
 - [Consecutive-cyclic-pattern-avoiding stack-sorting map](consecutive-cyclic-stack-sort.md)
 
 ## Sources

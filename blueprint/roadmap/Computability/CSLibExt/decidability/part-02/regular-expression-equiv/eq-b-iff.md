@@ -27,7 +27,7 @@ denote have the same language.
 - [Correctness of the membership test](../../part-01/context-free/mem-language-b-iff.md)
 - [Search bound for equivalence](eq-bound.md)
 - [The grammar generates the language of the expression](../regular-expression/language-to-grammar.md)
-- [Matches' eq iff forall length lt](matches-eq-iff-forall-length-lt-2.md)
+- [Short distinguishing words for encoded regular expressions](matches-eq-iff-forall-length-lt-2.md)
 - [Membership test for regular expressions](../regular-expression/mem-b.md)
 - [The grammar of an encoded regular expression](../regular-expression/to-grammar.md)
 

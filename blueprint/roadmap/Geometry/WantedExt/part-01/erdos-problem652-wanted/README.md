@@ -5,7 +5,7 @@ navigation: module
 
 # Erdos Problem652
 
-- [Plane](plane.md)
+- [Euclidean plane for Erdős Problem 652](plane.md)
 - [Points with few distinct distances](count-small-points.md)
 - [Many points with few distinct distances](has-small-kth.md)
 - [Admissible constants in Erdős Problem 652](is-admissible-bound.md)

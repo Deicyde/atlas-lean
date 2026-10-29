@@ -56,8 +56,8 @@ inequality below clears the binomial denominators, so it can be stated
 entirely in `Nat`.
 -/
 
-/-- The number of independent `k`-element subsets of a finite matroid's
-ground set. -/
+/-- **Number of independent sets of a given size.** For a finite matroid $M$ and a natural
+number $k$, this is the number of independent sets of $M$ with exactly $k$ elements. -/
 noncomputable def independentSetCount {α : Type*} (M : Matroid α) [M.Finite]
     (k : ℕ) : ℕ :=
   {I ∈ Set.powersetCard α k | M.Indep I}.ncard

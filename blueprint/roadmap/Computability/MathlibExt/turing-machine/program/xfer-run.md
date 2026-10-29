@@ -24,7 +24,7 @@ and then pushing $n$ copies of $x_i$ on each stack $t_i$.
 - [Exact-length runs of a TM2 machine](run.md)
 - [Adding units to target stacks](add-u.md)
 - [Unary counter](cnt.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 

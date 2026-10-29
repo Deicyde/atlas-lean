@@ -9,7 +9,7 @@ navigation: module
 - [Linear fractional pole series](linear-fractional-pole-series.md)
 - [The linear fractional pole series solves its defining equation](linear-fractional-pole-series-spec.md)
 - [Landen form series](landen-form-series.md)
-- [Landen Form Series identity](landen-form-series-identity.md)
+- [Landen form series of the identity matrix](landen-form-series-identity.md)
 - [Formal integral against $du/u$](integral-div-x.md)
 - [The formal integral against $du/u$ is a right inverse of $z \, d/dz$](integral-div-x-spec.md)
 - [Landen data](landen-data.md)

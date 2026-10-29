@@ -14,8 +14,8 @@ $\ell = (x, b)$, the variable $x$ does not occur in the restriction of $F$ by $\
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](restrict-2.md)
-- [Vars](vars-2.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Proof depends on
 

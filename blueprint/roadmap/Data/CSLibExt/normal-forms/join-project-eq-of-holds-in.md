@@ -15,7 +15,7 @@ lean: Cslib.Databases.join_project_eq_of_holdsIn
 
 - [Functional dependency](../functional-dependencies/fd.md)
 - [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Natural join](../relational-algebra/join.md)
 - [Projection of a relation](../relational-algebra/project.md)

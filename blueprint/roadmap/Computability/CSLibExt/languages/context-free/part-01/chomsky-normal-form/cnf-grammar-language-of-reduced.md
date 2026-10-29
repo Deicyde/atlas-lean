@@ -14,7 +14,7 @@ the binarization of $g$ generates exactly the language of $g$.
 ## Depends on
 
 - [Reduced grammars](../reduced/is-reduced.md)
-- [Cnf Grammar](cnf-grammar.md)
+- [Binarization of a grammar](cnf-grammar.md)
 
 ## Proof depends on
 
@@ -36,7 +36,7 @@ the binarization of $g$ generates exactly the language of $g$.
 - [Valuations bound the language of a grammar](../basic/language-le-of-valuation.md)
 - [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 - [Encoding symbols as basic nonterminals of the binarized grammar](to-cnf-nt.md)
-- [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](../../part-02/yields/yields-iff-derives.md)
 - [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources

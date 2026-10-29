@@ -209,8 +209,9 @@ public theorem_wanted centralBinom_add_ne_of_two_le_of_large (x a b : ℕ) (hx :
     (ha : 0 < a) (hb : 0 < b) (hk : 150 ≤ a + b) :
     (a + b).centralBinom ≠ a.centralBinom * (x + 2 * b).choose b
 
-/-- Proposition 4: for positive `a`, `b`, `x ≥ 2` and `x < a + b < 150`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(x+2b, b)`.
+/-- **Central binomial products with $x \ge 2$ and $a + b < 150$.** Let $x$, $a$, $b$ be natural
+numbers with $a \ge 1$, $b \ge 1$, $x \ge 2$ and $x < a + b < 150$. Then
+$\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 Source: Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*,
 INTEGERS 26 (2026), Article A26, Proposition 4 (`integers-2026-A26-prop-4`). -/

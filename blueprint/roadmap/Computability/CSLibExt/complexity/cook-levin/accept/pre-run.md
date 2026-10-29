@@ -52,7 +52,7 @@ $\mathsf{CB} = T W + A + k_1 H g$, and every other counter empty.
 - [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
 - [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

@@ -31,12 +31,12 @@ It records only that the generator is a finite machine.
 - [Labels of the initial-row generator](gl.md)
 - [Stacks of a counter machine with an input stack](ik.md)
 - [Alphabets of a counter machine with an input stack](i.md)
-- [Stages of the literal routine](ls.md)
-- [Labels of the initial-row generator](lb.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [Loop phases of the initial-row generator](ph.md)
 - [Labels of the first precomputation part](ps1.md)
 - [Labels of the second precomputation part](ps2.md)
-- [The generator](iprog.md)
+- [The initial-row generator](iprog.md)
 
 ## Sources
 

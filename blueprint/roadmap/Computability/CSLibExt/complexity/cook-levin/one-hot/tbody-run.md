@@ -57,7 +57,7 @@ time loop with flag false, the same counters, and output stack $E \, o$ (concate
 - [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
 - [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources

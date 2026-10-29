@@ -22,7 +22,7 @@ The iteration terminates because each step that does not stop adds a variable of
 
 - [Body of a clause contained in a set](body-in.md)
 - [Forward-chaining step](derive.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 

@@ -26,7 +26,7 @@ $z \in S^{t+1}$, of the joint weight of $z$ and $x_0, \dots, x_t$.
 ## Proof depends on
 
 - [The Viterbi variables are attained](exists-path-prob-eq-viterbi.md)
-- [Path weights are bounded by the Viterbi variables](path-prob-le-viterbi.md)
+- [Path weights of a hidden Markov model are bounded by the Viterbi variables](path-prob-le-viterbi.md)
 
 ## Sources
 

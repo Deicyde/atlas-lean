@@ -40,7 +40,7 @@ one.
 - [Composite label of an $M_1$ label](lab.md)
 - [Lifting a statement of the first machine](lift.md)
 - [Lifting a statement of the second machine](lift-2.md)
-- [Mid Poly](mid-poly.md)
+- [Intermediate length bound of the composite machine](mid-poly.md)
 - [Assembling the stacks of the composite machine](mk-stk.md)
 - [Pop label of the first copy loop](pop1.md)
 - [Pop label of the second copy loop](pop2.md)

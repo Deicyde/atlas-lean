@@ -13,7 +13,7 @@ navigation: module
 - [The sample has at most half the length, rounded up](length-sample-le.md)
 - [The sample is no longer than the list](length-sample-le-length.md)
 - [The sample of a sorted list is sorted](pairwise-sample.md)
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 - [A sorted merge rearranges the concatenation](perm-sorted-merge.md)
 - [Length of a sorted merge](length-sorted-merge.md)
 - [A sorted merge is sorted](pairwise-sorted-merge.md)

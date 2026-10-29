@@ -13,4 +13,4 @@ navigation: collection
 - [Integer Multiplication](integer-multiplication-wanted/README.md)
 - [Permute To Unimodal](permute-to-unimodal-wanted/README.md)
 - [Real Closed Field QE](real-closed-field-qewanted/README.md)
-- [Turing Recursive Wanted](turing-recursive-equiv.md)
+- [Recursive functions are the Turing-computable functions](turing-recursive-equiv.md)

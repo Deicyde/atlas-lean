@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Steiner Ratio Constant](steiner-ratio-constant.md)
+- [The Steiner ratio of the Euclidean plane](steiner-ratio-constant.md)
 
 ## Sources
 

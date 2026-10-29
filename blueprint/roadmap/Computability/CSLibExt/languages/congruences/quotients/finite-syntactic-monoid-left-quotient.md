@@ -14,7 +14,7 @@ monoid of the left quotient $u^{-1} L = \{x \mid ux \in L\}$ is finite.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 

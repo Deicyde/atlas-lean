@@ -25,7 +25,7 @@ $\mathfrak m$ is zero.
 ## Proof depends on
 
 - [Prime factorization isomorphism for fractional ideals](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
-- [Factorization Mul Equiv prime Unit Fractional Ideal](factorization-mul-equiv-prime-unit-fract.md)
+- [Factorization of a prime of a number field](factorization-mul-equiv-prime-unit-fract.md)
 
 ## Sources
 

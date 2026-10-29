@@ -18,12 +18,12 @@ returns a value $e$ with $e \le d(a, b)$.
 
 ## Depends on
 
-- [Dist2](dist2.md)
-- [Strip Scan](strip-scan.md)
+- [Squared distance in the plane](dist2.md)
+- [Closest-pair strip scan](strip-scan.md)
 
 ## Proof depends on
 
-- [Scan From](scan-from.md)
+- [Strip scan from a point](scan-from.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

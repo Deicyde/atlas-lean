@@ -38,7 +38,7 @@ navigation: module
 ## Endpoints and events
 
 - [Left endpoint events precede right endpoint events](key-left-lt-right.md)
-- [Left mem of right mem](left-mem-of-right-mem.md)
+- [A sweep prefix with a right endpoint has its left endpoint](left-mem-of-right-mem.md)
 
 ## Invariants of the status list
 

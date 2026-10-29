@@ -25,7 +25,7 @@ variables that $c$ may assign to.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Heap configurations](hconfig.md)
 
 ## Sources

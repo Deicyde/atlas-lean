@@ -13,7 +13,7 @@ function $f$ on $n$ variables with $f(x \circ \pi) = f(x)$ for every input $x$.
 
 ## Depends on
 
-- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 
 ## Sources
 

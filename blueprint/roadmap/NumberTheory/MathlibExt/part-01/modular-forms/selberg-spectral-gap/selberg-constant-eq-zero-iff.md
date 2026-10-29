@@ -21,7 +21,7 @@ $0 < \lambda < 1/4$.
 ## Proof depends on
 
 - [Congruence subgroup of the modular group](is-congruence-subgroup.md)
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
 - [Congruence gaps are bounded by Selberg's constant](exceptional-gap-le-selberg-constant.md)
 - [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)

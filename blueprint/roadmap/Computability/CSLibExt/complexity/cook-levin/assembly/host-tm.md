@@ -38,7 +38,7 @@ precomputation is attached.
 ## Proof depends on
 
 - [Clause kinds of the accept generator](../accept/ak.md)
-- [Stages of the literal routine](../accept/ls.md)
+- [Stages of the accept generator's literal routine](../accept/ls.md)
 - [Precomputation stages of the accept generator](../accept/ps.md)
 - [Stacks of the Cook–Levin host machine](hk.md)
 - [Labels of the Cook–Levin host machine](hl.md)
@@ -48,7 +48,7 @@ precomputation is attached.
 - [Stages of the transition-clause generator's literal routine](../family/ls.md)
 - [Stages of the transition-clause generator's precomputation](../family/ps.md)
 - [Clause kinds of the initial-row generator](../init-family/cl.md)
-- [Stages of the literal routine](../init-family/ls.md)
+- [Stages of the literal routine (initial-row generator)](../init-family/ls.md)
 - [Loop phases of the initial-row generator](../init-family/ph.md)
 - [Labels of the first precomputation part](../init-family/ps1.md)
 - [Labels of the second precomputation part](../init-family/ps2.md)

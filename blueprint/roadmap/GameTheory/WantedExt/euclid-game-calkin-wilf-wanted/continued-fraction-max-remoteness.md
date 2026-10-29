@@ -23,7 +23,7 @@ algorithm, a result of Hopkins and Tangboonduangjit; that half is not part of th
 ## Depends on
 
 - [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
 - [The game Euclid](euclid-game.md)
 

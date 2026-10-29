@@ -17,8 +17,8 @@ the pair of empty partitions) is counted.
 
 ## Depends on
 
-- [Distinct Even Parts Count](distinct-even-parts-count.md)
-- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
+- [Partitions whose even parts are distinct](distinct-even-parts-count.md)
+- [Partitions whose odd parts are distinct](distinct-odd-parts-count.md)
 - [Bipartitions into distinct parts](distinct-parts-bipartition-count.md)
 - [Partitions with no part congruent to 2 modulo 4](parts-not-two-mod-four-count.md)
 

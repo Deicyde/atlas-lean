@@ -36,8 +36,11 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- The state of a vertex relative to a vertex set `S` (Mertens, Definition 1): occupied
-(in `S`), covered (not in `S` but adjacent to `S`), or uncovered.
+/-- **Domination states.** A domination state is one of three labels: uncovered, covered or
+occupied.
+
+Relative to a set $S$ of vertices of a graph, a vertex is occupied if it lies in $S$, covered if
+it lies outside $S$ but is adjacent to a vertex of $S$, and uncovered otherwise.
 
 Source: Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the
 King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 1. -/
@@ -152,7 +155,9 @@ def DominationCompatible (R : SimpleGraph V) (τ σ : V → DominationState) : P
     (τ i = covered → σ i = occupied ∨ ∃ j, R.Adj i j ∧ τ j = occupied)
 
 open scoped Classical in
-/-- The number `occ(σ)` of occupied vertices of a row state.
+/-- **Number of occupied vertices.** Let $V$ be a finite set and let $\sigma$ assign a domination
+state (uncovered, covered or occupied) to each element of $V$. The occupied count
+$\operatorname{occ}(\sigma)$ is the number of elements $i \in V$ such that $\sigma(i)$ is occupied.
 
 Source: Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the
 King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 6. -/

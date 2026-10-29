@@ -21,9 +21,9 @@ vertices of $\tau$. When $R$ is the cycle on $m$ vertices this is Mertens' matri
 ## Proof depends on
 
 - [Compatible row signatures](domination-compatible.md)
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
-- [Occupied Count](occupied-count.md)
+- [Number of occupied vertices](occupied-count.md)
 
 ## Sources
 

@@ -6,9 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckOdometer_of_forall
 ---
 
-# Zeck Odometer of forall
+# The odometer on sequences without two consecutive zeros
 
-On `(10)^∞` and `(01)^∞` (no two consecutive zero digits) the odometer returns `0^∞`.
+**The odometer on sequences without two consecutive zeros.** Let $T$ be the Zeckendorf
+odometer and let $x = (x_k)_{k \in \mathbb{N}}$ be a digit sequence with $x_k \in \{0, 1\}$ such
+that for every $k \ge 2$ we have $x_k = 1$ or $x_{k+1} = 1$. Then $T(x)$ is the zero sequence.
+
+Among the Zeckendorf-adic integers, the sequences satisfying this hypothesis are the two whose
+digits from index $2$ on alternate, $(10)^\infty$ and $(01)^\infty$.
 
 ## Depends on
 

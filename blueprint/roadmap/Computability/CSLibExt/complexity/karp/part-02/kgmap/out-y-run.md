@@ -19,7 +19,7 @@ bits unchanged for vc; every stack other than $Y$ and $O$ is unchanged.
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Pair-bit transform of each mode](fb.md)
 - [The KG-map machine](prog.md)

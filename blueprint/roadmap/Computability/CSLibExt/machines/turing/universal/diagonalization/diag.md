@@ -23,7 +23,7 @@ Sipser's Theorem 9.10.
 - [Codes for single-tape machines](../code/code.md)
 - [The clocked evaluator](../code/eval-steps.md)
 - [Symbol of an input bit](../code/bit-sym.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Sources
 

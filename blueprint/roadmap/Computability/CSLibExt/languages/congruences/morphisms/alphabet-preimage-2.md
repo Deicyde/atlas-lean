@@ -19,7 +19,7 @@ by applying $f$ to each letter of $w$.
 
 ## Proof depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimages preserve finiteness of the syntactic monoid](finite-syntactic-monoid-alphabet-preimag.md)
 - [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 

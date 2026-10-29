@@ -35,7 +35,7 @@ and $H$, and $C$ is the step bound for one whole clause of $L$ for $T$ and $H$.
 - [Step bound for one clause of the transition-family generator](clause-b.md)
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 

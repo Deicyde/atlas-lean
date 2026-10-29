@@ -29,7 +29,7 @@ $\min(k, m)$.
 
 - [Decrease-key replaces one key](decrease-key-elements.md)
 - [Root list after decrease-key](decrease-key-trees-of-cut.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-3.md)
+- [Multiset of a Fibonacci heap](../../../part-02/fibonacci-heap/elements-3.md)
 - [Find-min fails exactly on the empty Fibonacci heap](../../../part-02/fibonacci-heap/find-min-eq-none-iff.md)
 - [Find-min returns a lower bound of the Fibonacci heap](../../../part-02/fibonacci-heap/find-min-le.md)
 - [Find-min returns an element of the Fibonacci heap](../../../part-02/fibonacci-heap/find-min-mem.md)

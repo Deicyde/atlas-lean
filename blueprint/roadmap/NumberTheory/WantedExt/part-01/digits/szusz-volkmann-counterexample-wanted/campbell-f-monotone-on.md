@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.campbellF_monotoneOn
 ---
 
-# Campbell F monotone On
+# Monotonicity of Campbell's interpolation
 
-Lemma 5: `f` is monotonically increasing (non-decreasing) on `ℝ_{≥ 0}`.
+**Monotonicity of Campbell's interpolation.** Campbell's interpolation $f$ is monotone
+(non-decreasing) on $[0, \infty)$: for all real numbers $x$ and $y$ with $0 \le x \le y$,
+$f(x) \le f(y)$.
 
 ## Depends on
 

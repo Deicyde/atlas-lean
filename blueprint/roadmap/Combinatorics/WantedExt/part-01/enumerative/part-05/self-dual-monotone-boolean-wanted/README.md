@@ -4,7 +4,7 @@ navigation: module
 
 # Self Dual Monotone Boolean
 
-- [Concatenation of Boolean functions](boolean-cube-concat.md)
+- [Concatenation of a list of Boolean functions](boolean-cube-concat.md)
 - [Concatenation at the all-false input](boolean-cube-concat-false.md)
 - [Currying monotone Boolean functions (Lemma 1)](monotone-boolean-function-order-iso-curr.md)
 - [Duality reverses order and exchanges joins and meets](boolean-function-dual-antitone-sup-inf.md)

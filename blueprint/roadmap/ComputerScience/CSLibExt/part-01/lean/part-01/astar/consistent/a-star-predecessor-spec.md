@@ -26,7 +26,7 @@ both finite, and $g(v) = g(u) + w(u, v)$.
 
 ## Proof depends on
 
-- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced weights telescope along paths](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
 - [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 - [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)

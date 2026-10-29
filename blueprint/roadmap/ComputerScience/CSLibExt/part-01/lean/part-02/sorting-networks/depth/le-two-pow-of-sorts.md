@@ -23,7 +23,7 @@ inputs.
 - [Depth bound for a comparator list](depth-le.md)
 - [Comparators within an interval](../bitonic/within.md)
 - [Extension of a Boolean vector by false](../bitonic/extend-false.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 
 ## Proof depends on
 

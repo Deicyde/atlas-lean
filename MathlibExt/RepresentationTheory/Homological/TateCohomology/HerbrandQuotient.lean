@@ -115,7 +115,12 @@ theorem herbrandQuotient_pos (M : Rep R G) (h : HerbrandFinite M) :
   rw [herbrandQuotient_eq]
   exact div_pos (Nat.cast_pos.mpr Nat.card_pos) (Nat.cast_pos.mpr Nat.card_pos)
 
-/-- Invariance under carrier equivalences in degrees `0` and `-1`. -/
+/-- **Herbrand quotients agree when Tate cohomology in degrees $0$ and $-1$ is in bijection.**
+Let $G$ be a finite group, $R$ a commutative ring and $M$, $N$ two $R$-linear representations
+of $G$ whose Tate cohomology groups $\hat H^0(G, M)$, $\hat H^{-1}(G, M)$, $\hat H^0(G, N)$ and
+$\hat H^{-1}(G, N)$ are finite. If there are bijections between the underlying sets of
+$\hat H^0(G, M)$ and $\hat H^0(G, N)$ and between those of $\hat H^{-1}(G, M)$ and
+$\hat H^{-1}(G, N)$, then the Herbrand quotients of $M$ and $N$ are equal. -/
 theorem herbrandQuotient_congr {M N : Rep R G} {hM : HerbrandFinite M}
     {hN : HerbrandFinite N}
     (e₀ : ↥(tateCohomology M 0) ≃ ↥(tateCohomology N 0))

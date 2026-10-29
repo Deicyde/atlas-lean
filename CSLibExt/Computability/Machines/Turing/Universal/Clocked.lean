@@ -916,8 +916,10 @@ private theorem le_length_of_mem {q a q' s : ℕ} : ∀ {es : List (ℕ × ℕ �
     · have := le_length_of_mem h
       omega
 
-/-- The step bound: linear in the length of the code stack, the state, and the head cell and its
-two neighbours. -/
+/-- **Step bound of one simulated step.** For a code $c$ and a configuration $k$ with state $q$,
+head cell $h$, nearest left cell $l$ and nearest right cell $r$ (each read as the blank $0$ when
+there is no such cell), let $|C|$ be the length of the code stack of $c$. The step bound of $c$
+at $k$ is $10|C| + q + h + l + r + 10$. -/
 def stepTime (c : Code) (k : Code.Cfg) : ℕ :=
   10 * (codeCells c).length + k.q + k.head + k.left.headI + k.right.headI + 10
 
@@ -1132,10 +1134,10 @@ theorem loop_run {c : Code} {M : ℕ} (hM : (codeCells c).length ≤ M) :
       · obtain ⟨v', hr'⟩ := ih₂ k'' h'
         exact ⟨v', ((hr.trans (h₂.le le_rfl)).trans hr').mono hB⟩
 
-/-- **Step bound of the clocked universal machine.** For a code $c$ and a clock $T$, let $|C|$ be
-the length of the code stack of $c$. The step bound of the clocked universal machine on the clock
-$T$ is $T + 1$ times the cost of one round of the loop on configurations whose numbers are at
-most $|C| + 2$, that is, $(T + 1)(14|C| + 19)$. -/
+/-- **Step bound of the clocked simulation.** For a code $c$ and a clock $T$, let $|C|$ be the
+length of the code stack of $c$. The step bound of the clocked simulation on the clock $T$ is
+$T + 1$ times the cost of one round of the loop on configurations whose numbers are at most
+$|C| + 2$, that is, $(T + 1)(14|C| + 19)$. -/
 def clockTime (c : Code) (T : ℕ) : ℕ := (T + 1) * loopStepTime c ((codeCells c).length + 2)
 
 /-- **The clocked universal machine on stacks.** Let $c$ be a code, $x$ a list of bits and $T$ a
@@ -1480,9 +1482,9 @@ private theorem length_cells_le {M : ℕ} : ∀ {l : List ℕ}, (∀ a ∈ l, a 
 
 /-- **Step bound of the clocked universal machine.** For a code $c$, a list of bits $x$ and a
 natural number $T$, the step bound of the whole machine on $(c, x, T)$ is the sum of three terms:
-the cost of reading the input on $(c, x, T)$, the step bound of the clocked loop on the clock
-$T$, and the output bound $4\,(|x| + T + 1)\,(|C| + 3) + 8$, where $|x|$ is the length of $x$
-and $|C|$ is the length of the code stack of $c$. -/
+the cost of reading the input on $(c, x, T)$, the step bound of the clocked simulation on the
+clock $T$, and the output bound $4\,(|x| + T + 1)\,(|C| + 3) + 8$, where $|x|$ is the length of
+$x$ and $|C|$ is the length of the code stack of $c$. -/
 def univTime (c : Code) (x : List Bool) (T : ℕ) : ℕ :=
   parseTime c x T + clockTime c T + (4 * ((x.length + T + 1) * ((codeCells c).length + 3)) + 8)
 

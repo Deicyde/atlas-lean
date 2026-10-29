@@ -20,7 +20,7 @@ specifies pruning at the level of edges on the surviving vertices.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Adjacency in a rooted tree](adjacent.md)
 - [Pruning the subtrees rooted at a vertex](prune-at.md)
 

@@ -13,14 +13,14 @@ navigation: module
 
 ## Eavesdropping security from DDH
 
-- [Pick](pick.md)
+- [Message selected by the challenge bit](pick.md)
 - [ElGamal eavesdropping adversary](adversary.md)
 - [ElGamal eavesdropping experiment](eav-game.md)
 - [Eavesdropping advantage against ElGamal](eav-advantage.md)
-- [Ddh Real](ddh-real.md)
-- [Ddh Rand](ddh-rand.md)
+- [Real DDH experiment](ddh-real.md)
+- [Random DDH experiment](ddh-rand.md)
 - [Advantage of a DDH distinguisher](ddh-advantage.md)
-- [Reduction](reduction.md)
+- [DDH distinguisher from an ElGamal eavesdropper](reduction.md)
 - [ElGamal eavesdropping game equals the real DDH experiment of the reduction](eav-game-eq-ddh-real.md)
 - [The reduction is a fair coin on random DDH triples](ddh-rand-reduction-true.md)
 - [ElGamal eavesdropping advantage equals a DDH advantage](eav-advantage-eq-ddh-advantage.md)

@@ -72,7 +72,8 @@ open Set
 open scoped Real
 open WithLp
 
-/-- **Euclidean 3-space.** The real vector space $\mathbb{R}^3$ with the Euclidean norm. -/
+/-- **Euclidean 3-space for the Fáry–Milnor theorem.** Euclidean 3-space is the real vector
+space $\mathbb{R}^3$ with the Euclidean inner product and norm. -/
 abbrev Space := EuclideanSpace ℝ (Fin 3)
 
 /-- **Period of a parametrised knot.** The period used for parametrised knots is the real number

@@ -13,7 +13,7 @@ or not, their sorted merge is sorted in nondecreasing order.
 
 ## Depends on
 
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 
 ## Sources
 

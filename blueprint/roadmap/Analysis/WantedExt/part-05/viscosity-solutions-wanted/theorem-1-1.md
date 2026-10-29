@@ -20,7 +20,7 @@ $t > 0$, and $x(t) = \sqrt{2h}\, t\, a + \varepsilon(t)$ for every $t \ge 0$.
 
 ## Depends on
 
-- [Is NBody Solution](is-nbody-solution.md)
+- [Solutions of the $N$-body problem](is-nbody-solution.md)
 - [Configurations without collisions](without-collisions.md)
 
 ## Sources

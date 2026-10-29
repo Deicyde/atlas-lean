@@ -25,7 +25,7 @@ lean: Cslib.Language.IsContextFree.substitution
 - [Letter numbering for the substitution grammar](code.md)
 - [Letter decoding for the substitution grammar](decode.md)
 - [The substitution grammar](grammar.md)
-- [Main Rule](main-rule.md)
+- [Main production of the substitution grammar](main-rule.md)
 - [Derivations keep the terminals among those of the grammar](mem-grammar-terminals-of-derives.md)
 - [Productions of the substitution grammar](rules.md)
 - [Letter productions of the substitution grammar](sub-rule.md)

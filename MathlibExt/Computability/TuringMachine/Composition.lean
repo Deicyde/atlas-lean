@@ -642,7 +642,13 @@ def glue (h₁ : TM2ComputableInPolyTime eα eβ f) (h₂ : TM2ComputableInPolyT
     h₁.tm.Γ h₁.tm.k₁ → X h₂.tm :=
   fun y => h₂.inputAlphabet.symm (h₁.outputAlphabet y)
 
-/-- `n + c·p₁(n)`: a bound on the length of the intermediate string. -/
+/-- **Intermediate length bound of the composite machine.** Let $h_1$ be a polynomial-time TM2
+computation of $f : \alpha \to \beta$ with polynomial time bound $p_1 \in \mathbb{N}[X]$, and let
+$c$ be the push bound of the machine of $h_1$. This is the polynomial
+$X + c\,p_1 \in \mathbb{N}[X]$.
+
+Evaluated at the length $n$ of an input, its value $n + c\,p_1(n)$ bounds the length of the
+intermediate string that the machine of $h_1$ writes for the composite machine. -/
 noncomputable def midPoly (h₁ : TM2ComputableInPolyTime eα eβ f) : Polynomial ℕ :=
   Polynomial.X + Polynomial.C (pushBound h₁.tm) * h₁.time
 
@@ -743,7 +749,15 @@ noncomputable def compOutputs (h₁ : TM2ComputableInPolyTime eα eβ f)
       Nat.add_zero, hL]
     omega
 
-/-- `TM2ComputableInPolyTime` is closed under composition (Mathlib's `proof_wanted`). -/
+/-- **The composite polynomial-time TM2 computation.** Let $h_1$ be a polynomial-time TM2
+computation of $f : \alpha \to \beta$ with respect to encodings $e_\alpha$ and $e_\beta$, and
+let $h_2$ be one of $g : \beta \to \gamma$ with respect to $e_\beta$ and $e_\gamma$. This is the
+polynomial-time TM2 computation of $g \circ f$ with respect to $e_\alpha$ and $e_\gamma$ whose
+machine is the composite machine of the machines of $h_1$ and $h_2$ with the glue map between
+them, whose input alphabet bijection is that of $h_1$, whose output alphabet bijection is that of
+$h_2$, and whose time bound is the composite time bound of $h_1$ and $h_2$.
+
+It witnesses that polynomial-time TM2 computability is closed under composition. -/
 noncomputable def compComputable (h₁ : TM2ComputableInPolyTime eα eβ f)
     (h₂ : TM2ComputableInPolyTime eβ eγ g) : TM2ComputableInPolyTime eα eγ (g ∘ f) where
   tm := compTM h₁.tm h₂.tm (glue h₁ h₂)

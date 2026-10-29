@@ -22,6 +22,6 @@ navigation: transparent
 - [Clique](clique/README.md)
 - [Connectivity](connectivity/README.md)
 - [Contraction](contraction/README.md)
-- [Coxeter Graph](coxeter-graph.md)
+- [Coxeter graph](coxeter-graph.md)
 - [Cycle Cover](cycle-cover/README.md)
 - [Degeneracy](degeneracy/README.md)

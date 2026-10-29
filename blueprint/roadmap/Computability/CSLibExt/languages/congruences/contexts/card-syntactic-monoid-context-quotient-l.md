@@ -16,7 +16,7 @@ as many elements as the image of the syntactic morphism of $L$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Context quotient](context-quotient.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 - [Syntactic morphism](../syntactic/syntactic-morphism.md)

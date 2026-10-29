@@ -26,8 +26,8 @@ $r_1 = r_2$ followed by $E$. If one side is a constant and the other a node, it 
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Size of a term](size.md)
 - [Variables of a term](vars.md)

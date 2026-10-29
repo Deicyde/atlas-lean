@@ -15,7 +15,7 @@ navigation: module
 ## The algorithm
 
 - [Hierholzer's recursion](visit.md)
-- [Hierholzer](hierholzer.md)
+- [Hierholzer's algorithm](hierholzer.md)
 
 ## Edge lists
 
@@ -33,9 +33,9 @@ navigation: module
 
 ## Correctness
 
-- [Hierholzer's algorithm returns a trail](hierholzer-trail.md)
-- [Hierholzer's algorithm finds Euler paths](hierholzer-is-euler-path.md)
-- [Hierholzer's algorithm finds Euler circuits](hierholzer-is-euler-circuit.md)
+- [Hierholzer's algorithm returns a trail in a directed multigraph](hierholzer-trail.md)
+- [Hierholzer's algorithm finds Euler paths in directed multigraphs](hierholzer-is-euler-path.md)
+- [Hierholzer's algorithm finds Euler circuits in directed multigraphs](hierholzer-is-euler-circuit.md)
 - [Running time of Hierholzer's algorithm](hierholzer-time.md)
 
 ## Necessity

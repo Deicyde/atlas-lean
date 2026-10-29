@@ -29,7 +29,7 @@ This is a step of Hopcroft and Karp's analysis.
 
 - [Exact level of a right vertex](exact-level.md)
 - [Unmatched left vertex](free.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [A phase leaves no new unmatched left vertex](free-of-free-flip.md)
 - [A matched right vertex is reached no later than its partner](mem-layers-snd-of-mate.md)
 - [Levels of the pairs of a phase](pair-levels-of-mem-phase.md)

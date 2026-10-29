@@ -99,8 +99,9 @@ inductive Eval : List Value → Tm → Value → Prop
   | letIn {ρ : List Value} {e b : Tm} {v w : Value}
       (he : Eval ρ e v) (hb : Eval (v :: ρ) b w) : Eval ρ (.letIn e b) w
 
-/-- **Lifting a renaming under a binder.** The lift $r^{\uparrow}$ of a renaming
-$r : \mathbb{N} \to \mathbb{N}$ of de Bruijn indices sends $0$ to $0$ and $i + 1$ to $r(i) + 1$. -/
+/-- **Lifting a renaming under a binder, for the closure-conversion target.** The lift
+$r^{\uparrow}$ of a renaming $r : \mathbb{N} \to \mathbb{N}$ of de Bruijn indices sends $0$ to $0$
+and $i + 1$ to $r(i) + 1$. -/
 def liftRen (r : Nat → Nat) : Nat → Nat
   | 0 => 0
   | i + 1 => r i + 1

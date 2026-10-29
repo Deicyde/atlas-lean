@@ -23,8 +23,8 @@ stack other than $c$, $M$ and $P$.
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 - [The marking machine for PATH](prog.md)
 - [Walk step of the PATH marking machine](walk-s.md)

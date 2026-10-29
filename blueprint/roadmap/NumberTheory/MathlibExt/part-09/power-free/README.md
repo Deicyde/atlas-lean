@@ -6,7 +6,7 @@ navigation: module
 # Power Free
 
 - [Power-free natural numbers](is-power-free.md)
-- [Is Power Free iff](is-power-free-iff.md)
+- [Characterization of power-free numbers](is-power-free-iff.md)
 - [The exponent of a power-free number is at least two](two-le.md)
 - [Power-free numbers are positive](pos.md)
 - [A k-free number has no prime k-th power divisor](not-dvd.md)

@@ -1757,8 +1757,25 @@ theorem sd_step_run {T H t : ℕ} {a : List Bool} (s : List (M.Γ M.k₀))
     Tr a (E.layout.xIdx H (t + 1) (E.sa (E.sitIdx (runI M (initList M s) t)))) :=
   E.sd_hold ha ht _ (E.run_good s t) hdH hcode hrow
 
-/-- **Composition with the shift family.** The S-definition clauses discharge `sh_step_run_pos`'s
-`hS`: from the positive row-`t` invariant alone, in-range cells of row `t+1` hold. -/
+/-- **Composition with the shift family.** Let $E$ be an encoding of the machine $M$ with $K$
+stacks, layout $L$, $N$ situations and situation tables $\mathrm{la}$, $\mathrm{wa}$,
+$\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$ and $\mathrm{pu}$, let $d$ be the window depth of $M$,
+let $H \in \mathbb{N}$ with $d \le H$, and let $T, t \in \mathbb{N}$ with $t < T$. Call a
+variable true under an assignment $a$ when its index is less than the length of $a$ and $a$ is
+true there. Write $X[r, x]$ for the label/state variable $x$ of row $r$ and $C[r, k, j, x]$ for
+the cell variable of row $r$, stack $k$, depth $j$ and symbol code $x$ (both at height $H$). For
+a configuration $c$ write $\kappa(c)$ for its (label, state) code and $\gamma_c(k, j)$ for the
+code of its cell at stack $k$ and depth $j$ ($0$ if there is none). Fix an input list $s$, let
+$c_n$ be the configuration after $n$ steps of the idle-extended run of $M$ from the initial
+configuration on $s$, and let $i$ be the situation index of $c_t$. Let $a$ satisfy both the
+transition clause family of $L$ for $T$, $H$ and $N$ with the tables $\mathrm{la}$ and
+$\mathrm{wa}$ and with $\mathrm{sa}$ in place of the next-label table, and the cell-shift clause
+family of $L$ with the tables $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ for $N$,
+$T$ and $H$. Suppose that every stack of $c_t$ has length at most $H - d$, that
+$X[t, \kappa(c_t)]$ is true, and that $C[t, k', j', \gamma_{c_t}(k', j')]$ is true for all
+$k' < K$ and $j' < H$. Then for every $k < K$ and every $j$ with
+$\mathrm{pl}(i, k) \le j < H - \max(\mathrm{pl}(i, k), \mathrm{cn}(i, k)) + \mathrm{pl}(i, k)$,
+the variable $C[t + 1, k, j, \gamma_{c_{t+1}}(k, j)]$ is true. Subtraction is truncated at $0$. -/
 theorem sdsh_step_run_pos {T H t : ℕ} {a : List Bool} (s : List (M.Γ M.k₀))
     (hs : cnfSat (Family.family E.layout E.la E.sa E.wa T H E.N) a)
     (ha : cnfSat (Shift.shFamily E.layout E.sa E.pl E.cn E.pu E.N T H) a) (ht : t < T)
@@ -3221,9 +3238,21 @@ theorem lit_s (s : List (M.Γ M.k₀)) {H t i : ℕ} (hi : i < E.N) :
 
 /-! #### Family by family -/
 
-/-- **D3Fam families (update, S-def), completeness.** If the head literal of the real situation
-is a run literal, every clause `(t, i)` is satisfied: by the head when `i` is the real situation,
-otherwise by a false body literal (situation injectivity). -/
+/-- **Transition families with a run-literal head are satisfied by the run.** Let $E$ be an
+encoding of the machine $M$ with layout $L$, $N$ situations, label/state table $\mathrm{la}$ and
+window table $\mathrm{wa}$, let $d$ be the window depth of $M$, and let $T, H \in \mathbb{N}$ with
+$d \le H$. Write $X[r, x]$ for the index of the label/state variable $x$ of row $r$ at height
+$H$. Fix an input list $s$, let $c_t$ be the configuration after $t$ steps of the idle-extended
+run of $M$ from the initial configuration on $s$, and let $\nu : \mathbb{N} \to \mathbb{N}$ be a
+next-label table such that $\mathrm{la}$, $\nu$ and $\mathrm{wa}$ are well formed for $L$ at
+height $H$ for every situation $i < N$. Suppose that for every $t < T$, with $i_t$ the situation
+index of $c_t$, the index $X[t + 1, \nu(i_t)]$ is one of the real run's literals of $s$ at
+height $H$. Then the assignment of the real run's literals of $s$ for $T$ and $H$ satisfies the
+transition clause family of $L$ with the tables $\mathrm{la}$, $\nu$ and $\mathrm{wa}$ for $T$,
+$H$ and $N$.
+
+In clause $(t, i)$ the head literal is true when $i$ is the situation index of $c_t$; otherwise
+the clause is satisfied by a body literal whose variable is false, by situation injectivity. -/
 theorem fam_complete {T H : ℕ} (s : List (M.Γ M.k₀)) (nx : ℕ → ℕ)
     (hwf : ∀ i < E.N, Family.WF E.layout E.la nx E.wa H i) (hdH : depth M ≤ H)
     (hnx : ∀ t < T,

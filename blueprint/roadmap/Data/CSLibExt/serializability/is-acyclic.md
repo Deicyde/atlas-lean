@@ -17,7 +17,7 @@ transaction increases along every edge of the precedence graph.
 
 ## Depends on
 
-- [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
+- [Acyclic directed graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
 - [Conflict-serializable schedule](conflict-serializable.md)
 - [Operation of a schedule](op.md)
 - [Precedence graph](precedence-graph.md)
@@ -31,7 +31,7 @@ transaction increases along every edge of the precedence graph.
 - [Read or write access](access.md)
 - [Conflict equivalence](conflict-equiv.md)
 - [Serial schedule](is-serial.md)
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 - [Operations whose relative order matters](order-matters.md)
 - [Edge of the precedence graph](precedence-edge.md)
 - [One transaction before another in a schedule](txn-before.md)

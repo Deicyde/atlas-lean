@@ -17,7 +17,7 @@ $m$ and the denotation of the loop relates $m$ to $s'$.
 ## Depends on
 
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Commands of IMP](../syntax/cmd.md)
 - [Relational denotational semantics of IMP](denote.md)
 - [IMP program states](../syntax/state.md)

@@ -30,7 +30,7 @@ $|Q| - |P|$ is not truncated.
 - [A partition has at most as many blocks as there are states](length-le.md)
 - [A set of states split by another](splits.md)
 - [Number of blocks after one round](length-round-p.md)
-- [Length round W le](length-round-w-le.md)
+- [Growth of the waiting list in one round](length-round-w-le.md)
 - [Preimage of a set under a letter](preimage.md)
 - [One refinement round of the partition](round-p.md)
 - [One update of the waiting list](round-w.md)

@@ -20,10 +20,10 @@ $\Delta$.
 
 ## Proof depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Natural deduction](../natural-deduction/derivable.md)
 - [Maximal consistent sets absorb consistent extensions](mem-of-consistent-insert.md)
-- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](mem-of-provable.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 - [Modus ponens for provability from sets](mp.md)
 - [Refutability as inconsistency](provable-not-iff-not-consistent-insert.md)

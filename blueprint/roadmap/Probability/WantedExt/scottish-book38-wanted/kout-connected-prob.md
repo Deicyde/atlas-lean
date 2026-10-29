@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [KOut Connected](kout-connected.md)
+- [Assignments that connect everyone](kout-connected.md)
 
 ## Sources
 

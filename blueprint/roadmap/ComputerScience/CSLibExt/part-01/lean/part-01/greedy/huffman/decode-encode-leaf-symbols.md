@@ -17,10 +17,10 @@ $s_1, \dots, s_n$. In particular, the encoding succeeds.
 ## Depends on
 
 - [Huffman tree](huffman-tree.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Decoding a bit string](decode.md)
 - [Huffman encoding of a message](encode.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 

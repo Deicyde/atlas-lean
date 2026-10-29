@@ -27,7 +27,7 @@ $m = 1$ the printed argument is $12715$, and $\mathrm{bped}_{3,3}(12715) \equiv 
 
 ## Depends on
 
-- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
+- [The number of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

@@ -27,7 +27,9 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- The number `p̄(n)` of overpartitions of `n` (`p̄(3) = 8`).
+/-- **Number of overpartitions.** For a natural number $n$, $\overline{p}(n)$ is the number of
+overpartitions of $n$, that is, of pairs consisting of a partition $p$ of $n$ and a set of
+overlined part sizes, each of which occurs as a part of $p$. For example, $\overline{p}(3) = 8$.
 
 Source: Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*,
 Journal of Integer Sequences 27 (2024), Article 24.7.1, Section 1. -/
@@ -169,10 +171,11 @@ public theorem_wanted sigmaMexOverpartition_eq_D3 (n : ℕ) (hn : 0 < n) :
     sigmaMexOverpartition 1 n = D3 n
 
 /--
-As `n → ∞`, `σmex̄(n)` is asymptotic to
-`exp(π√n) / (8 n^(3/4))`.  The limit is encoded by
-`Asymptotics.IsEquivalent atTop`, with natural values coerced to reals;
-there is no mathematical deviation.
+**Asymptotic formula for the overpartition mex sum.** Let $\sigma\overline{\mathrm{mex}}(n)$ be
+the sum, over all overpartitions $\pi$ of $n$, of $\overline{\mathrm{mex}}(\pi)$, the least
+positive integer that does not occur among the non-overlined parts of $\pi$. Then
+$\sigma\overline{\mathrm{mex}}(n) \sim e^{\pi\sqrt{n}} / (8 n^{3/4})$ as $n \to \infty$, that is,
+the ratio of the two sides tends to $1$.
 
 Source: Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*,
 Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 3.

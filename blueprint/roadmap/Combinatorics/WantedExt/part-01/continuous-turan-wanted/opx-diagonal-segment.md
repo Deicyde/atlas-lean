@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_diagonal_segment
 ---
 
-# Opx diagonal segment
+# Continuous Turán number of a diagonal segment
 
-Theorem 4.2: the closed segment from `(0, 0)` to `(a, b)`, `a, b > 0`, has
-`opx(n, P) = (a + b)n - ab`, for `n ≥ max(a, b)`. CORRECTED READING: the paper omits
-`a, b ≤ n`, which its construction `(0, a) × (0, n) ∪ (0, n) × (0, b) ⊆ [0, n]²` uses; for
-`n < max(a, b)` every open `S ⊆ [0, n]²` avoids `P`, so `opx(n, P) = n²` (e.g. `a = b = 2`,
-`n = 1`: `1 ≠ 0`).
+**Continuous Turán number of a diagonal segment.** Let $a, b, n$ be real numbers with
+$0 < a \le n$ and $0 < b \le n$, and let $P$ be the closed segment from $(0, 0)$ to $(a, b)$.
+Then the continuous Turán number satisfies $\operatorname{opx}(n, P) = (a + b)n - ab$.
+
+The hypotheses $a \le n$ and $b \le n$ are missing from the paper, whose lower-bound construction
+$(0, a) \times (0, n) \cup (0, n) \times (0, b) \subseteq [0, n]^2$ uses them: for
+$0 < n < \max(a, b)$ no subset of $[0, n]^2$ contains $P$, so $\operatorname{opx}(n, P) = n^2$
+(for example $a = b = 2$ and $n = 1$, where $(a + b)n - ab = 0 \ne 1$).
 
 ## Depends on
 

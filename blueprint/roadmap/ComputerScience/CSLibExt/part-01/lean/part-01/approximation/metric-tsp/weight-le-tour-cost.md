@@ -23,7 +23,7 @@ A tour minus its closing edge is a spanning path, which is a spanning tree.
 - [Rooted forest in left-child right-sibling form](forest.md)
 - [Weight of a forest below a vertex](weight.md)
 - [Metric cost function](is-metric-cost.md)
-- [Is Min Spanning](is-min-spanning.md)
+- [Minimum spanning tree of a vertex list](is-min-spanning.md)
 - [Tour of a vertex list](is-tour.md)
 - [Cost of a closed tour](tour-cost.md)
 

@@ -17,7 +17,7 @@ of $a$ in $T$ is undefined exactly when $a$ is not among the leaf symbols of $T$
 
 - [Huffman tree](huffman-tree.md)
 - [Root-to-leaf path code](path-code.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 

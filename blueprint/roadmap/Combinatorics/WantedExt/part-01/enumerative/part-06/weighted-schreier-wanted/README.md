@@ -19,7 +19,7 @@ navigation: module
 - [Weighted Schreier counts on and above the diagonal](weighted-schreier-count-add.md)
 - [Weighted Schreier counts for $0 < m < k$](weighted-schreier-count-of-pos-of-lt.md)
 - [Weighted Schreier counts equal twice a Fibonacci number for small offsets](weighted-schreier-count-add-of-le.md)
-- [Weighted Schreier Count recurrence](weighted-schreier-count-recurrence.md)
+- [Recurrence for weighted Schreier counts](weighted-schreier-count-recurrence.md)
 - [Effect of the seed on seeded partial sums](seeded-partial-sums-sub-zero.md)
 - [Adding one to a sequence shifts its iterated partial sums by a binomial coefficient](iterated-partial-sum-add-one-sub.md)
 - [Iterated partial sums of shifted Fibonacci numbers](iterated-partial-sum-fib-add-two.md)

@@ -17,7 +17,7 @@ points is at least $\delta$.
 
 ## Proof depends on
 
-- [Dist2](../closest-pair/dist2.md)
+- [Squared distance in the plane](../closest-pair/dist2.md)
 
 ## Sources
 

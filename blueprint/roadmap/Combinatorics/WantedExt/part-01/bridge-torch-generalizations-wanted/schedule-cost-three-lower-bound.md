@@ -14,7 +14,7 @@ least $V(n) = n^2/6 + 2n - 11/2$.
 ## Depends on
 
 - [Bridge schedules](is-bridge-schedule.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

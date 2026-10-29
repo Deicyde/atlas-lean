@@ -19,7 +19,7 @@ vertices reachable from $s$ in the residual graph of $f$.
 - [Cut capacity](cut-capacity.md)
 - [Edmonds–Karp maximum flow](edmonds-karp.md)
 - [Flow value](flow-value.md)
-- [Residual Cut](residual-cut.md)
+- [Residual cut](residual-cut.md)
 
 ## Proof depends on
 
@@ -32,7 +32,7 @@ vertices reachable from $s$ in the residual graph of $f$.
 - [Feasible flow](is-feasible.md)
 - [The Edmonds–Karp flow is feasible](edmonds-karp-feasible.md)
 - [No augmenting path remains after Edmonds–Karp](edmonds-karp-no-augmenting-path.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 - [Edges of the residual graph](residual-graph-edge-iff.md)
 
 ## Sources

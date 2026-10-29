@@ -33,7 +33,7 @@ navigation: module
 - [Shape of ascent sequences avoiding 001 and 210](ascent-seq-avoid-form.md)
 - [Ascent sequences avoiding 001 and 210 are counted by Rascal numbers](apk-card-succ-eq-rascal-z.md)
 - [Generalized Fleron recurrence](rascal-gen-z-fleron.md)
-- [Theorem 19](rascal-gen-eq-sum.md)
+- [Generalized Rascal numbers as sums of products of binomial coefficients](rascal-gen-eq-sum.md)
 - [Row sums of generalized Rascal numbers](sum-rascal-gen-row.md)
 - [A power-of-two row sum of generalized Rascal numbers](sum-rascal-gen-four-mul-add-three.md)
 - [Forward differences of generalized Rascal row sums](iterate-forward-diff-sum-rascal-gen.md)

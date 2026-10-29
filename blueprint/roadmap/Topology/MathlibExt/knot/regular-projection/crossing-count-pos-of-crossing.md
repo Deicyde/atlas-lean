@@ -15,7 +15,7 @@ is positive.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Regular projections](is-regular-projection.md)
 - [Crossing count of a regular projection](crossing-count-2.md)
 

@@ -21,7 +21,7 @@ the ramification index of $q$ over $R$.
 
 ## Proof depends on
 
-- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Tamely ramified prime](is-tamely-ramified-at.md)
 
 ## Sources
 

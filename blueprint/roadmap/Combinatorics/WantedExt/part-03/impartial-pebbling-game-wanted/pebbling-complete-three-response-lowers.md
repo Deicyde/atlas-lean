@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_response_lowersMax
 ---
 
-# Pebbling complete Three response lowers Max
+# Pebbling on the triangle: a reply that brings every pile below the bound
 
-Lemma 7: let `0 ≤ ℓ ≤ 2k - 1` and let a `K_3` game have `6k - 2ℓ` pebbles with largest pile
-`a₁` satisfying `k + 1 ≤ a₁ ≤ 3k - ℓ`. Then after any move by player `A`, player `B` has a
-move to a game whose largest pile is at most `3k - ℓ - 1` (`k` positive).
+**Pebbling on the triangle: a reply that brings every pile below the bound.** Let $k$ be a
+positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
+move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Let $\ell$ be a
+natural number with $\ell \le 2k - 1$, and let $a$ be a position with $6k - 2\ell$ pebbles in
+total in which some pile has at least $k + 1$ pebbles and every pile has at most $3k - \ell$
+pebbles. Then for every position $b$ reachable from $a$ by one move there is a position $c$
+reachable from $b$ by one move in which every pile has at most $3k - \ell - 1$ pebbles.
 
 ## Depends on
 

@@ -20,7 +20,7 @@ with discount $\gamma$ as $n \to \infty$.
 - [Markov decision process](mdp.md)
 - [Stochastic Markov decision process](stochastic.md)
 - [Optimal value of a discounted Markov decision process](optimal-value.md)
-- [Value Iteration](value-iteration.md)
+- [Value iteration](value-iteration.md)
 
 ## Proof depends on
 

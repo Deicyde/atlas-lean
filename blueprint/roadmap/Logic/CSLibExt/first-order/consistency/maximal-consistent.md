@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 
 ## Sources
 

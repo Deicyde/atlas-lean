@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_eight_mul
 ---
 
-# Not is MVanishing Family sum Add Mul Prod one eight mul
+# $F_1$ modulo $8u$ with $u > 1$ is not $m$-vanishing for $m > 0$
 
-Lemma 8: for `n = 8u` with `u > 1`, `F_1` over `ℤ/n` is not `m`-vanishing for any
-`m > 0`.
+**$F_1$ modulo $8u$ with $u > 1$ is not $m$-vanishing for $m > 0$.** Let $u > 1$ be a natural
+number and $n = 8u$. Then for every $m > 0$ the sum-plus-product family $F_1$ over $\mathbb{Z}/n$,
+$F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishing.
 
 ## Depends on
 

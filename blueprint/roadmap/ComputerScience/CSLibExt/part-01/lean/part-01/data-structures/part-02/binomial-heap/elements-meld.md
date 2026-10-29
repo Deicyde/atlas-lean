@@ -16,7 +16,7 @@ the multisets of elements of $H_1$ and $H_2$.
 ## Depends on
 
 - [Binomial heap](binomial-heap.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Melding binomial heaps](meld.md)
 
 ## Proof depends on

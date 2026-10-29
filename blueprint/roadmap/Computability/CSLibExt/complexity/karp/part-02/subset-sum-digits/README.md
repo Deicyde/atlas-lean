@@ -22,4 +22,4 @@ navigation: module
 - [Triangular numbers](tri.md)
 - [The pair walk lists the vertex pairs in reverse](walk-m-pairs.md)
 - [Vertex marks for a vertex](mk-l.md)
-- [Walk touches](walk-touches.md)
+- [Touch bits from the pair walk of a vertex](walk-touches.md)

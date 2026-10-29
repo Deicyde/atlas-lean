@@ -15,7 +15,7 @@ alignment obtained by listing the columns of $A$ in reverse order has the same s
 ## Depends on
 
 - [Alignment](alignment.md)
-- [Alignment Score](alignment-score.md)
+- [Score of an alignment](alignment-score.md)
 
 ## Proof depends on
 

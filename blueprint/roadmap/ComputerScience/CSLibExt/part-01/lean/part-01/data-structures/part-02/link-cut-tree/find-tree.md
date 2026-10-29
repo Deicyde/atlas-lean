@@ -17,7 +17,7 @@ trees, the first tree whose vertices contain $x$, or nothing when no tree contai
 
 ## Proof depends on
 
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 
 ## Sources
 

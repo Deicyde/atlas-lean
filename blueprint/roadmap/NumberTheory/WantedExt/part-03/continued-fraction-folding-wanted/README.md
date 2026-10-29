@@ -21,5 +21,5 @@ navigation: module
 - [The second paperfolding continued-fraction word](paperfolding-cont-frac-word-one.md)
 - [The paperfolding continued-fraction word $A_2$ for constant $x_k = 6$](paperfolding-cont-frac-word-const-six-tw.md)
 - [Continued fraction of a paperfolding sum in Cloitre and ruler order](paperfolding-sum-cont-frac-cloitre-ruler.md)
-- [Paperfolding Sum cont Frac recursion](paperfolding-sum-cont-frac-recursion.md)
+- [Continued fraction of a paperfolding sum via the words $A_k$](paperfolding-sum-cont-frac-recursion.md)
 - [Digit frequencies in Cloitre's approximants](tendsto-cloitre-approx-count-div-length.md)

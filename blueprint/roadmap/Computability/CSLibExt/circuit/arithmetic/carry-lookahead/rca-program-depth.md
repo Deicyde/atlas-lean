@@ -17,7 +17,7 @@ and $d(j) = c(q + 1)$ if $j \bmod 5 = 4$.
 
 ## Depends on
 
-- [Gate depths of the ripple-carry adder](gate-depth.md)
+- [Gate-depth formula for the ripple-carry adder](gate-depth.md)
 - [Arithmetic basis](../ripple-carry/arith-signature.md)
 - [The depth interpretation](depth-interpretation.md)
 - [Gate program of the ripple-carry adder](../ripple-carry/rca-program.md)
@@ -27,7 +27,7 @@ and $d(j) = c(q + 1)$ if $j \bmod 5 = 4$.
 - [Arithmetic gate symbols](../ripple-carry/arith-gate.md)
 - [Carry depth in the ripple-carry adder](carry-depth.md)
 - [Carry wire](../ripple-carry/carry-wire.md)
-- [Line](../ripple-carry/line.md)
+- [Gates of the ripple-carry adder](../ripple-carry/line.md)
 - [Binary gate line](../ripple-carry/bin-line.md)
 - [Depth of an arithmetic gate](depth-interpretation-arith.md)
 

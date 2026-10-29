@@ -16,9 +16,9 @@ navigation: module
 
 ## Mv Polynomial Stable
 
-- [Roots im nonpos univariate Specialization](roots-im-nonpos-univariate-specializatio.md)
-- [Is Real Rooted univariate Specialization of is Real Stable](is-real-rooted-univariate-specialization.md)
-- [Sub pderiv](sub-pderiv.md)
-- [Sub pderiv](sub-pderiv-2.md)
-- [Mixed Differential](mixed-differential.md)
-- [Mixed Differential](mixed-differential-2.md)
+- [Roots of specializations of stable polynomials lie in the closed lower half-plane](roots-im-nonpos-univariate-specializatio.md)
+- [Real-rootedness of univariate specializations of real stable polynomials](is-real-rooted-univariate-specialization.md)
+- [Subtracting a partial derivative preserves stability](sub-pderiv.md)
+- [Subtracting a partial derivative preserves real stability](sub-pderiv-2.md)
+- [The mixed differential preserves stability](mixed-differential.md)
+- [The mixed differential preserves real stability](mixed-differential-2.md)

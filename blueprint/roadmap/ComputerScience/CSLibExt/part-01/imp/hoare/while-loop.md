@@ -19,7 +19,7 @@ $\lbrace I \rbrace\ \mathtt{while}\ b\ \mathtt{do}\ c\ \lbrace I \wedge \neg b \
 
 - [Assertion](assertion.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Commands of IMP](../syntax/cmd.md)
 - [IMP program states](../syntax/state.md)
 - [Validity of a Hoare triple](valid.md)

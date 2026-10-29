@@ -520,7 +520,13 @@ section Machine
 
 variable (L : Layout) (la na : ℕ → ℕ) (wa : ℕ → ℕ → ℕ → ℕ) (N : ℕ)
 
-/-- Literal `j`'s position is `t·W + kA j · (H·g) + kB j · W + cst i j`. -/
+/-- **Stack index of a literal in a transition clause.** For a layout with $K$ stacks and window
+depth $d$, the stack index $k_A(j)$ of literal $j$ is $\lfloor (j - 1)/d \rfloor$ when
+$1 \le j \le Kd$, and $0$ when $j = 0$ or $j > Kd$.
+
+With the row offset $k_B$ and the constant offset $c_i$ of situation $i$, the position of literal
+$j$ of clause $(t, i)$ at height $H$ is $tW + k_A(j)\,Hg + k_B(j)\,W + c_i(j)$, where $g$ is the
+number of symbol codes and $W$ the number of variables per time step. -/
 def kA (j : ℕ) : ℕ := if j = 0 then 0 else if j ≤ L.KK * L.d then (j - 1) / L.d else 0
 /-- **Row offset of a literal in a transition clause.** For a layout with $K$ stacks and window
 depth $d$, the row offset $k_B(j)$ of literal $j$ is $0$ when $j \le Kd$ and $1$ when $j > Kd$.
@@ -566,7 +572,32 @@ def litP (i : Fin N) (j : Fin L.nLits) : LS → TM2.Stmt GΓ (GL N L.nLits) Bool
   | .slot => emitR .out (encodeSlot (some (sgn L j))) (.lit i j .dq)
   | .dq => xfer (.c .Q) [] (.lit i j .dq) (GL.after i j)
 
-/-- The generator. Input: `T` on `Tn`, `H` on `Hs`, everything else empty. -/
+/-- **Generator machine for the transition clause families.** Fix a layout $L$ with label/state
+block size $A$, $K$ stacks and $g$ symbol codes, tables $\mathrm{la}$, $\mathrm{na}$,
+$\mathrm{wa}$, and a number $N$ of situations, and let $n = Kd + 2$ be the number of literals of
+a clause, where $d$ is the window depth. The generator is a multi-stack machine with a Boolean
+output stack, the unit counters of the generator, and a Boolean internal state; below, moving a
+counter onto targets means popping it until it is empty and pushing one unit onto every target
+for each unit popped, and each multiplication uses $\mathsf{md}$ as its index counter and
+$\mathsf{tmp}$ as scratch. Its precomputation pushes $g$ units on $\mathsf{Gc}$, adds
+$\mathsf{Hs} \cdot \mathsf{Gc}$ to $\mathsf{HG}$, pushes $A$ units on $\mathsf{Wc}$, pushes $K$
+units on $\mathsf{Ka}$, adds $\mathsf{Ka} \cdot \mathsf{HG}$ to $\mathsf{Wc}$, empties
+$\mathsf{Ka}$, moves $\mathsf{Tn}$ onto $\mathsf{Ka}$ and $\mathsf{tmp}$ and then $\mathsf{tmp}$
+onto $\mathsf{Tn}$, pushes one unit on $\mathsf{Ka}$, adds $\mathsf{Ka} \cdot \mathsf{Wc}$ to
+$\mathsf{Vc}$, empties $\mathsf{Ka}$ and goes to the loop head. At the loop head it pops
+$\mathsf{Tn}$; if a unit was popped it pushes a unit on $\mathsf{Ti}$, adds
+$\mathsf{Tn} \cdot \mathsf{Wc}$ to $\mathsf{TW}$ and goes to the clause routine of situation
+$N - 1$ (to the end of the time step if $N = 0$); if $\mathsf{Tn}$ was empty it moves
+$\mathsf{Ti}$ onto $\mathsf{Tn}$ and goes to its final label, where it halts. The clause routine
+of situation $i < N$ prepends $[\mathrm{false}, \mathrm{false}]$ to the output, moves
+$\mathsf{Vc}$ onto $\mathsf{P}$ and $\mathsf{tmp}$ and then $\mathsf{tmp}$ onto $\mathsf{Vc}$,
+runs the literal routines of situation $i$ for literals $n - 1, n - 2, \dots, 0$ in turn, drains
+$\mathsf{P}$ while prepending $[\mathrm{false}, \mathrm{true}]$ to the output once per unit, and
+goes to the clause routine of situation $i - 1$, or to the end of the time step if $i = 0$. At
+the end of a time step it empties $\mathsf{TW}$ and returns to the loop head.
+
+It is meant to be started with $T$ on $\mathsf{Tn}$, $H$ on $\mathsf{Hs}$ and every other
+counter empty. -/
 def prog : GL N L.nLits → TM2.Stmt GΓ (GL N L.nLits) Bool
   | .pre .eg => emitR (.c .Gc) (List.replicate L.g ()) (.pre (.hg .head))
   | .pre (.hg s) => mulS .Hs .md .Gc .HG .tmp (fun s => .pre (.hg s)) (.pre .ew) s
@@ -1009,7 +1040,15 @@ theorem sits_run {T H t : ℕ} (ht : t < T) (hwf : ∀ i < N, WF L la na wa H i)
       refine this.bud (Bud.fin ?_ rfl)
       rw [Nat.succ_mul (i + 1)]; omega
 
-/-- Counter values at rest inside the time loop (all but `Tn`, `Ti`). -/
+/-- **Time-loop invariant of the transition-family generator.** Let $L$ be a layout with
+label/state block size $A$, $K$ stacks and $g$ symbol codes, let $T, H \in \mathbb{N}$, and write
+$W = A + KHg$ for the number of variables per time step and $V = (T + 1)W$ for the total number of
+variables. Counter values $f$ of the generator satisfy the time-loop invariant when the scratch
+counters $\mathrm{Q}$, $\mathrm{Ka}$, $\mathrm{tmp}$, $\mathrm{md}$, $\mathrm{c1}$, $\mathrm{c2}$
+are all $0$, $f(\mathrm{P}) = 0$, $f(\mathrm{TW}) = 0$, $f(\mathrm{HG}) = Hg$,
+$f(\mathrm{Wc}) = W$ and $f(\mathrm{Vc}) = V$.
+
+The counters $\mathrm{Tn}$, $\mathrm{Ti}$, $\mathrm{Hs}$ and $\mathrm{Gc}$ are not constrained. -/
 structure LoopP (L : Layout) (T H : ℕ) (f : CK → ℕ) : Prop extends Rest f where
   P : f .P = 0
   TW : f .TW = 0
@@ -1298,7 +1337,12 @@ theorem genBound_le (L : Layout) (N T H : ℕ) : genBound L N T H ≤ genC L N *
   exact this.trans (genBound_uni _ _ (by omega) (by omega))
 
 open Polynomial in
-/-- The bound as a `Polynomial ℕ` in `T + H` (the form `TM2ComputableInPolyTime` uses). -/
+/-- **Time-bound polynomial of the clause-family generator.** For a layout $L$ and a number $N$
+of situations, this is the polynomial $c\,(X + 1)^5$ with natural-number coefficients, where $c$
+is the constant of the generator's time bound for $L$ and $N$.
+
+Evaluated at $T + H$ it is $c\,(T + H + 1)^5$, the generator's time bound, in the polynomial form
+that polynomial-time computability of a multi-stack machine uses. -/
 noncomputable def genPoly (L : Layout) (N : ℕ) : Polynomial ℕ := C (genC L N) * (X + 1) ^ 5
 
 theorem genPoly_eval (L : Layout) (N T H : ℕ) :

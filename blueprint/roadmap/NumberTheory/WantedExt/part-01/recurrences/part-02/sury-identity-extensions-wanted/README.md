@@ -4,7 +4,7 @@ navigation: module
 
 # Sury Identity Extensions
 
-- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Fibonacci numbers extended to negative indices](fib-at-int.md)
 - [Lucas numbers at integer indices](lucas-at-int.md)
 - [Sury's identity for a second-order recurrence starting at 1](second-order-recurrence-initial-one-sury.md)
 - [Offset form of Sury's identity for a second-order recurrence](second-order-recurrence-offset-sury-sum.md)

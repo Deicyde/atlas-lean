@@ -13,7 +13,7 @@ lean: Nat.IsComposite.not_prime
 
 ## Depends on
 
-- [Is Composite](is-composite.md)
+- [Composite numbers](is-composite.md)
 
 ## Sources
 

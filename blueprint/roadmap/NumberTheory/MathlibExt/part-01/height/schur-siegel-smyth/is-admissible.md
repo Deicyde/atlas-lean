@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Totally positive algebraic integers](is-totally-positive.md)
-- [Absolute Trace](absolute-trace.md)
+- [Absolute trace](absolute-trace.md)
 
 ## Sources
 

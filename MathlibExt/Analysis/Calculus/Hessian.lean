@@ -150,9 +150,10 @@ theorem hessianMatrix_symmetric {n : ℕ} (f : (Fin n → ℝ) → ℝ)
     hessianMatrix_eq_fderiv_fderiv f hf x i j]
   exact (hf.contDiffAt.isSymmSndFDerivAt (by simp)).eq _ _
 
-/-- At a local minimum of a twice continuously differentiable real function, the second
-derivative is nonnegative. This is the necessary direction of the one-variable second derivative
-test. -/
+/-- **The second derivative is nonnegative at a local minimum.** Let $g : \mathbb{R} \to \mathbb{R}$
+be twice continuously differentiable. If $g$ has a local minimum at $x$, then $g''(x) \ge 0$.
+
+This is the necessary direction of the one-variable second derivative test. -/
 theorem _root_.IsLocalMin.deriv_deriv_nonneg {g : ℝ → ℝ} {x : ℝ}
     (hmin : IsLocalMin g x) (hg : ContDiff ℝ 2 g) : 0 ≤ deriv (deriv g) x := by
   by_contra h

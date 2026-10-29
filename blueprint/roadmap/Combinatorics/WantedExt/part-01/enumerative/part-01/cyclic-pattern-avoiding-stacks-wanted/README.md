@@ -5,7 +5,7 @@ navigation: module
 # Cyclic Pattern Avoiding Stacks
 
 - [Sequences with the same relative order](same-relative-order.md)
-- [Pattern containment](contains-pattern-seq.md)
+- [Classical pattern containment in a sequence](contains-pattern-seq.md)
 - [Consecutive pattern containment](contains-consecutive-pattern-seq.md)
 - [Restricted stack-sorting from a given stack](restricted-stack-sort-aux.md)
 - [West's stack-sorting map](west-stack-sort.md)
@@ -22,7 +22,7 @@ navigation: module
 - [Superimpose examples](superimpose-examples.md)
 - [The permutation $\xi_n$](xi-permutation.md)
 - [The parity-split permutations for six and seven](xi-permutation-six-seven.md)
-- [Good sequences](is-good-seq.md)
+- [Good sequences of suffix extrema](is-good-seq.md)
 - [Permutations sorted by a map](sorted-permutations.md)
 - [Small cases of good sequences and of sorting by the consecutive $321$-cyclic stack](is-good-seq-consecutive-cyclic-stack-sor.md)
 - [$n - 2$ passes of $SC_{(123)}$ sort every permutation, and $n - 3$ do not](cyclic-sorting-machine-123-iterate-sorts.md)

@@ -27,6 +27,6 @@ navigation: module
 ## The M-step maximizes `Q`
 
 - [Decomposition of the EM objective for the Bernoulli mixture](em-q-eq.md)
-- [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [The M-step of the Bernoulli mixture maximizes the EM objective](em-q-le-em-step.md)
 - [Each EM step for the Bernoulli mixture does not decrease the log-likelihood](log-lik-le-em-step.md)
-- [The log-likelihood is monotone along the EM iterates](log-lik-iterate-em-step-monotone.md)
+- [The log-likelihood is monotone along the EM iterates of a Bernoulli mixture](log-lik-iterate-em-step-monotone.md)

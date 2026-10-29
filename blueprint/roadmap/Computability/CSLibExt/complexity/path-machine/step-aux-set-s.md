@@ -16,8 +16,8 @@ state and the stacks $S$ with $M$ replaced by the bits of $l$ with its first ent
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Setting the first mark](set-head.md)
 - [Mark-setting step](set-s.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)

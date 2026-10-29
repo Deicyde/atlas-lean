@@ -25,7 +25,7 @@ $c + 1$, previous vertex $a$ and remaining vertices $q$.
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
 - [Stack layout between vertex steps](lay.md)
 - [Stack layout during a vertex step](mid.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 

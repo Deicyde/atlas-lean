@@ -14,7 +14,7 @@ at the input $(b, x_1, \dots, x_n)$ if $b = 0$ and the value $h(x)$ there if $b 
 
 ## Depends on
 
-- [Concatenation of Boolean functions](bool-fun-concat.md)
+- [Concatenation of two Boolean functions](bool-fun-concat.md)
 
 ## Sources
 

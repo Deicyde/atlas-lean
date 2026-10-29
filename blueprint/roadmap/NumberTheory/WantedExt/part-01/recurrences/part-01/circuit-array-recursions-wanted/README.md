@@ -7,7 +7,7 @@ navigation: module
 - [Annihilator of a sequence](annihilates-seq.md)
 - [Every operator annihilates the zero sequence](annihilates-seq-zero.md)
 - [The characteristic polynomial annihilates the solutions of its recurrence](annihilates-seq-char-poly-of-is-solution.md)
-- [Annihilates Seq X sub C pow](annihilates-seq-x-sub-c-pow.md)
+- [The operator $E - c$ annihilates the powers of $c$](annihilates-seq-x-sub-c-pow.md)
 - [The Addition-Multiplication Lemma for annihilators](annihilates-seq-sum-prod-and-mul.md)
 
 ## Section 2: the circuit array
@@ -36,7 +36,7 @@ navigation: module
 ## Section 4
 
 - [Column recursion for the one-variable circuit array](circuit-array-x-inductive.md)
-- [Circuit Array X row zero](circuit-array-x-row-zero.md)
+- [Row zero of the one-variable circuit array](circuit-array-x-row-zero.md)
 - [Row one of the one-variable circuit array](circuit-array-x-row-one.md)
 - [Row two of the one-variable circuit array](circuit-array-x-row-two.md)
 - [Row 0 of the multivariable circuit array](circuit-array-m-row-zero.md)

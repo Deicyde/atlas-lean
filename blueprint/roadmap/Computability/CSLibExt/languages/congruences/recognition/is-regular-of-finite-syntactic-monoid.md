@@ -13,12 +13,12 @@ finite is regular.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 
 - [The syntactic DFA](syntactic-dfa.md)
-- [Syntactic DFA accepts](syntactic-dfa-accepts.md)
+- [The syntactic DFA accepts its language](syntactic-dfa-accepts.md)
 
 ## Sources
 

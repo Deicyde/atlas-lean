@@ -33,7 +33,7 @@ cases.
 - [Overlap test with comparison count](overlaps-with-cost.md)
 - [The instrumented overlap test returns the plain result](overlaps-with-cost-fst.md)
 - [Comparison count of the overlap test](overlaps-with-cost-snd.md)
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 - [Maximum high endpoint at a node](node-max.md)
 
 ## Sources

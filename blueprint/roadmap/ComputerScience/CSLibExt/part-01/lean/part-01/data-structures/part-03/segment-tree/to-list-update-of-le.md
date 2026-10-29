@@ -15,7 +15,7 @@ update of $t$ at $i$ with $y$ has the same leaf list as $t$.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Size of a segment tree](size.md)
 - [Leaf list of a segment tree](to-list.md)

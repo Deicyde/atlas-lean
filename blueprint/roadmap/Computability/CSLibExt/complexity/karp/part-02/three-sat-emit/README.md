@@ -38,7 +38,7 @@ navigation: module
 - [Output clause of one literal](lit-cl.md)
 - [Fresh numbers used by a run of literals](nz.md)
 - [Output clauses of a walked list of literals](walk-f.md)
-- [Walk F chain](walk-f-chain.md)
+- [Walking a whole clause gives its chain](walk-f-chain.md)
 
 ## Literals, clauses, formulas
 

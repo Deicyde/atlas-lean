@@ -17,16 +17,16 @@ the decomposition of $R_1 \cup R_2$ into $R_1$ and $R_2$ is lossless for $F$ wit
 
 - [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
 - [Functional dependency](../functional-dependencies/fd.md)
-- [Lossless Join](lossless-join.md)
+- [Lossless decomposition into two schemes](lossless-join.md)
 
 ## Proof depends on
 
 - [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Natural join](../relational-algebra/join.md)
-- [Join comm](../relational-algebra/join-comm.md)
+- [Commutativity of the natural join](../relational-algebra/join-comm.md)
 - [Heath's theorem](join-project-eq-of-holds-in.md)
 - [Projection of a relation](../relational-algebra/project.md)
 

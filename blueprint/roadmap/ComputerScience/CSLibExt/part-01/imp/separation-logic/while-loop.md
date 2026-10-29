@@ -18,7 +18,7 @@ $\lbrace I \rbrace\ \mathtt{while}\ b\ \mathtt{do}\ c\ \lbrace I \wedge \neg b \
 ## Depends on
 
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Heap assertion](hassertion.md)
 - [Heap](../heap/heap.md)
 - [Heap commands](../heap-step/heap-cmd.md)

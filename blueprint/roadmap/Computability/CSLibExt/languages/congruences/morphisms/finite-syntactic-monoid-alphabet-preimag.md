@@ -16,7 +16,7 @@ $f$ to each letter of $w$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 
 ## Proof depends on

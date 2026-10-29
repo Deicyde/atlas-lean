@@ -25,7 +25,7 @@ oriented boundary of the rectangle.
 
 ## Depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

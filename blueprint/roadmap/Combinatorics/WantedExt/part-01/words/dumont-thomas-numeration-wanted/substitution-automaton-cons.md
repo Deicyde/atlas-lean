@@ -16,7 +16,7 @@ $i \ge |\eta(b)|$, the run on $iw$ is undefined.
 
 ## Depends on
 
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

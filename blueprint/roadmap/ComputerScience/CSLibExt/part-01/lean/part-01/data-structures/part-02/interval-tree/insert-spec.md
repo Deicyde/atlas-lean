@@ -22,7 +22,7 @@ tree of $T$ and the identifier of $e$ differs from the identifier of $x$.
 - [Interval tree entry](entry.md)
 - [Indexed interval tree](indexed-interval-tree.md)
 - [Representation invariant of an indexed interval tree](invariant.md)
-- [Insert With Cost](insert-with-cost.md)
+- [Insertion by identifier with cost](insert-with-cost.md)
 - [Interval](interval.md)
 - [Boolean interval validity test](valid-2.md)
 - [Interval tree](tree.md)

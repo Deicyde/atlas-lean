@@ -87,7 +87,10 @@ def columnScore (σ : α → α → ℤ) (gap : ℤ) : Option α × Option α �
   | (none, some _) => gap
   | (none, none) => 0
 
-/-- The score of an alignment: the sum of its column scores. -/
+/-- **Score of an alignment.** Given a substitution score $\sigma$, which assigns an integer
+$\sigma(a, b)$ to all letters $a, b \in \alpha$, and a gap score $g \in \mathbb{Z}$, the score of
+an alignment $A$ over $\alpha$ is the sum, over all columns of $A$, of the score of the column
+with respect to $\sigma$ and $g$. -/
 def alignmentScore (σ : α → α → ℤ) (gap : ℤ) (A : Alignment α) : ℤ :=
   (A.map (columnScore σ gap)).sum
 
@@ -1027,10 +1030,15 @@ section SmithWaterman
 
 variable (σ : α → α → ℤ) (gap : ℤ)
 
-/-- The Smith–Waterman front score: like `nwScoreAux`, but with the `0` floor of local
-alignment. Front-peeling: the recursion drops heads. Exponential-time specification,
-not a memoized table (see the module cost model). Implementation detail: use
-`swCellScore`, not this worker, which returns `0` on insufficient fuel. -/
+/-- **Fuel-bounded Smith–Waterman recursion.** Fix a substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $ax$ for
+the sequence with first element $a$ followed by $x$. For a fuel $n \in \mathbb{N}$ and sequences
+$x, y$ over $\alpha$, the value $F_n(x, y) \in \mathbb{Z}$ is defined by $F_0(x, y) = 0$, by
+$F_{n+1}(x, y) = 0$ if $x$ or $y$ is empty, and by
+$$F_{n+1}(ax, by) = \max\bigl(0,\ F_n(x, y) + \sigma(a, b),\ F_n(x, by) + g,
+\ F_n(ax, y) + g\bigr).$$
+
+This is an exponential-time specification, not a memoized table. -/
 def swCellFront : ℕ → List α → List α → ℤ
   | 0, _, _ => 0
   | _ + 1, [], _ => 0
@@ -1241,7 +1249,13 @@ theorem nwScore_reverse (xs ys : List α) :
     rw [← hscore, ← alignmentScore_reverse σ gap A]
     exact alignmentScore_le_nwScore σ gap xs.reverse ys.reverse A.reverse hA'
 
-/-- **The Needleman–Wunsch recurrence, end-peeling.** -/
+/-- **The Needleman–Wunsch recurrence, end-peeling.** Let
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$ be a substitution score and $g \in \mathbb{Z}$ a gap
+score, and write $N(x, y)$ for the Needleman–Wunsch score of sequences $x, y$ over $\alpha$ with
+respect to $\sigma$ and $g$. For all sequences $x, y$ and letters $a, b \in \alpha$, writing $xa$
+for the sequence $x$ followed by the letter $a$,
+$$N(xa, yb) = \max\bigl(N(x, y) + \sigma(a, b),\ N(x, yb) + g,\ N(xa, y) + g\bigr).$$
+-/
 theorem nwScore_snoc (xs ys : List α) (a b : α) :
     nwScore σ gap (xs ++ [a]) (ys ++ [b]) =
       max (max (nwScore σ gap xs ys + σ a b) (nwScore σ gap xs (ys ++ [b]) + gap))

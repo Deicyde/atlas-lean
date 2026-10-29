@@ -14,7 +14,7 @@ $\mathrm{ped}(225n+133)$ and $\mathrm{ped}(225n+223)$ is congruent to $0$ modulo
 
 ## Depends on
 
-- [Distinct Even Parts Count](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
+- [Partitions whose even parts are distinct](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
 
 ## Sources
 

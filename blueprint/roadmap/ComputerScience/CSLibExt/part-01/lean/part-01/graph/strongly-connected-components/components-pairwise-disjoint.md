@@ -20,7 +20,7 @@ have no vertex in common.
 ## Proof depends on
 
 - [Whole-graph decreasing finish order](../depth-first-search/decreasing-finish-all.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strong connectivity is symmetric](symm.md)
 - [Strong connectivity is transitive](trans.md)
 - [Executable mutual-reachability test](same-component-b.md)

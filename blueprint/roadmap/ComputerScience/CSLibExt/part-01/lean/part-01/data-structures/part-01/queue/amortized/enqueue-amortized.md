@@ -15,7 +15,7 @@ $q$ plus $2$.
 
 ## Depends on
 
-- [Enqueue](enqueue.md)
+- [Timed enqueue](enqueue.md)
 - [Potential of a two-list queue](potential.md)
 
 ## Sources

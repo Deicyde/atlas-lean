@@ -25,7 +25,7 @@ duplicate-freeness and the at-most-one-preferred-child condition carry over.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [Tree of a forest containing a vertex](find-tree.md)
 - [A root path follows parent-child edges downward](is-chain-parent-child-root-path.md)

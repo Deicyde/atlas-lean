@@ -7,9 +7,11 @@ proof: formalized
 lean: padicHilbertSymbol.eq_one_iff
 ---
 
-# Eq one iff
+# When the $p$-adic Hilbert symbol is $1$
 
-The `p`-adic Hilbert symbol is one exactly when its defining equation is solvable.
+**When the $p$-adic Hilbert symbol is $1$.** For a prime $p$ and nonzero
+$a, b \in \mathbb{Q}_p$, the $p$-adic Hilbert symbol $(a, b)_p$ equals $1$ if and only if there
+exist $x, y \in \mathbb{Q}_p$ with $ax^2 + by^2 = 1$.
 
 ## Depends on
 

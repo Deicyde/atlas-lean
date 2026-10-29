@@ -37,7 +37,7 @@ index $\mathbf{k}$ is $z_{\mathbf{k}}$.
 - [Words of $\mathfrak{H}^1$](word-algebra/is-hone-word.md)
 - [Words of $\mathfrak{H}^0$](word-algebra/is-hzero-word.md)
 - [Hoffman block](index/hoffman-block.md)
-- [To List hoffman Block](index/to-list-hoffman-block.md)
+- [Hoffman block as a list](index/to-list-hoffman-block.md)
 - [The monoid of $\mathfrak{H}^1$-words](word-algebra/word-submonoid-hone.md)
 - [The monoid of $\mathfrak{H}^0$-words](word-algebra/word-submonoid-hzero.md)
 - [The letter $x$ as a word](word-algebra/x-word.md)

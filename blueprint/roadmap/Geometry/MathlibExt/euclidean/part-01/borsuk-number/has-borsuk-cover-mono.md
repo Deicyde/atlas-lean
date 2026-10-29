@@ -7,9 +7,13 @@ proof: formalized
 lean: Metric.hasBorsukCover_mono
 ---
 
-# Has Borsuk Cover mono
+# Enlarging a Borsuk cover
 
-Repeating an existing piece enlarges a nonempty set's cover to any greater size.
+**Enlarging a Borsuk cover.** Let $n$, $k$ and $l$ be natural numbers with $k \le l$. If a
+nonempty set $s$ in the Euclidean space $\mathbb{R}^n$ has a $k$-piece Borsuk cover, then $s$ has
+an $l$-piece Borsuk cover.
+
+Repeating an existing piece enlarges the cover to the larger size.
 
 ## Depends on
 

@@ -47,7 +47,7 @@ and every stack other than $L$, $R$, $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchange
 - [The pair walk over lists of marks](../subset-sum-digits/walk-m.md)
 - [The pair walk lists the vertex pairs in reverse](../subset-sum-digits/walk-m-pairs.md)
 - [Run of the subset-sum emitter's pair walk](walk-run.md)
-- [Walk touches](../subset-sum-digits/walk-touches.md)
+- [Touch bits from the pair walk of a vertex](../subset-sum-digits/walk-touches.md)
 - [Place value of a vertex pair in the SUBSET-SUM reduction](../subset-sum/pair-digit.md)
 - [Pairs touching a vertex](../subset-sum/touches.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)

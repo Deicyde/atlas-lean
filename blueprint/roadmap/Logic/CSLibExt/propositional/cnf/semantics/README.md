@@ -10,11 +10,11 @@ navigation: module
 
 ## CNFClause
 
-- [Satisfies](satisfies-2.md)
+- [Satisfaction of a clause](satisfies-2.md)
 
 ## CNF
 
-- [Satisfies](satisfies-3.md)
+- [Satisfaction of a CNF formula](satisfies-3.md)
 
 ## PL
 

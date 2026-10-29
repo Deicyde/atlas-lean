@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Longest common prefix length](lcp.md)
-- [Suffix](suffix.md)
+- [Suffix of a list at an index](suffix.md)
 
 ## Sources
 

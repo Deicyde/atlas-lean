@@ -17,7 +17,7 @@ $k \le x$ for every key $x$ occurring in $T$.
 
 - [Membership in a binary tree](../binary-search-tree/mem.md)
 - [Min-heap ordered binary tree](heap-ordered.md)
-- [Root key of a binary tree](root.md)
+- [Optional root key of a binary tree](root.md)
 
 ## Proof depends on
 

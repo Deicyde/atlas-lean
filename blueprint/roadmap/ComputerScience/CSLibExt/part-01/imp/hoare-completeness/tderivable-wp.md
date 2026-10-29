@@ -28,14 +28,14 @@ there is a terminating execution of $c$ from $s$ ending in a state satisfying $Q
 - [Entailment of assertions](../hoare/entails.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [Loop runs with a given number of iterations](iterates.md)
 - [Counted loop runs are big-step executions](big-step.md)
 - [Every terminating loop run has an iteration count](exists-of-big-step.md)
 - [The iteration count of a terminating loop run](iteration-count-eq.md)
 - [IMP program states](../syntax/state.md)
-- [Strengthen](strengthen-2.md)
+- [Precondition strengthening for total correctness](strengthen-2.md)
 - [Loop iteration count](iteration-count.md)
 
 ## Sources

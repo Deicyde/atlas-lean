@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ulamWordCount
 ---
 
-# Ulam Word Count
+# Number of Ulam words of a given length
 
-The number `#U_n` of Ulam words of length `n`.
+**Number of Ulam words of a given length.** For a natural number $n$, $\#U_n$ denotes the
+number of Ulam words of length $n$, that is, of words $w_1 \cdots w_n$ of length $n$ in the
+letters $0$ and $1$ that are Ulam words.
 
 ## Depends on
 

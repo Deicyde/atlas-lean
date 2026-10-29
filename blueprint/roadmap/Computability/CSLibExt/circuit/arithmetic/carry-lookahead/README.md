@@ -65,6 +65,6 @@ navigation: module
 ## Depth of the ripple-carry adder, for comparison
 
 - [Carry depth in the ripple-carry adder](carry-depth.md)
-- [Gate depths of the ripple-carry adder](gate-depth.md)
+- [Gate-depth formula for the ripple-carry adder](gate-depth.md)
 - [Gate depths of the ripple-carry adder](rca-program-depth.md)
 - [The ripple-carry adder has linear depth](ripple-carry-adder-depth.md)

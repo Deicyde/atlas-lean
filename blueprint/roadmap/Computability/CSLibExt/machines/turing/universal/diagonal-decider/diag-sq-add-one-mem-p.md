@@ -25,7 +25,7 @@ on the raw bits.
 
 ## Proof depends on
 
-- [Computable](../../../../complexity/encoding-converters/computable-2.md)
+- [Polynomial-time decoder of the canonical bit-list encoding](../../../../complexity/encoding-converters/computable-2.md)
 - [Deciding the diagonal language on raw bits in polynomial time](nonempty-diag-sq-add-one-poly-time.md)
 - [Bitstring encodings](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-decode.md)

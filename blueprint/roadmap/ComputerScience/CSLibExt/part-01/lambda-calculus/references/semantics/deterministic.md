@@ -17,7 +17,7 @@ locations is unique.
 
 ## Depends on
 
-- [Step](step.md)
+- [One-step evaluation with references](step.md)
 - [Store](store.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 

@@ -20,7 +20,7 @@ polynomial-time computable for the canonical bit-string encoding of lists of boo
 ## Depends on
 
 - [Emitter](emitter.md)
-- [Out](out.md)
+- [Output of an emitter on a bit string](out.md)
 - [Bitstring encodings](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

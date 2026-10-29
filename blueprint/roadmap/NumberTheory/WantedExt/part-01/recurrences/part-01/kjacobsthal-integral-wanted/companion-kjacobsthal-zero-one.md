@@ -23,7 +23,7 @@ $1$ are the $k$-Jacobsthal numbers.
 ## Proof depends on
 
 - [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Companion KJacobsthal add two](companion-kjacobsthal-add-two.md)
+- [Recurrence of the companion $k$-Jacobsthal numbers](companion-kjacobsthal-add-two.md)
 - [Recurrence for the Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-add-two.md)
 
 ## Sources

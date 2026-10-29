@@ -25,6 +25,6 @@ navigation: module
 ## Computability
 
 - [Encoded DFAs as triples](equiv-prod.md)
-- [Primrec mk](primrec-mk.md)
+- [Assembling an encoded DFA is primitive recursive](primrec-mk.md)
 - [The transition function of encoded DFAs is primitive recursive](primrec-step.md)
 - [Running an encoded DFA is primitive recursive](primrec-eval.md)

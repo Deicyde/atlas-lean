@@ -15,7 +15,7 @@ states of its code.
 
 - [Codes for single-tape machines](code.md)
 - [The machine of a code](machine.md)
-- [States](states.md)
+- [States of a code](states.md)
 
 ## Proof depends on
 

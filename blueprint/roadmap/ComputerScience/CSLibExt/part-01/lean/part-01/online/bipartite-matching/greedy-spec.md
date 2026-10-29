@@ -17,7 +17,7 @@ of $L$ or of $S$ is done for it.
 
 - [Partner arrays that describe a matching](../../graph/bipartite-matching/valid.md)
 - [Done right vertices](done.md)
-- [Greedy](greedy.md)
+- [Greedy online bipartite matching](greedy.md)
 
 ## Proof depends on
 

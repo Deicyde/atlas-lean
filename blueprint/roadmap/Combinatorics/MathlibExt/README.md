@@ -59,7 +59,7 @@ navigation: collection
 - [KCyclic Partition](part-03/kcyclic-partition/README.md)
 - [Linear partition of a graph](part-03/linear-partition.md)
 - [Matrix Discrepancy](part-03/matrix-discrepancy/README.md)
-- [Paris Harrington](part-03/paris-harrington.md)
+- [Strengthened finite Ramsey theorem (Paris–Harrington principle)](part-03/paris-harrington.md)
 - [Partial Hadamard](part-03/partial-hadamard/README.md)
 - [Finite Ramsey theorem for pairs](part-03/ramsey-two-uniform.md)
 - [Restricted Gaussian Partition](part-03/restricted-gaussian-partition/README.md)

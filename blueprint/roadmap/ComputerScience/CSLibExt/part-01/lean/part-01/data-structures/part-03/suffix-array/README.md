@@ -4,8 +4,8 @@ navigation: module
 
 # Suffix Array
 
-- [Suffix](suffix.md)
-- [Suffixes](suffixes.md)
+- [Suffix of a list at an index](suffix.md)
+- [Suffixes of a list](suffixes.md)
 - [Suffix array](suffix-array.md)
 - [The suffix array is a permutation of the indices](suffix-array-perm.md)
 - [The suffix array sorts the suffixes](pairwise-suffix-suffix-array.md)

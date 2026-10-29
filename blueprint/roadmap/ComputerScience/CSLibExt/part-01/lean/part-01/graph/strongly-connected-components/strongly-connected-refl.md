@@ -14,7 +14,7 @@ connected to itself.
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 
 ## Proof depends on
 

@@ -34,7 +34,7 @@ $T$, $H$ and $N$, followed by $o$.
 - [The transition clause family](family.md)
 - [Time bound of the generator](gen-bound.md)
 - [Initial counters of the transition-clause generator](init-f.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
@@ -44,7 +44,7 @@ $T$, $H$ and $N$, followed by $o$.
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Number of variables of the transition-clause formula](num-vars.md)
 - [Variables per time step](row-w.md)
-- [Loop P](loop-p.md)
+- [Time-loop invariant of the transition-family generator](loop-p.md)
 - [Scratch counters at rest in the clause-family generator](rest.md)
 - [Encoded transition clauses of one time step](blk.md)
 - [Step bound for one time-loop iteration of the transition-family generator](body-b.md)

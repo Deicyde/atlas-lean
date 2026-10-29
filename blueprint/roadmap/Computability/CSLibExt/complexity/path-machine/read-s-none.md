@@ -18,8 +18,8 @@ within $|l| + 1$ steps, leaving the output stack $O$ unchanged.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 - [The marking machine for PATH](prog.md)
 - [The unary read instruction](read-s.md)

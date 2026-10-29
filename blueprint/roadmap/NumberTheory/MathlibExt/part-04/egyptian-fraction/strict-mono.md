@@ -7,9 +7,11 @@ proof: formalized
 lean: EgyptianFraction.IsStrictUnderapproximation.strictMono
 ---
 
-# Strict Mono
+# Denominators of a strict underapproximation increase strictly
 
-The denominators of a strict underapproximation are strictly monotone.
+**Denominators of a strict underapproximation increase strictly.** Let $n$ be a natural
+number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$
+is a strict underapproximation of $\lambda$, then $a_i < a_j$ whenever $1 \le i < j \le n$.
 
 ## Depends on
 

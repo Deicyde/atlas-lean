@@ -17,7 +17,7 @@ $X_0(\omega), \dots, X_{n-1}(\omega)$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

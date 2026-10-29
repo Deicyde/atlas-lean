@@ -15,7 +15,7 @@ navigation: module
 
 - [The Viterbi variables of a hidden Markov model](viterbi.md)
 - [Hidden Markov models with nonnegative weights](nonneg.md)
-- [Path weights are bounded by the Viterbi variables](path-prob-le-viterbi.md)
+- [Path weights of a hidden Markov model are bounded by the Viterbi variables](path-prob-le-viterbi.md)
 - [The Viterbi variables are attained](exists-path-prob-eq-viterbi.md)
 - [Viterbi computes the MAP value](sup-viterbi-eq.md)
 
@@ -30,7 +30,7 @@ navigation: module
 - [The tabulated Viterbi variables of a hidden Markov model](viterbi-tab.md)
 - [Backpointer of the tabulated Viterbi algorithm](back.md)
 - [Backtracked path of the tabulated Viterbi algorithm](best-path.md)
-- [The backtracked path attains the Viterbi variable](path-prob-best-path.md)
+- [The backtracked path of a hidden Markov model attains the Viterbi variable](path-prob-best-path.md)
 - [Index of a largest entry of a table](argmax-vec.md)
 - [Viterbi's MAP path](viterbi-path.md)
 - [The Viterbi path is a most probable path](path-prob-le-viterbi-path.md)

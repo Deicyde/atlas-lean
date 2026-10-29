@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_opxD_isBigO_rpow
 ---
 
-# Exists opx D is Big O rpow
+# Power saving for continuous Turán numbers of finite patterns in $\mathbb{R}^d$
 
-Corollary 5.14: for every finite `P ⊆ ℝ^d` there is `ε > 0` with `opx(n, P, d) = O(n^{d-ε})`.
-Stated along natural `n`.
+**Power saving for continuous Turán numbers of finite patterns in $\mathbb{R}^d$.** Let $d$
+be a natural number and let $P \subseteq \mathbb{R}^d$ be finite. Then there is a real number
+$\varepsilon > 0$ such that the $d$-dimensional continuous Turán number satisfies
+$\mathrm{opx}(n, P, d) = O(n^{d - \varepsilon})$ as the natural number $n$ tends to infinity.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Hamiltonian, then the square of $H$ is Hamiltonian.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Proof depends on
 

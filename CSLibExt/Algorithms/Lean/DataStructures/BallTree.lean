@@ -225,13 +225,19 @@ theorem distSq_le_radiusSq {c p : Fin d → Int} {pts : List (Fin d → Int)}
     (hp : p ∈ pts) : distSq c p ≤ radiusSq c pts :=
   (foldl_radiusSq_spec c pts 0).2 p hp
 
-/--
-Accumulator similarity search: the points of the tree within squared
-distance `radius` of `query`, collected in front of `acc` in linear time.
-A node with center `c` and bound `bound` is pruned when
-`2 * (bound + radius) < distSq c query`, since by `distSq_le_two_mul` no
-point of the subtree can then lie within the query ball.
--/
+/-- **Accumulating ball-tree search.** Let $d$ be a dimension and write $\delta(x, y)$ for the
+squared distance from $x$ to $y$ in $\mathbb{Z}^d$. For a ball tree $T$ over $\mathbb{Z}^d$, a
+query point $q \in \mathbb{Z}^d$, a squared radius $r \in \mathbb{N}$ and a list $A$ of points,
+the accumulating search of $T$ for $q$ and $r$ with accumulator $A$ is $A$ when $T$ is empty;
+when $T$ is a leaf holding $p$, it is $p$ followed by $A$ if $\delta(q, p) \le r$ and $A$
+otherwise; when $T$ is a node with center $c$, squared-radius bound $b$ and children $L$ and $R$,
+it is $A$ if $2(b + r) < \delta(c, q)$, and otherwise the accumulating search of $L$ for $q$ and
+$r$ whose accumulator is the accumulating search of $R$ for $q$ and $r$ with accumulator $A$.
+
+When $T$ satisfies the bounding-sphere invariant, this pruning is sound by the relaxed triangle
+inequality $\delta(x, z) \le 2(\delta(x, y) + \delta(y, z))$ for all $x, y, z \in \mathbb{Z}^d$,
+and the result is the points of $T$ within squared distance $r$ of $q$, from left to right,
+followed by $A$. -/
 def searchAux : BallTree d → (Fin d → Int) → Nat →
     List (Fin d → Int) → List (Fin d → Int)
   | .empty, _, _, acc => acc

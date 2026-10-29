@@ -22,7 +22,7 @@ unfolding its definition as a supremum.
 
 ## Proof depends on
 
-- [Le tight Knot Constant](le-tight-knot-constant.md)
+- [Admissible constants are bounded by the tight knot constant](le-tight-knot-constant.md)
 
 ## Sources
 

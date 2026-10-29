@@ -18,7 +18,7 @@ instead of repeatedly appending (and copying) left-subtree results.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Sources
 

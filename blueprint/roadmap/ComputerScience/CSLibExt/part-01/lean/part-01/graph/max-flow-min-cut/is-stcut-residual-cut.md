@@ -16,7 +16,7 @@ algorithm on $c$, $s$, $t$ is an $s$-$t$ cut: it contains $s$ and not $t$.
 ## Depends on
 
 - [Edmonds–Karp maximum flow](../edmonds-karp/edmonds-karp.md)
-- [Residual Cut](../edmonds-karp/residual-cut.md)
+- [Residual cut](../edmonds-karp/residual-cut.md)
 - [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
 
 ## Proof depends on
@@ -27,7 +27,7 @@ algorithm on $c$, $s$, $t$ is an $s$-$t$ cut: it contains $s$ and not $t$.
 - [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 - [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 - [No augmenting path remains after Edmonds–Karp](../edmonds-karp/edmonds-karp-no-augmenting-path.md)
-- [Residual Graph](../edmonds-karp/residual-graph.md)
+- [Residual graph](../edmonds-karp/residual-graph.md)
 
 ## Sources
 

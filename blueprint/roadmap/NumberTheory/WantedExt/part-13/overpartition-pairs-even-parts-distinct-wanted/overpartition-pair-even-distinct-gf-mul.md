@@ -6,10 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.overpartitionPairEvenDistinctGF_mul_qEulerProduct_sq
 ---
 
-# Overpartition Pair Even Distinct GF mul q Euler Product sq
+# Cleared form of the generating function of $(j, k)$-overpartition pairs with even parts distinct
 
-The generating function identity (2) in cleared form:
-`(∑ bped_{j,k}(n) q^n) · (q; q)_∞^2 = (q^4; q^4)_∞^2 (-q^j; q^k)_∞^2`.
+**Cleared form of the generating function of $[j, k]$-overpartition pairs with even parts
+distinct.** For natural numbers $j$ and $k$, let $f_a = \prod_{m \ge 1} (1 - q^{am})$ be the
+Euler products and let $G_{j,k}$ be the generating function of $[j, k]$-overpartition pairs with
+even parts distinct. Then, as integer power series in $q$,
+$G_{j,k} \, f_1^2 = f_4^2 \bigl(\prod_{i \ge 0} (1 + q^{j+ki})\bigr)^2$, where the infinite
+product is taken in the coefficientwise topology. In $q$-Pochhammer notation this reads
+$G_{j,k} \cdot (q; q)_\infty^2 = (q^4; q^4)_\infty^2 (-q^j; q^k)_\infty^2$.
 
 ## Depends on
 

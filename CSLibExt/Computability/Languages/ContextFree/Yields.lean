@@ -176,7 +176,10 @@ theorem yields_of_derives {u : List (Symbol T g.NT)} {w : List T}
   rw [evalForm_map_terminal] at hle
   exact mem_evalForm_yieldsFrom_iff.mp (hle rfl)
 
-/-- A sentential form yields a word iff it derives that word as terminals. -/
+/-- **Yields coincide with derivations of terminal words.** Let $g$ be a context-free grammar,
+$u$ a sentential form of $g$ and $w$ a word of terminals. Then $u$ yields $w$ in $g$ if and only
+if $u$ derives in $g$, by zero or more rewriting steps, the sentential form consisting of the
+letters of $w$ read as terminals. -/
 theorem yields_iff_derives {u : List (Symbol T g.NT)} {w : List T} :
     Yields g u w ↔ g.Derives u (w.map Symbol.terminal) :=
   ⟨derives_of_yields, yields_of_derives⟩

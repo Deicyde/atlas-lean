@@ -24,7 +24,7 @@ graph.
 - [Partner arrays that describe a matching](../../graph/bipartite-matching/valid.md)
 - [A valid partner array gives a matching](../../graph/bipartite-matching/is-matching-pairs.md)
 - [Done right vertices](done.md)
-- [Greedy](greedy.md)
+- [Greedy online bipartite matching](greedy.md)
 - [Greedy run on an array](greedy-arr.md)
 - [Invariants of the greedy run](greedy-spec.md)
 - [Greedy step of online bipartite matching](step.md)

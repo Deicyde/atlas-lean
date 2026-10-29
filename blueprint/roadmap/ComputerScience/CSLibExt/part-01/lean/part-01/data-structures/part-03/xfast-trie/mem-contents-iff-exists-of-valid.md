@@ -16,7 +16,7 @@ by some $w$-bit key $r$ (such an owner $r$ is then necessarily a representative)
 ## Depends on
 
 - [y-fast trie skeleton](yfast-trie.md)
-- [Valid](valid-2.md)
+- [Valid y-fast trie skeleton](valid-2.md)
 - [Keys of a y-fast trie](contents.md)
 
 ## Proof depends on

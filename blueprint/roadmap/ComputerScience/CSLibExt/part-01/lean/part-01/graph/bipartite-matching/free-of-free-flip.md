@@ -27,7 +27,7 @@ path had the previous left vertex as partner, which the phase rematches.
 ## Proof depends on
 
 - [Alternating path](alt-path.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Alternating breadth-first layers](layers.md)
 - [Phase search over candidates](phase-aux.md)
 - [Phase paths are disjoint augmenting paths](phase-aux-spec.md)

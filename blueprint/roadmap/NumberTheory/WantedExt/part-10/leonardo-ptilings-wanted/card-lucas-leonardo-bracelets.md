@@ -18,7 +18,7 @@ $1 \le i \le p$ and $R_{p,n} = R_{p,n-1} + R_{p,n-p-1} + p$ for $n > p$.
 ## Depends on
 
 - [First tile of a bracelet](bracelet-first-tile.md)
-- [Lucas Leonardo Bracelets](lucas-leonardo-bracelets.md)
+- [Lucas–Leonardo bracelets](lucas-leonardo-bracelets.md)
 - [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources

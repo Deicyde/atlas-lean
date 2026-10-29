@@ -28,7 +28,7 @@ the reversal of $w$ followed by $\mathsf{true}$.
 - [Halting agrees with evaluation for multi-stack machines](../../../../decidability/part-02/tm0-halting/tm2-halts-on-iff-eval-dom.md)
 - [The bottom cell of the start tape](bot-cell.md)
 - [States of the single-tape emulation](emu-support.md)
-- [Single-tape emulation of a multi-stack machine](emu-tm.md)
+- [Finite single-tape emulation of a multi-stack machine](emu-tm.md)
 - [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
 - [The machine that prepends a symbol](cons-computer.md)
 - [Correctness of the prepending machine](cons-computer-outputs.md)
@@ -36,7 +36,7 @@ the reversal of $w$ followed by $\mathsf{true}$.
 - [The simulating machine halts exactly when the Post–Turing machine halts](../of-tm0/halts-on-of-tm0-iff.md)
 - [Single-tape simulation of a Post–Turing machine](../of-tm0/of-tm0.md)
 - [A multi-stack machine is supported by all its labels](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/supports-univ.md)
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 - [The emulation halts iff the multi-stack machine halts](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-eval-dom.md)
 - [The emulation visits finitely many states](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-supports.md)
 

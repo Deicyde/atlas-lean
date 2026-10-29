@@ -19,7 +19,7 @@ additive monoid, the leaf list of the segment tree built from $xs$ is $xs$.
 
 ## Proof depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Aggregate of a segment tree](agg.md)
 - [Size of a segment tree](size.md)

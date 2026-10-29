@@ -23,7 +23,7 @@ otherwise.
 - [Labels of the CLIQUE verifier](lab.md)
 - [Modes of the clique verifier](mode.md)
 - [The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER](kg-check.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [Start label of the clique verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)

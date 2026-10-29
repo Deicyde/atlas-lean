@@ -13,7 +13,7 @@ linear tiling of an $n$-board by $n$ squares, with no $p$-tile, lies in the tili
 
 ## Depends on
 
-- [Leonardo PTilings](leonardo-ptilings.md)
+- [Leonardo $p$-tilings](leonardo-ptilings.md)
 
 ## Sources
 

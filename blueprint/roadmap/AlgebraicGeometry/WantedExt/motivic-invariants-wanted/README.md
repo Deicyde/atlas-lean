@@ -22,7 +22,7 @@ navigation: module
 
 ## Motivic Invariants
 
-- [Variety over a field](variety.md)
+- [Integral variety over a field](variety.md)
 - [Pseudo-isomorphism](is-pseudo-iso.md)
 - [Pseudo-regularization of a birational automorphism](pseudo-regularization.md)
 - [Pseudo-regularizable birational automorphism](is-pseudo-regularizable.md)

@@ -34,7 +34,7 @@ serves as the loop index and $t$ as scratch.
 
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

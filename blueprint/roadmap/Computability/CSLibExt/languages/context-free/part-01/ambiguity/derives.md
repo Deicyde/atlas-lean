@@ -14,7 +14,7 @@ form $u$ has a leftmost derivation in $g$ to a word of terminals $w$, then $u$ d
 
 ## Depends on
 
-- [Left Derivation](left-derivation.md)
+- [Leftmost derivation](left-derivation.md)
 
 ## Sources
 

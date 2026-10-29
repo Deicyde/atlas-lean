@@ -20,7 +20,7 @@ $\mathrm{false}$.
 - [Comparators within an interval](within.md)
 - [Extension of a Boolean vector by false](extend-false.md)
 - [Restricting comparators to finitely many wires](of-pairs.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 - [Running a comparator network](../zero-one/run.md)
 
 ## Proof depends on

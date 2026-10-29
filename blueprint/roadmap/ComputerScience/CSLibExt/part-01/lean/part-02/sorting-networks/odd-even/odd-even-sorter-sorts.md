@@ -27,7 +27,7 @@ The proof goes through the 0-1 principle.
 - [Transported comparator lists agree with the original on Boolean inputs](../bitonic/ext-run-of-pairs.md)
 - [Extension of a Boolean vector by false](../bitonic/extend-false.md)
 - [Restricting comparators to finitely many wires](../bitonic/of-pairs.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Comparator network](../zero-one/network.md)
 - [Last layer of the odd-even merger](final-layer.md)
 - [Batcher's odd-even merger](odd-even-merge.md)

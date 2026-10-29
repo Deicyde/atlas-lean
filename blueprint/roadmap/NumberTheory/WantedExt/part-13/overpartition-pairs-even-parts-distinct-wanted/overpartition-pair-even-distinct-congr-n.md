@@ -26,7 +26,7 @@ $\mathrm{bped}_{3,3}(14737) \equiv 8 \pmod{16}$, $\mathrm{bped}_{3,3}(1637) \equ
 
 ## Depends on
 
-- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
+- [The number of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

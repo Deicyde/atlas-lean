@@ -14,7 +14,7 @@ function indexed by the identically zero function $\kappa$ and $n = 0$ equals $0
 
 ## Depends on
 
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
+- [Possible pole of the ℓ-generalized Fibonacci zeta function at a given index](l-generalized-fibonacci-zeta-pole.md)
 
 ## Proof depends on
 

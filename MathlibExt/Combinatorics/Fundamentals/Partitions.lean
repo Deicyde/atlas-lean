@@ -88,28 +88,16 @@ def SetComposition {α : Type*} [DecidableEq α]
 -- Combinatorics 444: Conjugate Partition
 
 
-/-- Let L∈ℤ_{≥ 0} and let
-λ=[λ₁,…,λ_L] be a
-partition, presented as the list of its parts in
-weakly decreasing order, so that
-λ₁≥λ₂≥⋯≥λ_L≥ 1.
-For L=0 the list is empty.
+/-- **Conjugate partition.** Let $\lambda = [\lambda_1, \dots, \lambda_L]$ be a finite list of
+natural numbers, with $L \ge 0$. Its conjugate $\lambda'$ is the empty list if $L = 0$, and
+otherwise the list $[\lambda'_1, \dots, \lambda'_{\lambda_1}]$ of length $\lambda_1$ with
+$\lambda'_j = \#\{i : 1 \le i \le L,\ \lambda_i \ge j\}$ for $1 \le j \le \lambda_1$. The length
+is set by the first entry $\lambda_1$, and the entries of $\lambda'$ are weakly decreasing and at
+least $1$.
 
-If L≥ 1, the conjugate partition of λ
-is
-
-  λ'=[λ'₁,…,λ'_{λ₁}],
-
-where for each integer j with
-1≤ j≤λ₁
-
-  λ'ⱼ=#{i:1≤ i≤ L, λᵢ≥ j}.
-
-Thus λ' has λ₁ parts, and they are
-again weakly decreasing with
-λ'_{λ₁}≥ 1, so λ' is a
-partition. For L=0 the conjugate partition is
-the empty list.
+When $\lambda$ is a partition, $\lambda_1 \ge \dots \ge \lambda_L \ge 1$, its first entry is its
+largest part, and $\lambda'$ is the conjugate partition: its Young diagram is the transpose of the
+Young diagram of $\lambda$.
 -/
 def _root_.List.partitionConjugate (l : List ℕ) : List ℕ :=
   (List.range (l.head?.getD 0)).map fun j =>
@@ -275,26 +263,14 @@ def List.IsUnimodal (d : List ℕ) : Prop :=
 -- Combinatorics 489: Dominance Order
 
 
-/-- Let n∈ℤ_{≥ 0}. A partition of n is a list
-λ=[λ₁,…,λₘ] of integers with
-m∈ℤ_{≥ 0}, whose entries are called the parts of
-λ, such that, if m≥ 1,
-
-  λ₁≥λ₂≥⋯≥λₘ≥ 1,
-
-  λ₁+λ₂+⋯+λₘ=n.
-
-If m=0, then λ is the empty list, called the empty
-partition, which is a partition of n only when n=0, and is
-then the only partition of 0. For a partition
-λ=[λ₁,…,λₘ] set λⱼ=0 for
-every integer j>m. For partitions λ and μ of n,
-λ dominates μ, written μ≤λ, if
-
-  μ₁+⋯+μᵢ≤λ₁+⋯+λᵢ
-
-for every i∈ℤ_{≥ 0}, where both sums are 0 when
-i=0. When n=0, the empty partition dominates itself.
+/-- **Dominance order on partitions.** Let $n \ge 0$ be an integer. A partition of $n$ is a finite
+multiset of positive integers with sum $n$; write it as the list
+$\lambda = [\lambda_1, \dots, \lambda_m]$ of its parts in weakly decreasing order, so that
+$\lambda_1 \ge \dots \ge \lambda_m \ge 1$ and $\lambda_1 + \dots + \lambda_m = n$, and set
+$\lambda_j = 0$ for every integer $j > m$. The empty partition ($m = 0$) is the unique partition
+of $0$. For partitions $\lambda$ and $\mu$ of $n$, $\lambda$ dominates $\mu$, written
+$\mu \le \lambda$, if $\mu_1 + \dots + \mu_i \le \lambda_1 + \dots + \lambda_i$ for every integer
+$i \ge 0$, where both sums are $0$ when $i = 0$.
 -/
 def _root_.Nat.Partition.Dominates {n : ℕ} (p q : n.Partition) : Prop :=
   ∀ i : ℕ, ((q.parts.sort (· ≥ ·)).take i).sum ≤

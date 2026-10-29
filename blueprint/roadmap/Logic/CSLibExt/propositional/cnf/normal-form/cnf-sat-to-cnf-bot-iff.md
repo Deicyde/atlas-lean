@@ -24,8 +24,8 @@ satisfiable if and only if some valuation $v$ of the atoms with $v(\bot)$ false 
 ## Proof depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Satisfies](../semantics/satisfies-3.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Equivalent CNF](satisfies-to-cnf-iff.md)
 - [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 

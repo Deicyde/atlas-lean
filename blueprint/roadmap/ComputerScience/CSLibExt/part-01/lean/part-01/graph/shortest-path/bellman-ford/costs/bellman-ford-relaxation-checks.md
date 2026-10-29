@@ -20,7 +20,7 @@ the final pass.
 - [Bellman-Ford cost counters](../basic/cost.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](../correctness/bellman-ford.md)
+- [Bellman–Ford algorithm](../correctness/bellman-ford.md)
 
 ## Proof depends on
 

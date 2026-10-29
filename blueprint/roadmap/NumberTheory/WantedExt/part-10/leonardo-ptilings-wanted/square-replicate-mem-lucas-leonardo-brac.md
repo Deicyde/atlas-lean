@@ -15,7 +15,7 @@ and whose remaining $n - 1$ pieces are all curved squares lies in the bracelet s
 ## Depends on
 
 - [First tile of a bracelet](bracelet-first-tile.md)
-- [Lucas Leonardo Bracelets](lucas-leonardo-bracelets.md)
+- [Lucas–Leonardo bracelets](lucas-leonardo-bracelets.md)
 
 ## Sources
 

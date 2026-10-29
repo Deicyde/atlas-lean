@@ -39,7 +39,7 @@ navigation: module
 - [Closed formula for hook tableau counts](syt-hook-count-closed-form.md)
 - [Humps correspond to last-up prefixes of twice the height](motzkin-hump-family-equiv-last-up-even-f.md)
 - [Generating function for humps of a fixed height](motzkin-hump-count-generating-function.md)
-- [Motzkin First Down Family equiv last Up Even Family](motzkin-first-down-family-equiv-last-up.md)
+- [A bijection between first-down and even-height last-up Motzkin prefixes](motzkin-first-down-family-equiv-last-up.md)
 - [Generating function for the adjusted $(2,1)$-hook tableau counts](adjusted-syt-hook-count-generating-funct.md)
 - [Generating function for hook tableau counts](syt-hook-count-generating-function.md)
 - [Hook tableau counts as differences of hump counts](syt-hook-count-add-eq-hump-count-sub.md)

@@ -67,7 +67,9 @@ namespace Cslib.Databases
 
 variable {A D : Type*}
 
-/-- A tuple: a partial assignment of values in `D` to attributes in `A`. -/
+/-- **Tuple.** For a type $A$ of attributes and a type $D$ of values, a tuple is a partial
+assignment of values to attributes: a function that assigns to each attribute $a \in A$ either a
+value in $D$ or no value, in which case the tuple is undefined at $a$. -/
 abbrev Tuple (A D : Type*) := A → Option D
 
 namespace Tuple
@@ -283,7 +285,9 @@ end Cond
 
 variable [DecidableEq D]
 
-/-- A relation (a finite set of tuples) over the schema `S`. -/
+/-- **Relation over a schema.** A finite set $r$ of tuples is a relation over the schema $S$, a
+finite set of attributes, when every tuple $t \in r$ is over $S$, that is, $t$ is defined exactly
+on the attributes of $S$. -/
 def IsOver (S : Finset A) (r : Finset (Tuple A D)) : Prop := ∀ t ∈ r, t.IsOver S
 
 /-- **Selection.** For a selection condition $c$ and a finite set $r$ of tuples, the selection
@@ -347,14 +351,16 @@ theorem isOver_rename {S : Finset A} {r : Finset (Tuple A D)} (f : A ≃ A) (hr 
   intro a
   simp [Finset.mem_map_equiv, hr u hu (f.symm a)]
 
-/-- The natural join is commutative. -/
+/-- **Commutativity of the natural join.** For all finite sets $r$ and $s$ of tuples,
+$r \bowtie s = s \bowtie r$, where $\bowtie$ is the natural join. -/
 theorem join_comm (r s : Finset (Tuple A D)) : join r s = join s r := by
   ext t
   simp only [mem_join]
   constructor <;> rintro ⟨u, hu, v, hv, hc, rfl⟩ <;>
     exact ⟨v, hv, u, hu, hc.symm, (merge_comm hc).symm⟩
 
-/-- The natural join is associative. -/
+/-- **Associativity of the natural join.** For all finite sets $r$, $s$ and $w$ of tuples,
+$(r \bowtie s) \bowtie w = r \bowtie (s \bowtie w)$, where $\bowtie$ is the natural join. -/
 theorem join_assoc (r s w : Finset (Tuple A D)) :
     join (join r s) w = join r (join s w) := by
   ext t
@@ -473,7 +479,9 @@ theorem select_join_right {S' : Finset A} (r : Finset (Tuple A D)) {s : Finset (
     select c (join r s) = join r (select c s) := by
   rw [join_comm, select_join_left r c hs hc, join_comm]
 
-/-- **Cascade of projections**: `π_T (π_T' r) = π_(T ∩ T') r`. -/
+/-- **Cascade of projections.** Assume the set of attributes is finite. For all finite sets of
+attributes $T$ and $T'$ and every finite set $r$ of tuples,
+$\pi_T(\pi_{T'}(r)) = \pi_{T \cap T'}(r)$, where $\pi_T$ is projection onto $T$. -/
 theorem project_project (T T' : Finset A) (r : Finset (Tuple A D)) :
     project T (project T' r) = project (T ∩ T') r := by
   simp only [project, Finset.image_image]
@@ -481,12 +489,17 @@ theorem project_project (T T' : Finset A) (r : Finset (Tuple A D)) :
   funext t
   exact restrict_restrict T T' t
 
-/-- **Cascade of projections**: `π_T (π_T' r) = π_T r` when `T ⊆ T'`. -/
+/-- **Cascade of projections onto a subset.** Assume the set of attributes is finite. For finite
+sets of attributes $T \subseteq T'$ and every finite set $r$ of tuples,
+$\pi_T(\pi_{T'}(r)) = \pi_T(r)$, where $\pi_T$ is projection onto $T$. -/
 theorem project_project_of_subset {T T' : Finset A} (h : T ⊆ T') (r : Finset (Tuple A D)) :
     project T (project T' r) = project T r := by
   rw [project_project, Finset.inter_eq_left.mpr h]
 
-/-- Selection commutes with a projection that keeps the attributes of the condition. -/
+/-- **Selection commutes with projection.** Assume the set of attributes is finite. Let $c$ be a
+selection condition, $T$ a finite set of attributes containing every attribute of $c$, and $r$ a
+finite set of tuples. Then $\sigma_c(\pi_T(r)) = \pi_T(\sigma_c(r))$, where $\sigma_c$ is
+selection by $c$ and $\pi_T$ is projection onto $T$. -/
 theorem select_project {T : Finset A} (c : Cond A D) (r : Finset (Tuple A D))
     (hc : c.attrs ⊆ T) : select c (project T r) = project T (select c r) := by
   ext t
@@ -531,7 +544,15 @@ namespace Expr
 
 variable {N : Type*}
 
-/-- The value of a query on the database `db`, which assigns a relation to each name. -/
+/-- **Value of a query.** Given a database $\mathrm{db}$, which assigns a finite set of tuples
+$\mathrm{db}(n)$ to each relation name $n$, the value of a relational algebra query on
+$\mathrm{db}$ is the finite set of tuples defined by recursion on the query: the base relation
+$n$ has value $\mathrm{db}(n)$; for a query $e$ with value $v$, the selection $\sigma_c(e)$ by a
+selection condition $c$, the projection $\pi_T(e)$ onto a finite set $T$ of attributes and the
+renaming $\rho_f(e)$ along a permutation $f$ of the attributes have values $\sigma_c(v)$,
+$\pi_T(v)$ and $\rho_f(v)$; and the natural join, the union and the difference of queries $e$
+and $e'$ with values $v$ and $v'$ have values $v \bowtie v'$, $v \cup v'$ and
+$v \setminus v'$. -/
 def eval (db : N → Finset (Tuple A D)) : Expr N A D → Finset (Tuple A D)
   | rel n => db n
   | select c e => Databases.select c (e.eval db)
@@ -647,14 +668,25 @@ theorem select_join {sch : N → Finset A} {e e' : Expr N A D} {S S' : Finset A}
   ⟨S ∪ S', by simp [schema, he, he', hc.trans Finset.subset_union_left],
     by simp [schema, he, he', hc], fun _ hdb => select_join_left _ c (eval_isOver hdb e he) hc⟩
 
-/-- **Cascade of selections** as a query rewrite. -/
+/-- **Cascade of selections as a query rewrite.** Fix a database schema $\mathrm{sch}$
+assigning a finite set of attributes to each base relation name. Let $e$ be a well-formed query
+with schema $S$, and let $c$ and $c'$ be selection conditions all of whose attributes lie in
+$S$. Then the query $\sigma_c(\sigma_{c'}(e))$, the selection by $c$ of the selection of $e$ by
+$c'$, is equivalent to the query $\sigma_{c' \land c}(e)$, the selection of $e$ by the
+conjunction $c' \land c$: both are well-formed with the same schema, and they have equal values
+on every database conforming to $\mathrm{sch}$. -/
 theorem select_select {sch : N → Finset A} {e : Expr N A D} {S : Finset A}
     (he : e.schema sch = some S) {c c' : Cond A D} (hc : c.attrs ⊆ S) (hc' : c'.attrs ⊆ S) :
     Equiv sch (select c (select c' e)) (select (.and c' c) e) :=
   ⟨S, by simp [schema, he, hc, hc'], by simp [schema, he, Cond.attrs, Finset.union_subset hc' hc],
     fun _ _ => Databases.select_select _ _ _⟩
 
-/-- **Cascade of projections** as a query rewrite. -/
+/-- **Cascade of projections as a query rewrite.** Fix a database schema $\mathrm{sch}$
+assigning a finite set of attributes to each base relation name. Let $e$ be a well-formed query
+with schema $S$, and let $T \subseteq T' \subseteq S$ be finite sets of attributes. Then the
+query $\pi_T(\pi_{T'}(e))$, the projection onto $T$ of the projection of $e$ onto $T'$, is
+equivalent to the query $\pi_T(e)$, the projection of $e$ onto $T$: both are well-formed with
+the same schema, and they have equal values on every database conforming to $\mathrm{sch}$. -/
 theorem project_project {sch : N → Finset A} {e : Expr N A D} {S T T' : Finset A}
     (he : e.schema sch = some S) (hT' : T' ⊆ S) (hT : T ⊆ T') :
     Equiv sch (project T (project T' e)) (project T e) :=

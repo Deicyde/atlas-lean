@@ -17,7 +17,7 @@ $n \cdot |E|$ relaxation checks, where $|E|$ is the length of $E$ counting repea
 - [Bellman-Ford cost counters](../basic/cost.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](../correctness/bellman-ford.md)
+- [Bellman–Ford algorithm](../correctness/bellman-ford.md)
 
 ## Proof depends on
 

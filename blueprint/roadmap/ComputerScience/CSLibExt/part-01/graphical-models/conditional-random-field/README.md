@@ -14,7 +14,7 @@ navigation: module
 ## Viterbi
 
 - [The Viterbi variables of a chain CRF](viterbi.md)
-- [Path weights are bounded by the Viterbi variables](path-weight-le-viterbi.md)
+- [Path weights of a chain CRF are bounded by the Viterbi variables](path-weight-le-viterbi.md)
 - [The Viterbi variables of a chain CRF are attained](exists-path-weight-eq-viterbi.md)
 - [Viterbi computes the MAP value of a chain CRF](sup-viterbi-eq.md)
 
@@ -38,6 +38,6 @@ navigation: module
 - [The tabulated Viterbi variables of a chain CRF](viterbi-tab.md)
 - [Backpointer of the tabulated CRF Viterbi algorithm](back.md)
 - [Backtracked path of the tabulated CRF Viterbi algorithm](best-path.md)
-- [The backtracked path attains the Viterbi variable](path-weight-best-path.md)
+- [The backtracked path of a chain CRF attains the Viterbi variable](path-weight-best-path.md)
 - [The Viterbi path of a chain CRF](crf-path.md)
 - [The Viterbi path of a chain CRF has maximal weight](path-weight-le-crf-path.md)

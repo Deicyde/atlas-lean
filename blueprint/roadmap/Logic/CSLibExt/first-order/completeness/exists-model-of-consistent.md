@@ -18,7 +18,7 @@ free for Henkin witnesses.
 
 ## Depends on
 
-- [Consistent](../consistency/consistent.md)
+- [Consistent set of formulas](../consistency/consistent.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ free for Henkin witnesses.
 - [Transitivity of equality in natural deduction](../natural-deduction/trans.md)
 - [Maximal consistent set](../consistency/maximal-consistent.md)
 - [Congruence for function symbols in a maximal consistent set](func-update.md)
-- [Maximal consistent sets are deductively closed](../consistency/mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](../consistency/mem-of-provable.md)
 - [Replacing an argument of a relation symbol by an equal term](rel-update.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 - [Term model of a maximal consistent set](term-model.md)

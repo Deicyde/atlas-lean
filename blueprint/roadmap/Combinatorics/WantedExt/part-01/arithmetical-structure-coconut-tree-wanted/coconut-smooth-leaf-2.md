@@ -19,7 +19,7 @@ structure.
 ## Depends on
 
 - [Arithmetical structure](is-arithmetical-structure.md)
-- [Coconut Smooth Leaf](coconut-smooth-leaf.md)
+- [Smoothing at a leaf of a coconut tree](coconut-smooth-leaf.md)
 - [Coconut tree](coconut-tree.md)
 
 ## Sources

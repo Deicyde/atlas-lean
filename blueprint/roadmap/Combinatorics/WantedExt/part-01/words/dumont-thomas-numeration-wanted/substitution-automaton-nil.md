@@ -14,7 +14,7 @@ state $b$ after reading the empty digit word.
 
 ## Depends on
 
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

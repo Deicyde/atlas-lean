@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [R Tilde Entry](r-tilde-entry.md)
+- [Entries of the matrix $\tilde R_\alpha$](r-tilde-entry.md)
 
 ## Sources
 

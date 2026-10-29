@@ -34,5 +34,5 @@ navigation: module
 - [A bounded halting run certifies the output](outputs-of-run-le.md)
 - [A bounded halting run certifies the output, up to an equal output](outputs-of-run-le-2.md)
 - [One polynomial bounds the reduction machine](g-outputs.md)
-- [F R](f-r.md)
+- [The Cook–Levin reduction function](f-r.md)
 - [The reduction machine as a polynomial-time computation](g-comp.md)

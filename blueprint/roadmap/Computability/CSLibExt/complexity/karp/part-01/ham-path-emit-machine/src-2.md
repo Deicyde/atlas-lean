@@ -15,7 +15,7 @@ $d$; and $d_1v, d_2u, d_3v, d_4u$ to the clause index $j$.
 ## Depends on
 
 - [Copy sites of the HAMPATH emitter](site.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 
 ## Sources
 

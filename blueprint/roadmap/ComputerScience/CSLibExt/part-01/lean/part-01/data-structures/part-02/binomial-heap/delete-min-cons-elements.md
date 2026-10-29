@@ -18,14 +18,14 @@ more occurrence of $m$.
 
 - [Binomial heap](binomial-heap.md)
 - [Deleting the minimum of a binomial heap](delete-min.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 
 ## Proof depends on
 
 - [Rank lower bound for a forest](ranks-at-least.md)
 - [Valid binomial forest](valid-2.md)
 - [Validity of binomial forests passes to sublists](sublist.md)
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Melding binomial forests adds their elements](elements-meld-trees.md)
 - [Melding binomial forests](meld-trees.md)
 - [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)

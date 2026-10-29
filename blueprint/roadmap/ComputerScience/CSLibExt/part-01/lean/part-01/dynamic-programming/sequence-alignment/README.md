@@ -7,7 +7,7 @@ navigation: module
 - [Alignment](alignment.md)
 - [Valid alignment of two sequences](is-alignment.md)
 - [Score of an alignment column](column-score.md)
-- [Alignment Score](alignment-score.md)
+- [Score of an alignment](alignment-score.md)
 - [Concatenation of alignments](is-alignment-append.md)
 
 ## Needleman Wunsch
@@ -28,7 +28,7 @@ navigation: module
 
 ## Smith Waterman
 
-- [Sw Cell Front](sw-cell-front.md)
+- [Fuel-bounded Smith–Waterman recursion](sw-cell-front.md)
 - [The terminal Smith–Waterman cell](sw-cell-score.md)
 - [The terminal Smith–Waterman cell is nonnegative](sw-cell-score-nonneg.md)
 - [The terminal cell vanishes when the first sequence is empty](sw-cell-score-nil-left.md)

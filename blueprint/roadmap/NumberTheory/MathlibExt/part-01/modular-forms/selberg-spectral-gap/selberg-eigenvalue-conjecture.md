@@ -22,7 +22,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Congruence subgroup of the modular group](is-congruence-subgroup.md)
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 
 ## Sources
 

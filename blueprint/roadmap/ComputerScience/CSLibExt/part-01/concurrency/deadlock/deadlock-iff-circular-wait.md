@@ -15,8 +15,8 @@ that is, some process waits for itself through a chain of one or more wait-for e
 ## Depends on
 
 - [Resource-allocation snapshot](alloc-state.md)
-- [Circular Wait](circular-wait.md)
-- [Deadlocked](deadlocked.md)
+- [Circular wait](circular-wait.md)
+- [Deadlocked set of processes](deadlocked.md)
 
 ## Proof depends on
 

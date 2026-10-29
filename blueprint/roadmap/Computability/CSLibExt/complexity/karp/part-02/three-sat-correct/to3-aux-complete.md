@@ -18,11 +18,11 @@ the clause list produced by the auxiliary translation of $\varphi$.
 ## Depends on
 
 - [Fresh variable indices](../three-sat/fresh.md)
-- [Fresh Val](fresh-val.md)
+- [Values of the fresh variables in the 3SAT translation](fresh-val.md)
 - [Renaming of the original variables](../three-sat/ren.md)
 - [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Proof depends on
 
@@ -31,7 +31,7 @@ the clause list produced by the auxiliary translation of $\varphi$.
 - [Completeness of the chain of one clause](chain-complete.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

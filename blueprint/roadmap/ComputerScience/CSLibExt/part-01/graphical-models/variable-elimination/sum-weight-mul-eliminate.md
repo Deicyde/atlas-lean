@@ -18,7 +18,7 @@ assignments $\{0, \dots, n\} \to \alpha$.
 ## Depends on
 
 - [Pairwise model on a tree](tree-model.md)
-- [Eliminate](eliminate.md)
+- [Eliminating the last vertex of a tree model](eliminate.md)
 - [Weight of an assignment in a tree model](weight.md)
 
 ## Proof depends on

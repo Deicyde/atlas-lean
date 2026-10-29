@@ -66,9 +66,11 @@ public theorem mem_orderedInsert [LinearOrder α] {x y : α} {xs : List α} :
         subst hEq
         simp [orderedInsert, hxa]
 
-/-- On a strictly sorted list, inserting an already-present key is a no-op.
-This is the duplicate-elision contract the tree implementations rely on;
-without strict sortedness it fails, e.g. `orderedInsert 2 [3, 2] = [2, 3, 2]`. -/
+/-- **Inserting a present element into a strictly increasing list.** Over a linearly ordered
+type, if every element of a list $\ell$ is smaller than every later element of $\ell$ and $x$
+belongs to $\ell$, then the ordered insertion of $x$ into $\ell$ is $\ell$ itself.
+
+Without strict increase this fails: inserting $2$ into $[3, 2]$ gives $[2, 3, 2]$. -/
 public theorem orderedInsert_eq_of_mem [LinearOrder α] {x : α} {xs : List α}
     (hSorted : xs.Pairwise (· < ·)) (hMem : x ∈ xs) :
     orderedInsert x xs = xs := by

@@ -25,7 +25,7 @@ navigation: module
 ## The reduction
 
 - [Starred image of a domino](map-domino.md)
-- [The start domino](start-domino.md)
+- [The start domino of the MPCP-to-PCP reduction](start-domino.md)
 - [End domino of the MPCP-to-PCP reduction](end-domino.md)
 - [The reduction from MPCP to PCP](to-pcp.md)
 - [Erasing the markers from a domino](unmap.md)
@@ -45,6 +45,6 @@ navigation: module
 
 ## PCP is recognizable
 
-- [Is Solution B](is-solution-b.md)
+- [Boolean check for PCP solutions](is-solution-b.md)
 - [PCP is recursively enumerable](re-pred-pcp.md)
 - [PCP is Turing-recognizable](tm2-recognizable-pcp.md)

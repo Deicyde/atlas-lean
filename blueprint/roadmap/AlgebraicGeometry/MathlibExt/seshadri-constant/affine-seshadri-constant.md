@@ -19,7 +19,7 @@ The set of these ratios is nonempty and bounded below by $0$.
 
 ## Depends on
 
-- [Affine Point](affine-point.md)
+- [Points of the complex affine plane](affine-point.md)
 
 ## Proof depends on
 

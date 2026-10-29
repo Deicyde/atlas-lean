@@ -7,10 +7,12 @@ proof: formalized
 lean: Farey.farey_succ_generation
 ---
 
-# Farey succ generation
+# Mediants generate the next Farey set
 
-`F_(n+1)` is `F_n` together with the mediants of the Farey pairs whose
-denominators sum to `n + 1`.
+**Mediants generate the next Farey set.** Let $n \ge 1$ be a natural number. A rational
+number $q$ belongs to the Farey set $F_{n+1}$ if and only if $q$ belongs to $F_n$, or there are
+Farey neighbors $x$ and $y$ of order $n$ whose denominators in lowest terms sum to $n + 1$ such
+that $q$ is the mediant of $x$ and $y$.
 
 ## Depends on
 

@@ -16,7 +16,7 @@ height at the over-strand preimage of $p$.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Regular projections](is-regular-projection.md)
 - [Height of a parameter point](height-at.md)
 - [Over-strand preimage of a crossing](over-point.md)

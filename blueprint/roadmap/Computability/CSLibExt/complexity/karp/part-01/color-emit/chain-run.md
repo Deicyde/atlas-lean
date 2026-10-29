@@ -35,7 +35,7 @@ $j_1, \dots, j_k$ at $m$ placed on top of the output stack.
 - [Counter values of a quiescent state](val.md)
 - [Successor label of a copy site](nxt.md)
 - [Counter copied by a copy site](src-2.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 - [Bit list of a copy site of the 3-COLOR emitter](atom.md)
 - [Running a copy site of the 3-COLOR emitter](site-run.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

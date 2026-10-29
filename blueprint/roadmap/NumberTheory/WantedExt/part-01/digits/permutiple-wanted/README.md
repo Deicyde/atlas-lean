@@ -19,7 +19,7 @@ navigation: module
 - [Carries of the $(2, 4)$-Hoey–Sloane machine on $(0,0)(2,3)(1,2)(3,1)$](hoey-sloane-carry-two-four-example.md)
 - [Hoey–Sloane words](is-hoey-sloane-word.md)
 - [The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language](is-hoey-sloane-word-two-four-example.md)
-- [Permutiple Graph Edges eq of conj](permutiple-graph-edges-eq-of-conj.md)
+- [Conjugate rearrangements have the same graph](permutiple-graph-edges-eq-of-conj.md)
 - [Every permutiple has a cycle-preserving digit permutation](exists-cycle-preserving-permutiple.md)
 - [Permutiple graphs are unions of simple cycles of the mother graph](permutiple-graph-edges-union-cycles.md)
 - [Hoey–Sloane words with permuted digits are unions of cycles](hoey-sloane-word-inputs-union-cycles.md)

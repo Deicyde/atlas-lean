@@ -28,7 +28,7 @@ marked steps of index $t$ in $P$.
 
 ## Proof depends on
 
-- [Number of horizontal steps](multi-marked-count-e.md)
+- [Number of horizontal steps in a multi-marked step sequence](multi-marked-count-e.md)
 - [Equal horizontal and vertical step counts](multi-marked-count-eq.md)
 - [Number of vertical steps](multi-marked-count-vert.md)
 - [Shifted index sum of a multi-marked step sequence](multi-marked-shifted-index-sum.md)

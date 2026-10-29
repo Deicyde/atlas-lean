@@ -32,7 +32,7 @@ navigation: module
 - [Lower bound for $\log N!$](log-fact-lower.md)
 - [Upper bound for $\log N!$](log-fact-upper.md)
 - [Main Stirling term](fmain.md)
-- [Log F9 term lower](log-f9-term-lower.md)
+- [Termwise Stirling lower bound in Breusch's argument](log-f9-term-lower.md)
 - [Divisors of 210 divide multiples of 210](cndvd9.md)
 - [The constant $K_9$](k9.md)
 - [Closed form of the Möbius-weighted main-term sum](z9-value.md)

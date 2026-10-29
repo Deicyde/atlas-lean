@@ -1026,8 +1026,12 @@ theorem summable_digammaSeriesTerm (s : ℂ) (hs : 1 < s.re) :
     exact Real.summable_one_div_add_nat_succ_sq.mul_left _
   exact Summable.of_norm_bounded hmaj hbound
 
-/-- Complex digamma expansion: for `1 < s.re`, `ψ(s) + γ` is the sum of
-`1/(j+1) - 1/(j+s)`. -/
+/-- **Series expansion of the complex digamma function.** For every complex number $s$ with
+$\operatorname{Re} s > 1$, the series
+$\sum_{j=0}^{\infty} \left(\frac{1}{j+1} - \frac{1}{j+s}\right)$ of the terms of the complex
+digamma series at $s$ has sum $\psi(s) + \gamma$, where $\psi = \Gamma'/\Gamma$ is the complex
+digamma function, the logarithmic derivative of the complex Gamma function, and $\gamma$ is the
+Euler–Mascheroni constant. -/
 theorem hasSum_digamma_series (s : ℂ) (hs : 1 < s.re) :
     HasSum (fun j : ℕ => digammaSeriesTerm j s)
       (Complex.digamma s + (Real.eulerMascheroniConstant : ℂ)) := by

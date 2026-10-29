@@ -26,7 +26,7 @@ global (Needleman–Wunsch) alignment score of $s_i$ and $s_j$ under $\sigma$ an
 
 ## Proof depends on
 
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Needleman–Wunsch is optimal](../sequence-alignment/alignment-score-le-nw-score.md)
 - [Induced pairwise alignment](induced-pair.md)
 - [Induced pairwise alignments are valid](induced-pair-is-alignment.md)

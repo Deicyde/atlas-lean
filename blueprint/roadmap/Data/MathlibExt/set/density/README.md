@@ -8,7 +8,7 @@ navigation: module
 ## Set
 
 - [Partial density](partial-density.md)
-- [Upper Density](upper-density.md)
+- [Upper density](upper-density.md)
 - [Lower density](lower-density.md)
 - [Density of a set](has-density.md)
 - [Positive density](has-pos-density.md)

@@ -342,8 +342,8 @@ public theorem get_promotes {K : Type u} {V : Type v} {cap : Nat} [DecidableEq K
     cases hpf
 
 /--
-**Lookup after insertion.** For every LRU cache of positive capacity, every key $k$ and
-every value $v$, looking up $k$ in the cache obtained by putting the binding $(k, v)$
+**Lookup after insertion into an LRU cache.** For every LRU cache of positive capacity, every key
+$k$ and every value $v$, looking up $k$ in the cache obtained by putting the binding $(k, v)$
 returns $v$.
 -/
 public theorem get_put {K : Type u} {V : Type v} {cap : Nat} [DecidableEq K]

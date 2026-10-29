@@ -26,7 +26,7 @@ integrals concatenate as oriented integrals.
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

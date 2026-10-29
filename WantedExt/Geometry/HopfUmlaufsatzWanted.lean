@@ -52,7 +52,8 @@ has total signed curvature `2π`. Trusted helpers (`signedArea`, `signedCurvatur
 Category-(b) candidate from §170 of the Knill survey.
 -/
 
-/-- The Euclidean plane. -/
+/-- **Euclidean plane for the Umlaufsatz.** The Euclidean plane is the space $\mathbb{R}^2$ of
+pairs of real numbers with the Euclidean inner product and norm. -/
 abbrev Plane := EuclideanSpace ℝ (Fin 2)
 
 /-- **Parameter period for the Umlaufsatz.** The parameter period of the closed curves in the
@@ -64,9 +65,9 @@ plane and $t \in \mathbb{R}$, the velocity of $r$ at $t$ is its derivative $r'(t
 taken to be $0$ where $r$ is not differentiable. -/
 noncomputable def velocity (r : ℝ → Plane) (t : ℝ) : Plane := deriv r t
 
-/-- **Planar determinant.** For vectors $u = (u_0, u_1)$ and $v = (v_0, v_1)$ in the Euclidean
-plane $\mathbb{R}^2$, $\det(u, v) = u_0 v_1 - u_1 v_0$, the signed area of the parallelogram
-spanned by $u$ and $v$. -/
+/-- **Planar determinant for the Umlaufsatz.** For vectors $u = (u_0, u_1)$ and
+$v = (v_0, v_1)$ in the Euclidean plane $\mathbb{R}^2$, $\det(u, v) = u_0 v_1 - u_1 v_0$, the
+signed area of the parallelogram spanned by $u$ and $v$. -/
 def det2 (u v : Plane) : ℝ := u 0 * v 1 - u 1 * v 0
 
 /-- **Signed area of a closed plane curve.** For a curve $r : \mathbb{R} \to \mathbb{R}^2$, the
@@ -98,7 +99,12 @@ structure IsTangentAngleLift (r : ℝ → Plane) (α : ℝ → ℝ) : Prop where
   velocity_eq : ∀ t : ℝ,
     velocity r t = !₂[Real.cos (α t), Real.sin (α t)]
 
-/-- Signed curvature as the derivative of the tangent-angle lift. -/
+/-- **Signed curvature.** For a function $\alpha : \mathbb{R} \to \mathbb{R}$ and
+$t \in \mathbb{R}$, the signed curvature of $\alpha$ at $t$ is the derivative $\alpha'(t)$, taken
+to be $0$ where $\alpha$ is not differentiable at $t$.
+
+When $\alpha$ is a tangent-angle lift of a unit-speed plane curve, this is the signed curvature
+of the curve at $t$. -/
 noncomputable def signedCurvature (α : ℝ → ℝ) (t : ℝ) : ℝ := deriv α t
 
 /-- **Total signed curvature of a tangent-angle lift.** For a function

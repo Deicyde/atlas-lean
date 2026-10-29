@@ -20,7 +20,7 @@ equals the weight $w(F(\sigma))$ of this bag for $n$ people.
 - [Weight of a bag](bag-weight.md)
 - [Forward crossings](forward-crossings.md)
 - [Return crossings](return-crossings.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

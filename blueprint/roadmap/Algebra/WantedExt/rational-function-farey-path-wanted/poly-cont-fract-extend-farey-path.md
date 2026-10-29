@@ -9,10 +9,11 @@ lean: MetaMathlibExt.polyContFract_extend_farey_path
 
 **Extending a Farey path extends the continued fraction.** Let $F$ be a field, let $n \ge 1$,
 and let $a_0, a_1, \dots, a_n \in F[X]$ with $a_i$ nonconstant for $1 \le i \le n$. Let
-$A_0, \dots, A_n$ and $B_0, \dots, B_n$ be polynomials in $F[X]$ equal to the partial numerators
-and partial denominators of the continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Let
-$u, v \in F[X]$ be such that $u B_n - v A_n$ is a unit of $F[X]$ (a nonzero constant) and
-$\deg B_n < \deg v$. Then there is a nonconstant polynomial $b \in F[X]$ such that, in $F(X)$,
+$A_0, \dots, A_n, B_0, \dots, B_n \in F[X]$ be such that, for every $i \le n$, $A_i$ and $B_i$ are
+the numerator and the denominator of the $i$th convergent of the continued fraction
+$[a_0, a_1, \dots, a_n]$ over $F(X)$. Let $u, v \in F[X]$ be such that $u B_n - v A_n$ is a unit
+of $F[X]$ (a nonzero constant) and $\deg B_n < \deg v$. Then there is a nonconstant polynomial
+$b \in F[X]$ such that, in $F(X)$,
 
 $$b = \frac{v A_{n-1} - u B_{n-1}}{u B_n - v A_n},$$
 

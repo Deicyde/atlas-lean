@@ -22,7 +22,7 @@ functions, then $P_1 = 4$ but the right-hand side is $0 + 2 = 2$.
 
 ## Depends on
 
-- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Non-degenerate Boolean functions](is-nondegenerate-bool-fun.md)
 
 ## Sources
 

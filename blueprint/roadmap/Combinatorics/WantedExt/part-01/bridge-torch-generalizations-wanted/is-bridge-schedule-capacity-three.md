@@ -18,7 +18,7 @@ is a schedule on a bridge of capacity $3$.
 
 ## Proof depends on
 
-- [Bridge Schedule From](bridge-schedule-from.md)
+- [Valid crossing sequences from a state of the bridge and torch problem](bridge-schedule-from.md)
 
 ## Sources
 

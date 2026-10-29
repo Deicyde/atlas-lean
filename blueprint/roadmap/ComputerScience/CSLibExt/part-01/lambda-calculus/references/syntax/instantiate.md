@@ -22,7 +22,7 @@ TAPL Section 6.3; TAPL's $[0 \mapsto s]\,t$ alone does not lower the other free 
 
 ## Proof depends on
 
-- [Single-variable substitution](single-sub.md)
+- [Single-variable substitution at index zero](single-sub.md)
 - [Parallel substitution in a term](subst.md)
 
 ## Sources

@@ -13,7 +13,7 @@ of monotone Boolean functions on $n$ variables.
 
 ## Depends on
 
-- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ navigation: transparent
 - [Partition relation for bi-brackets](bi-bracket-gen-partition-relation.md)
 - [Translation between bi-brackets and the Schlesinger–Zudilin model](bi-bracket-gen-eq-sz-gen-subst.md)
 - [Generating series of OOZ-qMZVs, coefficientwise](coeff-ooz-qmzv-sz-block-index-eq-sum-cho.md)
-- [Q MZVSpace Circ one eq span bracket okounkov bz](q-mzvspace-circ-one-eq-span-bracket-okou.md)
+- [Brackets, Okounkov qMZVs and Bradley–Zhao qMZVs span $\mathcal{Z}^\circ_{q,1}$](q-mzvspace-circ-one-eq-span-bracket-okou.md)
 - [Weighted quasi-shuffle product](weighted-quasi-shuffle.md)
 - [The empty word is a left unit for the weighted quasi-shuffle](weighted-quasi-shuffle-nil-left.md)
 - [Bachmann's coefficients](bi-bracket-lambda.md)

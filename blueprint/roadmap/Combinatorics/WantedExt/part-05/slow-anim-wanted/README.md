@@ -33,7 +33,7 @@ navigation: module
 - [P-positions after adding moves](is-pposition-set-extend.md)
 - [Moves of the playable game graph of Slow $A$-Nim](slow-anim-reduced-graph-move.md)
 - [The empty position is terminal in the playable game graph](not-slow-anim-reduced-graph-move-zero.md)
-- [Slow ANim is P iff reduction mem](slow-anim-is-p-iff-reduction-mem.md)
+- [P-positions of Slow $A$-Nim via the playable game graph](slow-anim-is-p-iff-reduction-mem.md)
 - [Options without reduction in Slow {n - 1}-Nim](slow-anim-n-sub-one-option-of-reduced.md)
 - [Options with reduction in Slow {n - 1}-Nim](slow-anim-n-sub-one-option-of-not-reduce.md)
 - [P-positions of the reduced game of Slow $\{n-1\}$-Nim](slow-anim-reduced-mem-p-positions-n-sub.md)

@@ -23,7 +23,7 @@ second congruence is $53319$, and $\mathrm{bped}_{3,3}(53319) \equiv 4 \pmod{8}$
 
 ## Depends on
 
-- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
+- [The number of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

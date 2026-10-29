@@ -63,7 +63,12 @@ theorem hamPathDec_mem_NP : hamPathDec ∈ NP :=
 instance EmitHam.instFintypeΓ (k : EmitHam.K) : Fintype (EmitHam.Γ k) := by
   cases k <;> infer_instance
 
-/-- The HAMPATH emitter as an `Emitter`. -/
+/-- **The HAMPATH emitter.** The emitter whose stacks, alphabets, labels, program and start label
+are those of the HAMPATH emitter machine, which exits at the machine's label $\mathsf{done}$,
+reads the tokens of a CNF formula from stack $T$ and writes its output bits on stack $O$ (both
+symbol maps being the identity), and has step bound $B(n) = 2000 (n + 1)^5$ for $n$ tokens. Its
+output for a CNF formula $\varphi$ is Sipser's HAMPATH instance of $\varphi$, and for an
+undecodable input the fixed HAMPATH no-instance (two vertices, no arcs, source and target $0$). -/
 abbrev emitHam : Emitter where
   K := EmitHam.K
   Γ := EmitHam.Γ
@@ -105,12 +110,18 @@ theorem isPolyTime_reduceHam : IsPolyTime reduceHam := by
 theorem satDec_polyManyOneRed_hamPathDec : PolyManyOneRed satDec hamPathDec :=
   ⟨reduceHam, isPolyTime_reduceHam, satDec_eq_hamPathDec_reduceHam⟩
 
-/-- **HAMPATH is NP-hard**. -/
+/-- **HAMPATH is NP-hard.** Every decision problem $L$ in NP has a polynomial-time many-one
+reduction to HAMPATH: a polynomial-time computable map $f$ on bit strings such that, for every
+bit string $x$, $L$ accepts $x$ exactly when HAMPATH accepts $f(x)$. -/
 theorem hamPathDec_npHard : ∀ L : DecisionProblem, L ∈ NP → PolyManyOneRed L hamPathDec :=
   npHard_of_polyManyOneRed Cslib.Complexity.CookLevin.Hardness.satDec_npHard
     satDec_polyManyOneRed_hamPathDec
 
-/-- **HAMPATH is NP-complete** (Sipser, Theorem 7.46). -/
+/-- **HAMPATH is NP-complete.** HAMPATH lies in NP, and every decision problem $L$ in NP has a
+polynomial-time many-one reduction to HAMPATH: a polynomial-time computable map $f$ on bit
+strings such that, for every bit string $x$, $L$ accepts $x$ exactly when HAMPATH accepts $f(x)$.
+
+Source: Sipser, Theorem 7.46. -/
 theorem hamPathDec_npComplete :
     hamPathDec ∈ NP ∧ ∀ L : DecisionProblem, L ∈ NP → PolyManyOneRed L hamPathDec :=
   ⟨hamPathDec_mem_NP, hamPathDec_npHard⟩

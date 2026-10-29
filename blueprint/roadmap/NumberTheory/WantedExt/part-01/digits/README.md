@@ -19,7 +19,7 @@ article_id: af_fce310902847f03a00449e14
 - [Permutiple](permutiple-wanted/README.md)
 - [Reverse Divisor](reverse-divisor-wanted/README.md)
 - [Sloane Complete Young Graph Characterization](sloane-complete-young-graph-characterization/README.md)
-- [Squares Aaabb Classification Wanted](squares-aaabb-classification.md)
+- [Squares with two blocks of repeated digits](squares-aaabb-classification.md)
 - [Szusz Volkmann Counterexample](szusz-volkmann-counterexample-wanted/README.md)
 - [Triangular repdigits](triangular-numbers-single-repeated-digit.md)
 - [Zeckendorf Binary Expansion](zeckendorf-binary-expansion-wanted/README.md)

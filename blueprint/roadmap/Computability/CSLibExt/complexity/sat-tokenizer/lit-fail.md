@@ -23,7 +23,7 @@ label $\mathsf{rej}$ within $|r| + 2$ steps.
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Stacks of the SAT tokenizer](k.md)
 - [Labels of the SAT tokenizer](lab.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
 - [Decoding a literal](../../cook-levin/decode-lit.md)
 

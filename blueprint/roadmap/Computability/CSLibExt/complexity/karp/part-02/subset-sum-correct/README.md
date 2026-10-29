@@ -21,7 +21,7 @@ navigation: module
 - [A vertex number in base 4](vtx-num-eq.md)
 - [The target in base 4](ss-target-eq.md)
 - [A subset sum of the reduction's numbers in base 4](sum-vtx-num-add-sum-edge-num.md)
-- [Sum touches eq](sum-touches-eq.md)
+- [Vertices of a set touching a vertex pair](sum-touches-eq.md)
 
 ## Vertex covers on valid instances
 

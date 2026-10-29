@@ -15,7 +15,7 @@ that is not a vertex of $T$, rerooting $T$ at $x$ is undefined (it returns no tr
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Rerooting a tree at a vertex](reroot-at.md)
 
 ## Proof depends on

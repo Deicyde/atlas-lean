@@ -24,7 +24,7 @@ the list obtained by putting $u = v$ in front of $E$: no substitution unifies th
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Unifier of a list of equations](unifies.md)
 
 ## Sources

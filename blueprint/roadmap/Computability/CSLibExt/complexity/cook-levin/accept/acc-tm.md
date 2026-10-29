@@ -26,7 +26,7 @@ It serves only to check that the generator meets the finiteness conditions of a 
 - [Clause kinds of the accept generator](ak.md)
 - [Counters of the accept generator](ck.md)
 - [Labels of the accept generator](gl.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the accept generator's literal routine](ls.md)
 - [Precomputation stages of the accept generator](ps.md)
 - [Generator machine for the accept family](prog.md)
 - [Stages of the multiplication routine](../counter-view/ms.md)

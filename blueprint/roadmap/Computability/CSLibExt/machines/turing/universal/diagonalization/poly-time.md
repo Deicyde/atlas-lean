@@ -21,7 +21,7 @@ $\mathrm{true}$.
 
 ## Proof depends on
 
-- [Bits Poly Time](bits-poly-time.md)
+- [The readout on raw bits in polynomial time](bits-poly-time.md)
 - [Symbol of an input bit](../code/bit-sym.md)
 - [The diagonal answer read from the encoded output](diag-answer-eq-decide-enc-out.md)
 

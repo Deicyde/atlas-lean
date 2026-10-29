@@ -18,7 +18,7 @@ lunar unit, the constant polynomial $b - 1$ with coefficient sequence $(b - 1, 0
 
 ## Proof depends on
 
-- [Lunar Unit](lunar-unit.md)
+- [Lunar unit](lunar-unit.md)
 - [Max-min product](max-min-mul.md)
 
 ## Sources

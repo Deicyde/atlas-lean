@@ -4,7 +4,7 @@ navigation: module
 
 # Clean Lattice Parallelogram
 
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 - [Integer affine maps of the plane](unimodular-map.md)

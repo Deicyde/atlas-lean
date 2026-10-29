@@ -143,8 +143,13 @@ public def stableBits (s d : ℕ) : ℕ :=
   oddPart (Nat.factorial (2 ^ (s + d - 1))) / 2 ^ s % 2 ^ d
 
 /--
-The characteristic formula for `stab` exposes the factorial exponent, right
-shift, and modulus; at `s=e+1` these are respectively `e+d`, `e+1`, and `d`.
+**Formula for the stable bits.** Write $\operatorname{od}(n)$ for the odd part of a natural
+number $n$. For all natural numbers $s$ and $d$, the stable bits are
+$\operatorname{stab}(s, d) = \lfloor \operatorname{od}((2^{s+d-1})!) / 2^s \rfloor \bmod 2^d$,
+where $s + d - 1$ is read as $0$ when $s = d = 0$.
+
+For $s = e + 1$ the factorial is that of $2^{e+d}$, the shift is by $e + 1$ binary digits and the
+modulus is $2^d$.
 
 Source: Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer
 Sequences 29 (2026), Article 26.3.1, Definition of stab.
@@ -440,9 +445,9 @@ public theorem_wanted oddPart_factorial_congr_previous (e : ℕ) (he : 3 ≤ e) 
       (oddPart (Nat.factorial (2 ^ e)) : ℤ)
 
 /--
-There is a 2-adic integer `z` congruent to `od((2^(e-1))!)` modulo `2^e` for
-every `e≥1`.  The paper's limiting equality is represented by divisibility in
-`ℤ_[2]`; the explicit lower bound avoids a truncated exponent in the factorial.
+**A 2-adic limit of the odd parts of $(2^e)!$.** There is a 2-adic integer $z \in \mathbb{Z}_2$
+such that $z \equiv \operatorname{od}((2^{e-1})!) \pmod{2^e}$ in $\mathbb{Z}_2$ for every natural
+number $e \ge 1$, where $\operatorname{od}(n)$ is the odd part of $n$.
 
 Source: Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer
 Sequences 29 (2026), Article 26.3.1, Corollary 8.

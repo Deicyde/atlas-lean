@@ -735,9 +735,12 @@ public theorem valid_ofSortedList {w B : Nat} (hB : 0 < B) {l : List (Fin (2 ^ w
     (hsorted : l.Pairwise (· < ·)) : (ofSortedList B l).Valid :=
   valid_ofGroups (chunkGroups_spec hB l hsorted) (groupOrdered_chunkGroups B l hsorted)
 
-/-- At `B = 0`, building from a nonempty list cannot be valid: the single
-degenerate group `l` has positive length, violating the `≤ 0` group bound
-in `Valid`. Use `0 < B` (see `valid_ofSortedList`). -/
+/-- **Building from a nonempty list with group bound zero gives an invalid trie.** For every
+natural number $w$ and every nonempty list $l$ of $w$-bit keys, the grouped y-fast trie with
+group bound $B = 0$ built from $l$ is not valid.
+
+With $B = 0$ the only group is $l$ itself, which has more than $0$ keys. For $B > 0$ and strictly
+increasing $l$, the grouped y-fast trie built from $l$ is valid. -/
 public theorem not_valid_ofSortedList_zero {w : Nat} {l : List (Fin (2 ^ w))}
     (hl : l ≠ []) : ¬ (ofSortedList 0 l).Valid := by
   intro hv

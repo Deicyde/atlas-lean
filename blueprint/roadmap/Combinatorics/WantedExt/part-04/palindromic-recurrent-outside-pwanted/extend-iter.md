@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.extendIter
 ---
 
-# Extend Iter
+# Iterated images of words under a morphism
 
-Iterate the word extension.
+**Iterated images of words under a morphism.** Let $\varphi$ be a morphism of the ternary
+alphabet $\{0, 1, 2\}$, acting on finite words letter by letter. Its iterates $\varphi^n$ on
+finite words are defined by $\varphi^0(w) = w$ and $\varphi^{n+1}(w) = \varphi(\varphi^n(w))$
+for every natural number $n$ and every finite word $w$ over $\{0, 1, 2\}$.
 
 ## Depends on
 
 - [Morphisms of the ternary alphabet](morphism.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Proof depends on
 

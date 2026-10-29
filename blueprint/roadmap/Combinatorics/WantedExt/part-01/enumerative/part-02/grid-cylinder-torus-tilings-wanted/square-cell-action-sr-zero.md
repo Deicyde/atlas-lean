@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.squareCellAction_sr_zero
 ---
 
-# Square Cell Action sr zero
+# The reflection $sr_0$ acts on the square grid as $f$
 
-`sr 0` acts on square-grid cells as the reflection `cellF`.
+**The reflection $sr_0$ acts on the square grid as $f$.** Let $r_i$ and $sr_i$
+($i \in \mathbb{Z}/4\mathbb{Z}$) denote the rotations and the reflections of the dihedral group
+of order $8$. For every natural number $n$, the dihedral action on the cells
+$\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the $n \times n$ grid sends the
+reflection $sr_0$ to the reflection $f$, $(x, y) \mapsto (-1 - x, y)$.
 
 ## Depends on
 

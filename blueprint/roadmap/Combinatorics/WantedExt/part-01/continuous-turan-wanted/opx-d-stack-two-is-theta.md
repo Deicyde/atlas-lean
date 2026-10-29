@@ -16,7 +16,7 @@ $\mathrm{opx}(n, Q_{P,2,c}, 3) = \Theta(n^{5/2})$ as the real number $n$ tends t
 ## Depends on
 
 - [Continuous Turán number in the plane](opx.md)
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

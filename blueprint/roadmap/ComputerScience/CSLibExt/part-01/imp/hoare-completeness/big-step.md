@@ -24,7 +24,7 @@ to $t$ in the big-step semantics.
 
 ## Proof depends on
 
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 
 ## Sources
 

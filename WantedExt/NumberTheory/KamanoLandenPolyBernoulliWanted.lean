@@ -102,7 +102,9 @@ the function `G_g(t)` before Table 1. -/
 public noncomputable def landenFormSeries (a b c d : ℝ) : ℝ⟦X⟧ :=
   linearFractionalPoleSeries a c - linearFractionalPoleSeries b d
 
-/-- For the identity matrix, `G_g(t) = 1/t` (Table 1), i.e. `u · G_g(u) = 1`.
+/-- **Landen form series of the identity matrix.** For the identity matrix $g$, with rows $(1, 0)$
+and $(0, 1)$, the Landen form series $u \cdot G_g(u)$ is the constant power series $1$ in
+$\mathbb{R}[[u]]$; that is, $G_g(t) = 1/t$.
 
 Source: Ken Kamano, *A Generalization of the Landen Connection Formula and
 Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Table 1. -/

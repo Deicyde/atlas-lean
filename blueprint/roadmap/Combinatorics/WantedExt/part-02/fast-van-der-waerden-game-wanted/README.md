@@ -19,7 +19,7 @@ navigation: module
 - [Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$](maker-wins-within-card-of-card-le-three.md)
 - [A fast Maker win forces symmetry](is-symmetric-of-maker-wins-within-card.md)
 - [Possible types of a symmetric set](is-symmetric-of-type-cases.md)
-- [Zero Geometric Set of is Symmetric Of Type](zero-geometric-set-of-is-symmetric-of-ty.md)
+- [Zero-geometric copies of symmetric sets](zero-geometric-set-of-is-symmetric-of-ty.md)
 - [Uniqueness of the symmetry type](is-symmetric-of-type-unique.md)
 - [Hales–Jewett bound for the $S$-game](maker-wins-within-of-hales-jewett.md)
 - [Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$](not-maker-wins-within-card-of-five-le.md)

@@ -18,7 +18,7 @@ satisfies $\mathrm{wp}(c, \mathrm{wp}(\mathtt{while}\ b\ \mathtt{do}\ c, Q))$.
 
 - [Assertion](../hoare/assertion.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Commands of IMP](../syntax/cmd.md)
 - [IMP program states](../syntax/state.md)
 - [Weakest precondition for total correctness](wp.md)

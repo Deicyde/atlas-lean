@@ -28,7 +28,7 @@ as one reconstruction step.
 
 ## Proof depends on
 
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [Edit step](../script/edit-step.md)
 
 ## Sources

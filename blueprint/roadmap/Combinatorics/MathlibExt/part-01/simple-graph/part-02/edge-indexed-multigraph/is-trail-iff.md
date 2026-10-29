@@ -16,7 +16,7 @@ list has no duplicates.
 
 - [Edge-indexed multigraph](edge-indexed-multigraph.md)
 - [Indexed walk](indexed-walk.md)
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Edge list of an indexed walk](edges.md)
 
 ## Sources

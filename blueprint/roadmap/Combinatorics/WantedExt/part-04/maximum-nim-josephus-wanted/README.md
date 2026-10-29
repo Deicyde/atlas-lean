@@ -32,7 +32,7 @@ navigation: module
 - [Floor-rule Maximum Nim: positions below k have Grundy number zero](maximum-nim-grundy-sub-eq-zero.md)
 - [A Maximum Nim non-divisibility lemma for $s < t$](maximum-nim-not-dvd-mul-sub-of-lt.md)
 - [A Maximum Nim non-divisibility lemma for $i \ne h$](maximum-nim-not-dvd-mul-sub-of-ne.md)
-- [Maximum Nim Grundy mul sub eq decomposition](maximum-nim-grundy-mul-sub-eq-decomposit.md)
+- [Floor-rule Maximum Nim: Grundy reduction when $n = kt + u$](maximum-nim-grundy-mul-sub-eq-decomposit.md)
 - [Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h](maximum-nim-grundy-mul-sub-eq-f-eq-pred.md)
 - [Floor-rule Maximum Nim: t-step Grundy reduction when k = nt + h](maximum-nim-grundy-mul-sub-eq-iterate-f.md)
 - [Floor-rule Maximum Nim: (t+1)-step Grundy reduction when k = nt + h](maximum-nim-grundy-mul-sub-eq-succ-itera.md)

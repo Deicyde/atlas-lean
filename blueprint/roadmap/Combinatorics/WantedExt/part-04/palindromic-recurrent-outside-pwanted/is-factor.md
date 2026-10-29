@@ -16,7 +16,7 @@ infinite word.
 ## Depends on
 
 - [Infinite words](inf-word.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Proof depends on
 

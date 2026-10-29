@@ -14,8 +14,8 @@ rectilinear cycles to $\mathbb{C}$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 

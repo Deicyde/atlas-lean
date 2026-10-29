@@ -5,13 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.bellRiordanArray_hasNonnegativeMinors_of_pf
 ---
 
-# Bell Riordan Array has Nonnegative Minors of pf
+# Total positivity of Bell-type Riordan arrays from a Pólya frequency series
 
-Corollary 6: let `P` be a Pólya frequency formal power series (its coefficient sequence is
-PF: the lower Toeplitz matrix has non-negative minors), `r, s, t ≥ 0` with `s² ≥ 4t`, and let
-`R = R(P; r, s, t)` be the Bell-type Riordan array (`z_i = a_{i+1}`) with
-`A(x) = (P² + sxP + tx²) / (P - rx)` (denominator cleared). Then `R` is totally positive. `P(0) ≠ 0` is added, as in Theorem 2: for
-`P = 0` the cleared equation for `A` is vacuous (`A = -1` gives `R n n = (-1)^n`).
+**Total positivity of Bell-type Riordan arrays from a Pólya frequency series.** Let $P$ and
+$A$ be formal power series over $\mathbb{R}$ with $P(0) \ne 0$, write $[x^n]F$ for the
+coefficient of $x^n$ in a power series $F$, and let $r, s, t \ge 0$ be real numbers with
+$s^2 \ge 4t$. Suppose that $P$ is a Pólya frequency series, that is, every minor of the lower
+Toeplitz matrix of its coefficients (whose entry in row $n$ and column $k$ is $[x^{n-k}]P$ for
+$k \le n$ and $0$ otherwise) is nonnegative, and that
+
+$$A(x)\,(P(x) - rx) = P(x)^2 + sxP(x) + tx^2.$$
+
+Let $R$ be the Riordan array with $A$-sequence $(a_n)_{n \ge 0}$ and $Z$-sequence
+$(z_n)_{n \ge 0}$, where $a_n = [x^n]A$ and $z_n = a_{n+1}$ (a Bell-type Riordan array). Then
+$R$ is totally positive: every minor of $R$ is nonnegative.
+
+Since $P(0) \ne 0$, the series $P(x) - rx$ is invertible, so the hypothesis on $A$ says
+$A = (P^2 + sxP + tx^2)/(P - rx)$.
 
 ## Depends on
 

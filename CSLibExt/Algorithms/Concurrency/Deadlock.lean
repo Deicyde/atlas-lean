@@ -74,12 +74,15 @@ variable (s : AllocState P Res)
 process $q$ when there is a resource $r$ that $p$ requests in $s$ and that $q$ holds in $s$. -/
 def WaitsFor (p q : P) : Prop := ∃ r, s.requests p r ∧ s.holder r = some q
 
-/-- A deadlocked set of processes: nonempty, and each member waits for a
-resource held by a member. -/
+/-- **Deadlocked set of processes.** In a resource-allocation snapshot $s$, a set $D$ of
+processes is deadlocked when $D$ is nonempty and every process $p \in D$ waits in $s$ for some
+process $q \in D$, that is, $p$ requests in $s$ a resource that $q$ holds in $s$. -/
 def Deadlocked (D : Set P) : Prop := D.Nonempty ∧ ∀ p ∈ D, ∃ q ∈ D, s.WaitsFor p q
 
-/-- Circular wait: some process waits for itself through a chain of
-wait-for edges. -/
+/-- **Circular wait.** A resource-allocation snapshot $s$ has circular wait when some process $p$
+waits for itself through a chain of one or more wait-for edges in $s$, that is, there are
+processes $p = p_0, p_1, \dots, p_k = p$ with $k \ge 1$ such that $p_{i-1}$ waits for $p_i$ in
+$s$ for each $1 \le i \le k$. -/
 def CircularWait : Prop := ∃ p, Relation.TransGen s.WaitsFor p p
 
 variable {s}

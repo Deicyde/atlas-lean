@@ -219,7 +219,12 @@ def size : Tree → Nat
   | .empty => 0
   | .node _ size _ _ _ _ => size
 
-/-- A constant-time read of the cached maximum high endpoint. -/
+/-- **Cached maximum of an interval tree.** The cached maximum of an interval tree is no value
+when the tree is empty, and when the tree is a node it is the integer stored in the node's cached
+maximum-high-endpoint field.
+
+It is read in constant time. The tree type itself does not require this field to equal the
+largest high endpoint of an interval in the subtree. -/
 def cachedMax? : Tree → Option Int
   | .empty => none
   | .node _ _ maxHigh _ _ _ => some maxHigh
@@ -2472,7 +2477,15 @@ namespace IndexedIntervalTree
 def empty : IndexedIntervalTree :=
   ⟨.empty, .empty⟩
 
-/-- Insert a new occurrence or replace the occurrence with the same identifier. -/
+/-- **Insertion by identifier with cost.** Let $T$ be an indexed interval tree and let $e$ be an
+entry with identifier $i$ and interval $[a, b]$. Inserting $e$ into $T$ first tests $a \le b$. If
+$a > b$, it returns no tree, at a cost of one endpoint comparison. Otherwise, if the identifier
+index of $T$ maps $i$ to a low endpoint $\ell$, the entry with key $(\ell, i)$ is erased from the
+root tree of $T$ by keyed erasure; if $i$ is not in the index, the root tree is kept, at zero
+cost. Then $e$ is inserted into the resulting tree by keyed insertion. The result is the indexed
+interval tree with this new root tree and with the index updated to map $i$ to $a$, and the cost
+is the cost of the erasure plus the cost of the insertion plus one endpoint comparison and two
+index operations. -/
 def insertWithCost
     (tree : IndexedIntervalTree) (entry : Entry) : Option IndexedIntervalTree × Cost :=
   if entry.interval.valid then
@@ -2843,8 +2856,13 @@ theorem empty_invariant : Invariant empty := by
     change p ∈ ([] : List (Nat × Int)) at hp
     cases hp
 
-/-- Public search soundness.  This holds for every indexed tree: the
-bundled invariant is not needed, only the successful search equation. -/
+/-- **Soundness of indexed interval-tree search.** The search of an indexed interval tree $T$ for
+a query interval $q = [c, d]$ returns nothing when $c > d$, and otherwise returns the entry, if
+any, found by the instrumented overlap search of $q$ in the root tree of $T$. For every indexed
+interval tree $T$, every query interval $q$ and every entry $e$, if this search returns $e$, then
+$e$ is one of the entries stored in the root tree of $T$ and the interval of $e$ overlaps $q$.
+
+The representation invariant of $T$ is not needed. -/
 theorem search_sound {tree : IndexedIntervalTree}
     {query : Interval} {found : Entry}
     (h : tree.search query = some found) :

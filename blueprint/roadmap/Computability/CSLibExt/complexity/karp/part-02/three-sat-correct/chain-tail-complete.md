@@ -21,14 +21,14 @@ $v'$ satisfies every clause of $\mathrm{chainTail}(C, z)$.
 - [The tail of a clause chain](../three-sat/chain-tail.md)
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Renaming of the original variables](../three-sat/ren.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
 - [Renaming a literal](../three-sat/ren-lit.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

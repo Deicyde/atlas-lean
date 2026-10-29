@@ -852,8 +852,12 @@ theorem one_le_misses {α : Type u} [DecidableEq α] {capacity : Nat} {before af
   have := (hdistinct.subperm hsubset).length_le
   omega
 
-/-- `furthestInFuture_min_misses` in the event API: the manager misses no more than any legal
-trace serving the same requests. -/
+/-- **Furthest-in-future caching has the fewest misses.** Let $k$ be a capacity, $R$ a list of
+requested blocks and $C$ a duplicate-free list of blocks of length at most $k$. Let $E'$ be any
+list of cache events that leads from $C$ to some final cache by legal cache transitions for
+capacity $k$ and whose events serve, in order, exactly the blocks of $R$. Then the number of
+misses among the events emitted by the furthest-in-future manager with capacity $k$ on $R$ from
+the initial cache $C$ is at most the number of misses of $E'$. -/
 theorem furthestInFuture_misses_le {α : Type u} [DecidableEq α]
     (capacity : Nat) (requests initialCache : List α)
     (hnodup : initialCache.Nodup) (hcapacity : initialCache.length ≤ capacity)

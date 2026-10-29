@@ -46,7 +46,7 @@ The black height drops by one when a double black left by the deletion is absorb
 - [Right repair after double-black deletion](fix-right.md)
 - [Adding a black to the root](incr-black.md)
 - [Inorder traversal of a possibly double-black tree](inorder-bb.md)
-- [Min Key](min-key.md)
+- [Leftmost key of a red-black tree](min-key.md)
 - [Recoloring the root black](root-black.md)
 - [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)
 - [Ordered red-black tree](../../../part-03/red-black-tree/ordered.md)

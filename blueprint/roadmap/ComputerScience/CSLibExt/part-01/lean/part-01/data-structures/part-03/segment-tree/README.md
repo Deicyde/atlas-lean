@@ -6,7 +6,7 @@ navigation: module
 
 ## Lean
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Segment Tree
 

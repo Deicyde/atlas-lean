@@ -29,7 +29,7 @@ fenced machine halts only by simulating a halting run of $M$.
 - [Cells of an input tape](../tape-view/nth-to-tape-mk.md)
 - [Cells after $n$ moves to the right](../tape-view/nth-to-tape-move-right-iterate.md)
 - [Cells after a write and an optional move](../tape-view/nth-to-tape-write-option-move.md)
-- [Option Move Offset](../tape-view/option-move-offset.md)
+- [Offset of an optional head move](../tape-view/option-move-offset.md)
 - [The offset of an optional move is at most one](../tape-view/option-move-offset-bound.md)
 - [Cell view of a two-way tape](../tape-view/to-tape.md)
 - [States of the fenced machine](fence-state.md)

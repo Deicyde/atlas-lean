@@ -15,7 +15,7 @@ base-case alignment of $xs$ and $ys$ equals the Needleman–Wunsch score of $xs$
 
 ## Depends on
 
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 - [Base-case alignment for Hirschberg](small-align.md)
 

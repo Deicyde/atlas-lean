@@ -13,7 +13,7 @@ holds $s$.
 
 ## Depends on
 
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 - [Stack of a HAMPATH copy-site counter](k-2.md)
 - [Stack alphabets of the HAMPATH emitter](untitled.md)
 

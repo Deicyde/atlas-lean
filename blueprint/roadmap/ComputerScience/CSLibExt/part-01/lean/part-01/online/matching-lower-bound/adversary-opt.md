@@ -17,7 +17,7 @@ extended by the neighbour lists $[u, v]$ and $[x]$ and $ps'$ is the list of rema
 
 ## Depends on
 
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 
 ## Sources
 

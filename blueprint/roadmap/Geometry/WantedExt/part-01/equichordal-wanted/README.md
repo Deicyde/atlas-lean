@@ -5,6 +5,6 @@ navigation: module
 
 # Equichordal
 
-- [Plane](plane.md)
+- [Euclidean plane for the equichordal point problem](plane.md)
 - [Equichordal point](is-equichordal-point.md)
 - [Equichordal point theorem](equichordal-point-unique.md)

@@ -14,7 +14,7 @@ $\mathrm{opx}(n, P, d) \le \mathrm{opx}(n, Q, d)$ for every real number $n$.
 ## Depends on
 
 - [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

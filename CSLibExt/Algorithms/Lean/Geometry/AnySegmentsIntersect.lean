@@ -603,7 +603,10 @@ theorem key_le_of_eq_append {P Q : List (Event n)} (hE : events S = P ++ Q) {e f
   exact h.2.2 e he f hf
 
 omit [Field 𝕜] [IsStrictOrderedRing 𝕜] in
-/-- Every right endpoint processed has its left endpoint processed. -/
+/-- **A sweep prefix with a right endpoint has its left endpoint.** Let $K$ be a linearly ordered
+set and $S$ a family of $n$ segments in $K^2$, each given by its two endpoints. If the sorted sweep
+event list of $S$ is a list $P$ followed by a list $Q$, and $P$ contains the right endpoint event
+of a segment $j$, then $P$ also contains the left endpoint event of $j$. -/
 theorem left_mem_of_right_mem {P Q : List (Event n)} (hE : events S = P ++ Q) {j : Fin n}
     (hj : (j, false) ∈ P) : (j, true) ∈ P := by
   obtain ⟨P₁, P₂, rfl⟩ := List.append_of_mem hj

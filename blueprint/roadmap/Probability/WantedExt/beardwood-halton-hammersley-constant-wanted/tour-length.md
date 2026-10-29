@@ -15,7 +15,7 @@ tour that visits $x_{\sigma(0)}, \dots, x_{\sigma(n-1)}$ in this order and retur
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

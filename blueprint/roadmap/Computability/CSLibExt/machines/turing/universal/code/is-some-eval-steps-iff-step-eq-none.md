@@ -24,7 +24,7 @@ earlier).
 
 ## Proof depends on
 
-- [Output](output.md)
+- [Output of a configuration](output.md)
 
 ## Sources
 

@@ -43,7 +43,9 @@ end CNFLiteral
 
 namespace CNFClause
 
-/-- A clause is satisfied when at least one of its literals is satisfied. -/
+/-- **Satisfaction of a clause.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ satisfies a CNF clause $C$ when at least one literal of $C$ is satisfied by $v$,
+that is, $C$ contains a literal $(x, b)$ with $v(x) = b$. -/
 def Satisfies (assignment : Nat → Bool) (clause : CNFClause) : Prop :=
   ∃ literal ∈ clause, CNFLiteral.Satisfies assignment literal
 
@@ -69,7 +71,8 @@ end CNFClause
 
 namespace CNF
 
-/-- A CNF formula is satisfied when each of its clauses is satisfied. -/
+/-- **Satisfaction of a CNF formula.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ satisfies a CNF formula $\varphi$ when $v$ satisfies every clause of $\varphi$. -/
 def Satisfies (assignment : Nat → Bool) (formula : CNF) : Prop :=
   ∀ clause ∈ formula, CNFClause.Satisfies assignment clause
 

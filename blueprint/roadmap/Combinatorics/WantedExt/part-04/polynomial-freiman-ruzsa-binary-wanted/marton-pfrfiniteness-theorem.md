@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Asymptotic Coset Cover Exponents](asymptotic-coset-cover-exponents.md)
+- [The set of admissible coset-cover exponents](asymptotic-coset-cover-exponents.md)
 
 ## Sources
 

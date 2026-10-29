@@ -7,9 +7,12 @@ proof: formalized
 lean: MvPolynomial.IsRealStable.sub_pderiv
 ---
 
-# Sub pderiv
+# Subtracting a partial derivative preserves real stability
 
-The operator `1 - ∂ᵢ` preserves real stability.
+**Subtracting a partial derivative preserves real stability.** Let $p$ be a real stable
+complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let $i \in \sigma$,
+and write $\partial_i p$ for the partial derivative of $p$ with respect to $X_i$. Then
+$p - \partial_i p$ is real stable.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ The operator `1 - ∂ᵢ` preserves real stability.
 ## Proof depends on
 
 - [Stable polynomials](is-stable.md)
-- [Sub pderiv](sub-pderiv.md)
+- [Subtracting a partial derivative preserves stability](sub-pderiv.md)
 
 ## Sources
 

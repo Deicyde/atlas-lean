@@ -35,15 +35,15 @@ bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit s
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)
 
 ## Proof depends on
 
-- [Ctr](ctr.md)
+- [Counter of the first output number of the KG-map machine](ctr.md)
 - [Pair-bit transform of each mode](fb.md)
-- [Next](next.md)
+- [Label after the move phase of the KG-map machine](next.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [Test for the input bit true](is-t.md)
 - [Test for the moved bit true](is-v.md)
@@ -52,7 +52,7 @@ bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit s
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
 - [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

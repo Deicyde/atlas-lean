@@ -4,8 +4,8 @@ navigation: module
 
 # Seshadri Constant
 
-- [Plane Polynomial](plane-polynomial.md)
-- [Affine Point](affine-point.md)
+- [Polynomials in two complex variables](plane-polynomial.md)
+- [Points of the complex affine plane](affine-point.md)
 - [Translate of a plane polynomial](shifted.md)
 - [Total degree of a monomial](monomial-degree.md)
 - [Multiplicity of a plane polynomial at a point](multiplicity.md)

@@ -86,8 +86,13 @@ public theorem_wanted one_le_pi_sq_mul_sq_div_two_mul_sin_sq (k n : ℕ) (hk : 1
     (hn : 1 ≤ n) (hkn : ¬ k ∣ n) :
     1 ≤ Real.pi ^ 2 * k ^ 2 / 2 * Real.sin (n * Real.pi / k) ^ 2
 
-/-- Theorem 1: `τ̃(k) = ∑_{j=1}^{k} exp(-(π²/2) k j³ sin²(kπ/j))` (the paper's (1), i.e.
-Lemma 2 with `A(j, k) = π² j²/2`) satisfies `τ̃(k) = τ(k) + O(1/(eᵏ - 1))` as `k → ∞`.
+/-- **Trigonometric approximation of the divisor-counting function.** For a natural number $k$
+let $\tau(k)$ be the number of positive divisors of $k$ and
+$$\tilde\tau(k) = \sum_{j=1}^{k} \exp\left(-\frac{\pi^2}{2} k j^3 \sin^2\frac{k\pi}{j}\right).$$
+Then $\tilde\tau(k) - \tau(k) = O\left(\frac{1}{e^k - 1}\right)$ as $k \to \infty$.
+
+This is the exponential approximation of the divisor-counting function with
+$A(j, k) = \pi^2 j^2 / 2$.
 
 Source: Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the
 Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 1 (`integers-2026-A46-thm-1`). -/

@@ -22,7 +22,7 @@ vertex summed out.
 ## Proof depends on
 
 - [Removing the last vertex](drop-last.md)
-- [Eliminate](../variable-elimination/eliminate.md)
+- [Eliminating the last vertex of a tree model](../variable-elimination/eliminate.md)
 - [Parent of the last vertex](../variable-elimination/last-parent.md)
 
 ## Sources

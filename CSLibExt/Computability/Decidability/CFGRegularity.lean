@@ -270,11 +270,22 @@ section Grammar
 
 variable {T : Type} [Fintype T] [DecidableEq T]
 
-/-- A symbol of `g`, in `regGrammar g`: nonterminals are shifted by `4`, letters map by `tl`. -/
+/-- **Shifting a symbol into the regularity grammar.** Let $T$ be a finite alphabet with decidable
+equality, and consider the alphabet $T \sqcup \{\#, 0, 1\}$ of the letters of $T$, a separator
+$\#$ and two bits $0$ and $1$. A symbol of an encoded grammar over $T$, that is, a nonterminal
+$n \in \mathbb{N}$ or a letter $t \in T$, is sent to a symbol of an encoded grammar over
+$T \sqcup \{\#, 0, 1\}$: the nonterminal $n$ goes to the nonterminal $n + 4$, and the letter $t$
+goes to the letter $t$ of $T \sqcup \{\#, 0, 1\}$. -/
 def shiftSym : ℕ ⊕ T → ℕ ⊕ Letter T :=
   Sum.map (· + 4) tl
 
-/-- A production of `g`, in `regGrammar g`. -/
+/-- **Shifting a production into the regularity grammar.** Let $T$ be a finite alphabet with
+decidable equality, and consider the alphabet $T \sqcup \{\#, 0, 1\}$ of the letters of $T$, a
+separator $\#$ and two bits $0$ and $1$. An encoded production $(n, \alpha)$ over $T$, with
+left-hand side the nonterminal $n$ and right-hand side $\alpha$, is sent to the encoded production
+$(n + 4, \alpha')$ over $T \sqcup \{\#, 0, 1\}$, where $\alpha'$ is $\alpha$ with each nonterminal
+$k$ replaced by the nonterminal $k + 4$ and each letter of $T$ read as the same letter of
+$T \sqcup \{\#, 0, 1\}$. -/
 def shiftRule (e : ℕ × List (ℕ ⊕ T)) : ℕ × List (ℕ ⊕ Letter T) :=
   (e.1 + 4, e.2.map shiftSym)
 
@@ -309,7 +320,16 @@ is the language of $g$. -/
 noncomputable def regGrammar (g : EncodedCFG T) : EncodedCFG (Letter T) :=
   ⟨0, fixedRules g.start ++ g.rules.map shiftRule⟩
 
-/-- The languages of the nonterminals of `regGrammar g`. -/
+/-- **Languages assigned to the nonterminals of the regularity grammar.** Let $g$ be an encoded
+context-free grammar over a finite alphabet $T$ with decidable equality, let $L(g)$ be its
+language and $L_g(n)$ the language $g$ generates from nonterminal $n$. Over the alphabet
+$T \sqcup \{\#, 0, 1\}$ (the letters of $T$, a separator $\#$ and two bits $0$ and $1$), write
+$\bar u$ for a word $u$ over $T$ read in this alphabet. This assigns to each $m \in \mathbb{N}$
+the language $V(m)$ over $T \sqcup \{\#, 0, 1\}$ given by
+$V(0) = L(g)\,\#\,\{0,1\}^* \cup T^*\,\#\,\{0^k1^k : k \in \mathbb{N}\}$, $V(1) = \{0,1\}^*$,
+$V(2) = T^*$, $V(3) = \{0^k1^k : k \in \mathbb{N}\}$ and $V(n + 4) = \{\bar u : u \in L_g(n)\}$.
+
+These are the intended languages of the nonterminals of the regularity grammar of $g$. -/
 def regVal (g : EncodedCFG T) : ℕ → Language (Letter T)
   | 0 => regLang g.language
   | 1 => bitWords

@@ -18,7 +18,7 @@ constant is $\infty$.
 
 ## Proof depends on
 
-- [Is Admissible Constant](is-admissible-constant.md)
+- [Admissible convex sub-Gaussian comparison constants](is-admissible-constant.md)
 - [Admissible comparison constants are at least one](one-le-of-is-admissible-constant.md)
 
 ## Sources

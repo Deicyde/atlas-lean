@@ -6,7 +6,7 @@ navigation: module
 
 - [The dense-to-binary translation on bit strings](bin-conv.md)
 - [Stacks of the dense-to-binary machine](stk.md)
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Stack contents of the converter](stk-2.md)
 - [The dense-to-binary converter program](prog.md)
 - [Exact runs of the dense-to-binary converter](run.md)

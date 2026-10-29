@@ -15,7 +15,7 @@ $\sqrt{1/4 - \lambda}$ is at most the gap parameter $\theta(\Gamma)$ of $\Gamma$
 
 ## Depends on
 
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
 
 ## Proof depends on

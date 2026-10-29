@@ -42,7 +42,7 @@ $i = \mathrm{ac}$.
 - [Offset of a clause's literal](off.md)
 - [Polarity of an accept clause's literal](sg.md)
 - [Next label after a clause of the accept generator](next-c.md)
-- [Clause run](clause-run.md)
+- [One clause of the accept generator](clause-run.md)
 - [Dense clause](../../dense-sat/clause.md)
 - [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)

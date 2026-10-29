@@ -18,7 +18,7 @@ Requiring a realization to exist keeps the condition from holding vacuously.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

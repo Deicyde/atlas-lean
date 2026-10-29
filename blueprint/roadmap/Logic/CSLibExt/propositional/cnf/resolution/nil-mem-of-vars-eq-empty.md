@@ -15,7 +15,7 @@ of $\varphi$.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Vars](../restriction/vars-2.md)
+- [Variables of a CNF formula](../restriction/vars-2.md)
 - [CNF clause](../basic/cnfclause.md)
 - [Satisfiability of a CNF formula](../basic/cnfsat.md)
 

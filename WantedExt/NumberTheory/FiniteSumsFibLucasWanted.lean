@@ -478,13 +478,25 @@ theorem_wanted two_pow_mul_add_half_pow (q m : ℕ)
             (∏ i, (lucasNumber (jℓ.1 i).val : ℝ)) *
             x ^ (m - n)
 
-/-- **Theorem 20** (corrected): for `q ≥ 1` and every real
-`x`, `(2√5)^q (x + qβ)ᵐ = ∑_{n=0}^m C(m,n) x^{m-n}
-∑_{j₁+⋯+j_q=n} (n!/∏jᵢ!) c_{j₁}⋯c_{j_q}` with
-`c = genLucasCoeff`, the `q`-fold convolution form of
-corrected Theorem 11; as printed (factors
-`L_{n-jᵢ+1}/(n-jᵢ+1)`, multinomial without `ℓᵢ!`, no
-correction terms) the identity fails already at `q = 1`.
+/-- **Multinomial Genocchi–Lucas expansion of $(x + q\beta)^m$.** Let
+$\beta = (1 - \sqrt{5})/2$, let $G_k$ be the Genocchi numbers and $L_k$ the Lucas numbers, and for
+every natural number $n$ let
+$$
+c_n = \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} G_k \frac{L_{n-k+1}}{n-k+1} +
+2 \sqrt{5}^{\,n+1} \frac{G_{n+1}}{n+1}
+$$
+be the Genocchi–Lucas coefficient. Then for every natural number $q \ge 1$, every natural number
+$m$ and every real number $x$,
+$$
+(2\sqrt{5})^q (x + q\beta)^m = \sum_{n=0}^{m} \binom{m}{n} x^{m-n}
+\sum_{j_1 + \dots + j_q = n} \frac{n!}{j_1! \cdots j_q!} c_{j_1} \cdots c_{j_q},
+$$
+where the inner sum runs over all $q$-tuples $(j_1, \dots, j_q)$ of natural numbers with
+$j_1 + \dots + j_q = n$.
+
+This is the $q$-fold convolution form of the corrected Theorem 11, the Genocchi–Lucas expansion
+of $(x + \beta)^m$. As printed, with factors $L_{n-j_i+1}/(n-j_i+1)$, the paper's displayed
+multinomial coefficient and no correction terms, the identity fails already at $q = 1$.
 
 Source: Fatima Zohra Bensaci, Rachid Boumahdi, and Laala
 Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers",
@@ -501,12 +513,12 @@ theorem_wanted two_sqrt5_pow_mul_add (q m : ℕ) (hq : 1 ≤ q)
               ∏ i, ((j i).val.factorial : ℝ)) *
             ∏ i, genLucasCoeff (j i).val
 
-/-- **Iterated forward differences of a power.** For a real number $r$, let $\Delta_r$ be the
-forward difference operator with step $r$, sending a function $f : \mathbb{R} \to \mathbb{R}$ to
-$y \mapsto f(y + r) - f(y)$, and let $\Delta_r^k$ be its $k$-fold iterate (the identity when
-$k = 0$). For all real numbers $r$ and $x$ and all natural numbers $k$ and $n$, applying
-$\Delta_r^k$ to the function $y \mapsto y^n$ and evaluating at $x$ gives
-$\sum_{j=0}^{k} (-1)^{k-j} \binom{k}{j} (x + rj)^n$.
+/-- **Iterated forward differences of a power as an alternating binomial sum.** For a real
+number $r$, let $\Delta_r$ be the forward difference operator with step $r$, sending a function
+$f : \mathbb{R} \to \mathbb{R}$ to $y \mapsto f(y + r) - f(y)$, and let $\Delta_r^k$ be its
+$k$-fold iterate (the identity when $k = 0$). For all real numbers $r$ and $x$ and all natural
+numbers $k$ and $n$, applying $\Delta_r^k$ to the function $y \mapsto y^n$ and evaluating at $x$
+gives $\sum_{j=0}^{k} (-1)^{k-j} \binom{k}{j} (x + rj)^n$.
 
 The paper states this for nonzero complex $r$ and positive $k$; here $r$ is real and $k = 0$ is
 allowed.

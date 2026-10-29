@@ -17,7 +17,7 @@ $w$: either both are undefined, or both are the same state.
 ## Depends on
 
 - [Seed automaton](seed-automaton.md)
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

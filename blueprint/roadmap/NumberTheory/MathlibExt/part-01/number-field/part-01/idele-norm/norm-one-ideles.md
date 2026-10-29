@@ -21,7 +21,7 @@ consisting of the ideles whose adelic norm is $1$.
 
 ## Proof depends on
 
-- [Adelic Norm](adelic-norm.md)
+- [Adelic norm](adelic-norm.md)
 
 ## Sources
 

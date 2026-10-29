@@ -12,7 +12,7 @@ navigation: module
 - [Lower bounds for the rectangular circuit exponent](le-rectangular-circuit-exponent.md)
 - [Aspects with circuit exponent two bound the dual exponent](le-dual-circuit-exponent.md)
 - [Upper bounds for the dual circuit exponent](dual-circuit-exponent-le.md)
-- [Has Rectangular Circuit Exponent zero two](has-rectangular-circuit-exponent-zero-tw.md)
+- [Exponent two is admissible at aspect zero](has-rectangular-circuit-exponent-zero-tw.md)
 - [The rounded inner dimension is positive](rectangular-inner-dimension-pos.md)
 - [Admissible rectangular circuit exponents are at least two](two-le.md)
 - [The rectangular circuit exponent is at least two](two-le-rectangular-circuit-exponent.md)

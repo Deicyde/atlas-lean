@@ -14,4 +14,4 @@ navigation: module
 - [Admissible list](is-admissible-2.md)
 - [Admissibility of an index via its entries](is-admissible-iff.md)
 - [Hoffman block](hoffman-block.md)
-- [To List hoffman Block](to-list-hoffman-block.md)
+- [Hoffman block as a list](to-list-hoffman-block.md)

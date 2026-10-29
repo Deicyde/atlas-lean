@@ -17,7 +17,7 @@ one son step and one daughter step, in either order.
 ## Depends on
 
 - [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [The game Euclid](euclid-game.md)
 
 ## Sources

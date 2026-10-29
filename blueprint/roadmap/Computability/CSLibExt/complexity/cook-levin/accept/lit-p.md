@@ -31,7 +31,7 @@ $\mathrm{dq}$. At $\mathrm{dq}$ it empties $Q$, then goes to $\mathrm{fin}(c)$.
 - [Clause kinds of the accept generator](ak.md)
 - [Counters of the accept generator](ck.md)
 - [Labels of the accept generator](gl.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the accept generator's literal routine](ls.md)
 - [Stacks of a counter machine](../counter-view/sk.md)
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Variable layout of the transition clauses](../family/layout.md)
@@ -46,7 +46,7 @@ $\mathrm{dq}$. At $\mathrm{dq}$ it empties $Q$, then goes to $\mathrm{fin}(c)$.
 - [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

@@ -25,7 +25,7 @@ Needleman–Wunsch score of $x$ and $y$ with substitution score $\sigma$ and gap
 - [Affine-gap alignment score](affine-score.md)
 - [Linear gaps are affine gaps with equal costs](affine-score-eq-alignment-score.md)
 - [Gotoh is optimal](affine-score-le-gotoh-score.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Needleman–Wunsch is optimal](../sequence-alignment/alignment-score-le-nw-score.md)
 - [Gotoh is attained](exists-affine-score-eq-gotoh-score.md)
 - [Needleman–Wunsch is attained](../sequence-alignment/exists-alignment-score-eq-nw-score.md)

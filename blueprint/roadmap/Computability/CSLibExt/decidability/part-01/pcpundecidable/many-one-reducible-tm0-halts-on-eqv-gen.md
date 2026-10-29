@@ -25,7 +25,7 @@ reflexive, symmetric and transitive closure of one-step rewriting by $R_M$.
 
 - [The halting word](halt-word.md)
 - [The start word](init-word.md)
-- [A single-tape machine halts iff its start word is equivalent to `⊢ H ⊣`](tm0-halts-on-iff-eqv-gen.md)
+- [A single-tape machine halts iff its start word is Thue equivalent to the halting word](tm0-halts-on-iff-eqv-gen.md)
 
 ## Sources
 

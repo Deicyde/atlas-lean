@@ -18,7 +18,7 @@ and only if $(k, y_L)$ does.
 
 ## Depends on
 
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 - [Interior lattice points of $P_{a,n}$ on a vertical line](std-column.md)
 

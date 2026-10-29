@@ -434,8 +434,17 @@ theorem Rest.upd {F : CK → ℕ} (h : Rest F) {x : CK} (hQ : x ≠ .Q) (ht : x 
     by rw [update_of_ne hm.symm, h.md], by rw [update_of_ne h1.symm, h.c1],
     by rw [update_of_ne h2.symm, h.c2]⟩
 
-/-- One literal: from `P = q + gap + 1`, compute `Q := q = CB + off`, prepend the gap and the
-slot, leave `P = q` and the scratch counters empty. -/
+/-- **Run of one literal routine (one-hot generator).** Let $L$ be a layout with $g$ symbol
+codes, let $c$ be a clause kind of a cell with $g$ symbol codes, let $l < g$ be a literal index
+with offset $\mathrm{off}_c(l)$, and let $F$ be counter values of the one-hot generator whose
+scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let
+$q, \gamma \in \mathbb{N}$ with $q = F(\mathrm{CB}) + \mathrm{off}_c(l)$ and
+$F(P) = q + \gamma + 1$. Then for every output $o$ and flag $v$, the one-hot generator for $L$
+runs in at most $\gamma(3q + 6) + 2F(\mathrm{CB}) + 4q + 9$ steps from the first stage of the
+routine for literal $l$ of $c$, with flag $v$, counters $F$ and output $o$, to the label after
+literal $l$ of $c$ (the routine for literal $l - 1$, or the final stage of $c$ if $l = 0$), with
+flag false, counters $F$ except $P = q$, and output $s \cdot (01)^{\gamma} \cdot o$, where $s$ is
+the two-bit slot code of the sign of $c$ ($10$ if positive, $11$ if negative). -/
 theorem lit_run (c : CL L.g) (l : Fin L.g) (F : CK → ℕ) (hF : Rest F) (q gap : ℕ)
     (hq : q = F .CB + c.off l) (hp : F .P = q + gap + 1) (o : List Bool) (v : Bool) :
     RunLe (prog L) (gap * (3 * q + 6) + 2 * F .CB + 4 * q + 9)
@@ -472,7 +481,21 @@ one clause is $V(3V + 6) + g(6V + 9) + 3V + 4$, where $6V + 9$ is the per-litera
 from the gap loop. -/
 def clauseB (g V : ℕ) : ℕ := V * (3 * V + 6) + g * litE V + 3 * V + 4
 
-/-- All literals of clause `c`, from the one before `l` down to the first. -/
+/-- **Run of the literal routines of a clause (one-hot generator).** Let $L$ be a layout with $g$
+symbol codes, let $c$ be a well-formed clause kind of a cell with $g$ symbol codes (the
+at-least-one clause, or the at-most-one clause $\mathrm{amo}(x, y)$ with $x < y$) with $n$
+literals, write $\mathrm{off}_c(l)$ for the offset of literal $l$ of $c$ from the cell base, and
+let $B, V \in \mathbb{N}$ with $B + g \le V$. For $l \le n$ let $b_l$ be
+$B + \mathrm{off}_c(l)$ if $l < n$ and $V$ otherwise, let $\lambda_l$ be the list of literals of
+$c$ at base $B$ (position and sign) from index $l$ on, and let the label after literal $l$ be the
+routine for literal $l - 1$ of $c$, or the final stage of $c$ if $l = 0$. Write $E(a, \lambda)$
+for the gap encoding of $\lambda$ from slot $a$ to $V$. Let $F$ be counter values of the one-hot
+generator whose scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$ and
+with $F(\mathrm{CB}) = B$, and let $o$ be an output. Then for every $l \le n$ and flag $v$ there
+is a flag $v'$ such that the one-hot generator for $L$ runs in at most $b_l(3V + 6) + l(6V + 9)$
+steps from the label after literal $l$ of $c$, with flag $v$, counters $F$ except $P = b_l$ and
+output $E(b_l, \lambda_l) \cdot 00 \cdot o$, to the final stage of $c$, with flag $v'$, counters
+$F$ except $P = b_0$ and output $E(b_0, \lambda_0) \cdot 00 \cdot o$. -/
 theorem lits_run {V B : ℕ} {c : CL L.g} (hc : c.WF) (hBV : B + L.g ≤ V) (F : CK → ℕ)
     (hF : Rest F) (hCB : F .CB = B) (o : List Bool) :
     ∀ l, l ≤ c.nl → ∀ v : Bool, ∃ v' : Bool,

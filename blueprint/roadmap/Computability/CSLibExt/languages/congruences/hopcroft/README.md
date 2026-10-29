@@ -31,7 +31,7 @@ navigation: module
 - [Pieces of a split block lie on one side](side-of-mem-split-block.md)
 - [Effect of one splitter on the common-block relation](rel-round-p-iff.md)
 - [Number of blocks after one round](length-round-p.md)
-- [Length round W le](length-round-w-le.md)
+- [Growth of the waiting list in one round](length-round-w-le.md)
 
 ## The invariants
 

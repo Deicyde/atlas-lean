@@ -15,7 +15,7 @@ $1 \le c \le 2n$.
 
 ## Depends on
 
-- [Cyclic Label](cyclic-label.md)
+- [Cyclic labeling of the ladder perimeter](cyclic-label.md)
 
 ## Proof depends on
 

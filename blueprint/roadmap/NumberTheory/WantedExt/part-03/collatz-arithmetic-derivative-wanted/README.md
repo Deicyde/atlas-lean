@@ -10,7 +10,7 @@ navigation: module
 - [Compatible semiprimes](is-compatible-semiprime-pair.md)
 - [An example of compatible semiprimes](is-compatible-semiprime-pair-71-1609.md)
 - [Bounds for the arithmetic derivative](arithmetic-derivative-bounds.md)
-- [Odd of arithmetic Derivative collatz comm](odd-of-arithmetic-derivative-collatz-com.md)
+- [Positive solutions of the Collatz arithmetic differential equation are odd](odd-of-arithmetic-derivative-collatz-com.md)
 - [Positive solutions of the Collatz arithmetic differential equation are composite](composite-of-arithmetic-derivative-colla.md)
 - [Prime tetrations where the arithmetic derivative and the Collatz map commute](arithmetic-derivative-collatz-comm-prime.md)
 - [Prime gap bound for semiprime solutions](prime-gap-bound-of-arithmetic-derivative.md)

@@ -23,7 +23,7 @@ $$\sum_n r_{nk} \log \mathcal{N}(x_n \mid \mu, S) \le
 
 - [Data that span the space affinely](spans-affinely.md)
 - [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
-- [Comp Term](comp-term.md)
+- [Component term of the EM objective for full-covariance Gaussian mixtures](comp-term.md)
 - [Covariance update of the full-covariance Gaussian mixture](new-cov.md)
 - [Mean update of the full-covariance Gaussian mixture](new-mean.md)
 

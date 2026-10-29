@@ -5,7 +5,7 @@ navigation: module
 
 # Idele Norm
 
-- [Adelic Norm](adelic-norm.md)
+- [Adelic norm](adelic-norm.md)
 - [Formula for the adelic norm](adelic-norm-apply.md)
 - [Norm-one ideles](norm-one-ideles.md)
 - [Membership in the norm-one ideles](mem-norm-one-ideles.md)

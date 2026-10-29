@@ -25,9 +25,12 @@ even remoteness, and one more than the largest remoteness of an option otherwise
 
 namespace MetaMathlibExt.SpragueGrundy
 
-/-- Smith's remoteness function of an impartial game: `0` at terminal positions; otherwise one
-more than the least even remoteness of an option, if an option has even remoteness, and one more
-than the largest remoteness of an option if every option has odd remoteness.
+/-- **Smith's remoteness function.** For an impartial game $G$, the remoteness $R(p)$ of a
+position $p$ of $G$ is defined by well-founded recursion along moves; the options of $p$ are the
+positions reachable from $p$ in one move. If $p$ has no options, then $R(p) = 0$. Otherwise, if
+some option $q$ of $p$ has $R(q)$ even, then $R(p)$ is $1$ plus the least even value of $R(q)$
+over the options $q$ of $p$; if every option $q$ of $p$ has $R(q)$ odd, then $R(p)$ is $1$ plus
+the largest value of $R(q)$ over the options $q$ of $p$.
 
 Source: C. A. B. Smith, *Graphs and composite games*, J. Combin. Theory 1 (1966), 51–81; as
 recalled in Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On

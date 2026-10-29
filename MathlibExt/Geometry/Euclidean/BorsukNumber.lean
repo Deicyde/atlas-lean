@@ -108,7 +108,11 @@ theorem hasBorsukCover_pos {n k : ℕ} {s : Set (EuclideanSpace ℝ (Fin n))}
   have hx' : x ∈ ⋃ i, c i := hc hx
   simp [hk0] at hx'
 
-/-- Repeating an existing piece enlarges a nonempty set's cover to any greater size. -/
+/-- **Enlarging a Borsuk cover.** Let $n$, $k$ and $l$ be natural numbers with $k \le l$. If a
+nonempty set $s$ in the Euclidean space $\mathbb{R}^n$ has a $k$-piece Borsuk cover, then $s$ has
+an $l$-piece Borsuk cover.
+
+Repeating an existing piece enlarges the cover to the larger size. -/
 theorem hasBorsukCover_mono {n k l : ℕ} {s : Set (EuclideanSpace ℝ (Fin n))}
     (hs : s.Nonempty) (h : HasBorsukCover k s) (hkl : k ≤ l) : HasBorsukCover l s := by
   classical

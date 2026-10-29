@@ -15,7 +15,7 @@ navigation: module
 - [Zero-fixed hooks in column $m$ and two-colored partitions](card-zero-fixed-column-hook-eq-two-color.md)
 - [Fixed hooks in column $m$ arising from parts of size $m$](card-fixed-column-hook-part-eq-column.md)
 - [Generating function for column-$m$ hooks of size $k$](column-hook-size-gen-fun.md)
-- [Column Hook size gen Fun limit](column-hook-size-gen-fun-limit.md)
+- [Limit of the fixed-hook generating functions](column-hook-size-gen-fun-limit.md)
 - [Partitions with a fixed first-column hook arising from a part of given size](fixed-first-column-hook-part-gen-fun.md)
 - [Generating function for fixed column hooks from a part of size $k$](fixed-column-hook-part-gen-fun.md)
 - [Odd partitions with a fixed hook in a given column arising from an odd part](fixed-column-hook-part-odd-gen-fun.md)

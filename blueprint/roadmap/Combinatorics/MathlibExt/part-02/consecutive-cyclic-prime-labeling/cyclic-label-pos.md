@@ -14,7 +14,7 @@ $i \in \{0, \dots, 2n-1\}$, the cyclic label of $i$ with offset $s$ is at least 
 
 ## Depends on
 
-- [Cyclic Label](cyclic-label.md)
+- [Cyclic labeling of the ladder perimeter](cyclic-label.md)
 
 ## Sources
 

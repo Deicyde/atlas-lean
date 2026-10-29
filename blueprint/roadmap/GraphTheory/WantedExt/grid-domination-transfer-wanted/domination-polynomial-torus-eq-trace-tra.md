@@ -20,7 +20,7 @@ $n = 1$ and $n = 2$ the cycle $C_n$ is a single vertex and a single edge respect
 ## Depends on
 
 - [Signatures of a row graph](domination-signature.md)
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [Domination polynomial](domination-polynomial.md)
 - [Domination transfer matrix](domination-transfer-matrix.md)

@@ -15,7 +15,7 @@ strongly connected in $G$.
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Executable mutual-reachability test](same-component-b.md)
 
 ## Proof depends on

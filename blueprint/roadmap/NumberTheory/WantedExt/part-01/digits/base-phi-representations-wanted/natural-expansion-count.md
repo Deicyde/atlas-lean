@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Natural Expansions](natural-expansions.md)
+- [Natural base phi expansions](natural-expansions.md)
 
 ## Sources
 

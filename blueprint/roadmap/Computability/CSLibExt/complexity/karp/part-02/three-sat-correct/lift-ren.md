@@ -21,7 +21,7 @@ $2n$ the value $v(n)$.
 
 ## Proof depends on
 
-- [Fresh Val](fresh-val.md)
+- [Values of the fresh variables in the 3SAT translation](fresh-val.md)
 
 ## Sources
 

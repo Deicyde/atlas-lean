@@ -14,7 +14,7 @@ length exactly $n$.
 
 ## Depends on
 
-- [The ternary alphabet](ternary-alphabet.md)
+- [The ternary alphabet for square-free words](ternary-alphabet.md)
 
 ## Proof depends on
 

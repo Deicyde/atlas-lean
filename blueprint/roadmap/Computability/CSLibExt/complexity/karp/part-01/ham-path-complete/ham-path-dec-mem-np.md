@@ -26,7 +26,7 @@ lean: Cslib.Complexity.Karp.hamPathDec_mem_NP
 - [Labels of the Hamiltonian path verifier](../../part-02/ham-path-verify/lab.md)
 - [The HAMPATH verifier](../ham-path-check/ham-check.md)
 - [HAMPATH is verified with quadratic-size witnesses](../ham-path-check/ham-path-dec-iff.md)
-- [Prog](../../part-02/ham-path-verify/prog.md)
+- [The Hamiltonian path verifier machine](../../part-02/ham-path-verify/prog.md)
 - [Correctness and running time of the Hamiltonian path verifier](../../part-02/ham-path-verify/run.md)
 - [Start label of the Hamiltonian-path verifier](../../part-02/ham-path-verify/start.md)
 - [The HAMPATH verifier as a host component](ham-verify-comp.md)

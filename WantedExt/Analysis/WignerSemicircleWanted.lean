@@ -94,8 +94,12 @@ noncomputable def wignerMatrix {Ω : Type*} (X : ℕ → ℕ → Ω → ℝ) (n 
     (ω : Ω) : Matrix (Fin n) (Fin n) ℂ :=
   fun i j => ((X (min (i : ℕ) j) (max (i : ℕ) j) ω : ℝ) : ℂ)
 
-/-- The Wigner matrix is Hermitian (in fact real symmetric: `min`/`max`
-are symmetric in their arguments, and the entries are real). -/
+/-- **Wigner matrices are Hermitian.** For every family of real functions
+$X_{ij} : \Omega \to \mathbb{R}$, $i, j \in \mathbb{N}$, on a set $\Omega$, every $n \in \mathbb{N}$
+and every $\omega \in \Omega$, the Wigner matrix $W_n(\omega)$ is Hermitian.
+
+The matrix is in fact real symmetric: its entry at $(i, j)$ is the real number
+$X_{\min(i, j)\, \max(i, j)}(\omega)$, and $\min$ and $\max$ are symmetric in their arguments. -/
 lemma wignerMatrix_isHermitian {Ω : Type*} (X : ℕ → ℕ → Ω → ℝ) (n : ℕ)
     (ω : Ω) : (wignerMatrix X n ω).IsHermitian := by
   ext i j

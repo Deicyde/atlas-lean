@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.chuFamilyKLT_one_one_one
 ---
 
-# Chu Family KLT one one one
+# The Kumar–Mohan–Pandey set $A_{1,1,1}$
 
-Smallest case: `k = l = t = 1` gives `(0 | 1, 1, 2, 1, 4, 3, 1, 1, 2, 1)`.
+**The Kumar–Mohan–Pandey set $A_{1,1,1}$.** For $k = l = t = 1$, the Kumar–Mohan–Pandey set
+$A_{1,1,1}$, the set of partial sums starting from $0$ of the sequence
+$1, 1, 2, 1, 4, 3, 1, 1, 2, 1$, is $\{0, 1, 2, 4, 5, 9, 12, 13, 14, 16, 17\}$.
 
 ## Depends on
 

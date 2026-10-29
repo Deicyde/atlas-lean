@@ -24,7 +24,7 @@ of the resulting orbit signatures.
 
 ## Proof depends on
 
-- [Uniform Fixed Points](../group-action/card-add-mul-card-sub-one-eq-card-orbits.md)
+- [Burnside's lemma with a uniform fixed-point count](../group-action/card-add-mul-card-sub-one-eq-card-orbits.md)
 
 ## Sources
 

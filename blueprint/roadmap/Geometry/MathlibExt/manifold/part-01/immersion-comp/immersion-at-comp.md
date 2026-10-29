@@ -30,7 +30,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp](comp-2.md)
+- [Composition of immersions at a point over boundaryless models](comp-2.md)
 
 ## Sources
 

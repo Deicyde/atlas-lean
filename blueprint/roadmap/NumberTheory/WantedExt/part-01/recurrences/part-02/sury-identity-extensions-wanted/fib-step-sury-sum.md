@@ -16,7 +16,7 @@ When $n = 0$ the index $j(n-1) = -j$ is negative, so $F_{-j} = (-1)^{j+1} F_j$ e
 
 ## Depends on
 
-- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Fibonacci numbers extended to negative indices](fib-at-int.md)
 - [Lucas numbers at integer indices](lucas-at-int.md)
 
 ## Sources

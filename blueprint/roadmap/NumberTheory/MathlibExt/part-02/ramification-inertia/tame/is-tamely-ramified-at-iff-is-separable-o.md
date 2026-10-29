@@ -17,7 +17,7 @@ is residue separable over $R$.
 ## Depends on
 
 - [Residue separability at a prime](is-residue-separable-at.md)
-- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Tamely ramified prime](is-tamely-ramified-at.md)
 
 ## Proof depends on
 

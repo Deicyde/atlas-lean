@@ -15,7 +15,7 @@ concatenation of the images of its letters; the empty word is sent to the empty 
 ## Depends on
 
 - [Morphisms of the ternary alphabet](morphism.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

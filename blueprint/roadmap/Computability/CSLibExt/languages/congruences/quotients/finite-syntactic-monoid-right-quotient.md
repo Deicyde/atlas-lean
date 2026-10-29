@@ -14,7 +14,7 @@ monoid of the right quotient $L u^{-1} = \{x \mid xu \in L\}$ is finite.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Right quotient of a language by a word](right-quotient.md)
 
 ## Proof depends on

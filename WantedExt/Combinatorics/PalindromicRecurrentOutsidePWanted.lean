@@ -25,7 +25,8 @@ namespace MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted
 
 /-! Source record `OWR-4425-004`. Resolution: Labbé 2014, EJC 21 #P3.11. -/
 
-/-- **The ternary alphabet.** The alphabet is the three-letter set $\{0, 1, 2\}$.
+/-- **The ternary alphabet of Labbé's counterexample.** The alphabet is the three-letter set
+$\{0, 1, 2\}$.
 
 Labbé's counterexample is over a ternary alphabet. -/
 abbrev Sigma := Fin 3
@@ -41,7 +42,10 @@ concatenation of the images of its letters; the empty word is sent to the empty 
 def extend (φ : Morphism) (w : List Sigma) : List Sigma :=
   List.flatten (w.map φ)
 
-/-- Iterate the word extension. -/
+/-- **Iterated images of words under a morphism.** Let $\varphi$ be a morphism of the ternary
+alphabet $\{0, 1, 2\}$, acting on finite words letter by letter. Its iterates $\varphi^n$ on
+finite words are defined by $\varphi^0(w) = w$ and $\varphi^{n+1}(w) = \varphi(\varphi^n(w))$
+for every natural number $n$ and every finite word $w$ over $\{0, 1, 2\}$. -/
 def extendIter (φ : Morphism) : Nat → List Sigma → List Sigma
   | 0 => id
   | n + 1 => (extend φ) ∘ (extendIter φ n)

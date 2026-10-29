@@ -22,7 +22,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Skew Dyck steps](skew-dyck-step.md)
-- [Augmented KDyck Paths](augmented-kdyck-paths.md)
+- [Augmented $k$-Dyck paths](augmented-kdyck-paths.md)
 
 ## Sources
 

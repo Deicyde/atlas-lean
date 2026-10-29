@@ -13,7 +13,7 @@ $0$ equals $1$: the empty overpartition is the only one.
 
 ## Depends on
 
-- [Overpartition Count](overpartition-count.md)
+- [Number of overpartitions](overpartition-count.md)
 
 ## Proof depends on
 

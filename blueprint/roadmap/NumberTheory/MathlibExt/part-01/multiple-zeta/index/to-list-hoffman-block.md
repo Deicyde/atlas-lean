@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.toList_hoffmanBlock
 ---
 
-# To List hoffman Block
+# Hoffman block as a list
 
-Reading a Hoffman block as a list recovers `k - 1` copies of `x` followed
-by one `y`.
+**Hoffman block as a list.** For every positive integer $k$, the list of letters of the
+Hoffman block $z_k$ consists of $k - 1$ copies of $x$ (false) followed by one $y$ (true).
 
 ## Depends on
 

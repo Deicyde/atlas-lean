@@ -18,7 +18,7 @@ is $1$.
 - [Finite idele group](../idele/finite-idele-group.md)
 - [Infinite idele group](../idele/infinite-idele-group.md)
 - [Topological idele group](../idele/topological-idele-group.md)
-- [Adelic Norm](adelic-norm.md)
+- [Adelic norm](adelic-norm.md)
 - [Norm-one ideles](norm-one-ideles.md)
 - [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 

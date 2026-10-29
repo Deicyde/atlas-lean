@@ -31,7 +31,10 @@ indexed by $\alpha$ is a function $\psi : \alpha \to \mathbb{R}$, assigning a re
 each point of $\alpha$. -/
 abbrev Amplitude (α : Type*) := α → ℝ
 
-/-- The phase oracle negates exactly the marked amplitudes. -/
+/-- **Phase oracle.** For a type $\alpha$ and a finite set $M \subseteq \alpha$ of marked
+elements, the phase oracle sends a real amplitude vector $\psi$ on $\alpha$ to the amplitude
+vector whose value at $x$ is $-\psi(x)$ if $x \in M$ and $\psi(x)$ if $x \notin M$; that is, it
+negates exactly the amplitudes at the marked elements. -/
 def phaseOracle {α : Type*} [DecidableEq α] (marked : Finset α)
     (ψ : Amplitude α) : Amplitude α :=
   fun x => if x ∈ marked then -ψ x else ψ x

@@ -18,7 +18,7 @@ Equivalently, the sequence $I_k / \binom{n}{k}$ is log-concave for $0 \le k \le 
 
 ## Depends on
 
-- [Independent Set Count](independent-set-count.md)
+- [Number of independent sets of a given size](independent-set-count.md)
 
 ## Sources
 

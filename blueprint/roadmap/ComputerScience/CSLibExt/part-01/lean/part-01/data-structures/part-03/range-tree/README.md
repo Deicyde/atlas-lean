@@ -25,7 +25,7 @@ navigation: module
 - [The cached bounds of a nonempty bounds-valid range tree are leaf values](bounds-mem-to-list-of-ne-nil.md)
 - [Accumulator range report](report-aux.md)
 - [Range report](report.md)
-- [Report Aux eq filter append](report-aux-eq-filter-append.md)
+- [Accumulator range report of a bounds-valid range tree](report-aux-eq-filter-append.md)
 - [Correctness of the range report](report-eq-filter.md)
 - [Membership in a range report](mem-report-iff.md)
 - [Range count](count.md)

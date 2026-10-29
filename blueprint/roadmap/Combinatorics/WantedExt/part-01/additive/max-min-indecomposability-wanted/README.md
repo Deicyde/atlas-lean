@@ -13,7 +13,7 @@ navigation: module
 - [The zero sequence is decomposable](not-is-max-min-indecomposable-zero.md)
 - [Coefficient sequence of a digit string](digit-seq.md)
 - [A digit string has no coefficients beyond its length](digit-seq-of-le.md)
-- [Lunar Unit](lunar-unit.md)
+- [Lunar unit](lunar-unit.md)
 - [The lunar unit is a monomial](is-max-min-monomial-lunar-unit.md)
 - [Lunar primes](is-lunar-prime.md)
 - [Zero is not a lunar prime](not-is-lunar-prime-zero.md)

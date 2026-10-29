@@ -4,7 +4,7 @@ navigation: module
 
 # Correctness
 
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 - [Bellman-Ford succeeds exactly when no negative cycle is reachable](bellman-ford-returns-distances-iff.md)
 - [Bellman-Ford reports a negative cycle exactly when one is reachable](bellman-ford-returns-negative-cycle-iff.md)
 - [Bellman-Ford distances are realized by walks](bellman-ford-distance-realized.md)

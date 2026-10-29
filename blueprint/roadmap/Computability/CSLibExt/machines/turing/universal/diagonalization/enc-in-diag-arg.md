@@ -20,7 +20,7 @@ $[\mathrm{false}, \mathrm{true}, \mathrm{true}, \mathrm{false}, \mathrm{false}]$
 - [The cells of a list of numbers](../clocked/cells.md)
 - [Input encoding of the clocked universal machine](../clocked/enc-in.md)
 - [Codes for single-tape machines](../code/code.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 - [The universal machine's argument for the diagonal language](diag-arg.md)
 - [Input word of a list of bits](../code/input.md)
 

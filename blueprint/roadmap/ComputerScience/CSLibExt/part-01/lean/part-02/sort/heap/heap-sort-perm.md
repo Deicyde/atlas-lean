@@ -14,7 +14,7 @@ heap sort returns a permutation of $xs$.
 
 ## Depends on
 
-- [Heap Sort](heap-sort.md)
+- [Heap sort](heap-sort.md)
 
 ## Proof depends on
 

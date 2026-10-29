@@ -16,11 +16,11 @@ $\operatorname{mult}_{x_i} f$ is the multiplicity of $f$ at $x_i$.
 
 ## Depends on
 
-- [Affine Point](affine-point.md)
+- [Points of the complex affine plane](affine-point.md)
 
 ## Proof depends on
 
-- [Plane Polynomial](plane-polynomial.md)
+- [Polynomials in two complex variables](plane-polynomial.md)
 - [Multiplicity of a plane polynomial at a point](multiplicity.md)
 
 ## Sources

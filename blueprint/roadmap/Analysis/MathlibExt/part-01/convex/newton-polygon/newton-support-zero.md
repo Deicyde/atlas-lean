@@ -15,11 +15,11 @@ $\mathbb{R}^2$.
 
 ## Depends on
 
-- [Newton Support](newton-support.md)
+- [Newton support](newton-support.md)
 
 ## Proof depends on
 
-- [Exponent To Real](exponent-to-real.md)
+- [Exponent vectors as points of the plane](exponent-to-real.md)
 
 ## Sources
 

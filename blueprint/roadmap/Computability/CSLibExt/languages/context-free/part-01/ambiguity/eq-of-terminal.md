@@ -14,7 +14,7 @@ word of terminals $w$, then $\rho$ is the empty list and $w = u$.
 
 ## Depends on
 
-- [Left Derivation](left-derivation.md)
+- [Leftmost derivation](left-derivation.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ returned.
 
 - [First unit literal](first-unit.md)
 - [First variable of a CNF formula](first-variable.md)
-- [Restrict](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/restrict-2.md)
+- [Restriction of a CNF formula by a literal](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/restrict-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

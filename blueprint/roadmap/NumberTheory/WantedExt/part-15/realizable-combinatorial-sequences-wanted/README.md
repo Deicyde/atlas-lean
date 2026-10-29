@@ -13,6 +13,6 @@ navigation: module
 - [Helou–Terjanian congruence for $p = 3$](choose-three-mul-mod-eq.md)
 - [Helou–Terjanian congruence for $p = 2$](choose-two-mul-mod-eq.md)
 - [Binomial coefficients at multiples of a prime divisor](choose-mul-prime-mod-eq-choose-div.md)
-- [Moebius conv nonneg of geometric growth](moebius-conv-nonneg-of-geometric-growth.md)
+- [Möbius transforms of sequences growing by a factor of at least $1.221$ are nonnegative](moebius-conv-nonneg-of-geometric-growth.md)
 - [Dold congruences via prime-power congruences](prime-power-congruence-iff-dold.md)
 - [Even-binomial-type sums are Dold realizable](dold-realizable-even-binomial-type-sum.md)

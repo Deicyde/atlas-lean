@@ -32,7 +32,7 @@ $A_1$ satisfies the row condition.
 
 ## Depends on
 
-- [Is Reduced Magic Square](is-reduced-magic-square.md)
+- [Reduced magic squares](is-reduced-magic-square.md)
 
 ## Sources
 

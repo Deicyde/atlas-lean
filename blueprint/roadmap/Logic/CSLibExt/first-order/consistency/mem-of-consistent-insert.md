@@ -14,7 +14,7 @@ a formula. If $\Delta \cup \{\varphi\}$ is consistent, then $\varphi \in \Delta$
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Maximal consistent set](maximal-consistent.md)
 
 ## Sources

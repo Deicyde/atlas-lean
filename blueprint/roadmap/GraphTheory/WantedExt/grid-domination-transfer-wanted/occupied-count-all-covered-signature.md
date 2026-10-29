@@ -13,10 +13,10 @@ vertex set, the number of occupied vertices of the all-covered signature of $R$ 
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [All-covered signature](all-covered-signature.md)
-- [Occupied Count](occupied-count.md)
+- [Number of occupied vertices](occupied-count.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ navigation: module
 - [Density of independent centred Gaussian coordinates](prod-gaussian-pdfreal-zero.md)
 - [Posterior kernel of ridge regression](ridge-posterior.md)
 - [Ridge regression is MAP estimation](ridge-posterior-le-iff.md)
-- [Is Max On ridge Posterior](is-max-on-ridge-posterior.md)
+- [The ridge estimate maximizes the ridge posterior](is-max-on-ridge-posterior.md)
 
 ## Lasso: MAP under a Laplace prior
 

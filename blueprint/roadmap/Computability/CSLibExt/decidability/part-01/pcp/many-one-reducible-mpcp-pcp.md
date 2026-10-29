@@ -37,7 +37,7 @@ word, and $P$ has an MPCP solution.
 - [The star symbol](star.md)
 - [A star after every letter](star-after.md)
 - [A star before every letter](star-before.md)
-- [The start domino](start-domino.md)
+- [The start domino of the MPCP-to-PCP reduction](start-domino.md)
 - [The reduction from MPCP to PCP](to-pcp.md)
 - [Top word of a sequence of dominoes](top.md)
 

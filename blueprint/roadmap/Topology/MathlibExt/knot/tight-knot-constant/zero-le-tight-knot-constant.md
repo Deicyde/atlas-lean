@@ -18,7 +18,7 @@ $0 \le C_{22a}$ in the extended reals.
 ## Proof depends on
 
 - [Zero is an admissible tight-knot constant](is-admissible-zero.md)
-- [Le tight Knot Constant](le-tight-knot-constant.md)
+- [Admissible constants are bounded by the tight knot constant](le-tight-knot-constant.md)
 
 ## Sources
 

@@ -53,7 +53,11 @@ def IsTournament {n : ℕ} (T : Fin n → Fin n → Bool) :
     Prop :=
   (∀ i, T i i = false) ∧ ∀ i j, i ≠ j → T i j ≠ T j i
 
-/-- The score (outdegree) of a player in a tournament. -/
+/-- **Score of a player.** Let $T$ be a binary relation on the players $1, \dots, n$, where
+$T(i, j)$ means that $i$ beats $j$. The score of a player $i$ is the number of players $j$ such
+that $T(i, j)$ holds, that is, the number of players that $i$ beats.
+
+In a tournament this is the outdegree of $i$. -/
 def score {n : ℕ} (T : Fin n → Fin n → Bool) (i : Fin n) :
     ℕ :=
   (Finset.univ.filter (fun j => T i j)).card

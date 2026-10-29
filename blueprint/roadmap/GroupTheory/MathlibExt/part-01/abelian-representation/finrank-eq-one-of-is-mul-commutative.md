@@ -7,10 +7,12 @@ proof: formalized
 lean: FDRep.finrank_eq_one_of_isMulCommutative
 ---
 
-# Finrank eq one of is Mul Commutative
+# Simple finite-dimensional representations of commutative monoids are one-dimensional
 
-A simple representation of a multiplicatively commutative monoid over an algebraically closed
-field is one-dimensional.
+**Simple finite-dimensional representations of commutative monoids are one-dimensional.**
+Let $k$ be an algebraically closed field and let $G$ be a commutative monoid. Every
+finite-dimensional representation $V$ of $G$ over $k$ that is simple as an object of the category
+of finite-dimensional representations of $G$ over $k$ has dimension $1$ over $k$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Irreducible of simple](is-irreducible-of-simple.md)
+- [Simple finite-dimensional representations are irreducible](is-irreducible-of-simple.md)
 
 ## Sources
 

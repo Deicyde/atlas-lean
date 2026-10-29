@@ -24,7 +24,7 @@ its image in $K^\times$ is injective.
 - [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 - [Embedding of integral units into field units](integral-units-to-field-units.md)
 - [Integral units embed injectively into field units](integral-units-to-field-units-injective.md)
-- [Mem ray Elements of valuation eq one](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
+- [Elements of valuation one at the primes dividing a modulus are ray elements](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
 
 ## Sources
 

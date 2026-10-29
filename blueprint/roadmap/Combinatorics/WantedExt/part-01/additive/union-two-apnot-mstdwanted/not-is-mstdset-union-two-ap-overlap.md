@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_union_two_ap_overlap
 ---
 
-# Theorem 2
+# Two overlapping progressions with rational ratios, outside two open cases, are not MSTD
 
-**Theorem 2.** Let `X₁ = J(x₁, m₁, d₁)` and `X₂ = J(x₂, m₂, d₂)` with `d₁ > 0` and
-`min X₂ < max X₁`, and suppose `(x₂ - x₁)/d₁ = s₁ + p₁/q₁` and `d₂/d₁ = s₂ + p₂/q₂` with
-`sᵢ ≥ 0` and `pᵢ, qᵢ` positive and coprime. Then `X₁ ∪ X₂` is not an MSTD set, except in the
-two cases the paper leaves open: (i) `gcd(q₁, q₂) > 1` and `0 < d₂ < (m₁ - 1) d₁`, and
-(ii) `q₁ = 2`, `gcd(2, q₂) = 1` and `0 < d₂ < (m₁ - 1) d₁`; these are excluded by hypothesis.
-`min X₂ < max X₁` is written `x₂ < x₁ + m₁ d₁` (here `d₂ > 0` follows from `d₁ > 0`).
+**Two overlapping progressions with rational ratios, outside two open cases, are not MSTD.**
+For real numbers $x, d$ and a natural number $m$, write
+$J(x, m, d) = \{x + id : i = 0, 1, \ldots, m\}$. Let $x_1, x_2, d_1, d_2$ be real numbers with
+$d_1 > 0$, let $m_1, m_2$ be natural numbers with $x_2 < x_1 + m_1 d_1$, and let
+$s_1, s_2, p_1, p_2, q_1, q_2$ be natural numbers with $p_1, p_2, q_1, q_2 > 0$,
+$\gcd(p_1, q_1) = \gcd(p_2, q_2) = 1$, $(x_2 - x_1)/d_1 = s_1 + p_1/q_1$ and
+$d_2/d_1 = s_2 + p_2/q_2$. Suppose that neither of the following holds: (i) $\gcd(q_1, q_2) > 1$
+and $0 < d_2 < (m_1 - 1) d_1$; (ii) $q_1 = 2$, $\gcd(2, q_2) = 1$ and $0 < d_2 < (m_1 - 1) d_1$.
+Then $J(x_1, m_1, d_1) \cup J(x_2, m_2, d_2)$ is not an MSTD set.
+
+Since $d_1 > 0$ and $d_2/d_1 = s_2 + p_2/q_2 > 0$, also $d_2 > 0$, so the condition
+$x_2 < x_1 + m_1 d_1$ says that the smallest element of $J(x_2, m_2, d_2)$ is less than the largest
+element of $J(x_1, m_1, d_1)$. Cases (i) and (ii) are the two cases the source leaves open.
 
 ## Depends on
 

@@ -31,7 +31,7 @@ string $100$, is computable in polynomial time.
 - [Component machine](../../../host/comp.md)
 - [Reduction host, canonical form](../../../host/is-poly-time-reduction.md)
 - [K](../../part-02/kgmap/k.md)
-- [Lab](../../part-02/kgmap/lab.md)
+- [Labels of the KG-map machine](../../part-02/kgmap/lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](../../part-02/kgmap/mode.md)
 - [Reduction computed in each mode](../../part-02/kgmap/f.md)
 - [The KG-map machine](../../part-02/kgmap/prog.md)

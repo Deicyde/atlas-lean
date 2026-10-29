@@ -140,10 +140,10 @@ the word $a_1 \cdots a_n$ over the extended alphabet of $\alpha$ in which each $
 letter. -/
 abbrev lift (u : List α) : List (Sym α) := u.map letter
 
-/-- **The start domino.** Let $x$ be a word over an alphabet $\alpha$, and extend $\alpha$ by a
-star $\star$ and an end marker $\diamond$. The start domino of $x$ has top the one-letter word
-$\diamond$ and bottom the word $\diamond x \star$, with the letters of $x$ read as letters of the
-extended alphabet. -/
+/-- **The start domino of the reduction from reachability to MPCP.** Let $x$ be a word over an
+alphabet $\alpha$, and extend $\alpha$ by a star $\star$ and an end marker $\diamond$. The start
+domino of $x$ has top the one-letter word $\diamond$ and bottom the word $\diamond x \star$, with
+the letters of $x$ read as letters of the extended alphabet. -/
 def startCard (x : List α) : Domino (Sym α) := ([endMark], endMark :: lift x ++ [star])
 
 /-- **Final domino.** For a word $y$ over $\alpha$, the final domino of $y$ is the domino over the
@@ -453,7 +453,14 @@ theorem manyOneReducible_sr_mpcp :
       (fun P : List (Domino (Sym α)) ↦ NonemptyWords P ∧ MPCP P) :=
   ⟨reduce, primrec_reduce.to_comp, nonemptyRules_and_sr_iff⟩
 
-/-- **Reachability many-one reduces to PCP**, on rules with nonempty sides. -/
+/-- **Reachability for rules with nonempty sides many-one reduces to PCP.** Let $\alpha$ be an
+alphabet with a primitive recursive coding, let $\alpha'$ be $\alpha$ extended with two new
+symbols, the star and the end marker, and let $\alpha''$ be $\alpha'$ extended in the same way by
+two further new symbols. There is a computable function $f$ from instances $(R, x, y)$ of the
+reachability problem over $\alpha$, where $R$ is a list of rewriting rules over $\alpha$ and $x$
+and $y$ are words over $\alpha$, to finite lists of dominoes over $\alpha''$ such that, for every
+such instance, $f(R, x, y)$ has a PCP solution if and only if every rule of $R$ has a nonempty
+left side and a nonempty right side and $x$ rewrites to $y$ in zero or more steps of $R$. -/
 theorem manyOneReducible_sr_pcp :
     ManyOneReducible (fun I : List (Rule α) × List α × List α ↦ NonemptyRules I.1 ∧ SR I)
       (PCP (α := Sym (Sym α))) :=

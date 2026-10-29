@@ -17,7 +17,7 @@ an edge to the first.
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Directed cycle within a vertex list](directed-cycle-in.md)
-- [Is Acyclic](is-acyclic.md)
+- [Acyclic directed graph](is-acyclic.md)
 
 ## Sources
 

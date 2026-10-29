@@ -10,7 +10,7 @@ navigation: module
 - [Value received from a commander](received.md)
 - [The oral messages algorithm](om.md)
 - [A loyal commander sends its value](received-of-loyal.md)
-- [Received of not loyal](received-of-not-loyal.md)
+- [A traitorous commander sends the adversary's value](received-of-not-loyal.md)
 - [A loyal commander is obeyed under oral messages](om-eq-of-loyal.md)
 - [Validity under oral messages (IC2)](om-valid.md)
 - [Agreement under oral messages (IC1)](om-agree.md)

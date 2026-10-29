@@ -18,7 +18,7 @@ dropping its first $i$ elements.
 ## Depends on
 
 - [Pattern match at an offset](../basic/match-at.md)
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ navigation: module
 - [Reachability by unit productions](unit-steps.md)
 - [Unit output](is-unit-output.md)
 - [Nonterminals of a sentential form](form-nts.md)
-- [Nonterminals mentioned by a grammar](grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](grammar-nts.md)
 - [Unit chains start at mentioned nonterminals](mem-grammar-nts-of-unit-steps.md)
 - [Eliminating unit productions](unit-grammar.md)
 - [Productions of the unit-free grammar](mem-unit-grammar-rules.md)

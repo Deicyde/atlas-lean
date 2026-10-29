@@ -16,7 +16,7 @@ for every $d \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is General Position](is-general-position-3.md)
+- [General position of projective points](is-general-position-3.md)
 
 ## Sources
 

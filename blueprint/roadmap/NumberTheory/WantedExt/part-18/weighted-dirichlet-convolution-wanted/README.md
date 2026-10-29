@@ -13,7 +13,7 @@ navigation: module
 - [Sums of a Dirichlet convolution over multiples of $r$](sum-dirichlet-convolution-mul-eq.md)
 - [Möbius expansion of weighted sums of a Dirichlet convolution](sum-mul-dirichlet-convolution-eq-sum-moe.md)
 - [Weighted summation of Dirichlet convolutions](weighted-sum-dirichlet-convolution-eq.md)
-- [B Free Indicator mul moebius apply](b-free-indicator-mul-moebius-apply.md)
+- [The $B_\kappa$-free indicator convolved with the Möbius function](b-free-indicator-mul-moebius-apply.md)
 - [The $B_\kappa$-free indicator twisted by the principal character, convolved with $\mu$](b-free-coprime-indicator-mul-moebius.md)
 - [Asymptotic for the divisor function summed over $k$-free integers](k-free-divisor-sum-asymptotic.md)
 - [Asymptotic for the divisor function summed over $B_\kappa$-free integers](b-free-divisor-sum-asymptotic.md)

@@ -78,8 +78,10 @@ Sequences 27 (2024), Article 24.3.1, Lemma 5
 public theorem isGibonacciGood_zero (a b : ℤ) : IsGibonacciGood a b 0 :=
   ⟨by norm_num, a, gibonacciGeneratingValue_zero a b⟩
 
-/-- Characteristic example: `1` is good for every `(a, b)`, with value
-`-b`.
+/-- **One is good for every pair.** For all integers $a$ and $b$, the rational number $1$ is good
+for $(a, b)$.
+
+The value of the Gibonacci generating function there is $G^{(a,b)}(1) = -b$.
 
 Source: Knapp, *Fibonacci Generating Functions*, Journal of Integer
 Sequences 27 (2024), Article 24.3.1, Lemma 5

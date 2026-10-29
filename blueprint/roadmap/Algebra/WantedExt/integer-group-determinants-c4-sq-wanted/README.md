@@ -37,7 +37,7 @@ navigation: module
 - [Two prime factors ≡ −3 mod 8 of ββ̄γγ̄ (C₄²)](c4-sq-norm-beta-gamma-prime-factors.md)
 - [Even integer group determinants of $C_4 \times C_4$](even-mem-integer-group-determinants-c4-s.md)
 - [The power of $2$ in $D_4(b) D_4(c)$](c4-sq-circulant-det-four-product-two-pow.md)
-- [Lemma 16](c4-sq-norm-beta-gamma-two-power.md)
+- [The power of $2$ in $\beta\bar\beta\gamma\bar\gamma$](c4-sq-norm-beta-gamma-two-power.md)
 - [Two conditions forcing $b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3 \equiv 2 \pmod 4$](c4-sq-cross-sum-mod-four-of-two-power.md)
 - [A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²)](c4-sq-norm-beta-gamma-prime-factor.md)
 - [A prime factor $p \equiv 5 \pmod 8$ of $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma$](c4-sq-group-det-factors-prime-factor.md)

@@ -15,7 +15,7 @@ $\Phi(x) = \log \sum_{n \ge 0} |a_n| e^{nx}$. Then $\Phi''(x) \ge 0$ for every r
 
 ## Depends on
 
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 - [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Proof depends on

@@ -34,7 +34,7 @@ $j$.
 ## Proof depends on
 
 - [Constant block of a copy site](top.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 - [Stack of a counter](k-2.md)
 - [Counters are not held on the output stack](k-ne-o.md)
 - [Unit symbol of a counter](unit.md)

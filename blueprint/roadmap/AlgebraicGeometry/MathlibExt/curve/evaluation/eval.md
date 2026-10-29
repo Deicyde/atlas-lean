@@ -14,7 +14,7 @@ $f(D) = \prod_{P \in \operatorname{supp} D} f(P)^{D(P)}$ of $G$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 
 ## Proof depends on
 

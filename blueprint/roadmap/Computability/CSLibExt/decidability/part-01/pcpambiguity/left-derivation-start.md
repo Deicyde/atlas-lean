@@ -20,12 +20,12 @@ derivation of $b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1$ from $S$.
 ## Depends on
 
 - [The ambiguity grammar of a PCP instance](amb-grammar.md)
-- [Canon](canon.md)
+- [The canonical rule sequence along an index sequence](canon.md)
 - [The side word of an index sequence](../cfgundecidable/side-word.md)
-- [Start Rule](start-rule.md)
+- [The start production $S \to A$](start-rule.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
+- [Leftmost derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Proof depends on
 

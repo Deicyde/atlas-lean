@@ -17,7 +17,7 @@ This holds because a task is never ready at or after the last step.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 - [Greedy schedule](greedy.md)
 - [Ready task](ready.md)
 - [Length of a schedule](../brent/length.md)

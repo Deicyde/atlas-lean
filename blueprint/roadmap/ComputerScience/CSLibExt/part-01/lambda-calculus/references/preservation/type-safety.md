@@ -17,10 +17,10 @@ term that is well typed in a well-typed store never reaches a stuck configuratio
 ## Depends on
 
 - [Typing judgment for the lambda calculus with references](../typing/has-type.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
-- [Store Typed](../typing/store-typed.md)
+- [Well-typed stores](../typing/store-typed.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 - [Values of the simply typed lambda calculus with references](../syntax/value.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)

@@ -253,8 +253,15 @@ theorem stepAux_pushAll {ps : List (Σ k, Γ k)} (hps : ps.NodupKeys) (q : TM2.S
 
 variable [Flag σ] {M : Λ → TM2.Stmt Γ Λ σ}
 
-/-- Loop: pop stack `k` until empty; for each popped symbol push one unit on every target in
-`ps`. `ps = []` drains `k`, `ps = [⟨t, x⟩]` moves the counter, two targets copy it. -/
+/-- **Counter transfer loop.** For a stack $k$, a list $ps$ of pairs $(t, x)$ of a stack $t$ and a
+symbol $x$ of stack $t$, and labels $\ell$ and $\ell'$, this machine statement pops stack $k$,
+stores in the state whether a symbol was popped, and branches on it: if a symbol was popped, it
+pushes $x$ onto $t$ for each pair $(t, x)$ of $ps$ in list order and goes to $\ell$; if stack $k$
+was empty, it goes to $\ell'$.
+
+Placed at label $\ell$, it pops $k$ until $k$ is empty and pushes one copy of every target symbol
+per popped symbol: with $ps$ empty it drains $k$, with one target it moves the counter, and with
+two targets it copies it. -/
 def xfer (k : K) (ps : List (Σ k, Γ k)) (self next : Λ) : TM2.Stmt Γ Λ σ :=
   .pop k (fun _ o => Flag.tag o.isSome)
     (.branch Flag.untag (pushAll ps (.goto fun _ => self)) (.goto fun _ => next))
@@ -433,9 +440,21 @@ theorem cmpLoop_run {a b ta tb : K} {ua : Γ a} {ub : Γ b} {uta : Γ ta} {utb :
           rw [h'k k h1 h2 h3 h4]
           simp [hS₁, update_of_ne h1, update_of_ne h2, update_of_ne h3, update_of_ne h4]
 
-/-- Full non-destructive comparison: the loop, then `xfer ta → a` and `xfer tb → b`. From counters
-`a = m`, `b = n` and empty scratch stacks `ta`, `tb`, it reaches `out (compare m n)` with **all
-stacks exactly as before**, in `3 · min m n + 3 + [m ≠ n]` steps. -/
+/-- **Non-destructive comparison of two counters.** Let $M$ be a TM2 machine whose state type
+carries a flag bit, let $a, b, t_a, t_b$ be pairwise distinct stacks with symbols $u_a$, $u_b$,
+$u_{t_a}$, $u_{t_b}$ of their alphabets, let $\ell$ be a label and let $r$, $r'$, $o$ map each
+ordering to a label. Suppose that $M$ has at $\ell$ the comparison round of $a$ and $b$ with
+scratch stacks $t_a, t_b$ and units $u_{t_a}, u_{t_b}$ that goes to $\ell$ again and exits to
+$r(\mathrm{lt})$, $r(\mathrm{eq})$ and $r(\mathrm{gt})$, and that for every ordering $\omega$,
+$M$ has at $r(\omega)$ the counter transfer loop of $t_a$ into the single target $(a, u_a)$ that
+repeats at $r(\omega)$ and exits to $r'(\omega)$, and has at $r'(\omega)$ the counter transfer
+loop of $t_b$ into the single target $(b, u_b)$ that repeats at $r'(\omega)$ and exits to
+$o(\omega)$. Write $\mathrm{compare}(m, n)$ for the ordering of natural numbers $m$ and $n$, and
+$[m \ne n]$ for $1$ if $m \ne n$ and $0$ otherwise. Then for all $m, n \in \mathbb{N}$, every
+state $v$ and all stacks $S$ in which $a$ holds exactly $u_a^m$, $b$ holds exactly $u_b^n$ and
+$t_a$ and $t_b$ are empty, $M$ runs in exactly $3\min(m, n) + 3 + [m \ne n]$ steps from label
+$\ell$ with state $v$ and stacks $S$ to label $o(\mathrm{compare}(m, n))$ with the state that
+stores the flag value false and with the same stacks $S$. -/
 theorem cmp_run {a b ta tb : K} {ua : Γ a} {ub : Γ b} {uta : Γ ta} {utb : Γ tb}
     {self : Λ} {r rB out : Ordering → Λ}
     (hp : M self = cmpStep a b ta tb uta utb self (r .lt) (r .eq) (r .gt))

@@ -79,9 +79,9 @@ public theorem polyContFract_nums_zero (a : ℕ → F[X]) (n : ℕ) :
     (polyContFract a n).nums 0 = algebraMap F[X] (RatFunc F) (a 0) := by
   simp [GenContFract.zeroth_num_eq_h, polyContFract_h]
 
-/-- **The partial denominator B₀ of a polynomial continued fraction.** Let $F$ be a field, let
-$n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$. The partial denominator $B_0$ of the
-continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$ equals $1$.
+/-- **Zeroth convergent denominator of a polynomial continued fraction.** Let $F$ be a field,
+let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \in \mathbb{N}$. The denominator $B_0$
+of the zeroth convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is $1$.
 
 Source: Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen,
 *An Interpretation of Continued Fractions and Farey Graphs in the Field of
@@ -104,9 +104,9 @@ public theorem polyContFract_nums_one (a : ℕ → F[X]) {n : ℕ} (hn : 0 < n) 
     (by simp [polyContFract_s_get?, hn])]
   simp [polyContFract_h]
 
-/-- **The partial denominator B₁ of a polynomial continued fraction.** Let $F$ be a field, let
-$n \ge 1$, and let $a_0, a_1, \dots, a_n \in F[X]$. The partial denominator $B_1$ of the continued
-fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$ equals $a_1$.
+/-- **First convergent denominator of a polynomial continued fraction.** Let $F$ be a field,
+let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \ge 1$. The denominator $B_1$ of the
+first convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is $a_1$.
 
 Source: Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen,
 *An Interpretation of Continued Fractions and Farey Graphs in the Field of
@@ -118,11 +118,11 @@ public theorem polyContFract_dens_one (a : ℕ → F[X]) {n : ℕ} (hn : 0 < n) 
 
 /-- **Convergents of a polynomial continued fraction form a Farey path.** Let $F$ be a field, let
 $n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$ with $a_i$ nonconstant for
-$1 \le i \le n$. Write $A_i$ and $B_i$ for the partial numerators and partial denominators of the
-continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Then for every $i \le n$, $A_i$ and $B_i$
-are polynomials in $F[X]$, $B_i \ne 0$, and $A_i$ and $B_i$ are coprime in $F[X]$; and for
-$1 \le i \le n$, the polynomial $A_i B_{i-1} - A_{i-1} B_i$ is a unit of $F[X]$, that is, a
-nonzero constant.
+$1 \le i \le n$. Write $A_i$ and $B_i$ for the numerator and the denominator of the $i$th
+convergent $A_i / B_i$ of the continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Then for
+every $i \le n$, $A_i$ and $B_i$ are polynomials in $F[X]$, $B_i \ne 0$, and $A_i$ and $B_i$ are
+coprime in $F[X]$; and for $1 \le i \le n$, the polynomial $A_i B_{i-1} - A_{i-1} B_i$ is a unit
+of $F[X]$, that is, a nonzero constant.
 
 In the language of the paper, each convergent $A_i / B_i$ is a vertex of the Farey graph over $F$
 and consecutive convergents are adjacent in it.
@@ -140,10 +140,11 @@ public theorem_wanted polyContFract_convergents_farey_path (a : ℕ → F[X]) (n
 
 /-- **Extending a Farey path extends the continued fraction.** Let $F$ be a field, let $n \ge 1$,
 and let $a_0, a_1, \dots, a_n \in F[X]$ with $a_i$ nonconstant for $1 \le i \le n$. Let
-$A_0, \dots, A_n$ and $B_0, \dots, B_n$ be polynomials in $F[X]$ equal to the partial numerators
-and partial denominators of the continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Let
-$u, v \in F[X]$ be such that $u B_n - v A_n$ is a unit of $F[X]$ (a nonzero constant) and
-$\deg B_n < \deg v$. Then there is a nonconstant polynomial $b \in F[X]$ such that, in $F(X)$,
+$A_0, \dots, A_n, B_0, \dots, B_n \in F[X]$ be such that, for every $i \le n$, $A_i$ and $B_i$ are
+the numerator and the denominator of the $i$th convergent of the continued fraction
+$[a_0, a_1, \dots, a_n]$ over $F(X)$. Let $u, v \in F[X]$ be such that $u B_n - v A_n$ is a unit
+of $F[X]$ (a nonzero constant) and $\deg B_n < \deg v$. Then there is a nonconstant polynomial
+$b \in F[X]$ such that, in $F(X)$,
 $$b = \frac{v A_{n-1} - u B_{n-1}}{u B_n - v A_n},$$
 and the $(n+1)$st convergent of the continued fraction $[a_0, a_1, \dots, a_n, b]$ equals $u/v$.
 
@@ -169,17 +170,22 @@ public theorem_wanted polyContFract_extend_farey_path (a : ℕ → F[X]) {n : �
       (polyContFract (Function.update a (n + 1) b) (n + 1)).convs (n + 1) =
         algebraMap F[X] (RatFunc F) u / algebraMap F[X] (RatFunc F) v
 
-/-- Theorem 6: let `v₀ = 1`, `u₀ ∈ F[X]`, and for `1 ≤ i ≤ n` let
-`uᵢ, vᵢ ∈ F[X]` with `deg vᵢ₋₁ < deg vᵢ` and
-`uᵢ vᵢ₋₁ - uᵢ₋₁ vᵢ = cᵢ ∈ F \ {0}`. With `a₀ = u₀`, `a₁ = c₁⁻¹ v₁`,
-`a₂ = -c₂⁻¹ c₁ (u₂ v₀ - u₀ v₂)` and, for `i ≥ 3`,
-`aᵢ = (-1)^(i+1) cᵢ⁻¹ cᵢ₋₁ cᵢ₋₂⁻² cᵢ₋₃² ⋯ c₁^(2(-1)^i) (uᵢ vᵢ₋₂ - uᵢ₋₂ vᵢ)`,
-the continued fraction `[a₀, …, aₙ]` is regular (`aᵢ` nonconstant for
-`i ≥ 1`), its value is `uₙ / vₙ`, each vertex `uᵢ / vᵢ` is its `i`th
-convergent, and `Aᵢ = tᵢ uᵢ`, `Bᵢ = tᵢ vᵢ` with
-`tᵢ = ± cᵢ⁻¹ cᵢ₋₁ cᵢ₋₂⁻¹ cᵢ₋₃ ⋯ c₁^((-1)^i)`, sign `+` for `i ≡ 0, 1 (mod 4)`
-and `-` for `i ≡ 2, 3 (mod 4)`. The paper's coprimality hypothesis
-`(uᵢ, vᵢ) = 1` is omitted: it follows from the determinant condition.
+/-- **Continued fraction along a Farey path of polynomials.** Let $F$ be a field, let
+$n \in \mathbb N$, let $u_i, v_i \in F[X]$ for $i \ge 0$, and let $c_i \in F$ for $i \ge 1$.
+Suppose that $v_0 = 1$ and that for $1 \le i \le n$ we have $c_i \ne 0$,
+$\deg v_{i-1} < \deg v_i$ and $u_i v_{i-1} - u_{i-1} v_i = c_i$. Let $a_0, a_1, \ldots \in F[X]$
+satisfy $a_0 = u_0$, $a_1 = c_1^{-1} v_1$, $a_2 = -c_2^{-1} c_1 (u_2 v_0 - u_0 v_2)$ and, for
+$3 \le i \le n$,
+$$a_i = (-1)^{i+1}c_i^{-1}c_{i-1}(u_i v_{i-2} - u_{i-2} v_i)\prod_{j=1}^{i-2} c_j^{2(-1)^{i-j+1}}.$$
+Then $a_i$ is nonconstant for $1 \le i \le n$. Moreover, for every $i \le n$ let
+$t_i = \varepsilon_i \prod_{j=1}^{i} c_j^{(-1)^{i-j+1}}$, where $\varepsilon_i = 1$ if
+$i \equiv 0, 1 \pmod 4$ and $\varepsilon_i = -1$ if $i \equiv 2, 3 \pmod 4$. Then the numerator
+$A_i$ and the denominator $B_i$ of the $i$th convergent of the continued fraction
+$[a_0; a_1, \ldots, a_n]$ over $F(X)$ are $A_i = t_i u_i$ and $B_i = t_i v_i$, and this
+convergent equals $u_i / v_i$.
+
+The paper's coprimality hypothesis $(u_i, v_i) = 1$ is omitted: it follows from the determinant
+condition.
 
 Source: Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen,
 *An Interpretation of Continued Fractions and Farey Graphs in the Field of

@@ -17,12 +17,12 @@ some finite DFA.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [The syntactic DFA](syntactic-dfa.md)
 
 ## Proof depends on
 
-- [Syntactic DFA accepts](syntactic-dfa-accepts.md)
+- [The syntactic DFA accepts its language](syntactic-dfa-accepts.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ deleted by promoting its successor, the minimum key of its right subtree.
 - [Rebalancing after deletion from the left subtree](bal-left.md)
 - [Rebalancing after deletion from the right subtree](bal-right.md)
 - [Adding a black to the root](incr-black.md)
-- [Min Key](min-key.md)
+- [Leftmost key of a red-black tree](min-key.md)
 
 ## Sources
 

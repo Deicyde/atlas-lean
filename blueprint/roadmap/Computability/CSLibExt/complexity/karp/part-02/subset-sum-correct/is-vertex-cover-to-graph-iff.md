@@ -26,7 +26,7 @@ $(i_q, j_q)$ satisfies $i_q \in S$ or $j_q \in S$.
 - [Adjacency bit of a vertex pair](../../part-01/clique/adj-bits.md)
 - [Pair bits are read off by position](../../part-01/clique-correct/adj-bits-eq-get-elem.md)
 - [Membership in the vertex pairs](../../part-01/clique-correct/mem-pairs.md)
-- [Pairs nodup](../../part-01/clique-correct/pairs-nodup.md)
+- [The vertex pairs are listed without repetition](../../part-01/clique-correct/pairs-nodup.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_opx_isBigO_rpow
 ---
 
-# Exists opx is Big O rpow
+# Power saving for continuous Turán numbers of finite planar patterns
 
-Corollary 3.6: for every finite `P ⊆ ℝ²` there is `ε > 0` with `opx(n, P) = O(n^{2-ε})`.
-Stated along natural `n`.
+**Power saving for continuous Turán numbers of finite planar patterns.** Let
+$P \subseteq \mathbb{R}^2$ be finite. Then there is a real number $\varepsilon > 0$ such that the
+continuous Turán number satisfies $\operatorname{opx}(n, P) = O(n^{2 - \varepsilon})$ as the
+natural number $n$ tends to infinity.
 
 ## Depends on
 

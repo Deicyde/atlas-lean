@@ -29,7 +29,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Adj of adj of adj of mu zero](adj-of-adj-of-adj-of-mu-zero.md)
+- [Two-edge paths close into triangles when μ = 0](adj-of-adj-of-adj-of-mu-zero.md)
 
 ## Sources
 

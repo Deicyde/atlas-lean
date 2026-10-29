@@ -17,7 +17,7 @@ $\Gamma \mid S \vdash v : T$.
 ## Depends on
 
 - [Typing judgment for the lambda calculus with references](has-type.md)
-- [Store Typed](store-typed.md)
+- [Well-typed stores](store-typed.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 - [Values of the simply typed lambda calculus with references](../syntax/value.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)

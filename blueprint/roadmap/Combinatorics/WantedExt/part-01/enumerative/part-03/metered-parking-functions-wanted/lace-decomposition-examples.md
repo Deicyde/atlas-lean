@@ -14,7 +14,7 @@ $((4), (1), (2, 2, 3, 4, 5), (5), (1), (2))$.
 
 ## Depends on
 
-- [Lace Decomposition](lace-decomposition.md)
+- [Lace decomposition](lace-decomposition.md)
 
 ## Sources
 

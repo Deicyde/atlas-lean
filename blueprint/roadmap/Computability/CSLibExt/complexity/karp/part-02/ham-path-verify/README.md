@@ -17,7 +17,7 @@ navigation: module
 - [First counter of a HAMPATH-verifier comparison](ca.md)
 - [Second counter of a HAMPATH-verifier comparison](cb.md)
 - [Exit labels of the counter comparisons](cout.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Start label of the Hamiltonian-path verifier](start.md)
 
 ## Generic phases

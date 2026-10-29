@@ -24,7 +24,7 @@ be false at $T = 1$.
 
 ## Depends on
 
-- [Bound](bound.md)
+- [The Guth–Maynard large values bound](bound.md)
 
 ## Sources
 

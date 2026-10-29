@@ -17,7 +17,7 @@ alignment score of $A$ with substitution score $\sigma$ and gap penalty $g$.
 
 - [Alignment](../sequence-alignment/alignment.md)
 - [Affine-gap alignment score](affine-score.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 
 ## Proof depends on
 

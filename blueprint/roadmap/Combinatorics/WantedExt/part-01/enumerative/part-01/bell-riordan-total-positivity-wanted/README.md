@@ -10,5 +10,5 @@ navigation: module
 - [Coefficient matrix of a Riordan array](riordan-coeff-matrix.md)
 - [First two columns of the coefficient matrix of a Riordan array](riordan-coeff-matrix-zero-one.md)
 - [Total positivity of a Riordan array from its coefficient matrix](riordan-array-has-nonnegative-minors-of.md)
-- [Riordan Array has Nonnegative Minors of params](riordan-array-has-nonnegative-minors-of-2.md)
-- [Bell Riordan Array has Nonnegative Minors of pf](bell-riordan-array-has-nonnegative-minor.md)
+- [A total positivity criterion for Riordan arrays](riordan-array-has-nonnegative-minors-of-2.md)
+- [Total positivity of Bell-type Riordan arrays from a Pólya frequency series](bell-riordan-array-has-nonnegative-minor.md)

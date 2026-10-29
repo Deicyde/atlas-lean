@@ -38,7 +38,7 @@ has an MPCP solution, that is, a solution that starts with its first domino.
 - [Lifting a word to the extended alphabet](lift.md)
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
-- [The start domino](start-card.md)
+- [The start domino of the reduction from reachability to MPCP](start-card.md)
 - [Letters of a rewriting instance](symbols.md)
 
 ## Sources

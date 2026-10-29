@@ -16,12 +16,12 @@ of $t$.
 
 ## Depends on
 
-- [Option Move Offset](option-move-offset.md)
+- [Offset of an optional head move](option-move-offset.md)
 - [Cell view of a two-way tape](to-tape.md)
 
 ## Proof depends on
 
-- [To Tape option Move](to-tape-option-move.md)
+- [The cell view commutes with optional head moves](to-tape-option-move.md)
 
 ## Sources
 

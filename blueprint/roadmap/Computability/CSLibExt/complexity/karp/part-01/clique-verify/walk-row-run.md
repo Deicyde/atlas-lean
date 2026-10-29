@@ -6,12 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.walkRow_run
 ---
 
-# Walk Row run
+# Walking the pairs of one row of the clique verifier
 
-The walk along one row: from `walk c` with the later vertices `zs` (as met) above the row's
-own vertex `si` on `V` and the pair bits `bs` on `X`, it pairs `zs` with the first bits of `bs`,
-parks `zs` on `T` and decides the row: `back` iff there are enough bits and `si` settles the row
-or every pair condition holds (and `c` does).
+**Walking the pairs of one row of the clique verifier.** Let $m$ be a mode and $s$ a bit.
+Let $z = (z_0, \dots, z_{r-1})$ and $b = (b_0, \dots, b_{q-1})$ be lists of bits, $c$ a bit, $v$
+a state and $S$ stack contents in which the vertex stack $V$ holds, from the top, the name bits
+$z_0, \dots, z_{r-1}$ followed by the name bit $s$, and the input stack $X$ holds, from the top,
+the name bits $b_0, \dots, b_{q-1}$. Then there are a state $v'$ and stack contents $S'$ such
+that within at most $r + 1$ steps the verifier program of mode $m$ goes from the walk label with
+flag $c$, state $v$ and stacks $S$ to state $v'$ and stacks $S'$ at the put-back label if
+$r \le q$ and either $\mathrm{free}_m(s)$ holds (a vertex with chosen-flag $s$ settles its pairs
+alone) or both $c$ and $\mathrm{sat}_m(b_t, z_t)$ for every $t < r$ hold (the pair condition
+left to the later vertex, with pair bit $b_t$ and later-vertex flag $z_t$), and at the reject
+label otherwise. Moreover, if $r \le q$, then in $S'$ the stack $V$ is empty, the scratch stack
+$T$ holds $z_{r-1}, \dots, z_0$ from the top above its contents in $S$, and $X$ holds, from the
+top, $b_r, \dots, b_{q-1}$.
 
 ## Depends on
 
@@ -20,7 +29,7 @@ or every pair condition holds (and `c` does).
 - [Modes of the clique verifier](mode.md)
 - [Vertices that settle their pairs alone](free.md)
 - [The pair condition left to the later vertex](sat.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 

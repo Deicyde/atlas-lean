@@ -16,7 +16,7 @@ the multisets represented by $H_1$ and by $H_2$.
 ## Depends on
 
 - [Fibonacci heap](fibonacci-heap.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Union of Fibonacci heaps](union.md)
 
 ## Proof depends on

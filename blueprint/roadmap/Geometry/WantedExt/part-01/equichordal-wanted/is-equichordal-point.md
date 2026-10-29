@@ -20,7 +20,7 @@ in direction $u$, ruling out other boundary crossings for nonconvex star-shaped 
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for the equichordal point problem](plane.md)
 
 ## Sources
 

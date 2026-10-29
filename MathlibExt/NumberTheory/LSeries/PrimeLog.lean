@@ -383,7 +383,10 @@ theorem logDirichletContinuation_analyticOn :
     (fun s => -(deriv riemannZeta₁ s / riemannZeta₁ s) - logDirichletCorrection s) _
   exact hdiv.neg.sub hC
 
-/-- The canonical continuation agrees with `Φ(s) - 1 / (s - 1)` on `Re s > 1`. -/
+/-- **The prime logarithmic continuation on the half-plane $\operatorname{Re} s > 1$.** Let
+$\Phi(s) = \sum_p \frac{\log p}{p^s}$ be the prime logarithmic Dirichlet series, summed over all
+primes $p$, and let $G$ be the prime logarithmic continuation. Then
+$G(s) = \Phi(s) - \frac{1}{s - 1}$ for every complex number $s$ with $\operatorname{Re} s > 1$. -/
 theorem logDirichletContinuation_agree :
     Set.EqOn logDirichletContinuation
       (fun s => logDirichletSeries s - 1 / (s - 1)) {s | 1 < s.re} := by

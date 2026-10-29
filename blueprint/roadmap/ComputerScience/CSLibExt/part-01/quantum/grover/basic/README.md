@@ -5,7 +5,7 @@ navigation: module
 # Basic
 
 - [Real amplitude vectors](amplitude.md)
-- [Phase Oracle](phase-oracle.md)
+- [Phase oracle](phase-oracle.md)
 - [Squared norm of an amplitude vector](amplitude-norm-sq.md)
 - [Probability of the marked outcomes](marked-probability.md)
 - [Uniform amplitude vector](uniform-amplitude.md)

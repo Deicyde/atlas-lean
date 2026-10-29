@@ -6,7 +6,7 @@ navigation: module
 
 ## Rice's theorem
 
-- [Rice's theorem](not-tm2-decidable-of-nontrivial.md)
+- [Rice's theorem for partial recursive codes](not-tm2-decidable-of-nontrivial.md)
 - [Rice's theorem for languages](not-tm2-decidable-language.md)
 
 ## Acceptance and halting

@@ -28,5 +28,5 @@ navigation: module
 - [A legal step caches the served page](request-mem-of-tr.md)
 - [A legal trace without misses serves only cached pages](request-mem-of-misses-eq-zero.md)
 - [A legal trace misses at least once](one-le-misses.md)
-- [Furthest In Future misses le](furthest-in-future-misses-le.md)
+- [Furthest-in-future caching has the fewest misses](furthest-in-future-misses-le.md)
 - [Furthest-in-future serves exactly the requests](furthest-in-future-requests.md)

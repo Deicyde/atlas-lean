@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_opx_isBigO_inverseAckermann
 ---
 
-# Exists opx is Big O inverse Ackermann
+# Almost linear bound for patterns with at most one point in each row
 
-Corollary 3.8: if a finite `P ⊆ ℝ²` has no row with two points (pairwise distinct
-`y`-coordinates), then `opx(n, P) = O(n · 2^{α(n)^t})` for some `t`, with `α` the inverse
-Ackermann function. Stated along natural `n`.
+**Almost linear bound for patterns with at most one point in each row.** Let
+$P \subseteq \mathbb{R}^2$ be a finite set whose points have pairwise distinct $y$-coordinates.
+Then there is a natural number $t$ such that $\operatorname{opx}(n, P) = O(n \cdot 2^{\alpha(n)^t})$
+as the natural number $n$ tends to infinity, where $\operatorname{opx}$ is the continuous Turán
+number and $\alpha$ is the inverse Ackermann function.
 
 ## Depends on
 

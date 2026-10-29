@@ -6,7 +6,7 @@ navigation: module
 
 - [Potential of a two-list queue](potential.md)
 - [Modeled cost of a dequeue](dequeue-cost.md)
-- [Enqueue](enqueue.md)
+- [Timed enqueue](enqueue.md)
 - [Amortized cost of enqueueing](enqueue-amortized.md)
 - [Timed dequeue](dequeue.md)
 - [Amortized cost of dequeueing](dequeue-amortized.md)
@@ -15,6 +15,6 @@ navigation: module
 - [One step of a queue operation](step.md)
 - [Amortized cost of one queue operation](step-amortized.md)
 - [Running a sequence of queue operations](run.md)
-- [Total Charge](total-charge.md)
+- [Total charge of a sequence of queue operations](total-charge.md)
 - [Amortized cost of a sequence of queue operations](run-amortized.md)
 - [Linear bound on the cost of queue operations](run-time-le-potential-add-twice-length.md)

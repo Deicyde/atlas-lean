@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.reset_time
 ---
 
-# Reset time
+# Cost of resetting a binary counter
 
-The exact reset charge is the number of set input bits.
+**Cost of resetting a binary counter.** For every bit vector $b$ of width $k$, the cost of
+resetting $b$ equals the number of positions of $b$ that hold true.
 
 ## Depends on
 

@@ -722,12 +722,10 @@ the bit $\mathrm{true}$ put in front if the cell-by-cell check of $x$ from the k
 succeeds, and the one-bit list $[\mathrm{false}]$ otherwise. -/
 def answer (x : List Bool) : List Bool := if chkFrom 0 0 x then true :: x else [false]
 
-/-- **The layout run.** Writing $1$ for true and $0$ for false: for every bit list $y$, the
-layout machine, started at its first label with internal state false, with $y$ on its input
-stack $X$ and all other stacks empty, reaches its final label within $18(|y| + 1)^2$ steps with
-the layout of $y$ on its output stack $O$. For $y$ equal to $1$ followed by $x$, the layout is
-the cell of $|x|^2 + 1$, the cells of the input symbols of $x$, a $0$ and $x$ reversed; for any
-other $y$ it is $0, 1, 1, 0, 0$. -/
+/-- **The checking run.** For every bit list $x$, the checking machine, started at the label
+$\mathsf{dupP}$ with internal state false, with $x$ on its input stack $X$ and every other stack
+empty, reaches the label $\mathsf{done}$ within $33(|x| + 1)^2$ steps, with some internal state
+and stacks in which the output stack $O$ holds the answer of the checking machine on $x$. -/
 theorem run (x : List Bool) :
     ∃ v S', RunLe prog (33 * (x.length + 1) ^ 2)
       ⟨some .dupP, false, update (fun _ ↦ []) .X x⟩ ⟨some .done, v, S'⟩ ∧ S' .O = answer x := by
@@ -803,7 +801,8 @@ namespace Layout
 
 open Function MetaMathlibExt.TM2Program
 
-/-- The stacks of the layout machine. -/
+/-- **Stacks of the layout machine.** The layout machine has twelve stacks, named
+$X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$. -/
 inductive K | X | Z | P | P2 | U | N | A2 | B2 | D | C | T | O
   deriving DecidableEq
 
@@ -812,7 +811,10 @@ instance K.instFintypeEnumFix : Fintype K where
   elems := ⟨↑[K.X, .Z, .P, .P2, .U, .N, .A2, .B2, .D, .C, .T, .O], by decide⟩
   complete := fun x => by cases x <;> decide
 
-/-- The labels of the layout machine. -/
+/-- **Labels of the layout machine.** The layout machine has 17 labels, named $\mathsf{s0}$,
+$\mathsf{mvZ}$, $\mathsf{cp0}$, $\mathsf{cp1}$, $\mathsf{lo0}$, $\mathsf{lo1}$, $\mathsf{lo2}$,
+$\mathsf{lo3}$, $\mathsf{lo4}$, $\mathsf{mh}$, $\mathsf{mb}$, $\mathsf{mk}$, $\mathsf{mr}$,
+$\mathsf{lo5}$, $\mathsf{lo6}$, $\mathsf{bad}$ and $\mathsf{done}$. -/
 inductive Lab
   | s0 | mvZ | cp0 | cp1 | lo0 | lo1 | lo2 | lo3 | lo4 | mh | mb | mk | mr | lo5 | lo6 | bad | done
   deriving DecidableEq
@@ -826,8 +828,19 @@ instance Lab.instFintypeEnumFix : Fintype Lab where
 /-- Every stack holds bits. -/
 abbrev Γ : K → Type := fun _ => Bool
 
-/-- The program: on `true :: x`, write `cell (|x| ^ 2 + 1) ++ cells (input x) ++ false :: x.reverse`
-on `O`; otherwise write `[false, true, true, false, false]`. -/
+/-- **Program of the layout machine.** Writing $1$ for true and $0$ for false, this is the
+program of a multi-stack machine whose stacks $X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$ all hold
+bits. To move a stack $S$ onto a stack $S'$ means to pop the bits of $S$ one at a time, pushing
+each onto $S'$, until $S$ is empty; to transfer $S$ to some stacks means to pop $S$ until it is
+empty, pushing a $1$ on each of these stacks for every bit popped. From the label $\mathsf{s0}$
+the program pops $X$. If $X$ was empty or the popped bit is $0$, it pushes $0, 0, 1, 1, 0$ on $O$
+in this order and halts. Otherwise it moves $X$ onto $Z$, and then, as long as $Z$ is nonempty,
+it pops a bit $b$ from $Z$, pushes $b$ on $U$ and a $1$ on $N$, and pushes $0, 1, 1$ on $P$ in
+this order if $b = 1$ and $0, 1$ if $b = 0$. Then it moves $U$ onto $O$, pushes a $0$ on $O$,
+moves $P$ onto $P_2$ and then $P_2$ onto $O$, and transfers $N$ to $A_2$ and $B_2$. Then it
+loops: it pops $A_2$; if a bit was popped, it pushes a $1$ on $D$, transfers $B_2$ to $C$ and
+$T$, transfers $T$ to $B_2$ and loops again; if $A_2$ was empty, it transfers $D$ to $A_2$.
+Finally it pushes $0, 1$ on $O$ in this order, transfers $C$ to $O$ and halts. -/
 def prog : Lab → TM2.Stmt Γ Lab Bool
   | .s0 => .pop .X (fun _ o ↦ o == some true)
       (.branch id (.goto fun _ ↦ .mvZ) (.goto fun _ ↦ .bad))
@@ -904,8 +917,10 @@ def layout : List Bool → List Bool
   | true :: x => cell (x.length ^ 2 + 1) ++ (cells (input x) ++ (false :: x.reverse))
   | _ => [false, true, true, false, false]
 
-/-- **The layout run.** From the bits `y` on `X`, the machine stops at `done` with `layout y` on
-`O` within `18 (|y| + 1) ^ 2` steps. -/
+/-- **The layout run.** For every bit list $y$, the layout machine, started at the label
+$\mathsf{s0}$ with internal state false, with $y$ on its input stack $X$ and every other stack
+empty, reaches the label $\mathsf{done}$ within $18(|y| + 1)^2$ steps, with some internal state
+and stacks in which the output stack $O$ holds the layout of $y$. -/
 theorem run (y : List Bool) :
     ∃ v S', RunLe prog (18 * (y.length + 1) ^ 2)
       ⟨some .s0, false, update (fun _ ↦ []) .X y⟩ ⟨some .done, v, S'⟩ ∧ S' .O = layout y := by
@@ -1019,7 +1034,10 @@ theorem chkFrom_zero (x : List Bool) : chkFrom 0 0 x = (decodeCodeCells x).isSom
 
 namespace Layout
 
-/-- The layout machine as a host component. -/
+/-- **The layout machine as a host component.** The component machine with the twelve stacks
+$X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$ of the layout machine, each holding bits, with the
+labels and the program of the layout machine, and with its stacks listed in the order
+$X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$. -/
 abbrev comp : Complexity.Host.Comp where
   K := K
   Γ := Γ
@@ -1030,7 +1048,10 @@ abbrev comp : Complexity.Host.Comp where
   ks_nodup := by decide
   mem_ks k := by cases k <;> decide
 
-/-- **The layout in polynomial time.** A `FinTM2` writes `layout y` from the bits `y`. -/
+/-- **The layout in polynomial time.** A finite multi-stack Turing machine, whose input and
+output alphabets are identified with the bits, together with a polynomial time bound, that
+computes the layout function: given a bit list $y$ as its input, it halts within the bound,
+evaluated at $|y|$, with the layout of $y$ as its output. -/
 noncomputable def polyTime :
     TM2ComputableInPolyTime (fun l : List Bool ↦ l) (fun l : List Bool ↦ l) layout :=
   Complexity.Host.reduction (c := comp) (cX := .X) (cO := .O) (gX := id) (start := .s0)

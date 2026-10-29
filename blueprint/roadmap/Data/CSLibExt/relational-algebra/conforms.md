@@ -19,7 +19,7 @@ set $\mathrm{db}(n)$ is a relation over $\mathrm{sch}(n)$.
 
 ## Proof depends on
 
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 
 ## Sources
 

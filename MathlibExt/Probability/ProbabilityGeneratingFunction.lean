@@ -72,10 +72,14 @@ $G_X(s) = \int_\Omega s^{X(\omega)} \, d\mu(\omega)$ of $X$ under $\mu$ satisfie
 theorem pgf_one (X : Ω → ℕ) (μ : Measure Ω) [IsProbabilityMeasure μ] : pgf X μ 1 = 1 := by
   simp [pgf]
 
-/-- The generating function at `s = 0` is `μ.real {ω | X ω = 0}`: the probability that `X = 0`
-when `μ` is a probability measure, and the mass of that event when `μ` is finite. (For an infinite
-measure both sides are computed with `ENNReal.toReal`, so the identity still holds but carries no
-mass interpretation.) -/
+/-- **The generating function at $s = 0$.** Let $\mu$ be a measure on $\Omega$ and let
+$X : \Omega \to \mathbb{N}$ be measurable. Then the probability generating function
+$G_X(s) = \int_\Omega s^{X(\omega)} \, d\mu(\omega)$ of $X$ under $\mu$ satisfies
+$G_X(0) = \mu(\lbrace \omega : X(\omega) = 0 \rbrace)$, where the measure of the event is read as
+a real number, an infinite value being read as $0$.
+
+When $\mu$ is a probability measure this is the probability that $X = 0$, and when $\mu$ is finite
+it is the mass of that event. -/
 theorem pgf_zero (X : Ω → ℕ) (μ : Measure Ω) (hX : Measurable X) :
     pgf X μ 0 = μ.real {ω | X ω = 0} := by
   have hfun : (fun ω => (0 : ℝ) ^ X ω) = Set.indicator (X ⁻¹' {0}) 1 := by

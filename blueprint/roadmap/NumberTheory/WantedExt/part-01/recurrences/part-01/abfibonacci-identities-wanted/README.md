@@ -22,5 +22,5 @@ navigation: module
 - [Weighted alternating sums of Jacobsthal and Jacobsthal–Lucas numbers](sum-neg-one-pow-jacobsthal.md)
 - [Alternating sums of even-indexed k-Lucas numbers](sum-neg-one-pow-k-lucas-ab.md)
 - [Sums of (a, b)-Fibonacci numbers weighted by powers of c](sum-c-pow-fib-ab.md)
-- [Corollary 14(a)](convolution-lucas-ab-fib-ab.md)
+- [A convolution of (a, b)-Lucas and (a, d)-Fibonacci numbers](convolution-lucas-ab-fib-ab.md)
 - [Fibonacci, Jacobsthal and Pell convolution identities](convolution-specializations.md)

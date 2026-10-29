@@ -23,7 +23,7 @@ $t$.
 - [Directed path](is-path.md)
 - [Augmenting a flow along a path](augment.md)
 - [Bottleneck of a path](path-bottleneck.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 
 ## Proof depends on
 

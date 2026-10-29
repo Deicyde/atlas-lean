@@ -265,11 +265,16 @@ namespace FibonacciForest
 
 variable {α : Type u}
 
-/-- The multiset represented by a forest. -/
+/-- **Multiset of a Fibonacci forest.** Write $M(t)$ for the multiset of values stored in a
+Fibonacci tree $t$. The multiset represented by a Fibonacci forest, a list of Fibonacci trees
+$t_1, \dots, t_k$, is the sum $M(t_1) + \cdots + M(t_k)$; the empty forest represents the empty
+multiset. -/
 @[expose] public def elements (trees : List (FibonacciTree α)) : Multiset α :=
   (trees.map FibonacciTree.elements).sum
 
-/-- The trees of a forest have strictly increasing degrees. -/
+/-- **Forests with strictly increasing degrees.** A Fibonacci forest, a list of Fibonacci trees
+$t_1, \dots, t_k$, has sorted degrees when the stored degrees of its trees strictly increase along
+the list: $\deg t_i < \deg t_j$ whenever $i < j$. -/
 @[expose] public def SortedDegrees (trees : List (FibonacciTree α)) : Prop :=
   trees.Pairwise fun a b => a.degree < b.degree
 
@@ -730,7 +735,9 @@ namespace FibonacciHeap
 
 variable {α : Type u}
 
-/-- The multiset represented by a Fibonacci heap. -/
+/-- **Multiset of a Fibonacci heap.** The multiset represented by a Fibonacci heap over a linearly
+ordered type is the multiset of its list of trees: the sum, over the trees in the list, of the
+multisets of values stored in them. The cached minimum plays no role. -/
 @[expose] public def elements [LinearOrder α] (heap : FibonacciHeap α) : Multiset α :=
   FibonacciForest.elements heap.trees
 
@@ -739,7 +746,9 @@ is empty and whose cached minimum is absent. -/
 @[expose] public def empty [LinearOrder α] : FibonacciHeap α :=
   ⟨[], none, FibonacciForest.valid_nil, rfl⟩
 
-/-- A one-element Fibonacci heap. -/
+/-- **Singleton Fibonacci heap.** For a value $x$ of a linearly ordered type, the singleton
+Fibonacci heap on $x$ has as its only tree the single-node tree with root $x$, stored degree $0$
+and no children, and its cached minimum is $x$. -/
 @[expose] public def singleton [LinearOrder α] (value : α) : FibonacciHeap α :=
   ⟨[FibonacciTree.singleton value], some value, by
     intro tree member
@@ -833,7 +842,9 @@ multiset. -/
 public theorem elements_empty [LinearOrder α] : (empty : FibonacciHeap α).elements = 0 := by
   simp [empty, elements, FibonacciForest.elements]
 
-/-- A singleton heap represents a singleton multiset. -/
+/-- **Multiset of a singleton Fibonacci heap.** For every value $x$ of a linearly ordered type, the
+singleton Fibonacci heap on $x$, whose only tree is the single-node tree with root $x$, represents
+the multiset $\{x\}$. -/
 public theorem elements_singleton [LinearOrder α] (value : α) :
     (singleton value).elements = {value} := by
   simp [singleton, elements, FibonacciForest.elements]

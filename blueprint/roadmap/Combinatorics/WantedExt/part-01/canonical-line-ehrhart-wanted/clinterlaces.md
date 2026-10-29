@@ -22,7 +22,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Interlacing lists](list-interlaces.md)
-- [Canonical Line](canonical-line.md)
+- [Canonical line](canonical-line.md)
 
 ## Sources
 

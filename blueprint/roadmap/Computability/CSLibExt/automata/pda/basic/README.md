@@ -15,7 +15,7 @@ navigation: module
 - [Multi-step computation of a pushdown automaton](derives.md)
 - [Computations extend by unread input and stack bottom](append-input-stack.md)
 - [Finitely supported pushdown automata](finitely-supported.md)
-- [Initial configuration](init-config.md)
+- [Initial configuration of a pushdown automaton](init-config.md)
 - [Language accepted by a pushdown automaton](accepts.md)
 - [Closed sets of stack symbols](closed-under.md)
 - [Lifting a stack to a set of stack symbols](lift-stack.md)

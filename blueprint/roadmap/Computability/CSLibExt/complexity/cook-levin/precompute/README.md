@@ -75,5 +75,5 @@ navigation: module
 ## [POLY] The step bound is a polynomial in `|s|`
 
 - [Polynomial functions on the naturals](is-poly.md)
-- [Horn T](horn-t-2.md)
+- [The Horner step count is polynomial](horn-t-2.md)
 - [Polynomial time bound of the composed machine](full-time-poly.md)

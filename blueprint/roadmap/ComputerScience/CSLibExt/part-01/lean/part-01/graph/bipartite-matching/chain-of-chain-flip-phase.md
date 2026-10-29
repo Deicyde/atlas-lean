@@ -32,12 +32,12 @@ A flipped edge would step back a round, which a chain of this length cannot affo
 
 - [The second pair of a shortest alternating chain](tail.md)
 - [Unmatched left vertex](free.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [A phase leaves no new unmatched left vertex](free-of-free-flip.md)
 - [Alternating breadth-first layers](layers.md)
 - [Distances do not decrease across a phase](layers-flip-phase-subset.md)
 - [A matched right vertex is reached no later than its partner](mem-layers-snd-of-mate.md)
-- [Pair levels of chain](pair-levels-of-chain.md)
+- [Levels along a shortest alternating chain](pair-levels-of-chain.md)
 - [Levels of the pairs of a phase](pair-levels-of-mem-phase.md)
 - [The paths of a phase are vertex-disjoint augmenting paths](phase-spec.md)
 

@@ -6,15 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.YFastTrie.Valid
 ---
 
-# Valid
+# Valid y-fast trie skeleton
 
-The representative trie is a valid x-fast trie whose keys are exactly the
-owners of nonempty buckets, stated pointwise (no universe-wide filter),
-and every representative is itself a stored key, in its own bucket:
-representatives are sampled from the stored keys, so a representative `0`
-whose bucket is `{1}` (with `contents = {1}`) is not valid. The classical
-bucket ordering invariant (keys of bucket `r` lie in the interval ending
-at `r`) is deferred, so this is the y-fast skeleton only.
+**Valid y-fast trie skeleton.** A y-fast trie skeleton $t$ over $w$-bit keys, with bucket $B_r$
+owned by each key $r$, is valid when its representative x-fast trie is valid, a key $r$ is stored
+in the representative x-fast trie exactly when its bucket $B_r$ is nonempty, and every key $r$
+stored in the representative x-fast trie lies in its own bucket $B_r$.
+
+So the representatives are sampled from the stored keys: a representative $0$ whose bucket is
+$\{1\}$ is not valid. The classical bucket ordering invariant (the keys of bucket $B_r$ lie in
+the interval ending at $r$) is not required, so this is the invariant of the skeleton only.
 
 ## Depends on
 

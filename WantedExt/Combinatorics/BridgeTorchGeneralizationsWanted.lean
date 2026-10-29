@@ -79,13 +79,16 @@ theorem bridgeWeight_of_seven_le (i : ℕ) (hi : 7 ≤ i) :
   obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le' hi
   rfl
 
-/-- Validity of a list of crossings for the bridge and torch problem with bridge
-capacity `c` and set of people `P`, starting from the state with left bank `L`
-and the torch on the left (`torchLeft = true`) or on the right
-(`torchLeft = false`). Each crossing is the set of people who cross; a crossing
-from the torch's side carries between `1` and `c` people standing on that side,
-and the list must end in the terminal state (empty left bank, torch on the
-right).
+/-- **Valid crossing sequences from a state of the bridge and torch problem.** Let $c$ be a
+natural number and let $P$ and $L$ be finite sets of natural numbers, the people and the left
+bank. Whether a finite sequence $A_1, \dots, A_k$ of finite sets of natural numbers (the
+crossings) is valid from the left bank $L$ with the torch on a given side is defined by recursion
+on $k$. The empty sequence is valid exactly when $L = \emptyset$ and the torch is on the right.
+With the torch on the left, the sequence is valid when $A_1$ is a nonempty subset of $L$ with at
+most $c$ elements and $A_2, \dots, A_k$ is valid from the left bank $L \setminus A_1$ with the
+torch on the right. With the torch on the right, it is valid when $A_1$ is a nonempty subset of
+$P \setminus L$ with at most $c$ elements and $A_2, \dots, A_k$ is valid from the left bank
+$L \cup A_1$ with the torch on the left.
 
 Source: Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge
 and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6,
@@ -112,8 +115,10 @@ proof of Theorem 1 and Section 3. -/
 def IsBridgeSchedule (c n : ℕ) (σ : List (Finset ℕ)) : Prop :=
   bridgeScheduleFrom c (Finset.Icc 1 n) (Finset.Icc 1 n) true σ = true
 
-/-- The total time of a schedule: each crossing costs the largest crossing time
-(label) of the people in it.
+/-- **Total time of a schedule.** For a finite sequence $\sigma = (A_1, \dots, A_k)$ of finite sets
+of natural numbers (the crossings), the total time of $\sigma$ is $\sum_{i=1}^{k} \max A_i$, where
+$\max \emptyset = 0$. Since person $p$ has crossing time $p$, each crossing costs the largest
+crossing time among the people in it.
 
 Source: Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge
 and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6,
@@ -157,8 +162,13 @@ Lemma 7. -/
 def returnCrossings {α : Type*} (σ : List α) : List α :=
   forwardCrossings σ.tail
 
-/-- The right bank after the crossings `τ` (a prefix of a schedule for the
-people `{1, …, n}`): the people who have crossed an odd number of times.
+/-- **Right bank after a sequence of crossings.** Let $n$ be a natural number and let
+$\tau = (A_1, \dots, A_k)$ be a finite sequence of finite sets of natural numbers. The right bank
+after $\tau$ is the set of those $p \in \{1, \dots, n\}$ for which the number of indices $i$ with
+$p \in A_i$ is odd.
+
+When $\tau$ is a prefix of a schedule for the people $1, \dots, n$, these are the people who have
+crossed an odd number of times, so they stand on the right bank.
 
 Source: Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge
 and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6,

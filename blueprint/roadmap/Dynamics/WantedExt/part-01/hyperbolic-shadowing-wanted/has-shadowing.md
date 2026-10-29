@@ -21,7 +21,7 @@ $y \in \mathbb{R}^d$ with $\|x_n - T^n(y)\| < \delta$ for all $n \in \mathbb{N}$
 
 ## Proof depends on
 
-- [Is Pseudo Orbit](is-pseudo-orbit.md)
+- [Pseudo-orbit](is-pseudo-orbit.md)
 
 ## Sources
 

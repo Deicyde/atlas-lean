@@ -38,7 +38,7 @@ the flattening of $T$ with the first occurrence of $x$ removed (unchanged if $x$
 - [Flattening a childless node, one key at a time](../../btree-2/flatten-node-cons-nil.md)
 - [Flattening a keyless node, one child at a time](../../btree-2/flatten-node-nil-cons.md)
 - [Flattening of the empty node](../../btree-2/flatten-node-nil-nil.md)
-- [Key Count](key-count.md)
+- [Number of keys at the root of a B-tree](key-count.md)
 - [Rightmost key of a B-tree](max-key.md)
 - [Merging two B-tree nodes around a separator](merge.md)
 - [Leftmost key of a B-tree](min-key.md)

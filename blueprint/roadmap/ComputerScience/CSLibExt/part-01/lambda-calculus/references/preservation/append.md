@@ -17,7 +17,7 @@ typed under $\Gamma$ and the store typing obtained by appending $T$ at the end o
 
 - [Typing judgment for the lambda calculus with references](../typing/has-type.md)
 - [Store](../semantics/store.md)
-- [Store Typed](../typing/store-typed.md)
+- [Well-typed stores](../typing/store-typed.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 - [Values of the simply typed lambda calculus with references](../syntax/value.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)
@@ -25,7 +25,7 @@ typed under $\Gamma$ and the store typing obtained by appending $T$ at the end o
 ## Proof depends on
 
 - [Store-typing weakening](extend-store.md)
-- [Extend Store](extend-store-2.md)
+- [Retyping a well-typed store under an extended store typing](extend-store-2.md)
 
 ## Sources
 

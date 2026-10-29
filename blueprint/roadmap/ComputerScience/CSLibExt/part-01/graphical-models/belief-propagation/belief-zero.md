@@ -16,13 +16,13 @@ agree at every value.
 
 - [Pairwise model on a tree](../variable-elimination/tree-model.md)
 - [Sum-product belief](belief.md)
-- [Root Message](../variable-elimination/root-message.md)
+- [Root message of a tree model](../variable-elimination/root-message.md)
 
 ## Proof depends on
 
 - [Downward message to the last vertex](down-message.md)
 - [Removing the last vertex](drop-last.md)
-- [Eliminate](../variable-elimination/eliminate.md)
+- [Eliminating the last vertex of a tree model](../variable-elimination/eliminate.md)
 - [Parent of the last vertex](../variable-elimination/last-parent.md)
 
 ## Sources

@@ -14,7 +14,7 @@ velocity $r'(t)$ is nonzero for every real number $t$.
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Sources
 

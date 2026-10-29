@@ -17,7 +17,7 @@ of $\sigma$.
 
 - [Bridge schedules](is-bridge-schedule.md)
 - [Optimal crossing time of the bridge and torch problem](bridge-time.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Halving the variables maps any derivation of $\bot$ from the renamed set back to
 
 ## Depends on
 
-- [Consistent](../consistency/consistent.md)
+- [Consistent set of formulas](../consistency/consistent.md)
 
 ## Proof depends on
 

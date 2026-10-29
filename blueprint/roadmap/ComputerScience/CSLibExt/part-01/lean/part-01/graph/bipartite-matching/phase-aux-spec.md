@@ -19,7 +19,7 @@ $i \notin U_L$ and $j \notin U_R$.
 
 ## Depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Partner arrays that describe a matching](valid.md)
 - [Alternating breadth-first layers](layers.md)
 - [Phase search over candidates](phase-aux.md)

@@ -22,7 +22,7 @@ covered node contributes its cached aggregate.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Proof depends on
 

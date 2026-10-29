@@ -16,7 +16,7 @@ of $D$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 - [Evaluation of a divisor against a function](eval.md)
 
 ## Sources

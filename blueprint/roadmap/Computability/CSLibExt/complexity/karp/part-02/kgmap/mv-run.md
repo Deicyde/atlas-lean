@@ -19,9 +19,9 @@ order, on top of $y$, and every stack other than $X$ and $Y$ is unchanged.
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
-- [Next](next.md)
+- [Label after the move phase of the KG-map machine](next.md)
 - [The KG-map machine](prog.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)

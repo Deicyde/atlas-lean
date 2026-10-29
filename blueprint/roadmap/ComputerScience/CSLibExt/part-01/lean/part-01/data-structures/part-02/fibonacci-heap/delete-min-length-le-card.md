@@ -17,7 +17,7 @@ of root trees of $H'$ is at most the number of elements of $H'$, counted with mu
 
 - [Fibonacci heap](fibonacci-heap.md)
 - [Deleting the minimum of a Fibonacci heap](delete-min.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on

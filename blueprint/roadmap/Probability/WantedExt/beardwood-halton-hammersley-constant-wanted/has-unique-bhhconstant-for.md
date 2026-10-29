@@ -13,7 +13,7 @@ there is exactly one real number $\beta$ that is a BHH constant for $\nu$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

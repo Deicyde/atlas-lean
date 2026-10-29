@@ -15,7 +15,7 @@ $\sqrt{3}/2$.
 
 ## Depends on
 
-- [Steiner Ratio Constant](../../../MathlibExt/steiner-ratio/steiner-ratio-constant.md)
+- [The Steiner ratio of the Euclidean plane](../../../MathlibExt/steiner-ratio/steiner-ratio-constant.md)
 
 ## Sources
 

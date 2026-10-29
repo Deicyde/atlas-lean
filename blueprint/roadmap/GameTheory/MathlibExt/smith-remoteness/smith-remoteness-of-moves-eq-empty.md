@@ -14,7 +14,7 @@ of a terminal position (a position with no moves) is $0$.
 ## Depends on
 
 - [Impartial game](../sprague-grundy/impartial-game.md)
-- [Smith Remoteness](smith-remoteness.md)
+- [Smith's remoteness function](smith-remoteness.md)
 
 ## Proof depends on
 

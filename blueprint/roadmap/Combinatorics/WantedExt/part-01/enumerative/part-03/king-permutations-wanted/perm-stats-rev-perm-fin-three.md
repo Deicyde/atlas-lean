@@ -16,7 +16,7 @@ left-to-right minima and one right-to-left minimum.
 ## Depends on
 
 - [Number of ascents of a permutation](perm-ascent-count.md)
-- [Number of descents](perm-descent-count.md)
+- [Number of descents of a permutation](perm-descent-count.md)
 - [Number of left-to-right maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
 - [Number of left-to-right minima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
 - [Number of right-to-left maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)

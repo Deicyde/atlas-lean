@@ -30,7 +30,7 @@ step to $(c', s')$ and $K = (\overline{c'}, s', h)$.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [IMP configuration](../small-step/config.md)
 
 ## Sources

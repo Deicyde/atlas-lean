@@ -36,7 +36,7 @@ eliminating unit productions.
 - [Reachability by unit productions](../reduced/unit-steps.md)
 - [Productions of the unit-eliminated grammar come from non-unit productions of $g$](../reduced/cases-of-mem-unit-grammar-rules.md)
 - [Nonterminals of a sentential form](../reduced/form-nts.md)
-- [Nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
 - [Unit chains start at mentioned nonterminals](../reduced/mem-grammar-nts-of-unit-steps.md)
 - [Productions of the unit-free grammar](../reduced/mem-unit-grammar-rules.md)
 

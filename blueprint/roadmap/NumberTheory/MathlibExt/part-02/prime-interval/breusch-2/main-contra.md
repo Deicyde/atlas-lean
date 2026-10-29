@@ -15,7 +15,7 @@ inequality, then we have a contradiction.
 
 ## Depends on
 
-- [Upper ineq](upper-ineq.md)
+- [Breusch's endgame upper-bound inequality](upper-ineq.md)
 
 ## Proof depends on
 

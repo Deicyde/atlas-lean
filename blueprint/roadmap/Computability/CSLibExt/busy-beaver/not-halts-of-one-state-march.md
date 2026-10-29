@@ -26,7 +26,7 @@ unvisited blank cell.
 - [Busy Beaver machine configuration](config.md)
 - [Halting within $t$ steps](halts-within.md)
 - [Head displacement](shift.md)
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [Initial state](initial-state.md)
 - [Configuration after $t$ steps](run.md)
 - [One step of a Busy Beaver machine](step.md)

@@ -18,7 +18,7 @@ polarity marker of $p$ followed by the binary encoding of $x$ as name-bit symbol
 
 ## Proof depends on
 
-- [D Tok](d-tok.md)
+- [Polarity-first tokens of a literal](d-tok.md)
 
 ## Sources
 

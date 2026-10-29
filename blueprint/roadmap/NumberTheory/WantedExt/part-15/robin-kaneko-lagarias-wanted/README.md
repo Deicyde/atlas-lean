@@ -28,4 +28,4 @@ navigation: module
 - [Eventual bound for $C(k)B(k)$ by an explicit logarithm](exists-bound-mul-prod-sq-lt-exp-euler-ma.md)
 - [Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient](exists-bound-mul-prod-sq-lt-exp-euler-ma-2.md)
 - [The factor $\hat C(k)$ is below $1.525$](exp-five-div-log-bound-lt.md)
-- [Sigma div lt totient ratio le prod primes](sigma-div-lt-totient-ratio-le-prod-prime.md)
+- [Bounds for $\sigma(n)/n$ over primes avoiding $p_j$](sigma-div-lt-totient-ratio-le-prod-prime.md)

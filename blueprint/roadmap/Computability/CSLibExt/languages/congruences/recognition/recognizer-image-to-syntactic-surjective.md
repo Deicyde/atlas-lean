@@ -17,7 +17,7 @@ of $x$, is surjective.
 ## Depends on
 
 - [Recognition of a language by a monoid morphism](recognizes.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Map from a recognizer's image to the syntactic monoid](recognizer-image-to-syntactic.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 

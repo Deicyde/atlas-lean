@@ -18,7 +18,7 @@ $T$ (the depth of that leaf, with the root at depth zero).
 
 - [Huffman tree](huffman-tree.md)
 - [Root-to-leaf path code](path-code.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 - [Weighted leaves of a Huffman tree](weighted-leaves.md)
 - [Weighted path length](weighted-path-length.md)
 

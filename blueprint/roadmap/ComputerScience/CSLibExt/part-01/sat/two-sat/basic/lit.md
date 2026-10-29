@@ -18,7 +18,7 @@ These literals are the vertices of the implication graph of $\varphi$.
 
 ## Proof depends on
 
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

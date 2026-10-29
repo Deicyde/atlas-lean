@@ -17,10 +17,10 @@ and returns the concatenation $c(s_1) c(s_2) \cdots c(s_n)$.
 ## Depends on
 
 - [Huffman tree](huffman-tree.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
 - [Huffman encoding of a message](encode.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 

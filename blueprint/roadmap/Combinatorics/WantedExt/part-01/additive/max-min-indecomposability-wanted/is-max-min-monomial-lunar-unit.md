@@ -15,7 +15,7 @@ has exactly one nonzero term.
 ## Depends on
 
 - [Monomials over the max-min semiring](is-max-min-monomial.md)
-- [Lunar Unit](lunar-unit.md)
+- [Lunar unit](lunar-unit.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ $E$ is a permutation of the preorder vertex list of $t$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Preferred paths of a tree](tree-paths.md)
 
 ## Proof depends on

@@ -22,7 +22,7 @@ lemma.
 - [Bitonic 0-1 sequences](is-bitonic.md)
 - [Sorted on a block](sorted-on.md)
 - [Bitonic merger](bitonic-merge.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 
 ## Proof depends on
 

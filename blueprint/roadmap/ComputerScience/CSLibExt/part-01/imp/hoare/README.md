@@ -27,5 +27,5 @@ navigation: module
 
 ## Wlp
 
-- [While Loop](while-loop-2.md)
+- [Weakest liberal precondition unfolding of a while loop](while-loop-2.md)
 - [Loop invariants entail the weakest liberal precondition of the loop](invariant-le-while.md)

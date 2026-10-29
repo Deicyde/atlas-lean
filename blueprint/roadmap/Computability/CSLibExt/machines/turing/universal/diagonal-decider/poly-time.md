@@ -23,7 +23,7 @@ halts within the bound, evaluated at $|x|$, with the checking answer on $x$ as i
 - [Labels of the checking machine](lab.md)
 - [The checking machine as a host component](comp.md)
 - [Program of the checking machine](prog.md)
-- [The layout run](run.md)
+- [The checking run](run.md)
 - [Stack alphabet of the layout machine](untitled.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 

@@ -19,12 +19,12 @@ one-time pad on the challenge message.
 ## Depends on
 
 - [ElGamal eavesdropping adversary](adversary.md)
-- [Ddh Rand](ddh-rand.md)
-- [Reduction](reduction.md)
+- [Random DDH experiment](ddh-rand.md)
+- [DDH distinguisher from an ElGamal eavesdropper](reduction.md)
 
 ## Proof depends on
 
-- [Pick](pick.md)
+- [Message selected by the challenge bit](pick.md)
 - [Group exponentiation with modular exponents](../diffie-hellman/gpow.md)
 - [Exponentiation from a generator is a bijection](../diffie-hellman/gpow-equiv.md)
 

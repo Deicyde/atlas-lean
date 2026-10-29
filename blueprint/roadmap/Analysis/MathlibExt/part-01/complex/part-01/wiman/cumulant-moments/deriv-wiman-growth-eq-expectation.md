@@ -18,7 +18,7 @@ $\Phi'(x) = \int n \, d\nu_x(n)$, the mean of $n$ under $\nu_x$.
 
 ## Depends on
 
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 - [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 - [Tilted coefficient measure](../coefficient-exponential-family/wiman-tilted-measure.md)
 

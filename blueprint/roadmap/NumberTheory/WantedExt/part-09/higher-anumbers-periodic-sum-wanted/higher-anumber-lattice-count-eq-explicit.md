@@ -36,7 +36,7 @@ for all natural numbers $n \ge D$.
 - [Delay of the base-$p$ expansion](base-pdelay.md)
 - [Average repeating digit](base-pdigit-average.md)
 - [Period of the base-$p$ expansion](base-pperiod.md)
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 - [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
 - [The denominator $\tau_D$](tau-den.md)
 - [The constant $\gamma$](tower-gamma.md)

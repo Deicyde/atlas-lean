@@ -13,7 +13,7 @@ formulas is contained in a maximal consistent set.
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Maximal consistent set](maximal-consistent.md)
 
 ## Proof depends on

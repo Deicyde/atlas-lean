@@ -6,7 +6,7 @@ navigation: module
 
 - [Fuel-bounded Euclid classifier](euclid-pposition-aux.md)
 - [Euclid P-position test](euclid-pposition.md)
-- [Euclid Moves](euclid-moves.md)
+- [Euclid moves](euclid-moves.md)
 - [Euclid moves lower the sum](euclid-moves-rank-lt.md)
 - [The game Euclid](euclid-game.md)
 - [Correctness of the fuel-bounded Euclid classifier](euclid-pposition-aux-eq-true-iff.md)

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.not_isSquare_discr_truncatedLog_mul_prime
 ---
 
-# Not is Square discr truncated Log mul prime
+# Nonsquare discriminants of $F_{mq}$ for non-exceptional primes $q > m$
 
-For a prime `q ∉ E_m` with `q > m` and `n = m q ≡ 1 (mod 4)`, `disc(F_n)` is not a
-rational square.
+**Nonsquare discriminants of $F_{mq}$ for non-exceptional primes $q > m$.** Let $m$ be a
+natural number, let $E_m$ be the set of exceptional primes for truncated logarithmic
+discriminants, and let $F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic
+polynomial. If $q$ is a prime with $q \notin E_m$, $q > m$ and $mq \equiv 1 \pmod 4$, then the
+discriminant of $F_{mq}$ is not a square in $\mathbb{Q}$.
 
 ## Depends on
 

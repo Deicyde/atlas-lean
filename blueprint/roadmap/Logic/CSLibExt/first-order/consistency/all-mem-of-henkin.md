@@ -24,7 +24,7 @@ $\varphi(c)$, then $\Delta$ contains $\forall x\, \varphi$.
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](mem-of-provable.md)
 - [Maximal consistent sets decide every formula](not-mem-iff.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 - [Modus ponens for provability from sets](mp.md)

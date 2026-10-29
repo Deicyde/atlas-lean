@@ -14,7 +14,7 @@ order modulo $p^2$ equals the multiplicative order of its reduction modulo $p$.
 
 ## Depends on
 
-- [Lift Fiber](lift-fiber.md)
+- [Fibers of reduction modulo $p$ on units modulo $p^2$](lift-fiber.md)
 - [Reduction of units modulo $p^2$ to units modulo $p$](unit-reduce-sq.md)
 
 ## Sources

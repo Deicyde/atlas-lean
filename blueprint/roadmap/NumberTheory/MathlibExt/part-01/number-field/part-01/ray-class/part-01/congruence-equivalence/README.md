@@ -7,7 +7,7 @@ navigation: module
 
 ## Modulus
 
-- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Congruence subgroup pair](congruence-subgroup-pair.md)
 
 ## Congruence Subgroup Pair
 

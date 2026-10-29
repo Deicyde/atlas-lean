@@ -1,3 +1,3 @@
 # Graph Products
 
-- [Lex Product](lex-product.md)
+- [Lexicographic product of graphs](lex-product.md)

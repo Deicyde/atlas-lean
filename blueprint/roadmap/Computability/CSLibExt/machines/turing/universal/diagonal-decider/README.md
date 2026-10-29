@@ -18,23 +18,23 @@ navigation: module
 - [Branch after comparing symbols](out-a.md)
 - [Program of the checking machine](prog.md)
 - [Answer of the checking machine](answer.md)
-- [The layout run](run.md)
+- [The checking run](run.md)
 - [The checking machine as a host component](comp.md)
 - [The checking machine in polynomial time](poly-time.md)
 
 ## The layout machine
 
-- [K](k-2.md)
-- [Lab](lab-2.md)
+- [Stacks of the layout machine](k-2.md)
+- [Labels of the layout machine](lab-2.md)
 - [Γ](untitled-2.md)
-- [Prog](prog-2.md)
+- [Program of the layout machine](prog-2.md)
 - [The layout function](layout.md)
 - [The layout run](run-2.md)
 
 ## The upper bound for `n ↦ n ^ 2 + 1`
 
 - [The cell-by-cell check agrees with code-stack decoding](chk-from-zero.md)
-- [Comp](comp-2.md)
+- [The layout machine as a host component](comp-2.md)
 - [The layout in polynomial time](poly-time-2.md)
 - [Layout after checking gives the universal machine's input](layout-answer.md)
 - [The reformatting machine for $n \mapsto n^2 + 1$](reformat.md)

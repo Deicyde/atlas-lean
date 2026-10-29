@@ -22,9 +22,9 @@ literals. Then $v'$ satisfies every clause of $\mathrm{chain}(C, u)$.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Renaming of the original variables](../three-sat/ren.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 

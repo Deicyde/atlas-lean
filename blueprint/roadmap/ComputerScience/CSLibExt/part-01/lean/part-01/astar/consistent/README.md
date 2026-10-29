@@ -10,7 +10,7 @@ navigation: module
 - [Output of A-star search](astar-result.md)
 - [Path recovered from an A-star result](path-to.md)
 - [A Star](a-star.md)
-- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced weights telescope along paths](path-weight-reduced-weight.md)
 - [A consistent heuristic that vanishes at the goal is admissible](admissible-of-consistent.md)
 - [A Star key](a-star-key.md)
 - [A Star distance realized](a-star-distance-realized.md)

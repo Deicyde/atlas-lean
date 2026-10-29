@@ -26,7 +26,7 @@ $\binom{2k}{k} \le 4^k$, the series diverges for $x \ge 1$.
 
 - [Zurita's polynomial $S_n$](zurita-s.md)
 - [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
-- [Zurita T](zurita-t.md)
+- [Zurita's polynomial $T_{n-2}$](zurita-t.md)
 
 ## Sources
 

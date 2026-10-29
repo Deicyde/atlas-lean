@@ -17,7 +17,7 @@ the lengths of $m_{k-1}, \dots, m_i$ in this order.
 
 - [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
 - [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

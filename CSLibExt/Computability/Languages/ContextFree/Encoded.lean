@@ -186,10 +186,10 @@ def ntOf {N : Type*} : Symbol T N → Option N
   | .terminal _ => none
   | .nonterminal A => some A
 
-/-- **Nonterminals mentioned by a grammar.** For a context-free grammar $G$, the list consisting
-of the initial nonterminal of $G$ followed, for each production of $G$ in turn (in some fixed
-order of its finite set of productions), by the left-hand side of the production and then the
-nonterminals of its right-hand side in order. Nonterminals may occur more than once. -/
+/-- **List of nonterminals mentioned by a grammar.** For a context-free grammar $G$, the list
+consisting of the initial nonterminal of $G$ followed, for each production of $G$ in turn (in some
+fixed order of its finite set of productions), by the left-hand side of the production and then
+the nonterminals of its right-hand side in order. Nonterminals may occur more than once. -/
 noncomputable def usedNT (G : ContextFreeGrammar T) : List G.NT :=
   G.initial :: G.rules.toList.flatMap fun r => r.input :: r.output.filterMap ntOf
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Automata.EncodedDFA.isEmptyB
 ---
 
-# Is Empty B
+# Emptiness test for encoded DFAs
 
-Emptiness test: no reachable state accepts.
+**Emptiness test for encoded DFAs.** For an encoded DFA $D$ over an alphabet $\alpha$ with
+decidable equality, the emptiness test is the Boolean that is true exactly when no entry of the
+list of reachable states of $D$ is in the accepting list of $D$.
+
+It returns true exactly when the language of $D$ is empty.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ Emptiness test: no reachable state accepts.
 
 ## Proof depends on
 
-- [Reachable](reachable-2.md)
+- [Reachable states of an encoded DFA](reachable-2.md)
 - [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
 
 ## Sources

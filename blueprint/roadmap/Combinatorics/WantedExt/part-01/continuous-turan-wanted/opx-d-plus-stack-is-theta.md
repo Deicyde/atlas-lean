@@ -19,7 +19,7 @@ two points on a vertical line and $\mathrm{opx}(n, Q_{P,2,c}, 3) \le c n^2$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

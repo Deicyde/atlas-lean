@@ -20,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Multiplicity of a pole](pole-mult.md)
-- [Root Mult](root-mult.md)
+- [Multiplicity of a root of $f = w$](root-mult.md)
 
 ## Sources
 

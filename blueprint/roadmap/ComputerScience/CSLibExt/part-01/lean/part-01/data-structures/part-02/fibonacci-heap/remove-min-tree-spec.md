@@ -17,7 +17,7 @@ most the root of every tree in $T$.
 
 ## Depends on
 
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
 - [Fibonacci tree](fibonacci-tree.md)
 - [Multiset of a Fibonacci tree](elements.md)

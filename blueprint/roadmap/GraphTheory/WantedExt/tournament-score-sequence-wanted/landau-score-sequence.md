@@ -15,7 +15,7 @@ $k$ with $1 \le k \le n$ and $\sum_{i=1}^{n} s_i = \binom{n}{2}$.
 ## Depends on
 
 - [Tournament](is-tournament.md)
-- [Score](score.md)
+- [Score of a player](score.md)
 
 ## Sources
 

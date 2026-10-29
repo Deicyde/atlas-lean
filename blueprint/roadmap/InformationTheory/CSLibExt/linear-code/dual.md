@@ -17,7 +17,7 @@ $x \cdot c = \sum_{i \in \iota} x_i c_i = 0$ for every codeword $c \in C$.
 
 ## Proof depends on
 
-- [Dot Form](dot-form.md)
+- [Dot product bilinear form](dot-form.md)
 
 ## Sources
 

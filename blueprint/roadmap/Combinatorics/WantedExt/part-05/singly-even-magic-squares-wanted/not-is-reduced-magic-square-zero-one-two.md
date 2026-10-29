@@ -15,11 +15,11 @@ Its entries are $0, 1, 2, 3$, each once, but its row sums are $1$ and $5$, so it
 
 ## Depends on
 
-- [Is Reduced Magic Square](is-reduced-magic-square.md)
+- [Reduced magic squares](is-reduced-magic-square.md)
 
 ## Proof depends on
 
-- [Is Magic Square](is-magic-square.md)
+- [Magic squares](is-magic-square.md)
 
 ## Sources
 

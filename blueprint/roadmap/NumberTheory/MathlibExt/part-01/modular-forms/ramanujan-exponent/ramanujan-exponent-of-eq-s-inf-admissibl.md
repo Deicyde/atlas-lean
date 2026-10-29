@@ -22,7 +22,7 @@ exponent of $F$ is at most $\delta$.
 ## Proof depends on
 
 - [Admissibility of an exponent for a local-exponent family](is-admissible.md)
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 - [The Ramanujan exponent is admissible](is-admissible-ramanujan-exponent-of.md)
 - [Admissible exponents bound the Ramanujan exponent](ramanujan-exponent-of-le-of-is-admissibl.md)
 

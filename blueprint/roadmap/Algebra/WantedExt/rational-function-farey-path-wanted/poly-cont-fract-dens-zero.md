@@ -6,11 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_dens_zero
 ---
 
-# The partial denominator B₀ of a polynomial continued fraction
+# Zeroth convergent denominator of a polynomial continued fraction
 
-**The partial denominator B₀ of a polynomial continued fraction.** Let $F$ be a field, let
-$n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$. The partial denominator $B_0$ of the
-continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$ equals $1$.
+**Zeroth convergent denominator of a polynomial continued fraction.** Let $F$ be a field,
+let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \in \mathbb{N}$. The denominator $B_0$
+of the zeroth convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is $1$.
 
 ## Depends on
 

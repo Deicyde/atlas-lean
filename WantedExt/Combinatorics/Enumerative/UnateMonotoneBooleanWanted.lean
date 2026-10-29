@@ -105,9 +105,11 @@ public def IsBoolFunNondegenerateOn {n : ℕ} (f : (Fin n → Bool) → Bool) (i
     Prop :=
   ∃ x : Fin n → Bool, f x ≠ f (Function.update x i (!x i))
 
-/-- A non-degenerate Boolean function: non-degenerate on every variable
-(vacuous for `n = 0`, matching the paper's convention that the two
-`0`-variable functions are non-degenerate).
+/-- **Non-degenerate Boolean functions.** An $n$-variable Boolean function $f$ is non-degenerate
+when it is non-degenerate on every variable $x_i$, $1 \le i \le n$: for each $i$ there is an input
+$x \in \{0,1\}^n$ with $f(x) \ne f(x')$, where $x'$ is $x$ with its $i$-th coordinate negated.
+For $n = 0$ the condition is vacuous, so both $0$-variable (constant) functions are
+non-degenerate, matching the paper's convention.
 
 Source: Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions
 under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer
@@ -126,7 +128,7 @@ public theorem isBoolFunNondegenerateOn_proj {n : ℕ} (i : Fin n) :
     IsBoolFunNondegenerateOn (fun x : Fin n → Bool => x i) i :=
   ⟨fun _ => false, by simp⟩
 
-/-- **Concatenation of Boolean functions.** The concatenation $g \,\|\, h$ of two $n$-variable
+/-- **Concatenation of two Boolean functions.** The concatenation $g \,\|\, h$ of two $n$-variable
 Boolean functions $g$ and $h$ is the $(n+1)$-variable function whose truth table is that of $g$
 followed by that of $h$: its value at $(x_1, x_2, \dots, x_{n+1})$ is $g(x_2, \dots, x_{n+1})$ if
 $x_1 = 0$ and $h(x_2, \dots, x_{n+1})$ if $x_1 = 1$. Equivalently,

@@ -22,7 +22,7 @@ experiment outputs the distribution of the bit "the guess of $A$ equals $b$".
 ## Proof depends on
 
 - [ElGamal encryption](encrypt.md)
-- [Pick](pick.md)
+- [Message selected by the challenge bit](pick.md)
 - [ElGamal public key](public-key.md)
 
 ## Sources

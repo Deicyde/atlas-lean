@@ -21,7 +21,7 @@ the recognizer.
 ## Depends on
 
 - [Recognition of a language by a monoid morphism](recognizes.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on

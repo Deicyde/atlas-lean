@@ -27,7 +27,7 @@ $n + r$; the counter $N$ is restored through the scratch stack $W$.
 
 ## Proof depends on
 
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 - [Stack of a counter](k-2.md)
 - [Copying a counter through $W$](dup-run.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)

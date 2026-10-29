@@ -17,7 +17,7 @@ and of an internal node are its cached aggregate and cached length.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Sources
 

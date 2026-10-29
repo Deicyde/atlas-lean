@@ -101,7 +101,9 @@ public theorem isUlamWord_length_four_examples :
       IsUlamWord [true, false, true, true] ∧ ¬ IsUlamWord [false, true, true, false] := by
   decide
 
-/-- The number `#U_n` of Ulam words of length `n`.
+/-- **Number of Ulam words of a given length.** For a natural number $n$, $\#U_n$ denotes the
+number of Ulam words of length $n$, that is, of words $w_1 \cdots w_n$ of length $n$ in the
+letters $0$ and $1$ that are Ulam words.
 
 Source: Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma,
 *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1. -/
@@ -282,10 +284,10 @@ public theorem_wanted ulamDensity_inv_isTheta_ulamGapMean :
     (fun n : ℕ => (2 : ℝ) ^ n / ulamWordCount n) =Θ[Filter.atTop]
       fun n => (ulamGapMean n : ℝ)
 
-/-- **Ulam words with a single one.** For every $n \ge 1$, the number of $a \in \{0, \dots, n - 1\}$
-for which the word $0^a 1 0^{n-1-a}$ ($a$ zeros, then a one, then $n - 1 - a$ zeros) is an Ulam
-word equals $2^{s_2(n-1)}$, where $s_2(m)$ is the sum of the binary digits of $m$. This number is
-the term $G(n - 1)$ of Gould's sequence.
+/-- **Counting Ulam words with a single one.** For every $n \ge 1$, the number of
+$a \in \{0, \dots, n - 1\}$ for which the word $0^a 1 0^{n-1-a}$ ($a$ zeros, then a one, then
+$n - 1 - a$ zeros) is an Ulam word equals $2^{s_2(n-1)}$, where $s_2(m)$ is the sum of the binary
+digits of $m$. This number is the term $G(n - 1)$ of Gould's sequence.
 
 Source: Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma,
 *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 5
@@ -317,9 +319,9 @@ public theorem_wanted isUlamWord_zeros_one_zero_one_zeros_iff (a b : ℕ) (hab :
     IsUlamWord (List.replicate a false ++ [true, false, true] ++ List.replicate b false) ↔
       (a + b) % 2 = 1
 
-/-- **Ulam words with a single one.** For natural numbers $a$ and $b$, the binary word
-$0^a 1 0^b$ ($a$ zeros, then a one, then $b$ zeros) is an Ulam word if and only if the binomial
-coefficient $\binom{a + b}{a}$ is odd.
+/-- **Parity criterion for Ulam words with a single one.** For natural numbers $a$ and $b$, the
+binary word $0^a 1 0^b$ ($a$ zeros, then a one, then $b$ zeros) is an Ulam word if and only if
+the binomial coefficient $\binom{a + b}{a}$ is odd.
 
 Source: Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma,
 *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 8

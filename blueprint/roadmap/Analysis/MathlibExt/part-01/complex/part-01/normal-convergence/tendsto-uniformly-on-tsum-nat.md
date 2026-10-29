@@ -18,7 +18,7 @@ the pointwise sum $x \mapsto \sum_{n=0}^{\infty} f_n(x)$.
 
 ## Depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-normally-on.md)
 
 ## Proof depends on
 

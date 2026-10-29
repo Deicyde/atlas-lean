@@ -24,7 +24,7 @@ This node has no prerequisites.
 - [Birational automorphisms over a base](birational-aut-over.md)
 - [Cremona group](cr.md)
 - [Pseudo-regularizable birational automorphism](is-pseudo-regularizable.md)
-- [Variety over a field](variety.md)
+- [Integral variety over a field](variety.md)
 
 ## Sources
 

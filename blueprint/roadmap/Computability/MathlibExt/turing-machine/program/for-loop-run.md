@@ -33,7 +33,7 @@ from $(h, v, S)$ to $(e, \mathrm{tag}(\mathrm{false}), S')$ in exactly $\sum_{i 
 - [Unary counter](cnt.md)
 - [Loop head of a for loop over a counter](for-head.md)
 - [Sum of consecutive values](sum-from.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 

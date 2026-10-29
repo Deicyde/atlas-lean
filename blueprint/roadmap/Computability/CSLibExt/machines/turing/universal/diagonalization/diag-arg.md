@@ -19,7 +19,7 @@ once with the answer true, so that the diagonal answer is false there.
 
 ## Proof depends on
 
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Sources
 

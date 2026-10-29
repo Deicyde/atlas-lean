@@ -435,7 +435,13 @@ theorem ridgePosterior_le_iff {X : Matrix (Fin m) ι ℝ} {y : Fin m → ℝ} {v
     mul_le_mul_iff_right₀ (mul_pos (normConst_pos hv m) (normConst_pos hτ _)), exp_le_exp,
     div_le_div_iff_of_pos_right hv', neg_le_neg_iff]
 
-/-- The ridge estimate with `λ = v / τ` maximizes the posterior kernel. -/
+/-- **The ridge estimate maximizes the ridge posterior.** Let $X$ be a real design matrix with $m$
+rows and columns indexed by a finite type $\iota$, let $y \in \mathbb{R}^m$, and let $v$ and $\tau$
+be positive reals. Let $p$ be the posterior kernel of linear regression with Gaussian noise of
+variance $v$ and independent $N(0, \tau)$ priors on the coordinates of the parameter, and let
+$\hat\theta = (X^\top X + \lambda I)^{-1} X^\top y$ be the ridge estimate with $\lambda = v / \tau$.
+Then $\hat\theta$ maximizes $p$: for every $\theta \in \mathbb{R}^\iota$ we have
+$p(\theta) \le p(\hat\theta)$. -/
 theorem isMaxOn_ridgePosterior (X : Matrix (Fin m) ι ℝ) (y : Fin m → ℝ) {v τ : ℝ≥0}
     (hv : v ≠ 0) (hτ : τ ≠ 0) :
     IsMaxOn (ridgePosterior X y v τ) Set.univ (ridgeEstimate X y (v / τ)) := by

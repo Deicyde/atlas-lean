@@ -56,7 +56,10 @@ theorem summable_wimanTerm
   rw [hcoeff, wimanTerm, norm_mul, norm_pow]
   simp only [Complex.norm_real, Real.norm_eq_abs, abs_abs]
 
-/-- The normalized radial majorant is nonnegative. -/
+/-- **The radial majorant is nonnegative.** For every function $f : \mathbb{C} \to \mathbb{C}$ with
+Taylor coefficients $a_n = f^{(n)}(0) / n!$ at the origin and every real number $r$, the radial
+majorant $M_f(r) = \sum_{n \ge 0} |a_n| \, |r|^n$ (taken to be $0$ when the series diverges)
+satisfies $0 \le M_f(r)$. -/
 theorem wimanMajorant_nonneg (f : ℂ → ℂ) (r : ℝ) :
     0 ≤ wimanMajorant f r := by
   exact tsum_nonneg fun n => wimanTerm_nonneg f r n

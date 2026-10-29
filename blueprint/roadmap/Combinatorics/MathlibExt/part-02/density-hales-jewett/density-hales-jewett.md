@@ -32,7 +32,7 @@ This node has no prerequisites.
 - [Points of the image of a line](comp-line-apply.md)
 - [Evaluating a composite subspace](comp-apply.md)
 - [Images of lines under composite subspaces](comp-comp-line.md)
-- [Exists lines mono in high dimension fin](exists-lines-mono-in-high-dimension-fin.md)
+- [Graham–Rothschild theorem for combinatorial lines](exists-lines-mono-in-high-dimension-fin.md)
 
 ## Sources
 

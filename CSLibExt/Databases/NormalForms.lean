@@ -145,9 +145,13 @@ theorem SatisfiesOn.project {F : Finset (FD A)} {S T : Finset A} {r : Finset (Tu
   simpa [hYT ha] using h X (hXT.trans hTS) Y (hYT.trans hTS) hXY t' ht' u' hu' hagree' a ha
 
 variable (D) in
-/-- The decomposition of `R₁ ∪ R₂` into `R₁` and `R₂` is lossless for `F`: every relation over
-`R₁ ∪ R₂` with values in `D` that satisfies the dependencies derivable from `F` between attributes
-of `R₁ ∪ R₂` is the join of its two projections. -/
+/-- **Lossless decomposition into two schemes.** Let $F$ be a finite set of functional
+dependencies, let $R_1$ and $R_2$ be finite sets of attributes, and let $D$ be a type of values.
+The decomposition of $R_1 \cup R_2$ into $R_1$ and $R_2$ is lossless for $F$ with values in $D$
+when every relation $r$ over $R_1 \cup R_2$ with values in $D$ that satisfies $F$ on
+$R_1 \cup R_2$ (every dependency $X \to Y$ with $X, Y \subseteq R_1 \cup R_2$ that is derivable
+from $F$ by Armstrong's axioms holds in $r$) is the natural join of its projections:
+$\pi_{R_1}(r) \bowtie \pi_{R_2}(r) = r$. -/
 def LosslessJoin (F : Finset (FD A)) (R₁ R₂ : Finset A) : Prop :=
   ∀ r : Finset (Tuple A D), IsOver (R₁ ∪ R₂) r → SatisfiesOn F (R₁ ∪ R₂) r →
     join (project R₁ r) (project R₂ r) = r
@@ -297,7 +301,8 @@ theorem joinProjections_congr {R : Finset A} (l : List (Finset A)) (hl : ∀ S �
     rw [ih fun T hT => hl T (List.mem_cons_of_mem _ hT),
       project_project_of_subset (hl S List.mem_cons_self)]
 
-/-- The union of a list of schemes. -/
+/-- **Union of a list of schemes.** For a list $S_1, \dots, S_n$ of schemes (finite sets of
+attributes), this is the union $S_1 \cup \dots \cup S_n$; for the empty list it is the empty set. -/
 def schemaUnion (l : List (Finset A)) : Finset A := l.foldr (· ∪ ·) ∅
 
 omit [Fintype A] in

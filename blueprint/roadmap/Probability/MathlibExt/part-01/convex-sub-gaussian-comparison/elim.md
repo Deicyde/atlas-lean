@@ -21,7 +21,7 @@ on $\mathbb{R}$.
 ## Depends on
 
 - [Convex domination](convex-dominated.md)
-- [Is Admissible Constant](is-admissible-constant.md)
+- [Admissible convex sub-Gaussian comparison constants](is-admissible-constant.md)
 - [Random variables with a 1-sub-Gaussian tail](is-one-sub-gaussian-tail.md)
 
 ## Sources

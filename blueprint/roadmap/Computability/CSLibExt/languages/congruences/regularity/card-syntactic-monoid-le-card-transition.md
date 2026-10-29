@@ -16,7 +16,7 @@ the transition monoid of $M$.
 ## Depends on
 
 - [State transformation monoid](../syntactic/state-transformation.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Transition monoid of a DFA](../syntactic/transition-monoid.md)
 
 ## Proof depends on

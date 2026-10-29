@@ -18,7 +18,7 @@ set $X \subseteq \mathbb{Z}$ such that $|f(x)| < |x|^{\tau(|x|)}$ for every $x \
 ## Depends on
 
 - [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
-- [Polynomial To LIP](polynomial-to-lip.md)
+- [The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$](polynomial-to-lip.md)
 
 ## Sources
 

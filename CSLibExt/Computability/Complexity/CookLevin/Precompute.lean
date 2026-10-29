@@ -171,7 +171,15 @@ start value) and $b$ (the base), the step budget of the power loop is
 $j \, (p \, (b + 1)^j \, (3 b + 5) + 5) + 1$. -/
 def powB (j p b : ℕ) : ℕ := j * (p * (b + 1) ^ j * (3 * b + 5) + 5) + 1
 
-/-- **The power loop.** From `kc = j`, `q = ad = t = 0`: ends with `p ← p · b^j`, `kc = 0`. -/
+/-- **The power loop.** Let $b, k, p, q, a, t$ be pairwise distinct counters of a counter machine
+$M$, let $\mu$ assign a label to each power-loop stage and let $\nu$ be a label. Suppose that for
+every power-loop stage $s$ the label $\mu(s)$ runs the power-loop program for $b, k, p, q, a, t$
+with stage labels $\mu$ and exit label $\nu$ at stage $s$. Let $j \in \mathbb{N}$, let $F$ be
+counter values with $F(k) = j$ and $F(q) = F(a) = F(t) = 0$, let $v$ be a flag and $o$ an
+output. Then $M$ runs from the head stage $\mu(\mathrm{hd})$ with flag $v$, counters $F$ and
+output $o$ to the label $\nu$ with flag false, output $o$, and counters $F$ except that $p$ holds
+$F(p) \cdot F(b)^j$ and $k$ holds $0$, within $j\,(F(p)\,(F(b) + 1)^j\,(3F(b) + 5) + 5) + 1$
+steps, the step budget of the power loop for $j$ rounds, start value $F(p)$ and base $F(b)$. -/
 theorem pow_run {b kc p q ad t : C} {mk : PW → Λ} {exit : Λ}
     (hp : ∀ s, M (mk s) = powS b kc p q ad t mk exit s)
     (hnd : [b, kc, p, q, ad, t].Nodup) :
@@ -361,8 +369,20 @@ def hornT : List ℕ → ℕ → ℕ → ℕ
   | [], _, _ => 0
   | a :: cs, b, A => hornStep A b + hornT cs b (A * b + a)
 
-/-- **Horner rounds.** Round `i` occupies labels `mk i`; after the last round the machine is at
-`exit`. From `acc = A`, `q = ad = t = 0`: `acc ← hornVal cs b A`. -/
+/-- **Horner rounds.** Let $b, \mathit{acc}, q, d, t$ be pairwise distinct counters of a counter
+machine $M$, let $c_0, \dots, c_{\ell-1}$ be natural numbers, let $\mu$ assign a label
+$\mu(i, s)$ to each $i \in \mathbb{N}$ and each Horner-round stage $s$, and let $\nu$ be a label.
+Suppose that for every $i < \ell$ and every stage $s$ the label $\mu(i, s)$ runs, at stage $s$,
+the statement of one Horner round for $b, \mathit{acc}, q, d, t$ and the number $c_i$, with
+stage labels $\mu(i, \cdot)$ and exit label $\mu(i + 1, \mathrm{mul\ head})$ if $i + 1 < \ell$
+and $\nu$ otherwise. Then for all $i, j \in \mathbb{N}$ with $i + j = \ell$, all counter values
+$F$ with $F(q) = F(d) = F(t) = 0$, every flag $v$ and every output $o$, there is a flag $v'$ such
+that $M$ runs in exactly $h$ steps from the label $\mu(i, \mathrm{mul\ head})$ if $i < \ell$ and
+$\nu$ otherwise, with flag $v$, counters $F$ and output $o$, to the label $\nu$ with flag $v'$,
+output $o$, and counters $F$ except that $\mathit{acc}$ holds the Horner value of
+$c_i, \dots, c_{\ell-1}$ with base $F(b)$ from accumulator $F(\mathit{acc})$. Here $h$ is the
+step count of the Horner rounds over $c_i, \dots, c_{\ell-1}$ with base $F(b)$ from accumulator
+$F(\mathit{acc})$. -/
 theorem horner_run {b acc q ad t : C} (cs : List ℕ) {mk : ℕ → HW → Λ} {exit : Λ}
     (hp : ∀ i (hi : i < cs.length) s, M (mk i s) = hornS b acc q ad t cs[i] (mk i)
       (if i + 1 < cs.length then mk (i + 1) (.mul .head) else exit) s)
@@ -501,8 +521,24 @@ Indices $i \ge D$ are never reached. -/
 def hlab {D : ℕ} (i : ℕ) (s : HW) : PL D := if h : i < D then .hr ⟨i, h⟩ s else .x1
 
 open CC PS PT in
-/-- **The counter program**: `P = k(n)` by Horner's rule, `m = n + 1 + P`, `T = (m + c)^e`,
-`F = d·T + d + 1`, `H = m + F`, then the twelve loads. -/
+/-- **The counter program.** For a polynomial $k$ with natural-number coefficients, whose
+coefficient list $\kappa_0, \dots, \kappa_{D-1}$ has length $D$, and $c, e, d \in \mathbb{N}$,
+the counter program is the program with the labels of the counter program for $D$ Horner rounds
+that acts on a Boolean output stack and on the scratch and target counters of the counter
+program as follows. It runs $D$ Horner rounds, round $i$ with coefficient $\kappa_i$, base $N$,
+accumulator $P$, product counter $Q$, index counter $AD$ and scratch counter $TMP$. It moves $P$
+onto both $Mc$ and the target $iE$, moves $N$ onto both $Mc$ and the target $iX$, and adds one
+unit to each of $Mc$ and $iX$. It adds $Mc$ to $B$, restoring $Mc$ through $TMP$, adds $c$ units
+to $B$, $e$ units to $KC$ and one unit to $Tc$, and runs the power loop with base $B$, round
+counter $KC$, accumulator $Tc$, product counter $Q$, index counter $AD$ and scratch counter
+$TMP$. It adds $d$ units to $Dd$, adds $Dd \cdot Tc$ to $Fx$ (index counter $AD$, scratch
+counter $TMP$) and adds $d + 1$ more units to $Fx$. It moves $Fx$ onto both $Hc$ and the target
+$iF$ and moves $Mc$ onto $Hc$. Finally it moves $Tc$ onto each of the targets
+$uT, sT, hT, aT, iT$, moves $Hc$ onto each of the targets $uH, sH, hH, aH$, and halts.
+
+Started with $n$ on $N$ and every other counter empty, the program computes $P = k(n)$ by
+Horner's rule, $m = n + 1 + k(n)$ on $Mc$, $T = (m + c)^e$ on $Tc$, $dT + d + 1$ on $Fx$ and
+$m + dT + d + 1$ on $Hc$, and so loads the twelve target counters. -/
 noncomputable def cprog (k : Polynomial ℕ) (c e d : ℕ) :
     PL (coeffs k).length → TM2.Stmt (SΓ CC) (PL (coeffs k).length) Bool
   | .p1 => emitR (.c (s P)) (List.replicate 0 ()) (if 0 < (coeffs k).length then hlab 0 (.mul .head) else .x1)
@@ -1146,7 +1182,11 @@ theorem pow {f : ℕ → ℕ} (hf : IsPoly f) (j : ℕ) : IsPoly fun n => f n ^ 
 
 theorem eval (p : Polynomial ℕ) : IsPoly fun n => p.eval n := ⟨p, fun _ => rfl⟩
 
-/-- The Horner step count is polynomial in the base. -/
+/-- **The Horner step count is polynomial.** Let $cs$ be a list of natural numbers and let
+$A : \mathbb{N} \to \mathbb{N}$ be a polynomial function, that is, there is a polynomial $q$ with
+natural-number coefficients such that $A(n) = q(n)$ for all $n$. Then $n \mapsto h(n, A(n))$ is a
+polynomial function in the same sense, where $h(b, a)$ is the step count of the Horner rounds over
+$cs$ with base $b$ from accumulator $a$. -/
 theorem hornT (cs : List ℕ) : ∀ {A : ℕ → ℕ}, IsPoly A → IsPoly fun n => Precompute.hornT cs n (A n) := by
   induction cs with
   | nil => intro A _; exact const 0

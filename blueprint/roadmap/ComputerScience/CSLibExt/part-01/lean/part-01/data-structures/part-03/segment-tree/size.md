@@ -16,7 +16,7 @@ leaves, and internal nodes answer in constant time.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ tasks.
 ## Depends on
 
 - [Computation DAG](dag.md)
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Triangle Area
 
-- [To Real volume convex Hull triangle](to-real-volume-convex-hull-triangle.md)
-- [Volume unit Square](volume-unit-square.md)
+- [Determinant formula for the area of a triangle](to-real-volume-convex-hull-triangle.md)
+- [Area of the unit square](volume-unit-square.md)

@@ -5,7 +5,7 @@ navigation: module
 # Convex Hull Polygon
 
 - [Upper chain](upper-hull.md)
-- [Convex Hull](convex-hull.md)
+- [Convex hull by the monotone chain algorithm](convex-hull.md)
 
 ## Point reflection
 
@@ -28,5 +28,5 @@ navigation: module
 
 ## Strict convexity of the polygon
 
-- [Turns Left](turns-left.md)
+- [Lists of points turning strictly left](turns-left.md)
 - [Convex Hull turns Left](convex-hull-turns-left.md)

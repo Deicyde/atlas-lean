@@ -15,7 +15,7 @@ to true under the valuation $\sigma \circ \iota$ of the atoms.
 
 ## Depends on
 
-- [Satisfies](../semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
 - [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
 - [CNF of a proposition](to-cnf.md)
 
@@ -24,11 +24,11 @@ to true under the valuation $\sigma \circ \iota$ of the atoms.
 - [CNF formula](../basic/cnf.md)
 - [Disjunction of two CNFs](disj.md)
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Satisfaction of a literal](../semantics/satisfies.md)
 - [Accumulating CNF builder](cnf-acc.md)
 - [CNF of a proposition at a polarity](cnf-of.md)
-- [Cnf Or](cnf-or.md)
+- [Disjoining CNF builder](cnf-or.md)
 
 ## Sources
 

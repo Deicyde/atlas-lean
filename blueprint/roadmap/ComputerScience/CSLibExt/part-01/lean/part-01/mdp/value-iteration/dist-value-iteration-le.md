@@ -22,7 +22,7 @@ $\|\cdot\|_\infty$ is the sup norm.
 - [Stochastic Markov decision process](stochastic.md)
 - [Bellman optimality operator](bellman.md)
 - [Optimal value of a discounted Markov decision process](optimal-value.md)
-- [Value Iteration](value-iteration.md)
+- [Value iteration](value-iteration.md)
 
 ## Proof depends on
 

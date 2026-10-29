@@ -64,8 +64,10 @@ open Polynomial Finset Real Complex Filter ArithmeticFunction
 
 open scoped ComplexConjugate
 
-/-- We define an extension of an arithmetic function `f` to the integers by setting
-`f z = f 0 = 0` for all `z ≤ 0`. -/
+/-- **Extension of an arithmetic function to the integers.** Let $R$ be a type with a zero
+element $0$ and let $f$ be an arithmetic function with values in $R$. The extension of $f$ to the
+integers is the function on $\mathbb{Z}$ that sends an integer $z$ to $f(z)$ if $z > 0$ and to
+$0$ if $z \le 0$. -/
 noncomputable def _root_.ArithmeticFunction.intExtension {R : Type*} [Zero R]
     (f : ArithmeticFunction R) (z : ℤ) : R := if z ≤ 0 then 0 else f ⌊z⌋₊
 

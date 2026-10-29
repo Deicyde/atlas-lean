@@ -130,8 +130,8 @@ Source: `2307.09867:D05`. -/
 def hoffmanBlock (k : PNat) : FreeMonoid Bool :=
   FreeMonoid.ofList (List.replicate (k.val - 1) false ++ [true])
 
-/-- Reading a Hoffman block as a list recovers `k - 1` copies of `x` followed
-by one `y`. -/
+/-- **Hoffman block as a list.** For every positive integer $k$, the list of letters of the
+Hoffman block $z_k$ consists of $k - 1$ copies of $x$ (false) followed by one $y$ (true). -/
 @[simp]
 theorem toList_hoffmanBlock (k : PNat) :
     FreeMonoid.toList (hoffmanBlock k) =

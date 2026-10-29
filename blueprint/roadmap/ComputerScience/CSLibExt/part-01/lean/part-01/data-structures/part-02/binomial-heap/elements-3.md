@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.elements
 ---
 
-# Elements
+# Elements of a binomial heap
 
-The multiset represented by a binomial heap.
+**Elements of a binomial heap.** Over a linearly ordered type, the multiset of elements of a
+binomial heap is the multiset of elements of its list of binomial trees, that is, the multiset sum
+of the multisets of elements of its trees.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ The multiset represented by a binomial heap.
 
 ## Proof depends on
 
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Binomial tree](binomial-tree.md)
 
 ## Sources

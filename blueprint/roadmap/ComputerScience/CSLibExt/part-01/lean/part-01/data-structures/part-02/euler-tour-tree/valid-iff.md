@@ -16,7 +16,7 @@ vertices in preorder has no repeated entries.
 
 - [Rooted ordered tree](tree.md)
 - [Valid Euler-tour tree](valid.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 
 ## Sources
 

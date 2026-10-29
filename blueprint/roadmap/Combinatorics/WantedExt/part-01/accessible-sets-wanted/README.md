@@ -60,4 +60,4 @@ navigation: module
 - [Furstenberg–Weiss correspondence for translation-invariant families](furstenberg-weiss-correspondence.md)
 - [Topological recurrence, accessibility and chromatic intersectivity](recurrence-accessibility-equivalences.md)
 - [One part of a union inherits $k$-topological recurrence](topological-recurrence-union-partition.md)
-- [Accessible union partition](accessible-union-partition.md)
+- [One part of an accessible union is accessible](accessible-union-partition.md)

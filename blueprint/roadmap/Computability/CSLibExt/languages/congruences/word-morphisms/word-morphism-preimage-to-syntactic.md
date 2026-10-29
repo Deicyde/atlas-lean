@@ -20,7 +20,7 @@ This morphism is surjective, so $M(K)$ is a quotient of a submonoid of $M(L)$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 - [Inverse image under a word morphism](word-morphism-preimage.md)
 - [Recognizing morphism of an inverse image](word-morphism-recognizer.md)

@@ -9,7 +9,7 @@ navigation: module
 - [Sets that are arithmetic progressions](is-apof-length.md)
 - [Cardinality of a set arithmetic progression](card.md)
 - [First term and difference of a set arithmetic progression](eq.md)
-- [Is APOf Length With](is-apof-length-with-2.md)
+- [List arithmetic progressions with given start and difference](is-apof-length-with-2.md)
 - [Arithmetic progressions of lists](is-apof-length-2.md)
 - [Monotone arithmetic progressions in a function](has-monotone-ap.md)
 - [Progression-free sets](is-apof-length-free.md)

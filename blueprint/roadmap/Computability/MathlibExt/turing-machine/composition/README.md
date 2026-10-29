@@ -54,10 +54,10 @@ navigation: module
 ## The composition theorem
 
 - [Symbol translation between composed machines](glue.md)
-- [Mid Poly](mid-poly.md)
+- [Intermediate length bound of the composite machine](mid-poly.md)
 - [Time bound of the composite machine](comp-time.md)
 - [The composite machine computes the composite function in time](comp-outputs.md)
-- [Comp Computable](comp-computable.md)
+- [The composite polynomial-time TM2 computation](comp-computable.md)
 - [Polynomial-time TM2-computable functions are closed under composition](tm2-computable-in-poly-time-comp.md)
 - [Composition of polynomial-time functions under encodings](comp.md)
 - [Polynomial-time functions are closed under composition](comp-2.md)

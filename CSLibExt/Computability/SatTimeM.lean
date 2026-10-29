@@ -387,10 +387,13 @@ theorem satVerifier_verifierInDeclaredPolyTime :
     Cslib.TimeMComplexity.VerifierInDeclaredPolyTime satVerifier :=
   ⟨Polynomial.X ^ 2 + Polynomial.X, satVerifier_time_le⟩
 
-/-- `satVerifier` verifies `satDec` with witness bound `X`: the witness
-lists assignment values for the occurring variables in occurrence order
-(length the literal count, at most the input length), and acceptance is
-equivalent to satisfiability of the decoded formula. -/
+/-- **The SAT verifier verifies SAT.** The SAT verifier verifies the SAT decision problem with
+witness bound the polynomial $X$: for every list $x$ of Booleans, $x$ encodes a satisfiable CNF
+formula if and only if there is a list $w$ of Booleans, of length at most the length of $x$, such
+that the SAT verifier on $(x, w)$ returns true.
+
+The intended witness lists values for the variables occurring in the decoded formula, in order of
+occurrence; its length is the literal count, which is at most the input length. -/
 theorem satVerifier_verifies :
     Cslib.TimeMComplexity.Verifies satVerifier satDec Polynomial.X := by
   intro x

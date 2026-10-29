@@ -13,7 +13,7 @@ monoid of $L$ that sends each word to its class under the syntactic congruence o
 
 ## Depends on
 
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Syntactic congruence](syntactic-con.md)
 
 ## Sources

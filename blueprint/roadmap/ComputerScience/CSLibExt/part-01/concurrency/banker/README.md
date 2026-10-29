@@ -22,6 +22,6 @@ navigation: module
 - [Correctness of the safety algorithm](safety-check-iff.md)
 - [Granting a request](grant.md)
 - [Remaining need after a grant](need-grant-self.md)
-- [Request](request.md)
+- [Resource-request algorithm](request.md)
 - [The request algorithm grants exactly the safe requests within the claim and the free resources](request-eq-some-iff.md)
 - [Granted requests lead to safe states](request-safe.md)

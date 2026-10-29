@@ -18,7 +18,7 @@ $p$ by one FIFO step with capacity $k$.
 
 ## Proof depends on
 
-- [Legal Cache](legal-cache.md)
+- [Legal cache](legal-cache.md)
 - [One step of FIFO paging](fifo-step.md)
 - [One FIFO step keeps the cache legal](fifo-step-legal.md)
 

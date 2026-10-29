@@ -21,13 +21,13 @@ hard), in exact, non-asymptotic form.
 - [ElGamal eavesdropping adversary](adversary.md)
 - [Advantage of a DDH distinguisher](ddh-advantage.md)
 - [Eavesdropping advantage against ElGamal](eav-advantage.md)
-- [Reduction](reduction.md)
+- [DDH distinguisher from an ElGamal eavesdropper](reduction.md)
 
 ## Proof depends on
 
-- [Ddh Rand](ddh-rand.md)
+- [Random DDH experiment](ddh-rand.md)
 - [The reduction is a fair coin on random DDH triples](ddh-rand-reduction-true.md)
-- [Ddh Real](ddh-real.md)
+- [Real DDH experiment](ddh-real.md)
 - [ElGamal eavesdropping experiment](eav-game.md)
 - [ElGamal eavesdropping game equals the real DDH experiment of the reduction](eav-game-eq-ddh-real.md)
 

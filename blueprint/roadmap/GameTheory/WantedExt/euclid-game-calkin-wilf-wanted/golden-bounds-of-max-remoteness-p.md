@@ -19,7 +19,7 @@ P-position with $0$ moves in row $0$, and $1$ lies in neither interval).
 ## Depends on
 
 - [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
 - [The game Euclid](euclid-game.md)
 - [Euclid P-position test](euclid-pposition.md)

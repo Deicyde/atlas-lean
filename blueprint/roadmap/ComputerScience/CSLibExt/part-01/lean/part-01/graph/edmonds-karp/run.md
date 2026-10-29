@@ -25,7 +25,7 @@ continues from the augmented flow with fuel $k - 1$.
 
 - [Augmenting a flow along a path](augment.md)
 - [Bottleneck of a path](path-bottleneck.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 - [Shortest path via breadth-first search](shortest-path.md)
 
 ## Sources

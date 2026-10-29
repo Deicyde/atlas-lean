@@ -15,7 +15,7 @@ navigation: transparent
 - [The assignment of the real run's literals](run-asg.md)
 - [Faithful clauses with a literal agreeing with the real run are satisfied](sat-run.md)
 - [Situation variables lie in the label/state block](sa-lt.md)
-- [D3Fam families (update, S-def), completeness](fam-complete.md)
+- [Transition families with a run-literal head are satisfied by the run](fam-complete.md)
 - [The run assignment satisfies the update family](upd-complete.md)
 - [The run assignment satisfies the situation-definition family](sdef-complete.md)
 - [The run assignment satisfies the cell-shift family](shift-complete.md)

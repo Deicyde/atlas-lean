@@ -6,10 +6,12 @@ statement: formalized
 lean: ArithmeticFunction.intExtension
 ---
 
-# Int Extension
+# Extension of an arithmetic function to the integers
 
-We define an extension of an arithmetic function `f` to the integers by setting
-`f z = f 0 = 0` for all `z ≤ 0`.
+**Extension of an arithmetic function to the integers.** Let $R$ be a type with a zero
+element $0$ and let $f$ be an arithmetic function with values in $R$. The extension of $f$ to the
+integers is the function on $\mathbb{Z}$ that sends an integer $z$ to $f(z)$ if $z > 0$ and to
+$0$ if $z \le 0$.
 
 ## Depends on
 

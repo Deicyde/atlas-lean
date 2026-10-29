@@ -19,8 +19,8 @@ $n(n-1)/2$ squared distances.
 
 ## Proof depends on
 
-- [Dist2](dist2.md)
-- [Min Dist From](min-dist-from.md)
+- [Squared distance in the plane](dist2.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

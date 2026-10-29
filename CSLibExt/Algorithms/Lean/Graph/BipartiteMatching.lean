@@ -213,7 +213,9 @@ theorem layers_fst_eq_of_eq {k : ℕ} (h : (layers adj mate k).1 = (layers adj m
       · rwa [ih] at hi
       · rw [h]; exact mem_layers_succ_fst.2 (Or.inr ⟨j, hR hj, hm⟩)
 
-/-- The left layers are stable after `a` rounds. -/
+/-- **Rounds $a$ and $a + 1$ reach the same left vertices.** In a bipartite graph with $a$ left
+vertices, for every partner array $\mu$, the alternating layered search for $\mu$ reaches the same
+left vertices within $a + 1$ rounds as within $a$ rounds. -/
 theorem layers_fst_stable : (layers adj mate (a + 1)).1 = (layers adj mate a).1 := by
   by_cases h : ∃ k ≤ a, (layers adj mate k).1 = (layers adj mate (k + 1)).1
   · obtain ⟨k, hk, hkk⟩ := h
@@ -307,8 +309,13 @@ structure AltPath (mate : Fin b → Option (Fin a)) (k : ℕ) (j : Fin b)
   /-- The last left vertex is unmatched. -/
   last : ∀ p ∈ P.getLast?, Free mate p.1
 
-/-- An augmenting path: an alternating path (`AltPath`) whose starting right vertex is unmatched,
-so that both endpoints are unmatched. -/
+/-- **Augmenting path.** Let $\mu$ be a partner array, $k$ a natural number and $j$ a right
+vertex. A list $P$ of pairs of a left vertex and a right vertex is an augmenting path from $j$
+within round $k$ when $P$ is an alternating path from $j$ within round $k$ and $j$ is unmatched:
+$\mu$ gives $j$ no partner.
+
+Since the last left vertex of an alternating path is unmatched, both endpoints of an augmenting
+path are unmatched. -/
 structure IsAugmentingPath (mate : Fin b → Option (Fin a)) (k : ℕ) (j : Fin b)
     (P : List (Fin a × Fin b)) : Prop extends AltPath adj mate k j P where
   /-- The starting right vertex is unmatched. -/
@@ -535,7 +542,10 @@ theorem matched_flip {k : ℕ} {j : Fin b} {P : List (Fin a × Fin b)} (hP : Alt
       · push Not at hin
         exact ⟨i, (flip_eq_some hP.nodup_snd).2 (Or.inr ⟨hin, h⟩)⟩
 
-/-- `pathTo` from a reached unmatched right vertex lists an augmenting path. -/
+/-- **The walk back from an unmatched reached vertex is an augmenting path.** Let $\mu$ be a valid
+partner array, $k$ a natural number and $j$ a right vertex that is unmatched and is reached within
+$k + 1$ rounds of the alternating layered search for $\mu$. Then the walk back from $j$ at level
+$k$ is an augmenting path from $j$ within round $k$. -/
 theorem pathTo_isAugmentingPath (hv : Valid adj mate) {k : ℕ} {j : Fin b}
     (hj : j ∈ (layers adj mate (k + 1)).2) (hfree : mate j = none) :
     IsAugmentingPath adj mate k j (pathTo adj mate k j) :=
@@ -1880,8 +1890,15 @@ theorem searchPath_dead (hv : Valid adj mate) (U : Fin a → Bool) : ∀ (k : �
             hz.partner hv hiL hiadj him (partnerOf_eq_some hp)
           exact (searchPath_dead hv U k j' d hj' y h1 h2).mono (fun _ h => h) h3
 
-/-- Along a shortest chain that avoids the vertices of earlier paths, a dead set whose members are
-on earlier paths or have no escape contains no right vertex of the chain. -/
+/-- **Shortest chains avoiding earlier paths contain no dead vertex.** Let $\mu$ be a partner
+array, $U$ a set of left vertices and $D$ a set of right vertices, and let $L$ be a set of left
+vertices and $R$ a set of right vertices such that every vertex of $U$ lies in $L$ and every
+vertex of $D$ lies in $R$ or has no escape avoiding $U$ and $D$. Let $m \in \mathbb{N}$, let $z$ be
+a right vertex first reached in round $m + 1$ of the alternating layered search for $\mu$, and let
+$S$ be an alternating chain from $z$ with $m + 1$ pairs such that no left vertex of $S$ lies in $L$
+and no right vertex of $S$ lies in $R$. Then no right vertex of $S$ lies in $D$.
+
+In a phase, $L$ and $R$ are the left and right vertices of the paths found so far. -/
 theorem not_dead_of_chain {U : Fin a → Bool} {D : Fin b → Bool} {Lf : Fin a → Prop}
     {Rf : Fin b → Prop} (hU : ∀ i, U i = true → Lf i)
     (hD : ∀ y, D y = true → NoEscape adj mate U D y ∨ Rf y) :
@@ -2071,8 +2088,11 @@ theorem mem_layers_snd_of_mate (hv : Valid adj mate) {k : ℕ} {i : Fin a} {j : 
   obtain ⟨j'', hj'', hm''⟩ := exists_mate_of_mem_layers hi (fun hf => hf j hm)
   rw [hv.inj i j j'' hm hm'']; exact hj''
 
-/-- Along a shortest chain, each pair `(i, j)` has `j` first reached in some round `m + 1` and `i`
-reached by round `m`. -/
+/-- **Levels along a shortest alternating chain.** Let $\mu$ be a partner array, let
+$m \in \mathbb{N}$, let $z$ be a right vertex first reached in round $m + 1$ of the alternating
+layered search for $\mu$, and let $S$ be an alternating chain from $z$ with $m + 1$ pairs. Then
+for every pair $(i, j)$ of $S$ there is $m' \in \mathbb{N}$ such that $j$ is first reached in round
+$m' + 1$ and $i$ is reached within $m'$ rounds. -/
 theorem pair_levels_of_chain : ∀ (S : List (Fin a × Fin b)) (z : Fin b) (m : ℕ),
     IsChainFrom adj mate z S → ExactLevel adj mate m z → S.length = m + 1 →
     ∀ p ∈ S, ∃ m', ExactLevel adj mate m' p.2 ∧ p.1 ∈ (layers adj mate m').1
@@ -2561,8 +2581,13 @@ theorem firstFreeRound_hopcroftKarpAux : ∀ (f c : ℕ) (mate : Fin b → Optio
           obtain ⟨h1, h2⟩ := firstFreeRound_hopcroftKarpAux f (c + 1) m' hv' hc'
           exact ⟨h1, fun d hd => by have := h2 d hd; omega⟩
 
-/-- Each phase adds an edge until the matching is maximum: if the current matching is within `f`
-of a matching `M`, then `f` more phases reach at least `M`'s size. -/
+/-- **Closing a deficit of $f$ in $f$ Hopcroft–Karp phases.** Let $\mu$ be a valid partner array,
+$M$ a matching of the bipartite graph and $f \in \mathbb{N}$. If $M$ has at most $f$ more pairs
+than the matched pairs of $\mu$, then $M$ has at most as many pairs as the matched pairs of the
+partner array returned by the Hopcroft–Karp phase loop with fuel $f$ from $\mu$.
+
+Each phase that finds a path adds at least one edge, and a phase that finds none leaves a maximum
+matching. -/
 theorem card_le_hopcroftKarpAux_of_le : ∀ (f : ℕ) (mate : Fin b → Option (Fin a)),
     Valid adj mate → ∀ M, IsMatching adj M → M.card ≤ (pairs mate).card + f →
       M.card ≤ (pairs (hopcroftKarpAux adj f mate)).card

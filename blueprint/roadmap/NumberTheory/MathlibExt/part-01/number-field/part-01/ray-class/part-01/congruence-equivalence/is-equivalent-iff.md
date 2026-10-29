@@ -20,7 +20,7 @@ nonzero fractional ideals of $K$.
 
 - [Congruence subgroup](../congruence-subgroup/congruence-subgroup.md)
 - [Congruence subgroup as a subgroup of all invertible fractional ideals](../congruence-subgroup/to-ambient-subgroup.md)
-- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Congruence subgroup pair](congruence-subgroup-pair.md)
 - [Equivalence of congruence subgroup pairs](is-equivalent.md)
 - [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 

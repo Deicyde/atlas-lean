@@ -14,7 +14,7 @@ uncovered otherwise.
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 
 ## Sources
 

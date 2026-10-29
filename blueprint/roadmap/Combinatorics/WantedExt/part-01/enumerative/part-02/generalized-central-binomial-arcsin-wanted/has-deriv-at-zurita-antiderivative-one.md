@@ -22,7 +22,7 @@ has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / (1 - x)^{3/2}$ at $x$.
 
 - [Zurita's constant $c_n$](zurita-c.md)
 - [Zurita's polynomial $S_n$](zurita-s.md)
-- [Zurita T](zurita-t.md)
+- [Zurita's polynomial $T_{n-2}$](zurita-t.md)
 
 ## Sources
 

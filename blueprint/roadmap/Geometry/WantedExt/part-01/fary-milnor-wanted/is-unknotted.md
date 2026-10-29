@@ -15,7 +15,7 @@ number $t$, and for every $s \in [0, 1]$ the curve $t \mapsto R(t, s)$ is a smoo
 
 ## Depends on
 
-- [Euclidean 3-space](space.md)
+- [Euclidean 3-space for the Fáry–Milnor theorem](space.md)
 
 ## Proof depends on
 

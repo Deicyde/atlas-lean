@@ -27,9 +27,9 @@ together with the same bound on the sum of reciprocals.
 - [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
 - [Strictly increasing Egyptian denominator tuples](is-strict-egyptian.md)
 - [Strict underapproximations have strictly increasing Egyptian denominators](is-strict-egyptian-2.md)
-- [Nonempty](nonempty-2.md)
-- [Sum lt](sum-lt-2.md)
-- [Target pos](target-pos-2.md)
+- [Strict underapproximations have at least one term](nonempty-2.md)
+- [A strict underapproximation stays below its target](sum-lt-2.md)
+- [The target of a strict underapproximation is positive](target-pos-2.md)
 
 ## Sources
 

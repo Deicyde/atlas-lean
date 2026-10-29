@@ -20,7 +20,7 @@ The hypothesis $a > 0$ excludes the degenerate cases where the graph $P$ is a si
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ steps with output the single symbol $2$ of the bit true.
 ## Proof depends on
 
 - [The code stack determines the clocked semantics](eval-steps-eq-of-code-cells-eq.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 - [Code stacks decode to codes with the same code stack](decode-code-cells-code-cells.md)
 
 ## Sources

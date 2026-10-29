@@ -20,7 +20,7 @@ $s$ has a $k$-piece Borsuk cover.
 
 ## Proof depends on
 
-- [Has Borsuk Cover mono](has-borsuk-cover-mono.md)
+- [Enlarging a Borsuk cover](has-borsuk-cover-mono.md)
 - [A Borsuk cover bounds the Borsuk number](set-borsuk-number-le-of-cover.md)
 
 ## Sources

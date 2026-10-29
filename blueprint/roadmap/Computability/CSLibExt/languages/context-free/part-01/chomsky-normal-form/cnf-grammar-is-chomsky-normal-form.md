@@ -15,7 +15,7 @@ grammar $g$ is reduced, then the binarization of $g$ is in Chomsky normal form.
 
 - [Chomsky normal form](is-chomsky-normal-form.md)
 - [Reduced grammars](../reduced/is-reduced.md)
-- [Cnf Grammar](cnf-grammar.md)
+- [Binarization of a grammar](cnf-grammar.md)
 
 ## Proof depends on
 

@@ -8,7 +8,7 @@ navigation: module
 ## Number Field
 
 - [A prime as an invertible fractional ideal](prime-unit-fractional-ideal.md)
-- [Factorization Mul Equiv prime Unit Fractional Ideal](factorization-mul-equiv-prime-unit-fract.md)
+- [Factorization of a prime of a number field](factorization-mul-equiv-prime-unit-fract.md)
 
 ## Modulus
 

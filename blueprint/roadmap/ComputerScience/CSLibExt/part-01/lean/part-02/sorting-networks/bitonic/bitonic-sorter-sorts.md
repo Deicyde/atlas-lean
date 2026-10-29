@@ -30,7 +30,7 @@ The proof goes through the 0-1 principle.
 - [Extension of a Boolean vector by false](extend-false.md)
 - [Half-cleaner](half-cleaner.md)
 - [Restricting comparators to finitely many wires](of-pairs.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 - [Running a comparator network](../zero-one/run.md)
 - [The 0-1 principle](../zero-one/sorts-of-sorts-bool.md)
 

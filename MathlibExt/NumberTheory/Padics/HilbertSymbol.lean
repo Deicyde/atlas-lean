@@ -71,21 +71,25 @@ namespace padicHilbertSymbol
 
 variable {p : ℕ} [Fact (Nat.Prime p)]
 
-/-- The `p`-adic Hilbert symbol is one exactly when its defining equation is solvable. -/
+/-- **When the $p$-adic Hilbert symbol is $1$.** For a prime $p$ and nonzero
+$a, b \in \mathbb{Q}_p$, the $p$-adic Hilbert symbol $(a, b)_p$ equals $1$ if and only if there
+exist $x, y \in \mathbb{Q}_p$ with $ax^2 + by^2 = 1$. -/
 @[simp]
 theorem eq_one_iff {a b : ℚ_[p]ˣ} :
     padicHilbertSymbol p a b = 1 ↔
       ∃ x y : ℚ_[p], (a : ℚ_[p]) * x ^ 2 + (b : ℚ_[p]) * y ^ 2 = 1 :=
   hilbertSymbol.eq_one_iff
 
-/-- The `p`-adic Hilbert symbol is negative one exactly when its defining equation is not
-solvable. -/
+/-- **When the $p$-adic Hilbert symbol is $-1$.** For a prime $p$ and nonzero
+$a, b \in \mathbb{Q}_p$, the $p$-adic Hilbert symbol $(a, b)_p$ equals $-1$ if and only if there
+are no $x, y \in \mathbb{Q}_p$ with $ax^2 + by^2 = 1$. -/
 theorem eq_neg_one_iff {a b : ℚ_[p]ˣ} :
     padicHilbertSymbol p a b = -1 ↔
       ¬∃ x y : ℚ_[p], (a : ℚ_[p]) * x ^ 2 + (b : ℚ_[p]) * y ^ 2 = 1 :=
   hilbertSymbol.eq_neg_one_iff
 
-/-- The `p`-adic Hilbert symbol takes only the values one and negative one. -/
+/-- **The $p$-adic Hilbert symbol is $\pm 1$.** For a prime $p$ and all nonzero
+$a, b \in \mathbb{Q}_p$, the $p$-adic Hilbert symbol $(a, b)_p$ equals $1$ or $-1$. -/
 theorem eq_one_or_neg_one (a b : ℚ_[p]ˣ) :
     padicHilbertSymbol p a b = 1 ∨ padicHilbertSymbol p a b = -1 :=
   hilbertSymbol.eq_one_or_neg_one a b

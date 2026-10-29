@@ -41,7 +41,7 @@ $l = 0$.
 - [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

@@ -187,9 +187,17 @@ public theorem_wanted mobiusFermat_three_pow_mul_seven_pow (μ : ArithmeticFunct
           ((m + n - 2 * j).factorial : ℚ) /
             ((m - 2 * j).factorial * (n - j).factorial * j.factorial)
 
-/-- Proposition 8: for a Fermat number `q = 2 ^ t - 1` with `t ≥ 4`, `t ≠ 6` (so `q ≠ 3, 7, 63`)
-and `m n k : ℕ`, `μ_M (3 ^ m * 7 ^ n * q ^ k) = (-1) ^ (m + n + k) *
-∑_{j=0}^{min(⌊m/2⌋, n)} (m + n - 2j + k)! / ((m - 2j)! (n - j)! j! k!)`.
+/-- **The Möbius–Fermat function at $3^m 7^n q^k$.** Let $u_M$ be the Fermat unit function
+and let $\mu_M$ be an integer-valued arithmetic function with $\mu_M * u_M = \varepsilon$, where
+$*$ is Dirichlet convolution and $\varepsilon$ is its identity, with $\varepsilon(1) = 1$ and
+$\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the Dirichlet inverse of $u_M$, the
+Möbius–Fermat function.
+Let $t \ge 4$ be an integer with $t \ne 6$ and put $q = 2^t - 1$. Then for all integers
+$m, n, k \ge 0$, as rational numbers,
+$$\mu_M(3^m 7^n q^k) = (-1)^{m+n+k} \sum_{j=0}^{\min(\lfloor m/2 \rfloor, n)}
+\frac{(m + n - 2j + k)!}{(m - 2j)! \, (n - j)! \, j! \, k!}.$$
+
+The conditions on $t$ exclude $q = 1, 3, 7, 63$.
 
 Source: J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta
 Function*, INTEGERS 26 (2026), Article A106, Proposition 8. -/

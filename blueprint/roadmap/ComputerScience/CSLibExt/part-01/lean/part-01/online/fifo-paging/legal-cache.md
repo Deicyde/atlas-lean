@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.FifoPaging.LegalCache
 ---
 
-# Legal Cache
+# Legal cache
 
-A legal cache of capacity `k`: distinct pages, at most `k` of them.
+**Legal cache.** For a type $\alpha$ of pages and a capacity $k \in \mathbb{N}$, a legal cache
+is a list of pages of $\alpha$ with no duplicates and at most $k$ entries.
 
 ## Depends on
 

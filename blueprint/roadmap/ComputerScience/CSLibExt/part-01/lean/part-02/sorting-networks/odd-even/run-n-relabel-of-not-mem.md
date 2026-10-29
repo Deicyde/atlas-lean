@@ -15,7 +15,7 @@ $e(y)$, running the list relabeled by $e$ on $f$ gives the value $f(x)$ at wire 
 
 ## Depends on
 
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Relabeling the wires of a comparator list](relabel.md)
 
 ## Proof depends on

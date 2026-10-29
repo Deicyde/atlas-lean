@@ -214,14 +214,20 @@ end Internal
 
 open Internal
 
-/-- Removing the first edge leaves a weighted path from that edge's target. -/
+/-- **Tail of a weighted path.** Let $E$ be a list of weighted directed edges on the vertices
+$0, \dots, n-1$ and let $s$ and $t$ be vertices. If the list consisting of an edge $e$ followed by
+a list $R$ of edges is a weighted path in $E$ from $s$ to $t$, then $R$ is a weighted path in $E$
+from the target of $e$ to $t$. -/
 public theorem isWeightedPath_tail {n : Nat} {edges : List (Edge n)}
     {source target : Fin n} {first : Edge n} {rest : List (Edge n)}
     (path : IsWeightedPath edges source target (first :: rest)) :
     IsWeightedPath edges first.target target rest :=
   Internal.isWeightedPath_tail path
 
-/-- Append an input edge whose source is the endpoint of a weighted path. -/
+/-- **Appending an edge to a weighted path.** Let $E$ be a list of weighted directed edges on the
+vertices $0, \dots, n-1$ and let $s$, $m$ and $t$ be vertices. If $P$ is a weighted path in $E$
+from $s$ to $m$ and $e$ is an edge belonging to $E$ with source $m$ and target $t$, then the list
+$P$ followed by $e$ is a weighted path in $E$ from $s$ to $t$. -/
 public theorem isWeightedPath_append_edge {n : Nat} {edges : List (Edge n)}
     {source middle target : Fin n} {path : List (Edge n)} {edge : Edge n}
     (path_valid : IsWeightedPath edges source middle path)
@@ -230,12 +236,17 @@ public theorem isWeightedPath_append_edge {n : Nat} {edges : List (Edge n)}
     IsWeightedPath edges source target (path ++ [edge]) :=
   Internal.isWeightedPath_append_edge path_valid edge_mem edge_source edge_target
 
-/-- Appending one edge adds exactly its integer weight. -/
+/-- **Weight of a path with an edge appended.** For every list $P$ of weighted directed edges on
+the vertices $0, \dots, n-1$ and every weighted directed edge $e$ on these vertices, the weight of
+the list $P$ followed by $e$ is the weight of $P$ plus the weight of $e$. -/
 public theorem pathWeight_append_edge {n : Nat} (path : List (Edge n)) (edge : Edge n) :
     pathWeight (path ++ [edge]) = pathWeight path + edge.weight :=
   Internal.pathWeight_append_edge path edge
 
-/-- A concrete weighted path gives the canonical walk of the same edge length. -/
+/-- **Weighted paths give walks of the same length.** Let $E$ be a list of weighted directed
+edges on the vertices $0, \dots, n-1$ and let $s$ and $t$ be vertices. If a list $P$ of $k$ edges
+is a weighted path in $E$ from $s$ to $t$, then there is a walk of length $k$ from $s$ to $t$ in
+the directed graph obtained from $E$ by forgetting the weights. -/
 public theorem isWeightedPath_walk {n : Nat} {edges : List (Edge n)}
     {source target : Fin n} {path : List (Edge n)}
     (path_valid : IsWeightedPath edges source target path) :

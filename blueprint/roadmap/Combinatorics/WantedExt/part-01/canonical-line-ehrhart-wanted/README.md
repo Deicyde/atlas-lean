@@ -4,7 +4,7 @@ navigation: module
 
 # Canonical Line Ehrhart
 
-- [Canonical Line](canonical-line.md)
+- [Canonical line](canonical-line.md)
 - [The h-star coefficients of a polynomial](h-star-coeff.md)
 - [SNN polynomials](is-snn.md)
 - [Product of quadratic canonical-line factors](cl-quadratic-product.md)

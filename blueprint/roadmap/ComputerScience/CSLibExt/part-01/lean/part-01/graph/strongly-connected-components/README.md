@@ -4,7 +4,7 @@ navigation: module
 
 # Strongly Connected Components
 
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strong connectivity is reflexive](strongly-connected-refl.md)
 - [Strong connectivity is symmetric](symm.md)
 - [Strong connectivity is transitive](trans.md)

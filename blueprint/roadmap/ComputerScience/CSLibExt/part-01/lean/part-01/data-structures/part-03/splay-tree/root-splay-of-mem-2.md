@@ -18,7 +18,7 @@ occurs in $t$. Then the tree obtained by splaying $x$ in $t$ is nonempty and its
 
 - [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
 - [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
-- [Root key of a binary tree](root.md)
+- [Root key of a splay tree](root.md)
 - [Splay operation](splay.md)
 
 ## Proof depends on

@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
+- [Early-stopping DFA reachability search](../../../decidability/part-02/regular/reachable-within.md)
 - [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources

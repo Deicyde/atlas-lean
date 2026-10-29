@@ -5,13 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderBiSeq_sum_central_choose_mul
 ---
 
-# Second Order Bi Seq sum central choose mul
+# Two-sided binomial sums of products of Lucas sequences
 
-For `n > 0` and integers `m, r`, with the two-sided sequences `U = secondOrderBiSeq p 0 1`,
-`V = secondOrderBiSeq p 2 p` and `Δ = p² + 4`:
-`∑_{k=-n}^{n} binom(2n, n+k) U_{k+m} U_{k+r} = Δ^{n-1} V_{m+r}`,
-`∑_{k=-n}^{n} binom(2n, n+k) V_{k+m} V_{k+r} = Δ^n V_{m+r}`, and
-`∑_{k=-n}^{n} binom(2n, n+k) X_{k+m} X̄_{k+r} = Δ^n U_{m+r}` for `(X, X̄) = (U, V)` and `(V, U)`.
+**Two-sided binomial sums of products of Lucas sequences.** Let $p$ be an integer, let $U$
+and $V$ be the two-sided second-order sequences for $p$ with $U_0 = 0$, $U_1 = 1$, $V_0 = 2$ and
+$V_1 = p$, both satisfying $X_{j+1} = p X_j + X_{j-1}$ for every integer $j$, and put
+$\Delta = p^2 + 4$. Then for every natural number $n > 0$ and all integers $m$ and $r$,
+
+$$\sum_{k=-n}^{n} \binom{2n}{n+k} U_{k+m} U_{k+r} = \Delta^{n-1} V_{m+r},$$
+
+
+
+$$\sum_{k=-n}^{n} \binom{2n}{n+k} V_{k+m} V_{k+r} = \Delta^{n} V_{m+r},$$
+
+
+
+$$\sum_{k=-n}^{n} \binom{2n}{n+k} U_{k+m} V_{k+r} = \Delta^{n} U_{m+r},$$
+
+
+
+$$\sum_{k=-n}^{n} \binom{2n}{n+k} V_{k+m} U_{k+r} = \Delta^{n} U_{m+r}.$$
 
 ## Depends on
 

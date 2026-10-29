@@ -15,7 +15,7 @@ history $h$ and with the left vertices of $U$ already matched, matches at most $
 
 ## Depends on
 
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 - [The adversary for online bipartite matching](adversary.md)
 - [Number of arrivals an online matcher matches](matched.md)
 

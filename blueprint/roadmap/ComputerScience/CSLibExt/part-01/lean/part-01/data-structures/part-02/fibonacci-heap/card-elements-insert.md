@@ -16,7 +16,7 @@ counted with multiplicity, is the number of elements of $H$ plus one.
 ## Depends on
 
 - [Fibonacci heap](fibonacci-heap.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Insertion into a Fibonacci heap](insert.md)
 
 ## Proof depends on

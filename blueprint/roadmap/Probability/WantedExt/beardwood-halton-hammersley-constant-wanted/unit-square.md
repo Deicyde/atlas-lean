@@ -13,7 +13,7 @@ both of whose coordinates lie in the interval $[0,1]$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Sources
 

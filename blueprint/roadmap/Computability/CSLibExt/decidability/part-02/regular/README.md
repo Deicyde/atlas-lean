@@ -10,7 +10,7 @@ navigation: module
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
 - [The start state is reachable](start-mem-reachable.md)
 - [Reachable states are closed under transitions](step-mem-reachable.md)
-- [Reachable Within](reachable-within.md)
+- [Early-stopping DFA reachability search](reachable-within.md)
 - [The early-stopping search finds exactly the reachable states](reachable-within-eq-reachable.md)
 - [Accessible part of a DFA, by a bounded search](accessible-part-within.md)
 - [Accessible part of a DFA](accessible-part.md)
@@ -31,22 +31,22 @@ navigation: module
 - [One round of the list reachability search](reach-round.md)
 - [Bounded reachability search on lists of states](reach-n.md)
 - [Correctness of the bounded reachability search](mem-reach-n-iff.md)
-- [Reachable](reachable-2.md)
+- [Reachable states of an encoded DFA](reachable-2.md)
 
 ## Emptiness
 
-- [Is Empty B](is-empty-b-2.md)
+- [Emptiness test for encoded DFAs](is-empty-b-2.md)
 
 ## Equivalence
 
 - [Coded pairs of states of two encoded DFAs](pair-states.md)
 - [Successors of a pair of states](pair-next.md)
 - [Reachable pairs of states of two encoded DFAs](pair-reachable.md)
-- [Equiv B](equiv-b-2.md)
+- [Equivalence test for encoded DFAs](equiv-b-2.md)
 
 ## Universality
 
-- [Is Univ B](is-univ-b-2.md)
+- [Universality test for encoded DFAs](is-univ-b-2.md)
 
 ## Infiniteness
 

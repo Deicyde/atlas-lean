@@ -104,7 +104,9 @@ public theorem_wanted arithmeticDerivative_bounds (n : ℕ) (hn : 2 ≤ n) :
       (lower = arithmeticDerivative n ↔ IsPrimePow n) ∧
       ((arithmeticDerivative n : ℝ) = upper ↔ IsPrimePow n)
 
-/-- Every positive solution of `D(C(n)) = C(D(n))` is odd.
+/-- **Positive solutions of the Collatz arithmetic differential equation are odd.** Let $D$ be
+the arithmetic derivative and $C$ the accelerated Collatz map. Every positive integer $n$ with
+$D(C(n)) = C(D(n))$ is odd.
 
 Source: Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations
 Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8,

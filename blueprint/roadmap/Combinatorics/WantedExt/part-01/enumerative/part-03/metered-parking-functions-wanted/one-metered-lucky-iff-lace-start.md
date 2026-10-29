@@ -15,7 +15,7 @@ laces of the lace decomposition $\mathrm{lace}(\alpha)$.
 
 ## Depends on
 
-- [Lace Decomposition](lace-decomposition.md)
+- [Lace decomposition](lace-decomposition.md)
 - [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources

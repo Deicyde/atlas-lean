@@ -27,7 +27,7 @@ $x$ and $y$.
 
 - [Alignment](../sequence-alignment/alignment.md)
 - [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Needleman–Wunsch is optimal](../sequence-alignment/alignment-score-le-nw-score.md)
 - [Score of an alignment column](../sequence-alignment/column-score.md)
 - [Needleman–Wunsch is attained](../sequence-alignment/exists-alignment-score-eq-nw-score.md)

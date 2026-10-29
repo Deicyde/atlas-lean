@@ -27,7 +27,7 @@ whose contents are empty on each $k_i$ and equal to $S$ on every other stack.
 
 - [Draining a stack with the transfer loop](xfer-drain.md)
 - [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

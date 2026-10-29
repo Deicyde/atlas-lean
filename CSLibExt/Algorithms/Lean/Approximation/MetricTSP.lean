@@ -306,7 +306,13 @@ followed by the vertices of $F$ in preorder is a permutation of $V$: the vertice
 those of $V$, each exactly once. -/
 def IsSpanning (V : List α) (r : α) (F : Forest α) : Prop := V.Nodup ∧ (r :: F.preorder).Perm V
 
-/-- `T = (r, F)` is a minimum spanning tree of `V` for the costs `d`. -/
+/-- **Minimum spanning tree of a vertex list.** Let $d$ be a cost function on the vertices with
+values in a linearly ordered additive commutative monoid. The tree with root $r$ and subtree
+forest $F$ is a minimum spanning tree of a list $V$ of vertices for $d$ when it is a spanning tree
+of $V$ (the vertices of $V$ are distinct and the list of $r$ followed by the vertices of $F$ in
+preorder is a permutation of $V$) and, for every vertex $r'$ and forest $F'$ such that the tree
+with root $r'$ and subtree forest $F'$ is a spanning tree of $V$, the weight of $F$ below $r$ is
+at most the weight of $F'$ below $r'$. -/
 def IsMinSpanning (d : α → α → R) (V : List α) (r : α) (F : Forest α) : Prop :=
   IsSpanning V r F ∧ ∀ r' F', IsSpanning V r' F' → F.weight d r ≤ F'.weight d r'
 

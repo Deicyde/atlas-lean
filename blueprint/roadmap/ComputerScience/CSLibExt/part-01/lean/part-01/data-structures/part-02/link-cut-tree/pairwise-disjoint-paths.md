@@ -7,9 +7,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.pairwise_disjoint_paths
 ---
 
-# Pairwise disjoint paths
+# Preferred paths are pairwise vertex-disjoint
 
-Distinct preferred paths of a valid state are vertex-disjoint.
+**Preferred paths are pairwise vertex-disjoint.** In a valid link-cut tree state, any two
+preferred paths at different positions of the preferred-path decomposition have no vertex in
+common.
 
 ## Depends on
 

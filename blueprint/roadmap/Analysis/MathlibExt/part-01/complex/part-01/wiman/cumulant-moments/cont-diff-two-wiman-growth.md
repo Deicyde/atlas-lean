@@ -16,7 +16,7 @@ twice continuously differentiable on $\mathbb{R}$.
 
 ## Depends on
 
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 
 ## Proof depends on
 

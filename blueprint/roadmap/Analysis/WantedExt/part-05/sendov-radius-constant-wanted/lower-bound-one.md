@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sendov Radius](sendov-radius.md)
+- [The Sendov radius](sendov-radius.md)
 
 ## Sources
 

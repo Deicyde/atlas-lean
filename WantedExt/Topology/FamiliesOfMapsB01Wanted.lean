@@ -102,8 +102,10 @@ on the parameter outside $S$: $f(p, x) = f(p', x)$ for all $p, p' \in P$ and all
 def Supported {P : Type*} (f : P × X → T) (S : Set X) : Prop :=
   ∀ p p' : P, ∀ x ∉ S, f (p, x) = f (p', x)
 
-/-- `AdaptedTo U k f`: `f` is supported on the union of at most `k` of the
-sets `U α`. -/
+/-- **Adapted families of maps.** Let $X$ and $T$ be topological spaces, $P$ a set,
+$U = (U_\alpha)_{\alpha \in \iota}$ a family of subsets of $X$ and $k$ a natural number. A
+family of maps $f : P \times X \to T$ is adapted to $U$ with bound $k$ when there is a finite
+set $A$ of at most $k$ indices such that $f$ is supported on $\bigcup_{\alpha \in A} U_\alpha$. -/
 def AdaptedTo {P : Type*} (U : ι → Set X) (k : ℕ) (f : P × X → T) : Prop :=
   ∃ A : Finset ι, A.card ≤ k ∧ Supported f (⋃ α ∈ A, U α)
 

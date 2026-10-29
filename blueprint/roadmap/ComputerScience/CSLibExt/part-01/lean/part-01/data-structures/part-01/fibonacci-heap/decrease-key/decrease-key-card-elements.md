@@ -21,14 +21,14 @@ counted with multiplicity, as the multiset represented by $H$.
 - [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
 - [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
 - [Decrease-key in a Fibonacci heap](decrease-key.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-3.md)
+- [Multiset of a Fibonacci heap](../../../part-02/fibonacci-heap/elements-3.md)
 - [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 - [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 
 ## Proof depends on
 
 - [Cutting a subtree splits the elements of a Fibonacci forest](cut-tree-at-elements.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-2.md)
+- [Multiset of a Fibonacci forest](../../../part-02/fibonacci-heap/elements-2.md)
 - [Decrease-key replaces one key](decrease-key-elements.md)
 - [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
 - [The root of a Fibonacci tree is one of its elements](../../../part-02/fibonacci-heap/root-mem-elements.md)

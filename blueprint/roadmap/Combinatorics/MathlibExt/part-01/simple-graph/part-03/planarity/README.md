@@ -5,5 +5,5 @@ navigation: module
 
 # Planarity
 
-- [Segment](segment.md)
+- [Closed segment in the plane](segment.md)
 - [Straight-line planar graph](is-planar.md)

@@ -33,7 +33,7 @@ vertex with $Q$.
 - [Alternating breadth-first layers](layers.md)
 - [Marking the left vertices of a path used](mark-l.md)
 - [Marking the right vertices of a path used](mark-r.md)
-- [Not dead of chain](not-dead-of-chain.md)
+- [Shortest chains avoiding earlier paths contain no dead vertex](not-dead-of-chain.md)
 - [Depth-first search of a Hopcroft–Karp phase](search-path.md)
 - [Dead vertices have no escape](search-path-dead.md)
 - [The dead set of a search only grows](search-path-mono.md)

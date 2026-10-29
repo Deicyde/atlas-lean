@@ -22,7 +22,7 @@ recursively.
 ## Proof depends on
 
 - [Arithmetic gate](arithmetic-gate.md)
-- [Evaluate](evaluate-2.md)
+- [Gate evaluation](evaluate-2.md)
 
 ## Sources
 

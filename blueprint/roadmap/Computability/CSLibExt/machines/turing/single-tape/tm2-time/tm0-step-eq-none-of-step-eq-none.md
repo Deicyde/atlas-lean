@@ -13,7 +13,7 @@ related only to configurations of the single-tape emulation that do not step.
 
 ## Depends on
 
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_zeros_one_zeros_iff
 ---
 
-# Ulam words with a single one
+# Parity criterion for Ulam words with a single one
 
-**Ulam words with a single one.** For natural numbers $a$ and $b$, the binary word
-$0^a 1 0^b$ ($a$ zeros, then a one, then $b$ zeros) is an Ulam word if and only if the binomial
-coefficient $\binom{a + b}{a}$ is odd.
+**Parity criterion for Ulam words with a single one.** For natural numbers $a$ and $b$, the
+binary word $0^a 1 0^b$ ($a$ zeros, then a one, then $b$ zeros) is an Ulam word if and only if
+the binomial coefficient $\binom{a + b}{a}$ is odd.
 
 ## Depends on
 

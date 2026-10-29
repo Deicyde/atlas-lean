@@ -17,7 +17,7 @@ it is $0$.
 ## Depends on
 
 - [Impartial game](../sprague-grundy/impartial-game.md)
-- [Smith Remoteness](smith-remoteness.md)
+- [Smith's remoteness function](smith-remoteness.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ number of ones of $M$ after $t$ steps plus $1$.
 - [Busy Beaver machine configuration](config.md)
 - [Head movement](move.md)
 - [Head displacement](shift.md)
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [After $t$ steps, every one lies within distance $t$ of the origin](mem-window-of-tape-eq-one.md)
 - [Configuration after $t$ steps](run.md)
 - [One step of a Busy Beaver machine](step.md)

@@ -65,9 +65,10 @@ def IsResidueSeparableAt : Prop :=
   letI := Localization.AtPrime.algebraOfLiesOver (q.under R) q;
     Algebra.IsSeparable (q.under R).ResidueField q.ResidueField
 
-/-- A prime `q` of `S` is *tamely ramified* over `R` if the residue-field
-extension is separable and the residue characteristic does not divide the
-ramification index. -/
+/-- **Tamely ramified prime.** Let $R$ and $S$ be commutative rings with $S$ an $R$-algebra, and
+let $q$ be a prime ideal of $S$. Then $q$ is *tamely ramified* over $R$ when $q$ is residue
+separable over $R$ and the characteristic of the residue field $\kappa(q)$ does not divide the
+ramification index of $q$ over $R$. -/
 def IsTamelyRamifiedAt : Prop :=
   IsResidueSeparableAt R q ∧ ¬ ringChar q.ResidueField ∣ q.ramificationIdx R
 

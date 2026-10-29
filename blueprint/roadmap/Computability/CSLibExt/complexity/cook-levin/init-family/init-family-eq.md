@@ -36,7 +36,7 @@ codes; the equality holds because order and repetitions do not change these clau
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [Dense clauses of positive literals depend only on their positions](dense-clause-congr.md)
-- [I Cert](i-cert.md)
+- [Certificate clauses of the initial row (I4)](i-cert.md)
 - [Start-code clause of the initial row (I1)](i-code.md)
 - [Input clauses of the initial row (I3)](i-in.md)
 - [Row-0 clauses for the other stacks](i-other.md)

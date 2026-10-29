@@ -150,8 +150,11 @@ private theorem curveLength_lintegral_indicator_derivWithin_eq_ofReal_integral_n
   have htIcc : t ∈ Icc a b := ⟨ht.1.le, ht.2⟩
   simp [h, htIcc]
 
-/-- On an interval, integrating the norm of `derivWithin` gives the same result as integrating
-the norm of `deriv`. -/
+/-- **Integrating the norm of a derivative within a closed interval.** Let $E$ be a real normed
+space, let $f : \mathbb{R} \to E$ be any function and let $a \le b$ be real numbers. Then
+$\int_a^b \lVert f'(t) \rVert \, dt = \int_a^b \lVert f'_{[a,b]}(t) \rVert \, dt$, where $f'(t)$
+is the derivative of $f$ at $t$ and $f'_{[a,b]}(t)$ is its derivative at $t$ within $[a, b]$, each
+taken to be $0$ where it does not exist. -/
 theorem _root_.intervalIntegral.integral_norm_deriv_eq_integral_norm_derivWithin_Icc
     {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     (f : ℝ → E) {a b : ℝ} (hab : a ≤ b) :
@@ -163,8 +166,11 @@ theorem _root_.intervalIntegral.integral_norm_deriv_eq_integral_norm_derivWithin
   have ht' : t ∈ Ioo a b := ⟨ht.1, lt_of_le_of_ne ht.2 htb⟩
   rw [derivWithin_of_mem_nhds (Icc_mem_nhds ht'.1 ht'.2)]
 
-/-- The variation of a `C¹` curve on `[a, b]` is the integral of the norm of its derivative
-within `[a, b]`. -/
+/-- **Length of a $C^1$ curve via its derivative within the interval.** Let $E$ be a real Banach
+space, let $a \le b$ be real numbers and let $\gamma : \mathbb{R} \to E$ be continuously
+differentiable on $[a, b]$. Then the total variation of $\gamma$ on $[a, b]$, a priori a value in
+$[0, \infty]$, equals the real number $\int_a^b \lVert \gamma'_{[a,b]}(t) \rVert \, dt$, where
+$\gamma'_{[a,b]}(t)$ is the derivative of $\gamma$ at $t$ within $[a, b]$. -/
 theorem _root_.ContDiffOn.eVariationOn_Icc_eq_ofReal_integral_norm_derivWithin
     {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
     {γ : ℝ → E} {a b : ℝ} (hab : a ≤ b)

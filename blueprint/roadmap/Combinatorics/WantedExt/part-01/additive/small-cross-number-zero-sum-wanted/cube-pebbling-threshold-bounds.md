@@ -20,7 +20,7 @@ $t \in \Omega(n^{1-\varepsilon}) \cap O\big(n / (\lg \lg n)^{1-\varepsilon}\big)
 - [Threshold functions](is-threshold-function.md)
 - [Grid edge costs](grid-cost.md)
 - [Grid graph](grid-graph.md)
-- [Solvable Configuration Prob](solvable-configuration-prob.md)
+- [Probability that a random pebbling configuration is solvable](solvable-configuration-prob.md)
 
 ## Sources
 

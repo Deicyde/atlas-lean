@@ -91,9 +91,9 @@ inductive Value : Term Base → Prop
   | unit : Value .unit
   | loc (l : Nat) : Value (.loc l)
 
-/-- **Lifting a renaming under a binder.** Given a renaming $\rho : \mathbb{N} \to \mathbb{N}$ of
-de Bruijn indices, its lift is the renaming that sends $0$ to $0$ and each $x + 1$ to
-$\rho(x) + 1$. -/
+/-- **Lifting a renaming under a binder in the lambda calculus with references.** Given a
+renaming $\rho : \mathbb{N} \to \mathbb{N}$ of de Bruijn indices, its lift is the renaming that
+sends $0$ to $0$ and each $x + 1$ to $\rho(x) + 1$. -/
 def liftRen (ρ : Nat → Nat) : Nat → Nat
   | 0 => 0
   | x + 1 => ρ x + 1
@@ -138,8 +138,9 @@ def subst : (Nat → Term Base) → Term Base → Term Base
   | σ, .deref t => .deref (subst σ t)
   | σ, .assign t₁ t₂ => .assign (subst σ t₁) (subst σ t₂)
 
-/-- **Single-variable substitution.** For a term $s$, the single-variable substitution for $s$
-sends the de Bruijn index $0$ to $s$ and each index $x + 1$ to the variable $x$. -/
+/-- **Single-variable substitution at index zero.** For a term $s$, the single-variable
+substitution for $s$ sends the de Bruijn index $0$ to $s$ and each index $x + 1$ to the
+variable $x$. -/
 def singleSub (s : Term Base) : Nat → Term Base
   | 0 => s
   | x + 1 => .var x

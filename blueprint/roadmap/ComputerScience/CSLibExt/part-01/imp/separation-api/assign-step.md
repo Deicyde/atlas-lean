@@ -31,7 +31,7 @@ An assignment leaves the heap untouched, so no framing is needed.
 
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Entailment of heap assertions](../separation-logic/entails.md)
 - [Heap configurations](../heap-step/hconfig.md)
 - [Small-step semantics of heap commands](../heap-step/hstep.md)

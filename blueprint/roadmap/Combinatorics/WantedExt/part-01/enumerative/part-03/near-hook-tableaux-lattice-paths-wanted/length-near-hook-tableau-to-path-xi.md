@@ -13,7 +13,7 @@ semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\xi(T)$ has le
 
 ## Depends on
 
-- [Near Hook Tableau To Path Xi](near-hook-tableau-to-path-xi.md)
+- [The map $\xi$ from near-hook tableaux to lattice paths](near-hook-tableau-to-path-xi.md)
 - [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources

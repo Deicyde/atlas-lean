@@ -79,7 +79,10 @@ of $c$ the polarity that $c$ prescribes for it. -/
 def clauseSat {n : ℕ} (a : Fin n → Bool) (c : Clause n) : Prop :=
   ∃ i ∈ c.1.1, a i = c.1.2 i
 
-/-- A formula is satisfiable when some assignment satisfies every clause. -/
+/-- **Satisfiable 3-SAT formulas.** A formula $F$ with $m$ clauses on $n$ variables is
+satisfiable when there is an assignment $a$ of Boolean values to the $n$ variables that
+satisfies every clause of $F$, that is, $a$ satisfies the 3-clause $F(j)$ for every
+$j \in \{0, \dots, m - 1\}$. -/
 def Satisfiable {n m : ℕ} (F : Formula n m) : Prop :=
   ∃ a : Fin n → Bool, ∀ j : Fin m, clauseSat a (F j)
 

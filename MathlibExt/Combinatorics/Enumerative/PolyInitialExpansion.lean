@@ -148,21 +148,18 @@ private theorem polyInitialExpansion_zero_full_range (n t : ℕ) (ht : t ≤ n)
         rw [Nat.stirlingSecond_eq_zero_of_lt (by omega : t < m)]
         simp
 
-/-- Proposition 5 expansion of the associated polynomial at index zero by
-weighted Stirling numbers of the second kind: the binomial-weighted sum of
-`a 0 (n - k)` against `x ^ k` equals the signed factorial-weighted sum of the
-canonical generalized Stirling numbers against `a m 0`, for arrays satisfying the
-stated recurrence in the second argument.
+/-- **Expansion by generalized Stirling numbers of the second kind.** For every natural number
+$n$, every real number $x$ and all real numbers $a(m, t)$, indexed by natural numbers $m$ and $t$,
+such that $a(m, t + 1) = m\,a(m, t) - (m + 1)\,a(m + 1, t)$ for all $m$ and $t$, writing
+${n \brace m}_x$ for the generalized Stirling numbers of the second kind,
+$$\sum_{k=0}^{n} \binom{n}{k} x^k a(0, n - k) = \sum_{m=0}^{n} (-1)^m m! {n \brace m}_x a(m, 0).$$
+
+Proves `Wanted` entry `poly_initial_expansion`.
 
 Source: Ayhan Dil, Veli Kurt, and Mehmet Cenkci, "Algorithms for Bernoulli
 and Related Polynomials," Journal of Integer Sequences 10 (2007),
 Article 07.5.4, Proposition 5 (label prop5), lines 661–671,
 https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex
-
-Proves `Wanted` entry `poly_initial_expansion`.
-
-Proof: Following Dil, Kurt, and Cenkci, Proposition 5, the proof is induction on
-`t` for Chen's expansion `chen_stirlingSecond_expansion`, followed by a binomial convolution.
 -/
 public theorem poly_initial_expansion : ∀ (n : ℕ) (x : ℝ) (a : ℕ → ℕ → ℝ)
     (hrec : ∀ (m t : ℕ),

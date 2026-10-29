@@ -15,7 +15,7 @@ syntactic classes of words of $L$.
 
 ## Depends on
 
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Accepting set of the syntactic monoid](syntactic-accept.md)
 - [Syntactic congruence](syntactic-con.md)
 - [Syntactic morphism](syntactic-morphism.md)

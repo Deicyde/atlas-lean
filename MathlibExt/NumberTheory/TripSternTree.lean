@@ -88,7 +88,10 @@ theorem TripSternTree.nodeAtPathAppendRight {α : Type _}
   rw [List.foldl_append]
   simp
 
-/-- Depth `n` consists of all nodes selected by binary paths of length `n`.
+/-- **Nodes at a given depth of a TRIP-Stern tree.** Let $T$ be a TRIP-Stern tree and $n$ a
+natural number. The set of nodes of $T$ at depth $n$ is the set of all values $y$ such that some
+binary path of length $n$ selects $y$ in $T$.
+
 Source: Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition
 TRIPSternDef, lines 471-481. -/
 def TripSternTree.nodesAtDepth {α : Type _} (T : TripSternTree α)

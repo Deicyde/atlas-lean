@@ -20,9 +20,9 @@ from a CNF formula $\varphi$, then $\varphi$ is not satisfiable.
 ## Proof depends on
 
 - [Soundness of resolution](satisfies.md)
-- [Satisfies](../semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources

@@ -26,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists local Graph of surjective fderiv](../local-graph/exists-local-graph-of-surjective-fderiv.md)
+- [Local graph form of a level set near a regular point](../local-graph/exists-local-graph-of-surjective-fderiv.md)
 
 ## Sources
 

@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.hofL_iterate_le_iff_hofstadterF_iterate_le
 ---
 
-# Hof L iterate le iff hofstadter F iterate le
+# Order of iterates of $L_k$ against order of iterates of $F_k$
 
-For `j, j' ≥ 0` and `k, k' ≥ 1`, `L_k^j ≤ L_{k'}^{j'}` iff `F_{k'}^{j'} ≤ F_k^j`; and for
-every `n`: (a) `L_k^j(n) ≤ L_{k'}^{j'}(n)` iff `F_{k'}^{j'}(m) ≤ F_k^j(m)` with `m = L_k^j(n)`;
-(b) `L_k^j(n) < L_{k'}^{j'}(n)` iff `F_{k'}^{j'}(m) < F_k^j(m)` with `m = L_{k'}^{j'}(n)`;
-(c) `L_k^j(m) ≤ L_{k'}^{j'}(m)` for `m = F_k^j(n)` implies `F_{k'}^{j'}(n) ≤ F_k^j(n)`;
-(d) `F_k^j(n) < F_{k'}^{j'}(n)` implies `L_{k'}^{j'}(m) < L_k^j(m)` for `m = F_k^j(n)`.
-In (d) the paper prints `m = F_{k'}^{j'}(n)`; its proof derives (d) as the contrapositive of
-(c), which gives `m = F_k^j(n)`. The printed form fails for `k = 1, j = 1, k' = 4, j' = 2,
-n = 8`: `F_1(8) = 4 < F_4^2(8) = 5`, but `L_4^2(5) = L_1(5) = 10`.
+**Order of iterates of $L_k$ against order of iterates of $F_k$.** Let $F_k$ be the
+generalized Hofstadter function, let $x_k[0]\,x_k[1] \cdots$ be the fixed point, beginning with
+$k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other letter $i$ to
+$i + 1$, let $L_k(n)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$, and write
+$f^j$ for the $j$-fold iterate of a function $f$. Let $k, k' \ge 1$ and $j, j' \ge 0$. Then
+$L_k^j(n) \le L_{k'}^{j'}(n)$ for every $n$ if and only if $F_{k'}^{j'}(n) \le F_k^j(n)$ for
+every $n$. Moreover, for every natural number $n$:
+(a) $L_k^j(n) \le L_{k'}^{j'}(n)$ if and only if $F_{k'}^{j'}(m) \le F_k^j(m)$ for
+$m = L_k^j(n)$;
+(b) $L_k^j(n) < L_{k'}^{j'}(n)$ if and only if $F_{k'}^{j'}(m) < F_k^j(m)$ for
+$m = L_{k'}^{j'}(n)$;
+(c) if $L_k^j(m) \le L_{k'}^{j'}(m)$ for $m = F_k^j(n)$, then $F_{k'}^{j'}(n) \le F_k^j(n)$;
+(d) if $F_k^j(n) < F_{k'}^{j'}(n)$, then $L_{k'}^{j'}(m) < L_k^j(m)$ for $m = F_k^j(n)$.
+
+In (d) the paper prints $m = F_{k'}^{j'}(n)$; its proof derives (d) as the contrapositive of
+(c), which gives $m = F_k^j(n)$. The printed form fails for $k = 1$, $j = 1$, $k' = 4$,
+$j' = 2$ and $n = 8$: $F_1(8) = 4 < F_4^2(8) = 5$, but $L_4^2(5) = L_1(5) = 10$.
 
 ## Depends on
 

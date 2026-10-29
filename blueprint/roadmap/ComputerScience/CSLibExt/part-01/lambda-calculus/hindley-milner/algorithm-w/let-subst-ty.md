@@ -37,7 +37,7 @@ $\mathtt{let}\ x = e_1\ \mathtt{in}\ e_2$ has type $\tau_2$ in $s\Gamma$.
 - [Context lookup](../typing/lookup.md)
 - [Substitutions agreeing on a context give the same lookups](../typing/lookup-subst-congr.md)
 - [Typing is preserved in more general contexts](../typing/mono.md)
-- [Substitution lemma](../typing/subst-2.md)
+- [Hindley–Milner typing is stable under type substitution](../typing/subst-2.md)
 - [Strict upper bound of a finite set of naturals](../typing/above.md)
 - [Renaming step of the substitution lemma](../typing/gen-subst-more-general.md)
 - [Terms for unification](../../../../part-02/unification/basic/term.md)

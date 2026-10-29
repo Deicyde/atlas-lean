@@ -16,12 +16,12 @@ represented by $H$.
 ## Depends on
 
 - [Fibonacci heap](fibonacci-heap.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Find-min for Fibonacci heaps](find-min.md)
 
 ## Proof depends on
 
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Minimum root of a forest](min-root.md)
 - [The minimum root is a least root](min-root-spec.md)
 - [Fibonacci tree](fibonacci-tree.md)

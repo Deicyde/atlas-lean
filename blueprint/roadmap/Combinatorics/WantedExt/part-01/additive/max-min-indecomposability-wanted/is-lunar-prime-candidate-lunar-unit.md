@@ -15,7 +15,7 @@ in base $b$: its constant term is nonzero and one of its terms equals $b - 1$.
 ## Depends on
 
 - [Lunar prime candidates](is-lunar-prime-candidate.md)
-- [Lunar Unit](lunar-unit.md)
+- [Lunar unit](lunar-unit.md)
 
 ## Sources
 

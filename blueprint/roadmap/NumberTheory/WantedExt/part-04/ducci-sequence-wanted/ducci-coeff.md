@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DucciWanted.ducciCoeff
 ---
 
-# Ducci Coeff
+# Ducci coefficients
 
-The coefficient `a_{r,s}` of `x_s` (`1 ≤ s ≤ n`) in
-the first entry of the `r`-th iterate of the Ducci map
-on `ℤ_m^n`, as an integer count:
-`∑_{j ≡ s - 1 (mod n)} C(r, j)`.
+**Ducci coefficients.** For natural numbers $n$, $r$ and $s$, the Ducci coefficient is
+$a_{r,s} = \sum_{0 \le j \le r,\ j \equiv s - 1 \ (\mathrm{mod}\ n)} \binom{r}{j}$, where $s - 1$
+is read as $0$ when $s = 0$ and congruence modulo $0$ is equality.
+
+For $1 \le s \le n$, $a_{r,s}$ is the coefficient of $x_s$ in the first entry of $D^r(x)$, where
+the Ducci map $D$ on $\mathbb{Z}_m^n$ sends $(x_1, \dots, x_n)$ to
+$(x_1 + x_2, x_2 + x_3, \dots, x_n + x_1)$.
 
 ## Depends on
 

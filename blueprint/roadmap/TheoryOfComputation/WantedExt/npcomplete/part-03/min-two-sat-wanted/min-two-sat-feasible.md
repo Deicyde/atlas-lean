@@ -20,7 +20,7 @@ every variable $x \ge n$ set to false, satisfies $C_j$ for at most $K$ indices $
 
 - [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

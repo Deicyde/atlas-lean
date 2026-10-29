@@ -21,7 +21,7 @@ value $u(0) = 1/\pi$ at the origin of the torus.
 
 - [Integer frequencies](../basic/frequency.md)
 - [Axis frequency](axis-frequency.md)
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 - [Rescaling the torus to unit period](../basic/unit-rescaling.md)
 - [The unit rescaling fixes the origin](unit-rescaling-zero.md)
 

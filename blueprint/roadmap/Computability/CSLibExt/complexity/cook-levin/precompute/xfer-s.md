@@ -28,7 +28,7 @@ keeps its value.
 - [Counters after a multi-target transfer](xf.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 

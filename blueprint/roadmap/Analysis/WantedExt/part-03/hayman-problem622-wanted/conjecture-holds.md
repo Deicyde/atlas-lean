@@ -27,7 +27,7 @@ such a radius $r$. The statement above does not assert the value of $r$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Conjecture: a sharp radius of convexity for starlike functions of order 1/2](conjecture.md)
 
 ## Sources
 

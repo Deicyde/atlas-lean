@@ -25,7 +25,7 @@ path, the preferred paths partition the vertex set.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [The preferred paths of a tree rearrange its vertex list](perm-tree-paths-flat-map.md)
 - [Preferred paths of a tree](tree-paths.md)

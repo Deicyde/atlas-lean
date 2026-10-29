@@ -15,7 +15,7 @@ a vertex $x$, then every vertex of $p$ is a vertex of $t$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Root-to-vertex path](root-path.md)
 
 ## Proof depends on

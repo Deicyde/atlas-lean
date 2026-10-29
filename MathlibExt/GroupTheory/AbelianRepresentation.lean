@@ -38,8 +38,10 @@ formalization); J.-P. Serre, Linear Representations of Finite Groups, GTM 42,
 theory notes, https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf.
 -/
 
-/-- A categorically simple finite-dimensional representation has an irreducible underlying
-representation. -/
+/-- **Simple finite-dimensional representations are irreducible.** Let $k$ be a field and let $G$
+be a monoid. If a finite-dimensional representation $V$ of $G$ over $k$ is simple as an object of
+the category of finite-dimensional representations of $G$ over $k$, then $V$ is irreducible as a
+representation: $V \ne 0$, and the only subrepresentations of $V$ are $0$ and $V$. -/
 theorem _root_.FDRep.isIrreducible_of_simple {k G : Type*} [Field k] [Monoid G]
     (V : FDRep k G) [Simple V] : Representation.IsIrreducible V.ρ := by
   let _ : Nontrivial V := by
@@ -97,16 +99,22 @@ theorem _root_.FDRep.isIrreducible_of_simple {k G : Type*} [Field k] [Monoid G]
       rw [← hy]
       exact y.property
 
-/-- A simple representation of a multiplicatively commutative monoid over an algebraically closed
-field is one-dimensional. -/
+/-- **Simple finite-dimensional representations of commutative monoids are one-dimensional.**
+Let $k$ be an algebraically closed field and let $G$ be a commutative monoid. Every
+finite-dimensional representation $V$ of $G$ over $k$ that is simple as an object of the category
+of finite-dimensional representations of $G$ over $k$ has dimension $1$ over $k$. -/
 theorem _root_.FDRep.finrank_eq_one_of_isMulCommutative
     {k G : Type*} [Field k] [IsAlgClosed k] [Monoid G] [IsMulCommutative G]
     (V : FDRep k G) [Simple V] : Module.finrank k V = 1 := by
   let _ : Representation.IsIrreducible V.ρ := V.isIrreducible_of_simple
   exact Representation.IsIrreducible.finrank_eq_one_of_isMulCommutative V.ρ
 
-/-- On a simple representation of a multiplicatively commutative monoid, every group action is
-scalar multiplication by its character value. -/
+/-- **Simple representations of commutative monoids act by scalars.** Let $k$ be an
+algebraically closed field, $G$ a monoid with commutative multiplication, and $V$ a simple
+finite-dimensional representation of $G$ over $k$ (a simple object of the category of
+finite-dimensional representations), with action $\rho$ and character
+$\chi_V(g) = \operatorname{tr} \rho(g)$. Then for every $g \in G$ the map $\rho(g)$ is scalar
+multiplication by $\chi_V(g)$, that is, $\rho(g) = \chi_V(g) \cdot \mathrm{id}_V$. -/
 theorem _root_.FDRep.rho_eq_character_smul_of_simple
     {k G : Type*} [Field k] [IsAlgClosed k] [Monoid G] [IsMulCommutative G]
     (V : FDRep k G) [Simple V] (g : G) :
@@ -120,8 +128,12 @@ theorem _root_.FDRep.rho_eq_character_smul_of_simple
   rw [hcharacter]
   exact hc
 
-/-- The character of a simple representation of a multiplicatively commutative monoid is
-multiplicative. -/
+/-- **Characters of simple representations of commutative monoids are multiplicative.** Let $k$
+be an algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a
+finite-dimensional representation of $G$ over $k$ that is simple as an object of the category of
+finite-dimensional representations of $G$ over $k$. Let $\chi_V : G \to k$ be the character of
+$V$, where $\chi_V(g)$ is the trace of the action of $g$ on $V$. Then
+$\chi_V(gh) = \chi_V(g)\,\chi_V(h)$ for all $g, h \in G$. -/
 theorem _root_.FDRep.character_mul_of_simple
     {k G : Type*} [Field k] [IsAlgClosed k] [Monoid G] [IsMulCommutative G]
     (V : FDRep k G) [Simple V] (g h : G) :
@@ -137,8 +149,12 @@ theorem _root_.FDRep.character_mul_of_simple
   have htrace := congrArg (LinearMap.trace k V) hmaps
   simpa [hdim] using htrace
 
-/-- The character of a simple representation of a multiplicatively commutative monoid, bundled as
-a monoid homomorphism. -/
+/-- **The character of a simple representation as a monoid homomorphism.** Let $k$ be an
+algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a finite-dimensional
+representation of $G$ over $k$ that is simple as an object of the category of finite-dimensional
+representations of $G$ over $k$. The character $\chi_V : G \to k$ of $V$, where $\chi_V(g)$ is the
+trace of the action of $g$ on $V$, satisfies $\chi_V(1) = 1$ and $\chi_V(gh) = \chi_V(g)\,\chi_V(h)$
+for all $g, h \in G$; this is $\chi_V$ regarded as a monoid homomorphism from $G$ to $k$. -/
 noncomputable def _root_.FDRep.characterMonoidHom
     {k G : Type*} [Field k] [IsAlgClosed k] [Monoid G] [IsMulCommutative G]
     (V : FDRep k G) [Simple V] : G →* k where
@@ -146,14 +162,21 @@ noncomputable def _root_.FDRep.characterMonoidHom
   map_one' := by simp [V.finrank_eq_one_of_isMulCommutative]
   map_mul' := V.character_mul_of_simple
 
-/-- The monoid homomorphism underlying `FDRep.characterMonoidHom` is the character. -/
+/-- **The character homomorphism has the character as its underlying function.** Let $k$ be an
+algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a finite-dimensional
+representation of $G$ over $k$ that is simple as an object of the category of finite-dimensional
+representations of $G$ over $k$. The character of $V$, regarded as a monoid homomorphism from $G$
+to $k$, has the character $\chi_V : G \to k$ of $V$ as its underlying function, where $\chi_V(g)$
+is the trace of the action of $g$ on $V$. -/
 @[simp]
 theorem _root_.FDRep.coe_characterMonoidHom
     {k G : Type*} [Field k] [IsAlgClosed k] [Monoid G] [IsMulCommutative G]
     (V : FDRep k G) [Simple V] : ⇑V.characterMonoidHom = V.character := rfl
 
-/-- The one-dimensional finite-dimensional representation associated to a monoid homomorphism into
-a field. -/
+/-- **The one-dimensional representation of a homomorphism.** Let $k$ be a field, let $G$ be a
+monoid, and let $\varphi : G \to k$ be a monoid homomorphism. This is the finite-dimensional
+representation $k_\varphi$ of $G$ on the one-dimensional space $k$ in which each $g \in G$ acts by
+multiplication by $\varphi(g)$, that is, by the linear map $x \mapsto \varphi(g)\,x$. -/
 noncomputable def _root_.FDRep.ofMonoidHom {k G : Type*} [Field k] [Monoid G]
     (φ : G →* k) : FDRep k G :=
   FDRep.of
@@ -166,21 +189,31 @@ noncomputable def _root_.FDRep.ofMonoidHom {k G : Type*} [Field k] [Monoid G]
         ext
         simp [mul_smul, mul_comm] }
 
-/-- In `FDRep.ofMonoidHom φ`, the element `g` acts by the scalar `φ g`. -/
+/-- **The action in the one-dimensional representation of a homomorphism.** Let $k$ be a field,
+let $G$ be a monoid, let $\varphi : G \to k$ be a monoid homomorphism, and let $k_\varphi$ be the
+one-dimensional representation of $G$ on $k$ defined by $\varphi$. For every $g \in G$, the action
+of $g$ on $k_\varphi$ is $\varphi(g)$ times the identity map of $k$. -/
 @[simp]
 theorem _root_.FDRep.ofMonoidHom_ρ {k G : Type*} [Field k] [Monoid G]
     (φ : G →* k) (g : G) : (FDRep.ofMonoidHom φ).ρ g = φ g • LinearMap.id := by
   change (φ g • (LinearMap.id : k →ₗ[k] k)) = _
   rfl
 
-/-- The representation `FDRep.ofMonoidHom φ` is one-dimensional. -/
+/-- **The representation of a homomorphism is one-dimensional.** Let $k$ be a field, let $G$ be
+a monoid, let $\varphi : G \to k$ be a monoid homomorphism, and let $k_\varphi$ be the
+representation of $G$ on $k$ in which each $g \in G$ acts by multiplication by $\varphi(g)$. Then
+$k_\varphi$ has dimension $1$ over $k$. -/
 @[simp]
 theorem _root_.FDRep.ofMonoidHom_finrank {k G : Type*} [Field k] [Monoid G]
     (φ : G →* k) : Module.finrank k (FDRep.ofMonoidHom φ) = 1 := by
   change Module.finrank k k = 1
   simp
 
-/-- The character of `FDRep.ofMonoidHom φ` is `φ`. -/
+/-- **The character of the representation of a homomorphism is the homomorphism.** Let $k$ be a
+field, let $G$ be a monoid, let $\varphi : G \to k$ be a monoid homomorphism, and let $k_\varphi$
+be the one-dimensional representation of $G$ on $k$ in which each $g \in G$ acts by multiplication
+by $\varphi(g)$. The character of $k_\varphi$ is $\varphi$: the trace of the action of each
+$g \in G$ on $k_\varphi$ is $\varphi(g)$. -/
 @[simp]
 theorem _root_.FDRep.ofMonoidHom_character {k G : Type*} [Field k] [Monoid G]
     (φ : G →* k) : (FDRep.ofMonoidHom φ).character = φ := by
@@ -188,7 +221,11 @@ theorem _root_.FDRep.ofMonoidHom_character {k G : Type*} [Field k] [Monoid G]
   change LinearMap.trace k k (φ g • LinearMap.id) = φ g
   simp
 
-/-- The one-dimensional representation `FDRep.ofMonoidHom φ` is simple. -/
+/-- **The representation of a homomorphism is simple.** Let $k$ be a field, let $G$ be a monoid,
+let $\varphi : G \to k$ be a monoid homomorphism, and let $k_\varphi$ be the one-dimensional
+representation of $G$ on $k$ in which each $g \in G$ acts by multiplication by $\varphi(g)$. Then
+$k_\varphi$ is a simple object of the category of finite-dimensional representations of $G$ over
+$k$. -/
 theorem _root_.FDRep.ofMonoidHom_simple {k G : Type*} [Field k] [Monoid G]
     (φ : G →* k) : Simple (FDRep.ofMonoidHom φ) := by
   let _ : Simple ((forget₂ (FGModuleCat k) (ModuleCat k)).obj (FGModuleCat.of k k)) := by

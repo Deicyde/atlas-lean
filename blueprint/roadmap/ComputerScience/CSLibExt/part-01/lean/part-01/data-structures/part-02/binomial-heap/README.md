@@ -33,7 +33,7 @@ navigation: module
 
 ## Binomial Forest
 
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Rank lower bound for a forest](ranks-at-least.md)
 - [The empty forest is valid](valid-nil.md)
 - [Validity of binomial forests passes to sublists](sublist.md)
@@ -54,12 +54,12 @@ navigation: module
 
 ## Binomial Heap
 
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Tree ranks in a binomial heap are logarithmic](rank-le-log2-card-2.md)
 - [A binomial heap has logarithmically many trees](length-le-log2-card-succ-2.md)
 - [Empty binomial heap](empty.md)
 - [Melding binomial heaps](meld.md)
-- [Singleton](singleton-2.md)
+- [One-element binomial heap](singleton-2.md)
 - [Insertion into a binomial heap](insert.md)
 - [Minimum of a binomial heap](find-min.md)
 - [Minimum deletion on a binomial forest](delete-min-trees.md)

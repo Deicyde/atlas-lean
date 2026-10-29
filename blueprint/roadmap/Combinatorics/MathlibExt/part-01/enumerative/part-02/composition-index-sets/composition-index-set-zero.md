@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.compositionIndexSet_zero
 ---
 
-# Composition Index Set zero
+# The index set $T(m, 0, q)$ is empty
 
-Boundary characteristic: `T(m, 0, q)` is empty.
+**The index set $T(m, 0, q)$ is empty.** For all natural numbers $m$ and $q$, the index set
+$T(m, 0, q)$ is empty.
 
 ## Depends on
 

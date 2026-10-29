@@ -20,7 +20,7 @@ The step-existence hypothesis forces any address the step touches to lie in $h$.
 - [Heap configurations](hconfig.md)
 - [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [Heap commands](heap-cmd.md)
 - [IMP program states](../syntax/state.md)
 
@@ -29,7 +29,7 @@ The step-existence hypothesis forces any address the step touches to lie in $h$.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Erasing an address preserves disjointness](../heap/disjoint-erase-left.md)
 - [Inserting an address the other heap lacks preserves disjointness](../heap/disjoint-insert-left.md)
 - [Erasing an address that the right heap of a union lacks](../heap/erase-union-of-not-mem.md)

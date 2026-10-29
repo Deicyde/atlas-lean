@@ -16,8 +16,8 @@ in $f$, viewed as a point of $\mathbb{R}^2$.
 
 ## Depends on
 
-- [Exponent To Real](exponent-to-real.md)
-- [Newton Support](newton-support.md)
+- [Exponent vectors as points of the plane](exponent-to-real.md)
+- [Newton support](newton-support.md)
 
 ## Sources
 

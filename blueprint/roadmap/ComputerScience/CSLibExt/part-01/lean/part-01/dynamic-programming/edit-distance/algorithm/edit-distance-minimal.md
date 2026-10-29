@@ -17,7 +17,7 @@ unit cost at least the distance returned by the edit distance algorithm on $s$ a
 
 - [Edit-distance cost counters](../script/edit-distance-cost.md)
 - [Edit-distance result record](../script/edit-distance-result.md)
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [An edit script transforming one list into another](../script/transforms.md)
 - [Cost of an edit script](../script/cost-2.md)
 - [Edit distance algorithm](edit-distance.md)

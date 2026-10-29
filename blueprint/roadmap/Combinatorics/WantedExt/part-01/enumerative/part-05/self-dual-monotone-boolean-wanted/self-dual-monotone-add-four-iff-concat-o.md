@@ -28,8 +28,8 @@ $a, b, c, d, e, f, g, h \in D_n$ satisfying these inequalities.
 
 ## Depends on
 
-- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
-- [Concatenation of Boolean functions](boolean-cube-concat.md)
+- [Self-dual monotone Boolean functions](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Concatenation of a list of Boolean functions](boolean-cube-concat.md)
 - [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources

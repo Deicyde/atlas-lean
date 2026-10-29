@@ -5,11 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.rogersRamanujanContFracReal
 ---
 
-# Rogers Ramanujan Cont Frac Real
+# The real Rogers–Ramanujan continued fraction
 
-The Rogers-Ramanujan continued fraction for real `0 ≤ x < 1`, through its product formula
-`R(x) = x^{1/5} (x; x⁵)_∞ (x⁴; x⁵)_∞ / ((x²; x⁵)_∞ (x³; x⁵)_∞)` with the positive real fifth
-root.
+**The real Rogers–Ramanujan continued fraction.** For a real number $x$,
+
+$$
+R(x) = x^{1/5} \prod_{n \ge 0}
+\frac{(1 - x^{5n+1})(1 - x^{5n+4})}{(1 - x^{5n+2})(1 - x^{5n+3})},
+$$
+
+where $x^{1/5}$ is the real power function (the nonnegative fifth root for $x \ge 0$, and
+$|x|^{1/5} \cos(\pi/5)$ for $x < 0$), a factor whose denominator is $0$ is read as $0$, and the
+infinite product is taken to be $1$ when it does not converge unconditionally. For $0 \le x < 1$
+this is the product formula
+$R(x) = x^{1/5} (x; x^5)_\infty (x^4; x^5)_\infty / ((x^2; x^5)_\infty (x^3; x^5)_\infty)$ of the
+Rogers–Ramanujan continued fraction, where $(c; q)_\infty = \prod_{m \ge 0} (1 - c q^m)$.
 
 ## Depends on
 

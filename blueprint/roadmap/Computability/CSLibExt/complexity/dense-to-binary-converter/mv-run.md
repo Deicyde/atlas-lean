@@ -17,7 +17,7 @@ the stash, output stack $o$, and $N$, $K$, $M$, $T$ still empty.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Exact runs of the dense-to-binary converter](run.md)
 - [Stacks of the dense-to-binary machine](stk.md)
 - [Stack contents of the converter](stk-2.md)

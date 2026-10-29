@@ -20,7 +20,7 @@ This elementary bound follows directly from the definition.
 ## Proof depends on
 
 - [Congruence subgroup of the modular group](is-congruence-subgroup.md)
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
 - [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
 - [The modular group is a congruence subgroup](is-congruence-subgroup-top.md)

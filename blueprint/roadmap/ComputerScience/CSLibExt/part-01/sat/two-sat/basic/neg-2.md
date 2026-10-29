@@ -19,7 +19,7 @@ literal over the variables of $\varphi$.
 ## Proof depends on
 
 - [Complement of a literal](neg.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

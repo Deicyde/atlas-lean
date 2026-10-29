@@ -15,11 +15,11 @@ $\{1,4\}$ forward, in this order, form a schedule, and its total time is $11$.
 ## Depends on
 
 - [Bridge schedules](is-bridge-schedule.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Proof depends on
 
-- [Bridge Schedule From](bridge-schedule-from.md)
+- [Valid crossing sequences from a state of the bridge and torch problem](bridge-schedule-from.md)
 
 ## Sources
 

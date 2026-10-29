@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Parallelogram spanned by two vectors](lattice-parallelogram.md)
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 
 ## Sources
 

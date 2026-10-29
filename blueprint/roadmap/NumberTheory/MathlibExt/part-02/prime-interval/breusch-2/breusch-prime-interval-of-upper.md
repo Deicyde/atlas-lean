@@ -18,7 +18,7 @@ $L(n) \le \left(\frac{18900}{279} + \frac{18900}{657} + \frac{18900}{963}\right)
 
 ## Depends on
 
-- [Upper ineq](upper-ineq.md)
+- [Breusch's endgame upper-bound inequality](upper-ineq.md)
 
 ## Proof depends on
 

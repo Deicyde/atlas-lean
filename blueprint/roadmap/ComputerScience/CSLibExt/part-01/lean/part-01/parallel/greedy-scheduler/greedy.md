@@ -14,7 +14,7 @@ leaves a ready task waiting only when all $p$ processors are busy.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 
 ## Proof depends on
 

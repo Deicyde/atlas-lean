@@ -18,7 +18,7 @@ the Wiman majorant of $f$.
 ## Depends on
 
 - [Wiman coefficient measure](wiman-coefficient-measure.md)
-- [Wiman Growth](wiman-growth.md)
+- [Wiman growth function](wiman-growth.md)
 
 ## Proof depends on
 

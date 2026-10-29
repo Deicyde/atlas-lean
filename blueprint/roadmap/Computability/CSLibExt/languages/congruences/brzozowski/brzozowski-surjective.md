@@ -23,7 +23,7 @@ is reached from its start state by some word.
 - [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
 - [Every state of the accessible part is reached](../../../decidability/part-02/regular/accessible-part-within-surjective.md)
 - [The intermediate Brzozowski automaton](brzozowski-mid.md)
-- [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
+- [Early-stopping DFA reachability search](../../../decidability/part-02/regular/reachable-within.md)
 - [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources

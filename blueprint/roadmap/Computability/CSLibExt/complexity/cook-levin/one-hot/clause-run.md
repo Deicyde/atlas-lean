@@ -52,7 +52,7 @@ variables whose literals are those of $c$ in the cell with base $B$, followed by
 - [Label after a literal routine of the one-hot generator](after.md)
 - [Boundary before a literal of a cell clause](bnd.md)
 - [Per-literal step cost of the one-hot generator](lit-e.md)
-- [Lits run](lits-run.md)
+- [Run of the literal routines of a clause (one-hot generator)](lits-run.md)
 - [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
@@ -63,7 +63,7 @@ variables whose literals are those of $c$ in the cell with base $B$, followed by
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
 - [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

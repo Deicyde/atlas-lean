@@ -43,7 +43,7 @@ original contents.
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
 - [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

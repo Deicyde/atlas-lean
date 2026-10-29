@@ -6,11 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.LeafSymbol
 ---
 
-# Leaf symbols of a Huffman tree
+# Type of leaf symbols of a Huffman tree
 
-**Leaf symbols of a Huffman tree.** For a Huffman tree $T$ over an alphabet $\alpha$, the type
-of leaf symbols of $T$ is the subtype of those $a \in \alpha$ that occur in the list of symbols
-of $T$.
+**Type of leaf symbols of a Huffman tree.** For a Huffman tree $T$ over an alphabet
+$\alpha$, the type of leaf symbols of $T$ is the subtype of those $a \in \alpha$ that occur in
+the list of leaf symbols of $T$.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ of $T$.
 
 ## Proof depends on
 
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Sources
 

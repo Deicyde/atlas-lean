@@ -265,7 +265,9 @@ namespace BinomialForest
 
 variable {α : Type u}
 
-/-- The multiset represented by a forest. -/
+/-- **Elements of a binomial forest.** The multiset of elements of a list of binomial trees
+$t_1, \dots, t_k$ is the multiset sum of the multisets of elements of $t_1, \dots, t_k$; for the
+empty list it is the empty multiset. -/
 @[expose] public def elements {α : Type u} (trees : List (BinomialTree α)) : Multiset α :=
   (trees.map BinomialTree.elements).sum
 
@@ -770,7 +772,9 @@ namespace BinomialHeap
 
 variable {α : Type u}
 
-/-- The multiset represented by a binomial heap. -/
+/-- **Elements of a binomial heap.** Over a linearly ordered type, the multiset of elements of a
+binomial heap is the multiset of elements of its list of binomial trees, that is, the multiset sum
+of the multisets of elements of its trees. -/
 @[expose] public def elements [LinearOrder α] (heap : BinomialHeap α) : Multiset α :=
   BinomialForest.elements heap.trees
 
@@ -801,7 +805,9 @@ binomial heap whose forest is the meld of the forests of the two heaps. -/
       (by simp [BinomialForest.RanksAtLeast])
       (by simp [BinomialForest.RanksAtLeast])).1⟩
 
-/-- A one-element binomial heap. -/
+/-- **One-element binomial heap.** For a value $a$ in a linearly ordered type $\alpha$, the
+one-element binomial heap of $a$ is the binomial heap whose list of trees consists of exactly one
+tree: the binomial tree of rank $0$ with root $a$ and no children. -/
 @[expose] public def singleton [LinearOrder α] (value : α) : BinomialHeap α :=
   ⟨[BinomialTree.singleton value], by
     apply BinomialForest.valid_cons (BinomialTree.valid_singleton value)

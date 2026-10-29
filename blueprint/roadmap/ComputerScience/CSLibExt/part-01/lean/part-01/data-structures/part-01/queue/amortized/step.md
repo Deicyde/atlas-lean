@@ -20,7 +20,7 @@ queue the remaining queue is $q$ itself.
 ## Proof depends on
 
 - [Timed dequeue](dequeue.md)
-- [Enqueue](enqueue.md)
+- [Timed enqueue](enqueue.md)
 
 ## Sources
 

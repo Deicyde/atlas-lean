@@ -6,13 +6,14 @@ statement: formalized
 lean: CurveDivisor.divPoles
 ---
 
-# Div Poles
+# Pole part of a divisor
 
-The effective pole part of a divisor.
+**Pole part of a divisor.** For a divisor $D$ on a set of points $C$, the pole part $D^-$ of
+$D$ is the divisor on $C$ whose coefficient at each point $P \in C$ is $\max(-D(P), 0)$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 
 ## Sources
 

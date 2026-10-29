@@ -24,7 +24,7 @@ semantics, then the relational denotation of $c$ relates $s$ to $s'$.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Unfolding equation for the while denotation](while-iff.md)
 
 ## Sources

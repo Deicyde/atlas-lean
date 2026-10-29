@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cut Size](cut-size.md)
+- [Size of a cut](cut-size.md)
 
 ## Sources
 

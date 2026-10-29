@@ -30,7 +30,7 @@ the partial-correctness Hoare logic.
 - [Entailment of assertions](../hoare/entails.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Commands of IMP](../syntax/cmd.md)
 - [IMP program states](../syntax/state.md)
 

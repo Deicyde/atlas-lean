@@ -20,7 +20,7 @@ $$H(xa, yb) = \max\bigl(0,\ H(x, y) + \sigma(a, b),\ H(x, yb) + g,\ H(xa, y) + g
 
 ## Proof depends on
 
-- [Sw Cell Front](sw-cell-front.md)
+- [Fuel-bounded Smith–Waterman recursion](sw-cell-front.md)
 
 ## Sources
 

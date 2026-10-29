@@ -20,7 +20,7 @@ $s$ to $m$ and $R$ relating $m$ to $s'$.
 
 ## Proof depends on
 
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 
 ## Sources
 

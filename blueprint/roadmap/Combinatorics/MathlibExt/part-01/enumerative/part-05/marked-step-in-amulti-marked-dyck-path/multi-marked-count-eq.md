@@ -17,7 +17,7 @@ $N$ and marked steps $N^*_t$ counted together.
 
 - [Multi-marked Dyck path](multi-marked-dyck-path.md)
 - [Steps of a multi-marked Dyck path](multi-marked-step.md)
-- [Number of horizontal steps](multi-marked-count-e.md)
+- [Number of horizontal steps in a multi-marked step sequence](multi-marked-count-e.md)
 - [Number of vertical steps](multi-marked-count-vert.md)
 
 ## Sources

@@ -38,7 +38,7 @@ definition of the run literals.
 - [Index of a label/state variable](../../family/x-idx.md)
 - [Cell code of a configuration](../part-03/cell.md)
 - [Label-and-state code of a configuration](../part-03/code.md)
-- [D3Fam families (update, S-def), completeness](fam-complete.md)
+- [Transition families with a run-literal head are satisfied by the run](fam-complete.md)
 - [Situation index of a configuration](../part-03/sit-idx.md)
 - [The situation-definition tables of a machine are well formed](../part-02/wf-sdef.md)
 - [Idle-extended run](../part-03/run-i.md)

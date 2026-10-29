@@ -34,8 +34,8 @@ navigation: module
 
 ## Fibonacci Forest
 
-- [Elements](elements-2.md)
-- [Sorted Degrees](sorted-degrees.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
+- [Forests with strictly increasing degrees](sorted-degrees.md)
 - [The empty Fibonacci forest is valid](valid-nil.md)
 - [Concatenation preserves validity of Fibonacci forests](valid-append.md)
 - [Sublists of valid Fibonacci forests are valid](sublist.md)
@@ -61,9 +61,9 @@ navigation: module
 
 ## Fibonacci Heap
 
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Empty Fibonacci heap](empty.md)
-- [Singleton](singleton-2.md)
+- [Singleton Fibonacci heap](singleton-2.md)
 - [Melding Fibonacci heaps](meld.md)
 - [Union of Fibonacci heaps](union.md)
 - [Insertion into a Fibonacci heap](insert.md)
@@ -72,7 +72,7 @@ navigation: module
 - [Deleting the minimum of a Fibonacci heap](delete-min.md)
 - [Fibonacci heap minimum deletion agrees with its root-list version](delete-min-trees-2.md)
 - [The empty Fibonacci heap has no elements](elements-empty.md)
-- [Elements singleton](elements-singleton.md)
+- [Multiset of a singleton Fibonacci heap](elements-singleton.md)
 - [Melding adds the elements](elements-meld.md)
 - [The union of Fibonacci heaps adds their multisets](elements-union.md)
 - [Insertion adds one occurrence](elements-insert.md)

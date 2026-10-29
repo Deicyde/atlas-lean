@@ -16,7 +16,7 @@ makes them so.
 
 ## Depends on
 
-- [Sorted Degrees](sorted-degrees.md)
+- [Forests with strictly increasing degrees](sorted-degrees.md)
 - [Fibonacci heap](fibonacci-heap.md)
 - [Deleting the minimum of a Fibonacci heap](delete-min.md)
 - [Fibonacci tree](fibonacci-tree.md)
@@ -27,7 +27,7 @@ makes them so.
 - [Sublists of valid Fibonacci forests are valid](sublist.md)
 - [Consolidation of a forest](consolidate.md)
 - [Consolidation sorts root degrees](consolidate-sorted.md)
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Minimum root of a forest](min-root.md)
 - [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
 - [Minimum-tree removal in a Fibonacci forest](remove-min-tree-spec.md)

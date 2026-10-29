@@ -22,8 +22,8 @@ $t + 1$, the weight of $z$ is at most the weight of Viterbi's MAP path of length
 ## Proof depends on
 
 - [Backtracked path of the tabulated CRF Viterbi algorithm](best-path.md)
-- [The backtracked path attains the Viterbi variable](path-weight-best-path.md)
-- [Path weights are bounded by the Viterbi variables](path-weight-le-viterbi.md)
+- [The backtracked path of a chain CRF attains the Viterbi variable](path-weight-best-path.md)
+- [Path weights of a chain CRF are bounded by the Viterbi variables](path-weight-le-viterbi.md)
 - [The Viterbi variables of a chain CRF](viterbi.md)
 - [The tabulated Viterbi variables of a chain CRF](viterbi-tab.md)
 - [First maximizer of a function on a finite range](../../sequence/hidden-markov/argmax-fin.md)

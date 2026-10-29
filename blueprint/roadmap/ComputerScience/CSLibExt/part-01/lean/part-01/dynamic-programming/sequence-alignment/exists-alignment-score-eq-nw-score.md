@@ -17,7 +17,7 @@ $g$ equals the Needleman–Wunsch score of $x$ and $y$.
 
 - [Alignment](alignment.md)
 - [Valid alignment of two sequences](is-alignment.md)
-- [Alignment Score](alignment-score.md)
+- [Score of an alignment](alignment-score.md)
 - [Needleman–Wunsch score](nw-score.md)
 
 ## Proof depends on

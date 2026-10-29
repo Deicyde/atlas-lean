@@ -16,7 +16,7 @@ the empty word accepts every word.
 
 ## Depends on
 
-- [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
+- [Predicates recognizable by a single-tape nondeterministic machine](single-tape-ntmrecognizable.md)
 
 ## Proof depends on
 

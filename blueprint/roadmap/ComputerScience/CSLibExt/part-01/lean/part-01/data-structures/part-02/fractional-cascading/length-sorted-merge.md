@@ -14,7 +14,7 @@ $M$.
 
 ## Depends on
 
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 
 ## Sources
 

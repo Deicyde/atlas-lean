@@ -15,7 +15,7 @@ $R$ (the carrier of $R$). Then the boundary integral of $z \mapsto 1/(z - w)$ ov
 
 ## Depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Boundary integral over a rectangle](boundary-integral.md)
 - [Carrier of an axis-parallel rectangle](carrier.md)
 

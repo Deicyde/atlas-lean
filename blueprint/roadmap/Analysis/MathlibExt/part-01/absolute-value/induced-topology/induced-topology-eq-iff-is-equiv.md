@@ -19,7 +19,7 @@ on many elements while inducing different topologies.
 
 ## Depends on
 
-- [Induced Topology](induced-topology.md)
+- [Topology induced by an absolute value](induced-topology.md)
 
 ## Sources
 

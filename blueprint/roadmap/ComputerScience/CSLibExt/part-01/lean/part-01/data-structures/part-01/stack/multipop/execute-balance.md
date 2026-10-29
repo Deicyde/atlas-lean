@@ -23,7 +23,7 @@ twice the number of PUSH operations in $\sigma$.
 
 - [MULTIPOP](multipop.md)
 - [MULTIPOP with an integer count](multipop-signed.md)
-- [Multipop ret](multipop-ret.md)
+- [Result of MULTIPOP](multipop-ret.md)
 - [Cost of MULTIPOP](multipop-time.md)
 
 ## Sources

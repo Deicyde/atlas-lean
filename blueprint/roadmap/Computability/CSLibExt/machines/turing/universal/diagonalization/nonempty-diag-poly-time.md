@@ -36,7 +36,7 @@ readout machine.
 - [The diagonal answer](diag-answer.md)
 - [The diagonal language through the clocked evaluator](diag-eq-comp.md)
 - [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
-- [Comp Computable](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
+- [The composite polynomial-time TM2 computation](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

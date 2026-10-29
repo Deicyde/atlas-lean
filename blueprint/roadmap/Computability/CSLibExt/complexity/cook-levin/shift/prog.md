@@ -48,7 +48,7 @@ and restore their sources when the scratch counters start empty.
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

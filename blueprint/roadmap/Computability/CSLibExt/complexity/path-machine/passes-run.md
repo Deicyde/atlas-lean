@@ -20,8 +20,8 @@ and with every stack other than $N$, $X$, $E$, $M$, $U$, $V$ and $P$ unchanged.
 
 - [Bit encoding of an edge list](../karp/part-01/color/edge-bits.md)
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [The counter unit of the PATH marking machine](one.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)

@@ -62,8 +62,11 @@ theorem levelSet_tangent_vel_of_curve
     (hasDerivAt_const 0 c).congr_of_eventuallyEq <| Filter.Eventually.of_forall hmem
   exact hcomp.unique hconst
 
-/-- A vector in the kernel of a surjective strict derivative is the velocity of a local curve in
-the corresponding level set. -/
+/-- **Kernel vectors are velocities of local curves in a level set.** Let $E$ be a real Banach
+space and let $f : E \to \mathbb{R}$ have a strict derivative $f'$ at $x \in E$, a continuous
+linear map $E \to \mathbb{R}$ that is surjective. Then for every $v \in E$ with $f'(v) = 0$ there
+is a curve $\varphi : \mathbb{R} \to E$ with $\varphi(0) = x$ and $\varphi'(0) = v$ such that
+$f(\varphi(t)) = f(x)$ for all $t$ in some neighbourhood of $0$. -/
 theorem _root_.HasStrictFDerivAt.exists_levelSet_curve
     {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
     {f : E → ℝ} {f' : E →L[ℝ] ℝ} {x v : E}

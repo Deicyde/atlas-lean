@@ -21,7 +21,7 @@ and no leading zeros, so that $0$ gives the empty word).
 
 ## Proof depends on
 
-- [Fwd TM](../to-tm2/fwd-tm.md)
+- [The wrapped machine of a code](../to-tm2/fwd-tm.md)
 - [The wrapped machine of a code halts exactly where the code is defined](tm2-halts-on-fwd-tm-iff.md)
 
 ## Sources

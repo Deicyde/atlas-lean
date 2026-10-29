@@ -4,5 +4,5 @@ navigation: module
 
 # Strong Mason
 
-- [Independent Set Count](independent-set-count.md)
+- [Number of independent sets of a given size](independent-set-count.md)
 - [The strong Mason conjecture](strong-mason-conjecture.md)

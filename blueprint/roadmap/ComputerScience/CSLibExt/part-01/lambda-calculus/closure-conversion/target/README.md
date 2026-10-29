@@ -12,7 +12,7 @@ navigation: module
 ## Tm
 
 - [Big-step semantics of the closure-conversion target](eval.md)
-- [Lifting a renaming under a binder](lift-ren.md)
+- [Lifting a renaming under a binder, for the closure-conversion target](lift-ren.md)
 - [Renaming target terms](rename.md)
 - [Shifting a target term](shift.md)
 - [Evaluation is stable under renaming](rename-2.md)

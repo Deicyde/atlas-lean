@@ -7,14 +7,14 @@ navigation: module
 - [Stacks of the SAT tokenizer](k.md)
 - [Labels of the SAT tokenizer](lab.md)
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
-- [Unary](unary.md)
+- [Instruction for reading a unary count](unary.md)
 - [The tokenizer program](prog.md)
 - [Start label of the SAT tokenizer](start.md)
 
 ## Stacks
 
 - [Tokenizer stack contents](st.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
 - [One step to rejection](rej-one.md)
 
 ## Unary counts

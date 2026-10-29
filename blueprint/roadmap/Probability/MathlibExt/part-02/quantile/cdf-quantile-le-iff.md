@@ -7,10 +7,11 @@ proof: formalized
 lean: ProbabilityTheory.cdfQuantile_le_iff
 ---
 
-# Cdf Quantile le iff
+# The quantile function as a generalized inverse of the cdf
 
-For `u ∈ (0, 1)`, the generalized inverse is at most `x` exactly when
-the cdf at `x` is at least `u`.
+**The quantile function as a generalized inverse of the cdf.** Let $\mu$ be a measure on
+$\mathbb{R}$ with cumulative distribution function $F_\mu$ and quantile function $Q_\mu$. For
+every $u \in (0, 1)$ and every real $x$, $Q_\mu(u) \le x$ if and only if $u \le F_\mu(x)$.
 
 ## Depends on
 

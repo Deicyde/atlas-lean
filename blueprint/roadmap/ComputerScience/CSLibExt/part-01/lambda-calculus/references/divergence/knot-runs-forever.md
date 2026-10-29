@@ -15,7 +15,7 @@ step to some term $t'$ with some store $\mu'$. So the evaluation of the knot run
 ## Depends on
 
 - [Landin's knot](knot.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)

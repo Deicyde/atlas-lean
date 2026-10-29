@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Periodic Theta](periodic-theta.md)
+- [The maximal $L$-block $\theta^{m+1}$](periodic-theta.md)
 
 ## Sources
 

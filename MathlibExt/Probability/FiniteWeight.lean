@@ -94,10 +94,16 @@ for every configuration $x$. -/
 def CondIndep (p : (V → α) → ℝ) (A B S : Set V) : Prop :=
   ∀ x, marginal p (A ∪ B ∪ S) x * marginal p S x = marginal p (A ∪ S) x * marginal p (B ∪ S) x
 
-/-- Conditional independence in ratio form: where `p(x_S) ≠ 0`,
-`p(x_A, x_B, x_S) / p(x_S) = (p(x_A, x_S) / p(x_S)) (p(x_B, x_S) / p(x_S))`. For a nonnegative
-weight of positive total mass these ratios are the conditional probabilities of the normalized
-distribution, so this is `P(x_A, x_B | x_S) = P(x_A | x_S) P(x_B | x_S)`. -/
+/-- **Conditional independence in ratio form.** Let $V$ and $\alpha$ be finite types, let $p$ be a
+real-valued weight on the configurations $x : V \to \alpha$, and for $U \subseteq V$ write
+$p(x_U)$ for the marginal of $p$ on $U$ at $x$. If, for $A, B, S \subseteq V$, the variables in
+$A$ and in $B$ are conditionally independent given those in $S$ under $p$, then every
+configuration $x$ with $p(x_S) \ne 0$ satisfies
+$$\frac{p(x_{A\cup B\cup S})}{p(x_S)} = \frac{p(x_{A\cup S})}{p(x_S)}\frac{p(x_{B\cup S})}{p(x_S)}$$
+
+For a nonnegative weight of positive total mass these ratios are the conditional probabilities of
+the normalized distribution, so this is $P(x_A, x_B \mid x_S) = P(x_A \mid x_S)\, P(x_B \mid x_S)$.
+-/
 theorem CondIndep.cond_eq_mul {p : (V → α) → ℝ} {A B S : Set V} (h : CondIndep p A B S)
     {x : V → α} (hx : marginal p S x ≠ 0) :
     marginal p (A ∪ B ∪ S) x / marginal p S x =
@@ -207,7 +213,11 @@ theorem condIndep_of_dependsOn {f g : (V → α) → ℝ} {P Q : Set V} (hf : De
   rw [e1, e2, e3, e4]
   ring
 
-/-- Conditional independence given `S` only involves the variables of `A` and `B` outside `S`. -/
+/-- **Conditional independence from the variables outside the conditioning set.** Let $V$ and
+$\alpha$ be finite types, let $p$ be a real-valued weight on the configurations
+$x : V \to \alpha$, and let $A, B, S \subseteq V$. If the variables in $A \setminus S$ and in
+$B \setminus S$ are conditionally independent given those in $S$ under $p$, then the variables in
+$A$ and in $B$ are conditionally independent given those in $S$ under $p$. -/
 theorem condIndep_of_sdiff {p : (V → α) → ℝ} {A B S : Set V}
     (h : CondIndep p (A \ S) (B \ S) S) : CondIndep p A B S := by
   intro x

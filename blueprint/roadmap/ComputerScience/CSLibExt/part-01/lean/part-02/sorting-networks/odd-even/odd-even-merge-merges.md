@@ -17,7 +17,7 @@ on $2^{k+1}$ wires runs on $f$, every wire $j < 2^{k+1}$ holds $0$ exactly when 
 
 ## Depends on
 
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Batcher's odd-even merger](odd-even-merge.md)
 
 ## Proof depends on

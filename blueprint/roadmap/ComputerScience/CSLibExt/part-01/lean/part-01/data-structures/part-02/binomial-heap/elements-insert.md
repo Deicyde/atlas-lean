@@ -16,14 +16,14 @@ inserting $v$ into $H$ is the multiset of elements of $H$ with one more occurren
 ## Depends on
 
 - [Binomial heap](binomial-heap.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Insertion into a binomial heap](insert.md)
 
 ## Proof depends on
 
 - [Melding binomial heaps adds their elements](elements-meld.md)
 - [Melding binomial heaps](meld.md)
-- [Singleton](singleton-2.md)
+- [One-element binomial heap](singleton-2.md)
 - [Binomial tree](binomial-tree.md)
 - [Elements of a binomial tree](elements.md)
 - [Singleton binomial heap](singleton.md)

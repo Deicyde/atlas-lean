@@ -23,7 +23,7 @@ ones), so the statement is vacuous there.
 
 ## Depends on
 
-- [Is Reduced Magic Square](is-reduced-magic-square.md)
+- [Reduced magic squares](is-reduced-magic-square.md)
 
 ## Sources
 

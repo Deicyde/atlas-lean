@@ -30,7 +30,7 @@ with $S$ on every stack except $c$ and $S'_c = u_c^{mn + p}$.
 - [Exact-length runs of a TM2 machine](run.md)
 - [Unary counter](cnt.md)
 - [Loop head of a for loop over a counter](for-head.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 

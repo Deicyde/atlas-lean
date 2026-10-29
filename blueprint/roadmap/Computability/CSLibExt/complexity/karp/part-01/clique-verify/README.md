@@ -15,7 +15,7 @@ navigation: module
 
 ## The pair order
 
-- [Pairs succ](pairs-succ.md)
+- [Vertex pairs in encoding order for one more vertex](pairs-succ.md)
 
 ## The row-by-row check
 
@@ -54,7 +54,7 @@ navigation: module
 - [Load step of the CLIQUE verifier](load-s.md)
 - [Rest of a walk step of the clique verifier](walk-z.md)
 - [Walk step of the clique verifier](walk-s.md)
-- [Prog](prog.md)
+- [Program of the clique verifier](prog.md)
 - [Start label of the clique verifier](start.md)
 
 ## Runs of the phases
@@ -63,7 +63,7 @@ navigation: module
 - [The clique verifier's unary reader succeeds](read-u-some.md)
 - [Reading an unterminated unary number rejects](read-u-none.md)
 - [Run of the load phase](load-run.md)
-- [Walk Row run](walk-row-run.md)
+- [Walking the pairs of one row of the clique verifier](walk-row-run.md)
 - [One row of the clique verifier's walk](row-run.md)
 - [All rows of the clique verifier's walk](rows-run.md)
 - [The verifier machine for clique, independent set and vertex cover](run.md)

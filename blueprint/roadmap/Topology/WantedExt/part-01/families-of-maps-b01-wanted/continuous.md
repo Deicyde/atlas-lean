@@ -24,7 +24,7 @@ family with parameter $(t, q) \in [0, 1] \times Q$, is supported on $S'$.
 
 ## Depends on
 
-- [Adapted To](adapted-to.md)
+- [Adapted families of maps](adapted-to.md)
 - [Boundary subpolyhedra](is-boundary-subpolyhedron.md)
 - [Convex linear polyhedra](is-polyhedron.md)
 - [Polyhedral subdivisions](subdivision.md)

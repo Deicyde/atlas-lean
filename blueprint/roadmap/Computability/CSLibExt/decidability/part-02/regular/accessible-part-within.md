@@ -19,7 +19,7 @@ state of $M$, and it stops as soon as a round adds nothing, so a larger bound co
 
 ## Depends on
 
-- [Reachable Within](reachable-within.md)
+- [Early-stopping DFA reachability search](reachable-within.md)
 
 ## Proof depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permDes
 ---
 
-# Number of descents
+# Number of descents from the descent set
 
-**Number of descents.** For a permutation $\tau$ of $\{0, 1, \dots, d - 1\}$, the number of
-descents $\mathrm{des}(\tau) = |\mathrm{Des}(\tau)|$ is the number of elements of the descent
-set $\mathrm{Des}(\tau)$.
+**Number of descents from the descent set.** For a permutation $\tau$ of
+$\{0, 1, \dots, d - 1\}$, the number of descents $\mathrm{des}(\tau) = |\mathrm{Des}(\tau)|$ is the
+number of elements of the descent set $\mathrm{Des}(\tau)$.
 
 ## Depends on
 

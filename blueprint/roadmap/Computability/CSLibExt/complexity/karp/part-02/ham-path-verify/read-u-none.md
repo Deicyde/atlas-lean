@@ -20,7 +20,7 @@ other stacks, the verifier reaches label $\mathrm{no}$ within $|l| + 1$ steps.
 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [The unary reader of the Hamiltonian path verifier](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)

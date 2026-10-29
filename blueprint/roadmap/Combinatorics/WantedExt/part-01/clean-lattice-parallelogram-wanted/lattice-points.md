@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.latticePoints
 ---
 
-# Lattice Points
+# The integer lattice in the plane
 
-The lattice `ℤ²` as a subset of `ℝ²`.
+**The integer lattice in the plane.** The lattice points of $\mathbb{R}^2$ are the points
+$(a, b)$ with $a, b \in \mathbb{Z}$; they form the image of $\mathbb{Z}^2$ in $\mathbb{R}^2$.
 
 ## Depends on
 

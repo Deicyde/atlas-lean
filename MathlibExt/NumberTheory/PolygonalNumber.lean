@@ -47,12 +47,20 @@ The polygonal interpretation assumes $s \ge 3$; this definition extends the form
 natural number $s$. -/
 def polygonalNumber (s n : ℕ) : ℕ := (s - 2) * Nat.choose n 2 + n
 
-/-- Total-extension initial value at `0`; the source claims this only for `3 ≤ s`. -/
+/-- **Polygonal numbers at zero.** For every natural number $s$, $p_s(0) = 0$, where $p_s(n)$ is
+the $n$-th $s$-gonal number.
+
+The source considers only $s \ge 3$; the value holds for the extension of the formula to every
+natural number $s$. -/
 @[simp] theorem polygonalNumber_zero (s : ℕ) : polygonalNumber s 0 = 0 := by
   have h : Nat.choose 0 2 = 0 := by decide
   simp [polygonalNumber, h]
 
-/-- Total-extension initial value at `1`; the source claims this only for `3 ≤ s`. -/
+/-- **Polygonal numbers at one.** For every natural number $s$, $p_s(1) = 1$, where $p_s(n)$ is
+the $n$-th $s$-gonal number.
+
+The source considers only $s \ge 3$; the value holds for the extension of the formula to every
+natural number $s$. -/
 @[simp] theorem polygonalNumber_one (s : ℕ) : polygonalNumber s 1 = 1 := by
   have h : Nat.choose 1 2 = 0 := by decide
   simp only [polygonalNumber, h]

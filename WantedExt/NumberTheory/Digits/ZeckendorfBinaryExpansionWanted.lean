@@ -164,9 +164,16 @@ public theorem IsZeckendorfCollection.zero_mem {E : Set (ℕ →₀ ℕ)} (h : I
     0 ∈ E :=
   h.1
 
-/-- The maximal `L`-block `θ^n = rev_{n-1}(β^*)` for a list `L = (e_1, …, e_N)`, where
-`β^*_k = e_j` for `k ≡ j (mod N)`: zero-based, `θ^{m+1}` has entry `e_{((m-1-i) mod N) + 1}` at
-index `i < m` and `0` from index `m` on.
+/-- **The maximal $L$-block $\theta^{m+1}$.** Let $L = (e_1, \dots, e_N)$ be a list of natural
+numbers and $m \in \mathbb N$, with indices of coefficient functions starting at $0$. The maximal
+$L$-block $\theta^{m+1}$ is the finitely supported coefficient function whose entry at each index
+$i < m$ is $e_j$, where $j - 1 = (m - 1 - i) \bmod N$, and whose entries at the indices $i \ge m$
+are $0$ (every entry is $0$ when $L$ is empty).
+
+In the paper's one-based indexing, $\theta^n = \mathrm{rev}_{n-1}(\beta^*)$, where $\beta^*$ is
+the coefficient function with $\beta^*_k = e_j$ for $k \equiv j \pmod N$ and
+$\mathrm{rev}_{n-1}(\beta^*)$ lists the first $n - 1$ entries of $\beta^*$ in reverse order,
+followed by zeros.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Definition 10 (arXiv:2308.12872v1, Section 2.2). -/
@@ -599,7 +606,17 @@ public theorem lStarInf_of_infinite_support (L : List ℕ) {ε : ℕ → ℕ}
     exact hne (hc i hi)
   simp [lStarInf, h]
 
-/-- `∑ ε Q = ∑ inf(ε) Q` for `ε ∈ E*` and `Q` the fundamental sequence of `E*`.
+/-- **$\varepsilon$ and $\inf(\varepsilon)$ have the same value.** Let $L$ be a list of natural
+numbers of length at least $2$ with nonzero first entry, let $E^*$ be the set of nonzero
+coefficient functions $\mathbb N \to \mathbb N$ that are sums of finitely or infinitely many
+disjoint proper $L^*$-blocks, and let $Q$ be a strictly decreasing sequence in $(0, 1)$ such that
+$\varepsilon \mapsto \sum_k \varepsilon_k Q_k$ is a bijection from $E^*$ onto $(0, 1)$; indices
+start at $0$. For $\varepsilon \in E^*$ define $\inf(\varepsilon)$ as follows: if $\varepsilon$
+has infinitely many nonzero entries, then $\inf(\varepsilon) = \varepsilon$; otherwise, with $c$
+the largest index such that $\varepsilon_c \ne 0$, $\inf(\varepsilon)$ agrees with $\varepsilon$
+at the indices below $c$, has entry $\varepsilon_c - 1$ at index $c$, and agrees at the indices
+above $c$ with the maximal $L^*$-block starting at index $c + 1$. Then every
+$\varepsilon \in E^*$ satisfies $\sum_k \varepsilon_k Q_k = \sum_k \inf(\varepsilon)_k Q_k$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Lemma 4 (`integers-2025-A25-lem-4`; arXiv:2308.12872v1, Section 2.3). -/
@@ -663,10 +680,19 @@ public theorem_wanted exists_lStarBlockSum_of_properLStarBlock (L L' : List ℕ)
     {i b : ℕ} (hζ : IsProperLStarBlock L ζ i b) (hζ0 : ζ ≠ 0) :
     ∃ I, IsLStarBlockSum L' I ζ ∧ (∀ p ∈ I, p.2 ≤ b) ∧ ∃ a, (a, b) ∈ I
 
-/-- The tail of an `L̄*`-block decomposition stays in `Ẽ*`: if `E ⊊ Ẽ` are determined by `L` and
-`L̃`, `ε ∈ Ẽ*`, the part of `ε` below `b` is a sum of disjoint proper `L*`-blocks with support
-intervals inside `[0, b)`, and the rest `μ` (zero below `b`) satisfies `β̄^{b+1} ≤_d μ`, then
-`μ ∈ Ẽ*`.
+/-- **The tail of an $L^\ast$-block decomposition lies in $\tilde E^\ast$.** Let $L$ and
+$\tilde L$ be lists of natural numbers of length at least $2$ with nonzero first entries, such
+that the periodic Zeckendorf collection $E$ of $L$ is a proper subset of the periodic Zeckendorf
+collection $\tilde E$ of $\tilde L$, and let $\tilde E^*$ be the set of nonzero coefficient
+functions $\mathbb N \to \mathbb N$ that are sums of finitely or infinitely many disjoint proper
+$\tilde L^*$-blocks. Indices start at $0$. Let $\varepsilon \in \tilde E^*$ and $b \in \mathbb N$,
+let $\eta$ agree with $\varepsilon$ at the indices $i < b$ and vanish at the indices $i \ge b$,
+and let $\mu$ vanish at the indices $i < b$ and agree with $\varepsilon$ at the indices $i \ge b$.
+Suppose that for some set $I$ of pairs $(s, k)$ with $k < b$, $\eta$ is the sum of the disjoint
+proper $L^*$-blocks with support intervals $[s, k]$, $(s, k) \in I$, and that $\mu = \bar\beta$
+or $\bar\beta <_d \mu$, where $\bar\beta$ is the maximal $L^*$-block starting at index $b$ (the
+paper's $\bar\beta^{b+1}$) and $<_d$ is the descending lexicographic order. Then
+$\mu \in \tilde E^*$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Corollary 2 (`integers-2025-A25-cor-2`; arXiv:2308.12872v1, Section 3.3). -/
@@ -953,7 +979,11 @@ public noncomputable def zeckendorfRevBar (L : List ℕ) (ε : ℕ → ℕ) : �
       then h.choose else 0
   else maxLStarBlock L 0
 
-/-- `rev̄(ε) = β̄^1` when `ε <_d β̄^1` fails.
+/-- **$\overline{\mathrm{rev}}$ of a function not below $\bar\beta^1$.** Let $L$ be a list of
+natural numbers, let $\bar\beta^1$ be the maximal $L^*$-block starting at index $0$, let $<_d$ be
+the descending lexicographic order, and let $\overline{\mathrm{rev}}$ be the map determined by
+$L$. For every coefficient function $\varepsilon : \mathbb N \to \mathbb N$ such that
+$\varepsilon <_d \bar\beta^1$ fails, $\overline{\mathrm{rev}}(\varepsilon) = \bar\beta^1$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Definition 23. -/
@@ -961,8 +991,17 @@ public theorem zeckendorfRevBar_of_not_descLexLT (L : List ℕ) {ε : ℕ → �
     (h : ¬ DescLexLT ε (maxLStarBlock L 0)) : zeckendorfRevBar L ε = maxLStarBlock L 0 := by
   rw [zeckendorfRevBar, ite_eq_right h]
 
-/-- `δ1*(y) = ∑ rev̄(ε) Q / y^γ` where `ε ∈ Ẽ*` is the expansion `y = ∑ ε Q̃` (Definition 23;
-used on `[ω̃, 1)`; `0` if `y` has no expansion).
+/-- **The function $\delta_1^\ast$.** Let $L$ and $\tilde L$ be lists of natural numbers and $Q$
+and $\tilde Q$ real sequences with first terms $\omega = Q_0$ and $\tilde\omega = \tilde Q_0$
+(indices start at $0$), and put $\gamma = \log_{\tilde\omega} \omega$. Let $\tilde E^*$ be the
+collection $E^*$ determined by $\tilde L$, let $\overline{\mathrm{rev}}$ be the map determined by
+$L$, and write $\sum \varepsilon R = \sum_k \varepsilon_k R_k$ for the evaluation of a coefficient
+function $\varepsilon$ at a real sequence $R$. For real $y$: if some $\varepsilon \in \tilde E^*$
+satisfies $\sum \varepsilon \tilde Q = y$, then
+$\delta_1^*(y) = \sum \overline{\mathrm{rev}}(\varepsilon) Q / y^\gamma$ for a chosen such
+$\varepsilon$; otherwise $\delta_1^*(y) = 0$.
+
+In the paper $\delta_1^*$ is used on $[\tilde\omega, 1)$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Definition 23. -/
@@ -1066,9 +1105,21 @@ public theorem mem_zeckendorfSmoothSet_iff {L L' : List ℕ} {Q' : ℕ → ℝ} 
       ∃ ε ∈ lStarCollection L', ε ∉ lStarClosure L ∧ zeckendorfRealEval Q' ε = x := by
   simp [zeckendorfSmoothSet, and_assoc]
 
-/-- Lemma 3, read for nonzero `ε` with the case `b = 0` (`ε = β̄^1`) included: `rev_n(ε) ∈ E` for
-all `n` iff `ε ∈ Ē*`. As printed (no `ε ≠ 0`, decompositions with `n ≥ 1` blocks) it fails at
-`ε = 0` (`rev_n(0) = 0 ∈ E`) and at `ε = β̄^1` (`rev_n(β̄^1) = θ^{n+1} ∈ E`).
+/-- **Reversals characterize the nonzero elements of $\bar E^\ast$.** Let $L$ be a list of natural
+numbers of length at least $2$ with nonzero first entry, let $E$ be the periodic Zeckendorf
+collection determined by $L$, and let $\bar E^*$ be the closure of the collection $E^*$ determined
+by $L$. For $n \in \mathbb N$ and a coefficient function $\varepsilon : \mathbb N \to \mathbb N$,
+let $\mathrm{rev}_n(\varepsilon)$ be the finitely supported coefficient function whose first $n$
+entries are the first $n$ entries of $\varepsilon$ in reverse order and whose other entries are
+$0$. Then a nonzero coefficient function $\varepsilon : \mathbb N \to \mathbb N$ satisfies
+$\mathrm{rev}_n(\varepsilon) \in E$ for every $n \in \mathbb N$ if and only if
+$\varepsilon \in \bar E^*$.
+
+This reads the source's Lemma 3 for nonzero $\varepsilon$ and counts $\bar\beta^1$, the maximal
+$L^*$-block starting at the first index, as an element of $\bar E^*$. As printed (no
+$\varepsilon \ne 0$, decompositions with at least one block) the lemma fails at
+$\varepsilon = 0$, since $\mathrm{rev}_n(0) = 0 \in E$, and at $\varepsilon = \bar\beta^1$,
+since $\mathrm{rev}_n(\bar\beta^1)$ is the maximal $L$-block $\theta^{n+1}$, which lies in $E$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Lemma 3 (`integers-2025-A25-lem-3`). -/
@@ -1148,10 +1199,20 @@ public theorem_wanted mem_lStarClosure_iff_zeckendorfRevBar_eq {L L' : List ℕ}
     (hp : IsPeriodicZeckendorfPair L L') {ε : ℕ → ℕ} (hε : ε ∈ lStarCollection L') :
     ε ∈ lStarClosure L ↔ zeckendorfRevBar L ε = ε
 
-/-- Lemma 12: let `μ ∈ Ẽ` have order `t ≥ 1` (last nonzero entry at zero-based index `t - 1`),
-and let `β̂^{t+1} = θ^{t+1}` be the immediate predecessor of `β^{t+1}` in `E`. If
-`μ ≤_a β̂^{t+1}`, then `rev̄(rev_t(μ)) = rev_t(μ̄)`; if `β̂^{t+1} <_a μ`, then
-`rev̄(rev_t(μ)) = β̄^1`.
+/-- **$\overline{\mathrm{rev}}$ of the reversal of an element of $\tilde E$ (Lemma 12).** Let $L$
+and $\tilde L$ form a periodic Zeckendorf pair, let $E$ and $\tilde E$ be the periodic Zeckendorf
+collections determined by $L$ and $\tilde L$, and index coefficient functions from $0$. Let
+$\mu \in \tilde E$ and $t \ge 1$ be such that $\mu_{t-1} \ne 0$ and $\mu_j = 0$ for all $j \ge t$.
+Let $\overline{\mathrm{rev}}$ be the map determined by $L$, $\bar\beta^1$ the maximal $L^*$-block
+starting at index $0$, $\mathrm{rev}_t$ the reversal of the first $t$ entries, $\bar\mu$ the bar
+of $\mu$ relative to $E$, $<_a$ the ascending lexicographic order, and $\theta^{t+1}$ the maximal
+$L$-block that vanishes from index $t$ on. If $\mu = \theta^{t+1}$ or $\mu <_a \theta^{t+1}$,
+then $\overline{\mathrm{rev}}(\mathrm{rev}_t(\mu)) = \mathrm{rev}_t(\bar\mu)$; if
+$\theta^{t+1} <_a \mu$, then $\overline{\mathrm{rev}}(\mathrm{rev}_t(\mu)) = \bar\beta^1$.
+
+In the paper $t$ is the order of $\mu$, and $\theta^{t+1}$ appears as the immediate predecessor
+$\hat\beta^{t+1}$ in $E$ of the basis function $\beta^{t+1}$, whose only nonzero entry is a $1$
+at index $t$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Lemma 12 (`integers-2025-A25-lem-12`). -/
@@ -1317,7 +1378,11 @@ public theorem_wanted not_differentiableAt_zeckendorfDeltaStar {L L' : List ℕ}
     (hQ' : IsLStarFundamentalSequence L' Q') {ε : ℕ → ℕ} (hε : ε ∈ lStarClosure L) :
     ¬ DifferentiableAt ℝ (zeckendorfDeltaStar L L' Q Q') (zeckendorfRealEval Q' ε)
 
-/-- Theorem 11: `U` has Lebesgue measure `1`.
+/-- **The smooth set $U$ has Lebesgue measure $1$.** Let $L$ and $\tilde L$ form a periodic
+Zeckendorf pair, let $\tilde E^*$ be the collection $E^*$ determined by $\tilde L$, let $\tilde Q$
+be a fundamental sequence of $\tilde E^*$, and let $\bar E^*$ be the closure determined by $L$.
+Let $U$ be the image of $\tilde E^* \setminus \bar E^*$ under the evaluation
+$\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$. Then $U$ has Lebesgue measure $1$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Theorem 11 (`integers-2025-A25-thm-11`). -/
@@ -1462,10 +1527,24 @@ public theorem_wanted div_rpow_lt_add_div_add_rpow_of_genericBound {L L' : List 
       (zeckendorfRealEval Q (zeckendorfRevBar L ε) + Δy) /
         (zeckendorfRealEval Q' ε + Δx) ^ Real.logb (Q' 0) (Q 0)
 
-/-- Corollary 3, read for `x = ∑ ε Q̃ ≥ ω̃` (as Lemma 17): for `n ≥ p`,
-`δ*[ε] = ∑ rev̄(ε) Q / x^γ < (∑ rev̄(ε) Q + Q_n)/(x + Q̃_n)^γ` (zero-based `Q_n = Q m`,
-`n = m + 1`). As printed (all `ε ∈ Ẽ*`) it fails for `L = (1, 0)`, `L̃ = (1, 1)`, `n = p = 2`,
-`ε = β^{11} + β^{13} ∈ E*` (`rev̄(ε) = ε`): `1.18363… > 1.01645…`.
+/-- **Monotonicity of the ratio under fundamental increments (Corollary 3).** Let $L$ and
+$\tilde L$ form a periodic Zeckendorf pair, let $Q$ be a fundamental sequence of the collection
+$E^*$ determined by $L$, and let $\tilde Q$ be a fundamental sequence of the collection
+$\tilde E^*$ determined by $\tilde L$; indices start at $0$. Put $\omega = Q_0$,
+$\tilde\omega = \tilde Q_0$ and $\gamma = \log_{\tilde\omega} \omega$, let $p$ be the generic
+exponent of $Q$ and $\tilde Q$, let $\delta^*$ be the function $\delta^*$ of $L$, $\tilde L$, $Q$,
+$\tilde Q$, and let $\overline{\mathrm{rev}}$ be the map determined by $L$. Let
+$\varepsilon \in \tilde E^*$ with $x = \sum_k \varepsilon_k \tilde Q_k \ge \tilde\omega$, put
+$y = \sum_k \overline{\mathrm{rev}}(\varepsilon)_k Q_k$, and let $m$ be a natural number with
+$p \le m + 1$. Then $\delta^*(x) = y / x^\gamma$ and
+$y / x^\gamma < (y + Q_m) / (x + \tilde Q_m)^\gamma$.
+
+The hypothesis $x \ge \tilde\omega$ follows the reading of Lemma 17; in the paper's one-based
+indexing $Q_m$ is $Q_n$ with $n = m + 1 \ge p$. As printed (for all $\varepsilon \in \tilde E^*$)
+the corollary fails for $L = (1, 0)$, $\tilde L = (1, 1)$, $n = p = 2$ and
+$\varepsilon = \beta^{11} + \beta^{13}$ (single ones in the paper's entries $11$ and $13$), for
+which $\overline{\mathrm{rev}}(\varepsilon) = \varepsilon$: the left side $1.18363\ldots$ exceeds
+the right side $1.01645\ldots$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Corollary 3 (`integers-2025-A25-cor-3`). -/
@@ -1481,10 +1560,32 @@ public theorem_wanted zeckendorfDeltaStar_lt_add_fundamental {L L' : List ℕ}
         (zeckendorfRealEval Q (zeckendorfRevBar L ε) + Q m) /
           (zeckendorfRealEval Q' ε + Q' m) ^ Real.logb (Q' 0) (Q 0)
 
-/-- Theorem 13: a maximum of `δ*` on `(0, 1)` is attained only at points of `eval_Q̃(Ē* − E*)`; if
-`ε = ∑ ζ^m + β̄^ℓ` (proper `L*`-blocks inside `[1, ℓ - 1]`, `ℓ ≥ 1`) and `δ*[ε]` is the maximum,
-then `ℓ < max{2, p*}` with `p* = p + 1 + (N ln φ + ln(1 - ρ + ω̃^N)) / (ln φ̃ - ln φ)`,
-`ρ = ∑ β̄^1 Q̃`, `N` the length of `L`, `φ = 1/ω`, `φ̃ = 1/ω̃`.
+/-- **Where $\delta^\ast$ can attain its maximum.** Let $L$ and $\tilde L$ be lists of natural
+numbers forming a periodic Zeckendorf pair, let $N$ be the length of $L$, let $E^*$ and
+$\tilde E^*$ be the collections determined by $L$ and $\tilde L$, let $\bar E^*$ be the closure
+of $E^*$, and let $Q$ and $\tilde Q$ be fundamental sequences of $E^*$ and $\tilde E^*$. Let
+$\delta^*$ be the function $\delta^*$ of $L$, $\tilde L$, $Q$, $\tilde Q$, and let $p$ be the
+generic exponent of $Q$ and $\tilde Q$. Indices start at $0$: put $\omega = Q_0$ and
+$\tilde\omega = \tilde Q_0$, write $\sum \varepsilon \tilde Q = \sum_k \varepsilon_k \tilde Q_k$
+for a coefficient function $\varepsilon : \mathbb N \to \mathbb N$, and for $s \in \mathbb N$ let
+$\bar\beta_s$ be the maximal $L^*$-block starting at index $s$. First, if $y \in (0, 1)$ and
+$\delta^*(x) \le \delta^*(y)$ for all $x \in (0, 1)$, then $y = \sum \varepsilon \tilde Q$ for
+some $\varepsilon \in \bar E^*$ with $\varepsilon \notin E^*$. Second, let $\ell \ge 1$ be a
+natural number and let $\eta : \mathbb N \to \mathbb N$ be a sum of disjoint proper $L^*$-blocks
+(possibly none) whose support intervals $[s, k]$ all satisfy $k < \ell - 1$. If
+$\delta^*(x) \le \delta^*\bigl(\sum (\eta + \bar\beta_{\ell - 1}) \tilde Q\bigr)$ for all
+$x \in (0, 1)$, then
+$$
+\ell < \max\left(2,\ p + 1 +
+\frac{N \ln(1 / \omega) + \ln\left(1 - \sum \bar\beta_0 \tilde Q + \tilde\omega^N\right)}
+{\ln(1 / \tilde\omega) - \ln(1 / \omega)}\right).
+$$
+
+In the source's one-based indexing $\bar\beta_s$ is $\bar\beta^{s+1}$, so the blocks
+$\zeta^m$ of $\eta$ lie inside $[1, \ell - 1]$, the point is
+$\sum (\sum_m \zeta^m + \bar\beta^\ell) \tilde Q$, and with $\varphi = 1 / \omega$,
+$\tilde\varphi = 1 / \tilde\omega$ and $\rho = \sum \bar\beta^1 \tilde Q$ the right side is the
+source's $\max\{2, p^*\}$.
 
 Source: Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25,
 Theorem 13 (`integers-2025-A25-thm-13`). -/

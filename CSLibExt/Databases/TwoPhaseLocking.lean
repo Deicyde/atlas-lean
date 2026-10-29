@@ -244,7 +244,11 @@ theorem locksCover_iff (s : List (Action n X)) :
 instance [DecidableEq X] (s : List (Action n X)) : Decidable (LocksCover s) :=
   decidable_of_iff _ (locksCover_iff s).symm
 
-/-- `ReleasesLocks` at one position. -/
+/-- **Release of the lock requested at a position.** For a locked schedule $s$ and a position $q$:
+if $s$ has at position $q$ a lock request (in either mode) by transaction $t$ on item $x$, then
+there is a position $r$ with $q < r$ and $r$ less than the length of $s$ at which $s$ has a release
+by $t$ of $x$. If position $q$ holds a read, a write or a release, or lies beyond the end of $s$,
+the condition holds trivially. -/
 def ReleasedAt (s : List (Action n X)) (q : ℕ) : Prop :=
   match s[q]? with
   | some (.lock t x _) => ∃ r < s.length, q < r ∧ s[r]? = some (.unlock t x)

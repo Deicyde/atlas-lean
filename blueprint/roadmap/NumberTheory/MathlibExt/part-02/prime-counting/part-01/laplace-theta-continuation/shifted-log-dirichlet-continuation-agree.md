@@ -22,7 +22,7 @@ $g_1(s) = \Phi(s + 1) - 1/s$.
 ## Proof depends on
 
 - [The canonical prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
-- [Log Dirichlet Continuation agree](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-agree.md)
+- [The prime logarithmic continuation on the half-plane $\operatorname{Re} s > 1$](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-agree.md)
 
 ## Sources
 

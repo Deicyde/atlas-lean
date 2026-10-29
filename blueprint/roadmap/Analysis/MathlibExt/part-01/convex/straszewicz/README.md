@@ -35,4 +35,4 @@ navigation: module
 
 ## Straszewicz Main
 
-- [Straszewicz theorem](straszewicz-theorem.md)
+- [Straszewicz's theorem](straszewicz-theorem.md)

@@ -6,7 +6,7 @@ navigation: module
 
 ## Language
 
-- [Left Derivation](left-derivation.md)
+- [Leftmost derivation](left-derivation.md)
 - [Ambiguous grammar](is-ambiguous.md)
 
 ## Left Derivation

@@ -16,11 +16,11 @@ over the oriented rectangle $r$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Boundary integral over a rectangle](boundary-integral.md)
 
 ## Sources

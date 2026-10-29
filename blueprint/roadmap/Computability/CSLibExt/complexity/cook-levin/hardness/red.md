@@ -33,7 +33,7 @@ $T = (m + c)^e$ steps.
 - [Bits as indices](veqv.md)
 - [Separator symbol of the verifier](vsep.md)
 - [Input-bit symbol of the verifier](v.md)
-- [F R](../package/f-r.md)
+- [The Cook–Levin reduction function](../package/f-r.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ cell at position $i + \delta(d)$ of the view of $t$ otherwise.
 
 ## Depends on
 
-- [Option Move Offset](option-move-offset.md)
+- [Offset of an optional head move](option-move-offset.md)
 - [Cell view of a two-way tape](to-tape.md)
 
 ## Proof depends on

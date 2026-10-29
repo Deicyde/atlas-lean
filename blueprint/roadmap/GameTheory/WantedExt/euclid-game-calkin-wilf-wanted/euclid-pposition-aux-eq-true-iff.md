@@ -22,7 +22,7 @@ true at $(a, b)$ if and only if $(a, b)$ is a normal-play P-position of the Eucl
 
 - [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 - [Recursive characterization of P-positions](../../MathlibExt/sprague-grundy/is-p-iff.md)
-- [Euclid Moves](euclid-moves.md)
+- [Euclid moves](euclid-moves.md)
 
 ## Sources
 

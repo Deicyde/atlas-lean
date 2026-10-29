@@ -20,7 +20,7 @@ permutations.
 
 ## Depends on
 
-- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 - [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources

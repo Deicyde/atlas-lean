@@ -41,7 +41,7 @@ navigation: module
 ## Stacks
 
 - [Stack contents of the SUBSET-SUM verifier](st.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [Rejecting in one step](rej-one.md)
 
 ## Reading blocks
@@ -63,7 +63,7 @@ navigation: module
 
 ## The summing loop
 
-- [The summing loop](loop-run.md)
+- [The summing loop of the SUBSET-SUM verifier](loop-run.md)
 
 ## The whole run
 

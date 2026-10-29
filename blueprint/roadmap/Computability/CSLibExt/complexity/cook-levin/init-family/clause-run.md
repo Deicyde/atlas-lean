@@ -6,9 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.clause_run
 ---
 
-# Clause run
+# Run of one clause (initial-row generator)
 
-One whole clause: from `e00 c` to `nextC c`, all counters restored.
+**Run of one clause (initial-row generator).** Let $L$ be a layout with $g$ symbol codes, let
+$i_c$ and $k_0$ be natural numbers and let $y$ be a list of $n$ certificate codes. Let $c$ be a
+clause kind for $g$ and $n$ that is well formed for $i_c$, $g$ and $y$, and let $V, B$ be natural
+numbers such that all literals of $c$ at base $B$ (for $i_c$, $g$ and $y$) are in range below $V$.
+Let $F$ be counter values of the generator with empty scratch counters such that $F(b) = B$ for
+the base counter $b$ of $c$, $F(\mathrm{Vc}) = V$ and $F(P) = 0$. Then for every output $o$ and
+flag $v$, the counter part of the generator for $L$, $i_c$, $k_0$, $y$ runs within the step bound
+$\mathrm{clauseB}(n + 2, V)$ for one clause from the clause-start label of $c$, with flag $v$,
+counters $F$ and output $o$, to the label after $c$, with flag false, counters $F$ and output
+$w \cdot o$, where $w$ is the dense encoding of the dense clause over $V$ variables built from the
+literal list of $c$ at base $B$ (for $i_c$, $g$ and $y$).
 
 ## Depends on
 
@@ -23,12 +33,12 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Labels of the initial-row generator](gl.md)
 - [Label after a clause](next-c.md)
 - [Literals of a clause kind in range](in-r.md)
-- [Labels of the initial-row generator](lb.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [Empty scratch counters](rest.md)
 - [Well-formed init-family clause kinds](wf.md)
 - [Step bound for one clause (initial-row generator)](clause-b.md)
 - [Literals of a clause kind](clits.md)
-- [Prog](prog.md)
+- [The counter part of the initial-row generator](prog.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
@@ -58,7 +68,7 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
 - [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

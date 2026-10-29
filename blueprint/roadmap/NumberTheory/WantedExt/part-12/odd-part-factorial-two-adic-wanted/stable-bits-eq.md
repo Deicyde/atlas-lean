@@ -6,10 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.stableBits_eq
 ---
 
-# Stable Bits eq
+# Formula for the stable bits
 
-The characteristic formula for `stab` exposes the factorial exponent, right
-shift, and modulus; at `s=e+1` these are respectively `e+d`, `e+1`, and `d`.
+**Formula for the stable bits.** Write $\operatorname{od}(n)$ for the odd part of a natural
+number $n$. For all natural numbers $s$ and $d$, the stable bits are
+$\operatorname{stab}(s, d) = \lfloor \operatorname{od}((2^{s+d-1})!) / 2^s \rfloor \bmod 2^d$,
+where $s + d - 1$ is read as $0$ when $s = d = 0$.
+
+For $s = e + 1$ the factorial is that of $2^{e+d}$, the shift is by $e + 1$ binary digits and the
+modulus is $2^d$.
 
 ## Depends on
 

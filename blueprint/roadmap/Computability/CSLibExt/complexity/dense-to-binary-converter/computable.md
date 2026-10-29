@@ -18,7 +18,7 @@ the dense-to-binary translation of $w$ on its output stack and all other stacks 
 
 ## Proof depends on
 
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Exact runs of the dense-to-binary converter](run.md)
 - [Stacks of the dense-to-binary machine](stk.md)
 - [The dense-to-binary translation on the reversed bit string](../dense-to-binary/conv.md)

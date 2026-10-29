@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pattern containment](contains-pattern.md)
+- [Pattern containment in words](contains-pattern.md)
 - [Weak ascent sequence](is-weak-ascent-seq.md)
 
 ## Sources

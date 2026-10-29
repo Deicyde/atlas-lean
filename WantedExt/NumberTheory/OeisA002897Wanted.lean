@@ -61,7 +61,10 @@ noncomputable def pPoly (n : ℕ) : P :=
   let p3 : P := 1 + X - Y + Z
   p1 ^ (2 * n) * p2 ^ n * p3 ^ n
 
-/-- The sequence gives the diagonal coefficients. -/
+/-- **Diagonal-coefficient property of the cubed central binomial coefficients.** This is the
+proposition that for every natural number $n$, the coefficient of $x^n y^n z^n$ in the
+polynomial $(1 + x + y + z)^{2n} (1 + x + y - z)^n (1 + x - y + z)^n$ in three variables
+$x, y, z$ with integer coefficients equals $\binom{2n}{n}^3$. -/
 def a_eq_coeff : Prop :=
   ∀ (n : ℕ), (a n : ℤ) = AddMonoidAlgebra.coeff (pPoly n) (xyzPowN n)
 

@@ -15,7 +15,7 @@ remoteness $R(x)$ of $x$ in $\mathrm{NIM}(k + 1, k)$.
 
 ## Depends on
 
-- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [M-rule length](exact-slow-nim-mrule-length.md)
 - [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 

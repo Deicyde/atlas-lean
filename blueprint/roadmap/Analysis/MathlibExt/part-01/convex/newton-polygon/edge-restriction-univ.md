@@ -16,11 +16,11 @@ $f$ itself.
 
 ## Depends on
 
-- [Edge Restriction](edge-restriction.md)
+- [Restriction of a polynomial to a set of exponents](edge-restriction.md)
 
 ## Proof depends on
 
-- [Exponent To Real](exponent-to-real.md)
+- [Exponent vectors as points of the plane](exponent-to-real.md)
 
 ## Sources
 

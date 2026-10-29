@@ -17,7 +17,7 @@ sequence $(m_i, a_i)_{0 \le i \le k-1}$ with $|m_i| = v_i$ for every $i < k$.
 
 - [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
 - [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

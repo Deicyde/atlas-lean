@@ -19,7 +19,7 @@ variable $x \ge n$ to false.
 ## Proof depends on
 
 - [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Sources
 

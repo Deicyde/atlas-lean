@@ -26,7 +26,7 @@ implication graph of $\varphi$.
 - [Skew symmetry of the implication graph](skew.md)
 - [Resolution invariant of the implication graph](inv.md)
 - [Complement of a literal](neg.md)
-- [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
+- [Resolvent of two clauses](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources
 

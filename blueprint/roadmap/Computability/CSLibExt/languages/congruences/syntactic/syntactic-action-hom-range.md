@@ -18,7 +18,7 @@ transformation induced by reading $x$, is exactly the transition monoid of $M$.
 - [Accessible](../minimality/accessible.md)
 - [State-separated DFA](../universal/state-separated.md)
 - [State transformation monoid](state-transformation.md)
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Transition monoid of a DFA](transition-monoid.md)
 - [Action of the syntactic monoid on states](syntactic-action-hom.md)
 - [Syntactic congruence](syntactic-con.md)

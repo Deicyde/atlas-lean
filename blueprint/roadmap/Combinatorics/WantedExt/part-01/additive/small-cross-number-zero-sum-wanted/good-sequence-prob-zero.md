@@ -18,7 +18,7 @@ empty sequence has no nonempty zero-sum subsequence, so it is not good.
 
 ## Proof depends on
 
-- [Good sequences](is-good-sequence.md)
+- [Good sequences in a finite abelian group](is-good-sequence.md)
 
 ## Sources
 

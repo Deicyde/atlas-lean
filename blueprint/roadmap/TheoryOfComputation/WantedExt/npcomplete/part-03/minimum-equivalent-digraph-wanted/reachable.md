@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Directed adjacency in an arc list](dadj.md)
+- [Directed adjacency for MINIMUM EQUIVALENT DIGRAPH](dadj.md)
 
 ## Sources
 

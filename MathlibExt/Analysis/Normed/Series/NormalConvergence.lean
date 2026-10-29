@@ -44,8 +44,11 @@ in particular it is $0$ when $S$ is empty and $\infty$ when $\|g\|$ is unbounded
 noncomputable def supNormOn (g : X → E) (S : Set X) : ℝ≥0∞ :=
   ⨆ x : S, ENNReal.ofReal ‖g x‖
 
-/-- Normal convergence of the function series `f` on `S`: the sup-norm series
-is finite in `ℝ≥0∞`. -/
+/-- **Normal convergence of a series of functions on a set.** Let $X$ be a type and $E$ a
+seminormed additive commutative group. A series of functions $f_n \colon X \to E$
+($n \in \mathbb{N}$) converges normally on a set $S \subseteq X$ when the sum
+$\sum_{n} \sup_{x \in S} \|f_n(x)\|$ is finite, where each supremum norm and the sum are taken in
+the extended nonnegative reals $[0, \infty]$. -/
 def ConvergesNormallyOn (f : ℕ → X → E) (S : Set X) : Prop :=
   ∑' n, supNormOn (f n) S ≠ ∞
 
@@ -99,8 +102,10 @@ theorem ConvergesNormallyOn.mono {f : ℕ → X → E} {S T : Set X}
 
 variable [TopologicalSpace X]
 
-/-- Local normal convergence of the function series `f` on `S`: every `x ∈ S`
-has a neighbourhood whose intersection with `S` carries normal convergence. -/
+/-- **Local normal convergence of a series of functions on a set.** Let $X$ be a topological
+space and $E$ a seminormed additive commutative group. A series of functions
+$f_n \colon X \to E$ ($n \in \mathbb{N}$) converges locally normally on a set $S \subseteq X$ when
+every $x \in S$ has a neighbourhood $U$ such that the series converges normally on $U \cap S$. -/
 def ConvergesLocallyNormallyOn (f : ℕ → X → E) (S : Set X) : Prop :=
   ∀ x ∈ S, ∃ U ∈ 𝓝 x, ConvergesNormallyOn f (U ∩ S)
 

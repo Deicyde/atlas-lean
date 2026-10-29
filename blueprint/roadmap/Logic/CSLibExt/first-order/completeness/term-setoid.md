@@ -21,7 +21,7 @@ exactly when the equation $s = t$ belongs to $\Delta$.
 - [Natural deduction](../natural-deduction/derivable.md)
 - [Symmetry of equality in natural deduction](../natural-deduction/symm.md)
 - [Transitivity of equality in natural deduction](../natural-deduction/trans.md)
-- [Maximal consistent sets are deductively closed](../consistency/mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](../consistency/mem-of-provable.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Sources

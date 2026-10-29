@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp Computable](comp-computable.md)
+- [The composite polynomial-time TM2 computation](comp-computable.md)
 
 ## Sources
 

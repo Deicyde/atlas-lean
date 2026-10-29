@@ -46,7 +46,7 @@ with the occurrences in $qs$, in order, pushed on top. The counter $N$ is not ad
 - [Copy sites of the 3-COLOR emitter running in sequence](chain.md)
 - [Copy sites of the 3-COLOR emitter](site.md)
 - [Bit list of a copy site of the 3-COLOR emitter](atom.md)
-- [Back run](back-run.md)
+- [3-COLOR emitter: moving the walk side back](back-run.md)
 - [Bits pushed by a sequence of copy sites of the 3-COLOR emitter](chain-out.md)
 - [Running a sequence of copy sites of the 3-COLOR emitter](chain-run.md)
 - [Bit encoding of an edge](e-b.md)

@@ -27,7 +27,7 @@ $\mathrm{pre}(C, Q')$ and $\mathrm{vc}(C, Q')$ holds.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [IMP program states](../syntax/state.md)
 
 ## Sources

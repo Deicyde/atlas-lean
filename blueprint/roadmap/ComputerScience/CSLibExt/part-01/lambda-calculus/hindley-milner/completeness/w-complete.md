@@ -53,7 +53,7 @@ This is the completeness theorem of Damas and Milner.
 - [Substituting into a generalization is more general](subst-ty-gen-more-general.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
 - [Lists of equations](../../../../part-02/unification/basic/equations.md)
-- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Composition of substitutions on first-order terms](../../../../part-02/unification/basic/comp.md)
 - [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
 - [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
 - [Variables of a term](../../../../part-02/unification/basic/vars.md)

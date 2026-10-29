@@ -20,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Charge sequences](charge-seq.md)
-- [Field Sum](field-sum.md)
+- [Field of a charge sequence](field-sum.md)
 - [Summable charge sequences](is-summable.md)
 - [Distinct charge positions](points-distinct.md)
 

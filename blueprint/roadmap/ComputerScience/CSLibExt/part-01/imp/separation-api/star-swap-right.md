@@ -23,7 +23,7 @@ assertion satisfy the second.
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [Symmetry of heap disjointness](../heap/symm.md)
 - [IMP program states](../syntax/state.md)
 

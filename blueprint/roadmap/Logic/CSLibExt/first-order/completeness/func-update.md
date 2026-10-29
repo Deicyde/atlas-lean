@@ -22,7 +22,7 @@ $a = b$ lies in $\Delta$, then the equation $f(x[i := a]) = f(x[i := b])$ lies i
 
 - [Natural deduction](../natural-deduction/derivable.md)
 - [Substitution of equals in maximal consistent sets](../consistency/instantiate-mem-of-equal.md)
-- [Maximal consistent sets are deductively closed](../consistency/mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](../consistency/mem-of-provable.md)
 - [Provability from a set of formulas](../natural-deduction/provable.md)
 - [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 - [Instantiating the outermost bound variable of a term](../syntax/instantiate-term.md)

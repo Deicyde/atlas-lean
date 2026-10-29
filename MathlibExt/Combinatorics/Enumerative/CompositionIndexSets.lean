@@ -41,7 +41,8 @@ public theorem mem_compositionHalfIndexSet {m n q k : ℕ} :
       2 * (k : ℤ) ≡ (n : ℤ) - (q : ℤ) [ZMOD (m : ℤ)] ∧ 2 * k < n :=
   Iff.rfl
 
-/-- Boundary characteristic: `S(m, 0, q)` is empty.
+/-- **The index set $S(m, 0, q)$ is empty.** For all natural numbers $m$ and $q$, the index set
+$S(m, 0, q)$ is empty.
 
 Source: Bowman, *Compositions with an Odd Number of Parts, and Other
 Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6,
@@ -75,7 +76,8 @@ public theorem mem_compositionIndexSet {m n q k : ℕ} :
       (k : ℤ) ≡ (n : ℤ) - (q : ℤ) [ZMOD (m : ℤ)] ∧ k < n :=
   Iff.rfl
 
-/-- Boundary characteristic: `T(m, 0, q)` is empty.
+/-- **The index set $T(m, 0, q)$ is empty.** For all natural numbers $m$ and $q$, the index set
+$T(m, 0, q)$ is empty.
 
 Source: Bowman, *Compositions with an Odd Number of Parts, and Other
 Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6,

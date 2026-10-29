@@ -19,7 +19,7 @@ and $0$ otherwise, and the same state $s$.
 ## Depends on
 
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Stack machine instructions](instr.md)
 - [Multi-step execution of the stack machine](steps.md)
 - [Instruction count of a Boolean expression](blen.md)

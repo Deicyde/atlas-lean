@@ -9,7 +9,7 @@ navigation: module
 - [Syntactic equivalence is stable under right multiplication](syntactic-rel-suffix.md)
 - [Syntactic equivalence is compatible with concatenation](syntactic-rel-append.md)
 - [Syntactic congruence](syntactic-con.md)
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Syntactic morphism](syntactic-morphism.md)
 - [Syntactically equivalent words agree on membership](syntactic-rel-mem-iff.md)
 - [Accepting set of the syntactic monoid](syntactic-accept.md)

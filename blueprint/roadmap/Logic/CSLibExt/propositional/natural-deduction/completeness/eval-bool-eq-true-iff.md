@@ -18,11 +18,11 @@ $A \in M$.
 ## Depends on
 
 - [Truth-table evaluation](../semantics/eval-bool.md)
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 
 ## Proof depends on
 
-- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
+- [Maximal consistent sets are deductively closed in propositional natural deduction](mem-of-derivable-in.md)
 - [Each proposition or its negation lies in a maximal consistent set](mem-or-neg-mem.md)
 
 ## Sources

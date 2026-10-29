@@ -14,7 +14,7 @@ $L$ that sends the transformation induced by each word $w$ to the syntactic clas
 ## Depends on
 
 - [State transformation monoid](../syntactic/state-transformation.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Transition monoid of a DFA](../syntactic/transition-monoid.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 

@@ -15,7 +15,7 @@ for each peak $UD$: the run of down steps starting at the $D$ of that peak.
 
 ## Depends on
 
-- [Dyck Peak Descents](../../../../../MathlibExt/part-01/enumerative/part-02/dyck-peak-descents/dyck-peak-descents.md)
+- [Peak descents](../../../../../MathlibExt/part-01/enumerative/part-02/dyck-peak-descents/dyck-peak-descents.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
 - [Set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)

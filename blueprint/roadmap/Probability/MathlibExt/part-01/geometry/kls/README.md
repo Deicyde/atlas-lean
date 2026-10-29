@@ -13,7 +13,7 @@ navigation: module
 - [Inverse half-space Cheeger constant](inverse-halfspace-cheeger-constant.md)
 - [Dimensional KLS constant](dimensional-kls-constant.md)
 - [KLS constant](kls-constant.md)
-- [Is Smooth Poincare Bound](is-smooth-poincare-bound.md)
+- [Smooth Poincaré bounds](is-smooth-poincare-bound.md)
 - [Smooth Poincaré constant](smooth-poincare-constant.md)
 - [The empty set has zero outer Minkowski boundary](outer-minkowski-boundary-empty.md)
 - [Cheeger coefficient of the zero measure](cheeger-coefficient-zero.md)

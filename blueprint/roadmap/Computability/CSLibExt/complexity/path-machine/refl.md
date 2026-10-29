@@ -14,7 +14,7 @@ assignment $S$ of contents to its stacks, $S$ agrees with itself off $A$.
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources

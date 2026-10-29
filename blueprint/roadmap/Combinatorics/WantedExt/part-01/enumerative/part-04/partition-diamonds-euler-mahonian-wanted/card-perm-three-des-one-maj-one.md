@@ -14,7 +14,7 @@ $\operatorname{maj}(\tau) = 1$; equivalently, their descent set is $\{1\}$.
 
 ## Depends on
 
-- [Number of descents](perm-des.md)
+- [Number of descents from the descent set](perm-des.md)
 - [Major index of a permutation](perm-maj.md)
 
 ## Sources

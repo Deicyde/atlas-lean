@@ -19,7 +19,7 @@ navigation: module
 - [Two-phase schedules](two-phase.md)
 - [Strict two-phase schedules](strict-two-phase.md)
 - [Lock coverage at a position](locks-cover-at.md)
-- [Released At](released-at.md)
+- [Release of the lock requested at a position](released-at.md)
 - [Two-phase condition at a pair of positions](two-phase-at.md)
 - [Strictness at a pair of positions](strict-at.md)
 - [Release test](is-unlock-by.md)

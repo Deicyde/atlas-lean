@@ -23,7 +23,7 @@ $i$.
 
 ## Proof depends on
 
-- [Range report of a built kd-tree](mem-report-build-iff.md)
+- [Membership in the range report of a built kd-tree](mem-report-build-iff.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.exists_indexedEulerian_connectedSupport
 ---
 
-# Euler circuits when the non-isolated vertices are connected
+# Euler circuits in edge-indexed multigraphs whose non-isolated vertices are connected
 
-**Euler circuits when the non-isolated vertices are connected.** Let $M$ be an edge-indexed
-multigraph with finitely many vertices and finitely many edges. Suppose that the subgraph of the
-underlying simple graph of $M$ induced on its non-isolated vertices is connected, and that every
-vertex of $M$ has even degree. Then there are a vertex $u$ and a closed indexed walk from $u$ to
-$u$ that is Eulerian, that is, it traverses every edge of $M$ exactly once.
+**Euler circuits in edge-indexed multigraphs whose non-isolated vertices are connected.** Let
+$M$ be an edge-indexed multigraph with finitely many vertices and finitely many edges. Suppose
+that the subgraph of the underlying simple graph of $M$ induced on its non-isolated vertices is
+connected, and that every vertex of $M$ has even degree. Then there are a vertex $u$ and a closed
+indexed walk from $u$ to $u$ that is Eulerian, that is, it traverses every edge of $M$ exactly
+once.
 
 A connected graph has at least one vertex, so the hypothesis requires $M$ to have an edge.
 
@@ -27,9 +28,9 @@ A connected graph has at least one vertex, so the hypothesis requires $M$ to hav
 
 ## Proof depends on
 
-- [Euler circuits when the non-isolated vertices are connected](../euler-circuit/exists-is-eulerian-2.md)
+- [Euler circuits in simple graphs whose non-isolated vertices are connected](../euler-circuit/exists-is-eulerian-2.md)
 - [Incidence](inc.md)
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Edge list of an indexed walk](edges.md)
 - [Incidence is membership in the endpoint pair](inc-iff.md)
 - [Adjacency in the underlying graph](underlying-adj.md)

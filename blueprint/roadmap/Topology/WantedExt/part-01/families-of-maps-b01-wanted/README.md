@@ -6,7 +6,7 @@ navigation: module
 # Families Of Maps B01
 
 - [Families of maps supported on a set](supported.md)
-- [Adapted To](adapted-to.md)
+- [Adapted families of maps](adapted-to.md)
 - [Convex linear polyhedra](is-polyhedron.md)
 - [Polyhedral subdivisions](subdivision.md)
 - [Closed cells](closed-cell.md)

@@ -616,10 +616,21 @@ public theorem_wanted exists_mvPolynomial_coeff_qMZV_eq_sum_stanleyPartitions
       coeff N (qMZV kQ) = ∑ s ∈ Finset.Icc 1 kQ.length, ∑ p ∈ stanleyPartitions s N,
         MvPolynomial.eval (Sum.elim (fun j => (p.1 j : ℚ)) fun j => (p.2 j : ℚ)) (f s)
 
-/-- A `q`-series `S` lies in `𝒵_q` iff there are `f₀ ∈ ℚ` and polynomials
-`f_r ∈ ℚ[X₁, …, X_r, Y₁, …, Y_r]`, all but finitely many zero, with
-`S = f₀ + ∑_{N ≥ 1} (∑_{r ≥ 1} ∑_{(𝐦, 𝐧) ∈ 𝒫_r(N)} f_r(𝐦, 𝐧)) q^N`. The inner sum is
-written over `1 ≤ r ≤ N`, which is exact because `𝒫_r(N)` is empty for `r > N`.
+/-- **Polynomial functions on partitions characterize $\mathcal{Z}_q$.** Let
+$\mathcal{Z}_q = \mathcal{Z}_{q,0}$ be the space of general qMZVs, and for natural numbers $r$
+and $N$ let $\mathcal{P}_r(N)$ be the set of partitions of $N$ of length $r$ in Stanley
+coordinates. A power series $S = \sum_{N \ge 0} a_N q^N \in \mathbb{Q}[[q]]$ lies in
+$\mathcal{Z}_q$ if and only if there are $f_0 \in \mathbb{Q}$, polynomials
+$f_r \in \mathbb{Q}[X_1, \dots, X_r, Y_1, \dots, Y_r]$ for $r \ge 1$ and a natural number $R$
+with $f_r = 0$ for every $r > R$, such that $a_0 = f_0$ and, for every $N \ge 1$,
+
+$$a_N = \sum_{r=1}^{N} \sum_{(\mathbf{m}, \mathbf{n}) \in \mathcal{P}_r(N)}
+f_r(\mathbf{m}, \mathbf{n}),$$
+
+where $f_r(\mathbf{m}, \mathbf{n})$ is the value of $f_r$ at $X_i = m_i$, $Y_i = n_i$.
+
+The sum over $r$ stops at $N$, which loses nothing because $\mathcal{P}_r(N)$ is empty for
+$r > N$.
 
 Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024),
 Article A6, Theorem 19 (`integers-2024-A6-thm-19`). -/
@@ -1265,9 +1276,14 @@ public theorem_wanted coeff_oozQMZV_szBlockIndex_eq_sum_choose (r : ℕ) (k d : 
           ∏ j : Fin r, ((((m j - (if h : j.val + 1 < r then m ⟨j.val + 1, h⟩ else 0) - 1).choose
             (d j) : ℕ) : ℚ⟦X⟧) * ((1 - X ^ m j)⁻¹) ^ k j))
 
-/-- `𝒵°_{q,1}` is spanned by brackets, by Okounkov qMZVs, and by Bradley–Zhao qMZVs, each with all
-entries `kᵢ ≥ 2`: `𝒵°_{q,1} = ⟨g(k) | kᵢ ≥ 2⟩ = ⟨ζ_q^Oko(k) | kᵢ ≥ 2⟩ = ⟨ζ_q^BZ(k) | kᵢ ≥ 2⟩`.
-The bracket `g(k₁, …, kᵣ)` is the bi-bracket with all `dⱼ = 0`.
+/-- **Brackets, Okounkov qMZVs and Bradley–Zhao qMZVs span $\mathcal{Z}^\circ_{q,1}$.** For an
+index $k = (k_1, \dots, k_r)$ of natural numbers let $g(k) = g(k_1, \dots, k_r; 0, \dots, 0)$ be
+the bracket, that is, the bi-bracket with all $d_j = 0$, and let $\zeta_q^{\mathrm{Oko}}(k)$ and
+$\zeta_q^{BZ}(k)$ be the Okounkov and Bradley–Zhao qMZVs. Then the space
+$\mathcal{Z}^\circ_{q,1}$ equals the $\mathbb{Q}$-linear span of the brackets $g(k)$, equals the
+$\mathbb{Q}$-linear span of the Okounkov qMZVs $\zeta_q^{\mathrm{Oko}}(k)$, and equals the
+$\mathbb{Q}$-linear span of the Bradley–Zhao qMZVs $\zeta_q^{BZ}(k)$, where in each case $k$ runs
+over all indices of length $r \ge 0$ with every $k_i \ge 2$.
 
 Source: Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6,
 Proposition 16 (`integers-2024-A6-prop-16`). -/

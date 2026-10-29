@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Knott Expansions](knott-expansions.md)
+- [Knott expansions](knott-expansions.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ $\alpha$ is at least $1$.
 ## Depends on
 
 - [Totally positive algebraic integers](../../../../MathlibExt/part-01/height/schur-siegel-smyth/is-totally-positive.md)
-- [Absolute Trace](../../../../MathlibExt/part-01/height/schur-siegel-smyth/absolute-trace.md)
+- [Absolute trace](../../../../MathlibExt/part-01/height/schur-siegel-smyth/absolute-trace.md)
 
 ## Sources
 

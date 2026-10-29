@@ -5,7 +5,7 @@ navigation: module
 # Completeness
 
 - [Satisfiable sets of propositions](bool-satisfiable.md)
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 
 ## Lindenbaum's lemma
 
@@ -14,7 +14,7 @@ navigation: module
 ## Maximal consistent sets
 
 - [Propositions outside a maximal consistent set are refuted by it](exists-refutation.md)
-- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
+- [Maximal consistent sets are deductively closed in propositional natural deduction](mem-of-derivable-in.md)
 - [A maximal consistent set contains its theory](subset-theory.md)
 - [Each proposition or its negation lies in a maximal consistent set](mem-or-neg-mem.md)
 - [Truth lemma for propositional natural deduction](eval-bool-eq-true-iff.md)

@@ -16,7 +16,7 @@ $a^{(n)}_{c p^k,\, b p^k + 1} \equiv a^{(n_1)}_{c,\, b + 1} \pmod{p}$.
 
 ## Depends on
 
-- [Ducci Coeff](ducci-coeff.md)
+- [Ducci coefficients](ducci-coeff.md)
 
 ## Sources
 

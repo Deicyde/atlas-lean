@@ -18,7 +18,7 @@ quantile function $Q_\mu : \mathbb{R} \to \mathbb{R}$ is measurable.
 
 ## Proof depends on
 
-- [Cdf Quantile le iff](cdf-quantile-le-iff.md)
+- [The quantile function as a generalized inverse of the cdf](cdf-quantile-le-iff.md)
 
 ## Sources
 

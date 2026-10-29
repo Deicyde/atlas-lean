@@ -27,7 +27,7 @@ navigation: module
 - [Example of the tie-and-value map](peakless-tieless-of-nondecreasing-exampl.md)
 - [Nondecreasing and peakless-tieless parking functions are in bijection](peakless-tieless-of-nondecreasing-bij-on.md)
 - [Fuel-bounded ascent-to-descent rearrangement](ascent-to-descent-rearrangement-aux.md)
-- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
+- [Ascent-to-descent rearrangement](ascent-to-descent-rearrangement.md)
 - [Words of length at most one are fixed by the ascent-to-descent rearrangement](ascent-to-descent-rearrangement-of-lengt.md)
 - [Example of the ascent-to-descent rearrangement](ascent-to-descent-rearrangement-example.md)
 - [Ascents of a word are the descents of its rearrangement](asc-list-eq-des-list-ascent-to-descent-r.md)

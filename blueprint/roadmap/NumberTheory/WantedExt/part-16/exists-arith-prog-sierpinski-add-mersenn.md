@@ -15,7 +15,7 @@ $(a + rd + M_j) \cdot 2^n + 1$ is composite.
 
 ## Depends on
 
-- [Is Composite](../../MathlibExt/part-04/composite/is-composite.md)
+- [Composite numbers](../../MathlibExt/part-04/composite/is-composite.md)
 
 ## Sources
 

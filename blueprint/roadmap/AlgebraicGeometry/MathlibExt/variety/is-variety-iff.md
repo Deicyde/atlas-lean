@@ -16,7 +16,7 @@ reduced.
 
 ## Depends on
 
-- [Variety over a field](is-variety.md)
+- [Geometrically reduced variety over a field](is-variety.md)
 
 ## Sources
 

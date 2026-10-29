@@ -19,7 +19,7 @@ $\sigma$ and gap penalty $g$.
 - [Alignment](../sequence-alignment/alignment.md)
 - [Gap states](gap-state.md)
 - [Affine-gap score from a gap state](affine-score-aux.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 
 ## Proof depends on
 

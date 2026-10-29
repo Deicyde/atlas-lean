@@ -140,8 +140,9 @@ public theorem abstraction_empty {α : Type u} {β : Type v} (hash : α → Nat)
       ([] : List (Sigma fun _ : α => β))).toFinmap = ∅
   rw [List.flatMap_eq_nil_iff.mpr (fun _ _ => rfl), Finmap.toFinmap_nil]
 
-/-- **Lookup after insertion.** For every hash table $T$, every key $k$ and every value $v$, looking
-up $k$ in the table obtained by inserting $k$ with value $v$ into $T$ returns $v$. -/
+/-- **Hash table lookup after insertion.** For every hash table $T$, every key $k$ and every
+value $v$, looking up $k$ in the table obtained by inserting $k$ with value $v$ into $T$ returns
+$v$. -/
 public theorem lookup_insert {α : Type u} {β : Type v} {hash : α → Nat} [DecidableEq α]
     (key : α) (value : β) (table : HashTable α β hash) :
     lookup key (insert key value table) = some value := by

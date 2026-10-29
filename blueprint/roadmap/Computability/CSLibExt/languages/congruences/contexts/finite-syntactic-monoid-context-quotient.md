@@ -14,7 +14,7 @@ syntactic monoid of the context quotient $u^{-1} L v^{-1} = \{x \mid uxv \in L\}
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Context quotient](context-quotient.md)
 
 ## Proof depends on

@@ -23,7 +23,7 @@ the Needleman–Wunsch score of $x$ and $y$.
 
 - [Alignment](../sequence-alignment/alignment.md)
 - [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Needleman–Wunsch is optimal](../sequence-alignment/alignment-score-le-nw-score.md)
 - [The list of all alignments](../sequence-alignment/alignments.md)
 - [Band check from a starting offset](banded-from.md)

@@ -11,7 +11,7 @@ navigation: module
 ## Diamonds: the detour walk
 
 - [The tokens of a literal do not start with a clause end](lit-toks-head.md)
-- [Dlit run](dlit-run.md)
+- [One literal of the detour walk](dlit-run.md)
 - [The literals of a clause in the detour walk](dlits-run.md)
 - [One clause of the detour walk](dclause-run.md)
 - [The detour walk of a diamond in the HAMPATH emitter](dwalk-run.md)

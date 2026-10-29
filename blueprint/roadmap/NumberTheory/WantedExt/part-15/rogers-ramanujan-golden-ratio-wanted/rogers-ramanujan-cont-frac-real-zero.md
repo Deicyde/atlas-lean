@@ -13,7 +13,7 @@ continued fraction $R$ satisfies $R(0) = 0$.
 
 ## Depends on
 
-- [Rogers Ramanujan Cont Frac Real](rogers-ramanujan-cont-frac-real.md)
+- [The real Rogers–Ramanujan continued fraction](rogers-ramanujan-cont-frac-real.md)
 
 ## Sources
 

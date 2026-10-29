@@ -45,10 +45,15 @@ formalized here; the catalogue bounds are recorded against this affine-chart
 supremum in `WantedExt/AlgebraicGeometry/SeshadriConstantWanted.lean`.
 -/
 
-/-- A polynomial in two complex variables, representing an affine plane curve. -/
+/-- **Polynomials in two complex variables.** A plane polynomial is a polynomial
+$f \in \mathbb{C}[X_0, X_1]$ in two variables $X_0, X_1$ with complex coefficients.
+
+Such polynomials are used to represent affine plane curves. -/
 abbrev PlanePolynomial : Type := MvPolynomial (Fin 2) ℂ
 
-/-- A point of the affine complex plane. -/
+/-- **Points of the complex affine plane.** A point of the complex affine plane is a pair
+$a = (a_0, a_1)$ of complex numbers, that is, an element of $\mathbb{C}^2$, with coordinates
+indexed by $0$ and $1$. -/
 abbrev AffinePoint : Type := Fin 2 → ℂ
 
 /-- **Translate of a plane polynomial.** For a polynomial $f \in \mathbb{C}[x_1, x_2]$ and a

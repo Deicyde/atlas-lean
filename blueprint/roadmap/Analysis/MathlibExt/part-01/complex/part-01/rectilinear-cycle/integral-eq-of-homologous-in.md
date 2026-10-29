@@ -18,7 +18,7 @@ $\Lambda$.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 - [Rectilinear cycles homologous in a set](homologous-in.md)
 - [Contour integral over a rectilinear cycle](integral.md)
 
@@ -26,7 +26,7 @@ $\Lambda$.
 
 - [Cauchy–Goursat theorem for rectilinear cycles](integral-eq-zero-of-filling-supported-in.md)
 - [Integral over a difference of cycles](integral-sub.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

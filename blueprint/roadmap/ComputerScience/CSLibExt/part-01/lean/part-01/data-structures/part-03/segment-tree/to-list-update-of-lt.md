@@ -18,7 +18,7 @@ Validity is what ties the cached sizes used for routing to the leaf list.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Size of a segment tree](size.md)
 - [Leaf list of a segment tree](to-list.md)

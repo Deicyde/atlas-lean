@@ -14,7 +14,7 @@ to $\ell_1$ or to $\ell_2$.
 
 ## Depends on
 
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 
 ## Proof depends on
 

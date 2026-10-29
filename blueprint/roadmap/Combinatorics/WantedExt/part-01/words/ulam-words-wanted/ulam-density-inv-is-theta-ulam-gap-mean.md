@@ -16,7 +16,7 @@ that $c \, \mu_g(n) \le 2^n / |U_n| \le C \, \mu_g(n)$ for all sufficiently larg
 ## Depends on
 
 - [Mean gap of the Ulam values](ulam-gap-mean.md)
-- [Ulam Word Count](ulam-word-count.md)
+- [Number of Ulam words of a given length](ulam-word-count.md)
 
 ## Sources
 

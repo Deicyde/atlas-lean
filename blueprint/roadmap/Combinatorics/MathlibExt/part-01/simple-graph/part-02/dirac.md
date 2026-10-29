@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.DiracWanted.dirac
 ---
 
-# Dirac
+# Dirac's theorem
 
-Dirac's theorem: a finite simple graph with at least 3 vertices whose minimum degree is at least
-half the number of vertices is Hamiltonian.
+**Dirac's theorem.** Let $G$ be a finite simple graph with $n \ge 3$ vertices in which every
+vertex has degree at least $n/2$. Then $G$ is Hamiltonian, that is, it has a cycle that visits
+every vertex exactly once.
 
 ## Depends on
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Turan Three Value Bounded Distribution
 
-- [Root Mult](root-mult.md)
+- [Multiplicity of a root of $f = w$](root-mult.md)
 - [Multiplicity of a pole](pole-mult.md)
 - [Multiplicity of a value on the Riemann sphere](root-mult-sph.md)
 - [Bounded value distribution](is-bounded-value-distribution.md)

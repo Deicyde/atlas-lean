@@ -20,7 +20,7 @@ assignments.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](lift-ren.md)
 - [Types of the simply typed lambda calculus with references](ty.md)
 
 ## Sources

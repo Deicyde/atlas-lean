@@ -17,7 +17,7 @@ is empty).
 
 ## Proof depends on
 
-- [Canonical Line](canonical-line.md)
+- [Canonical line](canonical-line.md)
 
 ## Sources
 

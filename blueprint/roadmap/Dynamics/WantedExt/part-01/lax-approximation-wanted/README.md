@@ -12,4 +12,4 @@ navigation: module
 - [Grid cube in the torus](cube.md)
 - [Coordinate shift between grid cubes](cube-shift.md)
 - [Cyclic cube exchange](is-cyclic-cube-exchange.md)
-- [Lax approximation](lax-approximation.md)
+- [Lax's approximation theorem](lax-approximation.md)

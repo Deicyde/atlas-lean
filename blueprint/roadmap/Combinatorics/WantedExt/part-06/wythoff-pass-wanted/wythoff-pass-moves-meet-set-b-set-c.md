@@ -5,12 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPass_moves_meet_setB_setC
 ---
 
-# Wythoff Pass moves meet set B set C
+# Moves into the sets $B$ and $C$ away from the corner
 
-For `x ≥ 9` or `y ≥ 9`: (i) if `y ≤ 8`, horizontal moves from `(x, y, 1)` reach both `B`
-and `C` and vertical moves reach neither; (ii) symmetrically if `x ≤ 8`; (iii) if
-`x ≤ y + 4` and `y ≤ x + 4`, diagonal moves reach both `B` and `C`; (iv) if `x ≥ y + 5` or
-`y ≥ x + 5`, diagonal moves reach neither.
+**Moves into the sets $B$ and $C$ away from the corner.** Let
+$B = \{(0, 0), (1, 3), (3, 1), (2, 5), (5, 2), (4, 8), (8, 4), (6, 7), (7, 6)\}$ and
+$C = \{(0, 1), (1, 0), (2, 2), (3, 6), (6, 3), (4, 8), (8, 4), (5, 7), (7, 5)\}$. For natural
+numbers $x, y$, call the pairs $(u, y)$ with $u < x$ the horizontal moves from $(x, y)$, the
+pairs $(x, v)$ with $v < y$ its vertical moves, and the pairs $(x - t, y - t)$ with
+$1 \le t \le \min(x, y)$ its diagonal moves. Suppose that $x \ge 9$ or $y \ge 9$. Then (i) if
+$y \le 8$, some horizontal move lies in $B$ and some horizontal move lies in $C$, while no
+vertical move lies in $B$ or in $C$; (ii) if $x \le 8$, some vertical move lies in $B$ and some
+vertical move lies in $C$, while no horizontal move lies in $B$ or in $C$; (iii) if
+$x \le y + 4$ and $y \le x + 4$, some diagonal move lies in $B$ and some diagonal move lies in
+$C$; (iv) if $x \ge y + 5$ or $y \ge x + 5$, no diagonal move lies in $B$ or in $C$.
+
+In the source these are the moves from the position $(x, y, 1)$ of Wythoff's game with a pass,
+with the third coordinate dropped.
 
 ## Depends on
 

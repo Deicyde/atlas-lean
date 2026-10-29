@@ -30,7 +30,7 @@ navigation: module
 
 ## One simulated step
 
-- [Step Time](step-time.md)
+- [Step bound of one simulated step](step-time.md)
 - [One simulated step, running case](step-run-of-step-eq-some.md)
 - [One simulated step, halting case](step-run-of-step-eq-none.md)
 
@@ -39,7 +39,7 @@ navigation: module
 - [Configurations bounded by $M$](bounded.md)
 - [Step bound of the clocked loop](loop-step-time.md)
 - [The clocked loop](loop-run.md)
-- [Step bound of the clocked universal machine](clock-time.md)
+- [Step bound of the clocked simulation](clock-time.md)
 - [The clocked universal machine on stacks](clocked-run.md)
 
 ## Reading the input and writing the output

@@ -17,7 +17,7 @@ consisting of the boundary of $r$ is $0$.
 
 - [Index of a rectilinear cycle](index.md)
 - [The cycle of a single rectangle](of-rectangle.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Proof depends on

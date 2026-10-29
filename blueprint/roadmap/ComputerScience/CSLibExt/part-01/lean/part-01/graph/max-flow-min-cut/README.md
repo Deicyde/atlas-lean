@@ -12,5 +12,5 @@ navigation: module
 - [A feasible skew flow gives a feasible flow](is-feasible-flow-real-flow.md)
 - [The Edmonds-Karp residual cut separates source and sink](is-stcut-residual-cut.md)
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
-- [Cut Capacity residual Cut le](cut-capacity-residual-cut-le.md)
+- [No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut](cut-capacity-residual-cut-le.md)
 - [Integral flow theorem](exists-nat-max-flow.md)

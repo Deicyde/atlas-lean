@@ -36,7 +36,7 @@ of $j_1, \dots, j_n$ at $s$, concatenated in this order, are appended to its edg
 - [Extra ones of a copy site](ext.md)
 - [Label after a HAMPATH copy site](nxt.md)
 - [Counter read by a copy site](src-2.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 - [Run of a HAMPATH copy site](site-run.md)
 
 ## Sources

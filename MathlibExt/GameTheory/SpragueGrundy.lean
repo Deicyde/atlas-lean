@@ -433,8 +433,8 @@ private theorem isP_sum_iff (G H : ImpartialGame) (a : G.Pos) (b : H.Pos) :
       (grundy G a ^^^ grundy H b = 0) :=
   isP_sum_iff_aux G H _ a b (Nat.le_refl _)
 
-/-- Sprague–Grundy theorem: every finite impartial game is equivalent to a
-single Nim heap.
+/-- **Sprague–Grundy theorem.** Every impartial game $G$ is equivalent to a Nim heap: there is a
+natural number $n$ such that $G$ is equivalent to the Nim heap of size $n$.
 
 Source: Tanya Khovanova and Joshua Xiong, "Nim Fractals", Journal of Integer
 Sequences 17 (2014), lines 101–105,

@@ -237,7 +237,9 @@ section Dual
 
 variable [Fintype ι]
 
-/-- The dot product on words, as a bilinear form. -/
+/-- **Dot product bilinear form.** Let $F$ be a field and $\iota$ a finite set. The dot product
+form is the bilinear form on $F^\iota$ that sends a pair of words $(x, y)$ to
+$x \cdot y = \sum_{i \in \iota} x_i y_i$. -/
 abbrev _root_.Cslib.CodingTheory.dotForm : LinearMap.BilinForm F (ι → F) := dotProductBilin F F
 
 theorem _root_.Cslib.CodingTheory.dotForm_apply (x y : ι → F) : dotForm x y = x ⬝ᵥ y := rfl
@@ -323,7 +325,10 @@ codeword. -/
 noncomputable def minWeight (C : LinearCode F ι) : ℕ∞ :=
   ⨅ (c ∈ C) (_ : c ≠ 0), (hammingNorm c : ℕ∞)
 
-/-- The Hamming distance is the weight of the difference. -/
+/-- **Hamming distance is the weight of the difference.** Let $F$ be a field and $\iota$ a finite
+set. For all words $x, y \in F^\iota$, the Hamming distance between $x$ and $y$ (the number of
+coordinates where they differ) equals the Hamming weight of $x - y$ (its number of nonzero
+coordinates). -/
 theorem _root_.Cslib.CodingTheory.hammingDist_eq_hammingNorm_sub (x y : ι → F) :
     hammingDist x y = hammingNorm (x - y) := by
   simp_rw [hammingNorm, hammingDist, Pi.sub_apply, ne_eq, sub_eq_zero]

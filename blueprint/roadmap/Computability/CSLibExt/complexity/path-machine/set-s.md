@@ -13,12 +13,12 @@ in its place; in either case it then goes to $\ell$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 

@@ -26,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists level Set curve](exists-level-set-curve.md)
+- [Kernel vectors are velocities of local curves in a level set](exists-level-set-curve.md)
 
 ## Sources
 

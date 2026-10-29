@@ -19,7 +19,7 @@ $\mu$.
 
 ## Proof depends on
 
-- [Cdf Quantile le iff](cdf-quantile-le-iff.md)
+- [The quantile function as a generalized inverse of the cdf](cdf-quantile-le-iff.md)
 - [Measurability of the quantile function](measurable-cdf-quantile.md)
 
 ## Sources

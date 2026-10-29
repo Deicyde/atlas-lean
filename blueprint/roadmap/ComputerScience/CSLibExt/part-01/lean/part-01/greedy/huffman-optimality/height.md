@@ -14,7 +14,7 @@ height $1 + \max(\mathrm{height}(L), \mathrm{height}(R))$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Sources
 

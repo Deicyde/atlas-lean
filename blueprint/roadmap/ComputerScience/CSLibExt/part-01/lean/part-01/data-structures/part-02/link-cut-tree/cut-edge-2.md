@@ -25,7 +25,7 @@ rooted at $y$; otherwise it only resets the preferred edges.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [Cutting preserves validity](cut-2.md)
 - [Rerooting a link-cut tree state preserves validity](make-root-2.md)

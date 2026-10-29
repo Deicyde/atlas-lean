@@ -299,11 +299,12 @@ theorem hyperLucasLeonardoP_zero_right (p n : ℕ) :
     hyperLucasLeonardoP p n 0 = lucasLeonardoP p n := by
   simp [hyperLucasLeonardoP]
 
-/-- The tiling set `K_{p,n}` (Definition 1): linear `n`-tilings by squares (length `1`),
-`p`-minos (length `p + 1`) and at most one `p`-tile, which comes in one of `p` colors, has
-length at least `p + 1`, and can only be the initial piece. A tiling is encoded as its
-optional initial `p`-tile `(color, length)` followed by the remaining pieces read left to
-right (`false` a square, `true` a `p`-mino).
+/-- **Leonardo $p$-tilings.** For natural numbers $p$ and $n$, the tiling set $K_{p,n}$ consists
+of the linear tilings of an $n$-board by squares (length $1$), $p$-minos (length $p + 1$) and at
+most one $p$-tile, which comes in one of $p$ colors, has length at least $p + 1$, and can only be
+the initial piece. A tiling is recorded as its initial $p$-tile, given by its color and length,
+if there is one, followed by the sequence of the remaining pieces read from left to right, each a
+square or a $p$-mino; the lengths of all pieces sum to $n$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Definition 1 and the set
@@ -355,12 +356,16 @@ def BraceletFirstTile.length {p : ℕ} : BraceletFirstTile p → ℕ
   | .shortTile _ _ => p + 1
   | .longTile _ l => l
 
-/-- The bracelet set `B_{p,n}` for `n ≥ 1`: tilings of a circular `n`-board by curved
-squares, `p`-minos and at most one `p`-tile (`p` colors; length `p + 1` in any of the
-`p + 1` phases, or length `l ≥ p + 2` starting at cell `1`), the `p`-tile being the first
-tile if present. A bracelet is encoded as its first tile (the one covering cell `1`) with
-its phase, followed by the remaining pieces read clockwise (`false` a square, `true` a
-`p`-mino); the paper's value `|B_{p,0}| = p² + p + 1` is a convention not modelled here.
+/-- **Lucas–Leonardo bracelets.** For natural numbers $p$ and $n$, the bracelet set $B_{p,n}$
+consists of the tilings of a circular $n$-board by curved squares (length $1$), curved $p$-minos
+(length $p + 1$) and at most one curved $p$-tile, which comes in one of $p$ colors and has either
+length $p + 1$, in any of its $p + 1$ phases, or length $l \ge p + 2$, starting at cell $1$; a
+$p$-tile, if present, is the first tile. A bracelet is recorded as its first tile, the one
+covering cell $1$, together with its phase, followed by the sequence of the remaining pieces read
+clockwise, each a curved square or a curved $p$-mino; the lengths of all pieces sum to $n$. In
+particular $B_{p,0}$ is empty.
+
+The source sets $|B_{p,0}| = p^2 + p + 1$ by convention; that value is not modelled here.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 3, the set

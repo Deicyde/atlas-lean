@@ -19,7 +19,7 @@ $V$ for $d$, and let $H$ be a tour of $V$. Then the cost under $d$ of the closed
 
 - [Rooted forest in left-child right-sibling form](forest.md)
 - [Metric cost function](is-metric-cost.md)
-- [Is Min Spanning](is-min-spanning.md)
+- [Minimum spanning tree of a vertex list](is-min-spanning.md)
 - [Tour of a vertex list](is-tour.md)
 - [The APPROX-TSP-TOUR algorithm](approx-tsptour.md)
 - [Cost of a closed tour](tour-cost.md)

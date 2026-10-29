@@ -23,7 +23,7 @@ $\mathcal{O}_K^\times \to K_{\mathfrak{m}}$ sending a unit $u$ to its image in $
 
 - [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 - [Embedding of integral units into field units](integral-units-to-field-units.md)
-- [Mem ray Elements of valuation eq one](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
+- [Elements of valuation one at the primes dividing a modulus are ray elements](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
 
 ## Sources
 

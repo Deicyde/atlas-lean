@@ -16,7 +16,7 @@ $u$, $v$ with $t = u \, p \, v$ (concatenation).
 
 ## Depends on
 
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Proof depends on
 

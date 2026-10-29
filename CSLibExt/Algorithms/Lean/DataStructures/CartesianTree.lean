@@ -66,8 +66,9 @@ public def HeapOrdered [LE α] : BinaryTree α → Prop
         BinarySearchTree.All (key ≤ ·) left ∧
         BinarySearchTree.All (key ≤ ·) right
 
-/-- **Root key of a binary tree.** The root of a binary tree is the key stored at its top node
-when the tree is nonempty, and is undefined when the tree is empty. -/
+/-- **Optional root key of a binary tree.** For a binary tree $T$ with keys in $\alpha$, the
+root key of $T$ is an optional element of $\alpha$: it is absent (none) when $T$ is empty, and it
+is $k$ when the top node of $T$ holds the key $k$. -/
 public def root : BinaryTree α → Option α
   | .nil => none
   | .node key _ _ => some key

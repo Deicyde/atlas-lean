@@ -18,14 +18,14 @@ $\bowtie$ is the natural join.
 
 - [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 - [Tuple](tuple.md)
 - [Natural join](join.md)
 - [Selection](select.md)
 
 ## Proof depends on
 
-- [Join comm](join-comm.md)
+- [Commutativity of the natural join](join-comm.md)
 - [Selection pushdown into the left operand of a join](select-join-left.md)
 
 ## Sources

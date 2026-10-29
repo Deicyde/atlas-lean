@@ -20,7 +20,7 @@ edge bits of $es$.
 ## Proof depends on
 
 - [Decoding the empty input](decode-es-nil.md)
-- [Decoding fails on a cut-off first number](decode-es-of-none.md)
+- [The edge-list decoder fails on a cut-off first number](decode-es-of-none.md)
 - [Decoding fails on a dangling half-pair](decode-es-of-some-none.md)
 - [Decoding one pair, then the rest](decode-es-of-some-some.md)
 - [Reading a unary number shortens the input](length-lt-of-read-unary-length.md)

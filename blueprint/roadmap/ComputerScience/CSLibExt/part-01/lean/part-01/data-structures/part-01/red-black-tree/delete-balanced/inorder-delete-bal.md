@@ -38,7 +38,7 @@ with the first occurrence of $x$ removed (unchanged if $x$ does not occur).
 - [Right repair after double-black deletion](fix-right.md)
 - [Adding a black to the root](incr-black.md)
 - [Inorder traversal of a possibly double-black tree](inorder-bb.md)
-- [Min Key](min-key.md)
+- [Leftmost key of a red-black tree](min-key.md)
 - [Recoloring the root black](root-black.md)
 - [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)
 - [All keys versus members of a red-black tree](../../../part-03/red-black-tree/all-iff-forall-mem.md)

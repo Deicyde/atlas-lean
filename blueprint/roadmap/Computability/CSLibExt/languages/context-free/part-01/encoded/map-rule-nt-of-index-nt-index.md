@@ -24,7 +24,7 @@ entry) gives $r$ again.
 ## Proof depends on
 
 - [Nonterminal of a symbol](nt-of.md)
-- [Nonterminals mentioned by a grammar](used-nt.md)
+- [List of nonterminals mentioned by a grammar](used-nt.md)
 - [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 
 ## Sources

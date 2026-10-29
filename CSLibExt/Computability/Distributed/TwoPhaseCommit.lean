@@ -234,8 +234,11 @@ theorem inv_reachable {s : State P} (h : Reachable s) : Inv s :=
   let ⟨_, hm⟩ := h
   inv_mtr hm inv_initial
 
-/-- **Atomicity** (AC1), between participants: no reachable state has one
-participant committed and another aborted. -/
+/-- **Atomicity between participants.** For every set $P$ of participants, in every reachable
+state of the two-phase commit protocol, if some participant $p$ has committed, then no
+participant $q$ has aborted.
+
+This is the participant part of condition AC1 of Bernstein, Hadzilacos and Goodman. -/
 theorem atomicity {s : State P} (h : Reachable s) {p q : P}
     (hp : s.part p = .committed) : s.part q ≠ .aborted := by
   have hinv := inv_reachable h

@@ -18,7 +18,7 @@ The additive $1$ keeps the estimate valid when $g_f''(x) = 0$.
 
 ## Depends on
 
-- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](coefficient-exponential-family/wiman-growth.md)
 - [Radial majorant](radial-majorant/wiman-majorant.md)
 - [Wiman maximum term](../../part-02/wiman/wiman-maximum-term.md)
 

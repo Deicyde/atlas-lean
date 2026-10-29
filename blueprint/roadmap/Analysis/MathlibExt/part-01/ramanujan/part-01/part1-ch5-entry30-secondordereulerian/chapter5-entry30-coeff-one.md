@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_one
 ---
 
-# Chapter5 Entry30 Coeff one
+# The Entry 30 coefficient at one
 
-The coefficient at `1` is `1`.
+**The Entry 30 coefficient at one.** For every function $a : \mathbb{N} \to \mathbb{C}$, the
+Entry 30 coefficient $c_a(1)$ is $1$.
 
 ## Depends on
 

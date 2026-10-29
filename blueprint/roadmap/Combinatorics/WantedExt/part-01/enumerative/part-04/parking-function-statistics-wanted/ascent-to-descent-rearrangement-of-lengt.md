@@ -14,7 +14,7 @@ ascent-to-descent rearrangement.
 
 ## Depends on
 
-- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
+- [Ascent-to-descent rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Proof depends on
 

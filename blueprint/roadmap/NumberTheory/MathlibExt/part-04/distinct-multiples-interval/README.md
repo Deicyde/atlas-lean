@@ -10,4 +10,4 @@ navigation: module
 - [Some interval contains distinct multiples](exists-has-distinct-multiples-in-interva.md)
 - [The least interval length is admissible](has-distinct-multiples-in-interval-disti.md)
 - [Characterization of the least interval length](distinct-multiples-interval-length-le-if.md)
-- [Distinct Multiples Interval Length one](distinct-multiples-interval-length-one.md)
+- [The least interval length for $n = 1$](distinct-multiples-interval-length-one.md)

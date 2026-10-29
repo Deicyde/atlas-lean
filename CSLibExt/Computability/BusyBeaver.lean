@@ -134,9 +134,9 @@ $n > 0$, and the halt state when $n = 0$. -/
 def initialState (n : ℕ) : Option (Fin n) :=
   if h : 0 < n then some ⟨0, h⟩ else none
 
-/-- **Initial configuration.** The initial configuration of a machine with $n$ working states is
-in the initial state (state $0$, or the halt state when $n = 0$), with the head at position $0$
-and every tape cell blank, that is, holding the symbol $0$. -/
+/-- **Initial configuration of a Busy Beaver machine.** The initial configuration of a machine
+with $n$ working states is in the initial state (state $0$, or the halt state when $n = 0$), with
+the head at position $0$ and every tape cell blank, that is, holding the symbol $0$. -/
 def initial (n : ℕ) : Config n :=
   ⟨initialState n, 0, fun _ => 0⟩
 
@@ -875,7 +875,8 @@ structure FormalTheory where
   /-- Provability of a sentence code in the theory. -/
   Provable : ℕ → Prop
 
-/-- The theory is consistent: it does not prove the false sentence. -/
+/-- **Consistent formal theory.** A formal theory $T$ is consistent when $T$ does not prove the
+false sentence. -/
 def Consistent (T : FormalTheory) : Prop :=
   ¬ T.Provable falseSentence
 
@@ -948,13 +949,16 @@ theorem not_decides_of_consistency_machine {T : FormalTheory} {n : ℕ}
   · exact hcons (hM.mp (hsound h1))
   · exact hnot h1
 
-/-- Decidability propagates to fewer states when provability of
-halting sentences transports along the state embedding: an `n`-state
-machine embeds into `n + 1` states with the same halting behaviour.
-The transport hypotheses are the point where a real theory would
-rewrite a proof about the embedded machine into a proof about the
-original machine; they are stated explicitly because provability of
-one sentence code does not formally imply provability of another. -/
+/-- **Decidability of halting passes to fewer states.** Let $T$ be a formal theory such that, for
+every $m$ and every Busy Beaver machine $M$ with $m$ working states, if $T$ proves the halting
+sentence of the embedding of $M$ into $m + 1$ states then $T$ proves the halting sentence of $M$,
+and if $T$ proves the non-halting sentence of the embedding of $M$ into $m + 1$ states then $T$
+proves the non-halting sentence of $M$. Then for every $n$, if $T$ decides halting for machines
+with $n + 1$ working states, it decides halting for machines with $n$ working states.
+
+The transport hypotheses are where a real theory would rewrite a proof about the embedded machine
+into a proof about the original machine; they are stated explicitly because provability of one
+sentence code does not formally imply provability of another. -/
 theorem decidesHalting_of_succ {T : FormalTheory}
     (htransport : ∀ {n : ℕ} (M : Machine n),
       (T.Provable (haltsSentence (embedMachine M)) →

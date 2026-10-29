@@ -23,7 +23,7 @@ $(y_a - y_p)^2 < \delta$. Then $Z$ has at most $7$ entries.
 
 ## Proof depends on
 
-- [Dist2](../closest-pair/dist2.md)
+- [Squared distance in the plane](../closest-pair/dist2.md)
 
 ## Sources
 

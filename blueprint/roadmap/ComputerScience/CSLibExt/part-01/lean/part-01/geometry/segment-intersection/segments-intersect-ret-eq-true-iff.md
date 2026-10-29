@@ -22,7 +22,7 @@ if and only if the closed segments $[p_1, p_2]$ and $[p_3, p_4]$ have a common p
 - [Direction of three points](direction.md)
 - [Points of a segment have direction zero](direction-eq-zero-of-mem.md)
 - [Properly crossing segments meet](inter-nonempty-of-straddles.md)
-- [Mem segment of direction eq zero](mem-segment-of-direction-eq-zero.md)
+- [A collinear point in the bounding box lies on the segment](mem-segment-of-direction-eq-zero.md)
 - [The ON-SEGMENT test](on-segment.md)
 - [Points of a segment lie in its bounding box](on-segment-of-mem.md)
 - [SEGMENTS-INTERSECT as a Boolean formula](segments-intersect-ret.md)

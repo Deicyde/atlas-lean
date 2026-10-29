@@ -26,7 +26,7 @@ $T_0$ equals the language accepted by $M$ by empty stack.
 - [Multi-step computation of a pushdown automaton](../../../../automata/pda/basic/derives.md)
 - [Computations extend by unread input and stack bottom](../../../../automata/pda/basic/append-input-stack.md)
 - [One step of a pushdown automaton](../../../../automata/pda/basic/step.md)
-- [Initial configuration](../../../../automata/pda/basic/init-config.md)
+- [Initial configuration of a pushdown automaton](../../../../automata/pda/basic/init-config.md)
 - [Yield of a sentential form](../../part-02/yields/yields.md)
 - [Concatenation of yields](../../part-02/yields/append.md)
 - [Splitting a yield over a concatenation](../../part-02/yields/append-inv.md)

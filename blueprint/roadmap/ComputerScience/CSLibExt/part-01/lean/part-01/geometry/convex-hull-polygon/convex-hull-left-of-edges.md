@@ -17,7 +17,7 @@ $(b - a) \times (s - a)$ is nonnegative: $s$ lies on or to the left of the edge 
 
 ## Depends on
 
-- [Convex Hull](convex-hull.md)
+- [Convex hull by the monotone chain algorithm](convex-hull.md)
 - [Cross product of plane vectors](../segment-intersection/cross.md)
 
 ## Proof depends on

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_odd_index_mod_ten
 ---
 
-# Proposition 2, congruence (9), odd indices
+# Sylvester numbers of odd index modulo 10
 
-**Proposition 2, congruence (9), odd indices**:
-`S_{2i+1} ≡ 3 (mod 10)` for `i ≥ 1`.
+**Sylvester numbers of odd index modulo 10.** Let $(S_n)_{n \ge 0}$ be the Sylvester
+sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $i \ge 1$,
+$S_{2i+1} \equiv 3 \pmod{10}$.
 
 ## Depends on
 

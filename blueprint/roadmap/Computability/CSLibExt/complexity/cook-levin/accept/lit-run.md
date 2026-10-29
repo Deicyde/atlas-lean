@@ -29,7 +29,7 @@ encoding of $m$ empty slots).
 - [Polarity of an accept clause's literal](sg.md)
 - [Counters of the accept generator](ck.md)
 - [Labels of the accept generator](gl.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the accept generator's literal routine](ls.md)
 - [Empty scratch counters of the accept generator](rest.md)
 - [Generator machine for the accept family](prog.md)
 - [Stacks of a counter machine](../counter-view/sk.md)
@@ -53,7 +53,7 @@ encoding of $m$ empty slots).
 - [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources

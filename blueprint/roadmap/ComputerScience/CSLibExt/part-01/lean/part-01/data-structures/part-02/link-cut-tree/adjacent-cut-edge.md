@@ -31,7 +31,7 @@ between $x$ and $y$.
 
 - [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
 - [Root of a rooted tree](../euler-tour-tree/root.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 - [The first endpoint of a tree edge is a vertex](mem-left.md)
 - [The second endpoint of a tree edge is a vertex](mem-right.md)

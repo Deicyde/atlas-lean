@@ -63,7 +63,9 @@ open scoped ENNReal
 
 instance : Fact (0 < (1 : ℝ)) := ⟨zero_lt_one⟩
 
-/-- The standard `d`-dimensional torus `𝕋^d = (ℝ/ℤ)^d`. -/
+/-- **Torus.** For a natural number $d$, the $d$-dimensional torus is
+$\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$, the product of $d$ copies of the circle
+$\mathbb{R}/\mathbb{Z}$. -/
 abbrev Torus (d : ℕ) : Type := Fin d → AddCircle (1 : ℝ)
 
 /-- **Volume-preserving transformations of the torus.** Let $d$ be a natural number. A
@@ -149,7 +151,15 @@ def IsCyclicCubeExchange {d : ℕ} (T : VolumePreservingEquiv d) (n : ℕ) : Pro
 /- **Lax's approximation theorem.** Every toral dynamical system on `𝕋^d`
 (`d ≥ 1`) is approximated arbitrarily well in the metric `δ` by cyclic cube
 exchange transformations. -/
-/-- Source: P. D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971). Knill, *Some fundamental theorems in mathematics*, §110. Via leanprover/lean-eval@38361be, problem `lax_approximation`. -/
+/-- **Lax's approximation theorem.** Let $d \ge 1$ be a natural number and let $T$ be a toral
+dynamical system on the torus $\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$, regarded as a
+measurable, invertible, volume-preserving transformation of $\mathbb{T}^d$. Then for every
+$\varepsilon \in (0, \infty]$ there are a natural number $n$ and a measurable, invertible,
+volume-preserving transformation $S$ of $\mathbb{T}^d$ such that $S$ is a cyclic cube exchange
+with $n$ subdivisions and $\delta(T, S) < \varepsilon$, where $\delta$ is the
+essential-supremum distance between volume-preserving maps.
+
+Source: P. D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971). Knill, *Some fundamental theorems in mathematics*, §110. Via leanprover/lean-eval@38361be, problem `lax_approximation`. -/
 public theorem_wanted lax_approximation {d : ℕ} (hd : 0 < d) (T : ToralDynamicalSystem d)
     {ε : ℝ≥0∞} (hε : 0 < ε) :
     ∃ (n : ℕ) (S : VolumePreservingEquiv d),

@@ -24,7 +24,7 @@ reading an adjacency list and emitting a vertex are free.
 - [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 - [Semi-balanced directed multigraph](is-semi-balanced.md)
 - [Edge list of a directed graph](edge-list.md)
-- [Hierholzer](hierholzer.md)
+- [Hierholzer's algorithm](hierholzer.md)
 
 ## Proof depends on
 

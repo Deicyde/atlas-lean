@@ -42,7 +42,7 @@ when $j = 0$.
 - [Gap encoding of a dense clause](gap-enc.md)
 - [Per-literal time bound of the transition-clause generator](lit-e.md)
 - [Literals of a transition clause](lits.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -59,7 +59,7 @@ when $j = 0$.
 - [Successor of a number with a non-maximal remainder](div-mod-succ-of-lt.md)
 - [Shifting the start of a gap encoding](gap-enc-shift.md)
 - [Increasing literal sequences](inc-of-mono.md)
-- [K A](k-a.md)
+- [Stack index of a literal in a transition clause](k-a.md)
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Position of a literal in a transition clause](lit-pos.md)
 - [Run of one literal routine (transition-clause generator)](lit-run.md)

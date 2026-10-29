@@ -7,10 +7,13 @@ proof: formalized
 lean: ContDiffOn.eVariationOn_Icc_eq_ofReal_integral_norm_derivWithin
 ---
 
-# E Variation On Icc eq of Real integral norm deriv Within
+# Length of a $C^1$ curve via its derivative within the interval
 
-The variation of a `C¹` curve on `[a, b]` is the integral of the norm of its derivative
-within `[a, b]`.
+**Length of a $C^1$ curve via its derivative within the interval.** Let $E$ be a real Banach
+space, let $a \le b$ be real numbers and let $\gamma : \mathbb{R} \to E$ be continuously
+differentiable on $[a, b]$. Then the total variation of $\gamma$ on $[a, b]$, a priori a value in
+$[0, \infty]$, equals the real number $\int_a^b \lVert \gamma'_{[a,b]}(t) \rVert \, dt$, where
+$\gamma'_{[a,b]}(t)$ is the derivative of $\gamma$ at $t$ within $[a, b]$.
 
 ## Depends on
 

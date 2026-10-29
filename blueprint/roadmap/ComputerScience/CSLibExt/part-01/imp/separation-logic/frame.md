@@ -32,8 +32,8 @@ $Q \star R$ is valid, where $\star$ denotes separating conjunction.
 - [Adding a frame heap preserves the ability to step](../heap-step/exists-step-frame.md)
 - [Multi-step heap execution](../heap-step/hsteps.md)
 - [Frame decomposition of heap executions](../heap-step/decompose-of-safe.md)
-- [Store agree](../heap-step/store-agree-2.md)
-- [Disjoint](../heap/disjoint.md)
+- [Heap executions only change assignable variables](../heap-step/store-agree-2.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [Safe heap configurations](../heap-step/safe.md)
 
 ## Sources

@@ -201,7 +201,10 @@ theorem checkSpec_ents (φ : CNF) (w : List Bool) :
   rw [Bool.eq_iff_iff, checkCNF_ret, CNF.satisfies_def]
   simp [checkSpec, ents, liveVal_entsOf]
 
-/-- The components compose to `satVerifier`. -/
+/-- **The SAT verifier's answer through the occurrence table.** For all lists $x$ and $w$ of bits,
+the value returned by the SAT verifier on $(x, w)$, ignoring the time count, is false if the
+complete length-prefixed CNF decoder fails on $x$, and is the clause check of $\varphi$ against
+the occurrence table of $\varphi$ and $w$ if $x$ decodes to the CNF formula $\varphi$. -/
 theorem satVerifier_ret_eq (x w : List Bool) :
     (satVerifier (x, w)).ret = ((decodeCNF x).map fun φ => checkSpec φ (ents φ w)).getD false := by
   cases h : decodeCNF x with

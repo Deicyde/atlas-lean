@@ -27,10 +27,10 @@ no predecessor edge for $s$.
 
 - [Weighted path in an edge list](../../bellman-ford/basic/is-weighted-path.md)
 - [Edges of the weight-forgetting graph](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
-- [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
-- [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
+- [Appending an edge to a weighted path](../../bellman-ford/basic/is-weighted-path-append-edge.md)
+- [Weighted paths give walks of the same length](../../bellman-ford/basic/is-weighted-path-walk.md)
 - [Bellman–Ford path weight](../../bellman-ford/basic/path-weight.md)
-- [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
+- [Weight of a path with an edge appended](../../bellman-ford/basic/path-weight-append-edge.md)
 - [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
 - [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
 - [Walks of a given length](../../../directed-adjacency-2/walk.md)

@@ -14,7 +14,7 @@ no production of the binarization of $g$ has the empty word as output.
 ## Depends on
 
 - [Reduced grammars](../reduced/is-reduced.md)
-- [Cnf Grammar](cnf-grammar.md)
+- [Binarization of a grammar](cnf-grammar.md)
 
 ## Proof depends on
 

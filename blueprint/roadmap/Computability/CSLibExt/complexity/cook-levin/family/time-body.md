@@ -27,11 +27,11 @@ bound for $N$, $T$ and $H$.
 - [Stack alphabets of the generator](g.md)
 - [Variable layout of the transition clauses](layout.md)
 - [Number of literals of a transition clause](n-lits.md)
-- [Loop P](loop-p.md)
+- [Time-loop invariant of the transition-family generator](loop-p.md)
 - [Well-formed situation tables for the transition clauses](wf.md)
 - [Encoded transition clauses of one time step](blk.md)
 - [Step bound for one time-loop iteration of the transition-family generator](body-b.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 

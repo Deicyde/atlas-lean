@@ -6,7 +6,7 @@ navigation: module
 # Tame
 
 - [Residue separability at a prime](is-residue-separable-at.md)
-- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Tamely ramified prime](is-tamely-ramified-at.md)
 - [Wildly ramified prime](is-wildly-ramified-at.md)
 - [Residue separability, unfolded](is-residue-separable-at-iff.md)
 - [Characterization of tame ramification](is-tamely-ramified-at-iff.md)

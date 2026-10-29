@@ -28,7 +28,7 @@ $(\diamond, \diamond x \#), (y \# \diamond, \diamond), (\#, \#), (l_1, r_1), \do
 - [Final domino](final-card.md)
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
-- [The start domino](start-card.md)
+- [The start domino of the reduction from reachability to MPCP](start-card.md)
 - [Letters of a rewriting instance](symbols.md)
 
 ## Sources

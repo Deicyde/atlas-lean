@@ -180,10 +180,10 @@ for the word obtained by putting a star after every letter. A domino $(t, b)$ ov
 to the domino $(\star t, b\star)$ over the extended alphabet. -/
 def mapDomino (d : Domino α) : Domino (Sym α) := (starBefore d.1, starAfter d.2)
 
-/-- **The start domino.** For a domino $(t, b)$ over $\alpha$, its start domino is the domino
-$(\star t, \star b \star)$ over the extended alphabet, where $\star t$ puts the star $\star$ before
-every letter of $t$ and $b \star$ puts a star after every letter of $b$, so that the bottom word
-gets one extra star in front. -/
+/-- **The start domino of the MPCP-to-PCP reduction.** For a domino $(t, b)$ over an alphabet
+$\alpha$, its start domino is the domino $(\star t, \star b \star)$ over the extended alphabet,
+where $\star t$ puts the star $\star$ before every letter of $t$ and $b \star$ puts a star after
+every letter of $b$, so that the bottom word gets one extra star in front. -/
 def startDomino (d : Domino α) : Domino (Sym α) := (starBefore d.1, star :: starAfter d.2)
 
 /-- **End domino of the MPCP-to-PCP reduction.** Over the alphabet $\alpha$ extended with the
@@ -457,7 +457,10 @@ section Recognizable
 
 variable [Primcodable α]
 
-/-- The solution check, as a Boolean. -/
+/-- **Boolean check for PCP solutions.** Let $\alpha$ be an alphabet with a primitive recursive
+coding and decidable equality, and let $P$ and $s$ be lists of dominoes over $\alpha$. The Boolean
+solution check of $s$ for $P$ is true exactly when $s$ is nonempty, every domino of $s$ occurs in
+$P$, and the top word of $s$ equals the bottom word of $s$, and it is false otherwise. -/
 def isSolutionB [DecidableEq α] (P s : List (Domino α)) : Bool :=
   !s.isEmpty && s.all (fun d ↦ decide (d ∈ P)) && decide (top s = bottom s)
 

@@ -21,7 +21,7 @@ within squared distance $r$ of $q$, from left to right.
 
 ## Proof depends on
 
-- [Search Aux](search-aux.md)
+- [Accumulating ball-tree search](search-aux.md)
 
 ## Sources
 

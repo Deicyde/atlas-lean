@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [The list of all alignments](../sequence-alignment/alignments.md)
 - [Band check from a starting offset](banded-from.md)
 

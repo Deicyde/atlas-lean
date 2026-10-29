@@ -17,7 +17,7 @@ and $\nu(3\,1\,2\,1)$ under Case 1.
 
 ## Depends on
 
-- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
+- [Ascent-to-descent rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Sources
 

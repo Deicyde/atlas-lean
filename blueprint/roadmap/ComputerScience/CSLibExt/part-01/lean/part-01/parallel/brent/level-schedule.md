@@ -19,7 +19,7 @@ $\lceil L_d / p \rceil$ steps of at most $p$ tasks.
 ## Depends on
 
 - [Computation DAG](dag.md)
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 
 ## Proof depends on
 

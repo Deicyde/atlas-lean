@@ -19,7 +19,7 @@ $p$ and $q_a$ may be empty.
 ## Proof depends on
 
 - [Palindromes](is-palindrome.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

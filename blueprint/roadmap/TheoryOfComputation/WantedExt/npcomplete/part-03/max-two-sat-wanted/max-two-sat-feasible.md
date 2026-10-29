@@ -20,7 +20,7 @@ $v(x) = \mathrm{false}$ for $x \ge n$.
 
 - [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

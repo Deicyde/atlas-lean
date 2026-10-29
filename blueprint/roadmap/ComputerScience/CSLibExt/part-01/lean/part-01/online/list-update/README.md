@@ -59,4 +59,4 @@ navigation: module
 - [Inversions are at most the squared length](inv-le-sq.md)
 - [Switching lists after the first request](offline-cost-switch-le.md)
 - [Online and offline costs on the adversary's sequence](adversary-vs-offline.md)
-- [No deterministic online algorithm beats `2 - 2 / (ℓ + 1)`](not-competitive.md)
+- [No deterministic online list-update algorithm beats $2 - 2/(\ell + 1)$](not-competitive.md)

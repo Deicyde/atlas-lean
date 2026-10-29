@@ -23,7 +23,7 @@ $\mathsf{rej}$ within $2|r| + n + 2$ steps.
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Stacks of the SAT tokenizer](k.md)
 - [Labels of the SAT tokenizer](lab.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
 - [Decoding a fixed number of clauses](../../cook-levin/decode-clauses.md)
 - [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)

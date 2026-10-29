@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.compositionHalfIndexSet_zero
 ---
 
-# Composition Half Index Set zero
+# The index set $S(m, 0, q)$ is empty
 
-Boundary characteristic: `S(m, 0, q)` is empty.
+**The index set $S(m, 0, q)$ is empty.** For all natural numbers $m$ and $q$, the index set
+$S(m, 0, q)$ is empty.
 
 ## Depends on
 

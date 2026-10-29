@@ -33,7 +33,7 @@ nullable in the grammar denoted by $g$, that is, $A$ derives the empty word.
 - [Yield of a sentential form](../../part-02/yields/yields.md)
 - [Yields are derivable](../../part-02/yields/derives-of-yields.md)
 - [Language generated from a nonterminal](../basic/language-from.md)
-- [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](../../part-02/yields/yields-iff-derives.md)
 - [Derivable terminal words are yields](../../part-02/yields/yields-of-derives.md)
 
 ## Sources

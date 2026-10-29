@@ -38,12 +38,12 @@ concatenated, followed by the old contents of $o$.
 - [Decrement](decr.md)
 - [Prepending a constant list](emit-r.md)
 - [Repeated block](rep.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 
 ## Proof depends on
 
 - [A single step executes the statement at the current label](single.md)
-- [Cmp run](cmp-run.md)
+- [Non-destructive comparison of two counters](cmp-run.md)
 - [Pushing a constant list](emit.md)
 - [Pushing a list of symbols onto one stack](push-list.md)
 

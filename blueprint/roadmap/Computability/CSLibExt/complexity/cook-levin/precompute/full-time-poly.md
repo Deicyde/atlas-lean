@@ -45,7 +45,7 @@ machine's constants) bounds the step count on every raw input.
 - [Constant of the generator's time bound](../family/gen-c.md)
 - [Constant of the init generator's time bound](../init-family/init-c.md)
 - [Polynomial functions on the naturals](is-poly.md)
-- [Horn T](horn-t-2.md)
+- [The Horner step count is polynomial](horn-t-2.md)
 - [Step budget of the counter program](c-b.md)
 - [Step bound of the full machine](full-b.md)
 - [The composed machine, raw input to formula](full-run.md)

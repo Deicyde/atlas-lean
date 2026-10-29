@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Local Isomorphism](is-local-isomorphism.md)
+- [Local isomorphism](is-local-isomorphism.md)
 
 ## Sources
 

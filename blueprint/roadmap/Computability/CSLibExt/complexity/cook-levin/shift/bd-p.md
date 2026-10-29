@@ -44,7 +44,7 @@ true, and of the overflow loop otherwise.
 - [Literal routine of the cell-shift generator](lit-p.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

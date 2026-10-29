@@ -6,10 +6,11 @@ statement: formalized
 lean: Set.Triplewise
 ---
 
-# Triplewise
+# Relation holding triplewise on a set
 
-The ternary relation `r` holds triplewise on the set `s`
-if `r x y z` for all *distinct* `x y z ∈ s`.
+**Relation holding triplewise on a set.** Let $r$ be a ternary relation on a type $\alpha$ and let
+$s \subseteq \alpha$. The relation $r$ holds triplewise on $s$ if $r(x, y, z)$ holds for all
+pairwise distinct $x, y, z \in s$.
 
 ## Depends on
 

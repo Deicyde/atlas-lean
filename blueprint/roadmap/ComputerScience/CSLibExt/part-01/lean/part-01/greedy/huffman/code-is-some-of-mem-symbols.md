@@ -16,7 +16,7 @@ a leaf of $T$. Then the codeword lookup of $s$ in $T$ succeeds.
 
 - [Huffman tree](huffman-tree.md)
 - [Codeword lookup in a Huffman tree](code.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 

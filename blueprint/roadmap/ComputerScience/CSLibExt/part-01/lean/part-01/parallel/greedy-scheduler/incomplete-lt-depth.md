@@ -14,7 +14,7 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.incomplete_lt_depth
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 - [Greedy schedule](greedy.md)
 - [Number of incomplete steps](incomplete.md)
 - [Depth of a task in a computation DAG](../brent/depth.md)

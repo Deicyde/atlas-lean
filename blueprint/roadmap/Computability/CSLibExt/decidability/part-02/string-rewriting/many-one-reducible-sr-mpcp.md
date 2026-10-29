@@ -36,7 +36,7 @@ instances have nonempty words.
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
 - [Reachability reduces to MPCP](sr-iff-mpcp-to-mpcp.md)
-- [The start domino](start-card.md)
+- [The start domino of the reduction from reachability to MPCP](start-card.md)
 - [Letters of a rewriting instance](symbols.md)
 - [The MPCP instance of a reachability instance](to-mpcp.md)
 

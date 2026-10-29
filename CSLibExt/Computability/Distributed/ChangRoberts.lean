@@ -241,8 +241,10 @@ theorem inv_reachable {id : Fin (n + 1) → ℕ} {s : State n} (h : Reachable id
   let ⟨_, hm⟩ := h
   inv_mtr hm (inv_initial id)
 
-/-- **Only the maximum is elected**: a leader's identifier is larger than every
-other process's. -/
+/-- **Only the maximum is elected.** Let $\mathrm{id}$ assign a natural-number identifier, not
+necessarily distinct, to each process $0, \dots, n$ of the Chang–Roberts ring. In every state
+reachable with these identifiers, if process $i$ has declared itself leader, then
+$\mathrm{id}(m) < \mathrm{id}(i)$ for every process $m \ne i$. -/
 theorem leader_max {id : Fin (n + 1) → ℕ} {s : State n} (h : Reachable id s) {i : Fin (n + 1)}
     (hi : s.leader i = true) {m : Fin (n + 1)} (hm : m ≠ i) : id m < id i :=
   (inv_reachable h).leader i hi m hm

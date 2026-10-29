@@ -14,7 +14,7 @@ uniformly random configuration of $t$ pebbles on $G$ is solvable is at most $1$.
 
 ## Depends on
 
-- [Solvable Configuration Prob](solvable-configuration-prob.md)
+- [Probability that a random pebbling configuration is solvable](solvable-configuration-prob.md)
 
 ## Proof depends on
 

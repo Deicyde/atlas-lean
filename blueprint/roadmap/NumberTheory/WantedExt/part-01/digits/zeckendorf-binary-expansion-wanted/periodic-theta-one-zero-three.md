@@ -14,7 +14,7 @@ entries from index $3$ on are $0$.
 
 ## Depends on
 
-- [Periodic Theta](periodic-theta.md)
+- [The maximal $L$-block $\theta^{m+1}$](periodic-theta.md)
 
 ## Sources
 

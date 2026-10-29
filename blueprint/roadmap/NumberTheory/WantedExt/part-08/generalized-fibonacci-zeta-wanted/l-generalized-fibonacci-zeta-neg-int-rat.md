@@ -18,7 +18,7 @@ $f$ is complex differentiable at $-m$, then $f(-m)$ is a rational number.
 ## Depends on
 
 - [ℓ-generalized Fibonacci sequence](is-lgeneralized-fibonacci.md)
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
+- [Set of possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

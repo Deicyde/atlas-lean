@@ -25,7 +25,7 @@ alignment of $x$ and $yb$.
 
 - [Alignment](alignment.md)
 - [Valid alignment of two sequences](is-alignment.md)
-- [Alignment Score](alignment-score.md)
+- [Score of an alignment](alignment-score.md)
 - [Needleman–Wunsch is optimal](alignment-score-le-nw-score.md)
 - [Score of an alignment column](column-score.md)
 - [Needleman–Wunsch is attained](exists-alignment-score-eq-nw-score.md)

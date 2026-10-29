@@ -15,7 +15,7 @@ a perfect matching while the algorithm matches at most `n` of them.
 ## Depends on
 
 - [Perfect matchings of a sequence of arrivals](is-perfect.md)
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 - [Number of arrivals an online matcher matches](matched.md)
 
 ## Proof depends on

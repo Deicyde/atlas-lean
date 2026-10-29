@@ -17,7 +17,7 @@ accepting states are those of them that $M$ accepts.
 
 ## Depends on
 
-- [Reachable Within](reachable-within.md)
+- [Early-stopping DFA reachability search](reachable-within.md)
 
 ## Proof depends on
 

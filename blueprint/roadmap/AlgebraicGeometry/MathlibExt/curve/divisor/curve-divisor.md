@@ -6,10 +6,11 @@ statement: formalized
 lean: CurveDivisor
 ---
 
-# Curve Divisor
+# Divisors on a curve
 
-A divisor on a curve with point type `C` is a finitely supported integer-valued function on
-`C`. Its support is available as `Finsupp.support`.
+**Divisors on a curve.** For a set $C$ (the points of a curve), a divisor on $C$ is a finitely
+supported function $D \colon C \to \mathbb{Z}$. Its support is the finite set of points
+$P \in C$ with $D(P) \neq 0$.
 
 ## Depends on
 

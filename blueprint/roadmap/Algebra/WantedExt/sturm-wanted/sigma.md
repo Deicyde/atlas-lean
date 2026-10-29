@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sign Changes](sign-changes.md)
+- [Number of sign changes in a list of reals](sign-changes.md)
 - [Sturm chain](sturm-chain.md)
 
 ## Sources

@@ -14,7 +14,7 @@ navigation: module
 ## Ripple Carry
 
 - [Carry wire](carry-wire.md)
-- [Line](line.md)
+- [Gates of the ripple-carry adder](line.md)
 
 ## Circuits
 

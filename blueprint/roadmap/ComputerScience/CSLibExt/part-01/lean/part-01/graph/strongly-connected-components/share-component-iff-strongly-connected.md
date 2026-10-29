@@ -15,7 +15,7 @@ contains both $u$ and $v$ if and only if $u$ and $v$ are strongly connected in $
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strongly connected components algorithm](components.md)
 
 ## Proof depends on

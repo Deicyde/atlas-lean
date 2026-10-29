@@ -32,10 +32,10 @@ $s$ is the slot code of the sign of literal $l$.
 - [Literal signs of an init-family clause kind](sg.md)
 - [Labels of the initial-row generator](gl.md)
 - [Label after a literal routine (initial-row generator)](after.md)
-- [Stages of the literal routine](ls.md)
-- [Labels of the initial-row generator](lb.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [Empty scratch counters](rest.md)
-- [Prog](prog.md)
+- [The counter part of the initial-row generator](prog.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
@@ -54,7 +54,7 @@ $s$ is the slot code of the sign of literal $l$.
 - [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources

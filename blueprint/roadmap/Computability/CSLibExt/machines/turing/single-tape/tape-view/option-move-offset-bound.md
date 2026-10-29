@@ -14,7 +14,7 @@ $-1 \le \mathrm{offset}(d) \le 1$.
 
 ## Depends on
 
-- [Option Move Offset](option-move-offset.md)
+- [Offset of an optional head move](option-move-offset.md)
 
 ## Sources
 

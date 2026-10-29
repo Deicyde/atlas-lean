@@ -12,5 +12,5 @@ navigation: module
 - [Rational subspace](is-rational.md)
 - [Chosen basis of a rational subspace](chosen-basis.md)
 - [Height of a rational subspace](height.md)
-- [Diophantine Exponent](diophantine-exponent.md)
+- [Diophantine exponent](diophantine-exponent.md)
 - [Dirichlet's principle in Grassmann varieties](theorem-1.md)

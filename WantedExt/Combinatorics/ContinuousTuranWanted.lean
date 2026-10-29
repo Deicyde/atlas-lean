@@ -102,7 +102,9 @@ Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article 
 public theorem_wanted opx_translate (n : ℝ) (P : Set (ℝ × ℝ)) (v : ℝ × ℝ) :
     opx n ((fun p => p + v) '' P) = opx n P
 
-/-- Lemma 2.3: if `Q` contains `P`, then `opx(n, P) ≤ opx(n, Q)`. Stated for all real `n`.
+/-- **Monotonicity of the continuous Turán number under containment.** Let $n$ be a real number
+and let $P, Q \subseteq \mathbb{R}^2$. If $Q$ contains $P$ in the sense of containment of planar
+point sets, then $\operatorname{opx}(n, P) \le \operatorname{opx}(n, Q)$.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.3
 (`integers-2024-A1-lem-2-3`). -/
@@ -216,11 +218,14 @@ Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article 
 public theorem_wanted opx_horizontal_segment {a b c n : ℝ} (hc : 0 ≤ c) (hcn : c ≤ n) :
     opx n (Set.Icc a (a + c) ×ˢ {b}) = c * n
 
-/-- Theorem 4.2: the closed segment from `(0, 0)` to `(a, b)`, `a, b > 0`, has
-`opx(n, P) = (a + b)n - ab`, for `n ≥ max(a, b)`. CORRECTED READING: the paper omits
-`a, b ≤ n`, which its construction `(0, a) × (0, n) ∪ (0, n) × (0, b) ⊆ [0, n]²` uses; for
-`n < max(a, b)` every open `S ⊆ [0, n]²` avoids `P`, so `opx(n, P) = n²` (e.g. `a = b = 2`,
-`n = 1`: `1 ≠ 0`).
+/-- **Continuous Turán number of a diagonal segment.** Let $a, b, n$ be real numbers with
+$0 < a \le n$ and $0 < b \le n$, and let $P$ be the closed segment from $(0, 0)$ to $(a, b)$.
+Then the continuous Turán number satisfies $\operatorname{opx}(n, P) = (a + b)n - ab$.
+
+The hypotheses $a \le n$ and $b \le n$ are missing from the paper, whose lower-bound construction
+$(0, a) \times (0, n) \cup (0, n) \times (0, b) \subseteq [0, n]^2$ uses them: for
+$0 < n < \max(a, b)$ no subset of $[0, n]^2$ contains $P$, so $\operatorname{opx}(n, P) = n^2$
+(for example $a = b = 2$ and $n = 1$, where $(a + b)n - ab = 0 \ne 1$).
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.2
 (`integers-2024-A1-thm-4-2`). -/
@@ -330,8 +335,11 @@ public theorem_wanted opx_stacked_segments_isBigO {t : ℕ} (ht : 2 ≤ t) {s c 
         ∃ i : ℕ, 1 ≤ i ∧ i ≤ t ∧ p.2 = i * c}) =O[Filter.atTop]
       (fun n : ℝ => s ^ (1 / t : ℝ) * n ^ (2 - 1 / t : ℝ))
 
-/-- Theorem 4.10: if `P` is a finite union of horizontal segments `[a_i, b_i] × {y_i}` with
-pairwise disjoint `x`-ranges and distinct heights `y_i`, then `opx(n, P) = O(n)`.
+/-- **Linear bound for separated horizontal segments.** Let $k$ be a natural number and let
+$a_i \le b_i$ and $y_i$ be real numbers for $i = 1, \dots, k$, such that the intervals
+$[a_i, b_i]$ are pairwise disjoint and the heights $y_i$ are pairwise distinct, and let
+$P = \bigcup_{i=1}^k [a_i, b_i] \times \{y_i\}$. Then the continuous Turán number satisfies
+$\operatorname{opx}(n, P) = O(n)$ as the real number $n$ tends to infinity.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.10
 (`integers-2024-A1-thm-4-10`). -/
@@ -450,7 +458,9 @@ public theorem inverseAckermann_two : inverseAckermann 2 = 1 := by
   interval_cases k
   simp [ack_zero]
 
-/-- `α(8) = 3` (`A(2, 2) = 7 < 8 ≤ 61 = A(3, 3)`).
+/-- **The inverse Ackermann function at 8.** The inverse Ackermann function $\alpha$ satisfies
+$\alpha(8) = 3$, since $A(2, 2) = 7 < 8 \le 61 = A(3, 3)$, where $A$ is the two-argument
+Ackermann function.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Section 3.2
 (the inverse Ackermann function `α(n)`). -/
@@ -459,8 +469,11 @@ public theorem inverseAckermann_eight : inverseAckermann 8 = 3 := by
   refine ⟨by simp, fun k hk => ?_⟩
   interval_cases k <;> simp
 
-/-- Theorem 3.1: for finite `P ⊆ ℝ²`, `opx(n, P) = Θ(ex(n, M_P))` as `n → ∞`, the constants
-depending on `P`. Stated along natural `n` (the domain of `ex`).
+/-- **Continuous Turán numbers versus 0-1 matrix extremal functions.** Let $P$ be a finite subset
+of $\mathbb{R}^2$. Then the continuous Turán number $\mathrm{opx}(n, P)$ and the 0-1 matrix
+extremal function $\mathrm{ex}(n, M_P)$ of $P$ on the $n \times n$ grid satisfy
+$\mathrm{opx}(n, P) = \Theta(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natural numbers,
+with constants depending on $P$.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.1
 (`integers-2024-A1-thm-3-1`). -/
@@ -480,8 +493,10 @@ Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article 
 public theorem_wanted patternEx_isBigO_opx {P : Set (ℝ × ℝ)} (hP : P.Finite) :
     (fun n : ℕ => (patternEx n P : ℝ)) =O[Filter.atTop] (fun n : ℕ => opx n P)
 
-/-- Theorem 3.3 (upper bound): for finite `P ⊆ ℝ²`, `opx(n, P) = O(ex(n, M_P))`. Stated along
-natural `n`.
+/-- **Upper bound for continuous Turán numbers of finite patterns.** Let $P$ be a finite subset of
+$\mathbb{R}^2$. Then the continuous Turán number $\mathrm{opx}(n, P)$ and the 0-1 matrix extremal
+function $\mathrm{ex}(n, M_P)$ of $P$ on the $n \times n$ grid satisfy
+$\mathrm{opx}(n, P) = O(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natural numbers.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.3
 (`integers-2024-A1-thm-3-3`). -/
@@ -518,8 +533,10 @@ public theorem_wanted opx_grid_isBigO (X Y : Finset ℝ) :
     (fun n : ℕ => opx n ((X : Set ℝ) ×ˢ (Y : Set ℝ))) =O[Filter.atTop]
       (fun n : ℕ => (n : ℝ) ^ (2 - 1 / (X.card : ℝ)))
 
-/-- Corollary 3.6: for every finite `P ⊆ ℝ²` there is `ε > 0` with `opx(n, P) = O(n^{2-ε})`.
-Stated along natural `n`.
+/-- **Power saving for continuous Turán numbers of finite planar patterns.** Let
+$P \subseteq \mathbb{R}^2$ be finite. Then there is a real number $\varepsilon > 0$ such that the
+continuous Turán number satisfies $\operatorname{opx}(n, P) = O(n^{2 - \varepsilon})$ as the
+natural number $n$ tends to infinity.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.6
 (`integers-2024-A1-cor-3-6`). -/
@@ -551,9 +568,11 @@ public theorem_wanted opx_grid_three_columns_isTheta {X Y : Finset ℝ} (hX : X.
     (fun n : ℕ => opx n ((X : Set ℝ) ×ˢ (Y : Set ℝ))) =Θ[Filter.atTop]
       (fun n : ℕ => (n : ℝ) ^ (5 / 3 : ℝ))
 
-/-- Corollary 3.8: if a finite `P ⊆ ℝ²` has no row with two points (pairwise distinct
-`y`-coordinates), then `opx(n, P) = O(n · 2^{α(n)^t})` for some `t`, with `α` the inverse
-Ackermann function. Stated along natural `n`.
+/-- **Almost linear bound for patterns with at most one point in each row.** Let
+$P \subseteq \mathbb{R}^2$ be a finite set whose points have pairwise distinct $y$-coordinates.
+Then there is a natural number $t$ such that $\operatorname{opx}(n, P) = O(n \cdot 2^{\alpha(n)^t})$
+as the natural number $n$ tends to infinity, where $\operatorname{opx}$ is the continuous Turán
+number and $\alpha$ is the inverse Ackermann function.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.8
 (`integers-2024-A1-cor-3-8`). -/
@@ -651,8 +670,11 @@ Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article 
 public theorem containsPatternD_empty {d : ℕ} (S : Set (Fin d → ℝ)) : ContainsPatternD S ∅ :=
   ⟨fun _ => id, by simp, by simp⟩
 
-/-- The continuous Turán number `opx(n, P, d)`: the supremum of `μ_d(S)` over open `P`-free sets
-`S ⊆ [0, n]^d` (`sSup ∅ = 0`).
+/-- **Continuous Turán number in $\mathbb{R}^d$.** For a natural number $d$, a real number $n$
+and a set $P \subseteq \mathbb{R}^d$, the continuous Turán number $\mathrm{opx}(n, P, d)$ is the
+supremum of the $d$-dimensional Lebesgue measures $\mu_d(S)$ over all open sets
+$S \subseteq [0, n]^d$ that do not contain $P$ in the sense of containment of point sets in
+$\mathbb{R}^d$; it is $0$ when there is no such set.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Section 5
 (definition of `opx(n, P, d)`). -/
@@ -852,8 +874,11 @@ public theorem_wanted opxD_dilate_le {d : ℕ} {P : Set (Fin d → ℝ)} (hP : P
       ((⌈q * c₂ / c₁⌉ : ℝ) + 1) ^ d *
         opxD d ((⌈(⌈n / c₁⌉ : ℝ) / ((⌈q * c₂ / c₁⌉ : ℝ) + 1)⌉ : ℝ) * c₁) P
 
-/-- Theorem 5.11: for finite `P ⊆ ℝ^d`, `opx(n, P, d) = Θ(ex(n, M_P, d))`, the constants
-depending on `P`. Stated along natural `n` (the domain of `ex`).
+/-- **Higher-dimensional continuous Turán numbers versus extremal functions.** Let $d$ be a
+natural number and let $P \subseteq \mathbb{R}^d$ be finite. Then the $d$-dimensional continuous
+Turán number $\mathrm{opx}(n, P, d)$ and the $d$-dimensional 0-1 matrix extremal function
+$\mathrm{ex}(n, M_P, d)$ of $P$ satisfy $\mathrm{opx}(n, P, d) = \Theta(\mathrm{ex}(n, M_P, d))$
+as the natural number $n$ tends to infinity, with constants depending on $P$.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 5.11
 (`integers-2024-A1-thm-5-11`). -/
@@ -891,8 +916,10 @@ public theorem_wanted opxD_grid_isBigO {d : ℕ} (X : Fin d → Finset ℝ) :
       (fun n : ℕ => (n : ℝ) ^ ((d : ℝ) -
         ((Finset.univ.sup fun i => (X i).card : ℕ) : ℝ) / ((∏ i, (X i).card : ℕ) : ℝ)))
 
-/-- Corollary 5.14: for every finite `P ⊆ ℝ^d` there is `ε > 0` with `opx(n, P, d) = O(n^{d-ε})`.
-Stated along natural `n`.
+/-- **Power saving for continuous Turán numbers of finite patterns in $\mathbb{R}^d$.** Let $d$
+be a natural number and let $P \subseteq \mathbb{R}^d$ be finite. Then there is a real number
+$\varepsilon > 0$ such that the $d$-dimensional continuous Turán number satisfies
+$\mathrm{opx}(n, P, d) = O(n^{d - \varepsilon})$ as the natural number $n$ tends to infinity.
 
 Source: Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.14
 (`integers-2024-A1-cor-5-14`). -/

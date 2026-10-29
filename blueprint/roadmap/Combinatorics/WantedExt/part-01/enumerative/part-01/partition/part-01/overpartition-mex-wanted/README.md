@@ -4,7 +4,7 @@ navigation: module
 
 # Overpartition Mex
 
-- [Overpartition Count](overpartition-count.md)
+- [Number of overpartitions](overpartition-count.md)
 - [Number of non-overlined copies of a part size](non-overlined-count.md)
 - [Minimal excludant of an overpartition with a multiplicity bound](least-gap-overpartition.md)
 - [Three-colored distinct-part partitions](d3.md)
@@ -14,7 +14,7 @@ navigation: module
 - [Three-colored distinct-part partitions of $1$](d3-one.md)
 - [Three-colored distinct-part partitions of $2$](d3-two.md)
 - [The overpartition mex sum counts three-colored distinct-part partitions](sigma-mex-overpartition-eq-d3.md)
-- [Sigma Mex Overpartition asymptotic](sigma-mex-overpartition-asymptotic.md)
+- [Asymptotic formula for the overpartition mex sum](sigma-mex-overpartition-asymptotic.md)
 - [Parity of the overpartition mex sum](sigma-mex-overpartition-parity.md)
 - [Generating function of the overpartition r-mex sums](sigma-mex-overpartition-generating-funct.md)
 - [Asymptotic formula for the overpartition r-mex sums](sigma-mex-overpartition-r-asymptotic.md)

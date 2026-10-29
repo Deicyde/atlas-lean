@@ -24,7 +24,7 @@ the same projection, then the over/under status at $a$ differs from the over/und
 
 ## Proof depends on
 
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Double points of a link projection](double-point-set.md)
 - [The over and under preimages exhaust a crossing](eq-over-point-or-eq-under-point-of-proj.md)
 - [Over-strand preimage of a crossing](over-point.md)

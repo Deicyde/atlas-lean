@@ -113,7 +113,12 @@ theorem IsFeasible.capacity_bounds {n : Nat}
     omega
   · exact feasible.2.1 u v
 
-/-- The residual graph contains exactly the ordered pairs with positive residual capacity. -/
+/-- **Residual graph.** Let $c$ be a capacity matrix assigning a natural number $c(u, v)$ to each
+ordered pair of vertices among $0, \dots, n - 1$, and let $f$ be a flow on these vertices. The
+residual graph of $c$ and $f$ is the directed adjacency graph whose vertices $0, \dots, n - 1$ are
+enumerated in increasing order and in which the adjacency list of $u$ consists of the vertices $v$
+with $f(u, v) < c(u, v)$, that is, with positive residual capacity $c(u, v) - f(u, v)$, in
+increasing order. -/
 def residualGraph {n : Nat} (capacity : Fin n → Fin n → Nat)
     (flow : Flow n) : DirectedAdjacency (Fin n) where
   vertices := List.finRange n
@@ -194,7 +199,13 @@ def pathFromDistances {V : Type*} [BEq V]
       | some next =>
           (pathFromDistances graph distance sink remaining next).map (current :: ·)
 
-/-- Successful distance-guided reconstruction produces a path of the labelled length. -/
+/-- **Soundness of distance-guided path reconstruction.** Let $G$ be a directed adjacency graph on
+a type $V$ whose Boolean test $\equiv$ on pairs of vertices holds exactly for equal vertices, let
+$d$ be a partial labelling of the vertices by natural numbers, let $t$ and $u$ be vertices, and let
+$k$ be a natural number. If the distance-guided reconstruction for $G$, $d$ and $t$ from $u$ with
+$k$ steps left succeeds and returns a list $p$, then $p$ is a walk from $u$ to $t$ in $G$ (it is
+nonempty, its first entry is $u$, its last entry is $t$, and every pair of consecutive entries is
+an edge of $G$) and $p$ has exactly $k + 1$ entries. -/
 theorem pathFromDistances_sound {V : Type*} [BEq V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (distance : V → Option Nat) (sink : V)
     {remaining : Nat} {current : V} {path : List V}
@@ -1118,7 +1129,11 @@ theorem flowValue_le_cutCapacity {n : Nat}
   intro v _
   exact feasible.2.1 u v
 
-/-- Vertices reachable from the source in the residual graph of a flow. -/
+/-- **Residual cut.** Let $c$ be a capacity matrix assigning a natural number $c(u, v)$ to each
+ordered pair of vertices among $0, \dots, n - 1$, let $f$ be a flow on these vertices, and let $s$
+be a vertex. The residual cut of $c$, $f$ and $s$ is the set of vertices visited by breadth-first
+search from $s$ in the residual graph of $c$ and $f$, that is, the set of vertices reachable from
+$s$ in that residual graph. -/
 def residualCut {n : Nat} (capacity : Fin n → Fin n → Nat)
     (flow : Flow n) (source : Fin n) : Finset (Fin n) :=
   (bfs (residualGraph capacity flow) source).order.toFinset

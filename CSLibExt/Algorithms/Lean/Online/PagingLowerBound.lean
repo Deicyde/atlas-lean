@@ -266,8 +266,12 @@ theorem mem_of_full {k : ℕ} {c : List (Fin (k + 1))} (hnd : c.Nodup) (hck : c.
   · exact List.mem_cons_self
   · exact List.mem_cons_of_mem _ ((List.Nodup.mem_erase_iff hnd).2 ⟨hx, hxc⟩)
 
-/-- **The offline trace misses at most once every `k` requests**, after at most `k - |c|`
-misses filling the cache. -/
+/-- **The offline trace misses at most once every $k$ requests.** Let $k \ge 1$ and consider the
+$k + 1$ pages $0, 1, \dots, k$. Let $N$ be a natural number, $\sigma$ a sequence of $n \le N$
+requests to these pages, and $c$ a cache of $|c| \le k$ distinct pages. Then the number of misses
+of the offline trace with cache size $k$ from $c$ on $\sigma$ is at most
+$(k - |c|) + \lfloor (n + k - 1) / k \rfloor = (k - |c|) + \lceil n / k \rceil$: after at most
+$k - |c|$ misses filling the cache, at most one miss every $k$ requests. -/
 theorem misses_optTrace_le {k : ℕ} (hk : 1 ≤ k) : ∀ (N : ℕ) (σ : List (Fin (k + 1))),
     σ.length ≤ N → ∀ c : List (Fin (k + 1)), c.Nodup → c.length ≤ k →
     misses (optTrace k c σ) ≤ (k - c.length) + (σ.length + k - 1) / k

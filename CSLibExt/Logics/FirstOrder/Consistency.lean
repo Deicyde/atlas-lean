@@ -108,7 +108,9 @@ end Provable
 
 /-! ### Consistency -/
 
-/-- A set of formulas is consistent when it does not prove `⊥`. -/
+/-- **Consistent set of formulas.** Let $L$ be a first-order language and $\alpha$ a type of
+variables. A set $S$ of formulas of $L$ with free variables in $\alpha$ is consistent when $S$
+does not prove $\bot$. -/
 def Consistent (S : Set (L.Formula α)) : Prop := ¬ Provable S ⊥
 
 theorem Consistent.mono {S S' : Set (L.Formula α)} (hSS' : S ⊆ S') (h : Consistent S') :
@@ -193,10 +195,10 @@ namespace MaximalConsistent
 variable [Infinite α] {Δ : Set (L.Formula α)} (hΔ : MaximalConsistent Δ)
 include hΔ
 
-/-- **Maximal consistent sets are deductively closed.** Let $L$ be a first-order language, let
-$\alpha$ be an infinite type of variables, and let $\Delta$ be a maximal consistent set of formulas
-of $L$ with free variables in $\alpha$. Every formula $\varphi$ that $\Delta$ proves lies in
-$\Delta$. -/
+/-- **Maximal consistent sets of first-order formulas are deductively closed.** Let $L$ be a
+first-order language, let $\alpha$ be an infinite type of variables, and let $\Delta$ be a maximal
+consistent set of formulas of $L$ with free variables in $\alpha$. Every formula $\varphi$ that
+$\Delta$ proves lies in $\Delta$. -/
 theorem mem_of_provable {φ : L.Formula α} (h : Provable Δ φ) : φ ∈ Δ :=
   hΔ.mem_of_consistent_insert fun hcons ↦ hΔ.1
     (Provable.mp (provable_not_iff_not_consistent_insert.mpr (not_not.mpr hcons)) h)

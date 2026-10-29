@@ -18,7 +18,7 @@ no edge identity twice, and every edge identity of the multigraph occurs in its 
 
 ## Proof depends on
 
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Edge list of an indexed walk](edges.md)
 
 ## Sources

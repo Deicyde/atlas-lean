@@ -16,13 +16,13 @@ $\varphi$.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](restrict-2.md)
-- [Vars](vars-2.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Proof depends on
 
 - [The restricted variable no longer occurs](not-mem-vars-restrict.md)
-- [Vars restrict subset](vars-restrict-subset.md)
+- [Restriction does not add variables](vars-restrict-subset.md)
 
 ## Sources
 

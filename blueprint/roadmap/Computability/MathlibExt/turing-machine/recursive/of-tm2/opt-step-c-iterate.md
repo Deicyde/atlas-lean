@@ -34,7 +34,7 @@ are relevant.
 - [Relevant symbols of a stack](relevant.md)
 - [The coded execution of a statement](step-aux-c.md)
 - [The coded step](step-c.md)
-- [Sym List](sym-list.md)
+- [Enumeration of the relevant symbols of a stack](sym-list.md)
 
 ## Sources
 

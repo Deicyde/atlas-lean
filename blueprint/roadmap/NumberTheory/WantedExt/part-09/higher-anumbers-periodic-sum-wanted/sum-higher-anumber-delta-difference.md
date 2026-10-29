@@ -30,7 +30,7 @@ The paper's explicit $B$ functions are replaced by the existential $C$.
 - [Delay of the base-$p$ expansion](base-pdelay.md)
 - [Average repeating digit](base-pdigit-average.md)
 - [Period of the base-$p$ expansion](base-pperiod.md)
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 - [The rounding indicator $\delta$](higher-anumber-delta.md)
 - [The denominator $\tau_D$](tau-den.md)
 - [The constant $\gamma$](tower-gamma.md)

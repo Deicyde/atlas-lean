@@ -8,7 +8,8 @@ lean: Cslib.Complexity.Karp.satDec_eq_hamPathDec_reduceHam
 
 # SAT ≤ HAMPATH preserves membership
 
-**SAT ≤ HAMPATH preserves membership.**
+**SAT ≤ HAMPATH preserves membership.** For every bit string $x$, SAT accepts $x$ if and only
+if HAMPATH accepts the image of $x$ under the SAT-to-HAMPATH reduction map.
 
 ## Depends on
 

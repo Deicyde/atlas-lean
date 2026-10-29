@@ -9,7 +9,7 @@ navigation: module
 - [The emulator walks right to the top of a stack](relates-in-steps-go.md)
 - [The emulator walks back to the bottom](relates-in-steps-ret.md)
 - [Running one statement on the emulator](exists-relates-in-steps-step-aux.md)
-- [One multi-stack step costs at most `1 + B (2 (H + B) + 2)` steps of the `TM1` emulator](exists-relates-within-steps-tm1-of-step.md)
+- [One multi-stack step costs at most $1 + B(2(H + B) + 2)$ emulator steps](exists-relates-within-steps-tm1-of-step.md)
 - [The emulation halts where the multi-stack machine halts](tm0-step-eq-none-of-step-eq-none.md)
 
 ## `TM1` steps on `TM0`

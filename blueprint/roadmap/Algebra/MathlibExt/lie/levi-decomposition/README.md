@@ -5,5 +5,5 @@ navigation: module
 
 # Levi Decomposition
 
-- [Exists is Compl of is Semisimple](exists-is-compl-of-is-semisimple.md)
+- [Weyl's complete reducibility theorem](exists-is-compl-of-is-semisimple.md)
 - [Levi decomposition](levi-decomposition.md)

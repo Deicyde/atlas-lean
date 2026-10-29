@@ -16,7 +16,7 @@ elements, counted with multiplicity, represented by $F$.
 ## Depends on
 
 - [Valid binomial forest](valid-2.md)
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Binomial tree](binomial-tree.md)
 - [Rank of a binomial tree](rank.md)
 

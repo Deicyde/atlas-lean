@@ -28,9 +28,9 @@ at most $k + \lceil n / k \rceil$ times.
 
 - [Page served by a cache event](../../greedy/offline-caching/request.md)
 - [Legal cache transitions](../../greedy/offline-caching/cache-lts.md)
-- [Furthest In Future misses le](../../greedy/offline-caching/furthest-in-future-misses-le.md)
+- [Furthest-in-future caching has the fewest misses](../../greedy/offline-caching/furthest-in-future-misses-le.md)
 - [The pager misses every request](misses-adversary.md)
-- [The offline trace misses at most once every `k` requests](misses-opt-trace-le.md)
+- [The offline trace misses at most once every $k$ requests](misses-opt-trace-le.md)
 - [Offline paging trace](opt-trace.md)
 - [The offline trace is legal](opt-trace-legal.md)
 - [Outside page of a cache](outside.md)

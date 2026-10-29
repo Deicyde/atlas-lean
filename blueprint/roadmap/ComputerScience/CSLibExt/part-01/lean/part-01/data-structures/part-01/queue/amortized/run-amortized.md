@@ -19,7 +19,7 @@ of the operations.
 - [Queue operation](operation.md)
 - [Potential of a two-list queue](potential.md)
 - [Running a sequence of queue operations](run.md)
-- [Total Charge](total-charge.md)
+- [Total charge of a sequence of queue operations](total-charge.md)
 
 ## Proof depends on
 

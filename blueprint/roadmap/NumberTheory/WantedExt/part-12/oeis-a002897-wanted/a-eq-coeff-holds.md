@@ -14,7 +14,7 @@ integer coefficients equals $\binom{2n}{n}^3$.
 
 ## Depends on
 
-- [A eq coeff](a-eq-coeff.md)
+- [Diagonal-coefficient property of the cubed central binomial coefficients](a-eq-coeff.md)
 
 ## Sources
 

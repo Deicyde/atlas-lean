@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Logic.PL.CNF.Satisfies
 ---
 
-# Satisfies
+# Satisfaction of a CNF formula
 
-A CNF formula is satisfied when each of its clauses is satisfied.
+**Satisfaction of a CNF formula.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ satisfies a CNF formula $\varphi$ when $v$ satisfies every clause of $\varphi$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ A CNF formula is satisfied when each of its clauses is satisfied.
 ## Proof depends on
 
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](satisfies-2.md)
+- [Satisfaction of a clause](satisfies-2.md)
 
 ## Sources
 

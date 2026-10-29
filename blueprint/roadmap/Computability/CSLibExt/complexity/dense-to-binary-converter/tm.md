@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Stacks of the dense-to-binary machine](stk.md)
 - [The dense-to-binary converter program](prog.md)
 

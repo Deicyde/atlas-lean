@@ -26,7 +26,7 @@ started on $l$, halts.
 - [The simulation halts one step after the TM0 machine](step-of-tm0-of-step-eq-none.md)
 - [Each TM0 step is one step of the simulation](step-of-tm0-of-step-eq-some.md)
 - [Post–Turing reading of a tape over the non-blank symbols](to-tape.md)
-- [To Tape mk₁](to-tape-mk.md)
+- [The Post–Turing reading of an input tape](to-tape-mk.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ wire $x$ after running $ps$ on the complemented input $y \mapsto \lnot f(y)$.
 
 ## Depends on
 
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 
 ## Proof depends on
 

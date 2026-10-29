@@ -220,7 +220,9 @@ public theorem_wanted campbellH1_sum_and_y_relations :
           10 ^ (ℓ - 1) ∧
         (campbellH2 (10 ^ ℓ) : ℤ) - campbellH2 (10 ^ ℓ - 1) = 10 ^ (2 * (ℓ / 2))
 
-/-- Lemma 3: `⌊f(n)⌋ = h₂(n)` for every positive integer `n`, and `f(n) = h₂(n)` for `n ≥ 10`.
+/-- **The floor of Campbell's interpolation at positive integers is Campbell's sequence $h_2$.**
+Let $f$ be Campbell's interpolation and $h_2$ Campbell's sequence. For every integer $n \ge 1$,
+$\lfloor f(n) \rfloor = h_2(n)$, and for every integer $n \ge 10$, $f(n) = h_2(n)$.
 
 Source: John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*,
 Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 3
@@ -237,7 +239,9 @@ Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 4
 (`jis-2026-26.3.4-lem-4`). -/
 public theorem_wanted campbellF_differentiableOn : DifferentiableOn ℝ campbellF (Set.Ioi 0)
 
-/-- Lemma 5: `f` is monotonically increasing (non-decreasing) on `ℝ_{≥ 0}`.
+/-- **Monotonicity of Campbell's interpolation.** Campbell's interpolation $f$ is monotone
+(non-decreasing) on $[0, \infty)$: for all real numbers $x$ and $y$ with $0 \le x \le y$,
+$f(x) \le f(y)$.
 
 Source: John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*,
 Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 5

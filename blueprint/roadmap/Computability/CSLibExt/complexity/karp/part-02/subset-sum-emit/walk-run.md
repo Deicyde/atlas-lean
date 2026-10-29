@@ -39,7 +39,7 @@ on $R$; after each row the column marks are restored from $Rt$ and the row mark 
 ## Proof depends on
 
 - [Testing a popped input bit](is-bit-block-val.md)
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Testing a popped input bit](is-v-val.md)
 - [Subset-sum emitter: one row of the pair walk](pr-run.md)
 - [Reading a pair bit or vertex mark](val-of.md)

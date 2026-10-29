@@ -23,7 +23,7 @@ $I^{\mathfrak m_1} \cap P_{\mathfrak m_2} \subseteq C_1$.
 
 - [Congruence subgroup](../congruence-subgroup/congruence-subgroup.md)
 - [Congruence subgroup as a subgroup of all invertible fractional ideals](../congruence-subgroup/to-ambient-subgroup.md)
-- [Congruence Subgroup Pair](../congruence-equivalence/congruence-subgroup-pair.md)
+- [Congruence subgroup pair](../congruence-equivalence/congruence-subgroup-pair.md)
 - [Equivalence of congruence subgroup pairs](../congruence-equivalence/is-equivalent.md)
 - [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray group among all fractional ideals](ray-group-ambient.md)

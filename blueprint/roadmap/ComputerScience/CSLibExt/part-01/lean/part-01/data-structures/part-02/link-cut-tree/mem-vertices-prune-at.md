@@ -16,7 +16,7 @@ different from $x$.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Pruning the subtrees rooted at a vertex](prune-at.md)
 
 ## Proof depends on

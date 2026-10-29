@@ -15,7 +15,7 @@ contains the value $1$ has length $1$.
 ## Depends on
 
 - [Metered parking function](is-metered-parking-function.md)
-- [Lace Decomposition](lace-decomposition.md)
+- [Lace decomposition](lace-decomposition.md)
 
 ## Sources
 

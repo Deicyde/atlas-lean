@@ -14,7 +14,7 @@ $2j^2 \le n$ equals $1$ if $n = k(k+1)/2$ for some integer $k \ge 0$, and $0$ ot
 
 ## Depends on
 
-- [Distinct Even Parts Count](distinct-even-parts-count.md)
+- [Partitions whose even parts are distinct](distinct-even-parts-count.md)
 
 ## Sources
 

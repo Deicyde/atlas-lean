@@ -38,7 +38,7 @@ navigation: module
 - [Chunks of a sorted list are ordered](group-ordered-chunk-groups.md)
 - [Grouped y-fast trie from a sorted list](of-sorted-list.md)
 - [Building from a sorted list gives a valid grouped y-fast trie](valid-of-sorted-list.md)
-- [Not valid of Sorted List zero](not-valid-of-sorted-list-zero.md)
+- [Building from a nonempty list with group bound zero gives an invalid trie](not-valid-of-sorted-list-zero.md)
 - [Keys of the grouped y-fast trie built from a list](contents-of-sorted-list.md)
 - [Membership in a trie built from a sorted list](member-of-sorted-list-iff.md)
 - [Successor in the trie built from a sorted list](successor-of-sorted-list-eq-some-iff.md)

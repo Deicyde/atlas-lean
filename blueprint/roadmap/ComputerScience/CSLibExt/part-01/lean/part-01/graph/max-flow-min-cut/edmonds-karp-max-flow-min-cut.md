@@ -20,7 +20,7 @@ value of $f$ equals the capacity of $S_0$.
 ## Depends on
 
 - [Edmonds–Karp maximum flow](../edmonds-karp/edmonds-karp.md)
-- [Residual Cut](../edmonds-karp/residual-cut.md)
+- [Residual cut](../edmonds-karp/residual-cut.md)
 - [Real capacities](real-cap.md)
 - [Real arc flow](real-flow.md)
 - [Feasible flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)

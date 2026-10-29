@@ -15,7 +15,7 @@ radius is at most $R$.
 ## Depends on
 
 - [Admissible radius in Sendov's problem](is-admissible-radius.md)
-- [Sendov Radius](sendov-radius.md)
+- [The Sendov radius](sendov-radius.md)
 
 ## Proof depends on
 

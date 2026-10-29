@@ -576,7 +576,11 @@ theorem walkF_chainTail (l : ℕ × Bool) (ls : List (ℕ × Bool)) (z : ℕ) :
         omega]
       simp [litCl, nz, Nat.add_assoc]
 
-/-- Walking a non-empty clause from its last literal produces `chain`. -/
+/-- **Walking a whole clause gives its chain.** For every non-empty clause $C$ and every
+$z \in \mathbb{N}$, the output clauses of the literals of $C$, walked from its last literal with
+counter $z$, with both the first-walked flag and the last-walked flag true, that is,
+$\mathrm{walkF}(C, \mathrm{true}, \mathrm{true}, z)$, are the chain of clauses replacing $C$ with
+fresh numbers from $z$ on. -/
 theorem walkF_chain (C : CNFClause) (hC : C ≠ []) (z : ℕ) : walkF C true true z = chain C z := by
   match C, hC with
   | [l], _ => simp [walkF, chain, litCl]

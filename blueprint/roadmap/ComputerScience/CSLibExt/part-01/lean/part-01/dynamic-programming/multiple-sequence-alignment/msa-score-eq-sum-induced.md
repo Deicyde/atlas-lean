@@ -16,7 +16,7 @@ $i < j < k$, of the score of the pairwise alignment induced by $A$ on rows $i$ a
 ## Depends on
 
 - [Multiple alignments](msalignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Induced pairwise alignment](induced-pair.md)
 - [Sum-of-pairs score](msa-score.md)
 - [Pairs of rows](pair-finset.md)

@@ -14,11 +14,11 @@ coefficient in $\Gamma$ is nonzero, the closed carrier of $r$ is contained in $G
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Sources

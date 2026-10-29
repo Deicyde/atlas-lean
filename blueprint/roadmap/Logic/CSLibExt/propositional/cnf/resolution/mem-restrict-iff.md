@@ -15,7 +15,7 @@ of $\varphi$ that does not contain $\ell$ such that $C$ is the restriction of $C
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](../restriction/restrict-2.md)
+- [Restriction of a CNF formula by a literal](../restriction/restrict-2.md)
 - [CNF clause](../basic/cnfclause.md)
 - [Restriction of a clause by a literal](../restriction/restrict.md)
 

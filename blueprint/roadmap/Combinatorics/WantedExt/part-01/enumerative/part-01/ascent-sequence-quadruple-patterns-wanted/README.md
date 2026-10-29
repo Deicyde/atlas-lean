@@ -6,7 +6,7 @@ navigation: module
 
 - [Number of weak ascents of a word](word-weak-ascents.md)
 - [Weak ascent sequence](is-weak-ascent-seq.md)
-- [Pattern containment](contains-pattern.md)
+- [Pattern containment in words](contains-pattern.md)
 - [The thirteen patterns of length three](length-three-patterns.md)
 - [Ascent sequences avoiding a set of patterns](ascent-avoiders.md)
 - [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)

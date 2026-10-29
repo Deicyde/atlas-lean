@@ -18,7 +18,7 @@ $$|g'(0)| = \sup_{f \in F} |f'(0)|.$$
 ## Depends on
 
 - [Admissible maps into the unit disc](admissible-family.md)
-- [Unit Disk](unit-disk.md)
+- [Open unit disc](unit-disk.md)
 
 ## Sources
 

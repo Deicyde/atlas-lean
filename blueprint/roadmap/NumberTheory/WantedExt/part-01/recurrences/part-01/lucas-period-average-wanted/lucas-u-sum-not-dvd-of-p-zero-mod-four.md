@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_sum_not_dvd_of_p_zero_mod_four
 ---
 
-# Lucas U sum not dvd of p zero mod four
+# Lucas sums not divisible by $2^k$ when $P \equiv 0$ and $-Q \equiv 1 \pmod 4$
 
-Theorem 2.16: for nondegenerate `U(a, b)` with `a ≡ 0 (mod 4)` and `b ≡ 1 (mod 4)`:
-`B_U(n) ≢ 0 (mod 2 ^ k)` when `2 ^ k ∥ n` with `k ≥ 1`, so `C'(n)` does not exist for even
-`n`, and `A_U(m)` is an integer only if `m` is odd.
+**Lucas sums not divisible by $2^k$ when $P \equiv 0$ and $-Q \equiv 1 \pmod 4$.** Let $P$
+and $Q \ne 0$ be integers forming a nondegenerate Lucas pair with $P \equiv 0 \pmod 4$ and
+$-Q \equiv 1 \pmod 4$, and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Let $S'(U)$ be the set of positive integers $n$ coprime to $Q$
+such that the period $\pi_U(n)$ of $U$ modulo $n$ divides $n$ and $n \mid U_1 + \dots + U_n$.
+Then for every $k \ge 1$ and every natural number $n$ with $2^k \mid n$ and $2^{k+1} \nmid n$,
+$2^k$ does not divide $U_1 + \dots + U_n$; for every even $n > 0$, no element of $S'(U)$ is
+divisible by $n$; and every positive integer $m$ with $m \mid U_1 + \dots + U_m$ is odd.
+
+In the paper's notation $a = P$ and $b = -Q$, so the hypotheses are $a \equiv 0$ and
+$b \equiv 1 \pmod 4$.
 
 ## Depends on
 

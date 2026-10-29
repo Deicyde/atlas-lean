@@ -28,7 +28,7 @@ disjointness of the represented trees pins down which tree contains $x$.
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
 - [Root of a rooted tree](../euler-tour-tree/root.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 - [Parent-child relation in a rooted tree](parent-child.md)
 - [Vertex of a link-cut tree state](mem.md)

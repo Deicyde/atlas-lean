@@ -48,7 +48,7 @@ as a recursive call or a unification fails:
 - [Instantiation of a type scheme](../typing/inst.md)
 - [Generalization of a monotype](../typing/gen.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Composition of substitutions on first-order terms](../../../../part-02/unification/basic/comp.md)
 - [Terms for unification](../../../../part-02/unification/basic/term.md)
 - [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 - [Martelli–Montanari unification](../../../../part-02/unification/basic/unify.md)

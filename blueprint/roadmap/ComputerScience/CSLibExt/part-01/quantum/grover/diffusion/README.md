@@ -4,6 +4,6 @@ navigation: module
 
 # Diffusion
 
-- [Mean Amplitude](mean-amplitude.md)
+- [Mean amplitude](mean-amplitude.md)
 - [Inversion about the mean](diffusion.md)
-- [Grover Step](grover-step.md)
+- [Grover step](grover-step.md)

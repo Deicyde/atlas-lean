@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Left Derivation](left-derivation.md)
+- [Leftmost derivation](left-derivation.md)
 
 ## Sources
 

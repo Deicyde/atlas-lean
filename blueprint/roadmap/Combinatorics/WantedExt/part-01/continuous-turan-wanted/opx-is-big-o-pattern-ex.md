@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.opx_isBigO_patternEx
 ---
 
-# Opx is Big O pattern Ex
+# Upper bound for continuous Turán numbers of finite patterns
 
-Theorem 3.3 (upper bound): for finite `P ⊆ ℝ²`, `opx(n, P) = O(ex(n, M_P))`. Stated along
-natural `n`.
+**Upper bound for continuous Turán numbers of finite patterns.** Let $P$ be a finite subset of
+$\mathbb{R}^2$. Then the continuous Turán number $\mathrm{opx}(n, P)$ and the 0-1 matrix extremal
+function $\mathrm{ex}(n, M_P)$ of $P$ on the $n \times n$ grid satisfy
+$\mathrm{opx}(n, P) = O(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natural numbers.
 
 ## Depends on
 

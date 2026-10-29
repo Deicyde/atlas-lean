@@ -16,7 +16,7 @@ $\mathrm{none}$.
 
 ## Depends on
 
-- [Suffix](../suffix-array/suffix.md)
+- [Suffix of a list at an index](../suffix-array/suffix.md)
 - [Terminated string](terminated.md)
 
 ## Sources

@@ -50,7 +50,7 @@ $\mathrm{KB}$ and goes to the entry label of the stack chain of situation $i$ fo
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

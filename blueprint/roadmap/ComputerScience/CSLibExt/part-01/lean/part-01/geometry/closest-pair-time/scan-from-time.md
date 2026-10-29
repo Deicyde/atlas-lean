@@ -15,11 +15,11 @@ initial segment of $L$ all of whose points $r = (r_1, r_2)$ satisfy $(r_2 - q_2)
 
 ## Depends on
 
-- [Scan From](../closest-pair/scan-from.md)
+- [Strip scan from a point](../closest-pair/scan-from.md)
 
 ## Proof depends on
 
-- [Dist2](../closest-pair/dist2.md)
+- [Squared distance in the plane](../closest-pair/dist2.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

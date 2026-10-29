@@ -14,7 +14,7 @@ multiset.
 
 ## Depends on
 
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Empty Fibonacci heap](empty.md)
 
 ## Proof depends on

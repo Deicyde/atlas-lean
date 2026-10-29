@@ -33,7 +33,7 @@ stack is as it started.
 
 ## Proof depends on
 
-- [Back loop](back-loop.md)
+- [The return loop of the lookup machine](back-loop.md)
 - [Initialization step of the lookup machine](init-run.md)
 - [The scan loop of the lookup machine](scan-loop.md)
 - [Stack contents of the lookup machine](stk.md)

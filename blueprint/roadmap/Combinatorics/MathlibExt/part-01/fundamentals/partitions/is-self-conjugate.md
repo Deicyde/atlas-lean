@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Conjugate](partition-conjugate.md)
+- [Conjugate partition](partition-conjugate.md)
 
 ## Sources
 

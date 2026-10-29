@@ -16,7 +16,7 @@ Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`).
 
 ## Proof depends on
 
-- [Pairs nodup](../clique-correct/pairs-nodup.md)
+- [The vertex pairs are listed without repetition](../clique-correct/pairs-nodup.md)
 
 ## Sources
 

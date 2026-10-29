@@ -14,7 +14,7 @@ $v$ and $v$ is strongly connected to $w$, then $u$ is strongly connected to $w$.
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 
 ## Proof depends on
 

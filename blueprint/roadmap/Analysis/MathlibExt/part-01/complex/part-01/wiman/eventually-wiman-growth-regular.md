@@ -19,7 +19,7 @@ $[x_0, \infty)$.
 ## Depends on
 
 - [Transcendental functions](../../part-02/wiman/is-transcendental.md)
-- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](coefficient-exponential-family/wiman-growth.md)
 
 ## Proof depends on
 

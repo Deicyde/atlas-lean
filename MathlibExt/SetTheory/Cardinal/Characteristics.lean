@@ -42,8 +42,8 @@ def IsUnboundedFamily (F : Set (ℕ → ℕ)) : Prop :=
 
 -- Logic 362: Bounding number
 
-/-- The bounding number 𝔟 is the infimum of the cardinalities of all unbounded families of functions
-f:ℕ→ ℕ.
+/-- **Bounding number.** The bounding number $\mathfrak{b}$ is the infimum of the cardinalities of
+all unbounded families of functions $\mathbb{N} \to \mathbb{N}$.
 -/
 noncomputable def boundingNumber : Cardinal :=
   sInf {c : Cardinal | ∃ F : Set (ℕ → ℕ), IsUnboundedFamily F ∧ #F = c}

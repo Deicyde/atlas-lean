@@ -16,7 +16,7 @@ the erasures of $L$ and $R$.
 ## Depends on
 
 - [Huffman tree](../huffman/huffman-tree.md)
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Sources
 

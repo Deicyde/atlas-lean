@@ -24,7 +24,7 @@ splitting it at $p$ are valid treaps.
 
 - [Heap order of treap priorities](heap-ordered.md)
 - [Ordered treap tree](ordered.md)
-- [Heap Ordered split](heap-ordered-split.md)
+- [Treap split preserves heap order](heap-ordered-split.md)
 - [Treap split preserves search-tree order](ordered-split.md)
 
 ## Sources

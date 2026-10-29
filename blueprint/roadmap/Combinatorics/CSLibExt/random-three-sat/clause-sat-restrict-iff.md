@@ -20,7 +20,7 @@ $A$ gives the variable of at least one of its literals that literal's polarity.
 - [3-clause](clause.md)
 - [Satisfaction of a 3-clause](clause-sat.md)
 - [CNF clause of a random 3-SAT clause](to-cnfclause.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 

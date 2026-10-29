@@ -28,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp](comp-4.md)
+- [Composition of immersions over boundaryless models](comp-4.md)
 
 ## Sources
 

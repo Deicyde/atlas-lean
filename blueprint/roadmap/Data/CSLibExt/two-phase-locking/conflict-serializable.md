@@ -30,7 +30,7 @@ conflict-serializable schedule.
 - [Holding a lock](holds-before.md)
 - [Lock mode](lock-mode.md)
 - [Lock mode coverage](covers.md)
-- [Conflicts](../serializability/conflicts.md)
+- [Conflicting operations](../serializability/conflicts.md)
 - [Edge of the precedence graph](../serializability/precedence-edge.md)
 - [A rank increasing along precedence edges gives conflict serializability](../serializability/conflict-serializable-of-rank.md)
 

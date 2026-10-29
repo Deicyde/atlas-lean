@@ -35,7 +35,7 @@ navigation: module
 
 - [Preorder of a path](preorder-chain.md)
 - [Rooted spanning tree of a vertex list](is-spanning.md)
-- [Is Min Spanning](is-min-spanning.md)
+- [Minimum spanning tree of a vertex list](is-min-spanning.md)
 - [Tour of a vertex list](is-tour.md)
 - [A minimum spanning tree costs at most any tour](weight-le-tour-cost.md)
 

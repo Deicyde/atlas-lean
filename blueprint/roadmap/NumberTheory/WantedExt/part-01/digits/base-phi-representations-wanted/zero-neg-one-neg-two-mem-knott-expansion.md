@@ -14,7 +14,7 @@ its value is $1 + \varphi^{-1} + \varphi^{-2} = 2$ and it satisfies Knott's trun
 
 ## Depends on
 
-- [Knott Expansions](knott-expansions.md)
+- [Knott expansions](knott-expansions.md)
 
 ## Proof depends on
 

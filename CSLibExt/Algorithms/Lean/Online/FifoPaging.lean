@@ -283,7 +283,8 @@ theorem fifoMisses_phase (k : ℕ) : ∀ (seen c L σ : List α), L <:+ c → L.
       · simp only [policyMisses, Nat.zero_add]
         omega
 
-/-- A legal cache of capacity `k`: distinct pages, at most `k` of them. -/
+/-- **Legal cache.** For a type $\alpha$ of pages and a capacity $k \in \mathbb{N}$, a legal cache
+is a list of pages of $\alpha$ with no duplicates and at most $k$ entries. -/
 abbrev LegalCache (α : Type*) (k : ℕ) := {c : List α // c.Nodup ∧ c.length ≤ k}
 
 /-- **FIFO keeps the cache legal on every request sequence.** If a list $c$ of pages has no

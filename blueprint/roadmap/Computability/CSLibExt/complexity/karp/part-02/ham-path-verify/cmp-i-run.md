@@ -26,7 +26,7 @@ false and the same stacks $\sigma$.
 - [First counter of a HAMPATH-verifier comparison](ca.md)
 - [Second counter of a HAMPATH-verifier comparison](cb.md)
 - [Exit labels of the counter comparisons](cout.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
@@ -35,7 +35,7 @@ false and the same stacks $\sigma$.
 
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
+- [Non-destructive comparison of two counters](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
 
 ## Sources
 

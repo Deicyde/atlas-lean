@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH_eq
 ---
 
-# Lemma 3
+# A step identity for the Zerroukhat–Khaldi sums $H_{n,m}$
 
-**Lemma 3**, second identity: for `n ≥ r + 1`,
-`H_{n,r} = H_{n,r-1}`.
+**A step identity for the Zerroukhat–Khaldi sums $H_{n,m}$.** Let $H_{n,m}$ denote the
+Zerroukhat–Khaldi sum. For all natural numbers $n$ and $r$ with $r \ge 1$ and $n \ge r + 1$,
+$H_{n,r} = H_{n,r-1}$.
 
 ## Depends on
 

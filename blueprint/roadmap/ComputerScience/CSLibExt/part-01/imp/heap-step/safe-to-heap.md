@@ -28,7 +28,7 @@ This holds because plain IMP never gets stuck except at $\mathtt{skip}$.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [IMP configuration](../small-step/config.md)
 - [Heap configurations](hconfig.md)
 - [Small-step semantics of heap commands](hstep.md)

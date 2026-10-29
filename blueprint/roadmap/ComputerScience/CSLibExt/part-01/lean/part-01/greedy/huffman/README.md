@@ -6,7 +6,7 @@ navigation: module
 
 - [Huffman tree](huffman-tree.md)
 - [Weighted leaves of a Huffman tree](weighted-leaves.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 - [Total weight of a Huffman tree](total-weight.md)
 - [Weighted path length](weighted-path-length.md)
 - [Weighted path length of a merged tree](weighted-path-length-fork.md)
@@ -18,7 +18,7 @@ navigation: module
 - [Decoding one codeword](decode-one.md)
 - [Decoding a bit string](decode.md)
 - [Huffman encoding of a message](encode.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
 - [Every leaf symbol has a codeword](code-is-some-of-mem-symbols.md)
 - [Codeword lookup agrees with the leaf code](code-code-of-leaf.md)

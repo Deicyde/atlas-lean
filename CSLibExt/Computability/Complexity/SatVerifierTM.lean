@@ -248,10 +248,10 @@ def dW : G → Option Bool
   | .inr (some b) => some b
   | _ => none
 
-/-- **Stacks emptied by the cleanup.** The cleanup loop of the host SAT verifier empties the list
-of stacks made of the input stack followed by the work stacks $X$, $W$, $T$, $B$, $S$, $A$, $C$,
-$V$, $P$, $F$, $CC$, $LC$, $X1$, $W1$, $U$, in that order: every host stack except the output
-stack. -/
+/-- **Stacks emptied by the SAT verifier's cleanup.** The cleanup loop of the host SAT verifier
+empties the list of stacks made of the input stack followed by the work stacks $X$, $W$, $T$, $B$,
+$S$, $A$, $C$, $V$, $P$, $F$, $CC$, $LC$, $X1$, $W1$, $U$, in that order: every host stack except
+the output stack. -/
 def workKs : List HK := [.inp, .X, .W, .T, .B, .S, .A, .C, .V, .P, .F, .CC, .LC, .X1, .W1, .U]
 
 /-- **Program of the SAT verifier host.** For a value $c$ of the 3SAT flag, the host program

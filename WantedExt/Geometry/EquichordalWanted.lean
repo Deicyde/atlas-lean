@@ -55,7 +55,8 @@ result. Category-(b) candidate from §205 of the Knill survey.
 
 open Metric Set
 
-/-- The Euclidean plane. -/
+/-- **Euclidean plane for the equichordal point problem.** The Euclidean plane is the space
+$\mathbb{R}^2$ of pairs of real numbers with the Euclidean inner product and norm. -/
 abbrev Plane := EuclideanSpace ℝ (Fin 2)
 
 /-- **Equichordal point.** Let $K$ be a subset of the Euclidean plane. A point $P$ is an

@@ -17,7 +17,7 @@ $F_m! = F_1 F_2 \cdots F_m$ is the Fibonacci factorial (with $F_0! = 1$).
 ## Depends on
 
 - [Fibonacci factorial](fibonacci-factorial.md)
-- [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
+- [Generalized FiboCatalan numbers](generalized-fibonacci-catalan.md)
 
 ## Proof depends on
 

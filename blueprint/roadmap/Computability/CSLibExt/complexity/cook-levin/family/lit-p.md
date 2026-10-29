@@ -26,7 +26,7 @@ the literal slot, drain `Q`.
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Label after a literal routine in the transition-family generator](after.md)
 - [Constant offset of a literal position](cst.md)
-- [K A](k-a.md)
+- [Stack index of a literal in a transition clause](k-a.md)
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Polarity of a transition-clause literal](sgn.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
@@ -34,7 +34,7 @@ the literal slot, drain `Q`.
 - [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

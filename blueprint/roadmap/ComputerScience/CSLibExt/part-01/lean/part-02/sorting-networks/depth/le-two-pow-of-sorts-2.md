@@ -28,7 +28,7 @@ By the 0-1 principle, the hypothesis implies that $C$ sorts every input over eve
 - [Extension of a Boolean vector by false](../bitonic/extend-false.md)
 - [Sorting comparator lists on $n$ wires have depth at least $\log_2 n$](le-two-pow-of-sorts.md)
 - [Restricting comparators to finitely many wires](../bitonic/of-pairs.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Comparator list of a network](to-pairs.md)
 - [Running a comparator network](../zero-one/run.md)
 

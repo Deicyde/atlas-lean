@@ -21,8 +21,8 @@ $s$ to the two sides of any equation of $E$ gives the same term.
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Size of a term](size.md)
 - [Occurs check: size bound](size-subst-lt-of-mem.md)

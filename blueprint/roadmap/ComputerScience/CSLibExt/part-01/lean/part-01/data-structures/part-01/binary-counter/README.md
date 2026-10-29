@@ -21,7 +21,7 @@ navigation: module
 - [Resetting a binary counter](reset.md)
 - [Reset returns the all-false counter](reset-to-list.md)
 - [Reset yields the value zero](reset-value.md)
-- [Reset time](reset-time.md)
+- [Cost of resetting a binary counter](reset-time.md)
 - [Reset cost is the Hamming distance](reset-time-changes.md)
 - [Reset costs at most the width](reset-time-le.md)
 - [Resetting a width-zero counter costs nothing](reset-time-zero-width.md)

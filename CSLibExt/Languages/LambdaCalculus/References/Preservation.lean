@@ -99,11 +99,11 @@ theorem subst {Γ Δ S : List (Ty Base)} {t : Term Base} {T : Ty Base}
   | deref _ ih => exact .deref (ih hσ)
   | assign _ _ ih₁ ih₂ => exact .assign (ih₁ hσ) (ih₂ hσ)
 
-/-- **Substitution lemma.** Let $\Gamma$ be a variable context and $S$ a store typing. If a term
-$t$ has type $T$ under $S$ and the context that extends $\Gamma$ by a new innermost variable
-(index $0$) of type $A$, and a term $s$ has type $A$ under $\Gamma$ and $S$, then substituting
-$s$ for variable $0$ in $t$ (and lowering every other variable by one) gives a term of type $T$
-under $\Gamma$ and $S$.
+/-- **Substitution lemma for the lambda calculus with references.** Let $\Gamma$ be a variable
+context and $S$ a store typing. If a term $t$ has type $T$ under $S$ and the context that extends
+$\Gamma$ by a new innermost variable (index $0$) of type $A$, and a term $s$ has type $A$ under
+$\Gamma$ and $S$, then substituting $s$ for variable $0$ in $t$ (and lowering every other variable
+by one) gives a term of type $T$ under $\Gamma$ and $S$.
 
 This is TAPL Lemma 13.5.4 in de Bruijn form. -/
 theorem instantiate {Γ S : List (Ty Base)} {body s : Term Base} {A T : Ty Base}
@@ -145,8 +145,11 @@ namespace StoreTyped
 
 variable {Γ S : List (Ty Base)} {μ : Store Base}
 
-/-- A well-typed store remains well typed when its entries are retyped under
-an extended store typing. -/
+/-- **Retyping a well-typed store under an extended store typing.** Let $\Gamma$ be a variable
+context, let $S$ and $S'$ be store typings such that $S$ is a prefix of $S'$, and let $\mu$ be a
+store that is well typed under $\Gamma$ and $S$. Then $\mu$ and $S$ have the same length, and for
+every location $l$ less than this length, the entry of $\mu$ at $l$ is a value that has, under
+$\Gamma$ and $S'$, the type that $S$ assigns to $l$. -/
 theorem extendStore {S' : List (Ty Base)} (h : StoreTyped Γ S μ) (hS : S <+: S') :
     List.Forall₂ (fun v T => v.Value ∧ HasType Γ S' v T) μ S :=
   h.imp fun _ _ hv => ⟨hv.1, hv.2.extendStore hS⟩

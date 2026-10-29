@@ -90,8 +90,8 @@ variable {n : ℕ} {X : Type*}
 
 namespace Op
 
-/-- Two operations conflict: different transactions access the same item, and at least one of the
-accesses is a write. -/
+/-- **Conflicting operations.** Two operations of a schedule conflict when they belong to different
+transactions, access the same data item, and at least one of the two accesses is a write. -/
 def Conflicts (a b : Op n X) : Prop :=
   a.txn ≠ b.txn ∧ a.item = b.item ∧ (a.access = .write ∨ b.access = .write)
 

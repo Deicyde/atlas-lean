@@ -6,10 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.isGibonacciGood_one
 ---
 
-# Is Gibonacci Good one
+# One is good for every pair
 
-Characteristic example: `1` is good for every `(a, b)`, with value
-`-b`.
+**One is good for every pair.** For all integers $a$ and $b$, the rational number $1$ is good
+for $(a, b)$.
+
+The value of the Gibonacci generating function there is $G^{(a,b)}(1) = -b$.
 
 ## Depends on
 

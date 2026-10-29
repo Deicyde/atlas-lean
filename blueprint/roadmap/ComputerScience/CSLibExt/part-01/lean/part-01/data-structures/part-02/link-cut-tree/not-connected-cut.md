@@ -20,7 +20,7 @@ No invariant on the state is needed.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Link-cut tree state](state.md)
 - [Connectivity in a link-cut tree state](connected.md)
 - [Cutting off the subtree at a vertex](cut.md)

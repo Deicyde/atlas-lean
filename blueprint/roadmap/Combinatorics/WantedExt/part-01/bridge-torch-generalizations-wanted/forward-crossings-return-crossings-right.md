@@ -17,7 +17,7 @@ the right bank after the crossings $\{1,2\}$, $\{1\}$ (the first two of the sche
 
 - [Forward crossings](forward-crossings.md)
 - [Return crossings](return-crossings.md)
-- [Right Bank](right-bank.md)
+- [Right bank after a sequence of crossings](right-bank.md)
 
 ## Sources
 

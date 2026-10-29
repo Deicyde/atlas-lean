@@ -15,8 +15,8 @@ output stack $O$ holding exactly one entry: the answer of the marking algorithm 
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [The marking machine for PATH](prog.md)
 - [Start label of the PATH marking machine](start.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)

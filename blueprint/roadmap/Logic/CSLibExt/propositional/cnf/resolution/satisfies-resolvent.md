@@ -14,8 +14,8 @@ that satisfies both $C$ and $D$ satisfies the resolvent of $C$ and $D$ on $x$.
 ## Depends on
 
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
-- [Resolvent](resolvent.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
+- [Resolvent of two clauses](resolvent.md)
 
 ## Proof depends on
 

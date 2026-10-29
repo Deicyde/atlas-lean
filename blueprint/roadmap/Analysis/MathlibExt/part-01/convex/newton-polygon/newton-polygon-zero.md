@@ -15,11 +15,11 @@ $\mathbb{R}^2$.
 
 ## Depends on
 
-- [Newton Polygon](newton-polygon.md)
+- [Newton polygon](newton-polygon.md)
 
 ## Proof depends on
 
-- [Newton Support](newton-support.md)
+- [Newton support](newton-support.md)
 - [The Newton support of the zero polynomial is empty](newton-support-zero.md)
 
 ## Sources

@@ -22,7 +22,7 @@ $n$, where $g_B$ is the step bound of the composed machine.
 
 ## Depends on
 
-- [F R](f-r.md)
+- [The Cook–Levin reduction function](f-r.md)
 - [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
@@ -40,7 +40,7 @@ $n$, where $g_B$ is the step bound of the composed machine.
 - [The formula emitted on a raw input](phi-of.md)
 - [Stacks of the full machine](../precompute/fk.md)
 - [Polynomial functions on the naturals](../precompute/is-poly.md)
-- [Horn T](../precompute/horn-t-2.md)
+- [The Horner step count is polynomial](../precompute/horn-t-2.md)
 - [The precomputed time bound](../precompute/tof.md)
 - [Step budget of the counter program](../precompute/c-b.md)
 - [Coefficient list of a polynomial](../precompute/coeffs.md)

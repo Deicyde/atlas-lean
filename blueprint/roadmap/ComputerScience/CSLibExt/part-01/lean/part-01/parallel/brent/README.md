@@ -17,7 +17,7 @@ navigation: module
 
 ## Schedules
 
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 - [Length of a schedule](length.md)
 - [The work law](work-le.md)
 - [Depth bounds the step of a task](depth-le-time.md)

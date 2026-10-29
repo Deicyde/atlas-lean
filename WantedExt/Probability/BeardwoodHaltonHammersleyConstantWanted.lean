@@ -32,7 +32,9 @@ open Filter MeasureTheory Metric Set
 
 namespace MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted
 
-/-- A point in the Euclidean plane. -/
+/-- **Points of the Euclidean plane.** A planar point is a point of the Euclidean plane
+$\mathbb{R}^2$: a pair $(x, y)$ of real numbers, with the Euclidean norm
+$\lVert (x, y) \rVert = \sqrt{x^2 + y^2}$. -/
 abbrev PlanarPoint := EuclideanSpace ℝ (Fin 2)
 
 local instance planarMeasurableSpace : MeasurableSpace PlanarPoint := borel PlanarPoint

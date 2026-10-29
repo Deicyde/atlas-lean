@@ -25,7 +25,7 @@ $n \ne 1$, then $[P]_1 = 4$ but $\mathrm{nd}[P]_0 + \mathrm{nd}[P]_1 = 0 + 2 = 2
 ## Depends on
 
 - [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
-- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Non-degenerate Boolean functions](is-nondegenerate-bool-fun.md)
 - [Number of classes of Boolean functions](bool-fun-class-count.md)
 
 ## Sources

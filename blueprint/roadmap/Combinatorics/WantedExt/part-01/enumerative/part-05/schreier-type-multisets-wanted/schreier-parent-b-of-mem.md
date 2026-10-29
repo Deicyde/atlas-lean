@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.schreierParentB_of_mem
 ---
 
-# Schreier Parent B of mem
+# The parent sequence b equals one on its initial window
 
-`b^{(s)}_{p,n} = 1` for `(p - 1)s < n ≤ ps + 1`.
+**The parent sequence b equals one on its initial window.** For natural numbers $s$ and $p$,
+let $b^{(s)}_{p,n}$ be the parent sequence: $0$ for $n \le (p - 1)s$, $1$ for
+$(p - 1)s < n \le ps + 1$, and $b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for
+$n \ge ps + 2$, where $p - 1$ is read as $0$ when $p = 0$. Then $b^{(s)}_{p,n} = 1$ for every
+natural number $n$ with $(p - 1)s < n \le ps + 1$.
 
 ## Depends on
 

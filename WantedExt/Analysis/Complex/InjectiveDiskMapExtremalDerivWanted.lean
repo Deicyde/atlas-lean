@@ -41,7 +41,8 @@ public import Mathlib
 
 namespace MathlibExt.Analysis.Complex.InjectiveDiskMapExtremalDerivWanted
 
-/-- The open unit disc. -/
+/-- **Open unit disc.** The open unit disc is the set of complex numbers $z$ with $|z| < 1$, the
+open ball of radius $1$ about $0$ in $\mathbb{C}$. -/
 abbrev unitDisk : Set ℂ := Metric.ball (0 : ℂ) 1
 
 /-- **Admissible maps into the unit disc.** For a set $\Omega \subseteq \mathbb{C}$, the

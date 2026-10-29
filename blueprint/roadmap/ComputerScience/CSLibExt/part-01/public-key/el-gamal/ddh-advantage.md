@@ -20,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ddh Rand](ddh-rand.md)
-- [Ddh Real](ddh-real.md)
+- [Random DDH experiment](ddh-rand.md)
+- [Real DDH experiment](ddh-real.md)
 
 ## Sources
 

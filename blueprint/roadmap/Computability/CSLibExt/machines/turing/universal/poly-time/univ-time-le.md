@@ -23,7 +23,7 @@ $(c, x, T)$.
 
 - [The cell of a number](../clocked/cell.md)
 - [The cells of a list of numbers](../clocked/cells.md)
-- [Step bound of the clocked universal machine](../clocked/clock-time.md)
+- [Step bound of the clocked simulation](../clocked/clock-time.md)
 - [The code stack](../clocked/code-cells.md)
 - [Cost of reading the input](../clocked/parse-time.md)
 - [Symbol of an input bit](../code/bit-sym.md)

@@ -19,7 +19,7 @@ plus the aggregate of the new right child.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Proof depends on
 

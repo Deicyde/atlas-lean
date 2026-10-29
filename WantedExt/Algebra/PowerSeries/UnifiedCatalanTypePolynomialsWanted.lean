@@ -60,7 +60,12 @@ noncomputable def trinomialNegPowSeries (lam c α β : ℝ) (m : ℕ) : PowerSer
   C (c ^ (-lam)) *
     (binomialSeries ℝ (-lam)).subst (C (-α / c) * X + C (β / c) * X ^ m : PowerSeries ℝ)
 
-/-- The constant term of `(c - α t + β t^m)^(-λ)` is `c^(-λ)`.
+/-- **Constant term of the trinomial series.** For all real numbers $\lambda, c, \alpha, \beta$
+and every natural number $m \ne 0$, the negative real power of the trinomial
+$c - \alpha t + \beta t^m$ with exponent $\lambda$ as a power series in $t$, that is, the real
+power $c^{-\lambda}$ times the binomial series $(1 + u)^{-\lambda}$ with
+$u = (-\alpha t + \beta t^m)/c$ substituted (where $u = 0$ when $c = 0$), has constant term
+$c^{-\lambda}$.
 
 Source: M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix
 Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (6). -/
@@ -135,13 +140,15 @@ theorem kampeDeFerietHermite_two_two (x y : ℝ) :
   simp [kampeDeFerietHermite, Finset.sum_range_succ, Nat.factorial]
 
 /-- **Hermite-shifted Catalan-type polynomials as convolutions.** Write $H_n(x, y) = H^2_n(x, y)$
-for the Kampé de Fériet polynomials, and for a natural number $m$ and real numbers $\lambda, z$
-let $P^\lambda_{r,m}(z)$ and $h^\lambda_{r,m}(z)$ be the coefficients of $t^r$ in the formal
-expansions of $(1 - m t + z t^m)^{-\lambda}$ and $(1 - m z t + t^m)^{-\lambda}$ in powers of $t$.
-For all natural numbers $k, m, n$ and real numbers $\lambda, x, y, z$, as formal power series in
-$t$ (with $e^{xt + yt^2}$ the exponential series and $H_k(x + 2yt, y)$ evaluated in power
-series), the coefficient of $t^n$ in $e^{xt + yt^2} H_k(x + 2yt, y) (1 - m t + z t^m)^{-\lambda}$
-is $\sum_{r=0}^{n} H_{n-r+k}(x, y) P^\lambda_{r,m}(z) / (n - r)!$, and the coefficient of $t^n$
+for the Kampé de Fériet polynomials. For a natural number $m$ and real numbers $\lambda, z$,
+write $(1 - m t + z t^m)^{-\lambda}$ and $(1 - m z t + t^m)^{-\lambda}$ for the negative real
+powers of the trinomials $1 - m t + z t^m$ and $1 - m z t + t^m$ with exponent $\lambda$ as
+power series in $t$ (for $m \ge 1$ these are their expansions in powers of $t$), and let
+$P^\lambda_{r,m}(z)$ and $h^\lambda_{r,m}(z)$ be their coefficients of $t^r$. For all natural
+numbers $k, m, n$ and real numbers $\lambda, x, y, z$, as formal power series in $t$ (with
+$e^{xt + yt^2}$ the exponential series and $H_k(x + 2yt, y)$ evaluated in power series), the
+coefficient of $t^n$ in $e^{xt + yt^2} H_k(x + 2yt, y) (1 - m t + z t^m)^{-\lambda}$ is
+$\sum_{r=0}^{n} H_{n-r+k}(x, y) P^\lambda_{r,m}(z) / (n - r)!$, and the coefficient of $t^n$
 in $e^{xt + yt^2} H_k(x + 2yt, y) (1 - m z t + t^m)^{-\lambda}$ is
 $\sum_{r=0}^{n} H_{n-r+k}(x, y) h^\lambda_{r,m}(z) / (n - r)!$.
 
@@ -167,10 +174,12 @@ numbers with $k \le r$ and let $\lambda, x, y$ be real numbers. Let $E(t) = e^{2
 exponential series, so that its coefficient of $t^n$ is $H_n(y) / n!$ with $H_n$ the Hermite
 polynomials, and let $F(t)$ be the power series whose coefficient of $t^n$ is $H_n(y) / n!$ when
 $n \ge k$ and $j \mid n - k$, and $0$ otherwise (for $j \ge 1$ this is the series
-$F(j, k, y, t) = \sum_n H_{jn+k}(y) t^{jn+k} / (jn + k)!$ of Equation (1)). Let
-$P^\lambda_{s,m}(x)$ and $h^\lambda_{s,m}(x)$ be the coefficients of $t^s$ in the formal
-expansions of $(1 - m t + x t^m)^{-\lambda}$ and $(1 - m x t + t^m)^{-\lambda}$ in powers of $t$,
-and let $q = \lfloor (r - k) / j \rfloor$, read as $q = 0$ when $j = 0$. Then the coefficient of
+$F(j, k, y, t) = \sum_n H_{jn+k}(y) t^{jn+k} / (jn + k)!$ of Equation (1)). Write
+$(1 - m t + x t^m)^{-\lambda}$ and $(1 - m x t + t^m)^{-\lambda}$ for the negative real powers
+of the trinomials $1 - m t + x t^m$ and $1 - m x t + t^m$ with exponent $\lambda$ as power
+series in $t$ (for $m \ge 1$ these are their expansions in powers of $t$), let
+$P^\lambda_{s,m}(x)$ and $h^\lambda_{s,m}(x)$ be their coefficients of $t^s$, and let
+$q = \lfloor (r - k) / j \rfloor$, read as $q = 0$ when $j = 0$. Then the coefficient of
 $t^r$ in $F(t) (1 - m t + x t^m)^{-\lambda}$ is
 $\sum_{n=0}^{q} H_{jn+k}(y) P^\lambda_{r-jn-k,m}(x) / (jn + k)!$, and the coefficient of $t^r$
 in $F(t) (1 - m x t + t^m)^{-\lambda}$ is the same sum with $h^\lambda_{r-jn-k,m}(x)$ in place
@@ -196,12 +205,14 @@ public theorem_wanted coeff_nietoHermiteSeries_mul_trinomialNegPowSeries (j k m 
 
 /-- **Splitting the numerator of a unified Catalan-type generating function.** Let
 $j, k, m, d, n$ be natural numbers, let $a, b, c, \lambda, x, y$ be real numbers and let $A$ be
-a polynomial with integer coefficients. Let $K(t)$ be the formal expansion of
-$(c - a x t + b (2x - 1)^d t^m)^{-\lambda}$ in powers of $t$, and let $S(t) = \sum_i y^i t^i / i!$,
-the sum running over the natural numbers $i \ge k$ with $j \mid i - k$ (for $j \ge 1$ this is
-the pseudo-Bessel function $S(j, k, yt)$ of Equation (5)). Then the coefficient of $t^n$ in
-$(S(t) + A(x)\, t)\, K(t)$ equals the coefficient of $t^n$ in $S(t) K(t)$, plus the coefficient
-of $t^n$ in $(1 + A(x)\, t)\, K(t)$, minus the coefficient of $t^n$ in $K(t)$.
+a polynomial with integer coefficients. Let $K(t)$ be the negative real power of the trinomial
+$c - a x t + b (2x - 1)^d t^m$ with exponent $\lambda$ as a power series in $t$ (for $c > 0$ and
+$m \ge 1$ this is the expansion of $(c - a x t + b (2x - 1)^d t^m)^{-\lambda}$ in powers of $t$),
+and let $S(t) = \sum_i y^i t^i / i!$, the sum running over the natural numbers $i \ge k$ with
+$j \mid i - k$ (for $j \ge 1$ this is the pseudo-Bessel function $S(j, k, yt)$ of Equation (5)).
+Then the coefficient of $t^n$ in $(S(t) + A(x)\, t)\, K(t)$ equals the coefficient of $t^n$ in
+$S(t) K(t)$, plus the coefficient of $t^n$ in $(1 + A(x)\, t)\, K(t)$, minus the coefficient of
+$t^n$ in $K(t)$.
 
 In the paper's notation this is
 $P^{j.k;\lambda,A}_{n,m}(x, y) = P^{j.k;\lambda,0}_{n,m}(x, y) + P^{1.0;\lambda,A}_{n,m}(x) -
@@ -221,9 +232,10 @@ public theorem_wanted coeff_catalanTypeKernel_decomposition (j k m d n : ℕ)
 /-- **Determinant of the lower-triangular Catalan-type matrix.** Let $m, N$ be natural numbers,
 let $\lambda, x$ be real numbers, let $A$ be a polynomial with integer coefficients, and let
 $P_n$ be the coefficient of $t^n$ in $(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where
-$(1 - m t + x t^m)^{-\lambda}$ is expanded formally in powers of $t$. Then the
-$(N + 1) \times (N + 1)$ matrix whose $(i, j)$ entry, for $0 \le i, j \le N$, is $P_{i-j}$ when
-$j \le i$ and $0$ otherwise has determinant $P_0^{N+1}$.
+$(1 - m t + x t^m)^{-\lambda}$ denotes the negative real power of the trinomial
+$1 - m t + x t^m$ with exponent $\lambda$ as a power series in $t$ (for $m \ge 1$, its expansion
+in powers of $t$). Then the $(N + 1) \times (N + 1)$ matrix whose $(i, j)$ entry, for
+$0 \le i, j \le N$, is $P_{i-j}$ when $j \le i$ and $0$ otherwise has determinant $P_0^{N+1}$.
 
 In the paper's notation $P_n = P^{\lambda,A}_{n,m}(x)$ (Definition 6 at $y = 0$) and the matrix
 is $P_N^{(m,\lambda,A)}(x)$ of Equation (18). The paper's proviso $P_0 \ne 0$ is dropped.
@@ -240,10 +252,12 @@ public theorem_wanted det_catalanTypeLowerTriangular (m N : ℕ) (lam x : ℝ)
 /-- **Hankel determinants of recurrent Catalan-type sequences vanish.** Let $m, N, r$ be natural
 numbers with $r \le N$, let $\lambda, x$ be real numbers, let $A$ be a polynomial with integer
 coefficients, and let $P_n$ be the coefficient of $t^n$ in
-$(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where $(1 - m t + x t^m)^{-\lambda}$ is expanded
-formally in powers of $t$. Suppose real numbers $c_0, \dots, c_r$, not all zero, satisfy
-$\sum_{k=0}^{r} c_k P_{n-k} = 0$ for every $n \ge r$. Then the $(N + 1) \times (N + 1)$ Hankel
-matrix with $(i, j)$ entry $P_{i+j}$ for $0 \le i, j \le N$ has determinant $0$.
+$(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where $(1 - m t + x t^m)^{-\lambda}$ denotes the
+negative real power of the trinomial $1 - m t + x t^m$ with exponent $\lambda$ as a power series
+in $t$ (for $m \ge 1$, its expansion in powers of $t$). Suppose real numbers $c_0, \dots, c_r$,
+not all zero, satisfy $\sum_{k=0}^{r} c_k P_{n-k} = 0$ for every $n \ge r$. Then the
+$(N + 1) \times (N + 1)$ Hankel matrix with $(i, j)$ entry $P_{i+j}$ for $0 \le i, j \le N$ has
+determinant $0$.
 
 In the paper's notation $P_n = P^{\lambda,A}_{n,m}(x)$, the recurrence is Equation (22) and the
 Hankel matrix is $H_N^{(m,\lambda,A)}(x)$ of Equation (20). The paper's assumption $1 \le r$ is

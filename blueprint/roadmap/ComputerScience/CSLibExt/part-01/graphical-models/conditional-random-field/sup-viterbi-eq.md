@@ -23,7 +23,7 @@ paths $z : \{0, \dots, t\} \to S$, of the weight of $z$.
 ## Proof depends on
 
 - [The Viterbi variables of a chain CRF are attained](exists-path-weight-eq-viterbi.md)
-- [Path weights are bounded by the Viterbi variables](path-weight-le-viterbi.md)
+- [Path weights of a chain CRF are bounded by the Viterbi variables](path-weight-le-viterbi.md)
 
 ## Sources
 

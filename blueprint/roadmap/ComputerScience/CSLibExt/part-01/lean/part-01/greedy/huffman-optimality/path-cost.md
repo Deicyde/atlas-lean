@@ -15,7 +15,7 @@ and $R$ has $P(T) = P(L) + P(R) + w(L) + w(R)$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Proof depends on
 

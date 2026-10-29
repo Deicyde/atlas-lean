@@ -36,7 +36,7 @@ This node has no prerequisites.
 - [Minimal-height derivation forests exist](exists-minimal-yields-h.md)
 - [Existence of reduced grammars](../reduced/exists-reduced-grammar.md)
 - [Nonterminals of a sentential form](../reduced/form-nts.md)
-- [Nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
 - [Language membership through yields](../../part-02/yields/mem-language-iff-yields.md)
 
 ## Sources

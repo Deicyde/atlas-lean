@@ -6,4 +6,4 @@ navigation: module
 
 - [Ordered insertion into a list](ordered-insert.md)
 - [Members after ordered insertion](mem-ordered-insert.md)
-- [Ordered Insert eq of mem](ordered-insert-eq-of-mem.md)
+- [Inserting a present element into a strictly increasing list](ordered-insert-eq-of-mem.md)

@@ -97,7 +97,13 @@ factor of the edge between vertex $n + 1$ and its parent. -/
 noncomputable def message [Fintype α] (m : TreeModel α (n + 1)) (a : α) : ℝ :=
   ∑ b, m.pair (Fin.last n) b a * m.unary (Fin.last (n + 1)) b
 
-/-- Sum out the last vertex: multiply its message into the unary factor of its parent. -/
+/-- **Eliminating the last vertex of a tree model.** Let $\alpha$ be finite, let $m$ be a pairwise
+tree model on the vertices $0, \dots, n + 1$ with parents $p$, unary factors $\varphi_i$ and
+pairwise factors $\psi_k$, and let $\mu$ be the message from the last vertex $n + 1$ to its
+parent $q = p(n + 1)$. Eliminating the last vertex gives the pairwise tree model on the vertices
+$0, \dots, n$ in which vertex $k + 1$ has parent $p(k + 1)$ and edge factor $\psi_k$ for each
+$k < n$, and whose unary factors are $\varphi'_q(a) = \varphi_q(a) \, \mu(a)$ and
+$\varphi'_i = \varphi_i$ for every vertex $i \le n$ with $i \ne q$. -/
 noncomputable def eliminate [Fintype α] (m : TreeModel α (n + 1)) :
     TreeModel α n where
   par k := m.par k.castSucc
@@ -148,8 +154,13 @@ theorem sum_weight_mul_eliminate [Fintype α] (m : TreeModel α (n + 1)) (g : α
     Fin.snoc_castSucc (α := fun _ => α) b y 0
   simp only [hroot, ← sum_mul, weight_snoc, ← mul_sum, eliminate_weight, message]
 
-/-- The unnormalized marginal of the root computed by variable elimination: eliminate the vertices
-from the last one down, then read off the root's unary factor. -/
+/-- **Root message of a tree model.** Let $\alpha$ be finite. The root message of a pairwise tree
+model $m$ on the vertices $0, \dots, n$ is the function $r_m : \alpha \to \mathbb{R}$ defined by
+recursion on $n$: if $n = 0$, it is the unary factor of the root $0$; if $m$ is a model on the
+vertices $0, \dots, n + 1$, it is $r_{m'}$, where $m'$ is the model on the vertices $0, \dots, n$
+obtained from $m$ by eliminating the last vertex.
+
+By variable elimination, $r_m(a)$ is the unnormalized marginal of the root at $a$. -/
 noncomputable def rootMessage [Fintype α] : {n : ℕ} → TreeModel α n → α → ℝ
   | 0, m => m.unary 0
   | _ + 1, m => rootMessage m.eliminate

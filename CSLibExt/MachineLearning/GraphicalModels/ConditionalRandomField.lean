@@ -207,10 +207,11 @@ omit [Nonempty S] in
 theorem partition_nonneg (t : ℕ) : 0 ≤ partition c x t := by
   refine Finset.sum_nonneg fun z _ => pathWeight_nonneg x t z
 
-/-- **Path weights are bounded by the Viterbi variables.** For a chain conditional random field
-with a nonempty finite set of states, weights in a linearly ordered commutative semiring, and an
-observation stream $x$, for every $t$ and every label path $z = (z_0, \dots, z_t)$, the weight of
-$z$ is at most the Viterbi variable at time $t$ of its last state $z_t$. -/
+/-- **Path weights of a chain CRF are bounded by the Viterbi variables.** For a chain conditional
+random field with a nonempty finite set of states, weights in a linearly ordered commutative
+semiring, and an observation stream $x$, for every $t$ and every label path
+$z = (z_0, \dots, z_t)$, the weight of $z$ is at most the Viterbi variable at time $t$ of its last
+state $z_t$. -/
 theorem pathWeight_le_viterbi :
     ∀ (t : ℕ) (z : Fin (t + 1) → S),
       pathWeight c x t z ≤ viterbi c x t (z (Fin.last t))
@@ -456,11 +457,11 @@ theorem bestPath_last : ∀ (t : ℕ) (s : Fin n), bestPath x c t s (Fin.last t)
   | 0, _ => rfl
   | t + 1, s => by simp [bestPath]
 
-/-- **The backtracked path attains the Viterbi variable.** For a chain conditional random field
-with states $0, \dots, n - 1$ where $n \ge 1$, weights in a linearly ordered commutative
-semiring, and an observation stream $x$, for every $t$ and every state $s$ the weight of the
-best path of length $t + 1$ ending in $s$, obtained by following the backpointers, equals the
-Viterbi variable at time $t$ of $s$. -/
+/-- **The backtracked path of a chain CRF attains the Viterbi variable.** For a chain conditional
+random field with states $0, \dots, n - 1$ where $n \ge 1$, weights in a linearly ordered
+commutative semiring, and an observation stream $x$, for every $t$ and every state $s$ the weight
+of the backtracked path of length $t + 1$ ending in $s$, obtained by following the backpointers,
+equals the Viterbi variable at time $t$ of $s$. -/
 theorem pathWeight_bestPath : ∀ (t : ℕ) (s : Fin n),
     pathWeight c x t (bestPath x c t s) = viterbi c x t s
   | 0, s => by simp [bestPath, pathWeight, viterbi]

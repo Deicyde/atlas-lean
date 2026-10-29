@@ -270,7 +270,9 @@ theorem G9r_vanish (x : ℝ) (hx0 : 0 ≤ x) (hx : x < 1 / ((10 * Q9 : ℕ) : �
     linarith
   exact G9_zero9 _ hj
 
-/-- Level `G9r ≥ 1` forces `x ≥ 279 / 18900`. -/
+/-- **Level-$1$ threshold for the continuous Breusch function.** Let $Q_9 = 210$. For every real
+$x \ge 1/(9 Q_9) = 1/1890$, if the continuous Breusch function $G$ satisfies $G(x) \ge 1$, then
+$x \ge 279/18900$. -/
 theorem G9r_level1 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 1 ≤ G9r x) :
     (279 : ℝ) / 18900 ≤ x := by
   have h9 : ((9 * Q9 : ℕ) : ℝ) = 1890 := by rw [Q9_eq]; norm_num
@@ -305,7 +307,9 @@ theorem G9r_level1 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 1 ≤ 
   have hkeyR : (279 : ℝ) ≤ ((⌊(18900 : ℝ) * x⌋₊ : ℕ):ℝ) := by exact_mod_cast key
   linarith
 
-/-- Level `G9r ≥ 2` forces `x ≥ 657 / 18900`. -/
+/-- **Level-$2$ threshold for the continuous Breusch function.** Let $Q_9 = 210$. For every real
+$x \ge 1/(9 Q_9) = 1/1890$, if the continuous Breusch function $G$ satisfies $G(x) \ge 2$, then
+$x \ge 657/18900$. -/
 theorem G9r_level2 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 2 ≤ G9r x) :
     (657 : ℝ) / 18900 ≤ x := by
   have h9 : ((9 * Q9 : ℕ) : ℝ) = 1890 := by rw [Q9_eq]; norm_num
@@ -330,7 +334,9 @@ theorem G9r_level2 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 2 ≤ 
   have hkeyR : (657 : ℝ) ≤ ((⌊(18900 : ℝ) * x⌋₊ : ℕ):ℝ) := by exact_mod_cast key
   linarith
 
-/-- Level `G9r ≥ 3` forces `x ≥ 963 / 18900`. -/
+/-- **Level-$3$ threshold for the continuous Breusch function.** Let $Q_9 = 210$. For every real
+$x \ge 1/(9 Q_9) = 1/1890$, if the continuous Breusch function $G$ satisfies $G(x) \ge 3$, then
+$x \ge 963/18900$. -/
 theorem G9r_level3 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 3 ≤ G9r x) :
     (963 : ℝ) / 18900 ≤ x := by
   have h9 : ((9 * Q9 : ℕ) : ℝ) = 1890 := by rw [Q9_eq]; norm_num
@@ -355,9 +361,9 @@ theorem G9r_level3 (x : ℝ) (hx : 1 / ((9 * Q9 : ℕ) : ℝ) ≤ x) (h : 3 ≤ 
   have hkeyR : (963 : ℝ) ≤ ((⌊(18900 : ℝ) * x⌋₊ : ℕ):ℝ) := by exact_mod_cast key
   linarith
 
-/-- **Floor of a quotient of natural numbers.** For natural numbers $t$ and $d$, the floor of
-the real number $t/d$, as an integer, equals the natural-number quotient of $t$ by $d$
-(rounded down), as an integer. Both sides are $0$ when $d = 0$, since division by zero is
+/-- **Integer cast of the floor of a quotient of natural numbers.** For natural numbers $t$ and
+$d$, the floor of the real number $t/d$, as an integer, equals the natural-number quotient of $t$
+by $d$ (rounded down), as an integer. Both sides are $0$ when $d = 0$, since division by zero is
 $0$ for both real numbers and natural numbers. -/
 lemma intFloor_cast (t d : ℕ) :
     (Int.ofNat ⌊((t : ℕ) : ℝ) / ((d : ℕ) : ℝ)⌋₊ : ℤ) = ((t / d : ℕ) : ℤ) := by
@@ -738,7 +744,8 @@ lemma U9_G_toNat (x : ℝ) : ((G9r x : ℤ) : ℝ) ≤ ((((G9r x).toNat : ℕ)) 
       rw [← Int.cast_natCast, Int.toNat_of_nonneg h]
     rw [e]
 
-/-- Truncated `G9r` values are at most `3`. -/
+/-- **The truncated continuous Breusch function is at most 3.** For every real $x \ge 0$, the
+continuous Breusch function $G$ satisfies $\max(G(x), 0) \le 3$. -/
 lemma U9_toNat_le3 (x : ℝ) (hx : 0 ≤ x) : (G9r x).toNat ≤ 3 := by
   have h := G9r_le3 x hx
   have h2 := Int.toNat_le_toNat h

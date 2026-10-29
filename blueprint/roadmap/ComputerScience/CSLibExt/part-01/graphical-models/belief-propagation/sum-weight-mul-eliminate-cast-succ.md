@@ -22,7 +22,7 @@ $m'$.
 ## Depends on
 
 - [Pairwise model on a tree](../variable-elimination/tree-model.md)
-- [Eliminate](../variable-elimination/eliminate.md)
+- [Eliminating the last vertex of a tree model](../variable-elimination/eliminate.md)
 - [Weight of an assignment in a tree model](../variable-elimination/weight.md)
 
 ## Proof depends on

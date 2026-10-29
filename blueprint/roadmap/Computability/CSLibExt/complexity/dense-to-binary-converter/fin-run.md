@@ -20,7 +20,7 @@ stack but the output empty, and output $1^m 0 1^n 0 o$ if a clause is open and $
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Exact runs of the dense-to-binary converter](run.md)
 - [Stacks of the dense-to-binary machine](stk.md)
 - [Closing a clause in the translated output](../dense-to-binary/end-clause.md)

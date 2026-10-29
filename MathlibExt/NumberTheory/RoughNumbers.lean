@@ -148,10 +148,14 @@ theorem IsRough.eq_one_of_mem_smoothNumbers {n k : ℕ}
   have hlt2 : p < k + 1 := hsmooth.2 p hmem
   omega
 
-/-- Bridge of nonunit source-rough numbers bounded by `N` into Mathlib's
-`Nat.roughNumbersUpTo N (k + 1)`. Note that the latter is only the positive
-complement of `(k + 1)`-smoothness (some prime factor is `≥ k + 1`), not the
-source predicate (every prime factor exceeds `k`). -/
+/-- **Rough numbers other than $1$ lie in Mathlib's rough numbers up to a bound.** Let $n$,
+$N$ and $k$ be natural numbers. If $n$ is $k$-rough, $n \le N$ and $n \ne 1$, then $n$ belongs
+to the set of natural numbers $m$ with $1 \le m \le N$ that are not $(k+1)$-smooth, where $m$ is
+$(k+1)$-smooth when $m > 0$ and every prime factor of $m$ is less than $k + 1$; for $m \ge 1$,
+not being $(k+1)$-smooth means having a prime factor $p \ge k + 1$.
+
+This set is Mathlib's set of rough numbers up to $N$ at bound $k + 1$. It asks only for some
+prime factor $p \ge k + 1$, while $k$-roughness asks that every prime factor exceed $k$. -/
 theorem IsRough.mem_roughNumbersUpTo {n N k : ℕ}
     (h : n.IsRough k) (hle : n ≤ N) (hn1 : n ≠ 1) :
     n ∈ roughNumbersUpTo N (k + 1) := by

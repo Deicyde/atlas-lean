@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.canonicalLine
 ---
 
-# Canonical Line
+# Canonical line
 
-The canonical line is the vertical line of complex numbers with real part `-1 / 2`.
-This is the paper's `CL`, represented as a set rather than as an affine subspace.
+**Canonical line.** The canonical line $\mathrm{CL}$ is the vertical line of complex numbers
+with real part $-1/2$, that is, $\mathrm{CL} = \{z \in \mathbb{C} : \operatorname{Re} z = -1/2\}$.
 
 ## Depends on
 

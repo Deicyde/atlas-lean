@@ -214,12 +214,35 @@ noncomputable def emStep (hx : SpansAffinely xs) (θ : ValidParams d K) : ValidP
 
 /-! ## The M-step maximizes `Q` -/
 
-/-- The component term of `Q`: `∑ n, r n k log N(xₙ | μ, S)`. -/
+/-- **Component term of the EM objective for full-covariance Gaussian mixtures.** Given points
+$x_1, \dots, x_N$ of $\mathbb{R}^d$, valid parameters $\theta$ of a $K$-component
+full-covariance Gaussian mixture, a component $k$, a mean $\mu \in \mathbb{R}^d$ and a real
+$d \times d$ matrix $S$, the component term is
+$$
+C_k(\mu, S) = \sum_n r_{nk} \log \mathcal{N}(x_n \mid \mu, S),
+$$
+where $r_{nk}$ is the responsibility of component $k$ for $x_n$ under $\theta$ and
+$\mathcal{N}(\cdot \mid \mu, S)$ is the multivariate Gaussian density with mean $\mu$ and
+covariance matrix $S$.
+
+The matrix $S$ is not required to be positive definite; the density is defined for every real
+matrix. -/
 noncomputable def compTerm (θ : ValidParams d K) (k : Fin K) (μ : EuclideanSpace ℝ (Fin d))
     (S : Matrix (Fin d) (Fin d) ℝ) : ℝ :=
   ∑ n, resp θ (xs n) k * log (multivariateGaussianPDFReal μ S (xs n))
 
-/-- `Q(θ' | θ)` splits into a weights term and one term per component. -/
+/-- **The EM objective of a full-covariance Gaussian mixture splits by component.** Let
+$x_1, \dots, x_N$ be points of $\mathbb{R}^d$, and let $\theta'$ and $\theta$ be valid parameters
+of a $K$-component full-covariance Gaussian mixture, where $\theta'$ has weights $\pi_k'$, means
+$\mu_k'$ and covariance matrices $\Sigma_k'$. Then the EM objective of the mixture's joint density
+satisfies
+$$
+Q(\theta' \mid \theta) = \sum_k \bigl(N_k \log \pi_k' + C_k(\mu_k', \Sigma_k')\bigr),
+$$
+where $r_{nk}$ is the responsibility of component $k$ for $x_n$ under $\theta$,
+$N_k = \sum_n r_{nk}$ and $C_k(\mu, S) = \sum_n r_{nk} \log \mathcal{N}(x_n \mid \mu, S)$, with
+$\mathcal{N}(\cdot \mid \mu, S)$ the multivariate Gaussian density with mean $\mu$ and covariance
+matrix $S$. -/
 theorem emQ_eq (θ' θ : ValidParams d K) :
     emQ joint xs θ' θ = ∑ k, (mass xs θ k * log (θ'.1.weight k) +
       compTerm xs θ k (θ'.1.mean k) (θ'.1.cov k)) := by
@@ -273,8 +296,13 @@ theorem sum_mass_mul_log_le (hN0 : 0 < N) (θ : ValidParams d K) {w : Fin K → 
     mul_nonpos_of_nonneg_of_nonpos hN.le h
   linarith
 
-/-- **The M-step maximizes `Q(· | θ)`**: no valid parameter `θ'` has a larger `Q(θ' | θ)` than the
-EM update `emStep xs hx θ`. -/
+/-- **The M-step of the full-covariance Gaussian mixture maximizes the EM objective.** Let
+$x_1, \dots, x_N \in \mathbb{R}^d$ be data in general position: $N > 0$, and for every nonzero
+$v \in \mathbb{R}^d$ the values $\langle v, x_n \rangle$ are not all equal. Let $\theta$ be valid
+parameters of a $K$-component full-covariance Gaussian mixture, and let $\theta^+$ be the result
+of the EM step applied to $\theta$. Then every valid parameter $\theta'$ satisfies
+$Q(\theta' \mid \theta) \le Q(\theta^+ \mid \theta)$, where $Q$ is the EM objective of the
+mixture's joint density. -/
 theorem emQ_le_emStep (hx : SpansAffinely xs) (θ' θ : ValidParams d K) :
     emQ joint xs θ' θ ≤ emQ joint xs (emStep xs hx θ) θ := by
   rw [emQ_eq, emQ_eq, Finset.sum_add_distrib, Finset.sum_add_distrib]
@@ -291,8 +319,13 @@ theorem logLik_le_emStep (hx : SpansAffinely xs) (θ : ValidParams d K) :
   have := nonempty_of_valid θ
   exact logLik_le_of_emQ_le (fun θ x k => joint_pos θ x k) xs (emQ_le_emStep xs hx θ θ)
 
-/-- **The log-likelihood is monotone along the EM iterates** of the full-covariance Gaussian
-mixture. -/
+/-- **The log-likelihood is monotone along the EM iterates of a full-covariance Gaussian
+mixture.** Let $x_1, \dots, x_N \in \mathbb{R}^d$ be data in general position: $N > 0$, and for
+every nonzero $v \in \mathbb{R}^d$ the values $\langle v, x_n \rangle$ are not all equal. Let
+$\theta_0$ be valid parameters of a $K$-component full-covariance Gaussian mixture, and let
+$\theta_t$ be the result of $t$ EM steps from $\theta_0$. Then $\ell(\theta_t)$ is nondecreasing
+in $t \in \mathbb{N}$, where $\ell$ is the log-likelihood of the data under the mixture's joint
+density. -/
 theorem logLik_iterate_emStep_monotone (hx : SpansAffinely xs) (θ₀ : ValidParams d K) :
     Monotone fun t => logLik joint xs ((emStep xs hx)^[t] θ₀) := by
   have := nonempty_of_valid θ₀

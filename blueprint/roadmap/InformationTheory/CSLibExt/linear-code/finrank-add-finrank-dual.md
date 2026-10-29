@@ -18,7 +18,7 @@ code $C \subseteq F^\iota$, $\dim C + \dim C^\perp = |\iota|$, where $C^\perp$ i
 
 ## Proof depends on
 
-- [Dot Form](dot-form.md)
+- [Dot product bilinear form](dot-form.md)
 
 ## Sources
 

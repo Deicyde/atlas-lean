@@ -16,15 +16,15 @@ to $b$ satisfies $F$.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Satisfies](../semantics/satisfies-3.md)
-- [Restrict](restrict-2.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
 
 ## Proof depends on
 
 - [The restricted variable no longer occurs](not-mem-vars-restrict.md)
 - [Satisfaction depends only on the occurring variables](satisfies-congr.md)
-- [Satisfies restrict iff](satisfies-restrict-iff-2.md)
-- [Vars](vars-2.md)
+- [Satisfaction of a restricted CNF formula](satisfies-restrict-iff-2.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Sources
 

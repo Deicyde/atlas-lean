@@ -18,4 +18,4 @@ navigation: module
 - [Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$](riemann-zeta-eighth-moment-five-eighths.md)
 - [Lemma 3](riemann-zeta-twelfth-moment-asymptotic.md)
 - [A weighted fourth-moment bound for $\zeta$ on the critical line](riemann-zeta-fourth-moment-div-le.md)
-- [Lemma 7](exists-riemann-zeta-norm-le-exp-loglog-s.md)
+- [Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height](exists-riemann-zeta-norm-le-exp-loglog-s.md)

@@ -21,7 +21,7 @@ $1 \times n$ matrix with $n^2$ multiplications.
 
 ## Proof depends on
 
-- [Has Rectangular Circuit Exponent zero two](has-rectangular-circuit-exponent-zero-tw.md)
+- [Exponent two is admissible at aspect zero](has-rectangular-circuit-exponent-zero-tw.md)
 - [Admissible exponents bound the rectangular circuit exponent](rectangular-circuit-exponent-le-of-admis.md)
 - [The rectangular circuit exponent is at least two](two-le-rectangular-circuit-exponent.md)
 

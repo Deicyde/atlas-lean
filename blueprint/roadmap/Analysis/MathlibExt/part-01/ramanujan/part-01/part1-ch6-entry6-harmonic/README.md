@@ -10,7 +10,7 @@ navigation: module
 - [Ramanujan's extension of partial sums](chapter6-convergent-sum-extension.md)
 - [Terms of the Taylor series in Entry 6](chapter6-entry6-term.md)
 - [Partial sums of a real function over the positive integers](chapter6-partial-sum.md)
-- [Has Sum chapter6 Derived Series Constant](has-sum-chapter6-derived-series-constant.md)
+- [The derivative-series constant is the sum of its series](has-sum-chapter6-derived-series-constant.md)
 - [Difference equation for Ramanujan's extension](chapter6-convergent-sum-extension-sub-su.md)
 - [Tails of the shifted series of derivatives converge](summable-chapter6-shifted-derived-series.md)
 - [Ramanujan's extension agrees with the partial sums at natural numbers](chapter6-convergent-sum-extension-nat-ca.md)

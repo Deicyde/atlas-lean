@@ -18,7 +18,7 @@ $T$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 - [Weight at a given depth](contains-at.md)
 - [Height of a weight tree](height.md)
 - [Weighted external path length of a Huffman weight tree](path-cost.md)

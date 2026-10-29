@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.isBasePhiExpansion_one
 ---
 
-# Is Base Phi Expansion one
+# Base phi expansion of one
 
-`β(1) = 1`.
+**Base phi expansion of one.** The set $\{0\}$, read as the positions of the digits $1$, is a
+base phi expansion of $1$: the expansion with a single digit $1$ at position $0$ has no two
+adjacent digits $1$, and its value $\varphi^0$ equals $1$, where $\varphi$ is the golden ratio.
 
 ## Depends on
 

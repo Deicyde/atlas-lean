@@ -23,8 +23,8 @@ some equation of $E$.
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Terms for unification](term.md)
 - [Size of a term](size.md)
 - [Eliminating a solved variable lowers the number of variables](card-eq-vars-elim-lt.md)

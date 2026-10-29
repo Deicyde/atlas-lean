@@ -18,7 +18,7 @@ vertices of the represented forest.
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Link-cut tree state](state.md)
 - [Vertex of a link-cut tree state](mem.md)
 - [Cutting off the subtree at a vertex](cut.md)

@@ -36,8 +36,12 @@ Springer 2012, Ch. 9 (strongly regular graphs); C. Godsil and G. Royle,
 Algebraic Graph Theory, GTM 207, Ch. 10 (strongly regular graphs).
 -/
 
-/-- In a strongly regular graph with `μ = 0`, the endpoints of a nontrivial
-two-edge walk are adjacent. -/
+/-- **Two-edge paths close into triangles when μ = 0.** Let $G$ be a finite strongly regular
+graph with parameters $(n, k, \ell, \mu)$ where $\mu = 0$: $G$ has $n$ vertices, every vertex
+has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any two
+distinct nonadjacent vertices have no common neighbor. If $u$, $v$, $w$ are vertices of $G$
+such that $u$ is adjacent to $v$, $v$ is adjacent to $w$, and $u \neq w$, then $u$ is adjacent
+to $w$. -/
 public theorem _root_.SimpleGraph.IsSRGWith.adj_of_adj_of_adj_of_mu_zero
     {V : Type*} [Fintype V] {n k ℓ : ℕ} {G : SimpleGraph V} [DecidableRel G.Adj]
     (h : G.IsSRGWith n k ℓ 0) {u v w : V} (huv : G.Adj u v) (hvw : G.Adj v w)
@@ -135,8 +139,12 @@ private theorem srg_eigenvector_quadratic
         (μ : ℂ) * -(v i + x * v i) := happi
     _ = (((ℓ : ℂ) - (μ : ℂ)) * x + ((k : ℂ) - (μ : ℂ))) * v i := by ring
 
-/-- Every adjacency eigenvalue other than the regular degree of a strongly regular graph
-satisfies the standard strongly regular graph quadratic. -/
+/-- **Non-principal eigenvalues of a strongly regular graph.** Let $G$ be a finite strongly
+regular graph with parameters $(n, k, \ell, \mu)$: $G$ has $n$ vertices, every vertex has degree
+$k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any two distinct
+nonadjacent vertices have exactly $\mu$ common neighbors. Let $A$ be the adjacency matrix of $G$
+over $\mathbb{C}$. Then every eigenvalue $x \in \mathbb{C}$ of $A$ with $x \neq k$ satisfies
+$x^2 = (\ell - \mu) x + (k - \mu)$. -/
 public theorem _root_.SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic
     {V : Type*} [Fintype V] {n k ℓ μ : ℕ} {G : SimpleGraph V}
     [DecidableRel G.Adj] [DecidableEq V] (h : G.IsSRGWith n k ℓ μ) {x : ℂ}

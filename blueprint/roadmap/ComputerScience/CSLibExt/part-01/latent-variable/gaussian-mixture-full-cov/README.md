@@ -27,10 +27,10 @@ navigation: module
 
 ## The M-step maximizes `Q`
 
-- [Comp Term](comp-term.md)
-- [Em Q eq](em-q-eq.md)
+- [Component term of the EM objective for full-covariance Gaussian mixtures](comp-term.md)
+- [The EM objective of a full-covariance Gaussian mixture splits by component](em-q-eq.md)
 - [The mean and covariance updates maximize each component term](comp-term-le.md)
 - [The weight update maximizes the weights term of the full-covariance mixture](sum-mass-mul-log-le.md)
-- [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [The M-step of the full-covariance Gaussian mixture maximizes the EM objective](em-q-le-em-step.md)
 - [Each EM step for the full-covariance Gaussian mixture does not decrease the log-likelihood](log-lik-le-em-step.md)
-- [The log-likelihood is monotone along the EM iterates](log-lik-iterate-em-step-monotone.md)
+- [The log-likelihood is monotone along the EM iterates of a full-covariance Gaussian mixture](log-lik-iterate-em-step-monotone.md)

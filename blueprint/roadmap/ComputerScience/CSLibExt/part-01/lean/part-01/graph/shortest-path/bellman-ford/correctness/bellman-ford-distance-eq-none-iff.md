@@ -20,7 +20,7 @@ reachable from $s$ in the directed graph obtained from $E$ by forgetting the wei
 - [Bellman-Ford distance table](../basic/distances.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 - [Weight-forgetting directed graph](../basic/to-directed-adjacency.md)
 - [Reachability in a directed graph](../../../directed-adjacency-2/reachable.md)
 

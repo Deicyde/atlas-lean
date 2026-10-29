@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_sq_add_one_dvd_sub
 ---
 
-# Proposition 2, divisibility
+# Alternating divisibility for Sylvester numbers
 
-**Proposition 2, divisibility**: for positive `k` and `n ≥ k`,
-`S_k^2 + 1` divides `S_n - (-1)^(n-k) S_k` over `ℤ`.
+**Alternating divisibility for Sylvester numbers.** Let $(S_n)_{n \ge 0}$ be the Sylvester
+sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For all natural numbers $k$ and $n$ with
+$1 \le k \le n$, the integer $S_k^2 + 1$ divides the integer $S_n - (-1)^{n-k} S_k$.
 
 ## Depends on
 

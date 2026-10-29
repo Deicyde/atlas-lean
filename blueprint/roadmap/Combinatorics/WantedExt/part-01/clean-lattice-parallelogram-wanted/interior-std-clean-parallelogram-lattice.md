@@ -15,7 +15,7 @@ $\langle k(n - a)/n \rangle \, (1, 0) + (k/n) \, (a, n)$ for $k = 1, \dots, n - 
 
 ## Depends on
 
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources

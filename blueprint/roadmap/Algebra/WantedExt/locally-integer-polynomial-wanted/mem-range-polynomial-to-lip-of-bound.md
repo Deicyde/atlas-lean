@@ -15,7 +15,7 @@ polynomial $p \in \mathbb{Z}[x]$ with $f(x) = p(x)$ for all $x \in U$.
 ## Depends on
 
 - [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
-- [Polynomial To LIP](polynomial-to-lip.md)
+- [The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$](polynomial-to-lip.md)
 
 ## Sources
 

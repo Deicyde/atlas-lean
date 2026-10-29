@@ -23,7 +23,7 @@ derivable from $T$.
 
 - [Satisfiable sets of propositions](bool-satisfiable.md)
 - [Truth value of a negation](../semantics/eval-bool-neg.md)
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 - [Model existence for propositional natural deduction](bool-satisfiable-2.md)
 
 ## Sources

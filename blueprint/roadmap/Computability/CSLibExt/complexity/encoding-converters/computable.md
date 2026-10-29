@@ -37,7 +37,7 @@ lists is computable in polynomial time from the canonical encoding to the raw bi
 - [Run of the pair-to-canonical converter](convert-run.md)
 - [Program of the converter to the canonical pair encoding](prog.md)
 - [Stack contents of the converter to the canonical pair encoding](stk-2.md)
-- [Machine decoding the canonical encoding of a bit list](tm.md)
+- [Machine converting the separator form of a pair to its canonical encoding](tm.md)
 - [Stack alphabets of the separator-to-canonical converter](untitled.md)
 
 ## Sources

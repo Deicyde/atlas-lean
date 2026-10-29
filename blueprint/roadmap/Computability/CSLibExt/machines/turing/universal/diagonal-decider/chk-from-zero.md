@@ -16,7 +16,7 @@ code stack returns a code.
 
 - [Codes for single-tape machines](../code/code.md)
 - [Cell-by-cell check of a code stack](chk-from.md)
-- [Decode Code Cells](../diagonalization/decode-code-cells.md)
+- [Decoding a code stack](../diagonalization/decode-code-cells.md)
 
 ## Proof depends on
 

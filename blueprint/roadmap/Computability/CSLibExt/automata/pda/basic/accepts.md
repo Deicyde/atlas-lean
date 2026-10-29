@@ -20,7 +20,7 @@ remaining input and an empty stack.
 
 - [Pushdown automaton configuration](config.md)
 - [Multi-step computation of a pushdown automaton](derives.md)
-- [Initial configuration](init-config.md)
+- [Initial configuration of a pushdown automaton](init-config.md)
 
 ## Sources
 

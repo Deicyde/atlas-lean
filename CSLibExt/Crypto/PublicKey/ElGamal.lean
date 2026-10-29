@@ -100,7 +100,9 @@ section Security
 variable {G : Type*} [CommGroup G] [Fintype G] {q : ℕ} [NeZero q] (g : G)
   {R : Type*} [Fintype R] [Nonempty R]
 
-/-- The message selected by the challenge bit: `m.2` for `true`, `m.1` for `false`. -/
+/-- **Message selected by the challenge bit.** Let $G$ be a finite commutative group. For a pair
+of messages $(m_0, m_1) \in G \times G$ and a bit $b$, the selected message is $m_1$ if $b$ is
+true and $m_0$ if $b$ is false. -/
 def pick (m : G × G) (b : Bool) : G := if b then m.2 else m.1
 
 /-- **ElGamal eavesdropping adversary.** Given a type $G$ of public keys and messages and a type
@@ -139,15 +141,24 @@ noncomputable def eavAdvantage (A : Adversary G R) : ℝ :=
 variable {S : Type*} [Fintype S] [Nonempty S]
 
 variable (q) in
-/-- The real DDH experiment: `D` sees `(g ^ x, g ^ y, g ^ (x y))` for uniform `x`, `y`, and
-coins `s`. -/
+/-- **Real DDH experiment.** Let $G$ be a finite commutative group, $g \in G$ and $q \ge 1$ a
+natural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a
+finite nonempty type $S$ to a bit. The real DDH experiment draws $x, y \in \mathbb{Z}/q$ and coins
+$s \in S$ independently and uniformly and outputs the distribution of the bit
+$D(g^x, g^y, g^{xy}, s)$, where $xy$ is the product in $\mathbb{Z}/q$ and a power $g^a$ with
+$a \in \mathbb{Z}/q$ means $g^{v(a)}$ for the representative $v(a) \in \{0, \dots, q - 1\}$
+of $a$. -/
 noncomputable def ddhReal (D : G → G → G → S → Bool) : PMF Bool :=
   (Cslib.Probability.PMF.uniformOfFintype (ZMod q × ZMod q × S)).map fun ω =>
     D (gpow g ω.1) (gpow g ω.2.1) (gpow g (ω.1 * ω.2.1)) ω.2.2
 
 variable (q) in
-/-- The random DDH experiment: `D` sees `(g ^ x, g ^ y, g ^ z)` for uniform `x`, `y`, `z`, and
-coins `s`. -/
+/-- **Random DDH experiment.** Let $G$ be a finite commutative group, $g \in G$ and $q \ge 1$ a
+natural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a
+finite nonempty type $S$ to a bit. The random DDH experiment draws $x, y, z \in \mathbb{Z}/q$ and
+coins $s \in S$ independently and uniformly and outputs the distribution of the bit
+$D(g^x, g^y, g^z, s)$, where a power $g^a$ with $a \in \mathbb{Z}/q$ means $g^{v(a)}$ for the
+representative $v(a) \in \{0, \dots, q - 1\}$ of $a$. -/
 noncomputable def ddhRand (D : G → G → G → S → Bool) : PMF Bool :=
   (Cslib.Probability.PMF.uniformOfFintype (ZMod q × ZMod q × ZMod q × S)).map fun ω =>
     D (gpow g ω.1) (gpow g ω.2.1) (gpow g ω.2.2.1) ω.2.2.2
@@ -162,9 +173,12 @@ exponents in $\mathbb{Z}/q\mathbb{Z}$. -/
 noncomputable def ddhAdvantage (D : G → G → G → S → Bool) : ℝ :=
   |(ddhReal q g D true).toReal - (ddhRand q g D true).toReal|
 
-/-- The DDH distinguisher built from an eavesdropper: on `(X, Y, Z)` it runs `A` with public key
-`X` and challenge ciphertext `(Y, Z * m_b)` for its own uniform bit `b`, and outputs whether `A`
-guessed `b`. -/
+/-- **DDH distinguisher from an ElGamal eavesdropper.** Let $G$ be a finite commutative group and
+let $A$ be an eavesdropping adversary with coins in a finite nonempty type $R$. The distinguisher
+built from $A$ takes three elements $X, Y, Z \in G$ and coins consisting of $r \in R$ and a bit
+$b$. It lets $A$ choose messages $(m_0, m_1)$ from the public key $X$ and the coins $r$, gives $A$
+the public key $X$, the ciphertext $(Y, Z m_b)$ and the coins $r$, where $m_b$ is $m_1$ if $b$ is
+true and $m_0$ otherwise, and outputs true exactly when the guess of $A$ equals $b$. -/
 def reduction (A : Adversary G R) : G → G → G → R × Bool → Bool :=
   fun X Y Z s => A.guess X (Y, Z * pick (A.choose X s.1) s.2) s.1 == s.2
 

@@ -17,7 +17,7 @@ The predicate $n = 0$ is such a predicate.
 ## Depends on
 
 - [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
-- [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
+- [Predicates recognizable by a single-tape nondeterministic machine](single-tape-ntmrecognizable.md)
 
 ## Proof depends on
 

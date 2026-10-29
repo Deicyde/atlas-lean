@@ -7,16 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.poly_initial_expansion
 ---
 
-# Poly initial expansion
+# Expansion by generalized Stirling numbers of the second kind
 
-Proposition 5 expansion of the associated polynomial at index zero by
-weighted Stirling numbers of the second kind: the binomial-weighted sum of
-`a 0 (n - k)` against `x ^ k` equals the signed factorial-weighted sum of the
-canonical generalized Stirling numbers against `a m 0`, for arrays satisfying the
-stated recurrence in the second argument.
+**Expansion by generalized Stirling numbers of the second kind.** For every natural number
+$n$, every real number $x$ and all real numbers $a(m, t)$, indexed by natural numbers $m$ and $t$,
+such that $a(m, t + 1) = m\,a(m, t) - (m + 1)\,a(m + 1, t)$ for all $m$ and $t$, writing
+${n \brace m}_x$ for the generalized Stirling numbers of the second kind,
 
-Proof: Following Dil, Kurt, and Cenkci, Proposition 5, the proof is induction on
-`t` for Chen's expansion `chen_stirlingSecond_expansion`, followed by a binomial convolution.
+$$\sum_{k=0}^{n} \binom{n}{k} x^k a(0, n - k) = \sum_{m=0}^{n} (-1)^m m! {n \brace m}_x a(m, 0).$$
 
 ## Depends on
 

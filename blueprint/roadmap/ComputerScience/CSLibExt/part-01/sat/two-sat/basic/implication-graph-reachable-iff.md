@@ -20,7 +20,7 @@ by implication edges of $\varphi$.
 - [Literals over the variables of a formula](lit.md)
 - [Implication graph as a finite directed graph](implication-graph.md)
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Proof depends on
 

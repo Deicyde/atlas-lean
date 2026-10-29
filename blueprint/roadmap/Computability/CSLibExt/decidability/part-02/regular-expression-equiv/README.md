@@ -18,7 +18,7 @@ navigation: module
 - [The pass computes the Thompson state count of every node](get-d-state-counts.md)
 - [The pass counts the states of Thompson's automaton](num-thompson-states-eq.md)
 - [Search bound for equivalence](eq-bound.md)
-- [Matches' eq iff forall length lt](matches-eq-iff-forall-length-lt-2.md)
+- [Short distinguishing words for encoded regular expressions](matches-eq-iff-forall-length-lt-2.md)
 
 ## The decision procedure
 

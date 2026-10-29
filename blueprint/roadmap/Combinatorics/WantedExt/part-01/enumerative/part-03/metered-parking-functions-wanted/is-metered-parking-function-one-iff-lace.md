@@ -15,7 +15,7 @@ no lace other than as its first entry.
 ## Depends on
 
 - [Metered parking function](is-metered-parking-function.md)
-- [Lace Decomposition](lace-decomposition.md)
+- [Lace decomposition](lace-decomposition.md)
 
 ## Sources
 

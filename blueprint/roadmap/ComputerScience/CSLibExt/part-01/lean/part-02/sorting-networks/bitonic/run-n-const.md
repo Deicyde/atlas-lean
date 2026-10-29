@@ -17,7 +17,7 @@ value $a$ on every such wire.
 ## Depends on
 
 - [Comparators within an interval](within.md)
-- [Running a comparator network](run-n.md)
+- [Running a comparator network on natural-number-indexed wires](run-n.md)
 
 ## Proof depends on
 

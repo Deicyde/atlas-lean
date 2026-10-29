@@ -63,7 +63,7 @@ variable.
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Bit test for the top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

@@ -227,8 +227,9 @@ public theorem_wanted not_isMVanishingFamily_sumAddMulProd_one_prime_three_mod_f
     {n : ℕ} (hp : n.Prime) (h3 : 3 < n) (h4 : n % 4 = 3) {m : ℕ} (hm : 0 < m) :
     ¬ IsMVanishingFamily m (sumAddMulProdFamily (1 : ZMod n))
 
-/-- Lemma 8: for `n = 8u` with `u > 1`, `F_1` over `ℤ/n` is not `m`-vanishing for any
-`m > 0`.
+/-- **$F_1$ modulo $8u$ with $u > 1$ is not $m$-vanishing for $m > 0$.** Let $u > 1$ be a natural
+number and $n = 8u$. Then for every $m > 0$ the sum-plus-product family $F_1$ over $\mathbb{Z}/n$,
+$F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishing.
 
 Source: Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem
 to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 8
@@ -237,8 +238,9 @@ public theorem_wanted not_isMVanishingFamily_sumAddMulProd_one_eight_mul {u : �
     (hu : 1 < u) {m : ℕ} (hm : 0 < m) :
     ¬ IsMVanishingFamily m (sumAddMulProdFamily (1 : ZMod (8 * u)))
 
-/-- Lemma 9: for `n = 9u` with `u > 0`, `F_1` over `ℤ/n` is not `m`-vanishing for any
-`m > 0`.
+/-- **$F_1$ modulo $9u$ with $u > 0$ is not $m$-vanishing for $m > 0$.** Let $u > 0$ be a natural
+number and $n = 9u$. Then for every $m > 0$ the sum-plus-product family $F_1$ over $\mathbb{Z}/n$,
+$F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishing.
 
 Source: Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem
 to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 9

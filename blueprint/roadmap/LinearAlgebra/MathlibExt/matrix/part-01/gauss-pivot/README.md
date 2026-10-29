@@ -5,6 +5,6 @@ navigation: module
 
 # Gauss Pivot
 
-- [Exists unit Lower Triangular mul submatrix is Row Echelon](exists-unit-lower-triangular-mul-submatr.md)
+- [Row echelon form via a row permutation and a unit lower-triangular matrix](exists-unit-lower-triangular-mul-submatr.md)
 - [One pivot step of Gaussian elimination](gauss-pivot-elim-step.md)
 - [Gaussian elimination as a product of row operations](exists-gauss-elimination-op-list.md)

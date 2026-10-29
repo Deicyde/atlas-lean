@@ -23,7 +23,7 @@ $2\,M(t) \le 432^t \, (2t + 1)$.
 - [Binomial factorization of the factorial of a multiple of three](choose3-mul-choose2.md)
 - [Half-power bound for the central binomial coefficient](choose-middle-half.md)
 - [Four-power lower bound for the central binomial coefficient](four-pow-le.md)
-- [Multinomial3 le](multinomial3-le.md)
+- [Multinomial bound for $(3t)!$](multinomial3-le.md)
 
 ## Sources
 

@@ -27,7 +27,7 @@ navigation: module
 ## Bayes Net
 
 - [The chain of a Bayesian network](to-chain.md)
-- [Joint](joint-2.md)
+- [Joint distribution of a Bayesian network](joint-2.md)
 - [Factorization of a Bayesian network](joint-eq-prod-2.md)
-- [Sum joint](sum-joint-2.md)
+- [The joint distribution of a Bayesian network sums to one](sum-joint-2.md)
 - [The ordered Markov property](cond-eq-cpt.md)

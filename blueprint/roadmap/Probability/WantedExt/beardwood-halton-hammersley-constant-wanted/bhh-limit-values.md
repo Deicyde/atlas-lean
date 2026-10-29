@@ -13,7 +13,7 @@ of $\mu$ form the set of real numbers $\beta$ that are BHH limits for $\mu$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

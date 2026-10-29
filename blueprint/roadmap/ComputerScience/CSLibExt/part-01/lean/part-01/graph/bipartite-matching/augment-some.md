@@ -22,12 +22,12 @@ $\mu$.
 ## Proof depends on
 
 - [Alternating path](alt-path.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Flipping an augmenting path adds one matched vertex](card-matched-flip.md)
 - [Flipping a list of pairs](flip.md)
 - [Alternating breadth-first layers](layers.md)
 - [Walking the layers back](path-to.md)
-- [Path To is Augmenting Path](path-to-is-augmenting-path.md)
+- [The walk back from an unmatched reached vertex is an augmenting path](path-to-is-augmenting-path.md)
 - [Flipping an alternating path keeps a matching](valid-flip.md)
 
 ## Sources

@@ -14,8 +14,8 @@ navigation: module
 - [Variables of a substituted variable occur in the substituted term](vars-subset-vars-subst.md)
 - [Occurs check: size bound](size-subst-lt-of-mem.md)
 - [Substituting for a variable that does not occur in the substituted term](vars-subst-single-subset.md)
-- [Composition of substitutions](comp.md)
-- [Single-variable substitution](single.md)
+- [Composition of substitutions on first-order terms](comp.md)
+- [Single-variable substitution on first-order terms](single.md)
 - [Absorbing a single-variable substitution](single-comp-eq.md)
 - [A term is fixed by substituting it for a variable it avoids](subst-single-of-not-mem.md)
 

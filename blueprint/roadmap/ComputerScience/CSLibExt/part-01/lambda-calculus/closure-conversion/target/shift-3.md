@@ -19,7 +19,7 @@ in $m + 1$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](lift-ren.md)
+- [Lifting a renaming under a binder, for the closure-conversion target](lift-ren.md)
 - [Renaming target terms](rename.md)
 
 ## Sources

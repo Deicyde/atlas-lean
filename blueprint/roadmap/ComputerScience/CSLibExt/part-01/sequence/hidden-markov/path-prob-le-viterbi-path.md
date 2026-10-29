@@ -26,8 +26,8 @@ weight of the Viterbi path of length $t + 1$ and $x_0, \dots, x_t$.
 - [First maximizer of a function on a finite range](argmax-fin.md)
 - [Index of a largest entry of a table](argmax-vec.md)
 - [Backtracked path of the tabulated Viterbi algorithm](best-path.md)
-- [The backtracked path attains the Viterbi variable](path-prob-best-path.md)
-- [Path weights are bounded by the Viterbi variables](path-prob-le-viterbi.md)
+- [The backtracked path of a hidden Markov model attains the Viterbi variable](path-prob-best-path.md)
+- [Path weights of a hidden Markov model are bounded by the Viterbi variables](path-prob-le-viterbi.md)
 - [The Viterbi variables of a hidden Markov model](viterbi.md)
 - [The tabulated Viterbi variables of a hidden Markov model](viterbi-tab.md)
 

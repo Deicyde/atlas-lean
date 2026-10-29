@@ -22,7 +22,7 @@ weight is negative.
 - [Weighted directed edge](../basic/edge.md)
 - [Existence of a reachable negative cycle](../basic/has-reachable-negative-cycle.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 
 ## Proof depends on
 

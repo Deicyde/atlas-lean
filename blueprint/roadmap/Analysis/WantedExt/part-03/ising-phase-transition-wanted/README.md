@@ -12,5 +12,5 @@ navigation: module
 - [Energy of an Ising configuration](ising-energy.md)
 - [Ising partition function](ising-partition-function.md)
 - [Finite-volume Ising free energy density](finite-ising-free-energy.md)
-- [Finite Ising Free Energy Seq](finite-ising-free-energy-seq.md)
+- [Ising free energy density along side lengths $n + 1$](finite-ising-free-energy-seq.md)
 - [Onsager's phase transition for the two-dimensional Ising model](ising-2d-phase-transition.md)

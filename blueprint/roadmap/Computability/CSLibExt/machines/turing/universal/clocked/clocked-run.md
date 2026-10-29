@@ -26,7 +26,7 @@ $T$ steps on $x$.
 
 - [Stacks of the clocked universal machine](k.md)
 - [Labels of the clocked universal machine](lab.md)
-- [Step bound of the clocked universal machine](clock-time.md)
+- [Step bound of the clocked simulation](clock-time.md)
 - [The clocked universal program](prog.md)
 - [The stacks of a simulated configuration](stk.md)
 - [Stack alphabet of the clocked universal machine](untitled.md)

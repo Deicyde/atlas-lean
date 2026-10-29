@@ -32,8 +32,8 @@ the value of $f$ at $s$, where the value of a flow at $s$ is its net flow out of
 - [The Edmonds–Karp flow value equals its residual cut capacity](edmonds-karp-min-cut.md)
 - [No augmenting path remains after Edmonds–Karp](edmonds-karp-no-augmenting-path.md)
 - [Weak max-flow min-cut duality](flow-value-le-cut-capacity.md)
-- [Residual Cut](residual-cut.md)
-- [Residual Graph](residual-graph.md)
+- [Residual cut](residual-cut.md)
+- [Residual graph](residual-graph.md)
 
 ## Sources
 

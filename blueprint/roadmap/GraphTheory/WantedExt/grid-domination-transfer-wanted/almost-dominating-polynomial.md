@@ -18,7 +18,7 @@ the last row is uncovered and every vertex $(i, n)$ of the last row has state $\
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 
 ## Proof depends on
 

@@ -95,13 +95,15 @@ noncomputable def hannerCrossPolytope : (n : ℕ) → Set (EuclideanSpace ℝ (F
   | 0 => hannerUnitSegment
   | n + 1 => hannerOneSum (hannerCrossPolytope n) hannerUnitSegment
 
-/-- Every recursively constructed coordinate cube is a Hanner polytope. -/
+/-- **The Hanner cubes are Hanner polytopes.** For every $n \in \mathbb{N}$, the Hanner cube
+$C_n \subseteq \mathbb{R}^{n+1}$ is a Hanner polytope. -/
 theorem hannerCube_isHannerPolytope (n : ℕ) : IsHannerPolytope (hannerCube n) := by
   induction n with
   | zero => exact .unitSegment
   | succ n ih => exact .infinitySum (Nat.succ_pos n) Nat.zero_lt_one ih .unitSegment
 
-/-- Every recursively constructed coordinate cross-polytope is a Hanner polytope. -/
+/-- **The Hanner cross-polytopes are Hanner polytopes.** For every $n \in \mathbb{N}$, the Hanner
+cross-polytope $P_n \subseteq \mathbb{R}^{n+1}$ is a Hanner polytope. -/
 theorem hannerCrossPolytope_isHannerPolytope (n : ℕ) :
     IsHannerPolytope (hannerCrossPolytope n) := by
   induction n with
@@ -346,7 +348,8 @@ private theorem zero_mem_interior_hannerOneSum {m n : ℕ}
   exact zero_mem_interior_linearEquiv_image
     EuclideanSpace.finAddEquivProd.symm.toLinearEquiv hhull
 
-/-- The origin is an interior point of every Hanner polytope. -/
+/-- **Hanner polytopes contain the origin in their interior.** For every $n \in \mathbb{N}$ and
+every Hanner polytope $K \subseteq \mathbb{R}^n$, the origin is an interior point of $K$. -/
 theorem IsHannerPolytope.zero_mem_interior {n : ℕ}
     {K : Set (EuclideanSpace ℝ (Fin n))} (hK : IsHannerPolytope K) : 0 ∈ interior K := by
   induction hK with

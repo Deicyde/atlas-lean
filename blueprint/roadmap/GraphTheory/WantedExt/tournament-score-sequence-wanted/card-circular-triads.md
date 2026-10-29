@@ -15,7 +15,7 @@ $\binom{n}{3} - \sum_{i=1}^{n} \binom{s_i}{2}$.
 
 - [Circular triad](is-circular-triad.md)
 - [Tournament](is-tournament.md)
-- [Score](score.md)
+- [Score of a player](score.md)
 
 ## Sources
 

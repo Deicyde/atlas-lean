@@ -24,7 +24,7 @@ $m \times 1$ matrix and a $1 \times n$ matrix.
 - [Circuit evaluation](../arithmetic-circuit/evaluate-3.md)
 - [Value of a gate in a circuit](../arithmetic-circuit/evaluate-node.md)
 - [Arithmetic gate](../arithmetic-circuit/arithmetic-gate.md)
-- [Evaluate](../arithmetic-circuit/evaluate-2.md)
+- [Gate evaluation](../arithmetic-circuit/evaluate-2.md)
 - [Arithmetic operand](../arithmetic-circuit/arithmetic-operand.md)
 - [Operand evaluation](../arithmetic-circuit/evaluate.md)
 - [Matrix input assignment](matrix-input.md)

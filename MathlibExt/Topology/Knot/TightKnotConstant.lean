@@ -61,7 +61,9 @@ theorem IsAdmissible.of_le {c c' : ℝ} (hc : IsAdmissible c)
       mul_le_mul' (ENNReal.ofReal_le_ofReal h) le_rfl
     _ ≤ L.ropelength := hc.2 n L k hk
 
-/-- Every admissible constant is at most the tight knot constant. -/
+/-- **Admissible constants are bounded by the tight knot constant.** Let $C_{22a}$ be the tight
+knot constant. Every real number $c$ that is admissible for the tight-knot inequality satisfies
+$c \le C_{22a}$ in the extended reals. -/
 theorem le_tightKnotConstant {c : ℝ} (hc : IsAdmissible c) :
     (c : EReal) ≤ tightKnotConstant :=
   le_sSup ⟨c, hc, rfl⟩

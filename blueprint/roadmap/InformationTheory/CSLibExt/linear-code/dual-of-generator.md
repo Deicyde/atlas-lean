@@ -23,7 +23,7 @@ rows) is the code with parity-check matrix $G$ (the words $x$ with $Gx = 0$).
 
 - [Encoder of a generator matrix](encode.md)
 - [Syndrome](syndrome.md)
-- [Dot Form](dot-form.md)
+- [Dot product bilinear form](dot-form.md)
 
 ## Sources
 

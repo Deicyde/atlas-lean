@@ -88,7 +88,10 @@ private theorem levelParam_isImmersion_equiv_graph
     (e.symm (e (y, h y))).2 - h (e.symm (e (y, h y))).1) = e (y, 0)
   simp
 
-/-- The graph of a `C^n` map between real normed spaces is a `C^n` immersion. -/
+/-- **Graph maps are immersions.** Let $E$ and $F$ be real normed spaces, let
+$n \in \mathbb{N} \cup \{\infty, \omega\}$ and let $h \colon E \to F$ be a $C^n$ map. Then the
+graph map $x \mapsto (x, h(x))$ from $E$ to $E \times F$ is a $C^n$ immersion, where $E$ and
+$E \times F$ are regarded as manifolds modelled on themselves. -/
 theorem _root_.ContDiff.isImmersion_graph
     {E F : Type*}
     [NormedAddCommGroup E] [NormedSpace ℝ E]

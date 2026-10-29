@@ -109,7 +109,7 @@ counter and then $\mathrm{bit}(\mathrm{false})$, and go to the label that follow
 - [Bit test for the top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 - [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

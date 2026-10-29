@@ -23,7 +23,7 @@ No separability hypothesis on the residue field extension is needed.
 ## Proof depends on
 
 - [Residue separability at a prime](is-residue-separable-at.md)
-- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Tamely ramified prime](is-tamely-ramified-at.md)
 
 ## Sources
 

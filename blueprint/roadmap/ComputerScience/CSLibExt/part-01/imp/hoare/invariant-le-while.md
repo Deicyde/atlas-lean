@@ -20,7 +20,7 @@ $\mathtt{while}\ b\ \mathtt{do}\ c$ with respect to $Q$.
 - [Assertion](assertion.md)
 - [Entailment of assertions](entails.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Commands of IMP](../syntax/cmd.md)
 - [IMP program states](../syntax/state.md)
 - [Weakest liberal precondition](wlp.md)

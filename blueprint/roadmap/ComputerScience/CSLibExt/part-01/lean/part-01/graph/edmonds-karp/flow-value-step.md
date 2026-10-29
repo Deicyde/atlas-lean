@@ -29,7 +29,7 @@ one.
 - [Augmenting along a path changes the flow value by the amount](flow-value-augment.md)
 - [Bottleneck of a path](path-bottleneck.md)
 - [Augmenting paths have positive bottleneck](path-bottleneck-pos.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 - [Shortest path via breadth-first search](shortest-path.md)
 - [Soundness of the shortest-path search](shortest-path-sound.md)
 

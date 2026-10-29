@@ -20,7 +20,7 @@ is defined and equals their Needleman–Wunsch score.
 - [Alignment](../sequence-alignment/alignment.md)
 - [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
 - [Banded alignments](is-banded.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Banded alignment score](banded-score.md)
 - [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 

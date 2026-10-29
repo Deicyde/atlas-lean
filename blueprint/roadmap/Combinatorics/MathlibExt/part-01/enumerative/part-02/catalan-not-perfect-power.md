@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.catalan_not_perfect_power
 ---
 
-# Catalan Perfect Power
+# Catalan numbers other than $1$ are not perfect powers
 
-For all `n ≥ 2`, the `n`-th Catalan number is never a perfect power.
+**Catalan numbers other than $1$ are not perfect powers.** For every natural number $n \ge 2$, the
+$n$-th Catalan number $C_n$ is not a perfect power: there are no natural numbers $m$ and $k$
+with $k \ge 2$ and $C_n = m^k$.
 
-The paper includes the Checcoli–D'Adderio proof for completeness
-(lines 152–156): small cases checked directly, and for `n ≥ 6` a
-Ramanujan prime `p ∈ [n+2, 2n)` divides `C_n` exactly once, so no
-`C_n = m ^ k` with `k ≥ 2` is possible. Spot-checked for `n = 2..60`.
+The proof of Checcoli and D'Adderio checks small cases directly, and for $n \ge 6$ uses a
+Ramanujan prime $p$ with $n + 2 \le p < 2n$, which divides $C_n$ exactly once, so $C_n = m^k$
+with $k \ge 2$ is impossible.
 
 ## Depends on
 

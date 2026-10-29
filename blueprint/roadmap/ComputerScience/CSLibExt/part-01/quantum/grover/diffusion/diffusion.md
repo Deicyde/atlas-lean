@@ -18,7 +18,7 @@ where $\bar\psi$ is the arithmetic mean of the amplitudes of $\psi$.
 
 ## Proof depends on
 
-- [Mean Amplitude](mean-amplitude.md)
+- [Mean amplitude](mean-amplitude.md)
 
 ## Sources
 

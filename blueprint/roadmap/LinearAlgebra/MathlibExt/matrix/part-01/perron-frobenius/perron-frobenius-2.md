@@ -26,7 +26,7 @@ The hypothesis $A \ne 0$ is not needed: irreducibility already forces some entry
 
 ## Proof depends on
 
-- [Perron frobenius](perron-frobenius.md)
+- [Perron–Frobenius theorem for irreducible nonnegative matrices](perron-frobenius.md)
 
 ## Sources
 

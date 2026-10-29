@@ -17,12 +17,12 @@ $\{0, \dots, n\} \to \alpha$.
 ## Depends on
 
 - [Pairwise model on a tree](tree-model.md)
-- [Root Message](root-message.md)
+- [Root message of a tree model](root-message.md)
 - [Weight of an assignment in a tree model](weight.md)
 
 ## Proof depends on
 
-- [Eliminate](eliminate.md)
+- [Eliminating the last vertex of a tree model](eliminate.md)
 - [Parent of a vertex](parent.md)
 - [One step of variable elimination](sum-weight-mul-eliminate.md)
 

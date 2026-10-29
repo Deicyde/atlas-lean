@@ -5,5 +5,5 @@ navigation: module
 
 # Schnirelmann
 
-- [Schnirelmann Density add lower bound](schnirelmann-density-add-lower-bound.md)
-- [Exists additive basis of pos schnirelmann Density](exists-additive-basis-of-pos-schnirelman.md)
+- [Schnirelmann's inequality](schnirelmann-density-add-lower-bound.md)
+- [Schnirelmann's basis theorem](exists-additive-basis-of-pos-schnirelman.md)

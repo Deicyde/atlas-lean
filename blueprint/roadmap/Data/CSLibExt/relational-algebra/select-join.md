@@ -26,7 +26,7 @@ and they have equal values on every database conforming to $\mathrm{sch}$.
 ## Proof depends on
 
 - [Databases conforming to a schema](conforms.md)
-- [Eval](eval-2.md)
+- [Value of a query](eval-2.md)
 - [Typing is sound](eval-is-over.md)
 - [Tuple](tuple.md)
 - [Selection pushdown into the left operand of a join](select-join-left.md)

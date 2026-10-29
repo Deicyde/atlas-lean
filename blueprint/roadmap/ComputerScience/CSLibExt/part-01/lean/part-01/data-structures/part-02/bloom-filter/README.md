@@ -17,4 +17,4 @@ navigation: module
 - [Membership query in terms of bits](may-contain-iff.md)
 - [An inserted element is reported present](may-contain-insert-self.md)
 - [Insertion preserves positive answers](may-contain-insert-mono.md)
-- [May Contain empty](may-contain-empty.md)
+- [The empty Bloom filter reports every element absent](may-contain-empty.md)

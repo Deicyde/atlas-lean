@@ -14,7 +14,7 @@ the square of $G$ is connected.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Sources
 

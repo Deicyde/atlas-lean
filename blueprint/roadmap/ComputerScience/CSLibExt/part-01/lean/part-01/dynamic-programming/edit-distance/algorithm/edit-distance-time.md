@@ -19,7 +19,7 @@ $(|s| + 1)(|t| + 1) + k$, where $k$ is the length of the edit script it returns.
 - [Edit-distance cost counters](../script/edit-distance-cost.md)
 - [Total edit-distance cost](../script/total.md)
 - [Edit-distance result record](../script/edit-distance-result.md)
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [Edit step](../script/edit-step.md)
 - [Edit distance algorithm](edit-distance.md)
 

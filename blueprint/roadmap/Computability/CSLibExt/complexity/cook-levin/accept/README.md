@@ -18,7 +18,7 @@ navigation: module
 - [Offset of a clause's literal](off.md)
 - [Polarity of an accept clause's literal](sg.md)
 - [Precomputation stages of the accept generator](ps.md)
-- [Stages of the literal routine](ls.md)
+- [Stages of the accept generator's literal routine](ls.md)
 - [Labels of the accept generator](gl.md)
 - [Entry label of an accept code clause](code-from.md)
 - [Start of the accept code chain](code-start.md)
@@ -34,7 +34,7 @@ navigation: module
 - [Empty scratch counters of the accept generator](rest.md)
 - [Run of the literal routine of the accept generator](lit-run.md)
 - [Step bound for one accept clause](clause-b.md)
-- [Clause run](clause-run.md)
+- [One clause of the accept generator](clause-run.md)
 
 ## [FAM] Correctness: the two label chains and the whole generator
 

@@ -25,9 +25,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Of Monoid Hom](of-monoid-hom.md)
-- [Of Monoid Hom character](of-monoid-hom-character.md)
-- [Of Monoid Hom simple](of-monoid-hom-simple.md)
+- [The one-dimensional representation of a homomorphism](of-monoid-hom.md)
+- [The character of the representation of a homomorphism is the homomorphism](of-monoid-hom-character.md)
+- [The representation of a homomorphism is simple](of-monoid-hom-simple.md)
 
 ## Sources
 

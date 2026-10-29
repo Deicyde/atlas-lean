@@ -17,7 +17,7 @@ right child, in that order, and the sum of the sizes of its children.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Proof depends on
 

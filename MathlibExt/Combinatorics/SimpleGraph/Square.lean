@@ -23,8 +23,9 @@ This file defines the square of a simple graph and proves its basic properties.
 
 namespace SimpleGraph
 
-/-- The square of a simple graph: distinct vertices are adjacent when they are adjacent in the
-original graph or have a common neighbor. -/
+/-- **Square of a graph.** The square of a simple graph $G$ is the simple graph on the same vertex
+set in which two distinct vertices $u$ and $v$ are adjacent when they are adjacent in $G$ or have
+a common neighbor in $G$, that is, a vertex $w$ adjacent in $G$ to both $u$ and $v$. -/
 public def square {V : Type*} (G : SimpleGraph V) : SimpleGraph V where
   Adj u v := u ≠ v ∧ (G.Adj u v ∨ ∃ w, G.Adj u w ∧ G.Adj w v)
   symm := ⟨fun _ _ h ↦ ⟨h.1.symm, h.2.elim (fun huv ↦ Or.inl huv.symm)

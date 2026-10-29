@@ -76,7 +76,8 @@ Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (definition of 
 public def chuBlock (k : ℕ) : List ℕ :=
   1 :: List.replicate k 4 ++ [3]
 
-/-- `M^1 = 1, 4, 3` and `M^2 = 1, 4, 4, 3`.
+/-- **The Chu difference blocks $M^1$ and $M^2$.** The Chu difference block $M^1$ is the list
+$1, 4, 3$, and the Chu difference block $M^2$ is the list $1, 4, 4, 3$.
 
 Source: Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New
 Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (definition of `M^k`). -/
@@ -149,7 +150,9 @@ public def chuFamilyKLT (k l t : ℕ) : Finset ℤ :=
     ((List.replicate t ([1, 1, 2] ++ (List.replicate l (chuBlock k)).flatten)).flatten ++
       [1, 1, 2, 1])
 
-/-- Smallest case: `k = l = t = 1` gives `(0 | 1, 1, 2, 1, 4, 3, 1, 1, 2, 1)`.
+/-- **The Kumar–Mohan–Pandey set $A_{1,1,1}$.** For $k = l = t = 1$, the Kumar–Mohan–Pandey set
+$A_{1,1,1}$, the set of partial sums starting from $0$ of the sequence
+$1, 1, 2, 1, 4, 3, 1, 1, 2, 1$, is $\{0, 1, 2, 4, 5, 9, 12, 13, 14, 16, 17\}$.
 
 Source: Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New
 Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 3 (the set of Lemmas 1-7 and

@@ -22,7 +22,7 @@ leftmost derivations from its start symbol, if and only if $P$ has a PCP solutio
 
 ## Proof depends on
 
-- [Canon](canon.md)
+- [The canonical rule sequence along an index sequence](canon.md)
 - [Leftmost derivations in the ambiguity grammar](cases-of-left-derivation-start.md)
 - [The $i$-th domino of a list](../cfgundecidable/domino.md)
 - [Unique splitting of letters followed by markers](../cfgundecidable/eq-of-map-inl-append-map-inr.md)
@@ -32,9 +32,9 @@ leftmost derivations from its start symbol, if and only if $P$ has a PCP solutio
 - [A PCP instance is solvable exactly when its top and bottom grammars share a word](../cfgundecidable/pcp-iff-exists-mem-inter.md)
 - [The side grammar of a PCP instance](../cfgundecidable/side-grammar.md)
 - [The side word of an index sequence](../cfgundecidable/side-word.md)
-- [Start Rule](start-rule.md)
+- [The start production $S \to A$](start-rule.md)
 - [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
-- [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
+- [Leftmost derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Sources
 

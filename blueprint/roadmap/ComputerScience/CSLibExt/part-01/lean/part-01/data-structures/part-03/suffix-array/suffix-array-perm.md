@@ -19,7 +19,7 @@ $0, 1, \dots, n - 1$ of all indices below $n$.
 
 ## Proof depends on
 
-- [Suffix](suffix.md)
+- [Suffix of a list at an index](suffix.md)
 
 ## Sources
 

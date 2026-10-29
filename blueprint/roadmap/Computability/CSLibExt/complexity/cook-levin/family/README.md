@@ -46,12 +46,12 @@ navigation: module
 - [Label after a literal routine in the transition-family generator](after.md)
 - [Entry label of the clause routine for situation $i$](sit-l.md)
 - [Label after a situation clause in the transition-family generator](after-s.md)
-- [K A](k-a.md)
+- [Stack index of a literal in a transition clause](k-a.md)
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Constant offset of a literal position](cst.md)
 - [Polarity of a transition-clause literal](sgn.md)
 - [Lit P](lit-p.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [The clause-family generator as a finite stack machine](gen-tm.md)
 
 ## Correctness: one literal
@@ -71,7 +71,7 @@ navigation: module
 ## Correctness: situations, time steps, the whole generator
 
 - [Encoded transition clauses of one time step](blk.md)
-- [Loop P](loop-p.md)
+- [Time-loop invariant of the transition-family generator](loop-p.md)
 - [Step bound for one time-loop iteration of the transition-family generator](body-b.md)
 - [Step bound for the transition-clause generator's precomputation](pre-b.md)
 - [Time bound of the generator](gen-bound.md)
@@ -86,5 +86,5 @@ navigation: module
 - [Uniform layout](uni.md)
 - [Uniform bound on the generator's time](gen-bound-uni.md)
 - [Constant of the generator's time bound](gen-c.md)
-- [Gen Poly](gen-poly.md)
+- [Time-bound polynomial of the clause-family generator](gen-poly.md)
 - [Polynomial time bound for the clause-family generator](gen-time.md)

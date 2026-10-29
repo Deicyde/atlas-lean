@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.Cfg.output
 ---
 
-# Output
+# Output of a configuration
 
-The output of a configuration: the tape from the head rightwards, without trailing blanks.
+**Output of a configuration.** The output of a configuration $k$ is the list consisting of the
+symbol under the head of $k$ followed by the cells right of the head (nearest first), with all
+trailing blanks $0$ removed.
 
 ## Depends on
 

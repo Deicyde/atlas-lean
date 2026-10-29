@@ -43,17 +43,26 @@ public noncomputable def overpartitionPairEvenDistinctGF (j k : ℕ) : ℤ⟦X�
   qEulerProduct 4 ^ 2 * (∏' i : ℕ, (1 + X ^ (j + k * i))) ^ 2 *
     PowerSeries.invOfUnit (qEulerProduct 1 ^ 2) 1
 
-/-- `bped_{j,k}(n)`, the number of `[j, k]`-overpartition pairs of `n` with even parts distinct
-(the first occurrence of each distinct part congruent to `j` modulo `k` may be overlined): the
-coefficient of `q^n` in `overpartitionPairEvenDistinctGF j k`.
+/-- **The number of $[j, k]$-overpartition pairs with even parts distinct.** For natural numbers
+$j$, $k$ and $n$, $\mathrm{bped}_{j,k}(n)$ is the integer coefficient of $q^n$ in the generating
+function of $[j, k]$-overpartition pairs with even parts distinct.
+
+Combinatorially, for $1 \le j \le k$, $\mathrm{bped}_{j,k}(n)$ is the number of
+$[j, k]$-overpartition pairs of $n$ with even parts distinct, in which the first occurrence of
+each distinct part congruent to $j$ modulo $k$ may be overlined.
 
 Source: Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even
 Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2). -/
 public noncomputable def overpartitionPairEvenDistinct (j k n : ℕ) : ℤ :=
   coeff n (overpartitionPairEvenDistinctGF j k)
 
-/-- The generating function identity (2) in cleared form:
-`(∑ bped_{j,k}(n) q^n) · (q; q)_∞^2 = (q^4; q^4)_∞^2 (-q^j; q^k)_∞^2`.
+/-- **Cleared form of the generating function of $[j, k]$-overpartition pairs with even parts
+distinct.** For natural numbers $j$ and $k$, let $f_a = \prod_{m \ge 1} (1 - q^{am})$ be the
+Euler products and let $G_{j,k}$ be the generating function of $[j, k]$-overpartition pairs with
+even parts distinct. Then, as integer power series in $q$,
+$G_{j,k} \, f_1^2 = f_4^2 \bigl(\prod_{i \ge 0} (1 + q^{j+ki})\bigr)^2$, where the infinite
+product is taken in the coefficientwise topology. In $q$-Pochhammer notation this reads
+$G_{j,k} \cdot (q; q)_\infty^2 = (q^4; q^4)_\infty^2 (-q^j; q^k)_\infty^2$.
 
 Source: Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even
 Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2). -/

@@ -13,7 +13,7 @@ steps; the empty script has cost $0$.
 
 ## Depends on
 
-- [Edit Script](edit-script.md)
+- [Edit script](edit-script.md)
 
 ## Proof depends on
 

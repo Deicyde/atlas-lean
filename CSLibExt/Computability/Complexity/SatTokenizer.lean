@@ -83,8 +83,16 @@ def topIsBit (b : Bool) : Option Sym → Bool
   | _ => false
 
 open TM2.Stmt in
-/-- At label `self`, read a unary count from `X` onto the counter `k`, then go to `next`; reject
-at the end of `X`. -/
+/-- **Instruction for reading a unary count.** For a stack $k$ of the tokenizer and labels $s$ and
+$t$, this is the tokenizer instruction that looks at the top of the formula stack $X$. If it is
+the bit true, the instruction pops it, pushes the clause-end symbol $\mathsf{cl}$ onto $k$ and
+goes to $s$; if it is the bit false, it pops it and goes to $t$; otherwise, when $X$ is empty or
+its top is not a bit, it goes to $\mathsf{rej}$. The internal bit is set to true in the first two
+cases and to false in the last.
+
+When $k$ is not $X$ and the instruction is placed at label $s$, a run on a formula stack that
+starts with $m$ bits true followed by a bit false pops these $m + 1$ bits, pushes $m$ copies
+of $\mathsf{cl}$ onto $k$ and goes to $t$. -/
 def unary (k : K) (self next : Lab) : TM2.Stmt (fun _ : K => Sym) Lab Bool :=
   peek .X (fun _ o => topIsBit true o) <| branch id
     (pop .X (fun s _ => s) <| push k (fun _ => .cl) <| goto fun _ => self)
@@ -202,10 +210,10 @@ variable (x w t b l : List Sym) (cc lc j : ℕ)
 
 end Upd
 
-/-- **Rejection within a step bound.** For a natural number $n$ and a configuration $c$ of the
-tokenizer, the tokenizer rejects from $c$ within $n$ steps when there are an internal bit $v$ and
-stacks $S$ such that it runs in at most $n$ steps from $c$ to the configuration with label
-$\mathsf{rej}$, internal bit $v$ and stacks $S$. -/
+/-- **Rejection of the SAT tokenizer within a step bound.** For a natural number $n$ and a
+configuration $c$ of the tokenizer, the tokenizer rejects from $c$ within $n$ steps when there are
+an internal bit $v$ and stacks $S$ such that it runs in at most $n$ steps from $c$ to the
+configuration with label $\mathsf{rej}$, internal bit $v$ and stacks $S$. -/
 def Rej (n : ℕ) (c : TM2.Cfg (fun _ : K => Sym) Lab Bool) : Prop :=
   ∃ v S, RunLe prog n c ⟨some .rej, v, S⟩
 

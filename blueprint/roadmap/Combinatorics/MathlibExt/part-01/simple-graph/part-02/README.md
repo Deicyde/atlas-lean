@@ -8,7 +8,7 @@ navigation: transparent
 - [Degeneracy Coloring](degeneracy-coloring/README.md)
 - [Deza](deza/README.md)
 - [Dichromatic](dichromatic/README.md)
-- [Dirac](dirac.md)
+- [Dirac's theorem](dirac.md)
 - [Domination](domination/README.md)
 - [Edge Coloring](edge-coloring/README.md)
 - [Edge Graceful](edge-graceful/README.md)

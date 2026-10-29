@@ -426,8 +426,10 @@ theorem ParametrizedLink.heightAt_ne_of_projPoint_eq_of_ne {n : ℕ}
         Set.range (L.component b.comp).curve := ⟨b.t, hpoint.symm⟩
     exact Set.disjoint_left.mp hdis ha hb
 
-/-- A crossing of the standard projection, as a point of the defined
-double-point set. -/
+/-- **Crossings of a link projection.** Let $L$ be a parametrized link with $n$ components. A
+crossing of $L$ is a point of the double-point set of $L$, that is, a point $p$ of the plane
+$\mathbb{R}^2$ such that two distinct parameter points of $L$ both have image $p$ under the
+standard projection forgetting the third coordinate. -/
 abbrev ParametrizedLink.Crossing {n : ℕ} (L : ParametrizedLink n) : Type :=
   {p : RegularProjection.R2 // p ∈ L.doublePointSet}
 

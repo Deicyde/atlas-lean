@@ -7,13 +7,14 @@ proof: formalized
 lean: Rat.Place.withAbsEmbedding_isometry
 ---
 
-# With Abs Embedding isometry
+# The embedding of $\mathbb{Q}$ into its completion at a place is an isometry
 
-The `WithAbs` embedding is an isometry.
-
-Uses `WithAbs.norm_eq_apply_ofAbs` to rewrite the `WithAbs` norm to the
-absolute value, `embedding_norm_eq_absoluteValue` for the target norm,
-and `AddMonoidHomClass.isometry_of_norm`.
+**The embedding of $\mathbb{Q}$ into its completion at a place is an isometry.** Let $v$ be a
+place of $\mathbb{Q}$, let $|\cdot|_v$ be the absolute value attached to $v$, and let
+$\mathbb{Q}_v$ be the completed field at $v$. The canonical embedding of $\mathbb{Q}$, equipped
+with the metric $d(x, y) = |x - y|_v$, into $\mathbb{Q}_v$ is an isometry: for all
+$x, y \in \mathbb{Q}$, the distance between the images of $x$ and $y$ in $\mathbb{Q}_v$ equals
+$|x - y|_v$.
 
 ## Depends on
 

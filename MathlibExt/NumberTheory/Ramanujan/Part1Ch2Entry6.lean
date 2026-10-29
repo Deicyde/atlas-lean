@@ -39,7 +39,8 @@ sequence $A(n, k)$ of Entry 6 satisfies $A(n, 0) = n$. -/
 @[simp]
 theorem A_zero (n : ℕ) : A n 0 = n := by simp [A]
 
-/-- The recurrence `A n (k + 1) = 3 * A n k + 1`. -/
+/-- **Recurrence of the tripling sequence.** For all natural numbers $n$ and $k$, the tripling
+sequence $A(n, k)$ of Entry 6 satisfies $A(n, k + 1) = 3A(n, k) + 1$. -/
 theorem A_succ (n k : ℕ) : A n (k + 1) = 3 * A n k + 1 := by
   unfold A
   have hodd : Odd (3 ^ k) := Odd.pow (by decide)
@@ -51,7 +52,8 @@ theorem A_succ (n k : ℕ) : A n (k + 1) = 3 * A n k + 1 := by
   rw [h1, h2]
   ring
 
-/-- `A n k` never drops below its starting value `n`. -/
+/-- **The tripling sequence never drops below its starting value.** For all natural numbers
+$n$ and $k$, the tripling sequence $A(n, k)$ of Entry 6 satisfies $n \le A(n, k)$. -/
 theorem A_ge (n k : ℕ) : n ≤ A n k := by
   induction k with
   | zero => rw [A_zero]

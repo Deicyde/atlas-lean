@@ -17,7 +17,7 @@ real analytic at $\beta_c$.
 
 ## Depends on
 
-- [Finite Ising Free Energy Seq](finite-ising-free-energy-seq.md)
+- [Ising free energy density along side lengths $n + 1$](finite-ising-free-energy-seq.md)
 
 ## Sources
 

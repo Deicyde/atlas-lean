@@ -12,7 +12,7 @@ navigation: module
 - [Values of a finite integer sequence after its first term](tail-finset.md)
 - [Zero-based integer interval](zero-interval.md)
 - [The restricted signed 4-fold sumset of $\{1, 3, 5, 7, 9\}$](card-restricted-signed-sumset-four-odd-f.md)
-- [Card restricted Signed Sumset four counterexample](card-restricted-signed-sumset-four-count.md)
+- [The restricted signed 4-fold sumset of $\{0, 1, 2, 4, 6\}$](card-restricted-signed-sumset-four-count.md)
 - [$\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$](ne-scale-finset-zero-interval-five.md)
 - [The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$](card-restricted-signed-sumset-three-four.md)
 - [Lower bounds for restricted signed sumsets of nonnegative integers](card-restricted-signed-sumset-general-lo.md)

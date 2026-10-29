@@ -84,7 +84,7 @@ instance with no numbers and target $1$ to $O$ and go to $\mathrm{done}$. $\math
 - [Counter unit of the subset-sum emitter](u.md)
 - [Branch after the count comparison (SUBSET-SUM reduction machine)](cmp-out.md)
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Fixed no-instance of SUBSET-SUM](../subset-sum/no-ss.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
@@ -94,7 +94,7 @@ instance with no numbers and target $1$ to $O$ and go to $\mathrm{done}$. $\math
 - [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
 - [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources

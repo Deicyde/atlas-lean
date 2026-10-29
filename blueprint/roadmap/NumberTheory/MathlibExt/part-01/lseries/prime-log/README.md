@@ -15,5 +15,5 @@ navigation: module
 - [Nonvanishing of the Riemann zeta function times $s - 1$ on $\operatorname{Re} s \ge 1$](riemann-zeta-ne-zero-of-one-le-re.md)
 - [Meromorphy of the prime logarithmic continuation](log-dirichlet-continuation-meromorphic.md)
 - [Analyticity of the prime logarithmic continuation](log-dirichlet-continuation-analytic-on.md)
-- [Log Dirichlet Continuation agree](log-dirichlet-continuation-agree.md)
+- [The prime logarithmic continuation on the half-plane $\operatorname{Re} s > 1$](log-dirichlet-continuation-agree.md)
 - [Meromorphic continuation of the prime logarithmic Dirichlet series](log-dirichlet-meromorphic-continuation.md)

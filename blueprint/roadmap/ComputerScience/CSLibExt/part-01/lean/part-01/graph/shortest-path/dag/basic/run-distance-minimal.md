@@ -28,10 +28,10 @@ made of edge occurrences of $E$, where $w(p)$ is the sum of the weights of the e
 ## Proof depends on
 
 - [Edges of the weight-forgetting graph](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
-- [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
-- [Is Weighted Path tail](../../bellman-ford/basic/is-weighted-path-tail.md)
-- [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
-- [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
+- [Appending an edge to a weighted path](../../bellman-ford/basic/is-weighted-path-append-edge.md)
+- [Tail of a weighted path](../../bellman-ford/basic/is-weighted-path-tail.md)
+- [Weighted paths give walks of the same length](../../bellman-ford/basic/is-weighted-path-walk.md)
+- [Weight of a path with an edge appended](../../bellman-ford/basic/path-weight-append-edge.md)
 - [The DAG shortest-path pass gives the source distance zero](run-source-distance.md)
 - [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
 - [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)

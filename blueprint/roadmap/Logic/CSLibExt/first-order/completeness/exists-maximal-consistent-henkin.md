@@ -17,7 +17,7 @@ $\forall \varphi$ lies in $\Delta$.
 
 ## Depends on
 
-- [Consistent](../consistency/consistent.md)
+- [Consistent set of formulas](../consistency/consistent.md)
 - [Maximal consistent set](../consistency/maximal-consistent.md)
 - [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 

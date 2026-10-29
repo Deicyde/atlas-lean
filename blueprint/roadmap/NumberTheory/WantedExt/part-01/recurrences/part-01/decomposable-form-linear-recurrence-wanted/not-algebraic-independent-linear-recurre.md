@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_algebraicIndependent_linearRecurrence_solutions_pow
 ---
 
-# Not algebraic Independent linear Recurrence solutions pow
+# Algebraic dependence of recurrence sequences and a power sequence
 
-Any `k` sequences `ℤ → ℂ` satisfying the same order-`k` linear recurrence, together with
-the sequence `n ↦ γ₀ⁿ` (where `-γ₀` is the constant term of the characteristic polynomial),
-are algebraically dependent over `ℂ` in the algebra `ℤ → ℂ`.
+**Algebraic dependence of recurrence sequences and a power sequence.** Let $k$ be a natural
+number, let $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$ and let
+$\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$. Let
+$G^{(1)}, \dots, G^{(k)} \colon \mathbb{Z} \to \mathbb{C}$ be sequences such that
+$G^{(j)}_{n+k} = \sum_{i\lt k} \gamma_i G^{(j)}_{n+i}$ for every $j$ and every $n \in \mathbb{Z}$.
+Then the family of the $k + 1$ sequences $G^{(1)}, \dots, G^{(k)}$ and $n \mapsto (-\chi(0))^n$
+(integer powers, with $0^n = 0$ for $n < 0$) is not algebraically independent over $\mathbb{C}$
+in the $\mathbb{C}$-algebra of all sequences $\mathbb{Z} \to \mathbb{C}$.
+
+For $k \ge 1$ we have $\chi(0) = -\gamma_0$, so the last sequence is $n \mapsto \gamma_0^n$.
 
 ## Depends on
 

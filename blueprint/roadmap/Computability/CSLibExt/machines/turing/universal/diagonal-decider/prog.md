@@ -39,7 +39,7 @@ $O$ and halts.
 - [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
 - [Counter increment](../../../../../MathlibExt/turing-machine/program/incr.md)
 - [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

@@ -17,9 +17,9 @@ Every degree is smaller than the total element count and the degrees are distinc
 
 ## Depends on
 
-- [Sorted Degrees](sorted-degrees.md)
+- [Forests with strictly increasing degrees](sorted-degrees.md)
 - [Valid Fibonacci forests](valid-2.md)
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on

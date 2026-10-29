@@ -17,7 +17,7 @@ K \left(\mathrm{opx}(n, P, d)^{1/t} \, n^{d + 1 - d/t} + n^d\right)$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

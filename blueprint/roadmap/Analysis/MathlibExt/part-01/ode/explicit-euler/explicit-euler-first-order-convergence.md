@@ -29,7 +29,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Global existence and uniqueness for globally Lipschitz ODEs](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
-- [Exists explicit Euler local Truncation Error le](exists-explicit-euler-local-truncation-e.md)
+- [Uniform quadratic bound on the explicit Euler local error](exists-explicit-euler-local-truncation-e.md)
 
 ## Sources
 

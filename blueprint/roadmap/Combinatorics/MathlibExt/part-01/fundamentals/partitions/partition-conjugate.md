@@ -5,30 +5,18 @@ statement: formalized
 lean: List.partitionConjugate
 ---
 
-# Partition Conjugate
+# Conjugate partition
 
-Let L∈ℤ_{≥ 0} and let
-λ=[λ₁,…,λ_L] be a
-partition, presented as the list of its parts in
-weakly decreasing order, so that
-λ₁≥λ₂≥⋯≥λ_L≥ 1.
-For L=0 the list is empty.
+**Conjugate partition.** Let $\lambda = [\lambda_1, \dots, \lambda_L]$ be a finite list of
+natural numbers, with $L \ge 0$. Its conjugate $\lambda'$ is the empty list if $L = 0$, and
+otherwise the list $[\lambda'_1, \dots, \lambda'_{\lambda_1}]$ of length $\lambda_1$ with
+$\lambda'_j = \#\{i : 1 \le i \le L,\ \lambda_i \ge j\}$ for $1 \le j \le \lambda_1$. The length
+is set by the first entry $\lambda_1$, and the entries of $\lambda'$ are weakly decreasing and at
+least $1$.
 
-If L≥ 1, the conjugate partition of λ
-is
-
-λ'=[λ'₁,…,λ'_{λ₁}],
-
-where for each integer j with
-1≤ j≤λ₁
-
-λ'ⱼ=#{i:1≤ i≤ L, λᵢ≥ j}.
-
-Thus λ' has λ₁ parts, and they are
-again weakly decreasing with
-λ'_{λ₁}≥ 1, so λ' is a
-partition. For L=0 the conjugate partition is
-the empty list.
+When $\lambda$ is a partition, $\lambda_1 \ge \dots \ge \lambda_L \ge 1$, its first entry is its
+largest part, and $\lambda'$ is the conjugate partition: its Young diagram is the transpose of the
+Young diagram of $\lambda$.
 
 ## Depends on
 

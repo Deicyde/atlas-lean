@@ -16,7 +16,7 @@ idempotent: the composite substitution that applies first $s$ and then $s$ equal
 
 - [Lists of equations](equations.md)
 - [Substitution](subst.md)
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on

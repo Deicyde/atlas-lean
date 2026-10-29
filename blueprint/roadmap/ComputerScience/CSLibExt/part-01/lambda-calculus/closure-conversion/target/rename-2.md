@@ -22,7 +22,7 @@ evaluates to $v$ in $\rho$, then the renaming of $e$ by $r$ evaluates to $v$ in 
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](lift-ren.md)
+- [Lifting a renaming under a binder, for the closure-conversion target](lift-ren.md)
 
 ## Sources
 

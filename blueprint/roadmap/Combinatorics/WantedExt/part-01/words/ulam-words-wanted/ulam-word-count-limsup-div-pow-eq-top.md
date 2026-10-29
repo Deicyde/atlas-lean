@@ -17,7 +17,7 @@ Here $\alpha_0$ is the constant from the paper's proof, with $n_1 = 30$.
 
 ## Depends on
 
-- [Ulam Word Count](ulam-word-count.md)
+- [Number of Ulam words of a given length](ulam-word-count.md)
 
 ## Sources
 

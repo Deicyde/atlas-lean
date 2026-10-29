@@ -18,7 +18,7 @@ the remaining gadgets.
 
 ## Depends on
 
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 
 ## Sources
 

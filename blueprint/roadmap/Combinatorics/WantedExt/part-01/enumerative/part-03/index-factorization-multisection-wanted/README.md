@@ -22,7 +22,7 @@ navigation: module
 - [$3$-adic factorization of the Euler function](tprod-q-pochhammer-three-adic-factorizat.md)
 - [$2$-adic multisection of the infinite $q$-Pochhammer symbol](tprod-q-pochhammer-shifted-two-adic.md)
 - [$2$-adic dissection of a ratio of Gamma functions](gamma-ratio-eq-tprod-two-adic.md)
-- [Lambert Mu sigma eq tsum two Adic](lambert-mu-sigma-eq-tsum-two-adic.md)
+- [Two-adic multisection of the power-weighted Lambert series](lambert-mu-sigma-eq-tsum-two-adic.md)
 - [Borwein's eta–Lambert correspondence](eta-mul-lseries-iff-lambert.md)
 - [The Gamma quadratic ratio](gamma-quadratic-ratio.md)
 - [The Gamma quadratic ratio at $z = 0$](gamma-quadratic-ratio-zero-right.md)

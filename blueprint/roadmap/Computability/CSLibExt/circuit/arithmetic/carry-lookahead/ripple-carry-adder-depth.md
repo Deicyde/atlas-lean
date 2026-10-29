@@ -21,7 +21,7 @@ adder has depth $2n + 1$, the length of its carry chain.
 - [Gate depths are evaluation in the depth interpretation](depths-eq-eval.md)
 - [Carry depth in the ripple-carry adder](carry-depth.md)
 - [Carry wire](../ripple-carry/carry-wire.md)
-- [Gate depths of the ripple-carry adder](gate-depth.md)
+- [Gate-depth formula for the ripple-carry adder](gate-depth.md)
 - [Gate depths of the ripple-carry adder](rca-program-depth.md)
 - [The depth interpretation](depth-interpretation.md)
 - [Gate program of the ripple-carry adder](../ripple-carry/rca-program.md)

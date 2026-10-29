@@ -16,7 +16,7 @@ its projections onto the schemes of the BCNF decomposition of $S$ for $F$ and $l
 ## Depends on
 
 - [Functional dependency](../functional-dependencies/fd.md)
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [BCNF decomposition](bcnf-decomposition.md)
@@ -40,11 +40,11 @@ its projections onto the schemes of the BCNF decomposition of $S$ for $F$ and $l
 - [One round of the attribute-closure algorithm](../functional-dependencies/closure-step.md)
 - [Natural join](../relational-algebra/join.md)
 - [Join Unit](join-unit.md)
-- [Join assoc](../relational-algebra/join-assoc.md)
-- [Join comm](../relational-algebra/join-comm.md)
+- [Associativity of the natural join](../relational-algebra/join-assoc.md)
+- [Commutativity of the natural join](../relational-algebra/join-comm.md)
 - [Heath's theorem](join-project-eq-of-holds-in.md)
 - [Projection of a relation](../relational-algebra/project.md)
-- [Cascade of projections](../relational-algebra/project-project-of-subset.md)
+- [Cascade of projections onto a subset](../relational-algebra/project-project-of-subset.md)
 
 ## Sources
 

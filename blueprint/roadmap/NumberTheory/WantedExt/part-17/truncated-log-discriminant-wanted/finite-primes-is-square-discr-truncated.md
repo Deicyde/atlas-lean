@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.finite_primes_isSquare_discr_truncatedLog
 ---
 
-# Finite primes is Square discr truncated Log
+# Finiteness of square discriminants of $F_{mq}$ with $mq \equiv 1 \pmod 4$
 
-For `m ≥ 1`, all but finitely many primes `q` with `m q ≡ 1 (mod 4)` have
-`disc(F_{mq})` not a rational square.
+**Finiteness of square discriminants of $F_{mq}$ with $mq \equiv 1 \pmod 4$.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial and let
+$m \ge 1$ be a natural number. Then there are only finitely many primes $q$ with
+$mq \equiv 1 \pmod 4$ such that the discriminant of $F_{mq}$ is a square in $\mathbb{Q}$.
 
 ## Depends on
 

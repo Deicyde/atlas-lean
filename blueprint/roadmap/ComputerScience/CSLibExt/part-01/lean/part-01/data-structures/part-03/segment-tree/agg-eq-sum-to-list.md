@@ -15,7 +15,7 @@ left to right.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Valid segment trees](valid.md)
 - [Aggregate of a segment tree](agg.md)
 - [Leaf list of a segment tree](to-list.md)

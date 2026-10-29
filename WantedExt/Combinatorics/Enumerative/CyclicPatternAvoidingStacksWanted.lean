@@ -45,9 +45,9 @@ def SameRelativeOrder (s p : List ℕ) : Prop :=
 instance : DecidableRel SameRelativeOrder := fun s p => by
   unfold SameRelativeOrder; infer_instance
 
-/-- **Pattern containment.** A sequence $w$ of natural numbers contains the pattern
-$p = p_1 \cdots p_k$ if some subsequence $u_1 \cdots u_k$ of $w$ (whose entries need not be
-adjacent in $w$) has the same relative order as $p$: for all $a, b \in \{1, \dots, k\}$,
+/-- **Classical pattern containment in a sequence.** A sequence $w$ of natural numbers contains
+the pattern $p = p_1 \cdots p_k$ if some subsequence $u_1 \cdots u_k$ of $w$ (whose entries need
+not be adjacent in $w$) has the same relative order as $p$: for all $a, b \in \{1, \dots, k\}$,
 $u_a < u_b$ if and only if $p_a < p_b$.
 
 Source: Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026),
@@ -270,8 +270,9 @@ theorem xiPermutation_six_seven :
     xiPermutation 6 = [1, 3, 5, 2, 4, 6] ∧ xiPermutation 7 = [2, 4, 6, 1, 3, 5, 7] := by
   decide
 
-/-- **Good sequences.** A finite sequence $s = s_1 s_2 \cdots s_\ell$ of natural numbers is good if
-every entry $s_i$ is the minimum or the maximum of $s_i, s_{i+1}, \ldots, s_\ell$.
+/-- **Good sequences of suffix extrema.** A finite sequence $s = s_1 s_2 \cdots s_\ell$ of natural
+numbers is good if every entry $s_i$ is the minimum or the maximum of
+$s_i, s_{i+1}, \ldots, s_\ell$.
 
 Source: Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026),
 Article A15, Section 3.4. -/

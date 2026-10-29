@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_singleton
 ---
 
-# Elements singleton
+# Multiset of a singleton Fibonacci heap
 
-A singleton heap represents a singleton multiset.
+**Multiset of a singleton Fibonacci heap.** For every value $x$ of a linearly ordered type, the
+singleton Fibonacci heap on $x$, whose only tree is the single-node tree with root $x$, represents
+the multiset $\{x\}$.
 
 ## Depends on
 
-- [Elements](elements-3.md)
-- [Singleton](singleton-2.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
+- [Singleton Fibonacci heap](singleton-2.md)
 
 ## Proof depends on
 

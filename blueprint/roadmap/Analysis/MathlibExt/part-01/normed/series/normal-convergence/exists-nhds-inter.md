@@ -17,8 +17,8 @@ normally on $U \cap S$.
 
 ## Depends on
 
-- [Converges Locally Normally On](converges-locally-normally-on.md)
-- [Converges Normally On](converges-normally-on.md)
+- [Local normal convergence of a series of functions on a set](converges-locally-normally-on.md)
+- [Normal convergence of a series of functions on a set](converges-normally-on.md)
 
 ## Sources
 

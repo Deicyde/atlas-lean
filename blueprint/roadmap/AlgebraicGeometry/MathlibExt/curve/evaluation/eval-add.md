@@ -15,7 +15,7 @@ divisor $D$ against $f$, we have $f(D_1 + D_2) = f(D_1) \, f(D_2)$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 - [Evaluation of a divisor against a function](eval.md)
 
 ## Proof depends on

@@ -17,13 +17,13 @@ is either a literal of $D$ or the complementary literal $(x, \lnot b)$.
 
 - [CNF formula](../basic/cnf.md)
 - [Resolution derivability](resolution-derivable.md)
-- [Restrict](../restriction/restrict-2.md)
+- [Restriction of a CNF formula by a literal](../restriction/restrict-2.md)
 - [CNF clause](../basic/cnfclause.md)
 
 ## Proof depends on
 
 - [Clauses of a restricted formula](mem-restrict-iff.md)
-- [Resolvent](resolvent.md)
+- [Resolvent of two clauses](resolvent.md)
 - [Restriction of a clause by a literal](../restriction/restrict.md)
 
 ## Sources

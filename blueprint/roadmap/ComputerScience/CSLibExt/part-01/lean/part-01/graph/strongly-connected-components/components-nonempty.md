@@ -19,7 +19,7 @@ strongly connected components algorithm on $G$ contains at least one vertex.
 ## Proof depends on
 
 - [Whole-graph decreasing finish order](../depth-first-search/decreasing-finish-all.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Executable mutual-reachability test](same-component-b.md)
 - [The mutual-reachability test is correct](same-component-b-eq-true.md)
 - [Strong connectivity is reflexive](strongly-connected-refl.md)

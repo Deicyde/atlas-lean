@@ -17,7 +17,7 @@ and $q_0 + q_1 + \dots + q_m = \mathrm{area}(P_{a,n}) - \mathrm{area}(H)$.
 
 ## Depends on
 
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 - [Partial quotients of a rational number](partial-quotient.md)
 - [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 

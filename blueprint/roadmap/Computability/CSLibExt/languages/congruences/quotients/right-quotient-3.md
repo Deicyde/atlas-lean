@@ -18,7 +18,7 @@ $L u^{-1} = \{x \mid xu \in L\}$ is regular.
 
 ## Proof depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Right quotients preserve finiteness of the syntactic monoid](finite-syntactic-monoid-right-quotient.md)
 - [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 

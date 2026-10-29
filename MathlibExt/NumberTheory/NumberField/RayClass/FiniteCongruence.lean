@@ -203,13 +203,16 @@ theorem rayElement_valuation_eq_one
     rayElement_count_spanSingleton_eq_zero m (x : Kˣ) x.property v hv,
     neg_zero, WithZero.exp_zero]
 
-/-- Valuation-one criterion for ray elements: if the normalized valuation of `a`
-is one at every finite prime supported by `m`, then the principal fractional
-ideal `(a)` has count zero at each such prime, so `a ∈ rayElements m`.
+/-- **Elements of valuation one at the primes dividing a modulus are ray elements.** Let $K$ be a
+number field, $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, and
+$a \in K^\times$. If the multiplicative $\mathfrak p$-adic valuation of $a$ equals $1$ at every
+nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$, then $a$ is
+coprime to $\mathfrak m$, that is, a ray element of $\mathfrak m$: its principal fractional ideal
+$(a)$ has exponent $0$ at every such $\mathfrak p$.
 
-This is the converse of `rayElement_valuation_eq_one`: the converse valuation
-criterion used to turn the controlled approximation witness into a ray element.
-It is a reusable bridge toward N406, not itself the full source theorem. -/
+Source: N406 Section 21.3. This is the converse of `rayElement_valuation_eq_one`, the converse
+valuation criterion used to turn the controlled approximation witness into a ray element; it is
+a reusable bridge toward N406, not itself the full source theorem. -/
 theorem mem_rayElements_of_valuation_eq_one
     (m : Modulus K) (a : Kˣ)
     (h : ∀ v : IsDedekindDomain.HeightOneSpectrum (𝓞 K),
@@ -903,11 +906,17 @@ theorem finiteResidueMap_ker (m : Modulus K) :
   simp only [MonoidHom.mem_ker, mem_finiteRayOneElements_iff,
     finiteResidueMap_eq_one_iff]
 
-/-- Valuation criterion for triviality of the finite residue map: a valuation bound
-on `z - 1` at every supported finite place forces `finiteResidueMap m z = 1`.
+/-- **Valuation criterion for the finite residue map to be trivial.** Let $K$ be a number field,
+$\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, and $z$ a ray element of
+$\mathfrak m$. Suppose that at every nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$
+containing $\mathfrak m_0$, the multiplicative $\mathfrak p$-adic valuation of $z - 1$ is at most
+$\exp(-e_{\mathfrak p})$, where $e_{\mathfrak p}$ is the exponent of $\mathfrak p$ in
+$\mathfrak m_0$; equivalently, $z = 1$ or $z - 1$ has $\mathfrak p$-adic order at least
+$e_{\mathfrak p}$. Then the finite residue map of $\mathfrak m$ sends $z$ to $1$ in
+$(\mathcal O_K / \mathfrak m_0)^\times$.
 
-Source mapping (N406, Theorem 21.8, Section 21.3; ATLAS NumberTheoryI item N406):
-the native-API finite-congruence step corresponding to
+Source: N406, Theorem 21.8, Section 21.3 (ATLAS NumberTheoryI item N406): the native-API
+finite-congruence step corresponding to
 [`finitePartMapHom_ker_iff`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011),
 used by the weak-approximation argument before residue/sign surjectivity and by
 [`theorem_21_8_quotient_iso`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L2607-L2647).

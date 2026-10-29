@@ -17,7 +17,7 @@ subgroups of the group of all nonzero fractional ideals of $K$.
 
 ## Depends on
 
-- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Congruence subgroup pair](congruence-subgroup-pair.md)
 
 ## Proof depends on
 

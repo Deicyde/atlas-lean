@@ -26,7 +26,7 @@ Landin's knot never reaches a value from the empty store.
 - [The identity on Unit](id-u.md)
 - [Cycle term of Landin's knot](loop-a.md)
 - [Configurations on the evaluation path of Landin's knot](reachable.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Determinism of evaluation with references](../semantics/deterministic.md)
 - [Substitution of a term for variable zero](../syntax/instantiate.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)

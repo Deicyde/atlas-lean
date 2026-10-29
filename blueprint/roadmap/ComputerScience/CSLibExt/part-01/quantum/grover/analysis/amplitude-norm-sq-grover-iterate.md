@@ -24,9 +24,9 @@ $\sum_{x \in \alpha} \psi_k(x)^2 = \sum_{x \in \alpha} \psi(x)^2$.
 ## Proof depends on
 
 - [Inversion about the mean](../diffusion/diffusion.md)
-- [Grover Step](../diffusion/grover-step.md)
-- [Mean Amplitude](../diffusion/mean-amplitude.md)
-- [Phase Oracle](../basic/phase-oracle.md)
+- [Grover step](../diffusion/grover-step.md)
+- [Mean amplitude](../diffusion/mean-amplitude.md)
+- [Phase oracle](../basic/phase-oracle.md)
 
 ## Sources
 

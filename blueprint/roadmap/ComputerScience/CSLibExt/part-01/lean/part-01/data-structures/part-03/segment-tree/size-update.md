@@ -17,7 +17,7 @@ Every node on the update path keeps its cached segment length.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Size of a segment tree](size.md)
 - [Point update of a segment tree](update.md)
 

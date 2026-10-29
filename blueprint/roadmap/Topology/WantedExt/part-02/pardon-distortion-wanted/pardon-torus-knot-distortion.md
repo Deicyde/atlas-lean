@@ -23,7 +23,7 @@ every rectifiable curve in the knot type of the $(p, q)$-torus knot.
 - [Smooth ambient isotopy of $\mathbb{R}^3$](../../part-01/conway-knot-shared/ambient-isotopy.md)
 - [Oriented smooth knot](../../part-01/conway-knot-shared/knot.md)
 - [Euclidean space $\mathbb{R}^3$](../../part-01/conway-knot-shared/r3.md)
-- [Distortion](distortion.md)
+- [Distortion of a knot](distortion.md)
 - [Standard torus curve](standard-torus-curve.md)
 
 ## Sources

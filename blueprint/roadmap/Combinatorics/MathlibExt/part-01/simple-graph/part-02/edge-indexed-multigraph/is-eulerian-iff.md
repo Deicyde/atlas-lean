@@ -17,7 +17,7 @@ is a trail whose edge list contains every edge identity of the multigraph.
 - [Edge-indexed multigraph](edge-indexed-multigraph.md)
 - [Indexed walk](indexed-walk.md)
 - [Eulerian indexed walk](is-eulerian.md)
-- [Is Trail](is-trail.md)
+- [Indexed trail](is-trail.md)
 - [Edge list of an indexed walk](edges.md)
 
 ## Sources

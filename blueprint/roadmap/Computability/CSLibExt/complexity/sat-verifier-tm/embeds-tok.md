@@ -48,7 +48,7 @@ at $\ell$ translated along this embedding and label map.
 - [Stack embedding of the clause-check driver into the host](emb-c.md)
 - [Stack embedding of the clause-length filter into the host](emb-f.md)
 - [The embedded lookup program](lk-h.md)
-- [Stacks emptied by the cleanup](work-ks.md)
+- [Stacks emptied by the SAT verifier's cleanup](work-ks.md)
 - [Driver labels in the SAT host](c.md)
 - [Filter exits in the SAT verifier host](f.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)

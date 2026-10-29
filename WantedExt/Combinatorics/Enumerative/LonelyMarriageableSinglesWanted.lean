@@ -307,8 +307,12 @@ public theorem_wanted card_absolute_maximalSetsOfLanes (n : ℕ) :
     (Finset.univ.filter fun S : Finset (Fin n × Fin n) => IsAbsoluteMaximalSetOfLanes S).card =
       lonelySinglesCount n
 
-/-- The number of MSL of a restricted standard road intersection of size `n` (U-turns `E_iX_i`
-forbidden) is `L_n`.
+/-- **Maximal sets of lanes without U-turns are counted by lonely singles partitions.** For every
+$n \ge 0$, consider the restricted standard road intersection of size $n$, in which the lane
+$E_iX_j$ from the entry $E_i$ to the exit $X_j$, for $i, j \in \{0, \dots, n-1\}$, is allowed
+exactly when $i \ne j$ (the U-turns $E_iX_i$ are forbidden). The number of maximal sets of lanes
+among these allowed lanes equals $L_n$, the number of noncrossing partitions of
+$\{0, \dots, n-1\}$ that are not marriageable singles partitions.
 
 Source: Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and
 Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 19
@@ -394,12 +398,16 @@ public theorem_wanted lonelySinglesCount_ge_sum (n : ℕ) (hn : 2 ≤ n) :
           ℚ)) ≤
       lonelySinglesCount n
 
-/-- For `n ≥ 3`, `M_n` is at least the double sum over `1 ≤ i < j ≤ n` of the products of the
-singleton-free counts (via Proposition 24) for `[n+i-j-1]` and `[j-i-1]`:
-`M_n ≥ ∑_{i=1}^{n-1} ∑_{j=i+1}^{n}
-  (∑_{m=0}^{⌊(n+i-j-1)/2⌋} binom(n+i-j-1, m) binom(n+i-j-m-2, m-1)/(n+i-j-m))
-  (∑_{m=0}^{⌊(j-i-1)/2⌋} binom(j-i-1, m) binom(j-i-m-2, m-1)/(j-i-m))`,
-binomials with a negative argument being `0`.
+/-- **Lower bound for the number of marriageable singles partitions.** Extend the binomial
+coefficient $\binom{a}{b}$ to all integers $a$, $b$ by setting it to $0$ when $a < 0$ or $b < 0$,
+and for every natural number $N$ let
+$$S(N) = \sum_{m=0}^{\lfloor N/2 \rfloor} \frac{1}{N-m+1} \binom{N}{m} \binom{N-m-1}{m-1}.$$
+For every $n \ge 3$, the number $M_n$ of noncrossing partitions of $\{0, \dots, n-1\}$ that are
+marriageable singles partitions satisfies
+$$M_n \ge \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} S(n+i-j-1)\, S(j-i-1).$$
+
+For $N \ge 1$, $S(N)$ is the number of noncrossing partitions of an $N$-element set with no
+singleton block; with the convention above, $S(0) = 0$.
 
 Source: Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and
 Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 27

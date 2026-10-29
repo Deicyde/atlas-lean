@@ -18,7 +18,7 @@ into the topological idele group, with $R = \mathcal{O}_K$) has adelic norm $1$.
 - [Finite idele group](../idele/finite-idele-group.md)
 - [Infinite idele group](../idele/infinite-idele-group.md)
 - [Topological idele group](../idele/topological-idele-group.md)
-- [Adelic Norm](adelic-norm.md)
+- [Adelic norm](adelic-norm.md)
 - [Diagonal map into the ideles](../idele/principal-embedding.md)
 - [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 

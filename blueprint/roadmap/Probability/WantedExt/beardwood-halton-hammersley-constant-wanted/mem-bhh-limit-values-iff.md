@@ -16,7 +16,7 @@ BHH constant for $\nu$.
 ## Depends on
 
 - [BHH constant of a law](is-bhhconstant-for.md)
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 - [BHH limit values of a sampling law](bhh-limit-values.md)
 
 ## Sources

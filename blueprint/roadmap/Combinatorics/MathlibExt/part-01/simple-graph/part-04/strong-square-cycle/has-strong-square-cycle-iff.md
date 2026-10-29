@@ -17,7 +17,7 @@ the second vertex of $p$ and the second-to-last vertex of $p$ is adjacent in $G$
 ## Depends on
 
 - [Strong square cycle at a vertex](has-strong-square-cycle.md)
-- [Square](../square/square.md)
+- [Square of a graph](../square/square.md)
 
 ## Sources
 

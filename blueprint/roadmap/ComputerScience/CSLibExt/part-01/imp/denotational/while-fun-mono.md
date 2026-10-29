@@ -22,7 +22,7 @@ $\Phi(R_1) \subseteq \Phi(R_2)$.
 
 ## Proof depends on
 
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 
 ## Sources
 

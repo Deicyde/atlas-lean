@@ -16,7 +16,7 @@ $x \in \mathbb{Z}$.
 ## Depends on
 
 - [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
-- [Polynomial To LIP](polynomial-to-lip.md)
+- [The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$](polynomial-to-lip.md)
 
 ## Sources
 

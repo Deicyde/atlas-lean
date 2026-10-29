@@ -37,7 +37,7 @@ ascending order.
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 

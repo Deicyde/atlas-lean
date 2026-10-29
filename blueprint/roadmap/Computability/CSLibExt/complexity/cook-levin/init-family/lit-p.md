@@ -24,8 +24,8 @@ the output and repeats.
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Counters of the initial-row generator](ck.md)
 - [Clause kinds of the initial-row generator](cl.md)
-- [Stages of the literal routine](ls.md)
-- [Labels of the initial-row generator](lb.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 
 ## Proof depends on
 
@@ -39,7 +39,7 @@ the output and repeats.
 - [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

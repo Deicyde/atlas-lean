@@ -4,7 +4,7 @@ navigation: module
 
 # Matching Lower Bound
 
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 - [Number of arrivals an online matcher matches](matched.md)
 - [Perfect matchings of a sequence of arrivals](is-perfect.md)
 - [Graph of a sequence of arrivals](to-adj.md)

@@ -21,7 +21,7 @@ Connectivity is the abstraction against which the link-cut tree operations are s
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 
 ## Sources
 

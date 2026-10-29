@@ -21,7 +21,7 @@ navigation: module
 ## Numbering
 
 - [Nonterminal of a symbol](nt-of.md)
-- [Nonterminals mentioned by a grammar](used-nt.md)
+- [List of nonterminals mentioned by a grammar](used-nt.md)
 - [Numbering of nonterminals](nt-index.md)
 - [Nonterminal with a given number](nt-of-index.md)
 - [Numbering the nonterminals of a production and back recovers it](map-rule-nt-of-index-nt-index.md)

@@ -19,11 +19,11 @@ $N \to \infty$, to the pointwise sum $x \mapsto \sum_{n=0}^{\infty} f_n(x)$.
 
 ## Depends on
 
-- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
+- [Local normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Normal convergence of a series of functions on a set](../../../normed/series/normal-convergence/converges-normally-on.md)
 - [Weierstrass M-test: normal convergence implies uniform convergence](tendsto-uniformly-on-tsum-nat.md)
 
 ## Sources

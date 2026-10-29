@@ -11,7 +11,7 @@ navigation: module
 
 ## Op
 
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 - [Operations whose relative order matters](order-matters.md)
 
 ## Databases

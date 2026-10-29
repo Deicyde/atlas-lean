@@ -15,7 +15,7 @@ represented by $L$ and by $R$.
 
 ## Depends on
 
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on

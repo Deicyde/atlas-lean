@@ -44,7 +44,7 @@ the binary clause encoding.
 - [The literals of a clause in the emitter](lits-run.md)
 - [Fresh numbers used by a run of literals](nz.md)
 - [Output clauses of a walked list of literals](walk-f.md)
-- [Walk F chain](walk-f-chain.md)
+- [Walking a whole clause gives its chain](walk-f-chain.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)

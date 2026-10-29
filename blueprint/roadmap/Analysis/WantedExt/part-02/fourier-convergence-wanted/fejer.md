@@ -15,7 +15,7 @@ uniformly on $\mathbb{R}$ as $N \to \infty$.
 
 ## Depends on
 
-- [Fourier Cesaro Mean](fourier-cesaro-mean.md)
+- [Cesàro means of Fourier series](fourier-cesaro-mean.md)
 
 ## Sources
 

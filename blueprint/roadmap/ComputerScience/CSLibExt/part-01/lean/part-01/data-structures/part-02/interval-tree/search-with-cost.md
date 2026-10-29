@@ -30,7 +30,7 @@ one cached-maximum read to that search's cost. No other counter is ever incremen
 ## Proof depends on
 
 - [Overlap test with comparison count](overlaps-with-cost.md)
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 
 ## Sources
 

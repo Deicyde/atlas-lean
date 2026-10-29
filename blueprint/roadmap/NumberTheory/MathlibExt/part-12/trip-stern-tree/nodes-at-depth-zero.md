@@ -15,7 +15,7 @@ in the set of nodes of $T$ at depth $0$ if and only if $y$ is the seed of $T$.
 ## Depends on
 
 - [TRIP-Stern tree](trip-stern-tree.md)
-- [Nodes At Depth](nodes-at-depth.md)
+- [Nodes at a given depth of a TRIP-Stern tree](nodes-at-depth.md)
 
 ## Proof depends on
 

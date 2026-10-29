@@ -23,7 +23,7 @@ $\varphi$ with an implication edge from $l$ to $m$, read from the adjacency tabl
 - [Adjacency table of the implication graph](adjacency-table.md)
 - [List of the literals of a CNF formula](lit-list.md)
 - [Duplicate-free list of the variables of a CNF formula](var-list.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 

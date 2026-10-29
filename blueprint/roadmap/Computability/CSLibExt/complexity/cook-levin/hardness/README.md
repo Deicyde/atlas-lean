@@ -21,7 +21,7 @@ navigation: module
 - [Certificate symbols of the verifier](v-ys.md)
 - [Offset of the verifier's time bound](vc.md)
 - [Exponent of the verifier's time bound](ve.md)
-- [V input](v-input.md)
+- [Input of the verifier on a pair](v-input.md)
 - [The verifier's run settles on its output](v-run.md)
 - [The Cook–Levin reduction](red.md)
 - [Correctness of the reduction](v-correct.md)

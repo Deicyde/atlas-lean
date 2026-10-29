@@ -83,8 +83,9 @@ algebraic integers `4 cos^2 (π / n)` whose absolute traces tend to
 theorem_wanted classicalUpperBound_wanted :
     schurSiegelSmythConstant ≤ (2 : EReal)
 
-/-- **Smith's upper bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth trace
-constant $C_{86}$, an extended real number, satisfies $C_{86} < 1.89831$.
+/-- **Smith's upper bound for the Schur–Siegel–Smyth trace constant.** The
+Schur–Siegel–Smyth trace constant $C_{86}$, an extended real number, satisfies
+$C_{86} < 1.89831$.
 
 Source: Smith (2024), strict upper bound `C₈₆ < 1.89831` (the form of
 Smith's theorem recorded in the neighbouring

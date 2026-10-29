@@ -28,7 +28,7 @@ of the detour arcs of clause $j$ (contents $C$) in diamond $i$ for variable $y$.
 - [Quiescent states of the HAMPATH emitter](../ham-path-emit-machine/ms.md)
 - [Stacks of a quiescent emitter state](../ham-path-emit-machine/stk.md)
 - [Counter values of a quiescent emitter state](../ham-path-emit-machine/val.md)
-- [Counters read by copy sites](../ham-path-emit-machine/src.md)
+- [Counters read by HAMPATH copy sites](../ham-path-emit-machine/src.md)
 - [Clause detours in a diamond](../ham-path-emit-spec/det-e.md)
 - [Name of a variable in the HAMPATH emitter](../ham-path-emit-machine/name.md)
 - [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)

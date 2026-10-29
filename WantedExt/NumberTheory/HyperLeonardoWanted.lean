@@ -149,9 +149,14 @@ Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Proposition 3, Equatio
 public theorem_wanted hyperLeonardo_succ_succ (r n : ℕ) :
     hyperLeonardo (r + 1) (n + 1) = hyperLeonardo (r + 1) n + hyperLeonardo r (n + 1)
 
-/-- Corollary 1: `Le^{(1)}_n = Le^{(1)}_{n-1} + Le_n` for `n ≥ 1`, the case `r = 1` of
-Equation (4). The extraction drops the superscript `(1)` on `Le_{n-1}`; as printed
-(`Le^{(1)}_n = Le_{n-1} + Le_n`) it fails at `n = 2` (`5 ≠ 1 + 3`).
+/-- **Consecutive hyper-Leonardo numbers of order one.** For every natural number $n$, the
+hyper-Leonardo numbers $Le^{(1)}_n$ of order $1$ satisfy
+$Le^{(1)}_{n+1} = Le^{(1)}_n + L_{1,n+1}$, where $L_{1,n}$ is the generalized Leonardo number
+with $k = 1$, that is, the Leonardo number $Le_n$.
+
+This is the case $r = 1$ of the recurrence $Le^{(r)}_n = Le^{(r)}_{n-1} + Le^{(r-1)}_n$. The
+extracted text of the source reads $Le^{(1)}_n = Le_{n-1} + Le_n$, which fails at $n = 2$, where
+$Le^{(1)}_2 = 5$ but $Le_1 + Le_2 = 4$.
 
 Source: Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on
 Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 1, Equation (5)
@@ -322,10 +327,13 @@ public theorem_wanted hyperLeonardo_mul_sub_sq (r n : ℕ) :
       hyperLeonardo (r + 1) (n + 1) * hyperLeonardo r (n + 2) -
         hyperLeonardo r (n + 1) * hyperLeonardo (r + 1) (n + 2)
 
-/-- Proposition 14, for `r ≥ 1`: `Le^{(r)}` is log-concave from `n = 2` on,
-`Le^{(r)}_{n-1} Le^{(r)}_{n+1} ≤ (Le^{(r)}_n)²` for `n ≥ 2`. The printed range `r ≥ 0` fails
-at `r = 0`, `n = 3` (`Le₂ Le₄ = 27 > 25 = Le₃²`, the log-convexity of Proposition 10); the
-paper's proof starts its induction at `r = 1` (Proposition 13).
+/-- **Eventual log-concavity of the hyper-Leonardo numbers of positive order.** For all natural
+numbers $r \ge 1$ and $n \ge 2$, the hyper-Leonardo numbers $Le^{(r)}_n$ of order $r$ satisfy
+$Le^{(r)}_{n-1} Le^{(r)}_{n+1} \le (Le^{(r)}_n)^2$.
+
+The source states this for $r \ge 0$, but it fails for the Leonardo numbers $Le_n = Le^{(0)}_n$
+at $n = 3$, where $Le_2 Le_4 = 27 > 25 = Le_3^2$; the source's proof starts its induction at
+$r = 1$ (Proposition 13).
 
 Source: Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on
 Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Proposition 14

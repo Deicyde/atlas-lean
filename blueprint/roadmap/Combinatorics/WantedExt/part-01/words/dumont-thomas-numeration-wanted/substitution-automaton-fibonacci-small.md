@@ -15,7 +15,7 @@ undefined, so $11$ is rejected.
 
 ## Depends on
 
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 
 ## Sources
 

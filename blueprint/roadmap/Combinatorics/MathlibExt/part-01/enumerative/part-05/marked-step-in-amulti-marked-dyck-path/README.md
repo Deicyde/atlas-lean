@@ -5,7 +5,7 @@ navigation: module
 # Marked Step In AMulti Marked Dyck Path
 
 - [Steps of a multi-marked Dyck path](multi-marked-step.md)
-- [Number of horizontal steps](multi-marked-count-e.md)
+- [Number of horizontal steps in a multi-marked step sequence](multi-marked-count-e.md)
 - [Number of plain vertical steps](multi-marked-count-plain-n.md)
 - [Number of vertical steps](multi-marked-count-vert.md)
 - [Number of steps](multi-marked-count-total.md)

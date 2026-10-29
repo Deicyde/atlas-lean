@@ -16,7 +16,7 @@ point is the third coordinate of the corresponding point of $L$ in $\mathbb{R}^3
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Regular projections](is-regular-projection.md)
 - [Parameter point](param-point.md)
 

@@ -221,7 +221,11 @@ noncomputable def toChain : Chain α where
   cond k y := if hk : k < n then b.cpt ⟨k, hk⟩ fun j => y j else
     StdSimplex.single (Classical.arbitrary α)
 
-/-- The joint distribution of the network. -/
+/-- **Joint distribution of a Bayesian network.** Let $B$ be a Bayesian network on the nodes
+$0, \dots, n - 1$ with values in a nonempty type $\alpha$. The joint distribution of $B$ is the
+function $P : \alpha^n \to \mathbb{R}$ given by $P(x) = P_n(x)$ for $x \in \alpha^n$, where $P_n$
+is the joint distribution of the first $n$ variables of the chain of conditional distributions
+of $B$. -/
 noncomputable def joint (x : Fin n → α) : ℝ :=
   b.toChain.joint n x
 
@@ -233,7 +237,9 @@ theorem joint_eq_prod (x : Fin n → α) :
   refine prod_congr rfl fun k _ => ?_
   simp [toChain, k.2]
 
-/-- The joint of a Bayesian network is a probability distribution. -/
+/-- **The joint distribution of a Bayesian network sums to one.** Let $B$ be a Bayesian network
+on the nodes $0, \dots, n - 1$ with values in a finite nonempty type $\alpha$, and let $P$ be its
+joint distribution. Then $\sum_{x \in \alpha^n} P(x) = 1$. -/
 theorem sum_joint [Fintype α] : ∑ x, b.joint x = 1 :=
   b.toChain.sum_joint n
 

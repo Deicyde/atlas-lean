@@ -8,7 +8,9 @@ lean: MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.Torus
 
 # Torus
 
-The standard `d`-dimensional torus `𝕋^d = (ℝ/ℤ)^d`.
+**Torus.** For a natural number $d$, the $d$-dimensional torus is
+$\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$, the product of $d$ copies of the circle
+$\mathbb{R}/\mathbb{Z}$.
 
 ## Depends on
 

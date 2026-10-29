@@ -17,7 +17,7 @@ column score of the pair $(c_i, c_j)$.
 ## Depends on
 
 - [Multiple alignments](msalignment.md)
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Score of an alignment column](../sequence-alignment/column-score.md)
 - [Induced pairwise alignment](induced-pair.md)
 

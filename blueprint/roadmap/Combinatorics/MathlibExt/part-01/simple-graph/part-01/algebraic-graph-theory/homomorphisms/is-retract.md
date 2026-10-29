@@ -5,11 +5,12 @@ statement: formalized
 lean: SimpleGraph.Subgraph.IsRetract
 ---
 
-# Is Retract
+# Retract
 
-A *retraction* is a homomorphism f from a graph X to a subgraph Y of itself such that the
-restriction f|_Y of f to V(Y) is the identity map. If there is a retraction from X to a subgraph Y,
-then we say that Y is a *retract* of X.
+**Retract.** Let $Y$ be a subgraph of a graph $X$. A *retraction* from $X$ to $Y$ is a
+homomorphism $f$ from $X$ to $Y$, regarded as a graph in its own right, whose restriction to the
+vertex set of $Y$ is the identity map. We say that $Y$ is a *retract* of $X$ if there is a
+retraction from $X$ to $Y$.
 
 ## Depends on
 

@@ -19,7 +19,7 @@ reconstruction steps.
 - [Bellman-Ford distance table](../basic/distances.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](../correctness/bellman-ford.md)
+- [Bellman–Ford algorithm](../correctness/bellman-ford.md)
 
 ## Proof depends on
 

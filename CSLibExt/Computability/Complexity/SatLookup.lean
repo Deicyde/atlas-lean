@@ -426,8 +426,14 @@ theorem scan_loop (q : List Bool) (R : List Sym) (hR : EndsBitBlock Sym.bit? R)
       simp only [List.length_cons, List.length_append, List.length_reverse, List.length_map]
       omega
 
-/-- Moving back: with `tblStk pre` on `B` and the entries of `post` on the stash, the machine
-moves them all back, so that `B` holds `tblStk (pre ++ post)`, and halts at `done`. -/
+/-- **The return loop of the lookup machine.** Let $t$ and $w$ be lists of symbols, let $pre$ and
+$post$ be lists of table entries, and let $m$ be the total number of symbols of the entries of
+$post$. Suppose the lookup program is at label $\mathsf{back}$, with any internal bit, and its
+stacks are: $T$ holds $t$; $B$ holds the table stack of $pre$; $S$ holds the symbols of the
+entries of $post$ in reading order, first entry on top; $A$ and $C$ are empty; and $V$ holds $w$.
+Then within $2m + 2$ steps the program reaches label $\mathsf{done}$, with some internal bit,
+where $B$ holds the table stack of the entry list $pre$ followed by $post$, the stacks $S$, $A$
+and $C$ are empty, and $T$ and $V$ still hold $t$ and $w$. -/
 theorem back_loop (T w : List Sym) (post : List Ent) :
     ∀ (pre : List Ent) (v : Bool), ∃ v', RunLe prog (2 * (post.flatMap entToks).length + 2)
       ⟨some .back, v, stk T (tblStk pre) (post.flatMap entToks) [] [] w⟩

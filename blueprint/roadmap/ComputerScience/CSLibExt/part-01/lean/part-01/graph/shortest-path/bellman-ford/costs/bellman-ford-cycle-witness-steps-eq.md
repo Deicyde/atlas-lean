@@ -19,7 +19,7 @@ charges exactly $n + c + q$ negative-cycle witness reconstruction steps.
 - [Weighted directed edge](../basic/edge.md)
 - [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](../correctness/bellman-ford.md)
+- [Bellman–Ford algorithm](../correctness/bellman-ford.md)
 
 ## Proof depends on
 

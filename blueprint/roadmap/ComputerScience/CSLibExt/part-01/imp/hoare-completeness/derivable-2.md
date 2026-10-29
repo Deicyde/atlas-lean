@@ -23,7 +23,7 @@ partial-correctness Hoare logic.
 ## Proof depends on
 
 - [Relative completeness of total-correctness Hoare logic](complete.md)
-- [Sound](sound-2.md)
+- [Soundness of total-correctness Hoare logic](sound-2.md)
 - [Total correctness implies partial correctness](../hoare-total/valid.md)
 
 ## Sources

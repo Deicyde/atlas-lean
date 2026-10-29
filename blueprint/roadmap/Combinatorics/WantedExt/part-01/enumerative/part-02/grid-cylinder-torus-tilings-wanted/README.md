@@ -81,7 +81,7 @@ navigation: module
 - [Rectangle-group cell action of the reflection r²f](rect-cell-action-sr-two.md)
 - [The dihedral action on the cells of the square grid](square-cell-action.md)
 - [The rotation $r$ acts on the square grid as the quarter-turn](square-cell-action-r-one.md)
-- [Square Cell Action sr zero](square-cell-action-sr-zero.md)
+- [The reflection $sr_0$ acts on the square grid as $f$](square-cell-action-sr-zero.md)
 - [Burnside count of cylinder tilings under rectangle symmetries](cylinder-distinct-tilings-burnside.md)
 - [Burnside count of torus tilings under the rectangle group](rect-torus-distinct-tilings-burnside.md)
 - [Burnside count of tilings of the square torus](square-torus-distinct-tilings-burnside.md)

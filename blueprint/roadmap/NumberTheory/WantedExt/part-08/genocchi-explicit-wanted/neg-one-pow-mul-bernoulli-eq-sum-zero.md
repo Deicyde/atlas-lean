@@ -16,7 +16,7 @@ $(-1)^n B_n = \frac{n}{2^n - 1} \sum_{k=1}^{n-r} d_k \, \frac{\Delta^k 0^{n-r}}{
 
 ## Depends on
 
-- [Iterated forward differences of a power](diff-pow-eval.md)
+- [Iterated forward differences of a power on $\mathbb{Q}$](diff-pow-eval.md)
 
 ## Sources
 

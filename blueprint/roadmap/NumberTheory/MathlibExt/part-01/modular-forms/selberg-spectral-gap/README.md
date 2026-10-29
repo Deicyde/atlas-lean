@@ -16,7 +16,7 @@ navigation: module
 - [Standard fundamental domain of the modular group](fundamental-domain.md)
 - [Finite coset covers of the modular group](is-coset-cover.md)
 - [Square-integrable functions on a modular quotient](is-l2-quotient.md)
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
 - [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
 - [Selberg's congruence spectral-gap constant](selberg-constant.md)

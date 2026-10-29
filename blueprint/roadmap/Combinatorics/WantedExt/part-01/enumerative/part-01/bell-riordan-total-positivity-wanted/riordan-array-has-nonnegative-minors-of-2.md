@@ -5,14 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_params
 ---
 
-# Riordan Array has Nonnegative Minors of params
+# A total positivity criterion for Riordan arrays
 
-Theorem 2: let `P, Q` be formal power series with `P(0) ≠ 0`, `a, b, r, s, t ≥ 0`, and let
-`R = R(P, Q; a, b, r, s, t)` be the Riordan array with
-`A(x) = (P² + sxP + tx²) / (P - rx)` and
-`Z(x) = ((P² + sxP + tx²) Q + (aP + bx)(P - xQ)) / (P² - rxP)` (stated with denominators
-cleared). If `J(Q(x), P(x))` is totally positive, `s² ≥ 4t` and `as + a√(s² - 4t) ≥ 2b`, then
-`R` is totally positive. The paper leaves `P(0) ≠ 0` implicit (it makes `A`, `Z` well defined).
+**A total positivity criterion for Riordan arrays.** Let $P, Q, A, Z$ be formal power series
+over $\mathbb{R}$ with $P(0) \ne 0$, write $[x^n]F$ for the coefficient of $x^n$ in a power
+series $F$, and let $a, b, r, s, t \ge 0$ be real numbers. Suppose that
+
+$$A(x)\,(P(x) - rx) = P(x)^2 + sxP(x) + tx^2$$
+
+and
+
+$$Z(x)\,(P(x)^2 - rxP(x)) =
+(P(x)^2 + sxP(x) + tx^2)\,Q(x) + (aP(x) + bx)(P(x) - xQ(x)),$$
+
+and let $R$ be the Riordan array whose $A$-sequence is $([x^n]A)_{n \ge 0}$ and whose
+$Z$-sequence is $([x^n]Z)_{n \ge 0}$. Let $J(Q(x), P(x))$ be the coefficient matrix whose row
+$n \ge 0$ reads $[x^n]Q, [x^n]P, [x^{n-1}]P, \dots, [x^0]P, 0, 0, \dots$. Call a matrix totally
+positive when every minor of it is nonnegative. If $J(Q(x), P(x))$ is totally positive,
+$s^2 \ge 4t$ and $as + a\sqrt{s^2 - 4t} \ge 2b$, then $R$ is totally positive.
+
+Since $P(0) \ne 0$, the series $P(x) - rx$ and $P(x)^2 - rxP(x)$ are invertible, so the two
+hypotheses say $A = (P^2 + sxP + tx^2)/(P - rx)$ and
+$Z = ((P^2 + sxP + tx^2)Q + (aP + bx)(P - xQ))/(P^2 - rxP)$.
 
 ## Depends on
 

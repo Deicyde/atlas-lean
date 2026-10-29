@@ -18,7 +18,7 @@ the comparators, running the comparators on $F$ and on $G$ gives the same value 
 ## Depends on
 
 - [Influence sets of wires](influence.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 
 ## Proof depends on
 

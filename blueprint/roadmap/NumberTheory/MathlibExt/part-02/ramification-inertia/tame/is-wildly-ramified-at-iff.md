@@ -15,7 +15,7 @@ if and only if $q$ is not tamely ramified over $R$.
 
 ## Depends on
 
-- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Tamely ramified prime](is-tamely-ramified-at.md)
 - [Wildly ramified prime](is-wildly-ramified-at.md)
 
 ## Sources

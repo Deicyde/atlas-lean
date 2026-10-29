@@ -17,8 +17,8 @@ scan returns a value $\delta$ with $\delta \le d(p, q)$.
 
 ## Depends on
 
-- [Dist2](dist2.md)
-- [Min Dist From](min-dist-from.md)
+- [Squared distance in the plane](dist2.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 
 ## Proof depends on
 

@@ -20,5 +20,5 @@ navigation: module
 
 - [Evaluation at a point of an affine set](eval-at.md)
 - [Evaluating a residue class](eval-at-mk.md)
-- [Is Regular At](is-regular-at-2.md)
-- [Is Regular At algebra Map](is-regular-at-algebra-map-2.md)
+- [Regularity of a rational function at a point](is-regular-at-2.md)
+- [Elements of the coordinate ring are regular](is-regular-at-algebra-map-2.md)

@@ -7,7 +7,7 @@ navigation: module
 ## References
 
 - [Typing judgment for the lambda calculus with references](has-type.md)
-- [Store Typed](store-typed.md)
+- [Well-typed stores](store-typed.md)
 
 ## Store Typed
 

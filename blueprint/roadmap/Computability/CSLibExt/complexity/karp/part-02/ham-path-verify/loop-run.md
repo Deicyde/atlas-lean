@@ -22,7 +22,7 @@ passes and the reject label otherwise.
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
 - [Stack layout between vertex steps](lay.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [The walk check of the HAMPATH verifier](../../part-01/ham-path-check/walk-ok.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)

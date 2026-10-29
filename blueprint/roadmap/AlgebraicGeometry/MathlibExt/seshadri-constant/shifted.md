@@ -14,8 +14,8 @@ to the origin.
 
 ## Depends on
 
-- [Affine Point](affine-point.md)
-- [Plane Polynomial](plane-polynomial.md)
+- [Points of the complex affine plane](affine-point.md)
+- [Polynomials in two complex variables](plane-polynomial.md)
 
 ## Sources
 

@@ -257,9 +257,10 @@ open CategoryTheory _root_.AlgebraicGeometry _root_.AlgebraicGeometry.Scheme
 
 variable (𝕜 𝔽 : Type) [Field 𝕜] [Field 𝔽]
 
-/-- **Variety over a field.** Let $k$ be a field. A variety over $k$ is a scheme $X$ together with a
-morphism $X \to \operatorname{Spec} k$ such that $X$ is integral (irreducible and reduced) and the
-morphism is separated and of finite type (locally of finite type and quasi-compact). -/
+/-- **Integral variety over a field.** Let $k$ be a field. A variety over $k$ in this sense is a
+scheme $X$ together with a morphism $X \to \operatorname{Spec} k$ such that $X$ is integral
+(irreducible and reduced) and the morphism is separated and of finite type (locally of finite type
+and quasi-compact). -/
 class Variety (X : Scheme) where
   [over : X.Over (Spec (.of 𝕜))]
   [isIntegral : IsIntegral X]

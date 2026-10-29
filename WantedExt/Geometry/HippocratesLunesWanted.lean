@@ -60,9 +60,9 @@ open MeasureTheory
 $\mathbb{R} \times \mathbb{R}$ of ordered pairs $(x, y)$ of real numbers. -/
 abbrev Plane := ℝ × ℝ
 
-/-- **Planar determinant.** For vectors $u = (u_1, u_2)$ and $v = (v_1, v_2)$ of the coordinate
-plane, $\det(u, v) = u_1 v_2 - u_2 v_1$, the signed area of the parallelogram spanned by $u$
-and $v$. -/
+/-- **Planar determinant for Hippocrates' lunes.** For vectors $u = (u_1, u_2)$ and
+$v = (v_1, v_2)$ of the coordinate plane, $\det(u, v) = u_1 v_2 - u_2 v_1$, the signed area of
+the parallelogram spanned by $u$ and $v$. -/
 def det2 (u v : Plane) : ℝ := u.1 * v.2 - u.2 * v.1
 
 /-- **Midpoint of two points in the plane.** For points $p = (p_1, p_2)$ and

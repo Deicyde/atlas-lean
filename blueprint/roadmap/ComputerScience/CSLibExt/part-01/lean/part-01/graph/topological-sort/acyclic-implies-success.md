@@ -15,7 +15,7 @@ sorting of $G$ returns success with some vertex order.
 ## Depends on
 
 - [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
-- [Is Acyclic](is-acyclic.md)
+- [Acyclic directed graph](is-acyclic.md)
 - [Outcome of Kahn's topological sort](result.md)
 - [Kahn's topological sort](sort.md)
 

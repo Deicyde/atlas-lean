@@ -321,11 +321,13 @@ theorem boundary_rect_one_div_outside {a b T : ℝ} (ha : 0 < a) (hab : a ≤ b)
 end Complex
 
 
-/-- An axis-parallel rectangle, recorded by a pair of opposite corners.
+/-- **Rectilinear rectangle.** A rectilinear rectangle is an axis-parallel rectangle in the complex
+plane, recorded by an ordered pair of complex numbers $z$ and $w$, its first and second corner,
+which are opposite corners of the rectangle.
 
-The order of the corners determines the orientation of the displayed
-boundary integral.  Degenerate rectangles are retained: their boundary
-integral is zero and allowing them makes finite-chain operations cleaner. -/
+Degenerate rectangles, in which $z$ and $w$ have the same real part or the same imaginary part, are
+allowed. The corners and their order determine the orientation of the boundary integral over the
+rectangle, and the boundary integral over a degenerate rectangle is zero. -/
 structure RectilinearRectangle where
   first : ℂ
   second : ℂ
@@ -671,9 +673,12 @@ theorem boundaryIntegral_ofBounds_inv_sub_eq_two_pi_mul_I
 
 end RectilinearRectangle
 
-/-- A finite oriented rectilinear cycle, represented as an integer formal sum
-of displayed oriented rectangle boundaries. Negative coefficients reverse
-orientation. -/
+/-- **Rectilinear cycle.** A rectilinear cycle is a finitely supported function from rectilinear
+rectangles to $\mathbb{Z}$, that is, a finite formal sum $\sum_r n_r\, r$ of rectilinear
+rectangles $r$ with integer coefficients $n_r$, read as the corresponding integer combination of
+oriented rectangle boundaries.
+
+A negative coefficient reverses the orientation of the corresponding boundary. -/
 abbrev RectilinearCycle := RectilinearRectangle →₀ ℤ
 
 namespace RectilinearCycle

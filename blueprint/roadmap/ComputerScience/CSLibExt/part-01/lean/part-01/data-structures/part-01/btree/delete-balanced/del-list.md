@@ -50,7 +50,7 @@ descent that ends at a node with no keys) the lists are returned unchanged.
 
 - [Borrowing a key from the left sibling](borrow-left.md)
 - [Borrowing a key from the right sibling](borrow-right.md)
-- [Key Count](key-count.md)
+- [Number of keys at the root of a B-tree](key-count.md)
 - [Rightmost key of a B-tree](max-key.md)
 - [Merging two B-tree nodes around a separator](merge.md)
 - [Leftmost key of a B-tree](min-key.md)

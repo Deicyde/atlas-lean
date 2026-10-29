@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.companionKJacobsthal_two
 ---
 
-# Companion KJacobsthal two
+# The second companion $k$-Jacobsthal number
 
-`𝒥_{k,2} = bk + 2a`, as listed in the paper.
+**The second companion $k$-Jacobsthal number.** For every natural number $k$ and all integers
+$a, b$, the companion $k$-Jacobsthal numbers satisfy $\mathcal{J}_{k,2}(a, b) = bk + 2a$.
 
 ## Depends on
 

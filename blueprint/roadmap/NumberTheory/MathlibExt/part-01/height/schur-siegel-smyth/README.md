@@ -7,7 +7,7 @@ navigation: module
 - [Conjugates](conjugates.md)
 - [Degree of a complex number](degree.md)
 - [Trace as the sum of conjugates](trace.md)
-- [Absolute Trace](absolute-trace.md)
+- [Absolute trace](absolute-trace.md)
 - [Totally positive algebraic integers](is-totally-positive.md)
 - [The trace of a totally positive algebraic integer has positive real part](trace-pos-re.md)
 - [The trace of a totally positive algebraic integer is real](trace-im-eq-zero.md)

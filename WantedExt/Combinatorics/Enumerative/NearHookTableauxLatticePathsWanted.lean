@@ -82,9 +82,15 @@ theorem north_south_mem_firstQuadrantPaths_zero :
   refine ⟨rfl, by simp, fun k => ?_, by simp⟩
   rcases k with _ | _ | k <;> simp
 
-/-- The bijection `ψ` of equation (eq:psi): for `1 ≤ i ≤ 2n + 2` the `i`-th step is `E` if `i + 2`
-lies in the arm, `N` if it lies in the leg, and otherwise (`i + 2` in the heart) `S` if `2` lies in
-the arm and `W` if it lies in the leg. List index `k` is `i - 1`.
+/-- **The map $\psi$ from near-hook tableaux to lattice paths.** Let $n \in \mathbb{N}$ and let
+$T$ be a semistandard Young tableau of shape $\theta^{(n)}$, with rows and columns numbered from
+$0$; call row $0$ of $\theta^{(n)}$ the arm and column $0$ the leg. Then $\psi(T)$ is the word
+$(s_1, \dots, s_{2n+2})$ of steps in $\mathbb{Z}^2$ in which $s_i$ is $E = (1, 0)$ if $i + 2$ is an
+entry of $T$ in the arm; otherwise $s_i$ is $N = (0, 1)$ if $i + 2$ is an entry of $T$ in the leg;
+otherwise $s_i$ is $S = (0, -1)$ if $2$ is an entry of $T$ in the arm, and $W = (-1, 0)$ if not.
+
+For a standard Young tableau, the last two cases are those where $i + 2$ is the entry of the
+heart, the cell in row $1$ and column $1$, and $2$ is then an entry of the arm or of the leg.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (eq:psi). -/
@@ -104,11 +110,18 @@ theorem length_nearHookTableauToPathPsi (n : ℕ) (T : SemistandardYoungTableau 
     (nearHookTableauToPathPsi n T).length = 2 * n + 2 := by
   simp [nearHookTableauToPathPsi]
 
-/-- The map `ξ` of equation (eq:xi), with `H` the heart entry: for `1 ≤ i ≤ 2n + 2`, if
-`i + 2 < H` the step is `E` or `N` as `i + 1` lies in the arm or the leg; if `i + 2 = H` it is `S`
-or `W` as `i + 1` lies in the arm or the leg; if `i + 2 > H` it is `E` or `N` as `i + 2` lies in the
-arm or the leg. For a standard tableau the inspected value is never the heart, so "not in the arm"
-is "in the leg". List index `k` is `i - 1`.
+/-- **The map $\xi$ from near-hook tableaux to lattice paths.** Let $n \in \mathbb{N}$ and let
+$T$ be a semistandard Young tableau of shape $\theta^{(n)}$, with rows and columns numbered from
+$0$; call row $0$ of $\theta^{(n)}$ the arm and the cell in row $1$ and column $1$ the heart, and
+let $H$ be the entry of $T$ in the heart. Then $\xi(T)$ is the word $(s_1, \dots, s_{2n+2})$ of
+steps in $\mathbb{Z}^2$ given as follows, where $E = (1, 0)$, $N = (0, 1)$, $S = (0, -1)$ and
+$W = (-1, 0)$. If $i + 2 < H$, then $s_i$ is $E$ if $i + 1$ is an entry of $T$ in the arm and
+$N$ otherwise. If $i + 2 = H$, then $s_i$ is $S$ if $i + 1$ is an entry of $T$ in the arm and
+$W$ otherwise. If $i + 2 > H$, then $s_i$ is $E$ if $i + 2$ is an entry of $T$ in the arm and
+$N$ otherwise.
+
+For a standard Young tableau the inspected value is never $1$ or $H$, so it lies in exactly one
+of the arm and the leg, column $0$; "otherwise" then means that it lies in the leg.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (eq:xi). -/
@@ -128,7 +141,11 @@ theorem length_nearHookTableauToPathXi (n : ℕ) (T : SemistandardYoungTableau (
     (nearHookTableauToPathXi n T).length = 2 * n + 2 := by
   simp [nearHookTableauToPathXi]
 
-/-- `ψ` is a bijection from the standard Young tableaux of shape `θ^(n)` onto `𝒫_n`.
+/-- **The map $\psi$ is a bijection from near-hook tableaux to first-quadrant paths.** For every
+$n \in \mathbb{N}$, the map $\psi$ restricts to a bijection from the standard Young tableaux of
+shape $\theta^{(n)}$ onto the set $\mathcal{P}_n$ of first-quadrant paths. Here a standard Young
+tableau of shape $\theta^{(n)}$ is a semistandard Young tableau of that shape whose entries map
+the $2n + 4$ cells of $\theta^{(n)}$ bijectively onto $\{1, \dots, 2n + 4\}$.
 
 Source: Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi
 Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young
@@ -140,7 +157,11 @@ public theorem_wanted bijOn_nearHookTableauToPathPsi (n : ℕ) :
         (Set.Icc 1 (2 * n + 4))}
       (firstQuadrantPaths n)
 
-/-- `ξ` is a bijection from the standard Young tableaux of shape `θ^(n)` onto `𝒫_n`.
+/-- **The map $\xi$ is a bijection from near-hook tableaux to first-quadrant paths.** For every
+$n \in \mathbb{N}$, the map $\xi$ restricts to a bijection from the standard Young tableaux of
+shape $\theta^{(n)}$ onto the set $\mathcal{P}_n$ of first-quadrant paths. Here a standard Young
+tableau of shape $\theta^{(n)}$ is a semistandard Young tableau of that shape whose entries map
+the $2n + 4$ cells of $\theta^{(n)}$ bijectively onto $\{1, \dots, 2n + 4\}$.
 
 Source: Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi
 Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young

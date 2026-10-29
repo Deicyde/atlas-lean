@@ -16,7 +16,7 @@ navigation: module
 
 - [Deterministic machines recognize NTM acceptance](single-tape-recognizable-accepts.md)
 - [Deterministic machines recognize NTM acceptance along a computable map](single-tape-recognizable-accepts-comp.md)
-- [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
+- [Predicates recognizable by a single-tape nondeterministic machine](single-tape-ntmrecognizable.md)
 - [A predicate recognized by a single-tape NTM is recognized by a deterministic single-tape machine](single-tape-recognizable.md)
 - [No single-tape NTM recognizes $n = 0$](not-single-tape-ntmrecognizable-eq-zero.md)
 - [A decidable predicate that no single-tape NTM recognizes](exists-single-tape-decidable-not-single.md)

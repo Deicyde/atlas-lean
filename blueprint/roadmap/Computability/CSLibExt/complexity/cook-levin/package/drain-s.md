@@ -19,7 +19,7 @@ empties $k_i$. For $i \ge m$ it sets the state to store the flag bit false and h
 
 ## Proof depends on
 
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

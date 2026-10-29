@@ -20,12 +20,12 @@ length of $Y$.
 - [Strip points](in-strip.md)
 - [Same-side points far apart](same-side-far.md)
 - [Side-tagged points](tagged.md)
-- [Strip Scan](../closest-pair/strip-scan.md)
+- [Closest-pair strip scan](../closest-pair/strip-scan.md)
 
 ## Proof depends on
 
 - [Packing bound for the strip](length-le-seven.md)
-- [Scan From](../closest-pair/scan-from.md)
+- [Strip scan from a point](../closest-pair/scan-from.md)
 - [Cost of the scan from one strip point](scan-from-time.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 

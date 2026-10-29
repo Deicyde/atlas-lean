@@ -5,12 +5,12 @@ navigation: module
 
 # Newton Polygon
 
-- [Exponent To Real](exponent-to-real.md)
-- [Newton Support](newton-support.md)
-- [Newton Polygon](newton-polygon.md)
-- [Newton Polygon Interior](newton-polygon-interior.md)
-- [Newton Polygon Boundary](newton-polygon-boundary.md)
-- [Edge Restriction](edge-restriction.md)
+- [Exponent vectors as points of the plane](exponent-to-real.md)
+- [Newton support](newton-support.md)
+- [Newton polygon](newton-polygon.md)
+- [Interior of the Newton polygon](newton-polygon-interior.md)
+- [Boundary of the Newton polygon](newton-polygon-boundary.md)
+- [Restriction of a polynomial to a set of exponents](edge-restriction.md)
 - [Membership in the Newton support](mem-newton-support.md)
 - [The Newton support of the zero polynomial is empty](newton-support-zero.md)
 - [The Newton polygon of the zero polynomial is empty](newton-polygon-zero.md)

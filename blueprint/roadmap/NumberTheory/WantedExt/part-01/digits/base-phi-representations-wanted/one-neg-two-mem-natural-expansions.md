@@ -15,7 +15,7 @@ It is the Bergman expansion of $2$.
 
 ## Depends on
 
-- [Natural Expansions](natural-expansions.md)
+- [Natural base phi expansions](natural-expansions.md)
 
 ## Proof depends on
 
@@ -24,7 +24,7 @@ It is the Bergman expansion of $2$.
 - [Value of a base phi expansion](base-phi-value.md)
 - [The base phi expansion $10.01$ has value two](base-phi-value-one-neg-two.md)
 - [The expansion 10.01 is a Bergman expansion](is-bergman-expansion-one-neg-two.md)
-- [Knott Expansions](knott-expansions.md)
+- [Knott expansions](knott-expansions.md)
 
 ## Sources
 

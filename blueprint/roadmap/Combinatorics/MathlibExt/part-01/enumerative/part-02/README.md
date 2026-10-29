@@ -8,7 +8,7 @@ navigation: transparent
 - [Catalan Harmonic Generating Function](catalan-harmonic-generating-function/README.md)
 - [Catalan–Larcombe–French numbers](catalan-larcombe-french-number.md)
 - [Parity of Catalan numbers](catalan-odd-iff.md)
-- [Catalan Perfect Power](catalan-not-perfect-power.md)
+- [Catalan numbers other than $1$ are not perfect powers](catalan-not-perfect-power.md)
 - [Central binomial–harmonic generating function](has-sum-central-binomial-harmonic.md)
 - [Central trinomial coefficients as Legendre values](central-trinomial-coeff-eq-legendre-spec.md)
 - [Three-term recurrence for central trinomial coefficients](central-trinomial-coeff-three-term-recur.md)

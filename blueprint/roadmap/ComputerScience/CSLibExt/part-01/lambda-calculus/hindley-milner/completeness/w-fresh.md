@@ -37,7 +37,7 @@ $n'$.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Generalization of a monotype](../typing/gen.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Composition of substitutions on first-order terms](../../../../part-02/unification/basic/comp.md)
 - [Terms for unification](../../../../part-02/unification/basic/term.md)
 - [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
 - [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)

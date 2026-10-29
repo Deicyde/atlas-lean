@@ -18,7 +18,7 @@ almost dominating polynomial of $C_m$ with $n + 1$ rows and last-row state $\sig
 ## Depends on
 
 - [Signatures of a row graph](domination-signature.md)
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 - [Domination signature](is-domination-signature.md)
 - [Almost dominating polynomial](almost-dominating-polynomial.md)
 - [Domination polynomial](domination-polynomial.md)

@@ -18,12 +18,12 @@ $R_1 \cap R_2 \to R_1$ or $R_1 \cap R_2 \to R_2$.
 
 - [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
 - [Functional dependency](../functional-dependencies/fd.md)
-- [Lossless Join](lossless-join.md)
+- [Lossless decomposition into two schemes](lossless-join.md)
 
 ## Proof depends on
 
 - [Armstrong's axioms are sound](../functional-dependencies/sound.md)
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [A relation satisfies a set of dependencies](../functional-dependencies/satisfies.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)

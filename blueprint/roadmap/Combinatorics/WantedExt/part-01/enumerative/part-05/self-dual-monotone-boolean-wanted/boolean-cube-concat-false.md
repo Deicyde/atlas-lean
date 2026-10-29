@@ -15,7 +15,7 @@ input when $W$ is nonempty, and the value false when $W$ is empty.
 
 ## Depends on
 
-- [Concatenation of Boolean functions](boolean-cube-concat.md)
+- [Concatenation of a list of Boolean functions](boolean-cube-concat.md)
 
 ## Sources
 

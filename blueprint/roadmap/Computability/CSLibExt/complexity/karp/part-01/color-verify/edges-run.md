@@ -40,7 +40,7 @@ for $cs$, and the rejecting label otherwise.
 - [The joint walk of the 3-COLOR verifier decides one edge](walk-run.md)
 - [Edge-list decoder](../color/decode-es.md)
 - [Decoding the empty input](../color/decode-es-nil.md)
-- [Decoding fails on a cut-off first number](../color/decode-es-of-none.md)
+- [The edge-list decoder fails on a cut-off first number](../color/decode-es-of-none.md)
 - [Decoding fails on a dangling half-pair](../color/decode-es-of-some-none.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

@@ -19,7 +19,7 @@ Allocation may choose a different fresh address on the larger heap.
 - [Heap configurations](hconfig.md)
 - [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [Heap commands](heap-cmd.md)
 - [IMP program states](../syntax/state.md)
 
@@ -28,7 +28,7 @@ Allocation may choose a different fresh address on the larger heap.
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Every heap has a free address](../heap/exists-not-mem.md)
 
 ## Sources

@@ -7,9 +7,10 @@ proof: formalized
 lean: padicHilbertSymbol.eq_one_or_neg_one
 ---
 
-# Eq one or neg one
+# The $p$-adic Hilbert symbol is $\pm 1$
 
-The `p`-adic Hilbert symbol takes only the values one and negative one.
+**The $p$-adic Hilbert symbol is $\pm 1$.** For a prime $p$ and all nonzero
+$a, b \in \mathbb{Q}_p$, the $p$-adic Hilbert symbol $(a, b)_p$ equals $1$ or $-1$.
 
 ## Depends on
 

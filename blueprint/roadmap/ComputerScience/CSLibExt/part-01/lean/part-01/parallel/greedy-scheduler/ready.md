@@ -13,7 +13,7 @@ runs in a step later than $t$ and every predecessor of $v$ runs in a step earlie
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 
 ## Sources
 

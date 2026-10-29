@@ -15,4 +15,4 @@ navigation: module
 - [The denominator of the Herbrand quotient is positive](herbrand-quotient-den-pos.md)
 - [The denominator of the Herbrand quotient is nonzero](herbrand-quotient-den-ne-zero.md)
 - [Positivity of the Herbrand quotient](herbrand-quotient-pos.md)
-- [Herbrand Quotient congr](herbrand-quotient-congr.md)
+- [Herbrand quotients agree when Tate cohomology in degrees $0$ and $-1$ is in bijection](herbrand-quotient-congr.md)

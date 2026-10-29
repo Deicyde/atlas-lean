@@ -23,7 +23,7 @@ language that $\alpha'$ denotes when each nonterminal $m$ is read as $L_G(m)$.
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
-- [Shift Sym](shift-sym.md)
+- [Shifting a symbol into the regularity grammar](shift-sym.md)
 - [Alphabet letters in the extended alphabet](tl.md)
 - [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

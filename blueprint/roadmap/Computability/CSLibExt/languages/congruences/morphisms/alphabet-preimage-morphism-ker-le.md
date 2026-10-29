@@ -19,7 +19,7 @@ contained in the syntactic congruence of the alphabet preimage.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)

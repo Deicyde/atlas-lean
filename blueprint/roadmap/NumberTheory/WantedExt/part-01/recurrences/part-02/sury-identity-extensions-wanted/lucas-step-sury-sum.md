@@ -16,7 +16,7 @@ $$2 \left(\frac{L_j}{2}\right)^{n+1} \frac{F_{jn}}{F_j} + 2 (-1)^{jn} =
 
 ## Depends on
 
-- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Fibonacci numbers extended to negative indices](fib-at-int.md)
 - [Lucas numbers at integer indices](lucas-at-int.md)
 
 ## Sources

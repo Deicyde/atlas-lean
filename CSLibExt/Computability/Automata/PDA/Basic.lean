@@ -142,9 +142,9 @@ def FinitelySupported (M : PDA T σ Γ) : Prop :=
     ∀ q ∈ σ₀, ∀ {a : T}, a ∉ T₀ → ∀ {γ : Γ}, γ ∈ Γ₀ →
       M.step q (some a) γ = ∅
 
-/-- **Initial configuration.** The initial configuration of a pushdown automaton $M$ on an input
-word $w$ has the start state of $M$ as its state, all of $w$ as its remaining input, and the
-stack consisting of the initial stack symbol of $M$ alone. -/
+/-- **Initial configuration of a pushdown automaton.** The initial configuration of a pushdown
+automaton $M$ on an input word $w$ has the start state of $M$ as its state, all of $w$ as its
+remaining input, and the stack consisting of the initial stack symbol of $M$ alone. -/
 def initConfig (M : PDA T σ Γ) (w : List T) : Config T σ Γ :=
   ⟨M.start, w, [M.startStack]⟩
 

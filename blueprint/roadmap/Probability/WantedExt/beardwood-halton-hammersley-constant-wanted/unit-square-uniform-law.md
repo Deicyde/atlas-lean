@@ -13,7 +13,7 @@ closed unit square $[0,1]^2$.
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Proof depends on
 

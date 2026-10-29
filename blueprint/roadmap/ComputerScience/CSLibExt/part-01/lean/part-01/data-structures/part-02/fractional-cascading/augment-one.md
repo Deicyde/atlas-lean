@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Sample of a catalog](sample.md)
-- [Sorted Merge](sorted-merge.md)
+- [Sorted merge of two catalogs](sorted-merge.md)
 
 ## Sources
 

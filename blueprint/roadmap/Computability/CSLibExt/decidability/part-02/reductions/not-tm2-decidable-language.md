@@ -20,7 +20,7 @@ multi-stack Turing machine.
 
 ## Proof depends on
 
-- [Rice's theorem](not-tm2-decidable-of-nontrivial.md)
+- [Rice's theorem for partial recursive codes](not-tm2-decidable-of-nontrivial.md)
 
 ## Sources
 

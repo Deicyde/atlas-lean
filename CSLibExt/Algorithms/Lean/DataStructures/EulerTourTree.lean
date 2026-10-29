@@ -117,7 +117,11 @@ is computed in linear time rather than by repeatedly appending child lists. -/
 def verticesAux : Tree V → List V → List V
   | .node r cs, acc => r :: cs.foldr (fun c acc => verticesAux c acc) acc
 
-/-- The vertices of a tree in preorder. -/
+/-- **Preorder vertex list of a rooted tree.** The preorder vertex list of a rooted ordered tree
+$t$ is the accumulator preorder traversal of $t$ started from the empty list.
+
+Equivalently, it is the root of $t$ followed by the preorder vertex lists of its child subtrees
+in order; repeated vertex labels appear with multiplicity. -/
 def vertices (t : Tree V) : List V :=
   verticesAux t []
 

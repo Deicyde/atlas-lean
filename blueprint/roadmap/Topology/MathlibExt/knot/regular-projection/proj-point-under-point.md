@@ -16,7 +16,7 @@ at $p$ is $p$.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Regular projections](is-regular-projection.md)
 - [Double points of a link projection](double-point-set.md)
 - [Projected point of a link at a parameter point](proj-point.md)

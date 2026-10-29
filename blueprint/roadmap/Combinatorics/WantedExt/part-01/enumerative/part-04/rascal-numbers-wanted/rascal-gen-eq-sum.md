@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGen_eq_sum
 ---
 
-# Theorem 19
+# Generalized Rascal numbers as sums of products of binomial coefficients
 
-**Theorem 19**: `R^{(j)}_{n,k} = ∑_{i=0}^j \binom{k}{i}
-\binom{n-k}{i}` for `k ≤ n` (the printed summation binder is
-`r` with summand in `i`; without `k ≤ n` the sum is `1` while
-`R^{(j)}_{n,k} = 0`).
+**Generalized Rascal numbers as sums of products of binomial coefficients.** For all natural
+numbers $j$, $n$ and $k$ with $k \le n$, the generalized Rascal number $R^{(j)}_{n,k}$, the
+number of binary words of length $n$ with exactly $k$ ones and at most $j$ ascents (positions
+where a $0$ is immediately followed by a $1$), equals
+$\sum_{i=0}^{j} \binom{k}{i} \binom{n-k}{i}$.
+
+The hypothesis $k \le n$ is needed: for $k > n$ the left side is $0$, while the right side,
+with $n - k$ read as $0$, is $1$.
 
 ## Depends on
 

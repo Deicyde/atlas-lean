@@ -36,7 +36,7 @@ $$
 - [Upper bound for primes where a Möbius-weighted floor sum is at least 1](u9-ple1.md)
 - [Upper bound for primes where a Möbius-weighted floor sum is at least 2](u9-ple2.md)
 - [Upper bound for primes where a Möbius-weighted floor sum is at least 3](u9-ple3.md)
-- [U9 to Nat le3](u9-to-nat-le3.md)
+- [The truncated continuous Breusch function is at most 3](u9-to-nat-le3.md)
 - [Single-term valuation identity for large primes](nu9-eq-single.md)
 
 ## Sources

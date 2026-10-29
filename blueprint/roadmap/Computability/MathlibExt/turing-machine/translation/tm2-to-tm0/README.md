@@ -4,7 +4,7 @@ navigation: module
 
 # TM2 To TM0
 
-- [Single-tape emulation of a multi-stack machine](tr.md)
+- [Two-step single-tape translation of a multi-stack machine](tr.md)
 - [The emulation halts iff the multi-stack machine halts](tr-eval-dom.md)
 - [The emulation visits finitely many states](tr-supports.md)
 - [Every statement is supported by all labels](supports-stmt-univ.md)

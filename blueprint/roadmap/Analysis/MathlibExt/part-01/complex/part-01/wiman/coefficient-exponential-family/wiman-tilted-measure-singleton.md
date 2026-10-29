@@ -25,7 +25,7 @@ $t/0 = 0$).
 
 - [Wiman coefficient measure](wiman-coefficient-measure.md)
 - [Point masses of the Wiman coefficient measure](wiman-coefficient-measure-singleton.md)
-- [Wiman Majorant nonneg](../radial-majorant/wiman-majorant-nonneg.md)
+- [The radial majorant is nonnegative](../radial-majorant/wiman-majorant-nonneg.md)
 - [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 - [Moment generating function of the coefficient measure](wiman-mgf-eq-majorant.md)
 

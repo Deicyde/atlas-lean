@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ped Nine Nine Series](ped-nine-nine-series.md)
+- [The generating series for $\mathrm{ped}_{9,9}$](ped-nine-nine-series.md)
 
 ## Sources
 

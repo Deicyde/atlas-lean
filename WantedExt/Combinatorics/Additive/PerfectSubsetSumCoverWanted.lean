@@ -214,13 +214,16 @@ public theorem_wanted count_zmod_two_pow_prod_recurrence :
       (count (ZMod (2 ^ m) × ZMod (2 ^ n)) : ℚ) =
         2 ^ ((m - 1) * n) * 2 ^ (m * (m - 1) / 2) * p.eval (m : ℚ)
 
-/-- One large factor: `b_{m,n} = C((ℤ₂)^m ⊕ ℤ_{2^n})` has
-`b_{m,0} · m! = (2^m - 1)(2^m - 2) ⋯ (2^m - 2^{m-1})`; with
-`B_{m,k} = 2^m (2^m - 1)(2^m - 2) ⋯ (2^m - 2^{k-1}) / (k+1)!` it satisfies
-`b_{m,n} = 2^{m+n-1} b_{m,n-1} + ∑_{k=1}^{m} B_{m,k} 2^{k(m-k)} 2^{(k+1)(n-1)} b_{m-k,n-1}` for
-`m, n > 0`; and for each `m` there is a rational polynomial `q` of degree `m` with
-`b_{m,n} = 2^{m(n-1)} 2^{n(n-1)/2} q(n)` for all `n ≥ 0` (the first power is an integer
-power, `2^{-m}` at `n = 0`).
+/-- **Perfect covers of $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$.** Write $C(K)$ for the number
+of perfect covers of a group $K$, and for natural numbers $m$ and $n$ let
+$b_{m,n} = C((\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n})$. Then:
+for every $m \ge 0$, $C((\mathbb{Z}_2)^m) \cdot m! = \prod_{i=0}^{m-1} (2^m - 2^i)$;
+for all $m, n \ge 1$, writing $B_{m,k} = 2^m \prod_{i=0}^{k-1} (2^m - 2^i) / (k+1)!$ for
+$1 \le k \le m$, we have $b_{m,n} = 2^{m+n-1} b_{m,n-1} +
+\sum_{k=1}^{m} B_{m,k} \, 2^{k(m-k)} \, 2^{(k+1)(n-1)} \, b_{m-k,n-1}$;
+and for every $m \ge 0$ there is a polynomial $q$ of degree $m$ with rational coefficients such
+that $b_{m,n} = 2^{m(n-1)} \, 2^{n(n-1)/2} \, q(n)$ for all $n \ge 0$, where the power
+$2^{m(n-1)}$ has an integer exponent (it is $2^{-m}$ at $n = 0$).
 
 Source: John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power
 of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 4
@@ -376,8 +379,10 @@ public theorem_wanted oddMultiple_iff_perfectCover_replace {G : Type*} [AddCommG
     (a ≠ b → ((∃ j : ℤ, b = (2 * j + 1) • a) ↔
       ∀ S : Finset G, IsPerfectCover S → ¬ (a ∈ S ∧ b ∈ S)))
 
-/-- If `(a, s_2, …)` is a perfect `2^k`-cover and `b` is an odd multiple of `a`, then
-`(b, s_2, …)` is also a perfect `2^k`-cover.
+/-- **Replacing an entry of a perfect $2^k$-cover by an odd multiple.** Let $G$ be an abelian
+group, let $k$ and $N$ be natural numbers, and let $a, b, s_1, \dots, s_N \in G$. If the family
+$(a, s_1, \dots, s_N)$ is a perfect $2^k$-cover of $G$ and $b = (2j + 1)a$ for some integer $j$,
+then the family $(b, s_1, \dots, s_N)$ is also a perfect $2^k$-cover of $G$.
 
 Source: John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power
 of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 11
@@ -546,10 +551,14 @@ public theorem_wanted card_perfectCover_one_odd {H : Type*} [AddCommGroup H] [De
         (S.filter fun x => Odd x.2.val).card = 1} =
       2 ^ m * 2 ^ (n - 1) * count (H × ZMod (2 ^ (n - 1)))
 
-/-- Let `s = (s_1, …, s_{m+n})`, `s_i = (x_i, y_i)`, be a perfect cover of
-`(ℤ₂)^m ⊕ ℤ_{2^n}` with `y_1, …, y_{k+1}` odd and the other `y_i` even. Then
-`U = span{x_1 + x_2, …, x_1 + x_{k+1}}` and `V = span{x_{k+2}, …, x_{m+n}}` in `(ℤ₂)^m` have
-`dim U = k`, `dim V = m - k` and `U ∩ V = 0`.
+/-- **Spans of the odd and even entries of a perfect cover.** Let $m$, $n$ and $k$ be natural
+numbers with $k + 1 \le m + n$, and let $s = (s_1, \dots, s_{m+n})$, $s_i = (x_i, y_i)$, be a
+family in $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$ that is a perfect $1$-cover: every element of
+the group is the sum of the $s_i$ over exactly one set of indices. Suppose that $y_i$, read as an
+integer in $\{0, \dots, 2^n - 1\}$, is odd exactly when $i \le k + 1$. Let $U$ be the
+$\mathbb{Z}_2$-span of $x_1 + x_2, \dots, x_1 + x_{k+1}$ and $V$ the $\mathbb{Z}_2$-span of
+$x_{k+2}, \dots, x_{m+n}$ in $(\mathbb{Z}_2)^m$. Then $\dim U = k$, $\dim V = m - k$,
+$U \cap V = 0$ and $U + V = (\mathbb{Z}_2)^m$.
 
 Source: John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power
 of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 23

@@ -15,7 +15,7 @@ alphabet at position $k$ when $w_i = u_{k+i}$ for every $i < n$.
 ## Depends on
 
 - [Infinite words](inf-word.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.Plane
 ---
 
-# Plane
+# Euclidean plane for the equichordal point problem
 
-The Euclidean plane.
+**Euclidean plane for the equichordal point problem.** The Euclidean plane is the space
+$\mathbb{R}^2$ of pairs of real numbers with the Euclidean inner product and norm.
 
 ## Depends on
 

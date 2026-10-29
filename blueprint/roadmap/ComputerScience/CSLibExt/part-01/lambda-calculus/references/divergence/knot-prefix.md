@@ -27,7 +27,7 @@ that term with store $[b_0]$ steps to $(!\ell_0)\,\mathrm{unit}$ with store $[b_
 - [The identity on Unit](id-u.md)
 - [Landin's knot](knot.md)
 - [Cycle term of Landin's knot](loop-a.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 

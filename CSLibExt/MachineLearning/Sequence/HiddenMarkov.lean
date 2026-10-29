@@ -190,11 +190,11 @@ theorem pathProb_nonneg (hn : h.Nonneg) : ∀ (t : ℕ) (z : Fin (t + 1) → S),
   | 0, _ => mul_nonneg (hn.init _) (hn.emit _ _)
   | t + 1, _ => mul_nonneg (mul_nonneg (pathProb_nonneg hn t _) (hn.trans _ _)) (hn.emit _ _)
 
-/-- **Path weights are bounded by the Viterbi variables.** Let $h$ be a hidden Markov model with a
-finite nonempty set of states $S$ and initial weights $\pi$, transition weights $a$ and emission
-weights $b$ that are nonnegative elements of a linearly ordered commutative semiring, and let
-$x_0, x_1, \dots$ be observations. Let $\delta$ be the Viterbi variables,
-$\delta_0(s) = \pi(s)\, b(s, x_0)$ and
+/-- **Path weights of a hidden Markov model are bounded by the Viterbi variables.** Let $h$ be a
+hidden Markov model with a finite nonempty set of states $S$ and initial weights $\pi$, transition
+weights $a$ and emission weights $b$ that are nonnegative elements of a linearly ordered
+commutative semiring, and let $x_0, x_1, \dots$ be observations. Let $\delta$ be the Viterbi
+variables, $\delta_0(s) = \pi(s)\, b(s, x_0)$ and
 $\delta_{t+1}(s) = \bigl(\max_{s' \in S} \delta_t(s')\, a(s', s)\bigr)\, b(s, x_{t+1})$. For every
 $t \in \mathbb{N}$ and every state path $z = (z_0, \dots, z_t) \in S^{t+1}$, the joint weight of
 $z$ and $x_0, \dots, x_t$ is at most $\delta_t(z_t)$. -/
@@ -384,13 +384,15 @@ theorem bestPath_last : ∀ (t : ℕ) (s : Fin n), bestPath x h t s (Fin.last t)
   | t + 1, s => by simp [bestPath]
 
 omit [IsOrderedRing R] in
-/-- **The backtracked path attains the Viterbi variable.** Let $h$ be a hidden Markov model with
-states $0, \dots, n - 1$, where $n \ge 1$, initial weights $\pi$, transition weights $a$ and
-emission weights $b$ in a commutative semiring with a linear order, and let $x_0, x_1, \dots$ be
-observations. Let $\delta$ be the Viterbi variables, $\delta_0(s) = \pi(s)\, b(s, x_0)$ and
+/-- **The backtracked path of a hidden Markov model attains the Viterbi variable.** Let $h$ be a
+hidden Markov model with states $0, \dots, n - 1$, where $n \ge 1$, initial weights $\pi$,
+transition weights $a$ and emission weights $b$ in a commutative semiring with a linear order, and
+let $x_0, x_1, \dots$ be observations. Let $\delta$ be the Viterbi variables,
+$\delta_0(s) = \pi(s)\, b(s, x_0)$ and
 $\delta_{t+1}(s) = \bigl(\max_{s'} \delta_t(s')\, a(s', s)\bigr)\, b(s, x_{t+1})$. For every
-$t \in \mathbb{N}$ and every state $s$, the joint weight of $x_0, \dots, x_t$ and the best path of
-length $t + 1$ ending in $s$, obtained by following the backpointers, equals $\delta_t(s)$. -/
+$t \in \mathbb{N}$ and every state $s$, the joint weight of $x_0, \dots, x_t$ and the backtracked
+path of length $t + 1$ ending in $s$, obtained by following the backpointers, equals
+$\delta_t(s)$. -/
 theorem pathProb_bestPath : ∀ (t : ℕ) (s : Fin n),
     pathProb h x t (bestPath x h t s) = viterbi h x t s
   | 0, s => by simp [bestPath, pathProb, viterbi]

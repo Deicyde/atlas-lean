@@ -13,7 +13,7 @@ correction $F_y(e)$ of Lemma 9, taken at $y = 0$, is $0$.
 
 ## Depends on
 
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 
 ## Proof depends on
 

@@ -18,7 +18,7 @@ vertex the second one does not.
 
 - [Gadgets with distinct vertices](gadgets-disjoint.md)
 - [Perfect matchings of a sequence of arrivals](is-perfect.md)
-- [Online Matcher](online-matcher.md)
+- [Deterministic online bipartite matching algorithm](online-matcher.md)
 - [The adversary for online bipartite matching](adversary.md)
 - [The adversary's offline matching](adversary-opt.md)
 

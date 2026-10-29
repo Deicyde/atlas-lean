@@ -26,7 +26,7 @@ $[2]$, the symbol of the answer true.
 ## Proof depends on
 
 - [Symbol of an input bit](../code/bit-sym.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Sources
 

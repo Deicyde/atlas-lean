@@ -5,12 +5,11 @@ statement: formalized
 lean: SimpleGraph.IsLocalIsomorphism
 ---
 
-# Is Local Isomorphism
+# Local isomorphism
 
-A homomorphism f from X to Y is a *local isomorphism* if for each vertex y of Y, the induced
-mapping from the set of neighbours of a vertex in f⁻¹(y) to the neighbours of y is bijective. We
-call f a covering map if it is a surjective local isomorphism, in which case we say that X *covers*
-Y.
+**Local isomorphism.** A homomorphism $f$ from a finite graph $X$ to a finite graph $Y$ is a
+*local isomorphism* if for every vertex $x$ of $X$, $f$ maps the set of neighbours of $x$
+bijectively onto the set of neighbours of $f(x)$.
 
 ## Depends on
 

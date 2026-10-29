@@ -15,7 +15,7 @@ elements, counted with multiplicity, has rank at most $\lfloor \log_2 n \rfloor$
 ## Depends on
 
 - [Binomial heap](binomial-heap.md)
-- [Elements](elements-3.md)
+- [Elements of a binomial heap](elements-3.md)
 - [Binomial tree](binomial-tree.md)
 - [Rank of a binomial tree](rank.md)
 

@@ -453,9 +453,22 @@ public theorem_wanted weighted_free_sum_reflexive (p w : List ℕ)
     (hwRef : IsReflexive (weightedSimplexList w)) :
     IsReflexive (weightedSimplexList (p ++ w.map (fun a => (1 + p.sum) * a)))
 
-/-- Theorem 2's second sentence: if the second polytope is IDP reflexive and
-the first is IDP, their affine free sum at the distinguished negative vertex
-is IDP.  Lattice points in the product are represented by pairs of integer vectors.
+/-- **Affine free sums of IDP weighted simplices at the negative weight vertex of a reflexive
+summand are IDP.** Let $q = (q_1, \dots, q_n)$ and $p = (p_1, \dots, p_m)$ be tuples of natural
+numbers, let $\Delta_{(1,q)} \subseteq \mathbb{R}^n$ and $\Delta_{(1,p)} \subseteq \mathbb{R}^m$
+be the weighted projective space simplices of $q$ and $p$, and let $v_0 = -\sum_{i=1}^m p_i e_i$
+be the negative weight vertex of $\Delta_{(1,p)}$, where $e_1, \dots, e_m$ is the standard basis
+of $\mathbb{R}^m$. Let
+$\Delta_{(1,q)} \ast_{v_0} \Delta_{(1,p)} \subseteq \mathbb{R}^n \times \mathbb{R}^m$ be the
+affine free sum, the convex hull of
+$(\Delta_{(1,q)} \times \{0\}) \cup (\{0\} \times (\Delta_{(1,p)} - v_0))$. If $\Delta_{(1,p)}$ is
+reflexive and has the integer decomposition property and $\Delta_{(1,q)}$ has the integer
+decomposition property, then $\Delta_{(1,q)} \ast_{v_0} \Delta_{(1,p)}$ has the integer
+decomposition property.
+
+Lattice points of $\mathbb{R}^n \times \mathbb{R}^m$ are the points of
+$\mathbb{Z}^n \times \mathbb{Z}^m$.
+
 Source: Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer
 Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article
 A60, Theorem 2. -/
@@ -840,12 +853,20 @@ public theorem_wanted higher_reflexive_stabilizations_not_idp (q : List ℕ)
     (hne : q ≠ []) (hq : ∀ a ∈ q, 2 ≤ a) (m : ℕ) (hm : 2 ≤ m) :
     ¬HasIDP (weightedSimplexList (reflexiveStabilizationAt q m))
 
-/-- Theorem 11: eventually the stabilized simplex is not `h*`-unimodal and
-every coefficient of its explicit (hence, by Theorem 5, Ehrhart) `h*` formula
-is `1` or `2`.  `∀ᶠ m in atTop` formalizes “for sufficiently large `m`”.
-The hypothesis `lcm(q) ≥ 3` is the journal version's (the arXiv version omits it, and then
-`q = [2]` is a counterexample: its stabilizations have `h*`-vector `(1,…,1,2,1,…,1)`, which is
-unimodal).
+/-- **Large reflexive stabilizations of weights at least $2$ with lcm at least $3$ are not
+$h^\ast$-unimodal.** Let $q = (q_1, \dots, q_n)$ be a list of natural numbers with $q_i \ge 2$
+for every $i$ and $\operatorname{lcm}(q) \ge 3$. For $m \in \mathbb{N}$ let
+$\operatorname{rs}(q, m)$ be the $m$th reflexive stabilization of $q$, let
+$\Delta_{(1,\operatorname{rs}(q,m))}$ be its weighted projective space simplex, and let
+$h_m \in \mathbb{Z}[z]$ be the $h^\ast$ formula of $\operatorname{rs}(q, m)$. Then for all
+sufficiently large $m$, the simplex $\Delta_{(1,\operatorname{rs}(q,m))}$ is not
+$h^\ast$-unimodal, and the coefficient of $z^k$ in $h_m$ is $1$ or $2$ for every $k$ with
+$0 \le k \le \deg h_m$.
+
+The hypothesis $\operatorname{lcm}(q) \ge 3$ is the journal version's. The arXiv version omits
+it, and then $q = (2)$ is a counterexample: its stabilizations have $h^\ast$-vector
+$(1, \dots, 1, 2, 1, \dots, 1)$, which is unimodal.
+
 Source: Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer
 Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article
 A60, Theorem 11. -/

@@ -14,7 +14,7 @@ subtrees $L$ and $R$ gives the multiset sum of the leaf weights of $L$ and those
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Sources
 

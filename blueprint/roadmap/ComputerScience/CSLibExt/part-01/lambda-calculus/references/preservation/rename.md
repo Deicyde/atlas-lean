@@ -23,7 +23,7 @@ variables by $\rho$ has type $T$ under $\Delta$ and $S$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](../syntax/lift-ren.md)
 
 ## Sources
 

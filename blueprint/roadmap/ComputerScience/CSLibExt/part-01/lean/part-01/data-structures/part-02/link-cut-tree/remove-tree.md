@@ -18,7 +18,7 @@ has $x$ among its vertices and keeps the remaining trees in their original order
 
 ## Proof depends on
 
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 
 ## Sources
 

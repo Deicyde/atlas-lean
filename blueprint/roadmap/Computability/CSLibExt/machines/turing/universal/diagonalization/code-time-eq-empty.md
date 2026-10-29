@@ -23,7 +23,7 @@ holds no answer bit.
 
 - [Codes for single-tape machines](../code/code.md)
 - [Explicit configurations](../code/cfg.md)
-- [Output](../code/output.md)
+- [Output of a configuration](../code/output.md)
 - [Deciding within a time bound](decides-within.md)
 - [Clocked configuration of a code](../code/cfg-after.md)
 - [The clocked evaluator](../code/eval-steps.md)

@@ -21,7 +21,7 @@ $|l| + 1$ steps.
 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [The unary mover of the Hamiltonian path verifier](skip-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)

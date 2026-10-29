@@ -27,10 +27,10 @@ navigation: module
 ## Total correctness
 
 - [Total-correctness Hoare logic](tderivable.md)
-- [Sound](sound-2.md)
-- [Strengthen](strengthen-2.md)
+- [Soundness of total-correctness Hoare logic](sound-2.md)
+- [Precondition strengthening for total correctness](strengthen-2.md)
 - [The weakest-precondition triple is derivable in total-correctness Hoare logic](tderivable-wp.md)
-- [Complete](complete-2.md)
+- [Total-correctness Hoare logic is relatively complete](complete-2.md)
 - [Total-correctness derivations give partial-correctness derivations](derivable-2.md)
 - [Soundness and relative completeness of total-correctness Hoare logic](tderivable-iff-tvalid.md)
 - [Total-correctness Hoare logic is sound and complete for the denotational semantics](tderivable-iff-denote.md)
@@ -39,5 +39,5 @@ navigation: module
 
 - [Hoare triples](triple.md)
 - [Total-correctness tag for Hoare triples](total-correctness.md)
-- [Derivable iff valid](derivable-iff-valid-2.md)
+- [Derivability in the default inference system on Hoare triples is validity](derivable-iff-valid-2.md)
 - [Total-correctness Hoare logic as an inference system](derivable-in-total-correctness-iff-tvali.md)

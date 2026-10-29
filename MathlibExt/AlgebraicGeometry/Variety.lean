@@ -55,9 +55,10 @@ namespace AlgebraicGeometry
 
 variable (k : Type u) [Field k]
 
-/-- **Variety over a field.** Let $k$ be a field. A scheme $X$ with a chosen structure morphism
-$X \to \operatorname{Spec} k$ is a *variety* over $k$ if this morphism is separated, of finite
-type (quasi-compact and locally of finite type), and geometrically reduced. -/
+/-- **Geometrically reduced variety over a field.** Let $k$ be a field. A scheme $X$ with a
+chosen structure morphism $X \to \operatorname{Spec} k$ is a *variety* over $k$ if this morphism
+is separated, of finite type (quasi-compact and locally of finite type), and geometrically
+reduced. -/
 class IsVariety (X : Scheme.{u}) [X.Over (Spec (CommRingCat.of k))] : Prop where
   /-- The structure morphism `X ⟶ Spec k` is separated. -/
   isSeparated : IsSeparated (X ↘ Spec (CommRingCat.of k))

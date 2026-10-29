@@ -24,10 +24,10 @@ $j$, then $s$ is conflict-serializable.
 - [Directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
 - [Edge of a directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
 - [Directed cycle within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in.md)
-- [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
+- [Acyclic directed graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
 - [Characterization of directed cycles within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in-iff.md)
 - [Read or write access](access.md)
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 - [The serializability theorem](conflict-serializable-iff-is-acyclic.md)
 - [Precedence graph](precedence-graph.md)
 

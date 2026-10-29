@@ -22,7 +22,7 @@ that for every position $k$, the word $w$ occurs in $u$ at position $k + j$ for 
 
 - [Factors of an infinite word](is-factor.md)
 - [Occurrence of a word at a position](occurs-at.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

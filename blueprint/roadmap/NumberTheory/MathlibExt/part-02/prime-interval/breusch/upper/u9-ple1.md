@@ -21,7 +21,7 @@ $p \le 18900n/279$.
 
 ## Proof depends on
 
-- [G9r level1](g9r-level1.md)
+- [Level-$1$ threshold for the continuous Breusch function](g9r-level1.md)
 - [A level bound turns into a bound on the prime](u9-ple-of-g.md)
 - [Primes up to $1890n$ have $n/p \ge 1/1890$](u9-xlo.md)
 

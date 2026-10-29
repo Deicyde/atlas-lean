@@ -23,7 +23,7 @@ article_id: af_63aa421def40b4e8edafc126
 - [Clique](part-01/clique/README.md)
 - [Connectivity](part-01/connectivity/README.md)
 - [Contraction](part-01/contraction/README.md)
-- [Coxeter Graph](part-01/coxeter-graph.md)
+- [Coxeter graph](part-01/coxeter-graph.md)
 - [Cycle Cover](part-01/cycle-cover/README.md)
 - [Degeneracy](part-01/degeneracy/README.md)
 
@@ -32,7 +32,7 @@ article_id: af_63aa421def40b4e8edafc126
 - [Degeneracy Coloring](part-02/degeneracy-coloring/README.md)
 - [Deza](part-02/deza/README.md)
 - [Dichromatic](part-02/dichromatic/README.md)
-- [Dirac](part-02/dirac.md)
+- [Dirac's theorem](part-02/dirac.md)
 - [Domination](part-02/domination/README.md)
 - [Edge Coloring](part-02/edge-coloring/README.md)
 - [Edge Graceful](part-02/edge-graceful/README.md)

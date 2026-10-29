@@ -18,14 +18,14 @@ returned by looking up $x$ in $N$ and $w$.
 - [Formula check against a witness](check-cnf.md)
 - [Witness lookup](lookup-var.md)
 - [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Proof depends on
 
 - [Clause check against a witness](check-clause.md)
 - [Correctness of the witness clause check](check-clause-ret.md)
 - [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

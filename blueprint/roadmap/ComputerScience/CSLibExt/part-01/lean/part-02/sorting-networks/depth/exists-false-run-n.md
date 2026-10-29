@@ -18,7 +18,7 @@ The smaller value moves to the first wire of each comparator.
 ## Depends on
 
 - [Comparators within an interval](../bitonic/within.md)
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 
 ## Proof depends on
 

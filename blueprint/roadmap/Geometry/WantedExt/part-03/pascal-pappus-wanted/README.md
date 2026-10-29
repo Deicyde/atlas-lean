@@ -8,4 +8,4 @@ navigation: module
 - [Points on a conic](on-conic.md)
 - [Meet of two lines](meet.md)
 - [Collinear projective points](collinear3.md)
-- [Pascal's theorem](pascal.md)
+- [Pascal's theorem for real projective conics](pascal.md)

@@ -6,13 +6,14 @@ statement: formalized
 lean: CurveDivisor.divZeros
 ---
 
-# Div Zeros
+# Zero part of a divisor
 
-The effective zero part of a divisor.
+**Zero part of a divisor.** For a divisor $D$ on a set of points $C$, the zero part $D^+$ of
+$D$ is the divisor on $C$ whose coefficient at each point $P \in C$ is $\max(D(P), 0)$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 
 ## Sources
 

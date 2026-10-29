@@ -10,4 +10,4 @@ navigation: module
 - [Thompson's group F](thompson-f.md)
 - [Cleary's golden-ratio Thompson group](cleary-ftau.md)
 - [Golden-ratio Thompson embedding conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Cleary's golden-ratio group does not embed in Thompson's group F](conjecture-refuted.md)

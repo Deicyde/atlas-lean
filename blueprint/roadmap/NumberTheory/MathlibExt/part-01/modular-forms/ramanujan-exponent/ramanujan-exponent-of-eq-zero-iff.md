@@ -20,7 +20,7 @@ Ramanujan conclusion, that is, every local exponent of $F$ is $0$.
 
 ## Proof depends on
 
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 - [Local exponents are bounded by the Ramanujan exponent](exponent-le-ramanujan-exponent-of.md)
 - [Admissible exponents bound the Ramanujan exponent](ramanujan-exponent-of-le-of-is-admissibl.md)
 

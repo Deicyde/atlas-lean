@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_companionKJacobsthal
 ---
 
-# Two mul companion KJacobsthal
+# Companion $k$-Jacobsthal numbers via Lucas sequences
 
-`𝒥_{k,n} = (a/2) j_{k,n} + ((2b - ak)/2) J_{k,n}`, stated after clearing the denominator 2.
+**Companion $k$-Jacobsthal numbers via Lucas sequences.** For a natural number $k$ and
+integers $a, b$, let $\mathcal{J}_{k,n}(a, b)$ be the companion $k$-Jacobsthal numbers, and let
+$J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and $k$-Jacobsthal–Lucas
+numbers, the Lucas sequences $U$ and $V$ with parameters $(P, Q) = (k, -2)$. Then for every
+natural number $n$, $2\,\mathcal{J}_{k,n}(a, b) = a\,j_{k,n} + (2b - ak)\,J_{k,n}$.
+
+The source states this as $\mathcal{J}_{k,n} = \tfrac{a}{2} j_{k,n} + \tfrac{2b - ak}{2} J_{k,n}$.
 
 ## Depends on
 

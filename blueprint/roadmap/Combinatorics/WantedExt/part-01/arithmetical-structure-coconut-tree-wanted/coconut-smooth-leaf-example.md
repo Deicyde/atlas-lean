@@ -16,7 +16,7 @@ and $r' = (2, 4, 6 \mid 3, 3, 2)$ on $CT(3, 3)$.
 
 ## Depends on
 
-- [Coconut Smooth Leaf](coconut-smooth-leaf.md)
+- [Smoothing at a leaf of a coconut tree](coconut-smooth-leaf.md)
 - [Smoothing at a path vertex of a coconut tree](coconut-smooth-path.md)
 
 ## Sources

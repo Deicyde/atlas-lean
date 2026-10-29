@@ -16,7 +16,7 @@ emulation.
 
 ## Depends on
 
-- [Single-tape emulation of a multi-stack machine](tr.md)
+- [Two-step single-tape translation of a multi-stack machine](tr.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ $f$, the convex hull of the Newton support in $\mathbb{R}^2$.
 
 ## Depends on
 
-- [Newton Polygon](newton-polygon.md)
-- [Newton Support](newton-support.md)
+- [Newton polygon](newton-polygon.md)
+- [Newton support](newton-support.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ from $s$ to $t$ using edges of the list.
 ## Proof depends on
 
 - [Edges of the weight-forgetting graph](edge-to-directed-adjacency-iff.md)
-- [Is Weighted Path walk](is-weighted-path-walk.md)
+- [Weighted paths give walks of the same length](is-weighted-path-walk.md)
 - [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
 - [Walks of a given length](../../../directed-adjacency-2/walk.md)
 - [Reachability by walks](../../../directed-adjacency-2/reachable-iff-exists-walk.md)

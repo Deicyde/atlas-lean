@@ -15,7 +15,7 @@ otherwise.
 
 ## Depends on
 
-- [Distinct Even Parts Count](distinct-even-parts-count.md)
+- [Partitions whose even parts are distinct](distinct-even-parts-count.md)
 
 ## Sources
 

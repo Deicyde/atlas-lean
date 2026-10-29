@@ -20,7 +20,7 @@ $\varphi$ if and only if $\varphi$ is satisfiable.
 ## Proof depends on
 
 - [Correctness of DPLL with sufficient fuel](decide-with-fuel-eq-true-iff.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ substitution unifies $E$.
 
 ## Proof depends on
 
-- [Composition of substitutions](comp.md)
+- [Composition of substitutions on first-order terms](comp.md)
 - [Unifier of a list of equations](unifies.md)
 
 ## Sources

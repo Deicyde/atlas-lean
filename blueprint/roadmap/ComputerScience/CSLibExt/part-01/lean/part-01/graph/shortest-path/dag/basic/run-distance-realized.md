@@ -27,8 +27,8 @@ whose edge weights sum to $d$.
 
 ## Proof depends on
 
-- [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
-- [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
+- [Appending an edge to a weighted path](../../bellman-ford/basic/is-weighted-path-append-edge.md)
+- [Weight of a path with an edge appended](../../bellman-ford/basic/path-weight-append-edge.md)
 
 ## Sources
 

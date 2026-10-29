@@ -17,7 +17,7 @@ navigation: module
 - [Two-phase commit invariant](inv.md)
 - [Multistep transitions preserve the two-phase commit invariant](inv-mtr.md)
 - [The two-phase commit invariant holds in reachable states](inv-reachable.md)
-- [Atomicity](atomicity.md)
+- [Atomicity between participants](atomicity.md)
 - [Validity for the coordinator](coord-committed-imp-all-voted-yes.md)
 - [Validity for participants](committed-imp-all-voted-yes.md)
 - [An aborted participant rules out a coordinator commit](aborted-imp-not-committed.md)

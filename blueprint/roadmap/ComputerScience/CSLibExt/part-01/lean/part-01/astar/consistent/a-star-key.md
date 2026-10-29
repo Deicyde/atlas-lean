@@ -29,7 +29,7 @@ down by $h(s)$.
 
 ## Proof depends on
 
-- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced weights telescope along paths](path-weight-reduced-weight.md)
 - [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
 - [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 - [Dijkstra's finite distances are realized by walks](../../graph/shortest-path/dijkstra/dijkstra-distance-realized.md)

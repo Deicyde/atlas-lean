@@ -20,4 +20,4 @@ navigation: module
 - [No large solutions of the central binomial product equation with a dominant central factor](central-binom-add-ne-of-large-a.md)
 - [Central binomial products with $x = 1$](central-binom-add-eq-central-binom-mul-c-3.md)
 - [No large solutions of the central binomial product equation with shift at least two](central-binom-add-ne-of-two-le-of-large.md)
-- [Central Binom add ne of two le of small](central-binom-add-ne-of-two-le-of-small.md)
+- [Central binomial products with $x \ge 2$ and $a + b < 150$](central-binom-add-ne-of-two-le-of-small.md)

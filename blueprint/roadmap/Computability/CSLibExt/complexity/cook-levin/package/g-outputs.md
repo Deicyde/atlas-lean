@@ -35,7 +35,7 @@ within $p(|s|)$ steps.
 - [A bounded halting run certifies the output](outputs-of-run-le.md)
 - [Stacks of the full machine](../precompute/fk.md)
 - [Polynomial functions on the naturals](../precompute/is-poly.md)
-- [Horn T](../precompute/horn-t-2.md)
+- [The Horner step count is polynomial](../precompute/horn-t-2.md)
 - [The precomputed time bound](../precompute/tof.md)
 - [Step budget of the counter program](../precompute/c-b.md)
 - [Coefficient list of a polynomial](../precompute/coeffs.md)

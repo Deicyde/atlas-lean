@@ -16,7 +16,7 @@ vertices $a$ and $b$ are adjacent in $t'$ if and only if they are adjacent in $t
 ## Depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Adjacency in a rooted tree](adjacent.md)
 - [Rerooting a tree at a vertex](reroot-at.md)
 

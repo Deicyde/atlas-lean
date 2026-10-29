@@ -150,11 +150,11 @@ inductive PS
   | cb1 | cb2 | cbA | k1 | cbM (s : MS)
   deriving DecidableEq, Fintype
 
-/-- **Stages of the literal routine.** The stages of the accept generator's routine emitting a
-clause's literal are $\mathrm{cp1}$, $\mathrm{cp2}$, $\mathrm{eo}$, $\mathrm{dec}$,
-$\mathrm{cmp}$, $r(o)$ and $r_B(o)$ for each ordering $o \in \{<, =, >\}$, $\mathrm{emL}$,
-$\mathrm{bad}$, $\mathrm{slot}$ and $\mathrm{dq}$. They form a finite type with decidable
-equality. -/
+/-- **Stages of the accept generator's literal routine.** The stages of the accept generator's
+routine emitting a clause's literal are $\mathrm{cp1}$, $\mathrm{cp2}$, $\mathrm{eo}$,
+$\mathrm{dec}$, $\mathrm{cmp}$, $r(o)$ and $r_B(o)$ for each ordering $o \in \{<, =, >\}$,
+$\mathrm{emL}$, $\mathrm{bad}$, $\mathrm{slot}$ and $\mathrm{dq}$. They form a finite type with
+decidable equality. -/
 inductive LS
   | cp1 | cp2 | eo | dec | cmp | r (o : Ordering) | rB (o : Ordering) | emL | bad | slot | dq
   deriving DecidableEq, Fintype
@@ -387,7 +387,17 @@ theorem encodeClause_unit {V p : ℕ} {b : Bool} (h : p < V) :
   simp only [gapEnc, Nat.sub_zero, List.append_assoc]
   rw [show V - (p + 1) = V - p - 1 by omega]
 
-/-- One whole clause: from `e00 c` to `nextC c`, all counters restored. -/
+/-- **One clause of the accept generator.** Let $L$ be a layout with $g$ symbol codes, let
+$n_1, a, k_1, e, V \in \mathbb{N}$, and let $c$ be a clause kind of the accept generator (a code
+clause $u < n_1$ or a cell clause $x < g$) with base counter $b(c)$, offset $\mathrm{off}(c)$ and
+polarity $\sigma(c)$ for $a$ and $e$. Let $F$ be counter values of the generator whose scratch
+counters $\mathsf{Q}$, $\mathsf{tmp}$, $\mathsf{md}$, $\mathsf{c1}$, $\mathsf{c2}$ are $0$, with
+$F(\mathsf{Vc}) = V$, $F(\mathsf{P}) = 0$ and $p = F(b(c)) + \mathrm{off}(c) < V$. Then for every
+output word $o$ and every Boolean state $v$, the accept generator for $L$, $n_1$, $a$, $k_1$, $e$
+runs in at most $V(3V + 6) + 10V + 13$ steps from the label $\mathrm{e00}(c)$, with state $v$,
+counters $F$ and output $o$, to the label after clause $c$, with state false, the same counters
+$F$, and output the encoding of the dense clause over $V$ variables whose only literal is the
+variable $p$ with polarity $\sigma(c)$, followed by $o$. -/
 theorem clause_run {V : ℕ} (c : AK n1 L.g) (F : CK → ℕ) (hF : Rest F) (hV : F .Vc = V)
     (hP : F .P = 0) (hlt : F c.bc + c.off < V) (o : List Bool) (v : Bool) :
     RunLe (prog L n1 ac k1 ea) (clauseB V) ⟨some (.e00 c), v, st F o⟩

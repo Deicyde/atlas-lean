@@ -6,4 +6,4 @@ navigation: module
 # Generalized Bi Periodic Fibonacci Zero Indices
 
 - [Zero indices of a generalized bi-periodic Fibonacci sequence with $c = d$](generalized-biperiodic-fibonacci-zero-in.md)
-- [Generalized biperiodic fibonacci zero indices](generalized-biperiodic-fibonacci-zero-in-2.md)
+- [Belbachir–Salhi theorem on zero indices of generalized bi-periodic Fibonacci sequences](generalized-biperiodic-fibonacci-zero-in-2.md)

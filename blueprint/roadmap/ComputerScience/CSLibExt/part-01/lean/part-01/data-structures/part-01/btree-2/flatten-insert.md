@@ -39,7 +39,7 @@ minimum degree $t$ equals the sorted insertion of $x$ into the inorder flattenin
 - [Insertion into a B-tree leaf](ins-leaf.md)
 - [Rebuilding an internal node after insertion](mk-node.md)
 - [Splitting a B-tree node](split-node.md)
-- [Ordered Insert eq of mem](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
+- [Inserting a present element into a strictly increasing list](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

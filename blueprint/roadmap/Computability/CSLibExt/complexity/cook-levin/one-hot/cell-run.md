@@ -51,7 +51,7 @@ base $B$ over $V$ variables followed by $o$.
 - [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
 - [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 - [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources

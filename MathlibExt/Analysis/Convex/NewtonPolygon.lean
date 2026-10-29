@@ -28,30 +28,45 @@ namespace NewtonPolygon
 
 variable {k : Type*} [CommSemiring k]
 
-/-- Coerce a bivariate exponent to a real point. -/
+/-- **Exponent vectors as points of the plane.** The map from exponent vectors of monomials in two
+variables to $\mathbb{R}^2$ sends $e = (e_0, e_1) \in \mathbb{N}^2$ to the point
+$(e_0, e_1) \in \mathbb{R}^2$. -/
 def exponentToReal (e : Fin 2 →₀ Nat) : Fin 2 → Real :=
   fun i => (e i : Real)
 
-/-- Newton support: exponents of `f` viewed as real points. -/
+/-- **Newton support.** Let $f$ be a polynomial in two variables $x_0, x_1$ over a commutative
+semiring $k$. The Newton support of $f$ is the set of exponent vectors $(e_0, e_1) \in \mathbb{N}^2$
+of the monomials $x_0^{e_0} x_1^{e_1}$ with nonzero coefficient in $f$, viewed as points of
+$\mathbb{R}^2$. -/
 def newtonSupport (f : MvPolynomial (Fin 2) k) : Set (Fin 2 → Real) :=
   exponentToReal '' (↑f.support : Set (Fin 2 →₀ Nat))
 
-/-- Newton polygon: convex hull of the Newton support. -/
+/-- **Newton polygon.** Let $f$ be a polynomial in two variables over a commutative semiring $k$.
+The Newton polygon of $f$ is the convex hull in $\mathbb{R}^2$ of the Newton support of $f$, the
+set of exponent vectors of the monomials with nonzero coefficient in $f$, viewed as points of
+$\mathbb{R}^2$. -/
 def newtonPolygon (f : MvPolynomial (Fin 2) k) : Set (Fin 2 → Real) :=
   convexHull ℝ (newtonSupport f)
 
-/-- Interior of the Newton polygon. -/
+/-- **Interior of the Newton polygon.** For a polynomial $f$ in two variables over a commutative
+semiring $k$, the interior of the Newton polygon of $f$ is its topological interior as a subset
+of $\mathbb{R}^2$. -/
 def newtonPolygonInterior (f : MvPolynomial (Fin 2) k) :
     Set (Fin 2 → Real) :=
   interior (newtonPolygon f)
 
-/-- Boundary of the Newton polygon, via the frontier. -/
+/-- **Boundary of the Newton polygon.** For a polynomial $f$ in two variables over a commutative
+semiring $k$, the boundary of the Newton polygon of $f$ is its topological boundary in
+$\mathbb{R}^2$: the closure of the Newton polygon minus its interior. -/
 def newtonPolygonBoundary (f : MvPolynomial (Fin 2) k) :
     Set (Fin 2 → Real) :=
   frontier (newtonPolygon f)
 
 open Classical in
-/-- Restriction of `f` to monomials whose exponents lie in `gamma`. -/
+/-- **Restriction of a polynomial to a set of exponents.** Let $f$ be a polynomial in two variables
+over a commutative semiring $k$, and let $\Gamma \subseteq \mathbb{R}^2$. The restriction of $f$ to
+$\Gamma$ is the polynomial formed by the terms of $f$ whose exponent vector, viewed as a point of
+$\mathbb{R}^2$, lies in $\Gamma$; the other terms are dropped. -/
 def edgeRestriction (f : MvPolynomial (Fin 2) k)
     (gamma : Set (Fin 2 → Real)) : MvPolynomial (Fin 2) k :=
   f.support.sum fun e =>

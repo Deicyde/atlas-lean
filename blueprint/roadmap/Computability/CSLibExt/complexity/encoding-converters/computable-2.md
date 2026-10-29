@@ -5,10 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.DecodeBits.computable
 ---
 
-# Computable
+# Polynomial-time decoder of the canonical bit-list encoding
 
-The identity from the canonical encoding of a bit list to its raw bits, in at most `n + 2`
-steps for an input of length `n`.
+**Polynomial-time decoder of the canonical bit-list encoding.** This is a multi-stack Turing
+machine whose input and output alphabets are the bits, together with the polynomial time bound
+$t(n) = n + 2$, such that for every bit list $x$, whose canonical bitstring encoding has length
+$n$, the machine started with that encoding on its input stack and all other stacks empty halts
+within $t(n)$ steps with $x$ on its output stack, all other stacks empty and its internal state
+back to the initial one. So the identity on bit lists is computable in polynomial time from the
+canonical encoding to the raw bits.
+
+The canonical encoding writes each bit $b$ of $x$ as the three bits true, $b$, false.
 
 ## Depends on
 
@@ -26,9 +33,9 @@ steps for an input of length `n`.
 - [Labels of the bit-list converters](blab.md)
 - [Stacks of the bit-list converters](bstk.md)
 - [Converter encoding of the second component](../pair-encoding-converter/enc-snd.md)
-- [Run](run-2.md)
-- [Prog](prog-2.md)
-- [Tm](tm-2.md)
+- [Runs of the bit-list decoder](run-2.md)
+- [Program of the bit-list decoder](prog-2.md)
+- [Machine decoding the canonical encoding of a bit list](tm-2.md)
 - [Stack contents of the bit-list converters](bstk-2.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 - [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)

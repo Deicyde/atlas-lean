@@ -5,9 +5,9 @@ statement: formalized
 lean: MetaMathlibExt.boolFunConcat
 ---
 
-# Concatenation of Boolean functions
+# Concatenation of two Boolean functions
 
-**Concatenation of Boolean functions.** The concatenation $g \,\|\, h$ of two $n$-variable
+**Concatenation of two Boolean functions.** The concatenation $g \,\|\, h$ of two $n$-variable
 Boolean functions $g$ and $h$ is the $(n+1)$-variable function whose truth table is that of $g$
 followed by that of $h$: its value at $(x_1, x_2, \dots, x_{n+1})$ is $g(x_2, \dots, x_{n+1})$ if
 $x_1 = 0$ and $h(x_2, \dots, x_{n+1})$ if $x_1 = 1$. Equivalently,

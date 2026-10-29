@@ -17,12 +17,12 @@ coordinate of $x_0$: it has total degree $1$ and multiplicity $1$ at $x_0$.
 
 ## Depends on
 
-- [Affine Point](affine-point.md)
+- [Points of the complex affine plane](affine-point.md)
 - [Seshadri constant of ten affine points](affine-seshadri-constant.md)
 
 ## Proof depends on
 
-- [Plane Polynomial](plane-polynomial.md)
+- [Polynomials in two complex variables](plane-polynomial.md)
 - [Total degree of a monomial](monomial-degree.md)
 - [Multiplicity of a plane polynomial at a point](multiplicity.md)
 - [The first-coordinate line through a point has multiplicity one there](multiplicity-x-sub-c.md)

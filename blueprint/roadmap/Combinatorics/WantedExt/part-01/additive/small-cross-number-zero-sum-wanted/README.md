@@ -6,7 +6,7 @@ navigation: module
 
 - [Zero-sum subsequences of cross number at most one (Geroldinger; Elledge–Hurlbert)](exists-zero-sum-cross-number-le-one.md)
 - [Lemke–Kleitman theorem](exists-zero-sum-cross-number-le-one-2.md)
-- [Good sequences](is-good-sequence.md)
+- [Good sequences in a finite abelian group](is-good-sequence.md)
 - [Probability that a random sequence is good](good-sequence-prob.md)
 - [Good-sequence probability at length zero](good-sequence-prob-zero.md)
 - [Half-good threshold](half-good-threshold.md)
@@ -16,7 +16,7 @@ navigation: module
 - [Lagarias–Saks pebbling step](pebbling-step.md)
 - [Solvable pebbling configurations](pebbling-solvable.md)
 - [Configurations covering every vertex are solvable](pebbling-solvable-of-forall-pos.md)
-- [Solvable Configuration Prob](solvable-configuration-prob.md)
+- [Probability that a random pebbling configuration is solvable](solvable-configuration-prob.md)
 - [The solvability probability is at most one](solvable-configuration-prob-le-one.md)
 - [Grid graph](grid-graph.md)
 - [Grid edge costs](grid-cost.md)

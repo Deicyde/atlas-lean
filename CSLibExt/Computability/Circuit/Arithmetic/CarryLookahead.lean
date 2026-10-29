@@ -854,10 +854,11 @@ is $0$ if $i = 0$ and $2i + 1$ if $i \ge 1$. It is used as the depth of the carr
 of the ripple-carry adder, where the carry into bit $0$ is the carry-in input. -/
 def carryDepth (i : ℕ) : ℕ := if i = 0 then 0 else 2 * i + 1
 
-/-- **Gate depths of the ripple-carry adder.** Let $c(i)$ be the carry depth of bit $i$: $c(0) = 0$
-and $c(i) = 2i + 1$ for $i \ge 1$. Gate $j$ of the ripple-carry adder is assigned the depth $1$
-when $j \bmod 5$ is $0$ or $2$, the depth $\max(1, c(\lfloor j/5 \rfloor)) + 1$ when $j \bmod 5$
-is $1$ or $3$, and the depth $c(\lfloor j/5 \rfloor + 1)$ when $j \bmod 5 = 4$. -/
+/-- **Gate-depth formula for the ripple-carry adder.** Let $c(i)$ be the carry depth of bit $i$:
+$c(0) = 0$ and $c(i) = 2i + 1$ for $i \ge 1$. The formula assigns to gate $j$ of the ripple-carry
+adder, for every $j \in \mathbb{N}$, the depth $1$ when $j \bmod 5$ is $0$ or $2$, the depth
+$\max(1, c(\lfloor j/5 \rfloor)) + 1$ when $j \bmod 5$ is $1$ or $3$, and the depth
+$c(\lfloor j/5 \rfloor + 1)$ when $j \bmod 5 = 4$. -/
 def gateDepth (j : ℕ) : ℕ :=
   if j % 5 = 0 ∨ j % 5 = 2 then 1
   else if j % 5 = 1 ∨ j % 5 = 3 then max 1 (carryDepth (j / 5)) + 1

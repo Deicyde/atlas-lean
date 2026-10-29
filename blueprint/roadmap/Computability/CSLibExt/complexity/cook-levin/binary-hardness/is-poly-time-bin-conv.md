@@ -28,8 +28,8 @@ bitstring encoding of bit lists.
 
 ## Proof depends on
 
-- [Computable](../../encoding-converters/computable-2.md)
-- [Computable](../../encoding-converters/computable-3.md)
+- [Polynomial-time decoder of the canonical bit-list encoding](../../encoding-converters/computable-2.md)
+- [Polynomial-time encoder to the canonical bit-list encoding](../../encoding-converters/computable-3.md)
 - [The dense-to-binary translation on raw bits is polynomial-time](../../dense-to-binary-converter/computable.md)
 - [Polynomial-time TM2-computable functions are closed under composition](../../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 

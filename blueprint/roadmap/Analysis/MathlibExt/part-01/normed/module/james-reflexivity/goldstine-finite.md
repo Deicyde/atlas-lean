@@ -7,9 +7,13 @@ proof: formalized
 lean: NormedSpace.goldstine_finite
 ---
 
-# Goldstine finite
+# Finite-coordinate Goldstine theorem
 
-A finite-coordinate form of Goldstine's theorem for the real bidual unit ball.
+**Finite-coordinate Goldstine theorem.** Let $X$ be a real normed space, write $X^*$ for
+its dual space of continuous linear functionals and $X^{**}$ for the dual of $X^*$, and let
+$T \in X^{**}$ with $\|T\| \le 1$. Then for every finite set $s \subseteq X^*$ and every real
+$\varepsilon > 0$ there is $x \in X$ with $\|x\| \le 1$ such that $|z(x) - T(z)| < \varepsilon$
+for every $z \in s$.
 
 ## Depends on
 

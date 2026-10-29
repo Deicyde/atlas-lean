@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Language.syntacticDFA_accessible
 ---
 
-# Syntactic DFA accessible
+# The syntactic DFA is accessible
 
-Every state of the syntactic DFA is reachable.
+**The syntactic DFA is accessible.** For every language $L$, every state of the syntactic DFA
+of $L$ is reachable: some word leads to it from the start state.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [The syntactic DFA](syntactic-dfa.md)
 
 ## Proof depends on

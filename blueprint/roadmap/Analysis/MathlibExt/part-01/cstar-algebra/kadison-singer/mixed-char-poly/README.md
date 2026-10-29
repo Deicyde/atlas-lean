@@ -12,4 +12,4 @@ navigation: module
 - [The mixed characteristic polynomial is affine in each matrix](mixed-characteristic-polynomial-update-s.md)
 - [The mixed characteristic polynomial along a line](mixed-characteristic-polynomial-update-a.md)
 - [Mixed characteristic polynomials of outer products](mixed-characteristic-polynomial-eq-charp.md)
-- [Mixed Characteristic Polynomial fin one](mixed-characteristic-polynomial-fin-one.md)
+- [Mixed characteristic polynomial of a single $1 \times 1$ matrix](mixed-characteristic-polynomial-fin-one.md)

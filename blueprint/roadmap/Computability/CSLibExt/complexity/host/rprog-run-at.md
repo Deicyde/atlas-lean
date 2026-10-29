@@ -28,7 +28,7 @@ every other stack empty.
 - [Alphabets of the generic host](h.md)
 - [Phase-0 labels of the generic host](p0.md)
 - [Reduction host program](rprog.md)
-- [Rtime](rtime.md)
+- [Step bound of the reduction host](rtime.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

@@ -18,7 +18,7 @@ one-symbol sentential form $S$ yields $w$.
 
 ## Proof depends on
 
-- [Yields iff derives](yields-iff-derives.md)
+- [Yields coincide with derivations of terminal words](yields-iff-derives.md)
 
 ## Sources
 

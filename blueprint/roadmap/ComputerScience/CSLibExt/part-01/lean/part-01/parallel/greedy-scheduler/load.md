@@ -13,7 +13,7 @@ of tasks that $S$ runs in step $t$.
 ## Depends on
 
 - [Computation DAG](../brent/dag.md)
-- [Schedule](../brent/schedule.md)
+- [Schedule of a computation DAG](../brent/schedule.md)
 
 ## Sources
 

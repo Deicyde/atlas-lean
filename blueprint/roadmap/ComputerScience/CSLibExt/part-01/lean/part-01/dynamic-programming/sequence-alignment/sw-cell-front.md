@@ -5,12 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.swCellFront
 ---
 
-# Sw Cell Front
+# Fuel-bounded Smith–Waterman recursion
 
-The Smith–Waterman front score: like `nwScoreAux`, but with the `0` floor of local
-alignment. Front-peeling: the recursion drops heads. Exponential-time specification,
-not a memoized table (see the module cost model). Implementation detail: use
-`swCellScore`, not this worker, which returns `0` on insufficient fuel.
+**Fuel-bounded Smith–Waterman recursion.** Fix a substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $ax$ for
+the sequence with first element $a$ followed by $x$. For a fuel $n \in \mathbb{N}$ and sequences
+$x, y$ over $\alpha$, the value $F_n(x, y) \in \mathbb{Z}$ is defined by $F_0(x, y) = 0$, by
+$F_{n+1}(x, y) = 0$ if $x$ or $y$ is empty, and by
+
+$$F_{n+1}(ax, by) = \max\bigl(0,\ F_n(x, y) + \sigma(a, b),\ F_n(x, by) + g,
+\ F_n(ax, y) + g\bigr).$$
+
+This is an exponential-time specification, not a memoized table.
 
 ## Depends on
 

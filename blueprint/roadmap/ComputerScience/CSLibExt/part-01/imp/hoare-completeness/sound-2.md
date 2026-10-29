@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.IMP.TDerivable.sound
 ---
 
-# Sound
+# Soundness of total-correctness Hoare logic
 
-Soundness: every derivable total-correctness triple is totally valid.
+**Soundness of total-correctness Hoare logic.** For all assertions $P$ and $Q$ and every
+command $c$, if the triple $\{P\}\,c\,\{Q\}$ is derivable in total-correctness Hoare logic, then
+it is valid for total correctness: every state satisfying $P$ has a terminating big-step
+execution of $c$ ending in a state that satisfies $Q$.
 
 ## Depends on
 
@@ -24,7 +27,7 @@ Soundness: every derivable total-correctness triple is totally valid.
 - [Entailment of assertions](../hoare/entails.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [IMP program states](../syntax/state.md)
 - [Variant rule for while loops](../hoare-total/while-variant.md)

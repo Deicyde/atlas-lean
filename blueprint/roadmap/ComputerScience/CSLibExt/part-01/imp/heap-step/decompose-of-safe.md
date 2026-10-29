@@ -20,7 +20,7 @@ Safety supplies the step-existence that single-step decomposition needs at each 
 
 - [Multi-step heap execution](hsteps.md)
 - [Heap](../heap/heap.md)
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 - [Heap commands](heap-cmd.md)
 - [Safe heap configurations](safe.md)
 - [IMP program states](../syntax/state.md)
@@ -30,7 +30,7 @@ Safety supplies the step-existence that single-step decomposition needs at each 
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Heap configurations](hconfig.md)
 - [Small-step semantics of heap commands](hstep.md)
 - [Frame decomposition of a single heap step](decompose-of-safe-step.md)

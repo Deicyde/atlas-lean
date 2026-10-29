@@ -27,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp](comp-4.md)
+- [Submersions are closed under composition](comp-4.md)
 
 ## Sources
 

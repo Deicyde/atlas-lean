@@ -11,8 +11,8 @@ navigation: module
 ## Alloc State
 
 - [Wait-for relation](waits-for.md)
-- [Deadlocked](deadlocked.md)
-- [Circular Wait](circular-wait.md)
+- [Deadlocked set of processes](deadlocked.md)
+- [Circular wait](circular-wait.md)
 - [No process waits for itself directly](not-waits-for-self.md)
 - [A process whose requests are all free waits for no one](not-waits-for-of-free.md)
 - [Circular wait yields a deadlocked set](exists-deadlocked-of-circular-wait.md)

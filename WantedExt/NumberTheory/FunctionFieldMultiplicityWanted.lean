@@ -179,8 +179,11 @@ public noncomputable def omegaMult (F : Type*) [Field F] (k : ℕ) (f : Polynomi
     ((normalizedFactors f).toFinset.filter fun P => (normalizedFactors f).count P = k).card
 
 /--
-The explicit exceptional convention in `omegaMult` gives `ω_k(0) = 0` for every
-multiplicity `k`.
+**$\omega_k$ vanishes at the zero polynomial.** For every field $F$ and every natural number $k$,
+$\omega_k(0) = 0$. Here $\omega_k(f)$ is the number of distinct monic irreducible polynomials
+dividing a nonzero polynomial $f$ over $F$ with multiplicity exactly $k$, and $\omega_k(0) = 0$
+by convention, so this records that convention.
+
 Source: Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in
 h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9,
 Definitions.
@@ -190,8 +193,12 @@ public theorem omegaMult_zero (F : Type*) [Field F] (k : ℕ) :
   simp [omegaMult]
 
 /--
-The unit polynomial has no normalized irreducible factors, so `ω_k(1) = 0` for every
-multiplicity `k`.
+**$\omega_k$ vanishes at the polynomial $1$.** For every field $F$ and every natural number $k$,
+$\omega_k(1) = 0$, where $\omega_k(f)$ is the number of distinct monic irreducible polynomials
+dividing a nonzero polynomial $f$ over $F$ with multiplicity exactly $k$.
+
+The polynomial $1$ is a unit, so it has no monic irreducible factors.
+
 Source: Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in
 h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9,
 Definitions.
@@ -917,7 +924,14 @@ public noncomputable def hFullOmegaHB (F : Type*) [Field F] [Fintype F] [Decidab
       (Fintype.card F : ℂ) ^ ((n - a) / h) * (ascPochhammer ℂ ((n - a) / h)).eval (-z) /
         (((n - a) / h).factorial : ℂ)
 
-/-- `B_z(0) = 1` for `B_{h,N_h}`.
+/-- **Constant coefficient of $B_{h,N_h}$.** Let $F$ be a finite field with $q$ elements, let $h$
+be a natural number and let $z$ be a complex number. Then the coefficient $B_z(0)$ of the
+$h$-full series for $F$, $h$ and $z$ equals $1$. For $h \ge 1$, $B_z(0)$ is the constant
+coefficient of $B_{h,N_h}(u, z) = (1 - qu^h)^z \sum_{f \in N_h} z^{\omega_h(f)} u^{\deg f}$,
+where $N_h$ is the set of $h$-full monic polynomials over $F$ and $\omega_h(f)$ is the number of
+monic irreducible polynomials dividing $f$ with multiplicity exactly $h$.
+
+The only monic polynomial of degree $0$ is $1$, which is $h$-full and has $\omega_h(1) = 0$.
 
 Source: Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in
 h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9,

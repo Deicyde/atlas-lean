@@ -14,7 +14,7 @@ navigation: module
 - [Adding a black to the root](incr-black.md)
 - [Recoloring the root black](root-black.md)
 - [Absorbing a double-black root](blacken.md)
-- [Min Key](min-key.md)
+- [Leftmost key of a red-black tree](min-key.md)
 - [Left repair after double-black deletion](fix-left.md)
 - [Right repair after double-black deletion](fix-right.md)
 - [Rebalancing after deletion from the left subtree](bal-left.md)

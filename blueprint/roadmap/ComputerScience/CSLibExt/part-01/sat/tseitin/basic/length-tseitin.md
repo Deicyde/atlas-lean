@@ -16,7 +16,7 @@ connectives of $A$: three defining clauses per connective plus the unit clause a
 ## Depends on
 
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Connective Count](connective-count.md)
+- [Connective count of a propositional formula](connective-count.md)
 - [Tseitin CNF](tseitin.md)
 
 ## Proof depends on

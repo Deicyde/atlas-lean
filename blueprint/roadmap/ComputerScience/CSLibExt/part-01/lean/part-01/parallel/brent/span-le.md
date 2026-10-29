@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.span_le
 ## Depends on
 
 - [Computation DAG](dag.md)
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 - [Length of a schedule](length.md)
 - [Span of a computation DAG](span.md)
 

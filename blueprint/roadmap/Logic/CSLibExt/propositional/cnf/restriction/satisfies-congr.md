@@ -15,13 +15,13 @@ occurring in $F$. If $v_1$ satisfies $F$, then $v_2$ satisfies $F$.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Satisfies](../semantics/satisfies-3.md)
-- [Vars](vars-2.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Proof depends on
 
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 - [Variables of a clause](vars.md)
 - [Satisfaction of a literal](../semantics/satisfies.md)
 

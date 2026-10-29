@@ -17,7 +17,7 @@ the length of $u$ if the split exists, and no offset otherwise.
 
 ## Depends on
 
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Proof depends on
 

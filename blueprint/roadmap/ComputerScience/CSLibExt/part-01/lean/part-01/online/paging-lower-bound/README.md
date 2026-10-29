@@ -24,7 +24,7 @@ navigation: module
 - [The offline trace is legal](opt-trace-legal.md)
 - [Hits do not change the offline strategy's misses](misses-opt-trace-hits.md)
 - [After a miss on a full cache, every page except the evicted one is present](mem-of-full.md)
-- [The offline trace misses at most once every `k` requests](misses-opt-trace-le.md)
+- [The offline trace misses at most once every $k$ requests](misses-opt-trace-le.md)
 
 ## The lower bound
 

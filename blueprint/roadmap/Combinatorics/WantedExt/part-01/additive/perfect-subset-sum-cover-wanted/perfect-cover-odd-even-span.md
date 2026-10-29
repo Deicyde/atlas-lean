@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.perfectCover_odd_even_span
 ---
 
-# Perfect Cover odd even span
+# Spans of the odd and even entries of a perfect cover
 
-Let `s = (s_1, …, s_{m+n})`, `s_i = (x_i, y_i)`, be a perfect cover of
-`(ℤ₂)^m ⊕ ℤ_{2^n}` with `y_1, …, y_{k+1}` odd and the other `y_i` even. Then
-`U = span{x_1 + x_2, …, x_1 + x_{k+1}}` and `V = span{x_{k+2}, …, x_{m+n}}` in `(ℤ₂)^m` have
-`dim U = k`, `dim V = m - k` and `U ∩ V = 0`.
+**Spans of the odd and even entries of a perfect cover.** Let $m$, $n$ and $k$ be natural
+numbers with $k + 1 \le m + n$, and let $s = (s_1, \dots, s_{m+n})$, $s_i = (x_i, y_i)$, be a
+family in $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$ that is a perfect $1$-cover: every element of
+the group is the sum of the $s_i$ over exactly one set of indices. Suppose that $y_i$, read as an
+integer in $\{0, \dots, 2^n - 1\}$, is odd exactly when $i \le k + 1$. Let $U$ be the
+$\mathbb{Z}_2$-span of $x_1 + x_2, \dots, x_1 + x_{k+1}$ and $V$ the $\mathbb{Z}_2$-span of
+$x_{k+2}, \dots, x_{m+n}$ in $(\mathbb{Z}_2)^m$. Then $\dim U = k$, $\dim V = m - k$,
+$U \cap V = 0$ and $U + V = (\mathbb{Z}_2)^m$.
 
 ## Depends on
 

@@ -22,7 +22,7 @@ $c$.
 
 - [Stacks of the 3-coloring emitter](k.md)
 - [Control labels of the 3-coloring emitter](lab.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by copy sites of the 3-COLOR emitter](src.md)
 - [Stack of a counter](k-2.md)
 - [Unit symbol of a counter](unit.md)
 - [The 3-COLOR emitter machine](prog.md)
@@ -31,7 +31,7 @@ $c$.
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 

@@ -25,9 +25,9 @@ output $o$, and the counters of $F$ except that $\mathrm{Xn} = r$ and $\mathrm{C
 - [Counters of the initial-row generator](ck.md)
 - [Labels of the initial-row generator](gl.md)
 - [The first read test](rd0.md)
-- [Labels of the initial-row generator](lb.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [Empty scratch counters](rest.md)
-- [Prog](prog.md)
+- [The counter part of the initial-row generator](prog.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -43,7 +43,7 @@ output $o$, and the counters of $F$ except that $\mathrm{Xn} = r$ and $\mathrm{C
 - [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
 - [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

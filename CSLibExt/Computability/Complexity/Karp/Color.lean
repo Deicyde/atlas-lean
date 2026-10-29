@@ -227,8 +227,8 @@ succeeds and returns the empty edge list. -/
 theorem decodeEs_nil : decodeEs [] = some [] := by
   rw [decodeEs]; simp
 
-/-- **Decoding fails on a cut-off first number.** If $x$ is a nonempty bit string and reading a
-unary length prefix from $x$ fails, then the edge-list decoder fails on $x$. -/
+/-- **The edge-list decoder fails on a cut-off first number.** If $x$ is a nonempty bit string
+and reading a unary length prefix from $x$ fails, then the edge-list decoder fails on $x$. -/
 theorem decodeEs_of_none {x : List Bool} (hx : x ≠ []) (h : readUnaryLength x = none) :
     decodeEs x = none := by
   rw [decodeEs]

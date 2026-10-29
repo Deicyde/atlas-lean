@@ -34,7 +34,7 @@ from $s$ by appending $c + e$ copies of true followed by one false to its edge b
 ## Proof depends on
 
 - [Extra ones of a copy site](ext.md)
-- [Counters read by copy sites](src.md)
+- [Counters read by HAMPATH copy sites](src.md)
 - [Stack of a HAMPATH copy-site counter](k-2.md)
 - [Unit symbol of an emitter counter](unit.md)
 - [Copying a counter in the HAMPATH emitter](cp-run.md)

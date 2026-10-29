@@ -15,7 +15,7 @@ with the store reached alongside it, is a value or can take a further step.
 ## Depends on
 
 - [Typing judgment for the lambda calculus with references](../typing/has-type.md)
-- [Step](../semantics/step.md)
+- [One-step evaluation with references](../semantics/step.md)
 - [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
 - [Terms of the simply typed lambda calculus with references](../syntax/term.md)

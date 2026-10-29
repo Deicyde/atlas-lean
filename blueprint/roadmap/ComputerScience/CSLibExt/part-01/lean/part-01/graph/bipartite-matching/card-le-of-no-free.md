@@ -25,7 +25,7 @@ edge, and each of them is matched, to distinct matching edges.
 
 - [Unmatched left vertex](free.md)
 - [Matched reached left vertices are reached through a partner](exists-mate-of-mem-layers.md)
-- [Layers fst stable](layers-fst-stable.md)
+- [Rounds $a$ and $a + 1$ reach the same left vertices](layers-fst-stable.md)
 
 ## Sources
 

@@ -25,7 +25,7 @@ navigation: module
 - [Partial sums along the positive and negative indices are records](tribonacci-succ-record-of-partial-sum.md)
 - [Late records use $T_{P(t)}$ and $T_{Q(t)}$](tribonacci-succ-record-eventually-contai.md)
 - [Row numbers of the Trithoff array](trithoff-row-number-eq.md)
-- [Exists trithoff row difference eq](exists-trithoff-row-difference-eq.md)
+- [Differences along a Trithoff row](exists-trithoff-row-difference-eq.md)
 - [Appending a zero to a non-canonical Tribonacci representation](tribonacci-value-cons-zero-of-noncanonic.md)
 - [Precolumns of the Trithoff array](trithoff-precolumns.md)
 - [Wall, seed and pre-seed of the Trithoff array via the Tribonacci word](trithoff-wall-seed-preseed.md)

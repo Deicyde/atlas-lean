@@ -19,7 +19,7 @@ navigation: module
 - [Relaxed triangle inequality for squared distance](dist-sq-le-two-mul.md)
 - [Squared covering radius](radius-sq.md)
 - [Points lie within the squared radius](dist-sq-le-radius-sq.md)
-- [Search Aux](search-aux.md)
+- [Accumulating ball-tree search](search-aux.md)
 - [Ball-tree similarity search](search.md)
 - [Bounding-sphere invariant of a ball tree](valid.md)
 - [Ball-tree search is exact](search-eq-filter.md)

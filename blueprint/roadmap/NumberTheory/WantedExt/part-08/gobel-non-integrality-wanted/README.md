@@ -32,6 +32,6 @@ navigation: module
 - [Translation and reflection identities for $b_{l,s}$](gobel-bsequence-translation-identities.md)
 - [The sequence $a_{p,l}$ is not multiplicative at an even index](gobel-asequence-not-multiplicative-at-ev.md)
 - [The first non-integral term of $g_{2600725,2}$ is at index $9011$](gobel-sequence-first-nonintegral-2600725.md)
-- [Gobel Sequence nonintegral index le 9011](gobel-sequence-nonintegral-index-le-9011.md)
+- [A non-integral term of $g_{k,2}$ by index $9011$ for $2 \le k \le 10^7$](gobel-sequence-nonintegral-index-le-9011.md)
 - [Counting prime first nonintegral indices of $g_{k,2}$ for $k \le 10^7$](card-gobel-sequence-prime-first-noninteg.md)
-- [Gobel Sequence nonintegral index le 29363](gobel-sequence-nonintegral-index-le-2936.md)
+- [A non-integral term of $g_{k,2}$ by index $29363$ for $2 \le k \le 10^{14}$](gobel-sequence-nonintegral-index-le-2936.md)

@@ -16,7 +16,7 @@ entries after it.
 
 ## Depends on
 
-- [Good sequences](is-good-seq.md)
+- [Good sequences of suffix extrema](is-good-seq.md)
 - [Consecutive-cyclic-pattern-avoiding stack-sorting map](consecutive-cyclic-stack-sort.md)
 - [Permutations sorted by a map](sorted-permutations.md)
 

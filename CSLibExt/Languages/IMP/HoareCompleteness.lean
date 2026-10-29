@@ -367,7 +367,10 @@ inductive TDerivable : Assertion → Cmd → Assertion → Prop
 
 namespace TDerivable
 
-/-- Soundness: every derivable total-correctness triple is totally valid. -/
+/-- **Soundness of total-correctness Hoare logic.** For all assertions $P$ and $Q$ and every
+command $c$, if the triple $\{P\}\,c\,\{Q\}$ is derivable in total-correctness Hoare logic, then
+it is valid for total correctness: every state satisfying $P$ has a terminating big-step
+execution of $c$ ending in a state that satisfies $Q$. -/
 theorem sound {pre post : Assertion} {command : Cmd}
     (h : TDerivable pre command post) : TValid pre command post := by
   induction h with
@@ -383,7 +386,10 @@ theorem sound {pre post : Assertion} {command : Cmd}
       exact ⟨final, hstep, hinvariant', hlt⟩
   | consequence hpre _ hpost ih => exact TValid.consequence hpre ih hpost
 
-/-- Strengthen the precondition of a derivable total-correctness triple. -/
+/-- **Precondition strengthening for total correctness.** Let $P$, $P'$ and $Q$ be assertions and
+$c$ a command. If $P$ entails $P'$ (every state satisfying $P$ satisfies $P'$) and the triple
+$\{P'\}\,c\,\{Q\}$ is derivable in total-correctness Hoare logic, then so is
+$\{P\}\,c\,\{Q\}$. -/
 theorem strengthen {pre pre' post : Assertion} {command : Cmd}
     (hpre : pre.Entails pre') (h : TDerivable pre' command post) :
     TDerivable pre command post :=
@@ -443,8 +449,9 @@ theorem tderivable_wp : ∀ (command : Cmd) (post : Assertion),
 
 namespace TDerivable
 
-/-- Relative completeness: every totally valid triple is derivable in the
-total-correctness system. -/
+/-- **Total-correctness Hoare logic is relatively complete.** For all assertions $P$ and $Q$ and
+every command $c$, if the total-correctness Hoare triple $\{P\}\,c\,\{Q\}$ is valid, then it is
+derivable in total-correctness Hoare logic. -/
 theorem complete {pre post : Assertion} {command : Cmd}
     (h : TValid pre command post) : TDerivable pre command post :=
   strengthen (wp.tvalid_iff.mp h) (tderivable_wp command post)
@@ -513,8 +520,10 @@ instance : Cslib.Logic.InferenceSystem TotalCorrectness Triple :=
 
 namespace Triple
 
-/-- A triple is derivable in the default (partial-correctness) system iff it
-is valid. -/
+/-- **Derivability in the default inference system on Hoare triples is validity.** For every
+Hoare triple $\{P\}\,c\,\{Q\}$, the triple is derivable in the default inference system on Hoare
+triples, which is partial-correctness Hoare logic, if and only if it is valid for partial
+correctness. -/
 theorem derivable_iff_valid (t : Triple) :
     Cslib.Logic.InferenceSystem.Derivable t ↔ Valid t.pre t.command t.post :=
   nonempty_prop.trans IMP.derivable_iff_valid

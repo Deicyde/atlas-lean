@@ -6,12 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.SSVerify.loop_run
 ---
 
-# The summing loop
+# The summing loop of the SUBSET-SUM verifier
 
-**The summing loop.** From `next` with the number blocks `r` on `X`, the witness `w` on `W`
-and the sum `s` on `A`, the machine reaches `fmove` if `r` parses into numbers `as` and `no`
-otherwise; then `A` holds `s` plus the numbers that `w` chooses. `N` bounds the bits of the sum
-plus the input left, so a block of `p` bits costs `O(N + p)` steps.
+**The summing loop of the SUBSET-SUM verifier.** Let $N$ be a natural number and $t$ a list
+of symbols. Write $\langle m \rangle$ for the canonical binary code of a natural number $m$, least
+significant bit first, and put a bit list on a stack as the list of its name-bit symbols. Let $n$
+and $s$ be natural numbers, $r$ and $w$ bit lists and $v$ a Boolean, with $|r| \le n$ and
+$|\langle s \rangle| + |r| \le N$. Start the SUBSET-SUM verifier at the label $\mathsf{next}$
+with internal state $v$, with $r$ on $X$, $w$ on $W$, $t$ on $T$, $\langle s \rangle$ on $A$,
+and the stacks $B$, $P$ and $Q$ empty. Then for some internal state $v'$ and stack contents $S'$
+it runs within $|r| \cdot (2N + 6) + 1$ steps to the configuration with internal state $v'$,
+stacks $S'$ and label $\mathsf{fmove}$ if parsing the number blocks of $r$ with fuel $n$
+succeeds, and label $\mathsf{no}$ if it fails. Moreover, if that parsing gives the list of
+numbers $a$, and $\sigma$ is $s$ plus the sum of the numbers of $a$ chosen by the mask $w$, then
+$|\langle \sigma \rangle| \le N$, and for some list of symbols $w'$ the stacks $S'$ hold nothing
+on $X$, $w'$ on $W$, $t$ on $T$, $\langle \sigma \rangle$ on $A$, and nothing on $B$, $P$ and
+$Q$.
 
 ## Depends on
 
@@ -26,7 +36,7 @@ plus the input left, so a block of `p` bits costs `O(N + p)` steps.
 
 ## Proof depends on
 
-- [Rejection within a step bound](rej.md)
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [Ripple-carry addition of bit lists](add-b.md)
 - [Addition is correct on canonical numbers](add-b-encode-nat.md)
 - [The verifier rejects an unterminated chosen block](add-fail.md)

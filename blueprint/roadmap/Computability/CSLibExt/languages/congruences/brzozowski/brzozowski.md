@@ -21,7 +21,7 @@ determinize by the subset construction and keep the reachable subsets, twice.
 - [States of the intermediate Brzozowski automaton](mid-state.md)
 - [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
 - [The intermediate Brzozowski automaton](brzozowski-mid.md)
-- [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
+- [Early-stopping DFA reachability search](../../../decidability/part-02/regular/reachable-within.md)
 - [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources

@@ -26,7 +26,7 @@ concatenate to the same word.
 - [Rewriting systems with nonempty sides](../../part-02/string-rewriting/nonempty-rules.md)
 - [Rewriting rules](../../part-02/string-rewriting/rule.md)
 - [The reachability problem for string rewriting](../../part-02/string-rewriting/sr.md)
-- [Reachability many-one reduces to PCP](../../part-02/string-rewriting/many-one-reducible-sr-pcp.md)
+- [Reachability for rules with nonempty sides many-one reduces to PCP](../../part-02/string-rewriting/many-one-reducible-sr-pcp.md)
 - [Reachability for string rewriting is undecidable](exists-not-tm2-decidable-sr.md)
 - [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 

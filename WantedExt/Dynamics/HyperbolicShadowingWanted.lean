@@ -108,8 +108,10 @@ structure for $T$ on $K$. -/
 def IsHyperbolic (T : E d ≃ₜ E d) (K : Set (E d)) : Prop :=
   Nonempty (HyperbolicStructure T K)
 
-/-- `(xₙ)_{n : ℕ}` is an **ε-pseudo orbit** of `T : ℝᵈ → ℝᵈ`:
-`‖x (n+1) − T (xₙ)‖ < ε` for every `n`. -/
+/-- **Pseudo-orbit.** Let $d$ be a natural number, let $\mathbb{R}^d$ carry the Euclidean norm,
+let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a map and let $\varepsilon$ be a real number. A
+sequence $(x_n)_{n \in \mathbb{N}}$ in $\mathbb{R}^d$ is an $\varepsilon$-pseudo orbit of $T$
+if $\|x_{n+1} - T(x_n)\| < \varepsilon$ for every $n \in \mathbb{N}$. -/
 def IsPseudoOrbit (T : E d → E d) (ε : ℝ) (x : ℕ → E d) : Prop :=
   ∀ n : ℕ, ‖x (n + 1) - T (x n)‖ < ε
 

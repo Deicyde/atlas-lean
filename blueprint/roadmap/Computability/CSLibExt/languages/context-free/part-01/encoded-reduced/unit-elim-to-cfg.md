@@ -25,7 +25,7 @@ the grammar obtained from the grammar denoted by $g$ by eliminating unit product
 - [Productions of the encoded unit elimination](mem-unit-elim-rules.md)
 - [Unit output](../reduced/is-unit-output.md)
 - [Reachability by unit productions](../reduced/unit-steps.md)
-- [Nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
 
 ## Sources
 

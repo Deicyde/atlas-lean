@@ -14,7 +14,7 @@ $r'(t) = (\cos \alpha(t), \sin \alpha(t))$ for every $t \in \mathbb{R}$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for the Umlaufsatz](plane.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.IMP.TDerivable.complete
 ---
 
-# Complete
+# Total-correctness Hoare logic is relatively complete
 
-Relative completeness: every totally valid triple is derivable in the
-total-correctness system.
+**Total-correctness Hoare logic is relatively complete.** For all assertions $P$ and $Q$ and
+every command $c$, if the total-correctness Hoare triple $\{P\}\,c\,\{Q\}$ is valid, then it is
+derivable in total-correctness Hoare logic.
 
 ## Depends on
 
@@ -23,7 +24,7 @@ total-correctness system.
 - [Entailment of assertions](../hoare/entails.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [IMP program states](../syntax/state.md)
-- [Strengthen](strengthen-2.md)
+- [Precondition strengthening for total correctness](strengthen-2.md)
 - [The weakest-precondition triple is derivable in total-correctness Hoare logic](tderivable-wp.md)
 - [Weakest precondition for total correctness](../hoare-total/wp.md)
 

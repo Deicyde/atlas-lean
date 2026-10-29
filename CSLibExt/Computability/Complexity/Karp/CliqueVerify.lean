@@ -114,7 +114,11 @@ theorem Mode.ok_eq (m : Mode) (b si sj : Bool) : m.ok b si sj = (m.free si || m.
 
 /-! ### The pair order -/
 
-/-- Row `0` of `pairs (n + 1)`, then the pairs of `n` shifted by one. -/
+/-- **Vertex pairs in encoding order for one more vertex.** For a natural number $m$, write
+$P(m)$ for the list of pairs $(i, j)$ of natural numbers with $i < j < m$, ordered by $i$
+ascending and, for each $i$, by $j$ descending. Then for every natural number $n$, $P(n + 1)$ is
+the list $(0, n), (0, n - 1), \dots, (0, 1)$ (empty when $n = 0$) followed by the pairs
+$(i + 1, j + 1)$ for the pairs $(i, j)$ of $P(n)$, in the order of $P(n)$. -/
 theorem pairs_succ (n : ℕ) : pairs (n + 1) = (List.range n).reverse.map (fun j => (0, j + 1)) ++
     (pairs n).map fun p => (p.1 + 1, p.2 + 1) := by
   have hr : (0 :: (List.range n).map Nat.succ).reverse =
@@ -551,7 +555,19 @@ def walkS (m : Mode) (c : Bool) : Stmt :=
     (.peek .X (fun _ o => o.isNone) <| .branch id (.goto fun _ => .yes) (.goto fun _ => .no)) <|
   .pop .V (fun _ o => bitOf Sym.bit? o) <| .branch id (walkZ m c true) (walkZ m c false)
 
-/-- The verifier for mode `m`: parse `k` and `n`, load the witness, walk the rows. -/
+/-- **Program of the clique verifier.** For a mode $m$ (clique, independent set or vertex
+cover), the verifier program of mode $m$ assigns a statement to each label of the verifier: to
+the label that reads the instance's target size $k$, the unary reader onto the counter $C$ with
+own label this label and next label the label that reads the instance's number $n$ of vertices;
+to the label that reads $n$, the unary reader onto the counter $N$ with own label this label and
+next label the load label; to the load label, the load step; to the walk label with flag $c$,
+the walk step of mode $m$ with flag $c$; to the put-back label, the bit-moving loop from the
+scratch stack $T$ to the vertex stack $V$ that reads name-bit symbols as bits and writes each
+bit $b$ as the name bit $b$, with own label the put-back label and next label the walk label
+with flag true; and to the accept and reject labels, the statement that halts.
+
+Run from the label that reads $k$, it parses $k$ and $n$, loads the witness and walks the
+rows. -/
 def prog (m : Mode) : Lab → TM2.Stmt (fun _ : K => Sym) Lab Bool
   | .rdK => readU .C .rdK .rdN
   | .rdN => readU .N .rdN .load
@@ -723,10 +739,19 @@ theorem load_run : ∀ (n : ℕ) (w acc : List Bool) (j : ℕ) (v : Bool) (St : 
               · obtain ⟨h1, h2, h3⟩ := hF (by simpa using h)
                 exact ⟨by simpa using h1, by simpa [hSt₁] using h2, by simpa [hSt₁] using h3⟩
 
-/-- The walk along one row: from `walk c` with the later vertices `zs` (as met) above the row's
-own vertex `si` on `V` and the pair bits `bs` on `X`, it pairs `zs` with the first bits of `bs`,
-parks `zs` on `T` and decides the row: `back` iff there are enough bits and `si` settles the row
-or every pair condition holds (and `c` does). -/
+/-- **Walking the pairs of one row of the clique verifier.** Let $m$ be a mode and $s$ a bit.
+Let $z = (z_0, \dots, z_{r-1})$ and $b = (b_0, \dots, b_{q-1})$ be lists of bits, $c$ a bit, $v$
+a state and $S$ stack contents in which the vertex stack $V$ holds, from the top, the name bits
+$z_0, \dots, z_{r-1}$ followed by the name bit $s$, and the input stack $X$ holds, from the top,
+the name bits $b_0, \dots, b_{q-1}$. Then there are a state $v'$ and stack contents $S'$ such
+that within at most $r + 1$ steps the verifier program of mode $m$ goes from the walk label with
+flag $c$, state $v$ and stacks $S$ to state $v'$ and stacks $S'$ at the put-back label if
+$r \le q$ and either $\mathrm{free}_m(s)$ holds (a vertex with chosen-flag $s$ settles its pairs
+alone) or both $c$ and $\mathrm{sat}_m(b_t, z_t)$ for every $t < r$ hold (the pair condition
+left to the later vertex, with pair bit $b_t$ and later-vertex flag $z_t$), and at the reject
+label otherwise. Moreover, if $r \le q$, then in $S'$ the stack $V$ is empty, the scratch stack
+$T$ holds $z_{r-1}, \dots, z_0$ from the top above its contents in $S$, and $X$ holds, from the
+top, $b_r, \dots, b_{q-1}$. -/
 theorem walkRow_run (si : Bool) : ∀ (zs : List Bool) (c : Bool) (bs : List Bool) (v : Bool)
     (St : ∀ _ : K, List Sym), St .V = (zs ++ [si]).map Sym.bit → St .X = bs.map Sym.bit →
     ∃ v' S', RunLe (prog m) (zs.length + 1) ⟨some (.walk c), v, St⟩

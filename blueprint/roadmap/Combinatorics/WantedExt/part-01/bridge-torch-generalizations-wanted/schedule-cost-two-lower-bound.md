@@ -20,7 +20,7 @@ $T(n) + \lceil n/2 \rceil - a + 4m + 3s$.
 - [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 - [Forward crossings](forward-crossings.md)
 - [Return crossings](return-crossings.md)
-- [Schedule Cost](schedule-cost.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

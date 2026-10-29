@@ -46,5 +46,5 @@ The moving sofa problem asks how large a planar shape can be while still passing
 - [The ambidextrous optimal area is at most the optimal area](ambidextrous-optimal-area-le-optimal-are.md)
 - [The square's translation through the mirrored corner](square-motion-other.md)
 - [The unit square passes the mirrored corridor](square-can-pass-other.md)
-- [Square is Ambidextrous Sofa](square-is-ambidextrous-sofa.md)
+- [The unit square is an ambidextrous sofa](square-is-ambidextrous-sofa.md)
 - [The ambidextrous sofa constant is at least one](one-le-ambidextrous-optimal-area.md)

@@ -22,7 +22,7 @@ literal together with its complementary literal.
 - [Literals over the variables of a formula](lit.md)
 - [Complement of a literal over a formula](neg-2.md)
 - [Implication graph as a finite directed graph](implication-graph.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

@@ -160,7 +160,9 @@ and $a' + 2$ writes $a'$. -/
 def machine (c : Code) : TM0.Machine ℕ ℕ := fun q a ↦
   (c.lookup q a).map fun e ↦ (e.1, decodeStmt e.2)
 
-/-- The states of a code: the initial state `0` and every state its table enters. -/
+/-- **States of a code.** The set of states of a code $c$ is the finite set of natural numbers
+consisting of the initial state $0$ and every state $q'$ such that some entry of the table of $c$
+is a pair $(q', s)$. -/
 def states (c : Code) : Finset ℕ :=
   insert 0 (c.table.flatten.filterMap fun o ↦ o.map Prod.fst).toFinset
 
@@ -225,7 +227,9 @@ def Cfg.act (k : Cfg) (q' : ℕ) : ℕ → Cfg
   | 1 => ⟨q', k.head :: k.left, k.right.headI, k.right.tail⟩
   | a + 2 => ⟨q', k.left, a, k.right⟩
 
-/-- The output of a configuration: the tape from the head rightwards, without trailing blanks. -/
+/-- **Output of a configuration.** The output of a configuration $k$ is the list consisting of the
+symbol under the head of $k$ followed by the cells right of the head (nearest first), with all
+trailing blanks $0$ removed. -/
 def Cfg.output (k : Cfg) : List ℕ := (k.head :: k.right).rdropWhile (· == 0)
 
 /-- **Initial configuration of the code simulation.** The initial configuration of the

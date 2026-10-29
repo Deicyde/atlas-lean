@@ -4,7 +4,7 @@ navigation: module
 
 # Delete Balanced
 
-- [Key Count](key-count.md)
+- [Number of keys at the root of a B-tree](key-count.md)
 - [Splitting off the last element of a list](split-last.md)
 - [Rightmost key of a B-tree](max-key.md)
 - [Leftmost key of a B-tree](min-key.md)

@@ -34,7 +34,7 @@ navigation: module
 
 ## Tree
 
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 - [Maximum with an optional value](max-with.md)
 - [Maximum high endpoint at a node](node-max.md)
 - [Node construction with repaired metadata](mk-node.md)
@@ -90,7 +90,7 @@ navigation: module
 
 ## Indexed Interval Tree
 
-- [Insert With Cost](insert-with-cost.md)
+- [Insertion by identifier with cost](insert-with-cost.md)
 - [Erasure by identifier with cost](erase-with-cost.md)
 - [Forward identifier-index check](index-forward-ok.md)
 - [Backward identifier-index check](index-backward-ok.md)
@@ -113,7 +113,7 @@ navigation: module
 ## Indexed Interval Tree
 
 - [Soundness of the invariant checker](invariant-of-check.md)
-- [Search sound](search-sound.md)
+- [Soundness of indexed interval-tree search](search-sound.md)
 - [Completeness of indexed interval search](search-complete-of-invariant.md)
 - [Correctness of insertion into an indexed interval tree](insert-spec.md)
 - [Correctness of erasure from the indexed interval tree](erase-spec.md)

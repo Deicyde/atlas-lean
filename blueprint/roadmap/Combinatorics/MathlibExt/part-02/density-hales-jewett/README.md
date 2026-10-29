@@ -21,5 +21,5 @@ navigation: module
 
 ## Density Hales Jewett Wanted
 
-- [Exists lines mono in high dimension fin](exists-lines-mono-in-high-dimension-fin.md)
+- [Graham–Rothschild theorem for combinatorial lines](exists-lines-mono-in-high-dimension-fin.md)
 - [Density Hales–Jewett theorem](density-hales-jewett.md)

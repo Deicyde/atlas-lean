@@ -19,7 +19,7 @@ horizontal steps.
 ## Proof depends on
 
 - [Steps of a marked Dyck path](marked-dyck-step.md)
-- [Number of horizontal steps](marked-dyck-count-e.md)
+- [Number of horizontal steps in a marked Dyck step sequence](marked-dyck-count-e.md)
 - [Number of marked vertical steps](marked-dyck-count-nstar.md)
 
 ## Sources

@@ -532,11 +532,17 @@ open Diag
 
 /-! ### The diagonal language -/
 
-/-- The code encoded by the bits `x`: if `x` is a code stack (`Clocked.codeCells`, the code as
-the clocked universal machine reads it), that is, the cells of entries `(q, a, q', s)` whose
-keys `(q, a)` strictly increase, the code of these entries (`codeOfEntries`); `none` otherwise.
-Codes with the same code stack have the same clocked semantics
-(`Code.evalSteps_eq_of_codeCells_eq`). -/
+/-- **Decoding a code stack.** For a bit list $x$, the decoding of $x$ as a code is defined as
+follows. Write the cell of a number $n$ for the $n$ bits true followed by one bit false, and the
+cells of a list of numbers for the cells of its numbers in order. If $x$ is the cells of a list
+$l$ of natural numbers (such an $l$ is unique), the length of $l$ is a multiple of $4$, and the
+keys $(q, a)$ of the entries $(q, a, q', s)$ formed by the consecutive groups of four numbers of
+$l$ strictly increase in lexicographic order, then the decoding of $x$ is the code of these
+entries. Otherwise the decoding returns no code.
+
+The code stack of a code is the cells of the numbers $q, a, q', s$ of its entries
+$(q, a, q', s)$, listed by increasing key $(q, a)$; codes with the same code stack have the same
+clocked evaluator. -/
 def decodeCodeCells (x : List Bool) : Option Code :=
   ((cellsDecode x).bind entriesOfNums).bind fun es ↦
     if keysAscendFrom 0 0 es then some (codeOfEntries es) else none
@@ -810,7 +816,12 @@ theorem run (l : List Bool) :
     | exact ⟨_, _, ⟨5, by norm_num, rfl⟩, rfl⟩
     | exact ⟨_, _, ⟨6, le_rfl, rfl⟩, rfl⟩
 
-/-- The readout machine on raw bits, in the reduction host. -/
+/-- **The readout on raw bits in polynomial time.** A finite multi-stack Turing machine, whose
+input and output alphabets are identified with the bits, together with a polynomial time bound,
+such that for every bit list $l$, given $l$ as its input, it halts within the bound, evaluated at
+$|l|$, with output the one-bit list $[b]$, where $b$ is true if and only if $l$ differs from the
+output encoding of the result whose output is the single symbol $2$ of the bit true, that is,
+from the list true, true, true, false. -/
 noncomputable def bitsPolyTime :
     TM2ComputableInPolyTime (fun l : List Bool ↦ l) (fun l : List Bool ↦ l)
       (fun l ↦ [decide (l ≠ encOut (some [bitSym true]))]) :=

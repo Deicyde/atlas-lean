@@ -30,7 +30,7 @@ navigation: module
 ## The two loops
 
 - [The scan loop of the lookup machine](scan-loop.md)
-- [Back loop](back-loop.md)
+- [The return loop of the lookup machine](back-loop.md)
 
 ## The lookup machine
 

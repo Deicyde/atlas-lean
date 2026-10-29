@@ -184,7 +184,11 @@ theorem edmondsKarp_max_flow_min_cut (capacity : Fin n → Fin n → ℕ) {sourc
   · exact MathlibExt.Combinatorics.Graph.MaxFlowMinCutWanted.flowValue_le_cutCapacity _ _ _ _ hF
       S hS
 
-/-- The certificate cut is a minimum cut: no `s`-`t` cut has smaller capacity. -/
+/-- **No $s$-$t$ cut is smaller than the Edmonds–Karp residual cut.** Let $c$ be a capacity
+function on the vertices $0, \dots, n-1$ with natural-number values, viewed as real capacities,
+and let $s \ne t$ be vertices. Let $S_0$ be the set of vertices reachable from $s$ in the residual
+graph of the flow computed by the Edmonds–Karp algorithm on $c$, $s$, $t$. Then for every $s$-$t$
+cut $S$, the capacity of $S_0$ is at most the capacity of $S$. -/
 theorem cutCapacity_residualCut_le (capacity : Fin n → Fin n → ℕ) {source sink : Fin n}
     (hst : source ≠ sink) {S : Finset (Fin n)} (hS : MFC.IsSTCut source sink S) :
     MFC.cutCapacity (realCap capacity)

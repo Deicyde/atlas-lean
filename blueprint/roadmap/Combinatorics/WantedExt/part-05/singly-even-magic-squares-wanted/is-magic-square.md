@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsMagicSquare
 ---
 
-# Is Magic Square
+# Magic squares
 
-A square array of natural numbers is a *magic square* when every row, every column, the
-main diagonal and the anti-diagonal have one common sum.
+**Magic squares.** An $n \times n$ array $M$ of natural numbers, with rows and columns
+indexed by $0, 1, \dots, n - 1$, is a *magic square* when there is a natural number $s$ such
+that every row of $M$ and every column of $M$ sums to $s$, and also $\sum_i M_{i,i} = s$ (the
+main diagonal) and $\sum_i M_{i,n-1-i} = s$ (the anti-diagonal).
+
+No condition is imposed on the entries themselves.
 
 ## Depends on
 

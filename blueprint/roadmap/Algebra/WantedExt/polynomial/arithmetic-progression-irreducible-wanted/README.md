@@ -16,5 +16,5 @@ navigation: module
 - [A rational lower bound for $(1 + mx)^{1/m}$](one-add-mul-rpow-inv-gt.md)
 - [Strict upper bound on floors at powers of the auxiliary root](arith-prog-poly-floor-lam-pow-lt.md)
 - [Exact floor at a power of the auxiliary root (single exponent)](arith-prog-poly-floor-lam-pow-eq.md)
-- [Arith Prog Poly floor lam pow eq of eight](arith-prog-poly-floor-lam-pow-eq-of-eigh.md)
+- [Exact floors at powers of the auxiliary root (all exponents)](arith-prog-poly-floor-lam-pow-eq-of-eigh.md)
 - [Reducible quadratics with coefficients in an arithmetic progression](arith-prog-poly-two-reducible-iff.md)

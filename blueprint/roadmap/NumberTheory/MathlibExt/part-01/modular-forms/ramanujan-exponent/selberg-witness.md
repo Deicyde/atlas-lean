@@ -23,7 +23,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../selberg-spectral-gap/is-eigenvalue.md)
 
 ## Sources
 

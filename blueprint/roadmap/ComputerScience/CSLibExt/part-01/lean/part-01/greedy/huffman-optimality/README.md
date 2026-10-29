@@ -6,7 +6,7 @@ navigation: module
 
 ## Lean
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 
 ## Huffman Weight Tree
 
@@ -39,4 +39,4 @@ navigation: module
 - [Admissible Huffman trees](admissible.md)
 - [A two-minimum merge trace gives a minimum weighted path length](huffman-optimal-of-merge-trace.md)
 - [Optimality of Huffman coding](huffman-optimal.md)
-- [Huffman encoded Length optimal](huffman-encoded-length-optimal.md)
+- [Huffman's algorithm minimizes the encoded length](huffman-encoded-length-optimal.md)

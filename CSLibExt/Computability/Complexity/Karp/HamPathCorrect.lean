@@ -68,7 +68,8 @@ theorem hamPathDec_noHam : hamPathDec noHam = false := by
       subst hhd hlast
       simp at hnd
 
-/-- **SAT ≤ HAMPATH preserves membership.** -/
+/-- **SAT ≤ HAMPATH preserves membership.** For every bit string $x$, SAT accepts $x$ if and only
+if HAMPATH accepts the image of $x$ under the SAT-to-HAMPATH reduction map. -/
 theorem satDec_eq_hamPathDec_reduceHam (x : List Bool) : satDec x = hamPathDec (reduceHam x) := by
   unfold reduceHam
   split

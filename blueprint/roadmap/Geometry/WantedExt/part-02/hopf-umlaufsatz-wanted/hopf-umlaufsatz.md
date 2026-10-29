@@ -19,7 +19,7 @@ curvature over one period is $2\pi$: $\int_0^{2\pi} \alpha'(t)\,dt = 2\pi$.
 
 - [Positively oriented simple closed unit-speed curve](is-positive-simple-closed-unit-speed-cur.md)
 - [Tangent-angle lift](is-tangent-angle-lift.md)
-- [Plane](plane.md)
+- [Euclidean plane for the Umlaufsatz](plane.md)
 - [Total signed curvature of a tangent-angle lift](total-curvature.md)
 
 ## Sources

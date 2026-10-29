@@ -16,7 +16,7 @@ independent under $\mathbb{P}$, and the distribution of each $X_i$ under $\mathb
 
 ## Depends on
 
-- [Planar Point](planar-point.md)
+- [Points of the Euclidean plane](planar-point.md)
 
 ## Sources
 

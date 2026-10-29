@@ -20,7 +20,7 @@ obtained from the productions of $e(a)$.
 ## Proof depends on
 
 - [Grammar denoted by an encoding](../encoded/to-cfg.md)
-- [Main Rule](main-rule.md)
+- [Main production of the substitution grammar](main-rule.md)
 - [Letter productions of the substitution grammar](sub-rule.md)
 - [Terminals of a grammar](../chomsky-normal-form/grammar-terminals.md)
 

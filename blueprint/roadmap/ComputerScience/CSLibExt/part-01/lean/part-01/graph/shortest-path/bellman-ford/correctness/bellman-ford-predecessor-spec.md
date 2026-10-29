@@ -20,7 +20,7 @@ $d(u)$ and $d(t)$ are both finite with $d(t) = d(u) + w$.
 - [Bellman-Ford distance table](../basic/distances.md)
 - [Weighted directed edge](../basic/edge.md)
 - [Bellman–Ford result](../basic/result.md)
-- [Bellman Ford](bellman-ford.md)
+- [Bellman–Ford algorithm](bellman-ford.md)
 
 ## Proof depends on
 

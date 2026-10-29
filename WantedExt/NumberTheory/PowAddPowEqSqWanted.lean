@@ -67,9 +67,9 @@ theorem_wanted one_add_pow_eq_sq (p y z : ℕ) (hp : p.Prime)
     (hp2 : p ≠ 2) :
     1 + (5 * p) ^ y = z ^ 2 ↔ y = 1 ∧ z ^ 2 = 5 * p + 1
 
-/-- **Lemma 2**: let `n ≡ 2 (mod 5)` or
-`n ≡ 3 (mod 5)`. If `y > 0` and Equation (1) has a
-nonnegative integer solution, then `x` is even.
+/-- **Evenness of $x$ in $n^x + (5p)^y = z^2$ when $n \equiv 2, 3 \pmod 5$.** Let $p$ be a prime
+and $n$ a natural number with $n \equiv 2 \pmod 5$ or $n \equiv 3 \pmod 5$. If natural numbers
+$x$, $y$, $z$ with $y > 0$ satisfy $n^x + (5p)^y = z^2$, then $x$ is even.
 
 Source: Suton Tadee, "On the Diophantine Equation
 `n^x + (5p)^y = z^2`", Lemma 2. -/

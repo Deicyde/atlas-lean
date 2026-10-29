@@ -17,7 +17,7 @@ key of $t$.
 
 - [x-fast trie](xfast-trie.md)
 - [y-fast trie skeleton](yfast-trie.md)
-- [Valid](valid-2.md)
+- [Valid y-fast trie skeleton](valid-2.md)
 - [Keys of a y-fast trie](contents.md)
 
 ## Proof depends on

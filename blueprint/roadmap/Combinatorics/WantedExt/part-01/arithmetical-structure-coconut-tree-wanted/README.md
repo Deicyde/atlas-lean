@@ -36,7 +36,7 @@ navigation: module
 - [Smooth coconut structures with central label above one](one-lt-center-iff.md)
 - [Smooth structures on coconut trees with two leaves](center-le-one-of-two.md)
 - [Smoothing at a path vertex of a coconut tree](coconut-smooth-path.md)
-- [Coconut Smooth Leaf](coconut-smooth-leaf.md)
+- [Smoothing at a leaf of a coconut tree](coconut-smooth-leaf.md)
 - [Subdivision at a path vertex of a coconut tree](coconut-subdivide.md)
 - [Example of smoothing a coconut tree at a path vertex](coconut-smooth-path-example.md)
 - [An example of smoothing at a path vertex and at a leaf](coconut-smooth-leaf-example.md)

@@ -19,7 +19,7 @@ field, the minimum distance equals the minimum weight.
 
 ## Proof depends on
 
-- [Hamming Dist eq hamming Norm sub](hamming-dist-eq-hamming-norm-sub.md)
+- [Hamming distance is the weight of the difference](hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

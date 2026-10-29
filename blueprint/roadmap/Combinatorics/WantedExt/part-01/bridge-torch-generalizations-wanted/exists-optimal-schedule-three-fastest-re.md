@@ -17,8 +17,8 @@ single person $p$, and $p \le q$ for every person $q$ on the right bank just bef
 
 - [Bridge schedules](is-bridge-schedule.md)
 - [Optimal crossing time of the bridge and torch problem](bridge-time.md)
-- [Right Bank](right-bank.md)
-- [Schedule Cost](schedule-cost.md)
+- [Right bank after a sequence of crossings](right-bank.md)
+- [Total time of a schedule](schedule-cost.md)
 
 ## Sources
 

@@ -8,15 +8,17 @@ lean: Cslib.Turing.Universal.Diag.Layout.run
 
 # The layout run
 
-**The layout run.** From the bits `y` on `X`, the machine stops at `done` with `layout y` on
-`O` within `18 (|y| + 1) ^ 2` steps.
+**The layout run.** For every bit list $y$, the layout machine, started at the label
+$\mathsf{s0}$ with internal state false, with $y$ on its input stack $X$ and every other stack
+empty, reaches the label $\mathsf{done}$ within $18(|y| + 1)^2$ steps, with some internal state
+and stacks in which the output stack $O$ holds the layout of $y$.
 
 ## Depends on
 
-- [K](k-2.md)
-- [Lab](lab-2.md)
+- [Stacks of the layout machine](k-2.md)
+- [Labels of the layout machine](lab-2.md)
 - [The layout function](layout.md)
-- [Prog](prog-2.md)
+- [Program of the layout machine](prog-2.md)
 - [Γ](untitled-2.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 

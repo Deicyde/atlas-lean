@@ -24,7 +24,7 @@ method to a shortest square occurrence and its shortest source-word cover.
 ## Depends on
 
 - [Square-free finite word](square-free-word/is-square-free-word.md)
-- [The ternary alphabet](square-free-word/ternary-alphabet.md)
+- [The ternary alphabet for square-free words](square-free-word/ternary-alphabet.md)
 
 ## Proof depends on
 

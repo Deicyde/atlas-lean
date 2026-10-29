@@ -4,7 +4,7 @@ navigation: module
 
 # Resolution
 
-- [Resolvent](resolvent.md)
+- [Resolvent of two clauses](resolvent.md)
 - [Resolution rule soundness](satisfies-resolvent.md)
 - [Resolution derivability](resolution-derivable.md)
 

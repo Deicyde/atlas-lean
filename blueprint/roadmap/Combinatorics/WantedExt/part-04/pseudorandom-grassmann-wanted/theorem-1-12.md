@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PseudorandomGrassmannWanted.PseudorandomGrassmann.theorem_1_12
 ---
 
-# Theorem 1 12
+# Non-expanding sets in the Grassmann graph (Khot–Minzer–Safra)
 
-Statement of Theorem 1.12:
-
-For every constant `0 < α < 1`, there exist a constant `ε > 0` and an
-integer `r ≥ 0` such that for all sufficiently large integers `ℓ` and (after fixing it)
-for all sufficiently large integers `k`, the following holds. Let `S ⊆ Grₖₗ` be such that
-`Φ(S) ≤ α`. Then there exist subspaces `A ⊆ B ⊆ 𝔽₂ᵏ` such that `dim(A) = a`, `codim(B) = b`,
-`a + b ≤ r` and `|S ∩ Grₖₗ[A,B]| / |Grₖₗ[A,B]| ≥ ε`.
+**Non-expanding sets in the Grassmann graph (Khot–Minzer–Safra).** For every real $\alpha$
+with $0 < \alpha < 1$ there are a real $\varepsilon > 0$ and a natural number $r$ such that for
+all sufficiently large natural numbers $\ell$ and, for each such $\ell$, all sufficiently large
+natural numbers $k$, the following holds. For subspaces $A$ and $B$ of $\mathbb{F}_2^k$, let
+$\mathrm{Gr}(k, \ell)[A, B]$ be the set of vertices $L$ of the Grassmann graph
+$\mathrm{Gr}(k, \ell)$ with $A \subseteq L \subseteq B$. Let $S$ be a nonempty set of at most
+half of the vertices of $\mathrm{Gr}(k, \ell)$ whose edge expansion in $\mathrm{Gr}(k, \ell)$
+satisfies $\Phi(S) \le \alpha$. Then there are subspaces $A \subseteq B$ of $\mathbb{F}_2^k$
+such that the dimension of $A$ plus the codimension $k - \dim B$ of $B$ is at most $r$ and
+$|S \cap \mathrm{Gr}(k, \ell)[A, B]| / |\mathrm{Gr}(k, \ell)[A, B]| \ge \varepsilon$.
 
 ## Depends on
 

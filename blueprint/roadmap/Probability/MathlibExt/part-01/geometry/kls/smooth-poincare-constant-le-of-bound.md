@@ -15,7 +15,7 @@ $\mu$, then the smooth Poincaré constant of $\mu$ is at most $C$.
 
 ## Depends on
 
-- [Is Smooth Poincare Bound](is-smooth-poincare-bound.md)
+- [Smooth Poincaré bounds](is-smooth-poincare-bound.md)
 - [Smooth Poincaré constant](smooth-poincare-constant.md)
 
 ## Sources

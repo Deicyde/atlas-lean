@@ -22,7 +22,7 @@ from the initial configuration on the blank tape, then $|h| \le t$.
 
 - [Head movement](move.md)
 - [Head displacement](shift.md)
-- [Initial configuration](initial.md)
+- [Initial configuration of a Busy Beaver machine](initial.md)
 - [One step of a Busy Beaver machine](step.md)
 
 ## Sources

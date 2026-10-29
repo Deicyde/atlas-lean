@@ -22,7 +22,7 @@ navigation: module
 - [A lookup of an absent key misses](get-miss.md)
 - [A lookup of a stored key returns its value](get-hit.md)
 - [A successful lookup moves the entry to the front](get-promotes.md)
-- [Lookup after insertion](get-put.md)
+- [Lookup after insertion into an LRU cache](get-put.md)
 - [Insertion respects the capacity of an LRU cache](put-size-le.md)
 - [Insertion keeps the keys of an LRU cache distinct](put-keys-nodup.md)
 - [Lookup respects the capacity](get-size-le.md)

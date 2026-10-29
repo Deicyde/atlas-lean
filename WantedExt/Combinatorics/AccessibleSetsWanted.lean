@@ -724,7 +724,10 @@ public theorem_wanted topological_recurrence_union_partition (k : ℕ)
     (hrec : IsLTopologicalRecurrence k D) :
     IsLTopologicalRecurrence k D₁ ∨ IsLTopologicalRecurrence k D₂
 
-/-- If a union is accessible, then one of its two summands is accessible.
+/-- **One part of an accessible union is accessible.** Let $D$, $D_1$ and $D_2$ be sets of
+natural numbers with $D = D_1 \cup D_2$. If $D$ is accessible, then $D_1$ is accessible or $D_2$
+is accessible.
+
 Source: Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64,
         Corollary 3. -/
 public theorem_wanted accessible_union_partition (D D₁ D₂ : Set ℕ)

@@ -21,7 +21,7 @@ lowering every other variable $x + 1$ to $x$. The outcome is $t$.
 
 ## Proof depends on
 
-- [Single-variable substitution](../syntax/single-sub.md)
+- [Single-variable substitution at index zero](../syntax/single-sub.md)
 - [Parallel substitution in a term](../syntax/subst.md)
 - [Substitution respects pointwise equality](subst-congr.md)
 - [Substitution by variables is the identity](subst-id.md)

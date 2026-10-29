@@ -14,8 +14,8 @@ boundary of $r$ with the orientation given by its corner order.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

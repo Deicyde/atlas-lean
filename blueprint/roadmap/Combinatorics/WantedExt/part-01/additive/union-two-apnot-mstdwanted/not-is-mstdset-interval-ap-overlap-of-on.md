@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_of_one_lt_gcd
 ---
 
-# Lemma 21
+# An interval and an overlapping progression whose denominators share a factor are not MSTD
 
-**Lemma 21.** For `n ≥ 3`, `m ≥ 2`, `0 < x < n - 1`, `d > n - 1`, and reduced `x = s₁ + p₁/q₁`,
-`d = s₂ + p₂/q₂` with `gcd(q₁, q₂) > 1`, `I_n ∪ J(x, m, d)` is not an MSTD set.
+**An interval and an overlapping progression whose denominators share a factor are not MSTD.**
+Let $n \ge 3$ and $m \ge 2$ be natural numbers, and let $s_1, s_2, p_1, p_2, q_1, q_2$ be natural
+numbers with $p_1 > 0$, $p_2 > 0$, $\gcd(p_1, q_1) = \gcd(p_2, q_2) = 1$ and $\gcd(q_1, q_2) > 1$.
+Let $x = s_1 + p_1/q_1$ and $d = s_2 + p_2/q_2$, where a fraction with denominator $0$ is read as
+$0$, and suppose that $x < n - 1 < d$. Write $I_n = \{0, 1, \dots, n - 1\}$ and
+$J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$. Then $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 

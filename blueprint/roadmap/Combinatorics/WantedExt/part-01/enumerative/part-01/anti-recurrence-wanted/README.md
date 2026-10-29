@@ -5,7 +5,7 @@ navigation: module
 # Anti Recurrence
 
 - [Block of successive mex values](anti-recurrence-block.md)
-- [Anti Recurrence State](anti-recurrence-state.md)
+- [State of the anti-recurrence construction](anti-recurrence-state.md)
 - [Anti-recurrence numbers](anti-recurrence.md)
 - [Non-anti-recurrence numbers](anti-recurrence-complement.md)
 - [First anti-Fibonacci anti-recurrence numbers](anti-recurrence-anti-fibonacci-small.md)

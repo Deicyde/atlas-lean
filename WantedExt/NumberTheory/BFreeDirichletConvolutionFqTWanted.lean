@@ -486,10 +486,21 @@ public theorem weightedMonicConvSum_zero {F : Type*} [Field F] (γ α β : F[X] 
     exact monic_natDegree_le_zero_iff
   rw [weightedMonicConvSum, hset, finsum_mem_singleton, monicDirichletConv_one]
 
-/-- Lemma 3: for completely multiplicative `α, β` (monoid homomorphisms, as in Lemma 2) and monic
-`f`, `S_f[α, β](n) = ∑_{d ∣ f} α(d) β(f/d) ∑_{ℓ ∣ d} μ(ℓ) β(ℓ) D[α, β](n - deg(f ℓ))`, sums over
-monic divisors; `D` vanishes at negative arguments. The paper leaves `f ∈ 𝔽_q[T]` unrestricted; its
-proof applies Lemma 2, which needs `f` monic.
+/-- **Shifted partial sums for completely multiplicative functions.** Let $F$ be a finite field
+and let $\alpha, \beta \colon F[T] \to \mathbb{C}$ be completely multiplicative, that is, monoid
+homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. Write $\mu$ for the Möbius
+function of $F[T]$. For $f \in F[T]$, a natural number $n$ and an integer $k$, write
+$S_f[\alpha, \beta](n)$ and $D[\alpha, \beta](k)$ for the shifted partial sums and the partial
+sums of the Dirichlet convolution of $\alpha$ and $\beta$ over monic divisors, where
+$D[\alpha, \beta](k) = 0$ for $k < 0$. Then for every monic $f \in F[T]$ and every natural number
+$n$,
+$$S_f[\alpha, \beta](n) = \sum_{d \mid f} \alpha(d)\, \beta(f/d) \sum_{\ell \mid d} \mu(\ell)\,
+\beta(\ell)\, D[\alpha, \beta](n - \deg(f \ell)),$$
+where $d$ runs over the monic divisors of $f$, $\ell$ over the monic divisors of $d$, and
+$n - \deg(f \ell)$ is computed in the integers.
+
+The paper states this for every $f \in F[T]$, monic or not; its proof applies Lemma 2, which needs
+$f$ monic.
 
 Source: Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free
 Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 3
@@ -549,9 +560,18 @@ public theorem_wanted weightedMonicConvSum_eq_of_completelyMultiplicative {F : T
             ∑ᶠ ℓ ∈ {ℓ : F[X] | ℓ.Monic ∧ ℓ ∣ d},
               (moebius ℓ : ℂ) * β ℓ * monicConvPartialSum α β ((n : ℤ) - (f * ℓ).natDegree)
 
-/-- Lemma 5: for monic `f` and positive `κ(P)`, `(1_{B_κ} * μ)(f) = μ(f^{1/κ})` if `f^{1/κ} ∈ M`
-and `0` otherwise. `f^{1/κ} ∈ M` means `f = r ^ κ` for a (unique) monic `r`, so the right side is
-the sum of `μ(r)` over monic `r` with `r ^ κ = f`.
+/-- **Convolution of the $B_\kappa$-free indicator with the Möbius function.** Let $F$ be a field
+and let $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ne 0$ for
+every monic irreducible $P \in F[T]$. Let $\mathbf{1}_{B_\kappa} \colon F[T] \to \mathbb{C}$ be
+the indicator function of the $B_\kappa$-free polynomials, let $\mu$ be the Möbius function of
+$F[T]$, and write $r^\kappa$ for the $\kappa$-power of a polynomial $r$. Then for every monic
+$f \in F[T]$, the Dirichlet convolution of $\mathbf{1}_{B_\kappa}$ and $\mu$ over monic divisors
+satisfies
+$$(\mathbf{1}_{B_\kappa} * \mu)(f) = \sum_{r} \mu(r),$$
+the sum running over the monic $r \in F[T]$ with $r^\kappa = f$.
+
+There is at most one such $r$, so the right side is $\mu(r)$ if $f = r^\kappa$ for a monic $r$,
+and $0$ if there is no such $r$.
 
 Source: Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free
 Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 5

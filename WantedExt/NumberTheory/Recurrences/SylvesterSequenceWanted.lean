@@ -46,8 +46,9 @@ $2, 3, 7, 43, 1807, \dots$. It is the generalized Sylvester sequence with parame
 abbrev sylvesterNumber (n : ℕ) : ℕ :=
   Nat.generalizedSylvester 1 n
 
-/-- **Proposition 1, divisibility**: for positive `k` and `m n ≥ k`,
-`(S_k - 1)^2` divides `S_n - S_m` over `ℤ`.
+/-- **Divisibility of differences of Sylvester numbers.** Let $(S_n)_{n \ge 0}$ be the Sylvester
+sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For all natural numbers $k$, $m$ and $n$
+with $k \ge 1$, $m \ge k$ and $n \ge k$, the integer $(S_k - 1)^2$ divides $S_n - S_m$.
 
 Source: Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 1, divisibility (4). -/
 theorem_wanted sylvester_sub_dvd
@@ -79,8 +80,9 @@ theorem_wanted sylvester_modEq_forty_three_mod_1764
     (n : ℕ) (hn : 3 ≤ n) :
     sylvesterNumber n % 1764 = 43
 
-/-- **Proposition 2, divisibility**: for positive `k` and `n ≥ k`,
-`S_k^2 + 1` divides `S_n - (-1)^(n-k) S_k` over `ℤ`.
+/-- **Alternating divisibility for Sylvester numbers.** Let $(S_n)_{n \ge 0}$ be the Sylvester
+sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For all natural numbers $k$ and $n$ with
+$1 \le k \le n$, the integer $S_k^2 + 1$ divides the integer $S_n - (-1)^{n-k} S_k$.
 
 Source: Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 2, divisibility (8). -/
 theorem_wanted sylvester_sq_add_one_dvd_sub
@@ -98,8 +100,9 @@ theorem_wanted sylvester_even_index_mod_ten
     (i : ℕ) (hi : 1 ≤ i) :
     sylvesterNumber (2 * i) % 10 = 7
 
-/-- **Proposition 2, congruence (9), odd indices**:
-`S_{2i+1} ≡ 3 (mod 10)` for `i ≥ 1`.
+/-- **Sylvester numbers of odd index modulo 10.** Let $(S_n)_{n \ge 0}$ be the Sylvester
+sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $i \ge 1$,
+$S_{2i+1} \equiv 3 \pmod{10}$.
 
 Source: Abderrahim Makki Naciri, "A Note on Sylvester's Sequence", Proposition 2, congruence (9), odd indices. -/
 theorem_wanted sylvester_odd_index_mod_ten

@@ -32,7 +32,7 @@ $Q$ (each interval's low endpoint is at most the other's high endpoint).
 - [Overlap test for closed intervals](overlaps-2.md)
 - [Overlap test with comparison count](overlaps-with-cost.md)
 - [The instrumented overlap test returns the plain result](overlaps-with-cost-fst.md)
-- [Cached Max?](cached-max.md)
+- [Cached maximum of an interval tree](cached-max.md)
 - [Instrumented overlap search](search-with-cost.md)
 - [Completeness of interval-tree search](search-complete.md)
 

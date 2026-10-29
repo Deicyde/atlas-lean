@@ -10,7 +10,7 @@ navigation: module
 
 ## Tok Then
 
-- [Out](out.md)
+- [Output of an emitter on a bit string](out.md)
 - [Stacks of the tokenize-then-emit machine](k.md)
 - [Alphabets of the tokenize-then-emit machine](untitled.md)
 - [Labels of the tokenize-then-emit machine](l.md)

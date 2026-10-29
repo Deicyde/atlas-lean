@@ -21,7 +21,7 @@ chosen proof of regularity.
 
 ## Proof depends on
 
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 
 ## Sources
 

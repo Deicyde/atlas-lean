@@ -22,7 +22,7 @@ navigation: module
 - [The odd squarefree part of $360$](is-odd-squarefree-part-360.md)
 - [The order $\Omega(m)$ of $2$, doubled when odd](mersenne-omega.md)
 - [$\Omega$ for the seed $37$](mersenne-omega-1365.md)
-- [Mersenne Eta Condition](mersenne-eta-condition.md)
+- [Condition (etar) on Jacobi symbols of $M_n$](mersenne-eta-condition.md)
 - [Condition (etar) for the seed $37$](mersenne-eta-condition-37.md)
 - [Infinitely many acceptable seeds with the same odd squarefree parts](infinite-acceptable-seeds-same-parts.md)
 - [Order of $2$ modulo a product of coprime odd numbers](order-of-two-mul-coprime.md)

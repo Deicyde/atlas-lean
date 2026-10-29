@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dyck Subword Count](dyck-subword-count.md)
+- [Number of occurrences of a subword](dyck-subword-count.md)
 - [Non-decreasing Dyck paths of semilength $n$](nondecreasing-dyck-words.md)
 
 ## Sources

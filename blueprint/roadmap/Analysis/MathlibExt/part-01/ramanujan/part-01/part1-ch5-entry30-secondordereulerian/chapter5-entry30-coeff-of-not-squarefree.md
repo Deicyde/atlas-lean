@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_of_not_squarefree
 ---
 
-# Chapter5 Entry30 Coeff of not squarefree
+# Entry 30 coefficients vanish at nonzero non-squarefree natural numbers
 
-The coefficient vanishes at every non-squarefree `n`.
+**Entry 30 coefficients vanish at nonzero non-squarefree natural numbers.** For every
+function $a : \mathbb{N} \to \mathbb{C}$ and every natural number $n \ne 0$ that is not
+squarefree, the Entry 30 coefficient $c_a(n)$ is $0$.
 
 ## Depends on
 

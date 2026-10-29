@@ -15,5 +15,5 @@ navigation: module
 - [The Abel continuation as a Mellin transform](abel-continuation-eq-mul-mellin.md)
 - [Complex differentiability of the Abel continuation](differentiable-at-abel-continuation.md)
 - [Analyticity of the Abel continuation](analytic-on-abel-continuation.md)
-- [Abel Continuation eq LSeries](abel-continuation-eq-lseries.md)
+- [Abel continuation agrees with the Dirichlet series](abel-continuation-eq-lseries.md)
 - [Abel continuation as the limit of Dirichlet partial sums](tendsto-abel-continuation-icc.md)

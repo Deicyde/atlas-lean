@@ -352,11 +352,15 @@ public theorem_wanted pow_mod_relations_of_orderOf_eq_six_mul (p i j B : ℕ) (h
     B ^ (2 * Q) % n = B ^ Q % n - 1 ∧ B ^ (4 * Q) % n = B ^ (5 * Q) % n - 1 ∧
       B ^ Q % n + B ^ (5 * Q) % n = n + 1 ∧ B ^ (3 * Q) % n = n - 1 ∧ Q ^ 2 ≡ Q [MOD 6 * Q]
 
-/-- For `n = p^i` (`p ≡ 1 (mod 6)` prime), `Q = p^j`, a small base `B` of order `L = 6Q`,
-`f = ±1`, `d ≡ 2fQ` and
-`e ≡ fQ (mod L)`: with multiplier `m_s = 1` the digit difference `D = n (r_e - r_d)`
-(`r_j = ⌊B^(j+1)/n⌋ mod B`) equals `B + B_(d+1) - B_(e+1)` and lies in `{0, n}`. Stated for every
-`i, j`.
+/-- **Digit differences for a base of order $6p^j$ modulo $p^i$.** Let $p$ be a prime with
+$p \equiv 1 \pmod 6$, let $i$ and $j$ be natural numbers, and put $n = p^i$ and $Q = p^j$. Let
+$B < n$ be a natural number whose multiplicative order modulo $n$ is $6Q$, let $f \in \{1, -1\}$,
+and let $d$ and $e$ be natural numbers with $d \equiv 2fQ \pmod{6Q}$ and $e \equiv fQ \pmod{6Q}$.
+For natural $s$ write $r_s = \lfloor B^{s+1}/n \rfloor \bmod B$ for the $s$-th base-$B$ digit of
+$1/n$, and put $D = n(r_e - r_d)$. Then $D = B + (B^{d+1} \bmod n) - (B^{e+1} \bmod n)$, and
+$D = 0$ or $D = n$.
+
+The statement is made for all natural numbers $i$ and $j$.
 
 Source: R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025),
 Article A26, Lemma 14 (`integers-2025-A26-lem-14`). -/
@@ -569,7 +573,12 @@ public theorem_wanted repetend_columns_one_to_three_ne_zero_five (p k t : ℕ) (
     ∀ i ∈ ({1, 2, 3} : Finset ℕ), ∀ j ∈ ({0, 5} : Finset ℕ),
       (B.val.map fun b => b ^ (i + 1) / n % b) ≠ B.val.map fun b => b ^ (j + 1) / n % b
 
-/-- In the setting of Lemma 37, column `4` matches neither column `0` nor column `5`.
+/-- **Column $4$ of the order-$6$ repetend table of $t p^k$ differs from columns $0$ and $5$.**
+Let $p$ be a prime with $p \equiv 1 \pmod 6$, let $k \ge 1$ and $t \in \{1, 2\}$, and put
+$n = t p^k$. Let the rows be the integers $b$ with $1 \le b < n$, $\gcd(b, n) = 1$ and
+multiplicative order $6$ modulo $n$, and let column $j$ be the multiset of the digits
+$\lfloor b^{j+1}/n \rfloor \bmod b$ over these rows. Then column $4$ is different from column $0$
+and from column $5$.
 
 Source: R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025),
 Article A26, Lemma 39 (`integers-2025-A26-lem-39`). -/

@@ -15,7 +15,7 @@ evaluation of $D$ against $f$, we have $f(nD) = f(D)^n$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
 - [Evaluation of a divisor against a function](eval.md)
 
 ## Proof depends on

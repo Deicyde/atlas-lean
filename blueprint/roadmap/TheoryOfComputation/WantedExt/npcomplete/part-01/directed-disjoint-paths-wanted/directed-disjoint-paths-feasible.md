@@ -22,7 +22,7 @@ $\pi_p$ and $\pi_q$.
 
 ## Proof depends on
 
-- [Directed adjacency in an arc list](dadj.md)
+- [Directed adjacency for DIRECTED DISJOINT PATHS](dadj.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ ordered type, its consolidation represents the same multiset as the original lis
 ## Depends on
 
 - [Consolidation of a forest](consolidate.md)
-- [Elements](elements-2.md)
+- [Multiset of a Fibonacci forest](elements-2.md)
 - [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on

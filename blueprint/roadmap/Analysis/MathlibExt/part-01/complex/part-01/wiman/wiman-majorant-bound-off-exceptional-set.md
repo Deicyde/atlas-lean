@@ -20,7 +20,7 @@ $M_f(e^x) \le C\,\mu_f(e^x)\,\bigl(1 + g_f(x)^{81/128}\bigr)$.
 
 - [Transcendental functions](../../part-02/wiman/is-transcendental.md)
 - [Wiman exceptional set](two-power-bad-sets/wiman-exceptional-set.md)
-- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](coefficient-exponential-family/wiman-growth.md)
 - [Radial majorant](radial-majorant/wiman-majorant.md)
 - [Wiman maximum term](../../part-02/wiman/wiman-maximum-term.md)
 

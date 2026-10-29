@@ -21,7 +21,7 @@ program are those of the verifier machine of mode $m$.
 
 - [Stacks of the CLIQUE verifier](../clique-verify/k.md)
 - [Labels of the CLIQUE verifier](../clique-verify/lab.md)
-- [Prog](../clique-verify/prog.md)
+- [Program of the clique verifier](../clique-verify/prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources

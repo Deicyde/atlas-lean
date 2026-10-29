@@ -44,7 +44,8 @@ open DepthFirstSearch
 set_option warn.classDefReducibility false in
 attribute [local instance 5] instDecidableEqOfLawfulBEq
 
-/-- Two vertices are strongly connected when each is reachable from the other. -/
+/-- **Strongly connected vertices.** In a directed adjacency graph $G$, vertices $u$ and $v$ are
+strongly connected when $v$ is reachable from $u$ and $u$ is reachable from $v$ in $G$. -/
 public def StronglyConnected {V : Type u} (graph : DirectedAdjacency V)
     (left right : V) : Prop :=
   graph.Reachable left right ∧ graph.Reachable right left

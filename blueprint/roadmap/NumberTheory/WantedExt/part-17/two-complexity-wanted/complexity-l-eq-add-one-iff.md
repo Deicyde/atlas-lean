@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_eq_add_one_iff
 ---
 
-# Proposition 3
+# Even $n$ with $2^m < n \le 2^{m+1}$ and 2-complexity $m + 1$
 
-**Proposition 3** (= **Theorem 1**(1)): for `m ≥ 1` and
-positive even `n` with `2^m < n ≤ 2^(m+1)`, `‖n‖₂ = m + 1`
-if and only if `n = 2^m + 2^t` for some `1 ≤ t ≤ m`
-(the case `t = m` gives `n = 2^(m+1)`).
+**Even $n$ with $2^m < n \le 2^{m+1}$ and 2-complexity $m + 1$.** Write $\|n\|_2$ for the
+2-complexity of $n$. Let $m \ge 1$ and let $n$ be an even natural number with
+$2^m < n \le 2^{m+1}$. Then $\|n\|_2 = m + 1$ if and only if $n = 2^m + 2^t$ for some natural
+number $t$ with $1 \le t \le m$.
+
+The case $t = m$ gives $n = 2^{m+1}$.
 
 ## Depends on
 

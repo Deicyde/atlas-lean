@@ -1214,10 +1214,17 @@ private lemma catalanExp_tendsto_nat_pow_mul_of_diff_isBigO (e : ℕ → ℝ) (M
       field_simp
 
 /--
-An all-orders Bernoulli-polynomial expansion obtained from a logarithmic
-first-difference equation. The normalization `u n → 0` fixes the otherwise
-undetermined additive constant. Its coefficients use Mathlib's
-`Polynomial.bernoulli`, evaluated by `Polynomial.aeval`.
+**Bernoulli-polynomial expansion from a logarithmic difference equation.** Let $\alpha$, $\beta$
+and $c$ be real numbers and let $(u_n)$ be a real sequence with $u_n \to 0$ such that, for all
+sufficiently large $n$,
+$u_{n+1} - u_n = \log(1 + \alpha/(n + c)) - \log(1 + \beta/(n + c)) +
+(\beta - \alpha) \log(1 + 1/(n + c))$.
+Let $B_k(x)$ be the $k$-th Bernoulli polynomial and, for $j \ge 0$, put
+$a_j = (-1)^j \left(B_{j+2}(\alpha) - B_{j+2}(\beta)\right) / ((j + 1)(j + 2))$. Then for every
+natural number $M$, $(n + c)^M \left(u_n - \sum_{j=0}^{M-1} a_j (n + c)^{-(j+1)}\right) \to 0$
+as $n \to \infty$.
+
+The normalization $u_n \to 0$ fixes the otherwise undetermined additive constant.
 -/
 public theorem _root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
     {u : ℕ → ℝ} (α β c : ℝ)
@@ -1463,8 +1470,13 @@ private lemma catalanExp_shifted_log_step (c : ℝ) :
   linear_combination hbase
 
 /--
-The all-orders logarithmic asymptotic expansion of the Catalan numbers at an
-arbitrary real shift, with coefficients given by differences of Bernoulli polynomials.
+**All-orders logarithmic expansion of the Catalan numbers at a real shift.** Let $c$ be a real
+number, let $C_n$ be the $n$-th Catalan number and $B_k(x)$ the $k$-th Bernoulli polynomial, and
+for $j \ge 0$ put
+$a_j = (-1)^j \left(B_{j+2}(1/2 - c) - B_{j+2}(2 - c)\right) / ((j + 1)(j + 2))$.
+Then for every natural number $M$,
+$(n + c)^M \left(\log\left(C_n \sqrt{\pi (n + c)^3} / 4^n\right) -
+\sum_{j=0}^{M-1} a_j (n + c)^{-(j+1)}\right) \to 0$ as $n \to \infty$.
 -/
 public theorem _root_.tendsto_pow_mul_log_catalan_sub_bernoulli_sum (c : ℝ) :
     ∀ M : ℕ,

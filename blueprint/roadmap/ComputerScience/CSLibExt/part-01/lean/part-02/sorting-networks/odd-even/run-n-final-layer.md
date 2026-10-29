@@ -18,7 +18,7 @@ the maximum of the values of $f$ on these two wires, and every other wire keeps 
 
 ## Depends on
 
-- [Running a comparator network](../bitonic/run-n.md)
+- [Running a comparator network on natural-number-indexed wires](../bitonic/run-n.md)
 - [Last layer of the odd-even merger](final-layer.md)
 
 ## Proof depends on

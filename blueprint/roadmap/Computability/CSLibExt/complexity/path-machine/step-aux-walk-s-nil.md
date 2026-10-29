@@ -16,8 +16,8 @@ state false and the same stacks $S$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the PATH marking machine](k.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 - [Walk step of the PATH marking machine](walk-s.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)

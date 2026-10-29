@@ -34,6 +34,6 @@ navigation: module
 - [Kd-trees built from axis 0 satisfy the kd invariant](valid-build-root.md)
 - [Building a kd-tree from axis 0 preserves its points](to-list-build-root-perm.md)
 - [Range report of a built kd-tree as a filter](report-build.md)
-- [Range report of a built kd-tree](report-build-perm.md)
-- [Range report of a built kd-tree](mem-report-build-iff.md)
+- [Range report of a built kd-tree up to order](report-build-perm.md)
+- [Membership in the range report of a built kd-tree](mem-report-build-iff.md)
 - [Range report of a kd-tree built from the first axis](mem-report-build-root-iff.md)

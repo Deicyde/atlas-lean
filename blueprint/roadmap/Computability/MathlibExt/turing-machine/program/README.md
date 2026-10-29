@@ -25,14 +25,14 @@ navigation: module
 
 - [Pushing symbols onto several stacks](push-all.md)
 - [Adding units to target stacks](add-u.md)
-- [Xfer](xfer.md)
+- [Counter transfer loop](xfer.md)
 - [Running a counter transfer](xfer-run.md)
 
 ## Comparison of two counters
 
 - [One round of counter comparison](cmp-step.md)
 - [The comparison loop](cmp-loop-run.md)
-- [Cmp run](cmp-run.md)
+- [Non-destructive comparison of two counters](cmp-run.md)
 
 ## For-loops over a counter
 

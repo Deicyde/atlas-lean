@@ -18,7 +18,7 @@ and only if the evaluation of $c$ at $[n]$ is defined.
 ## Depends on
 
 - [Halting of a multi-stack machine on an input](tm2-halts-on.md)
-- [Fwd TM](../to-tm2/fwd-tm.md)
+- [The wrapped machine of a code](../to-tm2/fwd-tm.md)
 
 ## Proof depends on
 
@@ -26,7 +26,7 @@ and only if the evaluation of $c$ at $[n]$ is defined.
 - [Statements of the wrapped machine](../to-tm2/fstmt.md)
 - [Stack alphabets of the wrapped machine](../to-tm2/f.md)
 - [Labels of the wrapped machine](../to-tm2/f-2.md)
-- [Label Rel](../to-tm2/label-rel.md)
+- [Correspondence of labels between the code evaluator and the wrapped machine](../to-tm2/label-rel.md)
 - [Adapter labels](../to-tm2/phase.md)
 - [Simulation relation between the code evaluator and the wrapped machine](../to-tm2/tr-rel.md)
 - [Bits as stack symbols](../to-tm2/bool-to.md)

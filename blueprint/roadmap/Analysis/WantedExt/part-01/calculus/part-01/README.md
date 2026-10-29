@@ -12,7 +12,7 @@ navigation: transparent
 - [Isolated points of a graph are countable](countable-diff-set-of-exists-seq-tendsto.md)
 - [Green's theorem](greens-theorem.md)
 - [An implicit function for $x^2y_1+e^x+y_2=0$ near $(1,-1)$](exists-implicit-function-sq-mul-add-exp.md)
-- [Integral Sin Sq Unit Window Bound Wanted](abs-integral-sin-sq-lt-inv.md)
+- [Unit-window bound for the integral of $\sin(t^2)$](abs-integral-sin-sq-lt-inv.md)
 - [The integral of $x f(x) f'(x)$ equals $-1/2$](integral-mul-mul-deriv-eq-neg-half.md)
 - [Fixed points of maps whose iterates have null Lipschitz constants](exists-fixed-point-of-iterate-lipschitz.md)
 - [Cauchy's formula for the twice-iterated integral](interval-integral-interval-integral-eq-i.md)

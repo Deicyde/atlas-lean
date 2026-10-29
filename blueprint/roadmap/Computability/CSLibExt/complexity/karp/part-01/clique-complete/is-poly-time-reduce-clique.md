@@ -35,7 +35,7 @@ $\varphi$. Then $f$ is computable in polynomial time.
 - [Stack alphabets of the CLIQUE emitter](../clique-emit/untitled.md)
 - [Emitter](../../part-02/tok-then/emitter.md)
 - [Emitter reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
-- [Out](../../part-02/tok-then/out.md)
+- [Output of an emitter on a bit string](../../part-02/tok-then/out.md)
 - [The CLIQUE emitter](emit-clique.md)
 - [Fixed no-instance](../clique/no-kg.md)
 - [Karp's CLIQUE instance of a CNF formula](../clique/to-clique.md)

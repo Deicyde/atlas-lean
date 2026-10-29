@@ -14,7 +14,7 @@ the root for an internal node.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 
 ## Sources
 

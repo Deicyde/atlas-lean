@@ -26,7 +26,7 @@ are rejected.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Quadratic Assignment Feasible](quadratic-assignment-feasible.md)
+- [Feasible quadratic assignment instances](quadratic-assignment-feasible.md)
 - [Instances of QUADRATIC ASSIGNMENT](quadratic-assignment-instance.md)
 - [Well-formed quadratic assignment instances](well-formed.md)
 

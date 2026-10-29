@@ -27,7 +27,7 @@ at $x$ are edges of $G$.
 - [Incidence](edge-indexed-multigraph/inc.md)
 - [Indexed walk](edge-indexed-multigraph/indexed-walk.md)
 - [Eulerian indexed walk](edge-indexed-multigraph/is-eulerian.md)
-- [Is Trail](edge-indexed-multigraph/is-trail.md)
+- [Indexed trail](edge-indexed-multigraph/is-trail.md)
 - [Edge list of an indexed walk](edge-indexed-multigraph/edges.md)
 - [Edge list of an extended indexed walk](edge-indexed-multigraph/edges-cons.md)
 - [Edges of the forgetful walk](edge-indexed-multigraph/edges-to-walk.md)
@@ -51,7 +51,7 @@ at $x$ are edges of $G$.
 - [Contracting the complement of a vertex set](../part-01/contraction/contract-outside.md)
 - [Neighbors of the contraction vertex](../part-01/contraction/contract-outside-adj-none.md)
 - [Contraction preserves adjacency among retained vertices](../part-01/contraction/contract-outside-adj-some.md)
-- [Square](../part-04/square/square.md)
+- [Square of a graph](../part-04/square/square.md)
 - [Adjacency in the graph square](../part-04/square/square-adj.md)
 
 ## Sources

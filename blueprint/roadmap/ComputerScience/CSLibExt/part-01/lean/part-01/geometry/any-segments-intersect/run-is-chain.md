@@ -24,7 +24,7 @@ ends with status list $T$, then no two consecutive segments of $T$ meet.
 - [Segment strictly below a point](below.md)
 - [Sweep order on endpoint events](key.md)
 - [Left endpoint of a segment](left.md)
-- [Left mem of right mem](left-mem-of-right-mem.md)
+- [A sweep prefix with a right endpoint has its left endpoint](left-mem-of-right-mem.md)
 - [Right endpoint of a segment](right.md)
 - [The sweep status holds the active segments](run-mem-iff.md)
 - [One step of the sweep](step.md)

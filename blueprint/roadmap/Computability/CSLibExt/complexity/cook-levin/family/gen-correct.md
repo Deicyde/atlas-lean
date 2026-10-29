@@ -32,7 +32,7 @@ $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by 
 - [Well-formed situation tables for the transition clauses](wf.md)
 - [The transition clause family](family.md)
 - [Initial counters of the transition-clause generator](init-f.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Reachability for a TM2 machine](../../../../MathlibExt/turing-machine/program/reach.md)
 

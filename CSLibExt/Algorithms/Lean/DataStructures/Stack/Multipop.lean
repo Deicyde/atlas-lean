@@ -47,7 +47,9 @@ public def multipop {α : Type u} : List α → Nat → TimeM Nat (List α)
     TimeM.tick 1
     multipop tail k
 
-/-- The timed loop removes exactly the requested prefix, stopping at empty. -/
+/-- **Result of MULTIPOP.** For every stack $S$, stored as a list with its top first, and every
+natural number $k$, the stack returned by MULTIPOP of $S$ with count $k$ is $S$ with its top $k$
+elements removed, or the empty stack if $S$ has fewer than $k$ elements. -/
 public theorem multipop_ret {α : Type u} (stack : List α) (k : Nat) :
     (multipop stack k).ret = stack.drop k := by
   induction k generalizing stack with

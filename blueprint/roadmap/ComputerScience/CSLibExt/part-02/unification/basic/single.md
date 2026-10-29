@@ -5,10 +5,10 @@ statement: formalized
 lean: Cslib.Unification.Subst.single
 ---
 
-# Single-variable substitution
+# Single-variable substitution on first-order terms
 
-**Single-variable substitution.** For a variable $x$ and a term $t$, the substitution
-$[x \mapsto t]$ sends $x$ to $t$ and every other variable $y$ to the term $y$.
+**Single-variable substitution on first-order terms.** For a variable $x$ and a term $t$, the
+substitution $[x \mapsto t]$ sends $x$ to $t$ and every other variable $y$ to the term $y$.
 
 ## Depends on
 

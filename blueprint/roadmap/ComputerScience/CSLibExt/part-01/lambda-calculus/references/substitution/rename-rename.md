@@ -20,7 +20,7 @@ by the composite $\rho' \circ \rho$.
 
 ## Proof depends on
 
-- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder in the lambda calculus with references](../syntax/lift-ren.md)
 - [Renaming respects pointwise equality](rename-congr.md)
 - [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 

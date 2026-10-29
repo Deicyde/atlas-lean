@@ -16,7 +16,7 @@ A refutation uses only finitely many hypotheses, and these all lie in a single m
 
 ## Depends on
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 
 ## Proof depends on
 

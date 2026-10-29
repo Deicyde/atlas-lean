@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists additive basis of pos schnirelmann Density](../../../Combinatorics/MathlibExt/part-03/schnirelmann/exists-additive-basis-of-pos-schnirelman.md)
+- [Schnirelmann's basis theorem](../../../Combinatorics/MathlibExt/part-03/schnirelmann/exists-additive-basis-of-pos-schnirelman.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ empty.
 - [Stacks of the generic host](hk.md)
 - [Labels of the generic host](hlab.md)
 - [Alphabets of the generic host](h.md)
-- [Stacks emptied by the cleanup](clean-ks.md)
+- [Cleanup stacks of the generic host](clean-ks.md)
 - [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 - [Cleanup round](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
@@ -31,7 +31,7 @@ empty.
 ## Proof depends on
 
 - [The list of host stacks](all-ks.md)
-- [Stacks emptied by the cleanup](mem-clean-ks.md)
+- [Membership in the cleanup stacks of the generic host](mem-clean-ks.md)
 - [Cleanup empties its stacks](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 
 ## Sources

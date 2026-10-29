@@ -16,7 +16,7 @@ $P = 0$, then $E$ is supersingular.
 
 ## Depends on
 
-- [Is Supersingular](is-supersingular.md)
+- [Supersingular elliptic curves](is-supersingular.md)
 
 ## Sources
 

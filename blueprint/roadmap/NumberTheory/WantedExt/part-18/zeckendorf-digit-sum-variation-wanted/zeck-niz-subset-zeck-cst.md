@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.zeckNIZ_subset_zeckCST
 ---
 
-# Zeck NIZ subset zeck CST
+# New-information zones lie in $\mathrm{CST}_k$
 
-`NIZ_k ⊆ CST_k`.
+**New-information zones lie in $\mathrm{CST}_k$.** For all $r, k \in \mathbb{N}$, the
+new-information zone $\mathrm{NIZ}_k$ of order $k$ for the shift $r$ is contained in the set
+$\mathrm{CST}_k$ for the shift $r$.
 
 ## Depends on
 

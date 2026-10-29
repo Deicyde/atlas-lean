@@ -37,7 +37,7 @@ $w \star$ followed by the bottom of $A$, where $\star$ is the row separator.
 - [Rewriting steps keep the letters of the instance](mem-symbols-of-step.md)
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
-- [The start domino](start-card.md)
+- [The start domino of the reduction from reachability to MPCP](start-card.md)
 
 ## Sources
 

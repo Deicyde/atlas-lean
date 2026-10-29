@@ -135,8 +135,9 @@ theorem steinerLength_nonneg {V : Finset Plane} (hV : V.Nonempty) :
     rintro l ⟨W, -, G, -, rfl⟩
     exact totalLength_nonneg G)
 
-/-- The Steiner ratio constant: infimum of Steiner-to-MST length ratios
-over finite planar point sets with at least two points. -/
+/-- **The Steiner ratio of the Euclidean plane.** The Steiner ratio constant is the infimum,
+over all finite sets $V$ of at least two points in the Euclidean plane $\mathbb{R}^2$, of the
+ratio of the Steiner minimal tree length of $V$ to the minimum spanning tree length of $V$. -/
 noncomputable def steinerRatioConstant : ℝ :=
   sInf { r | ∃ V : Finset Plane, 2 ≤ V.card ∧
     r = steinerLength V / mstLength V }

@@ -13,7 +13,7 @@ navigation: module
 - [Coefficients of Zurita's polynomial $N_{n-2}$](zurita-ncoeff.md)
 - [Values from Zurita's Tables 1-4](zurita-table-values.md)
 - [Zurita's polynomial $S_n$](zurita-s.md)
-- [Zurita T](zurita-t.md)
+- [Zurita's polynomial $T_{n-2}$](zurita-t.md)
 - [Zurita's polynomial $M_{n-1}$](zurita-m.md)
 - [Zurita's polynomial $N_{n-2}$](zurita-n.md)
 - [Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$](has-deriv-at-zurita-antiderivative-one.md)

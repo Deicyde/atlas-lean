@@ -5,11 +5,15 @@ statement: formalized
 lean: Cslib.Databases.LosslessJoin
 ---
 
-# Lossless Join
+# Lossless decomposition into two schemes
 
-The decomposition of `R₁ ∪ R₂` into `R₁` and `R₂` is lossless for `F`: every relation over
-`R₁ ∪ R₂` with values in `D` that satisfies the dependencies derivable from `F` between attributes
-of `R₁ ∪ R₂` is the join of its two projections.
+**Lossless decomposition into two schemes.** Let $F$ be a finite set of functional
+dependencies, let $R_1$ and $R_2$ be finite sets of attributes, and let $D$ be a type of values.
+The decomposition of $R_1 \cup R_2$ into $R_1$ and $R_2$ is lossless for $F$ with values in $D$
+when every relation $r$ over $R_1 \cup R_2$ with values in $D$ that satisfies $F$ on
+$R_1 \cup R_2$ (every dependency $X \to Y$ with $X, Y \subseteq R_1 \cup R_2$ that is derivable
+from $F$ by Armstrong's axioms holds in $r$) is the natural join of its projections:
+$\pi_{R_1}(r) \bowtie \pi_{R_2}(r) = r$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ of `R₁ ∪ R₂` is the join of its two projections.
 
 ## Proof depends on
 
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Natural join](../relational-algebra/join.md)

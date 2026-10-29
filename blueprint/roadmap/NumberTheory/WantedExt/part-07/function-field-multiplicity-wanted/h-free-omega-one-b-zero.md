@@ -30,7 +30,7 @@ The only monic polynomial of degree $0$ is $1$, which is $h$-free and has $\omeg
 - [The only monic polynomial of degree zero](fixed-degree-monic-zero.md)
 - [$h$-free polynomials](h-free.md)
 - [Number of prime factors of given multiplicity](omega-mult.md)
-- [Omega Mult one](omega-mult-one.md)
+- [$\omega_k$ vanishes at the polynomial $1$](omega-mult-one.md)
 - [The polynomial $1$ is $h$-free](one-mem-h-free.md)
 
 ## Sources

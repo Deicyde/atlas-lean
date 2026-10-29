@@ -23,7 +23,7 @@ $\operatorname{Re} s > 1$.
 ## Proof depends on
 
 - [The canonical prime logarithmic continuation](log-dirichlet-continuation.md)
-- [Log Dirichlet Continuation agree](log-dirichlet-continuation-agree.md)
+- [The prime logarithmic continuation on the half-plane $\operatorname{Re} s > 1$](log-dirichlet-continuation-agree.md)
 - [Analyticity of the prime logarithmic continuation](log-dirichlet-continuation-analytic-on.md)
 - [Meromorphy of the prime logarithmic continuation](log-dirichlet-continuation-meromorphic.md)
 

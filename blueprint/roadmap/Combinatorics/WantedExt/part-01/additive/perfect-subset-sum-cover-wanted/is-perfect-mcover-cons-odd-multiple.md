@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.isPerfectMCover_cons_oddMultiple
 ---
 
-# Is Perfect MCover cons odd Multiple
+# Replacing an entry of a perfect $2^k$-cover by an odd multiple
 
-If `(a, s_2, …)` is a perfect `2^k`-cover and `b` is an odd multiple of `a`, then
-`(b, s_2, …)` is also a perfect `2^k`-cover.
+**Replacing an entry of a perfect $2^k$-cover by an odd multiple.** Let $G$ be an abelian
+group, let $k$ and $N$ be natural numbers, and let $a, b, s_1, \dots, s_N \in G$. If the family
+$(a, s_1, \dots, s_N)$ is a perfect $2^k$-cover of $G$ and $b = (2j + 1)a$ for some integer $j$,
+then the family $(b, s_1, \dots, s_N)$ is also a perfect $2^k$-cover of $G$.
 
 ## Depends on
 

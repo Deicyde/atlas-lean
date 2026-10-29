@@ -15,7 +15,7 @@ $3, 2, 1, 3$.
 
 ## Depends on
 
-- [Dyck Peak Descents](dyck-peak-descents.md)
+- [Peak descents](dyck-peak-descents.md)
 
 ## Sources
 

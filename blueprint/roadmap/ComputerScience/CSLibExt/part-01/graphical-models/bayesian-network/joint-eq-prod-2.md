@@ -14,7 +14,7 @@ probability of the node's value given the values of its parents.
 ## Depends on
 
 - [Bayesian network](bayes-net.md)
-- [Joint](joint-2.md)
+- [Joint distribution of a Bayesian network](joint-2.md)
 
 ## Proof depends on
 

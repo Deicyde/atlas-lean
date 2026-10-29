@@ -7,7 +7,7 @@ navigation: module
 - [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 - [Membership in $\mathrm{LIP}(U)$](mem-lip-subring-iff.md)
 - [The triangular-number function is not LIP on the integers](triangular-not-mem-lip-subring-univ.md)
-- [Polynomial To LIP](polynomial-to-lip.md)
+- [The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$](polynomial-to-lip.md)
 - [Values of the evaluation map into LIP(U)](polynomial-to-lip-apply.md)
 - [Interpolation polynomial](interpolation-poly.md)
 - [The interpolation polynomial agrees with the function on its nodes](eval-interpolation-poly.md)

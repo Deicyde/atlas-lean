@@ -24,7 +24,7 @@ exactly when the left endpoint event of $j$ is in $P$ and the right endpoint eve
 - [Segment strictly below a point](below.md)
 - [Sweep order on endpoint events](key.md)
 - [Left endpoint of a segment](left.md)
-- [Left mem of right mem](left-mem-of-right-mem.md)
+- [A sweep prefix with a right endpoint has its left endpoint](left-mem-of-right-mem.md)
 - [One step of the sweep](step.md)
 - [Splitting a list at the first occurrence of a member](take-while-append-cons-tail-drop-while.md)
 - [Testing a segment against an optional neighbour](test-opt.md)

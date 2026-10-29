@@ -70,7 +70,11 @@ point $x \in \mathbb{R}^d$, the monomial $x^n$ is the real number $\prod_{i=1}^{
 def monomial {d : ℕ} (n : Fin d → ℕ) (x : EuclideanSpace ℝ (Fin d)) : ℝ :=
   ∏ i, (x i) ^ (n i)
 
-/-- The `n`-th moment `∫_{Iᵈ} xⁿ dμ`. -/
+/-- **Moments of a measure on the unit cube.** For a measure $\mu$ on $\mathbb{R}^d$ and a
+multi-index $n \in \mathbb{N}^d$, the $n$-th moment of $\mu$ is the real number
+$\int_{I^d} x^n \, d\mu(x)$, the integral over the closed unit cube $I^d = [0,1]^d$ of the
+monomial $x^n = \prod_{i=1}^{d} x_i^{n_i}$, taken to be $0$ when the monomial is not
+$\mu$-integrable on $I^d$. -/
 noncomputable def momentOf {d : ℕ} (μ : Measure (EuclideanSpace ℝ (Fin d)))
     (n : Fin d → ℕ) : ℝ :=
   ∫ x in cube d, monomial n x ∂μ

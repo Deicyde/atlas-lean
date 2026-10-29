@@ -25,7 +25,7 @@ are Nerode equivalent for the language of $M$, that is, have the same left quoti
 - [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
 - [The intermediate Brzozowski automaton](brzozowski-mid.md)
 - [Every state of the intermediate Brzozowski automaton is reachable](brzozowski-mid-surjective.md)
-- [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
+- [Early-stopping DFA reachability search](../../../decidability/part-02/regular/reachable-within.md)
 - [Determinized reversal of a DFA](rev-det.md)
 - [The determinized reversal accepts the reversed language](rev-det-accepts.md)
 - [Brzozowski's lemma](rev-det-eval-eq-iff.md)

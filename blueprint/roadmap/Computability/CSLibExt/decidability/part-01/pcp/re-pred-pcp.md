@@ -23,7 +23,7 @@ The proof searches all candidate sequences.
 
 - [PCP solution](is-solution.md)
 - [Bottom word of a domino sequence](bottom.md)
-- [Is Solution B](is-solution-b.md)
+- [Boolean check for PCP solutions](is-solution-b.md)
 - [Top word of a sequence of dominoes](top.md)
 
 ## Sources

@@ -16,7 +16,7 @@ Then $\sqrt{1/4 - \lambda}$ is at most Selberg's constant $C_{61}$.
 ## Depends on
 
 - [Congruence subgroup of the modular group](is-congruence-subgroup.md)
-- [Is Eigenvalue](is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](is-eigenvalue.md)
 - [Selberg's congruence spectral-gap constant](selberg-constant.md)
 
 ## Proof depends on

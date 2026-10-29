@@ -25,7 +25,7 @@ the end of the forest.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 - [Tree of a forest containing a vertex](find-tree.md)
 - [Grafting a tree below a vertex](graft-at.md)
 - [Removing the trees that contain a vertex](remove-tree.md)

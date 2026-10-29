@@ -22,4 +22,4 @@ navigation: module
 - [Terms of the complex digamma series](digamma-series-term.md)
 - [Complex digamma series](digamma-series-fun.md)
 - [Summability of the digamma series terms](summable-digamma-series-term.md)
-- [Has Sum digamma series](has-sum-digamma-series-2.md)
+- [Series expansion of the complex digamma function](has-sum-digamma-series-2.md)

@@ -42,7 +42,10 @@ theorem IsAdmissibleRadius.mono {R S : ℝ} (hR : IsAdmissibleRadius R) (hRS : R
   obtain ⟨c, hc, hdist⟩ := hR.2 n hn f hdeg hroots lambda0 hlambda0
   exact ⟨c, hc, hdist.trans hRS⟩
 
-/-- The infimum of the admissible positive radii in Sendov's problem. -/
+/-- **The Sendov radius.** The Sendov radius is the infimum, as a real number, of the set of
+admissible radii in Sendov's problem.
+
+By the convention for infima of real numbers, it would be $0$ if no radius were admissible. -/
 noncomputable def sendovRadius : ℝ :=
   sInf {R : ℝ | IsAdmissibleRadius R}
 

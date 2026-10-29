@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.SpragueGrundy.sprague_grundy
 ---
 
-# Sprague grundy
+# Sprague–Grundy theorem
 
-Sprague–Grundy theorem: every finite impartial game is equivalent to a
-single Nim heap.
+**Sprague–Grundy theorem.** Every impartial game $G$ is equivalent to a Nim heap: there is a
+natural number $n$ such that $G$ is equivalent to the Nim heap of size $n$.
 
 ## Depends on
 

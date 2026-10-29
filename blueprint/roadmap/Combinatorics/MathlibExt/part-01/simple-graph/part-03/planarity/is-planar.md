@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Segment](segment.md)
+- [Closed segment in the plane](segment.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ in both lists the same number of times.
 
 ## Depends on
 
-- [Heap Sort](heap-sort.md)
+- [Heap sort](heap-sort.md)
 
 ## Proof depends on
 

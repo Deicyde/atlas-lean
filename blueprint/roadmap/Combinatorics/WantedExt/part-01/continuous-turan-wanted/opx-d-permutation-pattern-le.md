@@ -17,7 +17,7 @@ $n^{d-1}$ means $1$ when $d = 0$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

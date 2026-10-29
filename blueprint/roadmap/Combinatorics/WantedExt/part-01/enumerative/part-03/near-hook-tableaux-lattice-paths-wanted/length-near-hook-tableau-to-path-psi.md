@@ -13,7 +13,7 @@ semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\psi(T)$ has l
 
 ## Depends on
 
-- [Near Hook Tableau To Path Psi](near-hook-tableau-to-path-psi.md)
+- [The map $\psi$ from near-hook tableaux to lattice paths](near-hook-tableau-to-path-psi.md)
 - [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources

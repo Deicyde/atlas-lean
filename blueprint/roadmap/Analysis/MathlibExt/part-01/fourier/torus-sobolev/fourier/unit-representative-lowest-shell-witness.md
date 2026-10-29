@@ -16,7 +16,7 @@ $(\mathbb{R}/\mathbb{Z})^2$, where $e_n(y) = e^{2\pi i\, n \cdot y}$ for $n \in 
 
 ## Depends on
 
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 - [Lowest-shell witness](lowest-shell-witness.md)
 - [A function on the torus as a function on the unit torus](../basic/unit-representative.md)
 

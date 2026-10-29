@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.BayesNet.sum_joint
 ---
 
-# Sum joint
+# The joint distribution of a Bayesian network sums to one
 
-The joint of a Bayesian network is a probability distribution.
+**The joint distribution of a Bayesian network sums to one.** Let $B$ be a Bayesian network
+on the nodes $0, \dots, n - 1$ with values in a finite nonempty type $\alpha$, and let $P$ be its
+joint distribution. Then $\sum_{x \in \alpha^n} P(x) = 1$.
 
 ## Depends on
 
 - [Bayesian network](bayes-net.md)
-- [Joint](joint-2.md)
+- [Joint distribution of a Bayesian network](joint-2.md)
 
 ## Proof depends on
 

@@ -13,7 +13,7 @@ started at $c$, is at configuration $d$ after exactly $n$ steps.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the dense-to-binary converter](lab.md)
 - [Stacks of the dense-to-binary machine](stk.md)
 
 ## Proof depends on

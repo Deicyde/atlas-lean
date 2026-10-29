@@ -23,5 +23,5 @@ navigation: module
 - [Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place](exists-place-equiv.md)
 - [Ostrowski's theorem for $\mathbb{Q}$, indexed by places](exists-unique-place-equiv.md)
 - [Embedding of $\mathbb{Q}$, normed by a place, into its completion](with-abs-embedding.md)
-- [With Abs Embedding isometry](with-abs-embedding-isometry.md)
+- [The embedding of $\mathbb{Q}$ into its completion at a place is an isometry](with-abs-embedding-isometry.md)
 - [Density of the rationals with a place's absolute value in the completion](dense-range-with-abs-embedding.md)

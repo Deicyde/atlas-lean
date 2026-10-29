@@ -17,7 +17,7 @@ stack outside $A$.
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources

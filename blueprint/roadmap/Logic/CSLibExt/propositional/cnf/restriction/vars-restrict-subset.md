@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.vars_restrict_subset
 ---
 
-# Vars restrict subset
+# Restriction does not add variables
 
-Restriction can only remove variables.
+**Restriction does not add variables.** For every CNF formula $\varphi$ and every literal
+$\ell$, every variable of the restriction of $\varphi$ by $\ell$ is a variable of $\varphi$.
 
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](restrict-2.md)
-- [Vars](vars-2.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Proof depends on
 

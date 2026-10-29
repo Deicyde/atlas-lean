@@ -18,7 +18,7 @@ point of $\mathbb{Z}^2$ equals $s v_i + t v_{i+1}$ for some integers $s$ and $t$
 
 - [Convergent vectors of a continued fraction](convergent-vec.md)
 - [Parallelogram spanned by two vectors](lattice-parallelogram.md)
-- [Lattice Points](lattice-points.md)
+- [The integer lattice in the plane](lattice-points.md)
 
 ## Sources
 

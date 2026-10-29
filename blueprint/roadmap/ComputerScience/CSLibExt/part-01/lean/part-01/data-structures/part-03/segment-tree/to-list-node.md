@@ -18,7 +18,7 @@ unfolding.
 
 ## Depends on
 
-- [Segment Tree](segment-tree.md)
+- [Segment tree](segment-tree.md)
 - [Leaf list of a segment tree](to-list.md)
 
 ## Proof depends on

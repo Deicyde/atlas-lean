@@ -14,7 +14,7 @@ $x \equiv b \pmod p$, the image of $P_a$ under $f$ is contained in $P_{f(a)}$.
 
 ## Depends on
 
-- [Lift Fiber](lift-fiber.md)
+- [Fibers of reduction modulo $p$ on units modulo $p^2$](lift-fiber.md)
 
 ## Sources
 

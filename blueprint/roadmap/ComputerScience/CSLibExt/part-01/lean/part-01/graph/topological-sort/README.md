@@ -10,7 +10,7 @@ navigation: module
 - [Kahn's topological sort](sort.md)
 - [Directed cycle within a vertex list](directed-cycle-in.md)
 - [Characterization of directed cycles within a vertex list](directed-cycle-in-iff.md)
-- [Is Acyclic](is-acyclic.md)
+- [Acyclic directed graph](is-acyclic.md)
 - [Acyclicity means having no directed cycle](is-acyclic-iff-no-directed-cycle.md)
 - [Topological order](is-topological-order.md)
 - [A successful topological sort has no repeated vertex](success-nodup.md)

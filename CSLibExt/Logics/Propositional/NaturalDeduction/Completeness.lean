@@ -78,7 +78,10 @@ theorem BoolSatisfiable.mono [Bot Atom] {S S' : Set (Proposition Atom)}
 
 variable [DecidableEq Atom] [Bot Atom] {T : Theory Atom}
 
-/-- `S` is consistent relative to `T`: no finite subset of `S` derives `⊥` from `T`. -/
+/-- **Consistency relative to a theory.** Let $T$ be a theory, that is, a set of propositions. A
+set $S$ of propositions is consistent relative to $T$ when there is no finite set
+$\Gamma \subseteq S$ such that the sequent $\Gamma \vdash \bot$ is derivable in natural deduction
+from $T$. -/
 def Theory.ConsistentWith (T : Theory Atom) (S : Set (Proposition Atom)) : Prop :=
   ∀ Γ : Ctx Atom, (Γ : Set (Proposition Atom)) ⊆ S → ¬ DerivableIn T (Γ ⊢ ⊥)
 
@@ -118,9 +121,10 @@ theorem exists_refutation {A : Proposition Atom} (hA : A ∉ M) :
   have hB' := Finset.mem_erase.mp hB
   exact (Set.mem_insert_iff.mp (hΔ hB'.2)).resolve_left hB'.1
 
-/-- **Maximal consistent sets are deductively closed.** Let $T$ be a theory and $M$ a maximal set
-of propositions consistent relative to $T$. If $\Gamma$ is a finite subset of $M$ and the sequent
-$\Gamma \vdash A$ is derivable in natural deduction from $T$, then $A \in M$. -/
+/-- **Maximal consistent sets are deductively closed in propositional natural deduction.** Let $T$
+be a theory and $M$ a maximal set of propositions consistent relative to $T$. If $\Gamma$ is a
+finite subset of $M$ and the sequent $\Gamma \vdash A$ is derivable in natural deduction from $T$,
+then $A \in M$. -/
 theorem mem_of_derivableIn {Γ : Ctx Atom} {A : Proposition Atom}
     (hΓ : (Γ : Set (Proposition Atom)) ⊆ M) (hder : DerivableIn T (Γ ⊢ A)) : A ∈ M := by
   by_contra hA

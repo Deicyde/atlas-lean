@@ -13,5 +13,5 @@ navigation: module
 - [Minimum spanning tree length](mst-length.md)
 - [Steiner minimal tree length](steiner-length.md)
 - [The Steiner length is at most the minimum spanning tree length](steiner-length-le-mst-length.md)
-- [Steiner Ratio Constant](steiner-ratio-constant.md)
+- [The Steiner ratio of the Euclidean plane](steiner-ratio-constant.md)
 - [Gilbert–Pollak conjecture](gilbert-pollak-conjecture.md)

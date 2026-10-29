@@ -25,7 +25,7 @@ for every real $R$ there is a real $r > R$ with $M(r) \le \mu(r) (\log \mu(r))^{
 - [Absorbing constants into the exponent gap](../eventually-absorb-corrected-wiman-expone.md)
 - [The maximum term tends to infinity along logarithmic radii](tendsto-wiman-maximum-term-exp-at-top.md)
 - [Wiman exceptional set](../two-power-bad-sets/wiman-exceptional-set.md)
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 - [Radial majorant](../radial-majorant/wiman-majorant.md)
 - [Majorant bound off an exceptional set](../wiman-majorant-bound-off-exceptional-set.md)
 - [The maximum modulus is at most the radial Taylor majorant](../wiman-maximum-modulus-le-wiman-majorant.md)

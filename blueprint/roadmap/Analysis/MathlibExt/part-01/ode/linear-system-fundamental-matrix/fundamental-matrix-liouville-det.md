@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Det of mul](det-of-mul.md)
+- [Jacobi's formula when the derivative is a left multiple of the matrix](det-of-mul.md)
 
 ## Sources
 

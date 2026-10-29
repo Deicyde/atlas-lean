@@ -41,7 +41,7 @@ $\mathrm{false}$.
 
 ## Proof depends on
 
-- [Is V](is-v.md)
+- [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Testing a popped input bit](is-v-val.md)
 - [Subset-sum emitter: one vertex number](round-run.md)
 - [Run of the mark-return loop of the subset-sum emitter](rs-run.md)

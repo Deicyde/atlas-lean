@@ -17,7 +17,7 @@ in $G$, packaged as an equivalence relation.
 
 ## Proof depends on
 
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strong connectivity is symmetric](symm.md)
 - [Strong connectivity is transitive](trans.md)
 - [Strong connectivity is reflexive](strongly-connected-refl.md)

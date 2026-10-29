@@ -19,7 +19,7 @@ $a(p)$ over the prime factors $p$ of $n$ when $n$ is squarefree, and $c_a(n) = 0
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Entry 30 coefficients vanish at nonzero non-squarefree natural numbers](chapter5-entry30-coeff-of-not-squarefree.md)
 - [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
 
 ## Sources

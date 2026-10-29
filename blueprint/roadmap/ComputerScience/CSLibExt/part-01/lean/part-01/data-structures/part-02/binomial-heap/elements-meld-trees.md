@@ -15,7 +15,7 @@ sum of the multisets of elements of $L$ and $R$.
 
 ## Depends on
 
-- [Elements](elements-2.md)
+- [Elements of a binomial forest](elements-2.md)
 - [Melding binomial forests](meld-trees.md)
 - [Binomial tree](binomial-tree.md)
 

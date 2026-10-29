@@ -5,5 +5,5 @@ navigation: module
 
 # Divisor
 
-- [Curve Divisor](curve-divisor.md)
-- [Coeff](coeff.md)
+- [Divisors on a curve](curve-divisor.md)
+- [Coefficient of a divisor at a point](coeff.md)

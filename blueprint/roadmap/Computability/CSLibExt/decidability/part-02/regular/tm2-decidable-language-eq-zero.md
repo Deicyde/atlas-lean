@@ -21,13 +21,13 @@ empty is decidable by a multi-stack machine. This is the problem $E_{\mathrm{DFA
 
 ## Proof depends on
 
-- [Is Empty B](is-empty-b-2.md)
+- [Emptiness test for encoded DFAs](is-empty-b-2.md)
 - [Letters of an encoded DFA](../../../automata/da/encoded-dfa/letters.md)
 - [Correctness of the bounded reachability search](mem-reach-n-iff.md)
 - [The transition function of encoded DFAs is primitive recursive](../../../automata/da/encoded-dfa/primrec-step.md)
 - [Bounded reachability search on lists of states](reach-n.md)
 - [One round of the list reachability search](reach-round.md)
-- [Reachable](reachable-2.md)
+- [Reachable states of an encoded DFA](reachable-2.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)

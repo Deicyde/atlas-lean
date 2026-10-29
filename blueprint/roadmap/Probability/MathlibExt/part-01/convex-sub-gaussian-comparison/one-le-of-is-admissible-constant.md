@@ -16,7 +16,7 @@ $x \mapsto x^2$.
 
 ## Depends on
 
-- [Is Admissible Constant](is-admissible-constant.md)
+- [Admissible convex sub-Gaussian comparison constants](is-admissible-constant.md)
 
 ## Proof depends on
 

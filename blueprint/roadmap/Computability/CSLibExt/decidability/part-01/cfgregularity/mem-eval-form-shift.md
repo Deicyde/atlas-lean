@@ -23,8 +23,8 @@ each nonterminal $n$ is read as $L_g(n)$.
 ## Depends on
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
-- [Reg Val](reg-val.md)
-- [Shift Sym](shift-sym.md)
+- [Languages assigned to the nonterminals of the regularity grammar](reg-val.md)
+- [Shifting a symbol into the regularity grammar](shift-sym.md)
 - [Alphabet letters in the extended alphabet](tl.md)
 - [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

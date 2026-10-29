@@ -22,7 +22,7 @@ of the directed line from $p$ to $q$.
 
 ## Proof depends on
 
-- [Planar determinant](det2.md)
+- [Planar determinant for Hippocrates' lunes](det2.md)
 - [Squared Euclidean distance in the plane](euclidean-dist-sq.md)
 - [Midpoint of two points in the plane](midpoint.md)
 - [Displacement vector between two points of the plane](vec.md)

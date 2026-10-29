@@ -39,7 +39,7 @@ concatenation of the tokens of the items $l_1, \dots, l_k$ followed by those of 
 
 ## Proof depends on
 
-- [D Tok](d-tok.md)
+- [Polarity-first tokens of a literal](d-tok.md)
 - [Emitter run over one literal occurrence](lit-run.md)
 - [Bits pushed by a walk of the CLIQUE emitter](walk-bits.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

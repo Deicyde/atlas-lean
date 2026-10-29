@@ -16,7 +16,7 @@ over $R$ is $0$.
 
 ## Depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Boundary integral over a rectangle](boundary-integral.md)
 - [Carrier of an axis-parallel rectangle](carrier.md)
 

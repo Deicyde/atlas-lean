@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.BusyBeaver.Consistent
 ---
 
-# Consistent
+# Consistent formal theory
 
-The theory is consistent: it does not prove the false sentence.
+**Consistent formal theory.** A formal theory $T$ is consistent when $T$ does not prove the
+false sentence.
 
 ## Depends on
 

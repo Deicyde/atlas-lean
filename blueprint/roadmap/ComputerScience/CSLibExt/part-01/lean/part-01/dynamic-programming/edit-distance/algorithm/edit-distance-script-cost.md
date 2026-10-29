@@ -17,7 +17,7 @@ on $s$ and $t$ equals the distance it returns.
 
 - [Edit-distance cost counters](../script/edit-distance-cost.md)
 - [Edit-distance result record](../script/edit-distance-result.md)
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [Cost of an edit script](../script/cost-2.md)
 - [Edit distance algorithm](edit-distance.md)
 

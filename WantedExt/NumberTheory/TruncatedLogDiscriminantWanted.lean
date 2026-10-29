@@ -156,7 +156,10 @@ Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Lemma 1
 public theorem_wanted truncatedLogResultantProduct_pos {n : ℕ} (hn : 1 ≤ n) :
     0 < truncatedLogResultantProduct n
 
-/-- If `n ≡ 0, 2, 3 (mod 4)` (`n ≥ 1`), then `disc(F_n)` is not a rational square.
+/-- **Nonsquare discriminants of $F_n$ for positive $n \equiv 0, 2, 3 \pmod 4$.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial and let
+$n \ge 1$ be a natural number with $n \equiv 0$, $2$ or $3 \pmod 4$. Then the discriminant of
+$F_n$ is not a square in $\mathbb{Q}$.
 
 Source: Cullinan and Gajek-Leonard, *On the Discriminants of Truncated
 Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Proposition 1
@@ -189,8 +192,10 @@ public theorem_wanted not_dvd_truncatedLogResultantProduct_of_even_power {p e : 
     (hp : p.Prime) (hp2 : p ≠ 2) (he : 1 ≤ e) :
     ¬ (p : ℤ) ∣ truncatedLogResultantProduct (p ^ (2 * e))
 
-/-- For `m ≥ 1`, all but finitely many primes `q` with `m q ≡ 1 (mod 4)` have
-`disc(F_{mq})` not a rational square.
+/-- **Finiteness of square discriminants of $F_{mq}$ with $mq \equiv 1 \pmod 4$.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial and let
+$m \ge 1$ be a natural number. Then there are only finitely many primes $q$ with
+$mq \equiv 1 \pmod 4$ such that the discriminant of $F_{mq}$ is a square in $\mathbb{Q}$.
 
 Source: Cullinan and Gajek-Leonard, *On the Discriminants of Truncated
 Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 3
@@ -225,8 +230,11 @@ public theorem_wanted discr_truncatedLog_prime_power {p e : ℕ} (hp : p.Prime)
       (Even e → (¬ IsSquare (truncatedLogPolynomial (p ^ e)).discr ↔
         ¬ IsSquare ((truncatedLogResultantProduct (p ^ e) : ℤ) : ℚ)))
 
-/-- For a prime `q ∉ E_m` with `q > m` and `n = m q ≡ 1 (mod 4)`, `disc(F_n)` is not a
-rational square.
+/-- **Nonsquare discriminants of $F_{mq}$ for non-exceptional primes $q > m$.** Let $m$ be a
+natural number, let $E_m$ be the set of exceptional primes for truncated logarithmic
+discriminants, and let $F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic
+polynomial. If $q$ is a prime with $q \notin E_m$, $q > m$ and $mq \equiv 1 \pmod 4$, then the
+discriminant of $F_{mq}$ is not a square in $\mathbb{Q}$.
 
 Source: Cullinan and Gajek-Leonard, *On the Discriminants of Truncated
 Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Theorem 5

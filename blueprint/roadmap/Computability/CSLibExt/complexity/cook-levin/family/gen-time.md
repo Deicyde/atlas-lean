@@ -34,7 +34,7 @@ $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [The transition clause family](family.md)
 - [Constant of the generator's time bound](gen-c.md)
 - [Initial counters of the transition-clause generator](init-f.md)
-- [Prog](prog.md)
+- [Generator machine for the transition clause families](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 

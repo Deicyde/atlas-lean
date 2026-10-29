@@ -490,7 +490,8 @@ public theorem reset_value {k : Nat} (bits : Vector Bool k) :
   rw [reset_toList]
   exact ofBoolListLE_replicate_false k
 
-/-- The exact reset charge is the number of set input bits. -/
+/-- **Cost of resetting a binary counter.** For every bit vector $b$ of width $k$, the cost of
+resetting $b$ equals the number of positions of $b$ that hold true. -/
 public theorem reset_time {k : Nat} (bits : Vector Bool k) :
     (reset bits).time = (bits.toList.map Bool.toNat).sum := by
   simpa only [reset] using resetBits_time_sum bits.toList

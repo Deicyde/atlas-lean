@@ -7,7 +7,7 @@ navigation: module
 
 ## Internal
 
-- [Upper ineq](upper-ineq.md)
+- [Breusch's endgame upper-bound inequality](upper-ineq.md)
 - [Breusch's prime chain](chain.md)
 - [Entries of Breusch's prime chain are prime](chain-prime.md)
 - [Breusch's prime chain is strictly increasing](chain-sorted.md)

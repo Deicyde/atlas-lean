@@ -314,10 +314,21 @@ Article A11, definition of `μ_k` and Remark `rem:zero`. -/
 public theorem stringAtom_nil (b : ℕ) : stringAtom b [] = Measure.dirac 0 := by
   simp [stringAtom, stringWeight, normalizedStringValue, stringValue]
 
-/-- Theorem 1(a): under exactly the two displayed recurrences (packaged in
-`OrdinaryMomentRecurrence`), the family indexed by `m≥1` has sum equal to the
-Irwin sum minus the exact short block and `b` times the at-most-`k` length-`l`
-block. `HasSum` is used so a divergent `tsum` cannot make the identity vacuous.
+/-- **Alternating series for the Irwin sum.** Let $b > 1$ and $d < b$ be natural numbers, let
+$(u_{j;m})_{j, m \in \mathbb{N}}$ be a family of real numbers satisfying the ordinary moment
+recurrence for $b$ and $d$, and let $k$ and $l \ge 1$ be natural numbers. For a natural number
+$n$ write $c(n)$ for the number of occurrences of the digit $d$ in the base-$b$ expansion of $n$,
+and let $H^{(k)}_{b,d}$ be the Irwin sum, the sum of $1/n$ over the positive integers $n$ with
+$c(n) = k$. Then the family of real numbers indexed by $m \ge 1$
+$$
+(-1)^m \sum_{\substack{b^{l-1} \le n < b^l \\ c(n) \le k}} \frac{u_{k - c(n);m}}{n^{m+1}}
+$$
+is summable, with sum
+$$
+H^{(k)}_{b,d} - \sum_{\substack{1 \le n < b^{l-1} \\ c(n) = k}} \frac{1}{n} -
+b \sum_{\substack{b^{l-1} \le n < b^l \\ c(n) \le k}} \frac{1}{n}.
+$$
+
 Source: Jean-François Burnol, *Measures for the Summation of Irwin Series*,
 INTEGERS 26 (2026), Article A11, Theorem 1. -/
 public theorem_wanted irwinSum_hasSum_alternating
@@ -589,9 +600,18 @@ public theorem_wanted irwinMeasure_open_local_mass
           (irwinMeasure b d (k - (if 0 < d then j else j + l' - l)) hd
             (affineScaleSet b l' x U)).toReal)
 
-/-- Lemma 3: under the same depth, string, adjusted digit-count, and scale
-hypotheses as Lemma 2, the rescaling identity also holds for every subset of
-the half-open interval. Masses use `.toReal`. Source: Jean-François Burnol,
+/-- **Local structure of the Irwin measures on half-open intervals.** Let $b > 1$ and $d < b$ be
+natural numbers, and for each natural number $k$ let $\mu_k$ be the Irwin measure of base $b$ and
+digit $d$ with index $k$. Let $x \in [0, 1)$ have base-$b$ depth $l$, that is, $l$ is the least
+natural number such that $b^l x$ is an integer; let $X$ be a string of $l$ base-$b$ digits, read
+most significant digit first, whose value $n(X)$ satisfies $n(X)/b^l = x$; and let $j$ be the
+number of occurrences of $d$ in $X$. Let $l' \ge l$ be a natural number, put $j' = j$ if $d > 0$
+and $j' = j + l' - l$ if $d = 0$, and let $k \ge j'$ be a natural number. Then for every set
+$U \subseteq [x, x + b^{-l'})$, as real numbers,
+$\mu_k(U) = b^{-l'} \mu_{k-j'}(b^{l'} U - b^{l'} x)$, where $b^{l'} U - b^{l'} x$ is the image
+of $U$ under $y \mapsto b^{l'} y - b^{l'} x$.
+
+Source: Jean-François Burnol,
 *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11,
 Lemma 3. -/
 public theorem_wanted irwinMeasure_halfOpen_deeper_local_mass

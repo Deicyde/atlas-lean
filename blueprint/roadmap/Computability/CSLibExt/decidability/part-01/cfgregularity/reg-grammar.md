@@ -29,7 +29,7 @@ is the language of $g$.
 ## Proof depends on
 
 - [The auxiliary productions of the regularity grammar](fixed-rules.md)
-- [Shift Rule](shift-rule.md)
+- [Shifting a production into the regularity grammar](shift-rule.md)
 
 ## Sources
 

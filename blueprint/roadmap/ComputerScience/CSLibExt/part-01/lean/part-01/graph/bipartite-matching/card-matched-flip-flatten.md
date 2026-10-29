@@ -17,7 +17,7 @@ and so does the start of the first path.
 
 ## Depends on
 
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Flipping a list of pairs](flip.md)
 - [Matched right vertices](matched.md)
 

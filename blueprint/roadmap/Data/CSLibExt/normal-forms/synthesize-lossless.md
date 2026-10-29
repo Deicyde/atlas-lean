@@ -16,7 +16,7 @@ schemes.
 
 - [Equivalent sets of functional dependencies](equivalent.md)
 - [Functional dependency](../functional-dependencies/fd.md)
-- [Is Over](../relational-algebra/is-over-2.md)
+- [Relation over a schema](../relational-algebra/is-over-2.md)
 - [Superkey](../functional-dependencies/is-superkey.md)
 - [A relation satisfies a set of dependencies](../functional-dependencies/satisfies.md)
 - [Tuple](../relational-algebra/tuple.md)
@@ -38,7 +38,7 @@ schemes.
 - [The closure algorithm decides derivability](../functional-dependencies/derives-iff-subset-attr-closure.md)
 - [Membership in a join of projections](mem-join-projections.md)
 - [Projection of a relation](../relational-algebra/project.md)
-- [Schema Union](schema-union.md)
+- [Union of a list of schemes](schema-union.md)
 
 ## Sources
 

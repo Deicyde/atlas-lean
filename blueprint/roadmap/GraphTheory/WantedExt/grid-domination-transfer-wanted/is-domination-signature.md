@@ -19,7 +19,7 @@ also applies to the first and last entries (the paper's cyclic signatures).
 
 ## Depends on
 
-- [Domination State](domination-state.md)
+- [Domination states](domination-state.md)
 
 ## Sources
 

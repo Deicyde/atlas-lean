@@ -27,7 +27,7 @@ the bit true followed by the cells of the output of $k$.
 - [Stack alphabet of the clocked universal machine](untitled.md)
 - [Codes for single-tape machines](../code/code.md)
 - [Explicit configurations](../code/cfg.md)
-- [Output](../code/output.md)
+- [Output of a configuration](../code/output.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

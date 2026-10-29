@@ -717,8 +717,9 @@ end HStep
 
 namespace HSteps
 
-/-- An execution does not change variables outside the command's
-modified set. -/
+/-- **Heap executions only change assignable variables.** If a heap configuration $(c, s, h)$
+reaches a heap configuration $(c', s', h')$ in zero or more heap steps, then $s'(x) = s(x)$ for
+every variable $x$ outside the set of variables that $c$ may assign to. -/
 theorem store_agree {c c' : HeapCmd} {s s' : State} {h h' : Heap}
     (hsteps : HSteps (c, s, h) (c', s', h')) :
     ∀ x, x ∉ c.modVars → s' x = s x := by

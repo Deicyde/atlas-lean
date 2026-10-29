@@ -14,7 +14,7 @@ $t$ returns offset $0$ at cost $0$, that is, without any symbol comparisons.
 
 ## Depends on
 
-- [Kmp Search](kmp-search.md)
+- [Knuth–Morris–Pratt search](kmp-search.md)
 
 ## Sources
 

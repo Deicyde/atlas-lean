@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anti Recurrence State](anti-recurrence-state.md)
+- [State of the anti-recurrence construction](anti-recurrence-state.md)
 
 ## Sources
 

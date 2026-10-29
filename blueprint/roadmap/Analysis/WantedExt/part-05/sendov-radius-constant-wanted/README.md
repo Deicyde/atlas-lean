@@ -6,7 +6,7 @@ navigation: module
 
 - [Admissible radius in Sendov's problem](is-admissible-radius.md)
 - [Enlarging an admissible radius](mono.md)
-- [Sendov Radius](sendov-radius.md)
+- [The Sendov radius](sendov-radius.md)
 - [The admissible radii are bounded below](bdd-below-admissible-radii.md)
 - [Admissible radii bound the Sendov radius](sendov-radius-le-of-is-admissible-radius.md)
 - [Sendov's conjecture](sendov-conjecture.md)

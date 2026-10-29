@@ -6,4 +6,4 @@ navigation: module
 # Poly Initial Expansion
 
 - [Chen's Stirling expansion](chen-stirling-second-expansion.md)
-- [Poly initial expansion](poly-initial-expansion.md)
+- [Expansion by generalized Stirling numbers of the second kind](poly-initial-expansion.md)

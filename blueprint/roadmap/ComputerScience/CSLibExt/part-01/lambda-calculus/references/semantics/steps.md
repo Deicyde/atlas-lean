@@ -18,7 +18,7 @@ it is the reflexive-transitive closure of one-step evaluation on pairs of a term
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One-step evaluation with references](step.md)
 
 ## Sources
 

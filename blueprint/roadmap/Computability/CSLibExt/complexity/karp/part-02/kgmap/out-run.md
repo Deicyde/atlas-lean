@@ -21,9 +21,9 @@ $\beta_m$ negates every bit for flip and leaves the bits unchanged for vc.
 ## Depends on
 
 - [K](k.md)
-- [Lab](lab.md)
+- [Labels of the KG-map machine](lab.md)
 - [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
-- [Ctr](ctr.md)
+- [Counter of the first output number of the KG-map machine](ctr.md)
 - [Pair-bit transform of each mode](fb.md)
 - [Counter unit symbol of the clique reduction machine](u.md)
 - [The KG-map machine](prog.md)

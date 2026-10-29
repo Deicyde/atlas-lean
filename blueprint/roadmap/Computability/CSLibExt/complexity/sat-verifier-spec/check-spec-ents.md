@@ -28,9 +28,9 @@ list.
 - [Table lookup agrees with the verifier's variable lookup](live-val-ents-of.md)
 - [Correctness of the witness formula check](../../sat-time-m/check-cnf-ret.md)
 - [Witness lookup](../../sat-time-m/lookup-var.md)
-- [Satisfies](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfaction of a clause](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

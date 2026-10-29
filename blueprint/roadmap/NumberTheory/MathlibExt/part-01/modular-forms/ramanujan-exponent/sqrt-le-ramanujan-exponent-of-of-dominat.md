@@ -20,7 +20,7 @@ $\sqrt{1/4 - \lambda}$ is at most the Ramanujan exponent of $F$.
 - [Family of local exponents](local-exponent-family.md)
 - [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 - [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../selberg-spectral-gap/is-eigenvalue.md)
 
 ## Proof depends on
 

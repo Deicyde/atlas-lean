@@ -13,7 +13,7 @@ navigation: module
 - [1-metered parking functions with two cars and two spots](metered-parking-count-one-two-two.md)
 - [Lucky cars in the metered scheme](metered-lucky-count.md)
 - [One step of the lace decomposition](lace-step.md)
-- [Lace Decomposition](lace-decomposition.md)
+- [Lace decomposition](lace-decomposition.md)
 - [Examples of lace decompositions](lace-decomposition-examples.md)
 - [Window condition for metered parking functions](metered-window-count-ge.md)
 - [Vanishing of metered parking counts](metered-parking-count-eq-zero.md)

@@ -14,7 +14,7 @@ with even parts distinct equals $1$ (the pair of empty overpartitions).
 
 ## Depends on
 
-- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
+- [The number of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct.md)
 
 ## Proof depends on
 

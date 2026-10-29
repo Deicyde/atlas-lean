@@ -19,8 +19,8 @@ parked marks.
 
 ## Proof depends on
 
-- [K](../path-machine/k.md)
-- [Lab](../path-machine/lab.md)
+- [Stacks of the PATH marking machine](../path-machine/k.md)
+- [Labels of the PATH marking machine](../path-machine/lab.md)
 - [The marking machine for PATH](../path-machine/prog.md)
 - [Stack alphabets of the PATH marking machine](../path-machine/untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)

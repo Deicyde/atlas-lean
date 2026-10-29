@@ -34,7 +34,7 @@ This node has no prerequisites.
 
 - [Dresden–Du coefficient](l-generalized-fibonacci-coefficient.md)
 - [Other roots of the ℓ-generalized Fibonacci characteristic polynomial](l-generalized-fibonacci-other-roots.md)
-- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
+- [Possible pole of the ℓ-generalized Fibonacci zeta function at a given index](l-generalized-fibonacci-zeta-pole.md)
 
 ## Sources
 

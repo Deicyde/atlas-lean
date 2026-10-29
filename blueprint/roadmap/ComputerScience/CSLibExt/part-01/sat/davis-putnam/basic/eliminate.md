@@ -22,7 +22,7 @@ Clauses containing both $x$ and $\neg x$ are dropped.
 - [Clauses containing a variable only negatively](neg-clauses.md)
 - [Clauses containing a variable only positively](pos-clauses.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
+- [Resolvent of two clauses](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources
 

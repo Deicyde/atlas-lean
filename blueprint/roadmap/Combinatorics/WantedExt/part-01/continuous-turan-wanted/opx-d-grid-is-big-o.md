@@ -16,7 +16,7 @@ When some $k_i = 0$ the grid $P$ is empty and the bound reads $O(n^d)$.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

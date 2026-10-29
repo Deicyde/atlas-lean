@@ -30,7 +30,7 @@ navigation: module
 - [Coefficients of the matrix multiplication structure tensor](matrix-multiplication-structure-tensor-c.md)
 - [Square matrix multiplication rank](square-matrix-multiplication-rank.md)
 - [Square matrix multiplication rank equals the coefficient tensor rank](square-matrix-multiplication-rank-eq.md)
-- [Matrix Multiplication Tensor Contraction](matrix-multiplication-tensor-contraction.md)
+- [Matrix multiplication tensor contraction](matrix-multiplication-tensor-contraction.md)
 - [Contracting the matrix multiplication tensor gives the matrix product](matrix-multiplication-tensor-contraction-2.md)
 - [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
 - [Rank exponents via the minimum tensor rank](has-matrix-multiplication-rank-exponent-2.md)

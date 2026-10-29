@@ -15,8 +15,8 @@ by $\ell$ has strictly fewer distinct variables than $F$.
 ## Depends on
 
 - [CNF formula](../basic/cnf.md)
-- [Restrict](restrict-2.md)
-- [Vars](vars-2.md)
+- [Restriction of a CNF formula by a literal](restrict-2.md)
+- [Variables of a CNF formula](vars-2.md)
 
 ## Proof depends on
 

@@ -14,7 +14,7 @@ monotone chain algorithm costs at most $4n$, where each orientation test costs o
 
 ## Depends on
 
-- [Convex Hull](convex-hull.md)
+- [Convex hull by the monotone chain algorithm](convex-hull.md)
 
 ## Proof depends on
 

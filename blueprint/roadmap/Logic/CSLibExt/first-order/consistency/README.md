@@ -12,7 +12,7 @@ navigation: module
 
 ## Consistency
 
-- [Consistent](consistent.md)
+- [Consistent set of formulas](consistent.md)
 - [Provability as inconsistency with the negation](provable-iff-not-consistent-insert-not.md)
 - [Refutability as inconsistency](provable-not-iff-not-consistent-insert.md)
 - [Unions of chains of consistent sets are consistent](consistent-s-union-of-is-chain.md)
@@ -22,7 +22,7 @@ navigation: module
 - [Maximal consistent set](maximal-consistent.md)
 - [Maximal consistent sets absorb consistent extensions](mem-of-consistent-insert.md)
 - [Lindenbaum's lemma for first-order logic](exists-maximal-consistent.md)
-- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets of first-order formulas are deductively closed](mem-of-provable.md)
 - [Maximal consistent sets decide every formula](not-mem-iff.md)
 - [Universal instantiation in maximal consistent sets](instantiate-mem-of-all-mem.md)
 - [Substitution of equals in maximal consistent sets](instantiate-mem-of-equal.md)

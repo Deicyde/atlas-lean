@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square](../square/square.md)
+- [Square of a graph](../square/square.md)
 
 ## Sources
 

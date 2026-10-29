@@ -15,7 +15,7 @@ and $ys$ equals the Needleman–Wunsch score of $xs$ and $ys$.
 
 ## Depends on
 
-- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Score of an alignment](../sequence-alignment/alignment-score.md)
 - [Hirschberg's alignment algorithm](hirschberg.md)
 - [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 

@@ -21,7 +21,7 @@ navigation: module
 - [The map $T_{1+q,1}$ is conjugate to the $2$-adic $3x+1$ map](q-collatz-one-add-x-conjugate-two-adic-c.md)
 - [Polynomial orbits of $T_{1,1+q^2}$](q-collatz-one-one-add-x-sq-polynomial.md)
 - [A perturbation at $q^{n+1}$ moves to $q^n$ under $T_{A,B}$](q-collatz-add-x-pow-mul.md)
-- [Q Collatz iterate add X pow mul](q-collatz-iterate-add-x-pow-mul.md)
+- [Iterates of $T_{A,B}$ move a perturbation at $q^{n+1}$ to $q^{n+1-k}$](q-collatz-iterate-add-x-pow-mul.md)
 - [A perturbation at $q^n$ flips the parity of the $n$-th iterate](q-collatz-iterate-parity-flip.md)
 - [Parity vectors detect congruence modulo $q^{n+1}$](q-collatz-parity-vector-mod-eq-iff.md)
 - [Parity vectors induce bijections modulo $q^n$](q-collatz-parity-vector-quotient-bijecti.md)

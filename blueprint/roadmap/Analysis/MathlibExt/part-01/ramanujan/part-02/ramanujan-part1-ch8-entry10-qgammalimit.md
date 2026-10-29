@@ -29,7 +29,7 @@ This node has no prerequisites.
 
 - [Complex digamma series](../../special-functions/part-01/gamma/digamma/digamma-series-fun.md)
 - [Terms of the complex digamma series](../../special-functions/part-01/gamma/digamma/digamma-series-term.md)
-- [Has Sum digamma series](../../special-functions/part-01/gamma/digamma/has-sum-digamma-series-2.md)
+- [Series expansion of the complex digamma function](../../special-functions/part-01/gamma/digamma/has-sum-digamma-series-2.md)
 - [Summability of the Basel series](../../special-functions/part-01/gamma/digamma/summable-one-div-add-nat-succ-sq.md)
 
 ## Sources

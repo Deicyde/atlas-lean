@@ -22,7 +22,7 @@ exactly $m$ executions of the body, then $n = m$.
 
 ## Proof depends on
 
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [Determinism of IMP big-step semantics](../big-step/deterministic.md)
 

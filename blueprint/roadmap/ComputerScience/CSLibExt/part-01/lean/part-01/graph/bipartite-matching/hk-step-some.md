@@ -22,7 +22,7 @@ $\mathrm{matched}(\nu)$ is the set of right vertices that have a partner in $\nu
 ## Proof depends on
 
 - [Alternating path](alt-path.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Flipping disjoint augmenting paths matches at least one more vertex](card-matched-flip-flatten.md)
 - [First free round](first-free-round.md)
 - [Flipping a list of pairs](flip.md)

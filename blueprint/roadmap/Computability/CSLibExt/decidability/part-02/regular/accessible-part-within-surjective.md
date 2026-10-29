@@ -16,7 +16,7 @@ accessible part from its start state to $p$.
 ## Depends on
 
 - [Accessible part of a DFA, by a bounded search](accessible-part-within.md)
-- [Reachable Within](reachable-within.md)
+- [Early-stopping DFA reachability search](reachable-within.md)
 
 ## Proof depends on
 

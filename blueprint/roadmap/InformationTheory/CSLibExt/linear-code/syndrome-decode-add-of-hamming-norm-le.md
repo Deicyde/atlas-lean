@@ -32,7 +32,7 @@ $2t$, which must be zero.
 - [Minimum weight](min-weight.md)
 - [Syndrome](syndrome.md)
 - [The syndrome depends only on the error](syndrome-add-of-mem.md)
-- [Hamming Dist eq hamming Norm sub](hamming-dist-eq-hamming-norm-sub.md)
+- [Hamming distance is the weight of the difference](hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

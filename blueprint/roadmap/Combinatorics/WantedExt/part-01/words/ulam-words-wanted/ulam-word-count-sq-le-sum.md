@@ -12,7 +12,7 @@ $(\#U_n)^2 \le \sum_{i=n}^{2n} \#U_i$, where $\#U_i$ is the number of Ulam words
 
 ## Depends on
 
-- [Ulam Word Count](ulam-word-count.md)
+- [Number of Ulam words of a given length](ulam-word-count.md)
 
 ## Sources
 

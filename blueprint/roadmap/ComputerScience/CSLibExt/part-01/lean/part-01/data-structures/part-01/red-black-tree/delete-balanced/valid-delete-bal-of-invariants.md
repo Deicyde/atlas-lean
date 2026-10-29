@@ -48,7 +48,7 @@ The root of $t$ need not be black, since the deletion recolors the root of its r
 - [Right repair after double-black deletion](fix-right.md)
 - [Adding a black to the root](incr-black.md)
 - [Inorder traversal of a possibly double-black tree](inorder-bb.md)
-- [Min Key](min-key.md)
+- [Leftmost key of a red-black tree](min-key.md)
 - [Double-black deletion preserves the search-tree order](ordered-delete-bal.md)
 - [Recoloring the root black](root-black.md)
 - [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)

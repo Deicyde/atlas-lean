@@ -8,7 +8,7 @@ navigation: module
 - [Gowers–Green–Manners–Tao theorem (polynomial Freiman–Ruzsa over $\mathbb{F}_2$)](conjecture-holds.md)
 - [The binary vector space $\mathbb{F}_2^n$](binary-ambient-space.md)
 - [Admissible asymptotic coset-cover exponents](is-asymptotic-coset-cover-exponent.md)
-- [Asymptotic Coset Cover Exponents](asymptotic-coset-cover-exponents.md)
+- [The set of admissible coset-cover exponents](asymptotic-coset-cover-exponents.md)
 - [The Marton coset-cover exponent](marton-pfrcover-exponent.md)
 - [Statement that the Marton coset-cover exponent is attained](least-cover-exponent-claim.md)
 - [Statement that an admissible coset-cover exponent exists](marton-pfrfiniteness-theorem.md)

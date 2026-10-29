@@ -15,7 +15,7 @@ stack of $c$ succeeds and returns a code $c'$ whose code stack equals the code s
 
 - [The code stack](../clocked/code-cells.md)
 - [Codes for single-tape machines](../code/code.md)
-- [Decode Code Cells](decode-code-cells.md)
+- [Decoding a code stack](decode-code-cells.md)
 
 ## Proof depends on
 

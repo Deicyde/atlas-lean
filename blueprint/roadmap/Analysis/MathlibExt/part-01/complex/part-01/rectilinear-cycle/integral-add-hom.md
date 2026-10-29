@@ -14,8 +14,8 @@ $f$ over $\Gamma$ is an additive group homomorphism from rectilinear cycles to $
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 

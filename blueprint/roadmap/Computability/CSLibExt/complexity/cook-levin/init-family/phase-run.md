@@ -35,7 +35,7 @@ $N_b$ and $V$ variables.
 - [Labels of the initial-row generator](gl.md)
 - [Label after a phase loop](next.md)
 - [Literals of a clause kind in range](in-r.md)
-- [Labels of the initial-row generator](lb.md)
+- [Labels of the initial-row generator for a layout](lb.md)
 - [Loop phases of the initial-row generator](ph.md)
 - [Loop-count counter of a phase (initial-row generator)](c-n.md)
 - [Base counter of a phase (initial-row generator)](c-z.md)
@@ -43,7 +43,7 @@ $N_b$ and $V$ variables.
 - [Well-formed init-family clause kinds](wf.md)
 - [Step bound for one loop iteration (initial-row generator)](body-b.md)
 - [Literals of a clause kind](clits.md)
-- [Prog](prog.md)
+- [The counter part of the initial-row generator](prog.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 

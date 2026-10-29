@@ -17,7 +17,7 @@ $f(u, v) < c(u, v)$.
 
 - [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 - [Flow](flow.md)
-- [Residual Graph](residual-graph.md)
+- [Residual graph](residual-graph.md)
 
 ## Sources
 

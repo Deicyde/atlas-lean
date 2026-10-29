@@ -11,7 +11,7 @@ navigation: module
 ## Pairs and pair bits
 
 - [Membership in the vertex pairs](mem-pairs.md)
-- [Pairs nodup](pairs-nodup.md)
+- [The vertex pairs are listed without repetition](pairs-nodup.md)
 - [Pair bits are read off by position](adj-bits-eq-get-elem.md)
 - [Pair bits computed by a function](adj-bits-map-pairs.md)
 - [Complementing the pair bits complements the graph](to-graph-map-not.md)

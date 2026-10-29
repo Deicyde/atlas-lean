@@ -7,11 +7,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.orderedInsert_eq_of_mem
 ---
 
-# Ordered Insert eq of mem
+# Inserting a present element into a strictly increasing list
 
-On a strictly sorted list, inserting an already-present key is a no-op.
-This is the duplicate-elision contract the tree implementations rely on;
-without strict sortedness it fails, e.g. `orderedInsert 2 [3, 2] = [2, 3, 2]`.
+**Inserting a present element into a strictly increasing list.** Over a linearly ordered
+type, if every element of a list $\ell$ is smaller than every later element of $\ell$ and $x$
+belongs to $\ell$, then the ordered insertion of $x$ into $\ell$ is $\ell$ itself.
+
+Without strict increase this fails: inserting $2$ into $[3, 2]$ gives $[2, 3, 2]$.
 
 ## Depends on
 

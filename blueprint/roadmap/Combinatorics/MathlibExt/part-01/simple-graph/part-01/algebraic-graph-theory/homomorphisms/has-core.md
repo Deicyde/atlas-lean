@@ -5,11 +5,12 @@ statement: formalized
 lean: SimpleGraph.HasCore
 ---
 
-# Has Core
+# Core of a graph
 
-A finite graph X is a *core* if every homomorphism from X to itself is a bijection. A subgraph Y
-of a finite graph X is a *core of X* if Y, as a graph in its own right, is a core and there is a
-homomorphism from X to Y.
+**Core of a graph.** A finite graph $X$ is a *core* if every homomorphism from $X$ to itself
+is a bijection. For finite graphs $X$ and $Y$, $Y$ is a *core of* $X$ if $Y$ is a core, there is a
+homomorphism from $X$ to $Y$, and there is an injective homomorphism from $Y$ to $X$; that is, $Y$
+is isomorphic to a subgraph of $X$.
 
 ## Depends on
 

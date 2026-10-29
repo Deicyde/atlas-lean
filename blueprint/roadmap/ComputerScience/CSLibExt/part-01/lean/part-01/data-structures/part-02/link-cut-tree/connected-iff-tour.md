@@ -23,7 +23,7 @@ contains both $x$ and $y$ in its Euler tour.
 ## Proof depends on
 
 - [The Euler tour visits exactly the vertices of the tree](../euler-tour-tree/mem-tour-iff.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 
 ## Sources
 

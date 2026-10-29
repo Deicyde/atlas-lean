@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsReducedMagicSquare
 ---
 
-# Is Reduced Magic Square
+# Reduced magic squares
 
-A *reduced magic square of order `n`* is a magic square whose entries are
-`0, 1, …, n² - 1`, each exactly once (a magic square of order `n` with every entry reduced
-by `1`); "each exactly once" is stated as: entries are below `n²` and pairwise distinct.
+**Reduced magic squares.** An $n \times n$ array $M$ of natural numbers is a *reduced magic
+square of order $n$* when it is a magic square and its entries are $0, 1, \dots, n^2 - 1$, each
+exactly once; equivalently, every entry of $M$ is less than $n^2$ and distinct cells of $M$
+hold distinct entries.
+
+These are the magic squares of order $n$ with entries $1, 2, \dots, n^2$, each exactly once,
+with every entry reduced by $1$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Magic Square](is-magic-square.md)
+- [Magic squares](is-magic-square.md)
 
 ## Sources
 

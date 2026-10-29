@@ -27,11 +27,11 @@ partial-correctness Hoare logic.
 - [Entailment of assertions](../hoare/entails.md)
 - [Substitution in an assertion](../hoare/subst.md)
 - [Boolean expressions of IMP](../syntax/bexp.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 - [Big-step semantics of IMP](../big-step/big-step.md)
 - [Precondition strengthening for partial correctness](strengthen.md)
 - [IMP program states](../syntax/state.md)
-- [While Loop](../hoare/while-loop-2.md)
+- [Weakest liberal precondition unfolding of a while loop](../hoare/while-loop-2.md)
 
 ## Sources
 

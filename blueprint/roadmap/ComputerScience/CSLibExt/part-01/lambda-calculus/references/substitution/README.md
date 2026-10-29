@@ -11,5 +11,5 @@ navigation: module
 - [Substitution by variables is the identity](subst-id.md)
 - [Renaming then substituting](subst-rename.md)
 - [Substituting then renaming](rename-subst.md)
-- [Composition of substitutions](subst-subst.md)
+- [Composition of substitutions in the lambda calculus with references](subst-subst.md)
 - [Instantiating a shifted term](instantiate-rename-succ.md)

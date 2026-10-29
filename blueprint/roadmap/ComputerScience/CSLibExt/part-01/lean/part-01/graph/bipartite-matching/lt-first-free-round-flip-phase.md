@@ -28,7 +28,7 @@ $\mu$ that is disjoint from the paths of the phase, contradicting the maximality
 - [Alternating path](alt-path.md)
 - [Exact level of a right vertex](exact-level.md)
 - [Unmatched left vertex](free.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [Alternating chain to an unmatched left vertex](is-chain-from.md)
 - [No shortest escape](no-escape.md)
 - [Shortest chains from a vertex whose level a phase keeps were chains before it](chain-of-chain-flip-phase.md)

@@ -17,7 +17,7 @@ the number of binary connectives of $A$.
 
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Connective Count](connective-count.md)
+- [Connective count of a propositional formula](connective-count.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 
 ## Proof depends on

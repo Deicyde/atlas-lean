@@ -24,7 +24,7 @@ without repetition, in the order of the list of all literals over the variables 
 - [Implication edge](imp-edge.md)
 - [List of the literals of a CNF formula](lit-list.md)
 - [Complement of a literal](neg.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

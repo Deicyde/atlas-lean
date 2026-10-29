@@ -18,7 +18,7 @@ that have an entry in $ps$.
 ## Depends on
 
 - [Agreement off a set of stacks](fr.md)
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
 

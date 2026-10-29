@@ -14,7 +14,7 @@ belongs to the language of $g$.
 
 ## Depends on
 
-- [Left Derivation](left-derivation.md)
+- [Leftmost derivation](left-derivation.md)
 
 ## Proof depends on
 

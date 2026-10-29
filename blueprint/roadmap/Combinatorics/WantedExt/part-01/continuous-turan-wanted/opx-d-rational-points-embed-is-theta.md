@@ -17,7 +17,7 @@ Nonemptiness is added: for $P = \emptyset$ the set $Q_{P'}$ is empty.
 
 ## Depends on
 
-- [Opx D](opx-d.md)
+- [Continuous Turán number in $\mathbb{R}^d$](opx-d.md)
 
 ## Sources
 

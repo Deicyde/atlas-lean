@@ -26,10 +26,10 @@ Ramanujan exponent $\delta_2$; it is not an equality of constants.
 
 ## Proof depends on
 
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 - [Exceptional eigenvalues bound Selberg-dominating exponents from below](sqrt-le-ramanujan-exponent-of-of-dominat.md)
 - [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../selberg-spectral-gap/is-eigenvalue.md)
 - [Gap parameter of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gap.md)
 - [Gap contributions of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gaps.md)
 - [The modular group is a congruence subgroup](../selberg-spectral-gap/is-congruence-subgroup-top.md)

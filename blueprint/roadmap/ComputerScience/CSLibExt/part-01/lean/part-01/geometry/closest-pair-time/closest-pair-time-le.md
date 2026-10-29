@@ -18,7 +18,7 @@ where $\lceil \log_2 0 \rceil$ is read as $0$. In particular it computes $O(n \l
 
 ## Proof depends on
 
-- [Closest Rec](../closest-pair/closest-rec.md)
+- [Closest-pair recursion](../closest-pair/closest-rec.md)
 - [Running time of the closest-pair recursion](closest-rec-time-le.md)
 
 ## Sources

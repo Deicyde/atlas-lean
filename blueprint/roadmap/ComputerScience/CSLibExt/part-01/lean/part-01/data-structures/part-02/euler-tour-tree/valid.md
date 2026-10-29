@@ -20,7 +20,7 @@ forest requires valid trees with disjoint vertex sets.
 
 ## Proof depends on
 
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 
 ## Sources
 

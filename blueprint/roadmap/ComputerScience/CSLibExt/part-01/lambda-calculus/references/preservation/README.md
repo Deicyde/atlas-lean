@@ -9,12 +9,12 @@ navigation: module
 - [Renaming preserves typing](rename.md)
 - [Weakening of typing](weaken.md)
 - [Parallel substitution preserves typing](subst.md)
-- [Substitution lemma](instantiate.md)
+- [Substitution lemma for the lambda calculus with references](instantiate.md)
 - [Store-typing weakening](extend-store.md)
 
 ## Store Typed
 
-- [Extend Store](extend-store-2.md)
+- [Retyping a well-typed store under an extended store typing](extend-store-2.md)
 - [Allocation preserves store typing](append.md)
 - [Assignment preserves store typing](set.md)
 

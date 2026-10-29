@@ -19,7 +19,7 @@ the states of such a DFA.
 - [Accessible](../minimality/accessible.md)
 - [State-separated DFA](../universal/state-separated.md)
 - [State transformation monoid](state-transformation.md)
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Syntactic congruence](syntactic-con.md)
 
 ## Proof depends on

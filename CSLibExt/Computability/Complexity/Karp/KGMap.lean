@@ -71,8 +71,12 @@ other stack ($X$, $A$, $B$, $D$ and $Y$). -/
   | .O => Bool
   | _ => Sym
 
-/-- Labels: read `k`, read `n`, move the pair bits, subtract (`vc`), output the pair bits, `n`,
-the separator and the last number; `bad` writes `noKG`. -/
+/-- **Labels of the KG-map machine.** The type of the ten instruction labels of the KG-map
+machine: read $k$, read $n$, move the pair bits, subtract, output the pair bits, output $n$, write
+the separator, output the last number, the failure label and the halting label.
+
+The machine reaches the subtraction label only in the vertex-cover mode, and at the failure label
+it writes the fixed no-instance. -/
 inductive Lab | rdK | rdN | mv | sub | outY | outB | sep | outK | bad | done
   deriving DecidableEq
 
@@ -112,12 +116,20 @@ def Mode.fb : Mode → Bool → Bool
   | .flip => not
   | .vc => id
 
-/-- Where the machine goes after moving the pair bits: output (`flip`) or subtract (`vc`). -/
+/-- **Label after the move phase of the KG-map machine.** The map from the modes of the KG-map
+machine to its labels that sends the flip mode to the label output the pair bits and the
+vertex-cover mode to the subtraction label. The machine goes to this label after moving the pair
+bits. -/
 def Mode.next : Mode → Lab
   | .flip => .outY
   | .vc => .sub
 
-/-- The counter holding the output's first number: `A` (`k`, `flip`) or `D` (`n - k`, `vc`). -/
+/-- **Counter of the first output number of the KG-map machine.** The map from the modes of the
+KG-map machine to its stacks that sends the flip mode to the counter $A$ and the vertex-cover
+mode to the counter $D$.
+
+This is the counter the machine drains last, as the first number of its output: $A$ holds $k$,
+and in the vertex-cover mode $D$ holds $n - k$ by then. -/
 def Mode.ctr : Mode → K
   | .flip => .A
   | .vc => .D

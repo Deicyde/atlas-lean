@@ -27,7 +27,7 @@ Equivalently, the condensation relation has no nontrivial directed cycle.
 - [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 - [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 - [Reachability between components](component-reaches.md)
-- [Strongly Connected](strongly-connected.md)
+- [Strongly connected vertices](strongly-connected.md)
 - [Strong connectivity is symmetric](symm.md)
 - [Strong connectivity is transitive](trans.md)
 - [Each computed component is a full mutual-reachability class](component-maximal.md)

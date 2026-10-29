@@ -13,7 +13,7 @@ $UUUDDD$; the two occurrences overlap.
 
 ## Depends on
 
-- [Dyck Subword Count](dyck-subword-count.md)
+- [Number of occurrences of a subword](dyck-subword-count.md)
 
 ## Sources
 

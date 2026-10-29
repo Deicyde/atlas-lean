@@ -22,6 +22,6 @@ navigation: module
 - [Canonical binary names](encode-nat-decode-nat-eq-iff.md)
 - [Table lookup agrees with the verifier's variable lookup](live-val-ents-of.md)
 - [The clause check on the occurrence table is the formula check](check-spec-ents.md)
-- [Sat Verifier ret eq](sat-verifier-ret-eq.md)
+- [The SAT verifier's answer through the occurrence table](sat-verifier-ret-eq.md)
 - [A clause has at most as many tokens as code bits](clause-toks-length-le.md)
 - [Token count is bounded by the encoding length](toks-length-le.md)

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.annihilatesSeq_X_sub_C_pow
 ---
 
-# Annihilates Seq X sub C pow
+# The operator $E - c$ annihilates the powers of $c$
 
-The Trivial Lemma, part (i): for any constant `c`, `E - c` annihilates `{cˢ}_{s ≥ 0}`.
+**The operator $E - c$ annihilates the powers of $c$.** Let $K$ be a field, $c \in K$, and let
+$E$ be the translation operator $E(G_s) = G_{s+1}$ on sequences $G \colon \mathbb{N} \to K$. Then
+the operator $E - c$, that is, $p(E)$ for the polynomial $p = X - c \in K[X]$, annihilates the
+sequence $s \mapsto c^s$.
 
 ## Depends on
 

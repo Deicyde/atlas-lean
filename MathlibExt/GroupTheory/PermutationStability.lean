@@ -56,8 +56,9 @@ def IsCloseToHomomorphisms {G : Type*} [Group G]
     (fun n => normalizedHammingDistance n (ρ n g) (f n g))
     Filter.atTop (nhds 0)
 
-/-- `G` is permutation stable when every almost-homomorphism is close to
-genuine homomorphisms. -/
+/-- **Permutation stability.** A group $G$ is permutation stable when every
+almost-homomorphism $(f_n)$ from $G$ to the symmetric groups $S_n$ is close to
+homomorphisms. -/
 def PermutationStable (G : Type*) [Group G] : Prop :=
   ∀ f : ∀ n : ℕ, G → Equiv.Perm (Fin n),
     IsAlmostHomomorphism f → IsCloseToHomomorphisms f
@@ -101,7 +102,8 @@ def FlexiblePermutationStable (G : Type*) [Group G] : Prop :=
   ∀ f : ∀ n : ℕ, G → Equiv.Perm (Fin n),
     IsAlmostHomomorphism f → IsFlexiblyCloseToHomomorphisms f
 
-/-- `G` is metabelian when its second derived subgroup is trivial. -/
+/-- **Metabelian groups.** Let $G$ be a group and let $G' = [G, G]$ be its commutator subgroup.
+Then $G$ is metabelian when its second derived subgroup $G'' = [G', G']$ is trivial. -/
 def Metabelian (G : Type*) [Group G] : Prop :=
   derivedSeries G 2 = ⊥
 

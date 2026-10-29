@@ -22,7 +22,7 @@ $\mathrm{KL}(q \,\|\, \pi) = \sum_{z \in Z} q(z) \bigl(\log q(z) - \log \pi(z)\b
 ## Proof depends on
 
 - [Evidence lower bound of a single observation](elbo.md)
-- [ELBO = log evidence - KL](elbo-eq-log-evidence-sub-kl.md)
+- [The ELBO is the log evidence minus the KL divergence](elbo-eq-log-evidence-sub-kl.md)
 - [The ELBO is a lower bound](elbo-le-log-evidence.md)
 - [Evidence of an unnormalized posterior](evidence.md)
 

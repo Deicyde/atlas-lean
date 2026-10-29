@@ -19,7 +19,7 @@ pointwise or $h \le g$ pointwise.
 - [Boolean functions decreasing in a variable](is-bool-fun-decreasing-in.md)
 - [Boolean functions increasing in a variable](is-bool-fun-increasing-in.md)
 - [Unate Boolean function](is-unate-bool-fun.md)
-- [Concatenation of Boolean functions](bool-fun-concat.md)
+- [Concatenation of two Boolean functions](bool-fun-concat.md)
 
 ## Sources
 

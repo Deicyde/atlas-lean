@@ -14,7 +14,7 @@ disjoint from $h$ (with the empty heap as the first heap).
 ## Depends on
 
 - [Heap](heap.md)
-- [Disjoint](disjoint.md)
+- [Disjoint heaps](disjoint.md)
 
 ## Sources
 

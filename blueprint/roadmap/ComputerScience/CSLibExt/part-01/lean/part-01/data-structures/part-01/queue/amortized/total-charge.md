@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.totalCharge
 ---
 
-# Total Charge
+# Total charge of a sequence of queue operations
 
-The sum of the potential-method charges for a sequence of operations.
+**Total charge of a sequence of queue operations.** For a list of queue operations, the
+total charge is the sum of the amortized charges of its operations, where an enqueue is charged
+$2$ and a dequeue is charged $1$.
 
 ## Depends on
 

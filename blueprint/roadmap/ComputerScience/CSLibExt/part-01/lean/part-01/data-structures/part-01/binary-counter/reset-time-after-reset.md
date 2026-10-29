@@ -18,7 +18,7 @@ returned by resetting $b$ has cost $0$.
 
 ## Proof depends on
 
-- [Reset time](reset-time.md)
+- [Cost of resetting a binary counter](reset-time.md)
 - [Reset returns the all-false counter](reset-to-list.md)
 
 ## Sources

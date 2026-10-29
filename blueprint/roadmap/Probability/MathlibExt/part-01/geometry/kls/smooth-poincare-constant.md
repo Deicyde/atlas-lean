@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Smooth Poincare Bound](is-smooth-poincare-bound.md)
+- [Smooth Poincaré bounds](is-smooth-poincare-bound.md)
 
 ## Sources
 

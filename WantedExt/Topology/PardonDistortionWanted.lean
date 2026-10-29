@@ -90,7 +90,9 @@ between the parameters $s$ and $t$. It does not depend on the order of $s$ and $
 def parameterArcLength (K : Knot) (s t : ℝ) : ℝ :=
   |∫ u in s..t, speed K u|
 
-/-- Total arclength over the fundamental interval `[0, 2π]`. -/
+/-- **Total arc length of a knot.** For a knot $K$ with parametrization $\gamma$, the total arc
+length of $K$ is the arc length of $K$ between the parameters $0$ and $2\pi$, namely
+$\left| \int_0^{2\pi} \lVert \gamma'(u) \rVert \, du \right|$. -/
 def totalArcLength (K : Knot) : ℝ :=
   parameterArcLength K 0 (2 * Real.pi)
 
@@ -109,10 +111,9 @@ division by $0$ gives $0$. -/
 def distortionRatio (K : Knot) (s t : ℝ) : ℝ :=
   intrinsicDistance K s t / dist (K.curve s) (K.curve t)
 
-/-- Distortion of a smooth knot as an extended nonnegative real: the supremum
-of the distortion ratios over distinct parameters in the half-open fundamental
-interval `[0, 2π)`. The extended codomain also represents infinite
-distortion. -/
+/-- **Distortion of a knot.** For a knot $K$, the distortion of $K$ is the supremum in the
+extended nonnegative reals $[0, \infty]$ of the distortion ratios of $K$ at $s$ and $t$, taken
+over all distinct parameters $s \ne t$ in the half-open interval $[0, 2\pi)$. -/
 def distortion (K : Knot) : ℝ≥0∞ :=
   sSup {d : ℝ≥0∞ | ∃ s ∈ Ico (0 : ℝ) (2 * Real.pi),
     ∃ t ∈ Ico (0 : ℝ) (2 * Real.pi),

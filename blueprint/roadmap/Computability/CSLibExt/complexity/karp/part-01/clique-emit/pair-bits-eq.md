@@ -24,7 +24,7 @@ adjacent when they lie in different clauses and are not complementary.
 
 ## Proof depends on
 
-- [Pairs succ](../clique-verify/pairs-succ.md)
+- [Vertex pairs in encoding order for one more vertex](../clique-verify/pairs-succ.md)
 
 ## Sources
 

@@ -7,14 +7,15 @@ proof: formalized
 lean: CurveDivisor.divZeros_apply
 ---
 
-# Div Zeros apply
+# Coefficients of the zero part
 
-The coefficient of the zero part is the positive part of the coefficient.
+**Coefficients of the zero part.** For every divisor $D$ on a set of points $C$ and every
+point $P \in C$, the coefficient at $P$ of the zero part $D^+$ of $D$ is $\max(D(P), 0)$.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Zeros](div-zeros.md)
+- [Divisors on a curve](../divisor/curve-divisor.md)
+- [Zero part of a divisor](div-zeros.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.hannerCrossPolytope_isHannerPolytope
 ---
 
-# Hanner Cross Polytope is Hanner Polytope
+# The Hanner cross-polytopes are Hanner polytopes
 
-Every recursively constructed coordinate cross-polytope is a Hanner polytope.
+**The Hanner cross-polytopes are Hanner polytopes.** For every $n \in \mathbb{N}$, the Hanner
+cross-polytope $P_n \subseteq \mathbb{R}^{n+1}$ is a Hanner polytope.
 
 ## Depends on
 

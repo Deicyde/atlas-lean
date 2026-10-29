@@ -247,9 +247,9 @@ open Term
 
 namespace Subst
 
-/-- **Composition of substitutions.** For substitutions $s$ and $t$, the composite $s \gg t$
-(first $s$, then $t$) sends each variable $x$ to the term obtained from $s(x)$ by applying $t$
-to every variable of $s(x)$. -/
+/-- **Composition of substitutions on first-order terms.** For substitutions $s$ and $t$,
+the composite $s \gg t$ (first $s$, then $t$) sends each variable $x$ to the term obtained
+from $s(x)$ by applying $t$ to every variable of $s(x)$. -/
 def comp (s t : Subst C) : Subst C := fun x ↦ (s x).subst t
 
 @[inherit_doc] scoped infixl:90 " ≫ " => Subst.comp
@@ -263,8 +263,8 @@ theorem comp_assoc (a b c : Subst C) : (a ≫ b) ≫ c = a ≫ (b ≫ c) := by
 
 @[simp] theorem var_comp (s : Subst C) : (var ≫ s) = s := rfl
 
-/-- **Single-variable substitution.** For a variable $x$ and a term $t$, the substitution
-$[x \mapsto t]$ sends $x$ to $t$ and every other variable $y$ to the term $y$. -/
+/-- **Single-variable substitution on first-order terms.** For a variable $x$ and a term $t$, the
+substitution $[x \mapsto t]$ sends $x$ to $t$ and every other variable $y$ to the term $y$. -/
 def single (x : ℕ) (t : Term C) : Subst C := fun y ↦ if y = x then t else var y
 
 @[simp] theorem single_self (x : ℕ) (t : Term C) : single x t x = t := by simp [single]

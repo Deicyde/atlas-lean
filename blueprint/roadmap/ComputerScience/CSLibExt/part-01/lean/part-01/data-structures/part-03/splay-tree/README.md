@@ -4,7 +4,7 @@ navigation: module
 
 # Splay Tree
 
-- [Root key of a binary tree](root.md)
+- [Root key of a splay tree](root.md)
 - [Splay operation](splay.md)
 - [Splaying the empty tree](splay-nil.md)
 - [Splaying preserves the inorder traversal](inorder-splay.md)

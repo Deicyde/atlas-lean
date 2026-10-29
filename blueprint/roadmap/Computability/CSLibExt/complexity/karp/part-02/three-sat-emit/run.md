@@ -36,7 +36,7 @@ the top, holds the binary code of the SAT-to-3SAT translation of $\varphi$ follo
 - [Repeating a single bit](rep-single.md)
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Output clauses of a walked list of literals](walk-f.md)
-- [Walk F chain](walk-f-chain.md)
+- [Walking a whole clause gives its chain](walk-f-chain.md)
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
 - [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)

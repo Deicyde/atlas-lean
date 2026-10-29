@@ -6,10 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.Karp.decodeEs_of_none
 ---
 
-# Decoding fails on a cut-off first number
+# The edge-list decoder fails on a cut-off first number
 
-**Decoding fails on a cut-off first number.** If $x$ is a nonempty bit string and reading a
-unary length prefix from $x$ fails, then the edge-list decoder fails on $x$.
+**The edge-list decoder fails on a cut-off first number.** If $x$ is a nonempty bit string
+and reading a unary length prefix from $x$ fails, then the edge-list decoder fails on $x$.
 
 ## Depends on
 

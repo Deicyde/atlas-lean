@@ -22,7 +22,7 @@ $(\Delta^k m_\mu)_n \le C \, (\Delta^k m_\lambda)_n$ for all multi-indices $k \l
 - [Uniformly absolutely continuous measures](uniformly-absolutely-continuous.md)
 - [Closed unit cube](cube.md)
 - [Iterated backward difference of a multi-sequence](diff.md)
-- [Moment Of](moment-of.md)
+- [Moments of a measure on the unit cube](moment-of.md)
 
 ## Sources
 

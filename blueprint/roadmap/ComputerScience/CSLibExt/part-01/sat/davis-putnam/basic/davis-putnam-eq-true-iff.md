@@ -19,7 +19,7 @@ Davis-Putnam procedure returns true on $\varphi$ if and only if $\varphi$ is sat
 
 ## Proof depends on
 
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Davis-Putnam elimination preserves satisfiability](cnf-sat-eliminate-iff.md)
 - [Davis-Putnam elimination of a variable](eliminate.md)
 - [Successive elimination of a list of variables](eliminate-all.md)
@@ -28,10 +28,10 @@ Davis-Putnam procedure returns true on $\varphi$ if and only if $\varphi$ is sat
 - [Unsatisfiable formulas without variables contain the empty clause](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/nil-mem-of-vars-eq-empty.md)
 - [Clauses containing a variable only positively](pos-clauses.md)
 - [Variable list for Davis–Putnam elimination](var-list.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
+- [Satisfaction of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Resolvent of two clauses](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 - [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 - [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 

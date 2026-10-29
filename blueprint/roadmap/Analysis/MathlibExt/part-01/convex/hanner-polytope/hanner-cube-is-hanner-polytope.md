@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.hannerCube_isHannerPolytope
 ---
 
-# Hanner Cube is Hanner Polytope
+# The Hanner cubes are Hanner polytopes
 
-Every recursively constructed coordinate cube is a Hanner polytope.
+**The Hanner cubes are Hanner polytopes.** For every $n \in \mathbb{N}$, the Hanner cube
+$C_n \subseteq \mathbb{R}^{n+1}$ is a Hanner polytope.
 
 ## Depends on
 

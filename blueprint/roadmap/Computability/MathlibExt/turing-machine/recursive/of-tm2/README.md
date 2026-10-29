@@ -24,7 +24,7 @@ navigation: module
 
 - [Symbols a statement may push](pushes.md)
 - [Relevant symbols of a stack](relevant.md)
-- [Sym List](sym-list.md)
+- [Enumeration of the relevant symbols of a stack](sym-list.md)
 - [Code of a stack symbol](code.md)
 - [Decoding a stack symbol](decode.md)
 - [Stacks with only relevant symbols](relevant-2.md)

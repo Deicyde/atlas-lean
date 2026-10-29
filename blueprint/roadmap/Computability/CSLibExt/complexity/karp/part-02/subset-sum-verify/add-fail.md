@@ -20,7 +20,7 @@ the machine reaches the rejecting label within $|r| + 1$ steps.
 
 - [Stacks of the SUBSET-SUM verifier](k.md)
 - [Labels of the SUBSET-SUM verifier](lab.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)

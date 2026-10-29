@@ -21,7 +21,7 @@ The exponent $81/64 = (9/8)^2$ comes from composing the two growth bounds.
 
 - [Transcendental functions](../../../part-02/wiman/is-transcendental.md)
 - [Wiman exceptional set](wiman-exceptional-set.md)
-- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman growth function](../coefficient-exponential-family/wiman-growth.md)
 
 ## Proof depends on
 

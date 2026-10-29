@@ -10,7 +10,7 @@ navigation: module
 - [Additivity of Fourier coefficients on the 2-torus](m-fourier-coeff-add.md)
 - [Homogeneity of Fourier coefficients on the 2-torus](m-fourier-coeff-smul.md)
 - [Axis frequency](axis-frequency.md)
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 - [Lowest-shell witness](lowest-shell-witness.md)
 - [The lowest-shell unit polynomial is real-valued](lowest-shell-unit-im-zero.md)
 - [Unit representative of the lowest-shell witness](unit-representative-lowest-shell-witness.md)

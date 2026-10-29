@@ -17,7 +17,7 @@ $G$ or have a common neighbor in $G$, then the square of $G$ is Hamiltonian.
 
 ## Depends on
 
-- [Square](square.md)
+- [Square of a graph](square.md)
 
 ## Proof depends on
 

@@ -23,7 +23,7 @@ yields $w$ in the grammar obtained from $g$ by eliminating unit productions.
 - [Reachability by unit productions](unit-steps.md)
 - [Concatenation of yields](../../part-02/yields/append.md)
 - [Nonterminals of a sentential form](form-nts.md)
-- [Nonterminals mentioned by a grammar](grammar-nts.md)
+- [Set of nonterminals mentioned by a grammar](grammar-nts.md)
 - [Unit chains start at mentioned nonterminals](mem-grammar-nts-of-unit-steps.md)
 - [Productions of the unit-free grammar](mem-unit-grammar-rules.md)
 - [Yield through one production](../../part-02/yields/yields-of-rule.md)

@@ -65,7 +65,7 @@ top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to 
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
+- [Non-destructive comparison of two counters](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
 - [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)

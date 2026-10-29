@@ -27,7 +27,7 @@ lean: Cslib.Language.EncodedCFG.language_ofCFG
 - [Nonterminal of a symbol](nt-of.md)
 - [Nonterminal with a given number](nt-of-index.md)
 - [Grammar denoted by an encoding](to-cfg.md)
-- [Nonterminals mentioned by a grammar](used-nt.md)
+- [List of nonterminals mentioned by a grammar](used-nt.md)
 - [Grammars with renamings in both directions generate the same language](language-eq-of-maps.md)
 - [Renaming the nonterminals of a production](../basic/map-rule.md)
 

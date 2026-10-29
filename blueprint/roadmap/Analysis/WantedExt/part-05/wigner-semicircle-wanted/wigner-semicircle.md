@@ -27,7 +27,7 @@ where $\sigma$ is the semicircle distribution.
 - [Empirical spectral measure of a Hermitian matrix](empirical-spectral-measure-herm.md)
 - [Semicircle distribution](semicircle-law.md)
 - [Wigner matrix](wigner-matrix.md)
-- [Wigner Matrix is Hermitian](wigner-matrix-is-hermitian.md)
+- [Wigner matrices are Hermitian](wigner-matrix-is-hermitian.md)
 
 ## Sources
 

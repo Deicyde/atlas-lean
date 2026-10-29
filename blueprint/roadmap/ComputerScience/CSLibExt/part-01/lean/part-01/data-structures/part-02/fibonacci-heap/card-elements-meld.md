@@ -16,7 +16,7 @@ elements of $H_1$ plus the number of elements of $H_2$.
 ## Depends on
 
 - [Fibonacci heap](fibonacci-heap.md)
-- [Elements](elements-3.md)
+- [Multiset of a Fibonacci heap](elements-3.md)
 - [Melding Fibonacci heaps](meld.md)
 
 ## Proof depends on

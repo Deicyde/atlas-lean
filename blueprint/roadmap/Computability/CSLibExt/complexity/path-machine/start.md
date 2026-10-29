@@ -12,7 +12,7 @@ that reads the source vertex $s$, in unary, off the input.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the PATH marking machine](lab.md)
 
 ## Sources
 

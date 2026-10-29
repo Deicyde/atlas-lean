@@ -21,7 +21,7 @@ steps charged by the edit distance algorithm on $s$ and $t$ is at most $|s| + |t
 
 ## Proof depends on
 
-- [Edit Script](../script/edit-script.md)
+- [Edit script](../script/edit-script.md)
 - [Cost of an edit script](../script/cost-2.md)
 - [Edit step](../script/edit-step.md)
 - [Unit cost of an edit step](../script/cost.md)

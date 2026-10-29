@@ -17,7 +17,7 @@ $x, y \in R$, the Euler–Mahonian polynomial $E_1$ satisfies $E_1(x, y) = 1$.
 
 ## Proof depends on
 
-- [Number of descents](perm-des.md)
+- [Number of descents from the descent set](perm-des.md)
 - [Descent set of a permutation](perm-descent-set.md)
 - [Major index of a permutation](perm-maj.md)
 - [Value of a permutation at a natural position](perm-value-at.md)

@@ -16,7 +16,7 @@ Smith remoteness is the length of optimal play when the winner hurries and the l
 ## Depends on
 
 - [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
 - [The game Euclid](euclid-game.md)
 

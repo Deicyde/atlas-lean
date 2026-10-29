@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.naturalExpansions
 ---
 
-# Natural Expansions
+# Natural base phi expansions
 
-The natural base phi expansions of `N`: the Knott expansions of `N` whose
-lowest digit `1` is at the same position as the lowest digit `1` of the Bergman
-expansion of `N` (equal length of the negative part).
+**Natural base phi expansions.** Let $\varphi$ be the golden ratio and $N$ a natural number.
+Encode a finite base phi expansion with digits $0$ and $1$ by the finite set
+$S \subseteq \mathbb{Z}$ of the positions of its digits $1$. The natural expansions of $N$ are the
+Knott expansions $S$ of $N$ for which there is a Bergman expansion $T$ with
+$\sum_{i \in T} \varphi^i = N$ whose lowest digit $1$ is at the same position as the lowest
+digit $1$ of $S$, that is, $\min T = \min S$, where $S$ and $T$ both empty also counts as
+equal.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 - [Bergman expansions](is-bergman-expansion.md)
 - [Value of a base phi expansion](base-phi-value.md)
-- [Knott Expansions](knott-expansions.md)
+- [Knott expansions](knott-expansions.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ if $T$ is nonempty with root key $k$, then $k$ is a key of $T$.
 ## Depends on
 
 - [Membership in a binary tree](../binary-search-tree/mem.md)
-- [Root key of a binary tree](root.md)
+- [Optional root key of a binary tree](root.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ sequence of length one is good with probability at least $1/|\Gamma| \ge 1/2$.
 
 ## Proof depends on
 
-- [Good sequences](is-good-sequence.md)
+- [Good sequences in a finite abelian group](is-good-sequence.md)
 - [Probability that a random sequence is good](good-sequence-prob.md)
 - [Good-sequence probability at length zero](good-sequence-prob-zero.md)
 

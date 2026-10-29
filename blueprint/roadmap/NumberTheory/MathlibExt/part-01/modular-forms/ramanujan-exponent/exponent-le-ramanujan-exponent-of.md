@@ -19,7 +19,7 @@ $F$.
 
 ## Proof depends on
 
-- [Exponent Set](exponent-set.md)
+- [Exponent set of a local-exponent family](exponent-set.md)
 
 ## Sources
 

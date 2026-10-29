@@ -16,7 +16,7 @@ list of $t$ followed by $a$.
 ## Depends on
 
 - [Rooted ordered tree](tree.md)
-- [Vertices](vertices.md)
+- [Preorder vertex list of a rooted tree](vertices.md)
 - [Accumulator preorder traversal](vertices-aux.md)
 
 ## Proof depends on

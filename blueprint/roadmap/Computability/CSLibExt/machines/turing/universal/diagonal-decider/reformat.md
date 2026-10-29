@@ -28,7 +28,7 @@ reversed. It runs the checking machine and then the layout machine.
 - [The layout function](layout.md)
 - [The layout in polynomial time](poly-time-2.md)
 - [Layout after checking gives the universal machine's input](layout-answer.md)
-- [Comp Computable](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
+- [The composite polynomial-time TM2 computation](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

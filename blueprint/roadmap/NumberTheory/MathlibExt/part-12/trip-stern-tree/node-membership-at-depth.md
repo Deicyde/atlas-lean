@@ -17,7 +17,7 @@ a binary path of length $n$ whose selected node in $T$ is $y$.
 
 - [TRIP-Stern tree](trip-stern-tree.md)
 - [Node selected by a binary path](node-at-path.md)
-- [Nodes At Depth](nodes-at-depth.md)
+- [Nodes at a given depth of a TRIP-Stern tree](nodes-at-depth.md)
 
 ## Sources
 

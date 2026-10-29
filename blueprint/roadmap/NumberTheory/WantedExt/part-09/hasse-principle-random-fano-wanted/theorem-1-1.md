@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.theorem_1_1
 ---
 
-# Theorem 1 1
+# Density of soluble Fano hypersurfaces
 
-Statement of Theorem 1.1:
-
-Let `d ≥ 2` and `n ≥ d` with `(d, n) ≠ (3, 3)`. Then we have `lim_{A → ∞} ρ_{d,n}(A) = ρˡᵒᶜ_{d,n}`.
+**Density of soluble Fano hypersurfaces.** Let $d$ and $n$ be natural numbers with $d \ge 2$,
+$n \ge d$ and $(d, n) \ne (3, 3)$. Then the proportion $\rho_{d,n}(A)$ of degree-$d$
+hypersurfaces in $\mathbb{P}^n$ of height at most $A$ that have a rational point tends to the
+local density $\rho^{\mathrm{loc}}_{d,n}$ as the real number $A$ tends to $\infty$.
 
 ## Depends on
 
 - [Proportion of soluble hypersurfaces of bounded height](untitled-3.md)
-- [ΡLoc](loc-2.md)
+- [Local density of everywhere locally soluble hypersurfaces](loc-2.md)
 
 ## Sources
 

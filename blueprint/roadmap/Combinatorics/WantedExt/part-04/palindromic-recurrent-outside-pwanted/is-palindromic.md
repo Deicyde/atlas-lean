@@ -23,7 +23,7 @@ Over the finite ternary alphabet this is equivalent to having infinitely many pa
 
 - [Factors of an infinite word](is-factor.md)
 - [Palindromes](is-palindrome.md)
-- [The ternary alphabet](sigma.md)
+- [The ternary alphabet of Labbé's counterexample](sigma.md)
 
 ## Sources
 

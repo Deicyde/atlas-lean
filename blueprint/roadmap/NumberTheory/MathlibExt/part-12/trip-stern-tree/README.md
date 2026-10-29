@@ -9,7 +9,7 @@ navigation: module
 - [The empty path selects the seed](node-at-empty-path.md)
 - [Extending a path by a left step](node-at-path-append-left.md)
 - [Extending a path by a right step](node-at-path-append-right.md)
-- [Nodes At Depth](nodes-at-depth.md)
+- [Nodes at a given depth of a TRIP-Stern tree](nodes-at-depth.md)
 - [Membership in a level of a TRIP-Stern tree](node-membership-at-depth.md)
 - [Depth zero is the seed](nodes-at-depth-zero.md)
 - [Left-most node of a TRIP-Stern tree](leftmost-node.md)

@@ -21,7 +21,7 @@ $pT \le n + (p - 1) D$, that is, $T \le (n - D)/p + D$.
 
 ## Proof depends on
 
-- [Schedule](schedule.md)
+- [Schedule of a computation DAG](schedule.md)
 - [Depth of a task in a computation DAG](depth.md)
 - [Level size](level-card.md)
 - [Level $0$ is empty](level-card-zero.md)

@@ -31,8 +31,8 @@ output stack and every other stack empty.
 - [Labels of the generic host](hlab.md)
 - [Alphabets of the generic host](h.md)
 - [Phase-0 labels of the generic host](p0.md)
-- [Vprog](vprog.md)
-- [Vtime](vtime.md)
+- [Verifier host program](vprog.md)
+- [Step bound of the verifier host](vtime.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -42,7 +42,7 @@ output stack and every other stack empty.
 - [Reading a bit of $w$](d-w.md)
 - [Reading a bit of $x$](d-x.md)
 - [The component's stacks inside a host](emb.md)
-- [Embeds vprog](embeds-vprog.md)
+- [The verifier host embeds the component](embeds-vprog.md)
 - [Moving a bit block through a buffer](move2-run.md)
 - [Stack lengths grow by at most the push bound per step](stk-length-le.md)
 - [Stack lengths when only one stack is filled](update-length-le.md)

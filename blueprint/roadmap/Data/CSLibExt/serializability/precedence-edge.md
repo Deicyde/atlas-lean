@@ -17,7 +17,7 @@ operation of $j$ in $s$ that conflicts with it.
 
 ## Proof depends on
 
-- [Conflicts](conflicts.md)
+- [Conflicting operations](conflicts.md)
 
 ## Sources
 

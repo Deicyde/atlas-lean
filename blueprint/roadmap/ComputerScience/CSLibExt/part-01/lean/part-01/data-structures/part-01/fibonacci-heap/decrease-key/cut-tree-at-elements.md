@@ -17,7 +17,7 @@ of $F$ is the sum of the multisets of elements of $F'$ and of $s$.
 ## Depends on
 
 - [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
-- [Elements](../../../part-02/fibonacci-heap/elements-2.md)
+- [Multiset of a Fibonacci forest](../../../part-02/fibonacci-heap/elements-2.md)
 - [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 - [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
 

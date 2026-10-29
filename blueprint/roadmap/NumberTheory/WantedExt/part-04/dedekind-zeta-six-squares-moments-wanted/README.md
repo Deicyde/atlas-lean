@@ -12,5 +12,5 @@ navigation: module
 - [The exponent $a_{0,\ell}$](dedekind-six-squares-a0.md)
 - [The exponent $a_{3,\ell}$](dedekind-six-squares-a3.md)
 - [Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$](dedekind-six-squares-a0-a3-small.md)
-- [Six Squares Dedekind Moment two three](six-squares-dedekind-moment-two-three.md)
+- [Second and third six-squares moments over a cubic field of negative discriminant](six-squares-dedekind-moment-two-three.md)
 - [Higher six-squares moments over a non-normal cubic field](six-squares-dedekind-moment-ge-four.md)

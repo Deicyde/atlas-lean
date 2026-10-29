@@ -62,7 +62,10 @@ public theorem_wanted annihilatesSeq_charPoly_of_isSolution {K : Type*} [Field K
     (E : LinearRecurrence K) (G : ℕ → K) (hG : E.IsSolution G) :
     AnnihilatesSeq E.charPoly G
 
-/-- The Trivial Lemma, part (i): for any constant `c`, `E - c` annihilates `{cˢ}_{s ≥ 0}`.
+/-- **The operator $E - c$ annihilates the powers of $c$.** Let $K$ be a field, $c \in K$, and let
+$E$ be the translation operator $E(G_s) = G_{s+1}$ on sequences $G \colon \mathbb{N} \to K$. Then
+the operator $E - c$, that is, $p(E)$ for the polynomial $p = X - c \in K[X]$, annihilates the
+sequence $s \mapsto c^s$.
 
 Source: Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the
 Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2,
@@ -432,8 +435,11 @@ public theorem_wanted circuitArrayX_inductive :
           (tri (2 * ((c : ℤ) - 1) - 4) (j - 1)) (tri (2 * ((c : ℤ) - 1) - 4) (j - 1))) ∧
       circuitArrayX 0 1 = (RatFunc.X - 3) / RatFunc.X
 
-/-- Corollary 4.4: the closed form (2.6) of row `0`, `C^X₀,ₛ = (3·9^{s-2}X - 1)/(3·9^{s-2}X)` for
-`s ≥ 1` (Table 2, row `0`), and numerically `C₀,ₛ = (9^s/3 - 1)/(9^s/3)`.
+/-- **Row zero of the one-variable circuit array.** For every natural number $s \ge 1$, the
+one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
+over $\mathbb{Q}$, satisfies $C^X_{0,s} = (3 \cdot 9^{s-2} X - 1)/(3 \cdot 9^{s-2} X)$, with an
+integer exponent (so $9^{s-2} = 1/9$ when $s = 1$), and the circuit array $C$ satisfies
+$C_{0,s} = (9^s/3 - 1)/(9^s/3)$ in $\mathbb{Q}$.
 
 Source: Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the
 Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2,

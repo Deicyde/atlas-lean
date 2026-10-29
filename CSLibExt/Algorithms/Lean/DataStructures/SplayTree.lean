@@ -54,7 +54,7 @@ open BinarySearchTree
     x ∈ BinaryTree.node key left right ↔ x ∈ left ∨ x = key ∨ x ∈ right :=
   Iff.rfl
 
-/-- **Root key of a binary tree.** The optional root key of a binary tree is undefined (none) for
+/-- **Root key of a splay tree.** The optional root key of a binary tree is undefined (none) for
 the empty tree, and is the key $k$ for a tree whose root node holds $k$. -/
 public def root? {α : Type u} : BinaryTree α → Option α
   | .nil => none

@@ -159,8 +159,12 @@ def visit : ℕ → V → (V → List V) → List V → TimeM ℕ (List V × (V 
           let r ← visit fuel w (Function.update R v rest) acc
           visit fuel v r.2 r.1
 
-/-- Hierholzer's algorithm from `s`: an Euler circuit from `s`, or an Euler path from `s`, when one
-exists. -/
+/-- **Hierholzer's algorithm.** Let $G$ be a directed adjacency graph, read as a multigraph with
+one edge occurrence per adjacency entry, let $s$ be a vertex, and let $m$ be the number of edge
+occurrences of $G$, that is, the length of its edge list. Hierholzer's algorithm on $G$ from $s$
+runs Hierholzer's recursion from $s$ with fuel $m + 1$, with the adjacency list of each vertex as
+its list of remaining out-neighbours and the empty list as accumulator, and returns the list of
+vertices produced by the recursion, at the cost of the recursion. -/
 def hierholzer (graph : DirectedAdjacency V) (s : V) : TimeM ℕ (List V) := do
   let r ← visit ((edgeList graph).length + 1) s graph.adjacency []
   pure r.1
@@ -417,12 +421,13 @@ private theorem isSemiBalanced_of_isBalanced {graph : DirectedAdjacency V} (s : 
     (h : IsBalanced graph) : IsSemiBalanced graph s s :=
   fun x hx => by rw [h x hx]
 
-/-- **Hierholzer's algorithm returns a trail.** Let $G$ be a directed adjacency graph, read as a
-multigraph with one edge per adjacency entry, and let $s$ and $t$ be vertices such that $G$ is
-semi-balanced for $s$ and $t$. Then the vertex sequence $W$ returned by Hierholzer's algorithm on
-$G$ from $s$ starts at $s$ and ends at $t$, and the edge list of $G$ is a permutation of the list
-of consecutive pairs of $W$ followed by some further list of pairs. So $W$ is a walk from $s$ to
-$t$ that uses each edge occurrence at most once; reachability is not assumed. -/
+/-- **Hierholzer's algorithm returns a trail in a directed multigraph.** Let $G$ be a directed
+adjacency graph, read as a multigraph with one edge per adjacency entry, and let $s$ and $t$ be
+vertices such that $G$ is semi-balanced for $s$ and $t$. Then the vertex sequence $W$ returned by
+Hierholzer's algorithm on $G$ from $s$ starts at $s$ and ends at $t$, and the edge list of $G$ is a
+permutation of the list of consecutive pairs of $W$ followed by some further list of pairs. So $W$
+is a walk from $s$ to $t$ that uses each edge occurrence at most once; reachability is not
+assumed. -/
 theorem hierholzer_trail (graph : DirectedAdjacency V) (s t : V)
     (hbal : IsSemiBalanced graph s t) :
     (hierholzer graph s).ret.head? = some s ∧ (hierholzer graph s).ret.getLast? = some t ∧
@@ -455,12 +460,13 @@ private theorem leftover_nil (graph : DirectedAdjacency V) (s : V) {W : List V} 
   rw [hstuck a ha] at hb
   exact List.not_mem_nil hb
 
-/-- **Hierholzer's algorithm finds Euler paths.** Let $G$ be a directed adjacency graph, read as a
-multigraph with one edge per adjacency entry, and let $s$ and $t$ be vertices such that $G$ is
-semi-balanced for $s$ and $t$ (at $s$ one more edge occurrence leaves than enters, at $t$ one more
-enters than leaves, and at every other vertex as many leave as enter; at every vertex when
-$s = t$) and the source of every edge of $G$ is reachable from $s$. Then the vertex sequence
-returned by Hierholzer's algorithm on $G$ from $s$ is an Euler path of $G$ from $s$ to $t$. -/
+/-- **Hierholzer's algorithm finds Euler paths in directed multigraphs.** Let $G$ be a directed
+adjacency graph, read as a multigraph with one edge per adjacency entry, and let $s$ and $t$ be
+vertices such that $G$ is semi-balanced for $s$ and $t$ (at $s$ one more edge occurrence leaves
+than enters, at $t$ one more enters than leaves, and at every other vertex as many leave as enter;
+at every vertex when $s = t$) and the source of every edge of $G$ is reachable from $s$. Then the
+vertex sequence returned by Hierholzer's algorithm on $G$ from $s$ is an Euler path of $G$ from $s$
+to $t$. -/
 theorem hierholzer_isEulerPath (graph : DirectedAdjacency V) (s t : V)
     (hbal : IsSemiBalanced graph s t) (hreach : ∀ u w, graph.Edge u w → graph.Reachable s u) :
     IsEulerPath graph s t (hierholzer graph s).ret := by
@@ -469,11 +475,11 @@ theorem hierholzer_isEulerPath (graph : DirectedAdjacency V) (s t : V)
   rw [hnil, List.append_nil] at hp
   exact ⟨hh, hl, hp.symm⟩
 
-/-- **Hierholzer's algorithm finds Euler circuits.** Let $G$ be a directed adjacency graph, read
-as a multigraph with one edge per adjacency entry, that is balanced (every vertex is the source of
-exactly as many edge occurrences as it is the target of), and let $s$ be a vertex such that the
-source of every edge of $G$ is reachable from $s$. Then the vertex sequence returned by
-Hierholzer's algorithm on $G$ from $s$ is an Euler circuit of $G$ from $s$.
+/-- **Hierholzer's algorithm finds Euler circuits in directed multigraphs.** Let $G$ be a directed
+adjacency graph, read as a multigraph with one edge per adjacency entry, that is balanced (every
+vertex is the source of exactly as many edge occurrences as it is the target of), and let $s$ be a
+vertex such that the source of every edge of $G$ is reachable from $s$. Then the vertex sequence
+returned by Hierholzer's algorithm on $G$ from $s$ is an Euler circuit of $G$ from $s$.
 
 Source: CLRS, third edition, Problem 22-3, sufficiency with the algorithm; strong connectivity is
 weakened to reachability from $s$ of the source of every edge. -/

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.PlanarPoint
 ---
 
-# Planar Point
+# Points of the Euclidean plane
 
-A point in the Euclidean plane.
+**Points of the Euclidean plane.** A planar point is a point of the Euclidean plane
+$\mathbb{R}^2$: a pair $(x, y)$ of real numbers, with the Euclidean norm
+$\lVert (x, y) \rVert = \sqrt{x^2 + y^2}$.
 
 ## Depends on
 

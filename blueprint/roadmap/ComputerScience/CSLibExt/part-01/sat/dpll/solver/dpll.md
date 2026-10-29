@@ -17,7 +17,7 @@ equal to the number of distinct variables occurring in $\varphi$ and returns its
 ## Proof depends on
 
 - [DPLL with a fuel budget](decide-with-fuel.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [Variables of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

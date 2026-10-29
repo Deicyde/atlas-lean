@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.CrossesCut
 ---
 
-# Crosses Cut
+# Edges crossing a cut
 
-An edge crosses a vertex cut when exactly one of its endpoints lies on the chosen side.
+**Edges crossing a cut.** Consider a multigraph with vertex set $V$ and edge set $E$ in which
+each edge has a first and a second endpoint. For a set $S \subseteq V$, an edge crosses the cut at
+$S$ when exactly one of its two endpoints lies in $S$.
 
 ## Depends on
 

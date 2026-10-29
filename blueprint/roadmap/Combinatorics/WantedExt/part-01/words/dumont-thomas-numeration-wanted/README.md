@@ -9,7 +9,7 @@ navigation: module
 - [Admissible sequence](is-admissible-sequence.md)
 - [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
 - [One-term sequences are admissible](is-admissible-sequence-zero.md)
-- [Substitution Automaton](substitution-automaton.md)
+- [Substitution automaton](substitution-automaton.md)
 - [The substitution automaton on the empty word](substitution-automaton-nil.md)
 - [Reading a nonempty digit word](substitution-automaton-cons.md)
 - [Two runs of the Fibonacci automaton](substitution-automaton-fibonacci-small.md)

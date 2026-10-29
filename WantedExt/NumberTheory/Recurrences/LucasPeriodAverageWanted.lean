@@ -499,9 +499,15 @@ public theorem_wanted lcm_mem_lucasPeriodSet (params : LucasSequenceParams) :
           (params.p - params.q - 1 = 0 ∧ IsCoprime (params.q - 1) (c : ℤ))) →
       IsLeast {x | r ∣ x ∧ x ∈ lucasAverageSet params} c ∧ lucasAllAveragesIntegral params c)
 
-/-- Theorem 2.5: if `m, n ∈ S'(U)` and `m ∣ r`, then `B_U(r) ≡ 0 (mod m)`,
-`lcm(m, n) ∈ S'(U)`, `A_W(m)`, `A_W(n)`, `A_W(lcm(m, n))` are integers for all `W(a, b)`, and
-`B_W(r) ≡ 0 (mod m)` for all `W(a, b)`.
+/-- **The average set is closed under lcm.** Let $P$ and $Q \ne 0$ be integers and $U$ the Lucas
+sequence given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let $S'(U)$ be the set
+of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of $U$ modulo $n$ divides
+$n$ and $n \mid U_1 + \dots + U_n$, and say that a natural number $x$ has integral averages if
+$x \mid w_1 + \dots + w_x$ for every integer sequence $(w_k)_{k \ge 0}$ with
+$w_{k+2} = P w_{k+1} - Q w_k$ for all $k$. Let $m, n \in S'(U)$ and let $r$ be a natural number
+divisible by $m$. Then $m \mid U_1 + \dots + U_r$, $\operatorname{lcm}(m, n) \in S'(U)$, each of
+$m$, $n$ and $\operatorname{lcm}(m, n)$ has integral averages, and $m \mid w_1 + \dots + w_r$ for
+every integer sequence $(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.5
@@ -624,9 +630,17 @@ public theorem_wanted lucasAverageSet_two_pow_of_p_two_mod_four (params : LucasS
       IsLeast {x | 2 ^ k ∣ x ∧ x ∈ lucasPeriodSet params} (2 ^ k) ∧
       lucasAllAveragesIntegral params (2 ^ k)
 
-/-- Theorem 2.16: for nondegenerate `U(a, b)` with `a ≡ 0 (mod 4)` and `b ≡ 1 (mod 4)`:
-`B_U(n) ≢ 0 (mod 2 ^ k)` when `2 ^ k ∥ n` with `k ≥ 1`, so `C'(n)` does not exist for even
-`n`, and `A_U(m)` is an integer only if `m` is odd.
+/-- **Lucas sums not divisible by $2^k$ when $P \equiv 0$ and $-Q \equiv 1 \pmod 4$.** Let $P$
+and $Q \ne 0$ be integers forming a nondegenerate Lucas pair with $P \equiv 0 \pmod 4$ and
+$-Q \equiv 1 \pmod 4$, and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Let $S'(U)$ be the set of positive integers $n$ coprime to $Q$
+such that the period $\pi_U(n)$ of $U$ modulo $n$ divides $n$ and $n \mid U_1 + \dots + U_n$.
+Then for every $k \ge 1$ and every natural number $n$ with $2^k \mid n$ and $2^{k+1} \nmid n$,
+$2^k$ does not divide $U_1 + \dots + U_n$; for every even $n > 0$, no element of $S'(U)$ is
+divisible by $n$; and every positive integer $m$ with $m \mid U_1 + \dots + U_m$ is odd.
+
+In the paper's notation $a = P$ and $b = -Q$, so the hypotheses are $a \equiv 0$ and
+$b \equiv 1 \pmod 4$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.16
@@ -670,9 +684,17 @@ public theorem_wanted lucasAverageSet_two_pow_of_p_zero_mod_four (params : Lucas
       IsLeast {x | 2 ^ k ∣ x ∧ x ∈ lucasPeriodSet params} (2 ^ k) ∧
       lucasAllAveragesIntegral params (2 ^ k)
 
-/-- Theorem 2.18: for nondegenerate `U(a, b)` with `a ≡ 2 (mod 4)` and `b ≡ -1 (mod 4)`:
-`B_U(n) ≢ 0 (mod 2 ^ k)` when `2 ^ k ∥ n` with `k ≥ 1`, so `C'(n)` does not exist for even
-`n`, and `A_U(n)` is an integer only if `n` is odd.
+/-- **Lucas sums not divisible by $2^k$ when $P \equiv 2$ and $-Q \equiv -1 \pmod 4$.** Let $P$
+and $Q \ne 0$ be integers forming a nondegenerate Lucas pair with $P \equiv 2 \pmod 4$ and
+$-Q \equiv -1 \pmod 4$, and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Let $S'(U)$ be the set of positive integers $n$ coprime to $Q$
+such that the period $\pi_U(n)$ of $U$ modulo $n$ divides $n$ and $n \mid U_1 + \dots + U_n$.
+Then for every $k \ge 1$ and every natural number $n$ with $2^k \mid n$ and $2^{k+1} \nmid n$,
+$2^k$ does not divide $U_1 + \dots + U_n$; for every even $n > 0$, no element of $S'(U)$ is
+divisible by $n$; and every positive integer $m$ with $m \mid U_1 + \dots + U_m$ is odd.
+
+In the paper's notation $a = P$ and $b = -Q$, so the hypotheses are $a \equiv 2$ and
+$b \equiv -1 \pmod 4$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.18
@@ -1078,7 +1100,11 @@ theorem lucasPeriodOrbitIndex_one (params : LucasSequenceParams) :
     lucasPeriodOrbitIndex params 1 = 0 :=
   Nat.le_zero.mp (Nat.sInf_le (lucasPeriodOrbitCloses_one_zero params))
 
-/-- `L(1) = 1`.
+/-- **The orbit lcm of $1$ is $1$.** For every Lucas sequence $U = U(P, Q)$ with integer
+parameters $P$ and $Q \ne 0$, $L(1) = 1$, where
+$L(n) = \operatorname{lcm}(\pi_U^0(n), \dots, \pi_U^{\omega(n)}(n))$ is the lcm of the iterates
+$\pi_U^i(n)$ of the period map $\pi_U$ of $U$, with $\pi_U^0(n) = n$, up to the orbit index
+$\omega(n)$ of $n$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, equation (2.14). -/
@@ -1227,11 +1253,23 @@ public theorem_wanted lucasU_uniform_of_prime_dvd_discr (params : LucasSequenceP
     (p = 3 → ∀ d, 2 ≤ d → padicValInt 3 (params.p ^ 2 - params.q) = d → ∀ i, 1 ≤ i →
       lucasURestrictedPeriod params (3 ^ i) = 3 ^ max (i + 1 - d) 1)
 
-/-- Theorem 2.8: if `gcd(n, b) = 1` and `ω(n)` exists, then `C(n)` exists and equals `L(n)`.
-Further, whenever `C(n) = c` exists and `a + b - 1 ≠ 0` with `gcd(c, a + b - 1) = 1`, or
-`a + b - 1 = 0` with `gcd(c, -b - 1) = 1`, then `C'(n) = c` and `A_W(c)` is an integer for all
-`W(a, b)`. `gcd(n, b) = 1` is the `i = 0` case of `LucasPeriodOrbitCloses`; `C`, `C'` are stated
-as `IsLeast`.
+/-- **Least multiples in $S(U)$ and the orbit lcm $L(n)$.** Let $P$ and $Q \ne 0$ be integers and
+$U$ the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let
+$\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its $i$-th iterate, with
+$\pi_U^0(m) = m$. Let $S(U)$ be the set of positive integers $m$ coprime to $Q$ with
+$\pi_U(m) \mid m$, let $S'(U)$ be the set of $m \in S(U)$ with $m \mid U_1 + \dots + U_m$, and
+say that a natural number $x$ has integral averages if $x \mid w_1 + \dots + w_x$ for every
+integer sequence $(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$. Let $n > 0$.
+If the period orbit of $n$ closes at some step $k$, meaning that $\pi_U^i(n)$ is coprime to $Q$
+for all $i \le k$ and $\pi_U^{k+1}(n) = \pi_U^j(n)$ for some $j \le k$, then the least element of
+$S(U)$ divisible by $n$ is $L(n) = \operatorname{lcm}(\pi_U^0(n), \dots, \pi_U^{\omega(n)}(n))$,
+where $\omega(n)$ is the least such $k$. Moreover, if $c$ is the least element of $S(U)$
+divisible by $n$, and either $P - Q - 1 \ne 0$ and $\gcd(c, P - Q - 1) = 1$, or $P - Q - 1 = 0$
+and $\gcd(c, Q - 1) = 1$, then $c$ is also the least element of $S'(U)$ divisible by $n$, and $c$
+has integral averages.
+
+In the paper's notation $a = P$ and $b = -Q$, so $P - Q - 1 = a + b - 1$ and $Q - 1 = -b - 1$;
+the paper's hypothesis $\gcd(n, b) = 1$ is the case $i = 0$ of the closing condition.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.8
@@ -1245,13 +1283,24 @@ public theorem_wanted isLeast_lucasPeriodSet_eq_lucasPeriodOrbitLcm
           (params.p - params.q - 1 = 0 ∧ IsCoprime (c : ℤ) (params.q - 1))) →
       IsLeast {x | n ∣ x ∧ x ∈ lucasAverageSet params} c ∧ lucasAllAveragesIntegral params c
 
-/-- Corollary 2.4: (i) if `ω(n)` exists and `m ∣ n`, then `ω(m)` exists and `L(m) ∣ L(n)`;
-(ii) if `ω(n)` exists and `g ∣ π_U^i(n)`, then `ω(g)` exists and `L(g) ∣ L(n)`; (iii) if
-`gcd(r, s) = 1` and `ω(r)`, `ω(s)` exist, then `ω(r s)` exists and
-`L(r s) = lcm(L(r), L(s))`; (iv) if `p` is prime, `ω(p)` exists and `i ≥ 1`, then `ω(p ^ i)`
-exists and `L(p ^ i) = lcm(p ^ i, L(p))`. The coprimality to `b` of `n`, `r`, `s`, `p` is part of
-the existence of `ω`; existence of `ω(g)` in (ii) and of `ω(r s)` in (iii) is implicit in the
-paper's statements about `L(g)` and `L(r s)`.
+/-- **Divisibility and multiplicativity of the orbit lcm.** Let $P$ and $Q \ne 0$ be integers and
+$U$ the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let
+$\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its $i$-th iterate, with
+$\pi_U^0(m) = m$. Say that $\omega(m)$ exists if the period orbit of $m$ closes at some step $k$,
+meaning that $\pi_U^i(m)$ is coprime to $Q$ for all $i \le k$ and $\pi_U^{k+1}(m) = \pi_U^j(m)$
+for some $j \le k$; then $\omega(m)$ is the least such $k$ and
+$L(m) = \operatorname{lcm}(\pi_U^0(m), \dots, \pi_U^{\omega(m)}(m))$. Then:
+(i) if $n > 0$, $\omega(n)$ exists and $m \mid n$, then $\omega(m)$ exists and $L(m) \mid L(n)$;
+(ii) if $n > 0$, $g > 0$, $\omega(n)$ exists and $g \mid \pi_U^i(n)$ for some $i$, then
+$\omega(g)$ exists and $L(g) \mid L(n)$;
+(iii) if $r, s > 0$ are coprime and $\omega(r)$ and $\omega(s)$ exist, then $\omega(rs)$ exists
+and $L(rs) = \operatorname{lcm}(L(r), L(s))$;
+(iv) if $p$ is prime, $i \ge 1$ and $\omega(p)$ exists, then $\omega(p^i)$ exists and
+$L(p^i) = \operatorname{lcm}(p^i, L(p))$.
+
+In the paper's notation $b = -Q$. The coprimality to $b$ of $n$, $r$, $s$ and $p$ is part of the
+existence of $\omega$; the existence of $\omega(g)$ in (ii) and of $\omega(rs)$ in (iii) is
+implicit in the paper's statements about $L(g)$ and $L(rs)$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.4
@@ -1273,18 +1322,36 @@ public theorem_wanted lucasPeriodOrbitLcm_dvd_of_dvd (params : LucasSequencePara
       (∃ k, LucasPeriodOrbitCloses params (p ^ i) k) ∧
         lucasPeriodOrbitLcm params (p ^ i) = Nat.lcm (p ^ i) (lucasPeriodOrbitLcm params p)
 
-/-- Theorem 2.9: `L(2)` and `L(3)`. (i) for `a`, `b` odd, `L(2)` exists iff `gcd(b, 3) = 1`;
-(ii) for `a` even, `L(2)` exists iff `b` is odd; (iii) `L(3) = 3` or `6 ∣ L(3)` when it exists;
-(iv) `L(3) = 3` iff `a ≡ b ≡ -1 (mod 3)`; (v) `6 ∣ L(3)` iff `gcd(b, 6) = 1` and not both
-`a ≡ -1 (mod 3)`, `b ≡ -1 (mod 6)`; (vi) `a` even, `b` odd give `L(2) = 2`; (vii)
-`a ≡ ±1`, `b ≡ 1 (mod 6)` give `L(2) = L(3) = 24`; (viii) `a ≡ 1`, `b ≡ -1` or `a ≡ 3`,
-`b ≡ 1 (mod 6)` give `L(2) = L(3) = 6`; (ix) `a ≡ b ≡ -1 (mod 6)` give `L(2) = 6`, `L(3) = 3`;
-(x) `a ≡ 0 (mod 6)` gives `L(3) = 6` for `b ≡ 1` and `L(3) = 12` for `b ≡ -1 (mod 6)`; (xi)
-`a ≡ 3`, `b ≡ -1 (mod 6)` give `L(2) = L(3) = 12`; (xii) `a ≡ ±2`, `b ≡ 1 (mod 6)` give
-`L(3) = 24`, and `a ≡ -2`, `b ≡ -1 (mod 6)` give `L(3) = 6`; (xiii) if `rad(n) ∣ 6` and `L(n)`
-exists then `rad(L(n)) ∣ 6`. "`L(m)` exists" means `ω(m)` exists. The second half of (xii) is
-false as printed for `a ≡ 2 (mod 6)` and is restricted to `a ≡ -2 (mod 6)`: for
-`(a, b) = (2, 5)` (nondegenerate) one has `π_U(3) = 3`, so `L(3) = 3`, in line with (iv).
+/-- **The orbit lcms $L(2)$ and $L(3)$.** Let $P$ and $Q \ne 0$ be integers, write $a = P$ and
+$b = -Q$, and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Let $\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its
+$i$-th iterate, with $\pi_U^0(m) = m$. Say that $L(m)$ exists if the period orbit of $m$ closes at
+some step $k$, meaning that $\pi_U^i(m)$ is coprime to $Q$ for all $i \le k$ and
+$\pi_U^{k+1}(m) = \pi_U^j(m)$ for some $j \le k$; then, with $\omega(m)$ the least such $k$,
+$L(m) = \operatorname{lcm}(\pi_U^0(m), \dots, \pi_U^{\omega(m)}(m))$. Then:
+(i) if $a$ and $b$ are odd, then $L(2)$ exists if and only if $\gcd(b, 3) = 1$;
+(ii) if $a$ is even, then $L(2)$ exists if and only if $b$ is odd;
+(iii) if $L(3)$ exists, then $L(3) = 3$ or $6 \mid L(3)$;
+(iv) $L(3)$ exists and equals $3$ if and only if $a \equiv b \equiv -1 \pmod 3$;
+(v) $L(3)$ exists and is divisible by $6$ if and only if $\gcd(b, 6) = 1$ and not both
+$a \equiv -1 \pmod 3$ and $b \equiv -1 \pmod 6$;
+(vi) if $a$ is even and $b$ is odd, then $L(2)$ exists and $L(2) = 2$.
+In each of the following cases, with all congruences modulo $6$, every $L(m)$ named exists and
+has the given value:
+(vii) if $a \equiv \pm 1$ and $b \equiv 1$, then $L(2) = L(3) = 24$;
+(viii) if $a \equiv 1$ and $b \equiv -1$, or $a \equiv 3$ and $b \equiv 1$, then
+$L(2) = L(3) = 6$;
+(ix) if $a \equiv -1$ and $b \equiv -1$, then $L(2) = 6$ and $L(3) = 3$;
+(x) if $a \equiv 0$, then $L(3) = 6$ when $b \equiv 1$, and $L(3) = 12$ when $b \equiv -1$;
+(xi) if $a \equiv 3$ and $b \equiv -1$, then $L(2) = L(3) = 12$;
+(xii) if $a \equiv \pm 2$ and $b \equiv 1$, then $L(3) = 24$, and if $a \equiv -2$ and
+$b \equiv -1$, then $L(3) = 6$.
+Finally, (xiii) if $n > 0$, every prime factor of $n$ divides $6$ and $L(n)$ exists, then every
+prime factor of $L(n)$ divides $6$.
+
+The second half of (xii) is false as printed in the paper for $a \equiv 2 \pmod 6$ and is
+restricted here to $a \equiv -2 \pmod 6$: for $(a, b) = (2, 5)$, a nondegenerate pair, one has
+$\pi_U(3) = 3$, so $L(3) = 3$, in line with (iv).
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.9
@@ -1326,14 +1393,28 @@ public theorem_wanted lucasPeriodOrbitLcm_two_three (params : LucasSequenceParam
       (∃ k, LucasPeriodOrbitCloses params n k) →
       ∀ ℓ : ℕ, ℓ.Prime → ℓ ∣ lucasPeriodOrbitLcm params n → ℓ ∣ 6
 
-/-- Theorem 2.11: for nondegenerate `U(a, b)`, `C(1) = 1`. If `Q(b) ≥ 5` (the least prime factor
-of `b`, with `Q(±1) = 1`), then `C(n)` exists for `n ≥ 2` with `P(n) < Q(b)` (`P` the largest
-prime factor); if moreover `gcd(C(n), a + b - 1) = 1`, then `A_W(C(n))` is an integer for all
-`W(a, b)`, and the same holds when `a + b - 1 ≠ 0`, `Q(a + b - 1) ≥ 5` and
-`P(n) < Q(b (a + b - 1))`. If `b = ±1` then `C(n)` exists for all `n`, and for
-`(a, b) ∈ {(1, 1), (-1, 1), (3, -1)}` `A_W(C(n))` is an integer for all `n` and all `W(a, b)`.
-`P(n) < Q(r)` is "every prime factor of `n` is below every prime factor of `r`"; the claims for
-`b = ±1` are stated without `Q(b) ≥ 5`, which they contradict under the convention `Q(±1) = 1`.
+/-- **Least multiples in $S(U)$ for nondegenerate $U(P, Q)$.** Let $P$ and $Q \ne 0$ be integers
+forming a nondegenerate Lucas pair, and let $U$ be the Lucas sequence given by $U_0 = 0$,
+$U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let $S(U)$ be the set of positive integers $n$
+coprime to $Q$ such that the period $\pi_U(n)$ of $U$ modulo $n$ divides $n$, and say that a
+natural number $x$ has integral averages if $x \mid w_1 + \dots + w_x$ for every integer sequence
+$(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$. Then $1$ is the least element
+of $S(U)$ divisible by $1$, that is, the least element of $S(U)$. If $Q \ne \pm 1$ and every prime
+factor of $Q$ is at least $5$, then: every $n \ge 2$ whose prime factors are all smaller than
+every prime factor of $Q$ divides some element of $S(U)$; for every $n > 0$ whose prime factors
+are all smaller than every prime factor of $Q$, if $c$ is the least element of $S(U)$ divisible
+by $n$ and $\gcd(c, P - Q - 1) = 1$, then $c$ has integral averages; and if moreover
+$P - Q - 1 \notin \{-1, 0, 1\}$ and every prime factor of $P - Q - 1$ is at least $5$, then for
+every $n > 0$ whose prime factors are all smaller than every prime factor of $Q (P - Q - 1)$, the
+least element of $S(U)$ divisible by $n$, if it exists, has integral averages. If $Q = \pm 1$,
+then every $n > 0$ divides some element of $S(U)$. If $(P, Q)$ is $(1, -1)$, $(-1, -1)$ or
+$(3, 1)$, then for every $n > 0$ the least element of $S(U)$ divisible by $n$, if it exists, has
+integral averages.
+
+In the paper's notation $a = P$ and $b = -Q$, so $P - Q - 1 = a + b - 1$. The claims for
+$b = \pm 1$ are stated without the hypothesis that the least prime factor of $b$ is at least $5$,
+which they would contradict under the paper's convention that the least prime factor of $\pm 1$
+is $1$.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of
 Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.11

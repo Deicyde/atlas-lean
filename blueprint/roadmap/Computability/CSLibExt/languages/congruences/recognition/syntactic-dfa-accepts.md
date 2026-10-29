@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Language.syntacticDFA_accepts
 ---
 
-# Syntactic DFA accepts
+# The syntactic DFA accepts its language
 
-The syntactic DFA accepts exactly the language from which it was constructed.
+**The syntactic DFA accepts its language.** For every language $L$, the syntactic DFA of $L$
+accepts exactly $L$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [The syntactic DFA](syntactic-dfa.md)
 
 ## Proof depends on

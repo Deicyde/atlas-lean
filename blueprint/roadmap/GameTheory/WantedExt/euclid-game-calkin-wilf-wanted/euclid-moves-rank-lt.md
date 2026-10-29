@@ -13,7 +13,7 @@ $a' + b' < a + b$.
 
 ## Depends on
 
-- [Euclid Moves](euclid-moves.md)
+- [Euclid moves](euclid-moves.md)
 
 ## Sources
 

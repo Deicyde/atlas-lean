@@ -22,7 +22,7 @@ This node has no prerequisites.
 - [Inverse birational map](symm.md)
 - [Composition of birational maps](trans.md)
 - [Birational automorphisms over a base](birational-aut-over.md)
-- [Variety over a field](variety.md)
+- [Integral variety over a field](variety.md)
 
 ## Sources
 

@@ -112,13 +112,26 @@ $s \mapsto r(s,\pi(s)) + \gamma \sum_{s'} P(s,\pi(s),s') \, V(s')$. -/
 def policyBellman (M : MDP S A K) (γ : K) (π : S → A) (V : S → K) : S → K :=
   fun s => qValue M γ V s (π s)
 
-/-- Value iteration, as a mathematical iterate: `n` Bellman updates from `V`. Evaluating it
-directly recomputes earlier iterates; `valueIterationVec` is the tabulated program. -/
+/-- **Value iteration.** Let $M$ be a Markov decision process with finitely many states, a
+nonempty finite set of actions, and rewards and transition probabilities in a field $K$ carrying
+a linear order, let $\gamma \in K$, and let $T$ be the Bellman optimality operator of $M$ with
+discount $\gamma$. For $n \in \mathbb{N}$ and a function $V$ from states to $K$, $n$ steps of
+value iteration from $V$ give the $n$-fold iterate $T^n V$, where $T^0 V = V$.
+
+Evaluated directly, this definition recomputes earlier iterates; tabulated value iteration
+stores each update instead. -/
 def valueIteration (M : MDP S A K) (γ : K) (n : ℕ) (V : S → K) : S → K :=
   (bellman M γ)^[n] V
 
-/-- Value iteration as a program on `Fin m` states: each update is tabulated in a vector, so
-update `k + 1` reads the stored values of update `k`. -/
+/-- **Tabulated value iteration.** Let $M$ be a Markov decision process with states
+$\{0, \dots, m-1\}$, a nonempty finite set of actions, and rewards and transition probabilities
+in a field $K$ carrying a linear order, let $\gamma \in K$, and let $T$ be the Bellman optimality
+operator of $M$ with discount $\gamma$. Tabulated value iteration takes a number of steps
+$n \in \mathbb{N}$ and a vector $v \in K^m$, read as a function on states: with $0$ steps it
+returns $v$, and with $k + 1$ steps it computes the vector $\bigl((Tv)(0), \dots, (Tv)(m-1)\bigr)$
+and then runs $k$ steps from that vector.
+
+Each update is stored as a vector, so update $k + 1$ reads the stored values of update $k$. -/
 def valueIterationVec {m : ℕ} (M : MDP (Fin m) A K) (γ : K) : ℕ → Vector K m → Vector K m
   | 0, v => v
   | k + 1, v => valueIterationVec M γ k (Vector.ofFn (bellman M γ fun s => v.get s))

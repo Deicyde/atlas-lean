@@ -15,7 +15,7 @@ restriction of $t$ to $S$ belongs to $r$, and the restriction of $t$ to $S'$ bel
 
 ## Depends on
 
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 - [Tuple](tuple.md)
 - [Tuple over a schema](is-over.md)
 - [Restriction of a tuple](restrict.md)

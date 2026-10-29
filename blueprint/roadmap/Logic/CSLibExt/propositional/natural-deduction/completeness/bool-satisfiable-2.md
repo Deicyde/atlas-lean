@@ -16,7 +16,7 @@ with $v(\bot) = \mathrm{false}$ makes every member of $T$ and every member of $S
 ## Depends on
 
 - [Satisfiable sets of propositions](bool-satisfiable.md)
-- [Consistent With](consistent-with.md)
+- [Consistency relative to a theory](consistent-with.md)
 
 ## Proof depends on
 

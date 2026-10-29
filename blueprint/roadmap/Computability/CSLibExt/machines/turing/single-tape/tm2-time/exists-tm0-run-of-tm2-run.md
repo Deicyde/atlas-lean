@@ -19,11 +19,11 @@ marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom to
 ## Depends on
 
 - [Emulation constant](emulation-constant.md)
-- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Proof depends on
 
-- [One multi-stack step costs at most `1 + B (2 (H + B) + 2)` steps of the `TM1` emulator](exists-relates-within-steps-tm1-of-step.md)
+- [One multi-stack step costs at most $1 + B(2(H + B) + 2)$ emulator steps](exists-relates-within-steps-tm1-of-step.md)
 - [Each step of the $\mathrm{TM1}$ emulator is at most three single-tape steps](relates-within-steps-tm0-of-relates-in-s.md)
 - [Stacks of the initial configuration are no longer than the input](../../../../../MathlibExt/turing-machine/composition/init-list-stk-length-le.md)
 - [Push bound of a finite multi-stack Turing machine](../../../../../MathlibExt/turing-machine/composition/push-bound.md)

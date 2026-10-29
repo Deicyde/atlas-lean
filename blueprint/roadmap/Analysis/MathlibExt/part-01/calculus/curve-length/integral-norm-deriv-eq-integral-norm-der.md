@@ -7,10 +7,13 @@ proof: formalized
 lean: intervalIntegral.integral_norm_deriv_eq_integral_norm_derivWithin_Icc
 ---
 
-# Integral norm deriv eq integral norm deriv Within Icc
+# Integrating the norm of a derivative within a closed interval
 
-On an interval, integrating the norm of `derivWithin` gives the same result as integrating
-the norm of `deriv`.
+**Integrating the norm of a derivative within a closed interval.** Let $E$ be a real normed
+space, let $f : \mathbb{R} \to E$ be any function and let $a \le b$ be real numbers. Then
+$\int_a^b \lVert f'(t) \rVert \, dt = \int_a^b \lVert f'_{[a,b]}(t) \rVert \, dt$, where $f'(t)$
+is the derivative of $f$ at $t$ and $f'_{[a,b]}(t)$ is its derivative at $t$ within $[a, b]$, each
+taken to be $0$ where it does not exist.
 
 ## Depends on
 

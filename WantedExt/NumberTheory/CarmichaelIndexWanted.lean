@@ -62,7 +62,9 @@ public theorem_wanted carmichaelIndex_eq_prod (n : ℕ) (hn : 2 ≤ n) :
       (Nat.card {u : (ZMod (p ^ n.factorization p))ˣ //
         orderOf u ∣ Nat.gcd (p - 1) (n / p ^ n.factorization p - 1)} + 1)
 
-/-- Theorem 2: there is no positive integer `n` with `N(n) = n - 1`.
+/-- **The Carmichael index of $n$ is never $n - 1$.** For every positive integer $n$, the
+Carmichael index $N(n)$, the number of integers $a$ with $0 \le a \le n - 1$ and
+$a^n \equiv a \pmod{n}$, is not equal to $n - 1$.
 
 Source: Yamagami and Inaba, *On a Formula and Some Properties of Carmichael Indices*,
 INTEGERS 24 (2024), Article A40, Theorem 2 (`integers-2024-A40-thm-2`). -/

@@ -14,7 +14,7 @@ $k(k+1)/2 \le n$ is even.
 
 ## Depends on
 
-- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
+- [Partitions whose odd parts are distinct](distinct-odd-parts-count.md)
 
 ## Sources
 

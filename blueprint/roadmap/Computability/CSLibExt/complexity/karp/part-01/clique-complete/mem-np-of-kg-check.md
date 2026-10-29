@@ -27,7 +27,7 @@ bit string $w$ with $|w| \le |x|$ such that $V_m$ accepts $(x, w)$, then $L$ is 
 - [Verifier host, canonical form](../../../host/is-poly-time-verifier.md)
 - [Stacks of the CLIQUE verifier](../clique-verify/k.md)
 - [Labels of the CLIQUE verifier](../clique-verify/lab.md)
-- [Prog](../clique-verify/prog.md)
+- [Program of the clique verifier](../clique-verify/prog.md)
 - [The verifier machine for clique, independent set and vertex cover](../clique-verify/run.md)
 - [Start label of the clique verifier](../clique-verify/start.md)
 - [The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component](kg-verify-comp.md)

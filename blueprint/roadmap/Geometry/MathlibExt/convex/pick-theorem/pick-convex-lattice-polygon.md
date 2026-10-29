@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To Real volume convex Hull lattice triangle](to-real-volume-convex-hull-lattice-trian.md)
+- [Pick's theorem for lattice triangles with a vertex at the origin](to-real-volume-convex-hull-lattice-trian.md)
 
 ## Sources
 

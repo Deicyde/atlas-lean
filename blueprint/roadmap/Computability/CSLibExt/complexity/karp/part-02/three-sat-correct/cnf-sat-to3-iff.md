@@ -26,7 +26,7 @@ translation $\mathrm{to3}(\varphi)$ is satisfiable if and only if $\varphi$ is s
 - [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
 - [Completeness of the auxiliary 3SAT translation](to3-aux-complete.md)
 - [Soundness of the auxiliary 3SAT translation](to3-aux-sound.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources

@@ -9,7 +9,7 @@ navigation: module
 - [Encoding symbols as basic nonterminals of the binarized grammar](to-cnf-nt.md)
 - [Decoding basic nonterminals of the binarized grammar](from-cnf-nt.md)
 - [Head of a binarized output](cnf-head.md)
-- [Cnf Grammar](cnf-grammar.md)
+- [Binarization of a grammar](cnf-grammar.md)
 - [Valuation of the binarized grammar by yields](cnf-valuation.md)
 - [Binarization adds no words](cnf-grammar-language-le-of-reduced.md)
 - [Binarization has no empty productions](cnf-grammar-output-ne-nil.md)

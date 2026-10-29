@@ -52,7 +52,7 @@ order of $j$.
 ## Proof depends on
 
 - [Counter values of a quiescent emitter state](../ham-path-emit-machine/val.md)
-- [Counters read by copy sites](../ham-path-emit-machine/src.md)
+- [Counters read by HAMPATH copy sites](../ham-path-emit-machine/src.md)
 - [End of a clause in the detour walk](../ham-path-emit-machine/cl-end.md)
 - [One clause of the detour walk](dclause-run.md)
 - [Splitting off the middle clause of a concatenation](../ham-path-emit-spec/range-flat-map-get-d.md)

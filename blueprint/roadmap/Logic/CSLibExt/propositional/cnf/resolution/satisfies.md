@@ -15,13 +15,13 @@ resolution from $\varphi$ is satisfied by every assignment that satisfies $\varp
 
 - [CNF formula](../basic/cnf.md)
 - [Resolution derivability](resolution-derivable.md)
-- [Satisfies](../semantics/satisfies-3.md)
+- [Satisfaction of a CNF formula](../semantics/satisfies-3.md)
 - [CNF clause](../basic/cnfclause.md)
-- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfaction of a clause](../semantics/satisfies-2.md)
 
 ## Proof depends on
 
-- [Resolvent](resolvent.md)
+- [Resolvent of two clauses](resolvent.md)
 - [Resolution rule soundness](satisfies-resolvent.md)
 
 ## Sources

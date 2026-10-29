@@ -25,7 +25,7 @@ otherwise.
 
 - [The torus of period $2\pi$](../basic/torus.md)
 - [Axis frequency](axis-frequency.md)
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 - [Additivity of Fourier coefficients on the 2-torus](m-fourier-coeff-add.md)
 - [Fourier coefficients of a Fourier monomial on the 2-torus](m-fourier-coeff-monomial.md)
 - [Homogeneity of Fourier coefficients on the 2-torus](m-fourier-coeff-smul.md)

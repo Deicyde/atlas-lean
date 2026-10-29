@@ -19,7 +19,7 @@ winding-number claim is made there.
 
 ## Depends on
 
-- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear cycle](rectilinear-cycle.md)
 
 ## Proof depends on
 

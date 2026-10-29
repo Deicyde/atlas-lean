@@ -24,11 +24,11 @@ navigation: module
 
 ## The grammar
 
-- [Shift Sym](shift-sym.md)
-- [Shift Rule](shift-rule.md)
+- [Shifting a symbol into the regularity grammar](shift-sym.md)
+- [Shifting a production into the regularity grammar](shift-rule.md)
 - [The auxiliary productions of the regularity grammar](fixed-rules.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
-- [Reg Val](reg-val.md)
+- [Languages assigned to the nonterminals of the regularity grammar](reg-val.md)
 - [Shifted right-hand sides denote images of words of $g$](mem-eval-form-shift.md)
 - [Every production of the regularity grammar is sound for its intended languages](is-valuation-reg-val.md)
 

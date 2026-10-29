@@ -14,7 +14,7 @@ is their intersection: $r \bowtie s = r \cap s$.
 
 ## Depends on
 
-- [Is Over](is-over-2.md)
+- [Relation over a schema](is-over-2.md)
 - [Tuple](tuple.md)
 - [Natural join](join.md)
 

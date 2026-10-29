@@ -20,7 +20,7 @@ the normalized sum of the four lowest nonzero Fourier modes.
 
 ## Proof depends on
 
-- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest-shell unit polynomial](lowest-shell-unit.md)
 - [Rescaling the torus to unit period](../basic/unit-rescaling.md)
 
 ## Sources

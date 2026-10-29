@@ -37,7 +37,7 @@ formula in the binary-index encoding.
 - [Bits as indices](../hardness/veqv.md)
 - [Separator symbol of the verifier](../hardness/vsep.md)
 - [Input-bit symbol of the verifier](../hardness/v.md)
-- [F R](../package/f-r.md)
+- [The Cook–Levin reduction function](../package/f-r.md)
 - [The precomputed time bound](../precompute/tof.md)
 - [Total length bound](../precompute/m-of.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
@@ -70,7 +70,7 @@ formula in the binary-index encoding.
 - [Bounded parsing of self-delimiting blocks](../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
 - [Polynomial-time computable functions](../../../../MathlibExt/complexity/is-poly-time.md)
 - [Polynomial-time functions are closed under composition](../../../../MathlibExt/turing-machine/composition/comp-2.md)
-- [Comp Computable](../../../../MathlibExt/turing-machine/composition/comp-computable.md)
+- [The composite polynomial-time TM2 computation](../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

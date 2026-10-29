@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6.A_succ
 ---
 
-# A succ
+# Recurrence of the tripling sequence
 
-The recurrence `A n (k + 1) = 3 * A n k + 1`.
+**Recurrence of the tripling sequence.** For all natural numbers $n$ and $k$, the tripling
+sequence $A(n, k)$ of Entry 6 satisfies $A(n, k + 1) = 3A(n, k) + 1$.
 
 ## Depends on
 

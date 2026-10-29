@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Segment](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/segment.md)
+- [Closed segment in the plane](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/segment.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ when $x$ is a vertex of some tree of the represented forest of $s$.
 ## Proof depends on
 
 - [Rooted ordered tree](../euler-tour-tree/tree.md)
-- [Vertices](../euler-tour-tree/vertices.md)
+- [Preorder vertex list of a rooted tree](../euler-tour-tree/vertices.md)
 
 ## Sources
 

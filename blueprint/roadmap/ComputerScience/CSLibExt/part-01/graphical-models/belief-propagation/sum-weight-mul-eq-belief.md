@@ -27,10 +27,10 @@ where $x$ ranges over all assignments of values in $\alpha$ to the vertices.
 
 - [Downward message to the last vertex](down-message.md)
 - [Removing the last vertex](drop-last.md)
-- [Eliminate](../variable-elimination/eliminate.md)
+- [Eliminating the last vertex of a tree model](../variable-elimination/eliminate.md)
 - [Parent of the last vertex](../variable-elimination/last-parent.md)
 - [Parent of a vertex](../variable-elimination/parent.md)
-- [Root Message](../variable-elimination/root-message.md)
+- [Root message of a tree model](../variable-elimination/root-message.md)
 - [Summing out the last vertex preserves weighted sums at the other vertices](sum-weight-mul-eliminate-cast-succ.md)
 - [Variable elimination is exact](../variable-elimination/sum-weight-mul-eq.md)
 - [Splitting a sum over $\alpha^{n+1}$ at the last coordinate](../bayesian-network/sum-snoc.md)

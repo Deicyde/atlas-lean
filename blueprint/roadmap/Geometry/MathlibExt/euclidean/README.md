@@ -42,7 +42,7 @@ This section assembles classical results about Euclidean plane figures, includin
 - [Miquel's theorem](part-02/miquel-theorem.md)
 - [Monge Circles](part-02/monge-circles/README.md)
 - [Napoleon Theorem](part-02/napoleon-theorem/README.md)
-- [Pascal's theorem](part-02/pascal-theorem.md)
+- [Pascal's theorem in an affine plane](part-02/pascal-theorem.md)
 - [Pizza theorem](part-02/pizza-theorem.md)
 - [Pompeiu](part-02/pompeiu/README.md)
 - [Ropelength](part-02/ropelength/README.md)

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Logic.PL.CNFClause.Satisfies
 ---
 
-# Satisfies
+# Satisfaction of a clause
 
-A clause is satisfied when at least one of its literals is satisfied.
+**Satisfaction of a clause.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ satisfies a CNF clause $C$ when at least one literal of $C$ is satisfied by $v$,
+that is, $C$ contains a literal $(x, b)$ with $v(x) = b$.
 
 ## Depends on
 

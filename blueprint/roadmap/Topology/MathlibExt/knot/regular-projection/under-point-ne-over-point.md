@@ -15,7 +15,7 @@ and the over-strand preimage of $p$ are distinct parameter points of $L$.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Regular projections](is-regular-projection.md)
 - [Over-strand preimage of a crossing](over-point.md)
 - [Under-strand preimage of a crossing](under-point.md)

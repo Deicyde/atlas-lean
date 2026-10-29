@@ -17,7 +17,7 @@ and its starting position is $(1, 1)$.
 
 ## Proof depends on
 
-- [Euclid Moves](euclid-moves.md)
+- [Euclid moves](euclid-moves.md)
 - [Euclid moves lower the sum](euclid-moves-rank-lt.md)
 
 ## Sources

@@ -5,7 +5,7 @@ navigation: module
 # Bipartite Matching
 
 - [Greedy step of online bipartite matching](step.md)
-- [Greedy](greedy.md)
+- [Greedy online bipartite matching](greedy.md)
 - [Earlier partners survive an arrival](step-extends.md)
 - [Done right vertices](done.md)
 - [Invariants of the greedy run](greedy-spec.md)

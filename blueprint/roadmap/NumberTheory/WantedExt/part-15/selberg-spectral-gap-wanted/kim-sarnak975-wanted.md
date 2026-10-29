@@ -17,7 +17,7 @@ $(0, 975/4096)$: either $\lambda \le 0$ or $\lambda \ge 975/4096$.
 ## Depends on
 
 - [Congruence subgroup of the modular group](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/is-congruence-subgroup.md)
-- [Is Eigenvalue](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/is-eigenvalue.md)
+- [Eigenvalues of the hyperbolic Laplacian on a modular quotient](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/is-eigenvalue.md)
 
 ## Sources
 

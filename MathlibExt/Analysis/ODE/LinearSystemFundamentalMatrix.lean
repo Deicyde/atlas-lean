@@ -120,8 +120,11 @@ private lemma fundMatrix_clampedAgree
       constructor <;> linarith [hs.1, hs.2, min_le_right (N : ℝ) M]
     simpa [Set.projIcc_of_mem _ hsM] using hy s
 
-/-- A continuous time-dependent family of continuous linear endomorphisms on a real Banach space
-has a unique global integral curve through every initial point. -/
+/-- **Global existence and uniqueness for homogeneous linear ODEs.** Let $E$ be a real Banach
+space, write $L(E)$ for the space of continuous linear maps $E \to E$ with the operator norm,
+let $B : \mathbb{R} \to L(E)$ be continuous, and let $t_0 \in \mathbb{R}$ and $x_0 \in E$. Then
+there is exactly one function $x : \mathbb{R} \to E$ with $x(t_0) = x_0$ such that $x$ is
+differentiable at every $t \in \mathbb{R}$ with $x'(t) = B(t)\,x(t)$. -/
 theorem _root_.ODE.existsUnique_hasDerivAt_eq_continuousLinearMap
     {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
     (B : ℝ → E →L[ℝ] E) (t₀ : ℝ) (x₀ : E) (hB : Continuous B) :
@@ -257,7 +260,11 @@ private lemma fundMatrix_detDifferential_mul {n : ℕ}
     rw [show ψ s = (1 + s • A) * M by simp [ψ, add_mul], Matrix.det_mul]
   exact hleft.unique hright
 
-/-- Jacobi's formula along a matrix curve satisfying `Φ' = A Φ`. -/
+/-- **Jacobi's formula when the derivative is a left multiple of the matrix.** Let
+$n \in \mathbb{N}$, let $A$ be a real $n \times n$ matrix, let
+$\Phi : \mathbb{R} \to \mathbb{R}^{n \times n}$, and let $t \in \mathbb{R}$. If $\Phi$ is
+differentiable at $t$ with $\Phi'(t) = A \Phi(t)$, then $s \mapsto \det \Phi(s)$ is
+differentiable at $t$ with derivative $\operatorname{tr}(A) \det \Phi(t)$. -/
 theorem _root_.HasDerivAt.det_of_mul {n : ℕ}
     {Φ : ℝ → Matrix (Fin n) (Fin n) ℝ} {A : Matrix (Fin n) (Fin n) ℝ} {t : ℝ}
     (hΦ : HasDerivAt Φ (A * Φ t) t) :

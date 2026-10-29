@@ -17,10 +17,10 @@ and returns the sequence $s_1, \dots, s_n$.
 ## Depends on
 
 - [Huffman tree](huffman-tree.md)
-- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Type of leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
 - [Decoding a bit string](decode.md)
-- [Leaf symbols of a Huffman tree](symbols.md)
+- [List of leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 

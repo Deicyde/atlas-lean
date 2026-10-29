@@ -40,7 +40,7 @@ root-valid at some height.
 - [Splitting a B-tree node](split-node.md)
 - [Members after ordered insertion](../../part-03/ordered-insert/mem-ordered-insert.md)
 - [Ordered insertion into a list](../../part-03/ordered-insert/ordered-insert.md)
-- [Ordered Insert eq of mem](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
+- [Inserting a present element into a strictly increasing list](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

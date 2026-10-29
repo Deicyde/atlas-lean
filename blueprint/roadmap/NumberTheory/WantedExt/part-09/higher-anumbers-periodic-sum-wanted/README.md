@@ -32,7 +32,7 @@ navigation: module
 - [The lattice-point count at $p = 3$, $d = 2$, $r = 1$, $n = 0$](higher-anumber-lattice-count-three-two-o.md)
 - [The correction term $A_{x^{-1}}$ for sums of floors](floor-sum-correction.md)
 - [The correction $A_{x^{-1}}$ vanishes at $x = 1$](floor-sum-correction-one.md)
-- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [The correction term $F_y$ for sums of $\delta_0$](delta-zero-sum-correction.md)
 - [The correction $F_y$ vanishes at $y = 0$](delta-zero-sum-correction-zero.md)
 - [Digits of $m/d$ after the radix point are constant](base-pdigit-div-periodic-one.md)
 - [Minimal period and delay of base-$p$ digits](base-pdigit-eventually-periodic-iff.md)

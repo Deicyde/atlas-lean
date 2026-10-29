@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.stepTime
 ---
 
-# Step Time
+# Step bound of one simulated step
 
-The step bound: linear in the length of the code stack, the state, and the head cell and its
-two neighbours.
+**Step bound of one simulated step.** For a code $c$ and a configuration $k$ with state $q$,
+head cell $h$, nearest left cell $l$ and nearest right cell $r$ (each read as the blank $0$ when
+there is no such cell), let $|C|$ be the length of the code stack of $c$. The step bound of $c$
+at $k$ is $10|C| + q + h + l + r + 10$.
 
 ## Depends on
 

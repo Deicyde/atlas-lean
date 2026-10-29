@@ -19,10 +19,10 @@ the brute-force scan (their costs may differ).
 
 ## Proof depends on
 
-- [Is Answer](is-answer.md)
+- [Closest-pair answer](is-answer.md)
 - [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
-- [Dist2](dist2.md)
-- [Min Dist From](min-dist-from.md)
+- [Squared distance in the plane](dist2.md)
+- [Least squared distance from a point to a list](min-dist-from.md)
 - [The nearest-point scan returns the least squared distance](min-dist-from-spec.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 

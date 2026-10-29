@@ -22,14 +22,14 @@ stacks unchanged.
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
 - [Witness decoder](../../part-01/ham-path-check/decode-w.md)
-- [Prog](prog.md)
+- [The Hamiltonian path verifier machine](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Decoding the empty witness](../../part-01/ham-path-check/decode-w-nil.md)
-- [Decoding fails on a cut-off first number](../../part-01/ham-path-check/decode-w-of-none.md)
+- [Witness decoding fails on a cut-off first number](../../part-01/ham-path-check/decode-w-of-none.md)
 - [Decoding peels off the first number](../../part-01/ham-path-check/decode-w-of-some.md)
 - [One step of the emptiness test](if-e-run.md)
 - [The unary mover of the Hamiltonian path verifier rejects an unterminated number](skip-u-none.md)

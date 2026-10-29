@@ -19,7 +19,7 @@ and $LC$ holding $m$ and $\ell$ in unary reaches the rejecting label within $|r|
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Stacks of the SAT tokenizer](k.md)
 - [Labels of the SAT tokenizer](lab.md)
-- [Rejection within a step bound](rej.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 

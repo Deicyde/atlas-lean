@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Databases.join_assoc
 ---
 
-# Join assoc
+# Associativity of the natural join
 
-The natural join is associative.
+**Associativity of the natural join.** For all finite sets $r$, $s$ and $w$ of tuples,
+$(r \bowtie s) \bowtie w = r \bowtie (s \bowtie w)$, where $\bowtie$ is the natural join.
 
 ## Depends on
 

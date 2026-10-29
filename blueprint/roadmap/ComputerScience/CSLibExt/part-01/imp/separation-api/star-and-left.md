@@ -27,7 +27,7 @@ conjunction.
 
 ## Proof depends on
 
-- [Disjoint](../heap/disjoint.md)
+- [Disjoint heaps](../heap/disjoint.md)
 
 ## Sources
 

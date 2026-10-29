@@ -25,7 +25,7 @@ started in $s$, exits in $s'$ after exactly $n$ executions of the body $c$.
 
 - [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
-- [Eval](../syntax/eval-2.md)
+- [Evaluation of IMP Boolean expressions](../syntax/eval-2.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Catalan Harmonic Generating Function](part-02/catalan-harmonic-generating-function/README.md)
 - [Catalan–Larcombe–French numbers](part-02/catalan-larcombe-french-number.md)
 - [Parity of Catalan numbers](part-02/catalan-odd-iff.md)
-- [Catalan Perfect Power](part-02/catalan-not-perfect-power.md)
+- [Catalan numbers other than $1$ are not perfect powers](part-02/catalan-not-perfect-power.md)
 - [Central binomial–harmonic generating function](part-02/has-sum-central-binomial-harmonic.md)
 - [Central trinomial coefficients as Legendre values](part-02/central-trinomial-coeff-eq-legendre-spec.md)
 - [Three-term recurrence for central trinomial coefficients](part-02/central-trinomial-coeff-three-term-recur.md)

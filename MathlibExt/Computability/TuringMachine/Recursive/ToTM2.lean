@@ -236,7 +236,17 @@ noncomputable def fwdProg : FΛ c → FStmt c
           (.goto fun _ ↦ Sum.inl Phase.post2))
         .halt)
 
-/-- The wrapped machine. -/
+/-- **The wrapped machine of a code.** Let $c$ be a code for a partial recursive function on lists
+of natural numbers, and let $\mathrm{tr}$ be Mathlib's multi-stack machine that evaluates such
+codes, with stacks $K' = \{\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}\}$ and
+alphabet $\Gamma' = \{\mathtt{cons}_l, \mathtt{cons}, \mathtt{bit0}, \mathtt{bit1}\}$. The
+wrapped machine of $c$ is the finite multi-stack machine whose stacks are indexed by
+$K' \sqcup \{\mathrm{false}, \mathrm{true}\}$, with alphabet $\Gamma'$ on each stack in $K'$ and
+the alphabet of bits on the stacks $\mathrm{false}$ and $\mathrm{true}$; its input stack is
+$\mathrm{false}$ and its output stack is $\mathrm{true}$; its labels are the labels of the
+wrapped machine for $c$, with main label the first pre-phase adapter label $\mathrm{pre}_0$;
+its internal states are the optional symbols of $\Gamma'$ (a symbol of $\Gamma'$, or none), with
+initial state none; and its program is the program of the wrapped machine for $c$. -/
 noncomputable def fwdTM : FinTM2 where
   K := K' ⊕ Bool
   k₀ := Sum.inr false
@@ -464,8 +474,13 @@ theorem liftStk_update (s : ∀ _ : K', List Γ') (k : K') (x : List Γ') :
     liftStk (Function.update s k x) = Function.update (liftStk s) (Sum.inl k) x := by
   cases k <;> simp [liftStk]
 
-/-- How a label of `tr` corresponds to a label of the wrapped machine: halting becomes the
-post-phase. -/
+/-- **Correspondence of labels between the code evaluator and the wrapped machine.** Let $c$ be a
+code for a partial recursive function on lists of natural numbers and let $\mathrm{tr}$ be
+Mathlib's multi-stack machine that evaluates such codes. An optional label $o$ of $\mathrm{tr}$
+(a label, or none for halting) corresponds to an optional label $o'$ of the wrapped machine for
+$c$ when either $o$ is none and $o'$ is the first post-phase label $\mathrm{post}_1$, or $o$ is a
+label $l$ of $\mathrm{tr}$ that lies in the support $\mathrm{supp}(c)$ of $c$ and $o'$ is $l$,
+read as a label of the wrapped machine. -/
 def LabelRel : Option Λ' → Option (FΛ c) → Prop
   | none, o' => o' = some (Sum.inl Phase.post1)
   | some l, o' => ∃ h : l ∈ supp c, o' = some (Sum.inr ⟨l, h⟩)

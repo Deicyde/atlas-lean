@@ -11,19 +11,19 @@ navigation: module
 - [Alternating breadth-first layers](layers.md)
 - [Matched reached left vertices are reached through a partner](exists-mate-of-mem-layers.md)
 - [The left layers stop growing once two consecutive ones agree](layers-fst-eq-of-eq.md)
-- [Layers fst stable](layers-fst-stable.md)
+- [Rounds $a$ and $a + 1$ reach the same left vertices](layers-fst-stable.md)
 
 ## Augmenting paths
 
 - [Walking the layers back](path-to.md)
 - [Flipping a list of pairs](flip.md)
 - [Alternating path](alt-path.md)
-- [Is Augmenting Path](is-augmenting-path.md)
+- [Augmenting path](is-augmenting-path.md)
 - [The walk back is an alternating path](path-to-spec.md)
 - [Flipping an alternating path keeps a matching](valid-flip.md)
 - [Matched right vertices](matched.md)
 - [Flipping an alternating path matches its first vertex](matched-flip.md)
-- [Path To is Augmenting Path](path-to-is-augmenting-path.md)
+- [The walk back from an unmatched reached vertex is an augmenting path](path-to-is-augmenting-path.md)
 - [Flipping an augmenting path adds one matched vertex](card-matched-flip.md)
 
 ## The algorithm
@@ -91,14 +91,14 @@ navigation: module
 - [When trying candidates fails](try-preds-none.md)
 - [A failed search marks its start dead](search-path-none-marks.md)
 - [Dead vertices have no escape](search-path-dead.md)
-- [Not dead of chain](not-dead-of-chain.md)
+- [Shortest chains avoiding earlier paths contain no dead vertex](not-dead-of-chain.md)
 - [Invariant of a phase](phase-aux-maximal.md)
 - [Phases are maximal](phase-maximal.md)
 
 ## Distances do not decrease across a phase
 
 - [A matched right vertex is reached no later than its partner](mem-layers-snd-of-mate.md)
-- [Pair levels of chain](pair-levels-of-chain.md)
+- [Levels along a shortest alternating chain](pair-levels-of-chain.md)
 - [Levels of the pairs of a phase](pair-levels-of-mem-phase.md)
 - [A phase leaves no new unmatched left vertex](free-of-free-flip.md)
 - [Distances do not decrease across a phase](layers-flip-phase-subset.md)
@@ -114,5 +114,5 @@ navigation: module
 - [The phase loop stops when a step finds nothing](hopcroft-karp-aux-of-hk-step-none.md)
 - [Fuel adds up in the phase loop](hopcroft-karp-aux-add.md)
 - [Each phase lengthens the shortest augmenting paths](first-free-round-hopcroft-karp-aux.md)
-- [Card le hopcroft Karp Aux of le](card-le-hopcroft-karp-aux-of-le.md)
+- [Closing a deficit of $f$ in $f$ Hopcroft–Karp phases](card-le-hopcroft-karp-aux-of-le.md)
 - [Hopcroft and Karp's bound on the number of phases](card-le-hopcroft-karp-aux-sqrt.md)

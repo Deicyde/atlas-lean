@@ -15,7 +15,7 @@ $\eta(x)$ to $\eta'(x)$ for every word $x$ over $A$.
 
 ## Depends on
 
-- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic monoid](../syntactic/syntactic-monoid.md)
 - [Syntactic congruence](../syntactic/syntactic-con.md)
 - [Syntactic morphism](../syntactic/syntactic-morphism.md)
 

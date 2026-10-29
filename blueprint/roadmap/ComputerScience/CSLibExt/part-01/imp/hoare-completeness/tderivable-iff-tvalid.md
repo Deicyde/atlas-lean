@@ -21,8 +21,8 @@ derivable in the total-correctness Hoare logic if and only if it is totally vali
 
 ## Proof depends on
 
-- [Complete](complete-2.md)
-- [Sound](sound-2.md)
+- [Total-correctness Hoare logic is relatively complete](complete-2.md)
+- [Soundness of total-correctness Hoare logic](sound-2.md)
 
 ## Sources
 

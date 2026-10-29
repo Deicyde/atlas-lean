@@ -15,7 +15,7 @@ syntactic monoid of $L$, then $x$ and $y$ have the same Nerode class with respec
 ## Depends on
 
 - [Nerode classes](../nerode/nerode-class.md)
-- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic monoid](syntactic-monoid.md)
 - [Nerode class of a word](../nerode/nerode-class-2.md)
 - [Syntactic congruence](syntactic-con.md)
 - [Syntactic morphism](syntactic-morphism.md)

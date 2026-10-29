@@ -232,10 +232,16 @@ public theorem_wanted riemannZeta_fourth_moment_div_le :
       ∫ t in (10 : ℝ)..T, ‖riemannZeta (1 / 2 + t * I)‖ ^ 4 / ‖riemannZeta (1 + 2 * t * I)‖ ≤
         C * T * Real.log T ^ 5
 
-/-- **Lemma 7** (quoted, Ramachandra–Sankaranarayanan). There are constants `C` and `U₀` such
-that for every `U ≥ U₀` some `T* ∈ (U, 2U)` satisfies
-`|ζ(σ ± i T*)| ≤ exp(C (log log U)^2)` for all `σ ≥ 1/2`. The trailing `≪ U^ε` is a
-consequence and is not stated.
+/-- **Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height.** Let $\zeta$ be the
+Riemann zeta function. There are real constants $C$ and $U_0$ such that for every real
+$U \ge U_0$ there is a real number $T$ with $U < T < 2U$ such that for every real $\sigma \ge 1/2$,
+$$
+|\zeta(\sigma + iT)| \le \exp\bigl(C (\log \log U)^2\bigr) \quad \text{and} \quad
+|\zeta(\sigma - iT)| \le \exp\bigl(C (\log \log U)^2\bigr).
+$$
+
+The source adds that this bound is $\ll U^{\varepsilon}$ for every $\varepsilon > 0$; that
+consequence is not part of this statement.
 
 Source: M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the
 Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 7 (`integers-2026-A70-lem-7`). -/

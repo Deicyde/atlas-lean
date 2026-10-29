@@ -31,7 +31,7 @@ navigation: module
 
 - [Reading a formula bit in the SAT host](d-x.md)
 - [Reading a witness bit in the SAT host](d-w.md)
-- [Stacks emptied by the cleanup](work-ks.md)
+- [Stacks emptied by the SAT verifier's cleanup](work-ks.md)
 - [Program of the SAT verifier host](hprog.md)
 - [The SAT verifier machine](tm.md)
 

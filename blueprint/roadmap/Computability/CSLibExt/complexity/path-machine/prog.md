@@ -31,12 +31,12 @@ walks along $T$, pushes the top mark of $M$ (false if there is none) on $O$ and 
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the PATH marking machine](lab.md)
 - [Statements of the PATH marking machine](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
+- [Stacks of the PATH marking machine](k.md)
 - [The counter unit of the PATH marking machine](one.md)
 - [The unary read instruction](read-s.md)
 - [Mark-setting step](set-s.md)
@@ -48,7 +48,7 @@ walks along $T$, pushes the top mark of $M$ (false if there is none) on $O$ and 
 - [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 - [Decrement](../../../MathlibExt/turing-machine/program/decr.md)
 - [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
-- [Xfer](../../../MathlibExt/turing-machine/program/xfer.md)
+- [Counter transfer loop](../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

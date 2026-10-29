@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.multinomial3_le
 ---
 
-# Multinomial3 le
+# Multinomial bound for $(3t)!$
 
-Multinomial bound `(3 * t)! ≤ 3 ^ (3 * t) * (t!) ^ 3`.
+**Multinomial bound for $(3t)!$.** For every natural number $t$,
+$(3t)! \le 3^{3t} (t!)^3$.
 
 ## Depends on
 

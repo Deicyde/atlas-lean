@@ -21,7 +21,7 @@ rectangle with corners $x_0 + iy_0$ and $x_1 + iy_1$ equals $2\pi i$.
 
 ## Proof depends on
 
-- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Rectilinear rectangle](rectilinear-rectangle.md)
 - [Cauchy kernel with the pole outside a rectangle](boundary-integral-inv-sub-eq-zero-of-not.md)
 - [Gluing rectangles along a horizontal side](boundary-integral-of-bounds-horizontal-c.md)
 - [Rectangle integral of $1/z$ around the origin](boundary-integral-of-bounds-inv-eq-two-p.md)

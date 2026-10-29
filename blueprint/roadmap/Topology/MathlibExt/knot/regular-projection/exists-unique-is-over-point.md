@@ -17,7 +17,7 @@ height strictly less than the height of $a$.
 ## Depends on
 
 - [Parametrized link](../euclidean-link/parametrized-link.md)
-- [Crossing](crossing.md)
+- [Crossings of a link projection](crossing.md)
 - [Being the over-strand preimage of a crossing](is-over-point.md)
 - [Regular projections](is-regular-projection.md)
 - [Parameter point](param-point.md)

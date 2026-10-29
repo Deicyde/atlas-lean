@@ -16,7 +16,7 @@ least $c$.
 
 ## Depends on
 
-- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Huffman weight tree](huffman-weight-tree.md)
 - [Two-minimum merge trace](merge-trace.md)
 - [Weighted external path length of a Huffman weight tree](path-cost.md)
 - [Multiset of leaf weights](weights.md)
