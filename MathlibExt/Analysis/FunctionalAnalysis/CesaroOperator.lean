@@ -436,7 +436,7 @@ lemma norm_cesaroTest_sqrt (N : ℕ) :
     ‖((Real.sqrt N : ℝ) : 𝕜)⁻¹‖ = (Real.sqrt N)⁻¹ := by
   rw [norm_inv, RCLike.norm_ofReal, abs_of_nonneg (Real.sqrt_nonneg _)]
 
-/-- Every test vector is a unit vector. -/
+/-- Every test vector with `1 ≤ N` is a unit vector. -/
 lemma norm_cesaroTest (N : ℕ) (hN : 1 ≤ N) : ‖cesaroTest (𝕜 := 𝕜) N‖ = 1 := by
   rw [lp.norm_eq_tsum_rpow (p := (2 : ℝ≥0∞)) (by simp)]
   have hterm : ∀ j ∈ Finset.range N, ‖cesaroTest (𝕜 := 𝕜) N j‖ ^ (2 : ℝ) = 1 / N := by
@@ -509,8 +509,8 @@ lemma cesaroCLM_test_apply_ge {N : ℕ} {n : ℕ} (hn : N ≤ n) :
           rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
   rw [hsum]
 
-/-- The squared norm of `C` applied to a test vector is at least `5 / 4`:
-the first `N` coordinates contribute `1`, the next `N` contribute at least
+/-- For `1 ≤ N`, the squared norm of `C` applied to a test vector is at least
+`5 / 4`: the first `N` coordinates contribute `1`, and the next `N` contribute at least
 `1 / 4`. -/
 lemma five_div_four_le_norm_sq_cesaro_test (N : ℕ) (hN : 1 ≤ N) :
     (5 : ℝ) / 4 ≤ ‖cesaroCLM (𝕜 := 𝕜) (cesaroTest N)‖ ^ 2 := by
@@ -603,8 +603,8 @@ lemma tendsto_cesaro_test_coord_zero (n : ℕ) :
     simpa using hC
   exact h2.congr' hev
 
-/-- The Cesàro operator is not compact: the test vectors are unit vectors,
-`C` applied to them has squared norm at least `5 / 4`, but converges
+/-- The Cesàro operator is not compact: the test vectors `cesaroTest (N + 1)` are
+unit vectors. `C` applied to them has squared norm at least `5 / 4`, but converges
 coordinatewise to `0`, so no subsequence can converge in norm. -/
 theorem not_isCompactOperator_cesaroCLM : ¬ IsCompactOperator (cesaroCLM (𝕜 := 𝕜)) := by
   intro hcomp
