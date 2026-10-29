@@ -14,12 +14,12 @@ matching edge).
 
 ## Depends on
 
-- [In Hexagon](in-hexagon.md)
-- [Lattice Triangle](lattice-triangle.md)
+- [Unit triangles of a semiregular hexagon](in-hexagon.md)
+- [Unit triangles of the triangular lattice](lattice-triangle.md)
 
 ## Proof depends on
 
-- [Shares Edge](shares-edge.md)
+- [Unit triangles sharing an edge](shares-edge.md)
 
 ## Sources
 

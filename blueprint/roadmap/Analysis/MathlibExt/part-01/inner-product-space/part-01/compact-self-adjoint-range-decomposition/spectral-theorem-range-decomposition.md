@@ -9,13 +9,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition
 # Spectral theorem for compact self-adjoint operators (range decomposition form)
 
 **Spectral theorem for compact self-adjoint operators (range
-decomposition form).** Let `T` be a compact self-adjoint operator on a
-Hilbert space. Then:
-(1) the closure of the span of all nonzero eigenspaces of `T` equals the
-closure of the range of `T`;
-(2) the closure of the range of `T` and the kernel of `T` are complementary
-closed subspaces; and
-(3) the family of eigenspaces of `T` is an orthogonal family.
+decomposition form).** Let $H$ be a Hilbert space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$
+and let $T : H \to H$ be a compact self-adjoint bounded linear operator. Then:
+(1) the closure of the subspace spanned by the eigenspaces $\ker(T - \mu I)$ for all
+nonzero $\mu \in \mathbb{K}$ equals the closure of the range of $T$;
+(2) the closure of the range of $T$ and the kernel of $T$ are complementary subspaces: their
+intersection is $\{0\}$ and their sum is $H$; and
+(3) the eigenspaces $\ker(T - \mu I)$, $\mu \in \mathbb{K}$, are pairwise orthogonal for distinct
+values of $\mu$.
 
 ## Depends on
 
@@ -23,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Orthogonal i Sup eigenspaces ne zero eq ker](orthogonal-i-sup-eigenspaces-ne-zero-eq.md)
+- [Orthogonal complement of the nonzero-eigenvalue eigenspaces](orthogonal-i-sup-eigenspaces-ne-zero-eq.md)
 
 ## Sources
 

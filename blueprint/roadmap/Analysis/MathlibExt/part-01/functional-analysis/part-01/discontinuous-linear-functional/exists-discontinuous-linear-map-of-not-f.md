@@ -8,9 +8,9 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.DiscontinuousLinearFunctional.exist
 
 # A discontinuous linear functional on an infinite-dimensional normed space
 
-**A discontinuous linear functional on an infinite-dimensional normed space.**
-If `E` is not finite-dimensional over `𝕜 = ℝ, ℂ`, then there exists a linear
-functional `f : E →ₗ[𝕜] 𝕜` that is not continuous.
+**A discontinuous linear functional on an infinite-dimensional normed space.** Let $E$ be a
+normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. If $E$ is not finite-dimensional,
+then there exists a linear functional $f \colon E \to \mathbb{K}$ that is not continuous.
 
 ## Depends on
 

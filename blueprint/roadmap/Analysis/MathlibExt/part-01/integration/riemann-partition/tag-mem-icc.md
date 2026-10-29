@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.TaggedPartition.tag_mem_Icc
 ---
 
-# Tag mem Icc
+# Tags of a tagged partition lie in the interval
 
-Every tag `ξᵢ` of a tagged partition of `[a, b]` lies in `[a, b]`.
+**Tags of a tagged partition lie in the interval.** Every tag $\xi_k$ of a tagged partition
+of $[a, b]$ lies in $[a, b]$.
 
 ## Depends on
 
-- [Partition](partition.md)
-- [Tagged Partition](tagged-partition.md)
+- [Partition of an interval](partition.md)
+- [Tagged partition](tagged-partition.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AlmostSubspaceInSumsetWanted.conjecture
 ---
 
-# Conjecture
+# Almost-subspace-in-$A + A$ conjecture
 
-Almost containment of a subspace in `A + A`: there are absolute
-constants `C, E > 0` such that for every `A ⊆ F₂ⁿ` of density `α` and
-every `ε ∈ (0, 1)` there is a subspace `V` of codimension at most
-`C * (log (ε⁻¹ α⁻¹) + 1)ᴱ` (the source's `log^O(1)(ε⁻¹ α⁻¹)`) with
-`|V ∩ (A + A)| ≥ (1 - ε) |V|`. Codimension is the base-2 logarithm of
-the subgroup index. Cites [AIM-COMBINATORICS-0031],
-aim-combinatorics-notes.json notes[30].
+**Almost-subspace-in-$A + A$ conjecture.** The statement that there are real constants $C > 0$
+and $E > 0$ such that for every $n \in \mathbb{N}$, every set $A \subseteq \mathbb{F}_2^n$ and all
+real numbers $\alpha$ and $\varepsilon$ with $\alpha > 0$, $0 < \varepsilon < 1$ and
+$|A| / 2^n = \alpha$, there is an additive subgroup $V$ of $\mathbb{F}_2^n$ whose codimension
+$\log_2(2^n / |V|)$ is at most $C \, (\log(\varepsilon^{-1} \alpha^{-1}) + 1)^E$ and which
+satisfies $|V \cap (A + A)| \ge (1 - \varepsilon) |V|$. Here $A + A = \{a + b : a, b \in A\}$ and
+$\log$ is the natural logarithm; the constants $C$ and $E$ express the source's codimension bound
+$\log^{O(1)}(\varepsilon^{-1} \alpha^{-1})$.
 
 ## Depends on
 
@@ -22,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AlmostSubspaceInSumsetWanted](../../../../../sources/v2/WantedExt.md)
+- cites [AIM-COMBINATORICS-0031], aim-combinatorics-notes.json notes[30].

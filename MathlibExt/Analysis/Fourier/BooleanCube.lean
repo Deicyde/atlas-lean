@@ -462,28 +462,41 @@ section FinsetFourier
 
 variable {ι : Type*} [DecidableEq ι]
 
-/-- The Fourier character on the subset lattice: `χ_S(T) = (−1)^|S ∩ T|`.
-This is the `Finset`-indexed form of the uniform-cube transform;
-`fourierChar_eq_cubeChi` identifies it with the canonical `cubeChi`
-after reindexing. -/
+/-- **Fourier character on finite sets.** For finite sets $S$ and $T$, the Fourier character of
+$S$ at $T$ is the real number $\chi_S(T) = (-1)^{|S \cap T|}$.
+
+This is the subset-indexed form of the Fourier character on the Boolean cube; after reindexing
+the coordinates, the two agree. -/
 noncomputable def fourierChar (S T : Finset ι) : ℝ :=
   (-1 : ℝ) ^ (S ∩ T).card
 
-/-- The Fourier coefficient `f̂(S)`: the uniform average of `f · χ_S`
-over the cube. `fourierCoeff_eq_boolFourierCoeff` identifies it with
-the canonical `boolFourierCoeff` after reindexing. -/
+/-- **Fourier coefficient on the subsets of a finite set.** Let $E$ be a finite subset of a type
+$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For a finite
+subset $S$ of $\iota$, the Fourier coefficient of $f$ at $S$ over $E$ is
+$$\hat f(S) = \frac{1}{2^{|E|}} \sum_{U \subseteq E} f(U) \, (-1)^{|S \cap U|},$$
+the uniform average over the subsets $U$ of $E$ of $f(U)$ times the Fourier character
+$\chi_S(U) = (-1)^{|S \cap U|}$.
+
+After reindexing, it agrees with the Fourier coefficient on the Boolean cube. -/
 noncomputable def fourierCoeff (E : Finset ι) (f : Finset ι → ℝ)
     (S : Finset ι) : ℝ :=
   (∑ U ∈ E.powerset, f U * fourierChar S U) / 2 ^ E.card
 
-/-- The `n`-cube has `2 ^ n` points. -/
+/-- **Number of points of the Boolean cube.** For every $n \in \mathbb{N}$, the Boolean cube of
+dimension $n$ has exactly $2^n$ points. -/
 theorem card_boolCube (n : ℕ) : Fintype.card (BoolCube n) = 2 ^ n := by
   change Fintype.card (Fin n → Bool) = 2 ^ n
   rw [Fintype.card_pi, Finset.prod_const, Fintype.card_bool,
     Finset.card_univ, Fintype.card_fin]
 
-/-- Subsets of `E` are indicator functions on `E` (members read `false`,
-matching `cubeVal false = -1`). -/
+/-- **Subsets of a finite set as indicator functions.** For a finite set $E$, this is the
+bijection from the subsets $T \subseteq E$ to the functions $b$ from $E$ to
+$\{\mathrm{true}, \mathrm{false}\}$ given by $b(a) = \mathrm{false}$ if $a \in T$ and
+$b(a) = \mathrm{true}$ if $a \notin T$. Its inverse sends $b$ to the set
+$\{a \in E : b(a) = \mathrm{false}\}$.
+
+Members of $T$ read false, matching the convention that identifies false with the sign $-1$
+and true with the sign $+1$. -/
 noncomputable def powersetEquivIndicator (E : Finset ι) :
     ↥E.powerset ≃ (↥E → Bool) where
   toFun S i := decide (i.val ∉ S.val)
@@ -533,19 +546,29 @@ noncomputable def powersetEquivIndicator (E : Finset ι) :
     simp only [hmem]
     cases b i <;> simp
 
-/-- The cube over `E`, reindexed by `Fin E.card`. -/
+/-- **Subsets of a finite set as points of the Boolean cube.** For a finite set $E$ with $n = |E|$
+elements, fix a bijection $e$ from $E$ to $\{0, \dots, n-1\}$ (an enumeration of $E$, chosen
+noncanonically). This is the bijection from the subsets $T \subseteq E$ to the Boolean cube of
+dimension $n$ that sends $T$ to the point $x$ with $x_{e(a)} = \mathrm{false}$ if $a \in T$ and
+$x_{e(a)} = \mathrm{true}$ if $a \notin T$, for every $a \in E$. -/
 noncomputable def powersetEquivBoolCube (E : Finset ι) :
     ↥E.powerset ≃ BoolCube E.card :=
   (powersetEquivIndicator E).trans
     ((Finset.equivFin E).arrowCongr (Equiv.refl Bool))
 
-/-- Applying the reindexing equivalence reads off subset membership. -/
+/-- **Coordinates of an encoded subset.** Let $E$ be a finite set with $m$ elements, listed in
+the fixed order $e_0, \dots, e_{m-1}$ used to encode subsets of $E$ as points of the Boolean cube
+of dimension $m$. For every subset $T \subseteq E$ and every coordinate $j < m$, the $j$-th
+coordinate of the point encoding $T$ is true if $e_j \notin T$ and false if $e_j \in T$. -/
 theorem powersetEquivBoolCube_apply (E : Finset ι) (T : Finset ι)
     (hT : T ∈ E.powerset) (j : Fin E.card) :
     powersetEquivBoolCube E ⟨T, hT⟩ j
       = decide (((Finset.equivFin E).symm j).val ∉ T) := rfl
 
-/-- Reindex a sub-cube of `E` as a `Fin`-indexed set. -/
+/-- **Reindexing a subset as a set of coordinates.** For finite sets $S \subseteq E$ with $n = |E|$,
+let $e$ be the fixed bijection from $E$ to $\{0, \dots, n-1\}$ (the enumeration of $E$ used to
+identify subsets of $E$ with points of the Boolean cube of dimension $n$). The reindexed set is
+the image $e(S) = \{e(a) : a \in S\}$, a subset of $\{0, \dots, n-1\}$. -/
 noncomputable def reindexFinset (E S : Finset ι) (hS : S ⊆ E) :
     Finset (Fin E.card) :=
   S.attach.map
@@ -555,12 +578,20 @@ noncomputable def reindexFinset (E S : Finset ι) (hS : S ⊆ E) :
         simp only [Subtype.mk.injEq] at h'
         exact Subtype.ext h'⟩
 
-/-- Decode a `Fin`-indexed cube point back to a subset of `E`. -/
+/-- **Decoding a cube point as a subset.** Let $E$ be a finite set with $m$ elements, listed in a
+fixed order as $e_0, \dots, e_{m-1}$; this order identifies subsets of $E$ with points of the
+Boolean cube of dimension $m$. A point $x$ of that cube decodes to the subset
+$\{e_j : x_j = \mathrm{false}\}$ of $E$; this inverts the encoding of subsets of $E$ as cube
+points. -/
 noncomputable def decodeBoolCube (E : Finset ι) (x : BoolCube E.card) :
     Finset ι :=
   ((powersetEquivBoolCube E).symm x).val
 
-/-- Decoding after encoding is the identity. -/
+/-- **Decoding inverts encoding.** Let $E$ be a finite set with $m$ elements, listed in a fixed
+order as $e_0, \dots, e_{m-1}$. Encode a subset $T \subseteq E$ as the point $x_T$ of the Boolean
+cube of dimension $m$ whose $j$-th coordinate is false exactly when $e_j \in T$, and decode a
+point $x$ as the subset $\{e_j : x_j = \mathrm{false}\}$. Then for every subset $T \subseteq E$,
+decoding $x_T$ gives back $T$. -/
 @[simp] theorem decode_encode (E : Finset ι) (T : Finset ι)
     (hT : T ∈ E.powerset) :
     decodeBoolCube E (powersetEquivBoolCube E ⟨T, hT⟩) = T := by
@@ -590,7 +621,13 @@ private theorem prod_ite_neg_one (S T : Finset ι) :
     Finset.prod_eq_one (fun a ha => ite_eq_right (Finset.mem_filter.mp ha).2)
   rw [← hsplit, hpos, hneg, mul_one]
 
-/-- Reindexing identifies `fourierChar` with the canonical `cubeChi`. -/
+/-- **Subset characters agree with cube characters.** Let $E$ be a finite set with $m$ elements,
+listed in a fixed order as $e_0, \dots, e_{m-1}$, and encode a subset $T \subseteq E$ as the point
+$x_T$ of the Boolean cube of dimension $m$ whose $j$-th coordinate is false exactly when
+$e_j \in T$. For all subsets $S, T \subseteq E$,
+$$(-1)^{|S \cap T|} = \chi_{S'}(x_T),$$
+where the left side is the Fourier character of $S$ at $T$, $S' = \{j : e_j \in S\}$ is $S$
+reindexed as a set of coordinates, and $\chi_{S'}$ is the Fourier character on the cube. -/
 theorem fourierChar_eq_cubeChi (E : Finset ι) (S T : Finset ι)
     (hS : S ⊆ E) (hT : T ∈ E.powerset) :
     fourierChar S T
@@ -637,8 +674,14 @@ private theorem sum_powerset_coe (E : Finset ι) (g : Finset ι → ℝ) :
   conv_lhs => rw [Finset.univ_eq_attach E.powerset]
   exact Finset.sum_attach _ _
 
-/-- Reindexing identifies `fourierCoeff` with the canonical
-`boolFourierCoeff`. -/
+/-- **Subset Fourier coefficients agree with cube Fourier coefficients.** Let $E$ be a finite
+subset of a type $\iota$ with $m$ elements, listed in a fixed order as $e_0, \dots, e_{m-1}$, and
+decode a point $x$ of the Boolean cube of dimension $m$ as the subset
+$D(x) = \{e_j : x_j = \mathrm{false}\}$ of $E$. Let $f$ be a function from finite subsets of
+$\iota$ to $\mathbb{R}$ and let $S \subseteq E$. Then the Fourier coefficient
+$\hat f(S) = 2^{-m} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ of $f$ at $S$ over $E$ equals
+the Fourier coefficient on the cube of the function $x \mapsto f(D(x))$ at the set of
+coordinates $S' = \{j : e_j \in S\}$. -/
 theorem fourierCoeff_eq_boolFourierCoeff (E : Finset ι)
     (f : Finset ι → ℝ) (S : Finset ι) (hS : S ⊆ E) :
     fourierCoeff E f S
@@ -852,7 +895,13 @@ private theorem symmDiff_inter_eq_empty_iff (E S U : Finset ι)
     have : ((S \ S) ∪ (S \ S)) ∩ E = ∅ := by simp
     exact this
 
-/-- Fourier inversion on the cube. -/
+/-- **Fourier inversion on the subsets of a finite set.** Let $E$ be a finite subset of a type
+$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For every
+subset $T \subseteq E$,
+$$f(T) = \sum_{S \subseteq E} \hat f(S) \, (-1)^{|S \cap T|},$$
+where $\hat f(S) = 2^{-|E|} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ is the Fourier
+coefficient of $f$ at $S$ over $E$ and $(-1)^{|S \cap T|}$ is the Fourier character of $S$ at
+$T$. -/
 public theorem fourier_inversion (E : Finset ι) (f : Finset ι → ℝ)
     (T : Finset ι) (hT : T ∈ E.powerset) :
     f T = ∑ S ∈ E.powerset, fourierCoeff E f S * fourierChar S T := by
@@ -920,8 +969,12 @@ public theorem fourier_inversion (E : Finset ι) (f : Finset ι → ℝ)
   have := mul_right_cancel₀ hne hcancel
   exact this.symm
 
-/-- Plancherel on the cube: the mean square equals the sum of squared
-Fourier coefficients. -/
+/-- **Plancherel identity on the subsets of a finite set.** Let $E$ be a finite subset of a type
+$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. Then
+$$\frac{1}{2^{|E|}} \sum_{T \subseteq E} f(T)^2 = \sum_{S \subseteq E} \hat f(S)^2,$$
+where $\hat f(S) = 2^{-|E|} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ is the Fourier
+coefficient of $f$ at $S$ over $E$: the mean square of $f$ over the subsets of $E$ equals the
+sum of the squared Fourier coefficients. -/
 public theorem fourier_plancherel (E : Finset ι) (f : Finset ι → ℝ) :
     (∑ T ∈ E.powerset, f T ^ 2) / 2 ^ E.card
       = ∑ S ∈ E.powerset, fourierCoeff E f S ^ 2 := by

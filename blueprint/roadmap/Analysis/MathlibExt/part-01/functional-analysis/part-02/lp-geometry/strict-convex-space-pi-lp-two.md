@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.strictConvexSpace_piLp_two
 ---
 
-# Strict Convex Space pi Lp two
+# $\mathbb{R}^2$ with the $\ell^p$ norm is strictly convex for $1 < p < \infty$
 
-The real `PiLp p` space on two coordinates is strictly convex for `1 < p < ∞`,
-as an instance of Mathlib's standard strict-convexity class.
+**$\mathbb{R}^2$ with the $\ell^p$ norm is strictly convex for $1 < p < \infty$.** For
+$1 < p < \infty$, the real normed space $\mathbb{R}^2$ with the $\ell^p$ norm is a strictly
+convex space: every closed ball of positive radius centred at the origin is a strictly convex
+set.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pi Lp two strict Convex](pi-lp-two-strict-convex.md)
+- [Midpoints of distinct $\ell^p$ unit vectors in $\mathbb{R}^2$ have norm less than one](pi-lp-two-strict-convex.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Katz Small Doubling Progressions
 
-- [Katz Sumset](katz-sumset.md)
-- [Katz APSet](katz-apset.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Sumset of a finite set of integers](katz-sumset.md)
+- [Arithmetic progressions in a finite set of integers, as pairs](katz-apset.md)
+- [Katz's question on progressions in sets of small doubling](conjecture.md)
+- [Sets of small doubling contain many arithmetic progressions](conjecture-holds.md)

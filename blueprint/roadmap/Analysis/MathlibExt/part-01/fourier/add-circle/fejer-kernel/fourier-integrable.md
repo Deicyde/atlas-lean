@@ -6,10 +6,11 @@ proof: formalized
 lean: AddCircle.fourier_integrable
 ---
 
-# Fourier integrable
+# Integrability of Fourier characters
 
-Each Fourier character `t ↦ fourier n t` is integrable on the circle (in fact
-bounded by `1`); used repeatedly when integrating Fourier sums termwise.
+**Integrability of Fourier characters.** Let $T > 0$. For every integer $n$, the Fourier
+character $e_n(x) = e^{2\pi i n x / T}$ is integrable on the circle $\mathbb{R}/T\mathbb{Z}$ with
+respect to the normalized Haar measure, the Haar measure of total mass $1$.
 
 ## Depends on
 

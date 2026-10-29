@@ -21,6 +21,6 @@ navigation: transparent
 - [Nonlinear interpolation of Lipschitz maps on Lebesgue spaces (Scottish Book Problem 87)](nonlinear-interpolation-lp.md)
 - [Scottish Book88](scottish-book88-wanted/README.md)
 - [Scottish Book91](scottish-book91-wanted/README.md)
-- [Sobolev Trace R3 Plane Bounded Wanted](exists-bound-integral-sq-trace-of-integr.md)
-- [Symmetric Operator To Dual Bounded Wanted](exists-bound-of-symmetric-linear-map-to.md)
+- [Sobolev trace bound on the plane $z = 0$ in $\mathbb{R}^3$](exists-bound-integral-sq-trace-of-integr.md)
+- [A symmetric linear map from a Banach space to its dual is bounded](exists-bound-of-symmetric-linear-map-to.md)
 - [Weak Convergence Of Bounded Ae Null Lp](weak-convergence-of-bounded-ae-null-lp-wanted/README.md)

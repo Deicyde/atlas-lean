@@ -4,9 +4,9 @@ navigation: module
 
 # Weierstrass Function
 
-- [Weierstrass Fun](weierstrass-fun.md)
-- [Norm weierstrass Fun term le](norm-weierstrass-fun-term-le.md)
-- [Summable weierstrass Fun terms](summable-weierstrass-fun-terms.md)
-- [Theorem III (1)](summable-abs-weierstrass-fun-terms.md)
-- [Theorem III (2)](continuous-weierstrass-fun.md)
-- [Theorem III (3)](weierstrass-fun-abs-le.md)
+- [The Weierstrass function](weierstrass-fun.md)
+- [Termwise bound for the Weierstrass series](norm-weierstrass-fun-term-le.md)
+- [Summability of the Weierstrass series](summable-weierstrass-fun-terms.md)
+- [Absolute convergence of the Weierstrass series](summable-abs-weierstrass-fun-terms.md)
+- [Continuity of the Weierstrass function](continuous-weierstrass-fun.md)
+- [Bound on the Weierstrass function](weierstrass-fun-abs-le.md)

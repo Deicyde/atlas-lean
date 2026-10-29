@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.sumProductRatio_nonneg
 ---
 
-# Sum Product Ratio nonneg
+# The sum-product ratio is nonnegative
 
-Every nonempty finite real set has nonnegative normalized growth.
+**The sum-product ratio is nonnegative.** For every nonempty finite set $A$ of real numbers,
+the sum-product ratio $\log \max(|A+A|, |AA|) / \log |A|$ is at least $0$, where $A+A$ and $AA$
+are the sumset and the product set of $A$, and the ratio is taken to be $0$ when $|A| = 1$
+(conventions $\log 0 = 0$ and $x / 0 = 0$).
 
 ## Depends on
 
-- [Sum Product Ratio](sum-product-ratio.md)
+- [Sum-product ratio](sum-product-ratio.md)
 
 ## Proof depends on
 
-- [Sum Product Max Card](sum-product-max-card.md)
+- [Size of the larger of the sumset and the product set](sum-product-max-card.md)
 
 ## Sources
 

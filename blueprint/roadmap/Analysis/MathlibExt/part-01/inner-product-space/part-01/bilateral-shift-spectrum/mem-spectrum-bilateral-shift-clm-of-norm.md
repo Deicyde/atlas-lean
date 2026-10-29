@@ -6,22 +6,27 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.mem_spectrum_bilateralShiftCLM_of_norm_eq_one
 ---
 
-# Mem spectrum bilateral Shift CLM of norm eq one
+# Every point of the unit circle lies in the spectrum of the bilateral shift
 
-Every point of the unit circle is in the spectrum of the bilateral shift:
-if `μ • 1 - S` were a unit, it would be bounded below, contradicting the
-approximate eigenvectors, whose residual has norm `√2` while their norm is
-`√(2N + 1)`.
+**Every point of the unit circle lies in the spectrum of the bilateral shift.** Let
+$\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $S$ be the bilateral shift on
+$\ell^2(\mathbb{Z}, \mathbb{K})$. Every $\mu \in \mathbb{K}$ with $|\mu| = 1$ lies in the
+spectrum of $S$ in the algebra of bounded operators on $\ell^2(\mathbb{Z}, \mathbb{K})$, that
+is, $\mu I - S$ is not invertible there, where $\mu I$ is $\mu$ times the identity operator.
+
+If $\mu I - S$ were invertible it would be bounded below, but the truncated approximate
+eigenvectors $v_{\mu,N}$ satisfy $\|v_{\mu,N}\| = \sqrt{2N + 1}$ and
+$\|(\mu I - S)v_{\mu,N}\| = \sqrt{2}$ for every $N \in \mathbb{N}$.
 
 ## Depends on
 
-- [Bilateral Shift CLM](../bilateral-shift-operator/bilateral-shift-clm.md)
+- [Bilateral shift operator](../bilateral-shift-operator/bilateral-shift-clm.md)
 
 ## Proof depends on
 
-- [Approx Eigen Vec](approx-eigen-vec.md)
-- [Norm sq approx Eigen Vec](norm-sq-approx-eigen-vec.md)
-- [Norm sq residual approx Eigen Vec](norm-sq-residual-approx-eigen-vec.md)
+- [Truncated approximate eigenvector of the bilateral shift](approx-eigen-vec.md)
+- [Norm of the truncated approximate eigenvector](norm-sq-approx-eigen-vec.md)
+- [Residual of the truncated approximate eigenvector](norm-sq-residual-approx-eigen-vec.md)
 
 ## Sources
 

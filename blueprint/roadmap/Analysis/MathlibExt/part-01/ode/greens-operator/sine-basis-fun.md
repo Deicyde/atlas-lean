@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperator.sineBasisFun
 ---
 
-# Sine Basis Fun
+# Sine basis functions on $(0, 1)$
 
-The `k`-th orthonormal sine basis function on `[0, 1]`:
-`u_k(x) = √2 sin(kπx)`.
-These form an orthonormal eigenbasis of the Green's operator with Dirichlet
-boundary conditions on the unit interval.
+**Sine basis functions on $[0, 1]$.** For a positive integer $k$, the $k$-th sine basis function
+is $u_k : \mathbb{R} \to \mathbb{R}$, $u_k(x) = \sqrt{2} \sin(k\pi x)$.
+
+Restricted to $[0, 1]$, these functions form an orthonormal eigenbasis of the Green's operator with
+Dirichlet boundary conditions.
 
 ## Depends on
 

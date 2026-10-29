@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.succ_sub_castSucc_nonneg
 ---
 
-# Succ sub cast Succ nonneg
+# Subintervals of a partition have nonnegative length
 
-Each subinterval `[xᵢ, xᵢ₊₁]` of a partition has nonnegative length.
+**Subintervals of a partition have nonnegative length.** If
+$a = x_0 < x_1 < \cdots < x_n = b$ is a partition of $[a, b]$, then $x_{i+1} - x_i \ge 0$ for
+every $i$ with $0 \le i < n$.
 
 ## Depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

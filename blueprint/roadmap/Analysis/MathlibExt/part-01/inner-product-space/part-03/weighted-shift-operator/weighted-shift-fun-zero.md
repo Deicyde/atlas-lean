@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.weightedShiftFun_zero
 ---
 
-# Weighted Shift Fun zero
+# Weighted forward shift at index zero
 
-The weighted forward-shift function inserts zero at coordinate `0`.
+**Weighted forward shift at index zero.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+For all weights $w : \mathbb{N} \to \mathbb{K}$ and every sequence $x : \mathbb{N} \to \mathbb{K}$,
+the term at index $0$ of the weighted forward shift of $x$ is $0$.
 
 ## Depends on
 
-- [Weighted Shift Fun](weighted-shift-fun.md)
+- [Weighted forward shift of a sequence](weighted-shift-fun.md)
 
 ## Sources
 

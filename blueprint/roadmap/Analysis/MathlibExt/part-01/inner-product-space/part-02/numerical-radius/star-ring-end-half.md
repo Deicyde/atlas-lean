@@ -6,9 +6,10 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.starRingEnd_half
 ---
 
-# Star Ring End half
+# Complex conjugate of one half
 
-Conjugation of the scalar `1 / 2`.
+**Complex conjugate of one half.** The complex conjugate of $1/2 \in \mathbb{C}$ is $1/2$, that
+is, $\overline{1/2} = 1/2$.
 
 ## Depends on
 

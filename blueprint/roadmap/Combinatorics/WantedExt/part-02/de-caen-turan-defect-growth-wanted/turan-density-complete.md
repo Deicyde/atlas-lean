@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanDensityComplete
 ---
 
-# Turan Density Complete
+# Turán density of the complete $k$-graph on $k+1$ vertices
 
-Turán density `π(K_{k+1}^k)` as the `limsup` of the density ratios as `n → ∞`.
-
-Source citation: [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148],
-Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem,
-Source URL http://aimpl.org/hypergraphturan/1/.
+**Turán density of the complete $k$-graph on $k+1$ vertices.** For a natural number $k$,
+the Turán density $\pi(K_{k+1}^{(k)})$ of the complete $k$-uniform hypergraph $K_{k+1}^{(k)}$
+on $k+1$ vertices is the limit superior, as $n \to \infty$, of the Turán density ratios
+$\mathrm{ex}(n, K_{k+1}^{(k)}) / \binom{n}{k}$, where $\mathrm{ex}(n, K_{k+1}^{(k)})$ is the
+Turán number of $K_{k+1}^{(k)}$ and the ratio is taken to be $0$ when $\binom{n}{k} = 0$.
 
 ## Depends on
 
@@ -19,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Turan Density Ratio](turan-density-ratio.md)
+- [Turán density ratio](turan-density-ratio.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.DeCaenTuranDefectGrowthWanted](../../../../../sources/v2/WantedExt.md)
+- [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.

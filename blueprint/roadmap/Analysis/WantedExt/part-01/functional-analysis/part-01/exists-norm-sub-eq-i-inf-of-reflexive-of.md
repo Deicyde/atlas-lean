@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ReflexiveBanachNearestPointWanted.exists_norm_sub_eq_iInf_of_reflexive_of_convex_of_isClosed
 ---
 
-# Reflexive Banach Nearest Point Wanted
+# Nearest points in reflexive Banach spaces
 
-\item Let $X$ be a reflexive complex Banach space, $C\subset X$ be a closed convex subset, show
-that for all $x_0\in X$, there exists $y_0\in C$ such that
-\[
-\|x_0-y_0\|=\inf_{y\in C}\|x_0-y\|.
-\]
+**Nearest points in reflexive Banach spaces.** Let $X$ be a reflexive complex Banach space, that
+is, the canonical embedding of $X$ into its double dual is surjective, and let $C \subseteq X$ be a
+nonempty closed convex set. Then for every $x_0 \in X$ there is $y_0 \in C$ such that
+$\|x_0 - y_0\| = \inf_{y \in C} \|x_0 - y\|$.
 
 ## Depends on
 

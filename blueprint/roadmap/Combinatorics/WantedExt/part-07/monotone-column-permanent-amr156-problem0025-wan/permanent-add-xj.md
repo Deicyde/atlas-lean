@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MonotoneColumnPermanentAMR156Problem0025Wanted.permanentAddXJ
 ---
 
-# Permanent Add XJ
+# The polynomial $\operatorname{per}(A + xJ)$
 
-The polynomial `per(A + xJ) ∈ ℝ[x]`, `J` the all-ones matrix: the permanent of the matrix with
-entries `A i j + x`.
+**The polynomial $\operatorname{per}(A + xJ)$.** For a real $n \times n$ matrix $A$, this is
+the polynomial $\operatorname{per}(A + xJ) \in \mathbb{R}[x]$, where $J$ is the $n \times n$
+all-ones matrix: the permanent of the $n \times n$ matrix of polynomials whose $(i, j)$ entry is
+$A_{ij} + x$.
 
 ## Depends on
 

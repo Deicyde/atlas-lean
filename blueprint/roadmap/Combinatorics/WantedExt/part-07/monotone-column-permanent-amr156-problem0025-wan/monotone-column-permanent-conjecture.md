@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MonotoneColumnPermanentAMR156Problem0025Wanted.monotoneColumnPermanentConjecture
 ---
 
-# Monotone Column Permanent Conjecture
+# The Haglund–Ono–Wagner monotone column permanent conjecture
 
-The Haglund–Ono–Wagner monotone column permanent conjecture (Stanley, Positivity Problems,
-Problem 24): if every column of the real `n × n` matrix `A` is weakly increasing, then
-`per(A + xJ)` has only real zeros.
+**The Haglund–Ono–Wagner monotone column permanent conjecture.** This is the statement that
+for every $n \in \mathbb{N}$ and every real $n \times n$ matrix $A$ whose columns are weakly
+increasing ($A_{ij} \le A_{i'j}$ whenever $i \le i'$), every complex root of the polynomial
+$\operatorname{per}(A + xJ) \in \mathbb{R}[x]$ is real, where $J$ is the $n \times n$ all-ones
+matrix.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Permanent Add XJ](permanent-add-xj.md)
+- [The polynomial $\operatorname{per}(A + xJ)$](permanent-add-xj.md)
 - [Real-rooted polynomials](../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Sources

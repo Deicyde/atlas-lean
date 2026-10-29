@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.identityProductNecklace_count_smallestPeriod
 ---
 
-# Identity Product Necklace count smallest Period
+# Identity-product necklaces with a given smallest period
 
-Corollary 18: for `k ∣ n`, the number of identity-product `n`-necklaces with smallest
-period `k` (rotation orbits of size `k`) is `(1/k) ∑_{d ∣ k} μ(k/d) [G ÷ n/d] |G|^{d-1}`.
+**Identity-product necklaces with a given smallest period.** Let $G$ be a finite group, let
+$n \ge 1$ and let $k$ be a divisor of $n$. The number of rotation orbits of size $k$ of $n$-tuples
+$(x_1, \dots, x_n) \in G^n$ with $x_1 x_2 \cdots x_n = 1$ (identity-product $n$-necklaces of
+smallest period $k$) is
+
+$$\frac{1}{k} \sum_{d \mid k} \mu(k/d)\, N(n/d)\, |G|^{d-1},$$
+
+where $\mu$ is the Möbius function and $N(e)$ is the number of $g \in G$ with $g^e = 1$.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

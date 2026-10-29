@@ -6,14 +6,14 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.a_le_b
 ---
 
-# A le b
+# Endpoints of a partition are ordered
 
-The endpoints of a partition satisfy `a ≤ b`: the first point is `a`,
-the last point is `b`, and the points are increasing.
+**Endpoints of a partition are ordered.** If $a, b \in \mathbb{R}$ and the interval $[a, b]$
+has a partition, then $a \le b$.
 
 ## Depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

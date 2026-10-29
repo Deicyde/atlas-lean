@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraPrimitive_norm_le
 ---
 
-# Volterra Primitive norm le
+# Sup-norm bound for the Volterra primitive
 
-The primitive of the clamped extension is bounded by the sup norm.
+**Sup-norm bound for the Volterra primitive.** For every bounded continuous real function $f$
+on $[0, 1]$ and every $x \in [0, 1]$, $\left|\int_0^x \tilde f(t)\,dt\right| \le \|f\|$, where
+$\|f\|$ is the sup norm of $f$ and $\tilde f(t) = f(\max(0, \min(t, 1)))$ is the extension of
+$f$ to $\mathbb{R}$ by clamping the argument into $[0, 1]$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Extend](volterra-extend.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [Extension by clamping](volterra-extend.md)
 
 ## Proof depends on
 
-- [Norm volterra Extend le](norm-volterra-extend-le.md)
-- [Volterra Extend continuous](volterra-extend-continuous.md)
+- [The clamped extension is bounded by the sup norm](norm-volterra-extend-le.md)
+- [The clamped extension is continuous](volterra-extend-continuous.md)
 
 ## Sources
 

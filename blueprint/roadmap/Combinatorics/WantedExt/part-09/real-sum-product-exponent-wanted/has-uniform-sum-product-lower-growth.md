@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.HasUniformSumProductLowerGrowth
 ---
 
-# Has Uniform Sum Product Lower Growth
+# Uniform sum-product lower growth at rate $s$
 
-Uniform lower growth with one positive constant depending on `ε`, not on `A`.
-The standard nonempty-set convention avoids assigning mathematical meaning to
-`0 ^ (s - ε)` when `ε = s`; singleton sets remain included.
+**Uniform sum-product lower growth at rate $s$.** A real number $s$ has uniform sum-product
+lower growth when for every $\varepsilon > 0$ there is a constant $K > 0$ such that every
+nonempty finite set $A \subset \mathbb{R}$ satisfies
+$K \cdot |A|^{s - \varepsilon} \le \max(|A + A|, |AA|)$, where $A + A$ and $AA$ are the sets of
+sums $a + b$ and products $ab$ of elements $a, b \in A$.
+
+The constant $K$ may depend on $\varepsilon$ but not on $A$. Requiring $A$ to be nonempty
+avoids giving a meaning to $0^{s - \varepsilon}$; singleton sets are included.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Max Card](sum-product-max-card.md)
+- [Size of the larger of the sumset and the product set](sum-product-max-card.md)
 
 ## Sources
 

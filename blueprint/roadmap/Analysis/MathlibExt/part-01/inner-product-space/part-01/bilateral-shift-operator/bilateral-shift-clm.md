@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftOperator.bilateralShiftCLM
 ---
 
-# Bilateral Shift CLM
+# Bilateral shift operator
 
-The bilateral shift as a bounded operator on `ℓ²(ℤ, 𝕜)`.
+**Bilateral shift operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
+$\ell^2(\mathbb{Z}, \mathbb{K})$ be the Hilbert space of square-summable functions
+$\mathbb{Z} \to \mathbb{K}$. The bilateral shift is the bounded $\mathbb{K}$-linear operator $S$
+on $\ell^2(\mathbb{Z}, \mathbb{K})$ given by $(Sx)(n) = x(n - 1)$ for all $n \in \mathbb{Z}$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bilateral Shift Fun](bilateral-shift-fun.md)
-- [Bilateral Shift Lin Map](bilateral-shift-lin-map.md)
+- [Bilateral shift of a sequence](bilateral-shift-fun.md)
+- [Bilateral shift as a linear map](bilateral-shift-lin-map.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Finite Group Young
 
-- [Fin Group Conv](fin-group-conv.md)
-- [Fin Group Conv comm](fin-group-conv-comm.md)
-- [Fin Group Conv assoc](fin-group-conv-assoc.md)
-- [Fin Group Conv delta left](fin-group-conv-delta-left.md)
-- [Young's convolution inequality](young-convolution-finite-group.md)
+- [Convolution on a finite abelian group](fin-group-conv.md)
+- [Convolution on a finite abelian group is commutative](fin-group-conv-comm.md)
+- [Convolution on a finite abelian group is associative](fin-group-conv-assoc.md)
+- [The delta function is a left identity for convolution](fin-group-conv-delta-left.md)
+- [Young's convolution inequality on a finite abelian group](young-convolution-finite-group.md)

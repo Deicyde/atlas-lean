@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.numericalRadius_eq_norm_of_isSelfAdjoint
 ---
 
-# Numerical Radius eq norm of is Self Adjoint
+# Numerical radius of a self-adjoint operator
 
-For a self-adjoint operator, the numerical radius equals the operator
-norm.
+**Numerical radius of a self-adjoint operator.** If $T$ is a self-adjoint bounded operator
+on a complex Hilbert space, then its numerical radius equals its operator norm:
+$w(T) = \|T\|$.
 
 ## Depends on
 
-- [Numerical Radius](numerical-radius.md)
+- [Numerical radius](numerical-radius.md)
 
 ## Proof depends on
 
-- [Abs rayleigh Quotient le numerical Radius](abs-rayleigh-quotient-le-numerical-radiu.md)
-- [Numerical Radius le norm](numerical-radius-le-norm.md)
-- [Numerical Radius nonneg](numerical-radius-nonneg.md)
+- [Numerical radius bounds the Rayleigh quotient](abs-rayleigh-quotient-le-numerical-radiu.md)
+- [Numerical radius at most the operator norm](numerical-radius-le-norm.md)
+- [Nonnegativity of the numerical radius](numerical-radius-nonneg.md)
 
 ## Sources
 

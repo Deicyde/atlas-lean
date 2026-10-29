@@ -6,21 +6,27 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.norm_sq_residual_approxEigenVec
 ---
 
-# Norm sq residual approx Eigen Vec
+# Residual of the truncated approximate eigenvector
 
-The squared norm of the residual on an approximate eigenvector is `2`:
-the only surviving coordinates are the two boundary terms, each of norm `1`.
+**Residual of the truncated approximate eigenvector.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $S$ be the bilateral shift on $\ell^2(\mathbb{Z}, \mathbb{K})$, let
+$\mu \in \mathbb{K}$ with $|\mu| = 1$, and let $N \in \mathbb{N}$. The truncated approximate
+eigenvector $v_{\mu,N}$ satisfies $\|(\mu I - S)v_{\mu,N}\|^2 = 2$, where $\mu I$ is $\mu$ times
+the identity operator.
+
+The only nonzero coordinates of $(\mu I - S)v_{\mu,N}$ are those at $n = -N$ and $n = N + 1$,
+each of absolute value $1$.
 
 ## Depends on
 
-- [Bilateral Shift CLM](../bilateral-shift-operator/bilateral-shift-clm.md)
-- [Approx Eigen Vec](approx-eigen-vec.md)
+- [Bilateral shift operator](../bilateral-shift-operator/bilateral-shift-clm.md)
+- [Truncated approximate eigenvector of the bilateral shift](approx-eigen-vec.md)
 
 ## Proof depends on
 
-- [Approx Eigen Fun](approx-eigen-fun.md)
-- [Mul star zpow](mul-star-zpow.md)
-- [Residual apply](residual-apply.md)
+- [Truncated approximate eigenfunction of the bilateral shift](approx-eigen-fun.md)
+- [Multiplying a power of the conjugate by a unit scalar](mul-star-zpow.md)
+- [Coordinates of the residual of the truncated approximate eigenvector](residual-apply.md)
 
 ## Sources
 

@@ -6,18 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.hasEigenvalue_lpMulCLM_iff_of_measurable
 ---
 
-# Has Eigenvalue lp Mul CLM iff of measurable
+# Eigenvalues of a multiplication operator on $L^2$, measurable multiplier
 
-The eigenvalue criterion, for a measurable multiplier.
+**Eigenvalues of a multiplication operator on $L^2$, measurable multiplier.** Let $\mu$ be a
+$\sigma$-finite measure on a measurable space $\alpha$, let $\varphi : \alpha \to \mathbb{C}$ be
+measurable and in $L^\infty(\mu)$, and let $M_\varphi$ be the multiplication operator
+$f \mapsto \varphi f$ on $L^2(\mu)$. Then $z \in \mathbb{C}$ is an eigenvalue of $M_\varphi$ if and
+only if $\mu(\{x \in \alpha : \varphi(x) = z\}) > 0$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Exists unit vector](exists-unit-vector.md)
-- [Mem Lp mul of mem Lp top](mem-lp-mul-of-mem-lp-top.md)
+- [Normalized indicator of a set of finite positive measure](exists-unit-vector.md)
+- [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 
 ## Sources
 

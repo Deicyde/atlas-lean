@@ -5,21 +5,26 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperator.greensOperatorSqrt
 ---
 
-# Greens Operator Sqrt
+# Square root of the Dirichlet Green's operator
 
-The square root `A^{1/2}` of the Green's operator, defined via its action
-on the indexed sine eigenbasis `{b_k}`. Require `b_k = u_k` almost everywhere,
-as in `greens_operator_eigendecomposition`. If `f = ∑' k, c_k b_k` where
-`c_k = ⟨b_k, f⟩`, then `A^{1/2} f = ∑' k, (1 / (kπ)) c_k b_k`.
+**Square root of the Dirichlet Green's operator.** Let $L^2([0, 1])$ be the real Hilbert space
+of square-integrable functions on $[0, 1]$, and let $(b_k)_{k \ge 1}$ be a Hilbert basis of
+$L^2([0, 1])$ indexed by the positive integers with $b_k(x) = \sqrt{2} \sin(k\pi x)$ for almost
+every $x \in [0, 1]$. Define $A^{1/2} : L^2([0, 1]) \to L^2([0, 1])$ by
+
+$$A^{1/2} f = \sum_{k \ge 1} \frac{1}{k\pi} \langle b_k, f \rangle\, b_k.$$
+
+Since the Green's operator acts on $b_k$ as multiplication by $\frac{1}{k^2\pi^2}$, this is its
+square root.
 
 ## Depends on
 
-- [L2 Unit Interval](l2-unit-interval.md)
-- [Sine Basis Fun](sine-basis-fun.md)
+- [The space $L^2((0, 1))$](l2-unit-interval.md)
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
 
 ## Proof depends on
 
-- [Greens Eigenvalue Sqrt](greens-eigenvalue-sqrt.md)
+- [Square roots of the Green's operator eigenvalues](greens-eigenvalue-sqrt.md)
 
 ## Sources
 

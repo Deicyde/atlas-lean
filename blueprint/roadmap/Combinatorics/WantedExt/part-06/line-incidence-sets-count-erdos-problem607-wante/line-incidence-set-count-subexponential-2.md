@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineIncidenceSetsCountErdosProblem607Wanted.lineIncidenceSetCountSubexponential_holds
 ---
 
-# Line Incidence Set Count Subexponential holds
+# Szemerédi–Trotter bound for line-incidence sets (Erdős Problem 607)
 
-Resolved true: erdosproblems.com/607 records that Szemerédi and Trotter proved `F(n) ≤ exp(O(√n))`.
+**Szemerédi–Trotter bound for line-incidence sets (Erdős Problem 607).** For a finite set
+$P \subseteq \mathbb{R}^2$, let $A(P)$ be the set of the numbers $|\ell \cap P|$ over the lines
+$\ell$ through at least two distinct points of $P$, and let $F(n)$ be the number of distinct sets
+$A(P)$ over all $n$-point sets $P \subseteq \mathbb{R}^2$. There is a real constant $C$ such that
+$F(n) \le e^{C\sqrt{n}}$ for every natural number $n$.
 
 ## Depends on
 
-- [Line Incidence Set Count Subexponential](line-incidence-set-count-subexponential.md)
+- [Erdős Problem 607: subexponentially many line-incidence sets](line-incidence-set-count-subexponential.md)
 
 ## Sources
 

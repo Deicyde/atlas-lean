@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.conjecture
 ---
 
-# Conjecture
+# Erdős–Szemerédi sunflower conjecture for $k \ge 4$
 
-The Erdős–Szemerédi weak sunflower conjecture for `k ≥ 4`: every fixed
-`k ≥ 4` admits a base `c < 2`, depending only on `k`, such that every
-`k`-sunflower-free family of arbitrary subsets of an `n`-element universe has
-at most `c ^ n` members for all sufficiently large `n`. The bound is eventual
-because for `2 ^ n < k` the full powerset is `k`-sunflower-free. The case
-`k = 3` was proved by Naslund–Sawin and is omitted.
+**Erdős–Szemerédi sunflower conjecture for $k \ge 4$.** The proposition asserts that for every
+natural number $k \ge 4$ there is a real number $c$ with $0 < c < 2$ such that, for all
+sufficiently large $n$, every $k$-sunflower-free family of subsets of $\{0, \dots, n-1\}$ has at
+most $c^n$ members.
+
+The bound is required only for large $n$ because for $2^n < k$ the family of all subsets of
+$\{0, \dots, n-1\}$ is $k$-sunflower-free. The case $k = 3$, proved by Naslund and Sawin, is
+omitted.
 
 ## Depends on
 
@@ -20,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KSunflower Free](is-ksunflower-free.md)
+- [Sunflower-free families](is-ksunflower-free.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.numericalRadius_nonneg
 ---
 
-# Numerical Radius nonneg
+# Nonnegativity of the numerical radius
 
-The numerical radius is nonnegative.
+**Nonnegativity of the numerical radius.** For every bounded operator $T$ on a complex inner
+product space, the numerical radius $w(T)$ of $T$ satisfies $w(T) \ge 0$.
 
 ## Depends on
 
-- [Numerical Radius](numerical-radius.md)
+- [Numerical radius](numerical-radius.md)
 
 ## Sources
 

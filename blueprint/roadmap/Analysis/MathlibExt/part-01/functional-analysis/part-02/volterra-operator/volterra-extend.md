@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraExtend
 ---
 
-# Volterra Extend
+# Extension by clamping
 
-Extend a function on `[0, 1]` to `ℝ` by clamping the argument; this is the
-continuous extension used to write `(Vf)(x)` as an interval integral over `ℝ`.
+**Extension by clamping.** For a bounded continuous real function $f$ on $[0, 1]$, its
+extension to $\mathbb{R}$ is the function $t \mapsto f(\max(0, \min(t, 1)))$.
+
+This continuous extension is used to write $(Vf)(x)$, for $V$ the Volterra operator, as an
+interval integral over $\mathbb{R}$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
+- [The domain of the Volterra operator](volterra-space.md)
 
 ## Proof depends on
 
-- [Clamp01](clamp01.md)
+- [Clamping to the unit interval](clamp01.md)
 
 ## Sources
 

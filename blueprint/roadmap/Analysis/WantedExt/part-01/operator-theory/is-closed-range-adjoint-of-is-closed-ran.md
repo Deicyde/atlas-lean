@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.HilbertAdjointClosedRangeWanted.isClosed_range_adjoint_of_isClosed_range
 ---
 
-# Hilbert Adjoint Closed Range Wanted
+# Closed range passes to the Hilbert space adjoint
 
-Show that if $X, Y$ are Hilbert spaces, $A \in L(X, Y)$, and $\mathrm{Ran}\,A$ is closed then
-$\mathrm{Ran}\,A^*$ is closed (where $A^* \in L(Y, X)$ is the Hilbert space adjoint).
+**Closed range passes to the Hilbert space adjoint.** Let $X$ and $Y$ be complex Hilbert spaces
+and let $A : X \to Y$ be a bounded linear operator with Hilbert space adjoint $A^* : Y \to X$. If
+the range of $A$ is closed in $Y$, then the range of $A^*$ is closed in $X$.
 
 ## Depends on
 

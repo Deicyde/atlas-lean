@@ -4,6 +4,6 @@ navigation: module
 
 # Locally Sparse Triple System Erdos Problem1076
 
-- [Ex Single](ex-single.md)
-- [Single Family Asymptotic](single-family-asymptotic.md)
-- [Single Family Asymptotic refuted](single-family-asymptotic-refuted.md)
+- [Extremal number for $k$ vertices spanning $k - 2$ triples](ex-single.md)
+- [Erdős Problem 1076 as worded](single-family-asymptotic.md)
+- [Erdős Problem 1076 fails as worded](single-family-asymptotic-refuted.md)

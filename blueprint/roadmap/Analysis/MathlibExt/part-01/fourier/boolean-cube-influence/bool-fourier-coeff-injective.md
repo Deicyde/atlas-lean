@@ -6,9 +6,11 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_injective
 ---
 
-# Bool Fourier Coeff injective
+# Fourier coefficients determine the function
 
-A function is determined by its Fourier coefficients.
+**Fourier coefficients determine the function.** If two real-valued functions $f$ and $g$ on
+the Boolean cube in $n$ coordinates have the same Fourier coefficient $\hat f(S) = \hat g(S)$ at
+every set $S$ of the $n$ coordinates, then $f = g$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ A function is determined by its Fourier coefficients.
 ## Proof depends on
 
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
-- [Sum bool Fourier Coeff mul cube Chi](sum-bool-fourier-coeff-mul-cube-chi.md)
+- [Fourier inversion on the Boolean cube](sum-bool-fourier-coeff-mul-cube-chi.md)
 
 ## Sources
 

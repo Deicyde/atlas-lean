@@ -6,13 +6,15 @@ proof: formalized
 lean: SetFamily.isIntersecting_iff
 ---
 
-# Is Intersecting iff
+# Characterization of intersecting families
 
-Unfolding characterization of intersecting families.
+**Characterization of intersecting families.** Let $F$ be a finite family of finite subsets
+of a type $\alpha$. Then $F$ is intersecting if and only if for all $A, B \in F$ with $A \neq B$,
+the intersection $A \cap B$ is nonempty.
 
 ## Depends on
 
-- [Is Intersecting](is-intersecting.md)
+- [Intersecting families](is-intersecting.md)
 
 ## Sources
 

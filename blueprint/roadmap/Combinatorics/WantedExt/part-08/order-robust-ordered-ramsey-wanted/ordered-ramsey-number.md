@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.orderedRamseyNumber
 ---
 
-# Ordered Ramsey Number
+# Ordered Ramsey number
 
-Ordered Ramsey number `r_<(H)` as the infimum of `N` satisfying the ordered
-Ramsey property.
+**Ordered Ramsey number.** For a simple graph $H$ on $\{0, \dots, n - 1\}$ with a strict total
+order $\lt _H$ on its vertices, the ordered Ramsey number $r_<(H, \lt _H)$ is the least natural number
+$N$ with the ordered Ramsey property for $(H, \lt _H)$, that is, such that every red/blue colouring
+of the edges of the complete graph on $\{0, \dots, N - 1\}$ with its natural order contains a
+monochromatic ordered copy of $(H, \lt _H)$. It is $0$ if no such $N$ exists.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ Ramsey property.
 
 ## Proof depends on
 
-- [Ordered Ramsey Prop](ordered-ramsey-prop.md)
+- [Ordered Ramsey property](ordered-ramsey-prop.md)
 
 ## Sources
 

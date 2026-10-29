@@ -6,14 +6,16 @@ proof: formalized
 lean: Submodule.mem_topologicalCoannihilator
 ---
 
-# Mem topological Coannihilator
+# Membership in the topological coannihilator
 
-Membership in the topological coannihilator: `x` is in the
-coannihilator of `Φ` exactly when every functional in `Φ` kills `x`.
+**Membership in the topological coannihilator.** Let $E$ be a normed space over $\mathbb{K}$,
+where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, let $\Phi$ be a subspace of the continuous dual
+of $E$, and let $x \in E$. Then $x$ lies in the topological coannihilator of $\Phi$ if and only if
+$f(x) = 0$ for every $f \in \Phi$.
 
 ## Depends on
 
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Sources
 

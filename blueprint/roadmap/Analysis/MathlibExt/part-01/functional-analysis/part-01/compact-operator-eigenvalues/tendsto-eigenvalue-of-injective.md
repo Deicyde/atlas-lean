@@ -8,12 +8,14 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.tendsto_
 
 # Eigenvalues of a compact operator tend to zero along any injective sequence
 
-**Eigenvalues of a compact operator tend to zero along any injective
-sequence.** If `lam` is an injective sequence of eigenvalues of a compact
-operator `T`, then `lam n → 0`. Otherwise some `ε > 0` would be exceeded
-by `‖lam n‖` for unboundedly many `n`, giving an infinite set of
-eigenvalues bounded away from zero, contradicting
-`finite_eigenvalues_of_ge`.
+**Eigenvalues of a compact operator tend to zero along any injective sequence.** Let $E$ be a
+normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a compact bounded linear
+operator on $E$. If $(\lambda_n)_{n \in \mathbb{N}}$ is a sequence of pairwise distinct eigenvalues
+of $T$, then $\lambda_n \to 0$ as $n \to \infty$.
+
+Otherwise some $\varepsilon > 0$ would satisfy $|\lambda_n| \ge \varepsilon$ for infinitely many
+$n$, giving infinitely many eigenvalues of modulus at least $\varepsilon$, which contradicts the
+finiteness of eigenvalues of a compact operator bounded away from zero.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finiteness of eigenvalues bounded away from zero](finite-eigenvalues-of-ge.md)
+- [Finiteness of eigenvalues of a compact operator bounded away from zero](finite-eigenvalues-of-ge.md)
 
 ## Sources
 

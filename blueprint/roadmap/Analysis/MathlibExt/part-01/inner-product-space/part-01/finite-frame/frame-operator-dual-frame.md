@@ -6,22 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.frameOperator_dualFrame
 ---
 
-# Frame Operator dual Frame
+# Frame operator of the canonical dual frame
 
-The frame operator of the dual frame is the inverse frame operator.
+**Frame operator of the canonical dual frame.** Let $(f_i)_{i \in \iota}$, with $\iota$
+finite, be a frame with bounds $A$ and $B$ in a Hilbert space $E$ over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$, and let $S^{-1}$ be the inverse of its frame operator. Then the frame operator of
+the canonical dual frame $(S^{-1} f_i)_{i \in \iota}$ is $S^{-1}$.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Dual Frame](dual-frame.md)
-- [Frame Operator](frame-operator.md)
-- [Frame Operator Inv](frame-operator-inv.md)
+- [Finite frame](is-frame.md)
+- [Canonical dual frame](dual-frame.md)
+- [Frame operator](frame-operator.md)
+- [Inverse frame operator](frame-operator-inv.md)
 
 ## Proof depends on
 
-- [Frame Operator apply](frame-operator-apply.md)
-- [Frame Operator comp frame Operator Inv](frame-operator-comp-frame-operator-inv.md)
-- [Is Self Adjoint frame Operator Inv](is-self-adjoint-frame-operator-inv.md)
+- [Frame operator formula](frame-operator-apply.md)
+- [The inverse frame operator is a right inverse](frame-operator-comp-frame-operator-inv.md)
+- [The inverse frame operator is self-adjoint](is-self-adjoint-frame-operator-inv.md)
 
 ## Sources
 

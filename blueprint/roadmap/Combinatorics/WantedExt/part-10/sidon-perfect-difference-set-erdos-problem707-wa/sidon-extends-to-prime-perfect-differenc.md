@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPrimePerfectDifferenceSet
 ---
 
-# Sidon Extends To Prime Perfect Difference Set
+# Erdős Problem 707
 
-Erdős Problem 707: every finite Sidon set `A ⊆ ℕ` is contained in a perfect difference set
-modulo `p² + p + 1` for some prime `p`.
+**Erdős Problem 707.** The proposition that for every finite Sidon set $A \subseteq \mathbb{N}$
+there are a prime $p$ and a set $B \subseteq \mathbb{N}$ with $A \subseteq B$ such that $B$ is a
+perfect difference set modulo $p^2 + p + 1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Perfect Difference Set Mod](is-perfect-difference-set-mod.md)
+- [Perfect difference sets modulo $v$](is-perfect-difference-set-mod.md)
 - [Sidon](../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources

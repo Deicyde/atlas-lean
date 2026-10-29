@@ -4,5 +4,5 @@ navigation: module
 
 # Mul By Id On L2 One Two Self Adjoint
 
-- [L2 On One Two](l2-on-one-two.md)
-- [Continuous bijective self Adjoint of mul id L2 Icc one two](continuous-bijective-self-adjoint-of-mul.md)
+- [The space $L^2((1,2))$](l2-on-one-two.md)
+- [Multiplication by $x$ on $L^2((1,2))$ is bounded, bijective and self-adjoint](continuous-bijective-self-adjoint-of-mul.md)

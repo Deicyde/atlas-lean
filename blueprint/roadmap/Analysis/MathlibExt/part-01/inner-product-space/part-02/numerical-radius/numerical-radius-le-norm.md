@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.numericalRadius_le_norm
 ---
 
-# Numerical Radius le norm
+# Numerical radius at most the operator norm
 
-The numerical radius is at most the operator norm (Cauchy–Schwarz).
+**Numerical radius at most the operator norm.** For every bounded operator $T$ on a complex
+inner product space, the numerical radius $w(T)$ is at most the operator norm: $w(T) \le \|T\|$.
+
+The proof is the Cauchy–Schwarz inequality.
 
 ## Depends on
 
-- [Numerical Radius](numerical-radius.md)
+- [Numerical radius](numerical-radius.md)
 
 ## Proof depends on
 
-- [Numerical Radius le](numerical-radius-le.md)
+- [Bounding the numerical radius from above](numerical-radius-le.md)
 
 ## Sources
 

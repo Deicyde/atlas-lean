@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.shiftCLM
 ---
 
-# Shift CLM
+# The unilateral shift operator
 
-The unilateral shift as a bounded operator on `ℓ²(ℕ, 𝕜)`.
+**The unilateral shift operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. The
+unilateral shift is the bounded linear operator $S$ on the Hilbert space
+$\ell^2(\mathbb{N}, \mathbb{K})$ of square-summable sequences in $\mathbb{K}$ given by
+$S(x_0, x_1, x_2, \dots) = (0, x_0, x_1, \dots)$. It is bounded because $\|Sx\| = \|x\|$ for every
+$x$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm shift Lin Map apply](norm-shift-lin-map-apply.md)
-- [Shift Lin Map](shift-lin-map.md)
+- [The forward shift linear map preserves norms](norm-shift-lin-map-apply.md)
+- [Forward shift as a linear map](shift-lin-map.md)
 
 ## Sources
 

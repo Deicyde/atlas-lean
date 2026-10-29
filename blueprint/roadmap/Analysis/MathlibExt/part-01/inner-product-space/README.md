@@ -38,7 +38,7 @@ article_id: af_547566d1ef518cab3139266b
 - [Lp Shift Operator](part-02/lp-shift-operator/README.md)
 - [Lp Shift Operator Spectrum](part-02/lp-shift-operator-spectrum/README.md)
 - [Neumann Polya Benchmark](part-02/neumann-polya-benchmark/README.md)
-- [Norm Sq Hessian](part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](part-02/fderiv-fderiv-norm-sq-apply.md)
 - [Numerical Radius](part-02/numerical-radius/README.md)
 - [Numerical Range Spectrum](part-02/numerical-range-spectrum/README.md)
 - [Orthonormal Weak Convergence](part-02/orthonormal-weak-convergence/README.md)

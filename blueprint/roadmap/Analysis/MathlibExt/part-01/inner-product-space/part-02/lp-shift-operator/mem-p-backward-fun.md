@@ -6,14 +6,18 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.memℓp_backwardFun
 ---
 
-# Memℓp backward Fun
+# The backward shift of an $\ell^2$ sequence is in $\ell^2$
 
-The backward-shifted sequence of an `ℓ²` sequence is in `ℓ²`: its
-squared norms are a tail of the squared norms of the original sequence.
+**The backward shift of an $\ell^2$ sequence is in $\ell^2$.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$. For every $x \in \ell^2(\mathbb{N}, \mathbb{K})$, the backward
+shift $n \mapsto x_{n+1}$ of the sequence $x$ is square-summable, that is, it lies in
+$\ell^2(\mathbb{N}, \mathbb{K})$.
+
+Its squared absolute values are a tail of the squared absolute values of $x$.
 
 ## Depends on
 
-- [Backward Fun](backward-fun.md)
+- [Backward shift of a sequence](backward-fun.md)
 
 ## Sources
 

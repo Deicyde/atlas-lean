@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.numericalRadius
 ---
 
-# Numerical Radius
+# Numerical radius
 
-The numerical radius of a bounded operator on a complex Hilbert space:
-the supremum of `‖⟪T x, x⟫‖` over unit vectors `x`.
+**Numerical radius.** The numerical radius of a bounded linear operator $T$ on a complex
+Hilbert space $H$ is the real number
+$w(T) = \sup \{ |\langle T x, x \rangle| : x \in H,\ \|x\| = 1 \}$, the supremum of the moduli of
+the values $\langle T x, x \rangle$ over the unit vectors of $H$ (taken to be $0$ when $H = 0$).
 
 ## Depends on
 

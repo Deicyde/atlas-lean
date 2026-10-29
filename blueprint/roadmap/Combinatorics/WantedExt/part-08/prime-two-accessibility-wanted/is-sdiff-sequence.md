@@ -12,11 +12,6 @@ $x_0, \dots, x_{k-1}$ of natural numbers is an $S$-diffsequence when each term i
 one plus an element of $S$: for every $i$ with $i + 1 < k$ there is $d \in S$ with
 $x_{i+1} = x_i + d$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
-http://www.openproblemgarden.org/op/2_accessibility_of_primes):
-formalizes "`S`-diffsequence", i.e. `x_{i+1} - x_i ∈ S`,
-stated additively as `x (i+1) = x i + d` with `d ∈ S`.
-
 ## Depends on
 
 This node has no prerequisites.
@@ -24,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PrimeTwoAccessibilityWanted](../../../../../sources/v2/WantedExt.md)
+- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "`S`-diffsequence", i.e. `x_{i+1} - x_i ∈ S`, stated additively as `x (i+1) = x i + d` with `d ∈ S`.

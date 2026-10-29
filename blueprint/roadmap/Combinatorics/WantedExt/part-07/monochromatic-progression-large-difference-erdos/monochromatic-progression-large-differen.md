@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MonochromaticProgressionLargeDifferenceErdosProblem645Wanted.monochromaticProgressionLargeDifference
 ---
 
-# Monochromatic Progression Large Difference
+# Erdős Problem 645
 
-Erdős Problem 645: every `2`-colouring of the positive integers has a monochromatic three-term
-progression `x, x + d, x + 2d` with `d > x ≥ 1`.
+**Erdős Problem 645.** The statement that for every colouring of the positive integers with
+two colours there are positive integers $x$ and $d$ with $d > x$ such that $x$, $x + d$ and
+$x + 2d$ all have the same colour.
 
 ## Depends on
 

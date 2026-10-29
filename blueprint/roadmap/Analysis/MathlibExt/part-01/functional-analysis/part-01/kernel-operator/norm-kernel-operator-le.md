@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.norm_kernelOperator_le
 ---
 
-# Norm kernel Operator le
+# Norm bound for a kernel integral operator
 
-The operator norm of the kernel operator is at most the sup norm of the kernel.
+**Norm bound for a kernel integral operator.** For every continuous kernel $k$ on
+$[0, 1] \times [0, 1]$, the integral operator $K$ with kernel $k$ on $C([0, 1], \mathbb{R})$ has
+operator norm $\|K\| \le \|k\|_\infty$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Linear Map norm le](kernel-linear-map-norm-le.md)
+- [Sup-norm bound for the integral operator with continuous kernel](kernel-linear-map-norm-le.md)
 
 ## Sources
 

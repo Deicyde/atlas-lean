@@ -4,6 +4,6 @@ navigation: module
 
 # Cluster Free Erdos Ko Rado OWR1386 Problem011
 
-- [Is Kd Family](is-kd-family.md)
-- [Kd Family Erdos Ko Rado](kd-family-erdos-ko-rado.md)
-- [Kd Family Erdos Ko Rado holds](kd-family-erdos-ko-rado-holds.md)
+- [$K(d)$-families](is-kd-family.md)
+- [Mubayi's Erdős–Ko–Rado conjecture for $K(d)$-families](kd-family-erdos-ko-rado.md)
+- [Mubayi's Erdős–Ko–Rado conjecture for $K(d)$-families holds](kd-family-erdos-ko-rado-holds.md)

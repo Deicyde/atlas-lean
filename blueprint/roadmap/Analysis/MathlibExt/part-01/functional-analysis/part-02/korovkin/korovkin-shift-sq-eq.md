@@ -6,15 +6,18 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinShiftSq_eq
 ---
 
-# Korovkin Shift Sq eq
+# Expansion of the shifted square
 
-The shifted square is a linear combination of the three test functions.
+**Expansion of the shifted square.** Write $e(y) = y$ and $q(y) = y^2$ for the identity
+and square functions and $1$ for the constant function one, as elements of
+$C([0, 1], \mathbb{R})$. For every $x \in [0, 1]$, the function $y \mapsto (y - x)^2$ in
+$C([0, 1], \mathbb{R})$ equals $q - 2x \cdot e + x^2 \cdot 1$.
 
 ## Depends on
 
-- [Korovkin Id](korovkin-id.md)
-- [Korovkin Id Sq](korovkin-id-sq.md)
-- [Korovkin Shift Sq](korovkin-shift-sq.md)
+- [The identity test function](korovkin-id.md)
+- [The square test function](korovkin-id-sq.md)
+- [The shifted square](korovkin-shift-sq.md)
 
 ## Sources
 

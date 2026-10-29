@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.CentralLozengeOneThirdAMR122Problem0001Wanted.SharesEdge
 ---
 
-# Shares Edge
+# Unit triangles sharing an edge
 
-An upward and a downward unit triangle sharing an edge: the upward triangle `(i, j)` shares its
-three edges with the downward triangles `(i, j)`, `(i - 1, j)` and `(i, j - 1)`.
+**Unit triangles sharing an edge.** The relation between unit triangles $s$ and $t$ that holds
+exactly when $s$ is an upward triangle $(i, j)$ and $t$ is one of the downward triangles $(i, j)$,
+$(i - 1, j)$ and $(i, j - 1)$. These are the three downward triangles that share an edge with
+the upward triangle $(i, j)$; the relation never holds with $s$ downward or $t$ upward.
 
 ## Depends on
 
-- [Lattice Triangle](lattice-triangle.md)
+- [Unit triangles of the triangular lattice](lattice-triangle.md)
 
 ## Sources
 

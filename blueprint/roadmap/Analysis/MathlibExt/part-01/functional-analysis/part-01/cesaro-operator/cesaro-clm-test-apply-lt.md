@@ -6,22 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.cesaroCLM_test_apply_lt
 ---
 
-# Cesaro CLM test apply lt
+# The Cesàro operator on a test vector, within its support
 
-On the first `N` coordinates, the Cesàro operator applied to the test
-vector is constant.
+**The Cesàro operator on a test vector, within its support.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, and let $C$ be the Cesàro operator on
+$\ell^2(\mathbb{N}, \mathbb{K})$. For $N \in \mathbb{N}$ let $t_N$ be the test vector whose
+first $N$ coordinates equal $1/\sqrt{N}$ and whose other coordinates are $0$. For all
+$n, N \in \mathbb{N}$ with $n < N$, $(C t_N)_n = 1/\sqrt{N}$.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro CLM](cesaro-clm.md)
-- [Cesaro Test](cesaro-test.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [Cesàro operator on square-summable sequences](cesaro-clm.md)
+- [Cesàro test vectors](cesaro-test.md)
 
 ## Proof depends on
 
-- [Cesaro CLM apply](cesaro-clm-apply.md)
-- [Cesaro Test apply](cesaro-test-apply.md)
-- [Cesaro den ne zero](cesaro-den-ne-zero.md)
+- [Formula for the Cesàro operator](cesaro-clm-apply.md)
+- [Coordinates of the Cesàro test vectors](cesaro-test-apply.md)
+- [The Cesàro denominator $n + 1$ is nonzero](cesaro-den-ne-zero.md)
 
 ## Sources
 

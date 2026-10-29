@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.norm_weightedShiftCLM_le_of_forall_le
 ---
 
-# Norm weighted Shift CLM le of forall le
+# Uniform weight bounds bound the weighted shift
 
-The norm of the weighted forward shift is at most any uniform bound on
-the moduli of the weights.
+**Uniform weight bounds bound the weighted shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $w : \mathbb{N} \to \mathbb{K}$ be weights with bounded moduli, and let $S_w$ be
+the weighted forward shift on $\ell^2(\mathbb{N}, \mathbb{K})$. If $C$ is a real number with
+$|w_n| \le C$ for every $n$, then the operator norm of $S_w$ is at most $C$.
 
 ## Depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Diagonal CLM](../../part-02/lp-diagonal-operator/diagonal-clm.md)
-- [Norm diagonal CLM le](../../part-02/lp-diagonal-operator/norm-diagonal-clm-le.md)
-- [Norm shift CLM](../../part-02/lp-shift-operator/norm-shift-clm.md)
-- [Shift CLM](../../part-02/lp-shift-operator/shift-clm.md)
+- [Diagonal operator on ℓ²](../../part-02/lp-diagonal-operator/diagonal-clm.md)
+- [Operator norm bound for diagonal operators](../../part-02/lp-diagonal-operator/norm-diagonal-clm-le.md)
+- [The unilateral shift has operator norm one](../../part-02/lp-shift-operator/norm-shift-clm.md)
+- [The unilateral shift operator](../../part-02/lp-shift-operator/shift-clm.md)
 
 ## Sources
 

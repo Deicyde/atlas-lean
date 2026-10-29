@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Single
 ---
 
-# C0 Single
+# Sequence supported at one index
 
-The sequence which is `a` at `i` and `0` elsewhere, as an element of `c₀`.
+**Sequence supported at one index.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and
+let $\iota$ be an index type. For an index $i \in \iota$ and a scalar $a \in \mathbb{K}$, this
+is the element of $c_0(\iota, \mathbb{K})$ whose $i$-th coordinate is $a$ and whose other
+coordinates are $0$.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Proof depends on
 
-- [C0 Of Lp](c0-of-lp.md)
+- [Sequences in $\ell^\infty$ tending to zero as elements of $c_0$](c0-of-lp.md)
 
 ## Sources
 

@@ -6,9 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRangeSpectrum.numericalRange_subset_closedBall_norm
 ---
 
-# Numerical Range subset closed Ball norm
+# The numerical range is bounded by the operator norm
 
-The numerical range of `A` lies in the closed ball of radius `‖A‖`.
+**The numerical range is bounded by the operator norm.** Let $A$ be a bounded linear operator
+on a complex inner product space $E$. Then every point of the numerical range $W(A)$ has absolute
+value at most the operator norm $\|A\|$: $W(A)$ lies in the closed disc of radius $\|A\|$ centred
+at $0$.
 
 ## Depends on
 

@@ -6,24 +6,30 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Coeff_finset_sum_le
 ---
 
-# C0 Coeff finset sum le
+# Finite sums of the coefficients of a functional on $c_0$
 
-The finite-subset estimate for the coefficients of a dual functional.
+**Finite sums of the coefficients of a functional on $c_0$.** Let $\mathbb{K}$ be $\mathbb{R}$
+or $\mathbb{C}$, let $c_0(\iota, \mathbb{K})$ be the space of families in $\mathbb{K}$ indexed by
+$\iota$ that tend to $0$ along the cofinite filter, with the supremum norm, and for $i \in \iota$
+let $e_i \in c_0(\iota, \mathbb{K})$ be the family that is $1$ at $i$ and $0$ elsewhere. For every
+continuous linear functional $\Phi$ on $c_0(\iota, \mathbb{K})$ and every finite set
+$s \subseteq \iota$, we have $\sum_{i \in s} |\Phi(e_i)| \le \|\Phi\|$, where $\|\Phi\|$ is the
+operator norm.
 
 ## Depends on
 
-- [C0](c0.md)
-- [C0 Coeff](c0-coeff.md)
+- [The sequence space $c_0$](c0.md)
+- [Coefficients of a functional on $c_0$](c0-coeff.md)
 
 ## Proof depends on
 
-- [C0 Finset Sum](c0-finset-sum.md)
-- [C0 Finset Sum apply](c0-finset-sum-apply.md)
-- [C0 Finset Sum apply dual](c0-finset-sum-apply-dual.md)
-- [C0 Single](c0-single.md)
-- [C0 Unit Scalar](c0-unit-scalar.md)
-- [C0 Unit Scalar mul](c0-unit-scalar-mul.md)
-- [Norm c0 Unit Scalar le](norm-c0-unit-scalar-le.md)
+- [Finitely supported sequences in $c_0$](c0-finset-sum.md)
+- [Coordinates of a finitely supported sequence](c0-finset-sum-apply.md)
+- [A functional on a finitely supported sequence](c0-finset-sum-apply-dual.md)
+- [Sequence supported at one index](c0-single.md)
+- [The normalizing scalar $\overline{w}/|w|$](c0-unit-scalar.md)
+- [The normalizing scalar times $w$ is $|w|$](c0-unit-scalar-mul.md)
+- [The normalizing scalar has absolute value at most one](norm-c0-unit-scalar-le.md)
 
 ## Sources
 

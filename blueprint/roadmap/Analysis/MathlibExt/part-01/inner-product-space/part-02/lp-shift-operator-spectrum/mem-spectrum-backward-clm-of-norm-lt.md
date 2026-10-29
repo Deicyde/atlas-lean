@@ -6,22 +6,26 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperatorSpectrum.mem_spectrum_backwardCLM_of_norm_lt
 ---
 
-# Mem spectrum backward CLM of norm lt
+# The open unit ball lies in the spectrum of the backward shift
 
-Every point of the open unit ball is in the spectrum of the
-backward shift: the geometric vector is in the kernel of `μ • 1 - B`,
-so `μ • 1 - B` is not injective, hence not a unit.
+**The open unit ball lies in the spectrum of the backward shift.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$ and let $B$ be the backward shift on $\ell^2(\mathbb{N}, \mathbb{K})$.
+Every $\mu \in \mathbb{K}$ with $\|\mu\| < 1$ lies in the spectrum of $B$ in the algebra of
+bounded operators on $\ell^2(\mathbb{N}, \mathbb{K})$.
+
+Indeed, writing $I$ for the identity operator, the geometric vector $(1, \mu, \mu^2, \dots)$ lies
+in the kernel of $\mu I - B$, so $\mu I - B$ is not injective, hence not invertible.
 
 ## Depends on
 
-- [Backward CLM](../lp-shift-operator/backward-clm.md)
+- [Backward shift](../lp-shift-operator/backward-clm.md)
 
 ## Proof depends on
 
-- [Algebra Map sub apply](algebra-map-sub-apply.md)
-- [Backward CLM geometric Vec](backward-clm-geometric-vec.md)
-- [Geometric Vec](geometric-vec.md)
-- [Geometric Vec ne zero](geometric-vec-ne-zero.md)
+- [Applying a scalar operator minus an operator on ℓ²(ℕ)](algebra-map-sub-apply.md)
+- [Backward shift of the geometric vector](backward-clm-geometric-vec.md)
+- [Geometric vector](geometric-vec.md)
+- [The geometric vector is nonzero](geometric-vec-ne-zero.md)
 
 ## Sources
 

@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty.card_le_mul_card_filter_support
 ---
 
-# Card le mul card filter support
+# Donoho–Stark uncertainty principle
 
-The Donoho–Stark uncertainty principle: a nonzero function on a finite
-abelian group and its Fourier transform cannot both have small support.
+**Donoho–Stark uncertainty principle.** Let $G$ be a finite abelian group and let
+$f : G \to \mathbb{C}$ be a nonzero function with discrete Fourier transform $\hat f$. Then
+$|G| \le |\{x \in G : f(x) \neq 0\}| \cdot |\{\psi : \hat f(\psi) \neq 0\}|$, where $\psi$ ranges
+over the additive characters of $G$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ abelian group and its Fourier transform cannot both have small support.
 
 ## Proof depends on
 
-- [Sum norm sq le of dft Fun eq zero of not Mem](sum-norm-sq-le-of-dft-fun-eq-zero-of-not.md)
+- [Concentration bound for a function with small Fourier support](sum-norm-sq-le-of-dft-fun-eq-zero-of-not.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.IsOrderedEmbedding
 ---
 
-# Is Ordered Embedding
+# Ordered embedding
 
-Injective order-preserving embeddings from an ordered `n`-vertex graph into
-`Fin N` with its natural order.
+**Ordered embedding.** Let $\lt _H$ be a strict total order on $\{0, \dots, n - 1\}$. A map
+$f \colon \{0, \dots, n - 1\} \to \{0, \dots, N - 1\}$ is an ordered embedding when it is
+injective and $a \lt _H b$ implies $f(a) < f(b)$ for all $a$ and $b$, where $\{0, \dots, N - 1\}$
+carries its natural order.
 
 ## Depends on
 

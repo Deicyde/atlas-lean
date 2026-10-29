@@ -13,16 +13,16 @@ on the canonical sine Hilbert basis, enumerated by `n + 1`.
 
 ## Depends on
 
-- [L2 Unit Interval](../greens-operator/l2-unit-interval.md)
-- [Greens Kernel](../greens-operator/greens-kernel.md)
-- [Sine Hilbert Basis](../greens-operator/sine-hilbert-basis.md)
-- [Hs Norm Sq](../../operator-theory/hilbert-schmidt-norm/hs-norm-sq.md)
+- [The space $L^2((0, 1))$](../greens-operator/l2-unit-interval.md)
+- [Green's kernel of the Dirichlet Laplacian on $(0, 1)$](../greens-operator/greens-kernel.md)
+- [The sine Hilbert basis of $L^2((0, 1))$](../greens-operator/sine-hilbert-basis.md)
+- [Squared Hilbert–Schmidt norm in a family](../../operator-theory/hilbert-schmidt-norm/hs-norm-sq.md)
 
 ## Proof depends on
 
-- [Greens Eigenvalue](../greens-operator/greens-eigenvalue.md)
-- [Greens operator eigendecomposition](../greens-operator/greens-operator-eigendecomposition.md)
-- [Sine Hilbert Basis coe](../greens-operator/sine-hilbert-basis-coe.md)
+- [Eigenvalues of the Dirichlet Green's operator](../greens-operator/greens-eigenvalue.md)
+- [Spectral decomposition of the Dirichlet Green's operator](../greens-operator/greens-operator-eigendecomposition.md)
+- [The sine Hilbert basis consists of sine functions](../greens-operator/sine-hilbert-basis-coe.md)
 
 ## Sources
 

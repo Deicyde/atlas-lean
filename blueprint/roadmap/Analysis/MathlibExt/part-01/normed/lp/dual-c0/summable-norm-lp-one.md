@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.summable_norm_lp_one
 ---
 
-# Summable norm lp one
+# Coordinate norms of an $\ell^1$ family are summable
 
-The norms of the coordinates of an `ℓ¹` sequence are summable.
+**Coordinate norms of an $\ell^1$ family are summable.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $\iota$ be any index type. For every $a \in \ell^1(\iota, \mathbb{K})$, the
+family of norms $(\|a_i\|)_{i \in \iota}$ is summable.
 
 ## Depends on
 

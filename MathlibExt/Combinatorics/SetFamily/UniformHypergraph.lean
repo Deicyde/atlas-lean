@@ -57,13 +57,18 @@ public theorem containsSubgraph_iff {V : Type*} [DecidableEq V]
       ∃ S : Finset V, S.card = m ∧ k ≤ (H.filter fun e => e ⊆ S).card :=
   Iff.rfl
 
-/-- A finite family is intersecting when every two *distinct* members meet.
-The distinctness is load-bearing: the singleton family `{∅}` is intersecting. -/
+/-- **Intersecting families.** Let $F$ be a finite family of finite subsets of a type $\alpha$.
+Then $F$ is intersecting when every two distinct members meet: for all $A, B \in F$ with
+$A \neq B$, the intersection $A \cap B$ is nonempty.
+
+The distinctness is load-bearing: the singleton family $\{\emptyset\}$ is intersecting. -/
 public def IsIntersecting {α : Type*} [DecidableEq α] (F : Finset (Finset α)) :
     Prop :=
   ∀ A ∈ F, ∀ B ∈ F, A ≠ B → (A ∩ B).Nonempty
 
-/-- Unfolding characterization of intersecting families. -/
+/-- **Characterization of intersecting families.** Let $F$ be a finite family of finite subsets
+of a type $\alpha$. Then $F$ is intersecting if and only if for all $A, B \in F$ with $A \neq B$,
+the intersection $A \cap B$ is nonempty. -/
 public theorem isIntersecting_iff {α : Type*} [DecidableEq α]
     (F : Finset (Finset α)) :
     IsIntersecting F ↔ ∀ A ∈ F, ∀ B ∈ F, A ≠ B → (A ∩ B).Nonempty :=

@@ -22,7 +22,7 @@ this is the flat-space value with the same sign convention as Mathlib's `Δ`.
 
 - [Hessian](../hessian/hessian.md)
 - [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
-- [Norm Sq Hessian](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources
 

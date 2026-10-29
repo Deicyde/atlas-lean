@@ -4,8 +4,8 @@ navigation: module
 
 # Matroid Characteristic Polynomial Log Concave AMR156 Problem0026
 
-- [Fin Rank](fin-rank.md)
-- [Char Poly Coeff](char-poly-coeff.md)
-- [Char Poly Abs Coeff](char-poly-abs-coeff.md)
-- [Characteristic Polynomial Log Concave](characteristic-polynomial-log-concave.md)
-- [Characteristic Polynomial Log Concave holds](characteristic-polynomial-log-concave-ho.md)
+- [Rank of a set in a matroid, as a natural number](fin-rank.md)
+- [Coefficients of the characteristic polynomial of a matroid](char-poly-coeff.md)
+- [Absolute coefficients of the characteristic polynomial of a matroid](char-poly-abs-coeff.md)
+- [Log-concavity of the characteristic polynomial of a matroid, statement](characteristic-polynomial-log-concave.md)
+- [Adiprasito–Huh–Katz theorem (Heron–Rota–Welsh conjecture)](characteristic-polynomial-log-concave-ho.md)

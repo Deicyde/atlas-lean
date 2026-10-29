@@ -6,23 +6,29 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.finiteDimensional_range_kernelOperator_of_separable
 ---
 
-# Finite Dimensional range kernel Operator of separable
+# Separable kernels give finite-rank integral operators
 
-A separable kernel gives an operator of finite rank: its range lies in the
-span of the finitely many functions `φ i`.
+**Separable kernels give finite-rank integral operators.** Let $s$ be a finite set of indices
+and, for $i \in s$, let $\varphi_i$ and $\psi_i$ be bounded continuous functions on $[0, 1]$. If a
+continuous kernel $k$ on $[0, 1] \times [0, 1]$ satisfies
+$k(x, y) = \sum_{i \in s} \varphi_i(x) \psi_i(y)$ for all $x, y \in [0, 1]$, then the range of the
+integral operator $K$ on the space of bounded continuous real functions on $[0, 1]$, given by
+$(Kf)(x) = \int_0^1 k(x, t) f(t) \, dt$, is a finite-dimensional real vector space.
+
+The proof shows that the range lies in the span of the functions $\varphi_i$, $i \in s$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Extend continuous](kernel-extend-continuous.md)
-- [Kernel Integrand](kernel-integrand.md)
-- [Kernel Operator apply](kernel-operator-apply.md)
+- [Clamped extension](kernel-extend.md)
+- [Continuity of the clamped extension](kernel-extend-continuous.md)
+- [Kernel integrand](kernel-integrand.md)
+- [Evaluation formula for the integral operator](kernel-operator-apply.md)
 
 ## Sources
 

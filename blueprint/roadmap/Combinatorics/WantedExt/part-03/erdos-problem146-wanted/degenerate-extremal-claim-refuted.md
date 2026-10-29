@@ -5,15 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem146Wanted.DegenerateExtremalClaim_refuted
 ---
 
-# Degenerate Extremal Claim refuted
+# Counterexample to the Erdős–Simonovits degeneracy conjecture
 
-Resolved false: Resolved false: an internal OpenAI model constructed a connected bipartite
-2-degenerate H with ex(n;H) >= c n^{3/2+epsilon} for all large n (OpenAI, Ten proofs, 2026),
-disproving the Erdős-Simonovits conjecture; erdosproblems.com/146 records it as disproved.
+**Counterexample to the Erdős–Simonovits degeneracy conjecture.** It is not true that for
+every finite simple graph $H$ and every natural number $r \ge 1$ such that $H$ is bipartite and
+$r$-degenerate (every nonempty set of vertices contains a vertex with at most $r$ neighbours in
+that set), the extremal number $\mathrm{ex}(n; H)$ (the largest number of edges of a simple
+graph on $n$ vertices containing no copy of $H$) is $O(n^{2 - 1/r})$ as $n \to \infty$.
+
+An internal OpenAI model constructed a connected bipartite $2$-degenerate graph $H$ with
+$\mathrm{ex}(n; H) \ge c n^{3/2 + \varepsilon}$ for all large $n$, for some constants $c > 0$ and
+$\varepsilon > 0$; erdosproblems.com/146 records the conjecture as disproved.
 
 ## Depends on
 
-- [Degenerate Extremal Claim](degenerate-extremal-claim.md)
+- [Erdős–Simonovits degeneracy conjecture (Erdős Problem 146)](degenerate-extremal-claim.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.self_mem_tupleRotationOrbit
 ---
 
-# Self mem tuple Rotation Orbit
+# A tuple lies in its own rotation orbit
 
-A tuple lies in its own rotation orbit.
+**A tuple lies in its own rotation orbit.** Every tuple $x$ of length $n$ with entries in a
+type $\alpha$ belongs to the rotation orbit of $x$.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

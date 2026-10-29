@@ -21,6 +21,6 @@ navigation: transparent
 - [Homogeneous Set Log Weight Erdos Problem191](homogeneous-set-log-weight-erdos-problem191-want/README.md)
 - [Honeycomb Connective Constant](honeycomb-connective-constant-wanted/README.md)
 - [Hypergraph Chromatic Edge Count Erdos Problem832](hypergraph-chromatic-edge-count-erdos-problem832/README.md)
-- [Hypergraph Coloring Shared](hypergraph-colorable.md)
+- [Colorable hypergraph](hypergraph-colorable.md)
 - [Hypergraph Size Ramsey Binomial AIMCombinatorics Problem52](hypergraph-size-ramsey-binomial-aimcombinatorics/README.md)
 - [Impartial Pebbling Game](impartial-pebbling-game-wanted/README.md)

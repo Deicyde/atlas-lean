@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperatorSpectrum.spectrum_shiftCLM
 ---
 
-# Spectrum shift CLM
+# Spectrum of the unilateral shift
 
-The spectrum of the unilateral shift is the closed unit ball.
+**Spectrum of the unilateral shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+The spectrum over $\mathbb{K}$ of the unilateral shift on $\ell^2(\mathbb{N}, \mathbb{K})$
+is the closed unit ball $\{\mu \in \mathbb{K} : |\mu| \le 1\}$ of $\mathbb{K}$.
 
 ## Depends on
 
-- [Shift CLM](../lp-shift-operator/shift-clm.md)
+- [The unilateral shift operator](../lp-shift-operator/shift-clm.md)
 
 ## Proof depends on
 
-- [Norm shift CLM](../lp-shift-operator/norm-shift-clm.md)
-- [Mem spectrum shift CLM of norm lt](mem-spectrum-shift-clm-of-norm-lt.md)
-- [Norm one le](norm-one-le.md)
+- [The unilateral shift has operator norm one](../lp-shift-operator/norm-shift-clm.md)
+- [The open unit ball lies in the spectrum of the unilateral shift](mem-spectrum-shift-clm-of-norm-lt.md)
+- [The identity on ℓ²(ℕ) has norm at most one](norm-one-le.md)
 
 ## Sources
 

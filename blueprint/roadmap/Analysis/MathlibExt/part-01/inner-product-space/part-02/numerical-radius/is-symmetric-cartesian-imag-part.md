@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.isSymmetric_cartesianImagPart
 ---
 
-# Is Symmetric cartesian Imag Part
+# The imaginary Cartesian part is symmetric
 
-The imaginary Cartesian part is symmetric.
+**The imaginary Cartesian part is symmetric.** For every bounded linear operator $T$ on a
+complex Hilbert space $H$ with adjoint $T^*$, the imaginary Cartesian part $B = (T - T^*)/(2i)$ is
+symmetric: $\langle Bx, y\rangle = \langle x, By\rangle$ for all $x, y \in H$.
 
 ## Depends on
 
-- [Cartesian Imag Part](cartesian-imag-part.md)
+- [Imaginary Cartesian part of an operator](cartesian-imag-part.md)
 
 ## Sources
 

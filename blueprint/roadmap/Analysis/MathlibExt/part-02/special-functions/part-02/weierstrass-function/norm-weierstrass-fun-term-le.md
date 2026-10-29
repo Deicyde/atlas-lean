@@ -6,10 +6,12 @@ proof: formalized
 lean: Real.norm_weierstrassFun_term_le
 ---
 
-# Norm weierstrass Fun term le
+# Termwise bound for the Weierstrass series
 
-Each term of the Weierstrass series is bounded in norm by the
-corresponding term `(1 / 4)ᵏ` of a convergent geometric series.
+**Termwise bound for the Weierstrass series.** For every natural number $k$ and every real
+number $x$, $|\cos(160^k x) / 4^k| \le (1/4)^k$.
+
+The right-hand side is the $k$-th term of a convergent geometric series.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperatorTrace.summable_greensEigenvalues
 ---
 
-# Summable greens Eigenvalues
+# The Green's eigenvalues are summable
 
-The canonical Green eigenvalues are summable over positive integers.
+**The Green's eigenvalues are summable.** The Green's eigenvalues
+$\lambda_k = 1/(k^2\pi^2)$, indexed by the positive integers $k$, form a summable family of real
+numbers.
 
 ## Depends on
 
-- [Greens Eigenvalue](../greens-operator/greens-eigenvalue.md)
+- [Eigenvalues of the Dirichlet Green's operator](../greens-operator/greens-eigenvalue.md)
 
 ## Sources
 

@@ -6,14 +6,14 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperatorTrace.integral_greensKernel_diag
 ---
 
-# Integral greens Kernel diag
+# Diagonal integral of the Green's kernel
 
-The integral of the Green's kernel along the diagonal:
-`∫₀¹ G(x, x) dx = 1 / 6`, since `G(x, x) = x * (1 - x)`.
+**Diagonal integral of the Green's kernel.** The Green's kernel $G$ on $[0, 1]$ satisfies
+$\int_0^1 G(x, x)\,dx = 1/6$, since $G(x, x) = x(1 - x)$.
 
 ## Depends on
 
-- [Greens Kernel](../greens-operator/greens-kernel.md)
+- [Green's kernel of the Dirichlet Laplacian on $(0, 1)$](../greens-operator/greens-kernel.md)
 
 ## Sources
 

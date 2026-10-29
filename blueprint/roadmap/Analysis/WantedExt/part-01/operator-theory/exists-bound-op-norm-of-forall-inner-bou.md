@@ -5,15 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.WeaklyBoundedOperatorFamilyBoundedWanted.exists_bound_opNorm_of_forall_inner_bounded
 ---
 
-# Weakly Bounded Operator Family Bounded Wanted
+# Weakly bounded sets of operators are bounded
 
-Let $H$ and $K$ be two Hilbert spaces. A set $Q$ of bounded linear transformations $H \to K$ is
-weakly bounded if for every $f\in H$ and $g\in K$, there exists a scalar $\alpha$ such that
-\[
-|\langle Af, g\rangle| \le \alpha \quad \text{for all } A\in Q.
-\]
-Prove that every weakly bounded set of bounded linear transformations between Hilbert spaces is
-bounded.
+**Weakly bounded sets of operators are bounded.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $H$ and $K$ be Hilbert spaces over $\mathbb{K}$, and let $Q$ be a set of
+bounded linear operators from $H$ to $K$. Suppose $Q$ is weakly bounded: for every $f \in H$
+and $g \in K$ there is a real number $\alpha$ such that $|\langle A f, g \rangle| \le \alpha$
+for all $A \in Q$. Then $Q$ is bounded in operator norm: there is a real number $M$ such that
+$\|A\| \le M$ for all $A \in Q$.
 
 ## Depends on
 

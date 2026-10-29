@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.isSelfAdjoint_frameOperatorInv
 ---
 
-# Is Self Adjoint frame Operator Inv
+# The inverse frame operator is self-adjoint
 
-The inverse of the frame operator is self-adjoint.
+**The inverse frame operator is self-adjoint.** Let $E$ be a Hilbert space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $(f_i)_{i \in \iota}$ be a finite frame in $E$
+with frame bounds $A$ and $B$. Then the inverse $S^{-1}$ of its frame operator $S$ is
+self-adjoint.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Frame Operator Inv](frame-operator-inv.md)
+- [Finite frame](is-frame.md)
+- [Inverse frame operator](frame-operator-inv.md)
 
 ## Proof depends on
 
-- [Frame Operator](frame-operator.md)
-- [Frame Operator comp frame Operator Inv](frame-operator-comp-frame-operator-inv.md)
-- [Is Self Adjoint frame Operator](is-self-adjoint-frame-operator.md)
+- [Frame operator](frame-operator.md)
+- [The inverse frame operator is a right inverse](frame-operator-comp-frame-operator-inv.md)
+- [The frame operator is self-adjoint](is-self-adjoint-frame-operator.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.VolterraSpace
 ---
 
-# Volterra Space
+# The domain of the Volterra operator
 
-The domain of the Volterra operator: bounded continuous real functions on `[0, 1]`.
+**The domain of the Volterra operator.** The space on which the Volterra operator acts is the
+space of bounded continuous real functions on $[0, 1]$, with the sup norm.
 
 ## Depends on
 

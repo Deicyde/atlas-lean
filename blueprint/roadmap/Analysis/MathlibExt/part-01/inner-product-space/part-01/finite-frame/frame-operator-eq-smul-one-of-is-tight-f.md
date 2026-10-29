@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.frameOperator_eq_smul_one_of_isTightFrame
 ---
 
-# Frame Operator eq smul one of is Tight Frame
+# Tight frames have scalar frame operator
 
-A tight frame, one whose bounds agree, has frame operator `A • 1`.
+**Tight frames have scalar frame operator.** Let $(f_i)_{i \in \iota}$, with $\iota$
+finite, be a frame in a Hilbert space $E$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ whose lower
+and upper frame bounds are both equal to $A$. Then its frame operator is $S = A \cdot I$, where $I$
+is the identity operator on $E$.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Frame Operator](frame-operator.md)
+- [Finite frame](is-frame.md)
+- [Frame operator](frame-operator.md)
 
 ## Proof depends on
 
-- [Lower](lower.md)
-- [Upper](upper.md)
-- [Inner frame Operator apply self](inner-frame-operator-apply-self.md)
-- [Is Self Adjoint frame Operator](is-self-adjoint-frame-operator.md)
+- [Lower frame inequality](lower.md)
+- [Upper frame inequality](upper.md)
+- [Quadratic form of the frame operator](inner-frame-operator-apply-self.md)
+- [The frame operator is self-adjoint](is-self-adjoint-frame-operator.md)
 
 ## Sources
 

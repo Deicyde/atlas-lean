@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.norm_le_two_mul_numericalRadius
 ---
 
-# Norm le two mul numerical Radius
+# Operator norm at most twice the numerical radius
 
-The operator norm is at most twice the numerical radius.
+**Operator norm at most twice the numerical radius.** For every bounded operator $T$ on a
+complex Hilbert space, $\|T\| \le 2\,w(T)$, where $\|T\|$ is the operator norm and $w(T)$ is the
+numerical radius of $T$.
 
 ## Depends on
 
-- [Numerical Radius](numerical-radius.md)
+- [Numerical radius](numerical-radius.md)
 
 ## Proof depends on
 
-- [Cartesian Imag Part](cartesian-imag-part.md)
-- [Cartesian Real Part](cartesian-real-part.md)
+- [Imaginary Cartesian part of an operator](cartesian-imag-part.md)
+- [Real Cartesian part of an operator](cartesian-real-part.md)
 - [Cartesian decomposition](cartesian-decomposition.md)
-- [Norm cartesian Imag Part le numerical Radius](norm-cartesian-imag-part-le-numerical-ra.md)
-- [Norm cartesian Real Part le numerical Radius](norm-cartesian-real-part-le-numerical-ra.md)
+- [Norm of the imaginary part is at most the numerical radius](norm-cartesian-imag-part-le-numerical-ra.md)
+- [Norm of the real part is at most the numerical radius](norm-cartesian-real-part-le-numerical-ra.md)
 
 ## Sources
 

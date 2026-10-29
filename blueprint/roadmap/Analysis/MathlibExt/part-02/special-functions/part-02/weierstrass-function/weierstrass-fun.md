@@ -5,10 +5,11 @@ statement: formalized
 lean: Real.weierstrassFun
 ---
 
-# Weierstrass Fun
+# The Weierstrass function
 
-The **Weierstrass function** `W(x) = ∑ₖ cos(160ᵏ x) / 4ᵏ`, defined as
-a `tsum` over the natural numbers.
+**The Weierstrass function.** The Weierstrass function is the function
+$W : \mathbb{R} \to \mathbb{R}$ given by $W(x) = \sum_{k \ge 0} \cos(160^k x) / 4^k$, the sum
+running over all natural numbers $k$.
 
 ## Depends on
 

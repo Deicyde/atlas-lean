@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.NonAveragingSetSizeErdosProblem186Wanted.nonAveragingMaxSizeQuarterExponent
 ---
 
-# Non Averaging Max Size Quarter Exponent
+# Erdős Problem 186 on non-averaging sets
 
-Erdős Problem 186: the largest non-averaging subset of `{1, …, N}` has size `N^{1/4 + o(1)}`:
-for every `ε > 0` and all large `N` its size lies between `N^{1/4 - ε}` and `N^{1/4 + ε}`.
+**Erdős Problem 186 on non-averaging sets.** For every $\varepsilon > 0$ and every sufficiently
+large $N$, the largest non-averaging subset of $\{1, \dots, N\}$ has size between
+$N^{1/4 - \varepsilon}$ and $N^{1/4 + \varepsilon}$: some non-averaging subset of
+$\{1, \dots, N\}$ has at least $N^{1/4 - \varepsilon}$ elements, and every non-averaging subset
+of $\{1, \dots, N\}$ has at most $N^{1/4 + \varepsilon}$ elements. In short, the largest
+non-averaging subset of $\{1, \dots, N\}$ has size $N^{1/4 + o(1)}$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Non Averaging](is-non-averaging.md)
+- [Non-averaging sets](is-non-averaging.md)
 
 ## Sources
 

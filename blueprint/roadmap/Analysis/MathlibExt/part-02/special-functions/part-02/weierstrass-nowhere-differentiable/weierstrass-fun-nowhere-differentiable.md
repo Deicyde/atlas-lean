@@ -6,18 +6,19 @@ proof: formalized
 lean: Real.weierstrassFun_nowhere_differentiable
 ---
 
-# Weierstrass's theorem
+# The Weierstrass function is nowhere differentiable
 
-**Weierstrass's theorem.** The Weierstrass function
-`W(x) = ∑ₖ cos(160ᵏ x) / 4ᵏ` is nowhere differentiable on `ℝ`: for every
-`c`, `W` fails to be differentiable at `c`. The proof uses
-`weierstrassFun_slope_lower_bound` to exhibit a sequence of points
-approaching `c` along which the difference quotients diverge to infinity,
-contradicting the convergence of the slope to a finite derivative.
+**The Weierstrass function is nowhere differentiable.** The Weierstrass function
+$W(x) = \sum_{k=0}^{\infty} \cos(160^k x) / 4^k$ is differentiable at no point of $\mathbb{R}$:
+for every real number $c$, $W$ is not differentiable at $c$.
+
+The proof uses the slope blow-up lemma to exhibit a sequence of points approaching $c$ along
+which the absolute values of the difference quotients of $W$ tend to infinity, contradicting
+the convergence of the slope to a finite derivative.
 
 ## Depends on
 
-- [Weierstrass Fun](../weierstrass-function/weierstrass-fun.md)
+- [The Weierstrass function](../weierstrass-function/weierstrass-fun.md)
 
 ## Proof depends on
 

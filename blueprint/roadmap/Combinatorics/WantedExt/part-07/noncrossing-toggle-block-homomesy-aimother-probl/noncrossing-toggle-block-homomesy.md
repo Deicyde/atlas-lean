@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.NoncrossingToggleBlockHomomesyAIMOtherProblem36Wanted.noncrossingToggleBlockHomomesy
 ---
 
-# Noncrossing Toggle Block Homomesy
+# Block-count homomesy claim for toggling noncrossing partitions
 
-AIM Dynamical algebraic combinatorics, Conjecture 5.8, as a claim: for `n ≥ 1` the number of
-blocks is homomesic under `σ` with average `(n + 1)/2`: whenever `σ^L P = P` with `L ≥ 1`, the
-block counts of `P, σ P, …, σ^{L-1} P` sum to `L (n + 1) / 2`.
+**Block-count homomesy claim for toggling noncrossing partitions.** Let $\sigma_n$ be the
+toggle composite on $n$ points and $\sigma_n^k$ its $k$-fold iterate. The claim states that for
+every $n \ge 1$, every noncrossing arc set $P$ on $n$ points and every $L \ge 1$ with
+$\sigma_n^L(P) = P$, twice the sum of the block counts of
+$P, \sigma_n(P), \dots, \sigma_n^{L-1}(P)$ equals $L(n + 1)$. That is, the number of blocks is
+homomesic under $\sigma_n$ with average $(n + 1)/2$.
 
 ## Depends on
 
@@ -17,11 +20,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arc Set](arc-set.md)
-- [Is Noncrossing Arc Set](is-noncrossing-arc-set.md)
-- [Block Count](block-count.md)
-- [Toggle Composite](toggle-composite.md)
+- [Arc sets](arc-set.md)
+- [Noncrossing arc sets](is-noncrossing-arc-set.md)
+- [Block count](block-count.md)
+- [Toggle composite](toggle-composite.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.NoncrossingToggleBlockHomomesyAIMOtherProblem36Wanted](../../../../../sources/v2/WantedExt.md)
+- AIM workshop Dynamical algebraic combinatorics, pre-workshop document, §5.4, Conjecture 5.8.

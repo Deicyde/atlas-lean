@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.aztecDragonCount
 ---
 
-# Aztec Dragon Count
+# Propp's Aztec dragon count
 
-Propp's Problem 15, in the form of Ciucu's (7.1) and Theorem 7.1 at `a = 1`: for every `n` the
-number of perfect matchings of the Aztec diamond graph `AD_{2n}` with the periodic weight `wt_A`
-(the dragon graph) is `2^{n(n+1)}`.
+**Propp's Aztec dragon count.** The statement that for every natural number $n$ the dragon
+graph of order $n$ (the spanning subgraph of the Aztec diamond graph $AD_{2n}$ that keeps exactly
+the edges of weight $1$ under Ciucu's periodic weight $\mathrm{wt}_A$) has exactly $2^{n(n+1)}$
+perfect matchings. This is Propp's Problem 15 in the form of Ciucu's (7.1) and Theorem 7.1 at
+$a = 1$.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Aztec Cell](aztec-cell.md)
-- [Dragon Graph](dragon-graph.md)
+- [Cells of the Aztec diamond](aztec-cell.md)
+- [The Aztec dragon graph](dragon-graph.md)
 
 ## Sources
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Nonarchimedean
 
-- [Is Nonarchimedean iff nat Cast le one](is-nonarchimedean-iff-nat-cast-le-one.md)
-- [Is Nonarchimedean of nat Cast le one](is-nonarchimedean-of-nat-cast-le-one.md)
-- [Is Nonarchimedean iff nat Cast le one of pos](is-nonarchimedean-iff-nat-cast-le-one-of.md)
+- [Nonarchimedean criterion for absolute values](is-nonarchimedean-iff-nat-cast-le-one.md)
+- [Absolute values bounded by one on the natural numbers are nonarchimedean](is-nonarchimedean-of-nat-cast-le-one.md)
+- [Nonarchimedean criterion using positive integers](is-nonarchimedean-iff-nat-cast-le-one-of.md)

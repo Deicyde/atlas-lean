@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.kernelIntegrand_continuous
 ---
 
-# Kernel Integrand continuous
+# Continuity of the kernel integrand in $t$
 
-The integrand is continuous in `t`.
+**Continuity of the kernel integrand in $t$.** Let $\pi(t) = \max(0, \min(1, t))$ clamp a real
+number $t$ to $[0, 1]$. For every continuous kernel $k$ on $[0, 1] \times [0, 1]$, every bounded
+continuous function $f$ on $[0, 1]$ and every $x \in [0, 1]$, the function
+$t \mapsto k(x, \pi(t)) \, f(\pi(t))$ is continuous on $\mathbb{R}$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Integrand](kernel-integrand.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Kernel integrand](kernel-integrand.md)
 
 ## Proof depends on
 
-- [Continuous kernel Integrand uncurry](continuous-kernel-integrand-uncurry.md)
+- [Joint continuity of the kernel integrand](continuous-kernel-integrand-uncurry.md)
 
 ## Sources
 

@@ -6,11 +6,13 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.norm_hasEigenvalue_le
 ---
 
-# Norm has Eigenvalue le
+# Eigenvalues are bounded by the operator norm
 
-The norm of an eigenvalue of a bounded linear operator is at most the
-operator norm: if `T x = μ • x` for a nonzero vector `x`, then
-`‖μ‖ * ‖x‖ = ‖T x‖ ≤ ‖T‖ * ‖x‖`.
+**Eigenvalues are bounded by the operator norm.** Let $T$ be a bounded linear operator on an
+inner product space over $\mathbb{R}$ or $\mathbb{C}$. Every eigenvalue $\mu$ of $T$ satisfies
+$|\mu| \le \|T\|$.
+
+Indeed, if $Tx = \mu x$ with $x \neq 0$, then $|\mu| \, \|x\| = \|Tx\| \le \|T\| \, \|x\|$.
 
 ## Depends on
 

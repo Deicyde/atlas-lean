@@ -6,9 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Module.DualDistanceFormula.norm_mkQL_le
 ---
 
-# Norm mk QL le
+# The quotient map has norm at most one
 
-The quotient map has operator norm at most `1`.
+**The quotient map has norm at most one.** Let $E$ be a normed space over $\mathbb{K}$,
+where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, let $S$ be a linear subspace of $E$, and give
+$E/S$ the quotient seminorm. Then the quotient map $q \colon E \to E/S$, a continuous linear map,
+has operator norm $\|q\| \le 1$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm mk QL apply](norm-mk-ql-apply.md)
+- [Quotient seminorm equals distance to the subspace](norm-mk-ql-apply.md)
 
 ## Sources
 

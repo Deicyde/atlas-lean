@@ -6,9 +6,10 @@ proof: formalized
 lean: BooleanCube.abs_cubeVal
 ---
 
-# Abs cube Val
+# Coordinate signs have absolute value one
 
-Every coordinate sign has absolute value one.
+**Coordinate signs have absolute value one.** For every Boolean value $b$, its sign $\sigma(b)$,
+which is $1$ for true and $-1$ for false, satisfies $|\sigma(b)| = 1$.
 
 ## Depends on
 

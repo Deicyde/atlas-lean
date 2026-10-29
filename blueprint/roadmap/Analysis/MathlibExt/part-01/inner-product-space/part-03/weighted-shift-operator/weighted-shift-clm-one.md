@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.weightedShiftCLM_one
 ---
 
-# Weighted Shift CLM one
+# The weighted forward shift with unit weights is the unilateral shift
 
-With every weight equal to `1`, the weighted forward operator is the canonical forward shift.
+**The weighted forward shift with unit weights is the unilateral shift.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$. The weighted forward shift operator on
+$\ell^2(\mathbb{N}, \mathbb{K})$ whose weights are all equal to $1$ is the unilateral forward
+shift on $\ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Shift CLM](../../part-02/lp-shift-operator/shift-clm.md)
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [The unilateral shift operator](../../part-02/lp-shift-operator/shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Weighted Shift CLM apply](weighted-shift-clm-apply.md)
-- [Weighted Shift Fun](weighted-shift-fun.md)
+- [Coordinates of the weighted forward shift](weighted-shift-clm-apply.md)
+- [Weighted forward shift of a sequence](weighted-shift-fun.md)
 
 ## Sources
 

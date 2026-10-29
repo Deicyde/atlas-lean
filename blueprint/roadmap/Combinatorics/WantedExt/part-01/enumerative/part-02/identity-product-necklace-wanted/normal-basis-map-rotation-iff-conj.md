@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.normalBasisMap_rotation_iff_conj
 ---
 
-# Normal Basis Map rotation iff conj
+# Rotation orbits correspond to conjugate elements
 
-Corollary 29: with `Φ` as in Lemma 28, two tuples lie in the same rotation orbit if and
-only if their images are conjugate (have the same minimal polynomial over `F`).
+**Rotation orbits correspond to conjugate elements.** Let $K$ be a finite field that is an
+algebra over a finite field $F$, let $q = |F|$ and $n = [K : F]$, and let $\beta \in K$ be such
+that $\beta, \beta^q, \dots, \beta^{q^{n-1}}$ are linearly independent over $F$. Define
+$\Phi : F^n \to K$ by $\Phi(a_0, \dots, a_{n-1}) = \sum_{i=0}^{n-1} a_i \beta^{q^i}$. Then for all
+$a, b \in F^n$, the tuple $b$ lies in the rotation orbit of $a$ if and only if $\Phi(a)$ and
+$\Phi(b)$ have the same minimal polynomial over $F$.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

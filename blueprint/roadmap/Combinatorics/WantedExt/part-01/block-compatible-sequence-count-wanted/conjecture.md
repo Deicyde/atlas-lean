@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.conjecture
 ---
 
-# Conjecture
+# Many block-compatible sequences
 
-[OWR-14299518-002(2)] At least `exp(c√n log n)` block-size sequences are
-realizable for all large `n`.
+**Many block-compatible sequences.** The statement that there are a real number $c > 0$ and a
+natural number $N$ such that for every $n \ge N$ there is a finite set of at least
+$\exp(c \sqrt{n} \log n)$ distinct finite sequences of natural numbers, each of which is
+block-compatible for $n$. Here $\log$ is the natural logarithm.
 
 ## Depends on
 
@@ -16,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Block Compatible](block-compatible.md)
+- [Block-compatible sequences](block-compatible.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BlockCompatibleSequenceCountWanted](../../../../../sources/v2/WantedExt.md)
+- OWR-14299518-002, question (2).

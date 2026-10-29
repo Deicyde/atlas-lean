@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.IsKSunflowerFree
 ---
 
-# Is KSunflower Free
+# Sunflower-free families
 
-`F` contains no `k`-sunflower.
+**Sunflower-free families.** Let $n$ and $k$ be natural numbers. A family $F$ of subsets of
+$\{0, \dots, n-1\}$ is $k$-sunflower-free if it does not contain a $k$-sunflower.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains KSunflower](contains-ksunflower.md)
+- [Families containing a sunflower](contains-ksunflower.md)
 
 ## Sources
 

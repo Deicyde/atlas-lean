@@ -8,10 +8,13 @@ lean: MathlibExt.Analysis.Normed.Operator.Compact.RieszSchauder.finiteDimensiona
 
 # Riesz–Schauder theorem, kernel part
 
-**Riesz–Schauder theorem, kernel part.** For a compact operator `T` on a Banach
-space and `μ ≠ 0`, the kernel of `μ • 1 - T` is finite-dimensional. The proof
-is the standard restriction trick: `T` preserves the kernel, and there it agrees
-with `μ • 1`, so the identity on the kernel is compact.
+**Riesz–Schauder theorem, kernel part.** Let $E$ be a Banach space over $\mathbb{R}$ or
+$\mathbb{C}$, let $T : E \to E$ be a compact bounded linear operator, let $\mu \neq 0$ be a
+scalar and let $I$ be the identity of $E$. Then the kernel of $\mu I - T$ is
+finite-dimensional.
+
+The proof is the standard restriction trick: $T$ maps the kernel of $\mu I - T$ into itself and
+agrees with $\mu I$ there, so the identity of the kernel is a compact operator.
 
 ## Depends on
 

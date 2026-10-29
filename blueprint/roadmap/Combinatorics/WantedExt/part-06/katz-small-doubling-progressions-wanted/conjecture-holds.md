@@ -5,20 +5,24 @@ statement: formalized
 lean: MathlibExt.Combinatorics.KatzSmallDoublingProgressionsWanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Sets of small doubling contain many arithmetic progressions
 
-Resolved true: Resolved true: on the AIM additive-combinatorics list B. Green answers Katz's
-Problem 1.5: a large subset of A is Freiman-isomorphic to a dense subset of Z/pZ (Ruzsa's
-lemma), and Szemerédi's theorem with Varnavides averaging gives >>_{k,C} |A|^2 k-term
-progressions. The d = 0 pairs counted by the Lean statement cover small sets. Source: AIM
-workshop problem list, Additive combinatorics (additivecomb.pdf), Problem 1.5 (N. Katz) and
-remark by B. Green, https://aimath.org/WWN/additivecomb/additivecomb.pdf. Moved from
-`OpenConjectures/Combinatorics/KatzSmallDoublingProgressions`.
+**Sets of small doubling contain many arithmetic progressions.** For a finite set
+$A \subseteq \mathbb{Z}$ write $A + A = \{a + b : a, b \in A\}$. For every natural number $k \ge 3$
+and every real number $C \ge 2$ there is a real number $c > 0$ such that every finite set
+$A \subseteq \mathbb{Z}$ with $|A + A| < C|A|$ has at least $c|A|^2$ pairs $(a, d)$ of integers
+with $a + i d \in A$ for all natural numbers $i < k$.
+
+This answers Katz's Problem 1.5 affirmatively. On the AIM additive-combinatorics list B. Green
+observes that a large subset of $A$ is Freiman-isomorphic to a dense subset of
+$\mathbb{Z}/p\mathbb{Z}$ (Ruzsa's lemma), and Szemerédi's theorem with Varnavides averaging gives
+$\gg_{k,C} |A|^2$ $k$-term progressions. The pairs with $d = 0$ counted here cover small sets.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Katz's question on progressions in sets of small doubling](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KatzSmallDoublingProgressionsWanted](../../../../../sources/v2/WantedExt.md)
+- AIM workshop problem list, Additive combinatorics (additivecomb.pdf), Problem 1.5 (N. Katz) and remark by B. Green, https://aimath.org/WWN/additivecomb/additivecomb.pdf. Moved from `OpenConjectures/Combinatorics/KatzSmallDoublingProgressions`.

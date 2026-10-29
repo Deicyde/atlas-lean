@@ -4,6 +4,6 @@ navigation: module
 
 # Convex Position Higher Dimensions Erdos Problem651
 
-- [Convex Position Threshold](convex-position-threshold.md)
-- [Convex Position Threshold Exponential](convex-position-threshold-exponential.md)
-- [Convex Position Threshold Exponential refuted](convex-position-threshold-exponential-re.md)
+- [Convex position threshold](convex-position-threshold.md)
+- [Erdős Problem 651: exponential growth of convex position thresholds](convex-position-threshold-exponential.md)
+- [Erdős Problem 651 has a negative answer](convex-position-threshold-exponential-re.md)

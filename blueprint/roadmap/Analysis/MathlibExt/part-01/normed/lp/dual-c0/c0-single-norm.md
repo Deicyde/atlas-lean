@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Single_norm
 ---
 
-# C0 Single norm
+# Norm of a sequence supported at one index
 
-The norm of `c0Single i a` is `‖a‖`.
+**Norm of a sequence supported at one index.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $\iota$ be an index type. For $i \in \iota$ and $a \in \mathbb{K}$, the
+element of $c_0(\iota, \mathbb{K})$ that is $a$ at $i$ and $0$ elsewhere has norm $\|a\|$.
 
 ## Depends on
 
-- [C0](c0.md)
-- [C0 Single](c0-single.md)
+- [The sequence space $c_0$](c0.md)
+- [Sequence supported at one index](c0-single.md)
 
 ## Proof depends on
 
-- [C0 To Lp](c0-to-lp.md)
-- [C0 norm](c0-norm.md)
+- [Inclusion of $c_0$ in $\ell^\infty$](c0-to-lp.md)
+- [The $c_0$ norm is the supremum norm](c0-norm.md)
 
 ## Sources
 

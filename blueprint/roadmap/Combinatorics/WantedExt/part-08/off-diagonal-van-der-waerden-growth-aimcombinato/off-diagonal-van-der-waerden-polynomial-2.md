@@ -20,7 +20,7 @@ https://doi.org/10.1017/fmp.2022.12.
 
 ## Depends on
 
-- [Off Diagonal Van Der Waerden Polynomial](off-diagonal-van-der-waerden-polynomial.md)
+- [Polynomial growth of the off-diagonal van der Waerden numbers (claim)](off-diagonal-van-der-waerden-polynomial.md)
 
 ## Sources
 

@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HamiltonicityGameCriticalBiasOWR1782Problem013Wanted.MakerWinsBreakerFirst
 ---
 
-# Maker Wins Breaker First
+# Maker wins the biased game with Breaker moving first
 
-Maker has a winning strategy in the `(1 : b)` game on `board` in which Breaker moves first, the
-convention of both sources (Krivelevich, Section 1: "We assume that Breaker moves first";
-Chvátal-Erdős, Section 1: "with the Breaker going first"): whichever `min b |board|` elements
-Breaker claims in his first move, Maker can force a win from the resulting position.
+**Maker wins the biased game with Breaker moving first.** For a finite board $X$, a bias
+$b \in \mathbb{N}$ and a target property of Maker's claimed set, Maker wins the $(1 : b)$
+Maker-Breaker game on $X$ in which Breaker moves first when, for every set $F \subseteq X$ of
+exactly $\min(b, |X|)$ elements that Breaker may claim in his first move, Maker can force a win
+when it is his turn at the position where he has claimed nothing and Breaker has claimed $F$.
+
+Breaker moving first is the convention of both sources (Krivelevich, Section 1: "We assume that
+Breaker moves first"; Chvátal-Erdős, Section 1: "with the Breaker going first").
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maker Can Force](maker-can-force.md)
+- [Maker can force a win in the biased Maker-Breaker game](maker-can-force.md)
 
 ## Sources
 

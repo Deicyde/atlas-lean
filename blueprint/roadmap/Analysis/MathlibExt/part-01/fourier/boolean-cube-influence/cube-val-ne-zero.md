@@ -6,9 +6,10 @@ proof: formalized
 lean: BooleanCube.cubeVal_ne_zero
 ---
 
-# Cube Val ne zero
+# Coordinate signs are nonzero
 
-Coordinate signs are nonzero.
+**Coordinate signs are nonzero.** For every Boolean value $b$, its sign $\sigma(b)$ (equal
+to $1$ for true and $-1$ for false) is nonzero.
 
 ## Depends on
 

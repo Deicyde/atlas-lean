@@ -17,13 +17,13 @@ finite derivative at `c`.
 
 ## Depends on
 
-- [Weierstrass Fun](../weierstrass-function/weierstrass-fun.md)
+- [The Weierstrass function](../weierstrass-function/weierstrass-fun.md)
 
 ## Proof depends on
 
-- [Cosine oscillation (scaled form, as in the book)](../../part-01/cosine-oscillation/exists-cos-oscillation.md)
+- [Cosine oscillation (scaled form)](../../part-01/cosine-oscillation/exists-cos-oscillation.md)
 - [Reverse triangle inequality, three terms](reverse-triangle-three.md)
-- [Summable weierstrass Fun terms](../weierstrass-function/summable-weierstrass-fun-terms.md)
+- [Summability of the Weierstrass series](../weierstrass-function/summable-weierstrass-fun-terms.md)
 
 ## Sources
 

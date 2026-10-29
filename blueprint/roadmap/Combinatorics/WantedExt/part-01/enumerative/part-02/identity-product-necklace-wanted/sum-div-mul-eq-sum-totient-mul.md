@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_div_mul_eq_sum_totient_mul
 ---
 
-# Sum div mul eq sum totient mul
+# Totient-weighted divisor sum identity
 
-Lemma 9: if `g(k) = ∑_{d ∣ k} f(d)` for all `k ≥ 1`, then
-`∑_{d ∣ k} (k/d) f(d) = ∑_{d ∣ k} φ(k/d) g(d)` for all `k ≥ 1`.
+**Totient-weighted divisor sum identity.** Let $f$ and $g$ be functions from the natural
+numbers to the rational numbers such that $g(k) = \sum_{d \mid k} f(d)$ for every positive
+integer $k$, where sums over $d \mid k$ run over the positive divisors $d$ of $k$. Then for
+every positive integer $k$,
+
+$$\sum_{d \mid k} \frac{k}{d} \, f(d) = \sum_{d \mid k} \varphi\left(\frac{k}{d}\right) g(d),$$
+
+where $\varphi$ is Euler's totient function.
 
 ## Depends on
 

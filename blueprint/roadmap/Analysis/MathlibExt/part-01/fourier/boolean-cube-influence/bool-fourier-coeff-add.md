@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_add
 ---
 
-# Bool Fourier Coeff add
+# Additivity of Fourier coefficients
 
-Fourier coefficients are additive.
+**Additivity of Fourier coefficients.** For all real-valued functions $f$ and $g$ on the
+Boolean cube in $n$ coordinates and every set $S$ of the $n$ coordinates, the Fourier coefficient
+of $f + g$ at $S$ is the sum of the Fourier coefficients of $f$ and $g$ at $S$:
+$\widehat{f + g}(S) = \hat f(S) + \hat g(S)$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ Fourier coefficients are additive.
 
 ## Proof depends on
 
-- [Bool Fourier Coeff eq expect](bool-fourier-coeff-eq-expect.md)
+- [Fourier coefficients as averages](bool-fourier-coeff-eq-expect.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
 
 ## Sources

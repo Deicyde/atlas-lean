@@ -5,10 +5,13 @@ statement: formalized
 lean: SetFamily.IsIntersecting
 ---
 
-# Is Intersecting
+# Intersecting families
 
-A finite family is intersecting when every two *distinct* members meet.
-The distinctness is load-bearing: the singleton family `{∅}` is intersecting.
+**Intersecting families.** Let $F$ be a finite family of finite subsets of a type $\alpha$.
+Then $F$ is intersecting when every two distinct members meet: for all $A, B \in F$ with
+$A \neq B$, the intersection $A \cap B$ is nonempty.
+
+The distinctness is load-bearing: the singleton family $\{\emptyset\}$ is intersecting.
 
 ## Depends on
 

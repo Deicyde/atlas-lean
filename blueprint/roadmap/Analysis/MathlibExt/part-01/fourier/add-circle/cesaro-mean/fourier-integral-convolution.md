@@ -6,12 +6,19 @@ proof: formalized
 lean: AddCircle.fourier_integral_convolution
 ---
 
-# Fourier integral convolution
+# Convolution of a function with a Fourier character
 
-Convolution-with-a-mode identity: for integrable `f`,
-`∫ fourier n t • f(x - t) dt = ĉ_n(f) • fourier n x`. This says that the
-`n`-th term of the partial Fourier sum at `x` is the convolution of `f` with the
-Fourier character `fourier n`.
+**Convolution of a function with a Fourier character.** Let $T > 0$, let
+$f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ be integrable with respect to the Haar probability
+measure $dt$ on the circle, for $n \in \mathbb{Z}$ let $e_n(x) = e^{2\pi i n x / T}$ be the
+$n$-th Fourier character, and let $\hat f(n) = \int_{\mathbb{R}/T\mathbb{Z}} e_{-n}(t)\, f(t)\, dt$
+be the $n$-th Fourier coefficient of $f$. Then for every $n \in \mathbb{Z}$ and every
+$x \in \mathbb{R}/T\mathbb{Z}$,
+
+$$\int_{\mathbb{R}/T\mathbb{Z}} e_n(t)\, f(x - t)\, dt = \hat f(n)\, e_n(x).$$
+
+Thus the $n$-th term of the partial Fourier sum of $f$ at $x$ is the convolution of $f$ with
+the Fourier character $e_n$.
 
 ## Depends on
 
@@ -19,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fourier sub eq](fourier-sub-eq.md)
+- [Fourier characters at a difference](fourier-sub-eq.md)
 
 ## Sources
 

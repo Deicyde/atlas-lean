@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Eval
 ---
 
-# C0 Eval
+# Coordinate evaluation on $c_0$
 
-Evaluation at `i`, as a continuous linear functional on `c₀`.
+**Coordinate evaluation on $c_0$.** Let $\mathbb{K}$ be the real or complex field and $\iota$
+an index type. For $i \in \iota$, evaluation at $i$ is the continuous linear functional
+$x \mapsto x_i$ on $c_0(\iota, \mathbb{K})$.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Proof depends on
 
-- [C0 apply norm le](c0-apply-norm-le.md)
+- [Coordinates are bounded by the norm in $c_0$](c0-apply-norm-le.md)
 
 ## Sources
 

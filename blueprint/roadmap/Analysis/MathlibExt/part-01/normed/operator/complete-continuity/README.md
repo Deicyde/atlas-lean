@@ -5,5 +5,5 @@ navigation: module
 # Complete Continuity
 
 - [Complete continuity of compact operators](tendsto-apply-of-is-compact-operator-of.md)
-- [Weakly-null special case](tendsto-apply-of-is-compact-operator-of-2.md)
-- [Tendsto apply of is Compact Operator of tendsto weak Space](tendsto-apply-of-is-compact-operator-of-3.md)
+- [Compact operators send weakly null sequences to norm null sequences](tendsto-apply-of-is-compact-operator-of-2.md)
+- [Complete continuity of compact operators, weak-topology form](tendsto-apply-of-is-compact-operator-of-3.md)

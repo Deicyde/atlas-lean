@@ -6,18 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.not_injective_weightedShiftCLM
 ---
 
-# Not injective weighted Shift CLM
+# A vanishing weight makes the weighted shift non-injective
 
-The weighted forward shift is not injective when some weight vanishes:
-it kills the corresponding standard basis vector.
+**A vanishing weight makes the weighted shift non-injective.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$ and let $w : \mathbb{N} \to \mathbb{K}$ be weights with bounded
+moduli. If $w_n = 0$ for some $n$, then the weighted forward shift $S_w$ on
+$\ell^2(\mathbb{N}, \mathbb{K})$ is not injective.
+
+Indeed, $S_w$ sends the $n$-th standard basis vector to $0$.
 
 ## Depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Weighted Shift CLM single](weighted-shift-clm-single.md)
+- [The weighted forward shift on basis vectors](weighted-shift-clm-single.md)
 
 ## Sources
 

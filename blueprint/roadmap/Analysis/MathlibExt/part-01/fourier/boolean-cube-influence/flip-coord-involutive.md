@@ -6,18 +6,20 @@ proof: formalized
 lean: BooleanCube.flipCoord_involutive
 ---
 
-# Flip Coord involutive
+# Flipping a coordinate is an involution
 
-Flipping a fixed coordinate is an involution of the cube.
+**Flipping a coordinate is an involution.** For every $n \in \mathbb{N}$ and every coordinate
+$i \in \{0, \dots, n-1\}$, the map $x \mapsto x^{\oplus i}$ on the Boolean cube of dimension $n$,
+which flips the $i$-th coordinate, is an involution: applying it twice gives the identity.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Flip Coord](flip-coord.md)
+- [Coordinate flip on the Boolean cube](flip-coord.md)
 
 ## Proof depends on
 
-- [Flip Coord flip Coord](flip-coord-flip-coord.md)
+- [Flipping a coordinate twice](flip-coord-flip-coord.md)
 
 ## Sources
 

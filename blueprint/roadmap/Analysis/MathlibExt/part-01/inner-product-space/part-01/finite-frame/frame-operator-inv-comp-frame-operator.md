@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.frameOperatorInv_comp_frameOperator
 ---
 
-# Frame Operator Inv comp frame Operator
+# The inverse frame operator is a left inverse
 
-The inverse of the frame operator composed with it is the identity.
+**The inverse frame operator is a left inverse.** Let $(f_i)_{i \in \iota}$, with $\iota$
+finite, be a frame with bounds $A$ and $B$ in a Hilbert space $E$ over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$, with frame operator $S$ and inverse frame operator $S^{-1}$. Then
+$S^{-1} \circ S$ is the identity operator on $E$.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Frame Operator](frame-operator.md)
-- [Frame Operator Inv](frame-operator-inv.md)
+- [Finite frame](is-frame.md)
+- [Frame operator](frame-operator.md)
+- [Inverse frame operator](frame-operator-inv.md)
 
 ## Proof depends on
 
-- [Is Unit frame Operator](is-unit-frame-operator.md)
+- [The frame operator of a frame is invertible](is-unit-frame-operator.md)
 
 ## Sources
 

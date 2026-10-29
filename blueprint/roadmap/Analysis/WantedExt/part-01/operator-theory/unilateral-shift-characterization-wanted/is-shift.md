@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.UnilateralShiftCharacterizationWanted.IsShift
 ---
 
-# Is Shift
+# Unilateral shift operator
 
-`T` is a unilateral shift: it maps some Hilbert basis `b` by `b n ↦ b (n + 1)`.
+**Unilateral shift operator.** A bounded linear operator $T$ on a complex inner product
+space $H$ is a unilateral shift if there is a Hilbert basis $(b_n)_{n \in \mathbb{N}}$ of $H$
+such that $T b_n = b_{n+1}$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 

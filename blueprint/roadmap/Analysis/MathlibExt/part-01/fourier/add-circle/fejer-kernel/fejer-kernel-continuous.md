@@ -6,14 +6,15 @@ proof: formalized
 lean: AddCircle.fejerKernel_continuous
 ---
 
-# Fejer Kernel continuous
+# Continuity of the Fejér kernel
 
-The Fejér kernel `K_N` is continuous on `AddCircle T`, being a finite
-linear combination of continuous Fourier modes.
+**Continuity of the Fejér kernel.** Let $T > 0$. For every natural number $N$, the $N$-th
+Fejér kernel $K_N$ is a continuous function from the circle $\mathbb{R}/T\mathbb{Z}$ to
+$\mathbb{C}$.
 
 ## Depends on
 
-- [Fejer Kernel](fejer-kernel.md)
+- [The Fejér kernel](fejer-kernel.md)
 
 ## Sources
 

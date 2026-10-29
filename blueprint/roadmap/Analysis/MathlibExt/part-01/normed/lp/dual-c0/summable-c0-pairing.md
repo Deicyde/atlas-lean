@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.summable_c0Pairing
 ---
 
-# Summable c0 Pairing
+# Summability of the $\ell^1$–$c_0$ pairing
 
-The series defining the pairing of `a ∈ ℓ¹` with `x ∈ c₀` is summable.
+**Summability of the $\ell^1$–$c_0$ pairing.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
+and let $\iota$ be a type. For every $a \in \ell^1(\iota, \mathbb{K})$ and
+$x \in c_0(\iota, \mathbb{K})$, the family $(a_i x_i)_{i \in \iota}$ is (unconditionally)
+summable.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Proof depends on
 
-- [C0 apply norm le](c0-apply-norm-le.md)
-- [Summable norm lp one](summable-norm-lp-one.md)
+- [Coordinates are bounded by the norm in $c_0$](c0-apply-norm-le.md)
+- [Coordinate norms of an $\ell^1$ family are summable](summable-norm-lp-one.md)
 
 ## Sources
 

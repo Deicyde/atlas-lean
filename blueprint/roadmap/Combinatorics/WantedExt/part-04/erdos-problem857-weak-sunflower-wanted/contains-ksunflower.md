@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.ContainsKSunflower
 ---
 
-# Contains KSunflower
+# Families containing a sunflower
 
-`F` contains a `k`-sunflower: `k` members whose pairwise intersections are all equal (the same
-definition as in `SunflowerFreeFamilyExponentialBound`).
+**Families containing a sunflower.** Let $n$ and $k$ be natural numbers. A family $F$ of
+subsets of $\{0, \dots, n-1\}$ contains a $k$-sunflower if some subfamily $T \subseteq F$ with
+exactly $k$ members satisfies $A \cap B = C \cap D$ for all $A, B, C, D \in T$ with $A \ne B$ and
+$C \ne D$, that is, all pairwise intersections of distinct members of $T$ are equal.
 
 ## Depends on
 

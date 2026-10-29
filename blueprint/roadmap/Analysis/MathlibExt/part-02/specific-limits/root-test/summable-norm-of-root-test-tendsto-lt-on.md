@@ -8,8 +8,9 @@ lean: summable_norm_of_root_test_tendsto_lt_one
 
 # Cauchy's root test, absolute convergence case
 
-**Cauchy's root test, absolute convergence case.** If `‖f n‖ ^ (1 / n)` tends
-to a limit `l < 1`, then `∑ n, ‖f n‖` converges.
+**Cauchy's root test, absolute convergence case.** Let $f : \mathbb{N} \to \alpha$ be a
+sequence in a normed additive commutative group $\alpha$. If $\|f(n)\|^{1/n}$ tends to a real
+limit $l$ with $l < 1$ as $n \to \infty$, then the series $\sum_n \|f(n)\|$ converges.
 
 ## Depends on
 

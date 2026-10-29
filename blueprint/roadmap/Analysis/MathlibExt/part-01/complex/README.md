@@ -23,7 +23,7 @@ article_id: af_b439f328febf446b8a0b8a85
 - [Mittag Leffler](part-01/mittag-leffler/README.md)
 - [Normal Convergence](part-01/normal-convergence/README.md)
 - [Normal Families](part-01/normal-families/README.md)
-- [Periodic Entire](part-01/eq-const-of-periodic-one-of-norm-le-exp.md)
+- [A $1$-periodic entire function bounded by $C e^{|\operatorname{Im} s|}$ is constant](part-01/eq-const-of-periodic-one-of-norm-le-exp.md)
 - [Rectilinear Cycle](part-01/rectilinear-cycle/README.md)
 - [Riemann mapping theorem](part-01/riemann-mapping-normalized.md)
 

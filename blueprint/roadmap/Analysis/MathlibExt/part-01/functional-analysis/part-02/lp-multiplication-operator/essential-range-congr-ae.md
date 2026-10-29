@@ -6,13 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.essentialRange_congr_ae
 ---
 
-# Essential Range congr ae
+# The essential range is invariant under almost-everywhere equality
 
-The essential range depends only on the almost-everywhere class of `φ`.
+**The essential range is invariant under almost-everywhere equality.** Let $\mu$ be a
+measure on a measurable space $\alpha$ and let $\varphi, \psi : \alpha \to \mathbb{C}$. If
+$\varphi = \psi$ $\mu$-almost everywhere, then $\varphi$ and $\psi$ have the same essential range
+with respect to $\mu$.
 
 ## Depends on
 
-- [Essential Range](essential-range.md)
+- [Essential range](essential-range.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.n_pos_of_lt
 ---
 
-# N pos of lt
+# A partition of a nondegenerate interval has a subinterval
 
-If `a < b`, then any partition of `[a, b]` has at least one subinterval,
-i.e. `0 < P.n`.
+**A partition of a nondegenerate interval has a subinterval.** If $a < b$, then every
+partition $a = x_0 < x_1 < \dots < x_n = b$ of $[a, b]$ has at least one subinterval, that is,
+$n \ge 1$.
 
 ## Depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

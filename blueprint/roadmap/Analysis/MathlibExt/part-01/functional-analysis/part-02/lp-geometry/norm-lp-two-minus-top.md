@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.norm_lpTwoMinus_top
 ---
 
-# Norm lp Two Minus top
+# The $\ell^\infty$ norm of $(1, -1)$
 
-The norm of `(1, -1)` in `PiLp ∞ (Fin 2 → ℝ)` is `1`.
+**The $\ell^\infty$ norm of $(1, -1)$.** In $\mathbb{R}^2$ with the $\ell^\infty$ norm
+$\|(x, y)\|_\infty = \max(|x|, |y|)$, the vector $(1, -1)$ has norm $\|(1, -1)\|_\infty = 1$.
 
 ## Depends on
 
-- [Lp Two Minus](lp-two-minus.md)
+- [The vector $(1, -1)$ in $\ell^p_2$](lp-two-minus.md)
 
 ## Sources
 

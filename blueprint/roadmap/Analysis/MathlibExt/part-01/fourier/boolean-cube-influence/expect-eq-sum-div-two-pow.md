@@ -6,9 +6,11 @@ proof: formalized
 lean: BooleanCube.expect_eq_sum_div_two_pow
 ---
 
-# Expect eq sum div two pow
+# Uniform average over the Boolean cube as a sum
 
-An average over the cube is the sum divided by `2 ^ n`.
+**Uniform average over the Boolean cube as a sum.** For every $n \in \mathbb{N}$ and every
+function $f : \{-1, 1\}^n \to \mathbb{R}$, the uniform average of $f$ over the Boolean cube
+$\{-1, 1\}^n$ is $\mathbb{E}_x f(x) = \frac{1}{2^n} \sum_{x \in \{-1, 1\}^n} f(x)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ An average over the cube is the sum divided by `2 ^ n`.
 
 ## Proof depends on
 
-- [Card bool Cube](../boolean-cube/card-bool-cube.md)
+- [Number of points of the Boolean cube](../boolean-cube/card-bool-cube.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: BooleanCube.sum_cubeChi_eq_ite
 ---
 
-# Sum cube Chi eq ite
+# Sum of a Boolean cube character
 
-The sum of a character over the cube vanishes unless the character is trivial.
+**Sum of a Boolean cube character.** For every $n \in \mathbb{N}$ and every subset $S$ of
+$\{0, \dots, n-1\}$, the sum of the Fourier character $\chi_S$ over all points of the Boolean cube
+of dimension $n$ equals $2^n$ if $S$ is empty and $0$ otherwise.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ The sum of a character over the cube vanishes unless the character is trivial.
 ## Proof depends on
 
 - [The empty Fourier character is constant one](../boolean-cube/cube-chi-empty.md)
-- [Sum cube Chi mul cube Chi eq ite](sum-cube-chi-mul-cube-chi-eq-ite.md)
+- [Orthogonality of the Boolean cube characters](sum-cube-chi-mul-cube-chi-eq-ite.md)
 
 ## Sources
 

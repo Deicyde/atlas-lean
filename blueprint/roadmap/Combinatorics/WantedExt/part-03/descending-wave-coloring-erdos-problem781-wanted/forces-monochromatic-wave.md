@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.DescendingWaveColoringErdosProblem781Wanted.ForcesMonochromaticWave
 ---
 
-# Forces Monochromatic Wave
+# Forcing a monochromatic descending wave
 
-Every `2`-coloring of `{1, …, n}` has a monochromatic `k`-term descending wave, i.e.
-`f(k) ≤ n`.
+**Forcing a monochromatic descending wave.** For natural numbers $k$ and $n$, the statement
+that for every colouring of the natural numbers with two colours there is a monochromatic $k$-term
+descending wave all of whose terms lie in $\{1, \dots, n\}$. Equivalently, every colouring of
+$\{1, \dots, n\}$ with two colours has a monochromatic $k$-term descending wave, so the statement
+says $f(k) \le n$, where $f(k)$ is the least $n$ with this property.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Descending Wave](is-descending-wave.md)
+- [Descending wave](is-descending-wave.md)
 
 ## Sources
 

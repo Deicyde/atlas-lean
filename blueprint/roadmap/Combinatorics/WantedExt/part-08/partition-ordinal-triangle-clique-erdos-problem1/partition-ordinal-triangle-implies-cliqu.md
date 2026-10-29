@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartitionOrdinalTriangleCliqueErdosProblem118Wanted.partitionOrdinalTriangleImpliesClique
 ---
 
-# Partition Ordinal Triangle Implies Clique
+# Erdős Problem 118 for ordinals
 
-Erdős Problem 118 (ordinal case): every ordinal `α` with `α → (α, 3)²` satisfies
-`α → (α, n)²` for every `n ≥ 3`.
+**Erdős Problem 118 for ordinals.** The statement that for every ordinal $\alpha$ satisfying
+the partition relation $\alpha \to (\alpha, 3)^2$ and every natural number $n \ge 3$, the ordinal
+$\alpha$ also satisfies $\alpha \to (\alpha, n)^2$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Rel](partition-rel.md)
+- [Ordinal partition relation](partition-rel.md)
 
 ## Sources
 

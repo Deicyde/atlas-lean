@@ -5,16 +5,18 @@ statement: formalized
 lean: AddCircle.fejerKernel
 ---
 
-# Fejer Kernel
+# The Fejér kernel
 
-The Fejér kernel `K_N`, defined as the Cesàro mean of the Dirichlet kernels:
-for a real representative `r` of `x : AddCircle T`,
-`K_N(x) = (N+1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n r / T}`.
-When `sin(π r / T) ≠ 0`, the closed form is
-`K_N(x) = (N+1)⁻¹ * (sin((N+1) π r / T) / sin(π r / T))²`,
-with the real expression coerced into `ℂ`.
-This normalization uses Haar probability measure; at `T = 2π`, the kernel
-for integration against Lebesgue measure is `K_N / (2π)`.
+**The Fejér kernel.** Let $T > 0$ and, for $n \in \mathbb{Z}$, let
+$e_n(x) = e^{2\pi i n x / T}$ be the $n$-th Fourier character on the circle
+$\mathbb{R}/T\mathbb{Z}$. For a natural number $N$, the $N$-th Fejér kernel is the function
+$K_N : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ given by the Cesàro mean of the Dirichlet kernels,
+$K_N(x) = \frac{1}{N+1} \sum_{k=0}^{N} \sum_{n=-k}^{k} e_n(x)$.
+
+Writing $x$ also for a real representative, when $\sin(\pi x / T) \ne 0$ the kernel has the closed
+form $K_N(x) = \frac{1}{N+1} \left(\frac{\sin((N+1)\pi x / T)}{\sin(\pi x / T)}\right)^2$.
+This normalization is for the Haar probability measure on $\mathbb{R}/T\mathbb{Z}$; for $T = 2\pi$,
+the kernel for integration against Lebesgue measure is $K_N / (2\pi)$.
 
 ## Depends on
 

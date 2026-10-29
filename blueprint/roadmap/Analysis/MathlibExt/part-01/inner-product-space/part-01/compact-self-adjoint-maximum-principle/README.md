@@ -4,6 +4,6 @@ navigation: module
 
 # Compact Self Adjoint Maximum Principle
 
-- [Exists nonzero eigenvalue enumeration](exists-nonzero-eigenvalue-enumeration.md)
-- [Exists finite eigenvalue enumeration](exists-finite-eigenvalue-enumeration.md)
-- [Exists ordered eigenvalue sequence](exists-ordered-eigenvalue-sequence.md)
+- [Maximum principle for compact self-adjoint operators](exists-nonzero-eigenvalue-enumeration.md)
+- [Maximum principle for compact self-adjoint operators in finite dimension](exists-finite-eigenvalue-enumeration.md)
+- [Maximum principle as a sequence in infinite dimension](exists-ordered-eigenvalue-sequence.md)

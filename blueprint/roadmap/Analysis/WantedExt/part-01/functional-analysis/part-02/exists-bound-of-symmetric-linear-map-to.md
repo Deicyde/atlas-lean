@@ -5,14 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.SymmetricOperatorToDualBoundedWanted.exists_bound_of_symmetric_linearMap_to_strongDual
 ---
 
-# Symmetric Operator To Dual Bounded Wanted
+# A symmetric linear map from a Banach space to its dual is bounded
 
-Let $E$ be a Banach space and let $T : E \to E^*$ be a linear operator satisfying
-
-\[
-\langle Tx, y\rangle = \langle Ty, x\rangle \quad \forall x,y\in E.
-\]
-Prove that $T$ is a bounded operator.
+**A symmetric linear map from a Banach space to its dual is bounded.** Let $E$ be a real
+Banach space with dual space $E^*$ of continuous linear functionals, and let $T : E \to E^*$ be
+a linear map that is symmetric: $(Tx)(y) = (Ty)(x)$ for all $x, y \in E$. Then $T$ is bounded:
+there is a constant $C \ge 0$ such that $\|Tx\| \le C \|x\|$ for all $x \in E$, where $\|Tx\|$
+is the operator norm of the functional $Tx$.
 
 ## Depends on
 

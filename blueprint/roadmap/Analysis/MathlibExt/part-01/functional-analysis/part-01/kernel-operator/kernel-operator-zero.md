@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.kernelOperator_zero
 ---
 
-# Kernel Operator zero
+# The zero kernel gives the zero operator
 
-The kernel operator with kernel `0` is `0`.
+**The zero kernel gives the zero operator.** The integral operator on
+$C([0, 1], \mathbb{R})$ whose kernel is the zero function on $[0, 1] \times [0, 1]$ is the
+zero operator.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Integrand](kernel-integrand.md)
-- [Kernel Operator apply](kernel-operator-apply.md)
+- [Clamped extension](kernel-extend.md)
+- [Kernel integrand](kernel-integrand.md)
+- [Evaluation formula for the integral operator](kernel-operator-apply.md)
 
 ## Sources
 

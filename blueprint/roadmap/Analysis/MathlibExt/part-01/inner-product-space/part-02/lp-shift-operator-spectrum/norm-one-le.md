@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperatorSpectrum.norm_one_le
 ---
 
-# Norm one le
+# The identity on ℓ²(ℕ) has norm at most one
 
-The operator norm of the identity on `ℓ²(ℕ, 𝕜)` is at most `1`.
+**The identity on ℓ²(ℕ) has norm at most one.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. The operator norm of the identity operator on $\ell^2(\mathbb{N}, \mathbb{K})$ is
+at most $1$.
 
 ## Depends on
 

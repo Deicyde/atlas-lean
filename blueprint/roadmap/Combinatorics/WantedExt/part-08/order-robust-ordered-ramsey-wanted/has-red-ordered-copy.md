@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.HasRedOrderedCopy
 ---
 
-# Has Red Ordered Copy
+# Red ordered copy
 
-Red ordered (not necessarily induced) copies of `H` inside the red graph `G`.
+**Red ordered copy.** Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict total
+order $\lt _H$ on its vertices, and let $G$ be a simple graph on $\{0, \dots, N - 1\}$, the red
+graph. Then $G$ contains a red ordered copy of $(H, \lt _H)$ when there is an ordered embedding $f$
+of $(\{0, \dots, n - 1\}, \lt _H)$ into $\{0, \dots, N - 1\}$ such that $f(a)$ and $f(b)$ are
+adjacent in $G$ whenever $a$ and $b$ are adjacent in $H$. The copy need not be induced.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ Red ordered (not necessarily induced) copies of `H` inside the red graph `G`.
 
 ## Proof depends on
 
-- [Is Ordered Embedding](is-ordered-embedding.md)
+- [Ordered embedding](is-ordered-embedding.md)
 
 ## Sources
 

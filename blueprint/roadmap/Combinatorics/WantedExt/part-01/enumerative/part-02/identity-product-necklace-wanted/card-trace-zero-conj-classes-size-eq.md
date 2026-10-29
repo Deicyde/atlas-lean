@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_traceZero_conjClasses_size_eq
 ---
 
-# Card trace Zero conj Classes size eq
+# Trace-zero Galois orbits of full size and aperiodic zero-sum necklaces
 
-Proposition 32: the number of size-`n` conjugacy classes of elements of `K` with trace `0`
-equals the number of aperiodic zero-sum `n`-necklaces over `F`, `n = [K : F]`.
+**Trace-zero Galois orbits of full size and aperiodic zero-sum necklaces.** Let $K$ be a
+finite field extension of a finite field $F$ and $n = [K : F]$. For $z \in K$ let its Galois
+orbit be the set of all $\sigma(z)$ with $\sigma$ an automorphism of $K$ fixing $F$, and for
+$a = (a_0, \dots, a_{n-1}) \in F^n$ let its rotation orbit be the set of its cyclic rotations
+$(a_m, a_{m+1}, \dots, a_{m+n-1})$, $m \ge 0$, with indices taken mod $n$. The number of Galois
+orbits with exactly $n$ elements of elements $z \in K$ with $\operatorname{Tr}_{K/F}(z) = 0$
+equals the number of rotation orbits with exactly $n$ elements of tuples $a \in F^n$ with
+$a_0 + a_1 + \dots + a_{n-1} = 0$.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

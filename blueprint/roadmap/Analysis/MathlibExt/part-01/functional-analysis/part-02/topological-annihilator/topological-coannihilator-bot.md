@@ -6,13 +6,15 @@ proof: formalized
 lean: Submodule.topologicalCoannihilator_bot
 ---
 
-# Topological Coannihilator bot
+# Topological coannihilator of the zero subspace
 
-The coannihilator of the zero subspace of the dual is the whole space.
+**Topological coannihilator of the zero subspace.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, with continuous dual $E^*$. The topological
+coannihilator of the zero subspace of $E^*$ is all of $E$.
 
 ## Depends on
 
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Sources
 

@@ -5,21 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MonochromaticSquareSumErdosProblem439Wanted.monochromaticPowerSum_holds
 ---
 
-# Monochromatic Power Sum holds
+# Erdős Problem 439 for $k$-th powers is true
 
-Resolved true: the theorem of Khalfalah and Szemerédi covers `x + y = f(z)` for every nonconstant `f
-∈ ℤ[z]` such that `f(z)` is even for some integer `z`; `f(z) = z^k` with `k ≥ 2` qualifies, since
-`f(2) = 2^k` (erdosproblems.com/439). Source: T. F. Bloom, Erdős Problems, Problem #439,
-https://www.erdosproblems.com/439 (status PROVED); resolution: A. Khalfalah and E. Szemerédi, On the
-number of monochromatic solutions of x + y = z², Combin. Probab. Comput. (2006), 213-227, main
-theorem (a conjecture of Erdős, Roth, Sárközy and Sós): for every nonconstant f ∈ ℤ[z] with 2 ∣ f(z)
-for some z ∈ ℤ, every finite colouring of the integers has x ≠ y of the same colour with x + y =
-f(z) (abstract; erdosproblems.com/439), https://doi.org/10.1017/S0963548305007169.
+**Erdős Problem 439 for $k$-th powers is true.** For every integer $k \ge 2$ and every colouring
+of the positive integers with finitely many colours there are distinct positive integers $x$ and
+$y$ of the same colour such that $x + y = z^k$ for some natural number $z$.
+
+Khalfalah and Szemerédi proved the corresponding statement for $x + y = f(z)$ for every
+nonconstant polynomial $f$ with integer coefficients such that $f(z)$ is even for some integer
+$z$; the polynomial $f(z) = z^k$ qualifies, since $f(2) = 2^k$.
 
 ## Depends on
 
-- [Monochromatic Power Sum](monochromatic-power-sum.md)
+- [Erdős Problem 439 for $k$-th powers](monochromatic-power-sum.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.MonochromaticSquareSumErdosProblem439Wanted](../../../../../sources/v2/WantedExt.md)
+- T. F. Bloom, Erdős Problems, Problem #439, https://www.erdosproblems.com/439 (status PROVED); resolution: A. Khalfalah and E. Szemerédi, On the number of monochromatic solutions of x + y = z², Combin. Probab. Comput. (2006), 213-227, main theorem (a conjecture of Erdős, Roth, Sárközy and Sós): for every nonconstant f ∈ ℤ[z] with 2 ∣ f(z) for some z ∈ ℤ, every finite colouring of the integers has x ≠ y of the same colour with x + y = f(z) (abstract; erdosproblems.com/439), https://doi.org/10.1017/S0963548305007169.

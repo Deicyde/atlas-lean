@@ -4,10 +4,10 @@ navigation: module
 
 # Annulus Weighted Sobolev Critical
 
-- [R2](r2.md)
-- [B](b.md)
-- [Omega1](omega1.md)
-- [Omega2](omega2.md)
-- [Phi](phi.md)
-- [P Star](p-star.md)
-- [Exists e Lp Norm phi mul le weighted grad add outer annulus](exists-e-lp-norm-phi-mul-le-weighted-gra.md)
+- [The plane of the critical weighted Sobolev inequality](r2.md)
+- [Discs about the origin for the critical weighted Sobolev inequality](b.md)
+- [The annulus of the critical weighted Sobolev inequality](omega1.md)
+- [The outer annulus of the critical weighted Sobolev inequality](omega2.md)
+- [The weight of the critical weighted Sobolev inequality](phi.md)
+- [Sobolev conjugate exponent in dimension two](p-star.md)
+- [Critical weighted Sobolev inequality on an annulus](exists-e-lp-norm-phi-mul-le-weighted-gra.md)

@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperator.sineHilbertBasis
 ---
 
-# Sine Hilbert Basis
+# The sine Hilbert basis of $L^2((0, 1))$
 
-The sine Hilbert basis of real `L²([0,1])`, indexed by positive integers.
+**The sine Hilbert basis of $L^2([0, 1])$.** The sine Hilbert basis is a Hilbert basis
+$(b_k)_{k \ge 1}$ of the real Hilbert space $L^2([0, 1])$, indexed by the positive integers, with
+$b_k(x) = \sqrt{2} \sin(k\pi x)$ for almost every $x \in [0, 1]$. Such a basis exists, and since an
+element of $L^2([0, 1])$ is determined by its values almost everywhere, it is unique.
 
 ## Depends on
 
-- [L2 Unit Interval](l2-unit-interval.md)
+- [The space $L^2((0, 1))$](l2-unit-interval.md)
 
 ## Proof depends on
 
-- [Sine Basis Fun](sine-basis-fun.md)
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
 
 ## Sources
 

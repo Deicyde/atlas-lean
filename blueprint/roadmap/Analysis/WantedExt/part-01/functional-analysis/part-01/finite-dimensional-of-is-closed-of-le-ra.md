@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ClosedL2SubspaceOfContinuousFiniteDimWanted.finiteDimensional_of_isClosed_of_le_range_toLp
 ---
 
-# Closed L2 Subspace Of Continuous Finite Dim Wanted
+# Closed subspaces of $L^2((0,1))$ inside $C((0,1))$ are finite-dimensional
 
-Suppose $H$ is a closed subspace of $L^2([0, 1])$ such that $H \subset C([0, 1])$. Prove that
-$H$ is finite-dimensional.
+**Closed subspaces of $L^2([0,1])$ inside $C([0,1])$ are finite-dimensional.** Let $H$ be a
+closed linear subspace of the real space $L^2([0,1])$ with respect to Lebesgue measure, and
+suppose that every element of $H$ is the class of a continuous function $[0,1] \to \mathbb{R}$.
+Then $H$ is finite-dimensional.
 
 ## Depends on
 

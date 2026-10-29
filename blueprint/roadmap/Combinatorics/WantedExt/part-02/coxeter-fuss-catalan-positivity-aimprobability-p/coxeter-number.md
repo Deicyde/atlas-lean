@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.CoxeterFussCatalanPositivityAIMProbabilityProblem148Wanted.CoxeterType.coxeterNumber
 ---
 
-# Coxeter Number
+# Coxeter number
 
-The Coxeter number `h`, the largest degree.
+**Coxeter number.** The Coxeter number $h$ of a Coxeter type is the largest of its degrees,
+and $0$ if its list of degrees is empty.
 
 ## Depends on
 
-- [Coxeter Type](coxeter-type.md)
+- [Types of irreducible finite Coxeter groups](coxeter-type.md)
 
 ## Proof depends on
 
-- [Degrees](degrees.md)
+- [Degrees of the irreducible finite Coxeter groups](degrees.md)
 
 ## Sources
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Divisor Sum Free Set Lower Bound
 
-- [Is Divisor Sum Free](is-divisor-sum-free.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Divisor-sum-free sets](is-divisor-sum-free.md)
+- [Erdős Problem 131: large divisor-sum-free sets](conjecture.md)
+- [Erdős Problem 131 has a negative answer](conjecture-refuted.md)

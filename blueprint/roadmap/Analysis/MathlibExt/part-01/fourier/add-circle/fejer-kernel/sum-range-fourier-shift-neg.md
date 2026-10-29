@@ -6,11 +6,15 @@ proof: formalized
 lean: AddCircle.sum_range_fourier_shift_neg
 ---
 
-# Sum range fourier shift neg
+# Reindexing a sum of Fourier characters, negative range
 
-Re-indexing lemma: the sum `∑_{k=0}^{N} fourier ((k : ℤ) - (N+1 : ℤ)) x` equals the
-sum over the negative range `n ∈ [-(N+1), -1]`. Used to expand `(∑ z^k) · z̄^{N+1}`
-in the proof of the Fejér kernel identity.
+**Reindexing a sum of Fourier characters, negative range.** Let $T > 0$, let
+$e_n(t) = e^{2\pi i n t / T}$ be the $n$-th Fourier character on the circle
+$\mathbb{R}/T\mathbb{Z}$, and let $N \in \mathbb{N}$. For every point $x$ of the circle,
+$\sum_{k=0}^{N} e_{k-(N+1)}(x) = \sum_{n=-(N+1)}^{-1} e_n(x)$.
+
+It is used in the proof that the iterated Dirichlet sum defining the Fejér kernel equals
+$\left|\sum_{k=0}^{N} e_k(x)\right|^2$.
 
 ## Depends on
 

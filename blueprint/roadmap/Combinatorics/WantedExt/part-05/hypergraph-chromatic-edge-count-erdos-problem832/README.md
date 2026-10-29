@@ -4,5 +4,5 @@ navigation: module
 
 # Hypergraph Chromatic Edge Count Erdos Problem832
 
-- [Chromatic Edge Lower Bound](chromatic-edge-lower-bound.md)
-- [Chromatic Edge Lower Bound refuted](chromatic-edge-lower-bound-refuted.md)
+- [Erdős Problem 832](chromatic-edge-lower-bound.md)
+- [Alon's refutation of Erdős Problem 832](chromatic-edge-lower-bound-refuted.md)

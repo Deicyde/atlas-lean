@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HypergraphChromaticEdgeCountErdosProblem832Wanted.chromaticEdgeLowerBound
 ---
 
-# Chromatic Edge Lower Bound
+# Erdős Problem 832
 
-Erdős Problem 832: for every `r ≥ 3` and all large `k`, every `r`-uniform hypergraph with
-chromatic number `k` has at least `C((r - 1)(k - 1) + 1, r)` edges, with equality only for the
-complete `r`-uniform hypergraph on `(r - 1)(k - 1) + 1` vertices.
+**Erdős Problem 832.** The statement that for every integer $r \ge 3$ there is a $K$ such that
+for every $k \ge K$, every $n$ and every $r$-uniform hypergraph $H$ on the vertex set
+$\{0, \dots, n-1\}$ with chromatic number $k$ (it is $k$-colorable but not $(k-1)$-colorable),
+$H$ has at least $\binom{(r-1)(k-1)+1}{r}$ edges, and if it has exactly that many edges then it is
+the complete $r$-uniform hypergraph on some set of $(r-1)(k-1)+1$ of its vertices.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hypergraph Coloring Shared](../hypergraph-colorable.md)
+- [Colorable hypergraph](../hypergraph-colorable.md)
 
 ## Sources
 

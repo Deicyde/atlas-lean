@@ -6,22 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.norm_weightedShiftCLM
 ---
 
-# Norm weighted Shift CLM
+# Operator norm of a weighted shift
 
-The operator norm of the weighted forward shift is the supremum of the
-moduli of the weights.
+**Operator norm of a weighted shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and
+let $w : \mathbb{N} \to \mathbb{K}$ be weights with bounded moduli. The weighted forward shift
+$S_w$ on $\ell^2(\mathbb{N}, \mathbb{K})$ has operator norm $\|S_w\| = \sup_n |w_n|$.
 
 ## Depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Diagonal CLM](../../part-02/lp-diagonal-operator/diagonal-clm.md)
-- [Norm diagonal CLM](../../part-02/lp-diagonal-operator/norm-diagonal-clm.md)
-- [Norm shift CLM](../../part-02/lp-shift-operator/norm-shift-clm.md)
-- [Shift CLM](../../part-02/lp-shift-operator/shift-clm.md)
-- [Weighted Shift CLM single](weighted-shift-clm-single.md)
+- [Diagonal operator on ℓ²](../../part-02/lp-diagonal-operator/diagonal-clm.md)
+- [Operator norm of a diagonal operator](../../part-02/lp-diagonal-operator/norm-diagonal-clm.md)
+- [The unilateral shift has operator norm one](../../part-02/lp-shift-operator/norm-shift-clm.md)
+- [The unilateral shift operator](../../part-02/lp-shift-operator/shift-clm.md)
+- [The weighted forward shift on basis vectors](weighted-shift-clm-single.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: AddCircle.fejerKernel_integrable
 ---
 
-# Fejer Kernel integrable
+# Integrability of the Fejér kernel
 
-The Fejér kernel `K_N` is integrable on the circle; this follows from
-continuity together with the pointwise bound `‖K_N‖ ≤ N + 1`.
+**Integrability of the Fejér kernel.** Let $T > 0$. For every natural number $N$, the $N$-th
+Fejér kernel $K_N$ is integrable on the circle $\mathbb{R}/T\mathbb{Z}$ with respect to the
+normalized Haar measure, the Haar measure of total mass $1$.
 
 ## Depends on
 
-- [Fejer Kernel](fejer-kernel.md)
+- [The Fejér kernel](fejer-kernel.md)
 
 ## Proof depends on
 
-- [Fejer Kernel continuous](fejer-kernel-continuous.md)
-- [Norm fejer Kernel le](norm-fejer-kernel-le.md)
+- [Continuity of the Fejér kernel](fejer-kernel-continuous.md)
+- [Pointwise bound for the Fejér kernel](norm-fejer-kernel-le.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.AgmonInequalitySchwartzLineWanted.exists_norm_toLp_top_le_mul_sqrt_norm_toLp_two_mul_sqrt_deriv
 ---
 
-# Agmon Inequality Schwartz Line Wanted
+# Agmon's inequality on the line
 
-Prove that there is $C > 0$ such that the following holds for all $f \in
-\mathcal{S}(\mathbb{R})$:
-\[
-\|f\|_{L^\infty(\mathbb{R})} \le C \|f\|_{L^2(\mathbb{R})}^{1/2} \|f'\|_{L^2(\mathbb{R})}^{1/2}.
-\]
+**Agmon's inequality on the line.** There is a constant $C > 0$ such that every real-valued
+Schwartz function $f \colon \mathbb{R} \to \mathbb{R}$ satisfies
+
+$$\|f\|_{L^\infty} \le C \, \|f\|_{L^2}^{1/2} \, \|f'\|_{L^2}^{1/2},$$
+
+where $f'$ is the derivative of $f$ and the $L^\infty$ and $L^2$ norms are taken with respect to
+Lebesgue measure on $\mathbb{R}$.
 
 ## Depends on
 

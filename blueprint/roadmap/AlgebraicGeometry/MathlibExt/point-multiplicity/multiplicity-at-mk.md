@@ -6,18 +6,21 @@ proof: formalized
 lean: MvPolynomial.multiplicityAt_mk
 ---
 
-# Multiplicity At mk
+# The multiplicity can be computed at any representative
 
-The multiplicity of a homogeneous polynomial can be computed at any representative.
+**The multiplicity can be computed at any representative.** Let $K$ be a field and $F$ a
+homogeneous polynomial over $K$ in the variables $(X_i)_{i \in \sigma}$. For every nonzero
+$v \in K^\sigma$, the multiplicity of $F$ at the point $[v]$ of $\mathbb{P}(K^\sigma)$ spanned by
+$v$ equals the order of vanishing of $F$ at $v$, with the value $\infty$ read as $0$.
 
 ## Depends on
 
-- [Multiplicity At](multiplicity-at.md)
-- [Order At](order-at.md)
+- [Multiplicity of a polynomial at a projective point](multiplicity-at.md)
+- [Order of vanishing at a point](order-at.md)
 
 ## Proof depends on
 
-- [Order At smul](order-at-smul.md)
+- [Scaling invariance of the order of vanishing](order-at-smul.md)
 
 ## Sources
 

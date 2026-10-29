@@ -6,18 +6,19 @@ proof: formalized
 lean: AddCircle.fejerKernel_nonneg
 ---
 
-# Fejer Kernel nonneg
+# Nonnegativity of the Fejér kernel
 
-Positivity of the Fejér kernel: `0 ≤ Re K_N(x)` for every `x`. Direct
-consequence of the expression `K_N(x) = (N+1)⁻¹ · |∑_{k=0}^N fourier k x|²`.
+**Nonnegativity of the Fejér kernel.** Let $T > 0$. For every natural number $N$ and every
+$x \in \mathbb{R}/T\mathbb{Z}$, the real part of the $N$-th Fejér kernel at $x$ is nonnegative:
+$\operatorname{Re} K_N(x) \ge 0$.
 
 ## Depends on
 
-- [Fejer Kernel](fejer-kernel.md)
+- [The Fejér kernel](fejer-kernel.md)
 
 ## Proof depends on
 
-- [Fejer dirichlet sum eq sq](fejer-dirichlet-sum-eq-sq.md)
+- [The sum of Dirichlet kernels is a squared modulus](fejer-dirichlet-sum-eq-sq.md)
 
 ## Sources
 

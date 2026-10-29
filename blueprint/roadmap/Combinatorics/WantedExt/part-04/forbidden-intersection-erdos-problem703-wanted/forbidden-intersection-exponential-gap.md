@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ForbiddenIntersectionErdosProblem703Wanted.forbiddenIntersectionExponentialGap
 ---
 
-# Forbidden Intersection Exponential Gap
+# Erdős Problem 703: exponential gap for a forbidden intersection size
 
-Erdős Problem 703, second question: for every `ε > 0` there is `δ > 0` such that for all
-`n` and `εn < r < (1/2 - ε) n`, every family `F` of subsets of `{1, …, n}` with `|A ∩ B| ≠ r` for
-all `A, B ∈ F` has `|F| < (2 - δ)^n` (so `T(n, r) < (2 - δ)^n`).
+**Erdős Problem 703: exponential gap for a forbidden intersection size.** The proposition that
+for every $\varepsilon > 0$ there is $\delta > 0$ such that for all natural numbers $n$ and $r$ with
+$\varepsilon n < r < (1/2 - \varepsilon) n$, every family $\mathcal{F}$ of subsets of
+$\{1, \dots, n\}$ with $|A \cap B| \ne r$ for all $A, B \in \mathcal{F}$ (including $A = B$) has
+$|\mathcal{F}| < (2 - \delta)^n$. Equivalently, $T(n, r) < (2 - \delta)^n$, where $T(n, r)$ is the
+largest size of such a family.
 
 ## Depends on
 

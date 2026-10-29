@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.finitelyForcibleOptimum
 ---
 
-# Finitely Forcible Optimum
+# Lovász's finitely forcible optimum conjecture
 
-Lovász's conjecture that every extremal problem has a finitely forcible optimum (Oberwolfach
-Report 11/2010, p. 554), in the form of Grzesik-Kráľ-Lovász, Conjecture 1, stated for graphons: for
-graphs `H₁, …, H_ℓ` and reals `d₁, …, d_ℓ`, if some graphon has `d(Hᵢ, W) = dᵢ` for every `i`, then
-some finitely forcible graphon does.
+**Lovász's finitely forcible optimum conjecture.** The proposition that for all graphs
+$H_1, \dots, H_\ell$ and reals $d_1, \dots, d_\ell$, if some graphon $W$ satisfies
+$d(H_i, W) = d_i$ for every $i$, then some finitely forcible graphon $W_0$ satisfies
+$d(H_i, W_0) = d_i$ for every $i$.
+
+This is Lovász's conjecture that every extremal problem has a finitely forcible optimum
+(Oberwolfach Report 11/2010, p. 554), in the form of Grzesik, Kráľ and Lovász, Conjecture 1.
 
 ## Depends on
 
@@ -18,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Finitely Forcible](is-finitely-forcible.md)
-- [Is Graphon](is-graphon.md)
-- [Density](density.md)
+- [Finitely forcible graphon](is-finitely-forcible.md)
+- [Graphon](is-graphon.md)
+- [Density of a graph in a graphon](density.md)
 
 ## Sources
 

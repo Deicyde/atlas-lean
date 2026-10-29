@@ -6,5 +6,5 @@ navigation: module
 
 - [Real Hessian](real-hessian.md)
 - [Complex Hessian](complex-hessian.md)
-- [Real Hessian const](real-hessian-const.md)
-- [Complex Hessian const](complex-hessian-const.md)
+- [Constant functions have zero real Hessian](real-hessian-const.md)
+- [Constant functions have zero complex Hessian](complex-hessian-const.md)

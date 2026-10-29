@@ -8,13 +8,14 @@ lean: hasDerivWithinAt_of_tendstoUniformlyOn_Icc
 
 # Interchange of limits and derivatives on a closed interval
 
-**Interchange of limits and derivatives on a closed interval.** Let
-`f n : ℝ → ℝ` be a sequence of functions on `[a, b]` such that each
-`f n` is differentiable on `[a, b]` with derivative `f' n` continuous
-on `[a, b]`. If `f' n → g'` uniformly on `[a, b]` and `f n x → g x`
-pointwise on `[a, b]`, then the limit function `g` is differentiable
-within `[a, b]` with derivative `g'`, including at the endpoints, and
-`g'` is continuous on `[a, b]`.
+**Interchange of limits and derivatives on a closed interval.** Let $a < b$ be real
+numbers, and let $f_n, f_n' : \mathbb{R} \to \mathbb{R}$ for $n \in \mathbb{N}$ and
+$g, g' : \mathbb{R} \to \mathbb{R}$ be functions. Suppose that for every $n$ and every
+$x \in [a, b]$, $f_n$ is differentiable at $x$ (two-sided, also at the endpoints) with
+derivative $f_n'(x)$; that each $f_n'$ is continuous on $[a, b]$; that $f_n' \to g'$
+uniformly on $[a, b]$; and that $f_n(x) \to g(x)$ for every $x \in [a, b]$. Then for every
+$x \in [a, b]$, $g$ has derivative $g'(x)$ at $x$ within $[a, b]$ (a one-sided derivative at
+the endpoints), and $g'$ is continuous on $[a, b]$.
 
 ## Depends on
 

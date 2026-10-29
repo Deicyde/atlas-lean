@@ -4,6 +4,6 @@ navigation: module
 
 # Non Averaging Set Size Erdos Problem186
 
-- [Is Non Averaging](is-non-averaging.md)
-- [Non Averaging Max Size Quarter Exponent](non-averaging-max-size-quarter-exponent.md)
-- [Non Averaging Max Size Quarter Exponent holds](non-averaging-max-size-quarter-exponent-2.md)
+- [Non-averaging sets](is-non-averaging.md)
+- [Erdős Problem 186 on non-averaging sets](non-averaging-max-size-quarter-exponent.md)
+- [Pham–Zakharov theorem on non-averaging sets](non-averaging-max-size-quarter-exponent-2.md)

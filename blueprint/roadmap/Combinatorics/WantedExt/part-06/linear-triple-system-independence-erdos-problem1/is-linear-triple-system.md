@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.IsLinearTripleSystem
 ---
 
-# Is Linear Triple System
+# Linear triple systems
 
-A `3`-uniform linear hypergraph (partial Steiner triple system) on `Fin n`: every edge has three
-vertices and two distinct edges share at most one vertex.
+**Linear triple systems.** A finite family $H$ of subsets of $\{0, \dots, n-1\}$ is a linear
+triple system (a $3$-uniform linear hypergraph, or partial Steiner triple system) when every
+member of $H$ has exactly three elements and any two distinct members of $H$ share at most one
+element.
 
 ## Depends on
 

@@ -5,24 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.NormApplyLeHilbertSchmidtNormWanted.norm_apply_le_hsNorm_of_norm_eq_one
 ---
 
-# Norm Apply Le Hilbert Schmidt Norm Wanted
+# The Hilbert–Schmidt norm bounds an operator on unit vectors
 
-Let $H$ be an infinite-dimensional separable Hilbert space, and $T:H\to H$ a bounded operator.
-The operator norm and Hilbert-Schmidt norm of $T$ are
-\[
-\|T\|_{\mathrm{op}} := \sup_{\|x\|=1}\|Tx\|,\qquad
-\|T\|_{\mathrm{HS}} := \sqrt{\sum_{i=1}^{\infty}\|Tu_i\|^2},
-\]
-where $\{u_i\}_{i=1}^{\infty}$ is any fixed orthonormal basis of $H$.
-Show that $\|Tx\|\le \|T\|_{\mathrm{HS}}$ for any $x\in H$ with $\|x\|=1$.
-
-Here $\|T\|_{\mathrm{HS}}$ is taken in $\mathbb{R}_{\ge 0}\cup\{\infty\}$
-(`HilbertSchmidtNorm.hsENNNorm`): it is $+\infty$ when $\sum_i\|Tu_i\|^2$ diverges, and
-the bound is then trivial.
+**The Hilbert–Schmidt norm bounds an operator on unit vectors.** Let $H$ be a real Hilbert
+space, let $T : H \to H$ be a bounded linear operator, and let $(u_n)_{n \in \mathbb{N}}$ be an
+orthonormal basis of $H$ indexed by the natural numbers. Let
+$\|T\|_{\mathrm{HS}} = \bigl(\sum_{n} \|T u_n\|^2\bigr)^{1/2} \in [0, \infty]$ be the
+Hilbert–Schmidt norm of $T$ computed in this basis; it is $\infty$ when the series diverges.
+Then $\|Tx\| \le \|T\|_{\mathrm{HS}}$ for every $x \in H$ with $\|x\| = 1$.
 
 ## Depends on
 
-- [Hs ENNNorm](../../../MathlibExt/part-01/operator-theory/hilbert-schmidt-norm/hs-ennnorm.md)
+- [Extended Hilbert–Schmidt norm in a family](../../../MathlibExt/part-01/operator-theory/hilbert-schmidt-norm/hs-ennnorm.md)
 
 ## Sources
 

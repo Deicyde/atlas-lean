@@ -5,9 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.approxEigenVec
 ---
 
-# Approx Eigen Vec
+# Truncated approximate eigenvector of the bilateral shift
 
-The truncated approximate eigenvector for eigenvalue `μ` on the unit circle.
+**Truncated approximate eigenvector of the bilateral shift.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $\mu \in \mathbb{K}$ and $N \in \mathbb{N}$, and write
+$\bar{\mu}$ for the complex conjugate of $\mu$. This is the vector
+$v_{\mu,N} \in \ell^2(\mathbb{Z}, \mathbb{K})$ whose $n$-th coordinate is the truncated
+approximate eigenfunction $f_{\mu,N}(n)$, that is, $\bar{\mu}^{\,n}$ for $-N \le n \le N$ and
+$0$ otherwise; it lies in $\ell^2$ because it has finite support.
+
+It is used for $\mu$ on the unit circle, where it is an approximate eigenvector of the
+bilateral shift.
 
 ## Depends on
 
@@ -15,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Approx Eigen Fun](approx-eigen-fun.md)
+- [Truncated approximate eigenfunction of the bilateral shift](approx-eigen-fun.md)
 
 ## Sources
 

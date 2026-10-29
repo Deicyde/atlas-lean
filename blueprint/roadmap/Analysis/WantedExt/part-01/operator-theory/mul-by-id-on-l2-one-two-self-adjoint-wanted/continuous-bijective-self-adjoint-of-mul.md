@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.MulByIdOnL2OneTwoSelfAdjointWanted.continuous_bijective_selfAdjoint_of_mul_id_L2_Icc_one_two
 ---
 
-# Continuous bijective self Adjoint of mul id L2 Icc one two
+# Multiplication by $x$ on $L^2((1,2))$ is bounded, bijective and self-adjoint
 
-Let $L^2([1,2])$ be the Hilbert space of real-valued functions with inner product $\langle f,
-g\rangle = \int_1^2 f(x)g(x)\,dx$.
-Consider the linear map $T : L^2([1,2]) \to L^2([1,2])$ given by $Tf(x)=xf(x)$ for $x\in[1,2]$. Show
-that this map is continuous and invertible, and show that $T=T^*$.
+**Multiplication by $x$ on $L^2([1,2])$ is bounded, bijective and self-adjoint.** Let
+$L^2([1,2])$ be the real Hilbert space of square-integrable real functions for Lebesgue measure
+on $[1,2]$, with inner product $\langle f, g\rangle = \int_1^2 f(x)g(x)\,dx$. Let
+$T : L^2([1,2]) \to L^2([1,2])$ be a linear map such that for every $f$, $(Tf)(x) = x f(x)$ for
+almost every $x \in [1,2]$. Then $T$ is continuous and bijective, and $T = T^*$, where $T^*$ is
+the Hilbert space adjoint of $T$.
 
 ## Depends on
 
-- [L2 On One Two](l2-on-one-two.md)
+- [The space $L^2((1,2))$](l2-on-one-two.md)
 
 ## Sources
 

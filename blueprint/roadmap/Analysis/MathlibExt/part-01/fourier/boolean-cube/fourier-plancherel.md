@@ -6,19 +6,25 @@ proof: formalized
 lean: BooleanCube.fourier_plancherel
 ---
 
-# Fourier plancherel
+# Plancherel identity on the subsets of a finite set
 
-Plancherel on the cube: the mean square equals the sum of squared
-Fourier coefficients.
+**Plancherel identity on the subsets of a finite set.** Let $E$ be a finite subset of a type
+$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. Then
+
+$$\frac{1}{2^{|E|}} \sum_{T \subseteq E} f(T)^2 = \sum_{S \subseteq E} \hat f(S)^2,$$
+
+where $\hat f(S) = 2^{-|E|} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ is the Fourier
+coefficient of $f$ at $S$ over $E$: the mean square of $f$ over the subsets of $E$ equals the
+sum of the squared Fourier coefficients.
 
 ## Depends on
 
-- [Fourier Coeff](fourier-coeff.md)
+- [Fourier coefficient on the subsets of a finite set](fourier-coeff.md)
 
 ## Proof depends on
 
-- [Fourier Char](fourier-char.md)
-- [Fourier inversion](fourier-inversion.md)
+- [Fourier character on finite sets](fourier-char.md)
+- [Fourier inversion on the subsets of a finite set](fourier-inversion.md)
 
 ## Sources
 

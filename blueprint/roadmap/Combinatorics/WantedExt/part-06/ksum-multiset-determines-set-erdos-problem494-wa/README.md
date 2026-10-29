@@ -4,6 +4,6 @@ navigation: module
 
 # KSum Multiset Determines Set Erdos Problem494
 
-- [K Sum Multiset](k-sum-multiset.md)
-- [K Sum Multiset Determines Large Set](k-sum-multiset-determines-large-set.md)
-- [K Sum Multiset Determines Large Set holds](k-sum-multiset-determines-large-set-hold.md)
+- [Multiset of $k$-sums](k-sum-multiset.md)
+- [Erdős Problem 494 for large sets](k-sum-multiset-determines-large-set.md)
+- [Large sets of complex numbers are determined by their $k$-sums](k-sum-multiset-determines-large-set-hold.md)

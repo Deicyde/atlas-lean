@@ -6,21 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.TaggedPartition.exists_commonRefinement
 ---
 
-# Riemann Common Refinement
+# Common refinement of two tagged partitions
 
-Any two tagged partitions of `[a, b]` have a common tagged refinement:
-the partition whose points are the union of both partitions' points.
+**Common refinement of two tagged partitions.** Let $a, b$ be real numbers. For any two
+tagged partitions $T_1$ and $T_2$ of $[a, b]$, there is a tagged partition $T''$ of $[a, b]$
+that is a tagged refinement of both $T_1$ and $T_2$.
+
+The proof takes for $T''$ the partition whose points are the union of the points of $T_1$
+and $T_2$, with each tag at the left endpoint of its subinterval.
 
 ## Depends on
 
-- [Tagged Partition](riemann-partition/tagged-partition.md)
-- [Is Tagged Refinement](riemann-sum-refinement/is-tagged-refinement.md)
+- [Tagged partition](riemann-partition/tagged-partition.md)
+- [Tagged-refinement data](riemann-sum-refinement/is-tagged-refinement.md)
 
 ## Proof depends on
 
-- [Partition](riemann-partition/partition.md)
-- [Is Refinement](riemann-partition/is-refinement.md)
-- [Nonempty is Tagged Refinement of is Refinement](riemann-sum-refinement/nonempty-is-tagged-refinement-of-is-refi.md)
+- [Partition of an interval](riemann-partition/partition.md)
+- [Refinement of a partition](riemann-partition/is-refinement.md)
+- [Refinements carry tagged-refinement data](riemann-sum-refinement/nonempty-is-tagged-refinement-of-is-refi.md)
 
 ## Sources
 

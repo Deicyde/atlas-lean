@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.norm_weightedShiftCLM_apply_of_forall_norm_eq_one
 ---
 
-# Norm weighted Shift CLM apply of forall norm eq one
+# Weighted shifts with unimodular weights preserve norms
 
-With every weight of modulus `1`, the weighted forward shift
-preserves norms.
+**Weighted shifts with unimodular weights preserve norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $(w_n)_{n \in \mathbb{N}}$ be a sequence in $\mathbb{K}$ with $|w_n| = 1$ for
+every $n$. Then the weighted forward shift $S_w$ on $\ell^2(\mathbb{N}, \mathbb{K})$, given by
+$(S_w x)_0 = 0$ and $(S_w x)_{n+1} = w_n x_n$, satisfies $\|S_w x\| = \|x\|$ for every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Backward comp shift eq one](backward-comp-shift-eq-one.md)
-- [Norm weighted Backward CLM](norm-weighted-backward-clm.md)
-- [Norm weighted Shift CLM](norm-weighted-shift-clm.md)
-- [Weighted Backward CLM](weighted-backward-clm.md)
+- [The weighted backward shift is a left inverse for unimodular weights](backward-comp-shift-eq-one.md)
+- [Norm of the weighted backward shift](norm-weighted-backward-clm.md)
+- [Operator norm of a weighted shift](norm-weighted-shift-clm.md)
+- [Weighted backward shift](weighted-backward-clm.md)
 
 ## Sources
 

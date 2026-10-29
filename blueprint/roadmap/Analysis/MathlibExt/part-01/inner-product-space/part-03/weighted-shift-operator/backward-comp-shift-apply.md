@@ -6,23 +6,28 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.backward_comp_shift_apply
 ---
 
-# Backward comp shift apply
+# The weighted backward shift after the forward shift is diagonal
 
-The composite `B ∘ S` acts diagonally by `‖w i‖ ^ 2`.
+**The weighted backward shift after the forward shift is diagonal.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $(w_n)_{n \in \mathbb{N}}$ be a bounded sequence in $\mathbb{K}$,
+and on $\ell^2(\mathbb{N}, \mathbb{K})$ let $S_w$ be the weighted forward shift,
+$(S_w x)_0 = 0$ and $(S_w x)_{n+1} = w_n x_n$, and $B_w$ the weighted backward shift,
+$(B_w x)_i = \overline{w_i}\, x_{i+1}$. Then $(B_w S_w x)_i = |w_i|^2 x_i$ for every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$ and every $i \in \mathbb{N}$.
 
 ## Depends on
 
-- [Weighted Backward CLM](weighted-backward-clm.md)
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted backward shift](weighted-backward-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Weighted Backward CLM apply](weighted-backward-clm-apply.md)
-- [Weighted Backward Fun](weighted-backward-fun.md)
-- [Weighted Backward Fun apply](weighted-backward-fun-apply.md)
-- [Weighted Shift CLM apply](weighted-shift-clm-apply.md)
-- [Weighted Shift Fun](weighted-shift-fun.md)
-- [Weighted Shift Fun succ](weighted-shift-fun-succ.md)
+- [Coordinates of the weighted backward shift](weighted-backward-clm-apply.md)
+- [Weighted backward shift of a sequence](weighted-backward-fun.md)
+- [Coordinates of the weighted backward-shift function](weighted-backward-fun-apply.md)
+- [Coordinates of the weighted forward shift](weighted-shift-clm-apply.md)
+- [Weighted forward shift of a sequence](weighted-shift-fun.md)
+- [Weighted forward shift at a successor index](weighted-shift-fun-succ.md)
 
 ## Sources
 

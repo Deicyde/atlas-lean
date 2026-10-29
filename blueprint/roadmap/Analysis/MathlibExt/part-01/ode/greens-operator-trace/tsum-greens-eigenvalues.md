@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperatorTrace.tsum_greensEigenvalues
 ---
 
-# Tsum greens Eigenvalues
+# Sum of the Green's eigenvalues
 
-The canonical Green eigenvalue series sums to `1 / 6`.
+**Sum of the Green's eigenvalues.** For the Green's eigenvalues $\lambda_k = 1/(k^2\pi^2)$,
+indexed by the positive integers $k$, we have $\sum_{k \ge 1} \lambda_k = 1/6$.
 
 ## Depends on
 
-- [Greens Eigenvalue](../greens-operator/greens-eigenvalue.md)
+- [Eigenvalues of the Dirichlet Green's operator](../greens-operator/greens-eigenvalue.md)
 
 ## Sources
 

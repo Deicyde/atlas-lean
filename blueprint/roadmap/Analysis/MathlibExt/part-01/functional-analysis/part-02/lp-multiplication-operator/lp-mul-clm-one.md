@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.lpMulCLM_one
 ---
 
-# Lp Mul CLM one
+# Multiplication by one is the identity
 
-Multiplication by the constant function `1` is the identity.
+**Multiplication by one is the identity.** Let $\mu$ be a measure on a measurable space
+$\alpha$. The multiplication operator on $L^2(\mu)$ by the constant function $1$ is the
+identity operator.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
-- [Mem Lp const top](mem-lp-const-top.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
+- [Constant functions are essentially bounded](mem-lp-const-top.md)
 
 ## Proof depends on
 
-- [Lp Mul CLM const apply](lp-mul-clm-const-apply.md)
+- [Multiplication by a constant function](lp-mul-clm-const-apply.md)
 
 ## Sources
 

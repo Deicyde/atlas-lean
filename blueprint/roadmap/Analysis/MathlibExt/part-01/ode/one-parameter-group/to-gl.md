@@ -5,13 +5,17 @@ statement: formalized
 lean: OneParameterGroup.IsOneParameterGroup.toGL
 ---
 
-# To GL
+# The lift of a one-parameter group to the general linear group
 
-The canonical `GL`-valued curve, with inverse given by the value at `-t`.
+**The lift of a one-parameter group to the general linear group.** Let $m \in \mathbb{N}$ and
+let $\varphi \colon \mathbb{R} \to M_m(\mathbb{C})$ be a one-parameter group of complex
+$m \times m$ matrices. For every real $t$ the matrix $\varphi(t)$ is invertible with inverse
+$\varphi(-t)$; this gives the element of $\mathrm{GL}_m(\mathbb{C})$ with matrix $\varphi(t)$
+and inverse $\varphi(-t)$.
 
 ## Depends on
 
-- [Is One Parameter Group](is-one-parameter-group.md)
+- [One-parameter group of complex matrices](is-one-parameter-group.md)
 
 ## Sources
 

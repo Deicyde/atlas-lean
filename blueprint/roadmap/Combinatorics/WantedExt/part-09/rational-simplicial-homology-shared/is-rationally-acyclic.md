@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RationalSimplicialHomologyShared.IsRationallyAcyclic
 ---
 
-# Is Rationally Acyclic
+# Rationally acyclic complexes
 
-`K` is acyclic over `ℚ`: all of its reduced rational homology vanishes (the void complex is
-acyclic; the complex `{∅}` is not, since `H̃_{-1}({∅}; ℚ) = ℚ`).
+**Rationally acyclic complexes.** A finite family $K$ of finite subsets of $\mathbb{N}$ is
+rationally acyclic when its reduced Betti number indexed by $k$ is $0$ for every $k \in \mathbb{N}$.
+
+For a simplicial complex this says that all reduced rational homology of $K$ vanishes. The void
+complex is acyclic; the complex $\{\emptyset\}$ is not, since
+$\tilde H_{-1}(\{\emptyset\}; \mathbb{Q}) = \mathbb{Q}$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reduced Betti](reduced-betti.md)
+- [Reduced rational Betti numbers](reduced-betti.md)
 
 ## Sources
 

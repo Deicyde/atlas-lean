@@ -4,5 +4,5 @@ navigation: module
 
 # Finite Field Kakeya Three AIMCombinatorics Problem245
 
-- [Finite Field Kakeya Cube Lower Bound](finite-field-kakeya-cube-lower-bound.md)
-- [Finite Field Kakeya Cube Lower Bound holds](finite-field-kakeya-cube-lower-bound-hol.md)
+- [Statement of the finite field Kakeya bound in dimension three](finite-field-kakeya-cube-lower-bound.md)
+- [Finite field Kakeya sets in dimension three have cubic size](finite-field-kakeya-cube-lower-bound-hol.md)

@@ -6,22 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.kernelOperator_add
 ---
 
-# Kernel Operator add
+# The integral operator is additive in the kernel
 
-The kernel operator is additive in the kernel.
+**The integral operator is additive in the kernel.** For a continuous kernel $k$ on
+$[0, 1] \times [0, 1]$, write $T_k$ for the integral operator with kernel $k$ on
+$C([0, 1], \mathbb{R})$. For all continuous kernels $k_1$ and $k_2$, the operator with the
+pointwise sum kernel is the sum of the operators: $T_{k_1 + k_2} = T_{k_1} + T_{k_2}$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Integrand](kernel-integrand.md)
-- [Kernel Integrand continuous](kernel-integrand-continuous.md)
-- [Kernel Operator apply](kernel-operator-apply.md)
+- [Clamped extension](kernel-extend.md)
+- [Kernel integrand](kernel-integrand.md)
+- [Continuity of the kernel integrand in $t$](kernel-integrand-continuous.md)
+- [Evaluation formula for the integral operator](kernel-operator-apply.md)
 
 ## Sources
 

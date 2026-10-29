@@ -5,9 +5,12 @@ statement: formalized
 lean: BooleanCube.flipCoord
 ---
 
-# Flip Coord
+# Coordinate flip on the Boolean cube
 
-The point `x` with its `i`-th coordinate flipped, written `x^{⊕i}`.
+**Coordinate flip on the Boolean cube.** For a point $x$ of the Boolean cube of dimension $n$
+and a coordinate $i \in \{0, \dots, n-1\}$, the point $x^{\oplus i}$ is obtained from $x$ by
+negating its $i$-th coordinate (exchanging true and false) and leaving every other coordinate
+unchanged.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReverseLittlewoodOffordErdosProblem395Wanted.smallSignedSumCount
 ---
 
-# Small Signed Sum Count
+# Number of short signed sums
 
-The number of sign vectors `ε ∈ {-1, 1}ⁿ` (encoded as `Fin n → Bool`) with
-`|ε₁ z₁ + ⋯ + εₙ zₙ| ≤ √2`.
+**Number of short signed sums.** For complex numbers $z_1, \dots, z_n$, this is the number of
+sign vectors $(\varepsilon_1, \dots, \varepsilon_n) \in \{-1, 1\}^n$ with
+$|\varepsilon_1 z_1 + \dots + \varepsilon_n z_n| \le \sqrt{2}$.
 
 ## Depends on
 

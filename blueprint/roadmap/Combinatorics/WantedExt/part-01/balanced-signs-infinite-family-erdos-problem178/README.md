@@ -4,5 +4,5 @@ navigation: module
 
 # Balanced Signs Infinite Family Erdos Problem178
 
-- [Bounded Discrepancy Infinite Family](bounded-discrepancy-infinite-family.md)
-- [Bounded Discrepancy Infinite Family holds](bounded-discrepancy-infinite-family-hold.md)
+- [Erdős Problem 178 (balancing infinite families of sequences)](bounded-discrepancy-infinite-family.md)
+- [Beck's theorem on balancing infinite families of sequences (Erdős Problem 178)](bounded-discrepancy-infinite-family-hold.md)

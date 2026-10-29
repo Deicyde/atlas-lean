@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.quadForm_cartesianImagPart
 ---
 
-# Quad Form cartesian Imag Part
+# Quadratic form of the imaginary Cartesian part
 
-The quadratic form of the imaginary Cartesian part is the negative
-imaginary part of the quadratic form. The sign is the shadow of Mathlib's
-convention that the inner product is conjugate-linear in its first
-argument: for the Cartesian decomposition `T = A + i * B`, one has
-`⟪T x, x⟫ = ⟪A x, x⟫ - i * ⟪B x, x⟫`, so `⟪B x, x⟫ = -Im ⟪T x, x⟫`.
+**Quadratic form of the imaginary Cartesian part.** Let $T$ be a bounded operator on a complex
+Hilbert space $H$, whose inner product $\langle \cdot, \cdot \rangle$ is conjugate-linear in its
+first argument, and let $B = (T - T^*)/(2i)$ be the imaginary Cartesian part of $T$. Then for
+every $x \in H$ one has $\langle B x, x \rangle = -\operatorname{Im} \langle T x, x \rangle$.
+
+The sign comes from the convention on the inner product: writing $T = A + iB$ with
+$A = (T + T^*)/2$, one has
+$\langle T x, x \rangle = \langle A x, x \rangle - i \langle B x, x \rangle$.
 
 ## Depends on
 
-- [Cartesian Imag Part](cartesian-imag-part.md)
+- [Imaginary Cartesian part of an operator](cartesian-imag-part.md)
 
 ## Proof depends on
 
-- [Star Ring End neg I div two](star-ring-end-neg-i-div-two.md)
+- [Complex conjugate of minus half the imaginary unit](star-ring-end-neg-i-div-two.md)
 
 ## Sources
 

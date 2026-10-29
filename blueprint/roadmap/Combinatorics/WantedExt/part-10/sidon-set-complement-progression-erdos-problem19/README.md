@@ -4,5 +4,5 @@ navigation: module
 
 # Sidon Set Complement Progression Erdos Problem198
 
-- [Sidon Complement Contains Progression](sidon-complement-contains-progression.md)
-- [Sidon Complement Contains Progression refuted](sidon-complement-contains-progression-re.md)
+- [Erdős Problem 198](sidon-complement-contains-progression.md)
+- [Erdős Problem 198 is false](sidon-complement-contains-progression-re.md)

@@ -21,7 +21,7 @@ https://arxiv.org/abs/1206.6541.
 
 ## Depends on
 
-- [Servedio Tan Verbin Conjecture](servedio-tan-verbin-conjecture.md)
+- [The Servedio–Tan–Verbin conjecture](servedio-tan-verbin-conjecture.md)
 
 ## Sources
 

@@ -6,9 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFredholmAlternative.ker_smul_id_sub_eq_eigenspace
 ---
 
-# Ker smul id sub eq eigenspace
+# The kernel of a scalar minus an operator is an eigenspace
 
-The kernel of `μ • 1 - T` is the eigenspace of `T` for the eigenvalue `μ`.
+**The kernel of a scalar minus an operator is an eigenspace.** Let $H$ be an inner product
+space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T$ be a bounded linear operator on $H$,
+let $I$ be the identity of $H$, and let $\mu \in \mathbb{K}$. Then the kernel of $\mu I - T$
+equals the eigenspace $\{x \in H : T x = \mu x\}$ of $T$ for $\mu$.
 
 ## Depends on
 

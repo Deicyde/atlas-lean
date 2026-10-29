@@ -5,20 +5,25 @@ statement: formalized
 lean: LineArrangement.hConstant
 ---
 
-# H Constant
+# Harbourne constant of a line arrangement
 
-The Harbourne constant `H(A) = (d² - ∑_p m_p²) / s` of an arrangement of `d` lines with `s`
-singular points `p` of multiplicities `m_p`: the self-intersection of the strict transform of the
-arrangement on the blow-up of its singular points, divided by `s`.
+**Harbourne constant of a line arrangement.** Let $A$ be an arrangement of $d$ lines in the
+projective plane over a field, let $S$ be its set of singular points, with $s$ elements, and let
+$m_p$ be the multiplicity of a point $p$ in $A$. The Harbourne constant of $A$ is the real number
+
+$$H(A) = \frac{d^2 - \sum_{p \in S} m_p^2}{s}.$$
+
+Every arrangement has a singular point, so $s \ge 1$. The number $H(A)$ is the self-intersection
+of the strict transform of the arrangement on the blow-up of its singular points, divided by $s$.
 
 ## Depends on
 
-- [Line Arrangement](line-arrangement.md)
+- [Line arrangement](line-arrangement.md)
 
 ## Proof depends on
 
-- [Multiplicity](multiplicity.md)
-- [Singular Points](singular-points.md)
+- [Multiplicity of a point in a line arrangement](multiplicity.md)
+- [Singular points of a line arrangement](singular-points.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.norm_shiftCLM
 ---
 
-# Norm shift CLM
+# The unilateral shift has operator norm one
 
-The operator norm of the unilateral shift is `1`.
+**The unilateral shift has operator norm one.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, and let $S$ be the unilateral shift on the Hilbert space
+$\ell^2(\mathbb{N}, \mathbb{K})$ of square-summable sequences in $\mathbb{K}$, given by
+$S(x_0, x_1, \dots) = (0, x_0, x_1, \dots)$. Then the operator norm of $S$ is $\|S\| = 1$.
 
 ## Depends on
 
-- [Shift CLM](shift-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Proof depends on
 
-- [Norm shift CLM apply](norm-shift-clm-apply.md)
-- [Norm shift Lin Map apply](norm-shift-lin-map-apply.md)
-- [Shift Lin Map](shift-lin-map.md)
+- [The unilateral shift preserves norms](norm-shift-clm-apply.md)
+- [The forward shift linear map preserves norms](norm-shift-lin-map-apply.md)
+- [Forward shift as a linear map](shift-lin-map.md)
 
 ## Sources
 

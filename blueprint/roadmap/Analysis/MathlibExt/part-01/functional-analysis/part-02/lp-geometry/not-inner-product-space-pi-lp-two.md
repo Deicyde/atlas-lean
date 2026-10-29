@@ -6,10 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.not_innerProductSpace_piLp_two
 ---
 
-# Not inner Product Space pi Lp two
+# The $\ell^p$ norm on $\mathbb{R}^2$ comes from no inner product unless $p = 2$
 
-For `p ≠ 2`, no inner product on `PiLp p (Fin 2 → ℝ)` induces its `ℓ^p` norm:
-any such inner product would satisfy the parallelogram law.
+**The $\ell^p$ norm on $\mathbb{R}^2$ comes from no inner product unless $p = 2$.** Let
+$p \in [1, \infty]$ with $p \neq 2$. Then the normed space $\mathbb{R}^2$ with the $\ell^p$ norm
+carries no real inner product space structure, that is, there is no real inner product with
+$\langle x, x \rangle = \|x\|^2$ for every $x$.
+
+Any such inner product would satisfy the parallelogram law, which fails for $(1, 1)$ and
+$(1, -1)$.
 
 ## Depends on
 
@@ -17,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lp Two Minus](lp-two-minus.md)
-- [Lp Two Plus](lp-two-plus.md)
-- [Parallelogram fails pi Lp two](parallelogram-fails-pi-lp-two.md)
+- [The vector $(1, -1)$ in $\ell^p_2$](lp-two-minus.md)
+- [The vector $(1, 1)$ in $\ell^p_2$](lp-two-plus.md)
+- [The parallelogram law fails on $\mathbb{R}^2$ with the $\ell^p$ norm for $p \neq 2$](parallelogram-fails-pi-lp-two.md)
 
 ## Sources
 

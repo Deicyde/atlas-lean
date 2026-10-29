@@ -8,12 +8,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.cartesian_decomposit
 
 # Cartesian decomposition
 
-The Cartesian decomposition `T = A + i * B`.
+**Cartesian decomposition.** Every bounded linear operator $T$ on a complex Hilbert space
+satisfies $T = A + iB$, where $A = (T + T^*)/2$ and $B = (T - T^*)/(2i)$ are the real and
+imaginary Cartesian parts of $T$ and $T^*$ is the adjoint of $T$.
 
 ## Depends on
 
-- [Cartesian Imag Part](cartesian-imag-part.md)
-- [Cartesian Real Part](cartesian-real-part.md)
+- [Imaginary Cartesian part of an operator](cartesian-imag-part.md)
+- [Real Cartesian part of an operator](cartesian-real-part.md)
 
 ## Sources
 

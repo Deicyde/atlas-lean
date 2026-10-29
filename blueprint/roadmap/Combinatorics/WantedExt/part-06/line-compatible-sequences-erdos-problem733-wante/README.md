@@ -4,7 +4,7 @@ navigation: module
 
 # Line Compatible Sequences Erdos Problem733
 
-- [Line Sizes](line-sizes.md)
-- [Line Compatible Count](line-compatible-count.md)
-- [Line Compatible Count Subexponential](line-compatible-count-subexponential.md)
-- [Line Compatible Count Subexponential holds](line-compatible-count-subexponential-hol.md)
+- [Line sizes of a planar point set](line-sizes.md)
+- [Number of line-compatible sequences](line-compatible-count.md)
+- [Subexponential count of line-compatible sequences (statement)](line-compatible-count-subexponential.md)
+- [Szemerédi–Trotter bound on line-compatible sequences](line-compatible-count-subexponential-hol.md)

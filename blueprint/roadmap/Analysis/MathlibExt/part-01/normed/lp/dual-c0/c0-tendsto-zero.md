@@ -6,13 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0_tendsto_zero
 ---
 
-# C0 tendsto zero
+# Elements of $c_0$ tend to zero along the cofinite filter
 
-Canonical `C₀` functions on the discrete index vanish along `cofinite`.
+**Elements of $c_0$ tend to zero along the cofinite filter.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $\iota$ be an index type, and let $c_0(\iota, \mathbb{K})$ be
+the space of functions $\iota \to \mathbb{K}$ vanishing at infinity for the discrete
+topology on $\iota$. For every $x \in c_0(\iota, \mathbb{K})$, the coordinates $x_i$ tend to
+$0$ along the cofinite filter on $\iota$.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Sources
 

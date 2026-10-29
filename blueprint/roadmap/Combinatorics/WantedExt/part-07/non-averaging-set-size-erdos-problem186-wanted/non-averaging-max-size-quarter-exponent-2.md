@@ -5,14 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.NonAveragingSetSizeErdosProblem186Wanted.nonAveragingMaxSizeQuarterExponent_holds
 ---
 
-# Non Averaging Max Size Quarter Exponent holds
+# Pham–Zakharov theorem on non-averaging sets
 
-Resolved true: Bosznay constructed non-averaging subsets of `{1, …, N}` of size `≫ N^{1/4}`, and
-Pham and Zakharov proved the matching upper bound `N^{1/4 + o(1)}`, so `F(N) = N^{1/4 + o(1)}`.
+**Pham–Zakharov theorem on non-averaging sets.** For every $\varepsilon > 0$ and every
+sufficiently large $N$, some non-averaging subset of $\{1, \dots, N\}$ has at least
+$N^{1/4 - \varepsilon}$ elements, and every non-averaging subset of $\{1, \dots, N\}$ has at most
+$N^{1/4 + \varepsilon}$ elements. Thus the largest non-averaging subset of $\{1, \dots, N\}$ has
+size $N^{1/4 + o(1)}$.
+
+Bosznay constructed non-averaging subsets of $\{1, \dots, N\}$ of size $\gg N^{1/4}$, and Pham and
+Zakharov proved the matching upper bound $N^{1/4 + o(1)}$.
 
 ## Depends on
 
-- [Non Averaging Max Size Quarter Exponent](non-averaging-max-size-quarter-exponent.md)
+- [Erdős Problem 186 on non-averaging sets](non-averaging-max-size-quarter-exponent.md)
 
 ## Sources
 

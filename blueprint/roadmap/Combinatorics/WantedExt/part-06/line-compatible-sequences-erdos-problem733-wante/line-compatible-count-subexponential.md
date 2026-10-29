@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineCompatibleSequencesErdosProblem733Wanted.lineCompatibleCountSubexponential
 ---
 
-# Line Compatible Count Subexponential
+# Subexponential count of line-compatible sequences (statement)
 
-Erdős Problem 733: there are at most `exp(O(n^{1/2}))` line-compatible sequences, i.e.
-`f(n) ≤ exp(C √n)` for some constant `C` and all `n`.
+**Subexponential count of line-compatible sequences (statement).** The proposition that
+there is a real constant $C$ such that for every natural number $n$, the number $f(n)$ of
+line-compatible sequences for $n$ is at most $e^{C \sqrt{n}}$; that is, there are at most
+$\exp(O(\sqrt{n}))$ line-compatible sequences. This is Erdős Problem 733.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Line Compatible Count](line-compatible-count.md)
+- [Number of line-compatible sequences](line-compatible-count.md)
 
 ## Sources
 

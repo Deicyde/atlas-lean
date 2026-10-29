@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.mesh_pos_of_lt
 ---
 
-# Mesh pos of lt
+# The mesh is positive on a nondegenerate interval
 
-If `a < b`, then the mesh of any partition of `[a, b]` is strictly positive.
+**The mesh is positive on a nondegenerate interval.** If $a < b$, then every partition of
+$[a, b]$ has strictly positive mesh.
 
 ## Depends on
 
-- [Partition](partition.md)
-- [Mesh](mesh.md)
+- [Partition of an interval](partition.md)
+- [Mesh of a partition](mesh.md)
 
 ## Proof depends on
 
-- [N pos of lt](n-pos-of-lt.md)
+- [A partition of a nondegenerate interval has a subinterval](n-pos-of-lt.md)
 
 ## Sources
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.norm_volterraOperator_le_one
 ---
 
-# Norm volterra Operator le one
+# The Volterra operator has norm at most one
 
-Operator-norm bound for the Volterra operator.
+**The Volterra operator has norm at most one.** The Volterra operator $V$,
+$(Vf)(x) = \int_0^x f(t)\,dt$, acting on the space of bounded continuous real functions on
+$[0, 1]$ with the sup norm, has operator norm $\|V\| \le 1$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 
-- [Volterra Linear Map](volterra-linear-map.md)
-- [Volterra Linear Map norm le](volterra-linear-map-norm-le.md)
+- [The Volterra operator as a linear map](volterra-linear-map.md)
+- [Sup-norm bound for the Volterra linear map](volterra-linear-map-norm-le.md)
 
 ## Sources
 

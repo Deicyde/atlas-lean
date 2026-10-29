@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FourCliqueFiveColoursErdosProblem136Wanted.fourFiveColourNumber
 ---
 
-# Four Five Colour Number
+# The $(4, 5)$-colouring number $f(n)$
 
-`f(n)`: the least number of colours in a `(4, 5)`-colouring of `K_n`.
+**The $(4, 5)$-colouring number $f(n)$.** For a natural number $n$, $f(n)$ is the least
+natural number $k$ such that $K_n$ has a $(4, 5)$-colouring with $k$ colours; such a $k$
+always exists.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Four Five Colouring](has-four-five-colouring.md)
+- [$(4, 5)$-colourings of $K_n$](has-four-five-colouring.md)
 
 ## Sources
 

@@ -6,20 +6,21 @@ proof: formalized
 lean: AddCircle.integral_fejerKernel
 ---
 
-# Integral fejer Kernel
+# The Fejér kernel has integral one
 
-The Fejér kernel integrates to `1` on the circle:
-`∫_{AddCircle T} K_N(t) dt = 1`. This is one of the defining properties of an
+**The Fejér kernel has integral one.** Let $T > 0$ and $N \in \mathbb{N}$. The $N$-th Fejér
+kernel $K_N$ on the circle $\mathbb{R}/T\mathbb{Z}$ satisfies $\int K_N = 1$ with respect to the
+Haar probability measure on the circle. This is one of the defining properties of an
 approximation to the identity.
 
 ## Depends on
 
-- [Fejer Kernel](fejer-kernel.md)
+- [The Fejér kernel](fejer-kernel.md)
 
 ## Proof depends on
 
-- [Fourier integrable](fourier-integrable.md)
-- [Integral dirichlet sum](integral-dirichlet-sum.md)
+- [Integrability of Fourier characters](fourier-integrable.md)
+- [The Dirichlet kernel has integral one](integral-dirichlet-sum.md)
 
 ## Sources
 

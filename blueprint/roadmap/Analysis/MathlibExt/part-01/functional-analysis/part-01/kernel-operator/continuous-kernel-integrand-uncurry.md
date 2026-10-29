@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.continuous_kernelIntegrand_uncurry
 ---
 
-# Continuous kernel Integrand uncurry
+# Joint continuity of the kernel integrand
 
-The integrand is jointly continuous in `(x, t)`.
+**Joint continuity of the kernel integrand.** Let $\pi(t) = \max(0, \min(1, t))$ clamp a
+real number $t$ to $[0, 1]$. For every continuous kernel $k$ on $[0, 1] \times [0, 1]$ and every
+bounded continuous function $f$ on $[0, 1]$, the kernel integrand
+$(x, t) \mapsto k(x, \pi(t)) \, f(\pi(t))$ is jointly continuous on $[0, 1] \times \mathbb{R}$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Integrand](kernel-integrand.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Kernel integrand](kernel-integrand.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Extend continuous](kernel-extend-continuous.md)
+- [Clamped extension](kernel-extend.md)
+- [Continuity of the clamped extension](kernel-extend-continuous.md)
 
 ## Sources
 

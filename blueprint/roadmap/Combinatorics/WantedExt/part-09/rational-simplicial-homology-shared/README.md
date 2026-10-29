@@ -4,11 +4,11 @@ navigation: module
 
 # Rational Simplicial Homology Shared
 
-- [Is Simplicial Complex](is-simplicial-complex.md)
-- [Faces Of Card](faces-of-card.md)
-- [Boundary Matrix](boundary-matrix.md)
-- [Reduced Betti](reduced-betti.md)
-- [Is Rationally Acyclic](is-rationally-acyclic.md)
+- [Finite abstract simplicial complex](is-simplicial-complex.md)
+- [Faces with a given number of vertices](faces-of-card.md)
+- [Simplicial boundary matrix](boundary-matrix.md)
+- [Reduced rational Betti numbers](reduced-betti.md)
+- [Rationally acyclic complexes](is-rationally-acyclic.md)
 - [Link](link.md)
-- [Top Card](top-card.md)
-- [Is Facet](is-facet.md)
+- [Largest face size](top-card.md)
+- [Facet](is-facet.md)

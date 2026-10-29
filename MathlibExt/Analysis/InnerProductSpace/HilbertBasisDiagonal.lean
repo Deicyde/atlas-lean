@@ -80,15 +80,28 @@ private theorem diagonalOperator_eq_repr_symm {b : HilbertBasis ι 𝕜 H} {a : 
   ext i
   simp [diagonalOperator, lp.mapCLM_apply_coe, HilbertBasis.repr_apply_apply]
 
-/-- The `repr` coordinates of the diagonal operator. -/
+/-- **Coordinates of a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an inner
+product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), with inner product
+$\langle \cdot, \cdot \rangle$ conjugate-linear in the first argument, let
+$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$, and let $D$ be the diagonal operator
+with coefficients $a$. For every $x \in H$ and $i \in \iota$, the $i$-th coordinate of $D x$ in
+$\ell^2(\iota)$ with respect to the basis $(b_i)$ is $a_i \langle b_i, x \rangle$. -/
 theorem repr_diagonalOperator_apply {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) (i : ι) :
     b.repr (diagonalOperator b a hC x) i = a i * ⟪b i, x⟫_𝕜 := by
   rw [diagonalOperator_eq_repr_symm hC x]
   simp [LinearIsometryEquiv.apply_symm_apply]
 
-/-- The series formula for a bounded diagonal map is a genuine convergent
-Hilbert-basis expansion. -/
+/-- **Series formula for a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an
+inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), with inner product
+$\langle \cdot, \cdot \rangle$ conjugate-linear in the first argument, and let
+$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$. The diagonal operator $D$ with
+coefficients $a$ satisfies, for every $x \in H$,
+$$
+D x = \sum_{i \in \iota} a_i \langle b_i, x \rangle \, b_i,
+$$
+where the sum is the unconditional sum over $\iota$ (taken to be $0$ if the family is not
+summable). -/
 theorem diagonalOperator_eq_tsum {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) :
     diagonalOperator b a hC x = ∑' i, (a i * ⟪b i, x⟫_𝕜) • b i := by

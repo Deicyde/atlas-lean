@@ -4,5 +4,5 @@ navigation: module
 
 # Homogeneous Set Log Weight Erdos Problem191
 
-- [Homogeneous Set Large Log Weight](homogeneous-set-large-log-weight.md)
-- [Homogeneous Set Large Log Weight holds](homogeneous-set-large-log-weight-holds.md)
+- [Erdős Problem 191](homogeneous-set-large-log-weight.md)
+- [Monochromatic sets of large logarithmic weight exist](homogeneous-set-large-log-weight-holds.md)

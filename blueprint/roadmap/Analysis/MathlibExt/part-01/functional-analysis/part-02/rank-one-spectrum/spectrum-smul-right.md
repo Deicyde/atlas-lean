@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.RankOneSpectrum.spectrum_smulRight
 ---
 
-# Spectrum smul Right
+# Spectrum of the operator $x \mapsto f(x)\,y$
 
-The spectrum of `f.smulRight y` is exactly `{0, f y}`, provided
-`y ≠ 0` (so `y` is an eigenvector for `f y`) and `f` has a nonzero
-kernel vector (so `0` is an eigenvalue). The zero functional is allowed.
-Without the kernel hypothesis
-this fails: on a one-dimensional space a nonzero rank-one operator is a
-nonzero scalar multiple of the identity, whose spectrum is a singleton.
+**Spectrum of the operator $x \mapsto f(x)\,y$.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $E$ be a Banach space over $\mathbb{K}$, let
+$f \colon E \to \mathbb{K}$ be a continuous linear functional, and let $y \in E$ with $y \neq 0$.
+If some $w \in E$ with $w \neq 0$ satisfies $f(w) = 0$, then the spectrum of the bounded
+operator $T x = f(x)\,y$ on $E$ is exactly $\{0, f(y)\}$.
+
+Here $y$ is an eigenvector for $f(y)$ and $w$ is an eigenvector for $0$; the zero functional is
+allowed. Without the kernel hypothesis this fails: on a one-dimensional space a nonzero operator
+of this form is a nonzero multiple of the identity, whose spectrum is a single point.
 
 ## Depends on
 
@@ -21,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mem spectrum smul Right](mem-spectrum-smul-right.md)
-- [Mem spectrum smul Right zero](mem-spectrum-smul-right-zero.md)
-- [Not mem spectrum smul Right](not-mem-spectrum-smul-right.md)
+- [$f(y)$ lies in the spectrum of $x \mapsto f(x)\,y$](mem-spectrum-smul-right.md)
+- [$0$ lies in the spectrum of $x \mapsto f(x)\,y$ when $f$ has a nontrivial kernel](mem-spectrum-smul-right-zero.md)
+- [The spectrum of $x \mapsto f(x)\,y$ lies in $\{0, f(y)\}$](not-mem-spectrum-smul-right.md)
 
 ## Sources
 

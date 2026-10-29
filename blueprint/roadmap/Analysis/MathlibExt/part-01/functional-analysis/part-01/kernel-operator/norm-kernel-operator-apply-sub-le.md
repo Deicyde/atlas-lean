@@ -6,25 +6,28 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.norm_kernelOperator_apply_sub_le
 ---
 
-# Norm kernel Operator apply sub le
+# Difference bound for the values of a kernel operator
 
-A pointwise bound on the kernel difference gives a bound on the
-difference of the values of the operator.
+**Difference bound for the values of a kernel operator.** Let $k$ be a continuous kernel on
+$[0, 1] \times [0, 1]$, let $K$ be the integral operator with kernel $k$ on $C([0, 1], \mathbb{R})$,
+let $f \in C([0, 1], \mathbb{R})$, and let $x, x' \in [0, 1]$ and $\delta \in \mathbb{R}$. If
+$|k(x, y) - k(x', y)| \le \delta$ for every $y \in [0, 1]$, then
+$|(Kf)(x) - (Kf)(x')| \le \delta \, \|f\|_\infty$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Extend continuous](kernel-extend-continuous.md)
-- [Kernel Integrand](kernel-integrand.md)
-- [Kernel Integrand continuous](kernel-integrand-continuous.md)
-- [Kernel Operator apply](kernel-operator-apply.md)
-- [Norm kernel Extend le](norm-kernel-extend-le.md)
+- [Clamped extension](kernel-extend.md)
+- [Continuity of the clamped extension](kernel-extend-continuous.md)
+- [Kernel integrand](kernel-integrand.md)
+- [Continuity of the kernel integrand in $t$](kernel-integrand-continuous.md)
+- [Evaluation formula for the integral operator](kernel-operator-apply.md)
+- [The clamped extension is bounded by the supremum norm](norm-kernel-extend-le.md)
 
 ## Sources
 

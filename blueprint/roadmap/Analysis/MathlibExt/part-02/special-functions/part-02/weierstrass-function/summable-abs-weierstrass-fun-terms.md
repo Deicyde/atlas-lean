@@ -6,10 +6,11 @@ proof: formalized
 lean: Real.summable_abs_weierstrassFun_terms
 ---
 
-# Theorem III (1)
+# Absolute convergence of the Weierstrass series
 
-**Theorem III (1).** The defining series of the Weierstrass function is
-absolutely convergent at every point.
+**Absolute convergence of the Weierstrass series.** For every real number $x$, the series
+$\sum_{k \ge 0} \cos(160^k x) / 4^k$ defining the Weierstrass function converges absolutely,
+that is, $\sum_{k \ge 0} |\cos(160^k x) / 4^k|$ is summable.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm weierstrass Fun term le](norm-weierstrass-fun-term-le.md)
+- [Termwise bound for the Weierstrass series](norm-weierstrass-fun-term-le.md)
 
 ## Sources
 

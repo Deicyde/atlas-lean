@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.identityProductNecklace_count_pi_cyclic
 ---
 
-# Identity Product Necklace count pi cyclic
+# Identity-product necklaces over a product of cyclic groups
 
-Corollary 6: for `G = ∏_{i=1}^m C_{k_i}` (written additively as `∏ ZMod k_i`, as
-`Multiplicative`), the number of identity-product `n`-necklaces is
-`(1/n) ∑_{d ∣ n} φ(n/d) ∏_i gcd(k_i, n/d) k_i^{d-1}`.
+**Identity-product necklaces over a product of cyclic groups.** Let $k_1, \dots, k_m$ be
+positive integers and let $G = C_{k_1} \times \dots \times C_{k_m}$, where $C_k$ is the cyclic
+group $\mathbb{Z} / k\mathbb{Z}$ written multiplicatively. For $n \ge 1$, the number of rotation
+orbits of $n$-tuples $(x_1, \dots, x_n) \in G^n$ with $x_1 x_2 \cdots x_n = 1$ (identity-product
+$n$-necklaces) is
+
+$$\frac{1}{n} \sum_{d \mid n} \varphi(n/d) \prod_{i=1}^{m} \gcd(k_i, n/d)\, k_i^{d-1},$$
+
+where $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

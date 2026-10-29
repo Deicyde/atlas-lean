@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedSobolevCriticalWanted.phi
 ---
 
-# Phi
+# The weight of the critical weighted Sobolev inequality
 
-`phi x = max (‖x‖ - 1) 0`.
+**The weight of the critical weighted Sobolev inequality.** For $x$ in the Euclidean plane
+$\mathbb{R}^2$, the weight is $\phi(x) = \max\{|x| - 1, 0\}$, the distance from $x$ to the closed
+unit disc.
 
 ## Depends on
 
-- [R2](r2.md)
+- [The plane of the critical weighted Sobolev inequality](r2.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedHardyInequalityWanted.B
 ---
 
-# B
+# Open discs about the origin for the annulus Hardy inequality
 
-The open ball of radius `r` about the origin of the plane.
+**Open discs about the origin for the annulus Hardy inequality.** For a real number $r$,
+$B_r = \{x \in \mathbb{R}^2 : |x| < r\}$ is the open disc of radius $r$ about the origin of the
+Euclidean plane $\mathbb{R}^2$, where $|x|$ is the Euclidean norm.
 
 ## Depends on
 

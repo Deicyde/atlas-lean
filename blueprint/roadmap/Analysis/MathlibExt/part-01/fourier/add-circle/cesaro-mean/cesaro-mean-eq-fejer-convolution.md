@@ -6,23 +6,30 @@ proof: formalized
 lean: AddCircle.cesaroMean_eq_fejer_convolution
 ---
 
-# Cesaro Mean eq fejer convolution
+# Cesàro–Fourier means are convolutions with the Fejér kernel
 
-The Cesàro–Fourier mean as a convolution against the Fejér kernel:
-`σ_N f(x) = ∫_{AddCircle T} K_N(t) • f(x - t) dt`,
-valid for any integrable `f`. This is the bridge from the abstract definition of
-`σ_N f` to the kernel-theoretic analysis underlying Fejér's theorem.
+**Cesàro–Fourier means are convolutions with the Fejér kernel.** Let $T > 0$ and let
+$f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ be integrable with respect to the Haar probability
+measure $dt$ on the circle. Then for every $N \in \mathbb{N}$ and every
+$x \in \mathbb{R}/T\mathbb{Z}$, the $N$-th Cesàro–Fourier mean of $f$ satisfies
+
+$$\sigma_N f(x) = \int_{\mathbb{R}/T\mathbb{Z}} K_N(t)\, f(x - t)\, dt,$$
+
+where $K_N$ is the $N$-th Fejér kernel.
+
+This is the bridge from the definition of $\sigma_N f$ to the kernel-theoretic analysis
+underlying Fejér's theorem.
 
 ## Depends on
 
-- [Cesaro Fourier Mean](cesaro-fourier-mean.md)
-- [Fejer Kernel](../fejer-kernel/fejer-kernel.md)
+- [Cesàro–Fourier means](cesaro-fourier-mean.md)
+- [The Fejér kernel](../fejer-kernel/fejer-kernel.md)
 
 ## Proof depends on
 
-- [Fourier integral convolution](fourier-integral-convolution.md)
-- [Fourier smul integrable](fourier-smul-integrable.md)
-- [Partial Fourier Sum](partial-fourier-sum.md)
+- [Convolution of a function with a Fourier character](fourier-integral-convolution.md)
+- [Integrability of a function twisted by a Fourier character](fourier-smul-integrable.md)
+- [Partial Fourier sums](partial-fourier-sum.md)
 
 ## Sources
 

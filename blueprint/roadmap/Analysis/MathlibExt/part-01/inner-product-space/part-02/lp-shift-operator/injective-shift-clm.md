@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.injective_shiftCLM
 ---
 
-# Injective shift CLM
+# The unilateral shift is injective
 
-The unilateral shift is injective.
+**The unilateral shift is injective.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. The
+unilateral shift on $\ell^2(\mathbb{N}, \mathbb{K})$ is injective.
 
 ## Depends on
 
-- [Shift CLM](shift-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Proof depends on
 
-- [Backward CLM](backward-clm.md)
-- [Backward comp shift](backward-comp-shift.md)
+- [Backward shift](backward-clm.md)
+- [Left inverse of the unilateral shift](backward-comp-shift.md)
 
 ## Sources
 

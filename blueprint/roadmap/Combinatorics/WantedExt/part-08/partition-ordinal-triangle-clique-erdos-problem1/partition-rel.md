@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartitionOrdinalTriangleCliqueErdosProblem118Wanted.PartitionRel
 ---
 
-# Partition Rel
+# Ordinal partition relation
 
-The ordinal partition relation `α → (α, n)²`: for every colouring `c` of the pairs `x < y`
-of ordinals below `α` (`true` = red, `false` = blue) there is a red set of order type `α` (the
-image of a strictly increasing map from the ordinals below `α` into themselves) or a blue set of
-`n` ordinals below `α`.
+**Ordinal partition relation.** For an ordinal $\alpha$ and a natural number $n$, the partition
+relation $\alpha \to (\alpha, n)^2$ holds when every colouring of the pairs $x < y$ of ordinals
+below $\alpha$ in red and blue has a red set of order type $\alpha$ or a blue set of size $n$:
+either there is a strictly increasing map $f$ from the ordinals below $\alpha$ to the ordinals
+below $\alpha$ such that the pair $\{f(x), f(y)\}$ is red for all $x < y < \alpha$, or there is a
+set of $n$ ordinals below $\alpha$ all of whose pairs are blue.
 
 ## Depends on
 

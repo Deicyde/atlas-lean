@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.lpMulCLM_congr_ae
 ---
 
-# Lp Mul CLM congr ae
+# Multiplication operators with almost everywhere equal multipliers coincide
 
-The multiplication operator depends only on the almost-everywhere class of
-the multiplier.
+**Multiplication operators with almost everywhere equal multipliers coincide.** Let $\mu$ be
+a measure on a measurable space $\alpha$ and let $\varphi, \psi \colon \alpha \to \mathbb{C}$ be
+essentially bounded, almost everywhere strongly measurable functions. If $\varphi = \psi$
+$\mu$-almost everywhere, then the multiplication operators $M_\varphi$ and $M_\psi$ on
+$L^2(\mu)$ are equal.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Mem Lp mul of mem Lp top](mem-lp-mul-of-mem-lp-top.md)
+- [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 
 ## Sources
 

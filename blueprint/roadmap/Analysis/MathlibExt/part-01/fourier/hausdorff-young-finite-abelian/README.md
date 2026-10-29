@@ -4,6 +4,6 @@ navigation: module
 
 # Hausdorff Young Finite Abelian
 
-- [Dft Fun sup le](dft-fun-sup-le.md)
-- [Sum norm sq dft Fun](sum-norm-sq-dft-fun.md)
-- [Hausdorff Young dft](hausdorff-young-dft.md)
+- [The $p = 1$ endpoint of Hausdorff–Young](dft-fun-sup-le.md)
+- [The $p = 2$ endpoint of Hausdorff–Young (Plancherel)](sum-norm-sq-dft-fun.md)
+- [Hausdorff–Young inequality on a finite abelian group](hausdorff-young-dft.md)

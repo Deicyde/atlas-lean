@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.chainPolynomial
 ---
 
-# Chain Polynomial
+# Chain polynomial
 
-The chain polynomial `C(P, t) = ∑_k c_k(P) t^k` of a finite poset, where `c_k(P)` is the number
-of `k`-element chains (`c_0 = 1`, the empty chain).
+**Chain polynomial.** For a finite partially ordered set $P$ and each natural number $k$, let
+$c_k(P)$ be the number of $k$-element chains of $P$, that is, of $k$-element subsets of $P$ any two
+of whose elements are comparable; in particular $c_0(P) = 1$, counting the empty chain. The chain
+polynomial of $P$ is the polynomial $C(P, t) = \sum_{k \ge 0} c_k(P)\, t^k$ with integer
+coefficients.
 
 ## Depends on
 

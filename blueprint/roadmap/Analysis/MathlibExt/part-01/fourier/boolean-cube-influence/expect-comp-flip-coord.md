@@ -6,18 +6,22 @@ proof: formalized
 lean: BooleanCube.expect_comp_flipCoord
 ---
 
-# Expect comp flip Coord
+# Averages are invariant under flipping a coordinate
 
-Averaging over the flipped points is averaging over all points.
+**Averages are invariant under flipping a coordinate.** Let $M$ be an additive commutative
+monoid that is a module over the nonnegative rationals, let $f$ be a function from the Boolean
+cube in $n$ coordinates to $M$, and let $i < n$. Writing $x^{\oplus i}$ for $x$ with coordinate
+$i$ flipped, the uniform average of $f(x^{\oplus i})$ over all points $x$ of the cube equals the
+uniform average of $f(x)$.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Flip Coord](flip-coord.md)
+- [Coordinate flip on the Boolean cube](flip-coord.md)
 
 ## Proof depends on
 
-- [Flip Coord involutive](flip-coord-involutive.md)
+- [Flipping a coordinate is an involution](flip-coord-involutive.md)
 
 ## Sources
 

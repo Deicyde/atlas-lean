@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.LaplaceTransformLpBoundedIffTwoWanted.laplaceTransform_bounded_on_Lp_iff_eq_two
 ---
 
-# Laplace Transform Lp Bounded Iff Two Wanted
+# The Laplace transform is bounded on $L^p((0,\infty))$ exactly when $p = 2$
 
-Let `Lf` denote the Laplace transform
-\[
-Lf(s) = \int_0^\infty e^{-xs} f(x) \, dx.
-\]
-Prove that `L` is a bounded operator on `L^p([0, +\infty))` if and only if `p = 2`.
+**The Laplace transform is bounded on $L^p([0,\infty))$ exactly when $p = 2$.** For a real
+function $f$ on $\mathbb{R}$ let
+
+$$Lf(s) = \int_0^\infty e^{-xs} f(x)\,dx \qquad (s \in \mathbb{R}).$$
+
+Let $p \in [1,\infty]$. Then $p = 2$ if and only if there is a constant $C$ with $0 < C < \infty$
+such that every real function $f \in L^p([0,\infty))$ satisfies $Lf \in L^p([0,\infty))$ and
+$\|Lf\|_{L^p([0,\infty))} \le C\,\|f\|_{L^p([0,\infty))}$.
 
 ## Depends on
 

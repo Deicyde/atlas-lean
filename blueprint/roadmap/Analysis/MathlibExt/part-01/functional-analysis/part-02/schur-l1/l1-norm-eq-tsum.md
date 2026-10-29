@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.SchurL1.l1_norm_eq_tsum
 ---
 
-# L1 norm eq tsum
+# The $\ell^1$ norm is the sum of the coordinate norms
 
-The norm on `ℓ¹(ℕ, 𝕜)` is the sum of the coordinate norms.
+**The $\ell^1$ norm is the sum of the coordinate norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. Every $x \in \ell^1(\mathbb{N}, \mathbb{K})$ satisfies
+$\|x\| = \sum_{i=0}^{\infty} |x_i|$.
 
 ## Depends on
 

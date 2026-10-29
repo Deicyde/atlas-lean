@@ -8,8 +8,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.not_bijectiv
 
 # A compact operator on an infinite-dimensional Banach space is not bijective
 
-**A compact operator on an infinite-dimensional Banach space is not
-bijective.** This is the bounded-inverse form of the previous statement.
+**A compact operator on an infinite-dimensional Banach space is not bijective.** Let $E$ be an
+infinite-dimensional Banach space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a
+compact bounded linear operator on $E$. Then $T$ is not bijective.
+
+By the bounded inverse theorem, a bijective bounded operator on a Banach space has a bounded
+inverse, so this follows from the fact that a compact operator on an infinite-dimensional space
+has no bounded two-sided inverse.
 
 ## Depends on
 

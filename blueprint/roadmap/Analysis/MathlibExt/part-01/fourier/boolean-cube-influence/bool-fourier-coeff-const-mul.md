@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_const_mul
 ---
 
-# Bool Fourier Coeff const mul
+# Homogeneity of Fourier coefficients
 
-Fourier coefficients are homogeneous.
+**Homogeneity of Fourier coefficients.** For every real $c$, every real-valued function $f$
+on the Boolean cube in $n$ coordinates and every set $S$ of the $n$ coordinates, the Fourier
+coefficient of $c f$ at $S$ is $c$ times the Fourier coefficient of $f$ at $S$:
+$\widehat{c f}(S) = c \hat f(S)$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ Fourier coefficients are homogeneous.
 
 ## Proof depends on
 
-- [Bool Fourier Coeff eq expect](bool-fourier-coeff-eq-expect.md)
+- [Fourier coefficients as averages](bool-fourier-coeff-eq-expect.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
 
 ## Sources

@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.frame_reconstruction
 ---
 
-# Frame reconstruction
+# Frame reconstruction formula
 
-The frame reconstruction formula: every vector is the sum of its frame
-coefficients against the dual frame.
+**Frame reconstruction formula.** Let $(f_i)_{i \in \iota}$, with $\iota$ finite, be a frame
+with bounds $A$ and $B$ in a Hilbert space $E$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and
+let $S^{-1}$ be the inverse of its frame operator. Then every $x \in E$ satisfies
+$x = \sum_{i \in \iota} \langle f_i, S^{-1} x \rangle f_i$.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Frame Operator Inv](frame-operator-inv.md)
+- [Finite frame](is-frame.md)
+- [Inverse frame operator](frame-operator-inv.md)
 
 ## Proof depends on
 
-- [Frame Operator](frame-operator.md)
-- [Frame Operator apply](frame-operator-apply.md)
-- [Frame Operator comp frame Operator Inv](frame-operator-comp-frame-operator-inv.md)
+- [Frame operator](frame-operator.md)
+- [Frame operator formula](frame-operator-apply.md)
+- [The inverse frame operator is a right inverse](frame-operator-comp-frame-operator-inv.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineIncidenceSetsCountErdosProblem607Wanted.lineIncidenceSet
 ---
 
-# Line Incidence Set
+# Line-incidence set of a finite planar point set
 
-`A(P)`: the set of the numbers `|ℓ ∩ P|` over the lines `ℓ` determined by `P` (the lines
-through at least two points of `P`).
+**Line-incidence set of a finite planar point set.** For a finite set
+$P \subseteq \mathbb{R}^2$, $A(P)$ is the set of the numbers $|\ell \cap P|$ over the lines $\ell$
+determined by $P$, that is, the lines through at least two distinct points of $P$.
 
 ## Depends on
 

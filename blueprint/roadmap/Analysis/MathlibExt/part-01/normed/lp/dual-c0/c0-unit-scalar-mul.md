@@ -6,13 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0UnitScalar_mul
 ---
 
-# C0 Unit Scalar mul
+# The normalizing scalar times $w$ is $|w|$
 
-The scalar identity behind the test vector.
+**The normalizing scalar times $w$ is $|w|$.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+For every $w \in \mathbb{K}$, the normalizing scalar $u(w)$ of $w$, which is $0$ if $w = 0$ and
+$\overline{w}/|w|$ otherwise, satisfies $u(w)\, w = |w|$, with $|w|$ regarded as an element of
+$\mathbb{K}$.
 
 ## Depends on
 
-- [C0 Unit Scalar](c0-unit-scalar.md)
+- [The normalizing scalar $\overline{w}/|w|$](c0-unit-scalar.md)
 
 ## Sources
 

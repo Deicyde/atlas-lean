@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.bloomSawinSchildkrautZhelezovNumericalUpperBound
 ---
 
-# Bloom Sawin Schildkraut Zhelezov Numerical Upper Bound
+# Statement of the Bloom–Sawin–Schildkraut–Zhelezov numerical upper bound
 
-The nonoptimized explicit upper bound from the quantified version of the 2026 argument.
+**Statement of the Bloom–Sawin–Schildkraut–Zhelezov numerical upper bound.** The statement that
+the real sum-product exponent $C$ satisfies $C \le 199999913/100000000$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Exponent](sum-product-exponent.md)
+- [Sum-product exponent of the reals](sum-product-exponent.md)
 
 ## Sources
 

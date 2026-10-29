@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpNormTendstoEssSupWanted.tendsto_eLpNorm_atTop_eLpNorm_top_of_isFiniteMeasure
 ---
 
-# Lp Norm Tendsto Ess Sup Wanted
+# The $L^p$ norm tends to the $L^\infty$ norm
 
-Assume $|\Omega|\lt \infty$. Let $f\in L^{\infty}(\Omega)$. Prove that
-$\lim_{p\to\infty}\|f\|_{p}=\|f\|_{\infty}$.
+**The $L^p$ norm tends to the $L^\infty$ norm.** Let $\mu$ be a finite measure on a measurable
+space $\alpha$ and let $f \colon \alpha \to \mathbb{R}$ be essentially bounded,
+$f \in L^\infty(\mu)$. Then $\|f\|_{L^p(\mu)} \to \|f\|_{L^\infty(\mu)}$ as the real exponent
+$p$ tends to $\infty$.
 
 ## Depends on
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AffineMapIterateRepetitionErdosProblem481Wanted.affineIterateHasRepetition
 ---
 
-# Affine Iterate Has Repetition
+# Erdős Problem 481: repetitions under affine expansion
 
-Erdős Problem 481: if `a, b : Fin r → ℕ` with every `a i ≥ 1` and `∑ 1 / a i > 1`, then
-starting from `A₁ = (1)` some iterate `A_k = T^[k - 1] (1)` has a repeated entry.
+**Erdős Problem 481: repetitions under affine expansion.** The statement that for every
+$r \in \mathbb{N}$ and all maps $a, b : \{0, \dots, r - 1\} \to \mathbb{N}$ with $a_i \ge 1$ for
+every $i$ and $\sum_{i < r} 1 / a_i > 1$, if $T$ is the affine expansion of $a$ and $b$, sending a
+finite sequence $(x_1, \dots, x_n)$ of natural numbers to the sequence of all $a_i x_j + b_i$,
+listed in blocks for $i = 0, 1, \dots, r - 1$ (the order does not affect whether an entry repeats),
+then, starting from $A_1 = (1)$ with $A_{k+1} = T(A_k)$, some $A_k$ has a repeated entry.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Affine Expand](affine-expand.md)
+- [Affine expansion of a sequence](affine-expand.md)
 
 ## Sources
 

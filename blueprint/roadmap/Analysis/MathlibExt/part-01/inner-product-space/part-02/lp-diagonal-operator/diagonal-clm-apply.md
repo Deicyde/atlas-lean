@@ -6,18 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpDiagonalOperator.diagonalCLM_apply
 ---
 
-# Diagonal CLM apply
+# Coordinates of a diagonal operator on ℓ²
 
-Pointwise action of the shared diagonal operator.
+**Coordinates of a diagonal operator on ℓ².** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $\iota$ be a type, let $a : \iota \to \mathbb{K}$ be a bounded sequence and let
+$D_a$ be the diagonal operator on $\ell^2(\iota, \mathbb{K})$ with coefficients $a$. For every
+$x \in \ell^2(\iota, \mathbb{K})$ and every $i \in \iota$, the $i$-th coordinate of $D_a x$ is
+$a_i x_i$.
 
 ## Depends on
 
-- [Diagonal CLM](diagonal-clm.md)
+- [Diagonal operator on ℓ²](diagonal-clm.md)
 
 ## Proof depends on
 
 - [Diagonal Operator](../hilbert-basis-diagonal/diagonal-operator.md)
-- [Repr diagonal Operator apply](../hilbert-basis-diagonal/repr-diagonal-operator-apply.md)
+- [Coordinates of a diagonal operator](../hilbert-basis-diagonal/repr-diagonal-operator-apply.md)
 
 ## Sources
 

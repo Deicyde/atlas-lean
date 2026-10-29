@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_sum_mul_cubeChi
 ---
 
-# Bool Fourier Coeff sum mul cube Chi
+# Uniqueness of the Fourier expansion
 
-Uniqueness of the Fourier expansion: the coefficients of `∑_T a_T χ_T` are the `a_T`.
+**Uniqueness of the Fourier expansion.** For real numbers $a_T$ indexed by the sets
+$T \subseteq \{0, \dots, n-1\}$, let $g(x) = \sum_T a_T \chi_T(x)$ on the Boolean cube
+$\{-1, 1\}^n$, where $\chi_T$ is the Fourier character of $T$. Then for every set
+$S \subseteq \{0, \dots, n-1\}$ the Fourier coefficient of $g$ at $S$ is $\hat g(S) = a_S$.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ Uniqueness of the Fourier expansion: the coefficients of `∑_T a_T χ_T` are th
 
 ## Proof depends on
 
-- [Bool Fourier Coeff eq sum div two pow](bool-fourier-coeff-eq-sum-div-two-pow.md)
-- [Sum cube Chi mul cube Chi eq ite](sum-cube-chi-mul-cube-chi-eq-ite.md)
+- [Fourier coefficients as sums over the cube](bool-fourier-coeff-eq-sum-div-two-pow.md)
+- [Orthogonality of the Boolean cube characters](sum-cube-chi-mul-cube-chi-eq-ite.md)
 
 ## Sources
 

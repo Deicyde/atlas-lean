@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Trunc_apply
 ---
 
-# C0 Trunc apply
+# Coordinates of a finite truncation
 
-The coordinates of a finite truncation.
+**Coordinates of a finite truncation.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
+and let $\iota$ be an index type. For a finite set $s \subseteq \iota$, an element
+$x \in c_0(\iota, \mathbb{K})$ and an index $j \in \iota$, the $j$-th coordinate of the
+truncation of $x$ to $s$ equals $x_j$ if $j \in s$ and $0$ otherwise.
 
 ## Depends on
 
-- [C0](c0.md)
-- [C0 Trunc](c0-trunc.md)
+- [The sequence space $c_0$](c0.md)
+- [Finite truncation of a $c_0$ sequence](c0-trunc.md)
 
 ## Proof depends on
 
-- [C0 Finset Sum apply](c0-finset-sum-apply.md)
+- [Coordinates of a finitely supported sequence](c0-finset-sum-apply.md)
 
 ## Sources
 

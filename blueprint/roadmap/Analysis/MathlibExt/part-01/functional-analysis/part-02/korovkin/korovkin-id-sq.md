@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinIdSq
 ---
 
-# Korovkin Id Sq
+# The square test function
 
-The square function on `[0, 1]`, as a continuous map.
+**The square test function.** The function $x \mapsto x^2$ on $[0, 1]$, as an element
+of $C([0, 1], \mathbb{R})$.
 
 ## Depends on
 

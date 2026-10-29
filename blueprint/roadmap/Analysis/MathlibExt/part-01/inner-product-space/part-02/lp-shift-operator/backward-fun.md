@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.backwardFun
 ---
 
-# Backward Fun
+# Backward shift of a sequence
 
-The backward-shift function on sequences: drop coordinate `0` and shift down by one.
+**Backward shift of a sequence.** For any type $K$, the backward shift of a sequence
+$x \colon \mathbb{N} \to K$ is the sequence $n \mapsto x_{n+1}$: it drops the coordinate $x_0$
+and shifts every other coordinate down by one.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.conjecture
 ---
 
-# Conjecture
+# Order-robust ordered Ramsey conjecture for 100-regular graphs
 
-Does there exist `c > 0` such that for every sufficiently large `n` there
-exists a 100-regular graph `H` on `n` vertices with `r_<(H) ≥ n ^ (1 + c)` for
-every ordering of `H`?
+**Order-robust ordered Ramsey conjecture for 100-regular graphs.** There are a real number
+$c > 0$ and a natural number $N_0$ such that for every $n \ge N_0$ there is a $100$-regular simple
+graph $H$ on $\{0, \dots, n - 1\}$ such that $r_<(H, \lt _H) \ge n^{1+c}$ for every strict total
+order $\lt _H$ on its vertices, where $r_<(H, \lt _H)$ is the ordered Ramsey number of $H$ with the
+order $\lt _H$.
+
+This is the AIM question asking whether such a $c$ exists, stated as a claim.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ordered Ramsey Number](ordered-ramsey-number.md)
+- [Ordered Ramsey number](ordered-ramsey-number.md)
 - [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources

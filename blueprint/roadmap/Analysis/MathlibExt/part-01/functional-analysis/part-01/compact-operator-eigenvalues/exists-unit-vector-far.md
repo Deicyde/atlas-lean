@@ -6,16 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.exists_unit_vector_far
 ---
 
-# Riesz separation for eigenvector spans
+# Riesz separation for nested spans
 
-**Riesz separation for eigenvector spans.** Given a family `u` whose
-`n`-th term is never in the span of the earlier terms, for each `n` there
-is a unit vector `y` in the span of the first `n + 1` terms that stays at
-distance at least `1 / 2` from the span of the first `n` terms. This is
-Riesz's lemma for the closed subspace spanned by the first `n` terms,
-proved directly from the distance `d > 0` of `u n` to that subspace:
-one takes `y` to be the normalization of `u n - z` for a `z` in the
-subspace almost realizing the distance.
+**Riesz separation for nested spans.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $(u_n)_{n \in \mathbb{N}}$ be vectors in $E$, and
+for each $n$ let $V_n$ be the linear span of $\{u_i : i < n\}$. Suppose $u_n \notin V_n$ for
+every $n$. Then for every $n$ there is a vector $y \in V_{n+1}$ with $\|y\| = 1$ and
+$\|y - z\| \ge 1/2$ for every $z \in V_n$.
+
+This is Riesz's lemma for the finite-dimensional, hence closed, subspace $V_n$: one takes $y$ to be
+the normalization of $u_n - z$ for a $z \in V_n$ almost realizing the distance $d > 0$ from
+$u_n$ to $V_n$.
 
 ## Depends on
 

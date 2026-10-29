@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.OrderedRamseyProp
 ---
 
-# Ordered Ramsey Prop
+# Ordered Ramsey property
 
-Ordered Ramsey property at `N`: every red/blue coloring of the complete
-ordered graph on `N` vertices contains a monochromatic ordered copy of `H`.
+**Ordered Ramsey property.** Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict
+total order $\lt _H$ on its vertices. A natural number $N$ has the ordered Ramsey property for
+$(H, \lt _H)$ when every simple graph $G$ on $\{0, \dots, N - 1\}$ contains a red ordered copy of
+$(H, \lt _H)$ or admits a blue ordered copy of $(H, \lt _H)$. Equivalently, every red/blue colouring of
+the edges of the complete graph on $\{0, \dots, N - 1\}$ with its natural order, with red edges
+those of $G$, contains a monochromatic ordered copy of $(H, \lt _H)$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ ordered graph on `N` vertices contains a monochromatic ordered copy of `H`.
 
 ## Proof depends on
 
-- [Has Blue Ordered Copy](has-blue-ordered-copy.md)
-- [Has Red Ordered Copy](has-red-ordered-copy.md)
+- [Blue ordered copy](has-blue-ordered-copy.md)
+- [Red ordered copy](has-red-ordered-copy.md)
 
 ## Sources
 

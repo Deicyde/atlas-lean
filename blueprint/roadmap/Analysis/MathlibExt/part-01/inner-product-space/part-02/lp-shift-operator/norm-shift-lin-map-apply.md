@@ -6,17 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.norm_shiftLinMap_apply
 ---
 
-# Norm shift Lin Map apply
+# The forward shift linear map preserves norms
 
-The forward shift preserves norms.
+**The forward shift linear map preserves norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, and let $S$ be the forward shift on the space $\ell^2(\mathbb{N}, \mathbb{K})$ of
+square-summable sequences in $\mathbb{K}$, viewed as a linear map and given by
+$S(x_0, x_1, \dots) = (0, x_0, x_1, \dots)$. Then $\|Sx\| = \|x\|$ for every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Shift Lin Map](shift-lin-map.md)
+- [Forward shift as a linear map](shift-lin-map.md)
 
 ## Proof depends on
 
-- [Tsum shift Fun norm](tsum-shift-fun-norm.md)
+- [Square sum of the forward shift](tsum-shift-fun-norm.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Real.continuous_weierstrassFun
 ---
 
-# Theorem III (2)
+# Continuity of the Weierstrass function
 
-**Theorem III (2).** The Weierstrass function is continuous on `ℝ`
-(it is a uniform limit of continuous partial sums).
+**Continuity of the Weierstrass function.** The Weierstrass function
+$W(x) = \sum_{k \ge 0} \cos(160^k x) / 4^k$ is continuous on $\mathbb{R}$.
+
+It is a uniform limit of continuous partial sums.
 
 ## Depends on
 
-- [Weierstrass Fun](weierstrass-fun.md)
+- [The Weierstrass function](weierstrass-fun.md)
 
 ## Proof depends on
 
-- [Norm weierstrass Fun term le](norm-weierstrass-fun-term-le.md)
+- [Termwise bound for the Weierstrass series](norm-weierstrass-fun-term-le.md)
 
 ## Sources
 

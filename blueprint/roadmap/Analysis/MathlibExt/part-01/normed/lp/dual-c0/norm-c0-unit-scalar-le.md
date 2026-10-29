@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.norm_c0UnitScalar_le
 ---
 
-# Norm c0 Unit Scalar le
+# The normalizing scalar has absolute value at most one
 
-The unit scalar has norm at most one.
+**The normalizing scalar has absolute value at most one.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. For every $w \in \mathbb{K}$, the normalizing scalar $u(w)$ of $w$, which is $0$ if
+$w = 0$ and $\overline{w}/|w|$ otherwise, satisfies $|u(w)| \le 1$.
 
 ## Depends on
 
-- [C0 Unit Scalar](c0-unit-scalar.md)
+- [The normalizing scalar $\overline{w}/|w|$](c0-unit-scalar.md)
 
 ## Sources
 

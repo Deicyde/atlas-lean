@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraOperator
 ---
 
-# Volterra Operator
+# The Volterra operator
 
-The Volterra operator `(Vf)(x) = ∫₀ˣ f(t) dt` as a bounded operator on `C([0, 1], ℝ)`.
+**The Volterra operator.** The bounded real-linear operator $V$ on the space of bounded
+continuous real functions on $[0, 1]$ (equivalently $C([0, 1], \mathbb{R})$ with the sup norm)
+given by $(Vf)(x) = \int_0^x f(t)\,dt$ for $x \in [0, 1]$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
+- [The domain of the Volterra operator](volterra-space.md)
 
 ## Proof depends on
 
-- [Volterra Linear Map](volterra-linear-map.md)
-- [Volterra Linear Map norm le](volterra-linear-map-norm-le.md)
+- [The Volterra operator as a linear map](volterra-linear-map.md)
+- [Sup-norm bound for the Volterra linear map](volterra-linear-map-norm-le.md)
 
 ## Sources
 

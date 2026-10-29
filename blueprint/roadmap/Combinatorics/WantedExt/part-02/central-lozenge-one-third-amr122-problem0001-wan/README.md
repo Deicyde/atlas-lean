@@ -4,9 +4,9 @@ navigation: module
 
 # Central Lozenge One Third AMR122 Problem0001
 
-- [Lattice Triangle](lattice-triangle.md)
-- [In Hexagon](in-hexagon.md)
-- [Shares Edge](shares-edge.md)
+- [Unit triangles of the triangular lattice](lattice-triangle.md)
+- [Unit triangles of a semiregular hexagon](in-hexagon.md)
+- [Unit triangles sharing an edge](shares-edge.md)
 - [Hexagon Graph](hexagon-graph.md)
-- [Central Lozenge One Third](central-lozenge-one-third.md)
-- [Central Lozenge One Third holds](central-lozenge-one-third-holds.md)
+- [Propp's central lozenge problem](central-lozenge-one-third.md)
+- [The central lozenge lies in one third of the tilings](central-lozenge-one-third-holds.md)

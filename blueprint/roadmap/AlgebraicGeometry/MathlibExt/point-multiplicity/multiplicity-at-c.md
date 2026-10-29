@@ -6,19 +6,21 @@ proof: formalized
 lean: MvPolynomial.multiplicityAt_C
 ---
 
-# Multiplicity At C
+# Constants have multiplicity zero
 
-Constants have multiplicity zero everywhere (for the zero constant, this is the junk
-value).
+**Constants have multiplicity zero.** Let $K$ be a field. For every $a \in K$, the constant
+polynomial $a$ in the variables $(X_i)_{i \in \sigma}$ has multiplicity $0$ at every point $p$ of
+the projective space $\mathbb{P}(K^\sigma)$. For $a = 0$ this is the junk value of the
+multiplicity of the zero polynomial.
 
 ## Depends on
 
-- [Multiplicity At](multiplicity-at.md)
+- [Multiplicity of a polynomial at a projective point](multiplicity-at.md)
 
 ## Proof depends on
 
-- [Order At](order-at.md)
-- [Order At C of ne zero](order-at-c-of-ne-zero.md)
+- [Order of vanishing at a point](order-at.md)
+- [Nonzero constants vanish to order zero](order-at-c-of-ne-zero.md)
 
 ## Sources
 

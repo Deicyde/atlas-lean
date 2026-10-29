@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HomogeneousSetLogWeightErdosProblem191Wanted.homogeneousSetLargeLogWeight
 ---
 
-# Homogeneous Set Large Log Weight
+# Erdős Problem 191
 
-Erdős Problem 191: for every `C > 0` and all large `n`, every 2-colouring of the pairs of
-`{2, …, n}` (the edges and non-edges of a graph `G`) has a monochromatic set `X ⊆ {2, …, n}` (a
-clique or an independent set) with `∑_{x ∈ X} 1 / log x ≥ C`.
+**Erdős Problem 191.** The statement that for every real $C > 0$ there is an $N$ such that for
+every $n \ge N$ and every graph $G$ on the natural numbers (its edges and non-edges 2-colour the
+pairs of $\{2, \dots, n\}$) there is a finite set $X \subseteq \{2, \dots, n\}$ that is a clique
+or an independent set of $G$ (a monochromatic set) with $\sum_{x \in X} 1 / \log x \ge C$.
 
 ## Depends on
 

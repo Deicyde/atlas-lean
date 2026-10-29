@@ -6,19 +6,21 @@ proof: formalized
 lean: Submodule.topologicalAnnihilator_topologicalClosure
 ---
 
-# Topological Annihilator topological Closure
+# Topological annihilator of the closure
 
-The annihilator of a subspace equals the annihilator of its closure:
-a continuous functional vanishing on `S` vanishes on the closure of `S`.
+**Topological annihilator of the closure.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. For every subspace $S$ of $E$, the topological
+annihilator of the topological closure $\overline{S}$ equals the topological annihilator of
+$S$: a continuous linear functional vanishing on $S$ vanishes on $\overline{S}$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
+- [Topological annihilator](topological-annihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Annihilator](mem-topological-annihilator.md)
-- [Topological Annihilator anti](topological-annihilator-anti.md)
+- [Membership in the topological annihilator](mem-topological-annihilator.md)
+- [The topological annihilator reverses inclusion](topological-annihilator-anti.md)
 
 ## Sources
 

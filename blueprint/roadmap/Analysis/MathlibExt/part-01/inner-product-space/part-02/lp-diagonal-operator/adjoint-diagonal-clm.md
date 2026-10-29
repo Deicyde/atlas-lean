@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpDiagonalOperator.adjoint_diagonalCLM
 ---
 
-# Adjoint diagonal CLM
+# Adjoint of a diagonal operator
 
-The adjoint of a diagonal operator is the diagonal operator with conjugate coefficients.
+**Adjoint of a diagonal operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let
+$\iota$ be a type and let $a : \iota \to \mathbb{K}$ be a bounded sequence. The adjoint of the
+diagonal operator $D_a$ on $\ell^2(\iota, \mathbb{K})$ with coefficients $a$ is the diagonal
+operator with the conjugate coefficients $i \mapsto \overline{a_i}$.
 
 ## Depends on
 
-- [Diagonal CLM](diagonal-clm.md)
+- [Diagonal operator on ℓ²](diagonal-clm.md)
 
 ## Proof depends on
 
-- [Diagonal CLM apply](diagonal-clm-apply.md)
+- [Coordinates of a diagonal operator on ℓ²](diagonal-clm-apply.md)
 
 ## Sources
 

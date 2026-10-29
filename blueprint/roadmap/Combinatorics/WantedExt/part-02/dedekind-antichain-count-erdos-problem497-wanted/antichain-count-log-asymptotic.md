@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.DedekindAntichainCountErdosProblem497Wanted.antichainCountLogAsymptotic
 ---
 
-# Antichain Count Log Asymptotic
+# Erdős Problem 497: the asymptotic statement for Dedekind numbers
 
-Erdős Problem 497, Kleitman's answer: the number of antichains of subsets of `[n]` is
-`2 ^ ((1 + o(1)) C(n, ⌊n / 2⌋))`, i.e. `log₂ M(n) / C(n, ⌊n / 2⌋) → 1`.
+**Erdős Problem 497: the asymptotic statement for Dedekind numbers.** Let $M(n)$ be the
+number of antichains with respect to inclusion among the subsets of an $n$-element set (the
+Dedekind number). The statement is that $\log_2 M(n) / \binom{n}{\lfloor n/2 \rfloor} \to 1$
+as $n \to \infty$; equivalently, $M(n) = 2^{(1 + o(1)) \binom{n}{\lfloor n/2 \rfloor}}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Antichain Count](antichain-count.md)
+- [Dedekind numbers](antichain-count.md)
 
 ## Sources
 

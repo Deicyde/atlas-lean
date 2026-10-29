@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsUnate
 ---
 
-# Is Unate
+# Unate Boolean function
 
-A Boolean function is unate if every variable is either positively or
-negatively unate. Cites [OWR-10252930-018] unate.
+**Unate Boolean function.** A Boolean function $f : \{\mathrm{true}, \mathrm{false}\}^n \to
+\{\mathrm{true}, \mathrm{false}\}$ is unate if, for every variable $i$, $f$ is positively unate
+in $i$ or negatively unate in $i$.
 
 ## Depends on
 
@@ -16,9 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Negative Unate In](is-negative-unate-in.md)
-- [Is Positive Unate In](is-positive-unate-in.md)
+- [Negatively unate variable](is-negative-unate-in.md)
+- [Positively unate variable](is-positive-unate-in.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted](../../../../../sources/v2/WantedExt.md)
+- [OWR-10252930-018], unate.

@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HypergraphSizeRamseyBinomialAIMCombinatoricsProblem52Wanted.Arrows3
 ---
 
-# Arrows3
+# Hypergraph arrowing the complete 3-uniform hypergraph
 
-The 3-graph `H` on `Fin N` arrows `K_n^{(3)}`: under every 2-colouring of its triples there is
-an `n`-set all of whose triples are edges of `H` of one colour.
+**Hypergraph arrowing the complete 3-uniform hypergraph.** Let $H$ be a family of subsets of
+$\{0, \dots, N-1\}$ and let $n$ be a natural number. Then $H$ arrows $K_n^{(3)}$ when for every
+colouring of the subsets of $\{0, \dots, N-1\}$ with two colours there exist an $n$-element set
+$S \subseteq \{0, \dots, N-1\}$ and a colour such that every 3-element subset of $S$ belongs to
+$H$ and has that colour.
 
 ## Depends on
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.BoundedL1MemL2NormBoundWanted.memLp_two_and_eLpNorm_two_le_of_bounded_of_memLp_one
 ---
 
-# Bounded L1 Mem L2 Norm Bound Wanted
+# A bounded integrable function is square integrable
 
-If $f$ is bounded ($|f(x)| \le M$), and $f \in L^{1}(\mathbb{R}^{d})$, then $f \in
-L^{2}(\mathbb{R}^{d})$ with
+**A bounded integrable function is square integrable.** Let $d$ be a natural number, let
+$M \ge 0$, and let $f \colon \mathbb{R}^d \to \mathbb{R}$ satisfy $|f(x)| \le M$ for every
+$x \in \mathbb{R}^d$. If $f \in L^1(\mathbb{R}^d)$, then $f \in L^2(\mathbb{R}^d)$ and
 
-\[
-\|f\|_{L^{2}(\mathbb{R}^{d})} \le M^{1/2}\,\|f\|_{L^{1}(\mathbb{R}^{d})}^{1/2}.
-\]
+$$\|f\|_{L^2(\mathbb{R}^d)} \le M^{1/2} \, \|f\|_{L^1(\mathbb{R}^d)}^{1/2},$$
+
+where the spaces and norms are taken with respect to Lebesgue measure.
 
 ## Depends on
 

@@ -5,23 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.bloomSawinSchildkrautZhelezovUpperBound_holds
 ---
 
-# Bloom Sawin Schildkraut Zhelezov Upper Bound holds
+# Bloom–Sawin–Schildkraut–Zhelezov upper bound for the real sum-product exponent
 
-Resolved false: Every registered target is settled. The historical Erdős–Szemerédi conjecture
-C84b = 2 for real sets is refuted: Bloom, Sawin, Schildkraut and Zhelezov (arXiv:2605.28781,
-2026) construct arbitrarily large A ⊂ ℝ with max(|A+A|, |AA|) ≤ |A|^(2−c), as recorded on
-erdosproblems.com/52 and in Optimization Problems 84b. The other registered targets hold by the
-sources that list records: the ε-uniform characterization of C84b, the upper bounds 2, 2 − c and
-1.99999913 (the last from the authors' sketched explicit version of their argument), and the
-lower bounds 1, 5/4, 14/11, 4/3, 1558/1167, 1270/951 and 4/3 + 10/4407. The exact value of C84b
-remains open and is not a registered target; the integer sum-product question (Erdős Problem 52)
-is open and not formalized here. This target holds: Bloom, Sawin, Schildkraut and Zhelezov
-(arXiv:2605.28781, abstract): an absolute constant c > 0 with max(|A+A|, |AA|) ≤ |A|^(2-c) for
-arbitrarily large real A, hence C84b ≤ 2 - c (Optimization Problems 84b, upper bound 2 - c).
+**Bloom–Sawin–Schildkraut–Zhelezov upper bound for the real sum-product exponent.** There is a
+real number $c > 0$ such that the real sum-product exponent $C$ satisfies $C \le 2 - c$. Here,
+for a finite set $A \subset \mathbb{R}$, $A + A$ and $A \cdot A$ are the sets of sums $a + b$
+and products $ab$ with $a, b \in A$, and $M(A) = \max(|A + A|, |A \cdot A|)$; for $n \ge 2$,
+$m(n)$ is the minimum of $\log M(A) / \log |A|$ over all $A \subset \mathbb{R}$ with
+$|A| = n$; and $C = \liminf_{n \to \infty} m(n)$.
+
+Bloom, Sawin, Schildkraut and Zhelezov (arXiv:2605.28781) construct arbitrarily large finite
+sets $A \subset \mathbb{R}$ with $M(A) \le |A|^{2 - c}$ for an absolute constant $c > 0$;
+Optimization Problems 84b lists the resulting upper bound $2 - c$.
 
 ## Depends on
 
-- [Bloom Sawin Schildkraut Zhelezov Upper Bound](bloom-sawin-schildkraut-zhelezov-upper-b.md)
+- [Statement of the Bloom–Sawin–Schildkraut–Zhelezov upper bound](bloom-sawin-schildkraut-zhelezov-upper-b.md)
 
 ## Sources
 

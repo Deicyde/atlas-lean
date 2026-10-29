@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GreenProblem69Wanted.IsCube
 ---
 
-# Is Cube
+# Cubes in $\mathbb{F}_3^n$
 
-A cube: the image of `{0, 1}^n` under a linear automorphism of `𝔽₃^n`.
+**Cubes in $\mathbb{F}_3^n$.** A set $A \subseteq \mathbb{F}_3^n$ is a cube if there is an
+$\mathbb{F}_3$-linear automorphism $e$ of $\mathbb{F}_3^n$ with $A = e(\{0, 1\}^n)$, the image of
+the standard cube $\{0, 1\}^n$ under $e$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cube Origin](cube-origin.md)
+- [The standard cube in $\mathbb{F}_3^n$](cube-origin.md)
 
 ## Sources
 

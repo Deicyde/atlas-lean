@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.summable_norm_sq_cesaroMean
 ---
 
-# Summable norm sq cesaro Mean
+# Cesàro means of square-summable sequences are square-summable
 
-The squared norms of the Cesàro means of an `ℓ²` sequence are summable,
-by Hardy's inequality at `p = 2`.
+**Cesàro means of square-summable sequences are square-summable.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$. For every $x \in \ell^2(\mathbb{N}, \mathbb{K})$, the Cesàro means
+$\sigma_n = (x_0 + x_1 + \dots + x_n)/(n + 1)$ satisfy: the series $\sum_n |\sigma_n|^2$ converges.
+
+This follows from Hardy's inequality at $p = 2$.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro Mean](cesaro-mean.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [Cesàro means of a sequence](cesaro-mean.md)
 
 ## Proof depends on
 
-- [Norm cesaro Mean le](norm-cesaro-mean-le.md)
+- [A Cesàro mean is bounded by the mean of the norms](norm-cesaro-mean-le.md)
 - [Hardy's inequality](../../../series/hardy-inequality.md)
 
 ## Sources

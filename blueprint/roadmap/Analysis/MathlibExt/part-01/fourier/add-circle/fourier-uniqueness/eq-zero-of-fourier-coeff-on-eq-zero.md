@@ -6,13 +6,18 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.AddCircle.FourierUniqueness.eq_zero_of_fourierCoeffOn_eq_zero
 ---
 
-# Uniqueness on an interval
+# Uniqueness of Fourier coefficients on an interval
 
-**Uniqueness on an interval.** Let `f : ℝ → ℂ` be continuous with
-`f a = f (a + T)`. If every Fourier coefficient of `f` on `[a, a + T]`
-vanishes, then `f` vanishes on the whole interval `[a, a + T]`. This is an
-interval corollary of circle uniqueness; the endpoint condition gives a
-continuous function on `AddCircle T`.
+**Uniqueness of Fourier coefficients on an interval.** Let $a, T \in \mathbb{R}$ with
+$T > 0$, and let $f : \mathbb{R} \to \mathbb{C}$ be continuous with $f(a) = f(a + T)$. If the
+Fourier coefficients of $f$ on $[a, a + T]$,
+
+$$\hat f(n) = \frac{1}{T} \int_a^{a+T} e^{-2\pi i n x / T} f(x)\,dx,$$
+
+are $0$ for every $n \in \mathbb{Z}$, then $f(x) = 0$ for every $x \in [a, a + T]$.
+
+This is a corollary of uniqueness on the circle: the endpoint condition makes $f$ on
+$[a, a + T]$ descend to a continuous function on $\mathbb{R}/T\mathbb{Z}$.
 
 ## Depends on
 

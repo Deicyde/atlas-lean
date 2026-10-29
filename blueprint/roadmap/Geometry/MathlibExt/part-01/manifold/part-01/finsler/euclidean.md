@@ -15,7 +15,7 @@ The Euclidean Finsler metric `F(x, v) = ‖v‖` of an inner product space `F`.
 
 ## Proof depends on
 
-- [Norm Sq Hessian](../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Erdos Rainbow APGrowth
 
-- [Has Good AP](has-good-ap.md)
-- [H](h.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Good arithmetic progressions](has-good-ap.md)
+- [Monochromatic-or-rainbow progression number](h.md)
+- [Erdős Problem 190 on monochromatic or rainbow progressions](conjecture.md)
+- [Solution of Erdős Problem 190 on monochromatic or rainbow progressions](conjecture-holds.md)

@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.KatzSmallDoublingProgressionsWanted.katzAPSet
 ---
 
-# Katz APSet
+# Arithmetic progressions in a finite set of integers, as pairs
 
-Set of `k`-term arithmetic progressions in `A`, as start/difference pairs
-`(a, d)` with `a + i * d ∈ A` for all `i < k`; its `Set.ncard` is the number
-of `k`-term progressions in the source. Source: [AIM-COMBINATORICS-0211],
-AIM Problem Lists, Recent trends in additive combinatorics, item 1.5,
-`aim-combinatorics-notes.json notes[210]`.
+**Arithmetic progressions in a finite set of integers, as pairs.** For a natural number $k$
+and a finite set $A \subseteq \mathbb{Z}$, the set of pairs $(a, d)$ of integers such that
+$a + i d \in A$ for every natural number $i < k$. The pair $(a, d)$ stands for the $k$-term
+arithmetic progression $a, a + d, \dots, a + (k - 1)d$; the difference $d$ may be zero or
+negative.
 
 ## Depends on
 
@@ -20,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KatzSmallDoublingProgressionsWanted](../../../../../sources/v2/WantedExt.md)
+- [AIM-COMBINATORICS-0211], AIM Problem Lists, Recent trends in additive combinatorics, item 1.5, `aim-combinatorics-notes.json notes[210]`.

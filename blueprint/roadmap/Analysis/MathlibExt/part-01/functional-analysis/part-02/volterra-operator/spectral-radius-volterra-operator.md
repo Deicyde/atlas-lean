@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.spectralRadius_volterraOperator
 ---
 
-# Spectral Radius volterra Operator
+# The spectral radius of the Volterra operator is zero
 
-The spectral radius of the Volterra operator is `0`: it is quasinilpotent.
+**The spectral radius of the Volterra operator is zero.** Let $V$ be the Volterra operator
+$(Vf)(x) = \int_0^x f(t)\,dt$ on the space of bounded continuous real functions on $[0, 1]$.
+Its spectral radius over the real scalars, the supremum of $|z|$ over real $z$ in the spectrum
+of $V$, is $0$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 

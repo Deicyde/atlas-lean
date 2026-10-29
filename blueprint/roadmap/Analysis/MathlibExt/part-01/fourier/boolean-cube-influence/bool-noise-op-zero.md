@@ -6,22 +6,25 @@ proof: formalized
 lean: BooleanCube.boolNoiseOp_zero
 ---
 
-# Bool Noise Op zero
+# The noise operator $T_0$ takes the mean
 
-`T_0 f` is the constant function `𝔼 f`.
+**The noise operator $T_0$ takes the mean.** For every function $f$ from the Boolean cube
+$\{-1, 1\}^n$ to $\mathbb{R}$, the noise operator with $\rho = 0$ sends $f$ to the constant
+function whose value is the mean $\mathbb{E}_x f(x) = 2^{-n} \sum_x f(x)$ of $f$ under the
+uniform distribution.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Noise Op](bool-noise-op.md)
+- [Noise operator on the Boolean cube](bool-noise-op.md)
 
 ## Proof depends on
 
 - [Fourier coefficient on the Boolean cube](../boolean-cube/bool-fourier-coeff.md)
-- [Bool Noise Op eq sum](bool-noise-op-eq-sum.md)
+- [Fourier expansion of the noise operator](bool-noise-op-eq-sum.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
 - [The empty Fourier character is constant one](../boolean-cube/cube-chi-empty.md)
-- [Expect eq bool Fourier Coeff empty](expect-eq-bool-fourier-coeff-empty.md)
+- [Average over the Boolean cube as the empty Fourier coefficient](expect-eq-bool-fourier-coeff-empty.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.quadForm_cartesianRealPart
 ---
 
-# Quad Form cartesian Real Part
+# Quadratic form of the real Cartesian part
 
-The quadratic form of the real Cartesian part is the real part of the
-quadratic form.
+**Quadratic form of the real Cartesian part.** Let $T$ be a bounded operator on a complex
+Hilbert space $H$ and let $A = (T + T^*)/2$ be the real Cartesian part of $T$. Then for every
+$x \in H$ one has $\langle A x, x \rangle = \operatorname{Re} \langle T x, x \rangle$.
 
 ## Depends on
 
-- [Cartesian Real Part](cartesian-real-part.md)
+- [Real Cartesian part of an operator](cartesian-real-part.md)
 
 ## Proof depends on
 
-- [Star Ring End half](star-ring-end-half.md)
+- [Complex conjugate of one half](star-ring-end-half.md)
 
 ## Sources
 

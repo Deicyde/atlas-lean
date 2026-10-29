@@ -4,5 +4,5 @@ navigation: module
 
 # Monochromatic Sums Linear Erdos Problem484
 
-- [Monochromatic Sums Linear Count](monochromatic-sums-linear-count.md)
-- [Monochromatic Sums Linear Count holds](monochromatic-sums-linear-count-holds.md)
+- [Erdős Problem 484: linearly many monochromatic sums](monochromatic-sums-linear-count.md)
+- [Erdős–Sárközy–Sós theorem on monochromatic sums (Erdős Problem 484)](monochromatic-sums-linear-count-holds.md)

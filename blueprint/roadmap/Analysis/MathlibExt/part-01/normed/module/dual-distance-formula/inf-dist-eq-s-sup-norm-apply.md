@@ -6,11 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Module.DualDistanceFormula.infDist_eq_sSup_norm_apply
 ---
 
-# Inf Dist eq s Sup norm apply
+# Hahn–Banach distance formula
 
-The distance from `x` to `S` is the supremum of `‖f x‖` over the
-continuous linear functionals of norm at most `1` that vanish on `S`.
-The supremum is attained, by `exists_annihilating_apply_eq_infDist`.
+**Hahn–Banach distance formula.** Let $E$ be a normed space over $\mathbb{K}$, where
+$\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, let $S$ be a linear subspace of $E$, not
+necessarily closed, and let $x \in E$. Then the distance $d(x, S) = \inf_{s \in S} \|x - s\|$
+from $x$ to $S$ equals the supremum of $|f(x)|$ over all continuous linear functionals
+$f \colon E \to \mathbb{K}$ with $\|f\| \le 1$ that vanish on $S$.
+
+The supremum is attained, by the attainment form of the distance formula.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists annihilating apply eq inf Dist](exists-annihilating-apply-eq-inf-dist.md)
+- [Hahn–Banach distance formula, attainment form](exists-annihilating-apply-eq-inf-dist.md)
 
 ## Sources
 

@@ -6,23 +6,28 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.not_isCompactOperator_cesaroCLM
 ---
 
-# Not is Compact Operator cesaro CLM
+# The Cesàro operator is not compact
 
-The Cesàro operator is not compact: the test vectors `cesaroTest (N + 1)` are
-unit vectors. `C` applied to them has squared norm at least `5 / 4`, but converges
-coordinatewise to `0`, so no subsequence can converge in norm.
+**The Cesàro operator is not compact.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. The
+Cesàro operator $C$ on $\ell^2(\mathbb{N}, \mathbb{K})$, given by
+$(Cx)_n = (x_0 + x_1 + \dots + x_n)/(n + 1)$, is not a compact operator.
+
+For $N \ge 1$ let $t_N$ be the unit vector equal to $1/\sqrt{N}$ at the coordinates
+$0, \dots, N - 1$ and to $0$ elsewhere. Then $\|C t_N\|^2 \ge 5/4$ for every $N$, while each
+coordinate of $C t_N$ tends to $0$ as $N \to \infty$, so no subsequence of $(C t_N)$ converges
+in norm.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro CLM](cesaro-clm.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [Cesàro operator on square-summable sequences](cesaro-clm.md)
 
 ## Proof depends on
 
-- [Cesaro Test](cesaro-test.md)
-- [Five div four le norm sq cesaro test](five-div-four-le-norm-sq-cesaro-test.md)
-- [Norm cesaro Test](norm-cesaro-test.md)
-- [Tendsto cesaro test coord zero](tendsto-cesaro-test-coord-zero.md)
+- [Cesàro test vectors](cesaro-test.md)
+- [Lower bound for the Cesàro operator on the test vectors](five-div-four-le-norm-sq-cesaro-test.md)
+- [The Cesàro test vectors are unit vectors](norm-cesaro-test.md)
+- [The Cesàro images of the test vectors tend to zero coordinatewise](tendsto-cesaro-test-coord-zero.md)
 
 ## Sources
 

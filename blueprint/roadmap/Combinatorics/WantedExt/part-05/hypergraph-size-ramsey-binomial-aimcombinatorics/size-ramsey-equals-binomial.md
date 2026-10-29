@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HypergraphSizeRamseyBinomialAIMCombinatoricsProblem52Wanted.sizeRamseyEqualsBinomial
 ---
 
-# Size Ramsey Equals Binomial
+# Dudek–Rödl size Ramsey question
 
-Problem 1.08 (Dudek–Rödl): `r̂₃(n, n) = C(r₃(n, n), 3)` for every `n`.
+**Dudek–Rödl size Ramsey question.** The statement that for every natural number $n$ the
+3-uniform size Ramsey number $\hat r_3(n, n)$ equals the binomial coefficient
+$\binom{r_3(n, n)}{3}$, where $r_3(n, n)$ is the diagonal 3-uniform Ramsey number (AimPL Graph
+Ramsey Theory, Problem 1.08).
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramsey3](ramsey3.md)
-- [Size Ramsey3](size-ramsey3.md)
+- [Diagonal 3-uniform Ramsey number](ramsey3.md)
+- [3-uniform size Ramsey number](size-ramsey3.md)
 
 ## Sources
 

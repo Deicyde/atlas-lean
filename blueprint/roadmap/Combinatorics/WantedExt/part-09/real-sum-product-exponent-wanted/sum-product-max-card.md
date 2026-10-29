@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.sumProductMaxCard
 ---
 
-# Sum Product Max Card
+# Size of the larger of the sumset and the product set
 
-The cardinality of the larger of the pointwise sumset and product set.
+**Size of the larger of the sumset and the product set.** For a finite set $A$ of real
+numbers, this is the natural number $\max(|A+A|, |AA|)$, where $A+A = \{a+b : a, b \in A\}$ is the
+sumset and $AA = \{ab : a, b \in A\}$ is the product set of $A$.
 
 ## Depends on
 

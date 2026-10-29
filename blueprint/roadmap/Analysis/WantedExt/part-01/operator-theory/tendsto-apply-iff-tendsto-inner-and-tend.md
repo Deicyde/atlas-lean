@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.StrongOperatorConvergenceIffWeakAndAdjointWanted.tendsto_apply_iff_tendsto_inner_and_tendsto_inner_adjoint_comp
 ---
 
-# Strong Operator Convergence Iff Weak And Adjoint Wanted
+# Strong operator convergence characterized by weak operator convergence
 
-Let $H$ be a Hilbert space.
-Let $\{T_n\}_{n=1}^\infty \subset L(H)$. Prove that $T_n \to T$ in the strong operator topology if
-and only if $T_n \to T$ in the weak operator topology and $T_n^* T_n \to T^* T$ in the weak operator
-topology.
+**Strong operator convergence characterized by weak operator convergence.** Let $H$ be a real
+or complex Hilbert space with inner product $\langle \cdot, \cdot \rangle$, let
+$(T_n)_{n \in \mathbb{N}}$ be a sequence of bounded linear operators on $H$, let $T$ be a bounded
+linear operator on $H$, and write $S^*$ for the adjoint of an operator $S$. Then $T_n \to T$ in
+the strong operator topology, that is, $T_n x \to T x$ for every $x \in H$, if and only if both
+$T_n \to T$ in the weak operator topology, that is, $\langle y, T_n x \rangle \to
+\langle y, T x \rangle$ for all $x, y \in H$, and $T_n^* T_n \to T^* T$ in the weak operator
+topology, that is, $\langle y, T_n^* T_n x \rangle \to \langle y, T^* T x \rangle$ for all
+$x, y \in H$.
 
 ## Depends on
 

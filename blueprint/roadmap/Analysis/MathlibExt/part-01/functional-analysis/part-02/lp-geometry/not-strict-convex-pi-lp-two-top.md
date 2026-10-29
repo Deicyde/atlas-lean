@@ -6,10 +6,13 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.not_strictConvex_piLp_two_top
 ---
 
-# Not strict Convex pi Lp two top
+# Two distinct $\ell^\infty$ unit vectors in $\mathbb{R}^2$ with a unit midpoint
 
-Strict convexity fails at `p = ∞`: the unit vectors `(1, 1)` and `(1, -1)`
-have midpoint `(1, 0)` of norm `1`.
+**Two distinct $\ell^\infty$ unit vectors in $\mathbb{R}^2$ with a unit midpoint.** In
+$\mathbb{R}^2$ with the $\ell^\infty$ norm there exist vectors $x \neq y$ with
+$\|x\| = \|y\| = 1$ and $\|\tfrac{1}{2} (x + y)\| = 1$.
+
+For example, the unit vectors $(1, 1)$ and $(1, -1)$ have midpoint $(1, 0)$ of norm $1$.
 
 ## Depends on
 
@@ -17,11 +20,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lp Two Minus](lp-two-minus.md)
-- [Lp Two Plus](lp-two-plus.md)
-- [Lp Two Plus add lp Two Minus](lp-two-plus-add-lp-two-minus.md)
-- [Norm lp Two Minus top](norm-lp-two-minus-top.md)
-- [Norm lp Two Plus top](norm-lp-two-plus-top.md)
+- [The vector $(1, -1)$ in $\ell^p_2$](lp-two-minus.md)
+- [The vector $(1, 1)$ in $\ell^p_2$](lp-two-plus.md)
+- [Sum of $(1, 1)$ and $(1, -1)$ in $\ell^p_2$](lp-two-plus-add-lp-two-minus.md)
+- [The $\ell^\infty$ norm of $(1, -1)$](norm-lp-two-minus-top.md)
+- [The $\ell^\infty$ norm of $(1, 1)$](norm-lp-two-plus-top.md)
 
 ## Sources
 

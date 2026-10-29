@@ -12,13 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraOperator_s
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 
-- [Not is Unit volterra Operator](not-is-unit-volterra-operator.md)
-- [Volterra Operator mem resolvent Set of ne zero](volterra-operator-mem-resolvent-set-of-n.md)
+- [The Volterra operator is not invertible](not-is-unit-volterra-operator.md)
+- [Nonzero reals lie in the resolvent set of the Volterra operator](volterra-operator-mem-resolvent-set-of-n.md)
 
 ## Sources
 

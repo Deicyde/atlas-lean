@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SidonSetComplementProgressionErdosProblem198Wanted.sidonComplementContainsProgression
 ---
 
-# Sidon Complement Contains Progression
+# Erdős Problem 198
 
-Erdős Problem 198: the complement of every Sidon set `A ⊆ ℕ` (`Set.IsSidon`: `a + b = c + d`
-with `a, b, c, d ∈ A` forces `{a, b} = {c, d}`) contains an infinite arithmetic progression
-`a, a + d, a + 2d, …` with `d ≥ 1`.
+**Erdős Problem 198.** The proposition that the complement of every Sidon set
+$A \subseteq \mathbb{N}$ contains an infinite arithmetic progression: for every Sidon set
+$A \subseteq \mathbb{N}$ there are natural numbers $a$ and $d \ge 1$ such that $a + kd \notin A$
+for every natural number $k$.
 
 ## Depends on
 

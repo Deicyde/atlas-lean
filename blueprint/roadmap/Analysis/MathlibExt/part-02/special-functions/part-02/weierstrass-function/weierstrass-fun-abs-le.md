@@ -6,18 +6,18 @@ proof: formalized
 lean: Real.weierstrassFun_abs_le
 ---
 
-# Theorem III (3)
+# Bound on the Weierstrass function
 
-**Theorem III (3).** The Weierstrass function is bounded: `|W(x)| ≤ 4 / 3`
-for all `x`.
+**Bound on the Weierstrass function.** The Weierstrass function
+$W(x) = \sum_{k \ge 0} \cos(160^k x) / 4^k$ satisfies $|W(x)| \le 4/3$ for every real number $x$.
 
 ## Depends on
 
-- [Weierstrass Fun](weierstrass-fun.md)
+- [The Weierstrass function](weierstrass-fun.md)
 
 ## Proof depends on
 
-- [Norm weierstrass Fun term le](norm-weierstrass-fun-term-le.md)
+- [Termwise bound for the Weierstrass series](norm-weierstrass-fun-term-le.md)
 
 ## Sources
 

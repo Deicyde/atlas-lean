@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.normalBasisMap_bijective_frobenius
 ---
 
-# Normal Basis Map bijective frobenius
+# Normal basis coordinates turn Frobenius into rotation
 
-Lemma 28: for `n = [K : F]`, `q = |F|` and a normal basis `β, β^q, …, β^{q^{n-1}}`, the
-map `Φ(a) = ∑ aᵢ β^{qⁱ}` from `Fⁿ` to `K` is a bijection that turns Frobenius into rotation:
-`Φ(a)^q = Φ(a ∘ σ⁻¹)`.
+**Normal basis coordinates turn Frobenius into rotation.** Let $K$ be a finite field that is an
+algebra over a finite field $F$, let $q = |F|$ and $n = [K : F]$, and let $\beta \in K$ be such
+that $\beta, \beta^q, \dots, \beta^{q^{n-1}}$ are linearly independent over $F$. Define
+$\Phi : F^n \to K$ by $\Phi(a_0, \dots, a_{n-1}) = \sum_{i=0}^{n-1} a_i \beta^{q^i}$. Then $\Phi$ is
+a bijection, and for every $a \in F^n$,
+
+$$\Phi(a_0, \dots, a_{n-1})^q = \Phi(a_{n-1}, a_0, a_1, \dots, a_{n-2}),$$
+
+that is, raising to the $q$-th power rotates the coordinates one step.
 
 ## Depends on
 

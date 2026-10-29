@@ -6,10 +6,14 @@ proof: formalized
 lean: AbsoluteValue.isNonarchimedean_iff_natCast_le_one_of_pos
 ---
 
-# Is Nonarchimedean iff nat Cast le one of pos
+# Nonarchimedean criterion using positive integers
 
-Lemma 1.4 in the book's form, with the bound required only for positive
-`n` (the `n = 0` case is `v 0 = 0 ≤ 1` anyway).
+**Nonarchimedean criterion using positive integers.** Let $K$ be a field and $v$ a real-valued
+absolute value on $K$. Then $v$ is nonarchimedean, that is, $v(x + y) \le \max(v(x), v(y))$ for
+all $x, y \in K$, if and only if $v(n) \le 1$ for every positive integer $n$, viewed as the
+element $n \cdot 1$ of $K$.
+
+The case $n = 0$ may be omitted because $v(0) = 0 \le 1$.
 
 ## Depends on
 
@@ -17,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Nonarchimedean iff nat Cast le one](is-nonarchimedean-iff-nat-cast-le-one.md)
+- [Nonarchimedean criterion for absolute values](is-nonarchimedean-iff-nat-cast-le-one.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.AbsoluteValue.Nonarchimedean](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Section 1.2, Lemma 1.4 (in the book's form).

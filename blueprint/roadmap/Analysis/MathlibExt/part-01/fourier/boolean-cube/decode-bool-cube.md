@@ -5,9 +5,13 @@ statement: formalized
 lean: BooleanCube.decodeBoolCube
 ---
 
-# Decode Bool Cube
+# Decoding a cube point as a subset
 
-Decode a `Fin`-indexed cube point back to a subset of `E`.
+**Decoding a cube point as a subset.** Let $E$ be a finite set with $m$ elements, listed in a
+fixed order as $e_0, \dots, e_{m-1}$; this order identifies subsets of $E$ with points of the
+Boolean cube of dimension $m$. A point $x$ of that cube decodes to the subset
+$\{e_j : x_j = \mathrm{false}\}$ of $E$; this inverts the encoding of subsets of $E$ as cube
+points.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ Decode a `Fin`-indexed cube point back to a subset of `E`.
 
 ## Proof depends on
 
-- [Powerset Equiv Bool Cube](powerset-equiv-bool-cube.md)
+- [Subsets of a finite set as points of the Boolean cube](powerset-equiv-bool-cube.md)
 
 ## Sources
 

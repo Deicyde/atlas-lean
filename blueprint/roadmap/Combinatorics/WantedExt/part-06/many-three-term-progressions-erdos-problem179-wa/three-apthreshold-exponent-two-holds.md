@@ -19,7 +19,7 @@ log N)^{C_ℓ}, https://arxiv.org/abs/1908.09905.
 
 ## Depends on
 
-- [Three APThreshold Exponent Two](three-apthreshold-exponent-two.md)
+- [Erdős Problem 179: does $\log F_3(N, \ell) / \log N$ tend to $2$?](three-apthreshold-exponent-two.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_normalBasis_finiteField
 ---
 
-# Exists normal Basis finite Field
+# Normal basis theorem for finite fields
 
-Theorem 27 (normal basis theorem for finite fields): `K` has a normal basis over `F`, an
-element whose Galois conjugates are linearly independent over `F` (hence a basis, as
-`|Gal(K/F)| = [K : F]`).
+**Normal basis theorem for finite fields.** Let $K$ be a finite field that is an algebra over
+a finite field $F$. Then there is an element $\beta \in K$ whose images $\sigma(\beta)$, as $\sigma$
+ranges over the $F$-algebra automorphisms of $K$, are linearly independent over $F$ (as a family
+indexed by $\sigma$).
+
+Since $K / F$ is Galois, there are $[K : F]$ such automorphisms, so these images form a basis of
+$K$ over $F$, a normal basis.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Kneser Hypergraph Coloring Erdos Problem780
 
-- [Kneser Hypergraph Coloring](kneser-hypergraph-coloring.md)
-- [Kneser Hypergraph Coloring holds](kneser-hypergraph-coloring-holds.md)
+- [Erdős's Kneser hypergraph problem](kneser-hypergraph-coloring.md)
+- [Alon–Frankl–Lovász theorem on Kneser hypergraphs](kneser-hypergraph-coloring-holds.md)

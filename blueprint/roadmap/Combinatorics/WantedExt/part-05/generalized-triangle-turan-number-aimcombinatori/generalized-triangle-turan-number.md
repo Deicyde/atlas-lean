@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GeneralizedTriangleTuranNumberAIMCombinatoricsProblem151Wanted.generalizedTriangleTuranNumber
 ---
 
-# Generalized Triangle Turan Number
+# Turán number of the generalized triangle
 
-The Turán number `ex(n, 𝒯_r)`: the largest number of edges of an `r`-graph on `n` vertices
-with no generalized triangle.
+**Turán number of the generalized triangle.** For $r, n \in \mathbb{N}$, the Turán number
+$\mathrm{ex}(n, \mathcal{T}_r)$ is the largest number of edges of an $r$-uniform hypergraph on the
+vertex set $\{0, \dots, n-1\}$ that contains no generalized triangle $\mathcal{T}_r$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Generalized Triangle](contains-generalized-triangle.md)
+- [Generalized triangle $\mathcal{T}_r$](contains-generalized-triangle.md)
 - [Uniform hypergraphs](../../../MathlibExt/part-01/set-family/uniform-hypergraph/is-uniform.md)
 
 ## Sources

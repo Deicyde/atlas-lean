@@ -4,12 +4,12 @@ navigation: module
 
 # Generalized Triangle Turan Number AIMCombinatorics Problem151
 
-- [Contains Generalized Triangle](contains-generalized-triangle.md)
-- [Generalized Triangle Turan Number](generalized-triangle-turan-number.md)
-- [Is Steiner System](is-steiner-system.md)
-- [Blow Up](blow-up.md)
-- [Max Blow Up Size](max-blow-up-size.md)
-- [Generalized Triangle Five Turan Number](generalized-triangle-five-turan-number.md)
-- [Generalized Triangle Six Turan Number](generalized-triangle-six-turan-number.md)
-- [Generalized Triangle Five Turan Number holds](generalized-triangle-five-turan-number-h.md)
-- [Generalized Triangle Six Turan Number holds](generalized-triangle-six-turan-number-ho.md)
+- [Generalized triangle $\mathcal{T}_r$](contains-generalized-triangle.md)
+- [Turán number of the generalized triangle](generalized-triangle-turan-number.md)
+- [Steiner system $S(t, r, m)$](is-steiner-system.md)
+- [Blow-up of a hypergraph along a map](blow-up.md)
+- [Largest blow-up of a hypergraph](max-blow-up-size.md)
+- [Turán number of $\mathcal{T}_5$ via blow-ups of $S(4, 5, 11)$](generalized-triangle-five-turan-number.md)
+- [Turán number of $\mathcal{T}_6$ via blow-ups of $S(5, 6, 12)$](generalized-triangle-six-turan-number.md)
+- [Norin–Yepremyan theorem for $\mathcal{T}_5$](generalized-triangle-five-turan-number-h.md)
+- [Norin–Yepremyan theorem for $\mathcal{T}_6$](generalized-triangle-six-turan-number-ho.md)

@@ -4,13 +4,13 @@ navigation: module
 
 # Bollobas Brightwell Leader Unate Density
 
-- [Clause Satisfied](clause-satisfied.md)
-- [Is KSATFunction](is-ksatfunction.md)
-- [Is Positive Unate In](is-positive-unate-in.md)
-- [Is Negative Unate In](is-negative-unate-in.md)
-- [Is Unate](is-unate.md)
-- [Count KSATFunctions](count-ksatfunctions.md)
-- [Count Unate KSATFunctions](count-unate-ksatfunctions.md)
-- [Conjecture](conjecture.md)
-- [Conjecture All K](conjecture-all-k.md)
-- [Conjecture All K holds](conjecture-all-k-holds.md)
+- [Satisfied clause](clause-satisfied.md)
+- [$k$-SAT function](is-ksatfunction.md)
+- [Positively unate variable](is-positive-unate-in.md)
+- [Negatively unate variable](is-negative-unate-in.md)
+- [Unate Boolean function](is-unate.md)
+- [Number of $k$-SAT functions](count-ksatfunctions.md)
+- [Number of unate $k$-SAT functions](count-unate-ksatfunctions.md)
+- [Bollobás–Brightwell–Leader conjecture for $k$](conjecture.md)
+- [Bollobás–Brightwell–Leader conjecture for all $k$](conjecture-all-k.md)
+- [Nearly all $k$-SAT functions are unate](conjecture-all-k-holds.md)

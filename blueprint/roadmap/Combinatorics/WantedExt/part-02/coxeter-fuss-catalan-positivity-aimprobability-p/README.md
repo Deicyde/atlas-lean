@@ -6,16 +6,16 @@ navigation: module
 
 ## Coxeter Fuss Catalan Positivity AIMProbability Problem148 Wanted
 
-- [Q Int](q-int.md)
-- [Coxeter Type](coxeter-type.md)
+- [q-integers](q-int.md)
+- [Types of irreducible finite Coxeter groups](coxeter-type.md)
 
 ## Coxeter Type
 
-- [Is Valid](is-valid.md)
-- [Degrees](degrees.md)
-- [Coxeter Number](coxeter-number.md)
+- [Valid Coxeter types](is-valid.md)
+- [Degrees of the irreducible finite Coxeter groups](degrees.md)
+- [Coxeter number](coxeter-number.md)
 
 ## Coxeter Fuss Catalan Positivity AIMProbability Problem148 Wanted
 
-- [Coxeter Fuss Catalan Positive](coxeter-fuss-catalan-positive.md)
-- [Coxeter Fuss Catalan Positive holds](coxeter-fuss-catalan-positive-holds.md)
+- [AIM Problem 2.1: positivity of q-Fuss-Catalan numbers](coxeter-fuss-catalan-positive.md)
+- [Positivity of q-Fuss-Catalan numbers of Coxeter groups](coxeter-fuss-catalan-positive-holds.md)

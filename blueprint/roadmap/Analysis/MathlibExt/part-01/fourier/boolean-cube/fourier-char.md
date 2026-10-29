@@ -5,12 +5,13 @@ statement: formalized
 lean: BooleanCube.fourierChar
 ---
 
-# Fourier Char
+# Fourier character on finite sets
 
-The Fourier character on the subset lattice: `χ_S(T) = (−1)^|S ∩ T|`.
-This is the `Finset`-indexed form of the uniform-cube transform;
-`fourierChar_eq_cubeChi` identifies it with the canonical `cubeChi`
-after reindexing.
+**Fourier character on finite sets.** For finite sets $S$ and $T$, the Fourier character of
+$S$ at $T$ is the real number $\chi_S(T) = (-1)^{|S \cap T|}$.
+
+This is the subset-indexed form of the Fourier character on the Boolean cube; after reindexing
+the coordinates, the two agree.
 
 ## Depends on
 

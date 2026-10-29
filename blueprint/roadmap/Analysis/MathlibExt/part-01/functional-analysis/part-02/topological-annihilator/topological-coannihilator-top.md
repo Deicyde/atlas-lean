@@ -6,18 +6,22 @@ proof: formalized
 lean: Submodule.topologicalCoannihilator_top
 ---
 
-# Topological Coannihilator top
+# Topological coannihilator of the whole dual
 
-The coannihilator of the whole dual is zero: a vector killed by every
-continuous functional is zero, by the Hahn-Banach norming functional.
+**Topological coannihilator of the whole dual.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, with continuous dual $E^*$. The topological
+coannihilator of $E^*$ itself is the zero subspace of $E$: a vector killed by every continuous
+linear functional is zero.
+
+The proof uses the Hahn–Banach norming functional.
 
 ## Depends on
 
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Coannihilator](mem-topological-coannihilator.md)
+- [Membership in the topological coannihilator](mem-topological-coannihilator.md)
 
 ## Sources
 

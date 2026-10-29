@@ -6,19 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.sq_norm_inner_frameOperator_apply_le
 ---
 
-# Sq norm inner frame Operator apply le
+# Cauchy–Schwarz bound for the frame operator
 
-Cauchy-Schwarz for the frame coefficients: the squared norm of the
-sum of coefficient products is bounded by the product of the sums of
-squared coefficient norms.
+**Cauchy–Schwarz bound for the frame operator.** Let $(f_i)_{i \in \iota}$ be a finite family in
+an inner product space $E$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), with frame operator
+$S$. For all $x, y \in E$,
+
+$$
+|\langle S x, y \rangle|^2 \le \Big(\sum_{i} |\langle f_i, x \rangle|^2\Big)
+\Big(\sum_{i} |\langle f_i, y \rangle|^2\Big).
+$$
 
 ## Depends on
 
-- [Frame Operator](frame-operator.md)
+- [Frame operator](frame-operator.md)
 
 ## Proof depends on
 
-- [Inner frame Operator apply](inner-frame-operator-apply.md)
+- [Inner product against the frame operator](inner-frame-operator-apply.md)
 
 ## Sources
 

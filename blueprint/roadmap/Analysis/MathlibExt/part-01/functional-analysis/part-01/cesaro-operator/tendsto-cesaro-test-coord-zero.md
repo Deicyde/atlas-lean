@@ -6,19 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.tendsto_cesaro_test_coord_zero
 ---
 
-# Tendsto cesaro test coord zero
+# The Cesàro images of the test vectors tend to zero coordinatewise
 
-The coordinates of `C` applied to the test vectors tend to `0`.
+**The Cesàro images of the test vectors tend to zero coordinatewise.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $C$ be the Cesàro operator on $\ell^2(\mathbb{N}, \mathbb{K})$,
+$(Cx)_n = (x_0 + x_1 + \dots + x_n)/(n + 1)$, and for $N \ge 1$ let $t_N$ be the vector equal to
+$1/\sqrt{N}$ at the coordinates $0, \dots, N - 1$ and to $0$ elsewhere. Then for every fixed
+coordinate $n$, $(C t_{N+1})_n \to 0$ as $N \to \infty$.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro CLM](cesaro-clm.md)
-- [Cesaro Test](cesaro-test.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [Cesàro operator on square-summable sequences](cesaro-clm.md)
+- [Cesàro test vectors](cesaro-test.md)
 
 ## Proof depends on
 
-- [Cesaro CLM test apply lt](cesaro-clm-test-apply-lt.md)
+- [The Cesàro operator on a test vector, within its support](cesaro-clm-test-apply-lt.md)
 
 ## Sources
 

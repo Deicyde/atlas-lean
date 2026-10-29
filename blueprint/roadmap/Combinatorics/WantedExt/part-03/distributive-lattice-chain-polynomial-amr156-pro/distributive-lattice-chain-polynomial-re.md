@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted
 ---
 
-# Distributive Lattice Chain Polynomial Real Rooted
+# Stanley's Problem 20' on chain polynomials of distributive lattices
 
-Stanley's Problem 20' (Positivity Problems): for every finite distributive lattice `L`, every
-zero of the chain polynomial `C(L, t)` is real.
+**Stanley's Problem 20' on chain polynomials of distributive lattices.** The proposition that
+for every finite distributive lattice $L$, every complex root of the chain polynomial $C(L, t)$ is
+real, where $C(L, t) = \sum_{k \ge 0} c_k(L)\, t^k$ and $c_k(L)$ is the number of $k$-element
+chains of $L$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chain Polynomial](chain-polynomial.md)
+- [Chain polynomial](chain-polynomial.md)
 - [Real-rooted polynomials](../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Sources

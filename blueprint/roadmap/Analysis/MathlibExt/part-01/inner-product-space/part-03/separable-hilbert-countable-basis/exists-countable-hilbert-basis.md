@@ -8,11 +8,9 @@ lean: MathlibExt.Analysis.InnerProductSpace.SeparableHilbertCountableBasis.exist
 
 # A separable Hilbert space admits a countable Hilbert basis
 
-**A separable Hilbert space admits a countable Hilbert basis.**
-There is a countable index type carrying a Hilbert basis of `H`. In
-particular, combined with `HilbertBasis.repr`, this is the step the book's
-`ℓ²` theorem needs: a separable (infinite-dimensional) Hilbert space has a
-countable orthonormal basis, hence is isometrically isomorphic to `ℓ²`.
+**A separable Hilbert space admits a countable Hilbert basis.** Let $H$ be a separable Hilbert
+space over $\mathbb{R}$ or $\mathbb{C}$. Then $H$ has a Hilbert basis $(e_i)_{i \in \iota}$ (an
+orthonormal family whose linear span is dense in $H$) indexed by a countable set $\iota$.
 
 ## Depends on
 

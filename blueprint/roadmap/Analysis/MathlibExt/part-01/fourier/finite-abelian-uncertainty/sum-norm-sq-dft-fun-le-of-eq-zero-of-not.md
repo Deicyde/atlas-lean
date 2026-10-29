@@ -6,11 +6,13 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty.sum_norm_sq_dftFun_le_of_eq_zero_of_notMem
 ---
 
-# Sum norm sq dft Fun le of eq zero of not Mem
+# Concentration bound for the Fourier transform of a function with small support
 
-Concentration of `f̂`: if `f` vanishes outside `A`, then the squared
-`ℓ²` mass of `f̂` on any set `B` is at most `(|A| * |B| / |G|)` times the
-total squared `ℓ²` mass of `f̂`.
+**Concentration bound for the Fourier transform of a function with small support.** Let $G$
+be a finite abelian group, let $A \subseteq G$, let $B$ be any set of additive characters of $G$,
+and let $f : G \to \mathbb{C}$ vanish outside $A$, with discrete Fourier transform $\hat f$. Then
+$\sum_{\psi \in B} |\hat f(\psi)|^2 \le \frac{|A| \cdot |B|}{|G|} \sum_{\psi} |\hat f(\psi)|^2$,
+where the last sum runs over all additive characters $\psi$ of $G$.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ total squared `ℓ²` mass of `f̂`.
 
 ## Proof depends on
 
-- [Norm add Char apply](norm-add-char-apply.md)
-- [Sum norm sq dft Fun](sum-norm-sq-dft-fun.md)
+- [Characters of a finite abelian group have absolute value one](norm-add-char-apply.md)
+- [Squared-norm Plancherel identity for the finite Fourier transform](sum-norm-sq-dft-fun.md)
 
 ## Sources
 

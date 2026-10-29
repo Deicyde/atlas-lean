@@ -2,20 +2,20 @@
 navigation: transparent
 ---
 
-# Agmon Inequality Schwartz Line Wanted to Scottish Book176
+# Agmon's inequality on the line to Scottish Book176
 
-- [Agmon Inequality Schwartz Line Wanted](exists-norm-to-lp-top-le-mul-sqrt-norm-t.md)
+- [Agmon's inequality on the line](exists-norm-to-lp-top-le-mul-sqrt-norm-t.md)
 - [Annulus Weighted Hardy Inequality](annulus-weighted-hardy-inequality-wanted/README.md)
 - [Annulus Weighted Sobolev Critical](annulus-weighted-sobolev-critical-wanted/README.md)
-- [Bounded L1 Mem L2 Norm Bound Wanted](mem-lp-two-and-e-lp-norm-two-le-of-bound.md)
+- [A bounded integrable function is square integrable](mem-lp-two-and-e-lp-norm-two-le-of-bound.md)
 - [Bounded Metric Topologically Equivalent Wanted](dist-div-one-add-dist-balls-equivalent.md)
-- [Closed L2 Subspace Of Continuous Finite Dim Wanted](finite-dimensional-of-is-closed-of-le-ra.md)
-- [Convex On Iff Above Tangent Wanted](convex-on-iff-forall-le-add-fderiv-withi.md)
-- [Ehrling Inequality Wanted](ehrling-inequality.md)
-- [Lp Norm Tendsto Ess Sup Wanted](tendsto-e-lp-norm-at-top-e-lp-norm-top-o.md)
-- [Pointwise Limit Operators Joint Continuity Wanted](tendsto-apply-of-tendsto-pointwise-of-te.md)
+- [Closed subspaces of $L^2((0,1))$ inside $C((0,1))$ are finite-dimensional](finite-dimensional-of-is-closed-of-le-ra.md)
+- [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
+- [Ehrling's inequality](ehrling-inequality.md)
+- [The $L^p$ norm tends to the $L^\infty$ norm](tendsto-e-lp-norm-at-top-e-lp-norm-top-o.md)
+- [Pointwise convergent operators converge along convergent sequences](tendsto-apply-of-tendsto-pointwise-of-te.md)
 - [Radial Sobolev Exterior Ball](radial-sobolev-exterior-ball-wanted/README.md)
-- [Reflexive Banach Nearest Point Wanted](exists-norm-sub-eq-i-inf-of-reflexive-of.md)
+- [Nearest points in reflexive Banach spaces](exists-norm-sub-eq-i-inf-of-reflexive-of.md)
 - [Scottish Book108](scottish-book108-wanted/README.md)
 - [Continuous linear functionals on the space of all real functions](continuous-linear-functional-finite-eval.md)
 - [Dvoretzky–Rogers theorem](dvoretzky-rogers-unconditional-not-absol.md)

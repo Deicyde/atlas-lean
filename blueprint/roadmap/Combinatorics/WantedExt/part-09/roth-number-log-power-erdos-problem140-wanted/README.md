@@ -4,5 +4,5 @@ navigation: module
 
 # Roth Number Log Power Erdos Problem140
 
-- [Roth Number Log Power Decay](roth-number-log-power-decay.md)
-- [Roth Number Log Power Decay holds](roth-number-log-power-decay-holds.md)
+- [Roth numbers below every power of the logarithm (Erdős Problem 140)](roth-number-log-power-decay.md)
+- [Kelley–Meka: Roth numbers are below every power of the logarithm](roth-number-log-power-decay-holds.md)

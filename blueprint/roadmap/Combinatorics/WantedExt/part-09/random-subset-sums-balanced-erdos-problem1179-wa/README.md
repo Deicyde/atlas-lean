@@ -4,8 +4,8 @@ navigation: module
 
 # Random Subset Sums Balanced Erdos Problem1179
 
-- [Subset Sum Count](subset-sum-count.md)
-- [Is Balanced](is-balanced.md)
-- [Balanced Probability](balanced-probability.md)
-- [Balanced Subset Sums Threshold Log Two](balanced-subset-sums-threshold-log-two.md)
-- [Balanced Subset Sums Threshold Log Two holds](balanced-subset-sums-threshold-log-two-h.md)
+- [Number of subsets with a given sum](subset-sum-count.md)
+- [$\varepsilon$-balanced subsets of a finite abelian group](is-balanced.md)
+- [Probability that a random subset is balanced](balanced-probability.md)
+- [Erdős Problem 1179 (balanced subset sums of random subsets)](balanced-subset-sums-threshold-log-two.md)
+- [Erdős Problem 1179 holds](balanced-subset-sums-threshold-log-two-h.md)

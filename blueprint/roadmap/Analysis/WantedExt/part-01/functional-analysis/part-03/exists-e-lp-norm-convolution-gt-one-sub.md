@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.YoungConvolutionSharpWanted.exists_eLpNorm_convolution_gt_one_sub_mul
 ---
 
-# Young Convolution Sharp Wanted
+# The constant in Young's $L^1$–$L^p$ convolution inequality cannot be lowered
 
-Suppose $1\le p\le\infty$, $f\in L^1(R^1)$, and $g\in L^p(R^1)$. Assume $\varepsilon>0$, show
-that there exist $f\in L^1(R^1)$ and $g\in L^p(R^1)$ such that
+**The constant in Young's $L^1$–$L^p$ convolution inequality cannot be lowered.** Let
+$1 \le p \le \infty$ and $\varepsilon > 0$. Then there exist real-valued functions
+$f \in L^1(\mathbb{R})$ and $g \in L^p(\mathbb{R})$ such that
 
-\[
-\|f*g\|_p>(1-\varepsilon)\|f\|_1\|g\|_p.
-\]
+$$
+\|f * g\|_p > (1 - \varepsilon) \|f\|_1 \|g\|_p,
+$$
+
+where $(f * g)(x) = \int_{\mathbb{R}} f(t)\, g(x - t)\, dt$ and all norms are taken with
+respect to Lebesgue measure.
 
 ## Depends on
 

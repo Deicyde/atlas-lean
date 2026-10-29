@@ -6,21 +6,24 @@ proof: formalized
 lean: Submodule.topologicalAnnihilator_eq_bot_iff_dense
 ---
 
-# Topological Annihilator eq bot iff dense
+# Density criterion via the annihilator
 
-The annihilator of `S` vanishes exactly when `S` is dense.
+**Density criterion via the annihilator.** Let $E$ be a normed space over $\mathbb{K}$, where
+$\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, and let $S$ be a subspace of $E$. The topological
+annihilator of $S$ is the zero subspace of the continuous dual of $E$ if and only if $S$ is dense
+in $E$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
+- [Topological annihilator](topological-annihilator.md)
 
 ## Proof depends on
 
-- [Topological Annihilator top](topological-annihilator-top.md)
-- [Topological Annihilator topological Closure](topological-annihilator-topological-clos.md)
+- [Topological annihilator of the whole space](topological-annihilator-top.md)
+- [Topological annihilator of the closure](topological-annihilator-topological-clos.md)
 - [Bipolar theorem](topological-annihilator-topological-coan.md)
-- [Topological Coannihilator](topological-coannihilator.md)
-- [Topological Coannihilator bot](topological-coannihilator-bot.md)
+- [Topological coannihilator](topological-coannihilator.md)
+- [Topological coannihilator of the zero subspace](topological-coannihilator-bot.md)
 
 ## Sources
 

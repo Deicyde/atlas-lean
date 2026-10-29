@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.HasMulticoloredSunflower
 ---
 
-# Has Multicolored Sunflower
+# Multicolored sunflower
 
-A collection `S` of triples contains a multicolored sunflower: three triples
-`(x₁, y₁, z₁), (x₂, y₂, z₂), (x₃, y₃, z₃) ∈ S`, not all equal, with `x₁ + y₂ + z₃ = 0`.
+**Multicolored sunflower.** Let $n$ be a natural number and let $S$ be a finite set of triples
+$(x, y, z)$ of vectors in $(\mathbb{Z}/3)^n$. Then $S$ contains a multicolored sunflower if there
+are triples $(x_1, y_1, z_1), (x_2, y_2, z_2), (x_3, y_3, z_3) \in S$, not all three equal, with
+$x_1 + y_2 + z_3 = 0$.
 
 ## Depends on
 
-- [Ternary Vec](ternary-vec.md)
+- [Ternary vectors](ternary-vec.md)
 
 ## Sources
 

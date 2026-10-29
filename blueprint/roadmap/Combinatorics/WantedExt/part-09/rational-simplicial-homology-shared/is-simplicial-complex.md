@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RationalSimplicialHomologyShared.IsSimplicialComplex
 ---
 
-# Is Simplicial Complex
+# Finite abstract simplicial complex
 
-`K` is closed under taking subsets: a finite abstract simplicial complex on `ℕ`.
+**Finite abstract simplicial complex.** A finite family $K$ of finite subsets of
+$\mathbb{N}$ is a simplicial complex when it is closed under taking subsets: for every
+$\sigma \in K$ and every $\tau \subseteq \sigma$, we have $\tau \in K$.
 
 ## Depends on
 

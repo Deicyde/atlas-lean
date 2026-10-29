@@ -6,18 +6,19 @@ proof: formalized
 lean: LineArrangement.singularPoints_nonempty
 ---
 
-# Singular Points nonempty
+# Every line arrangement has a singular point
 
-Every arrangement has a singular point: any two of its lines meet.
+**Every line arrangement has a singular point.** Every line arrangement in the projective
+plane over a field has at least one singular point, since any two of its distinct lines meet.
 
 ## Depends on
 
-- [Line Arrangement](line-arrangement.md)
-- [Singular Points](singular-points.md)
+- [Line arrangement](line-arrangement.md)
+- [Singular points of a line arrangement](singular-points.md)
 
 ## Proof depends on
 
-- [Mem singular Points iff exists](mem-singular-points-iff-exists.md)
+- [Singular points lie on two distinct lines](mem-singular-points-iff-exists.md)
 
 ## Sources
 

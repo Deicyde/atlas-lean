@@ -6,16 +6,18 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.HausdorffYoungFiniteAbelian.hausdorffYoung_dft
 ---
 
-# Hausdorff Young dft
+# Hausdorff–Young inequality on a finite abelian group
 
-The Hausdorff–Young inequality on a finite abelian group: for
-`1 < p ≤ 2` with conjugate exponent `q = p / (p - 1)`,
-the `ℓ^q` norm of the Fourier transform is bounded by
-`(card G) ^ (1 / q)` times the `ℓ^p` norm of the function.
+**Hausdorff–Young inequality on a finite abelian group.** Let $G$ be a finite abelian
+group, let $f : G \to \mathbb{C}$ have discrete Fourier transform $\hat f$, let $p$ be a real
+number with $1 < p \le 2$, and let $q = p/(p - 1)$. Write $|G|$ for the number of elements
+of $G$ and let $\psi$ run over the additive characters of $G$. Then
+$\left(\sum_{\psi} |\hat f(\psi)|^q\right)^{1/q} \le
+|G|^{1/q} \left(\sum_{x \in G} |f(x)|^p\right)^{1/p}$.
 
-The measurability hypotheses are the ones the finite counting-measure
-Riesz–Thorin theorem in base MathlibExt takes; in applications they are
-discharged with the discrete (`⊤`) measurable-space instance.
+The statement also assumes $\sigma$-algebras on $G$ and on its character group in which
+singletons are measurable; on a finite set such a $\sigma$-algebra contains every subset, so
+this is no restriction.
 
 ## Depends on
 
@@ -23,8 +25,8 @@ discharged with the discrete (`⊤`) measurable-space instance.
 
 ## Proof depends on
 
-- [Dft Fun sup le](dft-fun-sup-le.md)
-- [Sum norm sq dft Fun](sum-norm-sq-dft-fun.md)
+- [The $p = 1$ endpoint of Hausdorff–Young](dft-fun-sup-le.md)
+- [The $p = 2$ endpoint of Hausdorff–Young (Plancherel)](sum-norm-sq-dft-fun.md)
 - [Riesz–Thorin interpolation theorem on finite sets](../../functional-analysis/part-02/riesz-thorin/riesz-thorin.md)
 
 ## Sources

@@ -6,8 +6,8 @@ navigation: module
 
 ## EP146
 
-- [Degenerate Extremal Claim](degenerate-extremal-claim.md)
+- [Erdős–Simonovits degeneracy conjecture (Erdős Problem 146)](degenerate-extremal-claim.md)
 
 ## Erdos Problem146 Wanted
 
-- [Degenerate Extremal Claim refuted](degenerate-extremal-claim-refuted.md)
+- [Counterexample to the Erdős–Simonovits degeneracy conjecture](degenerate-extremal-claim-refuted.md)

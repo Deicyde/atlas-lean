@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.denseComparabilityFamilySmall
 ---
 
-# Dense Comparability Family Small
+# Erdős Problem 777, second question
 
-Erdős Problem 777, second question: for every `c > 0`, a family of `m` subsets of `[n]` with at
-least `c m²` comparable pairs has `m ≪_c 2^{n/2}`.
+**Erdős Problem 777, second question.** For every real $c > 0$ there is a real constant $C$
+such that for every $n$ and every family $F$ of subsets of $\{0, \dots, n - 1\}$ with at least
+$c |F|^2$ comparable pairs (ordered pairs $(A, B)$ of members of $F$ with $A \subsetneq B$), we
+have $|F| \le C \cdot 2^{n/2}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comparable Pairs](comparable-pairs.md)
+- [Number of comparable pairs](comparable-pairs.md)
 
 ## Sources
 

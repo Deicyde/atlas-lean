@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.density
 ---
 
-# Density
+# Density of a graph in a graphon
 
-The density `d(H, W)` of a graph `H` on `Fin k` in the graphon `W`: the probability that the
-`W`-random graph on `Fin k` is isomorphic to `H`, i.e. the sum of `τ(G, W)` over the graphs `G` on
-`Fin k` isomorphic to `H`.
+**Density of a graph in a graphon.** For a graph $H$ on the vertex set $\{0, \dots, k-1\}$ and
+a function $W$ of two real variables, the density $d(H, W)$ is the sum of the labelled densities
+$\tau(G, W)$ over all graphs $G$ on $\{0, \dots, k-1\}$ that are isomorphic to $H$.
+
+When $W$ is a graphon, $d(H, W)$ is the probability that the $W$-random graph on
+$\{0, \dots, k-1\}$ is isomorphic to $H$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Labelled Density](labelled-density.md)
+- [Labelled density](labelled-density.md)
 
 ## Sources
 

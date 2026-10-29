@@ -6,13 +6,13 @@ proof: formalized
 lean: Real.exists_cos_oscillation
 ---
 
-# Cosine oscillation (scaled form, as in the book)
+# Cosine oscillation (scaled form)
 
-**Cosine oscillation (scaled form, as in the book).** For every `c` and
-every positive natural `K`, there is a point `y` in
-`(c + π / K, c + 3 * π / K)` with `|cos (K * c) - cos (K * y)| ≥ 1`. This is
-the second part of `weierstrass_theorem_I` in v1; it is the estimate that
-drives the slope blow-up in the proof that the Weierstrass function is
+**Cosine oscillation (scaled form).** For every real number $c$ and every positive integer
+$K$, there is a real number $y$ with $c + \pi / K < y < c + 3\pi / K$ such that
+$|\cos(Kc) - \cos(Ky)| \ge 1$.
+
+This is the estimate that drives the slope blow-up in the proof that the Weierstrass function is
 nowhere differentiable.
 
 ## Depends on

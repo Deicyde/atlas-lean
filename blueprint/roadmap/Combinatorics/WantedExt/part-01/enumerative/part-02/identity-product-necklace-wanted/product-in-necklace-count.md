@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.productInNecklace_count
 ---
 
-# Product In Necklace count
+# Counting necklaces with product in a conjugation-closed set
 
-Theorem 22: for a conjugation-closed `K ⊆ G`, the number of `K`-product `n`-necklaces
-(`x₁ ⋯ xₙ ∈ K`) is `(1/n) ∑_{d ∣ n} φ(n/d) [G ÷ K ÷ n/d] |G|^{d-1}`. The extraction prints
-`[G ÷ K ÷ n]`; the arXiv text (Theorem 8.3) has `n/d`, and the printed version fails for
-`G = S₃`, `K = {1}`, `n = 2` (`5` necklaces against `14`).
+**Counting necklaces with product in a conjugation-closed set.** Let $G$ be a finite group,
+let $K \subseteq G$ be closed under conjugation ($g k g^{-1} \in K$ for all $g \in G$ and
+$k \in K$), and let $n \ge 1$. The number of rotation orbits of $n$-tuples
+$(x_1, \dots, x_n) \in G^n$ with $x_1 x_2 \cdots x_n \in K$ ($K$-product $n$-necklaces) is
+
+$$\frac{1}{n} \sum_{d \mid n} \varphi(n/d)\, N_K(n/d)\, |G|^{d-1},$$
+
+where $\varphi$ is Euler's totient function and $N_K(e)$ is the number of $a \in G$ with
+$a^e \in K$.
+
+The printed Theorem 22 has $N_K(n)$ in place of $N_K(n/d)$; the arXiv text (Theorem 8.3) has
+$n/d$, and the printed formula fails for $G = S_3$, $K = \{1\}$, $n = 2$ ($5$ necklaces against
+$14$).
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

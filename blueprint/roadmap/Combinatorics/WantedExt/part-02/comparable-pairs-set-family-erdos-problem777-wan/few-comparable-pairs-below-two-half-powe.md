@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower
 ---
 
-# Few Comparable Pairs Below Two Half Power
+# Erdős Problem 777, first question
 
-Erdős Problem 777, first question: for `ε > 0` and all large `n`, a family of at most
-`(2 - ε) 2^{n/2}` subsets of `[n]` has fewer than `2^n` comparable pairs.
+**Erdős Problem 777, first question.** For every real $\varepsilon > 0$ there is $N$ such that
+for every $n \ge N$, every family $F$ of subsets of $\{0, \dots, n - 1\}$ with
+$|F| \le (2 - \varepsilon) 2^{n/2}$ has fewer than $2^n$ comparable pairs, that is, ordered pairs
+$(A, B)$ of members of $F$ with $A \subsetneq B$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comparable Pairs](comparable-pairs.md)
+- [Number of comparable pairs](comparable-pairs.md)
 
 ## Sources
 

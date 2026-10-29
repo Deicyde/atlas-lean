@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.isometry_weightedShiftCLM_iff
 ---
 
-# Isometry weighted Shift CLM iff
+# Isometric weighted shifts
 
-The weighted forward shift is an isometry exactly when every weight
-has modulus `1`.
+**Isometric weighted shifts.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
+$(w_n)_{n \in \mathbb{N}}$ be a bounded sequence in $\mathbb{K}$. The weighted forward shift
+$S_w$ on $\ell^2(\mathbb{N}, \mathbb{K})$, given by $(S_w x)_0 = 0$ and
+$(S_w x)_{n+1} = w_n x_n$, is an isometry if and only if $|w_n| = 1$ for every $n$.
 
 ## Depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
 
 ## Proof depends on
 
-- [Norm weighted Shift CLM apply of forall norm eq one](norm-weighted-shift-clm-apply-of-forall.md)
-- [Weighted Shift CLM single](weighted-shift-clm-single.md)
+- [Weighted shifts with unimodular weights preserve norms](norm-weighted-shift-clm-apply-of-forall.md)
+- [The weighted forward shift on basis vectors](weighted-shift-clm-single.md)
 
 ## Sources
 

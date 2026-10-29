@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ProgressionDifferenceSetErdosProblem1185Wanted.progressionWithDifferenceInDifferenceSet
 ---
 
-# Progression With Difference In Difference Set
+# Erdős Problem 1185: progressions with difference in a difference set
 
-Erdős Problem 1185: for all `δ > 0` and `k ≥ 3` there is `m ≥ 1` such that for all large `N`,
-whenever `A, B ⊆ {1, …, N}` with `|A| ≥ δ N` and `|B| ≥ m`, the set `A` contains a `k`-term
-arithmetic progression `a, a + d, …, a + (k - 1) d` with `d > 0` and `d ∈ B - B`.
+**Erdős Problem 1185: progressions with difference in a difference set.** This is the
+statement that for every real $\delta > 0$ and every natural number $k \ge 3$ there is a natural
+number $m \ge 1$ such that for all sufficiently large natural numbers $N$, whenever $A$ and $B$
+are subsets of $\{1, \dots, N\}$ with $|A| \ge \delta N$ and $|B| \ge m$, there are natural
+numbers $a$ and $d > 0$ such that $b_1 = b_2 + d$ for some $b_1, b_2 \in B$ and $a + i d \in A$
+for every natural number $i < k$; that is, $A$ contains the $k$-term arithmetic progression
+$a, a + d, \dots, a + (k - 1) d$, whose common difference $d$ is positive and lies in $B - B$.
 
 ## Depends on
 

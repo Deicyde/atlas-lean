@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftOperator.bilateralShiftLinMap
 ---
 
-# Bilateral Shift Lin Map
+# Bilateral shift as a linear map
 
-The bilateral forward shift as a linear map.
+**Bilateral shift as a linear map.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
+$\ell^2(\mathbb{Z}, \mathbb{K})$ be the space of square-summable functions
+$\mathbb{Z} \to \mathbb{K}$. The bilateral shift is the $\mathbb{K}$-linear map
+$S : \ell^2(\mathbb{Z}, \mathbb{K}) \to \ell^2(\mathbb{Z}, \mathbb{K})$ given by
+$(Sx)(n) = x(n - 1)$ for all $n \in \mathbb{Z}$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bilateral Shift Fun](bilateral-shift-fun.md)
+- [Bilateral shift of a sequence](bilateral-shift-fun.md)
 
 ## Sources
 

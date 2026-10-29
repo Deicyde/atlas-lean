@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.comp_finRotate_mem_tupleRotationOrbit
 ---
 
-# Comp fin Rotate mem tuple Rotation Orbit
+# One-step rotation stays in the rotation orbit
 
-Rotating by one step stays in the orbit.
+**One-step rotation stays in the rotation orbit.** For every tuple
+$x = (x_0, \dots, x_{n-1})$ with entries in a type $\alpha$, the tuple whose $i$-th entry is
+$x_{i+1}$, indices taken modulo $n$ (that is, $(x_1, \dots, x_{n-1}, x_0)$ when $n \ge 1$), lies in
+the rotation orbit of $x$.
 
 ## Depends on
 
-- [Tuple Rotation Orbit](tuple-rotation-orbit.md)
+- [Rotation orbit of a tuple](tuple-rotation-orbit.md)
 
 ## Sources
 

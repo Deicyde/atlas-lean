@@ -6,15 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperator.sineHilbertBasis_coe
 ---
 
-# Sine Hilbert Basis coe
+# The sine Hilbert basis consists of sine functions
 
-The representatives of the sine Hilbert basis are exactly the source sine functions.
+**The sine Hilbert basis consists of sine functions.** For every positive integer $k$, the
+$k$-th element $b_k$ of the sine Hilbert basis of $L^2([0, 1])$ satisfies
+$b_k(x) = \sqrt{2} \sin(k\pi x)$ for almost every $x \in [0, 1]$.
 
 ## Depends on
 
-- [L2 Unit Interval](l2-unit-interval.md)
-- [Sine Basis Fun](sine-basis-fun.md)
-- [Sine Hilbert Basis](sine-hilbert-basis.md)
+- [The space $L^2((0, 1))$](l2-unit-interval.md)
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
+- [The sine Hilbert basis of $L^2((0, 1))$](sine-hilbert-basis.md)
 
 ## Sources
 

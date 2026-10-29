@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.spectrum_bilateralShiftCLM
 ---
 
-# Spectrum bilateral Shift CLM
+# Spectrum of the bilateral shift
 
-The spectrum of the bilateral shift is the unit circle.
+**Spectrum of the bilateral shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. The
+spectrum of the bilateral shift, as a bounded operator on $\ell^2(\mathbb{Z}, \mathbb{K})$, is the
+set of scalars $\mu \in \mathbb{K}$ with $|\mu| = 1$; for $\mathbb{K} = \mathbb{C}$ this is the
+unit circle.
 
 ## Depends on
 
-- [Bilateral Shift CLM](../bilateral-shift-operator/bilateral-shift-clm.md)
+- [Bilateral shift operator](../bilateral-shift-operator/bilateral-shift-clm.md)
 
 ## Proof depends on
 
-- [Bilateral Backward CLM](../bilateral-shift-operator/bilateral-backward-clm.md)
-- [Bilateral Backward Fun](../bilateral-shift-operator/bilateral-backward-fun.md)
-- [Mem spectrum bilateral Shift CLM of norm eq one](mem-spectrum-bilateral-shift-clm-of-norm.md)
+- [Bilateral backward shift operator](../bilateral-shift-operator/bilateral-backward-clm.md)
+- [Bilateral backward shift of a sequence](../bilateral-shift-operator/bilateral-backward-fun.md)
+- [Every point of the unit circle lies in the spectrum of the bilateral shift](mem-spectrum-bilateral-shift-clm-of-norm.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AffineMapIterateRepetitionErdosProblem481Wanted.affineExpand
 ---
 
-# Affine Expand
+# Affine expansion of a sequence
 
-`T(A)`: the sequence `(a i * x + b i)` over `i < r` and the entries `x` of `A`, listed block by
-block (the order does not affect whether an entry repeats).
+**Affine expansion of a sequence.** For $r \in \mathbb{N}$, maps
+$a, b : \{0, \dots, r - 1\} \to \mathbb{N}$ and a finite sequence $A = (x_1, \dots, x_n)$ of
+natural numbers, $T(A)$ is the sequence of length $rn$ obtained by listing the blocks
+$(a_i x_1 + b_i, \dots, a_i x_n + b_i)$ one after another for $i = 0, 1, \dots, r - 1$.
+
+The order of the entries does not affect whether an entry repeats.
 
 ## Depends on
 

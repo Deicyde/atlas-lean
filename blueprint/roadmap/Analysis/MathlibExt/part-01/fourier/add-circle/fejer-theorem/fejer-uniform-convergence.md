@@ -6,25 +6,20 @@ proof: formalized
 lean: AddCircle.fejer_uniform_convergence
 ---
 
-# Fejer uniform convergence
+# Fejér's theorem: uniform convergence of Cesàro–Fourier means
 
-Fejér's theorem on `AddCircle T`: for every continuous function
-`f : AddCircle T → ℂ` (equivalently, every continuous `T`-periodic function on `ℝ`),
-the Cesàro–Fourier means `σ_N f` converge uniformly to `f` as `N → ∞`.
-
-Transporting this circle result to the real-line Fourier-coefficient interface
-requires descending the periodic function to `AddCircle (2 * Real.pi)`, identifying
-`fourierCoeffOn` and the exponential partial sums with `partialFourierSum`, and
-pulling uniform convergence back along the quotient map. These interface bridges
-are outside this module's scope.
+**Fejér's theorem: uniform convergence of Cesàro–Fourier means.** Let $T > 0$ and let $f$ be
+a continuous complex-valued function on the circle $\mathbb{R}/T\mathbb{Z}$ (equivalently, a
+continuous $T$-periodic function on $\mathbb{R}$). Then the Cesàro–Fourier means $\sigma_N f$
+converge to $f$ uniformly on the circle as $N \to \infty$.
 
 ## Depends on
 
-- [Cesaro Fourier Mean](../cesaro-mean/cesaro-fourier-mean.md)
+- [Cesàro–Fourier means](../cesaro-mean/cesaro-fourier-mean.md)
 
 ## Proof depends on
 
-- [Cesaro Mean uniform bound](cesaro-mean-uniform-bound.md)
+- [Quantitative Fejér theorem](cesaro-mean-uniform-bound.md)
 
 ## Sources
 

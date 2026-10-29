@@ -5,10 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RandomRegularIndependenceRatioAMR11Problem0018Wanted.ratioDeviationProb
 ---
 
-# Ratio Deviation Prob
+# Deviation probability of the independence ratio of a random regular graph
 
-The probability that the independence ratio `α(G) / n` of the uniformly random `d`-regular
-graph `G` on `n` vertices differs from `c` by more than `ε` (`0` when there is no such graph).
+**Deviation probability of the independence ratio of a random regular graph.** For natural
+numbers $n$ and $d$ and real numbers $c$ and $\varepsilon$, the probability that the independence
+ratio $\alpha(G)/n$ of a uniformly random $d$-regular simple graph $G$ on the vertex set
+$\{0, \dots, n - 1\}$ differs from $c$ by more than $\varepsilon$, where $\alpha(G)$ is the
+independence number of $G$: the number of $d$-regular simple graphs $G$ on this vertex set with
+$|\alpha(G)/n - c| > \varepsilon$ divided by the number of all $d$-regular simple graphs on it,
+or $0$ when there is no $d$-regular simple graph on it. For $n = 0$ the ratio $\alpha(G)/n$ is
+read as $0$.
 
 ## Depends on
 
@@ -16,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Regular Graphs](regular-graphs.md)
+- [Regular simple graphs on a labelled vertex set](regular-graphs.md)
 
 ## Sources
 

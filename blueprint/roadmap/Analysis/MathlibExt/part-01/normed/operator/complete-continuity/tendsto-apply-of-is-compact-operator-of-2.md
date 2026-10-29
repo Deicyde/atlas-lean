@@ -6,10 +6,13 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_tendsto_zero
 ---
 
-# Weakly-null special case
+# Compact operators send weakly null sequences to norm null sequences
 
-**Weakly-null special case.** If `T` is compact and `u n → 0` weakly,
-then `T (u n) → 0` in norm.
+**Compact operators send weakly null sequences to norm null sequences.** Let $\mathbb{K}$
+be $\mathbb{R}$ or $\mathbb{C}$, let $E$ and $F$ be normed spaces over $\mathbb{K}$, and let
+$T : E \to F$ be a compact continuous linear operator. If a sequence $(u_n)$ in $E$ converges
+weakly to $0$, that is, $f(u_n) \to 0$ for every continuous linear functional
+$f : E \to \mathbb{K}$, then $T u_n \to 0$ in norm.
 
 ## Depends on
 

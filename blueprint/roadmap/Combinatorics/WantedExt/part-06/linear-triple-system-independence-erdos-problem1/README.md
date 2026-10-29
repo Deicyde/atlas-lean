@@ -4,7 +4,7 @@ navigation: module
 
 # Linear Triple System Independence Erdos Problem1024
 
-- [Is Linear Triple System](is-linear-triple-system.md)
-- [Linear Triple Independence](linear-triple-independence.md)
-- [Linear Triple Independence Asymp](linear-triple-independence-asymp.md)
-- [Linear Triple Independence Asymp holds](linear-triple-independence-asymp-holds.md)
+- [Linear triple systems](is-linear-triple-system.md)
+- [Independence number of linear triple systems](linear-triple-independence.md)
+- [Erdős Problem 1024: the Phelps–Rödl asymptotic](linear-triple-independence-asymp.md)
+- [Phelps–Rödl theorem on independence in linear triple systems](linear-triple-independence-asymp-holds.md)

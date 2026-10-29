@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeCol
 ---
 
-# Edge Col
+# Column index of an edge of the Aztec diamond
 
-The column index of the edge joining `c` and `d` in the same array: the diagonals
-`X - Y = const`, numbered `0, …, 2m - 1` by `(X - Y + 2m - 1) / 2`.
+**Column index of an edge of the Aztec diamond.** For $m \in \mathbb{N}$ and pairs of integers
+$c = (c_1, c_2)$ and $d = (d_1, d_2)$, put $X = c_1 + d_1 + 1$ and $Y = c_2 + d_2 + 1$, the
+doubled coordinates of the center of the edge joining $c$ and $d$. The column index of this edge is
+$\lfloor (X - Y + 2m - 1) / 2 \rfloor$, so the columns of the array of edge centers of the Aztec
+diamond graph $AD_m$ are the diagonals $X - Y = \mathrm{const}$, numbered $0, \dots, 2m - 1$.
 
 ## Depends on
 

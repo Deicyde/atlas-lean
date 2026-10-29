@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0Submodule
 ---
 
-# C0 Submodule
+# $c_0$ as a subspace of $\ell^\infty$
 
-The `ℓ^∞` representation of canonical `c₀`, retained for compatibility.
-`c0LpEquiv` identifies it isometrically with the standard space.
+**$c_0$ as a subspace of $\ell^\infty$.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
+and let $\iota$ be an index type. The sequences $x \in \ell^\infty(\iota, \mathbb{K})$ whose
+coordinates $x_i$ tend to $0$ along the cofinite filter on $\iota$ form a
+$\mathbb{K}$-linear subspace of $\ell^\infty(\iota, \mathbb{K})$.
 
 ## Depends on
 

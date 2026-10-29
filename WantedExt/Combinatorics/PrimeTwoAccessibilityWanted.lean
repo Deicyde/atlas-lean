@@ -28,7 +28,7 @@ of the natural numbers with $r$ colours, a finite sequence $x_0, \dots, x_{k-1}$
 numbers is monochromatic when all its terms have the same colour: $c(x_i) = c(x_j)$ for all
 $i, j < k$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
+Source: `OPG-1797` (Open Problem Garden, node 1797,
 http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 formalizes "monochromatic sequence" from the definition of `r`-accessible. -/
 def IsMonochromatic {r k : ℕ} (c : ℕ → Fin r) (x : Fin k → ℕ) : Prop :=
@@ -39,7 +39,7 @@ $x_0, \dots, x_{k-1}$ of natural numbers is an $S$-diffsequence when each term i
 one plus an element of $S$: for every $i$ with $i + 1 < k$ there is $d \in S$ with
 $x_{i+1} = x_i + d$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
+Source: `OPG-1797` (Open Problem Garden, node 1797,
 http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 formalizes "`S`-diffsequence", i.e. `x_{i+1} - x_i ∈ S`,
 stated additively as `x (i+1) = x i + d` with `d ∈ S`. -/
@@ -52,7 +52,7 @@ length $k \ne 1$ there is a sequence $x_0, \dots, x_{k-1}$ of natural numbers th
 monochromatic for $c$ and is an $S$-diffsequence: for each $i$ with $i + 1 < k$ there is
 $d \in S$ with $x_{i+1} = x_i + d$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
+Source: `OPG-1797` (Open Problem Garden, node 1797,
 http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 `S` is `r`-accessible if for every `r`-coloring of `ℕ` and every
 `k ∈ ℕ \ {1}` there is a monochromatic `S`-diffsequence of length `k`. -/
@@ -66,7 +66,7 @@ colours and every length $k \ne 1$ there is a sequence $x_0, \dots, x_{k-1}$ of 
 all of the same colour, such that each difference $x_{i+1} - x_i$ is a prime number. Open Problem
 Garden question OPG-1797 asks whether this holds.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
+Source: `OPG-1797` (Open Problem Garden, node 1797,
 http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 "Is the set of prime numbers 2-accessible?" -/
 def conjecture : Prop :=

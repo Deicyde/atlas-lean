@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RandomSubsetSumsBalancedErdosProblem1179Wanted.IsBalanced
 ---
 
-# Is Balanced
+# $\varepsilon$-balanced subsets of a finite abelian group
 
-`A` is `ε`-balanced: `|F_A(g) - 2^{|A|}/N| ≤ ε 2^{|A|}/N` for every `g`, where `N = |G|`.
+**$\varepsilon$-balanced subsets of a finite abelian group.** Let $G$ be a finite abelian group
+with $N = |G|$ elements and let $\varepsilon$ be a real number. A subset $A \subseteq G$ is
+$\varepsilon$-balanced when, for every $g \in G$, the number $F_A(g)$ of subsets of $A$ whose
+elements sum to $g$ satisfies
+$\left| F_A(g) - 2^{|A|}/N \right| \le \varepsilon \cdot 2^{|A|}/N$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Subset Sum Count](subset-sum-count.md)
+- [Number of subsets with a given sum](subset-sum-count.md)
 
 ## Sources
 

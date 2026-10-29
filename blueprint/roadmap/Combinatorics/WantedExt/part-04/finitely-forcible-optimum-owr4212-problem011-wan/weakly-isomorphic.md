@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Density](density.md)
+- [Density of a graph in a graphon](density.md)
 
 ## Sources
 

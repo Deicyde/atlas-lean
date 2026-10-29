@@ -5,23 +5,29 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AlmostSubspaceInSumsetWanted.conjecture_holds
 ---
 
-# Conjecture holds
+# A subspace almost inside $A + A$ (Kelley–Meka)
 
-Resolved true: Resolved. Kelley and Meka (Strong bounds for 3-progressions, FOCS 2023,
-arXiv:2302.05537, Lemma 1.5) show that every A in F_q^n of density at least 2^-d contains A'
-whose affine span V + theta has codimension O(d^5 log(1/tau)^4) and |A' + A'| >= (1 - tau)|V +
-theta|; they note this answers the Hatami-Hosseini-Lovett question for the approximate
-Bogolyubov problem for 2A. Over F_2, A' + A' lies in the linear subspace V, so |V ∩ (A + A)| >=
-(1 - tau)|V| with polylogarithmic codimension, as formalized. Bloom and Sisask improve the
-codimension to O(L(alpha)^5 L(gamma)^2) (arXiv:2309.02353, Theorem 3). Source: Zander Kelley and
-Raghu Meka, Strong bounds for 3-progressions, FOCS 2023, arXiv:2302.05537,
-https://arxiv.org/abs/2302.05537. Moved from
-`OpenConjectures/Combinatorics/AlmostSubspaceInSumset`.
+**A subspace almost inside $A + A$ (Kelley–Meka).** There are real constants $C > 0$ and
+$E > 0$ such that for every $n \in \mathbb{N}$, every set $A \subseteq \mathbb{F}_2^n$ and all real
+numbers $\alpha$ and $\varepsilon$ with $\alpha > 0$, $0 < \varepsilon < 1$ and
+$|A| / 2^n = \alpha$, there is an additive subgroup $V$ of $\mathbb{F}_2^n$ whose codimension
+$\log_2(2^n / |V|)$ is at most $C \, (\log(\varepsilon^{-1} \alpha^{-1}) + 1)^E$ and which
+satisfies $|V \cap (A + A)| \ge (1 - \varepsilon) |V|$. Here $A + A = \{a + b : a, b \in A\}$ and
+$\log$ is the natural logarithm.
+
+Kelley and Meka (Lemma 1.5 of arXiv:2302.05537) show that, over a finite field $\mathbb{F}_q$,
+every set $A \subseteq \mathbb{F}_q^n$ of density at least $2^{-d}$ and every error parameter
+$\tau$ admit a set $A' \subseteq A$ whose affine span $V + \theta$ has codimension
+$O(d^5 \log(1/\tau)^4)$ and $|A' + A'| \ge (1 - \tau)|V + \theta|$, answering the question of
+Hatami, Hosseini and Lovett. Over $\mathbb{F}_2$ the sumset $A' + A'$ lies in the subspace $V$,
+which gives the statement. Bloom and Sisask improve this codimension bound (arXiv:2309.02353,
+Theorem 3).
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Almost-subspace-in-$A + A$ conjecture](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AlmostSubspaceInSumsetWanted](../../../../../sources/v2/WantedExt.md)
+- Zander Kelley and Raghu Meka, Strong bounds for 3-progressions, FOCS 2023, arXiv:2302.05537, https://arxiv.org/abs/2302.05537. Moved from `OpenConjectures/Combinatorics/AlmostSubspaceInSumset`.

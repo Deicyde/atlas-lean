@@ -22,7 +22,7 @@ with constant `c` if and only if `a = c`.
 - [Is Gradient Ricci Soliton gaussian](is-gradient-ricci-soliton-gaussian.md)
 - [Ricci](../curvature/ricci.md)
 - [Ricci vector Space](../vector-space/ricci-vector-space.md)
-- [Norm Sq Hessian](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources
 

@@ -6,20 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.riemannSum_const
 ---
 
-# Riemann Sum const
+# Riemann sum of a constant function
 
-The Riemann sum of a constant function `c` over any tagged partition of
-`[a, b]` is `c * (b - a)`.
+**Riemann sum of a constant function.** For every real constant $c$ and every tagged partition
+of $[a, b]$, the Riemann sum of the constant function $x \mapsto c$ equals $c(b - a)$.
 
 ## Depends on
 
-- [Tagged Partition](tagged-partition.md)
-- [Riemann Sum](riemann-sum.md)
+- [Tagged partition](tagged-partition.md)
+- [Riemann sum](riemann-sum.md)
 
 ## Proof depends on
 
-- [Partition](partition.md)
-- [Sum sub eq](sum-sub-eq.md)
+- [Partition of an interval](partition.md)
+- [Subinterval lengths of a partition telescope](sum-sub-eq.md)
 
 ## Sources
 

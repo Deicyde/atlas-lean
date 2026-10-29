@@ -6,11 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition.orthogonal_iSup_eigenspaces_ne_zero_eq_ker
 ---
 
-# Orthogonal i Sup eigenspaces ne zero eq ker
+# Orthogonal complement of the nonzero-eigenvalue eigenspaces
 
-The orthogonal complement of the span of the eigenspaces of a compact
-self-adjoint operator for *nonzero* eigenvalues is exactly the kernel of
-the operator.
+**Orthogonal complement of the nonzero-eigenvalue eigenspaces.** Let $H$ be a Hilbert space
+over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T : H \to H$ be a compact self-adjoint
+bounded linear operator. Then the orthogonal complement of the subspace spanned by the
+eigenspaces $\ker(T - \mu I)$ for all nonzero $\mu \in \mathbb{K}$ equals the kernel of $T$.
 
 ## Depends on
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.lpMulCLM_const_apply
 ---
 
-# Lp Mul CLM const apply
+# Multiplication by a constant function
 
-Multiplication by the constant function `c` is scalar multiplication by `c`.
+**Multiplication by a constant function.** Let $\mu$ be a measure on a measurable space
+$\alpha$ and let $c \in \mathbb{C}$. The multiplication operator on $L^2(\mu)$ by the constant
+function $x \mapsto c$ sends every $f \in L^2(\mu)$ to the scalar multiple $c f$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
-- [Mem Lp const top](mem-lp-const-top.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
+- [Constant functions are essentially bounded](mem-lp-const-top.md)
 
 ## Proof depends on
 
-- [Mem Lp mul of mem Lp top](mem-lp-mul-of-mem-lp-top.md)
+- [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 
 ## Sources
 

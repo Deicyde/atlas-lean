@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.isometry_shiftCLM
 ---
 
-# Isometry shift CLM
+# The unilateral shift preserves distances
 
-The unilateral shift is an isometry of `ℓ²(ℕ, 𝕜)`.
+**The unilateral shift preserves distances.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. The unilateral shift $S$ on $\ell^2(\mathbb{N}, \mathbb{K})$ is an isometry:
+$\|Sx - Sy\| = \|x - y\|$ for all $x, y \in \ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Shift CLM](shift-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Proof depends on
 
-- [Norm shift CLM apply](norm-shift-clm-apply.md)
+- [The unilateral shift preserves norms](norm-shift-clm-apply.md)
 
 ## Sources
 

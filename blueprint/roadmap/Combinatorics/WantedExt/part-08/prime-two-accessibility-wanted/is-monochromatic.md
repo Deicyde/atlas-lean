@@ -12,10 +12,6 @@ of the natural numbers with $r$ colours, a finite sequence $x_0, \dots, x_{k-1}$
 numbers is monochromatic when all its terms have the same colour: $c(x_i) = c(x_j)$ for all
 $i, j < k$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
-http://www.openproblemgarden.org/op/2_accessibility_of_primes):
-formalizes "monochromatic sequence" from the definition of `r`-accessible.
-
 ## Depends on
 
 This node has no prerequisites.
@@ -23,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PrimeTwoAccessibilityWanted](../../../../../sources/v2/WantedExt.md)
+- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "monochromatic sequence" from the definition of `r`-accessible.

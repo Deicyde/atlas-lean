@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.norm_cesaroMean_le
 ---
 
-# Norm cesaro Mean le
+# A Cesàro mean is bounded by the mean of the norms
 
-A Cesàro mean is bounded by the average of the norms.
+**A Cesàro mean is bounded by the mean of the norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $x : \mathbb{N} \to \mathbb{K}$ be any sequence and let $n$ be a natural
+number. Then $\|\frac{1}{n+1} \sum_{k=0}^{n} x_k\| \le \frac{1}{n+1} \sum_{k=0}^{n} \|x_k\|$.
 
 ## Depends on
 
-- [Cesaro Mean](cesaro-mean.md)
+- [Cesàro means of a sequence](cesaro-mean.md)
 
 ## Proof depends on
 
-- [Norm cesaro den](norm-cesaro-den.md)
+- [Norm of the Cesàro denominator](norm-cesaro-den.md)
 
 ## Sources
 

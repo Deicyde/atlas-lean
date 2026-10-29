@@ -4,5 +4,5 @@ navigation: module
 
 # Bourgain Explicit Expander AIMCombinatorics Problem238
 
-- [Bourgain Expander Square Plus Product](bourgain-expander-square-plus-product.md)
-- [Bourgain Expander Square Plus Product holds](bourgain-expander-square-plus-product-ho.md)
+- [Bourgain's expander property for x² + xy](bourgain-expander-square-plus-product.md)
+- [x² + xy is an explicit expander over prime fields](bourgain-expander-square-plus-product-ho.md)

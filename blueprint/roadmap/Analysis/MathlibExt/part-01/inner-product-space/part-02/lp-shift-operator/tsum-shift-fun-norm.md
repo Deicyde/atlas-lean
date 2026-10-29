@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.tsum_shiftFun_norm
 ---
 
-# Tsum shift Fun norm
+# Square sum of the forward shift
 
-The squared norms of a shifted sequence sum to the squared norms of
-the original sequence.
+**Square sum of the forward shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+For every $x \in \ell^2(\mathbb{N}, \mathbb{K})$, the forward shift $S x = (0, x_0, x_1, \dots)$
+of $x$ satisfies $\sum_{i=0}^{\infty} |(S x)_i|^2 = \sum_{i=0}^{\infty} |x_i|^2$.
 
 ## Depends on
 
-- [Shift Fun](shift-fun.md)
+- [Forward shift of a sequence](shift-fun.md)
 
 ## Proof depends on
 
-- [Memℓp shift Fun](mem-p-shift-fun.md)
+- [The forward shift of a square-summable sequence is square-summable](mem-p-shift-fun.md)
 
 ## Sources
 

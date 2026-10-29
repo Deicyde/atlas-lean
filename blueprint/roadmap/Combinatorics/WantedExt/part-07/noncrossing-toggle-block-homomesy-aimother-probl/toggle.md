@@ -5,19 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.NoncrossingToggleBlockHomomesyAIMOtherProblem36Wanted.toggle
 ---
 
-# Toggle
+# Toggle at an arc
 
-The toggle `τ_{i,j}` at the arc `a = (i, j)`: remove `a` if it is present, otherwise add it
-when the result is again the linear representation of a noncrossing partition, and otherwise do
-nothing.
+**Toggle at an arc.** For an arc $a = (i, j)$ and an arc set $P$ on $n$ points, the toggle
+$\tau_{i,j}$ sends $P$ to $P \setminus \{a\}$ if $a \in P$; otherwise to $P \cup \{a\}$ if
+$P \cup \{a\}$ is a noncrossing arc set; and otherwise it leaves $P$ unchanged.
 
 ## Depends on
 
-- [Arc Set](arc-set.md)
+- [Arc sets](arc-set.md)
 
 ## Proof depends on
 
-- [Is Noncrossing Arc Set](is-noncrossing-arc-set.md)
+- [Noncrossing arc sets](is-noncrossing-arc-set.md)
 
 ## Sources
 

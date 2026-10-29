@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.norm_volterraOperator_pow_le
 ---
 
-# Norm volterra Operator pow le
+# Factorial bound for powers of the Volterra operator
 
-Factorial bound for the operator norm of the powers of the Volterra operator.
+**Factorial bound for powers of the Volterra operator.** Let $V$ be the Volterra operator
+$(Vf)(x) = \int_0^x f(t)\,dt$ on the space of bounded continuous real functions on $[0, 1]$
+with the sup norm. For every natural number $n$, the operator norm of $V^n$ satisfies
+$\|V^n\| \le 1/n!$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 
-- [Pow volterra Operator apply norm le](pow-volterra-operator-apply-norm-le.md)
+- [Pointwise factorial bound for powers of the Volterra operator](pow-volterra-operator-apply-norm-le.md)
 
 ## Sources
 

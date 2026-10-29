@@ -6,14 +6,16 @@ proof: formalized
 lean: MvPolynomial.orderAt_smul
 ---
 
-# Order At smul
+# Scaling invariance of the order of vanishing
 
-For a homogeneous polynomial, rescaling the point by a nonzero scalar does not change the
-order of vanishing.
+**Scaling invariance of the order of vanishing.** Let $K$ be a field and let $F$ be a
+polynomial over $K$ in the variables $(X_i)_{i \in \sigma}$ that is homogeneous of some degree
+$d$. For every nonzero $c \in K$ and every point $v \in K^\sigma$, the orders of vanishing agree:
+$\operatorname{ord}_{cv} F = \operatorname{ord}_v F$.
 
 ## Depends on
 
-- [Order At](order-at.md)
+- [Order of vanishing at a point](order-at.md)
 
 ## Sources
 

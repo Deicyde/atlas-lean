@@ -6,11 +6,11 @@ proof: formalized
 lean: Polynomial.eval_and_derivative_eval_eq_zero_iff
 ---
 
-# Eval and derivative eval eq zero iff
+# Double root criterion
 
-Corollary 9.13: `f (a) = 0` and `f' (a) = 0` if and only if `a` is
-(at least) a double root of `f`, that is, `f = (X - C a) ^ 2 * g` for some
-`g`.
+**Double root criterion.** Let $R$ be a commutative ring, let $f \in R[x]$ and $a \in R$, and
+let $f'$ be the formal derivative of $f$. Then $f(a) = 0$ and $f'(a) = 0$ if and only if
+$f = (x - a)^2 g$ for some $g \in R[x]$.
 
 ## Depends on
 
@@ -23,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.DoubleRoot](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Corollary 9.13.

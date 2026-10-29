@@ -6,9 +6,11 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_const
 ---
 
-# Bool Fourier Coeff const
+# Fourier coefficients of a constant function
 
-A constant function has only the empty Fourier coefficient.
+**Fourier coefficients of a constant function.** For every real $c$ and every set $S$ of the
+$n$ coordinates, the Fourier coefficient at $S$ of the constant function $x \mapsto c$ on the
+Boolean cube in $n$ coordinates is $c$ if $S = \emptyset$ and $0$ otherwise.
 
 ## Depends on
 
@@ -17,9 +19,9 @@ A constant function has only the empty Fourier coefficient.
 
 ## Proof depends on
 
-- [Bool Fourier Coeff eq sum div two pow](bool-fourier-coeff-eq-sum-div-two-pow.md)
+- [Fourier coefficients as sums over the cube](bool-fourier-coeff-eq-sum-div-two-pow.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
-- [Sum cube Chi eq ite](sum-cube-chi-eq-ite.md)
+- [Sum of a Boolean cube character](sum-cube-chi-eq-ite.md)
 
 ## Sources
 

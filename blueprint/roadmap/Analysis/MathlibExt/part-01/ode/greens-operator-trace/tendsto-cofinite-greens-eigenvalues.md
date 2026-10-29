@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.GreensOperatorTrace.tendsto_cofinite_greensEigenvalues
 ---
 
-# Tendsto cofinite greens Eigenvalues
+# The Green's eigenvalues tend to zero
 
-The canonical Green eigenvalues tend to zero along the cofinite filter.
+**The Green's eigenvalues tend to zero.** The Green's eigenvalues
+$\lambda_k = 1/(k^2\pi^2)$ tend to $0$ along the cofinite filter on the positive integers, that
+is, $\lambda_k \to 0$ as $k \to \infty$.
 
 ## Depends on
 
-- [Greens Eigenvalue](../greens-operator/greens-eigenvalue.md)
+- [Eigenvalues of the Dirichlet Green's operator](../greens-operator/greens-eigenvalue.md)
 
 ## Proof depends on
 
-- [Summable greens Eigenvalues](summable-greens-eigenvalues.md)
+- [The Green's eigenvalues are summable](summable-greens-eigenvalues.md)
 
 ## Sources
 

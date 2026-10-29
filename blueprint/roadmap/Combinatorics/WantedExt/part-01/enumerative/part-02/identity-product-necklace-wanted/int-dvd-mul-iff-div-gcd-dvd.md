@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.int_dvd_mul_iff_div_gcd_dvd
 ---
 
-# Int dvd mul iff div gcd dvd
+# Divisibility of a product through the gcd
 
-Lemma 11: for integers `a, b, c` with `a, b` not both zero, `a ∣ bc` if and only if
-`a / gcd(a, b) ∣ c`.
+**Divisibility of a product through the gcd.** Let $a, b, c$ be integers with $a$ and $b$ not
+both zero. Then $a$ divides $bc$ if and only if $a / \gcd(a, b)$ divides $c$.
 
 ## Depends on
 

@@ -6,26 +6,27 @@ proof: formalized
 lean: AddCircle.fejer_kernel_properties
 ---
 
-# Fejer kernel properties
+# Properties of the Fejér kernel
 
-Bundled properties of the Fejér kernel `K_N` on `AddCircle T`:
-(1) `K_N(x) ≥ 0` for all `x`,
-(2) `K_N` is symmetric: `K_N(-x) = K_N(x)`,
-(3) `K_N` is `T`-periodic on `ℝ`,
-(4) `∫ K_N = 1`, and
-(5) the decay estimate: for any `δ > 0` and any `x` with
-`δ ≤ ‖1 - fourier 1 x‖`, we have `‖K_N(x)‖ ≤ 4 / ((N+1) δ²)`.
+**Properties of the Fejér kernel.** Let $T > 0$, let $N$ be a natural number, let $K_N$ be
+the $N$-th Fejér kernel on the circle $\mathbb{R}/T\mathbb{Z}$, let $\mu$ be the normalized Haar
+measure on $\mathbb{R}/T\mathbb{Z}$ (of total mass $1$), and let $e_1(x) = e^{2\pi i x / T}$.
+Then $\operatorname{Re} K_N(x) \ge 0$ for every $x \in \mathbb{R}/T\mathbb{Z}$;
+$K_N(-x) = K_N(x)$ for every $x \in \mathbb{R}/T\mathbb{Z}$; the function on $\mathbb{R}$ sending
+$t$ to $K_N$ evaluated at the class of $t$ in $\mathbb{R}/T\mathbb{Z}$ is $T$-periodic;
+$\int K_N \, d\mu = 1$; and for every $\delta > 0$ and every $x \in \mathbb{R}/T\mathbb{Z}$ with
+$\delta \le |1 - e_1(x)|$ we have $|K_N(x)| \le \frac{4}{(N+1)\delta^2}$.
 
 ## Depends on
 
-- [Fejer Kernel](fejer-kernel.md)
+- [The Fejér kernel](fejer-kernel.md)
 
 ## Proof depends on
 
-- [Fejer Kernel nonneg](fejer-kernel-nonneg.md)
-- [Fejer Kernel symmetric](fejer-kernel-symmetric.md)
-- [Fejer dirichlet sum eq sq](fejer-dirichlet-sum-eq-sq.md)
-- [Integral fejer Kernel](integral-fejer-kernel.md)
+- [Nonnegativity of the Fejér kernel](fejer-kernel-nonneg.md)
+- [Symmetry of the Fejér kernel](fejer-kernel-symmetric.md)
+- [The sum of Dirichlet kernels is a squared modulus](fejer-dirichlet-sum-eq-sq.md)
+- [The Fejér kernel has integral one](integral-fejer-kernel.md)
 
 ## Sources
 

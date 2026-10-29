@@ -6,11 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.HausdorffYoungFiniteAbelian.sum_norm_sq_dftFun
 ---
 
-# Sum norm sq dft Fun
+# The $p = 2$ endpoint of Hausdorff–Young (Plancherel)
 
-Plancherel in squared-norm form: the sum of the squared norms of the
-Fourier coefficients is `card G` times the sum of the squared norms of
-the values.
+**The $p = 2$ endpoint of Hausdorff–Young (Plancherel).** Let $G$ be a finite abelian
+group and let $f : G \to \mathbb{C}$ have discrete Fourier transform $\hat f$. Then, with
+$\psi$ running over the additive characters of $G$ and $|G|$ the number of elements of $G$,
+$\sum_{\psi} |\hat f(\psi)|^2 = |G| \sum_{x \in G} |f(x)|^2$.
 
 ## Depends on
 

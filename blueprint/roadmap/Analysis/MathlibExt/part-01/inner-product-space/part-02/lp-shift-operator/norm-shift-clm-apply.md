@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.norm_shiftCLM_apply
 ---
 
-# Norm shift CLM apply
+# The unilateral shift preserves norms
 
-The unilateral shift is an isometry: `‖S x‖ = ‖x‖`.
+**The unilateral shift preserves norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and
+let $S$ be the unilateral shift on the Hilbert space $\ell^2(\mathbb{N}, \mathbb{K})$ of
+square-summable sequences in $\mathbb{K}$, given by $S(x_0, x_1, \dots) = (0, x_0, x_1, \dots)$.
+Then $\|Sx\| = \|x\|$ for every $x \in \ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Shift CLM](shift-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Proof depends on
 
-- [Norm shift Lin Map apply](norm-shift-lin-map-apply.md)
+- [The forward shift linear map preserves norms](norm-shift-lin-map-apply.md)
 
 ## Sources
 

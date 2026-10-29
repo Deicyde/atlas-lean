@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjectureAllK
 ---
 
-# Conjecture All K
+# Bollobás–Brightwell–Leader conjecture for all $k$
 
-The Bollobás–Brightwell–Leader conjecture for every fixed `k`: `conjecture k` for all `k`,
-i.e. for each `k ≥ 2` a `1 - o(1)` fraction of the `k`-SAT functions on `n` variables is unate
-as `n → ∞`.
+**Bollobás–Brightwell–Leader conjecture for all $k$.** The proposition that for every natural
+number $k \ge 2$, the number of unate $k$-SAT functions on $n$ Boolean variables divided by the
+number of $k$-SAT functions on $n$ Boolean variables tends to $1$ as $n \to \infty$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Conjecture](conjecture.md)
+- [Bollobás–Brightwell–Leader conjecture for $k$](conjecture.md)
 
 ## Sources
 

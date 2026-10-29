@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.sum_cubeChi_apply_mul_cubeChi_apply_eq_ite
 ---
 
-# Sum cube Chi apply mul cube Chi apply eq ite
+# Dual orthogonality of the Boolean cube characters
 
-Dual orthogonality: summing `χ_S(x) χ_S(y)` over all `S` detects whether `x = y`.
+**Dual orthogonality of the Boolean cube characters.** Let $n \in \mathbb{N}$ and let $x, y$ be
+points of the Boolean cube of dimension $n$. For each subset $S$ of $\{0, \dots, n-1\}$ let
+$\chi_S$ be the Fourier character of $S$. Then $\sum_S \chi_S(x) \chi_S(y)$, the sum ranging over
+all subsets $S$ of $\{0, \dots, n-1\}$, equals $2^n$ if $x = y$ and $0$ otherwise.
 
 ## Depends on
 

@@ -6,18 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.SchurL1.schurSignSeq_mul
 ---
 
-# Schur Sign Seq mul
+# On block $k$, the conjugate signs recover absolute values
 
-On block `k`, the sign sequence times the `k`-th chosen term is its norm.
+**On block $k$, the conjugate signs recover absolute values.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, let $(x_n)$ be a sequence in $\ell^1(\mathbb{N}, \mathbb{K})$,
+let $n' : \mathbb{N} \to \mathbb{N}$, and let $M : \mathbb{N} \to \mathbb{N}$ be monotone and
+such that every $i \in \mathbb{N}$ satisfies $i < M(j + 1)$ for some $j$. Let $\sigma$ be the
+conjugate-sign sequence of $(x_n)$, $n'$ and $M$. For all $k, i \in \mathbb{N}$ with
+$M(k) \le i < M(k + 1)$, we have $\sigma_i \, x_{n'(k)}(i) = |x_{n'(k)}(i)|$.
 
 ## Depends on
 
-- [Schur Sign Seq](schur-sign-seq.md)
+- [Conjugate-sign sequence of a block decomposition](schur-sign-seq.md)
 
 ## Proof depends on
 
-- [Schur Block Of](schur-block-of.md)
-- [Schur Block Of eq](schur-block-of-eq.md)
+- [Block index for a cutoff sequence](schur-block-of.md)
+- [Indices in block $k$ have block index $k$](schur-block-of-eq.md)
 
 ## Sources
 

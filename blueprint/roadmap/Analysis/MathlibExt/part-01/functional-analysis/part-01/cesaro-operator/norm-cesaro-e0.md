@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.norm_cesaroE0
 ---
 
-# Norm cesaro E0
+# The first basis vector is a unit vector
 
-The norm of `e₀` is `1`.
+**The first basis vector is a unit vector.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+The first standard basis vector $e_0 = (1, 0, 0, \dots)$ of $\ell^2(\mathbb{N}, \mathbb{K})$
+has norm $\|e_0\| = 1$.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro E0](cesaro-e0.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [The first standard basis vector of $\ell^2$](cesaro-e0.md)
 
 ## Sources
 

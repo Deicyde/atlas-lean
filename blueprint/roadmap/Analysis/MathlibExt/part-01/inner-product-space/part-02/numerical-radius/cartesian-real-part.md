@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.cartesianRealPart
 ---
 
-# Cartesian Real Part
+# Real Cartesian part of an operator
 
-The operator-valued alias of Mathlib's `realPart T`: `(T + T*) / 2`.
+**Real Cartesian part of an operator.** For a bounded linear operator $T$ on a complex Hilbert
+space with adjoint $T^*$, the real Cartesian part of $T$ is the bounded linear operator
+$(T + T^*)/2$.
 
 ## Depends on
 

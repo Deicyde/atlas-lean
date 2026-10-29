@@ -5,15 +5,24 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.WeakConvergenceOfBoundedAeNullLpWanted.tendsto_integral_mul_of_ae_tendsto_zero_of_eLpNorm_le_one
 ---
 
-# Tendsto integral mul of ae tendsto zero of e Lp Norm le one
+# Bounded a.e.-null sequences in $L^p(0,1)$ converge weakly to zero
 
-Let $p\in(1,+\infty)$. Suppose that $(f_n)_n \subset L^{p}(0,1)$ and $\|f_n\|_{L^{p}}\le 1$ for
-all $n$. Assuming that $f_n(x)\to 0$ a.e., prove that $(f_n)_n$ converges weakly to $0$ in
-$L^{p}(0,1)$.
+**Bounded a.e.-null sequences in $L^p(0,1)$ converge weakly to zero.** Let $1 < p < \infty$
+and let $q$ be the conjugate exponent, so that $1/p + 1/q = 1$. Write $L^p(0,1)$ and $L^q(0,1)$
+for the Lebesgue spaces of real functions on $(0,1)$ with Lebesgue measure. Let
+$(f_n)_{n \in \mathbb{N}}$ be a sequence in $L^p(0,1)$ with $\|f_n\|_{L^p} \le 1$ for every $n$
+and $f_n(x) \to 0$ for almost every $x \in (0,1)$. Then for every $g \in L^q(0,1)$,
+
+$$
+\int_0^1 f_n(x)\, g(x)\, dx \to 0 \quad (n \to \infty).
+$$
+
+Since $L^q(0,1)$ is the dual of $L^p(0,1)$, this says that $(f_n)$ converges weakly to $0$ in
+$L^p(0,1)$.
 
 ## Depends on
 
-- [ΜI01](i01.md)
+- [Lebesgue measure on $(0,1)$](i01.md)
 
 ## Sources
 

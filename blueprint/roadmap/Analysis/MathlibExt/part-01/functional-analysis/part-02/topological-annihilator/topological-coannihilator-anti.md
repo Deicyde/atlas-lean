@@ -6,17 +6,20 @@ proof: formalized
 lean: Submodule.topologicalCoannihilator_anti
 ---
 
-# Topological Coannihilator anti
+# The topological coannihilator is antitone
 
-The topological coannihilator is antitone in the subspace of the dual.
+**The topological coannihilator is antitone.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, with continuous dual $E^*$. If $\Phi \subseteq \Psi$
+are subspaces of $E^*$, then the topological coannihilator of $\Psi$ is contained in the
+topological coannihilator of $\Phi$.
 
 ## Depends on
 
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Coannihilator](mem-topological-coannihilator.md)
+- [Membership in the topological coannihilator](mem-topological-coannihilator.md)
 
 ## Sources
 

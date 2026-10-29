@@ -6,17 +6,20 @@ proof: formalized
 lean: Submodule.topologicalCoannihilator_sup
 ---
 
-# Topological Coannihilator sup
+# Topological coannihilator of a sum of subspaces
 
-The coannihilator of a supremum is the infimum of the coannihilators.
+**Topological coannihilator of a sum of subspaces.** Let $E$ be a normed space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, with continuous dual $E^*$. For subspaces $\Phi$
+and $\Psi$ of $E^*$, the topological coannihilator of their supremum $\Phi + \Psi$ is the
+intersection of the topological coannihilators of $\Phi$ and $\Psi$.
 
 ## Depends on
 
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Coannihilator](mem-topological-coannihilator.md)
+- [Membership in the topological coannihilator](mem-topological-coannihilator.md)
 
 ## Sources
 

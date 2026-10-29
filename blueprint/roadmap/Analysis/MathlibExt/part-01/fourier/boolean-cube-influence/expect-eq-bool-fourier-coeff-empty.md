@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.expect_eq_boolFourierCoeff_empty
 ---
 
-# Expect eq bool Fourier Coeff empty
+# Average over the Boolean cube as the empty Fourier coefficient
 
-The mean of `f` is its Fourier coefficient at `∅`.
+**Average over the Boolean cube as the empty Fourier coefficient.** For every $n \in \mathbb{N}$
+and every function $f : \{-1, 1\}^n \to \mathbb{R}$, the uniform average $\mathbb{E}_x f(x)$ of $f$
+over the Boolean cube $\{-1, 1\}^n$ equals the Fourier coefficient $\hat f(\emptyset)$ of $f$ at
+the empty set.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ The mean of `f` is its Fourier coefficient at `∅`.
 
 ## Proof depends on
 
-- [Bool Fourier Coeff eq expect](bool-fourier-coeff-eq-expect.md)
+- [Fourier coefficients as averages](bool-fourier-coeff-eq-expect.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
 - [The empty Fourier character is constant one](../boolean-cube/cube-chi-empty.md)
 

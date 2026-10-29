@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.MultiplicationOperator.spectrum_mulCLM
 ---
 
-# Spectrum mul CLM
+# Spectrum of a multiplication operator
 
-The spectrum of the multiplication operator is the range of the multiplier.
+**Spectrum of a multiplication operator.** Let $X$ be a compact topological space, let
+$\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and let $\varphi \in C(X, \mathbb{K})$. The spectrum
+of the multiplication operator $M_\varphi f = \varphi f$, as an element of the algebra of bounded
+linear operators on $C(X, \mathbb{K})$, is the range $\varphi(X)$ of $\varphi$.
 
 ## Depends on
 
-- [Mul CLM](mul-clm.md)
+- [The multiplication operator on continuous functions](mul-clm.md)
 
 ## Proof depends on
 
-- [Mul CLM algebra Map](mul-clm-algebra-map.md)
+- [Multiplication by a constant function](mul-clm-algebra-map.md)
 
 ## Sources
 

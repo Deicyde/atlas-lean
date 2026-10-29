@@ -6,21 +6,24 @@ proof: formalized
 lean: BooleanCube.boolNoiseOp_cubeChi
 ---
 
-# Bool Noise Op cube Chi
+# Characters are eigenfunctions of the noise operator
 
-The characters are eigenfunctions of the noise operator.
+**Characters are eigenfunctions of the noise operator.** For every real number $\rho$ and every
+set $S \subseteq \{0, \dots, n-1\}$, the noise operator $T_\rho$ maps the Fourier character $\chi_S$
+on the Boolean cube $\{-1, 1\}^n$ to the function $x \mapsto \rho^{|S|} \chi_S(x)$, so $\chi_S$ is
+an eigenfunction of $T_\rho$ with eigenvalue $\rho^{|S|}$.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Noise Op](bool-noise-op.md)
+- [Noise operator on the Boolean cube](bool-noise-op.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
 
 ## Proof depends on
 
 - [Fourier coefficient on the Boolean cube](../boolean-cube/bool-fourier-coeff.md)
-- [Bool Fourier Coeff cube Chi](bool-fourier-coeff-cube-chi.md)
-- [Bool Noise Op eq sum](bool-noise-op-eq-sum.md)
+- [Fourier coefficients of a character](bool-fourier-coeff-cube-chi.md)
+- [Fourier expansion of the noise operator](bool-noise-op-eq-sum.md)
 
 ## Sources
 

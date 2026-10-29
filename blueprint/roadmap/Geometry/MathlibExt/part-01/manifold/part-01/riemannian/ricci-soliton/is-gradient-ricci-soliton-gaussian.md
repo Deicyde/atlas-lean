@@ -21,7 +21,7 @@ For `a < 0` this is the expanding Gaussian.
 - [Hessian vector Space eq fderiv fderiv](../hessian/hessian-vector-space-eq-fderiv-fderiv.md)
 - [Ricci](../curvature/ricci.md)
 - [Ricci vector Space](../vector-space/ricci-vector-space.md)
-- [Norm Sq Hessian](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](../../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources
 

@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.kernelOperator_smul
 ---
 
-# Kernel Operator smul
+# The integral operator is homogeneous in the kernel
 
-The kernel operator is homogeneous in the kernel.
+**The integral operator is homogeneous in the kernel.** For a continuous kernel $k$ on
+$[0, 1] \times [0, 1]$, write $T_k$ for the integral operator with kernel $k$ on
+$C([0, 1], \mathbb{R})$. For every real number $c$ and every continuous kernel $k$,
+$T_{c k} = c\, T_k$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Extend](kernel-extend.md)
-- [Kernel Integrand](kernel-integrand.md)
-- [Kernel Operator apply](kernel-operator-apply.md)
+- [Clamped extension](kernel-extend.md)
+- [Kernel integrand](kernel-integrand.md)
+- [Evaluation formula for the integral operator](kernel-operator-apply.md)
 
 ## Sources
 

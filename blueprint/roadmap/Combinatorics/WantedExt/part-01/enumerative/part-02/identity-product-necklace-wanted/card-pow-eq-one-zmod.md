@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_pow_eq_one_zmod
 ---
 
-# Card pow eq one zmod
+# Counting solutions of $x^b = 1$ in a cyclic group
 
-Lemma 12: `[C_a ÷ b] = gcd(a, b)`: the cyclic group of order `a` has exactly `gcd(a, b)`
-elements `x` with `x^b = 1`. Stated for every `b ≥ 0` (the paper takes `b` positive; for
-`b = 0` both sides are `a`).
+**Counting solutions of $x^b = 1$ in a cyclic group.** For natural numbers $a \ge 1$ and
+$b$, the cyclic group of order $a$ has exactly $\gcd(a, b)$ elements $x$ with $x^b = 1$.
+
+The paper takes $b$ positive; for $b = 0$ both sides equal $a$.
 
 ## Depends on
 

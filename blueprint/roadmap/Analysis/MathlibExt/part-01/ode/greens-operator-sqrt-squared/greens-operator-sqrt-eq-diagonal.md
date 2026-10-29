@@ -14,14 +14,14 @@ bounded continuous diagonal map.
 ## Depends on
 
 - [Diagonal Operator](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator.md)
-- [L2 Unit Interval](../greens-operator/l2-unit-interval.md)
-- [Greens Eigenvalue Sqrt](../greens-operator/greens-eigenvalue-sqrt.md)
-- [Greens Operator Sqrt](../greens-operator/greens-operator-sqrt.md)
-- [Sine Basis Fun](../greens-operator/sine-basis-fun.md)
+- [The space $L^2((0, 1))$](../greens-operator/l2-unit-interval.md)
+- [Square roots of the Green's operator eigenvalues](../greens-operator/greens-eigenvalue-sqrt.md)
+- [Square root of the Dirichlet Green's operator](../greens-operator/greens-operator-sqrt.md)
+- [Sine basis functions on $(0, 1)$](../greens-operator/sine-basis-fun.md)
 
 ## Proof depends on
 
-- [Diagonal Operator eq tsum](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator-eq-tsum.md)
+- [Series formula for a diagonal operator](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator-eq-tsum.md)
 
 ## Sources
 

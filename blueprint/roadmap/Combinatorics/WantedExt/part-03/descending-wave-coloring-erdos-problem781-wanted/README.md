@@ -4,9 +4,9 @@ navigation: module
 
 # Descending Wave Coloring Erdos Problem781
 
-- [Is Descending Wave](is-descending-wave.md)
-- [Forces Monochromatic Wave](forces-monochromatic-wave.md)
-- [Wave Number Quadratic](wave-number-quadratic.md)
-- [Wave Number Cubic Order](wave-number-cubic-order.md)
-- [Wave Number Quadratic refuted](wave-number-quadratic-refuted.md)
-- [Wave Number Cubic Order holds](wave-number-cubic-order-holds.md)
+- [Descending wave](is-descending-wave.md)
+- [Forcing a monochromatic descending wave](forces-monochromatic-wave.md)
+- [Erdős Problem 781, the exact-value question](wave-number-quadratic.md)
+- [Erdős Problem 781, cubic order of the wave number](wave-number-cubic-order.md)
+- [Erdős Problem 781 is false](wave-number-quadratic-refuted.md)
+- [Alon–Spencer: the descending-wave number has cubic order](wave-number-cubic-order-holds.md)

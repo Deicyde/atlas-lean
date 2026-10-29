@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.RadialSobolevExteriorBallWanted.ClosedUnitBall
 ---
 
-# Closed Unit Ball
+# Closed unit ball of $\mathbb{R}^n$
 
-The closed unit ball of `ℝⁿ`.
+**Closed unit ball of $\mathbb{R}^n$.** For a natural number $n$, the closed unit ball of
+$\mathbb{R}^n$ is the set $\{x \in \mathbb{R}^n : \|x\| \le 1\}$, where $\|\cdot\|$ is the Euclidean
+norm.
 
 ## Depends on
 
-- [Rn](rn.md)
+- [Real $n$-space with the Euclidean norm](rn.md)
 
 ## Sources
 

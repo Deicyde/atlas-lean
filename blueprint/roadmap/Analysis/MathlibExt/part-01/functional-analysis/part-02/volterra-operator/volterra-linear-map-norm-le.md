@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraLinearMap_norm_le
 ---
 
-# Volterra Linear Map norm le
+# Sup-norm bound for the Volterra linear map
 
-The Volterra operator is bounded by `1` on the unit ball.
+**Sup-norm bound for the Volterra linear map.** For every bounded continuous real function
+$f$ on $[0, 1]$, the Volterra linear map $V$ satisfies $\|Vf\| \le 1 \cdot \|f\|$, where
+$\|\cdot\|$ is the sup norm.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Linear Map](volterra-linear-map.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator as a linear map](volterra-linear-map.md)
 
 ## Proof depends on
 
-- [Volterra Extend](volterra-extend.md)
-- [Volterra Primitive continuous](volterra-primitive-continuous.md)
-- [Volterra Primitive norm le](volterra-primitive-norm-le.md)
+- [Extension by clamping](volterra-extend.md)
+- [Continuity of the Volterra primitive](volterra-primitive-continuous.md)
+- [Sup-norm bound for the Volterra primitive](volterra-primitive-norm-le.md)
 
 ## Sources
 

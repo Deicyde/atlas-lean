@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedSobolevCriticalWanted.Omega1
 ---
 
-# Omega1
+# The annulus of the critical weighted Sobolev inequality
 
-The annulus `B 3 \ closure (B 1)`.
+**The annulus of the critical weighted Sobolev inequality.** Let $B_r$ denote the open disc of
+radius $r$ about the origin of the Euclidean plane $\mathbb{R}^2$. The annulus $\Omega_1$ is
+$B_3 \setminus \overline{B}_1$, the set of points of $B_3$ outside the closure of $B_1$, that is,
+$\Omega_1 = \{x \in \mathbb{R}^2 : 1 < |x| < 3\}$.
 
 ## Depends on
 
-- [R2](r2.md)
+- [The plane of the critical weighted Sobolev inequality](r2.md)
 
 ## Proof depends on
 
-- [B](b.md)
+- [Discs about the origin for the critical weighted Sobolev inequality](b.md)
 
 ## Sources
 

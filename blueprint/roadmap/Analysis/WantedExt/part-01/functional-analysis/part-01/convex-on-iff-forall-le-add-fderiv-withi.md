@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ConvexOnIffAboveTangentWanted.convexOn_iff_forall_le_add_fderivWithin
 ---
 
-# Convex On Iff Above Tangent Wanted
+# Convexity via the tangent-plane inequality
 
-Suppose $X$ is an open convex subset of a Banach space $E$ and $f\in C^2(X,\mathbb R)$. Show
-these statements are equivalent:
-
-$f$ is convex;
-$f(x)\ge f(a)+\partial f(a)(x-a)$, for $a,x\in X$;
+**Convexity via the tangent-plane inequality.** Let $E$ be a real Banach space, let
+$X \subseteq E$ be an open convex set, and let $f \colon E \to \mathbb{R}$ be twice continuously
+differentiable on $X$. Then $f$ is convex on $X$ if and only if
+$f(x) \ge f(a) + Df(a)(x - a)$ for all $a, x \in X$, where $Df(a)$ is the Fréchet derivative of
+$f$ at $a$ within $X$.
 
 ## Depends on
 

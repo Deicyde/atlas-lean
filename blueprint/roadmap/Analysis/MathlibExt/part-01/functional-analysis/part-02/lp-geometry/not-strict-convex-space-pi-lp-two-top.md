@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.not_strictConvexSpace_piLp_two_top
 ---
 
-# Not strict Convex Space pi Lp two top
+# $\mathbb{R}^2$ with the $\ell^\infty$ norm is not strictly convex
 
-The real two-coordinate `PiLp ∞` space is not strictly convex in the standard sense.
+**$\mathbb{R}^2$ with the $\ell^\infty$ norm is not strictly convex.** The real normed space
+$\mathbb{R}^2$ with the $\ell^\infty$ norm is not a strictly convex space: not every closed ball
+of positive radius centred at the origin is a strictly convex set.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Not strict Convex pi Lp two top](not-strict-convex-pi-lp-two-top.md)
+- [Two distinct $\ell^\infty$ unit vectors in $\mathbb{R}^2$ with a unit midpoint](not-strict-convex-pi-lp-two-top.md)
 
 ## Sources
 

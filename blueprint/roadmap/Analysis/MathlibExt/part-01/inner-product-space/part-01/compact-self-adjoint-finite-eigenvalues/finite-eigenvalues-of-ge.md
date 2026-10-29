@@ -6,11 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge
 ---
 
-# Finiteness of eigenvalues bounded away from zero
+# Finiteness of large eigenvalues of a compact self-adjoint operator
 
-**Finiteness of eigenvalues bounded away from zero.** For a compact
-self-adjoint operator `T` and any `ε > 0`, the set of eigenvalues `μ` of `T`
-with `ε ≤ ‖μ‖` is finite.
+**Finiteness of large eigenvalues of a compact self-adjoint operator.** Let $T$ be a compact
+self-adjoint operator on a Hilbert space over $\mathbb{R}$ or $\mathbb{C}$. For every
+$\varepsilon > 0$, the set of eigenvalues $\mu$ of $T$ with $\varepsilon \le |\mu|$ is finite.
 
 ## Depends on
 

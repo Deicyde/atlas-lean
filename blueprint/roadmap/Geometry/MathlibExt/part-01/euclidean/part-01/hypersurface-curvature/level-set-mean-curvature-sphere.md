@@ -17,7 +17,7 @@ Sanity check: the unit sphere of `E`, as the zero set of `‖x‖² - 1`, has me
 
 ## Proof depends on
 
-- [Norm Sq Hessian](../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
+- [Second derivative of the squared norm](../../../../../../Analysis/MathlibExt/part-01/inner-product-space/part-02/fderiv-fderiv-norm-sq-apply.md)
 
 ## Sources
 

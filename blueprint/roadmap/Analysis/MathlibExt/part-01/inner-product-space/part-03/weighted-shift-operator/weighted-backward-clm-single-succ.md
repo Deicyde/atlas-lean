@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.weightedBackwardCLM_single_succ
 ---
 
-# Weighted Backward CLM single succ
+# Weighted backward shift on basis vectors
 
-The weighted backward shift sends the `(n + 1)`-st standard basis vector
-to the `n`-th one, scaled by `conj (w n)`.
+**Weighted backward shift on basis vectors.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $w : \mathbb{N} \to \mathbb{K}$ be weights with bounded moduli, and write $e_n$
+for the $n$-th standard basis vector of $\ell^2(\mathbb{N}, \mathbb{K})$. For every $n$, the
+weighted backward shift $B_w$ satisfies $B_w e_{n+1} = \overline{w_n}\, e_n$.
 
 ## Depends on
 
-- [Weighted Backward CLM](weighted-backward-clm.md)
+- [Weighted backward shift](weighted-backward-clm.md)
 
 ## Proof depends on
 
-- [Weighted Backward CLM apply](weighted-backward-clm-apply.md)
-- [Weighted Backward Fun](weighted-backward-fun.md)
+- [Coordinates of the weighted backward shift](weighted-backward-clm-apply.md)
+- [Weighted backward shift of a sequence](weighted-backward-fun.md)
 
 ## Sources
 

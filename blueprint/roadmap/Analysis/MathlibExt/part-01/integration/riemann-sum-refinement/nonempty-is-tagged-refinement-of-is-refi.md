@@ -6,22 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.TaggedPartition.nonempty_isTaggedRefinement_of_isRefinement
 ---
 
-# Nonempty is Tagged Refinement of is Refinement
+# Refinements carry tagged-refinement data
 
-Point-set inclusion supplies tagged-refinement data: each fine subinterval
-is assigned to the coarse subinterval containing it, and the lengths in each
-fiber telescope to that coarse subinterval's length.
+**Refinements carry tagged-refinement data.** Let $T$ and $T'$ be tagged partitions of
+$[a, b]$ such that every point of $T$ is a point of $T'$. Then tagged-refinement data from $T$
+to $T'$ exist: an assignment of each subinterval of $T'$ to a subinterval of $T$ that contains
+it, such that for each subinterval of $T$ the lengths of the subintervals of $T'$ assigned to it
+add up to its length.
 
 ## Depends on
 
-- [Partition](../riemann-partition/partition.md)
-- [Is Refinement](../riemann-partition/is-refinement.md)
-- [Tagged Partition](../riemann-partition/tagged-partition.md)
-- [Is Tagged Refinement](is-tagged-refinement.md)
+- [Partition of an interval](../riemann-partition/partition.md)
+- [Refinement of a partition](../riemann-partition/is-refinement.md)
+- [Tagged partition](../riemann-partition/tagged-partition.md)
+- [Tagged-refinement data](is-tagged-refinement.md)
 
 ## Proof depends on
 
-- [Telescope sum of embedding](telescope-sum-of-embedding.md)
+- [Telescoping over the fibers of an assignment](telescope-sum-of-embedding.md)
 
 ## Sources
 

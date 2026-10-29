@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpDiagonalOperatorSpectrum.spectrum_diagonalCLM
 ---
 
-# Spectrum diagonal CLM
+# Spectrum of a diagonal operator
 
-The spectrum of a diagonal operator on `ℓ²` is the closure of the range
-of its coefficients.
+**Spectrum of a diagonal operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let
+$a : \iota \to \mathbb{K}$ be a bounded family of coefficients, and let $D_a$ be the diagonal
+operator on $\ell^2(\iota, \mathbb{K})$ given by $(D_a x)_i = a_i x_i$. The spectrum of $D_a$ over
+$\mathbb{K}$, the set of $\mu \in \mathbb{K}$ for which $\mu I - D_a$ is not invertible as a
+bounded operator ($I$ the identity operator), is the closure of $\{a_i : i \in \iota\}$.
 
 ## Depends on
 
-- [Diagonal CLM](../lp-diagonal-operator/diagonal-clm.md)
+- [Diagonal operator on ℓ²](../lp-diagonal-operator/diagonal-clm.md)
 
 ## Proof depends on
 
-- [Not mem spectrum of not mem closure range](not-mem-spectrum-of-not-mem-closure-rang.md)
-- [Range subset spectrum](range-subset-spectrum.md)
+- [Points off the closure of the coefficients are not in the spectrum](not-mem-spectrum-of-not-mem-closure-rang.md)
+- [Every coefficient of a diagonal operator lies in its spectrum](range-subset-spectrum.md)
 
 ## Sources
 

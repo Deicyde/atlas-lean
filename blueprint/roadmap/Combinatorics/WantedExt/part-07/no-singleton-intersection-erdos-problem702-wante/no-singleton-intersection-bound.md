@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.NoSingletonIntersectionErdosProblem702Wanted.noSingletonIntersectionBound
 ---
 
-# No Singleton Intersection Bound
+# Erdős Problem 702 on singleton intersections
 
-Erdős Problem 702, in Frankl's form: for every `k ≥ 4` and every sufficiently large `n`, a
-family of more than `C(n - 2, k - 2)` `k`-element subsets of `{1, …, n}` contains two sets
-meeting in exactly one element.
+**Erdős Problem 702 on singleton intersections.** For every $k \ge 4$ and every sufficiently
+large $n$ (depending on $k$), every family of more than $\binom{n-2}{k-2}$ subsets of
+$\{1, \dots, n\}$, each with exactly $k$ elements, contains two sets $A$ and $B$ with
+$|A \cap B| = 1$.
+
+This is Frankl's form of the problem of Erdős and Sós; without the hypothesis that $n$ is large
+the statement fails, for instance for $k = 4$ and $n = 5$.
 
 ## Depends on
 

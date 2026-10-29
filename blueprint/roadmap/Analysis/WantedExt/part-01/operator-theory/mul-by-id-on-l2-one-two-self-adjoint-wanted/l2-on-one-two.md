@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.MulByIdOnL2OneTwoSelfAdjointWanted.L2OnOneTwo
 ---
 
-# L2 On One Two
+# The space $L^2((1,2))$
 
-`L²([1, 2])` for Lebesgue measure.
+**The space $L^2([1,2])$.** $L^2([1,2])$ is the space of real-valued functions on
+$\mathbb{R}$ that are square-integrable for Lebesgue measure restricted to $[1,2]$, taken modulo
+equality almost everywhere on $[1,2]$.
 
 ## Depends on
 

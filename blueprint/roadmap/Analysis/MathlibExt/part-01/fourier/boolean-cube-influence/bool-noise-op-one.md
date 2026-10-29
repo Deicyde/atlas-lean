@@ -6,21 +6,22 @@ proof: formalized
 lean: BooleanCube.boolNoiseOp_one
 ---
 
-# Bool Noise Op one
+# The noise operator $T_1$ is the identity
 
-`T_1` is the identity.
+**The noise operator $T_1$ is the identity.** For every function $f$ from the Boolean cube
+$\{-1, 1\}^n$ to $\mathbb{R}$, the noise operator with $\rho = 1$ fixes $f$: $T_1 f = f$.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Noise Op](bool-noise-op.md)
+- [Noise operator on the Boolean cube](bool-noise-op.md)
 
 ## Proof depends on
 
 - [Fourier coefficient on the Boolean cube](../boolean-cube/bool-fourier-coeff.md)
-- [Bool Noise Op eq sum](bool-noise-op-eq-sum.md)
+- [Fourier expansion of the noise operator](bool-noise-op-eq-sum.md)
 - [Fourier character on the Boolean cube](../boolean-cube/cube-chi.md)
-- [Sum bool Fourier Coeff mul cube Chi](sum-bool-fourier-coeff-mul-cube-chi.md)
+- [Fourier inversion on the Boolean cube](sum-bool-fourier-coeff-mul-cube-chi.md)
 
 ## Sources
 

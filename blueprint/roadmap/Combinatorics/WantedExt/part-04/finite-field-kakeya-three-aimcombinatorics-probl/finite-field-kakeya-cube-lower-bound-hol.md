@@ -5,15 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FiniteFieldKakeyaThreeAIMCombinatoricsProblem245Wanted.finiteFieldKakeyaCubeLowerBound_holds
 ---
 
-# Finite Field Kakeya Cube Lower Bound holds
+# Finite field Kakeya sets in dimension three have cubic size
 
-Resolved true, with the optimal exponent `3`: Dvir proved by the polynomial method that every Kakeya
-set `K ⊆ Fⁿ` over a finite field with `q` elements has `|K| ≥ C_n qⁿ` (Theorem 3, the Alon-Tao form
-of his Theorem 1); for `n = 3` this is `|E| ≫ |F|³`, beyond Wolff's `|F|^{5/2}` by `ε = 1/2`.
+**Finite field Kakeya sets in dimension three have cubic size.** There is a real number $c > 0$
+such that for every finite field $F$ and every Kakeya set $E \subseteq F^3$, that is, a set such
+that for every $x \in F^3$ there is $y \in F^3$ with $\{y + a x : a \in F\} \subseteq E$, we have
+$|E| \ge c\,|F|^3$.
+
+Dvir proved by the polynomial method that every Kakeya set $K \subseteq F^n$ over a finite field
+$F$ with $q$ elements has $|K| \ge C_n q^n$, with $C_n$ depending only on $n$ (Theorem 3, the
+Alon–Tao form of his Theorem 1). For $n = 3$ this answers Tao's question, which asks for
+$|E| \gtrsim |F|^{5/2 + \varepsilon}$ for some $\varepsilon > 0$, beyond Wolff's bound
+$|F|^{5/2}$, with $\varepsilon = 1/2$.
 
 ## Depends on
 
-- [Finite Field Kakeya Cube Lower Bound](finite-field-kakeya-cube-lower-bound.md)
+- [Statement of the finite field Kakeya bound in dimension three](finite-field-kakeya-cube-lower-bound.md)
 
 ## Sources
 

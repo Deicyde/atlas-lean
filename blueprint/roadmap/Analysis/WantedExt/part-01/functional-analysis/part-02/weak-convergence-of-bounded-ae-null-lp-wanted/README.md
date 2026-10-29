@@ -4,5 +4,5 @@ navigation: module
 
 # Weak Convergence Of Bounded Ae Null Lp
 
-- [ΜI01](i01.md)
-- [Tendsto integral mul of ae tendsto zero of e Lp Norm le one](tendsto-integral-mul-of-ae-tendsto-zero.md)
+- [Lebesgue measure on $(0,1)$](i01.md)
+- [Bounded a.e.-null sequences in $L^p(0,1)$ converge weakly to zero](tendsto-integral-mul-of-ae-tendsto-zero.md)

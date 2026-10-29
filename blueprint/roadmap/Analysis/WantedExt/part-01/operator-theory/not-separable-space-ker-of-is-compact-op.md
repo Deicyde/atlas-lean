@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.CompactOperatorKernelNonseparableWanted.not_separableSpace_ker_of_isCompactOperator_of_not_separableSpace
 ---
 
-# Compact Operator Kernel Nonseparable Wanted
+# The kernel of a compact operator on a nonseparable Hilbert space is nonseparable
 
-Prove that if H is a nonseparable Hilbert space and A is a compact operator on H, then the
-nullspace ker(A) is itself a nonseparable Hilbert space.
+**The kernel of a compact operator on a nonseparable Hilbert space is nonseparable.** Let
+$H$ be a complex Hilbert space that is not separable and let $A : H \to H$ be a compact operator.
+Then the kernel $\ker A$ is not separable.
 
 ## Depends on
 

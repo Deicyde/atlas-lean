@@ -6,9 +6,10 @@ proof: formalized
 lean: BooleanCube.card_boolCube
 ---
 
-# Card bool Cube
+# Number of points of the Boolean cube
 
-The `n`-cube has `2 ^ n` points.
+**Number of points of the Boolean cube.** For every $n \in \mathbb{N}$, the Boolean cube of
+dimension $n$ has exactly $2^n$ points.
 
 ## Depends on
 

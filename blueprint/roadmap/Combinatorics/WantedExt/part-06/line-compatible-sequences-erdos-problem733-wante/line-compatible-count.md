@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineCompatibleSequencesErdosProblem733Wanted.lineCompatibleCount
 ---
 
-# Line Compatible Count
+# Number of line-compatible sequences
 
-`f(n)`: the number of line-compatible sequences for `n`, i.e. of distinct multisets
-`lineSizes P` over `n`-point sets `P ⊆ ℝ²` (a finite set: each has at most `n²` entries, all at most
-`n`).
+**Number of line-compatible sequences.** For a natural number $n$, $f(n)$ is the number of
+distinct multisets that arise as the line sizes of some $n$-point set $P \subseteq \mathbb{R}^2$,
+that is, as the multiset of the numbers $|\ell \cap P|$ over the distinct lines $\ell$ through
+two distinct points of $P$, each line counted once. These multisets are the line-compatible
+sequences for $n$; there are finitely many, since each has at most $n^2$ entries, all at most
+$n$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Line Sizes](line-sizes.md)
+- [Line sizes of a planar point set](line-sizes.md)
 
 ## Sources
 

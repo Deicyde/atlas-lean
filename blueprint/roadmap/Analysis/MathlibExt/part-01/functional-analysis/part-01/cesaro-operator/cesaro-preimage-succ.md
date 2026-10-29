@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.cesaro_preimage_succ
 ---
 
-# Cesaro preimage succ
+# One step of inverting the Cesàro operator
 
-One step of the inversion of the Cesàro operator: `x (n+1)` is a
-difference of two consecutive values of `C x`.
+**One step of inverting the Cesàro operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, and let $C$ be the Cesàro operator on $\ell^2(\mathbb{N}, \mathbb{K})$. For every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$ and every $n \in \mathbb{N}$,
+$x(n+1) = (n+2)\,(Cx)(n+1) - (n+1)\,(Cx)(n)$.
 
 ## Depends on
 
-- [Cesaro Space](cesaro-space.md)
-- [Cesaro CLM](cesaro-clm.md)
+- [The sequence space $\ell^2(\mathbb{N}, \mathbb{K})$](cesaro-space.md)
+- [Cesàro operator on square-summable sequences](cesaro-clm.md)
 
 ## Proof depends on
 
-- [Cesaro sum eq](cesaro-sum-eq.md)
+- [Partial sums from Cesàro means](cesaro-sum-eq.md)
 
 ## Sources
 

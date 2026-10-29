@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.norm_lpMulCLM_le
 ---
 
-# Norm lp Mul CLM le
+# Norm bound for multiplication operators on L²
 
-The operator norm is at most the essential supremum norm of the multiplier.
+**Norm bound for multiplication operators on L².** Let $\mu$ be a measure on a measurable
+space $\alpha$ and let $\varphi : \alpha \to \mathbb{C}$ be in $L^\infty(\mu)$, with essential
+supremum norm $\|\varphi\|_\infty$. Then the multiplication operator $M_\varphi$ on the complex
+space $L^2(\mu)$ has operator norm $\|M_\varphi\| \le \|\varphi\|_\infty$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Ae norm le e Lp Norm top](ae-norm-le-e-lp-norm-top.md)
-- [Norm lp Mul CLM apply le of ae bound](norm-lp-mul-clm-apply-le-of-ae-bound.md)
+- [Pointwise bound by the essential supremum norm](ae-norm-le-e-lp-norm-top.md)
+- [Almost everywhere bound for a multiplication operator](norm-lp-mul-clm-apply-le-of-ae-bound.md)
 
 ## Sources
 

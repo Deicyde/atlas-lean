@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty.sum_norm_sq_dftFun
 ---
 
-# Sum norm sq dft Fun
+# Squared-norm Plancherel identity for the finite Fourier transform
 
-Plancherel in squared-norm form: the squared `ℓ²` norm of `f̂` is
-`|G|` times the squared `ℓ²` norm of `f`.
+**Squared-norm Plancherel identity for the finite Fourier transform.** Let $G$ be a finite
+abelian group and $f : G \to \mathbb{C}$, with discrete Fourier transform $\hat f$. Then
+$\sum_{\psi} |\hat f(\psi)|^2 = |G| \sum_{x \in G} |f(x)|^2$, where $\psi$ runs over all
+additive characters of $G$.
 
 ## Depends on
 

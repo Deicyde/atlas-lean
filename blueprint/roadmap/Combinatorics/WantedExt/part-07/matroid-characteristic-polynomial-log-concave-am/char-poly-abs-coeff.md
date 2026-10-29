@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.MatroidCharacteristicPolynomialLogConcaveAMR156Problem0026Wanted.charPolyAbsCoeff
 ---
 
-# Char Poly Abs Coeff
+# Absolute coefficients of the characteristic polynomial of a matroid
 
-`w_k(M)`: the absolute value of the coefficient of `λ ^ (r - k)` in `χ_M`, where `r = r(E)` is
-the rank of `M`, and `0` for `k > r`.
+**Absolute coefficients of the characteristic polynomial of a matroid.** Let $M$ be a finite
+matroid on the ground set $E$ with rank function $r$ and characteristic polynomial
+$\chi_M(\lambda) = \sum_{I \subseteq E} (-1)^{|I|} \lambda^{r(E) - r(I)}$. For a natural number
+$k$, $w_k(M)$ is the absolute value of the coefficient of $\lambda^{r(E) - k}$ in $\chi_M$ when
+$k \le r(E)$, and $w_k(M) = 0$ when $k > r(E)$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Char Poly Coeff](char-poly-coeff.md)
-- [Fin Rank](fin-rank.md)
+- [Coefficients of the characteristic polynomial of a matroid](char-poly-coeff.md)
+- [Rank of a set in a matroid, as a natural number](fin-rank.md)
 
 ## Sources
 

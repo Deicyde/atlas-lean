@@ -4,7 +4,7 @@ navigation: module
 
 # Block Compatible Sequence Count
 
-- [Is PBD](is-pbd.md)
-- [Block Compatible](block-compatible.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Pairwise balanced design](is-pbd.md)
+- [Block-compatible sequences](block-compatible.md)
+- [Many block-compatible sequences](conjecture.md)
+- [Many block-compatible sequences (Erdős Problem 732)](conjecture-holds.md)

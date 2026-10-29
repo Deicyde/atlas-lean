@@ -5,11 +5,12 @@ statement: formalized
 lean: Submodule.topologicalAnnihilator
 ---
 
-# Topological Annihilator
+# Topological annihilator
 
-The **topological annihilator** of a subspace `S` of a normed space:
-the subspace of the continuous dual consisting of the functionals that
-vanish on `S`.
+**Topological annihilator.** Let $E$ be a normed space over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$, with continuous dual $E^*$. The topological annihilator of a subspace $S$ of $E$
+is the subspace of $E^*$ consisting of the continuous linear functionals $f$ with $f(x) = 0$
+for all $x \in S$.
 
 ## Depends on
 

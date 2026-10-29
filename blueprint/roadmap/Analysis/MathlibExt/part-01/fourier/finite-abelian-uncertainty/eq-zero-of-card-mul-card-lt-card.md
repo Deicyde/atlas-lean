@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty.eq_zero_of_card_mul_card_lt_card
 ---
 
-# Eq zero of card mul card lt card
+# Functions with small support and small Fourier support vanish
 
-Nonvanishing form: there is no nonzero function supported in `A`
-whose Fourier transform is supported in `B` when `|A| * |B| < |G|`.
+**Functions with small support and small Fourier support vanish.** Let $G$ be a finite abelian
+group, let $A \subseteq G$, and let $B$ be a set of additive characters of $G$ with
+$|A| \cdot |B| < |G|$. If $f : G \to \mathbb{C}$ vanishes outside $A$ and its discrete Fourier
+transform $\hat f$ vanishes outside $B$, then $f = 0$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ whose Fourier transform is supported in `B` when `|A| * |B| < |G|`.
 
 ## Proof depends on
 
-- [Card le mul card filter support](card-le-mul-card-filter-support.md)
+- [Donoho–Stark uncertainty principle](card-le-mul-card-filter-support.md)
 
 ## Sources
 

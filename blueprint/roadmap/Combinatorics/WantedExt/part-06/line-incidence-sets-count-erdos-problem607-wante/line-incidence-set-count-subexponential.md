@@ -5,9 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineIncidenceSetsCountErdosProblem607Wanted.lineIncidenceSetCountSubexponential
 ---
 
-# Line Incidence Set Count Subexponential
+# Erdős Problem 607: subexponentially many line-incidence sets
 
-Erdős Problem 607: `F(n) ≤ exp(O(√n))`.
+**Erdős Problem 607: subexponentially many line-incidence sets.** For a finite set
+$P \subseteq \mathbb{R}^2$, let $A(P)$ be the set of the numbers $|\ell \cap P|$ over the lines
+$\ell$ through at least two distinct points of $P$, and let $F(n)$ be the number of distinct sets
+$A(P)$ over all $n$-point sets $P \subseteq \mathbb{R}^2$. This is the statement that there is a
+real constant $C$ such that $F(n) \le e^{C\sqrt{n}}$ for every natural number $n$, that is,
+$F(n) \le \exp(O(\sqrt{n}))$.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Line Incidence Set Count](line-incidence-set-count.md)
+- [Number of line-incidence sets](line-incidence-set-count.md)
 
 ## Sources
 

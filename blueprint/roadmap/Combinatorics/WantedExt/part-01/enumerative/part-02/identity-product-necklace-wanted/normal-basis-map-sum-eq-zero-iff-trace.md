@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.normalBasisMap_sum_eq_zero_iff_trace
 ---
 
-# Normal Basis Map sum eq zero iff trace
+# Zero-sum tuples correspond to trace-zero elements
 
-Theorem 30: with `Φ` as in Lemma 28, a tuple is zero-sum if and only if its image has
-trace `0` (the trace of a conjugacy class is that of any member).
+**Zero-sum tuples correspond to trace-zero elements.** Let $K$ be a finite field that is an
+algebra over a finite field $F$, let $q = |F|$ and $n = [K : F]$, and let $\beta \in K$ be such
+that $\beta, \beta^q, \dots, \beta^{q^{n-1}}$ are linearly independent over $F$. Define
+$\Phi : F^n \to K$ by $\Phi(a_0, \dots, a_{n-1}) = \sum_{i=0}^{n-1} a_i \beta^{q^i}$. Then for
+every $a = (a_0, \dots, a_{n-1}) \in F^n$, we have $a_0 + a_1 + \dots + a_{n-1} = 0$ if and only if
+the trace of $\Phi(a)$ from $K$ to $F$ is $0$.
 
 ## Depends on
 

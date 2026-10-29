@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.memℓp_weightedShiftFun
 ---
 
-# Memℓp weighted Shift Fun
+# Weighted forward shifts preserve square-summability
 
-The weighted-shifted sequence is in `ℓ²` when the weights are bounded.
+**Weighted forward shifts preserve square-summability.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $(w_n)_{n \in \mathbb{N}}$ be a bounded sequence in $\mathbb{K}$. For every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$, the sequence $y$ with $y_0 = 0$ and
+$y_{n+1} = w_n x_n$ is square-summable.
 
 ## Depends on
 
-- [Weighted Shift Fun](weighted-shift-fun.md)
+- [Weighted forward shift of a sequence](weighted-shift-fun.md)
 
 ## Proof depends on
 
-- [Weighted Shift CLM](weighted-shift-clm.md)
-- [Weighted Shift CLM apply coe](weighted-shift-clm-apply-coe.md)
+- [Weighted forward shift operator](weighted-shift-clm.md)
+- [The weighted forward shift agrees with the shift of sequences](weighted-shift-clm-apply-coe.md)
 
 ## Sources
 

@@ -13,11 +13,6 @@ length $k \ne 1$ there is a sequence $x_0, \dots, x_{k-1}$ of natural numbers th
 monochromatic for $c$ and is an $S$-diffsequence: for each $i$ with $i + 1 < k$ there is
 $d \in S$ with $x_{i+1} = x_i + d$.
 
-Source `OPG-1797` (Open Problem Garden, node 1797,
-http://www.openproblemgarden.org/op/2_accessibility_of_primes):
-`S` is `r`-accessible if for every `r`-coloring of `ℕ` and every
-`k ∈ ℕ \ {1}` there is a monochromatic `S`-diffsequence of length `k`.
-
 ## Depends on
 
 This node has no prerequisites.
@@ -30,3 +25,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PrimeTwoAccessibilityWanted](../../../../../sources/v2/WantedExt.md)
+- `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): `S` is `r`-accessible if for every `r`-coloring of `ℕ` and every `k ∈ ℕ \ {1}` there is a monochromatic `S`-diffsequence of length `k`.

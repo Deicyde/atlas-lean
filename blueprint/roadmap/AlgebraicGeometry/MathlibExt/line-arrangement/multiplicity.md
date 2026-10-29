@@ -5,13 +5,16 @@ statement: formalized
 lean: LineArrangement.multiplicity
 ---
 
-# Multiplicity
+# Multiplicity of a point in a line arrangement
 
-The multiplicity `m_p` of the point `p` in `A`: the number of lines of `A` through `p`.
+**Multiplicity of a point in a line arrangement.** Let $A$ be a line arrangement in the
+projective plane over a field. The multiplicity $m_p$ of a point $p$ in $A$ is the number of
+lines of $A$ through $p$, that is, of lines of $A$ whose coordinate vector has zero dot product
+with a representative of $p$.
 
 ## Depends on
 
-- [Line Arrangement](line-arrangement.md)
+- [Line arrangement](line-arrangement.md)
 
 ## Sources
 

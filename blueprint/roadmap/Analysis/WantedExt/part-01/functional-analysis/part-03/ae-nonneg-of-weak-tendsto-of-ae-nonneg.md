@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.WeakLimitOfNonnegLpNonnegWanted.ae_nonneg_of_weak_tendsto_of_ae_nonneg
 ---
 
-# Weak Limit Of Nonneg Lp Nonneg Wanted
+# Weak $L^p$ limits of nonnegative functions are nonnegative
 
-Let $1 < p < \infty$. Suppose $\{f_n\}_{n=1}^\infty \subset L^p([0,1])$ are functions such that
-for each $n \in \mathbb{N}$, $f_n(x) \ge 0$ for a.e.\ $x$. If $f_n$ converges weakly (in $L^p$) to a
-function $f \in L^p([0,1])$, prove that $f(x) \ge 0$ for a.e.\ $x$.
+**Weak $L^p$ limits of nonnegative functions are nonnegative.** Let $1 < p < \infty$
+and write $L^p([0,1])$ for the Lebesgue space of real functions on $[0,1]$ with Lebesgue measure.
+Let $(f_n)_{n \in \mathbb{N}}$ be a sequence in $L^p([0,1])$ such that for each $n$,
+$f_n(x) \ge 0$ for almost every $x \in [0,1]$, and let $f \in L^p([0,1])$. If $f_n$ converges
+weakly to $f$, that is, $\ell(f_n) \to \ell(f)$ for every continuous linear functional
+$\ell : L^p([0,1]) \to \mathbb{R}$, then $f(x) \ge 0$ for almost every $x \in [0,1]$.
 
 ## Depends on
 

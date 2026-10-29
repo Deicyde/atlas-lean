@@ -9,5 +9,5 @@ navigation: module
 - [Subhypergraph containment](contains-subgraph.md)
 - [Characterization of uniform hypergraphs](is-uniform-iff.md)
 - [Characterization of subhypergraph containment](contains-subgraph-iff.md)
-- [Is Intersecting](is-intersecting.md)
-- [Is Intersecting iff](is-intersecting-iff.md)
+- [Intersecting families](is-intersecting.md)
+- [Characterization of intersecting families](is-intersecting-iff.md)

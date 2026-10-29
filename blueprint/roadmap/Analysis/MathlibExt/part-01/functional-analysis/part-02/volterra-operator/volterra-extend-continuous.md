@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraExtend_continuous
 ---
 
-# Volterra Extend continuous
+# The clamped extension is continuous
 
-The clamped extension is continuous.
+**The clamped extension is continuous.** For every bounded continuous real function $f$ on
+$[0, 1]$, its extension $t \mapsto f(\max(0, \min(t, 1)))$ to $\mathbb{R}$ by clamping is
+continuous on $\mathbb{R}$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Extend](volterra-extend.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [Extension by clamping](volterra-extend.md)
 
 ## Proof depends on
 
-- [Clamp01](clamp01.md)
+- [Clamping to the unit interval](clamp01.md)
 
 ## Sources
 

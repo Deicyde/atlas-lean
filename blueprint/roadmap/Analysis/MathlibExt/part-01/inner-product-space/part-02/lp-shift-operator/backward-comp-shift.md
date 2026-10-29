@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.backward_comp_shift
 ---
 
-# Backward comp shift
+# Left inverse of the unilateral shift
 
-The backward shift is a left inverse of the unilateral shift.
+**Left inverse of the unilateral shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+The backward shift $B$ is a left inverse of the unilateral shift $S$ on
+$\ell^2(\mathbb{N}, \mathbb{K})$: $BS = I$, where $I$ is the identity operator.
 
 ## Depends on
 
-- [Backward CLM](backward-clm.md)
-- [Shift CLM](shift-clm.md)
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Sources
 

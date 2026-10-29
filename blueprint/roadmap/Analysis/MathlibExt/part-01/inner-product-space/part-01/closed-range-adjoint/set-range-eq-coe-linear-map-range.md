@@ -6,12 +6,15 @@ proof: formalized
 lean: ContinuousLinearMap.setRange_eq_coe_linearMap_range
 ---
 
-# Set Range eq coe linear Map range
+# The range of a bounded operator as a set
 
-The set-theoretic range of a continuous linear map is the coercion of its
-linear range. This bridges `IsClosed (Set.range T)` (used by the anti-Lipschitz
-criterion) and `IsClosed (LinearMap.range T)` (used by the adjoint
-orthogonality identities).
+**The range of a bounded operator as a set.** Let $E'$ and $F'$ be Hilbert spaces over
+$\mathbb{K}$, where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, and let $S : E' \to F'$ be a
+bounded linear operator. The set of values of $S$ equals the underlying set of the range of $S$
+regarded as a linear subspace of $F'$.
+
+This lets closedness of the range pass between the anti-Lipschitz criterion, stated for the
+set of values, and the adjoint orthogonality identities, stated for the linear subspace.
 
 ## Depends on
 

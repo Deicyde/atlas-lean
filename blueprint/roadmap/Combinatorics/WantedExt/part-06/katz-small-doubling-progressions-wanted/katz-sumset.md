@@ -5,12 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.KatzSmallDoublingProgressionsWanted.katzSumset
 ---
 
-# Katz Sumset
+# Sumset of a finite set of integers
 
-Sumset `A + A` of a finite set of integers as a `Finset ℤ`, whose
-cardinality is `|A + A|` in the source. Source: [AIM-COMBINATORICS-0211],
-AIM Problem Lists, Recent trends in additive combinatorics, item 1.5,
-`aim-combinatorics-notes.json notes[210]`.
+**Sumset of a finite set of integers.** For a finite set $A \subseteq \mathbb{Z}$, the sumset
+$A + A = \{a + b : a, b \in A\}$, a finite set of integers.
 
 ## Depends on
 
@@ -19,3 +17,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KatzSmallDoublingProgressionsWanted](../../../../../sources/v2/WantedExt.md)
+- [AIM-COMBINATORICS-0211], AIM Problem Lists, Recent trends in additive combinatorics, item 1.5, `aim-combinatorics-notes.json notes[210]`.

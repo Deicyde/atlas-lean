@@ -5,24 +5,22 @@ statement: formalized
 lean: MathlibExt.Analysis.OperatorTheory.HilbertSchmidtFiniteRankBoundWanted.exists_hsNorm_le_mul_opNorm_of_finiteDimensional_quotient_ker
 ---
 
-# Hilbert Schmidt Finite Rank Bound Wanted
+# The Hilbert–Schmidt norm of a finite-rank operator is controlled by its operator norm
 
-Let $H$ be an infinite-dimensional separable Hilbert space, and $T:H\to H$ a bounded operator.
-The operator norm and Hilbert-Schmidt norm of $T$ are
-\[
-\|T\|_{\mathrm{op}} := \sup_{\|x\|=1}\|Tx\|,\qquad
-\|T\|_{\mathrm{HS}} := \sqrt{\sum_{i=1}^{\infty}\|Tu_i\|^2},
-\]
-where $\{u_i\}_{i=1}^{\infty}$ is any fixed orthonormal basis of $H$.
-Suppose that $H/\ker(T)$ is finite-dimensional. Show that $\|T\|_{\mathrm{HS}}\le
-C\|T\|_{\mathrm{op}}$ for some constant $C>0$ depending only on the dimension of $H/\ker(T)$.
+**The Hilbert–Schmidt norm of a finite-rank operator is controlled by its operator norm.**
+There is a function $C$ from the natural numbers to the positive reals with the following
+property. Let $H$ be an infinite-dimensional separable real Hilbert space, let
+$(u_i)_{i \in \mathbb{N}}$ be a Hilbert basis of $H$, and let $T : H \to H$ be a bounded linear
+operator such that the quotient $H/\ker T$ is finite-dimensional, of dimension $n$. Then the
+Hilbert–Schmidt norm of $T$ computed in the basis $(u_i)$, taken in $[0,\infty]$, satisfies
 
-Here $\|T\|_{\mathrm{HS}}$ is taken in $\mathbb{R}_{\ge 0}\cup\{\infty\}$
-(`HilbertSchmidtNorm.hsENNNorm`); under the finite-dimensionality hypothesis it is finite.
+$$\Big(\sum_{i \in \mathbb{N}} \|Tu_i\|^2\Big)^{1/2} \le C(n)\,\|T\|,$$
+
+where $\|T\|$ is the operator norm of $T$.
 
 ## Depends on
 
-- [Hs ENNNorm](../../../MathlibExt/part-01/operator-theory/hilbert-schmidt-norm/hs-ennnorm.md)
+- [Extended Hilbert–Schmidt norm in a family](../../../MathlibExt/part-01/operator-theory/hilbert-schmidt-norm/hs-ennnorm.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted.exists_const_integral_pow_four_mul_weight_le
 ---
 
-# Weighted Ladyzhenskaya Plane Wanted
+# Weighted Ladyzhenskaya inequality in the plane
 
-Let $\omega:\mathbb{R}^{2}\to\mathbb{R}^{+}$ be a $C^{1}$
-function such that $\|\nabla\omega/\omega\|_{L^{\infty}(\mathbb{R}^{2})}\le 1$. Show that for
-all $u\in C^{\infty}_{c}(\mathbb{R}^{2})$, there exists some absolute constant $C$ s.t.,
-\[
-\int_{\mathbb{R}^{2}} u^{4}\omega \le C\|u\|^{2}_{L^{2}(\mathbb{R}^{2})}\int_{\mathbb{R}^{2}}
-\left(|\nabla u|^{2}+|u|^{2}\right)\omega.
-\]
+**Weighted Ladyzhenskaya inequality in the plane.** There is a constant $C > 0$ such that
+for every $C^1$ function $\omega : \mathbb{R}^2 \to \mathbb{R}$ with $\omega(x) > 0$ for all $x$
+and $\|\nabla\omega/\omega\|_{L^\infty(\mathbb{R}^2)} \le 1$, and every smooth compactly supported
+function $u : \mathbb{R}^2 \to \mathbb{R}$,
+
+$$
+\int_{\mathbb{R}^2} u^4 \omega \le C \|u\|_{L^2(\mathbb{R}^2)}^2
+\int_{\mathbb{R}^2} \left(|\nabla u|^2 + |u|^2\right) \omega.
+$$
 
 ## Depends on
 

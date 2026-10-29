@@ -6,19 +6,22 @@ proof: formalized
 lean: LineArrangement.mem_singularPoints_iff
 ---
 
-# Mem singular Points iff
+# Singular points are the points of multiplicity at least two
 
-The singular points are the points of multiplicity at least two.
+**Singular points are the points of multiplicity at least two.** Let $A$ be a line
+arrangement in the projective plane over a field. A point $p$ is a singular point of $A$ if and
+only if its multiplicity $m_p$ in $A$, the number of lines of $A$ through $p$, satisfies
+$m_p \ge 2$.
 
 ## Depends on
 
-- [Line Arrangement](line-arrangement.md)
-- [Multiplicity](multiplicity.md)
-- [Singular Points](singular-points.md)
+- [Line arrangement](line-arrangement.md)
+- [Multiplicity of a point in a line arrangement](multiplicity.md)
+- [Singular points of a line arrangement](singular-points.md)
 
 ## Proof depends on
 
-- [Mem singular Points iff exists](mem-singular-points-iff-exists.md)
+- [Singular points lie on two distinct lines](mem-singular-points-iff-exists.md)
 
 ## Sources
 

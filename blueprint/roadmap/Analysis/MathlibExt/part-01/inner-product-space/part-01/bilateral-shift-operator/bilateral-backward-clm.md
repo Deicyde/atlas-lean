@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftOperator.bilateralBackwardCLM
 ---
 
-# Bilateral Backward CLM
+# Bilateral backward shift operator
 
-The bilateral backward shift as a bounded operator on `ℓ²(ℤ, 𝕜)`.
+**Bilateral backward shift operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and
+let $\ell^2(\mathbb{Z}, \mathbb{K})$ be the Hilbert space of square-summable functions
+$\mathbb{Z} \to \mathbb{K}$. The bilateral backward shift is the bounded $\mathbb{K}$-linear
+operator $B$ on $\ell^2(\mathbb{Z}, \mathbb{K})$ given by $(Bx)(n) = x(n + 1)$ for all
+$n \in \mathbb{Z}$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bilateral Backward Fun](bilateral-backward-fun.md)
-- [Bilateral Backward Lin Map](bilateral-backward-lin-map.md)
+- [Bilateral backward shift of a sequence](bilateral-backward-fun.md)
+- [Bilateral backward shift as a linear map](bilateral-backward-lin-map.md)
 
 ## Sources
 

@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraOperator_mem_resolventSet_of_ne_zero
 ---
 
-# Volterra Operator mem resolvent Set of ne zero
+# Nonzero reals lie in the resolvent set of the Volterra operator
 
-Every nonzero real is in the resolvent set of the Volterra operator:
-`algebraMap z - V` is a unit because it is bijective, with inverse given by
-the function-level Neumann series.
+**Nonzero reals lie in the resolvent set of the Volterra operator.** For every nonzero real
+$z$, $z$ lies in the real resolvent set of the Volterra operator $V$: the bounded operator
+$z - V$ is invertible.
+
+The operator $z - V$ is bijective, with inverse given by the Neumann series
+$g \mapsto \sum_{n \ge 0} z^{-(n+1)} V^n g$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 
-- [Norm volterra Operator pow le](norm-volterra-operator-pow-le.md)
+- [Factorial bound for powers of the Volterra operator](norm-volterra-operator-pow-le.md)
 
 ## Sources
 

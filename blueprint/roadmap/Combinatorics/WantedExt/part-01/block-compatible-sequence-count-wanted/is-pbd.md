@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.IsPBD
 ---
 
-# Is PBD
+# Pairwise balanced design
 
-A pairwise balanced design given as an ordered block list: blocks are
-pairwise distinct, every block has at least two points, and every pair of
-distinct points lies in exactly one block.
+**Pairwise balanced design.** For a natural number $n$, a finite list of blocks
+$B_1, \ldots, B_m \subseteq \{0, \ldots, n - 1\}$ is a pairwise balanced design on these $n$ points
+when the blocks are pairwise distinct, every block has at least two points, and every two distinct
+points lie in exactly one common block.
 
 ## Depends on
 

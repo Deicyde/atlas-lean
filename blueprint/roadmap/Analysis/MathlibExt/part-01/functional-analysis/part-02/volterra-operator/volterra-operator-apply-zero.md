@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.VolterraOperator.volterraOperator_apply_zero
 ---
 
-# Volterra Operator apply zero
+# Volterra integrals vanish at the left endpoint
 
-The Volterra operator vanishes at `0`.
+**Volterra integrals vanish at the left endpoint.** For every bounded continuous real function
+$f$ on $[0, 1]$, the Volterra operator $V$ satisfies $(Vf)(0) = 0$.
 
 ## Depends on
 
-- [Volterra Space](volterra-space.md)
-- [Volterra Operator](volterra-operator.md)
+- [The domain of the Volterra operator](volterra-space.md)
+- [The Volterra operator](volterra-operator.md)
 
 ## Proof depends on
 
-- [Volterra Extend](volterra-extend.md)
-- [Volterra Operator apply](volterra-operator-apply.md)
+- [Extension by clamping](volterra-extend.md)
+- [Evaluation formula for the Volterra operator](volterra-operator-apply.md)
 
 ## Sources
 

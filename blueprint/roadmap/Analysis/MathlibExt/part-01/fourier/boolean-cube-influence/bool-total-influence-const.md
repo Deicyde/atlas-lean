@@ -6,19 +6,20 @@ proof: formalized
 lean: BooleanCube.boolTotalInfluence_const
 ---
 
-# Bool Total Influence const
+# Constant functions have zero total influence
 
-A constant function has zero total influence.
+**Constant functions have zero total influence.** For every real number $c$, the constant
+function with value $c$ on the Boolean cube $\{-1, 1\}^n$ has total influence $0$.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Total Influence](bool-total-influence.md)
+- [Total influence on the Boolean cube](bool-total-influence.md)
 
 ## Proof depends on
 
-- [Bool Influence](bool-influence.md)
-- [Bool Influence const](bool-influence-const.md)
+- [Influence of a coordinate](bool-influence.md)
+- [Constant functions have zero influence](bool-influence-const.md)
 
 ## Sources
 

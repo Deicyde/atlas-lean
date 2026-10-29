@@ -4,6 +4,6 @@ navigation: module
 
 # SL2 Two Step Product Growth
 
-- [AIMCombinatorics0241 prod Set](aimcombinatorics0241-prod-set.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Product set of a finite set](aimcombinatorics0241-prod-set.md)
+- [Two-step product growth in $\mathrm{SL}_2(\mathbb{F}_p)$ (AIM Problem 3.4)](conjecture.md)
+- [Sets of size about $p^{5/2}$ in $\mathrm{SL}_2(\mathbb{F}_p)$ grow under multiplication](conjecture-holds.md)

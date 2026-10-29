@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.essentialRange
 ---
 
-# Essential Range
+# Essential range
 
-The essential range of `φ` with respect to `μ`: the set of `z` such that
-`φ` comes arbitrarily close to `z` on sets of positive measure.
+**Essential range.** Let $\mu$ be a measure on a measurable space $\alpha$ and let
+$\varphi : \alpha \to \mathbb{C}$. The essential range of $\varphi$ with respect to $\mu$ is the
+set of $z \in \mathbb{C}$ such that $\mu(\{x \in \alpha : |\varphi(x) - z| < \varepsilon\}) > 0$
+for every $\varepsilon > 0$.
 
 ## Depends on
 

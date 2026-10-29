@@ -6,15 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.le_mesh
 ---
 
-# Le mesh
+# Subinterval lengths are at most the mesh
 
-Each subinterval length `xᵢ₊₁ - xᵢ` of a partition is bounded above by
-the partition's mesh (i.e., the maximum subinterval length).
+**Subinterval lengths are at most the mesh.** Let $a = x_0 < x_1 < \dots < x_n = b$ be a
+partition of $[a, b]$. Then for every $i$ with $0 \le i < n$, the subinterval length
+$x_{i+1} - x_i$ is at most the mesh of the partition.
 
 ## Depends on
 
-- [Partition](partition.md)
-- [Mesh](mesh.md)
+- [Partition of an interval](partition.md)
+- [Mesh of a partition](mesh.md)
 
 ## Sources
 

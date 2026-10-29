@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.norm_backwardLinMap_apply_le
 ---
 
-# Norm backward Lin Map apply le
+# The backward shift linear map does not increase norms
 
-The backward shift does not increase norms.
+**The backward shift linear map does not increase norms.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, and let $B$ be the backward shift on the space $\ell^2(\mathbb{N}, \mathbb{K})$ of
+square-summable sequences in $\mathbb{K}$, viewed as a linear map and given by
+$(Bx)_n = x_{n+1}$. Then $\|Bx\| \le \|x\|$ for every $x \in \ell^2(\mathbb{N}, \mathbb{K})$.
 
 ## Depends on
 
-- [Backward Lin Map](backward-lin-map.md)
+- [Backward shift as a linear map](backward-lin-map.md)
 
 ## Proof depends on
 
-- [Tsum backward Fun norm le](tsum-backward-fun-norm-le.md)
+- [Square sum of the backward shift](tsum-backward-fun-norm-le.md)
 
 ## Sources
 

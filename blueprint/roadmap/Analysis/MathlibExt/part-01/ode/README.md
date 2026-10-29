@@ -15,5 +15,5 @@ article_id: af_f8824c793965101fc972946b
 - [One Parameter Group](one-parameter-group/README.md)
 - [Picard Iteration](picard-iteration/README.md)
 - [Runge Kutta](runge-kutta/README.md)
-- [Existence for the Sturm–Liouville Dirichlet problem on `(0, 1)`](sturm-liouville-existence.md)
-- [Uniqueness for the Sturm–Liouville Dirichlet problem on `(0, 1)`:](sturm-liouville-uniqueness.md)
+- [Existence for the Sturm–Liouville Dirichlet problem on the closed unit interval](sturm-liouville-existence.md)
+- [Uniqueness for the Sturm–Liouville Dirichlet problem on the closed unit interval](sturm-liouville-uniqueness.md)

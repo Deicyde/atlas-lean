@@ -4,8 +4,8 @@ navigation: module
 
 # Hamidoune Reverse Connectivity AIMCombinatorics Problem191
 
-- [Is Directed Path](is-directed-path.md)
+- [Directed paths](is-directed-path.md)
 - [Internal Vertices](internal-vertices.md)
-- [Has Internally Disjoint Paths](has-internally-disjoint-paths.md)
-- [Hamidoune Some RAt Least Three](hamidoune-some-rat-least-three.md)
-- [Hamidoune Some RAt Least Three refuted](hamidoune-some-rat-least-three-refuted.md)
+- [Internally disjoint directed paths](has-internally-disjoint-paths.md)
+- [Hamidoune's reverse-connectivity conjecture for some $r \ge 3$](hamidoune-some-rat-least-three.md)
+- [Hamidoune's reverse-connectivity conjecture fails for every $r \ge 3$](hamidoune-some-rat-least-three-refuted.md)

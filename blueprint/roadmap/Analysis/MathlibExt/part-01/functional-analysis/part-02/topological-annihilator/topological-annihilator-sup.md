@@ -6,17 +6,20 @@ proof: formalized
 lean: Submodule.topologicalAnnihilator_sup
 ---
 
-# Topological Annihilator sup
+# Topological annihilator of a sum of subspaces
 
-The annihilator of a supremum is the infimum of the annihilators.
+**Topological annihilator of a sum of subspaces.** Let $E$ be a normed space over $\mathbb{K}$,
+where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, and let $S$ and $T$ be subspaces of $E$. The
+topological annihilator of $S + T$ is the intersection of the topological annihilators of $S$
+and $T$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
+- [Topological annihilator](topological-annihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Annihilator](mem-topological-annihilator.md)
+- [Membership in the topological annihilator](mem-topological-annihilator.md)
 
 ## Sources
 

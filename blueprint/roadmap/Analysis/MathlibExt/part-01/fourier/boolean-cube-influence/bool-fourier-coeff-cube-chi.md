@@ -6,9 +6,12 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_cubeChi
 ---
 
-# Bool Fourier Coeff cube Chi
+# Fourier coefficients of a character
 
-The Fourier coefficients of a character.
+**Fourier coefficients of a character.** For all sets $S$ and $T$ of the $n$ coordinates, the
+Fourier coefficient at $S$ of the Fourier character $\chi_T$ on the Boolean cube in $n$
+coordinates, $\chi_T(x) = \prod_{i \in T} \sigma(x_i)$ with $\sigma(\text{true}) = 1$ and
+$\sigma(\text{false}) = -1$, is $1$ if $T = S$ and $0$ otherwise.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ The Fourier coefficients of a character.
 ## Proof depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Fourier Coeff eq sum div two pow](bool-fourier-coeff-eq-sum-div-two-pow.md)
-- [Sum cube Chi mul cube Chi eq ite](sum-cube-chi-mul-cube-chi-eq-ite.md)
+- [Fourier coefficients as sums over the cube](bool-fourier-coeff-eq-sum-div-two-pow.md)
+- [Orthogonality of the Boolean cube characters](sum-cube-chi-mul-cube-chi-eq-ite.md)
 
 ## Sources
 

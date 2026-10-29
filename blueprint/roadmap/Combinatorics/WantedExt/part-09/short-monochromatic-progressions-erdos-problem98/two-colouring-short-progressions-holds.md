@@ -5,23 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ShortMonochromaticProgressionsErdosProblem984Wanted.twoColouringShortProgressions_holds
 ---
 
-# Two Colouring Short Progressions holds
+# Erdős Problem 984: a two-colouring with short monochromatic progressions exists
 
-Resolved true: Hunter showed (erdosproblems.com/984 comments) that colouring each block `[100^t,
-100^{t+1})` by a colouring with no red `3`-term progression and only short blue ones (colours
-swapped on alternate blocks) makes every monochromatic progression with first term `a` have length
-`a^{o(1)}`; erdosproblems.com/984 lists the problem as proved. Source: T. F. Bloom, Erdős Problems,
-Problem #984, https://www.erdosproblems.com/984 (status PROVED); resolution: Z. Hunter, proof in the
-erdosproblems.com/984 comments, using Green's red-blue colourings for off-diagonal van der Waerden
-numbers, erdosproblems.com/984: 'Zach Hunter has proved the answer is yes (see the comments)'; the
-comment colours each block I_t = [100^t, 100^{t+1}) with no red 3-term progression and no blue
-progression of length k_t = |I_t|^{o(1)} for odd t (colours swapped for even t),
-https://www.erdosproblems.com/forum/thread/984.
+**Erdős Problem 984: a two-colouring with short monochromatic progressions exists.** There is a
+colouring of the positive integers with two colours such that for every real $\varepsilon > 0$
+there is a real constant $C_\varepsilon$ with the following property: whenever $a \ge 1$,
+$d \ge 1$ and $k \ge 0$ are integers and $a, a + d, \dots, a + (k - 1)d$ all have the same
+colour, $k \le C_\varepsilon a^\varepsilon$.
 
 ## Depends on
 
-- [Two Colouring Short Progressions](two-colouring-short-progressions.md)
+- [Statement of Erdős Problem 984 on short monochromatic progressions](two-colouring-short-progressions.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ShortMonochromaticProgressionsErdosProblem984Wanted](../../../../../sources/v2/WantedExt.md)
+- T. F. Bloom, Erdős Problems, Problem #984, https://www.erdosproblems.com/984 (status PROVED); resolution: Z. Hunter, proof in the erdosproblems.com/984 comments, using Green's red-blue colourings for off-diagonal van der Waerden numbers, erdosproblems.com/984: 'Zach Hunter has proved the answer is yes (see the comments)'; the comment colours each block I_t = [100^t, 100^{t+1}) with no red 3-term progression and no blue progression of length k_t = |I_t|^{o(1)} for odd t (colours swapped for even t), https://www.erdosproblems.com/forum/thread/984.

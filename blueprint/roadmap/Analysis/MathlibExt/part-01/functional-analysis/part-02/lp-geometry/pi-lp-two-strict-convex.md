@@ -6,10 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.piLp_two_strictConvex
 ---
 
-# Pi Lp two strict Convex
+# Midpoints of distinct $\ell^p$ unit vectors in $\mathbb{R}^2$ have norm less than one
 
-Strict convexity of the unit ball of `PiLp p (Fin 2 → ℝ)` for `1 < p < ∞`:
-the midpoint of two distinct unit vectors has norm `< 1`.
+**Midpoints of distinct $\ell^p$ unit vectors in $\mathbb{R}^2$ have norm less than one.**
+Let $1 < p < \infty$ and equip $\mathbb{R}^2$ with the $\ell^p$ norm. If $x \neq y$ are vectors
+with $\|x\| = \|y\| = 1$, then $\|\tfrac{1}{2} (x + y)\| < 1$.
 
 ## Depends on
 

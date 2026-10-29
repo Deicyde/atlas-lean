@@ -6,13 +6,15 @@ proof: formalized
 lean: Submodule.topologicalAnnihilator_bot
 ---
 
-# Topological Annihilator bot
+# Topological annihilator of the zero subspace
 
-The annihilator of the zero subspace is the whole dual.
+**Topological annihilator of the zero subspace.** Let $E$ be a normed space over $\mathbb{K}$,
+where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. The topological annihilator of the zero subspace
+of $E$ is the whole continuous dual of $E$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
+- [Topological annihilator](topological-annihilator.md)
 
 ## Sources
 

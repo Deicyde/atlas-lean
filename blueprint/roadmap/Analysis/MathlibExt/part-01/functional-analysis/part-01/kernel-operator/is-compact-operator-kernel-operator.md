@@ -6,21 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.isCompactOperator_kernelOperator
 ---
 
-# Is Compact Operator kernel Operator
+# Integral operators with continuous kernels are compact
 
-The kernel operator is compact, by Arzelà–Ascoli: the image of the unit
-ball is equicontinuous by uniform continuity of the kernel.
+**Integral operators with continuous kernels are compact.** For every continuous kernel $k$ on
+$[0, 1] \times [0, 1]$, the integral operator $K$ on the space of bounded continuous real functions
+on $[0, 1]$, given by $(Kf)(x) = \int_0^1 k(x, t) f(t) \, dt$, is a compact operator.
+
+The proof uses Arzelà–Ascoli: the image of the unit ball is equicontinuous by uniform continuity
+of the kernel.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Type](kernel-type.md)
-- [Kernel Operator](kernel-operator.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Continuous kernels on the unit square](kernel-type.md)
+- [Integral operator with a continuous kernel](kernel-operator.md)
 
 ## Proof depends on
 
-- [Kernel Linear Map norm le](kernel-linear-map-norm-le.md)
-- [Norm kernel Operator apply sub le](norm-kernel-operator-apply-sub-le.md)
+- [Sup-norm bound for the integral operator with continuous kernel](kernel-linear-map-norm-le.md)
+- [Difference bound for the values of a kernel operator](norm-kernel-operator-apply-sub-le.md)
 
 ## Sources
 

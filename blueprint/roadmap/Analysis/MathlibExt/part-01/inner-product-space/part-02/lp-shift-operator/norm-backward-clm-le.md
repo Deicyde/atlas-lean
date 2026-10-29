@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.norm_backwardCLM_le
 ---
 
-# Norm backward CLM le
+# The backward shift has operator norm at most one
 
-The operator norm of the backward shift is at most `1`.
+**The backward shift has operator norm at most one.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, and let $B$ be the backward shift on the Hilbert space
+$\ell^2(\mathbb{N}, \mathbb{K})$ of square-summable sequences in $\mathbb{K}$, given by
+$(Bx)_n = x_{n+1}$. Then the operator norm of $B$ satisfies $\|B\| \le 1$.
 
 ## Depends on
 
-- [Backward CLM](backward-clm.md)
+- [Backward shift](backward-clm.md)
 
 ## Proof depends on
 
-- [Backward Lin Map](backward-lin-map.md)
-- [Norm backward Lin Map apply le](norm-backward-lin-map-apply-le.md)
+- [Backward shift as a linear map](backward-lin-map.md)
+- [The backward shift linear map does not increase norms](norm-backward-lin-map-apply-le.md)
 
 ## Sources
 

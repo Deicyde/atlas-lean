@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0PairingLin_apply
 ---
 
-# C0 Pairing Lin apply
+# Formula for the $\ell^1$–$c_0$ pairing
 
-The pairing applied to `a` and `x`, by definition.
+**Formula for the $\ell^1$–$c_0$ pairing.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $\iota$ be an index type. For $a \in \ell^1(\iota, \mathbb{K})$ and
+$x \in c_0(\iota, \mathbb{K})$, the pairing of $a$ with $x$ equals
+$\sum_{i \in \iota} a_i x_i$.
 
 ## Depends on
 
-- [C0](c0.md)
-- [C0 Pairing Lin](c0-pairing-lin.md)
+- [The sequence space $c_0$](c0.md)
+- [Pairing with an $\ell^1$ sequence as a linear functional on $c_0$](c0-pairing-lin.md)
 
 ## Sources
 

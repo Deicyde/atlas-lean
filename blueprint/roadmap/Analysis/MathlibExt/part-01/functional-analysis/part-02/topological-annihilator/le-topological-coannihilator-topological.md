@@ -6,19 +6,21 @@ proof: formalized
 lean: Submodule.le_topologicalCoannihilator_topologicalAnnihilator
 ---
 
-# Le topological Coannihilator topological Annihilator
+# A subspace lies in its double annihilator
 
-A subspace is contained in its double annihilator.
+**A subspace lies in its double annihilator.** Let $E$ be a normed space over $\mathbb{K}$,
+where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. Every subspace $S$ of $E$ is contained in the
+topological coannihilator of the topological annihilator of $S$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological annihilator](topological-annihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Proof depends on
 
-- [Mem topological Annihilator](mem-topological-annihilator.md)
-- [Mem topological Coannihilator](mem-topological-coannihilator.md)
+- [Membership in the topological annihilator](mem-topological-annihilator.md)
+- [Membership in the topological coannihilator](mem-topological-coannihilator.md)
 
 ## Sources
 

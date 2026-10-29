@@ -6,11 +6,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty.sum_norm_sq_le_of_dftFun_eq_zero_of_notMem
 ---
 
-# Sum norm sq le of dft Fun eq zero of not Mem
+# Concentration bound for a function with small Fourier support
 
-Concentration of `f`: if `f̂` vanishes outside `B`, then the squared
-`ℓ²` mass of `f` on any set `A` is at most `(|A| * |B| / |G|)` times the
-total squared `ℓ²` mass of `f`.
+**Concentration bound for a function with small Fourier support.** Let $G$ be a finite abelian
+group, let $f : G \to \mathbb{C}$, and let $B$ be a set of additive characters of $G$ such that
+the discrete Fourier transform $\hat f$ vanishes outside $B$. Then for every $A \subseteq G$,
+$\sum_{x \in A} |f(x)|^2 \le \frac{|A| \cdot |B|}{|G|} \sum_{x \in G} |f(x)|^2$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ total squared `ℓ²` mass of `f`.
 
 ## Proof depends on
 
-- [Norm sq le of dft Fun eq zero of not Mem](norm-sq-le-of-dft-fun-eq-zero-of-not-mem.md)
+- [Pointwise bound from a small Fourier support](norm-sq-le-of-dft-fun-eq-zero-of-not-mem.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.norm_lpMulCLM
 ---
 
-# Norm lp Mul CLM
+# Norm of a multiplication operator on L²
 
-The operator norm equals the essential supremum norm of the multiplier.
+**Norm of a multiplication operator on L².** Let $\mu$ be a $\sigma$-finite measure on a
+measurable space $\alpha$ and let $\varphi : \alpha \to \mathbb{C}$ be in $L^\infty(\mu)$, with
+essential supremum norm $\|\varphi\|_\infty$. Then the multiplication operator $M_\varphi$ on the
+complex space $L^2(\mu)$ has operator norm $\|M_\varphi\| = \|\varphi\|_\infty$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Exists measurable mem Lp](exists-measurable-mem-lp.md)
-- [Lp Mul CLM congr ae](lp-mul-clm-congr-ae.md)
-- [Norm lp Mul CLM of measurable](norm-lp-mul-clm-of-measurable.md)
+- [Measurable representatives of essentially bounded functions](exists-measurable-mem-lp.md)
+- [Multiplication operators with almost everywhere equal multipliers coincide](lp-mul-clm-congr-ae.md)
+- [Norm of an L² multiplication operator with measurable multiplier](norm-lp-mul-clm-of-measurable.md)
 
 ## Sources
 

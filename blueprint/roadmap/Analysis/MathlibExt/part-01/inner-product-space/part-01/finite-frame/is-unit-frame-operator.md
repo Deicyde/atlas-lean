@@ -6,22 +6,26 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.isUnit_frameOperator
 ---
 
-# Is Unit frame Operator
+# The frame operator of a frame is invertible
 
-The frame operator of a frame is a unit: it is bounded below and
-self-adjoint, so it is injective with closed range whose orthogonal complement
-is trivial.
+**The frame operator of a frame is invertible.** Let $E$ be a Hilbert space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $(f_i)_{i \in \iota}$ be a finite frame in $E$
+with frame bounds $A$ and $B$. Then its frame operator $S$ is a unit in the algebra of bounded
+linear operators on $E$, that is, $S$ has a bounded linear two-sided inverse.
+
+The operator $S$ is bounded below and self-adjoint, so it is injective with closed range whose
+orthogonal complement is trivial.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
-- [Frame Operator](frame-operator.md)
+- [Finite frame](is-frame.md)
+- [Frame operator](frame-operator.md)
 
 ## Proof depends on
 
-- [Pos left](pos-left.md)
-- [Is Self Adjoint frame Operator](is-self-adjoint-frame-operator.md)
-- [Le norm frame Operator apply](le-norm-frame-operator-apply.md)
+- [The lower frame bound is positive](pos-left.md)
+- [The frame operator is self-adjoint](is-self-adjoint-frame-operator.md)
+- [The frame operator is bounded below](le-norm-frame-operator-apply.md)
 
 ## Sources
 

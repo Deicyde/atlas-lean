@@ -6,11 +6,12 @@ proof: formalized
 lean: AddCircle.fourier_sub_eq
 ---
 
-# Fourier sub eq
+# Fourier characters at a difference
 
-Reversed form of `fourier_neg_mul_fourier_eq`:
-`fourier n (x - t) = fourier (-n) t * fourier n x`. Convenient orientation
-for the convolution computation.
+**Fourier characters at a difference.** Let $T > 0$ and for $n \in \mathbb{Z}$ let
+$e_n(x) = e^{2\pi i n x / T}$ be the $n$-th Fourier character on $\mathbb{R}/T\mathbb{Z}$. Then
+for every $n \in \mathbb{Z}$ and all $x, t \in \mathbb{R}/T\mathbb{Z}$,
+$e_n(x - t) = e_{-n}(t)\, e_n(x)$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fourier neg mul fourier eq](../fejer-kernel/fourier-neg-mul-fourier-eq.md)
+- [Products of Fourier characters](../fejer-kernel/fourier-neg-mul-fourier-eq.md)
 
 ## Sources
 

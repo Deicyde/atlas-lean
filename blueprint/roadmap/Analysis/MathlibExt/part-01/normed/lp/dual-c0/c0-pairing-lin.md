@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0PairingLin
 ---
 
-# C0 Pairing Lin
+# Pairing with an $\ell^1$ sequence as a linear functional on $c_0$
 
-The pairing of `a ∈ ℓ¹` with `x ∈ c₀`, as a linear map in `x`.
+**Pairing with an $\ell^1$ sequence as a linear functional on $c_0$.** Let $\mathbb{K}$
+be $\mathbb{R}$ or $\mathbb{C}$ and let $\iota$ be an index type. For
+$a \in \ell^1(\iota, \mathbb{K})$, this is the $\mathbb{K}$-linear map
+$c_0(\iota, \mathbb{K}) \to \mathbb{K}$ sending $x$ to $\sum_{i \in \iota} a_i x_i$.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Proof depends on
 
-- [Summable c0 Pairing](summable-c0-pairing.md)
+- [Summability of the $\ell^1$–$c_0$ pairing](summable-c0-pairing.md)
 
 ## Sources
 

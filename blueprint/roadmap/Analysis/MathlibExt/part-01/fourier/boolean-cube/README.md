@@ -39,19 +39,19 @@ navigation: module
 
 ## Finset Fourier
 
-- [Fourier Char](fourier-char.md)
-- [Fourier Coeff](fourier-coeff.md)
-- [Card bool Cube](card-bool-cube.md)
-- [Powerset Equiv Indicator](powerset-equiv-indicator.md)
-- [Powerset Equiv Bool Cube](powerset-equiv-bool-cube.md)
-- [Powerset Equiv Bool Cube apply](powerset-equiv-bool-cube-apply.md)
-- [Reindex Finset](reindex-finset.md)
-- [Decode Bool Cube](decode-bool-cube.md)
-- [Decode encode](decode-encode.md)
-- [Fourier Char eq cube Chi](fourier-char-eq-cube-chi.md)
-- [Fourier Coeff eq bool Fourier Coeff](fourier-coeff-eq-bool-fourier-coeff.md)
+- [Fourier character on finite sets](fourier-char.md)
+- [Fourier coefficient on the subsets of a finite set](fourier-coeff.md)
+- [Number of points of the Boolean cube](card-bool-cube.md)
+- [Subsets of a finite set as indicator functions](powerset-equiv-indicator.md)
+- [Subsets of a finite set as points of the Boolean cube](powerset-equiv-bool-cube.md)
+- [Coordinates of an encoded subset](powerset-equiv-bool-cube-apply.md)
+- [Reindexing a subset as a set of coordinates](reindex-finset.md)
+- [Decoding a cube point as a subset](decode-bool-cube.md)
+- [Decoding inverts encoding](decode-encode.md)
+- [Subset characters agree with cube characters](fourier-char-eq-cube-chi.md)
+- [Subset Fourier coefficients agree with cube Fourier coefficients](fourier-coeff-eq-bool-fourier-coeff.md)
 
 ## Fourier Laws
 
-- [Fourier inversion](fourier-inversion.md)
-- [Fourier plancherel](fourier-plancherel.md)
+- [Fourier inversion on the subsets of a finite set](fourier-inversion.md)
+- [Plancherel identity on the subsets of a finite set](fourier-plancherel.md)

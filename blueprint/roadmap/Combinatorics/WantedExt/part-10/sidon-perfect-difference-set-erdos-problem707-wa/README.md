@@ -4,8 +4,8 @@ navigation: module
 
 # Sidon Perfect Difference Set Erdos Problem707
 
-- [Is Perfect Difference Set Mod](is-perfect-difference-set-mod.md)
-- [Sidon Extends To Prime Perfect Difference Set](sidon-extends-to-prime-perfect-differenc.md)
-- [Sidon Extends To Perfect Difference Set](sidon-extends-to-perfect-difference-set.md)
-- [Sidon Extends To Prime Perfect Difference Set refuted](sidon-extends-to-prime-perfect-differenc-2.md)
-- [Sidon Extends To Perfect Difference Set refuted](sidon-extends-to-perfect-difference-set-2.md)
+- [Perfect difference sets modulo $v$](is-perfect-difference-set-mod.md)
+- [Erdős Problem 707](sidon-extends-to-prime-perfect-differenc.md)
+- [Erdős Problem 707, weak form](sidon-extends-to-perfect-difference-set.md)
+- [Erdős Problem 707 is false](sidon-extends-to-prime-perfect-differenc-2.md)
+- [The weak form of Erdős Problem 707 is false](sidon-extends-to-perfect-difference-set-2.md)

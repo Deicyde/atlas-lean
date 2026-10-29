@@ -8,13 +8,16 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointDeflation.exists_n
 
 # Next eigenvalue after a finite family of eigenvectors
 
-**Next eigenvalue after a finite family of eigenvectors.** If `T` is a
-compact self-adjoint operator and `u i` are (finitely many) eigenvectors of
-`T`, and `T` does not vanish on the orthogonal complement `S` of their span,
-then there is a real eigenvalue `r` and a unit eigenvector `v ⊥ u i` for all
-`i`, such that `|r|` is the maximum of `‖⟪T x, x⟫‖` over unit vectors
-`x ∈ S` (it is attained at `v`). The orthonormality of the `u i` is not
-needed: the proof only uses that each `u i` is an eigenvector.
+**Next eigenvalue after a finite family of eigenvectors.** Let $T$ be a compact self-adjoint
+operator on a Hilbert space $H$ over $\mathbb{R}$ or $\mathbb{C}$, let $u_1, \dots, u_n \in H$ and
+scalars $\mu_1, \dots, \mu_n$ satisfy $T u_i = \mu_i u_i$ for every $i$, and let $S$ be the
+orthogonal complement of the span of $u_1, \dots, u_n$. If $Tz \neq 0$ for some $z \in S$, then
+there are a real number $r$ and a unit vector $v$ with $\langle v, u_i \rangle = 0$ for every $i$,
+$Tv = rv$ and $\langle Tv, v \rangle = r$, such that $|\langle Tx, x \rangle| \le |r|$ for
+every unit vector $x \in S$. In particular $v \in S$, so $|r|$ is the maximum of
+$|\langle Tx, x \rangle|$ over unit vectors $x \in S$.
+
+The vectors $u_i$ need not be orthonormal, or even nonzero.
 
 ## Depends on
 

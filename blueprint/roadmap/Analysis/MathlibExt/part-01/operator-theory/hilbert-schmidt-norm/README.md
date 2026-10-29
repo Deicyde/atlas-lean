@@ -4,5 +4,5 @@ navigation: module
 
 # Hilbert Schmidt Norm
 
-- [Hs Norm Sq](hs-norm-sq.md)
-- [Hs ENNNorm](hs-ennnorm.md)
+- [Squared Hilbert–Schmidt norm in a family](hs-norm-sq.md)
+- [Extended Hilbert–Schmidt norm in a family](hs-ennnorm.md)

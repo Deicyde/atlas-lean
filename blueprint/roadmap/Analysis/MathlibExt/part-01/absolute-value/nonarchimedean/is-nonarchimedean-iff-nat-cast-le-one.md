@@ -6,10 +6,12 @@ proof: formalized
 lean: AbsoluteValue.isNonarchimedean_iff_natCast_le_one
 ---
 
-# Is Nonarchimedean iff nat Cast le one
+# Nonarchimedean criterion for absolute values
 
-An absolute value on a field is nonarchimedean if and only if every
-natural-number cast has absolute value at most `1`. This is Lemma 1.4.
+**Nonarchimedean criterion for absolute values.** Let $K$ be a field and $v$ a real-valued
+absolute value on $K$. Then $v$ is nonarchimedean, that is, $v(x + y) \le \max(v(x), v(y))$ for
+all $x, y \in K$, if and only if $v(n) \le 1$ for every natural number $n$, viewed as the element
+$n \cdot 1$ of $K$.
 
 ## Depends on
 
@@ -18,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.AbsoluteValue.Nonarchimedean](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Section 1.2, Lemma 1.4.

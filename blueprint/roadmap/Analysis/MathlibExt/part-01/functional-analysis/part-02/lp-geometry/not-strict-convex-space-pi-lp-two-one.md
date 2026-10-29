@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpGeometry.not_strictConvexSpace_piLp_two_one
 ---
 
-# Not strict Convex Space pi Lp two one
+# $\mathbb{R}^2$ with the $\ell^1$ norm is not strictly convex
 
-The real two-coordinate `PiLp 1` space is not strictly convex in the standard sense.
+**$\mathbb{R}^2$ with the $\ell^1$ norm is not strictly convex.** The real normed space
+$\mathbb{R}^2$ with the $\ell^1$ norm is not a strictly convex space: not every closed ball of
+positive radius centred at the origin is a strictly convex set.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Not strict Convex pi Lp two one](not-strict-convex-pi-lp-two-one.md)
+- [Two distinct $\ell^1$ unit vectors in $\mathbb{R}^2$ with a unit midpoint](not-strict-convex-pi-lp-two-one.md)
 
 ## Sources
 

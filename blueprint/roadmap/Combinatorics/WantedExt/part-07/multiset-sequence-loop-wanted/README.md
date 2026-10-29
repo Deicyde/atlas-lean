@@ -4,6 +4,6 @@ navigation: module
 
 # Multiset Sequence Loop
 
-- [Step](step.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Inventory step](step.md)
+- [Inventory loop conjecture](conjecture.md)
+- [Inventory sequences end in short loops](conjecture-holds.md)

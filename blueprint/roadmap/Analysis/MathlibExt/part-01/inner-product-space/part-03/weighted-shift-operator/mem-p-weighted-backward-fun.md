@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.memℓp_weightedBackwardFun
 ---
 
-# Memℓp weighted Backward Fun
+# Weighted backward shifts preserve square-summability
 
-The weighted-backward-shifted sequence is in `ℓ²` when the weights
-are bounded.
+**Weighted backward shifts preserve square-summability.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $(w_n)_{n \in \mathbb{N}}$ be a bounded sequence in $\mathbb{K}$. For every
+$x \in \ell^2(\mathbb{N}, \mathbb{K})$, the sequence $(\overline{w_i}\, x_{i+1})_{i \in \mathbb{N}}$
+is square-summable.
 
 ## Depends on
 
-- [Weighted Backward Fun](weighted-backward-fun.md)
+- [Weighted backward shift of a sequence](weighted-backward-fun.md)
 
 ## Proof depends on
 
-- [Weighted Backward Lin Map](weighted-backward-lin-map.md)
-- [Weighted Backward Lin Map apply coe](weighted-backward-lin-map-apply-coe.md)
+- [Weighted backward shift as a linear map](weighted-backward-lin-map.md)
+- [The weighted backward shift linear map agrees with the shift of sequences](weighted-backward-lin-map-apply-coe.md)
 
 ## Sources
 

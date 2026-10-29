@@ -5,17 +5,22 @@ statement: formalized
 lean: MathlibExt.Analysis.Integration.TaggedPartition.IsTaggedRefinement
 ---
 
-# Is Tagged Refinement
+# Tagged-refinement data
 
-`T'` is a tagged refinement of `T` when every subinterval of `T'` is
-contained in some subinterval of `T` (witnessed by `assign`), and the
-subintervals of `T'` assigned to each `T`-subinterval telescope to its
-length. These data are constructed from the point-set refinement condition
-by `TaggedPartition.nonempty_isTaggedRefinement_of_isRefinement`.
+**Tagged-refinement data.** Let $T$ and $T'$ be tagged partitions of $[a, b]$ with points
+$a = x_0 < \dots < x_n = b$ and $a = x'_0 < \dots < x'_{n'} = b$ respectively. Tagged-refinement
+data from $T$ to $T'$ consist of a map $\sigma$ assigning to each index $j < n'$ an index
+$\sigma(j) < n$ such that $x_{\sigma(j)} \le x'_j$ and $x'_{j+1} \le x_{\sigma(j)+1}$ for every
+$j < n'$ (so the $j$-th subinterval of $T'$ lies in the $\sigma(j)$-th subinterval of $T$), and
+such that for every $k < n$ the lengths assigned to $k$ add up to its length:
+$\sum_{j < n',\ \sigma(j) = k} (x'_{j+1} - x'_j) = x_{k+1} - x_k$. The tags of $T$ and $T'$
+play no role.
+
+Such data exist whenever every point of $T$ is a point of $T'$.
 
 ## Depends on
 
-- [Tagged Partition](../riemann-partition/tagged-partition.md)
+- [Tagged partition](../riemann-partition/tagged-partition.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Progression Difference Set Erdos Problem1185
 
-- [Progression With Difference In Difference Set](progression-with-difference-in-differenc.md)
-- [Progression With Difference In Difference Set refuted](progression-with-difference-in-differenc-2.md)
+- [Erdős Problem 1185: progressions with difference in a difference set](progression-with-difference-in-differenc.md)
+- [Erdős Problem 1185 is false](progression-with-difference-in-differenc-2.md)

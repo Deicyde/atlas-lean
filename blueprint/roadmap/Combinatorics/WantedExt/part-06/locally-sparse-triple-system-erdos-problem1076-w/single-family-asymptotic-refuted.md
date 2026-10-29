@@ -5,15 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LocallySparseTripleSystemErdosProblem1076Wanted.singleFamilyAsymptotic_refuted
 ---
 
-# Single Family Asymptotic refuted
+# Erdős Problem 1076 fails as worded
 
-Resolved false as worded: for `k = 5`, Glock proved that the largest triple system on `n` vertices
-with no five vertices spanning three triples has `(1 + o(1)) n² / 5` triples, so `ex₃(n, 𝓕_5) / n²
-→ 1/5`, not `1/6`; his §1 states this as the answer to whether `1/6` is sharp for every `k`.
+**Erdős Problem 1076 fails as worded.** For $k, n \in \mathbb{N}$ let $\mathcal{F}_k$ be the family
+of $3$-graphs with $k$ vertices and $k - 2$ edges, and let $\mathrm{ex}_3(n, \mathcal{F}_k)$ be the
+largest number of triples in a $3$-uniform hypergraph on $n$ vertices that contains no member of
+$\mathcal{F}_k$, that is, in which no $k$ vertices span $k - 2$ or more triples. It is not true
+that for every $k \ge 5$, $\mathrm{ex}_3(n, \mathcal{F}_k) / n^2 \to 1/6$ as $n \to \infty$.
+
+Already $k = 5$ fails: Glock proved that the largest triple system on $n$ vertices with no five
+vertices spanning three triples has $(1 + o(1)) n^2 / 5$ triples, so
+$\mathrm{ex}_3(n, \mathcal{F}_5) / n^2 \to 1/5$; his §1 states this as the answer to whether $1/6$
+is sharp for every $k$.
 
 ## Depends on
 
-- [Single Family Asymptotic](single-family-asymptotic.md)
+- [Erdős Problem 1076 as worded](single-family-asymptotic.md)
 
 ## Sources
 

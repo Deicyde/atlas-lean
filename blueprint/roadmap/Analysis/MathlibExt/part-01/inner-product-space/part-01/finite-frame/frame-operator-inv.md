@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.FiniteFrame.frameOperatorInv
 ---
 
-# Frame Operator Inv
+# Inverse frame operator
 
-The inverse of the frame operator, as a bounded operator.
+**Inverse frame operator.** Let $(f_i)_{i \in \iota}$, with $\iota$ finite, be a frame with
+bounds $A$ and $B$ in a Hilbert space $E$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. Its frame
+operator $S$ is invertible in the algebra of bounded linear operators on $E$, and the inverse
+frame operator $S^{-1}$ is its inverse there.
 
 ## Depends on
 
-- [Is Frame](is-frame.md)
+- [Finite frame](is-frame.md)
 
 ## Proof depends on
 
-- [Frame Operator](frame-operator.md)
-- [Is Unit frame Operator](is-unit-frame-operator.md)
+- [Frame operator](frame-operator.md)
+- [The frame operator of a frame is invertible](is-unit-frame-operator.md)
 
 ## Sources
 

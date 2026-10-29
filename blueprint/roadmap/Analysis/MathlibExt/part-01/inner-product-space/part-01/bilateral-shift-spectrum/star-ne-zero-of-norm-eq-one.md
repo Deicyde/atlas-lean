@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.star_ne_zero_of_norm_eq_one
 ---
 
-# Star ne zero of norm eq one
+# Conjugates of unimodular scalars are nonzero
 
-On the unit circle, `star μ ≠ 0`.
+**Conjugates of unimodular scalars are nonzero.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. If $\mu \in \mathbb{K}$ satisfies $|\mu| = 1$, then its conjugate $\bar{\mu}$ is
+nonzero.
 
 ## Depends on
 

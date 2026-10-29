@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.solymosiFourThirdsLowerBound
 ---
 
-# Solymosi Four Thirds Lower Bound
+# Statement of Solymosi's $4/3$ lower bound
 
-Solymosi's 2009 exact lower bound.
+**Statement of Solymosi's $4/3$ lower bound.** The proposition that the real sum-product
+exponent is at least $4/3$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Exponent](sum-product-exponent.md)
+- [Sum-product exponent of the reals](sum-product-exponent.md)
 
 ## Sources
 

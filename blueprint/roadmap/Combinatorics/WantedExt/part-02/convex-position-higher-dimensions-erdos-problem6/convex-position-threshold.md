@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ConvexPositionHigherDimensionsErdosProblem651Wanted.convexPositionThreshold
 ---
 
-# Convex Position Threshold
+# Convex position threshold
 
-`f_k(n)`: the least `m` such that any `m` points in general position in `ℝᵏ` contain `n`
-points in convex position (none in the convex hull of the others). For `k ≥ 2` the set is
-nonempty by the Erdős-Szekeres theorem.
+**Convex position threshold.** For natural numbers $k$ and $n$, $f_k(n)$ is the least natural
+number $m$ such that every set of $m$ points of $\mathbb{R}^k$ in general position (any at most
+$k + 1$ of them affinely independent) contains $n$ points in convex position (none of them in the
+convex hull of the others). If there is no such $m$, then $f_k(n) = 0$.
+
+For $k \ge 2$ such an $m$ exists by the Erdős-Szekeres theorem.
 
 ## Depends on
 

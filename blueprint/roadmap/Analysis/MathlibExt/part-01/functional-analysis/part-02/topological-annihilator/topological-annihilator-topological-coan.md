@@ -8,20 +8,22 @@ lean: Submodule.topologicalAnnihilator_topologicalCoannihilator_eq_topologicalCl
 
 # Bipolar theorem
 
-**Bipolar theorem.** The double topological annihilator of a subspace
-is its topological closure.
+**Bipolar theorem.** Let $E$ be a normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$
+and let $S$ be a subspace of $E$. The topological coannihilator of the topological annihilator
+of $S$, that is, the subspace of vectors of $E$ killed by every continuous linear functional
+vanishing on $S$, is the topological closure of $S$.
 
 ## Depends on
 
-- [Topological Annihilator](topological-annihilator.md)
-- [Topological Coannihilator](topological-coannihilator.md)
+- [Topological annihilator](topological-annihilator.md)
+- [Topological coannihilator](topological-coannihilator.md)
 
 ## Proof depends on
 
 - [Separation](exists-mem-topological-annihilator-apply.md)
-- [Le topological Coannihilator topological Annihilator](le-topological-coannihilator-topological.md)
-- [Mem topological Coannihilator](mem-topological-coannihilator.md)
-- [Topological Annihilator topological Closure](topological-annihilator-topological-clos.md)
+- [A subspace lies in its double annihilator](le-topological-coannihilator-topological.md)
+- [Membership in the topological coannihilator](mem-topological-coannihilator.md)
+- [Topological annihilator of the closure](topological-annihilator-topological-clos.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftOperator.bilateralBackwardFun
 ---
 
-# Bilateral Backward Fun
+# Bilateral backward shift of a sequence
 
-The bilateral backward-shift function: `(B x) n = x (n + 1)`.
+**Bilateral backward shift of a sequence.** For a function $x : \mathbb{Z} \to K$ with values
+in any set $K$, the bilateral backward shift of $x$ is the function $Bx : \mathbb{Z} \to K$
+given by $(Bx)(n) = x(n + 1)$.
 
 ## Depends on
 

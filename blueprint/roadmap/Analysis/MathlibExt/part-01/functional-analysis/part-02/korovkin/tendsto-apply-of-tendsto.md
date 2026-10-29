@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.Korovkin.tendsto_apply_of_tendsto
 ---
 
-# Tendsto apply of tendsto
+# Uniform convergence implies pointwise convergence
 
-Pointwise convergence follows from convergence in the sup norm.
+**Uniform convergence implies pointwise convergence.** If a sequence $(u_n)$ in
+$C([0, 1], \mathbb{R})$ converges to $e$ in the sup norm, then $u_n(x) \to e(x)$ for every
+$x \in [0, 1]$.
 
 ## Depends on
 

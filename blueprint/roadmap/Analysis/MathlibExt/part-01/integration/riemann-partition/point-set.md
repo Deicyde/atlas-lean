@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Integration.Partition.pointSet
 ---
 
-# Point Set
+# Points of a partition
 
-The underlying set `{x₀, x₁, …, xₙ}` of points of a partition.
+**Points of a partition.** The point set of a partition $a = x_0 < x_1 < \dots < x_n = b$ of
+$[a, b]$ is the set of its points $x_0, x_1, \dots, x_n$.
 
 ## Depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

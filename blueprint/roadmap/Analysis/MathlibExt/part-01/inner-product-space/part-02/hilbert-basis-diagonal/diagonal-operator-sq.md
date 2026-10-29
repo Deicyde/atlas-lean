@@ -16,7 +16,7 @@ A bounded diagonal operator squared is the diagonal operator with squared coeffi
 
 ## Proof depends on
 
-- [Repr diagonal Operator apply](repr-diagonal-operator-apply.md)
+- [Coordinates of a diagonal operator](repr-diagonal-operator-apply.md)
 
 ## Sources
 

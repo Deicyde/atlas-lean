@@ -4,6 +4,6 @@ navigation: module
 
 # Chvatal Hereditary Intersecting
 
-- [Is Hereditary](is-hereditary.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Hereditary families](is-hereditary.md)
+- [Chvátal's conjecture](conjecture.md)
+- [Chvátal's conjecture holds](conjecture-holds.md)

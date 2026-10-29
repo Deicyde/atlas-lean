@@ -6,19 +6,20 @@ proof: formalized
 lean: BooleanCube.boolTotalInfluence_nonneg
 ---
 
-# Bool Total Influence nonneg
+# Total influence is nonnegative
 
-The total influence is nonnegative.
+**Total influence is nonnegative.** For every function $f$ from the Boolean cube
+$\{-1, 1\}^n$ to $\mathbb{R}$, the total influence of $f$ is nonnegative.
 
 ## Depends on
 
 - [Boolean cube](../boolean-cube/bool-cube.md)
-- [Bool Total Influence](bool-total-influence.md)
+- [Total influence on the Boolean cube](bool-total-influence.md)
 
 ## Proof depends on
 
-- [Bool Influence](bool-influence.md)
-- [Bool Influence nonneg](bool-influence-nonneg.md)
+- [Influence of a coordinate](bool-influence.md)
+- [Influences are nonnegative](bool-influence-nonneg.md)
 
 ## Sources
 

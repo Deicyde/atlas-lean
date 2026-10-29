@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.complexHessian_const
 ---
 
-# Complex Hessian const
+# Constant functions have zero complex Hessian
 
-A constant function has zero complex Hessian.
+**Constant functions have zero complex Hessian.** For every real constant $c$, the function
+$u : \mathbb{C}^n \to \mathbb{R}$ with constant value $c$ has complex Hessian equal to the zero
+$n \times n$ matrix at every point $z \in \mathbb{C}^n$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ A constant function has zero complex Hessian.
 ## Proof depends on
 
 - [Real Hessian](real-hessian.md)
-- [Real Hessian const](real-hessian-const.md)
+- [Constant functions have zero real Hessian](real-hessian-const.md)
 
 ## Sources
 

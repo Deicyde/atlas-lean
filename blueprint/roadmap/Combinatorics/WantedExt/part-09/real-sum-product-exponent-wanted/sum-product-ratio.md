@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.sumProductRatio
 ---
 
-# Sum Product Ratio
+# Sum-product ratio
 
-The normalized logarithmic sum-product growth of a finite real set.
+**Sum-product ratio.** For a finite set $A$ of real numbers, the sum-product ratio of $A$ is
+$\log \max(|A+A|, |AA|) / \log |A|$, where $A+A$ and $AA$ are the sumset and the product set of
+$A$. With the conventions $\log 0 = 0$ and $x / 0 = 0$, the ratio is $0$ when $|A| \le 1$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Max Card](sum-product-max-card.md)
+- [Size of the larger of the sumset and the product set](sum-product-max-card.md)
 
 ## Sources
 

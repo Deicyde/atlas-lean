@@ -5,11 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RegularGraphAdjacencyNonsingularOWR12861Problem026Wanted.regularGraphAdjacencyNonsingular
 ---
 
-# Regular Graph Adjacency Nonsingular
+# Vu's problem on nonsingular adjacency matrices of random regular graphs
 
-Vu's problem (Oberwolfach Report 01/2014): for every fixed `d > 2`, the adjacency matrix of the
-uniformly random `d`-regular graph on `n` vertices is nonsingular with probability tending to `1`
-as `n → ∞` (along the `n` with `n d` even, for which `d`-regular graphs on `n` vertices exist).
+**Vu's problem on nonsingular adjacency matrices of random regular graphs.** This is the
+statement that for every natural number $d \ge 3$, the probability that the adjacency matrix of
+the uniformly random $d$-regular simple graph on $n$ labeled vertices is nonsingular tends to $1$
+as $n \to \infty$, where $n$ runs over the natural numbers with $nd$ even. Here the probability is
+the proportion of the $d$-regular simple graphs on $\{0, 1, \ldots, n-1\}$ whose adjacency matrix
+has nonzero determinant over $\mathbb{Q}$.
+
+The restriction to $nd$ even is natural: $d$-regular graphs on $n$ vertices exist only for such
+$n$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonsingular Fraction](nonsingular-fraction.md)
+- [Proportion of regular graphs with nonsingular adjacency matrix](nonsingular-fraction.md)
 
 ## Sources
 

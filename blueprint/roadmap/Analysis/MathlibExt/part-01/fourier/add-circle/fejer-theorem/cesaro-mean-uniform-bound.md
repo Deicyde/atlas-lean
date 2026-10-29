@@ -6,27 +6,33 @@ proof: formalized
 lean: AddCircle.cesaroMean_uniform_bound
 ---
 
-# Cesaro Mean uniform bound
+# Quantitative Fejér theorem
 
-Quantitative form of Fejér's theorem: given `ε > 0` and a modulus of continuity
-`δ > 0` for `f ∈ C(AddCircle T, ℂ)` at scale `ε/2`, there exists `N₀` such that
-`∀ N ≥ N₀, ∀ x, dist (f x) (σ_N f x) < ε`. The proof splits the convolution integral
-into the region `‖t‖ < δ` (where `f(x) − f(x − t)` is small) and its complement
-(where the Fejér kernel decays as `O(1/((N+1)δ²))`).
+**Quantitative Fejér theorem.** Let $T > 0$, let $f$ be a continuous complex-valued function
+on the circle $\mathbb{R}/T\mathbb{Z}$, and write $\sigma_N f$ for its $N$-th Cesàro–Fourier
+mean. Let $\varepsilon > 0$ and $\delta > 0$ be such that $|f(a) - f(b)| < \varepsilon / 2$ for
+all points $a, b$ of the circle at distance less than $\delta$. Then there is
+$N_0 \in \mathbb{N}$ such that $|f(x) - \sigma_N f(x)| < \varepsilon$ for every $N \ge N_0$ and
+every point $x$ of the circle.
+
+The proof writes $f(x) - \sigma_N f(x) = \int K_N(t)\,(f(x) - f(x - t))\,dt$, where $K_N$ is the
+$N$-th Fejér kernel and the integral is against the Haar probability measure, and splits it
+into the points $t$ at distance less than $\delta$ from $0$, where $f(x) - f(x - t)$ is small,
+and the remaining points, where the Fejér kernel is $O(1/((N+1)\delta^2))$.
 
 ## Depends on
 
-- [Cesaro Fourier Mean](../cesaro-mean/cesaro-fourier-mean.md)
+- [Cesàro–Fourier means](../cesaro-mean/cesaro-fourier-mean.md)
 
 ## Proof depends on
 
-- [Cesaro Mean eq fejer convolution](../cesaro-mean/cesaro-mean-eq-fejer-convolution.md)
-- [Fejer Kernel](../fejer-kernel/fejer-kernel.md)
-- [Fejer Kernel continuous](../fejer-kernel/fejer-kernel-continuous.md)
-- [Fejer Kernel integrable](../fejer-kernel/fejer-kernel-integrable.md)
-- [Fejer kernel properties](../fejer-kernel/fejer-kernel-properties.md)
-- [Integral fejer Kernel](../fejer-kernel/integral-fejer-kernel.md)
-- [Integral norm fejer Kernel](../cesaro-mean/integral-norm-fejer-kernel.md)
+- [Cesàro–Fourier means are convolutions with the Fejér kernel](../cesaro-mean/cesaro-mean-eq-fejer-convolution.md)
+- [The Fejér kernel](../fejer-kernel/fejer-kernel.md)
+- [Continuity of the Fejér kernel](../fejer-kernel/fejer-kernel-continuous.md)
+- [Integrability of the Fejér kernel](../fejer-kernel/fejer-kernel-integrable.md)
+- [Properties of the Fejér kernel](../fejer-kernel/fejer-kernel-properties.md)
+- [The Fejér kernel has integral one](../fejer-kernel/integral-fejer-kernel.md)
+- [The Fejér kernel has $L^1$ norm one](../cesaro-mean/integral-norm-fejer-kernel.md)
 
 ## Sources
 

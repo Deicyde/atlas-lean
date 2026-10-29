@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolysizeColoringListWanted.conjecture
 ---
 
-# Conjecture
+# Polynomial-size colouring list conjecture
 
-Polynomial-size coloring lists with hereditary-discrepancy bound
-(AIM-COMBINATORICS-0047__20000922; AIM Hereditary discrepancy,
-item 1.85): there are uniform constants `C` and `k` such that every real
-matrix `A` has a list of at most `m ^ k` signings, one of which achieves
-weighted discrepancy at most `C * h` on every column subset `S`, where
-`h` is the hereditary discrepancy of `A`.
+**Polynomial-size colouring list conjecture.** The statement that there exist a real number
+$C > 0$ and a natural number $k$ such that for all positive integers $n$ and $m$ and every real
+$n \times m$ matrix $A$ there is a set $L$ of at most $m^k$ sign vectors in $\{-1, 1\}^m$ with
+the following property: for every set $S$ of columns of $A$ some $\varepsilon \in L$ satisfies
+$\left|\sum_{j \in S} A_{ij} \varepsilon_j\right| \le C \operatorname{herdisc}(A)$ for every row
+$i$, where $\operatorname{herdisc}(A)$ is the hereditary discrepancy of $A$.
 
 ## Depends on
 
@@ -20,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hereditary Disc](hereditary-disc.md)
+- [Hereditary discrepancy of a real matrix](hereditary-disc.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PolysizeColoringListWanted](../../../../../sources/v2/WantedExt.md)
+- AIM-COMBINATORICS-0047__20000922; AIM Hereditary discrepancy, item 1.85.

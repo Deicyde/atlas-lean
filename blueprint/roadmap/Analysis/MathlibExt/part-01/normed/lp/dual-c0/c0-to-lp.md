@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0ToLp
 ---
 
-# C0 To Lp
+# Inclusion of $c_0$ in $\ell^\infty$
 
-The coordinate-preserving inclusion of canonical `c₀` in `ℓ^∞`.
+**Inclusion of $c_0$ in $\ell^\infty$.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
+and let $\iota$ be an index type. Every $x \in c_0(\iota, \mathbb{K})$ is a bounded sequence,
+and this map sends it to the element of $\ell^\infty(\iota, \mathbb{K})$ with the same
+coordinates $x_i$.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Proof depends on
 
-- [C0 apply norm le](c0-apply-norm-le.md)
+- [Coordinates are bounded by the norm in $c_0$](c0-apply-norm-le.md)
 
 ## Sources
 

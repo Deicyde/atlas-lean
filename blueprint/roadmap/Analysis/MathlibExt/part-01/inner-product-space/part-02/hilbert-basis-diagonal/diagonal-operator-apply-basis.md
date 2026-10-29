@@ -16,7 +16,7 @@ A diagonal operator acts on basis vectors by scalar multiplication.
 
 ## Proof depends on
 
-- [Diagonal Operator eq tsum](diagonal-operator-eq-tsum.md)
+- [Series formula for a diagonal operator](diagonal-operator-eq-tsum.md)
 
 ## Sources
 

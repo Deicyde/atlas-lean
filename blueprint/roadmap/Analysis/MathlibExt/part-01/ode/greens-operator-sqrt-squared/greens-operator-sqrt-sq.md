@@ -14,19 +14,19 @@ same self-adjoint/kernel-a.e. hypotheses as its eigendecomposition.
 
 ## Depends on
 
-- [L2 Unit Interval](../greens-operator/l2-unit-interval.md)
-- [Greens Kernel](../greens-operator/greens-kernel.md)
-- [Greens Operator Sqrt](../greens-operator/greens-operator-sqrt.md)
-- [Sine Basis Fun](../greens-operator/sine-basis-fun.md)
+- [The space $L^2((0, 1))$](../greens-operator/l2-unit-interval.md)
+- [Green's kernel of the Dirichlet Laplacian on $(0, 1)$](../greens-operator/greens-kernel.md)
+- [Square root of the Dirichlet Green's operator](../greens-operator/greens-operator-sqrt.md)
+- [Sine basis functions on $(0, 1)$](../greens-operator/sine-basis-fun.md)
 
 ## Proof depends on
 
 - [Diagonal Operator](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator.md)
-- [Diagonal Operator eq tsum](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator-eq-tsum.md)
+- [Series formula for a diagonal operator](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator-eq-tsum.md)
 - [Diagonal Operator sq](../../inner-product-space/part-02/hilbert-basis-diagonal/diagonal-operator-sq.md)
-- [Greens Eigenvalue](../greens-operator/greens-eigenvalue.md)
-- [Greens Eigenvalue Sqrt](../greens-operator/greens-eigenvalue-sqrt.md)
-- [Greens operator eigendecomposition](../greens-operator/greens-operator-eigendecomposition.md)
+- [Eigenvalues of the Dirichlet Green's operator](../greens-operator/greens-eigenvalue.md)
+- [Square roots of the Green's operator eigenvalues](../greens-operator/greens-eigenvalue-sqrt.md)
+- [Spectral decomposition of the Dirichlet Green's operator](../greens-operator/greens-operator-eigendecomposition.md)
 - [Greens Operator Sqrt eq diagonal](greens-operator-sqrt-eq-diagonal.md)
 
 ## Sources

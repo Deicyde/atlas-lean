@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Integration.Partition.sum_sub_eq
 ---
 
-# Sum sub eq
+# Subinterval lengths of a partition telescope
 
-The subinterval lengths of a partition of `[a, b]` telescope to `b - a`:
-`∑ᵢ (xᵢ₊₁ - xᵢ) = b - a`.
+**Subinterval lengths of a partition telescope.** If $a = x_0 < x_1 < \cdots < x_n = b$ is
+a partition of $[a, b]$, then the lengths of its subintervals sum to the length of the interval:
+$\sum_{i=0}^{n-1} (x_{i+1} - x_i) = b - a$.
 
 ## Depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

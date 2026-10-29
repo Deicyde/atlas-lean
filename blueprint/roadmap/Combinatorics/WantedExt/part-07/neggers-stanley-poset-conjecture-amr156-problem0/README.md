@@ -4,7 +4,7 @@ navigation: module
 
 # Neggers Stanley Poset Conjecture AMR156 Problem0020
 
-- [Descent Count](descent-count.md)
-- [W Polynomial](w-polynomial.md)
-- [Neggers Conjecture](neggers-conjecture.md)
-- [Neggers Conjecture refuted](neggers-conjecture-refuted.md)
+- [Number of descents of a permutation of $\{0, \dots, n-1\}$](descent-count.md)
+- [The $W$-polynomial of a labeled poset](w-polynomial.md)
+- [Neggers' conjecture](neggers-conjecture.md)
+- [Neggers' conjecture is false](neggers-conjecture-refuted.md)

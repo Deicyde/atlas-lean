@@ -6,9 +6,13 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.RieszSchauder.adjoint_smul_one_sub
 ---
 
-# Adjoint smul one sub
+# Adjoint of a shifted operator
 
-The adjoint of `μ • 1 - T` is `star μ • 1 - T†`.
+**Adjoint of a shifted operator.** Let $E$ be a Hilbert space over
+$\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T$ be a bounded linear operator on $E$ with
+adjoint $T^*$, let $\mu \in \mathbb{K}$ and let $I$ be the identity operator on $E$. Then
+$(\mu I - T)^* = \overline{\mu} I - T^*$, where $\overline{\mu}$ is the complex conjugate of
+$\mu$ (so $\overline{\mu} = \mu$ when $\mathbb{K} = \mathbb{R}$).
 
 ## Depends on
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0OfLp
 ---
 
-# C0 Of Lp
+# Sequences in $\ell^\infty$ tending to zero as elements of $c_0$
 
-Build canonical `c₀` from an `ℓ^∞` sequence and its cofinite limit.
-This is the migration helper for the former subtype constructor.
+**Sequences in $\ell^\infty$ tending to zero as elements of $c_0$.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$ and let $\iota$ be an index type. A bounded sequence
+$x \in \ell^\infty(\iota, \mathbb{K})$ whose coordinates $x_i$ tend to $0$ along the
+cofinite filter on $\iota$ defines the element of $c_0(\iota, \mathbb{K})$ with the same
+coordinates.
 
 ## Depends on
 
-- [C0](c0.md)
+- [The sequence space $c_0$](c0.md)
 
 ## Sources
 

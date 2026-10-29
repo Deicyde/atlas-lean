@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.NumericalRadius.abs_im_quadForm_div_le_numericalRadius
 ---
 
-# Abs im quad Form div le numerical Radius
+# Numerical radius bounds the normalized imaginary part of the quadratic form
 
-The imaginary part of the quadratic form, divided by `‖x‖²`, is at most
-the numerical radius.
+**Numerical radius bounds the normalized imaginary part of the quadratic form.** Let $T$ be
+a bounded linear operator on a complex inner product space $H$, with numerical radius $w(T)$. For
+every $x \in H$, $|\operatorname{Im} \langle Tx, x\rangle| / \|x\|^2 \le w(T)$, where division by
+zero is taken to be $0$, so the case $x = 0$ is trivial.
 
 ## Depends on
 
-- [Numerical Radius](numerical-radius.md)
+- [Numerical radius](numerical-radius.md)
 
 ## Proof depends on
 
-- [Le numerical Radius](le-numerical-radius.md)
-- [Norm normalize](norm-normalize.md)
-- [Numerical Radius nonneg](numerical-radius-nonneg.md)
-- [Quad Form scale](quad-form-scale.md)
+- [The numerical radius bounds the quadratic form on unit vectors](le-numerical-radius.md)
+- [Normalizing a nonzero vector gives a unit vector](norm-normalize.md)
+- [Nonnegativity of the numerical radius](numerical-radius-nonneg.md)
+- [Quadratic form at the normalized vector](quad-form-scale.md)
 
 ## Sources
 

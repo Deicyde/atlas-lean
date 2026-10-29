@@ -6,17 +6,20 @@ proof: formalized
 lean: MvPolynomial.one_le_orderAt_iff
 ---
 
-# One le order At iff
+# Vanishing to order at least one
 
-A polynomial vanishes to order at least one at `v` iff it vanishes at `v`.
+**Vanishing to order at least one.** Let $R$ be a commutative semiring, let $F$ be a
+polynomial over $R$ in the variables $(X_i)_{i \in \sigma}$ and let $v \in R^\sigma$. Then the
+order of vanishing $\operatorname{ord}_v F$ of $F$ at $v$ is at least $1$ if and only if
+$F(v) = 0$.
 
 ## Depends on
 
-- [Order At](order-at.md)
+- [Order of vanishing at a point](order-at.md)
 
 ## Proof depends on
 
-- [Constant Coeff aeval X add C](constant-coeff-aeval-x-add-c.md)
+- [Constant term of the Taylor expansion](constant-coeff-aeval-x-add-c.md)
 
 ## Sources
 

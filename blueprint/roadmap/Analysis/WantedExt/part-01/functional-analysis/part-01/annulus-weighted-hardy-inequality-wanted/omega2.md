@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedHardyInequalityWanted.Omega2
 ---
 
-# Omega2
+# Outer annulus of the weighted Hardy inequality
 
-The annulus `B 3 \ closure (B 2)`.
+**Outer annulus of the weighted Hardy inequality.** $\Omega_2 = B_3 \setminus \overline{B}_2$,
+where $B_r$ is the open disc of radius $r$ about the origin of the Euclidean plane $\mathbb{R}^2$
+and $\overline{B}_2$ is the closure of $B_2$; that is, writing $|x|$ for the Euclidean norm,
+$\Omega_2$ is the annulus $\{x \in \mathbb{R}^2 : 2 < |x| < 3\}$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ The annulus `B 3 \ closure (B 2)`.
 
 ## Proof depends on
 
-- [B](b.md)
+- [Open discs about the origin for the annulus Hardy inequality](b.md)
 
 ## Sources
 

@@ -6,18 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.norm_lpMulCLM_apply_le_of_ae_support
 ---
 
-# Norm lp Mul CLM apply le of ae support
+# Bound for a multiplication operator on the support of a vector
 
-A bound on the multiplier that holds almost everywhere on the support of `f`
-bounds the operator applied to `f`.
+**Bound for a multiplication operator on the support of a vector.** Let $\mu$ be a measure
+on a measurable space $\alpha$, let $\varphi \colon \alpha \to \mathbb{C}$ be an essentially
+bounded, almost everywhere strongly measurable function, and let $M_\varphi$ be the
+multiplication operator on $L^2(\mu)$. If $C$ is a real number and $f \in L^2(\mu)$ is such
+that, for $\mu$-almost every $x$, either $|\varphi(x)| \le C$ or $f(x) = 0$, then
+$\|M_\varphi f\| \le C \|f\|$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Mem Lp mul of mem Lp top](mem-lp-mul-of-mem-lp-top.md)
+- [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 
 ## Sources
 

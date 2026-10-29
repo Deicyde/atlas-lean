@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.Integration.riemannSum
 ---
 
-# Riemann Sum
+# Riemann sum
 
-The Riemann sum `S_f(x, ξ) = ∑ₖ f(ξₖ) (xₖ - xₖ₋₁)` of a function `f`
-with respect to a tagged partition `T`.
+**Riemann sum.** Let $f : \mathbb{R} \to \mathbb{R}$ and let $T$ be a tagged partition of
+$[a, b]$, with points $a = x_0 < x_1 < \cdots < x_n = b$ and tags $\xi_k \in [x_{k-1}, x_k]$
+for $k = 1, \dots, n$. The Riemann sum of $f$ with respect to $T$ is
+$S_f(x, \xi) = \sum_{k=1}^{n} f(\xi_k)\,(x_k - x_{k-1})$ (an empty sum, equal to $0$, when
+$n = 0$).
 
 ## Depends on
 
-- [Tagged Partition](tagged-partition.md)
+- [Tagged partition](tagged-partition.md)
 
 ## Proof depends on
 
-- [Partition](partition.md)
+- [Partition of an interval](partition.md)
 
 ## Sources
 

@@ -7,8 +7,18 @@ lean: MathlibExt.Combinatorics.HibiSymmetricHStarUnimodalOWR741Problem003Wanted.
 
 # Hibi Symmetric Unimodal refuted
 
-Resolved false: Mustaţă and Payne (Example 1.1) give a reflexive `6`-dimensional lattice polytope
-with `h*`-vector `(1, 6, 8, 6, 8, 6, 1)`, which satisfies `h*_i = h*_{6-i}` and is not unimodal.
+**Hibi's conjecture on symmetric $h^*$-vectors is false.** There are a natural number $d$, a
+finite set $S \subseteq \mathbb{Z}^d$ whose convex hull $P \subseteq \mathbb{R}^d$ has nonempty
+interior, and a polynomial $h = \sum_i h^*_i z^i \in \mathbb{Z}[z]$ that is an $h^*$-polynomial
+of $P$, that is,
+
+$$\Big(\sum_{t \ge 0} \#(tP \cap \mathbb{Z}^d)\, z^t\Big) (1 - z)^{d+1} = h(z)$$
+
+as formal power series, such that $h^*_i = h^*_{d-i}$ for all $0 \le i \le d$ but $h$ is not
+unimodal.
+
+Mustaţă and Payne (Example 1.1) give a reflexive $6$-dimensional lattice polytope with
+$h^*$-vector $(1, 6, 8, 6, 8, 6, 1)$, which is symmetric and not unimodal.
 
 ## Depends on
 

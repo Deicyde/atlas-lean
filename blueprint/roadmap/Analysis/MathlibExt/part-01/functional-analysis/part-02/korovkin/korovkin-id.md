@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinId
 ---
 
-# Korovkin Id
+# The identity test function
 
-The identity function on `[0, 1]`, as a continuous map.
+**The identity test function.** The function $x \mapsto x$ on $[0, 1]$, as an element
+of $C([0, 1], \mathbb{R})$.
 
 ## Depends on
 

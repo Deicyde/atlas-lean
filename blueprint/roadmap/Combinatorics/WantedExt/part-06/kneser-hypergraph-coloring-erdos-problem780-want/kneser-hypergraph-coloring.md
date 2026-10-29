@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.KneserHypergraphColoringErdosProblem780Wanted.kneserHypergraphColoring
 ---
 
-# Kneser Hypergraph Coloring
+# Erdős's Kneser hypergraph problem
 
-Erdős Problem 780: if `n ≥ k r + (t - 1)(k - 1)`, every coloring of the `r`-subsets of an
-`n`-set with `t` colors has a color class containing `k` pairwise disjoint `r`-subsets.
+**Erdős's Kneser hypergraph problem.** The statement that for all natural numbers
+$n, k, r, t$ with $r \ge 1$, $t \ge 1$ and $n \ge kr + (t - 1)(k - 1)$, every coloring of the
+$r$-element subsets of $\{0, \dots, n - 1\}$ with $t$ colors has a color class containing $k$
+pairwise disjoint $r$-element subsets.
 
 ## Depends on
 

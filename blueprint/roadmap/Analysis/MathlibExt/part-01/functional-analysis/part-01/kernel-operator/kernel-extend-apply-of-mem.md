@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.KernelOperator.kernelExtend_apply_of_mem
 ---
 
-# Kernel Extend apply of mem
+# The clamped extension agrees with the function on $(0, 1)$
 
-On `[0, 1]` the clamped extension agrees with the original function.
+**The clamped extension agrees with the function on $[0, 1]$.** Let $f$ be a bounded continuous
+function on $[0, 1]$ and let $\tilde f(s) = f(\max(0, \min(1, s)))$ for real $s$ be its clamped
+extension. Then $\tilde f(t) = f(t)$ for every $t \in [0, 1]$.
 
 ## Depends on
 
-- [Kernel Space](kernel-space.md)
-- [Kernel Extend](kernel-extend.md)
+- [Continuous functions on the unit interval](kernel-space.md)
+- [Clamped extension](kernel-extend.md)
 
 ## Sources
 

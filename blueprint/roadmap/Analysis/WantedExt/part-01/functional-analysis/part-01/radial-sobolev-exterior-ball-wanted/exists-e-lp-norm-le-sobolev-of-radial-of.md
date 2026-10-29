@@ -5,26 +5,28 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.RadialSobolevExteriorBallWanted.exists_eLpNorm_le_sobolev_of_radial_of_tsupport_subset_compl_closedBall
 ---
 
-# Exists e Lp Norm le sobolev of radial of tsupport subset compl closed Ball
+# Radial Sobolev embedding outside the unit ball
 
-Assume that $n\ge 2$, $p\in(1,2)$, and $q\in[p,+\infty]$.
+**Radial Sobolev embedding outside the unit ball.** Let $n \ge 2$, let $B$ be the closed unit
+ball of $\mathbb{R}^n$, and let $1 < p < 2$ and $p \le q \le \infty$. Then there is a constant
+$C > 0$ such that every radial function $f \colon \mathbb{R}^n \to \mathbb{R}$ that has compact
+support, whose closed support is contained in $\mathbb{R}^n \setminus B$, and which is $C^\infty$
+on $\mathbb{R}^n \setminus B$, satisfies
 
-Show that there exists a constant $C$ (may depend on $p,q,n$) such that for all radial function
-$f\in C_c^\infty(\mathbb{R}^n\setminus B)$, there holds:
-\[
-\|f\|_{L^q(\mathbb{R}^n)}\le C\|f\|_{W^{1,p}(\mathbb{R}^n)}.
-\]
-Here $B$ is the closed unit ball in $\mathbb{R}^n$.
+$$\|f\|_{L^q} \le C \left( \|f\|_{L^p} + \big\| |Df| \big\|_{L^p} \right),$$
 
-Lean variant: the source writes `ContDiffOn ℝ ⊤`, and `(⊤ : WithTop ℕ∞) = ω` is real-analyticity in
-current Mathlib; an analytic, radial, compactly supported `f` vanishes outside the ball, so that
-reading is vacuous. The intended smoothness `ContDiffOn ℝ ∞` is used.
+where the norms are taken with respect to Lebesgue measure and $|Df(x)|$ is the operator norm of
+the derivative of $f$ at $x$.
+
+Smoothness here means $C^\infty$. The source's formal statement asked for real-analyticity
+instead, which makes the claim vacuous: an analytic, radial, compactly supported $f$ vanishes
+outside the ball.
 
 ## Depends on
 
-- [Closed Unit Ball](closed-unit-ball.md)
-- [Is Radial](is-radial.md)
-- [Rn](rn.md)
+- [Closed unit ball of $\mathbb{R}^n$](closed-unit-ball.md)
+- [Radial functions on $\mathbb{R}^n$](is-radial.md)
+- [Real $n$-space with the Euclidean norm](rn.md)
 
 ## Sources
 

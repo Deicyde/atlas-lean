@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_identityProduct_period
 ---
 
-# Card identity Product period
+# Counting identity-product tuples with a given period
 
-Lemma 13: for `k ∣ n` (`n ≥ 1`), the set `A_k` of identity-product `n`-tuples fixed by the
-rotation by `k` has `[G ÷ n/k] |G|^{k-1}` elements.
+**Counting identity-product tuples with a given period.** Let $G$ be a finite group,
+$n \ge 1$ and $k$ a divisor of $n$. The number of tuples $x = (x_0, \dots, x_{n-1}) \in G^n$
+with $x_0 x_1 \cdots x_{n-1} = 1$ and $x_{i+k} = x_i$ for all $i$ (indices taken mod $n$) is
+$r_{n/k}(G) \, |G|^{k-1}$, where $r_m(G)$ is the number of $g \in G$ with $g^m = 1$.
 
 ## Depends on
 

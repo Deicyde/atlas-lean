@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hypergraph Coloring Shared](../../part-05/hypergraph-colorable.md)
+- [Colorable hypergraph](../../part-05/hypergraph-colorable.md)
 
 ## Sources
 

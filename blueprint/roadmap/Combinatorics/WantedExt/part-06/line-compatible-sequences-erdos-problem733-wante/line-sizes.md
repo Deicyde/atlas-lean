@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LineCompatibleSequencesErdosProblem733Wanted.lineSizes
 ---
 
-# Line Sizes
+# Line sizes of a planar point set
 
-The multiset of the numbers `|ℓ ∩ P|` over the lines `ℓ` determined by a finite set `P ⊆ ℝ²`
-(the lines `line[ℝ, p, q]` through two distinct points of `P`, each line counted once).
+**Line sizes of a planar point set.** For a finite set $P \subseteq \mathbb{R}^2$, this is
+the multiset of the numbers $|\ell \cap P|$, where $\ell$ ranges over the lines determined by
+$P$, that is, the distinct lines through two distinct points of $P$, each counted once.
 
 ## Depends on
 

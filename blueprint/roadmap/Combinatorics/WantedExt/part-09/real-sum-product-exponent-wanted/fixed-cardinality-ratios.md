@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.fixedCardinalityRatios
 ---
 
-# Fixed Cardinality Ratios
+# Sum-product ratios at a fixed cardinality
 
-All sum-product ratios attained by real finsets of cardinality `n`.
+**Sum-product ratios at a fixed cardinality.** For a finite set $A \subset \mathbb{R}$ write
+$A + A$ and $AA$ for the sets of all sums $a + b$ and all products $ab$ with $a, b \in A$. For a
+natural number $n \ge 2$, this is the set of the real numbers
+$\log \max(|A + A|, |AA|) / \log |A|$ for all sets $A \subset \mathbb{R}$ with $|A| = n$; for
+$n \le 1$ it consists of the single number $0$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Ratio](sum-product-ratio.md)
+- [Sum-product ratio](sum-product-ratio.md)
 
 ## Sources
 

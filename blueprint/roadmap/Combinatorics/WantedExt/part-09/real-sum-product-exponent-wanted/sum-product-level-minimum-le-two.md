@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.sumProductLevelMinimum_le_two
 ---
 
-# Sum Product Level Minimum le two
+# The level minimum is at most two
 
-The fixed-cardinality minima are at most two from level two onward.
+**The level minimum is at most two.** For every natural number $n \ge 2$, the level minimum
+$m(n)$, the infimum of the sum-product ratios $\log \max(|A+A|, |AA|) / \log |A|$ over all sets $A$
+of $n$ real numbers, where $A+A$ and $AA$ are the sumset and the product set of $A$, satisfies
+$m(n) \le 2$.
 
 ## Depends on
 
-- [Sum Product Level Minimum](sum-product-level-minimum.md)
+- [Least sum-product ratio at a fixed cardinality](sum-product-level-minimum.md)
 
 ## Proof depends on
 
-- [Fixed Cardinality Ratios](fixed-cardinality-ratios.md)
-- [Sum Product Level Minimum is Least](sum-product-level-minimum-is-least.md)
-- [Sum Product Ratio](sum-product-ratio.md)
-- [Sum Product Ratio le two](sum-product-ratio-le-two.md)
+- [Sum-product ratios at a fixed cardinality](fixed-cardinality-ratios.md)
+- [The level minimum is attained](sum-product-level-minimum-is-least.md)
+- [Sum-product ratio](sum-product-ratio.md)
+- [The sum-product ratio is at most two](sum-product-ratio-le-two.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.LpShiftOperator.adjoint_shiftCLM
 ---
 
-# Adjoint shift CLM
+# Adjoint of the unilateral shift
 
-The adjoint of the unilateral shift is the backward shift.
+**Adjoint of the unilateral shift.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$. The
+adjoint of the unilateral shift $S$ on $\ell^2(\mathbb{N}, \mathbb{K})$ is the backward shift
+$B$: $S^* = B$.
 
 ## Depends on
 
-- [Backward CLM](backward-clm.md)
-- [Shift CLM](shift-clm.md)
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
 
 ## Sources
 

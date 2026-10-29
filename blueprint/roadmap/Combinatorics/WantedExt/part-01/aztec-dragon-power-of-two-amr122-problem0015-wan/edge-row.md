@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeRow
 ---
 
-# Edge Row
+# Row index of an edge of the Aztec diamond
 
-The row index, in the `2m × 2m` array formed by the centers of the edges of `AD_m`, of the edge
-joining the cells `c` and `d`. With doubled center coordinates `X = c.1 + d.1 + 1` and
-`Y = c.2 + d.2 + 1` of that edge, the array rows are the diagonals `X + Y = const`, numbered
-`0, …, 2m - 1` by `(X + Y + 2m - 1) / 2`.
+**Row index of an edge of the Aztec diamond.** For $m \in \mathbb{N}$ and pairs of integers
+$c = (c_1, c_2)$ and $d = (d_1, d_2)$, put $X = c_1 + d_1 + 1$ and $Y = c_2 + d_2 + 1$, the
+doubled coordinates of the center of the edge joining $c$ and $d$. The row index of this edge is
+$\lfloor (X + Y + 2m - 1) / 2 \rfloor$, so the rows of the $2m \times 2m$ array of edge centers of
+the Aztec diamond graph $AD_m$ are the diagonals $X + Y = \mathrm{const}$, numbered
+$0, \dots, 2m - 1$.
 
 ## Depends on
 

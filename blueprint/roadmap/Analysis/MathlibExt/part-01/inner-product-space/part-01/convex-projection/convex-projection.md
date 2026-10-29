@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.ConvexProjection.convexProjection
 ---
 
-# Convex Projection
+# Nearest-point projection onto a convex set
 
-The nearest-point projection onto `K`: for a nonempty complete convex
-`K`, `convexProjection K x` is the unique point of `K` nearest to `x`.
-Outside those hypotheses its value is unspecified. The properties of this
-chosen function below assume them.
+**Nearest-point projection onto a convex set.** For a subset $K$ of a real inner product space
+$F$ and a point $x \in F$, the nearest-point projection $P_K(x)$ is a chosen point of $F$ such
+that, whenever $K$ is nonempty, complete and convex, $P_K(x) \in K$ and
+$\|x - P_K(x)\| = \inf_{w \in K} \|x - w\|$; it is then the unique point of $K$ nearest to $x$.
+When $K$ fails one of these hypotheses, the value of $P_K(x)$ is unspecified.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists convex Projection spec](exists-convex-projection-spec.md)
+- [Totalized existence of the convex projection](exists-convex-projection-spec.md)
 
 ## Sources
 

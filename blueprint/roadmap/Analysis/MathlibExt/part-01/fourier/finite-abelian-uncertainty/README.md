@@ -4,10 +4,10 @@ navigation: module
 
 # Finite Abelian Uncertainty
 
-- [Norm add Char apply](norm-add-char-apply.md)
-- [Sum norm sq dft Fun](sum-norm-sq-dft-fun.md)
-- [Norm sq le of dft Fun eq zero of not Mem](norm-sq-le-of-dft-fun-eq-zero-of-not-mem.md)
-- [Sum norm sq le of dft Fun eq zero of not Mem](sum-norm-sq-le-of-dft-fun-eq-zero-of-not.md)
-- [Sum norm sq dft Fun le of eq zero of not Mem](sum-norm-sq-dft-fun-le-of-eq-zero-of-not.md)
-- [Card le mul card filter support](card-le-mul-card-filter-support.md)
-- [Eq zero of card mul card lt card](eq-zero-of-card-mul-card-lt-card.md)
+- [Characters of a finite abelian group have absolute value one](norm-add-char-apply.md)
+- [Squared-norm Plancherel identity for the finite Fourier transform](sum-norm-sq-dft-fun.md)
+- [Pointwise bound from a small Fourier support](norm-sq-le-of-dft-fun-eq-zero-of-not-mem.md)
+- [Concentration bound for a function with small Fourier support](sum-norm-sq-le-of-dft-fun-eq-zero-of-not.md)
+- [Concentration bound for the Fourier transform of a function with small support](sum-norm-sq-dft-fun-le-of-eq-zero-of-not.md)
+- [Donoho–Stark uncertainty principle](card-le-mul-card-filter-support.md)
+- [Functions with small support and small Fourier support vanish](eq-zero-of-card-mul-card-lt-card.md)

@@ -4,8 +4,8 @@ navigation: module
 
 # Multiplication Operator
 
-- [Mul CLM](mul-clm.md)
-- [Mul CLM algebra Map](mul-clm-algebra-map.md)
-- [Spectrum mul CLM](spectrum-mul-clm.md)
-- [Is Unit mul CLM iff](is-unit-mul-clm-iff.md)
-- [Has Eigenvalue mul CLM iff](has-eigenvalue-mul-clm-iff.md)
+- [The multiplication operator on continuous functions](mul-clm.md)
+- [Multiplication by a constant function](mul-clm-algebra-map.md)
+- [Spectrum of a multiplication operator](spectrum-mul-clm.md)
+- [Invertibility of a multiplication operator](is-unit-mul-clm-iff.md)
+- [Eigenvalues of a multiplication operator](has-eigenvalue-mul-clm-iff.md)

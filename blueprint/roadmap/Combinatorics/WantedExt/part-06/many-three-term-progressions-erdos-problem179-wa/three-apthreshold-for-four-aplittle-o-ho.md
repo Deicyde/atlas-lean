@@ -19,7 +19,7 @@ s-term progressions in an n-set with no k-term progression; erdosproblems.com/17
 
 ## Depends on
 
-- [Three APThreshold For Four APLittle O](three-apthreshold-for-four-aplittle-o.md)
+- [Erdős Problem 179: is $F_3(N, 4) = o(N^2)$?](three-apthreshold-for-four-aplittle-o.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Compact Self Adjoint Finite Eigenvalues
 
-- [Norm has Eigenvalue le](norm-has-eigenvalue-le.md)
-- [Finiteness of eigenvalues bounded away from zero](finite-eigenvalues-of-ge.md)
+- [Eigenvalues are bounded by the operator norm](norm-has-eigenvalue-le.md)
+- [Finiteness of large eigenvalues of a compact self-adjoint operator](finite-eigenvalues-of-ge.md)

@@ -6,13 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_norm_one
 ---
 
-# Exists annihilating norm one
+# Norm-one annihilating functional at positive distance
 
-If the distance from `x` to `S` is positive, the attaining functional
-can be chosen with norm exactly `1`: from `‖f‖ ≤ 1` and
-`‖f x‖ = infDist x S`, the inequality `infDist x S ≤ ‖f‖ * dist x s`
-for `s ∈ S` forces `1 ≤ ‖f‖` once a point `s` almost realizing the
-distance is chosen.
+**Norm-one annihilating functional at positive distance.** Let $E$ be a normed space over
+$\mathbb{K}$, where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, let $S$ be a linear subspace of
+$E$, and let $x \in E$ have positive distance $d(x, S) = \inf_{s \in S} \|x - s\| > 0$ from $S$.
+Then there is a continuous linear functional $f \colon E \to \mathbb{K}$ with $\|f\| = 1$ that
+vanishes on $S$ and satisfies $f(x) = d(x, S)$.
+
+A functional with $\|f\| \le 1$ that vanishes on $S$ and satisfies $f(x) = d(x, S)$ has norm
+exactly $1$: for $s \in S$ we have $d(x, S) = |f(x - s)| \le \|f\| \, \|x - s\|$, and $s$ can be
+chosen with $\|x - s\|$ arbitrarily close to $d(x, S) > 0$.
 
 ## Depends on
 
@@ -20,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists annihilating apply eq inf Dist](exists-annihilating-apply-eq-inf-dist.md)
+- [Hahn–Banach distance formula, attainment form](exists-annihilating-apply-eq-inf-dist.md)
 
 ## Sources
 

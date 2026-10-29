@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.CohenMacaulayPartitionabilityAMR156Problem0005Wanted.IsPure
 ---
 
-# Is Pure
+# Pure complexes
 
-`K` is pure: all facets have the same number of vertices.
+**Pure complexes.** A finite family $K$ of finite subsets of $\mathbb{N}$ is pure when all
+its facets (maximal members) have the same number of elements.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Facet](../../part-09/rational-simplicial-homology-shared/is-facet.md)
+- [Facet](../../part-09/rational-simplicial-homology-shared/is-facet.md)
 
 ## Sources
 

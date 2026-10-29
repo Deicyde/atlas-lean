@@ -6,13 +6,16 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.WeightedShiftOperator.weightedShiftFun_succ
 ---
 
-# Weighted Shift Fun succ
+# Weighted forward shift at a successor index
 
-At coordinate `n + 1`, the forward-shift function multiplies input `n` by `w n`.
+**Weighted forward shift at a successor index.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$. For weights $w : \mathbb{N} \to \mathbb{K}$, a sequence
+$x : \mathbb{N} \to \mathbb{K}$ and $n \in \mathbb{N}$, the term at index $n + 1$ of the weighted
+forward shift of $x$ is $w_n x_n$.
 
 ## Depends on
 
-- [Weighted Shift Fun](weighted-shift-fun.md)
+- [Weighted forward shift of a sequence](weighted-shift-fun.md)
 
 ## Sources
 

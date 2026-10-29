@@ -6,18 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.LpMultiplicationOperator.algebraMap_sub_lpMulCLM
 ---
 
-# Algebra Map sub lp Mul CLM
+# Shifting a multiplication operator by a scalar
 
-Subtracting the multiplication operator from a scalar is multiplication by
-the pointwise difference.
+**Shifting a multiplication operator by a scalar.** Let $\mu$ be a measure on a measurable
+space $\alpha$, let $\varphi : \alpha \to \mathbb{C}$ be in $L^\infty(\mu)$, let
+$z \in \mathbb{C}$, and suppose the function $x \mapsto z - \varphi(x)$ is also in
+$L^\infty(\mu)$. For $\psi \in L^\infty(\mu)$ write $M_\psi$ for the multiplication operator
+$f \mapsto \psi f$ on $L^2(\mu)$. Then $z I - M_\varphi = M_{z - \varphi}$, where $I$ is the
+identity operator on $L^2(\mu)$.
 
 ## Depends on
 
-- [Lp Mul CLM](lp-mul-clm.md)
+- [Multiplication operator on $L^2$](lp-mul-clm.md)
 
 ## Proof depends on
 
-- [Mem Lp mul of mem Lp top](mem-lp-mul-of-mem-lp-top.md)
+- [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 
 ## Sources
 

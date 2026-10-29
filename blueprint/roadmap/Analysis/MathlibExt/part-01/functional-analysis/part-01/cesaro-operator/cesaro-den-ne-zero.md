@@ -6,9 +6,10 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.CesaroOperator.cesaro_den_ne_zero
 ---
 
-# Cesaro den ne zero
+# The Cesàro denominator $n + 1$ is nonzero
 
-The denominator `(n : 𝕜) + 1` is nonzero.
+**The Cesàro denominator $n + 1$ is nonzero.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+For every natural number $n$, the element $n + 1$ of $\mathbb{K}$ is nonzero.
 
 ## Depends on
 

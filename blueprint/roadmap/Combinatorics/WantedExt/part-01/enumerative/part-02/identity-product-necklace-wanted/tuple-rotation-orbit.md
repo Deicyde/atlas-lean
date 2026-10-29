@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tupleRotationOrbit
 ---
 
-# Tuple Rotation Orbit
+# Rotation orbit of a tuple
 
-The rotation orbit `{x ∘ σ^m | m ∈ ℕ}` of a tuple `x : Fin n → α`, `σ = finRotate n`.
+**Rotation orbit of a tuple.** Let $x = (x_0, \dots, x_{n-1})$ be a tuple of length $n$ with
+entries in a type $\alpha$, and let $\sigma$ be the cyclic rotation of $\{0, \dots, n-1\}$ that
+sends $i$ to $i + 1$ for $i < n - 1$ and sends $n - 1$ to $0$. The rotation orbit of $x$ is the
+set of tuples $x \circ \sigma^m$ for $m \in \mathbb{N}$, that is, of the cyclic shifts
+$(x_m, x_{m+1}, \dots, x_{m+n-1})$ of $x$, with indices taken modulo $n$.
 
 ## Depends on
 

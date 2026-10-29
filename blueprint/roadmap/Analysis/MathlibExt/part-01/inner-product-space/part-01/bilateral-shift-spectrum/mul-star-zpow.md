@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BilateralShiftSpectrum.mul_star_zpow
 ---
 
-# Mul star zpow
+# Multiplying a power of the conjugate by a unit scalar
 
-On the unit circle, `μ * (star μ) ^ n = (star μ) ^ (n - 1)`.
+**Multiplying a power of the conjugate by a unit scalar.** Let $\mathbb{K}$ be $\mathbb{R}$
+or $\mathbb{C}$, and write $\bar{\mu}$ for the complex conjugate of $\mu \in \mathbb{K}$. If
+$|\mu| = 1$, then for every integer $n$, $\mu \bar{\mu}^{\,n} = \bar{\mu}^{\,n-1}$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mul star eq one of norm eq one](mul-star-eq-one-of-norm-eq-one.md)
-- [Star ne zero of norm eq one](star-ne-zero-of-norm-eq-one.md)
+- [A unit scalar times its conjugate is one](mul-star-eq-one-of-norm-eq-one.md)
+- [Conjugates of unimodular scalars are nonzero](star-ne-zero-of-norm-eq-one.md)
 
 ## Sources
 

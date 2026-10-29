@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.bloomSawinSchildkrautZhelezovUpperBound
 ---
 
-# Bloom Sawin Schildkraut Zhelezov Upper Bound
+# Statement of the Bloom–Sawin–Schildkraut–Zhelezov upper bound
 
-The qualitative 2026 improvement by one absolute positive constant.
+**Statement of the Bloom–Sawin–Schildkraut–Zhelezov upper bound.** The statement that there is a
+real number $c > 0$ such that the real sum-product exponent $C$ satisfies $C \le 2 - c$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum Product Exponent](sum-product-exponent.md)
+- [Sum-product exponent of the reals](sum-product-exponent.md)
 
 ## Sources
 
