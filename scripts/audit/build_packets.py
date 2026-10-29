@@ -23,6 +23,8 @@ V2_DECLARATION = re.compile(
     r"(?P<kw>theorem_wanted|def_wanted|theorem|lemma|def|abbrev|instance|structure|class|inductive|opaque)\b"
     r"\s*(?P<name>[^\s:(\[{]*)"
 )
+# namespace, section, mutual and end lines, which open and close the scopes declaration names live in.
+SCOPE = re.compile(r"(?:(?:noncomputable|public|private)\s+|@\[[^\]]*\]\s*)*(namespace|section|mutual|end)\b\s*([^\s-]*)")
 SOURCE_LINK = re.compile(r"^- \[(?P<library>MathlibExt|CSLibExt|WantedExt), (?P<module>[\w.]+)\]", re.M)
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 SIGNATURE_LINES = 40
@@ -59,18 +61,43 @@ def signature(lines: list[str], number: int) -> str:
 
 
 def locate(path: Path, lean: str) -> int | None:
-    """The declaration line whose written name is the longest suffix of `lean`."""
-    best, best_parts = None, 0
+    """The line declaring `lean`.
+
+    A declaration's full name is its written name inside the namespaces open
+    there. Without a full match, the line whose written name is the longest
+    suffix of `lean` is used, if no other line ties with it.
+    """
+    best, best_parts, ties = None, 0, 0
+    scopes: list[tuple[str, str]] = []
     for number, line in enumerate(path.read_text().splitlines()):
+        scope = SCOPE.match(line)
+        if scope:
+            kind, name = scope.groups()
+            if kind != "end":
+                scopes.append((kind, name if kind != "mutual" else ""))
+            elif name:
+                for k in range(len(scopes) - 1, -1, -1):
+                    if scopes[k][1] == name:
+                        del scopes[k:]
+                        break
+            elif scopes:
+                scopes.pop()
+            continue
         match = V2_DECLARATION.match(line)
         if not match or not match.group("name"):
             continue
         written = match.group("name")
+        prefix = ".".join(name for kind, name in scopes if kind == "namespace")
+        full = written.removeprefix("_root_.") if written.startswith("_root_.") else ".".join(filter(None, (prefix, written)))
+        if full == lean:
+            return number
         if lean == written or lean.endswith("." + written):
             parts = written.count(".") + 1
             if parts > best_parts:
-                best, best_parts = number, parts
-    return best
+                best, best_parts, ties = number, parts, 1
+            elif parts == best_parts:
+                ties += 1
+    return best if ties == 1 else None
 
 
 def links(section: str, article: Path, roadmap: Path) -> list[dict]:
