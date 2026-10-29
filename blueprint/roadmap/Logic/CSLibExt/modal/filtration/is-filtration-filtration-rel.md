@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Modal.isFiltration_filtrationRel
 ---
 
-# Is Filtration filtration Rel
+# The smallest filtration is a filtration
 
-The smallest filtration is a filtration.
+**The smallest filtration is a filtration.** Let $M$ be a Kripke model and $\varphi$ a modal
+formula, and call the set of subformulas of $\varphi$ true at a world $w$ the type of $w$. The
+relation that relates two types when some worlds of those types are related in $M$ is a
+filtration of $M$ through the set of subformulas of $\varphi$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [Is Filtration](is-filtration.md)
+- [Modal formulas](../kripke/formula.md)
+- [Filtration relations](is-filtration.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Filtration Rel](filtration-rel.md)
+- [Smallest filtration relation](filtration-rel.md)
 
 ## Proof depends on
 
-- [Sub](sub.md)
-- [Sub subset of mem](sub-subset-of-mem.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Filtration Worlds](filtration-worlds.md)
-- [Satisfies iff of sub Type eq](satisfies-iff-of-sub-type-eq.md)
-- [Sub Type](sub-type.md)
+- [Subformulas](sub.md)
+- [The subformula relation is transitive](sub-subset-of-mem.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Worlds of the filtration](filtration-worlds.md)
+- [Worlds of the same type agree on subformulas](satisfies-iff-of-sub-type-eq.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

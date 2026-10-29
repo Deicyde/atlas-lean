@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeSolubleTestElementKourovka14Problem88Wanted.IsTestElement
 ---
 
-# Is Test Element
+# Test element
 
-`u` is a test element of `G`: every endomorphism of `G` fixing `u` is an automorphism.
+**Test element.** An element $u$ of a group $G$ is a test element of $G$ if every endomorphism
+$\varphi$ of $G$ with $\varphi(u) = u$ is bijective, that is, an automorphism of $G$.
 
 ## Depends on
 

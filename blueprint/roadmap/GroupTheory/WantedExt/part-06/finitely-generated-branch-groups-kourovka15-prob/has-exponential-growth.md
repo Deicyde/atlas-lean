@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyGeneratedBranchGroupsKourovka15Problem14Wanted.HasExponentialGrowth
 ---
 
-# Has Exponential Growth
+# Groups of exponential growth
 
-`G` has exponential growth: it is finitely generated and every finite generating family has
-growth rate greater than `1`.
+**Groups of exponential growth.** A group $G$ has exponential growth when it is finitely
+generated and every finite generating family $P$ of $G$ has growth rate $\omega(G, P) > 1$.
 
 ## Depends on
 

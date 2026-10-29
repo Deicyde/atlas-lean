@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallMaximalPronormalSecondMaximalKourovka19Problem109Wanted.IsSecondMaximal
 ---
 
-# Is Second Maximal
+# Second maximal subgroup
 
-`K` is a second maximal subgroup: a maximal subgroup of a maximal subgroup of `G`.
+**Second maximal subgroup.** A subgroup $K$ of a group $G$ is second maximal when it is a
+maximal subgroup of a maximal subgroup of $G$: there is a maximal subgroup $M$ of $G$ with
+$K < M$ and no subgroup $L$ of $G$ with $K < L < M$.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Endomorphism Partial Isomorphism Count Kourovka19 Problem20
 
-- [End Partial Iso Count Implies Abelian](end-partial-iso-count-implies-abelian.md)
-- [End Partial Iso Count Implies Abelian refuted](end-partial-iso-count-implies-abelian-re.md)
+- [Kourovka Problem 19.20 (Cameron)](end-partial-iso-count-implies-abelian.md)
+- [Equal endomorphism and partial isomorphism counts do not force commutativity](end-partial-iso-count-implies-abelian-re.md)

@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.WeakLpConvergenceOfAeConvergenceWanted.tendsto_integral_mul_of_ae_tendsto_of_eLpNorm_bounded
 ---
 
-# Weak Lp Convergence Of Ae Convergence Wanted
+# Bounded almost everywhere convergent sequences in $L^p$, $1 < p < \infty$, converge weakly
 
-Let $p\in[1,\infty)$ and $\{f_n\}_{n=1}^\infty$ a sequence of functions in $L^p(\mathbb{R})$
-such that $f_n\to f$ a.e. and $f\in L^p(\mathbb{R})$.
+**Bounded almost everywhere convergent sequences in $L^p$, $1 < p < \infty$, converge
+weakly.** Let $1 < p < \infty$ and let $q$ be the conjugate exponent, $1/p + 1/q = 1$. Let $f$
+and $f_0, f_1, f_2, \dots$ be real-valued functions in $L^p(\mathbb{R})$ such that $f_n \to f$
+almost everywhere and $\sup_n \|f_n\|_{L^p} < \infty$. Then $f_n$ converges weakly to $f$: for
+every $g \in L^q(\mathbb{R})$,
 
-If $p\in(1,\infty)$, prove that if $\sup_n \|f_n\|_{L^p}\lt \infty$, then $f_n$ converges to $f$
-weakly, i.e. for any $g\in L^q(\mathbb{R})$ with $q=\dfrac{p}{p-1}$,
-\[
+$$
 \lim_{n\to\infty}\int_{\mathbb{R}} f_n g\,dx=\int_{\mathbb{R}} f g\,dx.
-\]
+$$
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRootsUniqueUpToConjugacy
 ---
 
-# Braid Roots Unique Up To Conjugacy
+# Makanin's root-uniqueness question for braid groups
 
-Kourovka 10.23 (G. S. Makanin): extraction of roots in braid groups is unique up to
-conjugation: if `α ^ k = β ^ k` in `Bₙ` for some `k ≥ 1`, then `α` and `β` are conjugate.
+**Makanin's root-uniqueness question for braid groups.** The statement that for every natural
+number $n$ and every integer $k \ge 1$, any two elements $\alpha, \beta$ of the braid group $B_n$ on
+$n$ strands with $\alpha^k = \beta^k$ are conjugate in $B_n$. This is Kourovka Problem 10.23
+(G. S. Makanin).
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Braid Group](braid-group.md)
-- [Braid Relators](braid-relators.md)
+- [The braid group $B_n$ by Artin's presentation](braid-group.md)
+- [Artin's braid relators](braid-relators.md)
 
 ## Sources
 

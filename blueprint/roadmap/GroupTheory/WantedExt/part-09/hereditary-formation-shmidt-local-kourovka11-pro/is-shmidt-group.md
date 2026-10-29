@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditaryFormationShmidtLocalKourovka11Problem91Wanted.IsShmidtGroup
 ---
 
-# Is Shmidt Group
+# Shmidt groups
 
-`G` is a Shmidt group: a finite non-nilpotent group all of whose proper subgroups are
-nilpotent.
+**Shmidt groups.** A group $G$ is a Shmidt group if it is finite and not nilpotent, but every
+proper subgroup of $G$ is nilpotent.
 
 ## Depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EngelElementLengthPolynomialKourovka11Problem88Wanted.IsEngel
 ---
 
-# Is Engel
+# Bounded Engel element
 
-`g` is a (bounded) Engel element: `[h, g; l] = 1` for all `h ∈ G`, for some `l ≥ 1`.
+**Bounded Engel element.** An element $g$ of a group $G$ is an Engel element if there is an
+$l \ge 1$ such that $[h, g; l] = 1$ for every $h \in G$, where $[h, g; 0] = h$,
+$[h, g; i + 1] = [[h, g; i], g]$ and $[x, y] = x^{-1} y^{-1} x y$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Engel Comm](engel-comm.md)
+- [Iterated commutators for Engel lengths](engel-comm.md)
 
 ## Sources
 

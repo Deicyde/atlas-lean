@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Modal.Derivable.valid
 ---
 
-# Soundness
+# Soundness of modal Hilbert systems for Kripke models
 
-**Soundness**: if every extra axiom is valid in a Kripke model, every theorem of `K ⊕ Λ` is
-valid there.
+**Soundness of modal Hilbert systems for Kripke models.** Let $\Lambda$ be a set of modal
+formulas and $M$ a Kripke model in which every formula of $\Lambda$ is valid. Then every formula
+derivable in $K \oplus \Lambda$ (from the propositional axioms, the distribution axiom and the
+members of $\Lambda$ by modus ponens and necessitation) is valid in $M$, that is, it holds at
+every world of $M$.
 
 ## Depends on
 
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
 - [Axiom K](../kripke/axiom-k.md)
-- [Neg](../kripke/neg.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Negation of modal formulas](../kripke/neg.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 - [Valid axiom K](../kripke/valid-axiom-k.md)
 
 ## Sources

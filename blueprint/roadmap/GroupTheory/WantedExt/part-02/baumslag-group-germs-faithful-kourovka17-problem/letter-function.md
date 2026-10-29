@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BaumslagGroupGermsFaithfulKourovka17Problem99Wanted.letterFunction
 ---
 
-# Letter Function
+# Letter functions for Baumslag's group
 
-The function attached to a letter: `a ↦ f(x) = 2x`, `a⁻¹ ↦ x/2`, `b ↦ g(x) = 2^x` and
-`b⁻¹ ↦ log₂ x` (the inverse of `g` for large `x`, which is all that matters for germs at `+∞`).
+**Letter functions for Baumslag's group.** To each letter of the free group on $a, b$ attach a
+function $\mathbb{R} \to \mathbb{R}$: $a$ gives $f(x) = 2x$, $a^{-1}$ gives $x/2$, $b$ gives
+$g(x) = 2^x$ and $b^{-1}$ gives $\log_2 x$.
+
+On $(0, \infty)$ the function $\log_2 x$ is the inverse of $g$, which is all that matters for germs
+at $+\infty$.
 
 ## Depends on
 

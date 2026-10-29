@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CoverAvoidIntersectionCoreKourovka19Problem38Wanted.IsFrattiniChiefFactor
 ---
 
-# Is Frattini Chief Factor
+# Frattini chief factor
 
-A chief factor `A / B` is a Frattini chief factor: `A / B ≤ Φ(G / B)`, that is, `A` lies in
-every maximal subgroup of `G` containing `B`.
+**Frattini chief factor.** For subgroups $A$ and $B$ of a group $G$, $A/B$ is a Frattini chief
+factor of $G$ when $A/B$ is a chief factor of $G$ and $A$ is contained in every maximal subgroup
+of $G$ that contains $B$; equivalently, $A/B \le \Phi(G/B)$, where $\Phi$ denotes the Frattini
+subgroup.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Chief Factor](../../part-10/kourovka-notebook-shared/is-chief-factor.md)
+- [Chief factors](../../part-10/kourovka-notebook-shared/is-chief-factor.md)
 
 ## Sources
 

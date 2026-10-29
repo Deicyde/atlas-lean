@@ -4,51 +4,51 @@ navigation: module
 
 # Omega Word
 
-- [Satisfies](satisfies.md)
-- [Satisfies At](satisfies-at.md)
-- [Language](language.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
+- [Satisfaction at a position](satisfies-at.md)
+- [Language of an LTL formula](language.md)
 
 ## Positions and suffixes
 
-- [Satisfies At zero](satisfies-at-zero.md)
-- [Satisfies At drop](satisfies-at-drop.md)
+- [Satisfaction at position zero](satisfies-at-zero.md)
+- [Satisfaction on a suffix](satisfies-at-drop.md)
 
 ## Primitive connectives
 
-- [Atom iff](atom-iff.md)
+- [Satisfaction of an atom](atom-iff.md)
 
 ## Derived propositional connectives
 
-- [Bot iff](bot-iff.md)
+- [Falsity is never satisfied](bot-iff.md)
 
 ## Derived temporal operators
 
-- [Eventually iff](eventually-iff.md)
-- [Release iff](release-iff.md)
+- [Semantics of eventually](eventually-iff.md)
+- [Semantics of release](release-iff.md)
 
 ## Duality
 
-- [Not next](not-next.md)
+- [Next is self-dual](not-next.md)
 
 ## Expansion laws
 
-- [Until expansion](until-expansion.md)
-- [Release expansion](release-expansion.md)
+- [Expansion law for until](until-expansion.md)
+- [Expansion law for release](release-expansion.md)
 
 ## Idempotence and recurrence
 
-- [Always always](always-always.md)
-- [Always eventually iff](always-eventually-iff.md)
-- [Eventually always iff](eventually-always-iff.md)
+- [Idempotence of always](always-always.md)
+- [Always eventually means infinitely often](always-eventually-iff.md)
+- [Eventually always means from some point on](eventually-always-iff.md)
 
 ## Positional forms
 
-- [Satisfies At atom](satisfies-at-atom.md)
+- [Satisfaction of an atom at a position](satisfies-at-atom.md)
 
 ## Relabelling letters
 
-- [Satisfies map](satisfies-map.md)
+- [Relabelling the letters of an ω-word](satisfies-map.md)
 
 ## Languages
 
-- [Mem language](mem-language.md)
+- [Membership in the language of a formula](mem-language.md)

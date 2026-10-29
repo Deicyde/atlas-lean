@@ -6,11 +6,11 @@ proof: formalized
 lean: MeasureTheory.isPiSystem_piIic
 ---
 
-# Is Pi System pi Iic
+# Lower orthants form a π-system
 
-The collection of `d`-dimensional boxes of the form `∏ᵢ Iic (aᵢ)` is a
-π-system in `Fin d → ℝ`: finite intersections of such boxes are again of
-this form.
+**Lower orthants form a π-system.** For $a \in \mathbb{R}^d$ let
+$L_a = \prod_{i=1}^d (-\infty, a_i]$. If two such boxes $L_a$ and $L_b$ intersect, then their
+intersection is $L_c$ for some $c \in \mathbb{R}^d$.
 
 ## Depends on
 

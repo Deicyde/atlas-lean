@@ -24,8 +24,8 @@ This node has no prerequisites.
 
 - [Symbol-forgetting transition graph of a Büchi automaton](step.md)
 - [Finite set of start states](start-fin.md)
-- [Trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)
-- [Trans Gen Fin From](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin-from.md)
+- [Elements reachable from a point](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)
+- [Elements reachable from a finite set of sources](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin-from.md)
 
 ## Sources
 

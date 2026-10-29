@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbelianLocallyQuaternionProductKourovka18Problem95Wanted.abelianLocallyQuaternionProductSoluble_holds
 ---
 
-# Abelian Locally Quaternion Product Soluble holds
+# Products of abelian and locally quaternion groups are soluble
 
-Resolved true: the Kourovka Archive answers 18.95 "Yes, it is" (B. Amberg and Ya. Sysak, 2017,
-Corollary 1.2: a product of an abelian subgroup and a locally quaternion subgroup is soluble).
+**Products of abelian and locally quaternion groups are soluble.** Let $G$ be a group with
+subgroups $A$ and $B$ such that $A$ is abelian, $B$ is locally quaternion, and $G = AB$, that is,
+every element of $G$ is a product $ab$ with $a \in A$ and $b \in B$. Then $G$ is soluble.
 
 ## Depends on
 
-- [Abelian Locally Quaternion Product Soluble](abelian-locally-quaternion-product-solub.md)
+- [Kourovka Problem 18.95 (Sozutov)](abelian-locally-quaternion-product-solub.md)
 
 ## Sources
 

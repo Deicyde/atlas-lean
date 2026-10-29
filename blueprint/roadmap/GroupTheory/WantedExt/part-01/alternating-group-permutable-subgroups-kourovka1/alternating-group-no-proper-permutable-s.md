@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AlternatingGroupPermutableSubgroupsKourovka17Problem37Wanted.alternatingGroupNoProperPermutableSubgroups
 ---
 
-# Alternating Group No Proper Permutable Subgroups
+# Kourovka Problem 17.37 on permutable subgroups of alternating groups
 
-Kourovka 17.37 (A. F. Vasil'ev, A. N. Skiba): there is `n` such that for every `m > n` the
-alternating group `A_m` has no `A_m`-permutable subgroups other than `1` and `A_m` (which are
-always `A_m`-permutable).
+**Kourovka Problem 17.37 on permutable subgroups of alternating groups.** This proposition
+asserts that there is a natural number $n$ such that for every $m > n$, every $A_m$-permutable
+subgroup of the alternating group $A_m$ is either the trivial subgroup or $A_m$ itself. Here a
+subgroup $A$ of a group $G$ is $G$-permutable when for every subgroup $B$ of $G$ there is $x \in G$
+with $A B^x = B^x A$, where $B^x = x B x^{-1}$ is the conjugate of $B$ by $x$ and products of
+subgroups are products of subsets of $G$.
+
+The trivial subgroup and $A_m$ itself are always $A_m$-permutable.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is GPermutable](is-gpermutable.md)
+- [$G$-permutable subgroups](is-gpermutable.md)
 
 ## Sources
 

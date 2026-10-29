@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.NoMoves
 ---
 
-# No Moves
+# Positions with no moves
 
-A position with no moves.
+**Positions with no moves.** In a Kripke model $M$, a game position $p$ has no moves when
+there is no position $q$ such that going from $p$ to $q$ is a move of the model-checking game
+in $M$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A position with no moves.
 
 ## Proof depends on
 
-- [Move](move.md)
+- [Moves of the μ-calculus model-checking game](move.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Unitriangular One Relator Linear Kourovka18 Problem86
 
-- [Relator](relator.md)
-- [One Relator Group](one-relator-group.md)
-- [One Relator Group Is Linear](one-relator-group-is-linear.md)
-- [One Relator Group Is Linear holds](one-relator-group-is-linear-holds.md)
+- [The relator of Kourovka Problem 18.86](relator.md)
+- [The one-relator group of Kourovka Problem 18.86](one-relator-group.md)
+- [Kourovka Problem 18.86 (statement)](one-relator-group-is-linear.md)
+- [The one-relator group of Kourovka Problem 18.86 is linear](one-relator-group-is-linear-holds.md)

@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IntegralGroupRingJordanDecompositionKourovka16Problem104Wanted.finitelyManyTwoGroupsMJDNotAJD
 ---
 
-# Finitely Many Two Groups MJDNot AJD
+# Kourovka Problem 16.104
 
-Kourovka 16.104 (A. W. Hales, I. B. S. Passi): there are only finitely many isomorphism classes
-of finite `2`-groups `G` such that `ℤ[G]` has MJD but not AJD; equivalently their orders are
-bounded.
+**Kourovka Problem 16.104.** The proposition that there is a natural number $B$ such that
+every finite $2$-group $G$ whose integral group ring $\mathbb{Z}[G]$ has the multiplicative Jordan
+decomposition property (MJD) but not the additive Jordan decomposition property (AJD) has order
+at most $B$.
+
+A. W. Hales and I. B. S. Passi asked whether only finitely many isomorphism classes of finite
+$2$-groups $G$ have MJD but not AJD for $\mathbb{Z}[G]$; a bound on the orders is equivalent.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has AJD](has-ajd.md)
-- [Has MJD](has-mjd.md)
+- [Additive Jordan decomposition property](has-ajd.md)
+- [Multiplicative Jordan decomposition property](has-mjd.md)
 
 ## Sources
 

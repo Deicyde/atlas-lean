@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyGeneratedBranchGroupsKourovka15Problem14Wanted.fgNonamenableBranchGroup_holds
 ---
 
-# Fg Nonamenable Branch Group holds
+# Non-amenable branch groups exist (Kourovka 15.14(a))
 
-Resolved true: the Kourovka Archive answers 15.14(a) "Such groups do exist" (Sidki and Wilson):
-their finitely generated branch groups contain free subgroups of rank `2` and so are non-amenable.
+**Non-amenable branch groups exist (Kourovka 15.14(a)).** There is a finitely generated branch
+group that is not amenable.
+
+The Kourovka Archive answers 15.14(a) "Such groups do exist" (Sidki and Wilson): their finitely
+generated branch groups contain free subgroups of rank $2$ and so are non-amenable.
 
 ## Depends on
 
-- [Fg Nonamenable Branch Group](fg-nonamenable-branch-group.md)
+- [Kourovka Problem 15.14(a): non-amenable branch groups](fg-nonamenable-branch-group.md)
 
 ## Sources
 

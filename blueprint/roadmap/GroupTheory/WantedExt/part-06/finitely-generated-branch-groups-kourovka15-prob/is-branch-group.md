@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tree Vertex](tree-vertex.md)
-- [Rigid Level Stabilizer](rigid-level-stabilizer.md)
+- [Vertices of a spherically homogeneous rooted tree (Kourovka 15.14 version)](tree-vertex.md)
+- [Rigid level stabilizers (Kourovka 15.14 version)](rigid-level-stabilizer.md)
 
 ## Sources
 

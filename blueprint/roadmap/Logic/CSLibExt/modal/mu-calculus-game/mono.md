@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.ClosedAt.mono
 ---
 
-# Mono
+# Closedness is monotone in the depth
 
-Closedness is monotone in the depth: more enclosing binders can only bind
-more variables.
+**Closedness is monotone in the depth.** Let $\varphi$ be a μ-calculus formula and let
+$d \le d'$ be natural numbers. If $\varphi$ is closed at depth $d$ (every free variable of
+$\varphi$ is less than $d$), then $\varphi$ is closed at depth $d'$: more enclosing binders can
+only bind more variables.
 
 ## Depends on
 
-- [Closed At](closed-at.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas closed at depth $d$](closed-at.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

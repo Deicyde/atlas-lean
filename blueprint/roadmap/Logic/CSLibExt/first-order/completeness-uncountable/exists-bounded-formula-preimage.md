@@ -6,30 +6,34 @@ proof: formalized
 lean: Cslib.Logic.FOL.exists_boundedFormula_preimage
 ---
 
-# Exists bounded Formula preimage
+# Bounded formulas lift to the finite-symbol sublanguage
 
-Every bounded formula whose symbols lie in `F` is the image of a formula of the
-sublanguage. Source: H.-D. Ebbinghaus, J. Flum, and W. Thomas, *Mathematical Logic*, 2nd ed.,
-Springer 1994, Chapter V.
+**Bounded formulas lift to the finite-symbol sublanguage.** Let $F$ be a finite set of
+formulas of a first-order language $L$ with free variables in $\mathbb{N}$, and let $L_F$ be the
+sublanguage of $L$ on the symbols occurring in $F$, with inclusion $\iota : L_F \to L$. Every
+bounded formula $\varphi$ of $L$ with free variables in $\mathbb{N}$ and $n$ bound variables, each
+of whose symbols occurs in some formula of $F$, is the image under $\iota$ of a bounded formula
+of $L_F$ with free variables in $\mathbb{N}$ and $n$ bound variables.
 
 ## Depends on
 
-- [Formula Symbol Finset](formula-symbol-finset.md)
-- [Sub Language](sub-language.md)
-- [Sub Language Incl](sub-language-incl.md)
-- [Symbols Of](symbols-of.md)
+- [Finite set of symbols of a formula](formula-symbol-finset.md)
+- [Sublanguage of a finite set of formulas](sub-language.md)
+- [Inclusion of the sublanguage of a finite set of formulas](sub-language-incl.md)
+- [Symbols of a finite set of formulas](symbols-of.md)
 
 ## Proof depends on
 
-- [Exists term preimage](exists-term-preimage.md)
-- [Formula Symbol Finset imp subset left](formula-symbol-finset-imp-subset-left.md)
-- [Formula Symbol Finset imp subset right](formula-symbol-finset-imp-subset-right.md)
-- [Mem formula Symbol Finset rel](mem-formula-symbol-finset-rel.md)
-- [Term Symbol Finset](term-symbol-finset.md)
-- [Term Symbol Finset equal subset left](term-symbol-finset-equal-subset-left.md)
-- [Term Symbol Finset equal subset right](term-symbol-finset-equal-subset-right.md)
-- [Term Symbol Finset rel subset](term-symbol-finset-rel-subset.md)
+- [Terms lift to the finite-symbol sublanguage](exists-term-preimage.md)
+- [Symbols of the antecedent occur in an implication](formula-symbol-finset-imp-subset-left.md)
+- [Symbols of the consequent occur in an implication](formula-symbol-finset-imp-subset-right.md)
+- [The relation symbol of an atomic formula occurs in it](mem-formula-symbol-finset-rel.md)
+- [Finite set of symbols of a term](term-symbol-finset.md)
+- [Symbols of the left side of an equation](term-symbol-finset-equal-subset-left.md)
+- [Symbols of the right side of an equation](term-symbol-finset-equal-subset-right.md)
+- [Symbols of an argument of a relational atomic formula](term-symbol-finset-rel-subset.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- H.-D. Ebbinghaus, J. Flum, and W. Thomas, *Mathematical Logic*, 2nd ed., Springer 1994, Chapter V.

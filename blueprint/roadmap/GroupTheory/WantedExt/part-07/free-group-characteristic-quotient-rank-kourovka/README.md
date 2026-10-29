@@ -4,5 +4,5 @@ navigation: module
 
 # Free Group Characteristic Quotient Rank Kourovka17 Problem62
 
-- [Characteristic Quotient Fewer Generators](characteristic-quotient-fewer-generators.md)
-- [Characteristic Quotient Fewer Generators holds](characteristic-quotient-fewer-generators-2.md)
+- [Kourovka Problem 17.62 (two-generated characteristic quotients of free groups)](characteristic-quotient-fewer-generators.md)
+- [Free groups of rank at least 3 have proper two-generated characteristic quotients](characteristic-quotient-fewer-generators-2.md)

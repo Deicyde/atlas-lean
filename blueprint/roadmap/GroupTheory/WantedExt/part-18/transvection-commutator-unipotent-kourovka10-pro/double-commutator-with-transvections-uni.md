@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.doubleCommutatorWithTransvectionsUnipotent
 ---
 
-# Double Commutator With Transvections Unipotent
+# Petechuk's double commutator question (Kourovka 10.46)
 
-Kourovka 10.46 (V. M. Petechuk): for every nontrivial associative ring `R` with identity, every
-`n ≥ 3` and every `σ ∈ GLₙ(R)` there are transvections `τ₁, τ₂` such that `[[σ, τ₁], τ₂]` is
-unipotent (`[[σ, τ₁], τ₂] - 1` is nilpotent), with `[x, y] = x y x⁻¹ y⁻¹`. Transvections are read as
-elementary transvections.
+**Petechuk's double commutator question (Kourovka 10.46).** The statement that for every
+nontrivial associative ring $R$ with identity, every $n \ge 3$ and every
+$\sigma \in \mathrm{GL}_n(R)$ there are elementary transvections
+$\tau_1, \tau_2 \in \mathrm{GL}_n(R)$ such that $[[\sigma, \tau_1], \tau_2]$ is unipotent, that
+is, $[[\sigma, \tau_1], \tau_2] - 1$ is a nilpotent matrix, where $[x, y] = x y x^{-1} y^{-1}$.
+
+In the problem, transvections are read as elementary transvections.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Elementary Transvection](is-elementary-transvection.md)
+- [Elementary transvection](is-elementary-transvection.md)
 
 ## Sources
 

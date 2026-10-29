@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.LTL.Formula.bot
 ---
 
-# Bot
+# Falsity in LTL
 
-Falsity as the negation of truth.
+**Falsity in LTL.** The LTL formula $\bot$ (falsity) is defined as $\neg\top$, the negation
+of the truth constant $\top$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of linear temporal logic](formula.md)
 
 ## Sources
 

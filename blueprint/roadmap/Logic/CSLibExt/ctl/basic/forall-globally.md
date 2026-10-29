@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.CTL.Formula.forallGlobally
 ---
 
-# Forall Globally
+# The CTL operator $\mathrm{AG}$
 
-`AG φ`: every reachable state satisfies `φ`.
+**The CTL operator $\mathrm{AG}$.** For a CTL formula $\varphi$, the formula
+$\mathrm{AG}\,\varphi$ is $\neg\,\mathrm{EF}\,\neg\varphi$. It holds at a state exactly when
+every state reachable from it satisfies $\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Proof depends on
 
-- [Exists Finally](exists-finally.md)
+- [Exists finally](exists-finally.md)
 
 ## Sources
 

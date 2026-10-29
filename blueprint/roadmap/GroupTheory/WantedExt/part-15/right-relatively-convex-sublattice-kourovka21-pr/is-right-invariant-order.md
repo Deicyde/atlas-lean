@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.IsRightInvariantOrder
 ---
 
-# Is Right Invariant Order
+# Right-invariant linear order
 
-The linear order `o` on `G` is a right order: `a ≤ b` implies `a c ≤ b c`.
+**Right-invariant linear order.** A linear order $\le$ on a group $G$ is right-invariant (a
+right order) when $a \le b$ implies $ac \le bc$ for all $a, b, c \in G$.
 
 ## Depends on
 

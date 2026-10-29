@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.tribonacciInt_neg_ten
 ---
 
-# Tribonacci Int neg ten
+# The Tribonacci number of index $-10$
 
-The backward extension has `T₋₁₀ = 5`. This value explains why Theorem 1
-must remain natural-indexed: `4! + 1 = 5²` would be a two-sided counterexample.
+**The Tribonacci number of index $-10$.** Let $(T_n)_{n \in \mathbb{Z}}$ be the two-sided
+Tribonacci sequence, determined by $T_0 = 0$, $T_1 = T_2 = 1$ and
+$T_{n+3} = T_{n+2} + T_{n+1} + T_n$ for all integers $n$. Then $T_{-10} = 5$.
+
+Since $4! + 1 = 5^2$, the equation $m! + 1 = T_n^2$ has a solution once negative indices $n$ are
+allowed.
 
 ## Depends on
 
-- [Tribonacci Int](../../../MathlibExt/part-12/tribonacci-int/tribonacci-int.md)
+- [Two-sided Tribonacci sequence](../../../MathlibExt/part-12/tribonacci-int/tribonacci-int.md)
 
 ## Sources
 

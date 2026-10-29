@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.IsSurfaceGroup
 ---
 
-# Is Surface Group
+# Surface groups
 
-`G` is a surface group: the fundamental group of a closed aspherical surface, i.e. of an
-orientable closed surface of genus `g ≥ 1` or a non-orientable one of genus `k ≥ 2`, given by the
-standard one-relator presentations.
+**Surface groups.** A group $G$ is a surface group if either $G$ is isomorphic to
+$\langle a_1, b_1, \dots, a_g, b_g \mid [a_1, b_1] \cdots [a_g, b_g] \rangle$ for some $g \ge 1$,
+where $[a, b] = a b a^{-1} b^{-1}$, or $G$ is isomorphic to
+$\langle a_1, \dots, a_k \mid a_1^2 \cdots a_k^2 \rangle$ for some $k \ge 2$.
+
+These are the standard one-relator presentations of the fundamental groups of the closed
+orientable surfaces of genus $g \ge 1$ and the closed non-orientable surfaces of genus $k \ge 2$,
+that is, of the closed aspherical surfaces.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonorientable Surface Relator](nonorientable-surface-relator.md)
-- [Orientable Surface Relator](orientable-surface-relator.md)
+- [Non-orientable surface relator](nonorientable-surface-relator.md)
+- [Orientable surface relator](orientable-surface-relator.md)
 
 ## Sources
 

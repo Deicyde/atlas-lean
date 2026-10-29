@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AutomorphismGroupPrimePowerKourovka18Problem82Wanted.autOrderPrimePowerBound_holds
 ---
 
-# Aut Order Prime Power Bound holds
+# Green's theorem on prime powers dividing the order of the automorphism group (Kourovka 18.82)
 
-Resolved true: the Kourovka Archive answers 18.82 "Yes, there is": J. A. Green (1956) established it
-with `f` independent of `p`, improving Ledermann-Neumann (1956), whose function depended on `p`.
+**Green's theorem on prime powers dividing the order of the automorphism group (Kourovka 18.82).**
+There is a function $f : \mathbb{N} \to \mathbb{N}$, the same for all primes, such that for every
+$n \in \mathbb{N}$, every prime $p$ and every finite group $G$, if $p^{f(n)}$ divides $|G|$ then
+$p^n$ divides $|\mathrm{Aut}(G)|$, where $\mathrm{Aut}(G)$ is the group of automorphisms of $G$.
+
+Ledermann and Neumann (1956) first proved this with a function depending on $p$; J. A. Green (1956)
+obtained a function independent of $p$.
 
 ## Depends on
 
-- [Aut Order Prime Power Bound](aut-order-prime-power-bound.md)
+- [Patne's prime-power divisibility problem (Kourovka 18.82)](aut-order-prime-power-bound.md)
 
 ## Sources
 

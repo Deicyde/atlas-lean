@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.losePlay_succ
 ---
 
-# Lose Play succ
+# The lose play stays at the losing state
 
-The lose play is at `lose` after the first step.
+**The lose play stays at the losing state.** For every fixpoint-free formula $\varphi$,
+world $w$ and natural number $n$, the lose play from $(\varphi, w)$ is at the losing state at
+time $n + 1$.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [Frag Pos](frag-pos.md)
-- [Lose Play](lose-play.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Positions of the totalized fragment game](frag-pos.md)
+- [The lose play](lose-play.md)
 
 ## Sources
 

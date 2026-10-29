@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MaximalHallCompositionFactorsKourovka17Problem92Wanted.IsMaximalHallNonsoluble
 ---
 
-# Is Maximal Hall Nonsoluble
+# Non-soluble groups with Hall maximal subgroups
 
-`G` is non-soluble and all of its maximal subgroups are Hall subgroups.
+**Non-soluble groups with Hall maximal subgroups.** A group $G$ has this property when $G$ is
+not soluble and every maximal subgroup of $G$ is a Hall subgroup.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Hall Subgroup](is-hall-subgroup.md)
+- [Hall subgroup (Kourovka 17.92)](is-hall-subgroup.md)
 
 ## Sources
 

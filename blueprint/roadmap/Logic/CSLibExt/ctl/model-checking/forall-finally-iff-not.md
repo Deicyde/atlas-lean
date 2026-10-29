@@ -6,22 +6,28 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.forallFinally_iff_not
 ---
 
-# Forall Finally iff not
+# Deadlock-correct duality for AF
 
-The deadlock-correct duality for `AF`, the case `φ = ⊤` of
-`forallUntil_iff_not`: the bad target simplifies to `¬φ ∧ ¬EX ⊤`.
+**Deadlock-correct duality for AF.** In a labelled transition system with a valuation of
+atoms, let $\varphi$ be a CTL formula. A state $s$ satisfies $\mathsf{AF}\,\varphi$ if and only
+if $s$ satisfies neither $\mathsf{E}[\neg\varphi \,\mathsf{U}\, (\neg\varphi \wedge
+\neg\mathsf{EX}\,\top)]$ nor $\mathsf{EG}\,\neg\varphi$.
+
+This is the case $\mathsf{A}[\top \,\mathsf{U}\, \varphi]$ of the duality for universal until.
+The formula $\neg\mathsf{EX}\,\top$ holds exactly at deadlocked states, so the first disjunct
+catches finite maximal paths that end at a deadlock without reaching $\varphi$.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
+- [CTL formulas](../basic/formula.md)
 - [Forall Finally](../basic/forall-finally.md)
-- [Satisfies](../basic/satisfies.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
 
 ## Proof depends on
 
-- [Or](../basic/or.md)
-- [Exists Until congr](exists-until-congr.md)
-- [Forall Until iff not](forall-until-iff-not.md)
+- [CTL disjunction](../basic/or.md)
+- [Congruence of existential until in its target](exists-until-congr.md)
+- [Deadlock-correct duality for universal until](forall-until-iff-not.md)
 
 ## Sources
 

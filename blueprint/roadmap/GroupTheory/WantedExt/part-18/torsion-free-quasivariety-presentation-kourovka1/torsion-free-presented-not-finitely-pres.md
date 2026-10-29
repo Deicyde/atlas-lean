@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeQuasivarietyPresentationKourovka18Problem17Wanted.torsionFreePresentedNotFinitelyPresented
 ---
 
-# Torsion Free Presented Not Finitely Presented
+# Kourovka Problem 18.17 (statement)
 
-Kourovka 18.17 (O. V. Belegradek): there is a torsion-free group that is finitely presented in
-the quasivariety of torsion-free groups but not finitely presentable in the variety of all
-groups.
+**Kourovka Problem 18.17 (statement).** The statement that there is a torsion-free group $G$ (no
+element of $G$ other than the identity has finite order) that is finitely presented in the
+quasivariety of torsion-free groups but is not a finitely presented group.
+
+The problem was posed by O. V. Belegradek.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Torsion Free Finitely Presented](is-torsion-free-finitely-presented.md)
+- [Groups finitely presented in the torsion-free quasivariety](is-torsion-free-finitely-presented.md)
 
 ## Sources
 

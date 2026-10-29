@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.KourovkaNotebookShared.IsPrimePartition
 ---
 
-# Is Prime Partition
+# Partitions of the primes
 
-`σ = {σᵢ}` is a partition of the set of all primes into nonempty pairwise disjoint blocks.
+**Partitions of the primes.** A family $\sigma = (\sigma_i)_{i \in I}$ of sets of natural
+numbers is a partition of the primes if every $\sigma_i$ is a nonempty set of primes, $\sigma_i$
+and $\sigma_j$ are disjoint whenever $i \ne j$, and every prime lies in some $\sigma_i$.
 
 ## Depends on
 

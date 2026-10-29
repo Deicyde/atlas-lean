@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.generalizedTribonacci_one_one_one_eq_tribonacciWithInitialValues111
 ---
 
-# Generalized Tribonacci one one one eq tribonacci With Initial Values111
+# Integer and natural Tribonacci sequences with initial values $1, 1, 1$ agree
 
-Initial values `1, 1, 1` recover
-`MetaMathlibExt.tribonacciWithInitialValues111`.
+**Integer and natural Tribonacci sequences with initial values $1, 1, 1$ agree.** For every
+$n \ge 0$, the $n$-th term of the generalized Tribonacci sequence with initial values $1, 1, 1$
+equals the $n$-th term of the Tribonacci sequence of natural numbers with initial values
+$1, 1, 1$, viewed as an integer.
 
 ## Depends on
 
-- [Generalized Tribonacci](generalized-tribonacci.md)
+- [Generalized Tribonacci sequence](generalized-tribonacci.md)
 - [Tribonacci sequence with initial values 1, 1, 1](../../part-12/tribonacci-with-initial-values111.md)
 
 ## Proof depends on
 
-- [Generalized Tribonacci add three](generalized-tribonacci-add-three.md)
+- [Recurrence of the generalized Tribonacci sequence](generalized-tribonacci-add-three.md)
 
 ## Sources
 

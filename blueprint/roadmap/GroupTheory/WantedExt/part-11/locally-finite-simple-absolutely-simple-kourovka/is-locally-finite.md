@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LocallyFiniteSimpleAbsolutelySimpleKourovka11Problem108Wanted.IsLocallyFinite
 ---
 
-# Is Locally Finite
+# Locally finite group
 
-`G` is locally finite: every finitely generated subgroup is finite.
+**Locally finite group.** A group $G$ is locally finite when every subgroup of $G$ generated
+by finitely many elements is finite.
 
 ## Depends on
 

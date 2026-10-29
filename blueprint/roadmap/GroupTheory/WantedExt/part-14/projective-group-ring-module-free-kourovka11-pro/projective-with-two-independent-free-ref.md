@@ -5,17 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree_refuted
 ---
 
-# Projective With Two Independent Free refuted
+# Artamonov's freeness question has a negative answer
 
-Resolved false for the literal statement, with a coefficient ring that is not a field: Jayadevan
-takes `k = 𝔽₂ × 𝔽₂` and the trivial group `G` (so `kG = k`); `P = k² ⊕ (𝔽₂ × 0)` is a finitely
-generated projective `k`-module containing an independent pair, but `|P| = 32` is not a power of
-`4 = |k|`, so `P` is not free. The Kourovka Notebook (21st issue) marks 11.5 solved, "No, not
-always" (AI solution confirmed by D. Segal); the example gives nothing for field coefficients.
+**Artamonov's freeness question has a negative answer.** It is not the case that for every
+commutative ring $k$, every torsion-free almost polycyclic group $G$ (no element $g \ne 1$ of $G$
+has finite order) and every finitely generated projective module $P$ over the group ring $kG$
+containing two elements that are linearly independent over $kG$, the module $P$ is free over $kG$.
+
+Jayadevan's counterexample takes $k = \mathbb{F}_2 \times \mathbb{F}_2$ and the trivial group $G$,
+so that $kG = k$; then $P = k^2 \oplus (\mathbb{F}_2 \times 0)$ is a finitely generated projective
+$k$-module containing an independent pair, but $|P| = 32$ is not a power of $4 = |k|$, so $P$ is
+not free. The Kourovka Notebook (21st issue) marks 11.5 solved, "No, not always" (AI solution
+confirmed by D. Segal); the example gives nothing for field coefficients.
 
 ## Depends on
 
-- [Projective With Two Independent Free](projective-with-two-independent-free.md)
+- [Artamonov's freeness question (Kourovka 11.5)](projective-with-two-independent-free.md)
 
 ## Sources
 

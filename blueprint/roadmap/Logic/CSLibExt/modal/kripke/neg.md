@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Modal.Formula.neg
 ---
 
-# Neg
+# Negation of modal formulas
 
-Negation as implication into falsity.
+**Negation of modal formulas.** The negation of a modal formula $\varphi$ is the formula
+$\neg\varphi := \varphi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Sources
 

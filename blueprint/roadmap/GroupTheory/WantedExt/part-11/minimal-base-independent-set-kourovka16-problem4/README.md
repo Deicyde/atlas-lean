@@ -4,10 +4,10 @@ navigation: module
 
 # Minimal Base Independent Set Kourovka16 Problem45
 
-- [Is Base](is-base.md)
-- [Is Minimal Base](is-minimal-base.md)
-- [Max Minimal Base Size](max-minimal-base-size.md)
-- [Is Independent](is-independent.md)
-- [Max Independent Size](max-independent-size.md)
-- [Max Minimal Base Size Eq Max Independent Size](max-minimal-base-size-eq-max-independent.md)
-- [Max Minimal Base Size Eq Max Independent Size refuted](max-minimal-base-size-eq-max-independent-2.md)
+- [Base of a group action](is-base.md)
+- [Minimal base](is-minimal-base.md)
+- [Maximal size of a minimal base](max-minimal-base-size.md)
+- [Independent subset of a group](is-independent.md)
+- [Maximal size of an independent set](max-independent-size.md)
+- [Cameron's question on minimal bases and independent sets](max-minimal-base-size-eq-max-independent.md)
+- [Kourovka Problem 16.45 has a negative answer](max-minimal-base-size-eq-max-independent-2.md)

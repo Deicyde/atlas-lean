@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Modal.Consistent
 ---
 
-# Consistent
+# Consistency relative to a normal modal logic
 
-`Γ` is consistent relative to `K ⊕ Λ`: it does not deduce `⊥`.
+**Consistency relative to a normal modal logic.** For sets of formulas $\Lambda$ and
+$\Gamma$, the set $\Gamma$ is consistent relative to $K \oplus \Lambda$ when $\bot$ is not
+deducible from $\Gamma$ in $K \oplus \Lambda$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Deduces](../hilbert/deduces.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
 
 ## Sources
 

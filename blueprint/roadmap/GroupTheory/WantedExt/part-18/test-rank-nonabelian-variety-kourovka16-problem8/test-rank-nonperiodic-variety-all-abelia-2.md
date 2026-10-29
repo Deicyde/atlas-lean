@@ -23,7 +23,7 @@ https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/kourovka-ma
 
 ## Depends on
 
-- [Test Rank Nonperiodic Variety All Abelian](test-rank-nonperiodic-variety-all-abelia.md)
+- [Timoshenko's test rank question, part (b)](test-rank-nonperiodic-variety-all-abelia.md)
 
 ## Sources
 

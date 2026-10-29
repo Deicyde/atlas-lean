@@ -5,16 +5,25 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LargeNormalSubsetSquareKourovka20Problem74Wanted.finitelyManyPSL2WithLargeNormalSubset_holds
 ---
 
-# Finitely Many PSL2 With Large Normal Subset holds
+# Pyber's conjecture for $\mathrm{PSL}(2, p)$ holds
 
-Resolved true: Skresanov (Bull. London Math. Soc. 57 (2025), Corollary 3) proves that in a finite
-simple group of Lie type of bounded rank every inverse-closed normal subset `A` with `|A| > |G| /
-log₂ |G|` satisfies `A² = G` once `|G|` is large, and notes that this settles the groups `PSL(2,
-p)`; the 21st issue of the Kourovka Notebook records 20.74(b) as proved for the groups `PSL(2, p)`.
+**Pyber's conjecture for $\mathrm{PSL}(2, p)$ holds.** There is a natural number $N$ such that for
+every prime $p$ the following holds. Let $G = \mathrm{PSL}(2, p)$ be the quotient of
+$\mathrm{SL}(2, \mathbb{Z}/p\mathbb{Z})$ by its center. If $G$ has a subset $S$ with
+$g s g^{-1} \in S$ and $s^{-1} \in S$ for all $g \in G$ and $s \in S$, with more than
+$|G| / \log_2 |G|$ elements, and with $S^2 = \{st : s, t \in S\}$ different from $G$, then
+$p \le N$. In other words, only finitely many groups $\mathrm{PSL}(2, p)$ with $p$ prime have such
+a subset.
+
+Skresanov (Bull. London Math. Soc. 57 (2025), Corollary 3) proves that in a finite simple group $G$
+of Lie type of bounded rank every inverse-closed normal subset $A$ with $|A| > |G| / \log_2 |G|$
+satisfies $A^2 = G$ once $|G|$ is large, and notes that this settles the groups
+$\mathrm{PSL}(2, p)$; the 21st issue of the Kourovka Notebook records 20.74(b) as proved for the
+groups $\mathrm{PSL}(2, p)$.
 
 ## Depends on
 
-- [Finitely Many PSL2 With Large Normal Subset](finitely-many-psl2-with-large-normal-sub.md)
+- [Pyber's conjecture for $\mathrm{PSL}(2, p)$ (Kourovka 20.74(b))](finitely-many-psl2-with-large-normal-sub.md)
 
 ## Sources
 

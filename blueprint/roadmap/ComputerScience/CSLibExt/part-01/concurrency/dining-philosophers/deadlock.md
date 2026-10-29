@@ -13,7 +13,7 @@ a protocol, exactly when no philosopher can move.
 
 ## Depends on
 
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
 
 ## Sources
 

@@ -2,10 +2,10 @@
 navigation: transparent
 ---
 
-# Group Ring Right Ideal Shared to Integral Group Ring Jordan Decomposition Kourovka16 Problem104
+# Augmentation right ideal of a subset to Integral Group Ring Jordan Decomposition Kourovka16 Problem104
 
-- [Group Ring Right Ideal Shared](augmentation-right-ideal.md)
-- [Group Variety Shared](is-locally-finite-variety.md)
+- [Augmentation right ideal of a subset](augmentation-right-ideal.md)
+- [Locally finite variety](is-locally-finite-variety.md)
 - [Hall Group Self Extension Kourovka12 Problem44](hall-group-self-extension-kourovka12-problem44-w/README.md)
 - [Hall Maximal Pronormal Second Maximal Kourovka19 Problem109](hall-maximal-pronormal-second-maximal-kourovka19/README.md)
 - [Hall Overgroup CPi DPi Kourovka17 Problem44](hall-overgroup-cpi-dpi-kourovka17-problem44-want/README.md)

@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.LTL.PropFormula.toLTL
 ---
 
-# To LTL
+# Propositional formulas as LTL formulas
 
-A propositional formula as an LTL formula.
+**Propositional formulas as LTL formulas.** The translation of propositional formulas into LTL
+formulas is defined by recursion: an atom $a$ goes to the LTL atom $a$, truth goes to the LTL
+truth constant $\top$, $\neg\varphi$ goes to the LTL negation of the translation of $\varphi$, and
+$\varphi \wedge \psi$ goes to the LTL conjunction of the translations of $\varphi$ and $\psi$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Prop Formula](prop-formula.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Propositional formulas](prop-formula.md)
 
 ## Sources
 

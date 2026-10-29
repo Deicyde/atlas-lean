@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BranchGroupInfiniteIndexMaximalKourovka15Problem15Wanted.rigidVertexStabilizer
 ---
 
-# Rigid Vertex Stabilizer
+# Rigid vertex stabilizer (Kourovka 15.15)
 
-The rigid vertex stabilizer of `v` for an action `ρ` on the tree, as a set: the elements whose
-support (the set of vertices they move) lies in the subtree rooted at `v`.
+**Rigid vertex stabilizer (Kourovka 15.15).** Let $\rho$ be a homomorphism from a group $G$ to
+the permutations of the vertices of the tree with branching sequence $m$, and let $v$ be a vertex.
+The rigid vertex stabilizer of $v$ is the set of $g \in G$ such that $\rho(g)$ fixes every vertex
+$w$ of which $v$ is not a prefix, that is, every vertex outside the subtree rooted at $v$.
 
 ## Depends on
 
-- [Tree Vertex](tree-vertex.md)
+- [Vertices of the spherically homogeneous rooted tree (Kourovka 15.15)](tree-vertex.md)
 
 ## Sources
 

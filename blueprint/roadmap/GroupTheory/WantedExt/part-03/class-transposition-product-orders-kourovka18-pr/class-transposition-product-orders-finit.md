@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassTranspositionProductOrdersKourovka18Problem48Wanted.classTranspositionProductOrdersFinite
 ---
 
-# Class Transposition Product Orders Finite
+# Claim of Kourovka Problem 18.48
 
-Kourovka 18.48 (S. Kohl): only finitely many positive integers occur as orders of products of
-two class transpositions.
+**Claim of Kourovka Problem 18.48.** Only finitely many positive integers occur as orders of
+products $\sigma\tau$ of two class transpositions $\sigma$ and $\tau$ of $\mathbb{Z}$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Class Transposition](is-class-transposition.md)
+- [Class transpositions of the integers](is-class-transposition.md)
 
 ## Sources
 

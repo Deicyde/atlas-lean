@@ -4,8 +4,8 @@ navigation: module
 
 # Reduced Incidence Algebra Domain Kourovka13 Problem29
 
-- [Inc Mul](inc-mul.md)
-- [Is In A](is-in-a.md)
-- [Is Invariant](is-invariant.md)
-- [Invariant Incidence Algebra Is Domain](invariant-incidence-algebra-is-domain.md)
-- [Invariant Incidence Algebra Is Domain holds](invariant-incidence-algebra-is-domain-ho.md)
+- [Product of the reduced incidence algebra](inc-mul.md)
+- [Elements of the reduced incidence algebra](is-in-a.md)
+- [Invariant functions on finite subsets](is-invariant.md)
+- [Cameron's conjecture on invariant incidence algebras (Kourovka 13.29)](invariant-incidence-algebra-is-domain.md)
+- [Cameron's conjecture on invariant incidence algebras holds (Pouzet)](invariant-incidence-algebra-is-domain-ho.md)

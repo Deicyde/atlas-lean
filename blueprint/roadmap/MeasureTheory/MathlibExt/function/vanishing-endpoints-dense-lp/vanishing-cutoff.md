@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff
 ---
 
-# Vanishing Cutoff
+# Vanishing cutoff factor
 
-The shared clipped piecewise-linear cutoff factor, zero at `a` and `b`.
-For `δ > 0`, it equals `1` on `[a + δ, b - δ]`; this plateau is nonempty
-when `2 * δ ≤ b - a`. At `δ = 0`, the factor is identically zero.
-This compatibility name retains the existing `L^p` API.
+**Vanishing cutoff factor.** For real numbers $a$, $b$, $\delta$ and $x$, the value at $x$
+of the vanishing cutoff factor with endpoints $a$, $b$ and width $\delta$ is
+$\max\bigl(0, \min\bigl(1, \min((x - a)/\delta, (b - x)/\delta)\bigr)\bigr)$, where division
+by $0$ is read as $0$.
+
+It vanishes at $a$ and at $b$. For $\delta > 0$ it equals $1$ on $[a + \delta, b - \delta]$,
+an interval that is nonempty when $2\delta \le b - a$. At $\delta = 0$ it is identically
+zero.
 
 ## Depends on
 

@@ -5,32 +5,41 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.canonicalNext
 ---
 
-# Canonical Next
+# Canonical next move induced by a bespoke strategy
 
-The canonical next move induced by a bespoke strategy: at a `pos` position
-with a game move, follow the bespoke strategy at Verifier-owned positions
-(projected back into the arena by `fragOfGamePos`) and an arbitrary legal
-embedded move at Refuter-owned positions; at a terminal `pos` position,
-move to the absorbing `win`/`lose` state according to `TerminalWin`;
-`win`/`lose` loop.
+**Canonical next move induced by a bespoke strategy.** Let $M$ be a Kripke model,
+$\mathit{env}$ an environment and $\sigma$ a Verifier strategy for the model-checking game on
+$M$. Write $\langle \psi, v \rangle$ for the game position with the embedding of a
+fixpoint-free formula $\psi$, the world $v$ and the empty binder stack. The canonical next move
+is the map on positions of the fragment arena defined as follows. The absorbing states
+$\mathrm{win}$ and $\mathrm{lose}$ are sent to themselves. A fragment position $(\varphi, w)$
+such that $\langle \varphi, w \rangle$ has a move to some $\langle \varphi', w' \rangle$ is
+sent, if Verifier owns $\langle \varphi, w \rangle$, to the projection into the fragment arena
+of the position that $\sigma$ chooses there (an embedded position $\langle \varphi', w' \rangle$
+projects to $(\varphi', w')$, every other game position to $\mathrm{lose}$), and otherwise to a
+fragment position $(\varphi', w')$ chosen, by the axiom of choice, among those with a move from
+$\langle \varphi, w \rangle$ to $\langle \varphi', w' \rangle$. A fragment position
+$(\varphi, w)$ with no such move is sent to $\mathrm{win}$ if $\langle \varphi, w \rangle$
+satisfies the terminal winning condition for Verifier in environment $\mathit{env}$, and to
+$\mathrm{lose}$ otherwise.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Frag Pos](frag-pos.md)
-- [Strategy](strategy.md)
+- [Positions of the totalized fragment game](frag-pos.md)
+- [Verifier strategy](strategy.md)
 
 ## Proof depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
 - [Game Position](game-position.md)
-- [Move](move.md)
-- [Owner](owner.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Owner of a game position](owner.md)
 - [Player](player.md)
-- [Terminal Win](terminal-win.md)
-- [Frag Of Game Pos](frag-of-game-pos.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Winner at a terminal position](terminal-win.md)
+- [Projection of game positions onto the fragment arena](frag-of-game-pos.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

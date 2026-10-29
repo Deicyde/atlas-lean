@@ -4,5 +4,5 @@ navigation: module
 
 # Order Divisibility Bijection Cyclic Kourovka18 Problem1
 
-- [Order Divisibility Bijection To Cyclic](order-divisibility-bijection-to-cyclic.md)
-- [Order Divisibility Bijection To Cyclic holds](order-divisibility-bijection-to-cyclic-h.md)
+- [Kourovka Problem 18.1 (statement)](order-divisibility-bijection-to-cyclic.md)
+- [Amiri's theorem (Kourovka Problem 18.1)](order-divisibility-bijection-to-cyclic-h.md)

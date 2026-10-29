@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DPiHallIntersectionKourovka18Problem31Wanted.IsMaximalPiSubgroup
 ---
 
-# Is Maximal Pi Subgroup
+# Maximal π-subgroups (Kourovka 18.31)
 
-`H` is a maximal `π`-subgroup: a `π`-subgroup contained in no larger `π`-subgroup.
+**Maximal π-subgroups (Kourovka 18.31).** Let $\pi$ be a set of natural numbers. A subgroup
+$H$ of a group $G$ is a maximal $\pi$-subgroup when it is a $\pi$-subgroup and every
+$\pi$-subgroup $K$ of $G$ containing $H$ equals $H$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pi Subgroup](is-pi-subgroup.md)
+- [π-subgroups](is-pi-subgroup.md)
 
 ## Sources
 

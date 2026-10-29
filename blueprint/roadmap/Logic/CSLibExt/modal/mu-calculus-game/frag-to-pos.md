@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.fragToPos
 ---
 
-# Frag To Pos
+# Game position of a fragment position
 
-Extract the game position from a `pos` position, with default `p0` for
-`win`/`lose` (never used on plays that stay in `pos`).
+**Game position of a fragment position.** Given a default game position $p_0$, an embedded
+fragment position $(\varphi, w)$ is sent to the game position with formula $\varphi$, world $w$
+and empty binder stack, and the absorbing winning and losing states are both sent to $p_0$.
+
+The default is never used on plays that stay among embedded positions.
 
 ## Depends on
 
-- [Frag Pos](frag-pos.md)
+- [Positions of the totalized fragment game](frag-pos.md)
 - [Game Position](game-position.md)
 
 ## Proof depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

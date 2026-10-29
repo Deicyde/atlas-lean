@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FormationSubformationsFiniteKourovka16Problem31Wanted.FiniteGroupClass
 ---
 
-# Finite Group Class
+# Classes of finite groups
 
-A class of finite groups in `Type`, as a predicate.
+**Classes of finite groups.** A class of finite groups is a predicate on finite groups: it
+assigns to every finite group $G$ a proposition, read as "$G$ belongs to the class". The class need
+not be closed under isomorphism.
 
 ## Depends on
 

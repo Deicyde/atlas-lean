@@ -6,18 +6,22 @@ proof: formalized
 lean: Relation.mem_transGenFin
 ---
 
-# Mem trans Gen Fin
+# Membership in the set reachable from a point
 
-`transGenFin r a` is exactly the set of `t` with `Relation.TransGen r a t`.
+**Membership in the set reachable from a point.** Let $\alpha$ be a finite type with
+decidable equality, let $r$ be a decidable relation on $\alpha$, and let $a \in \alpha$. An
+element $t \in \alpha$ lies in the finite set of elements reachable from $a$ in one or more
+$r$-steps (computed as a finite least fixed point) if and only if $(a, t)$ lies in the transitive
+closure of $r$.
 
 ## Depends on
 
-- [Trans Gen Fin](trans-gen-fin.md)
+- [Elements reachable from a point](trans-gen-fin.md)
 
 ## Proof depends on
 
-- [Mem trans Gen Fin From](mem-trans-gen-fin-from.md)
-- [Trans Gen Fin From](trans-gen-fin-from.md)
+- [Membership in the set reachable from finitely many sources](mem-trans-gen-fin-from.md)
+- [Elements reachable from a finite set of sources](trans-gen-fin-from.md)
 
 ## Sources
 

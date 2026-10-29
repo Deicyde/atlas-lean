@@ -5,17 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.QuasivarietyMaximalSubquasivarietiesKourovka14Problem25Wanted.QVLe
 ---
 
-# QVLe
+# Inclusion of quasivarieties
 
-The quasivariety defined by `Q₁` is contained in the one defined by `Q₂`.
+**Inclusion of quasivarieties.** For sets $Q_1$ and $Q_2$ of quasi-identities, the
+quasivariety defined by $Q_1$ is contained in the quasivariety defined by $Q_2$: every group in
+which all quasi-identities of $Q_1$ hold also satisfies all quasi-identities of $Q_2$.
+
+Only groups in the lowest universe are considered; a quasivariety is determined by its countable
+members.
 
 ## Depends on
 
-- [Quasi Identity](quasi-identity.md)
+- [Quasi-identities of groups](quasi-identity.md)
 
 ## Proof depends on
 
-- [Models](models.md)
+- [The quasivariety defined by a set of quasi-identities](models.md)
 
 ## Sources
 

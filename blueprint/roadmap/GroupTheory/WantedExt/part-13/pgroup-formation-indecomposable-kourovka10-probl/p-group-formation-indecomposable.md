@@ -5,12 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PGroupFormationIndecomposableKourovka10Problem72Wanted.pGroupFormationIndecomposable
 ---
 
-# P Group Formation Indecomposable
+# Indecomposability of the formation of finite $p$-groups (Kourovka 10.72)
 
-Kourovka 10.72 (L. A. Shemetkov): the formation `𝔑_p` of all finite `p`-groups is not the
-Gaschütz product `𝔉 ∘ 𝔊` (`G ∈ 𝔉 ∘ 𝔊` iff the `𝔊`-residual of `G` lies in `𝔉`) of two non-trivial
-proper subformations `𝔉, 𝔊`: each contains a nontrivial group and omits some finite `p`-group.
-Properness is part of the reading: `𝔑_p ∘ 𝔊 = 𝔉 ∘ 𝔑_p = 𝔑_p` for all subformations `𝔉, 𝔊`.
+**Indecomposability of the formation of finite $p$-groups (Kourovka 10.72).** The statement
+that for every prime $p$, the class $\mathfrak{N}_p$ of all finite $p$-groups is not the Gaschütz
+product $\mathfrak{F} \circ \mathfrak{G}$ of two formations $\mathfrak{F}$ and $\mathfrak{G}$ that
+consist of $p$-groups, each contain a nontrivial group and each omit some finite $p$-group. Here a
+finite group $G$ lies in $\mathfrak{F} \circ \mathfrak{G}$ when its $\mathfrak{G}$-residual lies
+in $\mathfrak{F}$.
+
+Omitting some finite $p$-group is part of the reading of "non-trivial": for all formations
+$\mathfrak{F}, \mathfrak{G}$ consisting of $p$-groups,
+$\mathfrak{N}_p \circ \mathfrak{G} = \mathfrak{F} \circ \mathfrak{N}_p = \mathfrak{N}_p$.
 
 ## Depends on
 
@@ -18,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Class](group-class.md)
-- [Is Formation](is-formation.md)
-- [Residual](residual.md)
+- [Class of finite groups (Kourovka 10.72)](group-class.md)
+- [Formation of finite groups (Kourovka 10.72)](is-formation.md)
+- [Residual of a finite group with respect to a class (Kourovka 10.72)](residual.md)
 
 ## Sources
 

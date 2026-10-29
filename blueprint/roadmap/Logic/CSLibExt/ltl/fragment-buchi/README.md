@@ -4,34 +4,34 @@ navigation: module
 
 # Fragment Buchi
 
-- [Prop Formula](prop-formula.md)
-- [Eval](eval.md)
-- [To LTL](to-ltl.md)
-- [Satisfies to LTL](satisfies-to-ltl.md)
-- [Satisfies At to LTL](satisfies-at-to-ltl.md)
+- [Propositional formulas](prop-formula.md)
+- [Evaluating a propositional formula at a letter](eval.md)
+- [Propositional formulas as LTL formulas](to-ltl.md)
+- [Propositional formulas are evaluated at the first letter](satisfies-to-ltl.md)
+- [Propositional formulas are evaluated at the current letter](satisfies-at-to-ltl.md)
 
 ## The `always` automaton
 
 - [Always Na](always-na.md)
-- [Language always Na](language-always-na.md)
+- [The always automaton recognizes G φ](language-always-na.md)
 
 ## The `G F` / `F G` automata
 
-- [Language always eventually](language-always-eventually.md)
-- [Language eventually always](language-eventually-always.md)
+- [The infinitely-often automaton recognizes G F φ](language-always-eventually.md)
+- [The eventually-always automaton recognizes F G φ](language-eventually-always.md)
 
 ## The propositional automaton
 
-- [Prop Na](prop-na.md)
-- [Language prop Na](language-prop-na.md)
+- [Büchi automaton for a propositional formula](prop-na.md)
+- [The propositional automaton recognizes φ](language-prop-na.md)
 
 ## The shift automaton
 
-- [Shift Buchi](shift-buchi.md)
-- [Language shift Buchi](language-shift-buchi.md)
+- [The shift of a Büchi automaton](shift-buchi.md)
+- [The shift automaton reads the tail](language-shift-buchi.md)
 
 ## The safety fragment
 
-- [Safety](safety.md)
-- [To LTL](to-ltl-2.md)
+- [The restricted safety fragment of LTL](safety.md)
+- [Safety formulas as LTL formulas](to-ltl-2.md)
 - [Büchi automata for the restricted safety fragment](exists-buchi-of-safety.md)

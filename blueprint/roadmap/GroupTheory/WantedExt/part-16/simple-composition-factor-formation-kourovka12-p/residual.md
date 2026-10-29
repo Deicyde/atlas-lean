@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimpleCompositionFactorFormationKourovka12Problem97Wanted.residual
 ---
 
-# Residual
+# The residual of a group with respect to a class (Kourovka 12.97)
 
-The `X`-residual of `G`: the intersection of the normal subgroups `N` with `G ⧸ N ∈ X`.
+**The residual of a group with respect to a class (Kourovka 12.97).** For a class $X$ of groups
+and a group $G$, the $X$-residual of $G$ is the intersection of all normal subgroups $N$ of $G$
+such that the quotient $G/N$ lies in $X$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.97)](group-class.md)
 
 ## Sources
 

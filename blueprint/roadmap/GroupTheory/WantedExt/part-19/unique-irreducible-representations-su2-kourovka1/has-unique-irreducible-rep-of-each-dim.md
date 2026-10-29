@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.HasUniqueIrreducibleRepOfEachDim
 ---
 
-# Has Unique Irreducible Rep Of Each Dim
+# Groups with exactly one irreducible representation of each dimension
 
-`G` has exactly one irreducible complex representation of each dimension `n ≥ 1`, up to
-equivalence.
+**Groups with exactly one irreducible representation of each dimension.** A group $G$ has
+exactly one irreducible complex representation of each dimension when for every $n \ge 1$ there
+is an irreducible homomorphism $G \to \mathrm{GL}_n(\mathbb{C})$ and any two irreducible
+homomorphisms $G \to \mathrm{GL}_n(\mathbb{C})$ are equivalent. Representations are arbitrary
+homomorphisms of the abstract group $G$; no continuity is required.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Equivalent Rep](is-equivalent-rep.md)
-- [Is Irreducible Rep](is-irreducible-rep.md)
+- [Equivalent representations into $\mathrm{GL}_n(\mathbb{C})$](is-equivalent-rep.md)
+- [Irreducible representations into $\mathrm{GL}_n(\mathbb{C})$](is-irreducible-rep.md)
 
 ## Sources
 

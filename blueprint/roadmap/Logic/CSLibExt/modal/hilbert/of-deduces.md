@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Modal.Derivable.of_deduces
 ---
 
-# Of deduces
+# Local consequences of theorems are theorems
 
-Theorems are closed under any derivation from theorems.
+**Local consequences of theorems are theorems.** Let $\Lambda$ be a set of modal formulas
+and let $\Gamma$ be a set of formulas each of which is a theorem of the normal modal logic
+$\mathbf{K} \oplus \Lambda$. If a formula $\varphi$ is a local consequence of $\Gamma$ in
+$\mathbf{K} \oplus \Lambda$, then $\varphi$ is a theorem of $\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Trans](trans.md)
-- [Deduces empty iff](deduces-empty-iff.md)
+- [Transitivity of local consequence](trans.md)
+- [Consequences of no hypotheses are the theorems](deduces-empty-iff.md)
 
 ## Sources
 

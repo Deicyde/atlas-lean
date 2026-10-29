@@ -4,9 +4,9 @@ navigation: module
 
 # Fitting Supersoluble Central Kourovka12 Problem91
 
-- [Group Class](group-class.md)
-- [Is Fitting](is-fitting.md)
-- [Is Supersoluble](is-supersoluble.md)
-- [Is Minimal Normal](is-minimal-normal.md)
-- [Fitting Supersoluble Minimal Normal Central](fitting-supersoluble-minimal-normal-cent.md)
-- [Fitting Supersoluble Minimal Normal Central refuted](fitting-supersoluble-minimal-normal-cent-2.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.91)](group-class.md)
+- [Fitting classes (Kourovka 12.91)](is-fitting.md)
+- [Supersoluble groups (Kourovka 12.91)](is-supersoluble.md)
+- [Minimal normal subgroups (Kourovka 12.91)](is-minimal-normal.md)
+- [Heineken's question on Fitting classes of supersoluble groups](fitting-supersoluble-minimal-normal-cent.md)
+- [A Fitting class of supersoluble groups with a non-central minimal normal subgroup](fitting-supersoluble-minimal-normal-cent-2.md)

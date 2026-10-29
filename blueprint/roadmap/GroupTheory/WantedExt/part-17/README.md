@@ -15,7 +15,7 @@ navigation: transparent
 - [Special Linear Rational Division Ring Kourovka11 Problem110](special-linear-rational-division-ring-kourovka11/README.md)
 - [Spectrum Recognition PSL27 Kourovka16 Problem57](spectrum-recognition-psl27-kourovka16-problem57/README.md)
 - [Spread Of AFinite Group](spread-of-afinite-group-wanted/README.md)
-- [Stable Series Shared](has-stable-series.md)
+- [Stable sets of linear automorphisms](has-stable-series.md)
 - [Subdegree Finite Distinguishing Set Kourovka19 Problem89](subdegree-finite-distinguishing-set-kourovka19-p/README.md)
 - [Subset Factorization Counterexamples Kourovka19 Problem35](subset-factorization-counterexamples-kourovka19/README.md)
 - [Surjection Noninjective On Subgroups Kourovka17 Problem50](surjection-noninjective-on-subgroups-kourovka17/README.md)

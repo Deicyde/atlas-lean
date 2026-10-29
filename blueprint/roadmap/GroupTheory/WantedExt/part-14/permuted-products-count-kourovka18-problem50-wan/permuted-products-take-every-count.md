@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PermutedProductsCountKourovka18Problem50Wanted.permutedProductsTakeEveryCount
 ---
 
-# Permuted Products Take Every Count
+# Kohl's permuted-products statement (Kourovka 18.50)
 
-Kourovka 18.50 (S. Kohl): for every `n` and every `k ∈ {1, …, n!}` there are a group `G` and
-pairwise distinct `g₁, …, gₙ ∈ G` such that the set `{g_{σ(1)} ⋯ g_{σ(n)} | σ ∈ Sₙ}` of products
-obtained by permuting the factors has exactly `k` elements.
+**Kohl's permuted-products statement (Kourovka 18.50).** The assertion that for all natural
+numbers $n$ and $k$ with $1 \le k \le n!$ there are a group $G$ and pairwise distinct elements
+$g_1, \dots, g_n \in G$ such that the set
+$\lbrace g_{\sigma(1)} g_{\sigma(2)} \cdots g_{\sigma(n)} : \sigma \in S_n \rbrace$ of products
+obtained by permuting the factors has exactly $k$ elements.
 
 ## Depends on
 

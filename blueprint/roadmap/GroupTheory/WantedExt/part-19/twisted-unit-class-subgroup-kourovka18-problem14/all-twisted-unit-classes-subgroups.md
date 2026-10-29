@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwistedUnitClassSubgroupKourovka18Problem14Wanted.AllTwistedUnitClassesSubgroups
 ---
 
-# All Twisted Unit Classes Subgroups
+# Groups whose twisted classes of the identity are all subgroups
 
-Every set `[e]_φ`, `φ ∈ Aut G`, is a subgroup of `G`.
+**Groups whose twisted classes of the identity are all subgroups.** A group $G$ has this
+property when, for every automorphism $\varphi$ of $G$, the twisted conjugacy class of the
+identity $[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is a subgroup of $G$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Twisted Unit Class](twisted-unit-class.md)
+- [Twisted conjugacy class of the identity (Kourovka 18.14)](twisted-unit-class.md)
 
 ## Sources
 

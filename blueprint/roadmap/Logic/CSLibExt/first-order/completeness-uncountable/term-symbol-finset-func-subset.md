@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.Logic.FOL.termSymbolFinset_func_subset
 ---
 
-# Term Symbol Finset func subset
+# Symbols of an argument of a function application
 
-The symbols of an argument term occur in the application. Source: D. van Dalen, *Logic
-and Structure*, 5th ed., Springer 2013, §3.1.
+**Symbols of an argument of a function application.** Let $f$ be an $l$-ary function symbol
+of a first-order language $L$ and let $t_0, \dots, t_{l-1}$ be terms of $L$ in variables from
+$\alpha$. For every $i < l$, every symbol occurring in $t_i$ occurs in the term
+$f(t_0, \dots, t_{l-1})$: the finite set of symbols of $t_i$ is contained in that of
+$f(t_0, \dots, t_{l-1})$.
 
 ## Depends on
 
-- [Term Symbol Finset](term-symbol-finset.md)
+- [Finite set of symbols of a term](term-symbol-finset.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- D. van Dalen, *Logic and Structure*, 5th ed., Springer 2013, §3.1.

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.twoRealizationsImplyInfinitelyMany
 ---
 
-# Two Realizations Imply Infinitely Many
+# Syskin's question on groups with a given spectrum (Kourovka 12.84)
 
-Kourovka 12.84 (S. A. Syskin; well-known problem): if two non-isomorphic finite groups have
-the same set `Ω` of element orders, then there are infinitely many pairwise non-isomorphic finite
-groups with set of element orders `Ω` (for every `k`, at least `k` of them).
+**Syskin's question on groups with a given spectrum (Kourovka 12.84).** The proposition that
+for every set $\Omega$ of natural numbers, if two non-isomorphic finite groups both have set of
+element orders $\Omega$, then for every natural number $k$ there are $k$ pairwise non-isomorphic
+finite groups whose set of element orders is $\Omega$; that is, infinitely many.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Element Orders](element-orders.md)
+- [The spectrum of a group (Kourovka 12.84)](element-orders.md)
 
 ## Sources
 

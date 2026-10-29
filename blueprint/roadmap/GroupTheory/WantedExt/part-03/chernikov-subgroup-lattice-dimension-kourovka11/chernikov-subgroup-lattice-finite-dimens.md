@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ChernikovSubgroupLatticeDimensionKourovka11Problem116Wanted.chernikovSubgroupLatticeFiniteDimension
 ---
 
-# Chernikov Subgroup Lattice Finite Dimension
+# Shevrin's problem on the dimension of subgroup lattices of Chernikov groups
 
-Kourovka 11.116 (L. N. Shevrin): for every Chernikov group that does not contain a direct
-product of two quasicyclic groups over the same prime, the lattice of subgroups has finite
-dimension.
+**Shevrin's problem on the dimension of subgroup lattices of Chernikov groups.** The
+proposition that for every Chernikov group $G$ that does not contain a direct product of two
+quasicyclic groups over the same prime (that is, there is no quasicyclic group $Q$ with an
+injective homomorphism $Q \times Q \to G$), the lattice of subgroups of $G$ has finite order
+dimension: the inclusion order on the subgroups of $G$ is the intersection of finitely many linear
+orders on that set. This is Kourovka Problem 11.116 (L. N. Shevrin).
 
 ## Depends on
 
@@ -17,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Quasicyclic Square](contains-quasicyclic-square.md)
+- [Groups containing the square of a quasicyclic group](contains-quasicyclic-square.md)
 - [Has Finite Order Dimension](has-finite-order-dimension.md)
-- [Is Chernikov](is-chernikov.md)
+- [Chernikov group](is-chernikov.md)
 
 ## Sources
 

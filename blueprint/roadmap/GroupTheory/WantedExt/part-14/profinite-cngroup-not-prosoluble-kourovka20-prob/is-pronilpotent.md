@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ProfiniteCNGroupNotProsolubleKourovka20Problem90Wanted.IsPronilpotent
 ---
 
-# Is Pronilpotent
+# Pronilpotent subgroup
 
-The subgroup `H` of the topological group `G` is pronilpotent: its image in `G / N` is
-nilpotent for every open normal subgroup `N`. For a closed subgroup of a profinite group this says
-that `H` is an inverse limit of finite nilpotent groups, since the subgroups `H ∩ N` are cofinal
-among the open normal subgroups of `H`.
+**Pronilpotent subgroup.** A subgroup $H$ of a group $G$ carrying a topology is pronilpotent
+when, for every open normal subgroup $N$ of $G$, the image of $H$ in the quotient $G/N$ is
+nilpotent.
+
+For a closed subgroup of a profinite group this says that $H$ is an inverse limit of finite
+nilpotent groups, since the subgroups $H \cap N$ are cofinal among the open normal subgroups of
+$H$.
 
 ## Depends on
 

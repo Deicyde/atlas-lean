@@ -20,16 +20,16 @@ neighbour $i + 1$ (modulo $3$) both eat.
 - [The eating valuation](../dining-philosophers/eating.md)
 - [Initial state of the dining philosophers](../dining-philosophers/initial.md)
 - [Neighbours-apart formula](../dining-philosophers/neighbours-apart.md)
-- [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
-- [Satisfies](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
+- [The CTL operator $\mathrm{AG}$](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
+- [Satisfaction of CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
 
 ## Proof depends on
 
 - [Enabled moves under atomic acquisition](can-move-atomic.md)
 - [Move of a philosopher under atomic acquisition](move-atomic.md)
 - [Phase of a philosopher](../dining-philosophers/phase.md)
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
-- [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [Correctness of the CTL model checker](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 
 ## Sources

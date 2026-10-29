@@ -4,8 +4,8 @@ navigation: module
 
 # Integral Group Ring Jordan Decomposition Kourovka16 Problem104
 
-- [Has Integral Coeffs](has-integral-coeffs.md)
-- [Has AJD](has-ajd.md)
-- [Has MJD](has-mjd.md)
-- [Finitely Many Two Groups MJDNot AJD](finitely-many-two-groups-mjdnot-ajd.md)
-- [Finitely Many Two Groups MJDNot AJD holds](finitely-many-two-groups-mjdnot-ajd-hold.md)
+- [Elements with integer coefficients](has-integral-coeffs.md)
+- [Additive Jordan decomposition property](has-ajd.md)
+- [Multiplicative Jordan decomposition property](has-mjd.md)
+- [Kourovka Problem 16.104](finitely-many-two-groups-mjdnot-ajd.md)
+- [Finitely many $2$-groups have MJD but not AJD](finitely-many-two-groups-mjdnot-ajd-hold.md)

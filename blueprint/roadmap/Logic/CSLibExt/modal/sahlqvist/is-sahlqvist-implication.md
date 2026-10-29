@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Modal.IsSahlqvistImplication
 ---
 
-# Is Sahlqvist Implication
+# Sahlqvist implications
 
-A modal formula is a Sahlqvist implication if it is an implication from a
-Sahlqvist antecedent to a positive formula.
+**Sahlqvist implications.** A modal formula is a Sahlqvist implication if it is an implication
+$\alpha \to \beta$ whose antecedent $\alpha$ is a Sahlqvist antecedent and whose consequent
+$\beta$ is a positive formula.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Is Positive](is-positive.md)
-- [Is Sahlqvist Antecedent](is-sahlqvist-antecedent.md)
+- [Positive modal formulas](is-positive.md)
+- [Sahlqvist antecedents](is-sahlqvist-antecedent.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Modal.BoundedMorphism.id
 ---
 
-# Id
+# Identity bounded morphism
 
-The identity map is a bounded morphism.
+**Identity bounded morphism.** For every Kripke model $M$, the identity map on the worlds of
+$M$ is a bounded morphism from $M$ to itself.
 
 ## Depends on
 
-- [Bounded Morphism](bounded-morphism.md)
+- [Bounded morphism](bounded-morphism.md)
 - [Kripke Model](kripke-model.md)
 
 ## Sources

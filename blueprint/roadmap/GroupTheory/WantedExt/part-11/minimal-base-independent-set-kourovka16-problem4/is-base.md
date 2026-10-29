@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsBase
 ---
 
-# Is Base
+# Base of a group action
 
-`B` is a base for the action of `G` on `Ω`: its pointwise stabilizer is trivial.
+**Base of a group action.** For a group $G$ acting on a set $\Omega$, a finite set
+$B \subseteq \Omega$ is a base when its pointwise stabilizer is trivial: the only $g \in G$ with
+$g \cdot \omega = \omega$ for all $\omega \in B$ is $g = 1$.
 
 ## Depends on
 

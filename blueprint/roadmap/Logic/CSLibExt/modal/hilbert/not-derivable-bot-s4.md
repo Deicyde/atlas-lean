@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Modal.not_derivable_bot_S4
 ---
 
-# Not derivable bot S4
+# Consistency of S4
 
-S4 is consistent.
+**Consistency of S4.** For every type of atoms, $\bot$ is not a theorem of the normal modal
+logic S4, whose extra axioms are the formulas $\Box\varphi \to \varphi$ and
+$\Box\varphi \to \Box\Box\varphi$.
 
 ## Depends on
 
-- [S4](s4.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S4](s4.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Valid S4](valid-s4.md)
+- [Soundness of S4 for reflexive transitive Kripke models](valid-s4.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Unit](unit.md)
+- [The one-world Kripke model](unit.md)
 
 ## Sources
 

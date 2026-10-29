@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BasicCommutatorEqualityKourovka11Problem20Wanted.basicCommutatorEqualityDetermines
 ---
 
-# Basic Commutator Equality Determines
+# Gaglione–Spellman claim on equal commutators of basic commutators
 
-Kourovka 11.20 (A. Gaglione, D. Spellman): in an absolutely free group with linearly ordered
-free generators, if `[a, b] = [c, d]` where `a`, `b` and `[a, b]` are basic commutators and `c`,
-`d` are arbitrary commutators, then `a = c` and `b = d`. The basic commutators are those of every
-ordering admitted by Hall's definition: a linear order of the formal commutators that extends the
-order of the generators and puts commutators of smaller weight first (within one weight it is
-arbitrary).
+**Gaglione–Spellman claim on equal commutators of basic commutators.** The proposition
+(Kourovka Problem 11.20, A. Gaglione and D. Spellman) that the following holds. Write
+$[x, y] = x^{-1} y^{-1} x y$. For every linearly ordered type $\alpha$ and every linear order $<$
+on the formal commutators in the letters $\alpha$ that orders the letters as in $\alpha$ and puts
+formal commutators of smaller weight first (within one weight it is arbitrary), if $a$ and $b$ are
+formal commutators such that the formal commutator $[a, b]$ is basic for $<$ (so $a$ and $b$ are
+basic too), $c$ and $d$ are elements of the free group $F(\alpha)$, each of the form $[x, y]$ with
+$x, y \in F(\alpha)$, and $[\bar a, \bar b] = [c, d]$ in $F(\alpha)$, where $\bar a$ and $\bar b$
+are the values of $a$ and $b$ in $F(\alpha)$, then $\bar a = c$ and $\bar b = d$.
 
 ## Depends on
 
@@ -20,11 +23,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bracket](bracket.md)
-- [Is Basic](is-basic.md)
-- [Eval](eval.md)
-- [Weight](weight.md)
-- [Kcomm](kcomm.md)
+- [Formal commutators](bracket.md)
+- [Basic commutators](is-basic.md)
+- [Value of a formal commutator](eval.md)
+- [Weight of a formal commutator](weight.md)
+- [Commutator, Kourovka–Hall convention](kcomm.md)
 
 ## Sources
 

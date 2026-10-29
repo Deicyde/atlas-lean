@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.ActsFaithfullyByFiniteStateAuts
 ---
 
-# Acts Faithfully By Finite State Auts
+# Faithful actions by finite-state tree automorphisms
 
-`G` acts faithfully on a regular rooted tree by finite-state automorphisms: for some `d ≥ 2`
-there is an injective homomorphism from `G` to the permutations of the words over `Fin d` whose
-values are finite-state tree automorphisms.
+**Faithful actions by finite-state tree automorphisms.** A group $G$ acts faithfully on a
+regular rooted tree by finite-state automorphisms when there are a natural number $d \ge 2$ and an
+injective group homomorphism $\varphi$ from $G$ to the group of permutations of the set of finite
+words over $\{0, \dots, d-1\}$ such that $\varphi(g)$ is a finite-state automorphism of the
+$d$-regular rooted tree for every $g \in G$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Finite State Aut](is-finite-state-aut.md)
+- [Finite-state automorphisms of the regular rooted tree (Kourovka 16.85)](is-finite-state-aut.md)
 
 ## Sources
 

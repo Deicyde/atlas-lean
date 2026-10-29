@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeAbelianDirectSumCancellationKourovka17Problem21Wanted.torsionFreeAbsorbsDirectSummand
 ---
 
-# Torsion Free Absorbs Direct Summand
+# Bergman's absorption question (Kourovka 17.21(a))
 
-Kourovka 17.21(a) (G. M. Bergman): for torsion-free abelian groups `A, B, C`,
-`A ≅ A ⊕ B ⊕ C` implies `A ≅ A ⊕ B`.
+**Bergman's absorption question (Kourovka 17.21(a)).** The statement that for all torsion-free
+abelian groups $A$, $B$, $C$, if $A \cong A \oplus B \oplus C$ then $A \cong A \oplus B$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Torsion Free Add Group](is-torsion-free-add-group.md)
+- [Torsion-free abelian group](is-torsion-free-add-group.md)
 
 ## Sources
 

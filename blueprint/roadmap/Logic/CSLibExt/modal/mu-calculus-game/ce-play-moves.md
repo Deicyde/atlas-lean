@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.cePlay_moves
 ---
 
-# Ce Play moves
+# The regression play is a play
 
-The regression play follows the game moves.
+**The regression play is a play.** For every $n \in \mathbb{N}$, in the model-checking game
+on the one-world regression model there is a move from the position at step $n$ of the
+regression play to the position at step $n + 1$.
 
 ## Depends on
 
-- [Move](move.md)
-- [Ce Play](ce-play.md)
-- [Counterexample Model](counterexample-model.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [The regression play](ce-play.md)
+- [The one-world reflexive Kripke model](counterexample-model.md)
 
 ## Proof depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
 - [Game Position](game-position.md)
-- [Ce Next](ce-next.md)
-- [Ce Play mem](ce-play-mem.md)
-- [Ce Pos0](ce-pos0.md)
-- [Ce Pos1](ce-pos1.md)
-- [Ce Pos2](ce-pos2.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Step map of the regression play](ce-next.md)
+- [The regression play stays on the cycle](ce-play-mem.md)
+- [Starting position of the regression play](ce-pos0.md)
+- [Second position of the regression play](ce-pos1.md)
+- [Third position of the regression play](ce-pos2.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

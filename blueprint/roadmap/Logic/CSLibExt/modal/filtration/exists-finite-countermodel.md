@@ -13,21 +13,21 @@ at most `2 ^ |sub φ|` worlds.
 
 ## Depends on
 
-- [K](../hilbert/k.md)
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
-- [Sub](sub.md)
+- [Extra axioms of the modal logic K](../hilbert/k.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
+- [Subformulas](sub.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Satisfies](../kripke/satisfies.md)
-- [Exists not satisfies of not derivable K](exists-not-satisfies-of-not-derivable-k.md)
-- [Filtration](filtration.md)
-- [Filtration Worlds](filtration-worlds.md)
-- [Filtration lemma](satisfies-filtration-iff.md)
-- [Sub Type](sub-type.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Completeness of K, countermodel form](exists-not-satisfies-of-not-derivable-k.md)
+- [Smallest filtration of a Kripke model](filtration.md)
+- [Worlds of the filtration](filtration-worlds.md)
+- [Filtration lemma for the smallest filtration](satisfies-filtration-iff.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

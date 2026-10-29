@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupAlgebraTwistedIdealsKourovka12Problem46Wanted.twistCharacter
 ---
 
-# Twist Character
+# Twisting character of the free group of rank two
 
-The character of `F = ⟨x, y⟩` with `x ↦ a` and `y ↦ b`.
+**Twisting character of the free group of rank two.** Let $F$ be the free group on $x, y$. For
+nonzero complex numbers $a, b$, this is the homomorphism $\chi \colon F \to \mathbb{C}^\times$ with
+$\chi(x) = a$ and $\chi(y) = b$.
 
 ## Depends on
 

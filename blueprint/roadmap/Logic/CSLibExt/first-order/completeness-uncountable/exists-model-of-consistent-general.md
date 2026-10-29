@@ -8,12 +8,11 @@ lean: Cslib.Logic.FOL.exists_model_of_consistent_general
 
 # Model existence for arbitrary languages
 
-**Model existence for arbitrary languages.** Every consistent set of formulas over
-`ℕ` is satisfiable, with no countability hypothesis on the language. The model lives in
-`Type (max u v)`, the universe of Mathlib's compactness theorem. Source: L. Henkin, *The
-completeness of the first-order functional calculus*, J. Symbolic Logic 14, 1949, 159-166;
-H.-D. Ebbinghaus, J. Flum, and W. Thomas, *Mathematical Logic*, 2nd ed., Springer 1994,
-Chapter V.
+**Model existence for arbitrary languages.** Let $L$ be a first-order language, with no
+countability hypothesis on its symbols. Every consistent set $S$ of formulas of $L$ with free
+variables in $\mathbb{N}$ is satisfiable: there are a nonempty $L$-structure $M$, in the larger of
+the universes of the function symbols and the relation symbols of $L$, and an assignment
+$v : \mathbb{N} \to M$ under which every formula of $S$ holds.
 
 ## Depends on
 
@@ -28,3 +27,4 @@ Chapter V.
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- L. Henkin, *The completeness of the first-order functional calculus*, J. Symbolic Logic 14, 1949, 159-166; H.-D. Ebbinghaus, J. Flum, and W. Thomas, *Mathematical Logic*, 2nd ed., Springer 1994, Chapter V.

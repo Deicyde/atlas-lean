@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem86Wanted.soficHammingDist
 ---
 
-# Sofic Hamming Dist
+# Hamming distance for sofic approximations
 
-Normalized Hamming distance on `S_n = Equiv.Perm (Fin n)`, used in the
-definition of sofic groups [KOU-21.86].
+**Hamming distance for sofic approximations.** For a natural number $n$ and permutations
+$\sigma$, $\tau$ of $\{0, \dots, n-1\}$, the normalized Hamming distance $d(\sigma, \tau)$ is the
+number of points $i < n$ with $\sigma(i) \ne \tau(i)$, divided by $n$, as a real number; for
+$n = 0$ it is $0$. It is used in the definition of sofic groups [KOU-21.86].
 
 ## Depends on
 

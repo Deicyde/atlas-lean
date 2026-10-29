@@ -5,19 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompleteLatticeOfFormationsKourovka18Problem92Wanted.IsCompleteLatticeOfFormations
 ---
 
-# Is Complete Lattice Of Formations
+# Complete lattices of formations
 
-`Θ` is a complete lattice of formations: a nonempty set of formations, containing the
-intersection of each of its nonempty subsets and having a largest element.
+**Complete lattices of formations.** A set $\Theta$ of classes of groups is a complete lattice
+of formations if it is nonempty, every member of $\Theta$ is a formation, for every nonempty subset
+$S \subseteq \Theta$ the intersection of the classes in $S$ (the class of groups belonging to every
+member of $S$) belongs to $\Theta$, and $\Theta$ has a member that contains every member of
+$\Theta$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 18.92)](group-class.md)
 
 ## Proof depends on
 
-- [Incl](incl.md)
-- [Is Formation](is-formation.md)
+- [Inclusion of group classes](incl.md)
+- [Formations of finite groups (Kourovka 18.92)](is-formation.md)
 
 ## Sources
 

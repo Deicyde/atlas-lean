@@ -5,8 +5,8 @@ navigation: module
 # Integral Cayley Graphs Kourovka19 Problem50
 
 - [Has Integral Spectrum](has-integral-spectrum.md)
-- [Involution Cayley Graph Integral](involution-cayley-graph-integral.md)
-- [Three Cycles One Two](three-cycles-one-two.md)
-- [Alternating Three Cycle Cayley Graph Integral](alternating-three-cycle-cayley-graph-int.md)
-- [Involution Cayley Graph Integral holds](involution-cayley-graph-integral-holds.md)
-- [Alternating Three Cycle Cayley Graph Integral holds](alternating-three-cycle-cayley-graph-int-2.md)
+- [The Kourovka 19.50(a) integrality claim](involution-cayley-graph-integral.md)
+- [The 3-cycles (1 2 k)](three-cycles-one-two.md)
+- [The Kourovka 19.50(b) integrality claim](alternating-three-cycle-cayley-graph-int.md)
+- [Cayley graphs on normal sets of involutions are integral](involution-cayley-graph-integral-holds.md)
+- [The 3-cycle Cayley graph of the alternating group is integral](alternating-three-cycle-cayley-graph-int-2.md)

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyPresentedSolubleMetanilpotentKourovka16Problem35Wanted.finitelyPresentedSolubleMetanilpotentByFinite
 ---
 
-# Finitely Presented Soluble Metanilpotent By Finite
+# Groves's question (Kourovka 16.35)
 
-Kourovka 16.35 (J. R. J. Groves): every finitely presented soluble group is
-nilpotent-by-nilpotent-by-finite.
+**Groves's question (Kourovka 16.35).** The proposition that every finitely presented soluble
+group $G$ is (nilpotent-by-nilpotent)-by-finite, that is, $G$ has a normal subgroup $M$ of finite
+index and a normal subgroup $N$ of $M$ such that $N$ and $M/N$ are both nilpotent.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Metanilpotent By Finite](is-metanilpotent-by-finite.md)
+- [Metanilpotent-by-finite groups](is-metanilpotent-by-finite.md)
 
 ## Sources
 

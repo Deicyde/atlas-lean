@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.IsSolubleRadical
 ---
 
-# Is Soluble Radical
+# Soluble radical
 
-`R` is the soluble radical of `G`: the largest soluble normal subgroup.
+**Soluble radical.** A subgroup $R$ of a group $G$ is the soluble radical of $G$ if $R$ is a
+soluble normal subgroup of $G$ that contains every soluble normal subgroup of $G$.
 
 ## Depends on
 

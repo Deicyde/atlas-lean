@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound
 ---
 
-# Centralizer Dimension Abelian Section Bound
+# Vasil'ev's abelian section bound (Kourovka 19.101)
 
-Kourovka 19.101 (A. V. Vasil'ev): there is `f : ℕ → ℕ` such that for every locally finite
-group `G` of `c`-dimension at most `k`, with `R` its locally soluble radical (the largest normal
-locally soluble subgroup) and `S` the preimage of the socle of `G ⧸ R`, the quotient `G ⧸ S` has an
-abelian subgroup `A ⧸ S` of index at most `f k`.
+**Vasil'ev's abelian section bound (Kourovka 19.101).** The statement that there is a function
+$f : \mathbb{N} \to \mathbb{N}$ such that for every $k \in \mathbb{N}$ and every locally finite
+group $G$ of $c$-dimension at most $k$ the following holds: if $R$ is a normal locally soluble
+subgroup of $G$ containing every normal locally soluble subgroup of $G$ (the locally soluble
+radical) and $S$ is the preimage in $G$ of the socle of $G/R$, then there is a subgroup $A$ of $G$
+with $S \le A$ such that $xyx^{-1}y^{-1} \in S$ for all $x, y \in A$ (so $A/S$ is an abelian
+subgroup of $G/S$), and the index $|G : A|$ is finite and at most $f(k)$.
 
 ## Depends on
 
@@ -18,10 +21,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [CDim LE](cdim-le.md)
-- [Is Locally Finite](is-locally-finite.md)
-- [Is Locally Soluble](is-locally-soluble.md)
-- [Socle Lift](socle-lift.md)
+- [Centralizer dimension at most $k$](cdim-le.md)
+- [Locally finite groups](is-locally-finite.md)
+- [Locally soluble subgroups](is-locally-soluble.md)
+- [Preimage of the socle of a quotient](socle-lift.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Golod Group](golod-group.md)
+- [Golod group (Kourovka 11.101)](golod-group.md)
 
 ## Sources
 

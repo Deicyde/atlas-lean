@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoAutomorphismSquareInnerKourovka14Problem1Wanted.twoAutomorphismCentralizingSylowSquareInner
 ---
 
-# Two Automorphism Centralizing Sylow Square Inner
+# Kourovka Problem 14.1
 
-Kourovka 14.1 (R. Zh. Aleev): if a finite group `G` has no nontrivial normal subgroup of odd
-order and `φ` is an automorphism of `G` of `2`-power order centralizing a Sylow `2`-subgroup of
-`G`, then `φ²` is inner.
+**Kourovka Problem 14.1.** The statement that for every finite group $G$ with no nontrivial
+normal subgroup of odd order and every automorphism $\varphi$ of $G$ whose order is a power of
+$2$, if $\varphi$ fixes every element of some Sylow $2$-subgroup of $G$, then $\varphi^2$ is
+conjugation by some element of $G$, that is, $\varphi^2$ is an inner automorphism.
 
 ## Depends on
 

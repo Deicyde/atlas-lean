@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.forallUntil_iff_not
 ---
 
-# Forall Until iff not
+# Deadlock-correct duality for universal until
 
-The deadlock-correct duality for `A[φ U ψ]`: it fails exactly when
-some maximal path either stays in `¬ψ` forever (`EG ¬ψ`) or reaches a
-`¬ψ`-state at which `φ` fails or which is deadlocked, with `¬ψ` before
-(an `EU` witness to the bad target of `forallUntil_bad_iff`).  The
-forward direction propagates `A[φ U ψ]` along an `EU` witness run by
-`forallUntil_expansion_forward`; the backward direction takes, on each
-maximal path, the least `ψ`-index and an earlier `¬φ`-index if one
-exists, and uses the deadlocked endpoint when a finite maximal path
-never reaches `ψ`.
+**Deadlock-correct duality for universal until.** Let $\varphi$ and $\psi$ be CTL formulas,
+and write $s \models \chi$ when the state $s$ of a labelled transition system satisfies the
+formula $\chi$ under a given valuation of the atoms. Then
+$s \models \mathsf{A}[\varphi \mathbin{\mathsf{U}} \psi]$ if and only if neither
+$s \models \mathsf{E}[\neg\psi \mathbin{\mathsf{U}} (\neg\psi \land (\neg\varphi \lor
+\neg\mathsf{EX}\,\top))]$ nor $s \models \mathsf{EG}\,\neg\psi$.
+
+Here $\neg\mathsf{EX}\,\top$ holds exactly at the deadlocked states, those with no outgoing
+transition. So $\mathsf{A}[\varphi \mathbin{\mathsf{U}} \psi]$ fails at $s$ exactly when some
+infinite run starting at $s$ stays in $\neg\psi$ forever, or some finite run starting at $s$ stays
+in $\neg\psi$ up to a $\neg\psi$-state at which $\varphi$ fails or which is deadlocked.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
-- [Or](../basic/or.md)
-- [Satisfies](../basic/satisfies.md)
+- [CTL formulas](../basic/formula.md)
+- [CTL disjunction](../basic/or.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
 
 ## Proof depends on
 
-- [Forall Until bad iff](forall-until-bad-iff.md)
-- [Forall Until expansion forward](forall-until-expansion-forward.md)
+- [Bad target of the deadlock-correct until duality](forall-until-bad-iff.md)
+- [One-step unfolding of universal until, forward direction](forall-until-expansion-forward.md)
 - [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
 - [Infinite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/omega-run.md)
 

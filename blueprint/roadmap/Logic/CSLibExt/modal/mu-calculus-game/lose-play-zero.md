@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.losePlay_zero
 ---
 
-# Lose Play zero
+# The lose play starts at its fragment position
 
-The lose play starts at `pos`.
+**The lose play starts at its fragment position.** For a fixpoint-free formula $\varphi$
+and a world $w$, the lose play from $(\varphi, w)$ is at the fragment-arena position
+$(\varphi, w)$ at time $0$.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [Frag Pos](frag-pos.md)
-- [Lose Play](lose-play.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Positions of the totalized fragment game](frag-pos.md)
+- [The lose play](lose-play.md)
 
 ## Sources
 

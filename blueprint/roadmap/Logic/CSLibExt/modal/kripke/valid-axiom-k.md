@@ -12,14 +12,14 @@ The K axiom is valid on every Kripke model.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 - [Axiom K](axiom-k.md)
 - [Kripke Model](kripke-model.md)
-- [Valid](valid.md)
+- [Global validity in a Kripke model](valid.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction in a Kripke model](satisfies.md)
 
 ## Sources
 

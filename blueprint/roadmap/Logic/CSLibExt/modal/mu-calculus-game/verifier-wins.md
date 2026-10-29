@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.VerifierWins
 ---
 
-# Verifier Wins
+# Verifier has a winning strategy
 
-Verifier has a winning strategy from `p` (in environment `env`).
+**Verifier has a winning strategy.** For a Kripke model $M$, an environment $\mathit{env}$
+and a game position $p$, Verifier wins from $p$ when some Verifier strategy $\sigma$ in the
+model-checking game on $M$ wins from $p$ in environment $\mathit{env}$: every complete finite
+$\sigma$-consistent play from $p$ ends at a terminal winning position, and every infinite
+$\sigma$-consistent play from $p$ satisfies the parity condition.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ Verifier has a winning strategy from `p` (in environment `env`).
 
 ## Proof depends on
 
-- [Strategy](strategy.md)
-- [Strategy Wins](strategy-wins.md)
+- [Verifier strategy](strategy.md)
+- [Winning strategy from a position](strategy-wins.md)
 
 ## Sources
 

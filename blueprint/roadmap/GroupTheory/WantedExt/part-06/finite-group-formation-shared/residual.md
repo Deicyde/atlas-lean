@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteGroupFormationShared.residual
 ---
 
-# Residual
+# Residual of a finite group with respect to a class
 
-The `𝔉`-residual `G^𝔉` of a finite group `G`: the intersection of the normal subgroups `N` of
-`G` with `G / N ∈ 𝔉`. For a formation containing the trivial group it is the smallest such `N`.
+**Residual of a finite group with respect to a class.** For a class $\mathfrak{F}$ of finite
+groups and a finite group $G$, the $\mathfrak{F}$-residual $G^{\mathfrak{F}}$ is the intersection
+of all normal subgroups $N$ of $G$ with $G/N \in \mathfrak{F}$.
+
+For a formation containing the trivial group it is the smallest such $N$.
 
 ## Depends on
 
-- [Finite Group Class](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
+- [Class of finite groups (Kourovka 13.51)](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
 
 ## Sources
 

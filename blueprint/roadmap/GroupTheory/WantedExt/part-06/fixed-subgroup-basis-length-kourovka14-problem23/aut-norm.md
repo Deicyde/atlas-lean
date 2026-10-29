@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FixedSubgroupBasisLengthKourovka14Problem23Wanted.autNorm
 ---
 
-# Aut Norm
+# Norm of an automorphism of a free group
 
-The norm `‖α‖ = max (|α(x₀)|, …, |α(xₙ₋₁)|)` of an automorphism `α` of `F_n`, where `|·|` is the
-reduced word length in the basis `x₀, …, xₙ₋₁`.
+**Norm of an automorphism of a free group.** Let $F_n$ be the free group on the basis
+$x_0, \dots, x_{n-1}$, and for $w \in F_n$ let $|w|$ be the length of the reduced word
+representing $w$. The norm of an automorphism $\alpha$ of $F_n$ is
+$\|\alpha\| = \max(|\alpha(x_0)|, \dots, |\alpha(x_{n-1})|)$, taken to be $0$ when $n = 0$.
 
 ## Depends on
 

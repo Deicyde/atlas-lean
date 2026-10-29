@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RetractIntersectionFreeGroupKourovka17Problem19Wanted.retractIntersectionIsRetract
 ---
 
-# Retract Intersection Is Retract
+# Bergman's retract intersection question (Kourovka Problem 17.19)
 
-Kourovka 17.19 (G. M. Bergman): if `R` is a retract of a free group `F` of finite rank and `H`
-is a finitely generated (equivalently, finite rank) subgroup of `F`, then `H ∩ R` is a retract of
-`H`.
+**Bergman's retract intersection question (Kourovka Problem 17.19).** The statement that for
+every natural number $n$, every retract $R$ of the free group $F_n$ on $n$ generators and every
+finitely generated subgroup $H$ of $F_n$, the intersection $H \cap R$ is a retract of $H$.
+
+A subgroup of a free group is finitely generated exactly when it has finite rank.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Retract](is-retract.md)
+- [Retract of a group](is-retract.md)
 
 ## Sources
 

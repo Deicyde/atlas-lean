@@ -12,7 +12,7 @@ lean: Cslib.CTL.Formula.forallFinally
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Sources
 

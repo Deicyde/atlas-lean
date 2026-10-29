@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimaxFiniteImagesKourovka12Problem90Wanted.SameFiniteImages
 ---
 
-# Same Finite Images
+# Groups with the same finite images
 
-`G` and `H` have the same finite images: a finite group is a homomorphic image of `G` exactly
-when it is a homomorphic image of `H`.
+**Groups with the same finite images.** Two groups $G$ and $H$ have the same finite images
+when, for every finite group $Q$, there is a surjective homomorphism $G \to Q$ exactly when there
+is a surjective homomorphism $H \to Q$.
 
 ## Depends on
 

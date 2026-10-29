@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NilpotentInjectorConjugatesKourovka19Problem37Wanted.IsNilpotentInjector
 ---
 
-# Is Nilpotent Injector
+# Nilpotent injector
 
-`H` is a nilpotent injector of `G`: for every subnormal subgroup `K` of `G`, `H ⊓ K` is a
-nilpotent subgroup of `K` contained in no larger nilpotent subgroup of `K`.
+**Nilpotent injector.** A subgroup $H$ of a group $G$ is a nilpotent injector when, for every
+subnormal subgroup $K$ of $G$, the intersection $H \cap K$ is nilpotent and is a maximal nilpotent
+subgroup of $K$: every nilpotent subgroup $L$ of $G$ with $H \cap K \le L \le K$ equals
+$H \cap K$.
 
 ## Depends on
 

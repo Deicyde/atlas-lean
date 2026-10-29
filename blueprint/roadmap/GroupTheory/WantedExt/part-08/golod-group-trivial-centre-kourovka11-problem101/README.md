@@ -4,6 +4,6 @@ navigation: module
 
 # Golod Group Trivial Centre Kourovka11 Problem101
 
-- [Golod Group](golod-group.md)
+- [Golod group (Kourovka 11.101)](golod-group.md)
 - [Golod Group With Trivial Centre](golod-group-with-trivial-centre.md)
-- [Golod Group With Trivial Centre holds](golod-group-with-trivial-centre-holds.md)
+- [There is a Golod group with trivial centre](golod-group-with-trivial-centre-holds.md)

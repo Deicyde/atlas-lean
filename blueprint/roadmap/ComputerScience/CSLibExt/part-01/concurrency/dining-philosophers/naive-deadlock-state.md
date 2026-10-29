@@ -19,7 +19,7 @@ first fork (every phase is $1$) satisfies the deadlock formula: no philosopher c
 - [The eating valuation](eating.md)
 - [Transition system of a dining-philosophers protocol](lts.md)
 - [Naive dining-philosophers protocol](naive.md)
-- [Satisfies](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
+- [Satisfaction of CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
 
 ## Proof depends on
 
@@ -27,9 +27,9 @@ first fork (every phase is $1$) satisfies the deadlock formula: no philosopher c
 - [When a philosopher can move](can-move.md)
 - [Move of a philosopher](move.md)
 - [Phase of a philosopher](phase.md)
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
-- [Check](../../../../../Logic/CSLibExt/ctl/model-checking/check.md)
-- [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [The CTL model checker as a Boolean decision procedure](../../../../../Logic/CSLibExt/ctl/model-checking/check.md)
+- [Correctness of the CTL model checker](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 
 ## Sources

@@ -6,22 +6,16 @@ proof: formalized
 lean: Cslib.LTL.Word.satisfiesAt_zero
 ---
 
-# Satisfies At zero
+# Satisfaction at position zero
 
-The ω-language of an LTL formula: the words satisfying it. -/
-def language (valuation : Symbol → Atom → Prop) (φ : Formula Atom) : ωLanguage Symbol :=
-  { w : ωSequence Symbol | Satisfies valuation w φ }
-
-variable {valuation : Symbol → Atom → Prop} {w : ωSequence Symbol} {φ ψ : Formula Atom}
-  {a : Atom}
-
-/-! ### Positions and suffixes
+**Satisfaction at position zero.** For every valuation of atoms on letters, ω-word $w$ and LTL
+formula $\varphi$, $\varphi$ holds at position $0$ of $w$ if and only if $w$ satisfies $\varphi$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies](satisfies.md)
-- [Satisfies At](satisfies-at.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
+- [Satisfaction at a position](satisfies-at.md)
 
 ## Sources
 

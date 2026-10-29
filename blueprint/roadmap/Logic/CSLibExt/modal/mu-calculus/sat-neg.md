@@ -8,22 +8,28 @@ lean: Cslib.Modal.MuCalculus.sat_neg
 
 # Duality
 
-**Duality**: `⟦¬φ⟧ = (⟦φ⟧)ᶜ` when the environment is complemented.
+**Duality.** Let $M$ be a Kripke model, $\rho$ an environment assigning a set of worlds to
+each variable index $n \in \mathbb{N}$, and $\varphi$ a μ-calculus formula. Let $\neg\varphi$ be
+the dual formula of $\varphi$, obtained by swapping atoms with negated atoms, $\bot$ with $\top$,
+$\wedge$ with $\vee$, $\Box$ with $\Diamond$ and $\mu$ with $\nu$, and keeping variables. Write
+$\overline{\rho}$ for the environment sending each index $n$ to the complement of $\rho(n)$. Then
+for every world $w$, $w$ satisfies $\neg\varphi$ in $M$ under $\overline{\rho}$ if and only if $w$
+does not satisfy $\varphi$ in $M$ under $\rho$.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Mu Formula](mu-formula.md)
-- [Neg](neg.md)
-- [Sat](sat.md)
+- [Formulas of the modal μ-calculus](mu-formula.md)
+- [Negation of μ-calculus formulas](neg.md)
+- [Satisfaction in the modal μ-calculus](sat.md)
 
 ## Proof depends on
 
-- [Compl compl](compl-compl.md)
-- [Extend Env](extend-env.md)
-- [Extend Env compl](extend-env-compl.md)
+- [Double complement of a predicate](compl-compl.md)
+- [Extending an environment under a binder](extend-env.md)
+- [Complementing an extended environment](extend-env-compl.md)
 - [Park induction](mu-induction.md)
-- [Coinduction](nu-coinduction.md)
+- [Coinduction for the greatest fixed point](nu-coinduction.md)
 - [The μ unfolding](sat-mu-unfold.md)
 - [The ν unfolding](sat-nu-unfold.md)
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoGroupMinimalConditionCentralizersKourovka11Problem103Wanted.twoGroupMinimalCentralizersLocallyFinite
 ---
 
-# Two Group Minimal Centralizers Locally Finite
+# Wilson's question on $2$-groups with the minimal condition on centralizers (Kourovka problem 11.103)
 
-Kourovka 11.103 (John S. Wilson): every `2`-group satisfying the minimal condition on
-centralizers is locally finite.
+**Wilson's question on $2$-groups with the minimal condition on centralizers (Kourovka
+problem 11.103).** The statement that every group $G$ in which every element has order a power of
+$2$ and which satisfies the minimal condition on centralizers is locally finite.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Locally Finite](is-locally-finite.md)
-- [Minimal Condition On Centralizers](minimal-condition-on-centralizers.md)
+- [Locally finite group](is-locally-finite.md)
+- [Minimal condition on centralizers](minimal-condition-on-centralizers.md)
 
 ## Sources
 

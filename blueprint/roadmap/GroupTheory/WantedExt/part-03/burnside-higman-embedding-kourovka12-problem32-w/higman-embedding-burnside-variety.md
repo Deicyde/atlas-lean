@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.higmanEmbeddingBurnsideVariety
 ---
 
-# Higman Embedding Burnside Variety
+# Kourovka Problem 12.32: Higman embedding for Burnside varieties
 
-Kourovka 12.32 (S. V. Ivanov): an analogue of Higman's embedding theorem for the Burnside
-variety of odd exponent `n ≫ 1`: there is `n₀` such that for every odd `n ≥ n₀`, every group of
-exponent `n` given by countably many generators and a recursively enumerable set of relators
-embeds in a group finitely presented in `𝔅ₙ`. Words are coded as `List (ℕ × Bool)`.
+**Kourovka Problem 12.32: Higman embedding for Burnside varieties.** There is $n_0$ such that
+for every odd $n \ge n_0$ the following holds. Let $G$ be a group given by generators
+$x_0, x_1, \dots$ and a recursively enumerable set of relators, and suppose that $g^n = 1$ for
+every $g \in G$. Then for some $m$ and some finite set $S$ of elements of the free group on
+$x_0, \dots, x_{m-1}$, there is an injective homomorphism from $G$ to the group finitely presented
+by $S$ in the Burnside variety $\mathfrak{B}_n$, whose relators are $S$ together with $w^n$ for
+every element $w$ of that free group.
+
+The relators are words in the generators, and recursive enumerability refers to these words.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Burnside Presented](burnside-presented.md)
+- [Groups finitely presented in a Burnside variety](burnside-presented.md)
 
 ## Sources
 

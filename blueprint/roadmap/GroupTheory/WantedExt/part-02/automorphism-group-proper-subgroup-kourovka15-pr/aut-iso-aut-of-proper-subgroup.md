@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AutomorphismGroupProperSubgroupKourovka15Problem27Wanted.autIsoAutOfProperSubgroup
 ---
 
-# Aut Iso Aut Of Proper Subgroup
+# Berkovich's problem on automorphism groups of p-groups (Kourovka 15.27)
 
-Kourovka 15.27 (Ya. G. Berkovich): for some prime `p` there are a finite `p`-group `G` of order
-greater than `2` and a proper subgroup `H < G` with `Aut G ≅ Aut H`.
+**Berkovich's problem on automorphism groups of p-groups (Kourovka 15.27).** The statement that
+for some prime $p$ there are a finite $p$-group $G$ of order greater than $2$ and a proper subgroup
+$H < G$ whose automorphism groups are isomorphic, $\mathrm{Aut}(G) \cong \mathrm{Aut}(H)$.
 
 ## Depends on
 

@@ -14,7 +14,7 @@ navigation: transparent
 - [Order Four Automorphism Nilpotent Series Kourovka11 Problem126](order-four-automorphism-nilpotent-series-kourovk/README.md)
 - [Order Spectrum Simple Group Kourovka12 Problem39](order-spectrum-simple-group-kourovka12-problem39/README.md)
 - [Ordered Group Three Classes Embedding Kourovka11 Problem68](ordered-group-three-classes-embedding-kourovka11/README.md)
-- [Out Free Group Shared](out-free-group.md)
+- [Outer automorphism group of a free group](out-free-group.md)
 - [Outer Automorphism Group Realization Kourovka16 Problem59](outer-automorphism-group-realization-kourovka16/README.md)
 - [Outer Automorphism Metabelian Kourovka11 Problem26](outer-automorphism-metabelian-kourovka11-problem/README.md)
 - [PGroup Conjugacy Class Sizes Kourovka14 Problem77](pgroup-conjugacy-class-sizes-kourovka14-problem7/README.md)

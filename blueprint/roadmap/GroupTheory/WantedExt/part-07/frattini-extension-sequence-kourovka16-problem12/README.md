@@ -4,6 +4,6 @@ navigation: module
 
 # Frattini Extension Sequence Kourovka16 Problem12
 
-- [Is Phi Extension](is-phi-extension.md)
-- [Phi Extension Sequence](phi-extension-sequence.md)
-- [Phi Extension Sequence holds](phi-extension-sequence-holds.md)
+- [$\Phi$-extension (Berkovich)](is-phi-extension.md)
+- [Kourovka Problem 16.12 (infinite chains of $\Phi$-extensions)](phi-extension-sequence.md)
+- [Infinite chains of $\Phi$-extensions (Kourovka 16.12)](phi-extension-sequence-holds.md)

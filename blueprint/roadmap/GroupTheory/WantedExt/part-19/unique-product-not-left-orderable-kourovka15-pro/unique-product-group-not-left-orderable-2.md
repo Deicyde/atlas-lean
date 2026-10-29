@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UniqueProductNotLeftOrderableKourovka15Problem49Wanted.uniqueProductGroupNotLeftOrderable_holds
 ---
 
-# Unique Product Group Not Left Orderable holds
+# A unique product group need not be left-orderable
 
-Resolved true: the Kourovka Archive answers 15.49 "Yes, there does", citing Dunfield's appendix to
-the paper of Kionke and Raimbault, which gives a unique product group that is not left-orderable.
+**A unique product group need not be left-orderable.** There exists a group $G$ that has unique
+products but is not left-orderable: for all finite nonempty subsets $X, Y \subseteq G$ there are
+$x_0 \in X$ and $y_0 \in Y$ such that $(x_0, y_0)$ is the only pair $(x, y) \in X \times Y$ with
+$xy = x_0 y_0$, and yet $G$ admits no linear order invariant under left multiplication.
 
 ## Depends on
 
-- [Unique Product Group Not Left Orderable](unique-product-group-not-left-orderable.md)
+- [Kourovka Problem 15.49 (unique product groups and left orders)](unique-product-group-not-left-orderable.md)
 
 ## Sources
 

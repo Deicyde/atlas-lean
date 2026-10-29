@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Modal.FinValidWith
 ---
 
-# Fin Valid With
+# Finite validity check for a frame condition
 
-The finite check for a frame condition `C`: `φ` holds in every model on a nonempty set `U` of
-subsets of `sub φ`, for every relation `R ⊆ U × U` satisfying `C`.
+**Finite validity check for a frame condition.** Given a condition $C$ on pairs $(U, R)$ of a
+finite set $U$ of sets of formulas and a finite set $R$ of pairs of such sets, a formula $\varphi$
+passes the finite check for $C$ when, for every nonempty set $U$ of subsets of the subformulas of
+$\varphi$ and every relation $R \subseteq U \times U$ with $C(U, R)$, $\varphi$ holds at every
+$s \in U$ in the Kripke model with worlds $U$, accessibility relation $R$, and an atom true at
+$s$ iff it belongs to $s$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Sub](../filtration/sub.md)
-- [Eval Fin](../filtration/eval-fin.md)
+- [Subformulas](../filtration/sub.md)
+- [Boolean evaluation in a finite model](../filtration/eval-fin.md)
 
 ## Sources
 

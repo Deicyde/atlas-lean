@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.AG
 ---
 
-# AG
+# The μ-calculus formula $\mathsf{AG}\,p$
 
-`AG p`: every reachable state satisfies `p`.
+**The μ-calculus formula $\mathsf{AG}\,p$.** For an atom $p$, $\mathsf{AG}\,p$ is the
+greatest fixed point formula $\nu X.\,(p \wedge \Box X)$. It expresses that every state reachable
+from the current one satisfies $p$.
 
 ## Depends on
 
-- [Mu Formula](mu-formula.md)
+- [Formulas of the modal μ-calculus](mu-formula.md)
 
 ## Sources
 

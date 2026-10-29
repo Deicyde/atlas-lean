@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_eq_one
 ---
 
-# Vanishing Cutoff eq one
+# The vanishing cutoff factor equals one on its plateau
 
-The cutoff factor equals `1` away from the endpoints.
+**The vanishing cutoff factor equals one on its plateau.** Let $a, b \in \mathbb{R}$ and
+$\delta > 0$. For every real $x$ with $a + \delta \le x \le b - \delta$, the vanishing cutoff
+factor with endpoints $a$, $b$ and width $\delta$ takes the value $1$ at $x$.
 
 ## Depends on
 
-- [Vanishing Cutoff](vanishing-cutoff.md)
+- [Vanishing cutoff factor](vanishing-cutoff.md)
 
 ## Proof depends on
 

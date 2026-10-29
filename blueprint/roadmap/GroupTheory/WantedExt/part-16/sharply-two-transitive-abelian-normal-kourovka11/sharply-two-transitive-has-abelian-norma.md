@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SharplyTwoTransitiveAbelianNormalKourovka11Problem52Wanted.sharplyTwoTransitiveHasAbelianNormal
 ---
 
-# Sharply Two Transitive Has Abelian Normal
+# Mazurov's question on sharply 2-transitive groups (Kourovka 11.52)
 
-Kourovka 11.52 (V. D. Mazurov): every sharply doubly transitive permutation group on a set with
-at least two points has a nontrivial abelian normal subgroup.
+**Mazurov's question on sharply 2-transitive groups (Kourovka 11.52).** The statement that every
+group $G$ acting sharply doubly transitively on a set $\Omega$ with at least two points has a
+nontrivial abelian normal subgroup.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sharply Two Transitive](is-sharply-two-transitive.md)
+- [Sharply doubly transitive action](is-sharply-two-transitive.md)
 
 ## Sources
 

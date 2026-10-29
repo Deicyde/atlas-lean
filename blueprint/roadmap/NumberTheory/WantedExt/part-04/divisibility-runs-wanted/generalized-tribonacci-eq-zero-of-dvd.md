@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTribonacci_eq_zero_of_dvd
 ---
 
-# Generalized Tribonacci eq zero of dvd
+# Divisibility by a Gibonacci sequence forces a Tribonacci sequence to vanish
 
-Main theorem: if a generalized Fibonacci sequence with all terms nonzero
-divides a generalized Tribonacci sequence term-by-term, then the Tribonacci
-sequence is identically zero.
+**Divisibility by a Gibonacci sequence forces a Tribonacci sequence to vanish.** Let
+$x, y, a, b, c$ be integers, let $(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$ and
+$P_1 = y$, and let $(Q_n)_{n \ge 0}$ be the generalized Tribonacci sequence with $Q_0 = a$,
+$Q_1 = b$ and $Q_2 = c$. If $P_n \ne 0$ and $P_n \mid Q_n$ for every $n \ge 0$, then $Q_n = 0$
+for every $n \ge 0$.
 
 ## Depends on
 
-- [Generalized Tribonacci](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
+- [Generalized Tribonacci sequence](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
 - [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources

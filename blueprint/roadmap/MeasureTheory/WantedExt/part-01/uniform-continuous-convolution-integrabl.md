@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ConvolutionIntegrableBoundedUniformWanted.uniformContinuous_convolution_integrable_bounded
 ---
 
-# Convolution Integrable Bounded Uniform Wanted
+# Convolution of an integrable and a bounded function is uniformly continuous
 
-Consider the convolution
+**Convolution of an integrable and a bounded function is uniformly continuous.** Let
+$d \in \mathbb{N}$, let $f : \mathbb{R}^d \to \mathbb{R}$ be Lebesgue integrable, and let
+$g : \mathbb{R}^d \to \mathbb{R}$ be Borel measurable and bounded. Then the convolution
 
-\[
-(f*g)(x)=\int_{\mathbb{R}^{d}} f(x-y)g(y)\,dy.
-\]
-Show that $f*g$ is uniformly continuous when $f$ is integrable and $g$ bounded.
+$$
+(f * g)(x) = \int_{\mathbb{R}^d} f(x - y)\, g(y)\, dy
+$$
+
+is uniformly continuous on $\mathbb{R}^d$.
 
 ## Depends on
 

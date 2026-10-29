@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.ce_prio0
 ---
 
-# Ce prio0
+# Priority of the outer binder in the regression play
 
-The binder priorities on the regression cycle: the outer `μ` has priority
-`1` (stack empty), the inner `ν` has priority `4` (one binder on the stack).
-Under the old fixed priorities (`μ ↦ 1`, `ν ↦ 2`) the greatest recurring
-priority would be `2` (even, Verifier wins); under the corrected least-priority
-rule the least recurring binder priority is `1` (odd, Refuter wins).
+**Priority of the outer binder in the regression play.** The starting position of the
+regression play, consisting of the formula $\mu X.\,\nu Y.\,X$, the unique world and the empty
+binder stack, has priority $1$: a $\mu$-binder position with $k$ binders on the stack has
+priority $2k + 1$, and here $k = 0$.
+
+Under fixed priorities ($\mu \mapsto 1$, $\nu \mapsto 2$) the greatest priority recurring on this
+play would be $2$ (even, Verifier wins); with priorities increasing with nesting depth (the inner
+$\nu$ here has priority $4$) and the least-priority rule, the least binder priority recurring on
+this play is $1$ (odd, Refuter wins).
 
 ## Depends on
 
-- [Ce Pos0](ce-pos0.md)
-- [Prio](prio.md)
+- [Starting position of the regression play](ce-pos0.md)
+- [Priority of a game position](prio.md)
 
 ## Sources
 

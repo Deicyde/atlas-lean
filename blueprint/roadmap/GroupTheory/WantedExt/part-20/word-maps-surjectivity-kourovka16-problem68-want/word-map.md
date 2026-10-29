@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapsSurjectivityKourovka16Problem68Wanted.wordMap
 ---
 
-# Word Map
+# Word map
 
-The word map `G × G → G` of `w ∈ F₂`: `(x, y) ↦ w(x, y)`.
+**Word map.** For a group $G$ and an element $w$ of the free group $F_2$ on two generators
+$x_0, x_1$, the word map of $w$ is the map $G \times G \to G$ sending $(x, y)$ to $w(x, y)$, the
+image of $w$ under the group homomorphism $F_2 \to G$ with $x_0 \mapsto x$ and $x_1 \mapsto y$.
 
 ## Depends on
 

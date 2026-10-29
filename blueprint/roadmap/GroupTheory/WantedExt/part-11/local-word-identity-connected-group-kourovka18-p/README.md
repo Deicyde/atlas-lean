@@ -4,5 +4,5 @@ navigation: module
 
 # Local Word Identity Connected Group Kourovka18 Problem71
 
-- [Local Word Identity Holds Globally](local-word-identity-holds-globally.md)
-- [Local Word Identity Holds Globally refuted](local-word-identity-holds-globally-refut.md)
+- [Local word identities in connected groups (Kourovka 18.71)](local-word-identity-holds-globally.md)
+- [Local word identities need not hold globally in connected groups](local-word-identity-holds-globally-refut.md)

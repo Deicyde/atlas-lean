@@ -22,7 +22,7 @@ its free abelian centre, is a periodic group of unbounded exponent in that varie
 
 ## Depends on
 
-- [Torsion Unbounded Exponent Proper Variety](torsion-unbounded-exponent-proper-variet.md)
+- [Kourovka Problem 17.79 (torsion groups of unbounded exponent in proper varieties)](torsion-unbounded-exponent-proper-variet.md)
 
 ## Sources
 

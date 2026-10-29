@@ -6,9 +6,11 @@ proof: formalized
 lean: Real.abs_harmonic_sub_log_sub_eulerMascheroniConstant_le
 ---
 
-# Abs harmonic sub log sub euler Mascheroni Constant le
+# Explicit harmonic error bound at integers
 
-The centered harmonic error at an integer is at most `1 / n`.
+**Explicit harmonic error bound at integers.** Let $H_n = \sum_{k=1}^{n} 1/k$ be the $n$-th
+harmonic number and $\gamma$ the Euler–Mascheroni constant. For every natural number $n \ge 1$,
+$|H_n - \log n - \gamma| \le 1/n$.
 
 ## Depends on
 

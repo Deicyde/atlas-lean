@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PrimeOrderAutomorphismRankNilpotentKourovka13Problem58Wanted.fixedSubgroup
 ---
 
-# Fixed Subgroup
+# Fixed-point subgroup of an automorphism
 
-The centralizer `C_G(φ)` of an automorphism `φ`: its subgroup of fixed points.
+**Fixed-point subgroup of an automorphism.** For an automorphism $\varphi$ of a group $G$, the
+centralizer $C_G(\varphi)$ is the subgroup $\{x \in G : \varphi(x) = x\}$ of fixed points of
+$\varphi$.
 
 ## Depends on
 

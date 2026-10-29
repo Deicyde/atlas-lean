@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SkewBraceLeftOrderableKourovka19Problem49Wanted.LeftOrderableMul
 ---
 
-# Left Orderable Mul
+# Left-orderable multiplication
 
-The multiplication of `B` is left-orderable: some strict total order on `B` is invariant under
-left multiplication.
+**Left-orderable multiplication.** The multiplication of a set $B$ is left-orderable when there
+is a strict total order $<$ on $B$ that is invariant under left multiplication: for all
+$a, b, c \in B$, if $b < c$ then $a b < a c$.
 
 ## Depends on
 

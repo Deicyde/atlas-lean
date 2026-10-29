@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.CTL.Formula.bot
 ---
 
-# Bot
+# Falsity in CTL
 
-Falsity, as the negation of truth.
+**Falsity in CTL.** The CTL formula $\bot$ (falsity) is the negation $\neg\top$ of the formula
+$\top$ (truth).
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Sources
 

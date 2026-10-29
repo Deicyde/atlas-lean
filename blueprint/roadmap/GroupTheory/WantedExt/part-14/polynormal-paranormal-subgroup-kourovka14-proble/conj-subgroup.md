@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PolynormalParanormalSubgroupKourovka14Problem50Wanted.conjSubgroup
 ---
 
-# Conj Subgroup
+# Conjugate subgroup
 
-The conjugate subgroup `A^x = x⁻¹ A x`.
+**Conjugate subgroup.** For a subgroup $A$ of a group $G$ and an element $x \in G$, the
+conjugate subgroup is $A^x = x^{-1} A x = \{x^{-1} a x : a \in A\}$.
 
 ## Depends on
 

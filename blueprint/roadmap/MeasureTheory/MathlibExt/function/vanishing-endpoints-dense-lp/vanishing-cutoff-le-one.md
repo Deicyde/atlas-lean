@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_le_one
 ---
 
-# Vanishing Cutoff le one
+# The vanishing cutoff factor is at most one
 
-The cutoff factor is at most `1`.
+**The vanishing cutoff factor is at most one.** For all real numbers $a$, $b$, $\delta$
+and $x$, the value at $x$ of the vanishing cutoff factor with endpoints $a$, $b$ and width
+$\delta$ is at most $1$.
 
 ## Depends on
 
-- [Vanishing Cutoff](vanishing-cutoff.md)
+- [Vanishing cutoff factor](vanishing-cutoff.md)
 
 ## Proof depends on
 

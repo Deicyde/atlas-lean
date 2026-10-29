@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TotallyTwoClosedInsolubleKourovka20Problem1Wanted.insolubleTotallyTwoClosedWithNontrivialFitting
 ---
 
-# Insoluble Totally Two Closed With Nontrivial Fitting
+# Kourovka Problem 20.1 (insoluble totally 2-closed groups)
 
-Kourovka 20.1 (M. Arezoomand, M. A. Iranmanesh, C. E. Praeger, G. Tracey): there is a finite
-insoluble totally `2`-closed group with nontrivial Fitting subgroup (equivalently, with a
-nontrivial nilpotent normal subgroup).
+**Kourovka Problem 20.1 (insoluble totally 2-closed groups).** The statement, asked by
+M. Arezoomand, M. A. Iranmanesh, C. E. Praeger and G. Tracey, that there exists a finite group $G$
+that is not soluble, is totally $2$-closed, and has a nontrivial nilpotent normal subgroup
+(equivalently, a nontrivial Fitting subgroup).
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Totally Two Closed](is-totally-two-closed.md)
+- [Totally 2-closed groups](is-totally-two-closed.md)
 
 ## Sources
 

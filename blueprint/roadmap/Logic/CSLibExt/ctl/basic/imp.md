@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.CTL.Formula.imp
 ---
 
-# Imp
+# CTL implication
 
-Implication, via disjunction.
+**CTL implication.** For CTL formulas $\varphi$ and $\psi$, the implication
+$\varphi \to \psi$ is defined as the disjunction $\neg\varphi \lor \psi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Proof depends on
 
-- [Or](or.md)
+- [CTL disjunction](or.md)
 
 ## Sources
 

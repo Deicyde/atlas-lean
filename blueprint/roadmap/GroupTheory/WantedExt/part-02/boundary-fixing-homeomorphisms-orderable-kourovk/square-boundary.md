@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BoundaryFixingHomeomorphismsOrderableKourovka17Problem20Wanted.squareBoundary
 ---
 
-# Square Boundary
+# Boundary of the square
 
-The boundary of the square `I²`.
+**Boundary of the square.** The boundary $\partial I^2$ of the closed square
+$I^2 = [0, 1] \times [0, 1]$ is the set of points $(x, y) \in I^2$ with $x = 0$, $x = 1$, $y = 0$
+or $y = 1$.
 
 ## Depends on
 
-- [Square](square.md)
+- [The closed square](square.md)
 
 ## Sources
 

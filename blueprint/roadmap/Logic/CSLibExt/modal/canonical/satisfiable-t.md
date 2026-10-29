@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Modal.satisfiable_T
 ---
 
-# Satisfiable T
+# Model existence for T
 
-Every T-consistent set is satisfiable in some reflexive Kripke model.
+**Model existence for T.** For every T-consistent set $\Gamma$ of modal formulas there are a
+reflexive Kripke model, whose worlds lie in the universe of the atoms, and a world of it at which
+every formula of $\Gamma$ holds.
 
 ## Depends on
 
-- [T](../hilbert/t.md)
-- [Consistent](consistent.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of T](../hilbert/t.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 
 ## Proof depends on
 
-- [Canonical World](canonical-world.md)
-- [Rel](rel.md)
-- [Deduces](../hilbert/deduces.md)
-- [Derivable](../hilbert/derivable.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [The canonical accessibility relation](rel.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Mem of deduces](mem-of-deduces.md)
-- [Satisfiable of consistent](satisfiable-of-consistent.md)
+- [Maximal consistent sets of modal formulas are deductively closed](mem-of-deduces.md)
+- [Model existence from the canonical model](satisfiable-of-consistent.md)
 
 ## Sources
 

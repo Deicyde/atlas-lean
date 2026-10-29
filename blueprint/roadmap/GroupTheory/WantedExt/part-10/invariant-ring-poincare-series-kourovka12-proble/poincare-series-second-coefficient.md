@@ -5,13 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeriesSecondCoefficient
 ---
 
-# Poincare Series Second Coefficient
+# Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36)
 
-Kourovka 12.36 (D. Carlisle, P. H. Kropholler): for `G ≤ GL(V)`, `V = 𝔽ₚⁿ`, the Laurent
-expansion `∑_{i ≥ -n} aᵢ (1 - t)ⁱ` of the Poincaré series of `S(V*)^G` at `t = 1` has
-`a_{-n+1} = r / (2 |G|)`. The expansion is encoded by polynomials `A`, `B` with `B(1) ≠ 0` and
-`B (1 - t)ⁿ P(t) = A`: then `(1 - t)ⁿ P = A / B = a_{-n} + a_{-n+1} (1 - t) + ⋯`, so
-`a_{-n+1} = -(A / B)'(1) = (A(1) B'(1) - A'(1) B(1)) / B(1)²`.
+**Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36).** The
+statement that for every prime $p$, every $n \in \mathbb{N}$ and every subgroup $G$ of
+$\mathrm{GL}_n(\mathbb{F}_p)$, with $P(t)$ the Poincaré series of the invariant ring of $G$ and
+$r$ the hyperplane sum of $G$, there are polynomials $A, B \in \mathbb{Q}[t]$ with $B(1) \ne 0$
+and $B(t) (1 - t)^n P(t) = A(t)$ in $\mathbb{Q}[[t]]$ such that
+
+$$\frac{A(1) B'(1) - A'(1) B(1)}{B(1)^2} = \frac{r}{2 |G|}.$$
+
+Here $(1 - t)^n P(t) = A(t) / B(t) = a_{-n} + a_{-n+1} (1 - t) + \cdots$, where
+$P(t) = \sum_{i \ge -n} a_i (1 - t)^i$ is the Laurent expansion of $P$ at $t = 1$, so the left
+side is $a_{-n+1} = -(A / B)'(1)$, and the conjecture says $a_{-n+1} = r / (2 |G|)$.
 
 ## Depends on
 
@@ -19,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hyperplane Sum](hyperplane-sum.md)
-- [Poincare Series](poincare-series.md)
+- [Hyperplane sum](hyperplane-sum.md)
+- [Poincaré series of the invariant ring](poincare-series.md)
 
 ## Sources
 

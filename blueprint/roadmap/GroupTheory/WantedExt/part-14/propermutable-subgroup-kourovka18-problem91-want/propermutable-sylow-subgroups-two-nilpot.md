@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PropermutableSubgroupKourovka18Problem91Wanted.propermutableSylowSubgroupsTwoNilpotent
 ---
 
-# Propermutable Sylow Subgroups Two Nilpotent
+# Kourovka Problem 18.91(b) (statement)
 
-Kourovka 18.91(b) (A. N. Skiba): let `P` be a non-abelian Sylow 2-subgroup of a finite group
-`G`, `|P| = 2ⁿ`, and let `1 ≤ k < n`. If every subgroup of `P` of order `2ᵏ` is propermutable in
-`G`, and, when `k = 1`, every cyclic subgroup of `P` of order `4` is propermutable in `G`, then `G`
-is 2-nilpotent.
+**Kourovka Problem 18.91(b) (statement).** The statement of Kourovka Problem 18.91(b)
+(A. N. Skiba), with the range $1 \le k < n$: let $G$ be a finite group and $P$ a non-abelian
+Sylow $2$-subgroup of $G$, with $|P| = 2^n$, and let $k$ be a natural number with $1 \le k < n$.
+If every subgroup of $P$ of order $2^k$ is propermutable in $G$, and, when $k = 1$, every cyclic
+subgroup of $P$ of order $4$ is propermutable in $G$, then $G$ is $2$-nilpotent.
+
+The printed problem has $1 < k < n$, which contradicts its clause for $k = 1$; the range
+$1 \le k < n$ is the one of Al-Sharo's Corollary 1.3.
 
 ## Depends on
 
@@ -18,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Propermutable](is-propermutable.md)
-- [Is Two Nilpotent](is-two-nilpotent.md)
+- [Propermutable subgroups](is-propermutable.md)
+- [2-nilpotent groups](is-two-nilpotent.md)
 
 ## Sources
 

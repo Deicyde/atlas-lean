@@ -10,6 +10,6 @@ navigation: module
 
 ## Bisimulation
 
-- [Satisfies iff](satisfies-iff.md)
-- [Bisimilar](bisimilar.md)
-- [Satisfies iff](satisfies-iff-2.md)
+- [Bisimulations preserve modal formulas](satisfies-iff.md)
+- [Bisimilar worlds](bisimilar.md)
+- [Bisimilar worlds are modally equivalent](satisfies-iff-2.md)

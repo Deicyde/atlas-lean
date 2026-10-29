@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DivisionRingExtensionSplitKourovka18Problem76Wanted.divisionRingMultiplicationExtensionsSplit
 ---
 
-# Division Ring Multiplication Extensions Split
+# Palyutin's splitting problem for division rings (Kourovka 18.76)
 
-Kourovka 18.76 (E. A. Palyutin): let `A` be a division ring and `G` a subgroup of `Aˣ`. Every
-extension `E` of the additive group of `A` by `G` in which `G` acts by multiplication splits. The
-extension is an injective `i : A → E` (on the additive group of `A`, written multiplicatively) and a
-surjective `π : E → G` with `range i = ker π` and `e · i(a) · e⁻¹ = i(π(e) a)`; it splits when `π`
-has a homomorphic section.
+**Palyutin's splitting problem for division rings (Kourovka 18.76).** The statement that for
+every division ring $A$, every subgroup $G$ of its unit group $A^\times$ and every group $E$, if
+$i$ is an injective homomorphism from the additive group of $A$ to $E$ and $\pi : E \to G$ is a
+surjective homomorphism whose kernel is the image of $i$, such that
+$e \, i(a) \, e^{-1} = i(\pi(e) a)$ for all $e \in E$ and $a \in A$ (so $G$ acts on the kernel by
+left multiplication), then the extension splits: there is a homomorphism $s : G \to E$ with
+$\pi(s(g)) = g$ for every $g \in G$.
 
 ## Depends on
 

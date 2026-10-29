@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClosedSubgroupFunctorLatticeWidthKourovka16Problem82Wanted.IsClosedSubgroupFunctor
 ---
 
-# Is Closed Subgroup Functor
+# Closed subgroup functors
 
-`τ` is a closed subgroup functor on `X` (A. N. Skiba): `G ∈ τ(G)` for `G ∈ X`; for every
-epimorphism `φ : A → B` with `A, B ∈ X`, images of members of `τ(A)` lie in `τ(B)` and preimages of
-members of `τ(B)` lie in `τ(A)`; and `τ(H) ⊆ τ(G)` for every `H ∈ τ(G)` (here `H ∈ X`, as `X` is
-closed under subgroups).
+**Closed subgroup functors.** Let $\mathfrak{X}$ be a class of finite groups. A subgroup
+assignment $\tau$ is a closed subgroup functor on $\mathfrak{X}$ (A. N. Skiba) when the following
+three conditions hold. For every $G \in \mathfrak{X}$, $G \in \tau(G)$. For every surjective
+homomorphism $\varphi : A \to B$ with $A, B \in \mathfrak{X}$, $\varphi(H) \in \tau(B)$ for every
+$H \in \tau(A)$ and $\varphi^{-1}(T) \in \tau(A)$ for every $T \in \tau(B)$. For every
+$G \in \mathfrak{X}$, every $H \in \tau(G)$ and every $K \in \tau(H)$, the subgroup $K$, viewed as
+a subgroup of $G$, lies in $\tau(G)$; that is, $\tau(H) \subseteq \tau(G)$.
 
 ## Depends on
 
-- [Finite Group Class](finite-group-class.md)
-- [Subgroup Assignment](subgroup-assignment.md)
+- [Classes of finite groups (Kourovka 16.82 setting)](finite-group-class.md)
+- [Subgroup assignments](subgroup-assignment.md)
 
 ## Sources
 

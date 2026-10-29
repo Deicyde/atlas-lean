@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Epistemic.muddy_not_know_one_p_true
 ---
 
-# Muddy not know one p true
+# Agent 1 does not know that the coin is heads
 
-Agent `1` does not know `p` at heads: `tails` is possible for `1`.
+**Agent 1 does not know that the coin is heads.** Let $p$ be the atom "the coin is heads" of
+the two-agent coin model. The formula $K_1 p$ is false at the heads world: agent $1$ considers
+the tails world possible.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Sat](sat.md)
-- [Muddy](muddy.md)
+- [Epistemic formulas](formula.md)
+- [Satisfaction in an epistemic model](sat.md)
+- [The two-agent coin model](muddy.md)
 
 ## Proof depends on
 
-- [Model](model.md)
+- [Epistemic models](model.md)
 
 ## Sources
 

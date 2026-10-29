@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SkewBraceLeftOrderableKourovka19Problem49Wanted.skewBraceAdditiveLeftOrderable
 ---
 
-# Skew Brace Additive Left Orderable
+# Left-orderability of the additive group of a skew brace (Kourovka 19.49)
 
-Kourovka 19.49 (V. Lebed, L. Vendramin): in a skew brace `(B, +, ·)` (two group structures on
-`B`, the additive one not necessarily abelian, with `a (b + c) = a b - a + a c`) whose
-multiplicative group is left-orderable, the additive group is left-orderable.
+**Left-orderability of the additive group of a skew brace (Kourovka 19.49).** The statement
+that for every skew brace $B$, that is, a set with two group structures, an addition $+$ (not
+necessarily commutative) and a multiplication $\cdot$, satisfying
+$a \cdot (b + c) = a \cdot b - a + a \cdot c$ for all $a, b, c \in B$: if the multiplication of
+$B$ is left-orderable, then the addition of $B$ is left-orderable.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Left Orderable Add](left-orderable-add.md)
-- [Left Orderable Mul](left-orderable-mul.md)
+- [Left-orderable addition](left-orderable-add.md)
+- [Left-orderable multiplication](left-orderable-mul.md)
 
 ## Sources
 

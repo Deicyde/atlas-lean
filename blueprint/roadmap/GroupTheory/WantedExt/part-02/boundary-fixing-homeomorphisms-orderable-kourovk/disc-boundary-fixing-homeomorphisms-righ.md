@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BoundaryFixingHomeomorphismsOrderableKourovka17Problem20Wanted.discBoundaryFixingHomeomorphismsRightOrderable
 ---
 
-# Disc Boundary Fixing Homeomorphisms Right Orderable
+# Right-orderability of the boundary-fixing homeomorphisms of the disc
 
-Kourovka 17.20 (G. M. Bergman) for the closed disc: the group of homeomorphisms of the disc
-(the square `I²`) fixing the boundary pointwise is right-orderable.
+**Right-orderability of the boundary-fixing homeomorphisms of the disc.** The proposition
+(Kourovka Problem 17.20, G. M. Bergman, for the closed disc) that the group
+$\mathrm{Homeo}(I^2; \partial I^2)$ of homeomorphisms of the closed square
+$I^2 = [0, 1] \times [0, 1]$, a model of the closed disc, that fix the boundary $\partial I^2$
+pointwise is right-orderable: it carries a linear order $\le$ such that $a \le b$ implies
+$ac \le bc$ for all $a, b, c$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square](square.md)
-- [Boundary Fixing Homeomorphisms](boundary-fixing-homeomorphisms.md)
+- [The closed square](square.md)
+- [Boundary-fixing homeomorphisms of the square](boundary-fixing-homeomorphisms.md)
 - [Right Orders](right-orders.md)
 
 ## Sources

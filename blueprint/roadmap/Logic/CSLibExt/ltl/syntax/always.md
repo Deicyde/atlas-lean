@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.LTL.Formula.always
 ---
 
-# Always
+# The always operator of LTL
 
-Invariance: `φ` holds at every position.
+**The always operator of LTL.** For an LTL formula $\varphi$, the formula
+$\mathbf{G}\,\varphi$ ("always $\varphi$") is defined as $\neg\,\mathbf{F}\,\neg\varphi$, the
+negation of "eventually $\neg\varphi$".
+
+On an ω-word, $\mathbf{G}\,\varphi$ holds at a position exactly when $\varphi$ holds at that
+position and at every later one.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of linear temporal logic](formula.md)
 
 ## Proof depends on
 
-- [Eventually](eventually.md)
+- [The eventually operator of LTL](eventually.md)
 
 ## Sources
 

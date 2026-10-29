@@ -4,5 +4,5 @@ navigation: module
 
 # Locally Nilpotent Shared
 
-- [Is Locally Nilpotent](is-locally-nilpotent.md)
-- [Hirsch Plotkin Radical](hirsch-plotkin-radical.md)
+- [Locally nilpotent subgroup](is-locally-nilpotent.md)
+- [Hirsch–Plotkin radical](hirsch-plotkin-radical.md)

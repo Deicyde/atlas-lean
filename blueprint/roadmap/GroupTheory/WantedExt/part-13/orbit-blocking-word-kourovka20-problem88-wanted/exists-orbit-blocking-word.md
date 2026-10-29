@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OrbitBlockingWordKourovka20Problem88Wanted.existsOrbitBlockingWord
 ---
 
-# Exists Orbit Blocking Word
+# Kourovka Problem 20.88 (statement)
 
-Kourovka 20.88 (V. Shpilrain): for every rank `r ≥ 1` and every `u ∈ F_r` there is `v ∈ F_r`
-whose reduced word is not a subword (a contiguous factor) of the reduced word of `φ(u)` for any
-automorphism `φ` of `F_r` with `φ(u)` cyclically reduced.
+**Kourovka Problem 20.88 (statement).** The statement that for every $r \ge 1$ and every
+element $u$ of the free group $F_r$ on $r$ generators there is $v \in F_r$ such that, for every
+automorphism $\varphi$ of $F_r$ for which the reduced word of $\varphi(u)$ is cyclically reduced,
+the reduced word of $v$ is not a subword (a contiguous factor) of the reduced word of $\varphi(u)$.
 
 ## Depends on
 

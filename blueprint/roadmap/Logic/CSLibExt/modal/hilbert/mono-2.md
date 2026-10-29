@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Modal.Deduces.mono
 ---
 
-# Mono
+# Monotonicity of local consequence in the hypotheses
 
-More hypotheses give more consequences.
+**Monotonicity of local consequence in the hypotheses.** Let $\Lambda$, $\Gamma$ and $\Delta$
+be sets of modal formulas with $\Gamma \subseteq \Delta$. If a formula $\varphi$ is a local
+consequence of the hypotheses $\Gamma$ in the normal modal logic $\mathrm{K} \oplus \Lambda$, then
+$\varphi$ is a local consequence of the hypotheses $\Delta$ in $\mathrm{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Derivable](derivable.md)
+- [Theorems of a normal modal logic](derivable.md)
 
 ## Sources
 

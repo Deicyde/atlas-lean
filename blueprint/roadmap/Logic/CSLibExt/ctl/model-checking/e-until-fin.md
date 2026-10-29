@@ -5,11 +5,18 @@ statement: formalized
 lean: Cslib.CTL.eUntilFin
 ---
 
-# E Until Fin
+# Finite existential-until set
 
-The finite set of states satisfying an existential until with side
-set `A` and target set `B`, as the least fixed point of
-`Z ↦ B ∪ (A ∩ preExistsFin Z)`.
+**Finite existential-until set.** Let $\mathcal{T}$ be a labelled transition system with
+finitely many states and finitely many labels, decidable transitions and decidable equality of
+states, and let $A$ and $B$ be sets of states. For a set $Z$ of states write
+$\mathrm{Pre}_\exists(Z)$ for the set of states having a transition into $Z$. The
+existential-until set with side set $A$ and target set $B$ is obtained by applying the map
+$Z \mapsto B \cup (A \cap \mathrm{Pre}_\exists(Z))$ to the empty set $n$ times, where $n$ is the
+number of states.
+
+Since this map is monotone, the iteration has stabilized after $n$ steps and the result is its
+least fixed point.
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pre Exists Fin](pre-exists-fin.md)
+- [Finite existential predecessor set](pre-exists-fin.md)
 - [Least fixed point of a finset map by finite iteration](../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
 
 ## Sources

@@ -4,9 +4,9 @@ navigation: module
 
 # Boundary Fixing Homeomorphisms Orderable Kourovka17 Problem20
 
-- [Square](square.md)
-- [Square Boundary](square-boundary.md)
-- [Boundary Fixing Homeomorphisms](boundary-fixing-homeomorphisms.md)
+- [The closed square](square.md)
+- [Boundary of the square](square-boundary.md)
+- [Boundary-fixing homeomorphisms of the square](boundary-fixing-homeomorphisms.md)
 - [Right Orders](right-orders.md)
-- [Disc Boundary Fixing Homeomorphisms Right Orderable](disc-boundary-fixing-homeomorphisms-righ.md)
-- [Disc Boundary Fixing Homeomorphisms Right Orderable refuted](disc-boundary-fixing-homeomorphisms-righ-2.md)
+- [Right-orderability of the boundary-fixing homeomorphisms of the disc](disc-boundary-fixing-homeomorphisms-righ.md)
+- [Boundary-fixing homeomorphisms of the disc are not right-orderable](disc-boundary-fixing-homeomorphisms-righ-2.md)

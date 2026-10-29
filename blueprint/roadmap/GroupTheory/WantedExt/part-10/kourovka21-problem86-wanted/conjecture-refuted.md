@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem86Wanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# Not every group is sofic
 
-Resolved false: Answered negatively: non-sofic groups exist. OpenAI announced the first example,
-the unit group of the binary Leavitt algebra (Ten advances in mathematics and theoretical
-computer science, 2026, Chapter 3), and G. Kun and A. Thom (arXiv:2608.06222, 2026), Theorems A
-and E, prove that (ℤ/2ℤ) ≀_{G/Γ} G and G ∗_Γ G are not sofic for explicit residually finite
-Kazhdan pairs Γ < G. The Kourovka Notebook (arXiv:1401.0300v49) marks Problem 21.86 solved.
+**Not every group is sofic.** The soficity problem (Kourovka Notebook Problem 21.86) has a
+negative answer: there exists a group that is not sofic.
+
+OpenAI announced the first example, the unit group of the binary Leavitt algebra. G. Kun and
+A. Thom (Theorems A and E) prove that $(\mathbb{Z}/2\mathbb{Z}) \wr_{G/\Gamma} G$ and
+$G *_\Gamma G$ are not sofic for explicit residually finite Kazhdan pairs $\Gamma < G$. The
+Kourovka Notebook (arXiv:1401.0300v49) marks Problem 21.86 solved.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Soficity problem (Kourovka Notebook Problem 21.86)](conjecture.md)
 
 ## Sources
 

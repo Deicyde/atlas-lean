@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SpectrumRecognitionPSL27Kourovka16Problem57Wanted.spectrumRecognizesPSL27
 ---
 
-# Spectrum Recognizes PSL27
+# Kourovka Problem 16.57: recognition of PSL(2, 7) by spectrum
 
-Kourovka 16.57 (V. D. Mazurov): every group, finite or not, whose set of element orders is
-`{1, 2, 3, 4, 7} = ω(L₂(7))` is isomorphic to `L₂(7) = PSL(2, 7)`.
+**Kourovka Problem 16.57: recognition of PSL(2, 7) by spectrum.** The statement that every
+group $G$, finite or infinite, whose set of element orders $\{\operatorname{ord}(g) : g \in G\}$
+equals $\{1, 2, 3, 4, 7\}$ is isomorphic to $L_2(7) = \mathrm{PSL}(2, 7)$, the projective special
+linear group of $2 \times 2$ matrices over the field $\mathbb{Z}/7\mathbb{Z}$.
 
 ## Depends on
 

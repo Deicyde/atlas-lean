@@ -6,12 +6,11 @@ proof: formalized
 lean: PadicInt.eq_of_padicDigit_eq
 ---
 
-# Eq of padic Digit eq
+# $p$-adic digits determine a $p$-adic integer
 
-Uniqueness of the `p`-adic expansion: two `p`-adic integers with the
-same digits at every place are equal. The proof compares the approximations
-`appr` by induction, using `appr_succ_eq`, and then applies
-`PadicInt.ext_of_toZModPow`.
+**$p$-adic digits determine a $p$-adic integer.** Let $p$ be a prime. If two $p$-adic
+integers $a, a' \in \mathbb{Z}_p$ have the same $n$-th $p$-adic digit for every $n \ge 0$, then
+$a = a'$.
 
 ## Depends on
 

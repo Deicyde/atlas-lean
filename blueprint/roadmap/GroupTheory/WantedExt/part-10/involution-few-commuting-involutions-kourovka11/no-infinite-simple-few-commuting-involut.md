@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InvolutionFewCommutingInvolutionsKourovka11Problem96Wanted.noInfiniteSimpleFewCommutingInvolutions
 ---
 
-# No Infinite Simple Few Commuting Involutions
+# Strunkov's question on infinite simple groups (Kourovka 11.96(b))
 
-Kourovka 11.96(b) (S. P. Strunkov): no infinite simple group contains an involution that
-commutes with at most `n` involutions (for any `n`).
+**Strunkov's question on infinite simple groups (Kourovka 11.96(b)).** This is the statement
+that for every natural number $n$, no infinite simple group $G$ contains an involution $t$ that
+commutes with at most $n$ involutions of $G$ (counting $t$ itself).
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Commuting Involutions](commuting-involutions.md)
+- [Involutions commuting with an element](commuting-involutions.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OrderDivisibilityBijectionCyclicKourovka18Problem1Wanted.orderDivisibilityBijectionToCyclic
 ---
 
-# Order Divisibility Bijection To Cyclic
+# Kourovka Problem 18.1 (statement)
 
-Kourovka 18.1 (I. M. Isaacs): for every group `G` of finite order `n` there is a bijection `f`
-from `G` onto the cyclic group `ℤ/nℤ` such that the order of `x` divides the order of `f x` for
-every `x ∈ G`.
+**Kourovka Problem 18.1 (statement).** The statement that for every finite group $G$, of order
+$n$ say, there is a bijection $f$ from $G$ onto the cyclic group $\mathbb{Z}/n\mathbb{Z}$ such that
+for every $x \in G$ the order of $x$ divides the additive order of $f(x)$.
 
 ## Depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompressedSubgroupInertKourovka19Problem102Wanted.IsCompressed
 ---
 
-# Is Compressed
+# Compressed subgroup of a free group of finite rank
 
-`H ≤ F` is compressed: `r(H) ≤ r(K)` for every subgroup `K ⊇ H`.
+**Compressed subgroup of a free group of finite rank.** Let $F_n$ be the free group on $n$
+generators and $r(K) \in \mathbb{N} \cup \{\infty\}$ the rank of a subgroup $K$. A subgroup $H$ of
+$F_n$ is compressed when $r(H) \le r(K)$ for every subgroup $K$ of $F_n$ containing $H$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Subgroup Rank](subgroup-rank.md)
+- [Rank of a subgroup](subgroup-rank.md)
 
 ## Sources
 

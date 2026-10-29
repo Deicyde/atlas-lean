@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.IsDPiGroup
 ---
 
-# Is DPi Group
+# $D_\pi$-group
 
-`G` is a `D_π`-group: any two maximal `π`-subgroups of `G` are conjugate.
+**$D_\pi$-group.** Let $\pi$ be a set of natural numbers. A group $G$ is a $D_\pi$-group when
+any two maximal $\pi$-subgroups $H$ and $K$ of $G$ are conjugate, that is, $K = gHg^{-1}$ for
+some $g \in G$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Maximal Pi Subgroup](is-maximal-pi-subgroup.md)
+- [Maximal $\pi$-subgroup](is-maximal-pi-subgroup.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LargeNormalSubsetSquareKourovka20Problem74Wanted.finitelyManySimpleGroupsWithLargeNormalSubset
 ---
 
-# Finitely Many Simple Groups With Large Normal Subset
+# Pyber's conjecture for finite simple groups (Kourovka 20.74(a))
 
-Kourovka 20.74(a) (L. Pyber), conjecture: only finitely many nonabelian finite simple groups
-have such a subset, stated as a bound on their orders.
+**Pyber's conjecture for finite simple groups (Kourovka 20.74(a)).** This proposition states
+that there is a natural number $N$ such that every nonabelian finite simple group $G$ that has a
+subset $S$ closed under conjugation and under inversion with $|S| > |G| / \log_2 |G|$ and
+$S^2 \ne G$, where $S^2 = \{st : s, t \in S\}$, has order $|G| \le N$. Since there are only finitely
+many groups of each order, this says that only finitely many such groups exist up to isomorphism.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Large Inverse Closed Normal Subset With Small Square](has-large-inverse-closed-normal-subset-w.md)
+- [Large inverse-closed normal subsets with small square](has-large-inverse-closed-normal-subset-w.md)
 
 ## Sources
 

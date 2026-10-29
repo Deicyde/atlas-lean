@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupAutomorphismFixedPointKourovka10Problem25Wanted.automorphismFixedPointDecidable
 ---
 
-# Automorphism Fixed Point Decidable
+# Decidability of fixed points of free group automorphisms (Kourovka 10.25)
 
-Kourovka 10.25 (G. S. Makanin): for every finite rank `r` there is an algorithm (a computable
-function of the images of the free generators) that decides, for every automorphism of the free
-group `F_r`, whether it fixes some nontrivial element.
+**Decidability of fixed points of free group automorphisms (Kourovka 10.25).** The assertion
+that for every natural number $r$ there is a computable function $f$ which takes the images of the
+$r$ free generators of the free group $F_r$, each encoded as a word in the generators and their
+inverses, and returns a Boolean, such that whenever the endomorphism $\varphi$ of $F_r$ sending each
+generator to its image is bijective, $f$ returns true exactly when $\varphi(w) = w$ for some
+$w \neq 1$ in $F_r$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word](word.md)
-- [Endo](endo.md)
+- [Encoded words in a free group of finite rank](word.md)
+- [Endomorphism of a free group given by generator images](endo.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree
 ---
 
-# Projective With Two Independent Free
+# Artamonov's freeness question (Kourovka 11.5)
 
-Kourovka 11.5 (V. A. Artamonov): if `k` is a commutative ring, `G` a torsion-free almost
-polycyclic group and `P` a finitely generated projective `kG`-module containing two elements that
-are linearly independent over `kG`, then `P` is a free `kG`-module.
+**Artamonov's freeness question (Kourovka 11.5).** This is the proposition that, for every
+commutative ring $k$, every torsion-free almost polycyclic group $G$ (no element $g \ne 1$ of $G$
+has finite order) and every finitely generated projective module $P$ over the group ring $kG$, if
+$P$ contains two elements that are linearly independent over $kG$, then $P$ is a free
+$kG$-module.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Almost Polycyclic](is-almost-polycyclic.md)
+- [Almost polycyclic group](is-almost-polycyclic.md)
 
 ## Sources
 

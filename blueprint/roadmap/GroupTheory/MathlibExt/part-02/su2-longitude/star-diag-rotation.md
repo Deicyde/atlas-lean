@@ -6,10 +6,10 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.star_diagRotation
 ---
 
-# Star diag Rotation
+# Conjugate transpose of a diagonal rotation
 
-Conjugate-transpose of a diagonal rotation is the diagonal rotation
-through the negated angle.
+**Conjugate transpose of a diagonal rotation.** For every real number $\theta$, the conjugate
+transpose of the diagonal rotation through $\theta$ is the diagonal rotation through $-\theta$.
 
 ## Depends on
 

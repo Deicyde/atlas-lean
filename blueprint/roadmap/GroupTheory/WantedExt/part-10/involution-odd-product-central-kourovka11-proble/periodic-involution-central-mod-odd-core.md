@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InvolutionOddProductCentralKourovka11Problem13Wanted.periodicInvolutionCentralModOddCore
 ---
 
-# Periodic Involution Central Mod Odd Core
+# Borovik's question on involutions with odd-order products (Kourovka 11.13)
 
-Kourovka 11.13 (A. V. Borovik): if `G` is a periodic group and `i` an involution of `G` such
-that `i ^ g * i` has odd order for every `g ∈ G`, then the image of `i` in `G / O(G)` is central,
-i.e. every commutator `g * i * g⁻¹ * i⁻¹` lies in `O(G)`.
+**Borovik's question on involutions with odd-order products (Kourovka 11.13).** For a group
+$G$, let $O(G)$ be the join of all normal subgroups of $G$ all of whose elements have odd order.
+This is the statement that for every periodic group $G$ and every involution $i \in G$ such that
+$g^{-1} i g i$ has odd order for every $g \in G$, the image of $i$ in $G / O(G)$ is central, that
+is, $g i g^{-1} i^{-1} \in O(G)$ for every $g \in G$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Core](odd-core.md)
+- [Odd core from normal subgroups of odd-order elements](odd-core.md)
 
 ## Sources
 

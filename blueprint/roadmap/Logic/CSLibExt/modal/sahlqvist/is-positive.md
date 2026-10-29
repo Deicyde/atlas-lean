@@ -5,14 +5,19 @@ statement: formalized
 lean: Cslib.Modal.IsPositive
 ---
 
-# Is Positive
+# Positive modal formulas
 
-A modal formula is positive if it is built from atoms and `⊥` using `∧`, `∨`, `□`,
-`◇`, and `⟹` with a negative antecedent.
+**Positive modal formulas.** Positive and negative modal formulas are defined by simultaneous
+recursion: every atom is positive, $\bot$ is positive, $\varphi \to \psi$ is positive if
+$\varphi$ is negative and $\psi$ is positive, and $\Box\varphi$ is positive if $\varphi$ is
+positive.
+
+Positive formulas are closed under $\wedge$, $\vee$, $\Box$ and $\Diamond$, which are encoded
+through $\to$, $\bot$ and $\Box$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

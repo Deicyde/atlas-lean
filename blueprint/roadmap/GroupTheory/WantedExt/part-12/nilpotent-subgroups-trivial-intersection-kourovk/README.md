@@ -4,5 +4,5 @@ navigation: module
 
 # Nilpotent Subgroups Trivial Intersection Kourovka15 Problem40
 
-- [Nilpotent Subgroups Trivial Conjugate Intersection](nilpotent-subgroups-trivial-conjugate-in.md)
-- [Nilpotent Subgroups Trivial Conjugate Intersection holds](nilpotent-subgroups-trivial-conjugate-in-2.md)
+- [Kourovka Problem 15.40](nilpotent-subgroups-trivial-conjugate-in.md)
+- [Nilpotent subgroups of a finite simple group have conjugates meeting trivially](nilpotent-subgroups-trivial-conjugate-in-2.md)

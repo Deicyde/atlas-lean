@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimaxFiniteImagesKourovka12Problem90Wanted.HasMaxCondition
 ---
 
-# Has Max Condition
+# Maximal condition on subgroups
 
-`G` satisfies the maximal condition on subgroups: every subgroup is finitely generated.
+**Maximal condition on subgroups.** A group $G$ satisfies the maximal condition on subgroups
+when every subgroup of $G$ is finitely generated.
 
 ## Depends on
 

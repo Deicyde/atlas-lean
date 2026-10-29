@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Modal.MaximalConsistent.mem_of_deduces
 ---
 
-# Mem of deduces
+# Maximal consistent sets of modal formulas are deductively closed
 
-A maximal consistent set is closed under local consequence.
+**Maximal consistent sets of modal formulas are deductively closed.** Let $\Lambda$ be a set
+of modal formulas and $M$ a set of modal formulas that is maximal among the sets consistent
+relative to the normal modal logic K extended by the axioms $\Lambda$. Every formula that is a
+local consequence of $M$ in that logic belongs to $M$.
 
 ## Depends on
 
-- [Consistent](consistent.md)
-- [Deduces](../hilbert/deduces.md)
-- [Formula](../kripke/formula.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Bot of neg](../hilbert/bot-of-neg.md)
-- [Neg of insert](../hilbert/neg-of-insert.md)
-- [Neg](../kripke/neg.md)
+- [Contradiction yields falsity](../hilbert/bot-of-neg.md)
+- [Negation introduction](../hilbert/neg-of-insert.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Sources
 

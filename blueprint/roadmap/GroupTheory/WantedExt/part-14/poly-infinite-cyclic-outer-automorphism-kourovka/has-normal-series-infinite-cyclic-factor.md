@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PolyInfiniteCyclicOuterAutomorphismKourovka13Problem23Wanted.HasNormalSeriesInfiniteCyclicFactors
 ---
 
-# Has Normal Series Infinite Cyclic Factors
+# Normal series with infinite cyclic factors
 
-`G` has a finite series `1 = H₀ ≤ H₁ ≤ ⋯ ≤ Hₙ = G` of normal subgroups of `G` whose factors
-`Hᵢ₊₁ ⧸ Hᵢ` are infinite cyclic.
+**Normal series with infinite cyclic factors.** A group $G$ has a normal series with infinite
+cyclic factors when there are a natural number $n$ and subgroups
+$1 = H_0 \le H_1 \le \cdots \le H_n = G$, each normal in $G$, such that every factor
+$H_{i+1}/H_i$ is infinite cyclic.
 
 ## Depends on
 

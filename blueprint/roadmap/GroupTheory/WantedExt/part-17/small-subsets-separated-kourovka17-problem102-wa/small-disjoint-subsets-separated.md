@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SmallSubsetsSeparatedKourovka17Problem102Wanted.smallDisjointSubsetsSeparated
 ---
 
-# Small Disjoint Subsets Separated
+# Separation of small disjoint subsets of infinite groups (Kourovka 17.102)
 
-Kourovka 17.102 (I. V. Protasov): in every infinite group `G`, any two disjoint subsets `A, B`
-with `|A| < |G|` and `|B| < |G|` are separated.
+**Separation of small disjoint subsets of infinite groups (Kourovka 17.102).** The statement,
+posed by I. V. Protasov, that for every infinite group $G$ and all disjoint subsets
+$A, B \subseteq G$ with $|A| < |G|$ and $|B| < |G|$, the sets $A$ and $B$ are separated.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Are Separated](are-separated.md)
+- [Separated subsets of a group](are-separated.md)
 
 ## Sources
 

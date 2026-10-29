@@ -6,33 +6,35 @@ proof: formalized
 lean: Cslib.CTL.mem_sat
 ---
 
-# Mem sat
+# Correctness of the CTL model checker
 
-Correctness of `sat`: membership in the computed set is
-satisfaction.  The induction is on the formula; temporal cases go
-through `mem_eUntilFin_iff` and `mem_eGloballyFin_iff`, and the
-`AU` case additionally identifies the hand-written bad-target set
-with satisfaction of the bad-target formula, via the induction
-hypotheses and `mem_preExistsFin` at `Finset.univ` (membership there
-is existence of a successor).
+**Correctness of the CTL model checker.** Let a labelled transition system have finitely many
+states and finitely many labels, with decidable transitions and decidable equality of states, and
+let the valuation of the atoms be decidable. For every CTL formula $\varphi$ and every state $s$,
+the state $s$ lies in the set $\mathrm{sat}(\varphi)$ computed by the model checker if and only if
+$s$ satisfies $\varphi$.
+
+The proof is by induction on $\varphi$. The temporal cases use the correctness of the finite
+fixed-point computations of $\mathsf{EU}$ and $\mathsf{EG}$, and the $\mathsf{AU}$ case also
+identifies the computed bad-target set with the states satisfying the bad-target formula.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
-- [Satisfies](../basic/satisfies.md)
+- [CTL formulas](../basic/formula.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
 - [Sat](sat.md)
 
 ## Proof depends on
 
-- [Or](../basic/or.md)
-- [Pre Exists](../basic/pre-exists.md)
-- [Forall Until bad iff](forall-until-bad-iff.md)
-- [Forall Until iff not](forall-until-iff-not.md)
-- [E Globally Fin](e-globally-fin.md)
-- [E Until Fin](e-until-fin.md)
-- [Mem e Globally Fin iff](mem-e-globally-fin-iff.md)
-- [Mem e Until Fin iff](mem-e-until-fin-iff.md)
-- [Pre Exists Fin](pre-exists-fin.md)
+- [CTL disjunction](../basic/or.md)
+- [Existential predecessor operator](../basic/pre-exists.md)
+- [Bad target of the deadlock-correct until duality](forall-until-bad-iff.md)
+- [Deadlock-correct duality for universal until](forall-until-iff-not.md)
+- [Finite existential-globally set](e-globally-fin.md)
+- [Finite existential-until set](e-until-fin.md)
+- [Correctness of the finite fixed-point computation of EG](mem-e-globally-fin-iff.md)
+- [Correctness of the finite fixed-point computation of EU](mem-e-until-fin-iff.md)
+- [Finite existential predecessor set](pre-exists-fin.md)
 
 ## Sources
 

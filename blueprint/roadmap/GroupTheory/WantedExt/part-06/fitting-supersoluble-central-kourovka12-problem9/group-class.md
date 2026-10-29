@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FittingSupersolubleCentralKourovka12Problem91Wanted.GroupClass
 ---
 
-# Group Class
+# Isomorphism-closed classes of groups (Kourovka 12.91)
 
-A class of groups closed under isomorphism, given by a membership predicate on groups in
-`Type`; only its finite members matter below.
+**Isomorphism-closed classes of groups (Kourovka 12.91).** A class of groups is a property of
+groups (in the lowest type universe) that is closed under isomorphism: whenever a group $H$ has the
+property and $H$ is isomorphic to a group $K$, then $K$ has the property. Only the finite members of
+a class are used in Kourovka Problem 12.91.
 
 ## Depends on
 

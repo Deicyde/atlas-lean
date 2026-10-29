@@ -6,9 +6,10 @@ proof: formalized
 lean: PadicInt.padicExpansion_injective
 ---
 
-# Padic Expansion injective
+# The $p$-adic expansion map is injective
 
-Equal bundled expansions determine equal `p`-adic integers.
+**The $p$-adic expansion map is injective.** Let $p$ be a prime. If two $p$-adic integers
+$a, a' \in \mathbb{Z}_p$ have the same $p$-adic expansion, then $a = a'$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ Equal bundled expansions determine equal `p`-adic integers.
 
 ## Proof depends on
 
-- [Eq of padic Digit eq](eq-of-padic-digit-eq.md)
+- [$p$-adic digits determine a $p$-adic integer](eq-of-padic-digit-eq.md)
 
 ## Sources
 

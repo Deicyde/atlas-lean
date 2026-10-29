@@ -4,7 +4,7 @@ navigation: module
 
 # Symmetric Group Equal Character Degrees Kourovka16 Problem67
 
-- [Is Irreducible Rep](is-irreducible-rep.md)
-- [Is Equivalent Rep](is-equivalent-rep.md)
-- [Symmetric Group Many Characters Of Equal Degree](symmetric-group-many-characters-of-equal.md)
-- [Symmetric Group Many Characters Of Equal Degree holds](symmetric-group-many-characters-of-equal-2.md)
+- [Irreducible complex matrix representations (Kourovka 16.67)](is-irreducible-rep.md)
+- [Equivalent complex matrix representations (Kourovka 16.67)](is-equivalent-rep.md)
+- [Moretó's conjecture on equal character degrees of symmetric groups](symmetric-group-many-characters-of-equal.md)
+- [Symmetric groups have many irreducible characters of equal degree](symmetric-group-many-characters-of-equal-2.md)

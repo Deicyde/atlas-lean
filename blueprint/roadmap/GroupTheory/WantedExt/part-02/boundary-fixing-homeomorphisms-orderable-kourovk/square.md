@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BoundaryFixingHomeomorphismsOrderableKourovka17Problem20Wanted.Square
 ---
 
-# Square
+# The closed square
 
-The closed square `I² = [0, 1] × [0, 1]`, a model of the closed disc.
+**The closed square.** The closed square $I^2 = [0, 1] \times [0, 1]$, the product of two
+copies of the unit interval, used as a model of the closed disc.
 
 ## Depends on
 

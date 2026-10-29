@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimpleGroupCharacterValuesKourovka11Problem97Wanted.irrCharValues
 ---
 
-# Irr Char Values
+# Values of the irreducible characters at an element
 
-The set of values `χ(g)` of the irreducible complex characters `χ` of `G` at `g`.
+**Values of the irreducible characters at an element.** For an element $g$ of a group $G$, the
+set of complex numbers $\chi(g)$, where $\chi$ ranges over the characters of the irreducible
+finite-dimensional complex representations of $G$.
 
 ## Depends on
 

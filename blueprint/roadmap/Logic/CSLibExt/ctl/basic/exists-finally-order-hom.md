@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.CTL.Satisfies.existsFinallyOrderHom
 ---
 
-# Exists Finally Order Hom
+# The $\mathsf{EF}$ operator
 
-The `EF` functional packaged as a monotone operator.
+**The $\mathsf{EF}$ operator.** Given a labelled transition system, a valuation of the atoms at
+its states, and a CTL formula $\varphi$, this is the monotone operator on sets of states, ordered by
+inclusion, sending a set $Z$ to the set of states that satisfy $\varphi$ or have some successor in
+$Z$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Proof depends on
 
-- [Pre Exists](pre-exists.md)
-- [Satisfies](satisfies.md)
-- [Exists Finally Fun](exists-finally-fun.md)
+- [Existential predecessor operator](pre-exists.md)
+- [Satisfaction of CTL formulas](satisfies.md)
+- [The $\mathsf{EF}$ functional](exists-finally-fun.md)
 
 ## Sources
 

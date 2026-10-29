@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Modal.frameStructure
 ---
 
-# Frame Structure
+# A frame as a first-order structure
 
-A bare frame as a structure for the frame language.
+**A frame as a first-order structure.** A binary relation $r$ on a set $W$ (a bare Kripke
+frame) makes $W$ a structure for the frame language, in which the accessibility symbol $R$ is
+interpreted as $r$: $R(w, w')$ holds if and only if $r(w, w')$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ A bare frame as a structure for the frame language.
 
 ## Proof depends on
 
-- [Frame Relations](frame-relations.md)
+- [Relation symbols of the frame language](frame-relations.md)
 
 ## Sources
 

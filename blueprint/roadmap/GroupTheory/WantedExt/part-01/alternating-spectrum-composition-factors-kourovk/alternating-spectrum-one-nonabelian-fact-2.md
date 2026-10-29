@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AlternatingSpectrumCompositionFactorsKourovka16Problem27Wanted.alternatingSpectrumOneNonabelianFactor_holds
 ---
 
-# Alternating Spectrum One Nonabelian Factor holds
+# Groups isospectral to an alternating group (Kourovka Problem 16.27)
 
-Resolved true: the Kourovka Archive answers 16.27 "Yes, it is", citing Gorshkov (2013): a finite
-group with the same spectrum as an alternating group has at most one non-abelian composition factor.
+**Groups isospectral to an alternating group (Kourovka Problem 16.27).** Let $n$ be a natural
+number and let $G$ be a finite group whose spectrum, the set of orders of its elements, equals the
+spectrum of the alternating group $A_n$. Then every composition series of $G$ has at most one
+non-abelian factor.
 
 ## Depends on
 
-- [Alternating Spectrum One Nonabelian Factor](alternating-spectrum-one-nonabelian-fact.md)
+- [Kourovka Problem 16.27 (statement)](alternating-spectrum-one-nonabelian-fact.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Large Normal Subset Square Kourovka20 Problem74
 
-- [Has Large Inverse Closed Normal Subset With Small Square](has-large-inverse-closed-normal-subset-w.md)
-- [Finitely Many Simple Groups With Large Normal Subset](finitely-many-simple-groups-with-large-n.md)
-- [Finitely Many PSL2 With Large Normal Subset](finitely-many-psl2-with-large-normal-sub.md)
-- [Finitely Many Simple Groups With Large Normal Subset refuted](finitely-many-simple-groups-with-large-n-2.md)
-- [Finitely Many PSL2 With Large Normal Subset holds](finitely-many-psl2-with-large-normal-sub-2.md)
+- [Large inverse-closed normal subsets with small square](has-large-inverse-closed-normal-subset-w.md)
+- [Pyber's conjecture for finite simple groups (Kourovka 20.74(a))](finitely-many-simple-groups-with-large-n.md)
+- [Pyber's conjecture for $\mathrm{PSL}(2, p)$ (Kourovka 20.74(b))](finitely-many-psl2-with-large-normal-sub.md)
+- [Pyber's conjecture for finite simple groups is false](finitely-many-simple-groups-with-large-n-2.md)
+- [Pyber's conjecture for $\mathrm{PSL}(2, p)$ holds](finitely-many-psl2-with-large-normal-sub-2.md)

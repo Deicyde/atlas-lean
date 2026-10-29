@@ -4,12 +4,12 @@ navigation: module
 
 # Torsion Free Hyperbolic Elementary Theory Kourovka16 Problem71
 
-- [Word](word.md)
-- [Eval Word](eval-word.md)
-- [CNF](cnf.md)
-- [Holds At](holds-at.md)
-- [Realize Prenex](realize-prenex.md)
-- [Prenex Sentence](prenex-sentence.md)
-- [Holds In](holds-in.md)
-- [Torsion Free Hyperbolic Theory Decidable](torsion-free-hyperbolic-theory-decidable.md)
-- [Torsion Free Hyperbolic Theory Decidable holds](torsion-free-hyperbolic-theory-decidable-2.md)
+- [Group words in countably many variables](word.md)
+- [Value of a group word](eval-word.md)
+- [Quantifier-free formulas in conjunctive normal form](cnf.md)
+- [Truth of a formula in conjunctive normal form](holds-at.md)
+- [Truth of a prenex formula](realize-prenex.md)
+- [Prenex sentences of the language of groups](prenex-sentence.md)
+- [Truth of a prenex sentence in a group](holds-in.md)
+- [Decidability of the elementary theory of torsion-free hyperbolic groups](torsion-free-hyperbolic-theory-decidable.md)
+- [Torsion-free hyperbolic groups have decidable elementary theory](torsion-free-hyperbolic-theory-decidable-2.md)

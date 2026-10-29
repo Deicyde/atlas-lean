@@ -5,20 +5,15 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.EgorovDominatedRealLineWanted.exists_measure_lt_tendstoUniformlyOn_compl_of_ae_tendsto_of_abs_le
 ---
 
-# Egorov Dominated Real Line Wanted
+# Egorov's theorem on the real line under integrable domination
 
-Let $f_n : \mathbb{R} \to \mathbb{R}$, $n \in \mathbb{N}$ be a sequence of Lebesgue measurable
-function on $\mathbb{R}$
-such that
-\begin{itemize}
-\item $f_n \to f$ almost everywhere, where $f : \mathbb{R} \to \mathbb{R}$;
-\item there exists a Lebesgue integrable function $g : \mathbb{R} \to [0, \infty)$ such that for any
-$x \in \mathbb{R}$ and $n \in \mathbb{N}$, $|f_n(x)| \le g(x)$.
-\end{itemize}
-
-Show that for any $\varepsilon > 0$, there exists a subset $E \subset \mathbb{R}$ with Lebesgue
-measure
-$m(E) < \varepsilon$ such that $f_n$ converges uniformly to $f$ on $\mathbb{R} \setminus E$.
+**Egorov's theorem on the real line under integrable domination.** Let
+$f : \mathbb{R} \to \mathbb{R}$ be any function and let $f_n : \mathbb{R} \to \mathbb{R}$,
+$n \in \mathbb{N}$, be Borel measurable functions with $f_n(x) \to f(x)$ for almost every
+$x \in \mathbb{R}$. Let $g : \mathbb{R} \to \mathbb{R}$ be Lebesgue integrable with
+$|f_n(x)| \le g(x)$ for all $n$ and all $x \in \mathbb{R}$. Then for every $\varepsilon > 0$ there
+is a Borel set $E \subseteq \mathbb{R}$ of Lebesgue measure less than $\varepsilon$ such that
+$f_n \to f$ uniformly on $\mathbb{R} \setminus E$.
 
 ## Depends on
 

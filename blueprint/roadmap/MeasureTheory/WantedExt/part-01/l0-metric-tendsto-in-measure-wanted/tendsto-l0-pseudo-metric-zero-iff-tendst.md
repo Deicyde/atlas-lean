@@ -5,23 +5,29 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.tendsto_L0PseudoMetric_zero_iff_tendstoInMeasure
 ---
 
-# Tendsto L0 Pseudo Metric zero iff tendsto In Measure
+# Convergence in the $L^0$ pseudometric is convergence in measure
 
-Let $L^0([0,1])$ be the vector space of Lebesgue measurable functions. Let $d$ be the metric on
-$L^0([0,1])$ given by
-\[
-d(f,g) = \int_0^1 \frac{|f-g|(x)}{1 + |f-g|(x)}\,dx.
-\]
-Prove that $f_n \to f$ in the metric $d$ if and only if $f_n \to f$ in measure.
+**Convergence in the $L^0$ pseudometric is convergence in measure.** Let $f$ and
+$f_0, f_1, f_2, \ldots$ be Borel measurable functions $\mathbb{R} \to \mathbb{R}$, and let $d$ be
+the pseudometric
 
-Lean variant: `L⁰([0, 1])` is represented by measurable functions on `ℝ`, so `L0PseudoMetric` is the
-source's metric `d` read on representatives (a pseudometric there); both sides of the equivalence
-depend only on the a.e.-classes on `[0, 1]`.
+$$
+d(g,h) = \int_{[0,1]} \frac{|g(x) - h(x)|}{1 + |g(x) - h(x)|}\,dx
+$$
+
+on such functions, the integral being with respect to Lebesgue measure. Then
+$d(f_n, f) \to 0$ as $n \to \infty$ if and only if $f_n \to f$ in measure with respect to
+Lebesgue measure on $[0,1]$: for every $\varepsilon > 0$, the Lebesgue measure of
+$\{x \in [0,1] : |f_n(x) - f(x)| \ge \varepsilon\}$ tends to $0$ as $n \to \infty$.
+
+The source states this for $L^0([0,1])$, on which $d$ is a metric; here it is stated for
+representatives, on which $d$ is only a pseudometric. Both sides depend only on the
+almost-everywhere classes of the functions on $[0,1]$, so the two statements say the same thing.
 
 ## Depends on
 
-- [L0 Pseudo Metric](l0-pseudo-metric.md)
-- [L0 Unit Interval](l0-unit-interval.md)
+- [The $L^0$ pseudometric on $(0,1)$](l0-pseudo-metric.md)
+- [Measurable functions representing $L^0((0,1))$](l0-unit-interval.md)
 
 ## Sources
 

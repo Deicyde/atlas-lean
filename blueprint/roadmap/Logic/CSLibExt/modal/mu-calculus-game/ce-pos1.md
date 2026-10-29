@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.cePos1
 ---
 
-# Ce Pos1
+# Second position of the regression play
 
-The three positions of the unique play of the regression formula.
+**Second position of the regression play.** The game position consisting of the formula
+$\nu Y.\,X$, the unique world of the one-world model, and the binder stack
+$[\mu X.\,\nu Y.\,X]$. Here $X$ is the de Bruijn variable $1$, which refers to the binder
+$\mu X$ on the stack.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ The three positions of the unique play of the regression formula.
 
 ## Proof depends on
 
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

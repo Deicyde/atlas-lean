@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BaerSpeckerSubgroupDualFreeKourovka17Problem24Wanted.baerSpeckerSubgroupDualFreeUncountable_holds
 ---
 
-# Baer Specker Subgroup Dual Free Uncountable holds
+# A subgroup of the Baer–Specker group with free dual of uncountable rank
 
-Resolved true: Bergman constructs a subgroup `H` of `ℤ^ω` whose dual `Hom(H, ℤ)` is a free abelian
-group of rank `2^ℵ₀`, which is uncountable; the Kourovka Archive answers 17.24 "Yes, it does".
+**A subgroup of the Baer–Specker group with free dual of uncountable rank.** The Baer–Specker
+group $\mathbb{Z}^{\mathbb{N}}$ of all integer sequences has a subgroup $H$ whose dual
+$\operatorname{Hom}(H, \mathbb{Z})$ is a free abelian group of rank greater than $\aleph_0$; this
+answers Kourovka 17.24 positively.
+
+Bergman's subgroup has dual free abelian of rank $2^{\aleph_0}$.
 
 ## Depends on
 
-- [Baer Specker Subgroup Dual Free Uncountable](baer-specker-subgroup-dual-free-uncounta.md)
+- [Bergman's question on subgroups of the Baer–Specker group (Kourovka 17.24)](baer-specker-subgroup-dual-free-uncounta.md)
 
 ## Sources
 

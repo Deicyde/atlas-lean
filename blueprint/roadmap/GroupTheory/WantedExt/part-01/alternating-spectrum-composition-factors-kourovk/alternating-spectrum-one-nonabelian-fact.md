@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AlternatingSpectrumCompositionFactorsKourovka16Problem27Wanted.alternatingSpectrumOneNonabelianFactor
 ---
 
-# Alternating Spectrum One Nonabelian Factor
+# Kourovka Problem 16.27 (statement)
 
-Kourovka 16.27 (A. V. Vasil'ev, V. D. Mazurov): a finite group with the same spectrum as an
-alternating group `Aₙ` has at most one non-abelian composition factor, stated for every
-composition series.
+**Kourovka Problem 16.27 (statement).** The statement that for every natural number $n$ and
+every finite group $G$ whose spectrum, the set of orders of its elements, equals the spectrum of
+the alternating group $A_n$, every composition series of $G$ has at most one non-abelian factor.
+
+The problem was posed by A. V. Vasil'ev and V. D. Mazurov.
 
 ## Depends on
 
@@ -17,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Composition Series](is-composition-series.md)
-- [Is Nonabelian Factor](is-nonabelian-factor.md)
-- [Spectrum](spectrum.md)
+- [Finite composition series](is-composition-series.md)
+- [Non-abelian factor of a chain of subgroups](is-nonabelian-factor.md)
+- [Spectrum of a group](spectrum.md)
 
 ## Sources
 

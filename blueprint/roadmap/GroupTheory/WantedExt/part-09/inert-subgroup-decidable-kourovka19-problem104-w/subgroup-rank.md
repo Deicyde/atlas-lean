@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InertSubgroupDecidableKourovka19Problem104Wanted.subgroupRank
 ---
 
-# Subgroup Rank
+# Rank of a subgroup, possibly infinite
 
-The rank `r(H) ∈ ℕ∞`: the least size of a finite generating set of `H` (`⊤` if `H` is not
-finitely generated).
+**Rank of a subgroup, possibly infinite.** For a subgroup $H$ of a group $G$, the rank
+$r(H) \in \mathbb{N} \cup \{\infty\}$ is the least size of a finite subset of $G$ that generates
+$H$, and $r(H) = \infty$ if $H$ is not finitely generated.
 
 ## Depends on
 

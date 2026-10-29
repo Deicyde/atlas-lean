@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupLogIndexSeparationKourovka15Problem35Wanted.logIndexSeparation
 ---
 
-# Log Index Separation
+# Logarithmic-index separation in free groups (Kourovka 15.35)
 
-Kourovka 15.35 (O. V. Bogopolski), for some rank `r ≥ 2`: there is `C = C(r)` such that every
-reduced word `w` of length `n > 1` in the free group `F_r` lies outside some subgroup of finite
-index at most `C log n`.
+**Logarithmic-index separation in free groups (Kourovka 15.35).** The statement, posed by
+O. V. Bogopolski, that for some integer $r \ge 2$ there is a real number $C$ such that every
+element $w$ of the free group $F_r$ of rank $r$ whose reduced word length $n$ satisfies $n > 1$
+lies outside some subgroup of $F_r$ of finite index at most $C \log n$, where $\log$ is the
+natural logarithm.
 
 ## Depends on
 

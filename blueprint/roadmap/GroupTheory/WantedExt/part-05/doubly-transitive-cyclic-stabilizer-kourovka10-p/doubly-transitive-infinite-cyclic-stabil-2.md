@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DoublyTransitiveCyclicStabilizerKourovka10Problem63Wanted.doublyTransitiveInfiniteCyclicStabilizer_refuted
 ---
 
-# Doubly Transitive Infinite Cyclic Stabilizer refuted
+# No doubly transitive group has an infinite cyclic point stabilizer (Kourovka 10.63)
 
-Resolved false: the Kourovka Archive answers 10.63 "No", citing Mazurov (1990) and Károlyi, Kovács
-and Pálfy (1990): no doubly transitive permutation group has an infinite cyclic point stabilizer.
+**No doubly transitive group has an infinite cyclic point stabilizer (Kourovka 10.63).** If a group
+$G$ acts faithfully on a set $X$ such that for any two ordered pairs of distinct points of $X$
+some element of $G$ maps the first to the second, then no point stabilizer of the action is
+isomorphic to the infinite cyclic group $\mathbb{Z}$.
 
 ## Depends on
 
-- [Doubly Transitive Infinite Cyclic Stabilizer](doubly-transitive-infinite-cyclic-stabil.md)
+- [Doubly transitive group with infinite cyclic point stabilizer (Kourovka 10.63)](doubly-transitive-infinite-cyclic-stabil.md)
 
 ## Sources
 

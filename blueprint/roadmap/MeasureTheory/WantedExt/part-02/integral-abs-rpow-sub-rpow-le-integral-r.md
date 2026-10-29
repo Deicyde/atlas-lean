@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.LpSubadditivePowLtOneWanted.integral_abs_rpow_sub_rpow_le_integral_rpow_abs_sub
 ---
 
-# Lp Subadditive Pow Lt One Wanted
+# An integral inequality for $p$-th powers with $0 < p < 1$
 
-Suppose $\mu$ is a positive measure, $f\in L^p(\mu)$, $g\in L^p(\mu)$.
+**An integral inequality for $p$-th powers with $0 < p < 1$.** Let $\mu$ be a measure on a
+measurable space and let $0 < p < 1$. Then for all real-valued $f, g \in L^p(\mu)$,
 
-If $0\lt p<1$, prove that
-\[
-\int \bigl||f|^p-|g|^p\bigr|\,d\mu \le \int |f-g|^p\,d\mu.
-\]
+$$\int \bigl||f|^p - |g|^p\bigr|\,d\mu \le \int |f - g|^p\,d\mu.$$
 
 ## Depends on
 

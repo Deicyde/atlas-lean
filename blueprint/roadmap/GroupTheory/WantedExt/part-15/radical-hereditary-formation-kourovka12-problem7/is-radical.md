@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.IsRadical
 ---
 
-# Is Radical
+# Radical (Fitting) class
 
-A radical (Fitting) class of finite groups: closed under normal subgroups and under products
-of two normal subgroups belonging to the class.
+**Radical (Fitting) class.** A class of groups $X$ is radical if, for every finite group $G$,
+every normal subgroup of $G$ belongs to $X$ whenever $G$ does, and whenever $N_1, N_2$ are normal
+subgroups of $G$ that belong to $X$, their product $N_1 N_2$ belongs to $X$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed class of groups](group-class.md)
 
 ## Sources
 

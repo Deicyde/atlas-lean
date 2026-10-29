@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapsSurjectivityKourovka16Problem68Wanted.psl2ComplexWordMapsSurjective
 ---
 
-# Psl2 Complex Word Maps Surjective
+# Surjectivity of word maps on $\mathrm{PSL}(2, \mathbb{C})$ (Kourovka 16.68(b))
 
-Kourovka 16.68(b) (J. Mycielski): every nontrivial word map `PSL(2, ℂ)² → PSL(2, ℂ)` is
-surjective.
+**Surjectivity of word maps on $\mathrm{PSL}(2, \mathbb{C})$ (Kourovka 16.68(b)).** The
+statement, asked about by J. Mycielski, that for every nontrivial element $w$ of the free group
+$F_2$ on two generators, the word map
+$\mathrm{PSL}(2, \mathbb{C}) \times \mathrm{PSL}(2, \mathbb{C}) \to \mathrm{PSL}(2, \mathbb{C})$,
+$(x, y) \mapsto w(x, y)$, is surjective.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Map](word-map.md)
+- [Word map](word-map.md)
 
 ## Sources
 

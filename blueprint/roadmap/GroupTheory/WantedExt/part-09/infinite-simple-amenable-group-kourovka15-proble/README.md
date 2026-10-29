@@ -4,5 +4,5 @@ navigation: module
 
 # Infinite Simple Amenable Group Kourovka15 Problem5
 
-- [Infinite FGSimple Amenable Group](infinite-fgsimple-amenable-group.md)
-- [Infinite FGSimple Amenable Group holds](infinite-fgsimple-amenable-group-holds.md)
+- [Kourovka Problem 15.5 (statement): infinite finitely generated simple amenable groups](infinite-fgsimple-amenable-group.md)
+- [Juschenko–Monod theorem (Kourovka Problem 15.5)](infinite-fgsimple-amenable-group-holds.md)

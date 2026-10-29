@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OrderFourAutomorphismNilpotentSeriesKourovka11Problem126Wanted.orderFourAutomorphismBoundedSeries
 ---
 
-# Order Four Automorphism Bounded Series
+# Kourovka Problem 11.126 (automorphisms of order four with few fixed points)
 
-Kourovka 11.126 (P. V. Shumyatskiĭ): there are a constant `h` and a function `f` such that if a
-finite soluble group `G` has an automorphism `φ` of order 4 with `|C_G(φ)| ≤ m`, then `G` has a
-normal series `1 ≤ M ≤ N ≤ G` with `|G : N| ≤ f m`, `N / M` nilpotent of class at most 2 (that is,
-`[[N, N], N] ≤ M`) and `M` nilpotent of class at most `h` (`M.lowerCentralSeries h`, the term
-`γ_{h+1}(M)` computed in `G`, is trivial).
+**Kourovka Problem 11.126 (automorphisms of order four with few fixed points).** The
+statement that there are a natural number $h$ and a function $f : \mathbb{N} \to \mathbb{N}$ such
+that, for every natural number $m$, every finite soluble group $G$ and every automorphism
+$\varphi$ of $G$ of order $4$ with at most $m$ fixed points, there are normal subgroups $M \le N$
+of $G$ with $|G : N| \le f(m)$, $[[N, N], N] \le M$ (so $N/M$ is nilpotent of class at most $2$)
+and $\gamma_{h+1}(M) = 1$ (so $M$ is nilpotent of class at most $h$), where $\gamma_1(M) = M$ and
+$\gamma_{i+1}(M) = [\gamma_i(M), M]$.
 
 ## Depends on
 

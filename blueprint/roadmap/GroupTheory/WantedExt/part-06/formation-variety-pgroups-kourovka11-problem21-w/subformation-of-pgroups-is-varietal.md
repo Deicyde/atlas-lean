@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.subformationOfPGroupsIsVarietal
 ---
 
-# Subformation Of PGroups Is Varietal
+# Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups)
 
-Kourovka 11.21 (A. F. Vasil'yev): for every prime `p`, every subformation `F` of the formation
-`𝔑_p` of all finite `p`-groups has the form `𝔑_p ∩ 𝔐` for a variety `𝔐`: some set of laws `W`
-holds in a finite `p`-group exactly when the group lies in `F`.
+**Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups).** The proposition
+that for every prime $p$ and every formation $\mathfrak F$ all of whose members are $p$-groups (a
+subformation of the formation $\mathfrak N_p$ of all finite $p$-groups), there is a set $W$ of laws,
+words in the free group on countably many generators, such that a finite $p$-group lies in
+$\mathfrak F$ if and only if it satisfies every law in $W$. In other words, every such
+$\mathfrak F$ equals $\mathfrak N_p \cap \mathfrak M$ for the variety $\mathfrak M$ defined by
+$W$.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Class](group-class.md)
-- [Is Formation](is-formation.md)
-- [Satisfies Laws](satisfies-laws.md)
+- [Classes of groups](group-class.md)
+- [Formations of finite groups](is-formation.md)
+- [Groups satisfying a set of laws](satisfies-laws.md)
 
 ## Sources
 

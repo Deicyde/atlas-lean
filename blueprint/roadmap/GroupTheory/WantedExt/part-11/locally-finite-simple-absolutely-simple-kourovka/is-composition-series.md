@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LocallyFiniteSimpleAbsolutelySimpleKourovka11Problem108Wanted.IsCompositionSeries
 ---
 
-# Is Composition Series
+# Composition series in Kurosh's sense
 
-`S` is a composition series of `G` in Kurosh's sense: a chain of subgroups containing `1` and
-`G`, closed under arbitrary unions (suprema) and intersections (infima), such that for every jump
-`A < B` of the chain (no member strictly between) `A` is normal in `B` and `B / A` is simple.
+**Composition series in Kurosh's sense.** A set $S$ of subgroups of a group $G$ is a
+composition series of $G$ when it contains the trivial subgroup and $G$, it is totally ordered by
+inclusion, it contains the join and the intersection of every subset of $S$, and for every jump
+$A < B$ of $S$ (members $A \subsetneq B$ of $S$ with no member of $S$ strictly between them) $A$
+is normal in $B$ and the quotient $B / A$ is a simple group.
 
 ## Depends on
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SylowCharacterDegreePPartKourovka15Problem62Wanted.sylowCharacterDegreeExponentBounded_holds
 ---
 
-# Sylow Character Degree Exponent Bounded holds
+# Character degrees of Sylow subgroups are bounded in terms of those of the group
 
-Resolved true: the Kourovka Archive answers 15.62 "Yes, it is true" (Yang and Qian; the solvable
-case by Moretó and Wolf): `e_p(P)` is bounded by a function of `e_p(G)`, one function for all
-primes, since Yang and Qian's bound `|G : F(G)|_p ≤ p^(k e_p(G))` has an absolute constant `k`.
+**Character degrees of Sylow subgroups are bounded in terms of those of the group.** There is a
+function $f \colon \mathbb{N} \to \mathbb{N}$ such that for every prime $p$, every finite group
+$G$ and every Sylow $p$-subgroup $P$ of $G$, $e_p(P) \le f(e_p(G))$, where $e_p(H)$ is the
+largest exponent of $p$ dividing an irreducible character degree of $H$.
+
+One function works for all primes, since Yang and Qian's bound $|G : F(G)|_p \le p^{k e_p(G)}$,
+with $F(G)$ the Fitting subgroup of $G$, has an absolute constant $k$.
 
 ## Depends on
 
-- [Sylow Character Degree Exponent Bounded](sylow-character-degree-exponent-bounded.md)
+- [Kourovka Problem 15.62 ($p$-parts of character degrees of Sylow subgroups)](sylow-character-degree-exponent-bounded.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ marks 17.99 solved (No, it is not), https://arxiv.org/abs/2606.27408.
 
 ## Depends on
 
-- [Baumslag Group Germ Representation Faithful](baumslag-group-germ-representation-faith.md)
+- [Faithfulness of Baumslag's germ representation (Kourovka 17.99)](baumslag-group-germ-representation-faith.md)
 
 ## Sources
 

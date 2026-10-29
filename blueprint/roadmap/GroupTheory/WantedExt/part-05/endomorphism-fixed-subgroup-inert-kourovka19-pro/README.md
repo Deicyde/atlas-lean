@@ -4,7 +4,7 @@ navigation: module
 
 # Endomorphism Fixed Subgroup Inert Kourovka19 Problem105
 
-- [Subgroup Rank](subgroup-rank.md)
-- [Is Inert](is-inert.md)
-- [Endomorphism Fixed Subgroup Inert](endomorphism-fixed-subgroup-inert.md)
-- [Endomorphism Fixed Subgroup Inert holds](endomorphism-fixed-subgroup-inert-holds.md)
+- [Rank of a subgroup](subgroup-rank.md)
+- [Inert subgroups of a free group](is-inert.md)
+- [Kourovka Problem 19.105 (Ventura) for free groups of finite rank](endomorphism-fixed-subgroup-inert.md)
+- [Fixed subgroups of endomorphisms of free groups are inert](endomorphism-fixed-subgroup-inert-holds.md)

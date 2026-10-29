@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BraidGroupFourAutFreeGroupTwoKourovka17Problem14Wanted.braidGroupFourEmbedsInAutFreeGroupTwo
 ---
 
-# Braid Group Four Embeds In Aut Free Group Two
+# Bardakov's question on embedding $B_4$ in $\operatorname{Aut}(F_2)$
 
-Kourovka 17.14 (V. G. Bardakov) for `n = 4`: the braid group `B₄` embeds in the automorphism
-group `Aut(F₂)` of the free group of rank `2`.
+**Bardakov's question on embedding $B_4$ in $\operatorname{Aut}(F_2)$.** The statement that
+there is an injective group homomorphism from the braid group $B_4$ on four strands to the
+automorphism group $\operatorname{Aut}(F_2)$ of the free group $F_2$ of rank $2$. Kourovka
+Problem 17.14 (V. G. Bardakov) asks whether, for $n \ge 4$, the braid group $B_n$ embeds in the
+automorphism group of the free group $F_{n-2}$ of rank $n - 2$; this is the case $n = 4$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Braid Group Four](braid-group-four.md)
+- [The braid group $B_4$](braid-group-four.md)
 
 ## Sources
 

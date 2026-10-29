@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.divRunCount_four
 ---
 
-# Div Run Count four
+# Divisor-sum formula for the length-four run count
 
-Proposition 7: `A_B(4) = ∑_{x, y ≠ 0, x + y ≠ 0, x + 2y ≠ 0} (T_B(x, y) - 1)`, with
-`T_B(x, y) = #{(a, b, c) ∈ [-B, B]³ : x ∣ a, y ∣ b, x + y ∣ c, x + 2y ∣ a + b + c}`, and
-equivalently, writing `a = xα, b = yβ, c = (x+y)γ`, `T_B(x, y)` is the number of
-`(α, β, γ)` with `|α| ≤ ⌊B/|x|⌋, |β| ≤ ⌊B/|y|⌋, |γ| ≤ ⌊B/|x+y|⌋` and
-`x + 2y ∣ xα + yβ + (x+y)γ` (the paper's `∑ χ_{x,y}(α, β, γ)`). The sums run over
-`x, y ∈ [-B, B]`.
+**Divisor-sum formula for the length-four run count.** For a natural number $B$, let $A_B(4)$
+be the number of integer tuples $(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and
+$(a, b, c) \ne (0, 0, 0)$ that have a divisibility run of length at least $4$. For integers $x, y$
+let $T_B(x, y)$ be the number of integer triples $(a, b, c) \in [-B, B]^3$ with $x \mid a$,
+$y \mid b$, $x + y \mid c$ and $x + 2y \mid a + b + c$, and let $T'_B(x, y)$ be the number of
+integer triples $(\alpha, \beta, \gamma)$ with $|\alpha| \le \lfloor B/|x| \rfloor$,
+$|\beta| \le \lfloor B/|y| \rfloor$, $|\gamma| \le \lfloor B/|x+y| \rfloor$ and
+$x + 2y \mid x\alpha + y\beta + (x+y)\gamma$. Then
+
+$$A_B(4) = \sum_{x, y} \left(T_B(x, y) - 1\right) = \sum_{x, y} \left(T'_B(x, y) - 1\right),$$
+
+where both sums run over the integers $x, y \in [-B, B]$ with $x \ne 0$, $y \ne 0$, $x + y \ne 0$
+and $x + 2y \ne 0$.
+
+The second form comes from writing $a = x\alpha$, $b = y\beta$, $c = (x+y)\gamma$; it is the
+paper's $\sum \chi_{x,y}(\alpha, \beta, \gamma)$.
 
 ## Depends on
 
-- [Div Run Count](div-run-count.md)
+- [Counting configurations with long divisibility runs](div-run-count.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.socleLift
 ---
 
-# Socle Lift
+# Preimage of the socle of a quotient
 
-The preimage `S` in `G` of the socle of `G ⧸ R`.
+**Preimage of the socle of a quotient.** For a normal subgroup $R$ of a group $G$, the preimage
+in $G$ of the socle of $G/R$ under the quotient map $G \to G/R$.
 
 ## Depends on
 

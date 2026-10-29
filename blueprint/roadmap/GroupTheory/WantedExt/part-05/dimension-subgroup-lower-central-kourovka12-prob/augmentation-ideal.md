@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DimensionSubgroupLowerCentralKourovka12Problem22Wanted.augmentationIdeal
 ---
 
-# Augmentation Ideal
+# Augmentation ideal of the integral group ring
 
-The augmentation ideal `Δ(G)` of the integral group ring `ℤG`: the `ℤ`-span of the elements
-`g - 1`, which is the kernel of the augmentation map.
+**Augmentation ideal of the integral group ring.** For a group $G$, the augmentation ideal
+$\Delta(G)$ of the integral group ring $\mathbb{Z}G$ is the $\mathbb{Z}$-submodule spanned by the
+elements $g - 1$ for $g \in G$. It is the kernel of the augmentation map
+$\mathbb{Z}G \to \mathbb{Z}$, $\sum_g a_g g \mapsto \sum_g a_g$.
 
 ## Depends on
 

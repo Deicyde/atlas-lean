@@ -4,9 +4,9 @@ navigation: module
 
 # Finite State Free Product Kourovka16 Problem85
 
-- [Is Tree Aut](is-tree-aut.md)
-- [Tree Section](tree-section.md)
-- [Is Finite State Aut](is-finite-state-aut.md)
-- [Acts Faithfully By Finite State Auts](acts-faithfully-by-finite-state-auts.md)
-- [Finite State Free Product](finite-state-free-product.md)
-- [Finite State Free Product holds](finite-state-free-product-holds.md)
+- [Automorphisms of the regular rooted tree (Kourovka 16.85)](is-tree-aut.md)
+- [Section of a permutation of the tree at a vertex (Kourovka 16.85)](tree-section.md)
+- [Finite-state automorphisms of the regular rooted tree (Kourovka 16.85)](is-finite-state-aut.md)
+- [Faithful actions by finite-state tree automorphisms](acts-faithfully-by-finite-state-auts.md)
+- [Finite-state actions of free products (Kourovka Problem 16.85)](finite-state-free-product.md)
+- [Fedorova–Oliynyk theorem (Kourovka Problem 16.85)](finite-state-free-product-holds.md)

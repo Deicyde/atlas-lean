@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbelianLocallyQuaternionProductKourovka18Problem95Wanted.abelianLocallyQuaternionProductSoluble
 ---
 
-# Abelian Locally Quaternion Product Soluble
+# Kourovka Problem 18.95 (Sozutov)
 
-Kourovka 18.95 (A. I. Sozutov): a group `G = AB` that is the product of an abelian subgroup `A`
-and a locally quaternion subgroup `B` is soluble.
+**Kourovka Problem 18.95 (Sozutov).** The proposition that every group $G$ with subgroups $A$
+and $B$ such that $A$ is abelian, $B$ is locally quaternion, and $G = AB$ (every element of $G$ is a
+product $ab$ with $a \in A$ and $b \in B$) is soluble.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Locally Quaternion](is-locally-quaternion.md)
+- [Locally quaternion subgroup](is-locally-quaternion.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SolvableLERFBaumslagSolitarKourovka16Problem2Wanted.IsSeparableSubgroup
 ---
 
-# Is Separable Subgroup
+# Separable subgroup
 
-The subgroup `H` of `G` is separable: every `x ∉ H` stays outside the image of `H` under some
-homomorphism to a finite group.
+**Separable subgroup.** A subgroup $H$ of a group $G$ is separable when for every element
+$x \in G$ with $x \notin H$ there are a finite group $F$ and a group homomorphism
+$f \colon G \to F$ with $f(x) \notin f(H)$.
 
 ## Depends on
 

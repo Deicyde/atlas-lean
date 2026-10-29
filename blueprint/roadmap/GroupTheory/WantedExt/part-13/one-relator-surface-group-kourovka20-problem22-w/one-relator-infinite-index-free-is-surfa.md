@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.oneRelatorInfiniteIndexFreeIsSurfaceGroup
 ---
 
-# One Relator Infinite Index Free Is Surface Group
+# Kourovka Problem 20.22 (statement)
 
-Kourovka 20.22 (B. Fine, G. Rosenberger, L. Wienke): a one-relator group that is neither free
-nor cyclic and all of whose subgroups of infinite index are free is a surface group.
+**Kourovka Problem 20.22 (statement).** The statement that every group $G$ with the following
+properties is a surface group: $G$ is isomorphic to $\langle x_1, \dots, x_n \mid r \rangle$ for
+some $n \ge 0$ and some element $r$ of the free group on $x_1, \dots, x_n$; $G$ is neither free nor
+cyclic; and every subgroup of infinite index in $G$ is free. Here $G$ is a surface group if it is
+isomorphic to $\langle a_1, b_1, \dots, a_g, b_g \mid [a_1, b_1] \cdots [a_g, b_g] \rangle$ for some
+$g \ge 1$, where $[a, b] = a b a^{-1} b^{-1}$, or to
+$\langle a_1, \dots, a_k \mid a_1^2 \cdots a_k^2 \rangle$ for some $k \ge 2$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is One Relator Group](is-one-relator-group.md)
-- [Is Surface Group](is-surface-group.md)
+- [One-relator groups with finitely many generators](is-one-relator-group.md)
+- [Surface groups](is-surface-group.md)
 
 ## Sources
 

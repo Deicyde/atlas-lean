@@ -4,6 +4,6 @@ navigation: module
 
 # PGroup Partition Abelian Component Kourovka15 Problem26
 
-- [Is Group Partition](is-group-partition.md)
-- [P Group Partition Has Abelian Component](p-group-partition-has-abelian-component.md)
-- [P Group Partition Has Abelian Component holds](p-group-partition-has-abelian-component-2.md)
+- [Partition of a group](is-group-partition.md)
+- [Berkovich's question on abelian components of partitions](p-group-partition-has-abelian-component.md)
+- [Every partition of a finite $p$-group has an abelian component](p-group-partition-has-abelian-component-2.md)

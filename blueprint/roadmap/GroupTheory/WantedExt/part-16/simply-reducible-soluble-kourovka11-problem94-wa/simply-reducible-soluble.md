@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimplyReducibleSolubleKourovka11Problem94Wanted.simplyReducibleSoluble
 ---
 
-# Simply Reducible Soluble
+# Solubility of finite simply reducible groups (Kourovka 11.94)
 
-Kourovka 11.94 (S. P. Strunkov): every finite simply reducible group is soluble.
+**Solubility of finite simply reducible groups (Kourovka 11.94).** The statement, asked by
+S. P. Strunkov as Kourovka Problem 11.94, that every finite simply reducible group is soluble.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Simply Reducible](is-simply-reducible.md)
+- [Simply reducible group](is-simply-reducible.md)
 
 ## Sources
 

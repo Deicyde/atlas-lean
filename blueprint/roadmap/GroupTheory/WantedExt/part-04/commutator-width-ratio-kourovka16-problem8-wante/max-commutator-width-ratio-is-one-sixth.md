@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Commutator Width](commutator-width.md)
+- [Commutator width of the derived subgroup](commutator-width.md)
 
 ## Sources
 

@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Modal.Derivable.valid_S4
 ---
 
-# Valid S4
+# Soundness of S4 for reflexive transitive Kripke models
 
-S4-theorems are valid in every reflexive transitive Kripke model.
+**Soundness of S4 for reflexive transitive Kripke models.** If the accessibility relation of
+a Kripke model $M$ is reflexive and transitive, then every formula derivable in the modal logic
+S4 is valid in $M$, that is, it holds at every world of $M$.
 
 ## Depends on
 
-- [S4](s4.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S4](s4.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Soundness](valid.md)
-- [Axiom Four](../kripke/axiom-four.md)
+- [Soundness of modal Hilbert systems for Kripke models](valid.md)
+- [Axiom 4](../kripke/axiom-four.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Valid axiom Four](../kripke/valid-axiom-four.md)
-- [Valid axiom T](../kripke/valid-axiom-t.md)
+- [Axiom 4 is valid on transitive Kripke models](../kripke/valid-axiom-four.md)
+- [Axiom T is valid on reflexive Kripke models](../kripke/valid-axiom-t.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DPiHallIntersectionKourovka18Problem31Wanted.IsPiNumber
 ---
 
-# Is Pi Number
+# π-numbers (Kourovka 18.31)
 
-`n` is a `π`-number: every prime divisor of `n` lies in `π`.
+**π-numbers (Kourovka 18.31).** Let $\pi$ be a set of natural numbers. A natural number $n$
+is a $\pi$-number when every prime divisor of $n$ lies in $\pi$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SchmidtSubgroupsPrimeSubnormalKourovka18Problem30Wanted.schmidtSubgroupsPSubnormalImpliesSoluble
 ---
 
-# Schmidt Subgroups PSubnormal Implies Soluble
+# Claim of Kourovka Problem 18.30
 
-Kourovka 18.30 (A. F. Vasil'ev, T. I. Vasil'eva, V. N. Tyutyanov): a finite group in which every
-Schmidt subgroup is `ℙ`-subnormal is soluble.
+**Claim of Kourovka Problem 18.30.** The statement that every finite group in which every
+Schmidt subgroup is $\mathbb{P}$-subnormal is soluble. The problem is due to A. F. Vasil'ev,
+T. I. Vasil'eva and V. N. Tyutyanov.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is PSubnormal](is-psubnormal.md)
-- [Is Schmidt Subgroup](is-schmidt-subgroup.md)
+- [$\mathbb{P}$-subnormal subgroup](is-psubnormal.md)
+- [Schmidt subgroup](is-schmidt-subgroup.md)
 
 ## Sources
 

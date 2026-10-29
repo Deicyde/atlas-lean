@@ -6,29 +6,16 @@ proof: formalized
 lean: Cslib.LTL.Word.Satisfies.atom_iff
 ---
 
-# Atom iff
+# Satisfaction of an atom
 
-Satisfaction is well defined on suffixes: position `j` of the suffix at `k` is position
-`k + j` of the word. -/
-theorem satisfiesAt_drop {k j : ℕ} :
-    SatisfiesAt valuation (w.drop k) j φ ↔ SatisfiesAt valuation w (k + j) φ := by
-  rw [SatisfiesAt, SatisfiesAt, ωSequence.drop_drop]
-
-theorem satisfies_drop {k : ℕ} :
-    Satisfies valuation (w.drop k) φ ↔ SatisfiesAt valuation w k φ :=
-  Iff.rfl
-
-theorem satisfies_tail : Satisfies valuation w.tail φ ↔ SatisfiesAt valuation w 1 φ :=
-  Iff.rfl
-
-namespace Satisfies
-
-/-! ### Primitive connectives
+**Satisfaction of an atom.** For every valuation $v$ of atoms on letters, every ω-word $w$
+and every atom $a$, the word $w$ satisfies the atomic formula $a$ under $v$ if and only if $v$
+makes $a$ true at the first letter $w_0$ of $w$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies](satisfies.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Sources
 

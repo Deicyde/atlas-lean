@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PropermutableSubgroupKourovka18Problem91Wanted.propermutableNotInIntermediate
 ---
 
-# Propermutable Not In Intermediate
+# Kourovka Problem 18.91(a) (statement)
 
-Kourovka 18.91(a) (A. N. Skiba): there are a finite group `G` and subgroups `A ≤ B ≤ G` such
-that `A` is propermutable in `G` but not in `B`.
+**Kourovka Problem 18.91(a) (statement).** The statement of Kourovka Problem 18.91(a)
+(A. N. Skiba): there exist a finite group $G$ and subgroups $A \le B \le G$ such that $A$ is
+propermutable in $G$ but $A$, regarded as a subgroup of $B$, is not propermutable in $B$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Propermutable](is-propermutable.md)
+- [Propermutable subgroups](is-propermutable.md)
 
 ## Sources
 

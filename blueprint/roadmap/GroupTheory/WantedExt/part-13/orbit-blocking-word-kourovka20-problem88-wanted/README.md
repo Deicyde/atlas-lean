@@ -4,5 +4,5 @@ navigation: module
 
 # Orbit Blocking Word Kourovka20 Problem88
 
-- [Exists Orbit Blocking Word](exists-orbit-blocking-word.md)
-- [Exists Orbit Blocking Word holds](exists-orbit-blocking-word-holds.md)
+- [Kourovka Problem 20.88 (statement)](exists-orbit-blocking-word.md)
+- [Orbit-blocking words exist (Kourovka Problem 20.88)](exists-orbit-blocking-word-holds.md)

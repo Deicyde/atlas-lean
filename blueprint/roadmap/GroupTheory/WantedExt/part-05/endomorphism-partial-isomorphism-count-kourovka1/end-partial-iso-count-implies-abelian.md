@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EndomorphismPartialIsomorphismCountKourovka19Problem20Wanted.endPartialIsoCountImpliesAbelian
 ---
 
-# End Partial Iso Count Implies Abelian
+# Kourovka Problem 19.20 (Cameron)
 
-Kourovka 19.20 (P. J. Cameron): a finite group `G` with `|End(G)| = |PIso(G)|` is abelian,
-where `PIso(G)` is the set of partial isomorphisms of `G` (isomorphisms `H ≃ K` between subgroups
-`H`, `K` of `G`).
+**Kourovka Problem 19.20 (Cameron).** The statement that every finite group $G$ with
+$|\mathrm{End}(G)| = |\mathrm{PIso}(G)|$ is abelian. Here $\mathrm{End}(G)$ is the set of
+endomorphisms of $G$, and $\mathrm{PIso}(G)$ is the set of partial isomorphisms of $G$: the triples
+$(H, K, f)$ of subgroups $H$, $K$ of $G$ and an isomorphism $f \colon H \to K$.
 
 ## Depends on
 

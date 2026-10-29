@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClosedSubgroupFunctorLatticeWidthKourovka16Problem82Wanted.SubgroupAssignment
 ---
 
-# Subgroup Assignment
+# Subgroup assignments
 
-An assignment of a set `τ(G)` of subgroups to every finite group `G`.
+**Subgroup assignments.** A subgroup assignment $\tau$ assigns to every finite group $G$ (with
+carrier in the lowest type universe) a set $\tau(G)$ of subgroups of $G$.
 
 ## Depends on
 

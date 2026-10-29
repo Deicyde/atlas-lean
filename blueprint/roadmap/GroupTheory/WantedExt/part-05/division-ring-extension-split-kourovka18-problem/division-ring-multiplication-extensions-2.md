@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DivisionRingExtensionSplitKourovka18Problem76Wanted.divisionRingMultiplicationExtensionsSplit_refuted
 ---
 
-# Division Ring Multiplication Extensions Split refuted
+# Extensions of a division ring's additive group by units need not split (Kourovka 18.76)
 
-Resolved false: the Kourovka Notebook (21st issue) answers 18.76 "No, not always", by AI-generated
-solutions confirmed by B. A. F. Wehrfritz (Jayadevan; Kinyon-Urban, 2026). In Kinyon-Urban, `G = F ×
-L` is a product of two free groups of rank `2` inside a division ring `D` (Mal'cev-Neumann), and an
-extension of `(D, +)` by `G` with conjugation acting by left multiplication has no splitting.
+**Extensions of a division ring's additive group by units need not split (Kourovka 18.76).**
+There exist a division ring $A$, a subgroup $G$ of its unit group $A^\times$, a group $E$, an
+injective homomorphism $i$ from the additive group of $A$ to $E$ and a surjective homomorphism
+$\pi : E \to G$ whose kernel is the image of $i$, with $e \, i(a) \, e^{-1} = i(\pi(e) a)$ for all
+$e \in E$ and $a \in A$, such that no homomorphism $s : G \to E$ satisfies $\pi(s(g)) = g$ for all
+$g \in G$. That is, the splitting statement of Kourovka Problem 18.76 is false.
 
 ## Depends on
 
-- [Division Ring Multiplication Extensions Split](division-ring-multiplication-extensions.md)
+- [Palyutin's splitting problem for division rings (Kourovka 18.76)](division-ring-multiplication-extensions.md)
 
 ## Sources
 

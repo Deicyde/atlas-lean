@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Modal.Derivable.valid_T
 ---
 
-# Valid T
+# Soundness of T for reflexive Kripke models
 
-T-theorems are valid in every reflexive Kripke model.
+**Soundness of T for reflexive Kripke models.** If the accessibility relation of a Kripke
+model $M$ is reflexive, then every formula derivable in the modal logic T is valid in $M$, that
+is, it holds at every world of $M$.
 
 ## Depends on
 
-- [T](t.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of T](t.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Soundness](valid.md)
+- [Soundness of modal Hilbert systems for Kripke models](valid.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Valid axiom T](../kripke/valid-axiom-t.md)
+- [Axiom T is valid on reflexive Kripke models](../kripke/valid-axiom-t.md)
 
 ## Sources
 

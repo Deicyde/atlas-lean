@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.existsFinally_expansion
 ---
 
-# Exists Finally expansion
+# One-step expansion of $\mathsf{EF}$
 
-The one-step expansion of `EF φ`.
+**One-step expansion of $\mathsf{EF}$.** Let $\varphi$ be a CTL formula. In a labelled
+transition system with a valuation of the atoms at its states, a state $s$ satisfies
+$\mathsf{EF}\,\varphi$ if and only if $s$ satisfies $\varphi$ or $s$ satisfies
+$\mathsf{EX}\,\mathsf{EF}\,\varphi$, that is, some successor of $s$ satisfies
+$\mathsf{EF}\,\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Exists Finally](exists-finally.md)
-- [Satisfies](satisfies.md)
+- [CTL formulas](formula.md)
+- [Exists finally](exists-finally.md)
+- [Satisfaction of CTL formulas](satisfies.md)
 
 ## Proof depends on
 
-- [Exists Until expansion](exists-until-expansion.md)
+- [One-step expansion of $\mathrm{EU}$](exists-until-expansion.md)
 
 ## Sources
 

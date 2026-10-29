@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SylowMaximalSigmaSolubleSupplementKourovka19Problem87Wanted.sylowMaximalSigmaSolubleSupplement
 ---
 
-# Sylow Maximal Sigma Soluble Supplement
+# Kourovka Problem 19.87 (statement)
 
-Kourovka 19.87 (A. N. Skiba): for every partition `σ` of the primes, if for every Sylow
-subgroup `P` of a finite group `G` and every maximal subgroup `V` of `P` there is a `σ`-soluble
-subgroup `T` with `V T = G`, then `G` is `σ`-soluble.
+**Kourovka Problem 19.87 (statement).** The statement that for every partition $\sigma$ of the
+set of all primes and every finite group $G$: if for every prime $p$, every Sylow $p$-subgroup $P$
+of $G$ and every maximal subgroup $V$ of $P$ there is a $\sigma$-soluble subgroup $T$ of $G$ with
+$VT = G$, that is, every element of $G$ is a product $vt$ with $v \in V$ and $t \in T$, then $G$ is
+$\sigma$-soluble. Here a partition of the primes is a family of nonempty, pairwise disjoint sets of
+primes whose union is the set of all primes, and a group is $\sigma$-soluble when for every chief
+factor $A/B$ of it (normal subgroups $B < A$ with no normal subgroup strictly between them) all
+prime divisors of the index $|A : B|$ lie in a single block of $\sigma$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime Partition](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
-- [Is Sigma Soluble](../../part-10/kourovka-notebook-shared/is-sigma-soluble.md)
+- [Partitions of the primes](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
+- [$\sigma$-soluble groups](../../part-10/kourovka-notebook-shared/is-sigma-soluble.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EAutomorphismNilAutomorphismKourovka11Problem23Wanted.IsEAutomorphism
 ---
 
-# Is EAutomorphism
+# $e$-automorphisms
 
-`φ` is an `e`-automorphism: for any two `φ`-invariant subgroups `A ⊄ B` (`φ(A) = A` and
-`φ(B) = B`), some `a ∈ A \ B` has `[a, φ] ∈ B`.
+**$e$-automorphisms.** An automorphism $\varphi$ of a group $G$ is an $e$-automorphism if for
+any two subgroups $A$ and $B$ of $G$ with $\varphi(A) = A$, $\varphi(B) = B$ and
+$A \not\subseteq B$, some $a \in A \setminus B$ has $[a, \varphi] = a^{-1} \varphi(a) \in B$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Delta](delta.md)
+- [The commutator of an element with an automorphism](delta.md)
 
 ## Sources
 

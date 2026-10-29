@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoGroupNormalClosureConjugateKourovka12Problem15Wanted.normalClosureConjDerivedAbelian
 ---
 
-# Normal Closure Conj Derived Abelian
+# Golikova–Starostin question on finite $2$-groups in which normal closures determine conjugacy (Kourovka 12.15)
 
-Kourovka 12.15 (E. A. Golikova, A. I. Starostin): if in a finite 2-group `G` any two elements
-with the same normal closure are conjugate, then the derived subgroup of `G` is abelian.
+**Golikova–Starostin question on finite $2$-groups in which normal closures determine
+conjugacy (Kourovka 12.15).** The statement that for every finite $2$-group $G$ in which any two
+elements with the same normal closure are conjugate, the derived subgroup $G'$ of $G$ is
+abelian.
 
 ## Depends on
 

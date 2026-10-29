@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallPronormalNormalClosureKourovka18Problem32Wanted.IsHallSubgroup
 ---
 
-# Is Hall Subgroup
+# Hall subgroups (order coprime to index)
 
-`H` is a Hall subgroup: `|H|` is coprime to `|G : H|`.
+**Hall subgroups (order coprime to index).** A subgroup $H$ of a group $G$ is a Hall subgroup
+when its order $|H|$ is coprime to its index $|G : H|$.
 
 ## Depends on
 

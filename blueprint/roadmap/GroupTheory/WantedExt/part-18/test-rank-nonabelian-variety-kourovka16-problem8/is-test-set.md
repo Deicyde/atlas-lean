@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TestRankNonabelianVarietyKourovka16Problem87Wanted.IsTestSet
 ---
 
-# Is Test Set
+# Test set of a group
 
-A test set of `G`: every endomorphism of `G` that is the identity on `S` is an automorphism.
+**Test set of a group.** A subset $S$ of a group $G$ is a test set when every endomorphism of
+$G$ that fixes every element of $S$ is bijective, that is, an automorphism of $G$.
 
 ## Depends on
 

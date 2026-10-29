@@ -6,14 +6,18 @@ proof: formalized
 lean: DirichletCharacter.equivPrimitiveInducer_char
 ---
 
-# Equiv Primitive Inducer char
+# Character of the primitive inducer attached to a character
 
-The character of the primitive inducer of `χ` is its primitive character.
+**Character of the primitive inducer attached to a character.** Let $R$ be a commutative
+monoid with zero, let $m \ge 1$, and let $\chi$ be a Dirichlet character of level $m$ with values
+in $R$. The character of the primitive inducer that the bijection between Dirichlet characters of
+level $m$ and primitive inducers of modulus $m$ assigns to $\chi$, a Dirichlet character whose
+level is the conductor of $\chi$, is the primitive character associated to $\chi$.
 
 ## Depends on
 
-- [Primitive Inducer](primitive-inducer.md)
-- [Equiv Primitive Inducer](equiv-primitive-inducer.md)
+- [Primitive characters at divisor levels](primitive-inducer.md)
+- [Dirichlet characters correspond to primitive characters at divisor levels](equiv-primitive-inducer.md)
 
 ## Sources
 

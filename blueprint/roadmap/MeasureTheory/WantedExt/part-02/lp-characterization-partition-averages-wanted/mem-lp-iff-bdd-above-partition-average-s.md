@@ -5,18 +5,22 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.LpCharacterizationPartitionAveragesWanted.memLp_iff_bddAbove_partitionAverageSum
 ---
 
-# Mem Lp iff bdd Above partition Average Sum
+# $L^p$ on $(0,1)$ via averages over partitions
 
-Let $f \in L^1([0, 1])$ and let $1 < p < \infty$. Prove that $f \in L^p([0, 1])$ if and only if
-\[
-\sup_{\{I_j\}} \sum_j |I_j| \left(\frac{1}{|I_j|}\int_{I_j} |f|\right)^p < \infty,
-\]
-where the supremum is taken over all finite partitions of $[0, 1]$ into intervals $\{I_j\}$.
+**$L^p$ on $[0,1]$ via averages over partitions.** Let $f : \mathbb{R} \to \mathbb{R}$ be in
+$L^1([0, 1])$ and let $p > 1$ be a real number. Then $f \in L^p([0, 1])$ if and only if there is
+a real number $C$ such that
+
+$$\sum_{i=0}^{n-1} (t_{i+1} - t_i)
+\left(\frac{1}{t_{i+1} - t_i} \int_{t_i}^{t_{i+1}} |f(x)|\,dx\right)^p \le C$$
+
+for every partition $0 = t_0 < t_1 < \dots < t_n = 1$ of $[0, 1]$. Here $L^1([0, 1])$ and
+$L^p([0, 1])$ are taken with respect to Lebesgue measure restricted to $[0, 1]$.
 
 ## Depends on
 
-- [Is Partition01](is-partition01.md)
-- [Partition Average Sum](partition-average-sum.md)
+- [Partitions of the unit interval](is-partition01.md)
+- [Partition average sum](partition-average-sum.md)
 
 ## Sources
 

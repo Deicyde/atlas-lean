@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Epistemic.valid_know_pos
 ---
 
-# Valid know pos
+# Positive introspection axiom 4
 
-4 axiom: positive introspection, on transitive relations.
+**Positive introspection axiom 4.** Write $K_i \varphi$ for "agent $i$ knows $\varphi$".
+Let $M$ be an epistemic model in which the accessibility relation $R_i$ of agent $i$ is
+transitive. Then for every formula $\varphi$, the formula $K_i \varphi \to K_i K_i \varphi$ is
+valid in $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
-- [Valid](valid.md)
+- [Epistemic formulas](formula.md)
+- [Epistemic models](model.md)
+- [Validity in an epistemic model](valid.md)
 
 ## Proof depends on
 
-- [Sat](sat.md)
+- [Satisfaction in an epistemic model](sat.md)
 
 ## Sources
 

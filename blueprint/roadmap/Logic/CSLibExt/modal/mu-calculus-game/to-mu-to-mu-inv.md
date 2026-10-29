@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.toMu_toMuInv
 ---
 
-# To Mu to Mu Inv
+# The embedding inverts the partial inverse
 
-`toMu` inverts `toMuInv` on its image.
+**The embedding inverts the partial inverse.** For every μ-calculus formula $\psi$ and every
+fixpoint-free formula $\varphi$: if the partial inverse of the embedding of fixpoint-free
+formulas into μ-calculus formulas is defined at $\psi$ with value $\varphi$, then the embedding
+sends $\varphi$ to $\psi$.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [To Mu Inv](to-mu-inv.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Partial inverse of the fixpoint-free embedding](to-mu-inv.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

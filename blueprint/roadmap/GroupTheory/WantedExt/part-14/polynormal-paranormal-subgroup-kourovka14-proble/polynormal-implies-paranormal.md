@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Paranormal](is-paranormal.md)
-- [Is Polynormal](is-polynormal.md)
+- [Paranormal subgroup](is-paranormal.md)
+- [Polynormal subgroup](is-polynormal.md)
 
 ## Sources
 

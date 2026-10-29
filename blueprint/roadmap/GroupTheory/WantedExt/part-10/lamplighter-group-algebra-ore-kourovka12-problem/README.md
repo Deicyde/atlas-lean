@@ -4,9 +4,9 @@ navigation: module
 
 # Lamplighter Group Algebra Ore Kourovka12 Problem47
 
-- [Shift](shift.md)
-- [Lamplighter](lamplighter.md)
-- [Is Non Zero Divisor](is-non-zero-divisor.md)
-- [Is Ore Ring](is-ore-ring.md)
-- [Lamplighter Group Algebra Ore](lamplighter-group-algebra-ore.md)
-- [Lamplighter Group Algebra Ore refuted](lamplighter-group-algebra-ore-refuted.md)
+- [Shift of the lamplighter base group](shift.md)
+- [Lamplighter group](lamplighter.md)
+- [Non-zero-divisor](is-non-zero-divisor.md)
+- [Right Ore ring](is-ore-ring.md)
+- [Kourovka Problem 12.47: some lamplighter group algebra is Ore](lamplighter-group-algebra-ore.md)
+- [Lamplighter group algebras are not Ore](lamplighter-group-algebra-ore-refuted.md)

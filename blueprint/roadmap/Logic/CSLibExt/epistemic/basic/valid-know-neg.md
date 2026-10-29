@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Epistemic.valid_know_neg
 ---
 
-# Valid know neg
+# Negative introspection axiom 5
 
-5 axiom: negative introspection, on euclidean relations.
+**Negative introspection axiom 5.** Write $K_i \varphi$ for "agent $i$ knows $\varphi$".
+Let $M$ be an epistemic model in which the accessibility relation $R_i$ of agent $i$ is
+euclidean: for all worlds $a$, $b$, $c$, if $a \mathrel{R_i} b$ and $a \mathrel{R_i} c$ then
+$b \mathrel{R_i} c$. Then for every formula $\varphi$, the formula
+$\neg K_i \varphi \to K_i \neg K_i \varphi$ is valid in $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Not](not.md)
-- [Model](model.md)
-- [Valid](valid.md)
+- [Epistemic formulas](formula.md)
+- [Negation of epistemic formulas](not.md)
+- [Epistemic models](model.md)
+- [Validity in an epistemic model](valid.md)
 
 ## Proof depends on
 
-- [Sat](sat.md)
+- [Satisfaction in an epistemic model](sat.md)
 
 ## Sources
 

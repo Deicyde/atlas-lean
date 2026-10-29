@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassPreservingAutomorphismsInnerKourovka16Problem62Wanted.classPreservingAutomorphismsInner
 ---
 
-# Class Preserving Automorphisms Inner
+# Claim of Kourovka Problem 16.62
 
-Kourovka 16.62 (D. MacHale): if every automorphism of a group `G` maps every conjugacy class of
-`G` onto itself, then every automorphism of `G` is inner.
+**Claim of Kourovka Problem 16.62.** For every group $G$: if every automorphism of $G$ sends
+each element $g \in G$ to a conjugate of $g$ (equivalently, maps every conjugacy class of $G$ into
+itself), then every automorphism of $G$ is inner, that is, of the form $x \mapsto h x h^{-1}$ for
+some $h \in G$.
 
 ## Depends on
 

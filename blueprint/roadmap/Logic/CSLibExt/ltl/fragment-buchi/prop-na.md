@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.LTL.propNa
 ---
 
-# Prop Na
+# Büchi automaton for a propositional formula
 
-The automaton for a propositional formula: it records the verdict on the
-first letter in its state (`some true` / `some false`) and then stays put,
-accepting in `some true`.
+**Büchi automaton for a propositional formula.** For a propositional formula $\varphi$, this
+Büchi automaton over letters that are sets of atoms has a start state $u$ and two verdict states
+$t$ and $f$, of which only $t$ is accepting. From $u$, on a letter $s$ it moves to $t$ if
+$\varphi$ evaluates to true at $s$ and to $f$ otherwise; from $t$ and from $f$ it stays in the
+same state on every letter. So it records the verdict of $\varphi$ on the first letter.
 
 ## Depends on
 
-- [Prop Formula](prop-formula.md)
+- [Propositional formulas](prop-formula.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Evaluating a propositional formula at a letter](eval.md)
 
 ## Sources
 

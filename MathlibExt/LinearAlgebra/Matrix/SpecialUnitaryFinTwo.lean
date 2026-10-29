@@ -179,9 +179,10 @@ end Matrix
 
 namespace Matrix
 
-/-- A complex `2 × 2` matrix is special unitary exactly when it has the standard
-conjugate-entry form with normalized parameters. The forward direction is the
-existing matrix-form theorem; the converse verifies unitarity and determinant one. -/
+/-- **Characterization of $\mathrm{SU}(2)$.** A complex $2 \times 2$ matrix $M$ lies in the
+special unitary group $\mathrm{SU}(2)$, that is, $M$ is unitary with determinant $1$, if and
+only if there are complex numbers $\alpha, \beta$ with $|\alpha|^2 + |\beta|^2 = 1$ such that
+the first row of $M$ is $(\alpha, \beta)$ and the second row is $(-\bar\beta, \bar\alpha)$. -/
 theorem mem_specialUnitaryGroup_fin_two_iff {M : Matrix (Fin 2) (Fin 2) ℂ} :
     M ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ ↔
       ∃ α β : ℂ, M = !![α, β; -starRingEnd ℂ β, starRingEnd ℂ α] ∧

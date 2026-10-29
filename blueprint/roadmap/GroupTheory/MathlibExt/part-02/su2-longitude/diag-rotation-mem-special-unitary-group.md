@@ -19,7 +19,7 @@ determinant $1$, that is, it lies in $\mathrm{SU}(2)$.
 ## Proof depends on
 
 - [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
-- [Star diag Rotation](star-diag-rotation.md)
+- [Conjugate transpose of a diagonal rotation](star-diag-rotation.md)
 
 ## Sources
 

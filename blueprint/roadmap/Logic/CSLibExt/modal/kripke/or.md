@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Modal.Formula.or
 ---
 
-# Or
+# Disjunction of modal formulas
 
-Disjunction encoded using implication and falsity.
+**Disjunction of modal formulas.** The disjunction of modal formulas $\varphi$ and $\psi$ is
+the formula $\varphi \lor \psi := \neg\varphi \to \psi$, where $\neg\varphi$ is
+$\varphi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Proof depends on
 
-- [Neg](neg.md)
+- [Negation of modal formulas](neg.md)
 
 ## Sources
 

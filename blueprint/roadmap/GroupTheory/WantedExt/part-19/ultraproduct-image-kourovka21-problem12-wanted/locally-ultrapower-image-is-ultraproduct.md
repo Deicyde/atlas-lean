@@ -5,12 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.locallyUltrapowerImageIsUltraproductImage
 ---
 
-# Locally Ultrapower Image Is Ultraproduct Image
+# Bergman's question on images of countable ultraproducts (Kourovka 21.12)
 
-Kourovka 21.12 (G. M. Bergman), for some nonprincipal ultrafilter `U` on `ℕ`: every group
-`B` each of whose elements lies in a subgroup that is a homomorphic image of `ℤ^ω / U` is a
-homomorphic image of an ultraproduct `(∏ᵢ Gᵢ) / U`, i.e. of `∏ᵢ Gᵢ` by a surjective homomorphism
-killing every family that is `1` at `U`-almost every index.
+**Bergman's question on images of countable ultraproducts (Kourovka 21.12).** There is a
+nonprincipal ultrafilter $U$ on $\mathbb{N}$ such that every group $B$ that is locally an image of
+the ultrapower $\mathbb{Z}^{\mathbb{N}}/U$ (every element of $B$ lies in a subgroup of $B$ that is
+a homomorphic image of $\mathbb{Z}^{\mathbb{N}}/U$) is a homomorphic image of an ultraproduct
+$(\prod_{i \in \mathbb{N}} G_i)/U$: there are groups $G_i$, $i \in \mathbb{N}$, and a surjective
+homomorphism $\varphi \colon \prod_i G_i \to B$ such that $\varphi(f) = 1$ for every family $f$
+with $f_i = 1$ for $U$-almost every $i$.
+
+The question is posed for a fixed nonprincipal $U$; it is stated here for some $U$, so that its
+refutation covers every $U$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Locally Ultrapower Image](is-locally-ultrapower-image.md)
+- [Groups locally an image of the ultrapower $\mathbb{Z}^{\mathbb{N}}/U$](is-locally-ultrapower-image.md)
 
 ## Sources
 

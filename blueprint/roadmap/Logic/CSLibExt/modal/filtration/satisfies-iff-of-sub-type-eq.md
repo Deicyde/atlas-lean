@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Modal.satisfies_iff_of_subType_eq
 ---
 
-# Satisfies iff of sub Type eq
+# Worlds of the same type agree on subformulas
 
-Worlds of the same type agree on the formulas of `sub φ`.
+**Worlds of the same type agree on subformulas.** Let $M$ be a Kripke model and $\varphi$ a
+modal formula, and call the set of subformulas of $\varphi$ true at a world $w$ of $M$ the type
+of $w$. If two worlds $w$ and $v$ of $M$ have the same type, then every subformula $\psi$ of
+$\varphi$ holds at $w$ iff it holds at $v$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [Sub](sub.md)
+- [Modal formulas](../kripke/formula.md)
+- [Subformulas](sub.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Sub Type](sub-type.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

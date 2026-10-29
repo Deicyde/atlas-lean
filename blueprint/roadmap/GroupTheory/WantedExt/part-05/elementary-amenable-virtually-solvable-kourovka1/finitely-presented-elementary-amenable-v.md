@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementaryAmenableVirtuallySolvableKourovka16Problem52Wanted.finitelyPresentedElementaryAmenableVirtuallySolvable
 ---
 
-# Finitely Presented Elementary Amenable Virtually Solvable
+# Kourovka Problem 16.52 (Linnell–Schick)
 
-Kourovka 16.52 (P. Linnell, T. Schick): every finitely presented elementary amenable group is
-solvable-by-finite (has a solvable subgroup of finite index).
+**Kourovka Problem 16.52 (Linnell–Schick).** The statement that every finitely presented
+elementary amenable group $G$ is solvable-by-finite, that is, $G$ has a solvable subgroup of finite
+index.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Elementary Amenable](is-elementary-amenable.md)
+- [Elementary amenable groups](is-elementary-amenable.md)
 
 ## Sources
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteModularLatticeFormationsKourovka13Problem51Wanted.finiteModularLatticeEmbedsInFormations
 ---
 
-# Finite Modular Lattice Embeds In Formations
+# Kourovka Problem 13.51 (Skiba): finite modular lattices embed in the lattice of formations
 
-Kourovka 13.51 (A. N. Skiba): every finite modular lattice `L` embeds in the lattice of
-formations of finite groups: there is an injective map from `L` to formations preserving binary
-meets and joins.
+**Kourovka Problem 13.51 (Skiba): finite modular lattices embed in the lattice of formations.**
+For every finite modular lattice $L$ there is an injective map $f$ from $L$ to the formations of
+finite groups such that, for all $a, b \in L$, $f(a \wedge b) = f(a) \cap f(b)$ and $f(a \vee
+b)$ is the smallest formation containing $f(a) \cup f(b)$.
+
+The map is not required to preserve the least or the greatest element.
 
 ## Depends on
 
@@ -17,10 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Group Class](finite-group-class.md)
-- [Is Formation](is-formation.md)
-- [Class Meet](class-meet.md)
-- [Formation Join](formation-join.md)
+- [Class of finite groups (Kourovka 13.51)](finite-group-class.md)
+- [Formation of finite groups (Kourovka 13.51)](is-formation.md)
+- [Intersection of classes of finite groups](class-meet.md)
+- [Join of formations (Kourovka 13.51)](formation-join.md)
 
 ## Sources
 

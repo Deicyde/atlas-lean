@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.elementOrders
 ---
 
-# Element Orders
+# Element-order spectrum of a group
 
-The spectrum `π_e(G)`: the set of orders of elements of `G`.
+**Element-order spectrum of a group.** The spectrum $\pi_e(G)$ of a group $G$ is the set of
+orders of the elements of $G$, where an element of infinite order counts as having order $0$.
 
 ## Depends on
 

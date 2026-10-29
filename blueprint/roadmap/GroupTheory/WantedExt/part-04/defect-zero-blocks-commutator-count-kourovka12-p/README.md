@@ -4,10 +4,10 @@ navigation: module
 
 # Defect Zero Blocks Commutator Count Kourovka12 Problem80
 
-- [Defect Zero Characters](defect-zero-characters.md)
-- [Commutator Solution Count](commutator-solution-count.md)
-- [Nondivisible Commutator Classes](nondivisible-commutator-classes.md)
-- [Defect Zero Blocks Eq Nondivisible Classes](defect-zero-blocks-eq-nondivisible-class.md)
-- [Simple Defect Zero Blocks Eq Nondivisible Classes](simple-defect-zero-blocks-eq-nondivisibl.md)
-- [Defect Zero Blocks Eq Nondivisible Classes refuted](defect-zero-blocks-eq-nondivisible-class-2.md)
-- [Simple Defect Zero Blocks Eq Nondivisible Classes refuted](simple-defect-zero-blocks-eq-nondivisibl-2.md)
+- [Characters of $p$-defect zero](defect-zero-characters.md)
+- [Number of solutions of a commutator equation](commutator-solution-count.md)
+- [Conjugacy classes with commutator count not divisible by $p$](nondivisible-commutator-classes.md)
+- [Kourovka Problem 12.80(a): blocks of defect zero and commutator equations](defect-zero-blocks-eq-nondivisible-class.md)
+- [Kourovka Problem 12.80(b): the case of simple groups](simple-defect-zero-blocks-eq-nondivisibl.md)
+- [Kourovka Problem 12.80(a) has a negative answer](defect-zero-blocks-eq-nondivisible-class-2.md)
+- [Kourovka Problem 12.80(b) has a negative answer](simple-defect-zero-blocks-eq-nondivisibl-2.md)

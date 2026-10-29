@@ -6,24 +6,25 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.cePlay_mem
 ---
 
-# Ce Play mem
+# The regression play stays on the cycle
 
-Every position of the regression play is one of the three cycle positions.
+**The regression play stays on the cycle.** For every $n \in \mathbb{N}$, the position at
+step $n$ of the regression play is the first, the second or the third cycle position.
 
 ## Depends on
 
 - [Game Position](game-position.md)
-- [Ce Play](ce-play.md)
-- [Ce Pos0](ce-pos0.md)
-- [Ce Pos1](ce-pos1.md)
-- [Ce Pos2](ce-pos2.md)
+- [The regression play](ce-play.md)
+- [Starting position of the regression play](ce-pos0.md)
+- [Second position of the regression play](ce-pos1.md)
+- [Third position of the regression play](ce-pos2.md)
 
 ## Proof depends on
 
-- [Ce Next](ce-next.md)
-- [Ce Next ce Pos0](ce-next-ce-pos0.md)
-- [Ce Next ce Pos1](ce-next-ce-pos1.md)
-- [Ce Next ce Pos2](ce-next-ce-pos2.md)
+- [Step map of the regression play](ce-next.md)
+- [Regression cycle, first step](ce-next-ce-pos0.md)
+- [Regression cycle, second step](ce-next-ce-pos1.md)
+- [Regression cycle, third step](ce-next-ce-pos2.md)
 
 ## Sources
 

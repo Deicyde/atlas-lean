@@ -4,5 +4,5 @@ navigation: module
 
 # Four Subset Nilpotent Pair Kourovka17 Problem3
 
-- [Four Subset Nilpotent Pair Two Generated Nilpotent](four-subset-nilpotent-pair-two-generated.md)
-- [Four Subset Nilpotent Pair Two Generated Nilpotent refuted](four-subset-nilpotent-pair-two-generated-2.md)
+- [Kourovka Problem 17.3 (Abdollahi's question on nilpotent pairs)](four-subset-nilpotent-pair-two-generated.md)
+- [Kourovka Problem 17.3 has a negative answer](four-subset-nilpotent-pair-two-generated-2.md)

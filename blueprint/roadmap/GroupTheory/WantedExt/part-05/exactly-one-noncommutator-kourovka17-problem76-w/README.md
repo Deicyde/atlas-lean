@@ -4,5 +4,5 @@ navigation: module
 
 # Exactly One Noncommutator Kourovka17 Problem76
 
-- [Exactly One Noncommutator](exactly-one-noncommutator.md)
-- [Exactly One Noncommutator holds](exactly-one-noncommutator-holds.md)
+- [Kourovka Problem 17.76 (finite groups with exactly one non-commutator)](exactly-one-noncommutator.md)
+- [A finite group with exactly one non-commutator](exactly-one-noncommutator-holds.md)

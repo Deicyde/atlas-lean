@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciInt
 ---
 
-# Tribonacci Int
+# Two-sided Tribonacci sequence
 
-The two-sided Tribonacci sequence normalized by `T₀ = 0` and `T₁ = T₂ = 1`.
-Nonnegative indices use `generalizedTribonacci 0 1 1`; a negative index
-`-(m+1)` uses the backward value at `m+1`.
+**Two-sided Tribonacci sequence.** The integer sequence $(T_n)_{n \in \mathbb{Z}}$ is defined on
+the nonnegative indices by $T_0 = 0$, $T_1 = T_2 = 1$ and $T_{n+3} = T_{n+2} + T_{n+1} + T_n$
+for $n \ge 0$, and on the negative indices by $T_{-1} = 0$, $T_{-2} = 1$ and
+$T_{-m-3} = T_{-m} - T_{-m-1} - T_{-m-2}$ for $m \ge 0$, the recurrence solved for its lowest
+term.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Tribonacci](../../part-06/generalized-tribonacci/generalized-tribonacci.md)
-- [Tribonacci Backward](tribonacci-backward.md)
+- [Generalized Tribonacci sequence](../../part-06/generalized-tribonacci/generalized-tribonacci.md)
+- [Backward half of the two-sided Tribonacci sequence](tribonacci-backward.md)
 
 ## Sources
 

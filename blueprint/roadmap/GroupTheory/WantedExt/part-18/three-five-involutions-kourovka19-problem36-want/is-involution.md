@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.IsInvolution
 ---
 
-# Is Involution
+# Involution
 
-`x` is an involution: `x² = 1` and `x ≠ 1`.
+**Involution.** An element $x$ of a group $G$ is an involution when $x^2 = 1$ and
+$x \ne 1$.
 
 ## Depends on
 

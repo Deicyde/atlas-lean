@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.KourovkaNotebookShared.IsConjugacySeparable
 ---
 
-# Is Conjugacy Separable
+# Conjugacy separable groups
 
-`G` is conjugacy separable: elements whose images are conjugate in every finite quotient
-`G / N` (`N` normal of finite index, written as `g x g⁻¹ y⁻¹ ∈ N` for some `g`) are conjugate in
-`G`.
+**Conjugacy separable groups.** A group $G$ is conjugacy separable if any two elements
+$x, y \in G$ whose images are conjugate in every quotient $G / N$ by a normal subgroup $N$ of
+finite index (that is, $g x g^{-1} y^{-1} \in N$ for some $g \in G$) are conjugate in $G$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SpecialLinearRationalDivisionRingKourovka11Problem110Wanted.specialLinearRationalEmbedsInDivisionRing
 ---
 
-# Special Linear Rational Embeds In Division Ring
+# Kourovka Problem 11.110 (B. Hartley)
 
-Kourovka 11.110 (B. Hartley): `SL(2, ℚ)` embeds in the multiplicative group of some division
-ring.
+**Kourovka Problem 11.110 (B. Hartley).** The group $\mathrm{SL}(2, \mathbb{Q})$ embeds in the
+multiplicative group of some division ring: there are a division ring $D$ and an injective group
+homomorphism $\mathrm{SL}(2, \mathbb{Q}) \to D^\times$.
 
 ## Depends on
 

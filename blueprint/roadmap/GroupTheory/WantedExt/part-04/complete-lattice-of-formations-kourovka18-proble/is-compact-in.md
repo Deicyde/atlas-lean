@@ -5,19 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompleteLatticeOfFormationsKourovka18Problem92Wanted.IsCompactIn
 ---
 
-# Is Compact In
+# Compact elements of a set of group classes
 
-`A` is compact in `Θ`: whenever `A` lies below the join of `S ⊆ Θ`, it lies below the join of
-some finite `S₁ ⊆ S`.
+**Compact elements of a set of group classes.** Let $\Theta$ be a set of classes of groups and
+$\mathfrak{A}$ a class of groups. Then $\mathfrak{A}$ is compact in $\Theta$ if, for every subset
+$S \subseteq \Theta$ and every join $\mathfrak{J}$ of $S$ in $\Theta$ with
+$\mathfrak{A} \subseteq \mathfrak{J}$, there are a finite subset $S_1 \subseteq S$ and a join
+$\mathfrak{J}_1$ of $S_1$ in $\Theta$ with $\mathfrak{A} \subseteq \mathfrak{J}_1$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 18.92)](group-class.md)
 
 ## Proof depends on
 
-- [Incl](incl.md)
-- [Is Join In](is-join-in.md)
+- [Inclusion of group classes](incl.md)
+- [Joins in a set of group classes](is-join-in.md)
 
 ## Sources
 

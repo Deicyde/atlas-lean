@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.GeneralizedTorsionFreeProductKourovka16Problem49Wanted.freeProductNoGeneralizedTorsion
 ---
 
-# Free Product No Generalized Torsion
+# Kopytov–Medvedev question on generalized torsion in free products (Kourovka 16.49)
 
-Kourovka 16.49 (V. M. Kopytov, N. Ya. Medvedev): a free product of groups without generalized
-torsion has no generalized torsion, stated for free products of arbitrary families.
+**Kopytov–Medvedev question on generalized torsion in free products (Kourovka 16.49).** The
+statement that for every family of groups $(G_i)_{i \in I}$ none of which contains a generalized
+torsion element (an element $h \ne 1$ such that some nonempty product of conjugates of $h$ is
+trivial), the free product of the family contains no generalized torsion element either.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Generalized Torsion](is-generalized-torsion.md)
+- [Generalized torsion element (Kourovka 16.49)](is-generalized-torsion.md)
 
 ## Sources
 

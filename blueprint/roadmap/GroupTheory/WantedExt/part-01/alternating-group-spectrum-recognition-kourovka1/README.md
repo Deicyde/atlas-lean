@@ -4,6 +4,6 @@ navigation: module
 
 # Alternating Group Spectrum Recognition Kourovka16 Problem107
 
-- [Element Orders](element-orders.md)
-- [Alternating Group Recognizable By Spectrum](alternating-group-recognizable-by-spectr.md)
-- [Alternating Group Recognizable By Spectrum holds](alternating-group-recognizable-by-spectr-2.md)
+- [Spectrum of a group](element-orders.md)
+- [Kourovka Problem 16.107 on recognition of alternating groups by spectrum](alternating-group-recognizable-by-spectr.md)
+- [Large alternating groups are recognizable by spectrum](alternating-group-recognizable-by-spectr-2.md)

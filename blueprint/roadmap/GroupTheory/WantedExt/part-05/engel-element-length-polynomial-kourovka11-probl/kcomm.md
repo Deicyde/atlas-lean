@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EngelElementLengthPolynomialKourovka11Problem88Wanted.kcomm
 ---
 
-# Kcomm
+# Commutator for Engel lengths
 
-The commutator `[x, y] = x⁻¹ y⁻¹ x y` (Kourovka convention).
+**Commutator for Engel lengths.** For elements $x$ and $y$ of a group, the commutator is
+$[x, y] = x^{-1} y^{-1} x y$ (the convention of the Kourovka Notebook).
 
 ## Depends on
 

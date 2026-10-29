@@ -5,28 +5,38 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.winsMove
 ---
 
-# Wins Move
+# Wins-guided move
 
-The Wins-guided move at a position: at Verifier-owned fragment positions, play a
-winning move; at other Verifier-owned positions, play any legal move (or stay put
-if none exists); at Refuter-owned positions, stay put (the value is ignored there).
-The disjunction case tests `Wins` of the *left* disjunct only: if it holds, play
-left; otherwise play right (which is winning whenever the disjunction is winning).
-Testing the disjunction itself and then casing on its proof would be large
-elimination of a `Prop` into data, which Lean forbids.
+**Wins-guided move.** Let $M$ be a Kripke model, and identify each fixpoint-free formula with
+its embedding into the μ-calculus. For a μ-calculus formula $\psi$, a world $w$ and a stack $s$
+of fixpoint binders, the Wins-guided move at the game position $(\psi, w, s)$ is the following
+position. If $s$ is empty and $\psi$ is a fixpoint-free disjunction $\psi_1 \lor \psi_2$, it is
+$(\psi_1, w, [])$ when $\psi_1$ is winning at $w$ (in the backward-induction winning region of
+the fixpoint-free fragment) and $(\psi_2, w, [])$ otherwise. If $s$ is empty and $\psi$ is a
+fixpoint-free formula $\Diamond \psi_1$, it is $(\psi_1, v, [])$ for a chosen successor $v$ of
+$w$ at which $\psi_1$ is winning, if one exists; otherwise $(\psi_1, v, [])$ for a chosen
+successor $v$ of $w$, if one exists; otherwise $(\psi, w, [])$. In every other case: at a
+disjunction $\varphi_1 \lor \varphi_2$ it is $(\varphi_1, w, s)$; at $\Diamond \varphi_1$ it is
+$(\varphi_1, v, s)$ for a chosen successor $v$ of $w$ if one exists, and $(\psi, w, s)$
+otherwise; at $\nu \varphi_1$ it is $(\varphi_1, w, s')$, where $s'$ is $s$ with
+$\nu \varphi_1$ pushed on top; and at every remaining formula (the positions owned by Refuter)
+it is $(\psi, w, s)$.
+
+Only the left disjunct is tested: if a fixpoint-free disjunction is winning at $w$ and its left
+disjunct is not, then its right disjunct is.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
 - [Game Position](game-position.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [Wins](wins.md)
-- [To Mu Inv](to-mu-inv.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Backward-induction winning region of the fixpoint-free fragment](wins.md)
+- [Partial inverse of the fixpoint-free embedding](to-mu-inv.md)
 
 ## Sources
 

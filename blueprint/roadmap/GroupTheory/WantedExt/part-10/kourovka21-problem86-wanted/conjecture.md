@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem86Wanted.conjecture
 ---
 
-# Conjecture
+# Soficity problem (Kourovka Notebook Problem 21.86)
 
-Kourovka Notebook Problem 21.86: is every group sofic [KOU-21.86].
+**Soficity problem (Kourovka Notebook Problem 21.86).** The statement that every group $G$ is
+sofic [KOU-21.86].
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sofic](is-sofic.md)
+- [Sofic groups](is-sofic.md)
 
 ## Sources
 

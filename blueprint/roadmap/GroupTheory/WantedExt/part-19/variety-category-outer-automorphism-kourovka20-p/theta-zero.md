@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.VarietyCategoryOuterAutomorphismKourovka20Problem72Wanted.ThetaZero
 ---
 
-# Theta Zero
+# Plotkin's category of free groups of a variety
 
-Plotkin's category `Θ⁰` of the variety `Θ` defined by `W`: its objects are the free groups
-`F_Θ(X)` for the finite subsets `X` of `X⁰ = ℕ`, its morphisms all group homomorphisms.
+**Plotkin's category of free groups of a variety.** Let $W$ be a set of words in the free group
+on $x_0, x_1, \ldots$, defining a variety $\Theta$. The category $\Theta^0$ has one object for each
+finite subset $X$ of $X^0 = \mathbb{N}$, namely the free group $F_\Theta(X)$ of $\Theta$ on $X$, and
+its morphisms are all group homomorphisms between these groups.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Relatively Free Group](relatively-free-group.md)
+- [Free group of a variety on a finite set](relatively-free-group.md)
 
 ## Sources
 

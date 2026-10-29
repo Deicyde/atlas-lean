@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DensePartitionExpansiveSequenceKourovka15Problem80Wanted.IsExpansiveSequence
 ---
 
-# Is Expansive Sequence
+# Expansive sequence
 
-A sequence of pairwise disjoint finite sets `F n` is expansive if every nonempty open set meets
-`F n` for all large `n`.
+**Expansive sequence.** In a topological space $G$, a sequence $(F_n)_{n \in \mathbb{N}}$ of
+finite subsets of $G$ is expansive if the sets $F_n$ are pairwise disjoint and for every nonempty
+open set $U \subseteq G$ there is $m \in \mathbb{N}$ such that $F_n$ meets $U$ for all $n > m$.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct
 ---
 
-# Abelian Image Of Ultraproduct Is Image Of Abelian Ultraproduct
+# Kourovka Problem 20.13(a) (Bergman)
 
-Kourovka 20.13(a) (G. M. Bergman): an abelian group that is a homomorphic image of a
-nonprincipal ultraproduct of a countable family of (not necessarily abelian) groups is a
-homomorphic image of a nonprincipal ultraproduct of a countable family of abelian groups.
+**Kourovka Problem 20.13(a) (Bergman).** The proposition that for every abelian group $A$, every
+sequence $(G_i)_{i \in \mathbb{N}}$ of (not necessarily abelian) groups and every nonprincipal
+ultrafilter $U$ on $\mathbb{N}$ (one containing every cofinite set), if there is a surjective
+homomorphism from the ultraproduct $\left(\prod_i G_i\right)/U$ onto $A$, then there are a sequence
+$(H_i)_{i \in \mathbb{N}}$ of abelian groups and a nonprincipal ultrafilter $V$ on $\mathbb{N}$
+with a surjective homomorphism from $\left(\prod_i H_i\right)/V$ onto $A$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ultraproduct](ultraproduct.md)
-- [Ultraproduct Kernel](ultraproduct-kernel.md)
+- [Ultraproduct of a sequence of groups](ultraproduct.md)
+- [Ultraproduct kernel](ultraproduct-kernel.md)
 
 ## Sources
 

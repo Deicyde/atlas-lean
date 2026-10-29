@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimalNonNilpotentPermutableCoreKourovka17Problem56Wanted.permutesMinimalNonNilpotentCoreQuotientNilpotent_refuted
 ---
 
-# Permutes Minimal Non Nilpotent Core Quotient Nilpotent refuted
+# Permutability with minimal non-nilpotent subgroups does not force a nilpotent core quotient
 
-Resolved false: the Kourovka Notebook (21st issue) answers 17.56 "No, not always", citing
-Ballester-Bolinches, Esteban-Romero, Kamornikov and Pérez-Calabuig (2022): some subgroup `H` of a
-finite group `G` permutes with every minimal non-nilpotent subgroup while `H/H_G` is not nilpotent.
+**Permutability with minimal non-nilpotent subgroups does not force a nilpotent core quotient.**
+There exist a finite group $G$ and a subgroup $H$ of $G$ with $HM = MH$ (as sets of products) for
+every minimal non-nilpotent subgroup $M$ of $G$ such that the quotient $H/H_G$ is not nilpotent,
+where the normal core $H_G$ is the largest normal subgroup of $G$ contained in $H$.
+
+This answers Kourovka Problem 17.56 in the negative (Ballester-Bolinches, Esteban-Romero,
+Kamornikov and Pérez-Calabuig, 2022).
 
 ## Depends on
 
-- [Permutes Minimal Non Nilpotent Core Quotient Nilpotent](permutes-minimal-non-nilpotent-core-quot.md)
+- [Subgroups permuting with all minimal non-nilpotent subgroups (Kourovka 17.56)](permutes-minimal-non-nilpotent-core-quot.md)
 
 ## Sources
 

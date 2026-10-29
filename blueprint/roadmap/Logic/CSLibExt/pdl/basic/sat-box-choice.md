@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.PDL.sat_box_choice
 ---
 
-# Sat box choice
+# Box of a choice
 
-`[α ∪ β]φ ↔ [α]φ ∧ [β]φ`: choice is the union of the relations.
+**Box of a choice.** For every model $M$, world $w$, programs $\alpha$ and $\beta$, and formula
+$\varphi$, the formula $[\alpha \cup \beta]\varphi$ holds at $w$ if and only if both
+$[\alpha]\varphi$ and $[\beta]\varphi$ hold at $w$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
-- [Program](program.md)
-- [Sat](sat.md)
+- [PDL formulas](formula.md)
+- [PDL model](model.md)
+- [PDL programs](program.md)
+- [Satisfaction of PDL formulas](sat.md)
 
 ## Proof depends on
 
-- [Prog Rel](prog-rel.md)
+- [Relation denoted by a PDL program](prog-rel.md)
 
 ## Sources
 

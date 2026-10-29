@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwistedUnitClassSubgroupKourovka18Problem14Wanted.twistedUnitClassesSubgroupsImpliesNilpotent
 ---
 
-# Twisted Unit Classes Subgroups Implies Nilpotent
+# Kourovka Problem 18.14, nilpotency assertion
 
-Kourovka 18.14 (V. G. Bardakov, M. V. Neshchadim, T. R. Nasybullov), first assertion of the
-conjecture: a group `G` in which `[e]_φ` is a subgroup for every automorphism `φ` is nilpotent.
+**Kourovka Problem 18.14, nilpotency assertion.** Every group $G$ in which, for every
+automorphism $\varphi$ of $G$, the twisted conjugacy class of the identity
+$[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is a subgroup of $G$, is nilpotent.
+
+This is the first assertion of the conjecture of V. G. Bardakov, M. V. Neshchadim and
+T. R. Nasybullov.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [All Twisted Unit Classes Subgroups](all-twisted-unit-classes-subgroups.md)
+- [Groups whose twisted classes of the identity are all subgroups](all-twisted-unit-classes-subgroups.md)
 
 ## Sources
 

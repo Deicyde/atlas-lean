@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BraidGroupEndomorphismsKourovka14Problem102Wanted.braidNonInjectiveNoncyclicEndomorphism
 ---
 
-# Braid Non Injective Noncyclic Endomorphism
+# Kourovka Problem 14.102(a): non-injective braid endomorphisms with non-cyclic image
 
-Kourovka 14.102(a) (V. Lin; V. Shpilrain): for some `n > 4`, `Bₙ` has a non-injective
-endomorphism with non-cyclic (in particular nontrivial) image.
+**Kourovka Problem 14.102(a): non-injective braid endomorphisms with non-cyclic image.** The
+statement that for some $n > 4$ the braid group $B_n$ on $n$ strands has a non-injective
+endomorphism whose image is not cyclic (in particular not trivial). Posed by V. Lin and
+V. Shpilrain.
 
 ## Depends on
 

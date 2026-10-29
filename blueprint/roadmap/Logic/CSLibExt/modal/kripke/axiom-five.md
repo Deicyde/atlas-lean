@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Modal.Formula.axiomFive
 ---
 
-# Axiom Five
+# Axiom 5
 
-The euclidean axiom 5: `◇φ → □◇φ`.
+**Axiom 5.** For a modal formula $\varphi$, the euclidean axiom 5 is the formula
+$\Diamond\varphi \to \Box\Diamond\varphi$, where $\Diamond\psi$ is $\neg\Box\neg\psi$ and $\neg\chi$
+stands for $\chi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Proof depends on
 
-- [Dia](dia.md)
+- [The possibility operator](dia.md)
 
 ## Sources
 

@@ -5,22 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompressedSubgroupIntersectionKourovka19Problem103Wanted.intersectionOfCompressedCompressed_holds
 ---
 
-# Intersection Of Compressed Compressed holds
+# The intersection of two compressed subgroups of a finite-rank free group is compressed
 
-Resolved true: the Kourovka Notebook (21st issue) answers 19.103 "Yes, it is true" (A.
-Jaikin-Zapirain, 2024), whose Corollary 1.3(1) states that the intersection of two compressed
-subgroups of a free group is compressed. Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
-Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem
-19.103 (E. Ventura); resolution: A. Jaikin-Zapirain, Free groups are L^2-subgroup rigid, preprint,
-arXiv:2403.09515 (2024), Corollary 1.3(1) (citing Kourovka 19.103): the intersection of two
-compressed subgroups of a free group is again compressed, from Corollary 1.2 (compressed iff inert
-for finitely generated subgroups); the Kourovka Notebook (21st issue) marks 19.103 solved,
-https://arxiv.org/abs/2403.09515.
+**The intersection of two compressed subgroups of a finite-rank free group is compressed.** For
+every natural number $n$ and all subgroups $H$ and $K$ of the free group $F_n$ on $n$
+generators, if $H$ and $K$ are compressed, then $H \cap K$ is compressed. That is, Kourovka
+Problem 19.103 has a positive answer for the intersection of two subgroups of a free group of
+finite rank.
 
 ## Depends on
 
-- [Intersection Of Compressed Compressed](intersection-of-compressed-compressed.md)
+- [Kourovka Problem 19.103 for two compressed subgroups](intersection-of-compressed-compressed.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.CompressedSubgroupIntersectionKourovka19Problem103Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 19.103 (E. Ventura); resolution: A. Jaikin-Zapirain, Free groups are L^2-subgroup rigid, preprint, arXiv:2403.09515 (2024), Corollary 1.3(1) (citing Kourovka 19.103): the intersection of two compressed subgroups of a free group is again compressed, from Corollary 1.2 (compressed iff inert for finitely generated subgroups); the Kourovka Notebook (21st issue) marks 19.103 solved, https://arxiv.org/abs/2403.09515.

@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Epistemic.not_valid_bot
 ---
 
-# Not valid bot
+# Falsity is not valid in an epistemic model
 
-Falsity is not valid: the nonempty world set rules out vacuous
-validity.
+**Falsity is not valid in an epistemic model.** In every epistemic model, the formula $\bot$
+is not valid: it fails at some world.
+
+The nonempty world set rules out vacuous validity.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
-- [Valid](valid.md)
+- [Epistemic formulas](formula.md)
+- [Epistemic models](model.md)
+- [Validity in an epistemic model](valid.md)
 
 ## Sources
 

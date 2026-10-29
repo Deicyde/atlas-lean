@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.ce_prio1
 ---
 
-# Ce prio1
+# Priority of the inner binder in the regression play
 
-The binder priorities on the regression cycle: the outer `μ` has priority
-`1` (stack empty), the inner `ν` has priority `4` (one binder on the stack).
+**Priority of the inner binder in the regression play.** The second position of the
+regression play, consisting of the formula $\nu Y.\,X$, the unique world and the binder stack
+$[\mu X.\,\nu Y.\,X]$, has priority $4$: a $\nu$-binder position with $k$ binders on the stack
+has priority $2k + 2$, and here $k = 1$.
 
 ## Depends on
 
-- [Ce Pos1](ce-pos1.md)
-- [Prio](prio.md)
+- [Second position of the regression play](ce-pos1.md)
+- [Priority of a game position](prio.md)
 
 ## Sources
 

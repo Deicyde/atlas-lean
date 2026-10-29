@@ -5,20 +5,23 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteGroupFormationShared.IsLocalFormation
 ---
 
-# Is Local Formation
+# Local formation of finite groups
 
-`𝔉` is a local formation of finite groups, stated as a saturated formation containing the
-trivial group: `𝔉` is a formation (`IsFormation`), contains the trivial group, and `G ∈ 𝔉` whenever
-`G / Φ(G) ∈ 𝔉` (`Φ` the Frattini subgroup). By the Gaschütz-Lubeseder-Schmid theorem a nonempty
-formation of finite groups is local (defined by a formation function) iff it is saturated.
+**Local formation of finite groups.** A class $\mathfrak{F}$ of finite groups is a local
+formation when it is a formation, contains the trivial group, and is saturated: a finite group $G$
+belongs to $\mathfrak{F}$ whenever $G/\Phi(G)$ does, where $\Phi(G)$ is the Frattini subgroup of
+$G$.
+
+By the Gaschütz-Lubeseder-Schmid theorem a nonempty formation of finite groups is local (defined
+by a formation function) iff it is saturated.
 
 ## Depends on
 
-- [Finite Group Class](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
+- [Class of finite groups (Kourovka 13.51)](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
 
 ## Proof depends on
 
-- [Is Formation](../finite-modular-lattice-formations-kourovka13-pro/is-formation.md)
+- [Formation of finite groups (Kourovka 13.51)](../finite-modular-lattice-formations-kourovka13-pro/is-formation.md)
 
 ## Sources
 

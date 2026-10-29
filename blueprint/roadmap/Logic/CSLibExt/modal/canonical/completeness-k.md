@@ -8,24 +8,27 @@ lean: Cslib.Modal.completeness_K
 
 # Strong completeness of K
 
-**Strong completeness of K** for all Kripke models.
+**Strong completeness of K.** Let $\Gamma$ be a set of formulas and $\varphi$ a formula.
+Suppose that for every Kripke model whose worlds form a type in the universe of the atoms, and
+every world $w$ of it at which all formulas of $\Gamma$ hold, $\varphi$ holds at $w$. Then
+$\varphi$ is deducible from $\Gamma$ in K.
 
 ## Depends on
 
-- [K](../hilbert/k.md)
-- [Deduces](../hilbert/deduces.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of the modal logic K](../hilbert/k.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Locally Entails](locally-entails.md)
+- [Local semantic consequence over a class of Kripke models](locally-entails.md)
 
 ## Proof depends on
 
-- [Canonical World](canonical-world.md)
-- [Of canonical Model](of-canonical-model.md)
-- [Derivable](../hilbert/derivable.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Canonical Model](canonical-model.md)
-- [Not derivable bot K](../hilbert/not-derivable-bot-k.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [Completeness relative to the canonical model](of-canonical-model.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [The canonical model](canonical-model.md)
+- [Consistency of K](../hilbert/not-derivable-bot-k.md)
 
 ## Sources
 

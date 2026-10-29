@@ -4,8 +4,8 @@ navigation: module
 
 # EAutomorphism Nil Automorphism Kourovka11 Problem23
 
-- [Delta](delta.md)
-- [Is Nil Automorphism](is-nil-automorphism.md)
-- [Is EAutomorphism](is-eautomorphism.md)
-- [E Automorphism Is Nil](e-automorphism-is-nil.md)
-- [E Automorphism Is Nil refuted](e-automorphism-is-nil-refuted.md)
+- [The commutator of an element with an automorphism](delta.md)
+- [Nil-automorphisms](is-nil-automorphism.md)
+- [$e$-automorphisms](is-eautomorphism.md)
+- [Vilyatser's question on $e$-automorphisms (Kourovka 11.23)](e-automorphism-is-nil.md)
+- [An $e$-automorphism need not be a nil-automorphism](e-automorphism-is-nil-refuted.md)

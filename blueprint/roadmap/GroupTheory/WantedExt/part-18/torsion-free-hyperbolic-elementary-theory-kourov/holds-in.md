@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.PrenexSentence.HoldsIn
 ---
 
-# Holds In
+# Truth of a prenex sentence in a group
 
-The prenex sentence `s` holds in the group `G`.
+**Truth of a prenex sentence in a group.** A prenex sentence $(q, \varphi)$ holds in a group $G$
+when the formula with quantifier prefix $q$ and matrix $\varphi$, whose quantifiers bind the
+variables $x_0, x_1, \dots$ in order, is true in $G$ under the assignment that gives every variable
+the value $1$; thus the variables not bound by $q$ are read as $1$.
 
 ## Depends on
 
-- [Prenex Sentence](prenex-sentence.md)
+- [Prenex sentences of the language of groups](prenex-sentence.md)
 
 ## Proof depends on
 
-- [CNF](cnf.md)
-- [Realize Prenex](realize-prenex.md)
+- [Quantifier-free formulas in conjunctive normal form](cnf.md)
+- [Truth of a prenex formula](realize-prenex.md)
 
 ## Sources
 

@@ -6,16 +6,16 @@ navigation: module
 
 ## Modal
 
-- [Of Proposition](of-proposition.md)
-- [Of Model](of-model.md)
-- [Satisfies of Proposition](satisfies-of-proposition.md)
-- [To Model](to-model.md)
-- [Of Model to Model](of-model-to-model.md)
-- [To Model of Model](to-model-of-model.md)
-- [To Proposition](to-proposition.md)
-- [Satisfies to Proposition](satisfies-to-proposition.md)
-- [Valid to Proposition](valid-to-proposition.md)
-- [Mem logic of valid](mem-logic-of-valid.md)
+- [Translation of CSLib's modal propositions](of-proposition.md)
+- [Kripke model of a CSLib model](of-model.md)
+- [The translation preserves satisfaction](satisfies-of-proposition.md)
+- [The CSLib unimodal model of a Kripke model](to-model.md)
+- [Kripke to CSLib and back is the identity](of-model-to-model.md)
+- [Round trip from CSLib models through Kripke models](to-model-of-model.md)
+- [Translation of modal formulas into CSLib propositions](to-proposition.md)
+- [The reverse translation preserves satisfaction](satisfies-to-proposition.md)
+- [Validity agrees with its CSLib translation](valid-to-proposition.md)
+- [Validity of the translation gives membership in CSLib's logic](mem-logic-of-valid.md)
 
 ## Derivable
 

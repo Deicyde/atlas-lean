@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.counterexample_sat_false
 ---
 
-# Regression (P1): the formula `μ X. ν Y. X` is false
+# $\mu X.\, \nu Y.\, X$ is false in the one-world model
 
-**Regression (P1): the formula `μ X. ν Y. X` is false** (its denotation
-is `⊥`), so the game outcome (Refuter wins) agrees with satisfaction.
+**$\mu X.\, \nu Y.\, X$ is false in the one-world model.** In the Kripke model with a single
+world, which is related to itself, and a single atom, which is false there, under the environment
+that assigns the empty set to every variable, the formula $\mu X.\, \nu Y.\, X$ is not satisfied
+at the unique world.
+
+This agrees with the model-checking game, where Verifier loses the play of this formula.
 
 ## Depends on
 
-- [Counterexample Formula](counterexample-formula.md)
-- [Counterexample Model](counterexample-model.md)
-- [Sat](../mu-calculus/sat.md)
+- [A least fixpoint over a vacuous greatest fixpoint](counterexample-formula.md)
+- [The one-world reflexive Kripke model](counterexample-model.md)
+- [Satisfaction in the modal μ-calculus](../mu-calculus/sat.md)
 
 ## Proof depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
-- [Extend Env](../mu-calculus/extend-env.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
+- [Extending an environment under a binder](../mu-calculus/extend-env.md)
 
 ## Sources
 

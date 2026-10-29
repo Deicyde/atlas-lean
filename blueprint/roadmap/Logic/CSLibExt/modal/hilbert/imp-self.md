@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Modal.Derivable.imp_self
 ---
 
-# Imp self
+# Self-implication is a theorem
 
-`φ → φ`.
+**Self-implication is a theorem.** Let $\Lambda$ be a set of modal formulas. For every modal
+formula $\varphi$, the formula $\varphi \to \varphi$ is a theorem of the normal modal logic
+$\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

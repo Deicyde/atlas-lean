@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LargeAutomorphismCyclicSubgroupKourovka15Problem32Wanted.cyclicSubgroupOfIndexFromLargeAutomorphism
 ---
 
-# Cyclic Subgroup Of Index From Large Automorphism
+# Kourovka Problem 15.32: large automorphisms and cyclic subgroups
 
-Kourovka 15.32 (Ya. G. Berkovich), with the threshold `f(k) = 64k + 2` of its resolution: if a
-group `G` of order `pᵐ` with `m ≥ 64k + 2` has an automorphism of order `p^(m-k)`, then `G` has a
-cyclic subgroup of index `pᵏ`.
+**Kourovka Problem 15.32: large automorphisms and cyclic subgroups.** For every prime $p$ and
+all natural numbers $k$ and $m$ with $m \ge 64k + 2$, every finite group $G$ of order $p^m$ that
+has an automorphism of order $p^{m-k}$ has a cyclic subgroup of index $p^k$.
+
+Kourovka 15.32 (Ya. G. Berkovich) asks for some threshold $f(k)$ beyond which this holds; the
+threshold $f(k) = 64k + 2$ is the one of its resolution.
 
 ## Depends on
 

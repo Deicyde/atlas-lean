@@ -8,28 +8,31 @@ lean: Cslib.Modal.completeness_T
 
 # Strong completeness of T
 
-**Strong completeness of T** for reflexive Kripke models.
+**Strong completeness of T.** Let $\Gamma$ be a set of formulas and $\varphi$ a formula.
+Suppose that for every Kripke model with reflexive accessibility relation whose worlds form a
+type in the universe of the atoms, and every world $w$ of it at which all formulas of $\Gamma$
+hold, $\varphi$ holds at $w$. Then $\varphi$ is deducible from $\Gamma$ in T.
 
 ## Depends on
 
-- [T](../hilbert/t.md)
-- [Deduces](../hilbert/deduces.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of T](../hilbert/t.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Locally Entails](locally-entails.md)
+- [Local semantic consequence over a class of Kripke models](locally-entails.md)
 
 ## Proof depends on
 
-- [Canonical World](canonical-world.md)
-- [Rel](rel.md)
-- [Consistent](consistent.md)
-- [Of canonical Model](of-canonical-model.md)
-- [Derivable](../hilbert/derivable.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [The canonical accessibility relation](rel.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Completeness relative to the canonical model](of-canonical-model.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Mem of deduces](mem-of-deduces.md)
-- [Canonical Model](canonical-model.md)
-- [Not derivable bot T](../hilbert/not-derivable-bot-t.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Maximal consistent sets of modal formulas are deductively closed](mem-of-deduces.md)
+- [The canonical model](canonical-model.md)
+- [Consistency of T](../hilbert/not-derivable-bot-t.md)
 
 ## Sources
 

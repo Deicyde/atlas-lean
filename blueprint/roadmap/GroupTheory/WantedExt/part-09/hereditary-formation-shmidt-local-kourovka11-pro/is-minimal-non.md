@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditaryFormationShmidtLocalKourovka11Problem91Wanted.IsMinimalNon
 ---
 
-# Is Minimal Non
+# Minimal non-members of a class of groups
 
-`G` is a minimal non-`F`-group: `G ∉ F`, while every proper subgroup of `G` lies in `F`.
+**Minimal non-members of a class of groups.** Let $\mathfrak F$ be a class of groups. A group
+$G$ is a minimal non-$\mathfrak F$-group if $G$ does not lie in $\mathfrak F$ but every proper
+subgroup of $G$ lies in $\mathfrak F$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Classes of groups](group-class.md)
 
 ## Sources
 

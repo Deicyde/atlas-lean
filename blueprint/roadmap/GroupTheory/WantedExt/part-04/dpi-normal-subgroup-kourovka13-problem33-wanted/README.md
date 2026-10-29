@@ -4,8 +4,8 @@ navigation: module
 
 # DPi Normal Subgroup Kourovka13 Problem33
 
-- [Is Pi Number](is-pi-number.md)
-- [Is Hall Pi Subgroup](is-hall-pi-subgroup.md)
-- [Is DPi](is-dpi.md)
-- [Normal Subgroup Of DPi Is DPi](normal-subgroup-of-dpi-is-dpi.md)
-- [Normal Subgroup Of DPi Is DPi holds](normal-subgroup-of-dpi-is-dpi-holds.md)
+- [$\pi$-numbers](is-pi-number.md)
+- [Hall $\pi$-subgroups](is-hall-pi-subgroup.md)
+- [$D_\pi$-groups](is-dpi.md)
+- [Kourovka Problem 13.33](normal-subgroup-of-dpi-is-dpi.md)
+- [Normal subgroups of finite $D_\pi$-groups are $D_\pi$-groups](normal-subgroup-of-dpi-is-dpi-holds.md)

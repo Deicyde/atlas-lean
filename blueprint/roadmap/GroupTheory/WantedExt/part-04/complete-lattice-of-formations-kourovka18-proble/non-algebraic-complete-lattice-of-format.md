@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompleteLatticeOfFormationsKourovka18Problem92Wanted.nonAlgebraicCompleteLatticeOfFormations
 ---
 
-# Non Algebraic Complete Lattice Of Formations
+# Kourovka Problem 18.92(a) (A. N. Skiba)
 
-Kourovka 18.92(a) (A. N. Skiba): there is a non-algebraic complete lattice of formations of
-finite groups.
+**Kourovka Problem 18.92(a) (A. N. Skiba).** The proposition that some set $\Theta$ of classes
+of groups is a complete lattice of formations of finite groups and is not algebraic.
 
 ## Depends on
 
@@ -16,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Class](group-class.md)
-- [Is Algebraic In](is-algebraic-in.md)
-- [Is Complete Lattice Of Formations](is-complete-lattice-of-formations.md)
+- [Isomorphism-closed classes of groups (Kourovka 18.92)](group-class.md)
+- [Algebraic sets of group classes](is-algebraic-in.md)
+- [Complete lattices of formations](is-complete-lattice-of-formations.md)
 
 ## Sources
 

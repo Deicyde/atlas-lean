@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Modal.Deduces.trans
 ---
 
-# Trans
+# Transitivity of local consequence
 
-Consequences of consequences are consequences.
+**Transitivity of local consequence.** Let $\Lambda$ be a set of modal formulas and let
+$\Gamma$ and $\Delta$ be sets of formulas such that every formula of $\Delta$ is a local
+consequence of $\Gamma$ in the normal modal logic $\mathbf{K} \oplus \Lambda$. If a formula
+$\varphi$ is a local consequence of $\Delta$ in $\mathbf{K} \oplus \Lambda$, then $\varphi$ is a
+local consequence of $\Gamma$ in $\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Derivable](derivable.md)
+- [Theorems of a normal modal logic](derivable.md)
 
 ## Sources
 

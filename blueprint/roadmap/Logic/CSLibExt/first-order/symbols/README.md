@@ -4,5 +4,5 @@ navigation: module
 
 # Symbols
 
-- [Term Symbols](term-symbols.md)
-- [Formula Symbols](formula-symbols.md)
+- [Symbols of a term](term-symbols.md)
+- [Symbols of a formula](formula-symbols.md)

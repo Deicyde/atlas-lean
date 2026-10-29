@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.IsMaximalPiSubgroup
 ---
 
-# Is Maximal Pi Subgroup
+# Maximal $\pi$-subgroup
 
-`H` is a maximal `π`-subgroup: a `π`-subgroup contained in no larger `π`-subgroup.
+**Maximal $\pi$-subgroup.** Let $\pi$ be a set of natural numbers and $G$ a group. A subgroup
+$H$ of $G$ is a maximal $\pi$-subgroup when its order $|H|$ is a $\pi$-number and every subgroup $L$
+of $G$ that contains $H$ and whose order is a $\pi$-number equals $H$.
+
+An infinite order counts as $0$; the notion is meant for finite groups.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pi Number](is-pi-number.md)
+- [$\pi$-number](is-pi-number.md)
 
 ## Sources
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.divRunCount_one_asymptotic
 ---
 
-# Div Run Count one asymptotic
+# Asymptotics of the length-one run count
 
-Proposition 4 (asymptotic): `A_B(1) = 32 B⁴ log B + O(B⁴)`.
+**Asymptotics of the length-one run count.** There is a real constant $K$ such that for every
+natural number $B \ge 2$ the number $A_B(1)$ of integer tuples $(x, y, a, b, c) \in [-B, B]^5$
+with $(x, y) \ne (0, 0)$ and $(a, b, c) \ne (0, 0, 0)$ that have a divisibility run of length at
+least $1$ satisfies $|A_B(1) - 32 B^4 \log B| \le K B^4$; that is,
+$A_B(1) = 32 B^4 \log B + O(B^4)$.
 
 ## Depends on
 
-- [Div Run Count](div-run-count.md)
+- [Counting configurations with long divisibility runs](div-run-count.md)
 
 ## Sources
 

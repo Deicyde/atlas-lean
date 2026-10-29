@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EAutomorphismNilAutomorphismKourovka11Problem23Wanted.IsNilAutomorphism
 ---
 
-# Is Nil Automorphism
+# Nil-automorphisms
 
-`φ` is a nil-automorphism: for every `a ∈ G` some iterated commutator `[a, ₙ φ]` is trivial.
+**Nil-automorphisms.** An automorphism $\varphi$ of a group $G$ is a nil-automorphism if for
+every $a \in G$ there is $n \ge 0$ with $\delta_\varphi^n(a) = 1$, where
+$\delta_\varphi(x) = x^{-1} \varphi(x)$; that is, some iterated commutator $[a, {}_n \varphi]$ is
+trivial.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Delta](delta.md)
+- [The commutator of an element with an automorphism](delta.md)
 
 ## Sources
 

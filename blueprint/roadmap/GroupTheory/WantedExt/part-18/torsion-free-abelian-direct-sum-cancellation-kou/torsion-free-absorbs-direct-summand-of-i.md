@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeAbelianDirectSumCancellationKourovka17Problem21Wanted.torsionFreeAbsorbsDirectSummandOfIso
 ---
 
-# Torsion Free Absorbs Direct Summand Of Iso
+# Bergman's absorption question for isomorphic summands (Kourovka 17.21(b))
 
-Kourovka 17.21(b) (G. M. Bergman): the same implication under the extra hypothesis `B ≅ C`.
+**Bergman's absorption question for isomorphic summands (Kourovka 17.21(b)).** The statement
+that for all torsion-free abelian groups $A$, $B$, $C$ with $B \cong C$, if
+$A \cong A \oplus B \oplus C$ then $A \cong A \oplus B$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Torsion Free Add Group](is-torsion-free-add-group.md)
+- [Torsion-free abelian group](is-torsion-free-add-group.md)
 
 ## Sources
 

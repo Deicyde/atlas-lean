@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OuterAutomorphismMetabelianKourovka11Problem26Wanted.groupNotOuterAutOfMetabelian
 ---
 
-# Group Not Outer Aut Of Metabelian
+# A group that is not an outer automorphism group of a centreless metabelian group
 
-Kourovka 11.26 (R. Göbel): some group is not isomorphic to the outer automorphism group of any
-metabelian group with trivial centre.
+**A group that is not an outer automorphism group of a centreless metabelian group.** The
+statement (Kourovka Problem 11.26, Göbel) that there is a group $G$ such that for every metabelian
+group $M$ (one whose second derived subgroup $M''$ is trivial) with trivial centre, the outer
+automorphism group $\operatorname{Out}(M)$ is not isomorphic to $G$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Out Iso To](out-iso-to.md)
+- [Outer automorphism group isomorphic to a given group](out-iso-to.md)
 
 ## Sources
 

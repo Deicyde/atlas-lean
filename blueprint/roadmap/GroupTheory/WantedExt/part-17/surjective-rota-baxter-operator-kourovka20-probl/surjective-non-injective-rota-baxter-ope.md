@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SurjectiveRotaBaxterOperatorKourovka20Problem125Wanted.surjectiveNonInjectiveRotaBaxterOperatorExists
 ---
 
-# Surjective Non Injective Rota Baxter Operator Exists
+# Kourovka Problem 20.125 (surjective non-injective Rota–Baxter operators)
 
-Kourovka 20.125 (V. G. Bardakov): there exist a non-abelian group `G` and a Rota-Baxter
-operator on `G` that is surjective but not injective.
+**Kourovka Problem 20.125 (surjective non-injective Rota–Baxter operators).** The statement,
+asked by V. G. Bardakov, that there exist a non-abelian group $G$ and a Rota–Baxter operator $B$ on
+$G$ such that $B$ is surjective but not injective.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Rota Baxter Operator](is-rota-baxter-operator.md)
+- [Rota–Baxter operators on groups](is-rota-baxter-operator.md)
 
 ## Sources
 

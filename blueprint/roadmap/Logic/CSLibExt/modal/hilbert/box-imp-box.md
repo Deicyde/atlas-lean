@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Modal.Derivable.box_imp_box
 ---
 
-# Box imp box
+# The monotonicity rule for necessity
 
-Necessitation commutes with implication: from `⊢ φ → ψ` derive `⊢ □φ → □ψ`.
+**The monotonicity rule for necessity.** Let $\Lambda$ be a set of modal formulas and let
+$\varphi$, $\psi$ be modal formulas. If $\varphi \to \psi$ is a theorem of the normal modal logic
+$\mathbf{K} \oplus \Lambda$, then so is $\Box\varphi \to \Box\psi$.
 
 ## Depends on
 
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PSLExtensionNewElementOrderKourovka14Problem60Wanted.extensionOfPSLHasNewElementOrder
 ---
 
-# Extension Of PSLHas New Element Order
+# Kourovka 14.60: new element orders in extensions of projective special linear groups
 
-Kourovka 14.60 (V. D. Mazurov): let `n ≥ 3`, let `q = pᵏ` be a prime power, and let `H` be a
-nontrivial normal subgroup of a finite group `G` with `G / H ≅ L_n(q) = PSL_n(𝔽_q)`. Then some
-element of `G` has an order that is not the order of any element of `G / H`.
+**Kourovka 14.60: new element orders in extensions of projective special linear groups.**
+The proposition that for every $n \ge 3$, every prime $p$ and every $k \ge 1$, with $q = p^k$ and
+$\mathbb{F}_q$ the field with $q$ elements, the following holds: whenever $H$ is a nontrivial normal
+subgroup of a finite group $G$ and $G/H$ is isomorphic to the projective special linear group
+$\mathrm{PSL}_n(\mathbb{F}_q)$, some element of $G$ has an order that is not the order of any
+element of $G/H$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [PSL](psl.md)
+- [Projective special linear group](psl.md)
 
 ## Sources
 

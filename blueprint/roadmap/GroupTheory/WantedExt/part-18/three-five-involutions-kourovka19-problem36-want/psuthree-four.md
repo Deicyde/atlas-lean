@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.PSUThreeFour
 ---
 
-# PSUThree Four
+# The projective special unitary group $\mathrm{PSU}_3(4)$
 
-The projective special unitary group `PSU₃(4) = SU₃(4) / Z(SU₃(4))`.
+**The projective special unitary group $\mathrm{PSU}_3(4)$.** It is the quotient
+$\mathrm{PSU}_3(4) = \mathrm{SU}_3(4) / Z(\mathrm{SU}_3(4))$ of the special unitary group
+$\mathrm{SU}_3(4)$ by its centre $Z(\mathrm{SU}_3(4))$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Special Unitary Group Three Four](special-unitary-group-three-four.md)
+- [The special unitary group $\mathrm{SU}_3(4)$](special-unitary-group-three-four.md)
 
 ## Sources
 

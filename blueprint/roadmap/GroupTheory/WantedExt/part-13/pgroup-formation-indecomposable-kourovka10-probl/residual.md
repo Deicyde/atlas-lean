@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PGroupFormationIndecomposableKourovka10Problem72Wanted.residual
 ---
 
-# Residual
+# Residual of a finite group with respect to a class (Kourovka 10.72)
 
-The `X`-residual of a finite group `G`: the intersection of the normal subgroups `N` with
-`G / N ∈ X` (for a formation, the smallest such `N`).
+**Residual of a finite group with respect to a class (Kourovka 10.72).** For a class $X$ of
+finite groups and a finite group $G$, the $X$-residual of $G$ is the intersection of all normal
+subgroups $N$ of $G$ with $G/N \in X$. When $X$ is a formation, it is the smallest such $N$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Class of finite groups (Kourovka 10.72)](group-class.md)
 
 ## Sources
 

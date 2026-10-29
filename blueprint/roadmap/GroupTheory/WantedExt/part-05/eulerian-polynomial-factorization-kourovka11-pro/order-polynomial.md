@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EulerianPolynomialFactorizationKourovka11Problem104Wanted.orderPolynomial
 ---
 
-# Order Polynomial
+# Order polynomial of a subgroup
 
-The order polynomial `f(H) = ∏_p x_p ^ {v_p(|H|)}` of a subgroup `H`, in `ℤ[x₀, x₁, …]`
-(the variable `x_p` is the one indexed by the prime `p`).
+**Order polynomial of a subgroup.** For a subgroup $H$ of a group, the order polynomial of $H$
+is $f(H) = \prod_p x_p^{v_p(|H|)}$ in the integer polynomial ring $\mathbb{Z}[x_0, x_1, \dots]$,
+where $p$ runs over the primes, $x_p$ is the variable indexed by $p$, and $v_p(|H|)$ is the
+exponent of $p$ in the order $|H|$ of $H$. If $H$ is infinite, $f(H) = 1$.
 
 ## Depends on
 

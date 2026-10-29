@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Minimal Normal](is-minimal-normal.md)
+- [Minimal normal subgroups](is-minimal-normal.md)
 
 ## Sources
 

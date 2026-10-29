@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Spectrum](spectrum.md)
+- [Spectrum of a group](spectrum.md)
 
 ## Sources
 

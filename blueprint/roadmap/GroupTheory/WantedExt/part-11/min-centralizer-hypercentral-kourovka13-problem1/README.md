@@ -4,8 +4,8 @@ navigation: module
 
 # Min Centralizer Hypercentral Kourovka13 Problem16
 
-- [Is Locally Nilpotent](is-locally-nilpotent.md)
-- [Has Min Centralizers](has-min-centralizers.md)
-- [Is Hypercentral](is-hypercentral.md)
-- [Locally Nilpotent Min Centralizers Hypercentral](locally-nilpotent-min-centralizers-hyper.md)
-- [Locally Nilpotent Min Centralizers Hypercentral holds](locally-nilpotent-min-centralizers-hyper-2.md)
+- [Locally nilpotent group (Kourovka 13.16)](is-locally-nilpotent.md)
+- [Minimal condition on centralizers (Kourovka 13.16)](has-min-centralizers.md)
+- [Hypercentral group (Kourovka 13.16)](is-hypercentral.md)
+- [Kourovka Problem 13.16 (Wagner)](locally-nilpotent-min-centralizers-hyper.md)
+- [Locally nilpotent groups with the minimal condition on centralizers are hypercentral](locally-nilpotent-min-centralizers-hyper-2.md)

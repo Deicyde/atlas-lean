@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.hallOvergroupCPi
 ---
 
-# Hall Overgroup CPi
+# Kourovka Problem 17.44(a): overgroups of Hall subgroups in $C_\pi$-groups
 
-Kourovka 17.44(a) (E. P. Vdovin, D. O. Revin): in a finite `C_π`-group, every subgroup
-containing a Hall `π`-subgroup is a `C_π`-group.
+**Kourovka Problem 17.44(a): overgroups of Hall subgroups in $C_\pi$-groups.** The statement,
+posed by E. P. Vdovin and D. O. Revin, that for every set $\pi$ of natural numbers and every finite
+$C_\pi$-group $G$, every subgroup $K$ of $G$ that contains a Hall $\pi$-subgroup of $G$ is itself a
+$C_\pi$-group.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is CPi Group](is-cpi-group.md)
-- [Is Hall Pi Subgroup](is-hall-pi-subgroup.md)
+- [$C_\pi$-group](is-cpi-group.md)
+- [Hall $\pi$-subgroup](is-hall-pi-subgroup.md)
 
 ## Sources
 

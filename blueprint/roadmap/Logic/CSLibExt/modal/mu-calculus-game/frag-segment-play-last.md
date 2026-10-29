@@ -6,23 +6,29 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.fragSegment_playLast
 ---
 
-# Frag Segment play Last
+# Last position of a segment
 
-The last position of a segment is its final element.
+**Last position of a segment.** Let $p_0$ be a model-checking game position and $\pi$ an
+infinite sequence of positions of the totalized fragment game. For each $i$, let $\hat\pi_i$ be
+$p_0$ if $\pi_i$ is an absorbing state; if $\pi_i$ is the embedded position $(\varphi, w)$ of a
+fixpoint-free formula $\varphi$ and a world $w$, let $\hat\pi_i$ be the game position
+$(\varphi, w, [])$, with $\varphi$ embedded as a μ-calculus formula and the empty fixpoint stack.
+For all natural numbers $s$ and $k$, the segment $[\hat\pi_s, \dots, \hat\pi_{s+k}]$ has a last
+position, and it is $\hat\pi_{s+k}$.
 
 ## Depends on
 
-- [Frag Pos](frag-pos.md)
+- [Positions of the totalized fragment game](frag-pos.md)
 - [Game Position](game-position.md)
-- [Frag Segment](frag-segment.md)
-- [Frag To Pos](frag-to-pos.md)
-- [Play Last](play-last.md)
+- [Segment of a fragment play as game positions](frag-segment.md)
+- [Game position of a fragment position](frag-to-pos.md)
+- [Last position of a play](play-last.md)
 
 ## Proof depends on
 
-- [Frag Segment cons](frag-segment-cons.md)
-- [Frag Segment ne nil](frag-segment-ne-nil.md)
-- [Play Last cons](play-last-cons.md)
+- [Splitting off the head of a segment](frag-segment-cons.md)
+- [Segments are nonempty](frag-segment-ne-nil.md)
+- [Prepending to a nonempty play keeps the last position](play-last-cons.md)
 
 ## Sources
 

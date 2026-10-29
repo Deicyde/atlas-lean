@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Modal.Derivable.valid_S5
 ---
 
-# Valid S5
+# Soundness of S5 for Kripke models with an equivalence relation
 
-S5-theorems are valid in every Kripke model whose relation is an equivalence.
+**Soundness of S5 for Kripke models with an equivalence relation.** If the accessibility
+relation of a Kripke model $M$ is an equivalence relation, then every formula derivable in the
+modal logic S5 is valid in $M$, that is, it holds at every world of $M$.
 
 ## Depends on
 
-- [S5](s5.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S5](s5.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Soundness](valid.md)
-- [Axiom Five](../kripke/axiom-five.md)
+- [Soundness of modal Hilbert systems for Kripke models](valid.md)
+- [Axiom 5](../kripke/axiom-five.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Valid axiom Five](../kripke/valid-axiom-five.md)
-- [Valid axiom T](../kripke/valid-axiom-t.md)
+- [Axiom 5 is valid on euclidean Kripke models](../kripke/valid-axiom-five.md)
+- [Axiom T is valid on reflexive Kripke models](../kripke/valid-axiom-t.md)
 
 ## Sources
 

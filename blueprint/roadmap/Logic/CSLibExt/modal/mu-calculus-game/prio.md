@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.prio
 ---
 
-# Prio
+# Priority of a game position
 
-The priority of a position, assigned only to fixpoint-binder positions: a
-binder unfolded with `k` binders already on the stack gets priority `2 * k + 1`
-if it is a `μ`-binder and `2 * k + 2` if it is a `ν`-binder. Priorities
-strictly increase with nesting depth, so the outermost binder regenerated
-infinitely often has the least priority. This is the nesting-depth refinement
-of the alternation-depth priority assignment: same-type nesting counts toward
-the depth, which only refines the order (outer still strictly below inner) and
-keeps parity tied to the binder kind. Fixed priorities (`μ ↦ 1`, `ν ↦ 2`)
-would let an inner vacuous `ν` dominate an outer `μ` (see
-`counterexample_parityWin_false`).
+**Priority of a game position.** Only fixpoint-binder positions carry a priority. For a
+formula $\varphi$, a world $w$ and a binder stack $s$ of length $k$, the position
+$(\mu X.\,\varphi, w, s)$, whose formula is the least fixpoint with body $\varphi$, has priority
+$2k+1$, the position $(\nu X.\,\varphi, w, s)$, whose formula is the greatest fixpoint with body
+$\varphi$, has priority $2k+2$, and every other position has no priority. Priorities strictly
+increase with nesting depth, so the outermost binder regenerated infinitely often has the least
+priority.
+
+This is the nesting-depth refinement of the alternation-depth priority assignment: same-type
+nesting counts toward the depth, which only refines the order (outer still strictly below inner)
+and keeps parity tied to the binder kind. Fixed priorities ($\mu \mapsto 1$, $\nu \mapsto 2$)
+under the greatest-recurring-priority rule would let an inner vacuous $\nu$ dominate an outer
+$\mu$: in $\mu X.\,\nu Y.\,X$, whose denotation is empty, Verifier would win the only play.
 
 ## Depends on
 
@@ -24,7 +27,7 @@ would let an inner vacuous `ν` dominate an outer `μ` (see
 
 ## Proof depends on
 
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

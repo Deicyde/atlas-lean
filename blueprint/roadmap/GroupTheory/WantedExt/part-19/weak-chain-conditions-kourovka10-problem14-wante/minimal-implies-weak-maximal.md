@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weak Maximal Condition](weak-maximal-condition.md)
+- [Weak maximal condition on subgroups](weak-maximal-condition.md)
 
 ## Sources
 

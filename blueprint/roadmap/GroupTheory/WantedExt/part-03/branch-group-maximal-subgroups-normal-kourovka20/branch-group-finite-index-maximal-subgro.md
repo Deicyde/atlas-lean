@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BranchGroupMaximalSubgroupsNormalKourovka20Problem101Wanted.branchGroupFiniteIndexMaximalSubgroupsNormal
 ---
 
-# Branch Group Finite Index Maximal Subgroups Normal
+# Kourovka 20.101: finite-index maximal subgroups of finitely generated branch groups are normal
 
-Kourovka 20.101 (A. Thillaisundaram): in a finitely generated branch group every maximal
-subgroup of finite index is normal.
+**Kourovka 20.101: finite-index maximal subgroups of finitely generated branch groups are
+normal.** The statement (A. Thillaisundaram) that in every finitely generated branch group every
+maximal subgroup of finite index is normal.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Branch Group](../branch-group-shared/is-branch-group.md)
+- [Branch group](../branch-group-shared/is-branch-group.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Residually Finite PGroup Torsion Free Nilpotent Kourovka14 Problem52
 
-- [Residually Finite PImplies Residually Torsion Free Nilpotent](residually-finite-pimplies-residually-to.md)
-- [Residually Finite PImplies Residually Torsion Free Nilpotent refuted](residually-finite-pimplies-residually-to-2.md)
+- [Kuz'min's question on residually finite $p$-groups (Kourovka 14.52)](residually-finite-pimplies-residually-to.md)
+- [Residual $p$-finiteness for all $p$ does not imply residual torsion-free nilpotence](residually-finite-pimplies-residually-to-2.md)

@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.unit_equivalence
 ---
 
-# Unit equivalence
+# The one-world model has an equivalence relation
 
-The relation of the one-world model is an equivalence.
+**The one-world model has an equivalence relation.** The accessibility relation of the
+one-world Kripke model, whose single world sees itself and at which every atom is false, is an
+equivalence relation.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Unit](unit.md)
+- [The one-world Kripke model](unit.md)
 
 ## Sources
 

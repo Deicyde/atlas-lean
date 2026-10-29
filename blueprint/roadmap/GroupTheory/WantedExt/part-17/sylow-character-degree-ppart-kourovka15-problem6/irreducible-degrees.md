@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SylowCharacterDegreePPartKourovka15Problem62Wanted.irreducibleDegrees
 ---
 
-# Irreducible Degrees
+# Irreducible complex representation degrees
 
-The degrees of the irreducible complex representations of `G` (the degrees `χ(1)` of its
-irreducible characters).
+**Irreducible complex representation degrees.** For a group $G$, the set of natural numbers $d$
+such that $G$ has an irreducible complex representation of finite dimension $d$; for a finite
+group these are the degrees $\chi(1)$ of its irreducible characters.
 
 ## Depends on
 

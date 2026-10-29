@@ -5,19 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ComplementedSubgroupLatticeNormalKourovka11Problem128Wanted.normalSubgroupOfKGroupIsKGroup_refuted
 ---
 
-# Normal Subgroup Of KGroup Is KGroup refuted
+# Normal subgroups of $K$-groups need not be $K$-groups
 
-Resolved false: the Kourovka Archive answers 11.128 "No, it is not" (Obraztsov): some `K`-group has
-a normal subgroup that is not a `K`-group. Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
-Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of
-Solved Problems, Problem 11.128 (M. Emaldi); resolution: V. N. Obraztsov, J. Austral. Math. Soc.
-(Ser. A) 61, no. 2 (1996), 267-288, Kourovka Archive, Problem 11.128: "No, it is not",
-https://arxiv.org/abs/1401.0300v49.
+**Normal subgroups of $K$-groups need not be $K$-groups.** There is a group $G$ whose subgroup
+lattice is complemented (a $K$-group) with a normal subgroup $N$ whose own subgroup lattice is not
+complemented; so Kourovka Problem 11.128 has a negative answer.
+
+The Kourovka Archive answers 11.128 "No, it is not" (Obraztsov).
 
 ## Depends on
 
-- [Normal Subgroup Of KGroup Is KGroup](normal-subgroup-of-kgroup-is-kgroup.md)
+- [Kourovka Problem 11.128 on normal subgroups of $K$-groups](normal-subgroup-of-kgroup-is-kgroup.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.ComplementedSubgroupLatticeNormalKourovka11Problem128Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.128 (M. Emaldi); resolution: V. N. Obraztsov, J. Austral. Math. Soc. (Ser. A) 61, no. 2 (1996), 267-288, Kourovka Archive, Problem 11.128: "No, it is not", https://arxiv.org/abs/1401.0300v49.

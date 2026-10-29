@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClosedCofinitaryLocallyCompactKourovka13Problem28Wanted.closedCofinitaryLocallyCompact
 ---
 
-# Closed Cofinitary Locally Compact
+# Claim of Kourovka Problem 13.28
 
-Kourovka 13.28 (P. J. Cameron; D. M. Evans): every closed cofinitary permutation group on an
-infinite set is locally compact in the topology of pointwise convergence.
+**Claim of Kourovka Problem 13.28.** For every infinite set $\Omega$, every cofinitary subgroup
+$G$ of the group of permutations of $\Omega$ that is closed in the topology of pointwise
+convergence is locally compact in the subspace topology.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Pointwise convergence topology on permutations](../../../MathlibExt/part-01/permutation/pointwise-topology.md)
-- [Is Cofinitary](is-cofinitary.md)
+- [Cofinitary permutation groups](is-cofinitary.md)
 
 ## Sources
 

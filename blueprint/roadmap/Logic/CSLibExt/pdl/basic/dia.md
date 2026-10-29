@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.PDL.Formula.dia
 ---
 
-# Dia
+# Possibility in PDL
 
-Possibility as the dual of necessity.
+**Possibility in PDL.** For a program $\alpha$ and a formula $\varphi$, the formula
+$\langle\alpha\rangle\varphi$ is defined as $[\alpha](\varphi \to \bot) \to \bot$, that is, as
+$\neg[\alpha]\neg\varphi$: possibility is the dual of necessity.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Program](program.md)
+- [PDL formulas](formula.md)
+- [PDL programs](program.md)
 
 ## Sources
 

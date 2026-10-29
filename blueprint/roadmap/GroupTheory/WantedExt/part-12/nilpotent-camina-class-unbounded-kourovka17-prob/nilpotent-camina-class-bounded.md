@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NilpotentCaminaClassUnboundedKourovka17Problem47Wanted.nilpotentCaminaClassBounded
 ---
 
-# Nilpotent Camina Class Bounded
+# Bounded class for nilpotent Camina-type groups
 
-Kourovka 17.47 (S. H. Ghate, A. S. Muktibodh): there is a bound `c` on the nilpotency class of
-the nilpotent groups `G` in which every coset `x[G, G]` with `x ∉ [G, G]` equals the conjugacy
-class `x^G`.
+**Bounded class for nilpotent Camina-type groups.** Kourovka Problem 17.47 (S. H. Ghate,
+A. S. Muktibodh) asks whether this proposition holds: there is a natural number $c$ such that
+every nilpotent group $G$ in which, for every $x \notin [G, G]$, the coset $x[G, G]$ of the
+commutator subgroup $[G, G]$ equals the conjugacy class $x^G$ of $x$, has nilpotency class at
+most $c$.
 
 ## Depends on
 

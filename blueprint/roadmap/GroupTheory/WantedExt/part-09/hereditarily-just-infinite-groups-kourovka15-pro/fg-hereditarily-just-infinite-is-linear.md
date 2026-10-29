@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditarilyJustInfiniteGroupsKourovka15Problem18Wanted.fgHereditarilyJustInfiniteIsLinear
 ---
 
-# Fg Hereditarily Just Infinite Is Linear
+# Kourovka 15.18(b): linearity of hereditarily just infinite groups
 
-Kourovka 15.18(b): every finitely generated hereditarily just infinite group is linear, i.e. has
-a faithful finite-dimensional representation over a field.
+**Kourovka 15.18(b): linearity of hereditarily just infinite groups.** The proposition that
+every finitely generated hereditarily just infinite group $G$ is linear, i.e. that there are a
+field $K$, a natural number $n$ and an injective group homomorphism $G \to \mathrm{GL}_n(K)$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Hereditarily Just Infinite](is-hereditarily-just-infinite.md)
+- [Hereditarily just infinite groups](is-hereditarily-just-infinite.md)
 
 ## Sources
 

@@ -5,13 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound_holds
 ---
 
-# Centralizer Dimension Abelian Section Bound holds
+# Buturlakin's theorem on locally finite groups of finite $c$-dimension
 
-Resolved true: the Kourovka Archive answers 19.101 "Yes, it is true" (A. A. Buturlakin, 2019).
+**Buturlakin's theorem on locally finite groups of finite $c$-dimension.** There is a function
+$f : \mathbb{N} \to \mathbb{N}$ such that the following holds for every $k \in \mathbb{N}$. Let $G$
+be a locally finite group of $c$-dimension at most $k$, let $R$ be a normal locally soluble
+subgroup of $G$ that contains every normal locally soluble subgroup of $G$ (the locally soluble
+radical), and let $S$ be the preimage in $G$ of the socle of $G/R$. Then there is a subgroup $A$ of
+$G$ with $S \le A$ such that $xyx^{-1}y^{-1} \in S$ for all $x, y \in A$ (so $A/S$ is an abelian
+subgroup of $G/S$), and the index $|G : A|$ is finite and at most $f(k)$.
 
 ## Depends on
 
-- [Centralizer Dimension Abelian Section Bound](centralizer-dimension-abelian-section-bo.md)
+- [Vasil'ev's abelian section bound (Kourovka 19.101)](centralizer-dimension-abelian-section-bo.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AmalgamatedOrderedGroupsRightOrderableKourovka15Problem34Wanted.amalgamOfOrderedGroupsRightOrderable
 ---
 
-# Amalgam Of Ordered Groups Right Orderable
+# Kourovka Problem 15.34 (statement)
 
-Kourovka 15.34 (V. V. Bludov): the free product of any family of linearly (two-sided) ordered
-groups `G i` with an amalgamated subgroup `H`, embedded in each `G i` by an order-preserving
-homomorphism `φ i`, is right-orderable.
+**Kourovka Problem 15.34 (statement).** The statement that for every family $(G_i)_{i \in I}$
+of groups, each with a linear order invariant under multiplication on both sides, every group $H$
+with such a linear order, and all strictly increasing group homomorphisms
+$\varphi_i \colon H \to G_i$, the free product of the $G_i$ with $H$ amalgamated along the maps
+$\varphi_i$ is right-orderable.
+
+The problem was posed by V. V. Bludov.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Right Orderable](is-right-orderable.md)
+- [Right-orderable group](is-right-orderable.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MappingTorusLinearKourovka17Problem108Wanted.sapirGroupIntegerLinear
 ---
 
-# Sapir Group Integer Linear
+# Linearity of Sapir's group over the integers (Kourovka 17.108)
 
-Kourovka 17.108 (M. Sapir), in the form of its resolution: the group
-`⟨a, b, t | a^t = ab, b^t = ba⟩` is `ℤ`-linear, that is, it embeds in `GL_n(ℤ)` for some `n`.
+**Linearity of Sapir's group over the integers (Kourovka 17.108).** The statement that the
+group $\langle a, b, t \mid a^t = ab, b^t = ba \rangle$, where $a^t = t^{-1} a t$, embeds in
+$\mathrm{GL}_n(\mathbb{Z})$ for some natural number $n$, that is, that it is linear over
+$\mathbb{Z}$.
+
+This is the form of the Kourovka Archive's resolution of M. Sapir's question whether the group is
+linear.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sapir Group](sapir-group.md)
+- [Sapir's group](sapir-group.md)
 
 ## Sources
 

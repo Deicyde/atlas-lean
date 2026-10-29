@@ -4,5 +4,5 @@ navigation: module
 
 # No Proper Pronormal Subgroups Kourovka19 Problem74
 
-- [Exists Infinite Group Without Proper Pronormal](exists-infinite-group-without-proper-pro.md)
-- [Exists Infinite Group Without Proper Pronormal holds](exists-infinite-group-without-proper-pro-2.md)
+- [Infinite groups without nontrivial proper pronormal subgroups (Kourovka 19.74, Revin)](exists-infinite-group-without-proper-pro.md)
+- [An infinite group without nontrivial proper pronormal subgroups exists](exists-infinite-group-without-proper-pro-2.md)

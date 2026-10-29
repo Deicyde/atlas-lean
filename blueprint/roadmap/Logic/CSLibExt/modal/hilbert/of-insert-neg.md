@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Modal.Deduces.of_insert_neg
 ---
 
-# Of insert neg
+# Proof by contradiction
 
-Proof by contradiction: if `¬φ` and `Γ` entail `⊥`, then `Γ` entails `φ`.
+**Proof by contradiction.** Let $\Lambda$ be a set of modal formulas, $\Gamma$ a set of
+hypotheses and $\varphi$ a formula. If $\bot$ is a local consequence of
+$\Gamma \cup \{\neg\varphi\}$ in the normal modal logic $\mathbf{K} \oplus \Lambda$, then
+$\varphi$ is a local consequence of $\Gamma$ in $\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
-- [Neg](../kripke/neg.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Proof depends on
 
-- [The deduction theorem](imp-of-insert.md)
-- [Derivable](derivable.md)
+- [The deduction theorem for local modal consequence, forward direction](imp-of-insert.md)
+- [Theorems of a normal modal logic](derivable.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MetabelianizationDecisionProblemsKourovka12Problem98Wanted.metabelianizationWordProblemSolvesConjugacy
 ---
 
-# Metabelianization Word Problem Solves Conjugacy
+# Kourovka Problem 12.98(c) (V. E. Shpil'rain)
 
-Kourovka 12.98(c): if the word problem for `F ⧸ [R, R]` is solvable, so is its conjugacy
-problem.
+**Kourovka Problem 12.98(c) (V. E. Shpil'rain).** The statement that for every natural
+number $n$ and every recursively enumerable normal subgroup $R$ of the free group $F$ on $n$
+generators, with commutator subgroup $[R, R]$, if the word problem for $F / [R, R]$ is solvable
+then the conjugacy problem for $F / [R, R]$ is solvable.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Conjugacy Problem Solvable](conjugacy-problem-solvable.md)
-- [Is Recursively Enumerable](is-recursively-enumerable.md)
-- [Word Problem Solvable](word-problem-solvable.md)
+- [Solvable conjugacy problem for a quotient of a free group](conjugacy-problem-solvable.md)
+- [Recursively enumerable subgroup of a free group](is-recursively-enumerable.md)
+- [Solvable word problem for a quotient of a free group](word-problem-solvable.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FullyInvariantSubgroupsCyclicKourovka16Problem61Wanted.fullyInvariantSubgroupsOfEachOrderCyclic
 ---
 
-# Fully Invariant Subgroups Of Each Order Cyclic
+# MacHale's question on fully invariant subgroups (Kourovka 16.61)
 
-Kourovka 16.61 (D. MacHale): a finite group with a fully invariant subgroup (one mapped into
-itself by every endomorphism) of order `d` for every divisor `d` of `|G|` is cyclic.
+**MacHale's question on fully invariant subgroups (Kourovka 16.61).** The statement that every
+finite group $G$ having, for every divisor $d$ of $|G|$, a fully invariant subgroup of order $d$
+(a subgroup $H$ with $\varphi(H) \le H$ for every endomorphism $\varphi$ of $G$) is cyclic.
 
 ## Depends on
 

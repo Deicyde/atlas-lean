@@ -5,15 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupAutomorphismFixedPointKourovka10Problem25Wanted.automorphismFixedPointDecidable_holds
 ---
 
-# Automorphism Fixed Point Decidable holds
+# Fixed points of free group automorphisms are decidable (Kourovka 10.25)
 
-Resolved true: the Kourovka Archive answers "Yes, it does", citing Bogopolski and Maslakova (2016),
+**Fixed points of free group automorphisms are decidable (Kourovka 10.25).** For every natural
+number $r$ there is a computable function $f$ which takes the images of the $r$ free generators of
+the free group $F_r$, each encoded as a word in the generators and their inverses, and returns a
+Boolean, such that whenever the endomorphism $\varphi$ of $F_r$ sending each generator to its image
+is bijective, $f$ returns true exactly when $\varphi(w) = w$ for some $w \neq 1$ in $F_r$.
+
+The Kourovka Archive answers Problem 10.25 "Yes, it does", citing Bogopolski and Maslakova (2016),
 who give an algorithm computing a basis of the fixed subgroup of an automorphism of a free group of
 finite rank; the automorphism has a non-trivial fixed point exactly when that basis is nonempty.
 
 ## Depends on
 
-- [Automorphism Fixed Point Decidable](automorphism-fixed-point-decidable.md)
+- [Decidability of fixed points of free group automorphisms (Kourovka 10.25)](automorphism-fixed-point-decidable.md)
 
 ## Sources
 

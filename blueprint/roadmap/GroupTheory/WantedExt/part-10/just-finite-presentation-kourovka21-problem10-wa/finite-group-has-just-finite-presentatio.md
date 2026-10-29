@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.JustFinitePresentationKourovka21Problem10Wanted.finiteGroupHasJustFinitePresentation
 ---
 
-# Finite Group Has Just Finite Presentation
+# Barnea's question on just finite presentations (Kourovka 21.10)
 
-Kourovka 21.10 (Y. Barnea): every finite group `G` has a just finite presentation: a
-presentation `⟨X | R⟩` with `X` and `R` finite that defines `G` and such that removing any single
-relator from `R` gives a presentation of an infinite group.
+**Barnea's question on just finite presentations (Kourovka 21.10).** The statement that every
+finite group $G$ has a just finite presentation: a presentation $\langle X \mid R \rangle$ with $X$
+and $R$ finite that defines $G$ and such that removing any single relator from $R$ gives a
+presentation of an infinite group.
 
 ## Depends on
 

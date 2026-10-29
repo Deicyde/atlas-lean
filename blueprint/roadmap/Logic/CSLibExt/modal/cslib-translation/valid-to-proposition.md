@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.valid_toProposition
 ---
 
-# Valid to Proposition
+# Validity agrees with its CSLib translation
 
-Validity transfers to the associated CSLib model under the reverse
-translation.
+**Validity agrees with its CSLib translation.** A modal formula $\varphi$ is
+valid in a Kripke model $k$ (true at every world of $k$) if and only if its translation into a
+CSLib unimodal proposition is satisfied at every world of the CSLib unimodal model associated
+with $k$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [To Proposition](to-proposition.md)
+- [Modal formulas](../kripke/formula.md)
+- [Translation of modal formulas into CSLib propositions](to-proposition.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
-- [To Model](to-model.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
+- [The CSLib unimodal model of a Kripke model](to-model.md)
 
 ## Proof depends on
 
-- [Satisfies](../kripke/satisfies.md)
-- [Satisfies to Proposition](satisfies-to-proposition.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [The reverse translation preserves satisfaction](satisfies-to-proposition.md)
 
 ## Sources
 

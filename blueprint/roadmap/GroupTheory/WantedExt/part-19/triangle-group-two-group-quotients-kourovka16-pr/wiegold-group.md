@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TriangleGroupTwoGroupQuotientsKourovka16Problem101Wanted.wiegoldGroup
 ---
 
-# Wiegold Group
+# The (2, 4, 8) triangle group
 
-The group `⟨x, y | x² = y⁴ = (x y)⁸ = 1⟩`.
+**The (2, 4, 8) triangle group.** The $(2, 4, 8)$ triangle group is the group with
+presentation $\langle x, y \mid x^2 = y^4 = (xy)^8 = 1 \rangle$.
 
 ## Depends on
 

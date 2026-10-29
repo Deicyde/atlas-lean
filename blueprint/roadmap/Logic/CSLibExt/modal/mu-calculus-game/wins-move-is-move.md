@@ -6,28 +6,29 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.winsMove_isMove
 ---
 
-# Wins Move is Move
+# The Wins-guided move is legal
 
-`winsMove` always plays a legal move at Verifier-owned positions where one
-exists.
+**The Wins-guided move is legal.** For a Kripke model $M$ and a game position $p$ owned by
+Verifier from which some move exists, the Wins-guided move at $p$ is a legal move of the
+model-checking game on $M$ from $p$.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
 - [Game Position](game-position.md)
-- [Move](move.md)
-- [Owner](owner.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Owner of a game position](owner.md)
 - [Player](player.md)
-- [Wins Move](wins-move.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Wins-guided move](wins-move.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [Wins](wins.md)
-- [To Mu Inv](to-mu-inv.md)
-- [To Mu to Mu Inv](to-mu-to-mu-inv.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Backward-induction winning region of the fixpoint-free fragment](wins.md)
+- [Partial inverse of the fixpoint-free embedding](to-mu-inv.md)
+- [The embedding inverts the partial inverse](to-mu-to-mu-inv.md)
 
 ## Sources
 

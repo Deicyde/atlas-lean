@@ -4,31 +4,31 @@ navigation: module
 
 # Filtration
 
-- [Sub](sub.md)
-- [Sub subset of mem](sub-subset-of-mem.md)
+- [Subformulas](sub.md)
+- [The subformula relation is transitive](sub-subset-of-mem.md)
 
 ## Finite models on sets of subformulas
 
-- [Fin Model](fin-model.md)
-- [Eval Fin](eval-fin.md)
+- [Finite Kripke model on sets of formulas](fin-model.md)
+- [Boolean evaluation in a finite model](eval-fin.md)
 
 ## Filtration
 
-- [Sub Type](sub-type.md)
-- [Filtration Worlds](filtration-worlds.md)
-- [Filtration Rel](filtration-rel.md)
-- [Exists sub Type eq](exists-sub-type-eq.md)
-- [Satisfies iff of sub Type eq](satisfies-iff-of-sub-type-eq.md)
-- [Is Filtration](is-filtration.md)
+- [Type of a world](sub-type.md)
+- [Worlds of the filtration](filtration-worlds.md)
+- [Smallest filtration relation](filtration-rel.md)
+- [Filtration worlds are realized types](exists-sub-type-eq.md)
+- [Worlds of the same type agree on subformulas](satisfies-iff-of-sub-type-eq.md)
+- [Filtration relations](is-filtration.md)
 - [Filtration lemma](satisfies-fin-model-filtration-worlds-if.md)
-- [Is Filtration filtration Rel](is-filtration-filtration-rel.md)
-- [Filtration](filtration.md)
-- [Filtration lemma](satisfies-filtration-iff.md)
+- [The smallest filtration is a filtration](is-filtration-filtration-rel.md)
+- [Smallest filtration of a Kripke model](filtration.md)
+- [Filtration lemma for the smallest filtration](satisfies-filtration-iff.md)
 
 ## Finite model property and decidability
 
-- [Exists not satisfies of not derivable K](exists-not-satisfies-of-not-derivable-k.md)
+- [Completeness of K, countermodel form](exists-not-satisfies-of-not-derivable-k.md)
 - [Finite model property of K](exists-finite-countermodel.md)
-- [Fin Valid](fin-valid.md)
-- [Derivable K iff fin Valid](derivable-k-iff-fin-valid.md)
-- [Derivable K iff forall fin Model](derivable-k-iff-forall-fin-model.md)
+- [Finite validity check for K](fin-valid.md)
+- [Finite-check criterion for K-theorems](derivable-k-iff-fin-valid.md)
+- [K-theorems via finite models on sets of subformulas](derivable-k-iff-forall-fin-model.md)

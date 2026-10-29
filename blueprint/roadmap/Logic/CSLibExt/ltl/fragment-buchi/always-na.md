@@ -12,11 +12,11 @@ forever, requiring every letter to satisfy `φ`.
 
 ## Depends on
 
-- [Prop Formula](prop-formula.md)
+- [Propositional formulas](prop-formula.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Evaluating a propositional formula at a letter](eval.md)
 
 ## Sources
 

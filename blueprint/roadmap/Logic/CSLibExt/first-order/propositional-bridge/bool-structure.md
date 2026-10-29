@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Logic.FOL.Proposition.boolStructure
 ---
 
-# Bool Structure
+# Boolean structure of a valuation
 
-The `Bool` structure for a valuation `v`: a nullary relation is true iff `v` makes
-its atom true.
+**Boolean structure of a valuation.** Given a valuation $v$ assigning a Boolean to each
+atom, the Boolean structure of $v$ is the structure for the first-order language of
+propositional atoms whose domain is the set of Booleans $\{\mathrm{false}, \mathrm{true}\}$
+and in which the nullary relation symbol of an atom $a$ holds exactly when $v(a)$ is true.
+The language has no function symbols, so nothing else needs to be interpreted.
 
 ## Depends on
 
-- [Prop Language](prop-language.md)
+- [First-order language of propositional atoms](prop-language.md)
 
 ## Proof depends on
 
-- [Prop Relations](prop-relations.md)
+- [Relation symbols of the propositional language](prop-relations.md)
 
 ## Sources
 

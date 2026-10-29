@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeCentralExtensionResiduallyNilpotentKourovka16Problem65Wanted.IsResiduallyNilpotent
 ---
 
-# Is Residually Nilpotent
+# Residually nilpotent group
 
-`G` is residually nilpotent: every `g ≠ 1` survives in some nilpotent quotient.
+**Residually nilpotent group.** A group $G$ is residually nilpotent if for every element
+$g \ne 1$ of $G$ there is a normal subgroup $N$ of $G$ with $g \notin N$ such that the quotient
+$G/N$ is nilpotent.
 
 ## Depends on
 

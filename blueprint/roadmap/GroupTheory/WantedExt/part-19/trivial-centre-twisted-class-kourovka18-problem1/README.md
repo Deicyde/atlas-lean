@@ -4,6 +4,6 @@ navigation: module
 
 # Trivial Centre Twisted Class Kourovka18 Problem15
 
-- [Twisted Unit Class](twisted-unit-class.md)
-- [Trivial Centre Has Inner Twisted Class Not Subgroup](trivial-centre-has-inner-twisted-class-n.md)
-- [Trivial Centre Has Inner Twisted Class Not Subgroup refuted](trivial-centre-has-inner-twisted-class-n-2.md)
+- [Twisted conjugacy class of the identity (Kourovka 18.15)](twisted-unit-class.md)
+- [Kourovka Problem 18.15: an inner twisted class that is not a subgroup](trivial-centre-has-inner-twisted-class-n.md)
+- [Negative answer to Kourovka Problem 18.15](trivial-centre-has-inner-twisted-class-n-2.md)

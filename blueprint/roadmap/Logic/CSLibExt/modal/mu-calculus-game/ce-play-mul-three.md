@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.cePlay_mul_three
 ---
 
-# Ce Play mul three
+# The regression play returns to its start every three steps
 
-Multiples of 3 land on the first cycle position.
+**The regression play returns to its start every three steps.** Number the positions of
+the regression play of $\mu X.\,\nu Y.\,X$ from $0$. For every natural number $k$, its
+position number $3k$ is its starting position: the formula $\mu X.\,\nu Y.\,X$ at the unique
+world, with the empty binder stack.
 
 ## Depends on
 
 - [Game Position](game-position.md)
-- [Ce Play](ce-play.md)
-- [Ce Pos0](ce-pos0.md)
+- [The regression play](ce-play.md)
+- [Starting position of the regression play](ce-pos0.md)
 
 ## Proof depends on
 
-- [Ce Play period](ce-play-period.md)
+- [The regression play has period three](ce-play-period.md)
 
 ## Sources
 

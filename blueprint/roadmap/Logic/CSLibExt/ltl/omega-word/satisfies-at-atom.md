@@ -6,27 +6,16 @@ proof: formalized
 lean: Cslib.LTL.Word.satisfiesAt_atom
 ---
 
-# Satisfies At atom
+# Satisfaction of an atom at a position
 
-`F G φ`: `φ` holds at all but finitely many positions. -/
-theorem eventually_always_iff :
-    Satisfies valuation w (Formula.eventually (Formula.always φ)) ↔
-      ∀ᶠ k in atTop, SatisfiesAt valuation w k φ := by
-  simp only [eventually_iff, Filter.eventually_atTop]
-  refine exists_congr fun k => ?_
-  rw [SatisfiesAt, always_iff]
-  simp only [satisfiesAt_drop]
-  exact ⟨fun h m hm => by simpa [Nat.add_sub_cancel' hm] using h (m - k),
-    fun h j => h (k + j) (by omega)⟩
-
-end Satisfies
-
-/-! ### Positional forms
+**Satisfaction of an atom at a position.** Let $v$ be a valuation of atoms on letters, $w$ an
+ω-word, $a$ an atom and $k$ a natural number. The atomic formula $a$ holds at position $k$ of $w$
+under $v$ if and only if $v$ makes $a$ true at the letter $w(k)$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies At](satisfies-at.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction at a position](satisfies-at.md)
 
 ## Sources
 

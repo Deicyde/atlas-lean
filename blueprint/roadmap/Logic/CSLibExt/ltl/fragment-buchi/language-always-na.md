@@ -6,28 +6,31 @@ proof: formalized
 lean: Cslib.LTL.language_alwaysNa
 ---
 
-# Language always Na
+# The always automaton recognizes G φ
 
-The `always` automaton accepts exactly the language of `G φ`.
+**The always automaton recognizes G φ.** For a propositional formula $\varphi$, the
+one-state Büchi automaton for $\mathbf{G}\,\varphi$ accepts exactly the infinite words of letters
+(sets of atoms) that satisfy the LTL formula $\mathbf{G}\,\varphi$, where an atom $a$ holds at a
+letter $s$ iff $a \in s$.
 
 ## Depends on
 
-- [Always](../syntax/always.md)
-- [Prop Formula](prop-formula.md)
-- [To LTL](to-ltl.md)
-- [Language](../omega-word/language.md)
+- [The always operator of LTL](../syntax/always.md)
+- [Propositional formulas](prop-formula.md)
+- [Propositional formulas as LTL formulas](to-ltl.md)
+- [Language of an LTL formula](../omega-word/language.md)
 - [Always Na](always-na.md)
 
 ## Proof depends on
 
-- [Formula](../syntax/formula.md)
-- [Eventually](../syntax/eventually.md)
-- [Eval](eval.md)
-- [Satisfies](../omega-word/satisfies.md)
-- [Eventually iff](../omega-word/eventually-iff.md)
-- [Satisfies At](../omega-word/satisfies-at.md)
-- [Mem language](../omega-word/mem-language.md)
-- [Satisfies At to LTL](satisfies-at-to-ltl.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [The eventually operator of LTL](../syntax/eventually.md)
+- [Evaluating a propositional formula at a letter](eval.md)
+- [Satisfaction of LTL formulas on ω-words](../omega-word/satisfies.md)
+- [Semantics of eventually](../omega-word/eventually-iff.md)
+- [Satisfaction at a position](../omega-word/satisfies-at.md)
+- [Membership in the language of a formula](../omega-word/mem-language.md)
+- [Propositional formulas are evaluated at the current letter](satisfies-at-to-ltl.md)
 
 ## Sources
 

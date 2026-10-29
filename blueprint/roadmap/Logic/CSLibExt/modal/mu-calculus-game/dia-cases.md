@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.Move.dia_cases
 ---
 
-# Dia cases
+# Moves from a diamond position
 
-Inversion for diamond moves: the successor is a related world with the
-subformula.
+**Moves from a diamond position.** In the model-checking game on a Kripke model $M$, every
+move from the position with formula $\Diamond\varphi$, world $w$ and binder stack $s$ goes to the
+position with formula $\varphi$, world $v$ and the same stack $s$, for some world $v$ accessible
+from $w$ in $M$.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
 - [Game Position](game-position.md)
-- [Move](move.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

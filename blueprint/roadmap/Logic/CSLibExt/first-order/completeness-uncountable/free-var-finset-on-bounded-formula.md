@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Logic.FOL.freeVarFinset_onBoundedFormula
 ---
 
-# Free Var Finset on Bounded Formula
+# Language homomorphisms preserve free variables
 
-`LHom.onBoundedFormula` preserves the free variables. Source: D. van Dalen, *Logic and
-Structure*, 5th ed., Springer 2013, §3.1.
+**Language homomorphisms preserve free variables.** Let $h : L \to L'$ be a homomorphism of
+first-order languages, and let $\varphi$ be a bounded formula of $L$ with free variables in
+$\alpha$ and $n$ bound variables. The formula of $L'$ obtained from $\varphi$ by replacing each
+symbol by its image under $h$ has the same free variables as $\varphi$.
 
 ## Depends on
 
@@ -17,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Var Finset Left on Term](var-finset-left-on-term.md)
+- [Language homomorphisms preserve the free variables of a term](var-finset-left-on-term.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- D. van Dalen, *Logic and Structure*, 5th ed., Springer 2013, §3.1.

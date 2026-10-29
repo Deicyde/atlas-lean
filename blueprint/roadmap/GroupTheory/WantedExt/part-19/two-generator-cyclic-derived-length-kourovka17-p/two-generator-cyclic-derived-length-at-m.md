@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.twoGeneratorCyclicDerivedLengthAtMostFour
 ---
 
-# Two Generator Cyclic Derived Length At Most Four
+# Kourovka Problem 17.46, with the bound $4$
 
-Kourovka 17.46 (B. M. Veretennikov), in the form of its resolution: a finite `p`-group in
-which every 2-generator subgroup has cyclic derived subgroup has derived length at most `4`.
+**Kourovka Problem 17.46, with the bound $4$.** The statement that for every prime $p$ and
+every finite $p$-group $G$ such that for all $x, y \in G$ the derived subgroup $[H, H]$ of
+$H = \langle x, y \rangle$ is cyclic, $G$ has derived length at most $4$, that is, the fourth
+term $G^{(4)}$ of the derived series of $G$ is trivial.
 
 ## Depends on
 

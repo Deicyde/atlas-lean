@@ -11,11 +11,11 @@ lean: MathlibExt.GroupTheory.SimpleCompositionFactorFormationKourovka12Problem97
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.97)](group-class.md)
 
 ## Proof depends on
 
-- [All Composition Factors Iso](all-composition-factors-iso.md)
+- [Groups with a subnormal series whose factors are all isomorphic to a given group](all-composition-factors-iso.md)
 
 ## Sources
 

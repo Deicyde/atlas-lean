@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallGroupSelfExtensionKourovka12Problem44Wanted.existsGroupIsoToSelfExtensions
 ---
 
-# Exists Group Iso To Self Extensions
+# Hall's problem on self-extensions (Kourovka Problem 12.44)
 
-Kourovka 12.44 (P. Hall): there is a nontrivial group isomorphic to every extension of
-itself by itself.
+**Hall's problem on self-extensions (Kourovka Problem 12.44).** There is a nontrivial group $G$
+that is a Hall group, that is, isomorphic to every extension of itself by itself: every group $H$
+with a normal subgroup $N \cong G$ such that $H/N \cong G$ is isomorphic to $G$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Hall Group](is-hall-group.md)
+- [Hall group](is-hall-group.md)
 
 ## Sources
 

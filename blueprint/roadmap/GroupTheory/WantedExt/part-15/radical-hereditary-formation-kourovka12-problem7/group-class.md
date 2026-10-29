@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.GroupClass
 ---
 
-# Group Class
+# Isomorphism-closed class of groups
 
-A class of groups closed under isomorphism, given by a membership predicate on groups in
-`Type`; only its finite members matter below.
+**Isomorphism-closed class of groups.** A class of groups $X$ is a property of groups that is
+invariant under isomorphism: if a group $H$ belongs to $X$ and $K$ is a group isomorphic to $H$,
+then $K$ belongs to $X$.
+
+Infinite groups may belong to a class; apart from isomorphism invariance, the conditions imposed
+on classes below concern only finite groups.
 
 ## Depends on
 

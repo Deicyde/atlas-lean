@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionQuotientFinitelyPresentedKourovka19Problem24Wanted.torsionClosure
 ---
 
-# Torsion Closure
+# Torsion closure
 
-`Tor(G)`: the normal closure of the torsion elements of `G`.
+**Torsion closure.** For a group $G$, $\mathrm{Tor}(G)$ is the normal closure in $G$ of the set
+of elements of finite order of $G$.
 
 ## Depends on
 

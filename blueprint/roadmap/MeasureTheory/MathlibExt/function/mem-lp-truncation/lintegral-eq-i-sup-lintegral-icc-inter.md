@@ -6,12 +6,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.MemLpTruncation.lintegral_eq_iSup_lintegral_Icc_inter
 ---
 
-# Lintegral eq i Sup lintegral Icc inter
+# Lebesgue integrals over truncations of a set
 
-For a measurable set `S ⊆ ℝ` and a measurable function `g : ℝ → ℝ≥0∞`, the
-integral of `g` over `S` equals the supremum over `n : ℕ` of the integrals over
-the truncations `[-n, n] ∩ S`. This is monotone convergence applied to the
-indicators of the truncations.
+**Lebesgue integrals over truncations of a set.** Let $\lambda$ be Lebesgue measure on
+$\mathbb{R}$, let $S \subseteq \mathbb{R}$ be measurable, and let $g : \mathbb{R} \to [0, \infty]$
+be measurable. Then
+
+$$\int_S g \, d\lambda = \sup_{n \in \mathbb{N}} \int_{[-n, n] \cap S} g \, d\lambda.$$
+
+This is monotone convergence applied to the indicators of the truncations.
 
 ## Depends on
 

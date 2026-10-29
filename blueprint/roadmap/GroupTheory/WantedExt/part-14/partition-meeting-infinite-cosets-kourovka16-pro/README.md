@@ -4,5 +4,5 @@ navigation: module
 
 # Partition Meeting Infinite Cosets Kourovka16 Problem43
 
-- [Three Partition Meets Infinite Cosets](three-partition-meets-infinite-cosets.md)
-- [Three Partition Meets Infinite Cosets holds](three-partition-meets-infinite-cosets-ho.md)
+- [Kourovka 16.43: partitioning $\bigoplus_{\omega_1} \mathbb{Z}/3\mathbb{Z}$ into three parts meeting every infinite coset](three-partition-meets-infinite-cosets.md)
+- [A partition of $\bigoplus_{\omega_1} \mathbb{Z}/3\mathbb{Z}$ into three parts meeting every infinite coset](three-partition-meets-infinite-cosets-ho.md)

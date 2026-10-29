@@ -4,7 +4,7 @@ navigation: module
 
 # Diophantine
 
-- [Is Diophantine](is-diophantine.md)
-- [Is Diophantine Set](is-diophantine-set.md)
-- [Is Diophantine univ](is-diophantine-univ.md)
-- [Is Diophantine empty](is-diophantine-empty.md)
+- [Diophantine sets](is-diophantine.md)
+- [Diophantine subsets of a ring](is-diophantine-set.md)
+- [The whole space is Diophantine](is-diophantine-univ.md)
+- [The empty set is Diophantine](is-diophantine-empty.md)

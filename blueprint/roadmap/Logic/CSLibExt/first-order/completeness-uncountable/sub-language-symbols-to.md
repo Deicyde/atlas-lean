@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Logic.FOL.subLanguageSymbolsTo
 ---
 
-# Sub Language Symbols To
+# Symbols of the sublanguage of a finite set of formulas as symbols of the language
 
-The map from sublanguage symbols to ambient symbols. Source: H.-D. Ebbinghaus, J. Flum,
-and W. Thomas, *Mathematical Logic*, 2nd ed., Springer 1994, Chapter V.
+**Symbols of the sublanguage of a finite set of formulas as symbols of the language.** Let
+$L$ be a first-order language. For a finite set $F$ of formulas of $L$ with free variables in
+$\mathbb{N}$, this map sends each function symbol (respectively relation symbol) of the
+sublanguage of $L$ on the symbols occurring in $F$ to the same function symbol (respectively
+relation symbol) of $L$, with the same arity.
 
 ## Depends on
 
-- [Sub Language](sub-language.md)
+- [Sublanguage of a finite set of formulas](sub-language.md)
 
 ## Proof depends on
 
-- [Symbols Of](symbols-of.md)
+- [Symbols of a finite set of formulas](symbols-of.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- H.-D. Ebbinghaus, J. Flum, and W. Thomas, *Mathematical Logic*, 2nd ed., Springer 1994, Chapter V.

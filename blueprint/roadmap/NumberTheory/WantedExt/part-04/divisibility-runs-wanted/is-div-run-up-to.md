@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsDivRunUpTo
 ---
 
-# Is Div Run Up To
+# Divisibility runs
 
-A divisibility run of length at least `L`: at each of the first `L`
-indices the generalized Fibonacci term is nonzero and divides the
-corresponding generalized Tribonacci term. This is the relation `L' ≥ L`
-for the run length `L = L(x, y; a, b, c)` of the paper's Equation (1), which
-is not displayed in the extracted statements; its values at `L = 1, 2, 3`
-are determined by Proposition 3 below.
+**Divisibility runs.** For integers $x, y, a, b, c$ and a natural number $L$, let
+$(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$ and $P_1 = y$, and let $(Q_n)_{n \ge 0}$
+be the generalized Tribonacci sequence with $Q_0 = a$, $Q_1 = b$ and $Q_2 = c$. The configuration
+$(x, y; a, b, c)$ has a divisibility run of length at least $L$ when $P_i \ne 0$ and
+$P_i \mid Q_i$ for every $i < L$.
+
+This is the statement that the run length $L(x, y; a, b, c)$ of the paper's Equation (1) is at
+least $L$; the paper indexes the sequences from $1$.
 
 ## Depends on
 
@@ -20,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Tribonacci](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
+- [Generalized Tribonacci sequence](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
 - [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources

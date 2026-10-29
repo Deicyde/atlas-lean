@@ -4,6 +4,6 @@ navigation: module
 
 # Simply Reducible Soluble Kourovka11 Problem94
 
-- [Is Simply Reducible](is-simply-reducible.md)
-- [Simply Reducible Soluble](simply-reducible-soluble.md)
-- [Simply Reducible Soluble holds](simply-reducible-soluble-holds.md)
+- [Simply reducible group](is-simply-reducible.md)
+- [Solubility of finite simply reducible groups (Kourovka 11.94)](simply-reducible-soluble.md)
+- [Finite simply reducible groups are soluble](simply-reducible-soluble-holds.md)

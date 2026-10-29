@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Modal.filtrationWorlds
 ---
 
-# Filtration Worlds
+# Worlds of the filtration
 
-The `Σ`-types that occur in `M`.
+**Worlds of the filtration.** Let $M$ be a Kripke model and $\varphi$ a modal formula. The
+worlds of the filtration of $M$ through the subformulas of $\varphi$ form the finite set of types
+occurring in $M$: the subsets $s$ of the set $\mathrm{sub}(\varphi)$ of subformulas of $\varphi$
+such that $s$ is the set of subformulas of $\varphi$ satisfied at some world of $M$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
 
 ## Proof depends on
 
-- [Sub](sub.md)
-- [Sub Type](sub-type.md)
+- [Subformulas](sub.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

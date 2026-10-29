@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DoublyTransitiveCyclicStabilizerKourovka10Problem63Wanted.doublyTransitiveInfiniteCyclicStabilizer
 ---
 
-# Doubly Transitive Infinite Cyclic Stabilizer
+# Doubly transitive group with infinite cyclic point stabilizer (Kourovka 10.63)
 
-Kourovka 10.63 (Ya. P. Sysak): some doubly transitive permutation group (a faithful
-`2`-transitive action) has an infinite cyclic point stabilizer.
+**Doubly transitive group with infinite cyclic point stabilizer (Kourovka 10.63).** The
+statement that there exist a group $G$ and a faithful action of $G$ on a set $X$ such that for
+any two ordered pairs of distinct points of $X$ some element of $G$ maps the first to the second,
+and the stabilizer of some point $x \in X$ is isomorphic to the infinite cyclic group $\mathbb{Z}$.
 
 ## Depends on
 

@@ -4,11 +4,11 @@ navigation: module
 
 # Centralizer Dimension Socle Quotient Kourovka19 Problem101
 
-- [Is Locally Finite](is-locally-finite.md)
-- [Is Locally Soluble](is-locally-soluble.md)
-- [CDim LE](cdim-le.md)
-- [Is Minimal Normal](is-minimal-normal.md)
+- [Locally finite groups](is-locally-finite.md)
+- [Locally soluble subgroups](is-locally-soluble.md)
+- [Centralizer dimension at most $k$](cdim-le.md)
+- [Minimal normal subgroups](is-minimal-normal.md)
 - [Socle](socle.md)
-- [Socle Lift](socle-lift.md)
-- [Centralizer Dimension Abelian Section Bound](centralizer-dimension-abelian-section-bo.md)
-- [Centralizer Dimension Abelian Section Bound holds](centralizer-dimension-abelian-section-bo-2.md)
+- [Preimage of the socle of a quotient](socle-lift.md)
+- [Vasil'ev's abelian section bound (Kourovka 19.101)](centralizer-dimension-abelian-section-bo.md)
+- [Buturlakin's theorem on locally finite groups of finite $c$-dimension](centralizer-dimension-abelian-section-bo-2.md)

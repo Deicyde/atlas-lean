@@ -4,8 +4,8 @@ navigation: module
 
 # Formation Variety PGroups Kourovka11 Problem21
 
-- [Group Class](group-class.md)
-- [Is Formation](is-formation.md)
-- [Satisfies Laws](satisfies-laws.md)
-- [Subformation Of PGroups Is Varietal](subformation-of-pgroups-is-varietal.md)
-- [Subformation Of PGroups Is Varietal refuted](subformation-of-pgroups-is-varietal-refu.md)
+- [Classes of groups](group-class.md)
+- [Formations of finite groups](is-formation.md)
+- [Groups satisfying a set of laws](satisfies-laws.md)
+- [Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups)](subformation-of-pgroups-is-varietal.md)
+- [Kourovka Problem 11.21 has a negative answer](subformation-of-pgroups-is-varietal-refu.md)

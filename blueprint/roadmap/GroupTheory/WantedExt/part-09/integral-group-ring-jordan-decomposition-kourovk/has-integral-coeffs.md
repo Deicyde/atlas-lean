@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IntegralGroupRingJordanDecompositionKourovka16Problem104Wanted.HasIntegralCoeffs
 ---
 
-# Has Integral Coeffs
+# Elements with integer coefficients
 
-An element of `ℚ[G]` lies in `ℤ[G]`: all its coefficients are integers.
+**Elements with integer coefficients.** An element $x$ of the monoid algebra $\mathbb{Q}[G]$
+lies in $\mathbb{Z}[G]$ when all its coefficients are integers: for every $g \in G$, the
+coefficient of $x$ at $g$ is an integer.
 
 ## Depends on
 

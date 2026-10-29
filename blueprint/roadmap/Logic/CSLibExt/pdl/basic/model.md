@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.PDL.Model
 ---
 
-# Model
+# PDL model
 
-A PDL model: an accessibility relation per atomic action, and an
-atom valuation.
+**PDL model.** A model of propositional dynamic logic with set of worlds $W$ consists of a
+binary accessibility relation $R_a$ on $W$ for each atomic action label $a$, and a valuation that
+says which atoms are true at each world.
 
 ## Depends on
 

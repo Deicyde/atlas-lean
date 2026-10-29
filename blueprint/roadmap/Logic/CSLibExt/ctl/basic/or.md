@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.CTL.Formula.or
 ---
 
-# Or
+# CTL disjunction
 
-Disjunction, by De Morgan duality.
+**CTL disjunction.** For CTL formulas $\varphi$ and $\psi$, the disjunction
+$\varphi \lor \psi$ is defined as $\neg(\neg\varphi \land \neg\psi)$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Sources
 

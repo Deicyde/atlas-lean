@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Modal.satisfiable_K
 ---
 
-# Satisfiable K
+# Model existence for K
 
-Every K-consistent set is satisfiable in some Kripke model.
+**Model existence for K.** For every K-consistent set $\Gamma$ of modal formulas there are a
+Kripke model, whose worlds lie in the universe of the atoms, and a world of it at which every
+formula of $\Gamma$ holds.
 
 ## Depends on
 
-- [K](../hilbert/k.md)
-- [Consistent](consistent.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of the modal logic K](../hilbert/k.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 
 ## Proof depends on
 
-- [Derivable](../hilbert/derivable.md)
-- [Satisfiable of consistent](satisfiable-of-consistent.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Model existence from the canonical model](satisfiable-of-consistent.md)
 
 ## Sources
 

@@ -6,16 +6,17 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.longitudeMap_apply_ofAdd_mk
 ---
 
-# Longitude Map apply of Add mk
+# The longitude map on the class of an angle
 
-The longitude map sends the class of `θ` to the diagonal rotation
-through `θ`.
+**The longitude map on the class of an angle.** For every real number $\theta$, the longitude
+map sends the class of $\theta$ in $\mathbb{R}/2\pi\mathbb{Z}$ to the diagonal rotation through
+$\theta$, regarded as an element of the longitude subgroup.
 
 ## Depends on
 
 - [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
-- [Longitude Map](longitude-map.md)
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude map](longitude-map.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 

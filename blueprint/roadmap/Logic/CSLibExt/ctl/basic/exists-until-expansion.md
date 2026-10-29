@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.existsUntil_expansion
 ---
 
-# Exists Until expansion
+# One-step expansion of $\mathrm{EU}$
 
-The one-step expansion of `E[φ U ψ]`: either `ψ` holds now, or `φ`
-holds now and `E[φ U ψ]` holds at some successor.
+**One-step expansion of $\mathrm{EU}$.** Let $\varphi$ and $\psi$ be CTL formulas and $s$ a
+state of a labelled transition system with a valuation of the atoms. Then $s$ satisfies
+$\mathrm{E}[\varphi \mathbin{\mathrm{U}} \psi]$ if and only if either $s$ satisfies $\psi$, or
+$s$ satisfies $\varphi$ and some successor of $s$ satisfies
+$\mathrm{E}[\varphi \mathbin{\mathrm{U}} \psi]$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Satisfies](satisfies.md)
+- [CTL formulas](formula.md)
+- [Satisfaction of CTL formulas](satisfies.md)
 
 ## Proof depends on
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.not_existsNext_top_iff
 ---
 
-# Not exists Next top iff
+# Deadlocked states are exactly those satisfying ¬EX ⊤
 
-`¬EX ⊤` holds exactly at deadlocked states.
+**Deadlocked states are exactly those satisfying ¬EX ⊤.** A state $s$ of a labelled transition
+system satisfies the CTL formula $\neg\mathsf{EX}\,\top$, under any valuation of the atoms, if and
+only if $s$ is deadlocked: there is no label $a$ and state $t$ with a transition from $s$ to $t$
+labelled $a$.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
-- [Satisfies](../basic/satisfies.md)
+- [CTL formulas](../basic/formula.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
 
 ## Sources
 

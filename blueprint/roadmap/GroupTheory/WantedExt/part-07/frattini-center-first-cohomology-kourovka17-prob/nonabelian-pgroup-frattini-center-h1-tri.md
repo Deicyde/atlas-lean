@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.nonabelianPGroupFrattiniCenterH1Trivial
 ---
 
-# Nonabelian PGroup Frattini Center H1 Trivial
+# Kourovka Problem 17.2 (a non-abelian $p$-group with trivial $H^1$)
 
-Kourovka 17.2 (A. Abdollahi; P. Schmid's question): there is a finite non-abelian `p`-group
-`G` with `H¹(G/Φ(G), Z(Φ(G))) = 0`.
+**Kourovka Problem 17.2 (a non-abelian $p$-group with trivial $H^1$).** The statement, a
+question of P. Schmid recorded by A. Abdollahi, that there exist a prime $p$ and a finite
+non-abelian $p$-group $G$ such that, writing $\Phi(G)$ for the Frattini subgroup of $G$ and
+$Z(\Phi(G))$ for its centre, the first cohomology group $H^1(G/\Phi(G), Z(\Phi(G)))$ for the
+conjugation action of $G/\Phi(G)$ on $Z(\Phi(G))$ is trivial.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Frattini Center H1 Trivial](frattini-center-h1-trivial.md)
+- [Vanishing first cohomology of $G/\Phi(G)$ in $Z(\Phi(G))$](frattini-center-h1-trivial.md)
 
 ## Sources
 

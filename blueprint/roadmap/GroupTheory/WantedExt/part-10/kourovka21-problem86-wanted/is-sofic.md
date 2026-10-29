@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem86Wanted.IsSofic
 ---
 
-# Is Sofic
+# Sofic groups
 
-A group `G` is sofic if for every finite set `F ⊆ G` containing `1` and
-every `ε > 0` there exist `n` and `φ : F → S_n` with `φ 1 = 1`,
-`d (φ (g h)) (φ g * φ h) < ε` whenever `g h ∈ F`, and `φ g` fixed-point-free
-for `g ≠ 1` [KOU-21.86].
+**Sofic groups.** Let $d$ denote the normalized Hamming distance on permutations. A group
+$G$ is sofic if for every finite subset $F \subseteq G$ with $1 \in F$ and every real
+$\varepsilon > 0$ there are an integer $n \ge 1$ and a map $\varphi$ from $F$ to the permutations
+of $\{0, \dots, n-1\}$ such that $\varphi(1)$ is the identity,
+$d(\varphi(gh), \varphi(g)\varphi(h)) < \varepsilon$ for all $g, h \in F$ with $gh \in F$, and
+$\varphi(g)$ has no fixed point for every $g \in F$ with $g \ne 1$ [KOU-21.86].
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sofic Hamming Dist](sofic-hamming-dist.md)
+- [Hamming distance for sofic approximations](sofic-hamming-dist.md)
 
 ## Sources
 

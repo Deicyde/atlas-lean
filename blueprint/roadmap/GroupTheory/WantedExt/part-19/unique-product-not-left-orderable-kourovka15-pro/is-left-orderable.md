@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UniqueProductNotLeftOrderableKourovka15Problem49Wanted.IsLeftOrderable
 ---
 
-# Is Left Orderable
+# Left-orderable groups
 
-`G` is left-orderable: it admits a linear order invariant under left multiplication.
+**Left-orderable groups.** A group $G$ is left-orderable if it admits a linear order $\le$ such
+that $a \le b$ implies $ca \le cb$ for all $a, b, c \in G$.
 
 ## Depends on
 

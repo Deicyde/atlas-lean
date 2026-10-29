@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Modal.lemmonRel
 ---
 
-# Lemmon Rel
+# Lemmon filtration relation
 
-The Lemmon (transitive) filtration relation: `s R t` iff every `□ψ ∈ sub φ` in `s` has
-`□ψ ∈ t` and `ψ ∈ t`. This is the `□` form of Blackburn–de Rijke–Venema's `R^t` (Lemma 2.42).
+**Lemmon filtration relation.** Let $M$ be a Kripke model and $\varphi$ a formula, and let
+$U_\varphi$ be the set of types of worlds of $M$ (the sets of subformulas of $\varphi$ satisfied at
+a world). The Lemmon relation is the relation $R$ on $U_\varphi$ such that $s \mathrel{R} t$ iff
+for every formula $\psi$ with $\Box\psi$ a subformula of $\varphi$, $\Box\psi \in s$ implies
+$\Box\psi \in t$ and $\psi \in t$.
+
+This is the $\Box$ form of Blackburn–de Rijke–Venema's transitive filtration $R^t$ (Lemma 2.42).
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
 
 ## Proof depends on
 
-- [Sub](../filtration/sub.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
+- [Subformulas](../filtration/sub.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
 
 ## Sources
 

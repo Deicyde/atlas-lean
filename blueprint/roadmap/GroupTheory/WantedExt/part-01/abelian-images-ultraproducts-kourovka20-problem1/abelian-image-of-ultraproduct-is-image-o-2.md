@@ -5,24 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct_holds
 ---
 
-# Abelian Image Of Ultraproduct Is Image Of Abelian Ultraproduct holds
+# Abelian images of ultraproducts are images of abelian ultraproducts
 
-Resolved true: Corson (2025) answers 20.13(a) affirmatively: an abelian image of `(∏ᵢ Gᵢ)/U` is an
-image of `(∏ᵢ Gᵢ)/(⊕ᵢ Gᵢ)`, hence cotorsion (Theorem 17, (2) ⇒ (1)), hence an image of a
-nonprincipal ultraproduct of abelian groups (Proposition 10, (i) ⇒ (iv)); the Kourovka Notebook
-(21st issue) marks 20.13 solved. Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems
-in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.13 (G. M.
-Bergman); resolution: S. M. Corson, On homomorphic images of ultraproducts, preprint,
-arXiv:2503.09228 (2025), Theorem 17 with Proposition 10: an abelian group is cotorsion iff it is an
-image of (∏ G_i)/(⊕ G_i) for some sequence of groups, iff an image of a product of finite cyclic
-groups, iff an image of a product of finite groups, and cotorsion groups are images of nonprincipal
-ultraproducts of abelian groups; Questions 1 and 2 (Kourovka 20.13(a), (b)) are answered
-affirmatively, https://arxiv.org/abs/2503.09228.
+**Abelian images of ultraproducts are images of abelian ultraproducts.** Let $A$ be an abelian
+group, let $(G_i)_{i \in \mathbb{N}}$ be a sequence of (not necessarily abelian) groups, and let $U$
+be a nonprincipal ultrafilter on $\mathbb{N}$, that is, one containing every cofinite set. If there
+is a surjective homomorphism from the ultraproduct $\left(\prod_i G_i\right)/U$ onto $A$, then there
+are a sequence $(H_i)_{i \in \mathbb{N}}$ of abelian groups and a nonprincipal ultrafilter $V$ on
+$\mathbb{N}$ with a surjective homomorphism from $\left(\prod_i H_i\right)/V$ onto $A$.
 
 ## Depends on
 
-- [Abelian Image Of Ultraproduct Is Image Of Abelian Ultraproduct](abelian-image-of-ultraproduct-is-image-o.md)
+- [Kourovka Problem 20.13(a) (Bergman)](abelian-image-of-ultraproduct-is-image-o.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.13 (G. M. Bergman); resolution: S. M. Corson, On homomorphic images of ultraproducts, preprint, arXiv:2503.09228 (2025), Theorem 17 with Proposition 10: an abelian group is cotorsion iff it is an image of (∏ G_i)/(⊕ G_i) for some sequence of groups, iff an image of a product of finite cyclic groups, iff an image of a product of finite groups, and cotorsion groups are images of nonprincipal ultraproducts of abelian groups; Questions 1 and 2 (Kourovka 20.13(a), (b)) are answered affirmatively, https://arxiv.org/abs/2503.09228.

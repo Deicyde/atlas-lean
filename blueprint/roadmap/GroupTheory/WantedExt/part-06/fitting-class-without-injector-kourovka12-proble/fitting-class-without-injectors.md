@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FittingClassWithoutInjectorKourovka12Problem96Wanted.fittingClassWithoutInjectors
 ---
 
-# Fitting Class Without Injectors
+# Kourovka Problem 12.96: a Fitting class without injectors
 
-Kourovka 12.96 (L. A. Shemetkov): there are a non-empty Fitting class `X` of finite groups
-and a finite non-soluble group with no `X`-injector.
+**Kourovka Problem 12.96: a Fitting class without injectors.** The statement that there are a
+Fitting class $\mathfrak{X}$ of finite groups that contains at least one finite group and a finite
+non-soluble group $G$ such that no subgroup of $G$ is an $\mathfrak{X}$-injector of $G$.
+
+The problem was posed by L. A. Shemetkov.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Class](group-class.md)
-- [Is Fitting](is-fitting.md)
-- [Is Injector](is-injector.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.96)](group-class.md)
+- [Fitting classes of finite groups](is-fitting.md)
+- [Injectors](is-injector.md)
 
 ## Sources
 

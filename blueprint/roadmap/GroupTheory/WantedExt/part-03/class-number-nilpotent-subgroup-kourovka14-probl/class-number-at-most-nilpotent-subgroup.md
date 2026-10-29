@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassNumberNilpotentSubgroupKourovka14Problem54Wanted.classNumberAtMostNilpotentSubgroupOrder
 ---
 
-# Class Number At Most Nilpotent Subgroup Order
+# Liebeck–Pyber problem on the class number and nilpotent subgroups
 
-Kourovka 14.54 (M. W. Liebeck, L. Pyber): every finite group `G` has a nilpotent subgroup `N`
-with `k(G) ≤ |N|`, where `k(G)` is the number of conjugacy classes of `G`.
+**Liebeck–Pyber problem on the class number and nilpotent subgroups.** The proposition that
+every finite group $G$ has a nilpotent subgroup $N$ whose order $|N|$ is at least the number
+$k(G)$ of conjugacy classes of $G$. This is Kourovka Problem 14.54 (M. W. Liebeck, L. Pyber).
 
 ## Depends on
 

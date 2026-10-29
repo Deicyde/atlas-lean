@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.forallFinally_deadlock
 ---
 
-# Forall Finally deadlock
+# $\mathrm{AF}$ at a deadlocked state
 
-At a deadlocked state, `AF φ` reduces to `φ`.
+**$\mathrm{AF}$ at a deadlocked state.** Let $\varphi$ be a CTL formula and $s$ a state of a
+labelled transition system with a valuation of the atoms. If $s$ has no outgoing transition,
+then $s$ satisfies $\mathrm{AF}\,\varphi$ if and only if $s$ satisfies $\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 - [Forall Finally](forall-finally.md)
-- [Satisfies](satisfies.md)
+- [Satisfaction of CTL formulas](satisfies.md)
 
 ## Proof depends on
 
-- [Forall Until deadlock](forall-until-deadlock.md)
+- [$\mathsf{A}(\varphi\,\mathsf{U}\,\psi)$ at a deadlocked state](forall-until-deadlock.md)
 
 ## Sources
 

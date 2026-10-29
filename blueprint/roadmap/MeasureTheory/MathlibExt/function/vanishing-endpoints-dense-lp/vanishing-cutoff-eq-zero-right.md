@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_eq_zero_right
 ---
 
-# Vanishing Cutoff eq zero right
+# The vanishing cutoff factor vanishes at the right endpoint
 
-The cutoff factor vanishes at the right endpoint.
+**The vanishing cutoff factor vanishes at the right endpoint.**
+For all real numbers $a$, $b$ and $\delta$, the vanishing cutoff factor with endpoints $a$, $b$
+and width $\delta$ takes the value $0$ at $b$.
 
 ## Depends on
 
-- [Vanishing Cutoff](vanishing-cutoff.md)
+- [Vanishing cutoff factor](vanishing-cutoff.md)
 
 ## Proof depends on
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Modal.CanonicalWorld.rel
 ---
 
-# Rel
+# The canonical accessibility relation
 
-The canonical accessibility relation: `M R N` iff every `φ` with `□φ ∈ M` is in `N`.
+**The canonical accessibility relation.** For a set $\Lambda$ of modal formulas and maximal
+$(K \oplus \Lambda)$-consistent sets $M$ and $N$ (worlds of the canonical model), $M$ is related to
+$N$ iff every formula $\varphi$ with $\Box\varphi \in M$ belongs to $N$.
 
 ## Depends on
 
-- [Canonical World](canonical-world.md)
-- [Formula](../kripke/formula.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Consistent](consistent.md)
+- [Consistency relative to a normal modal logic](consistent.md)
 
 ## Sources
 

@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LatticeOfGroupTopologiesModularKourovka14Problem4Wanted.countableNilpotentNonabelianTopologyLatticeNotModular_refuted
 ---
 
-# Countable Nilpotent Nonabelian Topology Lattice Not Modular refuted
+# A countable nilpotent group with modular lattice of group topologies
 
-Resolved false: Peng constructs (Theorem 1.1) a countably infinite non-abelian nilpotent group whose
-lattice of group topologies is modular; the Kourovka Notebook (21st issue) answers 14.4(b) "No".
+**A countable nilpotent group with modular lattice of group topologies.** It is not the case that
+for every countably infinite non-abelian nilpotent group $G$ the lattice of all (not necessarily
+Hausdorff) group topologies on $G$ is not modular; that is, some countably infinite non-abelian
+nilpotent group has a modular lattice of group topologies.
+
+Peng constructs (Theorem 1.1) a countably infinite non-abelian nilpotent group whose lattice of
+group topologies is modular; the Kourovka Notebook (21st issue) answers 14.4(b) "No".
 
 ## Depends on
 
-- [Countable Nilpotent Nonabelian Topology Lattice Not Modular](countable-nilpotent-nonabelian-topology.md)
+- [Kourovka Problem 14.4(b) (countable nilpotent groups)](countable-nilpotent-nonabelian-topology.md)
 
 ## Sources
 

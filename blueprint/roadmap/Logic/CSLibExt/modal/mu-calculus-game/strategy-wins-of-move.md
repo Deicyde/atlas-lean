@@ -6,31 +6,34 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.strategyWins_of_move
 ---
 
-# Strategy Wins of move
+# Winning strategies stay winning along consistent moves
 
-Winning is preserved along one move: a strategy winning from `p` also wins from
-any successor it can reach in one step.
+**Winning strategies stay winning along consistent moves.** Let $M$ be a Kripke model,
+$\mathit{env}$ an environment and $\sigma$ a Verifier strategy for the model-checking game on
+$M$. If $\sigma$ wins from a position $p$ in $\mathit{env}$, and $q$ is a position reachable from
+$p$ by one move that is the position chosen by $\sigma$ at $p$ whenever Verifier owns $p$, then
+$\sigma$ also wins from $q$ in $\mathit{env}$.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
 - [Game Position](game-position.md)
-- [Move](move.md)
-- [Owner](owner.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Owner of a game position](owner.md)
 - [Player](player.md)
-- [Strategy](strategy.md)
-- [Strategy Wins](strategy-wins.md)
+- [Verifier strategy](strategy.md)
+- [Winning strategy from a position](strategy-wins.md)
 
 ## Proof depends on
 
-- [No Moves](no-moves.md)
-- [Parity Win](parity-win.md)
-- [Play From](play-from.md)
-- [Ne nil](ne-nil.md)
-- [Terminal Win](terminal-win.md)
-- [Play Last](play-last.md)
-- [Play Last cons](play-last-cons.md)
-- [Prio](prio.md)
+- [Positions with no moves](no-moves.md)
+- [Parity winning condition](parity-win.md)
+- [Finite plays consistent with a strategy](play-from.md)
+- [Finite plays are nonempty](ne-nil.md)
+- [Winner at a terminal position](terminal-win.md)
+- [Last position of a play](play-last.md)
+- [Prepending to a nonempty play keeps the last position](play-last-cons.md)
+- [Priority of a game position](prio.md)
 
 ## Sources
 

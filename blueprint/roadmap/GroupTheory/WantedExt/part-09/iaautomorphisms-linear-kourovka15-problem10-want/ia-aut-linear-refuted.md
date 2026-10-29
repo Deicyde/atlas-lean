@@ -17,7 +17,7 @@ Kourovka Archive, Problem 15.10.
 
 ## Depends on
 
-- [Ia Aut Linear](ia-aut-linear.md)
+- [Kourovka Problem 15.10 (statement): linearity of IA-automorphism groups of free groups](ia-aut-linear.md)
 
 ## Sources
 

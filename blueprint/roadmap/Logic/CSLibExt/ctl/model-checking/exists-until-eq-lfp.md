@@ -6,24 +6,30 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.existsUntil_eq_lfp
 ---
 
-# Exists Until eq lfp
+# Existential until as a least fixed point
 
-`E[φ U ψ]` is the least fixed point of
-`Z ↦ ⟦ψ⟧ ∪ (⟦φ⟧ ∩ PreExists Z)`.  The inclusion of the fixed point in
-`E[φ U ψ]` is Park induction via `existsUntil_expansion`; the other
-inclusion is induction on the length of the witnessing finite run,
-unfolding the fixed point once per step.
+**Existential until as a least fixed point.** In a labelled transition system with a
+valuation of atoms, let $\varphi$ and $\psi$ be CTL formulas, write $\mathrm{Sat}(\chi)$ for the
+set of states satisfying a formula $\chi$, and write $\mathrm{Pre}_\exists(Z)$ for the set of
+states having a transition into a set $Z$ of states. Then the set of states satisfying
+$\mathsf{E}[\varphi \,\mathsf{U}\, \psi]$ is the least fixed point of the monotone map
+$Z \mapsto \mathrm{Sat}(\psi) \cup (\mathrm{Sat}(\varphi) \cap \mathrm{Pre}_\exists(Z))$ on sets
+of states.
+
+One inclusion is Park induction via the one-step expansion of
+$\mathsf{E}[\varphi \,\mathsf{U}\, \psi]$; the other is induction on the length of the
+witnessing finite run, unfolding the fixed point once per step.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
-- [Satisfies](../basic/satisfies.md)
-- [Exists Until Order Hom](exists-until-order-hom.md)
+- [CTL formulas](../basic/formula.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
+- [The existential-until functional as a monotone map](exists-until-order-hom.md)
 
 ## Proof depends on
 
-- [Pre Exists](../basic/pre-exists.md)
-- [Exists Until expansion](../basic/exists-until-expansion.md)
+- [Existential predecessor operator](../basic/pre-exists.md)
+- [One-step expansion of $\mathrm{EU}$](../basic/exists-until-expansion.md)
 - [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
 - [Shifted sequence](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/shift-seq.md)
 

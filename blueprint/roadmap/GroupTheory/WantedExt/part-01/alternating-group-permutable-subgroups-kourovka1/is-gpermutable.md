@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AlternatingGroupPermutableSubgroupsKourovka17Problem37Wanted.IsGPermutable
 ---
 
-# Is GPermutable
+# $G$-permutable subgroups
 
-A subgroup `A` of `G` is `G`-permutable (Kourovka 17.112): for every subgroup `B` of `G` some
-conjugate `B^x` of `B` permutes with `A`, that is, `A B^x = B^x A`.
+**$G$-permutable subgroups.** A subgroup $A$ of a group $G$ is $G$-permutable when for every
+subgroup $B$ of $G$ there is $x \in G$ such that $A B^x = B^x A$, where $B^x = x B x^{-1}$ is the
+conjugate of $B$ by $x$ and the products are products of subsets of $G$.
 
 ## Depends on
 

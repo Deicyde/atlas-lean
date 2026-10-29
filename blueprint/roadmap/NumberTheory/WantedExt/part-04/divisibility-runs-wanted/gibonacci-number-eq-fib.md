@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.gibonacciNumber_eq_fib
 ---
 
-# Gibonacci Number eq fib
+# Gibonacci numbers in terms of Fibonacci numbers
 
-The closed form `P_n = F_{n-2} * x + F_{n-1} * y` for `n ≥ 2`, where `F`
-is the standard Fibonacci sequence (in the 0-based indexing used here:
-`gibonacciNumber x y n = F_{n-1} * x + F_n * y` for `n ≥ 1`).
+**Gibonacci numbers in terms of Fibonacci numbers.** Let $x, y$ be integers, let
+$(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$ and $P_1 = y$, and let $(F_n)_{n \ge 0}$
+be the Fibonacci sequence with $F_0 = 0$ and $F_1 = 1$. For every $n \ge 1$,
+$P_n = F_{n-1}\,x + F_n\,y$.
+
+The paper indexes $P$ from $1$ and states this as $P_n = F_{n-2}\,x + F_{n-1}\,y$ for $n \ge 2$.
 
 ## Depends on
 

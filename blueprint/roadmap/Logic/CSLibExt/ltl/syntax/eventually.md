@@ -5,13 +5,18 @@ statement: formalized
 lean: Cslib.LTL.Formula.eventually
 ---
 
-# Eventually
+# The eventually operator of LTL
 
-Eventuality: `φ` holds at some position.
+**The eventually operator of LTL.** For an LTL formula $\varphi$, the formula
+$\mathbf{F}\,\varphi$ ("eventually $\varphi$") is defined as the until formula
+$\top \mathbin{\mathbf{U}} \varphi$.
+
+On an ω-word, $\mathbf{F}\,\varphi$ holds at a position exactly when $\varphi$ holds at that
+position or at some later one.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of linear temporal logic](formula.md)
 
 ## Sources
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Epistemic.Valid
 ---
 
-# Valid
+# Validity in an epistemic model
 
-A formula is valid in a model when it holds at every world.
+**Validity in an epistemic model.** A formula $\varphi$ is valid in an epistemic model $M$
+when $\varphi$ is satisfied at every world of $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
+- [Epistemic formulas](formula.md)
+- [Epistemic models](model.md)
 
 ## Proof depends on
 
-- [Sat](sat.md)
+- [Satisfaction in an epistemic model](sat.md)
 
 ## Sources
 

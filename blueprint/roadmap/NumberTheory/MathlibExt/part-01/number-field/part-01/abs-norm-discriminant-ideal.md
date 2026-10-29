@@ -6,10 +6,11 @@ proof: formalized
 lean: Ideal.absNorm_discriminantIdeal
 ---
 
-# Discriminant Ideal
+# Absolute norm of the discriminant ideal of a number field
 
-The absolute norm of the discriminant ideal of `𝓞 K / ℤ` is the absolute
-discriminant of `K`.
+**Absolute norm of the discriminant ideal of a number field.** Let $K$ be a number
+field with ring of integers $\mathcal{O}_K$ and discriminant $d_K$. The absolute norm of the
+discriminant ideal of $\mathcal{O}_K$ over $\mathbb{Z}$ equals $|d_K|$.
 
 ## Depends on
 

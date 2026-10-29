@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OrderSpectrumSimpleGroupKourovka12Problem39Wanted.simpleGroupRecognizedByOrderAndSpectrum
 ---
 
-# Simple Group Recognized By Order And Spectrum
+# Shi's conjecture on recognition by order and element orders (Kourovka 12.39)
 
-Kourovka 12.39 (W. J. Shi): a finite group and a finite simple group with equal orders and
-the same set of element orders are isomorphic.
+**Shi's conjecture on recognition by order and element orders (Kourovka 12.39).** The
+statement that for every finite group $G$ and every finite simple group $S$, if $G$ and $S$ have
+the same order and the same set of element orders, then $G$ is isomorphic to $S$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Element Orders](element-orders.md)
+- [Set of element orders (Kourovka 12.39)](element-orders.md)
 
 ## Sources
 

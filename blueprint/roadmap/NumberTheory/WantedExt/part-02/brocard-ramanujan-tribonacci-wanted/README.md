@@ -4,7 +4,7 @@ navigation: module
 
 # Brocard Ramanujan Tribonacci
 
-- [Tribonacci Int neg ten](tribonacci-int-neg-ten.md)
-- [Brocard Ramanujan not tribonacci](brocard-ramanujan-not-tribonacci.md)
-- [Brocard Ramanujan not tetranacci](brocard-ramanujan-not-tetranacci.md)
-- [Tribonacci padic Val Int forty Seven](tribonacci-padic-val-int-forty-seven.md)
+- [The Tribonacci number of index $-10$](tribonacci-int-neg-ten.md)
+- [The Brocard–Ramanujan equation has no Tribonacci solutions](brocard-ramanujan-not-tribonacci.md)
+- [The Brocard–Ramanujan equation has no Tetranacci solutions](brocard-ramanujan-not-tetranacci.md)
+- [The $47$-adic valuation of Tribonacci numbers near $\pm 1$](tribonacci-padic-val-int-forty-seven.md)

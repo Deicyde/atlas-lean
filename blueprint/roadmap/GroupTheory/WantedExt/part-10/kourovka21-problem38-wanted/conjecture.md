@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem38Wanted.conjecture
 ---
 
-# Conjecture
+# Existence of a group of spread exactly one (Kourovka 21.38)
 
-[KOU-21.38] There exists a group of spread exactly 1 (in any universe).
+**Existence of a group of spread exactly one (Kourovka 21.38).** The conjecture that there
+exists a group of spread exactly $1$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Spread Exactly](has-spread-exactly.md)
+- [Spread exactly $k$](has-spread-exactly.md)
 
 ## Sources
 

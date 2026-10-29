@@ -6,11 +6,12 @@ proof: formalized
 lean: MeasureTheory.isSetSemiring_of_isSetAlgebra
 ---
 
-# Is Set Semiring of is Set Algebra
+# Every algebra of sets is a semiring of sets
 
-Every set algebra is a set semiring: combine the set-ring structure (empty set,
-closure under union, closure under difference) and view the resulting ring as a
-semiring.
+**Every algebra of sets is a semiring of sets.** If $\mathcal{A}$ is an algebra of sets on
+$\alpha$, then $\mathcal{A}$ is a semiring of sets: $\emptyset \in \mathcal{A}$, $s \cap t \in
+\mathcal{A}$ for all $s, t \in \mathcal{A}$, and for all $s, t \in \mathcal{A}$ the difference
+$s \setminus t$ is the union of finitely many pairwise disjoint members of $\mathcal{A}$.
 
 ## Depends on
 

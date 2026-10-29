@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.longitudeMulEquiv
 ---
 
-# Longitude Mul Equiv
+# Isomorphism of the circle group with the longitude subgroup
 
-The fixed diagonal longitude subgroup of `SU₂` is isomorphic to the circle group
-`ℝ / 2πℤ`.
+**Isomorphism of the circle group with the longitude subgroup.** The group isomorphism from
+the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, onto the longitude
+subgroup of $\mathrm{SU}(2)$ given by the longitude map, which sends the class of a real number
+$\theta$ to the diagonal rotation through $\theta$.
 
 ## Depends on
 
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 
-- [Longitude Map](longitude-map.md)
-- [Longitude Map bijective](longitude-map-bijective.md)
+- [Longitude map](longitude-map.md)
+- [The longitude map is bijective](longitude-map-bijective.md)
 
 ## Sources
 

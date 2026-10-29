@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DerivedSubgroupInclusionFreeGroupKourovka13Problem62Wanted.derivedInclusionImpliesInclusion
 ---
 
-# Derived Inclusion Implies Inclusion
+# Inclusion of derived subgroups in free groups (Kourovka 13.62)
 
-Kourovka 13.62 (V. P. Shaptala): for non-cyclic subgroups `U` and `V` of a free group, the
-inclusion `[U, U] ≤ [V, V]` implies `U ≤ V`.
+**Inclusion of derived subgroups in free groups (Kourovka 13.62).** The conjecture of
+V. P. Shaptala that for every free group $F$ and all non-cyclic subgroups $U$ and $V$ of $F$, if
+the commutator subgroup $[U, U]$ is contained in the commutator subgroup $[V, V]$, then $U$ is
+contained in $V$.
 
 ## Depends on
 

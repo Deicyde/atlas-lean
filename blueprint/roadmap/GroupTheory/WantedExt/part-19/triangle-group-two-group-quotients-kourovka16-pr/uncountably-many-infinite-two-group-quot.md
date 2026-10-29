@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TriangleGroupTwoGroupQuotientsKourovka16Problem101Wanted.uncountablyManyInfiniteTwoGroupQuotients
 ---
 
-# Uncountably Many Infinite Two Group Quotients
+# Wiegold's question on 2-group quotients of the (2, 4, 8) triangle group (Kourovka 16.101)
 
-Kourovka 16.101 (J. Wiegold): there are uncountably many pairwise non-isomorphic infinite
-`2`-groups that are quotients of `⟨x, y | x² = y⁴ = (x y)⁸ = 1⟩`.
+**Wiegold's question on 2-group quotients of the (2, 4, 8) triangle group (Kourovka 16.101).**
+The statement that there are an uncountable index set $I$ and normal subgroups $N_i$ of
+$\Gamma = \langle x, y \mid x^2 = y^4 = (xy)^8 = 1 \rangle$, for $i \in I$, such that every
+quotient $\Gamma / N_i$ is an infinite $2$-group (a group in which every element has order a
+power of $2$), and $\Gamma / N_i \cong \Gamma / N_j$ only when $i = j$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiegold Group](wiegold-group.md)
+- [The (2, 4, 8) triangle group](wiegold-group.md)
 
 ## Sources
 

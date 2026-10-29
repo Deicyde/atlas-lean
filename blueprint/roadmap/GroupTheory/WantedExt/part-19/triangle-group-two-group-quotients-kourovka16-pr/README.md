@@ -4,6 +4,6 @@ navigation: module
 
 # Triangle Group Two Group Quotients Kourovka16 Problem101
 
-- [Wiegold Group](wiegold-group.md)
-- [Uncountably Many Infinite Two Group Quotients](uncountably-many-infinite-two-group-quot.md)
-- [Uncountably Many Infinite Two Group Quotients holds](uncountably-many-infinite-two-group-quot-2.md)
+- [The (2, 4, 8) triangle group](wiegold-group.md)
+- [Wiegold's question on 2-group quotients of the (2, 4, 8) triangle group (Kourovka 16.101)](uncountably-many-infinite-two-group-quot.md)
+- [Uncountably many infinite 2-group quotients of the (2, 4, 8) triangle group (Kourovka 16.101)](uncountably-many-infinite-two-group-quot-2.md)

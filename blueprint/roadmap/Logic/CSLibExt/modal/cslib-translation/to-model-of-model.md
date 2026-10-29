@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.toModel_ofModel
 ---
 
-# To Model of Model
+# Round trip from CSLib models through Kripke models
 
-From a CSLib model to a Kripke model and back is the identity: a
-unimodal frame is determined by its binary accessibility relation.
+**Round trip from CSLib models through Kripke models.** For a nonempty type of worlds $W$,
+converting a CSLib unimodal model $m$ on $W$ into a Kripke model and then back into a CSLib
+unimodal model returns $m$: a unimodal frame is determined by its binary accessibility relation.
 
 ## Depends on
 
-- [Of Model](of-model.md)
-- [To Model](to-model.md)
+- [Kripke model of a CSLib model](of-model.md)
+- [The CSLib unimodal model of a Kripke model](to-model.md)
 
 ## Sources
 

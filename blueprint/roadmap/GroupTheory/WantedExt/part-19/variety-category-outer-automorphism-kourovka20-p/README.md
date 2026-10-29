@@ -4,7 +4,7 @@ navigation: module
 
 # Variety Category Outer Automorphism Kourovka20 Problem72
 
-- [Relatively Free Group](relatively-free-group.md)
-- [Theta Zero](theta-zero.md)
-- [Exists Variety With Non Inner Category Automorphism](exists-variety-with-non-inner-category-a.md)
-- [Exists Variety With Non Inner Category Automorphism holds](exists-variety-with-non-inner-category-a-2.md)
+- [Free group of a variety on a finite set](relatively-free-group.md)
+- [Plotkin's category of free groups of a variety](theta-zero.md)
+- [Plotkin's question on outer automorphisms of the category of free groups of a variety](exists-variety-with-non-inner-category-a.md)
+- [Some variety of groups has an outer automorphism of its category of free groups](exists-variety-with-non-inner-category-a-2.md)

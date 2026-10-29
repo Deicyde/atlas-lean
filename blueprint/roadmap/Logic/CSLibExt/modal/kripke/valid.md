@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Modal.KripkeModel.Valid
 ---
 
-# Valid
+# Global validity in a Kripke model
 
-A formula is globally valid in a model when it holds at every world.
+**Global validity in a Kripke model.** A formula $\varphi$ is globally valid in a Kripke
+model $M$ when $\varphi$ is satisfied at every world of $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 - [Kripke Model](kripke-model.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction in a Kripke model](satisfies.md)
 
 ## Sources
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Maximal Class Size PElement Normal Complement Kourovka20 Problem27
 
-- [Has Normal PComplement](has-normal-pcomplement.md)
-- [Maximal Class Size PElement Gives Normal Complement](maximal-class-size-pelement-gives-normal.md)
-- [Maximal Class Size PElement Gives Normal Complement refuted](maximal-class-size-pelement-gives-normal-2.md)
+- [Groups with a normal p-complement](has-normal-pcomplement.md)
+- [Gorshkov's problem on maximal p-parts of class sizes](maximal-class-size-pelement-gives-normal.md)
+- [A maximal p-part of a class size does not force a normal p-complement](maximal-class-size-pelement-gives-normal-2.md)

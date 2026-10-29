@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ConvolutionIntegrandIntegrableEuclideanWanted.integrable_comp_sub_mul_of_integrable_fin_append
 ---
 
-# Convolution Integrand Integrable Euclidean Wanted
+# Integrability of the convolution integrand
 
-Show that if $f$ and $g$ are integrable on $\mathbb{R}^{d}$, then $f(x-y)g(y)$ is integrable on
-$\mathbb{R}^{2d}$.
+**Integrability of the convolution integrand.** Let $d \in \mathbb{N}$ and let
+$f, g : \mathbb{R}^d \to \mathbb{R}$ be Lebesgue integrable. Identify $\mathbb{R}^{2d}$ with
+$\mathbb{R}^d \times \mathbb{R}^d$ by writing a point as $(x, y)$, where $x$ consists of its first
+$d$ coordinates and $y$ of its last $d$ coordinates. Then the function
+$(x, y) \mapsto f(x - y)\, g(y)$ is Lebesgue integrable on $\mathbb{R}^{2d}$.
 
 ## Depends on
 

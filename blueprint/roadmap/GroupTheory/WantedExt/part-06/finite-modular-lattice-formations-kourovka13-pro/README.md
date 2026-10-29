@@ -4,9 +4,9 @@ navigation: module
 
 # Finite Modular Lattice Formations Kourovka13 Problem51
 
-- [Finite Group Class](finite-group-class.md)
-- [Is Formation](is-formation.md)
-- [Class Meet](class-meet.md)
-- [Formation Join](formation-join.md)
-- [Finite Modular Lattice Embeds In Formations](finite-modular-lattice-embeds-in-formati.md)
-- [Finite Modular Lattice Embeds In Formations refuted](finite-modular-lattice-embeds-in-formati-2.md)
+- [Class of finite groups (Kourovka 13.51)](finite-group-class.md)
+- [Formation of finite groups (Kourovka 13.51)](is-formation.md)
+- [Intersection of classes of finite groups](class-meet.md)
+- [Join of formations (Kourovka 13.51)](formation-join.md)
+- [Kourovka Problem 13.51 (Skiba): finite modular lattices embed in the lattice of formations](finite-modular-lattice-embeds-in-formati.md)
+- [Not every finite modular lattice embeds in the lattice of formations](finite-modular-lattice-embeds-in-formati-2.md)

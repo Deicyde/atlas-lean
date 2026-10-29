@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.CTL.Formula.iff
 ---
 
-# Iff
+# CTL bi-implication
 
-Bi-implication, as mutual implication.
+**CTL bi-implication.** For CTL formulas $\varphi$ and $\psi$, the bi-implication
+$\varphi \leftrightarrow \psi$ is defined as the conjunction $(\varphi \to \psi) \land
+(\psi \to \varphi)$ of the two implications.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [CTL formulas](formula.md)
 
 ## Proof depends on
 
-- [Imp](imp.md)
+- [CTL implication](imp.md)
 
 ## Sources
 

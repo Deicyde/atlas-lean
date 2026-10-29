@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupCayleyHamiltonKourovka17Problem32Wanted.freeGroupCayleyHamilton
 ---
 
-# Free Group Cayley Hamilton
+# Bogopolski's Cayley–Hamilton question for free groups (Kourovka 17.32)
 
-Kourovka 17.32 (O. V. Bogopolski), an analogue of the Cayley-Hamilton theorem for the free group
-`Fₙ`: if `w ∈ Fₙ` and `φ ∈ Aut(Fₙ)` satisfy `⟨w, φ(w), …, φⁿ(w)⟩ = Fₙ`, then
-`⟨w, φ(w), …, φⁿ⁻¹(w)⟩ = Fₙ`.
+**Bogopolski's Cayley–Hamilton question for free groups (Kourovka 17.32).** The assertion
+that for every natural number $n$, every element $w$ of the free group $F_n$ of rank $n$ and every
+automorphism $\varphi$ of $F_n$, if $w, \varphi(w), \dots, \varphi^n(w)$ generate $F_n$, then
+already $w, \varphi(w), \dots, \varphi^{n-1}(w)$ generate $F_n$.
 
 ## Depends on
 

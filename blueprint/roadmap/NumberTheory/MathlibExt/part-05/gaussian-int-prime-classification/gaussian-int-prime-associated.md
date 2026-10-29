@@ -8,10 +8,10 @@ lean: GaussianInt.gaussianInt_prime_associated
 
 # Classification of the Gaussian primes
 
-**Classification of the Gaussian primes.** Every prime of `ℤ[i]` is
-associated to a rational prime `p ≡ 3 (mod 4)`, to a factor `a + bi` or
-`a - bi` of a rational prime `p ≡ 1 (mod 4)` with `a ^ 2 + b ^ 2 = p`,
-or to `1 + i`.
+**Classification of the Gaussian primes.** Every prime element $z$ of the Gaussian integers
+$\mathbb{Z}[i]$ is associated to one of the following: a rational prime $p$ with
+$p \equiv 3 \pmod 4$; one of $a + bi$ and $a - bi$, where $a$ and $b$ are natural numbers with
+$a^2 + b^2 = p$ for some rational prime $p \equiv 1 \pmod 4$; or $1 + i$.
 
 ## Depends on
 

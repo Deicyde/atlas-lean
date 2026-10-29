@@ -5,13 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IntegralCayleyGraphsKourovka19Problem50Wanted.alternatingThreeCycleCayleyGraphIntegral_holds
 ---
 
-# Alternating Three Cycle Cayley Graph Integral holds
+# The 3-cycle Cayley graph of the alternating group is integral
 
-Resolved true: the Kourovka Archive answers 19.50(b) "Yes", citing Guo, Lytkina, Mazurov and Revin.
+**The 3-cycle Cayley graph of the alternating group is integral.** For every $n \ge 3$, let $S$ be
+the set of $3$-cycles $(1\,2\,k)$ with $3 \le k \le n$ in the alternating group $A_n$, and let
+$R = S \cup S^{-1}$. Then the Cayley graph $\mathrm{Cay}(A_n, R)$, whose vertices are the elements
+of $A_n$ with distinct $x$ and $y$ adjacent when $x^{-1} y \in R$ or $y^{-1} x \in R$, is
+integral: every eigenvalue of its integer adjacency matrix (every complex root of the
+characteristic polynomial of that matrix) is an integer.
 
 ## Depends on
 
-- [Alternating Three Cycle Cayley Graph Integral](alternating-three-cycle-cayley-graph-int.md)
+- [The Kourovka 19.50(b) integrality claim](alternating-three-cycle-cayley-graph-int.md)
 
 ## Sources
 

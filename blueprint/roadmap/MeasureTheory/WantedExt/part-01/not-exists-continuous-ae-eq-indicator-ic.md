@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.IndicatorIccNotAEContinuousWanted.not_exists_continuous_ae_eq_indicator_Icc
 ---
 
-# Indicator Icc Not AEContinuous Wanted
+# No continuous function agrees a.e. with the indicator of $(0,1)$
 
-Let $\chi_{[0,1]}$ be the characteristic function of $[0,1]$. Show that there is no everywhere
-continuous function $f$ on $\mathbb{R}$ such that
-
-\[
-f(x)=\chi_{[0,1]}(x) \qquad \text{almost everywhere.}
-\]
+**No continuous function agrees a.e. with the indicator of $[0,1]$.** Let $\chi_{[0,1]}$ be
+the characteristic function of $[0,1]$. There is no continuous function
+$f : \mathbb{R} \to \mathbb{R}$ such that $f(x) = \chi_{[0,1]}(x)$ for almost every
+$x \in \mathbb{R}$ with respect to Lebesgue measure.
 
 ## Depends on
 

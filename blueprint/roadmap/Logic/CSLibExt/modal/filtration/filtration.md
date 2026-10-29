@@ -5,23 +5,27 @@ statement: formalized
 lean: Cslib.Modal.filtration
 ---
 
-# Filtration
+# Smallest filtration of a Kripke model
 
-The filtration of `M` through the subformulas of `φ`.
+**Smallest filtration of a Kripke model.** Let $M$ be a Kripke model and $\varphi$ a modal
+formula, and call the set of subformulas of $\varphi$ satisfied at a world $w$ of $M$ the type of
+$w$. The filtration of $M$ through the subformulas of $\varphi$ is the Kripke model whose worlds
+are the types occurring in $M$, in which a type $s$ sees a type $t$ iff some world of type $s$
+sees some world of type $t$ in $M$, and in which an atom $p$ is true at $s$ iff $p \in s$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Filtration Worlds](filtration-worlds.md)
+- [Worlds of the filtration](filtration-worlds.md)
 
 ## Proof depends on
 
-- [Sub](sub.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Filtration Rel](filtration-rel.md)
-- [Fin Model](fin-model.md)
-- [Sub Type](sub-type.md)
+- [Subformulas](sub.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Smallest filtration relation](filtration-rel.md)
+- [Finite Kripke model on sets of formulas](fin-model.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

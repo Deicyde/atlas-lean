@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Modal.Deduces.of_bot
 ---
 
-# Of bot
+# Ex falso quodlibet
 
-Ex falso quodlibet: `⊥` entails everything.
+**Ex falso quodlibet.** Let $\Lambda$ be a set of modal formulas and $\Gamma$ a set of
+hypotheses. If $\bot$ is a local consequence of $\Gamma$ in the normal modal logic
+$\mathbf{K} \oplus \Lambda$, then every formula $\varphi$ is a local consequence of $\Gamma$ in
+$\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Derivable](derivable.md)
-- [Neg](../kripke/neg.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Sources
 

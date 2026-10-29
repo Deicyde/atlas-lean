@@ -4,9 +4,9 @@ navigation: module
 
 # Fitting Class Without Injector Kourovka12 Problem96
 
-- [Group Class](group-class.md)
-- [Is Fitting](is-fitting.md)
-- [Is XMaximal In](is-xmaximal-in.md)
-- [Is Injector](is-injector.md)
-- [Fitting Class Without Injectors](fitting-class-without-injectors.md)
-- [Fitting Class Without Injectors holds](fitting-class-without-injectors-holds.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.96)](group-class.md)
+- [Fitting classes of finite groups](is-fitting.md)
+- [Maximal subgroups within a class of groups](is-xmaximal-in.md)
+- [Injectors](is-injector.md)
+- [Kourovka Problem 12.96: a Fitting class without injectors](fitting-class-without-injectors.md)
+- [A Fitting class with no injectors in a non-soluble group](fitting-class-without-injectors-holds.md)

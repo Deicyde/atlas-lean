@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AutomorphismGroupOrderTotientKourovka15Problem43Wanted.totientLeAutOrder_refuted
 ---
 
-# Totient Le Aut Order refuted
+# Deaconescu's totient lower bound conjecture fails (Kourovka 15.43(a))
 
-Resolved false: the Kourovka Archive answers 15.43(a) negatively (Bray and Wilson): some finite
-groups have `|Aut G| < φ(|G|)`, and the ratio `|Aut G| / φ(|G|)` can be made arbitrarily small.
+**Deaconescu's totient lower bound conjecture fails (Kourovka 15.43(a)).** Not every finite group
+$G$ satisfies $\varphi(|G|) \le |\mathrm{Aut}(G)|$: there is a finite group $G$ with
+$|\mathrm{Aut}(G)| < \varphi(|G|)$, where $\varphi$ is Euler's totient function and
+$\mathrm{Aut}(G)$ is the group of automorphisms of $G$.
+
+Bray and Wilson prove more than is stated here: the ratio $|\mathrm{Aut}(G)| / \varphi(|G|)$ can be
+made arbitrarily small.
 
 ## Depends on
 
-- [Totient Le Aut Order](totient-le-aut-order.md)
+- [Deaconescu's totient lower bound conjecture (Kourovka 15.43(a))](totient-le-aut-order.md)
 
 ## Sources
 

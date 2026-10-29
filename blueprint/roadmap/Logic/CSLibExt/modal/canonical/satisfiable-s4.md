@@ -6,29 +6,31 @@ proof: formalized
 lean: Cslib.Modal.satisfiable_S4
 ---
 
-# Satisfiable S4
+# Model existence for S4
 
-Every S4-consistent set is satisfiable in some reflexive transitive Kripke model.
+**Model existence for S4.** For every S4-consistent set $\Gamma$ of modal formulas there are a
+reflexive transitive Kripke model, whose worlds lie in the universe of the atoms, and a world of it
+at which every formula of $\Gamma$ holds.
 
 ## Depends on
 
-- [S4](../hilbert/s4.md)
-- [Consistent](consistent.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S4](../hilbert/s4.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 
 ## Proof depends on
 
-- [Canonical World](canonical-world.md)
-- [Rel](rel.md)
-- [Deduces](../hilbert/deduces.md)
-- [Derivable](../hilbert/derivable.md)
-- [Axiom Four](../kripke/axiom-four.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [The canonical accessibility relation](rel.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Axiom 4](../kripke/axiom-four.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Mem of deduces](mem-of-deduces.md)
-- [Canonical Model](canonical-model.md)
-- [Satisfiable of consistent](satisfiable-of-consistent.md)
+- [Maximal consistent sets of modal formulas are deductively closed](mem-of-deduces.md)
+- [The canonical model](canonical-model.md)
+- [Model existence from the canonical model](satisfiable-of-consistent.md)
 
 ## Sources
 

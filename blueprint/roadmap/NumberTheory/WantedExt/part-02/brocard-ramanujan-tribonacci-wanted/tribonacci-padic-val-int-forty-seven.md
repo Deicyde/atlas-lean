@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tribonacci_padicValInt_fortySeven
 ---
 
-# Tribonacci padic Val Int forty Seven
+# The $47$-adic valuation of Tribonacci numbers near $\pm 1$
 
-Proposition 1 at `p = 47`. The first conjunct says that the terms at
-`j ∈ {1, 2, -2, -3, -7}` are `±1`. The second gives
-`ν₄₇(T_{46r+j} - T_j) = 1 + ν₄₇(r)` at those indices. It excludes `r = 0`
-because Mathlib defines `padicValInt 47 0 = 0`, whereas the paper uses an
-infinite valuation there. The third conjunct translates valuation zero for
-all other indices into nondivisibility of both `T_n - 1` and `T_n + 1` by 47.
+**The $47$-adic valuation of Tribonacci numbers near $\pm 1$.** Let $(T_n)_{n \in \mathbb{Z}}$
+be the two-sided Tribonacci sequence, determined by $T_0 = 0$, $T_1 = T_2 = 1$ and
+$T_{n+3} = T_{n+2} + T_{n+1} + T_n$ for all integers $n$. Let $\nu_{47}$ be the $47$-adic
+valuation on the integers, with the convention $\nu_{47}(0) = 0$, and let
+$J = \{1, 2, -2, -3, -7\}$. First, $T_j = 1$ or $T_j = -1$ for every $j \in J$. Second, for every
+$j \in J$ and every nonzero integer $r$, $\nu_{47}(T_{46r+j} - T_j) = 1 + \nu_{47}(r)$. Third, for
+every integer $n$ that is not of the form $46r + j$ with $j \in J$ and $r \in \mathbb{Z}$, neither
+$T_n - 1$ nor $T_n + 1$ is divisible by $47$.
+
+The condition $r \ne 0$ is needed because $\nu_{47}(0)$ is $0$ here, whereas the paper uses an
+infinite valuation at $0$.
 
 ## Depends on
 
-- [Tribonacci Int](../../../MathlibExt/part-12/tribonacci-int/tribonacci-int.md)
+- [Two-sided Tribonacci sequence](../../../MathlibExt/part-12/tribonacci-int/tribonacci-int.md)
 
 ## Sources
 

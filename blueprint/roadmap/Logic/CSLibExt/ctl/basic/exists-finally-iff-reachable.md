@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.existsFinally_iff_reachable
 ---
 
-# Exists Finally iff reachable
+# $\mathsf{EF}$ means reachability
 
-`EF φ` holds exactly when some reachable state satisfies `φ`.
+**$\mathsf{EF}$ means reachability.** Let $\varphi$ be a CTL formula. In a labelled transition
+system with a valuation of the atoms at its states, a state $s$ satisfies $\mathsf{EF}\,\varphi$ if
+and only if some state $t$ reachable from $s$ by a finite, possibly empty, sequence of transitions
+satisfies $\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Exists Finally](exists-finally.md)
-- [Satisfies](satisfies.md)
+- [CTL formulas](formula.md)
+- [Exists finally](exists-finally.md)
+- [Satisfaction of CTL formulas](satisfies.md)
 
 ## Proof depends on
 
-- [Exists Finally iff](exists-finally-iff.md)
+- [$\mathsf{EF}$ via finite runs](exists-finally-iff.md)
 - [Reachability in a labelled transition system is transitive](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/trans.md)
 - [Finite run](../../../../ComputerScience/CSLibExt/part-01/semantics/lts/omega-run/finite-run.md)
 

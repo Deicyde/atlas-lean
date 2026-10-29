@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DPiNormalSubgroupKourovka13Problem33Wanted.normalSubgroupOfDPiIsDPi
 ---
 
-# Normal Subgroup Of DPi Is DPi
+# Kourovka Problem 13.33
 
-Kourovka 13.33 (F. Gross): every normal subgroup of a finite `D_π`-group is a
-`D_π`-group.
+**Kourovka Problem 13.33.** This is the proposition (F. Gross) that for every set $\pi$ of
+natural numbers, every normal subgroup of a finite $D_\pi$-group is itself a $D_\pi$-group.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DPi](is-dpi.md)
+- [$D_\pi$-groups](is-dpi.md)
 
 ## Sources
 

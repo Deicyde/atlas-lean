@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FittingClassWithoutInjectorKourovka12Problem96Wanted.IsInjector
 ---
 
-# Is Injector
+# Injectors
 
-`V` is an `X`-injector of `G`: `V ⊓ N` is `X`-maximal in `N` for every subnormal subgroup
-`N` of `G`.
+**Injectors.** Let $\mathfrak{X}$ be a class of groups and $G$ a group. A subgroup $V$ of $G$ is
+an $\mathfrak{X}$-injector of $G$ if, for every subnormal subgroup $N$ of $G$, the intersection
+$V \cap N$ is $\mathfrak{X}$-maximal in $N$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.96)](group-class.md)
 
 ## Proof depends on
 
-- [Is XMaximal In](is-xmaximal-in.md)
+- [Maximal subgroups within a class of groups](is-xmaximal-in.md)
 
 ## Sources
 

@@ -4,11 +4,11 @@ navigation: module
 
 # Sahlqvist
 
-- [Is Positive](is-positive.md)
-- [Is Negative](is-negative.md)
-- [Box Pow](box-pow.md)
-- [Is Sahlqvist Antecedent](is-sahlqvist-antecedent.md)
-- [Atoms](atoms.md)
-- [Is Sahlqvist Implication](is-sahlqvist-implication.md)
-- [Is Sahlqvist](is-sahlqvist.md)
-- [Is Sahlqvist axiom B](is-sahlqvist-axiom-b.md)
+- [Positive modal formulas](is-positive.md)
+- [Negative modal formulas](is-negative.md)
+- [Iterated box](box-pow.md)
+- [Sahlqvist antecedents](is-sahlqvist-antecedent.md)
+- [Atoms of a modal formula](atoms.md)
+- [Sahlqvist implications](is-sahlqvist-implication.md)
+- [Sahlqvist formulas](is-sahlqvist.md)
+- [The B axiom is a Sahlqvist formula](is-sahlqvist-axiom-b.md)

@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Modal.Deduces.exists_finset
 ---
 
-# Compactness
+# Compactness of local modal consequence
 
-**Compactness**: a consequence follows from finitely many of the hypotheses.
+**Compactness of local modal consequence.** Let $\Lambda$ and $\Gamma$ be sets of modal
+formulas. If a modal formula $\varphi$ is a local consequence of the hypotheses $\Gamma$ in the
+normal modal logic $\mathbf{K} \oplus \Lambda$, then there is a finite set
+$\Delta \subseteq \Gamma$ such that $\varphi$ is a local consequence of $\Delta$ in
+$\mathbf{K} \oplus \Lambda$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Mono](mono-2.md)
-- [Derivable](derivable.md)
+- [Monotonicity of local consequence in the hypotheses](mono-2.md)
+- [Theorems of a normal modal logic](derivable.md)
 
 ## Sources
 

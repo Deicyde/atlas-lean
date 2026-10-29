@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AxiomatizableFormationVarietyKourovka14Problem32Wanted.IsVariety
 ---
 
-# Is Variety
+# Varieties of groups
 
-`𝔉` is a variety: for some set `W` of group words (laws), a group lies in `𝔉` iff every law in
-`W` holds identically in it.
+**Varieties of groups.** A class $\mathfrak{F}$ of groups is a variety when there is a set
+$W$ of elements of the free group on generators $x_0, x_1, x_2, \dots$ such that a group $G$ lies
+in $\mathfrak{F}$ if and only if every $w \in W$ evaluates to $1$ in $G$ under every assignment of
+elements of $G$ to the generators.
 
 ## Depends on
 

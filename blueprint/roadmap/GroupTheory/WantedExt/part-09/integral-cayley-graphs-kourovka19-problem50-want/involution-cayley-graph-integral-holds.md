@@ -5,15 +5,23 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IntegralCayleyGraphsKourovka19Problem50Wanted.involutionCayleyGraphIntegral_holds
 ---
 
-# Involution Cayley Graph Integral holds
+# Cayley graphs on normal sets of involutions are integral
 
-Resolved true: the Kourovka Archive answers 19.50(a) "Yes" (Revin; Abdollahi) and gives the proof:
-every eigenvalue of `Cay(G, R)` has the form `(1/χ(1)) ∑_{r ∈ R} χ(r)` for an irreducible character
-`χ`, which is rational because characters are integers on involutions, and an algebraic integer.
+**Cayley graphs on normal sets of involutions are integral.** Let $G$ be a finite group and let
+$R \subseteq G$ be a set of involutions ($r^2 = 1$ and $r \ne 1$ for every $r \in R$) that is
+closed under conjugation ($g r g^{-1} \in R$ for all $r \in R$ and $g \in G$) and generates $G$.
+Then the Cayley graph $\mathrm{Cay}(G, R)$, whose vertices are the elements of $G$ with distinct
+$x$ and $y$ adjacent when $x^{-1} y \in R$ or $y^{-1} x \in R$, is integral: every eigenvalue of
+its integer adjacency matrix (every complex root of the characteristic polynomial of that matrix)
+is an integer.
+
+The Kourovka Archive proof: every eigenvalue of $\mathrm{Cay}(G, R)$ has the form
+$\frac{1}{\chi(1)} \sum_{r \in R} \chi(r)$ for an irreducible character $\chi$ of $G$; this number
+is rational because characters take integer values on involutions, and it is an algebraic integer.
 
 ## Depends on
 
-- [Involution Cayley Graph Integral](involution-cayley-graph-integral.md)
+- [The Kourovka 19.50(a) integrality claim](involution-cayley-graph-integral.md)
 
 ## Sources
 

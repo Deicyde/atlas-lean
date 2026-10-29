@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompressedSubgroupInertKourovka19Problem102Wanted.compressedSubgroupsInert
 ---
 
-# Compressed Subgroups Inert
+# Ventura's compressed-implies-inert problem in finite rank (Kourovka 19.102)
 
-Kourovka 19.102 (E. Ventura), for free groups of finite rank: every compressed subgroup of
-`Fₙ` is inert.
+**Ventura's compressed-implies-inert problem in finite rank (Kourovka 19.102).** The
+proposition that for every $n \in \mathbb{N}$, every compressed subgroup of the free group $F_n$ on
+$n$ generators is inert.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Compressed](is-compressed.md)
-- [Is Inert](is-inert.md)
+- [Compressed subgroup of a free group of finite rank](is-compressed.md)
+- [Inert subgroup of a free group of finite rank](is-inert.md)
 
 ## Sources
 

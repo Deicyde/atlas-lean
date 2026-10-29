@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.LTL.Word.SatisfiesAt
 ---
 
-# Satisfies At
+# Satisfaction at a position
 
-Satisfaction at position `k` of an ω-word: satisfaction on the suffix starting at `k`.
+**Satisfaction at a position.** Let $v$ be a valuation of atoms on letters, $w$ an ω-word, $k$
+a natural number and $\varphi$ an LTL formula. Then $\varphi$ holds at position $k$ of $w$ under
+$v$ when the suffix of $w$ starting at position $k$, the ω-word $i \mapsto w(k + i)$, satisfies
+$\varphi$ under $v$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Sources
 

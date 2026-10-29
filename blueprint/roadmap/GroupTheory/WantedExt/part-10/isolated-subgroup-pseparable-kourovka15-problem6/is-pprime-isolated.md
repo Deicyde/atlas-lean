@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IsolatedSubgroupPSeparableKourovka15Problem60Wanted.IsPPrimeIsolated
 ---
 
-# Is PPrime Isolated
+# $p'$-isolated subgroup
 
-`H` is `p'`-isolated: `xⁿ ∈ H` with `n > 0` not divisible by `p` implies `x ∈ H`.
+**$p'$-isolated subgroup.** Let $p$ be a natural number and let $H$ be a subgroup of a group
+$F$. Then $H$ is $p'$-isolated if, for every $x \in F$ and every natural number $n > 0$ that is not
+divisible by $p$, $x^n \in H$ implies $x \in H$.
 
 ## Depends on
 

@@ -5,11 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SymmetricGroupEqualCharacterDegreesKourovka16Problem67Wanted.symmetricGroupManyCharactersOfEqualDegree
 ---
 
-# Symmetric Group Many Characters Of Equal Degree
+# Moretó's conjecture on equal character degrees of symmetric groups
 
-Kourovka 16.67 (A. Moretó), conjecture: for every `k` there is `n₀` such that for all
-`n ≥ n₀` the symmetric group `Sₙ` has at least `k` distinct irreducible complex characters of the
-same degree, i.e. `k` pairwise inequivalent irreducible representations of one dimension `d`.
+**Moretó's conjecture on equal character degrees of symmetric groups.** For every natural
+number $k$ there is a natural number $n_0$ such that for every $n \ge n_0$ there are a natural
+number $d$ and irreducible representations $\rho_1, \dots, \rho_k$ of the symmetric group $S_n$
+into $\mathrm{GL}_d(\mathbb{C})$ that are pairwise inequivalent: $\rho_i$ and $\rho_j$ are not
+equivalent whenever $i \ne j$.
+
+Since irreducible complex characters correspond to equivalence classes of irreducible complex
+representations and the degree of a character is the dimension, this says that $S_n$ has at least
+$k$ distinct irreducible complex characters of the same degree.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Equivalent Rep](is-equivalent-rep.md)
-- [Is Irreducible Rep](is-irreducible-rep.md)
+- [Equivalent complex matrix representations (Kourovka 16.67)](is-equivalent-rep.md)
+- [Irreducible complex matrix representations (Kourovka 16.67)](is-irreducible-rep.md)
 
 ## Sources
 

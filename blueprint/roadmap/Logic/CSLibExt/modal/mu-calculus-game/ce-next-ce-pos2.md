@@ -6,16 +6,20 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.ceNext_cePos2
 ---
 
-# Ce Next ce Pos2
+# Regression cycle, third step
 
-The cycle steps through the three positions in order.
+**Regression cycle, third step.** Let $\Phi = \mu X.\, \nu Y.\, X$ be the regression formula,
+$\ast$ the unique world, and write game positions as (formula, world, stack of enclosing
+binders, innermost first). The step map of the regression play sends the third cycle position
+$(X, \ast, [\nu Y.\, X, \Phi])$, where $X$ is the variable bound by the outer $\mu$, back to
+the first cycle position $(\Phi, \ast, [\,])$.
 
 ## Depends on
 
 - [Game Position](game-position.md)
-- [Ce Next](ce-next.md)
-- [Ce Pos0](ce-pos0.md)
-- [Ce Pos2](ce-pos2.md)
+- [Step map of the regression play](ce-next.md)
+- [Starting position of the regression play](ce-pos0.md)
+- [Third position of the regression play](ce-pos2.md)
 
 ## Sources
 

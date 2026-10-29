@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Modal.boxPow
 ---
 
-# Box Pow
+# Iterated box
 
-Iterated box: `boxPow 0 φ = φ`, `boxPow (k + 1) φ = □ (boxPow k φ)`.
+**Iterated box.** For a natural number $k$ and a modal formula $\varphi$, the iterated box
+$\Box^k \varphi$ is defined by $\Box^0 \varphi = \varphi$ and
+$\Box^{k+1} \varphi = \Box\,\Box^k \varphi$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Modal.Formula.sub_subset_of_mem
 ---
 
-# Sub subset of mem
+# The subformula relation is transitive
 
-Subformula is transitive.
+**The subformula relation is transitive.** If $\psi$ is a subformula of a modal formula
+$\varphi$, then every subformula of $\psi$ is a subformula of $\varphi$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [Sub](sub.md)
+- [Modal formulas](../kripke/formula.md)
+- [Subformulas](sub.md)
 
 ## Sources
 

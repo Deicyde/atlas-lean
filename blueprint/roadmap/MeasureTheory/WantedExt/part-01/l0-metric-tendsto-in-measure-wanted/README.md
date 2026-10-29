@@ -4,6 +4,6 @@ navigation: module
 
 # L0 Metric Tendsto In Measure
 
-- [L0 Unit Interval](l0-unit-interval.md)
-- [L0 Pseudo Metric](l0-pseudo-metric.md)
-- [Tendsto L0 Pseudo Metric zero iff tendsto In Measure](tendsto-l0-pseudo-metric-zero-iff-tendst.md)
+- [Measurable functions representing $L^0((0,1))$](l0-unit-interval.md)
+- [The $L^0$ pseudometric on $(0,1)$](l0-pseudo-metric.md)
+- [Convergence in the $L^0$ pseudometric is convergence in measure](tendsto-l0-pseudo-metric-zero-iff-tendst.md)

@@ -4,12 +4,12 @@ navigation: module
 
 # Hall Overgroup CPi DPi Kourovka17 Problem44
 
-- [Is Pi Number](is-pi-number.md)
-- [Is Hall Pi Subgroup](is-hall-pi-subgroup.md)
-- [Is Maximal Pi Subgroup](is-maximal-pi-subgroup.md)
-- [Is CPi Group](is-cpi-group.md)
-- [Is DPi Group](is-dpi-group.md)
-- [Hall Overgroup CPi](hall-overgroup-cpi.md)
-- [Hall Overgroup DPi](hall-overgroup-dpi.md)
-- [Hall Overgroup CPi holds](hall-overgroup-cpi-holds.md)
-- [Hall Overgroup DPi holds](hall-overgroup-dpi-holds.md)
+- [$\pi$-number](is-pi-number.md)
+- [Hall $\pi$-subgroup](is-hall-pi-subgroup.md)
+- [Maximal $\pi$-subgroup](is-maximal-pi-subgroup.md)
+- [$C_\pi$-group](is-cpi-group.md)
+- [$D_\pi$-group](is-dpi-group.md)
+- [Kourovka Problem 17.44(a): overgroups of Hall subgroups in $C_\pi$-groups](hall-overgroup-cpi.md)
+- [Kourovka Problem 17.44(b): overgroups of Hall subgroups in $D_\pi$-groups](hall-overgroup-dpi.md)
+- [Overgroups of Hall subgroups in $C_\pi$-groups (Vdovin–Revin)](hall-overgroup-cpi-holds.md)
+- [Overgroups of Hall subgroups in $D_\pi$-groups (Manzaeva, Vdovin–Manzaeva–Revin)](hall-overgroup-dpi-holds.md)

@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Modal.Bisimulation.satisfies_iff
 ---
 
-# Satisfies iff
+# Bisimulations preserve modal formulas
 
-Bisimilar worlds satisfy exactly the same modal formulas.
+**Bisimulations preserve modal formulas.** Let $Z$ be a bisimulation between Kripke models
+$M$ and $N$ over the same atoms. If $Z$ relates a world $w$ of $M$ to a world $v$ of $N$, then
+every modal formula $\varphi$ is satisfied at $w$ in $M$ if and only if $\varphi$ is satisfied
+at $v$ in $N$.
 
 ## Depends on
 
 - [Bisimulation](bisimulation.md)
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 
 ## Sources
 

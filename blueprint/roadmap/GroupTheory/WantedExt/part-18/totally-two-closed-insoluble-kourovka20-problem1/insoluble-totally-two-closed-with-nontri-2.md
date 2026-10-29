@@ -5,17 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TotallyTwoClosedInsolubleKourovka20Problem1Wanted.insolubleTotallyTwoClosedWithNontrivialFitting_holds
 ---
 
-# Insoluble Totally Two Closed With Nontrivial Fitting holds
+# A finite insoluble totally 2-closed group with nontrivial Fitting subgroup
 
-Resolved true: the Kourovka Notebook (21st issue) answers 20.1 "Yes, there are". Kinyon and Urban
-(an AI-generated solution confirmed by G. Tracey) prove that `J₁ × C₁₃` is totally `2`-closed
-(Section 3.34, Lemma 3.11), insoluble and has Fitting subgroup `C₁₃`; the Notebook also obtains `J₁
-× C_p` for primes `p ∈ {13, 17}` or `p > 19` from Theorem 1.1 of
+**A finite insoluble totally 2-closed group with nontrivial Fitting subgroup.** There exists a
+finite group $G$ that is not soluble, is totally $2$-closed, and has a nontrivial nilpotent normal
+subgroup (equivalently, a nontrivial Fitting subgroup).
+
+The Kourovka Notebook (21st issue) answers Problem 20.1 "Yes, there are". Kinyon and Urban (an
+AI-generated solution confirmed by G. Tracey) prove that $J_1 \times C_{13}$ is totally $2$-closed
+(Section 3.34, Lemma 3.11), insoluble and has Fitting subgroup $C_{13}$; the Notebook also obtains
+$J_1 \times C_p$ for primes $p \in \lbrace 13, 17 \rbrace$ or $p > 19$ from Theorem 1.1 of
 Arezoomand-Iranmanesh-Praeger-Tracey and Theorem 2 and Proposition 2 of Abdollahi-Arezoomand.
 
 ## Depends on
 
-- [Insoluble Totally Two Closed With Nontrivial Fitting](insoluble-totally-two-closed-with-nontri.md)
+- [Kourovka Problem 20.1 (insoluble totally 2-closed groups)](insoluble-totally-two-closed-with-nontri.md)
 
 ## Sources
 

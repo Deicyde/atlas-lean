@@ -6,11 +6,13 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.PolynomialDecay.memLp_of_polynomial_decay_ae
 ---
 
-# Polynomial decay implies `L^p` membership
+# Polynomial decay implies $L^p$ membership
 
-**Polynomial decay implies `L^p` membership.** If `f : ℝ → E` is a.e. strongly
-measurable and `‖f x‖ ≤ C * (1 + |x|) ^ (-q)` almost everywhere, where
-`C ≥ 0` and `q > 1`, then `f ∈ L^p (ℝ)` for every `1 ≤ p ≤ ∞`.
+**Polynomial decay implies $L^p$ membership.** Let $E$ be a normed additive commutative group
+and let $f : \mathbb{R} \to E$ be almost everywhere strongly measurable. Suppose there are real
+numbers $C \ge 0$ and $q > 1$ such that $\|f(x)\| \le C (1 + |x|)^{-q}$ for almost every
+$x \in \mathbb{R}$. Then $f \in L^p(\mathbb{R})$, with respect to Lebesgue measure, for every
+$p \in [1, \infty]$.
 
 ## Depends on
 

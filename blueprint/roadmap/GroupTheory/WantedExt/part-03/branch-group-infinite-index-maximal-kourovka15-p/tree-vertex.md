@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BranchGroupInfiniteIndexMaximalKourovka15Problem15Wanted.TreeVertex
 ---
 
-# Tree Vertex
+# Vertices of the spherically homogeneous rooted tree (Kourovka 15.15)
 
-The vertices of the spherically homogeneous rooted tree with branching sequence `m`: words whose
-`i`-th letter is less than `m i`. The length of a word is its level and its prefixes are its
-ancestors.
+**Vertices of the spherically homogeneous rooted tree (Kourovka 15.15).** For a branching
+sequence $m \colon \mathbb{N} \to \mathbb{N}$, the vertices of the spherically homogeneous rooted
+tree are the finite words $(x_0, \dots, x_{k-1})$ of natural numbers with $x_i < m(i)$ for every
+$i < k$. The length $k$ of a word is its level and its prefixes are its ancestors.
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FrattiniExtensionSequenceKourovka16Problem12Wanted.phiExtensionSequence
 ---
 
-# Phi Extension Sequence
+# Kourovka Problem 16.12 (infinite chains of $\Phi$-extensions)
 
-Kourovka 16.12 (Ya. G. Berkovich): for every prime `p` and every nontrivial finite `p`-group
-`G` there is an infinite sequence `G = G₀, G₁, G₂, …` of groups in which every `G_{i+1}` is a
-`Φ`-extension of `G_i`.
+**Kourovka Problem 16.12 (infinite chains of $\Phi$-extensions).** The statement, a question
+of Ya. G. Berkovich, that for every prime $p$ and every nontrivial finite $p$-group $G$ there are
+groups $G_0, G_1, G_2, \dots$ with $G_0 \cong G$ such that, for every $i \ge 0$, $G_{i+1}$ is a
+$\Phi$-extension of $G_i$ for the prime $p$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Phi Extension](is-phi-extension.md)
+- [$\Phi$-extension (Berkovich)](is-phi-extension.md)
 
 ## Sources
 

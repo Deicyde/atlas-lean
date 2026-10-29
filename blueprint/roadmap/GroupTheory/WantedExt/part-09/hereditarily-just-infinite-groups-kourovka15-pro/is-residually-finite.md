@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditarilyJustInfiniteGroupsKourovka15Problem18Wanted.IsResiduallyFinite
 ---
 
-# Is Residually Finite
+# Residually finite groups
 
-`G` is residually finite: every nontrivial element lies outside some normal subgroup of finite
-index.
+**Residually finite groups.** A group $G$ is residually finite if every element $g \ne 1$ of
+$G$ lies outside some normal subgroup of finite index in $G$.
 
 ## Depends on
 

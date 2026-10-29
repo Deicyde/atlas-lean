@@ -6,33 +6,17 @@ proof: formalized
 lean: Cslib.LTL.Word.mem_language
 ---
 
-# Mem language
+# Membership in the language of a formula
 
-Satisfaction on a relabelled word is satisfaction under the composed valuation. -/
-theorem satisfies_map {Symbol' : Type*} (f : Symbol' → Symbol) :
-    ∀ (φ : Formula Atom) (w : ωSequence Symbol'),
-      Satisfies valuation (w.map f) φ ↔ Satisfies (fun s a => valuation (f s) a) w φ
-  | .atom _, _ => Iff.rfl
-  | .top, _ => Iff.rfl
-  | .not φ, w => not_congr (satisfies_map f φ w)
-  | .and φ ψ, w => and_congr (satisfies_map f φ w) (satisfies_map f ψ w)
-  | .next φ, w => by
-      change Satisfies valuation (w.map f).tail φ ↔ _
-      rw [ωSequence.tail_map]
-      exact satisfies_map f φ w.tail
-  | .until φ ψ, w => by
-      change (∃ k, Satisfies valuation ((w.map f).drop k) ψ ∧
-          ∀ j < k, Satisfies valuation ((w.map f).drop j) φ) ↔ _
-      simp only [ωSequence.drop_map, satisfies_map f φ, satisfies_map f ψ]
-      rfl
-
-/-! ### Languages
+**Membership in the language of a formula.** For every valuation $v$ of atoms on letters,
+every ω-word $w$ and every LTL formula $\varphi$, the word $w$ belongs to the ω-language of
+$\varphi$ under $v$ if and only if $w$ satisfies $\varphi$ under $v$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies](satisfies.md)
-- [Language](language.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
+- [Language of an LTL formula](language.md)
 
 ## Sources
 

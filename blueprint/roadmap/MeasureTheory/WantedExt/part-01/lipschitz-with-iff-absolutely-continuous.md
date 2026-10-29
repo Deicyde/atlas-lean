@@ -5,16 +5,14 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.LipschitzIffAbsContBoundedDerivWanted.lipschitzWith_iff_absolutelyContinuous_and_ae_norm_deriv_le
 ---
 
-# Lipschitz Iff Abs Cont Bounded Deriv Wanted
+# Lipschitz functions are the absolutely continuous functions with bounded derivative
 
-Let $f:\mathbb{R}\to\mathbb{R}$. Prove that $f$ satisfies the Lipschitz condition
-
-\[
-|f(x)-f(y)|\le M|x-y|
-\]
-for some $M$ and all $x,y\in\mathbb{R}$, if and only if $f$ satisfies the following two properties:
-$f$ is absolutely continuous.
-$|f'(x)|\le M$ for a.e.\ $x$.
+**Lipschitz functions are the absolutely continuous functions with bounded derivative.** Let
+$f : \mathbb{R} \to \mathbb{R}$ and let $M \ge 0$ be a real number. Then
+$|f(x) - f(y)| \le M|x - y|$ for all $x, y \in \mathbb{R}$ if and only if $f$ is absolutely
+continuous on every closed bounded interval and $|f'(x)| \le M$ for almost every $x \in \mathbb{R}$
+(with respect to Lebesgue measure), where $f'(x)$ is taken to be $0$ at points where $f$ is not
+differentiable.
 
 ## Depends on
 

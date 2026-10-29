@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.hyperbolicGroupEquationallyNoetherian_holds
 ---
 
-# Hyperbolic Group Equationally Noetherian holds
+# Hyperbolic groups are equationally Noetherian
 
-Resolved true: Weidmann and Reinfeldt prove that every hyperbolic group is equationally Noetherian
-(Sela had the torsion-free case); the Kourovka Notebook (21st issue) answers 14.19 "Yes, it does".
+**Hyperbolic groups are equationally Noetherian.** Every word-hyperbolic group $G$ has the
+Noetherian Equation Property: for every natural number $n$, every system of equations over $G$ in
+the unknowns $x_0, \dots, x_{n-1}$ has the same solution set in $G^n$ as some finite subsystem.
+
+This answers Kourovka Problem 14.19 ("Yes, it does"): Weidmann and Reinfeldt prove it for all
+hyperbolic groups, and Sela had proved the torsion-free case.
 
 ## Depends on
 
-- [Hyperbolic Group Equationally Noetherian](hyperbolic-group-equationally-noetherian.md)
+- [Kourovka Problem 14.19 (hyperbolic groups and the Noetherian Equation Property)](hyperbolic-group-equationally-noetherian.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Logic.FOL.PropRelations
 ---
 
-# Prop Relations
+# Relation symbols of the propositional language
 
-Nullary relation symbols are the propositional atoms; there are no function symbols
-and no relation symbols of positive arity.
+**Relation symbols of the propositional language.** For a type of atoms, the family of
+relation symbols indexed by arity that consists of one nullary relation symbol for each atom
+$a$ and has no relation symbols of positive arity.
 
 ## Depends on
 

@@ -18,13 +18,13 @@ states).
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
+- [CTL formulas](../basic/formula.md)
 
 ## Proof depends on
 
-- [E Globally Fin](e-globally-fin.md)
-- [E Until Fin](e-until-fin.md)
-- [Pre Exists Fin](pre-exists-fin.md)
+- [Finite existential-globally set](e-globally-fin.md)
+- [Finite existential-until set](e-until-fin.md)
+- [Finite existential predecessor set](pre-exists-fin.md)
 
 ## Sources
 

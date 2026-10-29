@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.generalizedTribonacci_one
 ---
 
-# Generalized Tribonacci one
+# Initial value $T_1 = s_1$ of the generalized Tribonacci sequence
 
-Source equation `T_1 = s₁`.
+**Initial value $T_1 = s_1$ of the generalized Tribonacci sequence.** For all integers
+$s_0, s_1, s_2$, the generalized Tribonacci sequence $(T_n)_{n \ge 0}$ with initial values
+$s_0, s_1, s_2$ satisfies $T_1 = s_1$.
 
 ## Depends on
 
-- [Generalized Tribonacci](generalized-tribonacci.md)
+- [Generalized Tribonacci sequence](generalized-tribonacci.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BasicCommutatorEqualityKourovka11Problem20Wanted.kcomm
 ---
 
-# Kcomm
+# Commutator, Kourovka–Hall convention
 
-The commutator `[x, y] = x⁻¹ y⁻¹ x y` (the convention of the Kourovka Notebook and of Hall).
+**Commutator, Kourovka–Hall convention.** For elements $x$ and $y$ of a group, their
+commutator is $[x, y] = x^{-1} y^{-1} x y$ (the convention of the Kourovka Notebook and of Hall).
 
 ## Depends on
 

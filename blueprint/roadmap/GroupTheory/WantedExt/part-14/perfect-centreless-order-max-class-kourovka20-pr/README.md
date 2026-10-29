@@ -4,5 +4,5 @@ navigation: module
 
 # Perfect Centreless Order Max Class Kourovka20 Problem30
 
-- [Perfect Centreless Order Le Max Class Sq](perfect-centreless-order-le-max-class-sq.md)
-- [Perfect Centreless Order Le Max Class Sq refuted](perfect-centreless-order-le-max-class-sq-2.md)
+- [Kourovka 20.30: the order of a perfect centreless group and its largest conjugacy class](perfect-centreless-order-le-max-class-sq.md)
+- [Perfect centreless groups need not have order at most the square of the largest class size](perfect-centreless-order-le-max-class-sq-2.md)

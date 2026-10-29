@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.longitudeMap_bijective
 ---
 
-# Longitude Map bijective
+# The longitude map is bijective
 
-The longitude map is bijective.
+**The longitude map is bijective.** The longitude map from the circle group
+$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
+is bijective.
 
 ## Depends on
 
-- [Longitude Map](longitude-map.md)
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude map](longitude-map.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 
-- [Longitude Map injective](longitude-map-injective.md)
-- [Longitude Map surjective](longitude-map-surjective.md)
+- [The longitude map is injective](longitude-map-injective.md)
+- [The longitude map is surjective](longitude-map-surjective.md)
 
 ## Sources
 

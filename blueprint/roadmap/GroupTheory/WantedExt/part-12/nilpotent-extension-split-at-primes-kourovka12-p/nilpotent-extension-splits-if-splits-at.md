@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NilpotentExtensionSplitAtPrimesKourovka12Problem93Wanted.nilpotentExtensionSplitsIfSplitsAtPrimes
 ---
 
-# Nilpotent Extension Splits If Splits At Primes
+# Hilton's splitting question for nilpotent extensions (Kourovka 12.93)
 
-Hilton's question (Kourovka 12.93) with a positive answer: every extension
-`N ↣ G ↠ Q` of nilpotent groups with `Q` finitely generated that splits at every prime splits,
-i.e. the quotient map has a homomorphic section.
+**Hilton's splitting question for nilpotent extensions (Kourovka 12.93).** The proposition
+that every extension of nilpotent groups with finitely generated quotient that splits at every
+prime splits: for all nilpotent groups $N$, $G$ and $Q$ with $Q$ finitely generated, every
+injective homomorphism $i \colon N \to G$ and every surjective homomorphism $\pi \colon G \to Q$
+with $\operatorname{im} i = \ker \pi$ such that the extension splits at every prime $p$, there is
+a homomorphism $s \colon Q \to G$ with $\pi \circ s = \mathrm{id}_Q$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Splits At Prime](splits-at-prime.md)
+- [Splitting at a prime](splits-at-prime.md)
 
 ## Sources
 

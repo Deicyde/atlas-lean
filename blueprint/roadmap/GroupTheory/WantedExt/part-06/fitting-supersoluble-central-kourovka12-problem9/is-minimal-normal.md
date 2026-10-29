@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FittingSupersolubleCentralKourovka12Problem91Wanted.IsMinimalNormal
 ---
 
-# Is Minimal Normal
+# Minimal normal subgroups (Kourovka 12.91)
 
-`N` is a minimal normal subgroup of `G`.
+**Minimal normal subgroups (Kourovka 12.91).** A subgroup $N$ of a group $G$ is minimal normal
+if $N$ is a nontrivial normal subgroup of $G$ and every nontrivial normal subgroup $M$ of $G$ with
+$M \le N$ equals $N$.
 
 ## Depends on
 

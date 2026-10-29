@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.LTL.Formula.iff
 ---
 
-# Iff
+# Bi-implication in LTL
 
-Bi-implication encoded using conjunction and implication.
+**Bi-implication in LTL.** For LTL formulas $\varphi$ and $\psi$, the bi-implication
+$\varphi \leftrightarrow \psi$ is defined as the conjunction
+$(\varphi \to \psi) \wedge (\psi \to \varphi)$ of the two implications.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of linear temporal logic](formula.md)
 
 ## Proof depends on
 
-- [Imp](imp.md)
+- [Implication in LTL](imp.md)
 
 ## Sources
 

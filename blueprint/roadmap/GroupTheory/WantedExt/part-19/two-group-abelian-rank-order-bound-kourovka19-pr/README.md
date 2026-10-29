@@ -4,5 +4,5 @@ navigation: module
 
 # Two Group Abelian Rank Order Bound Kourovka19 Problem75
 
-- [Two Group Order Bound By Abelian Rank](two-group-order-bound-by-abelian-rank.md)
-- [Two Group Order Bound By Abelian Rank refuted](two-group-order-bound-by-abelian-rank-re.md)
+- [Sambale's question on the order of $2$-groups of bounded abelian rank (Kourovka 19.75)](two-group-order-bound-by-abelian-rank.md)
+- [Sambale's order bound for $2$-groups of bounded abelian rank fails (Kourovka 19.75)](two-group-order-bound-by-abelian-rank-re.md)

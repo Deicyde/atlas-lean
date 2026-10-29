@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Modal.IsSahlqvist
 ---
 
-# Is Sahlqvist
+# Sahlqvist formulas
 
-A modal formula is Sahlqvist if it is built from Sahlqvist implications using `∧`,
-`□`, and `∨` with disjoint propositional vocabularies. The disjunction side condition
-is essential: arbitrary disjunction leaves the correspondence class. `◇` at the outer
-level is not part of the closure (it belongs to the antecedent grammar). The
-bare-implication definition alone would reject e.g. a boxed Sahlqvist implication
-`□(p → □◇p)`, which is Sahlqvist.
+**Sahlqvist formulas.** The Sahlqvist formulas form the smallest class of modal formulas that
+contains every Sahlqvist implication, is closed under $\wedge$ and $\Box$, and contains
+$\varphi \vee \psi$ whenever $\varphi$ and $\psi$ are Sahlqvist formulas with no atom in common.
+
+The side condition on disjunction is essential: arbitrary disjunction leaves the correspondence
+class. $\Diamond$ is not part of this outer closure; it belongs to the grammar of Sahlqvist
+antecedents. For example, the boxed Sahlqvist implication $\Box(p \to \Box\Diamond p)$ is a
+Sahlqvist formula.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

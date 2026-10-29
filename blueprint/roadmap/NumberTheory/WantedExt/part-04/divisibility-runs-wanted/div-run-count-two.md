@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.divRunCount_two
 ---
 
-# Div Run Count two
+# Exact formula for the length-two run count
 
-Proposition 5: with `d_B(m) = 2⌊B/m⌋ + 1` and `S(B) = ∑_{m=1}^B d_B(m) = 2D(B) + B`,
-`A_B(2) = 4(2B+1) S(B)² - 4B²`.
+**Exact formula for the length-two run count.** For every natural number $B$, let
+$S(B) = \sum_{m=1}^{B} \left(2\lfloor B/m \rfloor + 1\right)$ and let $A_B(2)$ be the number of
+integer tuples $(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and
+$(a, b, c) \ne (0, 0, 0)$ that have a divisibility run of length at least $2$. Then
+$S(B) = 2 \sum_{m=1}^{B} \lfloor B/m \rfloor + B$ and $A_B(2) = 4(2B+1) S(B)^2 - 4B^2$.
 
 ## Depends on
 
-- [Div Run Count](div-run-count.md)
+- [Counting configurations with long divisibility runs](div-run-count.md)
 
 ## Sources
 

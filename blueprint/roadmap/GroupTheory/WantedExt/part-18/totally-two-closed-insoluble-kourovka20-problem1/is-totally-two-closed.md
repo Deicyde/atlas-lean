@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TotallyTwoClosedInsolubleKourovka20Problem1Wanted.IsTotallyTwoClosed
 ---
 
-# Is Totally Two Closed
+# Totally 2-closed groups
 
-`G` is totally `2`-closed: in each faithful permutation representation of `G`, on any set
-`Ω`, `G` is the largest subgroup of `Sym(Ω)` preserving each of its orbits on `Ω²`.
+**Totally 2-closed groups.** A group $G$ is totally $2$-closed when every faithful action of
+$G$ on a set $\Omega$ is $2$-closed; equivalently, in each faithful permutation representation of
+$G$ on a set $\Omega$, $G$ is the largest subgroup of $\mathrm{Sym}(\Omega)$ preserving each of
+its orbits on $\Omega^2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Two Closed Action](is-two-closed-action.md)
+- [2-closed actions](is-two-closed-action.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.losePlay
 ---
 
-# Lose Play
+# The lose play
 
-The lose play from a terminal losing position: stay at `pos` for one step,
-then at `lose` forever.
+**The lose play.** For a fixpoint-free formula $\varphi$ and a world $w$, the lose play is the
+infinite sequence of positions of the fragment arena that is at the position $(\varphi, w)$ at
+time $0$ and at the absorbing losing state at every later time. It is used for terminal losing
+positions $(\varphi, w)$.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [Frag Pos](frag-pos.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Positions of the totalized fragment game](frag-pos.md)
 
 ## Sources
 

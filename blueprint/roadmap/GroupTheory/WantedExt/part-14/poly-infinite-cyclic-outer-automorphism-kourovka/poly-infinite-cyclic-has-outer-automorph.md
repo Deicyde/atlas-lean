@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PolyInfiniteCyclicOuterAutomorphismKourovka13Problem23Wanted.polyInfiniteCyclicHasOuterAutomorphism
 ---
 
-# Poly Infinite Cyclic Has Outer Automorphism
+# Outer automorphisms of groups with an infinite cyclic normal series (Kourovka 13.23)
 
-Kourovka 13.23 (F. de Giovanni): every nontrivial group with a finite normal series with
-infinite cyclic factors has a non-trivial outer automorphism (an automorphism that is not
-inner).
+**Outer automorphisms of groups with an infinite cyclic normal series (Kourovka 13.23).** The
+conjecture that every nontrivial group with a normal series with infinite cyclic factors has an
+automorphism that is not inner.
+
+This is Kourovka Problem 13.23 (F. de Giovanni).
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Normal Series Infinite Cyclic Factors](has-normal-series-infinite-cyclic-factor.md)
+- [Normal series with infinite cyclic factors](has-normal-series-infinite-cyclic-factor.md)
 
 ## Sources
 

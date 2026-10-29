@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.LTL.Word.Satisfies.release_expansion
 ---
 
-# Release expansion
+# Expansion law for release
 
-The expansion law for `release`: the second argument holds now, and either the first
-argument holds now or the `release` is postponed by one step.
+**Expansion law for release.** For every valuation $v$ of atoms on letters, every ω-word $w$
+and all LTL formulas $\varphi$ and $\psi$, the word $w$ satisfies
+$\varphi \mathbin{\mathcal{R}} \psi$ ($\varphi$ releases $\psi$) under $v$ if and only if it
+satisfies $\psi$ and it satisfies $\varphi$ or $\mathbf{X}(\varphi \mathbin{\mathcal{R}} \psi)$,
+all under $v$, where $\mathbf{X}$ is the next operator.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Release](../syntax/release.md)
-- [Satisfies](satisfies.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [The release operator of LTL](../syntax/release.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Proof depends on
 
-- [Until expansion](until-expansion.md)
+- [Expansion law for until](until-expansion.md)
 
 ## Sources
 

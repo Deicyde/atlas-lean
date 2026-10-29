@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimpleGroupCharacterValuesKourovka11Problem97Wanted.finitelyManySimpleGivenCharacterValues
 ---
 
-# Finitely Many Simple Given Character Values
+# Kourovka Problem 11.97 (simple groups with a given set of character values)
 
-Kourovka 11.97 (S. P. Strunkov): for every finite set `S` of complex numbers only finitely many
-finite non-abelian simple groups have an element `g` at which the set of values of the irreducible
-characters is exactly `S`. "Finitely many" up to isomorphism is stated as a bound on the order.
+**Kourovka Problem 11.97 (simple groups with a given set of character values).** The
+statement that for every finite set $S$ of complex numbers there is a bound $N$ such that every
+finite non-abelian simple group $G$ having an element $g$ at which the set of values of the
+irreducible complex characters of $G$ is exactly $S$ has order at most $N$. The problem is due to
+S. P. Strunkov.
+
+"Only finitely many such groups" up to isomorphism is stated as this bound on the order.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Irr Char Values](irr-char-values.md)
+- [Values of the irreducible characters at an element](irr-char-values.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: Real.log_sub_log_floor_le
 ---
 
-# Log sub log floor le
+# Logarithm gap between a real number and its floor
 
-The logarithm grows by at most `1 / ⌊x⌋₊` between `⌊x⌋₊` and `x`.
+**Logarithm gap between a real number and its floor.** For every real $x \ge 1$, the floor
+$\lfloor x \rfloor$ of $x$ satisfies $\log x - \log \lfloor x \rfloor \le 1/\lfloor x \rfloor$.
 
 ## Depends on
 

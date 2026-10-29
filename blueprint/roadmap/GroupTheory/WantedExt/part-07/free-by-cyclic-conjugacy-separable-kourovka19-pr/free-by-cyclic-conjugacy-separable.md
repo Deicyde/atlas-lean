@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeByCyclicConjugacySeparableKourovka19Problem41Wanted.freeByCyclicConjugacySeparable
 ---
 
-# Free By Cyclic Conjugacy Separable
+# Kapovich's conjugacy separability question (Kourovka 19.41)
 
-Kourovka 19.41 (I. Kapovich): for every automorphism `φ` of the free group `Fₙ` of finite rank,
-the split extension `Fₙ ⋊_φ ℤ` is conjugacy separable.
+**Kapovich's conjugacy separability question (Kourovka 19.41).** The assertion that for every
+natural number $n$ and every automorphism $\varphi$ of the free group $F_n$ of rank $n$, the
+semidirect product $F_n \rtimes_\varphi \mathbb{Z}$, in which $k \in \mathbb{Z}$ acts on $F_n$ by
+$\varphi^k$, is conjugacy separable.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Conjugacy Separable](../../part-10/kourovka-notebook-shared/is-conjugacy-separable.md)
+- [Conjugacy separable groups](../../part-10/kourovka-notebook-shared/is-conjugacy-separable.md)
 
 ## Sources
 

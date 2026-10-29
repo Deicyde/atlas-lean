@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.Modal.isSahlqvist_axiomB
 ---
 
-# Is Sahlqvist axiom B
+# The B axiom is a Sahlqvist formula
 
-The B axiom `p → □◇p` is Sahlqvist: its antecedent is a boxed atom (`k = 0`) and its
-consequent is positive.
+**The B axiom is a Sahlqvist formula.** For every atom $p$, the instance $p \to \Box\Diamond p$
+of the B axiom is a Sahlqvist formula: its antecedent $p$ is a boxed atom with zero boxes and its
+consequent $\Box\Diamond p$ is positive.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Axiom B](../kripke/axiom-b.md)
-- [Is Sahlqvist](is-sahlqvist.md)
+- [Sahlqvist formulas](is-sahlqvist.md)
 
 ## Proof depends on
 
-- [Dia](../kripke/dia.md)
-- [Neg](../kripke/neg.md)
-- [Is Negative](is-negative.md)
-- [Is Positive](is-positive.md)
-- [Is Sahlqvist Antecedent](is-sahlqvist-antecedent.md)
-- [Is Sahlqvist Implication](is-sahlqvist-implication.md)
-- [Box Pow](box-pow.md)
+- [The possibility operator](../kripke/dia.md)
+- [Negation of modal formulas](../kripke/neg.md)
+- [Negative modal formulas](is-negative.md)
+- [Positive modal formulas](is-positive.md)
+- [Sahlqvist antecedents](is-sahlqvist-antecedent.md)
+- [Sahlqvist implications](is-sahlqvist-implication.md)
+- [Iterated box](box-pow.md)
 
 ## Sources
 

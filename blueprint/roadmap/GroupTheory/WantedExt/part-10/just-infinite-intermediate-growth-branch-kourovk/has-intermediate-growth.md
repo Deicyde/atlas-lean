@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.JustInfiniteIntermediateGrowthBranchKourovka15Problem17Wanted.HasIntermediateGrowth
 ---
 
-# Has Intermediate Growth
+# Groups of intermediate growth
 
-`G` has intermediate growth: it is finitely generated and for every finite generating family
-the growth rate is `1` (subexponential growth) while the growth is not polynomially bounded.
+**Groups of intermediate growth.** A group $G$ has intermediate growth if it is finitely
+generated and, for every natural number $k$ and every generating family $P$ of $G$ indexed by
+$\{0, \dots, k-1\}$, the growth rate of $P$ is at most $1$ (subexponential growth) and $P$ does
+not have polynomial growth.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Polynomial growth](../../../MathlibExt/part-02/group-growth/has-polynomial-growth.md)
-- [Growth Rate](growth-rate.md)
+- [Growth rate of a finite generating family](growth-rate.md)
 
 ## Sources
 

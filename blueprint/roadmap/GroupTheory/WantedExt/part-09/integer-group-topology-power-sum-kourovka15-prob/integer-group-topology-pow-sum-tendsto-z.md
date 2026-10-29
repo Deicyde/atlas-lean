@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IntegerGroupTopologyPowerSumKourovka15Problem79Wanted.integerGroupTopologyPowSumTendstoZero
 ---
 
-# Integer Group Topology Pow Sum Tendsto Zero
+# Kourovka Problem 15.79 (Protasov's question on the integers)
 
-Kourovka 15.79 (I. V. Protasov): there is a Hausdorff group topology on `ℤ` in which
-`2ⁿ + 3ⁿ → 0`.
+**Kourovka Problem 15.79 (Protasov's question on the integers).** The statement that there is a
+topology on $\mathbb{Z}$ that makes $(\mathbb{Z}, +)$ a Hausdorff topological group and in which
+the sequence $(2^n + 3^n)_{n \in \mathbb{N}}$ converges to $0$.
 
 ## Depends on
 

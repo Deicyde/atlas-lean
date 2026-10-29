@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SchmidtSubgroupsSigmaSubnormalKourovka19Problem85Wanted.schmidtSigmaSubnormalCyclicQuotient
 ---
 
-# Schmidt Sigma Subnormal Cyclic Quotient
+# Claim of Kourovka Problem 19.85
 
-Kourovka 19.85 (A. N. Skiba): for every partition `σ` of the primes, if every Schmidt subgroup
-of a finite group `G` is `σ`-subnormal in `G`, then `G` has a normal `σ`-nilpotent subgroup `N`
-with `G / N` cyclic (some `g` has `x ∈ g^k N` for all `x`).
+**Claim of Kourovka Problem 19.85.** The statement that for every partition $\sigma$ of the set
+of all primes into nonempty pairwise disjoint blocks and every finite group $G$ in which every
+Schmidt subgroup is $\sigma$-subnormal, $G$ has a normal $\sigma$-nilpotent subgroup $N$ such that
+$G / N$ is cyclic: there is $g \in G$ such that every $x \in G$ satisfies $x g^{-k} \in N$ for some
+integer $k$. The problem is due to A. N. Skiba.
 
 ## Depends on
 
@@ -17,10 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime Partition](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
-- [Is Sigma Nilpotent](../../part-10/kourovka-notebook-shared/is-sigma-nilpotent.md)
-- [Is Sigma Subnormal](../../part-10/kourovka-notebook-shared/is-sigma-subnormal.md)
-- [Is Schmidt Subgroup](../../part-15/schmidt-subgroups-prime-subnormal-kourovka18-pro/is-schmidt-subgroup.md)
+- [Partitions of the primes](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
+- [$\sigma$-nilpotent groups](../../part-10/kourovka-notebook-shared/is-sigma-nilpotent.md)
+- [$\sigma$-subnormal subgroups](../../part-10/kourovka-notebook-shared/is-sigma-subnormal.md)
+- [Schmidt subgroup](../../part-15/schmidt-subgroups-prime-subnormal-kourovka18-pro/is-schmidt-subgroup.md)
 
 ## Sources
 

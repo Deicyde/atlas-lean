@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimalNonNilpotentPermutableCoreKourovka17Problem56Wanted.IsMinimalNonNilpotent
 ---
 
-# Is Minimal Non Nilpotent
+# Minimal non-nilpotent subgroup
 
-A minimal non-nilpotent subgroup: a subgroup that is not nilpotent but all of whose proper
-subgroups are nilpotent.
+**Minimal non-nilpotent subgroup.** A subgroup $M$ of a group $G$ is minimal non-nilpotent if
+$M$ is not nilpotent but every proper subgroup of $M$ is nilpotent.
 
 ## Depends on
 

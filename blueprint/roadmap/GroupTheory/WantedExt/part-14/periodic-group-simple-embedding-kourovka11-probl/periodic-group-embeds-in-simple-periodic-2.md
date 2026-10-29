@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PeriodicGroupSimpleEmbeddingKourovka11Problem106Wanted.periodicGroupEmbedsInSimplePeriodic_holds
 ---
 
-# Periodic Group Embeds In Simple Periodic holds
+# Every periodic group embeds in a simple periodic group
 
-Resolved true: the Kourovka Archive answers 11.106 "Yes", citing Olshanskii (1992), "Embedding
-periodic groups in simple periodic groups": every periodic group embeds in a simple periodic group.
+**Every periodic group embeds in a simple periodic group.** For every group $G$ in which every
+element has finite order, there are a simple group $S$ in which every element has finite order and
+an injective homomorphism $G \to S$. This answers Kourovka Problem 11.106 (R. Phillips) in the
+affirmative; the result is due to A. Yu. Olshanskii (1992).
 
 ## Depends on
 
-- [Periodic Group Embeds In Simple Periodic](periodic-group-embeds-in-simple-periodic.md)
+- [Kourovka Problem 11.106 (periodic groups in simple periodic groups)](periodic-group-embeds-in-simple-periodic.md)
 
 ## Sources
 

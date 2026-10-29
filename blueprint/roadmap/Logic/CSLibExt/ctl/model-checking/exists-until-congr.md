@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.existsUntil_congr
 ---
 
-# Exists Until congr
+# Congruence of existential until in its target
 
-`EU` is congruent in its target formula under pointwise
-satisfaction equivalence.
+**Congruence of existential until in its target.** In a labelled transition system with a
+valuation of atoms, let $\rho$, $\alpha$ and $\beta$ be CTL formulas such that every state
+satisfies $\alpha$ if and only if it satisfies $\beta$. Then every state $s$ satisfies
+$\mathsf{E}[\rho \,\mathsf{U}\, \alpha]$ if and only if it satisfies
+$\mathsf{E}[\rho \,\mathsf{U}\, \beta]$.
 
 ## Depends on
 
-- [Formula](../basic/formula.md)
-- [Satisfies](../basic/satisfies.md)
+- [CTL formulas](../basic/formula.md)
+- [Satisfaction of CTL formulas](../basic/satisfies.md)
 
 ## Proof depends on
 

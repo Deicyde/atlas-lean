@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Modal.Formula.atoms
 ---
 
-# Atoms
+# Atoms of a modal formula
 
-The set of atoms (propositional variables) occurring in a modal formula.
+**Atoms of a modal formula.** The set of atoms (propositional variables) occurring in a modal
+formula.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

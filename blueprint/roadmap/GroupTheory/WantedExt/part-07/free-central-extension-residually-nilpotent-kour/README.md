@@ -4,7 +4,7 @@ navigation: module
 
 # Free Central Extension Residually Nilpotent Kourovka16 Problem65
 
-- [Is Residually Nilpotent](is-residually-nilpotent.md)
-- [Is Residually Torsion Free Nilpotent](is-residually-torsion-free-nilpotent.md)
-- [Exists Presentation With Non Residually Nilpotent Quotient](exists-presentation-with-non-residually.md)
-- [Exists Presentation With Non Residually Nilpotent Quotient holds](exists-presentation-with-non-residually-2.md)
+- [Residually nilpotent group](is-residually-nilpotent.md)
+- [Residually torsion-free nilpotent group](is-residually-torsion-free-nilpotent.md)
+- [Mikhailov–Passi question on free central extensions (Kourovka 16.65)](exists-presentation-with-non-residually.md)
+- [Free central extensions need not be residually nilpotent](exists-presentation-with-non-residually-2.md)

@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteGroupFormationShared.ClassLE
 ---
 
-# Class LE
+# Inclusion of classes of finite groups
 
-Inclusion of classes of finite groups: every member of `𝔉` is a member of `𝔊`.
+**Inclusion of classes of finite groups.** For classes $\mathfrak{F}$ and $\mathfrak{G}$ of
+finite groups, $\mathfrak{F} \subseteq \mathfrak{G}$ means that every finite group in
+$\mathfrak{F}$ belongs to $\mathfrak{G}$.
 
 ## Depends on
 
-- [Finite Group Class](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
+- [Class of finite groups (Kourovka 13.51)](../finite-modular-lattice-formations-kourovka13-pro/finite-group-class.md)
 
 ## Sources
 

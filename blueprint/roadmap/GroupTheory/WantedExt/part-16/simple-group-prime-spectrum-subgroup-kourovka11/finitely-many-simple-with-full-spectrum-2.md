@@ -17,7 +17,7 @@ and `H ≅ Ω⁻_{4k}(2^s)`, then `π(G) = π(H)`", https://arxiv.org/abs/1401.0
 
 ## Depends on
 
-- [Finitely Many Simple With Full Spectrum Subgroup](finitely-many-simple-with-full-spectrum.md)
+- [Kourovka Problem 11.64 (Monakhov)](finitely-many-simple-with-full-spectrum.md)
 
 ## Sources
 

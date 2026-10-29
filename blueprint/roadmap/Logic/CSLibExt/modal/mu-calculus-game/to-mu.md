@@ -5,14 +5,18 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu
 ---
 
-# To Mu
+# Embedding of the fixpoint-free fragment into the μ-calculus
 
-Embed the fixpoint-free fragment into the μ-calculus.
+**Embedding of the fixpoint-free fragment into the μ-calculus.** The map from fixpoint-free
+formulas to μ-calculus formulas defined by recursion: atoms, negated atoms, $\bot$ and $\top$
+go to the same atom, negated atom, $\bot$ and $\top$, and $\varphi \wedge \psi$,
+$\varphi \vee \psi$, $\Box \varphi$ and $\Diamond \varphi$ go to the conjunction, disjunction,
+box and diamond of the images of $\varphi$ and $\psi$.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

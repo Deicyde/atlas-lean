@@ -4,10 +4,10 @@ navigation: module
 
 # Branch Group Shared
 
-- [Rooted Tree](rooted-tree.md)
-- [Is Descendant](is-descendant.md)
+- [Rooted tree given by levels](rooted-tree.md)
+- [Descendants in a rooted tree](is-descendant.md)
 - [Level Transitive Faithful Action](level-transitive-faithful-action.md)
-- [Is Rigid At](is-rigid-at.md)
-- [Rigid Level Stabilizer](rigid-level-stabilizer.md)
-- [Is Branch Action](is-branch-action.md)
-- [Is Branch Group](is-branch-group.md)
+- [Rigid vertex stabilizer](is-rigid-at.md)
+- [Rigid stabilizer of a level](rigid-level-stabilizer.md)
+- [Branch action](is-branch-action.md)
+- [Branch group](is-branch-group.md)

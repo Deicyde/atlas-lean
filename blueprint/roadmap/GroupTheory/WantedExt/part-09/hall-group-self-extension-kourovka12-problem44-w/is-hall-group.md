@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallGroupSelfExtensionKourovka12Problem44Wanted.IsHallGroup
 ---
 
-# Is Hall Group
+# Hall group
 
-`G` is isomorphic to every extension of itself by itself: whenever `N` is a normal subgroup
-of a group `H` with `N ≅ G` and `H ⧸ N ≅ G`, also `H ≅ G` (a Hall group in the sense of Göbel and
-Shelah).
+**Hall group.** A group $G$ is a Hall group (in the sense of Göbel and Shelah) when it is
+isomorphic to every extension of itself by itself: for every group $H$ and every normal subgroup
+$N$ of $H$ with $N \cong G$ and $H/N \cong G$, also $H \cong G$.
 
 ## Depends on
 

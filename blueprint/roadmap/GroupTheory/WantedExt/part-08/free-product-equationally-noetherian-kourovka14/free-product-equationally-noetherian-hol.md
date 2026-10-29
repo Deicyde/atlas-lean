@@ -19,7 +19,7 @@ https://arxiv.org/abs/1012.0044.
 
 ## Depends on
 
-- [Free Product Equationally Noetherian](free-product-equationally-noetherian.md)
+- [Kourovka Problem 14.20 (free products of equationally Noetherian groups)](free-product-equationally-noetherian.md)
 
 ## Sources
 

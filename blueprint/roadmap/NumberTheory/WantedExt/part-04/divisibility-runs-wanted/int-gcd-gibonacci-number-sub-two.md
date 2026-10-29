@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.int_gcd_gibonacciNumber_sub_two
 ---
 
-# Int gcd gibonacci Number sub two
+# Gibonacci terms two apart have the gcd of the initial values
 
-With `d = gcd(x, y)`, one has `gcd(P_n, P_{n-2}) = d` for all `n ≥ 3`
-(paper indexing; `n ≥ 2` in the 0-based indexing used here).
+**Gibonacci terms two apart have the gcd of the initial values.** Let $x, y$ be integers and
+let $(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$ and $P_1 = y$. For every $n \ge 2$,
+the nonnegative greatest common divisor of $P_n$ and $P_{n-2}$ equals that of $x$ and $y$:
+$\gcd(P_n, P_{n-2}) = \gcd(x, y)$.
+
+The paper indexes the sequence from $1$ and states this for $n \ge 3$.
 
 ## Depends on
 

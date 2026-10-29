@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MaximalHallCompositionFactorsKourovka17Problem92Wanted.maximalHallCompositionFactorsInList
 ---
 
-# Maximal Hall Composition Factors In List
+# Kourovka 17.92, first half: the possible composition factors
 
-Kourovka 17.92 (V. S. Monakhov), first half of the answer: every non-abelian composition factor
-of a finite non-soluble group all of whose maximal subgroups are Hall subgroups is isomorphic to
-`L₂(7)`, `L₂(11)` or `L₅(2)`.
+**Kourovka 17.92, first half: the possible composition factors.** The proposition that every
+non-abelian composition factor of a finite non-soluble group all of whose maximal subgroups are
+Hall subgroups is isomorphic to $L_2(7)$, $L_2(11)$ or $L_5(2)$. Here $L_n(q)$ is the projective
+special linear group $\mathrm{PSL}_n(\mathbb{Z}/q\mathbb{Z})$, the quotient of
+$\mathrm{SL}_n(\mathbb{Z}/q\mathbb{Z})$ by its centre.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Composition Factor](is-composition-factor.md)
-- [Is Maximal Hall Nonsoluble](is-maximal-hall-nonsoluble.md)
+- [Composition factor of a group (Kourovka 17.92)](is-composition-factor.md)
+- [Non-soluble groups with Hall maximal subgroups](is-maximal-hall-nonsoluble.md)
 
 ## Sources
 

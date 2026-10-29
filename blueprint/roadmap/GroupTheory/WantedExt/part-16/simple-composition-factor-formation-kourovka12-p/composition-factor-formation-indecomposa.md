@@ -5,11 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimpleCompositionFactorFormationKourovka12Problem97Wanted.compositionFactorFormationIndecomposable
 ---
 
-# Composition Factor Formation Indecomposable
+# Kourovka Problem 12.97 (Shemetkov)
 
-Kourovka 12.97 (L. A. Shemetkov): for a non-abelian finite simple group `T`, the formation
-`𝔉_T` of finite groups all of whose composition factors are isomorphic to `T` is not the
-(Gaschütz) product `𝔐ℌ = {G : G^ℌ ∈ 𝔐}` of two non-trivial proper subformations `𝔐, ℌ`.
+**Kourovka Problem 12.97 (Shemetkov).** For a group $T$, write $\mathfrak{F}_T$ for the class
+of groups having a subnormal series all of whose factors are isomorphic to $T$. This is the
+proposition that, for every finite non-abelian simple group $T$ and all formations $\mathfrak{M}$
+and $\mathfrak{H}$ whose finite members lie in $\mathfrak{F}_T$, each containing a nontrivial
+finite group and each missing some finite group of $\mathfrak{F}_T$, it is not the case that every
+finite group $G$ satisfies: $G \in \mathfrak{F}_T$ if and only if the $\mathfrak{H}$-residual
+$G^{\mathfrak{H}}$ of $G$ lies in $\mathfrak{M}$. In other words, $\mathfrak{F}_T$ is not the
+Gaschütz product $\mathfrak{M}\mathfrak{H} = \{G : G^{\mathfrak{H}} \in \mathfrak{M}\}$ of two
+nontrivial proper subformations.
 
 ## Depends on
 
@@ -17,12 +23,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [All Composition Factors Iso](all-composition-factors-iso.md)
-- [Group Class](group-class.md)
-- [Is Formation](is-formation.md)
+- [Groups with a subnormal series whose factors are all isomorphic to a given group](all-composition-factors-iso.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.97)](group-class.md)
+- [Formations of finite groups (Kourovka 12.97)](is-formation.md)
 - [Is Proper In](is-proper-in.md)
-- [Nontrivial Class](nontrivial-class.md)
-- [Residual](residual.md)
+- [Classes containing a nontrivial finite group](nontrivial-class.md)
+- [The residual of a group with respect to a class (Kourovka 12.97)](residual.md)
 
 ## Sources
 

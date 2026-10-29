@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UniqueProductNotLeftOrderableKourovka15Problem49Wanted.uniqueProductGroupNotLeftOrderable
 ---
 
-# Unique Product Group Not Left Orderable
+# Kourovka Problem 15.49 (unique product groups and left orders)
 
-Kourovka 15.49 (P. Linnell): there is a unique product group that is not left-orderable.
-Mathlib's `UniqueProds G` says that for all finite nonempty `X, Y ⊆ G` some product `x y` has
-exactly one such representation.
+**Kourovka Problem 15.49 (unique product groups and left orders).** The statement, asked by
+P. Linnell, that there exists a group $G$ with unique products that is not left-orderable. Here $G$
+has unique products if for all finite nonempty subsets $X, Y \subseteq G$ there are $x_0 \in X$ and
+$y_0 \in Y$ such that $(x_0, y_0)$ is the only pair $(x, y) \in X \times Y$ with $xy = x_0 y_0$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Left Orderable](is-left-orderable.md)
+- [Left-orderable groups](is-left-orderable.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BlockLatticeVarietyKourovka11Problem93Wanted.blockSup
 ---
 
-# Block Sup
+# Join in the block lattice
 
-The join of `X` and `Y` in the block lattice: the intersection of all blocks containing
-`X ∪ Y`, which is a block since blocks are closed under intersections and `G` is a block.
+**Join in the block lattice.** For subsets $X$ and $Y$ of a group $G$, their block join is the
+intersection of all blocks of $G$ that contain $X \cup Y$. Since blocks are closed under
+intersections and $G$ itself is a block, this is the smallest block containing $X \cup Y$; for
+blocks $X$ and $Y$ it is their join in the block lattice of $G$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Block](is-block.md)
+- [Blocks of a group](is-block.md)
 
 ## Sources
 

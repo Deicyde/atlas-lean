@@ -4,6 +4,6 @@ navigation: module
 
 # Torsion Quotient Finitely Presented Kourovka19 Problem24
 
-- [Torsion Closure](torsion-closure.md)
-- [Exists Finitely Presented Torsion Quotient Not Finitely Presented](exists-finitely-presented-torsion-quotie.md)
-- [Exists Finitely Presented Torsion Quotient Not Finitely Presented holds](exists-finitely-presented-torsion-quotie-2.md)
+- [Torsion closure](torsion-closure.md)
+- [Kourovka Problem 19.24 (torsion quotients of finitely presented groups)](exists-finitely-presented-torsion-quotie.md)
+- [Torsion quotients of finitely presented groups need not be finitely presented](exists-finitely-presented-torsion-quotie-2.md)

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BraidGroupEndomorphismsKourovka14Problem102Wanted.braidTorsionFreeNonabelianProperQuotient
 ---
 
-# Braid Torsion Free Nonabelian Proper Quotient
+# Kourovka Problem 14.102(c): torsion-free quotients of braid groups
 
-Kourovka 14.102(c) (V. Lin; V. Shpilrain): for every `n > 4`, `Bₙ` has a proper (`N ≠ 1`)
-non-abelian torsion-free quotient `Bₙ / N`.
+**Kourovka Problem 14.102(c): torsion-free quotients of braid groups.** The statement that for
+every $n > 4$, the braid group $B_n$ on $n$ strands has a nontrivial normal subgroup $N$ such that
+the quotient $B_n / N$ is non-abelian and torsion-free (no element other than the identity has
+finite order). Posed by V. Lin and V. Shpilrain.
 
 ## Depends on
 

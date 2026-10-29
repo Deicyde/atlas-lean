@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Frame Relations](frame-relations.md)
+- [Relation symbols of the frame language](frame-relations.md)
 
 ## Sources
 

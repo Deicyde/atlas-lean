@@ -5,7 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapTraceRangeKourovka16Problem69Wanted.gl2TraceRangeContainsRay_refuted
 ---
 
-# Gl2 Trace Range Contains Ray refuted
+# Mycielski's trace-range question for $\mathrm{GL}(2, \mathbb{R})$ has a negative answer
+
+**Mycielski's trace-range question for $\mathrm{GL}(2, \mathbb{R})$ has a negative answer.**
+There is a nontrivial element $w$ of the free group on two generators $x, y$ such that some real
+number $t \ge -2$ is not the trace of $w(A, B)$ for any $A, B \in \mathrm{GL}(2, \mathbb{R})$, where
+$w(A, B)$ is obtained by substituting $A$ for $x$ and $B$ for $y$.
 
 Resolved false: the Kourovka Notebook (21st issue) answers 16.69(a), posed for `x, y ∈ GL(2, ℝ)`,
 "No, it need not" (AI solution confirmed by A. Thom), citing the Nilradical note, whose Theorem 2
@@ -21,7 +26,7 @@ https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/nilradical-
 
 ## Depends on
 
-- [Gl2 Trace Range Contains Ray](gl2-trace-range-contains-ray.md)
+- [Mycielski's trace-range property for $\mathrm{GL}(2, \mathbb{R})$ (Kourovka 16.69(a))](gl2-trace-range-contains-ray.md)
 
 ## Sources
 

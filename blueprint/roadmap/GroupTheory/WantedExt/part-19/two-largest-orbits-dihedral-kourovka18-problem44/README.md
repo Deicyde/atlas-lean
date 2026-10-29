@@ -4,5 +4,5 @@ navigation: module
 
 # Two Largest Orbits Dihedral Kourovka18 Problem44
 
-- [Two Largest Orbits Implies Dihedral Eight](two-largest-orbits-implies-dihedral-eigh.md)
-- [Two Largest Orbits Implies Dihedral Eight holds](two-largest-orbits-implies-dihedral-eigh-2.md)
+- [Keller's question on two largest orbits and the dihedral group of order eight (Kourovka Problem 18.44)](two-largest-orbits-implies-dihedral-eigh.md)
+- [Two largest orbits force the dihedral group of order eight (Kourovka 18.44)](two-largest-orbits-implies-dihedral-eigh-2.md)

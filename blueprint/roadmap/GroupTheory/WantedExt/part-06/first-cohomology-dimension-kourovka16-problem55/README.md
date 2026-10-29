@@ -4,6 +4,6 @@ navigation: module
 
 # First Cohomology Dimension Kourovka16 Problem55
 
-- [Is Absolutely Irreducible](is-absolutely-irreducible.md)
-- [First Cohomology Dim At Most Two](first-cohomology-dim-at-most-two.md)
-- [First Cohomology Dim At Most Two refuted](first-cohomology-dim-at-most-two-refuted.md)
+- [Absolutely irreducible representations](is-absolutely-irreducible.md)
+- [Mazurov's question on first cohomology (Kourovka 16.55)](first-cohomology-dim-at-most-two.md)
+- [Mazurov's question on first cohomology (Kourovka 16.55) has a negative answer](first-cohomology-dim-at-most-two-refuted.md)

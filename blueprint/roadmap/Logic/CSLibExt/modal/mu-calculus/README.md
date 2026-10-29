@@ -4,39 +4,39 @@ navigation: module
 
 # Mu Calculus
 
-- [Mu Formula](mu-formula.md)
-- [Neg](neg.md)
-- [Neg neg](neg-neg.md)
-- [Extend Env](extend-env.md)
+- [Formulas of the modal μ-calculus](mu-formula.md)
+- [Negation of μ-calculus formulas](neg.md)
+- [Meta-level negation is an involution](neg-neg.md)
+- [Extending an environment under a binder](extend-env.md)
 
 ## Satisfaction
 
-- [Sat](sat.md)
-- [Sat mono env](sat-mono-env.md)
-- [Sat mono extend](sat-mono-extend.md)
-- [Mu pre fixed](mu-pre-fixed.md)
-- [Mu le fixed](mu-le-fixed.md)
+- [Satisfaction in the modal μ-calculus](sat.md)
+- [Satisfaction is monotone in the environment](sat-mono-env.md)
+- [Monotonicity in the bound variable](sat-mono-extend.md)
+- [The least fixed point is a pre-fixed point](mu-pre-fixed.md)
+- [The least fixed point is contained in its unfolding](mu-le-fixed.md)
 - [The μ unfolding](sat-mu-unfold.md)
-- [Nu post fixed](nu-post-fixed.md)
-- [Nu le post fixed](nu-le-post-fixed.md)
+- [The greatest fixed point is a post-fixed point](nu-post-fixed.md)
+- [The greatest fixed point is a pre-fixed point](nu-le-post-fixed.md)
 - [The ν unfolding](sat-nu-unfold.md)
 - [Park induction](mu-induction.md)
-- [Coinduction](nu-coinduction.md)
-- [Mu Op](mu-op.md)
-- [Sat mu eq lfp](sat-mu-eq-lfp.md)
-- [Sat nu eq gfp](sat-nu-eq-gfp.md)
+- [Coinduction for the greatest fixed point](nu-coinduction.md)
+- [The fixed-point operator of a formula](mu-op.md)
+- [The μ formula denotes the least fixed point](sat-mu-eq-lfp.md)
+- [The ν formula denotes the greatest fixed point](sat-nu-eq-gfp.md)
 
 ## Duality
 
-- [Extend Env compl](extend-env-compl.md)
-- [Compl compl](compl-compl.md)
+- [Complementing an extended environment](extend-env-compl.md)
+- [Double complement of a predicate](compl-compl.md)
 - [Duality](sat-neg.md)
 
 ## Reachability
 
-- [EF](ef.md)
-- [AG](ag.md)
-- [EF iff reachable](ef-iff-reachable.md)
-- [AG iff forall reachable](ag-iff-forall-reachable.md)
-- [Nested binders shift](mu-mu-var-one-eq-bot.md)
-- [Nested binders shift](nu-nu-var-one-eq-top.md)
+- [The μ-calculus formula $\mathsf{EF}\,p$](ef.md)
+- [The μ-calculus formula $\mathsf{AG}\,p$](ag.md)
+- [$\mathsf{EF}$ is reachability](ef-iff-reachable.md)
+- [$\mathsf{AG}$ is universal reachability](ag-iff-forall-reachable.md)
+- [The formula $\mu X.\, \mu Y.\, X$ is false everywhere](mu-mu-var-one-eq-bot.md)
+- [The formula $\nu X.\, \nu Y.\, X$ is true everywhere](nu-nu-var-one-eq-top.md)

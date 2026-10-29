@@ -4,8 +4,8 @@ navigation: module
 
 # Cohomological Dimension Just Non Polycyclic Kourovka12 Problem41
 
-- [Base Relators](base-relators.md)
-- [Twist Relators](twist-relators.md)
-- [Kropholler Group](kropholler-group.md)
-- [Rational Cohomological Dimension Eq Four](rational-cohomological-dimension-eq-four.md)
-- [Rational Cohomological Dimension Eq Four holds](rational-cohomological-dimension-eq-four-2.md)
+- [Base relators of the Kropholler group](base-relators.md)
+- [Twist relators of the Kropholler group](twist-relators.md)
+- [The Kropholler group](kropholler-group.md)
+- [Rational cohomological dimension 4 of the Kropholler group (Kourovka 12.41)](rational-cohomological-dimension-eq-four.md)
+- [The Kropholler group has rational cohomological dimension 4](rational-cohomological-dimension-eq-four-2.md)

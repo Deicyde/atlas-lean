@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Modal.Deduces.neg_of_insert
 ---
 
-# Neg of insert
+# Negation introduction
 
-Negation introduction: if `φ` and `Γ` entail `⊥`, then `Γ` entails `¬φ`.
+**Negation introduction.** Let $\Lambda$ and $\Gamma$ be sets of modal formulas and $\varphi$ a
+formula. If $\bot$ is a local consequence of the hypotheses $\Gamma \cup \{\varphi\}$ in the normal
+modal logic $\mathrm{K} \oplus \Lambda$, then $\neg\varphi$ is a local consequence of $\Gamma$ in
+$\mathrm{K} \oplus \Lambda$, where $\neg\varphi$ abbreviates $\varphi \to \bot$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
-- [Neg](../kripke/neg.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Proof depends on
 
-- [The deduction theorem](imp-of-insert.md)
+- [The deduction theorem for local modal consequence, forward direction](imp-of-insert.md)
 
 ## Sources
 

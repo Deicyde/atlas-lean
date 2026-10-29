@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.freeGroupHasIsolatedBiOrder
 ---
 
-# Free Group Has Isolated Bi Order
+# Kourovka Problem 12.51 (isolated bi-orders of free groups)
 
-Kourovka 12.51 (S. McCleary), stated for some finite rank `n ≥ 2`: the free group `Fₙ` has a
-finite subset `S` such that exactly one bi-invariant total order of `Fₙ` makes every element of
-`S` positive (an isolated point of the space of bi-orders).
+**Kourovka Problem 12.51 (isolated bi-orders of free groups).** The statement that for some
+natural number $n \ge 2$ there is a finite subset $S$ of the free group $F_n$ on $n$ generators
+such that exactly one bi-invariant strict total order $<$ on $F_n$ (a strict total order such that
+$a < b$ implies $cad < cbd$ for all $a, b, c, d \in F_n$) makes every element of $S$ positive, that
+is, satisfies $1 < s$ for all $s \in S$. Such an order is an isolated point of the space of
+bi-orders of $F_n$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bi Order](is-bi-order.md)
+- [Bi-invariant orders on a group](is-bi-order.md)
 
 ## Sources
 

@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.tribonacciInt_zero
 ---
 
-# Tribonacci Int zero
+# The two-sided Tribonacci sequence at $0$
 
-The normalized two-sided sequence has `T₀ = 0`, the first characteristic
-initial value used by Proposition 1.
+**The two-sided Tribonacci sequence at $0$.** Let $(T_n)_{n \in \mathbb{Z}}$ be the two-sided
+Tribonacci sequence: $T_0 = 0$, $T_1 = T_2 = 1$ and $T_{n+3} = T_{n+2} + T_{n+1} + T_n$ for
+$n \ge 0$, while $T_{-1} = 0$, $T_{-2} = 1$ and $T_{-m-3} = T_{-m} - T_{-m-1} - T_{-m-2}$ for
+$m \ge 0$. Then $T_0 = 0$.
+
+This is the first initial value used by Proposition 1.
 
 ## Depends on
 
-- [Tribonacci Int](tribonacci-int.md)
+- [Two-sided Tribonacci sequence](tribonacci-int.md)
 
 ## Sources
 

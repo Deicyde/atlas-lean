@@ -4,6 +4,6 @@ navigation: module
 
 # Sylow Two Symmetric Rational Kourovka15 Problem25
 
-- [Is Rational Group](is-rational-group.md)
-- [Sylow Two Subgroup Symmetric Rational](sylow-two-subgroup-symmetric-rational.md)
-- [Sylow Two Subgroup Symmetric Rational holds](sylow-two-subgroup-symmetric-rational-ho.md)
+- [Rational group (conjugacy form, Kourovka 15.25)](is-rational-group.md)
+- [Kourovka Problem 15.25 (statement)](sylow-two-subgroup-symmetric-rational.md)
+- [Sylow 2-subgroups of the symmetric groups of degree $2^n$ are rational (Kourovka 15.25)](sylow-two-subgroup-symmetric-rational-ho.md)

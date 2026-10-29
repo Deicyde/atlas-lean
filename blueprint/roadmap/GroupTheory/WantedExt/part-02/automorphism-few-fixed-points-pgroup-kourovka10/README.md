@@ -4,5 +4,5 @@ navigation: module
 
 # Automorphism Few Fixed Points PGroup Kourovka10 Problem68
 
-- [Bounded Index Bounded Class Subgroup](bounded-index-bounded-class-subgroup.md)
-- [Bounded Index Bounded Class Subgroup holds](bounded-index-bounded-class-subgroup-hol.md)
+- [Bounded index and bounded class under a $p$-automorphism (Kourovka 10.68)](bounded-index-bounded-class-subgroup.md)
+- [Medvedev's theorem on automorphisms of order $p$ with $p^m$ fixed points](bounded-index-bounded-class-subgroup-hol.md)

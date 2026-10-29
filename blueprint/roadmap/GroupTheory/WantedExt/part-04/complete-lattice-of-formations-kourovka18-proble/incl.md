@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompleteLatticeOfFormationsKourovka18Problem92Wanted.Incl
 ---
 
-# Incl
+# Inclusion of group classes
 
-Inclusion of classes.
+**Inclusion of group classes.** For classes of groups $\mathfrak{X}$ and $\mathfrak{Y}$, the
+class $\mathfrak{X}$ is included in $\mathfrak{Y}$, written $\mathfrak{X} \subseteq \mathfrak{Y}$,
+if every group that belongs to $\mathfrak{X}$ also belongs to $\mathfrak{Y}$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 18.92)](group-class.md)
 
 ## Sources
 

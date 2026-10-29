@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClosedSubgroupFunctorLatticeWidthKourovka16Problem82Wanted.FunctorLE
 ---
 
-# Functor LE
+# Order on subgroup functors
 
-The order of the lattice `F(X)`: `τ₁ ≤ τ₂` iff `τ₁(G) ⊆ τ₂(G)` for every `G ∈ X`.
+**Order on subgroup functors.** Let $\mathfrak{X}$ be a class of finite groups. For subgroup
+assignments $\tau_1$ and $\tau_2$, $\tau_1 \le \tau_2$ on $\mathfrak{X}$ when
+$\tau_1(G) \subseteq \tau_2(G)$ for every $G \in \mathfrak{X}$. This is the order of the lattice
+$F(\mathfrak{X})$ of closed subgroup functors on $\mathfrak{X}$.
 
 ## Depends on
 
-- [Finite Group Class](finite-group-class.md)
-- [Subgroup Assignment](subgroup-assignment.md)
+- [Classes of finite groups (Kourovka 16.82 setting)](finite-group-class.md)
+- [Subgroup assignments](subgroup-assignment.md)
 
 ## Sources
 

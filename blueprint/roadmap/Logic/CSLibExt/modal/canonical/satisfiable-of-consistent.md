@@ -6,26 +6,31 @@ proof: formalized
 lean: Cslib.Modal.satisfiable_of_consistent
 ---
 
-# Satisfiable of consistent
+# Model existence from the canonical model
 
-Strong completeness, satisfiability form: a set consistent in `K ⊕ Λ` is satisfiable at a world
-of a model in any class `C` that contains the canonical model. (The converse needs every model in
-`C` to validate `Λ`; for K, T, S4 and S5 it is soundness.)
+**Model existence from the canonical model.** Let $\Lambda$ be a set of modal formulas and $C$
+a class of Kripke models whose worlds lie in the universe of the atoms, such that $C$ contains the
+canonical model of $K \oplus \Lambda$ whenever $\bot$ is not a theorem of $K \oplus \Lambda$. Then
+every $(K \oplus \Lambda)$-consistent set $\Gamma$ of formulas is satisfiable in $C$: some model in
+$C$ has a world at which every formula of $\Gamma$ holds.
+
+This is strong completeness in satisfiability form. The converse needs every model in $C$ to
+validate $\Lambda$; for K, T, S4 and S5 it is soundness.
 
 ## Depends on
 
-- [Canonical World](canonical-world.md)
-- [Consistent](consistent.md)
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Canonical Model](canonical-model.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [The canonical model](canonical-model.md)
 
 ## Proof depends on
 
-- [Deduces](../hilbert/deduces.md)
-- [Lindenbaum's lemma](exists-maximal-consistent.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Lindenbaum's lemma for normal modal logics](exists-maximal-consistent.md)
 - [Truth lemma](satisfies-canonical-iff.md)
 
 ## Sources

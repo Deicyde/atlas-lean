@@ -4,7 +4,7 @@ navigation: module
 
 # Free Metabelian Same Distribution Kourovka19 Problem94
 
-- [Free Metabelian](free-metabelian.md)
-- [Same Distribution](same-distribution.md)
-- [Same Distribution Iff Automorphic](same-distribution-iff-automorphic.md)
-- [Same Distribution Iff Automorphic refuted](same-distribution-iff-automorphic-refute.md)
+- [Free metabelian group of rank $n$ (Kourovka 19.94)](free-metabelian.md)
+- [Words with the same distribution](same-distribution.md)
+- [Timoshenko's question on equally distributed elements (Kourovka 19.94)](same-distribution-iff-automorphic.md)
+- [Equally distributed elements need not be automorphic (Kourovka 19.94)](same-distribution-iff-automorphic-refute.md)

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.JustInfiniteIntermediateGrowthBranchKourovka15Problem17Wanted.justInfiniteIntermediateGrowthIsBranch
 ---
 
-# Just Infinite Intermediate Growth Is Branch
+# The branch question for just infinite groups of intermediate growth
 
-Kourovka 15.17 (L. Bartholdi, R. I. Grigorchuk, Z. Šunić): every finitely generated just
-infinite group of intermediate growth is a branch group.
+**The branch question for just infinite groups of intermediate growth.** Kourovka
+Problem 15.17 (L. Bartholdi, R. I. Grigorchuk, Z. Šunić) is the assertion that every finitely
+generated just infinite group of intermediate growth is a branch group.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Intermediate Growth](has-intermediate-growth.md)
-- [Is Branch Group](is-branch-group.md)
-- [Is Just Infinite](is-just-infinite.md)
+- [Groups of intermediate growth](has-intermediate-growth.md)
+- [Branch groups](is-branch-group.md)
+- [Just infinite groups](is-just-infinite.md)
 
 ## Sources
 

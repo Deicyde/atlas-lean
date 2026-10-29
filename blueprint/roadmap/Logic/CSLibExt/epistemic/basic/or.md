@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Epistemic.Formula.or
 ---
 
-# Or
+# Disjunction of epistemic formulas
 
-Disjunction via implication.
+**Disjunction of epistemic formulas.** The disjunction $\varphi \lor \psi$ of epistemic
+formulas $\varphi$ and $\psi$ is the implication $\neg\varphi \to \psi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Epistemic formulas](formula.md)
 
 ## Proof depends on
 
-- [Not](not.md)
+- [Negation of epistemic formulas](not.md)
 
 ## Sources
 

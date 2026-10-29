@@ -4,8 +4,8 @@ navigation: module
 
 # Hyperbolic Power Subgroups Kourovka11 Problem74
 
-- [Power Subgroup](power-subgroup.md)
-- [Power Quotient Infinite](power-quotient-infinite.md)
-- [Power Subgroups Trivial Intersection](power-subgroups-trivial-intersection.md)
-- [Power Quotient Infinite holds](power-quotient-infinite-holds.md)
-- [Power Subgroups Trivial Intersection holds](power-subgroups-trivial-intersection-hol.md)
+- [Power subgroup](power-subgroup.md)
+- [Kourovka Problem 11.74(a) (infinite power quotients of hyperbolic groups)](power-quotient-infinite.md)
+- [Kourovka Problem 11.74(b) (trivial intersection of power subgroups)](power-subgroups-trivial-intersection.md)
+- [Non-elementary hyperbolic groups have infinite power quotients](power-quotient-infinite-holds.md)
+- [Power subgroups of a non-elementary hyperbolic group intersect trivially](power-subgroups-trivial-intersection-hol.md)

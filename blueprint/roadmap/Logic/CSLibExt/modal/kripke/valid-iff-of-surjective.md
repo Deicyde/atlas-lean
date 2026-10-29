@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Modal.BoundedMorphism.valid_iff_of_surjective
 ---
 
-# Valid iff of surjective
+# Surjective bounded morphisms preserve and reflect validity
 
-A surjective bounded morphism reflects and preserves global validity.
+**Surjective bounded morphisms preserve and reflect validity.** Let $M$ and $N$ be Kripke
+models over the same atoms and let $f$ be a bounded morphism from $M$ to $N$ whose map on worlds
+is surjective. Then for every formula $\varphi$, $\varphi$ is globally valid in $M$ if and only
+if $\varphi$ is globally valid in $N$.
 
 ## Depends on
 
-- [Bounded Morphism](bounded-morphism.md)
-- [Formula](formula.md)
+- [Bounded morphism](bounded-morphism.md)
+- [Modal formulas](formula.md)
 - [Kripke Model](kripke-model.md)
-- [Valid](valid.md)
+- [Global validity in a Kripke model](valid.md)
 
 ## Proof depends on
 
-- [Satisfies iff](satisfies-iff.md)
-- [Satisfies](satisfies.md)
+- [Invariance of modal satisfaction under bounded morphisms](satisfies-iff.md)
+- [Satisfaction in a Kripke model](satisfies.md)
 
 ## Sources
 

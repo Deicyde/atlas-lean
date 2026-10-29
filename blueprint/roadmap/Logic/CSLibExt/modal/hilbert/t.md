@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Modal.Axioms.T
 ---
 
-# T
+# Extra axioms of T
 
-T: `□φ → φ`.
+**Extra axioms of T.** The extra axioms of the modal logic T are the formulas
+$\Box\varphi \to \varphi$ (axiom T), for all modal formulas $\varphi$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 

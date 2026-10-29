@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClosedCofinitaryLocallyCompactKourovka13Problem28Wanted.IsCofinitary
 ---
 
-# Is Cofinitary
+# Cofinitary permutation groups
 
-`G` is cofinitary: every non-identity element fixes only finitely many points.
+**Cofinitary permutation groups.** A subgroup $G$ of the group of permutations of a set
+$\Omega$ is cofinitary when every non-identity element of $G$ fixes only finitely many points of
+$\Omega$.
 
 ## Depends on
 

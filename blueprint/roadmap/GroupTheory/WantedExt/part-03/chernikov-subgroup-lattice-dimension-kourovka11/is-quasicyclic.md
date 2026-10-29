@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ChernikovSubgroupLatticeDimensionKourovka11Problem116Wanted.IsQuasicyclic
 ---
 
-# Is Quasicyclic
+# Quasicyclic group
 
-A quasicyclic group (a Prüfer group `C_{p^∞}` for some prime `p`): an infinite abelian group
-all of whose proper subgroups are finite.
+**Quasicyclic group.** A group $Q$ is quasicyclic if it is abelian and infinite and every
+proper subgroup of $Q$ is finite.
+
+These are exactly the Prüfer groups $C_{p^\infty}$ for primes $p$.
 
 ## Depends on
 

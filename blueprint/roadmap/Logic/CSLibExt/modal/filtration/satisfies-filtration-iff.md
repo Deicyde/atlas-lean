@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Modal.satisfies_filtration_iff
 ---
 
-# Filtration lemma
+# Filtration lemma for the smallest filtration
 
-**Filtration lemma** for the smallest filtration: a subformula of `φ` holds at the type of `w`
-iff it holds at `w`.
+**Filtration lemma for the smallest filtration.** Let $M$ be a Kripke model, $\varphi$ a
+modal formula, and for a world $w$ let $[w]$, the type of $w$, be the set of subformulas of
+$\varphi$ true at $w$ in $M$. For every subformula $\psi$ of $\varphi$ and every world $w$ of $M$,
+$\psi$ holds at $[w]$ in the smallest filtration of $M$ through the subformulas of $\varphi$ iff
+$\psi$ holds at $w$ in $M$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [Sub](sub.md)
+- [Modal formulas](../kripke/formula.md)
+- [Subformulas](sub.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Filtration](filtration.md)
-- [Filtration Worlds](filtration-worlds.md)
-- [Sub Type](sub-type.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Smallest filtration of a Kripke model](filtration.md)
+- [Worlds of the filtration](filtration-worlds.md)
+- [Type of a world](sub-type.md)
 
 ## Proof depends on
 
-- [Filtration Rel](filtration-rel.md)
-- [Is Filtration filtration Rel](is-filtration-filtration-rel.md)
+- [Smallest filtration relation](filtration-rel.md)
+- [The smallest filtration is a filtration](is-filtration-filtration-rel.md)
 - [Filtration lemma](satisfies-fin-model-filtration-worlds-if.md)
 
 ## Sources

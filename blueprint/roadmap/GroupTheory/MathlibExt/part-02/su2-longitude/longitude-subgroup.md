@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SU2Longitude.longitudeSubgroup
 ---
 
-# Longitude Subgroup
+# Longitude subgroup
 
-The fixed diagonal longitude subgroup of `SU₂`: the diagonal rotations.
-In the book this is `Long_i`, the longitude at the equator point `i`.
+**Longitude subgroup.** The longitude subgroup of $\mathrm{SU}(2)$ is the subgroup of those
+elements of $\mathrm{SU}(2)$ that are the diagonal rotation through $\theta$ for some real number
+$\theta$.
+
+It is the longitude $\mathrm{Long}_i$ at the equator point $i$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 - [Diagonal rotation](diag-rotation.md)
 - [Diagonal rotations as diagonal matrices](diag-rotation-eq-diagonal.md)
-- [Star diag Rotation](star-diag-rotation.md)
+- [Conjugate transpose of a diagonal rotation](star-diag-rotation.md)
 
 ## Sources
 

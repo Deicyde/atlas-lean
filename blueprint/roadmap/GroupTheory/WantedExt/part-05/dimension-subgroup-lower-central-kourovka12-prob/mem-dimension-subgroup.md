@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DimensionSubgroupLowerCentralKourovka12Problem22Wanted.MemDimensionSubgroup
 ---
 
-# Mem Dimension Subgroup
+# Dimension subgroups
 
-`g` lies in the `n`-th dimension subgroup `D_n(G) = G ∩ (1 + Δⁿ(G))`; `Δⁿ` is the `n`-th power
-of `Δ` (the span of `n`-fold products), the two-sided ideal power.
+**Dimension subgroups.** Let $\Delta(G)$ be the augmentation ideal of the integral group ring
+$\mathbb{Z}G$ of a group $G$, and for $n \in \mathbb{N}$ let $\Delta(G)^n$ be its $n$-th power, the
+$\mathbb{Z}$-span of all products of $n$ elements of $\Delta(G)$. An element $g \in G$ lies in the
+$n$-th dimension subgroup $D_n(G) = G \cap (1 + \Delta(G)^n)$ when $g - 1 \in \Delta(G)^n$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Augmentation Ideal](augmentation-ideal.md)
+- [Augmentation ideal of the integral group ring](augmentation-ideal.md)
 
 ## Sources
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AutomorphismFewFixedPointsPGroupKourovka10Problem68Wanted.boundedIndexBoundedClassSubgroup
 ---
 
-# Bounded Index Bounded Class Subgroup
+# Bounded index and bounded class under a $p$-automorphism (Kourovka 10.68)
 
-Kourovka 10.68 (E. I. Khukhro): there are functions `f(p, m)` and `g(m)` such that every finite
-`p`-group admitting an automorphism of order `p` with exactly `p ^ m` fixed points has a subgroup of
-index at most `f(p, m)` and nilpotency class at most `g(m)` (`γ_{g(m)+1} = 1`).
+**Bounded index and bounded class under a $p$-automorphism (Kourovka 10.68).** The proposition
+that there are functions $f(p, m)$ and $g(m)$ of natural numbers, with natural-number values, such
+that for every prime $p$, every $m \in \mathbb{N}$, every finite $p$-group $G$ and every
+automorphism $\varphi$ of $G$ of order $p$ with exactly $p^m$ fixed points, $G$ has a subgroup $H$
+of index at most $f(p, m)$ and nilpotency class at most $g(m)$, that is, $\gamma_{g(m)+1}(H) = 1$,
+where $\gamma_1(H) = H$ and $\gamma_{i+1}(H) = [\gamma_i(H), H]$.
 
 ## Depends on
 

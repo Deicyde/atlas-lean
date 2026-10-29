@@ -14,28 +14,28 @@ fragment position.
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
 - [Game Position](game-position.md)
-- [No Moves](no-moves.md)
-- [Play From](play-from.md)
-- [Terminal Win](terminal-win.md)
-- [Wins](wins.md)
-- [Play Last](play-last.md)
-- [Wins Strategy](wins-strategy.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Positions with no moves](no-moves.md)
+- [Finite plays consistent with a strategy](play-from.md)
+- [Winner at a terminal position](terminal-win.md)
+- [Backward-induction winning region of the fixpoint-free fragment](wins.md)
+- [Last position of a play](play-last.md)
+- [Wins-guided strategy](wins-strategy.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
-- [Move](move.md)
-- [Owner](owner.md)
-- [Ne nil](ne-nil.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Owner of a game position](owner.md)
+- [Finite plays are nonempty](ne-nil.md)
 - [Player](player.md)
-- [Strategy](strategy.md)
-- [Play Last cons](play-last-cons.md)
-- [Wins Move](wins-move.md)
-- [Wins Move dia](wins-move-dia.md)
-- [Wins Move or](wins-move-or.md)
+- [Verifier strategy](strategy.md)
+- [Prepending to a nonempty play keeps the last position](play-last-cons.md)
+- [Wins-guided move](wins-move.md)
+- [The Wins-guided move at a diamond](wins-move-dia.md)
+- [The Wins-guided move at a disjunction](wins-move-or.md)
 
 ## Sources
 

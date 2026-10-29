@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox_continuous
 ---
 
-# Cutoff Approx continuous
+# Continuity of the cutoff approximants
 
-The cutoff approximant is continuous.
+**Continuity of the cutoff approximants.** Let $a, b \in \mathbb{R}$, let $E$ be a real
+normed space and let $g_0 : \mathbb{R} \to E$ be continuous. Then for every $n \in \mathbb{N}$
+the $n$-th cutoff approximant of $g_0$ with endpoints $a$ and $b$ is continuous.
 
 ## Depends on
 
-- [Cutoff Approx](cutoff-approx.md)
+- [Cutoff approximants](cutoff-approx.md)
 
 ## Proof depends on
 
-- [Vanishing Cutoff](vanishing-cutoff.md)
-- [Vanishing Cutoff continuous](vanishing-cutoff-continuous.md)
+- [Vanishing cutoff factor](vanishing-cutoff.md)
+- [Continuity of the vanishing cutoff factor](vanishing-cutoff-continuous.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ claim of failure for n = 4 was erroneous).
 
 ## Depends on
 
-- [Extension Of PSLHas New Element Order](extension-of-pslhas-new-element-order.md)
+- [Kourovka 14.60: new element orders in extensions of projective special linear groups](extension-of-pslhas-new-element-order.md)
 
 ## Sources
 

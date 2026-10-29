@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BranchGroupShared.IsBranchGroup
 ---
 
-# Is Branch Group
+# Branch group
 
-`G` is a branch group: it admits a faithful, level-transitive branch action on a locally finite
-rooted tree in which every vertex has at least two children.
+**Branch group.** A group $G$ is a branch group when there exist a rooted tree $T$ (locally
+finite, with every vertex having at least two children) and a faithful level-transitive action of
+$G$ on $T$ by tree automorphisms that is a branch action.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Level Transitive Faithful Action](level-transitive-faithful-action.md)
-- [Is Branch Action](is-branch-action.md)
-- [Rooted Tree](rooted-tree.md)
+- [Branch action](is-branch-action.md)
+- [Rooted tree given by levels](rooted-tree.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionQuotientFinitelyPresentedKourovka19Problem24Wanted.existsFinitelyPresentedTorsionQuotientNotFinitelyPresented
 ---
 
-# Exists Finitely Presented Torsion Quotient Not Finitely Presented
+# Kourovka Problem 19.24 (torsion quotients of finitely presented groups)
 
-Kourovka 19.24 (M. Chiodo, R. Vyas): there is a finitely presented group `G` such that
-`G / Tor(G)` is not finitely presented.
+**Kourovka Problem 19.24 (torsion quotients of finitely presented groups).** The statement,
+asked by M. Chiodo and R. Vyas, that there exists a finitely presented group $G$ such that
+$G / \mathrm{Tor}(G)$ is not finitely presented, where $\mathrm{Tor}(G)$ is the normal closure of
+the set of elements of finite order of $G$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Torsion Closure](torsion-closure.md)
+- [Torsion closure](torsion-closure.md)
 
 ## Sources
 

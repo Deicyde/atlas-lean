@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.LTL.Word.Satisfies.release_iff
 ---
 
-# Release iff
+# Semantics of release
 
-`φ R ψ`: at every position `ψ` holds, unless `φ` already held at an earlier position.
+**Semantics of release.** For a valuation of atoms on letters, an ω-word $w$ and LTL formulas
+$\varphi$ and $\psi$, $w$ satisfies $\varphi \mathbin{\mathsf{R}} \psi$ ($\varphi$ releases $\psi$)
+if and only if for every position $k$, either $\psi$ holds at position $k$ of $w$ or $\varphi$
+holds at some position $j < k$ of $w$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Release](../syntax/release.md)
-- [Satisfies](satisfies.md)
-- [Satisfies At](satisfies-at.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [The release operator of LTL](../syntax/release.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
+- [Satisfaction at a position](satisfies-at.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Modal.Formula.dia
 ---
 
-# Dia
+# The possibility operator
 
-Possibility as the dual of necessity.
+**The possibility operator.** For a modal formula $\varphi$, the formula $\Diamond\varphi$
+("possibly $\varphi$") is $\neg\Box\neg\varphi$, where $\neg\chi$ stands for $\chi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Proof depends on
 
-- [Neg](neg.md)
+- [Negation of modal formulas](neg.md)
 
 ## Sources
 

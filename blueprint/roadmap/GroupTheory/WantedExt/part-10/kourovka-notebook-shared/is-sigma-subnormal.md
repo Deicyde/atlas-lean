@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.KourovkaNotebookShared.IsSigmaSubnormal
 ---
 
-# Is Sigma Subnormal
+# $\sigma$-subnormal subgroups
 
-`A` is `σ`-subnormal in `G`: there is a chain `A = A₀ ≤ A₁ ≤ ⋯ ≤ Aₙ = G` such that for every
-`i` either `Aᵢ` is normal in `Aᵢ₊₁` or `Aᵢ₊₁ / (Aᵢ)_{Aᵢ₊₁}` is `σ`-primary, where `(Aᵢ)_{Aᵢ₊₁}` is
-the normal core of `Aᵢ` in `Aᵢ₊₁` (the order of that quotient is the index of the core).
+**$\sigma$-subnormal subgroups.** For a family $\sigma = (\sigma_i)_{i \in I}$ of sets of
+natural numbers, a subgroup $A$ of a group $G$ is $\sigma$-subnormal in $G$ if there is a chain of
+subgroups $A = A_0 \le A_1 \le \cdots \le A_n = G$ such that for every $i < n$ either $A_i$ is
+normal in $A_{i+1}$, or the index in $A_{i+1}$ of the normal core of $A_i$ in $A_{i+1}$ is
+$\sigma$-primary (an infinite index counts as $0$).
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sigma Primary](is-sigma-primary.md)
+- [$\sigma$-primary numbers](is-sigma-primary.md)
 
 ## Sources
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Logic.FOL.Proposition.embed
 ---
 
-# Embed
+# Embedding propositions as first-order sentences
 
-Embed a proposition as a sentence: atoms become nullary relations,
-`∧`/`∨` become `⊓`/`⊔`, and `⟹` becomes `.imp`.
+**Embedding propositions as first-order sentences.** The translation of propositions over a
+type of atoms into sentences of the first-order language of propositional atoms, defined by
+recursion: an atom $a$ becomes the atomic sentence given by the nullary relation symbol of $a$,
+and $A \wedge B$, $A \vee B$ and $A \to B$ become the conjunction, the disjunction and the
+implication of the translations of $A$ and $B$.
 
 ## Depends on
 
-- [Prop Language](prop-language.md)
+- [First-order language of propositional atoms](prop-language.md)
 
 ## Proof depends on
 
-- [Prop Relations](prop-relations.md)
+- [Relation symbols of the propositional language](prop-relations.md)
 
 ## Sources
 

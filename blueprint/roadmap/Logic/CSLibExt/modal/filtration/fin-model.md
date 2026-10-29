@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Modal.finModel
 ---
 
-# Fin Model
+# Finite Kripke model on sets of formulas
 
-The Kripke model on a nonempty finite set `U` of sets of formulas, with relation `R` and an atom
-true at `s` iff it belongs to `s`.
+**Finite Kripke model on sets of formulas.** Let $U$ be a nonempty finite set of finite sets of
+formulas and $R$ a finite set of pairs of finite sets of formulas. The Kripke model on $U$ with
+relation $R$ has the elements of $U$ as worlds, a world $s$ sees a world $t$ iff $(s, t) \in R$,
+and an atom $p$ is true at $s$ iff $p \in s$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
 
 ## Sources

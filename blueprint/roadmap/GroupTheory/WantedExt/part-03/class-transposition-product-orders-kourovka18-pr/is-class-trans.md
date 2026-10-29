@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassTranspositionProductOrdersKourovka18Problem48Wanted.IsClassTrans
 ---
 
-# Is Class Trans
+# Class transposition of two residue classes
 
-`σ` is the class transposition `τ_{r₁(m₁), r₂(m₂)}` (Kourovka 17.57): for `0 ≤ rᵢ < mᵢ` and
-disjoint residue classes `r₁(m₁)`, `r₂(m₂)`, it interchanges `r₁ + k m₁` and `r₂ + k m₂` for every
-integer `k` and fixes everything else.
+**Class transposition of two residue classes.** For integers $r_1, m_1, r_2, m_2$, write
+$r_1(m_1) = r_1 + m_1\mathbb{Z}$ and $r_2(m_2) = r_2 + m_2\mathbb{Z}$ for the residue classes. A
+permutation $\sigma$ of $\mathbb{Z}$ is the class transposition $\tau_{r_1(m_1), r_2(m_2)}$ when
+$0 \le r_1 < m_1$ and $0 \le r_2 < m_2$, the residue classes $r_1(m_1)$ and $r_2(m_2)$ are
+disjoint, $\sigma$ interchanges $r_1 + k m_1$ and $r_2 + k m_2$ for every integer $k$, and
+$\sigma$ fixes every integer outside $r_1(m_1) \cup r_2(m_2)$.
+
+This is the definition of class transpositions in Kourovka Problem 17.57.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Res Class](res-class.md)
+- [Residue class](res-class.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RightEngelPowerUpperCentralKourovka17Problem12Wanted.IsRightEngel
 ---
 
-# Is Right Engel
+# Right Engel element
 
-`a` is a right `n`-Engel element of `G`: `[a, x, …, x] = 1` (`n` copies of `x`) for every
-`x`, where `[y, x] = y⁻¹ x⁻¹ y x` and the commutator is left-normed.
+**Right Engel element.** For a natural number $n$, an element $a$ of a group $G$ is a right
+$n$-Engel element when $[a, {}_n x] = 1$ for every $x \in G$, where $[y, x] = y^{-1} x^{-1} y x$
+and $[a, {}_n x] = [\dots[[a, x], x], \dots, x]$ is the left-normed commutator with $n$ copies of
+$x$ (so $[a, {}_0 x] = a$).
 
 ## Depends on
 

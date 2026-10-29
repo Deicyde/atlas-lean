@@ -6,19 +6,24 @@ proof: formalized
 lean: Cslib.Modal.realize_standardTranslation
 ---
 
-# Realize standard Translation
+# Correctness of the standard translation
 
-The standard translation is correct: it holds at a world iff the modal formula holds
-there.
+**Correctness of the standard translation.** Let $M$ be a Kripke model with set of worlds
+$W$, viewed as a structure for the modal language. For every $n$, every term $t$ of the modal
+language in the variables $x_0, \dots, x_{n-1}$, every modal formula $\varphi$ and every
+assignment of worlds in $W$ to $x_0, \dots, x_{n-1}$, the standard translation of $\varphi$
+with $n$ variables in scope and current-world term $t$ holds in $M$ under this assignment if
+and only if $\varphi$ is satisfied in $M$ at the world that $t$ denotes under the
+assignment.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Kripke Structure](kripke-structure.md)
-- [Modal Language](modal-language.md)
-- [Standard Translation](standard-translation.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [A Kripke model as a first-order structure](kripke-structure.md)
+- [The first-order modal language](modal-language.md)
+- [Standard translation](standard-translation.md)
 
 ## Proof depends on
 

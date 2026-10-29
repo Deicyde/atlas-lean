@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.IsLocallyFinite
 ---
 
-# Is Locally Finite
+# Locally finite group, via finite subsets
 
-`G` is locally finite: every finitely generated subgroup is finite.
+**Locally finite group, via finite subsets.** A group $G$ is locally finite when every finite
+subset $S \subseteq G$ generates a finite subgroup; equivalently, every finitely generated subgroup
+of $G$ is finite.
 
 ## Depends on
 

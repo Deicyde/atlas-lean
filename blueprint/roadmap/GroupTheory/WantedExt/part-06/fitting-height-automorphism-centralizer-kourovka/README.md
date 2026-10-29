@@ -4,5 +4,5 @@ navigation: module
 
 # Fitting Height Automorphism Centralizer Kourovka19 Problem43
 
-- [Fitting Height Bounded By Order And Centralizer](fitting-height-bounded-by-order-and-cent.md)
-- [Fitting Height Bounded By Order And Centralizer holds](fitting-height-bounded-by-order-and-cent-2.md)
+- [Kourovka Problem 19.43: Fitting height, automorphism order and centralizer size](fitting-height-bounded-by-order-and-cent.md)
+- [Fitting height is bounded by the order of an automorphism and its centralizer](fitting-height-bounded-by-order-and-cent-2.md)

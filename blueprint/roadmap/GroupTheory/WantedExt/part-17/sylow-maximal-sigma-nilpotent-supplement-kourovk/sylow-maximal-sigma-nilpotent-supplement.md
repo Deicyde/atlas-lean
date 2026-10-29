@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SylowMaximalSigmaNilpotentSupplementKourovka19Problem88Wanted.sylowMaximalSigmaNilpotentSupplement
 ---
 
-# Sylow Maximal Sigma Nilpotent Supplement
+# Kourovka Problem 19.88 (statement)
 
-Kourovka 19.88 (A. N. Skiba): for every partition `σ` of the primes, if for every Sylow
-subgroup `P` of a finite group `G` and every maximal subgroup `V` of `P` there is a `σ`-nilpotent
-subgroup `T` with `V T = G`, then `G` is `σ`-nilpotent.
+**Kourovka Problem 19.88 (statement).** The statement that for every partition $\sigma$ of the
+set of all primes and every finite group $G$: if for every prime $p$, every Sylow $p$-subgroup $P$
+of $G$ and every maximal subgroup $V$ of $P$ there is a $\sigma$-nilpotent subgroup $T$ of $G$ with
+$VT = G$, that is, every element of $G$ is a product $vt$ with $v \in V$ and $t \in T$, then $G$ is
+$\sigma$-nilpotent. Here a partition of the primes is a family of nonempty, pairwise disjoint sets
+of primes whose union is the set of all primes, and a group is $\sigma$-nilpotent when it is the
+internal direct product of finitely many normal subgroups, each of whose order has all its prime
+divisors in a single block of $\sigma$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime Partition](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
-- [Is Sigma Nilpotent](../../part-10/kourovka-notebook-shared/is-sigma-nilpotent.md)
+- [Partitions of the primes](../../part-10/kourovka-notebook-shared/is-prime-partition.md)
+- [$\sigma$-nilpotent groups](../../part-10/kourovka-notebook-shared/is-sigma-nilpotent.md)
 
 ## Sources
 

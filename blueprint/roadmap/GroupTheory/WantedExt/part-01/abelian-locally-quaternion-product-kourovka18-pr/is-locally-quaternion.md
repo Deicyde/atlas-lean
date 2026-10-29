@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbelianLocallyQuaternionProductKourovka18Problem95Wanted.IsLocallyQuaternion
 ---
 
-# Is Locally Quaternion
+# Locally quaternion subgroup
 
-`B` is locally quaternion: the union of a strictly increasing chain of finite generalized
-quaternion groups `Q_{2^{k+2}}` (`QuaternionGroup (2 ^ k)`, `k ≥ 1`, of order `2^{k+2} ≥ 8`); in
-particular `B` is infinite.
+**Locally quaternion subgroup.** A subgroup $B$ of a group $G$ is locally quaternion if there
+is a strictly increasing sequence $C_0 < C_1 < C_2 < \cdots$ of subgroups of $G$, each isomorphic
+to a generalized quaternion group $Q_{2^{k+2}}$ of order $2^{k+2}$ for some $k \ge 1$, whose
+supremum (for a chain, the union) is $B$. In particular $B$ is infinite.
 
 ## Depends on
 

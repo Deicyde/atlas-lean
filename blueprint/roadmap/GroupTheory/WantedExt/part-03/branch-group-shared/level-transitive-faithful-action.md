@@ -12,7 +12,7 @@ every level.
 
 ## Depends on
 
-- [Rooted Tree](rooted-tree.md)
+- [Rooted tree given by levels](rooted-tree.md)
 
 ## Sources
 

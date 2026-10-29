@@ -5,11 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ReducedIncidenceAlgebraDomainKourovka13Problem29Wanted.invariantIncidenceAlgebraIsDomain
 ---
 
-# Invariant Incidence Algebra Is Domain
+# Cameron's conjecture on invariant incidence algebras (Kourovka 13.29)
 
-Kourovka 13.29 (P. J. Cameron): if a permutation group `G` on an infinite set `Ω` has no
-finite orbits, then the algebra `A^G` of `G`-invariants of the reduced incidence algebra of finite
-subsets of `Ω` is an integral domain (it has no zero divisors).
+**Cameron's conjecture on invariant incidence algebras (Kourovka 13.29).** The statement that
+for every infinite set $\Omega$ and every group $G$ of permutations of $\Omega$ all of whose orbits
+are infinite, the following holds: if $f$ and $g$ are nonzero functions from the finite subsets of
+$\Omega$ to $\mathbb{Q}$ that are $G$-invariant ($f(\sigma(X)) = f(X)$ for all $\sigma \in G$ and
+all finite $X$, and likewise for $g$) and that each vanish on all subsets of size larger than some
+bound, then their product $fg$ in the reduced incidence algebra, given by
+$(fg)(X) = \sum_{Y \subseteq X} f(Y)\, g(X \setminus Y)$, is not identically zero. In other words,
+the algebra $A^G$ of $G$-invariant elements of the reduced incidence algebra $A$ has no zero
+divisors.
 
 ## Depends on
 
@@ -17,9 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is In A](is-in-a.md)
-- [Is Invariant](is-invariant.md)
-- [Inc Mul](inc-mul.md)
+- [Elements of the reduced incidence algebra](is-in-a.md)
+- [Invariant functions on finite subsets](is-invariant.md)
+- [Product of the reduced incidence algebra](inc-mul.md)
 
 ## Sources
 

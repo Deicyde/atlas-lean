@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Modal.Deduces.bot_of_neg
 ---
 
-# Bot of neg
+# Contradiction yields falsity
 
-From `φ` and `¬φ`, derive `⊥`.
+**Contradiction yields falsity.** Let $\Lambda$ and $\Gamma$ be sets of modal formulas and let
+$\varphi$ be a modal formula. If both $\varphi$ and its negation $\neg\varphi$ are local
+consequences of the hypotheses $\Gamma$ in the normal modal logic $\mathbf{K} \oplus \Lambda$, then
+so is $\bot$.
 
 ## Depends on
 
-- [Deduces](deduces.md)
-- [Formula](../kripke/formula.md)
-- [Neg](../kripke/neg.md)
+- [Local consequence in a normal modal logic](deduces.md)
+- [Modal formulas](../kripke/formula.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Sources
 

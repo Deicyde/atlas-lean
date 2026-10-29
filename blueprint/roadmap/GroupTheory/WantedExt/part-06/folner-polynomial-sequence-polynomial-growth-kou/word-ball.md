@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.wordBall
 ---
 
-# Word Ball
+# Ball in the word metric
 
-The ball of radius `n` for the finite generating set `S`: the products of at most `n` elements
-of `S ∪ S⁻¹`.
+**Ball in the word metric.** For a finite subset $S$ of a group $\Gamma$ and a natural number
+$n$, the ball $B_S(n)$ of radius $n$ is the set of products of at most $n$ elements of
+$S \cup S^{-1}$, the empty product $1$ included.
 
 ## Depends on
 

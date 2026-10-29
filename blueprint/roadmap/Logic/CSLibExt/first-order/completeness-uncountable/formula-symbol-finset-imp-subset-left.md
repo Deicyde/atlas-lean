@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Logic.FOL.formulaSymbolFinset_imp_subset_left
 ---
 
-# Formula Symbol Finset imp subset left
+# Symbols of the antecedent occur in an implication
 
-The symbols of the antecedent occur in the implication. Source: D. van Dalen, *Logic and
-Structure*, 5th ed., Springer 2013, §3.1.
+**Symbols of the antecedent occur in an implication.** For bounded formulas $\varphi$ and
+$\psi$ of a first-order language $L$ with free variables in $\alpha$ and $n$ bound variables,
+every symbol occurring in $\varphi$ occurs in $\varphi \to \psi$.
 
 ## Depends on
 
-- [Formula Symbol Finset](formula-symbol-finset.md)
+- [Finite set of symbols of a formula](formula-symbol-finset.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- D. van Dalen, *Logic and Structure*, 5th ed., Springer 2013, §3.1.

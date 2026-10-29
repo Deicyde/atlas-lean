@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.LTL.Word.language
 ---
 
-# Language
+# Language of an LTL formula
 
-The ω-language of an LTL formula: the words satisfying it.
+**Language of an LTL formula.** Given a valuation $v$ of atoms on letters, the ω-language of
+an LTL formula $\varphi$ is the set of ω-words that satisfy $\varphi$ under $v$.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Sources
 

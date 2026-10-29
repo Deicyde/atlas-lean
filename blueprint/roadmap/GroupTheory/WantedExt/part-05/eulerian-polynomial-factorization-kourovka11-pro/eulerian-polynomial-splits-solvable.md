@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EulerianPolynomialFactorizationKourovka11Problem104Wanted.eulerianPolynomialSplitsSolvable
 ---
 
-# Eulerian Polynomial Splits Solvable
+# Kourovka Problem 11.104(a) (Eulerian polynomials and solvability, G. E. Wall)
 
-Kourovka 11.104(a) (G. E. Wall): a finite group whose Eulerian polynomial is a product of
-polynomials each in a single variable `x_p` (one for each prime in a finite set) is solvable.
+**Kourovka Problem 11.104(a) (Eulerian polynomials and solvability, G. E. Wall).** This is the
+statement that for every finite group $G$ and every Eulerian function $\varphi$ of $G$, with values
+in the integer polynomial ring $\mathbb{Z}[x_0, x_1, \dots]$: if there are a finite set $S$ of
+primes and, for each $q \in S$, an integer polynomial $P_q$ involving no variable other than $x_q$,
+such that the Eulerian polynomial $\varphi(G)$ equals $\prod_{q \in S} P_q$, then $G$ is
+solvable.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Eulerian Function](is-eulerian-function.md)
+- [Eulerian function of a group (G. E. Wall)](is-eulerian-function.md)
 
 ## Sources
 

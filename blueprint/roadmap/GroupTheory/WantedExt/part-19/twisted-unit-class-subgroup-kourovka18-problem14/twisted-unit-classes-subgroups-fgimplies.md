@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwistedUnitClassSubgroupKourovka18Problem14Wanted.twistedUnitClassesSubgroupsFGImpliesAbelian
 ---
 
-# Twisted Unit Classes Subgroups FGImplies Abelian
+# Kourovka Problem 18.14, abelian assertion for finitely generated groups
 
-Kourovka 18.14, second assertion of the conjecture: a finitely generated group `G` in which
-`[e]_φ` is a subgroup for every automorphism `φ` is abelian.
+**Kourovka Problem 18.14, abelian assertion for finitely generated groups.** Every finitely
+generated group $G$ in which, for every automorphism $\varphi$ of $G$, the twisted conjugacy class
+of the identity $[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is a subgroup of $G$, is abelian.
+
+This is the second assertion of the conjecture of Kourovka Problem 18.14.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [All Twisted Unit Classes Subgroups](all-twisted-unit-classes-subgroups.md)
+- [Groups whose twisted classes of the identity are all subgroups](all-twisted-unit-classes-subgroups.md)
 
 ## Sources
 

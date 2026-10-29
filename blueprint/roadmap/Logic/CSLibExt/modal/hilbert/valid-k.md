@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Modal.Derivable.valid_K
 ---
 
-# Valid K
+# Soundness of K for Kripke models
 
-K-theorems are valid in every Kripke model.
+**Soundness of K for Kripke models.** Every theorem of the modal logic K is valid in every
+Kripke model: if a formula $\varphi$ is derivable in K, then $\varphi$ holds at every world of
+every Kripke model $M$.
 
 ## Depends on
 
-- [K](k.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of the modal logic K](k.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Soundness](valid.md)
+- [Soundness of modal Hilbert systems for Kripke models](valid.md)
 
 ## Sources
 

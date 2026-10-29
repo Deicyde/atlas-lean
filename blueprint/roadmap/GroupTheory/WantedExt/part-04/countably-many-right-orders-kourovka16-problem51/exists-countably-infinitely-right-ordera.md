@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CountablyManyRightOrdersKourovka16Problem51Wanted.existsCountablyInfinitelyRightOrderable
 ---
 
-# Exists Countably Infinitely Right Orderable
+# Groups with countably infinitely many right orders (Kourovka 16.51)
 
-Kourovka 16.51 (V. M. Kopytov, N. Ya. Medvedev): some group has countably infinitely many right
-orders.
+**Groups with countably infinitely many right orders (Kourovka 16.51).** The statement that
+some group has a countably infinite set of right orders.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Right Orders](right-orders.md)
+- [Right orders of a group (Kourovka 16.51)](right-orders.md)
 
 ## Sources
 

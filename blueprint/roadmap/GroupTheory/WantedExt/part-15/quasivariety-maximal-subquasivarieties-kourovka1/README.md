@@ -4,11 +4,11 @@ navigation: module
 
 # Quasivariety Maximal Subquasivarieties Kourovka14 Problem25
 
-- [Quasi Identity](quasi-identity.md)
-- [Holds In](holds-in.md)
-- [Models](models.md)
-- [Quasi Theory](quasi-theory.md)
-- [QVLe](qvle.md)
-- [Is Maximal Proper Subquasivariety](is-maximal-proper-subquasivariety.md)
-- [Finitely Generated Group Infinitely Many Maximal Subquasivarieties](finitely-generated-group-infinitely-many.md)
-- [Finitely Generated Group Infinitely Many Maximal Subquasivarieties holds](finitely-generated-group-infinitely-many-2.md)
+- [Quasi-identities of groups](quasi-identity.md)
+- [Quasi-identities holding in a group](holds-in.md)
+- [The quasivariety defined by a set of quasi-identities](models.md)
+- [The quasi-identities of a group](quasi-theory.md)
+- [Inclusion of quasivarieties](qvle.md)
+- [Maximal proper subquasivarieties](is-maximal-proper-subquasivariety.md)
+- [Budkin's problem on maximal subquasivarieties (Kourovka 14.25)](finitely-generated-group-infinitely-many.md)
+- [Some finitely generated group has infinitely many maximal subquasivarieties](finitely-generated-group-infinitely-many-2.md)

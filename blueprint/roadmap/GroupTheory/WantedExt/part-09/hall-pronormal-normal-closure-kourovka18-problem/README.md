@@ -4,7 +4,7 @@ navigation: module
 
 # Hall Pronormal Normal Closure Kourovka18 Problem32
 
-- [Is Hall Subgroup](is-hall-subgroup.md)
-- [Is Pronormal In](is-pronormal-in.md)
-- [Hall Subgroup Pronormal In Normal Closure](hall-subgroup-pronormal-in-normal-closur.md)
-- [Hall Subgroup Pronormal In Normal Closure refuted](hall-subgroup-pronormal-in-normal-closur-2.md)
+- [Hall subgroups (order coprime to index)](is-hall-subgroup.md)
+- [Pronormality in a subgroup](is-pronormal-in.md)
+- [Vdovin–Revin question on Hall subgroups and their normal closures](hall-subgroup-pronormal-in-normal-closur.md)
+- [Hall subgroups need not be pronormal in their normal closure](hall-subgroup-pronormal-in-normal-closur-2.md)

@@ -6,36 +6,40 @@ proof: formalized
 lean: Cslib.Modal.derivable_T_iff_finValidWith
 ---
 
-# Derivable T iff fin Valid With
+# T-provability via finite reflexive models
 
-`φ` is a T-theorem iff it holds in every reflexive model on subsets of `sub φ`.
+**T-provability via finite reflexive models.** A modal formula $\varphi$ is a theorem of T
+if and only if, for every nonempty set $U$ of subsets of $\mathrm{sub}(\varphi)$, the set of
+subformulas of $\varphi$, and every relation $R \subseteq U \times U$ that is reflexive on $U$,
+the formula $\varphi$ is true at every world $s \in U$ of the finite model with worlds $U$,
+accessibility relation $R$, and each atom true at $s$ exactly when it belongs to $s$.
 
 ## Depends on
 
-- [T](../hilbert/t.md)
-- [Derivable](../hilbert/derivable.md)
-- [Fin Refl](fin-refl.md)
-- [Fin Valid With](fin-valid-with.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of T](../hilbert/t.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Reflexivity on a finite set of worlds](fin-refl.md)
+- [Finite validity check for a frame condition](fin-valid-with.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Valid T](../hilbert/valid-t.md)
-- [Sub](../filtration/sub.md)
-- [Is Filtration](../filtration/is-filtration.md)
+- [Soundness of T for reflexive Kripke models](../hilbert/valid-t.md)
+- [Subformulas](../filtration/sub.md)
+- [Filtration relations](../filtration/is-filtration.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Valid](../kripke/valid.md)
-- [Derivable T iff](../canonical/derivable-t-iff.md)
-- [Eval Fin](../filtration/eval-fin.md)
-- [Filtration Rel](../filtration/filtration-rel.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
-- [Fin Model](../filtration/fin-model.md)
-- [Fin Refl of is Filtration](fin-refl-of-is-filtration.md)
-- [Fin Valid With apply](fin-valid-with-apply.md)
-- [Is Filtration filtration Rel](../filtration/is-filtration-filtration-rel.md)
-- [Not valid fin Model of is Filtration](not-valid-fin-model-of-is-filtration.md)
-- [Sub Type](../filtration/sub-type.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
+- [Soundness and completeness of T](../canonical/derivable-t-iff.md)
+- [Boolean evaluation in a finite model](../filtration/eval-fin.md)
+- [Smallest filtration relation](../filtration/filtration-rel.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
+- [Finite Kripke model on sets of formulas](../filtration/fin-model.md)
+- [Filtrations of reflexive models are reflexive](fin-refl-of-is-filtration.md)
+- [The finite check covers the filtration worlds](fin-valid-with-apply.md)
+- [The smallest filtration is a filtration](../filtration/is-filtration-filtration-rel.md)
+- [A filtration refutes what the model refutes](not-valid-fin-model-of-is-filtration.md)
+- [Type of a world](../filtration/sub-type.md)
 
 ## Sources
 

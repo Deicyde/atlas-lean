@@ -5,23 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoGroupNormalClosureConjugateKourovka12Problem15Wanted.normalClosureConjDerivedAbelian_refuted
 ---
 
-# Normal Closure Conj Derived Abelian refuted
+# Equal normal closures forcing conjugacy does not make the derived subgroup of a finite $2$-group abelian (Kourovka 12.15)
 
-Resolved false: Muliarchyk gives an explicit 2-group of order 2048 in which elements with the same
-normal closure are conjugate but `G'' ≠ 1` (a ChatGPT-assisted construction with a symbolic proof);
-the Kourovka Notebook (21st issue) marks 12.15 solved, "No, not always". Source: E. I. Khukhro and
-V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue,
-arXiv:1401.0300v49 (2026), Problem 12.15 (E. A. Golikova, A. I. Starostin); resolution: K.
-Muliarchyk, An explicit counterexample to Kourovka Notebook Problem 12.15, preprint (13 August
-2026), main result: an explicit group of order `2¹¹ = 2048`, given by a power-commutator
-presentation, satisfies the hypothesis and has `G'' = ⟨z⟩ ≠ 1`; the Kourovka Notebook (21st issue)
-marks 12.15 solved,
-https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/08/kourovka_12_15_counterexample.pdf.
+**Equal normal closures forcing conjugacy does not make the derived subgroup of a finite $2$-group
+abelian (Kourovka 12.15).** There exists a finite $2$-group $G$ in which any two elements with the
+same normal closure are conjugate, but whose derived subgroup $G'$ is not abelian.
+
+Muliarchyk gives an explicit such group of order $2^{11} = 2048$, given by a power-commutator
+presentation, whose second derived subgroup $G'' = (G')'$ is nontrivial (a ChatGPT-assisted
+construction with a symbolic proof); the Kourovka Notebook (21st issue) marks 12.15 solved, "No,
+not always".
 
 ## Depends on
 
-- [Normal Closure Conj Derived Abelian](normal-closure-conj-derived-abelian.md)
+- [Golikova–Starostin question on finite $2$-groups in which normal closures determine conjugacy (Kourovka 12.15)](normal-closure-conj-derived-abelian.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.TwoGroupNormalClosureConjugateKourovka12Problem15Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 12.15 (E. A. Golikova, A. I. Starostin); resolution: K. Muliarchyk, An explicit counterexample to Kourovka Notebook Problem 12.15, preprint (13 August 2026), main result: an explicit group of order `2¹¹ = 2048`, given by a power-commutator presentation, satisfies the hypothesis and has `G'' = ⟨z⟩ ≠ 1`; the Kourovka Notebook (21st issue) marks 12.15 solved, https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/08/kourovka_12_15_counterexample.pdf.

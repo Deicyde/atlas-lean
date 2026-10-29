@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeThreeClassesIndexTwoKourovka11Problem42Wanted.torsionFreeThreeClassesIndexTwo
 ---
 
-# Torsion Free Three Classes Index Two
+# Kourovka Problem 11.42 (statement)
 
-Kourovka 11.42 (A. V. Izosov): there is a torsion-free group with exactly three conjugacy
-classes that has a subgroup of index 2.
+**Kourovka Problem 11.42 (statement).** The statement that there is a torsion-free group $G$ (no
+element of $G$ other than the identity has finite order) that has exactly three conjugacy classes
+and has a subgroup of index $2$.
+
+The problem was posed by A. V. Izosov.
 
 ## Depends on
 

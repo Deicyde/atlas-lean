@@ -4,11 +4,11 @@ navigation: module
 
 # Invariant Ring Poincare Series Kourovka12 Problem36
 
-- [Lin Subst](lin-subst.md)
-- [Invariant Component](invariant-component.md)
-- [Poincare Series](poincare-series.md)
-- [Pointwise Stabilizer](pointwise-stabilizer.md)
-- [Hyperplane Term](hyperplane-term.md)
-- [Hyperplane Sum](hyperplane-sum.md)
-- [Poincare Series Second Coefficient](poincare-series-second-coefficient.md)
-- [Poincare Series Second Coefficient holds](poincare-series-second-coefficient-holds.md)
+- [Linear substitution by a matrix](lin-subst.md)
+- [Homogeneous component of the invariant ring](invariant-component.md)
+- [Poincaré series of the invariant ring](poincare-series.md)
+- [Pointwise stabilizer](pointwise-stabilizer.md)
+- [Hyperplane term](hyperplane-term.md)
+- [Hyperplane sum](hyperplane-sum.md)
+- [Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36)](poincare-series-second-coefficient.md)
+- [Benson–Crawley-Boevey hyperplane formula (Kourovka 12.36)](poincare-series-second-coefficient-holds.md)

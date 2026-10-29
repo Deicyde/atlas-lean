@@ -8,9 +8,11 @@ lean: Matrix.PosSemidef.geomMean_det_le_trace_div
 
 # AM–GM inequality for the determinant of a positive semidefinite matrix
 
-**AM–GM inequality for the determinant of a positive semidefinite
-matrix**: the geometric mean of the eigenvalues is at most the
-arithmetic mean, i.e. `(det A) ^ (1 / n) ≤ (tr A) / n`.
+**AM–GM inequality for the determinant of a positive semidefinite matrix.** Let $n \ge 1$
+and let $A$ be a positive semidefinite complex $n \times n$ matrix. Then
+$(\operatorname{Re} \det A)^{1/n} \le \operatorname{Re}(\operatorname{tr} A)/n$.
+
+This is the arithmetic–geometric mean inequality for the eigenvalues of $A$.
 
 ## Depends on
 

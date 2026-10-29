@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapTraceRangeKourovka16Problem69Wanted.gl2TraceRangeContainsRay
 ---
 
-# Gl2 Trace Range Contains Ray
+# Mycielski's trace-range property for $\mathrm{GL}(2, \mathbb{R})$ (Kourovka 16.69(a))
 
-Kourovka 16.69(a) (J. Mycielski): for every nontrivial word `w(x, y)` the range of
-`tr w(x, y)` over `x, y ∈ GL(2, ℝ)` contains the interval `[-2, ∞)`.
+**Mycielski's trace-range property for $\mathrm{GL}(2, \mathbb{R})$ (Kourovka 16.69(a)).** For
+every nontrivial element $w$ of the free group on two generators $x, y$, the set of traces
+$\operatorname{tr} w(A, B)$, where $A, B$ range over $\mathrm{GL}(2, \mathbb{R})$ and $w(A, B)$ is
+obtained by substituting $A$ for $x$ and $B$ for $y$, contains the interval $[-2, \infty)$.
 
 ## Depends on
 

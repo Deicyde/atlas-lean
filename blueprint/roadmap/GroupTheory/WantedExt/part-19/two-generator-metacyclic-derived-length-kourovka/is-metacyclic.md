@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.IsMetacyclic
 ---
 
-# Is Metacyclic
+# Metacyclic group
 
-`G` is metacyclic: it has a cyclic normal subgroup with cyclic quotient.
+**Metacyclic group.** A group $G$ is metacyclic if it has a cyclic normal subgroup $N$ such
+that the quotient $G/N$ is cyclic.
 
 ## Depends on
 

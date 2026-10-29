@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OuterAutomorphismGroupRealizationKourovka16Problem59Wanted.everyFiniteGroupIsOuterAutomorphismGroup
 ---
 
-# Every Finite Group Is Outer Automorphism Group
+# Kourovka Problem 16.59 (finite groups as outer automorphism groups)
 
-Kourovka 16.59 (D. MacHale): every finite group `K` is isomorphic to `Out(G) = Aut(G) / Inn(G)`
-for some finite group `G`, stated as a surjective homomorphism `Aut(G) → K` with kernel the inner
-automorphisms.
+**Kourovka Problem 16.59 (finite groups as outer automorphism groups).** The statement that
+for every finite group $K$ there are a finite group $G$ and a surjective homomorphism
+$\mathrm{Aut}(G) \to K$ whose kernel is the group $\mathrm{Inn}(G)$ of inner automorphisms of
+$G$, that is, $K$ is isomorphic to $\mathrm{Out}(G) = \mathrm{Aut}(G) / \mathrm{Inn}(G)$.
 
 ## Depends on
 

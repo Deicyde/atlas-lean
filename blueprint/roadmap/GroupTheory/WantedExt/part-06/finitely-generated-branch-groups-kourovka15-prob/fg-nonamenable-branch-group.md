@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyGeneratedBranchGroupsKourovka15Problem14Wanted.fgNonamenableBranchGroup
 ---
 
-# Fg Nonamenable Branch Group
+# Kourovka Problem 15.14(a): non-amenable branch groups
 
-Kourovka 15.14(a): there is a finitely generated non-amenable branch group.
+**Kourovka Problem 15.14(a): non-amenable branch groups.** The statement that there exists a
+finitely generated branch group that is not amenable.
 
 ## Depends on
 

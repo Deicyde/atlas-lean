@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimplyReducibleSolubleKourovka11Problem94Wanted.IsSimplyReducible
 ---
 
-# Is Simply Reducible
+# Simply reducible group
 
-`G` is simply reducible: all irreducible complex characters of `G` are real-valued, and the
-tensor product of any two irreducible complex representations contains every irreducible
-representation with multiplicity at most one (the multiplicity of `U` in `V ⊗ W` being
-`dim Hom_G(U, V ⊗ W)`).
+**Simply reducible group.** A group $G$ is simply reducible when the character of every
+irreducible finite-dimensional complex representation of $G$ is real-valued, and for all
+irreducible finite-dimensional complex representations $U$, $V$ and $W$ of $G$, the space
+$\mathrm{Hom}_G(U, V \otimes W)$ of $G$-equivariant linear maps from $U$ to the tensor product
+$V \otimes W$ has complex dimension at most $1$.
+
+For finite $G$, by Maschke's and Schur's theorems this dimension is the multiplicity of $U$ in
+$V \otimes W$, so the second condition says that $V \otimes W$ has no repeated irreducible
+constituents.
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TotientSumSimplicityKourovka19Problem25Wanted.sameOrderTotientSumSimple
 ---
 
-# Same Order Totient Sum Simple
+# Curtin–Pourgholi question on totient sums and simplicity (Kourovka 19.25)
 
-Kourovka 19.25 (B. Curtin, G. R. Pourgholi): if finite groups `G` and `H` have the same order
-and the same totient sum `∑_{g ∈ G} φ(|g|) = ∑_{h ∈ H} φ(|h|)`, and `G` is simple, then `H` is
-simple.
+**Curtin–Pourgholi question on totient sums and simplicity (Kourovka 19.25).** The statement
+that for all finite groups $G$ and $H$ of the same order with
+$\sum_{g \in G} \varphi(|g|) = \sum_{h \in H} \varphi(|h|)$, where $|g|$ is the order of $g$ and
+$\varphi$ is Euler's totient function, if $G$ is simple then $H$ is simple.
 
 ## Depends on
 

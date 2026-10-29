@@ -4,6 +4,6 @@ navigation: module
 
 # Subset Factorization Counterexamples Kourovka19 Problem35
 
-- [Has Subset Factorization](has-subset-factorization.md)
-- [Subset Factorization Counterexample Every Length](subset-factorization-counterexample-ever.md)
-- [Subset Factorization Counterexample Every Length holds](subset-factorization-counterexample-ever-2.md)
+- [Factorization of a group into subsets of given sizes](has-subset-factorization.md)
+- [Kourovka Problem 19.35: counterexamples to subset factorization of every length](subset-factorization-counterexample-ever.md)
+- [Finite groups without subset factorizations exist for every length](subset-factorization-counterexample-ever-2.md)

@@ -5,12 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.FrattiniCenterH1Trivial
 ---
 
-# Frattini Center H1 Trivial
+# Vanishing first cohomology of $G/\Phi(G)$ in $Z(\Phi(G))$
 
-`H¹(G/Φ(G), Z(Φ(G))) = 0` for the conjugation action. A 1-cocycle of `G/Φ(G)` with values in
-`Z(Φ(G))` is recorded by its inflation to `G`: a map `δ : G → Z(Φ(G))` with
-`δ (g h) = δ g · g (δ h) g⁻¹` that is trivial on `Φ(G)` (such maps are exactly the inflations).
-The class vanishes when the cocycle is a coboundary `δ g = g a g⁻¹ a⁻¹` with `a ∈ Z(Φ(G))`.
+**Vanishing first cohomology of $G/\Phi(G)$ in $Z(\Phi(G))$.** Let $G$ be a group, let
+$\Phi(G)$ be its Frattini subgroup and let $Z(\Phi(G))$ be the centre of $\Phi(G)$. The property
+holds when every map $\delta \colon G \to Z(\Phi(G))$ with
+$\delta(gh) = \delta(g)\, g\, \delta(h)\, g^{-1}$ for all $g, h \in G$ and $\delta(g) = 1$ for all
+$g \in \Phi(G)$ is a coboundary: there is an $a \in Z(\Phi(G))$ with $\delta(g) = g a g^{-1} a^{-1}$
+for all $g \in G$.
+
+Such maps $\delta$ are exactly the inflations to $G$ of the 1-cocycles of $G/\Phi(G)$ with values
+in $Z(\Phi(G))$ for the conjugation action, so the property says
+$H^1(G/\Phi(G), Z(\Phi(G))) = 0$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [In Frattini Center](in-frattini-center.md)
+- [Centre of the Frattini subgroup](in-frattini-center.md)
 
 ## Sources
 

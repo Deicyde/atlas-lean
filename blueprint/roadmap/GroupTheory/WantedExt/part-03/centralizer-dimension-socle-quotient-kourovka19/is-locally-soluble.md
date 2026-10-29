@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsLocallySoluble
 ---
 
-# Is Locally Soluble
+# Locally soluble subgroups
 
-`H` is locally soluble: every finitely generated subgroup of `H` is soluble.
+**Locally soluble subgroups.** A subgroup $H$ of a group $G$ is locally soluble if every
+finitely generated subgroup of $H$ is soluble.
 
 ## Depends on
 

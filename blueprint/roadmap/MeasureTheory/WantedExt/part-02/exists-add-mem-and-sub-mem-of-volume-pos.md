@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.PositiveMeasureThreeTermProgressionWanted.exists_add_mem_and_sub_mem_of_volume_pos
 ---
 
-# Positive Measure Three Term Progression Wanted
+# Sets of positive measure contain three-term arithmetic progressions
 
-Prove that for any $A\subset \mathbb{R}$ with positive Lebesgue measure there exist $x\in A$ and
-$y>0$ for which $x+y,\ x-y\in A$.
+**Sets of positive measure contain three-term arithmetic progressions.** For every Borel set
+$A \subseteq \mathbb{R}$ of positive Lebesgue measure there exist $x \in A$ and $y > 0$ such that
+$x + y \in A$ and $x - y \in A$.
 
 ## Depends on
 

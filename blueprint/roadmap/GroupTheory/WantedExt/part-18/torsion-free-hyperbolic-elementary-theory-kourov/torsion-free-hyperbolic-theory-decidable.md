@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.torsionFreeHyperbolicTheoryDecidable
 ---
 
-# Torsion Free Hyperbolic Theory Decidable
+# Decidability of the elementary theory of torsion-free hyperbolic groups
 
-Kourovka 16.71 (A. G. Myasnikov, O. G. Kharlampovich): the elementary theory of every
-torsion-free hyperbolic group is decidable.
+**Decidability of the elementary theory of torsion-free hyperbolic groups.** The proposition
+stating Kourovka Problem 16.71 (A. G. Myasnikov, O. G. Kharlampovich): for every torsion-free
+word-hyperbolic group $G$ (every element $g \ne 1$ of $G$ has infinite order), the set of prenex
+sentences of the language of groups that hold in $G$ is computable, that is, some algorithm
+decides for each prenex sentence whether it holds in $G$.
 
 ## Depends on
 
@@ -17,10 +20,10 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Word-hyperbolic groups](../../../MathlibExt/part-02/hyperbolic-group/is-hyperbolic.md)
-- [CNF](cnf.md)
-- [Prenex Sentence](prenex-sentence.md)
-- [Holds In](holds-in.md)
-- [Word](word.md)
+- [Quantifier-free formulas in conjunctive normal form](cnf.md)
+- [Prenex sentences of the language of groups](prenex-sentence.md)
+- [Truth of a prenex sentence in a group](holds-in.md)
+- [Group words in countably many variables](word.md)
 
 ## Sources
 

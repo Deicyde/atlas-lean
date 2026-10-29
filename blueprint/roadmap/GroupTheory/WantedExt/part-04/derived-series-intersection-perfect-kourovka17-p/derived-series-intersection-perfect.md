@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DerivedSeriesIntersectionPerfectKourovka17Problem82Wanted.derivedSeriesIntersectionPerfect
 ---
 
-# Derived Series Intersection Perfect
+# Perfectness of the intersection of the derived series (Kourovka 17.82)
 
-Kourovka 17.82 (R. Mikhailov): in every finitely presented group `G` the intersection
-`D = ⋂ₙ G⁽ⁿ⁾` of the derived series has trivial abelianization, `[D, D] = D`.
+**Perfectness of the intersection of the derived series (Kourovka 17.82).** The conjecture of
+R. Mikhailov that for every finitely presented group $G$, the intersection
+$D = \bigcap_{n} G^{(n)}$ of the terms $G^{(n)}$ of the derived series of $G$ satisfies
+$[D, D] = D$, that is, $D$ has trivial abelianization.
 
 ## Depends on
 

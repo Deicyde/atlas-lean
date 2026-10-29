@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SharplyTwoTransitiveAbelianNormalKourovka11Problem52Wanted.IsSharplyTwoTransitive
 ---
 
-# Is Sharply Two Transitive
+# Sharply doubly transitive action
 
-The action of `G` on `Ω` is sharply doubly transitive: for pairs `(α, β)` and `(γ, δ)` of
-distinct points there is exactly one `g ∈ G` with `g • α = γ` and `g • β = δ`.
+**Sharply doubly transitive action.** An action of a group $G$ on a set $\Omega$ is sharply
+doubly transitive when for all points $\alpha, \beta, \gamma, \delta \in \Omega$ with
+$\alpha \ne \beta$ and $\gamma \ne \delta$ there is exactly one $g \in G$ with
+$g \cdot \alpha = \gamma$ and $g \cdot \beta = \delta$.
 
 ## Depends on
 

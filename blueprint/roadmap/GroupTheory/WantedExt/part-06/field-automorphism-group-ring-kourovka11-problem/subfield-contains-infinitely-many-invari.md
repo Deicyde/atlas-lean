@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FieldAutomorphismGroupRingKourovka11Problem79Wanted.subfieldContainsInfinitelyManyInvariants
 ---
 
-# Subfield Contains Infinitely Many Invariants
+# Group-ring powers and invariant elements (Kourovka 11.79)
 
-Kourovka 11.79 (K. N. Ponomarëv): let `G` be a finite group of automorphisms of an infinite
-field `F` of prime characteristic `p`, acting with integral powers on `Fˣ` through the group ring:
-`x ^ ξ = ∏_g (g x) ^ (ξ g)` for `ξ = ∑_g ξ g · g ∈ ℤG`. If `ξ ∉ pℤG` and a subfield `K` of `F`
-contains `x ^ ξ` for every `x ≠ 0`, then `K` contains infinitely many `G`-invariant elements.
+**Group-ring powers and invariant elements (Kourovka 11.79).** The proposition that the
+following holds for every prime $p$, every infinite field $F$ of characteristic $p$, every finite
+group $G$ of ring automorphisms of $F$, and every element $\xi = \sum_{g \in G} \xi_g \, g$ of the
+group ring $\mathbb{Z}G$ with $\xi \notin p\mathbb{Z}G$, that is, with some integer coefficient
+$\xi_g$ not divisible by $p$. For nonzero $x \in F$ put $x^\xi = \prod_{g \in G} g(x)^{\xi_g}$.
+If a subfield $K$ of $F$ contains $x^\xi$ for every nonzero $x \in F$, then $K$ contains
+infinitely many elements $y$ with $g(y) = y$ for all $g \in G$.
 
 ## Depends on
 

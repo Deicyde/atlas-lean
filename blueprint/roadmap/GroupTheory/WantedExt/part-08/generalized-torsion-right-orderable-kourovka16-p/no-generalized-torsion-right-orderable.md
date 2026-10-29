@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.GeneralizedTorsionRightOrderableKourovka16Problem48Wanted.noGeneralizedTorsionRightOrderable
 ---
 
-# No Generalized Torsion Right Orderable
+# The Kopytov–Medvedev question (Kourovka 16.48)
 
-Kourovka 16.48 (V. M. Kopytov, N. Ya. Medvedev): every group without generalized torsion is
-right-orderable.
+**The Kopytov–Medvedev question (Kourovka 16.48).** This is the proposition that every group
+$H$ with no generalized torsion element is right-orderable, that is, admits a right order.
 
 ## Depends on
 
@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Generalized Torsion](is-generalized-torsion.md)
-- [Right Orders](right-orders.md)
+- [Generalized torsion elements (Kourovka 16.48)](is-generalized-torsion.md)
+- [Right orders on a group (Kourovka 16.48)](right-orders.md)
 
 ## Sources
 

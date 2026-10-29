@@ -12,25 +12,25 @@ lean: Cslib.Modal.satisfies_canonical_iff
 
 ## Depends on
 
-- [Canonical World](canonical-world.md)
-- [Consistent](consistent.md)
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Canonical Model](canonical-model.md)
+- [Worlds of the canonical model](canonical-world.md)
+- [Consistency relative to a normal modal logic](consistent.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [The canonical model](canonical-model.md)
 
 ## Proof depends on
 
 - [Existence lemma](exists-rel-not-mem.md)
-- [Rel](rel.md)
-- [Deduces](../hilbert/deduces.md)
-- [Bot of neg](../hilbert/bot-of-neg.md)
-- [The deduction theorem](../hilbert/imp-of-insert.md)
-- [Neg of insert](../hilbert/neg-of-insert.md)
-- [Of bot](../hilbert/of-bot.md)
-- [Neg](../kripke/neg.md)
+- [The canonical accessibility relation](rel.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Contradiction yields falsity](../hilbert/bot-of-neg.md)
+- [The deduction theorem for local modal consequence, forward direction](../hilbert/imp-of-insert.md)
+- [Negation introduction](../hilbert/neg-of-insert.md)
+- [Ex falso quodlibet](../hilbert/of-bot.md)
+- [Negation of modal formulas](../kripke/neg.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Mem of deduces](mem-of-deduces.md)
+- [Maximal consistent sets of modal formulas are deductively closed](mem-of-deduces.md)
 
 ## Sources
 

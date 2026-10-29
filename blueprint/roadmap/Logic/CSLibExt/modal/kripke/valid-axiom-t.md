@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.valid_axiomT
 ---
 
-# Valid axiom T
+# Axiom T is valid on reflexive Kripke models
 
-The T axiom is valid on reflexive frames.
+**Axiom T is valid on reflexive Kripke models.** Let $M$ be a Kripke model whose
+accessibility relation $R$ is reflexive: $R\,w\,w$ for every world $w$. Then for every formula
+$\varphi$ the T axiom $\Box\varphi \to \varphi$ is globally valid in $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 - [Axiom T](axiom-t.md)
 - [Kripke Model](kripke-model.md)
-- [Valid](valid.md)
+- [Global validity in a Kripke model](valid.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction in a Kripke model](satisfies.md)
 
 ## Sources
 

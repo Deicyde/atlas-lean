@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RetractIntersectionFreeGroupKourovka17Problem19Wanted.IsRetract
 ---
 
-# Is Retract
+# Retract of a group
 
-`R` is a retract of the group `F`: some endomorphism of `F` has image `R` and is the identity
-on `R`.
+**Retract of a group.** A subgroup $R$ of a group $F$ is a retract of $F$ when there is an
+endomorphism $r \colon F \to F$ whose image is $R$ and which fixes every element of $R$.
 
 ## Depends on
 

@@ -5,19 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.IsComposition
 ---
 
-# Is Composition
+# Solubly saturated class
 
-A composition (solubly saturated, Baer-local) formation: `G ⧸ Φ(R(G)) ∈ X` implies `G ∈ X`,
-where `R(G)` is the soluble radical and `Φ` the Frattini subgroup.
+**Solubly saturated class.** A class of groups $X$ is solubly saturated (a composition class)
+if, for every finite group $G$ with soluble radical $R$, whenever the Frattini subgroup $\Phi(R)$
+of $R$ is normal in $G$ and $G/\Phi(R)$ belongs to $X$, the group $G$ belongs to $X$.
+
+A formation with this property is a composition (solubly saturated, Baer-local) formation.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed class of groups](group-class.md)
 
 ## Proof depends on
 
-- [Is Soluble Radical](is-soluble-radical.md)
-- [Quot Mem](quot-mem.md)
+- [Soluble radical](is-soluble-radical.md)
+- [Quotient lying in a class](quot-mem.md)
 
 ## Sources
 

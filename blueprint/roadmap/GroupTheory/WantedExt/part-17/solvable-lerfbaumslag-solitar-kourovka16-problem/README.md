@@ -4,8 +4,8 @@ navigation: module
 
 # Solvable LERFBaumslag Solitar Kourovka16 Problem2
 
-- [BS1](bs1.md)
-- [Is Separable Subgroup](is-separable-subgroup.md)
-- [Is Locally Subgroup Separable](is-locally-subgroup-separable.md)
-- [Solvable LERFIff No Baumslag Solitar](solvable-lerfiff-no-baumslag-solitar.md)
-- [Solvable LERFIff No Baumslag Solitar refuted](solvable-lerfiff-no-baumslag-solitar-ref.md)
+- [The Baumslag–Solitar group BS(1, n)](bs1.md)
+- [Separable subgroup](is-separable-subgroup.md)
+- [Locally subgroup-separable (LERF) group](is-locally-subgroup-separable.md)
+- [Kourovka Problem 16.2 (R. C. Alperin)](solvable-lerfiff-no-baumslag-solitar.md)
+- [Kourovka Problem 16.2 has a negative answer](solvable-lerfiff-no-baumslag-solitar-ref.md)

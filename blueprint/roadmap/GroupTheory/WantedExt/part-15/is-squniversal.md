@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SQUniversalShared.IsSQUniversal
 ---
 
-# SQUniversal Shared
+# SQ-universal group
 
-`G` is SQ-universal: every countable group is isomorphic to a subgroup of a quotient of `G`.
-A quotient of `G` is a group `Q` with a surjective homomorphism `G → Q`, and a subgroup of `Q`
-isomorphic to `C` is the image of an injective homomorphism `C → Q`.
+**SQ-universal group.** A group $G$ is SQ-universal if every countable group is isomorphic
+to a subgroup of a quotient of $G$: for every countable group $C$ there are a group $Q$, a
+surjective homomorphism $G \to Q$ and an injective homomorphism $C \to Q$.
 
 ## Depends on
 

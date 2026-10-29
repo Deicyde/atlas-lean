@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.LTL.Formula.or
 ---
 
-# Or
+# Disjunction in LTL
 
-Disjunction encoded using conjunction and negation.
+**Disjunction in LTL.** For LTL formulas $\varphi$ and $\psi$, the disjunction
+$\varphi \vee \psi$ is defined as $\neg(\neg\varphi \wedge \neg\psi)$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of linear temporal logic](formula.md)
 
 ## Sources
 

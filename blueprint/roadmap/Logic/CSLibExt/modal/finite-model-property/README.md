@@ -6,24 +6,24 @@ navigation: module
 
 ## The filtration lemma for any filtration
 
-- [Not valid fin Model of is Filtration](not-valid-fin-model-of-is-filtration.md)
+- [A filtration refutes what the model refutes](not-valid-fin-model-of-is-filtration.md)
 
 ## The Lemmon and S5 filtrations
 
-- [Lemmon Rel](lemmon-rel.md)
-- [S5 Rel](s5-rel.md)
-- [Is Filtration lemmon Rel](is-filtration-lemmon-rel.md)
-- [Is Filtration s5 Rel](is-filtration-s5-rel.md)
+- [Lemmon filtration relation](lemmon-rel.md)
+- [S5 filtration relation](s5-rel.md)
+- [The Lemmon relation is a filtration of a transitive model](is-filtration-lemmon-rel.md)
+- [The S5 relation is a filtration of an equivalence model](is-filtration-s5-rel.md)
 
 ## Frame conditions on finite models
 
-- [Fin Refl](fin-refl.md)
-- [Fin Trans](fin-trans.md)
-- [Fin Symm](fin-symm.md)
+- [Reflexivity on a finite set of worlds](fin-refl.md)
+- [Transitivity on a finite set of worlds](fin-trans.md)
+- [Symmetry on a finite set of worlds](fin-symm.md)
 
 ## Frame properties of the filtrations
 
-- [Fin Refl of is Filtration](fin-refl-of-is-filtration.md)
+- [Filtrations of reflexive models are reflexive](fin-refl-of-is-filtration.md)
 
 ## Finite model property
 
@@ -33,8 +33,8 @@ navigation: module
 
 ## Decidability
 
-- [Fin Valid With](fin-valid-with.md)
-- [Fin Valid With apply](fin-valid-with-apply.md)
-- [Derivable T iff fin Valid With](derivable-t-iff-fin-valid-with.md)
-- [Derivable S4 iff fin Valid With](derivable-s4-iff-fin-valid-with.md)
-- [Derivable S5 iff fin Valid With](derivable-s5-iff-fin-valid-with.md)
+- [Finite validity check for a frame condition](fin-valid-with.md)
+- [The finite check covers the filtration worlds](fin-valid-with-apply.md)
+- [T-provability via finite reflexive models](derivable-t-iff-fin-valid-with.md)
+- [S4-provability via finite reflexive transitive models](derivable-s4-iff-fin-valid-with.md)
+- [S5-provability via finite equivalence models](derivable-s5-iff-fin-valid-with.md)

@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Modal.Derivable.mono
 ---
 
-# Mono
+# Monotonicity of theorems in the extra axioms
 
-More extra axioms give more theorems.
+**Monotonicity of theorems in the extra axioms.** Let $\Lambda \subseteq \Lambda'$ be sets of
+modal formulas. Every theorem of the normal modal logic $\mathrm{K} \oplus \Lambda$ is a theorem of
+$\mathrm{K} \oplus \Lambda'$.
 
 ## Depends on
 
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
 - [Axiom K](../kripke/axiom-k.md)
-- [Neg](../kripke/neg.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Sources
 

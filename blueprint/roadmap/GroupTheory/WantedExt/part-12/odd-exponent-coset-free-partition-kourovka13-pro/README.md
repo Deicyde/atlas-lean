@@ -4,5 +4,5 @@ navigation: module
 
 # Odd Exponent Coset Free Partition Kourovka13 Problem46
 
-- [Odd Exponent Coset Free Partition](odd-exponent-coset-free-partition.md)
-- [Odd Exponent Coset Free Partition holds](odd-exponent-coset-free-partition-holds.md)
+- [Kourovka Problem 13.46: coset-free partitions](odd-exponent-coset-free-partition.md)
+- [Uncountable abelian groups of odd exponent have coset-free partitions](odd-exponent-coset-free-partition-holds.md)

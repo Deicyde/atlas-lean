@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PartitionMeetingInfiniteCosetsKourovka16Problem43Wanted.threePartitionMeetsInfiniteCosets
 ---
 
-# Three Partition Meets Infinite Cosets
+# Kourovka 16.43: partitioning $\bigoplus_{\omega_1} \mathbb{Z}/3\mathbb{Z}$ into three parts meeting every infinite coset
 
-Kourovka 16.43 (E. G. Zelenyuk): the direct sum `⊕_{ω₁} ℤ/3ℤ`, the finitely supported
-functions from a set of cardinality `ℵ₁` to `ZMod 3`, can be partitioned into three subsets each
-of which meets every coset of every infinite subgroup.
+**Kourovka 16.43: partitioning $\bigoplus_{\omega_1} \mathbb{Z}/3\mathbb{Z}$ into three parts
+meeting every infinite coset.** The proposition that for every set $I$ of cardinality $\aleph_1$,
+the group $A = \bigoplus_{i \in I} \mathbb{Z}/3\mathbb{Z}$ of finitely supported functions from $I$
+to $\mathbb{Z}/3\mathbb{Z}$ can be partitioned into three subsets $A_0, A_1, A_2$ such that for
+every infinite subgroup $H$ of $A$ and every $x \in A$, the coset $x + H$ meets each $A_i$.
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NonconjugateMaximalSubgroupProductsKourovka10Problem34Wanted.nonsolubleProductOfNonconjugateMaximals
 ---
 
-# Nonsoluble Product Of Nonconjugate Maximals
+# Non-soluble products of non-conjugate maximal subgroups (Kourovka 10.34, Monakhov)
 
-Kourovka 10.34 (V. S. Monakhov): some non-soluble finite group is the product `MN` of any two of
-its non-conjugate maximal subgroups `M` and `N`.
+**Non-soluble products of non-conjugate maximal subgroups (Kourovka 10.34, Monakhov).** The
+statement that there is a finite group $G$ that is not soluble such that $G = MN$ for every two
+maximal subgroups $M$ and $N$ of $G$ that are not conjugate in $G$. Here $MN$ is the set of
+products $mn$ with $m \in M$ and $n \in N$.
 
 ## Depends on
 

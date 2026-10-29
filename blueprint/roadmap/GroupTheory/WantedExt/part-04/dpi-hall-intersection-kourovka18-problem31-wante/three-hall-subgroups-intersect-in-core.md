@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DPiHallIntersectionKourovka18Problem31Wanted.threeHallSubgroupsIntersectInCore
 ---
 
-# Three Hall Subgroups Intersect In Core
+# Three Hall π-subgroups meeting in the π-core (Kourovka 18.31)
 
-Kourovka 18.31 (E. P. Vdovin, D. O. Revin): for every set of primes `π`, every finite
-`D_π`-group `G` has three Hall `π`-subgroups whose intersection is `O_π(G)`.
+**Three Hall π-subgroups meeting in the π-core (Kourovka 18.31).** For every set $\pi$ of
+natural numbers and every finite $D_\pi$-group $G$, there are Hall $\pi$-subgroups $H_1$, $H_2$,
+$H_3$ of $G$, not necessarily distinct, with $H_1 \cap H_2 \cap H_3 = O_\pi(G)$, the
+$\pi$-core of $G$.
+
+This is the question of E. P. Vdovin and D. O. Revin; only the primes in $\pi$ matter.
 
 ## Depends on
 
@@ -16,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DPi Group](is-dpi-group.md)
-- [Is Hall Pi Subgroup](is-hall-pi-subgroup.md)
-- [Pi Core](pi-core.md)
+- [Dπ-groups](is-dpi-group.md)
+- [Hall π-subgroups (Kourovka 18.31)](is-hall-pi-subgroup.md)
+- [The π-core](pi-core.md)
 
 ## Sources
 

@@ -5,23 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FullPrimeMaximalSupersolubleKourovka19Problem55Wanted.everyNonabelianSimpleGroupOccurs_holds
 ---
 
-# Every Nonabelian Simple Group Occurs holds
+# Moretó: every non-abelian simple group occurs in Kourovka 19.55(a)
 
-Resolved true: Moretó (Theorem A) shows that every non-abelian finite simple group `S` is a
-composition factor of a finite group with the property (a wreath product `S ≀ A_p`); the Kourovka
-Archive records this answer to 19.55(a). Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
-Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of
-Solved Problems, Problem 19.55 (V. S. Monakhov); resolution: A. Moretó, Finite groups whose maximal
-subgroups of order divisible by all the primes are supersolvable, Monatsh. Math. 195 (2021), no. 3,
-497-500 (arXiv:2010.04808), Theorem A (every nonabelian simple group occurs as a composition
-factor), Theorem B (solvable examples of arbitrarily large nilpotency length and rank) and Theorem C
-(the p-length is 1 for every prime divisor p of |G|); Kourovka Archive, Problem 19.55,
-https://arxiv.org/abs/2010.04808.
+**Moretó: every non-abelian simple group occurs in Kourovka 19.55(a).** For every finite
+non-abelian simple group $S$ there is a finite group $G$ such that $S$ is a composition factor of
+$G$ and every maximal subgroup $M$ of $G$ with $\pi(M) = \pi(G)$ is supersoluble, where $\pi(X)$ is
+the set of primes dividing the order of $X$.
 
 ## Depends on
 
-- [Every Nonabelian Simple Group Occurs](every-nonabelian-simple-group-occurs.md)
+- [Kourovka 19.55(a) (Monakhov): every non-abelian simple group occurs](every-nonabelian-simple-group-occurs.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.FullPrimeMaximalSupersolubleKourovka19Problem55Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 19.55 (V. S. Monakhov); resolution: A. Moretó, Finite groups whose maximal subgroups of order divisible by all the primes are supersolvable, Monatsh. Math. 195 (2021), no. 3, 497-500 (arXiv:2010.04808), Theorem A (every nonabelian simple group occurs as a composition factor), Theorem B (solvable examples of arbitrarily large nilpotency length and rank) and Theorem C (the p-length is 1 for every prime divisor p of |G|); Kourovka Archive, Problem 19.55, https://arxiv.org/abs/2010.04808.

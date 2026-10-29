@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ReducedIncidenceAlgebraDomainKourovka13Problem29Wanted.incMul
 ---
 
-# Inc Mul
+# Product of the reduced incidence algebra
 
-The product of the reduced incidence algebra on functions `Finset Ω → ℚ`:
-`(fg)(X) = ∑_{Y ⊆ X} f(Y) g(X ∖ Y)`. For `f ∈ Vₙ`, `g ∈ Vₘ` (vanishing off `n`- resp. `m`-subsets)
-this is the product of the problem, landing in `V_{n+m}`.
+**Product of the reduced incidence algebra.** Let $\Omega$ be a set. For functions $f$ and $g$
+from the finite subsets of $\Omega$ to $\mathbb{Q}$, their product $fg$ is the function on finite
+subsets given by $(fg)(X) = \sum_{Y \subseteq X} f(Y)\, g(X \setminus Y)$.
+
+If $f$ vanishes off the $n$-element subsets and $g$ vanishes off the $m$-element subsets, this is
+the product of Kourovka Problem 13.29, and $fg$ vanishes off the $(n+m)$-element subsets.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DimensionSubgroupLowerCentralKourovka12Problem22Wanted.dimensionQuotientCentral
 ---
 
-# Dimension Quotient Central
+# Gupta–Kuz'min centrality question (Kourovka 12.22(a))
 
-Kourovka 12.22(a) (N. D. Gupta, Yu. V. Kuz'min): for every group `G` and `n ≥ 1`,
-`D_n(G) / γ_n(G)` is central in `G / γ_n(G)`; here `(⊤ : Subgroup G).lowerCentralSeries (n - 1)`
-is `γ_n(G)`.
+**Gupta–Kuz'min centrality question (Kourovka 12.22(a)).** The statement that for every group
+$G$, every $n \ge 1$, every element $x$ of the $n$-th dimension subgroup $D_n(G)$ and every
+$g \in G$, the commutator $x g x^{-1} g^{-1}$ lies in $\gamma_n(G)$, the $n$-th term of the lower
+central series of $G$, indexed so that $\gamma_1(G) = G$ and
+$\gamma_{k+1}(G) = [\gamma_k(G), G]$. Equivalently, the image of $D_n(G)$ in $G/\gamma_n(G)$ is
+central.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mem Dimension Subgroup](mem-dimension-subgroup.md)
+- [Dimension subgroups](mem-dimension-subgroup.md)
 
 ## Sources
 

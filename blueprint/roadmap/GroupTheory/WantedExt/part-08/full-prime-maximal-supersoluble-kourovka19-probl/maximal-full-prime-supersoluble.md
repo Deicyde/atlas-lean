@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FullPrimeMaximalSupersolubleKourovka19Problem55Wanted.MaximalFullPrimeSupersoluble
 ---
 
-# Maximal Full Prime Supersoluble
+# Monakhov's condition
 
-Monakhov's condition: every maximal subgroup `M` of `G` with `π(M) = π(G)` is supersoluble.
+**Monakhov's condition.** A group $G$ satisfies Monakhov's condition when every maximal
+subgroup $M$ of $G$ with $\pi(M) = \pi(G)$ is supersoluble, where $\pi(X)$ is the set of prime
+factors of the order of $X$ if $X$ is finite, and is empty if $X$ is infinite.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Supersoluble](is-supersoluble.md)
+- [Supersoluble group (generator form)](is-supersoluble.md)
 
 ## Sources
 

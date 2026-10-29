@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.KourovkaNotebookShared.IsSigmaPrimary
 ---
 
-# Is Sigma Primary
+# $\sigma$-primary numbers
 
-A positive integer is `σ`-primary: all its prime divisors lie in a single block `σᵢ` (a finite
-group is `σ`-primary when its order is).
+**$\sigma$-primary numbers.** For a family $\sigma = (\sigma_i)_{i \in I}$ of sets of natural
+numbers, a natural number $n$ is $\sigma$-primary if there is an index $i$ such that every prime
+divisor of $n$ lies in $\sigma_i$. For $n = 0$ this means that some $\sigma_i$ contains every
+prime.
+
+A finite group is called $\sigma$-primary when its order is.
 
 ## Depends on
 

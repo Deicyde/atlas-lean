@@ -5,15 +5,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapsSurjectivityKourovka16Problem68Wanted.so3WordMapsSurjective_refuted
 ---
 
-# So3 Word Maps Surjective refuted
+# Some nontrivial word map on $\mathrm{SO}(3, \mathbb{R})$ is not surjective (Kourovka 16.68(c))
 
-Resolved false: the Kourovka Notebook (21st issue) answers 16.68 negatively for `SO(3, ℝ)`, noting
-that this follows from Thom (2013), whose Corollary 1.2 gives, for every `ε > 0`, a nontrivial word
-`w` with `‖1 - w(u, v)‖ ≤ ε` for all unitary `u, v`, in particular for all `u, v ∈ SO(3, ℝ)`.
+**Some nontrivial word map on $\mathrm{SO}(3, \mathbb{R})$ is not surjective (Kourovka 16.68(c)).**
+There is a nontrivial element $w$ of the free group $F_2$ on two generators whose word map
+$\mathrm{SO}(3, \mathbb{R}) \times \mathrm{SO}(3, \mathbb{R}) \to \mathrm{SO}(3, \mathbb{R})$,
+$(x, y) \mapsto w(x, y)$, is not surjective. That is, Mycielski's question has a negative answer
+for $\mathrm{SO}(3, \mathbb{R})$.
+
+The Kourovka Notebook (21st issue) answers 16.68 negatively for $\mathrm{SO}(3, \mathbb{R})$,
+noting that this follows from Thom (2013), whose Corollary 1.2 gives, for every
+$\varepsilon > 0$, a nontrivial word $w$ with $\|1 - w(u, v)\| \le \varepsilon$ for all unitary
+$u, v$, in particular for all $u, v \in \mathrm{SO}(3, \mathbb{R})$.
 
 ## Depends on
 
-- [So3 Word Maps Surjective](so3-word-maps-surjective.md)
+- [Surjectivity of word maps on $\mathrm{SO}(3, \mathbb{R})$ (Kourovka 16.68(c))](so3-word-maps-surjective.md)
 
 ## Sources
 

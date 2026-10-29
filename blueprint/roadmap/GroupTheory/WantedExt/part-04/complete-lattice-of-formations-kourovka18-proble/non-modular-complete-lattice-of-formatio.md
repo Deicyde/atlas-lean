@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CompleteLatticeOfFormationsKourovka18Problem92Wanted.nonModularCompleteLatticeOfFormations
 ---
 
-# Non Modular Complete Lattice Of Formations
+# The non-modular formation lattice problem (Kourovka 18.92(b), A. N. Skiba)
 
-Kourovka 18.92(b) (A. N. Skiba): there is a non-modular complete lattice of formations of finite
-groups.
+**The non-modular formation lattice problem (Kourovka 18.92(b), A. N. Skiba).** The proposition
+that there is a complete lattice of formations of finite groups that is not modular, joins being
+least upper bounds in the lattice and meets being intersections.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Class](group-class.md)
-- [Is Complete Lattice Of Formations](is-complete-lattice-of-formations.md)
-- [Is Modular In](is-modular-in.md)
+- [Isomorphism-closed classes of groups (Kourovka 18.92)](group-class.md)
+- [Complete lattices of formations](is-complete-lattice-of-formations.md)
+- [Modular sets of group classes](is-modular-in.md)
 
 ## Sources
 

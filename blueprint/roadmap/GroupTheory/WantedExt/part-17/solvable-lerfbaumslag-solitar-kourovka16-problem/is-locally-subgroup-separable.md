@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SolvableLERFBaumslagSolitarKourovka16Problem2Wanted.IsLocallySubgroupSeparable
 ---
 
-# Is Locally Subgroup Separable
+# Locally subgroup-separable (LERF) group
 
-`G` is locally subgroup-separable (LERF): every finitely generated subgroup is separable.
+**Locally subgroup-separable (LERF) group.** A group $G$ is locally subgroup-separable, or
+LERF, when every finitely generated subgroup of $G$ is separable.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Separable Subgroup](is-separable-subgroup.md)
+- [Separable subgroup](is-separable-subgroup.md)
 
 ## Sources
 

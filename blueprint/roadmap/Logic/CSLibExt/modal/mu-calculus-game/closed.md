@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.Closed
 ---
 
-# Closed
+# Closed formulas
 
-A formula with no free variables.
+**Closed formulas.** A μ-calculus formula $\varphi$ is closed when it is closed at depth $0$,
+that is, when it has no free variables.
 
 ## Depends on
 
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
-- [Closed At](closed-at.md)
+- [Formulas closed at depth $d$](closed-at.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.IsCPiGroup
 ---
 
-# Is CPi Group
+# $C_\pi$-group
 
-`G` is a `C_π`-group: it has exactly one conjugacy class of Hall `π`-subgroups.
+**$C_\pi$-group.** Let $\pi$ be a set of natural numbers. A group $G$ is a $C_\pi$-group when it
+has a Hall $\pi$-subgroup and any two Hall $\pi$-subgroups $H$ and $K$ of $G$ are conjugate, that
+is, $K = gHg^{-1}$ for some $g \in G$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Hall Pi Subgroup](is-hall-pi-subgroup.md)
+- [Hall $\pi$-subgroup](is-hall-pi-subgroup.md)
 
 ## Sources
 

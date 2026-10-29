@@ -20,7 +20,7 @@ https://arxiv.org/abs/2112.14546.
 
 ## Depends on
 
-- [Exists Finitely Presented Soluble Torsion Length Gt Two](exists-finitely-presented-soluble-torsio.md)
+- [Kourovka Problem 19.23 (Chiodo–Vyas), finitely presented form](exists-finitely-presented-soluble-torsio.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PermutationCharactersIndependentKourovka11Problem9Wanted.permChar
 ---
 
-# Perm Char
+# Rational permutation character on the cosets of a subgroup
 
-The permutation character `1_H^G` of `G` on the left cosets of `H`: its value at `g` is the
-number of cosets `x H` with `g x H = x H`.
+**Rational permutation character on the cosets of a subgroup.** For a subgroup $H$ of a group
+$G$, the permutation character $1_H^G : G \to \mathbb{Q}$ sends $g \in G$ to the number of left
+cosets $xH$ of $H$ with $gxH = xH$, and to $0$ when $g$ fixes infinitely many cosets.
 
 ## Depends on
 

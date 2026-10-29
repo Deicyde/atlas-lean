@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Modal.Formula.and
 ---
 
-# And
+# Conjunction
 
-Conjunction encoded using implication and falsity.
+**Conjunction.** For modal formulas $\varphi$ and $\psi$, the conjunction $\varphi \wedge \psi$
+is the formula $\neg(\varphi \to \neg\psi)$, where $\neg\chi$ stands for $\chi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Proof depends on
 
-- [Neg](neg.md)
+- [Negation of modal formulas](neg.md)
 
 ## Sources
 

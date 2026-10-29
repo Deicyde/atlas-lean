@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SolvableLERFBaumslagSolitarKourovka16Problem2Wanted.BS1
 ---
 
-# BS1
+# The Baumslag–Solitar group BS(1, n)
 
-The solvable Baumslag-Solitar group `BS(1, n) = ⟨a, b | b a b⁻¹ = aⁿ⟩`, with `a = x₀` and
-`b = x₁`.
+**The Baumslag–Solitar group BS(1, n).** For a natural number $n$, $\mathrm{BS}(1, n)$ is the
+group with presentation $\langle a, b \mid b a b^{-1} = a^n \rangle$.
 
 ## Depends on
 

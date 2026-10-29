@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MaximalHallCompositionFactorsKourovka17Problem92Wanted.IsCompositionFactor
 ---
 
-# Is Composition Factor
+# Composition factor of a group (Kourovka 17.92)
 
-`S` is a composition factor of `G`: `S ≅ H/K` for a subnormal subgroup `H` of `G` and a normal
-subgroup `K` of `H` with `H/K` simple.
+**Composition factor of a group (Kourovka 17.92).** For groups $G$ and $S$, $S$ is a
+composition factor of $G$ when there are subgroups $H$ and $K$ of $G$ such that $H$ is subnormal in
+$G$, $H \cap K$ is normal in $H$, and the quotient $H/(H \cap K)$ is a simple group isomorphic to
+$S$.
 
 ## Depends on
 

@@ -23,8 +23,8 @@ eat.
 - [Transition system of a dining-philosophers protocol](lts.md)
 - [Neighbours-apart formula](neighbours-apart.md)
 - [Resource-ordered dining-philosophers protocol](ordered.md)
-- [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
-- [Satisfies](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
+- [The CTL operator $\mathrm{AG}$](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
+- [Satisfaction of CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
 
 ## Proof depends on
 
@@ -32,8 +32,8 @@ eat.
 - [When a philosopher can move](can-move.md)
 - [Move of a philosopher](move.md)
 - [Phase of a philosopher](phase.md)
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
-- [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [Correctness of the CTL model checker](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 
 ## Sources

@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.LTL.language_propNa
 ---
 
-# Language prop Na
+# The propositional automaton recognizes φ
 
-The propositional automaton accepts exactly the language of `φ`.
+**The propositional automaton recognizes φ.** For a propositional formula $\varphi$, the
+three-state Büchi automaton for $\varphi$ accepts exactly the infinite words of letters (sets of
+atoms) that satisfy $\varphi$ read as an LTL formula, where an atom $a$ holds at a letter $s$ iff
+$a \in s$.
 
 ## Depends on
 
-- [Prop Formula](prop-formula.md)
-- [To LTL](to-ltl.md)
-- [Language](../omega-word/language.md)
-- [Prop Na](prop-na.md)
+- [Propositional formulas](prop-formula.md)
+- [Propositional formulas as LTL formulas](to-ltl.md)
+- [Language of an LTL formula](../omega-word/language.md)
+- [Büchi automaton for a propositional formula](prop-na.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
-- [Satisfies](../omega-word/satisfies.md)
-- [Mem language](../omega-word/mem-language.md)
-- [Satisfies to LTL](satisfies-to-ltl.md)
+- [Evaluating a propositional formula at a letter](eval.md)
+- [Satisfaction of LTL formulas on ω-words](../omega-word/satisfies.md)
+- [Membership in the language of a formula](../omega-word/mem-language.md)
+- [Propositional formulas are evaluated at the first letter](satisfies-to-ltl.md)
 
 ## Sources
 

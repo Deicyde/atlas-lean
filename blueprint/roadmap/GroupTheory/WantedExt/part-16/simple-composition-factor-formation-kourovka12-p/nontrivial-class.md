@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SimpleCompositionFactorFormationKourovka12Problem97Wanted.NontrivialClass
 ---
 
-# Nontrivial Class
+# Classes containing a nontrivial finite group
 
-`X` contains a nontrivial finite group (`X` is not the trivial formation).
+**Classes containing a nontrivial finite group.** A class $X$ of groups is nontrivial when it
+contains a nontrivial finite group; for a formation this means that $X$ is not the trivial
+formation.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.97)](group-class.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallSubgroupPrimeSetIntersectionKourovka18Problem38Wanted.IsPiNumber
 ---
 
-# Is Pi Number
+# π-numbers
 
-`n` is a `π`-number: every prime divisor of `n` lies in `π`.
+**π-numbers.** Let $\pi$ be a set of natural numbers. A natural number $n$ is a $\pi$-number
+when every prime divisor of $n$ lies in $\pi$.
 
 ## Depends on
 

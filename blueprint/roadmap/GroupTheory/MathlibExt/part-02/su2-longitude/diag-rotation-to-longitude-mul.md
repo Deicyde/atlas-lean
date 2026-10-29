@@ -15,7 +15,7 @@ diagonal rotation through $a + b$.
 ## Depends on
 
 - [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 

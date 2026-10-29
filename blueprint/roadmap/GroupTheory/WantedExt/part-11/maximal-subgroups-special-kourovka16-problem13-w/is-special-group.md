@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.IsSpecialGroup
 ---
 
-# Is Special Group
+# Special group
 
-`H` is special in the sense of the problem: `Z(H) = [H, H] = Φ(H)`.
+**Special group.** A group $H$ is special when its center, its commutator subgroup and its
+Frattini subgroup coincide: $Z(H) = [H, H] = \Phi(H)$.
 
 ## Depends on
 

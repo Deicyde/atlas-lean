@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.divRunCount_one
 ---
 
-# Div Run Count one
+# Exact formula for the length-one run count
 
-Proposition 4: `A_B(1) = 4(2B+1)³ D(B) + 2B(2B+1)((2B+1)² - 1)` with
-`D(B) = ∑_{m=1}^B ⌊B/m⌋`, and `A_B(1) = 32 B⁴ log B + O(B⁴)` (the `O` stated with an
-explicit constant for `B ≥ 2`).
+**Exact formula for the length-one run count.** For every natural number $B$, let
+$D(B) = \sum_{m=1}^{B} \lfloor B/m \rfloor$ and let $A_B(1)$ be the number of integer tuples
+$(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and $(a, b, c) \ne (0, 0, 0)$ that have
+a divisibility run of length at least $1$. Then
+
+$$A_B(1) = 4(2B+1)^3 D(B) + 2B(2B+1)\left((2B+1)^2 - 1\right).$$
 
 ## Depends on
 
-- [Div Run Count](div-run-count.md)
+- [Counting configurations with long divisibility runs](div-run-count.md)
 
 ## Sources
 

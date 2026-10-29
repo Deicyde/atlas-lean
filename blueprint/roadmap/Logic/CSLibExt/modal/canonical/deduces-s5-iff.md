@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Modal.deduces_S5_iff
 ---
 
-# Deduces S5 iff
+# Strong soundness and completeness of S5
 
-Local consequence in S5 is local semantic consequence over equivalence models.
+**Strong soundness and completeness of S5.** For every set $\Gamma$ of modal formulas and every
+modal formula $\varphi$, $\varphi$ is a local consequence of $\Gamma$ in S5 if and only if $\Gamma$
+locally entails $\varphi$ over Kripke models whose accessibility relation is an equivalence
+relation: $\varphi$ holds at every world of every such Kripke model, with worlds in the universe of
+the atoms, at which every formula of $\Gamma$ holds.
 
 ## Depends on
 
-- [S5](../hilbert/s5.md)
-- [Deduces](../hilbert/deduces.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S5](../hilbert/s5.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Locally Entails](locally-entails.md)
+- [Local semantic consequence over a class of Kripke models](locally-entails.md)
 
 ## Proof depends on
 
 - [Local soundness](../hilbert/satisfies.md)
-- [Axiom Five](../kripke/axiom-five.md)
+- [Axiom 5](../kripke/axiom-five.md)
 - [Axiom T](../kripke/axiom-t.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Valid](../kripke/valid.md)
-- [Valid axiom Five](../kripke/valid-axiom-five.md)
-- [Valid axiom T](../kripke/valid-axiom-t.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
+- [Axiom 5 is valid on euclidean Kripke models](../kripke/valid-axiom-five.md)
+- [Axiom T is valid on reflexive Kripke models](../kripke/valid-axiom-t.md)
 - [Strong completeness of S5](completeness-s5.md)
 
 ## Sources

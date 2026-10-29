@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditarilyJustInfiniteGroupsKourovka15Problem18Wanted.IsHereditarilyJustInfinite
 ---
 
-# Is Hereditarily Just Infinite
+# Hereditarily just infinite groups
 
-`G` is hereditarily just infinite (Kourovka 15.18): it is infinite, residually finite, and all
-its nontrivial normal subgroups are just infinite.
+**Hereditarily just infinite groups.** A group $G$ is hereditarily just infinite (in the
+sense of Kourovka 15.18) if it is infinite, residually finite, and every nontrivial normal
+subgroup of $G$, viewed as a group in its own right, is just infinite.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Just Infinite](is-just-infinite.md)
-- [Is Residually Finite](is-residually-finite.md)
+- [Just infinite groups](is-just-infinite.md)
+- [Residually finite groups](is-residually-finite.md)
 
 ## Sources
 

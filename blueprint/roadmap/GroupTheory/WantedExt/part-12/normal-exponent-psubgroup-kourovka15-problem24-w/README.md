@@ -4,5 +4,5 @@ navigation: module
 
 # Normal Exponent PSubgroup Kourovka15 Problem24
 
-- [Normal Exponent PSubgroup Of Large Prime](normal-exponent-psubgroup-of-large-prime.md)
-- [Normal Exponent PSubgroup Of Large Prime holds](normal-exponent-psubgroup-of-large-prime-2.md)
+- [Berkovich's question on normal subgroups of exponent p, for p > n](normal-exponent-psubgroup-of-large-prime.md)
+- [Normal subgroups of exponent p in p-groups when p > n](normal-exponent-psubgroup-of-large-prime-2.md)

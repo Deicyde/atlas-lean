@@ -19,7 +19,7 @@ Zalesskii, Forum Math. 11 (1999), no. 1, 49-61, Kourovka Archive, Problem 12.70:
 
 ## Depends on
 
-- [Fixed Subgroup Finitely Generated](fixed-subgroup-finitely-generated.md)
+- [Ribes's question on fixed subgroups of free pro-$p$ groups (Kourovka 12.70)](fixed-subgroup-finitely-generated.md)
 
 ## Sources
 

@@ -6,16 +6,20 @@ proof: formalized
 lean: Cslib.Logic.FOL.termSymbolFinset_rel_subset
 ---
 
-# Term Symbol Finset rel subset
+# Symbols of an argument of a relational atomic formula
 
-The symbols of an argument term occur in the atomic formula. Source: D. van Dalen,
-*Logic and Structure*, 5th ed., Springer 2013, §3.1.
+**Symbols of an argument of a relational atomic formula.** Let $R$ be an $l$-ary relation
+symbol of a first-order language $L$ and let $t_0, \dots, t_{l-1}$ be terms of $L$ in free
+variables from $\alpha$ and $n$ bound variables. For every $i < l$, every symbol occurring in
+$t_i$ occurs in the atomic formula $R(t_0, \dots, t_{l-1})$, viewed as a formula with $n$ bound
+variables: the finite set of symbols of $t_i$ is contained in that of $R(t_0, \dots, t_{l-1})$.
 
 ## Depends on
 
-- [Formula Symbol Finset](formula-symbol-finset.md)
-- [Term Symbol Finset](term-symbol-finset.md)
+- [Finite set of symbols of a formula](formula-symbol-finset.md)
+- [Finite set of symbols of a term](term-symbol-finset.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.CompletenessUncountable](../../../../../sources/v2/CSLibExt.md)
+- D. van Dalen, *Logic and Structure*, 5th ed., Springer 2013, §3.1.

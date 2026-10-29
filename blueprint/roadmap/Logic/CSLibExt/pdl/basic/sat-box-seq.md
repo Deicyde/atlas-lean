@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.PDL.sat_box_seq
 ---
 
-# Sat box seq
+# Box of a sequential composition
 
-`[α;β]φ ↔ [α][β]φ`: sequencing composes the relations.
+**Box of a sequential composition.** For every model $M$, world $w$, programs $\alpha$ and
+$\beta$, and formula $\varphi$, the formula $[\alpha;\beta]\varphi$ holds at $w$ if and only if
+$[\alpha][\beta]\varphi$ holds at $w$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
-- [Program](program.md)
-- [Sat](sat.md)
+- [PDL formulas](formula.md)
+- [PDL model](model.md)
+- [PDL programs](program.md)
+- [Satisfaction of PDL formulas](sat.md)
 
 ## Proof depends on
 
-- [Prog Rel](prog-rel.md)
+- [Relation denoted by a PDL program](prog-rel.md)
 
 ## Sources
 

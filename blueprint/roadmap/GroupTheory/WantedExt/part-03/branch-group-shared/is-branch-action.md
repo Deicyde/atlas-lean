@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BranchGroupShared.LevelTransitiveFaithfulAction.IsBranchAction
 ---
 
-# Is Branch Action
+# Branch action
 
-A branch action: every rigid level stabilizer has finite index.
+**Branch action.** A faithful level-transitive action of a group $G$ on a rooted tree $T$ is a
+branch action when, for every level $n$, the rigid stabilizer of level $n$ has finite index in
+$G$.
 
 ## Depends on
 
 - [Level Transitive Faithful Action](level-transitive-faithful-action.md)
-- [Rooted Tree](rooted-tree.md)
+- [Rooted tree given by levels](rooted-tree.md)
 
 ## Proof depends on
 
-- [Rigid Level Stabilizer](rigid-level-stabilizer.md)
+- [Rigid stabilizer of a level](rigid-level-stabilizer.md)
 
 ## Sources
 

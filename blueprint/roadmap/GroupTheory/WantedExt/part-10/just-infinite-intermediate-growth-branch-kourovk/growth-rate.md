@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.JustInfiniteIntermediateGrowthBranchKourovka15Problem17Wanted.growthRate
 ---
 
-# Growth Rate
+# Growth rate of a finite generating family
 
-The growth rate `ω(G, P) = limsup β_P(n)^(1/n)` of a finite generating family `P`, where
-`β_P(n)` is the number of elements that are products of at most `n` generators and their
-inverses.
+**Growth rate of a finite generating family.** Let $P$ be a generating family of a group $G$
+indexed by $\{0, \dots, k-1\}$, and let $\beta_P(n)$ be the number of elements of $G$ whose word
+length with respect to $P$ is at most $n$, that is, which are products of at most $n$ members of
+$P$ and their inverses. The growth rate of $P$ is the real number
+$\omega(G, P) = \limsup_{n \to \infty} \beta_P(n)^{1/n}$.
 
 ## Depends on
 

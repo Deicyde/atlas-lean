@@ -5,9 +5,14 @@ statement: formalized
 lean: Relation.decidableTransGen
 ---
 
-# Decidable Trans Gen
+# Decidability of the transitive closure on a finite type
 
-`Relation.TransGen` of a decidable relation on a finite type is decidable.
+**Decidability of the transitive closure on a finite type.** Let $\alpha$ be a finite type
+with decidable equality and let $r$ be a decidable relation on $\alpha$. Then the transitive
+closure of $r$ is decidable: for all $a, t \in \alpha$ it is decidable whether $t$ is reachable
+from $a$ in one or more $r$-steps.
+
+The decision is membership of $t$ in the finite set of elements reachable from $a$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mem trans Gen Fin](mem-trans-gen-fin.md)
-- [Trans Gen Fin](trans-gen-fin.md)
+- [Membership in the set reachable from a point](mem-trans-gen-fin.md)
+- [Elements reachable from a point](trans-gen-fin.md)
 
 ## Sources
 

@@ -6,31 +6,35 @@ proof: formalized
 lean: Cslib.Modal.derivable_K_iff_finValid
 ---
 
-# Derivable K iff fin Valid
+# Finite-check criterion for K-theorems
 
-`φ` is a K-theorem iff it passes the finite check.
+**Finite-check criterion for K-theorems.** A modal formula $\varphi$ is a theorem of K iff it
+passes the following finite check: for every nonempty set $U$ of subsets of the set
+$\mathrm{sub}(\varphi)$ of subformulas of $\varphi$, every relation $R \subseteq U \times U$ and
+every $s \in U$, $\varphi$ evaluates to true at $s$ in the finite Kripke model on $U$ with
+relation $R$ in which an atom $p$ is true at $s$ iff $p \in s$.
 
 ## Depends on
 
-- [K](../hilbert/k.md)
-- [Derivable](../hilbert/derivable.md)
-- [Fin Valid](fin-valid.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of the modal logic K](../hilbert/k.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Finite validity check for K](fin-valid.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Valid K](../hilbert/valid-k.md)
-- [Sub](sub.md)
+- [Soundness of K for Kripke models](../hilbert/valid-k.md)
+- [Subformulas](sub.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Eval Fin](eval-fin.md)
-- [Exists not satisfies of not derivable K](exists-not-satisfies-of-not-derivable-k.md)
-- [Filtration](filtration.md)
-- [Filtration Rel](filtration-rel.md)
-- [Filtration Worlds](filtration-worlds.md)
-- [Fin Model](fin-model.md)
-- [Filtration lemma](satisfies-filtration-iff.md)
-- [Sub Type](sub-type.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Boolean evaluation in a finite model](eval-fin.md)
+- [Completeness of K, countermodel form](exists-not-satisfies-of-not-derivable-k.md)
+- [Smallest filtration of a Kripke model](filtration.md)
+- [Smallest filtration relation](filtration-rel.md)
+- [Worlds of the filtration](filtration-worlds.md)
+- [Finite Kripke model on sets of formulas](fin-model.md)
+- [Filtration lemma for the smallest filtration](satisfies-filtration-iff.md)
+- [Type of a world](sub-type.md)
 
 ## Sources
 

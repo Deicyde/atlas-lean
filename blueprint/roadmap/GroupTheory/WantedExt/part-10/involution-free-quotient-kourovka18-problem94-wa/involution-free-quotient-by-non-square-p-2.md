@@ -5,14 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InvolutionFreeQuotientKourovka18Problem94Wanted.involutionFreeQuotientByNonSquarePower_refuted
 ---
 
-# Involution Free Quotient By Non Square Power refuted
+# Quotients by the normal closure of an odd power of a non-square can have involutions
 
-Resolved false: the Kourovka Archive answers 18.94 "No, not always" (an example of V. I. Trofimov);
-another example is `G = ⟨a, b | a² = b²⟩` with `n = 1`, whose quotient by `⟨a^G⟩` has order `2`.
+**Quotients by the normal closure of an odd power of a non-square can have involutions.** There
+exist a group $G$ without involutions (if $g^2 = 1$ then $g = 1$), an element $a \in G$ that is
+not the square of any element of $G$, and an odd natural number $n$ such that the quotient of $G$
+by the normal closure of $a^n$ contains an involution, that is, an element $y \ne 1$ with
+$y^2 = 1$. This answers Kourovka Problem 18.94 in the negative.
+
+Besides an example of V. I. Trofimov, the group $G = \langle a, b \mid a^2 = b^2 \rangle$ with
+$n = 1$ is an example: its quotient by the normal closure of $a$ has order $2$.
 
 ## Depends on
 
-- [Involution Free Quotient By Non Square Power](involution-free-quotient-by-non-square-p.md)
+- [Sozutov's question on involutions in quotients (Kourovka 18.94)](involution-free-quotient-by-non-square-p.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Free By Cyclic Conjugacy Separable Kourovka19 Problem41
 
-- [Free By Cyclic Conjugacy Separable](free-by-cyclic-conjugacy-separable.md)
-- [Free By Cyclic Conjugacy Separable holds](free-by-cyclic-conjugacy-separable-holds.md)
+- [Kapovich's conjugacy separability question (Kourovka 19.41)](free-by-cyclic-conjugacy-separable.md)
+- [Finite-rank free-by-cyclic groups are conjugacy separable](free-by-cyclic-conjugacy-separable-holds.md)

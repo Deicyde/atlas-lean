@@ -6,34 +6,37 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.fragmentWins_iff_winningRegion
 ---
 
-# Fragment game = canonical parity game
+# Wins is the winning region of the fragment game
 
-**Fragment game = canonical parity game.** `Wins` is exactly the canonical
-winning region of the even player in the totalized fragment game.
+**Wins is the winning region of the fragment game.** Let $M$ be a Kripke model, $\rho$ an
+environment, $\varphi$ a fixpoint-free formula and $w$ a world. Then the backward-induction
+winning condition $\mathrm{Wins}_M(\varphi, w)$ holds if and only if the embedded position
+$(\varphi, w)$ lies in the winning region of the even player in the fragment game of $M$ and
+$\rho$.
 
 ## Depends on
 
 - [Winning Region](../../../../Computability/CSLibExt/games/parity/winning-region.md)
 - [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Fix Free Formula](fix-free-formula.md)
-- [Frag Pos](frag-pos.md)
-- [Wins](wins.md)
-- [Fragment Game](fragment-game.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Positions of the totalized fragment game](frag-pos.md)
+- [Backward-induction winning region of the fixpoint-free fragment](wins.md)
+- [Fragment parity game](fragment-game.md)
 
 ## Proof depends on
 
 - [Positional Strategy](../../../../Computability/CSLibExt/games/parity/positional-strategy.md)
 - [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
-- [To Mu](to-mu.md)
-- [Strategy](strategy.md)
-- [Strategy Wins](strategy-wins.md)
-- [Verifier Wins](verifier-wins.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Verifier strategy](strategy.md)
+- [Winning strategy from a position](strategy-wins.md)
+- [Verifier has a winning strategy](verifier-wins.md)
 - [Frag Strategy](frag-strategy.md)
-- [Bespoke → canonical (fragment)](fragment-bespoke-to-canonical.md)
-- [Canonical → Wins (fragment)](fragment-canonical-to-wins.md)
+- [Winning Verifier strategies transfer to the fragment game](fragment-bespoke-to-canonical.md)
+- [The fragment game's winning region is contained in Wins](fragment-canonical-to-wins.md)
 - [Game-vs-satisfaction, strategy direction](wins-implies-verifier-wins.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 

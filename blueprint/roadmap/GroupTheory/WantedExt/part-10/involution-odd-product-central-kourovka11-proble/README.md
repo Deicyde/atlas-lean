@@ -4,6 +4,6 @@ navigation: module
 
 # Involution Odd Product Central Kourovka11 Problem13
 
-- [Odd Core](odd-core.md)
-- [Periodic Involution Central Mod Odd Core](periodic-involution-central-mod-odd-core.md)
-- [Periodic Involution Central Mod Odd Core refuted](periodic-involution-central-mod-odd-core-2.md)
+- [Odd core from normal subgroups of odd-order elements](odd-core.md)
+- [Borovik's question on involutions with odd-order products (Kourovka 11.13)](periodic-involution-central-mod-odd-core.md)
+- [A periodic counterexample to Borovik's question (Kourovka 11.13)](periodic-involution-central-mod-odd-core-2.md)

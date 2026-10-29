@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SurjectiveRotaBaxterOperatorKourovka20Problem125Wanted.IsRotaBaxterOperator
 ---
 
-# Is Rota Baxter Operator
+# Rota–Baxter operators on groups
 
-A Rota-Baxter operator (of weight `1`) on a group `G`: a map `B : G → G` with
-`B(g) B(h) = B(g B(g) h B(g)⁻¹)` for all `g, h ∈ G`.
+**Rota–Baxter operators on groups.** A Rota–Baxter operator (of weight $1$) on a group $G$ is
+a map $B \colon G \to G$ such that $B(g)\,B(h) = B\bigl(g\,B(g)\,h\,B(g)^{-1}\bigr)$ for all
+$g, h \in G$.
 
 ## Depends on
 

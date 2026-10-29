@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoClosureSolvableCompositionFactorsKourovka19Problem67Wanted.solvableTwoClosureFactorsCyclicOrAlternating
 ---
 
-# Solvable Two Closure Factors Cyclic Or Alternating
+# Kourovka Problem 19.67
 
-Kourovka 19.67 (I. Ponomarenko): for a solvable permutation group `G` on a finite set `Ω`,
-every composition factor of the `2`-closure `G⁽²⁾` is cyclic or isomorphic to an alternating
-group.
+**Kourovka Problem 19.67.** The statement that for every finite set $\Omega$ and every
+solvable subgroup $G$ of the symmetric group $\mathrm{Sym}(\Omega)$, every composition factor of
+the $2$-closure $G^{(2)}$ of $G$ is cyclic or isomorphic to the alternating group $A_n$ for some
+natural number $n$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Composition Factor](../../part-10/kourovka-notebook-shared/is-composition-factor.md)
-- [Two Closure](two-closure.md)
+- [Composition factors via subnormal subgroups](../../part-10/kourovka-notebook-shared/is-composition-factor.md)
+- [The $2$-closure of a permutation group](two-closure.md)
 
 ## Sources
 

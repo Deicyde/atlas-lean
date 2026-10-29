@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PGroupEqualOrderGeneratorsKourovka11Problem6Wanted.pGroupEqualOrderGenerators
 ---
 
-# P Group Equal Order Generators
+# Generating sets of equal order in finite p-groups (Kourovka 11.6)
 
-Kourovka 11.6 (C. Bagiński): for every odd prime `p`, every finite `p`-group has a generating
-set all of whose elements have the same order.
+**Generating sets of equal order in finite p-groups (Kourovka 11.6).** The statement that for
+every odd prime $p$, every finite $p$-group $G$ has a generating set $S$ all of whose elements have
+the same order.
 
 ## Depends on
 

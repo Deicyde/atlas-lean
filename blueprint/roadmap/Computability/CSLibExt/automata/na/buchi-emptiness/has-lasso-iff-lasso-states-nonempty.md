@@ -23,10 +23,10 @@ reachable from a start state and lie on a nonempty cycle, is nonempty.
 
 - [Symbol-forgetting transition graph of a Büchi automaton](step.md)
 - [The lasso condition in the transition graph](has-lasso-iff-reachable.md)
-- [Mem trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin.md)
-- [Mem trans Gen Fin From](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin-from.md)
-- [Trans Gen Fin](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)
-- [Trans Gen Fin From](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin-from.md)
+- [Membership in the set reachable from a point](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin.md)
+- [Membership in the set reachable from finitely many sources](../../../../../Logic/MathlibExt/relation/finite-reachability/mem-trans-gen-fin-from.md)
+- [Elements reachable from a point](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin.md)
+- [Elements reachable from a finite set of sources](../../../../../Logic/MathlibExt/relation/finite-reachability/trans-gen-fin-from.md)
 
 ## Sources
 

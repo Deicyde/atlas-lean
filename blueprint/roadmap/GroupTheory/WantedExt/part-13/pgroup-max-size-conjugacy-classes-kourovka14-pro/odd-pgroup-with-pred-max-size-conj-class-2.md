@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PGroupMaxSizeConjugacyClassesKourovka14Problem92Wanted.oddPGroupWithPredMaxSizeConjClasses_holds
 ---
 
-# Odd PGroup With Pred Max Size Conj Classes holds
+# Some odd $p$-group has exactly $p - 1$ conjugacy classes of maximum size
 
-Resolved true: the Kourovka Archive answers 14.92 "Yes, there are, for `p = 3`" (Jaikin-Zapirain,
-Newman and O'Brien): some finite `3`-group has exactly `2` conjugacy classes of maximum size.
+**Some odd $p$-group has exactly $p - 1$ conjugacy classes of maximum size.** There exist an odd
+prime $p$ and a finite $p$-group with exactly $p - 1$ conjugacy classes of maximum size.
 
 ## Depends on
 
-- [Odd PGroup With Pred Max Size Conj Classes](odd-pgroup-with-pred-max-size-conj-class.md)
+- [Odd $p$-groups with $p - 1$ conjugacy classes of maximum size (Kourovka 14.92)](odd-pgroup-with-pred-max-size-conj-class.md)
 
 ## Sources
 

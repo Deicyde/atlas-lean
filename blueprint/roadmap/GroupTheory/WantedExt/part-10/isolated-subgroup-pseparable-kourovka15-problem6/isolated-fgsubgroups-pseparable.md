@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IsolatedSubgroupPSeparableKourovka15Problem60Wanted.isolatedFGSubgroupsPSeparable
 ---
 
-# Isolated FGSubgroups PSeparable
+# Moldavanskiĭ's question on $p$-separability of isolated subgroups (Kourovka 15.60)
 
-Kourovka 15.60 (D. I. Moldavanskiĭ), for some prime `p`: every finitely generated `p'`-isolated
-subgroup of a free group is separable in the class of finite `p`-groups.
+**Moldavanskiĭ's question on $p$-separability of isolated subgroups (Kourovka 15.60).** The
+statement that there is a prime $p$ such that, for every set $\alpha$, every finitely generated
+$p'$-isolated subgroup of the free group on $\alpha$ is separable in the class of finite
+$p$-groups.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is PPrime Isolated](is-pprime-isolated.md)
-- [Is PSeparable](is-pseparable.md)
+- [$p'$-isolated subgroup](is-pprime-isolated.md)
+- [Separability in the class of finite $p$-groups](is-pseparable.md)
 
 ## Sources
 

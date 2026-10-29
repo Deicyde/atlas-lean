@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.MemLpOfLqIntegrableOnFiniteMeasureSetsWanted.memLp_of_memLp_of_lintegral_rpow_lt_top_of_measure_lt_top
 ---
 
-# Mem Lp Of Lq Integrable On Finite Measure Sets Wanted
+# An $L^p$ function with finite $L^q$ mass on finite-measure sets is in $L^q$
 
-Fix $1 \le p < q < \infty$.
-Suppose $f \in L^p(\mathbb{R})$ and $\int_A |f|^q < \infty$ for any measurable $A$ with $|A| <
-\infty$. Show that $f \in L^q(\mathbb{R})$.
+**An $L^p$ function with finite $L^q$ mass on finite-measure sets is in $L^q$.** Let
+$1 \le p < q < \infty$ and let $f : \mathbb{R} \to \mathbb{R}$ belong to $L^p(\mathbb{R})$. If
+$\int_A |f|^q < \infty$ for every Borel set $A \subseteq \mathbb{R}$ of finite Lebesgue measure,
+then $f \in L^q(\mathbb{R})$.
 
 ## Depends on
 

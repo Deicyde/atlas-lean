@@ -17,7 +17,7 @@ Archive, Problem 12.26: No; G = 3^2.GL_2(3), p = 2.
 
 ## Depends on
 
-- [Defect Zero Block Iff PRegular Centralizer](defect-zero-block-iff-pregular-centraliz.md)
+- [Kourovka Problem 12.26](defect-zero-block-iff-pregular-centraliz.md)
 
 ## Sources
 

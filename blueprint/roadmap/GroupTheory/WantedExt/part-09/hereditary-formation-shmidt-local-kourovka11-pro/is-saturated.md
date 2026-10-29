@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditaryFormationShmidtLocalKourovka11Problem91Wanted.IsSaturated
 ---
 
-# Is Saturated
+# Saturated classes of groups
 
-`F` is saturated: a finite soluble group lies in `F` whenever its quotient by the Frattini
-subgroup does. For formations of finite soluble groups, saturated is the same as local
-(Gaschütz-Lubeseder theorem).
+**Saturated classes of groups.** A class $\mathfrak F$ of groups is saturated if every finite
+soluble group $G$ such that $G/\Phi(G)$ lies in $\mathfrak F$, where $\Phi(G)$ is the Frattini
+subgroup of $G$, itself lies in $\mathfrak F$.
+
+By the Gaschütz–Lubeseder theorem, a nonempty formation of finite soluble groups is saturated if
+and only if it is local.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Classes of groups](group-class.md)
 
 ## Sources
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DerivedSubgroupAsFrattiniKourovka16Problem11Wanted.derivedSubgroupIsFrattini_refuted
 ---
 
-# Derived Subgroup Is Frattini refuted
+# Derived subgroups of p-groups need not be Frattini subgroups of p-groups
 
-Resolved false: Ionin and Semidetnov (Answer 3.2) take `p = 2` and `G = SmallGroup(256, 511)`, whose
-derived subgroup is the Hall-Senior group 32/40 (Lemma 3.4, a GAP computation); by a theorem of van
-der Waall and de Nijs (their Theorem 1.15) that group is not isomorphic to `Φ(H)` for any finite
-2-group `H`; the authors state that their solutions were found with the assistance of large language
-models and checked by them. The Kourovka Notebook (21st issue) answers 16.11 "No, not always".
+**Derived subgroups of p-groups need not be Frattini subgroups of p-groups.** There exist a prime
+$p$ and a finite $p$-group $G$ such that for every finite $p$-group $H$, the Frattini subgroup
+$\Phi(H)$ of $H$ is not isomorphic to the derived subgroup $[G, G]$ of $G$. That is, the conjecture
+of Kourovka Problem 16.11 is false.
+
+Ionin and Semidetnov take $p = 2$ and $G$ the group SmallGroup(256, 511), whose derived subgroup
+is the Hall-Senior group 32/40 (a GAP computation); by a theorem of van der Waall and de Nijs, that
+group is not isomorphic to the Frattini subgroup of any finite 2-group. The authors state that
+their solutions were found with the assistance of large language models and checked by them.
 
 ## Depends on
 
-- [Derived Subgroup Is Frattini](derived-subgroup-is-frattini.md)
+- [Derived subgroups of p-groups as Frattini subgroups (Kourovka 16.11)](derived-subgroup-is-frattini.md)
 
 ## Sources
 

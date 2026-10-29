@@ -5,15 +5,21 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MappingTorusLinearKourovka17Problem108Wanted.sapirGroupIntegerLinear_holds
 ---
 
-# Sapir Group Integer Linear holds
+# Sapir's group is linear over the integers
 
-Resolved true: the Kourovka Archive answers 17.108 "Yes, this group is linear" (M. F. Hagen, letter
-of 6 August 2018): the group is the mapping torus of an irreducible atoroidal self-monomorphism of a
-free group, so it is virtually special and hence `ℤ`-linear by Theorem B of Hagen and Wise (2016).
+**Sapir's group is linear over the integers.** The group
+$\langle a, b, t \mid a^t = ab, b^t = ba \rangle$, where $a^t = t^{-1} a t$, embeds in
+$\mathrm{GL}_n(\mathbb{Z})$ for some natural number $n$. That is, Kourovka Problem 17.108 has a
+positive answer.
+
+The Kourovka Archive answers 17.108 "Yes, this group is linear" (M. F. Hagen, letter of 6
+August 2018): the group is the mapping torus of an irreducible atoroidal self-monomorphism of a
+free group, so it is virtually special and hence $\mathbb{Z}$-linear by Theorem B of Hagen and
+Wise (2016).
 
 ## Depends on
 
-- [Sapir Group Integer Linear](sapir-group-integer-linear.md)
+- [Linearity of Sapir's group over the integers (Kourovka 17.108)](sapir-group-integer-linear.md)
 
 ## Sources
 

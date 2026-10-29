@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EAutomorphismNilAutomorphismKourovka11Problem23Wanted.eAutomorphismIsNil
 ---
 
-# E Automorphism Is Nil
+# Vilyatser's question on $e$-automorphisms (Kourovka 11.23)
 
-Kourovka 11.23 (V. G. Vilyatser): every `e`-automorphism of a group is a nil-automorphism.
+**Vilyatser's question on $e$-automorphisms (Kourovka 11.23).** The proposition that every
+$e$-automorphism $\varphi$ of a group $G$ is a nil-automorphism of $G$.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is EAutomorphism](is-eautomorphism.md)
-- [Is Nil Automorphism](is-nil-automorphism.md)
+- [$e$-automorphisms](is-eautomorphism.md)
+- [Nil-automorphisms](is-nil-automorphism.md)
 
 ## Sources
 

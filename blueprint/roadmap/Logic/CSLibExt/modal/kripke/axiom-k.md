@@ -7,11 +7,12 @@ lean: Cslib.Modal.Formula.axiomK
 
 # Axiom K
 
-The distribution axiom for normal modal logic.
+**Axiom K.** For modal formulas $\varphi$ and $\psi$, the distribution axiom K is the formula
+$\Box(\varphi \to \psi) \to (\Box\varphi \to \Box\psi)$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Sources
 

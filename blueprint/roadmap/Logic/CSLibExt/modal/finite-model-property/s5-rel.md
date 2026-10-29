@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Modal.s5Rel
 ---
 
-# S5 Rel
+# S5 filtration relation
 
-The S5 filtration relation: `s R t` iff `s` and `t` contain the same boxed formulas of
-`sub φ`.
+**S5 filtration relation.** Let $M$ be a Kripke model and $\varphi$ a formula, and let
+$U_\varphi$ be the set of types of worlds of $M$ (the sets of subformulas of $\varphi$ satisfied at
+a world). The S5 relation is the relation $R$ on $U_\varphi$ such that $s \mathrel{R} t$ iff for
+every formula $\psi$ with $\Box\psi$ a subformula of $\varphi$, $\Box\psi \in s$ iff
+$\Box\psi \in t$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
 
 ## Proof depends on
 
-- [Sub](../filtration/sub.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
+- [Subformulas](../filtration/sub.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
 
 ## Sources
 

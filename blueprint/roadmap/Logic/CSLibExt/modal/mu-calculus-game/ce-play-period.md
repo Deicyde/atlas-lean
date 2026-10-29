@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.cePlay_period
 ---
 
-# Ce Play period
+# The regression play has period three
 
-The regression play has period 3.
+**The regression play has period three.** Number the positions of the regression play
+from $0$. For every natural number $n$, its position number $n + 3$ equals its position
+number $n$.
 
 ## Depends on
 
 - [Game Position](game-position.md)
-- [Ce Play](ce-play.md)
+- [The regression play](ce-play.md)
 
 ## Proof depends on
 
-- [Ce Next](ce-next.md)
+- [Step map of the regression play](ce-next.md)
 
 ## Sources
 

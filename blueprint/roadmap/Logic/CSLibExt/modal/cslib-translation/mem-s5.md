@@ -8,20 +8,24 @@ lean: Cslib.Modal.Derivable.mem_S5
 
 # Soundness for CSLib's S5
 
-**Soundness for CSLib's S5**: translated S5-theorems are in `Cslib.Logic.Modal.Unimodal.S5`.
+**Soundness for CSLib's S5.** Let $\varphi$ be a CSLib unimodal proposition. If the translation
+of $\varphi$ into the $\bot$, $\to$, $\Box$ basis is a theorem of the Hilbert system S5, then, for
+every type of worlds, $\varphi$ belongs to CSLib's modal logic S5: it holds at every world of every
+CSLib unimodal model on that type whose accessibility relation $R$ is reflexive, transitive and
+Euclidean ($R(w, u)$ and $R(w, v)$ imply $R(u, v)$).
 
 ## Depends on
 
-- [S5](../hilbert/s5.md)
-- [Derivable](../hilbert/derivable.md)
-- [Of Proposition](of-proposition.md)
+- [Extra axioms of S5](../hilbert/s5.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Translation of CSLib's modal propositions](of-proposition.md)
 
 ## Proof depends on
 
-- [Valid S5](../hilbert/valid-s5.md)
+- [Soundness of S5 for Kripke models with an equivalence relation](../hilbert/valid-s5.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Of Model](of-model.md)
-- [Mem logic of valid](mem-logic-of-valid.md)
+- [Kripke model of a CSLib model](of-model.md)
+- [Validity of the translation gives membership in CSLib's logic](mem-logic-of-valid.md)
 
 ## Sources
 

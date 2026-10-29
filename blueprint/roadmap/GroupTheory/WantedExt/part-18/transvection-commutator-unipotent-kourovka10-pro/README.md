@@ -4,6 +4,6 @@ navigation: module
 
 # Transvection Commutator Unipotent Kourovka10 Problem46
 
-- [Is Elementary Transvection](is-elementary-transvection.md)
-- [Double Commutator With Transvections Unipotent](double-commutator-with-transvections-uni.md)
-- [Double Commutator With Transvections Unipotent refuted](double-commutator-with-transvections-uni-2.md)
+- [Elementary transvection](is-elementary-transvection.md)
+- [Petechuk's double commutator question (Kourovka 10.46)](double-commutator-with-transvections-uni.md)
+- [Petechuk's double commutator question has a negative answer (Kourovka 10.46)](double-commutator-with-transvections-uni-2.md)

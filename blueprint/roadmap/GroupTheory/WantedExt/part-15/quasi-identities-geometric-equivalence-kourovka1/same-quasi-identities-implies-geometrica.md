@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.sameQuasiIdentitiesImpliesGeometricallyEquivalent
 ---
 
-# Same Quasi Identities Implies Geometrically Equivalent
+# Plotkin's problem on quasi-identities and geometric equivalence
 
-Kourovka 14.71 (B. I. Plotkin): two groups satisfying the same quasi-identities are
-geometrically equivalent.
+**Plotkin's problem on quasi-identities and geometric equivalence.** The proposition
+(Kourovka Problem 14.71, B. I. Plotkin) that any two groups $G$ and $H$ satisfying the same
+quasi-identities, meaning that every quasi-identity holds in $G$ if and only if it holds in $H$,
+are geometrically equivalent.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Geometrically Equivalent](geometrically-equivalent.md)
-- [Quasi Identity](quasi-identity.md)
-- [Holds In](holds-in.md)
+- [Geometrically equivalent groups](geometrically-equivalent.md)
+- [Quasi-identities of groups](quasi-identity.md)
+- [Satisfaction of a quasi-identity in a group](holds-in.md)
 
 ## Sources
 

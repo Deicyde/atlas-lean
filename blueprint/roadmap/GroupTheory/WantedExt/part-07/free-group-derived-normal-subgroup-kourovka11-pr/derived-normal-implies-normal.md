@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeGroupDerivedNormalSubgroupKourovka11Problem124Wanted.derivedNormalImpliesNormal
 ---
 
-# Derived Normal Implies Normal
+# Kourovka Problem 11.124 (free-group subgroups with normal derived subgroup)
 
-Kourovka 11.124 (V. E. Shpilrain): in a non-cyclic free group `F` (of any rank), every
-non-cyclic subgroup `R` whose derived subgroup `[R, R]` is normal in `F` is itself normal in `F`.
+**Kourovka Problem 11.124 (free-group subgroups with normal derived subgroup).** The
+statement that for every set $X$ such that the free group $F$ on $X$ is not cyclic, every subgroup
+$R$ of $F$ that is not cyclic and whose derived subgroup $[R, R]$ is normal in $F$ is itself
+normal in $F$.
 
 ## Depends on
 

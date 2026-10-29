@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BlockLatticeVarietyKourovka11Problem93Wanted.IsBlock
 ---
 
-# Is Block
+# Blocks of a group
 
-The blocks of a group `G` (Kourovka, Archive 9.62): the cosets `g N` of normal subgroups `N`,
-and the empty set. Ordered by inclusion they form the block lattice `C(G)`.
+**Blocks of a group.** A subset $X$ of a group $G$ is a block if it is empty or a coset $gN$
+of a normal subgroup $N$ of $G$ (Kourovka Notebook, Archive 9.62). Ordered by inclusion, the
+blocks of $G$ form the block lattice $C(G)$.
 
 ## Depends on
 

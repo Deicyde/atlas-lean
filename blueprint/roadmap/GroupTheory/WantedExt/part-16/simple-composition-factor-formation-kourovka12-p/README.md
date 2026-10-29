@@ -4,11 +4,11 @@ navigation: module
 
 # Simple Composition Factor Formation Kourovka12 Problem97
 
-- [Group Class](group-class.md)
-- [Is Formation](is-formation.md)
-- [Nontrivial Class](nontrivial-class.md)
-- [Residual](residual.md)
-- [All Composition Factors Iso](all-composition-factors-iso.md)
+- [Isomorphism-closed classes of groups (Kourovka 12.97)](group-class.md)
+- [Formations of finite groups (Kourovka 12.97)](is-formation.md)
+- [Classes containing a nontrivial finite group](nontrivial-class.md)
+- [The residual of a group with respect to a class (Kourovka 12.97)](residual.md)
+- [Groups with a subnormal series whose factors are all isomorphic to a given group](all-composition-factors-iso.md)
 - [Is Proper In](is-proper-in.md)
-- [Composition Factor Formation Indecomposable](composition-factor-formation-indecomposa.md)
-- [Composition Factor Formation Indecomposable holds](composition-factor-formation-indecomposa-2.md)
+- [Kourovka Problem 12.97 (Shemetkov)](composition-factor-formation-indecomposa.md)
+- [Mel'nikov's theorem on Kourovka Problem 12.97](composition-factor-formation-indecomposa-2.md)

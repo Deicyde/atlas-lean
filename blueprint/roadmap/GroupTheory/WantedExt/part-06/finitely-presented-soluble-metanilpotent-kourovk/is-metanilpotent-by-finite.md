@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyPresentedSolubleMetanilpotentKourovka16Problem35Wanted.IsMetanilpotentByFinite
 ---
 
-# Is Metanilpotent By Finite
+# Metanilpotent-by-finite groups
 
-`G` is (nilpotent-by-nilpotent)-by-finite: some normal subgroup `M` of finite index has a
-normal nilpotent subgroup `N` with `M / N` nilpotent.
+**Metanilpotent-by-finite groups.** A group $G$ is (nilpotent-by-nilpotent)-by-finite when it
+has a normal subgroup $M$ of finite index and a normal subgroup $N$ of $M$ such that $N$ and $M/N$
+are both nilpotent.
 
 ## Depends on
 

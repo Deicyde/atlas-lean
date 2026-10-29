@@ -4,5 +4,5 @@ navigation: module
 
 # Three Maximal Subgroups Infinite Kourovka17 Problem17
 
-- [Three Maximal Subgroups Finite](three-maximal-subgroups-finite.md)
-- [Three Maximal Subgroups Finite refuted](three-maximal-subgroups-finite-refuted.md)
+- [Bergman's question for three maximal subgroups](three-maximal-subgroups-finite.md)
+- [Not every finitely generated group with three maximal subgroups is finite](three-maximal-subgroups-finite-refuted.md)

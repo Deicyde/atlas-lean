@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditaryFormationShmidtLocalKourovka11Problem91Wanted.GroupClass
 ---
 
-# Group Class
+# Classes of groups
 
-A class of groups: a predicate on groups in `Type`.
+**Classes of groups.** A class of groups is a property of groups: for each group $G$ it gives
+a proposition, read as "$G$ belongs to the class". No closure under isomorphism is required.
 
 ## Depends on
 

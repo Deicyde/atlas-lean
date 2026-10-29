@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.LatticeOfGroupTopologiesModularKourovka14Problem4Wanted.nilpotentGroupTopologyLatticeNotModular
 ---
 
-# Nilpotent Group Topology Lattice Not Modular
+# Kourovka Problem 14.4(a) (nilpotent groups with non-modular topology lattice)
 
-Kourovka 14.4(a) (V. I. Arnautov): some nilpotent group `G` has a non-modular lattice
-`𝓛(G)` of all (not necessarily Hausdorff) group topologies.
+**Kourovka Problem 14.4(a) (nilpotent groups with non-modular topology lattice).** This
+proposition states that some nilpotent group $G$ has a non-modular lattice $\mathcal{L}(G)$ of all
+(not necessarily Hausdorff) group topologies.
 
 ## Depends on
 

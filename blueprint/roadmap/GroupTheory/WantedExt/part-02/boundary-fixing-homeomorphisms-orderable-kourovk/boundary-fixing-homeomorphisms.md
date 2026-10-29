@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BoundaryFixingHomeomorphismsOrderableKourovka17Problem20Wanted.boundaryFixingHomeomorphisms
 ---
 
-# Boundary Fixing Homeomorphisms
+# Boundary-fixing homeomorphisms of the square
 
-`Homeo(I²; ∂I²)`: the homeomorphisms of the square that fix its boundary pointwise.
+**Boundary-fixing homeomorphisms of the square.** Let $I^2 = [0, 1] \times [0, 1]$ be the
+closed square and $\partial I^2$ its boundary. $\mathrm{Homeo}(I^2; \partial I^2)$ is the subgroup
+of the group of homeomorphisms of $I^2$ consisting of those homeomorphisms $h$ with $h(x) = x$ for
+every $x \in \partial I^2$.
 
 ## Depends on
 
-- [Square](square.md)
+- [The closed square](square.md)
 
 ## Proof depends on
 
-- [Square Boundary](square-boundary.md)
+- [Boundary of the square](square-boundary.md)
 
 ## Sources
 

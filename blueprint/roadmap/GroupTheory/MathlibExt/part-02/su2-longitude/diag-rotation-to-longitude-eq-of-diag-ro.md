@@ -17,7 +17,7 @@ equal.
 
 - [Diagonal rotation](diag-rotation.md)
 - [Diagonal rotation as a longitude element](diag-rotation-to-longitude.md)
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Sources
 

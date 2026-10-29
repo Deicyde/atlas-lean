@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.CTL.Satisfies.forallGlobally_iff_reachable
 ---
 
-# Forall Globally iff reachable
+# $\mathrm{AG}$ holds iff every reachable state satisfies the formula
 
-`AG φ` holds exactly when every reachable state satisfies `φ`.
+**$\mathrm{AG}$ holds iff every reachable state satisfies the formula.** Let $\varphi$ be a
+CTL formula and $s$ a state of a labelled transition system with a valuation of the atoms.
+Then $s$ satisfies $\mathrm{AG}\,\varphi$ if and only if every state $t$ reachable from $s$
+(through a finite sequence of transitions, possibly empty) satisfies $\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Forall Globally](forall-globally.md)
-- [Satisfies](satisfies.md)
+- [CTL formulas](formula.md)
+- [The CTL operator $\mathrm{AG}$](forall-globally.md)
+- [Satisfaction of CTL formulas](satisfies.md)
 
 ## Proof depends on
 
-- [Exists Finally](exists-finally.md)
-- [Exists Finally iff reachable](exists-finally-iff-reachable.md)
+- [Exists finally](exists-finally.md)
+- [$\mathsf{EF}$ means reachability](exists-finally-iff-reachable.md)
 
 ## Sources
 

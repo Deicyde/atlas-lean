@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.DirectProductFactorCardinalityKourovka21Problem58Wanted.existsInfiniteGroupStableFactors
 ---
 
-# Exists Infinite Group Stable Factors
+# Infinite groups with equicardinal maximal direct factors (Kourovka 21.58)
 
-Kourovka 21.58 (M. H. Hooshmand): there is an infinite group `G` such that, for every subset
-`A ⊆ G`, all maximal subsets `B` for which the product `A B` is direct have the same
-cardinality.
+**Infinite groups with equicardinal maximal direct factors (Kourovka 21.58).** The statement
+that there is an infinite group $G$ such that for every subset $A \subseteq G$, any two subsets
+$B_1, B_2 \subseteq G$ that are maximal under inclusion among the subsets $B$ for which the
+product $AB$ is direct have the same cardinality.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Direct Product](is-direct-product.md)
+- [Direct product of subsets](is-direct-product.md)
 
 ## Sources
 

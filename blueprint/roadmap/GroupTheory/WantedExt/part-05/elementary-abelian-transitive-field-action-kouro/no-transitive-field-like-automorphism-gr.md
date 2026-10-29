@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementaryAbelianTransitiveFieldActionKourovka18Problem60Wanted.noTransitiveFieldLikeAutomorphismGroup
 ---
 
-# No Transitive Field Like Automorphism Group
+# Kourovka Problem 18.60 (field-like transitive automorphism groups)
 
-Kourovka 18.60 (D. V. Lytkina), the conjecture: for a countably infinite elementary abelian
-2-group `V`, no group `G` of automorphisms of `V` (a subgroup of `Sym(V)` consisting of additive
-bijections) is (a) transitive on `V ∖ {0}` and (b) such that, for every nonzero `v` with stabilizer
-`H = G_v`, there are an `H`-invariant subgroup `V_v` with `V = ⟨v⟩ ⊕ V_v`, an isomorphism
-`ψ : H ≃ P*` onto the multiplicative group of a locally finite field `P` of characteristic `2`,
-and a bijection `θ : V_v → P` with `θ(h w) = ψ(h) θ(w)`.
+**Kourovka Problem 18.60 (field-like transitive automorphism groups).** The conjecture of
+D. V. Lytkina, as a proposition: for every countably infinite elementary abelian $2$-group $V$
+(an abelian group with $v + v = 0$ for all $v \in V$) there is no subgroup $G$ of the symmetric
+group $\mathrm{Sym}(V)$ consisting of additive bijections such that (a) $G$ is transitive on
+$V \setminus \{0\}$, and (b) for every nonzero $v \in V$, writing $H = G_v$ for the stabilizer of
+$v$ in $G$, there are a subgroup $V_v$ of $V$ with $V = \langle v \rangle \oplus V_v$ that every
+element of $H$ maps into itself, a locally finite field $P$ of characteristic $2$, a group
+isomorphism $\psi : H \to P^\times$ onto the multiplicative group of $P$, and a bijection
+$\theta : V_v \to P$ such that $\theta(h w) = \psi(h)\,\theta(w)$ for all $h \in H$ and
+$w \in V_v$.
 
 ## Depends on
 
@@ -20,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Locally Finite Field](is-locally-finite-field.md)
+- [Locally finite field (Kourovka 18.60)](is-locally-finite-field.md)
 
 ## Sources
 

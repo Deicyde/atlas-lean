@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.playLast_cons
 ---
 
-# Play Last cons
+# Prepending to a nonempty play keeps the last position
 
-The last position of a nonempty cons is the last position of its tail.
+**Prepending to a nonempty play keeps the last position.** For a game position $p$ and a
+nonempty list $ps$ of game positions, the list obtained by prepending $p$ to $ps$ has the same
+last position as $ps$.
 
 ## Depends on
 
 - [Game Position](game-position.md)
-- [Play Last](play-last.md)
+- [Last position of a play](play-last.md)
 
 ## Sources
 

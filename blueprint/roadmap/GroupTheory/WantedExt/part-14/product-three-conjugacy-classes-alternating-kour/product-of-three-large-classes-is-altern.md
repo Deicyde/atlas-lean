@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ProductThreeConjugacyClassesAlternatingKourovka20Problem23Wanted.productOfThreeLargeClassesIsAlternatingGroup
 ---
 
-# Product Of Three Large Classes Is Alternating Group
+# Products of three large conjugacy classes in alternating groups (Kourovka 20.23)
 
-Kourovka 20.23 (M. Garonzi, A. Maróti): there are `δ ∈ (0, 1)` and `N` such that whenever
-`n ≥ N` and `A`, `B`, `C` are conjugacy classes of `Alt(n)` each of size at least `|Alt(n)|^δ`,
-then `ABC = Alt(n)`.
+**Products of three large conjugacy classes in alternating groups (Kourovka 20.23).** The
+statement that there are a real number $\delta$ with $0 < \delta < 1$ and a natural number $N$
+such that for every $n \ge N$ and all conjugacy classes $A$, $B$, $C$ of the alternating group
+$\mathrm{Alt}(n)$, each of size at least $|\mathrm{Alt}(n)|^{\delta}$, the product set $ABC$ is
+all of $\mathrm{Alt}(n)$.
 
 ## Depends on
 

@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.Modal.derivable_S5_iff
 ---
 
-# Derivable S5 iff
+# Soundness and completeness of S5
 
-S5-theorems are exactly the formulas valid in every Kripke model whose relation is an
-equivalence.
+**Soundness and completeness of S5.** A modal formula $\varphi$ is a theorem of S5 if and only
+if $\varphi$ is valid in every Kripke model whose accessibility relation is an equivalence
+relation and whose type of worlds lies in the same universe as the type of atoms.
 
 ## Depends on
 
-- [S5](../hilbert/s5.md)
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of S5](../hilbert/s5.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Deduces](../hilbert/deduces.md)
-- [Valid S5](../hilbert/valid-s5.md)
-- [Satisfies](../kripke/satisfies.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [Soundness of S5 for Kripke models with an equivalence relation](../hilbert/valid-s5.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
 - [Strong completeness of S5](completeness-s5.md)
-- [Deduces empty iff](../hilbert/deduces-empty-iff.md)
+- [Consequences of no hypotheses are the theorems](../hilbert/deduces-empty-iff.md)
 
 ## Sources
 

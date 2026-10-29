@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Modal.Formula.top
 ---
 
-# Top
+# The truth constant
 
-Truth as the negation of falsity.
+**The truth constant.** The formula $\top$ is the negation $\neg\bot$ of falsity, that is,
+the implication $\bot \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Modal formulas](formula.md)
 
 ## Proof depends on
 
-- [Neg](neg.md)
+- [Negation of modal formulas](neg.md)
 
 ## Sources
 

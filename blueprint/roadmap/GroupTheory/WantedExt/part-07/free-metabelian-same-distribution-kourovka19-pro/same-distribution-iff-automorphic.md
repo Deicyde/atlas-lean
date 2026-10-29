@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeMetabelianSameDistributionKourovka19Problem94Wanted.sameDistributionIffAutomorphic
 ---
 
-# Same Distribution Iff Automorphic
+# Timoshenko's question on equally distributed elements (Kourovka 19.94)
 
-Kourovka 19.94 (E. I. Timoshenko): two elements of the free metabelian group `Mₙ` (images of
-words `w₁, w₂`) have the same distribution if and only if some automorphism of `Mₙ` maps one to the
-other.
+**Timoshenko's question on equally distributed elements (Kourovka 19.94).** The statement that
+for every natural number $n$ and all words $w_1, w_2$ in the free group $F_n$ of rank $n$, the
+words $w_1$ and $w_2$ have the same distribution if and only if some automorphism of the free
+metabelian group $M_n = F_n / F_n''$ maps the image of $w_1$ in $M_n$ to the image of $w_2$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Free Metabelian](free-metabelian.md)
-- [Same Distribution](same-distribution.md)
+- [Free metabelian group of rank $n$ (Kourovka 19.94)](free-metabelian.md)
+- [Words with the same distribution](same-distribution.md)
 
 ## Sources
 

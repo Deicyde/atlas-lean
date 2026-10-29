@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SolubleTypeRecognitionKourovka12Problem37Wanted.solubleOfSameTypeAsSoluble
 ---
 
-# Soluble Of Same Type As Soluble
+# Kourovka Problem 12.37 (J. G. Thompson)
 
-Kourovka 12.37 (J. G. Thompson): a finite group whose type equals the type of a finite
-soluble group is soluble.
+**Kourovka Problem 12.37 (J. G. Thompson).** Every finite group of the same type as a finite
+soluble group is soluble: if $G$ and $H$ are finite groups of the same type and $H$ is soluble,
+then $G$ is soluble.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Same Type](same-type.md)
+- [Groups of the same type](same-type.md)
 
 ## Sources
 

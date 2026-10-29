@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.IsHereditary
 ---
 
-# Is Hereditary
+# Hereditary class of groups
 
-A hereditary class of finite groups: closed under subgroups.
+**Hereditary class of groups.** A class of groups $X$ is hereditary if every subgroup of a
+finite group in $X$ belongs to $X$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed class of groups](group-class.md)
 
 ## Sources
 

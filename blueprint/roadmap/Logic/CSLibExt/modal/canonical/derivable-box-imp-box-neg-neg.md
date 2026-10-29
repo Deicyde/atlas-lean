@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Modal.CanonicalWorld.derivable_box_imp_box_neg_neg
 ---
 
-# Derivable box imp box neg neg
+# Double-negation introduction under a box
 
-`⊢ □ψ → □¬¬ψ`.
+**Double-negation introduction under a box.** For every set $\Lambda$ of extra axioms and every
+modal formula $\psi$, the formula $\Box\psi \to \Box\neg\neg\psi$ is a theorem of the normal modal
+logic $K \oplus \Lambda$, where $\neg\chi$ abbreviates $\chi \to \bot$.
 
 ## Depends on
 
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
-- [Neg](../kripke/neg.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
+- [Negation of modal formulas](../kripke/neg.md)
 
 ## Proof depends on
 
-- [Deduces](../hilbert/deduces.md)
-- [The deduction theorem](../hilbert/imp-of-insert.md)
-- [Neg neg](../hilbert/neg-neg.md)
-- [Box imp box](../hilbert/box-imp-box.md)
-- [Deduces empty iff](../hilbert/deduces-empty-iff.md)
+- [Local consequence in a normal modal logic](../hilbert/deduces.md)
+- [The deduction theorem for local modal consequence, forward direction](../hilbert/imp-of-insert.md)
+- [Double-negation introduction](../hilbert/neg-neg.md)
+- [The monotonicity rule for necessity](../hilbert/box-imp-box.md)
+- [Consequences of no hypotheses are the theorems](../hilbert/deduces-empty-iff.md)
 
 ## Sources
 

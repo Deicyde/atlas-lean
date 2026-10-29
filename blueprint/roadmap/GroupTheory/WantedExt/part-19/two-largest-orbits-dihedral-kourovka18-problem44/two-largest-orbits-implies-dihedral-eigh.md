@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoLargestOrbitsDihedralKourovka18Problem44Wanted.twoLargestOrbitsImpliesDihedralEight
 ---
 
-# Two Largest Orbits Implies Dihedral Eight
+# Keller's question on two largest orbits and the dihedral group of order eight (Kourovka Problem 18.44)
 
-Kourovka 18.44 (T. M. Keller): let `G` be a finite non-abelian group and `V` a finite faithful
-irreducible `G`-module (a nonzero finite abelian group on which `G` acts faithfully by automorphisms
-with no invariant subgroups other than `0` and `V`). If `M = |G / G'|` is the largest orbit size of
-`G` on `V` and exactly two orbits have size `M`, then `G` is dihedral of order `8` and `|V| = 9`.
+**Keller's question on two largest orbits and the dihedral group of order eight (Kourovka
+Problem 18.44).** The statement that for every finite non-abelian group $G$, with derived subgroup
+$G'$, and every finite faithful irreducible $G$-module $V$ (a nonzero finite abelian group on which
+$G$ acts faithfully by automorphisms with no $G$-invariant subgroups other than $0$ and $V$),
+writing $M = |G/G'|$: if every orbit of $G$ on $V$ has at most $M$ elements and exactly two orbits
+have exactly $M$ elements, then $G$ is isomorphic to the dihedral group of order $8$ and
+$|V| = 9$.
 
 ## Depends on
 

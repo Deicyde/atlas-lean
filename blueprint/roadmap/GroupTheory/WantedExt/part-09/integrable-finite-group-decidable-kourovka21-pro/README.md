@@ -4,6 +4,6 @@ navigation: module
 
 # Integrable Finite Group Decidable Kourovka21 Problem32
 
-- [Is Integrable Group Table](is-integrable-group-table.md)
-- [Integrability Decidable](integrability-decidable.md)
-- [Integrability Decidable holds](integrability-decidable-holds.md)
+- [Integrable group tables](is-integrable-group-table.md)
+- [Kourovka Problem 21.32 (decidability of integrability)](integrability-decidable.md)
+- [Integrability of finite groups is decidable](integrability-decidable-holds.md)

@@ -5,7 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapTraceRangeKourovka16Problem69Wanted.quaternionRealPartRangeContainsInterval_refuted
 ---
 
-# Quaternion Real Part Range Contains Interval refuted
+# Mycielski's real-part question for quaternion word maps has a negative answer
+
+**Mycielski's real-part question for quaternion word maps has a negative answer.** There is a
+nontrivial element $w$ of the free group on two generators $x, y$ such that some real number $t$
+with $-5/27 \le t \le 1$ is not the real part of $w(p, q)$ for any nonzero real quaternions $p, q$,
+where $w(p, q)$ is obtained by substituting $p$ for $x$ and $q$ for $y$.
 
 Resolved false: the Kourovka Notebook (21st issue) answers 16.69(b) "No, it need not", citing Thom
 (2013), whose Corollary 1.2 gives, for every `n` and `ε > 0`, a word `w ≠ 1` with `‖1 - w(u, v)‖ ≤
@@ -21,7 +26,7 @@ https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/nilradical-
 
 ## Depends on
 
-- [Quaternion Real Part Range Contains Interval](quaternion-real-part-range-contains-inte.md)
+- [Mycielski's real-part property for quaternion word maps (Kourovka 16.69(b))](quaternion-real-part-range-contains-inte.md)
 
 ## Sources
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.freeActionEmbedsInSkewField
 ---
 
-# Free Action Embeds In Skew Field
+# Kourovka Problem 16.54 (free actions and embeddings in skew-fields)
 
-Kourovka 16.54 (V. D. Mazurov): a group `G` that acts freely by automorphisms on a nontrivial
-abelian group `V` (`g • v ≠ v` for all `g ≠ 1` and `v ≠ 0`) embeds in the multiplicative group of
-a division ring.
+**Kourovka Problem 16.54 (free actions and embeddings in skew-fields).** The statement, a
+question of V. D. Mazurov, that every group $G$ with a free action by automorphisms on a
+nontrivial abelian group $V$, meaning $g \cdot v \ne v$ for all $g \ne 1$ in $G$ and all $v \ne 0$
+in $V$, has an injective homomorphism into the multiplicative group of some division ring.
 
 ## Depends on
 

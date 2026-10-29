@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.MinimaxFiniteImagesKourovka12Problem90Wanted.minimaxDeterminedByFiniteImages
 ---
 
-# Minimax Determined By Finite Images
+# Minimax groups and finite images (Kourovka 12.90)
 
-Kourovka 12.90 (J. S. Wilson): if `G` is a finitely generated soluble minimax group and `H`
-is a finitely generated residually finite group with precisely the same finite images as `G`,
-then `H` is a minimax group.
+**Minimax groups and finite images (Kourovka 12.90).** The statement that for all groups $G$
+and $H$, if $G$ is a finitely generated soluble minimax group and $H$ is a finitely generated
+residually finite group with the same finite images as $G$ (a finite group is a homomorphic image
+of $G$ exactly when it is a homomorphic image of $H$), then $H$ is a minimax group.
 
 ## Depends on
 
@@ -17,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Minimax](is-minimax.md)
-- [Is Residually Finite](is-residually-finite.md)
-- [Same Finite Images](same-finite-images.md)
+- [Minimax groups](is-minimax.md)
+- [Residually finite groups](is-residually-finite.md)
+- [Groups with the same finite images](same-finite-images.md)
 
 ## Sources
 

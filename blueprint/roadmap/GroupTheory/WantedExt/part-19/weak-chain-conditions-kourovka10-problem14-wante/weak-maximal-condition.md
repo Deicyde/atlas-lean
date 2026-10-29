@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WeakChainConditionsKourovka10Problem14Wanted.WeakMaximalCondition
 ---
 
-# Weak Maximal Condition
+# Weak maximal condition on subgroups
 
-The weak maximal condition on subgroups: there is no infinite ascending chain
-`H₀ ≤ H₁ ≤ ⋯` of subgroups with every index `|Hᵢ₊₁ : Hᵢ|` infinite (`relIndex = 0`).
+**Weak maximal condition on subgroups.** A group $G$ satisfies the weak maximal condition on
+subgroups when there is no infinite ascending chain $H_0 \le H_1 \le \cdots$ of subgroups of $G$
+in which every index $|H_{i+1} : H_i|$ is infinite.
 
 ## Depends on
 

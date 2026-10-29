@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Modal.not_derivable_bot_T
 ---
 
-# Not derivable bot T
+# Consistency of T
 
-T is consistent.
+**Consistency of T.** For every type of atoms, $\bot$ is not a theorem of the normal modal
+logic T, whose extra axioms are the formulas $\Box\varphi \to \varphi$.
 
 ## Depends on
 
-- [T](t.md)
-- [Derivable](derivable.md)
-- [Formula](../kripke/formula.md)
+- [Extra axioms of T](t.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Proof depends on
 
-- [Valid T](valid-t.md)
-- [Unit](unit.md)
+- [Soundness of T for reflexive Kripke models](valid-t.md)
+- [The one-world Kripke model](unit.md)
 
 ## Sources
 

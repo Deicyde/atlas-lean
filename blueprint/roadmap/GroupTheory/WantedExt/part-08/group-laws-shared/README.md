@@ -4,7 +4,7 @@ navigation: module
 
 # Group Laws Shared
 
-- [Law Consequence](law-consequence.md)
-- [Has Independent Law Basis](has-independent-law-basis.md)
-- [Quasi Identity Consequence](quasi-identity-consequence.md)
-- [Has Independent Quasi Identity Basis](has-independent-quasi-identity-basis.md)
+- [Consequence of a set of laws](law-consequence.md)
+- [Independent basis of laws](has-independent-law-basis.md)
+- [Consequence of a set of quasi-identities](quasi-identity-consequence.md)
+- [Independent basis of quasi-identities](has-independent-quasi-identity-basis.md)

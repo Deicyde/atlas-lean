@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PermutingConjugatesSimpleGroupKourovka10Problem66Wanted.permutingConjugatesNotSimple
 ---
 
-# Permuting Conjugates Not Simple
+# Permuting conjugates and simplicity (Kourovka 10.66)
 
-Kourovka 10.66 (A. N. Fomin, V. P. Shunkov): a group `G` containing nontrivial subgroups `A`
-and `B` with `AB ≠ G` and `A B^g = B^g A` for every `g ∈ G` is not simple.
+**Permuting conjugates and simplicity (Kourovka 10.66).** The conjecture that a group $G$
+containing nontrivial subgroups $A$ and $B$ such that the product set $AB$ is not all of $G$ and
+$A \cdot gBg^{-1} = gBg^{-1} \cdot A$ for every $g \in G$ is not simple. Products of subgroups are
+products of subsets of $G$.
+
+This is Kourovka Problem 10.66 (A. N. Fomin, V. P. Shunkov).
 
 ## Depends on
 

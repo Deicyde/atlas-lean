@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TrivialCentreTwistedClassKourovka18Problem15Wanted.trivialCentreHasInnerTwistedClassNotSubgroup
 ---
 
-# Trivial Centre Has Inner Twisted Class Not Subgroup
+# Kourovka Problem 18.15: an inner twisted class that is not a subgroup
 
-Kourovka 18.15 (V. G. Bardakov, M. V. Neshchadim, T. R. Nasybullov): every nontrivial group `G`
-with trivial centre has an inner automorphism `φ` (conjugation by some `a ∈ G`) such that `[e]_φ`
-is not a subgroup of `G`.
+**Kourovka Problem 18.15: an inner twisted class that is not a subgroup.** Every nontrivial
+group $G$ with trivial centre has an element $a \in G$ such that, for the inner automorphism
+$\varphi(g) = aga^{-1}$, the twisted conjugacy class of the identity
+$[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is not a subgroup of $G$.
+
+The conjecture is due to V. G. Bardakov, M. V. Neshchadim and T. R. Nasybullov.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Twisted Unit Class](twisted-unit-class.md)
+- [Twisted conjugacy class of the identity (Kourovka 18.15)](twisted-unit-class.md)
 
 ## Sources
 

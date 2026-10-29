@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PropermutableSubgroupKourovka18Problem91Wanted.Permutes
 ---
 
-# Permutes
+# Permuting subgroups
 
-`H` permutes with `X`: `HX = XH` as sets.
+**Permuting subgroups.** Let $H$ and $X$ be subgroups of a group $G$. Then $H$ permutes
+with $X$ when $HX = XH$ as subsets of $G$, where $HX = \{hx : h \in H, x \in X\}$ and
+$XH = \{xh : x \in X, h \in H\}$.
 
 ## Depends on
 

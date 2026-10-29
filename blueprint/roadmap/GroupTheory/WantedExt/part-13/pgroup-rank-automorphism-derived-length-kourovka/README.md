@@ -4,6 +4,6 @@ navigation: module
 
 # PGroup Rank Automorphism Derived Length Kourovka13 Problem56
 
-- [Sectional Rank LE](sectional-rank-le.md)
-- [Derived Length Bounded By Rank And Fixed Points](derived-length-bounded-by-rank-and-fixed.md)
-- [Derived Length Bounded By Rank And Fixed Points holds](derived-length-bounded-by-rank-and-fixed-2.md)
+- [Groups of sectional rank at most $r$](sectional-rank-le.md)
+- [Shalev and Khukhro's question on the derived length of $p$-groups with an automorphism](derived-length-bounded-by-rank-and-fixed.md)
+- [The derived length of a $p$-group is bounded by its sectional rank and the fixed points of an automorphism](derived-length-bounded-by-rank-and-fixed-2.md)

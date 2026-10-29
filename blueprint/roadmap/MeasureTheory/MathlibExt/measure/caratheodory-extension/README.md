@@ -4,7 +4,7 @@ navigation: module
 
 # Caratheodory Extension
 
-- [Is Set Semiring of is Set Algebra](is-set-semiring-of-is-set-algebra.md)
-- [Is Set Algebra is Pi System](is-set-algebra-is-pi-system.md)
-- [Exists measure extension](exists-measure-extension.md)
+- [Every algebra of sets is a semiring of sets](is-set-semiring-of-is-set-algebra.md)
+- [Every algebra of sets is a π-system](is-set-algebra-is-pi-system.md)
+- [Existence of the Carathéodory extension](exists-measure-extension.md)
 - [Carathéodory extension theorem](caratheodory-extension-theorem.md)

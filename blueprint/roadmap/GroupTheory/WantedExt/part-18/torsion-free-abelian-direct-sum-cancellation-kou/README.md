@@ -4,8 +4,8 @@ navigation: module
 
 # Torsion Free Abelian Direct Sum Cancellation Kourovka17 Problem21
 
-- [Is Torsion Free Add Group](is-torsion-free-add-group.md)
-- [Torsion Free Absorbs Direct Summand](torsion-free-absorbs-direct-summand.md)
-- [Torsion Free Absorbs Direct Summand Of Iso](torsion-free-absorbs-direct-summand-of-i.md)
-- [Torsion Free Absorbs Direct Summand refuted](torsion-free-absorbs-direct-summand-refu.md)
-- [Torsion Free Absorbs Direct Summand Of Iso refuted](torsion-free-absorbs-direct-summand-of-i-2.md)
+- [Torsion-free abelian group](is-torsion-free-add-group.md)
+- [Bergman's absorption question (Kourovka 17.21(a))](torsion-free-absorbs-direct-summand.md)
+- [Bergman's absorption question for isomorphic summands (Kourovka 17.21(b))](torsion-free-absorbs-direct-summand-of-i.md)
+- [Failure of direct-summand absorption for torsion-free abelian groups](torsion-free-absorbs-direct-summand-refu.md)
+- [Failure of direct-summand absorption with isomorphic summands](torsion-free-absorbs-direct-summand-of-i-2.md)

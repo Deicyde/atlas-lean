@@ -4,6 +4,6 @@ navigation: module
 
 # Involution Centralizer PSLTwo Kourovka18 Problem59
 
-- [Is Locally Finite Field](is-locally-finite-field.md)
-- [Periodic Group With PSLInvolution Centralizers](periodic-group-with-pslinvolution-centra.md)
-- [Periodic Group With PSLInvolution Centralizers refuted](periodic-group-with-pslinvolution-centra-2.md)
+- [Locally finite fields (Kourovka 18.59)](is-locally-finite-field.md)
+- [Kourovka Problem 18.59 on involution centralizers](periodic-group-with-pslinvolution-centra.md)
+- [Negative answer to Kourovka Problem 18.59](periodic-group-with-pslinvolution-centra-2.md)

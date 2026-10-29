@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.RadicalHereditaryFormationKourovka12Problem7Wanted.QuotMem
 ---
 
-# Quot Mem
+# Quotient lying in a class
 
-`G ⧸ N` lies in `X` (with `N` normal).
+**Quotient lying in a class.** For a class of groups $X$, a group $G$ and a subgroup $N$ of $G$,
+this holds when $N$ is normal in $G$ and the quotient group $G/N$ belongs to $X$.
 
 ## Depends on
 
-- [Group Class](group-class.md)
+- [Isomorphism-closed class of groups](group-class.md)
 
 ## Sources
 

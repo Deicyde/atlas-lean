@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FreeMetabelianPrimitivePreservingKourovka14Problem85Wanted.IsPrimitive
 ---
 
-# Is Primitive
+# Primitive elements of the free metabelian group
 
-`y ∈ M_n` is primitive: it belongs to a free basis of `M_n`, that is, `y = σ(xᵢ)` for an
-automorphism `σ` of `M_n` and a basis element `xᵢ` (the image of a free generator of `F_n`).
+**Primitive elements of the free metabelian group.** Let $F_n$ be the free group on $n$
+generators, let $F_n''$ be its second derived subgroup, and let $M_n = F_n / F_n''$ be the free
+metabelian group of rank $n$. Let $x_0, \dots, x_{n-1}$ be the images in $M_n$ of the free
+generators of $F_n$. An element $y$ of $M_n$ is primitive when $y = \sigma(x_i)$ for some
+automorphism $\sigma$ of $M_n$ and some index $i$; that is, $y$ is the image of a standard basis
+element under an automorphism of $M_n$.
 
 ## Depends on
 
-- [Free Metabelian Group](free-metabelian-group.md)
+- [Free metabelian group $M_n$ (Kourovka 14.85)](free-metabelian-group.md)
 
 ## Sources
 

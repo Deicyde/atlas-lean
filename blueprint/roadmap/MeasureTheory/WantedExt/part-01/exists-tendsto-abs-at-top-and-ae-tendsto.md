@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.AeNullSequenceUnboundedMultipliersWanted.exists_tendsto_abs_atTop_and_ae_tendsto_mul_zero
 ---
 
-# Ae Null Sequence Unbounded Multipliers Wanted
+# Unbounded multipliers preserving almost-everywhere convergence to zero
 
-Suppose that $\{f_n\}_{n=1}^{\infty}$ is a sequence of measurable functions such that $f_n \to
-0$ almost everywhere on $[0, 1]$. Prove that there exists a sequence $c_n$ such that $|c_n| \to
-\infty$ as $n \to \infty$ and $c_n f_n \to 0$ almost everywhere.
+**Unbounded multipliers preserving almost-everywhere convergence to zero.** Let
+$(f_n)_{n \in \mathbb{N}}$ be a sequence of Borel measurable functions $f_n : \mathbb{R} \to
+\mathbb{R}$ such that $f_n(x) \to 0$ for almost every $x \in [0, 1]$. Then there is a sequence of
+real numbers $(c_n)_{n \in \mathbb{N}}$ with $|c_n| \to \infty$ such that $c_n f_n(x) \to 0$ for
+almost every $x \in [0, 1]$.
 
 ## Depends on
 

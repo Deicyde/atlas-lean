@@ -4,5 +4,5 @@ navigation: module
 
 # Coprime Generation Rank Kourovka16 Problem53
 
-- [Coprime Generated Rank Bound](coprime-generated-rank-bound.md)
-- [Coprime Generated Rank Bound refuted](coprime-generated-rank-bound-refuted.md)
+- [Lucchini's coprime generation bound (Kourovka 16.53)](coprime-generated-rank-bound.md)
+- [Lucchini's coprime generation bound fails](coprime-generated-rank-bound-refuted.md)

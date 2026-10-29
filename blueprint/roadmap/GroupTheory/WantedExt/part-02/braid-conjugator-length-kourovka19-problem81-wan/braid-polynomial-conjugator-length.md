@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidPolynomialConjugatorLength
 ---
 
-# Braid Polynomial Conjugator Length
+# Polynomially short conjugators in braid groups
 
-Kourovka 19.81 (V. Shpilrain), the stronger question: in each braid group `B_{n+1}`, two
-conjugate braids represented by braid words of length at most `m` have a conjugating braid word of
-length bounded by a polynomial in `m` (here `C (m + 1)^d`, with `C` and `d` depending on `n`); word
-length is the length of the freely reduced word.
+**Polynomially short conjugators in braid groups.** The proposition (the stronger question of
+Kourovka Problem 19.81, V. Shpilrain) that for every $n \in \mathbb{N}$ there are natural numbers
+$C$ and $d$ with the following property. Let $B_{n+1}$ be the braid group on $n + 1$ strands,
+realized as the Artin group of the Coxeter matrix of type $A_n$, with standard generators
+$\sigma_1, \dots, \sigma_n$; a braid word is an element of the free group on
+$\sigma_1, \dots, \sigma_n$, and its length $|u|$ is the length of its freely reduced form. For all
+braid words $u$ and $v$ whose braids are conjugate in $B_{n+1}$ there is a braid word $w$ with
+$|w| \le C (\max(|u|, |v|) + 1)^d$ such that $w u w^{-1}$ and $v$ represent the same braid.
 
 ## Depends on
 
@@ -20,7 +24,7 @@ This node has no prerequisites.
 
 - [Artin group](../../../MathlibExt/part-01/artin-group/artin-group.md)
 - [Artin relators of a Coxeter matrix](../../../MathlibExt/part-01/artin-group/artin-relations-set.md)
-- [Braid Of](braid-of.md)
+- [The braid represented by a braid word](braid-of.md)
 
 ## Sources
 

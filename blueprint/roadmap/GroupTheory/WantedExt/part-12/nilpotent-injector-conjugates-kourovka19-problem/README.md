@@ -4,8 +4,8 @@ navigation: module
 
 # Nilpotent Injector Conjugates Kourovka19 Problem37
 
-- [Is Nilpotent Injector](is-nilpotent-injector.md)
-- [Nilpotent Injector Bounded Conjugates](nilpotent-injector-bounded-conjugates.md)
-- [Nilpotent Injector Three Conjugates](nilpotent-injector-three-conjugates.md)
-- [Nilpotent Injector Bounded Conjugates holds](nilpotent-injector-bounded-conjugates-ho.md)
-- [Nilpotent Injector Three Conjugates holds](nilpotent-injector-three-conjugates-hold.md)
+- [Nilpotent injector](is-nilpotent-injector.md)
+- [Kourovka Problem 19.37(a)](nilpotent-injector-bounded-conjugates.md)
+- [Kourovka Problem 19.37(b)](nilpotent-injector-three-conjugates.md)
+- [Boundedly many conjugates of a nilpotent injector meet in the Fitting subgroup](nilpotent-injector-bounded-conjugates-ho.md)
+- [Three conjugates of a nilpotent injector meet in the Fitting subgroup](nilpotent-injector-three-conjugates-hold.md)

@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.JustInfiniteIntermediateGrowthBranchKourovka15Problem17Wanted.justInfiniteIntermediateGrowthIsBranch_refuted
 ---
 
-# Just Infinite Intermediate Growth Is Branch refuted
+# Just infinite groups of intermediate growth need not be branch groups
 
-Resolved false: the Kourovka Archive answers 15.17 "No, not every": Nekrashevych constructed
-infinite finitely generated simple groups of intermediate growth. Such a group is just infinite, and
-it is not a branch group: its rigid level stabilizers, nontrivial normal subgroups of finite index,
-would be the whole group, which they split as a direct product of at least two nontrivial factors.
+**Just infinite groups of intermediate growth need not be branch groups.** It is not the case
+that every finitely generated just infinite group of intermediate growth is a branch group: the
+Kourovka Archive answers Problem 15.17 "No, not every".
+
+Nekrashevych constructed infinite finitely generated simple groups of intermediate growth. Such a
+group is just infinite, and it is not a branch group: its rigid level stabilizers, nontrivial normal
+subgroups of finite index, would be the whole group, which they split as a direct product of at
+least two nontrivial factors.
 
 ## Depends on
 
-- [Just Infinite Intermediate Growth Is Branch](just-infinite-intermediate-growth-is-bra.md)
+- [The branch question for just infinite groups of intermediate growth](just-infinite-intermediate-growth-is-bra.md)
 
 ## Sources
 

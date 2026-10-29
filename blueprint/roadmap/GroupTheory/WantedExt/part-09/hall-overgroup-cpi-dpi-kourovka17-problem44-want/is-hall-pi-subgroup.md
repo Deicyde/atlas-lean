@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.IsHallPiSubgroup
 ---
 
-# Is Hall Pi Subgroup
+# Hall $\pi$-subgroup
 
-`H` is a Hall `π`-subgroup of the finite group `G`: `|H|` is a `π`-number and `|G : H|` is a
-`π'`-number.
+**Hall $\pi$-subgroup.** Let $\pi$ be a set of natural numbers and $G$ a group. A subgroup $H$
+of $G$ is a Hall $\pi$-subgroup when its order $|H|$ is a $\pi$-number and no prime divisor of its
+index $|G : H|$ lies in $\pi$.
+
+An infinite order or index counts as $0$; the notion is meant for finite groups.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pi Number](is-pi-number.md)
+- [$\pi$-number](is-pi-number.md)
 
 ## Sources
 

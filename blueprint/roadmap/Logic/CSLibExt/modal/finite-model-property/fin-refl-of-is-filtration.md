@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Modal.finRefl_of_isFiltration
 ---
 
-# Fin Refl of is Filtration
+# Filtrations of reflexive models are reflexive
 
-Any filtration of a reflexive model is reflexive.
+**Filtrations of reflexive models are reflexive.** Let $M$ be a Kripke model whose
+accessibility relation is reflexive, let $\varphi$ be a modal formula, and let $R$ be a
+filtration of $M$ through the subformulas of $\varphi$. Then $(s, s) \in R$ for every set $s$
+that is the set of subformulas of $\varphi$ true at some world of $M$.
 
 ## Depends on
 
-- [Fin Refl](fin-refl.md)
-- [Formula](../kripke/formula.md)
-- [Is Filtration](../filtration/is-filtration.md)
+- [Reflexivity on a finite set of worlds](fin-refl.md)
+- [Modal formulas](../kripke/formula.md)
+- [Filtration relations](../filtration/is-filtration.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
 
 ## Proof depends on
 
-- [Exists sub Type eq](../filtration/exists-sub-type-eq.md)
-- [Sub Type](../filtration/sub-type.md)
+- [Filtration worlds are realized types](../filtration/exists-sub-type-eq.md)
+- [Type of a world](../filtration/sub-type.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ resolution: V. G. Bardakov, Abstracts of the IIIrd Intern. Conf. on Algebra, Kra
 
 ## Depends on
 
-- [Basic Commutator Equality Determines](basic-commutator-equality-determines.md)
+- [Gaglione–Spellman claim on equal commutators of basic commutators](basic-commutator-equality-determines.md)
 
 ## Sources
 

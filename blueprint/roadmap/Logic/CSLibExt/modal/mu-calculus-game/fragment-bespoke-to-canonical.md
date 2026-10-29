@@ -6,53 +6,58 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.fragment_bespoke_to_canonical
 ---
 
-# Bespoke → canonical (fragment)
+# Winning Verifier strategies transfer to the fragment game
 
-**Bespoke → canonical (fragment).** A bespoke winning strategy for a
-fragment position induces a canonical winning positional strategy: every
-canonical conforming play must hit the absorbing `win` state (it cannot hit
-`lose`, by the bespoke finite-play clause applied to the segment before the
-first `lose`; and it cannot stay in `pos` forever, since fragment moves
-strictly decrease the formula).
+**Winning Verifier strategies transfer to the fragment game.** Let $M$ be a Kripke model,
+$\rho$ an environment, $\sigma$ a Verifier strategy of the model-checking game on $M$,
+$\varphi$ a fixpoint-free formula and $w$ a world. If $\sigma$ wins in environment $\rho$ from
+the game position with formula $\varphi$, world $w$ and empty binder stack, then the positional
+strategy of the even player induced by $\sigma$ wins from the embedded position $(\varphi, w)$
+in the fragment game of $M$ and $\rho$.
+
+Every play conforming to the induced strategy reaches the absorbing winning state: it cannot
+reach the losing state, by the finite-play clause for $\sigma$ applied to the segment before the
+first losing state, and it cannot stay among embedded positions forever, since fragment moves
+strictly decrease the formula.
 
 ## Depends on
 
 - [Winning strategy from a position](../../../../Computability/CSLibExt/games/parity/wins-from.md)
 - [Players of a parity game](../../../../Computability/CSLibExt/games/parity/player.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [Frag Pos](frag-pos.md)
-- [Strategy](strategy.md)
-- [Strategy Wins](strategy-wins.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Positions of the totalized fragment game](frag-pos.md)
+- [Verifier strategy](strategy.md)
+- [Winning strategy from a position](strategy-wins.md)
 - [Frag Strategy](frag-strategy.md)
-- [Fragment Game](fragment-game.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fragment parity game](fragment-game.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
 - [Plays conforming to a strategy](../../../../Computability/CSLibExt/games/parity/conforms.md)
 - [Plays of a parity game](../../../../Computability/CSLibExt/games/parity/is-play.md)
 - [Winner of a play in a parity game](../../../../Computability/CSLibExt/games/parity/won-by.md)
-- [Frag Move](frag-move.md)
-- [Pos move iff](pos-move-iff.md)
-- [Pos to Lose](pos-to-lose.md)
+- [Moves of the totalized fragment game](frag-move.md)
+- [Fragment moves between embedded positions are game moves](pos-move-iff.md)
+- [Moves to the losing state come from terminal losing positions](pos-to-lose.md)
 - [Game Position](game-position.md)
-- [Move](move.md)
-- [No Moves](no-moves.md)
-- [Owner](owner.md)
-- [Parity Win](parity-win.md)
-- [Play From](play-from.md)
+- [Moves of the μ-calculus model-checking game](move.md)
+- [Positions with no moves](no-moves.md)
+- [Owner of a game position](owner.md)
+- [Parity winning condition](parity-win.md)
+- [Finite plays consistent with a strategy](play-from.md)
 - [Player](player.md)
-- [Terminal Win](terminal-win.md)
-- [Canonical play From segment](canonical-play-from-segment.md)
-- [Frag Play eq win of le](frag-play-eq-win-of-le.md)
-- [Frag Segment](frag-segment.md)
-- [Frag Segment play Last](frag-segment-play-last.md)
-- [Frag To Pos](frag-to-pos.md)
-- [No infinite play of fix Free](no-infinite-play-of-fix-free.md)
-- [Play Last](play-last.md)
-- [Won By even of eventually win](won-by-even-of-eventually-win.md)
+- [Winner at a terminal position](terminal-win.md)
+- [Segments of canonical plays through fragment positions are bespoke plays](canonical-play-from-segment.md)
+- [Plays of the totalized fragment game stay at the winning state](frag-play-eq-win-of-le.md)
+- [Segment of a fragment play as game positions](frag-segment.md)
+- [Last position of a segment](frag-segment-play-last.md)
+- [Game position of a fragment position](frag-to-pos.md)
+- [No infinite play from a fragment position](no-infinite-play-of-fix-free.md)
+- [Last position of a play](play-last.md)
+- [Sequences that stay at the win state are won by the even player](won-by-even-of-eventually-win.md)
 
 ## Sources
 

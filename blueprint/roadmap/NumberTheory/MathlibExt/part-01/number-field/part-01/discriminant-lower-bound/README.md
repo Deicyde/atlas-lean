@@ -4,6 +4,6 @@ navigation: module
 
 # Discriminant Lower Bound
 
-- [Pow div factorial sq mul pi div four pow gt](pow-div-factorial-sq-mul-pi-div-four-pow.md)
-- [Middle term le abs discr](middle-term-le-abs-discr.md)
-- [Abs discr gt exp term](abs-discr-gt-exp-term.md)
+- [Comparison of the Minkowski and exponential discriminant bounds](pow-div-factorial-sq-mul-pi-div-four-pow.md)
+- [Minkowski's lower bound for the discriminant](middle-term-le-abs-discr.md)
+- [Exponential lower bound for the discriminant](abs-discr-gt-exp-term.md)

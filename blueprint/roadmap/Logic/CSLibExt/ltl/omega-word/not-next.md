@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.LTL.Word.Satisfies.not_next
 ---
 
-# Not next
+# Next is self-dual
 
-`next` is self-dual on ω-words.
+**Next is self-dual.** For every valuation $v$ of atoms on letters, every ω-word $w$ and every
+LTL formula $\varphi$, the word $w$ satisfies $\neg\mathbf{X}\,\varphi$ under $v$ if and only if
+it satisfies $\mathbf{X}\,\neg\varphi$ under $v$, where $\mathbf{X}$ is the next operator.
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies](satisfies.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Sources
 

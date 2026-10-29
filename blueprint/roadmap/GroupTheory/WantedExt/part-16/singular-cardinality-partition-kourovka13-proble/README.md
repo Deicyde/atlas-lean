@@ -4,5 +4,5 @@ navigation: module
 
 # Singular Cardinality Partition Kourovka13 Problem45
 
-- [Singular Cardinality Partition](singular-cardinality-partition.md)
-- [Singular Cardinality Partition refuted](singular-cardinality-partition-refuted.md)
+- [Partitions of groups of singular cardinality (Kourovka 13.45)](singular-cardinality-partition.md)
+- [Some group of singular cardinality has no such partition](singular-cardinality-partition-refuted.md)

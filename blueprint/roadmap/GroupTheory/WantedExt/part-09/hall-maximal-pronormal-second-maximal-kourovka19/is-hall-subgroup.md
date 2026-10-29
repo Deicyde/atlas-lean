@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallMaximalPronormalSecondMaximalKourovka19Problem109Wanted.IsHallSubgroup
 ---
 
-# Is Hall Subgroup
+# Hall subgroup (Kourovka Problem 19.109)
 
-`H` is a Hall subgroup: `|H|` is coprime to `|G : H|`.
+**Hall subgroup (Kourovka Problem 19.109).** A subgroup $H$ of a group $G$ is a Hall subgroup
+when its order $|H|$ is coprime to its index $|G : H|$, where an infinite order or index is
+counted as $0$.
 
 ## Depends on
 

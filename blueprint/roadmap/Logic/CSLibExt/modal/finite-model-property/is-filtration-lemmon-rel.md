@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Modal.isFiltration_lemmonRel
 ---
 
-# Is Filtration lemmon Rel
+# The Lemmon relation is a filtration of a transitive model
 
-The Lemmon relation is a filtration of every transitive model.
+**The Lemmon relation is a filtration of a transitive model.** For every Kripke model $M$
+with a transitive accessibility relation and every formula $\varphi$, the Lemmon relation of $M$
+and $\varphi$ is a filtration of $M$ through the subformulas of $\varphi$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
-- [Is Filtration](../filtration/is-filtration.md)
+- [Modal formulas](../kripke/formula.md)
+- [Filtration relations](../filtration/is-filtration.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Lemmon Rel](lemmon-rel.md)
+- [Lemmon filtration relation](lemmon-rel.md)
 
 ## Proof depends on
 
-- [Sub](../filtration/sub.md)
-- [Sub subset of mem](../filtration/sub-subset-of-mem.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
-- [Sub Type](../filtration/sub-type.md)
+- [Subformulas](../filtration/sub.md)
+- [The subformula relation is transitive](../filtration/sub-subset-of-mem.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
+- [Type of a world](../filtration/sub-type.md)
 
 ## Sources
 

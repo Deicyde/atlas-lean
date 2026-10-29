@@ -6,53 +6,53 @@ navigation: module
 
 ## Modal
 
-- [Derivable](derivable.md)
-- [Deduces](deduces.md)
+- [Theorems of a normal modal logic](derivable.md)
+- [Local consequence in a normal modal logic](deduces.md)
 
 ## Axioms
 
-- [K](k.md)
-- [T](t.md)
-- [S4](s4.md)
-- [S5](s5.md)
+- [Extra axioms of the modal logic K](k.md)
+- [Extra axioms of T](t.md)
+- [Extra axioms of S4](s4.md)
+- [Extra axioms of S5](s5.md)
 
 ## Derivable
 
-- [Imp self](imp-self.md)
-- [Mono](mono.md)
+- [Self-implication is a theorem](imp-self.md)
+- [Monotonicity of theorems in the extra axioms](mono.md)
 
 ## Deduces
 
-- [Mono](mono-2.md)
-- [Trans](trans.md)
-- [The deduction theorem](imp-of-insert.md)
-- [The deduction theorem](deduces-insert-iff.md)
-- [Deduces empty iff](deduces-empty-iff.md)
-- [Compactness](exists-finset.md)
-- [Of bot](of-bot.md)
-- [Bot of neg](bot-of-neg.md)
-- [Of insert neg](of-insert-neg.md)
-- [Neg of insert](neg-of-insert.md)
-- [Imp trans](imp-trans.md)
-- [Neg neg](neg-neg.md)
+- [Monotonicity of local consequence in the hypotheses](mono-2.md)
+- [Transitivity of local consequence](trans.md)
+- [The deduction theorem for local modal consequence, forward direction](imp-of-insert.md)
+- [The deduction theorem for local modal consequence](deduces-insert-iff.md)
+- [Consequences of no hypotheses are the theorems](deduces-empty-iff.md)
+- [Compactness of local modal consequence](exists-finset.md)
+- [Ex falso quodlibet](of-bot.md)
+- [Contradiction yields falsity](bot-of-neg.md)
+- [Proof by contradiction](of-insert-neg.md)
+- [Negation introduction](neg-of-insert.md)
+- [Hypothetical syllogism](imp-trans.md)
+- [Double-negation introduction](neg-neg.md)
 
 ## Derivable
 
-- [Of deduces](of-deduces.md)
-- [Box imp box](box-imp-box.md)
+- [Local consequences of theorems are theorems](of-deduces.md)
+- [The monotonicity rule for necessity](box-imp-box.md)
 
 ## Modal
 
-- [Soundness](valid.md)
+- [Soundness of modal Hilbert systems for Kripke models](valid.md)
 - [Local soundness](satisfies.md)
-- [Valid K](valid-k.md)
-- [Valid T](valid-t.md)
-- [Valid S4](valid-s4.md)
-- [Valid S5](valid-s5.md)
-- [Unit](unit.md)
-- [Unit equivalence](unit-equivalence.md)
-- [Consistency](not-derivable-bot.md)
-- [Not derivable bot S5](not-derivable-bot-s5.md)
-- [Not derivable bot S4](not-derivable-bot-s4.md)
-- [Not derivable bot T](not-derivable-bot-t.md)
-- [Not derivable bot K](not-derivable-bot-k.md)
+- [Soundness of K for Kripke models](valid-k.md)
+- [Soundness of T for reflexive Kripke models](valid-t.md)
+- [Soundness of S4 for reflexive transitive Kripke models](valid-s4.md)
+- [Soundness of S5 for Kripke models with an equivalence relation](valid-s5.md)
+- [The one-world Kripke model](unit.md)
+- [The one-world model has an equivalence relation](unit-equivalence.md)
+- [Consistency of normal modal logics](not-derivable-bot.md)
+- [Consistency of S5](not-derivable-bot-s5.md)
+- [Consistency of S4](not-derivable-bot-s4.md)
+- [Consistency of T](not-derivable-bot-t.md)
+- [Consistency of K](not-derivable-bot-k.md)

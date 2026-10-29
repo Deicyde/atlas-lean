@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FinitelyGeneratedBranchGroupsKourovka15Problem14Wanted.fgBranchGroupOfExponentialGrowth
 ---
 
-# Fg Branch Group Of Exponential Growth
+# Kourovka Problem 15.14(d): branch groups of exponential growth
 
-Kourovka 15.14(d): there is a finitely generated branch group of exponential growth.
+**Kourovka Problem 15.14(d): branch groups of exponential growth.** The statement that there
+exists a finitely generated branch group of exponential growth.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Exponential Growth](has-exponential-growth.md)
+- [Groups of exponential growth](has-exponential-growth.md)
 - [Is Branch Group](is-branch-group.md)
 
 ## Sources

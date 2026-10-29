@@ -4,5 +4,5 @@ navigation: module
 
 # Large Automorphism Cyclic Subgroup Kourovka15 Problem32
 
-- [Cyclic Subgroup Of Index From Large Automorphism](cyclic-subgroup-of-index-from-large-auto.md)
-- [Cyclic Subgroup Of Index From Large Automorphism holds](cyclic-subgroup-of-index-from-large-auto-2.md)
+- [Kourovka Problem 15.32: large automorphisms and cyclic subgroups](cyclic-subgroup-of-index-from-large-auto.md)
+- [Large automorphisms of p-groups force cyclic subgroups of given index](cyclic-subgroup-of-index-from-large-auto-2.md)

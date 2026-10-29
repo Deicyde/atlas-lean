@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu_injective
 ---
 
-# To Mu injective
+# The fixpoint-free embedding is injective
 
-`toMu` is injective: the fragment embedding has no collisions. This is
-what lets the canonical fragment game recover a fragment formula from an
+**The fixpoint-free embedding is injective.** The embedding of fixpoint-free formulas into
+μ-calculus formulas is injective: distinct fixpoint-free formulas have distinct images.
+
+This is what lets the canonical fragment game recover a fragment formula from an
 embedded game position.
 
 ## Depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu](to-mu.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Embedding of the fixpoint-free fragment into the μ-calculus](to-mu.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Proof depends on
 
-- [To Mu Inv](to-mu-inv.md)
-- [To Mu Inv to Mu](to-mu-inv-to-mu.md)
+- [Partial inverse of the fixpoint-free embedding](to-mu-inv.md)
+- [The partial inverse recovers fixpoint-free formulas](to-mu-inv-to-mu.md)
 
 ## Sources
 

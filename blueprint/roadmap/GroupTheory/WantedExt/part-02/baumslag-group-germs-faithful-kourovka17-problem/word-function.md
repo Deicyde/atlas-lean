@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BaumslagGroupGermsFaithfulKourovka17Problem99Wanted.wordFunction
 ---
 
-# Word Function
+# Word functions for Baumslag's group
 
-The function attached to an element of the free group on `a, b`: the composite of the letter
-functions along its reduced word, the first letter applied last, so that products of germs are
-composites (`(φ ψ)(x) = φ (ψ x)`); with this order `f` and `g` satisfy the defining relation of
-`B` as germs at `+∞`.
+**Word functions for Baumslag's group.** To an element $w$ of the free group on $a, b$ with
+reduced word $l_1 l_2 \cdots l_n$ attach the composite
+$\varphi_w = \varphi_{l_1} \circ \varphi_{l_2} \circ \cdots \circ \varphi_{l_n}$, where
+$\varphi_l$ is the function attached to the letter $l$; the first letter is applied last, and
+$\varphi_1$ is the identity. With this order products of germs are composites, and $f(x) = 2x$
+and $g(x) = 2^x$ satisfy the defining relation of Baumslag's group as germs at $+\infty$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Letter Function](letter-function.md)
+- [Letter functions for Baumslag's group](letter-function.md)
 
 ## Sources
 

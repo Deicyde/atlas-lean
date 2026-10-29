@@ -16,7 +16,7 @@ navigation: transparent
 - [Almost Palindromic Width Kourovka19 Problem8](almost-palindromic-width-kourovka19-problem8-wan/README.md)
 - [Almost Regular Automorphism Derived Length Kourovka14 Problem96](almost-regular-automorphism-derived-length-kouro/README.md)
 - [Almost Simple Generator Number Kourovka11 Problem27](almost-simple-generator-number-kourovka11-proble/README.md)
-- [Almost Simple Shared](is-almost-simple.md)
+- [Almost simple groups](is-almost-simple.md)
 - [Alperin Group Derived Length Kourovka18 Problem33](alperin-group-derived-length-kourovka18-problem3/README.md)
 - [Alternating Group Permutable Subgroups Kourovka17 Problem37](alternating-group-permutable-subgroups-kourovka1/README.md)
 - [Alternating Group Spectrum Recognition Kourovka16 Problem107](alternating-group-spectrum-recognition-kourovka1/README.md)

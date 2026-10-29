@@ -5,27 +5,29 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.fragOfGamePos
 ---
 
-# Frag Of Game Pos
+# Projection of game positions onto the fragment arena
 
-Project a game position back into the fragment arena: embedded
-fragment positions (empty stack, formula in the image of `toMu`) map to
-their `pos` position; every other game position (fixpoint formulas,
-variables, nonempty stacks) maps to `lose`, a default that is never used
-on plays staying in the arena (every move from an embedded position lands
-on an embedded position, by `move_of_toMu`). Source: C. Stirling, *Modal
-and Temporal Properties of Processes*, Springer 2001, Chapter 6.
+**Projection of game positions onto the fragment arena.** A game position with empty binder
+stack whose formula is the μ-calculus reading of a fixpoint-free formula $\varphi$, at world $w$,
+is sent to the embedded position $(\varphi, w)$. Every other game position (one whose formula
+contains a fixpoint operator or a variable, or one with a nonempty stack) is sent to the losing
+state.
+
+The losing state is a default that is never reached on plays that stay in the arena, since every
+move from an embedded position lands on an embedded position.
 
 ## Depends on
 
-- [Frag Pos](frag-pos.md)
+- [Positions of the totalized fragment game](frag-pos.md)
 - [Game Position](game-position.md)
 
 ## Proof depends on
 
-- [Fix Free Formula](fix-free-formula.md)
-- [To Mu Inv](to-mu-inv.md)
-- [Mu Formula](../mu-calculus/mu-formula.md)
+- [Fixpoint-free formulas](fix-free-formula.md)
+- [Partial inverse of the fixpoint-free embedding](to-mu-inv.md)
+- [Formulas of the modal μ-calculus](../mu-calculus/mu-formula.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.Modal.MuCalculusGame](../../../../../sources/v2/CSLibExt.md)
+- C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.

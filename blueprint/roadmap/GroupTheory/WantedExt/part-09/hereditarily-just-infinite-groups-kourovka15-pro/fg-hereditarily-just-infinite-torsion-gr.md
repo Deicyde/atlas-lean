@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HereditarilyJustInfiniteGroupsKourovka15Problem18Wanted.fgHereditarilyJustInfiniteTorsionGroup
 ---
 
-# Fg Hereditarily Just Infinite Torsion Group
+# Kourovka 15.18(a): hereditarily just infinite torsion groups
 
-Kourovka 15.18(a): there is a finitely generated hereditarily just infinite torsion group.
+**Kourovka 15.18(a): hereditarily just infinite torsion groups.** The proposition that there
+exists a finitely generated hereditarily just infinite group $G$ that is a torsion group, i.e.
+every element of $G$ has finite order.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Hereditarily Just Infinite](is-hereditarily-just-infinite.md)
+- [Hereditarily just infinite groups](is-hereditarily-just-infinite.md)
 
 ## Sources
 

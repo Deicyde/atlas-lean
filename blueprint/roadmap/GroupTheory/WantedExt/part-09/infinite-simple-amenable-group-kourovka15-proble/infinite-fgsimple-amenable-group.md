@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InfiniteSimpleAmenableGroupKourovka15Problem5Wanted.infiniteFGSimpleAmenableGroup
 ---
 
-# Infinite FGSimple Amenable Group
+# Kourovka Problem 15.5 (statement): infinite finitely generated simple amenable groups
 
-Kourovka 15.5 (P. de la Harpe): there is an infinite finitely generated simple amenable
-group.
+**Kourovka Problem 15.5 (statement): infinite finitely generated simple amenable groups.**
+The statement that there exists a group $G$ that is infinite, finitely generated, simple and
+amenable, where amenable means that $G$ satisfies the Følner condition.
 
 ## Depends on
 

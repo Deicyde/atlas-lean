@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0UnitInterval
 ---
 
-# L0 Unit Interval
+# Measurable functions representing $L^0((0,1))$
 
-Measurable real functions on `ℝ`, used as representatives of `L⁰([0, 1])`; nothing below depends
-on their values off `[0, 1]` or on a null set.
+**Measurable functions representing $L^0([0,1])$.** The type of Borel measurable functions
+$f : \mathbb{R} \to \mathbb{R}$, used as representatives of the elements of $L^0([0,1])$.
+
+The pseudometric and the convergence in measure built on them depend only on the restriction
+of $f$ to $[0,1]$ up to a null set.
 
 ## Depends on
 

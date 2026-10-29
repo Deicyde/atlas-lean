@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.WordMapsSurjectivityKourovka16Problem68Wanted.so3WordMapsSurjective
 ---
 
-# So3 Word Maps Surjective
+# Surjectivity of word maps on $\mathrm{SO}(3, \mathbb{R})$ (Kourovka 16.68(c))
 
-Kourovka 16.68(c) (J. Mycielski): every nontrivial word map `SO(3, ℝ)² → SO(3, ℝ)` is
-surjective.
+**Surjectivity of word maps on $\mathrm{SO}(3, \mathbb{R})$ (Kourovka 16.68(c)).** The
+statement, asked about by J. Mycielski, that for every nontrivial element $w$ of the free group
+$F_2$ on two generators, the word map
+$\mathrm{SO}(3, \mathbb{R}) \times \mathrm{SO}(3, \mathbb{R}) \to \mathrm{SO}(3, \mathbb{R})$,
+$(x, y) \mapsto w(x, y)$, is surjective.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Map](word-map.md)
+- [Word map](word-map.md)
 
 ## Sources
 

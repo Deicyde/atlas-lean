@@ -6,17 +6,17 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.ofModel_toModel
 ---
 
-# Of Model to Model
+# Kripke to CSLib and back is the identity
 
-From a Kripke model to a CSLib model and back is the identity (the
-`Nonempty World` instance, a proposition, agrees with the model's
-`nonempty_world` field by proof irrelevance).
+**Kripke to CSLib and back is the identity.** Let $k$ be a Kripke model on a nonempty type of
+worlds. Converting $k$ to a CSLib unimodal model and converting that model back to a Kripke model
+gives $k$.
 
 ## Depends on
 
 - [Kripke Model](../kripke/kripke-model.md)
-- [Of Model](of-model.md)
-- [To Model](to-model.md)
+- [Kripke model of a CSLib model](of-model.md)
+- [The CSLib unimodal model of a Kripke model](to-model.md)
 
 ## Sources
 

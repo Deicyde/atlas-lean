@@ -5,13 +5,17 @@ statement: formalized
 lean: Cslib.Modal.Formula.sub
 ---
 
-# Sub
+# Subformulas
 
-The subformulas of a formula, including itself.
+**Subformulas.** The finite set $\mathrm{sub}(\varphi)$ of subformulas of a modal formula
+$\varphi$, including $\varphi$ itself, is defined by recursion: $\mathrm{sub}(p) = \{p\}$ for an
+atom $p$, $\mathrm{sub}(\bot) = \{\bot\}$, $\mathrm{sub}(\varphi \to \psi) = \{\varphi \to \psi\}
+\cup \mathrm{sub}(\varphi) \cup \mathrm{sub}(\psi)$, and $\mathrm{sub}(\Box\varphi) =
+\{\Box\varphi\} \cup \mathrm{sub}(\varphi)$.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

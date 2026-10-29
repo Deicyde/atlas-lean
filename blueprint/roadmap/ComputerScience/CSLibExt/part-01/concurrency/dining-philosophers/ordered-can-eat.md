@@ -21,10 +21,10 @@ state reachable from the initial state, some state in which philosopher $i$ eats
 - [Initial state of the dining philosophers](initial.md)
 - [Transition system of a dining-philosophers protocol](lts.md)
 - [Resource-ordered dining-philosophers protocol](ordered.md)
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
-- [Exists Finally](../../../../../Logic/CSLibExt/ctl/basic/exists-finally.md)
-- [Forall Globally](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
-- [Satisfies](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [Exists finally](../../../../../Logic/CSLibExt/ctl/basic/exists-finally.md)
+- [The CTL operator $\mathrm{AG}$](../../../../../Logic/CSLibExt/ctl/basic/forall-globally.md)
+- [Satisfaction of CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/satisfies.md)
 
 ## Proof depends on
 
@@ -32,7 +32,7 @@ state reachable from the initial state, some state in which philosopher $i$ eats
 - [When a philosopher can move](can-move.md)
 - [Move of a philosopher](move.md)
 - [Phase of a philosopher](phase.md)
-- [Mem sat](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
+- [Correctness of the CTL model checker](../../../../../Logic/CSLibExt/ctl/model-checking/mem-sat.md)
 - [Sat](../../../../../Logic/CSLibExt/ctl/model-checking/sat.md)
 
 ## Sources

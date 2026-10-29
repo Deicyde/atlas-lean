@@ -4,6 +4,6 @@ navigation: module
 
 # Amenable Large Growth Rate Kourovka15 Problem4
 
-- [Growth Rate](growth-rate.md)
-- [Large Growth Rate Implies Nonamenable](large-growth-rate-implies-nonamenable.md)
-- [Large Growth Rate Implies Nonamenable refuted](large-growth-rate-implies-nonamenable-re.md)
+- [Growth rate of a $k$-element generating family (Kourovka 14.7)](growth-rate.md)
+- [Kourovka Problem 15.4 (large growth rate implies non-amenability)](large-growth-rate-implies-nonamenable.md)
+- [Amenable groups with growth rate close to $2k - 1$ (Kourovka 15.4 refuted)](large-growth-rate-implies-nonamenable-re.md)

@@ -14,7 +14,7 @@ neighbouring philosophers $i$ and $i + 1$ do not eat at the same time.
 
 ## Depends on
 
-- [Formula](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
+- [CTL formulas](../../../../../Logic/CSLibExt/ctl/basic/formula.md)
 
 ## Sources
 

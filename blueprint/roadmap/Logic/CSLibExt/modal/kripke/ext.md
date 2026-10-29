@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Modal.BoundedMorphism.ext
 ---
 
-# Ext
+# Extensionality for bounded morphisms
 
-Bounded morphisms are equal when their underlying world maps are equal.
+**Extensionality for bounded morphisms.** Two bounded morphisms $f$ and $g$ between the same
+Kripke models are equal if $f(w) = g(w)$ for every world $w$.
 
 ## Depends on
 
-- [Bounded Morphism](bounded-morphism.md)
+- [Bounded morphism](bounded-morphism.md)
 - [Kripke Model](kripke-model.md)
 
 ## Sources

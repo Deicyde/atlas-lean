@@ -4,7 +4,7 @@ navigation: module
 
 # Same Spectrum Incomparable Groups Kourovka16 Problem106
 
-- [Element Orders](element-orders.md)
-- [Is Subgroup Or Normal Section Of](is-subgroup-or-normal-section-of.md)
-- [Same Spectrum Incomparable Groups](same-spectrum-incomparable-groups.md)
-- [Same Spectrum Incomparable Groups holds](same-spectrum-incomparable-groups-holds.md)
+- [Element-order spectrum of a group](element-orders.md)
+- [Subgroup or quotient of a normal subgroup](is-subgroup-or-normal-section-of.md)
+- [Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (problem)](same-spectrum-incomparable-groups.md)
+- [Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (Kourovka 16.106)](same-spectrum-incomparable-groups-holds.md)

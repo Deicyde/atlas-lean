@@ -4,7 +4,7 @@ navigation: module
 
 # Two Group Minimal Condition Centralizers Kourovka11 Problem103
 
-- [Is Locally Finite](is-locally-finite.md)
-- [Minimal Condition On Centralizers](minimal-condition-on-centralizers.md)
-- [Two Group Minimal Centralizers Locally Finite](two-group-minimal-centralizers-locally-f.md)
-- [Two Group Minimal Centralizers Locally Finite holds](two-group-minimal-centralizers-locally-f-2.md)
+- [Locally finite group](is-locally-finite.md)
+- [Minimal condition on centralizers](minimal-condition-on-centralizers.md)
+- [Wilson's question on $2$-groups with the minimal condition on centralizers (Kourovka problem 11.103)](two-group-minimal-centralizers-locally-f.md)
+- [Every $2$-group with the minimal condition on centralizers is locally finite (Kourovka 11.103)](two-group-minimal-centralizers-locally-f-2.md)

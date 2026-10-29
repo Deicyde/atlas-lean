@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Modal.KripkeModel.valid_axiomFour
 ---
 
-# Valid axiom Four
+# Axiom 4 is valid on transitive Kripke models
 
-The 4 axiom is valid on transitive frames.
+**Axiom 4 is valid on transitive Kripke models.** Let $M$ be a Kripke model whose
+accessibility relation $R$ is transitive: $R\,u\,v$ and $R\,v\,w$ imply $R\,u\,w$ for all worlds
+$u, v, w$. Then for every formula $\varphi$ the 4 axiom $\Box\varphi \to \Box\Box\varphi$ is
+globally valid in $M$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Axiom Four](axiom-four.md)
+- [Modal formulas](formula.md)
+- [Axiom 4](axiom-four.md)
 - [Kripke Model](kripke-model.md)
-- [Valid](valid.md)
+- [Global validity in a Kripke model](valid.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction in a Kripke model](satisfies.md)
 
 ## Sources
 

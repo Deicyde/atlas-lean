@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbnormalSupersolubleFactorizationKourovka19Problem100Wanted.abnormalSupersolubleTriFactorizationSupersoluble
 ---
 
-# Abnormal Supersoluble Tri Factorization Supersoluble
+# Abnormal supersoluble trifactorizations (Kourovka 19.100)
 
-Kourovka 19.100 (A. F. Vasil'ev, T. I. Vasil'eva): if a finite group `G = AB = BC = CA` is
-factorized by abnormal supersoluble subgroups `A`, `B`, `C`, then `G` is supersoluble.
+**Abnormal supersoluble trifactorizations (Kourovka 19.100).** The proposition that for every
+finite group $G$ and all subgroups $A$, $B$, $C$ of $G$ that are abnormal in $G$ and supersoluble,
+if $G = AB = BC = CA$ as sets, then $G$ is supersoluble.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Abnormal](is-abnormal.md)
-- [Is Supersoluble](is-supersoluble.md)
+- [Abnormal subgroup](is-abnormal.md)
+- [Supersoluble groups via cyclic normal series](is-supersoluble.md)
 
 ## Sources
 

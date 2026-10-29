@@ -6,21 +6,21 @@ proof: formalized
 lean: Cslib.PDL.sat_box_test
 ---
 
-# Sat box test
+# Box of a test
 
-`[ψ?]φ ↔ (ψ → φ)`: a test either blocks (when `ψ` fails) or leaves
-the state unchanged.
+**Box of a test.** For every model $M$, world $w$ and formulas $\psi$ and $\varphi$, the formula
+$[\psi?]\varphi$ holds at $w$ if and only if $\varphi$ holds at $w$ whenever $\psi$ holds at $w$.
 
 ## Depends on
 
-- [Formula](formula.md)
-- [Model](model.md)
-- [Program](program.md)
-- [Sat](sat.md)
+- [PDL formulas](formula.md)
+- [PDL model](model.md)
+- [PDL programs](program.md)
+- [Satisfaction of PDL formulas](sat.md)
 
 ## Proof depends on
 
-- [Prog Rel](prog-rel.md)
+- [Relation denoted by a PDL program](prog-rel.md)
 
 ## Sources
 

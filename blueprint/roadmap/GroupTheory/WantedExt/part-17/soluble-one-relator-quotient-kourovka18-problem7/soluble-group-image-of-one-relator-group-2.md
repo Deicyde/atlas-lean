@@ -5,13 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SolubleOneRelatorQuotientKourovka18Problem75Wanted.solubleGroupImageOfOneRelatorGroups_holds
 ---
 
-# Soluble Group Image Of One Relator Groups holds
+# Finite soluble groups are images of one-relator groups
+
+**Finite soluble groups are images of one-relator groups.** Every
+finite soluble group $G$ has a natural number $d$ such that for every element $w$ of the free
+group on $x_1, \dots, x_d$ there is a surjective homomorphism from the one-relator group
+$\langle x_1, \dots, x_d \mid w \rangle$ onto $G$. That is, Kourovka Problem 18.75 has a positive
+answer.
 
 Resolved true: the Kourovka Archive answers 18.75 "Yes, it does" (N. Nikolov and D. Segal, 2007).
 
 ## Depends on
 
-- [Soluble Group Image Of One Relator Groups](soluble-group-image-of-one-relator-group.md)
+- [Finite soluble groups as images of one-relator groups (Kourovka 18.75)](soluble-group-image-of-one-relator-group.md)
 
 ## Sources
 

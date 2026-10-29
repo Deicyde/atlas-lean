@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.StrictLiminfGapFiniteSetCountableWanted.countable_setOf_lt_top_of_lt_liminf
 ---
 
-# Strict Liminf Gap Finite Set Countable Wanted
+# A strict liminf gap at every finite value forces countably many finite values
 
-Suppose $f:[0,1]\to[0,\infty]$ has the property that if $f(y)\ne\infty$, then
-\[
-\liminf_{x\to y} f(x) > f(y).
-\]
-Prove that $\{y\in[0,1]: f(y)\lt \infty\}$ is (at most) countable.
+**A strict liminf gap at every finite value forces countably many finite values.** Let
+$f : [0,1] \to [0,\infty]$ be such that for every $y \in [0,1]$ with $f(y) \ne \infty$,
+
+$$
+\liminf_{x \to y,\ x \ne y} f(x) > f(y),
+$$
+
+where $x$ ranges over $[0,1]$. Then the set $\{y\in[0,1] : f(y) < \infty\}$ is countable.
 
 ## Depends on
 

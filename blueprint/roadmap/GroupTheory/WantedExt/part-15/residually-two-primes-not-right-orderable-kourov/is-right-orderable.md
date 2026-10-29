@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ResiduallyTwoPrimesNotRightOrderableKourovka10Problem30Wanted.IsRightOrderable
 ---
 
-# Is Right Orderable
+# Right-orderable groups
 
-`G` is right-orderable: some linear order on `G` is invariant under right multiplication.
+**Right-orderable groups.** A group $G$ is right-orderable when it admits a linear order $\le$
+that is invariant under right multiplication: $a \le b$ implies $ac \le bc$ for all
+$a, b, c \in G$.
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ContinuousBVDiffContinuousMonotoneWanted.exists_continuous_monotone_sub_of_boundedVariationOn
 ---
 
-# Continuous BVDiff Continuous Monotone Wanted
+# Jordan decomposition of a continuous function of bounded variation
 
-Suppose $F$ is of bounded variation and continuous. Prove that $F=F_1-F_2$, where both $F_1$ and
-$F_2$ are monotonically non-decreasing and continuous.
+**Jordan decomposition of a continuous function of bounded variation.** Let
+$F : \mathbb{R} \to \mathbb{R}$ be continuous and of bounded variation on all of $\mathbb{R}$.
+Then there are continuous non-decreasing functions $F_1, F_2 : \mathbb{R} \to \mathbb{R}$ such
+that $F = F_1 - F_2$.
 
 ## Depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.HallSubgroupPrimeSetIntersectionKourovka18Problem38Wanted.IsHallPiSubgroup
 ---
 
-# Is Hall Pi Subgroup
+# Hall π-subgroups
 
-`H` is a Hall `π`-subgroup: `|H|` is a `π`-number and `|G : H|` has no prime divisor in `π`.
+**Hall π-subgroups.** Let $\pi$ be a set of natural numbers and let $H$ be a subgroup of a
+group $G$. Then $H$ is a Hall $\pi$-subgroup when its order $|H|$ is a $\pi$-number and no prime
+divisor of its index $|G : H|$ lies in $\pi$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pi Number](is-pi-number.md)
+- [π-numbers](is-pi-number.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ subgroup.
 
 ## Depends on
 
-- [Longitude Subgroup](longitude-subgroup.md)
+- [Longitude subgroup](longitude-subgroup.md)
 
 ## Proof depends on
 

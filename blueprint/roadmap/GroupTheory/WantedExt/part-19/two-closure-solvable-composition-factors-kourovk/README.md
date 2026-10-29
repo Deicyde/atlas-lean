@@ -4,6 +4,6 @@ navigation: module
 
 # Two Closure Solvable Composition Factors Kourovka19 Problem67
 
-- [Two Closure](two-closure.md)
-- [Solvable Two Closure Factors Cyclic Or Alternating](solvable-two-closure-factors-cyclic-or-a.md)
-- [Solvable Two Closure Factors Cyclic Or Alternating refuted](solvable-two-closure-factors-cyclic-or-a-2.md)
+- [The $2$-closure of a permutation group](two-closure.md)
+- [Kourovka Problem 19.67](solvable-two-closure-factors-cyclic-or-a.md)
+- [Skresanov's counterexample to Kourovka Problem 19.67](solvable-two-closure-factors-cyclic-or-a-2.md)

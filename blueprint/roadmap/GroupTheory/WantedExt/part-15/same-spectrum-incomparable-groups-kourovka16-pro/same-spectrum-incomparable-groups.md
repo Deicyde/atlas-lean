@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.sameSpectrumIncomparableGroups
 ---
 
-# Same Spectrum Incomparable Groups
+# Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (problem)
 
-Kourovka 16.106 (W. J. Shi): there are finite groups `G₁`, `G₂` with `π_e(G₁) = π_e(G₂)`,
-`h(π_e(G₁)) < ∞` (the finite groups with this spectrum have bounded order, so there are finitely
-many up to isomorphism), and neither is isomorphic to a subgroup or to a quotient of a normal
-subgroup of the other.
+**Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the
+other (problem).** The statement that there exist finite groups $G_1$ and $G_2$ with the same
+spectrum $\pi_e(G_1) = \pi_e(G_2)$ (the set of orders of elements), such that every finite group
+with spectrum $\pi_e(G_1)$ has order at most some fixed bound $B$, and such that neither of $G_1$,
+$G_2$ is isomorphic to a subgroup or to a quotient of a normal subgroup of the other.
+
+This is Kourovka Notebook Problem 16.106 (W. J. Shi), which asks for $h(\pi_e(G_1)) < \infty$,
+where $h(\Gamma)$ is the number of finite groups with spectrum $\Gamma$ up to isomorphism; the
+bound on orders is equivalent, since there are finitely many groups of each order.
 
 ## Depends on
 
@@ -18,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Subgroup Or Normal Section Of](is-subgroup-or-normal-section-of.md)
-- [Element Orders](element-orders.md)
+- [Subgroup or quotient of a normal subgroup](is-subgroup-or-normal-section-of.md)
+- [Element-order spectrum of a group](element-orders.md)
 
 ## Sources
 

@@ -4,9 +4,9 @@ navigation: module
 
 # Finite State Conjugacy Problem Kourovka16 Problem34
 
-- [Is Tree Aut](is-tree-aut.md)
-- [Tree Section](tree-section.md)
-- [Is Finite State Aut](is-finite-state-aut.md)
-- [Word Value](word-value.md)
-- [Finite State Conjugacy Decidable](finite-state-conjugacy-decidable.md)
-- [Finite State Conjugacy Decidable refuted](finite-state-conjugacy-decidable-refuted.md)
+- [Automorphism of the regular rooted tree](is-tree-aut.md)
+- [Section of a map of the regular rooted tree at a vertex](tree-section.md)
+- [Finite-state automorphism of the regular rooted tree](is-finite-state-aut.md)
+- [Value of a word in the generators](word-value.md)
+- [Kourovka Problem 16.34: conjugacy in finite-state automorphism groups](finite-state-conjugacy-decidable.md)
+- [Finite-state tree automorphism groups with undecidable conjugacy problem](finite-state-conjugacy-decidable-refuted.md)

@@ -4,6 +4,6 @@ navigation: module
 
 # Almost Palindromic Width Kourovka19 Problem8
 
-- [Is Almost Palindrome](is-almost-palindrome.md)
-- [Almost Palindromic Width Finite](almost-palindromic-width-finite.md)
-- [Almost Palindromic Width Finite refuted](almost-palindromic-width-finite-refuted.md)
+- [Almost palindromes](is-almost-palindrome.md)
+- [Finite almost-palindromic width of $F_2$ (Kourovka 19.8)](almost-palindromic-width-finite.md)
+- [The almost-palindromic width of $F_2$ is infinite (Kourovka 19.8)](almost-palindromic-width-finite-refuted.md)

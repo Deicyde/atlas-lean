@@ -5,24 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_generalizedTribonacci_growth_bounds
 ---
 
-# Gibonacci generalized Tribonacci growth bounds
+# Growth bounds for Gibonacci and generalized Tribonacci sequences
 
-Lemma 1: growth bounds. With `φ` the golden ratio and `τ` the real root of
-`t³ = t² + t + 1` (the paper's dominant Tribonacci root), (i) `|P_n| ≤ (|x| + |y|) φ^(n-1)` for
-`n ≥ 1`; (ii) there are absolute constants `c₀, c₁ > 0` such that, for `(x, y) ≠ (0, 0)` and all
-`n ≥ c₁ (log (|x| + |y|) + 1)`, `|P_n| ≥ c₀ φⁿ / (|x| + |y|)`; (iii)
-`|Q_n| ≤ (|a| + |b| + |c|) τ^(n-1)` for `n ≥ 1`. Paper index `n` is `n - 1` here (`P_n` is
-`gibonacciNumber x y (n - 1)`, `Q_n` is `generalizedTribonacci a b c (n - 1)`).
+**Growth bounds for Gibonacci and generalized Tribonacci sequences.** Let $\varphi$ be the
+golden ratio. For integers $x, y$ let $(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$
+and $P_1 = y$, and for integers $a, b, c$ let $(Q_n)_{n \ge 0}$ be the generalized Tribonacci
+sequence with $Q_0 = a$, $Q_1 = b$ and $Q_2 = c$. Then (i) for all integers $x, y$ and every
+$n \ge 0$, $|P_n| \le (|x| + |y|)\,\varphi^n$; (ii) there are real constants $c_0 > 0$ and
+$c_1 > 0$ such that for all integers $x, y$ with $(x, y) \ne (0, 0)$ and every $n \ge 0$ with
+$c_1 (\log(|x| + |y|) + 1) \le n$, one has $c_0\,\varphi^{n+1} / (|x| + |y|) \le |P_n|$; and
+(iii) for every real $\tau$ with $\tau^3 = \tau^2 + \tau + 1$, all integers $a, b, c$ and every
+$n \ge 0$, $|Q_n| \le (|a| + |b| + |c|)\,\tau^n$.
 
-Lemma 1(ii) is printed with the threshold "n large enough depending on `|x| + |y|`"; the
-logarithmic form of the threshold stated here is the one the paper uses, in the proof of
-Theorem 2: "for `n ≥ c₁ log B` (where `c₁` absorbs the `log(|x| + |y|) ≤ log(2B)` from
-Lemma 1(ii))", with the range later taken as `N = max{4, ⌈c₁ log B⌉, ⌈c₅ log B⌉}` (the `+1`
-inside the threshold here absorbs that absolute small-index cutoff).
+The paper indexes both sequences from $1$, so its $n$-th terms are $P_{n-1}$ and $Q_{n-1}$ here.
+It prints (ii) with the threshold "n large enough depending on $|x| + |y|$"; the logarithmic
+threshold is the one the paper uses in its proof of Theorem 2.
 
 ## Depends on
 
-- [Generalized Tribonacci](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
+- [Generalized Tribonacci sequence](../../../MathlibExt/part-06/generalized-tribonacci/generalized-tribonacci.md)
 - [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources

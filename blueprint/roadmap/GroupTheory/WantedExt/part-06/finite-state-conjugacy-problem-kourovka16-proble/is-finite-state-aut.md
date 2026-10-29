@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.IsFiniteStateAut
 ---
 
-# Is Finite State Aut
+# Finite-state automorphism of the regular rooted tree
 
-`f` is a finite-state automorphism of the `d`-regular rooted tree: a tree automorphism with
-finitely many distinct sections.
+**Finite-state automorphism of the regular rooted tree.** For $d \in \mathbb{N}$, a
+permutation $f$ of the finite words over $\{0, \dots, d-1\}$ is a finite-state automorphism of
+the $d$-regular rooted tree when it is an automorphism of the tree and the sections of $f$ at
+all vertices $u$ form a finite set of maps.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Tree Aut](is-tree-aut.md)
-- [Tree Section](tree-section.md)
+- [Automorphism of the regular rooted tree](is-tree-aut.md)
+- [Section of a map of the regular rooted tree at a vertex](tree-section.md)
 
 ## Sources
 

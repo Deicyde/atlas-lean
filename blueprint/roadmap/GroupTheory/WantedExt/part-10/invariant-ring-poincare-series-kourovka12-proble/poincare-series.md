@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeries
 ---
 
-# Poincare Series
+# Poincaré series of the invariant ring
 
-The Poincaré series `∑ₘ bₘ tᵐ` of `T`, with `bₘ = dim Tₘ`.
+**Poincaré series of the invariant ring.** For natural numbers $p$ and $n$ and a subgroup $G$
+of $\mathrm{GL}_n(\mathbb{Z}/p\mathbb{Z})$, the Poincaré series of the invariant ring $T$ of $G$
+is the formal power series $P(t) = \sum_{m \ge 0} b_m t^m$ over $\mathbb{Q}$, where $b_m$ is the
+rank over $\mathbb{Z}/p\mathbb{Z}$ (the dimension, when $p$ is prime) of the degree-$m$
+homogeneous component $T_m$ of $T$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Invariant Component](invariant-component.md)
+- [Homogeneous component of the invariant ring](invariant-component.md)
 
 ## Sources
 

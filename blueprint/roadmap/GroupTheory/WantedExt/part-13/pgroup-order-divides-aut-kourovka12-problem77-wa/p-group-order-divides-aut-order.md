@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PGroupOrderDividesAutKourovka12Problem77Wanted.pGroupOrderDividesAutOrder
 ---
 
-# P Group Order Divides Aut Order
+# Divisibility conjecture for orders of automorphism groups of $p$-groups (Kourovka 12.77)
 
-Kourovka 12.77 (A. I. Starostin; well-known problem), stated for some prime `p`: the order of
-every finite non-cyclic `p`-group of order greater than `p²` divides the order of its
-automorphism group.
+**Divisibility conjecture for orders of automorphism groups of $p$-groups (Kourovka 12.77).**
+The statement that there is a prime $p$ such that for every finite non-cyclic $p$-group $P$ of
+order greater than $p^2$, the order of $P$ divides the order of its automorphism group
+$\mathrm{Aut}(P)$.
+
+The source asks this for every prime $p$; stating it for some prime makes its refutation assert a
+counterexample for every prime.
 
 ## Depends on
 

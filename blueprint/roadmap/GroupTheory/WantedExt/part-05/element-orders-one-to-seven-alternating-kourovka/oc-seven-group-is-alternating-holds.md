@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementOrdersOneToSevenAlternatingKourovka19Problem80Wanted.ocSevenGroupIsAlternating_holds
 ---
 
-# Oc Seven Group Is Alternating holds
+# Groups with element orders $1$ to $7$ are isomorphic to $A_7$
 
-Resolved true: the Kourovka Archive answers 19.80 "Yes, it is true", citing Jabara and Mamontov:
-every (possibly infinite) group with element orders exactly `{1, …, 7}` is isomorphic to `A₇`.
+**Groups with element orders $1$ to $7$ are isomorphic to $A_7$.** Every group, finite or
+infinite, whose set of element orders is exactly $\{1, 2, \dots, 7\}$ is isomorphic to the
+alternating group $A_7$. This answers Kourovka Problem 19.80 positively (Mamontov and Jabara).
 
 ## Depends on
 
-- [Oc Seven Group Is Alternating](oc-seven-group-is-alternating.md)
+- [Kourovka Problem 19.80 ($OC_7$-groups)](oc-seven-group-is-alternating.md)
 
 ## Sources
 

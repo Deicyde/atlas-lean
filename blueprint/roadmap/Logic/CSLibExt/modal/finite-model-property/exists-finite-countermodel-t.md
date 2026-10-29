@@ -8,31 +8,33 @@ lean: Cslib.Modal.exists_finite_countermodel_T
 
 # Finite model property of T
 
-**Finite model property of T**: a non-theorem fails in a reflexive model with at most
-`2 ^ |sub φ|` worlds.
+**Finite model property of T.** If a modal formula $\varphi$ is not a theorem of T, then
+there is a Kripke model with finitely many worlds, at most $2^{|\mathrm{sub}(\varphi)|}$ of them,
+where $\mathrm{sub}(\varphi)$ is the set of subformulas of $\varphi$, whose accessibility
+relation is reflexive and in which $\varphi$ is false at some world.
 
 ## Depends on
 
-- [T](../hilbert/t.md)
-- [Derivable](../hilbert/derivable.md)
-- [Formula](../kripke/formula.md)
-- [Sub](../filtration/sub.md)
+- [Extra axioms of T](../hilbert/t.md)
+- [Theorems of a normal modal logic](../hilbert/derivable.md)
+- [Modal formulas](../kripke/formula.md)
+- [Subformulas](../filtration/sub.md)
 - [Kripke Model](../kripke/kripke-model.md)
-- [Valid](../kripke/valid.md)
+- [Global validity in a Kripke model](../kripke/valid.md)
 
 ## Proof depends on
 
-- [Fin Refl](fin-refl.md)
-- [Is Filtration](../filtration/is-filtration.md)
-- [Satisfies](../kripke/satisfies.md)
-- [Derivable T iff](../canonical/derivable-t-iff.md)
-- [Filtration Rel](../filtration/filtration-rel.md)
-- [Filtration Worlds](../filtration/filtration-worlds.md)
-- [Fin Model](../filtration/fin-model.md)
-- [Fin Refl of is Filtration](fin-refl-of-is-filtration.md)
-- [Is Filtration filtration Rel](../filtration/is-filtration-filtration-rel.md)
-- [Not valid fin Model of is Filtration](not-valid-fin-model-of-is-filtration.md)
-- [Sub Type](../filtration/sub-type.md)
+- [Reflexivity on a finite set of worlds](fin-refl.md)
+- [Filtration relations](../filtration/is-filtration.md)
+- [Satisfaction in a Kripke model](../kripke/satisfies.md)
+- [Soundness and completeness of T](../canonical/derivable-t-iff.md)
+- [Smallest filtration relation](../filtration/filtration-rel.md)
+- [Worlds of the filtration](../filtration/filtration-worlds.md)
+- [Finite Kripke model on sets of formulas](../filtration/fin-model.md)
+- [Filtrations of reflexive models are reflexive](fin-refl-of-is-filtration.md)
+- [The smallest filtration is a filtration](../filtration/is-filtration-filtration-rel.md)
+- [A filtration refutes what the model refutes](not-valid-fin-model-of-is-filtration.md)
+- [Type of a world](../filtration/sub-type.md)
 
 ## Sources
 

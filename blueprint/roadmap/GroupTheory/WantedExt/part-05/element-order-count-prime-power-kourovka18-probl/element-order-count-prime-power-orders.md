@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementOrderCountPrimePowerKourovka18Problem112Wanted.elementOrderCountPrimePowerOrders
 ---
 
-# Element Order Count Prime Power Orders
+# Shi's question on element-order counts (Kourovka 18.112)
 
-Kourovka 18.112 (W. J. Shi): if a finite group `G` has the property that, for every divisor
-`d > 1` of `|G|` and every subgroup `H` of order coprime to `d`, `|H|` divides the number of
-elements of order `d`, then every element of `G` has prime-power order (the identity having order
-`1 = p⁰`).
+**Shi's question on element-order counts (Kourovka 18.112).** The proposition that if a
+finite group $G$ has the property that, for every divisor $d > 1$ of $|G|$ and every subgroup $H$
+of $G$ whose order is coprime to $d$, $|H|$ divides the number of elements of $G$ of order $d$,
+then every non-identity element of $G$ has prime-power order.
 
 ## Depends on
 

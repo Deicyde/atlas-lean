@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Modal.MuCalculus.Game.counterexampleModel
 ---
 
-# Counterexample Model
+# The one-world reflexive Kripke model
 
-The one-world regression model: a single reflexive world, no atoms true.
+**The one-world reflexive Kripke model.** The Kripke model with a single world, which is
+related to itself, and a single atom, which is false at that world.
 
 ## Depends on
 

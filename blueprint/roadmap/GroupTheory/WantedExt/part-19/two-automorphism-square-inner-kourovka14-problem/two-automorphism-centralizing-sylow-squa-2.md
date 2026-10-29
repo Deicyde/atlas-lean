@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.TwoAutomorphismSquareInnerKourovka14Problem1Wanted.twoAutomorphismCentralizingSylowSquareInner_holds
 ---
 
-# Two Automorphism Centralizing Sylow Square Inner holds
+# Glauberman's theorem on squares of $2$-automorphisms (Kourovka Problem 14.1)
 
-Resolved true: the Kourovka Archive answers 14.1 "Yes, it is true", citing Glauberman: if `O(G) = 1`
-and a 2-automorphism `φ` of the finite group `G` centralizes a Sylow 2-subgroup, then `φ²` is inner.
+**Glauberman's theorem on squares of $2$-automorphisms (Kourovka Problem 14.1).** Let $G$ be a
+finite group with no nontrivial normal subgroup of odd order, and let $\varphi$ be an automorphism
+of $G$ whose order is a power of $2$. If $\varphi$ fixes every element of some Sylow $2$-subgroup
+of $G$, then $\varphi^2$ is an inner automorphism of $G$, that is, $\varphi^2$ is conjugation by
+some $g \in G$.
 
 ## Depends on
 
-- [Two Automorphism Centralizing Sylow Square Inner](two-automorphism-centralizing-sylow-squa.md)
+- [Kourovka Problem 14.1](two-automorphism-centralizing-sylow-squa.md)
 
 ## Sources
 

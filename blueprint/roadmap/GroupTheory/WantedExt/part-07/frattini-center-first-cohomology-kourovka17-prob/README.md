@@ -4,7 +4,7 @@ navigation: module
 
 # Frattini Center First Cohomology Kourovka17 Problem2
 
-- [In Frattini Center](in-frattini-center.md)
-- [Frattini Center H1 Trivial](frattini-center-h1-trivial.md)
-- [Nonabelian PGroup Frattini Center H1 Trivial](nonabelian-pgroup-frattini-center-h1-tri.md)
-- [Nonabelian PGroup Frattini Center H1 Trivial holds](nonabelian-pgroup-frattini-center-h1-tri-2.md)
+- [Centre of the Frattini subgroup](in-frattini-center.md)
+- [Vanishing first cohomology of $G/\Phi(G)$ in $Z(\Phi(G))$](frattini-center-h1-trivial.md)
+- [Kourovka Problem 17.2 (a non-abelian $p$-group with trivial $H^1$)](nonabelian-pgroup-frattini-center-h1-tri.md)
+- [A non-abelian $p$-group with $H^1(G/\Phi(G), Z(\Phi(G))) = 0$ (Kourovka 17.2)](nonabelian-pgroup-frattini-center-h1-tri-2.md)

@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NormalExponentPSubgroupKourovka15Problem24Wanted.normalExponentPSubgroupOfLargePrime
 ---
 
-# Normal Exponent PSubgroup Of Large Prime
+# Berkovich's question on normal subgroups of exponent p, for p > n
 
-Kourovka 15.24 (Ya. G. Berkovich), with the bound `p > n` of its resolution: if a finite
-`p`-group `G` has a subgroup of exponent `p` and order `pⁿ` and `p > n`, then `G` has a normal
-subgroup of exponent `p` and order `pⁿ`. Exponent `p` is stated as `x ^ p = 1` for every element,
-which for order `pⁿ` with `n ≥ 1` is exponent exactly `p`.
+**Berkovich's question on normal subgroups of exponent p, for p > n.** For every prime $p$
+and every natural number $n < p$, if a finite $p$-group $G$ has a subgroup of order $p^n$ all of
+whose elements $x$ satisfy $x^p = 1$, then $G$ has a normal subgroup of order $p^n$ all of whose
+elements $x$ satisfy $x^p = 1$.
+
+Berkovich asked this for $p$ sufficiently large relative to $n$; the explicit bound $p > n$ is the
+one of the resolution. For $n \ge 1$ the condition $x^p = 1$ on a group of order $p^n$ says that it
+has exponent exactly $p$.
 
 ## Depends on
 

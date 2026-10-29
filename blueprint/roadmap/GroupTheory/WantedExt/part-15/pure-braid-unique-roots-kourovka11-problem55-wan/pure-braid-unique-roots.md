@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.PureBraidUniqueRootsKourovka11Problem55Wanted.pureBraidUniqueRoots
 ---
 
-# Pure Braid Unique Roots
+# Kourovka 11.55: unique roots in pure braid groups
 
-Kourovka 11.55 (G. S. Makanin): extraction of roots in the group of coloured braids is unique:
-if `α ^ k = β ^ k` for coloured braids `α`, `β` and some `k ≥ 1`, then `α = β`.
+**Kourovka 11.55: unique roots in pure braid groups.** The proposition that for every
+$n \in \mathbb{N}$ and every integer $k \ge 1$, if pure braids $\alpha$ and $\beta$ on $n + 1$
+strands satisfy $\alpha^k = \beta^k$, then $\alpha = \beta$.
+
+This is Kourovka Problem 11.55 (G. S. Makanin): extraction of roots in the group of coloured
+braids is unique.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 - [Artin group](../../../MathlibExt/part-01/artin-group/artin-group.md)
 - [Artin relators of a Coxeter matrix](../../../MathlibExt/part-01/artin-group/artin-relations-set.md)
-- [Pure Braid Group](pure-braid-group.md)
+- [Pure braid group](pure-braid-group.md)
 
 ## Sources
 

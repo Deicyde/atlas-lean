@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.IsomorphicNormalSubgroupsKourovka12Problem45Wanted.isoToNormalSubgroupsFreeSimpleOrCyclic
 ---
 
-# Iso To Normal Subgroups Free Simple Or Cyclic
+# Hall's question on groups isomorphic to their nontrivial normal subgroups (Kourovka 12.45)
 
-Kourovka 12.45 (P. Hall): a nontrivial group that is isomorphic to each of its nontrivial
-normal subgroups is free of infinite rank, simple, or infinite cyclic.
+**Hall's question on groups isomorphic to their nontrivial normal subgroups (Kourovka 12.45).**
+The statement that every nontrivial group that is isomorphic to each of its nontrivial normal
+subgroups is free of infinite rank (isomorphic to the free group on an infinite set), simple, or
+infinite cyclic.
 
 ## Depends on
 

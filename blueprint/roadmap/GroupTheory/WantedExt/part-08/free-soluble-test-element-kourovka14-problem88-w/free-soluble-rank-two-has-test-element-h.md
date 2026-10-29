@@ -19,7 +19,7 @@ Problem 14.88 (answer: Yes, it does), https://shpilrain.ccny.cuny.edu/gworld/pro
 
 ## Depends on
 
-- [Free Soluble Rank Two Has Test Element](free-soluble-rank-two-has-test-element.md)
+- [Kourovka Problem 14.88 (test elements of free soluble groups of rank 2)](free-soluble-rank-two-has-test-element.md)
 
 ## Sources
 

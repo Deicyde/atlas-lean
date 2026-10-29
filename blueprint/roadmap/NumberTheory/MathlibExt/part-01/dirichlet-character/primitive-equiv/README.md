@@ -6,16 +6,16 @@ navigation: module
 
 ## Dirichlet Character
 
-- [Primitive Inducer](primitive-inducer.md)
+- [Primitive characters at divisor levels](primitive-inducer.md)
 
 ## Primitive Inducer
 
-- [Ext](ext.md)
+- [Equality of primitive characters at divisor levels](ext.md)
 
 ## Dirichlet Character
 
-- [Equiv Primitive Inducer](equiv-primitive-inducer.md)
-- [Equiv Primitive Inducer level](equiv-primitive-inducer-level.md)
-- [Equiv Primitive Inducer char](equiv-primitive-inducer-char.md)
-- [Equiv Unit Hom](equiv-unit-hom.md)
-- [Equiv Unit Hom apply](equiv-unit-hom-apply.md)
+- [Dirichlet characters correspond to primitive characters at divisor levels](equiv-primitive-inducer.md)
+- [Level of the primitive inducer attached to a character](equiv-primitive-inducer-level.md)
+- [Character of the primitive inducer attached to a character](equiv-primitive-inducer-char.md)
+- [Primitive characters at divisor levels correspond to unit-group characters](equiv-unit-hom.md)
+- [Values of the unit-group character of a primitive inducer](equiv-unit-hom-apply.md)

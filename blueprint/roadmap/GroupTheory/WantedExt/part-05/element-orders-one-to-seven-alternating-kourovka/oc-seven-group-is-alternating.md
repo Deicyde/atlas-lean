@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ElementOrdersOneToSevenAlternatingKourovka19Problem80Wanted.ocSevenGroupIsAlternating
 ---
 
-# Oc Seven Group Is Alternating
+# Kourovka Problem 19.80 ($OC_7$-groups)
 
-Kourovka 19.80 (W. J. Shi): every `OC₇`-group, that is, every group whose set of element orders
-is exactly `{1, 2, …, 7}` (such a group is periodic), is isomorphic to the alternating group
-`A₇`.
+**Kourovka Problem 19.80 ($OC_7$-groups).** The proposition, asked by W. J. Shi, that every
+$OC_7$-group, that is, every group whose set of element orders is exactly $\{1, 2, \dots, 7\}$
+(such a group is periodic), is isomorphic to the alternating group $A_7$.
 
 ## Depends on
 

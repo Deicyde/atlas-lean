@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.IsAlmostPolycyclic
 ---
 
-# Is Almost Polycyclic
+# Almost polycyclic group
 
-`G` is almost polycyclic (polycyclic-by-finite): some subgroup of finite index is
-polycyclic.
+**Almost polycyclic group.** A group $G$ is almost polycyclic (polycyclic-by-finite) if it
+has a subgroup of finite index that is polycyclic.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Polycyclic](is-polycyclic.md)
+- [Polycyclic group](is-polycyclic.md)
 
 ## Sources
 

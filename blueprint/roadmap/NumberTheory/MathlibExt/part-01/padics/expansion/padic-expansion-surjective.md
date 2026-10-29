@@ -6,9 +6,11 @@ proof: formalized
 lean: PadicInt.padicExpansion_surjective
 ---
 
-# Padic Expansion surjective
+# The $p$-adic expansion map is surjective
 
-Every `Fin p`-valued digit sequence is a bundled `p`-adic expansion.
+**The $p$-adic expansion map is surjective.** Let $p$ be a prime. Every sequence
+$(b_n)_{n \ge 0}$ with values in $\{0, 1, \dots, p - 1\}$ is the $p$-adic expansion of some
+$p$-adic integer $a \in \mathbb{Z}_p$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ Every `Fin p`-valued digit sequence is a bundled `p`-adic expansion.
 
 ## Proof depends on
 
-- [Exists padic Digit eq](exists-padic-digit-eq.md)
+- [Existence of a $p$-adic integer with prescribed digits](exists-padic-digit-eq.md)
 - [Digits of a p-adic integer](../digits/padic-digit.md)
 
 ## Sources

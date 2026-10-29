@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.EndomorphismsDeterminedByTwoElementsKourovka13Problem66Wanted.DeterminedByTwoElements
 ---
 
-# Determined By Two Elements
+# Groups whose endomorphisms with non-cyclic images are determined by two elements
 
-Two elements `g, h ∈ F` determine every endomorphism of `F` with non-cyclic image: if `φ`, `ψ`
-have non-cyclic images and agree at `g` and at `h`, then `φ = ψ`.
+**Groups whose endomorphisms with non-cyclic images are determined by two elements.** A group
+$F$ has this property when there exist elements $g, h \in F$ such that any two endomorphisms
+$\varphi, \psi$ of $F$ whose images are not cyclic subgroups and which satisfy
+$\varphi(g) = \psi(g)$ and $\varphi(h) = \psi(h)$ are equal.
 
 ## Depends on
 

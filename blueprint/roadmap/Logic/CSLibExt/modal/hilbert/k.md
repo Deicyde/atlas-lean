@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Modal.Axioms.K
 ---
 
-# K
+# Extra axioms of the modal logic K
 
-K: no extra axioms.
+**Extra axioms of the modal logic K.** The set of extra axioms of the normal modal logic K is
+the empty set of modal formulas over a given type of atoms; that is, K adds no axioms to the
+propositional axioms and the distribution axiom.
 
 ## Depends on
 
-- [Formula](../kripke/formula.md)
+- [Modal formulas](../kripke/formula.md)
 
 ## Sources
 

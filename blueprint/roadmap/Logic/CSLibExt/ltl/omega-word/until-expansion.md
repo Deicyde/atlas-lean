@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.LTL.Word.Satisfies.until_expansion
 ---
 
-# Until expansion
+# Expansion law for until
 
-The expansion law for `until`: either the target holds now, or the guard holds now and the
-`until` is postponed by one step.
+**Expansion law for until.** For every valuation of atoms on letters, ω-word $w$ and LTL
+formulas $\varphi$ and $\psi$, $w$ satisfies $\varphi \mathbin{\mathsf{U}} \psi$ ($\varphi$ until
+$\psi$) if and only if either $w$ satisfies $\psi$, or $w$ satisfies $\varphi$ and also satisfies
+$\mathsf{X}(\varphi \mathbin{\mathsf{U}} \psi)$, that is, next ($\varphi$ until $\psi$).
 
 ## Depends on
 
-- [Formula](../syntax/formula.md)
-- [Satisfies](satisfies.md)
+- [Formulas of linear temporal logic](../syntax/formula.md)
+- [Satisfaction of LTL formulas on ω-words](satisfies.md)
 
 ## Proof depends on
 
-- [Satisfies At](satisfies-at.md)
-- [Satisfies At drop](satisfies-at-drop.md)
+- [Satisfaction at a position](satisfies-at.md)
+- [Satisfaction on a suffix](satisfies-at-drop.md)
 
 ## Sources
 

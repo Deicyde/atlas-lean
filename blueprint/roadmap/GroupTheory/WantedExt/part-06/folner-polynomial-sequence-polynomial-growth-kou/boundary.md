@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.boundary
 ---
 
-# Boundary
+# Boundary of a finite subset of a group
 
-The boundary `∂F = {γ ∈ Γ \ F | γ s ∈ F for some s ∈ S}` of a finite set `F`.
+**Boundary of a finite subset of a group.** For a group $\Gamma$ and finite subsets $S$ and $F$
+of $\Gamma$, the boundary of $F$ with respect to $S$ is the set
+$\partial F = \{\gamma \in \Gamma \setminus F : \gamma s \in F \text{ for some } s \in S\}$.
 
 ## Depends on
 

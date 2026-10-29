@@ -69,8 +69,8 @@ theorem diagRotation_zero : diagRotation 0 = 1 := by
   ext i j
   fin_cases i <;> fin_cases j <;> simp
 
-/-- Conjugate-transpose of a diagonal rotation is the diagonal rotation
-through the negated angle. -/
+/-- **Conjugate transpose of a diagonal rotation.** For every real number $\theta$, the conjugate
+transpose of the diagonal rotation through $\theta$ is the diagonal rotation through $-\theta$. -/
 theorem star_diagRotation (θ : ℝ) : star (diagRotation θ) = diagRotation (-θ) := by
   rw [diagRotation_eq_diagonal, diagRotation_eq_diagonal, Matrix.star_eq_conjTranspose,
     Matrix.diagonal_conjTranspose]
@@ -114,8 +114,11 @@ theorem diagRotation_add_int_mul_two_pi (θ : ℝ) (n : ℤ) :
     diagRotation (θ + n * (2 * Real.pi)) = diagRotation θ := by
   rw [← diagRotation_add, diagRotation_int_mul_two_pi, mul_one]
 
-/-- The fixed diagonal longitude subgroup of `SU₂`: the diagonal rotations.
-In the book this is `Long_i`, the longitude at the equator point `i`. -/
+/-- **Longitude subgroup.** The longitude subgroup of $\mathrm{SU}(2)$ is the subgroup of those
+elements of $\mathrm{SU}(2)$ that are the diagonal rotation through $\theta$ for some real number
+$\theta$.
+
+It is the longitude $\mathrm{Long}_i$ at the equator point $i$. -/
 def longitudeSubgroup : Subgroup (Matrix.specialUnitaryGroup (Fin 2) ℂ) where
   carrier := {M | ∃ θ : ℝ, (M : Matrix (Fin 2) (Fin 2) ℂ) = diagRotation θ}
   mul_mem' := by
@@ -169,9 +172,12 @@ noncomputable def diagRotationToLongitudeHom : ℝ →+ Additive longitudeSubgro
       Additive.ofMul (diagRotationToLongitude θ₁ * diagRotationToLongitude θ₂)
     exact congrArg Additive.ofMul (diagRotationToLongitude_mul θ₁ θ₂).symm
 
-/-- The longitude map `ℝ / 2πℤ → Long_i`, `θ ↦ cos θ • 1 + sin θ • diag (i, -i)`
-in matrix form: the diagonal rotation through `θ`, factored through the
-period `2π`. -/
+/-- **Longitude map.** The longitude map is the group homomorphism from the circle group
+$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
+that sends the class of a real number $\theta$ to the diagonal rotation through $\theta$, that is,
+to $\cos\theta \cdot I + \sin\theta \cdot \operatorname{diag}(i, -i) =
+\operatorname{diag}(e^{i\theta}, e^{-i\theta})$, where $I$ is the $2 \times 2$ identity matrix.
+It is well defined because diagonal rotations are $2\pi$-periodic. -/
 noncomputable def longitudeMap :
     Multiplicative (AddCircle (2 * Real.pi)) →* longitudeSubgroup :=
   AddMonoidHom.toMultiplicative
@@ -188,8 +194,9 @@ noncomputable def longitudeMap :
         congr 1
         exact Subtype.ext (Subtype.ext hdiag)))
 
-/-- The longitude map sends the class of `θ` to the diagonal rotation
-through `θ`. -/
+/-- **The longitude map on the class of an angle.** For every real number $\theta$, the longitude
+map sends the class of $\theta$ in $\mathbb{R}/2\pi\mathbb{Z}$ to the diagonal rotation through
+$\theta$, regarded as an element of the longitude subgroup. -/
 theorem longitudeMap_apply_ofAdd_mk (θ : ℝ) :
     longitudeMap (Multiplicative.ofAdd (↑θ : AddCircle (2 * Real.pi))) =
       diagRotationToLongitude θ := by
@@ -234,8 +241,11 @@ theorem exists_ofAdd_mk_eq (x : Multiplicative (AddCircle (2 * Real.pi))) :
   congr 1
   exact ha.symm
 
-/-- The quotient longitude map is injective: the angle class is recovered
-from the diagonal rotation via the exponential. -/
+/-- **The longitude map is injective.** The longitude map from the circle group
+$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
+is injective.
+
+The angle class is recovered from the diagonal rotation via the complex exponential. -/
 theorem longitudeMap_injective : Function.Injective longitudeMap := by
   intro x y h
   obtain ⟨a, ha⟩ := exists_ofAdd_mk_eq x
@@ -250,7 +260,9 @@ theorem longitudeMap_injective : Function.Injective longitudeMap := by
   rw [hn]
   simp [zsmul_eq_mul]
 
-/-- The longitude map is surjective: every diagonal rotation is hit. -/
+/-- **The longitude map is surjective.** The longitude map from the circle group
+$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
+is surjective: every element of the longitude subgroup is the image of some class. -/
 theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
   rintro ⟨M, hM⟩
   obtain ⟨θ, hθ⟩ := hM
@@ -258,12 +270,16 @@ theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
   rw [longitudeMap_apply_ofAdd_mk]
   exact Subtype.ext (Subtype.ext hθ).symm
 
-/-- The longitude map is bijective. -/
+/-- **The longitude map is bijective.** The longitude map from the circle group
+$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
+is bijective. -/
 theorem longitudeMap_bijective : Function.Bijective longitudeMap :=
   ⟨longitudeMap_injective, longitudeMap_surjective⟩
 
-/-- The fixed diagonal longitude subgroup of `SU₂` is isomorphic to the circle group
-`ℝ / 2πℤ`. -/
+/-- **Isomorphism of the circle group with the longitude subgroup.** The group isomorphism from
+the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, onto the longitude
+subgroup of $\mathrm{SU}(2)$ given by the longitude map, which sends the class of a real number
+$\theta$ to the diagonal rotation through $\theta$. -/
 noncomputable def longitudeMulEquiv :
     Multiplicative (AddCircle (2 * Real.pi)) ≃* longitudeSubgroup :=
   MulEquiv.ofBijective longitudeMap longitudeMap_bijective

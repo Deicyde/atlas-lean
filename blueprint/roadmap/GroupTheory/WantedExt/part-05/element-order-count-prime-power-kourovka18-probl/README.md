@@ -4,5 +4,5 @@ navigation: module
 
 # Element Order Count Prime Power Kourovka18 Problem112
 
-- [Element Order Count Prime Power Orders](element-order-count-prime-power-orders.md)
-- [Element Order Count Prime Power Orders holds](element-order-count-prime-power-orders-h.md)
+- [Shi's question on element-order counts (Kourovka 18.112)](element-order-count-prime-power-orders.md)
+- [Counting elements of each order forces prime-power orders](element-order-count-prime-power-orders-h.md)

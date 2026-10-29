@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciBackward
 ---
 
-# Tribonacci Backward
+# Backward half of the two-sided Tribonacci sequence
 
-The backward half of the normalized Tribonacci sequence: `tribonacciBackward m`
-is `T_{-m}`. The first three clauses encode `T₀ = 0`, `T₋₁ = 0`, and
-`T₋₂ = 1`; the last clause is the forward recurrence solved for `T_{-m-3}`.
+**Backward half of the two-sided Tribonacci sequence.** The integer sequence $(B_m)_{m \ge 0}$
+is defined by $B_0 = 0$, $B_1 = 0$, $B_2 = 1$ and $B_{m+3} = B_m - B_{m+1} - B_{m+2}$ for
+every $m \ge 0$.
+
+Writing $B_m = T_{-m}$, the initial values are $T_0 = 0$, $T_{-1} = 0$, $T_{-2} = 1$, and the
+recursion is the Tribonacci recurrence $T_{n+3} = T_{n+2} + T_{n+1} + T_n$ solved for $T_n$.
 
 ## Depends on
 
