@@ -7,17 +7,18 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max_three_
 
 # MAX-3SAT is MAXSNP-complete
 
-**MAX-3SAT is MAXSNP-complete.** Source: C. H. Papadimitriou and M.
-Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer
-and System Sciences 43 (1991), 425-440.
+**MAX-3SAT is MAXSNP-complete.** There is a MAXSNP problem whose value function is the
+MAX-3SAT value function and which is MAXSNP-complete: its underlying NPO problem is in APX, and
+the underlying NPO problem of every MAXSNP problem L-reduces to it.
 
 ## Depends on
 
-- [MAXSNPComplete](maxsnpcomplete.md)
-- [MAXSNPProblem](maxsnpproblem.md)
-- [NPOProblem](npoproblem.md)
-- [Max3 SATVal](max3-satval.md)
+- [MAXSNP-completeness](maxsnpcomplete.md)
+- [MAXSNP problems](maxsnpproblem.md)
+- [NPO problems](npoproblem.md)
+- [The MAX-3SAT objective](max3-satval.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPCompleteWanted](../../../../../../sources/v2/WantedExt.md)
+- C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.

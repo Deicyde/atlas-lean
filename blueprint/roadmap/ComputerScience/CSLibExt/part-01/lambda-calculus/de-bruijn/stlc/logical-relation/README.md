@@ -22,7 +22,7 @@ navigation: module
 
 ## Stlc
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 
 ## Reducible
 

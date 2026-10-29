@@ -26,7 +26,7 @@ input.)
 ## Depends on
 
 - [Codes for single-tape machines](code.md)
-- [The machine of a code](machine.md)
+- [The machine of a single-tape code](machine.md)
 - [Bounded halting of a single-tape machine](halts-within.md)
 - [Symbol of an input bit](bit-sym.md)
 

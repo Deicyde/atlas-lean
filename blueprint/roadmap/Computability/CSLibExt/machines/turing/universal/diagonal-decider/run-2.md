@@ -19,7 +19,7 @@ and stacks in which the output stack $O$ holds the layout of $y$.
 - [Labels of the layout machine](lab-2.md)
 - [The layout function](layout.md)
 - [Program of the layout machine](prog-2.md)
-- [Γ](untitled-2.md)
+- [Stack symbols of the layout machine](untitled-2.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

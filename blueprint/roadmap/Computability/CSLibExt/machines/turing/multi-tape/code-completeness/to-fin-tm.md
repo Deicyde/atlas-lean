@@ -22,7 +22,7 @@ with its states restricted to those below $N$.
 ## Proof depends on
 
 - [Transition function of a code on bounded states](fin-tr.md)
-- [States of a code](../code/states.md)
+- [States of a multi-tape code](../code/states.md)
 
 ## Sources
 

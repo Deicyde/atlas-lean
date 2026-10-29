@@ -23,7 +23,7 @@ coordinate expression of $g_0$ in $\varphi$.
 ## Depends on
 
 - [The space $\mathcal{G}^k(M)$ of smooth metrics with the $C^k$ topology](riemannian-metric-with-ck.md)
-- [Of Metric](of-metric.md)
+- [Smooth metrics as elements of $\mathcal{G}^k(M)$](of-metric.md)
 - [The $C^k$ topology on smooth Riemannian metrics](metric-ck-topology.md)
 - [Coordinate expression of a Riemannian metric](../metric-in-coordinates/metric-in-coordinates.md)
 

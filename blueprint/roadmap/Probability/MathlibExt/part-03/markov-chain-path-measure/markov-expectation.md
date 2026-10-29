@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.MarkovChainPath.markovExpectation
 ---
 
-# Markov Expectation
+# Expectation under the chain started from a point
 
-The expectation `E_x Y` of a path functional `Y` under the chain started from `x`.
+**Expectation under the chain started from a point.** For a Markov kernel $\kappa$ on $S$,
+a function $Y : S^{\mathbb{N}} \to \mathbb{R}$ of paths and a state $x \in S$, the expectation
+$E_x Y$ is the integral of $Y$ against the Markov chain path measure with transition kernel
+$\kappa$ and initial distribution the Dirac measure at $x$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Markov Chain Path Measure](markov-chain-path-measure.md)
+- [Markov chain path measure](markov-chain-path-measure.md)
 
 ## Sources
 

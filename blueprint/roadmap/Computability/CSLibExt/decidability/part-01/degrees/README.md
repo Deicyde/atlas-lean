@@ -25,7 +25,7 @@ navigation: module
 - [Whether a code number decodes](decode-is-some.md)
 - [The definedness predicate, by cases on the tag](decode-is-some-pair.md)
 - [One step of the course-of-values recursion for definedness](decode-is-some-step.md)
-- [The step function is primitive recursive](primrec-decode-is-some-step.md)
+- [The course-of-values step for definedness is primitive recursive](primrec-decode-is-some-step.md)
 - [The definedness step function is correct](decode-is-some-step-correct.md)
 - [The definedness predicate is primitive recursive](nat-primrec-decode-is-some.md)
 - [Effective enumeration of oracle codes](oracle-code-of-nat.md)

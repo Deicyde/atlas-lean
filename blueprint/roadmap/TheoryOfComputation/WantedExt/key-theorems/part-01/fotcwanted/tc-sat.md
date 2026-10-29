@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FOTC.tcSat
 ---
 
-# Tc Sat
+# Satisfaction of an FO + TC formula in an ordered graph
 
-An ordered graph satisfies an `FO + TC` sentence `φ`.
+**Satisfaction of an FO + TC formula in an ordered graph.** An ordered graph with nonempty
+domain $\{0, \dots, n - 1\}$ satisfies an FO + TC formula $\varphi$ when $\varphi$ evaluates to
+true with every variable assigned the element $0$, relation symbol $0$ interpreted as the order
+$<$ and relation symbol $1$ as the edge relation (both only on two-element lists), and every
+other relation symbol interpreted as the empty relation.
 
 ## Depends on
 
-- [TCFO](tcfo.md)
-- [TCOrdered Graph](tcordered-graph.md)
+- [Formulas of first-order logic with transitive closure](tcfo.md)
+- [Ordered graphs for first-order logic with transitive closure](tcordered-graph.md)
 
 ## Proof depends on
 
-- [Tc Base](tc-base.md)
-- [Tc Eval](tc-eval.md)
+- [Order and edge relations as FO + TC relation symbols](tc-base.md)
+- [Evaluation of FO + TC formulas](tc-eval.md)
 
 ## Sources
 

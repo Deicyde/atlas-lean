@@ -6,21 +6,26 @@ proof: formalized
 lean: MeasureTheory.IsStoppingTime.iSup_stoppedFiltration
 ---
 
-# I Sup stopped Filtration
+# The stopped filtration generates the stopping-time σ-algebra
 
-The stopped filtration exhausts the stopping-time σ-algebra:
-`⨆ n, ℱ_{τ ∧ n} = ℱ_τ`. The `≤` direction is monotonicity; the `≥`
-direction splits a set `s ∈ ℱ_τ` into its finite-time part
-`s ∩ {τ < ⊤} = ⋃ n, (s ∩ {τ ≤ n})` and its infinite-time part
-`s ∩ {τ = ⊤}`, both measurable in the `iSup`.
+**The stopped filtration generates the stopping-time σ-algebra.** Let
+$(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration on a measurable space $\Omega$ and let $\tau$
+be a stopping time for it with values in $\mathbb{N} \cup \{\infty\}$. For each $n$, let
+$\mathcal{F}_{\tau \wedge n}$ be the σ-algebra of the stopping time $\tau \wedge n$, the $n$-th
+σ-algebra of the stopped filtration, and let $\mathcal{F}_\tau$ be the σ-algebra of $\tau$. Then
+$\bigvee_n \mathcal{F}_{\tau \wedge n} = \mathcal{F}_\tau$.
+
+The inclusion $\le$ is monotonicity. For $\ge$, a set $s \in \mathcal{F}_\tau$ splits into its
+finite-time part $s \cap \{\tau < \infty\} = \bigcup_n (s \cap \{\tau \le n\})$ and its
+infinite-time part $s \cap \{\tau = \infty\}$, and both are measurable for the supremum.
 
 ## Depends on
 
-- [Stopped Filtration](stopped-filtration.md)
+- [Stopped filtration](stopped-filtration.md)
 
 ## Proof depends on
 
-- [Measurable Set inter eq top i Sup stopped Filtration](measurable-set-inter-eq-top-i-sup-stoppe.md)
+- [Infinite-time parts of limit-σ-algebra sets are measurable for the stopped filtration](measurable-set-inter-eq-top-i-sup-stoppe.md)
 
 ## Sources
 

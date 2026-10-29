@@ -4,5 +4,5 @@ navigation: module
 
 # Primes In P
 
-- [Primes Dec](primes-dec.md)
+- [The primality decision problem](primes-dec.md)
 - [PRIMES is in P](primes-in-p.md)

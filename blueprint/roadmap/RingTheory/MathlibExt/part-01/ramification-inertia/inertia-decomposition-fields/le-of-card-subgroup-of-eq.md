@@ -6,10 +6,10 @@ proof: formalized
 lean: Subgroup.le_of_card_subgroupOf_eq
 ---
 
-# Le of card subgroup Of eq
+# Equal cardinality of an intersection forces containment
 
-A subgroup whose intersection with `K` has the same cardinality as the
-subgroup itself is contained in `K`.
+**Equal cardinality of an intersection forces containment.** Let $H$ and $K$ be subgroups of
+a group $G$ with $H$ finite. If $H \cap K$ has as many elements as $H$, then $H \le K$.
 
 ## Depends on
 

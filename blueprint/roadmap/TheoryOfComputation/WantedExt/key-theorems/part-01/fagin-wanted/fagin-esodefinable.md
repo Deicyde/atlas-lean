@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESODefinable
 ---
 
-# Fagin ESODefinable
+# Existential second-order definable graph classes
 
-`K` is `∃SO`-definable if some `∃SO` sentence is true exactly on its canonical
-members, with the empty graph's membership given by a separate Boolean.
+**Existential second-order definable graph classes.** A class $K$ of graphs is existential
+second-order definable if there are a natural number $k$, a first-order formula $\varphi$ and a
+boolean $e$ such that every graph $G$ with $n$ vertices whose edge table has length exactly $n^2$
+satisfies the following: if $n > 0$, then $G \in K$ if and only if $G$ satisfies the existential
+second-order sentence $(k, \varphi)$; if $n = 0$, then $G \in K$ if and only if $e$ is true.
 
 ## Depends on
 
-- [Fagin Graph](fagin-graph.md)
+- [Finite graphs as edge tables](fagin-graph.md)
 
 ## Proof depends on
 
-- [Fagin FO](fagin-fo.md)
-- [Fagin ESOSat](fagin-esosat.md)
+- [First-order formulas over graphs](fagin-fo.md)
+- [Satisfaction of an existential second-order sentence](fagin-esosat.md)
 
 ## Sources
 

@@ -8,9 +8,12 @@ lean: MathlibExt.Probability.CharFunStandardizedBinomial.charFun_standardizedBin
 
 # Characteristic function of the standardized binomial
 
-**Characteristic function of the standardized binomial** as a rescaling of the
-characteristic function of `Bin(n, p)`. Specialization of `charFun_map_affine` to the
-shift `np` and scale `s = √(np(1−p))`.
+**Characteristic function of the standardized binomial.** For every natural number $n$,
+every $p \in [0, 1]$ and every real $t$, put $s = \sqrt{np(1-p)}$, with $s^{-1}$ read as $0$ when
+$s = 0$. Let $\psi$ be the characteristic function of the binomial distribution
+$\mathrm{Bin}(n, p)$ viewed as a measure on $\mathbb{R}$, and $\varphi$ that of the standardized
+binomial distribution with parameters $n$ and $p$. Then
+$\varphi(t) = \psi(t s^{-1}) \, e^{-i n p t s^{-1}}$.
 
 ## Depends on
 

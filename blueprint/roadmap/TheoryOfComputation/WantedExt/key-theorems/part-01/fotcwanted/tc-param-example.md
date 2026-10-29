@@ -5,19 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FOTC.tcParamExample
 ---
 
-# Tc Param Example
+# Example: parameterized transitive closure in FO + TC
 
-Parameterized transitive closure, as a focused example: reachability from outer
-variable `1` to outer variable `2` where each step is either a direct edge, or a
-two-step path through outer variable `0`. In the `TC` body, de Bruijn indices `0`
-and `1` are the path endpoints, index `2` is the parameter (outer variable `0`), and
-the endpoint args `[1]` and `[2]` at the `TC` node are evaluated as `ρ 1` and `ρ 2`
-(the `TC` node's endpoint args are outer variables, not shifted; only variables
-inside the body receive the two-position shift, here by `2 * 1 = 2`).
+**Example: parameterized transitive closure in FO + TC.** The FO + TC formula
+$\mathrm{TC}(\varphi; (1), (2))$ of arity $1$ whose body $\varphi$ is
+$E(0, 1) \lor (E(0, 2) \land E(2, 1))$, where $E$ is relation symbol $1$ (the edge relation).
+In the body, variable $0$ is the source, variable $1$ the target, and variable $2$ is outer
+variable $0$, shifted by $2$; the endpoint arguments $1$ and $2$ are outer variables, not
+shifted. So the formula expresses that outer variable $2$ is reachable from outer variable $1$
+by steps that are either an edge or a path of two edges through outer variable $0$.
 
 ## Depends on
 
-- [TCFO](tcfo.md)
+- [Formulas of first-order logic with transitive closure](tcfo.md)
 
 ## Sources
 

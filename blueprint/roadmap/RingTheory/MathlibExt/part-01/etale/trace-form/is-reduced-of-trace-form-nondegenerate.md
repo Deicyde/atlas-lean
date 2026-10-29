@@ -6,10 +6,15 @@ proof: formalized
 lean: Algebra.isReduced_of_traceForm_nondegenerate
 ---
 
-# Is Reduced of trace Form nondegenerate
+# A nondegenerate trace form forces the algebra to be reduced
 
-If the trace form is nondegenerate then the algebra is reduced: every
-nilpotent element lies in the kernel of the trace form, hence is zero.
+**A nondegenerate trace form forces the algebra to be reduced.** Let $R$ be a commutative
+algebra over a field $K$. For $z \in R$ write $\operatorname{Tr}_{R/K}(z)$ for the trace of the
+$K$-linear map given by multiplication by $z$, taken to be $0$ when $R$ is infinite-dimensional
+over $K$. If the trace form $(x, y) \mapsto \operatorname{Tr}_{R/K}(xy)$ of $R$ over $K$ is
+nondegenerate, then $R$ is reduced, that is, its only nilpotent element is $0$.
+
+Every nilpotent element lies in the kernel of the trace form, hence is zero.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trace Form apply eq zero of is Nilpotent](trace-form-apply-eq-zero-of-is-nilpotent.md)
+- [Nilpotent elements pair to zero under the trace form](trace-form-apply-eq-zero-of-is-nilpotent.md)
 
 ## Sources
 

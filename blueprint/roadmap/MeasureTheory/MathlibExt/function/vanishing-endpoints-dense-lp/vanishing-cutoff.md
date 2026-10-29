@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Interval Cutoff](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff.md)
+- [Interval cutoff](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff.md)
 
 ## Sources
 

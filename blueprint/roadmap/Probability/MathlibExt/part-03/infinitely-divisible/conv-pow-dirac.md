@@ -6,19 +6,21 @@ proof: formalized
 lean: MeasureTheory.Measure.convPow_dirac
 ---
 
-# Conv Pow dirac
+# Convolution powers of a Dirac measure
 
-The convolution power of a Dirac measure is the Dirac measure at the
-corresponding multiple of the point.
+**Convolution powers of a Dirac measure.** Let $M$ be an additive commutative monoid with a
+σ-algebra for which addition $M \times M \to M$ is measurable. For every point $x \in M$ and
+every natural number $n$, the $n$-th convolution power of the Dirac measure $\delta_x$ is
+$\delta_{nx}$, where $nx$ is the sum of $n$ copies of $x$ (so $0x = 0$).
 
 ## Depends on
 
-- [Conv Pow](conv-pow.md)
+- [Convolution power of a measure](conv-pow.md)
 
 ## Proof depends on
 
-- [Conv Pow succ](conv-pow-succ.md)
-- [Conv Pow zero](conv-pow-zero.md)
+- [Recursion for convolution powers](conv-pow-succ.md)
+- [The zeroth convolution power](conv-pow-zero.md)
 
 ## Sources
 

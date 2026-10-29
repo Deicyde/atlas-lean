@@ -20,7 +20,7 @@ satisfies $t(n) \le t'(n)$ for every $n$, then $c$ decides $L$ within $t'$.
 
 ## Proof depends on
 
-- [Monotonicity of the clocked evaluator](../code/eval-steps-mono.md)
+- [Monotonicity of the single-tape clocked evaluator](../code/eval-steps-mono.md)
 - [Symbol of an input bit](../code/bit-sym.md)
 
 ## Sources

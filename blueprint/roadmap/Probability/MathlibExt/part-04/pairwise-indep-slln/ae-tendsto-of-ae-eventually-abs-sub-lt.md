@@ -6,10 +6,13 @@ proof: formalized
 lean: ProbabilityTheory.ae_tendsto_of_ae_eventually_abs_sub_lt
 ---
 
-# Ae tendsto of ae eventually abs sub lt
+# Almost sure convergence from shrinking tail bounds
 
-Almost sure convergence from quantitative tail bounds: if for every `m`, almost surely
-`|f_k(ω) - a| < 1/(m+1)` eventually as `k → ∞`, then almost surely `f_k(ω) → a`.
+**Almost sure convergence from shrinking tail bounds.** Let $\mu$ be a probability measure on
+$\Omega$, let $f_k : \Omega \to \mathbb{R}$ for $k \in \mathbb{N}$, and let $a \in \mathbb{R}$.
+Suppose that for every $m \in \mathbb{N}$, for $\mu$-almost every $\omega$, we have
+$|f_k(\omega) - a| < 1/(m+1)$ for all sufficiently large $k$. Then for $\mu$-almost every
+$\omega$, $f_k(\omega) \to a$ as $k \to \infty$.
 
 ## Depends on
 

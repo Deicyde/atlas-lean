@@ -6,13 +6,13 @@ navigation: module
 
 ## Lift Kernel
 
-- [Markov Lift Kernel](markov-lift-kernel.md)
+- [Lifting a kernel to histories](markov-lift-kernel.md)
 
 ## Canonical Measure
 
-- [Markov Chain Measure](markov-chain-measure.md)
-- [Markov Chain Measure initial distribution](markov-chain-measure-initial-distributio.md)
-- [Markov Chain Measure cond Distrib](markov-chain-measure-cond-distrib.md)
+- [Canonical Markov chain measure](markov-chain-measure.md)
+- [Initial distribution of the canonical Markov chain measure](markov-chain-measure-initial-distributio.md)
+- [Markov property of the canonical Markov chain measure](markov-chain-measure-cond-distrib.md)
 
 ## Existence Theorem
 

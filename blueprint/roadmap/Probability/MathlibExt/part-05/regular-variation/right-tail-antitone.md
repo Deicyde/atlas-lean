@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.rightTail_antitone
 ---
 
-# Right Tail antitone
+# The right tail of a finite measure is antitone
 
-The right tail is antitone in the threshold.
+**The right tail of a finite measure is antitone.** Let $\mu$ be a finite measure on
+$\mathbb{R}$. If $x \le y$, then the right tail of $\mu$ at $y$ is at most the right tail of
+$\mu$ at $x$.
 
 ## Depends on
 
-- [Right Tail](right-tail.md)
+- [Right tail of a measure](right-tail.md)
 
 ## Sources
 

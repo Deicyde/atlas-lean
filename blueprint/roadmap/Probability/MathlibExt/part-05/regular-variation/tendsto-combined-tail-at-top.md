@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.tendsto_combinedTail_atTop
 ---
 
-# Tendsto combined Tail at Top
+# The combined tail of a finite measure vanishes at infinity
 
-The combined tail of a finite measure tends to `0` at infinity.
+**The combined tail of a finite measure vanishes at infinity.** For every finite measure
+$\mu$ on $\mathbb{R}$, the combined tail $\mu((x, \infty)) + \mu((-\infty, -x))$, with both
+masses taken as real numbers, tends to $0$ as $x \to \infty$.
 
 ## Depends on
 
-- [Combined Tail](combined-tail.md)
+- [Combined tail of a measure](combined-tail.md)
 
 ## Proof depends on
 
-- [Left Tail](left-tail.md)
-- [Right Tail](right-tail.md)
-- [Tendsto left Tail at Top](tendsto-left-tail-at-top.md)
-- [Tendsto right Tail at Top](tendsto-right-tail-at-top.md)
+- [Left tail of a measure](left-tail.md)
+- [Right tail of a measure](right-tail.md)
+- [The left tail of a finite measure vanishes at infinity](tendsto-left-tail-at-top.md)
+- [The right tail of a finite measure vanishes at infinity](tendsto-right-tail-at-top.md)
 
 ## Sources
 

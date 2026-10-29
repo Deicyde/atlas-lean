@@ -17,7 +17,7 @@ it because its derived subgroup $A_3$ consists of commutators.
 
 ## Depends on
 
-- [Max Commutator Width Ratio Is One Sixth](max-commutator-width-ratio-is-one-sixth.md)
+- [Bardakov's commutator width ratio claim (Kourovka 16.8)](max-commutator-width-ratio-is-one-sixth.md)
 
 ## Sources
 

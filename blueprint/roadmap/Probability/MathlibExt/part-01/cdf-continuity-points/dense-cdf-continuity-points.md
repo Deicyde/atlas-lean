@@ -6,11 +6,13 @@ proof: formalized
 lean: MathlibExt.Probability.CdfContinuityPoints.dense_cdf_continuityPoints
 ---
 
-# Dense cdf continuity Points
+# The continuity points of the cdf are dense
 
-The set of continuity points of the cdf of a probability measure is dense
-in `ℝ`. This follows from the fact that a monotone function has only
-countably many discontinuities.
+**The continuity points of the cdf are dense.** Let $\mu$ be a probability measure on
+$\mathbb{R}$ with cumulative distribution function $F(y) = \mu((-\infty, y])$. The set of
+points $x \in \mathbb{R}$ at which $F$ is continuous is dense in $\mathbb{R}$.
+
+This follows from the fact that a monotone function has only countably many discontinuities.
 
 ## Depends on
 

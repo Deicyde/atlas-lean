@@ -13,7 +13,7 @@ by $G$. That is, the answer to Kourovka Problem 16.31 is negative, even for fini
 
 ## Depends on
 
-- [Finitely Many Subformations](finitely-many-subformations.md)
+- [Kourovka Problem 16.31 for finite groups](finitely-many-subformations.md)
 
 ## Sources
 

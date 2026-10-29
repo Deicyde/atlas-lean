@@ -6,13 +6,15 @@ proof: formalized
 lean: Metric.isGeodesicOnWithSpeed_lineMap
 ---
 
-# Is Geodesic On With Speed line Map
+# Straight lines are geodesics of constant speed
 
-Sanity check: the straight line `t ↦ p + t • v` of a normed space is a geodesic of speed `‖v‖`.
+**Straight lines are geodesics of constant speed.** Let $F$ be a real normed space and
+$p, v \in F$. For every set of times $s \subseteq \mathbb{R}$, the straight line
+$t \mapsto p + t v$ is a geodesic of speed $\|v\|$ on $s$.
 
 ## Depends on
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
+- [Geodesics of a given speed on a set of times](is-geodesic-on-with-speed.md)
 
 ## Sources
 

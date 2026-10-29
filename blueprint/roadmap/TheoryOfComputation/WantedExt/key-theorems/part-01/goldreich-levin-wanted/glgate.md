@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.GLGate
 ---
 
-# GLGate
+# Serialized circuit gates
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`.
+**Serialized circuit gates.** A serialized gate is a pair $(k, r)$ of a natural number $k$, the
+kind of the gate, and a list $r$ of natural numbers, its references.
+
+These pairs are read through the shared (kind, references) encoding of gates of flat Boolean
+circuits.
 
 ## Depends on
 

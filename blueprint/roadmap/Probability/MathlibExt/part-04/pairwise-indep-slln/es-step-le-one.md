@@ -6,17 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.ES_step_le_one
 ---
 
-# ES step le one
+# The expected partial sums grow by at most one per step
 
-Successive expectations differ by at most one: `E[S_{n+1}] - E[S_n] = P(A_n) ≤ 1`.
+**The expected partial sums grow by at most one per step.** Let $\mu$ be a probability measure
+on $\Omega$, let $A_0, A_1, \dots \subseteq \Omega$ be measurable sets and let
+$S_n = \sum_{i\lt n} 1_{A_i}$. Then $\mathbb{E}[S_{n+1}] - \mathbb{E}[S_n] \le 1$ for every
+$n \in \mathbb{N}$.
+
+Indeed the difference equals $\mu(A_n) \le 1$.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Proof depends on
 
-- [Integral partial Sum Indicators](integral-partial-sum-indicators.md)
+- [Expectation of a sum of indicators](integral-partial-sum-indicators.md)
 
 ## Sources
 

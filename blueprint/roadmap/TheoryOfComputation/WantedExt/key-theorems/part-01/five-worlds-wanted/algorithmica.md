@@ -7,7 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Algorithmica
 
 # Algorithmica
 
-Algorithmica: `P = NP`.
+**Algorithmica.** Algorithmica is the statement that the complexity classes $\mathrm{P}$ and
+$\mathrm{NP}$ are equal.
 
 ## Depends on
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.MarkovChainPath.markovLiftKernel
 ---
 
-# Markov Lift Kernel
+# Lifted transition kernel on histories
 
-Compatibility name for the canonical lifted transition kernel.
+**Lifted transition kernel on histories.** For a kernel $\kappa$ on $S$ and $n \in \mathbb{N}$,
+this is the kernel from histories $(x_0, \dots, x_n)$ of states in $S$, indexed by
+$\{0, \dots, n\}$, to $S$ that sends $(x_0, \dots, x_n)$ to $\kappa(x_n, \cdot)$. It is the
+Markov lift kernel of $\kappa$ at $n$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Markov Lift Kernel](../markov-chain-construction/markov-lift-kernel.md)
+- [Lifting a kernel to histories](../markov-chain-construction/markov-lift-kernel.md)
 
 ## Sources
 

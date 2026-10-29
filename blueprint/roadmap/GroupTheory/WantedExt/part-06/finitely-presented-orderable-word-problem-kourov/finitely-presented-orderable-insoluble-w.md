@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bi-invariant orders on a group](bi-orders.md)
+- [Bi-invariant linear orders on a group](bi-orders.md)
 - [Solvable word problem](../../part-20/word-problem-solvable.md)
 
 ## Sources

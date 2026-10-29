@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.isSlowlyVarying_const
 ---
 
-# Is Slowly Varying const
+# Positive constants are slowly varying
 
-A positive constant function is slowly varying.
+**Positive constants are slowly varying.** For every real $c > 0$, the constant function
+$x \mapsto c$ on $\mathbb{R}$ is slowly varying.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

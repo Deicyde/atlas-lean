@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Amenable group (Følner condition)](../../../MathlibExt/part-01/amenable-group/is-amenable.md)
-- [Is Branch Group](is-branch-group.md)
+- [Branch groups (Kourovka 15.14 version)](is-branch-group.md)
 
 ## Sources
 

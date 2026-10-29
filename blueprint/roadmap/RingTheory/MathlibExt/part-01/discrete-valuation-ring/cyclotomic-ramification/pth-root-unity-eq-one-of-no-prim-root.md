@@ -6,10 +6,13 @@ proof: formalized
 lean: pth_root_unity_eq_one_of_no_prim_root
 ---
 
-# Pth root unity eq one of no prim root
+# Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial
 
-A `p`-th root of unity in a field with no primitive `p`-th root is `1`:
-its order divides the prime `p`, so it is `1` or `p`, and `p` is excluded.
+**Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial.** Let $p$ be a
+prime and let $L$ be a field containing no primitive $p$-th root of unity. Then every $\eta \in L$
+with $\eta^p = 1$ equals $1$.
+
+The order of $\eta$ divides the prime $p$, so it is $1$ or $p$, and $p$ is excluded.
 
 ## Depends on
 

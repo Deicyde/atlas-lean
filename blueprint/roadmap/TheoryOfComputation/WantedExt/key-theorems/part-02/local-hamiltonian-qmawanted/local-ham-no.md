@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamNo
 ---
 
-# Local Ham No
+# No-instances of the 2-local Hamiltonian problem
 
-The no-instances of the Local Hamiltonian promise problem: as in `LocalHamYes`,
-but with ground energy at least `b`.
+**No-instances of the 2-local Hamiltonian problem.** A bitstring $x$ is a no-instance when
+decoding it under the canonical bitstring encoding gives a tuple $(n, (h_1, \dots, h_m), a, b)$ of
+a natural number $n$, a list of 2-local terms $h_1, \dots, h_m$ and two encoded rational numbers,
+whose values we also write $a$ and $b$, such that every $h_l$ is valid on $n$ qubits,
+$b - a \ge 1/(m + 1)$, and the Hamiltonian $H$ of $h_1, \dots, h_m$ on $n$ qubits is Hermitian
+and has ground energy at least $b$.
 
 ## Depends on
 
@@ -26,10 +30,10 @@ This node has no prerequisites.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Local Term](local-term.md)
-- [Ground Energy](ground-energy.md)
-- [Hamiltonian](hamiltonian.md)
-- [Local Term Valid](local-term-valid.md)
+- [Encoded 2-local Hamiltonian term](local-term.md)
+- [Ground energy of a Hermitian matrix](ground-energy.md)
+- [Hamiltonian of a list of 2-local terms](hamiltonian.md)
+- [Valid 2-local Hamiltonian term](local-term-valid.md)
 
 ## Sources
 

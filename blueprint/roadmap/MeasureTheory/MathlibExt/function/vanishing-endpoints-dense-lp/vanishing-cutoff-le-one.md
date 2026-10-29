@@ -18,7 +18,7 @@ $\delta$ is at most $1$.
 
 ## Proof depends on
 
-- [Interval Cutoff le one](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-le-one.md)
+- [The interval cutoff is at most one](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-le-one.md)
 
 ## Sources
 

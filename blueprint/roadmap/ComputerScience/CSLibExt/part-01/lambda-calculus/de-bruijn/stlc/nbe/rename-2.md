@@ -15,7 +15,7 @@ type $A$ to the semantic value $\eta(x)$ renamed along $\rho$ at type $A$.
 ## Depends on
 
 - [Renamings of simply typed contexts](../syntax/ren.md)
-- [Semantic environments](sem-env.md)
+- [Semantic environments for normalization by evaluation](sem-env.md)
 - [Simple types](../syntax/ty.md)
 
 ## Proof depends on

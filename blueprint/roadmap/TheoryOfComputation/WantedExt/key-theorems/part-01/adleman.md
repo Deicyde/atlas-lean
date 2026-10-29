@@ -7,9 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.Adleman.adleman
 
 # Adleman's theorem: BPP is contained in P/poly
 
-**Adleman's theorem: BPP is contained in P/poly.** Source: L. Adleman, "Two theorems on
-random polynomial time", Proceedings of the Nineteenth Annual Symposium on Foundations of
-Computer Science (FOCS 1978), 75-83.
+**Adleman's theorem: BPP is contained in P/poly.** Every decision problem in BPP lies in
+P/poly.
 
 ## Depends on
 
@@ -21,3 +20,4 @@ Computer Science (FOCS 1978), 75-83.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.AdlemanWanted](../../../../../sources/v2/WantedExt.md)
+- L. Adleman, "Two theorems on random polynomial time", Proceedings of the Nineteenth Annual Symposium on Foundations of Computer Science (FOCS 1978), 75-83.

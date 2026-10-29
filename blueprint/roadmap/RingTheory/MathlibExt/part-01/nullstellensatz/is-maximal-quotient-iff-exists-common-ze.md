@@ -8,10 +8,11 @@ lean: HilbertNullstellensatz.isMaximal_quotient_iff_exists_common_zero
 
 # Weak Nullstellensatz, quotient form
 
-**Weak Nullstellensatz, quotient form.** An ideal `J` of
-`ℂ[x₁, …, xₙ] / (P₁, …, Pₘ)` is maximal if and only if there is a
-common zero `a` of the `Pᵢ` with `J` the image of the vanishing ideal
-of `{a}` in the quotient.
+**Weak Nullstellensatz, quotient form.** Let $P_1, \ldots, P_m$ be polynomials in
+$\mathbb{C}[x_1, \ldots, x_n]$ and let $A = \mathbb{C}[x_1, \ldots, x_n]/(P_1, \ldots, P_m)$.
+An ideal $J$ of $A$ is maximal if and only if there is a common zero $a \in \mathbb{C}^n$ of
+$P_1, \ldots, P_m$ such that $J$ is the image in $A$ of the ideal of polynomials vanishing at
+$a$.
 
 ## Depends on
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.isRegularlyVarying_rpow
 ---
 
-# Is Regularly Varying rpow
+# Powers are regularly varying
 
-The power function `x ↦ x ^ ρ` is regularly varying of index `ρ`, with
-slowly varying factor `1`.
+**Powers are regularly varying.** For every real number $\rho$, the function $x \mapsto x^\rho$
+on $\mathbb{R}$ is regularly varying with index $\rho$.
+
+The slowly varying factor can be taken to be the constant function $1$.
 
 ## Depends on
 
-- [Is Regularly Varying](is-regularly-varying.md)
+- [Regularly varying function](is-regularly-varying.md)
 
 ## Proof depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
-- [Is Slowly Varying one](is-slowly-varying-one.md)
+- [Slowly varying function](is-slowly-varying.md)
+- [The constant function one is slowly varying](is-slowly-varying-one.md)
 
 ## Sources
 

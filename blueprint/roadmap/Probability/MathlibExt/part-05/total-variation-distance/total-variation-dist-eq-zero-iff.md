@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.TotalVariationDistance.totalVariationDist_eq_zero_iff
 ---
 
-# Total Variation Dist eq zero iff
+# Total variation distance vanishes only for equal measures
 
-Total variation distance vanishes iff the finite measures are equal.
+**Total variation distance vanishes only for equal measures.** For finite measures $\mu$ and
+$\nu$ on a measurable space, the total variation distance $d_{TV}(\mu, \nu)$ is $0$ if and only
+if $\mu = \nu$.
 
 ## Depends on
 
-- [Total Variation Dist](total-variation-dist.md)
+- [Total variation distance between finite measures](total-variation-dist.md)
 
 ## Proof depends on
 
-- [Total Variation Dist self](total-variation-dist-self.md)
+- [Total variation distance from a measure to itself](total-variation-dist-self.md)
 
 ## Sources
 

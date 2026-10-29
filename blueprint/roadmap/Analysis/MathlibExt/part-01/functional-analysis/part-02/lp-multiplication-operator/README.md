@@ -13,7 +13,7 @@ navigation: module
 - [An essentially bounded multiple of an $L^2$ function is in $L^2$](mem-lp-mul-of-mem-lp-top.md)
 - [Multiplication operator on $L^2$](lp-mul-clm.md)
 - [Multiplication operators with almost everywhere equal multipliers coincide](lp-mul-clm-congr-ae.md)
-- [Multiplication by a constant function](lp-mul-clm-const-apply.md)
+- [Multiplication by a constant function on $L^2$](lp-mul-clm-const-apply.md)
 - [Multiplication by one is the identity](lp-mul-clm-one.md)
 - [Product of multiplication operators](lp-mul-clm-mul.md)
 - [Shifting a multiplication operator by a scalar](algebra-map-sub-lp-mul-clm.md)

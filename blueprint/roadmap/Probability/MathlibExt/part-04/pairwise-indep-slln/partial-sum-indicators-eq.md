@@ -6,14 +6,16 @@ proof: formalized
 lean: ProbabilityTheory.partialSumIndicators_eq
 ---
 
-# Partial Sum Indicators eq
+# The partial sum as a sum of indicator functions
 
-Rewrite `partialSumIndicators A n` as the pointwise sum (function-valued sum) of the
-individual indicator functions.
+**The partial sum as a sum of indicator functions.** For sets $A_0, A_1, \dots$ in $\Omega$ and
+every $n$, the partial sum $S_n$, defined pointwise by $S_n(\omega) = \sum_{i < n} 1_{A_i}(\omega)$,
+equals, as a function on $\Omega$, the sum $\sum_{i < n} 1_{A_i}$ of the real-valued indicator
+functions.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Sources
 

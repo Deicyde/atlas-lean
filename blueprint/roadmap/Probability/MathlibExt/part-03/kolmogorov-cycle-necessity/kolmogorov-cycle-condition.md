@@ -7,15 +7,15 @@ lean: StochasticMatrix.KolmogorovCycleCondition
 
 # Kolmogorov's cycle condition
 
-**Kolmogorov's cycle condition** on a stochastic matrix `P`:
-(1) `symm_support`: `P(x, y) > 0` implies `P(y, x) > 0`; and
-(2) `cycle_prod`: for any loop `x₀, x₁, …, xₙ = x₀` whose reverse path has positive
-probability, the product of forward transition probabilities along the loop equals the
-product of backward transition probabilities.
+**Kolmogorov's cycle condition.** A stochastic matrix $P$ on the finite state space
+$\{0, 1, \dots, M\}$ satisfies Kolmogorov's cycle condition when (1) for all states $x, y$,
+$P(x, y) > 0$ implies $P(y, x) > 0$; and (2) for every $n \ge 0$ and every loop of states
+$x_0, x_1, \dots, x_n$ with $x_n = x_0$ and $\prod_{i=0}^{n-1} P(x_{i+1}, x_i) > 0$, we have
+$\prod_{i=0}^{n-1} P(x_i, x_{i+1}) = \prod_{i=0}^{n-1} P(x_{i+1}, x_i)$.
 
 ## Depends on
 
-- [Stochastic Matrix](stochastic-matrix.md)
+- [Stochastic matrix](stochastic-matrix.md)
 
 ## Sources
 

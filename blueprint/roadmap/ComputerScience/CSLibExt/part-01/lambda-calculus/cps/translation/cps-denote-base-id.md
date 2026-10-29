@@ -21,7 +21,7 @@ $[\overline{t}]_{\eta'}(\mathrm{id}) = [t]_\eta$, where $\mathrm{id}$ is the ide
 - [CPS computation type](comp-ty.md)
 - [Call-by-value CPS translation of terms](cps.md)
 - [Call-by-value CPS translation of types](cps-ty.md)
-- [Semantic environments](../../de-bruijn/stlc/denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../../de-bruijn/stlc/denotational/env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
 - [Denotation of an STLC term](../../de-bruijn/stlc/denotational/denote-2.md)
 - [Simple types](../../de-bruijn/stlc/syntax/ty.md)

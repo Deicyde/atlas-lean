@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.ZeroWalk.convergesFinite
 ---
 
-# Converges Finite
+# A zero walk converges to a finite limit
 
-A zero walk converges to the finite limit zero.
+**A zero walk converges to a finite limit.** Let $X_0, X_1, \dots$ be real random
+variables on a probability space and $S_n = \sum_{i < n} X_i$. If almost surely $S_n = 0$ for
+every $n$, then almost surely there is $l \in \mathbb{R}$ with $S_n \to l$ as $n \to \infty$.
 
 ## Depends on
 
-- [Converges Finite](converges-finite.md)
-- [Zero Walk](zero-walk.md)
+- [Random walk with a finite limit](converges-finite.md)
+- [Zero random walk](zero-walk.md)
 
 ## Proof depends on
 
-- [Converges Finite of ae forall eq zero](../random-walk-limsup/converges-finite-of-ae-forall-eq-zero.md)
-- [Zero Walk iff ae forall eq zero](zero-walk-iff-ae-forall-eq-zero.md)
+- [Vanishing steps give a convergent random walk](../random-walk-limsup/converges-finite-of-ae-forall-eq-zero.md)
+- [A random walk is zero exactly when its steps are](zero-walk-iff-ae-forall-eq-zero.md)
 
 ## Sources
 

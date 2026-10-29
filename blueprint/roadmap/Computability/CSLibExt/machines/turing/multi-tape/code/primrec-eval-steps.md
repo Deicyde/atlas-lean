@@ -13,7 +13,7 @@ lean: Cslib.Turing.MultiTapeTM.Code.primrec_evalSteps
 ## Depends on
 
 - [Codes for multi-tape machines](code.md)
-- [Codes as tables](equiv-table.md)
+- [Multi-tape codes as tables](equiv-table.md)
 - [Clocked evaluator](eval-steps.md)
 - [Coded actions](code-action.md)
 - [Coded actions as tuples](equiv-prod.md)

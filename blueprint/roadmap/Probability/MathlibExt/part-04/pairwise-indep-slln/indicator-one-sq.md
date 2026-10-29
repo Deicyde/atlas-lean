@@ -6,9 +6,10 @@ proof: formalized
 lean: ProbabilityTheory.indicator_one_sq
 ---
 
-# Indicator one sq
+# The square of an indicator is itself
 
-The square of an indicator function equals the indicator function itself: `(1_s)² = 1_s`.
+**The square of an indicator is itself.** For every set $s \subseteq \Omega$, the real-valued
+indicator function $1_s$ satisfies $1_s^2 = 1_s$.
 
 ## Depends on
 

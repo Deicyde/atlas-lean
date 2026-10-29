@@ -50,7 +50,7 @@ navigation: module
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Constant offset of a literal position](cst.md)
 - [Polarity of a transition-clause literal](sgn.md)
-- [Lit P](lit-p.md)
+- [Literal routine of the transition-clause generator](lit-p.md)
 - [Generator machine for the transition clause families](prog.md)
 - [The clause-family generator as a finite stack machine](gen-tm.md)
 

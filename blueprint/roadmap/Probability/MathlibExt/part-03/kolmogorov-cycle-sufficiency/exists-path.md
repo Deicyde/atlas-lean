@@ -6,21 +6,23 @@ proof: formalized
 lean: StochasticMatrix.IsIrreducible.exists_path
 ---
 
-# Exists path
+# Irreducible chains have positive paths
 
-For an irreducible chain, between any two states `i, j` there exists a finite path
-from `i` to `j` along which the product of transition probabilities is strictly positive.
+**Irreducible chains have positive paths.** Let $P$ be an irreducible stochastic matrix on the
+states $\{0, \dots, M\}$. For any two states $i, j$ there is a path from $i$ to $j$ (a finite list
+of states starting at $i$ and ending at $j$) along which the product of the transition
+probabilities $P(x, y)$ over consecutive states $x, y$ is strictly positive.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
-- [Is Irreducible](../kolmogorov-cycle-necessity/is-irreducible.md)
-- [List Path Product](list-path-product.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Irreducible stochastic matrix](../kolmogorov-cycle-necessity/is-irreducible.md)
+- [Forward path product](list-path-product.md)
 
 ## Proof depends on
 
-- [Exists path of mat Pow pos](exists-path-of-mat-pow-pos.md)
-- [Mat Pow](../kolmogorov-cycle-necessity/mat-pow.md)
+- [Paths from positive matrix powers](exists-path-of-mat-pow-pos.md)
+- [Matrix powers of a stochastic matrix](../kolmogorov-cycle-necessity/mat-pow.md)
 
 ## Sources
 

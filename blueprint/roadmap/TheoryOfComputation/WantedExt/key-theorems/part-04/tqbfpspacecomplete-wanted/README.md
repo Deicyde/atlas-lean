@@ -4,6 +4,6 @@ navigation: module
 
 # TQBFPSPACEComplete
 
-- [Eval QBF](eval-qbf.md)
-- [Tqbf Dec](tqbf-dec.md)
+- [Evaluation of a quantified CNF formula](eval-qbf.md)
+- [TQBF as a decision problem](tqbf-dec.md)
 - [TQBF is PSPACE-complete](tqbf-pspace-complete.md)

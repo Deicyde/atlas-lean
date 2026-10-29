@@ -6,14 +6,14 @@ navigation: module
 
 ## C0
 
-- [$c_0$ as a subspace of $\ell^\infty$](c0-submodule.md)
+- [The subspace of null sequences in $\ell^\infty$](c0-submodule.md)
 - [The sequence space $c_0$](c0.md)
 - [Elements of $c_0$ tend to zero along the cofinite filter](c0-tendsto-zero.md)
 - [Coordinates are bounded by the norm in $c_0$](c0-apply-norm-le.md)
 - [Inclusion of $c_0$ in $\ell^\infty$](c0-to-lp.md)
 - [The $c_0$ norm is the supremum norm](c0-norm.md)
 - [Sequences in $\ell^\infty$ tending to zero as elements of $c_0$](c0-of-lp.md)
-- [$c_0$ as a subspace of $\ell^\infty$](c0-lp-equiv.md)
+- [$c_0$ is isometrically isomorphic to the null sequences in $\ell^\infty$](c0-lp-equiv.md)
 - [Sequence supported at one index](c0-single.md)
 - [Coordinates of the sequence supported at one index](c0-single-apply.md)
 - [Norm of a sequence supported at one index](c0-single-norm.md)
@@ -28,14 +28,14 @@ navigation: module
 - [Coordinate norms of an $\ell^1$ family are summable](summable-norm-lp-one.md)
 - [Summability of the $\ell^1$–$c_0$ pairing](summable-c0-pairing.md)
 - [Pairing with an $\ell^1$ sequence as a linear functional on $c_0$](c0-pairing-lin.md)
-- [Formula for the $\ell^1$–$c_0$ pairing](c0-pairing-lin-apply.md)
+- [Value of the functional of an $\ell^1$ sequence on $c_0$](c0-pairing-lin-apply.md)
 - [Bound for the $\ell^1$–$c_0$ pairing](norm-c0-pairing-lin-le.md)
 - [The $\ell^1$–$c_0$ pairing as a linear map](c0-dual-pairing-lin.md)
 - [Formula for the $\ell^1$–$c_0$ pairing as a linear map](c0-dual-pairing-lin-apply.md)
 - [Norm bound for the functional of an $\ell^1$ sequence on $c_0$](norm-c0-dual-pairing-lin-le.md)
 - [The $\ell^1$–$c_0$ pairing is continuous in the $\ell^1$ variable](c0-dual-pairing-lin-continuous.md)
 - [The $\ell^1$–$c_0$ duality pairing](c0-dual-pairing.md)
-- [Formula for the $\ell^1$–$c_0$ pairing](c0-dual-pairing-apply.md)
+- [Formula for the $\ell^1$–$c_0$ duality pairing](c0-dual-pairing-apply.md)
 - [Norm c0 Dual Pairing le](norm-c0-dual-pairing-le.md)
 
 ## Coeff

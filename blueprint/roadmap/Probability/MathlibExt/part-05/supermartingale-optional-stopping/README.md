@@ -4,7 +4,7 @@ navigation: module
 
 # Supermartingale Optional Stopping
 
-- [Bounded optional stopping, expectation form, for supermartingales](expected-stopped-value-anti-mono.md)
-- [Bounded optional stopping, expectation form, for supermartingales](expected-stopped-value-le.md)
-- [Bounded optional stopping, expectation form, for martingales:](expected-stopped-value-eq.md)
-- [Bounded optional stopping, expectation form, for martingales:](expected-stopped-value-eq-zero.md)
+- [Optional stopping for supermartingales at two bounded stopping times](expected-stopped-value-anti-mono.md)
+- [Optional stopping for supermartingales at a bounded stopping time](expected-stopped-value-le.md)
+- [Optional stopping for martingales at two bounded stopping times](expected-stopped-value-eq.md)
+- [Optional stopping for martingales at a bounded stopping time](expected-stopped-value-eq-zero.md)

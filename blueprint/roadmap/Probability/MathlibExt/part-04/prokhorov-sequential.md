@@ -6,11 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.ProkhorovSequential.prokhorov_sequential
 ---
 
-# Prokhorov's theorem, sequential form on `ℝ`
+# Prokhorov's theorem, sequential form on $\mathbb{R}$
 
-**Prokhorov's theorem, sequential form on `ℝ`.** A sequence of
-probability measures on `ℝ` is tight if and only if every subsequence has
-a further subsequence converging weakly to a probability measure.
+**Prokhorov's theorem, sequential form on $\mathbb{R}$.** A sequence $(\mu_n)$ of probability
+measures on $\mathbb{R}$ is tight if and only if every subsequence of $(\mu_n)$ has a further
+subsequence converging weakly to a probability measure on $\mathbb{R}$.
 
 ## Depends on
 

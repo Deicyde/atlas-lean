@@ -6,10 +6,14 @@ proof: formalized
 lean: MathlibExt.Probability.MarkovChainFDD.set_lintegral_inter_preimage
 ---
 
-# Set lintegral inter preimage
+# Restricting an integral to a preimage
 
-Restriction–indicator identity used in the inductive step: integrating `f ∘ X` over
-`C ∩ X⁻¹ A` is the same as integrating the indicator `A.indicator f ∘ X` over `C`.
+**Restricting an integral to a preimage.** Let $P$ be a measure on a measurable space $\Omega$,
+let $X : \Omega \to S$ be a measurable map to a measurable space $S$, let $A \subseteq S$ be
+measurable, let $C \subseteq \Omega$ be any set and let $f : S \to [0, \infty]$ be any function.
+Then
+$\int_{C \cap X^{-1}(A)} f(X(\omega)) \, dP(\omega) =
+\int_C \mathbf{1}_A(X(\omega)) \, f(X(\omega)) \, dP(\omega)$.
 
 ## Depends on
 

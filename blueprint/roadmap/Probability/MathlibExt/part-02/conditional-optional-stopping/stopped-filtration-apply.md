@@ -6,13 +6,16 @@ proof: formalized
 lean: MeasureTheory.IsStoppingTime.stoppedFiltration_apply
 ---
 
-# Stopped Filtration apply
+# Levels of the stopped filtration
 
-The `n`-th level of the stopped filtration is `ℱ_{τ ∧ n}`.
+**Levels of the stopped filtration.** Let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration
+on a measurable space $\Omega$ and let $\tau$ be a stopping time for it with values in
+$\mathbb{N} \cup \{\infty\}$. For every $n \in \mathbb{N}$, the $n$-th σ-algebra of the stopped
+filtration is $\mathcal{F}_{\tau \wedge n}$, the σ-algebra of the stopping time $\tau \wedge n$.
 
 ## Depends on
 
-- [Stopped Filtration](stopped-filtration.md)
+- [Stopped filtration](stopped-filtration.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ environment that sends each variable $x$ of $\Gamma$ to $\eta(\rho(x))$.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Renaming an environment](rename.md)
 - [Renamings of simply typed contexts](../syntax/ren.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)

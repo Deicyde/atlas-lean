@@ -14,7 +14,7 @@ successor $\mathrm{succ}\,x$ of each variable $x$ of $\Gamma$ to $\eta(x)$.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Simple types](../syntax/ty.md)
 - [Denotation of simple types](denote.md)
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctThreeSATNEXPComplete.s3CircuitOutputs
 ---
 
-# S3 Circuit Outputs
+# Outputs of an encoded circuit
 
-The last `k` gate values of an encoded circuit on an assignment (its outputs).
+**Outputs of an encoded circuit.** Let $C$ be a list of $m$ gates encoded as
+(kind, references) pairs, let $\alpha$ be a list of booleans and let $k$ and $n$ be natural
+numbers. The last $k$ outputs of $C$ on $\alpha$ are the last $k$ of the gate values
+$(v_0, \dots, v_{m-1})$ of $C$ on $\alpha$ as a circuit on $n + 2$ inputs, that is
+$(v_{m-k}, \dots, v_{m-1})$; when $k > m$ they are all $m$ gate values.
 
 ## Depends on
 
-- [S3 Gate](s3-gate.md)
+- [Encoded gates](s3-gate.md)
 
 ## Proof depends on
 
-- [S3 Circuit Eval](s3-circuit-eval.md)
+- [Gate values of an encoded circuit](s3-circuit-eval.md)
 
 ## Sources
 

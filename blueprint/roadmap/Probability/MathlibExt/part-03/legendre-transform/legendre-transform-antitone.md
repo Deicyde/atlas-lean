@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.legendreTransform_antitone
 ---
 
-# Legendre Transform antitone
+# The Legendre transform is order-reversing
 
-A larger input function has a smaller conjugate.
+**The Legendre transform is order-reversing.** Let $d \in \mathbb{N}$ and let
+$\Lambda_1, \Lambda_2 : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transforms
+$\Lambda_1^*$ and $\Lambda_2^*$. If $\Lambda_1(y) \le \Lambda_2(y)$ for every
+$y \in \mathbb{R}^d$, then $\Lambda_2^*(x) \le \Lambda_1^*(x)$ for every $x \in \mathbb{R}^d$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Legendre Transform eq i Sup](legendre-transform-eq-i-sup.md)
+- [Supremum formula for the Legendre transform](legendre-transform-eq-i-sup.md)
 
 ## Sources
 

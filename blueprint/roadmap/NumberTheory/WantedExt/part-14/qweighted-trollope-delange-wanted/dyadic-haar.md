@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.dyadicHaar
 ---
 
-# Dyadic Haar
+# Haar measure on the dyadic integers
 
-The Haar (uniform product) measure on `ℤ₂ = ∏_{i ≥ 0} {0, 1}`.
+**Haar measure on the dyadic integers.** The Haar measure on the dyadic integers
+$\mathbb{Z}_2$, viewed as the space $\{0, 1\}^{\mathbb{N}}$ of binary digit sequences: the infinite
+product of the uniform probability measures on $\{0, 1\}$, one for each digit.
 
 ## Depends on
 

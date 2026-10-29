@@ -6,15 +6,15 @@ navigation: module
 
 ## Subgroup
 
-- [Le of card subgroup Of eq](le-of-card-subgroup-of-eq.md)
+- [Equal cardinality of an intersection forces containment](le-of-card-subgroup-of-eq.md)
 
 ## Ideal
 
-- [Card inertia tower formula](card-inertia-tower-formula.md)
-- [Ramification Idx mul card inertia subgroup Of](ramification-idx-mul-card-inertia-subgro.md)
-- [Ramification Idx eq one iff inertia le fixing Subgroup](ramification-idx-eq-one-iff-inertia-le-f.md)
-- [Ramification Idx eq one iff le inertia Field](ramification-idx-eq-one-iff-le-inertia-f.md)
-- [Ramification Idx mul inertia Deg mul card stabilizer subgroup Of](ramification-idx-mul-inertia-deg-mul-car.md)
-- [Ramification Idx inertia Deg eq one iff stabilizer le fixing Subgroup](ramification-idx-inertia-deg-eq-one-iff.md)
-- [Ramification Idx inertia Deg eq one iff le decomposition Field](ramification-idx-inertia-deg-eq-one-iff-2.md)
-- [Ramification Idx inertia Deg eq one iff le inertia Field decomposition Field](ramification-idx-inertia-deg-eq-one-iff-3.md)
+- [Tower formula for inertia groups](card-inertia-tower-formula.md)
+- [Tower formula for inertia groups, intersected with the fixing group](ramification-idx-mul-card-inertia-subgro.md)
+- [Ramification index one and the inertia group](ramification-idx-eq-one-iff-inertia-le-f.md)
+- [Ramification index one and the inertia field](ramification-idx-eq-one-iff-le-inertia-f.md)
+- [Tower formula for decomposition groups](ramification-idx-mul-inertia-deg-mul-car.md)
+- [Ramification index and inertia degree one and the decomposition group](ramification-idx-inertia-deg-eq-one-iff.md)
+- [Ramification index and inertia degree one and the decomposition field](ramification-idx-inertia-deg-eq-one-iff-2.md)
+- [Fields below the inertia and decomposition fields](ramification-idx-inertia-deg-eq-one-iff-3.md)

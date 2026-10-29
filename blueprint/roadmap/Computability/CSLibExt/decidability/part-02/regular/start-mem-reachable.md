@@ -13,7 +13,7 @@ states, the start state of $M$ belongs to the reachable states of $M$.
 
 ## Depends on
 
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 
 ## Proof depends on
 

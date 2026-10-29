@@ -40,9 +40,9 @@ negative answer, which needs one rank, and what Muliarchyk proves (`Fₙ` is a f
 copies of `ℤ`).
 -/
 
-/-- **Bi-invariant orders on a group.** A relation $r$ on a group $G$ is a bi-invariant order if
-$r$ is a strict total order on $G$ (irreflexive, transitive and trichotomous) and $r(a, b)$
-implies $r(cad, cbd)$ for all $a, b, c, d \in G$. -/
+/-- **Bi-invariant strict total orders on a group.** A relation $r$ on a group $G$ is a bi-invariant
+order if $r$ is a strict total order on $G$ (irreflexive, transitive and trichotomous) and
+$r(a, b)$ implies $r(cad, cbd)$ for all $a, b, c, d \in G$. -/
 def IsBiOrder {G : Type*} [Group G] (r : G → G → Prop) : Prop :=
   IsStrictTotalOrder G r ∧ ∀ a b c d : G, r a b → r (c * a * d) (c * b * d)
 

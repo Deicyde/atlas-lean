@@ -36,7 +36,7 @@ $\llbracket M[\sigma] \rrbracket = \llbracket M \rrbracket[\tau]$.
 ## Proof depends on
 
 - [Translated renaming](cps-ren.md)
-- [Cps rename](cps-rename.md)
+- [The call-by-value CPS translation commutes with renaming](cps-rename.md)
 - [Renamings of simply typed contexts](../../de-bruijn/stlc/syntax/ren.md)
 - [Lifting a substitution under a binder (simply typed lambda calculus)](../../de-bruijn/stlc/substitution/lift.md)
 - [Renaming a simply typed term](../../de-bruijn/stlc/syntax/rename.md)

@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Graphon](is-graphon.md)
-- [Weakly Isomorphic](weakly-isomorphic.md)
+- [Weak isomorphism](weakly-isomorphic.md)
 - [Density of a graph in a graphon](density.md)
 
 ## Sources

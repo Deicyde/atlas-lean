@@ -5,15 +5,20 @@ statement: formalized
 lean: ProbabilityTheory.sllnSubseq
 ---
 
-# Slln Subseq
+# Quadratic subsequence for the pairwise-independent strong law
 
-The subsequence `φ(k)` used in the proof of the pairwise-independent strong law: it
-chooses the first index `n` such that `E[S_n] ≥ (k+1)²`. Because the spacing grows
-quadratically, the Chebyshev tail bounds for `S_{φ(k)}/E[S_{φ(k)}]` are summable.
+**Quadratic subsequence for the pairwise-independent strong law.** Let $\mu$ be a
+probability measure on $\Omega$, let $A_0, A_1, \dots$ be subsets of $\Omega$, and write
+$S_n = \sum_{i < n} 1_{A_i}$. Assuming $\mathbb{E}[S_n] = \int S_n \, d\mu \to \infty$ as
+$n \to \infty$, this is the sequence $\varphi : \mathbb{N} \to \mathbb{N}$ for which
+$\varphi(k)$ is the least $n$ with $\mathbb{E}[S_n] \ge (k+1)^2$.
+
+Because the thresholds grow quadratically, the Chebyshev tail bounds for
+$S_{\varphi(k)} / \mathbb{E}[S_{\varphi(k)}]$ are summable.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Sources
 

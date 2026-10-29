@@ -6,11 +6,11 @@ proof: formalized
 lean: isDiscreteValuationRing_localization_atPrime_iff_integrallyClosed_dimensionLEOne
 ---
 
-# Is Discrete Valuation Ring localization at Prime iff integrally Closed dimension LEOne
+# DVR localizations in a Noetherian domain
 
-Proposition 2.9: for a Noetherian domain `A`, the localization at every
-nonzero prime ideal is a discrete valuation ring if and only if `A` is
-integrally closed and has Krull dimension at most one.
+**DVR localizations in a Noetherian domain.** Let $A$ be a Noetherian integral domain. Then
+the localizations $A_P$ at all nonzero prime ideals $P$ of $A$ are discrete valuation rings if
+and only if $A$ is integrally closed and has Krull dimension at most one.
 
 ## Depends on
 
@@ -18,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrally Closed dimension LEOne iff is Dedekind Domain](integrally-closed-dimension-leone-iff-is.md)
+- [Dedekind domains are the integrally closed Noetherian domains of dimension at most one](integrally-closed-dimension-leone-iff-is.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.DVRCharacterization](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Proposition 2.9.

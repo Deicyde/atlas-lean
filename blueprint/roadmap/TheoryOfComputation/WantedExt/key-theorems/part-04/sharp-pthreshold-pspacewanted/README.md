@@ -4,5 +4,5 @@ navigation: module
 
 # Sharp PThreshold PSPACE
 
-- [Threshold Lang](threshold-lang.md)
+- [Threshold language of a counting function](threshold-lang.md)
 - [Threshold languages of #P functions are in PSPACE](sharp-p-threshold-pspace.md)

@@ -14,11 +14,11 @@ discriminant ideal of $\mathcal{O}_K$ over $\mathbb{Z}$ equals $|d_K|$.
 
 ## Depends on
 
-- [Discriminant Ideal](../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/discriminant-tower/discriminant-ideal.md)
+- [Discriminant ideal of a Dedekind extension](../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/discriminant-tower/discriminant-ideal.md)
 
 ## Proof depends on
 
-- [Discriminant Ideal eq span Norm](../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/discriminant-tower/discriminant-ideal-eq-span-norm.md)
+- [The discriminant ideal is the norm of the different](../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/discriminant-tower/discriminant-ideal-eq-span-norm.md)
 
 ## Sources
 

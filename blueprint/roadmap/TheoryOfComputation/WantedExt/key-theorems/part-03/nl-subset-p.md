@@ -7,9 +7,9 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.NLSubsetP.nl_subset_p
 
 # NL is contained in P
 
-**NL is contained in P.** Source: S. Arora and B. Barak, Computational Complexity: A
-Modern Approach, 2009, Theorem 4.14 (NL ⊆ P); C. H. Papadimitriou, Computational
-Complexity, 1994.
+**NL is contained in P.** Every decision problem in NL, the class of nondeterministic
+logarithmic space, also belongs to P, the class of decision problems computable in deterministic
+polynomial time.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ Complexity, 1994.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.NLSubsetPWanted](../../../../../sources/v2/WantedExt.md)
+- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 4.14 (NL ⊆ P); C. H. Papadimitriou, Computational Complexity, 1994.

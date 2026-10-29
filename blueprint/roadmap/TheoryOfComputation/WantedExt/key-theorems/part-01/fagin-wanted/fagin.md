@@ -7,16 +7,22 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.fagin
 
 # Fagin's theorem: NP is existential second-order logic
 
-**Fagin's theorem: NP is existential second-order logic.** Source: R. Fagin,
-"Generalized first-order spectra and polynomial-time recognizable sets", in Complexity of
-Computation, SIAM-AMS Proceedings 7 (1974), 43-73.
+**Fagin's theorem: NP is existential second-order logic.** Let $K$ be a class of finite
+graphs, each given as a pair $(n, t)$ of a number $n$ of vertices and a row-major edge table $t$
+(a list of booleans), and suppose that $K$ is closed under graph isomorphism. Then the decision
+problem that accepts exactly the bitstrings decoding to a member $(n, t)$ of $K$ whose edge table
+has length $n^2$ is in NP if and only if $K$ is definable in existential second-order logic:
+there are a first-order formula $\varphi$, a number $k$ and a boolean $b$ such that a graph
+$(n, t)$ whose edge table has length $n^2$ belongs to $K$ exactly when either $n > 0$ and some
+$k$ relations on its vertices, together with its edge relation, make $\varphi$ true (with every
+free variable of $\varphi$ denoting vertex $0$), or $n = 0$ and $b$ is true.
 
 ## Depends on
 
-- [Fagin Graph](fagin-graph.md)
-- [Fagin ESODefinable](fagin-esodefinable.md)
-- [Fagin Encodings](fagin-encodings.md)
-- [Fagin Iso Closed](fagin-iso-closed.md)
+- [Finite graphs as edge tables](fagin-graph.md)
+- [Existential second-order definable graph classes](fagin-esodefinable.md)
+- [Encodings of a graph class as a decision problem](fagin-encodings.md)
+- [Isomorphism-closed graph classes](fagin-iso-closed.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -24,3 +30,4 @@ Computation, SIAM-AMS Proceedings 7 (1974), 43-73.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.FaginWanted](../../../../../../sources/v2/WantedExt.md)
+- R. Fagin, "Generalized first-order spectra and polynomial-time recognizable sets", in Complexity of Computation, SIAM-AMS Proceedings 7 (1974), 43-73.

@@ -4,6 +4,6 @@ navigation: module
 
 # Pointed Gromov Hausdorff
 
-- [Pointed GHConverges](pointed-ghconverges.md)
-- [Pointed GHConverges iff dis lt](pointed-ghconverges-iff-dis-lt.md)
-- [Pointed GHConverges const](pointed-ghconverges-const.md)
+- [Pointed Gromov–Hausdorff convergence](pointed-ghconverges.md)
+- [Pointed Gromov–Hausdorff convergence with strict distortion](pointed-ghconverges-iff-dis-lt.md)
+- [Constant sequences converge in the pointed Gromov–Hausdorff sense](pointed-ghconverges-const.md)

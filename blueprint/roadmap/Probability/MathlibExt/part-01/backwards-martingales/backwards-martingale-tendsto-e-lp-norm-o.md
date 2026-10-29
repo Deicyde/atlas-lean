@@ -6,17 +6,22 @@ proof: formalized
 lean: MeasureTheory.backwards_martingale_tendsto_eLpNorm_one
 ---
 
-# Backwards martingale convergence theorem
+# Backwards martingale convergence theorem in L¹
 
-**Backwards martingale convergence theorem** (`L¹` form).
+**Backwards martingale convergence theorem in L¹.** Let $(\Omega, \mathcal F, \mu)$ be a
+probability space, let $\mathcal F_0 \supseteq \mathcal F_1 \supseteq \cdots$ be a decreasing
+sequence of sub-σ-algebras of $\mathcal F$, and let $\mathcal F_\infty = \bigcap_n \mathcal F_n$.
+If the real-valued process $(M_n)_{n \ge 0}$ is a backwards martingale with respect to
+$(\mathcal F_n)$ and $\mu$, then the $L^1(\mu)$ norm
+$\lVert M_n - \mathbb E[M_0 \mid \mathcal F_\infty] \rVert_1$ tends to $0$ as $n \to \infty$.
 
 ## Depends on
 
-- [Is Backwards Martingale](is-backwards-martingale.md)
+- [Backwards martingale](is-backwards-martingale.md)
 
 ## Proof depends on
 
-- [Backwards martingale convergence theorem](backwards-martingale-ae-tendsto.md)
+- [Backwards martingale convergence theorem, almost sure convergence](backwards-martingale-ae-tendsto.md)
 
 ## Sources
 

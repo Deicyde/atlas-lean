@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [OWFExists](owfexists.md)
-- [PKExists](pkexists.md)
+- [One-way functions exist](owfexists.md)
+- [Public-key encryption exists](pkexists.md)
 
 ## Sources
 

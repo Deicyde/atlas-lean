@@ -8,16 +8,17 @@ lean: modulusOfContinuity_tendsto_zero
 
 # Theorem I (Modulus of continuity vanishes)
 
-**Theorem I (Modulus of continuity vanishes).** For `f` continuous on
-`[a, b]`, `ω_f(η) → 0` as `η → 0⁺`.
+**Theorem I (Modulus of continuity vanishes).** Let $a \le b$ and let
+$f : \mathbb{R} \to \mathbb{R}$ be continuous on $[a, b]$. Then the modulus of continuity
+$\omega_f(\eta)$ of $f$ on $[a, b]$ tends to $0$ as $\eta \to 0^+$.
 
 ## Depends on
 
-- [Modulus Of Continuity](modulus-of-continuity.md)
+- [Modulus of continuity](modulus-of-continuity.md)
 
 ## Proof depends on
 
-- [Modulus Of Continuity nonneg](modulus-of-continuity-nonneg.md)
+- [Nonnegativity of the modulus of continuity](modulus-of-continuity-nonneg.md)
 
 ## Sources
 

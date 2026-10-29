@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctThreeSATNEXPComplete.S3Gate
 ---
 
-# S3 Gate
+# Encoded gates
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`.
+**Encoded gates.** An encoded gate is a pair $(k, r)$ of a natural number $k$, the kind of
+the gate, and a list $r$ of natural numbers, its references. This is the (kind, references)
+encoding of the gates of a flat Boolean circuit.
 
 ## Depends on
 

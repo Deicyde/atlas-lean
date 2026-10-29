@@ -7,8 +7,7 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.BPPSubsetPSPACE.bpp_subset_pspace
 
 # BPP is contained in PSPACE
 
-**BPP is contained in PSPACE.** Source: S. Arora and B. Barak, Computational Complexity: A
-Modern Approach, 2009 (BPP ⊆ PSPACE).
+**BPP is contained in PSPACE.** Every decision problem in BPP lies in PSPACE.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ Modern Approach, 2009 (BPP ⊆ PSPACE).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.BPPSubsetPSPACEWanted](../../../../../sources/v2/WantedExt.md)
+- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009 (BPP ⊆ PSPACE).

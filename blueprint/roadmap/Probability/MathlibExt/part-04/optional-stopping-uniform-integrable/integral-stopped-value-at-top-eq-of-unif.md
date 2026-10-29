@@ -8,19 +8,22 @@ lean: MeasureTheory.Martingale.integral_stoppedValueAtTop_eq_of_uniformIntegrabl
 
 # General optional stopping for uniformly integrable martingales
 
-**General optional stopping for uniformly integrable martingales.**
-If `f` is a uniformly integrable martingale and `τ` is any stopping
-time (possibly infinite), then the expectation at the stopping time
-equals the initial expectation and the expectation of the limit:
-`∫ f 0 = ∫ f_τ = ∫ f_∞`.
+**General optional stopping for uniformly integrable martingales.** Let $\mu$ be a
+probability measure, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration and let
+$(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ that is
+uniformly integrable. Let $f_\infty$ be the limit process of $f$ (its almost-everywhere limit, by
+the martingale convergence theorem). Then for every stopping time $\tau$ with values in
+$\mathbb{N} \cup \{\infty\}$, the value $f_\tau$ of $f$ at $\tau$ (at points where
+$\tau = \infty$ it is $\lim_n f_n$) satisfies
+$\int f_0 \, d\mu = \int f_\tau \, d\mu = \int f_\infty \, d\mu$.
 
 ## Depends on
 
-- [Stopped Value At Top](stopped-value-at-top.md)
+- [Value of a process at a possibly infinite time](stopped-value-at-top.md)
 
 ## Proof depends on
 
-- [Uniform Integrable stopped Process of uniform Integrable](uniform-integrable-stopped-process-of-un.md)
+- [Optional stopping preserves uniform integrability of martingales](uniform-integrable-stopped-process-of-un.md)
 
 ## Sources
 

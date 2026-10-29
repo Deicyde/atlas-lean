@@ -6,16 +6,17 @@ proof: formalized
 lean: StochasticMatrix.listRatioProduct_append
 ---
 
-# List Ratio Product append
+# Ratio product of joined paths
 
-`listRatioProduct` is multiplicative when concatenating two paths that share an endpoint:
-joining `l1` with `l2.tail` (so the join point isn't duplicated) gives the product of the
-ratio products of `l1` and `l2`.
+**Ratio product of joined paths.** Let $P$ be a stochastic matrix and let $x_0, \dots, x_k$
+and $y_0, \dots, y_l$ be paths of states with $x_k = y_0$. Then the ratio product along the
+joined path $x_0, \dots, x_k, y_1, \dots, y_l$ equals the ratio product along
+$x_0, \dots, x_k$ times the ratio product along $y_0, \dots, y_l$.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
-- [List Ratio Product](list-ratio-product.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Ratio product along a path](list-ratio-product.md)
 
 ## Sources
 

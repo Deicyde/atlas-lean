@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEncodings
 ---
 
-# Og Encodings
+# Encodings of a class of ordered graphs
 
-The encodings of a class of ordered graphs, as a decision problem: only canonical
-encodings (edge table of length `n * n`) count.
+**Encodings of a class of ordered graphs.** For a class $K$ of ordered graphs, this is the
+decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding of pairs of a natural number and a list of booleans, to some $G \in K$ whose
+edge table has length exactly $n^2$, where $n$ is the number of vertices of $G$.
 
 ## Depends on
 
-- [Ordered Graph](ordered-graph.md)
+- [Finite ordered graphs](ordered-graph.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on

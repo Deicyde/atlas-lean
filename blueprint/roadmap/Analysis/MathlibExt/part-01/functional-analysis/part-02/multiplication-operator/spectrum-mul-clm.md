@@ -19,7 +19,7 @@ linear operators on $C(X, \mathbb{K})$, is the range $\varphi(X)$ of $\varphi$.
 
 ## Proof depends on
 
-- [Multiplication by a constant function](mul-clm-algebra-map.md)
+- [Multiplication by a constant on continuous functions](mul-clm-algebra-map.md)
 
 ## Sources
 

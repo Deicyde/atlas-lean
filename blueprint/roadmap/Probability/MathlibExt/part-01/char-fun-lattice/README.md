@@ -4,6 +4,6 @@ navigation: module
 
 # Char Fun Lattice
 
-- [Is Lattice RV](is-lattice-rv.md)
-- [Characteristic function `= 1` detects lattice support](char-fun-eq-one-iff-measure-eq-one-of-la.md)
-- [Exists lattice support](exists-lattice-support.md)
+- [Lattice random variable](is-lattice-rv.md)
+- [A characteristic function equal to one detects lattice support](char-fun-eq-one-iff-measure-eq-one-of-la.md)
+- [Lattice random variables are supported on a lattice](exists-lattice-support.md)

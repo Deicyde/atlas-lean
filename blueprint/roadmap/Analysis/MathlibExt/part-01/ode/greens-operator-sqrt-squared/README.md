@@ -4,5 +4,5 @@ navigation: module
 
 # Greens Operator Sqrt Squared
 
-- [Greens Operator Sqrt eq diagonal](greens-operator-sqrt-eq-diagonal.md)
-- [The actual Green square-root operator squared equals the Green operator](greens-operator-sqrt-sq.md)
+- [The square root of the Green's operator is a diagonal operator](greens-operator-sqrt-eq-diagonal.md)
+- [The square root of the Green's operator squares to the Green's operator](greens-operator-sqrt-sq.md)

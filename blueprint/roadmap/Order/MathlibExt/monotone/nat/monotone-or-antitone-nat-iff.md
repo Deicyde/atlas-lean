@@ -6,11 +6,12 @@ proof: formalized
 lean: monotone_or_antitone_nat_iff
 ---
 
-# Monotone or antitone nat iff
+# Successor criterion for monotone or antitone sequences
 
-A sequence `f : ℕ → α` is monotone in the book sense, i.e. monotone
-increasing or monotone decreasing, if and only if either every successor
-step goes up or every successor step goes down.
+**Successor criterion for monotone or antitone sequences.** Let $\alpha$ be a preordered set
+and let $f : \mathbb{N} \to \alpha$ be a sequence. Then $f$ is monotone ($f(m) \le f(n)$ whenever
+$m \le n$) or antitone ($f(n) \le f(m)$ whenever $m \le n$) if and only if either
+$f(n) \le f(n+1)$ for every $n \in \mathbb{N}$, or $f(n+1) \le f(n)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Antitone nat iff succ le](antitone-nat-iff-succ-le.md)
-- [Monotone nat iff le succ](monotone-nat-iff-le-succ.md)
+- [Successor criterion for antitone sequences](antitone-nat-iff-succ-le.md)
+- [Successor criterion for monotone sequences](monotone-nat-iff-le-succ.md)
 
 ## Sources
 

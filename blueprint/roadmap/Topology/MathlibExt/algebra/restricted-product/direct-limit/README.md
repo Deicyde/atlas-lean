@@ -6,35 +6,35 @@ navigation: module
 
 ## XSDefinitions
 
-- [XS](xs.md)
-- [XS mono](xs-mono.md)
-- [Mem XS of restricted](mem-xs-of-restricted.md)
-- [Support Finset](support-finset.md)
-- [Mem XS support](mem-xs-support.md)
-- [XS mem restricted](xs-mem-restricted.md)
-- [Support Finset le](support-finset-le.md)
+- [Piece of a restricted product supported in a finite set](xs.md)
+- [The pieces grow with the finite set](xs-mono.md)
+- [Every element of the restricted product lies in a piece](mem-xs-of-restricted.md)
+- [Support of an element of a restricted product](support-finset.md)
+- [An element lies in the piece indexed by its support](mem-xs-support.md)
+- [Tuples in a piece are eventually in the $U_i$](xs-mem-restricted.md)
+- [The support lies in the index set of every piece containing the element](support-finset-le.md)
 
 ## Direct Limit Construction
 
-- [Inclusion Map](inclusion-map.md)
-- [Continuous inclusion Map](continuous-inclusion-map.md)
-- [Transition Maps](transition-maps.md)
-- [Continuous transition Maps](continuous-transition-maps.md)
-- [Direct Limit XS](direct-limit-xs.md)
-- [Cofinite le principal compl](cofinite-le-principal-compl.md)
+- [Inclusion of pieces](inclusion-map.md)
+- [Continuity of the inclusion of pieces](continuous-inclusion-map.md)
+- [Transition maps of the pieces](transition-maps.md)
+- [Continuity of the transition maps of the pieces](continuous-transition-maps.md)
+- [Direct limit of the finite-support pieces](direct-limit-xs.md)
+- [The cofinite filter lies below the principal filter of the complement of a finite set](cofinite-le-principal-compl.md)
 
 ## Principal Pieces
 
-- [Inclusion mem XS of principal](inclusion-mem-xs-of-principal.md)
+- [Tuples restricted on a cofinite set lie in a piece](inclusion-mem-xs-of-principal.md)
 
 ## Homeomorphism
 
-- [To Direct Limit](to-direct-limit.md)
-- [From Direct Limit](from-direct-limit.md)
-- [From Direct Limit to Direct Limit](from-direct-limit-to-direct-limit.md)
-- [To Direct Limit from Direct Limit](to-direct-limit-from-direct-limit.md)
-- [To Chunk](to-chunk.md)
-- [Continuous to Chunk](continuous-to-chunk.md)
-- [Continuous from Direct Limit](continuous-from-direct-limit.md)
-- [Continuous to Direct Limit](continuous-to-direct-limit.md)
-- [Homeomorph direct Limit](homeomorph-direct-limit.md)
+- [Forward map to the direct limit of the pieces](to-direct-limit.md)
+- [The map from the direct limit of the pieces to the restricted product](from-direct-limit.md)
+- [The backward map undoes the forward map](from-direct-limit-to-direct-limit.md)
+- [The forward map undoes the backward map](to-direct-limit-from-direct-limit.md)
+- [Chunk map of a piece](to-chunk.md)
+- [Continuity of the chunk map](continuous-to-chunk.md)
+- [Continuity of the map from the direct limit of the pieces](continuous-from-direct-limit.md)
+- [Continuity of the map to the direct limit of the pieces](continuous-to-direct-limit.md)
+- [The restricted product is the direct limit of its finite-support pieces](homeomorph-direct-limit.md)

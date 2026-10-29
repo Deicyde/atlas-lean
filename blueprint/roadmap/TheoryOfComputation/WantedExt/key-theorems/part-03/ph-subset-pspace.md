@@ -7,9 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.PHSubsetPSPACE.ph_subset_pspace
 
 # The polynomial hierarchy is contained in PSPACE
 
-**The polynomial hierarchy is contained in PSPACE.** Source: L. J. Stockmeyer, "The
-polynomial-time hierarchy", Theoretical Computer Science 3 (1977), 1-22; S. Arora and B.
-Barak, Computational Complexity: A Modern Approach, 2009, Theorem 5.4.
+**The polynomial hierarchy is contained in PSPACE.** Every decision problem in the polynomial
+hierarchy PH belongs to PSPACE.
 
 ## Depends on
 
@@ -21,3 +20,4 @@ Barak, Computational Complexity: A Modern Approach, 2009, Theorem 5.4.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.PHSubsetPSPACEWanted](../../../../../sources/v2/WantedExt.md)
+- L. J. Stockmeyer, "The polynomial-time hierarchy", Theoretical Computer Science 3 (1977), 1-22; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 5.4.

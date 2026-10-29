@@ -29,14 +29,14 @@ Applications*, vol. II, Theorem XVII.2.1.
 
 ## Depends on
 
-- [Is Infinitely Divisible](infinitely-divisible/is-infinitely-divisible.md)
+- [Infinitely divisible measures](infinitely-divisible/is-infinitely-divisible.md)
 
 ## Proof depends on
 
-- [Conv Pow](infinitely-divisible/conv-pow.md)
-- [Conv Pow succ eq iterate](infinitely-divisible/conv-pow-succ-eq-iterate.md)
-- [Is Infinitely Divisible iff exists iterate](infinitely-divisible/is-infinitely-divisible-iff-exists-itera.md)
-- [Is Probability Measure conv Pow](infinitely-divisible/is-probability-measure-conv-pow.md)
+- [Convolution power of a measure](infinitely-divisible/conv-pow.md)
+- [Convolution powers as iterated left convolution](infinitely-divisible/conv-pow-succ-eq-iterate.md)
+- [Infinite divisibility through iterated convolution](infinitely-divisible/is-infinitely-divisible-iff-exists-itera.md)
+- [Convolution powers of a probability measure are probability measures](infinitely-divisible/is-probability-measure-conv-pow.md)
 
 ## Sources
 

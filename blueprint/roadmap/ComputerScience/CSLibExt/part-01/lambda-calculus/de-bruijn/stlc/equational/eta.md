@@ -24,7 +24,7 @@ denotation in every environment).
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Extending a semantic environment in STLC](../denotational/cons.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Weakening preserves STLC denotation](../denotational/denote-weaken.md)

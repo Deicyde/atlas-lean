@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitOutputs
 ---
 
-# Fw Circuit Outputs
+# Outputs of an encoded flat circuit
 
-The last `k` gate values of an encoded circuit on an assignment (its outputs).
+**Outputs of an encoded flat circuit.** For an encoded flat Boolean circuit $C$, a list of
+booleans $a$ and a natural number $k$, the outputs of $C$ on $a$ are the last $k$ entries of the
+list of gate values of $C$ on $a$, or the whole list if $C$ has fewer than $k$ gates.
 
 ## Depends on
 
-- [FWGate](fwgate.md)
+- [Serialized gates of five-worlds circuits](fwgate.md)
 
 ## Proof depends on
 
-- [Fw Circuit Eval](fw-circuit-eval.md)
+- [Evaluation of an encoded flat circuit](fw-circuit-eval.md)
 
 ## Sources
 

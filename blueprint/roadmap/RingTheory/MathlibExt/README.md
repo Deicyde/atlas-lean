@@ -31,5 +31,5 @@ navigation: collection
 ## [Pi Field Quotient to Zero Divisor Graph](part-02/README.md)
 
 - [Pi Field Quotient](part-02/pi-field-quotient/README.md)
-- [Product Rings](part-02/ring-product-iff-nontrivial-idempotent.md)
+- [Product decompositions and idempotents](part-02/ring-product-iff-nontrivial-idempotent.md)
 - [Zero Divisor Graph](part-02/zero-divisor-graph/README.md)

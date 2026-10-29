@@ -29,4 +29,4 @@ navigation: module
 ## Strict convexity of the polygon
 
 - [Lists of points turning strictly left](turns-left.md)
-- [Convex Hull turns Left](convex-hull-turns-left.md)
+- [The monotone chain hull of non-collinear points turns strictly left at every vertex](convex-hull-turns-left.md)

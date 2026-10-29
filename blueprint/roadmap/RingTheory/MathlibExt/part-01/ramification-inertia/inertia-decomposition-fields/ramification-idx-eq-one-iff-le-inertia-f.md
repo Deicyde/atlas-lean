@@ -6,10 +6,26 @@ proof: formalized
 lean: Ideal.ramificationIdx_eq_one_iff_le_inertiaField
 ---
 
-# Ramification Idx eq one iff le inertia Field
+# Ramification index one and the inertia field
 
-The ramification index of `𝔓_E / 𝔭` is `1` exactly when `E` lies below
-the inertia field of `𝔓`, i.e. the fixed field of its inertia group.
+**Ramification index one and the inertia field.**
+Let $L/K$ be a finite Galois extension with Galois group $G$. Let $A$ and $B$ be Dedekind domains
+with $B$ a finite torsion-free $A$-algebra, and let $G$ act on $B$ by ring automorphisms as a
+Galois group of $B$ over $A$: faithfully, fixing the image of $A$, and with every element of $B$
+fixed by $G$ in the image of $A$. Let $E$ be an intermediate field of $L/K$ and $H \le G$ the
+subgroup fixing $E$ pointwise. Let $C$ be a Dedekind domain and a torsion-free $A$-algebra, and
+give $E$ an $A$-algebra structure and an injective ring map $C \to E$ whose image is the set of
+elements of $E$ integral over $A$ (the composite $A \to C \to E$ need not be the given map
+$A \to E$). Suppose $B$ is also a finite torsion-free $C$-algebra, with $A \to C \to B$ equal to
+$A \to B$, and that $H$, acting on $B$ by restriction, is a Galois group of $B$ over $C$. Let
+$\mathfrak p$, $\mathfrak P_E$ and $\mathfrak P$ be maximal ideals of $A$, $C$ and $B$ such that
+$\mathfrak P$ lies over $\mathfrak p$ and over $\mathfrak P_E$ and $\mathfrak P_E$ lies over
+$\mathfrak p$, and suppose that every prime of $B$ over $\mathfrak p$, and every prime of $B$
+over $\mathfrak P_E$, has a separable residue field extension. Let $I(\mathfrak P)$ be the
+inertia group of $\mathfrak P$, the set of $\sigma \in G$ with $\sigma(x) - x \in \mathfrak P$
+for all $x \in B$, and let $L^{I(\mathfrak P)}$ be its fixed field in $L$. Then the ramification
+index $e(\mathfrak P_E \mid \mathfrak p)$ of $\mathfrak P_E$ over $\mathfrak p$ equals $1$ if and
+only if $E \subseteq L^{I(\mathfrak P)}$.
 
 ## Depends on
 
@@ -17,7 +33,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramification Idx eq one iff inertia le fixing Subgroup](ramification-idx-eq-one-iff-inertia-le-f.md)
+- [Ramification index one and the inertia group](ramification-idx-eq-one-iff-inertia-le-f.md)
 
 ## Sources
 

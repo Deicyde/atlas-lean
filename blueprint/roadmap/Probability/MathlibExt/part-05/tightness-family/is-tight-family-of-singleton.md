@@ -6,17 +6,18 @@ proof: formalized
 lean: MathlibExt.Probability.TightnessFamily.isTightFamily_of_singleton
 ---
 
-# Is Tight Family of singleton
+# Constant families on the real line are tight
 
-A constant family of probability measures on `ℝ` is tight.
+**Constant families on the real line are tight.** For every index type $\iota$ and every
+probability measure $\mu$ on $\mathbb{R}$, the constant family $(\mu)_{i \in \iota}$ is tight.
 
 ## Depends on
 
-- [Is Tight Family](is-tight-family.md)
+- [Tight family of probability measures](is-tight-family.md)
 
 ## Proof depends on
 
-- [Is Tight Family iff is Tight Measure Set](is-tight-family-iff-is-tight-measure-set.md)
+- [Tightness of a family is tightness of its range](is-tight-family-iff-is-tight-measure-set.md)
 
 ## Sources
 

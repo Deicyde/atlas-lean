@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.BirkhoffErgodicL1.integral_birkhoffAverage_of_measurePreserving
 ---
 
-# Integral birkhoff Average of measure Preserving
+# Birkhoff averages preserve the integral
 
-For `0 < n`, the integral of the `n`-th Birkhoff average of `u` equals
-the integral of `u` (each orbit point contributes equally, by invariance).
+**Birkhoff averages preserve the integral.** Let $\mu$ be a measure on a measurable space
+$\alpha$, let $T : \alpha \to \alpha$ preserve $\mu$, and let $u : \alpha \to \mathbb{R}$ be
+$\mu$-integrable. Then for every $n \ge 1$,
+$\int \frac{1}{n} \sum_{k=0}^{n-1} u(T^k x) \, d\mu(x) = \int u \, d\mu$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integral comp iterate of measure Preserving](integral-comp-iterate-of-measure-preserv.md)
+- [Invariance of the integral under iterates](integral-comp-iterate-of-measure-preserv.md)
 
 ## Sources
 

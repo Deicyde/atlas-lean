@@ -6,10 +6,12 @@ proof: formalized
 lean: CharacterTheory.char_charpoly_roots_pow_eq_one
 ---
 
-# Char charpoly roots pow eq one
+# Characteristic roots of $\rho(g)$ are $|G|$-th roots of unity
 
-Every root of the characteristic polynomial of (the matrix of) `ρ g`
-is a `|G|`-th root of unity.
+**Characteristic roots of $\rho(g)$ are $|G|$-th roots of unity.** Let $\rho$ be a
+representation of a finite group $G$ on a finite-dimensional complex vector space $V$, and let
+$g \in G$. Every root $\mu$ of the characteristic polynomial of the matrix of $\rho(g)$ in a fixed
+basis of $V$ satisfies $\mu^{|G|} = 1$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Eigenvalue pow card eq one](has-eigenvalue-pow-card-eq-one.md)
+- [Eigenvalues of $\rho(g)$ are $|G|$-th roots of unity](has-eigenvalue-pow-card-eq-one.md)
 
 ## Sources
 

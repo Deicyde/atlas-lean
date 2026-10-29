@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glCircuitOutputs
 ---
 
-# Gl Circuit Outputs
+# Outputs of a serialized circuit
 
-The last `k` gate values of an encoded circuit on an assignment (its outputs).
+**Outputs of a serialized circuit.** For a list $C$ of serialized gates, a list $a$ of Booleans
+and a natural number $k$, the outputs of $C$ on $a$ are the last $k$ entries of the gate values of
+$C$ on $a$, or all of them when $C$ has fewer than $k$ gates.
 
 ## Depends on
 
-- [GLGate](glgate.md)
+- [Serialized circuit gates](glgate.md)
 
 ## Proof depends on
 
-- [Gl Circuit Eval](gl-circuit-eval.md)
+- [Gate values of a serialized circuit](gl-circuit-eval.md)
 
 ## Sources
 

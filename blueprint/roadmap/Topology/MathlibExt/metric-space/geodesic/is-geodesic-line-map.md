@@ -6,18 +6,19 @@ proof: formalized
 lean: Metric.isGeodesic_lineMap
 ---
 
-# Is Geodesic line Map
+# Straight lines are geodesics
 
-Sanity check: straight lines `t ↦ p + t • v` are geodesics of a normed space.
+**Straight lines are geodesics.** Let $F$ be a real normed space. For all $p, v \in F$, the
+straight line $\mathbb{R} \to F$, $t \mapsto p + t v$, is a geodesic.
 
 ## Depends on
 
-- [Is Geodesic](is-geodesic.md)
+- [Geodesics defined for all times](is-geodesic.md)
 
 ## Proof depends on
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
-- [Is Geodesic On With Speed line Map](is-geodesic-on-with-speed-line-map.md)
+- [Geodesics of a given speed on a set of times](is-geodesic-on-with-speed.md)
+- [Straight lines are geodesics of constant speed](is-geodesic-on-with-speed-line-map.md)
 
 ## Sources
 

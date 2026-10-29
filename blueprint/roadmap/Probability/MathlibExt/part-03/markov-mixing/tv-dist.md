@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.MarkovMixing.tvDist
 ---
 
-# Tv Dist
+# Total variation distance of functions on a finite set
 
-Total variation distance `(1/2) ∑_y |μ y - ν y|` of two functions on a finite set.
+**Total variation distance of functions on a finite set.** For real-valued functions $\mu$
+and $\nu$ on a finite set $S$, their total variation distance is
+$\frac{1}{2} \sum_{y \in S} |\mu(y) - \nu(y)|$.
 
 ## Depends on
 

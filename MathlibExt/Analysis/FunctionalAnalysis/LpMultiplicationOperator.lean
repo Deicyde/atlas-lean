@@ -276,9 +276,9 @@ theorem lpMulCLM_congr_ae {φ ψ : α → ℂ} (h : φ =ᵐ[μ] ψ) (hφ : MemLp
     rw [hx, hx2])
 
 omit [SigmaFinite μ] in
-/-- **Multiplication by a constant function.** Let $\mu$ be a measure on a measurable space
-$\alpha$ and let $c \in \mathbb{C}$. The multiplication operator on $L^2(\mu)$ by the constant
-function $x \mapsto c$ sends every $f \in L^2(\mu)$ to the scalar multiple $c f$. -/
+/-- **Multiplication by a constant function on $L^2$.** Let $\mu$ be a measure on a measurable
+space $\alpha$ and let $c \in \mathbb{C}$. The multiplication operator on $L^2(\mu)$ by the
+constant function $x \mapsto c$ sends every $f \in L^2(\mu)$ to the scalar multiple $c f$. -/
 theorem lpMulCLM_const_apply (c : ℂ) (f : Lp ℂ 2 μ) :
     lpMulCLM (fun _ => c) (memLp_const_top c) f = c • f := by
   apply Lp.ext

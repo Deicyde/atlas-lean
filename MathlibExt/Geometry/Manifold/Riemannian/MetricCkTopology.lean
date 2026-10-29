@@ -85,7 +85,10 @@ instance (I : ModelWithCorners ℝ E H) (M : Type*) [TopologicalSpace M]
     TopologicalSpace (RiemannianMetricWithCk I M k) :=
   metricCkTopology I M k
 
-/-- The identity equivalence between smooth metrics and the `𝒢^k(M)` synonym. -/
+/-- **Smooth metrics as elements of $\mathcal{G}^k(M)$.** For a smooth manifold $M$ and
+$k \in \mathbb{N} \cup \{\infty\}$, the identity map is a bijection from the space of smooth
+Riemannian metrics on $M$ to $\mathcal{G}^k(M)$, the same space of metrics equipped with the
+$C^k$ topology. -/
 def RiemannianMetricWithCk.ofMetric {I : ModelWithCorners ℝ E H} {M : Type*}
     [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M] (k : ℕ∞) :
     Bundle.ContMDiffRiemannianMetric I ∞ E (fun x : M ↦ TangentSpace I x) ≃

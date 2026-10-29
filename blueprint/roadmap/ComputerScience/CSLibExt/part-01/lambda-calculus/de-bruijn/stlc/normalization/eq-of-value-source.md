@@ -22,7 +22,7 @@ $v = t$.
 ## Proof depends on
 
 - [Small-step call-by-value reduction in STLC](../semantics/step.md)
-- [Value irreducible](../semantics/value-irreducible.md)
+- [Values are irreducible](../semantics/value-irreducible.md)
 
 ## Sources
 

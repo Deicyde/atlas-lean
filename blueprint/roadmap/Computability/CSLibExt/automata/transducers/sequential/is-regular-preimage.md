@@ -19,7 +19,7 @@ initial output of $S$.
 ## Depends on
 
 - [Sequential transducer](sequential-transducer.md)
-- [Preimage](preimage.md)
+- [Preimage of a language under a sequential transducer](preimage.md)
 
 ## Proof depends on
 

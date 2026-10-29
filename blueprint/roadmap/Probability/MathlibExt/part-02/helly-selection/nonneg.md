@@ -6,13 +6,14 @@ proof: formalized
 lean: ProbabilityTheory.IsDistributionFunction.nonneg
 ---
 
-# Nonneg
+# Distribution functions are nonnegative
 
-A distribution function is non-negative: `0 ≤ F x` for all `x ∈ ℝ`.
+**Distribution functions are nonnegative.** If $F$ is a distribution function on
+$\mathbb{R}$, then $0 \le F(x)$ for every $x \in \mathbb{R}$.
 
 ## Depends on
 
-- [Is Distribution Function](is-distribution-function.md)
+- [Distribution function](is-distribution-function.md)
 
 ## Sources
 

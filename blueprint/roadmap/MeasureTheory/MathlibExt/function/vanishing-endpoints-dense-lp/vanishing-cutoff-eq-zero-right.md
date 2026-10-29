@@ -18,7 +18,7 @@ and width $\delta$ takes the value $0$ at $b$.
 
 ## Proof depends on
 
-- [Interval Cutoff eq zero right](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-zero-right.md)
+- [The interval cutoff vanishes at the right endpoint](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-zero-right.md)
 
 ## Sources
 

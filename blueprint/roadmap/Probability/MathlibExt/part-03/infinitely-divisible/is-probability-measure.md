@@ -6,18 +6,23 @@ proof: formalized
 lean: MeasureTheory.Measure.IsInfinitelyDivisible.isProbabilityMeasure
 ---
 
-# Is Probability Measure
+# Infinitely divisible measures are probability measures
 
-The root of order one shows that an infinitely divisible measure is a probability law.
+**Infinitely divisible measures are probability measures.** Let $M$ be an additive
+commutative monoid with a measurable structure in which addition is jointly measurable. Every
+infinitely divisible measure on $M$ is a probability measure.
+
+The convolution root of order one is the measure itself, and it is a probability measure by
+definition.
 
 ## Depends on
 
-- [Is Infinitely Divisible](is-infinitely-divisible.md)
+- [Infinitely divisible measures](is-infinitely-divisible.md)
 
 ## Proof depends on
 
-- [Conv Pow](conv-pow.md)
-- [Conv Pow one](conv-pow-one.md)
+- [Convolution power of a measure](conv-pow.md)
+- [The first convolution power](conv-pow-one.md)
 
 ## Sources
 

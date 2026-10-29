@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.takagiLandsberg
 ---
 
-# Takagi Landsberg
+# The Takagi–Landsberg function
 
-The Takagi-Landsberg function `𝒯_a(x) = ∑_{n ≥ 0} a^n τ(2^n x)`, where
-`τ(x) = |x - round x|` is the distance from `x` to the nearest integer. The parameter `a`
-ranges over `ℝ` or `ℂ`; the series converges for `‖a‖ < 1`, and at dyadic rationals it is a
-finite sum.
+**The Takagi–Landsberg function.** For a real or complex parameter $a$ and a real number $x$,
+let $\tau(y)$ denote the distance from a real number $y$ to the nearest integer. The
+Takagi–Landsberg function is $\mathcal{T}_a(x) = \sum_{n \ge 0} a^n \tau(2^n x)$, where the
+value is taken to be $0$ when the series does not converge absolutely. The series converges for
+$|a| < 1$, and at dyadic rationals $x$ it is a finite sum.
 
 ## Depends on
 

@@ -78,7 +78,7 @@ navigation: collection
 
 - [Markov Property Chain](part-04/markov-property-chain/README.md)
 - [Conditional variance theorem for martingales](part-04/cond-exp-sub-sq-eq.md)
-- [The `L^p` martingale convergence theorem](part-04/tendsto-e-lp-norm-limit-process-of-e-lp.md)
+- [The $L^p$ martingale convergence theorem](part-04/tendsto-e-lp-norm-limit-process-of-e-lp.md)
 - [Martingale Orthogonality](part-04/martingale-orthogonality/README.md)
 - [Martingale Uniform Integrability](part-04/martingale-uniform-integrability/README.md)
 - [Mc Diarmid](part-04/mc-diarmid/README.md)
@@ -92,7 +92,7 @@ navigation: collection
 - [Analytic core of Poisson convergence](part-04/elem-symm-poly-tendsto-poisson.md)
 - [Probability Generating Function](part-04/probability-generating-function/README.md)
 - [Product Bond Percolation](part-04/product-bond-percolation/README.md)
-- [Prokhorov's theorem, sequential form on `ℝ`](part-04/prokhorov-sequential.md)
+- [Prokhorov's theorem, sequential form on $\mathbb{R}$](part-04/prokhorov-sequential.md)
 - [Quantile](part-04/quantile/README.md)
 - [Random Walk Dichotomy](part-04/random-walk-dichotomy/README.md)
 - [Random Walk Limsup](part-04/random-walk-limsup/README.md)

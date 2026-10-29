@@ -26,7 +26,7 @@ elsewhere, and recovers $\varphi(x)$ as the limit of $\varphi$ on the finite tru
 ## Proof depends on
 
 - [The $\ell^1$ coefficient sequence of a functional on $c_0$](c0-coeff-lp.md)
-- [Formula for the $\ell^1$–$c_0$ pairing](c0-dual-pairing-apply.md)
+- [Formula for the $\ell^1$–$c_0$ duality pairing](c0-dual-pairing-apply.md)
 - [Finitely supported sequences in $c_0$](c0-finset-sum.md)
 - [A functional on a finitely supported sequence](c0-finset-sum-apply-dual.md)
 - [Sequence supported at one index](c0-single.md)

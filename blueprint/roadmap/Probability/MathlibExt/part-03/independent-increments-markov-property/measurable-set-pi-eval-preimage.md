@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.measurableSet_pi_eval_preimage
 ---
 
-# Measurable Set pi eval preimage
+# Evaluation events are measurable
 
-An evaluation preimage is measurable in the product σ-algebra on path space.
+**Evaluation events are measurable.** For every $t \in \mathbb{R}_{\ge 0}$ and every Borel set
+$D \subseteq \mathbb{R}$, the set of paths $f : \mathbb{R}_{\ge 0} \to \mathbb{R}$ with $f(t) \in D$
+is measurable for the product σ-algebra on the space of all such paths.
 
 ## Depends on
 

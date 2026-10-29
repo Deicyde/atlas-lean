@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.dyadicMantissa_wellDefined_iff_doubling_invariant
 ---
 
-# Dyadic Mantissa well Defined iff doubling invariant
+# Girgensohn's lemma
 
-Girgensohn's lemma: for `G : ℕ → ℝ`, the assignment `F((n - p_n)/p_n) := G(n)` on positive
-integers `n`, with `p_n = 2^{⌊log₂ n⌋}`, is a well-defined function of the dyadic rational
-`(n - p_n)/p_n ∈ [0, 1)` if and only if `G(2n) = G(n)` for all positive `n`.
+**Girgensohn's lemma.** Let $G$ be a function from the natural numbers to the real numbers, and
+for a positive integer $n$ let $p_n = 2^{\lfloor \log_2 n \rfloor}$, so that $(n - p_n)/p_n$ is a
+dyadic rational in $[0, 1)$. The following are equivalent: (i) for all positive integers $m$ and
+$n$ with $(m - p_m)/p_m = (n - p_n)/p_n$ we have $G(m) = G(n)$, that is, $F((n - p_n)/p_n) = G(n)$
+well-defines a function $F$ of these dyadic rationals; (ii) $G(2n) = G(n)$ for every positive
+integer $n$.
 
 ## Depends on
 

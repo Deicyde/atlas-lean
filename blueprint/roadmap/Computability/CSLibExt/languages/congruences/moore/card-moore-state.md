@@ -18,7 +18,7 @@ are Nerode classes of the language accepted by $M$.
 - [States of Moore's automaton](moore-state.md)
 - [Moore's relation](moore-rel.md)
 - [Moore equivalence on reachable states](moore-setoid.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 

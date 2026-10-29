@@ -6,13 +6,15 @@ proof: formalized
 lean: ProbabilityTheory.partialSumIndicators_nonneg
 ---
 
-# Partial Sum Indicators nonneg
+# Partial sums of indicators are nonnegative
 
-The partial sum `S_n(ω) ≥ 0` since it is a sum of nonnegative indicators.
+**Partial sums of indicators are nonnegative.** For sets $A_0, A_1, \dots$, every $n$ and every
+$\omega \in \Omega$, the partial sum $S_n(\omega) = \sum_{i < n} 1_{A_i}(\omega)$ satisfies
+$S_n(\omega) \ge 0$.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Sources
 

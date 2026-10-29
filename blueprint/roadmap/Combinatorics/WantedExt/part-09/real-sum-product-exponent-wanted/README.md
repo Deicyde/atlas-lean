@@ -25,7 +25,7 @@ navigation: module
 - [Statement of the upper bound two for the real sum-product exponent](erdos-szemeredi-historical-upper-bound.md)
 - [Statement of the Bloom–Sawin–Schildkraut–Zhelezov upper bound](bloom-sawin-schildkraut-zhelezov-upper-b.md)
 - [Statement of the Bloom–Sawin–Schildkraut–Zhelezov numerical upper bound](bloom-sawin-schildkraut-zhelezov-numeric.md)
-- [Trivial lower bound for the real sum-product exponent](trivial-lower-bound.md)
+- [Statement of the trivial lower bound for the real sum-product exponent](trivial-lower-bound.md)
 - [Statement of Elekes's lower bound](elekes-lower-bound.md)
 - [Statement of Solymosi's $14/11$ lower bound](solymosi-fourteen-elevenths-lower-bound.md)
 - [Statement of Solymosi's $4/3$ lower bound](solymosi-four-thirds-lower-bound.md)

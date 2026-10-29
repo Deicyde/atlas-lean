@@ -32,7 +32,7 @@ prime $r$ and some $k \ge 1$. Then the order of $G$ is a prime number.
 - [Nonlinear irreducible characters of a simple group vanish on nonidentity classes of coprime size](char-zero-of-nonlinear-of-coprime.md)
 - [Character values are algebraic integers](../killing-lemma/character-is-integral.md)
 - [An algebraic integer cannot solve $1 + p\beta = 0$ for a prime $p$](false-of-one-add-prime-mul-is-integral.md)
-- [Simple finite-dimensional representations are irreducible](../character-orthogonality/irreducible-of-simple-fdrep.md)
+- [Simple finite-dimensional complex representations of a finite group are irreducible](../character-orthogonality/irreducible-of-simple-fdrep.md)
 - [Column orthogonality at the identity](../character-orthogonality/regular-character-vanishes.md)
 
 ## Sources

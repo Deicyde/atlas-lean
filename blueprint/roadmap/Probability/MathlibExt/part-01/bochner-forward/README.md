@@ -4,10 +4,10 @@ navigation: module
 
 # Bochner Forward
 
-- [Is Positive Definite](is-positive-definite.md)
-- [Is Positive Definite Real](is-positive-definite-real.md)
-- [Is Characteristic Fun](is-characteristic-fun.md)
-- [Is Characteristic Fun Real](is-characteristic-fun-real.md)
-- [Bochner forward](bochner-forward.md)
-- [Char Fun is Positive Definite](char-fun-is-positive-definite.md)
-- [Bochner forward real](bochner-forward-real.md)
+- [Positive definite functions](is-positive-definite.md)
+- [Positive definite real-valued functions](is-positive-definite-real.md)
+- [Characteristic functions](is-characteristic-fun.md)
+- [Real-valued characteristic functions](is-characteristic-fun-real.md)
+- [Forward direction of Bochner's theorem](bochner-forward.md)
+- [Characteristic functions are positive definite](char-fun-is-positive-definite.md)
+- [Real-valued characteristic functions are continuous and positive definite](bochner-forward-real.md)

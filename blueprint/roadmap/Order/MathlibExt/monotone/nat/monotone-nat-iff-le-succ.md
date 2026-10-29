@@ -6,10 +6,11 @@ proof: formalized
 lean: monotone_nat_iff_le_succ
 ---
 
-# Monotone nat iff le succ
+# Successor criterion for monotone sequences
 
-A sequence `f : ℕ → α` is monotone (increasing) if and only if each term
-is bounded above by its immediate successor: `f n ≤ f (n + 1)` for all `n`.
+**Successor criterion for monotone sequences.** Let $\alpha$ be a preordered set. A sequence
+$f : \mathbb{N} \to \alpha$ is monotone (that is, $f(m) \le f(n)$ whenever $m \le n$)
+if and only if $f(n) \le f(n+1)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 

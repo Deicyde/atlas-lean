@@ -6,7 +6,7 @@ navigation: module
 
 ## Markov Chain Chapman Kolmogorov
 
-- [Is Markov Chain](is-markov-chain.md)
+- [Markov chain with respect to a filtration](is-markov-chain.md)
 
 ## Is Markov Chain
 

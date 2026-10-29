@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bi-invariant orders on a group](is-bi-order.md)
+- [Bi-invariant strict total orders on a group](is-bi-order.md)
 
 ## Sources
 

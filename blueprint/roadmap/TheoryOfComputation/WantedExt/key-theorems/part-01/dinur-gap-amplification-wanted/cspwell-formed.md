@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.CSPWellFormed
 ---
 
-# CSPWell Formed
+# Well-formed 2CSP instances
 
-A 2CSP instance is well-formed: every constraint mentions variables below the
-variable count, and every allowed pair has labels below the alphabet size.
+**Well-formed 2CSP instances.** A 2CSP instance $(n, \Sigma, C)$ is well-formed when every
+constraint $(u, v, P)$ in $C$ satisfies $u < n$ and $v < n$, and every allowed pair $(a, b)$ in
+$P$ satisfies $a < \Sigma$ and $b < \Sigma$.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.NegativeIn
 ---
 
-# Negative In
+# Negative occurrence of a relation symbol
 
-`R` occurs only negatively in the formula: every occurrence of relation `R` is under an odd number of negations.
+**Negative occurrence of a relation symbol.** A relation symbol $R$ occurs only negatively
+in a formula $\varphi$ of first-order logic with least fixed points when every atomic formula
+$R(x_{a_1}, \dots, x_{a_k})$ in $\varphi$, including those inside least-fixed-point subformulas,
+lies under an odd number of negations.
 
 ## Depends on
 
-- [OGFO](ogfo.md)
+- [Formulas of first-order logic with least fixed points](ogfo.md)
 
 ## Sources
 

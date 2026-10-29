@@ -5,26 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Algebrization.IsAlgebraicExtension
 ---
 
-# Is Algebraic Extension
+# Algebraic extension oracles
 
-An oracle `O` is the algebraic extension of a base oracle `B` if `O`'s answers on
-*every* bitstring are the bits of the multilinear extension of the base function
-`baseAt B n`, over the field `AdjoinRoot (irr n)` for a monic irreducible
-polynomial `irr n` of degree `n + 1` over `ZMod 2` (so the field is
-`GF(2 ^ (n + 1))`). The irreducible polynomial schedule `irr` is
-polynomial-time computable from the unary length parameter: the `IsPolyTime`
-conjunct says the coefficient bitstring `polyBits (irr n) n` is computable in
-time polynomial in `n` (the length of the unary input), so a polynomial-time
-oracle machine can form valid extension queries and can do field arithmetic
-on the power-basis encoding. A query is a bitstring decoding to
-`(unary length, field point, j)`: the length parameter `u` is a bitstring whose
-length is `n`, the field point is a list of `n` field elements each encoded as
-`n + 1` bits, and `j` is a natural number with `j < n + 1`; the answer is bit `j`
-(the `j`-th power-basis coordinate) of the multilinear extension at that field
-point. Every other bitstring (malformed, wrong-length point, wrong-length field
-element encodings, or `j ≥ n + 1`) is answered `false`, so no oracle machine can
-route around the algebraic structure through invalid encodings, and an
-out-of-range `j` does not wrap around to coordinate `0`.
+**Algebraic extension oracles.** Let $B$ and $O$ be oracles, that is, functions from
+bitstrings to booleans. Then $O$ is an algebraic extension of $B$ when there are polynomials
+$\pi_0, \pi_1, \pi_2, \ldots$ over $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, each $\pi_n$ monic and
+irreducible of degree $n + 1$, with the following two properties, where $F_n$ is the field
+$\mathbb{F}_2[X]/(\pi_n)$, $\alpha_n$ is the class of $X$ in $F_n$, and $\tilde B_n$ is the
+multilinear extension over $F_n$ of the restriction of $B$ to inputs of length $n$. First, the
+map sending a bitstring $u$ to the coefficient bitstring of $\pi_{|u|}$ with parameter $|u|$
+(whose bits say which of the coefficients of $X^0, \dots, X^{|u|+1}$ equal $1$) is
+polynomial-time computable. Second, let $y$ be a bitstring. If $y$ decodes, under the canonical
+bitstring encoding of triples, to a triple $(u, (e_0, \dots, e_{m-1}), j)$ of a bitstring $u$, a
+list of bitstrings and a natural number $j$ such that, writing $n = |u|$, we have $m = n$, every
+$e_i$ has length $n + 1$ and $j \le n$, then $O(y)$ is true exactly when the coefficient of
+$\alpha_n^j$ in $\tilde B_n(x)$, written in the basis $1, \alpha_n, \dots, \alpha_n^n$ of $F_n$
+over $\mathbb{F}_2$, equals $1$. Here $x \in F_n^n$ is the point with coordinates
+$x_i = \sum_{k=0}^{n} e_{i,k} \alpha_n^k$, where $e_{i,k} \in \{0, 1\}$ is the bit of $e_i$ at
+position $k$, counting from $0$. Otherwise, in particular when $y$ does not decode, $O(y)$ is
+false.
+
+Every malformed query is answered false, so an oracle machine cannot route around the algebraic
+structure through invalid encodings, and an out-of-range $j$ does not wrap around to
+coordinate $0$.
 
 ## Depends on
 
@@ -40,8 +43,8 @@ This node has no prerequisites.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Ext Answer](ext-answer.md)
-- [Poly Bits](poly-bits.md)
+- [Answer bits of the algebraic extension oracle](ext-answer.md)
+- [Coefficient bitstring of a polynomial over $\mathbb{F}_2$](poly-bits.md)
 - [Polynomial-time computable functions](../../../../../Computability/MathlibExt/complexity/is-poly-time.md)
 
 ## Sources

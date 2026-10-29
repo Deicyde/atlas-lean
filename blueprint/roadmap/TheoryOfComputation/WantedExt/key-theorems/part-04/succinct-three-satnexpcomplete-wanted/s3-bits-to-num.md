@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctThreeSATNEXPComplete.s3BitsToNum
 ---
 
-# S3 Bits To Num
+# Value of a list of bits, least significant first
 
-The number with binary expansion `bs`, least significant bit first.
+**Value of a list of bits, least significant first.** A list of booleans
+$(b_0, \dots, b_{m-1})$ represents the natural number $\sum_{k < m} [b_k]\, 2^k$, where $[b_k]$
+is $1$ if $b_k$ is true and $0$ otherwise.
 
 ## Depends on
 

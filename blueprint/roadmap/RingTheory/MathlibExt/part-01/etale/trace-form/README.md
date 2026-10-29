@@ -4,13 +4,13 @@ navigation: module
 
 # Trace Form
 
-- [Trace pi](trace-pi.md)
-- [Trace Form pi](trace-form-pi.md)
-- [Trace Form apply of alg Equiv](trace-form-apply-of-alg-equiv.md)
-- [Trace Form apply eq zero of is Nilpotent](trace-form-apply-eq-zero-of-is-nilpotent.md)
-- [Is Reduced of trace Form nondegenerate](is-reduced-of-trace-form-nondegenerate.md)
-- [Trace Form nondegenerate iff etale](trace-form-nondegenerate-iff-etale.md)
-- [Discr ne zero iff trace Form nondegenerate](discr-ne-zero-iff-trace-form-nondegenera.md)
-- [Discr ne zero iff etale](discr-ne-zero-iff-etale.md)
-- [Discr ne zero of etale](discr-ne-zero-of-etale.md)
-- [Etale of discr ne zero](etale-of-discr-ne-zero.md)
+- [Trace on a finite product of algebras](trace-pi.md)
+- [Trace form of a finite product of algebras](trace-form-pi.md)
+- [The trace form is invariant under algebra isomorphisms](trace-form-apply-of-alg-equiv.md)
+- [Nilpotent elements pair to zero under the trace form](trace-form-apply-eq-zero-of-is-nilpotent.md)
+- [A nondegenerate trace form forces the algebra to be reduced](is-reduced-of-trace-form-nondegenerate.md)
+- [Trace form criterion for étale algebras](trace-form-nondegenerate-iff-etale.md)
+- [Discriminant and nondegeneracy of the trace form](discr-ne-zero-iff-trace-form-nondegenera.md)
+- [Étale algebras are detected by the discriminant](discr-ne-zero-iff-etale.md)
+- [Étale algebras have nonzero discriminant](discr-ne-zero-of-etale.md)
+- [A nonzero discriminant forces étaleness](etale-of-discr-ne-zero.md)

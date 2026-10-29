@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.CommutatorWidthRatioKourovka16Problem8Wanted.maxCommutatorWidthRatioIsOneSixth
 ---
 
-# Max Commutator Width Ratio Is One Sixth
+# Bardakov's commutator width ratio claim (Kourovka 16.8)
 
-Kourovka 16.8 (V. G. Bardakov): the maximum of `w(G') / |G|` over finite non-abelian groups `G`
-is `1/6`, attained at the symmetric group `S₃`.
+**Bardakov's commutator width ratio claim (Kourovka 16.8).** The proposition that for every
+finite non-abelian group $G$ the commutator width $w(G')$ of its derived subgroup $G'$ satisfies
+$w(G')/|G| \le 1/6$, and that for the symmetric group $S_3$ equality holds:
+$w(S_3')/|S_3| = 1/6$.
 
 ## Depends on
 

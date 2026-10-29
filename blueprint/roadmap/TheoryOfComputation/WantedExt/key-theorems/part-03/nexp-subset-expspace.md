@@ -7,8 +7,9 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.NEXPSubsetEXPSPACE.nexp_subset_expsp
 
 # NEXP is contained in EXPSPACE
 
-**NEXP is contained in EXPSPACE.** Source: S. Arora and B. Barak, Computational
-Complexity: A Modern Approach, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation).
+**NEXP is contained in EXPSPACE.** Every decision problem in NEXP, the class of
+nondeterministic exponential time, also belongs to EXPSPACE, the class of deterministic
+exponential space.
 
 ## Depends on
 
@@ -20,3 +21,4 @@ Complexity: A Modern Approach, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation)
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.NEXPSubsetEXPSPACEWanted](../../../../../sources/v2/WantedExt.md)
+- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009 (NEXP ⊆ EXPSPACE by exhaustive simulation).

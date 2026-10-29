@@ -29,7 +29,7 @@ that the buffer at occupancy $n$ has a transition labelled $a$ to occupancy $m$.
 - [Recursive CCS specification of go-back-N](spec.md)
 - [Realization of a code-level transition system](../finite-state/realizes.md)
 - [Constants listing their transitions realize them](../finite-state/constant.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Weak transitions with a visible label](../../semantics/lts/weak-bisimulation/iff-exists-of-ne.md)
 
 ## Sources

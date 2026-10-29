@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.tendsto_atBot_of_limsup_eq_bot
 ---
 
-# Tendsto at Bot of limsup eq bot
+# Limsup minus infinity forces divergence to minus infinity
 
-`limsup Sₙ = ⊥` (in `EReal`) if and only if `Sₙ → -∞`.
+**Limsup minus infinity forces divergence to minus infinity.** Let $(S_n)$ be a sequence of
+real numbers. If $\limsup_{n \to \infty} S_n = -\infty$ in the extended reals, then
+$S_n \to -\infty$ as $n \to \infty$.
 
 ## Depends on
 

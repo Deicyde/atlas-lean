@@ -73,7 +73,8 @@ end Value
 
 namespace Step
 
-/-- Values cannot reduce. -/
+/-- **Values are irreducible.** If a term $t$ of type $A$ in a context $\Gamma$ is a value, then
+there is no term $t'$ to which $t$ reduces in one call-by-value step. -/
 theorem value_irreducible {t t' : Tm Γ A} (hv : Value t) : ¬ t ⟶ₛ t' := by
   intro hs
   cases hv
@@ -121,7 +122,9 @@ theorem deterministic {t t₁ t₂ : Tm Γ A} (h₁ : t ⟶ₛ t₁) (h₂ : t �
       | appArg _ hstep => exact (value_irreducible hva hstep).elim
       | beta _ => rfl
 
-/-- A term is in normal form when it has no outgoing reduction. -/
+/-- **Normal forms for call-by-value reduction in STLC.** A term $t$ of type $A$ in a context
+$\Gamma$ is in normal form when there is no term $t'$ such that $t$ reduces to $t'$ in one
+call-by-value step. -/
 def NormalForm (t : Tm Γ A) : Prop := ∀ t', ¬t ⟶ₛ t'
 
 /-- **Closed normal forms are exactly the values.** A term $t$ of type $A$ in the empty context

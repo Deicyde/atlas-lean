@@ -16,7 +16,7 @@ than halting), then $q'$ belongs to the set of states of $c$.
 
 - [Codes for multi-tape machines](code.md)
 - [Action of a code at a key](act.md)
-- [States of a code](states.md)
+- [States of a multi-tape code](states.md)
 - [Coded actions](code-action.md)
 
 ## Proof depends on

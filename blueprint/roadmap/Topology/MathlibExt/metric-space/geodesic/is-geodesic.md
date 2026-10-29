@@ -5,9 +5,11 @@ statement: formalized
 lean: Metric.IsGeodesic
 ---
 
-# Is Geodesic
+# Geodesics defined for all times
 
-`γ : ℝ → X` is a geodesic defined for all times (`IsGeodesicOn γ univ`).
+**Geodesics defined for all times.** Let $X$ be a pseudo-extended metric space. A curve
+$\gamma : \mathbb{R} \to X$ is a geodesic if it is a geodesic on the set of all times
+$\mathbb{R}$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Geodesic On](is-geodesic-on.md)
+- [Geodesic on a set of times](is-geodesic-on.md)
 
 ## Sources
 

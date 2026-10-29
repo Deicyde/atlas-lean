@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctThreeSATNEXPComplete.succinctThreeSatDec
 ---
 
-# Succinct Three Sat Dec
+# Succinct 3SAT
 
-Succinct 3SAT as a decision problem over bitstrings, decoding to `(n, C)`: is the
-succinctly described 3CNF formula satisfiable? Malformed descriptors
-(`¬ s3WellFormed C n`) are rejected.
+**Succinct 3SAT.** Succinct 3SAT is the decision problem that accepts a bitstring $x$
+exactly when $x$ decodes, under the canonical bitstring encoding, to a pair $(n, C)$ of a natural
+number $n$ and a list $C$ of gates encoded as (kind, references) pairs such that $C$ is a
+well-formed descriptor for $n$ and some assignment $\sigma$ of booleans to the natural numbers
+satisfies clause $c$ of the formula described by $C$ for every $c < 2^n$. Bitstrings that do not
+decode are rejected.
 
 ## Depends on
 
@@ -25,9 +28,9 @@ succinctly described 3CNF formula satisfiable? Malformed descriptors
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [S3 Gate](s3-gate.md)
-- [S3 Well Formed](s3-well-formed.md)
-- [Succ Clause Sat](succ-clause-sat.md)
+- [Encoded gates](s3-gate.md)
+- [Well-formed succinct 3SAT descriptors](s3-well-formed.md)
+- [Satisfied clauses of a succinctly described formula](succ-clause-sat.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Unramified Monogenic
 
-- [Unramified iff exists monogenic separable reduced minpoly](unramified-iff-exists-monogenic-separabl.md)
-- [Unramified of primitive root of unity of coprime](unramified-of-primitive-root-of-unity-of.md)
+- [Characterization of unramified extensions of a complete DVR](unramified-iff-exists-monogenic-separabl.md)
+- [Adjoining a root of unity of order coprime to the residue characteristic is unramified](unramified-of-primitive-root-of-unity-of.md)

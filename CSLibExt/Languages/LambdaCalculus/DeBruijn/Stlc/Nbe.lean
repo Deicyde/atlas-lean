@@ -305,9 +305,9 @@ mutual
     | A ⇒ B, _, v => .lam (quote B (v .succ (reflect A (.var .zero))))
 end
 
-/-- **Semantic environments.** For contexts $\Delta$ and $\Gamma$, a semantic environment for
-$\Gamma$ in $\Delta$ assigns to every variable of $\Gamma$, of any type $A$, a semantic value of
-type $A$ in $\Delta$. -/
+/-- **Semantic environments for normalization by evaluation.** For contexts $\Delta$ and
+$\Gamma$, a semantic environment for $\Gamma$ in $\Delta$ assigns to every variable of $\Gamma$,
+of any type $A$, a Kripke semantic value of type $A$ in $\Delta$. -/
 abbrev SemEnv (Δ Γ : List (Ty Base)) := ∀ {A}, Var Γ A → Sem Δ A
 
 namespace SemEnv

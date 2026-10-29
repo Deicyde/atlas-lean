@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctCircuitValueEXPComplete.succDescWellFormed
 ---
 
-# Succ Desc Well Formed
+# Well-formed description circuits (Succinct Circuit Value)
 
-Well-formedness of the description circuit `C` on `n` inputs: at least
-`2 * n + 3` gates (so the `2 * n + 3` outputs of `succDesc` exist; without
-this, missing outputs would silently read as `false`), and the decoded
-circuit is a `WellFormedCircuit`.
+**Well-formed description circuits (Succinct Circuit Value).** A list $C$ of encoded gates
+is a well-formed description circuit on $n$ inputs when $C$ has at least $2n + 3$ gates and the
+flat Boolean circuit on $n$ inputs obtained by decoding each gate of $C$ is well-formed, that
+is, every gate references only strictly earlier gates.
+
+The length bound guarantees that the $2n + 3$ outputs read as a gate description exist; without
+it, missing outputs would silently read as false.
 
 ## Depends on
 
-- [SCVGate](scvgate.md)
+- [Encoded gates (Succinct Circuit Value)](scvgate.md)
 
 ## Proof depends on
 

@@ -7,7 +7,7 @@ navigation: module
 
 - [Irreducible representations are simple](simple-fdrep-of-irreducible.md)
 - [Simple finite-dimensional representations are irreducible (auxiliary form)](irreducible-of-simple-fdrep-aux.md)
-- [Simple finite-dimensional representations are irreducible](irreducible-of-simple-fdrep.md)
+- [Simple finite-dimensional complex representations of a finite group are irreducible](irreducible-of-simple-fdrep.md)
 - [Isomorphism of simple representations](iso-setoid.md)
 - [Isomorphism classes of simple representations](irr.md)
 - [Character of an isomorphism class](char-fun.md)

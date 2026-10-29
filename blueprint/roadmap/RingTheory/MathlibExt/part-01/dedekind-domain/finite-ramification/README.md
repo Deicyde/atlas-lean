@@ -4,5 +4,5 @@ navigation: module
 
 # Finite Ramification
 
-- [Finite ramified primes](finite-ramified-primes.md)
-- [Finite ramified primes below](finite-ramified-primes-below.md)
+- [Only finitely many primes of the extension ramify](finite-ramified-primes.md)
+- [Only finitely many primes of the base ramify](finite-ramified-primes-below.md)

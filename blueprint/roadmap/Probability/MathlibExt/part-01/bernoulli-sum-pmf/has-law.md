@@ -6,15 +6,18 @@ proof: formalized
 lean: ProbabilityTheory.IsBernoulliRV.hasLaw
 ---
 
-# Has Law
+# Law of a Bernoulli random variable
 
-The real-parameter predicate supplies the standard Nat-valued Bernoulli law.
+**Law of a Bernoulli random variable.** If $X : \Omega \to \mathbb{N}$ is a Bernoulli random
+variable with parameter $p$ under a measure $\mu$, then $X$ is $\mu$-almost everywhere
+measurable and its law under $\mu$, the pushforward of $\mu$ along $X$, is the Bernoulli
+distribution $p\,\delta_1 + (1 - p)\,\delta_0$ on $\mathbb{N}$.
 
 ## Depends on
 
-- [Is Bernoulli RV](is-bernoulli-rv.md)
-- [Le one](le-one.md)
-- [Nonneg](nonneg.md)
+- [Bernoulli random variable](is-bernoulli-rv.md)
+- [Bernoulli parameters are at most one](le-one.md)
+- [Bernoulli parameters are nonnegative](nonneg.md)
 
 ## Sources
 

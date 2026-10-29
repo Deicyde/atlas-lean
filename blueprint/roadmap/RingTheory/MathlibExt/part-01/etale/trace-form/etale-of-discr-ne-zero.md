@@ -6,10 +6,11 @@ proof: formalized
 lean: Algebra.etale_of_discr_ne_zero
 ---
 
-# Etale of discr ne zero
+# A nonzero discriminant forces étaleness
 
-One direction of Lemma 12.18: a nonzero discriminant for some basis forces
-the algebra to be étale.
+**A nonzero discriminant forces étaleness.** Let $R$ be a commutative algebra over a field
+$K$ and let $b$ be a $K$-basis of $R$ indexed by a finite set. If the discriminant of $b$ over
+$K$ is nonzero, then $R$ is étale over $K$.
 
 ## Depends on
 
@@ -17,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Discr ne zero iff etale](discr-ne-zero-iff-etale.md)
+- [Étale algebras are detected by the discriminant](discr-ne-zero-iff-etale.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Etale.TraceForm](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Lemma 12.18, one direction.

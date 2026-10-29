@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.cspDegree
 ---
 
-# Csp Degree
+# Degree of a variable in a 2CSP instance
 
-The degree of a variable in a 2CSP instance: the number of constraints mentioning it.
+**Degree of a variable in a 2CSP instance.** For a 2CSP instance $(n, \Sigma, C)$ and a
+natural number $v$, the degree of $v$ is the number of entries $(u, w, P)$ of the list $C$ with
+$u = v$ or $w = v$.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Sources
 

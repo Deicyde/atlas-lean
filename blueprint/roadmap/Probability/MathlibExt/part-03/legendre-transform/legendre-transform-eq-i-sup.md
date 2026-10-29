@@ -6,13 +6,16 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.legendreTransform_eq_iSup
 ---
 
-# Legendre Transform eq i Sup
+# Supremum formula for the Legendre transform
 
-The canonical specialization has the source's inner-product supremum formula.
+**Supremum formula for the Legendre transform.** Let $d \in \mathbb{N}$ and let
+$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$. For every $x \in \mathbb{R}^d$, the Legendre
+transform $\Lambda^*$ of $\Lambda$ satisfies
+$\Lambda^*(x) = \sup_{l \in \mathbb{R}^d} \big(\langle l, x \rangle - \Lambda(l)\big)$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 

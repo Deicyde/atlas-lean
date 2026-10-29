@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.CircuitValuePComplete.CVGate
 ---
 
-# CVGate
+# Encoded circuit gates
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`
-(see `CSLibExt/Computability/Complexity/Classes.lean`).
+**Encoded circuit gates.** An encoded gate of a flat Boolean circuit is a pair $(k, r)$ of a
+natural number $k$, the kind of the gate, and a list $r$ of natural numbers, its references.
+
+Such a pair is read as a gate by the shared (kind, references) decoding of flat circuit gates.
 
 ## Depends on
 

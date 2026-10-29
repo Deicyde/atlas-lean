@@ -6,11 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.CharFunTaylorBounds.norm_charFun_sub_one_sub_le
 ---
 
-# Norm char Fun sub one sub le
+# Second-order Taylor bound for the characteristic function
 
-Second-order Taylor bound for the characteristic function: for a
-square-integrable real random variable `X`,
-`‖φ_X(t) - 1 - it𝔼[X]‖ ≤ t² 𝔼[X²]`.
+**Second-order Taylor bound for the characteristic function.** Let $X$ be a measurable real
+random variable on a probability space with $X^2$ integrable, and let $\varphi_X$ be the
+characteristic function of the law of $X$. Then for every real $t$,
+$|\varphi_X(t) - 1 - it\,\mathbb{E}[X]| \le t^2 \, \mathbb{E}[X^2]$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm exp of Real mul I sub one sub le](norm-exp-of-real-mul-i-sub-one-sub-le.md)
+- [Global second-order bound for the imaginary exponential](norm-exp-of-real-mul-i-sub-one-sub-le.md)
 
 ## Sources
 

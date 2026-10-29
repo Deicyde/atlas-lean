@@ -18,7 +18,7 @@ machine with finitely many states computes $g$ within the same bounds in the sam
 ## Depends on
 
 - [Codes for multi-tape machines](../code/code.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 
 ## Proof depends on
 

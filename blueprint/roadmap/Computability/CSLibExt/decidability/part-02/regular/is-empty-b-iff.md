@@ -19,7 +19,7 @@ language accepted by $M$ is empty.
 ## Proof depends on
 
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 
 ## Sources
 

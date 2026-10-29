@@ -71,15 +71,21 @@ $v \in T_xM$. -/
 def riemannianGradient (f : M → ℝ) (x : M) : TangentSpace I x :=
   (InnerProductSpace.toDual ℝ (TangentSpace I x)).symm (mvfderiv I f x)
 
-/-- The metric inner product of the Riemannian gradient with `v` is the differential applied
-to `v`. -/
+/-- **Pairing of the Riemannian gradient with a tangent vector.** Let $M$ be a $C^1$ manifold
+modelled on a complete real normed space, with a Riemannian metric $\langle \cdot, \cdot \rangle$,
+and let $f : M \to \mathbb{R}$, $x \in M$ and $v \in T_xM$. Then
+$\langle \operatorname{grad} f(x), v \rangle = df_x(v)$, where $\operatorname{grad} f(x)$ is the
+Riemannian gradient of $f$ at $x$ and $df_x$ is the differential of $f$ at $x$. -/
 @[simp]
 theorem inner_riemannianGradient (f : M → ℝ) (x : M) (v : TangentSpace I x) :
     inner ℝ (riemannianGradient I f x) v = (mvfderiv I f x) v :=
   InnerProductSpace.toDual_symm_apply
 
-/-- Characterization of the Riemannian gradient: it equals `w` iff `w` pairs with every `v`
-as the differential does. -/
+/-- **Characterization of the Riemannian gradient.** Let $M$ be a $C^1$ manifold modelled on a
+complete real normed space, with a Riemannian metric $\langle \cdot, \cdot \rangle$, and let
+$f : M \to \mathbb{R}$, $x \in M$ and $w \in T_xM$. Then the Riemannian gradient
+$\operatorname{grad} f(x)$ equals $w$ if and only if $\langle w, v \rangle = df_x(v)$ for every
+$v \in T_xM$, where $df_x$ is the differential of $f$ at $x$. -/
 theorem riemannianGradient_eq_iff (f : M → ℝ) (x : M) (w : TangentSpace I x) :
     riemannianGradient I f x = w ↔ ∀ v, inner ℝ w v = (mvfderiv I f x) v := by
   constructor
@@ -100,8 +106,11 @@ theorem riemannianGradient_eq_iff (f : M → ℝ) (x : M) (w : TangentSpace I x)
       inner_self_eq_zero.mp h0
     exact sub_eq_zero.mp h_eq_zero
 
-/-- The norm of the Riemannian gradient is the operator norm of the differential. This is the
-quantity `|∇f|(x)`. -/
+/-- **Norm of the Riemannian gradient.** Let $M$ be a $C^1$ manifold modelled on a complete real
+normed space, with a Riemannian metric, and let $f : M \to \mathbb{R}$ and $x \in M$. With $T_xM$
+normed by the metric at $x$, the norm of the Riemannian gradient $\operatorname{grad} f(x)$ equals
+the operator norm of the differential $df_x : T_xM \to \mathbb{R}$ of $f$ at $x$:
+$\|\operatorname{grad} f(x)\| = \|df_x\|$. This is the quantity $|\nabla f|(x)$. -/
 theorem norm_riemannianGradient (f : M → ℝ) (x : M) :
     ‖riemannianGradient I f x‖ = ‖mvfderiv I f x‖ :=
   LinearIsometryEquiv.norm_map _ _

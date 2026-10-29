@@ -90,10 +90,10 @@ def encodeAction {State : Type*} (e : State → ℕ) (a : Action k Bool State) :
   out := a.output
   next := a.state.map e
 
-/-- **Decoding a coded action.** Let $Q$ be a type, $e : Q \to \mathbb{N}$ a map and $a$ an action
-of a binary machine with $k$ work tapes and states in $Q$. The action that the coded action of
-$a$, with its successor state numbered by $e$, stands for is $a$ with its successor state
-relabelled by $e$. -/
+/-- **Decoding the coding of an action.** Let $Q$ be a type, $e : Q \to \mathbb{N}$ a map and $a$
+an action of a binary machine with $k$ work tapes and states in $Q$. The action that the coded
+action of $a$, with its successor state numbered by $e$, stands for is $a$ with its successor
+state relabelled by $e$. -/
 theorem toAction_encodeAction {State : Type*} (e : State → ℕ) (a : Action k Bool State) :
     (encodeAction e a).toAction = relabelAction e a := by
   cases a

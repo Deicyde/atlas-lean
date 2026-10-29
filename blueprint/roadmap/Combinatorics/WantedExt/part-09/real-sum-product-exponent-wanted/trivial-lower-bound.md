@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RealSumProductExponentWanted.trivialLowerBound
 ---
 
-# Trivial lower bound for the real sum-product exponent
+# Statement of the trivial lower bound for the real sum-product exponent
 
-**Trivial lower bound for the real sum-product exponent.** The proposition that the real
-sum-product exponent is at least $1$, where the exponent is the limit inferior, as $n \to \infty$,
-of the minimum of $\log \max(|A+A|, |A \cdot A|) / \log n$ over all $n$-element sets
-$A \subset \mathbb{R}$.
+**Statement of the trivial lower bound for the real sum-product exponent.** For a finite set
+$A \subset \mathbb{R}$ write $A + A$ and $AA$ for the sets of all sums $a + b$ and all products
+$ab$ with $a, b \in A$. This is the proposition that the real sum-product exponent, the limit
+inferior, as $n \to \infty$, of the least value of $\log \max(|A + A|, |AA|) / \log n$ over sets
+$A \subset \mathbb{R}$ with $|A| = n$, is at least $1$.
 
 ## Depends on
 

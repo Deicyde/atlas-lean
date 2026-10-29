@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.QSATKComplete.qbfCircuitVars
 ---
 
-# Qbf Circuit Vars
+# Variables of a QBF matrix circuit
 
-Variables occurring in a matrix circuit.
+**Variables of a QBF matrix circuit.** For a matrix circuit $C$, a list of gates, the list of
+the variables $v$ of the gates of $C$ of the form $(0, [v])$, in the order of the gates of $C$ and
+with repetitions.
 
 ## Depends on
 
-- [QBFMatrix Gate](qbfmatrix-gate.md)
+- [Gates of a quantified Boolean formula matrix](qbfmatrix-gate.md)
 
 ## Sources
 

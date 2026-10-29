@@ -6,13 +6,14 @@ proof: formalized
 lean: ProbabilityTheory.IsBernoulliRV.le_one
 ---
 
-# Le one
+# Bernoulli parameters are at most one
 
-A Bernoulli parameter is at most one.
+**Bernoulli parameters are at most one.** If $X$ is a Bernoulli random variable with
+parameter $p$ under a measure $\mu$, then $p \le 1$.
 
 ## Depends on
 
-- [Is Bernoulli RV](is-bernoulli-rv.md)
+- [Bernoulli random variable](is-bernoulli-rv.md)
 
 ## Sources
 

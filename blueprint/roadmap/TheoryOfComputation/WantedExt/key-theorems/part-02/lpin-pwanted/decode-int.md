@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.decodeInt
 ---
 
-# Decode Int
+# Signed integer from a magnitude–sign pair
 
-Decode an `(magnitude, sign)` pair to an integer.
+**Signed integer from a magnitude–sign pair.** The integer decoded from a pair $(k, s)$ of a
+natural number $k$ and a boolean $s$ is $k$ if $s$ is true and $-k$ if $s$ is false.
 
 ## Depends on
 

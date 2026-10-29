@@ -144,8 +144,9 @@ structure Code (k : ℕ) where
 
 namespace Code
 
-/-- **Codes as tables.** The bijection between codes and finite lists of table entries, each a
-pair of a key and a coded action, that sends a code to its table. -/
+/-- **Multi-tape codes as tables.** The bijection between codes for machines with $k$ work tapes
+and finite lists of table entries, each a pair of a key and a coded action, that sends a code to
+its table. -/
 def equivTable : Code k ≃ List (CodeKey k × CodeAction k) where
   toFun := table
   invFun := mk
@@ -192,9 +193,10 @@ or, if there is none, the one that halts without moving, writing or emitting. -/
 def tr (c : Code k) (q : ℕ) (a : Option Bool) (w : Fin k → Option Bool) : Action k Bool ℕ :=
   (c.act q a w).toAction
 
-/-- **The machine of a code.** The machine of a code $c$ for $k$ work tapes is the machine of
-CSLib's multi-tape model with $k$ work tapes, the binary alphabet and states in $\mathbb{N}$
-whose initial state is $0$ and whose transition function is the transition function of $c$. -/
+/-- **The multi-tape machine of a code.** The machine of a code $c$ for $k$ work tapes is the
+machine of CSLib's multi-tape model with $k$ work tapes, the binary alphabet and states in
+$\mathbb{N}$ whose initial state is $0$ and whose transition function is the transition function
+of $c$. -/
 noncomputable def toTM (c : Code k) : MultiTapeTM k Bool ℕ := MultiTapeTM.ofTr 0 c.tr
 
 @[simp]
@@ -211,9 +213,9 @@ theorem step_toTM (c : Code k) {x : List Bool} (cfg : Cfg k Bool ℕ x) :
 
 /-! ### Finitely many states -/
 
-/-- **States of a code.** The states of a code $c$ form the finite set of natural numbers
-consisting of the initial state $0$ and the next state of every table entry of $c$ that does
-not halt. -/
+/-- **States of a multi-tape code.** The states of a code $c$ for machines with $k$ work tapes
+form the finite set of natural numbers consisting of the initial state $0$ and the next state of
+every table entry of $c$ that does not halt. -/
 def states (c : Code k) : Finset ℕ :=
   insert 0 (c.table.filterMap fun e ↦ e.2.next).toFinset
 
@@ -578,9 +580,10 @@ theorem isSome_evalSteps_iff_runsInTime (c : Code k) (x : List Bool) (T : ℕ) :
   simp only [evalSteps_eq_some_iff]
   exact ⟨fun ⟨_, h, _⟩ ↦ h, fun h ↦ ⟨_, h, rfl⟩⟩
 
-/-- **Monotonicity of the clocked evaluator.** For a code $c$, a binary input $x$, a binary
-word $o$ and clocks $T \le T'$ in $\mathbb{N}$, if the clocked evaluator of $c$ on $x$ returns $o$
-with clock $T$, then it also returns $o$ with clock $T'$. -/
+/-- **Monotonicity of the clocked evaluator for multi-tape codes.** For a code $c$ for machines
+with $k$ work tapes, a binary input $x$, a binary word $o$ and clocks $T \le T'$ in $\mathbb{N}$,
+if the clocked evaluator of $c$ on $x$ returns $o$ with clock $T$, then it also returns $o$ with
+clock $T'$. -/
 theorem evalSteps_mono (c : Code k) {x : List Bool} {T T' : ℕ} {o : List Bool}
     (h : c.evalSteps x T = some o) (hT : T ≤ T') : c.evalSteps x T' = some o := by
   rw [evalSteps_eq_some_iff] at h ⊢

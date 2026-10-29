@@ -22,7 +22,7 @@ $e_i$ is the evaluation $x \mapsto x_i$ at $i$.
 
 ## Proof depends on
 
-- [Formula for the $\ell^1$–$c_0$ pairing](c0-dual-pairing-apply.md)
+- [Formula for the $\ell^1$–$c_0$ duality pairing](c0-dual-pairing-apply.md)
 
 ## Sources
 

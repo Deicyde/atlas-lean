@@ -24,7 +24,7 @@ $P_x \setminus L$ realize the code-level restriction of $s$ by $L$.
 
 - [Boolean restriction test](allowed-b.md)
 - [Complementary labels](../parallel/complementary.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Relabelling](../static-operators/relabelling.md)
 - [Actions permitted by a restriction](../static-operators/allowed.md)
 - [Relabelling an action](../static-operators/relabel-action.md)

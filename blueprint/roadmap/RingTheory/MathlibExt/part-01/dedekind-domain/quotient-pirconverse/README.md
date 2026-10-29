@@ -4,8 +4,8 @@ navigation: module
 
 # Quotient PIRConverse
 
-- [Is Noetherian Ring of forall is Principal Ideal Ring quotient](is-noetherian-ring-of-forall-is-principa.md)
-- [Is Discrete Valuation Ring localization at Prime of forall is Principal Ideal Ring quotient](is-discrete-valuation-ring-localization.md)
-- [Is Dedekind Domain of forall is Principal Ideal Ring quotient](is-dedekind-domain-of-forall-is-principa.md)
-- [Is Principal Ideal Ring quotient of forall exists span pair](is-principal-ideal-ring-quotient-of-fora.md)
-- [Is Dedekind Domain of forall exists span pair](is-dedekind-domain-of-forall-exists-span.md)
+- [Domains with principal quotients are Noetherian](is-noetherian-ring-of-forall-is-principa.md)
+- [Principal quotients give discrete valuation rings at nonzero primes](is-discrete-valuation-ring-localization.md)
+- [Dedekind domains from principal quotients](is-dedekind-domain-of-forall-is-principa.md)
+- [Two generators with one prescribed give principal quotients](is-principal-ideal-ring-quotient-of-fora.md)
+- [Dedekind domains from two generators with one prescribed](is-dedekind-domain-of-forall-exists-span.md)

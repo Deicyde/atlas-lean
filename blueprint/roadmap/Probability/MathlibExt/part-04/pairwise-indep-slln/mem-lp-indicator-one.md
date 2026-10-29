@@ -6,9 +6,10 @@ proof: formalized
 lean: ProbabilityTheory.memLp_indicator_one
 ---
 
-# Mem Lp indicator one
+# Indicators are square-integrable
 
-The indicator function `1_s` of a measurable set is in `L²` for any probability measure.
+**Indicators are square-integrable.** If $\mu$ is a probability measure and $s$ is a
+measurable set, then the real-valued indicator function $1_s$ lies in $L^2(\mu)$.
 
 ## Depends on
 

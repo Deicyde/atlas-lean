@@ -441,7 +441,10 @@ theorem SingleTapeRecognizable.of_rePred {p : α → Prop} (hp : REPred p) :
   rw [haltsOn_recognizerTM_iff, ← encodeNat_inputCode, ← h, inputDecode_inputCode]
   simp
 
-/-- **Computable predicates are decidable by single-tape machines.** -/
+/-- **Computable predicates are decidable by single-tape machines.** Let $\alpha$ be a type with a
+primitive recursive encoding into $\mathbb{N}$, and let $p$ be a computable predicate on $\alpha$,
+that is, one whose indicator function $\alpha \to \{0, 1\}$ is computable. Then $p$ is decidable
+by a single-tape Turing machine. -/
 theorem SingleTapeDecidable.of_computablePred {p : α → Prop} (hp : ComputablePred p) :
     SingleTapeDecidable p := by
   classical

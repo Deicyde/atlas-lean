@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.optVal
 ---
 
-# Opt Val
+# Optimum of an NPO problem
 
-The optimum of an NPO problem `M` on instance `x`, over feasible solutions of
-length at most the bound (enumerated as a take-prefix of a full-length bitstring).
+**Optimum of an NPO problem.** The optimum of an NPO problem $M$, with value function $v$ and
+solution length bound $b$, on an instance $x$ is the maximum of $v(x, s)$ over all bitstrings $s$
+with $|s| \le b(|x|)$.
+
+Since every feasible solution has length at most $b(|x|)$, every instance has a feasible
+solution, and $v$ is nonnegative and equals $0$ on infeasible solutions, this is the maximum of
+$v(x, s)$ over the feasible solutions $s$ for $x$.
 
 ## Depends on
 
-- [NPOProblem](npoproblem.md)
+- [NPO problems](npoproblem.md)
 
 ## Sources
 

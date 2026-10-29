@@ -4,11 +4,11 @@ navigation: module
 
 # Markov Mixing
 
-- [Torus](torus.md)
-- [Step Up](step-up.md)
-- [Sgn](sgn.md)
-- [Tv Dist](tv-dist.md)
-- [Tv Row](tv-row.md)
-- [Is Mixed At](is-mixed-at.md)
-- [Mono Edges](mono-edges.md)
-- [Has Cutoff](has-cutoff.md)
+- [Discrete torus](torus.md)
+- [Coordinate step on the discrete torus](step-up.md)
+- [Sign of a Boolean spin](sgn.md)
+- [Total variation distance of functions on a finite set](tv-dist.md)
+- [Total variation distance of a matrix row from a function](tv-row.md)
+- [Being $1/4$-mixed at a given time](is-mixed-at.md)
+- [Number of monochromatic edges](mono-edges.md)
+- [Cutoff for a family of distance profiles](has-cutoff.md)

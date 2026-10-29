@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.odometerDigitPartialSum
 ---
 
-# Odometer Digit Partial Sum
+# Odometer partial sums
 
-The odometer partial sums `S_{q,ω}(n) = ∑_{j<n} s_q(T^j ω)`, with
-`s_q(ω) = ∑_{i ≥ 0} ω_i q^{i+1}`, extended to real `x ≥ 0` by linear interpolation:
-`S_{q,ω}(x) = S_{q,ω}(⌊x⌋) + {x} s_q(T^{⌊x⌋} ω)`.
+**Odometer partial sums.** Let $q \in \mathbb{C}$, let $\omega = (\omega_0, \omega_1, \dots)$ be
+a dyadic integer written as its binary digit sequence, let $T$ be the dyadic odometer
+$T\omega = \omega + 1$, and let $s_q(\omega) = \sum_{i \ge 0} \omega_i q^{i+1}$, taken to be $0$
+when the series is not absolutely summable. For real $x$ the odometer partial sum is
+
+$$S_{q,\omega}(x) = \sum_{j < \lfloor x \rfloor_+} s_q(T^j \omega) +
+\{x\} \, s_q(T^{\lfloor x \rfloor_+} \omega),$$
+
+where $\lfloor x \rfloor_+ = \max(\lfloor x \rfloor, 0)$ and $\{x\} = x - \lfloor x \rfloor$. So
+$S_{q,\omega}(n) = \sum_{j < n} s_q(T^j \omega)$ for every natural number $n$, and for $x \ge 0$
+the function $S_{q,\omega}$ interpolates these values linearly between consecutive integers.
 
 ## Depends on
 
@@ -17,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dyadic Odometer](dyadic-odometer.md)
+- [Dyadic odometer](dyadic-odometer.md)
 
 ## Sources
 

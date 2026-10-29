@@ -17,7 +17,7 @@ Since the search stops once a round changes nothing, a generous bound costs noth
 
 ## Depends on
 
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 - [Early-stopping DFA reachability search](reachable-within.md)
 
 ## Proof depends on

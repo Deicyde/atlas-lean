@@ -10,7 +10,7 @@ navigation: module
 
 ## Stlc
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 
 ## Env
 

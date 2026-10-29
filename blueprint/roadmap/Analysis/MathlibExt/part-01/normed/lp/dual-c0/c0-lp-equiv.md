@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.Normed.Lp.DualC0.c0LpEquiv
 ---
 
-# $c_0$ as a subspace of $\ell^\infty$
+# $c_0$ is isometrically isomorphic to the null sequences in $\ell^\infty$
 
-**$c_0$ as a subspace of $\ell^\infty$.** Let $\mathbb{K}$ be the real or complex field and
-$\iota$ an index type. The map that sends $x \in c_0(\iota, \mathbb{K})$ to the same sequence
-$(x_i)_{i \in \iota}$, viewed in the subspace of $\ell^\infty(\iota, \mathbb{K})$ of sequences
-tending to $0$ along the cofinite filter, is a linear isometric equivalence onto that subspace.
+**$c_0$ is isometrically isomorphic to the null sequences in $\ell^\infty$.** Let $\mathbb{K}$
+be the real or complex field and $\iota$ an index type. The map that sends
+$x \in c_0(\iota, \mathbb{K})$ to the same sequence $(x_i)_{i \in \iota}$, viewed in the subspace
+of $\ell^\infty(\iota, \mathbb{K})$ of sequences tending to $0$ along the cofinite filter, is a
+linear isometric equivalence onto that subspace.
 
 ## Depends on
 
 - [The sequence space $c_0$](c0.md)
-- [$c_0$ as a subspace of $\ell^\infty$](c0-submodule.md)
+- [The subspace of null sequences in $\ell^\infty$](c0-submodule.md)
 
 ## Proof depends on
 

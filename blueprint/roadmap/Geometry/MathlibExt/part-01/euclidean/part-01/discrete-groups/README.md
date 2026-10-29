@@ -8,7 +8,7 @@ navigation: module
 - [Isometry group of the Euclidean plane](m.md)
 - [Linear part of a plane isometry](linear-part.md)
 - [Point group of a group of plane isometries](point-group-set.md)
-- [Translation Lattice](translation-lattice.md)
+- [Translation lattice](translation-lattice.md)
 - [Translation homomorphism](translation-hom.md)
 - [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 - [Membership in the translation lattice subgroup](mem-translation-lattice-subgroup.md)

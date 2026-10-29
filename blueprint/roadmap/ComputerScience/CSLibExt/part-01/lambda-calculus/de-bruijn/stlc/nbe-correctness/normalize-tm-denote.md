@@ -14,7 +14,7 @@ form of $t$ has the same denotation in $\eta$ as $t$.
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Simple types](../syntax/ty.md)

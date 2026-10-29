@@ -14,7 +14,7 @@ and $t'$ have the same denotation in every environment $\eta$ for their context.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Denotation of an STLC term](denote-2.md)

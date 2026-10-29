@@ -39,7 +39,7 @@ navigation: module
 ## The many-one reduction
 
 - [The total reduction of reachability with nonempty sides to MPCP](reduce.md)
-- [Reachability many-one reduces to MPCP](many-one-reducible-sr-mpcp.md)
+- [Reachability with nonempty sides many-one reduces to MPCP with nonempty words](many-one-reducible-sr-mpcp.md)
 - [Reachability for rules with nonempty sides many-one reduces to PCP](many-one-reducible-sr-pcp.md)
 
 ## Thue systems

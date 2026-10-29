@@ -6,8 +6,8 @@ navigation: module
 
 ## Probability Theory
 
-- [Continuous mapping theorem](continuous-mapping.md)
+- [Continuous mapping theorem, integral form](continuous-mapping.md)
 
 ## Measure Theory
 
-- [Continuous mapping theorem](tendsto-map-of-tendsto-of-ae-continuous.md)
+- [Continuous mapping theorem for weak convergence of probability measures](tendsto-map-of-tendsto-of-ae-continuous.md)

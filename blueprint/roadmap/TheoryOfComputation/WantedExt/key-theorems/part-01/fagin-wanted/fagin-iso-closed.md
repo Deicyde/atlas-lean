@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginIsoClosed
 ---
 
-# Fagin Iso Closed
+# Isomorphism-closed graph classes
 
-A class of graphs is isomorphism-closed if it contains all isomorphic copies of its
-members.
+**Isomorphism-closed graph classes.** A class $K$ of graphs is isomorphism-closed if for every
+$G_1 \in K$, every graph $G_2$ isomorphic to $G_1$ also belongs to $K$.
 
 ## Depends on
 
-- [Fagin Graph](fagin-graph.md)
+- [Finite graphs as edge tables](fagin-graph.md)
 
 ## Proof depends on
 
-- [Fagin Iso](fagin-iso.md)
+- [Isomorphic graphs](fagin-iso.md)
 
 ## Sources
 

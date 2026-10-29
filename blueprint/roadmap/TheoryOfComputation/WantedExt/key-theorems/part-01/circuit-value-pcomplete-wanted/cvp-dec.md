@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.CircuitValuePComplete.cvpDec
 ---
 
-# Cvp Dec
+# The Circuit Value Problem
 
-The Circuit Value Problem as a decision problem over bitstrings,
-decoding to `(input count, gates, assignment)`.
+**The Circuit Value Problem.** The Circuit Value Problem is the decision problem that accepts
+a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of such triples,
+to a triple $(n, C, a)$ of a natural number $n$, a list $C$ of encoded gates and a list $a$ of
+booleans such that the flat Boolean circuit on $n$ inputs obtained by decoding the gates of $C$
+is well formed, $a$ has length $n$, and the evaluation of $C$ on $a$ is a nonempty list whose
+last entry is true. It rejects every bitstring that does not decode.
 
 ## Depends on
 
@@ -24,9 +28,9 @@ decoding to `(input count, gates, assignment)`.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [CVGate](cvgate.md)
-- [CVWell Formed](cvwell-formed.md)
-- [Cv Circuit Eval](cv-circuit-eval.md)
+- [Encoded circuit gates](cvgate.md)
+- [Well-formed encoded circuits](cvwell-formed.md)
+- [Evaluation of an encoded Boolean circuit](cv-circuit-eval.md)
 
 ## Sources
 

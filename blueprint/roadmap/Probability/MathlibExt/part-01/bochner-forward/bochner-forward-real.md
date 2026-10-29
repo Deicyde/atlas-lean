@@ -6,21 +6,25 @@ proof: formalized
 lean: ProbabilityTheory.bochner_forward_real
 ---
 
-# Bochner forward real
+# Real-valued characteristic functions are continuous and positive definite
 
-Every real-valued characteristic function is continuous, positive definite,
-and takes the value `1` at `0`.
+**Real-valued characteristic functions are continuous and positive definite.** Let
+$\varphi : \mathbb{R} \to \mathbb{R}$ be a real-valued characteristic function, that is, a
+function whose composition with the inclusion $\mathbb{R} \to \mathbb{C}$ is the
+characteristic function of a probability measure on $\mathbb{R}$. Then $\varphi$ is
+continuous, $\varphi$ is positive definite in the sense that its composition with the
+inclusion $\mathbb{R} \to \mathbb{C}$ is positive definite, and $\varphi(0) = 1$.
 
 ## Depends on
 
-- [Is Characteristic Fun Real](is-characteristic-fun-real.md)
-- [Is Positive Definite Real](is-positive-definite-real.md)
+- [Real-valued characteristic functions](is-characteristic-fun-real.md)
+- [Positive definite real-valued functions](is-positive-definite-real.md)
 
 ## Proof depends on
 
-- [Is Characteristic Fun](is-characteristic-fun.md)
-- [Is Positive Definite](is-positive-definite.md)
-- [Bochner forward](bochner-forward.md)
+- [Characteristic functions](is-characteristic-fun.md)
+- [Positive definite functions](is-positive-definite.md)
+- [Forward direction of Bochner's theorem](bochner-forward.md)
 
 ## Sources
 

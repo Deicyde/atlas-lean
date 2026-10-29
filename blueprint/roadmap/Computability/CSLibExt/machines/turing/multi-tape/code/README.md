@@ -13,19 +13,19 @@ navigation: module
 - [Halting action](halt.md)
 - [Keys of a code's table](code-key.md)
 - [Codes for multi-tape machines](code.md)
-- [Codes as tables](equiv-table.md)
+- [Multi-tape codes as tables](equiv-table.md)
 - [Numeric coding of codes](encode.md)
 - [Decoding numbers to codes](decode.md)
 - [Code round-trip](decode-encode.md)
 - [Injectivity of the numeric coding of codes](encode-injective.md)
 - [Action of a code at a key](act.md)
 - [Transition function of a code](tr.md)
-- [The machine of a code](to-tm.md)
+- [The multi-tape machine of a code](to-tm.md)
 - [Step of the machine of a code](step-to-tm.md)
 
 ## Finitely many states
 
-- [States of a code](states.md)
+- [States of a multi-tape code](states.md)
 - [Next states of a code lie in its state set](next-act-mem-states.md)
 - [Codes denote finite-state machines](state-run-from-mem-states.md)
 
@@ -52,7 +52,7 @@ navigation: module
 - [The evaluator tracks the machine run](represents-iterate.md)
 - [Evaluator agreement](eval-steps-eq-some-iff.md)
 - [The evaluator returns within the clock exactly when the machine runs in time](is-some-eval-steps-iff-runs-in-time.md)
-- [Monotonicity of the clocked evaluator](eval-steps-mono.md)
+- [Monotonicity of the clocked evaluator for multi-tape codes](eval-steps-mono.md)
 - [A code computes exactly what its clocked evaluator returns](computes-iff-exists-eval-steps.md)
 
 ## Primitive recursiveness

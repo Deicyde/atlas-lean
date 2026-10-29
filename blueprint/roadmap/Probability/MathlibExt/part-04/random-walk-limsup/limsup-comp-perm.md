@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.limsup_comp_perm
 ---
 
-# Limsup comp perm
+# Finite permutations do not change the limsup of the partial sums
 
-The `limsup` of the partial sums is invariant under finitely supported
-coordinate permutations.
+**Finite permutations do not change the limsup of the partial sums.** Let $\sigma$ be a
+permutation of $\mathbb{N}$ that moves only finitely many points. For every real sequence
+$\omega = (\omega_0, \omega_1, \dots)$, the limit superior in $[-\infty, +\infty]$ of the partial
+sums $\sum_{i\lt n} \omega_{\sigma(i)}$ equals the limit superior of the partial sums
+$\sum_{i\lt n} \omega_i$.
 
 ## Depends on
 
-- [Coord Seq](coord-seq.md)
-- [Random Walk Limsup](random-walk-limsup.md)
+- [Coordinate process on sequence space](coord-seq.md)
+- [Limsup of a random walk](random-walk-limsup.md)
 
 ## Proof depends on
 
-- [Partial Sum comp perm eq](partial-sum-comp-perm-eq.md)
-- [Random Walk Partial Sum](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
+- [Partial sums are unchanged by permuting the first coordinates](partial-sum-comp-perm-eq.md)
+- [Partial sums of a random walk](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
 
 ## Sources
 

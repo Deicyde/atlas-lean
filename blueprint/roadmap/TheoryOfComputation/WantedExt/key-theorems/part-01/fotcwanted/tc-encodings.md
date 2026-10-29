@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FOTC.tcEncodings
 ---
 
-# Tc Encodings
+# Encodings of a class of ordered graphs
 
-The encodings of a class of ordered graphs, as a decision problem.
+**Encodings of a class of ordered graphs.** For a set $K$ of ordered graphs, this is the
+decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding of pairs of a natural number and a list of booleans, to some ordered graph
+$(n, T) \in K$ whose edge table $T$ has length exactly $n^2$.
 
 ## Depends on
 
-- [TCOrdered Graph](tcordered-graph.md)
+- [Ordered graphs for first-order logic with transitive closure](tcordered-graph.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on

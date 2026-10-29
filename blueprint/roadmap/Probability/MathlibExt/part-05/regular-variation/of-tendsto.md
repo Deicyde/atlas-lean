@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsSlowlyVarying.of_tendsto
 ---
 
-# Of tendsto
+# Functions with a positive limit are slowly varying
 
-A positive function with a positive finite limit at infinity is slowly
-varying: the ratio of the function at `c * x` and at `x` tends to `a / a = 1`.
+**Functions with a positive limit are slowly varying.** Let $L : \mathbb{R} \to \mathbb{R}$ and
+$a > 0$. If $L(x) > 0$ for all sufficiently large $x$ and $L(x) \to a$ as $x \to \infty$, then
+$L$ is slowly varying.
+
+Indeed, for every $c > 0$ the ratio $L(cx) / L(x)$ tends to $a / a = 1$.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

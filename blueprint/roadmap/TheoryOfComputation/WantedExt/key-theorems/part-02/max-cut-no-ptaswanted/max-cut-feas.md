@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutFeas
 ---
 
-# Max Cut Feas
+# Feasible MAX-CUT solutions
 
-Feasibility for MAX-CUT: the solution has one bit per vertex.
+**Feasible MAX-CUT solutions.** A bitstring $s$ is a feasible solution of a MAX-CUT instance
+$x$ exactly when the length of $s$ equals the vertex count $\lfloor \sqrt{|x|} \rfloor$ of $x$,
+so that $s$ has one bit per vertex.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Max Cut N](max-cut-n.md)
+- [Vertex count of a MAX-CUT instance](max-cut-n.md)
 
 ## Sources
 

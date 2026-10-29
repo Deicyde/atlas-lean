@@ -4,5 +4,5 @@ navigation: module
 
 # Jerrum Sinclair Vigoda
 
-- [Perm Of](perm-of.md)
+- [Permanent of an encoded 0-1 matrix](perm-of.md)
 - [Jerrum-Sinclair-Vigoda: FPRAS for the permanent](jerrum-sinclair-vigoda-permanent.md)

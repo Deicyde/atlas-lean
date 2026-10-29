@@ -11,7 +11,7 @@ navigation: module
 
 ## Process
 
-- [Step](step.md)
+- [Transitions of recursive CCS](step.md)
 - [Labelled transition system of a recursive specification](lts.md)
 - [Guardedness under a prefix flag](guarded-under.md)
 - [Guarded process](guarded.md)

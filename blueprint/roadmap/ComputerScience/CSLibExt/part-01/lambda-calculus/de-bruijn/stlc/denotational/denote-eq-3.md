@@ -14,7 +14,7 @@ have the same denotation in every environment $\eta$ for their context.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Big-step call-by-value evaluation in the simply typed lambda calculus](../big-step/eval.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Denotation of an STLC term](denote-2.md)

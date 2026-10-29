@@ -4,6 +4,6 @@ navigation: module
 
 # Geography PSPACEComplete
 
-- [Geo Wins](geo-wins.md)
-- [Geography Dec](geography-dec.md)
+- [Winning positions in Geography](geo-wins.md)
+- [Geography as a decision problem](geography-dec.md)
 - [Geography is PSPACE-complete](geography-pspace-complete.md)

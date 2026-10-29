@@ -14,7 +14,7 @@ navigation: module
 
 ## Stlc
 
-- [Semantic environments](sem-env.md)
+- [Semantic environments for normalization by evaluation](sem-env.md)
 
 ## Sem Env
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.TightnessFamily.IsTightFamilyReal
 ---
 
-# Is Tight Family Real
+# Tightness on the real line
 
-A family of probability measures on `ℝ` is **tight** if for every `ε > 0`
-there exists `M` such that `μ i [-M, M] ≥ 1 - ε` for every index `i`.
+**Tightness on the real line.** A family $(\mu_i)_{i \in \iota}$ of probability measures on
+$\mathbb{R}$ is tight in the real-line sense if for every $\varepsilon \in (0, \infty]$ there is
+$M \in \mathbb{R}$ such that $\mu_i([-M, M]) \ge 1 - \varepsilon$ for every index $i$.
 
 ## Depends on
 

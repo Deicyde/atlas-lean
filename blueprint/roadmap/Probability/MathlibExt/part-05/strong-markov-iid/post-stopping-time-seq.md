@@ -5,11 +5,13 @@ statement: formalized
 lean: ProbabilityTheory.postStoppingTimeSeq
 ---
 
-# Post Stopping Time Seq
+# Post-stopping-time sequence
 
-The **post-stopping-time sequence** `(X_{T+k+1})_{k ≥ 0}` obtained from a sequence
-`X : ℕ → Ω → S` by shifting the index by `T(ω) + 1`. This is the sequence of observations
-immediately after the stopping time `T`.
+**Post-stopping-time sequence.** Given maps $X_0, X_1, X_2, \dots$ from a set $\Omega$ to a set
+$S$ and a map $T : \Omega \to \mathbb{N}$, the post-stopping-time sequence is the sequence
+$(Y_k)_{k \in \mathbb{N}}$ of maps from $\Omega$ to $S$ given by
+$Y_k(\omega) = X_{T(\omega)+k+1}(\omega)$. When $T$ is a stopping time, this is the sequence of
+observations immediately after time $T$.
 
 ## Depends on
 

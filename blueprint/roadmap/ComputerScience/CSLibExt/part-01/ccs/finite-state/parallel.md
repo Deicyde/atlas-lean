@@ -25,7 +25,7 @@ and $t$.
 
 - [Complementary labels](../parallel/complementary.md)
 - [Synchronization of CCS labels](../parallel/synchronize.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Relabelling](../static-operators/relabelling.md)
 - [Actions permitted by a restriction](../static-operators/allowed.md)
 - [Relabelling an action](../static-operators/relabel-action.md)

@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.exists_ae_eq_const_of_forall_le_zero_or_one
 ---
 
-# Exists ae eq const of forall le zero or one
+# Zero–one sublevel sets force an almost surely constant variable
 
-If every real level set of an `EReal`-valued random variable has
-probability `0` or `1`, then the variable is almost surely constant.
+**Zero–one sublevel sets force an almost surely constant variable.** Let $\mu$ be a
+probability measure on $\Omega$ and let $F : \Omega \to [-\infty, +\infty]$ be measurable. If
+for every real $a$ the set $\{\omega : F(\omega) \le a\}$ has $\mu$-measure $0$ or $1$, then
+there is $c \in [-\infty, +\infty]$ with $F = c$ $\mu$-almost everywhere.
 
 ## Depends on
 

@@ -27,7 +27,7 @@ evaluation is one of its prefixes.
 
 - [Small-step call-by-value reduction in STLC](../semantics/step.md)
 - [Small-step call-by-value reduction in STLC is deterministic](../semantics/deterministic.md)
-- [Value irreducible](../semantics/value-irreducible.md)
+- [Values are irreducible](../semantics/value-irreducible.md)
 
 ## Sources
 

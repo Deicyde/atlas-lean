@@ -6,11 +6,15 @@ proof: formalized
 lean: Algebra.traceForm_apply_eq_zero_of_isNilpotent
 ---
 
-# Trace Form apply eq zero of is Nilpotent
+# Nilpotent elements pair to zero under the trace form
 
-A nilpotent element pairs to zero against everything under the trace
-form: multiplication by a nilpotent is a nilpotent endomorphism, whose trace
-vanishes.
+**Nilpotent elements pair to zero under the trace form.** Let $R$ be a commutative algebra
+over a field $K$, and for $z \in R$ write $\operatorname{Tr}_{R/K}(z)$ for the trace of the
+$K$-linear map given by multiplication by $z$, taken to be $0$ when $R$ is infinite-dimensional
+over $K$. If $x, y \in R$ and $x$ is nilpotent, then the trace form of $R$ over $K$ vanishes at
+$(x, y)$, that is, $\operatorname{Tr}_{R/K}(xy) = 0$.
+
+Multiplication by a nilpotent element is a nilpotent endomorphism, whose trace vanishes.
 
 ## Depends on
 

@@ -15,7 +15,7 @@ character is `1`.
 
 ## Depends on
 
-- [Class Inner Product](class-inner-product.md)
+- [Class inner product](class-inner-product.md)
 
 ## Sources
 

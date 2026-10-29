@@ -6,17 +6,30 @@ proof: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.satisfiesLDP_of_borel_bounds
 ---
 
-# Satisfies LDP of borel bounds
+# Large deviation principle from bounds on measurable sets
 
-Conversely, bounds for measurable sets imply the open/closed form.
-Open and closed sets are measurable by `OpensMeasurableSpace X`, and their
-interior/closure equals the set itself. On a Borel space this is the
-textbook Borel-set converse.
+**Large deviation principle from bounds on measurable sets.** Let $X$ be a topological space
+with a $\sigma$-algebra containing every open set, let $(\mu_n)_{n \in \mathbb{N}}$ be a sequence
+of measures on $X$, and let $I$ be a rate function on $X$. Suppose that every measurable set
+$\Gamma \subseteq X$, with interior $\Gamma^\circ$ and closure $\overline{\Gamma}$, satisfies
+
+$$\liminf_{n \to \infty} \frac{1}{n} \log \mu_n(\Gamma) \ge -\inf_{x \in \Gamma^\circ} I(x)$$
+
+and
+
+$$\limsup_{n \to \infty} \frac{1}{n} \log \mu_n(\Gamma) \le -\inf_{x \in \overline{\Gamma}} I(x),$$
+
+where $\log 0 = -\infty$, an infimum over the empty set is $\infty$, and the limits are taken in
+the extended reals. Then $(\mu_n)$ satisfies the large deviation principle with rate function $I$.
+
+Open and closed sets are measurable and equal to their interior and closure respectively, so the
+hypothesis contains the open-set and closed-set bounds. On a Borel space this is the textbook
+Borel-set converse.
 
 ## Depends on
 
-- [Is Rate Function](is-rate-function.md)
-- [Satisfies LDP](satisfies-ldp.md)
+- [Rate function](is-rate-function.md)
+- [Large deviation principle for a sequence of measures](satisfies-ldp.md)
 
 ## Sources
 

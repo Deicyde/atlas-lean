@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max3SATVal
 ---
 
-# Max3 SATVal
+# The MAX-3SAT objective
 
-The value of MAX-3SAT on instance `x` under assignment `a`: the number of
-satisfied clauses (`0` on malformed inputs, and `0` unless `a.length ≤ x.length`).
-The bound is the full input length, not the unary variable count `n`: assignments
-shorter than `n` and assignments much longer than `n` are both accepted, as long
-as they fit in `|x|` bits. The value depends only on the first `n` bits of `a`
-(the clause literals index variables `< n` and are evaluated with `getD`), so
-padding a solution with trailing bits does not change its value; this matches
-`feas_canonical`, under which every `a` with `a.length ≤ bound.eval |x|` (here
-`bound = X`) is feasible.
+**The MAX-3SAT objective.** The value of MAX-3SAT on an instance $x$ under an assignment $a$,
+both bitstrings, is defined as follows. Suppose $x$ decodes, under the canonical bitstring
+encoding, to a pair $(u, \varphi)$ of a bitstring $u$ and a CNF formula $\varphi$, and suppose
+moreover that $|a| \le |x|$, that every literal of $\varphi$ has variable index less than $|u|$
+and that every clause of $\varphi$ has at most $3$ literals. Then the value is the number of
+clauses of $\varphi$, counted with multiplicity, that contain a literal $(v, b)$ with $a_v = b$,
+where $a_v$ is the bit of $a$ at position $v$ (counting from $0$), read as false when
+$v \ge |a|$. In every other case the value is $0$.
+
+The length of $u$ is the number of variables, so the value reads only $a_v$ for $v < |u|$:
+padding an assignment with trailing false bits, or padding an assignment of length at least
+$|u|$ with arbitrary trailing bits, does not change its value as long as its length stays at
+most $|x|$.
 
 ## Depends on
 

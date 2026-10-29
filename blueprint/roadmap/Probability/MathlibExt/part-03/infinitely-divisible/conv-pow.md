@@ -5,13 +5,15 @@ statement: formalized
 lean: MeasureTheory.Measure.convPow
 ---
 
-# Conv Pow
+# Convolution power of a measure
 
-The `n`-fold convolution power of a measure `ν` on an additive commutative
-measurable monoid. Defined recursively: `convPow ν 0 = δ_0` (Dirac at the additive
-identity) and `convPow ν (n+1) = convPow ν n ∗ ν`. When addition is jointly
-measurable and `ν` is the law of `Y`, `convPow ν n` is the law of the sum of
-`n` i.i.d. copies of `Y`.
+**Convolution power of a measure.** Let $M$ be an additive commutative monoid with a
+σ-algebra and let $\nu$ be a measure on $M$. The $n$-th convolution power $\nu^{*n}$ of $\nu$ is
+defined by recursion on $n$: $\nu^{*0} = \delta_0$, the Dirac measure at the identity $0$ of
+$M$, and $\nu^{*(n+1)} = \nu^{*n} * \nu$, where $*$ denotes convolution of measures.
+
+When addition on $M$ is jointly measurable and $\nu$ is the law of a random variable $Y$,
+$\nu^{*n}$ is the law of the sum of $n$ independent copies of $Y$.
 
 ## Depends on
 

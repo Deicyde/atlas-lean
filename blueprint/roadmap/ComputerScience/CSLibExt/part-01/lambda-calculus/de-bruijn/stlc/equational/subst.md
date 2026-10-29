@@ -24,7 +24,7 @@ $I$.
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Denotation of an STLC substitution](../denotational/denote-sub.md)
 - [Substitution lemma for STLC denotation](../denotational/denote-subst.md)

@@ -62,9 +62,10 @@ def denote (I : Base → Type v) : Ty Base → Type v
 
 end Ty
 
-/-- **Semantic environments.** Given an interpretation $I$ assigning a type to each base type and
-a typing context $\Gamma$ (a list of simple types), an environment for $\Gamma$ assigns to every
-variable $x$ of $\Gamma$, of any simple type $A$, an element of the denotation $[\![A]\!]_I$. -/
+/-- **Semantic environments for the denotational semantics of STLC.** Given an interpretation $I$
+assigning a type to each base type and a typing context $\Gamma$ (a list of simple types), an
+environment for $\Gamma$ assigns to every variable $x$ of $\Gamma$, of any simple type $A$, an
+element of the denotation $[\![A]\!]_I$. -/
 abbrev Env (I : Base → Type v) (Γ : List (Ty Base)) :=
   ∀ {A}, Var Γ A → Ty.denote I A
 

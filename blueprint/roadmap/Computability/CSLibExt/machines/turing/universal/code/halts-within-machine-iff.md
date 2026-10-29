@@ -18,7 +18,7 @@ on $x$, reaches after some $j \le T$ steps a configuration that has no successor
 - [Codes for single-tape machines](code.md)
 - [Explicit configurations](cfg.md)
 - [Initial configuration of the code simulation](init.md)
-- [The machine of a code](machine.md)
+- [The machine of a single-tape code](machine.md)
 - [One step of a code](step.md)
 - [Bounded halting of a single-tape machine](halts-within.md)
 - [Input word of a list of bits](input.md)

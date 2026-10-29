@@ -330,9 +330,9 @@ theorem comp_output_eq (S₁ : SequentialTransducer State₁ In Mid)
   rw [comp_runState_initOut, comp_runOut_initOut]
   simp only [List.append_assoc]
 
-/-- **Composition of sequential transducers.** Let $S_1$ be a sequential transducer from an
-alphabet $A$ to an alphabet $B$, and $S_2$ one from $B$ to an alphabet $C$. For every word $x$
-over $A$ and every word $y$ over $C$, the composition of $S_1$ and $S_2$ translates $x$ to $y$
+/-- **Translations of a composite sequential transducer.** Let $S_1$ be a sequential transducer
+from an alphabet $A$ to an alphabet $B$, and $S_2$ one from $B$ to an alphabet $C$. For every word
+$x$ over $A$ and every word $y$ over $C$, the composition of $S_1$ and $S_2$ translates $x$ to $y$
 if and only if there is a word $z$ over $B$ such that $S_1$ translates $x$ to $z$ and $S_2$
 translates $z$ to $y$. -/
 theorem translates_comp_iff (S₁ : SequentialTransducer State₁ In Mid)
@@ -365,8 +365,10 @@ theorem translates_comp_iff (S₁ : SequentialTransducer State₁ In Mid)
       exact ⟨hacc₁, hacc₂⟩
     · exact (comp_output_eq S₁ S₂ xs).trans hout₂
 
-/-- The preimage of a language under a sequential transducer: the inputs whose
-(output) translation lands in the language. -/
+/-- **Preimage of a language under a sequential transducer.** Let $S$ be a sequential transducer
+with input alphabet $\Sigma$ and output alphabet $\Gamma$, and let $L$ be a language over
+$\Gamma$. The preimage of $L$ under $S$ is the language over $\Sigma$ consisting of the words $x$
+for which there is a word $y \in L$ such that $S$ translates $x$ to $y$. -/
 def preimage (S : SequentialTransducer State In Out) (L : Language Out) : Language In :=
   {xs | ∃ ys ∈ L, S.Translates xs ys}
 

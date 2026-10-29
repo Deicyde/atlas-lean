@@ -6,13 +6,15 @@ proof: formalized
 lean: Set.HasHausdorffCodimAtLeast.eq_empty_of_lt
 ---
 
-# Eq empty of lt
+# Sets of codimension larger than the dimension are empty
 
-If `n < c`, only the empty set has the codimension.
+**Sets of codimension larger than the dimension are empty.** Let $S$ be a subset of an
+extended metric space and let $n < c$ be natural numbers. If $S$ has Hausdorff codimension at
+least $c$ in dimension $n$, then $S$ is empty.
 
 ## Depends on
 
-- [Has Hausdorff Codim At Least](has-hausdorff-codim-at-least.md)
+- [Lower bound on Hausdorff codimension](has-hausdorff-codim-at-least.md)
 
 ## Sources
 

@@ -109,7 +109,10 @@ theorem diagonalOperator_eq_tsum {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} 
   exact (b.hasSum_repr_symm
     ⟨fun i => a i * ⟪b i, x⟫_𝕜, memℓp_diagonal_coeff hC x⟩).tsum_eq.symm
 
-/-- A diagonal operator acts on basis vectors by scalar multiplication. -/
+/-- **Action of a diagonal operator on the basis.** Let $(b_i)_{i \in \iota}$ be a Hilbert
+basis of an inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), let
+$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$, and let $D$ be the diagonal
+operator with coefficients $a$. Then $D b_j = a_j b_j$ for every $j \in \iota$. -/
 theorem diagonalOperator_apply_basis {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (j : ι) :
     diagonalOperator b a hC (b j) = a j • b j := by
@@ -121,7 +124,12 @@ theorem diagonalOperator_apply_basis {b : HilbertBasis ι 𝕜 H} {a : ι → �
   · intro i hi
     rw [b.orthonormal.inner_eq_zero hi, mul_zero, zero_smul]
 
-/-- A bounded diagonal operator squared is the diagonal operator with squared coefficients. -/
+/-- **Square of a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an
+inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), and let
+$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$. Let $D_a$ be the diagonal
+operator with coefficients $a$, and let $D_{a^2}$ be the diagonal operator with coefficients
+$a_i^2$, which satisfy $|a_i^2| \le C^2$. Then $D_a(D_a x) = D_{a^2} x$ for every
+$x \in H$. -/
 theorem diagonalOperator_sq {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) :
     diagonalOperator b a hC (diagonalOperator b a hC x) =

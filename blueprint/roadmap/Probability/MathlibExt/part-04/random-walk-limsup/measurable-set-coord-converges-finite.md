@@ -6,15 +6,17 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.measurableSet_coord_convergesFinite
 ---
 
-# Measurable Set coord converges Finite
+# The convergence event on sequence space is measurable
 
-The event that the coordinate random walk converges to a finite limit is
-measurable.
+**The convergence event on sequence space is measurable.** Equip $\mathbb{R}^{\mathbb{N}}$
+with its product σ-algebra and write $S_n(\omega) = \sum_{i < n} \omega_i$. The set of
+$\omega \in \mathbb{R}^{\mathbb{N}}$ for which $S_n(\omega)$ converges to a finite real limit as
+$n \to \infty$ is measurable.
 
 ## Depends on
 
-- [Coord Seq](coord-seq.md)
-- [Random Walk Partial Sum](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
+- [Coordinate process on sequence space](coord-seq.md)
+- [Partial sums of a random walk](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
 
 ## Sources
 

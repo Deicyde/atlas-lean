@@ -5,10 +5,12 @@ statement: formalized
 lean: RestrictedProduct.XS
 ---
 
-# XS
+# Piece of a restricted product supported in a finite set
 
-The piece of the restricted product supported in the finite set `S`:
-the tuples `x` with `x i ∈ U i` for all `i ∉ S`.
+**Piece of a restricted product supported in a finite set.** Let $(X_i)_{i \in \iota}$ be a
+family of types with subsets $U_i \subseteq X_i$. For a finite set $S$ of indices, the piece
+$X_S$ is the set of tuples $x \in \prod_{i \in \iota} X_i$ such that $x_i \in U_i$ for every
+$i \notin S$.
 
 ## Depends on
 

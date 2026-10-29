@@ -7,11 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.irreducible_of_simple_fdrep
 ---
 
-# Simple finite-dimensional representations are irreducible
+# Simple finite-dimensional complex representations of a finite group are irreducible
 
-**Simple finite-dimensional representations are irreducible.** Let $G$ be a finite group. If
-$V$ is a simple object of the category of finite-dimensional complex representations of $G$, then
-the representation of $G$ on the underlying vector space of $V$ is irreducible.
+**Simple finite-dimensional complex representations of a finite group are irreducible.** Let
+$G$ be a finite group. If $V$ is a simple object of the category of finite-dimensional complex
+representations of $G$, then the representation of $G$ on the underlying vector space of $V$ is
+irreducible.
 
 ## Depends on
 

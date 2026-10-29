@@ -145,8 +145,9 @@ theorem approx_denote {Γ : List Ty} {A : Ty} (t : Tm Γ A) (η : Env Γ) (σ : 
           rw [Function.iterate_succ_apply']
           exact approx_expand A (fun v hv => .fix hv) (ih η σ hσ _ _ ihk)
 
-/-- Computational adequacy: if a closed term of ground type denotes `n`, it
-evaluates to the numeral `n`. -/
+/-- **Computational adequacy for PCF.** Let $t$ be a closed PCF term of ground type
+$\mathsf{nat}$ and let $n$ be a natural number. If the denotation of $t$ in the empty environment
+is defined with value $n$, then $t$ evaluates to the numeral $\mathsf{succ}^n(\mathsf{zero})$. -/
 theorem adequacy {t : Tm [] .nat} {n : ℕ} (h : n ∈ (denote t PUnit.unit : Part ℕ)) :
     Eval t (numeral n) := by
   have := approx_denote t PUnit.unit Sub.id (fun x => nomatch x) n h

@@ -101,14 +101,13 @@ omit [Fintype σ] in
 theorem reachStep_mono : Monotone M.reachStep := fun _ _ h =>
   Finset.union_subset_union le_rfl (Finset.biUnion_subset_biUnion_of_subset_left _ h)
 
-/-- **Reachable states of an encoded DFA.** For an encoded DFA $D$, the reachable states of $D$
-form the list returned by the bounded reachability search on lists of states started at the start
-state of $D$, kept inside the states of $D$, in which the successors of a state $s$ are the states
-that the transition function of $D$ takes $s$ to on the letters of $D$, in the order of the
-letters.
+/-- **Reachable states of a DFA.** Let $M$ be a DFA over a finite alphabet whose set of states
+$\sigma$ is finite and has decidable equality. The reachable states of $M$ form the finite set
+obtained from the empty set by applying one round of the DFA reachability search for $M$ exactly
+$|\sigma|$ times, where $|\sigma|$ is the number of states of $M$.
 
-A natural number lies in this list exactly when the automaton denoted by $D$ reaches it from its
-start state on some word. -/
+Since the round is monotone, this set is its least fixed point, and a state lies in it exactly
+when $M$ reaches it from its start state on some word. -/
 def reachable : Finset σ :=
   Finset.lfpFin M.reachStep
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Normalizes
 ---
 
-# Normalizes
+# Normalizing closed terms
 
-A closed term normalizes when it evaluates to a normal form.
+**Normalizing closed terms.** A closed term $t$ of the simply typed lambda calculus normalizes
+when it reduces, in zero or more call-by-value steps, to a term in normal form, that is, a term
+with no further call-by-value reduction step.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A closed term normalizes when it evaluates to a normal form.
 
 ## Proof depends on
 
-- [Normal Form](../semantics/normal-form.md)
+- [Normal forms for call-by-value reduction in STLC](../semantics/normal-form.md)
 - [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 
 ## Sources

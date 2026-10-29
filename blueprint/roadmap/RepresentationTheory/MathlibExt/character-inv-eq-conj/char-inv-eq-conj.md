@@ -6,10 +6,11 @@ proof: formalized
 lean: CharacterTheory.char_inv_eq_conj
 ---
 
-# Char inv eq conj
+# Character values at inverses are complex conjugates
 
-The character of a finite-dimensional complex representation of a finite
-group at `g⁻¹` is the complex conjugate of its value at `g`.
+**Character values at inverses are complex conjugates.** Let $\rho$ be a representation of a
+finite group $G$ on a finite-dimensional complex vector space $V$, with character $\chi_\rho$.
+For every $g \in G$, $\chi_\rho(g^{-1}) = \overline{\chi_\rho(g)}$.
 
 ## Depends on
 

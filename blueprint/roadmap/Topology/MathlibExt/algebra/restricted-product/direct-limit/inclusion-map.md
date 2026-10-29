@@ -5,17 +5,20 @@ statement: formalized
 lean: RestrictedProduct.inclusionMap
 ---
 
-# Inclusion Map
+# Inclusion of pieces
 
-The inclusion of pieces, as a map between the subtype types.
+**Inclusion of pieces.** Let $(X_i)_{i \in \iota}$ be topological spaces with subsets
+$U_i \subseteq X_i$, and for a finite set $S \subseteq \iota$ let $X_S$ be the set of tuples
+$x \in \prod_i X_i$ with $x_i \in U_i$ for all $i \notin S$. For finite sets $S \subseteq T$, the
+inclusion of pieces is the map $X_S \to X_T$ sending each tuple $x$ to itself.
 
 ## Depends on
 
-- [XS](xs.md)
+- [Piece of a restricted product supported in a finite set](xs.md)
 
 ## Proof depends on
 
-- [XS mono](xs-mono.md)
+- [The pieces grow with the finite set](xs-mono.md)
 
 ## Sources
 

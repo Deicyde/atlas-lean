@@ -6,16 +6,21 @@ proof: formalized
 lean: ProbabilityTheory.exists_regularConditionalDistribution_family_of_le
 ---
 
-# Measure-valued refinement existence for an arbitrary sub-sigma-algebra
+# Existence of measure-valued regular conditional distributions given a sub-σ-algebra
 
-**Measure-valued refinement existence for an arbitrary sub-sigma-algebra.** A measurable
-map into a nonempty standard Borel space has a regular conditional
-distribution given any `𝒢 ≤ mα`, under a finite measure. The witness is
-Mathlib's `condDistrib` with conditioning map `id` into the space carrying `𝒢`.
+**Existence of measure-valued regular conditional distributions given a sub-σ-algebra.** Let
+$\Omega$ be a nonempty standard Borel space, $\mu$ a finite measure on a measurable space
+$(\alpha, \mathcal{F})$, $\mathcal{G} \subseteq \mathcal{F}$ a sub-σ-algebra, and
+$Y : \alpha \to \Omega$ an $\mathcal{F}$-measurable map. Then some family of measures on $\Omega$
+indexed by $\alpha$ is a measure-valued regular conditional distribution of $Y$ given
+$\mathcal{G}$ under $\mu$.
+
+The witness is the conditional distribution of $Y$ given the identity map from
+$(\alpha, \mathcal{F})$ to $(\alpha, \mathcal{G})$.
 
 ## Depends on
 
-- [Strengthened measure-valued refinement of a regular conditional distribution](regular-conditional-distribution.md)
+- [Regular conditional distribution (measure-valued family)](regular-conditional-distribution.md)
 
 ## Sources
 

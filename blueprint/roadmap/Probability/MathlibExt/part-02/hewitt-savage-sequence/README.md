@@ -4,7 +4,7 @@ navigation: module
 
 # Hewitt Savage Sequence
 
-- [Is Exchangeable Event](is-exchangeable-event.md)
-- [Is Exchangeable Event Wrt](is-exchangeable-event-wrt.md)
-- [Measurable Set](measurable-set.md)
-- [Hewitt–Savage 0–1 law](hewitt-savage-zero-one.md)
+- [Exchangeable event](is-exchangeable-event.md)
+- [Event exchangeable with respect to a sequence](is-exchangeable-event-wrt.md)
+- [Exchangeable events of a measurable sequence are measurable](measurable-set.md)
+- [Hewitt–Savage zero–one law for i.i.d. sequences](hewitt-savage-zero-one.md)

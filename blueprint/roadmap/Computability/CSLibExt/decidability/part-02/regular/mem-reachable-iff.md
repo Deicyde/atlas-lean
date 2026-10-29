@@ -14,7 +14,7 @@ if and only if there is a word $w$ such that running $M$ on $w$ from its start s
 
 ## Depends on
 
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 
 ## Proof depends on
 

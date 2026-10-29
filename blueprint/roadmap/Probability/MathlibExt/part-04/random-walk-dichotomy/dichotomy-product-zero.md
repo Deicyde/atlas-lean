@@ -6,35 +6,39 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.dichotomy_product_zero
 ---
 
-# Dichotomy product zero
+# Random-walk dichotomy on sequence space
 
-The dichotomy on the canonical sequence space: for the i.i.d. product
-measure, the coordinate walk satisfies one of the four alternatives.
+**Random-walk dichotomy on sequence space.** Let $\rho$ be a probability measure on
+$\mathbb{R}$, let $\nu = \rho^{\otimes \mathbb{N}}$ be the product measure on
+$\mathbb{R}^{\mathbb{N}}$, and let $S_n(\omega) = \sum_{i < n} \omega_i$ be the partial sums of
+the coordinates. Then one of the following holds: $\nu$-almost surely $S_n = 0$ for every $n$;
+$\nu$-almost surely $S_n \to +\infty$; $\nu$-almost surely $S_n \to -\infty$; or $\nu$-almost
+surely $\limsup_n S_n = +\infty$ and $\liminf_n S_n = -\infty$.
 
 ## Depends on
 
-- [Drifts To Bot](drifts-to-bot.md)
-- [Drifts To Top](drifts-to-top.md)
-- [Oscillates](oscillates.md)
-- [Zero Walk](zero-walk.md)
-- [Coord Seq](../random-walk-limsup/coord-seq.md)
+- [Random walk drifting to $-\infty$](drifts-to-bot.md)
+- [Random walk drifting to $+\infty$](drifts-to-top.md)
+- [Oscillating random walk](oscillates.md)
+- [Zero random walk](zero-walk.md)
+- [Coordinate process on sequence space](../random-walk-limsup/coord-seq.md)
 
 ## Proof depends on
 
 - [Hewitt–Savage zero–one law on a Polish space](../../part-02/hewitt-savage/hewitt-savage-zero-one.md)
-- [Exists ae eq const of forall le zero or one](../random-walk-limsup/exists-ae-eq-const-of-forall-le-zero-or.md)
-- [Liminf comp perm](../random-walk-limsup/liminf-comp-perm.md)
-- [Liminf shift](../random-walk-limsup/liminf-shift.md)
-- [Limsup comp perm](../random-walk-limsup/limsup-comp-perm.md)
-- [Limsup shift](../random-walk-limsup/limsup-shift.md)
-- [Map shift Seq infinite Pi](../random-walk-limsup/map-shift-seq-infinite-pi.md)
-- [Random Walk Liminf](../random-walk-limsup/random-walk-liminf.md)
-- [Random Walk Limsup](../random-walk-limsup/random-walk-limsup.md)
-- [Shift Seq](../random-walk-limsup/shift-seq.md)
-- [Tendsto at Bot of limsup eq bot](../random-walk-limsup/tendsto-at-bot-of-limsup-eq-bot.md)
-- [Tendsto at Top of liminf eq top](../random-walk-limsup/tendsto-at-top-of-liminf-eq-top.md)
-- [Zero Walk iff ae forall eq zero](zero-walk-iff-ae-forall-eq-zero.md)
-- [Random Walk Partial Sum](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
+- [Zero–one sublevel sets force an almost surely constant variable](../random-walk-limsup/exists-ae-eq-const-of-forall-le-zero-or.md)
+- [Finite permutations do not change the liminf of the partial sums](../random-walk-limsup/liminf-comp-perm.md)
+- [One-step shift identity for the liminf of the partial sums](../random-walk-limsup/liminf-shift.md)
+- [Finite permutations do not change the limsup of the partial sums](../random-walk-limsup/limsup-comp-perm.md)
+- [One-step shift identity for the limsup of partial sums](../random-walk-limsup/limsup-shift.md)
+- [Shift invariance of the i.i.d. product measure](../random-walk-limsup/map-shift-seq-infinite-pi.md)
+- [Liminf of a random walk](../random-walk-limsup/random-walk-liminf.md)
+- [Limsup of a random walk](../random-walk-limsup/random-walk-limsup.md)
+- [Shift of a real sequence](../random-walk-limsup/shift-seq.md)
+- [Limsup minus infinity forces divergence to minus infinity](../random-walk-limsup/tendsto-at-bot-of-limsup-eq-bot.md)
+- [Liminf plus infinity forces divergence to plus infinity](../random-walk-limsup/tendsto-at-top-of-liminf-eq-top.md)
+- [A random walk is zero exactly when its steps are](zero-walk-iff-ae-forall-eq-zero.md)
+- [Partial sums of a random walk](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
 
 ## Sources
 

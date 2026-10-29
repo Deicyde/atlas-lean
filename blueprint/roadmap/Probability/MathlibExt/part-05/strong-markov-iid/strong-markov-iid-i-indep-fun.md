@@ -6,23 +6,26 @@ proof: formalized
 lean: ProbabilityTheory.strong_markov_iid_iIndepFun
 ---
 
-# Strong Markov property (independence part)
+# Strong Markov property for i.i.d. sequences: independence after a stopping time
 
-**Strong Markov property (independence part).**
-
-For an i.i.d. sequence `X` and a finite stopping time `T` whose filtration is contained
-in the natural filtration of `X`, the post-stopping sequence `(X_{T+k+1})_{k ≥ 0}`
-is itself an independent family.
+**Strong Markov property for i.i.d. sequences: independence after a stopping time.** Let $\mu$
+be a probability measure on a measurable space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$
+be a filtration on $\Omega$, and let $X_0, X_1, X_2, \dots$ be measurable maps from $\Omega$ to a
+measurable space $S$ that are mutually independent and identically distributed under $\mu$.
+Suppose that for every $n$ the σ-algebra $\mathcal{F}_n$ is contained in the σ-algebra generated
+by $X_0, \dots, X_n$, and let $T : \Omega \to \mathbb{N}$ be a stopping time for
+$(\mathcal{F}_n)$. Then the maps $Y_k(\omega) = X_{T(\omega)+k+1}(\omega)$, $k \in \mathbb{N}$,
+are mutually independent under $\mu$.
 
 ## Depends on
 
-- [Post Stopping Time Seq](post-stopping-time-seq.md)
+- [Post-stopping-time sequence](post-stopping-time-seq.md)
 
 ## Proof depends on
 
-- [Indep stopping time tail finset](indep-stopping-time-tail-finset.md)
-- [Measurable Set stopping Time eq](measurable-set-stopping-time-eq.md)
-- [Post Stopping Time Seq preimage eq](post-stopping-time-seq-preimage-eq.md)
+- [A stopping-time event is independent of finitely many later observations](indep-stopping-time-tail-finset.md)
+- [Level sets of a stopping time are measurable](measurable-set-stopping-time-eq.md)
+- [Preimage measures of a post-stopping-time variable](post-stopping-time-seq-preimage-eq.md)
 
 ## Sources
 

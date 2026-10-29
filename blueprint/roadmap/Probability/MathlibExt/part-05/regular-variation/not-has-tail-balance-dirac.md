@@ -6,20 +6,24 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.not_hasTailBalance_dirac
 ---
 
-# Not has Tail Balance dirac
+# Dirac masses have no tail balance
 
-Every Dirac mass has eventually zero combined tail, so has no tail-balance parameter.
+**Dirac masses have no tail balance.** For every $a \in \mathbb{R}$ and every
+$p \in \mathbb{R}$, the Dirac measure $\delta_a$ at $a$ does not have tail balance $p$.
+
+The combined tail of $\delta_a$ vanishes at every threshold $x \ge |a|$, so the eventual
+positivity required by tail balance fails.
 
 ## Depends on
 
-- [Has Tail Balance](has-tail-balance.md)
+- [Tail balance](has-tail-balance.md)
 
 ## Proof depends on
 
-- [Combined Tail](combined-tail.md)
-- [Left Tail](left-tail.md)
-- [Not has Tail Balance of eventually combined Tail eq zero](not-has-tail-balance-of-eventually-combi.md)
-- [Right Tail](right-tail.md)
+- [Combined tail of a measure](combined-tail.md)
+- [Left tail of a measure](left-tail.md)
+- [Eventually vanishing combined tail rules out tail balance](not-has-tail-balance-of-eventually-combi.md)
+- [Right tail of a measure](right-tail.md)
 
 ## Sources
 

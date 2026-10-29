@@ -6,17 +6,18 @@ proof: formalized
 lean: MathlibExt.Probability.TotalVariationDistance.totalVariationDist_self
 ---
 
-# Total Variation Dist self
+# Total variation distance from a measure to itself
 
-The total variation distance of a finite measure from itself is zero.
+**Total variation distance from a measure to itself.** For every finite measure $\mu$ on a
+measurable space, the total variation distance $d_{TV}(\mu, \mu)$ is $0$.
 
 ## Depends on
 
-- [Total Variation Dist](total-variation-dist.md)
+- [Total variation distance between finite measures](total-variation-dist.md)
 
 ## Proof depends on
 
-- [Total Variation Dist nonneg](total-variation-dist-nonneg.md)
+- [Total variation distance is nonnegative](total-variation-dist-nonneg.md)
 
 ## Sources
 

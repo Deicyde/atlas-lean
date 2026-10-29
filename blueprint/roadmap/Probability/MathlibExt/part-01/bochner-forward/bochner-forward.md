@@ -6,16 +6,16 @@ proof: formalized
 lean: ProbabilityTheory.bochner_forward
 ---
 
-# Bochner forward
+# Forward direction of Bochner's theorem
 
-Every characteristic function of a probability measure on `ℝ` is continuous,
-positive definite, and takes the value `1` at `0`. This compatibility statement follows
-from the existing full Bochner theorem.
+**Forward direction of Bochner's theorem.** Let $\varphi : \mathbb{R} \to \mathbb{C}$ be the
+characteristic function of a probability measure on $\mathbb{R}$. Then $\varphi$ is continuous,
+positive definite, and satisfies $\varphi(0) = 1$.
 
 ## Depends on
 
-- [Is Characteristic Fun](is-characteristic-fun.md)
-- [Is Positive Definite](is-positive-definite.md)
+- [Characteristic functions](is-characteristic-fun.md)
+- [Positive definite functions](is-positive-definite.md)
 
 ## Proof depends on
 

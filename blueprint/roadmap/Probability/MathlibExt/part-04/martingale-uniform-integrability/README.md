@@ -4,5 +4,5 @@ navigation: module
 
 # Martingale Uniform Integrability
 
-- [Submartingale convergence theorem](uniform-integrable-tfae.md)
-- [Martingale convergence theorem](uniform-integrable-tfae-2.md)
+- [Equivalent conditions for uniform integrability of a submartingale](uniform-integrable-tfae.md)
+- [Equivalent conditions for uniform integrability of a martingale](uniform-integrable-tfae-2.md)

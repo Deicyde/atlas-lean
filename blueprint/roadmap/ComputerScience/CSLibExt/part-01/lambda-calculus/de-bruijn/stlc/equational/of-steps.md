@@ -21,7 +21,7 @@ $t$ and $u$ are semantically equal in $I$: they have the same denotation in ever
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Multi-step reduction preserves STLC denotation](../denotational/denote-eq-2.md)
 
 ## Sources

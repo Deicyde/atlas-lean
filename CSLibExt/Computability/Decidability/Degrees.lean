@@ -880,7 +880,10 @@ def decodeIsSomeStep : Unit → List ℕ → Option ℕ := fun _ L =>
   else if (L.length).unpair.1 = 8 then some (if (L.length).unpair.2 = 0 then 1 else 0)
   else some 0
 
-/-- **The step function is primitive recursive.**
+/-- **The course-of-values step for definedness is primitive recursive.** One step of the
+course-of-values recursion for definedness is primitive recursive as a function of its two
+arguments, an element of the unit type and a list of natural numbers.
+
 Source: Rogers, *Theory of Recursive Functions and Effective Computability*,
 §1.6 (Gödel numberings; decoding). -/
 theorem primrec₂_decodeIsSomeStep : Primrec₂ decodeIsSomeStep := by

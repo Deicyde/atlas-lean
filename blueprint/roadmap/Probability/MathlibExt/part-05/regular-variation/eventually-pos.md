@@ -6,17 +6,18 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsRegularlyVarying.eventually_pos
 ---
 
-# Eventually pos
+# Regularly varying functions are eventually positive
 
-A regularly varying function is eventually positive.
+**Regularly varying functions are eventually positive.** If $f : \mathbb{R} \to \mathbb{R}$ is
+regularly varying with some index $\rho$, then $f(x) > 0$ for all sufficiently large $x$.
 
 ## Depends on
 
-- [Is Regularly Varying](is-regularly-varying.md)
+- [Regularly varying function](is-regularly-varying.md)
 
 ## Proof depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

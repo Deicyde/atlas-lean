@@ -19,7 +19,7 @@ resulting semantic environment equals the identity semantic environment of $\Gam
 
 - [Renamings of simply typed contexts](../syntax/ren.md)
 - [Kripke semantic values](../nbe/sem.md)
-- [Semantic environments](../nbe/sem-env.md)
+- [Semantic environments for normalization by evaluation](../nbe/sem-env.md)
 - [Extending a semantic environment by one variable](../nbe/cons.md)
 - [The identity semantic environment](../nbe/identity.md)
 - [Renaming a semantic environment](../nbe/rename-2.md)

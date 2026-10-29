@@ -22,7 +22,7 @@ equal in $I$.
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Extending a semantic environment in STLC](../denotational/cons.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Denotation of simple types](../denotational/denote.md)

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.randomWalkLiminf
 ---
 
-# Random Walk Liminf
+# Liminf of a random walk
 
-The `liminf` of the random-walk partial sums, as an `EReal`-valued
-function.
+**Liminf of a random walk.** For real-valued functions $X_0, X_1, \dots$ on a set $\Omega$ and
+a point $\omega \in \Omega$, this is $\liminf_{n \to \infty} S_n(\omega)$, taken in the extended
+reals $[-\infty, +\infty]$, where $S_n(\omega) = \sum_{i < n} X_i(\omega)$ is the $n$-th partial
+sum.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Random Walk Partial Sum](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
+- [Partial sums of a random walk](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
 
 ## Sources
 

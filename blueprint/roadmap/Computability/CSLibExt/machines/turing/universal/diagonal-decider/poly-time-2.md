@@ -25,7 +25,7 @@ evaluated at $|y|$, with the layout of $y$ as its output.
 - [The layout machine as a host component](comp-2.md)
 - [Program of the layout machine](prog-2.md)
 - [The layout run](run-2.md)
-- [Γ](untitled-2.md)
+- [Stack symbols of the layout machine](untitled-2.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.RegularVariation.IsSlowlyVarying
 ---
 
-# Is Slowly Varying
+# Slowly varying function
 
-`L : ℝ → ℝ` is *slowly varying* (at infinity) if it is eventually positive at infinity
-and `L (c * x) / L x → 1` as `x → ∞` for every `c > 0`.
+**Slowly varying function.** A function $L : \mathbb{R} \to \mathbb{R}$ is slowly varying (at
+infinity) if $L(x) > 0$ for all sufficiently large $x$ and, for every real $c > 0$,
+$L(cx) / L(x) \to 1$ as $x \to \infty$.
 
 ## Depends on
 

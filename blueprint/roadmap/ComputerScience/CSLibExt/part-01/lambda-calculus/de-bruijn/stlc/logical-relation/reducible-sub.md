@@ -18,7 +18,7 @@ for every variable $x$ of $\Gamma$.
 
 ## Proof depends on
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 - [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources

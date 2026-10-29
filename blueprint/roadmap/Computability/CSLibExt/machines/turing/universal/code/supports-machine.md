@@ -14,8 +14,8 @@ states of its code.
 ## Depends on
 
 - [Codes for single-tape machines](code.md)
-- [The machine of a code](machine.md)
-- [States of a code](states.md)
+- [The machine of a single-tape code](machine.md)
+- [States of a single-tape code](states.md)
 
 ## Proof depends on
 

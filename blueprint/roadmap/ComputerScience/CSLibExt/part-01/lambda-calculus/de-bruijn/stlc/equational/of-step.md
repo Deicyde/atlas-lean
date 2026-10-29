@@ -21,7 +21,7 @@ are semantically equal in $I$: they have the same denotation in every environmen
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [One reduction step preserves STLC denotation](../denotational/denote-eq.md)
 
 ## Sources

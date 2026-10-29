@@ -4,6 +4,6 @@ navigation: module
 
 # Hypergraph KCut Fixed KAMR29 Problem0056
 
-- [Hypergraph KCut Dec](hypergraph-kcut-dec.md)
-- [Hypergraph KCut In P](hypergraph-kcut-in-p.md)
-- [Hypergraph KCut In P holds](hypergraph-kcut-in-p-holds.md)
+- [Decision version of hypergraph $k$-cut](hypergraph-kcut-dec.md)
+- [The EGRES question on hypergraph $k$-cut for fixed $k$](hypergraph-kcut-in-p.md)
+- [Hypergraph $k$-cut for fixed $k$ is in P](hypergraph-kcut-in-p-holds.md)

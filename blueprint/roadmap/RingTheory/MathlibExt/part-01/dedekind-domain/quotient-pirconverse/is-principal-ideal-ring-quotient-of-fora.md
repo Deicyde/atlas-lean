@@ -6,12 +6,16 @@ proof: formalized
 lean: isPrincipalIdealRing_quotient_of_forall_exists_span_pair
 ---
 
-# Is Principal Ideal Ring quotient of forall exists span pair
+# Two generators with one prescribed give principal quotients
 
-The two-generator hypothesis implies the quotient-PIR hypothesis: for a
-nonzero `I`, an ideal `J` of `A ⧸ I` has comap `J'` containing `I`; pick a
-nonzero `a ∈ I ⊆ J'`, write `J' = (a, b)`, and the image of `b` generates `J`
-since the image of `a` is zero.
+**Two generators with one prescribed give principal quotients.** Let $A$ be an integral
+domain such that for every nonzero ideal $I$ of $A$ and every nonzero $a \in I$ there is $b \in A$
+with $I = (a, b)$. Then for every nonzero ideal $I$ of $A$, the quotient ring $A/I$ is a
+principal ideal ring.
+
+For a nonzero ideal $I$, an ideal $J$ of $A/I$ has preimage $J'$ in $A$ containing $I$; pick a
+nonzero $a \in I$, write $J' = (a, b)$, and the image of $b$ generates $J$ since the image of $a$
+is zero.
 
 ## Depends on
 

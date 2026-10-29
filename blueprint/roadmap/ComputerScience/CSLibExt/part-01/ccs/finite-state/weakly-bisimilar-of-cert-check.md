@@ -27,7 +27,7 @@ of the specification.
 
 - [Backward certificate check](backward-check.md)
 - [Forward certificate check](forward-check.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [A silent step lies in the silent closure](../../semantics/lts/weak-bisimulation/of-tr.md)
 - [Silent steps before a weak transition](../../semantics/lts/weak-bisimulation/trans-s-tr.md)
 

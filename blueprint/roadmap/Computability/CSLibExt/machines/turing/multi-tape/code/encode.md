@@ -17,7 +17,7 @@ pairs of a key and a coded action.
 
 ## Proof depends on
 
-- [Codes as tables](equiv-table.md)
+- [Multi-tape codes as tables](equiv-table.md)
 - [Coded actions](code-action.md)
 - [Coded actions as tuples](equiv-prod.md)
 - [Keys of a code's table](code-key.md)

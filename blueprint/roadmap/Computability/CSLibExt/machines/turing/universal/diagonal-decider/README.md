@@ -26,7 +26,7 @@ navigation: module
 
 - [Stacks of the layout machine](k-2.md)
 - [Labels of the layout machine](lab-2.md)
-- [Γ](untitled-2.md)
+- [Stack symbols of the layout machine](untitled-2.md)
 - [Program of the layout machine](prog-2.md)
 - [The layout function](layout.md)
 - [The layout run](run-2.md)

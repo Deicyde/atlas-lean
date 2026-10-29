@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.TimeHierarchy.time_hierarchy
 ---
 
-# Deterministic time hierarchy
+# Deterministic time hierarchy: quadratic versus linear time
 
-**Deterministic time hierarchy.** Source: J. Hartmanis and R. E. Stearns, "On the
-computational complexity of algorithms", Transactions of the American Mathematical Society
-117 (1965), 285-306.
+**Deterministic time hierarchy: quadratic versus linear time.** There is a language $L$ of
+bitstrings that lies in the multi-tape deterministic time class $\mathrm{DTIME}(n^2)$ but not in
+$\mathrm{DTIME}(n)$.
 
 ## Depends on
 
@@ -18,3 +18,4 @@ computational complexity of algorithms", Transactions of the American Mathematic
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.TimeHierarchyWanted](../../../../../sources/v2/WantedExt.md)
+- J. Hartmanis and R. E. Stearns, "On the computational complexity of algorithms", Transactions of the American Mathematical Society 117 (1965), 285-306.

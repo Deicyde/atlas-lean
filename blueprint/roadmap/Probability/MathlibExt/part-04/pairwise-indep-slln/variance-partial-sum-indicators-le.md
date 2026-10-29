@@ -6,22 +6,27 @@ proof: formalized
 lean: ProbabilityTheory.variance_partialSumIndicators_le
 ---
 
-# Variance partial Sum Indicators le
+# Variance of a sum of pairwise independent indicators is at most its mean
 
-For pairwise independent events `A_i`, the variance of the partial sum of indicators
-is bounded by its expectation: `Var(S_n) ≤ E[S_n]`. This follows from `Var(1_{A_i}) ≤ P(A_i)`
-and the fact that pairwise independence makes covariances vanish.
+**Variance of a sum of pairwise independent indicators is at most its mean.** Let $\mu$ be
+a probability measure on $\Omega$ and let $A_0, A_1, \dots$ be pairwise independent measurable
+subsets of $\Omega$. Then for every $n$, the partial sum $S_n = \sum_{i < n} 1_{A_i}$ satisfies
+$\operatorname{Var}(S_n) \le \mathbb{E}[S_n]$, where variance and expectation are taken
+with respect to $\mu$.
+
+This follows from $\operatorname{Var}(1_{A_i}) \le \mu(A_i)$ and the fact that pairwise
+independence makes covariances vanish.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Proof depends on
 
-- [Indep Fun indicator of indep Set](indep-fun-indicator-of-indep-set.md)
-- [Mem Lp indicator one](mem-lp-indicator-one.md)
-- [Partial Sum Indicators eq](partial-sum-indicators-eq.md)
-- [Variance indicator le](variance-indicator-le.md)
+- [Independent events have independent indicators](indep-fun-indicator-of-indep-set.md)
+- [Indicators are square-integrable](mem-lp-indicator-one.md)
+- [The partial sum as a sum of indicator functions](partial-sum-indicators-eq.md)
+- [Variance of an indicator is at most its probability](variance-indicator-le.md)
 
 ## Sources
 

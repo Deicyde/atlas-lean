@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.leftTail_le_combinedTail
 ---
 
-# Left Tail le combined Tail
+# The left tail is at most the combined tail
 
-The left tail is dominated by the combined tail.
+**The left tail is at most the combined tail.** For every measure $\mu$ on $\mathbb{R}$ and
+every real $x$, the left tail of $\mu$ at $x$ is at most the combined tail of $\mu$ at $x$.
 
 ## Depends on
 
-- [Combined Tail](combined-tail.md)
-- [Left Tail](left-tail.md)
+- [Combined tail of a measure](combined-tail.md)
+- [Left tail of a measure](left-tail.md)
 
 ## Proof depends on
 
-- [Right Tail](right-tail.md)
+- [Right tail of a measure](right-tail.md)
 
 ## Sources
 

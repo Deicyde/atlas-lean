@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.convexOn_legendreTransform
 ---
 
-# Convex On legendre Transform
+# A finite Legendre transform is convex
 
-The real projection is convex when every conjugate value is finite.
+**A finite Legendre transform is convex.** Let $d \in \mathbb{N}$ and let
+$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transform $\Lambda^*$. If
+$\Lambda^*(x)$ is a real number for every $x \in \mathbb{R}^d$, then $\Lambda^*$, viewed as a
+function $\mathbb{R}^d \to \mathbb{R}$, is convex on $\mathbb{R}^d$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Convex epi legendre Transform](convex-epi-legendre-transform.md)
+- [The epigraph of the Legendre transform is convex](convex-epi-legendre-transform.md)
 
 ## Sources
 

@@ -26,7 +26,7 @@ the context $\llbracket B \rrbracket, \llbracket \Gamma \rrbracket$.
 ## Proof depends on
 
 - [Translated renaming](cps-ren.md)
-- [Cps rename](cps-rename.md)
+- [The call-by-value CPS translation commutes with renaming](cps-rename.md)
 - [Renamings of simply typed contexts](../../de-bruijn/stlc/syntax/ren.md)
 - [Renaming a simply typed term](../../de-bruijn/stlc/syntax/rename.md)
 - [Typed de Bruijn variables of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/var.md)

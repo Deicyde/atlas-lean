@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.qWeightedDigitSum_zero
 ---
 
-# Q Weighted Digit Sum zero
+# The $q$-weighted digit sum of zero
 
-`s_q(0) = 0`.
+**The $q$-weighted digit sum of zero.** For every element $q$ of a commutative ring, the
+$q$-weighted binary digit sum of $0$ is $s_q(0) = 0$.
 
 ## Depends on
 
-- [Q Weighted Digit Sum](q-weighted-digit-sum.md)
+- [The $q$-weighted binary digit sum](q-weighted-digit-sum.md)
 
 ## Sources
 

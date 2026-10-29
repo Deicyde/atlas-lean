@@ -22,7 +22,7 @@ $\rho$.
 ## Depends on
 
 - [Kripke semantic values](../nbe/sem.md)
-- [Semantic environments](../nbe/sem-env.md)
+- [Semantic environments for normalization by evaluation](../nbe/sem-env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)
 

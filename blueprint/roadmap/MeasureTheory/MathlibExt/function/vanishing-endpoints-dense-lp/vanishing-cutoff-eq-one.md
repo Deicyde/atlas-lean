@@ -18,7 +18,7 @@ factor with endpoints $a$, $b$ and width $\delta$ takes the value $1$ at $x$.
 
 ## Proof depends on
 
-- [Interval Cutoff eq one](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-one.md)
+- [The interval cutoff equals one on its plateau](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-one.md)
 
 ## Sources
 

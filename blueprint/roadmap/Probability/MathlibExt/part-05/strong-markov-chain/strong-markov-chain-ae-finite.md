@@ -8,25 +8,37 @@ lean: MathlibExt.Probability.StrongMarkovChain.strong_markov_chain_ae_finite
 
 # Strong Markov property for a.s.-finite stopping times
 
-**Strong Markov property for a.s.-finite stopping times** (Lecture 31).
-The time may equal infinity on a null set. Mathlib's `stoppedValue` evaluates through its
-measurable finite projection; its choice on the infinite event is immaterial to this a.e.
-equality. Conditioning uses the sigma algebra of the original WithTop-valued stopping time.
+**Strong Markov property for a.s.-finite stopping times.** Let $S$ be a nonempty standard
+Borel space, $\mu$ a finite measure on $S$, $\kappa$ a Markov kernel on $S$, and $P_\mu$ the law
+on the path space $S^{\mathbb{N}}$ of the Markov chain with initial distribution $\mu$ and
+transition kernel $\kappa$. For $x \in S$ write $E_x$ for the expectation under the chain started
+from $x$, and for a path $\omega$ and $n \in \mathbb{N}$ write $\theta_n \omega$ for the shifted
+path $k \mapsto \omega(n + k)$. Let $T : S^{\mathbb{N}} \to \mathbb{N} \cup \{\infty\}$ be a
+stopping time for the path filtration, with $\sigma$-algebra $\mathcal{F}_T$, such that
+$T \ne \infty$ $P_\mu$-almost surely, and let $Y_n : S^{\mathbb{N}} \to \mathbb{R}$, for
+$n \in \mathbb{N}$, be measurable functions with $|Y_n(\omega)| \le C$ for a single constant $C$
+and all $n$ and $\omega$. Then the conditional expectation under $P_\mu$ given $\mathcal{F}_T$ of
+$\omega \mapsto Y_{T(\omega)}(\theta_{T(\omega)} \omega)$ equals
+$\omega \mapsto E_{\omega(T(\omega))}[Y_{T(\omega)}]$ $P_\mu$-almost surely.
+
+On the null event $\{T = \infty\}$ both sides are evaluated at the same unspecified finite time,
+which does not affect the almost-sure equality.
 
 ## Depends on
 
-- [Markov Chain Path Measure](../../part-03/markov-chain-path-measure/markov-chain-path-measure.md)
-- [Markov Expectation](../../part-03/markov-chain-path-measure/markov-expectation.md)
-- [Path Filtration](../../part-03/markov-chain-path-measure/path-filtration.md)
-- [Shift Path](../../part-03/markov-chain-path-measure/shift-path.md)
+- [Markov chain path measure](../../part-03/markov-chain-path-measure/markov-chain-path-measure.md)
+- [Expectation under the chain started from a point](../../part-03/markov-chain-path-measure/markov-expectation.md)
+- [Path filtration](../../part-03/markov-chain-path-measure/path-filtration.md)
+- [Time shift on path space](../../part-03/markov-chain-path-measure/shift-path.md)
 
 ## Proof depends on
 
-- [Markov Chain Measure](../../part-03/markov-chain-construction/markov-chain-measure.md)
-- [Markov Lift Kernel](../../part-03/markov-chain-construction/markov-lift-kernel.md)
+- [Canonical Markov chain measure](../../part-03/markov-chain-construction/markov-chain-measure.md)
+- [Lifting a kernel to histories](../../part-03/markov-chain-construction/markov-lift-kernel.md)
 - [Markov property](../../part-04/markov-property-chain/markov-property-full.md)
-- [Ae eq of ae eq restrict finite fibers](ae-eq-of-ae-eq-restrict-finite-fibers.md)
+- [A.e. equality from a.e. equality on the finite fibers](ae-eq-of-ae-eq-restrict-finite-fibers.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.StrongMarkovChain](../../../../../sources/v2/MathlibExt.md)
+- Theory of Probability, Lecture 31 (strong Markov property).

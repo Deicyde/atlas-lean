@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Moore equivalence on reachable states](moore-setoid.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Sources
 

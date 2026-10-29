@@ -16,7 +16,7 @@ in $\eta$.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Extending a semantic environment in STLC](cons.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Denotation of an STLC term](denote-2.md)

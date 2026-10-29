@@ -6,14 +6,19 @@ proof: formalized
 lean: MeasureTheory.Martingale.integral_predictableQuadraticVariation
 ---
 
-# Integral predictable Quadratic Variation
+# Expectation of the predictable quadratic variation
 
-The expectation of the predictable quadratic variation telescopes:
-`E[A_n] = E[f_n²] - E[f_0²]`, by orthogonality of martingale increments.
+**Expectation of the predictable quadratic variation.** Let $\mu$ be a probability measure
+and let $(f_k)_{k \in \mathbb{N}}$ be a real-valued martingale with respect to a filtration
+$(\mathcal{F}_k)$ and $\mu$ such that every $f_k$ is in $L^2(\mu)$, and let $A_n$ be its
+predictable quadratic variation. Then for every $n \in \mathbb{N}$,
+$\int A_n \, d\mu = \int f_n^2 \, d\mu - \int f_0^2 \, d\mu$.
+
+The proof telescopes, using the orthogonality of martingale increments.
 
 ## Depends on
 
-- [Predictable Quadratic Variation](predictable-quadratic-variation.md)
+- [Predictable quadratic variation](predictable-quadratic-variation.md)
 
 ## Sources
 

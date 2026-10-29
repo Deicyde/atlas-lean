@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.HewittSavageSequence.IsExchangeableEvent
 ---
 
-# Is Exchangeable Event
+# Exchangeable event
 
-A set `A ⊆ (ℕ → S)` is an **exchangeable** (or permutable) event if it is
-measurable and invariant under every finite permutation of the index set `ℕ`,
-i.e. `{x : x ∘ σ ∈ A} = A` for every permutation `σ` that moves only finitely
-many indices.
+**Exchangeable event.** Let $S$ be a measurable space. A set $A \subseteq S^{\mathbb{N}}$ is an
+exchangeable (or permutable) event if it is measurable for the product σ-algebra and
+$\{x : x \circ \sigma \in A\} = A$ for every permutation $\sigma$ of $\mathbb{N}$ that moves only
+finitely many indices.
 
 ## Depends on
 

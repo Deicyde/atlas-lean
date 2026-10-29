@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.RegularVariation.IsRegularlyVarying
 ---
 
-# Is Regularly Varying
+# Regularly varying function
 
-`f` is *regularly varying* with index `ρ` if it can be written as
-`f x = x ^ ρ * L x` eventually as `x → ∞`, where `L` is slowly varying.
+**Regularly varying function.** A function $f : \mathbb{R} \to \mathbb{R}$ is regularly varying
+with index $\rho \in \mathbb{R}$ if there is a slowly varying function
+$L : \mathbb{R} \to \mathbb{R}$ such that $f(x) = x^{\rho} L(x)$ for all sufficiently large $x$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

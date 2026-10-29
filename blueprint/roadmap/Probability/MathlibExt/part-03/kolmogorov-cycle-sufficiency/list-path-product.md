@@ -5,15 +5,16 @@ statement: formalized
 lean: StochasticMatrix.listPathProduct
 ---
 
-# List Path Product
+# Forward path product
 
-The product of forward transition probabilities along a path: for a list
-of states `[x₀, x₁, …, xₖ]`, returns `∏ᵢ P(xᵢ, xᵢ₊₁)` as a real number.
-Empty and singleton lists give `1`.
+**Forward path product.** For a stochastic matrix $P$ and a path of states
+$x_0, x_1, \dots, x_k$, the path product is the real number
+$\prod_{i=0}^{k-1} P(x_i, x_{i+1})$, the product of the forward transition probabilities along
+the path. For the empty path and for a path consisting of a single state it is $1$.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
 
 ## Sources
 

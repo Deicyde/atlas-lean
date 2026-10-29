@@ -4,6 +4,6 @@ navigation: module
 
 # Karp Luby
 
-- [Dnf Sat](dnf-sat.md)
-- [Dnf Count Of](dnf-count-of.md)
+- [Satisfaction of a DNF formula](dnf-sat.md)
+- [Number of satisfying assignments of an encoded DNF formula](dnf-count-of.md)
 - [Karp-Luby: FPRAS for DNF counting](karp-luby-dnf-counting.md)

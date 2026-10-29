@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.MAXSNPComplete
 ---
 
-# MAXSNPComplete
+# MAXSNP-completeness
 
-`MAXSNP`-completeness: in `MAXSNP`, and every `MAXSNP` problem `L`-reduces to it.
+**MAXSNP-completeness.** A MAXSNP problem $M$ is MAXSNP-complete when its underlying NPO
+problem is in APX and, for every MAXSNP problem $M'$, the underlying NPO problem of $M'$
+L-reduces to the underlying NPO problem of $M$.
 
 ## Depends on
 
-- [MAXSNPProblem](maxsnpproblem.md)
+- [MAXSNP problems](maxsnpproblem.md)
 
 ## Proof depends on
 
-- [APX](apx.md)
-- [LReduces](lreduces.md)
-- [NPOProblem](npoproblem.md)
+- [Membership in APX](apx.md)
+- [L-reductions](lreduces.md)
+- [NPO problems](npoproblem.md)
 
 ## Sources
 

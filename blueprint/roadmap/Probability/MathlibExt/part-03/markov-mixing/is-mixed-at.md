@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.Probability.MarkovMixing.IsMixedAt
 ---
 
-# Is Mixed At
+# Being $1/4$-mixed at a given time
 
-`P` is `1/4`-mixed at time `t` w.r.t. `π`: `d_TV(P^t(x, ·), π) ≤ 1/4` for every start `x`
-(`t_mix = min {t | IsMixedAt P π t}`).
+**Being $1/4$-mixed at a given time.** Let $S$ be a finite set, $P$ a real $S \times S$
+matrix and $\pi : S \to \mathbb{R}$. Then $P$ is mixed at time $t \in \mathbb{N}$ with respect to
+$\pi$ if for every $x \in S$ the total variation distance
+$\frac{1}{2} \sum_{y \in S} |P^t(x, y) - \pi(y)|$ between the row $x$ of the matrix power $P^t$
+and $\pi$ is at most $1/4$.
+
+The mixing time is the least $t$ at which $P$ is mixed.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tv Dist](tv-dist.md)
+- [Total variation distance of functions on a finite set](tv-dist.md)
 
 ## Sources
 

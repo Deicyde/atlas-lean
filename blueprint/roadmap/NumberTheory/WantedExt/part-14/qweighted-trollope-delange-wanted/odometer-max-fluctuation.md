@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.odometerMaxFluctuation
 ---
 
-# Odometer Max Fluctuation
+# Maximal fluctuation of the odometer partial sums
 
-The maximal absolute fluctuation of `t ↦ S_{q,ω}(t l) - t S_{q,ω}(l)` on `[0, 1]`.
-This is the scale of the *canonical* normalizing coefficient of the sources: "the
-normalizing coefficient `R_n` is canonically defined to be equal to the maximum in
-`t ∈ [0, 1]` of `|𝒮(t·l_n(x)) - t·𝒮(l_n)|`".
+**Maximal fluctuation of the odometer partial sums.** Let $q$ be a complex number, let
+$\omega = (\omega_0, \omega_1, \dots)$ be a dyadic integer (a sequence of binary digits), let $l$
+be a natural number, and let $S_{q,\omega}$ denote the interpolated odometer partial sums. The
+maximal fluctuation is the supremum over $t \in [0, 1]$ of
+$|S_{q,\omega}(t l) - t\,S_{q,\omega}(l)|$.
+
+This is the scale of the canonical normalizing coefficient of the sources: "the normalizing
+coefficient $R_n$ is canonically defined to be equal to the maximum in $t \in [0, 1]$ of
+$|\mathcal{S}(t \cdot l_n(x)) - t \cdot \mathcal{S}(l_n)|$".
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odometer Digit Partial Sum](odometer-digit-partial-sum.md)
+- [Odometer partial sums](odometer-digit-partial-sum.md)
 
 ## Sources
 

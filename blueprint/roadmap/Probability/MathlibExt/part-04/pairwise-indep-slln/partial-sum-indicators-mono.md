@@ -6,14 +6,15 @@ proof: formalized
 lean: ProbabilityTheory.partialSumIndicators_mono
 ---
 
-# Partial Sum Indicators mono
+# Partial sums of indicators are nondecreasing
 
-Pointwise monotonicity of the partial sum process: for each `ω`, the map
-`n ↦ S_n(ω)` is nondecreasing.
+**Partial sums of indicators are nondecreasing.** For sets $A_0, A_1, \dots$ and every
+$\omega \in \Omega$, the map $n \mapsto S_n(\omega)$, where $S_n = \sum_{i < n} 1_{A_i}$, is
+nondecreasing.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Sources
 

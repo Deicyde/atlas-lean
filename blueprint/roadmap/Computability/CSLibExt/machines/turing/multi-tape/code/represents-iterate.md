@@ -20,7 +20,7 @@ configuration on $x$.
 - [Initial configuration of the clocked evaluator](init.md)
 - [Evaluator step](step.md)
 - [Explicit configurations representing machine configurations](represents.md)
-- [The machine of a code](to-tm.md)
+- [The multi-tape machine of a code](to-tm.md)
 
 ## Proof depends on
 

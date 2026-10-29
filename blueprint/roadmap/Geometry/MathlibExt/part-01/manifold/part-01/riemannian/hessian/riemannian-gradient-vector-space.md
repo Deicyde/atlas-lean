@@ -21,7 +21,7 @@ derivative of $f$ at $x$.
 
 ## Proof depends on
 
-- [Inner riemannian Gradient](inner-riemannian-gradient.md)
+- [Pairing of the Riemannian gradient with a tangent vector](inner-riemannian-gradient.md)
 
 ## Sources
 

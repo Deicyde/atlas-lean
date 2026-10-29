@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadOpt
 ---
 
-# Hastad Opt
+# Optimum of a MAX-3SAT instance
 
-The MAX-3SAT optimum on instance `x`, over assignments of length `|x|`.
+**Optimum of a MAX-3SAT instance.** The MAX-3SAT optimum of a bitstring $x$ is the maximum,
+over all bitstrings $a$ of length $|x|$, of the MAX-3SAT value of $a$ on $x$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hastad Val](hastad-val.md)
+- [Value of a MAX-3SAT assignment](hastad-val.md)
 
 ## Sources
 

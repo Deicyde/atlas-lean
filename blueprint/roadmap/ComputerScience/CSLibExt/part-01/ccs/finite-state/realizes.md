@@ -21,7 +21,7 @@ exactly when $s(x)$ contains an entry $(a, y)$ with $P_y = q$.
 
 ## Proof depends on
 
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 
 ## Sources
 

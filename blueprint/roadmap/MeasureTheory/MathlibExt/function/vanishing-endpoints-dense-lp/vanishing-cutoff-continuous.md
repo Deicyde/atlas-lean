@@ -18,7 +18,7 @@ $\mathbb{R} \to \mathbb{R}$.
 
 ## Proof depends on
 
-- [Interval Cutoff continuous](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-continuous.md)
+- [Continuity of the interval cutoff](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-continuous.md)
 
 ## Sources
 

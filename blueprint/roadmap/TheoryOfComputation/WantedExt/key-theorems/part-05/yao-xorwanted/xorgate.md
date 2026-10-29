@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.XORGate
 ---
 
-# XORGate
+# Encoded gates
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`.
+**Encoded gates.** An encoded gate is a pair $(k, r)$ of a natural number $k$ (the gate kind)
+and a list $r$ of natural numbers (its references), the shared (kind, references) encoding of
+gates of flat Boolean circuits.
 
 ## Depends on
 

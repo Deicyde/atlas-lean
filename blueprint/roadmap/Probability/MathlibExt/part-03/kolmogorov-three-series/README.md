@@ -6,13 +6,13 @@ navigation: module
 
 ## Probability Theory
 
-- [Ae tendsto sum of indep centered L1bdd](ae-tendsto-sum-of-indep-centered-l1bdd.md)
+- [Almost-sure convergence of L¹-bounded sums of independent centered variables](ae-tendsto-sum-of-indep-centered-l1bdd.md)
 
 ## Kolmogorov Three Series
 
-- [Truncated RV](truncated-rv.md)
-- [Ae tendsto centered of indep summable Var](ae-tendsto-centered-of-indep-summable-va.md)
-- [Ae eventually truncation eq](ae-eventually-truncation-eq.md)
-- [Ae tendsto of ae eventually eq and ae tendsto](ae-tendsto-of-ae-eventually-eq-and-ae-te.md)
-- [Ae tendsto truncated of conditions](ae-tendsto-truncated-of-conditions.md)
+- [Truncation of a random variable](truncated-rv.md)
+- [Centered truncated sums converge almost surely](ae-tendsto-centered-of-indep-summable-va.md)
+- [Truncations eventually agree with the variables](ae-eventually-truncation-eq.md)
+- [Eventually equal series inherit almost-everywhere convergence](ae-tendsto-of-ae-eventually-eq-and-ae-te.md)
+- [Truncated sums converge almost surely](ae-tendsto-truncated-of-conditions.md)
 - [Kolmogorov's three-series theorem (sufficiency direction)](kolmogorov-three-series-sufficiency.md)

@@ -6,11 +6,12 @@ proof: formalized
 lean: Cslib.Turing.MultiTapeTM.Code.evalSteps_mono
 ---
 
-# Monotonicity of the clocked evaluator
+# Monotonicity of the clocked evaluator for multi-tape codes
 
-**Monotonicity of the clocked evaluator.** For a code $c$, a binary input $x$, a binary
-word $o$ and clocks $T \le T'$ in $\mathbb{N}$, if the clocked evaluator of $c$ on $x$ returns $o$
-with clock $T$, then it also returns $o$ with clock $T'$.
+**Monotonicity of the clocked evaluator for multi-tape codes.** For a code $c$ for machines
+with $k$ work tapes, a binary input $x$, a binary word $o$ and clocks $T \le T'$ in $\mathbb{N}$,
+if the clocked evaluator of $c$ on $x$ returns $o$ with clock $T$, then it also returns $o$ with
+clock $T'$.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ with clock $T$, then it also returns $o$ with clock $T'$.
 ## Proof depends on
 
 - [Evaluator agreement](eval-steps-eq-some-iff.md)
-- [The machine of a code](to-tm.md)
+- [The multi-tape machine of a code](to-tm.md)
 
 ## Sources
 

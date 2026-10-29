@@ -5,13 +5,15 @@ statement: formalized
 lean: Metric.IsGeodesicOn
 ---
 
-# Is Geodesic On
+# Geodesic on a set of times
 
-`γ` is a geodesic on the set of times `s`: it is a geodesic of some constant speed `c ≥ 0`
-(`IsGeodesicOnWithSpeed`).
+**Geodesic on a set of times.** Let $X$ be a pseudo-extended metric space. A curve
+$\gamma : \mathbb{R} \to X$ is a geodesic on a set of times $s \subseteq \mathbb{R}$ if, for some
+real number $c \ge 0$, it is a geodesic of speed $c$ on $s$.
 
-On a Riemannian manifold (with its Riemannian distance) these are the constant-speed Riemannian
-geodesics; see the module docstring.
+On a Riemannian manifold without boundary, with its Riemannian distance, every Riemannian geodesic
+is a geodesic in this sense, and the piecewise $C^1$ geodesics in this sense are the Riemannian
+geodesics.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
+- [Geodesics of a given speed on a set of times](is-geodesic-on-with-speed.md)
 
 ## Sources
 

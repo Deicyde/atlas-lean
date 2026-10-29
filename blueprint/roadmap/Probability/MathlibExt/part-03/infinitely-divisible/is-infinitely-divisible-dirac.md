@@ -6,19 +6,20 @@ proof: formalized
 lean: MeasureTheory.Measure.isInfinitelyDivisible_dirac
 ---
 
-# Is Infinitely Divisible dirac
+# Dirac measures on the real line are infinitely divisible
 
-Every Dirac measure on `ℝ` is infinitely divisible: `δ_a` is the `n`-fold
-convolution power of `δ_{a/n}`.
+**Dirac measures on the real line are infinitely divisible.** For every real number $a$, the
+Dirac measure $\delta_a$ on $\mathbb{R}$ is infinitely divisible: for every $n \ge 1$, $\delta_a$
+is the $n$-fold convolution power of $\delta_{a/n}$.
 
 ## Depends on
 
-- [Is Infinitely Divisible](is-infinitely-divisible.md)
+- [Infinitely divisible measures](is-infinitely-divisible.md)
 
 ## Proof depends on
 
-- [Conv Pow](conv-pow.md)
-- [Conv Pow dirac](conv-pow-dirac.md)
+- [Convolution power of a measure](conv-pow.md)
+- [Convolution powers of a Dirac measure](conv-pow-dirac.md)
 
 ## Sources
 

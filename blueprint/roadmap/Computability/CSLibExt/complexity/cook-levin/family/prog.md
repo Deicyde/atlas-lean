@@ -51,7 +51,7 @@ counter empty.
 - [Entry label of a literal routine (transition-clause generator)](lit-l.md)
 - [Stages of the transition-clause generator's literal routine](ls.md)
 - [Stages of the transition-clause generator's precomputation](ps.md)
-- [Lit P](lit-p.md)
+- [Literal routine of the transition-clause generator](lit-p.md)
 - [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)

@@ -6,14 +6,14 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsSlowlyVarying.const_mul
 ---
 
-# Const mul
+# Positive multiples of slowly varying functions
 
-Slowly varying functions are closed under multiplication by a positive
-constant.
+**Positive multiples of slowly varying functions.** If $L : \mathbb{R} \to \mathbb{R}$ is slowly
+varying and $c > 0$, then $x \mapsto c L(x)$ is slowly varying.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

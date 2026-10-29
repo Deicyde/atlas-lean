@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctThreeSATNEXPComplete.s3ValidGate
 ---
 
-# S3 Valid Gate
+# Valid gates of a succinct 3SAT descriptor
 
-Arity/shape validation for gate `j` of the description circuit on `n + 2`
-inputs: input gates reference an input `< n + 2`, constant gates carry a bit
-`≤ 1`, and every non-input gate references only strictly earlier gates.
+**Valid gates of a succinct 3SAT descriptor.** Let $C$ be a list of gates encoded as
+(kind, references) pairs and let $n$ and $j$ be natural numbers. Gate $j$ of $C$ is valid when
+$C$ has more than $j$ entries and its entry $j$ (counting from $0$) is one of: $(0, [i])$ with
+$i < n + 2$ (an input gate); $(1, [b])$ with $b \le 1$ (a constant gate); $(2, [a])$ with
+$a < j$ (a negation gate); or $(3, r)$ or $(4, r)$ where every entry $a$ of $r$ satisfies
+$a < j$ (a conjunction or disjunction gate). Every other entry is invalid.
 
 ## Depends on
 
-- [S3 Gate](s3-gate.md)
+- [Encoded gates](s3-gate.md)
 
 ## Sources
 

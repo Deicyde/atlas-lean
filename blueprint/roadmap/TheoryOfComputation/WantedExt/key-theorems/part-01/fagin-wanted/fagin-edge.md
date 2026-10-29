@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEdge
 ---
 
-# Fagin Edge
+# Edge relation of a graph
 
-The edge relation of a graph on `Fin n`.
+**Edge relation of a graph.** Let $G$ be a graph with vertices $0, \dots, n-1$ and edge table
+$t$, a finite list of booleans. For vertices $a, b < n$, there is an edge from $a$ to $b$ exactly
+when the entry of $t$ at position $an + b$ (counting from $0$) is true; a position beyond the end
+of $t$ counts as false.
 
 ## Depends on
 
-- [Fagin Graph](fagin-graph.md)
+- [Finite graphs as edge tables](fagin-graph.md)
 
 ## Sources
 

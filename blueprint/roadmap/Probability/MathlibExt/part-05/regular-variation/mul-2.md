@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsRegularlyVarying.mul
 ---
 
-# Mul
+# Products of regularly varying functions
 
-Regularly varying functions are closed under multiplication, with indices
-adding.
+**Products of regularly varying functions.** If $f : \mathbb{R} \to \mathbb{R}$ is regularly
+varying with index $\rho$ and $g : \mathbb{R} \to \mathbb{R}$ is regularly varying with index
+$\sigma$, then the pointwise product $fg$ is regularly varying with index $\rho + \sigma$.
 
 ## Depends on
 
-- [Is Regularly Varying](is-regularly-varying.md)
+- [Regularly varying function](is-regularly-varying.md)
 
 ## Proof depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
-- [Mul](mul.md)
+- [Slowly varying function](is-slowly-varying.md)
+- [Products of slowly varying functions](mul.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 - [Amenable group (Følner condition)](../../../MathlibExt/part-01/amenable-group/is-amenable.md)
 - [Groups containing a free subgroup of rank two](contains-free-group-rank-two.md)
-- [Is Branch Group](is-branch-group.md)
+- [Branch groups (Kourovka 15.14 version)](is-branch-group.md)
 
 ## Sources
 

@@ -8,7 +8,7 @@ navigation: module
 
 - [Coding head moves](encode-move.md)
 - [Coding an action](encode-action.md)
-- [Decoding a coded action](to-action-encode-action.md)
+- [Decoding the coding of an action](to-action-encode-action.md)
 
 ## The finite-state machine of a code
 

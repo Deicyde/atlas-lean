@@ -14,7 +14,7 @@ value of the same type in the same context.
 
 ## Depends on
 
-- [Semantic environments](sem-env.md)
+- [Semantic environments for normalization by evaluation](sem-env.md)
 - [Simple types](../syntax/ty.md)
 
 ## Proof depends on

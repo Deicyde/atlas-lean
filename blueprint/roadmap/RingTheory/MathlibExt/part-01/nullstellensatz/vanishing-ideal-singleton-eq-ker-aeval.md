@@ -6,10 +6,11 @@ proof: formalized
 lean: HilbertNullstellensatz.vanishingIdeal_singleton_eq_ker_aeval
 ---
 
-# Vanishing Ideal singleton eq ker aeval
+# Vanishing ideal of a point
 
-The vanishing ideal of a singleton is the kernel of evaluation at
-that point.
+**Vanishing ideal of a point.** For a point $a \in \mathbb{C}^n$, the ideal of polynomials in
+$\mathbb{C}[x_1, \ldots, x_n]$ that vanish on $\{a\}$ equals the kernel of the evaluation
+homomorphism $\mathbb{C}[x_1, \ldots, x_n] \to \mathbb{C}$, $f \mapsto f(a)$.
 
 ## Depends on
 

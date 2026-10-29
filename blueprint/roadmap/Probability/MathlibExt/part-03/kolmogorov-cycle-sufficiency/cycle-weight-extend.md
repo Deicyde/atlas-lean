@@ -6,27 +6,28 @@ proof: formalized
 lean: StochasticMatrix.cycleWeight_extend
 ---
 
-# Cycle Weight extend
+# Cycle weights along a positive transition
 
-Extending the path by one positive-probability transition `i → j` multiplies the cycle
-weight by `P(i,j) / P(j,i)`. Equivalently, `cycleWeight i₀ j = cycleWeight i₀ i · P(i,j)/P(j,i)`
-whenever `P(i,j) > 0`.
+**Cycle weights along a positive transition.** Let $P$ be an irreducible stochastic matrix on
+the states $\{0, \dots, M\}$ satisfying Kolmogorov's cycle condition, fix a reference state
+$i_0$, and write $w(j)$ for the cycle weight of a state $j$ relative to $i_0$. If $i, j$ are
+states with $P(i, j) > 0$, then $w(i) \cdot P(i, j) / P(j, i) = w(j)$.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
-- [Is Irreducible](../kolmogorov-cycle-necessity/is-irreducible.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Irreducible stochastic matrix](../kolmogorov-cycle-necessity/is-irreducible.md)
 - [Kolmogorov's cycle condition](../kolmogorov-cycle-necessity/kolmogorov-cycle-condition.md)
-- [Cycle Weight](cycle-weight.md)
+- [Cycle weight](cycle-weight.md)
 
 ## Proof depends on
 
-- [Exists path](exists-path.md)
+- [Irreducible chains have positive paths](exists-path.md)
 - [Path independence of cycle weight](cycle-weight-path-independent.md)
-- [List Path Product](list-path-product.md)
-- [List Path Product append pos](list-path-product-append-pos.md)
-- [List Ratio Product](list-ratio-product.md)
-- [List Ratio Product snoc](list-ratio-product-snoc.md)
+- [Forward path product](list-path-product.md)
+- [Joining positive paths](list-path-product-append-pos.md)
+- [Ratio product along a path](list-ratio-product.md)
+- [Ratio product after appending a state](list-ratio-product-snoc.md)
 
 ## Sources
 

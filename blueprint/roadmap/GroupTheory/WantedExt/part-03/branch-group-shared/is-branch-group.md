@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Level Transitive Faithful Action](level-transitive-faithful-action.md)
+- [Faithful level-transitive action on a rooted tree](level-transitive-faithful-action.md)
 - [Branch action](is-branch-action.md)
 - [Rooted tree given by levels](rooted-tree.md)
 

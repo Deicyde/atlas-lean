@@ -4,6 +4,6 @@ navigation: module
 
 # Discriminant Tower
 
-- [Discriminant Ideal](discriminant-ideal.md)
-- [Discriminant Ideal eq span Norm](discriminant-ideal-eq-span-norm.md)
-- [Discriminant Ideal tower](discriminant-ideal-tower.md)
+- [Discriminant ideal of a Dedekind extension](discriminant-ideal.md)
+- [The discriminant ideal is the norm of the different](discriminant-ideal-eq-span-norm.md)
+- [Tower formula for discriminant ideals](discriminant-ideal-tower.md)

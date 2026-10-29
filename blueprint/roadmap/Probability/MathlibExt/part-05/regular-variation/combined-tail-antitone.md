@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.combinedTail_antitone
 ---
 
-# Combined Tail antitone
+# The combined tail is antitone
 
-The combined tail is antitone in the threshold.
+**The combined tail is antitone.** Let $\mu$ be a finite measure on $\mathbb{R}$ and write
+$T(x) = \mu((x, \infty)) + \mu((-\infty, -x))$ for its combined tail at a real number $x$. Then
+$T$ is antitone: $T(b) \le T(a)$ whenever $a \le b$.
 
 ## Depends on
 
-- [Combined Tail](combined-tail.md)
+- [Combined tail of a measure](combined-tail.md)
 
 ## Proof depends on
 
-- [Left Tail](left-tail.md)
-- [Left Tail antitone](left-tail-antitone.md)
-- [Right Tail](right-tail.md)
-- [Right Tail antitone](right-tail-antitone.md)
+- [Left tail of a measure](left-tail.md)
+- [Monotonicity of the left tail](left-tail-antitone.md)
+- [Right tail of a measure](right-tail.md)
+- [The right tail of a finite measure is antitone](right-tail-antitone.md)
 
 ## Sources
 

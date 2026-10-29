@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.PCF.Tm.adequacy
 ---
 
-# Adequacy
+# Computational adequacy for PCF
 
-Computational adequacy: if a closed term of ground type denotes `n`, it
-evaluates to the numeral `n`.
+**Computational adequacy for PCF.** Let $t$ be a closed PCF term of ground type
+$\mathsf{nat}$ and let $n$ be a natural number. If the denotation of $t$ in the empty environment
+is defined with value $n$, then $t$ evaluates to the numeral $\mathsf{succ}^n(\mathsf{zero})$.
 
 ## Depends on
 

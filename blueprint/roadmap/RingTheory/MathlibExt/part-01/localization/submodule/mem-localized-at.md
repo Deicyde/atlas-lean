@@ -6,14 +6,15 @@ proof: formalized
 lean: Submodule.mem_localizedAt
 ---
 
-# Mem localized At
+# Membership in the saturation
 
-Membership in the saturation at `S`: `v` lies in
-`M.localizedAt S` iff some `s ∈ S` has `s • v ∈ M`.
+**Membership in the saturation.** Let $A$ be a commutative ring, $V$ an $A$-module, $M$ a
+submodule of $V$ and $S$ a submonoid of $A$. An element $v \in V$ lies in the saturation of $M$ at
+$S$ if and only if $s v \in M$ for some $s \in S$.
 
 ## Depends on
 
-- [Localized At](localized-at.md)
+- [Saturation of a submodule at a submonoid](localized-at.md)
 
 ## Sources
 

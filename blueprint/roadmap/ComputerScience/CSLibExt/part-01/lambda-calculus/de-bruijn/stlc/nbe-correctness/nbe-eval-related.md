@@ -16,10 +16,10 @@ then the NbE evaluation of $t$ in $\xi$ realizes the denotation of $t$ in $\eta$
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Realization of environments](nbe-env-related.md)
 - [Kripke realization relation for NbE](nbe-related.md)
-- [Semantic environments](../nbe/sem-env.md)
+- [Semantic environments for normalization by evaluation](../nbe/sem-env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Simple types](../syntax/ty.md)

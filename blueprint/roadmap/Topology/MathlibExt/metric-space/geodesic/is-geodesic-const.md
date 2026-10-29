@@ -6,17 +6,20 @@ proof: formalized
 lean: Metric.isGeodesic_const
 ---
 
-# Is Geodesic const
+# Constant curves are geodesics
 
-Constant curves are geodesics (of speed `0`).
+**Constant curves are geodesics.** Let $X$ be a pseudo-extended metric space. For every point
+$p \in X$, the constant curve $\mathbb{R} \to X$, $t \mapsto p$, is a geodesic.
+
+Its speed is $0$.
 
 ## Depends on
 
-- [Is Geodesic](is-geodesic.md)
+- [Geodesics defined for all times](is-geodesic.md)
 
 ## Proof depends on
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
+- [Geodesics of a given speed on a set of times](is-geodesic-on-with-speed.md)
 
 ## Sources
 

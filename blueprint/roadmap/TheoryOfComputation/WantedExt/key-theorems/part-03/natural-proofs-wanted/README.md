@@ -4,12 +4,12 @@ navigation: module
 
 # Natural Proofs
 
-- [NPGate](npgate.md)
-- [Np Circuit Eval](np-circuit-eval.md)
-- [Truth Table](truth-table.md)
-- [Natural Property](natural-property.md)
-- [Lang Of Family](lang-of-family.md)
-- [Useful Against PPoly](useful-against-ppoly.md)
-- [PRFIn PPoly](prfin-ppoly.md)
-- [PRFSecure](prfsecure.md)
+- [Encoded gates](npgate.md)
+- [Evaluation of an encoded circuit](np-circuit-eval.md)
+- [Truth table](truth-table.md)
+- [Natural property](natural-property.md)
+- [The decision problem of a family of Boolean functions](lang-of-family.md)
+- [Usefulness against P/poly](useful-against-ppoly.md)
+- [Keyed function families in P/poly](prfin-ppoly.md)
+- [Security of a keyed function family against truth-table distinguishers](prfsecure.md)
 - [Razborov-Rudich: the natural proofs barrier](razborov-rudich-natural-proofs.md)

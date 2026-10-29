@@ -4,6 +4,6 @@ navigation: module
 
 # Wedderburn Irrep
 
-- [Wedderburn Alg Hom](wedderburn-alg-hom.md)
-- [Wedderburn Irrep](wedderburn-irrep.md)
+- [Algebra map of a Wedderburn block](wedderburn-alg-hom.md)
+- [Representation of a Wedderburn block](wedderburn-irrep.md)
 - [Wedderburn blocks are irreducible](wedderburn-irrep-is-irreducible.md)

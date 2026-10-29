@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.primrec₂_decodeIsSomeStep
 ---
 
-# The step function is primitive recursive
+# The course-of-values step for definedness is primitive recursive
 
-**The step function is primitive recursive.**
+**The course-of-values step for definedness is primitive recursive.** One step of the
+course-of-values recursion for definedness is primitive recursive as a function of its two
+arguments, an element of the unit type and a list of natural numbers.
 
 ## Depends on
 

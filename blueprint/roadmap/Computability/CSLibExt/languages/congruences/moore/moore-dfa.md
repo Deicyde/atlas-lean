@@ -29,7 +29,7 @@ and their successors on each letter are again Moore-related.
 - [Moore's relation](moore-rel.md)
 - [Moore equivalence on reachable states](moore-setoid.md)
 - [Moore refinement step](moore-step.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 - [The start state is reachable](../../../decidability/part-02/regular/start-mem-reachable.md)
 - [Reachable states are closed under transitions](../../../decidability/part-02/regular/step-mem-reachable.md)
 - [Finite iteration from the whole type reaches a fixed point](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)

@@ -16,7 +16,7 @@ translation lattice of $G$.
 
 - [The Euclidean plane for discrete isometry groups](e2.md)
 - [Isometry group of the Euclidean plane](m.md)
-- [Translation Lattice](translation-lattice.md)
+- [Translation lattice](translation-lattice.md)
 - [Translation lattice as an additive subgroup](translation-lattice-subgroup.md)
 
 ## Sources

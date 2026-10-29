@@ -4,10 +4,10 @@ navigation: module
 
 # Biproduct
 
-- [Biprod Iso](biprod-iso.md)
-- [Biprod Iso hom](biprod-iso-hom.md)
-- [Biprod Iso inv](biprod-iso-inv.md)
-- [Biprod Iso hom fst](biprod-iso-hom-fst.md)
-- [Biprod Iso hom snd](biprod-iso-hom-snd.md)
-- [Biprod Iso inv inl](biprod-iso-inv-inl.md)
-- [Biprod Iso inv inr](biprod-iso-inv-inr.md)
+- [Group homology of a direct sum](biprod-iso.md)
+- [Forward map of the direct-sum isomorphism in group homology](biprod-iso-hom.md)
+- [Inverse map of the direct-sum isomorphism in group homology](biprod-iso-inv.md)
+- [Direct-sum isomorphism in group homology and the first projection](biprod-iso-hom-fst.md)
+- [Direct-sum isomorphism in group homology and the second projection](biprod-iso-hom-snd.md)
+- [Direct-sum isomorphism in group homology and the first inclusion](biprod-iso-inv-inl.md)
+- [Direct-sum isomorphism in group homology and the second inclusion](biprod-iso-inv-inr.md)

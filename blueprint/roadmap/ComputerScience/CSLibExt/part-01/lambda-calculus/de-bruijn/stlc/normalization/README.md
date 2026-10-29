@@ -11,7 +11,7 @@ navigation: module
 
 ## Stlc
 
-- [Normalizes](normalizes.md)
+- [Normalizing closed terms](normalizes.md)
 
 ## Normalizes
 

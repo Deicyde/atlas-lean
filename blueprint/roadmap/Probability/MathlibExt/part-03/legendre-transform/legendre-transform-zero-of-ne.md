@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.legendreTransform_zero_of_ne
 ---
 
-# Legendre Transform zero of ne
+# Legendre transform of the zero function away from the origin
 
-The conjugate of the zero function is `⊤` at every nonzero vector.
+**Legendre transform of the zero function away from the origin.** Let $d \in \mathbb{N}$
+and let $\Lambda : \mathbb{R}^d \to [-\infty, \infty]$ be the zero function. Its Legendre
+transform $\Lambda^*$ satisfies $\Lambda^*(x) = +\infty$ for every nonzero $x \in \mathbb{R}^d$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Le legendre Transform](le-legendre-transform.md)
+- [Fenchel–Young inequality for the Legendre transform](le-legendre-transform.md)
 
 ## Sources
 

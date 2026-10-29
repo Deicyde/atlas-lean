@@ -6,10 +6,10 @@ proof: formalized
 lean: Ideal.finite_setOf_isPrime_and_mem
 ---
 
-# Finite set Of is Prime and mem
+# Finitely many primes contain a nonzero element
 
-Lemma 3.6: only finitely many prime ideals of a Dedekind domain contain a
-given nonzero element.
+**Finitely many primes contain a nonzero element.** In a Dedekind domain $A$, every nonzero
+element $a$ lies in only finitely many prime ideals of $A$.
 
 ## Depends on
 
@@ -18,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FiniteSupport](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS `NumberTheoryI` Lemma 3.6.

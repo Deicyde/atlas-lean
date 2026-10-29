@@ -6,18 +6,20 @@ proof: formalized
 lean: ProbabilityTheory.memLp_partialSumIndicators
 ---
 
-# Mem Lp partial Sum Indicators
+# Partial sums of indicators are square-integrable
 
-The partial-sum random variable `S_n` is in `L²`.
+**Partial sums of indicators are square-integrable.** Let $\mu$ be a probability measure and
+let $A_0, A_1, \dots$ be measurable sets. For every $n$, the partial sum
+$S_n = \sum_{i < n} 1_{A_i}$ lies in $L^2(\mu)$.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Proof depends on
 
-- [Mem Lp indicator one](mem-lp-indicator-one.md)
-- [Partial Sum Indicators eq](partial-sum-indicators-eq.md)
+- [Indicators are square-integrable](mem-lp-indicator-one.md)
+- [The partial sum as a sum of indicator functions](partial-sum-indicators-eq.md)
 
 ## Sources
 

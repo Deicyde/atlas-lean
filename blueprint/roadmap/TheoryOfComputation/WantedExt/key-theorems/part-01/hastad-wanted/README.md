@@ -4,7 +4,7 @@ navigation: module
 
 # Hastad
 
-- [Hastad Nondegenerate](hastad-nondegenerate.md)
-- [Hastad Val](hastad-val.md)
-- [Hastad Opt](hastad-opt.md)
+- [Nondegenerate 3-clauses](hastad-nondegenerate.md)
+- [Value of a MAX-3SAT assignment](hastad-val.md)
+- [Optimum of a MAX-3SAT instance](hastad-opt.md)
 - [Hastad: optimal inapproximability of MAX-3SAT](hastad-max3sat-inapproximability.md)

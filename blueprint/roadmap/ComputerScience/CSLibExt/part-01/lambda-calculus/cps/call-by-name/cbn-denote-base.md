@@ -21,7 +21,7 @@ of $t$, applied to $k$, equals $k$ applied to the denotation of $t$ in $\eta$.
 - [Call-by-name CPS translation of terms](cbn.md)
 - [Computation types of the call-by-name CPS translation](cbn-comp.md)
 - [Call-by-name CPS translation of types](cbn-ty.md)
-- [Semantic environments](../../de-bruijn/stlc/denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../../de-bruijn/stlc/denotational/env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../../de-bruijn/stlc/syntax/tm.md)
 - [Denotation of an STLC term](../../de-bruijn/stlc/denotational/denote-2.md)
 - [Simple types](../../de-bruijn/stlc/syntax/ty.md)

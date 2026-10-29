@@ -16,7 +16,7 @@ evaluator of $c$ on $x$ with clock $T$ returns a result.
 
 - [Codes for single-tape machines](code.md)
 - [The clocked evaluator](eval-steps.md)
-- [The machine of a code](machine.md)
+- [The machine of a single-tape code](machine.md)
 - [Input word of a list of bits](input.md)
 
 ## Proof depends on

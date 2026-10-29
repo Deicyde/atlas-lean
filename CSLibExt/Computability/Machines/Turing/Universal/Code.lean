@@ -134,9 +134,9 @@ def input (x : List Bool) : List ℕ := x.map bitSym
 
 namespace Code
 
-/-- **Codes as tables.** Codes correspond bijectively to transition tables, that is, to lists of
-rows, each a list of entries that are either empty or a pair of natural numbers: a code
-corresponds to its table. -/
+/-- **Single-tape codes as tables.** Codes for single-tape machines correspond bijectively to
+transition tables, that is, to lists of rows, each a list of entries that are either empty or a
+pair of natural numbers: a code corresponds to its table. -/
 def equivTable : Code ≃ List (List (Option (ℕ × ℕ))) where
   toFun := table
   invFun := mk
@@ -152,17 +152,17 @@ $(q', s)$ of a next state and an action code, or no entry (halt). It is no entry
 table has no row $q$ or that row has no column $a$. -/
 def lookup (c : Code) (q a : ℕ) : Option (ℕ × ℕ) := (c.table[q]?.bind fun row ↦ row[a]?).join
 
-/-- **The machine of a code.** The machine of a code $c$ is the single-tape Turing machine with
-states and symbols in $\mathbb{N}$ that, in state $q$ reading symbol $a$, halts if the table
-lookup of $c$ at state $q$ and symbol $a$ has no entry, and otherwise, if the entry is
+/-- **The machine of a single-tape code.** The machine of a code $c$ is the single-tape Turing
+machine with states and symbols in $\mathbb{N}$ that, in state $q$ reading symbol $a$, halts if
+the table lookup of $c$ at state $q$ and symbol $a$ has no entry, and otherwise, if the entry is
 $(q', s)$, enters state $q'$ and does the action coded by $s$: $0$ moves left, $1$ moves right
 and $a' + 2$ writes $a'$. -/
 def machine (c : Code) : TM0.Machine ℕ ℕ := fun q a ↦
   (c.lookup q a).map fun e ↦ (e.1, decodeStmt e.2)
 
-/-- **States of a code.** The set of states of a code $c$ is the finite set of natural numbers
-consisting of the initial state $0$ and every state $q'$ such that some entry of the table of $c$
-is a pair $(q', s)$. -/
+/-- **States of a single-tape code.** The set of states of a code $c$ is the finite set of natural
+numbers consisting of the initial state $0$ and every state $q'$ such that some entry of the
+table of $c$ is a pair $(q', s)$. -/
 def states (c : Code) : Finset ℕ :=
   insert 0 (c.table.flatten.filterMap fun o ↦ o.map Prod.fst).toFinset
 
@@ -453,9 +453,10 @@ theorem evalSteps_eq_some_iff_output (c : Code) (x : List Bool) (T : ℕ) (l : L
   unfold evalSteps
   cases c.step (c.cfgAfter x T) <;> simp
 
-/-- **Monotonicity of the clocked evaluator.** Let $c$ be a code, $x$ a list of bits, $l$ a list
-of natural numbers and $T \le T'$ natural numbers. If the clocked evaluator returns $l$ on $c$
-and $x$ with clock $T$, then it also returns $l$ with clock $T'$. -/
+/-- **Monotonicity of the single-tape clocked evaluator.** Let $c$ be a code for a single-tape
+machine, $x$ a list of bits, $l$ a list of natural numbers and $T \le T'$ natural numbers. If the
+clocked evaluator returns $l$ on $c$ and $x$ with clock $T$, then it also returns $l$ with clock
+$T'$. -/
 theorem evalSteps_mono {c : Code} {x : List Bool} {T T' : ℕ} {l : List ℕ}
     (h : c.evalSteps x T = some l) (hT : T ≤ T') : c.evalSteps x T' = some l := by
   rw [evalSteps_eq_some_iff_output] at h ⊢

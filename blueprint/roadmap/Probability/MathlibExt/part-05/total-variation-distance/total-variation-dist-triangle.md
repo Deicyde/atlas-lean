@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.TotalVariationDistance.totalVariationDist_triangle
 ---
 
-# Total Variation Dist triangle
+# Triangle inequality for total variation distance
 
-Total variation distance satisfies the triangle inequality for finite measures.
+**Triangle inequality for total variation distance.** For finite measures $\mu$, $\nu$ and
+$\rho$ on a measurable space, the total variation distance satisfies
+$d_{TV}(\mu, \rho) \le d_{TV}(\mu, \nu) + d_{TV}(\nu, \rho)$.
 
 ## Depends on
 
-- [Total Variation Dist](total-variation-dist.md)
+- [Total variation distance between finite measures](total-variation-dist.md)
 
 ## Sources
 

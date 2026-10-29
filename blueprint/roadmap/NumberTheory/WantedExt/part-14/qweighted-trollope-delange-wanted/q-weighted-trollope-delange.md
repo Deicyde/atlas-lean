@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.qWeighted_trollopeDelange
 ---
 
-# Q Weighted trollope Delange
+# The $q$-weighted Trollope–Delange formula
 
-The `q`-weighted Trollope-Delange formula: for real `q` with `|q| > 1/2`, `q ≠ 1`,
-`a = 1/(2q)` and every positive integer `n`, with `k = ⌊log₂ n⌋ = Nat.log 2 n`,
-`S_q(n) / n = (q/2) ((1 - q^{k+1})/(1 - q) - q^k F̂_q(log₂ n))`, where
-`F̂_q(u) = 2^{1-u} 𝒯_a(2^{-(1-u)})` on `[0, 1)` extended with period `1` (evaluated at the
-fractional part `{log₂ n}`).
+**The $q$-weighted Trollope–Delange formula.** Let $q$ be a real number with $|q| > 1/2$ and
+$q \ne 1$, and put $a = 1/(2q)$. For a positive integer $n$, let $k = \lfloor \log_2 n \rfloor$
+and let $u = \log_2 n - k$ be the fractional part of $\log_2 n$. Write
+$F(u) = 2^{1-u}\,\mathcal{T}_a(2^{u-1})$. Then
+
+$$\frac{S_q(n)}{n} = \frac{q}{2}\left(\frac{1 - q^{k+1}}{1 - q} - q^k F(u)\right),$$
+
+where $S_q$ is the partial sum of the $q$-weighted binary digit sum and $\mathcal{T}_a$ is the
+Takagi–Landsberg function.
 
 ## Depends on
 
-- [Q Weighted Digit Partial Sum](q-weighted-digit-partial-sum.md)
-- [Takagi Landsberg](takagi-landsberg.md)
+- [Partial sums of the $q$-weighted binary digit sum](q-weighted-digit-partial-sum.md)
+- [The Takagi–Landsberg function](takagi-landsberg.md)
 
 ## Sources
 

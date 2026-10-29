@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.KarpLuby.dnfCountOf
 ---
 
-# Dnf Count Of
+# Number of satisfying assignments of an encoded DNF formula
 
-The number of satisfying assignments of the DNF formula decoded from `x`
-(`0` on malformed inputs).
+**Number of satisfying assignments of an encoded DNF formula.** For a bitstring $x$: if $x$
+decodes, under the canonical bitstring encoding, to a pair $(u, \varphi)$ of a bitstring $u$ of
+length $m$ and a DNF formula $\varphi$ all of whose literals have variables less than $m$, the
+value at $x$ is the number of assignments of booleans to the variables $0, \dots, m - 1$ that
+satisfy $\varphi$; otherwise the value is $0$.
 
 ## Depends on
 
@@ -24,7 +27,7 @@ This node has no prerequisites.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Dnf Sat](dnf-sat.md)
+- [Satisfaction of a DNF formula](dnf-sat.md)
 
 ## Sources
 

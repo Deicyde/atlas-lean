@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.perfectMatchingProblem
 ---
 
-# Perfect Matching Problem
+# Perfect matching in uniform hypergraphs with a codegree condition
 
-The decision problem `PM(k, c)` over bitstrings. An input decodes to `(n, E)`, a list `E` of
-edges of a `k`-uniform hypergraph `H` on `{0, …, n - 1}`; it is accepted iff every listed edge is
-a list of `k` distinct vertices below `n`, `k ∣ n`, every `(k - 1)`-set of vertices lies in at
-least `c n` edges (`δ_{k-1}(H) ≥ c n`), and `H` has a perfect matching (`n / k` pairwise disjoint
-edges). Inputs that do not decode are rejected.
+**Perfect matching in uniform hypergraphs with a codegree condition.** For a natural number
+$k$ and a rational $c$, $\mathrm{PM}(k, c)$ is the decision problem on bitstrings that decodes an
+input as a pair $(n, E)$ of a natural number $n$ and a list $E$ of lists of natural numbers, and
+accepts it iff every list in $E$ consists of $k$ distinct vertices below $n$, $k \mid n$, every
+$(k-1)$-element subset of $\{0, \dots, n-1\}$ is contained in at least $cn$ edges of the
+hypergraph $H$ whose edges are the vertex sets of the lists in $E$, and $H$ has a perfect
+matching, that is, $n/k$ pairwise disjoint edges. Inputs that do not decode are rejected.
 
 ## Depends on
 

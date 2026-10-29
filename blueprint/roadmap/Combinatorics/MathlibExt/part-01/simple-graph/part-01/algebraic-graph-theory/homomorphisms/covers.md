@@ -5,10 +5,10 @@ statement: formalized
 lean: SimpleGraph.Covers
 ---
 
-# Covers
+# Graph cover
 
-We say that a finite graph X covers a finite graph Y if there is a surjective local isomorphism
-from X to Y.
+**Graph cover.** A finite graph $X$ *covers* a finite graph $Y$ if there is a surjective local
+isomorphism from $X$ to $Y$.
 
 ## Depends on
 

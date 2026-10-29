@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsSlowlyVarying.of_eventuallyEq
 ---
 
-# Of eventually Eq
+# Slow variation is preserved by eventual equality
 
-Slow variation is preserved by changing the function on an eventually avoided set.
+**Slow variation is preserved by eventual equality.** Let $f, g : \mathbb{R} \to \mathbb{R}$.
+If $f$ is slowly varying and $f(x) = g(x)$ for all sufficiently large $x$, then $g$ is slowly
+varying.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

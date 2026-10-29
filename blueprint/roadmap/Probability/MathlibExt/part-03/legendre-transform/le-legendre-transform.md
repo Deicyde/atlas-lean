@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.le_legendreTransform
 ---
 
-# Le legendre Transform
+# Fenchel–Young inequality for the Legendre transform
 
-Difference form of Fenchel–Young: every term is at most the conjugate.
+**Fenchel–Young inequality for the Legendre transform.** Let $d \in \mathbb{N}$ and let
+$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transform $\Lambda^*$. For all
+$x, l \in \mathbb{R}^d$, we have $\langle l, x \rangle - \Lambda(l) \le \Lambda^*(x)$ in
+$[-\infty, \infty]$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Legendre Transform eq i Sup](legendre-transform-eq-i-sup.md)
+- [Supremum formula for the Legendre transform](legendre-transform-eq-i-sup.md)
 
 ## Sources
 

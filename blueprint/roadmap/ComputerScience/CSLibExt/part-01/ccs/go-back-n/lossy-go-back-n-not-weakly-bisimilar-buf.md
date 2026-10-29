@@ -42,7 +42,7 @@ accept before it delivers.
 - [The stuck lossy go-back-N configuration refuses new messages](stuck-not-has-out-label-acc.md)
 - [Realization of a code-level transition system](../finite-state/realizes.md)
 - [Constants listing their transitions realize them](../finite-state/constant.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Weakly bisimilar states enable the same weak labels](../../semantics/lts/weak-bisimulation/has-out-label-saturate-iff.md)
 - [Weak bisimilarity transfers weak transitions](../../semantics/lts/weak-bisimulation/s-tr.md)
 - [Weak transitions with a visible label](../../semantics/lts/weak-bisimulation/iff-exists-of-ne.md)

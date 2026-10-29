@@ -29,7 +29,7 @@ weakly bisimilar (observation congruent) in the labelled transition system of th
 ## Proof depends on
 
 - [Certificate checks give weak bisimilarity](weakly-bisimilar-of-cert-check.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Rooted weak transition](../../semantics/lts/observation-congruence/rooted-weak-step.md)
 - [Transitions are rooted weak transitions](../../semantics/lts/observation-congruence/rooted-weak-step-of-tr.md)
 

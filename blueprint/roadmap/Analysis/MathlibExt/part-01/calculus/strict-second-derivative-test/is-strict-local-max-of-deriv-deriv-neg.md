@@ -16,11 +16,11 @@ This is the minimum version applied to $-f$.
 
 ## Depends on
 
-- [Is Strict Local Max](../../../../../Topology/MathlibExt/order/local-extr/is-strict-local-max.md)
+- [Strict local maximum](../../../../../Topology/MathlibExt/order/local-extr/is-strict-local-max.md)
 
 ## Proof depends on
 
-- [Neg](../../../../../Topology/MathlibExt/order/local-extr/neg.md)
+- [Negation turns a strict local minimum into a strict local maximum](../../../../../Topology/MathlibExt/order/local-extr/neg.md)
 - [Strict second-derivative test, minimum version](is-strict-local-min-of-deriv-deriv-pos.md)
 
 ## Sources

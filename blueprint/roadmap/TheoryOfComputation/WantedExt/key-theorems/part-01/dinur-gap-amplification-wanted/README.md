@@ -4,11 +4,11 @@ navigation: module
 
 # Dinur Gap Amplification
 
-- [CSPInstance](cspinstance.md)
-- [CSPWell Formed](cspwell-formed.md)
-- [Csp Constraint Sat](csp-constraint-sat.md)
-- [Csp Val](csp-val.md)
-- [Csp Degree](csp-degree.md)
-- [Gap Amplification](gap-amplification.md)
-- [Alphabet Reduction](alphabet-reduction.md)
-- [Dinur's gap amplification: the combinatorial PCP theorem](dinur-gap-amplification.md)
+- [2CSP instances](cspinstance.md)
+- [Well-formed 2CSP instances](cspwell-formed.md)
+- [Satisfied constraint of a 2CSP instance](csp-constraint-sat.md)
+- [Value of a 2CSP instance under an assignment](csp-val.md)
+- [Degree of a variable in a 2CSP instance](csp-degree.md)
+- [Gap amplification with given constants](gap-amplification.md)
+- [Alphabet reduction with given constants](alphabet-reduction.md)
+- [Dinur's gap amplification and alphabet reduction](dinur-gap-amplification.md)

@@ -6,20 +6,24 @@ proof: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.bmCentered_eq_sum_bmInc
 ---
 
-# Bm Centered eq sum bm Inc
+# Telescoping the centered shifted path over a finite set
 
-The centered shifted path at time `t ∈ S` is the sum of the increments
-indexed by `S` up to `t`.
+**Telescoping the centered shifted path over a finite set.** Let $(B_t)_{t \ge 0}$ be a
+real-valued process on $\Omega$, let $s \ge 0$, and let $S \subset \mathbb{R}_{\ge 0}$ be a
+finite set. For $u \ge 0$ let $u^-$ be the largest element of $S$ strictly below $u$, or $0$
+if there is none. Then for every $t \in S$ and every $\omega \in \Omega$,
+$B_{s+t}(\omega) - B_s(\omega) =
+\sum_{u \in S : u \le t} (B_{s+u}(\omega) - B_{s+u^-}(\omega))$.
 
 ## Depends on
 
-- [Bm Centered Shift](bm-centered-shift.md)
-- [Bm Inc](bm-inc.md)
+- [Centered shifted path](bm-centered-shift.md)
+- [Increment over the predecessor interval](bm-inc.md)
 
 ## Proof depends on
 
-- [Bm Prev](bm-prev.md)
-- [Sum bm Inc eq](sum-bm-inc-eq.md)
+- [Predecessor of a time in a finite set](bm-prev.md)
+- [Telescoping sum of grid increments](sum-bm-inc-eq.md)
 
 ## Sources
 

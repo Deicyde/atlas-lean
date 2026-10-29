@@ -6,10 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.liminf_add_const
 ---
 
-# Liminf add const
+# Liminf commutes with adding a constant
 
-Adding a finite constant commutes with `liminf` for real sequences,
-viewed in `EReal`.
+**Liminf commutes with adding a constant.** For every real $c$ and every real sequence
+$(u_n)$, with limits inferior taken in the extended reals $[-\infty, +\infty]$,
+$\liminf_{n \to \infty} (c + u_n) = c + \liminf_{n \to \infty} u_n$.
 
 ## Depends on
 

@@ -21,7 +21,7 @@ https://arxiv.org/abs/1409.5931.
 
 ## Depends on
 
-- [Dense Hypergraph Perfect Matching In P](dense-hypergraph-perfect-matching-in-p.md)
+- [Ruciński's question on perfect matchings in dense hypergraphs](dense-hypergraph-perfect-matching-in-p.md)
 
 ## Sources
 

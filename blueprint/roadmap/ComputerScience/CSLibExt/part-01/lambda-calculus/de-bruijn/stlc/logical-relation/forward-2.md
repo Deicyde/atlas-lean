@@ -14,7 +14,7 @@ steps, then $t'$ is reducible.
 
 ## Depends on
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 - [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)

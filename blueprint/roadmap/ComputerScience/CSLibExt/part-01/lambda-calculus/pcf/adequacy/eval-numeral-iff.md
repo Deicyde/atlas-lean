@@ -26,7 +26,7 @@ of $t$ is the defined value $n$.
 ## Proof depends on
 
 - [Closed PCF terms that evaluate to a numeral denote its value](../soundness/denote-numeral.md)
-- [Adequacy](adequacy.md)
+- [Computational adequacy for PCF](adequacy.md)
 
 ## Sources
 

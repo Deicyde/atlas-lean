@@ -28,7 +28,7 @@ $\eta$ for $\Gamma$, then $t$ contextually approximates $u$.
 - [Plugging a term into a PCF context](plug.md)
 - [Big-step call-by-name evaluation of PCF](../big-step/eval.md)
 - [Closed PCF terms that evaluate to a numeral denote its value](../soundness/denote-numeral.md)
-- [Adequacy](../adequacy/adequacy.md)
+- [Computational adequacy for PCF](../adequacy/adequacy.md)
 - [Plugging into a PCF context is monotone in the denotation](denote-plug-mono.md)
 - [PCF numerals](../syntax/numeral.md)
 - [Natural number type of PCF](../syntax/nat.md)

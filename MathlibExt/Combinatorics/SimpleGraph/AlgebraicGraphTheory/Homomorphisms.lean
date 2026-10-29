@@ -87,8 +87,8 @@ def _root_.SimpleGraph.IsLocalIsomorphism {V W : Type*} [Fintype V] [Fintype W] 
 
 -- Combinatorics 429: Covers (graph)
 
-/-- We say that a finite graph X covers a finite graph Y if there is a surjective local isomorphism
-from X to Y.
+/-- **Graph cover.** A finite graph $X$ *covers* a finite graph $Y$ if there is a surjective local
+isomorphism from $X$ to $Y$.
 -/
 def _root_.SimpleGraph.Covers {V W : Type*} [Fintype V] [Fintype W] (G : SimpleGraph V) (H : SimpleGraph W) : Prop :=
   ∃ f : G →g H, G.IsLocalIsomorphism H f ∧ Function.Surjective f

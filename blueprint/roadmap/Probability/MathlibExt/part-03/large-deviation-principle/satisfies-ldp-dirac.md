@@ -6,26 +6,30 @@ proof: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.satisfiesLDP_dirac
 ---
 
-# Satisfies LDP dirac
+# Large deviation principle for a Dirac mass
 
-A Dirac mass satisfies the large deviation principle with its
-Dirac rate function: the mass `1` stays at `x₀`, so the exponential
-cost of a set is `0` if it contains `x₀` and `∞` otherwise.
+**Large deviation principle for a Dirac mass.** Let $X$ be a $T_1$ topological space equipped
+with its Borel $\sigma$-algebra, and let $x_0 \in X$. The constant sequence of measures
+$\mu_n = \delta_{x_0}$ satisfies the large deviation principle with the Dirac rate function of
+$x_0$, which is $0$ at $x_0$ and $\infty$ elsewhere.
+
+Indeed, the mass $1$ stays at $x_0$, so the exponential cost of a set is $0$ if it contains $x_0$
+and $\infty$ otherwise.
 
 ## Depends on
 
-- [Satisfies LDP](satisfies-ldp.md)
-- [Dirac Rate](dirac-rate.md)
+- [Large deviation principle for a sequence of measures](satisfies-ldp.md)
+- [Rate function of a Dirac mass](dirac-rate.md)
 
 ## Proof depends on
 
-- [Is Rate Function](is-rate-function.md)
-- [Dirac Rate apply of ne](dirac-rate-apply-of-ne.md)
-- [Dirac Rate apply self](dirac-rate-apply-self.md)
-- [Dirac ldp term eq bot of not Mem](dirac-ldp-term-eq-bot-of-not-mem.md)
-- [Dirac ldp term eq zero of mem](dirac-ldp-term-eq-zero-of-mem.md)
-- [I Inf dirac Rate of mem](i-inf-dirac-rate-of-mem.md)
-- [I Inf dirac Rate of not Mem](i-inf-dirac-rate-of-not-mem.md)
+- [Rate function](is-rate-function.md)
+- [The Dirac rate function is infinite away from its center](dirac-rate-apply-of-ne.md)
+- [The Dirac rate function vanishes at its center](dirac-rate-apply-self.md)
+- [Log-scaled Dirac mass of a set avoiding the center](dirac-ldp-term-eq-bot-of-not-mem.md)
+- [Log-scaled Dirac mass of a set containing the center](dirac-ldp-term-eq-zero-of-mem.md)
+- [Infimum of the Dirac rate function over a set containing the center](i-inf-dirac-rate-of-mem.md)
+- [Infimum of the Dirac rate function over a set avoiding the center](i-inf-dirac-rate-of-not-mem.md)
 
 ## Sources
 

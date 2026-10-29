@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.IsGoodRateFunction
 ---
 
-# Is Good Rate Function
+# Good rate function
 
-A **good rate function** is a rate function whose finite sub-level
-sets `{x | I x ≤ a}` are all compact. This is the
-corrected form of v1's definition: v1 quantified over all
-`a : ℝ≥0∞`, including `a = ⊤`, which forces the whole space to be
-compact and makes the definition vacuous on non-compact spaces.
+**Good rate function.** Let $X$ be a topological space. A function $I : X \to [0, \infty]$ is a
+good rate function if it is a rate function and, for every real number $a \ge 0$, the sub-level
+set $\{x \in X : I(x) \le a\}$ is compact.
+
+Compactness is required only at finite levels: the sub-level set at level $\infty$ is all of $X$,
+so requiring it as well would force $X$ itself to be compact.
 
 ## Depends on
 

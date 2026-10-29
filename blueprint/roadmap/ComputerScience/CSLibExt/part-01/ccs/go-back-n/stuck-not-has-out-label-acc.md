@@ -43,7 +43,7 @@ followed by an accept input and further silent steps is possible from it.
 - [Parallel composition preserves realization](../finite-state/parallel.md)
 - [Restriction preserves realization](../finite-state/restriction.md)
 - [Code-level parallel composition](../finite-state/par-steps.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Weak transitions with a visible label](../../semantics/lts/weak-bisimulation/iff-exists-of-ne.md)
 
 ## Sources

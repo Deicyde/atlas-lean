@@ -5,7 +5,7 @@ navigation: module
 # Simulation
 
 - [Translated renaming](cps-ren.md)
-- [Cps rename](cps-rename.md)
+- [The call-by-value CPS translation commutes with renaming](cps-rename.md)
 - [The CPS translation commutes with weakening](cps-weaken.md)
 - [Plotkin's value translation $\Psi$](psi-rel.md)
 - [The CPS translation commutes with substitution of values and variables](cps-subst.md)

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitEval
 ---
 
-# Fw Circuit Eval
+# Evaluation of an encoded flat circuit
 
-Values of all gates of an encoded circuit, in order: the shared typed
-evaluator `circuitEval` on the decoded gates, with input count `assign.length`.
-The decode is semantics-preserving: out-of-range input indices read as `false`,
-as in the previous local evaluator.
+**Evaluation of an encoded flat circuit.** Let $C$ be a flat Boolean circuit given as a list
+of gates, each encoded as a (kind, references) pair, and let $a = (a_0, \dots, a_{k-1})$ be a
+list of booleans. The gate values of $C$ on $a$ are the gate values, in order, of the circuit on
+$k$ inputs obtained by decoding each gate of $C$, evaluated on the assignment that sends input
+$i$ to $a_i$.
+
+Decoding turns an input variable $x_i$ with $i \ge k$ into the constant false.
 
 ## Depends on
 
-- [FWGate](fwgate.md)
+- [Serialized gates of five-worlds circuits](fwgate.md)
 
 ## Proof depends on
 

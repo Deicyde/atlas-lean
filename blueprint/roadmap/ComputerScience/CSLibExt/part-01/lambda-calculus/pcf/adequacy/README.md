@@ -9,6 +9,6 @@ navigation: module
 - [Formal approximation is closed under suprema of chains](approx-sup.md)
 - [Formal approximation is closed under head expansion](approx-expand.md)
 - [Fundamental lemma of formal approximation](approx-denote.md)
-- [Adequacy](adequacy.md)
+- [Computational adequacy for PCF](adequacy.md)
 - [Evaluation to a numeral agrees with the denotation](eval-numeral-iff.md)
 - [Termination agrees with definedness of the denotation](terminates-iff-dom.md)

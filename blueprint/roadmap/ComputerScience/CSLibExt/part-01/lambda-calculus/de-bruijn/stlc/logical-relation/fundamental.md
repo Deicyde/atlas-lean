@@ -19,7 +19,7 @@ under the extended substitution.
 
 ## Depends on
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 - [Reducible substitutions](reducible-sub.md)
 - [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)

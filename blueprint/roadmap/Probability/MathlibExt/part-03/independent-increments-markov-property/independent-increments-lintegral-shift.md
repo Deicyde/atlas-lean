@@ -6,28 +6,40 @@ proof: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.independent_increments_lintegral_shift
 ---
 
-# Independent increments lintegral shift
+# Nonnegative integrals of future path functionals over present events
 
-For a nonnegative measurable functional, integrate the shifted path over `A ∈ ℱ s`
-by integrating against the centered future law at absolute time `s` and state `B s`.
+**Nonnegative integrals of future path functionals over present events.** Let $\mu$ be a
+probability measure on $\Omega$, let $(\mathcal{F}_t)_{t \ge 0}$ be a filtration indexed by
+$\mathbb{R}_{\ge 0}$, and let $(B_t)_{t \ge 0}$ be a real-valued process that is adapted (each
+$B_t$ is $\mathcal{F}_t$-measurable) and has independent increments (for $u \le t$, the
+increment $B_t - B_u$ is independent of $\mathcal{F}_u$ under $\mu$). Fix $s \ge 0$ and let
+$\nu_s$ be the law under $\mu$ of the centered shifted path
+$\omega \mapsto (t \mapsto B_{s+t}(\omega) - B_s(\omega))$ on $\mathbb{R}^{\mathbb{R}_{\ge 0}}$
+with the product σ-algebra. Then for every measurable
+$Y : \mathbb{R}^{\mathbb{R}_{\ge 0}} \to [0, \infty]$ and every $A \in \mathcal{F}_s$,
+
+$$\int_A Y\big((B_{s+t}(\omega))_{t \ge 0}\big) \, d\mu(\omega)
+= \int_A \int Y\big(t \mapsto B_s(\omega) + g(t)\big) \, d\nu_s(g) \, d\mu(\omega),$$
+
+where all integrals are Lebesgue integrals of $[0, \infty]$-valued functions.
 
 ## Depends on
 
-- [Bm Adapted](bm-adapted.md)
-- [Bm Indep Increments](bm-indep-increments.md)
-- [Bm Centered Law](bm-centered-law.md)
-- [Bm Shifted](bm-shifted.md)
+- [Adapted real process](bm-adapted.md)
+- [Independent increments with respect to a filtration](bm-indep-increments.md)
+- [Law of the centered shifted path](bm-centered-law.md)
+- [Shifted path of a process](bm-shifted.md)
 
 ## Proof depends on
 
-- [Bm Pair](bm-pair.md)
-- [Bm Phi](bm-phi.md)
-- [Bm Phi bm Pair](bm-phi-bm-pair.md)
-- [Measurable bm Phi](measurable-bm-phi.md)
-- [Measurable bm Shifted](measurable-bm-shifted.md)
-- [Measurable lintegral bm Phi](measurable-lintegral-bm-phi.md)
-- [Measurable section bm Centered Law](measurable-section-bm-centered-law.md)
-- [Pair section lintegral](pair-section-lintegral.md)
+- [The process value paired with its centered future path](bm-pair.md)
+- [Translating a path by a constant](bm-phi.md)
+- [Translating the centered future path recovers the shifted path](bm-phi-bm-pair.md)
+- [Translation of paths is measurable](measurable-bm-phi.md)
+- [Measurability of the shifted path](measurable-bm-shifted.md)
+- [Nonnegative translated integrals against the centered law are measurable](measurable-lintegral-bm-phi.md)
+- [Section measures of the centered law are measurable](measurable-section-bm-centered-law.md)
+- [The pair-section identity for measurable sets](pair-section-lintegral.md)
 
 ## Sources
 

@@ -16,10 +16,10 @@ navigation: module
 - [Decoding an action](decode-stmt.md)
 - [Symbol of an input bit](bit-sym.md)
 - [Input word of a list of bits](input.md)
-- [Codes as tables](equiv-table.md)
+- [Single-tape codes as tables](equiv-table.md)
 - [Table lookup of a code](lookup.md)
-- [The machine of a code](machine.md)
-- [States of a code](states.md)
+- [The machine of a single-tape code](machine.md)
+- [States of a single-tape code](states.md)
 - [Codes denote finite machines](supports-machine.md)
 
 ## Explicit configurations
@@ -45,7 +45,7 @@ navigation: module
 - [Definedness of the clocked evaluator](is-some-eval-steps-iff-step-eq-none.md)
 - [Clocked halting](is-some-eval-steps-iff.md)
 - [Characterization of clocked results](eval-steps-eq-some-iff-output.md)
-- [Monotonicity of the clocked evaluator](eval-steps-mono.md)
+- [Monotonicity of the single-tape clocked evaluator](eval-steps-mono.md)
 - [Clocked results agree with the machine's semantics](eval-eq-some-of-eval-steps-eq-some.md)
 - [Unclocked halting](dom-eval-iff-exists-is-some-eval-steps.md)
 

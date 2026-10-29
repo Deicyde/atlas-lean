@@ -13,7 +13,7 @@ is in normal form, that is, has no call-by-value reduction step, if and only if 
 
 ## Depends on
 
-- [Normal Form](normal-form.md)
+- [Normal forms for call-by-value reduction in STLC](normal-form.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)
 - [Values of STLC](value.md)
@@ -22,7 +22,7 @@ is in normal form, that is, has no call-by-value reduction step, if and only if 
 
 - [Small-step call-by-value reduction in STLC](step.md)
 - [Progress for closed STLC terms](progress.md)
-- [Value irreducible](value-irreducible.md)
+- [Values are irreducible](value-irreducible.md)
 
 ## Sources
 

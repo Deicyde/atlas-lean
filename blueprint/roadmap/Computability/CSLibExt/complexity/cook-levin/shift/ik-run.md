@@ -60,7 +60,7 @@ $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 - [The pushed-fill chain of the cell-shift generator](pf-run.md)
 - [Step bound for one in-range loop iteration](s-body-b.md)
 - [The decrement chain takes $n$ steps](sb-run.md)
-- [Sbody run](sbody-run.md)
+- [One iteration of the in-range loop of the cell-shift generator](sbody-run.md)
 - [Literals of an in-range shift clause](sh-lits.md)
 - [Dense CNF formula](../../dense-sat/cnf.md)
 - [Dense clause](../../dense-sat/clause.md)

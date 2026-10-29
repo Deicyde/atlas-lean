@@ -6,11 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.CharFunTaylorBounds.norm_charFun_sub_one_le
 ---
 
-# Norm char Fun sub one le
+# First-order Taylor bound for the characteristic function
 
-First-order Taylor bound for the characteristic function: for an
-integrable real random variable `X`,
-`‖φ_X(t) - 1‖ ≤ |t| 𝔼|X|`.
+**First-order Taylor bound for the characteristic function.** Let $X$ be a measurable real
+random variable on a probability space with $|X|$ integrable, and let $\varphi_X$ be the
+characteristic function of the law of $X$. Then for every real $t$,
+$|\varphi_X(t) - 1| \le |t| \, \mathbb{E}|X|$.
 
 ## Depends on
 

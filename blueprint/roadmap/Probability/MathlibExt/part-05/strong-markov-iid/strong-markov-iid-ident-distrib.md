@@ -6,24 +6,27 @@ proof: formalized
 lean: ProbabilityTheory.strong_markov_iid_identDistrib
 ---
 
-# Strong Markov property (identically-distributed part)
+# Strong Markov property for i.i.d. sequences: the law after a stopping time
 
-**Strong Markov property (identically-distributed part).**
-
-For an i.i.d. sequence `X : ℕ → Ω → S` and a finite stopping time `T` whose filtration
-is contained in the natural filtration of `X`, each variable
-`postStoppingTimeSeq X T k = X_{T+k+1}` has the same distribution as `X 0`.
+**Strong Markov property for i.i.d. sequences: the law after a stopping time.** Let $\mu$ be a
+probability measure on a measurable space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a
+filtration on $\Omega$, and let $X_0, X_1, X_2, \dots$ be measurable maps from $\Omega$ to a
+measurable space $S$ that are mutually independent and identically distributed under $\mu$.
+Suppose that for every $n$ the σ-algebra $\mathcal{F}_n$ is contained in the σ-algebra generated
+by $X_0, \dots, X_n$, and let $T : \Omega \to \mathbb{N}$ be a stopping time for
+$(\mathcal{F}_n)$. Then for every $k \in \mathbb{N}$ the map
+$\omega \mapsto X_{T(\omega)+k+1}(\omega)$ has the same distribution under $\mu$ as $X_0$.
 
 ## Depends on
 
-- [Post Stopping Time Seq](post-stopping-time-seq.md)
+- [Post-stopping-time sequence](post-stopping-time-seq.md)
 
 ## Proof depends on
 
-- [Aemeasurable post Stopping Time Seq](aemeasurable-post-stopping-time-seq.md)
-- [Ident Distrib tail](ident-distrib-tail.md)
-- [Indep stopping time tail](indep-stopping-time-tail.md)
-- [Measurable Set stopping Time eq](measurable-set-stopping-time-eq.md)
+- [The post-stopping-time sequence is a.e. measurable](aemeasurable-post-stopping-time-seq.md)
+- [Shifted terms of an identically distributed sequence](ident-distrib-tail.md)
+- [A stopping-time event is independent of a later observation](indep-stopping-time-tail.md)
+- [Level sets of a stopping time are measurable](measurable-set-stopping-time-eq.md)
 
 ## Sources
 

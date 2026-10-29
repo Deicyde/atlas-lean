@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.bmPrev
 ---
 
-# Bm Prev
+# Predecessor of a time in a finite set
 
-The predecessor of `t` in the finite set `S`: the largest element of `S`
-strictly below `t` (and `0` if there is none).
+**Predecessor of a time in a finite set.** For a finite set $S \subseteq \mathbb{R}_{\ge 0}$ and
+$t \in \mathbb{R}_{\ge 0}$, the predecessor of $t$ in $S$ is the largest element of $S$ strictly
+below $t$, or $0$ if there is no such element.
 
 ## Depends on
 

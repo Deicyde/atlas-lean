@@ -2,9 +2,9 @@
 navigation: transparent
 ---
 
-# AM is contained in Pi_2 (Babai) to ILPFixed Dim In P
+# AM is contained in $\Pi_2^p$ (Babai) to ILPFixed Dim In P
 
-- [AM is contained in Pi_2 (Babai)](am-subset-pi2.md)
+- [AM is contained in $\Pi_2^p$ (Babai)](am-subset-pi2.md)
 - [Adleman's theorem: BPP is contained in P/poly](adleman.md)
 - [Algebrization](algebrization-wanted/README.md)
 - [BPP is contained in PSPACE](bpp-subset-pspace.md)

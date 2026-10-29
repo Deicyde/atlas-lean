@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.dyadicAddNat
 ---
 
-# Dyadic Add Nat
+# Adding a natural number to a dyadic integer
 
-The dyadic integer `ω + j` for `ω ∈ ℤ₂` and `j ∈ ℕ`.
+**Adding a natural number to a dyadic integer.** Let $\omega$ be a dyadic integer, written as
+its sequence $(\omega_0, \omega_1, \dots)$ of binary digits $\omega_i \in \{0, 1\}$ (least
+significant digit first), and let $j$ be a natural number with binary digits $j_0, j_1, \dots$.
+The dyadic integer $\omega + j$ has $i$-th digit $(\omega_i + j_i + c_i) \bmod 2$, where the
+carries are given by $c_0 = 0$ and $c_{i+1} = \lfloor (\omega_i + j_i + c_i)/2 \rfloor$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dyadic Add Nat Carry](dyadic-add-nat-carry.md)
+- [Carry in adding a natural number to a dyadic integer](dyadic-add-nat-carry.md)
 
 ## Sources
 

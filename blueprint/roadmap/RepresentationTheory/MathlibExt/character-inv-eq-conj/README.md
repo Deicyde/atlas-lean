@@ -4,5 +4,5 @@ navigation: module
 
 # Character Inv Eq Conj
 
-- [Char inv eq conj](char-inv-eq-conj.md)
-- [Char dual eq conj](char-dual-eq-conj.md)
+- [Character values at inverses are complex conjugates](char-inv-eq-conj.md)
+- [Character of the dual representation](char-dual-eq-conj.md)

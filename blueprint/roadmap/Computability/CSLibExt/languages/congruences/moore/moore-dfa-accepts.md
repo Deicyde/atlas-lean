@@ -21,7 +21,7 @@ $M$.
 
 - [A state is reachable exactly when some word leads to it](../../../decidability/part-02/regular/mem-reachable-iff.md)
 - [Moore class of a reachable state](moore-class.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 - [Reachable states are closed under transitions](../../../decidability/part-02/regular/step-mem-reachable.md)
 
 ## Sources

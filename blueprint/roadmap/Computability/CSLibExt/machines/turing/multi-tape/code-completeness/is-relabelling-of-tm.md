@@ -16,7 +16,7 @@ simulates $M$ up to the relabelling $e$.
 ## Depends on
 
 - [The code of a finite-state binary machine](of-tm.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 - [Simulation up to a state relabelling](../relabel/is-relabelling.md)
 
 ## Proof depends on
@@ -29,7 +29,7 @@ simulates $M$ up to the relabelling $e$.
 - [Decoding a coded action](../code/to-action.md)
 - [Coding an action](encode-action.md)
 - [Relabelling the successor state of an action](../relabel/relabel-action.md)
-- [Decoding a coded action](to-action-encode-action.md)
+- [Decoding the coding of an action](to-action-encode-action.md)
 
 ## Sources
 

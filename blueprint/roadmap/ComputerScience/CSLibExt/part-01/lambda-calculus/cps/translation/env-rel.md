@@ -17,7 +17,7 @@ that $\eta'$ assigns to the variable at the same position in $\overline{\Gamma}$
 ## Depends on
 
 - [Call-by-value CPS translation of types](cps-ty.md)
-- [Semantic environments](../../de-bruijn/stlc/denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../../de-bruijn/stlc/denotational/env.md)
 - [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on

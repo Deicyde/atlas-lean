@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.SuccinctCircuitValueEXPComplete.SCVGate
 ---
 
-# SCVGate
+# Encoded gates (Succinct Circuit Value)
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`.
+**Encoded gates (Succinct Circuit Value).** An encoded gate is a pair $(k, r)$ of a natural
+number $k$, the kind of the gate, and a list $r$ of natural numbers, its references.
+
+These pairs are the shared (kind, references) encoding of gates of flat Boolean circuits.
 
 ## Depends on
 

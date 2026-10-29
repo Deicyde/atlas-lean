@@ -5,14 +5,16 @@ statement: formalized
 lean: StochasticMatrix.matPow
 ---
 
-# Mat Pow
+# Matrix powers of a stochastic matrix
 
-The `n`-th matrix power of a stochastic transition matrix `P`. Entry `(i, j)`
-represents the probability of moving from state `i` to state `j` in exactly `n` steps.
+**Matrix powers of a stochastic matrix.** For a stochastic matrix $P$ on the finite state
+space $\{0, 1, \dots, M\}$ and $n \in \mathbb{N}$, the $n$-th matrix power $P^n$ is defined by
+$P^0 = I$, the identity matrix, and $(P^{n+1})_{ij} = \sum_k P(i, k) (P^n)_{kj}$. The entry
+$(P^n)_{ij}$ is the probability of moving from state $i$ to state $j$ in exactly $n$ steps.
 
 ## Depends on
 
-- [Stochastic Matrix](stochastic-matrix.md)
+- [Stochastic matrix](stochastic-matrix.md)
 
 ## Sources
 

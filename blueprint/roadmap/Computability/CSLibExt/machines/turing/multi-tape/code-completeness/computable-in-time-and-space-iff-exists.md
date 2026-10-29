@@ -19,7 +19,7 @@ tapes, the machine of some code with $k$ work tapes computes $g$ within $t$ and 
 ## Depends on
 
 - [Codes for multi-tape machines](../code/code.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 
 ## Proof depends on
 

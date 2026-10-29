@@ -11,11 +11,11 @@ navigation: module
 
 ## Step
 
-- [Value irreducible](value-irreducible.md)
+- [Values are irreducible](value-irreducible.md)
 - [Canonical forms for closed function values](closed-function-value-is-lam.md)
 - [Progress for closed STLC terms](progress.md)
 - [Small-step call-by-value reduction in STLC is deterministic](deterministic.md)
-- [Normal Form](normal-form.md)
+- [Normal forms for call-by-value reduction in STLC](normal-form.md)
 - [Closed normal forms are exactly the values](closed-normal-form-iff-value.md)
 
 ## Stlc

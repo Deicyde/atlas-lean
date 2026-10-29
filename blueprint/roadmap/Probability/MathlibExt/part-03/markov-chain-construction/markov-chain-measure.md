@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure
 ---
 
-# Markov Chain Measure
+# Canonical Markov chain measure
 
-The canonical measure `P_μ` on path space `ℕ → S` of the Markov chain with initial
-distribution `μ` and transition kernel `κ`, built via the Ionescu–Tulcea trajectory measure.
+**Canonical Markov chain measure.** Let $\kappa$ be a Markov kernel from a measurable space
+$S$ to itself and let $\mu$ be a measure on $S$. The canonical Markov chain measure $P_\mu$ is the
+measure on the path space $S^{\mathbb{N}}$ given by the Ionescu–Tulcea theorem for the initial
+measure $\mu$ and, at each time $n$, the kernel sending a history $(x_0, \dots, x_n)$ to
+$\kappa(x_n, \cdot)$. When $\mu$ is a probability measure, $P_\mu$ is the law of the Markov chain
+with initial distribution $\mu$ and transition kernel $\kappa$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Markov Lift Kernel](markov-lift-kernel.md)
+- [Lifting a kernel to histories](markov-lift-kernel.md)
 
 ## Sources
 

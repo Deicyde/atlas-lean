@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.AvgHard
 ---
 
-# Avg Hard
+# Hard on average
 
-`(L, S)` is hard on average: it is *not* easy on average, in the sense of
-`AvgEasy` above: no polynomial-time algorithm achieves negligible error. Hardness is defined as the logical
-complement of easiness, with matching infinitely-often quantifiers: an error profile
-that is zero on infinitely many lengths and inverse-polynomial on infinitely many
-others satisfies neither an all-but-finitely-many inverse-polynomial bound nor
-negligible error, so `¬ AvgEasy` is the faithful hardness notion, and failure of
-Heuristica implies the Pessiland hard-on-average claim.
+**Hard on average.** Let $p$ be a polynomial with natural-number coefficients, $L$ a
+decision problem, and $S$ a family of samplers, where $S_n$ sends each string $r$ of $p(n)$
+random bits to a bitstring $S_n(r)$. The pair $(L, S)$ is hard on average when it is not easy
+on average: there is no polynomial-time computable function $A$ from bitstrings to booleans
+such that for every natural number $c$ and all sufficiently large $n$, $A$ agrees with $L$ on
+$S_n(r)$ for at least a fraction $1 - 1/(n^c + 1)$ of the $2^{p(n)}$ coin strings $r$.
+
+Since hardness is the logical complement of easiness, if $\mathrm{P} \ne \mathrm{NP}$ and
+Heuristica fails, then some NP problem is hard on average for some samplable ensemble.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ Heuristica implies the Pessiland hard-on-average claim.
 
 ## Proof depends on
 
-- [Avg Easy](avg-easy.md)
+- [Easy on average](avg-easy.md)
 
 ## Sources
 

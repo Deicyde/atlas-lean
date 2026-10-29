@@ -14,7 +14,7 @@ $\Gamma$ to $\eta(\rho(x))$; that is, it is the composite $\eta \circ \rho$.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Renamings of simply typed contexts](../syntax/ren.md)
 - [Simple types](../syntax/ty.md)
 

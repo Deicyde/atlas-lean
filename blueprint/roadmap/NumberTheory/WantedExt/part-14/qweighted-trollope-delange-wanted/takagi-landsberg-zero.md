@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.takagiLandsberg_zero
 ---
 
-# Takagi Landsberg zero
+# The Takagi–Landsberg function vanishes at zero
 
-`𝒯_a(0) = 0`.
+**The Takagi–Landsberg function vanishes at zero.** For every real or complex parameter $a$,
+the Takagi–Landsberg function satisfies $\mathcal{T}_a(0) = 0$.
 
 ## Depends on
 
-- [Takagi Landsberg](takagi-landsberg.md)
+- [The Takagi–Landsberg function](takagi-landsberg.md)
 
 ## Sources
 

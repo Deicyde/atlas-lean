@@ -4,8 +4,8 @@ navigation: module
 
 # Max Cut No PTAS
 
-- [Max Cut N](max-cut-n.md)
-- [Max Cut Feas](max-cut-feas.md)
-- [Max Cut Val](max-cut-val.md)
-- [Max Cut](max-cut.md)
+- [Vertex count of a MAX-CUT instance](max-cut-n.md)
+- [Feasible MAX-CUT solutions](max-cut-feas.md)
+- [Value of a MAX-CUT solution](max-cut-val.md)
+- [MAX-CUT as an optimization problem](max-cut.md)
 - [MAX-CUT has no PTAS unless P = NP](max-cut-no-ptas.md)

@@ -6,7 +6,7 @@ navigation: transparent
 
 - [Markov Property Chain](markov-property-chain/README.md)
 - [Conditional variance theorem for martingales](cond-exp-sub-sq-eq.md)
-- [The `L^p` martingale convergence theorem](tendsto-e-lp-norm-limit-process-of-e-lp.md)
+- [The $L^p$ martingale convergence theorem](tendsto-e-lp-norm-limit-process-of-e-lp.md)
 - [Martingale Orthogonality](martingale-orthogonality/README.md)
 - [Martingale Uniform Integrability](martingale-uniform-integrability/README.md)
 - [Mc Diarmid](mc-diarmid/README.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [Analytic core of Poisson convergence](elem-symm-poly-tendsto-poisson.md)
 - [Probability Generating Function](probability-generating-function/README.md)
 - [Product Bond Percolation](product-bond-percolation/README.md)
-- [Prokhorov's theorem, sequential form on `ℝ`](prokhorov-sequential.md)
+- [Prokhorov's theorem, sequential form on $\mathbb{R}$](prokhorov-sequential.md)
 - [Quantile](quantile/README.md)
 - [Random Walk Dichotomy](random-walk-dichotomy/README.md)
 - [Random Walk Limsup](random-walk-limsup/README.md)

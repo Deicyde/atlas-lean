@@ -19,5 +19,5 @@ navigation: module
 ## References
 
 - [Landin's knot is well typed](knot-has-type.md)
-- [Knot diverges](knot-diverges.md)
+- [Landin's knot never evaluates to a value](knot-diverges.md)
 - [Landin's knot never gets stuck](knot-runs-forever.md)

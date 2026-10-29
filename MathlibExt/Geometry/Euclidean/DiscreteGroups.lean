@@ -73,8 +73,9 @@ isometries of the Euclidean plane is the set of linear parts of the elements of 
 noncomputable def pointGroupSet (G : Subgroup M₂) : Set (E2 ≃ₗᵢ[ℝ] E2) :=
   {A | ∃ f ∈ G, linearPart f = A}
 
-/-- The **translation lattice** of a group `G` of plane isometries: the set of
-vectors `v` for which translation by `v` belongs to `G`. -/
+/-- **Translation lattice.** The translation lattice of a subgroup $G$ of the group $M_2$ of
+affine isometries of the Euclidean plane $E_2$ is the set of vectors $v \in E_2$ such that the
+translation $x \mapsto v + x$ belongs to $G$. -/
 noncomputable def translationLattice (G : Subgroup M₂) : Set E2 :=
   {v : E2 | (AffineIsometryEquiv.constVAdd ℝ E2 v : M₂) ∈ G}
 

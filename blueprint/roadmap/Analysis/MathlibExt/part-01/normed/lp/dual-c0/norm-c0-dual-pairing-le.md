@@ -22,7 +22,7 @@ $x \mapsto \sum_{i \in \iota} a_i x_i$, has operator norm at most $\|a\|_1 = \su
 
 ## Proof depends on
 
-- [Formula for the $\ell^1$–$c_0$ pairing](c0-dual-pairing-apply.md)
+- [Formula for the $\ell^1$–$c_0$ duality pairing](c0-dual-pairing-apply.md)
 - [Bound for the $\ell^1$–$c_0$ pairing](norm-c0-pairing-lin-le.md)
 
 ## Sources

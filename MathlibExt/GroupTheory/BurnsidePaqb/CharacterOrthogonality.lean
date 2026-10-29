@@ -185,9 +185,10 @@ theorem irreducible_of_simple_fdrep_aux (V : FDRep ℂ G) [Simple V] [Finite G]
   · exact absurd h hNne
 
 omit [Fintype G] in
-/-- **Simple finite-dimensional representations are irreducible.** Let $G$ be a finite group. If
-$V$ is a simple object of the category of finite-dimensional complex representations of $G$, then
-the representation of $G$ on the underlying vector space of $V$ is irreducible. -/
+/-- **Simple finite-dimensional complex representations of a finite group are irreducible.** Let
+$G$ be a finite group. If $V$ is a simple object of the category of finite-dimensional complex
+representations of $G$, then the representation of $G$ on the underlying vector space of $V$ is
+irreducible. -/
 theorem irreducible_of_simple_fdrep (V : FDRep ℂ G) [Simple V] [Finite G] :
     Representation.IsIrreducible (V.ρ : Representation ℂ G V) :=
   irreducible_of_simple_fdrep_aux G V (V.ρ : Representation ℂ G V) rfl

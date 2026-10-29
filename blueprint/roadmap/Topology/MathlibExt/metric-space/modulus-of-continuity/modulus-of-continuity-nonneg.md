@@ -6,18 +6,21 @@ proof: formalized
 lean: modulusOfContinuity_nonneg
 ---
 
-# Modulus Of Continuity nonneg
+# Nonnegativity of the modulus of continuity
 
-The modulus of continuity is nonnegative at nonnegative scales: the
-defining set contains `|f a - f a| = 0` when `a ≤ b` and `0 ≤ η`.
+**Nonnegativity of the modulus of continuity.** Let $a \le b$ and let
+$f : \mathbb{R} \to \mathbb{R}$ be continuous on $[a, b]$. For every $\eta \ge 0$, the modulus of
+continuity $\omega_f(\eta)$ of $f$ on $[a, b]$ at scale $\eta$ satisfies $0 \le \omega_f(\eta)$.
+
+The defining set contains $|f(a) - f(a)| = 0$.
 
 ## Depends on
 
-- [Modulus Of Continuity](modulus-of-continuity.md)
+- [Modulus of continuity](modulus-of-continuity.md)
 
 ## Proof depends on
 
-- [Modulus Of Continuity bdd Above](modulus-of-continuity-bdd-above.md)
+- [The set defining the modulus of continuity is bounded above](modulus-of-continuity-bdd-above.md)
 
 ## Sources
 

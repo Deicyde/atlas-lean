@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.ExactlyOneWorld
 ---
 
-# Exactly One World
+# Exactly one of Impagliazzo's five worlds holds
 
-Exactly one of the five worlds holds.
+**Exactly one of Impagliazzo's five worlds holds.** Exactly one of the statements
+Algorithmica, Heuristica, Pessiland, Minicrypt and Cryptomania is true: one of them holds and
+the other four fail.
 
 ## Depends on
 

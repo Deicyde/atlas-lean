@@ -18,7 +18,7 @@ $\delta$ takes the value $0$ at $a$.
 
 ## Proof depends on
 
-- [Interval Cutoff eq zero left](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-zero-left.md)
+- [The interval cutoff vanishes at the left endpoint](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-eq-zero-left.md)
 
 ## Sources
 

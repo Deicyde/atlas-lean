@@ -5,10 +5,13 @@ statement: formalized
 lean: groupHomology.biprodIso
 ---
 
-# Biprod Iso
+# Group homology of a direct sum
 
-Group homology of a direct sum is the direct sum of the group
-homologies (Corollary 23.22).
+**Group homology of a direct sum.** Let $k$ be a commutative ring, $G$ a group, $A$ and $B$
+representations of $G$ over $k$, and $n \in \mathbb{N}$, and write $H_n(G, M)$ for the $n$th group
+homology of a representation $M$. This is the isomorphism
+$H_n(G, A \oplus B) \cong H_n(G, A) \oplus H_n(G, B)$ obtained by applying the $n$th group homology
+functor, which is additive, to the biproduct $A \oplus B$.
 
 ## Depends on
 
@@ -17,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.RepresentationTheory.Homological.GroupHomology.Biproduct](../../../../../../sources/v2/MathlibExt.md)
+- NumberTheoryI, Section 23.4, Corollary 23.22.

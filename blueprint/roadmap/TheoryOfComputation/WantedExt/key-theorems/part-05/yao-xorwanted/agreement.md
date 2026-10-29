@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.agreement
 ---
 
-# Agreement
+# Agreement of a circuit with a Boolean function
 
-Agreement of a circuit with a function `g` on inputs encoded by `enc`: the fraction
-of inputs on which the circuit's last gate value equals `g`.
+**Agreement of a circuit with a Boolean function.** Let $\alpha$ be a finite type, let $C$
+be a circuit given as a list of encoded gates, let $g$ assign a Boolean to each $a \in \alpha$,
+and let $\mathrm{enc}$ encode each $a \in \alpha$ as a list of Booleans. The agreement of $C$
+with $g$ is the rational number $N / |\alpha|$ (which is $0$ when $\alpha$ is empty), where $N$
+is the number of $a \in \alpha$ such that $C$ has at least one gate and the value of its last
+gate, when $C$ is evaluated on the input list $\mathrm{enc}(a)$, equals $g(a)$.
 
 ## Depends on
 
-- [XORGate](xorgate.md)
+- [Encoded gates](xorgate.md)
 
 ## Proof depends on
 
-- [Xor Circuit Eval](xor-circuit-eval.md)
+- [Gate values of an encoded circuit](xor-circuit-eval.md)
 
 ## Sources
 

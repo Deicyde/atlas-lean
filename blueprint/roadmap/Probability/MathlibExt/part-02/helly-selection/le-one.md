@@ -6,13 +6,14 @@ proof: formalized
 lean: ProbabilityTheory.IsDistributionFunction.le_one
 ---
 
-# Le one
+# Distribution functions are at most one
 
-A distribution function is bounded above by `1`: `F x ≤ 1` for all `x ∈ ℝ`.
+**Distribution functions are at most one.** If $F$ is a distribution function on
+$\mathbb{R}$, then $F(x) \le 1$ for every $x \in \mathbb{R}$.
 
 ## Depends on
 
-- [Is Distribution Function](is-distribution-function.md)
+- [Distribution function](is-distribution-function.md)
 
 ## Sources
 

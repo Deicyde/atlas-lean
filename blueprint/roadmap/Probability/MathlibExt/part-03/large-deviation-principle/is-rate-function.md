@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.IsRateFunction
 ---
 
-# Is Rate Function
+# Rate function
 
-A **rate function** `I : X → [0, ∞]` is, by definition, a
-lower-semicontinuous function. This is the basic regularity hypothesis
-used in the formulation of a large deviation principle.
+**Rate function.** Let $X$ be a topological space. A rate function on $X$ is a lower
+semicontinuous function $I : X \to [0, \infty]$.
+
+This is the basic regularity hypothesis used in the formulation of a large deviation principle.
 
 ## Depends on
 

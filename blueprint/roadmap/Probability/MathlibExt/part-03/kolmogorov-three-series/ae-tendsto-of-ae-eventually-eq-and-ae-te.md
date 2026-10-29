@@ -6,12 +6,14 @@ proof: formalized
 lean: ProbabilityTheory.KolmogorovThreeSeries.ae_tendsto_of_ae_eventually_eq_and_ae_tendsto
 ---
 
-# Ae tendsto of ae eventually eq and ae tendsto
+# Eventually equal series inherit almost-everywhere convergence
 
-If two sequences `f, g` of random variables agree eventually (almost
-surely) and the partial sums of `f` converge almost surely, then the
-partial sums of `g` also converge almost surely (to a possibly different
-limit).
+**Eventually equal series inherit almost-everywhere convergence.** Let $\mu$ be a measure on
+$\Omega$ and let $f_n, g_n : \Omega \to \mathbb{R}$ ($n \ge 0$) be functions such that for
+$\mu$-almost every $\omega$ we have $f_n(\omega) = g_n(\omega)$ for all sufficiently large $n$. If
+there is a function $S : \Omega \to \mathbb{R}$ with $\sum_{i < n} f_i(\omega) \to S(\omega)$ as
+$n \to \infty$ for $\mu$-almost every $\omega$, then there is a function $T : \Omega \to \mathbb{R}$
+with $\sum_{i < n} g_i(\omega) \to T(\omega)$ as $n \to \infty$ for $\mu$-almost every $\omega$.
 
 ## Depends on
 

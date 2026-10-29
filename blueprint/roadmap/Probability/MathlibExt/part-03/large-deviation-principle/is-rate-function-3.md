@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.IsConvexRateFunction.isRateFunction
 ---
 
-# Is Rate Function
+# Convex rate functions are rate functions
 
-A convex rate function is a rate function.
+**Convex rate functions are rate functions.** Every convex rate function on a real vector space
+with a topology is a rate function.
 
 ## Depends on
 
-- [Is Convex Rate Function](is-convex-rate-function.md)
-- [Is Rate Function](is-rate-function.md)
+- [Convex rate function](is-convex-rate-function.md)
+- [Rate function](is-rate-function.md)
 
 ## Sources
 

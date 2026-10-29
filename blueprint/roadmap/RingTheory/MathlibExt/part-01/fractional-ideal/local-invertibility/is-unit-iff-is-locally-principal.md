@@ -13,13 +13,13 @@ locally principal.
 
 ## Depends on
 
-- [Is Locally Principal](is-locally-principal.md)
+- [Locally principal fractional ideal](is-locally-principal.md)
 
 ## Proof depends on
 
 - [Theorem 3.2](is-unit-iff-is-unit-localize-at-prime.md)
-- [Localize At Prime](localize-at-prime.md)
-- [Lemma 3.4](fractional-ideal-is-unit-iff-is-principa.md)
+- [Localization of a fractional ideal at a prime](localize-at-prime.md)
+- [Invertible fractional ideals of a Noetherian local domain are principal](fractional-ideal-is-unit-iff-is-principa.md)
 
 ## Sources
 

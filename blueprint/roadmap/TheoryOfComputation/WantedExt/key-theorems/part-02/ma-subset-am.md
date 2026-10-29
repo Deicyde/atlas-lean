@@ -7,10 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.MASubsetAM.ma_subset_am
 
 # MA is contained in AM
 
-**MA is contained in AM.** Source: L. Babai, "Trading group theory for randomness",
-Proceedings of the Seventeenth Annual ACM Symposium on Theory of Computing
-(STOC 1985), 421-429; S. Arora and B. Barak, Computational Complexity: A Modern
-Approach, 2009, Theorem 8.2 (MA ⊆ AM).
+**MA is contained in AM.** Every decision problem in the class $\mathsf{MA}$ is in the class
+$\mathsf{AM}$.
 
 ## Depends on
 
@@ -22,3 +20,4 @@ Approach, 2009, Theorem 8.2 (MA ⊆ AM).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.MASubsetAMWanted](../../../../../sources/v2/WantedExt.md)
+- L. Babai, "Trading group theory for randomness", Proceedings of the Seventeenth Annual ACM Symposium on Theory of Computing (STOC 1985), 421-429; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 8.2 (MA ⊆ AM).

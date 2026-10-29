@@ -5,9 +5,9 @@ navigation: module
 # Hessian
 
 - [Riemannian gradient](riemannian-gradient.md)
-- [Inner riemannian Gradient](inner-riemannian-gradient.md)
-- [Riemannian Gradient eq iff](riemannian-gradient-eq-iff.md)
-- [Norm riemannian Gradient](norm-riemannian-gradient.md)
+- [Pairing of the Riemannian gradient with a tangent vector](inner-riemannian-gradient.md)
+- [Characterization of the Riemannian gradient](riemannian-gradient-eq-iff.md)
+- [Norm of the Riemannian gradient](norm-riemannian-gradient.md)
 - [Covariant Hessian](hessian.md)
 - [The Riemannian gradient on a Hilbert space](riemannian-gradient-vector-space.md)
 - [The Hessian on Euclidean space as an iterated directional derivative](hessian-vector-space.md)

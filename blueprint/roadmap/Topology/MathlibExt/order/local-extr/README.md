@@ -4,9 +4,9 @@ navigation: module
 
 # Local Extr
 
-- [Is Strict Local Min](is-strict-local-min.md)
-- [Is Strict Local Max](is-strict-local-max.md)
-- [Is Local Min](is-local-min.md)
-- [Is Local Max](is-local-max.md)
-- [Neg](neg.md)
-- [Neg](neg-2.md)
+- [Strict local minimum](is-strict-local-min.md)
+- [Strict local maximum](is-strict-local-max.md)
+- [A strict local minimum is a local minimum](is-local-min.md)
+- [A strict local maximum is a local maximum](is-local-max.md)
+- [Negation turns a strict local minimum into a strict local maximum](neg.md)
+- [Negation turns a strict local maximum into a strict local minimum](neg-2.md)

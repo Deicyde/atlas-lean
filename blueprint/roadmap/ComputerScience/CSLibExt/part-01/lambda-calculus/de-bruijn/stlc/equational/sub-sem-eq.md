@@ -20,7 +20,7 @@ $I$ at $\eta$ equals the denotation of the term $\tau(x)$ in $I$ at $\eta$.
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Denotation of simple types](../denotational/denote.md)
 - [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)

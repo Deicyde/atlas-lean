@@ -28,7 +28,7 @@ of $P$ and whose tops and bottoms concatenate to the same word.
 - [Rewriting systems with nonempty sides](../string-rewriting/nonempty-rules.md)
 - [Rewriting rules](../string-rewriting/rule.md)
 - [The reachability problem for string rewriting](../string-rewriting/sr.md)
-- [Reachability many-one reduces to MPCP](../string-rewriting/many-one-reducible-sr-mpcp.md)
+- [Reachability with nonempty sides many-one reduces to MPCP with nonempty words](../string-rewriting/many-one-reducible-sr-mpcp.md)
 - [Reachability for string rewriting is undecidable](exists-not-tm2-decidable-sr.md)
 - [Decidability transfers along mapping reductions](../undecidable/tm2-decidable-of-many-one-reducible.md)
 

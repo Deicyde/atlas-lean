@@ -13,7 +13,7 @@ steps to a normal form $n$ and also to a normal form $m$, then $n = m$.
 
 ## Depends on
 
-- [Normal Form](../semantics/normal-form.md)
+- [Normal forms for call-by-value reduction in STLC](../semantics/normal-form.md)
 - [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)

@@ -6,21 +6,25 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.random_walk_dichotomy
 ---
 
-# Random walk dichotomy
+# Random-walk dichotomy, finite-limit form
 
-The finite-convergence corollary of the random-walk dichotomy.
+**Random-walk dichotomy, finite-limit form.** Let $X_0, X_1, \dots$ be independent,
+identically distributed real random variables on a probability space and
+$S_n = \sum_{i < n} X_i$. Then one of the following events has probability one: $S_n$
+converges to a finite limit (which may depend on the outcome); $S_n \to +\infty$;
+$S_n \to -\infty$; or $\limsup_n S_n = +\infty$ and $\liminf_n S_n = -\infty$.
 
 ## Depends on
 
-- [Converges Finite](converges-finite.md)
-- [Drifts To Bot](drifts-to-bot.md)
-- [Drifts To Top](drifts-to-top.md)
-- [Oscillates](oscillates.md)
+- [Random walk with a finite limit](converges-finite.md)
+- [Random walk drifting to $-\infty$](drifts-to-bot.md)
+- [Random walk drifting to $+\infty$](drifts-to-top.md)
+- [Oscillating random walk](oscillates.md)
 
 ## Proof depends on
 
-- [Zero Walk](zero-walk.md)
-- [Converges Finite](converges-finite-2.md)
+- [Zero random walk](zero-walk.md)
+- [A zero walk converges to a finite limit](converges-finite-2.md)
 - [Random-walk dichotomy](random-walk-dichotomy-zero.md)
 
 ## Sources

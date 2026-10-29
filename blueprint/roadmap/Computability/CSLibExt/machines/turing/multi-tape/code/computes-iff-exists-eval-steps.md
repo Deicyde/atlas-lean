@@ -17,7 +17,7 @@ that the clocked evaluator of $c$ run on $x$ for $T$ steps returns $o$.
 
 - [Codes for multi-tape machines](code.md)
 - [Clocked evaluator](eval-steps.md)
-- [The machine of a code](to-tm.md)
+- [The multi-tape machine of a code](to-tm.md)
 
 ## Proof depends on
 

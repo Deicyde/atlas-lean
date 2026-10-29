@@ -17,7 +17,7 @@ the symbols under its heads.
 ## Depends on
 
 - [Codes for multi-tape machines](code.md)
-- [The machine of a code](to-tm.md)
+- [The multi-tape machine of a code](to-tm.md)
 - [Transition function of a code](tr.md)
 - [Successor under a transition function](../basic/step-with.md)
 

@@ -1,4 +1,4 @@
 # Class Group
 
 - [Coprime Representative](coprime-representative/README.md)
-- [Ideal Similarity](ideals-similar.md)
+- [Similar ideals](ideals-similar.md)

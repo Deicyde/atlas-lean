@@ -17,7 +17,7 @@ it is a strict upper bound on the states of $c$.
 
 ## Proof depends on
 
-- [States of a code](../code/states.md)
+- [States of a multi-tape code](../code/states.md)
 
 ## Sources
 

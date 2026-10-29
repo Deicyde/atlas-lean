@@ -24,7 +24,7 @@ the choice of $s$, because Moore-related states have the same continuation langu
 - [A state is reachable exactly when some word leads to it](../../../decidability/part-02/regular/mem-reachable-iff.md)
 - [Moore's relation](moore-rel.md)
 - [Moore equivalence on reachable states](moore-setoid.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Sources
 

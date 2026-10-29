@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.limsup_eq_bot_of_tendsto_atBot
 ---
 
-# Limsup eq bot of tendsto at Bot
+# A sequence tending to $-\infty$ has limsup $-\infty$
 
-`Sₙ → -∞` if and only if `limsup Sₙ = ⊥` (in `EReal`).
+**A sequence tending to $-\infty$ has limsup $-\infty$.** Let $(S_n)_{n \in \mathbb{N}}$
+be a sequence of real numbers with $S_n \to -\infty$ as $n \to \infty$. Then the limit
+superior of $(S_n)$, taken in the extended reals $[-\infty, +\infty]$, equals $-\infty$.
 
 ## Depends on
 

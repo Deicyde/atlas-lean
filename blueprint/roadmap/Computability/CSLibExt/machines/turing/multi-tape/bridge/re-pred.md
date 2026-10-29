@@ -22,11 +22,11 @@ with a trivial value, exactly where $p$ holds is partial recursive.
 
 - [Codes for multi-tape machines](../code/code.md)
 - [A code computes exactly what its clocked evaluator returns](../code/computes-iff-exists-eval-steps.md)
-- [Codes as tables](../code/equiv-table.md)
+- [Multi-tape codes as tables](../code/equiv-table.md)
 - [Clocked evaluator](../code/eval-steps.md)
 - [Every finite-state machine has a code](../code-completeness/exists-code-is-relabelling.md)
 - [The evaluator is primitive recursive](../code/primrec-eval-steps.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 - [Coded actions](../code/code-action.md)
 - [Coded actions as tuples](../code/equiv-prod.md)
 - [Keys of a code's table](../code/code-key.md)

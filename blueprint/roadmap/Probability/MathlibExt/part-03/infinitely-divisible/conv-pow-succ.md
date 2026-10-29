@@ -6,13 +6,16 @@ proof: formalized
 lean: MeasureTheory.Measure.convPow_succ
 ---
 
-# Conv Pow succ
+# Recursion for convolution powers
 
-The `(n+1)`-st convolution power is the `n`-th power convolved with `ν`.
+**Recursion for convolution powers.** Let $M$ be an additive commutative monoid with a
+σ-algebra and let $\nu$ be a measure on $M$. For every natural number $n$, the $(n+1)$-st
+convolution power of $\nu$ is the convolution of the $n$-th convolution power of $\nu$
+with $\nu$.
 
 ## Depends on
 
-- [Conv Pow](conv-pow.md)
+- [Convolution power of a measure](conv-pow.md)
 
 ## Sources
 

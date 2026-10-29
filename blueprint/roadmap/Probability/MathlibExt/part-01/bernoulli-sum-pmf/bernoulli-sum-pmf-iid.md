@@ -6,19 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.bernoulli_sum_pmf_iid
 ---
 
-# Bernoulli sum pmf iid
+# Binomial distribution of a sum of i.i.d. Bernoulli variables
 
-Probability mass function of a sum of independent *identically distributed*
-Bernoulli variables: if `X₁, …, X_m` are independent with `X_i ∼ Bernoulli(p)`,
-then `P(∑ X_i = j) = C(m, j) p ^ j (1 - p) ^ (m - j)`, the binomial pmf.
+**Binomial distribution of a sum of i.i.d. Bernoulli variables.** Let $\mu$ be a
+probability measure on a measurable space $\Omega$, let $m \in \mathbb{N}$, let $p$ be a real
+number, and let $X_1, \dots, X_m : \Omega \to \mathbb{N}$ be measurable, mutually independent
+random variables, each a Bernoulli random variable with parameter $p$ under $\mu$. Then for
+every $j \in \mathbb{N}$ the probability that $X_1 + \dots + X_m = j$ is
+$\binom{m}{j} p^j (1 - p)^{m - j}$, where the exponent $m - j$ is taken to be $0$ when $j > m$.
 
 ## Depends on
 
-- [Is Bernoulli RV](is-bernoulli-rv.md)
+- [Bernoulli random variable](is-bernoulli-rv.md)
 
 ## Proof depends on
 
-- [Bernoulli sum pmf](bernoulli-sum-pmf.md)
+- [Distribution of a sum of independent Bernoulli variables](bernoulli-sum-pmf.md)
 
 ## Sources
 

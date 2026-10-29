@@ -8,27 +8,28 @@ lean: StochasticMatrix.kolmogorov_cycle_necessity
 
 # Kolmogorov's cycle theorem, necessity half
 
-**Kolmogorov's cycle theorem, necessity half.** For an irreducible finite
-Markov chain with transition matrix `P`, if there exists a reversible measure
-(i.e. `P.IsReversible`) then `P` satisfies Kolmogorov's cycle condition:
-(1) `P(x, y) > 0` implies `P(y, x) > 0`; and
-(2) for any loop `x₀, x₁, …, xₙ = x₀` with `∏ P(xᵢ, xᵢ₋₁) > 0`, the product
-of forward transition probabilities along the loop equals the product of
-backward transition probabilities.
+**Kolmogorov's cycle theorem, necessity half.** Let $P$ be an irreducible stochastic matrix
+on the finite state space $\{0, 1, \dots, M\}$. If $P$ is reversible, that is, some probability
+distribution $\pi$ is stationary for $P$ and satisfies the detailed balance equations
+$\pi(i) P(i, j) = \pi(j) P(j, i)$ for all states $i, j$, then $P$ satisfies Kolmogorov's cycle
+condition: (1) for all states $x, y$, $P(x, y) > 0$ implies $P(y, x) > 0$; and (2) for every
+$n \ge 0$ and every loop of states $x_0, x_1, \dots, x_n$ with $x_n = x_0$ and
+$\prod_{i=0}^{n-1} P(x_{i+1}, x_i) > 0$, we have
+$\prod_{i=0}^{n-1} P(x_i, x_{i+1}) = \prod_{i=0}^{n-1} P(x_{i+1}, x_i)$.
 
 ## Depends on
 
-- [Stochastic Matrix](stochastic-matrix.md)
-- [Is Irreducible](is-irreducible.md)
-- [Is Reversible](is-reversible.md)
+- [Stochastic matrix](stochastic-matrix.md)
+- [Irreducible stochastic matrix](is-irreducible.md)
+- [Reversible stochastic matrix](is-reversible.md)
 - [Kolmogorov's cycle condition](kolmogorov-cycle-condition.md)
 
 ## Proof depends on
 
-- [Detailed Balance](detailed-balance.md)
-- [Distribution](distribution.md)
-- [Is Stationary](is-stationary.md)
-- [Distribution pos of irreducible detailed Balance](distribution-pos-of-irreducible-detailed.md)
+- [Detailed balance](detailed-balance.md)
+- [Probability distribution on a finite state space](distribution.md)
+- [Stationary distribution](is-stationary.md)
+- [Detailed balance distributions of irreducible chains are positive](distribution-pos-of-irreducible-detailed.md)
 
 ## Sources
 

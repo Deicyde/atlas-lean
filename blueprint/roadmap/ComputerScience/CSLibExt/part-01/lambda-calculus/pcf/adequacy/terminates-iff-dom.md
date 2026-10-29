@@ -27,7 +27,7 @@ partial natural numbers, is defined.
 - [Closed PCF terms that evaluate to a numeral denote its value](../soundness/denote-numeral.md)
 - [PCF evaluation results are values](../big-step/value-2.md)
 - [Closed values of ground type are numerals](../big-step/eq-numeral.md)
-- [Adequacy](adequacy.md)
+- [Computational adequacy for PCF](adequacy.md)
 - [PCF numerals](../syntax/numeral.md)
 
 ## Sources

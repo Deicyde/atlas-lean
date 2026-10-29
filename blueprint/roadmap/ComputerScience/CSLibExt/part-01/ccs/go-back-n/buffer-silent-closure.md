@@ -27,7 +27,7 @@ buffer itself.
 - [Recursive CCS specification of go-back-N](spec.md)
 - [Realization of a code-level transition system](../finite-state/realizes.md)
 - [Constants listing their transitions realize them](../finite-state/constant.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 
 ## Sources
 

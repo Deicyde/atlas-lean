@@ -16,8 +16,8 @@ in the finite set of states of $c$.
 ## Depends on
 
 - [Codes for multi-tape machines](code.md)
-- [States of a code](states.md)
-- [The machine of a code](to-tm.md)
+- [States of a multi-tape code](states.md)
+- [The multi-tape machine of a code](to-tm.md)
 
 ## Proof depends on
 

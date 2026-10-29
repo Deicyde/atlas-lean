@@ -17,7 +17,7 @@ variable.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)
 - [Denotation of simple types](denote.md)

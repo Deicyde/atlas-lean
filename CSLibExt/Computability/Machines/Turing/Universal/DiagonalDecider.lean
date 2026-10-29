@@ -825,7 +825,8 @@ instance Lab.instFintypeEnumFix : Fintype Lab where
     .lo6, .bad, .done], by decide⟩
   complete := fun x => by cases x <;> decide
 
-/-- Every stack holds bits. -/
+/-- **Stack symbols of the layout machine.** Every stack of the layout machine holds bits: the
+alphabet of each of its stacks is the type of Booleans. -/
 abbrev Γ : K → Type := fun _ => Bool
 
 /-- **Program of the layout machine.** Writing $1$ for true and $0$ for false, this is the

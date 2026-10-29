@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.isSlowlyVarying_one_add_inv
 ---
 
-# Is Slowly Varying one add inv
+# The function $1 + (1 + x)^{-1}$ is slowly varying
 
-`fun x ↦ 1 + (1 + x)⁻¹` is slowly varying: it tends to the positive limit
-`1` at infinity.
+**The function $1 + (1 + x)^{-1}$ is slowly varying.** The function
+$x \mapsto 1 + (1 + x)^{-1}$ on $\mathbb{R}$ is slowly varying; it tends to the positive limit $1$
+at infinity.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Proof depends on
 
-- [Of tendsto](of-tendsto.md)
+- [Functions with a positive limit are slowly varying](of-tendsto.md)
 
 ## Sources
 

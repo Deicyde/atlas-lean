@@ -6,11 +6,11 @@ proof: formalized
 lean: isDedekindDomain_iff_principalProduct
 ---
 
-# Is Dedekind Domain iff principal Product
+# Dedekind domains via principal products
 
-The corrected nonvacuous form of Theorem 3.23(6): a domain is Dedekind
-if and only if every nonzero ideal has a principal nonzero product with a
-suitable ideal. The recorded target omits both nonzero qualifiers.
+**Dedekind domains via principal products.** An integral domain $A$ is a Dedekind domain if
+and only if for every nonzero ideal $I$ of $A$ there is an ideal $J$ of $A$ such that $IJ$ is a
+nonzero principal ideal.
 
 ## Depends on
 
@@ -19,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.Characterizations](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Theorem 3.23(6), corrected: the recorded condition omits both nonzero qualifiers, which makes it vacuous (take $J = 0$).

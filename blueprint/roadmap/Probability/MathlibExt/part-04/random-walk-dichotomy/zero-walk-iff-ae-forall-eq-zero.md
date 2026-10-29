@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.zeroWalk_iff_ae_forall_eq_zero
 ---
 
-# Zero Walk iff ae forall eq zero
+# A random walk is zero exactly when its steps are
 
-Every partial sum vanishes almost surely if and only if every increment does.
+**A random walk is zero exactly when its steps are.** Let $X_0, X_1, \dots$ be real random
+variables on a probability space and $S_n = \sum_{i < n} X_i$. Then almost surely $S_n = 0$ for
+every $n$ if and only if almost surely $X_i = 0$ for every $i$.
 
 ## Depends on
 
-- [Zero Walk](zero-walk.md)
+- [Zero random walk](zero-walk.md)
 
 ## Proof depends on
 
-- [Random Walk Partial Sum](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
+- [Partial sums of a random walk](../../part-05/random-walk-tail-measurability/random-walk-partial-sum.md)
 
 ## Sources
 

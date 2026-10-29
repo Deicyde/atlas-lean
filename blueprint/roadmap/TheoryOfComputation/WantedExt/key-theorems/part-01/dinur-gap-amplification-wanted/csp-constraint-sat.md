@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.cspConstraintSat
 ---
 
-# Csp Constraint Sat
+# Satisfied constraint of a 2CSP instance
 
-A constraint is satisfied by an assignment: its variable indices are in range
-and the assigned label pair is allowed.
+**Satisfied constraint of a 2CSP instance.** Let $I = (n, \Sigma, C)$ be a 2CSP instance and
+$\sigma$ an assignment of a label less than $\Sigma$ to each variable less than $n$. A constraint
+$(u, v, P)$ is satisfied by $\sigma$ when $u < n$, $v < n$ and the pair $(\sigma(u), \sigma(v))$
+belongs to $P$.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Sources
 

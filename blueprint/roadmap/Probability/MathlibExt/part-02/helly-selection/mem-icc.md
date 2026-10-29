@@ -6,19 +6,19 @@ proof: formalized
 lean: ProbabilityTheory.IsDistributionFunction.mem_Icc
 ---
 
-# Mem Icc
+# Distribution functions take values in the unit interval
 
-For any distribution function `F` and any `x ∈ ℝ`, `F x` lies in the unit
-interval `[0, 1]`.
+**Distribution functions take values in the unit interval.** If $F$ is a distribution
+function on $\mathbb{R}$, then $F(x) \in [0, 1]$ for every $x \in \mathbb{R}$.
 
 ## Depends on
 
-- [Is Distribution Function](is-distribution-function.md)
+- [Distribution function](is-distribution-function.md)
 
 ## Proof depends on
 
-- [Le one](le-one.md)
-- [Nonneg](nonneg.md)
+- [Distribution functions are at most one](le-one.md)
+- [Distribution functions are nonnegative](nonneg.md)
 
 ## Sources
 

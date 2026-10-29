@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.bmCenteredCylinders
 ---
 
-# Bm Centered Cylinders
+# Cylinder events of the centered shifted path
 
-Cylinders in the centered shifted path: finite intersections of events
-`{bmCenteredShift t ∈ C t}`.
+**Cylinder events of the centered shifted path.** Let $(B_t)_{t \ge 0}$ be a real-valued
+process on $\Omega$ and let $s \ge 0$. The centered cylinders at time $s$ are the events
+$\bigcap_{t \in S} \{\omega \in \Omega : B_{s+t}(\omega) - B_s(\omega) \in C_t\}$, where
+$S \subset \mathbb{R}_{\ge 0}$ is a finite set and each $C_t \subseteq \mathbb{R}$ is a
+Borel set.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bm Centered Shift](bm-centered-shift.md)
+- [Centered shifted path](bm-centered-shift.md)
 
 ## Sources
 

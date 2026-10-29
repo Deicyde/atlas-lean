@@ -27,7 +27,7 @@ Then the processes $\iota(x)$, indexed by codes $x$, realize $s$.
 
 - [Transitions of a sum of prefixes](step-sum-of-iff.md)
 - [Complementary labels](../parallel/complementary.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Relabelling](../static-operators/relabelling.md)
 - [Actions permitted by a restriction](../static-operators/allowed.md)
 - [Relabelling an action](../static-operators/relabel-action.md)

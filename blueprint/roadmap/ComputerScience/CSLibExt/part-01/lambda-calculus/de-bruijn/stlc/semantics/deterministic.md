@@ -20,7 +20,7 @@ and to $t_2$, then $t_1 = t_2$.
 
 ## Proof depends on
 
-- [Value irreducible](value-irreducible.md)
+- [Values are irreducible](value-irreducible.md)
 - [Instantiating a binder body (simply typed lambda calculus)](../substitution/instantiate.md)
 - [Values of STLC](value.md)
 - [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)

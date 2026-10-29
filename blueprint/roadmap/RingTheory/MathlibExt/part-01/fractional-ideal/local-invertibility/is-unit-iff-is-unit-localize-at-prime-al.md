@@ -13,7 +13,7 @@ its localization at every prime ideal is invertible.
 
 ## Depends on
 
-- [Localize At Prime](localize-at-prime.md)
+- [Localization of a fractional ideal at a prime](localize-at-prime.md)
 
 ## Proof depends on
 

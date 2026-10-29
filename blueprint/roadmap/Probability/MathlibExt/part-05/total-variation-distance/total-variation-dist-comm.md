@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Probability.TotalVariationDistance.totalVariationDist_comm
 ---
 
-# Total Variation Dist comm
+# Symmetry of total variation distance
 
-The supremum distance is symmetric for finite measures.
+**Symmetry of total variation distance.** For finite measures $\mu$ and $\nu$ on a measurable
+space, the total variation distances satisfy $d_{TV}(\mu, \nu) = d_{TV}(\nu, \mu)$.
 
 ## Depends on
 
-- [Total Variation Dist](total-variation-dist.md)
+- [Total variation distance between finite measures](total-variation-dist.md)
 
 ## Sources
 

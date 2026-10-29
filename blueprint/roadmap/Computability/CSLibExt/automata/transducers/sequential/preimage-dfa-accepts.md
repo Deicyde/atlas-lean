@@ -16,7 +16,7 @@ of input words that $S$ translates to some word accepted by $M$.
 ## Depends on
 
 - [Sequential transducer](sequential-transducer.md)
-- [Preimage](preimage.md)
+- [Preimage of a language under a sequential transducer](preimage.md)
 - [Product DFA of a sequential transducer and a DFA](preimage-dfa.md)
 
 ## Proof depends on

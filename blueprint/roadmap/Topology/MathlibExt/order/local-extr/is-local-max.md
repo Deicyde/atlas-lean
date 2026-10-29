@@ -6,14 +6,16 @@ proof: formalized
 lean: IsStrictLocalMax.isLocalMax
 ---
 
-# Is Local Max
+# A strict local maximum is a local maximum
 
-A strict local maximum is a local maximum in Mathlib's (non-strict)
-sense.
+**A strict local maximum is a local maximum.** Let $f \colon X \to Y$ be a function from a
+topological space $X$ to a preordered set $Y$. If $f$ has a strict local maximum at $a \in X$,
+then $f$ has a local maximum at $a$, that is, $f(x) \le f(a)$ for all $x$ in some neighborhood
+of $a$.
 
 ## Depends on
 
-- [Is Strict Local Max](is-strict-local-max.md)
+- [Strict local maximum](is-strict-local-max.md)
 
 ## Sources
 

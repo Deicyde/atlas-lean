@@ -4,9 +4,9 @@ navigation: module
 
 # Cdf Continuity Points
 
-- [Measure singleton eq cdf sub left Lim](measure-singleton-eq-cdf-sub-left-lim.md)
-- [Continuous At cdf iff measure singleton eq zero](continuous-at-cdf-iff-measure-singleton.md)
-- [Cdf continuous At singleton null](cdf-continuous-at-singleton-null.md)
-- [Cdf continuous At frontier Iic null](cdf-continuous-at-frontier-iic-null.md)
-- [Measure Ioc eq of Real cdf](measure-ioc-eq-of-real-cdf.md)
-- [Dense cdf continuity Points](dense-cdf-continuity-points.md)
+- [Atoms are the jumps of the cdf](measure-singleton-eq-cdf-sub-left-lim.md)
+- [The cdf is continuous exactly at the non-atoms](continuous-at-cdf-iff-measure-singleton.md)
+- [No atom at a continuity point of the cdf](cdf-continuous-at-singleton-null.md)
+- [Continuity points of the cdf have null boundary](cdf-continuous-at-frontier-iic-null.md)
+- [Mass of a half-open interval via the cdf](measure-ioc-eq-of-real-cdf.md)
+- [The continuity points of the cdf are dense](dense-cdf-continuity-points.md)

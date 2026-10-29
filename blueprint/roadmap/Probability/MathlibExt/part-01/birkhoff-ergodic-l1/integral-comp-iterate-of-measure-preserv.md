@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.BirkhoffErgodicL1.integral_comp_iterate_of_measurePreserving
 ---
 
-# Integral comp iterate of measure Preserving
+# Invariance of the integral under iterates
 
-The integral of an observable is unchanged by precomposition with an
-iterate of a measure-preserving transformation.
+**Invariance of the integral under iterates.** Let $\mu$ be a measure on a measurable space
+$\alpha$, let $T : \alpha \to \alpha$ preserve $\mu$, and let $u : \alpha \to \mathbb{R}$ be
+$\mu$-integrable. Then for every $k \in \mathbb{N}$, writing $T^k$ for the $k$-th iterate of
+$T$, we have $\int u(T^k x) \, d\mu(x) = \int u \, d\mu$.
 
 ## Depends on
 

@@ -6,21 +6,20 @@ proof: formalized
 lean: MeasureTheory.Measure.convPow_succ_poissonMeasure
 ---
 
-# Conv Pow succ poisson Measure
+# Convolution powers of a Poisson measure
 
-The `(n+1)`-st convolution power of a Poisson measure is the Poisson
-measure at the `(n+1)`-fold multiple of the rate. Stated for `n + 1` to
-avoid the `n = 0` case, where `poissonMeasure 0 = δ_0` would need a
-separate argument.
+**Convolution powers of a Poisson measure.** For every real rate $r \ge 0$ and every natural
+number $n$, the $(n+1)$-st convolution power of the Poisson measure on $\mathbb{N}$ with rate
+$r$ is the Poisson measure on $\mathbb{N}$ with rate $(n+1)r$.
 
 ## Depends on
 
-- [Conv Pow](conv-pow.md)
+- [Convolution power of a measure](conv-pow.md)
 
 ## Proof depends on
 
-- [Conv Pow one](conv-pow-one.md)
-- [Conv Pow succ](conv-pow-succ.md)
+- [The first convolution power](conv-pow-one.md)
+- [Recursion for convolution powers](conv-pow-succ.md)
 
 ## Sources
 

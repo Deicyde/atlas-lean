@@ -12,7 +12,7 @@ Localization commutes with inversion of fractional ideals.
 
 ## Depends on
 
-- [Localize At Prime](localize-at-prime.md)
+- [Localization of a fractional ideal at a prime](localize-at-prime.md)
 
 ## Proof depends on
 

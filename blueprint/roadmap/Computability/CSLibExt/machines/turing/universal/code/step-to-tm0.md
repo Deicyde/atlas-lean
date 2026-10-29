@@ -18,7 +18,7 @@ configuration of $k$ is the TM0 configuration of the step of $c$ from $k$.
 - [Codes for single-tape machines](code.md)
 - [Explicit configurations](cfg.md)
 - [TM0 configuration of a simulation configuration](to-tm0.md)
-- [The machine of a code](machine.md)
+- [The machine of a single-tape code](machine.md)
 - [One step of a code](step.md)
 
 ## Proof depends on

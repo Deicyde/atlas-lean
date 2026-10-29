@@ -4,12 +4,12 @@ navigation: module
 
 # Geodesic
 
-- [Is Geodesic On With Speed](is-geodesic-on-with-speed.md)
-- [Is Geodesic On](is-geodesic-on.md)
-- [Is Geodesic](is-geodesic.md)
-- [Is Closed Geodesic](is-closed-geodesic.md)
-- [Is Geodesic const](is-geodesic-const.md)
-- [Not is Closed Geodesic const](not-is-closed-geodesic-const.md)
-- [Is Geodesic On With Speed line Map](is-geodesic-on-with-speed-line-map.md)
-- [Is Geodesic line Map](is-geodesic-line-map.md)
-- [Not const](not-const.md)
+- [Geodesics of a given speed on a set of times](is-geodesic-on-with-speed.md)
+- [Geodesic on a set of times](is-geodesic-on.md)
+- [Geodesics defined for all times](is-geodesic.md)
+- [Closed geodesic](is-closed-geodesic.md)
+- [Constant curves are geodesics](is-geodesic-const.md)
+- [Constant curves are not closed geodesics](not-is-closed-geodesic-const.md)
+- [Straight lines are geodesics of constant speed](is-geodesic-on-with-speed-line-map.md)
+- [Straight lines are geodesics](is-geodesic-line-map.md)
+- [Closed geodesics are not constant](not-const.md)

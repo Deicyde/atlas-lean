@@ -6,11 +6,13 @@ proof: formalized
 lean: ProbabilityTheory.exists_bracket_of_strictMono
 ---
 
-# Exists bracket of strict Mono
+# Bracketing by a strictly increasing sequence
 
-For a strictly monotone sequence `φ : ℕ → ℕ` and any `n ≥ φ 0`, there exists `k` such that
-`φ k ≤ n < φ (k+1)`. This "bracketing" is used to sandwich a general `n` between
-two consecutive subsequence indices.
+**Bracketing by a strictly increasing sequence.** Let $\varphi : \mathbb{N} \to \mathbb{N}$ be
+strictly increasing and let $n \ge \varphi(0)$. Then there is $k \in \mathbb{N}$ with
+$\varphi(k) \le n < \varphi(k+1)$.
+
+This is used to sandwich a general index $n$ between two consecutive subsequence indices.
 
 ## Depends on
 

@@ -6,11 +6,13 @@ proof: formalized
 lean: ProbabilityTheory.not_ae_tendsto_partial_sum_of_tsum_tail_prob_eq_top
 ---
 
-# Contrapositive:
+# Divergent tail probabilities prevent almost-sure convergence of partial sums
 
-**Contrapositive:** if for some `A > 0` the tail probabilities
-`∑'ₙ μ {ω | A < |Xₙ ω|}` sum to `⊤`, then the partial sums of the
-independent sequence `Xₙ` cannot converge almost surely.
+**Divergent tail probabilities prevent almost-sure convergence of partial sums.** Let
+$(X_n)_{n \ge 0}$ be a sequence of independent measurable real random variables on a probability
+space $(\Omega, \mu)$, and let $A > 0$. If $\sum_n \mu(\{\omega : |X_n(\omega)| > A\}) = \infty$,
+then there is no function $S : \Omega \to \mathbb{R}$ such that, for $\mu$-almost every $\omega$,
+the partial sums $\sum_{i < n} X_i(\omega)$ converge to $S(\omega)$ as $n \to \infty$.
 
 ## Depends on
 

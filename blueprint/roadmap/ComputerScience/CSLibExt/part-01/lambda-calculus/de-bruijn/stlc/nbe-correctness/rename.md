@@ -16,7 +16,7 @@ transport of $v$ along $\rho$ realizes $d$ at $\theta$.
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Renaming an environment](../denotational/rename.md)
 - [Kripke realization relation for NbE](nbe-related.md)
 - [Renamings of simply typed contexts](../syntax/ren.md)

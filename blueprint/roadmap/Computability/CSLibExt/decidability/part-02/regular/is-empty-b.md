@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 
 ## Sources
 

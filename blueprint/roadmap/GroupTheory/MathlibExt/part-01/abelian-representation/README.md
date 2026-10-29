@@ -5,7 +5,7 @@ navigation: module
 
 # Abelian Representation
 
-- [Simple finite-dimensional representations are irreducible](is-irreducible-of-simple.md)
+- [Simple finite-dimensional representations of a monoid are irreducible](is-irreducible-of-simple.md)
 - [Simple finite-dimensional representations of commutative monoids are one-dimensional](finrank-eq-one-of-is-mul-commutative.md)
 - [Simple representations of commutative monoids act by scalars](rho-eq-character-smul-of-simple.md)
 - [Characters of simple representations of commutative monoids are multiplicative](character-mul-of-simple.md)

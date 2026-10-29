@@ -5,9 +5,12 @@ statement: formalized
 lean: ValuationBijection.primesAbove
 ---
 
-# Primes Above
+# Height-one primes above a prime
 
-The set of height-one primes of `B` lying over `𝔭`.
+**Height-one primes above a prime.** Let $A$ and $B$ be Dedekind domains with $B$ an
+$A$-algebra, and let $\mathfrak{p}$ be a height-one prime of $A$. The primes above $\mathfrak{p}$
+form the set of height-one primes $\mathfrak{q}$ of $B$ lying over $\mathfrak{p}$, that is, whose
+preimage in $A$ is $\mathfrak{p}$.
 
 ## Depends on
 

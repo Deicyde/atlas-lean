@@ -6,9 +6,13 @@ proof: formalized
 lean: MathlibExt.Probability.BirkhoffErgodicL1.norm_birkhoffAverage_le_of_bounded
 ---
 
-# Norm birkhoff Average le of bounded
+# Birkhoff averages of a bounded function are bounded
 
-If `g` is bounded by `M ≥ 0` everywhere, so is every Birkhoff average.
+**Birkhoff averages of a bounded function are bounded.** Let $T : \alpha \to \alpha$ be a
+map, let $M \ge 0$, and let $g : \alpha \to \mathbb{R}$ satisfy $|g(x)| \le M$ for every
+$x \in \alpha$. Then for every $n \in \mathbb{N}$ and every $x \in \alpha$, the Birkhoff average
+$\frac{1}{n} \sum_{k=0}^{n-1} g(T^k x)$ (taken to be $0$ for $n = 0$) has absolute value at
+most $M$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Birkhoff Average le birkhoff Average](birkhoff-average-le-birkhoff-average.md)
-- [Norm birkhoff Average le birkhoff Average norm](norm-birkhoff-average-le-birkhoff-averag.md)
+- [Monotonicity of Birkhoff averages](birkhoff-average-le-birkhoff-average.md)
+- [Triangle inequality for Birkhoff averages](norm-birkhoff-average-le-birkhoff-averag.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ semantically equal in $I$.
 
 ## Proof depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Renaming an environment](../denotational/rename.md)
 - [Denotation of an STLC term](../denotational/denote-2.md)
 - [Renaming lemma for STLC denotation](../denotational/denote-rename.md)

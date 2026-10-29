@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.IsGoodRateFunction.isRateFunction
 ---
 
-# Is Rate Function
+# Good rate functions are rate functions
 
-A good rate function is a rate function.
+**Good rate functions are rate functions.** Every good rate function on a topological space
+is a rate function.
 
 ## Depends on
 
-- [Is Good Rate Function](is-good-rate-function.md)
-- [Is Rate Function](is-rate-function.md)
+- [Good rate function](is-good-rate-function.md)
+- [Rate function](is-rate-function.md)
 
 ## Sources
 

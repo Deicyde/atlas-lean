@@ -15,14 +15,14 @@ value.
 
 ## Depends on
 
-- [Normalizes](normalizes.md)
+- [Normalizing closed terms](normalizes.md)
 - [Termination of closed terms](../logical-relation/terminates.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Normal Form](../semantics/normal-form.md)
+- [Normal forms for call-by-value reduction in STLC](../semantics/normal-form.md)
 - [Closed normal forms are exactly the values](../semantics/closed-normal-form-iff-value.md)
 - [Multi-step call-by-value reduction in STLC](../semantics/steps.md)
 - [Values of STLC](../semantics/value.md)

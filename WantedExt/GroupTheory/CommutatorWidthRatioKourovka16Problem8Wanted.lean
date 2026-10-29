@@ -51,8 +51,10 @@ exists. -/
 noncomputable def commutatorWidth (G : Type*) [Group G] : ℕ :=
   sInf {m : ℕ | 0 < m ∧ ∀ g ∈ commutator G, IsProductOfCommutators m g}
 
-/-- Kourovka 16.8 (V. G. Bardakov): the maximum of `w(G') / |G|` over finite non-abelian groups `G`
-is `1/6`, attained at the symmetric group `S₃`. -/
+/-- **Bardakov's commutator width ratio claim (Kourovka 16.8).** The proposition that for every
+finite non-abelian group $G$ the commutator width $w(G')$ of its derived subgroup $G'$ satisfies
+$w(G')/|G| \le 1/6$, and that for the symmetric group $S_3$ equality holds:
+$w(S_3')/|S_3| = 1/6$. -/
 def maxCommutatorWidthRatioIsOneSixth : Prop :=
   (∀ (G : Type) [Group G] [Finite G], (∃ a b : G, a * b ≠ b * a) →
       (commutatorWidth G : ℚ) / Nat.card G ≤ 1 / 6) ∧

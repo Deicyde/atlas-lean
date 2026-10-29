@@ -7,7 +7,7 @@ status: adopted
 
 Reusable, fully proved extensions to Mathlib. Source: <https://github.com/facebookresearch/atlas-lean/tree/main/MathlibExt>.
 
-2062 modules declare 10582 public declarations. Leaving
+2062 modules declare 10584 public declarations. Leaving
 out 192 instances, the 8799 with a docstring are
 roadmap articles whose statement is that docstring, with its citations moved
 to the article's sources. Theorems are proved and definitions defined unless

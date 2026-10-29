@@ -7,7 +7,7 @@ navigation: module
 - [Vertices of a spherically homogeneous rooted tree (Kourovka 15.14 version)](tree-vertex.md)
 - [Rigid vertex stabilizers (Kourovka 15.14 version)](rigid-vertex-stabilizer.md)
 - [Rigid level stabilizers (Kourovka 15.14 version)](rigid-level-stabilizer.md)
-- [Is Branch Group](is-branch-group.md)
+- [Branch groups (Kourovka 15.14 version)](is-branch-group.md)
 - [Growth Rate](growth-rate.md)
 - [Groups of exponential growth](has-exponential-growth.md)
 - [Groups containing a free subgroup of rank two](contains-free-group-rank-two.md)

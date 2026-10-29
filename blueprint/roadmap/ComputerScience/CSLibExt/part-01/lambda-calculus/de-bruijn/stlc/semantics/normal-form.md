@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.Stlc.Step.NormalForm
 ---
 
-# Normal Form
+# Normal forms for call-by-value reduction in STLC
 
-A term is in normal form when it has no outgoing reduction.
+**Normal forms for call-by-value reduction in STLC.** A term $t$ of type $A$ in a context
+$\Gamma$ is in normal form when there is no term $t'$ such that $t$ reduces to $t'$ in one
+call-by-value step.
 
 ## Depends on
 

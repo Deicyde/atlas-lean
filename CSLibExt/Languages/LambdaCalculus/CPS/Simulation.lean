@@ -86,7 +86,13 @@ theorem cpsRen_lift (ρ : Ren Γ Δ) {T : Ty Base} (y : Var ((A :: Γ).map (cpsT
   | zero => rfl
   | succ y => exact cpsRen_succ ρ y
 
-/-- The translation commutes with renaming. -/
+/-- **The call-by-value CPS translation commutes with renaming.** Fix an answer type $R$ and
+write $\llbracket \cdot \rrbracket$ for the call-by-value CPS translation of types, contexts
+(entrywise) and terms. For every renaming $\rho$ from a context $\Gamma$ to a context $\Delta$ and
+every term $t$ of type $A$ in $\Gamma$, the translation of the renamed term $t[\rho]$ equals the
+renaming of $\llbracket t \rrbracket$ along the translated renaming from
+$\llbracket \Gamma \rrbracket$ to $\llbracket \Delta \rrbracket$, which sends the translation of
+each variable $x$ of $\Gamma$ to the translation of $\rho(x)$. -/
 theorem cps_rename (ρ : Ren Γ Δ) (t : Tm Γ A) :
     cps R (Tm.rename ρ t) = Tm.rename (cpsRen R ρ) (cps R t) := by
   induction t generalizing Δ with

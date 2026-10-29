@@ -20,7 +20,7 @@ $\theta$.
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Kripke semantic values](../nbe/sem.md)
 - [Simple types](../syntax/ty.md)
 - [Denotation of simple types](../denotational/denote.md)

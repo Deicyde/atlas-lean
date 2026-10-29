@@ -24,7 +24,7 @@ state of $M$, and it stops as soon as a round adds nothing, so a larger bound co
 ## Proof depends on
 
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 - [The early-stopping search finds exactly the reachable states](reachable-within-eq-reachable.md)
 
 ## Sources

@@ -14,7 +14,7 @@ that sends each variable $x$ to the denotation of $\sigma(x)$ in $\eta$.
 
 ## Depends on
 
-- [Semantic environments](env.md)
+- [Semantic environments for the denotational semantics of STLC](env.md)
 - [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
 - [Simple types](../syntax/ty.md)
 

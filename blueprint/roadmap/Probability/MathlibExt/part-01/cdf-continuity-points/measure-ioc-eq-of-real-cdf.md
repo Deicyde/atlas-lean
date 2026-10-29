@@ -6,10 +6,12 @@ proof: formalized
 lean: MathlibExt.Probability.CdfContinuityPoints.measure_Ioc_eq_ofReal_cdf
 ---
 
-# Measure Ioc eq of Real cdf
+# Mass of a half-open interval via the cdf
 
-For a probability measure `μ` on `ℝ`, the mass of a half-open interval
-`(a, b]` equals `ENNReal.ofReal (cdf μ b - cdf μ a)`.
+**Mass of a half-open interval via the cdf.** Let $\mu$ be a probability measure on
+$\mathbb{R}$ with cumulative distribution function $F(y) = \mu((-\infty, y])$. For all
+$a, b \in \mathbb{R}$, the measure $\mu((a, b])$ equals $\max(F(b) - F(a), 0)$, as an extended
+nonnegative real.
 
 ## Depends on
 

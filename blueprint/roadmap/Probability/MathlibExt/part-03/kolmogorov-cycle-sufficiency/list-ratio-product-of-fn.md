@@ -6,19 +6,21 @@ proof: formalized
 lean: StochasticMatrix.listRatioProduct_ofFn
 ---
 
-# List Ratio Product of Fn
+# The ratio product as a finite product
 
-`listRatioProduct` along `List.ofFn c` is the finite product of ratios
-`P(c iₖ, c iₖ₊₁) / P(c iₖ₊₁, c iₖ)` indexed by `i : Fin n`.
+**The ratio product as a finite product.** Let $P$ be a stochastic matrix, $n$ a natural
+number and $c_0, c_1, \dots, c_n$ states. Then the ratio product along $c_0, c_1, \dots, c_n$
+equals $\prod_{i=0}^{n-1} \frac{P(c_i, c_{i+1})}{P(c_{i+1}, c_i)}$, where a quotient with
+denominator $0$ is taken to be $0$.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
-- [List Ratio Product](list-ratio-product.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Ratio product along a path](list-ratio-product.md)
 
 ## Proof depends on
 
-- [List Ratio Product cons of Fn](list-ratio-product-cons-of-fn.md)
+- [First step of the ratio product](list-ratio-product-cons-of-fn.md)
 
 ## Sources
 

@@ -10,4 +10,4 @@ navigation: module
 - [Sum of the squared Green's eigenvalues](tsum-greens-eigenvalues-sq.md)
 - [Diagonal integral of the Green's kernel](integral-greens-kernel-diag.md)
 - [The Green's eigenvalues sum to the diagonal integral of the kernel](greens-eigenvalue-sum-eq-kernel-diagonal.md)
-- [Hs Norm Sq greens Operator](hs-norm-sq-greens-operator.md)
+- [Squared Hilbert–Schmidt norm of the Green's operator](hs-norm-sq-greens-operator.md)

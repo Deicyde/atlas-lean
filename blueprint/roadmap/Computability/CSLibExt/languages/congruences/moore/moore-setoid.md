@@ -13,7 +13,7 @@ equivalence relation on the reachable states of $M$.
 
 ## Depends on
 
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 

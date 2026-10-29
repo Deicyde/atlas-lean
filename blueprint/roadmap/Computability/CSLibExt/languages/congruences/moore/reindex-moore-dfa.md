@@ -30,7 +30,7 @@ states are the reachable continuation languages of $M$.
 - [Residual reached by a word](../minimization/minimized-state.md)
 - [Moore class of a reachable state](moore-class.md)
 - [Moore equivalence on reachable states](moore-setoid.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 - [Reachable states are closed under transitions](../../../decidability/part-02/regular/step-mem-reachable.md)
 
 ## Sources

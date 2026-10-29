@@ -24,7 +24,7 @@ the continuation language of $s$, the set of words that $M$ accepts when started
 - [Moore class of a reachable state](moore-class.md)
 - [Continuation language of a Moore class](moore-residual.md)
 - [Moore equivalence on reachable states](moore-setoid.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Sources
 

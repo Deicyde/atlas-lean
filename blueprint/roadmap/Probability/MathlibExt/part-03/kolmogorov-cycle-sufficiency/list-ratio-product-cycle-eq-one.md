@@ -6,21 +6,22 @@ proof: formalized
 lean: StochasticMatrix.listRatioProduct_cycle_eq_one
 ---
 
-# List Ratio Product cycle eq one
+# The ratio product around a loop is one
 
-Under Kolmogorov's cycle condition, the ratio product along any closed
-loop (a path whose first and last elements coincide and whose reverse edges
-all have positive probability) is equal to `1`.
+**The ratio product around a loop is one.** Let $P$ be a stochastic matrix satisfying
+Kolmogorov's cycle condition, and let $x_0, x_1, \dots, x_n$ be a path of states with
+$n \ge 1$ and $x_0 = x_n$ such that $P(x_{i+1}, x_i) > 0$ for every $i < n$. Then the ratio
+product along $x_0, x_1, \dots, x_n$ equals $1$.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
 - [Kolmogorov's cycle condition](../kolmogorov-cycle-necessity/kolmogorov-cycle-condition.md)
-- [List Ratio Product](list-ratio-product.md)
+- [Ratio product along a path](list-ratio-product.md)
 
 ## Proof depends on
 
-- [List Ratio Product of Fn](list-ratio-product-of-fn.md)
+- [The ratio product as a finite product](list-ratio-product-of-fn.md)
 
 ## Sources
 

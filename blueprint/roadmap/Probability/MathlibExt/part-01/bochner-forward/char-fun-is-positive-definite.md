@@ -6,18 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.charFun_isPositiveDefinite
 ---
 
-# Char Fun is Positive Definite
+# Characteristic functions are positive definite
 
-Characteristic functions of probability measures have real, nonnegative finite
-quadratic forms.
+**Characteristic functions are positive definite.** Let $\mu$ be a probability measure on
+$\mathbb{R}$ with characteristic function $\varphi_\mu(t) = \int_{\mathbb{R}} e^{itx} \, d\mu(x)$.
+Then $\varphi_\mu$ is positive definite: for every $n \in \mathbb{N}$, all
+$t_1, \dots, t_n \in \mathbb{R}$ and all $z_1, \dots, z_n \in \mathbb{C}$, the sum
+$\sum_{i=1}^{n} \sum_{j=1}^{n} \varphi_\mu(t_i - t_j) \, z_i \, \overline{z_j}$ is a nonnegative
+real number.
 
 ## Depends on
 
-- [Is Positive Definite](is-positive-definite.md)
+- [Positive definite functions](is-positive-definite.md)
 
 ## Proof depends on
 
-- [Bochner forward](bochner-forward.md)
+- [Forward direction of Bochner's theorem](bochner-forward.md)
 
 ## Sources
 

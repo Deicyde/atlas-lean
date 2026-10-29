@@ -12,4 +12,4 @@ article_id: af_df80958180dcdc66a58a405f
 - [Non-strictly separated sets](is-separated.md)
 - [Modulus Of Continuity](modulus-of-continuity/README.md)
 - [Pointed Gromov Hausdorff](pointed-gromov-hausdorff/README.md)
-- [Pointed Gromov Hausdorff Borel](pointed-ghconverges-iff-exists-measurabl.md)
+- [Pointed Gromov–Hausdorff convergence with measurable maps](pointed-ghconverges-iff-exists-measurabl.md)

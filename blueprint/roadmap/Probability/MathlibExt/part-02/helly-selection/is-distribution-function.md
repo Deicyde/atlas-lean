@@ -5,11 +5,13 @@ statement: formalized
 lean: ProbabilityTheory.IsDistributionFunction
 ---
 
-# Is Distribution Function
+# Distribution function
 
-A Stieltjes function is a (cumulative) distribution function if it tends to `0`
-at `-∞` and to `1` at `+∞`. The bundle supplies monotonicity and right continuity.
-These are exactly the distribution functions of probability measures on `ℝ`.
+**Distribution function.** A nondecreasing, right-continuous function
+$F : \mathbb{R} \to \mathbb{R}$ (a Stieltjes function) is a (cumulative) distribution function if
+$F(x) \to 0$ as $x \to -\infty$ and $F(x) \to 1$ as $x \to +\infty$.
+
+These are exactly the distribution functions of probability measures on $\mathbb{R}$.
 
 ## Depends on
 

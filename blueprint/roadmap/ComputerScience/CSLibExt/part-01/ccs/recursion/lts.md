@@ -21,7 +21,7 @@ semantics relative to $\Delta$.
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Transitions of recursive CCS](step.md)
 
 ## Sources
 

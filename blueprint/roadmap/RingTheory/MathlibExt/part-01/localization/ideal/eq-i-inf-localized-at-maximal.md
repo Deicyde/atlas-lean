@@ -6,21 +6,25 @@ proof: formalized
 lean: Ideal.eq_iInf_localizedAt_maximal
 ---
 
-# Eq i Inf localized At maximal
+# The image of an ideal in the fraction field is the intersection of its localizations at maximal ideals
 
-Corollary 2.7, maximal-ideal form: the image of `I` in the fraction
-field `K` equals the intersection of its localizations inside `K`.
-Membership in a localized image means that some denominator outside
-the maximal ideal scales the element into the image of `I`.
+**The image of an ideal in the fraction field is the intersection of its localizations at
+maximal ideals.** Let $A$ be an integral domain with fraction field $K$, let $I$ be an ideal of
+$A$, and let $M \subseteq K$ be the image of $I$ under the canonical map $A \to K$, an
+$A$-submodule of $K$. For a maximal ideal $\mathfrak{m}$ of $A$, let $M_{\mathfrak{m}}$ be the
+localization of $M$ at $\mathfrak{m}$: the set of $x \in K$ such that $s x \in M$ for some
+$s \in A \setminus \mathfrak{m}$. Then $M = \bigcap_{\mathfrak{m}} M_{\mathfrak{m}}$, the
+intersection over all maximal ideals $\mathfrak{m}$ of $A$, taken inside $K$.
 
 ## Depends on
 
-- [Localized At](../submodule/localized-at.md)
+- [Saturation of a submodule at a submonoid](../submodule/localized-at.md)
 
 ## Proof depends on
 
-- [Eq i Inf localized At maximal](../submodule/eq-i-inf-localized-at-maximal.md)
+- [A submodule is the intersection of its saturations at the maximal ideals](../submodule/eq-i-inf-localized-at-maximal.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Localization.Ideal](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Section 2.3, Corollary 2.7, maximal-ideal form.

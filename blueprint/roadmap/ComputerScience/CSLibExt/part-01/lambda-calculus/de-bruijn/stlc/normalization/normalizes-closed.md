@@ -13,7 +13,7 @@ zero or more call-by-value steps to a normal form.
 
 ## Depends on
 
-- [Normalizes](normalizes.md)
+- [Normalizing closed terms](normalizes.md)
 - [Intrinsically typed terms of the simply typed lambda calculus](../syntax/tm.md)
 - [Simple types](../syntax/ty.md)
 

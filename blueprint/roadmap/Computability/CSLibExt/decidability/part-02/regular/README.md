@@ -6,7 +6,7 @@ navigation: module
 
 - [Symmetric difference of two DFAs](symm-diff.md)
 - [One round of the DFA reachability search](reach-step.md)
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
 - [The start state is reachable](start-mem-reachable.md)
 - [Reachable states are closed under transitions](step-mem-reachable.md)

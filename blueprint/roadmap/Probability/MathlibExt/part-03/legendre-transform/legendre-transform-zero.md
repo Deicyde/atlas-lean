@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.legendreTransform_zero
 ---
 
-# Legendre Transform zero
+# Legendre transform of the zero function at the origin
 
-The conjugate of the zero function is zero at the origin.
+**Legendre transform of the zero function at the origin.** Let $d \in \mathbb{N}$ and let
+$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$ be the zero function. Its Legendre transform
+$\Lambda^*$ satisfies $\Lambda^*(0) = 0$.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Legendre Transform eq i Sup](legendre-transform-eq-i-sup.md)
+- [Supremum formula for the Legendre transform](legendre-transform-eq-i-sup.md)
 
 ## Sources
 

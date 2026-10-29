@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.xorCircuitEval
 ---
 
-# Xor Circuit Eval
+# Gate values of an encoded circuit
 
-Values of all gates of an encoded circuit, in order: the shared typed
-evaluator `circuitEval` on the decoded gates, with input count `assign.length`.
-The decode is semantics-preserving: out-of-range input indices read as `false`,
-as in the previous local evaluator.
+**Gate values of an encoded circuit.** For a list $C$ of encoded gates and a list $x$ of
+Booleans of length $\ell$, the gate values of $C$ on $x$ are obtained by decoding each pair of $C$
+to a gate of a flat Boolean circuit on $\ell$ inputs and evaluating the decoded circuit with the
+assignment that gives input $i$ the value $x_i$; the result lists the values of all gates in
+order. A pair referring to an input index $i \ge \ell$ decodes to the constant false.
 
 ## Depends on
 
-- [XORGate](xorgate.md)
+- [Encoded gates](xorgate.md)
 
 ## Proof depends on
 

@@ -14,7 +14,7 @@ simulated, up to an injective state relabelling, by the machine of some code.
 ## Depends on
 
 - [Codes for multi-tape machines](../code/code.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 - [Simulation up to a state relabelling](../relabel/is-relabelling.md)
 
 ## Proof depends on

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.PRFInPPoly
 ---
 
-# PRFIn PPoly
+# Keyed function families in P/poly
 
-A pseudorandom function family in `P/poly`: a keyed family computable by
-polynomial-size circuits. The key has `n ^ 2` bits and the input `n` bits.
+**Keyed function families in P/poly.** Let $F = (F_n)_{n \in \mathbb{N}}$ be a keyed family of
+Boolean functions: $F_n(k, x)$ is a Boolean value for every key $k \in \{0,1\}^{n^2}$ and every
+input $x \in \{0,1\}^n$. Then $F$ is in P/poly when there is a polynomial $p$ with natural-number
+coefficients such that for every $n$ some circuit, given as a list of at most $p(n)$ encoded
+gates, computes $F_n$: for all $k$ and $x$, the evaluation of the circuit on the bitstring $kx$ of
+length $n^2 + n$ (the bits of $k$ followed by the bits of $x$) has last gate value $F_n(k, x)$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [NPGate](npgate.md)
-- [Np Circuit Eval](np-circuit-eval.md)
+- [Encoded gates](npgate.md)
+- [Evaluation of an encoded circuit](np-circuit-eval.md)
 
 ## Sources
 

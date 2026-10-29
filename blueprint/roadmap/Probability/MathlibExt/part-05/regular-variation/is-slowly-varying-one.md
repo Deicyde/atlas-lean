@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.isSlowlyVarying_one
 ---
 
-# Is Slowly Varying one
+# The constant function one is slowly varying
 
-The constant function `1` is slowly varying.
+**The constant function one is slowly varying.** The constant function $x \mapsto 1$ on
+$\mathbb{R}$ is slowly varying.
 
 ## Depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ reachable from the start state.
 
 ## Depends on
 
-- [Reachable states of an encoded DFA](reachable.md)
+- [Reachable states of a DFA](reachable.md)
 
 ## Proof depends on
 

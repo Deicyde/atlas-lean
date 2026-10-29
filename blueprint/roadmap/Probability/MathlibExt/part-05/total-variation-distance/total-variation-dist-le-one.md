@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.TotalVariationDistance.totalVariationDist_le_one
 ---
 
-# Total Variation Dist le one
+# Total variation distance between probability measures is at most one
 
-Total variation distance between probability measures is at most `1`.
+**Total variation distance between probability measures is at most one.** For probability
+measures $\mu$ and $\nu$ on a measurable space, the total variation distance satisfies
+$d_{TV}(\mu, \nu) \le 1$.
 
 ## Depends on
 
-- [Total Variation Dist](total-variation-dist.md)
+- [Total variation distance between finite measures](total-variation-dist.md)
 
 ## Sources
 

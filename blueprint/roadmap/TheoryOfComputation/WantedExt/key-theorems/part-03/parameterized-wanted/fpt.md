@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPT
 ---
 
-# FPT
+# Fixed-parameter tractable problems
 
-Fixed-parameter tractability: decidable in `FPT` time.
+**Fixed-parameter tractable problems.** A parameterized problem $P$ is fixed-parameter
+tractable when there is a function $D$, from pairs $(x, k)$ of a bitstring $x$ and a natural
+number $k$ to booleans, that is computable in FPT time and satisfies $P(x, k) = D(x, k)$ for
+every bitstring $x$ and every $k \in \mathbb{N}$.
 
 ## Depends on
 
-- [Param Problem](param-problem.md)
+- [Parameterized problems](param-problem.md)
 
 ## Proof depends on
 
 - [Bitstring encodings](../../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
-- [FPTTime](fpttime.md)
+- [FPT time](fpttime.md)
 
 ## Sources
 

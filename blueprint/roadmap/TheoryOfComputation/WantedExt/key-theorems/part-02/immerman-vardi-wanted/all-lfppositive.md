@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.AllLFPPositive
 ---
 
-# All LFPPositive
+# Formulas whose fixed points are all positive
 
-Every `LFP` node of `φ` binds a fresh symbol `≥ 2` and is positive in it.
+**Formulas whose fixed points are all positive.** Let $\varphi$ be a formula of first-order
+logic with least fixed points, whose relation symbols are natural numbers. All fixed points of
+$\varphi$ are positive when every least-fixed-point subformula of $\varphi$, nested ones included,
+binds a relation symbol $R \ge 2$ (so neither the order symbol $0$ nor the edge symbol $1$) and
+$R$ occurs only positively in the body of that subformula.
 
 ## Depends on
 
-- [OGFO](ogfo.md)
+- [Formulas of first-order logic with least fixed points](ogfo.md)
 
 ## Proof depends on
 
-- [Positive In](positive-in.md)
+- [Positive occurrence of a relation symbol](positive-in.md)
 
 ## Sources
 

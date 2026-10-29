@@ -4,9 +4,9 @@ navigation: module
 
 # Modulus Of Continuity
 
-- [Modulus Of Continuity](modulus-of-continuity.md)
-- [Modulus Of Continuity bdd Above](modulus-of-continuity-bdd-above.md)
-- [Le modulus Of Continuity](le-modulus-of-continuity.md)
-- [Modulus Of Continuity nonneg](modulus-of-continuity-nonneg.md)
-- [Modulus Of Continuity mono](modulus-of-continuity-mono.md)
+- [Modulus of continuity](modulus-of-continuity.md)
+- [The set defining the modulus of continuity is bounded above](modulus-of-continuity-bdd-above.md)
+- [The modulus of continuity bounds increments](le-modulus-of-continuity.md)
+- [Nonnegativity of the modulus of continuity](modulus-of-continuity-nonneg.md)
+- [Monotonicity of the modulus of continuity](modulus-of-continuity-mono.md)
 - [Theorem I (Modulus of continuity vanishes)](modulus-of-continuity-tendsto-zero.md)

@@ -15,7 +15,7 @@ realizes $\eta$ at $\eta$.
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
 - [Realization of environments](nbe-env-related.md)
 - [The identity semantic environment](../nbe/identity.md)
 - [Simple types](../syntax/ty.md)

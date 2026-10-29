@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogBase
 ---
 
-# Og Base
+# Interpretation of relation symbols in an ordered graph
 
-The meaning of relation symbol `i` in an ordered graph: symbol `0` is `<`, symbol
-`1` is the edge relation, other symbols are the supplied relations.
+**Interpretation of relation symbols in an ordered graph.** Let $G$ be an ordered graph with
+vertices $0, \dots, n - 1$ and let $(E_i)_{i \in \mathbb{N}}$ be predicates on lists of vertices.
+Relation symbol $0$ holds of a list exactly when it is a pair $(a, b)$ with $a < b$, relation
+symbol $1$ holds of a list exactly when it is a pair $(a, b)$ with an edge from $a$ to $b$ in $G$,
+and relation symbol $i + 2$ is interpreted as $E_i$.
 
 ## Depends on
 
-- [Ordered Graph](ordered-graph.md)
+- [Finite ordered graphs](ordered-graph.md)
 
 ## Proof depends on
 
-- [Og Edge](og-edge.md)
+- [Edge relation of an ordered graph](og-edge.md)
 
 ## Sources
 

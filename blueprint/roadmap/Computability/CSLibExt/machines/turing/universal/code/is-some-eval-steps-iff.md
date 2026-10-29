@@ -16,7 +16,7 @@ of $c$, started on the input word of $x$, halts within $T$ steps.
 
 - [Codes for single-tape machines](code.md)
 - [The clocked evaluator](eval-steps.md)
-- [The machine of a code](machine.md)
+- [The machine of a single-tape code](machine.md)
 - [Bounded halting of a single-tape machine](halts-within.md)
 - [Input word of a list of bits](input.md)
 

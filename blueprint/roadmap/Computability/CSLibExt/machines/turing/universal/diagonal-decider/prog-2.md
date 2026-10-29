@@ -25,7 +25,7 @@ Finally it pushes $0, 1$ on $O$ in this order, transfers $C$ to $O$ and halts.
 
 - [Stacks of the layout machine](k-2.md)
 - [Labels of the layout machine](lab-2.md)
-- [Γ](untitled-2.md)
+- [Stack symbols of the layout machine](untitled-2.md)
 
 ## Proof depends on
 

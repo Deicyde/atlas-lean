@@ -4,8 +4,8 @@ navigation: module
 
 # Cyclotomic Ramification
 
-- [Pth root unity eq one of no prim root](pth-root-unity-eq-one-of-no-prim-root.md)
+- [Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial](pth-root-unity-eq-one-of-no-prim-root.md)
 - [No prim root in unramified ext of prime spans maximal ideal](no-prim-root-in-unramified-ext-of-prime.md)
-- [No prim pth root in unramified ext of prime spans maximal ideal](no-prim-pth-root-in-unramified-ext-of-pr.md)
-- [Unramified pth root in base of prime spans maximal ideal](unramified-pth-root-in-base-of-prime-spa.md)
-- [Dvr pth root ramified of prime spans maximal ideal](dvr-pth-root-ramified-of-prime-spans-max.md)
+- [Over a complete base with maximal ideal $(p)$ and no primitive $p$-th root of unity, an index-one extension has no nontrivial $p$-th roots of unity](no-prim-pth-root-in-unramified-ext-of-pr.md)
+- [Over a complete base with maximal ideal $(p)$, the $p$-th roots of unity in an index-one extension come from the base](unramified-pth-root-in-base-of-prime-spa.md)
+- [Over a complete base with maximal ideal $(p)$ and no nontrivial $p$-th roots of unity, cyclotomic extensions of order divisible by $p$ ramify](dvr-pth-root-ramified-of-prime-spans-max.md)

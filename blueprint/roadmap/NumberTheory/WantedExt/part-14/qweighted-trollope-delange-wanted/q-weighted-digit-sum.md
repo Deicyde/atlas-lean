@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.qWeightedDigitSum
 ---
 
-# Q Weighted Digit Sum
+# The $q$-weighted binary digit sum
 
-The `q`-weighted binary digit sum `s_q(k) = ∑_{i ≥ 0} ω_i q^{i+1}`, where
-`k = ∑_i ω_i 2^i` is the binary expansion of `k` (`ω_i` is the `i`-th entry of
-`Nat.digits 2 k`, least significant first).
+**The $q$-weighted binary digit sum.** Let $q$ be an element of a commutative ring and let
+$k$ be a natural number with binary expansion $k = \sum_{i \ge 0} \omega_i 2^i$, where
+$\omega_i \in \{0, 1\}$. The $q$-weighted binary digit sum of $k$ is
+$s_q(k) = \sum_{i \ge 0} \omega_i q^{i+1}$, a finite sum because only finitely many $\omega_i$
+are nonzero.
 
 ## Depends on
 

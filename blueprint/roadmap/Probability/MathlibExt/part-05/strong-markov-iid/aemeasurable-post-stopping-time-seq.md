@@ -6,18 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.aemeasurable_postStoppingTimeSeq
 ---
 
-# Aemeasurable post Stopping Time Seq
+# The post-stopping-time sequence is a.e. measurable
 
-The post-stopping-time sequence `postStoppingTimeSeq X T k` is almost-everywhere
-measurable whenever each `X i` is and `T` is a stopping time.
+**The post-stopping-time sequence is a.e. measurable.** Let $\mu$ be a measure on a measurable
+space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration on $\Omega$, let
+$X_0, X_1, X_2, \dots$ be maps from $\Omega$ to a measurable space $S$ that are each
+$\mu$-almost-everywhere measurable, and let $T : \Omega \to \mathbb{N}$ be a stopping time for
+$(\mathcal{F}_n)$. Then for every $k \in \mathbb{N}$ the map
+$\omega \mapsto X_{T(\omega)+k+1}(\omega)$ is $\mu$-almost-everywhere measurable.
 
 ## Depends on
 
-- [Post Stopping Time Seq](post-stopping-time-seq.md)
+- [Post-stopping-time sequence](post-stopping-time-seq.md)
 
 ## Proof depends on
 
-- [Measurable Set stopping Time eq](measurable-set-stopping-time-eq.md)
+- [Level sets of a stopping time are measurable](measurable-set-stopping-time-eq.md)
 
 ## Sources
 

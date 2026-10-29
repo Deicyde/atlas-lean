@@ -6,18 +6,20 @@ proof: formalized
 lean: le_modulusOfContinuity
 ---
 
-# Le modulus Of Continuity
+# The modulus of continuity bounds increments
 
-For `x, y ∈ [a, b]` with `|x - y| ≤ η`, the absolute difference
-`|f x - f y|` is bounded by the modulus of continuity `ω_f(η)`.
+**The modulus of continuity bounds increments.** Let $f : \mathbb{R} \to \mathbb{R}$ be
+continuous on $[a, b]$, let $\eta \in \mathbb{R}$, and let $\omega_f(\eta)$ be the modulus of
+continuity of $f$ on $[a, b]$ at scale $\eta$. For all $x, y \in [a, b]$ with $|x - y| \le \eta$,
+we have $|f(x) - f(y)| \le \omega_f(\eta)$.
 
 ## Depends on
 
-- [Modulus Of Continuity](modulus-of-continuity.md)
+- [Modulus of continuity](modulus-of-continuity.md)
 
 ## Proof depends on
 
-- [Modulus Of Continuity bdd Above](modulus-of-continuity-bdd-above.md)
+- [The set defining the modulus of continuity is bounded above](modulus-of-continuity-bdd-above.md)
 
 ## Sources
 

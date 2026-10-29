@@ -16,7 +16,7 @@ older variable $x$ to $\sigma(x)$.
 
 ## Depends on
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 - [Reducible substitutions](reducible-sub.md)
 - [Simultaneous substitutions of simply typed contexts](../syntax/sub.md)
 - [Extension of a simply typed substitution](../substitution-laws/cons.md)

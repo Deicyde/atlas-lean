@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPTReduces
 ---
 
-# FPTReduces
+# FPT-reductions
 
-`FPT`-reduction: an `FPT`-time map with the output parameter bounded by a function
-of `k` alone, preserving the answer.
+**FPT-reductions.** A parameterized problem $P$ FPT-reduces to a parameterized problem $Q$
+when there are a map $R$, sending each pair $(x, k)$ of a bitstring $x$ and a natural number
+$k$ to such a pair $R(x, k) = (x', k')$, that is computable in FPT time, and a computable
+function $g : \mathbb{N} \to \mathbb{N}$, such that for every bitstring $x$ and every
+$k \in \mathbb{N}$, $k' \le g(k)$ and $P(x, k)$ is true if and only if $Q(x', k')$ is true.
 
 ## Depends on
 
-- [Param Problem](param-problem.md)
+- [Parameterized problems](param-problem.md)
 
 ## Proof depends on
 
@@ -24,7 +27,7 @@ of `k` alone, preserving the answer.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [FPTTime](fpttime.md)
+- [FPT time](fpttime.md)
 
 ## Sources
 

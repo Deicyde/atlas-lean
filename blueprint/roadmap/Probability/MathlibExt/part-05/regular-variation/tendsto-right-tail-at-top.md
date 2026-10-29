@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.tendsto_rightTail_atTop
 ---
 
-# Tendsto right Tail at Top
+# The right tail of a finite measure vanishes at infinity
 
-The right tail of a finite measure tends to `0` at infinity.
+**The right tail of a finite measure vanishes at infinity.** For every finite measure $\mu$
+on $\mathbb{R}$, the right tail $\mu((x, \infty))$, taken as a real number, tends to $0$ as
+$x \to \infty$.
 
 ## Depends on
 
-- [Right Tail](right-tail.md)
+- [Right tail of a measure](right-tail.md)
 
 ## Proof depends on
 
-- [Right Tail antitone](right-tail-antitone.md)
+- [The right tail of a finite measure is antitone](right-tail-antitone.md)
 
 ## Sources
 

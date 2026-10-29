@@ -76,7 +76,7 @@ navigation: module
 
 - [Step bound for one in-range loop iteration](s-body-b.md)
 - [Step budget of one overflow iteration of the cell-shift generator](o-body-b.md)
-- [Sbody run](sbody-run.md)
+- [One iteration of the in-range loop of the cell-shift generator](sbody-run.md)
 - [One iteration of the overflow loop of the cell-shift generator](obody-run.md)
 
 ## [FAM] Correctness: one `(i, k)` block, the label chains, the time loop, the generator

@@ -6,23 +6,29 @@ proof: formalized
 lean: ProbabilityTheory.chebyshev_subseq_bound
 ---
 
-# Chebyshev subseq bound
+# Chebyshev bound along the subsequence
 
-Chebyshev tail bound along the subsequence: the probability that
-`|S_{φ(k)}/E[S_{φ(k)}] - 1| ≥ ε` is bounded by `1/(ε² (k+1)²)`. This is the summable estimate
-used to conclude a.s. convergence along the subsequence.
+**Chebyshev bound along the subsequence.** Let $\mu$ be a probability measure on $\Omega$, let
+$A_0, A_1, \dots \subseteq \Omega$ be pairwise independent measurable sets, let
+$S_n = \sum_{i\lt n} 1_{A_i}$, and suppose that $\mathbb{E}[S_n] \to \infty$. For $k \in \mathbb{N}$
+let $\varphi(k)$ be the least $n$ with $\mathbb{E}[S_n] \ge (k+1)^2$. Then for every
+$\varepsilon > 0$ and every $k \in \mathbb{N}$, the probability of the set of $\omega$ with
+$|S_{\varphi(k)}(\omega)/\mathbb{E}[S_{\varphi(k)}] - 1| \ge \varepsilon$ is at most
+$1/(\varepsilon^2 (k+1)^2)$.
+
+These bounds are summable in $k$, which gives almost sure convergence along the subsequence.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
-- [Slln Subseq](slln-subseq.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
+- [Quadratic subsequence for the pairwise-independent strong law](slln-subseq.md)
 
 ## Proof depends on
 
-- [ES slln Subseq pos](es-slln-subseq-pos.md)
-- [Mem Lp partial Sum Indicators](mem-lp-partial-sum-indicators.md)
-- [Slln Subseq spec](slln-subseq-spec.md)
-- [Variance partial Sum Indicators le](variance-partial-sum-indicators-le.md)
+- [The expected partial sums along the subsequence are positive](es-slln-subseq-pos.md)
+- [Partial sums of indicators are square-integrable](mem-lp-partial-sum-indicators.md)
+- [Lower bound on the expected count along the quadratic subsequence](slln-subseq-spec.md)
+- [Variance of a sum of pairwise independent indicators is at most its mean](variance-partial-sum-indicators-le.md)
 
 ## Sources
 

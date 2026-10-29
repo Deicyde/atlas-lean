@@ -5,11 +5,19 @@ statement: formalized
 lean: Real.intervalCutoff
 ---
 
-# Interval Cutoff
+# Interval cutoff
 
-The clipped piecewise-linear cutoff, zero at `a` and `b`.
-For `δ > 0`, it equals `1` on `[a + δ, b - δ]`; this plateau is nonempty
-when `2 * δ ≤ b - a`. At `δ = 0`, the factor is identically zero.
+**Interval cutoff.** For real numbers $a$, $b$ and $\delta$, the interval cutoff is the
+function $\chi_{a,b,\delta} \colon \mathbb{R} \to \mathbb{R}$ defined by
+
+$$
+\chi_{a,b,\delta}(x) = \max\{0, \min\{1, (x - a)/\delta, (b - x)/\delta\}\},
+$$
+
+where division by zero is taken to give $0$.
+
+It vanishes at $a$ and at $b$. For $\delta > 0$ it equals $1$ on $[a + \delta, b - \delta]$, which
+is nonempty when $2\delta \le b - a$; for $\delta = 0$ it is identically zero.
 
 ## Depends on
 

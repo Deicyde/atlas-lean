@@ -5,32 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.alphabetReduction
 ---
 
-# Alphabet Reduction
+# Alphabet reduction with given constants
 
-Alphabet reduction with explicit constants, parameterized by the amplifier's
-base alphabet `S0` and exponent `e`: a transformation applying to instances whose
-alphabet is at most `S0 ^ e` (exactly the amplifier's output bound when starting
-from base alphabet `S0`), reducing the alphabet back to `S0`, preserving
-satisfiability and losing at most a constant factor `c' ≤ 1` in the gap (gap `δ`
-becomes at least `min (c' * δ, α')`). The variable set may expand by a constant
-factor: each old variable is replaced by at most `V` new variables (the reduction
-adorns variables with auxiliary code symbols), so `(T I).1 ≤ V * (I.1 + 1)`, and the
-constraint count grows by at most a constant factor. The nondegenerate bounds
-`2 ≤ S0` and `2 ≤ e` are essential: with `S0 = 0` the premise would cover only
-zero-alphabet instances and `T = id` would vacuously satisfy the statement, and
-with `e = 1` the reduction would not need to shrink the alphabet at all; with
-`2 ≤ S0` and `2 ≤ e` we have `S0 ^ e > S0`, so the reduction must genuinely shrink
-the alphabet. The constants are parameters (not existentially quantified inside) so
-that the theorem below shares `S0` and `e` with gap amplification.
+**Alphabet reduction with given constants.** Let $S_0, e, d', V$ be natural numbers and
+$c', \alpha'$ rationals. A map $T$ from 2CSP instances to 2CSP instances is an alphabet reduction
+with constants $S_0, e, c', \alpha', d', V$ when $S_0 \ge 2$, $e \ge 2$, $0 < c' \le 1$,
+$0 < \alpha' < 1$, $d' \ge 1$, $V \ge 1$, and for every 2CSP instance $I$ with $n$ variables,
+alphabet size at most $S_0^e$ and $m$ constraints: $T(I)$ has at most $V(n + 1)$ variables,
+alphabet size at most $S_0$ and at most $d' m$ constraints; if $I$ is well-formed then so is
+$T(I)$; if some assignment gives $I$ value $1$ then some assignment gives $T(I)$ value $1$; and
+for every rational $\delta$ with $0 < \delta \le 1$, if every assignment gives $I$ value at most
+$1 - \delta$, then every assignment gives $T(I)$ value at most $1 - \min(\alpha', c'\delta)$.
+
+The bounds $S_0 \ge 2$ and $e \ge 2$ give $S_0^e > S_0$, so the reduction must genuinely shrink
+the alphabet.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Proof depends on
 
-- [CSPWell Formed](cspwell-formed.md)
-- [Csp Val](csp-val.md)
+- [Well-formed 2CSP instances](cspwell-formed.md)
+- [Value of a 2CSP instance under an assignment](csp-val.md)
 
 ## Sources
 

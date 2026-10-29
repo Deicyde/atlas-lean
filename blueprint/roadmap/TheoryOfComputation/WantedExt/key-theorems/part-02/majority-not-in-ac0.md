@@ -7,9 +7,7 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.MajorityNotInAC0.majority_not_in_ac0
 
 # Majority is not in AC0
 
-**Majority is not in AC0.** Source: M. Ajtai, "Σ₁¹-formulae on finite structures", Annals
-of Pure and Applied Logic 24 (1983), 1-48; J. Håstad, "Almost optimal lower bounds for
-small depth circuits" (STOC 1986).
+**Majority is not in AC0.** The majority language is not in the class $\mathsf{AC}^0$.
 
 ## Depends on
 
@@ -21,3 +19,4 @@ small depth circuits" (STOC 1986).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.MajorityNotInAC0Wanted](../../../../../sources/v2/WantedExt.md)
+- M. Ajtai, "Σ₁¹-formulae on finite structures", Annals of Pure and Applied Logic 24 (1983), 1-48; J. Håstad, "Almost optimal lower bounds for small depth circuits" (STOC 1986).

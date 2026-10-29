@@ -18,7 +18,7 @@ $\delta$ is at least $0$.
 
 ## Proof depends on
 
-- [Interval Cutoff nonneg](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-nonneg.md)
+- [The interval cutoff is nonnegative](../../../../Topology/MathlibExt/continuous-function/interval-cutoff/interval-cutoff-nonneg.md)
 
 ## Sources
 

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.npCircuitEval
 ---
 
-# Np Circuit Eval
+# Evaluation of an encoded circuit
 
-Values of all gates of an encoded circuit, in order: the shared typed
-evaluator `circuitEval` on the decoded gates, with input count `assign.length`.
-The decode is semantics-preserving: out-of-range input indices read as `false`,
-as in the previous local evaluator.
+**Evaluation of an encoded circuit.** Given a list of encoded gates $g_0, \dots, g_{m-1}$,
+each a (kind, references) pair, and a list of Booleans $a = (a_0, \dots, a_{n-1})$, this is the
+list of the values of all $m$ gates, in order: each pair is decoded to a gate of a flat Boolean
+circuit on $n$ inputs, and the resulting circuit is evaluated with input $i$ set to $a_i$. An
+input pair $(0, [i])$ with $i \ge n$ decodes to the constant false, so it reads as false.
 
 ## Depends on
 
-- [NPGate](npgate.md)
+- [Encoded gates](npgate.md)
 
 ## Proof depends on
 

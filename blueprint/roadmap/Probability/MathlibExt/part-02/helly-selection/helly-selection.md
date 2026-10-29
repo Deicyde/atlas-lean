@@ -8,20 +8,22 @@ lean: ProbabilityTheory.helly_selection
 
 # Helly's selection theorem
 
-**Helly's selection theorem**. Every sequence `F : ℕ → StieltjesFunction ℝ` of distribution
-functions has a subsequence `F ∘ φ` that converges pointwise to a monotone,
-right-continuous function `G : ℝ → ℝ` at every continuity point of `G`. The limit
-`G` need not itself be a distribution function (it may lose mass to ±∞), but it is
-always monotone and right-continuous.
+**Helly's selection theorem.** Let $(F_n)_{n \in \mathbb{N}}$ be a sequence of
+distribution functions on $\mathbb{R}$. Then there are a strictly increasing map
+$\varphi : \mathbb{N} \to \mathbb{N}$ and a nondecreasing, right-continuous function
+$G : \mathbb{R} \to \mathbb{R}$ such that $F_{\varphi(k)}(x) \to G(x)$ as $k \to \infty$ at every
+point $x \in \mathbb{R}$ at which $G$ is continuous.
+
+The limit $G$ need not itself be a distribution function: it may lose mass to $\pm\infty$.
 
 ## Depends on
 
-- [Is Distribution Function](is-distribution-function.md)
+- [Distribution function](is-distribution-function.md)
 
 ## Proof depends on
 
-- [Le one](le-one.md)
-- [Nonneg](nonneg.md)
+- [Distribution functions are at most one](le-one.md)
+- [Distribution functions are nonnegative](nonneg.md)
 
 ## Sources
 

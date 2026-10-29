@@ -16,7 +16,7 @@ Optimization Problems 84b lists this bound as trivial, since $|A+A| \ge 2|A| - 1
 
 ## Depends on
 
-- [Trivial lower bound for the real sum-product exponent](trivial-lower-bound.md)
+- [Statement of the trivial lower bound for the real sum-product exponent](trivial-lower-bound.md)
 
 ## Sources
 

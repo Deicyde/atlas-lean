@@ -18,7 +18,7 @@ number of work tapes have the same numeric code, then $c = c'$.
 
 ## Proof depends on
 
-- [Codes as tables](equiv-table.md)
+- [Multi-tape codes as tables](equiv-table.md)
 - [Coded actions](code-action.md)
 - [Coded actions as tuples](equiv-prod.md)
 - [Keys of a code's table](code-key.md)

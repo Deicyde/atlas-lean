@@ -6,13 +6,15 @@ proof: formalized
 lean: Real.intervalCutoff_eq_zero_of_ge
 ---
 
-# Interval Cutoff eq zero of ge
+# The interval cutoff vanishes right of the interval
 
-For positive width, the interval cutoff vanishes to the right of the interval.
+**The interval cutoff vanishes right of the interval.** For real numbers $a$, $b$, $\delta$
+and $x$ with $\delta > 0$ and $b \le x$, the interval cutoff $\chi_{a,b,\delta}$ with endpoints
+$a$, $b$ and width $\delta$ satisfies $\chi_{a,b,\delta}(x) = 0$.
 
 ## Depends on
 
-- [Interval Cutoff](interval-cutoff.md)
+- [Interval cutoff](interval-cutoff.md)
 
 ## Sources
 

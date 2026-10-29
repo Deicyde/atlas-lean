@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Simple finite-dimensional representations are irreducible](is-irreducible-of-simple.md)
+- [Simple finite-dimensional representations of a monoid are irreducible](is-irreducible-of-simple.md)
 
 ## Sources
 

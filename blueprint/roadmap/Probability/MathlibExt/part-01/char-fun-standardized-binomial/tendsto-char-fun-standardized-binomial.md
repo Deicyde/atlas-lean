@@ -8,13 +8,12 @@ lean: MathlibExt.Probability.CharFunStandardizedBinomial.tendsto_charFun_standar
 
 # Convergence of characteristic functions in De Moivre–Laplace
 
-**Convergence of characteristic functions in De Moivre–Laplace.**
+**Convergence of characteristic functions in De Moivre–Laplace.** Let $0 < p < 1$ and
+$t \in \mathbb{R}$. As $n \to \infty$, the characteristic function of the standardized binomial
+distribution with parameters $n$ and $p$, evaluated at $t$, converges to $e^{-t^2/2}$, the
+value at $t$ of the characteristic function of the standard normal distribution.
 
-For `0 < p < 1` and every `t ∈ ℝ`, the characteristic function of the standardized
-binomial converges to the characteristic function of the standard normal:
-`φ_{standardizedBinomial n p}(t) → exp(−t² / 2)`.
-
-This is the key analytic step in proving `deMoivreLaplace_clt` via Lévy's continuity
+This is the key analytic step in proving the De Moivre–Laplace theorem via Lévy's continuity
 theorem.
 
 ## Depends on
@@ -25,7 +24,7 @@ theorem.
 
 - [Characteristic function of the real-valued binomial distribution](char-fun-binomial-real.md)
 - [Characteristic function of the standardized binomial](char-fun-standardized-binomial.md)
-- [Second-order Taylor remainder bound for `exp`](exp-taylor2-err.md)
+- [Second-order Taylor remainder bound for the exponential](exp-taylor2-err.md)
 
 ## Sources
 

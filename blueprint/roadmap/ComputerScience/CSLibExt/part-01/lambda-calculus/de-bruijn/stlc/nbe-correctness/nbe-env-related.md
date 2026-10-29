@@ -16,8 +16,8 @@ $\theta$.
 
 ## Depends on
 
-- [Semantic environments](../denotational/env.md)
-- [Semantic environments](../nbe/sem-env.md)
+- [Semantic environments for the denotational semantics of STLC](../denotational/env.md)
+- [Semantic environments for normalization by evaluation](../nbe/sem-env.md)
 - [Simple types](../syntax/ty.md)
 
 ## Proof depends on

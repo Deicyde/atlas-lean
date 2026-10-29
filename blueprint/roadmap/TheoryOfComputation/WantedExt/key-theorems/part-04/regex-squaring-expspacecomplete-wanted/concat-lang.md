@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.RegexSquaringEXPSPACEComplete.concatLang
 ---
 
-# Concat Lang
+# Concatenation of bitstring languages
 
-Concatenation of two languages of bitstrings.
+**Concatenation of bitstring languages.** For sets $S$ and $T$ of bitstrings, their
+concatenation is the set of all bitstrings $uv$ with $u \in S$ and $v \in T$.
 
 ## Depends on
 

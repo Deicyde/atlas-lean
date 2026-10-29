@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.sum_bmInc_eq
 ---
 
-# Sum bm Inc eq
+# Telescoping sum of grid increments
 
-Telescoping: the increments indexed by `S` sum to the total increment
-from `s` to `s + sup S`.
+**Telescoping sum of grid increments.** Let $(B_t)_{t \ge 0}$ be a family of real functions
+on $\Omega$, let $s \in \mathbb{R}_{\ge 0}$ and let $S \subseteq \mathbb{R}_{\ge 0}$ be a nonempty
+finite set. For $u \in S$ let $\Delta_u = B_{s+u} - B_{s+u^-}$, where $u^-$ is the largest element
+of $S$ strictly below $u$, or $0$ if there is none. Then for every $\omega \in \Omega$,
+$\sum_{u \in S} \Delta_u(\omega) = B_{s + \max S}(\omega) - B_s(\omega)$.
 
 ## Depends on
 
-- [Bm Inc](bm-inc.md)
+- [Increment over the predecessor interval](bm-inc.md)
 
 ## Proof depends on
 
-- [Bm Prev](bm-prev.md)
-- [Bm Prev insert of lt](bm-prev-insert-of-lt.md)
-- [Bm Prev insert self](bm-prev-insert-self.md)
+- [Predecessor of a time in a finite set](bm-prev.md)
+- [Inserting a larger element does not change the predecessor](bm-prev-insert-of-lt.md)
+- [Predecessor of a new maximum](bm-prev-insert-self.md)
 
 ## Sources
 

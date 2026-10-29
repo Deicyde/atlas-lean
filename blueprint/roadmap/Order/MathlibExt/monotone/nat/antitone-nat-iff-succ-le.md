@@ -6,10 +6,11 @@ proof: formalized
 lean: antitone_nat_iff_succ_le
 ---
 
-# Antitone nat iff succ le
+# Successor criterion for antitone sequences
 
-A sequence `f : ℕ → α` is antitone (decreasing) if and only if each term
-is bounded below by its immediate successor: `f (n + 1) ≤ f n` for all `n`.
+**Successor criterion for antitone sequences.** Let $\alpha$ be a preordered set. A sequence
+$f : \mathbb{N} \to \alpha$ is antitone (that is, $f(n) \le f(m)$ whenever $m \le n$)
+if and only if $f(n+1) \le f(n)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 

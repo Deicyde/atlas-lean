@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.cspVal
 ---
 
-# Csp Val
+# Value of a 2CSP instance under an assignment
 
-The value of a 2CSP instance under an assignment: the fraction of satisfied constraints.
+**Value of a 2CSP instance under an assignment.** Let $I = (n, \Sigma, C)$ be a 2CSP
+instance and $\sigma$ an assignment of a label less than $\Sigma$ to each variable less than $n$.
+The value of $I$ under $\sigma$ is the rational number $1$ if $C$ is empty, and otherwise the
+number of entries of the list $C$ that are constraints satisfied by $\sigma$, divided by the
+length of $C$.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Proof depends on
 
-- [Csp Constraint Sat](csp-constraint-sat.md)
+- [Satisfied constraint of a 2CSP instance](csp-constraint-sat.md)
 
 ## Sources
 

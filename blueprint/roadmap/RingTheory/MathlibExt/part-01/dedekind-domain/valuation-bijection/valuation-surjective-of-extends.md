@@ -6,20 +6,25 @@ proof: formalized
 lean: ValuationBijection.valuation_surjective_of_extends
 ---
 
-# Valuation surjective of extends
+# Each extension of a prime-adic valuation comes from some prime above
 
-Every integer-valued valuation on `L` extending `v_𝔭` up to
-equivalence is equivalent to `v_𝔮` for a prime `𝔮` of `B` over `𝔭`.
-The prime is the strict unit-ball ideal `{b ∈ B | w b < 1}`.
+**Each extension of a prime-adic valuation comes from some prime above.** Let $A$ be a
+Dedekind domain with fraction field $K$, let $L$ be a finite separable extension of $K$, and let
+$B$ be a Dedekind domain that is the integral closure of $A$ in $L$ and has fraction field $L$.
+Let $\mathfrak{p}$ be a height-one prime of $A$, and let $w$ be a valuation on $L$ with values in
+the multiplicative group $\mathbb{Z}$ with a zero adjoined whose restriction to $K$ is equivalent
+to the $\mathfrak{p}$-adic valuation of $K$. Then there is a height-one prime $\mathfrak{q}$ of $B$
+lying over $\mathfrak{p}$ such that the $\mathfrak{q}$-adic valuation of $L$ is equivalent
+to $w$.
 
 ## Depends on
 
-- [Extends Valuation](extends-valuation.md)
-- [Primes Above](primes-above.md)
+- [Valuations extending a prime-adic valuation](extends-valuation.md)
+- [Height-one primes above a prime](primes-above.md)
 
 ## Proof depends on
 
-- [Dvr overring equiv](dvr-overring-equiv.md)
+- [A valuation centered at a height-one prime is equivalent to its adic valuation](dvr-overring-equiv.md)
 
 ## Sources
 

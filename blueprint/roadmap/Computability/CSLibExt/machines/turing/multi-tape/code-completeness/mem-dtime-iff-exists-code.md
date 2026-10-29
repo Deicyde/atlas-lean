@@ -17,7 +17,7 @@ $w$ runs in space $s(|w|)$.
 ## Depends on
 
 - [Codes for multi-tape machines](../code/code.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 - [Deterministic time classes on multi-tape machines](../time-space/dtime.md)
 - [A multi-tape machine deciding a language](../time-space/decides.md)
 - [Space-bounded multi-tape machine](../time-space/space-bounded-by.md)

@@ -18,7 +18,7 @@ multi-tape machine with finitely many states decides $L$ within the same bounds.
 ## Depends on
 
 - [Codes for multi-tape machines](../code/code.md)
-- [The machine of a code](../code/to-tm.md)
+- [The multi-tape machine of a code](../code/to-tm.md)
 - [A multi-tape machine deciding a language](../time-space/decides.md)
 
 ## Proof depends on

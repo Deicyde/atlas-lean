@@ -15,7 +15,7 @@ automaton of $M$.
 ## Depends on
 
 - [States of Moore's automaton](moore-state.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 

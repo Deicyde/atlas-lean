@@ -84,9 +84,16 @@ def baumslagGroupGermRepresentationFaithful : Prop :=
     (PresentedGroup.mk _ w : BaumslagGroup) = 1
 
 /--
-Resolved false: Nyberg-Brodda exhibits a non-trivial element of Baumslag's group `B = BG(1, 2)` in
-the kernel of the representation `a ↦ 2x`, `b ↦ 2^x` by germs at `+∞`; the Kourovka Notebook (21st
-issue) answers 17.99 "No, it is not". Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
+**Baumslag's germ representation is not faithful.** Let $B$ be Baumslag's group
+$\langle a, b \mid (bab^{-1})\, a\, (bab^{-1})^{-1} = a^2 \rangle$, let $f(x) = 2x$ and
+$g(x) = 2^x$, and for $w$ in the free group on $a, b$ with reduced word $l_1 l_2 \cdots l_k$ let
+$\varphi_w = \varphi_{l_1} \circ \varphi_{l_2} \circ \cdots \circ \varphi_{l_k}$, where
+$\varphi_a = f$, $\varphi_{a^{-1}}(x) = x/2$, $\varphi_b = g$ and $\varphi_{b^{-1}}(x) = \log_2 x$.
+The representation $a \mapsto f$, $b \mapsto g$ of $B$ by germs at $+\infty$ is not faithful: there
+is an element $w$ of the free group on $a, b$ such that $\varphi_w(x) = x$ for all sufficiently
+large real $x$, but the image of $w$ in $B$ is not trivial.
+
+Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
 Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem
 17.99 (A. Yu. Olshanskii); resolution: C.-F. Nyberg-Brodda, The Baumslag-Gersten group and a problem
 of Olshanskii, preprint, arXiv:2606.27408 (2026), abstract (the representation of BG(1, 2) by germs

@@ -7,8 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.Williams.williams_nexp_not_in_acc0
 
 # Williams: NEXP is not contained in ACC0
 
-**Williams: NEXP is not contained in ACC0.** Source: R. Williams, "Non-uniform ACC circuit
-lower bounds", Journal of the ACM 61 (2014), 1-32 (CCC 2011).
+**Williams: NEXP is not contained in ACC0.** Some decision problem lies in NEXP but not in
+$\mathsf{ACC}^0$.
 
 ## Depends on
 
@@ -20,3 +20,4 @@ lower bounds", Journal of the ACM 61 (2014), 1-32 (CCC 2011).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.WilliamsWanted](../../../../../sources/v2/WantedExt.md)
+- R. Williams, "Non-uniform ACC circuit lower bounds", Journal of the ACM 61 (2014), 1-32 (CCC 2011).

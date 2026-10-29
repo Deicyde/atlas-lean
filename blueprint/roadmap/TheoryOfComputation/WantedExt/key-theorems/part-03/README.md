@@ -11,7 +11,7 @@ navigation: transparent
 - [Natural Proofs](natural-proofs-wanted/README.md)
 - [Nisan-Wigderson: exponential hardness in E derandomizes BPP](nisan-wigderson.md)
 - [Nondeterministic time hierarchy](nondet-time-hierarchy.md)
-- [One-way functions imply P != NP](owf-implies-p-ne-np.md)
+- [One-way functions imply P ≠ NP](owf-implies-p-ne-np.md)
 - [An oracle separates NP from coNP](oracle-np-co-np-separation.md)
 - [The PCP theorem: NP = PCP(O(log n), O(1))](pcp-theorem.md)
 - [If P = NP then the polynomial hierarchy collapses to P](ph-collapses.md)

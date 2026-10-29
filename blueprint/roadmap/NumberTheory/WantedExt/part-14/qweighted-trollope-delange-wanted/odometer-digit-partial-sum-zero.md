@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.odometerDigitPartialSum_zero
 ---
 
-# Odometer Digit Partial Sum zero
+# The odometer partial sum vanishes at zero
 
-`S_{q,ω}(0) = 0`.
+**The odometer partial sum vanishes at zero.** For every $q \in \mathbb{C}$ and every dyadic
+integer $\omega$, the interpolated odometer partial sum satisfies $S_{q,\omega}(0) = 0$.
 
 ## Depends on
 
-- [Odometer Digit Partial Sum](odometer-digit-partial-sum.md)
+- [Odometer partial sums](odometer-digit-partial-sum.md)
 
 ## Proof depends on
 
-- [Dyadic Odometer](dyadic-odometer.md)
+- [Dyadic odometer](dyadic-odometer.md)
 
 ## Sources
 

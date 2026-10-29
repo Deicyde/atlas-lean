@@ -40,7 +40,7 @@ process in configuration $c'$.
 - [Parallel composition preserves realization](../finite-state/parallel.md)
 - [Restriction preserves realization](../finite-state/restriction.md)
 - [Code-level parallel composition](../finite-state/par-steps.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 
 ## Sources
 

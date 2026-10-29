@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.LargeDeviationPrinciple.isGoodRateFunction_abs
 ---
 
-# Is Good Rate Function abs
+# The absolute value is a good rate function
 
-`x ↦ ENNReal.ofReal |x|` is a good rate function on `ℝ`: it is
-continuous, hence lower semicontinuous, and its finite sub-level sets
-are closed intervals (or the singleton `{0}` for a negative level),
-hence compact.
+**The absolute value is a good rate function.** The function $x \mapsto |x|$, viewed as a map
+$\mathbb{R} \to [0, \infty]$, is a good rate function on $\mathbb{R}$.
+
+It is continuous, hence lower semicontinuous, and its sub-level sets at finite levels are closed
+intervals (or the singleton $\{0\}$ for a negative level), hence compact.
 
 ## Depends on
 
-- [Is Good Rate Function](is-good-rate-function.md)
+- [Good rate function](is-good-rate-function.md)
 
 ## Proof depends on
 
-- [Is Rate Function](is-rate-function.md)
+- [Rate function](is-rate-function.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEncodings
 ---
 
-# Fagin Encodings
+# Encodings of a graph class as a decision problem
 
-The encodings of a class of graphs, as a decision problem: only canonical
-encodings (edge table of length `n * n`) count.
+**Encodings of a graph class as a decision problem.** For a class $K$ of graphs, this is the
+decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding of pairs of a natural number and a list of booleans, to a graph $G \in K$ with
+$n$ vertices whose edge table has length exactly $n^2$.
 
 ## Depends on
 
-- [Fagin Graph](fagin-graph.md)
+- [Finite graphs as edge tables](fagin-graph.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on

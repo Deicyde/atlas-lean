@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.combinedTail_le_two
 ---
 
-# Combined Tail le two
+# The combined tail of a probability measure is at most two
 
-The combined tail is at most `2` for a probability measure.
+**The combined tail of a probability measure is at most two.** For every probability measure
+$\mu$ on $\mathbb{R}$ and every real number $x$, the combined tail of $\mu$ at $x$ satisfies
+$\mu((x, \infty)) + \mu((-\infty, -x)) \le 2$.
 
 ## Depends on
 
-- [Combined Tail](combined-tail.md)
+- [Combined tail of a measure](combined-tail.md)
 
 ## Proof depends on
 
-- [Left Tail](left-tail.md)
-- [Left Tail le one](left-tail-le-one.md)
-- [Right Tail](right-tail.md)
-- [Right Tail le one](right-tail-le-one.md)
+- [Left tail of a measure](left-tail.md)
+- [The left tail of a probability measure is at most one](left-tail-le-one.md)
+- [Right tail of a measure](right-tail.md)
+- [The right tail of a probability measure is at most one](right-tail-le-one.md)
 
 ## Sources
 

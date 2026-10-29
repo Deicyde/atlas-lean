@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure_initial_distribution
 ---
 
-# Markov Chain Measure initial distribution
+# Initial distribution of the canonical Markov chain measure
 
-Under the canonical Markov-chain measure, the law of the initial state `ω 0` is the initial
-distribution `μ`.
+**Initial distribution of the canonical Markov chain measure.** Let $\kappa$ be a Markov
+kernel from a measurable space $S$ to itself and let $\mu$ be a measure on $S$. Under the
+canonical Markov chain measure $P_\mu$ on $S^{\mathbb{N}}$ with initial measure $\mu$ and
+transition kernel $\kappa$, the law of the initial coordinate is $\mu$: the pushforward of $P_\mu$
+along $\omega \mapsto \omega_0$ equals $\mu$.
 
 ## Depends on
 
-- [Markov Chain Measure](markov-chain-measure.md)
+- [Canonical Markov chain measure](markov-chain-measure.md)
 
 ## Proof depends on
 
-- [Markov Lift Kernel](markov-lift-kernel.md)
+- [Lifting a kernel to histories](markov-lift-kernel.md)
 
 ## Sources
 

@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Probability.CharFunLattice.IsLatticeRV
 ---
 
-# Is Lattice RV
+# Lattice random variable
 
-A probability measure `μ` on `ℝ` corresponds to a **lattice random
-variable** when its characteristic function equals `1` at some nonzero
-frequency but is not identically `1` (so `μ` is not a point mass at `0`).
-This is the v1 definition, restated in this namespace.
+**Lattice random variable.** A measure $\mu$ on $\mathbb{R}$ with characteristic function
+$\varphi(t) = \int e^{itx} \, d\mu(x)$ is a lattice random variable if $\varphi(l) = 1$ for some
+real $l \ne 0$ and $\varphi(t) \ne 1$ for some real $t$.
+
+For a probability measure, the second condition says that $\mu$ is not the point mass at $0$.
 
 ## Depends on
 

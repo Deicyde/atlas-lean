@@ -19,7 +19,7 @@ identity operator.
 
 ## Proof depends on
 
-- [Multiplication by a constant function](lp-mul-clm-const-apply.md)
+- [Multiplication by a constant function on $L^2$](lp-mul-clm-const-apply.md)
 
 ## Sources
 

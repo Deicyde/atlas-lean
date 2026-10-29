@@ -20,7 +20,7 @@ otherwise is primitive recursive.
 
 - [One step of the course-of-values recursion for definedness](decode-is-some-step.md)
 - [The definedness step function is correct](decode-is-some-step-correct.md)
-- [The step function is primitive recursive](primrec-decode-is-some-step.md)
+- [The course-of-values step for definedness is primitive recursive](primrec-decode-is-some-step.md)
 
 ## Sources
 

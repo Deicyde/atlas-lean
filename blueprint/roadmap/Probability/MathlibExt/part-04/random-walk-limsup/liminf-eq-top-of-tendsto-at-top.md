@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.RandomWalkDichotomy.liminf_eq_top_of_tendsto_atTop
 ---
 
-# Liminf eq top of tendsto at Top
+# A real sequence tending to $+\infty$ has liminf $+\infty$
 
-`Sₙ → +∞` if and only if `liminf Sₙ = ⊤` (in `EReal`).
+**A real sequence tending to $+\infty$ has liminf $+\infty$.** If a real sequence $(S_n)$
+tends to $+\infty$, then its limit inferior in the extended reals $[-\infty, +\infty]$ is
+$+\infty$.
 
 ## Depends on
 

@@ -14,7 +14,7 @@ has a strict local minimum at $x_0$.
 
 ## Depends on
 
-- [Is Strict Local Min](../../../../../Topology/MathlibExt/order/local-extr/is-strict-local-min.md)
+- [Strict local minimum](../../../../../Topology/MathlibExt/order/local-extr/is-strict-local-min.md)
 
 ## Sources
 

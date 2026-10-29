@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NaturalProperty
 ---
 
-# Natural Property
+# Natural property
 
-A natural property: constructive (decidable by polynomial-size circuits on truth
-tables) and large (density at least `2 ^ (-c * n)`).
+**Natural property.** Let $C = (C_n)_{n \in \mathbb{N}}$, where $C_n$ is a set of Boolean
+functions on $n$ bits. Then $C$ is natural when it is constructive and large. Constructive: there
+are a polynomial $q$ with natural-number coefficients and, for every $n$, a circuit given as a
+list of at most $q(2^n)$ encoded gates, such that a Boolean function $g$ on $n$ bits lies in $C_n$
+if and only if the evaluation of the circuit on the truth table of $g$ has last gate value true.
+Large: there is a natural number $c$ such that $|C_n| \ge 2^{2^n} / 2^{cn}$ for every $n$, that is,
+$C_n$ contains at least a $2^{-cn}$ fraction of the $2^{2^n}$ Boolean functions on $n$ bits.
 
 ## Depends on
 
@@ -16,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [NPGate](npgate.md)
-- [Np Circuit Eval](np-circuit-eval.md)
-- [Truth Table](truth-table.md)
+- [Encoded gates](npgate.md)
+- [Evaluation of an encoded circuit](np-circuit-eval.md)
+- [Truth table](truth-table.md)
 
 ## Sources
 

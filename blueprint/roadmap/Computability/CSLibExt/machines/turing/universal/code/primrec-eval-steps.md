@@ -14,7 +14,7 @@ recursive in the code, the input and the clock.
 ## Depends on
 
 - [Codes for single-tape machines](code.md)
-- [Codes as tables](equiv-table.md)
+- [Single-tape codes as tables](equiv-table.md)
 - [The clocked evaluator](eval-steps.md)
 
 ## Proof depends on

@@ -6,14 +6,15 @@ proof: formalized
 lean: StochasticMatrix.listRatioProduct_nonneg
 ---
 
-# List Ratio Product nonneg
+# The ratio product is nonnegative
 
-The ratio product is always nonnegative.
+**The ratio product is nonnegative.** For a stochastic matrix $P$, the ratio product along
+every path of states is nonnegative.
 
 ## Depends on
 
-- [Stochastic Matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
-- [List Ratio Product](list-ratio-product.md)
+- [Stochastic matrix](../kolmogorov-cycle-necessity/stochastic-matrix.md)
+- [Ratio product along a path](list-ratio-product.md)
 
 ## Sources
 

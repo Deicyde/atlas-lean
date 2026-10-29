@@ -6,21 +6,23 @@ proof: formalized
 lean: StochasticMatrix.distribution_pos_of_irreducible_detailedBalance
 ---
 
-# Distribution pos of irreducible detailed Balance
+# Detailed balance distributions of irreducible chains are positive
 
-For an irreducible chain `P`, any distribution `π` satisfying detailed balance
-must assign strictly positive mass to every state.
+**Detailed balance distributions of irreducible chains are positive.** Let $P$ be an
+irreducible stochastic matrix on the finite state space $\{0, 1, \dots, M\}$. If a probability
+distribution $\pi$ satisfies the detailed balance equations $\pi(i) P(i, j) = \pi(j) P(j, i)$
+for all states $i, j$, then $\pi(i) > 0$ for every state $i$.
 
 ## Depends on
 
-- [Stochastic Matrix](stochastic-matrix.md)
-- [Detailed Balance](detailed-balance.md)
-- [Distribution](distribution.md)
-- [Is Irreducible](is-irreducible.md)
+- [Stochastic matrix](stochastic-matrix.md)
+- [Detailed balance](detailed-balance.md)
+- [Probability distribution on a finite state space](distribution.md)
+- [Irreducible stochastic matrix](is-irreducible.md)
 
 ## Proof depends on
 
-- [Mat Pow](mat-pow.md)
+- [Matrix powers of a stochastic matrix](mat-pow.md)
 
 ## Sources
 

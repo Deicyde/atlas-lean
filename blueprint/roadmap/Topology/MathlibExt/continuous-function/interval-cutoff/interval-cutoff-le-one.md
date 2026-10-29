@@ -6,13 +6,15 @@ proof: formalized
 lean: Real.intervalCutoff_le_one
 ---
 
-# Interval Cutoff le one
+# The interval cutoff is at most one
 
-The interval cutoff is at most `1`.
+**The interval cutoff is at most one.** For all real numbers $a$, $b$, $\delta$ and $x$, the
+interval cutoff $\chi_{a,b,\delta}$ with endpoints $a$, $b$ and width $\delta$ satisfies
+$\chi_{a,b,\delta}(x) \le 1$.
 
 ## Depends on
 
-- [Interval Cutoff](interval-cutoff.md)
+- [Interval cutoff](interval-cutoff.md)
 
 ## Sources
 

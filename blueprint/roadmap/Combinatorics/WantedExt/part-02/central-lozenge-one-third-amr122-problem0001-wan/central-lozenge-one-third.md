@@ -30,7 +30,7 @@ This node has no prerequisites.
 
 - [Unit triangles of a semiregular hexagon](in-hexagon.md)
 - [Unit triangles of the triangular lattice](lattice-triangle.md)
-- [Hexagon Graph](hexagon-graph.md)
+- [Dual honeycomb graph of a hexagon](hexagon-graph.md)
 
 ## Sources
 

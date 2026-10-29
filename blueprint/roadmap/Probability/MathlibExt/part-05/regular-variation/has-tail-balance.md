@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.Probability.RegularVariation.HasTailBalance
 ---
 
-# Has Tail Balance
+# Tail balance
 
-Tail balance for a finite measure requires an eventually positive combined real tail
-and a ratio limit. For probability measures this expresses `P(X > x) / P(|X| > x) → p`.
-Finiteness prevents infinite source tails from collapsing through `toReal`; eventual
-positivity prevents totalized division from accepting an eventual `0 / 0`.
+**Tail balance.** Let $\mu$ be a finite measure on $\mathbb{R}$ and $p$ a real number. Write
+$R(x) = \mu((x, \infty))$ for the right tail and $T(x) = \mu((x, \infty)) + \mu((-\infty, -x))$
+for the combined tail of $\mu$. The measure $\mu$ has tail balance $p$ when $0 \le p \le 1$,
+$T(x) > 0$ for all sufficiently large $x$, and $R(x) / T(x) \to p$ as $x \to \infty$.
+
+For the law of a random variable $X$ this says $P(X > x) / P(|X| > x) \to p$. Eventual
+positivity of $T$ rules out an eventual $0 / 0$.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Combined Tail](combined-tail.md)
-- [Right Tail](right-tail.md)
+- [Combined tail of a measure](combined-tail.md)
+- [Right tail of a measure](right-tail.md)
 
 ## Sources
 

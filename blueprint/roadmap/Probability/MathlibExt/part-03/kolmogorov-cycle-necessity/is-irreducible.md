@@ -5,19 +5,20 @@ statement: formalized
 lean: StochasticMatrix.IsIrreducible
 ---
 
-# Is Irreducible
+# Irreducible stochastic matrix
 
-A stochastic matrix `P` is **irreducible** if for every pair of states `i, j` there is some
-positive number of steps `n` such that `P ^ n i j > 0`; i.e., every state is reachable from
-every other state in finitely many steps.
+**Irreducible stochastic matrix.** Let $P$ be a stochastic matrix on the finite state space
+$\{0, 1, \dots, M\}$ and write $P^n$ for its $n$-th matrix power. Then $P$ is irreducible if for
+all states $i$ and $j$ there is an $n \ge 1$ with $(P^n)_{ij} > 0$; that is, every state can be
+reached from every state, itself included, in a positive number of steps.
 
 ## Depends on
 
-- [Stochastic Matrix](stochastic-matrix.md)
+- [Stochastic matrix](stochastic-matrix.md)
 
 ## Proof depends on
 
-- [Mat Pow](mat-pow.md)
+- [Matrix powers of a stochastic matrix](mat-pow.md)
 
 ## Sources
 

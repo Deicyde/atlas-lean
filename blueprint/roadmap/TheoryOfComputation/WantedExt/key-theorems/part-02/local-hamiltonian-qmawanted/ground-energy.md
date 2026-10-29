@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.groundEnergy
 ---
 
-# Ground Energy
+# Ground energy of a Hermitian matrix
 
-The ground energy of a Hermitian matrix: its smallest eigenvalue.
+**Ground energy of a Hermitian matrix.** For a natural number $n$, the ground energy of a
+Hermitian $2^n \times 2^n$ complex matrix $H$ is the smallest eigenvalue of $H$.
 
 ## Depends on
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.IsRegularlyVarying.of_eventuallyEq
 ---
 
-# Of eventually Eq
+# Regular variation is preserved by eventual equality
 
-Regular variation is preserved under eventual equality at infinity.
+**Regular variation is preserved by eventual equality.** Let $f, g : \mathbb{R} \to \mathbb{R}$
+and $\rho \in \mathbb{R}$. If $f$ is regularly varying with index $\rho$ and $f(x) = g(x)$ for
+all sufficiently large $x$, then $g$ is regularly varying with index $\rho$.
 
 ## Depends on
 
-- [Is Regularly Varying](is-regularly-varying.md)
+- [Regularly varying function](is-regularly-varying.md)
 
 ## Proof depends on
 
-- [Is Slowly Varying](is-slowly-varying.md)
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

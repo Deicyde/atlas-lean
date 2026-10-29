@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NPGate
 ---
 
-# NPGate
+# Encoded gates
 
-A gate of a flat Boolean circuit, encoded as `(kind, refs)`: the shared
-serial encoding of `Cslib.Complexity.Classes.acGateOfPair`/`acGateToPair`.
+**Encoded gates.** An encoded gate of a flat Boolean circuit is a pair $(k, r)$ of a natural
+number $k$ (its kind) and a list $r$ of natural numbers (its references), in the shared encoding
+of gates as (kind, references) pairs.
 
 ## Depends on
 

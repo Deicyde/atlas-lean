@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.odometer_limitingCurve_eq_neg_takagi
 ---
 
-# Theorem 2
+# Odometer limiting curve is the negative Takagi–Landsberg function
 
-**Theorem 2** (quoted from the author's earlier work): for `1/2 < |q| < 1` and Haar-almost
-every `ω ∈ ℤ₂` there are a stabilizing sequence `l_n` of positive integers and a normalizing
-sequence `R_n` (in the sense of `IsStabilizingSeq`: nonzero, unbounded, and of the order
-of the maximal fluctuation) such that
-`φ^{l_n,R_n}_{q,ω}(t) = (S_{q,ω}(t l_n) - t S_{q,ω}(l_n))/R_n` converges uniformly on
-`[0, 1]` to `-𝒯_a` with `a = 1/(2q)`.
+**Odometer limiting curve is the negative Takagi–Landsberg function.** Let $q \in \mathbb{C}$
+with $1/2 < |q| < 1$ and put $a = 1/(2q)$. Then for almost every dyadic integer $\omega$ with
+respect to the Haar measure on $\mathbb{Z}_2$ there are a sequence $(l_n)$ of natural numbers and
+a sequence $(R_n)$ of complex numbers such that $(l_n)$ is a stabilizing sequence for
+$(q, \omega)$ with normalizing sequence $(R_n)$ and limiting curve $t \mapsto -\mathcal{T}_a(t)$,
+where $\mathcal{T}_a$ is the Takagi–Landsberg function. In particular, with $S_{q,\omega}$ the
+interpolated odometer partial sums, the normalized fluctuations
+$(S_{q,\omega}(t l_n) - t S_{q,\omega}(l_n))/R_n$ converge uniformly on $[0, 1]$ to
+$-\mathcal{T}_a(t)$.
+
+This is Theorem 2 of the source, which quotes it from the author's earlier work.
 
 ## Depends on
 
-- [Is Stabilizing Seq](is-stabilizing-seq.md)
-- [Dyadic Haar](dyadic-haar.md)
-- [Takagi Landsberg](takagi-landsberg.md)
+- [Stabilizing sequence for the dyadic odometer](is-stabilizing-seq.md)
+- [Haar measure on the dyadic integers](dyadic-haar.md)
+- [The Takagi–Landsberg function](takagi-landsberg.md)
 
 ## Sources
 

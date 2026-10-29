@@ -56,9 +56,9 @@ universe u v
 
 section C0
 
-/-- **$c_0$ as a subspace of $\ell^\infty$.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
-and let $\iota$ be an index type. The sequences $x \in \ell^\infty(\iota, \mathbb{K})$ whose
-coordinates $x_i$ tend to $0$ along the cofinite filter on $\iota$ form a
+/-- **The subspace of null sequences in $\ell^\infty$.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$ and let $\iota$ be an index type. The sequences $x \in \ell^\infty(\iota, \mathbb{K})$
+whose coordinates $x_i$ tend to $0$ along the cofinite filter on $\iota$ form a
 $\mathbb{K}$-linear subspace of $\ell^\infty(\iota, \mathbb{K})$. -/
 noncomputable def c0Submodule (𝕜 : Type u) [RCLike 𝕜] (ι : Type v) :
     Submodule 𝕜 (lp (fun _ : ι => 𝕜) ∞) where
@@ -159,10 +159,11 @@ noncomputable def c0OfLp (x : lp (fun _ : ι => 𝕜) ∞)
     (hx : Tendsto (x : ι → 𝕜) cofinite (𝓝 0)) (i : ι) :
     (c0OfLp x hx : ι → 𝕜) i = x i := rfl
 
-/-- **$c_0$ as a subspace of $\ell^\infty$.** Let $\mathbb{K}$ be the real or complex field and
-$\iota$ an index type. The map that sends $x \in c_0(\iota, \mathbb{K})$ to the same sequence
-$(x_i)_{i \in \iota}$, viewed in the subspace of $\ell^\infty(\iota, \mathbb{K})$ of sequences
-tending to $0$ along the cofinite filter, is a linear isometric equivalence onto that subspace. -/
+/-- **$c_0$ is isometrically isomorphic to the null sequences in $\ell^\infty$.** Let $\mathbb{K}$
+be the real or complex field and $\iota$ an index type. The map that sends
+$x \in c_0(\iota, \mathbb{K})$ to the same sequence $(x_i)_{i \in \iota}$, viewed in the subspace
+of $\ell^\infty(\iota, \mathbb{K})$ of sequences tending to $0$ along the cofinite filter, is a
+linear isometric equivalence onto that subspace. -/
 noncomputable def c0LpEquiv : c0 𝕜 ι ≃ₗᵢ[𝕜] ↥(c0Submodule 𝕜 ι) := by
   letI : TopologicalSpace ι := ⊥
   exact
@@ -324,10 +325,10 @@ noncomputable def c0PairingLin (a : lp (fun _ : ι => 𝕜) 1) : c0 𝕜 ι →�
     simp [ZeroAtInftyContinuousMap.coe_smul, Pi.smul_apply, smul_eq_mul]
     ring
 
-/-- **Formula for the $\ell^1$–$c_0$ pairing.** Let $\mathbb{K}$ be $\mathbb{R}$ or
-$\mathbb{C}$ and let $\iota$ be an index type. For $a \in \ell^1(\iota, \mathbb{K})$ and
-$x \in c_0(\iota, \mathbb{K})$, the pairing of $a$ with $x$ equals
-$\sum_{i \in \iota} a_i x_i$. -/
+/-- **Value of the functional of an $\ell^1$ sequence on $c_0$.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$ and let $\iota$ be an index type. For $a \in \ell^1(\iota, \mathbb{K})$
+and $x \in c_0(\iota, \mathbb{K})$, the linear functional on $c_0(\iota, \mathbb{K})$ given by
+pairing with $a$ takes the value $\sum_{i \in \iota} a_i x_i$ at $x$. -/
 theorem c0PairingLin_apply (a : lp (fun _ : ι => 𝕜) 1) (x : c0 𝕜 ι) :
     c0PairingLin (𝕜 := 𝕜) (ι := ι) a x = ∑' i, a i * (x : ι → 𝕜) i := rfl
 
@@ -425,13 +426,13 @@ $x \mapsto \sum_{i \in \iota} a_i x_i$. -/
 noncomputable def c0DualPairing : lp (fun _ : ι => 𝕜) 1 →L[𝕜] StrongDual 𝕜 (c0 𝕜 ι) :=
   ContinuousLinearMap.mk c0DualPairingLin c0DualPairingLin_continuous
 
-/-- **Formula for the $\ell^1$–$c_0$ pairing.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$,
-let $c_0(\iota, \mathbb{K})$ be the space of families in $\mathbb{K}$ indexed by $\iota$ that tend
-to $0$ along the cofinite filter, and let $\ell^1(\iota, \mathbb{K})$ be the space of absolutely
-summable families. For $a \in \ell^1(\iota, \mathbb{K})$ and $x \in c_0(\iota, \mathbb{K})$, the
-canonical continuous linear map from $\ell^1(\iota, \mathbb{K})$ to the continuous linear
-functionals on $c_0(\iota, \mathbb{K})$ sends $a$ to a functional whose value at $x$ is
-$\sum_{i \in \iota} a_i x_i$. -/
+/-- **Formula for the $\ell^1$–$c_0$ duality pairing.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+$\mathbb{C}$, let $c_0(\iota, \mathbb{K})$ be the space of families in $\mathbb{K}$ indexed by
+$\iota$ that tend to $0$ along the cofinite filter, and let $\ell^1(\iota, \mathbb{K})$ be the
+space of absolutely summable families. For $a \in \ell^1(\iota, \mathbb{K})$ and
+$x \in c_0(\iota, \mathbb{K})$, the canonical continuous linear map from $\ell^1(\iota, \mathbb{K})$
+to the continuous linear functionals on $c_0(\iota, \mathbb{K})$ sends $a$ to a functional whose
+value at $x$ is $\sum_{i \in \iota} a_i x_i$. -/
 theorem c0DualPairing_apply (a : lp (fun _ : ι => 𝕜) 1) (x : c0 𝕜 ι) :
     c0DualPairing (𝕜 := 𝕜) (ι := ι) a x = ∑' i, a i * (x : ι → 𝕜) i :=
   c0DualPairingLin_apply a x

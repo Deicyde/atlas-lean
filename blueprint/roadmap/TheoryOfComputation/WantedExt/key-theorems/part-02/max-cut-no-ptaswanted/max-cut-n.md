@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutN
 ---
 
-# Max Cut N
+# Vertex count of a MAX-CUT instance
 
-The vertex count of a MAX-CUT instance: `⌊√|x|⌋`.
+**Vertex count of a MAX-CUT instance.** The vertex count of a MAX-CUT instance, a bitstring
+$x$ of length $|x|$, is $\lfloor \sqrt{|x|} \rfloor$.
 
 ## Depends on
 

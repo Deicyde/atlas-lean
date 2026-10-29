@@ -19,7 +19,7 @@ context to closed terms is reducible, since the empty context has no variables.
 
 ## Proof depends on
 
-- [Reducible](reducible.md)
+- [Tait reducibility for closed terms](reducible.md)
 - [Typed de Bruijn variables of the simply typed lambda calculus](../syntax/var.md)
 
 ## Sources

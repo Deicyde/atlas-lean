@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.qWeightedDigitPartialSum
 ---
 
-# Q Weighted Digit Partial Sum
+# Partial sums of the $q$-weighted binary digit sum
 
-The partial sums `S_q(n) = ∑_{k=0}^{n-1} s_q(k)` of the `q`-weighted binary digit sum.
+**Partial sums of the $q$-weighted binary digit sum.** For an element $q$ of a commutative
+ring and a natural number $n$, the partial sum is $S_q(n) = \sum_{k=0}^{n-1} s_q(k)$, where $s_q$
+is the $q$-weighted binary digit sum.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Weighted Digit Sum](q-weighted-digit-sum.md)
+- [The $q$-weighted binary digit sum](q-weighted-digit-sum.md)
 
 ## Sources
 

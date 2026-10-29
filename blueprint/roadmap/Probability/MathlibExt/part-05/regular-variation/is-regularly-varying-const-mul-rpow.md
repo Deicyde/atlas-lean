@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.isRegularlyVarying_const_mul_rpow
 ---
 
-# Is Regularly Varying const mul rpow
+# Positive multiples of powers are regularly varying
 
-A positive constant multiple of a power function is regularly varying.
+**Positive multiples of powers are regularly varying.** For real numbers $c > 0$ and $\rho$, the
+function $x \mapsto c x^\rho$ on $\mathbb{R}$ is regularly varying with index $\rho$.
 
 ## Depends on
 
-- [Is Regularly Varying](is-regularly-varying.md)
+- [Regularly varying function](is-regularly-varying.md)
 
 ## Proof depends on
 
-- [Const mul](const-mul-2.md)
-- [Is Regularly Varying rpow](is-regularly-varying-rpow.md)
+- [Positive multiples of regularly varying functions](const-mul-2.md)
+- [Powers are regularly varying](is-regularly-varying-rpow.md)
 
 ## Sources
 

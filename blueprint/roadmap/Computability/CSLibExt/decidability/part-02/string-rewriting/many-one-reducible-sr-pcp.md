@@ -31,7 +31,7 @@ left side and a nonempty right side and $x$ rewrites to $y$ in zero or more step
 - [The modified Post correspondence problem](../../part-01/pcp/mpcp.md)
 - [Instances with nonempty words](../../part-01/pcp/nonempty-words.md)
 - [MPCP many-one reduces to PCP](../../part-01/pcp/many-one-reducible-mpcp-pcp.md)
-- [Reachability many-one reduces to MPCP](many-one-reducible-sr-mpcp.md)
+- [Reachability with nonempty sides many-one reduces to MPCP with nonempty words](many-one-reducible-sr-mpcp.md)
 
 ## Sources
 

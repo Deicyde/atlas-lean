@@ -18,7 +18,7 @@ partition of $M$.
 - [States of Moore's automaton](../moore/moore-state.md)
 - [Hopcroft's relation](hopcroft-rel.md)
 - [Moore class of a reachable state](../moore/moore-class.md)
-- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of a DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 

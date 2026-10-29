@@ -6,19 +6,21 @@ proof: formalized
 lean: ProbabilityTheory.IsBernoulliRV.measure_one
 ---
 
-# Measure one
+# Probability that a Bernoulli variable equals one
 
-A Bernoulli variable has mass `p` at one.
+**Probability that a Bernoulli variable equals one.** If $X : \Omega \to \mathbb{N}$ is a
+Bernoulli random variable with parameter $p$ under a measure $\mu$, then
+$\mu(\{\omega : X(\omega) = 1\}) = p$, as an extended nonnegative real.
 
 ## Depends on
 
-- [Is Bernoulli RV](is-bernoulli-rv.md)
+- [Bernoulli random variable](is-bernoulli-rv.md)
 
 ## Proof depends on
 
-- [Has Law](has-law.md)
-- [Le one](le-one.md)
-- [Nonneg](nonneg.md)
+- [Law of a Bernoulli random variable](has-law.md)
+- [Bernoulli parameters are at most one](le-one.md)
+- [Bernoulli parameters are nonnegative](nonneg.md)
 
 ## Sources
 

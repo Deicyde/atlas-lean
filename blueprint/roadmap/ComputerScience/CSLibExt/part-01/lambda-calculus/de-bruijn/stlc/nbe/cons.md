@@ -16,7 +16,7 @@ sends the successor of each variable $x$ of $\Gamma$ to $\eta(x)$.
 ## Depends on
 
 - [Kripke semantic values](sem.md)
-- [Semantic environments](sem-env.md)
+- [Semantic environments for normalization by evaluation](sem-env.md)
 - [Simple types](../syntax/ty.md)
 
 ## Proof depends on

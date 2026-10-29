@@ -17,7 +17,7 @@ listed in $l$ has a transition labelled $a$ to $q$ exactly when $(a, q)$ belongs
 - [Sum of prefixes](sum-of.md)
 - [CCS labels](../parallel/label.md)
 - [Recursive CCS processes](../recursion/process.md)
-- [Step](../recursion/step.md)
+- [Transitions of recursive CCS](../recursion/step.md)
 - [Recursive CCS specification](../recursion/specification.md)
 
 ## Proof depends on

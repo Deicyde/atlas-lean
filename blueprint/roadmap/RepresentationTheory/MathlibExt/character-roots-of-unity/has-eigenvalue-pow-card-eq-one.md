@@ -6,10 +6,13 @@ proof: formalized
 lean: CharacterTheory.hasEigenvalue_pow_card_eq_one
 ---
 
-# Has Eigenvalue pow card eq one
+# Eigenvalues of $\rho(g)$ are $|G|$-th roots of unity
 
-Every eigenvalue `μ` of `ρ g` satisfies `μ ^ Fintype.card G = 1`,
-since `orderOf g` divides `|G|`.
+**Eigenvalues of $\rho(g)$ are $|G|$-th roots of unity.** Let $\rho$ be a representation of a
+finite group $G$ on a finite-dimensional complex vector space $V$, and let $g \in G$. Every
+eigenvalue $\mu$ of $\rho(g)$ satisfies $\mu^{|G|} = 1$.
+
+This follows because the order of $g$ divides $|G|$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Eigenvalue pow order Of eq one](has-eigenvalue-pow-order-of-eq-one.md)
+- [Eigenvalues of $\rho(g)$ are roots of unity of order dividing that of $g$](has-eigenvalue-pow-order-of-eq-one.md)
 
 ## Sources
 

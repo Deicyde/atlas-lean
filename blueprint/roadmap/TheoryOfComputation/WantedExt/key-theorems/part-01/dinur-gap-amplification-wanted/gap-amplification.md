@@ -5,25 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.DinurGapAmplification.gapAmplification
 ---
 
-# Gap Amplification
+# Gap amplification with given constants
 
-Gap amplification with explicit constants `c α d D e`: a transformation keeping
-the variables, preserving well-formedness, with constant constraint blowup and
-constant-factor degree blowup, alphabet size at most `Sigma ^ e` for the exponent `e`
-(the local-view alphabet of graph powering), preserving satisfiability and
-amplifying every gap `δ` by a constant factor `c > 1`, capped at a fixed constant
-`α < 1`. The constants are parameters (not existentially quantified inside) so
-that the theorem below can share them with alphabet reduction.
+**Gap amplification with given constants.** Let $c, \alpha$ be rationals and $d, D, e$ natural
+numbers. A map $T$ from 2CSP instances to 2CSP instances is a gap amplification with constants
+$c, \alpha, d, D, e$ when $c > 1$, $0 < \alpha < 1$, $d \ge 1$, $D \ge 1$, and for every 2CSP
+instance $I$ with $n$ variables, alphabet size $\Sigma$ and $m$ constraints: $T(I)$ has exactly $n$
+variables, alphabet size at most $\Sigma^e$ and at most $d m$ constraints; if $I$ is well-formed
+then so is $T(I)$; for every natural number $v$, if $v$ has degree $k$ in $I$, then $v$ has degree
+at most $D(k + 1)$ in $T(I)$; if some assignment gives $I$ value $1$ then some assignment
+gives $T(I)$ value $1$; and for every rational $\delta$ with $0 < \delta \le 1$, if every assignment
+gives $I$ value at most $1 - \delta$, then every assignment gives $T(I)$ value at most
+$1 - \min(\alpha, c\delta)$.
 
 ## Depends on
 
-- [CSPInstance](cspinstance.md)
+- [2CSP instances](cspinstance.md)
 
 ## Proof depends on
 
-- [CSPWell Formed](cspwell-formed.md)
-- [Csp Degree](csp-degree.md)
-- [Csp Val](csp-val.md)
+- [Well-formed 2CSP instances](cspwell-formed.md)
+- [Degree of a variable in a 2CSP instance](csp-degree.md)
+- [Value of a 2CSP instance under an assignment](csp-val.md)
 
 ## Sources
 

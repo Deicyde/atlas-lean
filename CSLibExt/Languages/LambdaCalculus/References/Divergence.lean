@@ -202,7 +202,9 @@ theorem knot_hasType : HasType ([] : List (Ty Base)) [] (knot : Term Base) .unit
       (.assign (.var rfl) (.lam (.app (.deref (.var rfl)) (.var rfl))))))
     (.ref (.lam (.var rfl)))
 
-/-- Landin's knot never reaches a value from the empty store. -/
+/-- **Landin's knot never evaluates to a value.** Starting from Landin's knot with the empty
+store, no sequence of zero or more call-by-value evaluation steps reaches a configuration
+$(v, \mu)$ in which the term $v$ is a value, whatever the store $\mu$. -/
 theorem knot_diverges :
     ¬ ∃ (v : Term Base) (μ : Store Base), Steps (knot : Term Base) [] v μ ∧ v.Value := by
   rintro ⟨v, μ, hsteps, hv⟩

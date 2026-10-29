@@ -6,18 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.ES_tendsto_atTop
 ---
 
-# ES tendsto at Top
+# Divergent total probability makes the expected partial sums diverge
 
-If `∑ P(A_n) = ∞`, then the expectations `E[S_n] = ∑_{i<n} P(A_i)` of the partial sums
-tend to `∞`.
+**Divergent total probability makes the expected partial sums diverge.** Let $\mu$ be a
+probability measure on $\Omega$, let $A_0, A_1, \dots \subseteq \Omega$ be measurable sets with
+$\sum_n \mu(A_n) = \infty$, and let $S_n = \sum_{i\lt n} 1_{A_i}$. Then $\mathbb{E}[S_n] \to \infty$
+as $n \to \infty$.
+
+Here $\mathbb{E}[S_n] = \sum_{i\lt n} \mu(A_i)$.
 
 ## Depends on
 
-- [Partial Sum Indicators](partial-sum-indicators.md)
+- [Partial sums of indicators](partial-sum-indicators.md)
 
 ## Proof depends on
 
-- [Integral partial Sum Indicators](integral-partial-sum-indicators.md)
+- [Expectation of a sum of indicators](integral-partial-sum-indicators.md)
 
 ## Sources
 

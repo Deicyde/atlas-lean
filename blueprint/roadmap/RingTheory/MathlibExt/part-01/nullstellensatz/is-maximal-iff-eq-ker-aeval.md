@@ -8,9 +8,10 @@ lean: HilbertNullstellensatz.isMaximal_iff_eq_ker_aeval
 
 # Weak Nullstellensatz, kernel form
 
-**Weak Nullstellensatz, kernel form.** An ideal of
-`ℂ[x₁, …, xₙ]` is maximal if and only if it is the kernel of evaluation
-at some point of `ℂⁿ`.
+**Weak Nullstellensatz, kernel form.** Let $n$ be a natural number. An ideal $I$ of the
+polynomial ring $\mathbb{C}[x_1, \ldots, x_n]$ is maximal if and only if there is a point
+$a \in \mathbb{C}^n$ such that $I$ is the kernel of the evaluation homomorphism
+$\mathbb{C}[x_1, \ldots, x_n] \to \mathbb{C}$, $f \mapsto f(a)$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Vanishing Ideal singleton eq ker aeval](vanishing-ideal-singleton-eq-ker-aeval.md)
+- [Vanishing ideal of a point](vanishing-ideal-singleton-eq-ker-aeval.md)
 
 ## Sources
 

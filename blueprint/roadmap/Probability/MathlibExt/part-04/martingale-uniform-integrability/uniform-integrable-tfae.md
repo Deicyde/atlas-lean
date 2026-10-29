@@ -6,14 +6,16 @@ proof: formalized
 lean: MeasureTheory.Submartingale.uniformIntegrable_tfae
 ---
 
-# Submartingale convergence theorem
+# Equivalent conditions for uniform integrability of a submartingale
 
-**Submartingale convergence theorem.** For a submartingale `X` on a probability space, the
-following are equivalent:
-1. `X` is uniformly integrable.
-2. There exists an integrable `X_∞` such that `X_n → X_∞` almost surely and in `L¹` (in the
-   `∫ ‖X n - X_∞‖` sense).
-3. There exists an integrable `X_∞` such that `X_n → X_∞` in `L¹`.
+**Equivalent conditions for uniform integrability of a submartingale.** Let $(\Omega, \mu)$ be
+a probability space with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, and let
+$(X_n)_{n \in \mathbb{N}}$ be a real-valued submartingale with respect to $(\mathcal{F}_n)$ and
+$\mu$. The following are equivalent:
+1. $(X_n)$ is uniformly integrable.
+2. There is an integrable $X_\infty$ such that $X_n \to X_\infty$ almost surely and
+   $\int |X_n - X_\infty| \, d\mu \to 0$.
+3. There is an integrable $X_\infty$ such that $\int |X_n - X_\infty| \, d\mu \to 0$.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Martingale Orthogonality
 
-- [Integral sub mul eq zero](integral-sub-mul-eq-zero.md)
-- [Integral sub sq eq](integral-sub-sq-eq.md)
+- [Orthogonality of martingale increments](integral-sub-mul-eq-zero.md)
+- [Pythagorean identity for martingale increments](integral-sub-sq-eq.md)

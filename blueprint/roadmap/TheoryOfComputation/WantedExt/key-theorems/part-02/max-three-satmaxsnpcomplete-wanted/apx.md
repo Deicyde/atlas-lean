@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.APX
 ---
 
-# APX
+# Membership in APX
 
-`APX`: an NPO problem with a polynomial-time constant-factor approximation whose
-output is feasible.
+**Membership in APX.** An NPO problem $M$ is in APX when there are a rational number
+$\rho \ge 1$ and a polynomial-time computable map $A$ from bitstrings to bitstrings such that, for
+every instance $x$, the solution $A(x)$ is feasible for $x$ in $M$ and its value is at least
+$\mathrm{opt}_M(x) / \rho$, where $\mathrm{opt}_M(x)$ is the optimum of $M$ on $x$.
 
 ## Depends on
 
-- [NPOProblem](npoproblem.md)
+- [NPO problems](npoproblem.md)
 
 ## Proof depends on
 
@@ -24,7 +26,7 @@ output is feasible.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Opt Val](opt-val.md)
+- [Optimum of an NPO problem](opt-val.md)
 - [Polynomial-time computable functions](../../../../../Computability/MathlibExt/complexity/is-poly-time.md)
 
 ## Sources

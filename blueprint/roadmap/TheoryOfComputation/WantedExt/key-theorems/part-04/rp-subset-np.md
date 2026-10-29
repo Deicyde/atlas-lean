@@ -7,9 +7,9 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.RPSubsetNP.rp_subset_np
 
 # RP is contained in NP
 
-**RP is contained in NP.** Source: S. Arora and B. Barak, Computational Complexity:
-A Modern Approach, 2009, Theorem 7.3 (RP ⊆ NP); M. Sipser, Introduction to the
-Theory of Computation, 3rd ed., 2013, Theorem 10.13.
+**RP is contained in NP.** Every decision problem in the class $\mathsf{RP}$ of
+one-sided-error randomized polynomial-time decision problems also belongs to the class
+$\mathsf{NP}$.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ Theory of Computation, 3rd ed., 2013, Theorem 10.13.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.RPSubsetNPWanted](../../../../../sources/v2/WantedExt.md)
+- S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Theorem 7.3 (RP ⊆ NP); M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Theorem 10.13.

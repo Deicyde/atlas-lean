@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.HewittSavageSequence.IsExchangeableEventWrt.measurableSet
 ---
 
-# Measurable Set
+# Exchangeable events of a measurable sequence are measurable
 
-An exchangeable event with respect to a measurable sequence `X` is itself
-measurable in `Ω`.
+**Exchangeable events of a measurable sequence are measurable.** Let $\Omega$ and $S$ be
+measurable spaces and let $X_0, X_1, \ldots : \Omega \to S$ be measurable maps. If
+$E \subseteq \Omega$ is exchangeable with respect to $(X_n)$, then $E$ is measurable.
 
 ## Depends on
 
-- [Is Exchangeable Event Wrt](is-exchangeable-event-wrt.md)
+- [Event exchangeable with respect to a sequence](is-exchangeable-event-wrt.md)
 
 ## Proof depends on
 
-- [Is Exchangeable Event](is-exchangeable-event.md)
+- [Exchangeable event](is-exchangeable-event.md)
 
 ## Sources
 

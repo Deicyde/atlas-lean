@@ -6,19 +6,21 @@ proof: formalized
 lean: MeasureTheory.Measure.isInfinitelyDivisible_poissonMeasure
 ---
 
-# Is Infinitely Divisible poisson Measure
+# Poisson distributions are infinitely divisible
 
-The Poisson measure is infinitely divisible: `Poisson(r)` is the `n`-fold
-convolution power of `Poisson(r/n)`.
+**Poisson distributions are infinitely divisible.** For every real $r \ge 0$, the Poisson
+distribution with parameter $r$, as a measure on $\mathbb{N}$, is infinitely divisible: for
+every $n \ge 1$ it is the $n$-fold convolution power of the Poisson distribution with parameter
+$r/n$.
 
 ## Depends on
 
-- [Is Infinitely Divisible](is-infinitely-divisible.md)
+- [Infinitely divisible measures](is-infinitely-divisible.md)
 
 ## Proof depends on
 
-- [Conv Pow](conv-pow.md)
-- [Conv Pow succ poisson Measure](conv-pow-succ-poisson-measure.md)
+- [Convolution power of a measure](conv-pow.md)
+- [Convolution powers of a Poisson measure](conv-pow-succ-poisson-measure.md)
 
 ## Sources
 

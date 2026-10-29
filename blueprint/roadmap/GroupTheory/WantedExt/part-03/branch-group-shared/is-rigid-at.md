@@ -13,7 +13,7 @@ when $g$ fixes every vertex of $T$ that is not a descendant of $v$.
 
 ## Depends on
 
-- [Level Transitive Faithful Action](level-transitive-faithful-action.md)
+- [Faithful level-transitive action on a rooted tree](level-transitive-faithful-action.md)
 - [Rooted tree given by levels](rooted-tree.md)
 
 ## Proof depends on

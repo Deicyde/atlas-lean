@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.RegularVariation.leftTail_antitone
 ---
 
-# Left Tail antitone
+# Monotonicity of the left tail
 
-The left tail is antitone in the threshold.
+**Monotonicity of the left tail.** For every finite measure $\mu$ on $\mathbb{R}$, the left tail
+of $\mu$ is antitone in the threshold: if $a \le b$, then
+$\mu((-\infty, -b)) \le \mu((-\infty, -a))$.
 
 ## Depends on
 
-- [Left Tail](left-tail.md)
+- [Left tail of a measure](left-tail.md)
 
 ## Sources
 

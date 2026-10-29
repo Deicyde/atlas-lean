@@ -19,7 +19,7 @@ is a computation of type $C(A)$ related to $\eta(x)$.
 ## Depends on
 
 - [Computation types of the call-by-name CPS translation](cbn-comp.md)
-- [Semantic environments](../../de-bruijn/stlc/denotational/env.md)
+- [Semantic environments for the denotational semantics of STLC](../../de-bruijn/stlc/denotational/env.md)
 - [Simple types](../../de-bruijn/stlc/syntax/ty.md)
 
 ## Proof depends on

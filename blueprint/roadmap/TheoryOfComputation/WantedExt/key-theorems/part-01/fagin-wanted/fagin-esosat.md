@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESOSat
 ---
 
-# Fagin ESOSat
+# Satisfaction of an existential second-order sentence
 
-A graph satisfies an `∃SO` sentence `(k, φ)`: there are `k` second-order relations
-making `φ` true.
+**Satisfaction of an existential second-order sentence.** Let $G$ be a graph with $n > 0$
+vertices, $k$ a natural number and $\varphi$ a first-order formula. Then $G$ satisfies the
+existential second-order sentence $(k, \varphi)$ if there are relations $R_0, \dots, R_{k-1}$,
+each a predicate on finite lists of vertices of $G$, such that $\varphi$ holds in $G$ when
+relation symbol $0$ is interpreted as the edge relation (holding exactly of the lists $[a, b]$
+with an edge from $a$ to $b$), relation symbol $j + 1$ as $R_j$ for each $j < k$, every relation
+symbol above $k$ as the empty relation, and every variable as vertex $0$.
 
 ## Depends on
 
-- [Fagin FO](fagin-fo.md)
-- [Fagin Graph](fagin-graph.md)
+- [First-order formulas over graphs](fagin-fo.md)
+- [Finite graphs as edge tables](fagin-graph.md)
 
 ## Proof depends on
 
-- [Fagin Base](fagin-base.md)
-- [Fagin Eval](fagin-eval.md)
+- [Interpretation of relation symbols in a graph](fagin-base.md)
+- [Evaluation of a first-order formula in a graph](fagin-eval.md)
 
 ## Sources
 

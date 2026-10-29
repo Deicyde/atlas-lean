@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.LegendreTransform.legendreTransform_norm_sq_div_two
 ---
 
-# Legendre Transform norm sq div two
+# The half squared norm is its own Legendre transform
 
-The quadratic is its own conjugate, with an explicitly finite extended-real value.
+**The half squared norm is its own Legendre transform.** Let $d \in \mathbb{N}$ and let
+$q : \mathbb{R}^d \to [-\infty, \infty]$ be $q(y) = \|y\|^2 / 2$, where $\|\cdot\|$ is the
+Euclidean norm. Its Legendre transform $q^*$ satisfies $q^*(x) = \|x\|^2 / 2$ for every
+$x \in \mathbb{R}^d$; in particular every value of $q^*$ is finite.
 
 ## Depends on
 
-- [Legendre Transform](legendre-transform.md)
+- [Legendre transform](legendre-transform.md)
 
 ## Proof depends on
 
-- [Le legendre Transform](le-legendre-transform.md)
-- [Legendre Transform eq i Sup](legendre-transform-eq-i-sup.md)
+- [Fenchel–Young inequality for the Legendre transform](le-legendre-transform.md)
+- [Supremum formula for the Legendre transform](legendre-transform-eq-i-sup.md)
 
 ## Sources
 

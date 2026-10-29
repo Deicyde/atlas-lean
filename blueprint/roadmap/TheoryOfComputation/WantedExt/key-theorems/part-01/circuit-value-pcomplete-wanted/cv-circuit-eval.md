@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.CircuitValuePComplete.cvCircuitEval
 ---
 
-# Cv Circuit Eval
+# Evaluation of an encoded Boolean circuit
 
-Values of all gates of an encoded circuit, in order: the shared typed
-evaluator `circuitEval` on the decoded gates. The typed assignment is the
-`List Bool` assignment restricted to the declared input count.
+**Evaluation of an encoded Boolean circuit.** Let $n$ be a number of inputs, let $C$ be a
+list of gates, each encoded as a (kind, references) pair, and let $a = (a_0, a_1, \dots)$ be a
+list of booleans. The evaluation of $C$ on $a$ is the list of values of all gates, in order, of
+the flat Boolean circuit on $n$ inputs obtained by decoding each pair of $C$, under the
+assignment that sends each input $i < n$ to $a_i$, or to false when $i$ is at least the length
+of $a$.
 
 ## Depends on
 
-- [CVGate](cvgate.md)
+- [Encoded circuit gates](cvgate.md)
 
 ## Proof depends on
 

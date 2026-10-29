@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.IndependentIncrementsMarkovProperty.bmCenteredLaw
 ---
 
-# Bm Centered Law
+# Law of the centered shifted path
 
-The law of the centered shifted path `t ↦ B (s + t) - B s`.
+**Law of the centered shifted path.** Let $(B_t)_{t \ge 0}$ be a real-valued process on a
+measure space $(\Omega, \mu)$ and let $s \ge 0$. This is the pushforward of $\mu$ under the map
+sending $\omega \in \Omega$ to the path $t \mapsto B_{s+t}(\omega) - B_s(\omega)$, a measure on
+the space of functions $\mathbb{R}_{\ge 0} \to \mathbb{R}$ with its product σ-algebra.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bm Centered Shift](bm-centered-shift.md)
+- [Centered shifted path](bm-centered-shift.md)
 
 ## Sources
 

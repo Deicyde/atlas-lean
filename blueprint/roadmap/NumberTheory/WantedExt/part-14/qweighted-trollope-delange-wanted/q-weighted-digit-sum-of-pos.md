@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.qWeightedDigitSum_of_pos
 ---
 
-# Q Weighted Digit Sum of pos
+# Binary recursion for the $q$-weighted digit sum
 
-The binary recursion `s_q(k) = q (k mod 2) + q s_q(⌊k/2⌋)` for `k > 0`, which gives the
-paper's relations `s_q(2j) = q s_q(j)` and `s_q(2j+1) = q s_q(j) + q`.
+**Binary recursion for the $q$-weighted digit sum.** Let $q$ be an element of a commutative
+ring and let $k > 0$ be a natural number. Then the $q$-weighted binary digit sum satisfies
+$s_q(k) = q\,(k \bmod 2) + q\,s_q(\lfloor k/2 \rfloor)$.
+
+This gives the paper's relations $s_q(2j) = q\,s_q(j)$ for $j \ge 1$ and
+$s_q(2j+1) = q\,s_q(j) + q$ for $j \ge 0$.
 
 ## Depends on
 
-- [Q Weighted Digit Sum](q-weighted-digit-sum.md)
+- [The $q$-weighted binary digit sum](q-weighted-digit-sum.md)
 
 ## Sources
 

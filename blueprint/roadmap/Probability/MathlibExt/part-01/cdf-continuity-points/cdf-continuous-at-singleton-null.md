@@ -6,11 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.CdfContinuityPoints.cdf_continuousAt_singleton_null
 ---
 
-# Cdf continuous At singleton null
+# No atom at a continuity point of the cdf
 
-If the cdf of a probability measure `μ` is continuous at `x`, then `μ`
-assigns zero mass to the singleton `{x}`. Continuity of the cdf at `x`
-corresponds to absence of an atom at `x`.
+**No atom at a continuity point of the cdf.** Let $\mu$ be a probability measure on
+$\mathbb{R}$ with cumulative distribution function $F(y) = \mu((-\infty, y])$. If $F$ is
+continuous at a point $x \in \mathbb{R}$, then $\mu(\{x\}) = 0$.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Continuous At cdf iff measure singleton eq zero](continuous-at-cdf-iff-measure-singleton.md)
+- [The cdf is continuous exactly at the non-atoms](continuous-at-cdf-iff-measure-singleton.md)
 
 ## Sources
 

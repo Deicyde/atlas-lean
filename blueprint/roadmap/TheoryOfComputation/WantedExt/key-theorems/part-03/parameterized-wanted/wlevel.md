@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WLevel
 ---
 
-# WLevel
+# The level $\mathrm{W}(t)$ of the W-hierarchy
 
-`W[t]`: the closure under `FPT` reductions of weighted circuit satisfiability for
-circuits of weft at most `t` (and depth at most `d`, for some `d`).
+**The level $\mathrm{W}[t]$ of the W-hierarchy.** For a natural number $t$, $\mathrm{W}[t]$ is
+the set of parameterized problems $P$ for which there is a natural number $d$ such that $P$
+FPT-reduces to weighted circuit satisfiability for circuits of weft at most $t$ and depth at
+most $d$.
 
 ## Depends on
 
-- [Param Problem](param-problem.md)
+- [Parameterized problems](param-problem.md)
 
 ## Proof depends on
 
-- [FPTReduces](fptreduces.md)
-- [Weighted Circuit Sat](weighted-circuit-sat.md)
+- [FPT-reductions](fptreduces.md)
+- [Weighted circuit satisfiability with bounded weft and depth](weighted-circuit-sat.md)
 
 ## Sources
 

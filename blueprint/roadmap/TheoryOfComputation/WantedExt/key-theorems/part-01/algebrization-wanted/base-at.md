@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.KeyTheorems.Algebrization.baseAt
 ---
 
-# Base At
+# Restriction of an oracle to inputs of length $n$
 
-The base function of an oracle pair at length `n`, as a function on `n`-bit
-inputs, read off the base oracle `B` (queries are the bitstrings themselves).
+**Restriction of an oracle to inputs of length $n$.** For a function $B$ from bitstrings to
+booleans and a natural number $n$, the restriction of $B$ to inputs of length $n$ is the function
+on $\{0,1\}^n$ sending $a = (a_0, \dots, a_{n-1})$ to $B(a_0 a_1 \cdots a_{n-1})$, the value of
+$B$ at the bitstring $a$.
 
 ## Depends on
 

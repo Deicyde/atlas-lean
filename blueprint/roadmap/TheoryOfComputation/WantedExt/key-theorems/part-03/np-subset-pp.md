@@ -7,8 +7,8 @@ lean: MetaMathlibExt.Complexity.KeyTheorems.NPSubsetPP.np_subset_pp
 
 # NP is contained in PP
 
-**NP is contained in PP.** Source: J. Gill, "Computational complexity of probabilistic
-Turing machines" (1977).
+**NP is contained in PP.** Every decision problem in NP also belongs to PP, the class of
+decision problems decided in probabilistic polynomial time with unbounded error.
 
 ## Depends on
 
@@ -20,3 +20,4 @@ Turing machines" (1977).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.KeyTheorems.NPSubsetPPWanted](../../../../../sources/v2/WantedExt.md)
+- J. Gill, "Computational complexity of probabilistic Turing machines" (1977).

@@ -6,10 +6,13 @@ proof: formalized
 lean: isDedekindDomain_tfae_contain_isDivide_principalProduct
 ---
 
-# Is Dedekind Domain tfae contain is Divide principal Product
+# Equivalent characterizations of Dedekind domains
 
-Theorem 3.23, conditions (1), (5), and the corrected nonvacuous form
-of (6): the three Dedekind-domain characterizations are equivalent.
+**Equivalent characterizations of Dedekind domains.** For an integral domain $A$, the
+following are equivalent: (1) $A$ is a Dedekind domain; (2) $A$ is Noetherian and, for all
+ideals $I$ and $J$ of $A$, $I$ divides $J$ if and only if $J \subseteq I$; (3) for every
+nonzero ideal $I$ of $A$ there is an ideal $J$ of $A$ such that $IJ$ is a nonzero principal
+ideal.
 
 ## Depends on
 
@@ -17,9 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dedekind Domain iff contain is Divide](is-dedekind-domain-iff-contain-is-divide.md)
-- [Is Dedekind Domain iff principal Product](is-dedekind-domain-iff-principal-product.md)
+- [Dedekind domains as the Noetherian domains where to contain is to divide](is-dedekind-domain-iff-contain-is-divide.md)
+- [Dedekind domains via principal products](is-dedekind-domain-iff-principal-product.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.Characterizations](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Theorem 3.23, conditions (1), (5) and (6), with (6) corrected by the two nonzero qualifiers.

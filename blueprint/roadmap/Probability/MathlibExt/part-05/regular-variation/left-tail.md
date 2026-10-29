@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.RegularVariation.leftTail
 ---
 
-# Left Tail
+# Left tail of a measure
 
-The real projection of the strict left tail `μ(Iio(-x))`, with mass interpretation
-for finite measures.
+**Left tail of a measure.** For a measure $\mu$ on $\mathbb{R}$ and a real $x$, the left tail of
+$\mu$ at $x$ is the real number $\mu((-\infty, -x))$, where an infinite value is sent to $0$.
+
+For a finite measure it is the mass of the strict left tail $(-\infty, -x)$.
 
 ## Depends on
 
