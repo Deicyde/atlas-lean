@@ -8,7 +8,8 @@ from lint_articles.py and fixes the article list; INDEX_JSONL (a lint of the
 whole roadmap, default LINT_JSONL) resolves the names a signature mentions,
 which can belong to other subjects. Each packet records where the
 article's statement comes from, so a fix can be written back to that source:
-the declaration's docstring.
+the declaration's docstring, or for a declaration without one, the line a new
+docstring goes above.
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ V2_DECLARATION = re.compile(
 )
 # namespace, section, mutual and end lines, which open and close the scopes declaration names live in.
 SCOPE = re.compile(r"(?:(?:noncomputable|public|private)\s+|@\[[^\]]*\]\s*)*(namespace|section|mutual|end)\b\s*([^\s-]*)")
+MODIFIERS = re.compile(r"(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s*)+")
 SOURCE_LINK = re.compile(r"^- \[(?P<library>MathlibExt|CSLibExt|WantedExt), (?P<module>[\w.]+)\]", re.M)
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 SIGNATURE_LINES = 40
@@ -46,6 +48,47 @@ def docstring_span(lines: list[str], number: int) -> tuple[int, int] | None:
     while start >= 0 and "/-" not in lines[start]:
         start -= 1
     return (start, end) if start >= 0 and lines[start].lstrip().startswith("/--") else None
+
+
+def docstring_insert_line(lines: list[str], number: int) -> int | None:
+    """0-based line a new docstring goes above, for the declaration at `number` that has none.
+
+    That is the first of the one-line attributes directly above the
+    declaration, or the declaration itself. Above it, blank lines and comments
+    are skipped; a docstring among them, or one this module cannot take apart,
+    means no insertion. The code line beyond them must end the previous
+    command: not an attribute or a modifier the docstring would have to
+    precede, not a line ending in `]` (it could close a multi-line attribute)
+    unless a blank line follows it, and not code directly above unless it ends
+    in `in` (such as `omit [h] in`, which scopes the declaration).
+    """
+    top = number
+    while top > 0 and re.fullmatch(r"@\[[^\]]*\]", lines[top - 1].strip()):
+        top -= 1
+    k, blank, comment = top - 1, False, False
+    while k >= 0:
+        line = lines[k].strip()
+        if not line:
+            blank = True
+        elif line.startswith("--"):
+            comment = True
+        elif line.endswith("-/"):
+            start = k
+            while start >= 0 and "/-" not in lines[start]:
+                start -= 1
+            opener = lines[start].lstrip() if start >= 0 else ""
+            if not opener.startswith("/-") or opener.startswith("/--"):
+                return None
+            k, comment = start, True
+        else:
+            break
+        k -= 1
+    if k < 0:
+        return top
+    line = lines[k].strip()
+    if line.startswith("@[") or MODIFIERS.fullmatch(line) or (line.endswith("]") and not blank):
+        return None
+    return top if blank or comment or re.search(r"\bin$", line) else None
 
 
 def signature(lines: list[str], number: int) -> str:
@@ -191,6 +234,11 @@ def main() -> int:
             if span:
                 packet["docstring_lines"] = [span[0] + 1, span[1] + 1]
                 packet["docstring"] = "\n".join(lines[span[0] : span[1] + 1])
+            else:
+                insert = docstring_insert_line(lines, number)
+                if insert is not None:
+                    packet["docstring_insert_line"] = insert + 1
+                    packet["docstring_insert_before"] = lines[insert]
         packets.append(packet)
     mark_statement_edges(packets, Path(sys.argv[4]) if len(sys.argv) > 4 else lint_path)
     out_path.write_text("".join(json.dumps(packet) + "\n" for packet in packets))

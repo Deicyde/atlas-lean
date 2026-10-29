@@ -127,6 +127,7 @@ Audit each of the {len(batch["packets"])} articles below. For each one:
 2. Read the Lean declaration at lean_file:lean_line with its docstring, and the definitions of every project notion its statement uses (find them with grep under {repo}; read their docstrings and bodies).
 3. Score readback, source fidelity, presentation and edges, check status, assign a role, and record findings.
 4. Propose a fix by the rules in AUDIT.md. A docstring fix must state exactly what the Lean states.
+A packet with docstring_insert_line instead of docstring_lines is a declaration without a docstring; a docstring fix for it is added above that line, so write the complete new docstring.
 
 Return one record per article, in the order given, with article_id and article copied from its packet.
 
@@ -145,6 +146,7 @@ Read {AUDIT_DIR}/AUDIT.md (sections "Fixes" and "Verification") first.
 Additional rules: do not try to modify any file, and do not run lean, lake or pytest at all.
 
 Your job is to refute each proposed fix. For each one, read the Lean declaration (lean_file:lean_line) and every definition it uses, then compare the proposed text with the Lean statement term by term: quantifiers and their order, every hypothesis, strict against weak inequalities, the domain and codomain (for example ℝ against ℝ≥0∞, ℕ against ℤ), typeclass assumptions (Field against CommRing), and the conclusion. Check that every symbol is introduced before use, the TeX is valid inside $...$, no line of $...$ math that continues onto a new line starts with "+ ", "- ", "* ", ">", "#" or a number followed by "." or ")" (Markdown would start a list item, quote or heading there), the title claims no more than the statement, every original Source: paragraph is preserved byte for byte as the last paragraph, nothing contains -/ or /- inside the docstring, and no line exceeds 100 columns.
+A packet with docstring_insert_line instead of docstring_lines is a declaration without a docstring: the proposed docstring is added above that line, and there is no earlier Source: paragraph to keep.
 Accept only when you find no difference; an accepting verdict lists no problems and no corrected docstring. When you reject, list each problem concretely; if the fix is repairable, also return the corrected docstring as corrected_docstring.
 Return exactly one verdict per proposed fix, with its article_id.
 

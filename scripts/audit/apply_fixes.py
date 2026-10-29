@@ -7,8 +7,11 @@ RESULTS_JSON is run_audit.py's results.json; a fix is applied only if it is in
 a batch's "accepted" list, which needs two verifiers that did not write it.
 Docstring fixes replace the docstring lines recorded in the packet, after
 checking that those lines are one /-- ... -/ comment and that the file still
-holds them unchanged. Every audited article
-gets a ledger line with the hash of the packet it was judged on.
+holds them unchanged. For a declaration without a docstring, the fix goes in
+above the line the packet names, after checking that line is unchanged. An
+edit that would change anything outside docstrings is skipped.
+Every audited article gets a ledger line with the hash of the packet it was
+judged on; "applied" says whether its fix was written.
 """
 
 from __future__ import annotations
@@ -90,7 +93,8 @@ def comment_problem(text: str) -> str | None:
     body = text.rstrip()[3:-2]
     if "-/" in body:
         return "contains -/ before the end"
-    if "/-" in body:
+    # One character further, so a body ending in "/" (which makes "/-/") counts.
+    if "/-" in text.rstrip()[3:-1]:
         return "contains /-, which opens a nested comment"
     return None
 
@@ -106,6 +110,30 @@ def docstring_problem(text: str, original: str = "") -> str | None:
     if math_break(text) is not None:
         return "a line of $...$ math starts a Markdown list item, quote or heading"
     return None
+
+
+def code_lines(text: str) -> list[str]:
+    """The non-blank lines of Lean source outside /-- ... -/ comments, which nest."""
+    out, i = [], 0
+    while True:
+        start = text.find("/--", i)
+        if start < 0:
+            break
+        out.append(text[i:start])
+        depth, i = 1, start + 3
+        while i < len(text) and depth:
+            if text.startswith("/-", i):
+                depth, i = depth + 1, i + 2
+            elif text.startswith("-/", i):
+                depth, i = depth - 1, i + 2
+            else:
+                i += 1
+    out.append(text[i:])
+    return [line.rstrip() for line in "".join(out).split("\n") if line.strip()]
+
+
+def edit_line(packet: dict) -> int:
+    return packet["docstring_lines"][0] if "docstring_lines" in packet else packet["docstring_insert_line"]
 
 
 def main() -> int:
@@ -128,11 +156,12 @@ def main() -> int:
             if fix and fix["kind"] == "docstring":
                 docstring = rewrap(fix.get("docstring") or "")
                 problem = docstring_problem(docstring, packet.get("docstring") or "")
-                if "docstring_lines" not in packet:
-                    problem = problem or "packet has no docstring span"
-                elif comment_problem(packet["docstring"].strip()):
-                    # Replacing a span of several comments would delete the code between them.
-                    problem = problem or "the packet's docstring span is not one docstring"
+                if "docstring_lines" in packet:
+                    if comment_problem(packet["docstring"].strip()):
+                        # Replacing a span of several comments would delete the code between them.
+                        problem = problem or "the packet's docstring span is not one docstring"
+                elif "docstring_insert_line" not in packet:
+                    problem = problem or "packet has no docstring span or insertion point"
                 if problem:
                     skipped.append((node["article"], problem))
                 else:
@@ -153,24 +182,47 @@ def main() -> int:
                     "findings": node["findings"],
                 }
             )
-    changed = 0
+    rows = {row["article_id"]: row for row in ledger}
+
+    def skip(packet: dict, reason: str) -> None:
+        skipped.append((packet["article"], reason))
+        rows[packet["article_id"]]["applied"] = None
+
+    changed = added = files = 0
     for lean_file, edits in by_file.items():
         path = repo / lean_file
         lines = path.read_text().split("\n")
-        # Bottom-up, so earlier spans keep their line numbers.
-        for packet, docstring in sorted(edits, key=lambda e: -e[0]["docstring_lines"][0]):
-            start, end = packet["docstring_lines"]
-            if "\n".join(lines[start - 1 : end]) != packet["docstring"]:
-                skipped.append((packet["article"], "docstring changed since the packet was built"))
+        code = code_lines("\n".join(lines))
+        done = []
+        # Bottom-up, so earlier edits keep their line numbers.
+        for packet, docstring in sorted(edits, key=lambda e: -edit_line(e[0])):
+            if "docstring_lines" in packet:
+                start, end = packet["docstring_lines"]
+                if "\n".join(lines[start - 1 : end]) != packet["docstring"]:
+                    skip(packet, "docstring changed since the packet was built")
+                    continue
+                edited = lines[: start - 1] + docstring.split("\n") + lines[end:]
+            else:
+                line = packet["docstring_insert_line"]
+                if lines[line - 1] != packet["docstring_insert_before"]:
+                    skip(packet, "the declaration moved since the packet was built")
+                    continue
+                edited = lines[: line - 1] + docstring.split("\n") + lines[line - 1 :]
+            if code_lines("\n".join(edited)) != code:
+                skip(packet, "the edit would change code")
                 continue
-            lines[start - 1 : end] = docstring.split("\n")
-            changed += 1
-        if not dry:
-            path.write_text("\n".join(lines))
+            lines = edited
+            done.append(packet)
+        after = "\n".join(lines)
+        changed += len(done)
+        added += sum("docstring_lines" not in packet for packet in done)
+        files += bool(done)
+        if not dry and done:
+            path.write_text(after)
     if not dry:
         with ledger_path.open("a") as handle:
             handle.writelines(json.dumps(row) + "\n" for row in ledger)
-    print(f"{len(ledger)} audited, {changed} docstrings replaced in {len(by_file)} files, "
+    print(f"{len(ledger)} audited, {changed} docstrings written ({added} new) in {files} files, "
           f"{len(skipped)} skipped")
     for article, reason in skipped[:30]:
         print(f"  skipped {article}: {reason}")

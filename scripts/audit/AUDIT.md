@@ -34,8 +34,9 @@ import. Upstream fixes go to both, or through formal-math.
 
 `build_packets.py` writes one JSON object per article: the article path and
 frontmatter, the lint flags, the linked dependencies, the Lean file, line,
-signature and docstring, and `signature_mentions` (articles whose names occur
-in the signature).
+signature and docstring (for a declaration without one, `docstring_insert_line`,
+the line a new docstring goes above), and `signature_mentions` (articles whose
+names occur in the signature).
 
 ## Checks and scores
 
@@ -76,7 +77,9 @@ at least 4, status passes, and source fidelity is not 2 or below.
 A clean node gets `none`. Do not rewrite text that already passes every check;
 a wording preference is not a defect, and every rewrite costs an upstream review.
 
-- **v2 docstring.** Propose the complete replacement docstring:
+- **v2 docstring.** Propose the complete docstring. It replaces the
+  declaration's docstring, or, when the declaration has none
+  (`docstring_insert_line` in the packet), it is added above it:
   1. Start with `**Title.**` and continue with the statement in the same
      paragraph.
   2. State exactly what the Lean states. Name objects by their mathematical
