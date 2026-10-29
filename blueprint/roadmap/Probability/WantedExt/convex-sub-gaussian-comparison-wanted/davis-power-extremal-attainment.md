@@ -18,9 +18,9 @@ with $0 < c < c_0$, $X$ is not dominated by $cG$ in the convex order.
 
 ## Depends on
 
-- [Convex domination](../../MathlibExt/part-01/convex-sub-gaussian-comparison/convex-dominated.md)
-- [Random variables with a 1-sub-Gaussian tail](../../MathlibExt/part-01/convex-sub-gaussian-comparison/is-one-sub-gaussian-tail.md)
-- [Saturating the Gaussian tail envelope](../../MathlibExt/part-01/convex-sub-gaussian-comparison/saturates-gaussian-tail.md)
+- [Convex domination](../../MathlibExt/part-02/convex-sub-gaussian-comparison/convex-dominated.md)
+- [Random variables with a 1-sub-Gaussian tail](../../MathlibExt/part-02/convex-sub-gaussian-comparison/is-one-sub-gaussian-tail.md)
+- [Saturating the Gaussian tail envelope](../../MathlibExt/part-02/convex-sub-gaussian-comparison/saturates-gaussian-tail.md)
 - [The Davis–Power constant $c_0$](davis-power-c0.md)
 
 ## Sources

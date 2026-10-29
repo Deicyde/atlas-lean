@@ -17,12 +17,12 @@ elsewhere.
 
 ## Depends on
 
-- [Prime factorization isomorphism for fractional ideals](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
+- [Prime factorization isomorphism for fractional ideals](../../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
 - [A prime as an invertible fractional ideal](prime-unit-fractional-ideal.md)
 
 ## Proof depends on
 
-- [Exponent function of a prime ideal](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv-prime-self.md)
+- [Exponent function of a prime ideal](../../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/factorization-equiv/factorization-mul-equiv-prime-self.md)
 
 ## Sources
 

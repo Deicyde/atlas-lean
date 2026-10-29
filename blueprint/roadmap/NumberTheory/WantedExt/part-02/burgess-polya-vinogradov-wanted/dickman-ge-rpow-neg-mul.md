@@ -12,7 +12,7 @@ function. Then $\rho(x) \ge x^{-1.42 x}$ for every real $x \ge 1$.
 
 ## Depends on
 
-- [Dickman–de Bruijn functions](../../../../Analysis/MathlibExt/part-01/special-functions/part-01/dickman-de-bruijn/is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](../../../../Analysis/MathlibExt/part-02/special-functions/part-01/dickman-de-bruijn/is-dickman-de-bruijn.md)
 
 ## Sources
 

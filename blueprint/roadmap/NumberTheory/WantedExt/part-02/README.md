@@ -3,7 +3,7 @@ article_id: af_dca5afc09f35126a89b7f337
 navigation: transparent
 ---
 
-# Benelux Pairs to Chebyshev Sign Change
+# Benelux Pairs to Central Binom Product Equation
 
 - [Benelux Pairs](benelux-pairs-wanted/README.md)
 - [Bernoulli Derivative Denominator](bernoulli-derivative-denominator-wanted/README.md)
@@ -16,6 +16,7 @@ navigation: transparent
 - [Bonse Sequence](bonse-sequence-wanted/README.md)
 - [Bounded Multiplicative Functions](bounded-multiplicative-functions-wanted/README.md)
 - [Brocard Ramanujan Power Free](brocard-ramanujan-power-free-wanted/README.md)
+- [Brocard Ramanujan Tribonacci](brocard-ramanujan-tribonacci-wanted/README.md)
 - [Buchi Square Sequence Bound](buchi-square-sequence-bound-wanted/README.md)
 - [Burgess Polya Vinogradov](burgess-polya-vinogradov-wanted/README.md)
 - [CRecursive Modular Representations](crecursive-modular-representations-wanted/README.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Carmichael Prime Omega](carmichael-prime-omega-wanted/README.md)
 - [Ceiling Hermite Identity](ceiling-hermite-identity-wanted/README.md)
 - [Central Binom Product Equation](central-binom-product-equation-wanted/README.md)
-- [Chebyshev Sign Change](chebyshev-sign-change-wanted/README.md)

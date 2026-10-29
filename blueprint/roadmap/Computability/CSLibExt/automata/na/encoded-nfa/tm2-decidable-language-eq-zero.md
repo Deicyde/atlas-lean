@@ -30,9 +30,9 @@ empty is decidable by a multi-stack machine. This is the problem $E_{\mathrm{NFA
 - [Reachable states of an encoded NFA](reachable.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 - [The ε-NFA of an encoded NFA](to-nfa.md)
-- [Predicates with a primitive recursive decision procedure are computable](../../../decidability/part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Duplicate removal for lists of natural numbers](../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../../decidability/part-02/primrec-list/computable-pred-of-primrec-bool.md)
+- [Duplicate removal for lists of natural numbers](../../../decidability/part-02/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-02/primrec-list/mem-b.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources

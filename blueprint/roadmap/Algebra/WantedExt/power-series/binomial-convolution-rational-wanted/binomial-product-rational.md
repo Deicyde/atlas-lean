@@ -22,7 +22,7 @@ Here $\deg 0 = -\infty$, so $T = 0$ when $mn = 0$.
 
 ## Depends on
 
-- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
+- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/part-01/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

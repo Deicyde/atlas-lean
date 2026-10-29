@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [The capped Gaussian tail envelope](../../MathlibExt/part-01/convex-sub-gaussian-comparison/gaussian-tail-envelope.md)
+- [The capped Gaussian tail envelope](../../MathlibExt/part-02/convex-sub-gaussian-comparison/gaussian-tail-envelope.md)
 
 ## Sources
 

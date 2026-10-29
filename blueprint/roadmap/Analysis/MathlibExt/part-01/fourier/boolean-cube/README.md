@@ -36,3 +36,22 @@ navigation: module
 - [Multilinear extension of the AND function](multilinear-extension-all-true.md)
 - [The two-bit AND has Boolean degree two](boolean-degree-all-true-two.md)
 - [Fourier degree is at most Boolean degree](multilinear-degree-le-indicator.md)
+
+## Finset Fourier
+
+- [Fourier Char](fourier-char.md)
+- [Fourier Coeff](fourier-coeff.md)
+- [Card bool Cube](card-bool-cube.md)
+- [Powerset Equiv Indicator](powerset-equiv-indicator.md)
+- [Powerset Equiv Bool Cube](powerset-equiv-bool-cube.md)
+- [Powerset Equiv Bool Cube apply](powerset-equiv-bool-cube-apply.md)
+- [Reindex Finset](reindex-finset.md)
+- [Decode Bool Cube](decode-bool-cube.md)
+- [Decode encode](decode-encode.md)
+- [Fourier Char eq cube Chi](fourier-char-eq-cube-chi.md)
+- [Fourier Coeff eq bool Fourier Coeff](fourier-coeff-eq-bool-fourier-coeff.md)
+
+## Fourier Laws
+
+- [Fourier inversion](fourier-inversion.md)
+- [Fourier plancherel](fourier-plancherel.md)

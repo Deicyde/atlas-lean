@@ -20,11 +20,11 @@ $c = 4/(7m)$ for an integer $m \ge 1$ it is the paper's $A_{n,m}$.
 
 ## Depends on
 
-- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Proof depends on
 
-- [Lower-branch preimages of the Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/exists-unique-lambert-map-lower-preimage.md)
+- [Lower-branch preimages of the Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/exists-unique-lambert-map-lower-preimage.md)
 
 ## Sources
 

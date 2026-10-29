@@ -24,7 +24,7 @@ natural-number encoding $n_P$, $g(n_P) = 1$ exactly when $P$ has a PCP solution.
 ## Proof depends on
 
 - [PCP over a finite alphabet many-one reduces to PCP over the binary alphabet](many-one-reducible-pcp-bool.md)
-- [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
+- [The Post correspondence problem is undecidable](../../part-02/pcpundecidable/exists-not-tm2-decidable-pcp.md)
 - [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources

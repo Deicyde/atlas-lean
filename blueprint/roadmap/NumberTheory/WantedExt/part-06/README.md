@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdos Problem818 to Exponential Diophantine
+# Erdos Problem728 to Even Pseudoprime
 
+- [Erdos Problem728](erdos-problem728-wanted/README.md)
+- [Erdos Problem729](erdos-problem729-wanted/README.md)
 - [Erdos Problem818](erdos-problem818-wanted/README.md)
 - [Erdos Problem822](erdos-problem822-wanted/README.md)
 - [Erdos Problem825](erdos-problem825-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdos Supersingular Primes](erdos-supersingular-primes-wanted/README.md)
 - [Euler Polynomial Formulas](euler-polynomial-formulas-wanted/README.md)
 - [Even Pseudoprime](even-pseudoprime-wanted/README.md)
-- [Even Pseudoprimes](even-pseudoprimes-wanted/README.md)
-- [Exponential Diophantine](exponential-diophantine-wanted/README.md)

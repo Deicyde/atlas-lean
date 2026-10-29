@@ -27,7 +27,7 @@ article_id: af_0e14d75e79c3aa8f6b6cd251
 - [Roots-of-unity partial fraction identity](part-01/pow-div-one-sub-pow-eq-sum.md)
 - [Cyclic Pattern Avoiding Stacks](part-01/cyclic-pattern-avoiding-stacks-wanted/README.md)
 
-## [Degenerate Harmonic Riordan to Incomplete Binomial Harmonic Sums](part-02/README.md)
+## [Degenerate Harmonic Riordan to Identity Product Necklace](part-02/README.md)
 
 - [Degenerate Harmonic Riordan](part-02/degenerate-harmonic-riordan-wanted/README.md)
 - [Delannoy Constructions](part-02/delannoy-constructions-wanted/README.md)
@@ -48,10 +48,11 @@ article_id: af_0e14d75e79c3aa8f6b6cd251
 - [Hyperbolic Pascal Alternating Sums](part-02/hyperbolic-pascal-alternating-sums-wanted/README.md)
 - [Hypersequence Elementary Symmetric](part-02/hypersequence-elementary-symmetric-wanted/README.md)
 - [Hypersequence Weighted Sums](part-02/hypersequence-weighted-sums-wanted/README.md)
-- [Incomplete Binomial Harmonic Sums](part-02/incomplete-binomial-harmonic-sums-wanted/README.md)
+- [Identity Product Necklace](part-02/identity-product-necklace-wanted/README.md)
 
-## [Index Factorization Multisection to Near Hook Tableaux Lattice Paths](part-03/README.md)
+## [Incomplete Binomial Harmonic Sums to NColor Compositions](part-03/README.md)
 
+- [Incomplete Binomial Harmonic Sums](part-03/incomplete-binomial-harmonic-sums-wanted/README.md)
 - [Index Factorization Multisection](part-03/index-factorization-multisection-wanted/README.md)
 - [Inversion Sequence Pattern Sets](part-03/inversion-sequence-pattern-sets-wanted/README.md)
 - [Jensen Polynomials Wright Circle](part-03/jensen-polynomials-wright-circle-wanted/README.md)
@@ -71,10 +72,10 @@ article_id: af_0e14d75e79c3aa8f6b6cd251
 - [Motzkin Alternating Sums](part-03/motzkin-alternating-sums-wanted/README.md)
 - [Motzkin Humps Young Tableaux](part-03/motzkin-humps-young-tableaux-wanted/README.md)
 - [NColor Compositions](part-03/ncolor-compositions-wanted/README.md)
-- [Near Hook Tableaux Lattice Paths](part-03/near-hook-tableaux-lattice-paths-wanted/README.md)
 
-## [Nonattacking Bishops Anassas to Rigged Horse Numbers](part-04/README.md)
+## [Near Hook Tableaux Lattice Paths to Restricted Combinations](part-04/README.md)
 
+- [Near Hook Tableaux Lattice Paths](part-04/near-hook-tableaux-lattice-paths-wanted/README.md)
 - [Nonattacking Bishops Anassas](part-04/nonattacking-bishops-anassas-wanted/README.md)
 - [Nondecreasing Dyck Subwords](part-04/nondecreasing-dyck-subwords-wanted/README.md)
 - [Odd Fibonacci](part-04/odd-fibonacci-wanted/README.md)
@@ -94,10 +95,10 @@ article_id: af_0e14d75e79c3aa8f6b6cd251
 - [Reduced Unicellular Hypermonopoles](part-04/reduced-unicellular-hypermonopoles-wanted/README.md)
 - [Regular Overpartition Density](part-04/regular-overpartition-density-wanted/README.md)
 - [Restricted Combinations](part-04/restricted-combinations-wanted/README.md)
-- [Rigged Horse Numbers](part-04/rigged-horse-numbers-wanted/README.md)
 
-## [Sabar Triangle to Two Pattern Avoidance Counts](part-05/README.md)
+## [Rigged Horse Numbers to Two Pascal Triangle](part-05/README.md)
 
+- [Rigged Horse Numbers](part-05/rigged-horse-numbers-wanted/README.md)
 - [Sabar Triangle](part-05/sabar-triangle-wanted/README.md)
 - [Schreier Type Multisets](part-05/schreier-type-multisets-wanted/README.md)
 - [Schreier Type Sets](part-05/schreier-type-sets-wanted/README.md)
@@ -117,10 +118,10 @@ article_id: af_0e14d75e79c3aa8f6b6cd251
 - [Toeplitz Hessenberg Fuss Catalan](part-05/toeplitz-hessenberg-fuss-catalan-wanted/README.md)
 - [Tribonacci Wythoff](part-05/tribonacci-wythoff-wanted/README.md)
 - [Two Pascal Triangle](part-05/two-pascal-triangle-wanted/README.md)
-- [Two Pattern Avoidance Counts](part-05/two-pattern-avoidance-counts-wanted/README.md)
 
-## [Unate Monotone Boolean to Word Pair Intersections](part-06/README.md)
+## [Two Pattern Avoidance Counts to Word Pair Intersections](part-06/README.md)
 
+- [Two Pattern Avoidance Counts](part-06/two-pattern-avoidance-counts-wanted/README.md)
 - [Unate Monotone Boolean](part-06/unate-monotone-boolean-wanted/README.md)
 - [Walnut Oeis Problems](part-06/walnut-oeis-problems-wanted/README.md)
 - [Weighted File Placements](part-06/weighted-file-placements-wanted/README.md)

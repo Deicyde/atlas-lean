@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Jacobi Zero Sum Constants to Leonardo PTilings
+# Incomplete Exponential Sum to Lcm Dense Sets
 
+- [Incomplete Exponential Sum](incomplete-exponential-sum-wanted/README.md)
+- [Integer Complexity](integer-complexity-wanted/README.md)
 - [Jacobi Zero Sum Constants](jacobi-zero-sum-constants-wanted/README.md)
 - [Jakobczyk Fermat](jakobczyk-fermat-wanted/README.md)
 - [Josephus Base Three Halves](josephus-base-three-halves-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Large Zsigmondy Primes](large-zsigmondy-primes-wanted/README.md)
 - [Laurent Series Bounded Partial Quotients](laurent-series-bounded-partial-quotients-wanted/README.md)
 - [Lcm Dense Sets](lcm-dense-sets-wanted/README.md)
-- [Lemoine's conjecture up to $10^{13}$](lemoine-of-le-ten-pow-thirteen.md)
-- [Leonardo PTilings](leonardo-ptilings-wanted/README.md)

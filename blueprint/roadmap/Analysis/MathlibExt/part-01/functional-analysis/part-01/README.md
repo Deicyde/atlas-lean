@@ -3,7 +3,7 @@ article_id: af_60862719f608e4d4fa84bd65
 navigation: transparent
 ---
 
-# Existence of Banach limits to Milman–Pettis theorem
+# Existence of Banach limits to Kernel Operator
 
 - [Existence of Banach limits](banach-limit.md)
 - [Banach–Saks theorem for uniformly convex spaces](banach-saks.md)
@@ -12,16 +12,16 @@ navigation: transparent
 - [Bartle–Graves theorem](bartle-graves.md)
 - [Bishop–Phelps theorem](bishop-phelps.md)
 - [Browder–Göhde–Kirk fixed point theorem](browder-goehde-kirk-fixed-point.md)
+- [Cesaro Operator](cesaro-operator/README.md)
+- [Compact Operator Eigenvalues](compact-operator-eigenvalues/README.md)
+- [Compact Operator Not Unit](compact-operator-not-unit/README.md)
+- [Countable Basis Finite Dimensional](countable-basis-finite-dimensional/README.md)
 - [Daugavet's theorem for compact operators](daugavet.md)
+- [Discontinuous Linear Functional](discontinuous-linear-functional/README.md)
 - [Dunford–Pettis weak compactness criterion](dunford-pettis-compactness.md)
 - [Eberlein–Šmulian theorem](eberlein-smulian.md)
 - [Banach–Mazur embedding theorem](banach-mazur-embedding.md)
 - [Grothendieck's inequality (real case)](grothendieck-inequality-real.md)
+- [One-step Hahn–Banach extension](hahn-banach-one-step-extension-bound.md)
 - [Josefson–Nissenzweig theorem](josefson-nissenzweig.md)
-- [Krein–Rutman theorem for $C(K)$](krein-rutman.md)
-- [Krein–Smulian theorem](krein-smulian.md)
-- [Separable real Banach spaces are quotients of ℓ¹](separable-real-banach-quotient-l1.md)
-- [Principle of local reflexivity](principle-of-local-reflexivity.md)
-- [Lomonosov's invariant subspace theorem](lomonosov-invariant-subspace.md)
-- [Markov–Kakutani fixed-point theorem](markov-kakutani-common-fixed-point.md)
-- [Milman–Pettis theorem](milman-pettis.md)
+- [Kernel Operator](kernel-operator/README.md)

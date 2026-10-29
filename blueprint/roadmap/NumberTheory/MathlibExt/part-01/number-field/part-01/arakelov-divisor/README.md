@@ -1,36 +1,7 @@
 ---
 article_id: af_2905a1b0a8b0c3ff6591f3d0
-navigation: module
 ---
 
 # Arakelov Divisor
 
-## Fractional Ideal
-
-- [Invertible fractional ideals have nonzero absolute norm](abs-norm-units-ne-zero.md)
-- [Invertible fractional ideals have positive absolute norm](abs-norm-units-pos.md)
-
-## Number Field
-
-- [Arakelov divisor](arakelov-divisor.md)
-- [Archimedean factor](archimedean-factor.md)
-- [Archimedean factor as a real number](archimedean-factor-coe.md)
-- [Ideal norm of an Arakelov divisor](ideal-norm.md)
-- [Real value of the ideal norm](ideal-norm-coe.md)
-- [Archimedean factor homomorphism](arch-hom.md)
-- [Ideal norm homomorphism](ideal-hom.md)
-- [Size of an Arakelov divisor](size-hom.md)
-- [Size as a quotient of homomorphisms](size-hom-apply.md)
-- [Explicit formula for the size of an Arakelov divisor](size-hom-coe.md)
-- [Section set of an Arakelov divisor](section-set.md)
-- [Membership in the section set](mem-section-set.md)
-- [Finiteness of section sets](section-set-finite.md)
-- [Archimedean part of a principal divisor](principal-arch.md)
-- [Principal Arakelov divisor](principal-divisor.md)
-- [Infinite component of a principal divisor](coe-principal-divisor-snd.md)
-- [Finite component of a principal divisor](coe-principal-divisor-fst.md)
-- [Principal divisor homomorphism](principal-hom.md)
-- [Subgroup of principal Arakelov divisors](principal-subgroup.md)
-- [Degree-zero Arakelov divisors](degree-zero.md)
-- [Principal Arakelov divisors have size one](size-principal.md)
-- [Principal Arakelov divisors have degree zero](principal-subgroup-le-degree-zero.md)
+- [Nonzero Section](exists-ne-zero-mem-section-set-of-size-g.md)

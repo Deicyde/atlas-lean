@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.Complexity.KeyTheorems.PPSubsetPSPACE.pp_subset_pspace
+---
+
+# PP is contained in PSPACE
+
+**PP is contained in PSPACE.** Source: J. Gill, "Computational complexity of probabilistic
+Turing machines" (1977); S. Arora and B. Barak, Computational Complexity: A Modern
+Approach, 2009 (PP ⊆ PSPACE).
+
+## Depends on
+
+- [PP](../../../../Computability/CSLibExt/complexity/classes/pp.md)
+- [PSPACE](../../../../Computability/CSLibExt/complexity/classes/pspace.md)
+- [Complexity classes](../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../Computability/MathlibExt/complexity/decision-problem.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.KeyTheorems.PPSubsetPSPACEWanted](../../../../../sources/v2/WantedExt.md)

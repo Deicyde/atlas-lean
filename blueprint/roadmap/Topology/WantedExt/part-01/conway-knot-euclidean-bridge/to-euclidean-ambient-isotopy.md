@@ -22,7 +22,7 @@ with the same forward family $H$ and inverse family $G$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Euclidean space $\mathbb{R}^3$](../conway-knot-shared/r3.md)
 
 ## Sources

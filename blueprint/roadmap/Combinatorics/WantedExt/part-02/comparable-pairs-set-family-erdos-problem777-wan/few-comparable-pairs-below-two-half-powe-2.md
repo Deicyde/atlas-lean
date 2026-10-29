@@ -1,0 +1,33 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower_holds
+---
+
+# Few Comparable Pairs Below Two Half Power holds
+
+Resolved true: erdosproblems.com/777 states that an affirmative answer follows from Theorem 1.4
+(families of about `k 2^{n/k}` sets with nearly `(1 - 1/k) C(m, 2)` comparable pairs are close to a
+tower of `k` cubes) and Corollary 1.5 (towers of `k` cubes are the unique extremal families at `m =
+k 2^{n/k} - k + 1`) of Alon, Das, Glebov and Sudakov. The bound is sharp: for even `n` and `m =
+2^{n/2 + 1}` two stacked subcubes give `2^n` comparable pairs (erdosproblems.com/777). Source: T. F.
+Bloom, Erdős Problems, Problem #777, https://www.erdosproblems.com/777 (status SOLVED); resolution:
+N. Alon and P. Frankl, The maximum number of disjoint pairs in a family of subsets, Graphs Combin. 1
+(1985), 13-21; N. Alon, S. Das, R. Glebov and B. Sudakov, Comparable pairs in families of sets, J.
+Combin. Theory Ser. B (2015), 164-185, arXiv:1411.4196, Alon-Frankl Theorem 1.4: for every k ≥ 1
+there is β(k) > 0 such that for m = 2^{(1/(k+1) + δ)n}, c(n, m) < (1 - 1/k) C(m, 2) + O(m^{2 - β
+δ^{k+1}}), the case k = 1 conjectured by Daykin and Erdős; Alon-Frankl Section 6, Example 6.1: the
+sets meeting the second half of [n] in at most d elements or missing at most d elements of the first
+half form a family of Θ(n^d 2^{n/2}) sets with a constant fraction of comparable pairs, disproving a
+conjecture of Erdős; erdosproblems.com/777: Alon and Frankl answer the third question in the
+affirmative and the second in the negative, and an affirmative answer to the first follows from
+Theorem 1.4 and Corollary 1.5 of Alon, Das, Glebov and Sudakov, https://www.erdosproblems.com/777.
+
+## Depends on
+
+- [Few Comparable Pairs Below Two Half Power](few-comparable-pairs-below-two-half-powe.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted](../../../../../sources/v2/WantedExt.md)

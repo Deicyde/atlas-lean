@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Gobel Residue to Integer Complexity
+# Gleeful Numbers to Hyperharmonic Prime Sums
 
+- [Gleeful Numbers](gleeful-numbers-wanted/README.md)
+- [Gobel Non Integrality](gobel-non-integrality-wanted/README.md)
 - [Gobel Residue](gobel-residue-wanted/README.md)
 - [Gobel Sequence](gobel-sequence-wanted/README.md)
 - [Golden Ratio Left Factorial Lambert](golden-ratio-left-factorial-lambert-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Hyper Leonardo](hyper-leonardo-wanted/README.md)
 - [Hyperharmonic Euler Sums](hyperharmonic-euler-sums-wanted/README.md)
 - [Hyperharmonic Prime Sums](hyperharmonic-prime-sums-wanted/README.md)
-- [Incomplete Exponential Sum](incomplete-exponential-sum-wanted/README.md)
-- [Integer Complexity](integer-complexity-wanted/README.md)

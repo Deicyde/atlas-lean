@@ -15,7 +15,7 @@ $\tau(r / 2^k) = (\tau((r - 1) / 2^k) + \tau((r + 1) / 2^k))/2 + (1 - \rho_1)/2^
 
 ## Depends on
 
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

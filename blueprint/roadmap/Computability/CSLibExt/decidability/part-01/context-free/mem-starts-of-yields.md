@@ -27,8 +27,8 @@ procedure on $g$ and $w$.
 
 ## Proof depends on
 
-- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Bounded monotone rounds on lists close off](../../part-02/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Splitting a factor](factor-eq-append.md)
 - [Candidate items for membership](items.md)

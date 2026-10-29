@@ -16,7 +16,7 @@ size, the mixed characteristic polynomial of $A_1, \dots, A_m$ is real-rooted.
 ## Depends on
 
 - [Mixed characteristic polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
-- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Proof depends on
 

@@ -19,7 +19,7 @@ $S_1(n) = (nk + 2r - \delta(n))/2$.
 ## Depends on
 
 - [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

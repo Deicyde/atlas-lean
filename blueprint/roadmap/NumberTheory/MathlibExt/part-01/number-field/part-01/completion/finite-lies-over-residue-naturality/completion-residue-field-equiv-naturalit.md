@@ -23,7 +23,7 @@ $\mathcal{O}_{L_w}/\mathfrak{m}_w \cong \mathcal{O}_L/w$.
 ## Depends on
 
 - [Residue map of completed integer rings](adic-completion-residue-quotient-map.md)
-- [Residue field of the completion](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
+- [Residue field of the completion](../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
 - [Residue map of rings of integers](ring-of-integers-residue-quotient-map.md)
 
 ## Proof depends on
@@ -31,9 +31,9 @@ $\mathcal{O}_{L_w}/\mathfrak{m}_w \cong \mathcal{O}_L/w$.
 - [Restriction of the completion map to the rings of integers](../finite-lies-over-valuation/adic-completion-integers-map.md)
 - [The completed integer map is compatible with the rings of integers](../adic-completion-integers-map-algebra-map.md)
 - [Maximal ideals of completed integer rings lie over each other](../comap-maximal-ideal-adic-completion-inte.md)
-- [Residue map to the completed residue field](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-map.md)
-- [Kernel of the completed residue map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/ker-completion-residue-map.md)
-- [Surjectivity of the completed residue map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/surjective-completion-residue-map.md)
+- [Residue map to the completed residue field](../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/adic-completion-residue-field/completion-residue-map.md)
+- [Kernel of the completed residue map](../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/adic-completion-residue-field/ker-completion-residue-map.md)
+- [Surjectivity of the completed residue map](../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/adic-completion-residue-field/surjective-completion-residue-map.md)
 
 ## Sources
 

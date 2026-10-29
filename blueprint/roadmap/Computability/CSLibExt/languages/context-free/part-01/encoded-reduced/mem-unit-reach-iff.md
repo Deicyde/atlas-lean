@@ -23,9 +23,9 @@ by $g$ for every $i$ with $1 \le i \le k$.
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Bounded monotone rounds on lists close off](../../../../decidability/part-01/primrec-list/iterate-closed.md)
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-02/primrec-list/dedup-b.md)
+- [Bounded monotone rounds on lists close off](../../../../decidability/part-02/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [Decoding a production](../encoded/decode-rule.md)
 - [Decoding a grammar symbol](../encoded/decode-symbol.md)
 - [Encoding a production](../encoded/encode-rule.md)

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

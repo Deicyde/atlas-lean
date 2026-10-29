@@ -22,8 +22,8 @@ nonterminal and a list of productions.
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-02/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [Deleting nonterminals from an encoded right-hand side](deletions.md)
 - [Removing empty productions from an encoded grammar](eps-elim.md)
 - [One round of the generating-nonterminal computation](../../../../decidability/part-01/context-free/gen-step.md)

@@ -3,12 +3,13 @@ article_id: af_f2f150fbfc956463292a21e4
 navigation: transparent
 ---
 
-# Wiman to Schwarz–Pick lemma
+# Wiman to Riemann mapping theorem
 
 - [Wiman](wiman/README.md)
 - [Argument Principle](argument-principle/README.md)
 - [Bloch's theorem](bloch.md)
 - [Casorati–Weierstrass theorem](casorati-weierstrass.md)
+- [Complex Hessian](complex-hessian/README.md)
 - [Eneström–Kakeya theorem](enestrom-kakeya-zero-localization.md)
 - [Fatou's theorem on radial limits](fatou-radial-limit.md)
 - [Great Picard](great-picard/README.md)
@@ -21,7 +22,6 @@ navigation: transparent
 - [Mittag Leffler](mittag-leffler/README.md)
 - [Normal Convergence](normal-convergence/README.md)
 - [Normal Families](normal-families/README.md)
+- [Periodic Entire](eq-const-of-periodic-one-of-norm-le-exp.md)
 - [Rectilinear Cycle](rectilinear-cycle/README.md)
 - [Riemann mapping theorem](riemann-mapping-normalized.md)
-- [Rouché's theorem on a disc](rouche-closed-ball.md)
-- [Schwarz–Pick lemma](schwarz-pick.md)

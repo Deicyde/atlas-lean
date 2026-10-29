@@ -13,7 +13,7 @@ $\gamma$ is a component of $L$ and $t \in \mathbb{R}$.
 
 ## Depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized link](parametrized-link.md)
 
 ## Proof depends on

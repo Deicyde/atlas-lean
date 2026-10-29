@@ -15,12 +15,12 @@ not $p$.
 
 ## Depends on
 
-- [Hardy–Littlewood admissible tuples](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [Hardy–Littlewood admissible tuples](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
 - [The explicit 40-tuple for the gap bound 186](tuple186.md)
 
 ## Proof depends on
 
-- [Number of residue classes met by an integer tuple](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-residue-count.md)
+- [Number of residue classes met by an integer tuple](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/hardy-littlewood-residue-count.md)
 
 ## Sources
 

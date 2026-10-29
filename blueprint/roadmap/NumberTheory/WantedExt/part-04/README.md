@@ -3,8 +3,9 @@ article_id: af_aa039df2f105c14fb12ce81a
 navigation: transparent
 ---
 
-# Dedekind Zeta Six Squares Moments to Eisenstein Ramanujan Congruence
+# De Bruijn Newman to Duffin Schaeffer Conjecture
 
+- [De Bruijn Newman](de-bruijn-newman-wanted/README.md)
 - [Dedekind Zeta Six Squares Moments](dedekind-zeta-six-squares-moments-wanted/README.md)
 - [Delannoy Triangle](delannoy-triangle-wanted/README.md)
 - [Determinantal Recurrent Sequences](determinantal-recurrent-sequences-wanted/README.md)
@@ -16,6 +17,7 @@ navigation: transparent
 - [Petrow–Young Weyl bound on the critical line](corollary-1-3.md)
 - [Distinct Eisenstein Primes](distinct-eisenstein-primes-wanted/README.md)
 - [Distinct Multiples Interval](distinct-multiples-interval-wanted/README.md)
+- [Divisibility Runs](divisibility-runs-wanted/README.md)
 - [Divisor Approximant Prime Counting](divisor-approximant-prime-counting-wanted/README.md)
 - [Divisor Sum Reciprocal Convergence](divisor-sum-reciprocal-convergence-wanted/README.md)
 - [Divisors Short Interval](divisors-short-interval-wanted/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Dowker Half Sum](dowker-half-sum-wanted/README.md)
 - [Ducci Sequence](ducci-sequence-wanted/README.md)
 - [Duffin Schaeffer Conjecture](duffin-schaeffer-conjecture-wanted/README.md)
-- [Duffin–Schaeffer conjecture on the unit circle](duffin-schaeffer.md)
-- [Eisenstein Ramanujan Congruence](eisenstein-ramanujan-congruence-wanted/README.md)

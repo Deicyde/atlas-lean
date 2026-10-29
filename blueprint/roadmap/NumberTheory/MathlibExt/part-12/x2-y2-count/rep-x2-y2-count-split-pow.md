@@ -29,7 +29,7 @@ number $e$, the number of elements of $\mathbb{Z}[\sqrt{-2}]$ of norm $p^e$ is $
 - [The enumeration of the units of ℤ(√−2) is injective](../zsqrtd-neg-two-primes/unit-val-inj.md)
 - [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
 - [Conjugate factorization of an odd prime in $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split-conj.md)
-- [Norm counts at a split prime](../zsqrtd-norm-factorization/card-norm-split-pow.md)
+- [Norm counts at a split prime](../../part-13/zsqrtd-norm-factorization/card-norm-split-pow.md)
 
 ## Sources
 

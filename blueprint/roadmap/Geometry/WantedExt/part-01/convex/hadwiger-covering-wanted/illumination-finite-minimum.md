@@ -15,8 +15,8 @@ $x + t v_i$ in the interior of $K$.
 
 ## Depends on
 
-- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-directions.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
 
 ## Sources
 

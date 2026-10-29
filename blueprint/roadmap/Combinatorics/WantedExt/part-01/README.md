@@ -3,7 +3,7 @@ article_id: af_c0875f481b94ad3fdcd8bef4
 navigation: transparent
 ---
 
-# Additive to Dehn–Sommerville equations
+# Additive to Blumenthal Minimax Angle Erdos Problem504
 
 - [Additive](additive/README.md)
 - [Coding](coding/README.md)
@@ -13,15 +13,15 @@ navigation: transparent
 - [Words](words/README.md)
 - [Accelerated Zeckendorf Game](accelerated-zeckendorf-game-wanted/README.md)
 - [Accessible Sets](accessible-sets-wanted/README.md)
+- [Acyclic Links Interval Decomposition AMR156 Problem0004](acyclic-links-interval-decomposition-amr156-prob/README.md)
+- [Affine Map Iterate Repetition Erdos Problem481](affine-map-iterate-repetition-erdos-problem481-w/README.md)
+- [Aleph Omega Partition Sum Erdos Problem1219](aleph-omega-partition-sum-erdos-problem1219-want/README.md)
+- [Almost Subspace In Sumset](almost-subspace-in-sumset-wanted/README.md)
 - [Alternating Sign Matrix](alternating-sign-matrix-wanted/README.md)
 - [Arithmetical Structure Coconut Tree](arithmetical-structure-coconut-tree-wanted/README.md)
+- [Aztec Dragon Power Of Two AMR122 Problem0015](aztec-dragon-power-of-two-amr122-problem0015-wan/README.md)
 - [Balanceable Bounded Partitions](balanceable-bounded-partitions-wanted/README.md)
+- [Balanced Signs Infinite Family Erdos Problem178](balanced-signs-infinite-family-erdos-problem178/README.md)
 - [Binary Chvatal Sankoff](binary-chvatal-sankoff-wanted/README.md)
-- [Bridge Torch Generalizations](bridge-torch-generalizations-wanted/README.md)
-- [CRSet Arithmetic Progression](crset-arithmetic-progression-wanted/README.md)
-- [Canonical Line Ehrhart](canonical-line-ehrhart-wanted/README.md)
-- [Clean Lattice Parallelogram](clean-lattice-parallelogram-wanted/README.md)
-- [Conjecture Of Marton](conjecture-of-marton-wanted/README.md)
-- [Continuous Turan](continuous-turan-wanted/README.md)
-- [Cube Rotation Nim](cube-rotation-nim-wanted/README.md)
-- [Dehn–Sommerville equations](dehn-sommerville.md)
+- [Block Compatible Sequence Count](block-compatible-sequence-count-wanted/README.md)
+- [Blumenthal Minimax Angle Erdos Problem504](blumenthal-minimax-angle-erdos-problem504-wanted/README.md)

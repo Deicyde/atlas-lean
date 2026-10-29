@@ -19,7 +19,7 @@ All exponents on the right are nonnegative for integer $\lambda$.
 
 ## Depends on
 
-- [Infinite q-Pochhammer symbol](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

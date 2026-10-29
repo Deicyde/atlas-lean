@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Super MZumkeller to Vinogradov Mean Value
+# Power sums of cyclic numbers to Valuation One Points
 
+- [Power sums of cyclic numbers](sum-pow-cyclic-numbers-is-equivalent.md)
+- [Super Fibocatalan](super-fibocatalan-wanted/README.md)
+- [Super Leonardo P](super-leonardo-pwanted/README.md)
 - [Super MZumkeller](super-mzumkeller-wanted/README.md)
 - [Takagi Dyadic Identities](takagi-dyadic-identities-wanted/README.md)
 - [Terai Type Exponential Equation](terai-type-exponential-equation-wanted/README.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Unit Weighted Zero Sum Constants](unit-weighted-zero-sum-constants-wanted/README.md)
 - [Unitary Spoof Lehmer](unitary-spoof-lehmer-wanted/README.md)
 - [Valuation One Points](valuation-one-points-wanted/README.md)
-- [Van Der Waerden Conjecture](van-der-waerden-conjecture-wanted/README.md)
-- [Subsequences of a second-order linear recurrence](subsequence-second-order-recurrence.md)
-- [Vinogradov Mean Value](vinogradov-mean-value-wanted/README.md)

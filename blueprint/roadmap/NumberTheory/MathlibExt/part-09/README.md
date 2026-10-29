@@ -3,8 +3,10 @@ article_id: af_3255b8db5852dc86793463a7
 navigation: transparent
 ---
 
-# Odd Lichtenberg numbers to Practical number
+# Normal Number Sequence to Power sums vanish modulo a prime
 
+- [Normal Number Sequence](normal-number-sequence/README.md)
+- [Odd Greedy Choice](odd-greedy-choice/README.md)
 - [Odd Lichtenberg numbers](odd-lichtenberg.md)
 - [Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday)](odd-perfect-polynomial-is-square.md)
 - [Oppermann Cyclic Numbers](oppermann-cyclic-numbers/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Polynomial TL1](polynomial-tl1/README.md)
 - [Power Free](power-free/README.md)
 - [Power sums vanish modulo a prime](power-sum-vanishing-mod-prime.md)
-- [Powerful Numbers Arithmetic Progressions](powerful-numbers-arithmetic-progressions/README.md)
-- [Practical number](is-practical-number.md)

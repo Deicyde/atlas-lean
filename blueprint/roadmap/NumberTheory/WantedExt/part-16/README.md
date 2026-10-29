@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Shafarevich Relation Rank to Super Leonardo P
+# Selberg Class Derivative APoints to Stern Brocot Sum Two Squares
 
+- [Selberg Class Derivative APoints](selberg-class-derivative-apoints-wanted/README.md)
+- [Selberg Spectral Gap](selberg-spectral-gap-wanted/README.md)
+- [Shadow Markoff Tree](shadow-markoff-tree-wanted/README.md)
 - [Shafarevich Relation Rank](shafarevich-relation-rank-wanted/README.md)
 - [Shakov Two Regular](shakov-two-regular-wanted/README.md)
 - [Composite numbers from Mersenne shifts of an arithmetic progression](exists-arith-prog-sierpinski-add-mersenn.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Squares Triangular Representations](squares-triangular-representations-wanted/README.md)
 - [Stark–Heegner theorem](stark-heegner-theorem.md)
 - [Stern Brocot Sum Two Squares](stern-brocot-sum-two-squares-wanted/README.md)
-- [Power sums of cyclic numbers](sum-pow-cyclic-numbers-is-equivalent.md)
-- [Super Fibocatalan](super-fibocatalan-wanted/README.md)
-- [Super Leonardo P](super-leonardo-pwanted/README.md)

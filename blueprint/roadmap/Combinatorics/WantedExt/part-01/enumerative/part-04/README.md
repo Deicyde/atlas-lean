@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Nonattacking Bishops Anassas to Rigged Horse Numbers
+# Near Hook Tableaux Lattice Paths to Restricted Combinations
 
+- [Near Hook Tableaux Lattice Paths](near-hook-tableaux-lattice-paths-wanted/README.md)
 - [Nonattacking Bishops Anassas](nonattacking-bishops-anassas-wanted/README.md)
 - [Nondecreasing Dyck Subwords](nondecreasing-dyck-subwords-wanted/README.md)
 - [Odd Fibonacci](odd-fibonacci-wanted/README.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Reduced Unicellular Hypermonopoles](reduced-unicellular-hypermonopoles-wanted/README.md)
 - [Regular Overpartition Density](regular-overpartition-density-wanted/README.md)
 - [Restricted Combinations](restricted-combinations-wanted/README.md)
-- [Rigged Horse Numbers](rigged-horse-numbers-wanted/README.md)

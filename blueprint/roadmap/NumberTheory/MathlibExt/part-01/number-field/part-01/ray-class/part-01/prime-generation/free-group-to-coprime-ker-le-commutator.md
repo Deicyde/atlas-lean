@@ -25,7 +25,7 @@ commutator subgroup $[F(P), F(P)]$.
 
 ## Proof depends on
 
-- [Prime factorization isomorphism for fractional ideals](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
+- [Prime factorization isomorphism for fractional ideals](../../../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
 - [Factorization of a prime of a number field](../prime-generators/factorization-mul-equiv-prime-unit-fract.md)
 - [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 - [The free-group map on generators](free-group-to-coprime-of.md)

@@ -3,8 +3,10 @@ article_id: af_4e355660d065f13671180c60
 navigation: transparent
 ---
 
-# Laplace Q-polynomial families to Odd Greedy Choice
+# Lambert Series Variants to Normal Number
 
+- [Lambert Series Variants](lambert-series-variants/README.md)
+- [Landsberg–Schaar relation](landsberg-schaar.md)
 - [Laplace Q-polynomial families](is-laplace-qfamily.md)
 - [Hermite–Lindemann theorem](hermite-lindemann.md)
 - [Lindemann Weierstrass](lindemann-weierstrass/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Nicol Number](nicol-number/README.md)
 - [Noncentral Tanny Dowling Polynomial](noncentral-tanny-dowling-polynomial/README.md)
 - [Normal Number](normal-number/README.md)
-- [Normal Number Sequence](normal-number-sequence/README.md)
-- [Odd Greedy Choice](odd-greedy-choice/README.md)

@@ -22,8 +22,8 @@ nonterminals of $g$ is itself a generating nonterminal of $g$.
 
 ## Proof depends on
 
-- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Bounded monotone rounds on lists close off](../../part-02/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Acceptable productions](rule-ok.md)
 - [Acceptable symbols](sym-ok.md)
 

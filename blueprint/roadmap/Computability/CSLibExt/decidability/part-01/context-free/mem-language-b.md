@@ -17,7 +17,7 @@ among the items found for $g$ and $w$.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Items found by the membership procedure](found.md)
 
 ## Sources

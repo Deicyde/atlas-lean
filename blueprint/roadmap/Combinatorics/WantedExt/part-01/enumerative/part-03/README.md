@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Index Factorization Multisection to Near Hook Tableaux Lattice Paths
+# Incomplete Binomial Harmonic Sums to NColor Compositions
 
+- [Incomplete Binomial Harmonic Sums](incomplete-binomial-harmonic-sums-wanted/README.md)
 - [Index Factorization Multisection](index-factorization-multisection-wanted/README.md)
 - [Inversion Sequence Pattern Sets](inversion-sequence-pattern-sets-wanted/README.md)
 - [Jensen Polynomials Wright Circle](jensen-polynomials-wright-circle-wanted/README.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Motzkin Alternating Sums](motzkin-alternating-sums-wanted/README.md)
 - [Motzkin Humps Young Tableaux](motzkin-humps-young-tableaux-wanted/README.md)
 - [NColor Compositions](ncolor-compositions-wanted/README.md)
-- [Near Hook Tableaux Lattice Paths](near-hook-tableaux-lattice-paths-wanted/README.md)

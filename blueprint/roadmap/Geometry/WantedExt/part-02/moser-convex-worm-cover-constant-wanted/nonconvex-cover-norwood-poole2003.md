@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Universal covers](../../../MathlibExt/moser-worm-cover/is-universal-cover.md)
+- [Universal covers](../../../MathlibExt/part-01/moser-worm-cover/is-universal-cover.md)
 
 ## Sources
 

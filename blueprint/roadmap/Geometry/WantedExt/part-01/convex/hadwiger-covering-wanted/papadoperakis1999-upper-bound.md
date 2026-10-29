@@ -14,7 +14,7 @@ repetitions allowed.
 
 ## Depends on
 
-- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
+- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/part-01/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

@@ -28,7 +28,7 @@ $T$ is not required to be finite. This is Sipser's problem $\mathit{OVERLAP}_{\m
 - [PCP many-one reduces to nonemptiness of the intersection of two context-free languages](../cfgundecidable/many-one-reducible-pcp-inter.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
-- [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
+- [The Post correspondence problem is undecidable](../../part-02/pcpundecidable/exists-not-tm2-decidable-pcp.md)
 - [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources

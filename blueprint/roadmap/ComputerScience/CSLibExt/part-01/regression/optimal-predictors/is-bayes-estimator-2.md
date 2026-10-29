@@ -26,7 +26,7 @@ values in $[0, \infty]$.
 ## Proof depends on
 
 - [The expected absolute loss is minimized at every median](lintegral-abs-loss-le-of-is-median.md)
-- [Median of a measure on the real line](../../../../../Probability/MathlibExt/part-02/median/is-median.md)
+- [Median of a measure on the real line](../../../../../Probability/MathlibExt/part-04/median/is-median.md)
 
 ## Sources
 

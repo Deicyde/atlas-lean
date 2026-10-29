@@ -20,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sets that cover every unit arc](../../../MathlibExt/moser-worm-cover/covers-every-unit-arc.md)
-- [Semidisk of radius one half](../../../MathlibExt/moser-worm-cover/half-semidisk.md)
+- [Sets that cover every unit arc](../../../MathlibExt/part-01/moser-worm-cover/covers-every-unit-arc.md)
+- [Semidisk of radius one half](../../../MathlibExt/part-01/moser-worm-cover/half-semidisk.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ true exactly when the start nonterminal of $g$ is not among the generating nonte
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Generating nonterminals](generating.md)
 
 ## Sources

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Euclidean distance set](../../../MathlibExt/falconer-distance-set/distance-set.md)
+- [Euclidean distance set](../../../MathlibExt/part-01/falconer-distance-set/distance-set.md)
 
 ## Sources
 

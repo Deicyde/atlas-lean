@@ -20,7 +20,7 @@ at $0$.
 - [Basic vectors of type (A1)](is-exact-slow-nim-basic-a1.md)
 - [Basic-vector value](exact-slow-nim-basic-value.md)
 - [The M-move](exact-slow-nim-mrule-move.md)
-- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

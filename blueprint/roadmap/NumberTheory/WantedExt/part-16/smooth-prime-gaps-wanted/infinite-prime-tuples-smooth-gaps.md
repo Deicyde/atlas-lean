@@ -18,7 +18,7 @@ this with the admissible values $k_m$ of the Maynard–Tao theorem listed in its
 
 ## Depends on
 
-- [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
+- [Admissible finite sets of integers](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-admissible-finset.md)
 
 ## Sources
 

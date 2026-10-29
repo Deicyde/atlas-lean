@@ -13,7 +13,7 @@ stable complexity equals its integer complexity: $\lVert n \rVert_{\mathrm{st}} 
 
 ## Depends on
 
-- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-10/integer-complexity-wanted/cx.md)
 - [Stable numbers for integer complexity](is-complexity-stable.md)
 - [Stable complexity](stable-complexity.md)
 

@@ -31,7 +31,7 @@ $N(n;k) = (2^{4k+1} - 2^{2k})(2b_n - 1) +
 ## Depends on
 
 - [Even-index Euler numbers](../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
-- [Regular paperfolding sequence](../../../../Combinatorics/WantedExt/part-04/reduced-complexities-wanted/paperfolding-seq.md)
+- [Regular paperfolding sequence](../../../../Combinatorics/WantedExt/part-09/reduced-complexities-wanted/paperfolding-seq.md)
 - [Thue–Morse sequence](../../../../Combinatorics/MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources

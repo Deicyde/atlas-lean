@@ -30,7 +30,7 @@ The prime $2$ is ramified in $\mathbb{Z}[\sqrt{-2}]$.
 - [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
 - [Units of ℤ(√−2)](../zsqrtd-neg-two-primes/zsqrtd-neg-two-is-unit-iff.md)
 - [√−2 is prime in ℤ(√−2)](../zsqrtd-neg-two-primes/zsqrtd-neg-two-prime-sqrtd.md)
-- [Norm counts at powers of a ramified two](../zsqrtd-norm-factorization/card-norm-two-pow.md)
+- [Norm counts at powers of a ramified two](../../part-13/zsqrtd-norm-factorization/card-norm-two-pow.md)
 
 ## Sources
 

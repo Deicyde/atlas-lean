@@ -19,7 +19,7 @@ accepting states of $D$.
 ## Proof depends on
 
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

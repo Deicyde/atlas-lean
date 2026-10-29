@@ -3,8 +3,10 @@ article_id: af_7a0b68b4ac6ea2f931a02bb6
 navigation: transparent
 ---
 
-# Selberg Sieve to Thue–Siegel–Roth theorem
+# Rough Numbers to Thābit ibn Qurra's theorem
 
+- [Rough Numbers](rough-numbers/README.md)
+- [SCullen Number](scullen-number/README.md)
 - [Selberg Sieve](selberg-sieve/README.md)
 - [Simsek Number](simsek-number/README.md)
 - [Socialist Prime](socialist-prime/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Telescopic Sequence](telescopic-sequence/README.md)
 - [Tetranacci Sequence](tetranacci.md)
 - [Thābit ibn Qurra's theorem](thabit-ibn-qurra.md)
-- [Thue Lemma](thue-lemma/README.md)
-- [Thue–Siegel–Roth theorem](thue-siegel-roth.md)

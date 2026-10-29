@@ -16,7 +16,7 @@ equals Smith's remoteness of $x$ in this game.
 
 - [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Basic-vector value](exact-slow-nim-basic-value.md)
-- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

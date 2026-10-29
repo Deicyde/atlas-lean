@@ -18,7 +18,7 @@ whose inverse sends a parametrized knot to the knot with the same parametrizatio
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized knots as knots](of-parametrized-knot.md)
 - [Knots as parametrized knots](to-parametrized-knot.md)
 - [Euclidean space $\mathbb{R}^3$](../conway-knot-shared/r3.md)

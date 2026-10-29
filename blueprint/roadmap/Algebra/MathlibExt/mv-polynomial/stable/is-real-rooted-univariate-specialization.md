@@ -21,14 +21,14 @@ $a_j$ real for all $j \ne i$, the polynomial $p_{i,a}$ is real-rooted.
 
 - [Real stable polynomials](is-real-stable.md)
 - [Univariate specialization](univariate-specialization.md)
-- [Real-rooted polynomials](../../polynomial/real-rooted/is-real-rooted.md)
+- [Real-rooted polynomials](../../polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Proof depends on
 
 - [Stable polynomials](is-stable.md)
 - [Evaluating a univariate specialization](eval-univariate-specialization.md)
 - [Univariate specialization at real values preserves real coefficients](map-star-univariate-specialization.md)
-- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](../../polynomial/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
+- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](../../polynomial/part-01/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
 
 ## Sources
 

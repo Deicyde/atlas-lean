@@ -13,11 +13,11 @@ $[-1, 1]^n$ in the Euclidean space $\mathbb{R}^n$ has volume $2^n$.
 
 ## Depends on
 
-- [Coordinate cube](../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
+- [Coordinate cube](../../../Geometry/MathlibExt/part-01/convex/cube-covering/coordinate-cube.md)
 
 ## Proof depends on
 
-- [The coordinate cube as an absolute-value box](../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
+- [The coordinate cube as an absolute-value box](../../../Geometry/MathlibExt/part-01/convex/cube-covering/coordinate-cube-eq-abs-set.md)
 
 ## Sources
 

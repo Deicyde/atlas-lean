@@ -13,7 +13,7 @@ equals $c_0^2$, where $c_0$ is the Davis–Power constant.
 
 ## Depends on
 
-- [The convex sub-Gaussian comparison constant](../../MathlibExt/part-01/convex-sub-gaussian-comparison/comparison-constant.md)
+- [The convex sub-Gaussian comparison constant](../../MathlibExt/part-02/convex-sub-gaussian-comparison/comparison-constant.md)
 - [The Davis–Power constant $c_0$](davis-power-c0.md)
 
 ## Sources

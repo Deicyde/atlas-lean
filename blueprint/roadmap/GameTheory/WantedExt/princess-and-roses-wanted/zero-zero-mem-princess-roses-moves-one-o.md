@@ -20,7 +20,7 @@ from each pile.
 ## Proof depends on
 
 - [Options in Princess and the Roses](mem-slow-anim-moves-one-two.md)
-- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

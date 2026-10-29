@@ -1,0 +1,30 @@
+---
+article_id: af_ac7f87e9711d06eebc67e190
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.angle_bisector_converse
+---
+
+# Converse of the angle bisector theorem
+
+**Converse of the angle bisector theorem.** Let $A$, $B$, $C$, $D$ be points of a Euclidean
+affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$ affinely
+independent, so that $ABC$ is a nondegenerate triangle, and with $A \ne B$, $A \ne C$ and
+$A \ne D$. If $D$ lies on the closed segment $BC$ and $BD / DC = AB / AC$, then
+$\angle BAD = \angle DAC$ (unoriented angles), that is, $D$ lies on the internal bisector of the
+angle at $A$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Converse of the angle bisector theorem without distinctness hypotheses](angle-bisector-converse-general.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Euclidean.AngleBisector](../../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Angle_bisector_theorem (statement_id `angle-bisector-theorem`, required clause 2). It follows from `angle_bisector_converse_general`; the hypotheses `hAB`, `hAC` and `hAD` are unused and keep the source's shape. Proves `Wanted` entry `angle_bisector_converse`.

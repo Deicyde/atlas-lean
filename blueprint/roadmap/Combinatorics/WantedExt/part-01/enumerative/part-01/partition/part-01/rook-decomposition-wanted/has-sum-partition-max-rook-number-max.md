@@ -17,7 +17,7 @@ where $(a;q)_\infty = \prod_{k \ge 0} (1 - a q^k)$ is the infinite q-Pochhammer 
 
 ## Depends on
 
-- [Infinite q-Pochhammer symbol](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 - [Largest max-rook number among partitions of $n$](partition-max-rook-number-max.md)
 
 ## Sources

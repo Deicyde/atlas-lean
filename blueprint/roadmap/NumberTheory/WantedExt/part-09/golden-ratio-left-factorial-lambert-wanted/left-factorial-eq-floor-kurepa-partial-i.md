@@ -23,7 +23,7 @@ $\lfloor K_n(A) + \frac{1}{m} \rfloor = {!n}$.
 
 - [Golden factorial exponent](golden-factorial-exponent.md)
 - [Kurepa's partial integral](kurepa-partial-integral.md)
-- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

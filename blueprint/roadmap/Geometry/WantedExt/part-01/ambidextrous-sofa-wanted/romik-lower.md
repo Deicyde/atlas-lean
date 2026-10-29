@@ -13,7 +13,7 @@ $164495521/100000000 = 1.64495521$.
 
 ## Depends on
 
-- [Optimal area of ambidextrous sofas](../../../MathlibExt/moving-sofa/ambidextrous-optimal-area.md)
+- [Optimal area of ambidextrous sofas](../../../MathlibExt/part-01/moving-sofa/ambidextrous-optimal-area.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ emptiness test returns true on $g$ if and only if the language of $g$ is empty.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Soundness of the productive-nonterminal iteration](exists-derives-of-mem-iterate.md)
 - [Generating nonterminals](generating.md)
 - [Completeness of the generating-nonterminal computation](start-mem-generating-of-mem-language.md)

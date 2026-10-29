@@ -21,9 +21,9 @@ of $j$.
 
 ## Proof depends on
 
-- [Number of Gaussian integers of norm a power of a split prime](../../part-05/gaussian-int-split-primes/gaussian-int-card-repr-prime-pow.md)
+- [Number of Gaussian integers of norm a power of a split prime](../../part-06/gaussian-int-split-primes/gaussian-int-card-repr-prime-pow.md)
 - [1 + i is a Gaussian prime](../../part-05/gaussian-int-prime-basics/gaussian-int-prime-one-add-i.md)
-- [Primes congruent to 1 mod 4 split in the Gaussian integers](../../part-05/gaussian-int-split-primes/gaussian-int-split-prime.md)
+- [Primes congruent to 1 mod 4 split in the Gaussian integers](../../part-06/gaussian-int-split-primes/gaussian-int-split-prime.md)
 - [Factorization of 2 in the Gaussian integers](../../part-05/gaussian-int-prime-basics/gaussian-int-two-eq.md)
 - [Enumeration of the Gaussian units](../../part-05/gaussian-int-prime-basics/unit-val.md)
 - [Inverses of the Gaussian units](../../part-05/gaussian-int-prime-basics/unit-val-inv.md)
@@ -38,9 +38,9 @@ of $j$.
 - [The divisor sum of $\chi_4$ at powers of two](div-chi-sum-prime-pow-two.md)
 - [Sums of two squares as Gaussian norms](pair-equiv-gaussian-norm-fiber.md)
 - [Two-square representation numbers count integer pairs](representation-number-two-eq.md)
-- [Norm counts determined by prime powers](../../part-12/zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
-- [Norm counts at an inert prime](../../part-12/zsqrtd-norm-factorization/card-norm-inert-pow.md)
-- [Norm counts at powers of a ramified two](../../part-12/zsqrtd-norm-factorization/card-norm-two-pow.md)
+- [Norm counts determined by prime powers](../../part-13/zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
+- [Norm counts at an inert prime](../../part-13/zsqrtd-norm-factorization/card-norm-inert-pow.md)
+- [Norm counts at powers of a ramified two](../../part-13/zsqrtd-norm-factorization/card-norm-two-pow.md)
 
 ## Sources
 

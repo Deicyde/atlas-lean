@@ -28,7 +28,7 @@ on $\mathbb{C}^d$ is at most $(1 + \sqrt{\eta})^2$.
 - [Mixed characteristic polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
 - [Marcus--Spielman--Srivastava barrier bound](../mixed-characteristic-polynomial-max-real.md)
 - [Spectral norm of a positive semidefinite matrix](../../../matrix/spectrum/l2-op-norm-eq-max-real-root-charpoly.md)
-- [Largest real part of a root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+- [Largest real part of a root](../../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/max-real-root.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analyticity of the digamma function](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
+- [Analyticity of the digamma function](../../../../part-02/special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
 
 ## Sources
 

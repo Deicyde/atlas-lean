@@ -18,10 +18,10 @@ $p_i + t(x - p_i)$ in the interior of $K$.
 
 ## Depends on
 
-- [Illumination by $q$ external points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
-- [Central symmetry about some center](../../../../MathlibExt/convex/covering/is-centrally-symmetric.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Uniform bound for covering centrally symmetric convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-symmetric-interior-translate-bou.md)
+- [Illumination by $q$ external points](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-external-points.md)
+- [Central symmetry about some center](../../../../MathlibExt/part-01/convex/covering/is-centrally-symmetric.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
+- [Uniform bound for covering centrally symmetric convex bodies by interior translates](../../../../MathlibExt/part-01/convex/covering/uniform-symmetric-interior-translate-bou.md)
 
 ## Sources
 

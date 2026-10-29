@@ -25,7 +25,7 @@ over/under is therefore derived from the parametrization rather than chosen.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized knot](../euclidean-link/parametrized-knot.md)
 - [Point of a link at a parameter point](point.md)
 - [Height in the standard projection frame](height.md)

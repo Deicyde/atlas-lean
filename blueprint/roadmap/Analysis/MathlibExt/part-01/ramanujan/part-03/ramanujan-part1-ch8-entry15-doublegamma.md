@@ -28,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Complex and real derivatives of Gamma agree on the positive reals](../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
+- [Complex and real derivatives of Gamma agree on the positive reals](../../../part-02/special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
 
 ## Sources
 

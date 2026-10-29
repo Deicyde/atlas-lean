@@ -7,6 +7,7 @@ article_id: af_96692baef9df8ecf04e29b0b
 - [Hilbert Symbol](hilbert-symbol/README.md)
 - [Cassels' embedding theorem](exists-injective-ring-hom-closure-padic.md)
 - [Digits](digits/README.md)
+- [Expansion](expansion/README.md)
 - [The $5$-adic valuation of Fibonacci numbers](lengyel-fibonacci-five-adic.md)
 - [Fibonomial Prime Power Valuation](fibonomial-prime-power-valuation/README.md)
 - [Hilbert Symbol](hilbert-symbol-2/README.md)

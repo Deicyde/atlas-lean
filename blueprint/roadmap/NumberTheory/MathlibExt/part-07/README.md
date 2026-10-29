@@ -3,8 +3,10 @@ article_id: af_5f142cc4b8c51654a0ee084d
 navigation: transparent
 ---
 
-# Sums of harmonic numbers starting from the second are not integers to Landsberg–Schaar relation
+# Hankel Transform to Labos prime
 
+- [Hankel Transform](hankel-transform/README.md)
+- [Hardy Littlewood Prime Tuple](hardy-littlewood-prime-tuple/README.md)
 - [Sums of harmonic numbers starting from the second are not integers](harmonic-partial-sum-not-int.md)
 - [Hensel Factorization](hensel-factorization/README.md)
 - [Higher-order harmonic numbers](higher-harmonic.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [KPerfect](kperfect/README.md)
 - [Keith Number](keith-number/README.md)
 - [Labos prime](is-labos-prime.md)
-- [Lambert Series Variants](lambert-series-variants/README.md)
-- [Landsberg–Schaar relation](landsberg-schaar.md)

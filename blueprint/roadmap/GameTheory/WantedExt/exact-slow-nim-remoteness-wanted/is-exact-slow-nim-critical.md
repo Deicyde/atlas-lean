@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

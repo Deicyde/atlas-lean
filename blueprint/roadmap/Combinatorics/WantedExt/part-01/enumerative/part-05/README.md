@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Sabar Triangle to Two Pattern Avoidance Counts
+# Rigged Horse Numbers to Two Pascal Triangle
 
+- [Rigged Horse Numbers](rigged-horse-numbers-wanted/README.md)
 - [Sabar Triangle](sabar-triangle-wanted/README.md)
 - [Schreier Type Multisets](schreier-type-multisets-wanted/README.md)
 - [Schreier Type Sets](schreier-type-sets-wanted/README.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Toeplitz Hessenberg Fuss Catalan](toeplitz-hessenberg-fuss-catalan-wanted/README.md)
 - [Tribonacci Wythoff](tribonacci-wythoff-wanted/README.md)
 - [Two Pascal Triangle](two-pascal-triangle-wanted/README.md)
-- [Two Pattern Avoidance Counts](two-pattern-avoidance-counts-wanted/README.md)

@@ -14,7 +14,7 @@ $\gamma_i(t) \in \mathbb{R}^3$.
 
 ## Depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized link](../euclidean-link/parametrized-link.md)
 - [Parameter point](param-point.md)
 

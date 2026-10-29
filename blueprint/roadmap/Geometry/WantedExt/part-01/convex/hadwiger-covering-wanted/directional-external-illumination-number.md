@@ -16,9 +16,9 @@ family does.
 
 ## Depends on
 
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Directional illumination number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
-- [External-point illumination number](../../../../MathlibExt/convex/illumination/external-point-illumination-number.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
+- [Directional illumination number](../../../../MathlibExt/part-01/convex/illumination/directional-illumination-number.md)
+- [External-point illumination number](../../../../MathlibExt/part-01/convex/illumination/external-point-illumination-number.md)
 
 ## Sources
 

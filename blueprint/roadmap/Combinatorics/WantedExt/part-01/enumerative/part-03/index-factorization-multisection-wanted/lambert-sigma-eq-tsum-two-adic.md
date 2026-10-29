@@ -14,8 +14,8 @@ $f(q) = \sum_{j, k \ge 0} 2^{2j+k} \bigl(g(q^{2^{j+k}}) - 4 g(q^{2^{j+k+1}})\big
 
 ## Depends on
 
-- [The weighted Lambert series $f$](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-f.md)
-- [The weighted Lambert series $g$](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-g.md)
+- [The weighted Lambert series $f$](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-series/lambert-f.md)
+- [The weighted Lambert series $g$](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-series/lambert-g.md)
 
 ## Sources
 

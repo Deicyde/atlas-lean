@@ -24,7 +24,7 @@ The complement of the Post correspondence problem reduces to this problem.
 
 ## Proof depends on
 
-- [The complement of PCP many-one reduces to universality of context-free grammars](../pcpuniversality/many-one-reducible-not-pcp-univ.md)
+- [The complement of PCP many-one reduces to universality of context-free grammars](../../part-02/pcpuniversality/many-one-reducible-not-pcp-univ.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
 - [The complement of PCP is not recognizable](exists-not-tm2-recognizable-not-pcp.md)

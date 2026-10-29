@@ -17,9 +17,9 @@ boundary point $x$ of $K$ has an $i$ and a $t > 1$ with $p_i + t (x - p_i)$ in t
 
 ## Depends on
 
-- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Illumination by $q$ external points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-directions.md)
+- [Illumination by $q$ external points](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-external-points.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
 
 ## Sources
 

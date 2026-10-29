@@ -24,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex universal covers](../../../MathlibExt/moser-worm-cover/is-convex-universal-cover.md)
-- [Moser's convex worm cover constant](../../../MathlibExt/moser-worm-cover/convex-worm-cover-constant.md)
+- [Convex universal covers](../../../MathlibExt/part-01/moser-worm-cover/is-convex-universal-cover.md)
+- [Moser's convex worm cover constant](../../../MathlibExt/part-01/moser-worm-cover/convex-worm-cover-constant.md)
 
 ## Sources
 

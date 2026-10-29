@@ -3,8 +3,10 @@ article_id: af_8a498d0807a41e6a651ae06f
 navigation: transparent
 ---
 
-# Prime gap to SCullen Number
+# Powerful Numbers Arithmetic Progressions to Roth's theorem with divisibility conditions
 
+- [Powerful Numbers Arithmetic Progressions](powerful-numbers-arithmetic-progressions/README.md)
+- [Practical number](is-practical-number.md)
 - [Prime gap](prime-gap.md)
 - [Prime Gap Liminf](prime-gap-liminf/README.md)
 - [Prime Gaps Near Primorials](prime-gaps-near-primorials/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Rearick Logarithm](rearick-logarithm/README.md)
 - [Ridout's $p$-adic extension of Roth's theorem](ridout-padic-roth.md)
 - [Roth's theorem with divisibility conditions](finite-of-divisible-approximations.md)
-- [Rough Numbers](rough-numbers/README.md)
-- [SCullen Number](scullen-number/README.md)

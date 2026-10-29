@@ -16,9 +16,9 @@ interior $\operatorname{int} K$, repetitions allowed.
 
 ## Depends on
 
-- [Covering by smaller positive homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
+- [Covering by smaller positive homothets](../../../../MathlibExt/part-01/convex/covering/covered-by-smaller-positive-homothets.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
+- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/part-01/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

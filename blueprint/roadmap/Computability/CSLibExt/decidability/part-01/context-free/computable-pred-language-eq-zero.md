@@ -21,7 +21,7 @@ computable predicate.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [One round of the generating-nonterminal computation](gen-step.md)
 - [Generating nonterminals](generating.md)
 - [The emptiness test for context-free grammars](is-empty-b.md)

@@ -25,10 +25,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analyticity of the digamma function](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
-- [Complex and real derivatives of Gamma agree on the positive reals](../../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
-- [Logarithmic derivative of the real Gamma function](../../../special-functions/part-01/gamma/digamma/deriv-log-gamma.md)
-- [Digamma series on the positive reals](../../../special-functions/part-01/gamma/digamma/has-sum-digamma-series.md)
+- [Analyticity of the digamma function](../../../../part-02/special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
+- [Complex and real derivatives of Gamma agree on the positive reals](../../../../part-02/special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
+- [Logarithmic derivative of the real Gamma function](../../../../part-02/special-functions/part-01/gamma/digamma/deriv-log-gamma.md)
+- [Digamma series on the positive reals](../../../../part-02/special-functions/part-01/gamma/digamma/has-sum-digamma-series.md)
 
 ## Sources
 

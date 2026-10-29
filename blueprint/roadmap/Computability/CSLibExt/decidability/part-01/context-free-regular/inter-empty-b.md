@@ -22,7 +22,7 @@ $D$.
 ## Proof depends on
 
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Items found for a grammar and a DFA](dfa-found.md)
 
 ## Sources

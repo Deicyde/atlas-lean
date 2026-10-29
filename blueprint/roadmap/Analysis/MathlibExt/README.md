@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## [Absolute Value to Specific Limits](part-01/README.md)
+## [Absolute Value to Series](part-01/README.md)
 
 - [Absolute Value](part-01/absolute-value/README.md)
 - [Approximation](part-01/approximation/README.md)
@@ -18,18 +18,20 @@ navigation: collection
 - [Fourier](part-01/fourier/README.md)
 - [Functional Analysis](part-01/functional-analysis/README.md)
 - [Inner Product Space](part-01/inner-product-space/README.md)
+- [Integration](part-01/integration/README.md)
 - [Laplace Transform](part-01/laplace-transform/README.md)
 - [Matrix](part-01/matrix/README.md)
 - [Normed](part-01/normed/README.md)
 - [ODE](part-01/ode/README.md)
+- [Operator Theory](part-01/operator-theory/README.md)
 - [Polynomial](part-01/polynomial/README.md)
 - [Ramanujan](part-01/ramanujan/README.md)
 - [Series](part-01/series/README.md)
-- [Special Functions](part-01/special-functions/README.md)
-- [Specific Limits](part-01/specific-limits/README.md)
 
-## [Variational to Wirsing Constant](part-02/README.md)
+## [Special Functions to Wirsing Constant](part-02/README.md)
 
+- [Special Functions](part-02/special-functions/README.md)
+- [Specific Limits](part-02/specific-limits/README.md)
 - [Variational](part-02/variational/README.md)
 - [Beurling Ahlfors](part-02/beurling-ahlfors/README.md)
 - [Blumberg's theorem](part-02/blumberg-theorem.md)

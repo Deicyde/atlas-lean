@@ -19,7 +19,7 @@ $B(x') = B(x) - 1$. Here $B(x) - 1$ is truncated subtraction in $\mathbb{N}$.
 
 - [Basic vectors of type (A0)](is-exact-slow-nim-basic-a0.md)
 - [Basic-vector value](exact-slow-nim-basic-value.md)
-- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources
 

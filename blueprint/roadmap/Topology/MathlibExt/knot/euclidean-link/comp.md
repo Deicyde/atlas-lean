@@ -18,7 +18,7 @@ with forward family $H'_t \circ H_t$ and inverse family $G_t \circ G'_t$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

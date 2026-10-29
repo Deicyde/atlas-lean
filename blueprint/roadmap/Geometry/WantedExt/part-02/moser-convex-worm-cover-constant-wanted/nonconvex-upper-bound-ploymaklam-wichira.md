@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonconvex worm cover constant](../../../MathlibExt/moser-worm-cover/nonconvex-worm-cover-constant.md)
+- [Nonconvex worm cover constant](../../../MathlibExt/part-01/moser-worm-cover/nonconvex-worm-cover-constant.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ for every $i$, and $m$ is even.
 ## Depends on
 
 - [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
-- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

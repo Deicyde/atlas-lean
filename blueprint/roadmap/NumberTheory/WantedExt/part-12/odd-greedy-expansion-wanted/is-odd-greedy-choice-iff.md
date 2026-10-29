@@ -14,7 +14,7 @@ $0 \le n x_1 - d < 2n$ in the integers.
 
 ## Depends on
 
-- [Odd greedy choice](../../../MathlibExt/part-08/odd-greedy-choice/is-odd-greedy-choice.md)
+- [Odd greedy choice](../../../MathlibExt/part-09/odd-greedy-choice/is-odd-greedy-choice.md)
 
 ## Sources
 

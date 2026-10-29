@@ -22,7 +22,7 @@ It returns true exactly when $D$ and $E$ have the same language.
 ## Proof depends on
 
 - [Reachable pairs of states of two encoded DFAs](pair-reachable.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

@@ -26,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binomial theorem for rising factorials](../../../../../Algebra/MathlibExt/polynomial/asc-pochhammer-eval-add.md)
+- [Binomial theorem for rising factorials](../../../../../Algebra/MathlibExt/polynomial/part-01/asc-pochhammer-eval-add.md)
 
 ## Sources
 

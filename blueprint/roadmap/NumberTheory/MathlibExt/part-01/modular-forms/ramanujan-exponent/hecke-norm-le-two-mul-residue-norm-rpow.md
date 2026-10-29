@@ -16,7 +16,7 @@ $N(v)$, then $|\alpha + \beta| \le 2 N(v)^\delta$.
 ## Depends on
 
 - [Satake pairs with a given local exponent](is-satake-pair.md)
-- [Residue norm of a finite place](../../number-field/part-01/place/residue-norm.md)
+- [Residue norm of a finite place](../../number-field/part-02/place/residue-norm.md)
 
 ## Proof depends on
 

@@ -20,7 +20,7 @@ real branch of the Lambert W function.
 
 ## Depends on
 
-- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

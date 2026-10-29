@@ -24,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hankel transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
+- [Hankel transform](../../../../../NumberTheory/MathlibExt/part-07/hankel-transform/hankel-transform.md)
 - [Heilermann's formula for weighted Motzkin arrays](../part-04/hankel-transform-eq-prod-of-weighted-mot.md)
 
 ## Sources

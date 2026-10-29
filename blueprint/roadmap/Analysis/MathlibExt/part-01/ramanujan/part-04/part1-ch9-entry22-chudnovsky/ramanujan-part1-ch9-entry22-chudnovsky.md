@@ -38,14 +38,14 @@ This node has no prerequisites.
 - [The sum of the odd reciprocal cubes in Entries 21 and 22](chapter9-chi3-at-one-eq-entry21.md)
 - [Odd reciprocal cubes in Entries 21 and 22](chapter9-chi3-term-eq-entry21.md)
 - [The factorial sine series term in Entries 20 and 22](chapter9-entry23-factorial-term-eq-entry.md)
-- [Integrated arcsine series](../../../special-functions/part-01/arcsin-taylor-series/arcsin-integral-series.md)
-- [Terms of the integrated arcsine series](../../../special-functions/part-01/arcsin-taylor-series/arcsin-integral-series-term-eq.md)
-- [The integrated arcsine series vanishes at the origin](../../../special-functions/part-01/arcsin-taylor-series/arcsin-integral-series-zero.md)
-- [Normalized central binomial coefficient](../../../special-functions/part-01/arcsin-taylor-series/central-binomial-coeff.md)
-- [Continuity of the integrated arcsine series](../../../special-functions/part-01/arcsin-taylor-series/continuous-on-arcsin-integral-series.md)
-- [Derivative of the integrated arcsine series](../../../special-functions/part-01/arcsin-taylor-series/has-deriv-at-arcsin-integral-series.md)
-- [Summability of the integrated arcsine series](../../../special-functions/part-01/arcsin-taylor-series/summable-arcsin-integral-series-term.md)
-- [Lehmer's central binomial series for arcsin](../../../special-functions/part-01/arcsin-central-binomial-reciprocal-serie.md)
+- [Integrated arcsine series](../../../../part-02/special-functions/part-01/arcsin-taylor-series/arcsin-integral-series.md)
+- [Terms of the integrated arcsine series](../../../../part-02/special-functions/part-01/arcsin-taylor-series/arcsin-integral-series-term-eq.md)
+- [The integrated arcsine series vanishes at the origin](../../../../part-02/special-functions/part-01/arcsin-taylor-series/arcsin-integral-series-zero.md)
+- [Normalized central binomial coefficient](../../../../part-02/special-functions/part-01/arcsin-taylor-series/central-binomial-coeff.md)
+- [Continuity of the integrated arcsine series](../../../../part-02/special-functions/part-01/arcsin-taylor-series/continuous-on-arcsin-integral-series.md)
+- [Derivative of the integrated arcsine series](../../../../part-02/special-functions/part-01/arcsin-taylor-series/has-deriv-at-arcsin-integral-series.md)
+- [Summability of the integrated arcsine series](../../../../part-02/special-functions/part-01/arcsin-taylor-series/summable-arcsin-integral-series-term.md)
+- [Lehmer's central binomial series for arcsin](../../../../part-02/special-functions/part-01/arcsin-central-binomial-reciprocal-serie.md)
 
 ## Sources
 

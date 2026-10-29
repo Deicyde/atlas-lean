@@ -14,12 +14,12 @@ $\{x \in \mathbb{R}^{n+1} : -1 \le x_i \le 1 \text{ for every } i\} = [-1, 1]^{n
 
 ## Depends on
 
-- [Coordinate cube](../../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
+- [Coordinate cube](../../../../../Geometry/MathlibExt/part-01/convex/cube-covering/coordinate-cube.md)
 - [Hanner cube](hanner-cube.md)
 
 ## Proof depends on
 
-- [The coordinate cube as an absolute-value box](../../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
+- [The coordinate cube as an absolute-value box](../../../../../Geometry/MathlibExt/part-01/convex/cube-covering/coordinate-cube-eq-abs-set.md)
 - [$\ell_\infty$ sum of bodies](hanner-infinity-sum.md)
 - [Centered unit segment](hanner-unit-segment.md)
 - [Membership in the $\ell_\infty$ Hanner sum](mem-hanner-infinity-sum-iff.md)

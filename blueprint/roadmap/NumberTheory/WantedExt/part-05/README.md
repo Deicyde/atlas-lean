@@ -3,8 +3,10 @@ article_id: af_1833778b0d8b00331b0c2228
 navigation: transparent
 ---
 
-# Elliptic Curve Naive Height Lower Bounds to Erdos Problem729
+# Duffin–Schaeffer conjecture on the unit circle to Erdős Problem 6 (increasing prime gaps)
 
+- [Duffin–Schaeffer conjecture on the unit circle](duffin-schaeffer.md)
+- [Eisenstein Ramanujan Congruence](eisenstein-ramanujan-congruence-wanted/README.md)
 - [Elliptic Curve Naive Height Lower Bounds](elliptic-curve-naive-height-lower-bounds-wanted/README.md)
 - [Elliptic Curve Two PQRank](elliptic-curve-two-pqrank-wanted/README.md)
 - [Enumerating Number Fields](enumerating-number-fields-wanted/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Erdos Problem650](erdos-problem650-wanted/README.md)
 - [Erdos Problem690](erdos-problem690-wanted/README.md)
 - [Erdős Problem 6 (increasing prime gaps)](conjecture-holds-2.md)
-- [Erdos Problem728](erdos-problem728-wanted/README.md)
-- [Erdos Problem729](erdos-problem729-wanted/README.md)

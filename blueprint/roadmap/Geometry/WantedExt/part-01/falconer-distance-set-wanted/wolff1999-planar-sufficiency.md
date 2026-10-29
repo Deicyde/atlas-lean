@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Falconer threshold property](../../../MathlibExt/falconer-distance-set/planar-threshold-property.md)
+- [Planar Falconer threshold property](../../../MathlibExt/part-01/falconer-distance-set/planar-threshold-property.md)
 
 ## Sources
 

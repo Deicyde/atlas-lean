@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Gcd Sum Moments to Gobel Non Integrality
+# Gcd Lucas Theorem to Glaisher Divisors Infinite Products
 
+- [Gcd Lucas Theorem](gcd-lucas-theorem-wanted/README.md)
+- [Gcd Sum Mean Square](gcd-sum-mean-square-wanted/README.md)
 - [Gcd Sum Moments](gcd-sum-moments-wanted/README.md)
 - [Gen Leonardo](gen-leonardo-wanted/README.md)
 - [General Conditional Sequence](general-conditional-sequence-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Gibonacci Polynomial Power Sums](gibonacci-polynomial-power-sums-wanted/README.md)
 - [Gibonacci Polynomial Square Sums Revisited](gibonacci-polynomial-square-sums-revisited-wante/README.md)
 - [Glaisher Divisors Infinite Products](glaisher-divisors-infinite-products-wanted/README.md)
-- [Gleeful Numbers](gleeful-numbers-wanted/README.md)
-- [Gobel Non Integrality](gobel-non-integrality-wanted/README.md)

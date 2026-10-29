@@ -19,7 +19,7 @@ productions and $u$ is not a single nonterminal, the production $A \to u$.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [Nonterminals of an encoded grammar](nt-list.md)
 - [Nonterminals reachable by unit productions in an encoded grammar](unit-reach.md)
 - [Target of a unit right-hand side](unit-target.md)

@@ -17,7 +17,7 @@ $f(X)$ and $f(Y)$ are integrable.
 
 ## Depends on
 
-- [Admissible convex sub-Gaussian comparison constants](../../MathlibExt/part-01/convex-sub-gaussian-comparison/is-admissible-constant.md)
+- [Admissible convex sub-Gaussian comparison constants](../../MathlibExt/part-02/convex-sub-gaussian-comparison/is-admissible-constant.md)
 - [The Davis–Power constant $c_0$](davis-power-c0.md)
 
 ## Sources

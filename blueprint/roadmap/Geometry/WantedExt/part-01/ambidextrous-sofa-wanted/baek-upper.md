@@ -12,7 +12,7 @@ ambidextrous sofas, taken in $[0, \infty]$, is at most $22195/10000 = 2.2195$.
 
 ## Depends on
 
-- [Optimal area of ambidextrous sofas](../../../MathlibExt/moving-sofa/ambidextrous-optimal-area.md)
+- [Optimal area of ambidextrous sofas](../../../MathlibExt/part-01/moving-sofa/ambidextrous-optimal-area.md)
 
 ## Sources
 

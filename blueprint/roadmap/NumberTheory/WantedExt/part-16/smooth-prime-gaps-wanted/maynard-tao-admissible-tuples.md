@@ -13,7 +13,7 @@ integers $n$ for which $n + h$ is a (positive) prime for at least $m$ elements $
 
 ## Depends on
 
-- [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
+- [Admissible finite sets of integers](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-admissible-finset.md)
 
 ## Sources
 

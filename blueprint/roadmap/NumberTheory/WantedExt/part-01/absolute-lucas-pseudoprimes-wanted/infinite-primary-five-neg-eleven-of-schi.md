@@ -21,8 +21,8 @@ $\left(\frac{-11}{p_2}\right) = 1$.
 ## Depends on
 
 - [Primary $D$-Carmichael number](is-primary-dcarmichael.md)
-- [Bunyakovsky condition](../../../../Algebra/MathlibExt/polynomial/prime-value-conditions/bunyakovsky-condition.md)
-- [Schinzel condition](../../../../Algebra/MathlibExt/polynomial/prime-value-conditions/schinzel-condition.md)
+- [Bunyakovsky condition](../../../../Algebra/MathlibExt/polynomial/part-01/prime-value-conditions/bunyakovsky-condition.md)
+- [Schinzel condition](../../../../Algebra/MathlibExt/polynomial/part-01/prime-value-conditions/schinzel-condition.md)
 
 ## Sources
 

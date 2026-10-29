@@ -23,7 +23,7 @@ fails for the tribonacci series $x/(1 - x - x^2 - x^3)$, where $A = -1$.
 
 ## Depends on
 
-- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
+- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/part-01/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

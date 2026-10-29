@@ -28,7 +28,7 @@ $a^2 + 2b^2 = q^f$ is $2$ if $f$ is even and $0$ if $f$ is odd.
 - [The enumeration of the units of ℤ(√−2) is injective](../zsqrtd-neg-two-primes/unit-val-inj.md)
 - [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
 - [Primes congruent to 5 or 7 mod 8 are inert in ℤ(√−2)](../zsqrtd-neg-two-primes/zsqrtd-neg-two-inert.md)
-- [Norm counts at an inert prime](../zsqrtd-norm-factorization/card-norm-inert-pow.md)
+- [Norm counts at an inert prime](../../part-13/zsqrtd-norm-factorization/card-norm-inert-pow.md)
 
 ## Sources
 

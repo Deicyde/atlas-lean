@@ -2,6 +2,7 @@
 
 - [Cook Levin](cook-levin/README.md)
 - [Karp](karp/README.md)
+- [Classes](classes/README.md)
 - [Dense SAT](dense-sat/README.md)
 - [Dense SATIn NP](dense-satin-np/README.md)
 - [Dense SATVerifier](dense-satverifier/README.md)

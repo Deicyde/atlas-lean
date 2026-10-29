@@ -3,7 +3,7 @@ article_id: af_361ab9a75ac8234c824c47ad
 navigation: transparent
 ---
 
-# Euler Fermat Prime Power to Gaussian Int Split Primes
+# Euler Fermat Prime Power to Gaussian Int Prime Classification
 
 - [Euler Fermat Prime Power](euler-fermat-prime-power/README.md)
 - [Euler Prime](euler-prime/README.md)
@@ -24,4 +24,4 @@ navigation: transparent
 - [Frobenius Pseudoprime](frobenius-pseudoprime/README.md)
 - [Fuss–Catalan numbers](fuss-catalan-number.md)
 - [Gaussian Int Prime Basics](gaussian-int-prime-basics/README.md)
-- [Gaussian Int Split Primes](gaussian-int-split-primes/README.md)
+- [Gaussian Int Prime Classification](gaussian-int-prime-classification/README.md)

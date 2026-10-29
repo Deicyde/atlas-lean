@@ -18,9 +18,9 @@ as the natural number $x$ tends to infinity.
 
 ## Depends on
 
-- [Hardy–Littlewood admissible tuples](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
-- [The prime-tuple counting function](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-prime-tuple-count.md)
-- [The Hardy–Littlewood singular series](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-singular-series.md)
+- [Hardy–Littlewood admissible tuples](../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [The prime-tuple counting function](../../MathlibExt/part-07/hardy-littlewood-prime-tuple/hardy-littlewood-prime-tuple-count.md)
+- [The Hardy–Littlewood singular series](../../MathlibExt/part-07/hardy-littlewood-prime-tuple/hardy-littlewood-singular-series.md)
 
 ## Sources
 

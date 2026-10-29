@@ -22,9 +22,9 @@ problem $\mathrm{INFINITE}_{\mathrm{CFG}}$.
 
 ## Proof depends on
 
-- [Predicates with a primitive recursive decision procedure are computable](../primrec-list/computable-pred-of-primrec-bool.md)
-- [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../part-02/primrec-list/computable-pred-of-primrec-bool.md)
+- [Duplicate removal for lists of natural numbers](../../part-02/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
 - [Items found by the membership procedure](found.md)
 - [The infiniteness test](infinite-b.md)

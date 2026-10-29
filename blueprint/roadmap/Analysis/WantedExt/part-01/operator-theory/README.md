@@ -1,3 +1,17 @@
 # Operator Theory
 
+- [Adjoint Comp Fredholm Closed Range Wanted](is-closed-range-of-is-fredholm-adjoint-c.md)
+- [Compact Operator Kernel Nonseparable Wanted](not-separable-space-ker-of-is-compact-op.md)
+- [Hilbert Adjoint Closed Range Wanted](is-closed-range-adjoint-of-is-closed-ran.md)
+- [Hilbert Integral Operator Lp Bound Wanted](e-lp-norm-hilbert-integral-operator-le.md)
+- [Hilbert Schmidt Finite Rank Bound Wanted](exists-hs-norm-le-mul-op-norm-of-finite.md)
+- [Laplace Transform Lp Bounded Iff Two Wanted](laplace-transform-bounded-on-lp-iff-eq-t.md)
+- [Lp Kernel Integral Operator Bounded Wanted](integrable-kernel-mul-and-exists-clm-int.md)
+- [Mul By Id On L2 One Two Self Adjoint](mul-by-id-on-l2-one-two-self-adjoint-wanted/README.md)
+- [Mul By Identity Bounded On L2 Unit Interval Wanted](exists-continuous-linear-map-mul-id-l2-i.md)
+- [Norm Apply Le Hilbert Schmidt Norm Wanted](norm-apply-le-hs-norm-of-norm-eq-one.md)
+- [Numerical Range Distance Lower Bound Wanted](inf-dist-numerical-range-mul-norm-le-nor.md)
+- [Strong Operator Convergence Iff Weak And Adjoint Wanted](tendsto-apply-iff-tendsto-inner-and-tend.md)
+- [Unilateral Shift Characterization](unilateral-shift-characterization-wanted/README.md)
 - [Expansion of $(XV)^n$ in Bessel numbers](x-mul-volterra-iterate-eq-sum-bessel.md)
+- [Weakly Bounded Operator Family Bounded Wanted](exists-bound-op-norm-of-forall-inner-bou.md)

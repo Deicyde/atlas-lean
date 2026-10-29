@@ -30,7 +30,7 @@ allowed before, between and after the letters.
 - [The ε-closure is reachability along ε-moves](mem-closure-iff.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 - [One step of an encoded NFA on a list of states](step-list.md)
-- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-02/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ language of $g$.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Sound items](sound-item.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

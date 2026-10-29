@@ -22,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sets that cover every unit arc](../../../MathlibExt/moser-worm-cover/covers-every-unit-arc.md)
-- [Wetzel's sector](../../../MathlibExt/moser-worm-cover/wetzel-sector.md)
+- [Sets that cover every unit arc](../../../MathlibExt/part-01/moser-worm-cover/covers-every-unit-arc.md)
+- [Wetzel's sector](../../../MathlibExt/part-01/moser-worm-cover/wetzel-sector.md)
 
 ## Sources
 

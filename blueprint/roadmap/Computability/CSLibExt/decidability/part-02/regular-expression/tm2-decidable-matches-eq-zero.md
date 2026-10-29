@@ -23,8 +23,8 @@ language it denotes is empty (E_REX) is decidable by a multi-stack machine.
 
 ## Proof depends on
 
-- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Predicates with a primitive recursive decision procedure are computable](../primrec-list/computable-pred-of-primrec-bool.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 - [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)

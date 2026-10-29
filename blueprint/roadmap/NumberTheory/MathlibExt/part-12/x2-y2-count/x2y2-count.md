@@ -41,7 +41,7 @@ Equivalently, this counts the integer pairs $(x, y)$ with $x^2 + 2y^2 = t$.
 - [The enumeration of the units of ℤ(√−2) is injective](../zsqrtd-neg-two-primes/unit-val-inj.md)
 - [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
 - [Primes $p \equiv 1, 3 \pmod 8$ are norms of primes of $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split.md)
-- [Norm counts determined by prime powers](../zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
+- [Norm counts determined by prime powers](../../part-13/zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
 
 ## Sources
 

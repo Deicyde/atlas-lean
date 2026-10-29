@@ -14,7 +14,7 @@ $s_1(n) = 2^{k-1} \bigl(\tau(r, k - 1) - \tau(r + 1, k - 1)\bigr) + (k + 2)/2$.
 
 ## Depends on
 
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

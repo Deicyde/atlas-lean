@@ -1,0 +1,25 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted.hallOvergroupDPi_holds
+---
+
+# Hall Overgroup DPi holds
+
+Resolved true: the Kourovka Archive answers 17.44(b) "Yes, it is", citing Manzaeva
+(arXiv:1504.03137) and Vdovin, Manzaeva and Revin (2020): in a finite `D_π`-group every subgroup
+containing a Hall `π`-subgroup is a `D_π`-group. Source: E. I. Khukhro and V. D. Mazurov (eds.),
+Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026),
+Archive of Solved Problems, Problem 17.44 (E. P. Vdovin, D. O. Revin); resolution: (a) E. P. Vdovin
+and D. O. Revin, Siberian Math. J. 54 (2013), 22-28; (b) N. Ch. Manzaeva, preprint,
+arXiv:1504.03137, and E. P. Vdovin, N. Ch. Manzaeva and D. O. Revin, Sb. Math. 211 (2020), 309-335,
+Kourovka Archive, Problem 17.44 (a) Yes, it is; b) Yes, it is), https://arxiv.org/abs/1504.03137.
+
+## Depends on
+
+- [Hall Overgroup DPi](hall-overgroup-dpi.md)
+
+## Sources
+
+- [WantedExt, WantedExt.GroupTheory.HallOvergroupCPiDPiKourovka17Problem44Wanted](../../../../../sources/v2/WantedExt.md)

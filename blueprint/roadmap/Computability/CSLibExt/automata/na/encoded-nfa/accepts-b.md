@@ -19,7 +19,7 @@ letter of $w$ in turn, following the transitions on that letter and taking the Î
 ## Proof depends on
 
 - [Run of an encoded NFA](run.md)
-- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-02/primrec-list/mem-b.md)
 
 ## Sources
 

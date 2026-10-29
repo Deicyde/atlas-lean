@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Multiplicative Additive Paired Squares to Oeis A265233
+# Modified Degenerate Bernoulli to Oeis A002897
 
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli-wanted/README.md)
+- [Modular Inverse Product Mean](modular-inverse-product-mean-wanted/README.md)
 - [Multiplicative Additive Paired Squares](multiplicative-additive-paired-squares-wanted/README.md)
 - [NLagrange Spectrum](nlagrange-spectrum-wanted/README.md)
 - [Nagell Ljunggren Cube Residues](nagell-ljunggren-cube-residues-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Odd Zeta Dirichlet Beta Euler](odd-zeta-dirichlet-beta-euler-wanted/README.md)
 - [Odlyzko's root discriminant bound in degree at least 18](odlyzko-root-discr-ge.md)
 - [Oeis A002897](oeis-a002897-wanted/README.md)
-- [Oeis A022030](oeis-a022030-wanted/README.md)
-- [Oeis A265233](oeis-a265233-wanted/README.md)

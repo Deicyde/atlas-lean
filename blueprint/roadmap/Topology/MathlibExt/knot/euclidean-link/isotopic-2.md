@@ -20,7 +20,7 @@ $t \in \mathbb{R}$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Smooth ambient isotopy of Euclidean 3-space](ambient-isotopy.md)
 - [Orientation-preserving reparametrization of the circle](circle-reparam.md)
 - [Parametrized knot](parametrized-knot.md)

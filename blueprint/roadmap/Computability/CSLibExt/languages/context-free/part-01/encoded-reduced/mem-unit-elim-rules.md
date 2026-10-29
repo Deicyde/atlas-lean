@@ -23,8 +23,8 @@ eliminating unit productions.
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-02/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [Decoding a production](../encoded/decode-rule.md)
 - [Decoding a grammar symbol](../encoded/decode-symbol.md)
 - [Encoding a grammar symbol](../encoded/encode-symbol.md)

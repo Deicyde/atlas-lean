@@ -18,7 +18,7 @@ truncated at $0$.
 
 - [Basic vectors of type (B)](is-exact-slow-nim-basic-b.md)
 - [Basic-vector value](exact-slow-nim-basic-value.md)
-- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

@@ -17,8 +17,8 @@ $x$ that is $(m - 1)$-critical, and it is the position reached from $x$ by the M
 
 - [$m$-critical positions of exact slow $k$-NIM](is-exact-slow-nim-critical.md)
 - [The M-move](exact-slow-nim-mrule-move.md)
-- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
-- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-after.md)
+- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

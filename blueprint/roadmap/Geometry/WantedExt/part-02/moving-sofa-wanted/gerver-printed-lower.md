@@ -13,7 +13,7 @@ can carry through the right-angled corridor of width $1$, is at least $2.2195$.
 
 ## Depends on
 
-- [Optimal sofa area](../../../MathlibExt/moving-sofa/optimal-area.md)
+- [Optimal sofa area](../../../MathlibExt/part-01/moving-sofa/optimal-area.md)
 
 ## Sources
 

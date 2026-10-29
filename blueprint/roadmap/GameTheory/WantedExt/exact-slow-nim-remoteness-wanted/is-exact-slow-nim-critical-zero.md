@@ -23,8 +23,8 @@ has remoteness $0$.
 
 - [Smith's remoteness function](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Smith's remoteness vanishes at terminal positions](../../MathlibExt/smith-remoteness/smith-remoteness-of-moves-eq-empty.md)
-- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
-- [The empty position has no options](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves-zero.md)
+- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-game.md)
+- [The empty position has no options](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves-zero.md)
 
 ## Sources
 

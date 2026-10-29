@@ -30,8 +30,8 @@ $q$, then $p$ is a start state of $\rho$ for $q$ given the items found for $g$ a
 
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
-- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Bounded monotone rounds on lists close off](../../part-02/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Candidate items for a grammar and a DFA](dfa-items.md)
 - [Start states of a right-hand side are states of the DFA](dfa-starts-subset.md)

@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Summability of a rising-product series](../../../../../../Analysis/MathlibExt/part-01/specific-limits/summable-neg-pow-mul-pow-div-prod-add-mu.md)
+- [Summability of a rising-product series](../../../../../../Analysis/MathlibExt/part-02/specific-limits/summable-neg-pow-mul-pow-div-prod-add-mu.md)
 
 ## Sources
 

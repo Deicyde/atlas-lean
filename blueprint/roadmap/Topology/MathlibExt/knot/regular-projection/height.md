@@ -12,7 +12,7 @@ $x = (x_1, x_2, x_3)$ of Euclidean 3-space is its third coordinate $x_3$.
 
 ## Depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

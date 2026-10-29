@@ -22,7 +22,7 @@ It equals the partition function at time $t$ and takes $O(t n^2)$ operations.
 ## Proof depends on
 
 - [Tabulated CRF forward algorithm](forward-tab.md)
-- [Sum of the entries of a vector](../../sequence/hidden-markov/sum-vec.md)
+- [Sum of the entries of a vector](../../../part-02/sequence/hidden-markov/sum-vec.md)
 
 ## Sources
 

@@ -3,8 +3,9 @@ article_id: af_7236500c7619ae73e591d053
 navigation: transparent
 ---
 
-# Chowla And Twin Prime Over Fq T to De Bruijn Newman
+# Chebyshev Sign Change to Cyclotomic Trace Metric
 
+- [Chebyshev Sign Change](chebyshev-sign-change-wanted/README.md)
 - [Chowla And Twin Prime Over Fq T](chowla-and-twin-prime-over-fq-twanted/README.md)
 - [Class Number Bernoulli Euler Congruence](class-number-bernoulli-euler-congruence-wanted/README.md)
 - [Collatz Arithmetic Derivative](collatz-arithmetic-derivative-wanted/README.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Cyclic Number Gaps](cyclic-number-gaps-wanted/README.md)
 - [Cyclotomic Product Ramanujan Sums](cyclotomic-product-ramanujan-sums-wanted/README.md)
 - [Cyclotomic Trace Metric](cyclotomic-trace-metric-wanted/README.md)
-- [De Bruijn Newman](de-bruijn-newman-wanted/README.md)

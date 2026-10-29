@@ -97,7 +97,7 @@ navigation: collection
 - [Engel Expansion](part-04/engel-expansion/README.md)
 - [Erdos Minimum Overlap Constant](part-04/erdos-minimum-overlap-constant/README.md)
 
-## [Euler Fermat Prime Power to Gaussian Int Split Primes](part-05/README.md)
+## [Euler Fermat Prime Power to Gaussian Int Prime Classification](part-05/README.md)
 
 - [Euler Fermat Prime Power](part-05/euler-fermat-prime-power/README.md)
 - [Euler Prime](part-05/euler-prime/README.md)
@@ -118,10 +118,11 @@ navigation: collection
 - [Frobenius Pseudoprime](part-05/frobenius-pseudoprime/README.md)
 - [Fuss–Catalan numbers](part-05/fuss-catalan-number.md)
 - [Gaussian Int Prime Basics](part-05/gaussian-int-prime-basics/README.md)
-- [Gaussian Int Split Primes](part-05/gaussian-int-split-primes/README.md)
+- [Gaussian Int Prime Classification](part-05/gaussian-int-prime-classification/README.md)
 
-## [Gelfond Schneider to Hardy Littlewood Prime Tuple](part-06/README.md)
+## [Gaussian Int Split Primes to Giuga number](part-06/README.md)
 
+- [Gaussian Int Split Primes](part-06/gaussian-int-split-primes/README.md)
 - [Gelfond Schneider](part-06/gelfond-schneider/README.md)
 - [General Arithmetical Eulerian Polynomial](part-06/general-arithmetical-eulerian-polynomial/README.md)
 - [Prime divisibility of generalized Catalan numbers](part-06/generalized-catalan-prime-dvd-iff-not-ge.md)
@@ -134,17 +135,18 @@ navigation: collection
 - [Generalized Lucasnomial Fuss Catalan](part-06/generalized-lucasnomial-fuss-catalan/README.md)
 - [Generalized Lucasnomial Fuss Catalan Number](part-06/generalized-lucasnomial-fuss-catalan-number/README.md)
 - [Generalized Sylvester](part-06/generalized-sylvester/README.md)
+- [Generalized Tribonacci](part-06/generalized-tribonacci/README.md)
 - [Genocchi Bernoulli](part-06/genocchi-bernoulli/README.md)
 - [Genocchi Number](part-06/genocchi-number/README.md)
 - [Gessel Word](part-06/gessel-word/README.md)
 - [Cassini identity for Gibonacci numbers](part-06/gibonacci-cassini-of-pos.md)
 - [Gibonacci Number](part-06/gibonacci-number/README.md)
 - [Giuga number](part-06/is-giuga-number.md)
-- [Hankel Transform](part-06/hankel-transform/README.md)
-- [Hardy Littlewood Prime Tuple](part-06/hardy-littlewood-prime-tuple/README.md)
 
-## [Sums of harmonic numbers starting from the second are not integers to Landsberg–Schaar relation](part-07/README.md)
+## [Hankel Transform to Labos prime](part-07/README.md)
 
+- [Hankel Transform](part-07/hankel-transform/README.md)
+- [Hardy Littlewood Prime Tuple](part-07/hardy-littlewood-prime-tuple/README.md)
 - [Sums of harmonic numbers starting from the second are not integers](part-07/harmonic-partial-sum-not-int.md)
 - [Hensel Factorization](part-07/hensel-factorization/README.md)
 - [Higher-order harmonic numbers](part-07/higher-harmonic.md)
@@ -163,11 +165,11 @@ navigation: collection
 - [KPerfect](part-07/kperfect/README.md)
 - [Keith Number](part-07/keith-number/README.md)
 - [Labos prime](part-07/is-labos-prime.md)
-- [Lambert Series Variants](part-07/lambert-series-variants/README.md)
-- [Landsberg–Schaar relation](part-07/landsberg-schaar.md)
 
-## [Laplace Q-polynomial families to Odd Greedy Choice](part-08/README.md)
+## [Lambert Series Variants to Normal Number](part-08/README.md)
 
+- [Lambert Series Variants](part-08/lambert-series-variants/README.md)
+- [Landsberg–Schaar relation](part-08/landsberg-schaar.md)
 - [Laplace Q-polynomial families](part-08/is-laplace-qfamily.md)
 - [Hermite–Lindemann theorem](part-08/hermite-lindemann.md)
 - [Lindemann Weierstrass](part-08/lindemann-weierstrass/README.md)
@@ -186,11 +188,11 @@ navigation: collection
 - [Nicol Number](part-08/nicol-number/README.md)
 - [Noncentral Tanny Dowling Polynomial](part-08/noncentral-tanny-dowling-polynomial/README.md)
 - [Normal Number](part-08/normal-number/README.md)
-- [Normal Number Sequence](part-08/normal-number-sequence/README.md)
-- [Odd Greedy Choice](part-08/odd-greedy-choice/README.md)
 
-## [Odd Lichtenberg numbers to Practical number](part-09/README.md)
+## [Normal Number Sequence to Power sums vanish modulo a prime](part-09/README.md)
 
+- [Normal Number Sequence](part-09/normal-number-sequence/README.md)
+- [Odd Greedy Choice](part-09/odd-greedy-choice/README.md)
 - [Odd Lichtenberg numbers](part-09/odd-lichtenberg.md)
 - [Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday)](part-09/odd-perfect-polynomial-is-square.md)
 - [Oppermann Cyclic Numbers](part-09/oppermann-cyclic-numbers/README.md)
@@ -209,11 +211,11 @@ navigation: collection
 - [Polynomial TL1](part-09/polynomial-tl1/README.md)
 - [Power Free](part-09/power-free/README.md)
 - [Power sums vanish modulo a prime](part-09/power-sum-vanishing-mod-prime.md)
-- [Powerful Numbers Arithmetic Progressions](part-09/powerful-numbers-arithmetic-progressions/README.md)
-- [Practical number](part-09/is-practical-number.md)
 
-## [Prime gap to SCullen Number](part-10/README.md)
+## [Powerful Numbers Arithmetic Progressions to Roth's theorem with divisibility conditions](part-10/README.md)
 
+- [Powerful Numbers Arithmetic Progressions](part-10/powerful-numbers-arithmetic-progressions/README.md)
+- [Practical number](part-10/is-practical-number.md)
 - [Prime gap](part-10/prime-gap.md)
 - [Prime Gap Liminf](part-10/prime-gap-liminf/README.md)
 - [Prime Gaps Near Primorials](part-10/prime-gaps-near-primorials/README.md)
@@ -232,11 +234,11 @@ navigation: collection
 - [Rearick Logarithm](part-10/rearick-logarithm/README.md)
 - [Ridout's $p$-adic extension of Roth's theorem](part-10/ridout-padic-roth.md)
 - [Roth's theorem with divisibility conditions](part-10/finite-of-divisible-approximations.md)
-- [Rough Numbers](part-10/rough-numbers/README.md)
-- [SCullen Number](part-10/scullen-number/README.md)
 
-## [Selberg Sieve to Thue–Siegel–Roth theorem](part-11/README.md)
+## [Rough Numbers to Thābit ibn Qurra's theorem](part-11/README.md)
 
+- [Rough Numbers](part-11/rough-numbers/README.md)
+- [SCullen Number](part-11/scullen-number/README.md)
 - [Selberg Sieve](part-11/selberg-sieve/README.md)
 - [Simsek Number](part-11/simsek-number/README.md)
 - [Socialist Prime](part-11/socialist-prime/README.md)
@@ -255,11 +257,12 @@ navigation: collection
 - [Telescopic Sequence](part-11/telescopic-sequence/README.md)
 - [Tetranacci Sequence](part-11/tetranacci.md)
 - [Thābit ibn Qurra's theorem](part-11/thabit-ibn-qurra.md)
-- [Thue Lemma](part-11/thue-lemma/README.md)
-- [Thue–Siegel–Roth theorem](part-11/thue-siegel-roth.md)
 
-## [Tribonacci sequence to Zsqrtd Norm Factorization](part-12/README.md)
+## [Thue Lemma to Zsqrtd Neg Two Primes](part-12/README.md)
 
+- [Thue Lemma](part-12/thue-lemma/README.md)
+- [Thue–Siegel–Roth theorem](part-12/thue-siegel-roth.md)
+- [Tribonacci Int](part-12/tribonacci-int/README.md)
 - [Tribonacci sequence](part-12/tribonacci.md)
 - [Tribonacci sequence with initial values 1, 1, 1](part-12/tribonacci-with-initial-values111.md)
 - [Trinomial coefficient](part-12/trinomial-coefficient.md)
@@ -277,4 +280,7 @@ navigation: collection
 - [Kachi–Tzermias infinite products for $\zeta(3)$](part-12/zeta-three-infinite-product-formulas.md)
 - [Zsqrtd Neg Two Euclidean](part-12/zsqrtd-neg-two-euclidean/README.md)
 - [Zsqrtd Neg Two Primes](part-12/zsqrtd-neg-two-primes/README.md)
-- [Zsqrtd Norm Factorization](part-12/zsqrtd-norm-factorization/README.md)
+
+## [Part 13 of 13](part-13/README.md)
+
+- [Zsqrtd Norm Factorization](part-13/zsqrtd-norm-factorization/README.md)

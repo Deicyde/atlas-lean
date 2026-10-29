@@ -16,9 +16,9 @@ allowed.
 
 ## Depends on
 
-- [Covering by interior translates](../../../../MathlibExt/convex/covering/covered-by-interior-translates.md)
-- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Covering by interior translates](../../../../MathlibExt/part-01/convex/covering/covered-by-interior-translates.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-directions.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ $a_n = \mu_0 M_{n,0}$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Jacobi continued fraction expansion](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Jacobi continued fraction expansion](../../../../../NumberTheory/MathlibExt/part-07/hankel-transform/has-jacobi-fraction.md)
 
 ## Sources
 

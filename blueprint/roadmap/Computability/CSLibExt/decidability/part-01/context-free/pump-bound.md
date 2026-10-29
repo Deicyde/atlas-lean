@@ -21,7 +21,7 @@ grammar.
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
+- [Duplicate removal for lists of natural numbers](../../part-02/primrec-list/dedup-b.md)
 - [Right-hand side length bound](len-bound.md)
 
 ## Sources

@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Walking To Infinity to Zeta Subconvexity Bounds
+# Van Der Waerden Conjecture to Zeta Subconvexity Bounds
 
+- [Van Der Waerden Conjecture](van-der-waerden-conjecture-wanted/README.md)
+- [Subsequences of a second-order linear recurrence](subsequence-second-order-recurrence.md)
+- [Vinogradov Mean Value](vinogradov-mean-value-wanted/README.md)
 - [Walking To Infinity](walking-to-infinity-wanted/README.md)
 - [Weakly Prime Additive](weakly-prime-additive-wanted/README.md)
 - [Weighted Dirichlet Convolution](weighted-dirichlet-convolution-wanted/README.md)

@@ -24,7 +24,7 @@ $0.260437$.
 
 ## Proof depends on
 
-- [Covers give upper bounds on the nonconvex worm cover constant](../../../MathlibExt/moser-worm-cover/nonconvex-upper-bound-of-cover.md)
+- [Covers give upper bounds on the nonconvex worm cover constant](../../../MathlibExt/part-01/moser-worm-cover/nonconvex-upper-bound-of-cover.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ is the knot with the same parametrization as component $1$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized knots as knots](of-parametrized-knot.md)
 - [Oriented smooth knot](../conway-knot-shared/knot.md)
 - [Euclidean space $\mathbb{R}^3$](../conway-knot-shared/r3.md)

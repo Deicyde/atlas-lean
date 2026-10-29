@@ -13,7 +13,7 @@ $h, h' \in H$, every prime factor of $h - h'$ is at most $k$.
 
 ## Depends on
 
-- [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
+- [Admissible finite sets of integers](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-admissible-finset.md)
 - [Difference-smooth sets of integers](is-difference-smooth.md)
 
 ## Sources

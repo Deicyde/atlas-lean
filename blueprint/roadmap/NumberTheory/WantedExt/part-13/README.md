@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Oeis Conjectures to Prime Gap Bounds Hypotheses
+# Oeis A022030 to Powerful Numbers
 
+- [Oeis A022030](oeis-a022030-wanted/README.md)
+- [Oeis A265233](oeis-a265233-wanted/README.md)
 - [Oeis Conjectures](oeis-conjectures-wanted/README.md)
 - [Olympic Games Numeration](olympic-games-numeration-wanted/README.md)
 - [On Approximation Of Reals](on-approximation-of-reals-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Polynomial Cubes](polynomial-cubes-wanted/README.md)
 - [Pow Add Pow Eq Sq](pow-add-pow-eq-sq-wanted/README.md)
 - [Powerful Numbers](powerful-numbers-wanted/README.md)
-- [Practical Polygonal Sums](practical-polygonal-sums-wanted/README.md)
-- [Prime Gap Bounds Hypotheses](prime-gap-bounds-hypotheses/README.md)

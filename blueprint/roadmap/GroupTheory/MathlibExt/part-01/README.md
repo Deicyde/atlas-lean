@@ -3,7 +3,7 @@ article_id: af_b1385140a5dce86848f6c5ce
 navigation: transparent
 ---
 
-# Burnside Paqb to Exponent of the general linear group over a prime field
+# Burnside Paqb to GHarmonic
 
 - [Burnside Paqb](burnside-paqb/README.md)
 - [Finite Abelian](finite-abelian/README.md)
@@ -21,7 +21,7 @@ navigation: transparent
 - [Cyclic Sublattice](cyclic-sublattice/README.md)
 - [Dickson PGL2 Tame](dickson-pgl2-tame/README.md)
 - [Dickson PGL2 Wild](dickson-pgl2-wild/README.md)
+- [Uniqueness of elementary divisors](elementary-divisors-unique.md)
 - [Finite Abelian Dual](finite-abelian-dual/README.md)
 - [Finite Group Convolution](finite-group-convolution/README.md)
 - [GHarmonic](gharmonic/README.md)
-- [Exponent of the general linear group over a prime field](general-linear-group-exponent-eq-lcm-eq.md)

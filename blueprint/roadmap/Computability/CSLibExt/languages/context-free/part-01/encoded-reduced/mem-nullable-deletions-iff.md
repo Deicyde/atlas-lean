@@ -26,7 +26,7 @@ nonterminals of $g$.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [The nullable nonterminals are computed](mem-nullable-iff.md)
 - [Nullable nonterminal](../reduced/nullable.md)
 

@@ -26,7 +26,7 @@ infinite.
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [Words of a given length](words-of-length.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

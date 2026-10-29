@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.TotallyTwoClosedInsolubleKourovka20Problem1Wanted.insolubleTotallyTwoClosedWithNontrivialFitting_holds
+---
+
+# Insoluble Totally Two Closed With Nontrivial Fitting holds
+
+Resolved true: the Kourovka Notebook (21st issue) answers 20.1 "Yes, there are". Kinyon and Urban
+(an AI-generated solution confirmed by G. Tracey) prove that `J₁ × C₁₃` is totally `2`-closed
+(Section 3.34, Lemma 3.11), insoluble and has Fitting subgroup `C₁₃`; the Notebook also obtains `J₁
+× C_p` for primes `p ∈ {13, 17}` or `p > 19` from Theorem 1.1 of
+Arezoomand-Iranmanesh-Praeger-Tracey and Theorem 2 and Proposition 2 of Abdollahi-Arezoomand.
+
+## Depends on
+
+- [Insoluble Totally Two Closed With Nontrivial Fitting](insoluble-totally-two-closed-with-nontri.md)
+
+## Sources
+
+- [WantedExt, WantedExt.GroupTheory.TotallyTwoClosedInsolubleKourovka20Problem1Wanted](../../../../../sources/v2/WantedExt.md)
+- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.1 (M. Arezoomand, M. A. Iranmanesh, C. E. Praeger, G. Tracey); resolution: M. Kinyon and J. Urban, Results on problems from the Kourovka Notebook, preprint, version 4, 19 September 2026; M. Arezoomand, M. A. Iranmanesh, C. E. Praeger and G. Tracey, Bull. Math. Sci. 14 (2024), no. 1, 2350004; A. Abdollahi and M. Arezoomand, J. Algebra Appl. 17 (2018), no. 4, 1850065, Kinyon-Urban, Section 3.34 (Problem 20.1): J1 × C13 is totally 2-closed, insoluble, with Fitting subgroup C13 (Lemma 3.11: direct products of totally 2-closed groups of coprime orders are totally 2-closed), an AI solution confirmed by G. Tracey; the Kourovka Notebook (21st issue) also derives J1 × C_p (p ∈ {13, 17} or p > 19) from Theorem 1.1 of Arezoomand-Iranmanesh-Praeger-Tracey and Theorem 2 and Proposition 2 of Abdollahi-Arezoomand, https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/kourovka-mathematics.pdf.

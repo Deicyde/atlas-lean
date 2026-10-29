@@ -19,7 +19,7 @@ matrix $(c_{i+j})_{0 \le i, j \le n}$.
 ## Depends on
 
 - [Binomial transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
-- [Hankel transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
+- [Hankel transform](../../../../../NumberTheory/MathlibExt/part-07/hankel-transform/hankel-transform.md)
 
 ## Proof depends on
 

@@ -18,7 +18,7 @@ right-hand side in order. It lists without repetitions the nonterminals that $g$
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-02/primrec-list/dedup-b.md)
 
 ## Sources
 

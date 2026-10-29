@@ -18,9 +18,9 @@ observations $x_0, \dots, x_t$.
 
 - [The chain CRF of a hidden Markov model](hmm-to-crf.md)
 - [Weight of a label path in a chain CRF](path-weight.md)
-- [Hidden Markov model](../../sequence/hidden-markov/hmm.md)
-- [Hidden Markov models with nonnegative weights](../../sequence/hidden-markov/nonneg.md)
-- [Joint weight of a state path and the observations](../../sequence/hidden-markov/path-prob.md)
+- [Hidden Markov model](../../../part-02/sequence/hidden-markov/hmm.md)
+- [Hidden Markov models with nonnegative weights](../../../part-02/sequence/hidden-markov/nonneg.md)
+- [Joint weight of a state path and the observations](../../../part-02/sequence/hidden-markov/path-prob.md)
 
 ## Proof depends on
 

@@ -16,7 +16,7 @@ $$S_1(n) = \frac{n \log_2 n}{2} + 2^{k-1} \left(2x - \tau(x) - (1 + x) \log_2 (1
 
 ## Depends on
 
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ polynomial of a Hermitian complex matrix is real-rooted.
 
 ## Depends on
 
-- [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Sources
 

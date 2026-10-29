@@ -17,7 +17,7 @@ where $\odot$ is the binomial product.
 
 ## Depends on
 
-- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
+- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/part-01/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

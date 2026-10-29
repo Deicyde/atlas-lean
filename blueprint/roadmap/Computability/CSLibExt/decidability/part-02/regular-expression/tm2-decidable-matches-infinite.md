@@ -23,7 +23,7 @@ the language it denotes is infinite is decidable by a multi-stack machine.
 
 ## Proof depends on
 
-- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Predicates with a primitive recursive decision procedure are computable](../primrec-list/computable-pred-of-primrec-bool.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 - [Flags of a concatenation](comp-flags.md)
 - [Flags of all nodes](flags.md)

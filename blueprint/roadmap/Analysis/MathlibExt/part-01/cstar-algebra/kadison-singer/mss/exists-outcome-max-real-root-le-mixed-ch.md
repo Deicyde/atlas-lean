@@ -20,7 +20,7 @@ real part of a root of the mixed characteristic polynomial of $A_1, \dots, A_m$.
 ## Depends on
 
 - [Mixed characteristic polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
-- [Largest real part of a root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+- [Largest real part of a root](../../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
@@ -30,8 +30,8 @@ real part of a root of the mixed characteristic polynomial of $A_1, \dots, A_m$.
 - [Degree of a mixed characteristic polynomial](../real-stable/mixed-characteristic-polynomial-nat-degr.md)
 - [The mixed characteristic polynomial along a line](../mixed-char-poly/mixed-characteristic-polynomial-update-a.md)
 - [The mixed characteristic polynomial is affine in each matrix](../mixed-char-poly/mixed-characteristic-polynomial-update-s.md)
-- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
-- [Some member's largest root is at most that of a weighted sum, via real-rooted segments](../../../../../../Algebra/MathlibExt/polynomial/interlacing/exists-max-real-root-le-weighted-sum-of-2.md)
+- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
+- [Some member's largest root is at most that of a weighted sum, via real-rooted segments](../../../../../../Algebra/MathlibExt/polynomial/part-01/interlacing/exists-max-real-root-le-weighted-sum-of-2.md)
 
 ## Sources
 

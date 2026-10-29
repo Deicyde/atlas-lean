@@ -29,7 +29,7 @@ a bound computed from them, and the answers are compared.
 
 ## Proof depends on
 
-- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Predicates with a primitive recursive decision procedure are computable](../primrec-list/computable-pred-of-primrec-bool.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 - [Equivalence test](eq-b.md)
 - [The equivalence test is correct](eq-b-iff.md)

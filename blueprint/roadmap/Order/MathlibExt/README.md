@@ -8,6 +8,7 @@ navigation: collection
 - [Boolean Algebra](boolean-algebra/README.md)
 - [Boolean Function](boolean-function/README.md)
 - [Fixed Points](fixed-points/README.md)
+- [Monotone](monotone/README.md)
 - [Omega Complete Partial Order](omega-complete-partial-order/README.md)
 - [Poset Matrix](poset-matrix/README.md)
 - [Strict Total Order](strict-total-order/README.md)

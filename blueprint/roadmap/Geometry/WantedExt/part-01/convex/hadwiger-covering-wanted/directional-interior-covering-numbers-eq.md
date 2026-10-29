@@ -15,9 +15,9 @@ $\operatorname{int} K$. Both sides take the value $\infty$ when no finite family
 
 ## Depends on
 
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Directional illumination number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
-- [Translate covering number](../../../../MathlibExt/convex/covering/translate-covering-number.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
+- [Directional illumination number](../../../../MathlibExt/part-01/convex/illumination/directional-illumination-number.md)
+- [Translate covering number](../../../../MathlibExt/part-01/convex/covering/translate-covering-number.md)
 
 ## Sources
 

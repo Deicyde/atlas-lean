@@ -20,12 +20,12 @@ $L[X]$.
 
 ## Depends on
 
-- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
 - [Small monic perturbations stay irreducible and separable](exists-pos-irreducible-and-separable-of.md)
-- [L1 norm as a sum over the support](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
+- [L1 norm as a sum over the support](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm-def.md)
 
 ## Sources
 

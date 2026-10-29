@@ -18,7 +18,7 @@ $\lVert n \rVert$ the integer complexity of $n$), is a nonnegative real number.
 
 ## Proof depends on
 
-- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-10/integer-complexity-wanted/cx.md)
 - [Stable numbers for integer complexity](is-complexity-stable.md)
 
 ## Sources

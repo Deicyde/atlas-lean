@@ -15,7 +15,7 @@ primes $p$ with $s_p(n) \ge p$, equals the denominator of the polynomial $B_n(x)
 ## Depends on
 
 - [Denominator of $B_n(x) - B_n$](bernoulli-diff-denominator.md)
-- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

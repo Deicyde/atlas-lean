@@ -15,7 +15,7 @@ where the liminf is taken in $\mathbb{N} \cup \{\infty\}$.
 ## Depends on
 
 - [Liminf of prime gaps](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
-- [Elliott–Halberstam conjecture (dyadic form)](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
+- [Elliott–Halberstam conjecture (dyadic form)](../prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Pile kept by the M-rule](exact-slow-nim-mrule-kept.md)
-- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources
 

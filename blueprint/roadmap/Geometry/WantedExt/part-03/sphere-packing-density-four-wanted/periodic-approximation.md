@@ -24,10 +24,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Packings of congruent balls in $\mathbb{R}^4$](../../../MathlibExt/sphere-packing-density-four/packing.md)
-- [Periodic packings](../../../MathlibExt/sphere-packing-density-four/is-periodic.md)
-- [Sphere-packing density of $\mathbb{R}^4$](../../../MathlibExt/sphere-packing-density-four/sphere-packing-density4.md)
-- [Upper density of a packing](../../../MathlibExt/sphere-packing-density-four/upper-density.md)
+- [Packings of congruent balls in $\mathbb{R}^4$](../../../MathlibExt/part-01/sphere-packing-density-four/packing.md)
+- [Periodic packings](../../../MathlibExt/part-01/sphere-packing-density-four/is-periodic.md)
+- [Sphere-packing density of $\mathbb{R}^4$](../../../MathlibExt/part-01/sphere-packing-density-four/sphere-packing-density4.md)
+- [Upper density of a packing](../../../MathlibExt/part-01/sphere-packing-density-four/upper-density.md)
 
 ## Sources
 

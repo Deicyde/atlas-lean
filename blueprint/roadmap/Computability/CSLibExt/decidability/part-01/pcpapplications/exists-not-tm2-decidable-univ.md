@@ -24,11 +24,11 @@ This is Sipser's problem $\mathit{ALL}_{\mathit{CFG}}$.
 
 ## Proof depends on
 
-- [The complement of PCP many-one reduces to universality of context-free grammars](../pcpuniversality/many-one-reducible-not-pcp-univ.md)
+- [The complement of PCP many-one reduces to universality of context-free grammars](../../part-02/pcpuniversality/many-one-reducible-not-pcp-univ.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
 - [Decidability by multi-stack machines is closed under complement](../basic/not.md)
-- [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
+- [The Post correspondence problem is undecidable](../../part-02/pcpundecidable/exists-not-tm2-decidable-pcp.md)
 - [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources

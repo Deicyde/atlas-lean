@@ -17,13 +17,13 @@ the norms of the coefficients), is irreducible and separable.
 
 ## Depends on
 
-- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
 - [Closest conjugate](../is-closest-conjugate/is-closest-conjugate.md)
 - [Closest conjugate roots of nearby monic polynomials](exists-is-closest-conjugate-root-of-l1-n.md)
-- [Monic polynomials close in L1 norm have the same degree](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
+- [Monic polynomials close in L1 norm have the same degree](../../../../../../Algebra/MathlibExt/polynomial/part-01/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 
 ## Sources
 

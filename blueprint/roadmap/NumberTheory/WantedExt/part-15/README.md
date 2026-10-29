@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Realizable Combinatorial Sequences to Shadow Markoff Tree
+# Ramanujan Order Sixteen to Second Order Gen Fun Integer Values
 
+- [Ramanujan Order Sixteen](ramanujan-order-sixteen-wanted/README.md)
+- [Ramanujan Tau](ramanujan-tau-wanted/README.md)
+- [Ramirez Alfonsin Skalba](ramirez-alfonsin-skalba-wanted/README.md)
 - [Realizable Combinatorial Sequences](realizable-combinatorial-sequences-wanted/README.md)
 - [Reduced Residue Longest AP](reduced-residue-longest-apwanted/README.md)
 - [Morgado's characterization of regular integers](is-regular-mod-iff-gcd-sq-eq-gcd.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Dimitrov's lower bound for the house of an algebraic integer](dimitrov.md)
 - [Schmidt's subspace theorem](schmidt-subspace.md)
 - [Second Order Gen Fun Integer Values](second-order-gen-fun-integer-values-wanted/README.md)
-- [Selberg Class Derivative APoints](selberg-class-derivative-apoints-wanted/README.md)
-- [Selberg Spectral Gap](selberg-spectral-gap-wanted/README.md)
-- [Shadow Markoff Tree](shadow-markoff-tree-wanted/README.md)

@@ -3,8 +3,9 @@ article_id: af_9b52d10e906c6608ee5707e4
 navigation: transparent
 ---
 
-# Positive Minors to Zagier Matrix Inverse
+# Pos Semidef Determinant to Zagier Matrix Inverse
 
+- [Pos Semidef Determinant](pos-semidef-determinant/README.md)
 - [Positive Minors](positive-minors/README.md)
 - [Real SVD](real-svd/README.md)
 - [Reduced Row Echelon](reduced-row-echelon/README.md)

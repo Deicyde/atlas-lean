@@ -16,7 +16,7 @@ A negative integer or zero is never counted as prime.
 
 ## Depends on
 
-- [Hardy–Littlewood admissible tuples](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [Hardy–Littlewood admissible tuples](../../../MathlibExt/part-07/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
 
 ## Sources
 

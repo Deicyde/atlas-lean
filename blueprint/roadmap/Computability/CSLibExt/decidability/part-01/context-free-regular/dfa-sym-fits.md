@@ -21,7 +21,7 @@ $\langle \cdot, \cdot \rangle$ is the natural-number pairing.
 ## Proof depends on
 
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ expectations are finite, where $G$ is a standard Gaussian. Equivalently, such a 
 
 ## Depends on
 
-- [The convex sub-Gaussian comparison constant](../../MathlibExt/part-01/convex-sub-gaussian-comparison/comparison-constant.md)
+- [The convex sub-Gaussian comparison constant](../../MathlibExt/part-02/convex-sub-gaussian-comparison/comparison-constant.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ lean: Cslib.Decidability.exists_not_tm2Recognizable_not_pcp
 
 - [PCP is Turing-recognizable](../pcp/tm2-recognizable-pcp.md)
 - [Decidability by multi-stack machines](../basic/tm2-decidable.md)
-- [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
+- [The Post correspondence problem is undecidable](../../part-02/pcpundecidable/exists-not-tm2-decidable-pcp.md)
 - [Post's theorem, contrapositive](not-tm2-recognizable-not-of.md)
 
 ## Sources

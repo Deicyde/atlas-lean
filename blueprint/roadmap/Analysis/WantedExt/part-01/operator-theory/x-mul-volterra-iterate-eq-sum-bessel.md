@@ -17,7 +17,7 @@ $$(XV)^n f(x) = \sum_{k=0}^{n-1} (-1)^k \, a(n-1, k) \, x^{n-k} \, (V^{n+k} f)(x
 
 ## Depends on
 
-- [Bessel polynomial](../../../../Algebra/MathlibExt/polynomial/bessel-polynomial/bessel-polynomial.md)
+- [Bessel polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/bessel-polynomial/bessel-polynomial.md)
 
 ## Sources
 

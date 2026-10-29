@@ -17,7 +17,7 @@ inverse family is $(H_t)$; at each time $t$ it is the inverse diffeomorphism of 
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

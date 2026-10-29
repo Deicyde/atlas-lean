@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Jacobi triple product identity](../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/jacobi-triple-product.md)
+- [Jacobi triple product identity](../../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/jacobi-triple-product.md)
 
 ## Sources
 

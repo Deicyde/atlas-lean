@@ -16,7 +16,7 @@ The paper prints the non-strict form; Büthe's original bound is strict.
 
 ## Depends on
 
-- [Real logarithmic integral extended by zero](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
+- [Real logarithmic integral extended by zero](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
 
 ## Sources
 

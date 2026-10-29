@@ -1,9 +1,0 @@
----
-article_id: af_76248d77451ceb45948cc9bc
-navigation: module
----
-
-# DVRComplete
-
-- [Algebra maps from an étale DVR extension into a complete one match residue-field maps](residue-field-map-alg-hom-bijective-of-i.md)
-- [Lifting residue-field isomorphisms between complete étale DVR extensions](exists-alg-equiv-lift-residue-field-of-i.md)

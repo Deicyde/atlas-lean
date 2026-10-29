@@ -5,6 +5,7 @@ article_id: af_73cadae1fbe72ab9fc8a562e
 # Dirichlet Character
 
 - [Period](period/README.md)
+- [Primitive Equiv](primitive-equiv/README.md)
 - [Primitive Uniqueness](primitive-uniqueness/README.md)
 - [Quadratic](quadratic/README.md)
 - [Kronecker and Jacobi symbols agree at odd primes](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)

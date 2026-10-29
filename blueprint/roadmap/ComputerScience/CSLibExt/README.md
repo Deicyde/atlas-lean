@@ -5,10 +5,12 @@ navigation: collection
 
 # CSLibExt
 
-## [Bayesian to Symmetric Key](part-01/README.md)
+## [Bayesian to Semantics](part-01/README.md)
 
 - [Bayesian](part-01/bayesian/README.md)
+- [CCS](part-01/ccs/README.md)
 - [Concurrency](part-01/concurrency/README.md)
+- [Data](part-01/data/README.md)
 - [Generative](part-01/generative/README.md)
 - [Graphical Models](part-01/graphical-models/README.md)
 - [Hash](part-01/hash/README.md)
@@ -24,17 +26,19 @@ navigation: collection
 - [Regression](part-01/regression/README.md)
 - [SAT](part-01/sat/README.md)
 - [Sampling](part-01/sampling/README.md)
-- [Sequence](part-01/sequence/README.md)
-- [Signatures](part-01/signatures/README.md)
-- [Symmetric Key](part-01/symmetric-key/README.md)
+- [Semantics](part-01/semantics/README.md)
 
-## [Unification to Weighted Majority](part-02/README.md)
+## [Sequence to Weighted Majority](part-02/README.md)
 
+- [Sequence](part-02/sequence/README.md)
+- [Signatures](part-02/signatures/README.md)
+- [Symmetric Key](part-02/symmetric-key/README.md)
 - [Unification](part-02/unification/README.md)
 - [Variational](part-02/variational/README.md)
 - [Ada Boost](part-02/ada-boost/README.md)
 - [Backpropagation](part-02/backpropagation/README.md)
 - [Gaussian Process Regression](part-02/gaussian-process-regression/README.md)
+- [Hedge](part-02/hedge/README.md)
 - [KMeans](part-02/kmeans/README.md)
 - [Perceptron](part-02/perceptron/README.md)
 - [Weighted Majority](part-02/weighted-majority/README.md)

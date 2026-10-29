@@ -15,7 +15,7 @@ centrally symmetric when there is a point $c$ with $x \in K$ if and only if $2c 
 
 ## Depends on
 
-- [Uniform bound for covering centrally symmetric convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-symmetric-interior-translate-bou.md)
+- [Uniform bound for covering centrally symmetric convex bodies by interior translates](../../../../MathlibExt/part-01/convex/covering/uniform-symmetric-interior-translate-bou.md)
 
 ## Sources
 

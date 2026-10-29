@@ -15,7 +15,7 @@ $\prod_{j \ge 0} (q^{3^j}; q^{3^{j+1}})_\infty\, (q^{2 \cdot 3^j}; q^{3^{j+1}})_
 
 ## Depends on
 
-- [Infinite q-Pochhammer symbol](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

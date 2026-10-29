@@ -18,7 +18,7 @@ from $x$ to the other points of $X$ is less than $t$.
 
 ## Proof depends on
 
-- [Number of distinct distances from a point](../../../MathlibExt/metric/distinct-distances-from.md)
+- [Number of distinct distances from a point](../../../MathlibExt/part-01/metric/distinct-distances-from.md)
 
 ## Sources
 

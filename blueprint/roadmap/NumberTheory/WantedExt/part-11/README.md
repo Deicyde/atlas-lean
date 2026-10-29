@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Leonardo P to Modular Inverse Product Mean
+# Lemoine's conjecture up to $10^{13}$ to Mod Inverse Switching
 
+- [Lemoine's conjecture up to $10^{13}$](lemoine-of-le-ten-pow-thirteen.md)
+- [Leonardo PTilings](leonardo-ptilings-wanted/README.md)
 - [Leonardo P](leonardo-pwanted/README.md)
 - [Lex Minimal Extension Monoid](lex-minimal-extension-monoid-wanted/README.md)
 - [Linear Subspaces](linear-subspaces-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Mobius Fermat](mobius-fermat-wanted/README.md)
 - [Mock Theta Coefficients](mock-theta-coefficients-wanted/README.md)
 - [Mod Inverse Switching](mod-inverse-switching-wanted/README.md)
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli-wanted/README.md)
-- [Modular Inverse Product Mean](modular-inverse-product-mean-wanted/README.md)

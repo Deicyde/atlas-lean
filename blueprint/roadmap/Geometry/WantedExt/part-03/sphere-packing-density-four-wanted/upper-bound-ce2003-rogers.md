@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sphere-packing density of $\mathbb{R}^4$](../../../MathlibExt/sphere-packing-density-four/sphere-packing-density4.md)
+- [Sphere-packing density of $\mathbb{R}^4$](../../../MathlibExt/part-01/sphere-packing-density-four/sphere-packing-density4.md)
 
 ## Sources
 

@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Extended Continuant to Gcd Sum Mean Square
+# Even Pseudoprimes to Gcd Arithmetic Term
 
+- [Even Pseudoprimes](even-pseudoprimes-wanted/README.md)
+- [Exponential Diophantine](exponential-diophantine-wanted/README.md)
 - [Extended Continuant](extended-continuant-wanted/README.md)
 - [Farey Numerator](farey-numerator-wanted/README.md)
 - [Farey Staircase](farey-staircase-wanted/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Gauss Primitive Roots](gauss-primitive-roots-wanted/README.md)
 - [Gauss Wantzel](gauss-wantzel-wanted/README.md)
 - [Gcd Arithmetic Term](gcd-arithmetic-term-wanted/README.md)
-- [Gcd Lucas Theorem](gcd-lucas-theorem-wanted/README.md)
-- [Gcd Sum Mean Square](gcd-sum-mean-square-wanted/README.md)

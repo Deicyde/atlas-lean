@@ -23,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Duplicate removal for lists of natural numbers](../../part-01/primrec-list/dedup-b.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

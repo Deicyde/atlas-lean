@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Eberlein–Šmulian theorem](eberlein-smulian.md)
-- [Milman–Pettis theorem](milman-pettis.md)
+- [Milman–Pettis theorem](../part-02/milman-pettis.md)
 
 ## Sources
 

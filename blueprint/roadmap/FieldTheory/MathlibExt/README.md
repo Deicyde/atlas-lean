@@ -12,5 +12,6 @@ navigation: collection
 - [Hermite–Dickson criterion](hermite-dickson-permutation-criterion.md)
 - [Puiseux Theorem](puiseux-theorem/README.md)
 - [Purely inseparable extensions of prime degree](exists-minpoly-x-pow-sub-c-of-finrank-eq.md)
+- [Sep Closed Tensor Split](sep-closed-tensor-split/README.md)
 - [Finite separable extensions are quotients by separable irreducible polynomials](is-separable-iff-exists-monic-irreducibl.md)
 - [Tsen's theorem](tsen.md)

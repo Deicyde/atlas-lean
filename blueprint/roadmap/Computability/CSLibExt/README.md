@@ -10,6 +10,7 @@ navigation: collection
 - [Complexity](complexity/README.md)
 - [Decidability](decidability/README.md)
 - [Distributed](distributed/README.md)
+- [Games](games/README.md)
 - [Kolmogorov](kolmogorov/README.md)
 - [Languages](languages/README.md)
 - [Machines](machines/README.md)

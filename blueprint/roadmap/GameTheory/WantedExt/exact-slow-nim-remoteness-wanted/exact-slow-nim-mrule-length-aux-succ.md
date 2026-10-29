@@ -18,7 +18,7 @@ from $x$ by the M-move.
 
 - [Fuel-bounded length of M-rule play](exact-slow-nim-mrule-length-aux.md)
 - [The M-move](exact-slow-nim-mrule-move.md)
-- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+- [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-10/slow-anim-wanted/slow-anim-moves.md)
 
 ## Proof depends on
 

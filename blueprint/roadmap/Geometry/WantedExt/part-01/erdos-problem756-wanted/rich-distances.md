@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Multiplicity of a distance](../../../MathlibExt/metric/distance-multiplicity.md)
-- [Distance set of a finite point set](../../../MathlibExt/metric/distance-set.md)
+- [Multiplicity of a distance](../../../MathlibExt/part-01/metric/distance-multiplicity.md)
+- [Distance set of a finite point set](../../../MathlibExt/part-01/metric/distance-set.md)
 
 ## Sources
 

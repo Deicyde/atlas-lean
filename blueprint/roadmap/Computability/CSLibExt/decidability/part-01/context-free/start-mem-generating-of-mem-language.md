@@ -20,7 +20,7 @@ of $g$ computed by the emptiness procedure.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [A sentential form containing an empty nonterminal denotes the empty language](eval-form-eq-zero-of-mem.md)

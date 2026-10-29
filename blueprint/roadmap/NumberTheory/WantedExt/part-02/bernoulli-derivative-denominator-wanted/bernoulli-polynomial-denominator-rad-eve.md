@@ -24,7 +24,7 @@ above follows that proof.
 ## Depends on
 
 - [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
-- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

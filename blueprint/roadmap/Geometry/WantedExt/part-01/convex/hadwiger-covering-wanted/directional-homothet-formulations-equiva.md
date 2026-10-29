@@ -16,9 +16,9 @@ allowed.
 
 ## Depends on
 
-- [Covering by smaller positive homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
-- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Covering by smaller positive homothets](../../../../MathlibExt/part-01/convex/covering/covered-by-smaller-positive-homothets.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/part-01/convex/illumination/illuminated-by-directions.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/part-01/convex/covering/is-convex-body.md)
 
 ## Sources
 

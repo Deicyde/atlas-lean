@@ -21,7 +21,7 @@ This node has no prerequisites.
 - [Rounding division on $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/div-def.md)
 - [The remainder is smaller than the divisor, in absolute norm](../zsqrtd-neg-two-euclidean/nat-abs-norm-mod-lt.md)
 - [Multiplying by a nonzero element does not decrease the norm in $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/norm-le-norm-mul-left.md)
-- [Elements of $\mathbb{Z}(\sqrt{d})$ of prime norm are prime](../zsqrtd-norm-factorization/prime-of-nat-abs-norm-prime.md)
+- [Elements of $\mathbb{Z}(\sqrt{d})$ of prime norm are prime](../../part-13/zsqrtd-norm-factorization/prime-of-nat-abs-norm-prime.md)
 
 ## Sources
 

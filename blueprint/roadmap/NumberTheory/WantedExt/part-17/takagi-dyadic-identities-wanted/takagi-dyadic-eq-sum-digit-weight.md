@@ -23,7 +23,7 @@ The paper prints the inner sum as $\sum_{j=i}^{k} n_i$; it is read here as $\sum
 
 ## Depends on
 
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ It returns true exactly when the language of $D$ contains every word over $\alph
 ## Proof depends on
 
 - [Reachable states of an encoded DFA](reachable-2.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

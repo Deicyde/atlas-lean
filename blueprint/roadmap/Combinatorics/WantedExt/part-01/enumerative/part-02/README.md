@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Degenerate Harmonic Riordan to Incomplete Binomial Harmonic Sums
+# Degenerate Harmonic Riordan to Identity Product Necklace
 
 - [Degenerate Harmonic Riordan](degenerate-harmonic-riordan-wanted/README.md)
 - [Delannoy Constructions](delannoy-constructions-wanted/README.md)
@@ -23,4 +23,4 @@ navigation: transparent
 - [Hyperbolic Pascal Alternating Sums](hyperbolic-pascal-alternating-sums-wanted/README.md)
 - [Hypersequence Elementary Symmetric](hypersequence-elementary-symmetric-wanted/README.md)
 - [Hypersequence Weighted Sums](hypersequence-weighted-sums-wanted/README.md)
-- [Incomplete Binomial Harmonic Sums](incomplete-binomial-harmonic-sums-wanted/README.md)
+- [Identity Product Necklace](identity-product-necklace-wanted/README.md)

@@ -27,8 +27,9 @@ article_id: af_e551606fe376cd7328f3543f
 - [Perron Frobenius](part-01/perron-frobenius/README.md)
 - [Polar Decomposition GL](part-01/polar-decomposition-gl/README.md)
 
-## [Positive Minors to Zagier Matrix Inverse](part-02/README.md)
+## [Pos Semidef Determinant to Zagier Matrix Inverse](part-02/README.md)
 
+- [Pos Semidef Determinant](part-02/pos-semidef-determinant/README.md)
 - [Positive Minors](part-02/positive-minors/README.md)
 - [Real SVD](part-02/real-svd/README.md)
 - [Reduced Row Echelon](part-02/reduced-row-echelon/README.md)

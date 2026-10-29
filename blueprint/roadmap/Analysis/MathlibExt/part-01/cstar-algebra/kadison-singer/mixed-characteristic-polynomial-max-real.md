@@ -18,7 +18,7 @@ $A_1, \dots, A_m$ is at most $(1 + \sqrt{\eta})^2$.
 ## Depends on
 
 - [Mixed characteristic polynomial](mixed-char-poly/mixed-characteristic-polynomial.md)
-- [Largest real part of a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+- [Largest real part of a root](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
@@ -40,9 +40,9 @@ $A_1, \dots, A_m$ is at most $(1 + \sqrt{\eta})^2$.
 - [Mixed differential operator](../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 - [Mixed differential along a list with a given first index](../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
 - [Univariate specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
-- [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
-- [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)
-- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
+- [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
+- [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/coe-max-real-root-mem-roots.md)
+- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
 
 ## Sources
 

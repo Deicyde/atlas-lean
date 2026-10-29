@@ -17,7 +17,7 @@ images of its components), a value in $[0, \infty]$ computed with the division o
 
 ## Proof depends on
 
-- [Thickness](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/thickness.md)
+- [Thickness](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/thickness.md)
 - [Total contour length of a parametrized link](total-contour-length.md)
 - [Trace of a parametrized link](trace.md)
 

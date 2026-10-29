@@ -18,12 +18,12 @@ where both integrals are taken in $[0, \infty]$.
 ## Depends on
 
 - [Absolute loss](abs-loss.md)
-- [Median of a measure on the real line](../../../../../Probability/MathlibExt/part-02/median/is-median.md)
+- [Median of a measure on the real line](../../../../../Probability/MathlibExt/part-04/median/is-median.md)
 
 ## Proof depends on
 
-- [Absolute deviations are integrable exactly when the mean exists](../../../../../Probability/MathlibExt/part-02/median/integrable-abs-sub-iff.md)
-- [A median minimizes the expected absolute loss](../../../../../Probability/MathlibExt/part-02/median/integral-abs-sub-le-of-is-median.md)
+- [Absolute deviations are integrable exactly when the mean exists](../../../../../Probability/MathlibExt/part-04/median/integrable-abs-sub-iff.md)
+- [A median minimizes the expected absolute loss](../../../../../Probability/MathlibExt/part-04/median/integral-abs-sub-le-of-is-median.md)
 
 ## Sources
 

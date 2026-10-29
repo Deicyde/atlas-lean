@@ -1,6 +1,7 @@
 # References
 
 - [Divergence](divergence/README.md)
+- [Embedding](embedding/README.md)
 - [Preservation](preservation/README.md)
 - [Progress](progress.md)
 - [Semantics](semantics/README.md)

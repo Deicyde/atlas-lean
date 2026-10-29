@@ -15,7 +15,7 @@ $\prod_{j \ge 0} \bigl((a q^{2^j - 1}; q^{2^{j+1}})_\infty /
 
 ## Depends on
 
-- [Infinite q-Pochhammer symbol](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

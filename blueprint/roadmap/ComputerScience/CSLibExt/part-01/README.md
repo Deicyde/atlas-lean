@@ -2,10 +2,12 @@
 navigation: transparent
 ---
 
-# Bayesian to Symmetric Key
+# Bayesian to Semantics
 
 - [Bayesian](bayesian/README.md)
+- [CCS](ccs/README.md)
 - [Concurrency](concurrency/README.md)
+- [Data](data/README.md)
 - [Generative](generative/README.md)
 - [Graphical Models](graphical-models/README.md)
 - [Hash](hash/README.md)
@@ -21,6 +23,4 @@ navigation: transparent
 - [Regression](regression/README.md)
 - [SAT](sat/README.md)
 - [Sampling](sampling/README.md)
-- [Sequence](sequence/README.md)
-- [Signatures](signatures/README.md)
-- [Symmetric Key](symmetric-key/README.md)
+- [Semantics](semantics/README.md)

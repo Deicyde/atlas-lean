@@ -23,7 +23,7 @@ $\mathcal{O}_{K_v}$ equals the inertia degree of $w$ over $v$.
 ## Proof depends on
 
 - [Maximal ideals of completed integer rings lie over each other](comap-maximal-ideal-adic-completion-inte.md)
-- [Residue field of the completion](../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
+- [Residue field of the completion](../../../../../../RingTheory/MathlibExt/part-01/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
 - [Naturality of the residue field identifications](finite-lies-over-residue-naturality/completion-residue-field-equiv-naturalit.md)
 
 ## Sources

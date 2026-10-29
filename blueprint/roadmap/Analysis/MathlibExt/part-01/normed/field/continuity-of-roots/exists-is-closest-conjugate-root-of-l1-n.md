@@ -20,16 +20,16 @@ $\alpha$ is the closest conjugate to $\beta$ and $K(\alpha) = K(\beta)$.
 ## Depends on
 
 - [Closest conjugate](../is-closest-conjugate/is-closest-conjugate.md)
-- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
 - [Krasner's lemma for closest conjugates](../is-closest-conjugate/adjoin-le.md)
-- [Root bound by the L1 norm](../../../../../../Algebra/MathlibExt/polynomial/aeval-lt-l1-norm-of-monic-of-aeval-eq-ze.md)
-- [L1 norm as a sum over the support](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
-- [Nonnegativity of the L1 norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-nonneg.md)
-- [Monic polynomials close in L1 norm have the same degree](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
-- [Monic polynomials have L1 norm at least one](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/one-le-l1-norm-of-monic.md)
+- [Root bound by the L1 norm](../../../../../../Algebra/MathlibExt/polynomial/part-01/aeval-lt-l1-norm-of-monic-of-aeval-eq-ze.md)
+- [L1 norm as a sum over the support](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm-def.md)
+- [Nonnegativity of the L1 norm](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/l1-norm-nonneg.md)
+- [Monic polynomials close in L1 norm have the same degree](../../../../../../Algebra/MathlibExt/polynomial/part-01/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
+- [Monic polynomials have L1 norm at least one](../../../../../../Algebra/MathlibExt/polynomial/part-01/l1-norm/one-le-l1-norm-of-monic.md)
 
 ## Sources
 

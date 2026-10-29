@@ -14,11 +14,11 @@ $\mathfrak{D}_n = \operatorname{denom}(B_n(x))$, this is the convention $\mathfr
 
 ## Depends on
 
-- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator.md)
 
 ## Proof depends on
 
-- [Denominator one characterizes integer polynomials](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
+- [Denominator one characterizes integer polynomials](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
 
 ## Sources
 

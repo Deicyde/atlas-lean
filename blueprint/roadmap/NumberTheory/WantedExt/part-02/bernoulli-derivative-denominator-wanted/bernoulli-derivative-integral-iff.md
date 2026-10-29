@@ -18,7 +18,7 @@ $\operatorname{rad}(n)$. Moreover, if $B_n'(x)$ has integer coefficients, then $
 
 - [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
 - [Indices of Bernoulli polynomials with integral $k$-th derivative](bernoulli-integral-derivative-indices.md)
-- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/part-01/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

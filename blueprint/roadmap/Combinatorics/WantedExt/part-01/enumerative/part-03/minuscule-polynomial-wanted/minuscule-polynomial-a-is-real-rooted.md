@@ -17,7 +17,7 @@ of roots is taken to be empty.
 ## Depends on
 
 - [Type-A minuscule polynomial](minuscule-polynomial-a.md)
-- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/is-real-rooted.md)
 
 ## Sources
 

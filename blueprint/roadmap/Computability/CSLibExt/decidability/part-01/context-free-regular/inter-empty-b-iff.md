@@ -26,7 +26,7 @@ intersection of the language of $g$ and the language of $D$ is empty.
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-02/primrec-list/mem-b.md)
 - [Sound items for a grammar and a DFA](dfa-sound-item.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

@@ -18,7 +18,7 @@ $B$, by that nonterminal $B$.
 
 ## Proof depends on
 
-- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-02/primrec-list/mem-b.md)
 - [Target of a unit right-hand side](unit-target.md)
 
 ## Sources

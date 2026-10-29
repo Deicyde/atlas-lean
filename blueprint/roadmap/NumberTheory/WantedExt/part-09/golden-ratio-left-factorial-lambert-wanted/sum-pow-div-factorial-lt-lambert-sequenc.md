@@ -23,7 +23,7 @@ is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$
 
 ## Depends on
 
-- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

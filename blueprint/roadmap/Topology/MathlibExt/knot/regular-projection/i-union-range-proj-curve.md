@@ -14,7 +14,7 @@ of $L$ equals the image of the trace of $L$ under the standard projection to the
 
 ## Depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
 - [Parametrized link](../euclidean-link/parametrized-link.md)
 - [Projected curve of a link component](proj-curve.md)
 - [Trace of a parametrized link](../euclidean-link/trace.md)

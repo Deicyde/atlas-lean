@@ -1,0 +1,27 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.UnitriangularOneRelatorLinearKourovka18Problem86Wanted.oneRelatorGroupIsLinear_holds
+---
+
+# One Relator Group Is Linear holds
+
+Resolved true: the Kourovka Archive answers 18.86 "Yes, it is linear": `G` embeds in the holomorph
+`Hol F₂`, which is linear by Corollary 3 of Bardakov-Bryukhanov (2007); another proof is in
+Roman'kov (2013). Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory:
+The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem
+18.86 (V. A. Roman'kov); resolution: V. G. Bardakov and O. V. Bryukhanov, Vestnik Novosibirsk Univ.
+Ser. Mat. Mekh. Inf. 7 (2007), no. 3, 45-58 (Russian); V. A. Roman'kov, J. Siberian Federal Univ.
+Math. Phys. 6 (2013), no. 4, 516-520, Kourovka Archive, Problem 18.86: Yes, it is linear, since it
+embeds in Hol F_2 (adding c = [a, b] gives G = ⟨a, b, c | a^b = ac, c^b = c⟩), and Hol F_2 is linear
+by Corollary 3 of Bardakov-Bryukhanov; another proof by Roman'kov,
+https://arxiv.org/abs/1401.0300v49.
+
+## Depends on
+
+- [One Relator Group Is Linear](one-relator-group-is-linear.md)
+
+## Sources
+
+- [WantedExt, WantedExt.GroupTheory.UnitriangularOneRelatorLinearKourovka18Problem86Wanted](../../../../../sources/v2/WantedExt.md)

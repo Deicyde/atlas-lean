@@ -22,9 +22,9 @@ only if $t$ is reachable from $s_0$ in zero or more successor steps.
 ## Proof depends on
 
 - [One round of the list reachability search](reach-round.md)
-- [Duplicate removal for lists of natural numbers](../../part-01/primrec-list/dedup-b.md)
-- [Bounded monotone rounds on lists close off](../../part-01/primrec-list/iterate-closed.md)
-- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
+- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 
 ## Sources
 

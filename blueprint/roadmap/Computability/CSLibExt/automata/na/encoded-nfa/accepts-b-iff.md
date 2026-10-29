@@ -22,7 +22,7 @@ membership test returns true on $w$ if and only if $w$ belongs to the language o
 - [The run of an encoded NFA agrees with ε-NFA evaluation](mem-run-iff.md)
 - [Run of an encoded NFA](run.md)
 - [The ε-NFA of an encoded NFA](to-nfa.md)
-- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-02/primrec-list/mem-b.md)
 
 ## Sources
 

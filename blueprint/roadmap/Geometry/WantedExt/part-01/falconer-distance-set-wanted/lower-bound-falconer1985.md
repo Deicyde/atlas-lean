@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar distance threshold](../../../MathlibExt/falconer-distance-set/planar-distance-threshold.md)
+- [Planar distance threshold](../../../MathlibExt/part-01/falconer-distance-set/planar-distance-threshold.md)
 
 ## Sources
 

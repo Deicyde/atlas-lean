@@ -13,7 +13,7 @@ that every prime factor of $p - q$ is at most $5$.
 
 ## Depends on
 
-- [Elliott–Halberstam conjecture (dyadic form)](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
+- [Elliott–Halberstam conjecture (dyadic form)](../../part-14/prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources
 

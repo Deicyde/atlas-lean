@@ -24,7 +24,7 @@ is its $b(n)$.
 ## Depends on
 
 - [Kurepa's partial integral](kurepa-partial-integral.md)
-- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

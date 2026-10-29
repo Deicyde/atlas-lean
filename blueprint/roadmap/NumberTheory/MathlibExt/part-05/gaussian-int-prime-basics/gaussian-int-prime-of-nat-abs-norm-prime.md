@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Elements of $\mathbb{Z}(\sqrt{d})$ of prime norm are prime](../../part-12/zsqrtd-norm-factorization/prime-of-nat-abs-norm-prime.md)
+- [Elements of $\mathbb{Z}(\sqrt{d})$ of prime norm are prime](../../part-13/zsqrtd-norm-factorization/prime-of-nat-abs-norm-prime.md)
 
 ## Sources
 

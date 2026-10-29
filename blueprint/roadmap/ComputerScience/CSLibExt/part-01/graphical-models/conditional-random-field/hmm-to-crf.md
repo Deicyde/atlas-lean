@@ -16,8 +16,8 @@ transition potentials $\tau_t(s, s') = a(s, s')$ at every step $t$.
 ## Depends on
 
 - [Linear-chain conditional random field](chain-crf.md)
-- [Hidden Markov model](../../sequence/hidden-markov/hmm.md)
-- [Hidden Markov models with nonnegative weights](../../sequence/hidden-markov/nonneg.md)
+- [Hidden Markov model](../../../part-02/sequence/hidden-markov/hmm.md)
+- [Hidden Markov models with nonnegative weights](../../../part-02/sequence/hidden-markov/nonneg.md)
 
 ## Sources
 

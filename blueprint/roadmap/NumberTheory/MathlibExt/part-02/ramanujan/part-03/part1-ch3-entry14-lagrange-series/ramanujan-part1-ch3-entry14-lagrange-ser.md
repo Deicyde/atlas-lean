@@ -30,7 +30,7 @@ This node has no prerequisites.
 - [Hagen–Rothe convolution for Lagrange series coefficients](lagrange-series-coefficient-add.md)
 - [Lagrange series coefficients of positive degree](lagrange-series-coefficient-of-ne-zero.md)
 - [Lagrange series coefficient of degree zero](lagrange-series-coefficient-zero.md)
-- [Continuous solutions of the exponential functional equation](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/exists-eq-exp-mul-of-continuous-add-mul.md)
+- [Continuous solutions of the exponential functional equation](../../../../../../Analysis/MathlibExt/part-02/special-functions/part-01/exists-eq-exp-mul-of-continuous-add-mul.md)
 
 ## Sources
 

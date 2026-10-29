@@ -18,8 +18,8 @@ length of $\gamma_i$ on one period $[0, 2\pi]$. It is a value in $[0, \infty]$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Contour length](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/contour-length.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/r3.md)
+- [Contour length](../../../../Geometry/MathlibExt/part-01/euclidean/part-02/ropelength/contour-length.md)
 - [Parametrized knot](parametrized-knot.md)
 
 ## Sources

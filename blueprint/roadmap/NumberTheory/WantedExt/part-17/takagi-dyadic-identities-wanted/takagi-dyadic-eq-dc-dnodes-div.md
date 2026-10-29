@@ -17,7 +17,7 @@ $\tau(r / 2^k) = \delta(2^k + r) / 2^k$.
 ## Depends on
 
 - [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
-- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
+- [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-02/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

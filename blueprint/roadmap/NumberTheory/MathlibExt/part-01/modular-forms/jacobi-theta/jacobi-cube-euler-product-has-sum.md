@@ -16,11 +16,11 @@ $(q;q)_\infty = \prod_{n=0}^{\infty} (1 - q^{n+1})$.
 
 ## Depends on
 
-- [Infinite q-Pochhammer symbol](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Proof depends on
 
-- [Raw infinite q-Pochhammer product](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](../../../../../Analysis/MathlibExt/part-02/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 - [Vanishing coefficients of Jacobi's cube series](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-eq-zero.md)
 - [Coefficients of Jacobi's cube series at triangular numbers](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-triangle.md)
 - [Jacobi's cube series](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/jacobi-cube-series.md)

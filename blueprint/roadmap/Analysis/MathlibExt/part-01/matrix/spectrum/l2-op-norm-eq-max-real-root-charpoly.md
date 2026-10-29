@@ -16,13 +16,13 @@ characteristic polynomial of $A$. Since these roots are real, this is its larges
 
 ## Depends on
 
-- [Largest real part of a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+- [Largest real part of a root](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
 - [Hermitian matrices have real-rooted characteristic polynomials](charpoly-is-real-rooted.md)
-- [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)
-- [Real parts of roots are bounded by the largest one](../../../../../Algebra/MathlibExt/polynomial/real-rooted/root-re-le-max-real-root.md)
+- [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/coe-max-real-root-mem-roots.md)
+- [Real parts of roots are bounded by the largest one](../../../../../Algebra/MathlibExt/polynomial/part-01/real-rooted/root-re-le-max-real-root.md)
 
 ## Sources
 
