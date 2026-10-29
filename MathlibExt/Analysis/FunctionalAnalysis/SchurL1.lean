@@ -12,6 +12,7 @@ public import Mathlib.Analysis.Normed.Lp.lpSpace
 public import Mathlib.Analysis.RCLike.Lemmas
 public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
 
+import MathlibExt.Analysis.Normed.Lp.DualC0
 import Mathlib.Analysis.Normed.Operator.Banach
 import Mathlib.Tactic.Choose
 import Mathlib.Tactic.Linarith
@@ -51,7 +52,6 @@ in base MathlibExt. It is not one of the 72 v1 targets: v1 never discusses
   convergence.
 * `schur_tendsto_norm_sub_of_weak_tendsto` : the corresponding
   `‖x n - x₀‖ → 0` form.
-* `l1EvalCLM` : the coordinate evaluation functional on `ℓ¹`.
 * `l1DualOfBounded` : the functional on `ℓ¹` given by pairing with a
   bounded sequence.
 -/
@@ -59,6 +59,7 @@ in base MathlibExt. It is not one of the 72 v1 targets: v1 never discusses
 @[expose] public section
 
 open Filter Finset
+open MathlibExt.Analysis.Normed.Lp.DualC0 (summable_norm_lp_one)
 open scoped Topology ENNReal
 
 namespace MathlibExt.Analysis.FunctionalAnalysis.SchurL1
@@ -71,33 +72,10 @@ theorem l1_norm_eq_tsum (x : lp (fun _ : ℕ => 𝕜) 1) : ‖x‖ = ∑' i, ‖
   rw [lp.norm_eq_tsum_rpow (by rw [h1]; norm_num : (0 : ℝ) < (1 : ℝ≥0∞).toReal) x, h1]
   simp [Real.rpow_one]
 
-/-- The coordinate norms of an `ℓ¹` element are summable. -/
-theorem l1_summable_norm (x : lp (fun _ : ℕ => 𝕜) 1) : Summable fun i => ‖x i‖ := by
-  have h := (lp.memℓp x).summable (by norm_num : (0 : ℝ) < (1 : ℝ≥0∞).toReal)
-  simpa [ENNReal.toReal_one, Real.rpow_one] using h
-
-/-- The coordinate evaluation functional on `ℓ¹`: `x ↦ x i`. -/
-noncomputable def l1EvalCLM (i : ℕ) : lp (fun _ : ℕ => 𝕜) 1 →L[𝕜] 𝕜 :=
-  LinearMap.mkContinuous
-    { toFun := fun x => x i
-      map_add' := fun x y => by simp
-      map_smul' := fun c x => by simp }
-    1
-    (fun x => by
-      rw [one_mul]
-      calc ‖x i‖ ≤ ∑' j, ‖x j‖ :=
-            (l1_summable_norm x).le_tsum i (fun j _ => norm_nonneg _)
-        _ = ‖x‖ := (l1_norm_eq_tsum x).symm)
-
-@[simp]
-theorem l1EvalCLM_apply (i : ℕ) (x : lp (fun _ : ℕ => 𝕜) 1) :
-    l1EvalCLM (𝕜 := 𝕜) i x = x i :=
-  rfl
-
 /-- Summability of the pairing of a bounded sequence with an `ℓ¹` element. -/
 theorem summable_bounded_mul_l1 (y : ℕ → 𝕜) (hy : ∀ i, ‖y i‖ ≤ 1)
     (x : lp (fun _ : ℕ => 𝕜) 1) : Summable fun i => y i * x i := by
-  apply Summable.of_norm_bounded (l1_summable_norm x)
+  apply Summable.of_norm_bounded (summable_norm_lp_one x)
   intro i
   rw [norm_mul]
   calc ‖y i‖ * ‖x i‖ ≤ 1 * ‖x i‖ := by gcongr; exact hy i
@@ -125,7 +103,7 @@ noncomputable def l1DualOfBounded (y : ℕ → 𝕜) (hy : ∀ i, ‖y i‖ ≤ 
               rw [norm_mul]
               calc ‖y i‖ * ‖x i‖ ≤ 1 * ‖x i‖ := by gcongr; exact hy i
                 _ = ‖x i‖ := one_mul _)
-              (summable_bounded_mul_l1 y hy x).norm (l1_summable_norm x)
+              (summable_bounded_mul_l1 y hy x).norm (summable_norm_lp_one x)
         _ = ‖x‖ := (l1_norm_eq_tsum x).symm)
 
 @[simp]
@@ -145,7 +123,7 @@ theorem norm_l1DualOfBounded_le (y : ℕ → 𝕜) (hy : ∀ i, ‖y i‖ ≤ 1)
             rw [norm_mul]
             calc ‖y i‖ * ‖x i‖ ≤ 1 * ‖x i‖ := by gcongr; exact hy i
               _ = ‖x i‖ := one_mul _)
-            (summable_bounded_mul_l1 y hy x).norm (l1_summable_norm x)
+            (summable_bounded_mul_l1 y hy x).norm (summable_norm_lp_one x)
       _ = ‖x‖ := (l1_norm_eq_tsum x).symm)
 
 /-- Splitting a `tsum` over `ℕ` into a head, a middle block, and a tail. -/
@@ -159,12 +137,12 @@ theorem tsum_split3 {h : ℕ → 𝕜} (hs : Summable h) {a b : ℕ} (hab : a �
 /-- The tail of the norm series of an `ℓ¹` element is summable. -/
 theorem summable_norm_shift (x : lp (fun _ : ℕ => 𝕜) 1) (b : ℕ) :
     Summable fun j => ‖x (j + b)‖ :=
-  (summable_nat_add_iff (f := fun i => ‖x i‖) b).mpr (l1_summable_norm x)
+  (summable_nat_add_iff (f := fun i => ‖x i‖) b).mpr (summable_norm_lp_one x)
 
 /-- The tail of the norm series of an `ℓ¹` element. -/
 theorem tail_tsum_norm (x : lp (fun _ : ℕ => 𝕜) 1) (b : ℕ) :
     ∑' j, ‖x (j + b)‖ = ‖x‖ - ∑ i ∈ Finset.range b, ‖x i‖ := by
-  have h1 := (l1_summable_norm x).sum_add_tsum_nat_add b
+  have h1 := (summable_norm_lp_one x).sum_add_tsum_nat_add b
   have h2 := (l1_norm_eq_tsum x).symm
   linarith
 
@@ -272,7 +250,7 @@ private theorem gliding_hump_step {x : ℕ → lp (fun _ : ℕ => 𝕜) 1} {ε �
     frequently_atTop.mp (hx_freq.and_eventually hhead_ev) (n₀ + 1)
   have htail_ev : ∀ᶠ M in atTop, ‖x n‖ - ∑ i ∈ Finset.range M, ‖x n i‖ < δ := by
     have hlim : Tendsto (fun M => ∑ i ∈ Finset.range M, ‖x n i‖) atTop (𝓝 ‖x n‖) := by
-      have h := (l1_summable_norm (x n)).hasSum.tendsto_sum_nat
+      have h := (summable_norm_lp_one (x n)).hasSum.tendsto_sum_nat
       rw [← l1_norm_eq_tsum (x n)] at h
       exact h
     have hev := hlim.eventually (Ioi_mem_nhds (sub_lt_self _ hδ))
@@ -304,8 +282,7 @@ private theorem tendsto_norm_zero_of_weak {x : ℕ → lp (fun _ : ℕ => 𝕜) 
   have hδ : 0 < δ := by rw [hδ_def]; linarith
   have hδeq : δ = ε / 8 := hδ_def
   have hx_coord : ∀ i, Tendsto (fun n => x n i) atTop (𝓝 0) := fun i => by
-    have h := hx (l1EvalCLM (𝕜 := 𝕜) i)
-    simpa [l1EvalCLM_apply] using h
+    exact hx (lp.evalCLM 𝕜 (fun _ : ℕ => 𝕜) 1 i)
   have step : ∀ p : ℕ × ℕ, ∃ q : ℕ × ℕ, p.1 < q.1 ∧ p.2 < q.2 ∧
       (∑ i ∈ Finset.range p.2, ‖x q.1 i‖ < δ) ∧
       (‖x q.1‖ - ∑ i ∈ Finset.range q.2, ‖x q.1 i‖ < δ) ∧ ε ≤ ‖x q.1‖ := by

@@ -38,13 +38,15 @@ private noncomputable abbrev e₀ : lp (fun _ : ℕ => ℂ) 1 := lp.single 1 0 1
 
 /-- The coordinate functional at `0` reads off the first coordinate. -/
 theorem eval_zero_single (a : ℂ) :
-    l1EvalCLM (𝕜 := ℂ) 0 (lp.single 1 0 a) = a := by
-  rw [l1EvalCLM_apply, lp.single_apply_self]
+    lp.evalCLM ℂ (fun _ : ℕ => ℂ) 1 0 (lp.single 1 0 a) = a := by
+  change (lp.single 1 0 a : lp (fun _ : ℕ => ℂ) 1) 0 = a
+  rw [lp.single_apply_self]
 
 /-- The coordinate functional at `1` vanishes on the first basis vector. -/
-theorem eval_one_single_zero : l1EvalCLM (𝕜 := ℂ) 1 e₀ = 0 := by
-  show l1EvalCLM (𝕜 := ℂ) 1 (lp.single 1 0 (1 : ℂ)) = 0
-  rw [l1EvalCLM_apply, lp.single_apply_ne 1 0 1 (by norm_num : (1 : ℕ) ≠ 0)]
+theorem eval_one_single_zero :
+    lp.evalCLM ℂ (fun _ : ℕ => ℂ) 1 1 e₀ = 0 := by
+  change (lp.single 1 0 (1 : ℂ) : lp (fun _ : ℕ => ℂ) 1) 1 = 0
+  rw [lp.single_apply_ne 1 0 1 (by norm_num : (1 : ℕ) ≠ 0)]
 
 /-- Pairing the all-ones sequence with `e₀` gives `1`. -/
 theorem dual_ones_single :
