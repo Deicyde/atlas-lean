@@ -18,7 +18,7 @@ navigation: module
 
 ## Canonicity
 
-- [Fixing the top variable of an ordered node](size-pos.md)
+- [Binary decision diagrams have positive size](size-pos.md)
 - [Canonicity](eq-of-eval-eq.md)
 - [Reduced ordered diagrams are equal iff they have the same values](eq-iff-eval-eq.md)
 - [Unsatisfiable reduced ordered diagrams](eq-leaf-false-iff.md)

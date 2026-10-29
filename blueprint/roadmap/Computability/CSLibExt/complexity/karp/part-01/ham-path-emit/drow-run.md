@@ -44,7 +44,7 @@ $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$, in this order.
 - [Bits pushed by a copy site of the HAMPATH emitter](../ham-path-emit-machine/atom.md)
 - [Step count of a list of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-cost.md)
 - [Running a chain of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-run.md)
-- [Removing duplicates by insertion](../ham-path-emit-spec/hp-r-succ.md)
+- [Consecutive row vertices](../ham-path-emit-spec/hp-r-succ.md)
 - [Row copy sites of the HAMPATH emitter](row-sites.md)
 - [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)

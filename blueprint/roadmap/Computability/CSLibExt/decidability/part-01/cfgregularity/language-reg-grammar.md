@@ -26,7 +26,7 @@ over $T$, $v$ a word over the bits, and $u \in L(g)$ or $v = 0^n 1^n$ for some $
 
 - [Bits as letters](bl.md)
 - [Every production of the regularity grammar is sound for its intended languages](is-valuation-reg-val.md)
-- [Every production of the regularity grammar is sound for its intended languages](mem-language-from-of-mem-rules.md)
+- [Productions of the regularity grammar preserve generated languages](mem-language-from-of-mem-rules.md)
 - [Reg Val](reg-val.md)
 - [The separator letter](sep.md)
 - [Shift Rule](shift-rule.md)

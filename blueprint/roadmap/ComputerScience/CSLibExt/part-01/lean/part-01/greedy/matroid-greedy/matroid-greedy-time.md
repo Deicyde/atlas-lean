@@ -18,7 +18,7 @@ $L$ takes time exactly the length of $L$, one oracle query per element.
 
 ## Proof depends on
 
-- [Greedy algorithm on a matroid](matroid-greedy-scan-time.md)
+- [Running time of the greedy scan](matroid-greedy-scan-time.md)
 
 ## Sources
 

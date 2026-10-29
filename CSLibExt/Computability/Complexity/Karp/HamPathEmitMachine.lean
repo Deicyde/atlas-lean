@@ -697,6 +697,9 @@ theorem chain_run (js : List Site) : ∀ (s : MS) (b : Bool) (l₀ l : Lab),
 
 /-! ### Comparing a name on `F` with the top entry of `V` -/
 
+/-- **A symbol that reads as a name bit is that bit.** For every symbol $x$ of the stack alphabet
+of the SAT verifier and every bit $b$, if $x$ reads as the name bit $b$, then $x$ is the name-bit
+symbol for $b$. -/
 theorem bit_inv (x : Sym) (b : Bool) (h : Sym.bit? x = some b) : Sym.bit b = x := by
   cases x <;> simp_all [Sym.bit?]
 

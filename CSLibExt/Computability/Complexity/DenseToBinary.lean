@@ -320,6 +320,9 @@ theorem conv_encodeCNF (φ : CNF) :
 
 /-! ### `satDec` on an encoding -/
 
+/-- **SAT accepts the code of a formula exactly when it is satisfiable.** For every CNF formula
+$\psi$, the SAT decision problem returns true on the length-prefixed binary code of $\psi$ if and
+only if $\psi$ is satisfiable. -/
 theorem satDec_encodeCNF (ψ : Cslib.CookLevin.CNF) :
     Cslib.CookLevin.satDec (Cslib.CookLevin.encodeCNF ψ) = true ↔
       Cslib.CookLevin.CNFSat ψ := by

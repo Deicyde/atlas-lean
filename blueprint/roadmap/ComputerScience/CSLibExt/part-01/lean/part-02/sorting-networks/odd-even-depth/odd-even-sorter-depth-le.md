@@ -29,7 +29,7 @@ has depth at most $d$; that is, its depth is at most $k(k+1)/2$.
 - [Batcher's odd-even merger](../odd-even/odd-even-merge.md)
 - [Batcher's odd-even merge sort](../odd-even/odd-even-sort-n.md)
 - [Relabeling the wires of a comparator list](../odd-even/relabel.md)
-- [Odd-even merge sort sorts every $0$-$1$ input](../odd-even/relabel-within.md)
+- [Relabeling keeps comparators within an interval](../odd-even/relabel-within.md)
 
 ## Sources
 

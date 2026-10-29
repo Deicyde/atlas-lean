@@ -20,7 +20,7 @@ base $B$ is at most $9\, n^{\log_2 3}$.
 
 - [Karatsuba cost recurrence](karatsuba-cost.md)
 - [The $n^{\log_2 3}$ bound for the Karatsuba cost recurrence](karatsuba-cost-le-rpow.md)
-- [Size bound for Karatsuba's recursive operands](karatsuba-time.md)
+- [Cost of Karatsuba multiplication](karatsuba-time.md)
 
 ## Sources
 

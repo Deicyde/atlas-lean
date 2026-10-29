@@ -7,7 +7,7 @@ navigation: transparent
 - [Push-count table of a situation](pl.md)
 - [Consumption table of a situation](cn.md)
 - [Pushed-symbol table of a situation](pu.md)
-- [Pushed-symbol table of a situation](g-pos.md)
+- [The symbol-code bound is positive](g-pos.md)
 - [Symbols left pushed by a situation are effective](res-pushed.md)
 - [Pushed codes are valid symbol codes](pu-valid.md)
 - [The transition tables of a machine are well formed](wf-upd.md)

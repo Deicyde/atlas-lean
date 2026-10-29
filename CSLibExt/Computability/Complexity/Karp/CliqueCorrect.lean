@@ -103,6 +103,9 @@ theorem vertexCoverDec_noKG : vertexCoverDec noKG = false :=
 
 /-! ### Pairs and pair bits -/
 
+/-- **Membership in the vertex pairs.** For natural numbers $n$, $i$ and $j$, the pair
+$(i, j)$ belongs to the list of vertex pairs in encoding order for $n$ if and only if $i < j$
+and $j < n$. -/
 @[simp] theorem mem_pairs {n i j : ℕ} : (i, j) ∈ pairs n ↔ i < j ∧ j < n := by
   simp [pairs]
   omega
@@ -217,6 +220,9 @@ theorem toGraph_map_not {n : ℕ} {bits : List Bool} (h : bits.length = (pairs n
 
 /-! ### CLIQUE ≤ INDEPENDENT-SET -/
 
+/-- **Correctness of the complementing map from CLIQUE to INDEPENDENT-SET.** For every bit
+string $x$, CLIQUE accepts $x$ if and only if INDEPENDENT-SET accepts the image of $x$ under the
+complementing map from CLIQUE to INDEPENDENT-SET instances. -/
 theorem cliqueDec_eq_indSetDec_flipKG (x : List Bool) : cliqueDec x = indSetDec (flipKG x) := by
   unfold flipKG
   split
@@ -270,6 +276,10 @@ theorem indSetDec_eq_vertexCoverDec_isToVc (x : List Bool) :
 
 /-! ### SAT ≤ CLIQUE -/
 
+/-- **Membership in the literal occurrences of a CNF formula.** Let $\varphi$ be a CNF formula
+with clauses $C_0, \dots, C_{m-1}$, let $i$ and $x$ be natural numbers and let $b$ be a Boolean.
+The triple $(i, x, b)$ belongs to the list of literal occurrences of $\varphi$ if and only if
+$i < m$ and the literal $(x, b)$ belongs to $C_i$. -/
 theorem mem_occs {p : ℕ × ℕ × Bool} {φ : CNF} :
     p ∈ occs φ ↔ ∃ h : p.1 < φ.length, p.2 ∈ φ[p.1] := by
   rcases p with ⟨c, l⟩

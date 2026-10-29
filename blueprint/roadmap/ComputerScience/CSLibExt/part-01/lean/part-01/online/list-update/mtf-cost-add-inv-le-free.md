@@ -33,11 +33,11 @@ $$C + \mathrm{inv}(F, L_m) + m \le 2D + \mathrm{inv}(M, L_0).$$
 
 - [Access cost](access-cost.md)
 - [Free move](free-move.md)
-- [The amortized cost of a move-to-front step](free-move-perm.md)
+- [A free move rearranges the list](free-move-perm.md)
 - [Free moves never add inversions against a list headed by the moved item](inv-free-move-le.md)
 - [Triangle inequality for inversions](inv-triangle.md)
 - [Move-to-front](mtf.md)
-- [The amortized cost of a move-to-front step](mtf-perm.md)
+- [Move-to-front rearranges the list](mtf-perm.md)
 - [The amortized cost of a move-to-front step](mtf-step.md)
 
 ## Sources

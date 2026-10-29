@@ -25,7 +25,7 @@ of $g$ computed by the emptiness procedure.
 - [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [A sentential form containing an empty nonterminal denotes the empty language](eval-form-eq-zero-of-mem.md)
 - [One round of the generating-nonterminal computation](gen-step.md)
-- [The emptiness test for context-free grammars](gen-step-generating-subset.md)
+- [The generating nonterminals are closed under one more round](gen-step-generating-subset.md)
 - [Acceptable productions](rule-ok.md)
 - [Acceptable symbols](sym-ok.md)
 - [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)

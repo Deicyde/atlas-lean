@@ -18,7 +18,7 @@ lean: Cslib.Complexity.Karp.satDec_eq_hamPathDec_reduceHam
 
 ## Proof depends on
 
-- [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](../../../dense-to-binary/sat-dec-encode-cnf.md)
 - [Unparsable input is not in SAT](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
 - [Hamiltonian paths](../ham-path/is-ham-path.md)
 - [The construction has a Hamiltonian path iff the formula is satisfiable](exists-is-ham-path-iff-cnf-sat.md)

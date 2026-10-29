@@ -120,6 +120,9 @@ theorem varsOf_cons (C : CNFClause) (φ : CNF) : varsOf (C :: φ) = C.map Prod.f
 
 /-! ### Arithmetic of the vertex numbers, tokens, sizes -/
 
+/-- **Consecutive row vertices.** In the HAMPATH construction with $m$ clauses, for every diamond
+$i$ and every $l \in \mathbb{N}$, row vertex $l + 1$ of diamond $i$ is one more than row
+vertex $l$ of diamond $i$. -/
 theorem hpR_succ (m i l : ℕ) : hpR m i (l + 1) = hpR m i l + 1 := by simp [hpR]; omega
 
 theorem hpR_two (m i j : ℕ) : hpR m i (3 * j + 2) = hpR m i (3 * j + 1) + 1 := hpR_succ _ _ _

@@ -183,6 +183,9 @@ private theorem ft_ne_of_ne : ∀ x b b' : Bool, b' ≠ b →
 
 /-! ### Unfolding the construction -/
 
+/-- **Adding a literal occurrence takes two new vertices.** For a literal $l$ and a state $s$ of
+the SAT-to-3-COLOR construction whose next free vertex is $n$, the state obtained by adding the
+occurrence $l$ to $s$ has next free vertex $n + 2$. -/
 @[simp] theorem colOcc_next (l : ℕ × Bool) (s : ColSt) : (colOcc l s).1.next = s.next + 2 :=
   rfl
 
@@ -601,6 +604,13 @@ theorem colorable_of_cnfSat {φ : CNF} (h : CNFSat φ) :
 
 /-! ### 3-colorable graphs give satisfiable formulas -/
 
+/-- **Output of the OR gadget under a proper 3-coloring.** Let $c : \mathbb{N} \to \{0, 1, 2\}$
+with $c(2) = 2$, let $a$ and $o$ be natural numbers, let $s$ be a state of the SAT-to-3-COLOR
+construction and let $E$ be a list of pairs of natural numbers such that $c(u) \ne c(v)$ for
+every pair $(u, v)$ in $E$. Apply the OR gadget to $a$, $o$ and $s$, giving a new state and an
+output vertex $w$, and suppose every edge in the emitted-edge list of the new state belongs to
+$E$. If $c(a) \ne 2$ and $c(o) \ne 2$, then $c(w) \ne 2$, and if $c(w) = 0$ then $c(a) = 0$ or
+$c(o) = 0$. -/
 theorem sound_colOr {c : ℕ → Fin 3} {a o : ℕ} {s : ColSt} {E : List (ℕ × ℕ)} (h2 : c 2 = 2)
     (hp : ColProper c E) (hsub : (colOr a o s).1.em ⊆ E) (ha : c a ≠ 2) (ho : c o ≠ 2) :
     c (colOr a o s).2 ≠ 2 ∧ (c (colOr a o s).2 = 0 → c a = 0 ∨ c o = 0) := by
@@ -750,6 +760,9 @@ theorem cnfSat_iff_colorable (φ : CNF) :
 
 /-! ### The reduction on bit strings -/
 
+/-- **Correctness of the SAT to 3-COLOR map on bit strings.** For every bit string $x$, SAT
+accepts $x$ if and only if 3-COLOR accepts the image of $x$ under the SAT to 3-COLOR reduction
+map on bit strings. -/
 theorem satDec_eq_col3Dec_reduceCol (x : List Bool) : satDec x = col3Dec (reduceCol x) := by
   unfold reduceCol
   split

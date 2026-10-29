@@ -241,6 +241,12 @@ theorem IsAnswer.isMinPairDist2 {ps : List (𝕜 × 𝕜)} {δ : 𝕜} (h : IsAn
 
 /-! ## Brute force -/
 
+/-- **The nearest-point scan returns the least squared distance.** Let $K$ be a linearly ordered
+field, write $d(u, v) = (x - x')^2 + (y - y')^2$ for the squared distance between points
+$u = (x, y)$ and $v = (x', y')$ of $K^2$, let $p \in K^2$, and let $qs$ be a list of points in
+$K^2$. If the scan for the least squared distance from $p$ to the entries of $qs$ returns a value
+$\delta$, then $\delta = d(p, q)$ for some entry $q$ of $qs$. For every entry $q$ of $qs$, the
+scan returns a value $\delta$ with $\delta \le d(p, q)$. -/
 theorem minDistFrom_spec (p : 𝕜 × 𝕜) (qs : List (𝕜 × 𝕜)) :
     (∀ δ, (minDistFrom p qs).ret = some δ → ∃ q ∈ qs, dist2 p q = δ) ∧
       ∀ q ∈ qs, ∃ δ, (minDistFrom p qs).ret = some δ ∧ δ ≤ dist2 p q := by
@@ -354,6 +360,13 @@ theorem stripScan_lower (δ : 𝕜) (ys : List (𝕜 × 𝕜)) (hs : ys.Pairwise
 
 /-! ## Divide and conquer -/
 
+/-- **The closest-pair recursion is correct on lists sorted by first coordinate.** Let $K$ be a
+linearly ordered field, write $d(u, v) = (x - x')^2 + (y - y')^2$ for the squared distance between
+points $u = (x, y)$ and $v = (x', y')$ of $K^2$, and let $xs$ be a list of points in $K^2$ sorted
+by first coordinate: whenever an entry precedes another, its first coordinate is at most the
+other's. If the closest-pair recursion returns a value $\delta$ on $xs$, then $\delta = d(p, q)$
+for some entries $p$, $q$ of $xs$ at different positions. For any two entries $p$, $q$ of $xs$ at
+different positions, the recursion returns a value $\delta$ with $\delta \le d(p, q)$. -/
 theorem closestRec_isAnswer (xs : List (𝕜 × 𝕜)) (hs : xs.Pairwise fun a b => a.1 ≤ b.1) :
     IsAnswer xs (closestRec xs).ret := by
   induction h : xs.length using Nat.strong_induction_on generalizing xs with

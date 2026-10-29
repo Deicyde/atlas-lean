@@ -6,15 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.mv_run
 ---
 
-# Exact runs of the dense-to-binary converter
+# Moving the input onto the stash
 
-**Exact runs of the dense-to-binary converter.** For a natural number $n$ and configurations
-$c$ and $d$ of the converter program, $c$ leads to $d$ in exactly $n$ steps when the program,
-started at $c$, is at configuration $d$ after exactly $n$ steps. -/
-abbrev Run (n : ℕ) (c d : TM2.Cfg (fun _ : Stk => Bool) Lab (Option Bool)) : Prop :=
-  TM2Program.Run prog n c d
-
-/-! ### Loops
+**Moving the input onto the stash.** Let $l$, $a$, $o$ be bit strings and $v$ an optional
+bit, and list stacks top first. Started at the moving label with internal state $v$, input stack
+$l$, stash $a$, output stack $o$, empty counter stacks $N$, $K$, $M$ and empty scratch stack $T$,
+the dense-to-binary converter reaches, in exactly $|l| + 1$ steps, the label for reading with no
+clause open, with no internal state, an empty input stack, the reversal of $l$ followed by $a$ on
+the stash, output stack $o$, and $N$, $K$, $M$, $T$ still empty.
 
 ## Depends on
 

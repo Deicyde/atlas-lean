@@ -41,7 +41,7 @@ the table stack of the occurrence table of $N$ against $w$.
 
 - [Table entries](../sat-verifier-spec/ent.md)
 - [Tokenizer run on one clause](clause-run.md)
-- [Tokenizer rejects an undecodable literal](ents-of-cons.md)
+- [Occurrence table of a nonempty list](ents-of-cons.md)
 - [Tokens of a clause](../sat-verifier-spec/clause-toks.md)
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)

@@ -34,7 +34,7 @@ The proof goes through the 0-1 principle.
 - [Batcher's odd-even merge sort](odd-even-sort-n.md)
 - [Odd-even merge sort sorts every $0$-$1$ input](odd-even-sort-n-sorts.md)
 - [Relabeling the wires of a comparator list](relabel.md)
-- [Odd-even merge sort sorts every $0$-$1$ input](relabel-within.md)
+- [Relabeling keeps comparators within an interval](relabel-within.md)
 - [Running a comparator network](../zero-one/run.md)
 - [The 0-1 principle](../zero-one/sorts-of-sorts-bool.md)
 

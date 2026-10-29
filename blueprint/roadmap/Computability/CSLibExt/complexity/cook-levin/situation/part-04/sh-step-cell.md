@@ -48,7 +48,7 @@ cells of $c$ for situation $i$.
 
 ## Proof depends on
 
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
 - [Positive core of the shift step (L2⁺)](sh-hold.md)
 
 ## Sources

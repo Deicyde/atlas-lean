@@ -17,9 +17,9 @@ navigation: module
 
 ## One-step lemmas
 
-- [Start label of the subset-sum emitter](is-t-bit.md)
-- [Start label of the subset-sum emitter](is-v-val.md)
-- [Start label of the subset-sum emitter](is-bit-block-val.md)
+- [Testing a popped input bit](is-t-bit.md)
+- [Testing a popped input bit](is-v-val.md)
+- [Testing a popped input bit](is-bit-block-val.md)
 
 ## Loops
 

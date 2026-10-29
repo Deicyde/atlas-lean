@@ -6,16 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.subset_vertexCoverScan
 ---
 
-# Running time of APPROX-VERTEX-COVER
+# The vertex cover scan only adds vertices
 
-**Running time of APPROX-VERTEX-COVER.** For every list $L$ of ordered pairs of vertices, the
-cost of APPROX-VERTEX-COVER on $L$ is the length of $L$: one unit per listed pair. -/
-@[simp]
-theorem approxVertexCover_time (edges : List (V × V)) :
-    (approxVertexCover edges).time = edges.length :=
-  vertexCoverScan_time ∅ edges
-
-/-! ## The result is a vertex cover
+**The vertex cover scan only adds vertices.** For every finite set $C$ of vertices and every
+list of pairs of vertices, the cover returned by the vertex cover scan starting from $C$ on that
+list contains $C$.
 
 ## Depends on
 

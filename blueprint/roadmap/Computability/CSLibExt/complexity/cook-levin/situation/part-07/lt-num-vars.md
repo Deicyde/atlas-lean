@@ -6,24 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.lt_numVars
 ---
 
-# The all-true assignment satisfies a faithful clause with a positive literal
+# Variables of rows up to the time bound
 
-**The all-true assignment satisfies a faithful clause with a positive literal.** Let
-$V \in \mathbb{N}$ and let $\ell$ be a list of literals that is faithful for $V$ and contains a
-positive literal $(p, \mathrm{true})$. Then the all-true assignment of length $V$ satisfies the
-dense clause over $V$ variables built from $\ell$. -/
-theorem sat_allTrue {V : ℕ} {ls : List (ℕ × Bool)} (hf : Faithful V ls) (hp : ∃ p, (p, true) ∈ ls) :
-    clauseSat (Family.denseClause V ls) (List.replicate V true) := by
-  obtain ⟨p, hp⟩ := hp
-  refine (clauseSat_iff hf).2 ⟨p, true, hp, ?_⟩
-  rw [List.getElem?_replicate, ite_eq_left (hf p true hp).1]
-
-theorem FamPos.allTrue {V : ℕ} {φ : CNF} (h : FamPos V φ) : cnfSat φ (List.replicate V true) := by
-  intro c hc
-  obtain ⟨ls, rfl, hf, hp⟩ := h c hc
-  exact sat_allTrue hf hp
-
-/-! ### The D3 families (update, S-def, shift/overflow/pushed fill) are faithful
+**Variables of rows up to the time bound.** Let $L$ be a layout, let $T$, $H$, $t$ and $p$ be
+natural numbers with $t \le T$, and let $W$ be the number of variables per time step of $L$ at
+height $H$. If $p < (t + 1) W$, then $p$ is less than the number of variables of $L$ for bounds
+$T$ and $H$.
 
 ## Depends on
 

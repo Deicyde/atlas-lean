@@ -28,7 +28,7 @@ false and the stacks $S$ with stack $k$ emptied.
 
 ## Proof depends on
 
-- [The row loop of a diamond in the HAMPATH emitter](add-u-nil.md)
+- [Adding units along no stacks](add-u-nil.md)
 - [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
 - [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 

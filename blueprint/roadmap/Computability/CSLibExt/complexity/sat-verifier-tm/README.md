@@ -37,21 +37,21 @@ navigation: module
 
 ## Phase 0: `x` and `w` onto work stacks
 
-- [The SAT verifier machine](phase0-run.md)
+- [Phase 0 of the SAT verifier host](phase0-run.md)
 
 ## The embeddings are faithful
 
-- [The SAT verifier machine](embeds-tok.md)
+- [The tokenizer embeds in the SAT verifier host](embeds-tok.md)
 - [The embedded lookup meets the lookup contract](lookup-spec.md)
 
 ## Cleanup and output
 
-- [The embedded lookup meets the lookup contract](work-ks-nodup.md)
+- [The cleanup stacks are distinct](work-ks-nodup.md)
 - [Cleanup of the SAT host](clean-host.md)
 
 ## Sizes of the token and table stacks
 
-- [Cleanup of the SAT host](ents-of-map-length.md)
+- [Name lengths in an occurrence table](ents-of-map-length.md)
 
 ## The whole run
 
@@ -65,7 +65,7 @@ navigation: module
 
 ## The verifier is polynomial-time
 
-- [Explicit step bound of the SAT verifier machine](init-list-tm.md)
+- [Initial configuration of the SAT verifier machine](init-list-tm.md)
 - [Step bound of the SAT verifier machine](time.md)
 - [The `TM2` SAT verifier](verifier.md)
 - [The SAT host's answer is polynomial-time](is-poly-time-ans.md)
@@ -75,7 +75,7 @@ navigation: module
 
 ## 3SAT
 
-- [Cook–Levin theorem](ans-true.md)
+- [Answer of the SAT host with the three-literal filter](ans-true.md)
 - [3SAT is in NP](sat3-dec-mem-np.md)
 - [Toks length le](toks-length-le.md)
 - [Clause Toks length le](clause-toks-length-le.md)

@@ -35,7 +35,7 @@ This node has no prerequisites.
 - [Pre-phase of the wrapped machine](pre-phase.md)
 - [The start label lies in the support](start-mem.md)
 - [Support of a code](supp.md)
-- [Main phase of the wrapped machine](tr-list-singleton.md)
+- [The evaluator's encoding of a one-element list](tr-list-singleton.md)
 
 ## Sources
 

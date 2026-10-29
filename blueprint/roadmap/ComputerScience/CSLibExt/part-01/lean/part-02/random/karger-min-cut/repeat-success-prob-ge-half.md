@@ -25,7 +25,7 @@ the contraction process returns $k$ is at least $1/2$.
 - [Success probability of the contraction process](success-prob.md)
 - [Karger's bound](success-prob-ge.md)
 - [The success probability is at most one](success-prob-le-one.md)
-- [Minimum cut size bounds the number of edges](success-prob-nonneg.md)
+- [The success probability is nonnegative](success-prob-nonneg.md)
 
 ## Sources
 

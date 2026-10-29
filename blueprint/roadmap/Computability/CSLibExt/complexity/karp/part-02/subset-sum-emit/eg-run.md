@@ -38,7 +38,7 @@ $C = M = q$.
 
 - [Output block of an edge number](../subset-sum-digits/edge-enc.md)
 - [Is V](is-v.md)
-- [Start label of the subset-sum emitter](is-v-val.md)
+- [Testing a popped input bit](is-v-val.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)

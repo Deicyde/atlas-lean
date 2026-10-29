@@ -36,7 +36,7 @@ navigation: module
 
 ## Copy sites
 
-- [Counter values of a quiescent state](k-ne-o.md)
+- [Counters are not held on the output stack](k-ne-o.md)
 - [Copying a counter through $W$](dup-run.md)
 - [Bit list of a copy site of the 3-COLOR emitter](atom.md)
 - [Running a copy site of the 3-COLOR emitter](site-run.md)
@@ -73,7 +73,7 @@ navigation: module
 
 ## The walk over earlier occurrences
 
-- [Copy sites of the empty clause](cons-edges-same.md)
+- [Consistency edges of two occurrences of the same variable](cons-edges-same.md)
 - [One step of the walk over earlier occurrences](ent-run.md)
 - [Walking the earlier occurrences](walk-run.md)
 - [Emitting one literal occurrence](occ-run.md)

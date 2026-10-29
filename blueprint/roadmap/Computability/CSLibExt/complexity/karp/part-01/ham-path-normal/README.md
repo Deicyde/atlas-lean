@@ -30,5 +30,5 @@ navigation: module
 
 ## The assignment
 
-- [Every top but the last is followed by an end of its row](idx-of-get-d-ham-vars.md)
+- [Positions in the list of distinct variables](idx-of-get-d-ham-vars.md)
 - [Backward direction of SAT ≤ HAMPATH for paths with normal detours](cnf-sat-of-is-ham-path.md)

@@ -26,7 +26,7 @@ bits of $w$ against the pair bits $\mathit{bits}$.
 - [Pair condition of the clique verifier](ok.md)
 - [Chosen-flag pairs](pair-vals.md)
 - [The row-by-row check is the pairwise check](rows-ok-eq.md)
-- [Mem pairs](../clique-correct/mem-pairs.md)
+- [Membership in the vertex pairs](../clique-correct/mem-pairs.md)
 - [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources

@@ -26,7 +26,7 @@ the dense-to-binary translation of $w$ on its output stack and all other stacks 
 - [Step bound for the main loop](conv-t-le.md)
 - [Closing a clause in the translated output](../dense-to-binary/end-clause.md)
 - [The converter's final phase](fin-run.md)
-- [Exact runs of the dense-to-binary converter](mv-run.md)
+- [Moving the input onto the stash](mv-run.md)
 - [The dense-to-binary converter program](prog.md)
 - [Stack contents of the converter](stk-2.md)
 - [The dense-to-binary machine](tm.md)

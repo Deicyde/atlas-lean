@@ -18,7 +18,7 @@ one-point set $\{0\}$ equals the indiscrete noncrossing partition of $\{0\}$.
 
 ## Proof depends on
 
-- [Recognizing the one-block partition](../../finpartition/card/card-parts-pos-iff.md)
+- [A partition has a block exactly when its ground set is nonempty](../../finpartition/card/card-parts-pos-iff.md)
 - [Recognizing the one-block partition](../../finpartition/card/eq-top-iff-card-parts-eq-one.md)
 - [Noncrossing set partition](../basic/is-noncrossing.md)
 - [Set partition](../basic/set-partition.md)

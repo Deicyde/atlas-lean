@@ -28,7 +28,7 @@ has a PCP solution.
 
 - [The ambiguity grammar of a PCP instance](amb-grammar.md)
 - [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](is-ambiguous-iff-pcp.md)
-- [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](primrec-amb-grammar.md)
+- [The ambiguity grammar is primitive recursive](primrec-amb-grammar.md)
 
 ## Sources
 

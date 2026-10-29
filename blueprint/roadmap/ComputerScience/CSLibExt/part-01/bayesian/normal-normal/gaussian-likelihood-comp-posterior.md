@@ -19,7 +19,7 @@ to the posterior given $x$, has law $N(\mu(x), s + v)$.
 
 - [Gaussian likelihood with known variance](gaussian-likelihood.md)
 - [Noiseless Gaussian likelihood](gaussian-likelihood-zero-apply.md)
-- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Measurability of the Gaussian density in its mean and argument](measurable-gaussian-pdf-mean.md)
 - [Posterior mean of the Normal–Normal model](normal-post-mean.md)
 - [Posterior variance of the normal–normal model](normal-post-var.md)
 

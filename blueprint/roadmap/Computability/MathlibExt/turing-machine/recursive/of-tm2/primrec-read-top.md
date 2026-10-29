@@ -6,16 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.primrec₂_readTop
 ---
 
-# The coded step
+# Updating the state from the top of a coded stack is primitive recursive
 
-**The coded step.** For a coded configuration $(l, v, S)$, consisting of an optional label $l$,
-an internal state $v$ and coded stacks $S$, the coded step is undefined when $l$ is absent (the
-configuration has halted). When $l$ is a label, it is the coded configuration obtained by the coded
-execution of the program statement of $l$ from the internal state $v$ on the coded stacks $S$. -/
-noncomputable def stepC (c : CodedCfg tm) : Option (CodedCfg tm) :=
-  c.1.map fun l ↦ stepAuxC tm (tm.m l) c.2.1 c.2.2
-
-/-! ### The coded step is primitive recursive
+**Updating the state from the top of a coded stack is primitive recursive.** Let $k$ be a
+stack index of a finite multi-stack machine, write $\Gamma_k$ for the alphabet of stack $k$, and
+let $f$ be any function sending an internal state and an optional symbol of $\Gamma_k$ to an
+internal state. Then the map sending an internal state $v$ and coded stacks $S$ (a list $S_j$ of
+natural numbers for each stack index $j$) to $f(v, t)$, where $t$ is the top of stack $k$ as read
+from $S$, is primitive recursive as a function of two arguments, for the encoding of internal
+states and the encoding of functions on the finite type of stack indices.
 
 ## Depends on
 

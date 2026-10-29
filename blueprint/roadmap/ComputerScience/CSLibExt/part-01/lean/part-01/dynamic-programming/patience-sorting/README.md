@@ -20,5 +20,5 @@ navigation: module
 
 ## Cost
 
-- [Patience sorting agrees with the quadratic dynamic program](patience-step-size-le.md)
+- [A patience step grows the tails by at most one](patience-step-size-le.md)
 - [Comparison bound for patience sorting](patience-length-time-le.md)

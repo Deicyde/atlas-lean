@@ -20,7 +20,7 @@ navigation: module
 
 ## Unfolding the construction
 
-- [Col Occ next](col-occ-next.md)
+- [Adding a literal occurrence takes two new vertices](col-occ-next.md)
 
 ## Growth
 
@@ -39,9 +39,9 @@ navigation: module
 
 ## 3-colorable graphs give satisfiable formulas
 
-- [Sound col Or](sound-col-or.md)
+- [Output of the OR gadget under a proper 3-coloring](sound-col-or.md)
 - [Correctness of the reduction from SAT to 3-coloring](cnf-sat-iff-colorable.md)
 
 ## The reduction on bit strings
 
-- [Correctness of the reduction from SAT to 3-coloring](sat-dec-eq-col3-dec-reduce-col.md)
+- [Correctness of the SAT to 3-COLOR map on bit strings](sat-dec-eq-col3-dec-reduce-col.md)

@@ -6,38 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.bit_inv
 ---
 
-# Running a chain of copy sites in the HAMPATH emitter
+# A symbol that reads as a name bit is that bit
 
-**Running a chain of copy sites in the HAMPATH emitter.** Let $j_1, \dots, j_n$ be copy sites
-chained from label $l_0$ to label $l$ with passed bit $b$. Then for every quiescent state $s$ and
-every flag $v$ there is a flag $v'$ such that the emitter machine goes, in exactly as many steps as
-the step count of $j_1, \dots, j_n$ at $s$, from label $l_0$ with flag $v$ and the stacks of $s$ to
-label $l$ with flag $v'$ and the stacks of the state that differs from $s$ only in that the atoms
-of $j_1, \dots, j_n$ at $s$, concatenated in this order, are appended to its edge bits. -/
-theorem chain_run (js : List Site) : ∀ (s : MS) (b : Bool) (l₀ l : Lab),
-    Chain js b l₀ l = true → ∀ v : Bool, ∃ v', Run prog (chainCost s js) ⟨some l₀, v, s.stk⟩
-      ⟨some l, v', {s with q := s.q ++ (js.map (atom s)).flatten}.stk⟩ := by
-  induction js with
-  | nil =>
-      intro s b l₀ l h v
-      simp only [Chain, beq_iff_eq] at h
-      subst h
-      exact ⟨v, by simpa [chainCost] using Run.zero (M := prog) _⟩
-  | cons j js ih =>
-      intro s b l₀ l h v
-      simp only [Chain, Bool.and_eq_true, beq_iff_eq] at h
-      obtain ⟨rfl, h⟩ := h
-      obtain ⟨v₁, r₁⟩ := site_run j b s v
-      obtain ⟨v₂, r₂⟩ := ih {s with q := s.q ++ atom s j} b (j.nxt b) l h v₁
-      rw [chainCost_q] at r₂
-      have e : chainCost s (j :: js) = 2 * s.val j.src + 3 + chainCost s js := by
-        simp [chainCost]
-      rw [e]
-      have r := r₁.trans r₂
-      simp only [atom_q, List.append_assoc] at r
-      exact ⟨v₂, by simpa using r⟩
-
-/-! ### Comparing a name on `F` with the top entry of `V`
+**A symbol that reads as a name bit is that bit.** For every symbol $x$ of the stack alphabet
+of the SAT verifier and every bit $b$, if $x$ reads as the name bit $b$, then $x$ is the name-bit
+symbol for $b$.
 
 ## Depends on
 

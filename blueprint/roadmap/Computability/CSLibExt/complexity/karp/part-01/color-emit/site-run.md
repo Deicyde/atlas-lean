@@ -36,7 +36,7 @@ $j$.
 - [Constant block of a copy site](top.md)
 - [Counters read by copy sites](src.md)
 - [Stack of a counter](k-2.md)
-- [Counter values of a quiescent state](k-ne-o.md)
+- [Counters are not held on the output stack](k-ne-o.md)
 - [Unit symbol of a counter](unit.md)
 - [Copying a counter through $W$](dup-run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)

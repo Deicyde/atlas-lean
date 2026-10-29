@@ -6,13 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.isV_val
 ---
 
-# Start label of the subset-sum emitter
+# Testing a popped input bit
 
-**Start label of the subset-sum emitter.** The VERTEX-COVER to SUBSET-SUM machine starts at
-the label $\mathsf{rdK}$, which begins parsing the input by reading its leading unary number. -/
-def start : Lab := .rdK
-
-/-! ### One-step lemmas
+**Testing a popped input bit.** For every bit $b$, the test for the input bit true of the
+SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$.
 
 ## Depends on
 

@@ -16,7 +16,7 @@ $(i, j)$ in $b$ is the entry of $b$ at the position of $(i, j)$ in the pair list
 ## Depends on
 
 - [Adjacency bit of a vertex pair](../clique/adj-bits.md)
-- [Mem pairs](mem-pairs.md)
+- [Membership in the vertex pairs](mem-pairs.md)
 - [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources

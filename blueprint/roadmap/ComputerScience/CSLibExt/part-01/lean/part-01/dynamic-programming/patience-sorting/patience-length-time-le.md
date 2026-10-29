@@ -21,7 +21,7 @@ order, patience sorting on $xs$ uses at most $n \lceil \log_2 (n + 1) \rceil$ co
 - [Comparison bound for lower-bound search](../../../part-02/search/lower-bound/lower-bound-time-le.md)
 - [Patience scan](patience-scan.md)
 - [Patience step](patience-step.md)
-- [Patience sorting agrees with the quadratic dynamic program](patience-step-size-le.md)
+- [A patience step grows the tails by at most one](patience-step-size-le.md)
 
 ## Sources
 

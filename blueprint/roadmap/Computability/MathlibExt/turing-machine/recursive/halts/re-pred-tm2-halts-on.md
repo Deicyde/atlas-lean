@@ -35,9 +35,9 @@ gives the empty word) is recursively enumerable.
 - [Encoding of labels](../of-tm2/primcodable.md)
 - [Encoding of internal states](../of-tm2/primcodable-2.md)
 - [Joint primitive recursion over a finite first argument](../of-tm2/primrec-of-finite-left.md)
-- [The coded step](../of-tm2/primrec-read-top.md)
+- [Updating the state from the top of a coded stack is primitive recursive](../of-tm2/primrec-read-top.md)
 - [Reading the top of a coded stack](../of-tm2/read-top.md)
-- [The coded run simulates the machine's run](../of-tm2/relevant-init-list.md)
+- [The initial stacks have only relevant symbols](../of-tm2/relevant-init-list.md)
 - [The coded execution of a statement](../of-tm2/step-aux-c.md)
 - [The coded step](../of-tm2/step-c.md)
 

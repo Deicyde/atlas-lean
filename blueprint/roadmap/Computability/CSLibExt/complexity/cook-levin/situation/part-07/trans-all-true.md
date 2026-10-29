@@ -52,7 +52,7 @@ Every clause of these families has a positive literal at an index below $V$.
 - [Index of a label/state variable](../../family/x-idx.md)
 - [Well-formed situation tables for the transition clauses](../../family/wf.md)
 - [Dense clause from a list of literals](../../family/dense-clause.md)
-- [Shifting the start of a gap encoding](../../family/div-mod-succ-of-lt.md)
+- [Successor of a number with a non-maximal remainder](../../family/div-mod-succ-of-lt.md)
 - [Increasing literal sequences](../../family/inc-of-mono.md)
 - [Position of a literal in a transition clause](../../family/lit-pos.md)
 - [Literals of a transition clause](../../family/lits.md)

@@ -37,7 +37,7 @@ bottoms $t$, and $v$ is the rest of the row still to be matched on top.
 - [Copy domino](copy-card.md)
 - [Comparing words of letters before a separator](exists-of-lift-append-eq.md)
 - [Final domino](final-card.md)
-- [The MPCP instance of a reachability instance](letter-ne-star.md)
+- [Letters differ from the star](letter-ne-star.md)
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
 - [The start domino](start-card.md)

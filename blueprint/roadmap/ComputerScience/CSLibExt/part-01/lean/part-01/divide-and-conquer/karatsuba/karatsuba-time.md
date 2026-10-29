@@ -6,29 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.karatsuba_time
 ---
 
-# Size bound for Karatsuba's recursive operands
+# Cost of Karatsuba multiplication
 
-**Size bound for Karatsuba's recursive operands.** Let $B \ge 1$ and $n$ be natural numbers,
-let $m = \lceil n/2 \rceil$, and let $x < B^n$ be a natural number. Then the high part
-$\lfloor x / B^m \rfloor$, the low part $x \bmod B^m$, and their distance
-$|\lfloor x / B^m \rfloor - x \bmod B^m|$ are all less than $B^m$.
+**Cost of Karatsuba multiplication.** For all natural numbers $B$, $n$, $x$ and $y$, the cost
+of Karatsuba multiplication of $x$ and $y$ as $n$-digit numbers in base $B$ equals $T(n)$, where
+$T$ is the Karatsuba cost recurrence, $T(n) = 1$ for $n \le 1$ and
+$T(n) = 3\,T(\lceil n/2 \rceil) + n$ for $n \ge 2$.
 
-Applied to both inputs, all six recursive operands stay within the digit model, and the base case
-multiplies single digits. -/
-theorem karatsuba_operands_lt {B n x : ℕ} (hB : 0 < B) (hx : x < B ^ n) :
-    x / B ^ ((n + 1) / 2) < B ^ ((n + 1) / 2) ∧ x % B ^ ((n + 1) / 2) < B ^ ((n + 1) / 2) ∧
-      Nat.dist (x / B ^ ((n + 1) / 2)) (x % B ^ ((n + 1) / 2)) < B ^ ((n + 1) / 2) := by
-  set m := (n + 1) / 2
-  have hpos : 0 < B ^ m := Nat.pow_pos hB
-  have hdiv : x / B ^ m < B ^ m := by
-    rw [Nat.div_lt_iff_lt_mul hpos, ← pow_add]
-    exact hx.trans_le (Nat.pow_le_pow_right hB (by omega))
-  have hmod : x % B ^ m < B ^ m := Nat.mod_lt _ hpos
-  refine ⟨hdiv, hmod, ?_⟩
-  rw [Nat.dist_eq_max_sub_min]
-  exact lt_of_le_of_lt (Nat.sub_le _ _) (max_lt hdiv hmod)
-
-/-! ## Cost
+In particular the cost depends only on the digit count $n$, not on $B$, $x$ or $y$.
 
 ## Depends on
 

@@ -21,7 +21,7 @@ $i < j < n$, the bit of the pair $(i, j)$ in $b$ is $f(i, j)$.
 ## Proof depends on
 
 - [Pair bits are read off by position](adj-bits-eq-get-elem.md)
-- [Mem pairs](mem-pairs.md)
+- [Membership in the vertex pairs](mem-pairs.md)
 
 ## Sources
 

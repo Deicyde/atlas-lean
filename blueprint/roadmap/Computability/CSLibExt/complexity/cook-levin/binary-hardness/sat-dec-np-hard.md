@@ -49,7 +49,7 @@ formula in the binary-index encoding.
 - [The dense-to-binary translation on bit strings](../../dense-to-binary-converter/bin-conv.md)
 - [The binary-index translation preserves satisfiability when all clauses have equal length](../../dense-to-binary/cnf-sat-bin-cnf-iff.md)
 - [The translation computes the binary encoding](../../dense-to-binary/conv-encode-cnf.md)
-- [The translation computes the binary encoding](../../dense-to-binary/sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](../../dense-to-binary/sat-dec-encode-cnf.md)
 - [Canonical bit-list decoder](../../encoding-converters/computable.md)
 - [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
 - [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)

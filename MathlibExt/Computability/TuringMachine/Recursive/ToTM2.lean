@@ -323,6 +323,16 @@ theorem frun_one (d : FCfg c) : frun c 1 (some d) = fstep c d := rfl
 
 /-! ### The pre-phase -/
 
+/-- **The first pre-phase loop of the wrapped machine.** Write $\Gamma'$ for the stack alphabet of
+Mathlib's code evaluator. Let $c$ be a code, $a$, $r$, $x$ and $y$ lists of symbols of $\Gamma'$,
+$b$ a list of bits of length $k$ and $v$ an internal state (a symbol of $\Gamma'$ or none), and
+write $\beta(b)$ for $b$ with each bit $\mathrm{true}$ replaced by the symbol bit1 and each bit
+$\mathrm{false}$ by the symbol bit0 of $\Gamma'$. Started at the adapter label pre1 with internal
+state $v$, the lists $a$, $r$, $x$ and $y$ on the stacks main, rev, aux and stack, $b$ on the
+input stack and the output stack empty, the wrapped machine of $c$ is after exactly $k + 1$ steps
+at the adapter label pre2 with internal state none, the reversal of $\beta(b)$ followed by $r$ on
+the rev stack, $a$, $x$ and $y$ still on the stacks main, aux and stack, and the input and output
+stacks empty. -/
 theorem pre1_loop (a b c' d : List Γ') (bits : List Bool) (v : Option Γ') :
     frun c (bits.length + 1) (some ⟨some (Sum.inl Phase.pre1), v, mkStk a b c' d bits []⟩) =
       some ⟨some (Sum.inl Phase.pre2), none,
@@ -379,6 +389,16 @@ theorem pre_phase (bits : List Bool) :
 
 /-! ### The post-phase -/
 
+/-- **The first post-phase loop of the wrapped machine.** Write $\Gamma'$ for the stack alphabet of
+Mathlib's code evaluator. Let $c$ be a code, $b$ a list of bits of length $k$, $r$ a list of
+symbols of $\Gamma'$, $o$ a list of bits and $v$ an internal state (a symbol of $\Gamma'$ or
+none), and write $\beta(b)$ for $b$ with each bit $\mathrm{true}$ replaced by the symbol bit1 and
+each bit $\mathrm{false}$ by the symbol bit0 of $\Gamma'$. Started at the adapter label post1
+with internal state $v$, $\beta(b)$ followed by the symbol cons on the main stack, $r$ on the rev
+stack, $o$ on the output stack and all other stacks empty, the wrapped machine of $c$ is after
+exactly $k + 1$ steps at the adapter label post2 with internal state cons, the reversal of
+$\beta(b)$ followed by $r$ on the rev stack, $o$ on the output stack and all other stacks
+empty. -/
 theorem post1_loop (bits : List Bool) (r : List Γ') (o : List Bool) (v : Option Γ') :
     frun c (bits.length + 1) (some ⟨some (Sum.inl Phase.post1), v,
         mkStk (bits.map boolToΓ' ++ [Γ'.cons]) r [] [] [] o⟩) =
@@ -582,6 +602,10 @@ theorem main_phase {f : ℕ → ℕ} (hc : ∀ n, c.eval [n] = pure [f n]) (n : 
 
 /-! ### Assembly -/
 
+/-- **The evaluator's encoding of a one-element list.** For every natural number $m$, the list of
+stack symbols by which Mathlib's code evaluator encodes the one-element list $[m]$ is the binary
+encoding of $m$ (least significant bit first) with each bit written as $\mathrm{bit1}$ if it is
+true and as $\mathrm{bit0}$ if it is false, followed by the symbol $\mathrm{cons}$. -/
 theorem trList_singleton (m : ℕ) : trList [m] = (encodeNat m).map boolToΓ' ++ [Γ'.cons] := by
   simp [trList, trNat_eq_map]
 

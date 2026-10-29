@@ -6,19 +6,13 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.ans_true
 ---
 
-# Cook–Levin theorem
+# Answer of the SAT host with the three-literal filter
 
-**Cook–Levin theorem.** CNF satisfiability is NP-complete: the decision problem accepting
-exactly the bit strings that encode a satisfiable CNF formula is in NP, and every decision
-problem in NP has a polynomial-time many-one reduction to it. -/
-theorem cook_levin_SAT_np_complete :
-    satDec ∈ ComplexityTheory.NP ∧
-      ∀ L : ComplexityTheory.DecisionProblem,
-        L ∈ ComplexityTheory.NP → PolyManyOneRed L satDec :=
-  Cslib.Complexity.CookLevin.Hardness.cook_levin_SAT_np_complete_of_isPolyTime
-    isPolyTime_satVerifier
-
-/-! ### 3SAT
+**Answer of the SAT host with the three-literal filter.** For all bit strings $x$ and $w$,
+the answer of the SAT host with flag true on $(x, w)$ is the conjunction of two bits. The first
+is false if the complete length-prefixed CNF decoder fails on $x$; if $x$ decodes to a CNF
+formula $\varphi$, it is true exactly when every clause of $\varphi$ has at most three literals.
+The second is the return value of the SAT verifier on $(x, w)$.
 
 ## Depends on
 

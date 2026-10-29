@@ -34,7 +34,7 @@ $w \star$ followed by the bottom of $A$, where $\star$ is the row separator.
 - [One-step rewriting](step.md)
 - [Copy domino](copy-card.md)
 - [Final domino](final-card.md)
-- [The backward direction of the MPCP reduction](mem-symbols-of-step.md)
+- [Rewriting steps keep the letters of the instance](mem-symbols-of-step.md)
 - [The domino of a rewriting rule](rule-card.md)
 - [The separator domino](sep-card.md)
 - [The start domino](start-card.md)

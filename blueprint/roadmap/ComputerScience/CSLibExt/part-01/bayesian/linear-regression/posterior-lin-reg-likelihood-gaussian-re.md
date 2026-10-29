@@ -31,7 +31,7 @@ $s_0 \sigma^2 / (\sigma^2 + s_0 \sum_i x_i^2)$.
 - [The extended-real linear regression likelihood density](lin-reg-likelihood-pdf.md)
 - [The linear regression likelihood density](lin-reg-likelihood-pdfreal.md)
 - [The evidence of Bayesian linear regression](lin-reg-likelihood-comp-gaussian-real.md)
-- [The linear regression likelihood is a product of Gaussians](measurable-lin-reg-post-mean.md)
+- [Measurability of the posterior mean in Bayesian linear regression](measurable-lin-reg-post-mean.md)
 - [Bayes' rule for densities](../density/posterior-ae-eq-of-mul-eq.md)
 
 ## Sources

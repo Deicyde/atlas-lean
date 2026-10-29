@@ -6,32 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.relevant_initList
 ---
 
-# The coded run simulates the machine's run
+# The initial stacks have only relevant symbols
 
-**The coded run simulates the machine's run.** Let $o$ be either no configuration or a
-configuration of a finite multi-stack machine all of whose stack symbols are relevant. Let
-running one step send a running configuration to its successor, and a halted configuration or no
-configuration to no configuration. Then for every $j$, applying the coded step on optional
-configurations $j$ times to the coding of $o$ gives the coding of the result of running $j$
-steps from $o$, and if running $j$ steps from $o$ gives a configuration, all of its stack symbols
-are relevant. -/
-theorem optStepC_iterate (j : ℕ) {o : Option tm.Cfg} (ho : ∀ c ∈ o, Relevant tm c.stk) :
-    (optStepC tm)^[j] (o.map (enc tm)) = ((flip bind tm.step)^[j] o).map (enc tm) ∧
-      ∀ c ∈ (flip bind tm.step)^[j] o, Relevant tm c.stk := by
-  induction j generalizing o with
-  | zero => exact ⟨rfl, ho⟩
-  | succ j ih =>
-    have hstep : optStepC tm (o.map (enc tm)) = (flip bind tm.step o).map (enc tm) ∧
-        ∀ c ∈ flip bind tm.step o, Relevant tm c.stk := by
-      cases o with
-      | none => exact ⟨rfl, fun c hc ↦ by cases hc⟩
-      | some c =>
-        obtain ⟨h₁, h₂⟩ := stepC_enc tm (ho c rfl)
-        exact ⟨h₁, h₂⟩
-    rw [Function.iterate_succ_apply, Function.iterate_succ_apply, hstep.1]
-    exact ih hstep.2
-
-/-! ### Input, output and halting
+**The initial stacks have only relevant symbols.** For a finite multi-stack machine and every
+list $s$ of symbols of the input alphabet $\Gamma_{k_0}$, the stacks of the initial configuration
+with input $s$ (the list $s$ on the input stack $k_0$ and every other stack empty) have only
+relevant symbols.
 
 ## Depends on
 

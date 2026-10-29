@@ -28,7 +28,7 @@ $m_0$, $s_0$, $\sigma^2$ and $x$.
 - [The linear regression likelihood density](lin-reg-likelihood-pdfreal.md)
 - [Posterior mean in Bayesian linear regression](lin-reg-post-mean.md)
 - [Posterior variance in Bayesian linear regression](lin-reg-post-var.md)
-- [The linear regression likelihood is a product of Gaussians](measurable-lin-reg-post-mean.md)
+- [Measurability of the posterior mean in Bayesian linear regression](measurable-lin-reg-post-mean.md)
 
 ## Sources
 

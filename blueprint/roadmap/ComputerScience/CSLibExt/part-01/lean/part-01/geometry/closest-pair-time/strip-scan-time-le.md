@@ -26,7 +26,7 @@ length of $Y$.
 
 - [Packing bound for the strip](length-le-seven.md)
 - [Scan From](../closest-pair/scan-from.md)
-- [Packing bound for the strip](scan-from-time.md)
+- [Cost of the scan from one strip point](scan-from-time.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

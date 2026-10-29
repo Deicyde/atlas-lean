@@ -32,7 +32,7 @@ a list replaces each bit $b$ by $\mathrm{true}, b$ and appends $\mathrm{false}$.
 
 - [Delimiting a bit list that ends in true](../subset-sum-digits/delimit-append-true.md)
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
-- [Start label of the subset-sum emitter](is-t-bit.md)
+- [Testing a popped input bit](is-t-bit.md)
 - [Run of the target-bit loop of the subset-sum emitter](tem-run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 

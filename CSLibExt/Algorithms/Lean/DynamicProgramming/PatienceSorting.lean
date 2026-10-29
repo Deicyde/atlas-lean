@@ -300,6 +300,9 @@ theorem patienceLength_eq_length_longestIncreasingSubsequence (xs : List α) :
 
 /-! ## Cost -/
 
+/-- **A patience step grows the tails by at most one.** Let $\alpha$ be a linear order. For every
+array $t$ over $\alpha$ and every element $x \in \alpha$, the array returned by the patience step
+for $x$ on $t$ has size at most the size of $t$ plus $1$. -/
 theorem patienceStep_size_le (tails : Array α) (x : α) :
     (patienceStep tails x).ret.size ≤ tails.size + 1 := by
   simp only [patienceStep, ret_bind]

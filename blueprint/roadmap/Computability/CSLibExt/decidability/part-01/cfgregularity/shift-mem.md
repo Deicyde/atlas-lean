@@ -26,7 +26,7 @@ read over the extended alphabet, each letter $t$ of $T$ replaced by the correspo
 
 - [The auxiliary productions of the regularity grammar](fixed-rules.md)
 - [Shifted right-hand sides generate the images of words](mem-eval-form-shift-of.md)
-- [Every production of the regularity grammar is sound for its intended languages](mem-language-from-of-mem-rules.md)
+- [Productions of the regularity grammar preserve generated languages](mem-language-from-of-mem-rules.md)
 - [Shift Rule](shift-rule.md)
 - [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Valuation of a grammar](../../../languages/context-free/part-01/basic/is-valuation.md)

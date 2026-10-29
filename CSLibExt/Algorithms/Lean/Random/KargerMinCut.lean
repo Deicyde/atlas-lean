@@ -298,6 +298,9 @@ theorem card_mul_le_two_mul_edges {st : State V} (hv : st.Valid) {k : ℕ} (hmin
 
 /-! ## The success probability -/
 
+/-- **The success probability is nonnegative.** For every natural number $k$, every number $f$
+of allowed contractions and every multigraph state $G$, the probability $P_k(f, G)$ that the
+contraction process on $G$ returns $k$ satisfies $0 \le P_k(f, G)$. -/
 theorem successProb_nonneg (k : ℕ) : ∀ (fuel : ℕ) (st : State V), 0 ≤ successProb k fuel st
   | 0, st => by
       unfold successProb

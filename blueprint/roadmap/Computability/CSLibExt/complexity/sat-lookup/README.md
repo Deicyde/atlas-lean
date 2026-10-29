@@ -15,11 +15,11 @@ navigation: module
 
 ## Name blocks and table entries
 
-- [Stack contents of the lookup machine](bit-bit.md)
+- [A name bit reads as itself](bit-bit.md)
 
 ## Single steps
 
-- [Stack contents of the lookup machine](init-run.md)
+- [Initialization step of the lookup machine](init-run.md)
 
 ## One table entry
 

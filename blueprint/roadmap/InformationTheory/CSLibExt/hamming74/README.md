@@ -17,7 +17,7 @@ navigation: module
 
 ## The code
 
-- [The Hamming decoder's syndrome table is correct](g-mul-h-transpose.md)
+- [The generator matrix is orthogonal to the parity-check matrix](g-mul-h-transpose.md)
 - [The Hamming generator matrix generates the Hamming code](of-generator-g-eq-code.md)
 - [The Hamming (7,4) code has minimum weight at least 3](three-le-min-weight-code.md)
 - [Minimum distance of the Hamming (7,4) code](min-dist-code.md)

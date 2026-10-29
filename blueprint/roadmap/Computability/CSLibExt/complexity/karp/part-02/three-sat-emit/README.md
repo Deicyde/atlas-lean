@@ -49,5 +49,5 @@ navigation: module
 
 ## The emitter
 
-- [The 3SAT emitter processes a whole formula](rep-single.md)
+- [Repeating a single bit](rep-single.md)
 - [The SAT-to-3SAT emitter writes the encoded translation in quadratic time](run.md)

@@ -23,7 +23,7 @@ the brute-force scan (their costs may differ).
 - [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
 - [Dist2](dist2.md)
 - [Min Dist From](min-dist-from.md)
-- [Min Dist From spec](min-dist-from-spec.md)
+- [The nearest-point scan returns the least squared distance](min-dist-from-spec.md)
 - [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources

@@ -33,7 +33,7 @@ literal; that is, the init family is a faithful family with positive literals ov
 - [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Number of situations](../part-01/n.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
 - [Certificate clauses of the init family](../part-06/init-cert.md)
 - [Start-code clause of the init family](../part-06/init-code.md)
 - [Input clauses of the init family](../part-06/init-in.md)
@@ -42,7 +42,7 @@ literal; that is, the init family is a faithful family with positive literals ov
 - [Length-bound clauses of the init family](../part-06/init-tail.md)
 - [Index of the empty-cell variable of the input stack](../part-06/z-idx.md)
 - [Faithful literal list](faithful.md)
-- [The all-true assignment satisfies a faithful clause with a positive literal](lt-num-vars.md)
+- [Variables of rows up to the time bound](lt-num-vars.md)
 - [Dense CNF formula](../../../dense-sat/cnf.md)
 - [Dense clause](../../../dense-sat/clause.md)
 

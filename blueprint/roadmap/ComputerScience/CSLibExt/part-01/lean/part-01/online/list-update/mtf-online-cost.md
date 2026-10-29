@@ -24,7 +24,7 @@ the list of that state.
 
 - [Access cost](access-cost.md)
 - [Move-to-front](mtf.md)
-- [The amortized cost of a move-to-front step](mtf-perm.md)
+- [Move-to-front rearranges the list](mtf-perm.md)
 
 ## Sources
 

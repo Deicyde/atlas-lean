@@ -19,7 +19,7 @@ of comparators equals $k \cdot 2^k$.
 ## Proof depends on
 
 - [Half-cleaner](half-cleaner.md)
-- [The bitonic sorter sorts every `0`-`1` input](length-half-cleaner.md)
+- [Size of the half-cleaner](length-half-cleaner.md)
 
 ## Sources
 

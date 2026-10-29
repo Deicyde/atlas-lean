@@ -24,7 +24,7 @@ when they lie in different clauses and are not complementary.
 
 ## Proof depends on
 
-- [Independent sets and vertex covers of complementary sizes](mem-occs.md)
+- [Membership in the literal occurrences of a CNF formula](mem-occs.md)
 - [Adjacency of literal occurrences in Karp's clique graph](../clique/occ-adj.md)
 - [Adjacency in Karp's clique graph](to-graph-clique-bits-adj.md)
 

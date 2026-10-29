@@ -23,7 +23,7 @@ number of $x \in I$ with $w(x) > t$ is at most the number of $x \in G$ with $w(x
 ## Proof depends on
 
 - [Greedy scan with an independence oracle](matroid-greedy-scan.md)
-- [Running time of the matroid greedy algorithm](matroid-greedy-scan-append.md)
+- [The greedy scan over a concatenation](matroid-greedy-scan-append.md)
 - [Invariant of the greedy scan](matroid-greedy-scan-spec.md)
 
 ## Sources

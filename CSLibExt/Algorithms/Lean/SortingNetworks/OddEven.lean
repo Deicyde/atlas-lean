@@ -274,6 +274,10 @@ theorem oddEvenSortN_sorts : ∀ (k : ℕ) (f : ℕ → Bool),
 
 /-! ## Wires, size, and the network on `2 ^ k` wires -/
 
+/-- **Relabeling keeps comparators within an interval.** Let $ps$ be a list of comparators,
+each a pair of natural numbers, that lies within $[l, h)$, and let $e : \mathbb{N} \to \mathbb{N}$
+satisfy $l' \le e(x) < h'$ for every $x$ with $l \le x < h$. Then the list obtained from $ps$ by
+relabeling its wires by $e$ lies within $[l', h')$. -/
 theorem relabel_within {ps : List (ℕ × ℕ)} {lo hi : ℕ} (h : Within ps lo hi) (e : ℕ → ℕ)
     {lo' hi' : ℕ} (he : ∀ x, lo ≤ x → x < hi → lo' ≤ e x ∧ e x < hi') :
     Within (relabel e ps) lo' hi' := by

@@ -6,27 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.pre1_loop
 ---
 
-# Iterated steps of the wrapped machine
+# The first pre-phase loop of the wrapped machine
 
-**Iterated steps of the wrapped machine.** Let $c$ be a partial recursive code and let $s$ be
-the map that sends none to none and a configuration $d$ of the wrapped machine for $c$ to the
-result of one step of the wrapped machine on $d$ (which is none if $d$ has halted). For
-$j \in \mathbb{N}$ and $x$ either a configuration of the wrapped machine for $c$ or none, the
-$j$-fold run from $x$ is $s^{j}(x)$, the result of applying $s$ to $x$ $j$ times. -/
-noncomputable abbrev frun (j : ℕ) (x : Option (FCfg c)) : Option (FCfg c) :=
-  (flip bind (fstep c))^[j] x
-
-theorem frun_add (j₁ j₂ : ℕ) (x : Option (FCfg c)) :
-    frun c (j₁ + j₂) x = frun c j₁ (frun c j₂ x) := Function.iterate_add_apply _ _ _ _
-
-theorem frun_succ (j : ℕ) (d : FCfg c) :
-    frun c (j + 1) (some d) = frun c j (fstep c d) := Function.iterate_succ_apply _ _ _
-
-theorem frun_zero (x : Option (FCfg c)) : frun c 0 x = x := rfl
-
-theorem frun_one (d : FCfg c) : frun c 1 (some d) = fstep c d := rfl
-
-/-! ### The pre-phase
+**The first pre-phase loop of the wrapped machine.** Write $\Gamma'$ for the stack alphabet of
+Mathlib's code evaluator. Let $c$ be a code, $a$, $r$, $x$ and $y$ lists of symbols of $\Gamma'$,
+$b$ a list of bits of length $k$ and $v$ an internal state (a symbol of $\Gamma'$ or none), and
+write $\beta(b)$ for $b$ with each bit $\mathrm{true}$ replaced by the symbol bit1 and each bit
+$\mathrm{false}$ by the symbol bit0 of $\Gamma'$. Started at the adapter label pre1 with internal
+state $v$, the lists $a$, $r$, $x$ and $y$ on the stacks main, rev, aux and stack, $b$ on the
+input stack and the output stack empty, the wrapped machine of $c$ is after exactly $k + 1$ steps
+at the adapter label pre2 with internal state none, the reversal of $\beta(b)$ followed by $r$ on
+the rev stack, $a$, $x$ and $y$ still on the stacks main, aux and stack, and the input and output
+stacks empty.
 
 ## Depends on
 

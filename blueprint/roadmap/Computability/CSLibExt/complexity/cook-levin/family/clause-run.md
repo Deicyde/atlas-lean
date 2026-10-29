@@ -50,7 +50,7 @@ and $H$, and $C$ is the step bound for one whole clause of $L$ for $T$ and $H$.
 - [Index of a label/state variable](x-idx.md)
 - [Scratch counters at rest in the clause-family generator](rest.md)
 - [Boundary before a literal of a transition clause](bnd.md)
-- [Shifting the start of a gap encoding](div-mod-succ-of-lt.md)
+- [Successor of a number with a non-maximal remainder](div-mod-succ-of-lt.md)
 - [Encoding a dense clause block by block](encode-clause-dense-clause.md)
 - [Gap encoding of a dense clause](gap-enc.md)
 - [Shifting the start of a gap encoding](gap-enc-shift.md)

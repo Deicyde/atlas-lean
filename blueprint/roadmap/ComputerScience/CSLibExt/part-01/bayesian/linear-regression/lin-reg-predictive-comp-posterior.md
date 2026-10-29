@@ -31,7 +31,7 @@ $v = s_0 \sigma^2 / (\sigma^2 + s_0 \sum_i x_i^2)$ are the posterior mean and va
 
 - [Gaussian likelihood with known variance](../normal-normal/gaussian-likelihood.md)
 - [The marginal of the data](../normal-normal/gaussian-likelihood-comp-gaussian-real.md)
-- [Completing the square](../normal-normal/measurable-gaussian-pdf-mean.md)
+- [Measurability of the Gaussian density in its mean and argument](../normal-normal/measurable-gaussian-pdf-mean.md)
 - [Bayesian linear regression](posterior-lin-reg-likelihood-gaussian-re.md)
 
 ## Sources

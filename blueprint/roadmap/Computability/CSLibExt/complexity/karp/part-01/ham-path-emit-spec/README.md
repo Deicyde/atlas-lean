@@ -12,5 +12,5 @@ navigation: module
 - [Splitting off the middle clause of a concatenation](range-flat-map-get-d.md)
 - [Insert a variable if new](ins-v.md)
 - [Removing duplicates by insertion](foldr-ins-v.md)
-- [Removing duplicates by insertion](hp-r-succ.md)
+- [Consecutive row vertices](hp-r-succ.md)
 - [Length bound for the bit encoding of an edge list](edge-bits-length-le.md)

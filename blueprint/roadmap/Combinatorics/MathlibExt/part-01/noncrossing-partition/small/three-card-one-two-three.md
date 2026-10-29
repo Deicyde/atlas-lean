@@ -19,7 +19,7 @@ partition of $\{0, 1, 2\}$ has one, two, or three blocks.
 
 ## Proof depends on
 
-- [Recognizing the one-block partition](../../finpartition/card/card-parts-pos-iff.md)
+- [A partition has a block exactly when its ground set is nonempty](../../finpartition/card/card-parts-pos-iff.md)
 
 ## Sources
 

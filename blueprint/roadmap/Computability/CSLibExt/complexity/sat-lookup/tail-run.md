@@ -33,7 +33,7 @@ followed by $s$, $A$ and $C$ are empty, and $V$ holds $w$.
 
 ## Proof depends on
 
-- [Stack contents of the lookup machine](bit-bit.md)
+- [A name bit reads as itself](bit-bit.md)
 - [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
 - [Bit blocks](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
 - [Restoring a stack after a comparison](../../../MathlibExt/turing-machine/bit-ops/move-b-restore.md)

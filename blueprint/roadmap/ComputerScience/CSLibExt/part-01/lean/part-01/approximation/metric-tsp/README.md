@@ -17,7 +17,7 @@ navigation: module
 
 ## The walk
 
-- [The APPROX-TSP-TOUR algorithm](preorder-walk-aux-ret.md)
+- [Result of the preorder walk with an accumulator](preorder-walk-aux-ret.md)
 - [Running time of `APPROX-TSP-TOUR`](approx-tsptour-time.md)
 
 ## Path costs
@@ -33,7 +33,7 @@ navigation: module
 
 ## The spanning-tree lower bound
 
-- [The preorder tour costs at most twice the tree](preorder-chain.md)
+- [Preorder of a path](preorder-chain.md)
 - [Rooted spanning tree of a vertex list](is-spanning.md)
 - [Is Min Spanning](is-min-spanning.md)
 - [Tour of a vertex list](is-tour.md)

@@ -31,7 +31,7 @@ exactly $i + k$ copies of $U$, and every stack other than $X$ and $A$ is unchang
 ## Proof depends on
 
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
-- [Start label of the subset-sum emitter](is-t-bit.md)
+- [Testing a popped input bit](is-t-bit.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources

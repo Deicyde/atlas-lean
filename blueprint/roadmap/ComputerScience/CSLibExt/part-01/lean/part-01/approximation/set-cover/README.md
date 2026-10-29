@@ -14,7 +14,7 @@ navigation: module
 
 ## Cost
 
-- [The greedy set cover is a cover](greedy-set-cover-length-le.md)
+- [The greedy set cover has at most as many sets as elements](greedy-set-cover-length-le.md)
 - [Running time of greedy set cover](greedy-set-cover-time-le.md)
 
 ## The harmonic bound

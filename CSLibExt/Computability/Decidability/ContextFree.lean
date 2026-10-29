@@ -159,6 +159,11 @@ def isEmptyB (g : EncodedCFG T) : Bool :=
 
 /-! ## Stabilization -/
 
+/-- **The generating nonterminals are closed under one more round.** For an encoded grammar $g$,
+one more round of the generating-nonterminal computation, applied to the productions of $g$ and
+the generating nonterminals of $g$, yields only generating nonterminals of $g$: every left-hand
+side of a production of $g$ whose right-hand side has all its nonterminals among the generating
+nonterminals of $g$ is itself a generating nonterminal of $g$. -/
 theorem genStep_generating_subset (g : EncodedCFG T) :
     genStep g.rules g.generating ⊆ g.generating := by
   have h := iterate_closed (f := genStep g.rules) (fun _ _ => genStep_mono)
@@ -604,6 +609,12 @@ theorem found_sound (g : EncodedCFG T) (w : List T) : ∀ x ∈ found g w, Sound
 
 /-! ## Completeness -/
 
+/-- **Completeness of the start positions.** Let $g$ be an encoded context-free grammar over an
+alphabet $T$ with decidable equality, let $w$ be a word over $T$, and let $\rho$ be an encoded
+right-hand side whose decoding yields a word $u$ in the grammar that $g$ denotes. If
+$i \le j \le |w|$ and $u$ is the factor of $w$ from position $i$ to position $j$, then $i$ is a
+start position of $\rho$ at $j$ for the word $w$ and the list of items found by the membership
+procedure on $g$ and $w$. -/
 theorem mem_starts_of_yields {g : EncodedCFG T} {w : List T} {β : List (Symbol T g.toCFG.NT)}
     {u : List T} (h : Yields g.toCFG β u) :
     ∀ (rhs : List (ℕ ⊕ T)) (i j : ℕ), β = rhs.map decodeSymbol → u = factor w i j → i ≤ j →

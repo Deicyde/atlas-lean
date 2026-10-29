@@ -18,7 +18,7 @@ list it costs $0$.
 
 ## Proof depends on
 
-- [Kadane's algorithm](kadane-scan-time.md)
+- [Cost of Kadane's scan](kadane-scan-time.md)
 
 ## Sources
 

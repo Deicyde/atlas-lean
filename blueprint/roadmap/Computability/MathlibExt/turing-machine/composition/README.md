@@ -49,7 +49,7 @@ navigation: module
 
 ## Initial and halting configurations
 
-- [Evaluation of a natural-number polynomial is monotone](init-list-stk-length-le.md)
+- [Stacks of the initial configuration are no longer than the input](init-list-stk-length-le.md)
 
 ## The composition theorem
 

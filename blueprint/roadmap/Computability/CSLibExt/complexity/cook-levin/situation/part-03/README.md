@@ -20,7 +20,7 @@ navigation: transparent
 - [Cells of a pushed prefix over a truncated stack](row-cell.md)
 - [The table-driven step](table-agree.md)
 - [Reads of the in-range shift stay in the row](tab-row-reads-lt.md)
-- [Reads of the in-range shift stay in the row](good-step.md)
+- [The idle-extended step preserves good configurations](good-step.md)
 - [The table-driven step along a run](table-agree-run.md)
 - [Reading a list from a sequence of cells](dec-s.md)
 - [Reading back a list from its cells](dec-s-of-list.md)

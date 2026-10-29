@@ -27,7 +27,7 @@ ones, false, $n$ ones, false, then $o$.
 
 ## Proof depends on
 
-- [The 3SAT emitter processes a whole formula](../../part-02/three-sat-emit/rep-single.md)
+- [Repeating a single bit](../../part-02/three-sat-emit/rep-single.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)

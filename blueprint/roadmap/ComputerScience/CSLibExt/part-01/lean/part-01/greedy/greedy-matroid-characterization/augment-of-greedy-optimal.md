@@ -22,7 +22,7 @@ $e \in J$ with $e \notin I$ makes $I \cup \{e\}$ independent.
 
 - [Greedy algorithm on a matroid](../matroid-greedy/matroid-greedy.md)
 - [Greedy scan with an independence oracle](../matroid-greedy/matroid-greedy-scan.md)
-- [Running time of the matroid greedy algorithm](../matroid-greedy/matroid-greedy-scan-append.md)
+- [The greedy scan over a concatenation](../matroid-greedy/matroid-greedy-scan-append.md)
 - [A scan that accepts nothing](matroid-greedy-scan-of-forall-not.md)
 - [A scan inside an independent set keeps everything](matroid-greedy-scan-of-subset.md)
 

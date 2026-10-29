@@ -21,7 +21,7 @@ every nonempty contiguous sublist of $L$ has sum at most $m$.
 
 ## Proof depends on
 
-- [Cost of Kadane's algorithm](ne-nil.md)
+- [A list with a maximum subarray sum is nonempty](ne-nil.md)
 - [Uniqueness of the maximum subarray sum](unique.md)
 - [Being the maximum suffix sum](is-max-suffix-sum.md)
 - [Kadane's scan](kadane-scan.md)

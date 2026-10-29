@@ -46,7 +46,7 @@ navigation: module
 
 ## Inversion
 
-- [Substitution lemma](has-type-var-iff.md)
+- [Typing inversion for variables](has-type-var-iff.md)
 
 ## Examples: `let` makes the bound variable polymorphic
 

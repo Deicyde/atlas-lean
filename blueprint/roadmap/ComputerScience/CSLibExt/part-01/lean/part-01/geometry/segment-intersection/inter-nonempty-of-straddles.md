@@ -22,7 +22,7 @@ $p_1 p_2$ and $p_3 p_4$ have a common point.
 ## Proof depends on
 
 - [Zero-crossing parameter of values of opposite sign](param-mem.md)
-- [Sub ne zero](sub-ne-zero.md)
+- [Values of opposite sign have nonzero difference](sub-ne-zero.md)
 
 ## Sources
 

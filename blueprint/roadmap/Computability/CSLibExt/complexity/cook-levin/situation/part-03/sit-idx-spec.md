@@ -30,7 +30,7 @@ depth $j$ equals the cell code of $c$ on stack number $k$ at depth $j$.
 ## Proof depends on
 
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
 - [Mixed-radix index of a situation](../part-02/mix-sit.md)
 
 ## Sources

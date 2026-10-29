@@ -6,90 +6,15 @@ proof: formalized
 lean: Cslib.Decidability.Regularity.mem_languageFrom_of_mem_rules
 ---
 
-# Every production of the regularity grammar is sound for its intended languages
+# Productions of the regularity grammar preserve generated languages
 
-**Every production of the regularity grammar is sound for its intended languages.** Let $g$
-be an encoded context-free grammar over a finite alphabet $T$ with decidable equality, and let
-$G$ be the regularity grammar of $g$, over the letters of $T$, a separator $\#$ and two bits $0$
-and $1$; words over $T$ are read as words over this alphabet. Assign to the nonterminals of $G$
-the languages $V(0) = L(g) \# \{0,1\}^* \cup T^* \# \{0^n 1^n : n \ge 0\}$, where $L(g)$ is the
-language of $g$, $V(1) = \{0,1\}^*$, $V(2) = T^*$, $V(3) = \{0^n 1^n : n \ge 0\}$, and for each
-$n$, $V(n + 4)$ the set of words that $g$ generates from its nonterminal $n$. Then $V$ is a
-valuation of $G$: for every production $A \to \alpha$ of $G$, the language obtained from $\alpha$
-by replacing each nonterminal $B$ by $V(B)$ and each letter $a$ by $\{a\}$, and concatenating, is
-contained in $V(A)$. -/
-theorem isValuation_regVal (g : EncodedCFG T) : IsValuation (regGrammar g).toCFG (regVal g) := by
-  intro r hr
-  obtain ⟨e, he, rfl⟩ := EncodedCFG.mem_toCFG_rules.mp hr
-  simp only [regGrammar, fixedRules, List.mem_append, List.mem_cons, List.mem_map,
-    List.not_mem_nil, or_false] at he
-  rcases he with ((rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl) | ⟨t, -, rfl⟩) | ⟨e₀, he₀, rfl⟩
-  · -- `0 → (s+4) # 1`
-    intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ⟨u, hu, rfl⟩, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨c, hc, d, hd, rfl⟩ := Language.mem_mul.mp hb
-    obtain ⟨_, ⟨v, rfl⟩, _, rfl, rfl⟩ := Language.mem_mul.mp hd
-    rw [Set.mem_singleton_iff.mp hc]
-    exact ⟨u, v, by simp, Or.inl hu⟩
-  · -- `0 → 2 # 3`
-    intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ⟨u, rfl⟩, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨c, hc, d, hd, rfl⟩ := Language.mem_mul.mp hb
-    obtain ⟨_, ⟨v, hv, rfl⟩, _, rfl, rfl⟩ := Language.mem_mul.mp hd
-    rw [Set.mem_singleton_iff.mp hc]
-    exact ⟨u, v, by simp, Or.inr hv⟩
-  · intro w hw
-    exact ⟨[], by simpa using (Language.mem_one w).mp hw⟩
-  · intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ha, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨_, ⟨v, rfl⟩, _, rfl, rfl⟩ := Language.mem_mul.mp hb
-    rw [Set.mem_singleton_iff.mp ha]
-    exact ⟨false :: v, by simp⟩
-  · intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ha, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨_, ⟨v, rfl⟩, _, rfl, rfl⟩ := Language.mem_mul.mp hb
-    rw [Set.mem_singleton_iff.mp ha]
-    exact ⟨true :: v, by simp⟩
-  · intro w hw
-    exact ⟨[], by simpa using (Language.mem_one w).mp hw⟩
-  · intro w hw
-    exact ⟨[], ⟨0, rfl⟩, by simpa using (Language.mem_one w).mp hw⟩
-  · -- `3 → 0 3 1`
-    intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ha, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨_, ⟨v, ⟨n, rfl⟩, rfl⟩, d, hd, rfl⟩ := Language.mem_mul.mp hb
-    obtain ⟨c, hc, _, rfl, rfl⟩ := Language.mem_mul.mp hd
-    rw [Set.mem_singleton_iff.mp ha, Set.mem_singleton_iff.mp hc]
-    refine ⟨List.replicate (n + 1) false ++ List.replicate (n + 1) true, ⟨n + 1, rfl⟩, ?_⟩
-    simp only [List.replicate_succ, List.cons_append, List.map_cons, List.map_append,
-      List.append_assoc, List.append_nil, List.map_replicate]
-    rw [← List.replicate_succ', List.replicate_succ]
-    simp
-  · -- `2 → a 2`
-    intro w hw
-    simp only [EncodedCFG.decodeRule, List.map_cons, List.map_nil, evalForm_cons,
-      evalForm_nil] at hw
-    obtain ⟨a, ha, b, hb, rfl⟩ := Language.mem_mul.mp hw
-    obtain ⟨_, ⟨u, rfl⟩, _, rfl, rfl⟩ := Language.mem_mul.mp hb
-    rw [Set.mem_singleton_iff.mp ha]
-    exact ⟨t :: u, by simp⟩
-  · -- a shifted production of `g`
-    intro w hw
-    obtain ⟨u, hu, rfl⟩ := mem_evalForm_shift (g := g) (out := e₀.2) hw
-    exact ⟨u, isValuation_languageFrom _ (EncodedCFG.mem_toCFG_rules.mpr ⟨e₀, he₀, rfl⟩) hu,
-      rfl⟩
-
-/-! ### Completeness: the words of `regLang L(g)` are generated
+**Productions of the regularity grammar preserve generated languages.** Let $g$ be an
+encoded context-free grammar over a finite alphabet $T$ with decidable equality, let $G$ be the
+regularity grammar of $g$, over the letters of $T$, a separator $\#$ and two bits $0$ and $1$,
+and for a nonterminal $B$ let $L_G(B)$ be the language that the grammar denoted by $G$ generates
+from $B$. If $(A, \alpha)$ is an encoded production of $G$ and $w$ is a word in the language that
+the decoded right-hand side $\alpha$ denotes when each nonterminal $B$ is read as $L_G(B)$, each
+letter $a$ as $\{a\}$, and these languages are concatenated in order, then $w \in L_G(A)$.
 
 ## Depends on
 

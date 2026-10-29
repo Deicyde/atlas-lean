@@ -19,7 +19,7 @@ of $M$ from $c$ is at $c'$ after $n$ steps.
 
 ## Proof depends on
 
-- [The all-true assignment violates the accept family](../part-07/run-i-succ.md)
+- [Unfolding the idle-extended run from the front](../part-07/run-i-succ.md)
 - [Idle-extended step](../part-03/step-i.md)
 
 ## Sources

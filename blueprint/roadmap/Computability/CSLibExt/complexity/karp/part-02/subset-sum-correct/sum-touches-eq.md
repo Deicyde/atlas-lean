@@ -17,7 +17,7 @@ The chosen vertices on pair `q` are its chosen endpoints if `q` is an edge, else
 
 ## Proof depends on
 
-- [Mem pairs](../../part-01/clique-correct/mem-pairs.md)
+- [Membership in the vertex pairs](../../part-01/clique-correct/mem-pairs.md)
 
 ## Sources
 

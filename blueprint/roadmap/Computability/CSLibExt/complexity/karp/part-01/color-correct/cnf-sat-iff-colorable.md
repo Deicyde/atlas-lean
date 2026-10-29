@@ -37,7 +37,7 @@ construction emits an edge between them in either order.
 - [3-colorability through colorings of the natural numbers](colorable-iff-exists-col-proper.md)
 - [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 - [Coloring an OR gadget](or-gadget-colors.md)
-- [Sound col Or](sound-col-or.md)
+- [Output of the OR gadget under a proper 3-coloring](sound-col-or.md)
 - [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

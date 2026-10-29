@@ -38,7 +38,7 @@ left to right.
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Arcs from a row into a clause vertex](hp-r-arc-clause.md)
 - [Row vertices counted from either end](hp-ro.md)
-- [Every top but the last is followed by an end of its row](idx-of-get-d-ham-vars.md)
+- [Positions in the list of distinct variables](idx-of-get-d-ham-vars.md)
 - [Contracting a clause detour](infix-drop-clauses.md)
 - [A row entered at one end is run to the other end](row-run.md)
 - [Arcs of the PATH digraph](../../../path/arc.md)

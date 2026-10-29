@@ -44,7 +44,7 @@ and only if the evaluation of $c$ at $[n]$ is defined.
 - [Restricting a statement of the code evaluator to the wrapped machine](../to-tm2/restrict.md)
 - [The start label lies in the support](../to-tm2/start-mem.md)
 - [Support of a code](../to-tm2/supp.md)
-- [Main phase of the wrapped machine](../to-tm2/tr-list-singleton.md)
+- [The evaluator's encoding of a one-element list](../to-tm2/tr-list-singleton.md)
 
 ## Sources
 

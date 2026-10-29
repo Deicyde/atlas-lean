@@ -38,7 +38,7 @@ top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to 
 - [A bit list without trailing false is the binary code of its value](../subset-sum-digits/encode-nat-bits-val.md)
 - [Binary code of the value of a bit list](../subset-sum-digits/encode-nat-bits-val-rev.md)
 - [Binary conversion (SUBSET-SUM reduction machine)](hv-run.md)
-- [Start label of the subset-sum emitter](is-bit-block-val.md)
+- [Testing a popped input bit](is-bit-block-val.md)
 - [Vertex marks for a vertex](../subset-sum-digits/mk-l.md)
 - [Subset-sum emitter: moving the pair bits](mv-run.md)
 - [Subset-sum emitter: unterminated unary prefix at rdK](rd-k-none.md)

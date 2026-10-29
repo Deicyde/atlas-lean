@@ -6,20 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.good_step
 ---
 
-# Reads of the in-range shift stay in the row
+# The idle-extended step preserves good configurations
 
-**Reads of the in-range shift stay in the row.** Fix an encoding $E$ of a finite TM2 machine
-and natural numbers $H$, $i$, $k$ and $j$. Write $p$ for the number of symbols situation $i$
-leaves pushed on stack number $k$ and $n$ for the number of original symbols it consumes from
-stack number $k$. If $p \le j$ and $j < (H \mathbin{\dot{-}} \max(p, n)) + p$, where $\dot{-}$ is
-truncated subtraction, then $j - p + n < H$.
-
-So every old cell that the table-driven row update reads lies in the row of height $H$. -/
-theorem tabRow_reads_lt (H i k j : ℕ) (hpl : E.pl i k ≤ j)
-    (hj : j < H - max (E.pl i k) (E.cn i k) + E.pl i k) :
-    j - E.pl i k + E.cn i k < H := by omega
-
-/-! ## [B2] Every configuration of a real run is good (`run_mem_Γfin`)
+**The idle-extended step preserves good configurations.** Let $E$ be an encoding of a finite
+TM2 machine $M$ and let $c$ be a configuration of $M$. If $c$ is good for $E$, then so is the
+idle-extended step of $M$ at $c$.
 
 ## Depends on
 

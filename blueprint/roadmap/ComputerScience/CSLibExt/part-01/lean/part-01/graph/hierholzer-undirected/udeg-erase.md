@@ -6,17 +6,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.udeg_erase
 ---
 
-# Undirected Hierholzer's algorithm
+# Degree after removing an edge
 
-**Undirected Hierholzer's algorithm.** Given a list $E$ of undirected edges (ordered pairs of
-vertices) and a start vertex $s$, run the undirected Hierholzer recursion from $s$ on $E$ with an
-empty accumulator and fuel $|E| + 1$, and return the list of emitted vertices; its cost is the
-cost of that recursion. -/
-def uhierholzer (E : List (V × V)) (s : V) : TimeM ℕ (List V) := do
-  let r ← uvisit (E.length + 1) s E []
-  pure r.1
-
-/-! ## Degrees
+**Degree after removing an edge.** Let $R$ be a finite list of edges of an undirected
+multigraph, each an ordered pair of vertices, let $e = (a, b)$ be an edge in $R$, and let $x$ be a
+vertex. Then the degree of $x$ in $R$ equals the degree of $x$ in the list obtained from $R$ by
+removing the first occurrence of $e$, plus $[x = a] + [x = b]$, where $[P]$ is $1$ if $P$ holds
+and $0$ otherwise.
 
 ## Depends on
 

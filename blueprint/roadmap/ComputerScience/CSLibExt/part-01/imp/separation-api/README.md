@@ -13,6 +13,6 @@ navigation: module
 
 ## Framed one-cell steps
 
-- [Rearranging a separating conjunction](read-local.md)
+- [Local rule for a heap read](read-local.md)
 - [Assignment rule with a store-irrelevant heap assertion](assign-step.md)
 - [Existential rule for separation-logic triples](exists.md)

@@ -37,7 +37,7 @@ navigation: module
 
 ## Clauses
 
-- [Tokenizer rejects an undecodable literal](ents-of-cons.md)
+- [Occurrence table of a nonempty list](ents-of-cons.md)
 - [Reading the literals of a clause](lits-run.md)
 - [Tokenizer rejects undecodable literals](lits-fail.md)
 - [Tokenizer run on one clause](clause-run.md)
@@ -46,6 +46,6 @@ navigation: module
 
 ## The whole input
 
-- [Tokenizer rejects undecodable clauses](fin-acc.md)
+- [The tokenizer accepts when the formula stack is empty](fin-acc.md)
 - [Accepting run of the SAT tokenizer](run-some.md)
 - [Rejecting run](run-none.md)

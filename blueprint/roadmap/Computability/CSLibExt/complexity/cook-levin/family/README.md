@@ -30,7 +30,7 @@ navigation: module
 
 ## The literal positions are strictly increasing
 
-- [Shifting the start of a gap encoding](div-mod-succ-of-lt.md)
+- [Successor of a number with a non-maximal remainder](div-mod-succ-of-lt.md)
 - [Increasing literal sequences](inc-of-mono.md)
 - [Well-formed situation tables for the transition clauses](wf.md)
 

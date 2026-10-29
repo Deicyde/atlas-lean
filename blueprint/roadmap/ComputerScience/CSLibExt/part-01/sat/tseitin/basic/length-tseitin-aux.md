@@ -6,16 +6,12 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.length_tseitinAux
 ---
 
-# Tseitin CNF with $\bot$ false
+# Number of defining clauses in the Tseitin encoding
 
-**Tseitin CNF with $\bot$ false.** For an atom type with a distinguished atom $\bot$, a map
-$\iota$ from atoms to natural numbers and a formula $A$, this is the CNF consisting of the unit
-clause whose literal is the negative literal of variable $2\iota(\bot)$, followed by the Tseitin
-CNF of $A$ with respect to $\iota$. -/
-def tseitinBot [Bot Atom] (ι : Atom → ℕ) (A : Proposition Atom) : CNF :=
-  [(2 * ι ⊥, false)] :: tseitin ι A
-
-/-! ### Size
+**Number of defining clauses in the Tseitin encoding.** For every map $\iota$ from atoms to
+natural numbers, every formula $A$ and every gate number $k$, the list of defining clauses
+produced by the Tseitin encoding of $A$ with gates numbered from $k$ has length $3c$, where $c$ is
+the number of binary connectives of $A$.
 
 ## Depends on
 

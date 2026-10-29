@@ -22,7 +22,7 @@ with $v = u w$ and $X = w \star Y$.
 ## Proof depends on
 
 - [The alphabet inside the extended alphabet](../../part-01/pcp/letter.md)
-- [The MPCP instance of a reachability instance](letter-ne-star.md)
+- [Letters differ from the star](letter-ne-star.md)
 
 ## Sources
 

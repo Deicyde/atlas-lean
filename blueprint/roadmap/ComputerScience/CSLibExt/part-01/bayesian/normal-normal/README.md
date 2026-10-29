@@ -12,7 +12,7 @@ navigation: module
 
 ## The Gaussian likelihood with known variance
 
-- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Measurability of the Gaussian density in its mean and argument](measurable-gaussian-pdf-mean.md)
 - [Gaussian likelihood with known variance](gaussian-likelihood.md)
 - [Noiseless Gaussian likelihood](gaussian-likelihood-zero-apply.md)
 - [The marginal of the data](gaussian-likelihood-comp-gaussian-real.md)

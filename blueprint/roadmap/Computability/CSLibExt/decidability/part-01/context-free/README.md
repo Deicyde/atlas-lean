@@ -14,7 +14,7 @@ navigation: module
 
 ## Stabilization
 
-- [The emptiness test for context-free grammars](gen-step-generating-subset.md)
+- [The generating nonterminals are closed under one more round](gen-step-generating-subset.md)
 
 ## Correctness
 
@@ -49,7 +49,7 @@ navigation: module
 
 ## Completeness
 
-- [Sound items](mem-starts-of-yields.md)
+- [Completeness of the start positions](mem-starts-of-yields.md)
 - [Correctness of the membership test](mem-language-b-iff.md)
 - [Membership for context-free grammars is decidable](tm2-decidable-mem-language.md)
 

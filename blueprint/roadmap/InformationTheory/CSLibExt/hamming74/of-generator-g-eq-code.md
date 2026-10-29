@@ -22,7 +22,7 @@ matrix $H$.
 
 ## Proof depends on
 
-- [The Hamming decoder's syndrome table is correct](g-mul-h-transpose.md)
+- [The generator matrix is orthogonal to the parity-check matrix](g-mul-h-transpose.md)
 - [Parity-check matrix of the Hamming (7,4) code](h.md)
 - [Encoder of the Hamming code](encode.md)
 - [Message bits of a word](message.md)

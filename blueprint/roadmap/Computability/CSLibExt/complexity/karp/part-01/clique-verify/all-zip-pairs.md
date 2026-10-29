@@ -23,7 +23,7 @@ pair $(i, j)$ together with the adjacency bit of $\{i, j\}$ in $b$.
 ## Proof depends on
 
 - [Lookup in a list of pairs with distinct keys](lookup-of-mem.md)
-- [Mem pairs](../clique-correct/mem-pairs.md)
+- [Membership in the vertex pairs](../clique-correct/mem-pairs.md)
 - [Pairs nodup](../clique-correct/pairs-nodup.md)
 
 ## Sources

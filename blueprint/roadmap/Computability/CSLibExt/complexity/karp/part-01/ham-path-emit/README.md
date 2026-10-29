@@ -10,7 +10,7 @@ navigation: module
 
 ## Diamonds: the detour walk
 
-- [Token symbols of the HAMPATH emitter](lit-toks-head.md)
+- [The tokens of a literal do not start with a clause end](lit-toks-head.md)
 - [Dlit run](dlit-run.md)
 - [The literals of a clause in the detour walk](dlits-run.md)
 - [One clause of the detour walk](dclause-run.md)
@@ -25,7 +25,7 @@ navigation: module
 
 ## Diamonds: assembly
 
-- [The row loop of a diamond in the HAMPATH emitter](add-u-nil.md)
+- [Adding units along no stacks](add-u-nil.md)
 - [Draining a counter](drain-run.md)
 - [Moving the tokens back in the HAMPATH emitter](t0-run.md)
 - [The row of a diamond in the HAMPATH emitter](drow-full-run.md)

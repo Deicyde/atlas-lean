@@ -290,6 +290,9 @@ theorem mem_segment_of_direction_eq_zero {p q r : 𝕜 × 𝕜} (hd : direction 
 
 /-! ## Straddling -/
 
+/-- **Values of opposite sign have nonzero difference.** If $d$ and $e$ are elements of a
+linearly ordered field that straddle zero, that is, they are nonzero with opposite signs, then
+$d - e \ne 0$. -/
 theorem Straddles.sub_ne_zero {d e : 𝕜} (h : Straddles d e) : d - e ≠ 0 := by
   rcases h with ⟨hd, he⟩ | ⟨hd, he⟩ <;> intro h0 <;> linarith [sub_eq_zero.1 h0]
 

@@ -33,7 +33,7 @@ $k < K$ and $j < d$, and $d \le H$.
 - [Variable layout of the transition clauses](../../family/layout.md)
 - [Number of window combinations](../part-01/g-2.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](g-pos.md)
+- [The symbol-code bound is positive](g-pos.md)
 
 ## Sources
 

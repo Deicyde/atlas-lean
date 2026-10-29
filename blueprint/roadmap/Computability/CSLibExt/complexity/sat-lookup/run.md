@@ -34,7 +34,7 @@ stack is as it started.
 ## Proof depends on
 
 - [Back loop](back-loop.md)
-- [Stack contents of the lookup machine](init-run.md)
+- [Initialization step of the lookup machine](init-run.md)
 - [The scan loop of the lookup machine](scan-loop.md)
 - [Stack contents of the lookup machine](stk.md)
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)

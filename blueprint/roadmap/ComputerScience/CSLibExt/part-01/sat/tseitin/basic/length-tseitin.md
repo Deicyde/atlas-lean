@@ -22,7 +22,7 @@ connectives of $A$: three defining clauses per connective plus the unit clause a
 ## Proof depends on
 
 - [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Tseitin CNF with $\bot$ false](length-tseitin-aux.md)
+- [Number of defining clauses in the Tseitin encoding](length-tseitin-aux.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 - [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)
 

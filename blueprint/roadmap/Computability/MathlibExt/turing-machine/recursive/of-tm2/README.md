@@ -42,17 +42,17 @@ navigation: module
 
 ## The coded step is primitive recursive
 
-- [The coded step](primrec-read-top.md)
+- [Updating the state from the top of a coded stack is primitive recursive](primrec-read-top.md)
 
 ## The coded step simulates the machine
 
-- [The coded step](enc-stk-update.md)
+- [Coded stacks after replacing one stack](enc-stk-update.md)
 - [The coded step on optional configurations](opt-step-c.md)
 - [The coded run simulates the machine's run](opt-step-c-iterate.md)
 
 ## Input, output and halting
 
-- [The coded run simulates the machine's run](relevant-init-list.md)
+- [The initial stacks have only relevant symbols](relevant-init-list.md)
 - [Configurations before a reached one are running](running-before-halt.md)
 
 ## Turing-computable functions are computable

@@ -45,7 +45,7 @@ zero.
 
 - [Good configurations](../part-03/good.md)
 - [Label-and-state code of a configuration](../part-03/code.md)
-- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [The idle-extended step preserves good configurations](../part-03/good-step.md)
 - [Label/state code of a situation](../part-01/la.md)
 - [Next label/state code of a situation](../part-01/na.md)
 - [Overflow cells of the next row hold the table value](ov-hold.md)

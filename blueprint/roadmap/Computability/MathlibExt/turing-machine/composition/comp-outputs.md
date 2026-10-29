@@ -35,7 +35,7 @@ one.
 - [Embedding of $M_1$'s configurations into the composite machine](emb.md)
 - [Embedding of $M_2$'s configurations into the composite machine](emb-2.md)
 - [Evaluation of a natural-number polynomial is monotone](eval-mono.md)
-- [Evaluation of a natural-number polynomial is monotone](init-list-stk-length-le.md)
+- [Stacks of the initial configuration are no longer than the input](init-list-stk-length-le.md)
 - [Simulation transports runs](iter-sim.md)
 - [Composite label of an $M_1$ label](lab.md)
 - [Lifting a statement of the first machine](lift.md)

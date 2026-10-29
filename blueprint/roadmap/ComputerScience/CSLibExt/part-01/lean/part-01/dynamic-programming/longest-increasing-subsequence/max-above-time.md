@@ -6,22 +6,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.maxAbove_time
 ---
 
-# Longest increasing subsequence by dynamic programming
+# Cost of the scan for the best entry above a value
 
-**Longest increasing subsequence by dynamic programming.** Given a list
-$x_0, \dots, x_{n-1}$ of elements of a preorder with decidable $<$, this timed computation
-builds, from the right, a table recording for each position $i$ a length and a strictly
-increasing subsequence starting with $x_i$ (the longest one, by the recurrence
-$L_i = 1 + \max \{ L_j : i < j,\ x_i < x_j \}$ with $\max \emptyset = 0$), and returns the
-stored subsequence of an entry of largest length, or the empty list when $n = 0$. The cost
-is one unit for each table entry inspected: building the entry for position $i$ scans the
-entries to its right, and the final scan inspects each entry once. -/
-def longestIncreasingSubsequence (xs : List α) : TimeM ℕ (List α) := do
-  let t ← lisTable xs
-  let b ← maxEntry t
-  pure b.2
-
-/-! ## Cost
+**Cost of the scan for the best entry above a value.** Let $\alpha$ be a preorder with
+decidable $<$. For every value $x \in \alpha$ and every list $t$ of entries $(y, k, zs)$, where
+$y \in \alpha$, $k$ is a natural number and $zs$ is a list over $\alpha$, the scan of $t$ for the
+best table entry above $x$ costs exactly the length of $t$.
 
 ## Depends on
 

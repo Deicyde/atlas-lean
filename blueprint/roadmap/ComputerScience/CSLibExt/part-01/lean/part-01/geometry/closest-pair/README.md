@@ -19,7 +19,7 @@ navigation: module
 
 ## Brute force
 
-- [Min Dist From spec](min-dist-from-spec.md)
+- [The nearest-point scan returns the least squared distance](min-dist-from-spec.md)
 
 ## The strip
 
@@ -27,7 +27,7 @@ navigation: module
 
 ## Divide and conquer
 
-- [The strip scan bounds every pair with a small vertical gap](closest-rec-is-answer.md)
+- [The closest-pair recursion is correct on lists sorted by first coordinate](closest-rec-is-answer.md)
 
 ## Correctness
 

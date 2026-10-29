@@ -343,6 +343,10 @@ end Derivations
 
 /-! ### The many-one reduction -/
 
+/-- **The ambiguity grammar is primitive recursive.** For every alphabet $\alpha$ with a
+primitive recursive encoding by natural numbers, the map sending a list $P$ of dominoes over
+$\alpha$ to the ambiguity grammar of $P$ is primitive recursive, where encoded grammars are
+encoded as pairs of a start nonterminal and a list of productions. -/
 theorem primrec_ambGrammar [Primcodable α] : Primrec (ambGrammar (α := α)) :=
   EncodedCFG.primrec₂_mk.comp (Primrec.const 0) (Primrec.list_cons.comp (Primrec.const _)
     (Primrec.list_cons.comp (Primrec.const _) (Primrec.list_append.comp

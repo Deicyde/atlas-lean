@@ -23,7 +23,7 @@ that, for every bit string $x$, $L$ accepts $x$ exactly when INDEPENDENT-SET acc
 ## Proof depends on
 
 - [CLIQUE](../clique/clique-dec.md)
-- [Complementing the pair bits complements the graph](../clique-correct/clique-dec-eq-ind-set-dec-flip-kg.md)
+- [Correctness of the complementing map from CLIQUE to INDEPENDENT-SET](../clique-correct/clique-dec-eq-ind-set-dec-flip-kg.md)
 - [CLIQUE is NP-hard](clique-dec-np-hard.md)
 - [Complementing map from CLIQUE to INDEPENDENT-SET instances](../clique/flip-kg.md)
 - [CLIQUE ≤ INDEPENDENT-SET is polynomial-time](is-poly-time-flip-kg.md)

@@ -56,7 +56,7 @@ when $j = 0$.
 - [Index of a label/state variable](x-idx.md)
 - [Scratch counters at rest in the clause-family generator](rest.md)
 - [Constant offset of a literal position](cst.md)
-- [Shifting the start of a gap encoding](div-mod-succ-of-lt.md)
+- [Successor of a number with a non-maximal remainder](div-mod-succ-of-lt.md)
 - [Shifting the start of a gap encoding](gap-enc-shift.md)
 - [Increasing literal sequences](inc-of-mono.md)
 - [K A](k-a.md)

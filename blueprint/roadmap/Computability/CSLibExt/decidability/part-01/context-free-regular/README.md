@@ -23,7 +23,7 @@ navigation: module
 
 ## Completeness
 
-- [Sound items for a grammar and a DFA](mem-dfa-starts-of-yields.md)
+- [Completeness of the start states in a DFA](mem-dfa-starts-of-yields.md)
 - [Correctness of the intersection-emptiness test](inter-empty-b-iff.md)
 - [The inclusion test for a grammar and a DFA](subset-b.md)
 - [Correctness of the inclusion test](subset-b-iff.md)

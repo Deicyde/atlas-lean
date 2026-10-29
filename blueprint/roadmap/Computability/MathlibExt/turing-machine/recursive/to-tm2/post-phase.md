@@ -30,7 +30,7 @@ $b$ on the output stack and all other stacks empty.
 
 - [One step of the wrapped machine](fstep.md)
 - [The program of the wrapped machine](fwd-prog.md)
-- [Pre-phase of the wrapped machine](post1-loop.md)
+- [The first post-phase loop of the wrapped machine](post1-loop.md)
 - [Reading a stack symbol as a bit](to-bool.md)
 
 ## Sources

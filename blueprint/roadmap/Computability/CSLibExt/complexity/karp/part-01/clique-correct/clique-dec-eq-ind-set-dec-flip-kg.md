@@ -6,21 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.cliqueDec_eq_indSetDec_flipKG
 ---
 
-# Complementing the pair bits complements the graph
+# Correctness of the complementing map from CLIQUE to INDEPENDENT-SET
 
-**Complementing the pair bits complements the graph.** Let $n \in \mathbb{N}$ and let $b$ be a
-list of bits whose length is the number of pairs $(i, j)$ with $i < j < n$. Then the graph on
-$\{0, \dots, n-1\}$ read off the list obtained by negating every bit of $b$ is the complement of
-the graph on $\{0, \dots, n-1\}$ read off $b$. -/
-theorem toGraph_map_not {n : ℕ} {bits : List Bool} (h : bits.length = (pairs n).length) :
-    toGraph n (bits.map not) = (toGraph n bits)ᶜ := by
-  ext i j
-  by_cases hij : i = j
-  · simp [hij]
-  · have := adjBits_map_not h (Fin.val_ne_of_ne hij) i.2 j.2
-    simp [toGraph, hij, this]
-
-/-! ### CLIQUE ≤ INDEPENDENT-SET
+**Correctness of the complementing map from CLIQUE to INDEPENDENT-SET.** For every bit
+string $x$, CLIQUE accepts $x$ if and only if INDEPENDENT-SET accepts the image of $x$ under the
+complementing map from CLIQUE to INDEPENDENT-SET instances.
 
 ## Depends on
 

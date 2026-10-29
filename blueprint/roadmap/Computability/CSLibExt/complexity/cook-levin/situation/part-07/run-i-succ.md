@@ -6,27 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.runI_succ'
 ---
 
-# The all-true assignment violates the accept family
+# Unfolding the idle-extended run from the front
 
-**The all-true assignment violates the accept family.** Let $E$ be an encoding of a finite
-stack machine $M$, let $\alpha$ be a symbol of the output stack of $M$, and let
-$T, H \in \mathbb{N}$. The assignment that sets all $V$ variables to true, where $V$ is the number
-of variables of the layout of $E$ at bounds $T$ and $H$, does not satisfy the accept family for
-$\alpha$ at bounds $T$ and $H$. -/
-theorem accFamily_allTrue (acc : M.Γ M.k₁) (T H : ℕ) :
-    ¬ cnfSat (E.accFamily acc T H) (List.replicate (E.layout.numVars T H) true) := by
-  intro h
-  have hne : E.lc (some M.main, M.initialState) ≠ E.acode := fun h => by
-    have := congrArg E.ld h
-    simp [acode, E.ld_lc] at this
-  have hlt := E.xIdx_lt (H := H) (le_refl T) (E.lc_lt (some M.main, M.initialState))
-  refine hne (E.acc_code h (E.lc_lt _) ?_)
-  unfold Tr
-  rw [List.getElem?_replicate, ite_eq_left hlt]
-
-end Enc
-
-/-! ### Link to the repo's output notion (`EvalsTo`, `haltList`)
+**Unfolding the idle-extended run from the front.** For a finite TM2 machine $M$, a
+configuration $c$ and every $n \in \mathbb{N}$, the configuration at time $n + 1$ of the
+idle-extended run of $M$ from $c$ equals the configuration at time $n$ of the idle-extended run
+of $M$ from the idle-extended step of $M$ at $c$.
 
 ## Depends on
 

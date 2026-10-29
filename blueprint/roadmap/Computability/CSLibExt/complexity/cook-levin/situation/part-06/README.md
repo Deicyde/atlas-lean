@@ -12,7 +12,7 @@ navigation: transparent
 - [Row-$t$ induction](rows-run.md)
 - [Row induction at the stack cap](rows-cap-h.md)
 - [Run tracking from the init obligation](rows-of-init.md)
-- [Run tracking from the init obligation](cnf-sat-append.md)
+- [Satisfying a concatenation of CNF formulas](cnf-sat-append.md)
 - [Positive dense unit clauses force their variable](unit-force.md)
 - [Index of the empty-cell variable of the input stack](z-idx.md)
 - [Start-code clause of the init family](init-code.md)

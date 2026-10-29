@@ -25,7 +25,7 @@ the final label with answer $a$, internal state false and every stack empty.
 ## Proof depends on
 
 - [Stacks emptied by the cleanup](work-ks.md)
-- [The embedded lookup meets the lookup contract](work-ks-nodup.md)
+- [The cleanup stacks are distinct](work-ks-nodup.md)
 - [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
 - [Cleanup empties its stacks](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 

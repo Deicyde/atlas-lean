@@ -6,19 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsMaxSubarraySum.ne_nil
 ---
 
-# Cost of Kadane's algorithm
+# A list with a maximum subarray sum is nonempty
 
-**Cost of Kadane's algorithm.** Over an additive monoid $\alpha$ with a linear order, Kadane's
-algorithm on a list of length $n \ge 1$ costs exactly $3(n - 1)$ operations, and on the empty
-list it costs $0$. -/
-@[simp]
-theorem maxSubarraySum_time (xs : List α) :
-    (maxSubarraySum xs).time = 3 * (xs.length - 1) := by
-  cases xs with
-  | nil => simp [maxSubarraySum]
-  | cons x xs => simp [maxSubarraySum]
-
-/-! ## The specification
+**A list with a maximum subarray sum is nonempty.** Let $\alpha$ be an additive monoid with a
+linear order. If an element $m \in \alpha$ is the maximum subarray sum of a list $L$ over
+$\alpha$, then $L$ is nonempty.
 
 ## Depends on
 

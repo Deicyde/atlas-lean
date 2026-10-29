@@ -21,7 +21,7 @@ navigation: module
 
 ## Wires, size, and the network on `2 ^ k` wires
 
-- [Odd-even merge sort sorts every $0$-$1$ input](relabel-within.md)
+- [Relabeling keeps comparators within an interval](relabel-within.md)
 - [Size of the odd-even merger](length-odd-even-merge.md)
 - [Size of Batcher's odd-even merge sort](length-odd-even-sort-n.md)
 - [Batcher's odd-even merge sorting network](odd-even-sorter.md)

@@ -31,7 +31,7 @@ $\alpha$ at bounds $T$ and $H$.
 - [Accept-code clauses pin the (label, state) code](acc-code-2.md)
 - [Accepting code](acode.md)
 - [Truth of a variable under an assignment](../part-04/tr.md)
-- [The all-true assignment satisfies a faithful clause with a positive literal](lt-num-vars.md)
+- [Variables of rows up to the time bound](lt-num-vars.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ navigation: module
 
 ## Degrees
 
-- [Undirected Hierholzer's algorithm](udeg-erase.md)
+- [Degree after removing an edge](udeg-erase.md)
 - [An edge at a vertex joins it to its other endpoint](usym-eq-other-end.md)
 
 ## The recursion

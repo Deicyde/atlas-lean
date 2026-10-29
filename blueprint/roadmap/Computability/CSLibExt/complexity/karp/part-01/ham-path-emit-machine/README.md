@@ -39,7 +39,7 @@ navigation: module
 
 ## Comparing a name on `F` with the top entry of `V`
 
-- [Running a chain of copy sites in the HAMPATH emitter](bit-inv.md)
+- [A symbol that reads as a name bit is that bit](bit-inv.md)
 - [Comparing a name with the top entry of the variable stack](cmp-r-run.md)
 
 ## Phase A: tokens to `F`, clause counts, distinct variables

@@ -49,7 +49,7 @@ This is the completeness theorem of Damas and Milner.
 - [Freshness invariants of Algorithm W](w-fresh.md)
 - [Generalization of a monotype](../typing/gen.md)
 - [Generalization depends only on the free variables of the context](gen-congr.md)
-- [Substitution lemma](../typing/has-type-var-iff.md)
+- [Typing inversion for variables](../typing/has-type-var-iff.md)
 - [Substituting into a generalization is more general](subst-ty-gen-more-general.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
 - [Lists of equations](../../../../part-02/unification/basic/equations.md)

@@ -13,5 +13,5 @@ navigation: module
 - [Leftmost derivations in the ambiguity grammar](cases-of-left-derivation-start.md)
 - [Leftmost derivations from the start symbol along an index sequence](left-derivation-start.md)
 - [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](is-ambiguous-iff-pcp.md)
-- [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](primrec-amb-grammar.md)
+- [The ambiguity grammar is primitive recursive](primrec-amb-grammar.md)
 - [PCP many-one reduces to ambiguity of context-free grammars](many-one-reducible-pcp-is-ambiguous.md)

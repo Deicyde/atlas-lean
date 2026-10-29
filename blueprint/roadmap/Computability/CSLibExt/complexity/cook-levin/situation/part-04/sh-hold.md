@@ -48,7 +48,7 @@ cells of $c$ for situation $i$.
 
 - [Label-and-state code of a configuration](../part-03/code.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
 - [Label/state code of a situation](../part-01/la.md)
 - [The situation index matches the code and windows](../part-03/sit-idx-spec.md)
 - [Window symbol code of a situation](../part-01/wa.md)

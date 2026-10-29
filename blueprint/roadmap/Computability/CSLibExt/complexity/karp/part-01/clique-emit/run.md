@@ -32,7 +32,7 @@ CLIQUE instance of $\varphi$ followed by $o$.
 ## Proof depends on
 
 - [Clique emitter: the instance prefix](fin-run.md)
-- [Clique emitter: the instance prefix](flat-map-reverse-length.md)
+- [Reversing a list preserves the length of a flat map](flat-map-reverse-length.md)
 - [Emitter run over a formula's clauses](formula-run.md)
 - [Tokens of an item on the walked stack](item-tok.md)
 - [Walked items of a formula](items.md)

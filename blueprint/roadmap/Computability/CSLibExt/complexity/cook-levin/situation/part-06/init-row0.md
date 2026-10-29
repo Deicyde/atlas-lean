@@ -41,7 +41,7 @@ the row-0 obligation holds for $a$, height $H$ and the input $xy$.
 - [Index of the empty-cell variable of the input stack](z-idx.md)
 - [Truth of a variable under an assignment](../part-04/tr.md)
 - [L0 (a satisfied dense clause has a satisfied listed literal)](../part-04/clause-sat-dense.md)
-- [Run tracking from the init obligation](cnf-sat-append.md)
+- [Satisfying a concatenation of CNF formulas](cnf-sat-append.md)
 - [Positive dense unit clauses force their variable](unit-force.md)
 - [Dense CNF formula](../../../dense-sat/cnf.md)
 - [Dense clause](../../../dense-sat/clause.md)

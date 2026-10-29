@@ -42,7 +42,7 @@ and every stack other than $L$, $R$, $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchange
 - [Value of a list of two-bit digits](../subset-sum-digits/bits-val-flat-map2.md)
 - [Output block of a vertex-number digit](../subset-sum-digits/blk.md)
 - [A bit list without trailing false is the binary code of its value](../subset-sum-digits/encode-nat-bits-val.md)
-- [Start label of the subset-sum emitter](is-bit-block-val.md)
+- [Testing a popped input bit](is-bit-block-val.md)
 - [Reading a pair bit or vertex mark](val-of.md)
 - [The pair walk over lists of marks](../subset-sum-digits/walk-m.md)
 - [The pair walk lists the vertex pairs in reverse](../subset-sum-digits/walk-m-pairs.md)

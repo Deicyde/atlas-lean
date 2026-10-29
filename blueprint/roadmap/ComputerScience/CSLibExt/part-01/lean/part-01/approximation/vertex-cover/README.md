@@ -9,12 +9,12 @@ navigation: module
 
 ## Cost
 
-- [APPROX-VERTEX-COVER](vertex-cover-scan-time.md)
+- [Running time of the vertex cover scan](vertex-cover-scan-time.md)
 - [Running time of APPROX-VERTEX-COVER](approx-vertex-cover-time.md)
 
 ## The result is a vertex cover
 
-- [Running time of APPROX-VERTEX-COVER](subset-vertex-cover-scan.md)
+- [The vertex cover scan only adds vertices](subset-vertex-cover-scan.md)
 - [APPROX-VERTEX-COVER covers every listed pair](approx-vertex-cover-covers.md)
 - [APPROX-VERTEX-COVER returns a vertex cover](approx-vertex-cover-is-vertex-cover.md)
 

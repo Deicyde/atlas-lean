@@ -146,6 +146,9 @@ theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
 
 /-! ## Cost -/
 
+/-- **The greedy set cover has at most as many sets as elements.** For every list $F$ of finite
+sets and every finite set $U$, the list returned by the greedy set cover algorithm on $F$ and $U$
+has length at most $|U|$. -/
 theorem greedySetCover_length_le (F : List (Finset α)) (U : Finset α) :
     (greedySetCover F U).ret.length ≤ U.card := by
   induction h : U.card using Nat.strong_induction_on generalizing U with

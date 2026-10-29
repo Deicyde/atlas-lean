@@ -19,7 +19,7 @@ of $\{0, 1\}$ is either the discrete or the indiscrete noncrossing partition of 
 
 ## Proof depends on
 
-- [Recognizing the one-block partition](../../finpartition/card/card-parts-pos-iff.md)
+- [A partition has a block exactly when its ground set is nonempty](../../finpartition/card/card-parts-pos-iff.md)
 - [Recognizing the partition into singletons by its number of blocks](../../finpartition/card/eq-bot-iff-card-parts-eq-card.md)
 - [Recognizing the one-block partition](../../finpartition/card/eq-top-iff-card-parts-eq-one.md)
 - [Noncrossing set partition](../basic/is-noncrossing.md)

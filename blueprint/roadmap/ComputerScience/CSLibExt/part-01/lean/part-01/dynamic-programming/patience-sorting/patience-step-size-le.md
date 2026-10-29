@@ -6,16 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.patienceStep_size_le
 ---
 
-# Patience sorting agrees with the quadratic dynamic program
+# A patience step grows the tails by at most one
 
-**Patience sorting agrees with the quadratic dynamic program.** For every list $xs$ over a
-linear order, the value returned by patience sorting on $xs$ equals the length of the list
-returned on $xs$ by the quadratic dynamic program for a longest strictly increasing subsequence. -/
-theorem patienceLength_eq_length_longestIncreasingSubsequence (xs : List α) :
-    (patienceLength xs).ret = (longestIncreasingSubsequence xs).ret.length :=
-  ((length_longestIncreasingSubsequence_eq_iff xs _).2 (patienceLength_spec xs)).symm
-
-/-! ## Cost
+**A patience step grows the tails by at most one.** Let $\alpha$ be a linear order. For every
+array $t$ over $\alpha$ and every element $x \in \alpha$, the array returned by the patience step
+for $x$ on $t$ has size at most the size of $t$ plus $1$.
 
 ## Depends on
 

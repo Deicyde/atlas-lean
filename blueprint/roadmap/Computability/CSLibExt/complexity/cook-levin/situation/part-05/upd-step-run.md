@@ -43,7 +43,7 @@ $X[t + 1, \kappa(c_{t+1})]$ is true under $a$.
 - [Index of a label/state variable](../../family/x-idx.md)
 - [Good configurations](../part-03/good.md)
 - [Label-and-state code of a configuration](../part-03/code.md)
-- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [The idle-extended step preserves good configurations](../part-03/good-step.md)
 - [Situation index of a configuration](../part-03/sit-idx.md)
 - [The table-driven row update](../part-03/tab-row.md)
 - [The table-driven step along a run](../part-03/table-agree-run.md)

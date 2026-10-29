@@ -42,7 +42,7 @@ $\mathrm{false}$.
 ## Proof depends on
 
 - [Is V](is-v.md)
-- [Start label of the subset-sum emitter](is-v-val.md)
+- [Testing a popped input bit](is-v-val.md)
 - [Subset-sum emitter: one vertex number](round-run.md)
 - [Run of the mark-return loop of the subset-sum emitter](rs-run.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

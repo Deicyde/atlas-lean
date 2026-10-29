@@ -516,6 +516,8 @@ theorem bitonicSortN_sorts : ∀ (k b : ℕ) (f : ℕ → Bool),
 
 /-! ## Sizes -/
 
+/-- **Size of the half-cleaner.** For all natural numbers $m$ and $b$, the half-cleaner on the
+block of wires $[b, b + 2m)$ has exactly $m$ comparators. -/
 theorem length_halfCleaner (m b : ℕ) : (halfCleaner m b).length = m := by
   simp [halfCleaner]
 

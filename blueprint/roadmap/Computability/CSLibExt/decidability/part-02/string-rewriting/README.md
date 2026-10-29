@@ -23,7 +23,7 @@ navigation: module
 
 ## Comparing words of letters with separators
 
-- [The MPCP instance of a reachability instance](letter-ne-star.md)
+- [Letters differ from the star](letter-ne-star.md)
 - [Comparing words of letters before a separator](exists-of-lift-append-eq.md)
 
 ## From solutions to derivations
@@ -32,7 +32,7 @@ navigation: module
 
 ## From derivations to solutions
 
-- [The backward direction of the MPCP reduction](mem-symbols-of-step.md)
+- [Rewriting steps keep the letters of the instance](mem-symbols-of-step.md)
 - [The forward direction of the MPCP reduction](exists-cards-of-derives.md)
 - [Reachability reduces to MPCP](sr-iff-mpcp-to-mpcp.md)
 

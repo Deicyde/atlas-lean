@@ -149,6 +149,9 @@ def approxTSPTour (r : α) (F : Forest α) : TimeM ℕ (List α) := do
 
 /-! ## The walk -/
 
+/-- **Result of the preorder walk with an accumulator.** For every forest $F$ and every list $a$
+of vertices, the preorder walk of $F$ with accumulator $a$ returns the vertices of $F$ in
+preorder followed by $a$. -/
 theorem preorderWalkAux_ret (F : Forest α) (acc : List α) :
     (preorderWalkAux F acc).ret = F.preorder ++ acc := by
   induction F generalizing acc with
@@ -281,6 +284,8 @@ theorem tourCost_preorder_le (hd : IsMetricCost d) (r : α) (F : Forest α) :
 
 /-! ## The spanning-tree lower bound -/
 
+/-- **Preorder of a path.** For every list $L$ of vertices, the preorder of the forest of $L$
+(the path through the vertices of $L$ in order) is $L$ itself. -/
 @[simp]
 theorem Forest.preorder_chain (xs : List α) : (Forest.chain xs).preorder = xs := by
   induction xs with

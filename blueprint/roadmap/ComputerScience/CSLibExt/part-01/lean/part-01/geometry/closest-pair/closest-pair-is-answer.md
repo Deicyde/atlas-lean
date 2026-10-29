@@ -23,7 +23,7 @@ positions, the algorithm returns a value $\delta$ with $\delta \le d(p, q)$.
 ## Proof depends on
 
 - [Closest Rec](closest-rec.md)
-- [The strip scan bounds every pair with a small vertical gap](closest-rec-is-answer.md)
+- [The closest-pair recursion is correct on lists sorted by first coordinate](closest-rec-is-answer.md)
 - [Dist2](dist2.md)
 
 ## Sources

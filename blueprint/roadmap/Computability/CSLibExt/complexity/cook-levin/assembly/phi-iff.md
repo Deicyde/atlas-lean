@@ -46,7 +46,7 @@ concatenation.
 - [Position of a situation's variable](../situation/part-01/sa.md)
 - [Window symbol code of a situation](../situation/part-01/wa.md)
 - [Stack cap](../situation/part-05/cap-h.md)
-- [Run tracking from the init obligation](../situation/part-06/cnf-sat-append.md)
+- [Satisfying a concatenation of CNF formulas](../situation/part-06/cnf-sat-append.md)
 - [Window depth of a machine](../situation/part-01/depth.md)
 - [Dense CNF formula](../../dense-sat/cnf.md)
 - [Dense clause](../../dense-sat/clause.md)

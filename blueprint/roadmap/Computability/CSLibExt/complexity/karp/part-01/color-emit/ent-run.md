@@ -46,7 +46,7 @@ with $q$ above its old contents.
 - [Bits pushed by a sequence of copy sites of the 3-COLOR emitter](chain-out.md)
 - [Running a sequence of copy sites of the 3-COLOR emitter](chain-run.md)
 - [Name comparison in the 3-COLOR emitter](cmp-run.md)
-- [Copy sites of the empty clause](cons-edges-same.md)
+- [Consistency edges of two occurrences of the same variable](cons-edges-same.md)
 - [Copy sites of the consistency edges](cons-sites.md)
 - [Moving $U$ onto $E$](dr-run.md)
 - [Bit encoding of an edge](e-b.md)

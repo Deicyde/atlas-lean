@@ -19,7 +19,7 @@ inversions of $L$ against $M$ plus the number of inversions of $L'$ against $L$.
 ## Proof depends on
 
 - [Inversion set of two lists](inv-set.md)
-- [Counting the entries before an entry](mem-of-mem-inv-set.md)
+- [Members of the inversion set](mem-of-mem-inv-set.md)
 
 ## Sources
 

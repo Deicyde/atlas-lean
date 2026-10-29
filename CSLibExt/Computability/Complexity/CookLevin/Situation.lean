@@ -403,6 +403,8 @@ def pu (i k j : ℕ) : ℕ := (((E.res i).2.2.1 (E.kd k))[j]?).elim 0 (E.enc (E.
 
 /-! ### Well-formedness -/
 
+/-- **The symbol-code bound is positive.** For an encoding $E$ of a finite TM2 machine, the
+symbol-code bound $g$ of $E$ satisfies $0 < g$. -/
 theorem g_pos : 0 < E.g := by unfold g; omega
 
 theorem sz_lt_g (k : M.K) : E.sz k < E.g := by
@@ -1096,6 +1098,9 @@ theorem tabRow_reads_lt (H i k j : ℕ) (hpl : E.pl i k ≤ j)
 
 /-! ## [B2] Every configuration of a real run is good (`run_mem_Γfin`) -/
 
+/-- **The idle-extended step preserves good configurations.** Let $E$ be an encoding of a finite
+TM2 machine $M$ and let $c$ be a configuration of $M$. If $c$ is good for $E$, then so is the
+idle-extended step of $M$ at $c$. -/
 theorem good_step (c : M.Cfg) (hc : E.Good c) : E.Good (stepI M c) := by
   rw [step_agree]
   intro k x hx
@@ -2250,6 +2255,10 @@ end Enc
 
 /-! ### The init family (row 0) and its semantics: discharges `InitObl` with the input pinned -/
 
+/-- **Satisfying a concatenation of CNF formulas.** For dense CNF formulas $\varphi$ and $\psi$
+and a finite bit sequence $a$, $a$ satisfies the concatenation of $\varphi$ and $\psi$ (the
+clauses of $\varphi$ followed by those of $\psi$) if and only if $a$ satisfies both $\varphi$ and
+$\psi$. -/
 theorem cnfSat_append {φ ψ : CNF} {a : List Bool} : cnfSat (φ ++ ψ) a ↔ cnfSat φ a ∧ cnfSat ψ a := by
   simp only [cnfSat, List.mem_append]
   exact ⟨fun h => ⟨fun c hc => h c (Or.inl hc), fun c hc => h c (Or.inr hc)⟩,
@@ -2596,6 +2605,10 @@ theorem FamPos.allTrue {V : ℕ} {φ : CNF} (h : FamPos V φ) : cnfSat φ (List.
 
 /-! ### The D3 families (update, S-def, shift/overflow/pushed fill) are faithful -/
 
+/-- **Variables of rows up to the time bound.** Let $L$ be a layout, let $T$, $H$, $t$ and $p$ be
+natural numbers with $t \le T$, and let $W$ be the number of variables per time step of $L$ at
+height $H$. If $p < (t + 1) W$, then $p$ is less than the number of variables of $L$ for bounds
+$T$ and $H$. -/
 theorem lt_numVars {L : Family.Layout} {T H t p : ℕ} (ht : t ≤ T) (hp : p < (t + 1) * L.rowW H) :
     p < L.numVars T H :=
   lt_of_lt_of_le hp (Nat.mul_le_mul_right _ (by omega))
@@ -2939,6 +2952,10 @@ end Enc
 
 /-! ### Link to the repo's output notion (`EvalsTo`, `haltList`) -/
 
+/-- **Unfolding the idle-extended run from the front.** For a finite TM2 machine $M$, a
+configuration $c$ and every $n \in \mathbb{N}$, the configuration at time $n + 1$ of the
+idle-extended run of $M$ from $c$ equals the configuration at time $n$ of the idle-extended run
+of $M$ from the idle-extended step of $M$ at $c$. -/
 theorem runI_succ' (M : FinTM2) (c : M.Cfg) : ∀ n, runI M c (n + 1) = runI M (stepI M c) n
   | 0 => rfl
   | n + 1 => by rw [runI, runI_succ' M c n]; rfl
@@ -3160,6 +3177,9 @@ theorem sat_run {s : List (M.Γ M.k₀)} {T H : ℕ} {ls : List (ℕ × Bool)}
 
 /-! #### `RunLit` read back (index inversion) -/
 
+/-- **Situation variables lie in the label/state block.** Let $E$ be an encoding of a finite TM2
+machine with $N$ situations. For every natural number $i < N$, the position of the variable of
+situation $i$ is less than the label/state block size $A$ of the clause layout of $E$. -/
 theorem sa_lt {i : ℕ} (hi : i < E.N) : E.sa i < E.layout.A := by
   change E.A0 + i < E.A0 + E.N; omega
 

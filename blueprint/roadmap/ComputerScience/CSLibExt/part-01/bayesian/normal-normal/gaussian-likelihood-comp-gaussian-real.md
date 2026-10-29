@@ -23,7 +23,7 @@ Applied with the posterior in place of the prior, this also gives the posterior 
 
 - [The evidence from a factorization of densities](../density/comp-eq-with-density-of-mul-eq.md)
 - [Completing the square](gaussian-pdfreal-mul-gaussian-pdfreal.md)
-- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Measurability of the Gaussian density in its mean and argument](measurable-gaussian-pdf-mean.md)
 - [Posterior mean of the Normal–Normal model](normal-post-mean.md)
 - [Posterior variance of the normal–normal model](normal-post-var.md)
 

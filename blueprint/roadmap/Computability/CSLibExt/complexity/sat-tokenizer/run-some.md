@@ -36,7 +36,7 @@ $\varphi$ and $w$ on top of the original contents of $B$.
 ## Proof depends on
 
 - [Tokenizer run on all clauses](clauses-run.md)
-- [Tokenizer rejects undecodable clauses](fin-acc.md)
+- [The tokenizer accepts when the formula stack is empty](fin-acc.md)
 - [Tokenizer stack contents](st.md)
 - [Reading a unary count](un-run.md)
 - [Occurrence table of a list of variables](../sat-verifier-spec/ents-of.md)

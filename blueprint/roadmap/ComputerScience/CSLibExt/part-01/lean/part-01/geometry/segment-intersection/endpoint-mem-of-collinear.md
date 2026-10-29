@@ -22,7 +22,7 @@ the segment $p_1 p_2$.
 
 - [Values of opposite sign](straddles.md)
 - [Zero-crossing parameter of values of opposite sign](param-mem.md)
-- [Sub ne zero](sub-ne-zero.md)
+- [Values of opposite sign have nonzero difference](sub-ne-zero.md)
 - [Points with direction zero lie on the line](eq-param-of-direction-eq-zero.md)
 
 ## Sources

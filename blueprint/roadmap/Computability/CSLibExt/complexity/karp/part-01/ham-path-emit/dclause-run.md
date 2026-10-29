@@ -51,7 +51,7 @@ of the detour arcs of clause $j$ (contents $C$) in diamond $i$ for variable $y$.
 - [Running a chain of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-run.md)
 - [End of a clause in the detour walk](../ham-path-emit-machine/cl-end.md)
 - [The literals of a clause in the detour walk](dlits-run.md)
-- [Removing duplicates by insertion](../ham-path-emit-spec/hp-r-succ.md)
+- [Consecutive row vertices](../ham-path-emit-spec/hp-r-succ.md)
 - [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

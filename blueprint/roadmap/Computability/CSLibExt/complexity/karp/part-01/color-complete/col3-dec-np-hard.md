@@ -25,7 +25,7 @@ many-one reduction.
 - [The SAT-to-3-COLOR reduction is polynomial-time](is-poly-time-reduce-col.md)
 - [NP-hardness transfers along reductions](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
 - [The SAT to 3-COLOR reduction map on bit strings](../color/reduce-col.md)
-- [Correctness of the reduction from SAT to 3-coloring](../color-correct/sat-dec-eq-col3-dec-reduce-col.md)
+- [Correctness of the SAT to 3-COLOR map on bit strings](../color-correct/sat-dec-eq-col3-dec-reduce-col.md)
 - [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
 - [Bitstring encodings](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-decode.md)

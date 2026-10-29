@@ -267,6 +267,8 @@ def start : Lab := .rdK
 
 /-! ### One-step lemmas -/
 
+/-- **Testing a popped input bit.** For every bit $b$, the test for the input bit true of the
+SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$. -/
 @[simp] theorem isT_bit (b : Bool) : isT (some (.bit b)) = b := by cases b <;> rfl
 
 @[simp] theorem isV_val (b : Bool) : isV (some (.val b)) = b := by cases b <;> rfl

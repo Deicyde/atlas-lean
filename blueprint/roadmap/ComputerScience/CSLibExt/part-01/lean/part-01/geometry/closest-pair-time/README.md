@@ -14,7 +14,7 @@ navigation: module
 
 ## The strip scan
 
-- [Packing bound for the strip](scan-from-time.md)
+- [Cost of the scan from one strip point](scan-from-time.md)
 - [Cost of the strip scan](strip-scan-time-le.md)
 
 ## The recursion

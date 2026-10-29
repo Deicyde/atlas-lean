@@ -28,7 +28,7 @@ The λ-bound variable $f$ is monomorphic, so it cannot be applied to itself.
 - [Evaluation of a type scheme](eval.md)
 - [Instantiation of a type scheme](inst.md)
 - [Generalization of a monotype](gen.md)
-- [Substitution lemma](has-type-var-iff.md)
+- [Typing inversion for variables](has-type-var-iff.md)
 - [No monotype is an arrow out of itself](ne-node-self-left.md)
 - [Monotypes as type schemes](to-scheme.md)
 - [Terms for unification](../../../../part-02/unification/basic/term.md)

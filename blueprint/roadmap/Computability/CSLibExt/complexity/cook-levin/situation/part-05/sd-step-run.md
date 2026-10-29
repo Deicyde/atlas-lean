@@ -45,7 +45,7 @@ $j < H$, then the variable $X[t + 1, \mathrm{sa}(i)]$ is true under $a$.
 ## Proof depends on
 
 - [Good configurations](../part-03/good.md)
-- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [The idle-extended step preserves good configurations](../part-03/good-step.md)
 - [L2 (S-definition, positive)](sd-hold.md)
 
 ## Sources

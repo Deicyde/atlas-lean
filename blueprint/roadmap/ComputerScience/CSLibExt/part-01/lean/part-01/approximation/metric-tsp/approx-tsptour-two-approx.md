@@ -30,7 +30,7 @@ $V$ for $d$, and let $H$ be a tour of $V$. Then the cost under $d$ of the closed
 - [Weight of a forest below a vertex](weight.md)
 - [Preorder walk](preorder-walk.md)
 - [Preorder walk with an accumulator](preorder-walk-aux.md)
-- [The APPROX-TSP-TOUR algorithm](preorder-walk-aux-ret.md)
+- [Result of the preorder walk with an accumulator](preorder-walk-aux-ret.md)
 - [The preorder tour costs at most twice the tree](tour-cost-preorder-le.md)
 - [A minimum spanning tree costs at most any tour](weight-le-tour-cost.md)
 

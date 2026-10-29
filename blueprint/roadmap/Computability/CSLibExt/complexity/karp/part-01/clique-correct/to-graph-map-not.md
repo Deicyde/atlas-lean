@@ -22,7 +22,7 @@ the graph on $\{0, \dots, n-1\}$ read off $b$.
 
 - [Adjacency bit of a vertex pair](../clique/adj-bits.md)
 - [Pair bits are read off by position](adj-bits-eq-get-elem.md)
-- [Mem pairs](mem-pairs.md)
+- [Membership in the vertex pairs](mem-pairs.md)
 
 ## Sources
 

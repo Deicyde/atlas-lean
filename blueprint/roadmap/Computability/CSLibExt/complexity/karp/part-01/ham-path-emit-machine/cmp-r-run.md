@@ -37,7 +37,7 @@ and again the stacks of $s$.
 
 ## Proof depends on
 
-- [Running a chain of copy sites in the HAMPATH emitter](bit-inv.md)
+- [A symbol that reads as a name bit is that bit](bit-inv.md)
 - [Four pairwise distinct stacks](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
 - [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

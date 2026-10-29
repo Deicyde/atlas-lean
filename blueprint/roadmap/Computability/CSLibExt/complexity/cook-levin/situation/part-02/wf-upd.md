@@ -32,7 +32,7 @@ $\mathrm{wa}(i, k, j) < g$ for all $k < K$ and $j < d$, and $d \le H$.
 - [Number of window combinations](../part-01/g-2.md)
 - [Number of situations](../part-01/n.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](g-pos.md)
+- [The symbol-code bound is positive](g-pos.md)
 - [Effect of a situation](../part-01/res.md)
 
 ## Sources

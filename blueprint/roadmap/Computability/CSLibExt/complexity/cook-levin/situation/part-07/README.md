@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# A satisfying assignment tracks a certified run to The all-true assignment violates the accept family
+# A satisfying assignment tracks a certified run to Unfolding the idle-extended run from the front
 
 - [A satisfying assignment tracks a certified run](rows-of-init-family.md)
 - [Faithful literal list](faithful.md)
@@ -10,7 +10,7 @@ navigation: transparent
 - [Faithful dense clause family with positive literals](fam-pos.md)
 - [Exact clause semantics](clause-sat-iff.md)
 - [The all-true assignment satisfies a faithful clause with a positive literal](sat-all-true.md)
-- [The all-true assignment satisfies a faithful clause with a positive literal](lt-num-vars.md)
+- [Variables of rows up to the time bound](lt-num-vars.md)
 - [The init family is faithful with positive literals](init-pos.md)
 - [Accepting code](acode.md)
 - [Accept-code clauses](acc-code.md)
@@ -23,4 +23,4 @@ navigation: transparent
 - [No accepting certificate, no satisfying assignment](unsat-of-no-accept.md)
 - [The all-true assignment satisfies the transition, shift and init families](trans-all-true.md)
 - [The all-true assignment violates the accept family](acc-family-all-true.md)
-- [The all-true assignment violates the accept family](run-i-succ.md)
+- [Unfolding the idle-extended run from the front](run-i-succ.md)

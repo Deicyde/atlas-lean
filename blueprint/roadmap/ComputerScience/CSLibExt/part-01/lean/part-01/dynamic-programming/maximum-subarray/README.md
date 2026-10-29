@@ -11,12 +11,12 @@ navigation: module
 
 ## Cost
 
-- [Kadane's algorithm](kadane-scan-time.md)
+- [Cost of Kadane's scan](kadane-scan-time.md)
 - [Cost of Kadane's algorithm](max-subarray-sum-time.md)
 
 ## The specification
 
-- [Cost of Kadane's algorithm](ne-nil.md)
+- [A list with a maximum subarray sum is nonempty](ne-nil.md)
 - [Uniqueness of the maximum subarray sum](unique.md)
 - [Maximum suffix sum after appending an element](concat.md)
 - [Maximum subarray sum after appending an element](concat-2.md)

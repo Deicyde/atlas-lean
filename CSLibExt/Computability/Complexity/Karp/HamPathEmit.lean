@@ -144,6 +144,9 @@ theorem neg_bits (s : MS) (m i j : ℕ) (hd : s.d = hpR m i (3 * j + 1)) (hj : s
 
 /-! ### Diamonds: the detour walk -/
 
+/-- **The tokens of a literal do not start with a clause end.** For every literal $(n, p)$ with
+variable index $n \in \mathbb{N}$ and polarity $p$, the token list of $(n, p)$ is nonempty and
+its first symbol is not the clause-end marker $\mathsf{cl}$. -/
 theorem litToks_head (l : ℕ × Bool) : ∃ x R, litToks l = x :: R ∧ x ≠ .cl := by
   obtain ⟨z, b⟩ := l
   cases h : encodeNat z with
@@ -502,6 +505,9 @@ theorem drow_run (Bd m dI : ℕ) (s : MS) (v : Bool) (hmm : s.mm = 3 * m) (hl : 
 
 /-! ### Diamonds: assembly -/
 
+/-- **Adding units along no stacks.** For every $i \in \mathbb{N}$ and all stack contents $S$ of
+the HAMPATH emitter, adding $i$ units to the stacks named in the empty list of (stack, symbol)
+pairs leaves $S$ unchanged: $\mathrm{addU}([\,], i, S) = S$. -/
 theorem addU_nil (i : ℕ) (S : ∀ k, List (Γ k)) : addU [] i S = S := by
   funext k; simp [addU]
 

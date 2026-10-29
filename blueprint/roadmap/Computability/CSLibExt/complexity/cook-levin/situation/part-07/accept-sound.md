@@ -56,8 +56,8 @@ Apart from the accept family, no one-hot or at-most-one clauses are assumed.
 - [Cell code of a configuration](../part-03/cell.md)
 - [Label-and-state code of a configuration](../part-03/code.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
-- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
+- [The idle-extended step preserves good configurations](../part-03/good-step.md)
 - [A satisfying assignment tracks a certified run](rows-of-init-family.md)
 
 ## Sources

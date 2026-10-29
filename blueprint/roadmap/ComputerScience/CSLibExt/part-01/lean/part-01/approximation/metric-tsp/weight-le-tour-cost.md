@@ -31,7 +31,7 @@ A tour minus its closing edge is a spanning path, which is a spanning tree.
 
 - [Path as a forest](chain.md)
 - [Preorder of a forest](preorder.md)
-- [The preorder tour costs at most twice the tree](preorder-chain.md)
+- [Preorder of a path](preorder-chain.md)
 - [Rooted spanning tree of a vertex list](is-spanning.md)
 - [Cost of a walk](path-from.md)
 

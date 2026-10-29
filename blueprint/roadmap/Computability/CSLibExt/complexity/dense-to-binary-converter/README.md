@@ -13,7 +13,7 @@ navigation: module
 
 ## Loops
 
-- [Exact runs of the dense-to-binary converter](mv-run.md)
+- [Moving the input onto the stash](mv-run.md)
 - [The converter's final phase](fin-run.md)
 
 ## The main loop

@@ -35,7 +35,7 @@ $j < \mathrm{pl}(i, k)$.
 - [Variable layout of the transition clauses](../../family/layout.md)
 - [Decoding a symbol code](../part-01/dec-o.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](g-pos.md)
+- [The symbol-code bound is positive](g-pos.md)
 - [Label/state code of a situation](../part-01/la.md)
 - [Pushed codes are valid symbol codes](pu-valid.md)
 - [Effect of a situation](../part-01/res.md)

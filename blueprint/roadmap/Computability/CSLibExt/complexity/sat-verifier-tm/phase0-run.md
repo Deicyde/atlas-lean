@@ -6,28 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.phase0_run
 ---
 
-# The SAT verifier machine
+# Phase 0 of the SAT verifier host
 
-**The SAT verifier machine.** For a flag $\mathit{cap}$, the host machine is the finite
-multi-stack Turing machine whose stacks are the host stacks, with the input stack as input (its
-alphabet is that of the pair encoding: tagged formula bits, a separator and tagged witness
-bits), the output stack (alphabet the booleans) as output, the host alphabets on all stacks, the
-host labels as labels, the first phase-0 label as start label, a boolean internal state
-initially false, and the host program with flag $\mathit{cap}$ as program. -/
-def tm (cap : Bool) : FinTM2 where
-  K := HK
-  k₀ := .inp
-  k₁ := .out
-  Γ := HΓ
-  Λ := HLab
-  main := .ph .m1
-  σ := Bool
-  initialState := false
-  m := hprog cap
-
-variable (cap : Bool)
-
-/-! ### Phase 0: `x` and `w` onto work stacks
+**Phase 0 of the SAT verifier host.** Let $c$ be a flag, $x$ and $w$ bit strings of lengths
+$m$ and $n$, $v$ an internal state, and $S$ host stacks whose input stack holds the pair encoding
+$x \# w$ and whose other stacks are all empty. Then there are an internal state $v'$ and host
+stacks $S'$ such that the host program with flag $c$ runs in exactly $2m + 2n + 5$ steps from
+the configuration at the phase-0 label $m_1$ with internal state $v$ and stacks $S$ to the
+configuration at the start label of the tokenizer with internal state $v'$ and stacks $S'$, the
+stack $X$ of $S'$ holds the bits of $x$ in order and the stack $W$ holds the bits of $w$ in
+order, each as a name-bit symbol, and every other stack of $S'$ is empty.
 
 ## Depends on
 

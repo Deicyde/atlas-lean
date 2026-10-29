@@ -167,6 +167,8 @@ theorem stk_ext {St : ∀ _ : K, List Sym} {t b s a c v : List Sym} (hT : St .T 
 
 /-! ### Name blocks and table entries -/
 
+/-- **A name bit reads as itself.** For every bit $b$, the name-bit symbol for $b$ reads as the
+bit $b$. -/
 theorem bit?_bit (b : Bool) : Sym.bit? (.bit b) = some b := rfl
 
 theorem bit_of_bit? (x : Sym) (b : Bool) (h : Sym.bit? x = some b) : Sym.bit b = x := by
@@ -205,6 +207,11 @@ theorem liveVal_val (n : List Bool) (b : Bool) (post : List Ent) (q : List Bool)
 
 /-! ### Single steps -/
 
+/-- **Initialization step of the lookup machine.** Let $t$ and $b$ be lists of symbols and $v$ a
+bit. In exactly one step, the lookup program goes from the label $\mathsf{init}$ with internal bit
+$v$, stack $T$ holding $t$, stack $B$ holding $b$ and the stacks $S$, $A$, $C$, $V$ empty, to the
+label $\mathsf{scan}$ with internal bit $v$, the same contents of $T$, $B$, $S$, $A$ and $C$, and
+stack $V$ holding the single symbol name bit false. -/
 theorem init_run (t b : List Sym) (v : Bool) :
     Run prog 1 ⟨some .init, v, stk t b [] [] [] []⟩
       ⟨some .scan, v, stk t b [] [] [] [Sym.bit false]⟩ :=

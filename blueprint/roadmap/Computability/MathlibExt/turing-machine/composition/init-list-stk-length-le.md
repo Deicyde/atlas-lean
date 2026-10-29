@@ -6,18 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.TM2Composition.initList_stk_length_le
 ---
 
-# Evaluation of a natural-number polynomial is monotone
+# Stacks of the initial configuration are no longer than the input
 
-**Evaluation of a natural-number polynomial is monotone.** For every polynomial $p$ with
-coefficients in $\mathbb{N}$ and all natural numbers $a \le b$, we have $p(a) \le p(b)$. -/
-theorem eval_mono (p : Polynomial ℕ) {a b : ℕ} (h : a ≤ b) : p.eval a ≤ p.eval b := by
-  induction p using Polynomial.induction_on' with
-  | add p q hp hq => simp only [Polynomial.eval_add]; omega
-  | monomial n c =>
-      simp only [Polynomial.eval_monomial]
-      exact Nat.mul_le_mul_left _ (Nat.pow_le_pow_left h n)
+**Stacks of the initial configuration are no longer than the input.** Let $M$ be a finite
+multi-stack Turing machine (Mathlib's TM2 model with finitely many stacks, function labels and
+internal states, and a finite input alphabet) with input stack $k_0$, and let $l$ be a list of
+symbols from the alphabet of stack $k_0$. Then for every stack $k$ of $M$, the stack $k$ in the
+initial configuration of $M$ on input $l$ has length at most the length of $l$.
 
-/-! ### Initial and halting configurations
+The initial configuration holds $l$ on stack $k_0$ and leaves every other stack empty.
 
 ## Depends on
 

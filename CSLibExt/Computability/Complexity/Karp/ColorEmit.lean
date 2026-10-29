@@ -439,6 +439,8 @@ theorem runLe_cast {k k' : ℕ} {c d d' : TM2.Cfg Γ Lab Bool} (h : RunLe prog k
 
 /-! ### Copy sites -/
 
+/-- **Counters are not held on the output stack.** For each of the three counters read by copy
+sites of the 3-coloring emitter, the stack of the counter is not the output stack $O$. -/
 theorem Src.k_ne_O (s : Src) : s.k ≠ .O := by cases s <;> decide
 
 theorem Src.k_ne_W (s : Src) : s.k ≠ .W := by cases s <;> decide
@@ -963,6 +965,11 @@ theorem emp_out (m : MS) : chainOut m empSites = out [(m.n, 0), (m.n, 1), (m.n, 
 
 /-! ### The walk over earlier occurrences -/
 
+/-- **Consistency edges of two occurrences of the same variable.** Let $x$, $L'$ and $n$ be
+natural numbers and let $p$, $b$ be Booleans. The consistency edges between a new occurrence of
+the literal $(x, p)$ with vertices $L = n$, $M = n + 1$ and an earlier occurrence
+$(x, b, L', L' + 1)$ are $[(L', n + 1), (L' + 1, n)]$ if $b = p$, and
+$[(L', n), (L' + 1, n + 1)]$ otherwise. -/
 theorem consEdges_same (x : ℕ) (p b : Bool) (L' n : ℕ) :
     consEdges (x, p) n (n + 1) (x, b, L', L' + 1) =
       if b == p then [(L', n + 1), (L' + 1, n)] else [(L', n), (L' + 1, n + 1)] := by

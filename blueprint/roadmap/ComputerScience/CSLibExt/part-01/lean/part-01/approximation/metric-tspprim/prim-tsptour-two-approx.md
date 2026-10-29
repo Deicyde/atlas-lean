@@ -36,7 +36,7 @@ This is CLRS Theorem 35.2, with the minimum spanning tree computed by Prim.
 - [Cost of a walk](../metric-tsp/path-from.md)
 - [Preorder walk](../metric-tsp/preorder-walk.md)
 - [Preorder walk with an accumulator](../metric-tsp/preorder-walk-aux.md)
-- [The APPROX-TSP-TOUR algorithm](../metric-tsp/preorder-walk-aux-ret.md)
+- [Result of the preorder walk with an accumulator](../metric-tsp/preorder-walk-aux-ret.md)
 - [Forest of Prim's tree](prim-forest.md)
 - [Prim's parent array on the complete graph](prim-parents.md)
 - [Prim's tree](prim-tree.md)

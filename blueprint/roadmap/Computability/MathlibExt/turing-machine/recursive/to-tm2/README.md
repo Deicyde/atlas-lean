@@ -32,12 +32,12 @@ navigation: module
 
 ## The pre-phase
 
-- [Iterated steps of the wrapped machine](pre1-loop.md)
+- [The first pre-phase loop of the wrapped machine](pre1-loop.md)
 - [Pre-phase of the wrapped machine](pre-phase.md)
 
 ## The post-phase
 
-- [Pre-phase of the wrapped machine](post1-loop.md)
+- [The first post-phase loop of the wrapped machine](post1-loop.md)
 - [Post-phase of the wrapped machine](post-phase.md)
 
 ## The main phase simulates `tr`
@@ -50,6 +50,6 @@ navigation: module
 
 ## Assembly
 
-- [Main phase of the wrapped machine](tr-list-singleton.md)
+- [The evaluator's encoding of a one-element list](tr-list-singleton.md)
 - [The wrapped machine computes the function a code evaluates](tm2-computable-of-code.md)
 - [Recursive functions are Turing-computable](tm2-computable-of-computable.md)

@@ -28,7 +28,7 @@ language of $g$.
 - [Items found by the membership procedure](found.md)
 - [Candidate items for membership](items.md)
 - [One round of the membership procedure](mem-step.md)
-- [Sound items](mem-starts-of-yields.md)
+- [Completeness of the start positions](mem-starts-of-yields.md)
 - [Start positions of a right-hand side](starts.md)
 - [Fitting a symbol at a position](sym-fits.md)
 - [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)

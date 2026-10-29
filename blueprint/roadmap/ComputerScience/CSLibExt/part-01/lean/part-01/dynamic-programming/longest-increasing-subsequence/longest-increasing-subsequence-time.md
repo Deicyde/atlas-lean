@@ -22,7 +22,7 @@ The cost model charges one unit for each table entry inspected.
 
 - [Table of the quadratic LIS program](lis-table.md)
 - [Best table entry above a value](max-above.md)
-- [Longest increasing subsequence by dynamic programming](max-above-time.md)
+- [Cost of the scan for the best entry above a value](max-above-time.md)
 - [Table entry of largest length](max-entry.md)
 
 ## Sources

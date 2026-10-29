@@ -24,10 +24,10 @@ witnesses no longer than the input suffice.
 
 ## Proof depends on
 
-- [The translation computes the binary encoding](../dense-to-binary/sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](../dense-to-binary/sat-dec-encode-cnf.md)
 - [Three-literal clause test](../karp/part-02/three-sat/is3.md)
 - [Answer of the SAT host](ans.md)
-- [Cook–Levin theorem](ans-true.md)
+- [Answer of the SAT host with the three-literal filter](ans-true.md)
 - [The SAT host's answer is polynomial-time](is-poly-time-ans.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
 - [Decoding a length-prefixed CNF formula](../../cook-levin/decode-cnfaux.md)

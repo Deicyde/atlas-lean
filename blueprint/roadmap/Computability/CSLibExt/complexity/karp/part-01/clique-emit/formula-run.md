@@ -42,7 +42,7 @@ $s = |C_1| + \dots + |C_m|$ is the total number of literals of $\varphi$.
 
 - [Clique emitter: one clause](clause-run.md)
 - [D Tok](d-tok.md)
-- [Clique emitter: the instance prefix](flat-map-reverse-length.md)
+- [Reversing a list preserves the length of a flat map](flat-map-reverse-length.md)
 - [Rows pushed for a clause's literals](lrows.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)

@@ -18,7 +18,7 @@ navigation: module
 
 ## Cost
 
-- [Size bound for Karatsuba's recursive operands](karatsuba-time.md)
+- [Cost of Karatsuba multiplication](karatsuba-time.md)
 - [Karatsuba cost at powers of two](karatsuba-cost-two-pow.md)
 - [Power-of-three bound on the Karatsuba cost recurrence](karatsuba-cost-le.md)
 - [Power-of-three bound on the cost of Karatsuba multiplication](karatsuba-time-le.md)

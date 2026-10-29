@@ -11,7 +11,7 @@ navigation: module
 
 ## Cost
 
-- [The Miller–Rabin test](witness-loop-time-le.md)
+- [Cost bound for the Miller–Rabin squaring loop](witness-loop-time-le.md)
 - [Cost of the Miller–Rabin witness test](witness-time-le.md)
 
 ## Correctness

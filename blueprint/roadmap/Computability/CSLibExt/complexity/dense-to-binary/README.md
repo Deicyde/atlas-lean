@@ -27,5 +27,5 @@ navigation: module
 
 ## `satDec` on an encoding
 
-- [The translation computes the binary encoding](sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](sat-dec-encode-cnf.md)
 - [Unparsable input is not in SAT](sat-dec-of-decode-cnf-eq-none.md)

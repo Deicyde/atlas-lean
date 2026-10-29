@@ -6,25 +6,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.mem_of_mem_invSet
 ---
 
-# Counting the entries before an entry
+# Members of the inversion set
 
-**Counting the entries before an entry.** If $L$ is a list with no repeated entries and $x$
-is an entry of $L$, then the number of entries of $L$ whose index is less than the index of $x$
-equals the index of $x$ (indices counted from $0$). -/
-theorem card_before {L : List α} (hnd : L.Nodup) {x : α} (hx : x ∈ L) :
-    (L.toFinset.filter fun a => L.idxOf a < L.idxOf x).card = L.idxOf x := by
-  have : (L.toFinset.filter fun a => L.idxOf a < L.idxOf x) = (L.take (L.idxOf x)).toFinset := by
-    ext a
-    simp only [Finset.mem_filter, List.mem_toFinset]
-    constructor
-    · rintro ⟨ha, h⟩; exact (List.mem_take_iff_idxOf_lt ha).2 h
-    · intro h
-      have ha := List.mem_of_mem_take h
-      exact ⟨ha, (List.mem_take_iff_idxOf_lt ha).1 h⟩
-  rw [this, List.toFinset_card_of_nodup (hnd.sublist (List.take_sublist _ _)), List.length_take,
-    Nat.min_eq_left (List.idxOf_lt_length_of_mem hx).le]
-
-/-! ## The potential: inversions against the offline list
+**Members of the inversion set.** Let $M$ and $L$ be lists. If a pair $(a, b)$ belongs to the
+inversion set of $M$ and $L$, then $a$ and $b$ are items of $M$, $a$ comes before $b$ in $M$, and
+$b$ comes before $a$ in $L$. Here the position of an item in a list is the index of its first
+occurrence, and an item that does not occur in the list sits at the position equal to the length
+of the list.
 
 ## Depends on
 

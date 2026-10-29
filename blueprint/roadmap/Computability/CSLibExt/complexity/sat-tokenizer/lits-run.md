@@ -37,7 +37,7 @@ the $i$-th bit of $w$, or with no value when $w$ has fewer than $i$ bits.
 ## Proof depends on
 
 - [Table entries](../sat-verifier-spec/ent.md)
-- [Tokenizer rejects an undecodable literal](ents-of-cons.md)
+- [Occurrence table of a nonempty list](ents-of-cons.md)
 - [Tokenizer run on one literal](lit-run.md)
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Tokens of a literal](../sat-verifier-spec/lit-toks.md)

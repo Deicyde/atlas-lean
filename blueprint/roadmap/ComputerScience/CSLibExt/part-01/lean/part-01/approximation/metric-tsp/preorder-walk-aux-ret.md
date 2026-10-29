@@ -6,18 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.preorderWalkAux_ret
 ---
 
-# The APPROX-TSP-TOUR algorithm
+# Result of the preorder walk with an accumulator
 
-**The APPROX-TSP-TOUR algorithm.** CLRS `APPROX-TSP-TOUR`, steps 3 and 4: given a root $r$
-and a forest $F$ (the subtrees of a spanning tree with root $r$), return the tour that lists $r$
-followed by the vertices of $F$ in preorder. As a timed computation it charges one unit for $r$
-and one unit for each vertex visited by the preorder walk of $F$. -/
-def approxTSPTour (r : α) (F : Forest α) : TimeM ℕ (List α) := do
-  ✓
-  let w ← preorderWalk F
-  pure (r :: w)
-
-/-! ## The walk
+**Result of the preorder walk with an accumulator.** For every forest $F$ and every list $a$
+of vertices, the preorder walk of $F$ with accumulator $a$ returns the vertices of $F$ in
+preorder followed by $a$.
 
 ## Depends on
 

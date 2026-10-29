@@ -19,7 +19,7 @@ requests that are not in the current list.
 ## Proof depends on
 
 - [Move-to-front](mtf.md)
-- [The amortized cost of a move-to-front step](mtf-perm.md)
+- [Move-to-front rearranges the list](mtf-perm.md)
 
 ## Sources
 

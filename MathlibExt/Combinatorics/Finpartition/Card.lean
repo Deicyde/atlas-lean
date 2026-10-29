@@ -150,6 +150,9 @@ theorem eq_top_iff_card_parts_eq_one (P : Finpartition s) (hs : s.Nonempty) :
 ### Bottom recognition and general bounds
 -/
 
+/-- **A partition has a block exactly when its ground set is nonempty.** A partition $P$ of a
+finite set $s$ has at least one block, that is, its number of blocks is positive, if and only
+if $s$ is nonempty. -/
 theorem card_parts_pos_iff (P : Finpartition s) :
     0 < P.parts.card ↔ s.Nonempty := by
   rw [card_pos, parts_nonempty_iff, nonempty_iff_ne_empty, Ne, bot_eq_empty]

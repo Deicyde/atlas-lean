@@ -17,7 +17,7 @@ cost of APPROX-VERTEX-COVER on $L$ is the length of $L$: one unit per listed pai
 
 ## Proof depends on
 
-- [APPROX-VERTEX-COVER](vertex-cover-scan-time.md)
+- [Running time of the vertex cover scan](vertex-cover-scan-time.md)
 
 ## Sources
 

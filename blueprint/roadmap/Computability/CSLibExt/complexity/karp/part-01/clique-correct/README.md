@@ -10,7 +10,7 @@ navigation: module
 
 ## Pairs and pair bits
 
-- [Mem pairs](mem-pairs.md)
+- [Membership in the vertex pairs](mem-pairs.md)
 - [Pairs nodup](pairs-nodup.md)
 - [Pair bits are read off by position](adj-bits-eq-get-elem.md)
 - [Pair bits computed by a function](adj-bits-map-pairs.md)
@@ -18,7 +18,7 @@ navigation: module
 
 ## CLIQUE ≤ INDEPENDENT-SET
 
-- [Complementing the pair bits complements the graph](clique-dec-eq-ind-set-dec-flip-kg.md)
+- [Correctness of the complementing map from CLIQUE to INDEPENDENT-SET](clique-dec-eq-ind-set-dec-flip-kg.md)
 
 ## INDEPENDENT-SET ≤ VERTEX-COVER
 
@@ -26,7 +26,7 @@ navigation: module
 
 ## SAT ≤ CLIQUE
 
-- [Independent sets and vertex covers of complementary sizes](mem-occs.md)
+- [Membership in the literal occurrences of a CNF formula](mem-occs.md)
 - [Adjacency in Karp's clique graph](to-graph-clique-bits-adj.md)
 - [Karp's reduction from SAT to CLIQUE is correct](cnf-sat-iff-exists-is-nclique.md)
 - [Sat Dec of decode CNF eq none](sat-dec-of-decode-cnf-eq-none.md)

@@ -153,6 +153,8 @@ theorem eval_update_node {n v : Nat} {lo hi : BDD} (h : OrderedFrom n (node v lo
 
 /-! ### Canonicity -/
 
+/-- **Binary decision diagrams have positive size.** For every binary decision diagram $t$,
+the size of $t$ (its number of leaves and nodes, counted in tree form) is strictly positive. -/
 theorem size_pos (t : BDD) : 0 < t.size := by
   cases t <;> simp [size]
 

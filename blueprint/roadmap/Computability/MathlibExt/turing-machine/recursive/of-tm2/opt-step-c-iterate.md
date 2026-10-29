@@ -28,7 +28,7 @@ are relevant.
 - [Code of a stack symbol](code.md)
 - [Decoding a stack symbol](decode.md)
 - [Coded stacks](enc-stk.md)
-- [The coded step](enc-stk-update.md)
+- [Coded stacks after replacing one stack](enc-stk-update.md)
 - [Symbols a statement may push](pushes.md)
 - [Reading the top of a coded stack](read-top.md)
 - [Relevant symbols of a stack](relevant.md)

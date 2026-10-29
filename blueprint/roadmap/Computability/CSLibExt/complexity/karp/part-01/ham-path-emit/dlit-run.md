@@ -28,7 +28,7 @@ its tokens to `T`.
 
 - [End of a clause in the detour walk](../ham-path-emit-machine/cl-end.md)
 - [Comparing a name with the top entry of the variable stack](../ham-path-emit-machine/cmp-r-run.md)
-- [Token symbols of the HAMPATH emitter](lit-toks-head.md)
+- [The tokens of a literal do not start with a clause end](lit-toks-head.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [The binary code of natural numbers is injective](../../../sat-verifier-spec/encode-nat-inj.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)

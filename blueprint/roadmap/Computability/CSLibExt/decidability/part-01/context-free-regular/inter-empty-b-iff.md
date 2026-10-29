@@ -35,7 +35,7 @@ intersection of the language of $g$ and the language of $D$ is empty.
 - [Start states of a right-hand side in a DFA](dfa-starts.md)
 - [One round of the item search against a DFA](dfa-step.md)
 - [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
-- [Sound items for a grammar and a DFA](mem-dfa-starts-of-yields.md)
+- [Completeness of the start states in a DFA](mem-dfa-starts-of-yields.md)
 - [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 - [Concatenation of yields](../../../languages/context-free/part-02/yields/append.md)

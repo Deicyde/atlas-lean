@@ -13,7 +13,7 @@ navigation: module
 
 ## Cost
 
-- [Longest increasing subsequence by dynamic programming](max-above-time.md)
+- [Cost of the scan for the best entry above a value](max-above-time.md)
 - [Running time of the quadratic LIS program](longest-increasing-subsequence-time.md)
 
 ## Correctness

@@ -21,7 +21,7 @@ $n$-digit numbers in base $B$ is at most $3^{\ell(n) + 1}$.
 
 - [Karatsuba cost recurrence](karatsuba-cost.md)
 - [Power-of-three bound on the Karatsuba cost recurrence](karatsuba-cost-le.md)
-- [Size bound for Karatsuba's recursive operands](karatsuba-time.md)
+- [Cost of Karatsuba multiplication](karatsuba-time.md)
 
 ## Sources
 

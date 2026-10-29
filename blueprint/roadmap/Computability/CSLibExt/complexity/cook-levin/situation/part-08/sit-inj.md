@@ -35,7 +35,7 @@ code and the windows of $c$.
 
 - [Number of window combinations](../part-01/g-2.md)
 - [Symbol-code bound](../part-01/g.md)
-- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [The symbol-code bound is positive](../part-02/g-pos.md)
 - [The situation index matches the code and windows](../part-03/sit-idx-spec.md)
 - [Equal low-order digits give equal residues](mod-pow-eq-of-digits.md)
 

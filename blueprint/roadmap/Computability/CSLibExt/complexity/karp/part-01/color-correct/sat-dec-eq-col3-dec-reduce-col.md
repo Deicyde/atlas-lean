@@ -6,18 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.satDec_eq_col3Dec_reduceCol
 ---
 
-# Correctness of the reduction from SAT to 3-coloring
+# Correctness of the SAT to 3-COLOR map on bit strings
 
-**Correctness of the reduction from SAT to 3-coloring.** A CNF formula $\varphi$ is satisfiable
-if and only if the graph built from $\varphi$ by the Garey–Johnson–Stockmeyer construction is
-3-colorable. Here, writing $n$ for the number of vertices the construction allocates, the graph
-has vertex set $\{0, \dots, n - 1\}$, and two distinct vertices are adjacent when the
-construction emits an edge between them in either order. -/
-theorem cnfSat_iff_colorable (φ : CNF) :
-    CNFSat φ ↔ (edgeGraph (colSt φ).next (colSt φ).em).Colorable 3 :=
-  ⟨colorable_of_cnfSat, cnfSat_of_colorable⟩
-
-/-! ### The reduction on bit strings
+**Correctness of the SAT to 3-COLOR map on bit strings.** For every bit string $x$, SAT
+accepts $x$ if and only if 3-COLOR accepts the image of $x$ under the SAT to 3-COLOR reduction
+map on bit strings.
 
 ## Depends on
 
@@ -27,7 +20,7 @@ theorem cnfSat_iff_colorable (φ : CNF) :
 
 ## Proof depends on
 
-- [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](../../../dense-to-binary/sat-dec-encode-cnf.md)
 - [Unparsable input is not in SAT](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
 - [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 - [Correctness of the reduction from SAT to 3-coloring](cnf-sat-iff-colorable.md)

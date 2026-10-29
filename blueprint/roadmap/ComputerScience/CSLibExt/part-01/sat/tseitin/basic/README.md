@@ -20,7 +20,7 @@ navigation: module
 
 ## Size
 
-- [Tseitin CNF with $\bot$ false](length-tseitin-aux.md)
+- [Number of defining clauses in the Tseitin encoding](length-tseitin-aux.md)
 - [Number of clauses of the Tseitin CNF](length-tseitin.md)
 - [Tseitin clauses have at most three literals](length-le-three-of-mem-tseitin.md)
 

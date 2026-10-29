@@ -437,6 +437,11 @@ theorem lit_fail (r : List Bool) (hr : decodeLit r = none) (w t b : List Sym) (c
 
 /-! ### Clauses -/
 
+/-- **Occurrence table of a nonempty list.** Let $n$ be a natural number, $L$ a list of natural
+numbers and $w$ a list of bits. The occurrence table of the list $n$ followed by $L$, with $w$, is
+the entry whose name is the binary code of $n$ and whose value is the first bit of $w$ (no value
+if $w$ is empty), followed by the occurrence table of $L$ with $w$ minus its first bit (with the
+empty list if $w$ is empty). -/
 theorem entsOf_cons (n : ℕ) (ns : List ℕ) (w : List Bool) :
     entsOf (n :: ns) w = (encodeNat n, w.head?) :: entsOf ns w.tail := by
   cases w <;> rfl
@@ -639,6 +644,11 @@ theorem clauses_fail : ∀ (n : ℕ) (r w : List Bool) (t b : List Sym) (v : Boo
 
 /-! ### The whole input -/
 
+/-- **The tokenizer accepts when the formula stack is empty.** Let $w$, $t$, $b$ be lists of
+symbols, $i, j \in \mathbb{N}$ and $v$ a bit. In exactly one step, the SAT tokenizer goes from the
+label $\mathsf{fin}$ with internal bit $v$, empty formula stack $X$, stacks $W$, $T$, $B$ holding
+$w$, $t$, $b$, and $i$ and $j$ marks on the clause and literal counters, to the label
+$\mathsf{acc}$ with internal bit false and all stacks unchanged. -/
 theorem fin_acc (w t b : List Sym) (cc lc : ℕ) (v : Bool) :
     Run prog 1 ⟨some .fin, v, st [] w t b cc lc⟩ ⟨some .acc, false, st [] w t b cc lc⟩ :=
   Run.single (by simp [prog, TM2.stepAux])

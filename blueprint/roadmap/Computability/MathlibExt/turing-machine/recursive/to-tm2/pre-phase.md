@@ -32,7 +32,7 @@ cons on the main stack and all other stacks empty.
 
 - [One step of the wrapped machine](fstep.md)
 - [The program of the wrapped machine](fwd-prog.md)
-- [Iterated steps of the wrapped machine](pre1-loop.md)
+- [The first pre-phase loop of the wrapped machine](pre1-loop.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ navigation: module
 
 ## Straddling
 
-- [Sub ne zero](sub-ne-zero.md)
+- [Values of opposite sign have nonzero difference](sub-ne-zero.md)
 - [Zero-crossing parameter of values of opposite sign](param-mem.md)
 - [A vanishing convex combination of nonzero values forces opposite signs](straddles-of-combo.md)
 - [Properly crossing segments meet](inter-nonempty-of-straddles.md)

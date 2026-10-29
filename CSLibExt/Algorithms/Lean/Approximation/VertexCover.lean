@@ -72,6 +72,9 @@ def approxVertexCover (edges : List (V × V)) : TimeM ℕ (Finset V) :=
 
 /-! ## Cost -/
 
+/-- **Running time of the vertex cover scan.** For every finite set $C$ of vertices and every list
+$L$ of pairs of vertices, the running time of the vertex cover scan starting from $C$ on $L$ is
+the length of $L$. -/
 @[simp]
 theorem vertexCoverScan_time (cover : Finset V) (edges : List (V × V)) :
     (vertexCoverScan cover edges).time = edges.length := by
@@ -90,6 +93,9 @@ theorem approxVertexCover_time (edges : List (V × V)) :
 
 /-! ## The result is a vertex cover -/
 
+/-- **The vertex cover scan only adds vertices.** For every finite set $C$ of vertices and every
+list of pairs of vertices, the cover returned by the vertex cover scan starting from $C$ on that
+list contains $C$. -/
 theorem subset_vertexCoverScan (cover : Finset V) (edges : List (V × V)) :
     cover ⊆ (vertexCoverScan cover edges).ret := by
   induction edges generalizing cover with

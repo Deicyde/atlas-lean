@@ -52,7 +52,7 @@ navigation: module
 
 ## Lengths and shapes
 
-- [Clique emitter: the instance prefix](flat-map-reverse-length.md)
+- [Reversing a list preserves the length of a flat map](flat-map-reverse-length.md)
 
 ## The walk, occurrences, clauses, the formula
 

@@ -25,7 +25,7 @@ of $V$ (the tree with root $r$ and subtree forest $F$ spans $V$). Then the list 
 - [Preorder of a forest](preorder.md)
 - [Preorder walk](preorder-walk.md)
 - [Preorder walk with an accumulator](preorder-walk-aux.md)
-- [The APPROX-TSP-TOUR algorithm](preorder-walk-aux-ret.md)
+- [Result of the preorder walk with an accumulator](preorder-walk-aux-ret.md)
 
 ## Sources
 

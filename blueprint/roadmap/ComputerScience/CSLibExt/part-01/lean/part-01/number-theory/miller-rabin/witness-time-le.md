@@ -23,7 +23,7 @@ of the $t$ squarings.
 ## Proof depends on
 
 - [The Miller–Rabin squaring loop](witness-loop.md)
-- [The Miller–Rabin test](witness-loop-time-le.md)
+- [Cost bound for the Miller–Rabin squaring loop](witness-loop-time-le.md)
 
 ## Sources
 

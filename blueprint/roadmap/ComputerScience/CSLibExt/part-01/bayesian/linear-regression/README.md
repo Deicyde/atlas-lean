@@ -21,7 +21,7 @@ navigation: module
 
 ## The posterior
 
-- [The linear regression likelihood is a product of Gaussians](measurable-lin-reg-post-mean.md)
+- [Measurability of the posterior mean in Bayesian linear regression](measurable-lin-reg-post-mean.md)
 - [The evidence of Bayesian linear regression](lin-reg-likelihood-comp-gaussian-real.md)
 - [Bayesian linear regression](posterior-lin-reg-likelihood-gaussian-re.md)
 

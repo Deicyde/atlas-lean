@@ -29,7 +29,7 @@ $k(k+1)/2$.
 - [Last layer of the odd-even merger](../odd-even/final-layer.md)
 - [Batcher's odd-even merger](../odd-even/odd-even-merge.md)
 - [Relabeling the wires of a comparator list](../odd-even/relabel.md)
-- [Odd-even merge sort sorts every $0$-$1$ input](../odd-even/relabel-within.md)
+- [Relabeling keeps comparators within an interval](../odd-even/relabel-within.md)
 
 ## Sources
 

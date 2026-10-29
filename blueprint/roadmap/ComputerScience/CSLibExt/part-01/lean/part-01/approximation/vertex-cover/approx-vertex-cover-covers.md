@@ -18,7 +18,7 @@ contains $u$ or $v$.
 
 ## Proof depends on
 
-- [Running time of APPROX-VERTEX-COVER](subset-vertex-cover-scan.md)
+- [The vertex cover scan only adds vertices](subset-vertex-cover-scan.md)
 - [Vertex cover scan](vertex-cover-scan.md)
 
 ## Sources

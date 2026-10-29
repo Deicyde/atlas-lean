@@ -281,6 +281,10 @@ instance {σ2 : ℝ≥0} (x : Fin n → ℝ) : IsMarkovKernel (linRegLikelihood 
 
 /-! ### The posterior -/
 
+/-- **Measurability of the posterior mean in Bayesian linear regression.** For a prior mean
+$m_0 \in \mathbb{R}$, a prior variance $s_0 \ge 0$, a noise variance $\sigma^2 \ge 0$ and inputs
+$x \in \mathbb{R}^n$, the posterior mean of the weight, as a function of the responses
+$y \in \mathbb{R}^n$, is a measurable map from $\mathbb{R}^n$ to $\mathbb{R}$. -/
 theorem measurable_linRegPostMean (m₀ : ℝ) (s₀ σ2 : ℝ≥0) (x : Fin n → ℝ) :
     Measurable (linRegPostMean m₀ s₀ σ2 x) := by
   unfold linRegPostMean

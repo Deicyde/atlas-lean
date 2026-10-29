@@ -6,14 +6,13 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.genStep_generating_subset
 ---
 
-# The emptiness test for context-free grammars
+# The generating nonterminals are closed under one more round
 
-**The emptiness test for context-free grammars.** For an encoded grammar $g$, the test returns
-true exactly when the start nonterminal of $g$ is not among the generating nonterminals of $g$. -/
-def isEmptyB (g : EncodedCFG T) : Bool :=
-  !memB g.generating g.start
-
-/-! ## Stabilization
+**The generating nonterminals are closed under one more round.** For an encoded grammar $g$,
+one more round of the generating-nonterminal computation, applied to the productions of $g$ and
+the generating nonterminals of $g$, yields only generating nonterminals of $g$: every left-hand
+side of a production of $g$ whose right-hand side has all its nonterminals among the generating
+nonterminals of $g$ is itself a generating nonterminal of $g$.
 
 ## Depends on
 

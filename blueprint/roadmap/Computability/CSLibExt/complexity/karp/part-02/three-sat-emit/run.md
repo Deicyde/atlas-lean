@@ -33,7 +33,7 @@ the top, holds the binary code of the SAT-to-3SAT translation of $\varphi$ follo
 ## Proof depends on
 
 - [The 3SAT emitter processes a whole formula](formula-run.md)
-- [The 3SAT emitter processes a whole formula](rep-single.md)
+- [Repeating a single bit](rep-single.md)
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Output clauses of a walked list of literals](walk-f.md)
 - [Walk F chain](walk-f-chain.md)

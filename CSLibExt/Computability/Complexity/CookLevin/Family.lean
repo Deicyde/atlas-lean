@@ -285,6 +285,9 @@ theorem gapEnc_shift {lo lo' : ℕ} {ls : List (ℕ × Bool)} {V : ℕ} (hlo : l
 
 /-! ## The literal positions are strictly increasing -/
 
+/-- **Successor of a number with a non-maximal remainder.** Let $c$ and $d$ be natural numbers
+with $0 < d$ and $(c \bmod d) + 1 < d$. Then $\lfloor (c + 1) / d \rfloor = \lfloor c / d \rfloor$
+and $(c + 1) \bmod d = (c \bmod d) + 1$. -/
 theorem div_mod_succ_of_lt {c d : ℕ} (hd : 0 < d) (h : c % d + 1 < d) :
     (c + 1) / d = c / d ∧ (c + 1) % d = c % d + 1 := by
   have hc := Nat.div_add_mod c d

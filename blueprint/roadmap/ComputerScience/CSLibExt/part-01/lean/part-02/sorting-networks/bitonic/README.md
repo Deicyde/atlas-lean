@@ -37,7 +37,7 @@ navigation: module
 
 ## Sizes
 
-- [The bitonic sorter sorts every `0`-`1` input](length-half-cleaner.md)
+- [Size of the half-cleaner](length-half-cleaner.md)
 - [Size of the bitonic merger](length-bitonic-merge.md)
 - [Size of the bitonic sorter on a block of wires](length-bitonic-sort-n.md)
 

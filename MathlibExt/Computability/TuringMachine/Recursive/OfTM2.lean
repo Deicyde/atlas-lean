@@ -420,6 +420,13 @@ noncomputable def stepC (c : CodedCfg tm) : Option (CodedCfg tm) :=
 
 /-! ### The coded step is primitive recursive -/
 
+/-- **Updating the state from the top of a coded stack is primitive recursive.** Let $k$ be a
+stack index of a finite multi-stack machine, write $\Gamma_k$ for the alphabet of stack $k$, and
+let $f$ be any function sending an internal state and an optional symbol of $\Gamma_k$ to an
+internal state. Then the map sending an internal state $v$ and coded stacks $S$ (a list $S_j$ of
+natural numbers for each stack index $j$) to $f(v, t)$, where $t$ is the top of stack $k$ as read
+from $S$, is primitive recursive as a function of two arguments, for the encoding of internal
+states and the encoding of functions on the finite type of stack indices. -/
 theorem primrec₂_readTop {k : tm.K} {f : tm.σ → Option (tm.Γ k) → tm.σ} :
     Primrec₂ fun (v : tm.σ) (S : tm.K → List ℕ) ↦ f v (readTop tm k S) := by
   have hG : Primrec₂ fun (v : tm.σ) (o : Option ℕ) ↦ f v (o.bind (decode tm k)) := by
@@ -458,6 +465,10 @@ theorem primrec_stepC : Primrec (stepC tm) := by
 
 /-! ### The coded step simulates the machine -/
 
+/-- **Coded stacks after replacing one stack.** For a finite multi-stack machine, a family $S$ of
+stacks, a stack index $k$ and a list $l$ of symbols of stack $k$, the coded stacks of the family
+obtained from $S$ by replacing stack $k$ with $l$ are the coded stacks of $S$ with the entry at
+$k$ replaced by the list obtained from $l$ by replacing each symbol with its code. -/
 theorem encStk_update (S : ∀ k, List (tm.Γ k)) (k : tm.K) (l : List (tm.Γ k)) :
     encStk tm (Function.update S k l) = Function.update (encStk tm S) k (l.map (code tm k)) := by
   funext k'
@@ -569,6 +580,10 @@ theorem optStepC_iterate (j : ℕ) {o : Option tm.Cfg} (ho : ∀ c ∈ o, Releva
 
 /-! ### Input, output and halting -/
 
+/-- **The initial stacks have only relevant symbols.** For a finite multi-stack machine and every
+list $s$ of symbols of the input alphabet $\Gamma_{k_0}$, the stacks of the initial configuration
+with input $s$ (the list $s$ on the input stack $k_0$ and every other stack empty) have only
+relevant symbols. -/
 theorem relevant_initList (s : List (tm.Γ tm.k₀)) : Relevant tm (initList tm s).stk := by
   intro k x hx
   by_cases hk : k = tm.k₀

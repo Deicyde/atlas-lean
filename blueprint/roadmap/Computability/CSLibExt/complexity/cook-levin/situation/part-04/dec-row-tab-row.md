@@ -34,7 +34,7 @@ halted.
 - [Label-and-state code of a configuration](../part-03/code.md)
 - [C1e (the row decoder reads only the window)](dec-row-congr.md)
 - [C1a (decoding recovers a good configuration)](dec-row-enc.md)
-- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [The idle-extended step preserves good configurations](../part-03/good-step.md)
 - [The table-driven step](../part-03/table-agree.md)
 - [Stack heights grow by at most the window depth per step](step-i-height.md)
 

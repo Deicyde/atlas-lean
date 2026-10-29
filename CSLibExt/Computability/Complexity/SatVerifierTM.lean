@@ -309,6 +309,14 @@ variable (cap : Bool)
 
 /-! ### Phase 0: `x` and `w` onto work stacks -/
 
+/-- **Phase 0 of the SAT verifier host.** Let $c$ be a flag, $x$ and $w$ bit strings of lengths
+$m$ and $n$, $v$ an internal state, and $S$ host stacks whose input stack holds the pair encoding
+$x \# w$ and whose other stacks are all empty. Then there are an internal state $v'$ and host
+stacks $S'$ such that the host program with flag $c$ runs in exactly $2m + 2n + 5$ steps from
+the configuration at the phase-0 label $m_1$ with internal state $v$ and stacks $S$ to the
+configuration at the start label of the tokenizer with internal state $v'$ and stacks $S'$, the
+stack $X$ of $S'$ holds the bits of $x$ in order and the stack $W$ holds the bits of $w$ in
+order, each as a name-bit symbol, and every other stack of $S'$ is empty. -/
 theorem phase0_run (x w : List Bool) (v : Bool) (S : ∀ k, List (HΓ k))
     (hinp : S .inp = Cslib.Complexity.DenseSAT.Verifier.pairEncode (x, w))
     (h0 : ∀ k, k ≠ .inp → S k = []) :
@@ -365,6 +373,14 @@ theorem phase0_run (x w : List Bool) (v : Bool) (S : ∀ k, List (HΓ k))
 
 /-! ### The embeddings are faithful -/
 
+/-- **The tokenizer embeds in the SAT verifier host.** For every flag $c$, the tokenizer program
+embeds in the host program with flag $c$ along the stack embedding of the tokenizer into the host
+and the map of tokenizer labels into host labels, which sends the tokenizer's accepting label to
+the start label of the clause-length filter, its rejecting label to the cleanup label with answer
+false, and every other label $\ell$ to the host label running the tokenizer at $\ell$. That is,
+for every tokenizer label $\ell$, either the tokenizer's statement at $\ell$ is the halt
+statement, or the host program's statement at the image of $\ell$ is the tokenizer's statement
+at $\ell$ translated along this embedding and label map. -/
 theorem embeds_tok : Embeds embT φT Tokenizer.prog (hprog cap) := by
   intro l
   by_cases h1 : l = .acc
@@ -426,6 +442,8 @@ theorem lookupSpec : Check.LookupSpec lkH Lookup.start 8 4 := by
 
 /-! ### Cleanup and output -/
 
+/-- **The cleanup stacks are distinct.** The list of stacks emptied by the cleanup of the SAT
+verifier host has no repeated entries. -/
 theorem workKs_nodup : workKs.Nodup := by decide
 
 theorem mem_workKs (k : HK) (h : k ≠ .out) : k ∈ workKs := by
@@ -456,6 +474,10 @@ theorem fin_run (ans v : Bool) :
 
 /-! ### Sizes of the token and table stacks -/
 
+/-- **Name lengths in an occurrence table.** For every list $n_0, \dots, n_{k-1}$ of natural
+numbers and every list $w$ of bits, the names of the entries of the occurrence table of
+$n_0, \dots, n_{k-1}$ and $w$, in order, have the lengths of the binary codes of
+$n_0, \dots, n_{k-1}$ (Mathlib's encoding of natural numbers as bit lists). -/
 theorem entsOf_map_length (ns : List ℕ) :
     ∀ w : List Bool,
       (entsOf ns w).map (fun e => e.1.length) = ns.map fun n => (encodeNat n).length := by
@@ -709,6 +731,11 @@ theorem host_run (x w : List Bool) :
 
 /-! ### The verifier is polynomial-time -/
 
+/-- **Initial configuration of the SAT verifier machine.** For every flag $c$ and every word $l$
+over the input alphabet $G$ of the host, the initial configuration of the SAT verifier machine
+with flag $c$ on $l$ (its start label, its initial internal state, $l$ on the input stack and
+every other stack empty) is the configuration at the phase-0 label $m_1$ with internal state
+false and the initial host stacks on $l$. -/
 theorem initList_tm (l : List G) : initList (tm cap) l = ⟨some (.ph .m1), false, initS l⟩ := by
   simp only [initList]
   congr 1
@@ -808,6 +835,11 @@ theorem cook_levin_SAT_np_complete :
 
 /-! ### 3SAT -/
 
+/-- **Answer of the SAT host with the three-literal filter.** For all bit strings $x$ and $w$,
+the answer of the SAT host with flag true on $(x, w)$ is the conjunction of two bits. The first
+is false if the complete length-prefixed CNF decoder fails on $x$; if $x$ decodes to a CNF
+formula $\varphi$, it is true exactly when every clause of $\varphi$ has at most three literals.
+The second is the return value of the SAT verifier on $(x, w)$. -/
 theorem ans_true (x w : List Bool) :
     ans true (x, w) = (((decodeCNF x).map Karp.is3).getD false && (satVerifier (x, w)).ret) := by
   rw [SatVerifier.satVerifier_ret_eq]

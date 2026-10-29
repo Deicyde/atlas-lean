@@ -34,7 +34,7 @@ navigation: module
 
 ## Completeness: the words of `regLang L(g)` are generated
 
-- [Every production of the regularity grammar is sound for its intended languages](mem-language-from-of-mem-rules.md)
+- [Productions of the regularity grammar preserve generated languages](mem-language-from-of-mem-rules.md)
 - [Shifted right-hand sides generate the images of words](mem-eval-form-shift-of.md)
 - [Shifted derivations in the regularity grammar](shift-mem.md)
 - [The language of the regularity grammar](language-reg-grammar.md)

@@ -40,7 +40,7 @@ a run lies in the effective alphabet of $E$.
 ## Proof depends on
 
 - [Good configurations](good.md)
-- [Reads of the in-range shift stay in the row](good-step.md)
+- [The idle-extended step preserves good configurations](good-step.md)
 - [The situation index matches the code and windows](sit-idx-spec.md)
 - [The table-driven step](table-agree.md)
 

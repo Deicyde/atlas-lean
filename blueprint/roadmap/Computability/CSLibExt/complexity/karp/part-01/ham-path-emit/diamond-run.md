@@ -48,7 +48,7 @@ variable $y$, and the reversed name of $y$ is prepended to $G$.
 - [Front of a diamond](dfront-run.md)
 - [The row of a diamond in the HAMPATH emitter](drow-full-run.md)
 - [The frame of a diamond](../ham-path-emit-spec/frame-e.md)
-- [Removing duplicates by insertion](../ham-path-emit-spec/hp-r-succ.md)
+- [Consecutive row vertices](../ham-path-emit-spec/hp-r-succ.md)
 - [The next diamond top follows the row](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
 - [The row arcs of a diamond](../ham-path-emit-spec/row-e.md)
 - [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)

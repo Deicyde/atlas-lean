@@ -38,9 +38,9 @@ on $R$; after each row the column marks are restored from $Rt$ and the row mark 
 
 ## Proof depends on
 
-- [Start label of the subset-sum emitter](is-bit-block-val.md)
+- [Testing a popped input bit](is-bit-block-val.md)
 - [Is V](is-v.md)
-- [Start label of the subset-sum emitter](is-v-val.md)
+- [Testing a popped input bit](is-v-val.md)
 - [Subset-sum emitter: one row of the pair walk](pr-run.md)
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)

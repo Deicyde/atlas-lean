@@ -24,17 +24,17 @@ navigation: module
 
 ## The potential: inversions against the offline list
 
-- [Counting the entries before an entry](mem-of-mem-inv-set.md)
+- [Members of the inversion set](mem-of-mem-inv-set.md)
 - [Triangle inequality for inversions](inv-triangle.md)
 - [The amortized cost of a move-to-front step](mtf-step.md)
 
 ## Move-to-front is `2`-competitive
 
-- [The amortized cost of a move-to-front step](mtf-perm.md)
+- [Move-to-front rearranges the list](mtf-perm.md)
 
 ## Free exchanges
 
-- [The amortized cost of a move-to-front step](free-move-perm.md)
+- [A free move rearranges the list](free-move-perm.md)
 - [Free moves never add inversions against a list headed by the moved item](inv-free-move-le.md)
 - [Amortized bound for move-to-front over a request sequence, with free exchanges](mtf-cost-add-inv-le-free.md)
 - [Without free moves the two offline costs agree](offline-cost-free-no-move.md)

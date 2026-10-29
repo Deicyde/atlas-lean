@@ -26,7 +26,7 @@ probability at least $2 / (n(n-1))$.
 - [Edge contraction](contract.md)
 - [Size of a cut](cut-size.md)
 - [Contraction preserves the minimum cut size](is-min-cut-contract.md)
-- [Minimum cut size bounds the number of edges](success-prob-nonneg.md)
+- [The success probability is nonnegative](success-prob-nonneg.md)
 - [Contraction preserves validity and removes one vertex](valid-contract.md)
 
 ## Sources

@@ -30,7 +30,7 @@ sublist of $R$; and $c + |R'| = |R|$.
 
 - [Other endpoint of an edge](other-end.md)
 - [Moving a block of a list in front of an element is a permutation](../hierholzer/perm-splice.md)
-- [Undirected Hierholzer's algorithm](udeg-erase.md)
+- [Degree after removing an edge](udeg-erase.md)
 - [An edge at a vertex joins it to its other endpoint](usym-eq-other-end.md)
 - [Steps of a concatenated walk](../hierholzer/walk-edges-append.md)
 

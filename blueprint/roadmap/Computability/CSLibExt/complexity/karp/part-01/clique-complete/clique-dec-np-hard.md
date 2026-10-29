@@ -23,7 +23,7 @@ bit string $x$, $L$ accepts $x$ exactly when CLIQUE accepts $f(x)$.
 ## Proof depends on
 
 - [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
-- [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
+- [SAT accepts the code of a formula exactly when it is satisfiable](../../../dense-to-binary/sat-dec-encode-cnf.md)
 - [Unparsable input is not in SAT](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
 - [Adjacency bits of Karp's clique graph](../clique/clique-bits.md)
 - [Karp's reduction from SAT to CLIQUE is correct](../clique-correct/cnf-sat-iff-exists-is-nclique.md)

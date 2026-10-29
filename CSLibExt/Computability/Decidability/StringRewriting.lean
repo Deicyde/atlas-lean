@@ -213,6 +213,8 @@ theorem bottom_map_copyCard (u : List α) : bottom (u.map copyCard) = lift u := 
 
 /-! ### Comparing words of letters with separators -/
 
+/-- **Letters differ from the star.** For every letter $a$ of the alphabet $\alpha$, the symbol
+$a$ of the extended alphabet of the MPCP-to-PCP reduction is different from the star $\star$. -/
 theorem letter_ne_star (a : α) : letter a ≠ star := by simp
 
 theorem letter_ne_endMark (a : α) : letter a ≠ endMark := by simp
@@ -306,6 +308,10 @@ theorem derives_of_top_eq : ∀ (A : List (Domino (Sym α))), (∀ c ∈ A, c �
 
 /-! ### From derivations to solutions -/
 
+/-- **Rewriting steps keep the letters of the instance.** Let $(R, x, y)$ be an instance of the
+reachability problem over an alphabet $\alpha$. If a word $w$ rewrites to a word $w'$ in one
+step of $R$ and every letter of $w$ is among the letters of the instance, then every letter of
+$w'$ is among the letters of the instance. -/
 theorem mem_symbols_of_step {w w' : List α} (h : Step I.1 w w')
     (hw : ∀ a ∈ w, a ∈ symbols I) : ∀ a ∈ w', a ∈ symbols I := by
   obtain ⟨u, v, hr⟩ := h

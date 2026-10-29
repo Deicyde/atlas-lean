@@ -243,6 +243,10 @@ def tseitinBot [Bot Atom] (ι : Atom → ℕ) (A : Proposition Atom) : CNF :=
 
 /-! ### Size -/
 
+/-- **Number of defining clauses in the Tseitin encoding.** For every map $\iota$ from atoms to
+natural numbers, every formula $A$ and every gate number $k$, the list of defining clauses
+produced by the Tseitin encoding of $A$ with gates numbered from $k$ has length $3c$, where $c$ is
+the number of binary connectives of $A$. -/
 theorem length_tseitinAux (ι : Atom → ℕ) (A : Proposition Atom) (k : ℕ) :
     (tseitinAux ι A k).2.1.length = 3 * A.connectiveCount := by
   induction A generalizing k with
