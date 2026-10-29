@@ -14,6 +14,8 @@ public import Mathlib.Topology.Algebra.Module.Basic
 public import Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Quotient
 public import Mathlib.Topology.MetricSpace.HausdorffDistance
 
+import MathlibExt.Analysis.Normed.Module.DualDistanceFormula
+
 @[expose] public section
 
 /-!
@@ -34,9 +36,8 @@ annihilator (`Submodule.dualAnnihilator`, which uses the algebraic dual
 The new content here is the use of continuity: a functional that vanishes
 on `S` vanishes on its closure, and conversely a point outside the closure
 is separated from `S` by a functional in the annihilator. The separation
-step is the quotient form of Hahn-Banach: apply the norming functional
-(`exists_dual_vector''`) to the class of `x` in `E ⧸ S`, whose norm is
-`infDist x S > 0`, and pull back along the quotient map `S.mkQL`.
+step reuses the existing dual distance formula: its attaining functional
+vanishes on `S` and takes the positive value `infDist x S` at `x`.
 
 This is a companion to the Hahn-Banach material of
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`
@@ -202,18 +203,12 @@ theorem exists_mem_topologicalAnnihilator_apply_ne_zero {S : Submodule 𝕜 E} {
     ∃ f ∈ S.topologicalAnnihilator, f x ≠ 0 := by
   have hdist : 0 < Metric.infDist x (S : Set E) :=
     (Metric.infDist_pos_iff_notMem_closure ⟨0, zero_mem S⟩).mp hx
-  obtain ⟨g, -, hg_val⟩ := exists_dual_vector'' 𝕜 (S.mkQL x)
-  refine ⟨g.comp S.mkQL, ?_, ?_⟩
-  · rw [mem_topologicalAnnihilator]
-    intro s hs
-    have h0 : S.mkQL s = 0 := by
-      rw [Submodule.mkQL_apply]
-      exact (Submodule.Quotient.mk_eq_zero S).mpr hs
-    simp [h0]
-  · have hnorm : ‖S.mkQL x‖ = Metric.infDist x (S : Set E) :=
-      QuotientAddGroup.norm_mk x
-    rw [ContinuousLinearMap.comp_apply, hg_val, hnorm]
-    exact RCLike.ofReal_ne_zero.mpr hdist.ne'
+  obtain ⟨f, hfvan, -, hfval⟩ :=
+    MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_apply_eq_infDist
+      S x
+  refine ⟨f, mem_topologicalAnnihilator.mpr hfvan, ?_⟩
+  rw [hfval]
+  exact RCLike.ofReal_ne_zero.mpr hdist.ne'
 
 /-- **Separation, normalized.** A point outside the topological closure of
 `S` is separated by an annihilating functional taking the value `1` there. -/
