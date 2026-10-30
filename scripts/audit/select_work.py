@@ -4,8 +4,10 @@
     python select_work.py PACKETS_JSONL LEDGER_JSONL OUT_JSONL [--limit 600]
 
 An article needs an audit when the ledger has no line for it, or when its
-packet (article text, docstring, signature, edges) changed since the line was
-written, for example because a fix was applied. Never-audited articles come
+packet (article text, docstring, signature, edges) changed since its last
+audit. A ledger line holds the hash of the packet the audit judged and, once
+settle_ledger.py has run, the hash after the run's fixes, so an article's own
+fix does not count as a change, and undoing a written fix does. Never-audited articles come
 first, then changed ones that still have a problem a docstring fix can solve
 (a lint flag other than edge-missing, or a docstring fix proposed at their
 last audit that was not written), then the other changed ones; within each
@@ -26,12 +28,24 @@ DERIVED = ("lint", "signature_mentions")
 POSITIONAL = ("lean_line", "docstring_lines", "docstring_insert_line")
 # Edges come from compiled Lean dependencies, which no docstring fix changes.
 NOT_DOCSTRING_LINT = ("edge-missing",)
+# A linked article's title changes whenever that article is fixed; only the link itself counts.
+LINKS = ("depends_on", "proof_depends_on")
 
 
 def digest(packet: dict) -> str:
-    """Hash of what the audit judged; a lint change or a shifted line re-audits nothing."""
+    """Hash of what the audit judged; a lint change, a shifted line or a retitled link re-audits nothing."""
     content = {key: value for key, value in packet.items() if key not in DERIVED + POSITIONAL}
+    for key in LINKS:
+        content[key] = [link["path"] for link in packet.get(key, [])]
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
+
+
+def known(row: dict) -> tuple:
+    """The hashes that count as unchanged since the row's audit."""
+    # Once a fix is written and settled, the judged text it replaced counts as a change if it comes back.
+    if row.get("applied") and "fixed_sha256" in row:
+        return (row["fixed_sha256"],)
+    return row["packet_sha256"], row.get("fixed_sha256")
 
 
 def main() -> None:
@@ -52,7 +66,7 @@ def main() -> None:
         row = latest.get(packet["article_id"])
         if row is None:
             fresh.append(packet)
-        elif row["packet_sha256"] != digest(packet):
+        elif digest(packet) not in known(row):
             flagged = any(flag not in NOT_DOCSTRING_LINT for flag in packet["lint"])
             unwritten = row.get("fix_kind") == "docstring" and not row.get("applied")
             (open_problem if flagged or unwritten else changed).append(packet)

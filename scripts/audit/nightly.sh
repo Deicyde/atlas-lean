@@ -85,12 +85,22 @@ if [ -s "$RUN/selected.jsonl" ]; then
   fi
   "$PYTHON" -c 'import json, sys; sys.exit(0 if json.load(open(sys.argv[1])) else "every audit batch failed")' \
     "$RUN/out/results.json"
+  # settle_ledger.py below settles only the ledger lines appended from here on.
+  ledger_lines=$(wc -l < scripts/audit/ledger.jsonl)
   "$PYTHON" scripts/audit/apply_fixes.py . "$RUN/selected.jsonl" "$RUN/out/results.json" scripts/audit/ledger.jsonl "$STAMP"
 elif [ "$(unpushed)" = 0 ]; then
   echo "nothing to audit"
   exit 0
 fi
 gates
+if [ -s "$RUN/selected.jsonl" ]; then
+  # The hash of each audited article after its fix, so the fix itself is not taken for a change.
+  # Bookkeeping after the gates passed: a failure only means the next run audits the articles this run fixed again.
+  "$PYTHON" scripts/audit/lint_articles.py blueprint/roadmap --json "$RUN/lint-fixed.jsonl" > "$RUN/lint-fixed.log" &&
+    "$PYTHON" scripts/audit/build_packets.py . "$RUN/lint-fixed.jsonl" "$RUN/packets-fixed.jsonl" > "$RUN/packets-fixed.log" &&
+    "$PYTHON" scripts/audit/settle_ledger.py "$RUN/packets-fixed.jsonl" scripts/audit/ledger.jsonl "$ledger_lines" ||
+    echo "settling the ledger failed; the next run audits the articles this run fixed again" >&2
+fi
 
 git add -A blueprint MathlibExt CSLibExt WantedExt scripts/audit/ledger.jsonl
 if ! git diff --cached --quiet; then
