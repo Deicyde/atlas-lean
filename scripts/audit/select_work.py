@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -30,13 +31,18 @@ POSITIONAL = ("lean_line", "docstring_lines", "docstring_insert_line")
 NOT_DOCSTRING_LINT = ("edge-missing",)
 # A linked article's title changes whenever that article is fixed; only the link itself counts.
 LINKS = ("depends_on", "proof_depends_on")
+# Pages move between part-NN folders whenever their directory gains or loses pages.
+PAGINATION = re.compile(r"/part-\d+(?=/)")
 
 
 def digest(packet: dict) -> str:
-    """Hash of what the audit judged; a lint change, a shifted line or a retitled link re-audits nothing."""
+    """Hash of what the audit judged; a lint change, a shifted line, a retitled link or a page
+    moved between part-NN folders re-audits nothing."""
     content = {key: value for key, value in packet.items() if key not in DERIVED + POSITIONAL}
+    if "article" in packet:
+        content["article"] = PAGINATION.sub("", packet["article"])
     for key in LINKS:
-        content[key] = [link["path"] for link in packet.get(key, [])]
+        content[key] = [PAGINATION.sub("", link["path"]) for link in packet.get(key, [])]
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
