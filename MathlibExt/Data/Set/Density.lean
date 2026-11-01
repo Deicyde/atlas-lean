@@ -185,7 +185,7 @@ open Set
 **Natural density of the even numbers.** The set of even natural numbers has natural
 density $1/2$.
 -/
-theorem hasDensity_even : {n : ℕ | Even n}.HasDensity (1 / 2) := by
+theorem hasDensity_even' : {n : ℕ | Even n}.HasDensity (1 / 2) := by
   simp only [HasDensity, partialDensity, inter_univ, univ_inter, ncard_Iio_nat, one_div]
   have h {n : ℕ} (hn : 1 ≤ n) : (({n : ℕ | Even n} ∩ Iio n).ncard : ℝ) / n =
       if Even n then 2⁻¹ else (n + 1 : ℝ) /  n * 2⁻¹ := by
