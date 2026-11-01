@@ -46,10 +46,12 @@ concurrency:
 jobs:
   # The site builds with the Autoform commit in .github/autoform-ref. The daily
   # run, or a run started with "newest", tries autoform-bot's newest main commit
-  # instead, and the pin job records it once the site builds. A commit that
-  # fails leaves the pin and the published site as they were. GitHub schedules
-  # runs only on the default branch, so the daily run needs this branch to be
-  # the fork's default; until then, start the workflow with "newest".
+  # instead. Once the site builds with it and is published, the pin job commits
+  # the new pin, with any pages the generator writes differently under it. A
+  # commit that fails leaves the pin and the published site as they were.
+  # Reverting a pin commit doesn't hold the wiki back, since the next run tries
+  # the same commit again; disable this workflow to hold it. GitHub schedules
+  # runs only on the default branch, which this branch is.
   pick:
     runs-on: ubuntu-latest
     outputs:
@@ -102,9 +104,35 @@ jobs:
       # The roadmap is generated from the v2 library sources;
       # fail if the committed pages differ from what the generator writes.
       - name: Check the generated pages
+        if: needs.pick.outputs.new != 'true'
         run: >-
           uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
           python scripts/generate_wiki.py --check
+
+      # The generator reads the Lean sources through Autoform's index, so a newer
+      # Autoform may write some pages differently. A run trying one builds from
+      # the pages it writes, and hands them with the new pin to the pin job as a
+      # patch. A page it would delete stops the run for a person to look at.
+      - name: Regenerate the pages with the newer Autoform
+        if: needs.pick.outputs.new == 'true'
+        run: |
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}" python scripts/generate_wiki.py
+          echo "$AUTOFORM_REF" > .github/autoform-ref
+          git add -A blueprint .github/autoform-ref
+          if git diff --cached --no-renames --name-only --diff-filter=D -- blueprint | grep .; then
+            echo "::error::Autoform ${AUTOFORM_REF:0:8} would delete the pages listed above."
+            exit 1
+          fi
+          git diff --cached --binary > "$RUNNER_TEMP/pin.patch"
+
+      - name: Keep the new pin and pages for the pin job
+        if: needs.pick.outputs.new == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: pin
+          path: ${{ runner.temp }}/pin.patch
+          if-no-files-found: error
+          retention-days: 1
 
       # Rejects cycles and dangling links, and fails when a node names a Lean
       # declaration that is not in the sources.
@@ -152,7 +180,7 @@ jobs:
           path: site
 
   pin:
-    needs: [pick, build]
+    needs: [pick, build, deploy]
     if: needs.pick.outputs.new == 'true' && github.ref == 'refs/heads/wiki/autoform-blueprint'
     runs-on: ubuntu-latest
     permissions:
@@ -161,8 +189,18 @@ jobs:
       - name: Check out project
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      # A push made with this token starts no workflow, so this commit does not
-      # rebuild the site it records.
+      - name: Fetch the new pin and pages
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: pin
+          path: ${{ runner.temp }}/pin
+
+      # No Lean or Python package code runs in the job that holds the write
+      # token: the build wrote the commit's content, and this step only checks
+      # that it changes nothing but pages and the pin and deletes no page. If
+      # the branch has moved since the run started, the push fails and the next
+      # daily or "newest" run tries again. A push made with this token starts no
+      # workflow, so this commit does not rebuild the site it records.
       - name: Pin the Autoform commit the site was built with
         env:
           REF: ${{ needs.pick.outputs.ref }}
@@ -171,9 +209,18 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
+          git apply --index "$RUNNER_TEMP/pin/pin.patch"
           echo "$REF" > .github/autoform-ref
-          git commit --quiet -m "Build the site with Autoform ${REF:0:8}" .github/autoform-ref
-          git pull --quiet --rebase origin wiki/autoform-blueprint
+          git add .github/autoform-ref
+          if git diff --cached --no-renames --name-only | grep -v -e '^blueprint/' -e '^\.github/autoform-ref$'; then
+            echo "::error::The build's patch changes the files listed above."
+            exit 1
+          fi
+          if git diff --cached --no-renames --name-only --diff-filter=D -- blueprint | grep .; then
+            echo "::error::The build's patch deletes the pages listed above."
+            exit 1
+          fi
+          git commit --quiet -m "Build the site with Autoform ${REF:0:8}"
           git push --quiet origin HEAD:wiki/autoform-blueprint
 
   deploy:

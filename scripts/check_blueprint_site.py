@@ -128,9 +128,11 @@ def main() -> int:
                 issues.append(f"{page.relative_to(site)}: {href!r} escapes the published site to {shown}")
             elif not target.is_file():
                 issues.append(f"{page.relative_to(site)}: {href!r} targets missing {shown}")
+            # The explorer reads its state from the fragment, as in node=... or
+            # view=list&status=..., so only a fragment without "=" names an element.
             elif (
                 fragment
-                and not fragment.startswith("node=")
+                and "=" not in fragment
                 and target.suffix.casefold() == ".html"
                 and fragment not in ids(target)
             ):
@@ -158,7 +160,7 @@ def main() -> int:
                 issues.append(f"{payload.relative_to(site)}: {href!r} targets missing {shown}")
             elif (
                 fragment
-                and not fragment.startswith("node=")
+                and "=" not in fragment
                 and target.suffix.casefold() == ".html"
                 and fragment not in ids(target)
             ):
