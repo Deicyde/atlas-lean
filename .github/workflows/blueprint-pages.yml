@@ -4,26 +4,32 @@ on:
   push:
     # wiki/** branches deploy a preview from a fork; see the deploy job.
     branches: [main, "wiki/**"]
+    # Everything the build reads. generate_wiki.py and Autoform index every
+    # Lean file outside the archived v1, wherever it lives, so a change to any
+    # of them can leave the wiki out of step with the Lean.
     paths:
+      - "**/*.lean"
       - "blueprint/**"
-      - "MathlibExt/**"
-      - "CSLibExt/**"
-      - "WantedExt/**"
-      - "scripts/generate_wiki.py"
+      - "scripts/**"
       - "mkdocs.yml"
       - "theme/**"
       - "hooks/**"
       - ".github/autoform-ref"
       - ".github/workflows/blueprint-pages.yml"
+      - "!v1/**"
+  # The same paths, so a pull request that changes the Lean is checked against
+  # the wiki before it merges.
   pull_request:
     paths:
+      - "**/*.lean"
       - "blueprint/**"
-      - "scripts/generate_wiki.py"
+      - "scripts/**"
       - "mkdocs.yml"
       - "theme/**"
       - "hooks/**"
       - ".github/autoform-ref"
       - ".github/workflows/blueprint-pages.yml"
+      - "!v1/**"
   workflow_dispatch:
     inputs:
       newest:
@@ -39,9 +45,12 @@ permissions:
 env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
 
+# Runs that publish queue one behind another, so deploys and pins land in
+# order. Each pull request gets a group of its own, where a newer push replaces
+# its run, so pull requests don't cancel each other's checks or a waiting deploy.
 concurrency:
-  group: blueprint-pages
-  cancel-in-progress: false
+  group: blueprint-pages-${{ github.event_name == 'pull_request' && github.ref || 'publish' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   # The site builds with the Autoform commit in .github/autoform-ref. The daily
@@ -105,9 +114,11 @@ jobs:
       # fail if the committed pages differ from what the generator writes.
       - name: Check the generated pages
         if: needs.pick.outputs.new != 'true'
-        run: >-
-          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          python scripts/generate_wiki.py --check
+        run: |
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}" python scripts/generate_wiki.py --check || {
+            echo "::error::The pages above differ from what scripts/generate_wiki.py writes. Regenerate them with: uv run --no-project --with git+${AUTOFORM_SOURCE}@${AUTOFORM_REF} python scripts/generate_wiki.py"
+            exit 1
+          }
 
       # The generator reads the Lean sources through Autoform's index, so a newer
       # Autoform may write some pages differently. A run trying one builds from
