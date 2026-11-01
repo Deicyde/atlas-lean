@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Set.Nat.infinite_of_hasDensity_pos
+lean: Nat.infinite_of_hasDensity_pos
 ---
 
 # Sets of nonzero natural density are infinite

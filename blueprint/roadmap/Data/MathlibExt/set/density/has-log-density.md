@@ -3,7 +3,7 @@ article_id: af_33db0aa44a3340a4c0845fd5
 declaration: def
 origin: cited
 statement: formalized
-lean: Set.Set.HasLogDensity
+lean: Set.HasLogDensity
 ---
 
 # Logarithmic density

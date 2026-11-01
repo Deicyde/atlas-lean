@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Set.Nat.hasDensity_even
+lean: Nat.hasDensity_even
 ---
 
 # Natural density of the even numbers

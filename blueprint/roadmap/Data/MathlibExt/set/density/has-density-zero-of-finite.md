@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Set.Nat.hasDensity_zero_of_finite
+lean: Nat.hasDensity_zero_of_finite
 ---
 
 # Finite sets have natural density zero
