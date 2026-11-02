@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pih_m
 ---
 
 # Mean of a p-biased two-valued function

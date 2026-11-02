@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.edgeBoundary
 ---
 
 # Edge boundary of a set of sites
@@ -10,7 +12,11 @@ endpoint in `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](hypercubic-lattice.md)
 
 ## Sources
 

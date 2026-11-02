@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.BirkhoffAE.fStar_comp
 ---
 
 # Upper limit of Birkhoff averages is invariant
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper limit of Birkhoff averages](f-star.md)
 
 ## Sources
 

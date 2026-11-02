@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.candFinset
 ---
 
 # Nearest neighbours of a lattice site
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Neighbour of a site in a coordinate direction](cand-map.md)
 
 ## Sources
 

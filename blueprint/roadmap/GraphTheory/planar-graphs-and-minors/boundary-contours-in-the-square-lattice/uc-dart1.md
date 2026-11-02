@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ucDart1
 ---
 
 # Downward boundary dart of the unit cell
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](dart.md)
+
+## Proof depends on
+
+- [Dart from a site in a unit direction](mk-dart.md)
+- [$\ell^1$ norm of a vector in $\mathbb{Z}^2$](unit-wt.md)
 
 ## Sources
 

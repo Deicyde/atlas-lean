@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerMaximalMaps
 ---
 
 # Maximal Loewner maps
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Maximal Loewner trajectory](loewner-maximal-curve.md)
 
 ## Sources
 

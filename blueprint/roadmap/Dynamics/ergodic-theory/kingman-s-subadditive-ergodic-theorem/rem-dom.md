@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanAE.remDom
 ---
 
 # Dominating function for remainder terms in Kingman's theorem

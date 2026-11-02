@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pcx_g
 ---
 
 # Convex auxiliary function for the p-biased inequality

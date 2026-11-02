@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.phi
 ---
 
 # Duminil-Copin–Tassion quantity
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Oriented edge boundary of a finite lattice set](boundary-edges.md)
+- [Probability of connection inside a set](conn-within-prob.md)
 
 ## Sources
 

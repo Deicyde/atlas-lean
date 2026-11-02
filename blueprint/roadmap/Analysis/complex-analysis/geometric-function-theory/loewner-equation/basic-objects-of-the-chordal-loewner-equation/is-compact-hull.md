@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.SLE.IsCompactHull
 ---
 
 # Compact hull in the upper half-plane

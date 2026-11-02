@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jwc_cyclePath
 ---
 
 # Spanning subgraph formed by a path

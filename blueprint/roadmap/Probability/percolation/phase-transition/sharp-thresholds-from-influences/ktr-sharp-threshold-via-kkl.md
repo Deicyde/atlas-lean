@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.TwoDim.ktr_sharpThreshold_via_kkl
 ---
 
 # Sharp threshold from a KKL-type influence inequality
@@ -11,7 +14,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Influence of an edge on an event](influence.md)
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../../../correlation-inequalities/harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Bernoulli weight of an event](../../../correlation-inequalities/harris-fkg-bk/russo-s-formula-and-pivotal-coordinates/prob.md)
+
+## Proof depends on
+
+- [Sharp threshold from influences](sth-sharp-threshold.md)
 
 ## Sources
 

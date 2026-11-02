@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.closedUpperHalfPlane
 ---
 
 # Closed upper half-plane

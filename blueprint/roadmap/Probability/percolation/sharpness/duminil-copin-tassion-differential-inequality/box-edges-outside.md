@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.boxEdgesOutside
 ---
 
 # Pairs of box sites outside a given set
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Pairs of sites of a lattice box](box-edge-finset.md)
+- [Pairs of sites of a finite set](edges-within-finset.md)
 
 ## Sources
 

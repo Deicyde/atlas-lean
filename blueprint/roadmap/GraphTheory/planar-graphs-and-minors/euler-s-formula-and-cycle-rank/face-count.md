@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.faceCount
 ---
 
 # Face count of a finite graph from its cycle rank
@@ -12,6 +14,10 @@ ones); as a definition it is purely combinatorial.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Cycle rank of a finite graph](nullity.md)
 
 ## Sources
 

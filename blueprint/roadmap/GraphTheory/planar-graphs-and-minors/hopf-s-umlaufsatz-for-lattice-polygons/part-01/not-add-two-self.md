@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.EdgeUnique.not_add_two_self
 ---
 
 # $k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$

@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_V
 ---
 
 # Sites of the square-lattice torus

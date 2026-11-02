@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.SingleTopRunProof.singleTopRun_of_runCoversTop
 ---
 
 # A west run covering the top row is a single top run
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Single west run covering the top row](single-top-run.md)
 
 ## Sources
 

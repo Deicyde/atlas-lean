@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jgc_pend_G
 ---
 
 # 4-cycle with a pendant edge
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Adjacency relation of a 4-cycle with a pendant edge](jgc-pend-rel.md)
 
 ## Sources
 

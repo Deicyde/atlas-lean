@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pih_V
 ---
 
 # Variance term in the p-biased inequality

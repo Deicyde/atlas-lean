@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.whc_Htest
 ---
 
 # Unit square with its bottom edge removed
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Image of a planar lattice subgraph in the square lattice](../discrete-jordan-curve-theorem-for-the-square-lat/image-graph.md)
+- [Unit square as a planar lattice subgraph](../discrete-jordan-curve-theorem-for-the-square-lat/jbc-pce.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: StatMech.agreeOn_iff_eqOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Agreement of configurations on a set](agree-on.md)
 
 ## Sources
 

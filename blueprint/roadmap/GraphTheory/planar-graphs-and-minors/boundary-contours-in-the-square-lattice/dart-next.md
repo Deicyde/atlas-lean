@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.dartNext
 ---
 
 # Successor of a boundary dart
@@ -12,7 +14,16 @@ of `K`) it starts at `e.tail` in direction `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](dart.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Direction of a lattice dart](dir.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Dart from a site in a unit direction](mk-dart.md)
+- [Quarter-turn rotation of the square lattice](../self-duality-of-the-square-lattice/rot90-fun.md)
+- [$\ell^1$ norm of a vector in $\mathbb{Z}^2$](unit-wt.md)
 
 ## Sources
 

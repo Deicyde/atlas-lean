@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.cyclomaticNumber
 ---
 
 # Cyclomatic number $|E| + 1 - |V|$ of a finite graph

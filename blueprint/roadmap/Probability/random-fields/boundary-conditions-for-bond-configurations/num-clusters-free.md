@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.numClustersFree
 ---
 
 # Number of open clusters with free boundary conditions
@@ -11,6 +13,10 @@ conditions.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Open subgraph of a bond configuration](open-graph.md)
 
 ## Sources
 

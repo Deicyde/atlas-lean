@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ccs_OrbitIsLoop
 ---
 
 # Set of sites is the inside of a closed lattice walk
@@ -10,7 +12,12 @@ of that walk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Ray-crossing count of a walk](jec-ray-count.md)
 
 ## Sources
 

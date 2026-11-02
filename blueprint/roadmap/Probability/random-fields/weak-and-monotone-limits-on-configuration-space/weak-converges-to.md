@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.WeakConvergesTo
 ---
 
 # Weak convergence of probability measures on configuration space
@@ -11,7 +13,7 @@ bounded continuous functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

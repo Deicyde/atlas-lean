@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.SLE.LoewnerForwardSolution
 ---
 
 # Forward solution of the Loewner equation

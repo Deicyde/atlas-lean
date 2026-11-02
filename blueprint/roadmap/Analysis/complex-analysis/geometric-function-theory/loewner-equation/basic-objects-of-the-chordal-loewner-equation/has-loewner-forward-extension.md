@@ -14,6 +14,10 @@ maximal-lifetime condition used to determine the unswallowed domain.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chordal Loewner vector field](loewner-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Loewner.Defs](../../../../../../sources/v2/MathlibExt.md)

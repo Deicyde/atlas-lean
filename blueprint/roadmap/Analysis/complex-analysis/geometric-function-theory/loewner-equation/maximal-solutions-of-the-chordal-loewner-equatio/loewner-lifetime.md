@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerLifetime
 ---
 
 # Lifetime of a point under the Loewner flow
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Admissible duration for the Loewner equation](is-loewner-admissible-duration.md)
 
 ## Sources
 

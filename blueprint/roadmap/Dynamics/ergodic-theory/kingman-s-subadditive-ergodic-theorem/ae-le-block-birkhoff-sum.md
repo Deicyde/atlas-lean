@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanAE.ae_le_block_birkhoffSum
 ---
 
 # Block decomposition bound for a subadditive cocycle
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+
+## Proof depends on
+
+- [Cocycle inequality holds for all indices almost everywhere](ae-all-subadditive.md)
 
 ## Sources
 

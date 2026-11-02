@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.vtp_hypercontractivity
 ---
 
 # Bonami–Beckner hypercontractive inequality
@@ -10,7 +13,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noise operator on the Boolean cube](../tensorization-of-two-point-hypercontractivity-on/bnt-noise-op.md)
+- [$L^q$ norm under the uniform measure on the cube](../tensorization-of-two-point-hypercontractivity-on/bnt-qnorm.md)
+
+## Proof depends on
+
+- [Hypercontractivity from the vector two-point inequality](../tensorization-of-two-point-hypercontractivity-on/bnt-hypercontractivity.md)
+- [Vector two-point inequality for nonnegative noise](vtp-vector-two-point.md)
 
 ## Sources
 

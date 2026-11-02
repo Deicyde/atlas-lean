@@ -13,11 +13,13 @@ lean: StatMech.Probability.bnt_noiseOp_eq_boolNoiseOp
 ## Depends on
 
 - [Noise operator on the Boolean cube](../../../../Analysis/harmonic-analysis/discrete-fourier-analysis/influences-and-the-noise-operator-on-the-boolean/bool-noise-op.md)
+- [Noise operator on the Boolean cube](bnt-noise-op.md)
 
 ## Proof depends on
 
 - [Boolean cube](../../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-analysis-on-the-boolean-cube/bool-cube.md)
 - [Sign of a Boolean coordinate](../../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-analysis-on-the-boolean-cube/cube-val.md)
+- [Noise kernel on the Boolean cube](bnt-noise-kernel.md)
 
 ## Sources
 

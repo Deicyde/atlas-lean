@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.EdgeUnique.midSet_endpoints
 ---
 
 # Steps on a horizontal unit segment join its endpoints
@@ -9,7 +12,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](pos.md)
+- [Unit lattice step in a given direction](step-of.md)
+- [Horizontal steps on a unit segment](../part-05/mid-set.md)
+
+## Proof depends on
+
+- [Recursion for the x-coordinate of a walk step](../part-10/fst-step.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
+- [Recursion for the y-coordinate of a walk step](../part-10/snd-step.md)
 
 ## Sources
 

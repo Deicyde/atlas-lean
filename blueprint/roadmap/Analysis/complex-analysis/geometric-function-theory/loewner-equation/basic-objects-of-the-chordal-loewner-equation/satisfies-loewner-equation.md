@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.SatisfiesLoewnerEquation
 ---
 
 # Loewner equation without domain restriction
@@ -12,6 +14,10 @@ unswallowed domain `D_t`).
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Solution of the Loewner equation at a time](is-loewner-solution-at.md)
 
 ## Sources
 

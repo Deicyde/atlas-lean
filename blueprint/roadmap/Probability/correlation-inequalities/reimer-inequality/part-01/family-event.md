@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.familyEvent
 ---
 
 # Event of a family of finsets
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Support of a configuration as a finset](../part-02/down-compression-and-disjoint-pairs/cfg-support.md)
 
 ## Sources
 

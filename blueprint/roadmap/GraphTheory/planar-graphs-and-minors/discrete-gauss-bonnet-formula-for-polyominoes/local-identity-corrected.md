@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnet.localIdentity_corrected
 ---
 
 # Local cell Gauss–Bonnet identity
@@ -11,7 +14,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local change of the corner defect](lhs-local.md)
+- [Corrected right side of the local Gauss–Bonnet identity](rhs-corrected.md)
 
 ## Sources
 

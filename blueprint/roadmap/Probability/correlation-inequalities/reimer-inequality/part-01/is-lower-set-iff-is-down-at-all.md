@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.isLowerSet_iff_isDownAt_all
 ---
 
 # Lower sets are families closed under erasing an element
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Family closed under erasing a coordinate](../part-02/down-compression-and-disjoint-pairs/is-down-at-coord.md)
 
 ## Sources
 

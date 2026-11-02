@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.pcx_KEY_pos
 ---
 
 # Pointwise bound for the p-biased inequality holds
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pointwise bound behind the p-biased inequality](../the-one-variable-p-biased-inequality-from-a-poin/pih-key.md)
+
+## Proof depends on
+
+- [Convex auxiliary function for the p-biased inequality](pcx-g.md)
+- [Variance term in the p-biased inequality](../the-one-variable-p-biased-inequality-from-a-poin/pih-v.md)
+- [Mean of a p-biased two-valued function](../the-one-variable-p-biased-inequality-from-a-poin/pih-m.md)
 
 ## Sources
 

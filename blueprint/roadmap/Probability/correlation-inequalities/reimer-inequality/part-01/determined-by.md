@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.DeterminedBy
 ---
 
 # Event determined by a set of coordinates
@@ -10,7 +12,11 @@ This is definitionally `StatMech.DependsOn A K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](../../harris-fkg-bk/van-den-berg-kesten-inequality/agree-on.md)
 
 ## Sources
 

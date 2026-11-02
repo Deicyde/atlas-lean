@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellEulerFaithful.card_cellSkeleton_vertices
 ---
 
 # Vertex count of the skeleton
@@ -9,7 +12,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](../../discrete-gauss-bonnet-formula-for-polyominoes/cell.md)
+- [Lattice point as a vertex of the cell complex](../../discrete-gauss-bonnet-formula-for-polyominoes/vtx.md)
+- [Vertices of a union of unit cells](../../discrete-gauss-bonnet-formula-for-polyominoes/reg-verts.md)
 
 ## Sources
 

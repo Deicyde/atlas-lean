@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.ReimerWprobCore
 ---
 
 # Reimer's inequality
@@ -13,6 +15,12 @@ This is a proposition; it is not proved in this library.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Disjoint occurrence of events](../../harris-fkg-bk/van-den-berg-kesten-inequality/disjoint-occurrence.md)
+- [Weighted probability of an event](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.rsf_facialOrbit
 ---
 
 # Facial orbit of a boundary dart
@@ -10,7 +12,10 @@ boundary darts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](../boundary-contours-in-the-square-lattice/dart.md)
+- [Boundary dart of a set of sites](../boundary-contours-in-the-square-lattice/is-boundary-dart.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Successor graph on boundary darts](../boundary-contours-in-the-square-lattice/dart-succ-graph.md)
 
 ## Sources
 

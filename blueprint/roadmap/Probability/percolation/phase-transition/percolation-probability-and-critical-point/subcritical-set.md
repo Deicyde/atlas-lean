@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.subcriticalSet
 ---
 
 # Set of densities with no percolation
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Percolation probability of bond percolation](theta.md)
 
 ## Sources
 

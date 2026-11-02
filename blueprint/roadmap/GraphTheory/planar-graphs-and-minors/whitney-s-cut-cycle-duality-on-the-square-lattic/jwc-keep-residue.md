@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jwc_KeepResidue
 ---
 
 # Whitney duality in the bridge direction
@@ -11,7 +13,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar lattice subgraph of the square lattice](../discrete-jordan-curve-theorem-for-the-square-lat/planar-z2-subgraph.md)
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Pushforward of a subgraph into the square lattice](../discrete-jordan-curve-theorem-for-the-square-lat/jei-push-graph.md)
+- [Primal edge shared by adjacent faces](../discrete-jordan-curve-theorem-for-the-square-lat/shared-primal-edge.md)
+- [Face-region graph of a square-lattice subgraph](whb-face-region.md)
 
 ## Sources
 

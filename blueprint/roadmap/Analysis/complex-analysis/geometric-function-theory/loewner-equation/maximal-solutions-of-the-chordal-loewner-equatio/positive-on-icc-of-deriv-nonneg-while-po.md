@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.positiveOn_Icc_of_deriv_nonneg_while_pos
 ---
 
 # Positivity persists under a nonnegative derivative

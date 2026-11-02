@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.hasDerivAt_edgeWeight
 ---
 
 # Derivative of a single coordinate weight
@@ -10,7 +13,8 @@ otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli weight of a single coordinate](edge-weight.md)
 
 ## Sources
 

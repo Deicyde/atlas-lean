@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pbt_lhs
 ---
 
 # Left side of the p-biased two-point inequality

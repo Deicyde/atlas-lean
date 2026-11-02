@@ -12,7 +12,9 @@ lean: StatMech.configWeight_eq_pweight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product weight of a configuration](config-weight.md)
+- [Product weight of a configuration](../van-den-berg-kesten-inequality/pweight.md)
 
 ## Sources
 

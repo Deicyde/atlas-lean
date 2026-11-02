@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanFilling.eq_of_le_toReal_eq
 ---
 
 # Ordered extended reals with equal real parts are equal

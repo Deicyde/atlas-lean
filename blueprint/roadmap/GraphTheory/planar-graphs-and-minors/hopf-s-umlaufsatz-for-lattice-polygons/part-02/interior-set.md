@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.InteriorCells.interiorSet
 ---
 
 # Interior cells by the even-odd rule
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Ray-crossing parity of a lattice cell](../part-03/ray-parity.md)
 
 ## Sources
 

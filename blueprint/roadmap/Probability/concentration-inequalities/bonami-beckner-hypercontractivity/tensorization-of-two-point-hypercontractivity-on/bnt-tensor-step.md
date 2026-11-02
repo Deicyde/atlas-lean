@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.bnt_TensorStep
 ---
 
 # Induction step of hypercontractivity tensorization
@@ -11,6 +13,11 @@ same in dimension `n + 1`.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Noise operator on the Boolean cube](bnt-noise-op.md)
+- [$L^q$ norm under the uniform measure on the cube](bnt-qnorm.md)
 
 ## Sources
 

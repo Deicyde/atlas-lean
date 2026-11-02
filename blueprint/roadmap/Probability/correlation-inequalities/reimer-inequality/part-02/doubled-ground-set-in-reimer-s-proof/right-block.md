@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.rightBlock
 ---
 
 # Right copy in the doubled ground set

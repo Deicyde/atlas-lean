@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect2.card_sdiff_eq_sum
 ---
 
 # Cardinality of a set difference as a sum of indicators

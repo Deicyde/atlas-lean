@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.IsLoewnerAdmissibleDuration
 ---
 
 # Admissible duration for the Loewner equation
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Forward solution of the Loewner equation](loewner-forward-solution.md)
 
 ## Sources
 

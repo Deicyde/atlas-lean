@@ -15,6 +15,9 @@ every `α > 0` there is `c > 0` with
 ## Depends on
 
 - [Critical bond percolation measure on the square lattice](critical-bond-measure.md)
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Left–right crossing event of a box with given aspect ratio](../rectangles-crossings-annuli-and-the-box-crossing/box-crossing-event.md)
 
 ## Sources
 

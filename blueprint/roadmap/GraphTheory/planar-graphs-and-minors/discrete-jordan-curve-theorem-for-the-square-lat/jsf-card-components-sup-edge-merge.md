@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.jsf_card_components_sup_edge_merge
 ---
 
 # Adding an edge between two components merges them
@@ -12,6 +15,10 @@ vertex types.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Removing one element lowers cardinality by one](../euler-s-formula-and-cycle-rank/card-subtype-ne-add-one.md)
 
 ## Sources
 

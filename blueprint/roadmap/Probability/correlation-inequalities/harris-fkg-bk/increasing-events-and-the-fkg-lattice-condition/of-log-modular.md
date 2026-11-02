@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.FKGLatticeCondition.of_logModular
 ---
 
 # Log-modular weights satisfy the FKG lattice condition
@@ -10,7 +13,8 @@ condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [FKG lattice condition](fkglattice-condition.md)
 
 ## Sources
 

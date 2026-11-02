@@ -12,7 +12,7 @@ lean: StatMech.Probability.bnt_uexp_eq_expect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform expectation on the Boolean cube](bnt-uexp.md)
 
 ## Sources
 

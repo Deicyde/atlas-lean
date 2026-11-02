@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnetGlobal.pinch_diff_TL
 ---
 
 # Change of the pinch indicator at the top-left corner of a new cell
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pinch point indicator](pinch-w.md)
+
+## Proof depends on
+
+- [Pinch point of a set of unit cells](pinch-at.md)
 
 ## Sources
 

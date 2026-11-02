@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_dartRev
 ---
 
 # Reverse of a dart
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Darts of the square-lattice torus](../part-04/ons-dart.md)
+
+## Proof depends on
+
+- [Neighbouring site in a given direction on the torus](../part-04/ons-dir-step.md)
 
 ## Sources
 

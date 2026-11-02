@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.IsOpen
 ---
 
 # Open edge in a bond configuration

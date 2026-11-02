@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jic_twoSq_rel
 ---
 
 # Adjacency relation of two disjoint 4-cycles

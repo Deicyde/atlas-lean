@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.InteriorCells.interiorCells
 ---
 
 # Finite set of interior cells of a closed walk
@@ -11,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Interior cells by the even-odd rule](interior-set.md)
+- [Finiteness of the interior of a closed walk](interior-set-finite.md)
 
 ## Sources
 

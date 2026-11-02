@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.rbyCexA
 ---
 
 # First family in the weighted-pair counterexamples

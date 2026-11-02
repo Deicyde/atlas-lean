@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.BirkhoffAE.tendsto_birkhoffAverage_condExp_ae
 ---
 
 # Birkhoff's pointwise ergodic theorem
@@ -14,6 +17,12 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Birkhoff limit of a function](birkhoff-limit.md)
+- [Birkhoff limit is a conditional expectation on invariant sets](birkhoff-limit-ae-eq-cond-exp.md)
+- [Tendsto birkhoff Average ae](tendsto-birkhoff-average-ae.md)
 
 ## Sources
 

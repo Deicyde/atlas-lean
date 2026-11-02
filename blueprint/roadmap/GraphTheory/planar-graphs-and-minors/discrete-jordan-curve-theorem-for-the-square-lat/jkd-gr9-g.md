@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jkd_gr9G
 ---
 
 # The 3 by 3 grid graph
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Adjacency relation of the 3 by 3 grid](jkd-gr9rel.md)
 
 ## Sources
 

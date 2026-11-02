@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jic_tc
 ---
 
 # Number of face regions of a subgraph's image
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar lattice subgraph of the square lattice](planar-z2-subgraph.md)
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Pushforward of a subgraph into the square lattice](jei-push-graph.md)
+- [Face-region graph of a square-lattice subgraph](../whitney-s-cut-cycle-duality-on-the-square-lattic/whb-face-region.md)
 
 ## Sources
 

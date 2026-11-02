@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.boxCrossingProbabilities
 ---
 
 # Set of long-direction box-crossing probabilities
@@ -10,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Left–right crossing event of a translated rectangle](translated-horizontal-crossing-event.md)
+- [Bottom–top crossing event of a translated rectangle](translated-vertical-crossing-event.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ih_indicator_dependsOn_of_event
 ---
 
 # Indicator of an event depends on the coordinates the event depends on
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Event depending only on a set of coordinates](../../reimer-inequality/part-02/down-compression-and-disjoint-pairs/depends-on.md)
 
 ## Sources
 

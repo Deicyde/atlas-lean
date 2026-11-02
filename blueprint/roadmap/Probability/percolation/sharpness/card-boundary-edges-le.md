@@ -12,7 +12,13 @@ lean: StatMech.Percolation.card_boundaryEdges_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Oriented edge boundary of a finite lattice set](boundary-edges.md)
+
+## Proof depends on
+
+- [Shift of a lattice site in one coordinate](coord-shift.md)
+- [Sign of a unit lattice step](step-sign.md)
 
 ## Sources
 

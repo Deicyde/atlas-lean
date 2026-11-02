@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.gamma
 ---
 
 # Time constant of a subadditive cocycle
@@ -10,7 +12,12 @@ meaningful when `expSeq n / n` is bounded below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+
+## Proof depends on
+
+- [Expectation sequence of a cocycle](exp-seq.md)
+- [Expectations of a subadditive cocycle form a subadditive sequence](subadditive-exp-seq.md)
 
 ## Sources
 

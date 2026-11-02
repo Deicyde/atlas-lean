@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.NoDoubleWind2.scount
 ---
 
 # Number of straight continuations in a given direction

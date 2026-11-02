@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.dpairsCount_downDown_mono
 ---
 
 # Down-compression does not decrease the disjoint-pair count
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of disjoint pairs from two families](dpairs-count.md)
+
+## Proof depends on
+
+- [Recursion for disjoint pairs by membership of a coordinate](dpairs-count-fiber-recursion.md)
 
 ## Sources
 

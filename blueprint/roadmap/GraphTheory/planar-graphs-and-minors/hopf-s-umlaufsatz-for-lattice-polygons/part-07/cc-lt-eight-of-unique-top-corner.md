@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind2.cc_lt_eight_of_uniqueTopCorner
 ---
 
 # A unique top corner forces fewer than eight left turns
@@ -10,7 +13,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](../part-01/cc.md)
+
+## Proof depends on
+
+- [Eight left turns give two north-then-west corners](exists-two-top-corners.md)
 
 ## Sources
 

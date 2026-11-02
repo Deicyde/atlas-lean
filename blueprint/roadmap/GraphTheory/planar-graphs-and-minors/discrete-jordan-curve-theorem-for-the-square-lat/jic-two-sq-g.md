@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jic_twoSq_G
 ---
 
 # Two disjoint 4-cycles
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Adjacency relation of two disjoint 4-cycles](jic-two-sq-rel.md)
 
 ## Sources
 

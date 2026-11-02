@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.downLeft
 ---
 
 # Down-compression at the left copy of a coordinate

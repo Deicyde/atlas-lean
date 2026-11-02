@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.gamma_le_div
 ---
 
 # Time constant is a lower bound for normalized expectations
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Expectation sequence of a cocycle](exp-seq.md)
+- [Time constant of a subadditive cocycle](gamma.md)
+
+## Proof depends on
+
+- [Expectations of a subadditive cocycle form a subadditive sequence](subadditive-exp-seq.md)
 
 ## Sources
 

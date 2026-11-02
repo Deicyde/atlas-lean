@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellEuler.cornerCount_insert
 ---
 
 # Corner count after adding a cell
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner count of a lattice point](corner-count.md)
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

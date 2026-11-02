@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.BirkhoffAE.levelSet
 ---
 
 # Oscillation set of Birkhoff averages
@@ -11,6 +13,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Upper limit of Birkhoff averages](f-star.md)
+- [Lower limit of Birkhoff averages](f-star-low.md)
 
 ## Sources
 

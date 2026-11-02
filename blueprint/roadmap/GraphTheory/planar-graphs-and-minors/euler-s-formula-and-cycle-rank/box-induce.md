@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.boxInduce
 ---
 
 # Square lattice induced on the box $(-n, n)^2$
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Box $(-n, n)^d$ in the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/box.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
 
 ## Sources
 

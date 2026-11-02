@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.hasHalfPlaneCapacity_comp
 ---
 
 # Additivity of half-plane capacity under composition
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hydrodynamic normalization with half-plane capacity](../basic-objects-of-the-chordal-loewner-equation/has-half-plane-capacity.md)
 
 ## Sources
 

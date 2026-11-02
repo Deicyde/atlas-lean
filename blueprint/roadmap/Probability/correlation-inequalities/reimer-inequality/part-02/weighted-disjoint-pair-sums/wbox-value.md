@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.wboxValue
 ---
 
 # Box value of a doubled family under a symmetric weight

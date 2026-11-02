@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.OccursOn
 ---
 
 # Occurrence of an event on a coordinate set
@@ -10,7 +12,11 @@ configuration agreeing with `ω` on `K` lies in `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](agree-on.md)
 
 ## Sources
 

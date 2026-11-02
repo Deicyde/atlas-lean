@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_turnPow
 ---
 
 # Integer turn exponent between two directions

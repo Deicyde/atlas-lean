@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect.card_inter_eq_sum
 ---
 
 # Cardinality of an intersection as a sum of indicators

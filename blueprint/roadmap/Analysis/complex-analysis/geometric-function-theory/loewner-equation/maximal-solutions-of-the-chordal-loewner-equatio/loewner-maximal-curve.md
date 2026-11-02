@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerMaximalCurve
 ---
 
 # Maximal Loewner trajectory
@@ -11,6 +13,13 @@ it is `z` outside `[0, T_z)`.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Times before the Loewner lifetime](is-before-loewner-lifetime.md)
+- [Forward solution of the Loewner equation](loewner-forward-solution.md)
+- [Chosen admissible Loewner duration](selected-loewner-duration.md)
+- [Chosen Loewner forward solution](selected-loewner-solution.md)
 
 ## Sources
 

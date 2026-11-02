@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.linearODE_terminal_eq_initial_mul_exp_integral
 ---
 
 # The unswallowed domain is simply connected

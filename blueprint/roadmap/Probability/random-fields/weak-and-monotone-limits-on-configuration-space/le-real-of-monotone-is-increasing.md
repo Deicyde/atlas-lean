@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.WeakConvergesTo.le_real_of_monotone_isIncreasing
 ---
 
 # Weak limit of an increasing chain dominates its terms
@@ -10,7 +13,15 @@ probability any term of the chain gives it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../../correlation-inequalities/harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Stochastic domination of measures on configurations](../../correlation-inequalities/stochastic-domination/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/stochastically-dominated.md)
+- [Weak convergence of probability measures on configuration space](weak-converges-to.md)
+
+## Proof depends on
+
+- [Portmanteau theorem for clopen events](tendsto-real-of-is-clopen.md)
+- [Increasing-event probabilities along an increasing chain are monotone](monotone-real-of-chain.md)
 
 ## Sources
 

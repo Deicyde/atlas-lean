@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.fwt'
 ---
 
 # Product weight of a finset off one coordinate

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pbt_g
 ---
 
 # Left side of the one-variable p-biased inequality

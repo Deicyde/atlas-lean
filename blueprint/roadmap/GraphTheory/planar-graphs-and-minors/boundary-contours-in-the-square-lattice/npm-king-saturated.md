@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.npm_KingSaturated
 ---
 
 # King-saturated set
@@ -10,7 +12,14 @@ corners.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Lower left corner of a face $f$](npd-p00.md)
+- [Upper left corner of a face $f$](npd-p01.md)
+- [Lower right corner of a face $f$](npd-p10.md)
+- [Upper right corner of a face $f$](npd-p11.md)
 
 ## Sources
 

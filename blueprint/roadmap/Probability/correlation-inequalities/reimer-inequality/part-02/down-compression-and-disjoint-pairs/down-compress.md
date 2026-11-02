@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.downCompress
 ---
 
 # Down-compression of a family of configurations
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Support of a configuration as a finset](cfg-support.md)
+- [Configuration with a given support](support-cfg.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: StatMech.RSW.Box.measurableSet_connectedWithin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Connection by an open path within a set](../../../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Open subgraph of a bond configuration](../../../phase-transition/percolation-probability-and-critical-point/open-subgraph.md)
+- [Open subgraph induced on a set of sites](../../../phase-transition/percolation-probability-and-critical-point/open-subgraph-induce.md)
 
 ## Sources
 

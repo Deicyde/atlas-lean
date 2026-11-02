@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.ReimerInequalityWanted.reimer_wprob_core
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reimer's inequality](../part-01/reimer-wprob-core.md)
 
 ## Sources
 

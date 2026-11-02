@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.wsum
 ---
 
 # Expectation under Bernoulli product weights
@@ -10,7 +12,11 @@ edge set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Product weight of an edge configuration](w.md)
 
 ## Sources
 

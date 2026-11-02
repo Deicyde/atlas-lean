@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCellRegion.walkP
 ---
 
 # Simple closed walk as a planar subgraph
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar lattice subgraph of the square lattice](../../discrete-jordan-curve-theorem-for-the-square-lat/planar-z2-subgraph.md)
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Simple closed walk as an embedded cycle graph](../part-11/walk-subgraph.md)
 
 ## Sources
 

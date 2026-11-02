@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.SingleTopRunProof.top_arrival_west
 ---
 
 # A north step into a highest vertex is followed by a west step
@@ -10,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [No north step leaves a highest vertex](top-out-ne-n.md)
 
 ## Sources
 

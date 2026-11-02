@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jeb_induceLF
 ---
 
 # Induced subgraphs of locally finite graphs are locally finite

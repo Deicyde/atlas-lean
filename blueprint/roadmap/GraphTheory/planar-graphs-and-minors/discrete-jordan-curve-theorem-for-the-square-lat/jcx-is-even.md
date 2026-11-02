@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcx_IsEven
 ---
 
 # Even-degree condition on a subgraph

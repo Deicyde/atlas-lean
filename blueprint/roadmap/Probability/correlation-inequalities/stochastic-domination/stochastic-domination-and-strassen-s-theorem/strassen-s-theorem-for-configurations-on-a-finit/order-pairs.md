@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.Transport.OrderPairs
 ---
 
 # Ordered pairs of a partial order

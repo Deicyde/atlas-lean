@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcb_LcycRel
 ---
 
 # Adjacency relation of the 8-cycle

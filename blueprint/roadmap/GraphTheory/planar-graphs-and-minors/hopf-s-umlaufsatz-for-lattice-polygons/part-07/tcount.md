@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.NoDoubleWind2.tcount
 ---
 
 # Number of left turns out of a given direction

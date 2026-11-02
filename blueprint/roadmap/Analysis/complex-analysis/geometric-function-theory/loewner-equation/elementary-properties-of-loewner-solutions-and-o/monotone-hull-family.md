@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.MonotoneHullFamily
 ---
 
 # Increasing family of compact hulls
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Compact hull in the upper half-plane](../basic-objects-of-the-chordal-loewner-equation/is-compact-hull.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.upComp
 ---
 
 # Up-compression at a point of the doubled ground set

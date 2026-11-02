@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.bnt_VectorTwoPoint
 ---
 
 # Vector-valued two-point hypercontractive inequality
@@ -12,6 +14,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [$L^q$ norm under the uniform measure on the cube](bnt-qnorm.md)
+- [q-th moment under the uniform measure on the cube](bnt-qnorm-pow.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.bnt_noiseOp
 ---
 
 # Noise operator on the Boolean cube
@@ -12,6 +14,10 @@ expectation of `f y` where each coordinate of `y` equals that of `x` with probab
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Noise kernel on the Boolean cube](bnt-noise-kernel.md)
 
 ## Sources
 

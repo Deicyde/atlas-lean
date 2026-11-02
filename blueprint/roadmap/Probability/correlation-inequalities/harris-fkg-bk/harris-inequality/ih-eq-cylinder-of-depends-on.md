@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ih_eq_cylinder_of_dependsOn
 ---
 
 # Finitely dependent event is a cylinder over its section
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Event depending only on a set of coordinates](../../reimer-inequality/part-02/down-compression-and-disjoint-pairs/depends-on.md)
+- [Section of an event on a finite coordinate set](ih-section.md)
+
+## Proof depends on
+
+- [Filling a finite configuration with closed coordinates](ih-fill.md)
 
 ## Sources
 

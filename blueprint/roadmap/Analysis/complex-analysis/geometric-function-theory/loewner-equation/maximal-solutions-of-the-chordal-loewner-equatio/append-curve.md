@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.LoewnerForwardSolution.appendCurve
 ---
 
 # Concatenated curve of two Loewner solutions
@@ -9,7 +11,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forward solution of the Loewner equation](loewner-forward-solution.md)
 
 ## Sources
 

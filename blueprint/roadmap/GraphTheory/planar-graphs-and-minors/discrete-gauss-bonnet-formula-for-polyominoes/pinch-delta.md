@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellGaussBonnet.pinchDelta
 ---
 
 # Local change of the number of pinch points
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Indicator of a Boolean](b-i.md)
 
 ## Sources
 

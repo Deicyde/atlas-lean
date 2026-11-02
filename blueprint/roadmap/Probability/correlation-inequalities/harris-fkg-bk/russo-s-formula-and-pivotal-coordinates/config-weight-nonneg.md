@@ -12,7 +12,12 @@ lean: StatMech.configWeight_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product weight of a configuration](config-weight.md)
+
+## Proof depends on
+
+- [Bernoulli weight of a single coordinate](edge-weight.md)
 
 ## Sources
 

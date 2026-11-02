@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jgc_pend_core
 ---
 
 # 4-cycle core of the pendant example

@@ -12,7 +12,7 @@ lean: StatMech.bernoulliMeasure_real_false_add_true
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli distribution on the Booleans](../../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-measure.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: StatMech.cfgEquiv_eq_arrowCongr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Relabeling configurations along a bijection](cfg-equiv.md)
 
 ## Sources
 

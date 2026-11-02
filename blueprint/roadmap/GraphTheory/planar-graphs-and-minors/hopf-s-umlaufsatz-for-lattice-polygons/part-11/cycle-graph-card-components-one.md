@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JedBridge.cycleGraph_card_components_one
 ---
 
 # A cycle graph has one connected component

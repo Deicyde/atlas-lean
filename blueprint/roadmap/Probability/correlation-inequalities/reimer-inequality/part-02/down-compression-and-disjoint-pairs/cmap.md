@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.cmap
 ---
 
 # Down-compression map on a single finset

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.totalSize
 ---
 
 # Total size of a family of finsets

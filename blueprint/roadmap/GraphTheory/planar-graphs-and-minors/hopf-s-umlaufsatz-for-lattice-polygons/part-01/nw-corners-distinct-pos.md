@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.UmlaufsatzStrip.nw_corners_distinct_pos
 ---
 
 # Distinct north-then-west corners sit at distinct vertices
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](pos.md)
 
 ## Sources
 

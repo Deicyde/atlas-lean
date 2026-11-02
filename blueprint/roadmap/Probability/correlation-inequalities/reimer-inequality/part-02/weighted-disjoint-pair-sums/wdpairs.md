@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.wdpairs
 ---
 
 # Weighted number of disjoint pairs
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Product weight of a finset](fwt.md)
 
 ## Sources
 

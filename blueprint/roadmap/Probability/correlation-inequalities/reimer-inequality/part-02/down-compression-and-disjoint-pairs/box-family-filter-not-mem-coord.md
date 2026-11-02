@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.boxFamily_filter_notMem_coord
 ---
 
 # Members of a disjoint-union family avoiding a coordinate

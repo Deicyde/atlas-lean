@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.bnt_noiseKernel
 ---
 
 # Noise kernel on the Boolean cube

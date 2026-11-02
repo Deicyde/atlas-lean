@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcx_cross_rel
 ---
 
 # Adjacency relation of two corner-sharing squares

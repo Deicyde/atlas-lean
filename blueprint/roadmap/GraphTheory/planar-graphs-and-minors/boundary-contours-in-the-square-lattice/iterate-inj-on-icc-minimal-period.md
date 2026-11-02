@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.iterate_inj_on_Icc_minimalPeriod
 ---
 
 # Iterates up to the minimal period are distinct

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.lineWord
 ---
 
 # Straight path along the first coordinate axis

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.upRight
 ---
 
 # Up-compression at the right copy of a coordinate
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Up-compression at a point of the doubled ground set](up-comp.md)
 
 ## Sources
 

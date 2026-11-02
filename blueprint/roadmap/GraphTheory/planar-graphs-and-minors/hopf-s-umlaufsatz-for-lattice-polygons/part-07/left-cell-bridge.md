@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.UmlaufsatzFinal.leftCell_bridge
 ---
 
 # Agreement of the two definitions of the left cell
@@ -9,7 +12,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit cell to the left of a lattice step](../part-04/left-cell.md)
+- [Cell to the left of a walk step](../part-08/left-cell.md)
 
 ## Sources
 

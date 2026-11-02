@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.BaseCase.cc_pos
 ---
 
 # A closed walk without right turns turns at least once
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](cc.md)
+- [Unit lattice step in a given direction](step-of.md)
 
 ## Sources
 

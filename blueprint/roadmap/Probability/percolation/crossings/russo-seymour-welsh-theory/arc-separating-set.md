@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ArcSeparatingSet
 ---
 
 # Separating set for a lattice rectangle
@@ -10,7 +12,13 @@ such that every lattice edge of the rectangle crossing its boundary has an endpo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Boundary edge of a set](../../../../GraphTheory/planar-graphs-and-minors/discrete-jordan-curve-theorem-for-the-square-lat/bd-edge.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Integer rectangle in the plane lattice](rectangles-crossings-annuli-and-the-box-crossing/rect.md)
 
 ## Sources
 

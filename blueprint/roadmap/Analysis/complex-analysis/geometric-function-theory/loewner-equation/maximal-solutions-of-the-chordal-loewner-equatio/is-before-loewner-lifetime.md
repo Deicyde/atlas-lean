@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.IsBeforeLoewnerLifetime
 ---
 
 # Times before the Loewner lifetime
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Lifetime of a point under the Loewner flow](loewner-lifetime.md)
 
 ## Sources
 

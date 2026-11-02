@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind.pos_succ
 ---
 
 # Forward vertex recursion of a closed lattice walk
@@ -10,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Closed lattice walk starts at the origin](pos-zero.md)
 
 ## Sources
 

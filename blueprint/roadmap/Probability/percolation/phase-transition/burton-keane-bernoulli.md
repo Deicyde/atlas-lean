@@ -13,7 +13,10 @@ at most one infinite open cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Number of infinite open clusters](number-of-infinite-clusters/num-infinite-clusters.md)
+- [Bernoulli product measure on configuration space](../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-product-measure.md)
 
 ## Sources
 

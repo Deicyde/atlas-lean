@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.tnse_deleteList
 ---
 
 # Deleting a list of edges from a graph

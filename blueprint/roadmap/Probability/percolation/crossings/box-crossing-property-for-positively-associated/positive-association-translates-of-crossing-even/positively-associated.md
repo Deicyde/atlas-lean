@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.PositivelyAssociated
 ---
 
 # Positively associated measure
@@ -11,7 +13,11 @@ factor makes the Harris--FKG inequality invariant under finite scaling.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Increasing event](../../../../correlation-inequalities/harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
 
 ## Sources
 

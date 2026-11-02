@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerReflection
 ---
 
 # Reflection across the imaginary axis

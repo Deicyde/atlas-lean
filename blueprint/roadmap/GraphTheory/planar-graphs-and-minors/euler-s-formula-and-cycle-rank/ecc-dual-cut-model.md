@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ecc_DualCutModel
 ---
 
 # Graph stays connected with a given bridge after deleting edges

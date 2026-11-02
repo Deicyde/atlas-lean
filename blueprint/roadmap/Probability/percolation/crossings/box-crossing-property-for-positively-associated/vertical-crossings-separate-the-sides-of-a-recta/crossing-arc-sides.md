@@ -14,7 +14,18 @@ open cluster of `x_B` inside the overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Connection by an open path within a set](../../../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Boundary edge of a set](../../../../../GraphTheory/planar-graphs-and-minors/discrete-jordan-curve-theorem-for-the-square-lat/bd-edge.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Bottom side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/bottom-side.md)
+- [Integer rectangle in the plane lattice](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/rect.md)
+- [Top side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/top-side.md)
+- [Open cluster inside the overlap rectangle](../horizontal-and-vertical-crossings-meet/overlap-comp.md)
 
 ## Sources
 

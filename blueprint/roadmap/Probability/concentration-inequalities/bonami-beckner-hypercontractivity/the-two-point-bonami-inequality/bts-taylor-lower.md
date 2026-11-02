@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.bts_taylor_lower
 ---
 
 # Taylor lower bound for $(1+t)^q + (1-t)^q$

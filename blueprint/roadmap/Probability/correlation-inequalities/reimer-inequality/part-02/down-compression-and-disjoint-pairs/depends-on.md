@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.DependsOn
 ---
 
 # Event depending only on a set of coordinates
@@ -10,7 +12,11 @@ This is Mathlib's `DependsOn` for the membership predicate of `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](../../../harris-fkg-bk/van-den-berg-kesten-inequality/agree-on.md)
 
 ## Sources
 

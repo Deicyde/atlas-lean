@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.ons_turnW_eq_zpow
 ---
 
 # Integer turn exponent between two directions
@@ -14,7 +17,8 @@ def ons_turnPow (μ ν : Fin 4) : ℤ :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer turn exponent between two directions](ons-turn-pow.md)
+- [Turn weight between two lattice directions](../part-04/ons-turn-w.md)
 
 ## Sources
 

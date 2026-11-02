@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanSigned.Vc_subaddCocycle
 ---
 
 # Truncated defect is a nonnegative subadditive cocycle
@@ -9,7 +12,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Truncated subadditivity defect of a cocycle](vc.md)
+
+## Proof depends on
+
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+- [Shifted subadditivity defect of a cocycle](sc.md)
+- [Additive cocycle of Birkhoff sums of the first term](add-coc.md)
 
 ## Sources
 

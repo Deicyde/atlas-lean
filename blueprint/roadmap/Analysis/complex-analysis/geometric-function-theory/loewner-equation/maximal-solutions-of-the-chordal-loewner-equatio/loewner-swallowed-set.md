@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerSwallowedSet
 ---
 
 # Loewner hull
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Unswallowed domain of the Loewner flow](loewner-unswallowed-domain.md)
 
 ## Sources
 

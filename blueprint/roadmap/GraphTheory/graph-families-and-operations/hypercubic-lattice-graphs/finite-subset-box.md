@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.finite_subset_box
 ---
 
 # Every finite set of sites lies in a box
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+- [Box $(-n, n)^d$ in the hypercubic lattice](box.md)
 
 ## Sources
 

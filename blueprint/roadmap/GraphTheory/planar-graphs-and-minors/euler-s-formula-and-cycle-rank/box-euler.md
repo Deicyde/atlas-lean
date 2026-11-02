@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.box_euler
 ---
 
 # Euler's formula for the grid graph $(-n, n)^2$
@@ -10,7 +13,16 @@ geometrically (unit squares plus the unbounded face).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Edges of the grid $(-n, n)^2$](box-edges.md)
+- [Number of faces of the grid $(-n, n)^2$](box-face-count.md)
+- [Vertices of the grid $(-n, n)^2$](box-verts.md)
+
+## Proof depends on
+
+- [Unit squares of the grid $(-n, n)^2$](box-cells.md)
+- [Horizontal edges of the grid $(-n, n)^2$](h-edges.md)
+- [Vertical edges of the grid $(-n, n)^2$](v-edges.md)
 
 ## Sources
 

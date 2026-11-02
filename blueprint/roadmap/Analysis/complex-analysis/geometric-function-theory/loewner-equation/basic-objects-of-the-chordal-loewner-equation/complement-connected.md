@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.IsCompactHull.complement_connected
 ---
 
 # Complement of a compact hull is connected
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compact hull in the upper half-plane](is-compact-hull.md)
 
 ## Sources
 

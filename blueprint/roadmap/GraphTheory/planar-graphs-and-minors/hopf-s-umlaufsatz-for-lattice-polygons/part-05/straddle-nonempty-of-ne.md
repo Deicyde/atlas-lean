@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.PinchFree.straddle_nonempty_of_ne
 ---
 
 # Horizontal neighbours of different parity are separated by a vertical step
@@ -10,7 +13,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+- [Ray-crossing parity of a lattice cell](../part-03/ray-parity.md)
+- [Vertical steps separating two horizontal neighbour cells](straddle-set.md)
+
+## Proof depends on
+
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Ray parity is unchanged across a horizontal move](../part-04/ray-parity-hstep.md)
+- [Vertical lattice direction](../part-10/is-vert-edge.md)
 
 ## Sources
 

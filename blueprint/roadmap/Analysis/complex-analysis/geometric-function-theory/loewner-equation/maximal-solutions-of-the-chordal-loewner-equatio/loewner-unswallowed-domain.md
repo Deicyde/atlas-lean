@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerUnswallowedDomain
 ---
 
 # Unswallowed domain of the Loewner flow
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Times before the Loewner lifetime](is-before-loewner-lifetime.md)
 
 ## Sources
 

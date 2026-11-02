@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.EvenDegree.exists_cycle_through_edge_of_even
 ---
 
 # Every edge of a finite even-degree graph lies on a cycle

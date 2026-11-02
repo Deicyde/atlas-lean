@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.picard_exists_ball
 ---
 
 # Picard–Lindelöf theorem with solutions confined to a ball

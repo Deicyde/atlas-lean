@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellCount.mem_cornersOf_iff
 ---
 
 # Characterization of the corners of a unit cell
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ lean: StatMech.determinedBy_iff_dependsOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Event depending only on a set of coordinates](../part-02/down-compression-and-disjoint-pairs/depends-on.md)
+- [Event determined by a set of coordinates](determined-by.md)
 
 ## Sources
 

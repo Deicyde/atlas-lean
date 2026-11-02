@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanFilling.gLow
 ---
 
 # Real lower limit of a normalized cocycle
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Lower limit of a normalized subadditive cocycle](g-star-low.md)
 
 ## Sources
 

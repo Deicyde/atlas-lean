@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.OccursOn.mono_event
 ---
 
 # Occurrence is monotone in the event
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Occurrence of an event on a coordinate set](occurs-on.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](agree-on.md)
 
 ## Sources
 

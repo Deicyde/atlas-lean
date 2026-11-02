@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.BoxCrossingProperty
 ---
 
 # Box-crossing property with a given aspect ratio
@@ -11,7 +13,12 @@ below by a positive constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Infimum of the box-crossing probabilities](box-crossing-inf.md)
 
 ## Sources
 

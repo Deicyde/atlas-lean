@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.tildePc
 ---
 
 # Duminil-Copin–Tassion threshold
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Densities with a finite set of small Duminil-Copin–Tassion quantity](tilde-pc-set.md)
 
 ## Sources
 

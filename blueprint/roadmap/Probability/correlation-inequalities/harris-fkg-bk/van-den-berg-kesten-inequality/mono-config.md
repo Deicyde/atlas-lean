@@ -13,7 +13,13 @@ lean: StatMech.OccursOn.mono_config
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Occurrence of an event on a coordinate set](occurs-on.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](agree-on.md)
 
 ## Sources
 

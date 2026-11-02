@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.pvr_firstIdxAtCoord
 ---
 
 # First index where a walk reaches a coordinate value
@@ -9,7 +11,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](hypercubic-lattice.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.wiredGraph
 ---
 
 # Wired open graph
@@ -11,6 +13,11 @@ boundary vertices.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Complete graph on the boundary vertices](boundary-clique-graph.md)
+- [Open subgraph of a bond configuration](open-graph.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellPinch.pinchAt
 ---
 
 # Pinch point of a set of unit cells

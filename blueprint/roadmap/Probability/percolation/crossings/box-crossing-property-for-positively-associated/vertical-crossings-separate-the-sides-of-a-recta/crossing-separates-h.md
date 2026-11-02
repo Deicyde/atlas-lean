@@ -13,7 +13,17 @@ lean: StatMech.Universality.CrossingSeparatesH
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Connection by an open path within a set](../../../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Open subgraph induced on a set of sites](../../../phase-transition/percolation-probability-and-critical-point/open-subgraph-induce.md)
+- [Bottom side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/bottom-side.md)
+- [Integer rectangle in the plane lattice](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/rect.md)
+- [Top side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/top-side.md)
+- [Open cluster inside the overlap rectangle](../horizontal-and-vertical-crossings-meet/overlap-comp.md)
 
 ## Sources
 

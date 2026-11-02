@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.IsDownAtLeft
 ---
 
 # Family closed under erasing the left copy

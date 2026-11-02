@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Kingman.integral_comp_measurePreserving
 ---
 
 # Integral is invariant under a measure-preserving map

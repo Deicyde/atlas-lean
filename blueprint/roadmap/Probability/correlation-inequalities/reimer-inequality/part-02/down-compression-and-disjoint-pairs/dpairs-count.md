@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.dpairsCount
 ---
 
 # Number of disjoint pairs from two families

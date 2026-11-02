@@ -1,6 +1,8 @@
 ---
 declaration: inductive
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jgc_IsCactus
 ---
 
 # Cactus graph, defined by peeling leaves and cycles

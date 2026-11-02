@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.configWeight_eq
 ---
 
 # Configuration weight splits at one coordinate
@@ -9,7 +12,10 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product weight of a configuration](config-weight.md)
+- [Bernoulli weight of a single coordinate](edge-weight.md)
+- [Product of coordinate weights off one coordinate](weight-off.md)
 
 ## Sources
 

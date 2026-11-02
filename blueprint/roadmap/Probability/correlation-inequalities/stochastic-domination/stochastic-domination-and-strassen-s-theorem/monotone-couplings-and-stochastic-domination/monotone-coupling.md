@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.MonotoneCoupling
 ---
 
 # Monotone coupling of two measures
@@ -10,7 +12,7 @@ marginal `μ`, second marginal `ν`, and no mass off the ordered pairs `ω ≤ �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

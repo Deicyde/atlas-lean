@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.boundaryCliqueGraph
 ---
 
 # Complete graph on the boundary vertices
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Boundary wiring relation](wire-rel.md)
 
 ## Sources
 

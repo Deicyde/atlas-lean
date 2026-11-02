@@ -11,7 +11,13 @@ lean: StatMech.SLE.selectedLoewnerDuration
 
 ## Depends on
 
-This node has no prerequisites.
+- [Times before the Loewner lifetime](is-before-loewner-lifetime.md)
+
+## Proof depends on
+
+- [Admissible duration for the Loewner equation](is-loewner-admissible-duration.md)
+- [Forward solution of the Loewner equation](loewner-forward-solution.md)
+- [Lifetime of a point under the Loewner flow](loewner-lifetime.md)
 
 ## Sources
 

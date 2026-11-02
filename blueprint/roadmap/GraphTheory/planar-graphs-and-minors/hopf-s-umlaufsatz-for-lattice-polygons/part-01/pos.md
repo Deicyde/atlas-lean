@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.BaseCase.pos
 ---
 
 # Vertices of a lattice walk from its step directions
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Unit lattice step in a given direction](step-of.md)
 
 ## Sources
 

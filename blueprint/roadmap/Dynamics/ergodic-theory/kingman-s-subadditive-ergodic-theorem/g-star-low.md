@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanAE.gStarLow
 ---
 
 # Lower limit of a normalized subadditive cocycle

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.pcRatio
 ---
 
 # Geometric ratio of the Peierls series

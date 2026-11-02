@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.doubleCompress
 ---
 
 # Double compression at a coordinate
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Down-compression at the left copy of a coordinate](down-left.md)
+- [Up-compression at the right copy of a coordinate](up-right.md)
 
 ## Sources
 

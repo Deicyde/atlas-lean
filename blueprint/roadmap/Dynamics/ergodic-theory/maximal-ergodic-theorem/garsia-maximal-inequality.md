@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.GarsiaMax.garsia_maximal_inequality
 ---
 
 # Maximal ergodic theorem
@@ -13,7 +16,12 @@ the integral of `f` over `{max_{1 ≤ n ≤ N} S_n f > 0}` is nonnegative. See a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Birkhoff partial sum](max-partial-sum.md)
+
+## Proof depends on
+
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+- [Integral is invariant under a measure-preserving map](../kingman-s-subadditive-ergodic-theorem/integral-comp-measure-preserving.md)
 
 ## Sources
 

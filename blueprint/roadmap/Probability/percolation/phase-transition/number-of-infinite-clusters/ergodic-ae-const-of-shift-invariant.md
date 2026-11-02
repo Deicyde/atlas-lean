@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ConfigSpace.ergodic_ae_const_of_shiftInvariant
 ---
 
 # Shift-invariant countably valued functions are a.s. constant under ergodicity
@@ -12,7 +15,13 @@ a.e.-invariant sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Ergodic measure on configuration space](../../../random-fields/translation-invariance-and-ergodicity-of-random/is-ergodic.md)
+- [Shift of a configuration by a group element](../../../random-fields/translation-invariance-and-ergodicity-of-random/shift.md)
+
+## Proof depends on
+
+- [Translation-invariant measure on configuration space](../../../random-fields/translation-invariance-and-ergodicity-of-random/is-translation-invariant.md)
 
 ## Sources
 

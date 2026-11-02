@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.stepSign
 ---
 
 # Sign of a unit lattice step

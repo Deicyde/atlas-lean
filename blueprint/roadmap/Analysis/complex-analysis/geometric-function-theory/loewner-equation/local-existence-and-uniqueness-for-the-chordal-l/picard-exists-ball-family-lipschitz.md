@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.SLE.picard_exists_ball_family_lipschitz
 ---
 
 # Lipschitz Picard–Lindelöf flow confined to a ball

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.IsLoewnerSolutionAt
 ---
 
 # Solution of the Loewner equation at a time
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Chordal Loewner vector field](loewner-field.md)
 
 ## Sources
 

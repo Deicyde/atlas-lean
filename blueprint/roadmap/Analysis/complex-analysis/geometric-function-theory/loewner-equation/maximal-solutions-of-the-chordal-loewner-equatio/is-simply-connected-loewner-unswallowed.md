@@ -12,13 +12,12 @@ lean: StatMech.SLE.isSimplyConnected_loewnerUnswallowedDomain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unswallowed domain of the Loewner flow](loewner-unswallowed-domain.md)
 
 ## Proof depends on
 
 - [The upper half-plane is simply connected](../basic-objects-of-the-chordal-loewner-equation/is-simply-connected-upper-half-plane.md)
-- [Chosen admissible Loewner duration](selected-loewner-duration.md)
-- [Chosen Loewner forward solution](selected-loewner-solution.md)
+- [Loewner map as a homeomorphism onto the half-plane](loewner-maximal-maps-homeomorph.md)
 
 ## Sources
 

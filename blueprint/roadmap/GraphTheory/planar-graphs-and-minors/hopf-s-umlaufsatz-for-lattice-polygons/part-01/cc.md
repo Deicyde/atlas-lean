@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.BaseCase.cc
 ---
 
 # Number of left turns of a direction sequence

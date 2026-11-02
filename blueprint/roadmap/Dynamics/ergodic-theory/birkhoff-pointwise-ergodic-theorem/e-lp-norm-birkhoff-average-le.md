@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.BirkhoffAE.eLpNorm_birkhoffAverage_le
 ---
 
 # Birkhoff averages are L1 contractions

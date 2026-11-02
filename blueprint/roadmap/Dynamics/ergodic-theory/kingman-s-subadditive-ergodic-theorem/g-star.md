@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanAE.gStar
 ---
 
 # Upper limit of a normalized subadditive cocycle

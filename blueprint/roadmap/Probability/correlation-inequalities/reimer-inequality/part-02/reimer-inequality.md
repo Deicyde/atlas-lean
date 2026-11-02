@@ -14,7 +14,9 @@ disjoint sets of coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Disjoint occurrence of events](../../harris-fkg-bk/van-den-berg-kesten-inequality/disjoint-occurrence.md)
+- [Weighted probability of an event](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob.md)
 
 ## Sources
 

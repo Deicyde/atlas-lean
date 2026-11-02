@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.Kingman.SubadditiveCocycle
 ---
 
 # Subadditive cocycle over a measure-preserving map

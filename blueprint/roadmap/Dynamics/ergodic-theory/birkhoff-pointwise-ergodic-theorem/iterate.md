@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.BirkhoffAE.IsInvariantSet.iterate
 ---
 
 # Invariant set is invariant under every iterate
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Invariant set of a map](is-invariant-set.md)
 
 ## Sources
 

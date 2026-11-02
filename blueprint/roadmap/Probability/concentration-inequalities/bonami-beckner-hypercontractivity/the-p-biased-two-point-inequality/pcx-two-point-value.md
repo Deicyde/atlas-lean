@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.pcx_two_point_value
 ---
 
 # p-biased two-point inequality
@@ -11,6 +14,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Pointwise bound for the p-biased inequality holds](pcx-key-pos.md)
+- [p-biased two-point inequality from the pointwise bound](../the-one-variable-p-biased-inequality-from-a-poin/pih-two-point-value-of-key.md)
 
 ## Sources
 

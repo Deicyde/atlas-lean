@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.connected_card_edges_ge
 ---
 
 # Connected finite graph has at least $|V| - 1$ edges

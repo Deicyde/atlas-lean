@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.JordanParity.rayParity
 ---
 
 # Ray-crossing parity of a lattice cell
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Upward ray crossings above a cell](up-cross.md)
 
 ## Sources
 

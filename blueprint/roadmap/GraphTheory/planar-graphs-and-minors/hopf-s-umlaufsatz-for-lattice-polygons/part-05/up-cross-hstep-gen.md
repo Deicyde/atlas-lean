@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.RayFlipH.upCross_hstep_gen
 ---
 
 # Parity of upward crossings across a vertical segment
@@ -10,7 +13,18 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+- [Upward ray crossings above a cell](../part-03/up-cross.md)
+- [Vertical steps separating two horizontal neighbour cells](straddle-set.md)
+
+## Proof depends on
+
+- [Coordinates of the four lattice steps](../part-11/step-of-coords.md)
+- [Recursion for the x-coordinate of a walk step](../part-10/fst-step.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
+- [Vertical lattice direction](../part-10/is-vert-edge.md)
+- [Recursion for the y-coordinate of a walk step](../part-10/snd-step.md)
 
 ## Sources
 

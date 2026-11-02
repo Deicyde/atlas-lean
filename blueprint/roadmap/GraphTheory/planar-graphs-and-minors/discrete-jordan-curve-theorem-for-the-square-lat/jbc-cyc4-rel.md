@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jbc_cyc4Rel
 ---
 
 # Adjacency relation of the 4-cycle

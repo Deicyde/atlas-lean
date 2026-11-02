@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellCount.cornersOf
 ---
 
 # Four corners of a unit cell

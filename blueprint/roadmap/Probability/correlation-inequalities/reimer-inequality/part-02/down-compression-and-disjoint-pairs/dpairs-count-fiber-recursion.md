@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.dpairsCount_fiber_recursion
 ---
 
 # Recursion for disjoint pairs by membership of a coordinate
@@ -10,7 +13,7 @@ only the second set contains `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of disjoint pairs from two families](dpairs-count.md)
 
 ## Sources
 

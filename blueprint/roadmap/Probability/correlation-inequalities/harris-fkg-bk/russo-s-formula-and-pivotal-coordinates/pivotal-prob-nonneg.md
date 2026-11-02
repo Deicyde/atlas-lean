@@ -12,10 +12,13 @@ lean: StatMech.pivotalProb_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Weight of the event that a coordinate is pivotal](pivotal-prob.md)
 
 ## Proof depends on
 
+- [Pivotal coordinate for an event](is-pivotal.md)
+- [Bernoulli product weight of a configuration](config-weight.md)
 - [Nonnegativity of the configuration weight](config-weight-nonneg.md)
 
 ## Sources

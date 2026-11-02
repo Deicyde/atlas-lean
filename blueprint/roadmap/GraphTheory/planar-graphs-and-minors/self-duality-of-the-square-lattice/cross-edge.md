@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.crossEdge
 ---
 
 # Quarter-turn rotation of unordered site pairs
@@ -11,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Quarter-turn rotation as a permutation](rot90-equiv.md)
+- [Unordered pairs under an equivalence](sym2-congr.md)
 
 ## Sources
 

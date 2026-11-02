@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.NegativelyCorrelated
 ---
 
 # Negatively correlated events
@@ -10,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Weighted probability of an event](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob.md)
 
 ## Sources
 

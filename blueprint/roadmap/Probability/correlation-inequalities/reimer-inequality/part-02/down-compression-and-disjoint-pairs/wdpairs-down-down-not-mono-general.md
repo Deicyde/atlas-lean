@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.wdpairs_downDown_not_mono_general
 ---
 
 # Weighted down-compression monotonicity fails for general weights
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted number of disjoint pairs](../weighted-disjoint-pair-sums/wdpairs.md)
+
+## Proof depends on
+
+- [Product weight of a finset](../weighted-disjoint-pair-sums/fwt.md)
 
 ## Sources
 

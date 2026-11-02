@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.pcx_OneVarCore
 ---
 
 # One-variable p-biased inequality
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Statement of the one-variable p-biased inequality](../the-p-biased-two-point-inequality-reduced-to-one/pbt-one-var-core.md)
+
+## Proof depends on
+
+- [Pointwise bound for the p-biased inequality holds](pcx-key-pos.md)
+- [Pointwise bound implies the one-variable p-biased inequality](../the-one-variable-p-biased-inequality-from-a-poin/pih-core-of-key.md)
 
 ## Sources
 

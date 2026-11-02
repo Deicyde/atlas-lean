@@ -14,7 +14,19 @@ at the first coordinate: `P(A₀ □ B₀) ≤ P((A₀ □ B₁) ∩ (A₁ □ B
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../../harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Disjoint occurrence of events](../../harris-fkg-bk/van-den-berg-kesten-inequality/disjoint-occurrence.md)
+- [Slice of an event at the first coordinate](../../harris-fkg-bk/van-den-berg-kesten-inequality/slice.md)
+- [Weighted probability of an event](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob.md)
+
+## Proof depends on
+
+- [BK inequality for product weights on $n$ ordered coordinates](../../harris-fkg-bk/van-den-berg-kesten-inequality/bk-wprob.md)
+- [Disjoint occurrence is monotone in both events](../../harris-fkg-bk/van-den-berg-kesten-inequality/disjoint-occurrence-mono.md)
+- [False slice of an increasing event lies in the true slice](../../harris-fkg-bk/van-den-berg-kesten-inequality/slice-false-subset-true.md)
+- [Slices of an increasing event are increasing](../../harris-fkg-bk/van-den-berg-kesten-inequality/slice-is-increasing.md)
+- [Monotonicity of the weighted probability](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob-mono.md)
 
 ## Sources
 

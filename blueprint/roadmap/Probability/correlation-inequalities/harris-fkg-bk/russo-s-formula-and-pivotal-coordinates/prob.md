@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.prob
 ---
 
 # Bernoulli weight of an event
@@ -10,7 +12,11 @@ under independent Bernoulli(`p`) coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Bernoulli product weight of a configuration](config-weight.md)
 
 ## Sources
 

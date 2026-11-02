@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.fkg_inequality
 ---
 
 # FKG inequality
@@ -15,7 +18,8 @@ removes the sign condition by shifting `f` and `g` by their values at `⊥`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [FKG lattice condition](../increasing-events-and-the-fkg-lattice-condition/fkglattice-condition.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.wdpairs_le_mul
 ---
 
 # Weighted disjoint pairs bounded by the product of family weights
@@ -10,7 +13,12 @@ constraint).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weight of a family of finsets](fmarg.md)
+- [Weighted number of disjoint pairs](wdpairs.md)
+
+## Proof depends on
+
+- [Product weight of a finset](fwt.md)
 
 ## Sources
 

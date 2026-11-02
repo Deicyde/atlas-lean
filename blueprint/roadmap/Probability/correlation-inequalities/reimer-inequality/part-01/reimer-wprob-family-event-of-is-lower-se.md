@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.reimer_wprob_familyEvent_of_isLowerSet
 ---
 
 # Reimer's inequality for two lower families
@@ -10,7 +13,16 @@ decreasing events).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Disjoint occurrence of events](../../harris-fkg-bk/van-den-berg-kesten-inequality/disjoint-occurrence.md)
+- [Event of a family of finsets](family-event.md)
+- [Weighted probability of an event](../../harris-fkg-bk/van-den-berg-kesten-inequality/wprob.md)
+
+## Proof depends on
+
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Decreasing event](../../harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-decreasing.md)
+- [BK inequality for decreasing events under product weights](bk-wprob-decreasing.md)
+- [Support of a configuration as a finset](../part-02/down-compression-and-disjoint-pairs/cfg-support.md)
 
 ## Sources
 

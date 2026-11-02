@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jec_wallEdge
 ---
 
 # Wall edges below a site
@@ -10,7 +12,7 @@ edges crossed by a vertical ray going down from the face corner of `z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
 
 ## Sources
 

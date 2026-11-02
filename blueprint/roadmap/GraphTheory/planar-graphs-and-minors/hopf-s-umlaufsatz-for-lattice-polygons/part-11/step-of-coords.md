@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind.stepOf_coords
 ---
 
 # Coordinates of the four lattice steps
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit lattice step in a given direction](../part-01/step-of.md)
 
 ## Sources
 

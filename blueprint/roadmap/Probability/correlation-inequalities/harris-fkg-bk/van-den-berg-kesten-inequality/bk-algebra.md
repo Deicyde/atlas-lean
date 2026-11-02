@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.bk_algebra
 ---
 
 # Scalar inequality behind the BK induction step

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.candMap
 ---
 
 # Neighbour of a site in a coordinate direction
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Shift of a site along a coordinate](shift.md)
 
 ## Sources
 

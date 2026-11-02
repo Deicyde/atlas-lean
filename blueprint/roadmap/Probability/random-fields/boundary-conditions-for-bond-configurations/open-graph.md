@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.openGraph
 ---
 
 # Open subgraph of a bond configuration
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Open edge in a bond configuration](is-open.md)
 
 ## Sources
 

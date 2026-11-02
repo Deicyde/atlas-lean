@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.agreeOn_cfgEquiv
 ---
 
 # Agreement on a set under configuration relabeling
@@ -9,7 +12,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Agreement of configurations on a set](agree-on.md)
+- [Relabeling configurations along a bijection](cfg-equiv.md)
 
 ## Sources
 

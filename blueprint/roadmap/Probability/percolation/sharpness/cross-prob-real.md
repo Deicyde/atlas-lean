@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.crossProbReal
 ---
 
 # One-arm probability as a function of a real density
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [One-arm probability](exponential-decay-below-the-critical-point/cross-prob.md)
 
 ## Sources
 

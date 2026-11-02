@@ -12,7 +12,7 @@ lean: StatMech.bernoulliMeasure_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli distribution on the Booleans](bernoulli-measure.md)
 
 ## Sources
 

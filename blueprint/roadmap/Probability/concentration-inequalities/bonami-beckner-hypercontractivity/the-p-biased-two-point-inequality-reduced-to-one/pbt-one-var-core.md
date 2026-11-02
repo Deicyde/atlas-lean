@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pbt_OneVarCore
 ---
 
 # Statement of the one-variable p-biased inequality
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Left side of the one-variable p-biased inequality](pbt-g.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.LoewnerForwardSolution.timeShift
 ---
 
 # Time shift of a Loewner forward solution
@@ -10,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forward solution of the Loewner equation](loewner-forward-solution.md)
+
+## Proof depends on
+
+- [Chordal Loewner vector field](../basic-objects-of-the-chordal-loewner-equation/loewner-field.md)
 
 ## Sources
 

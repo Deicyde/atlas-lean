@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnetGlobal.pinch_jump_sum
 ---
 
 # Change of the pinch count in terms of eight neighbours
@@ -9,7 +12,17 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four corners of a unit cell](corners-of.md)
+- [Local change of the number of pinch points](pinch-delta.md)
+- [Pinch point indicator](pinch-w.md)
+
+## Proof depends on
+
+- [Indicator of a Boolean](b-i.md)
+- [Change of the pinch indicator at the bottom-left corner of a new cell](pinch-diff-bl.md)
+- [Change of the pinch indicator at the bottom-right corner of a new cell](pinch-diff-br.md)
+- [Change of the pinch indicator at the top-left corner of a new cell](pinch-diff-tl.md)
+- [Change of the pinch indicator at the top-right corner of a new cell](pinch-diff-tr.md)
 
 ## Sources
 

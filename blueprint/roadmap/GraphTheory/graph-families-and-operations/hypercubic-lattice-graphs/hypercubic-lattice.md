@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.hypercubicLattice
 ---
 
 # Hypercubic lattice $\mathbb{Z}^d$
@@ -11,7 +13,11 @@ neighbours.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Nearest neighbours in $\mathbb{Z}^d$](nearest-neighbour.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.boundaryEdges
 ---
 
 # Oriented edge boundary of a finite lattice set
@@ -10,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Shift of a lattice site in one coordinate](coord-shift.md)
+- [Sign of a unit lattice step](step-sign.md)
 
 ## Sources
 

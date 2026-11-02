@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.HasHalfPlaneCapacity
 ---
 
 # Hydrodynamic normalization with half-plane capacity

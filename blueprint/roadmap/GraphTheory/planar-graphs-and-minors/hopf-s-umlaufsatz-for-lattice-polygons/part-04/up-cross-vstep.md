@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JordanParity.upCross_vstep
 ---
 
 # Upward crossing count is unchanged across a vertical move
@@ -10,7 +13,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Upward ray crossings above a cell](../part-03/up-cross.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
 
 ## Sources
 

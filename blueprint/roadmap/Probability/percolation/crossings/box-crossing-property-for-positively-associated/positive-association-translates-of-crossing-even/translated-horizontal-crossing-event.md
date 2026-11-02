@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.translatedHorizontalCrossingEvent
 ---
 
 # Left–right crossing event of a translated rectangle
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Left–right crossing event of a rectangle at the origin](../../rectangle-crossings-on-the-square-lattice/horizontal-crossing-event.md)
+- [Translate of a bond configuration](translate-config.md)
 
 ## Sources
 

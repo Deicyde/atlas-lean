@@ -12,7 +12,8 @@ lean: StatMech.Lattice.hypercubicLattice_two_reachable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](hypercubic-lattice.md)
 
 ## Proof depends on
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.vertexBoundary
 ---
 
 # Inner vertex boundary of a box
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Box $(-n, n)^d$ in the hypercubic lattice](box.md)
 
 ## Sources
 

@@ -28,13 +28,53 @@ Scope of the items:
 
 ## Depends on
 
-This node has no prerequisites.
+- [One-arm probability](exponential-decay-below-the-critical-point/cross-prob.md)
+- [Critical probability of bond percolation on the hypercubic lattice](../phase-transition/percolation-probability-and-critical-point/pc.md)
+- [Percolation probability of bond percolation](../phase-transition/percolation-probability-and-critical-point/theta.md)
+- [Duminil-Copin–Tassion threshold](tilde-pc.md)
+- [Densities with a finite set of small Duminil-Copin–Tassion quantity](tilde-pc-set.md)
 
 ## Proof depends on
 
+- [Configuration space of a statistical-mechanics model](../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Connection by an open path](../phase-transition/percolation-probability-and-critical-point/connected.md)
+- [Connection by an open path within a set](../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Open lattice edge of a bond configuration](../phase-transition/percolation-probability-and-critical-point/is-open-edge.md)
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Box $(-n, n)^d$ in the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/box.md)
+- [Open cluster of a site](../phase-transition/percolation-probability-and-critical-point/cluster.md)
 - [Open connection within a set is monotone in the set](../phase-transition/percolation-probability-and-critical-point/connected-within-mono-set.md)
-- [Size bound for the edge boundary](card-boundary-edges-le.md)
+- [Every finite set of sites lies in a box](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/finite-subset-box.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Open subgraph of a bond configuration](../phase-transition/percolation-probability-and-critical-point/open-subgraph.md)
+- [Open subgraph induced on a set of sites](../phase-transition/percolation-probability-and-critical-point/open-subgraph-induce.md)
+- [Inner vertex boundary of a box](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/vertex-boundary.md)
+- [Box-crossing probability](duminil-copin-tassion-differential-inequality/box-cross-prob.md)
+- [Box-crossing event](duminil-copin-tassion-differential-inequality/box-crossing-event.md)
+- [Pairs of sites of a lattice box](duminil-copin-tassion-differential-inequality/box-edge-finset.md)
+- [Lattice box as a finite set](../phase-transition/percolation-probability-and-critical-point/box-finset.md)
+- [Shift of a lattice site in one coordinate](coord-shift.md)
+- [Box-crossing probability as a polynomial in the density](duminil-copin-tassion-differential-inequality/cross-poly.md)
+- [One-arm probability as a function of a real density](cross-prob-real.md)
 - [Exponential decay of the one-arm probability below the threshold](cross-prob-exp-decay-of-mem-tilde-pc-set.md)
+- [One-arm event from the origin](exponential-decay-below-the-critical-point/crossing-event.md)
+- [Duminil-Copin–Tassion differential inequality](duminil-copin-tassion-differential-inequality/dct-differential-inequality.md)
+- [Edges of a lattice path encoded by a step sequence](../phase-transition/bounds-on-the-critical-probability/edge-of.md)
+- [Straight path along the first coordinate axis](line-word.md)
+- [Measurability of the one-arm event](../phase-transition/number-of-infinite-clusters/measurable-set-crossing-event.md)
+- [Origin of the hypercubic lattice](../phase-transition/percolation-probability-and-critical-point/origin.md)
+- [Percolation event for the origin](../phase-transition/percolation-probability-and-critical-point/percolation-event.md)
+- [Duminil-Copin–Tassion quantity](phi.md)
+- [Sharpness of the phase transition, conditional form](sharpness.md)
+- [Sign of a unit lattice step](step-sign.md)
+- [Positivity of the Duminil-Copin–Tassion threshold](tilde-pc-pos.md)
+- [Vertices of a lattice path encoded by a step sequence](../phase-transition/bounds-on-the-critical-probability/vert-of.md)
+- [Event that an encoded lattice path is open](../phase-transition/bounds-on-the-critical-probability/word-event.md)
+- [Bernoulli distribution on the Booleans](../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-measure.md)
+- [Bernoulli product measure on configuration space](../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-product-measure.md)
+- [Differentiability in $p$ of the probability of a cylinder event](../../random-fields/bernoulli-product-measures-and-cylinder-events/differentiable-real-prob-cylinder.md)
+- [Bernoulli weight of an event](../../correlation-inequalities/harris-fkg-bk/russo-s-formula-and-pivotal-coordinates/prob.md)
+- [Probability of a finitely dependent event as a finite weight](../../random-fields/bernoulli-product-measures-and-cylinder-events/real-prob-cylinder-eq-prob.md)
 
 ## Sources
 

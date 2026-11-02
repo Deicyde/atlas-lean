@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.HasCapacityRate
 ---
 
 # Half-plane capacity rate of a Loewner family
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Hydrodynamic normalization with half-plane capacity](../basic-objects-of-the-chordal-loewner-equation/has-half-plane-capacity.md)
 
 ## Sources
 

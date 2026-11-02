@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.RayFlipV.upCross_vsplit
 ---
 
 # Upward crossings of vertically adjacent cells differ by separating steps
@@ -10,7 +13,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upward ray crossings above a cell](../part-03/up-cross.md)
+- [Horizontal steps on a unit segment](../part-05/mid-set.md)
+
+## Proof depends on
+
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
 
 ## Sources
 

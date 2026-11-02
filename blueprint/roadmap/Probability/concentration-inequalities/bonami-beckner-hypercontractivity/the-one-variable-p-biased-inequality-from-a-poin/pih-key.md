@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.pih_KEY
 ---
 
 # Pointwise bound behind the p-biased inequality
@@ -11,6 +13,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Variance term in the p-biased inequality](pih-v.md)
+- [Mean of a p-biased two-valued function](pih-m.md)
 
 ## Sources
 

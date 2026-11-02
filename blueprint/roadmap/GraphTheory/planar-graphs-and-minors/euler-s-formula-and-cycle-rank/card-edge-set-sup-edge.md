@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.card_edgeSet_sup_edge
 ---
 
 # Adding a new edge increases the edge count by one

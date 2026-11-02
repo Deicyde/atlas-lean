@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.iterDownComp
 ---
 
 # Iterated down-compression along a list of coordinates

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.tildePcSet
 ---
 
 # Densities with a finite set of small Duminil-Copin–Tassion quantity
@@ -10,6 +12,12 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Origin of the hypercubic lattice](../phase-transition/percolation-probability-and-critical-point/origin.md)
+- [Duminil-Copin–Tassion quantity](phi.md)
 
 ## Sources
 

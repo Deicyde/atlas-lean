@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnet.eulerChar_cex
 ---
 
 # Euler characteristic of two diagonally touching cells
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler characteristic of a cell complex](euler-char.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanFilling.badSet
 ---
 
 # Bad set in the greedy decomposition for Kingman's theorem
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Real lower limit of a normalized cocycle](g-low.md)
 
 ## Sources
 

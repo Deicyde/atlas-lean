@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanFilling.greedy
 ---
 
 # Greedy decomposition along an orbit
@@ -10,7 +13,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dominating function for remainder terms in Kingman's theorem](rem-dom.md)
+- [Per-step budget of the greedy decomposition](dep.md)
+- [Real lower limit of a normalized cocycle](g-low.md)
+
+## Proof depends on
+
+- [Bad set in the greedy decomposition for Kingman's theorem](bad-set.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.boxCells
 ---
 
 # Unit squares of the grid $(-n, n)^2$

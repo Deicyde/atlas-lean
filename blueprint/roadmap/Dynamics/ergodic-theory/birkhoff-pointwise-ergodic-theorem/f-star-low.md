@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.BirkhoffAE.fStarLow
 ---
 
 # Lower limit of Birkhoff averages

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.criticalProbability
 ---
 
 # Critical probability as a real number
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Real densities with no percolation](subcritical-densities.md)
 
 ## Sources
 

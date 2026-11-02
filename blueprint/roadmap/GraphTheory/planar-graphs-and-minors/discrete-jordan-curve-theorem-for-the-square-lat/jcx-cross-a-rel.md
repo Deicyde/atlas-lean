@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcx_cross_A_rel
 ---
 
 # Adjacency relation of the lower 4-cycle

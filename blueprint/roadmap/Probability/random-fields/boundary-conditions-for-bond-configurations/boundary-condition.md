@@ -1,6 +1,8 @@
 ---
 declaration: inductive
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.BoundaryCondition
 ---
 
 # Boundary conditions for a bond model

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.BaseCase.sum_turns_zero
 ---
 
 # Turns of a cyclic direction sequence sum to zero

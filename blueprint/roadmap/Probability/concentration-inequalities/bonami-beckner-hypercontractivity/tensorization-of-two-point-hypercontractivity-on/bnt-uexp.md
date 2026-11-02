@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Probability.bnt_uexp
 ---
 
 # Uniform expectation on the Boolean cube

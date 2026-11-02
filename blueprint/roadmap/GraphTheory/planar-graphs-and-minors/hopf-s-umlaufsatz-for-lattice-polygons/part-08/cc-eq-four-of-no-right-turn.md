@@ -18,18 +18,14 @@ lean: StatMech.Onsager.UmlaufsatzFinal.cc_eq_four_of_no_right_turn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](../part-01/cc.md)
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
 
 ## Proof depends on
 
-- [Unit cell of the plane](../../discrete-gauss-bonnet-formula-for-polyominoes/cell.md)
-- [Lattice point as a vertex of the cell complex](../../discrete-gauss-bonnet-formula-for-polyominoes/vtx.md)
-- [Sides of a unit cell](../../discrete-gauss-bonnet-formula-for-polyominoes/cell-edges.md)
-- [Corners of a unit cell](../../discrete-gauss-bonnet-formula-for-polyominoes/cell-verts.md)
-- [Euler characteristic of a union of unit cells](../../discrete-gauss-bonnet-formula-for-polyominoes/reg-chi.md)
-- [Edges of a union of unit cells](../../discrete-gauss-bonnet-formula-for-polyominoes/reg-edges.md)
-- [Vertices of a union of unit cells](../../discrete-gauss-bonnet-formula-for-polyominoes/reg-verts.md)
-- [Square lattice is connected](../../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice-two-reachable.md)
+- [Discrete Umlaufsatz for walks of length at least three](cc-eq-four.md)
+- [A closed walk without right turns has length at least three](three-le-n.md)
 
 ## Sources
 
