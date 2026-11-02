@@ -4,8 +4,9 @@
 #
 #   scripts/audit/nightly.sh [LIMIT]
 #
-# Run from a clean atlas-lean checkout of the wiki branch without v1/, as the
-# Pages workflow checks it out (git sparse-checkout set --no-cone '/*' '!/v1/').
+# Run from a clean atlas-lean checkout of the wiki branch without v1/ and Atlas/,
+# as the Pages workflow checks it out
+# (git sparse-checkout set --no-cone '/*' '!/v1/' '!/Atlas/').
 # PYTHON must import Autoform from a git checkout at the commit in
 # .github/autoform-ref, the one the workflow builds with (the run checks), and
 # MKDOCS must run the site build the workflow pins (a command with arguments,
@@ -27,8 +28,8 @@ RUN=${RUN:-$HOME/atlas-audit-runs/$STAMP}
 mkdir -p "$RUN"
 
 # Autoform skips .lake and build directories, as this does.
-if [ -n "$(find v1 \( -name .lake -o -name build \) -prune -o -name '*.lean' -print -quit 2>/dev/null)" ]; then
-  echo "v1/ is checked out; run: git sparse-checkout set --no-cone '/*' '!/v1/'" >&2
+if [ -n "$(find v1 Atlas \( -name .lake -o -name build \) -prune -o -name '*.lean' -print -quit 2>/dev/null)" ]; then
+  echo "v1/ or Atlas/ is checked out; run: git sparse-checkout set --no-cone '/*' '!/v1/' '!/Atlas/'" >&2
   exit 1
 fi
 if [ -n "$(git status --porcelain)" ]; then
