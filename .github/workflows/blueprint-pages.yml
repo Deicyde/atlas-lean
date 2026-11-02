@@ -17,19 +17,11 @@ on:
       - ".github/autoform-ref"
       - ".github/workflows/blueprint-pages.yml"
       - "!v1/**"
-  # The same paths, so a pull request that changes the Lean is checked against
-  # the wiki before it merges.
+  # Every pull request and merge queue group runs, whatever it changes, so the
+  # wiki job can be a required check. One that changes none of the paths above
+  # skips the build; see the pick job.
   pull_request:
-    paths:
-      - "**/*.lean"
-      - "blueprint/**"
-      - "scripts/**"
-      - "mkdocs.yml"
-      - "theme/**"
-      - "hooks/**"
-      - ".github/autoform-ref"
-      - ".github/workflows/blueprint-pages.yml"
-      - "!v1/**"
+  merge_group:
   workflow_dispatch:
     inputs:
       newest:
@@ -46,10 +38,11 @@ env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
 
 # Runs that publish queue one behind another, so deploys and pins land in
-# order. Each pull request gets a group of its own, where a newer push replaces
-# its run, so pull requests don't cancel each other's checks or a waiting deploy.
+# order. Each pull request and merge queue group gets a group of its own, where
+# a newer push to the pull request replaces its run, so checks don't cancel
+# each other or a waiting deploy.
 concurrency:
-  group: blueprint-pages-${{ github.event_name == 'pull_request' && github.ref || 'publish' }}
+  group: blueprint-pages-${{ (github.event_name == 'pull_request' || github.event_name == 'merge_group') && github.ref || 'publish' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
@@ -66,6 +59,7 @@ jobs:
     outputs:
       ref: ${{ steps.pick.outputs.ref }}
       new: ${{ steps.pick.outputs.new }}
+      skip: ${{ steps.changes.outputs.skip }}
     steps:
       - name: Check out project
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -85,10 +79,31 @@ jobs:
           fi
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
 
+      # The paths the push trigger lists, as one pattern.
+      - name: Check whether the change touches what the build reads
+        id: changes
+        if: github.event_name == 'pull_request' || github.event_name == 'merge_group'
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
+        run: |
+          git fetch --quiet --depth=1 origin "$BASE"
+          git diff --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
+          if grep -v '^v1/' "$RUNNER_TEMP/changed" |
+            grep -qE '\.lean$|^(blueprint|scripts|theme|hooks)/|^mkdocs\.yml$|^\.github/(autoform-ref|workflows/blueprint-pages\.yml)$'; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    # ci.yml has a job named build too, and required checks are matched by name.
+    name: build the wiki
     needs: pick
-    # A daily run with nothing new to try builds nothing.
-    if: github.event_name != 'schedule' || needs.pick.outputs.new == 'true'
+    # A daily run with nothing new to try builds nothing, and neither does a
+    # change that touches nothing the build reads.
+    if: >-
+      (github.event_name != 'schedule' || needs.pick.outputs.new == 'true') &&
+      needs.pick.outputs.skip != 'true'
     runs-on: ubuntu-latest
     env:
       AUTOFORM_REF: ${{ needs.pick.outputs.ref }}
@@ -189,6 +204,21 @@ jobs:
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
+
+  # The check to require before merging. A skipped job counts as passing, so
+  # the build alone would pass when the pick job failed and skipped it.
+  wiki:
+    needs: [pick, build]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require a build that passed or had nothing to check
+        env:
+          PICK: ${{ needs.pick.result }}
+          BUILD: ${{ needs.build.result }}
+        run: |
+          echo "pick: $PICK, build: $BUILD"
+          [ "$PICK" = success ] && { [ "$BUILD" = success ] || [ "$BUILD" = skipped ]; }
 
   pin:
     needs: [pick, build, deploy]
