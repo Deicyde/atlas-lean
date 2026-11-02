@@ -1,33 +1,88 @@
 # Builds the ATLAS v2 libraries and dumps, for every declaration, the v2
-# declarations its statement and proof use. The wiki generator collapses the
-# dump onto articles (scripts/extract_v2_lean_dependencies.py).
+# declarations its statement and proof use. scripts/extract_v2_lean_dependencies.py
+# collapses the dump onto the roadmap's articles, into
+# blueprint/sources/v2/lean-dependencies.json, which gives the wiki its
+# "Depends on" lists. The run fails when the committed file differs from what
+# this Lean gives, and its lean-dependencies artifact then holds a patch with
+# the file and the pages regenerated from it.
 
 name: v2 dependencies
 
 on:
   push:
-    branches: ["wiki/**"]
+    branches: [main, "wiki/**"]
+    # Everything the file is computed from: the compiled v2 libraries, and the
+    # articles scripts/generate_wiki.py writes from their sources with the
+    # pinned Autoform.
     paths:
       - ".github/workflows/v2-dependencies.yml"
+      - ".github/autoform-ref"
       - "scripts/dump_v2_dependencies.lean"
       - "scripts/extract_v2_lean_dependencies.py"
+      - "scripts/generate_wiki.py"
       - "blueprint/roadmap/**"
+      - "blueprint/sources/v2/lean-dependencies.json"
       - "MathlibExt/**"
       - "CSLibExt/**"
       - "WantedExt/**"
       - "lake-manifest.json"
       - "lean-toolchain"
+  # Every pull request and merge queue group runs, whatever it changes, so the
+  # edges job can be a required check. One that changes none of the paths
+  # above skips the dump; see the changes job.
+  pull_request:
+  merge_group:
   workflow_dispatch:
 
 permissions:
   contents: read
 
+env:
+  AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
+
+# A newer push to a pull request cancels its run. On a branch a newer push
+# replaces a run still waiting, so a burst of merges cancels none that started:
+# a cancelled run fails its edges job.
 concurrency:
   group: v2-dependencies-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.changes.outputs.skip }}
+    steps:
+      - name: Check out project
+        if: github.event_name == 'pull_request' || github.event_name == 'merge_group'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # The paths the push trigger lists, as one pattern. Both sides of a rename
+      # are listed, and names aren't quoted, so a path that leaves the list or
+      # holds a non-ASCII character still counts.
+      - name: Check whether the change touches what the edges come from
+        id: changes
+        if: github.event_name == 'pull_request' || github.event_name == 'merge_group'
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
+        run: |
+          git fetch --quiet --depth=1 origin "$BASE"
+          git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
+          if grep -qE \
+            -e '^(MathlibExt|CSLibExt|WantedExt|blueprint/roadmap)/' \
+            -e '^blueprint/sources/v2/lean-dependencies\.json$' \
+            -e '^scripts/(dump_v2_dependencies\.lean|extract_v2_lean_dependencies\.py|generate_wiki\.py)$' \
+            -e '^\.github/(autoform-ref|workflows/v2-dependencies\.yml)$' \
+            -e '^(lake-manifest\.json|lean-toolchain)$' \
+            "$RUNNER_TEMP/changed"; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   dump:
+    needs: changes
+    if: needs.changes.outputs.skip != 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     steps:
@@ -90,9 +145,13 @@ jobs:
           grep -E '^(✖|error:)' build.log > build-failures.txt || true
           cat build-failures.txt
 
-      # Saved even after a failed build, so the next run only rebuilds what is missing.
+      # Saved even after a failed build, so the next run only rebuilds what is
+      # missing. Pull requests and merge queue groups restore it, but don't
+      # save their own, which would push the branch's out of the cache.
       - name: Save local build
-        if: always() && steps.build-cache.outputs.cache-hit != 'true'
+        if: >-
+          always() && steps.build-cache.outputs.cache-hit != 'true' &&
+          github.event_name != 'pull_request' && github.event_name != 'merge_group'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .lake/build
@@ -141,11 +200,60 @@ jobs:
           wc -l < v2-dependencies.jsonl
           gzip -9 v2-dependencies.jsonl
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      # The articles are the roadmap's `lean:` targets, which generate_wiki.py
+      # writes from the Lean sources, so the pages are regenerated first.
+      - name: Regenerate the pages
+        run: uv run --no-project --with "git+${AUTOFORM_SOURCE}@$(cat .github/autoform-ref)" python scripts/generate_wiki.py
+
+      # The file names this workflow as its source, not this run: a run's URL
+      # would make every patch change that line, and any two patched pull
+      # requests conflict on it.
       - name: Collapse dependencies onto the exact roadmap article manifest
         run: >-
           python scripts/extract_v2_lean_dependencies.py
           v2-dependencies.jsonl.gz
-          "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          .github/workflows/v2-dependencies.yml
+
+      - name: Regenerate the pages with these edges
+        run: uv run --no-project --with "git+${AUTOFORM_SOURCE}@$(cat .github/autoform-ref)" python scripts/generate_wiki.py
+
+      # The patch holds the file and every page the generator writes differently
+      # from the committed one. A pull request's run checks its merge with the
+      # base, so the patch fits that merge, and the author merges the same base
+      # before applying it.
+      - name: Compare the edges with the committed ones
+        run: |
+          if [ -s build-failures.txt ]; then
+            echo "::error::Some v2 modules don't build (see the build step), so the edges can't be checked."
+            exit 1
+          fi
+          if git show HEAD:blueprint/sources/v2/lean-dependencies.json | diff -u - blueprint/sources/v2/lean-dependencies.json > edges.diff; then
+            echo "The committed edges are this Lean's."
+            exit 0
+          fi
+          head -n 200 edges.diff
+          git add -A blueprint
+          git diff --cached --binary > lean-dependencies.patch
+          apply="gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n lean-dependencies && git apply lean-dependencies.patch"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            apply="git fetch ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY} ${base} && git merge --no-edit ${base} && ${apply}"
+          fi
+          echo "::error::blueprint/sources/v2/lean-dependencies.json differs from this Lean's edges (diff above). Apply the patch this run made, with the file and the pages generated from it: ${apply}"
+          exit 1
+
+      - name: Keep the patch
+        if: failure() && hashFiles('lean-dependencies.patch') != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lean-dependencies
+          path: lean-dependencies.patch
+          retention-days: 14
 
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
@@ -158,3 +266,18 @@ jobs:
             build-failures.txt
             blueprint/sources/v2/lean-dependencies.json
           retention-days: 14
+
+  # The check to require before merging. A skipped job counts as passing, so
+  # the dump alone would pass when the changes job failed and skipped it.
+  edges:
+    needs: [changes, dump]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require a dump that passed or had nothing to check
+        env:
+          CHANGES: ${{ needs.changes.result }}
+          DUMP: ${{ needs.dump.result }}
+        run: |
+          echo "changes: $CHANGES, dump: $DUMP"
+          [ "$CHANGES" = success ] && { [ "$DUMP" = success ] || [ "$DUMP" = skipped ]; }
