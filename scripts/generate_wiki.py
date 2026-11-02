@@ -40,6 +40,11 @@ MAX_MODULE_CHILDREN = 120
 RESERVED_HEADINGS = {"contents", "depends on", "mathematical overview", "proof depends on", "sources"}
 
 SUBJECTS = {
+    "Biology": (
+        "Biology",
+        "Mathematical biology models populations, genomes, and biochemical networks, from coalescents and "
+        "reaction dynamics to the algorithms that read biological sequences.",
+    ),
     "Computability": (
         "Computability",
         "Computability studies which mathematical processes can be carried out by algorithms and how such "
@@ -179,6 +184,7 @@ LIBRARIES = {
         {
             "Algorithms": "ComputerScience",
             "AutomatedReasoning": "Logic",
+            "Bioinformatics": "Biology",
             "Coding": "InformationTheory",
             "Complexity": "TheoryOfComputation",
             "Crypto": "ComputerScience",
