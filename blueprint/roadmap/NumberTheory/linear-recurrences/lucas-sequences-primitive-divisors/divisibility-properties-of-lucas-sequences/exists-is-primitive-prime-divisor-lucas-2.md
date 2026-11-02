@@ -15,7 +15,7 @@ $1 \le s < n$.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../primitive-divisors/is-primitive-prime-divisor.md)
 - [Nondegenerate Lucas pair](../lucas-sequences/is-nondegenerate-lucas-pair.md)
 - [Parameters of a Lucas sequence](../lucas-sequences/lucas-sequence-params.md)
 - [Lucas sequence $U(P, Q)$](../lucas-sequences/lucas-u.md)

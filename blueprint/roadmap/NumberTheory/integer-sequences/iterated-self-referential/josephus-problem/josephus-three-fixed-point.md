@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

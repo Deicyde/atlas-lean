@@ -3,12 +3,13 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.hasEigenvalue_mul_iff
+lean: MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm.ContinuousLinearMap.hasEigenvalue_mul_iff
 ---
 
-# Nonzero eigenvalues of fg and gf coincide, for endomorphisms
+# Nonzero eigenvalues of ST and TS coincide
 
-**Nonzero eigenvalues of fg and gf coincide, for endomorphisms.** The `*` form of `hasEigenvalue_comp_iff`.
+**Nonzero eigenvalues of ST and TS coincide.** A nonzero scalar is an eigenvalue of `S * T` iff it is an eigenvalue of
+`T * S`, for bounded operators.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonzero eigenvalues of fg and gf coincide](has-eigenvalue-comp-iff.md)
+- [Nonzero eigenvalues of fg and gf coincide, for endomorphisms](has-eigenvalue-mul-iff-2.md)
 
 ## Sources
 
-- [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)
+- [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../sources/v2/MathlibExt.md)

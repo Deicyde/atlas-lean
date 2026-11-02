@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Goldstine's theorem](../duality-and-weak-topologies/part-01/goldstine.md)
+- [Goldstine's theorem](../duality-and-weak-topologies/goldstine.md)
 
 ## Sources
 

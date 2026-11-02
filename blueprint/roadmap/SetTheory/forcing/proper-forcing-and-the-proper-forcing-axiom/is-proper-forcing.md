@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Club families of countable sets](../../infinitary-combinatorics/clubs-and-stationary-sets-in-p/is-club-omega.md)
+- [Club families of countable sets](../../infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/is-club-omega.md)
 - [(M, ℙ)-generic conditions](is-generic-for.md)
 - [Conditions in a model](model-conds.md)
 

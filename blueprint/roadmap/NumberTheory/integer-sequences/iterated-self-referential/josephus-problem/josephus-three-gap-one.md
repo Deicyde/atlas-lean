@@ -22,7 +22,7 @@ Here $n_1 = 2$ and $n_2 = 13$, and the three pure high extremal points counted a
 
 ## Proof depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 - [Enumeration of the positive fixed points of $J_3$](josephus-three-fixed-point.md)
 - [Second positive fixed point of the Josephus function for step three](josephus-three-fixed-point-one.md)
 - [The third positive fixed point of $J_3$ is $13$](josephus-three-fixed-point-two.md)

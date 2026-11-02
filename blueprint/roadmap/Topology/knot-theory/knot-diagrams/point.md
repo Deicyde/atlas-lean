@@ -14,7 +14,7 @@ $\gamma_i(t) \in \mathbb{R}^3$.
 
 ## Depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized link](../knots-links-and-ambient-isotopy/parametrized-link.md)
 - [Parameter point](param-point.md)
 

@@ -16,7 +16,7 @@ $$\sum_{k=0}^{n} \binom{n}{n-k}_2 w^{n+k} = \frac{(1+w+w^2)^n}{2} + \frac{\binom
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

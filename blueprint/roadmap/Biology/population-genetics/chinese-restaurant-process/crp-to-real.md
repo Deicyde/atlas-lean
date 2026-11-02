@@ -17,7 +17,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.crp_toReal
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
 - [Law of the Chinese restaurant process](crp-apply.md)
 
 ## Sources

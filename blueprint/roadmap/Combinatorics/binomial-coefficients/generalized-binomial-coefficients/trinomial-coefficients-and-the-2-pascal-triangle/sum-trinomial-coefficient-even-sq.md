@@ -24,7 +24,7 @@ $n = 1$ the left side is $1$ while $\frac{1}{2}\binom{2}{1}_2 + \frac{1}{2}\bino
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ flattening of $t$.
 - [Ordering invariant for 2-3 trees of unspecified height](ordered-2.md)
 - [Inorder traversal of a 2-3 tree root](flatten-2.md)
 - [Insertion into a 2-3 tree root](insert.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Proof depends on
 

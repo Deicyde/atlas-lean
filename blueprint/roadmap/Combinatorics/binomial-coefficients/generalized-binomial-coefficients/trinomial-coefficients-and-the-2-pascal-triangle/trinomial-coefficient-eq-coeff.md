@@ -16,7 +16,7 @@ The paper also allows negative integers $k$; that case is not included here.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

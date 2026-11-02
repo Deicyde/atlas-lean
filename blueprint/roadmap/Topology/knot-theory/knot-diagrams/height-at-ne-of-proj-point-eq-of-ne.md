@@ -25,7 +25,7 @@ over/under is therefore derived from the parametrization rather than chosen.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized knot](../knots-links-and-ambient-isotopy/parametrized-knot.md)
 - [Point of a link at a parameter point](point.md)
 - [Height in the standard projection frame](height.md)

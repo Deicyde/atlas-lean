@@ -14,7 +14,7 @@ of $L$ equals the image of the trace of $L$ under the standard projection to the
 
 ## Depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized link](../knots-links-and-ambient-isotopy/parametrized-link.md)
 - [Projected curve of a link component](proj-curve.md)
 - [Trace of a parametrized link](../knots-links-and-ambient-isotopy/trace.md)

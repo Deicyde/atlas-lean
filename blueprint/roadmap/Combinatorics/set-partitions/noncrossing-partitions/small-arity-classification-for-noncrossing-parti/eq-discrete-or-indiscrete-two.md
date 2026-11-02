@@ -19,9 +19,9 @@ of $\{0, 1\}$ is either the discrete or the indiscrete noncrossing partition of 
 
 ## Proof depends on
 
-- [A partition has a block exactly when its ground set is nonempty](../../finite-set-partitions/card-parts-pos-iff.md)
-- [Recognizing the partition into singletons by its number of blocks](../../finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
-- [Recognizing the one-block partition](../../finite-set-partitions/eq-top-iff-card-parts-eq-one.md)
+- [A partition has a block exactly when its ground set is nonempty](../../block-sizes-and-pullbacks-of-set-partitions/card-parts-pos-iff.md)
+- [Recognizing the partition into singletons by its number of blocks](../../block-sizes-and-pullbacks-of-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Recognizing the one-block partition](../../block-sizes-and-pullbacks-of-set-partitions/eq-top-iff-card-parts-eq-one.md)
 - [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
 - [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [Characterization of the discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/eq-discrete-iff-val-eq-bot.md)

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Groups satisfying a set of laws](../../formations-and-fitting-classes/formations-of-p-groups-and-varieties/satisfies-laws.md)
+- [Groups satisfying a set of laws](../../soluble-finite-groups/formations/formations-of-p-groups-and-varieties/satisfies-laws.md)
 
 ## Sources
 

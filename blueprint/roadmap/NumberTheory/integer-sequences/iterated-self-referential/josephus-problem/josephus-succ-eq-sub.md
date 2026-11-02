@@ -13,7 +13,7 @@ number with $\ell(n+1) + 1 \le p + k \le (\ell+1)(n+1)$, then $J_k(n+1) = p + k 
 
 ## Depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

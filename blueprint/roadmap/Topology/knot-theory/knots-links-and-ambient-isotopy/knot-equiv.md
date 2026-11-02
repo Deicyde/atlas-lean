@@ -18,7 +18,7 @@ whose inverse sends a parametrized knot to the knot with the same parametrizatio
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized knots as knots](of-parametrized-knot.md)
 - [Knots as parametrized knots](to-parametrized-knot.md)
 - [Euclidean space $\mathbb{R}^3$](r3.md)

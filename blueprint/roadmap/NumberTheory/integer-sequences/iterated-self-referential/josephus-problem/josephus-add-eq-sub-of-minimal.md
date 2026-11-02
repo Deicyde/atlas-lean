@@ -17,7 +17,7 @@ the statement fails at $k = 4$, $n = 1$, $m = 1$.
 
 ## Depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

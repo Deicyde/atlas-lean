@@ -10,4 +10,3 @@ Point estimation theory: bias, risk and mean squared error, likelihood and maxim
 - [Rao–Blackwell theorem](rao-blackwell-theorem/README.md)
 - [Stein's lemma and James–Stein estimation](stein-s-lemma-and-james-stein-estimation/README.md)
 - [Sufficient statistics and the factorization theorem](sufficient-statistics-and-the-factorization-theo/README.md)
-- [Taylor's power law](taylor-s-power-law/README.md)

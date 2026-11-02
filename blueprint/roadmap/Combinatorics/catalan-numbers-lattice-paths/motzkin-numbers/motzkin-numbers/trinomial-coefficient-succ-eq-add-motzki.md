@@ -17,7 +17,7 @@ $$T(n+1) = T(n) + 2n\,M(n-1).$$
 ## Depends on
 
 - [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/trinomial-coefficient.md)
 
 ## Proof depends on
 

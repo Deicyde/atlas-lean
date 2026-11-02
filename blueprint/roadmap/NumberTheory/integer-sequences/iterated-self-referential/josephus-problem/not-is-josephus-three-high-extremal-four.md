@@ -19,7 +19,7 @@ Indeed $J_3(4) = 1$.
 
 ## Proof depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

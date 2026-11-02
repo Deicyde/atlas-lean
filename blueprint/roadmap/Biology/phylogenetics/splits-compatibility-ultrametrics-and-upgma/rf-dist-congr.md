@@ -14,13 +14,13 @@ up to isomorphism.
 ## Depends on
 
 - [Robinson–Foulds distance](rf-dist.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
-- [Isomorphism of unrooted binary phylogenetic trees](../counting-unrooted-binary-phylogenetic-trees/iso.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](../counting-binary-phylogenetic-trees/iso.md)
 
 ## Proof depends on
 
-- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
-- [Isomorphic trees have the same clusters](../counting-unrooted-binary-phylogenetic-trees/cluster-set-eq-of-iso.md)
+- [Cluster set of a tree seen from a leaf](../counting-binary-phylogenetic-trees/cluster-set.md)
+- [Isomorphic trees have the same clusters](../counting-binary-phylogenetic-trees/cluster-set-eq-of-iso.md)
 
 ## Sources
 

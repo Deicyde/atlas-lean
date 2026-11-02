@@ -17,7 +17,7 @@ sum $\sum_{j=0}^{2^d - 1} \omega^{jk} x_j$.
 ## Depends on
 
 - [Radix-two FFT on arrays](fft-array.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Proof depends on
 

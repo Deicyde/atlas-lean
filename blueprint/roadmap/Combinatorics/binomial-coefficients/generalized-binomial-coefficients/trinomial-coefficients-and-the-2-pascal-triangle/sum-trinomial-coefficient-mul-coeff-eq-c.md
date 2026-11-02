@@ -29,7 +29,7 @@ $b = -c < 0$; $\binom{u}{j}_2$ for complex $u$ is Comtet's extension (the paper'
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

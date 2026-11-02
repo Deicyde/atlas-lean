@@ -20,7 +20,7 @@ infinitely many Sierpiński numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ w
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-divisors/is-primitive-prime-divisor.md)
 - [Sierpiński number](is-sierpinski-number.md)
 - [Repstrings](repstring.md)
 

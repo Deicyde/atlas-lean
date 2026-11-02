@@ -12,7 +12,6 @@ Existence and uniqueness (Cauchy–Peano, Picard, maximal solutions), linear sys
 - [Lyapunov's indirect method](lyapunov-s-indirect-method/README.md)
 - [Maximal solutions and global existence](maximal-solutions-and-global-existence/README.md)
 - [Nonresonant forced oscillator](exists-unique-periodic-solution-and-is-b.md)
-- [One-dimensional Dirichlet problem](one-dimensional-dirichlet-problem/README.md)
 - [One-parameter groups of matrices](one-parameter-groups-of-matrices/README.md)
 - [Picard iteration](picard-iteration/README.md)
 - [Solutions of $xu''+2u'+u=0$ have infinitely many zeros](set-infinite-zero-of-mul-iterated-deriv.md)

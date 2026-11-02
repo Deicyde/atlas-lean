@@ -18,8 +18,8 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.crp_apply
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Removing the last customer undoes a seating](comap-cast-succ-seat.md)
 - [Seating multiplies the closed-form law by the seating probability](crp-prob-seat.md)
 - [One step of the Chinese restaurant process](crp-step.md)

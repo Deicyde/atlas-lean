@@ -7,5 +7,4 @@ Divisor sums, totients, Möbius and multiplicative functions, their mean values 
 - [Multiplicative functions and mean values](multiplicative-functions/README.md)
 - [Integers with restricted factorization](special-integer-classes/README.md)
 - [Arithmetic derivative](arithmetic-derivative/README.md)
-- [Matching integers with distinct multiples in an interval](matching-integers-with-distinct-multiples-in-an/README.md)
 - [The LCM product identity](lcm-product-identity.md)

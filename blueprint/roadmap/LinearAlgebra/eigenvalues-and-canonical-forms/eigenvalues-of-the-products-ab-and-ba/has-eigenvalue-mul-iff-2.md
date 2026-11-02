@@ -3,13 +3,12 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.Matrix.hasEigenvalue_mul_iff
+lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.hasEigenvalue_mul_iff
 ---
 
-# Nonzero eigenvalues of matrix products AB and BA coincide
+# Nonzero eigenvalues of fg and gf coincide, for endomorphisms
 
-**Nonzero eigenvalues of matrix products AB and BA coincide.** A nonzero scalar is an eigenvalue of the matrix product `A * B` iff it is
-an eigenvalue of `B * A`.
+**Nonzero eigenvalues of fg and gf coincide, for endomorphisms.** The `*` form of `hasEigenvalue_comp_iff`.
 
 ## Depends on
 

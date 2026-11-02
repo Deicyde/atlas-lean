@@ -15,7 +15,7 @@ $\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \binom{2k}{k}$.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/trinomial-coefficient.md)
 
 ## Sources
 

@@ -6,9 +6,6 @@ navigation: module
 
 - [Poisson likelihood of an observed count](poisson-lik.md)
 - [Positivity of the Poisson likelihood](poisson-lik-pos.md)
-
-## LOEUF
-
 - [Flat-prior posterior of `γ`](flat-posterior-density.md)
 - [Upper confidence bound for the observed/expected ratio](oe-upper.md)
 - [LOEUF](loeuf.md)
@@ -18,11 +15,19 @@ navigation: module
 - [LOEUF of a gene with no observed LoF variants](loeuf-zero.md)
 - [Observed/expected upper bound increases with the observed count](oe-upper-strict-mono.md)
 - [Observed/expected upper bound decreases with the expected count](oe-upper-strict-anti-on.md)
-
-## pLI
-
 - [Posterior class probability in the Poisson mixture](class-posterior.md)
 - [Class posteriors sum to one](sum-class-posterior.md)
 - [Recursion for the Poisson likelihood](poisson-lik-succ.md)
 - [pLI is antitone in the observed count](class-posterior-antitone.md)
 - [Class posterior is strictly antitone in the observed count](class-posterior-strict-anti.md)
+- [Strictly positive class weights summing to one](pos-weights.md)
+- [Loss-of-function count data for a gene](gene-data.md)
+- [Joint likelihood of gene data and constraint class](joint.md)
+- [Positivity of the Poisson mixture joint likelihood](joint-pos.md)
+- [Expected number of genes in a constraint class](mass.md)
+- [Positivity of the class masses](mass-pos.md)
+- [Class masses sum to the number of genes](sum-mass.md)
+- [EM update of the Poisson mixture class weights](em-step.md)
+- [The M-step maximizes `Q(· | w)`](em-q-le-em-step.md)
+- [EM does not decrease the likelihood](log-lik-le-log-lik-em-step.md)
+- [Monotonicity of the log-likelihood along the class-weight EM iterates](log-lik-iterate-em-step-monotone.md)

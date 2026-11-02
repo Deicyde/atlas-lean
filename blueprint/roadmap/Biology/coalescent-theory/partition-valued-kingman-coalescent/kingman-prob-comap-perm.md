@@ -13,15 +13,15 @@ formula.
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Set partitions of a labeled sample](sample-partition.md)
 - [Kingman's formula](kingman-prob.md)
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
-- [Pull-back along an equivalence preserves block-size products](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod-comap-equiv.md)
-- [Pull-back along an equivalence preserves the number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/card-parts-comap-equiv.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
+- [Pull-back along an equivalence preserves block-size products](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod-comap-equiv.md)
+- [Pull-back along an equivalence preserves the number of blocks](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-parts-comap-equiv.md)
 
 ## Sources
 

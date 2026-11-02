@@ -18,7 +18,7 @@ $$(n + 1)\,T_{n+1} = (2n + 1)\,T_n + 3n\,T_{n-1}.$$
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](../trinomial-coefficients-and-the-2-pascal-triangle/trinomial-coefficient.md)
 
 ## Sources
 

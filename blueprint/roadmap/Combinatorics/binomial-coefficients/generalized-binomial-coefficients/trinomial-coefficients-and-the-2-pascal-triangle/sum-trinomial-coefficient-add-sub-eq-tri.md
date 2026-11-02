@@ -20,7 +20,7 @@ The sequence $(T_{2n})$ is the bisection A099463.
 ## Depends on
 
 - [Tribonacci sequence](../../../../NumberTheory/linear-recurrences/higher-order-sequences/tribonacci-numbers/tribonacci.md)
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

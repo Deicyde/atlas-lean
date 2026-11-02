@@ -13,14 +13,14 @@ lean: BitVec.adjoinRoot_root_pow
 ## Depends on
 
 - [Fixed-width binary words as residues modulo a monic polynomial](adjoin-root-equiv.md)
-- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
 
 ## Proof depends on
 
 - [Forward map of the binary word residue equivalence](adjoin-root-equiv-apply.md)
 - [Bitwise xor corresponds to residue addition](adjoin-root-equiv-xor.md)
-- [Coefficients of the binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/coeff-to-polynomial.md)
-- [Binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial.md)
+- [Coefficients of the binary polynomial of a bitvector](coeff-to-polynomial.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
 
 ## Sources
 

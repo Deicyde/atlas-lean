@@ -21,7 +21,7 @@ partition of $\{0, 1, 2\}$.
 
 ## Proof depends on
 
-- [Recognizing the partition into singletons by its number of blocks](../../finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Recognizing the partition into singletons by its number of blocks](../../block-sizes-and-pullbacks-of-set-partitions/eq-bot-iff-card-parts-eq-card.md)
 - [Characterization of the discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/eq-discrete-iff-val-eq-bot.md)
 
 ## Sources

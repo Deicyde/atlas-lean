@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.SpeciesTree.s
 
 ## Depends on
 
-- [Planar rooted binary tree with labeled leaves](../../phylogenetics/counting-rooted-binary-phylogenetic-trees/plane-tree.md)
+- [Planar rooted binary tree with labeled leaves](../../phylogenetics/counting-binary-phylogenetic-trees/plane-tree.md)
 - [Rooted binary species tree with branch lengths](species-tree.md)
 
 ## Sources

@@ -18,7 +18,7 @@ $h_k^{p-1}(k-1) \ge k - 1 = n(k-1)$, so no such $p$ exists.
 
 ## Depends on
 
-- [Josephus survivor function](../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](../../../NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/josephus.md)
 - [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources

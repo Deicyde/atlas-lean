@@ -14,7 +14,7 @@ irreducible.
 ## Depends on
 
 - [Exhaustive search for an irreducible binary modulus](find-irreducible-modulus.md)
-- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
+- [Monic binary modulus of a fixed-width word](../../../ComputerScience/algebraic-and-numerical-algorithms/binary-polynomial-arithmetic-on-bitvectors/monic-modulus.md)
 
 ## Proof depends on
 

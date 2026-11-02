@@ -22,7 +22,7 @@ $\sum_{j \in \mathbb{Z}/n\mathbb{Z}} e^{-2\pi i jk/n} x_j$.
 ## Proof depends on
 
 - [Correctness of the radix-two FFT](fft-correct.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Sources
 

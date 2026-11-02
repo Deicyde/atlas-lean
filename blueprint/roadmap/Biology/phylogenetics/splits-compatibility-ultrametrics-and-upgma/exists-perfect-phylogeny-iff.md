@@ -16,7 +16,7 @@ two of its columns show all four gametes.
 
 - [Four-gamete condition for binary characters](four-gametes.md)
 - [Perfect phylogeny for a binary character matrix](is-perfect-phylogeny.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 

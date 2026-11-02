@@ -17,12 +17,12 @@ with $1 \le m < n$.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../primitive-divisors/is-primitive-prime-divisor.md)
 - [Exceptional cases of Zsigmondy's theorem](is-bang-zsigmondy-exceptional.md)
 
 ## Proof depends on
 
-- [Primitive divisor of an integer sequence](../primitive-prime-divisors/is-primitive-divisor.md)
+- [Primitive divisor of an integer sequence](../primitive-divisors/is-primitive-divisor.md)
 
 ## Sources
 

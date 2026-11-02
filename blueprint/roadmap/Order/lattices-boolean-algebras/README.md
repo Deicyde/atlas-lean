@@ -3,5 +3,4 @@
 Lattices and Boolean algebras, their representation theorems, and Boolean functions viewed as maps between Boolean lattices.
 
 - [Lattice valuations and the Jaccard distance](lattice-valuations-and-the-jaccard-distance/README.md)
-- [Self-dual Boolean functions](self-dual-boolean-functions/README.md)
 - [Stone representation theorem](stone-representation-theorem.md)

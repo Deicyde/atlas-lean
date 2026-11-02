@@ -20,7 +20,7 @@ ropelength of $L_1$ equals the ropelength of $L_2$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Smooth ambient isotopy of Euclidean 3-space](ambient-isotopy.md)
 - [Composition of ambient isotopies](comp.md)
 - [Inverse ambient isotopy](symm.md)

@@ -19,7 +19,7 @@ $n$ components are isotopic, then $L_1$ and $L_2$ have the same crossing number.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Smooth ambient isotopy of Euclidean 3-space](../knots-links-and-ambient-isotopy/ambient-isotopy.md)
 - [Composition of ambient isotopies](../knots-links-and-ambient-isotopy/comp.md)
 - [Inverse ambient isotopy](../knots-links-and-ambient-isotopy/symm.md)

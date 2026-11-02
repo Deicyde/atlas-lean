@@ -21,7 +21,7 @@ $(12)(345678)$, $(1234)(5678)$, $(12)(34)(5678)$ and $(12)(34)(56)(78)$.
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
 
 ## Sources
 

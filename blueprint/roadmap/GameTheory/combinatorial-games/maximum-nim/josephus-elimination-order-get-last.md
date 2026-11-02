@@ -15,7 +15,7 @@ function for elimination step $k$.
 
 ## Depends on
 
-- [Josephus survivor function](../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](../../../NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/josephus.md)
 - [Josephus elimination order](josephus-elimination-order.md)
 
 ## Proof depends on

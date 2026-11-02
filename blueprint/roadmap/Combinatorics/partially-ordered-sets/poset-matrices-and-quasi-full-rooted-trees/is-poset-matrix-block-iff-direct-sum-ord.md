@@ -21,7 +21,7 @@ iterating it.
 
 ## Depends on
 
-- [Poset matrix](../../../Order/ordered-sets/poset-matrices/is-poset-matrix.md)
+- [Poset matrix](is-poset-matrix.md)
 
 ## Sources
 

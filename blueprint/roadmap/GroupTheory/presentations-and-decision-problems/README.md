@@ -2,6 +2,7 @@
 
 Combinatorial group theory: presentations, one-relator groups, HNN extensions and embeddings, SQ-universality, finitely presented simple groups, the word and conjugacy problems (Novikov–Boone, Boone–Higman), Andrews–Curtis moves, generic properties of presentations and torsion quotients.
 
+- [Braid and Artin groups](braid-and-artin/README.md)
 - [Andrews–Curtis moves](andrews-curtis-moves/README.md)
 - [Baumslag–Gersten group](baumslag-gersten-group/README.md)
 - [Boone–Higman theorem](boone-higman-theorem/README.md)

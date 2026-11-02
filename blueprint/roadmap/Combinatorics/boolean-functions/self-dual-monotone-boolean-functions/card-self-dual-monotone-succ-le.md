@@ -13,7 +13,7 @@ of monotone Boolean functions on $n$ variables.
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
 
 ## Sources
 

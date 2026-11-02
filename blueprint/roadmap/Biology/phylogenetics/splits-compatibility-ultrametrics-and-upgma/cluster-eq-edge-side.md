@@ -14,8 +14,8 @@ neighbor `p` toward `a`.
 ## Depends on
 
 - [Side of a tree edge containing a vertex](edge-side.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
-- [Cluster of a vertex seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Cluster of a vertex seen from a leaf](../counting-binary-phylogenetic-trees/cluster.md)
 
 ## Proof depends on
 

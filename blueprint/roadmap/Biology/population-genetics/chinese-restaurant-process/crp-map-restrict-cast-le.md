@@ -13,13 +13,13 @@ first `m ≤ n` customers gives the process with `m` customers.
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Chinese restaurant process](crp.md)
 
 ## Proof depends on
 
-- [Pulling back a partition along a composite](../../../Combinatorics/set-partitions/finite-set-partitions/comap-comap.md)
-- [Pulling back a partition along the identity](../../../Combinatorics/set-partitions/finite-set-partitions/comap-refl.md)
+- [Pulling back a partition along a composite](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap-comap.md)
+- [Pulling back a partition along the identity](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap-refl.md)
 - [Consistency of the Chinese restaurant process](crp-map-restrict.md)
 
 ## Sources

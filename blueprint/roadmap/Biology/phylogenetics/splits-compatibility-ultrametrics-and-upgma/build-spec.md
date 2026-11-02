@@ -20,7 +20,7 @@ way, splitting along any cut.
 - [Cluster system displaying a triplet](displays-triplet.md)
 - [Cut in the Aho graph](has-aho-cut.md)
 - [Rooted triplet](triplet.md)
-- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
+- [Binary hierarchy on a finite set](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md)
 
 ## Sources
 

@@ -5,7 +5,6 @@ Spectra and spectral theorems: self-adjoint, normal and compact self-adjoint spe
 - [Almost Mathieu operator](almost-mathieu-operator/README.md)
 - [Approximate point spectrum](approximate-point-spectrum/README.md)
 - [Cayley transform](cayley-transform/README.md)
-- [Eigenvalues of products in either order](eigenvalues-of-products-in-either-order/README.md)
 - [Ground-state energy of dilute Bose gases](ground-state-energy-of-dilute-bose-gases/README.md)
 - [Krein–Rutman theorem for $C(K)$](krein-rutman.md)
 - [Numerical range and numerical radius](numerical-range-and-numerical-radius/README.md)

@@ -17,7 +17,7 @@ $f' = 0$.
 ## Depends on
 
 - [High extremal points of the Josephus function $J_3$](is-josephus-three-high-extremal.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

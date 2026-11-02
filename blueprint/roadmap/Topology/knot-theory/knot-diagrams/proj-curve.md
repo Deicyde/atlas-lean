@@ -19,7 +19,7 @@ $\pi(x_0, x_1, x_2) = (x_0, x_1)$ is the standard projection forgetting the thir
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized knot](../knots-links-and-ambient-isotopy/parametrized-knot.md)
 - [Standard projection to the plane](plane.md)
 

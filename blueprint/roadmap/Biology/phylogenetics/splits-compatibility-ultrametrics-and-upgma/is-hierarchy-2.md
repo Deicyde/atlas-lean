@@ -13,7 +13,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.IsBinaryHierarchy.isHierarchy
 ## Depends on
 
 - [Hierarchy on a finite set](is-hierarchy.md)
-- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
+- [Binary hierarchy on a finite set](../counting-binary-phylogenetic-trees/is-binary-hierarchy.md)
 
 ## Sources
 

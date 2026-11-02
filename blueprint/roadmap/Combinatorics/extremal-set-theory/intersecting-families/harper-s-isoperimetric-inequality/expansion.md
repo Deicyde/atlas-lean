@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Closed Hamming ball](../../../../InformationTheory/error-correcting-codes/hamming-balls/ball.md)
+- [Closed Hamming ball](../../../../InformationTheory/error-correcting-codes/bounds-on-code-size/ball.md)
 
 ## Sources
 

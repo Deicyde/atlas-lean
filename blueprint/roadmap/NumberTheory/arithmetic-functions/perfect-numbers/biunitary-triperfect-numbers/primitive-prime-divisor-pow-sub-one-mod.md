@@ -18,7 +18,7 @@ Bang–Zsigmondy theorem.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-divisors/is-primitive-prime-divisor.md)
 
 ## Sources
 

@@ -19,8 +19,8 @@ some positive Birkhoff sum of `g`, then `∫_E g dμ ≥ 0`.
 
 - [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
 - [Invariant set is invariant under every iterate](iterate.md)
-- [Maximal ergodic theorem](../maximal-ergodic-theorem/garsia-maximal-inequality.md)
-- [Maximal Birkhoff partial sum](../maximal-ergodic-theorem/max-partial-sum.md)
+- [Maximal ergodic theorem](garsia-maximal-inequality.md)
+- [Maximal Birkhoff partial sum](max-partial-sum.md)
 
 ## Sources
 

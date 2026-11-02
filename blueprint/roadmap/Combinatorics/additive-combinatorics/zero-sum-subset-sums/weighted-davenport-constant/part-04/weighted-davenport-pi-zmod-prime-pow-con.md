@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_const
+---
+
+# Weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$
+
+**Weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$.** Let $p$ be a prime and let
+$a, e, r$ be natural numbers with $1 \le a \le e$ and $r \ge 1$. Let $A$ be a finite set of
+natural numbers with $p^{e-a} \in A \subseteq \{1, \dots, \lceil p^e/(p^a - 1) \rceil - 1\}$.
+Then the $A$-weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$ is
+$D_A((\mathbb{Z}/p^e\mathbb{Z})^r) = 1 + r(p^a - 1)$.
+
+## Depends on
+
+- [Weighted Davenport constant](../part-01/weighted-davenport.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Additive.WeightedDavenportWanted](../../../../../../sources/v2/WantedExt.md)
+- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 3 (`integers-2026-A89-cor-3`).

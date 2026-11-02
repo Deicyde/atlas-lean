@@ -20,7 +20,7 @@ $p \ge 1$ satisfies $p \le \lceil v \rceil$.
 
 ## Depends on
 
-- [Josephus survivor function](../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](../../../NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/josephus.md)
 - [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources

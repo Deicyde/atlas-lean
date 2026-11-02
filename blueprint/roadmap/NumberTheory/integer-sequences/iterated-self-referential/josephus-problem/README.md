@@ -4,6 +4,10 @@ navigation: module
 
 # Josephus problem
 
+- [Josephus survivor function](josephus.md)
+- [The Josephus function at one](josephus-one.md)
+- [Euler recurrence for the Josephus function](josephus-succ.md)
+- [Range of the Josephus function](josephus-range.md)
 - [Enumeration of the positive fixed points of $J_3$](josephus-three-fixed-point.md)
 - [Gaps between consecutive positive fixed points of $J_3$](josephus-three-gap.md)
 - [Base-3/2 digits](base-three-halves-digits.md)

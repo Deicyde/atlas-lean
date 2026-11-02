@@ -3,7 +3,6 @@
 Statistical methods for genome-wide association studies, heritability estimation from summary statistics, fine-mapping, Mendelian randomization and gene constraint scores.
 
 - [Bayesian fine-mapping and colocalization](bayesian-fine-mapping-and-colocalization/README.md)
-- [EM estimation of the pLI constraint mixture](em-estimation-of-the-pli-constraint-mixture/README.md)
 - [Gene constraint scores (pLI and LOEUF)](gene-constraint-scores-pli-and-loeuf/README.md)
 - [Genomic prediction from summary statistics](genomic-prediction-from-summary-statistics/README.md)
 - [Imputation of association summary statistics](imputation-of-association-summary-statistics/README.md)

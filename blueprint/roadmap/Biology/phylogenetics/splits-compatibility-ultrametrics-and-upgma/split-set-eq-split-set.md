@@ -13,7 +13,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.splitSet_eq_splitSet
 ## Depends on
 
 - [Split set of a tree computed from a leaf](split-set.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 

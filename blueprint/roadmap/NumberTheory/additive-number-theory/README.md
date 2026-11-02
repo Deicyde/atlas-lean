@@ -2,7 +2,6 @@
 
 Representing integers as sums from special sets: additive bases and complements, sumsets of integers, subset sums, primitive sets, zero-sum constants.
 
-- [Additive bases](additive-bases/README.md)
 - [Disproof of Erdős Problem 1 on distinct subset sums](conjecture-refuted.md)
 - [Distinct multiples in an interval](distinct-multiples-in-an-interval/README.md)
 - [Erdős minimum overlap problem](erd-s-minimum-overlap-problem/README.md)
@@ -20,4 +19,3 @@ Representing integers as sums from special sets: additive bases and complements,
 - [Sums of numbers of the form 2^k 3^l](sums-of-numbers-of-the-form-2-k-3-l/README.md)
 - [Sums of powers of consecutive primes](sums-of-powers-of-consecutive-primes/README.md)
 - [Sums of practical and polygonal numbers](sums-of-practical-and-polygonal-numbers/README.md)
-- [Weighted zero-sum constants](weighted-zero-sum-constants/README.md)

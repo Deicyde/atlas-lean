@@ -27,8 +27,8 @@ The bound is the paper's $\lambda_{n+1} \le (d_n + \lambda_n) / 2$ with the divi
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
-- [Dual of a Boolean function](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/boolean-function-dual.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

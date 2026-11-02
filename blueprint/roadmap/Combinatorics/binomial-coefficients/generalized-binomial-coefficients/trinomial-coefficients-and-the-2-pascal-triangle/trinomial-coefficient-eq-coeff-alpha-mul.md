@@ -23,7 +23,7 @@ $\sqrt{8 - 6t^2} = \sqrt{2}\,S$, the factors $\sqrt{2}$ in its formula for $\alp
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

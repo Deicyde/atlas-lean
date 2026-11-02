@@ -3,13 +3,12 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.Matrix.finite_genEigenspace_mul_iff
+lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finite_genEigenspace_mul_iff
 ---
 
-# Generalized eigenspaces of AB and BA are finite-dimensional together
+# Generalized eigenspaces finite-dimensional together, for endomorphisms
 
-**Generalized eigenspaces of AB and BA are finite-dimensional together.** The generalized eigenspaces of rectangular products in opposite orders
-are finite-dimensional together for a nonzero scalar and every exponent.
+**Generalized eigenspaces finite-dimensional together, for endomorphisms.** The `*` form of `finite_genEigenspace_comp_iff`.
 
 ## Depends on
 

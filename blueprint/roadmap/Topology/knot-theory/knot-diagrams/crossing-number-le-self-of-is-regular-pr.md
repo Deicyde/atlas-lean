@@ -21,7 +21,7 @@ $L$ is at most the number of crossings of this projection.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Smooth ambient isotopy of Euclidean 3-space](../knots-links-and-ambient-isotopy/ambient-isotopy.md)
 - [Identity ambient isotopy](../knots-links-and-ambient-isotopy/id.md)
 - [Orientation-preserving reparametrization of the circle](../knots-links-and-ambient-isotopy/circle-reparam.md)

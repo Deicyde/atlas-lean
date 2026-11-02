@@ -16,7 +16,7 @@ Part 1 of the paper's lemma, $f^{**} = f$, holds for every Boolean function.
 
 ## Depends on
 
-- [Dual of a Boolean function](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/boolean-function-dual.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

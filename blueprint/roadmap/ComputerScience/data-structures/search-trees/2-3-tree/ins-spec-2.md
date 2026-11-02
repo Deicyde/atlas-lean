@@ -34,7 +34,7 @@ Balance is automatic from the height index.
 - [All-keys predicate agrees with the flattening on 2-3 trees](all-iff-forall-flatten.md)
 - [Inorder traversal of a 2-3 tree](flatten.md)
 - [Accumulated inorder traversal of a 2-3 tree](flatten-aux.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

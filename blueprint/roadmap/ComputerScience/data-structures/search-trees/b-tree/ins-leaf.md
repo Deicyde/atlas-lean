@@ -22,7 +22,7 @@ Here subtraction of natural numbers is truncated at $0$.
 ## Proof depends on
 
 - [Raw B-trees](btree.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

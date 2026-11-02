@@ -16,11 +16,11 @@ one tree (`exists_tree_majoritySplits_subset`).
 
 - [Bootstrap support](bootstrap-support.md)
 - [Majority splits of a family of trees](majority-splits.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 
-- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
+- [Cluster set of a tree seen from a leaf](../counting-binary-phylogenetic-trees/cluster-set.md)
 
 ## Sources
 

@@ -29,5 +29,4 @@ The mathematical study of what can be computed and at what cost: machine models,
 - [Probabilistically checkable proofs and inapproximability](pcp-and-inapproximability/README.md)
 - [Completeness for other complexity classes](completeness-other-classes/README.md)
 - [Problems solvable in polynomial time](polynomial-time-problems/README.md)
-- [Distributed computing](distributed-computing/README.md)
 - [Fine-grained and exponential-time complexity](fine-grained-complexity/README.md)

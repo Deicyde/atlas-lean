@@ -4,7 +4,6 @@ Fourier analysis on finite abelian groups and the Boolean cube: DFT and FFT, Pla
 
 - [Convolution theorem for the discrete Fourier transform](inv-dft-mul-dft.md)
 - [Donoho–Stark uncertainty principle](donoho-stark-uncertainty-principle/README.md)
-- [Fast Fourier transform](fast-fourier-transform/README.md)
 - [Fourier analysis on the Boolean cube](fourier-analysis-on-the-boolean-cube/README.md)
 - [Fourier transform on finite abelian groups](fourier-transform-on-finite-abelian-groups/README.md)
 - [Hausdorff–Young inequality on finite abelian groups](hausdorff-young-inequality-on-finite-abelian-gro/README.md)

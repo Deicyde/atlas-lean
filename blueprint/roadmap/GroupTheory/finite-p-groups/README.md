@@ -16,7 +16,6 @@ Groups of prime-power order: composition series, Frattini subgroups and Φ-exten
 - [Large automorphism groups of p-groups](large-automorphism-groups-of-p-groups/README.md)
 - [Normal subgroups of exponent p in p-groups](normal-subgroups-of-exponent-p-in-p-groups/README.md)
 - [Orders of 2-groups of bounded abelian rank](orders-of-2-groups-of-bounded-abelian-rank/README.md)
-- [Orders of automorphism groups of p-groups](orders-of-automorphism-groups-of-p-groups/README.md)
 - [p-groups with special maximal subgroups](p-groups-with-special-maximal-subgroups/README.md)
 - [Partitions of p-groups](partitions-of-p-groups/README.md)
 - [Powerful p-groups](powerful-p-groups/README.md)

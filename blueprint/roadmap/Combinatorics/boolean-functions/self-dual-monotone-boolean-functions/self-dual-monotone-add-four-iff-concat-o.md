@@ -28,9 +28,9 @@ $a, b, c, d, e, f, g, h \in D_n$ satisfying these inequalities.
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
 - [Concatenation of a list of Boolean functions](boolean-cube-concat.md)
-- [Dual of a Boolean function](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/boolean-function-dual.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

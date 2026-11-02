@@ -15,7 +15,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.restr
 
 ## Proof depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ of $F_m$ for $m > 12$ is a separate statement.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../../lucas-sequences-primitive-divisors/primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../lucas-sequences-primitive-divisors/primitive-divisors/is-primitive-prime-divisor.md)
 
 ## Sources
 

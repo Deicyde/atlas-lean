@@ -13,12 +13,12 @@ the first `n` customers.
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Seating a customer by a seating choice](seat.md)
 
 ## Proof depends on
 
-- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/finite-set-partitions/mem-comap-parts.md)
+- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/mem-comap-parts.md)
 
 ## Sources
 

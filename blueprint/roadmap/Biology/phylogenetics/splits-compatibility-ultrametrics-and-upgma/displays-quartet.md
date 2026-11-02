@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.DisplaysQuartet
 
 ## Depends on
 
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 

@@ -21,7 +21,7 @@ $$b - J_3(b) = f - (1 - r)(2f - 1), \qquad b \bmod 2 = s - (1 - r)(1 - f)(2s - 1
 ## Depends on
 
 - [High extremal points of the Josephus function $J_3$](is-josephus-three-high-extremal.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

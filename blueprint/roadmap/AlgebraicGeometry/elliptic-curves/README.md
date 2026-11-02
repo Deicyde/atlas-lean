@@ -4,7 +4,6 @@ Elliptic curves given by Weierstrass equations, their points over finite fields 
 
 - [Galois action on torsion points](galois-action-on-torsion-points/README.md)
 - [Hasse bound](hasse-bound/README.md)
-- [Mazur's torsion theorem](mazur-torsion-ncard-le.md)
 - [Néron–Ogg–Shafarevich criterion, easy direction](good-reduction-torsion-unramified.md)
 - [Point counts and Frobenius traces](point-counts-and-frobenius-traces/README.md)
 - [Supersingular elliptic curves](supersingular-elliptic-curves/README.md)

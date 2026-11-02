@@ -12,13 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.timeL
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Set partitions of a labeled sample](sample-partition.md)
 - [Time-t marginal of Kingman's coalescent](time-law.md)
 
 ## Proof depends on
 
-- [Pull-back along an equivalence preserves the number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/card-parts-comap-equiv.md)
+- [Pull-back along an equivalence preserves the number of blocks](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-parts-comap-equiv.md)
 - [Generator of Kingman's block-counting process](../ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
 - [Kingman's formula](kingman-prob.md)
 - [Kingman's formula is invariant under relabeling](kingman-prob-comap-perm.md)

@@ -21,7 +21,7 @@ same vector as running the FFT procedure on $x$ with root $\overline{\omega}$.
 ## Proof depends on
 
 - [Correctness of the radix-two FFT](fft-correct.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Sources
 

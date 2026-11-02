@@ -17,7 +17,7 @@ and $2k - 1$ is low extremal. In particular, $2k - 2$ is always a low or a high 
 
 - [High extremal point of the Josephus function](is-high-extremal.md)
 - [Low extremal point of the Josephus function](is-low-extremal.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

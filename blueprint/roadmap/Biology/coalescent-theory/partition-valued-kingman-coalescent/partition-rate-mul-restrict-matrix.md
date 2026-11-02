@@ -19,8 +19,8 @@ intertwines the rate matrices of the `(n + 1)`- and `n`-coalescents.
 
 ## Proof depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
-- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/finite-set-partitions/mem-comap-parts.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
+- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/mem-comap-parts.md)
 - [Partition obtained by merging two blocks](is-merge.md)
 
 ## Sources

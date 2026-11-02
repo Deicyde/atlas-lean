@@ -4,8 +4,6 @@ navigation: module
 
 # Two-locus coalescent
 
-## The two-locus ancestral process of a sample of two
-
 - [States of the two-locus ancestral process](two-locus-state.md)
 - [Sum over the two-locus ancestral states](sum-univ.md)
 - [Coalescence indicator at locus A](coalesced-a.md)
@@ -28,9 +26,6 @@ navigation: module
 - [Two-locus covariance is at most one](two-locus-cov-le-one.md)
 - [Two-locus covariance decreases with recombination rate](antitone-on-two-locus-cov.md)
 - [Two-locus covariance vanishes under free recombination](tendsto-two-locus-cov-at-top.md)
-
-## The Ohta–Kimura moment system
-
 - [Linkage disequilibrium polynomial](diseq-poly.md)
 - [Frequency of allele A as a polynomial](freq-fst-poly.md)
 - [Frequency of allele B as a polynomial](freq-snd-poly.md)
@@ -46,3 +41,7 @@ navigation: module
 - [Ohta–Kimura `σ_d²`](sigma-dsq-eq.md)
 - [Ohta–Kimura formula for $\sigma_d^2$ without mutation](sigma-dsq-zero.md)
 - [Low-mutation limit of $\sigma_d^2$](tendsto-sigma-dsq-zero.md)
+- [Mean coalescence time at locus `A`, path form](lintegral-coalescence-time-a.md)
+- [Mean coalescence time at locus `B`, path form](lintegral-coalescence-time-b.md)
+- [Product moment of the two coalescence times, path form](lintegral-coalescence-time-a-mul-coalesc.md)
+- [Covariance of the coalescence times, path form](covariance-coalescence-times.md)

@@ -7,6 +7,6 @@ Absolute heights of algebraic numbers, Mahler measure, Lehmer's problem, Dobrowo
 - [Cyclotomic integers of small house](cyclotomic-integers-of-small-house/README.md)
 - [Dimitrov's lower bound for the house of an algebraic integer](dimitrov.md)
 - [Lehmer's Mahler measure problem](lehmer-s-mahler-measure-problem/README.md)
-- [Mahler measure](mahler-measure/README.md)
+- [Multivariable Mahler measure](multivariable-mahler-measure/README.md)
 - [Pisot numbers](pisot-numbers/README.md)
 - [Schur–Siegel–Smyth trace problem](schur-siegel-smyth-trace-problem/README.md)

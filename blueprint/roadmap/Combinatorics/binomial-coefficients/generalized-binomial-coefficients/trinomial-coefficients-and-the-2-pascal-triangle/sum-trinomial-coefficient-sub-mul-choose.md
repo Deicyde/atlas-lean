@@ -13,7 +13,7 @@ $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{n-k}{m}_2 = \binom{n}{m-n}$.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

@@ -33,8 +33,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Closed Hamming ball](../hamming-balls/ball.md)
-- [Size of a Hamming ball](../hamming-balls/card-ball.md)
+- [Closed Hamming ball](ball.md)
+- [Size of a Hamming ball](card-ball.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ lean: ProbabilityTheory.tiePartition_snoc_eq_seat_none_iff
 
 ## Proof depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Every partition arises from seating the last customer](../../../Biology/population-genetics/chinese-restaurant-process/exists-seat-eq.md)
 - [Seating a customer at an occupied table](../../../Biology/population-genetics/chinese-restaurant-process/join-table.md)
 - [Seating a customer at a new table](../../../Biology/population-genetics/chinese-restaurant-process/new-table.md)

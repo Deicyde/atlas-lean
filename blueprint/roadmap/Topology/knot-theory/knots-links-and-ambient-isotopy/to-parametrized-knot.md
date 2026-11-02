@@ -18,7 +18,7 @@ parametrized knot with the same parametrization $\gamma$.
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources

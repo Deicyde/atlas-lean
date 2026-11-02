@@ -14,7 +14,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.compatible_of_mem_edgeSplits
 
 - [Compatible splits](compatible.md)
 - [Edge splits of a tree](edge-splits.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 

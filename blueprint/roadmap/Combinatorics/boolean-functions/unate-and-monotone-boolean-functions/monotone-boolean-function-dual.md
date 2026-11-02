@@ -16,7 +16,7 @@ the function whose truth table is that of $f$ reversed.
 
 ## Depends on
 
-- [Dual of a Boolean function](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/boolean-function-dual.md)
+- [Dual of a Boolean function](../self-dual-monotone-boolean-functions/boolean-function-dual.md)
 
 ## Sources
 

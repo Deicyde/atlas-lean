@@ -15,8 +15,8 @@ is $f^\pi$.
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
-- [Dual of a Boolean function](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/boolean-function-dual.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

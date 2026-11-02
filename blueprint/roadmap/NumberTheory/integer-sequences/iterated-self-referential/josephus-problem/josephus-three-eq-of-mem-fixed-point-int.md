@@ -18,7 +18,7 @@ $$J_3(n) = 3n + 1 - \left(\tfrac{2}{3}\right)^{m - \mathfrak{m}} (2b + 1).$$
 ## Depends on
 
 - [Fixed points of the Josephus function $J_3$](is-josephus-three-fixed-point.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

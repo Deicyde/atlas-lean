@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Countable subsets of a set](../../infinitary-combinatorics/clubs-and-stationary-sets-in-p/countable-subsets-of-a-set.md)
+- [Countable subsets of a set](../../infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/countable-subsets-of-a-set.md)
 - [Orthogonality to a family of sets](is-orthogonal-to.md)
 - [P-ideal of countable sets](is-pideal.md)
 

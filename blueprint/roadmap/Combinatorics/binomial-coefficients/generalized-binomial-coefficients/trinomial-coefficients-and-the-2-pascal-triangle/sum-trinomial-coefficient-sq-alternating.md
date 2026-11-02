@@ -13,7 +13,7 @@ $\sum_{k=0}^{2n} (-1)^k \binom{n}{k}_2^2 = \binom{n}{n}_2$.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

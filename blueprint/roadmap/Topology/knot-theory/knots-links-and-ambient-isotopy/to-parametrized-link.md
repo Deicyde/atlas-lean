@@ -19,7 +19,7 @@ whose component $1$ is the parametrized knot with the same parametrization as $L
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Knots as parametrized knots](to-parametrized-knot.md)
 - [Oriented smooth knot](knot.md)
 - [Euclidean space $\mathbb{R}^3$](r3.md)

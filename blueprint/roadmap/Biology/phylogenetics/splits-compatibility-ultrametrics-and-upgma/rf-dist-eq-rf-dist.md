@@ -13,7 +13,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.rfDist_eq_rfDist
 ## Depends on
 
 - [Robinson–Foulds distance](rf-dist.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 

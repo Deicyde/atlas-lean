@@ -2,7 +2,6 @@
 
 Fourier series on the circle and torus: Fejér and Dirichlet kernels, pointwise and Cesàro convergence, Riemann–Lebesgue, uniqueness, absolutely convergent series and Wiener's theorems, periodic convolution, Fourier optimization on the torus.
 
-- [Absolute convergence of Fourier series of C¹ functions](absolute-convergence-of-fourier-series-of-c-func/README.md)
 - [Absolutely convergent Fourier series](absolutely-convergent-fourier-series/README.md)
 - [Brezis–Gallouët inequality on the two-dimensional torus](brezis-gallou-t-inequality-on-the-two-dimensiona/README.md)
 - [Convergence of Fourier series](convergence-of-fourier-series/README.md)

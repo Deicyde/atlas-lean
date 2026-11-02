@@ -24,8 +24,8 @@ the inorder traversal of $t$.
 ## Proof depends on
 
 - [Insertion into a 2-3 tree is ordered insertion into its traversal](flatten-insert.md)
-- [Members after ordered insertion](../../linear-structures/ordered-insertion-into-a-list/mem-ordered-insert.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Members after ordered insertion](../../linear-structures/list-operations/mem-ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

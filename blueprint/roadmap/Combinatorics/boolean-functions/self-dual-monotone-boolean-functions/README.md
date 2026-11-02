@@ -4,6 +4,12 @@ navigation: module
 
 # Self-dual monotone Boolean functions
 
+- [Complement of a Boolean vector](boolean-vector-complement.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
+- [Complementation of Boolean vectors is an involution](boolean-vector-complement-complement.md)
+- [Duality of Boolean functions is an involution](boolean-function-dual-dual.md)
+- [Coordinate projections are self-dual monotone](self-dual-monotone-proj.md)
 - [Concatenation of a list of Boolean functions](boolean-cube-concat.md)
 - [Concatenation at the all-false input](boolean-cube-concat-false.md)
 - [Currying monotone Boolean functions (Lemma 1)](monotone-boolean-function-order-iso-curr.md)

@@ -18,7 +18,7 @@ $\Phi_n(a, b)$ is $1$.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../primitive-divisors/is-primitive-prime-divisor.md)
 - [Homogenized cyclotomic value](../../../algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/homogenized-cyclotomic.md)
 
 ## Sources

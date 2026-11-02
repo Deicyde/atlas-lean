@@ -17,7 +17,7 @@ The paper states this for an indeterminate $z$, with $\sqrt{z}$ in place of $s$.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

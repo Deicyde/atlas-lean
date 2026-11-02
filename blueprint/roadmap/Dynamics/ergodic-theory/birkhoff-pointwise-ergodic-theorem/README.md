@@ -30,3 +30,5 @@ navigation: module
 - [Birkhoff limit is a conditional expectation on invariant sets](birkhoff-limit-ae-eq-cond-exp.md)
 - [Birkhoff's pointwise ergodic theorem](tendsto-birkhoff-average-cond-exp-ae.md)
 - [Birkhoff limit of an ergodic map is the space average](birkhoff-limit-ae-eq-integral-of-ergodic.md)
+- [Maximal Birkhoff partial sum](max-partial-sum.md)
+- [Maximal ergodic theorem](garsia-maximal-inequality.md)

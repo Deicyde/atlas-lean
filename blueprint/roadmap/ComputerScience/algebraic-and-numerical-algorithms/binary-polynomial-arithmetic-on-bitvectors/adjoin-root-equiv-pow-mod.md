@@ -13,9 +13,9 @@ lean: BitVec.adjoinRootEquiv_powMod
 ## Depends on
 
 - [Fixed-width binary words as residues modulo a monic polynomial](adjoin-root-equiv.md)
-- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
 - [Modular powering of binary polynomial residues](pow-mod.md)
-- [Binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
 
 ## Proof depends on
 

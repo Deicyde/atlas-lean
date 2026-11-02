@@ -4,8 +4,7 @@ Reconstruction of evolutionary trees from sequence data: substitution models, li
 
 - [Atteson's theorem on neighbor joining](atteson-s-theorem-on-neighbor-joining/README.md)
 - [Codon substitution models and dN/dS](codon-substitution-models-and-dn-ds/README.md)
-- [Counting rooted binary phylogenetic trees](counting-rooted-binary-phylogenetic-trees/README.md)
-- [Counting unrooted binary phylogenetic trees](counting-unrooted-binary-phylogenetic-trees/README.md)
+- [Counting binary phylogenetic trees](counting-binary-phylogenetic-trees/README.md)
 - [Felsenstein's pruning algorithm](felsenstein-s-pruning-algorithm/README.md)
 - [Jukes–Cantor model](jukes-cantor-model/README.md)
 - [Maximum-likelihood ancestral reconstruction](maximum-likelihood-ancestral-reconstruction/README.md)

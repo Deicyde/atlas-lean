@@ -20,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Kadec–Klee property, weak-topology form](tendsto-of-tendsto-weak-space-and-tendst.md)
-- [Convergence under every functional gives weak convergence](../../duality-and-weak-topologies/part-02/weak-topology-and-weak-convergence/tendsto-weak-space-of-forall-tendsto.md)
+- [Convergence under every functional gives weak convergence](../../duality-and-weak-topologies/weak-topology-and-weak-convergence/tendsto-weak-space-of-forall-tendsto.md)
 
 ## Sources
 

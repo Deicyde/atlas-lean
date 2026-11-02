@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weak convergence gives convergence under every functional](../../../banach-spaces/duality-and-weak-topologies/part-02/weak-topology-and-weak-convergence/forall-tendsto-of-tendsto-weak-space.md)
+- [Weak convergence gives convergence under every functional](../../../banach-spaces/duality-and-weak-topologies/weak-topology-and-weak-convergence/forall-tendsto-of-tendsto-weak-space.md)
 - [Complete continuity of compact operators](tendsto-apply-of-is-compact-operator-of.md)
 
 ## Sources

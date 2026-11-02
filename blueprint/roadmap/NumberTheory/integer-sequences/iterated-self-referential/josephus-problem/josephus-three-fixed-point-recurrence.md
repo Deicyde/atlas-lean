@@ -17,7 +17,7 @@ $b = (3^m (3a + 2) - 2^m) / 2^{m+1}$.
 ## Depends on
 
 - [Fixed points of the Josephus function $J_3$](is-josephus-three-fixed-point.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

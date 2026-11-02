@@ -14,9 +14,9 @@ coefficients.
 ## Depends on
 
 - [Fixed-width binary words as residues modulo a monic polynomial](adjoin-root-equiv.md)
-- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
-- [The binary modulus is monic](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus-monic.md)
-- [Bitvector of the low coefficients of a binary polynomial](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-bit-vec.md)
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
+- [The binary modulus is monic](monic-modulus-monic.md)
+- [Bitvector of the low coefficients of a binary polynomial](to-bit-vec.md)
 
 ## Sources
 

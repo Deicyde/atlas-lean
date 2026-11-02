@@ -15,8 +15,8 @@ the taxon `a` suffice; they are the rooted triplets seen from `a`.
 ## Depends on
 
 - [Tree displaying a quartet](displays-quartet.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
-- [Isomorphism of unrooted binary phylogenetic trees](../counting-unrooted-binary-phylogenetic-trees/iso.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](../counting-binary-phylogenetic-trees/iso.md)
 
 ## Proof depends on
 
@@ -27,9 +27,9 @@ the taxon `a` suffice; they are the rooted triplets seen from `a`.
 - [Clusters seen from a leaf omit that leaf](not-mem-of-mem-cluster-set.md)
 - [Split set of a tree computed from a leaf](split-set.md)
 - [Split set from any leaf equals the edge splits](split-set-eq-edge-splits.md)
-- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
-- [Clusters of an unrooted tree form a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
-- [Clusters determine an unrooted binary tree](../counting-unrooted-binary-phylogenetic-trees/iso-of-cluster-set-eq.md)
+- [Cluster set of a tree seen from a leaf](../counting-binary-phylogenetic-trees/cluster-set.md)
+- [Clusters of an unrooted tree form a binary hierarchy](../counting-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
+- [Clusters determine an unrooted binary tree](../counting-binary-phylogenetic-trees/iso-of-cluster-set-eq.md)
 
 ## Sources
 

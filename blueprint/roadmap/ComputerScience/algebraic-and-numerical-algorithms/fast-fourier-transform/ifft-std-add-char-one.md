@@ -22,7 +22,7 @@ of $k$; that is, it equals $N^{-1} \sum_{j=0}^{N-1} e^{-2\pi i jk/N} x_j$.
 ## Proof depends on
 
 - [Correctness of the inverse FFT](ifft-correct.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Sources
 

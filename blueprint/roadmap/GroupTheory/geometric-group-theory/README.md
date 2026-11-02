@@ -2,6 +2,7 @@
 
 Large-scale and analytic properties of finitely generated groups: growth, word-hyperbolic groups and their quotients, amenability and Følner sets, elementary amenable groups, property (T), soficity and permutation stability.
 
+- [Branch, automaton and Thompson groups](branch-and-thompson-groups/README.md)
 - [Amenable groups](amenable-groups/README.md)
 - [Elementary amenable groups](elementary-amenable-groups/README.md)
 - [Finitely generated simple amenable groups](finitely-generated-simple-amenable-groups/README.md)

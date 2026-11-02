@@ -21,7 +21,7 @@ partition `π` of a sample of `n` (so `π` has at least one block when `n ≥ 1`
 
 ## Proof depends on
 
-- [A partition has a block exactly when its ground set is nonempty](../../../Combinatorics/set-partitions/finite-set-partitions/card-parts-pos-iff.md)
+- [A partition has a block exactly when its ground set is nonempty](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-parts-pos-iff.md)
 - [Generator of Kingman's block-counting process](../ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
 - [Tavaré's formula](../ancestral-lineage-counting-and-tavar-s-formula/exp-block-counting-generator-apply.md)
 - [Number of blocks of a sample partition](num-blocks.md)

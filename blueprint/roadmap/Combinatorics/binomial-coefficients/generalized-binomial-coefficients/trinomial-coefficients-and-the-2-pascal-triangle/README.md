@@ -4,6 +4,10 @@ navigation: module
 
 # Trinomial coefficients and the 2-Pascal triangle
 
+- [Trinomial coefficient](trinomial-coefficient.md)
+- [Trinomial transform](trinomial-transform-sequence.md)
+- [Zeroth term of the trinomial transform](trinomial-transform-sequence-zero.md)
+- [Trinomial transform of the zero sequence](trinomial-transform-sequence-zero-apply.md)
 - [Fundamental theorem of Riordan arrays](riordan-array-sum-eq-coeff-subst.md)
 - [Trinomial coefficients as coefficients of a rational series](trinomial-coefficient-eq-coeff.md)
 - [Roots-of-unity filter for trinomial coefficients](sum-trinomial-coefficient-arith-prog.md)

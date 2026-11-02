@@ -22,7 +22,7 @@ sum for $T_n$ and an elementary termwise binomial identity.
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/trinomial-coefficient.md)
 
 ## Proof depends on
 

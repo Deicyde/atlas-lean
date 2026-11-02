@@ -3,12 +3,13 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finrank_eigenspace_mul_eq
+lean: MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm.ContinuousLinearMap.finrank_eigenspace_mul_eq
 ---
 
-# Geometric multiplicities of fg and gf agree, for endomorphisms
+# Equal geometric multiplicities of nonzero eigenvalues of ST and TS
 
-**Geometric multiplicities of fg and gf agree, for endomorphisms.** The `*` form of `finrank_eigenspace_comp_eq`.
+**Equal geometric multiplicities of nonzero eigenvalues of ST and TS.** The geometric multiplicities of a nonzero eigenvalue of `S * T` and of
+`T * S` agree, for bounded operators.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Geometric multiplicities of fg and gf agree](finrank-eigenspace-comp-eq.md)
+- [Geometric multiplicities of fg and gf agree, for endomorphisms](finrank-eigenspace-mul-eq-2.md)
 
 ## Sources
 
-- [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)
+- [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../sources/v2/MathlibExt.md)

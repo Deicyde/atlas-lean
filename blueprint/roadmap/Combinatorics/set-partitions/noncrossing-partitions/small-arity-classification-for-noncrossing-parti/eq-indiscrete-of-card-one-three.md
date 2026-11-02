@@ -21,7 +21,7 @@ partition of $\{0, 1, 2\}$.
 
 ## Proof depends on
 
-- [Recognizing the one-block partition](../../finite-set-partitions/eq-top-iff-card-parts-eq-one.md)
+- [Recognizing the one-block partition](../../block-sizes-and-pullbacks-of-set-partitions/eq-top-iff-card-parts-eq-one.md)
 - [Characterization of the indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources

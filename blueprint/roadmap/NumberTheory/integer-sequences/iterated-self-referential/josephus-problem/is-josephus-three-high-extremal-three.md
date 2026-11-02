@@ -19,7 +19,7 @@ $J_3$; indeed $J_3(3) = 2$.
 
 ## Proof depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

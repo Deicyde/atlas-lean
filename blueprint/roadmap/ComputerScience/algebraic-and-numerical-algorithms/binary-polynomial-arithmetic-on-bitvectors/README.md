@@ -4,6 +4,17 @@ navigation: module
 
 # Binary polynomial arithmetic on bitvectors
 
+- [Degree bound for a polynomial built from a coefficient list](degree-of-coeff-list-lt.md)
+- [Reconstructing a polynomial from a fixed-width coefficient list](of-coeff-list-of-fn-coeff.md)
+- [Bitvector of the low coefficients of a binary polynomial](to-bit-vec.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
+- [Coefficients of the binary polynomial of a bitvector](coeff-to-polynomial.md)
+- [Bitvector encoding recovers the original word](to-bit-vec-to-polynomial.md)
+- [Polynomial encoding recovers a low-degree polynomial](to-polynomial-to-bit-vec.md)
+- [Bitwise xor corresponds to polynomial addition over $\mathbb{F}_2$](to-polynomial-xor.md)
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
+- [The binary modulus is monic](monic-modulus-monic.md)
+- [Degree of the binary modulus](monic-modulus-nat-degree.md)
 - [Multiplication by $X$ of a binary polynomial residue](mul-xmod.md)
 - [Modular multiplication of binary polynomial residues](mul-mod.md)
 - [Modular powering of binary polynomial residues](pow-mod.md)

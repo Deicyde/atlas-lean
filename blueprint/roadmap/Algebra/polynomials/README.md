@@ -4,7 +4,6 @@ Univariate and multivariate polynomials and formal power series as algebraic obj
 
 - [Alternating binomial sums of rational functions](alternating-binomial-sums-of-rational-functions/README.md)
 - [Binomial convolutions of rational power series](binomial-convolutions-of-rational-power-series/README.md)
-- [Bit vectors as binary polynomials](bit-vectors-as-binary-polynomials/README.md)
 - [Coefficient L1 norm of multivariate polynomials](coefficient-l1-norm-of-multivariate-polynomials/README.md)
 - [Coefficients of products with linear factors](coefficients-of-products-with-linear-factors/README.md)
 - [Deep power-sum congruences](deep-power-sum-congruences/README.md)

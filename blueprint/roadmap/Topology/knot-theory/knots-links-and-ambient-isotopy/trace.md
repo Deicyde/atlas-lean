@@ -13,7 +13,7 @@ $\gamma$ is a component of $L$ and $t \in \mathbb{R}$.
 
 ## Depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Parametrized link](parametrized-link.md)
 
 ## Proof depends on

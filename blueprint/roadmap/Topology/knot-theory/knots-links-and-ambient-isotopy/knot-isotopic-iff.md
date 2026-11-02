@@ -21,7 +21,7 @@ with the same parametrizations as $K_1$ and $K_2$ are ambient isotopic as parame
 
 ## Proof depends on
 
-- [Euclidean 3-space](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/r3.md)
+- [Euclidean 3-space](../ropelength-and-crossing-number/r3.md)
 - [Euclidean ambient isotopies as Conway-knot ambient isotopies](of-euclidean-ambient-isotopy.md)
 - [Euclidean circle reparametrizations as Conway-knot ones](of-euclidean-circle-reparam.md)
 - [Conway-knot ambient isotopies as Euclidean ambient isotopies](to-euclidean-ambient-isotopy.md)

@@ -18,7 +18,7 @@ many Riesel numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../linear-recurrences/lucas-sequences-primitive-divisors/primitive-divisors/is-primitive-prime-divisor.md)
 - [Riesel number](is-riesel-number.md)
 - [Repstrings](repstring.md)
 

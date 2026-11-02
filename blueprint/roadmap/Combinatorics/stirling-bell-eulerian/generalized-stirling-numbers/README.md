@@ -8,7 +8,6 @@ Deformations and generalizations of Stirling numbers: r-Stirling, associated Sti
 - [Sum formula for generalized Stirling numbers of the second kind](generalized-stirling-second-eq-sum.md)
 - [(q, r)-Whitney and Dowling numbers](q-r-whitney-and-dowling-numbers/README.md)
 - [Associated Stirling numbers of the second kind](associated-stirling-numbers-of-the-second-kind/README.md)
-- [Factorization of the generalized Stirling matrix](generalized-stirling-matrix-factorizatio.md)
 - [Graphical Stirling and Lah numbers](graphical-stirling-and-lah-numbers/README.md)
 - [Hsu–Shiue generalized Stirling numbers](hsu-shiue-generalized-stirling-numbers/README.md)
 - [Jacobi–Stirling and Legendre–Stirling numbers](jacobi-stirling-and-legendre-stirling-numbers/README.md)

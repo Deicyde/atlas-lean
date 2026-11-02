@@ -14,12 +14,12 @@ half of the trees are both clusters of a common tree (pigeonhole), hence nested 
 ## Depends on
 
 - [Majority splits of a family of trees](majority-splits.md)
-- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Unrooted binary phylogenetic tree](../counting-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Proof depends on
 
-- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
-- [Clusters of an unrooted tree form a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
+- [Cluster set of a tree seen from a leaf](../counting-binary-phylogenetic-trees/cluster-set.md)
+- [Clusters of an unrooted tree form a binary hierarchy](../counting-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
 
 ## Sources
 

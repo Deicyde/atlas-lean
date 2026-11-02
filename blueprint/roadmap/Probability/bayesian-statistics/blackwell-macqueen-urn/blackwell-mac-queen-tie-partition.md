@@ -20,8 +20,8 @@ equal values has the law `α^{|π|} ∏_{B ∈ π} (|B| - 1)! / α^{(n)}`.
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Removing the last customer undoes a seating](../../../Biology/population-genetics/chinese-restaurant-process/comap-cast-succ-seat.md)
 - [Chinese restaurant process](../../../Biology/population-genetics/chinese-restaurant-process/crp.md)
 - [Seating multiplies the closed-form law by the seating probability](../../../Biology/population-genetics/chinese-restaurant-process/crp-prob-seat.md)

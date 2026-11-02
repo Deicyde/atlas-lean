@@ -14,7 +14,7 @@ $kn + f(kn, kn) \le k^2 n + f(n, k^2 n)$.
 
 ## Depends on
 
-- [Least interval length containing distinct multiples](../../arithmetic-functions/matching-integers-with-distinct-multiples-in-an/distinct-multiples-interval-length.md)
+- [Least interval length containing distinct multiples](distinct-multiples-interval-length.md)
 
 ## Sources
 

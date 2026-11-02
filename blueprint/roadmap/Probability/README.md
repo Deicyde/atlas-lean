@@ -30,4 +30,3 @@ Probability studies random phenomena through distributions, expectation, indepen
 - [Linear models and multivariate analysis](linear-models-multivariate/README.md)
 - [Nonparametric statistics and survival analysis](nonparametric-survival/README.md)
 - [Bayesian statistics](bayesian-statistics/README.md)
-- [Mathematical finance](mathematical-finance/README.md)

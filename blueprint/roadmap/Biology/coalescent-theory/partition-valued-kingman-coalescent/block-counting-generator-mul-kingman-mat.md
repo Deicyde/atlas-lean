@@ -21,7 +21,7 @@ form.
 
 ## Proof depends on
 
-- [A partition has a block exactly when its ground set is nonempty](../../../Combinatorics/set-partitions/finite-set-partitions/card-parts-pos-iff.md)
+- [A partition has a block exactly when its ground set is nonempty](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-parts-pos-iff.md)
 - [Partition obtained by merging two blocks](is-merge.md)
 - [Kingman's formula](kingman-prob.md)
 - [Backward equation of Kingman's formula](sum-kingman-prob-is-merge.md)

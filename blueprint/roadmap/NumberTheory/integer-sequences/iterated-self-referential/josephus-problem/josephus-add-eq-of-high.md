@@ -16,7 +16,7 @@ $m \le \lfloor (n_e - (j - 1)) / (k - 1) \rfloor$.
 ## Depends on
 
 - [High extremal point of the Josephus function](is-high-extremal.md)
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

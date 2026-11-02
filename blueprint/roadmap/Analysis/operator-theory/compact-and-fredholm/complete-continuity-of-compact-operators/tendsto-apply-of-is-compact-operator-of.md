@@ -27,8 +27,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weakly convergent sequences are norm-bounded](../../../banach-spaces/duality-and-weak-topologies/part-02/weak-topology-and-weak-convergence/bdd-above-norm-range-of-forall-tendsto.md)
-- [Bounded operators preserve weak convergence](../../../banach-spaces/duality-and-weak-topologies/part-02/weak-topology-and-weak-convergence/tendsto-apply-of-forall-tendsto.md)
+- [Weakly convergent sequences are norm-bounded](../../../banach-spaces/duality-and-weak-topologies/weak-topology-and-weak-convergence/bdd-above-norm-range-of-forall-tendsto.md)
+- [Bounded operators preserve weak convergence](../../../banach-spaces/duality-and-weak-topologies/weak-topology-and-weak-convergence/tendsto-apply-of-forall-tendsto.md)
 
 ## Sources
 

@@ -3,12 +3,13 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finite_genEigenspace_mul_iff
+lean: MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm.ContinuousLinearMap.finite_genEigenspace_mul_iff
 ---
 
-# Generalized eigenspaces finite-dimensional together, for endomorphisms
+# Finite-dimensionality of generalized eigenspaces of ST and TS
 
-**Generalized eigenspaces finite-dimensional together, for endomorphisms.** The `*` form of `finite_genEigenspace_comp_iff`.
+**Finite-dimensionality of generalized eigenspaces of ST and TS.** Generalized eigenspaces of reversed bounded-operator products are
+finite-dimensional together for a nonzero scalar and every exponent.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized eigenspaces of fg and gf are finite-dimensional together](finite-gen-eigenspace-comp-iff.md)
+- [Generalized eigenspaces finite-dimensional together, for endomorphisms](finite-gen-eigenspace-mul-iff-2.md)
 
 ## Sources
 
-- [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)
+- [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../sources/v2/MathlibExt.md)

@@ -38,9 +38,9 @@ root-valid at some height.
 - [Insertion into a B-tree leaf](ins-leaf.md)
 - [Rebuilding an internal node after insertion](mk-node.md)
 - [Splitting a B-tree node](split-node.md)
-- [Members after ordered insertion](../../linear-structures/ordered-insertion-into-a-list/mem-ordered-insert.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
-- [Inserting a present element into a strictly increasing list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert-eq-of-mem.md)
+- [Members after ordered insertion](../../linear-structures/list-operations/mem-ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
+- [Inserting a present element into a strictly increasing list](../../linear-structures/list-operations/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

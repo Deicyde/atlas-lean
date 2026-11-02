@@ -8,6 +8,5 @@ The genetics of continuously varying traits: decomposition of genetic variance, 
 - [Fisher's decomposition of genetic variance](fisher-s-decomposition-of-genetic-variance/README.md)
 - [Genomic relationship matrices](genomic-relationship-matrices/README.md)
 - [Lande's selection gradient](lande-s-selection-gradient/README.md)
-- [Lande's selection gradient for multivariate traits](lande-s-selection-gradient-for-multivariate-trai/README.md)
 - [Linear mixed models and BLUP](linear-mixed-models-and-blup/README.md)
 - [Pedigree kinship and inbreeding](pedigree-kinship-and-inbreeding/README.md)

@@ -23,7 +23,7 @@ Only sums of two terms are stated; sums of $r$ terms follow by iterating.
 
 ## Depends on
 
-- [Poset matrix](../../../Order/ordered-sets/poset-matrices/is-poset-matrix.md)
+- [Poset matrix](is-poset-matrix.md)
 
 ## Sources
 

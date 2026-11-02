@@ -18,7 +18,7 @@ increasing order and counting from $\ell = 0$. Then $n_0 = 1$; this is the paper
 
 ## Proof depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

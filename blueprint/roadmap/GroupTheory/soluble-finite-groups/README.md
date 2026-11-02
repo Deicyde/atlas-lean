@@ -2,6 +2,7 @@
 
 Structure of finite soluble groups: supersolubility criteria, p-solubility and p-length, chief factors and their complements, σ-solubility and σ-nilpotency, Schmidt subgroups, derived length bounds for finite groups of special type, and factorized groups; classes of groups closed under operations go to Formations and Fitting classes.
 
+- [Formations and Fitting classes](formations/README.md)
 - [Abnormal supersoluble factorizations](abnormal-supersoluble-factorizations/README.md)
 - [Alperin groups](alperin-groups/README.md)
 - [Frattini and complemented chief factors](frattini-and-complemented-chief-factors/README.md)

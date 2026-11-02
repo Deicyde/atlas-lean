@@ -22,7 +22,7 @@ stated in the source.
 
 ## Depends on
 
-- [Least interval length containing distinct multiples](../../arithmetic-functions/matching-integers-with-distinct-multiples-in-an/distinct-multiples-interval-length.md)
+- [Least interval length containing distinct multiples](distinct-multiples-interval-length.md)
 
 ## Sources
 

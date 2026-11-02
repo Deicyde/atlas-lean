@@ -5,4 +5,3 @@ Groups carrying a compatible topology: metrizability, profinite groups and profi
 - [Birkhoff–Kakutani metrization theorem](birkhoff-kakutani-metrization.md)
 - [Locally constant compactly supported functions have uniform stabilizers](exists-is-open-one-mem-forall-mul-eq-of.md)
 - [Profinite completion of topological groups](profinite-completion-of-topological-groups/README.md)
-- [Strongly complete profinite groups](strongly-complete-profinite-groups/README.md)

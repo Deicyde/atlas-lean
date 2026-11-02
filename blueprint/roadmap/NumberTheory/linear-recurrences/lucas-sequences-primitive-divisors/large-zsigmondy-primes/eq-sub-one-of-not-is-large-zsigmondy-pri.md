@@ -14,7 +14,7 @@ $(a, b, n)$, then $n = q - 1$.
 
 ## Depends on
 
-- [Primitive prime divisor of an integer sequence](../primitive-prime-divisors/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../primitive-divisors/is-primitive-prime-divisor.md)
 - [Large Zsigmondy prime](is-large-zsigmondy-prime.md)
 
 ## Sources

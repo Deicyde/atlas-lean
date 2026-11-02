@@ -17,7 +17,7 @@ to $0$ for $j \ge N$), that is, $N^{-1} \sum_{j=0}^{N-1} \overline{\omega}^{jk} 
 ## Depends on
 
 - [Inverse FFT by conjugation](ifft.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Proof depends on
 

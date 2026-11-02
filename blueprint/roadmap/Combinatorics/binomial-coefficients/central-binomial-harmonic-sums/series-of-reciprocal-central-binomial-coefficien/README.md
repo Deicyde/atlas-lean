@@ -4,6 +4,8 @@ navigation: module
 
 # Series of reciprocal central binomial coefficients
 
+- [Integrand of the antiderivative condition](tintegrand.md)
+- [Polynomial family defined by an antiderivative](is-poly-tfamily.md)
 - [Multisection formula for $\sum_k x^k / \binom{2mk}{mk}$](tsum-div-central-binom-mul-eq-multisecti.md)
 - [Multisection formula for $\sum_k x^k / (k \binom{2mk}{mk})$](tsum-div-mul-central-binom-mul-eq-multis.md)
 - [Multisection formula for $\sum_k x^k / (k^2 \binom{2mk}{mk})$](tsum-div-sq-mul-central-binom-mul-eq-mul.md)

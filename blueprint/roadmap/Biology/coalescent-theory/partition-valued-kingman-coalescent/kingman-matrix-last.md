@@ -17,7 +17,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.kingm
 
 ## Proof depends on
 
-- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/eq-bot-iff-card-parts-eq-card.md)
 - [Kingman's formula](kingman-prob.md)
 - [Kingman's formula at the partition into singletons](kingman-prob-bot.md)
 

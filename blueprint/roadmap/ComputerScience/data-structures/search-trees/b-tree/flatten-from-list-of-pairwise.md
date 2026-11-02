@@ -24,7 +24,7 @@ into the empty tree with minimum degree $t$ has flattening exactly $L$.
 - [Building from a list yields a B-tree](from-list-2.md)
 - [Accumulating flattening of a B-tree](flatten-aux.md)
 - [B-tree insertion as sorted list insertion](flatten-insert.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

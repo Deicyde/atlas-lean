@@ -13,7 +13,7 @@ $p + km \le n + m$, then $J_k(n + m) = p + km$.
 
 ## Depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

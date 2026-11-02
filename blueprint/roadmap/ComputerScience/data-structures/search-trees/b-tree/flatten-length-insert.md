@@ -27,8 +27,8 @@ otherwise it is one longer.
 - [Ordered B-tree](ordered.md)
 - [Root invariant of a B-tree](valid-root.md)
 - [B-tree insertion as sorted list insertion](flatten-insert.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
-- [Inserting a present element into a strictly increasing list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert-eq-of-mem.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
+- [Inserting a present element into a strictly increasing list](../../linear-structures/list-operations/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

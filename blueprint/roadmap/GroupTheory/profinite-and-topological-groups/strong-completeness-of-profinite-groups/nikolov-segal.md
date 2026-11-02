@@ -12,7 +12,7 @@ topologically finitely generated profinite group is open.
 
 ## Depends on
 
-- [Strongly complete group](../../../Topology/topological-groups/strongly-complete-profinite-groups/is-strongly-complete.md)
+- [Strongly complete group](is-strongly-complete.md)
 - [Topologically finitely generated group](is-topologically-finitely-generated.md)
 
 ## Sources

@@ -13,11 +13,11 @@ lean: BitVec.eval₂_powMod
 ## Depends on
 
 - [Modular powering of binary polynomial residues](pow-mod.md)
-- [Binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
 
 ## Proof depends on
 
-- [Coefficients of the binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/coeff-to-polynomial.md)
+- [Coefficients of the binary polynomial of a bitvector](coeff-to-polynomial.md)
 - [Evaluation of modular Horner multiplication](eval-mul-mod.md)
 - [Modular multiplication of binary polynomial residues](mul-mod.md)
 

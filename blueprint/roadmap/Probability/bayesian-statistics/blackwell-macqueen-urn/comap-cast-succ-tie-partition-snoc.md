@@ -12,12 +12,12 @@ lean: ProbabilityTheory.comap_castSucc_tiePartition_snoc
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Tie partition of a sequence of draws](tie-partition.md)
 
 ## Proof depends on
 
-- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/finite-set-partitions/mem-comap-parts.md)
+- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/mem-comap-parts.md)
 - [Blocks of the tie partition are classes of equal entries](mem-part-tie-partition.md)
 
 ## Sources

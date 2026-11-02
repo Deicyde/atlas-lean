@@ -22,7 +22,7 @@ partition.)
 
 ## Proof depends on
 
-- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/eq-bot-iff-card-parts-eq-card.md)
 - [Partition obtained by merging two blocks](is-merge.md)
 - [Jump chain of Kingman's coalescent](jump-matrix.md)
 - [Kingman's formula at the partition into singletons](kingman-prob-bot.md)

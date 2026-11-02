@@ -17,7 +17,7 @@ images of its components), a value in $[0, \infty]$ computed with the division o
 
 ## Proof depends on
 
-- [Thickness](../../../Geometry/curves-and-surfaces/thickness-and-ropelength-of-curves/thickness.md)
+- [Thickness](../ropelength-and-crossing-number/thickness.md)
 - [Total contour length of a parametrized link](total-contour-length.md)
 - [Trace of a parametrized link](trace.md)
 

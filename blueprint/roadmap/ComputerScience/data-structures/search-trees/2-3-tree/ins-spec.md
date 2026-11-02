@@ -27,7 +27,7 @@ traversal of $r$ equals the ordered insertion of $x$ into the inorder traversal 
 - [Predicate on all keys of a 2-3 tree](all.md)
 - [Ordering invariant for 2-3 trees](ordered.md)
 - [Inorder traversal of a 2-3 tree](flatten.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

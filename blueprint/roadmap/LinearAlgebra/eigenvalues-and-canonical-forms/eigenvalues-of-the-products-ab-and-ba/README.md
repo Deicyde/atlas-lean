@@ -4,8 +4,11 @@ navigation: module
 
 # Eigenvalues of the products AB and BA
 
-## End
-
+- [Nonzero eigenvalues of ST and TS coincide](has-eigenvalue-mul-iff.md)
+- [Equal geometric multiplicities of nonzero eigenvalues of ST and TS](finrank-eigenspace-mul-eq.md)
+- [Equal dimensions of generalized eigenspaces of ST and TS](finrank-gen-eigenspace-mul-eq.md)
+- [Finite-dimensionality of generalized eigenspaces of ST and TS](finite-gen-eigenspace-mul-iff.md)
+- [Nonzero eigenvalues of an operator times its adjoint, in either order](has-eigenvalue-adjoint-mul-self-iff.md)
 - [Eigenspace of fg maps into the eigenspace of gf](maps-to-eigenspace-comp.md)
 - [Injectivity of g between eigenspaces of fg and gf](injective-restrict-eigenspace-comp.md)
 - [Surjectivity of g between eigenspaces of fg and gf](surjective-restrict-eigenspace-comp.md)
@@ -20,15 +23,12 @@ navigation: module
 - [Generalized eigenspaces of fg and gf are finite-dimensional together](finite-gen-eigenspace-comp-iff.md)
 - [Generalized eigenspaces of fg and gf have equal dimension](finrank-gen-eigenspace-comp-eq.md)
 - [Eigenspaces of fg and gf are equivalent, for endomorphisms](eigenspace-mul-equiv.md)
-- [Geometric multiplicities of fg and gf agree, for endomorphisms](finrank-eigenspace-mul-eq.md)
+- [Geometric multiplicities of fg and gf agree, for endomorphisms](finrank-eigenspace-mul-eq-2.md)
 - [Eigenvectors of fg map to eigenvectors of gf, for endomorphisms](has-eigenvector-mul.md)
-- [Nonzero eigenvalues of fg and gf coincide, for endomorphisms](has-eigenvalue-mul-iff.md)
-- [Generalized eigenspace dimensions agree, for endomorphisms](finrank-gen-eigenspace-mul-eq.md)
-- [Generalized eigenspaces finite-dimensional together, for endomorphisms](finite-gen-eigenspace-mul-iff.md)
-
-## Matrix
-
-- [Nonzero eigenvalues of matrix products AB and BA coincide](has-eigenvalue-mul-iff-2.md)
-- [Geometric multiplicities of matrix products AB and BA agree](finrank-eigenspace-mul-eq-2.md)
-- [Generalized eigenspaces of AB and BA have equal dimension](finrank-gen-eigenspace-mul-eq-2.md)
-- [Generalized eigenspaces of AB and BA are finite-dimensional together](finite-gen-eigenspace-mul-iff-2.md)
+- [Nonzero eigenvalues of fg and gf coincide, for endomorphisms](has-eigenvalue-mul-iff-2.md)
+- [Generalized eigenspace dimensions agree, for endomorphisms](finrank-gen-eigenspace-mul-eq-2.md)
+- [Generalized eigenspaces finite-dimensional together, for endomorphisms](finite-gen-eigenspace-mul-iff-2.md)
+- [Nonzero eigenvalues of matrix products AB and BA coincide](has-eigenvalue-mul-iff-3.md)
+- [Geometric multiplicities of matrix products AB and BA agree](finrank-eigenspace-mul-eq-3.md)
+- [Generalized eigenspaces of AB and BA have equal dimension](finrank-gen-eigenspace-mul-eq-3.md)
+- [Generalized eigenspaces of AB and BA are finite-dimensional together](finite-gen-eigenspace-mul-iff-3.md)

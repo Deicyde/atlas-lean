@@ -27,8 +27,8 @@ exists at every cardinality and gives no equality cases.
 
 ## Proof depends on
 
-- [Closed Hamming ball](../../../../InformationTheory/error-correcting-codes/hamming-balls/ball.md)
-- [Size of a Hamming ball](../../../../InformationTheory/error-correcting-codes/hamming-balls/card-ball.md)
+- [Closed Hamming ball](../../../../InformationTheory/error-correcting-codes/bounds-on-code-size/ball.md)
+- [Size of a Hamming ball](../../../../InformationTheory/error-correcting-codes/bounds-on-code-size/card-ball.md)
 
 ## Sources
 

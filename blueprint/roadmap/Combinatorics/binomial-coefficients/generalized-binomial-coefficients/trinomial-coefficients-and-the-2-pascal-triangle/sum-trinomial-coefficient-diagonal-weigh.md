@@ -18,7 +18,7 @@ f\!\left(\frac{t^3}{(1-t+t^2)(1-t)}\right).$$
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

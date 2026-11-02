@@ -3,13 +3,12 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.Matrix.finrank_eigenspace_mul_eq
+lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finrank_eigenspace_mul_eq
 ---
 
-# Geometric multiplicities of matrix products AB and BA agree
+# Geometric multiplicities of fg and gf agree, for endomorphisms
 
-**Geometric multiplicities of matrix products AB and BA agree.** The geometric multiplicities of a nonzero eigenvalue of `A * B` and of
-`B * A` agree.
+**Geometric multiplicities of fg and gf agree, for endomorphisms.** The `*` form of `finrank_eigenspace_comp_eq`.
 
 ## Depends on
 

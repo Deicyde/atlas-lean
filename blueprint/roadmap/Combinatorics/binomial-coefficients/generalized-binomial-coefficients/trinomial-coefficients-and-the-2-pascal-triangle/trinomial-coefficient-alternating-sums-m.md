@@ -25,7 +25,7 @@ The paper does not bound $x$; the last case excludes $n = 0$, where it would nee
 ## Depends on
 
 - [Lucas numbers](../../../../NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/lucas-number.md)
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 

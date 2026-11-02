@@ -9,7 +9,6 @@ How subgroups sit inside a group: subnormal, permutable, propermutable, pronorma
 - [Groups with complemented subgroup lattices](groups-with-complemented-subgroup-lattices/README.md)
 - [Groups with few maximal subgroups](groups-with-few-maximal-subgroups/README.md)
 - [Intersections of conjugate nilpotent subgroups](intersections-of-conjugate-nilpotent-subgroups/README.md)
-- [Intersections of conjugates and the Fitting subgroup](intersections-of-conjugates-and-the-fitting-subg/README.md)
 - [Lattices of centralizers](lattices-of-centralizers/README.md)
 - [Maximal soluble subgroups](maximal-soluble-subgroups/README.md)
 - [Permutable subgroups of alternating groups](permutable-subgroups-of-alternating-groups/README.md)

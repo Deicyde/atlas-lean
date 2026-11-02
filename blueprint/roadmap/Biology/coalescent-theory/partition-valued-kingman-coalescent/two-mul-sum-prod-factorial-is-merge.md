@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.two_m
 
 ## Depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
 - [Partition obtained by merging two blocks](is-merge.md)
 - [Set partitions of a labeled sample](sample-partition.md)
 

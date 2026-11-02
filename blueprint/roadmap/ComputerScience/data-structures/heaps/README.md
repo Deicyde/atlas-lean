@@ -4,7 +4,6 @@ Priority queues: binary, d-ary, binomial, Fibonacci and catenable heaps, indexed
 
 - [Binary heap](binary-heap/README.md)
 - [Binomial heap](binomial-heap/README.md)
-- [Catenable heap](catenable-heap/README.md)
 - [d-ary heap](d-ary-heap/README.md)
 - [Fibonacci heap](fibonacci-heap/README.md)
 - [Indexed minimum priority queue](indexed-minimum-priority-queue/README.md)

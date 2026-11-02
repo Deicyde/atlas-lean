@@ -20,7 +20,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.sum_k
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
 - [Kingman's formula for a partition with k blocks](kingman-prob-of-card.md)
 - [Splitting identity](two-mul-sum-prod-factorial-is-merge.md)
 

@@ -8,7 +8,6 @@ Backward-in-time models of the genealogy of a sample of genes, from Kingman's co
 - [Kingman's coalescent and Watterson's estimator](kingman-s-coalescent-and-watterson-s-estimator/README.md)
 - [Multispecies coalescent](multispecies-coalescent/README.md)
 - [Partition-valued Kingman coalescent](partition-valued-kingman-coalescent/README.md)
-- [Path-space moments of two-locus coalescence times](path-space-moments-of-two-locus-coalescence-time/README.md)
 - [Ranked labeled histories of coalescent trees](ranked-labeled-histories-of-coalescent-trees/README.md)
 - [Segregating sites and pairwise differences](segregating-sites-and-pairwise-differences/README.md)
 - [Site frequency spectrum under variable population size](site-frequency-spectrum-under-variable-populatio/README.md)

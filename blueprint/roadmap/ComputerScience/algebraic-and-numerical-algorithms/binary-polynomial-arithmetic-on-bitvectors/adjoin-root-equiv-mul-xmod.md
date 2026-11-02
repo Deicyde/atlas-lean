@@ -13,7 +13,7 @@ lean: BitVec.adjoinRootEquiv_mulXMod
 ## Depends on
 
 - [Fixed-width binary words as residues modulo a monic polynomial](adjoin-root-equiv.md)
-- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
 - [Multiplication by $X$ of a binary polynomial residue](mul-xmod.md)
 
 ## Proof depends on
@@ -21,7 +21,7 @@ lean: BitVec.adjoinRootEquiv_mulXMod
 - [Forward map of the binary word residue equivalence](adjoin-root-equiv-apply.md)
 - [Reduction of the root power in a binary residue ring](adjoin-root-root-pow.md)
 - [Evaluation of modular multiplication by $X$](eval-mul-xmod.md)
-- [Binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
 
 ## Sources
 

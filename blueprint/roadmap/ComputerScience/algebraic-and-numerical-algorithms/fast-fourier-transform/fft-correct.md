@@ -16,7 +16,7 @@ $\omega$ equals the discrete Fourier sum $\sum_{j=0}^{2^d - 1} \omega^{jk} x_j$.
 ## Depends on
 
 - [Radix-two fast Fourier transform](fft.md)
-- [Discrete Fourier sum](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Proof depends on
 
@@ -26,7 +26,7 @@ $\omega$ equals the discrete Fourier sum $\sum_{j=0}^{2^d - 1} \omega^{jk} x_j$.
 - [High half of the FFT butterfly recurrence](fft-ret-succ-high.md)
 - [Low half of the FFT butterfly recurrence](fft-ret-succ-low.md)
 - [The FFT of depth zero returns its input](fft-ret-zero.md)
-- [Radix-2 Cooley–Tukey splitting](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/fast-fourier-transform/cooley-tukey.md)
+- [Radix-2 Cooley–Tukey splitting](cooley-tukey.md)
 
 ## Sources
 

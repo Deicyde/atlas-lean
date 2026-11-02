@@ -14,7 +14,7 @@ as the path of the `n`-jump chain.
 
 ## Depends on
 
-- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
 - [Set partitions of a labeled sample](sample-partition.md)
 - [Path probability of the Kingman coalescent jump chain](path-prob.md)
 

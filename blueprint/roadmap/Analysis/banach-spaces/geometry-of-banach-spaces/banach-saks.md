@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eberlein–Šmulian theorem](../duality-and-weak-topologies/part-01/eberlein-smulian.md)
+- [Eberlein–Šmulian theorem](../duality-and-weak-topologies/eberlein-smulian.md)
 - [Milman–Pettis theorem](milman-pettis.md)
 
 ## Sources

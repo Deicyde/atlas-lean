@@ -19,7 +19,7 @@ supplies an annihilating norming functional.
 
 ## Proof depends on
 
-- [Norm-one annihilating functional at positive distance](../../duality-and-weak-topologies/part-01/hahn-banach-distance-formula/exists-annihilating-norm-one.md)
+- [Norm-one annihilating functional at positive distance](../../duality-and-weak-topologies/hahn-banach-theorem/exists-annihilating-norm-one.md)
 
 ## Sources
 

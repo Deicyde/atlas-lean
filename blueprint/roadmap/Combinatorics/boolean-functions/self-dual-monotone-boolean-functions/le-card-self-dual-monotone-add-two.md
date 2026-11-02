@@ -16,7 +16,7 @@ Then $d_n \le \lambda_{n+2}$.
 
 ## Depends on
 
-- [Self-dual monotone Boolean functions](../../../Order/lattices-boolean-algebras/self-dual-boolean-functions/is-self-dual-monotone.md)
+- [Self-dual monotone Boolean functions](is-self-dual-monotone.md)
 
 ## Sources
 

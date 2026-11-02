@@ -29,7 +29,7 @@ tree obtained by inserting $x$ into $t$ is ordered.
 - [Inorder traversal of a 2-3 tree](flatten.md)
 - [Insertion into a height-indexed 2-3 tree](ins.md)
 - [Correctness of 2-3 tree insertion](ins-spec-2.md)
-- [Ordered insertion into a list](../../linear-structures/ordered-insertion-into-a-list/ordered-insert.md)
+- [Ordered insertion into a list](../../linear-structures/list-operations/ordered-insert.md)
 
 ## Sources
 

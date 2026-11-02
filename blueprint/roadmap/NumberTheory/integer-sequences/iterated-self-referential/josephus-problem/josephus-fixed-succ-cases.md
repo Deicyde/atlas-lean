@@ -17,7 +17,7 @@ natural number $\ell \ge 1$, then $J_k(n_p + 1) = n_p$.
 
 ## Depends on
 
-- [Josephus survivor function](../../../../Combinatorics/permutations/permutation-statistics/josephus-problem/josephus.md)
+- [Josephus survivor function](josephus.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.crpProb_seat
 
 ## Proof depends on
 
-- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
 
 ## Sources
 

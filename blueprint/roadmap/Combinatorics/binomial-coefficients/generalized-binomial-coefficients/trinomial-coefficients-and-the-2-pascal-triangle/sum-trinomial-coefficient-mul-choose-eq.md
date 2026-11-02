@@ -16,7 +16,7 @@ $$\sum_{k=0}^{m} \binom{n}{k}_2 \binom{m}{k} =
 
 ## Depends on
 
-- [Trinomial coefficient](../../../../NumberTheory/special-numbers/binomial-coefficients/trinomial-coefficients/trinomial-coefficient.md)
+- [Trinomial coefficient](trinomial-coefficient.md)
 
 ## Sources
 
