@@ -11,6 +11,11 @@ module contains `sorry`; `theorem_wanted` entries are stated results waiting
 for a proof, and `def_wanted` entries stay unstated, because Autoform counts a
 stated definition as defined.
 
+scripts/taxonomy.json is the wiki's editorial structure: its regions, the
+subjects inside them, each subject's fields and subfields, and where each Lean
+module or directory sits among them, under what title. Lean paths do not decide
+where an article appears.
+
 Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 """
 
@@ -39,146 +44,23 @@ MAX_MODULE_CHILDREN = 120
 # Headings with a meaning on Autoform pages; a module section never takes one.
 RESERVED_HEADINGS = {"contents", "depends on", "mathematical overview", "proof depends on", "sources"}
 
-SUBJECTS = {
-    "Biology": (
-        "Biology",
-        "Mathematical biology models populations, genomes, and biochemical networks, from coalescents and "
-        "reaction dynamics to the algorithms that read biological sequences.",
-    ),
-    "Computability": (
-        "Computability",
-        "Computability studies which mathematical processes can be carried out by algorithms and how such "
-        "procedures are represented.",
-    ),
-    "Data": (
-        "Data",
-        "Data theory develops mathematical representations, transformations, and invariants for structured "
-        "information.",
-    ),
-    "Dynamics": (
-        "Dynamics",
-        "Dynamics studies systems evolving through iteration or time, including recurrence, stability, and "
-        "long-term behavior.",
-    ),
-    "FieldTheory": (
-        "Field Theory",
-        "Field theory studies extensions of fields, algebraic elements, automorphisms, and Galois-theoretic "
-        "structure.",
-    ),
-    "GameTheory": (
-        "Game Theory",
-        "Game theory studies strategic and combinatorial interaction, equilibria, winning conditions, and optimal "
-        "play.",
-    ),
-    "GraphTheory": (
-        "Graph Theory",
-        "Graph theory studies vertices and edges through connectivity, coloring, minors, flows, and extremal "
-        "structure.",
-    ),
-    "InformationTheory": (
-        "Information Theory",
-        "Information theory quantifies information, uncertainty, compression, and transmission through entropy and "
-        "coding.",
-    ),
-    "LinearAlgebra": (
-        "Linear Algebra",
-        "Linear algebra studies vector spaces, linear maps, matrices, duality, dimension, and spectral structure.",
-    ),
-    "Logic": (
-        "Logic",
-        "Logic studies formal languages, proof, models, semantics, consistency, and the foundations of mathematical "
-        "reasoning.",
-    ),
-    "MeasureTheory": (
-        "Measure Theory",
-        "Measure theory provides the language of size and integration underlying probability and modern analysis.",
-    ),
-    "Order": (
-        "Order",
-        "Order theory studies comparison relations, lattices, intervals, monotonicity, and order-complete "
-        "constructions.",
-    ),
-    "QuantumInformation": (
-        "Quantum Information",
-        "Quantum information studies states, channels, measurement, entanglement, communication, and quantum "
-        "computation.",
-    ),
-    "RingTheory": (
-        "Ring Theory",
-        "Ring theory studies addition and multiplication through ideals, modules, localization, dimension, and "
-        "homological structure.",
-    ),
-    "SetTheory": (
-        "Set Theory",
-        "Set theory studies membership, cardinality, ordinals, infinity, and foundational constructions for "
-        "mathematics.",
-    ),
-    "Topology": (
-        "Topology",
-        "Topology studies continuity, open sets, compactness, connectedness, and invariants preserved by "
-        "homeomorphism.",
-    ),
-    "Algebra": (
-        "Algebra",
-        "Algebra studies structures defined by operations and the laws, morphisms, and symmetries that organize them.",
-    ),
-    "AlgebraicGeometry": (
-        "Algebraic Geometry",
-        "Algebraic geometry studies spaces cut out by polynomial equations and translates between their "
-        "geometric and algebraic invariants.",
-    ),
-    "Analysis": (
-        "Analysis",
-        "Analysis studies limits, approximation, continuity, and infinite-dimensional spaces of functions and operators.",
-    ),
-    "CategoryTheory": (
-        "Category Theory",
-        "Category theory organizes mathematical structures through morphisms, functors, universal properties, "
-        "limits, and adjunctions.",
-    ),
-    "Combinatorics": (
-        "Combinatorics",
-        "Combinatorics studies finite and discrete configurations through counting, extremal structure, and "
-        "constructive arguments.",
-    ),
-    "ComputerScience": (
-        "Computer Science",
-        "Computer science formalizes algorithms, programming-language structures, data abstractions, and "
-        "correctness properties.",
-    ),
-    "Geometry": (
-        "Geometry",
-        "Geometry studies shapes, spaces, transformations, curvature, and the invariants preserved by geometric "
-        "equivalence.",
-    ),
-    "GroupTheory": (
-        "Group Theory",
-        "Group theory studies symmetry through groups, actions, subgroups, quotients, and structural decompositions.",
-    ),
-    "NumberTheory": (
-        "Number Theory",
-        "Number theory studies integers, primes, Diophantine equations, arithmetic functions, and their analytic "
-        "and algebraic structure.",
-    ),
-    "Probability": (
-        "Probability",
-        "Probability studies random phenomena through distributions, expectation, independence, concentration, "
-        "and stochastic processes.",
-    ),
-    "RepresentationTheory": (
-        "Representation Theory",
-        "Representation theory studies symmetry by realizing groups and algebras as transformations of linear spaces.",
-    ),
-    "TheoryOfComputation": (
-        "Theory of Computation",
-        "The theory of computation studies automata, formal languages, complexity, reducibility, and limits of "
-        "efficient algorithms.",
-    ),
+TAXONOMY = ROOT / "scripts" / "taxonomy.json"
+TAXONOMY_SCHEMA = "atlas-wiki-taxonomy/v1"
+# Where a module the taxonomy does not place yet appears, so it is visible until someone places it.
+UNPLACED = {
+    "slug": "not-yet-classified",
+    "title": "Not yet classified",
+    "description": "Topics added since this subject's fields were last revised.",
+    "subfields": [],
 }
 
-# Library -> (description, top-level directory -> subject when the names differ).
+# Library -> (description, top-level directory -> subject when the names differ). The taxonomy places
+# almost every module; these subjects hold only the modules it does not place yet.
 LIBRARIES = {
-    "MathlibExt": ("Reusable, fully proved extensions to Mathlib.", {"ModelTheory": "Logic"}),
+    "MathlibExt": (
+        "Reusable, fully proved extensions to Mathlib.",
+        {"Computability": "TheoryOfComputation", "Data": "ComputerScience", "ModelTheory": "Logic"},
+    ),
     "CSLibExt": (
         "Reusable, fully proved computer-science developments built on MathlibExt.",
         {
@@ -187,8 +69,9 @@ LIBRARIES = {
             "Bioinformatics": "Biology",
             "Coding": "InformationTheory",
             "Complexity": "TheoryOfComputation",
+            "Computability": "TheoryOfComputation",
             "Crypto": "ComputerScience",
-            "Databases": "Data",
+            "Databases": "ComputerScience",
             "Foundations": "ComputerScience",
             "Languages": "ComputerScience",
             "Logics": "Logic",
@@ -232,6 +115,8 @@ class Target:
     source: tuple[str, Path] | None = None
     citations: list[str] = field(default_factory=list)
     module: tuple[str, ...] = ()
+    # The `# ` heading of the module docstring, if any.
+    module_title: str = ""
     # The doc heading, named section and namespace the declaration sits under.
     sections: tuple[str, str, str] = ("", "", "")
     path: Path = Path()
@@ -319,6 +204,22 @@ def topic_title(name: str) -> str:
     return humanize(name.removesuffix("Wanted"))
 
 
+def load_taxonomy() -> dict:
+    taxonomy = json.loads(TAXONOMY.read_text(encoding="utf-8"))
+    if taxonomy.get("schema") != TAXONOMY_SCHEMA:
+        raise SystemExit(f"{TAXONOMY.relative_to(ROOT)}: expected schema {TAXONOMY_SCHEMA}")
+    return taxonomy
+
+
+def placement(module: tuple[str, ...], placements: dict) -> tuple[str, dict] | None:
+    """The taxonomy entry for a module: its own, else that of its nearest placed directory."""
+    for end in range(len(module), 0, -1):
+        key = "/".join(module[:end])
+        if key in placements:
+            return key, placements[key]
+    return None
+
+
 def split_docstring(doc: str) -> tuple[str, list[str]]:
     """Separate the mathematical statement from its citations and Lean-side notes."""
     statement, citations = [], []
@@ -391,7 +292,7 @@ def module_groups(items: list[Target]) -> list[str] | None:
     return None
 
 
-def load_library(library: str, index) -> tuple[list[Target], dict]:
+def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dict]:
     located = {
         (declaration.path, declaration.line): declaration
         for declaration in index.declarations.values()
@@ -406,6 +307,9 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
         lines = text.splitlines()
         has_sorry = re.search(r"\bsorry\b", without_comments(text)) is not None
         module = relative.with_suffix("").parts
+        heading = re.search(r"/-!\s*#[ \t]+([^\n]+)", text)
+        module_title = heading.group(1).removesuffix("-/").strip() if heading else ""
+        placed = placement(module, taxonomy["placements"])
         labels = section_labels(lines)
         summary["modules"] += 1
         for number, line in enumerate(lines):
@@ -442,8 +346,8 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                 named_by_docstring.add(len(targets))
             # A bold name can wrap; a title must stay on its heading line.
             title = " ".join(bold.group("title").split()).rstrip(".") if bold else humanize(short) or first_words(statement_text)
-            subject = LIBRARIES[library][1].get(module[1], module[1])
-            if subject not in SUBJECTS:
+            subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library][1].get(module[1], module[1])
+            if subject not in taxonomy["subjects"]:
                 raise SystemExit(f"{relative}: no subject for directory {module[1]}")
             summary["subjects"].add(subject)
             body = "\n".join(
@@ -466,50 +370,118 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                     source=(f"{library}, {'.'.join(module)}", Path("sources") / "v2" / f"{library}.md"),
                     citations=citations,
                     module=module,
+                    module_title=module_title,
                     sections=labels[number],
                 )
             )
-    # A module with one article is usually named after its result.
+    # A module with one article is usually named after its result: the taxonomy's title for it, if it has one.
     per_module: dict[tuple[str, ...], list[Target]] = defaultdict(list)
     for target in targets:
         per_module[target.module].append(target)
     for module, items in per_module.items():
         if len(items) == 1 and items[0].idx not in named_by_docstring:
-            items[0].title = humanize(module[-1])
+            placed = placement(module, taxonomy["placements"])
+            own = placed is not None and placed[0] == "/".join(module)
+            items[0].title = placed[1]["title"] if own else humanize(module[-1])
     return targets, summary
 
 
-def library_tree(library: str, targets: list[Target]) -> Container:
-    """Directories and modules below the subject directory become containers."""
+def readable(title: str) -> bool:
+    """Whether a module docstring's heading can title its page as it stands."""
+    return 0 < len(title) <= 60 and title[0].isupper() and "`" not in title and "$" not in title
+
+
+def directory_pages(targets: list[Target], depth: int) -> list:
+    """The directories and modules below a placed path, as pages, the way the Lean lays them out."""
     root: dict = {"dirs": {}, "modules": defaultdict(list)}
     for target in targets:
         node = root
-        parts = target.module[2:] or target.module[-1:]
+        parts = target.module[depth:] or target.module[-1:]
         for part in parts[:-1]:
             node = node["dirs"].setdefault(part, {"dirs": {}, "modules": defaultdict(list)})
         node["modules"][parts[-1]].append(target)
 
-    def build(title: str, slug: str, node: dict) -> Container:
+    def build(node: dict) -> list:
         children: list = [
-            build(topic_title(name), slugify(humanize(name)), node["dirs"][name]) for name in sorted(node["dirs"])
+            chunk(topic_title(name), slugify(humanize(name)), build(node["dirs"][name])) for name in sorted(node["dirs"])
         ]
         for name in sorted(node["modules"]):
             items = node["modules"][name]
             if len(items) == 1:
                 children.append(items[0])
                 continue
-            # A module is one page of its declarations, in source order.
-            if len(items) <= MAX_MODULE_CHILDREN:
-                page = Container(topic_title(name), slugify(humanize(name)), items, groups=module_groups(items))
-            else:
-                page = chunk(topic_title(name), slugify(humanize(name)), items)
-            page.navigation = "module"
-            children.append(page)
-        return chunk(title, slug, children)
+            heading = items[0].module_title
+            title = heading if readable(heading) else topic_title(name)
+            children.append(module_page(title, items, module_groups(items)))
+        return children
 
-    tree = build(library, library, root)
-    tree.navigation = "collection"
-    return tree
+    return build(root)
+
+
+def module_page(title: str, items: list[Target], groups: list[str] | None) -> Container:
+    """One page of declarations in source order."""
+    if len(items) <= MAX_MODULE_CHILDREN:
+        page = Container(title, slugify(title), items, groups=groups)
+    else:
+        page = chunk(title, slugify(title), items)
+    page.navigation = "module"
+    return page
+
+
+def topic_node(title: str, members: dict[str, list[Target]]) -> Container | Target:
+    """A topic: the declarations of its modules, or the pages of a placed directory.
+
+    Placements that share a field and a title arrive here together; that is how
+    a WantedExt statement file joins the development it belongs to.
+    """
+    order = list(LIBRARIES)
+    keys = sorted(members, key=lambda key: (order.index(key.split("/")[0]), key))
+    if all(len(key.split("/")) == len(target.module) for key in keys for target in members[key]):
+        items = [target for key in keys for target in members[key]]
+        if len(items) == 1:
+            return items[0]
+        return module_page(title, items, module_groups(items) if len(keys) == 1 else None)
+    children = [page for key in keys for page in directory_pages(members[key], len(key.split("/")))]
+    if len(children) == 1 and isinstance(children[0], Container):
+        children[0].title, children[0].slug = title, slugify(title)
+        return children[0]
+    return chunk(title, slugify(title), children)
+
+
+def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Container:
+    """A subject's fields, subfields and topics, as the taxonomy places its modules."""
+    entry = taxonomy["subjects"][subject]
+    topics: dict[tuple[str, str], dict[str, list[Target]]] = defaultdict(lambda: defaultdict(list))
+    for target in targets:
+        placed = placement(target.module, taxonomy["placements"])
+        if placed:
+            key, spot = placed
+            topics[(spot["to"], spot["title"])][key].append(target)
+        else:
+            key = "/".join(target.module)
+            topics[(f"{subject}/{UNPLACED['slug']}", topic_title(target.module[-1]))][key].append(target)
+    at: dict[str, list] = defaultdict(list)
+    for (to, title), members in topics.items():
+        at[to.split("/", 1)[1]].append(topic_node(title, members))
+
+    def page(spec: dict, children: list) -> Container:
+        node = chunk(spec["title"], spec["slug"], children)
+        node.prose = spec["description"]
+        return node
+
+    fields = []
+    for spec in [*entry["fields"], UNPLACED]:
+        inner = []
+        for sub in spec["subfields"]:
+            members = sorted(at.pop(f"{spec['slug']}/{sub['slug']}", []), key=lambda node: node.title.casefold())
+            if members:
+                inner.append(page(sub, members))
+        inner += sorted(at.pop(spec["slug"], []), key=lambda node: node.title.casefold())
+        if inner:
+            fields.append(page(spec, inner))
+    if at:
+        raise SystemExit(f"{TAXONOMY.relative_to(ROOT)}: {subject} places topics in unknown fields {sorted(at)}")
+    return Container(entry["title"], subject, fields, prose=entry["description"])
 
 
 def link_v2(targets: list[Target], dependencies: dict) -> None:
@@ -715,15 +687,21 @@ def render_coverage(rows: list[tuple[str, str, str]]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
-    lines = [
-        "# ATLAS roadmap",
-        "",
-        "## Subjects",
-        "",
-    ]
-    lines += [f"- [{SUBJECTS[subject][0]}]({subject}/README.md)" for subject in subjects]
+def render_roadmap_root(taxonomy: dict, subjects: list[str], previous: str | None) -> str:
+    lines = ["# ATLAS roadmap"]
+    for region, members in regions(taxonomy, subjects).items():
+        lines += ["", f"## {region}", ""]
+        lines += [f"- [{taxonomy['subjects'][subject]['title']}]({subject}/README.md)" for subject in members]
     return frontmatter([], previous) + "\n".join(lines) + "\n"
+
+
+def regions(taxonomy: dict, subjects: list[str]) -> dict[str, list[str]]:
+    """Each region's subjects that hold articles, in the taxonomy's order."""
+    out = {region: [subject for subject in members if subject in subjects] for region, members in taxonomy["regions"].items()}
+    placed = {subject for members in out.values() for subject in members}
+    if set(subjects) - placed:
+        out["Other subjects"] = [subject for subject in subjects if subject not in placed]
+    return {region: members for region, members in out.items() if members}
 
 
 def ids_by_lean() -> dict[str, str]:
@@ -748,13 +726,18 @@ def generate() -> dict[Path, str]:
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
     known_ids = ids_by_lean()
     v2_coverage = []
-    v2_by_subject: dict[str, list[Container]] = defaultdict(list)
-    v2_loaded = {library: load_library(library, index) for library in LIBRARIES}
-    for library, (targets, summary) in v2_loaded.items():
-        for subject in sorted(summary["subjects"]):
-            tree = library_tree(library, [target for target in targets if target.location == subject])
-            assign_paths(tree, ROADMAP / subject / library)
-            v2_by_subject[subject].append(tree)
+    taxonomy = load_taxonomy()
+    v2_loaded = {library: load_library(library, index, taxonomy) for library in LIBRARIES}
+    v2_by_subject: dict[str, list[Target]] = defaultdict(list)
+    for targets, _ in v2_loaded.values():
+        for target in targets:
+            v2_by_subject[target.location].append(target)
+    subjects = sorted(v2_by_subject)
+    trees = []
+    for subject in subjects:
+        tree = subject_tree(subject, v2_by_subject[subject], taxonomy)
+        assign_paths(tree, ROADMAP / subject)
+        trees.append(tree)
     dependency_file = SOURCES / "v2" / "lean-dependencies.json"
     dependency_data = None
     if dependency_file.is_file():
@@ -763,7 +746,7 @@ def generate() -> dict[Path, str]:
             [target for targets, _ in v2_loaded.values() for target in targets],
             dependency_data["articles"],
         )
-    every_v2 = Container("v2", "v2", [tree for subject in sorted(v2_by_subject) for tree in v2_by_subject[subject]])
+    every_v2 = Container("v2", "v2", trees)
     lean_counts = Counter(node.lean for node in walk(every_v2) if isinstance(node, Target) and node.lean)
     for node in walk(every_v2):
         if node is not every_v2:
@@ -776,12 +759,11 @@ def generate() -> dict[Path, str]:
         summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
         summary["dependency_missing"] = len((dependency_data or {}).get("missing_articles", {}).get(library, ()))
         files[SOURCES / "v2" / f"{library}.md"] = render_library_source(library, summary)
-        first = sorted(summary["subjects"])[0]
         v2_coverage.append(
             (
                 f"v2 / {library}",
                 "DECOMPOSED",
-                f"[{summary['documented']} documented public declarations](../roadmap/{first}/{library}/README.md) "
+                f"[{summary['documented']} documented public declarations](../roadmap/README.md) "
                 f"across {len(summary['subjects'])} subjects; {summary['instances']} instances and "
                 f"{summary['public'] - summary['instances'] - summary['documented']} undocumented public "
                 "declarations are not articles.",
@@ -799,14 +781,11 @@ def generate() -> dict[Path, str]:
         ("Atlas/FC", "MAPPED", f"{fc_files} standalone Lean files; no roadmap articles yet."),
         ("Atlas/CPythonListsort", "OUT", "Maintained as its own Autoform blueprint inside Atlas/CPythonListsort."),
     ]
-    subjects = sorted(v2_by_subject)
-    for subject in subjects:
-        trees = v2_by_subject[subject]
-        node = Container(SUBJECTS[subject][0], subject, trees, prose=SUBJECTS[subject][1])
-        node.path = ROADMAP / subject / "README.md"
-        files[node.path] = render_container(node, previous(node.path))
     root = ROADMAP / "README.md"
-    files[root] = render_roadmap_root(subjects, previous(root))
+    files[root] = render_roadmap_root(taxonomy, subjects, previous(root))
+    # The map draws one region per area, with its subjects inside.
+    atlas = {"schema": "autoform-atlas/v1", "areas": regions(taxonomy, subjects)}
+    files[VAULT / "atlas.json"] = json.dumps(atlas, indent=2, ensure_ascii=False) + "\n"
     files[VAULT / "coverage" / "README.md"] = render_coverage(coverage)
     sources = ["# ATLAS source catalog", "", "## ATLAS v2", ""]
     sources += [f"- [{library}](v2/{library}.md)" for library in LIBRARIES]
@@ -815,52 +794,16 @@ def generate() -> dict[Path, str]:
 
 
 def owned() -> set[Path]:
-    """Existing files the generator owns, so stale pages can be removed."""
-    directories = [directory for library in LIBRARIES for directory in ROADMAP.glob(f"*/{library}")]
-    paths = set()
-    for directory in directories:
-        if directory.is_dir():
-            paths.update(path for path in directory.rglob("*.md"))
-    return paths
-
-
-def navigation_updates() -> dict[Path, str]:
-    """Annotate existing generated containers without indexing or changing Lean.
-
-    This adapter knows which roots are libraries and which parts were
-    produced by ``chunk``. The shared explorer never guesses these roles from
-    paths. Mathematical regions and introductions remain authored curation.
-    """
-    roots = [(directory, "collection") for library in LIBRARIES for directory in ROADMAP.glob(f"*/{library}")]
-    files: dict[Path, str] = {}
-    for directory, root_role in roots:
-        if not directory.is_dir():
-            continue
-        for page in directory.rglob("README.md"):
-            role = root_role if page.parent == directory else "transparent" if re.fullmatch(r"part-\d{2}", page.parent.name) else None
-            if role is None:
-                continue
-            text = page.read_text(encoding="utf-8")
-            header = re.match(r"\A---\n(.*?)\n---(?:\n|\Z)", text, re.S)
-            if header:
-                fields = header.group(1)
-                if re.search(r"(?m)^declaration:", fields):
-                    raise ValueError(f"navigation migration refuses declaration article: {page}")
-                fields = re.sub(r"(?m)^navigation:.*\n?", "", fields).rstrip()
-                prefix = (fields + "\n" if fields else "") + f"navigation: {role}"
-                files[page] = "---\n" + prefix + "\n---\n" + text[header.end():]
-            else:
-                files[page] = f"---\nnavigation: {role}\n---\n\n" + text
-    return files
+    """Existing files the generator owns, so stale pages can be removed: every roadmap page."""
+    return set(ROADMAP.rglob("*.md")) if ROADMAP.is_dir() else set()
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if any generated page is stale")
-    parser.add_argument("--navigation-only", action="store_true", help="annotate existing collection/pagination containers without indexing Lean")
     args = parser.parse_args()
-    files = navigation_updates() if args.navigation_only else generate()
-    stale = [] if args.navigation_only else sorted(owned() - set(files))
+    files = generate()
+    stale = sorted(owned() - set(files))
     changed = sorted(path for path, text in files.items() if not path.is_file() or path.read_text() != text)
     if args.check:
         for path in changed + stale:

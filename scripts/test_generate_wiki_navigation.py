@@ -10,36 +10,100 @@ from unittest.mock import patch
 from scripts import generate_wiki as wiki
 
 
-def _target(index: int, sections: tuple[str, str, str] = ("", "", "")) -> wiki.Target:
+def _target(index: int, sections: tuple[str, str, str] = ("", "", ""), module: str = "MathlibExt/Geometry/Falconer") -> wiki.Target:
     return wiki.Target(
-        book="MathlibExt", idx=index, title=f"Result {index}", slug=f"result-{index}", location="Geometry",
+        book=module.split("/")[0], idx=index, title=f"Result {index}", slug=f"result-{index}", location="Geometry",
         description="", declaration="theorem", lean=f"Falconer.result{index}", statement=True, proof=True,
-        names=[f"Falconer.result{index}"], module=("MathlibExt", "Geometry", "Falconer"), sections=sections,
+        names=[f"Falconer.result{index}"], module=tuple(module.split("/")), sections=sections,
     )
 
 
+TAXONOMY = {
+    "schema": wiki.TAXONOMY_SCHEMA,
+    "regions": {"Geometry & Topology": ["Geometry"], "Algebra & Number Theory": ["Algebra"]},
+    "subjects": {
+        "Geometry": {
+            "title": "Geometry",
+            "description": "Geometry studies shapes.",
+            "fields": [
+                {"slug": "convex", "title": "Convex geometry", "description": "Convex sets.", "subfields": []},
+                {
+                    "slug": "metric", "title": "Metric geometry", "description": "Distances.",
+                    "subfields": [{"slug": "distance-sets", "title": "Distance sets", "description": "Distinct distances."}],
+                },
+            ],
+        },
+        "Algebra": {"title": "Algebra", "description": "Algebra studies operations.", "fields": []},
+    },
+    "placements": {
+        "MathlibExt/Geometry/Falconer": {"to": "Geometry/metric/distance-sets", "title": "Falconer distance problem"},
+        "WantedExt/Geometry/FalconerWanted": {"to": "Geometry/metric/distance-sets", "title": "Falconer distance problem"},
+        "MathlibExt/Geometry/Sofa": {"to": "Geometry/convex", "title": "Moving sofa problem"},
+        "CSLibExt/Geometry/Hull": {"to": "Geometry/convex", "title": "Convex hulls"},
+    },
+}
+
+
 class NavigationTests(unittest.TestCase):
-    def test_roadmap_root_has_no_repository_preamble(self):
+    def test_roadmap_root_lists_subjects_by_region(self):
         previous = "---\narticle_id: af_000000000000000000000001\n---\n# ATLAS roadmap\n"
-        rendered = wiki.render_roadmap_root(["Geometry", "Algebra"], previous)
+        rendered = wiki.render_roadmap_root(TAXONOMY, ["Algebra", "Geometry"], previous)
         self.assertEqual(
             rendered,
             "---\narticle_id: af_000000000000000000000001\n---\n\n"
-            "# ATLAS roadmap\n\n## Subjects\n\n"
-            "- [Geometry](Geometry/README.md)\n- [Algebra](Algebra/README.md)\n",
+            "# ATLAS roadmap\n\n## Geometry & Topology\n\n- [Geometry](Geometry/README.md)\n\n"
+            "## Algebra & Number Theory\n\n- [Algebra](Algebra/README.md)\n",
         )
 
-    def test_library_navigation_omits_implementation_preamble(self):
-        for library in wiki.LIBRARIES:
-            with self.subTest(library=library):
-                tree = wiki.library_tree(library, [])
-                self.assertEqual(tree.navigation, "collection")
-                self.assertEqual(tree.prose, "")
-                wiki.assign_paths(tree, wiki.ROADMAP / "Geometry" / library)
-                self.assertEqual(
-                    wiki.render_container(tree, None),
-                    f"---\nnavigation: collection\n---\n\n# {library}\n\n",
-                )
+    def test_a_subject_without_a_region_still_appears(self):
+        taxonomy = {**TAXONOMY, "regions": {"Geometry & Topology": ["Geometry"]}}
+        self.assertEqual(wiki.regions(taxonomy, ["Algebra", "Geometry"]),
+                         {"Geometry & Topology": ["Geometry"], "Other subjects": ["Algebra"]})
+
+    def test_the_taxonomy_places_modules_in_fields_and_subfields(self):
+        targets = [_target(0), _target(1), _target(2, module="MathlibExt/Geometry/Sofa"), _target(3, module="MathlibExt/Geometry/Sofa")]
+        tree = wiki.subject_tree("Geometry", targets, TAXONOMY)
+        self.assertEqual(tree.title, "Geometry")
+        self.assertEqual(tree.prose, "Geometry studies shapes.")
+        self.assertEqual([field.title for field in tree.children], ["Convex geometry", "Metric geometry"])
+        convex, metric = tree.children
+        self.assertEqual([topic.title for topic in convex.children], ["Moving sofa problem"])
+        (subfield,) = metric.children
+        self.assertEqual((subfield.title, subfield.prose), ("Distance sets", "Distinct distances."))
+        (topic,) = subfield.children
+        self.assertEqual((topic.title, topic.navigation), ("Falconer distance problem", "module"))
+
+    def test_a_statement_file_merges_into_the_development_with_its_title(self):
+        targets = [_target(0), _target(1, module="WantedExt/Geometry/FalconerWanted"), _target(2)]
+        tree = wiki.subject_tree("Geometry", targets, TAXONOMY)
+        (topic,) = tree.children[0].children[0].children
+        self.assertEqual([child.title for child in topic.children], ["Result 0", "Result 2", "Result 1"])
+
+    def test_a_placed_directory_keeps_its_modules_as_pages(self):
+        targets = [_target(0, module="CSLibExt/Geometry/Hull/Basic"), _target(1, module="CSLibExt/Geometry/Hull/Basic"),
+                   _target(2, module="CSLibExt/Geometry/Hull/Graham"), _target(3, module="CSLibExt/Geometry/Hull/Graham")]
+        targets[2].module_title = targets[3].module_title = "Graham scan"
+        (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        (topic,) = field.children
+        self.assertEqual(topic.title, "Convex hulls")
+        self.assertEqual([page.title for page in topic.children], ["Basic", "Graham scan"])
+
+    def test_an_unplaced_module_is_listed_as_not_yet_classified(self):
+        targets = [_target(0, module="MathlibExt/Geometry/NewTopic"), _target(1, module="MathlibExt/Geometry/NewTopic")]
+        (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        self.assertEqual(field.title, "Not yet classified")
+        self.assertEqual([topic.title for topic in field.children], ["New Topic"])
+
+    def test_a_module_with_one_article_is_that_article(self):
+        tree = wiki.subject_tree("Geometry", [_target(0, module="MathlibExt/Geometry/Sofa")], TAXONOMY)
+        (topic,) = tree.children[0].children
+        self.assertIsInstance(topic, wiki.Target)
+
+    def test_placement_prefers_the_longest_placed_path(self):
+        placements = {"A/B": {"to": "S/f", "title": "Outer"}, "A/B/C": {"to": "S/g", "title": "Inner"}}
+        self.assertEqual(wiki.placement(("A", "B", "C"), placements)[0], "A/B/C")
+        self.assertEqual(wiki.placement(("A", "B", "D"), placements)[0], "A/B")
+        self.assertIsNone(wiki.placement(("A", "E"), placements))
 
     def test_landing_page_is_navigation_not_generation_instructions(self):
         landing = (wiki.VAULT / "README.md").read_text(encoding="utf-8")
@@ -79,29 +143,9 @@ This section studies the distances determined by finite point configurations.
         self.assertNotIn("previous.md", rendered)
         self.assertEqual(rendered.count("## Contents"), 1)
 
-    def test_migration_changes_only_known_generated_containers_and_preserves_body(self):
-        with tempfile.TemporaryDirectory() as folder:
-            roadmap = Path(folder) / "roadmap"
-            root = roadmap / "Geometry/MathlibExt"
-            part = root / "metric/part-01"
-            part.mkdir(parents=True)
-            body = "# Geometry library\n\nA mathematical introduction.\n\n- [Topic](metric/README.md)\n"
-            (root / "README.md").write_text(body)
-            (part / "README.md").write_text("---\narticle_id: af_000000000000000000000001\n---\n# A range\n")
-            article = part / "result.md"
-            article.write_text("---\ndeclaration: theorem\n---\n# Unchanged statement\n")
-            original = article.read_bytes()
-            with patch.object(wiki, "ROADMAP", roadmap):
-                updates = wiki.navigation_updates()
-            self.assertEqual(set(updates), {root / "README.md", part / "README.md"})
-            self.assertTrue(updates[root / "README.md"].endswith(body))
-            self.assertIn("navigation: collection", updates[root / "README.md"])
-            self.assertIn("navigation: transparent", updates[part / "README.md"])
-            self.assertEqual(article.read_bytes(), original)
-
     def test_a_module_is_one_page_of_its_declarations(self):
-        tree = wiki.library_tree("MathlibExt", [_target(index) for index in range(26)])
-        (module,) = tree.children
+        tree = wiki.subject_tree("Geometry", [_target(index) for index in range(26)], TAXONOMY)
+        (module,) = tree.children[0].children[0].children
         self.assertEqual(module.navigation, "module")
         self.assertEqual([child.title for child in module.children], [f"Result {index}" for index in range(26)])
 
