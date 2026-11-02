@@ -734,6 +734,10 @@ def generate() -> dict[Path, str]:
         for target in targets:
             v2_by_subject[target.location].append(target)
     subjects = sorted(v2_by_subject)
+    unplaced = sorted({"/".join(t.module) for ts in v2_by_subject.values() for t in ts if not placement(t.module, taxonomy["placements"])})
+    if unplaced:
+        print(f"note: {len(unplaced)} modules have no place in {TAXONOMY.relative_to(ROOT)} yet, so their subjects list them "
+              f"as not yet classified: {', '.join(unplaced[:5])}{', ...' if len(unplaced) > 5 else ''}", file=sys.stderr)
     trees = []
     for subject in subjects:
         tree = subject_tree(subject, v2_by_subject[subject], taxonomy)
