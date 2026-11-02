@@ -89,7 +89,8 @@ V2_DECLARATION = re.compile(
     r"\s*(?P<name>[^\s:(\[{]*)"
 )
 WANTED = {"theorem_wanted": "theorem", "def_wanted": "def"}
-BOLD_TITLE = re.compile(r"^\*\*(?P<title>[^*]+)\*\*")
+# A bold name may hold a lone asterisk, as in "A\* search" or "$c_0^*$"; it ends at the first "**".
+BOLD_TITLE = re.compile(r"^\*\*(?P<title>(?:[^*]|\*(?!\*))+)\*\*")
 ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
 MATH_SPAN = re.compile(
     r"(?s)(?<!\\)(?P<dollars>\${1,2}).*?(?<!\\)(?P=dollars)|\\\(.*?\\\)|\\\[.*?\\\]"
