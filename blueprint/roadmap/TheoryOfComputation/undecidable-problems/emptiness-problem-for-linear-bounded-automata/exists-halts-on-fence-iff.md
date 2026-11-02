@@ -20,32 +20,32 @@ fenced machine halts only by simulating a halting run of $M$.
 ## Depends on
 
 - [Fenced alphabet](fence-symbol.md)
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [The fenced machine](fence.md)
 - [Fenced input](fence-input.md)
 
 ## Proof depends on
 
-- [Cells of an input tape](../../turing-machines/single-tape/equivalent-tape-representations/nth-to-tape-mk.md)
-- [Cells after $n$ moves to the right](../../turing-machines/single-tape/equivalent-tape-representations/nth-to-tape-move-right-iterate.md)
-- [Cells after a write and an optional move](../../turing-machines/single-tape/equivalent-tape-representations/nth-to-tape-write-option-move.md)
-- [Offset of an optional head move](../../turing-machines/single-tape/equivalent-tape-representations/option-move-offset.md)
-- [The offset of an optional move is at most one](../../turing-machines/single-tape/equivalent-tape-representations/option-move-offset-bound.md)
-- [Cell view of a two-way tape](../../turing-machines/single-tape/equivalent-tape-representations/to-tape-2.md)
+- [Cells of an input tape](../../turing-machines/single-tape/part-02/equivalent-tape-representations/nth-to-tape-mk.md)
+- [Cells after $n$ moves to the right](../../turing-machines/single-tape/part-02/equivalent-tape-representations/nth-to-tape-move-right-iterate.md)
+- [Cells after a write and an optional move](../../turing-machines/single-tape/part-02/equivalent-tape-representations/nth-to-tape-write-option-move.md)
+- [Offset of an optional head move](../../turing-machines/single-tape/part-02/equivalent-tape-representations/option-move-offset.md)
+- [The offset of an optional move is at most one](../../turing-machines/single-tape/part-02/equivalent-tape-representations/option-move-offset-bound.md)
+- [Cell view of a two-way tape](../../turing-machines/single-tape/part-02/equivalent-tape-representations/to-tape-2.md)
 - [States of the fenced machine](fence-state.md)
 - [Fenced cell of a write](of-cell.md)
 - [A fenced cell of a write is never a wall](of-cell-ne-wall.md)
 - [Simulated cell of a fenced cell](read.md)
 - [Reading back a copied cell](read-map-sym.md)
 - [Reading back a fenced cell of a write](read-of-cell.md)
-- [Halting from a configuration](../../turing-machines/single-tape/single-tape-turing-machines/halts-from.md)
+- [Halting from a configuration](../../turing-machines/single-tape/part-01/halts-from.md)
 - [A transition lifted to the fenced machine](fence-lift.md)
 - [The running transition of the fenced machine](fence-run.md)
 - [Cells of a fenced input](get-elem-fence-input.md)
-- [Halting from a configuration is invariant along a run](../../turing-machines/single-tape/single-tape-turing-machines/halts-from-iff-of-refl-trans-gen.md)
-- [Configurations with the same successor halt together](../../turing-machines/single-tape/single-tape-turing-machines/halts-from-iff-of-step-eq.md)
-- [Halting on an input is halting from the initial configuration](../../turing-machines/single-tape/single-tape-turing-machines/halts-on-iff-halts-from.md)
-- [One step of a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/step-some.md)
+- [Halting from a configuration is invariant along a run](../../turing-machines/single-tape/part-01/halts-from-iff-of-refl-trans-gen.md)
+- [Configurations with the same successor halt together](../../turing-machines/single-tape/part-01/halts-from-iff-of-step-eq.md)
+- [Halting on an input is halting from the initial configuration](../../turing-machines/single-tape/part-01/halts-on-iff-halts-from.md)
+- [One step of a single-tape Turing machine](../../turing-machines/single-tape/part-01/step-some.md)
 
 ## Sources
 

@@ -14,11 +14,11 @@ conjunction.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
 
 ## Proof depends on
 
-- [Bryant's apply operation](../basic/apply.md)
+- [Bryant's apply operation](../reduced-ordered-binary-decision-diagrams-canonic/apply.md)
 - [Restriction of a binary decision diagram](restrict.md)
 
 ## Sources

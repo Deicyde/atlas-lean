@@ -21,7 +21,7 @@ many-one reduction.
 
 ## Proof depends on
 
-- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/cook-levin-theorem/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/np-hardness-of-binary-index-sat/sat-dec-np-hard.md)
 - [The SAT-to-3-COLOR reduction is polynomial-time](is-poly-time-reduce-col.md)
 - [NP-hardness transfers along reductions](../../../satisfiability/3-satisfiability/np-hard-of-poly-many-one-red.md)
 - [The SAT to 3-COLOR reduction map on bit strings](../part-01/reduce-col.md)

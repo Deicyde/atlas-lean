@@ -17,8 +17,8 @@ with $b_1 = 1$ and $b_{n+1} > 1$.
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

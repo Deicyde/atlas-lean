@@ -18,7 +18,7 @@ input of length $n$ and checks whether it has halted.
 
 ## Depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [Space-bounded single-tape machines](space-bounded-by.md)
 
 ## Proof depends on

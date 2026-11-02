@@ -15,7 +15,7 @@ Broder) at the real parameter $x = r$.
 
 ## Depends on
 
-- [Generalized Stirling numbers of the second kind](../generalized-stirling-numbers/generalized-stirling-second.md)
+- [Generalized Stirling numbers of the second kind](../generalized-stirling-second.md)
 - [r-Stirling numbers of the second kind](r-stirling-second.md)
 
 ## Proof depends on

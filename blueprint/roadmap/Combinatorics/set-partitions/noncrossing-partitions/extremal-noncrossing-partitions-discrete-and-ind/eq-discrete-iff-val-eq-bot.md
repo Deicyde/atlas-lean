@@ -14,9 +14,9 @@ and only if $P$, viewed as a set partition, is the finest partition of $\{0, \do
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 - [Discrete noncrossing partition](discrete.md)
 
 ## Sources

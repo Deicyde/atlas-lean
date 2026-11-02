@@ -19,7 +19,7 @@ marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom to
 ## Depends on
 
 - [Emulation constant](emulation-constant.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
 
 ## Proof depends on
 
@@ -29,7 +29,7 @@ marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom to
 - [Push bound of a finite multi-stack Turing machine](../../turing-machines/multi-tape-and-multi-stack/composition-of-multi-stack-machines/push-bound.md)
 - [Number of push instructions in a TM2 statement](../../turing-machines/multi-tape-and-multi-stack/composition-of-multi-stack-machines/pushes.md)
 - [A halted run stays halted](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/iter-none.md)
-- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
+- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
 
 ## Sources
 

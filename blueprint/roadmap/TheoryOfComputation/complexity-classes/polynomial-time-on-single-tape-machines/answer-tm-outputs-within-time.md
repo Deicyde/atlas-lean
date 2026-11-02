@@ -17,7 +17,7 @@ $e_1^{-1}(\mathrm{true})$ on the output stack).
 
 ## Depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The answer machine](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/answer-tm.md)
 - [The answer bit of a cell](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/cell-answer.md)
 - [Input cell of a bit](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/in-cell.md)

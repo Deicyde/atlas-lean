@@ -14,7 +14,7 @@ $t \in \mathbb{N}$.
 ## Depends on
 
 - [Metered parking function](is-metered-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

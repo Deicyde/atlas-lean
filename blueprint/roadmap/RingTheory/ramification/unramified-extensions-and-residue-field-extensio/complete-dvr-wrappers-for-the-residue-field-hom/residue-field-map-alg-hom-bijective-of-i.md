@@ -18,11 +18,11 @@ $\kappa(B) \to \kappa(C)$ it induces is a bijection.
 
 ## Depends on
 
-- [Induced map on residue fields of DVR extensions](../dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](../residue-field-functoriality-for-dvr-extensions/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 
-- [Algebra maps from an étale DVR extension into a Henselian one match residue-field maps](../dvrbijective/residue-field-map-alg-hom-bijective.md)
+- [Algebra maps from an étale DVR extension into a Henselian one match residue-field maps](../bijections-on-residue-field-morphisms-for-local/residue-field-map-alg-hom-bijective.md)
 - [Complete local rings are Henselian](../../../valuation-rings/henselian-rings-and-hensel-s-lemma/of-is-adic-complete-maximal-ideal.md)
 
 ## Sources

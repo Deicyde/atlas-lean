@@ -15,7 +15,7 @@ joins them into the block $\{i, j\}$.
 
 ## Depends on
 
-- [Set partition](../noncrossing-partitions/basic/set-partition.md)
+- [Set partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/set-partition.md)
 
 ## Sources
 

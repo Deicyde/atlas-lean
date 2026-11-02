@@ -20,7 +20,7 @@ with respect to the natural filtration: arbitrary events of the path before `s` 
 - [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
 - [Law of the driving step sequence of a Markov chain](ctmc-input-measure.md)
 - [Path of a continuous-time Markov chain](ctmc-path.md)
-- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
+- [Transition semigroup of a continuous-time Markov chain](../the-transition-semigroup-of-a-finite-continuous/ctmc-transition.md)
 
 ## Proof depends on
 

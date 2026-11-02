@@ -32,13 +32,13 @@ $E_{\mathrm{LBA}}$ is undecidable by the same reduction.
 ## Depends on
 
 - [Fenced alphabet](fence-symbol.md)
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [Linear bounded automaton](../../context-sensitive-languages/linear-bounded-automata/is-lba.md)
 - [Fenced input](fence-input.md)
 
 ## Proof depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-recognizable.md)
 - [The halting problem for partial recursive codes is recognizable on single-tape machines](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/single-tape-recognizable-halting.md)
 - [The fenced machine](fence.md)
 - [The fenced machine halts on no padding of a word iff the machine does not halt on it](forall-not-halts-on-fence-iff.md)

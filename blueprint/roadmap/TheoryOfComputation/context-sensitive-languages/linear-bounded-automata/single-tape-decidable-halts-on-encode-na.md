@@ -18,8 +18,8 @@ machine.
 
 ## Depends on
 
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-decidable.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [Linear bounded automaton](is-lba.md)
 
 ## Proof depends on

@@ -16,7 +16,7 @@ set $\mathrm{Sh}_m(k - 1, n - k)$ of $(m, n)$-parking-function shuffles with par
 ## Depends on
 
 - [Parking-function shuffles](is-parking-shuffle.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

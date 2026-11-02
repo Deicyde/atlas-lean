@@ -15,15 +15,15 @@ evaluates to true under the assignment read off $p$.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Diagrams ordered from a variable](../basic/ordered-from.md)
-- [Evaluation of a binary decision diagram](../basic/eval.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Diagrams ordered from a variable](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from.md)
+- [Evaluation of a binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/eval.md)
 - [Assignment read off a path](of-path.md)
 - [Satisfying path of a binary decision diagram](sat-path.md)
 
 ## Proof depends on
 
-- [Independence from variables below the order](../basic/eval-update-of-lt.md)
+- [Independence from variables below the order](../reduced-ordered-binary-decision-diagrams-canonic/eval-update-of-lt.md)
 
 ## Sources
 

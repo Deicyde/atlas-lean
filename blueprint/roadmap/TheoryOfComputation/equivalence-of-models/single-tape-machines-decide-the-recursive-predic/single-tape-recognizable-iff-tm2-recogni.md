@@ -15,7 +15,7 @@ only if it is recognizable by a multi-stack machine.
 
 ## Depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-recognizable.md)
 - [Recognizability by multi-stack machines](../../computability/decidable-and-recognizable-predicates/tm2-recognizable.md)
 
 ## Proof depends on

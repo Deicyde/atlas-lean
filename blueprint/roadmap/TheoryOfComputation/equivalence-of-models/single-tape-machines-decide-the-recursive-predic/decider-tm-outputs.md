@@ -19,7 +19,7 @@ and its first symbol is the symbol for $\mathrm{true}$.
 
 ## Depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The decider of a multi-stack machine](decider-tm.md)
 - [Input cell of a bit](in-cell.md)
 
@@ -34,13 +34,13 @@ and its first symbol is the symbol for $\mathrm{true}$.
 - [Finite single-tape emulation of a multi-stack machine](emu-tm.md)
 - [The emulation's final tape](exists-mem-eval-tr.md)
 - [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
-- [Outputs compose](../../turing-machines/single-tape/single-tape-turing-machines/comp-computer.md)
+- [Outputs compose](../../turing-machines/single-tape/part-02/comp-computer.md)
 - [The machine that prepends a symbol](cons-computer.md)
 - [Correctness of the prepending machine](cons-computer-outputs.md)
-- [The single-tape simulation has the same output](../../turing-machines/single-tape/equivalent-tape-representations/outputs-of-tm0.md)
-- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
-- [The emulation visits finitely many states](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
+- [The single-tape simulation has the same output](../../turing-machines/single-tape/part-02/equivalent-tape-representations/outputs-of-tm0.md)
+- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [The emulation visits finitely many states](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
 
 ## Sources
 

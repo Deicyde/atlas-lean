@@ -20,7 +20,7 @@ distribution on the partitions of the sample.
 
 - [Partition rate matrix is a rate matrix](is-rate-matrix-partition-rate.md)
 - [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
-- [Nonnegativity of the transition function of a rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition-nonneg.md)
+- [Nonnegativity of the transition function of a rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/the-transition-semigroup-of-a-finite-continuous/ctmc-transition-nonneg.md)
 
 ## Sources
 

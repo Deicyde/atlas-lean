@@ -20,7 +20,7 @@ $C t (|w| + 1 + C t + 1) + 4$ steps.
 
 ## Depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The decider of a multi-stack machine](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/decider-tm.md)
 - [Input cell of a bit](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/in-cell.md)
 - [Emulation constant](../quadratic-overhead-of-single-tape-simulation/emulation-constant.md)
@@ -35,14 +35,14 @@ $C t (|w| + 1 + C t + 1) + 4$ steps.
 - [States of the single-tape emulation](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/emu-support.md)
 - [Finite single-tape emulation of a multi-stack machine](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/emu-tm.md)
 - [The bottom cell followed by the input word is the emulation's start tape](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/map-val-bot-cell-cons.md)
-- [Timed outputs compose](../../turing-machines/single-tape/single-tape-turing-machines/comp-computer-2.md)
+- [Timed outputs compose](../../turing-machines/single-tape/part-02/comp-computer-2.md)
 - [The machine that prepends a symbol](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/cons-computer.md)
 - [Prepending a symbol takes at most two steps](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/cons-computer-outputs-within-time.md)
-- [The single-tape simulation outputs within one extra step](../../turing-machines/single-tape/equivalent-tape-representations/outputs-within-time-of-tm0.md)
+- [The single-tape simulation outputs within one extra step](../../turing-machines/single-tape/part-02/equivalent-tape-representations/outputs-within-time-of-tm0.md)
 - [Single-tape emulation of halting multi-stack runs](../quadratic-overhead-of-single-tape-simulation/exists-tm0-halt-of-tm2-halt.md)
-- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
-- [The emulation visits finitely many states](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
+- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [The emulation visits finitely many states](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
 
 ## Sources
 

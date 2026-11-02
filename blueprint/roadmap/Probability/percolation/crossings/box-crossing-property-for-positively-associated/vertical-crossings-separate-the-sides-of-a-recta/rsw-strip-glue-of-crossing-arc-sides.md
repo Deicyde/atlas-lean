@@ -18,10 +18,10 @@ for every configuration, then `μ(H_{[a, m']}) μ(V_{[m, m']}) μ(H_{[m, b]}) �
 ## Proof depends on
 
 - [Open connection within a set is monotone in the set](../../../phase-transition/percolation-probability-and-critical-point/connected-within-mono-set.md)
-- [Measurability of the left–right crossing event](../../russo-seymour-welsh-theory/defs/measurable-set-horizontal-crossing-event.md)
-- [Measurability of the bottom–top crossing event](../../russo-seymour-welsh-theory/defs/measurable-set-vertical-crossing-event.md)
+- [Measurability of the left–right crossing event](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/measurable-set-horizontal-crossing-event.md)
+- [Measurability of the bottom–top crossing event](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/measurable-set-vertical-crossing-event.md)
 - [Vertical overlap crossings meet every horizontal crossing](crossing-separates-h.md)
-- [Harris–FKG inequality for a positively associated probability measure](../defs/probability.md)
+- [Harris–FKG inequality for a positively associated probability measure](../positive-association-translates-of-crossing-even/probability.md)
 
 ## Sources
 

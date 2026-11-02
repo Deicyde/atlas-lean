@@ -13,7 +13,7 @@ the indiscrete noncrossing partitions of the empty set $\{0, \dots, n-1\}$ are e
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 - [Discrete noncrossing partition](discrete.md)
 - [The indiscrete noncrossing partition](indiscrete.md)
 

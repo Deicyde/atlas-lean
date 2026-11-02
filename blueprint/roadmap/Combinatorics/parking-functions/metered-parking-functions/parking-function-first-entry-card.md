@@ -25,7 +25,7 @@ exact counts.
 
 ## Depends on
 
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

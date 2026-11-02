@@ -15,11 +15,11 @@ by a single-tape Turing machine.
 
 ## Depends on
 
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The decider of a multi-stack machine](decider-tm.md)
 - [The decider outputs the answer bit](decider-tm-outputs.md)
 - [Input cell of a bit](in-cell.md)

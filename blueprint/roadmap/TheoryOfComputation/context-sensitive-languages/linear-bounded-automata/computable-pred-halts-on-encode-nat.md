@@ -18,7 +18,7 @@ $a \in \alpha$ such that $M$ halts on $w_a$ is computable.
 
 ## Depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [Linear bounded automaton](is-lba.md)
 
 ## Proof depends on

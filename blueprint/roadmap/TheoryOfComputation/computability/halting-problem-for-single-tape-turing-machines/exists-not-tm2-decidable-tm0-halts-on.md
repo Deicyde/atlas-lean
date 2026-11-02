@@ -29,10 +29,10 @@ multi-stack machine.
 - [Halting agrees with evaluation for multi-stack machines](tm2-halts-on-iff-eval-dom.md)
 - [Halting of a multi-stack machine on an input](../../equivalence-of-models/equivalence-of-turing-machines-and-recursive-fun/tm2-halts-on.md)
 - [Every r.e. predicate is the halting set of a machine with finite alphabets](../../equivalence-of-models/equivalence-of-turing-machines-and-recursive-fun/exists-finite-tm2-halts-on-iff-of-re-pre.md)
-- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
-- [The emulation halts iff the multi-stack machine halts](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-eval-dom.md)
-- [The emulation visits finitely many states](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
+- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [The emulation halts iff the multi-stack machine halts](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-eval-dom.md)
+- [The emulation visits finitely many states](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
 
 ## Sources
 

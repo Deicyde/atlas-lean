@@ -13,9 +13,9 @@ and co-recognizable.
 
 ## Depends on
 
-- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-co-recognizable.md)
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/part-01/single-tape-co-recognizable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-decidable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-recognizable.md)
 
 ## Proof depends on
 

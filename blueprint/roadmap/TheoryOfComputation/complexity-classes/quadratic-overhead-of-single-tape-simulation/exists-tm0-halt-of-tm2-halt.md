@@ -21,7 +21,7 @@ to top.
 ## Depends on
 
 - [Emulation constant](emulation-constant.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
 
 ## Proof depends on
 

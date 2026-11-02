@@ -13,12 +13,12 @@ partition of $\{0, \dots, n-1\}$, the coarsest partition of this set, is noncros
 
 ## Depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 
 ## Proof depends on
 
-- [Crossing in a set partition](../basic/has-crossing.md)
+- [Crossing in a set partition](../noncrossing-partitions-of-fin-n/has-crossing.md)
 
 ## Sources
 

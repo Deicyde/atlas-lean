@@ -15,14 +15,14 @@ $\{0, 1, 2\}$.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 - [The indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete.md)
 - [Two-block partition of three points](two-block-partition.md)
 
 ## Proof depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 - [The indiscrete partition of a nonempty set has a single block](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete-parts-pos.md)
 
 ## Sources

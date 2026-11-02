@@ -19,11 +19,11 @@ that $e'^{-1}$ induces is $e^{-1}$.
 
 ## Depends on
 
-- [Induced map on residue fields of DVR extensions](../dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](../residue-field-functoriality-for-dvr-extensions/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 
-- [Lifting residue-field isomorphisms between Henselian étale DVR extensions](../dvrbijective/exists-alg-equiv-lift-residue-field.md)
+- [Lifting residue-field isomorphisms between Henselian étale DVR extensions](../bijections-on-residue-field-morphisms-for-local/exists-alg-equiv-lift-residue-field.md)
 - [Complete local rings are Henselian](../../../valuation-rings/henselian-rings-and-hensel-s-lemma/of-is-adic-complete-maximal-ideal.md)
 
 ## Sources

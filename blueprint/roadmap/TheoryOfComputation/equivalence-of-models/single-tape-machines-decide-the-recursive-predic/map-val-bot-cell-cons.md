@@ -17,7 +17,7 @@ each entry of the reversal of $w$ followed by $\mathsf{true}$.
 
 ## Depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The bottom cell of the start tape](bot-cell.md)
 - [Input cell of a bit](in-cell.md)
 

@@ -13,12 +13,12 @@ set when $n > 0$, and it has no blocks when $n = 0$. It is noncrossing.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 
 ## Proof depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 - [The indiscrete partition is noncrossing](is-noncrossing-top.md)
 
 ## Sources

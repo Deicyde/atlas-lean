@@ -1,6 +1,6 @@
 # Sylvester–Schur theorem
 
-- [Residual Large](residual-large/README.md)
+- [Large residual estimates for the Sylvester-Schur theorem](residual-large/README.md)
 - [Block-level reductions for the Sylvester-Schur theorem](block-level-reductions-for-the-sylvester-schur-t/README.md)
 - [Sylvester-Schur: binomial and consecutive forms](sylvester-schur-binomial-and-consecutive-forms/README.md)
 - [Binomial factorization bounds for Sylvester-Schur](binomial-factorization-bounds-for-sylvester-schu/README.md)

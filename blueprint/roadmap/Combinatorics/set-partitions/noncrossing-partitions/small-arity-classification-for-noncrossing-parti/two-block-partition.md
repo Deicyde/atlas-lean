@@ -12,13 +12,13 @@ partition of $\{0, 1, 2\}$ whose blocks are $\{a\}$ and $\{0, 1, 2\} \setminus \
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 
 ## Proof depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
-- [Partitions of at most three points are noncrossing](../basic/is-noncrossing-of-le-three.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
+- [Partitions of at most three points are noncrossing](../noncrossing-partitions-of-fin-n/is-noncrossing-of-le-three.md)
 
 ## Sources
 

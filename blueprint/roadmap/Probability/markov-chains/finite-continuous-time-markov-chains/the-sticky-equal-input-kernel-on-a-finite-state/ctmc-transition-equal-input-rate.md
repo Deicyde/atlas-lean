@@ -13,7 +13,7 @@ lean: ProbabilityTheory.ctmcTransition_equalInputRate
 
 ## Depends on
 
-- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
+- [Transition semigroup of a continuous-time Markov chain](../the-transition-semigroup-of-a-finite-continuous/ctmc-transition.md)
 - [Equal-input generator (F81 model)](equal-input-rate.md)
 - [Sticky kernel](sticky-kernel.md)
 

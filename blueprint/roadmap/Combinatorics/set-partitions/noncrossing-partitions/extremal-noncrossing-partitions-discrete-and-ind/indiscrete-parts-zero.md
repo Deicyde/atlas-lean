@@ -13,8 +13,8 @@ of the indiscrete noncrossing partition of $\{0, \dots, n-1\}$, the empty set, i
 
 ## Depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 - [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Sources

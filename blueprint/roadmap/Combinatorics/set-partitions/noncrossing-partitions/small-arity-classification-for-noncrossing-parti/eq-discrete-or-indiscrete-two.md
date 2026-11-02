@@ -13,7 +13,7 @@ of $\{0, 1\}$ is either the discrete or the indiscrete noncrossing partition of 
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 - [Discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/discrete.md)
 - [The indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete.md)
 
@@ -22,8 +22,8 @@ of $\{0, 1\}$ is either the discrete or the indiscrete noncrossing partition of 
 - [A partition has a block exactly when its ground set is nonempty](../../finite-set-partitions/card-parts-pos-iff.md)
 - [Recognizing the partition into singletons by its number of blocks](../../finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
 - [Recognizing the one-block partition](../../finite-set-partitions/eq-top-iff-card-parts-eq-one.md)
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 - [Characterization of the discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/eq-discrete-iff-val-eq-bot.md)
 - [Characterization of the indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/eq-indiscrete-iff-val-eq-top.md)
 

@@ -17,8 +17,8 @@ the reversal of $w$ followed by $\mathsf{true}$.
 
 ## Depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [Input cell of a bit](in-cell.md)
 - [The recognizer of a multi-stack machine](recognizer-tm.md)
 - [Halting of a multi-stack machine on an input](../equivalence-of-turing-machines-and-recursive-fun/tm2-halts-on.md)
@@ -32,13 +32,13 @@ the reversal of $w$ followed by $\mathsf{true}$.
 - [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
 - [The machine that prepends a symbol](cons-computer.md)
 - [Correctness of the prepending machine](cons-computer-outputs.md)
-- [Halting of a composite](../../turing-machines/single-tape/single-tape-turing-machines/halts-on-comp-computer-iff.md)
-- [The simulating machine halts exactly when the Post–Turing machine halts](../../turing-machines/single-tape/equivalent-tape-representations/halts-on-of-tm0-iff.md)
-- [Single-tape simulation of a Post–Turing machine](../../turing-machines/single-tape/equivalent-tape-representations/of-tm0.md)
-- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
-- [The emulation halts iff the multi-stack machine halts](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-eval-dom.md)
-- [The emulation visits finitely many states](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
+- [Halting of a composite](../../turing-machines/single-tape/part-02/halts-on-comp-computer-iff.md)
+- [The simulating machine halts exactly when the Post–Turing machine halts](../../turing-machines/single-tape/part-02/equivalent-tape-representations/halts-on-of-tm0-iff.md)
+- [Single-tape simulation of a Post–Turing machine](../../turing-machines/single-tape/part-02/equivalent-tape-representations/of-tm0.md)
+- [A multi-stack machine is supported by all its labels](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/supports-univ.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [The emulation halts iff the multi-stack machine halts](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-eval-dom.md)
+- [The emulation visits finitely many states](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr-supports.md)
 
 ## Sources
 

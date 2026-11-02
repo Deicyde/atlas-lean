@@ -14,7 +14,7 @@ partition.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 - [Discrete noncrossing partition](discrete.md)
 
 ## Proof depends on

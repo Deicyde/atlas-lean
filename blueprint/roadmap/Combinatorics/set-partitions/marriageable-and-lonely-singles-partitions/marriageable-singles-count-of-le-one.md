@@ -21,10 +21,10 @@ partition needs two distinct points.
 - [Marriageable singles partition](is-marriageable-singles.md)
 - [Crossing after merging two blocks](merged-has-crossing.md)
 - [Same block after merging two blocks](merged-same-block.md)
-- [Noncrossing partition](../noncrossing-partitions/basic/noncrossing-partition.md)
-- [Crossing in a set partition](../noncrossing-partitions/basic/has-crossing.md)
-- [Noncrossing set partition](../noncrossing-partitions/basic/is-noncrossing.md)
-- [Set partition](../noncrossing-partitions/basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/noncrossing-partition.md)
+- [Crossing in a set partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/has-crossing.md)
+- [Noncrossing set partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/set-partition.md)
 
 ## Sources
 

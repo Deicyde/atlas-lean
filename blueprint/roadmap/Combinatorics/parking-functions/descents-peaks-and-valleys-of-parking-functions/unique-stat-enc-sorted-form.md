@@ -18,7 +18,7 @@ block may be empty).
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

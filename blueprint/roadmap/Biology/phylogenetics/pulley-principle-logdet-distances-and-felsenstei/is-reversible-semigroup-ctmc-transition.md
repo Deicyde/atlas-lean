@@ -15,13 +15,13 @@ semigroup for `π`.
 ## Depends on
 
 - [Reversible semigroup of transition matrices](is-reversible-semigroup.md)
-- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
-- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationarity-and-detailed-balance-for-finite-con/is-detailed-balance.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/the-transition-semigroup-of-a-finite-continuous/ctmc-transition.md)
 
 ## Proof depends on
 
-- [Detailed balance propagates to the transition function](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/ctmc-transition.md)
-- [Chapman–Kolmogorov equation for the transition semigroup](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition-add.md)
+- [Detailed balance propagates to the transition function](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationarity-and-detailed-balance-for-finite-con/ctmc-transition.md)
+- [Chapman–Kolmogorov equation for the transition semigroup](../../../Probability/markov-chains/finite-continuous-time-markov-chains/the-transition-semigroup-of-a-finite-continuous/ctmc-transition-add.md)
 
 ## Sources
 

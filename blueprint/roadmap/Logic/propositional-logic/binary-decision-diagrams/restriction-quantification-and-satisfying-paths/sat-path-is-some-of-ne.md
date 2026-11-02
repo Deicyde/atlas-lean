@@ -14,8 +14,8 @@ succeeds: it returns a path from the root of $t$ to a leaf $\mathrm{true}$.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Reduced diagrams](../basic/reduced.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced.md)
 - [Satisfying path of a binary decision diagram](sat-path.md)
 
 ## Sources

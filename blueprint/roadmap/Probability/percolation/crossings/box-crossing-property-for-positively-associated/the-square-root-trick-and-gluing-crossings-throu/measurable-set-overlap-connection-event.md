@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Universality.measurableSet_overlapConnectionEvent
+---
+
+# Measurability of the overlap connection event
+
+**Measurability of the overlap connection event.** A connection event inside a rectangular overlap is measurable.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Measurability of connection inside a set](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/measurable-set-connected-within.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Percolation.Universality.RSWStrip](../../../../../../sources/v2/MathlibExt.md)

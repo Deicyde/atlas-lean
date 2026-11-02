@@ -16,7 +16,7 @@ number $C_n$.
 
 - [Maximal set of lanes](is-maximal-set-of-lanes.md)
 - [Lanes with a common point](lanes-meet.md)
-- [Noncrossing partition](../noncrossing-partitions/basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions/noncrossing-partitions-of-fin-n/noncrossing-partition.md)
 
 ## Sources
 

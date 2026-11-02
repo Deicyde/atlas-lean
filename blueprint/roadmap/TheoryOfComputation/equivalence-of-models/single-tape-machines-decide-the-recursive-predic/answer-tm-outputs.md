@@ -16,7 +16,7 @@ the input-bit cell for the answer read from $x$.
 
 ## Depends on
 
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The answer machine](answer-tm.md)
 - [The answer bit of a cell](cell-answer.md)
 - [Input cell of a bit](in-cell.md)

@@ -1,0 +1,69 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Complexity.CookLevin.Precompute.fullTM
+---
+
+# The full machine as a finite multi-stack Turing machine
+
+**The full machine as a finite multi-stack Turing machine.** Given $r \in \mathbb{N}$, an
+encoding $E$ of the machine $M$, a list $Y_s$ of input symbols of $M$, an output symbol $a$ of
+$M$, a map $\iota$ from $\{0, \dots, r - 1\}$ to input symbols of $M$, an input symbol $\sigma$ of
+$M$ (the separator), a polynomial $k$ with natural coefficients and $c, e \in \mathbb{N}$: the
+finite multi-stack machine whose stacks are the full stacks (the host's stacks, the raw input
+stack and the scratch counters) with the full alphabets, whose labels are the full labels, with
+start label the read label, internal states the booleans with initial state false, and program
+the full program built from these data. Its input stack is the raw input stack and its output
+stack is the host's output stack.
+
+## Depends on
+
+- [Encoding data for a finite TM2 machine](../cook-levin-situation-tables-of-a-fintm2-and-the/part-01/enc.md)
+
+## Proof depends on
+
+- [Clause kinds of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ak.md)
+- [Counters of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ck.md)
+- [Labels of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/gl.md)
+- [Stages of the accept generator's literal routine](../cook-levin-generator-machine-for-the-accept-fami/ls.md)
+- [Precomputation stages of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ps.md)
+- [Stacks of the Cook–Levin host machine](../cook-levin-the-five-generators-as-sub-machines-o/hk.md)
+- [Labels of the Cook–Levin host machine](../cook-levin-the-five-generators-as-sub-machines-o/hl.md)
+- [Stages of the multiplication routine](../cook-levin-the-counter-machine-view-shared-by-th/ms.md)
+- [Counters of the transition-family generator](../cook-levin-generator-machine-for-the-transition/ck.md)
+- [Labels of the clause-family generator](../cook-levin-generator-machine-for-the-transition/gl.md)
+- [Stages of the transition-clause generator's literal routine](../cook-levin-generator-machine-for-the-transition/ls.md)
+- [Variable layout of the transition clauses](../cook-levin-generator-machine-for-the-transition/layout.md)
+- [Number of literals of a transition clause](../cook-levin-generator-machine-for-the-transition/n-lits.md)
+- [Stages of the transition-clause generator's precomputation](../cook-levin-generator-machine-for-the-transition/ps.md)
+- [Counters of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/ck.md)
+- [Clause kinds of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/cl.md)
+- [Labels of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/gl.md)
+- [Stages of the literal routine (initial-row generator)](../cook-levin-generator-machine-for-the-initial-row/ls.md)
+- [Loop phases of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/ph.md)
+- [Labels of the first precomputation part](../cook-levin-generator-machine-for-the-initial-row/ps1.md)
+- [Labels of the second precomputation part](../cook-levin-generator-machine-for-the-initial-row/ps2.md)
+- [Sorted certificate code list](../cook-levin-generator-machine-for-the-initial-row/ycs.md)
+- [Stacks of the full machine](fk.md)
+- [Labels of the full machine](fl.md)
+- [Alphabets of the full machine](f.md)
+- [Stages of a Horner round](hw.md)
+- [Labels of the counter program](pl.md)
+- [Scratch counters of the counter program](ps.md)
+- [Stages of the power loop](pw.md)
+- [Coefficient list of a polynomial](coeffs.md)
+- [The full program on the real generators](full-prog.md)
+- [Loop-body stages of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/bd.md)
+- [Counters of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/ck.md)
+- [Clause kinds of the cell-shift family](../cook-levin-generator-machine-for-the-cell-shift/cl.md)
+- [Labels of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/gl.md)
+- [Stages of the cell-shift literal routine](../cook-levin-generator-machine-for-the-cell-shift/ls.md)
+- [Precomputation stages of the shift generator](../cook-levin-generator-machine-for-the-cell-shift/ps.md)
+- [Setup and loop stages of a cell-shift block](../cook-levin-generator-machine-for-the-cell-shift/st.md)
+- [Number of situations](../cook-levin-situation-tables-of-a-fintm2-and-the/part-01/n.md)
+- [Clause layout of a machine encoding](../cook-levin-situation-tables-of-a-fintm2-and-the/part-01/layout.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Precompute](../../../../../sources/v2/CSLibExt.md)

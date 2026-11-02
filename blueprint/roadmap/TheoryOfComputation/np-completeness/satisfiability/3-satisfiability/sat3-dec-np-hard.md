@@ -22,7 +22,7 @@ formula with at most three literals per clause.
 
 ## Proof depends on
 
-- [Every NP problem reduces to binary-index CNF-SAT](../../cook-levin/cook-levin-theorem/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../cook-levin/np-hardness-of-binary-index-sat/sat-dec-np-hard.md)
 - [NP-hardness transfers along reductions](np-hard-of-poly-many-one-red.md)
 - [SAT reduces to 3SAT](sat-dec-poly-many-one-red-sat3-dec.md)
 - [SAT as a decision problem](../../cook-levin/binary-encoding-of-cnf-formulas/sat-dec.md)

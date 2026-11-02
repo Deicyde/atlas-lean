@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isDetailedBalance_f81R
 ## Depends on
 
 - [F81 rate matrix](f81-rate.md)
-- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationarity-and-detailed-balance-for-finite-con/is-detailed-balance.md)
 
 ## Proof depends on
 

@@ -21,11 +21,11 @@ rightwards, with the bottom-of-stack flag set on its first cell and cleared on a
 
 ## Depends on
 
-- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/tr.md)
+- [Two-step single-tape translation of a multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/tr.md)
 
 ## Proof depends on
 
-- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
+- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
 
 ## Sources
 

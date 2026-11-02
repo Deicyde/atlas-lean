@@ -17,13 +17,13 @@ tests, so the input need not be reduced.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Reduced diagrams](../basic/reduced.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced.md)
 - [Restriction of a binary decision diagram](restrict.md)
 
 ## Proof depends on
 
-- [Node constructor removing a redundant test](../basic/mk.md)
+- [Node constructor removing a redundant test](../reduced-ordered-binary-decision-diagrams-canonic/mk.md)
 
 ## Sources
 

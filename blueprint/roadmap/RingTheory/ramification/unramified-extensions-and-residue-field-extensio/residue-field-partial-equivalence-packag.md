@@ -26,7 +26,7 @@ $e$, and the map that $e'^{-1}$ induces is $e^{-1}$.
 
 ## Depends on
 
-- [Induced map on residue fields of DVR extensions](dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](residue-field-functoriality-for-dvr-extensions/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 

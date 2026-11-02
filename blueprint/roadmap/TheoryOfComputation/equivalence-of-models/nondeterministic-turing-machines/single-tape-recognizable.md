@@ -14,7 +14,7 @@ machine** (Sipser, Theorem 3.16, through recursion theory).
 ## Depends on
 
 - [Predicates recognizable by a single-tape nondeterministic machine](single-tape-ntmrecognizable.md)
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/part-01/single-tape-recognizable.md)
 
 ## Proof depends on
 

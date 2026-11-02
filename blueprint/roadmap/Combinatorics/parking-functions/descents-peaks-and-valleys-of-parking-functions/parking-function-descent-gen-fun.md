@@ -26,8 +26,8 @@ middle sum is empty, so $n \ge 1$ is assumed, as in the paper.
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ all other stacks empty, is defined.
 
 ## Proof depends on
 
-- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
+- [The initial configuration of a bundled multi-stack machine](../../turing-machines/single-tape/part-02/simulating-multi-stack-machines-on-a-single-tape/init-list-eq-init.md)
 
 ## Sources
 

@@ -14,9 +14,9 @@ partitions of $\{0, 1, 2\}$ with exactly two blocks.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-of-fin-n/noncrossing-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-of-fin-n/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-of-fin-n/set-partition.md)
 
 ## Proof depends on
 

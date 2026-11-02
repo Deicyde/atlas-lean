@@ -19,7 +19,7 @@ assignments to the variables $n, \dots, m - 1$ that make $t$ true.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
 
 ## Sources
 

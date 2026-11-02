@@ -18,7 +18,7 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.vecMul_gtrRate
 
 - [GTR is reversible](is-detailed-balance-gtr-rate.md)
 - [Rows of the GTR rate matrix sum to zero](sum-gtr-rate.md)
-- [Detailed balance implies invariance for the generator](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/vec-mul-eq-zero.md)
+- [Detailed balance implies invariance for the generator](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationarity-and-detailed-balance-for-finite-con/vec-mul-eq-zero.md)
 
 ## Sources
 

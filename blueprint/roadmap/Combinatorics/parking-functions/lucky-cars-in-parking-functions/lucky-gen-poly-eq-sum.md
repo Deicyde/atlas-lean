@@ -17,7 +17,7 @@ $$\frac{1}{n+1} \prod_{i=0}^{n-1} \bigl((n+1-i)x + i\bigr) = \sum_{k=0}^{n} c_k 
 
 - [Number of lucky cars](lucky-count.md)
 - [Lucky-car polynomial](lucky-gen-poly.md)
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

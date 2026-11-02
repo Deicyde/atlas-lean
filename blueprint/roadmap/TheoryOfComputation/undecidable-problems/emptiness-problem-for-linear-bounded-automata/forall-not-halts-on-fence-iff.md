@@ -16,7 +16,7 @@ left and $j$ on the right for $i, j \in \mathbb{N}$, if and only if $M$ does not
 ## Depends on
 
 - [Fenced alphabet](fence-symbol.md)
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/part-01/halts-on.md)
 - [The fenced machine](fence.md)
 - [Fenced input](fence-input.md)
 

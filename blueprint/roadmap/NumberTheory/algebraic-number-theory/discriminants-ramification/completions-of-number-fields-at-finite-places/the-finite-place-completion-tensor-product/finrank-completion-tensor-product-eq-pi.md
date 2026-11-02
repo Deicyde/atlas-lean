@@ -17,11 +17,11 @@ dimension as $K_v$-vector spaces.
 
 ## Depends on
 
-- [Finite places lying over a finite place](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../places-of-a-number-field-extension-lying-over-a/places-over.md)
 
 ## Proof depends on
 
-- [Places over a finite place correspond to primes over it](../finite-places-over/places-over-equiv-primes-over.md)
+- [Places over a finite place correspond to primes over it](../places-of-a-number-field-extension-lying-over-a/places-over-equiv-primes-over.md)
 - [Local degrees sum to the global degree](sum-finrank-adic-completion-places-over.md)
 
 ## Sources

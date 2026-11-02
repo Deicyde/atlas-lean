@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Measurability of connection inside a set](../defs/measurable-set-connected-within.md)
+- [Measurability of connection inside a set](../rectangles-crossings-annuli-and-the-box-crossing/measurable-set-connected-within.md)
 
 ## Sources
 

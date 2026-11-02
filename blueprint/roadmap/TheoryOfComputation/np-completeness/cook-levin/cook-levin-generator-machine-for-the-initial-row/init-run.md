@@ -1,0 +1,98 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.CookLevin.InitFamily.init_run
+---
+
+# Correctness of the init generator, with its explicit time bound
+
+**Correctness of the init generator, with its explicit time bound.** Let $L$ be a layout with
+$A$ label/state variables, $K$ stacks and $g > 0$ symbol codes, let $i_c < A$ and $k_0 < K$, and
+let $Y$ be a strictly increasing list of codes with $0 < y < g$ for every $y \in Y$. Let $xs$ be a
+list of codes below $g$ with $n = |xs|$, let $T, e, f$ be natural numbers with $f > 0$, and let
+$o$ be a bit string. Start the generator for $L, i_c, k_0, Y$ at its start label with state false,
+with the counters $\mathrm{Tn}, \mathrm{Xn}, \mathrm{En}, \mathrm{Fn}$ holding $T, n, e, f$ in
+unary and all other counters empty, $o$ on the output stack, and $xs$ reversed on the input
+stack. Then within $\mathrm{initBound}(L, |Y|, k_0, K - k_0 - 1, T, n, e, f)$ steps it reaches
+the final label $\mathrm{done}$, and its output stack there is the bit encoding of the
+layout-level init family for $L, i_c, k_0, Y, xs$, $m = n + e$, $T$ and $H = n + e + f$, followed
+by $o$.
+
+## Depends on
+
+- [Stacks of a counter machine](../cook-levin-the-counter-machine-view-shared-by-th/sk.md)
+- [Stacks holding given counter values](../cook-levin-the-counter-machine-view-shared-by-th/st.md)
+- [Variable layout of the transition clauses](../cook-levin-generator-machine-for-the-transition/layout.md)
+- [Counters of the initial-row generator](ck.md)
+- [Labels of the initial-row generator](gl.md)
+- [Stacks of a counter machine with an input stack](ik.md)
+- [Alphabets of a counter machine with an input stack](i.md)
+- [Labels of the initial-row generator for a layout](lb.md)
+- [Labels of the first precomputation part](ps1.md)
+- [Stacks of a counter machine with an extra input stack](emb.md)
+- [Time bound of the init generator](init-bound.md)
+- [Initial counters of the init generator](init-f.md)
+- [The init family](init-fam.md)
+- [The initial-row generator](iprog.md)
+- [Dense encoding of a CNF formula](../dense-cnf-encoding-of-sat/encode-cnf.md)
+- [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
+
+## Proof depends on
+
+- [Stages of the multiplication routine](../cook-levin-the-counter-machine-view-shared-by-th/ms.md)
+- [Alphabets of a counter machine](../cook-levin-the-counter-machine-view-shared-by-th/s.md)
+- [Index of a cell variable in the transition-family layout](../cook-levin-generator-machine-for-the-transition/c-idx.md)
+- [Number of variables of the transition-clause formula](../cook-levin-generator-machine-for-the-transition/num-vars.md)
+- [Variables per time step](../cook-levin-generator-machine-for-the-transition/row-w.md)
+- [Index of a label/state variable](../cook-levin-generator-machine-for-the-transition/x-idx.md)
+- [Dense clause from a list of literals](../cook-levin-generator-machine-for-the-transition/dense-clause.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Base counter of a clause kind (initial-row generator)](bc.md)
+- [Number of literals of a clause kind](nl.md)
+- [Literal offsets](off.md)
+- [Literal signs of an init-family clause kind](sg.md)
+- [Label after a phase loop](next.md)
+- [Label after a clause](next-c.md)
+- [Literals of a clause kind in range](in-r.md)
+- [Stages of the literal routine (initial-row generator)](ls.md)
+- [Loop phases of the initial-row generator](ph.md)
+- [Loop-count counter of a phase (initial-row generator)](c-n.md)
+- [Base counter of a phase (initial-row generator)](c-z.md)
+- [Labels of the second precomputation part](ps2.md)
+- [Empty scratch counters](rest.md)
+- [Well-formed init-family clause kinds](wf.md)
+- [Step bound for one loop iteration (initial-row generator)](body-b.md)
+- [Step bound for one clause (initial-row generator)](clause-b.md)
+- [Run of one clause (initial-row generator)](clause-run.md)
+- [Literals of a clause kind](clits.md)
+- [Concatenating consecutive blocks of indices](flat-blocks.md)
+- [The I3 loop on the whole input](i3-full.md)
+- [Certificate clauses of the initial row (I4)](i-cert.md)
+- [Start-code clause of the initial row (I1)](i-code.md)
+- [Input clauses of the initial row (I3)](i-in.md)
+- [Row-0 clauses for the other stacks](i-other.md)
+- [Row-0 prefix clauses](i-pre.md)
+- [Row-0 tail clauses](i-tail.md)
+- [The counter stacks inside the generator's stacks](lift-e.md)
+- [Step bound of one phase loop (initial-row generator)](loop-b.md)
+- [One phase loop](phase-run.md)
+- [Step bound for the precomputation](pre-b.md)
+- [Counters after the precomputation](pre-f.md)
+- [Run of the precomputation (initial-row generator)](pre-run.md)
+- [The counter part of the initial-row generator](prog.md)
+- [Row-0 cells fit in the variable range](qpos.md)
+- [Run lifting](run-lift.md)
+- [Empty-cell variable of the initial row](z-b.md)
+- [Dense CNF formula](../dense-cnf-encoding-of-sat/cnf.md)
+- [Dense clause](../dense-cnf-encoding-of-sat/clause.md)
+- [Dense encoding of a clause](../dense-cnf-encoding-of-sat/encode-clause.md)
+- [Embedding of a machine in a host](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/embeds.md)
+- [Translating a statement along a stack embedding](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/map-s.md)
+- [Budgeted run](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bud.md)
+- [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.InitFamily](../../../../../sources/v2/CSLibExt.md)

@@ -7,7 +7,7 @@
 - [Multidegree decomposition of the base-changed resolution](base-changed-degree-decomposition.md)
 - [Multigraded Betti numbers after residue-field base change](multigraded-betti-numbers-after-residue-field-ba/README.md)
 - [Betti numbers do not depend on the choice of base change data](multigraded-betti-number-eq-of-base-chan.md)
-- [Multigraded Betti Resolution Invariance](multigraded-betti-resolution-invariance/README.md)
+- [Invariance of multigraded Betti numbers across graded free resolutions](invariance-of-multigraded-betti-numbers-across-g/README.md)
 - [Multigraded free modules and graded free resolutions](multigraded-free-modules-and-graded-free-resolut/README.md)
 - [Existence of finite multigraded free resolutions](exists-finite-multigraded-free-resolutio.md)
 - [Multigraded Poincaré-series coefficient family](multigraded-poincar-series-coefficient-family/README.md)

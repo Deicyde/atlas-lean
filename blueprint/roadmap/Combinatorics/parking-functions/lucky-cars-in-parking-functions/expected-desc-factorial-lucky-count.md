@@ -22,8 +22,8 @@ is the $\ell$-th falling-factorial moment of $X$ for a uniformly random parking 
 
 - [Number of lucky cars](lucky-count.md)
 - [Lucky-car polynomial](lucky-gen-poly.md)
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

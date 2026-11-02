@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isDetailedBalance_hkyR
 ## Depends on
 
 - [HKY85 rate matrix](hky-rate.md)
-- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationarity-and-detailed-balance-for-finite-con/is-detailed-balance.md)
 
 ## Proof depends on
 

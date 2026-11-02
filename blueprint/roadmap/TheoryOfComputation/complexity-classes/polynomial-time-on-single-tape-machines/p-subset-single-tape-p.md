@@ -26,7 +26,7 @@ it on a single tape within quadratic overhead.
 
 - [Polynomial-time encoder to the canonical bit-list encoding](../../np-completeness/cook-levin/conversions-between-bit-string-encodings/computable-3.md)
 - [Reversing and dropping the first bit is polynomial-time](computable.md)
-- [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
+- [Non-blank symbols](../../turing-machines/single-tape/part-02/equivalent-tape-representations/non-blank.md)
 - [The decider of a multi-stack machine](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/decider-tm.md)
 - [The decider within time](decider-tm-outputs-within-time.md)
 - [Input cell of a bit](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/in-cell.md)

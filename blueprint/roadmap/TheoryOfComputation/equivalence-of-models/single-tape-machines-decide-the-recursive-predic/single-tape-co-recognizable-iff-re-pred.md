@@ -17,7 +17,7 @@ recursive.
 
 ## Depends on
 
-- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-co-recognizable.md)
+- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/part-01/single-tape-co-recognizable.md)
 
 ## Proof depends on
 

@@ -14,15 +14,15 @@ $b$ the cofactor $t[x := b]$ is a reduced ordered binary decision diagram.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
-- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Reduced ordered binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/is-robdd.md)
+- [Diagrams ordered from a variable](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from.md)
 - [Restriction of a binary decision diagram](restrict.md)
 
 ## Proof depends on
 
-- [Reduced diagrams](../basic/reduced.md)
-- [Node constructor removing a redundant test](../basic/mk.md)
+- [Reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced.md)
+- [Node constructor removing a redundant test](../reduced-ordered-binary-decision-diagrams-canonic/mk.md)
 - [Restriction yields a reduced diagram](reduced-restrict.md)
 
 ## Sources
