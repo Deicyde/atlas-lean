@@ -83,3 +83,5 @@ Useful links:
 New work outside `v1/` is licensed under the
 [Apache License 2.0](LICENSE). Files inside `v1/` remain subject to the
 [original v1 license](v1/LICENSE) and are not relicensed by the root license.
+
+<!-- test: a pull request that touches nothing the wiki reads -->
