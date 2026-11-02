@@ -14,7 +14,12 @@ natural density $\alpha$ with $\alpha \neq 0$, then $S$ is infinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Density of a set](has-density.md)
+
+## Proof depends on
+
+- [Finite sets have natural density zero](has-density-zero-of-finite.md)
+- [Partial density](partial-density.md)
 
 ## Sources
 

@@ -282619,10 +282619,38 @@
     "Nat.generalizedSylvester"
    ]
   },
+  "Nat.hasDensity_even": {
+   "module": "MathlibExt.Data.Set.Density",
+   "proof": [
+    "Set.partialDensity"
+   ],
+   "statement": [
+    "Set.HasDensity"
+   ]
+  },
+  "Nat.hasDensity_zero_of_finite": {
+   "module": "MathlibExt.Data.Set.Density",
+   "proof": [
+    "Set.partialDensity"
+   ],
+   "statement": [
+    "Set.HasDensity"
+   ]
+  },
   "Nat.hurwitzClassNumber": {
    "module": "WantedExt.NumberTheory.QuadraticForms.ThreeSquares",
    "proof": [],
    "statement": []
+  },
+  "Nat.infinite_of_hasDensity_pos": {
+   "module": "MathlibExt.Data.Set.Density",
+   "proof": [
+    "Nat.hasDensity_zero_of_finite",
+    "Set.partialDensity"
+   ],
+   "statement": [
+    "Set.HasDensity"
+   ]
   },
   "Nat.isCarmichaelNumber_iff_korselt": {
    "module": "MathlibExt.NumberTheory.CarmichaelNumber",
@@ -290777,6 +290805,11 @@
    ],
    "statement": []
   },
+  "Set.HasLogDensity": {
+   "module": "MathlibExt.Data.Set.Density",
+   "proof": [],
+   "statement": []
+  },
   "Set.HasPosDensity": {
    "module": "MathlibExt.Data.Set.Density",
    "proof": [
@@ -297256,13 +297289,8 @@
  },
  "missing_articles": {
   "CSLibExt": [],
-  "MathlibExt": [
-   "Set.Nat.hasDensity_even",
-   "Set.Nat.hasDensity_zero_of_finite",
-   "Set.Nat.infinite_of_hasDensity_pos",
-   "Set.Set.HasLogDensity"
-  ],
+  "MathlibExt": [],
   "WantedExt": []
  },
- "source": "devserver build of 74b522a30, as .github/workflows/v2-dependencies.yml runs it"
+ "source": ".github/workflows/v2-dependencies.yml"
 }
