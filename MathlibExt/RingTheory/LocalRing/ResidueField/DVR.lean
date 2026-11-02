@@ -18,7 +18,7 @@ public import Mathlib.RingTheory.Unramified.Basic
 import Mathlib.RingTheory.Filtration
 
 /-!
-# Residue-field functoriality for DVR extensions
+# Residue-field functoriality and faithfulness for DVR extensions
 
 This file is a prerequisite stage for ATLAS NumberTheoryI item N211,
 Theorem 10.13 (Section 10.2), at atlas-lean revision

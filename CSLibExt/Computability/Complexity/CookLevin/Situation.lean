@@ -26,7 +26,7 @@ module
 public import CSLibExt.Computability.Complexity.CookLevin.Shift
 
 /-!
-# Cook-Levin: situation tables of a `FinTM2` and the correctness of the formula
+# Cook-Levin: situation tables of a multi-stack machine and the correctness of the formula
 
 For an arbitrary `M : FinTM2` (work alphabets may be infinite and need no `DecidableEq`), an
 encoding record `Enc M` fixes finite effective alphabets and numberings of stacks and of

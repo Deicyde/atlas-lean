@@ -13,8 +13,9 @@ public import Mathlib.RingTheory.Frobenius
 /-!
 # Frobenius elements under trivial inertia
 
-When inertia is trivial, any two arithmetic Frobenius elements coincide, and for a finite group
-acting with finite residue field there is exactly one.
+When inertia is trivial, any two arithmetic Frobenius elements coincide. If moreover the group
+is finite, every element it fixes comes from the base ring, and the prime has a finite residue
+ring, there is exactly one.
 -/
 
 @[expose] public section

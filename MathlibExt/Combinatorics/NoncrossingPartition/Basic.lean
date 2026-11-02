@@ -17,7 +17,7 @@ module
 public import Mathlib.Order.Partition.Finpartition
 
 /-!
-# Noncrossing partitions of `Fin n`
+# Noncrossing partitions and the refinement order
 
 This file defines crossings by four interleaved points and bundles
 noncrossing finite partitions with the refinement order inherited from

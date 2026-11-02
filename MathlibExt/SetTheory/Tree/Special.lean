@@ -20,7 +20,9 @@ public import Mathlib.Order.SetNotation
 -- Source: Lean Definition Library (Airtable) records: Logic 16, Logic 36
 
 /-!
-# Union of ω antichains; Special partial order
+# Special partial orders
+
+Partial orders that are unions of countably many antichains, and special partial orders.
 
 ## References
 
