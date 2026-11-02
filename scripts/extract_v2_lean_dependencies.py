@@ -37,7 +37,7 @@ def read_dump(path: Path) -> dict[str, dict]:
         return {row["name"]: row for row in map(json.loads, handle) if row}
 
 
-def publish_private_targets(rows: dict[str, dict], manifest: dict[str, str]) -> dict[str, dict]:
+def publish_private_targets(rows: dict[str, dict], manifest: set[str]) -> dict[str, dict]:
     """Key private constants that the roadmap publishes by their source names.
 
     In a `module` file a declaration outside `public section` without
@@ -66,23 +66,21 @@ def publish_private_targets(rows: dict[str, dict], manifest: dict[str, str]) -> 
     }
 
 
-def article_manifest() -> dict[str, str]:
-    """The compiled names the generated v2 roadmap publishes, and their libraries."""
+def article_manifest() -> set[str]:
+    """The compiled names the generated v2 roadmap publishes.
 
-    names: dict[str, str] = {}
+    The roadmap is laid out by subject, not by library, so every page's `lean:`
+    targets count; the generated roadmap holds only v2 articles."""
+
+    names: set[str] = set()
     for path in ROADMAP.rglob("*.md"):
-        relative = path.relative_to(ROADMAP)
-        if len(relative.parts) < 2 or relative.parts[1] not in LIBRARIES:
-            continue
         text = path.read_text(encoding="utf-8")
         if not text.startswith("---\n"):
             continue
         frontmatter = text.split("---\n", 2)[1]
         match = LEAN.search(frontmatter)
         if match is not None:
-            for name in (name.strip() for name in match.group(1).split(",")):
-                if name:
-                    names[name] = relative.parts[1]
+            names.update(name for name in (name.strip() for name in match.group(1).split(",")) if name)
     return names
 
 
@@ -124,12 +122,12 @@ def main() -> int:
         return 2
     manifest = article_manifest()
     rows = publish_private_targets(read_dump(Path(sys.argv[1])), manifest)
-    missing = sorted(manifest.keys() - rows.keys())
+    missing = sorted(manifest - rows.keys())
     if missing:
         for name in missing[:20]:
             print(f"warning: roadmap Lean target is absent from the compiled dependency dump: {name}", file=sys.stderr)
         print(f"warning: {len(missing)} roadmap targets have no compiled dependency row", file=sys.stderr)
-    articles = manifest.keys() & rows.keys()
+    articles = manifest & rows.keys()
     reach = frontiers(rows, articles)
 
     def collapse(name: str, uses: list[str]) -> set[str]:
@@ -150,10 +148,14 @@ def main() -> int:
             "proof": sorted(proof),
         }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    # A target with no compiled row has no module to name its library, so its own name has to.
     missing_by_library = {
-        library: [name for name in missing if manifest[name] == library]
+        library: [name for name in missing if name.split(".")[0] == library]
         for library in sorted(LIBRARIES)
     }
+    unplaced = [name for name in missing if name.split(".")[0] not in LIBRARIES]
+    if unplaced:
+        print(f"warning: {len(unplaced)} targets without a compiled row name no library: {unplaced[:5]}", file=sys.stderr)
     OUTPUT.write_text(
         json.dumps(
             {
