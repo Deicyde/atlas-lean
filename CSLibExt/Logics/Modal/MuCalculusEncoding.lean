@@ -49,7 +49,7 @@ namespace MuFormula
 
 variable {Atom : Type u}
 
-/-- A formula is closed at depth `d` when every free de Bruijn variable is `< d`:
+/-- **μ-calculus formula closed at a given binding depth.** A formula is closed at depth `d` when every free de Bruijn variable is `< d`:
 only `μ` / `ν` increase the depth; `□` / `◇` do not bind variables and preserve it. -/
 def ClosedAt : ℕ → MuFormula Atom → Prop
   | _, .atom _ => True
@@ -64,10 +64,10 @@ def ClosedAt : ℕ → MuFormula Atom → Prop
   | d, .mu φ => ClosedAt (d + 1) φ
   | d, .nu φ => ClosedAt (d + 1) φ
 
-/-- A formula is closed when it is closed at depth `0`: every variable is bound. -/
+/-- **Closed modal μ-calculus formula.** A formula is closed when it is closed at depth `0`: every variable is bound. -/
 def Closed (φ : MuFormula Atom) : Prop := ClosedAt 0 φ
 
-/-- The depth of a formula: the length of its longest root-to-leaf path, counting
+/-- **Depth of a modal μ-calculus formula.** The depth of a formula: the length of its longest root-to-leaf path, counting
 each connective once. -/
 def depth : MuFormula Atom → ℕ
   | .atom _ => 0
@@ -88,7 +88,7 @@ section ClosedEnv
 
 variable {World Atom : Type*} (M : KripkeModel World Atom)
 
-/-- A closed formula does not depend on the environment: environments agreeing below
+/-- **Denotation of a closed μ-calculus formula is environment-independent.** A closed formula does not depend on the environment: environments agreeing below
 the depth give the same denotation. -/
 theorem sat_closed_env :
     ∀ (φ : MuFormula Atom) (d : ℕ) {env env' : ℕ → World → Prop},
@@ -156,7 +156,7 @@ end ClosedEnv
 
 section Encoding
 
-/-- An injective encoding of μ-calculus formulas over `ℕ` atoms as natural numbers,
+/-- **Cantor-pairing number code of a μ-calculus formula.** An injective encoding of μ-calculus formulas over `ℕ` atoms as natural numbers,
 via the Cantor pairing function `Nat.pair`. This is a Nat code only, not a complexity
 input encoding: repeated pairing squares the code at every unary connective, so the
 binary length of the code of `box^d (atom 0)` doubles at each `box` and is exponential
@@ -174,7 +174,7 @@ def muCode : MuFormula ℕ → ℕ
   | .mu φ => Nat.pair 9 (muCode φ)
   | .nu φ => Nat.pair 10 (muCode φ)
 
-/-- Fuelled decoding of a `muCode` number back to a formula. The fuel bounds the
+/-- **Fuelled decoding of a μ-calculus number code.** Fuelled decoding of a `muCode` number back to a formula. The fuel bounds the
 recursion depth; `muDecode` supplies fuel `c + 1`, which exceeds every formula's
 depth (see `depth_le_code`). -/
 def muDecodeFuel : ℕ → ℕ → Option (MuFormula ℕ)
@@ -204,10 +204,10 @@ def muDecodeFuel : ℕ → ℕ → Option (MuFormula ℕ)
     | (10, c₁) => .nu <$> muDecodeFuel fuel c₁
     | (_, _) => none
 
-/-- Decode a `muCode` number back to the formula it encodes. -/
+/-- **Decoding a μ-calculus number code to a formula.** Decode a `muCode` number back to the formula it encodes. -/
 def muDecode (c : ℕ) : Option (MuFormula ℕ) := muDecodeFuel (c + 1) c
 
-/-- A formula's depth is at most its code: pairing dominates each component
+/-- **Depth of a μ-calculus formula is at most its number code.** A formula's depth is at most its code: pairing dominates each component
 (`Nat.add_le_pair`). -/
 theorem depth_le_code : ∀ φ : MuFormula ℕ, MuFormula.depth φ ≤ muCode φ := by
   intro φ
@@ -266,7 +266,7 @@ theorem depth_le_code : ∀ φ : MuFormula ℕ, MuFormula.depth φ ≤ muCode φ
       _ ≤ Nat.pair 10 (muCode φ) := Nat.add_le_pair 10 _
       _ = muCode (.nu φ) := rfl
 
-/-- Decoding inverts encoding, with enough fuel: a formula's own code carries
+/-- **Fuelled decoding inverts the μ-calculus number code.** Decoding inverts encoding, with enough fuel: a formula's own code carries
 more fuel than its depth needs. -/
 theorem muDecodeFuel_muCode : ∀ (φ : MuFormula ℕ) (fuel : ℕ),
     MuFormula.depth φ ≤ fuel → muDecodeFuel (fuel + 1) (muCode φ) = some φ := by
@@ -346,11 +346,11 @@ theorem muDecodeFuel_muCode : ∀ (φ : MuFormula ℕ) (fuel : ℕ),
         rw [ih fuel' hφ]
         rfl
 
-/-- Decoding inverts encoding. -/
+/-- **Decoding inverts the μ-calculus number code.** Decoding inverts encoding. -/
 theorem muDecode_muCode (φ : MuFormula ℕ) : muDecode (muCode φ) = some φ :=
   muDecodeFuel_muCode φ (muCode φ) (depth_le_code φ)
 
-/-- A polynomial-size token-list encoding of μ-calculus formulas over `ℕ`
+/-- **Polynomial-size token-list encoding of μ-calculus formulas.** A polynomial-size token-list encoding of μ-calculus formulas over `ℕ`
 atoms, used for the complexity statements in `WantedExt`. Each connective
 contributes one tag token (`Nat.pair` of a small tag with `0`), and each atom
 or variable contributes one token `Nat.pair tag value`, whose binary size is
@@ -372,7 +372,7 @@ def muTokens : MuFormula ℕ → List ℕ
   | .mu φ => Nat.pair 9 0 :: muTokens φ
   | .nu φ => Nat.pair 10 0 :: muTokens φ
 
-/-- Fuelled parsing of a `muTokens` token list back to a formula, returning
+/-- **Fuelled parser for modal μ-calculus token lists.** Fuelled parsing of a `muTokens` token list back to a formula, returning
 the formula and the unconsumed suffix. The fuel bounds the recursion depth;
 `muDecodeList` supplies fuel `l.length + 1`. -/
 def muParseFuel : ℕ → List ℕ → Option (MuFormula ℕ × List ℕ)
@@ -419,14 +419,14 @@ def muParseFuel : ℕ → List ℕ → Option (MuFormula ℕ × List ℕ)
         | none => none
       | (_, _) => none
 
-/-- Decode a `muTokens` token list back to the formula it encodes, rejecting
+/-- **Decoding a modal μ-calculus token list to a formula.** Decode a `muTokens` token list back to the formula it encodes, rejecting
 trailing tokens. -/
 def muDecodeList (l : List ℕ) : Option (MuFormula ℕ) :=
   match muParseFuel (l.length + 1) l with
   | some (φ, []) => some φ
   | _ => none
 
-/-- Parsing inverts token encoding, with enough fuel. -/
+/-- **Fuelled parsing inverts modal μ-calculus token encoding.** Parsing inverts token encoding, with enough fuel. -/
 theorem muParseFuel_muTokens : ∀ (φ : MuFormula ℕ) (rest : List ℕ) (fuel : ℕ),
     (muTokens φ).length ≤ fuel →
     muParseFuel (fuel + 1) (muTokens φ ++ rest) = some (φ, rest) := by
@@ -522,14 +522,14 @@ theorem muParseFuel_muTokens : ∀ (φ : MuFormula ℕ) (rest : List ℕ) (fuel 
       simp only [muTokens, Nat.unpair_pair, List.cons_append, List.append_assoc,
         List.nil_append, ih, hφ]
 
-/-- Decoding inverts token encoding. -/
+/-- **Token-list decoding inverts modal μ-calculus token encoding.** Decoding inverts token encoding. -/
 theorem muDecodeList_muTokens (φ : MuFormula ℕ) :
     muDecodeList (muTokens φ) = some φ := by
   have h := muParseFuel_muTokens φ [] (muTokens φ).length (le_refl _)
   rw [List.append_nil] at h
   simp [muDecodeList, h]
 
-/-- The encoding is injective. -/
+/-- **Injectivity of the μ-calculus number code.** The encoding is injective. -/
 theorem muCode_injective : Function.Injective muCode := by
   intro φ ψ h
   have h' := congrArg muDecode h

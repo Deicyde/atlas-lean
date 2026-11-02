@@ -54,7 +54,7 @@ namespace Nominal
 
 variable {Atom : Type*} [Infinite Atom] [DecidableEq Atom]
 
-/-- The subgroup of finitely supported permutations of `Atom`: permutations
+/-- **Subgroup of finitely supported permutations of atoms.** The subgroup of finitely supported permutations of `Atom`: permutations
 that fix all atoms outside some finite set. -/
 def finPermSubgroup (Atom : Type*) [DecidableEq Atom] : Subgroup (Equiv.Perm Atom) where
   carrier := {π | ∃ S : Finset Atom, ∀ a, a ∉ S → π a = a}
@@ -76,7 +76,7 @@ def finPermSubgroup (Atom : Type*) [DecidableEq Atom] : Subgroup (Equiv.Perm Ato
     rw [Equiv.Perm.coe_inv, Equiv.symm_apply_apply] at h'
     exact h'.symm
 
-/-- The group of finitely supported permutations of `Atom`. -/
+/-- **Group of finitely supported permutations.** The group of finitely supported permutations of `Atom`. -/
 abbrev FinPerm (Atom : Type*) [DecidableEq Atom] : Type _ := ↥(finPermSubgroup Atom)
 
 /-- A finite permutation acts on atoms by applying the underlying permutation. -/
@@ -85,7 +85,7 @@ instance : MulAction (FinPerm Atom) Atom where
   one_smul := fun _ => rfl
   mul_smul := fun _ _ _ => rfl
 
-/-- The transposition of two atoms, as a finite permutation. -/
+/-- **Transposition of two atoms.** The transposition of two atoms, as a finite permutation. -/
 def swap (a b : Atom) : FinPerm Atom :=
   ⟨Equiv.swap a b, ⟨{a, b}, fun x hx => by
     by_contra h
@@ -93,55 +93,55 @@ def swap (a b : Atom) : FinPerm Atom :=
       (fun h₁ => hx (Finset.mem_insert.mpr (Or.inl h₁)))
       (fun h₂ => hx (Finset.mem_insert.mpr (Or.inr (Finset.mem_singleton.mpr h₂)))))⟩⟩
 
-/-- Applying a transposition is applying the underlying `Equiv.swap`. -/
+/-- **Action of a transposition.** Applying a transposition is applying the underlying `Equiv.swap`. -/
 theorem swap_smul (a b c : Atom) :
     (swap a b : FinPerm Atom) • c = Equiv.swap a b c := rfl
 
-/-- A transposition is an involution, stated for the `FinPerm` group. -/
+/-- **A transposition squares to the identity.** A transposition is an involution, stated for the `FinPerm` group. -/
 theorem swap_mul_self (a b : Atom) : (swap a b : FinPerm Atom) * swap a b = 1 := by
   rw [Subtype.ext_iff]
   simp only [Subgroup.coe_mul, Subgroup.coe_one]
   exact Equiv.swap_mul_self a b
 
-/-- A transposition is its own inverse. -/
+/-- **A transposition is its own inverse.** A transposition is its own inverse. -/
 theorem swap_inv (a b : Atom) : (swap a b : FinPerm Atom)⁻¹ = swap a b := by
   exact (eq_inv_of_mul_eq_one_left (swap_mul_self a b)).symm
 
-/-- A transposition of an atom with itself is the identity. -/
+/-- **Transposition of an atom with itself is the identity.** A transposition of an atom with itself is the identity. -/
 theorem swap_self (a : Atom) : (swap a a : FinPerm Atom) = 1 := by
   rw [Subtype.ext_iff]
   simp only [Subgroup.coe_one]
   exact Equiv.swap_self a
 
-/-- Transpositions are symmetric. -/
+/-- **Symmetry of transpositions.** Transpositions are symmetric. -/
 theorem swap_comm (a b : Atom) : (swap a b : FinPerm Atom) = swap b a := by
   rw [Subtype.ext_iff]
   exact Equiv.swap_comm a b
 
-/-- Conjugation of a transposition: `σ * swap b c * σ⁻¹ = swap (σ b) (σ c)`. -/
+/-- **Conjugation of a transposition.** Conjugation of a transposition: `σ * swap b c * σ⁻¹ = swap (σ b) (σ c)`. -/
 theorem swap_conj (σ : FinPerm Atom) (b c : Atom) :
     σ * swap b c * σ⁻¹ = swap (σ • b) (σ • c) := by
   rw [Subtype.ext_iff]
   simp only [Subgroup.coe_mul, Subgroup.coe_inv]
   exact (Equiv.swap_apply_apply σ.1 b c).symm
 
-/-- A transposition fixes every atom distinct from its two swapped atoms. -/
+/-- **Transposition fixes atoms other than the swapped pair.** A transposition fixes every atom distinct from its two swapped atoms. -/
 theorem swap_smul_of_ne_of_ne {a b c : Atom} (h1 : c ≠ a) (h2 : c ≠ b) :
     (swap a b : FinPerm Atom) • c = c := by
   rw [swap_smul]
   exact Equiv.swap_apply_of_ne_of_ne h1 h2
 
-/-- `S` supports `x` when every finite permutation fixing `S` pointwise fixes `x`. -/
+/-- **Supporting set of atoms for an element.** `S` supports `x` when every finite permutation fixing `S` pointwise fixes `x`. -/
 def Supports {X : Type*} [MulAction (FinPerm Atom) X] (S : Finset Atom) (x : X) : Prop :=
   ∀ π : FinPerm Atom, (∀ a ∈ S, π • a = a) → π • x = x
 
-/-- A support can be enlarged: fixing a larger set pointwise is a stronger
+/-- **Enlarging a support.** A support can be enlarged: fixing a larger set pointwise is a stronger
 hypothesis. -/
 theorem Supports.mono {X : Type*} [MulAction (FinPerm Atom) X] {S T : Finset Atom}
     {x : X} (h : S ⊆ T) (hs : Supports S x) : Supports T x :=
   fun π hπ => hs π (fun a ha => hπ a (h ha))
 
-/-- A type with an action of finite permutations in which every element has a
+/-- **Nominal set.** A type with an action of finite permutations in which every element has a
 finite support: a *nominal set*. -/
 class NominalSet (Atom : Type*) [DecidableEq Atom] (X : Type*) [MulAction (FinPerm Atom) X] : Prop where
   finiteSupport : ∀ x : X, ∃ S : Finset Atom, Supports S x
@@ -169,7 +169,7 @@ instance instNominalProd {X Y : Type*} [MulAction (FinPerm Atom) X]
     have hy : π • y = y := hSy π (fun a ha => hπ a (Finset.mem_union_right Sx ha))
     exact Prod.ext hx hy
 
-/-- A pair is supported by the union of supports of its components. -/
+/-- **A pair is supported by the union of its components' supports.** A pair is supported by the union of supports of its components. -/
 theorem Supports.prod {X Y : Type*} [MulAction (FinPerm Atom) X]
     [MulAction (FinPerm Atom) Y] {S T : Finset Atom} {x : X} {y : Y}
     (hx : Supports S x) (hy : Supports T y) : Supports (S ∪ T) (x, y) := by
@@ -177,19 +177,19 @@ theorem Supports.prod {X Y : Type*} [MulAction (FinPerm Atom) X]
   exact Prod.ext (hx π (fun a ha => hπ a (Finset.mem_union_left T ha)))
     (hy π (fun a ha => hπ a (Finset.mem_union_right S ha)))
 
-/-- `a` is *fresh* for `x`, written `a # x` in the nominal literature, when
+/-- **Freshness of an atom for an element.** `a` is *fresh* for `x`, written `a # x` in the nominal literature, when
 some finite support of `x` does not contain `a`. -/
 def Fresh {X : Type*} [MulAction (FinPerm Atom) X] (a : Atom) (x : X) : Prop :=
   ∃ S : Finset Atom, Supports S x ∧ a ∉ S
 
-/-- Every element has a fresh atom: choose one outside any of its supports. -/
+/-- **Existence of fresh atoms.** Every element has a fresh atom: choose one outside any of its supports. -/
 theorem exists_fresh {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) : ∃ a : Atom, Fresh a x := by
   obtain ⟨S, hS⟩ := show ∃ S : Finset Atom, Supports S x from NominalSet.finiteSupport x
   obtain ⟨a, -, ha⟩ := Set.infinite_univ.exists_notMem_finset S
   exact ⟨a, S, hS, ha⟩
 
-/-- A transposition of two atoms both outside a support of `x` fixes `x`. -/
+/-- **Transposition of atoms outside a support fixes the element.** A transposition of two atoms both outside a support of `x` fixes `x`. -/
 theorem swap_smul_of_supports_not_mem {X : Type*} [MulAction (FinPerm Atom) X]
     {S : Finset Atom} {x : X} (hS : Supports S x) {a b : Atom} (ha : a ∉ S)
     (hb : b ∉ S) : (swap a b : FinPerm Atom) • x = x := by
@@ -199,7 +199,7 @@ theorem swap_smul_of_supports_not_mem {X : Type*} [MulAction (FinPerm Atom) X]
   · exact fun h => ha (by rw [← h]; exact hd)
   · exact fun h => hb (by rw [← h]; exact hd)
 
-/-- Swapping two fresh atoms fixes `x`. The proof uses a third atom `c` fresh
+/-- **Swapping two fresh atoms fixes the element.** Swapping two fresh atoms fixes `x`. The proof uses a third atom `c` fresh
 for both witnessing supports, and the conjugation identity
 `swap a b = swap a c * swap b c * swap a c`. -/
 theorem swap_smul_of_fresh_fresh {X : Type*} [MulAction (FinPerm Atom) X]
@@ -236,7 +236,7 @@ theorem swap_smul_of_fresh_fresh {X : Type*} [MulAction (FinPerm Atom) X]
         _ = swap a c * swap b c * swap a c := h.symm
     rw [hconj, mul_smul, mul_smul, hac, hbc, hac]
 
-/-- A permutation that fixes every atom outside a finite set `F` of fresh
+/-- **Permutations moving only fresh atoms fix the element.** A permutation that fixes every atom outside a finite set `F` of fresh
 atoms fixes `x`, by induction on `F`. If `π a = a` we apply the induction
 hypothesis to `π`; otherwise we factor `π = swap a b * π'` with `b = π a`,
 where `π'` fixes `a` and has support inside `F \ {a}`, and `swap a b` fixes
@@ -298,7 +298,7 @@ theorem smul_eq_of_fresh {X : Type*} [MulAction (FinPerm Atom) X] {x : X}
         _ = (swap a b) • x := by rw [hπ'x]
         _ = x := swap_smul_of_fresh_fresh haFresh hbFresh
 
-/-- The intersection of two supports is a support: a permutation fixing the
+/-- **Intersection of two supports is a support.** The intersection of two supports is a support: a permutation fixing the
 intersection fixes `x`, since every atom it can move (outside some finite
 support of the permutation, and outside the intersection) is fresh for `x`. -/
 theorem Supports.inter {X : Type*} [MulAction (FinPerm Atom) X]
@@ -321,7 +321,7 @@ theorem Supports.inter {X : Type*} [MulAction (FinPerm Atom) X]
         exact ha (Finset.mem_sdiff.mpr ⟨h, haInt⟩)
       exact hSπ a haSπ
 
-/-- A permutation moves a support of `x` to a support of `π • x`. -/
+/-- **Permutation image of a support.** A permutation moves a support of `x` to a support of `π • x`. -/
 theorem Supports.image {X : Type*} [MulAction (FinPerm Atom) X] {S : Finset Atom}
     {x : X} (hS : Supports S x) (π : FinPerm Atom) :
     Supports (S.image (π • ·)) (π • x) := by
@@ -343,7 +343,7 @@ theorem Supports.image {X : Type*} [MulAction (FinPerm Atom) X] {S : Finset Atom
         simp [mul_assoc]
     _ = π • x := by rw [hτ]
 
-/-- A least finite support exists: among the supports of `x`, one is
+/-- **Existence of a least finite support.** A least finite support exists: among the supports of `x`, one is
 contained in every support. The proof is by strong induction on a chosen
 support `S₀`: either every element of `S₀` lies in every support (so `S₀`
 itself is least), or some `a ∈ S₀` is missing from a support `Sₐ`, and the
@@ -368,26 +368,26 @@ theorem exists_least_support {X : Type*} [MulAction (FinPerm Atom) X] (x : X)
       obtain ⟨S, hS, hSS₁, hmin⟩ := IH S₁ hsub hS₁
       exact ⟨S, hS, hSS₁.trans Finset.inter_subset_right, hmin⟩
 
-/-- The *least* finite support of `x`: a support contained in every support
+/-- **Least finite support of an element.** The *least* finite support of `x`: a support contained in every support
 of `x`. -/
 noncomputable def supp {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) : Finset Atom :=
   Classical.choose (exists_least_support x _
     (Classical.choose_spec (show ∃ S : Finset Atom, Supports S x from NominalSet.finiteSupport x)))
 
-/-- The least support is a support. -/
+/-- **Least support is a support.** The least support is a support. -/
 theorem supp_supports {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) : Supports (supp (Atom := Atom) x) x :=
   (Classical.choose_spec (exists_least_support x _
     (Classical.choose_spec (show ∃ S : Finset Atom, Supports S x from NominalSet.finiteSupport x)))).1
 
-/-- The least support is contained in every support: minimality. -/
+/-- **Minimality of the least support.** The least support is contained in every support: minimality. -/
 theorem supp_subset {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) {S : Finset Atom} (hS : Supports S x) : supp (Atom := Atom) x ⊆ S :=
   (Classical.choose_spec (exists_least_support x _
     (Classical.choose_spec (show ∃ S : Finset Atom, Supports S x from NominalSet.finiteSupport x)))).2.2 S hS
 
-/-- Membership in the least support: `a ∈ supp (Atom := Atom) x` iff `a` lies in every
+/-- **Membership in the least support.** Membership in the least support: `a ∈ supp (Atom := Atom) x` iff `a` lies in every
 support of `x`. -/
 theorem mem_supp_iff {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) (a : Atom) : a ∈ supp (Atom := Atom) x ↔ ∀ S : Finset Atom, Supports S x → a ∈ S := by
@@ -397,7 +397,7 @@ theorem mem_supp_iff {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X
   · intro h
     exact h _ (supp_supports (Atom := Atom) x)
 
-/-- Freshness is exactly non-membership in the least support. -/
+/-- **Freshness is non-membership in the least support.** Freshness is exactly non-membership in the least support. -/
 theorem fresh_iff_not_mem_supp {X : Type*} [MulAction (FinPerm Atom) X]
     [NominalSet Atom X] (x : X) (a : Atom) : Fresh a x ↔ a ∉ supp (Atom := Atom) x := by
   constructor
@@ -411,7 +411,7 @@ theorem fresh_iff_not_mem_supp {X : Type*} [MulAction (FinPerm Atom) X]
     by_contra hna
     exact hFresh ⟨S, hS, hna⟩
 
-/-- Support is equivariant: permuting `x` permutes its support. -/
+/-- **Equivariance of the least support.** Support is equivariant: permuting `x` permutes its support. -/
 theorem supp_smul {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     (x : X) (π : FinPerm Atom) :
     supp (Atom := Atom) (π • x) = (supp (Atom := Atom) x).image (π • ·) := by
@@ -433,7 +433,7 @@ theorem supp_smul {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
     rw [hbc]
     exact hc
 
-/-- The support of an atom is its singleton. -/
+/-- **Support of an atom.** The support of an atom is its singleton. -/
 theorem supp_atom (a : Atom) : supp (Atom := Atom) (a : Atom) = {a} := by
   apply Finset.Subset.antisymm
   · exact supp_subset _ (fun π h => h a (Finset.mem_singleton_self a))
@@ -455,7 +455,7 @@ theorem supp_atom (a : Atom) : supp (Atom := Atom) (a : Atom) = {a} := by
     rw [swap_smul, Equiv.swap_apply_left] at hswap
     exact hca hswap
 
-/-- Two permutations that agree on the support of `x` act equally on `x`:
+/-- **Permutations agreeing on the support act equally.** Two permutations that agree on the support of `x` act equally on `x`:
 their ratio fixes the support pointwise, hence fixes `x`. -/
 theorem smul_eq_of_agree_on_supp {X : Type*} [MulAction (FinPerm Atom) X]
     [NominalSet Atom X] {x : X} {π σ : FinPerm Atom}
@@ -468,17 +468,17 @@ theorem smul_eq_of_agree_on_supp {X : Type*} [MulAction (FinPerm Atom) X]
         rw [← mul_smul, ← mul_assoc, mul_inv_cancel, one_mul]
     _ = σ • x := by rw [hτ]
 
-/-- An element fixed by every permutation has the empty set as a support. -/
+/-- **Equivariant elements of a nominal set.** An element fixed by every permutation has the empty set as a support. -/
 def IsEquivariant {X : Type*} [MulAction (FinPerm Atom) X] (x : X) : Prop :=
   ∀ π : FinPerm Atom, π • x = x
 
-/-- An equivariant element is supported by the empty set. -/
+/-- **Equivariant elements are supported by the empty set.** An equivariant element is supported by the empty set. -/
 theorem supports_empty_of_equivariant {X : Type*} [MulAction (FinPerm Atom) X]
     {x : X} (h : IsEquivariant (Atom := Atom) x) : Supports (∅ : Finset Atom) x := by
   intro π _
   exact h π
 
-/-- An equivariant element has empty support. -/
+/-- **Equivariant elements have empty support.** An equivariant element has empty support. -/
 theorem supp_eq_empty_of_equivariant {X : Type*} [MulAction (FinPerm Atom) X]
     [NominalSet Atom X] {x : X} (h : IsEquivariant (Atom := Atom) x) : supp (Atom := Atom) x = (∅ : Finset Atom) := by
   rw [Finset.eq_empty_iff_forall_notMem]

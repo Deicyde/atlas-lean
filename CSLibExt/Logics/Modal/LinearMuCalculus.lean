@@ -56,7 +56,7 @@ namespace LinearMuCalculus
 
 universe u
 
-/-- Formulas of the linear-time μ-calculus over atoms `Atom`, with de Bruijn
+/-- **Formulas of the linear-time μ-calculus.** Formulas of the linear-time μ-calculus over atoms `Atom`, with de Bruijn
 variables for the fixed-point binders. -/
 inductive LinearMuFormula (Atom : Type u) : Type u where
   | atom : Atom → LinearMuFormula Atom
@@ -74,7 +74,7 @@ namespace LinearMuFormula
 
 variable {Atom : Type u}
 
-/-- Meta-level negation, swapping each connective with its dual. -/
+/-- **Dual negation of linear μ-calculus formulas.** Meta-level negation, swapping each connective with its dual. -/
 def neg : LinearMuFormula Atom → LinearMuFormula Atom
   | .atom a => .natom a
   | .natom a => .atom a
@@ -87,7 +87,7 @@ def neg : LinearMuFormula Atom → LinearMuFormula Atom
   | .mu φ => .nu (neg φ)
   | .nu φ => .mu (neg φ)
 
-/-- Negation is an involution. -/
+/-- **Negation of linear μ-calculus formulas is an involution.** Negation is an involution. -/
 theorem neg_neg : ∀ (φ : LinearMuFormula Atom), (neg (neg φ)) = φ
   | .atom _ => rfl
   | .natom _ => rfl
@@ -100,7 +100,7 @@ theorem neg_neg : ∀ (φ : LinearMuFormula Atom), (neg (neg φ)) = φ
   | .mu _ => by simp [neg, neg_neg]
   | .nu _ => by simp [neg, neg_neg]
 
-/-- `φ` is closed at depth `d` when every free variable is below `d`
+/-- **Closedness of a μ-calculus formula at a binder depth.** `φ` is closed at depth `d` when every free variable is below `d`
 (de Bruijn): `var n` needs `n < d`, and binders increase the depth. -/
 def ClosedAt (d : ℕ) : LinearMuFormula Atom → Prop
   | .atom _ => True
@@ -114,10 +114,10 @@ def ClosedAt (d : ℕ) : LinearMuFormula Atom → Prop
   | .mu φ => ClosedAt (d + 1) φ
   | .nu φ => ClosedAt (d + 1) φ
 
-/-- A formula with no free variables. -/
+/-- **Closed linear μ-calculus formula.** A formula with no free variables. -/
 def Closed (φ : LinearMuFormula Atom) : Prop := ClosedAt 0 φ
 
-/-- The depth of a formula: the length of its longest root-to-leaf path, counting
+/-- **Depth of a linear μ-calculus formula.** The depth of a formula: the length of its longest root-to-leaf path, counting
 each connective once. -/
 def depth : LinearMuFormula Atom → ℕ
   | .atom _ => 0
@@ -133,7 +133,7 @@ def depth : LinearMuFormula Atom → ℕ
 
 end LinearMuFormula
 
-/-- Extend an environment under a binder (de Bruijn). -/
+/-- **Extending an environment under a binder.** Extend an environment under a binder (de Bruijn). -/
 def extendEnv (env : ℕ → ℕ → Prop) (S : ℕ → Prop) :
     ℕ → ℕ → Prop
   | 0 => S
@@ -150,7 +150,7 @@ section Satisfaction
 
 variable {Atom : Type*} (val : ℕ → Atom → Prop)
 
-/-- Satisfaction of a linear μ-calculus formula at a position of the word
+/-- **Satisfaction of linear μ-calculus formulas.** Satisfaction of a linear μ-calculus formula at a position of the word
 `val`. `μ X. φ` is the least pre-fixed point of `S ↦ ⟦φ⟧[X ↦ S]`, stated
 directly as an infimum over pre-fixed points; `ν X. φ` is the greatest
 post-fixed point, stated as a supremum over post-fixed points. -/
@@ -205,7 +205,7 @@ def sat (env : ℕ → ℕ → Prop) : LinearMuFormula Atom → (ℕ → Prop)
     sat val env (.nu φ) n ↔ ∃ S : ℕ → Prop,
       (∀ m, S m → sat val (extendEnv env S) φ m) ∧ S n := Iff.rfl
 
-/-- Satisfaction is monotone in the environment. -/
+/-- **Satisfaction is monotone in the environment.** Satisfaction is monotone in the environment. -/
 theorem sat_mono_env : ∀ (φ : LinearMuFormula Atom) {env env' : ℕ → ℕ → Prop},
     (∀ n, env n ≤ env' n) → sat val env φ ≤ sat val env' φ := by
   intro φ
@@ -238,13 +238,13 @@ theorem sat_mono_env : ∀ (φ : LinearMuFormula Atom) {env env' : ℕ → ℕ �
       exact ih (fun k => by cases k with | zero => exact le_rfl | succ k => exact hle k) m
         (hS m hm)
 
-/-- Monotonicity in the bound variable's denotation. -/
+/-- **Satisfaction is monotone in the bound variable.** Monotonicity in the bound variable's denotation. -/
 theorem sat_mono_extend {env : ℕ → ℕ → Prop} {S₁ S₂ : ℕ → Prop} (h : S₁ ≤ S₂)
     (φ : LinearMuFormula Atom) :
     sat val (extendEnv env S₁) φ ≤ sat val (extendEnv env S₂) φ :=
   sat_mono_env val φ (fun n => by cases n with | zero => exact h | succ _ => exact le_rfl)
 
-/-- The least fixed point is a pre-fixed point. -/
+/-- **Least fixed point is a pre-fixed point.** The least fixed point is a pre-fixed point. -/
 theorem mu_pre_fixed (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val (extendEnv env (sat val env (.mu φ))) φ ≤ sat val env (.mu φ) := by
   intro n hn S hS
@@ -253,7 +253,7 @@ theorem mu_pre_fixed (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
   intro m hm
   exact hm S hS
 
-/-- The least fixed point is a fixed point (the lower half). -/
+/-- **Least fixed point is a fixed point: lower inclusion.** The least fixed point is a fixed point (the lower half). -/
 theorem mu_le_fixed (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val env (.mu φ) ≤ sat val (extendEnv env (sat val env (.mu φ))) φ := by
   intro n hn
@@ -264,13 +264,13 @@ theorem sat_mu_unfold (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val env (.mu φ) = sat val (extendEnv env (sat val env (.mu φ))) φ :=
   le_antisymm (mu_le_fixed val env φ) (mu_pre_fixed val env φ)
 
-/-- The greatest fixed point is a post-fixed point (the upper half). -/
+/-- **Greatest fixed point is a post-fixed point.** The greatest fixed point is a post-fixed point (the upper half). -/
 theorem nu_post_fixed (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val env (.nu φ) ≤ sat val (extendEnv env (sat val env (.nu φ))) φ := by
   rintro n ⟨S, hS, hnS⟩
   exact sat_mono_extend val (fun m hm => ⟨S, hS, hm⟩) φ n (hS n hnS)
 
-/-- The greatest fixed point is a fixed point (the upper half). -/
+/-- **Greatest fixed point is a fixed point: upper inclusion.** The greatest fixed point is a fixed point (the upper half). -/
 theorem nu_le_post_fixed (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val (extendEnv env (sat val env (.nu φ))) φ ≤ sat val env (.nu φ) := by
   intro n hn
@@ -297,12 +297,12 @@ theorem nu_coinduction {env : ℕ → ℕ → Prop} {φ : LinearMuFormula Atom}
   intro n hn
   exact ⟨P, hP, hn⟩
 
-/-- The μ operator as a monotone operator on predicates. -/
+/-- **The μ operator as a monotone operator on predicates.** The μ operator as a monotone operator on predicates. -/
 def muOp (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     (ℕ → Prop) →o (ℕ → Prop) :=
   ⟨fun S => sat val (extendEnv env S) φ, fun _ _ hle => sat_mono_extend val hle φ⟩
 
-/-- The μ fixed point is Mathlib's least fixed point of the operator. -/
+/-- **μ-formulas denote least fixed points.** The μ fixed point is Mathlib's least fixed point of the operator. -/
 theorem sat_mu_eq_lfp (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val env (.mu φ) = (muOp val env φ).lfp := by
   apply le_antisymm
@@ -310,7 +310,7 @@ theorem sat_mu_eq_lfp (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     exact hn _ (le_of_eq (OrderHom.map_lfp (muOp val env φ)))
   · exact OrderHom.lfp_le (muOp val env φ) (mu_pre_fixed val env φ)
 
-/-- The ν fixed point is Mathlib's greatest fixed point of the operator. -/
+/-- **ν-formulas denote greatest fixed points.** The ν fixed point is Mathlib's greatest fixed point of the operator. -/
 theorem sat_nu_eq_gfp (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
     sat val env (.nu φ) = (muOp val env φ).gfp := by
   apply le_antisymm
@@ -319,7 +319,7 @@ theorem sat_nu_eq_gfp (env : ℕ → ℕ → Prop) (φ : LinearMuFormula Atom) :
   · intro n hn
     exact ⟨_, le_of_eq (OrderHom.map_gfp (muOp val env φ)).symm, hn⟩
 
-/-- A closed formula does not depend on the environment: environments
+/-- **Closed formulas do not depend on the environment.** A closed formula does not depend on the environment: environments
 agreeing below the depth give the same denotation. -/
 theorem sat_closed_env : ∀ (φ : LinearMuFormula Atom) (d : ℕ)
     {env env' : ℕ → ℕ → Prop},
@@ -383,7 +383,7 @@ section Duality
 
 variable {Atom : Type*} (val : ℕ → Atom → Prop)
 
-/-- Complementing an environment commutes with extending it. -/
+/-- **Complementing an environment commutes with extension.** Complementing an environment commutes with extending it. -/
 theorem extendEnv_compl (env : ℕ → ℕ → Prop) (S : ℕ → Prop) :
     (fun n => fun m => ¬ extendEnv env S n m) =
       extendEnv (fun n => fun m => ¬ env n m) (fun m => ¬ S m) := by
@@ -392,7 +392,7 @@ theorem extendEnv_compl (env : ℕ → ℕ → Prop) (S : ℕ → Prop) :
   | zero => rfl
   | succ _ => rfl
 
-/-- Complementing a predicate twice returns it. -/
+/-- **Double complement of a predicate.** Complementing a predicate twice returns it. -/
 theorem compl_compl (S : ℕ → Prop) :
     (fun m => ¬ ¬ S m) = S := by
   funext m
@@ -530,13 +530,13 @@ section EventuallyAlways
 
 variable {Atom : Type*} (val : ℕ → Atom → Prop)
 
-/-- `F p`: `p` holds at some future position. -/
+/-- **Eventually operator in the linear μ-calculus.** `F p`: `p` holds at some future position. -/
 def F (p : Atom) : LinearMuFormula Atom := .mu (.or (.atom p) (.next (.var 0)))
 
-/-- `G p`: `p` holds at every future position. -/
+/-- **Always operator in the linear μ-calculus.** `G p`: `p` holds at every future position. -/
 def G (p : Atom) : LinearMuFormula Atom := .nu (.and (.atom p) (.next (.var 0)))
 
-/-- **The linear μ-calculus `F` is eventuality. -/
+/-- **The linear μ-calculus `F` is eventuality.** -/
 theorem F_iff (env : ℕ → ℕ → Prop) (p : Atom) (n : ℕ) :
     sat val env (F p) n ↔ ∃ m, n ≤ m ∧ val m p := by
   have hunfold : sat val env (F p) =
@@ -574,7 +574,7 @@ theorem F_iff (env : ℕ → ℕ → Prop) (p : Atom) (n : ℕ) :
     have hval' : val (n + (m - n)) p := by rw [hmn']; exact hval
     exact aux (m - n) n hval'
 
-/-- **The linear μ-calculus `G` is universality over the future. -/
+/-- **The linear μ-calculus `G` is universality over the future.** -/
 theorem G_iff (env : ℕ → ℕ → Prop) (p : Atom) (n : ℕ) :
     sat val env (G p) n ↔ ∀ m, n ≤ m → val m p := by
   have hunfold : sat val env (G p) =
@@ -611,7 +611,7 @@ end EventuallyAlways
 
 section Encoding
 
-/-- An injective encoding of linear μ-calculus formulas over `ℕ` atoms as
+/-- **Cantor-pairing code of linear μ-calculus formulas.** An injective encoding of linear μ-calculus formulas over `ℕ` atoms as
 natural numbers, via the Cantor pairing function `Nat.pair`. This is a Nat
 code only, not a complexity input encoding: repeated pairing squares the
 code at every unary connective, so the binary length of the code of
@@ -629,7 +629,7 @@ def linearMuCode : LinearMuFormula ℕ → ℕ
   | .mu φ => Nat.pair 8 (linearMuCode φ)
   | .nu φ => Nat.pair 9 (linearMuCode φ)
 
-/-- The encoding is injective. -/
+/-- **Injectivity of the linear μ-calculus code.** The encoding is injective. -/
 theorem linearMuCode_injective : Function.Injective linearMuCode := by
   intro φ
   induction φ with
@@ -783,7 +783,7 @@ theorem linearMuCode_injective : Function.Injective linearMuCode := by
             (Nat.pair_eq_pair.mp h).2
           rw [ih h1]
 
-/-- Fuelled decoding of a `linearMuCode` number back to a formula. The fuel bounds
+/-- **Fuelled decoding of linear μ-calculus codes.** Fuelled decoding of a `linearMuCode` number back to a formula. The fuel bounds
 the recursion depth; `linearMuDecode` supplies fuel `c + 1`, which exceeds every
 formula's depth (see `linearDepth_le_code`). -/
 def linearMuDecodeFuel : ℕ → ℕ → Option (LinearMuFormula ℕ)
@@ -812,11 +812,11 @@ def linearMuDecodeFuel : ℕ → ℕ → Option (LinearMuFormula ℕ)
     | (9, c₁) => .nu <$> linearMuDecodeFuel fuel c₁
     | (_, _) => none
 
-/-- Decode a `linearMuCode` number back to the formula it encodes. -/
+/-- **Decoding linear μ-calculus codes.** Decode a `linearMuCode` number back to the formula it encodes. -/
 def linearMuDecode (c : ℕ) : Option (LinearMuFormula ℕ) :=
   linearMuDecodeFuel (c + 1) c
 
-/-- A formula's depth is at most its code: pairing dominates each component
+/-- **Formula depth is bounded by its code.** A formula's depth is at most its code: pairing dominates each component
 (`Nat.add_le_pair`). -/
 theorem linearDepth_le_code : ∀ φ : LinearMuFormula ℕ,
     LinearMuFormula.depth φ ≤ linearMuCode φ := by
@@ -872,7 +872,7 @@ theorem linearDepth_le_code : ∀ φ : LinearMuFormula ℕ,
       _ ≤ Nat.pair 9 (linearMuCode φ) := Nat.add_le_pair 9 _
       _ = linearMuCode (.nu φ) := rfl
 
-/-- Decoding inverts encoding, with enough fuel. -/
+/-- **Fuelled decoding inverts encoding.** Decoding inverts encoding, with enough fuel. -/
 theorem linearMuDecodeFuel_linearMuCode : ∀ (φ : LinearMuFormula ℕ) (fuel : ℕ),
     LinearMuFormula.depth φ ≤ fuel →
     linearMuDecodeFuel (fuel + 1) (linearMuCode φ) = some φ := by
@@ -941,12 +941,12 @@ theorem linearMuDecodeFuel_linearMuCode : ∀ (φ : LinearMuFormula ℕ) (fuel :
         rw [ih fuel' hφ]
         rfl
 
-/-- Decoding inverts encoding. -/
+/-- **Decoding inverts the linear μ-calculus encoding.** Decoding inverts encoding. -/
 theorem linearMuDecode_linearMuCode (φ : LinearMuFormula ℕ) :
     linearMuDecode (linearMuCode φ) = some φ :=
   linearMuDecodeFuel_linearMuCode φ (linearMuCode φ) (linearDepth_le_code φ)
 
-/-- A polynomial-size token-list encoding of linear μ-calculus formulas over
+/-- **Token-list encoding of linear μ-calculus formulas.** A polynomial-size token-list encoding of linear μ-calculus formulas over
 `ℕ` atoms, used for the complexity statements in `WantedExt`. Each connective
 contributes one tag token (`Nat.pair` of a small tag with `0`), and each atom
 or variable contributes one token `Nat.pair tag value`, whose binary size is
@@ -967,7 +967,7 @@ def linearMuTokens : LinearMuFormula ℕ → List ℕ
   | .mu φ => Nat.pair 8 0 :: linearMuTokens φ
   | .nu φ => Nat.pair 9 0 :: linearMuTokens φ
 
-/-- Fuelled parsing of a `linearMuTokens` token list back to a formula,
+/-- **Fuelled parser for linear μ-calculus token lists.** Fuelled parsing of a `linearMuTokens` token list back to a formula,
 returning the formula and the unconsumed suffix. The fuel bounds the
 recursion depth; `linearMuDecodeList` supplies fuel `l.length + 1`, which
 exceeds the token length of every formula encoded in `l`. -/
@@ -1011,14 +1011,14 @@ def linearMuParseFuel : ℕ → List ℕ → Option (LinearMuFormula ℕ × List
         | none => none
       | (_, _) => none
 
-/-- Decode a `linearMuTokens` token list back to the formula it encodes,
+/-- **Decoding a linear μ-calculus token list to a formula.** Decode a `linearMuTokens` token list back to the formula it encodes,
 rejecting trailing tokens. -/
 def linearMuDecodeList (l : List ℕ) : Option (LinearMuFormula ℕ) :=
   match linearMuParseFuel (l.length + 1) l with
   | some (φ, []) => some φ
   | _ => none
 
-/-- Parsing inverts token encoding, with enough fuel. -/
+/-- **Fuelled parsing inverts linear μ-calculus token encoding.** Parsing inverts token encoding, with enough fuel. -/
 theorem linearMuParseFuel_tokens : ∀ (φ : LinearMuFormula ℕ) (rest : List ℕ) (fuel : ℕ),
     (linearMuTokens φ).length ≤ fuel →
     linearMuParseFuel (fuel + 1) (linearMuTokens φ ++ rest) = some (φ, rest) := by
@@ -1101,7 +1101,7 @@ theorem linearMuParseFuel_tokens : ∀ (φ : LinearMuFormula ℕ) (rest : List �
       simp only [linearMuTokens, Nat.unpair_pair, List.cons_append, List.append_assoc,
         List.nil_append, ih, hφ]
 
-/-- Decoding inverts token encoding. -/
+/-- **Token-list decoding inverts linear μ-calculus token encoding.** Decoding inverts token encoding. -/
 theorem linearMuDecodeList_tokens (φ : LinearMuFormula ℕ) :
     linearMuDecodeList (linearMuTokens φ) = some φ := by
   have h := linearMuParseFuel_tokens φ [] (linearMuTokens φ).length (le_refl _)

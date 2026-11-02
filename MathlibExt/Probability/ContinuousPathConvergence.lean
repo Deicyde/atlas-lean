@@ -57,7 +57,7 @@ private theorem probabilityMeasure_pi_ext_of_finset_eval
     exact congrArg ProbabilityMeasure.toMeasure (h I).symm
   exact ProbabilityMeasure.toMeasure_injective (hμ.unique hν)
 
-/-- Probability measures on continuous real paths over `[0, T]` are
+/-- **Continuous-path laws are determined by finite-dimensional marginals.** Probability measures on continuous real paths over `[0, T]` are
 determined by all of their finite evaluation pushforwards. The empty `Finset`
 is included, and repeated coordinates are identified by `Finset`. -/
 theorem continuousPath_measure_ext_of_finset_eval (T : ℝ)
@@ -133,7 +133,7 @@ theorem continuousPath_measure_ext_of_finset_eval (T : ℝ)
   simpa only [ProbabilityMeasure.toMeasure_map] using
     congrArg ProbabilityMeasure.toMeasure hmap
 
-/-- Let `T > 0`. A tight sequence of probability laws on
+/-- **Tightness plus finite-dimensional convergence gives weak convergence.** Let `T > 0`. A tight sequence of probability laws on
 `C(Set.Icc 0 T, ℝ)` converges weakly to `μ` in the uniform topology if every
 finite evaluation pushforward converges weakly to the corresponding
 pushforward of `μ`.

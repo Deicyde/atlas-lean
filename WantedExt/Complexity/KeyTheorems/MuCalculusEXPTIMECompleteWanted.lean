@@ -50,14 +50,14 @@ hardness, i.e. every `EXP` language reduces to it (Emerson–Jutla's
 alternating-tree-automata lower bound).
 -/
 
-/-- A closed μ-calculus formula is satisfiable: some Kripke model has a world
+/-- **Satisfiability of a closed modal μ-calculus formula.** A closed μ-calculus formula is satisfiable: some Kripke model has a world
 satisfying it under the empty environment. -/
 def muSat (φ : Cslib.Modal.MuCalculus.MuFormula ℕ) : Prop :=
   ∃ (World : Type) (M : Cslib.Modal.KripkeModel World ℕ) (w : World),
     Cslib.Modal.MuCalculus.sat M (fun _ _ => False) φ w
 
 open Classical in
-/-- Satisfiability of the modal μ-calculus as a decision problem over bitstrings:
+/-- **Modal μ-calculus satisfiability as a decision problem.** Satisfiability of the modal μ-calculus as a decision problem over bitstrings:
 the input decodes to a formula token list, which decodes to a formula; the answer
 is whether that formula is closed and satisfiable. -/
 noncomputable def muCalculusSatDec :

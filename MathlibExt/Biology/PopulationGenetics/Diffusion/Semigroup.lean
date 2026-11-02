@@ -128,19 +128,19 @@ theorem wfStep_apply (M : ℕ) (f : C(I, ℝ)) : wfStep M f = bernsteinApproxima
 theorem norm_wfStep_le (M : ℕ) : ‖wfStep M‖ ≤ 1 :=
   LinearMap.mkContinuous_norm_le _ zero_le_one _
 
-/-- One Wright–Fisher generation fixes the constant function `1`. -/
+/-- **One Wright–Fisher generation fixes constants.** One Wright–Fisher generation fixes the constant function `1`. -/
 theorem wfStep_apply_one (M : ℕ) : wfStep M 1 = 1 := by
   ext x
   simp [wfStep_apply, bernsteinApproximation.apply, bernstein.probability]
 
-/-- One Wright–Fisher generation maps nonnegative functions to nonnegative functions. -/
+/-- **One Wright–Fisher generation preserves nonnegativity.** One Wright–Fisher generation maps nonnegative functions to nonnegative functions. -/
 theorem wfStep_nonneg (M : ℕ) {f : C(I, ℝ)} (hf : 0 ≤ f) : 0 ≤ wfStep M f := by
   refine ContinuousMap.le_def.2 fun x => ?_
   simp only [ContinuousMap.zero_apply, wfStep_apply, bernsteinApproximation.apply]
   exact Finset.sum_nonneg fun k _ =>
     smul_nonneg bernstein_nonneg (ContinuousMap.le_def.1 hf _)
 
-/-- Any number of Wright–Fisher generations is a contraction for the sup norm. -/
+/-- **Iterated Wright–Fisher generations are sup-norm contractions.** Any number of Wright–Fisher generations is a contraction for the sup norm. -/
 theorem norm_wfStep_pow_le (M m : ℕ) : ‖wfStep M ^ m‖ ≤ 1 := by
   induction m with
   | zero => exact ContinuousLinearMap.norm_id_le
@@ -279,7 +279,7 @@ theorem integral_binomial_div_pow (M n : ℕ) (hM : M ≠ 0) (x : I) :
     ← sum_binomial_mul_div_pow M n hM]
   simp only [smul_eq_mul]
 
-/-- One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`. -/
+/-- **One Wright–Fisher generation acting on monomials.** One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`. -/
 theorem wfStep_X_pow (M n : ℕ) (hM : M ≠ 0) :
     wfStep M ((X ^ n : ℝ[X]).toContinuousMapOn I) =
       (∑ k ∈ Finset.range (n + 1), C (wfLineageProb M n k) * X ^ k).toContinuousMapOn I := by
@@ -483,7 +483,7 @@ theorem tendsto_wfStep_pow_floor_toContinuousMapOn (p : ℝ[X]) {t : ℝ} (ht : 
 
 /-! ### The semigroup on continuous functions -/
 
-/-- For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
+/-- **Rescaled Wright–Fisher iterates form a Cauchy sequence.** For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
 converges on the dense set of polynomials and the operators are contractions. -/
 theorem cauchySeq_wfStep_pow_floor (t : ℝ) (f : C(I, ℝ)) :
     CauchySeq fun M : ℕ => (wfStep M ^ ⌊t * M⌋₊) f := by

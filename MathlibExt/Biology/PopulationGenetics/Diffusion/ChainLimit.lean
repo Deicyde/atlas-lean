@@ -33,7 +33,7 @@ open scoped unitInterval
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit
 
-/-- Uniformly contractive operators that are Cauchy on a dense set are Cauchy everywhere. -/
+/-- **Cauchy property of uniform contractions extends from a dense set.** Uniformly contractive operators that are Cauchy on a dense set are Cauchy everywhere. -/
 theorem cauchySeq_apply_of_dense {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     {L : ℕ → E →L[ℝ] E} (hL : ∀ M, ‖L M‖ ≤ 1) {D : Set E}
     (hD : Dense D) (h : ∀ d ∈ D, CauchySeq fun M => L M d) (f : E) :
@@ -55,7 +55,7 @@ theorem cauchySeq_apply_of_dense {E : Type*} [NormedAddCommGroup E] [NormedSpace
   have htri := dist_triangle4 (L M f) (L M d) (L P d) (L P f)
   linarith [hdist M]
 
-/-- Limits of uniformly contractive operators extend from a dense set to the whole space. -/
+/-- **Limits of uniform contractions extend from a dense set.** Limits of uniformly contractive operators extend from a dense set to the whole space. -/
 theorem tendsto_apply_of_dense {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     {ι : Type*} {l : Filter ι} {T : ι → E →L[ℝ] E}
     (hT : ∀ i, ‖T i‖ ≤ 1) {S : E →L[ℝ] E} (hS : ‖S‖ ≤ 1) {D : Set E}
@@ -76,13 +76,13 @@ theorem tendsto_apply_of_dense {E : Type*} [NormedAddCommGroup E] [NormedSpace �
   have htri := dist_triangle4 (T i f) (T i d) (S d) (S f)
   linarith [hdist i]
 
-/-- Weierstrass approximation: polynomial functions are dense in `C([0, 1], ℝ)`. -/
+/-- **Weierstrass approximation theorem on the unit interval.** Weierstrass approximation: polynomial functions are dense in `C([0, 1], ℝ)`. -/
 theorem dense_polynomialFunctions : Dense (polynomialFunctions I : Set C(I, ℝ)) := by
   rw [dense_iff_closure_eq, ← Subalgebra.topologicalClosure_coe,
     polynomialFunctions_closure_eq_top']
   rfl
 
-/-- If `t ≤ 0`, then the natural floor of `t * M` is zero. -/
+/-- **Natural floor of a nonpositive multiple is zero.** If `t ≤ 0`, then the natural floor of `t * M` is zero. -/
 theorem floor_mul_eq_zero {t : ℝ} (ht : t ≤ 0) (M : ℕ) : ⌊t * M⌋₊ = 0 :=
   Nat.floor_of_nonpos (mul_nonpos_of_nonpos_of_nonneg ht (Nat.cast_nonneg M))
 
@@ -90,7 +90,7 @@ end MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit
 
 namespace ContinuousLinearMap
 
-/-- Every power of a continuous linear endomorphism fixing `1` also fixes `1`. -/
+/-- **Powers of a unital endomorphism fix the constant function.** Every power of a continuous linear endomorphism fixing `1` also fixes `1`. -/
 theorem pow_apply_one {R E : Type*} [Semiring R] [TopologicalSpace E] [AddCommMonoid E]
     [Module R E] [One E] (T : E →L[R] E) (hT : T 1 = 1) (n : ℕ) :
     (T ^ n) 1 = 1 := by
@@ -98,7 +98,7 @@ theorem pow_apply_one {R E : Type*} [Semiring R] [TopologicalSpace E] [AddCommMo
   | zero => simp
   | succ n ih => rw [pow_succ, mul_apply_eq_comp, hT, ih]
 
-/-- Every power of a positive continuous linear endomorphism is positive. -/
+/-- **Powers of a positive endomorphism are positive.** Every power of a positive continuous linear endomorphism is positive. -/
 theorem pow_nonneg {R E : Type*} [Semiring R] [TopologicalSpace E] [AddCommMonoid E]
     [Module R E] [PartialOrder E] (T : E →L[R] E)
     (hT : ∀ {f : E}, 0 ≤ f → 0 ≤ T f) (n : ℕ) {f : E} (hf : 0 ≤ f) :

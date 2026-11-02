@@ -65,19 +65,19 @@ PSPACE-completeness statement is the standard formulation: membership in
 `PSPACE` plus hardness for each of the three problems (Vardi, POPL 1988).
 -/
 
-/-- A closed linear μ-calculus formula is satisfiable: some word and position
+/-- **Satisfiability of a closed linear μ-calculus formula.** A closed linear μ-calculus formula is satisfiable: some word and position
 satisfy it under the empty environment. -/
 def linearMuSat (φ : Cslib.Modal.LinearMuCalculus.LinearMuFormula ℕ) : Prop :=
   ∃ (val : ℕ → ℕ → Prop) (n : ℕ),
     Cslib.Modal.LinearMuCalculus.sat val (fun _ _ => False) φ n
 
-/-- A closed linear μ-calculus formula is valid: every word and position satisfy
+/-- **Validity of a closed linear μ-calculus formula.** A closed linear μ-calculus formula is valid: every word and position satisfy
 it under the empty environment. -/
 def linearMuValid (φ : Cslib.Modal.LinearMuCalculus.LinearMuFormula ℕ) : Prop :=
   ∀ (val : ℕ → ℕ → Prop) (n : ℕ),
     Cslib.Modal.LinearMuCalculus.sat val (fun _ _ => False) φ n
 
-/-- Model checking a linear μ-calculus formula against a finite Kripke structure:
+/-- **Linear μ-calculus model checking on a finite Kripke structure.** Model checking a linear μ-calculus formula against a finite Kripke structure:
 every infinite path `π` from `start` following `edges` satisfies `φ` at
 position `0`, where the path turns the structure's valuation `worldVal` into a
 word valuation. -/
@@ -88,7 +88,7 @@ def linearMuModelCheck (edges : List (ℕ × ℕ)) (worldVal : ℕ → ℕ → P
       (fun _ _ => False) φ 0
 
 open Classical in
-/-- Satisfiability of the linear μ-calculus as a decision problem over bitstrings:
+/-- **Linear μ-calculus satisfiability as a decision problem.** Satisfiability of the linear μ-calculus as a decision problem over bitstrings:
 the input decodes to a formula token list, which decodes to a formula; the answer
 is whether that formula is closed and satisfiable. -/
 noncomputable def linearMuSatDec :
@@ -103,7 +103,7 @@ noncomputable def linearMuSatDec :
   | none => false
 
 open Classical in
-/-- Validity of the linear μ-calculus as a decision problem over bitstrings. -/
+/-- **Linear μ-calculus validity as a decision problem.** Validity of the linear μ-calculus as a decision problem over bitstrings. -/
 noncomputable def linearMuValidDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode (α := List ℕ) x with
@@ -116,7 +116,7 @@ noncomputable def linearMuValidDec :
   | none => false
 
 open Classical in
-/-- Model checking of the linear μ-calculus as a decision problem over bitstrings:
+/-- **Linear μ-calculus model checking as a decision problem.** Model checking of the linear μ-calculus as a decision problem over bitstrings:
 the input decodes to `(n, edges, worldVals, start, tokens)`, where `worldVals`
 lists, per world, the atoms true at that world; the answer is whether the
 decoded formula is closed, the structure is well-formed and total (every world

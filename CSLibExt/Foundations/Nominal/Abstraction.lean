@@ -45,16 +45,16 @@ namespace Nominal
 variable {Atom : Type*} [Infinite Atom] [DecidableEq Atom]
 variable {X : Type*} [MulAction (FinPerm Atom) X] [NominalSet Atom X]
 
-/-- α-equivalence: equal pairs, or a renaming of the bound atom by a fresh
+/-- **α-equivalence relation on atom–element pairs.** α-equivalence: equal pairs, or a renaming of the bound atom by a fresh
 transposition. -/
 def AbsRel (a b : Atom) (x y : X) : Prop :=
   (a = b ∧ x = y) ∨
     (a ≠ b ∧ Fresh a y ∧ (swap a b : FinPerm Atom) • x = y)
 
-/-- α-equivalence is reflexive. -/
+/-- **Reflexivity of α-equivalence.** α-equivalence is reflexive. -/
 theorem absRel_refl (a : Atom) (x : X) : AbsRel a a x x := Or.inl ⟨rfl, rfl⟩
 
-/-- α-equivalence is symmetric. Symmetry uses equivariance of support
+/-- **Symmetry of α-equivalence.** α-equivalence is symmetric. Symmetry uses equivariance of support
 (`supp_smul`). -/
 theorem absRel_symm {a b : Atom} {x y : X} (h : AbsRel a b x y) : AbsRel b a y x := by
   rcases h with ⟨hab, hxy⟩ | ⟨hab, haf, hswap⟩
@@ -75,7 +75,7 @@ theorem absRel_symm {a b : Atom} {x y : X} (h : AbsRel a b x y) : AbsRel b a y x
     · -- `swap b a • y = x`, since `swap b a = swap a b` is an involution.
       rw [swap_comm, ← hswap, ← mul_smul, swap_mul_self, one_smul]
 
-/-- α-equivalence is transitive. Transitivity uses the fact that two
+/-- **Transitivity of α-equivalence.** α-equivalence is transitive. Transitivity uses the fact that two
 permutations agreeing on `supp y` act equally on `y`
 (`smul_eq_of_agree_on_supp`). -/
 theorem absRel_trans {a b d : Atom} {x y z : X} (h₁ : AbsRel a b x y)
@@ -171,33 +171,33 @@ theorem absRel_trans {a b d : Atom} {x y z : X} (h₁ : AbsRel a b x y)
             _ = z := hswap₂
 
 
-/-- The setoid of α-equivalence. -/
+/-- **Setoid of α-equivalence.** The setoid of α-equivalence. -/
 def absSetoid : Setoid (Atom × X) where
   r := fun p q => AbsRel p.1 q.1 p.2 q.2
   iseqv := ⟨fun p => absRel_refl p.1 p.2, fun h => absRel_symm h,
     fun h₁ h₂ => absRel_trans h₁ h₂⟩
 
-/-- Atom abstraction: `[a]x`, the quotient of `Atom × X` by α-equivalence. -/
+/-- **Atom abstraction of a nominal set.** Atom abstraction: `[a]x`, the quotient of `Atom × X` by α-equivalence. -/
 def Abs (Atom : Type*) [Infinite Atom] [DecidableEq Atom] (X : Type*)
     [MulAction (FinPerm Atom) X] [NominalSet Atom X] : Type _ :=
   Quotient (@absSetoid Atom _ _ X _ _)
 
-/-- The abstraction `[a]x`. -/
+/-- **Abstraction of an element at a bound atom.** The abstraction `[a]x`. -/
 def abs (a : Atom) (x : X) : Abs Atom X := Quotient.mk _ (a, x)
 
-/-- Equality of abstractions is α-equivalence. -/
+/-- **Equality of abstractions is α-equivalence.** Equality of abstractions is α-equivalence. -/
 theorem abs_eq_iff {a b : Atom} {x y : X} :
     abs a x = abs b y ↔ AbsRel a b x y :=
   Quotient.eq
 
-/-- An abstraction with the same bound atom determines its body. -/
+/-- **Abstractions with the same bound atom have equal bodies.** An abstraction with the same bound atom determines its body. -/
 theorem abs_eq_of_same_atom {a : Atom} {x y : X} (h : abs a x = abs a y) : x = y := by
   rw [abs_eq_iff] at h
   rcases h with ⟨-, hxy⟩ | ⟨hne, -, -⟩
   · exact hxy
   · exact absurd rfl hne
 
-/-- The action of a permutation on abstractions, applied to a representative. -/
+/-- **Permutation action on abstractions.** The action of a permutation on abstractions, applied to a representative. -/
 def absSmul (π : FinPerm Atom) : Abs Atom X → Abs Atom X :=
   Quotient.lift (fun p : Atom × X => Quotient.mk _ (π • p.1, π • p.2)) (by
     intro p q h
@@ -251,11 +251,11 @@ instance : MulAction (FinPerm Atom) (Abs Atom X) where
         Quotient.mk _ (π • (σ • a), π • (σ • x))
       rw [mul_smul, mul_smul]
 
-/-- A permutation applied to an abstraction, on representatives. -/
+/-- **Permutation action on abstractions computed on representatives.** A permutation applied to an abstraction, on representatives. -/
 theorem smul_abs (π : FinPerm Atom) (a : Atom) (x : X) :
     π • abs a x = abs (π • a) (π • x) := rfl
 
-/-- The action of a permutation on an abstraction fixes it when the
+/-- **Abstractions are supported by the body's support minus the atom.** The action of a permutation on an abstraction fixes it when the
 permutation fixes `supp x \ {a}` pointwise. -/
 theorem supports_erase_abs {a : Atom} {x : X} (π : FinPerm Atom)
     (hπ : ∀ c ∈ (supp (Atom := Atom) x).erase a, π • c = c) :
@@ -320,7 +320,7 @@ instance : NominalSet Atom (Abs Atom X) where
       obtain ⟨a, x⟩ := p
       exact ⟨(supp (Atom := Atom) x).erase a, fun π hπ => supports_erase_abs π hπ⟩
 
-/-- The support of an abstraction is the body's support minus the bound atom. -/
+/-- **Support of an atom abstraction.** The support of an abstraction is the body's support minus the bound atom. -/
 theorem supp_abs (a : Atom) (x : X) :
     supp (Atom := Atom) (abs a x) = (supp (Atom := Atom) x).erase a := by
   apply Finset.Subset.antisymm

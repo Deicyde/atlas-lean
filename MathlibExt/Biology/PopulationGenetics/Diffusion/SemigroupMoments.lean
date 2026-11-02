@@ -213,7 +213,7 @@ private theorem wfSemigroup_X_mul_one_sub_X_le (t : ℝ) (x : I) :
       rw [hc, map_smul, wfSemigroup_apply_one]
       simp
 
-/-- The centered second moment grows at most linearly: `T_t[(y-x)²](x) ≤ t/4`. -/
+/-- **Second-moment bound for the Wright–Fisher semigroup.** The centered second moment grows at most linearly: `T_t[(y-x)²](x) ≤ t/4`. -/
 theorem wfSemigroup_second_increment_le {t : ℝ} (ht : 0 ≤ t) (x : I) :
     wfSemigroup t (((X - C (x : ℝ)) ^ 2 : ℝ[X]).toContinuousMapOn I) x ≤
       (1 / 4 : ℝ) * t := by
@@ -282,7 +282,7 @@ private theorem hasDerivAt_fourth_adjusted (x : I) {s : ℝ} (hs : 0 < s) :
   convert (hasDerivAt_wfSemigroup_eval ((X - C (x : ℝ)) ^ 4) x hs).sub hquad using 1
   ring
 
-/-- The fourth centered increment of the neutral Wright–Fisher semigroup satisfies the uniform
+/-- **Fourth-moment Kolmogorov bound for the Wright–Fisher semigroup.** The fourth centered increment of the neutral Wright–Fisher semigroup satisfies the uniform
 Kolmogorov bound `T_t[(y-x)⁴](x) ≤ (3/16)t²`. -/
 theorem wfSemigroup_fourth_increment_le {t : ℝ} (ht : 0 ≤ t) (x : I) :
     wfSemigroup t (((X - C (x : ℝ)) ^ 4 : ℝ[X]).toContinuousMapOn I) x ≤
