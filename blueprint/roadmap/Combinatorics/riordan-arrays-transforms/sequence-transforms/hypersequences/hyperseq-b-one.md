@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.hyperseqB_one
+---
+
+# Row one of Parisse's matrix $B(n)$
+
+**Row one of Parisse's matrix $B(n)$.** For every integer $n$, the entries $b_{j,k}(n)$ of
+$B(n)$ satisfy $b_{1,0}(n) = n + 1$ and $b_{1,1}(n) = -1$.
+
+## Depends on
+
+- [Parisse's matrix $B(n)$](hyperseq-b.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.HypersequenceElementarySymmetricWanted](../../../../../sources/v2/WantedExt.md)
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 2, display of `B(n)`.

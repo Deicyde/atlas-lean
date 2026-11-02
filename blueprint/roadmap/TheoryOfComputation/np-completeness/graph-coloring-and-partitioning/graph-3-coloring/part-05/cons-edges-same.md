@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Karp.EmitColor.consEdges_same
+---
+
+# Consistency edges of two occurrences of the same variable
+
+**Consistency edges of two occurrences of the same variable.** Let $x$, $L'$ and $n$ be
+natural numbers and let $p$, $b$ be Booleans. The consistency edges between a new occurrence of
+the literal $(x, p)$ with vertices $L = n$, $M = n + 1$ and an earlier occurrence
+$(x, b, L', L' + 1)$ are $[(L', n + 1), (L' + 1, n)]$ if $b = p$, and
+$[(L', n), (L' + 1, n + 1)]$ otherwise.
+
+## Depends on
+
+- [Consistency edges between two occurrences of a variable](../part-01/cons-edges.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.ColorEmit](../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Biology.CancerGenomics.CancerCellFraction.IsClonal
+---
+
+# Clonal call for a mutation
+
+**Clonal call for a mutation.** Landau et al.'s clonal call: `P(CCF > t | a) > γ` (they take `t = 0.95`, `γ = 0.5`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.CancerGenomics.CancerCellFraction](../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.ibd_self
+---
+
+# A gene copy is identical by descent with itself
+
+**A gene copy is identical by descent with itself.** Two copies are identical by descent of themselves with probability `1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.StatisticalGenetics.Kinship](../../../../sources/v2/MathlibExt.md)

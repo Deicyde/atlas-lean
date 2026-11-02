@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.gammaDFE_real_Ico
+---
+
+# Fraction of mutations in a strength interval under the gamma DFE
+
+**Fraction of mutations in a strength interval under the gamma DFE.** The fraction of new mutations whose strength `-σ` lies in `(c₁, c₂]`, `0 ≤ c₁ ≤ c₂`, is
+`(Γ(a, r c₁) - Γ(a, r c₂)) / Γ(a)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects](../../../../sources/v2/MathlibExt.md)

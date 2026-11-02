@@ -1,0 +1,28 @@
+---
+article_id: af_ace0ffe470bb836d5c5f4d51
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry5.ramanujan_part1_ch3_entry5
+---
+
+# Binomial recurrence for Ramanujan's Bell-type series (Entry 5)
+
+**Binomial recurrence for Ramanujan's Bell-type series (Entry 5).** Let $F$ be Ramanujan's
+generalized Bell function. For every natural number $n$ and every complex number $x$, write
+$f(x, m) = F(0, 1, x; m)$ for natural numbers $m$, and set $f(x, -1) = 1$. Then
+$f(x, n) = x \sum_{k=0}^{n} \binom{n}{k} f(x, k-1)$.
+
+## Depends on
+
+- [Ramanujan's generalized Bell function](generalized-bell-generating.md)
+
+## Proof depends on
+
+- [Convergence of the generalized Bell series](ramanujan-part1-ch3-entry9-ii-generalize-2.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry5](../../../../../sources/v2/MathlibExt.md)
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 5, printed p. 48 / PDF p. 58. Proves `Wanted` entry `ramanujan_part1_ch3_entry5`.

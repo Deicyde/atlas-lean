@@ -1,0 +1,27 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt_of_RH
+---
+
+# Tails of prime power sums under the Riemann hypothesis
+
+**Tails of prime power sums under the Riemann hypothesis.** Assume the Riemann
+hypothesis. Then for every integer $n \ge 2$ and every real $x \ge 599$,
+
+$$
+\Big|\operatorname{li}(x^{1-n}) + \sum_{p > x} \frac{1}{p^n}\Big| <
+\frac{1}{8\pi x^{n - 1/2}} \Big(1 + \frac{2n}{2n-1}\Big) \Big(\log x + \frac{2}{2n-1}\Big),
+$$
+
+where $\operatorname{li}$ is the logarithmic integral and the sum runs over the primes $p > x$.
+
+## Depends on
+
+- [Real logarithmic integral extended by zero](../../../../Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/logarithmic-integral-real.md)
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.PrimeCounting.AxlerEffectivePrimeEstimatesWanted](../../../../../sources/v2/WantedExt.md)
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 9 (`integers-2024-A34-prop-9`).

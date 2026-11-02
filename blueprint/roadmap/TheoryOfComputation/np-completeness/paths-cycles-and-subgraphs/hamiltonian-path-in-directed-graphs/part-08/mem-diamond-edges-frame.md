@@ -1,0 +1,27 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Karp.mem_diamondEdges_frame
+---
+
+# The frame arcs of a diamond
+
+**The frame arcs of a diamond.** Let $\varphi$ be a CNF formula with $m$ clauses, let $i$
+and $x$ be natural numbers, and write $t_a = m + a(3m + 2)$ for the top of diamond $a$ and
+$r_l = t_i + 1 + l$ for the row vertices of diamond $i$. The four arcs $(t_i, r_0)$,
+$(t_i, r_{3m})$, $(r_0, t_{i+1})$ and $(r_{3m}, t_{i+1})$ are arcs of diamond $i$ for the
+variable $x$ in the construction for $\varphi$.
+
+## Depends on
+
+- [Arcs of a variable diamond](../part-01/diamond-edges.md)
+- [Row vertices of a diamond](../part-01/hp-r.md)
+- [Tops of the diamonds](../part-01/hp-t.md)
+- [CNF formula](../../../../../Logic/propositional-logic/conjunctive-normal-form/cnf.md)
+- [CNF clause](../../../../../Logic/propositional-logic/conjunctive-normal-form/cnfclause.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathForward](../../../../../../sources/v2/CSLibExt.md)

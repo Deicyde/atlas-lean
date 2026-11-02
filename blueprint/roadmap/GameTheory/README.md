@@ -6,5 +6,6 @@ article_id: af_7e9302def44f91887d5cbe58
 
 Game theory studies strategic and combinatorial interaction, equilibria, winning conditions, and optimal play.
 
-- [MathlibExt](MathlibExt/README.md)
-- [WantedExt](WantedExt/README.md)
+- [Combinatorial game theory](combinatorial-games/README.md)
+- [Cooperative game theory](cooperative-games/README.md)
+- [Social choice theory](social-choice/README.md)

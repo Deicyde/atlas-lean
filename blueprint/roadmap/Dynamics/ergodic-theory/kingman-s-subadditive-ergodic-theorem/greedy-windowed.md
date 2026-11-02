@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Windowed greedy bound from time zero
+
+**Windowed greedy bound from time zero.** The greedy bound from time `0`, with the remainder bounded by a sum over the last window.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Dynamics.Ergodic.KingmanSigned.Filling](../../../../sources/v2/MathlibExt.md)

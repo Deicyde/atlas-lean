@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Normed.Operator.DirectSumOperators.isUnit_prodMap_iff
+---
+
+# Invertibility of a direct sum operator
+
+**Invertibility of a direct sum operator.** A direct sum is a unit iff both summands are units.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Normed.Operator.DirectSumOperators](../../../../../sources/v2/MathlibExt.md)

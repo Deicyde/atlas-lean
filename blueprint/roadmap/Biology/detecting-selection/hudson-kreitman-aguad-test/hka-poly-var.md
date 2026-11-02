@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Biology.PopulationGenetics.Coalescent.hkaPolyVar
+---
+
+# HKA variance of the number of segregating sites
+
+**HKA variance of the number of segregating sites.** HKA's variance of the number of segregating sites, `θ C(n) + θ² C₂(n)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.HKA](../../../../sources/v2/MathlibExt.md)

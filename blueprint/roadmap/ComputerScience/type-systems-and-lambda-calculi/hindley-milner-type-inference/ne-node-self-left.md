@@ -1,0 +1,25 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.HindleyMilner.ne_node_self_left
+---
+
+# No monotype is an arrow out of itself
+
+**No monotype is an arrow out of itself.** For all monotypes $\tau_1$ and $\tau_2$,
+$\tau_1 \ne (\tau_1 \to \tau_2)$.
+
+## Depends on
+
+- [Monotypes](ty.md)
+- [Terms for unification](../../../Logic/first-order-logic/first-order-unification/term.md)
+
+## Proof depends on
+
+- [Size of a term](../../../Logic/first-order-logic/first-order-unification/size.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Languages.LambdaCalculus.HindleyMilner.Typing](../../../../sources/v2/CSLibExt.md)

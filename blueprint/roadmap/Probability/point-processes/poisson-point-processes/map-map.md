@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.PoissonPointProcess.map_map
+---
+
+# Mapping theorem
+
+**Mapping theorem.** The image `η ∘ T⁻¹` of a Poisson point process under a measurable map
+`T : E → F` is the Poisson point process with intensity `μ ∘ T⁻¹` (Last–Penrose Thm. 5.1).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Process.PoissonPointProcess](../../../../sources/v2/MathlibExt.md)

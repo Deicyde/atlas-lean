@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.generalizedMotzkin_zero_density_one
+---
+
+# Generalized Motzkin numbers vanish modulo a prime with density one
+
+**Generalized Motzkin numbers vanish modulo a prime with density one.** Let $a, b$ be integers
+and let $p$ be a prime. If $p$ divides the generalized central trinomial coefficient
+$T^{(a,b)}_r$ for some $r < p$, then the set of $n \in \mathbb{N}$ such that $p$ divides the
+generalized Motzkin number $M^{(a,b)}_n$ has natural density $1$.
+
+## Depends on
+
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
+- [Density of a set](../../../../NumberTheory/additive-number-theory/natural-and-logarithmic-density/has-density.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3.

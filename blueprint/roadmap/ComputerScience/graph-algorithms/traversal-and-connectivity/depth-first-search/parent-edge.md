@@ -1,0 +1,30 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DepthFirstSearch.parent_edge
+---
+
+# DFS parent pairs are graph edges
+
+**DFS parent pairs are graph edges.** Let $G$ be a finite directed graph and $R$ a list of root
+vertices, and run depth-first search on $G$ from $R$. If the pair $(c, p)$ occurs in the list of
+(child, parent) pairs recorded by the search, then $G$ has a directed edge from $p$ to $c$.
+
+## Depends on
+
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../adjacency-list/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../adjacency-list/edge.md)
+
+## Proof depends on
+
+- [Occurring before in a list](before.md)
+- [Sequences of depth-first search machine steps](steps.md)
+- [Parent relation of a list of pairs](parent-rel.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.DepthFirstSearch](../../../../../sources/v2/CSLibExt.md)

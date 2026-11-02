@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning.card_labeling
+---
+
+# Number of labelings of a tree
+
+**Number of labelings of a tree.** There are `|S| ^ (2 · #internal nodes)` labelings (one state for each non-root node), so the
+brute-force sum `bruteLik` has exponentially many terms.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinPruning](../../../../sources/v2/CSLibExt.md)

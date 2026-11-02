@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.DriftModel.weightedLD_sources
+---
+
+# Weighted LD amplitude with the true source populations
+
+**Weighted LD amplitude with the true source populations.** Weights from the true mixing populations (`R = A`, `S = B`): the amplitude is
+`2 α β F2(A, B)^2` (Loh et al. 2013, Eq. 4).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

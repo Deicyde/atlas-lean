@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ProbabilityTheory.PoissonProcess.hasLaw_arrivalTime
+---
+
+# Arrival times of exponential interarrivals are Erlang
+
+**Arrival times of exponential interarrivals are Erlang.** The `(n + 1)`-th arrival time of i.i.d. rate-`r` exponential interarrivals has the Gamma
+(Erlang) law with shape `n + 1` and rate `r` (Karlin–Taylor 1975, §4.2).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Process.PoissonProcess](../../../../sources/v2/MathlibExt.md)

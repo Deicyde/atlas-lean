@@ -1,0 +1,33 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.MachineLearning.InformationTheory.crossEntropyLoss_eq
+---
+
+# The cross-entropy loss is the average negative log-likelihood
+
+**The cross-entropy loss is the average negative log-likelihood.** Let $f$ be a probabilistic
+classifier, assigning to each input $x \in X$ a probability distribution $f(x)$ on a finite set
+of labels, and let $D = ((x_1, y_1), \dots, (x_N, y_N))$ be a labelled sample. The cross-entropy
+loss of $f$ on $D$ equals the average surprisal of the labels,
+
+$$\Big(\sum_{n=1}^{N} s\big(f(x_n)(y_n)\big)\Big) / N,$$
+
+where $s(q) = -\log_2 q$ is the surprisal of a probability $q$, with $s(0) = \infty$, and the
+average is computed in $[0, \infty]$.
+
+## Depends on
+
+- [Cross-entropy loss](cross-entropy-loss.md)
+- [Surprisal](../../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/surprisal.md)
+
+## Proof depends on
+
+- [Cross-entropy](../../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/cross-entropy.md)
+- [Cross-entropy of a point mass](../../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/cross-entropy-pure.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.MachineLearning.InformationTheory.LogLoss](../../../../../sources/v2/CSLibExt.md)

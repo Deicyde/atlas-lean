@@ -1,0 +1,26 @@
+---
+navigation: transparent
+---
+
+# Vertex pairs in encoding order to INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time
+
+- [Vertex pairs in encoding order](pairs.md)
+- [Adjacency bit of a vertex pair](adj-bits.md)
+- [The graph encoded by pair bits](to-graph.md)
+- [Encoding of a graph instance](encode-kg.md)
+- [Decoding a graph instance](decode-kg.md)
+- [Fixed no-instance](no-kg.md)
+- [Language of graph instances with a property](kg-dec.md)
+- [CLIQUE](clique-dec.md)
+- [INDEPENDENT-SET](ind-set-dec.md)
+- [The VERTEX-COVER problem](vertex-cover-dec.md)
+- [Literal occurrences of a CNF formula](occs.md)
+- [Adjacency of literal occurrences in Karp's clique graph](occ-adj.md)
+- [Adjacency bits of Karp's clique graph](clique-bits.md)
+- [Karp's CLIQUE instance of a CNF formula](to-clique.md)
+- [Karp's SAT-to-CLIQUE map on bit strings](reduce-clique.md)
+- [Complementing map from CLIQUE to INDEPENDENT-SET instances](flip-kg.md)
+- [Map from INDEPENDENT-SET to VERTEX-COVER instances](is-to-vc.md)
+- [The CLIQUE-to-INDEPENDENT-SET and INDEPENDENT-SET-to-VERTEX-COVER map as a host component](kg-map-comp.md)
+- [CLIQUE ≤ INDEPENDENT-SET is polynomial-time](is-poly-time-flip-kg.md)
+- [INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time](is-poly-time-is-to-vc.md)

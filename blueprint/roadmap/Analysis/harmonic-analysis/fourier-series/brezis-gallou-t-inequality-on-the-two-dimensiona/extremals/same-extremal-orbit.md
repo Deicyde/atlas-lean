@@ -1,0 +1,22 @@
+---
+article_id: af_d26bf6dec2b79dae325783f6
+declaration: def
+origin: cited
+statement: formalized
+lean: TorusSobolev.SameExtremalOrbit
+---
+
+# Same extremal orbit
+
+**Same extremal orbit.** Two continuous real functions $u$ and $v$ on the torus
+$\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$ lie in the same extremal orbit when there are a
+real number $a \neq 0$ and a point $x_0 \in \mathbb{T}$ such that $v(x) = a \, u(x - x_0)$ for
+every $x \in \mathbb{T}$.
+
+## Depends on
+
+- [The torus of period $2\pi$](../fourier-sobolev-optimization-on-the-two-dimensio/torus.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Extremals](../../../../../../sources/v2/MathlibExt.md)

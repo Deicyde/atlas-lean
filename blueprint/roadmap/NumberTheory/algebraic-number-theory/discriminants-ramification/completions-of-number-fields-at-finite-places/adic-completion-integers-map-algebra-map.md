@@ -1,0 +1,25 @@
+---
+article_id: af_dc368c4e938bbf341ff7957d
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsDedekindDomain.HeightOneSpectrum.adicCompletionIntegersMap_algebraMap
+---
+
+# The completed integer map is compatible with the rings of integers
+
+**The completed integer map is compatible with the rings of integers.** Let $L/K$ be an
+extension of number fields, let $v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero
+prime ideal of $\mathcal{O}_L$ lying over $v$. Let $\mathcal{O}_{K_v}$ and $\mathcal{O}_{L_w}$ be
+the rings of integers of the completions $K_v$ and $L_w$. For every $a \in \mathcal{O}_K$, the
+canonical map $\mathcal{O}_{K_v} \to \mathcal{O}_{L_w}$ sends the image of $a$ in
+$\mathcal{O}_{K_v}$ to the image in $\mathcal{O}_{L_w}$ of the image of $a$ in $\mathcal{O}_L$.
+
+## Depends on
+
+- [Restriction of the completion map to the rings of integers](valuation-formula-for-maps-between-finite-place/adic-completion-integers-map.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverResidueField](../../../../../sources/v2/MathlibExt.md)

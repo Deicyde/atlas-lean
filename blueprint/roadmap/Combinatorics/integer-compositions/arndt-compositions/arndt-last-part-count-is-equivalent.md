@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.arndtLastPartCount_isEquivalent
+---
+
+# Asymptotics of Arndt compositions with a fixed last part
+
+**Asymptotics of Arndt compositions with a fixed last part.** Let $b(n, m)$ be the number of
+Arndt compositions of $n$ with last part $m$, and let $\varphi$ be the golden ratio. For every
+fixed integer $m \ge 1$,
+$b(n, m) \sim \frac{\varphi^{n-m-2}}{\sqrt{5}} \left(1 + \frac{1}{\varphi^{m-1}}\right)$ as
+$n \to \infty$.
+
+## Depends on
+
+- [Arndt compositions by last part](arndt-last-part-count.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtCompositionsGeneratingFunctionsWanted](../../../../sources/v2/WantedExt.md)
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 10 (`integers-2024-A35-thm-10`).

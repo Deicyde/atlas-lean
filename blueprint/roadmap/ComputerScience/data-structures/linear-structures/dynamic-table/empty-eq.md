@@ -1,0 +1,22 @@
+---
+article_id: af_941512445e56cce1352d7108
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.empty_eq
+---
+
+# The empty dynamic table has no slots and no items
+
+**The empty dynamic table has no slots and no items.** The empty dynamic table has an empty
+slot array, so capacity $0$, and item count $0$.
+
+## Depends on
+
+- [Dynamic table](table.md)
+- [Empty dynamic table](empty.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DynamicTable.Basic](../../../../../sources/v2/CSLibExt.md)

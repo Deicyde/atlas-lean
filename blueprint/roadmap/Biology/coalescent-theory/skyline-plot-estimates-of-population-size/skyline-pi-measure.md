@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Biology.PopulationGenetics.Coalescent.skylinePiMeasure
+---
+
+# Canonical probability space for the skyline model
+
+**Canonical probability space for the skyline model.** The canonical probability space for the skyline model: the product of the exponential laws
+`Exp(C(k, 2) / θ k)`, `2 ≤ k ≤ n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.Skyline](../../../../sources/v2/MathlibExt.md)

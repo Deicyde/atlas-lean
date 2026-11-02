@@ -1,0 +1,17 @@
+# Convex analysis and calculus of variations
+
+Convex functions and sets in analysis and optimization: Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT and LP duality, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles.
+
+- [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
+- [Ekeland variational principle](ekeland-variational-principle/README.md)
+- [Euler–Lagrange equation](euler-lagrange-equation/README.md)
+- [Fenchel–Moreau theorem](fenchel-moreau-theorem/README.md)
+- [Gradient descent](gradient-descent/README.md)
+- [Karush–Kuhn–Tucker conditions for inequality constraints](karush-kuhn-tucker-inequality.md)
+- [Lipschitz regularization by inf-convolution](lipschitz-regularization-by-inf-convolution/README.md)
+- [Moreau decomposition](moreau-decomposition/README.md)
+- [Mountain pass theorem](mountain-pass-theorem/README.md)
+- [Polar sets](polar-sets/README.md)
+- [Stampacchia's theorem](stampacchia-s-theorem/README.md)
+- [Strong linear programming duality](strong-linear-programming-duality.md)
+- [Tikhonov regularization](tikhonov-regularization/README.md)

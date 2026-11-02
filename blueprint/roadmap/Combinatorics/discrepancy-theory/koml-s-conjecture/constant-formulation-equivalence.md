@@ -1,0 +1,26 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: KomlosDiscrepancyWanted.constantFormulationEquivalence
+---
+
+# Equivalence of the square and rectangular Komlós formulations (statement)
+
+**Equivalence of the square and rectangular Komlós formulations (statement).** The statement
+that the uniform discrepancy bound for vectors in the unit ball holds if and only if the Komlós
+constant is finite.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Uniform discrepancy bound for vectors in the unit ball](uniform-rectangular-bound.md)
+- [Komlós constant](komlos-constant.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../sources/v2/WantedExt.md)
+- optimization catalogue C24a, line 26, and AIM Problem 1.05. The padding bridge is requested, not assumed or claimed definitional.

@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.CCS.AlternatingBit.bufferSteps
+---
+
+# Transitions of the data-free one-place buffer
+
+**Transitions of the data-free one-place buffer.** The one-place buffer has two states, empty
+(false) and full (true). When empty, its only transition is an input on $\mathit{acc}$ to the full
+state; when full, its only transition is an output on $\mathit{del}$ to the empty state.
+
+## Depends on
+
+- [Alternating-bit channel names](name.md)
+- [CCS labels](../../process-calculi/calculus-of-communicating-systems/label.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.CCS.AlternatingBit](../../../../sources/v2/CSLibExt.md)

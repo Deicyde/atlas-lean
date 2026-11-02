@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.InnerProductSpace.RieszBasis.IsRieszBasis
+---
+
+# Riesz basis of a Hilbert space
+
+**Riesz basis of a Hilbert space.** A family `f : ι → E` is a **Riesz basis** (with respect to the Hilbert basis
+`b`) if it is the image of `b` under a bounded invertible operator.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RieszBasis](../../../../sources/v2/MathlibExt.md)

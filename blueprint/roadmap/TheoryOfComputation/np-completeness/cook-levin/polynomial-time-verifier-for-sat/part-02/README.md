@@ -1,0 +1,26 @@
+---
+navigation: transparent
+---
+
+# Stack contents of the lookup machine to An unterminated unary count is rejected
+
+- [Stack contents of the lookup machine](stk.md)
+- [A name bit reads as itself](bit-bit.md)
+- [Initialization step of the lookup machine](init-run.md)
+- [Restoring and stashing after a comparison in the lookup machine](tail-run.md)
+- [Serving a live table entry](cmp-run.md)
+- [One scan step of the lookup](entry-run.md)
+- [The scan loop of the lookup machine](scan-loop.md)
+- [The return loop of the lookup machine](back-loop.md)
+- [Correctness of the SAT-verifier lookup machine](run.md)
+- [Stacks of the SAT tokenizer](k.md)
+- [Labels of the SAT tokenizer](lab.md)
+- [Testing whether the top symbol is a given bit](top-is-bit.md)
+- [Instruction for reading a unary count](unary.md)
+- [The tokenizer program](prog.md)
+- [Start label of the SAT tokenizer](start.md)
+- [Tokenizer stack contents](st.md)
+- [Rejection of the SAT tokenizer within a step bound](rej.md)
+- [One step to rejection](rej-one.md)
+- [Reading a unary count](un-run.md)
+- [An unterminated unary count is rejected](un-fail.md)

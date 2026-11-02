@@ -1,0 +1,24 @@
+---
+article_id: af_df89ad4a83324c4395b55255
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.SocialWelfareFunction
+---
+
+# Social welfare function
+
+**Social welfare function.** A social welfare function maps each unrestricted profile to a social strict total order.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Preference profile (Arrow's theorem)](profile.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.GameTheory.SocialChoice.Arrow](../../../../sources/v2/MathlibExt.md)

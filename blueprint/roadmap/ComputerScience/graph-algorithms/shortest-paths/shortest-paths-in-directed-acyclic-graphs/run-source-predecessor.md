@@ -1,0 +1,40 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DAGShortestPaths.run_source_predecessor
+---
+
+# The source has no DAG shortest-path predecessor
+
+**The source has no DAG shortest-path predecessor.** Let $E$ be a list of integer-weighted
+directed edge occurrences on the vertices $\{0, \dots, n-1\}$, let $s$ be a source vertex, and
+let $\sigma$ be a topological order of the directed graph obtained from $E$ by forgetting
+weights. The one-pass DAG shortest-path relaxation of $E$ from $s$ in the order $\sigma$ records
+no predecessor edge for $s$.
+
+## Depends on
+
+- [Bellman-Ford distance table](../bellman-ford-algorithm/distances.md)
+- [Weighted directed edge](../bellman-ford-algorithm/edge.md)
+- [Weight-forgetting directed graph](../bellman-ford-algorithm/to-directed-adjacency.md)
+- [Cost of the DAG shortest-path pass](cost.md)
+- [One-pass DAG shortest-path relaxation](run.md)
+- [Topological order](../../traversal-and-connectivity/topological-sorting/is-topological-order.md)
+
+## Proof depends on
+
+- [Weighted path in an edge list](../bellman-ford-algorithm/is-weighted-path.md)
+- [Edges of the weight-forgetting graph](../bellman-ford-algorithm/edge-to-directed-adjacency-iff.md)
+- [Appending an edge to a weighted path](../bellman-ford-algorithm/is-weighted-path-append-edge.md)
+- [Weighted paths give walks of the same length](../bellman-ford-algorithm/is-weighted-path-walk.md)
+- [Bellman–Ford path weight](../bellman-ford-algorithm/path-weight.md)
+- [Weight of a path with an edge appended](../bellman-ford-algorithm/path-weight-append-edge.md)
+- [Directed adjacency graph](../../traversal-and-connectivity/adjacency-list/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../traversal-and-connectivity/adjacency-list/edge.md)
+- [Walks of a given length](../../traversal-and-connectivity/adjacency-list/walk.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.DAG.Basic](../../../../../sources/v2/CSLibExt.md)

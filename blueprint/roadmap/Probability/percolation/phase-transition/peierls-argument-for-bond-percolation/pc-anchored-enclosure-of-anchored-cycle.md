@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Anchored dual cycles give the anchored enclosure property
+
+**Anchored dual cycles give the anchored enclosure property.** If every finite origin cluster has an anchored dual cycle (`AnchoredCycleExists`), then the
+anchored enclosure property `StatMech.Percolation.PcAnchoredEnclosure` holds. This reduces
+the Peierls bound to `AnchoredCycleExists`; it does not prove that hypothesis.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Lattice.ContourAnchor](../../../../../sources/v2/MathlibExt.md)

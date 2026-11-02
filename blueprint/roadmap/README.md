@@ -4,32 +4,46 @@ article_id: af_87c922701f5064b1818e8bde
 
 # ATLAS roadmap
 
-## Subjects
+## Foundations & Logic
+
+- [Logic](Logic/README.md)
+- [Set Theory](SetTheory/README.md)
+- [Order Theory](Order/README.md)
+- [Category Theory](CategoryTheory/README.md)
+
+## Algebra & Number Theory
 
 - [Algebra](Algebra/README.md)
-- [Algebraic Geometry](AlgebraicGeometry/README.md)
-- [Analysis](Analysis/README.md)
-- [Category Theory](CategoryTheory/README.md)
-- [Combinatorics](Combinatorics/README.md)
-- [Computability](Computability/README.md)
-- [Computer Science](ComputerScience/README.md)
-- [Data](Data/README.md)
-- [Dynamics](Dynamics/README.md)
-- [Field Theory](FieldTheory/README.md)
-- [Game Theory](GameTheory/README.md)
-- [Geometry](Geometry/README.md)
-- [Graph Theory](GraphTheory/README.md)
 - [Group Theory](GroupTheory/README.md)
-- [Information Theory](InformationTheory/README.md)
-- [Linear Algebra](LinearAlgebra/README.md)
-- [Logic](Logic/README.md)
-- [Measure Theory](MeasureTheory/README.md)
-- [Number Theory](NumberTheory/README.md)
-- [Order](Order/README.md)
-- [Probability](Probability/README.md)
-- [Quantum Information](QuantumInformation/README.md)
-- [Representation Theory](RepresentationTheory/README.md)
 - [Ring Theory](RingTheory/README.md)
-- [Set Theory](SetTheory/README.md)
-- [Theory of Computation](TheoryOfComputation/README.md)
+- [Field Theory](FieldTheory/README.md)
+- [Linear Algebra](LinearAlgebra/README.md)
+- [Representation Theory](RepresentationTheory/README.md)
+- [Number Theory](NumberTheory/README.md)
+- [Algebraic Geometry](AlgebraicGeometry/README.md)
+
+## Geometry & Topology
+
+- [Geometry](Geometry/README.md)
 - [Topology](Topology/README.md)
+
+## Analysis & Probability
+
+- [Analysis](Analysis/README.md)
+- [Measure Theory](MeasureTheory/README.md)
+- [Probability](Probability/README.md)
+- [Dynamical Systems](Dynamics/README.md)
+
+## Discrete Mathematics & Computer Science
+
+- [Combinatorics](Combinatorics/README.md)
+- [Graph Theory](GraphTheory/README.md)
+- [Theory of Computation](TheoryOfComputation/README.md)
+- [Computer Science](ComputerScience/README.md)
+
+## Applied Mathematics
+
+- [Information Theory](InformationTheory/README.md)
+- [Quantum Information](QuantumInformation/README.md)
+- [Game Theory](GameTheory/README.md)
+- [Mathematical Biology](Biology/README.md)

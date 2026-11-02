@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.cloneProb
+---
+
+# Lea–Coulson clone-size law
+
+**Lea–Coulson clone-size law.** The **Lea–Coulson clone-size law** `P(size = j) = 1 / (j (j + 1))` for `j ≥ 1`
+(`P(size = 0) = 0`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.LuriaDelbruck](../../../../sources/v2/MathlibExt.md)

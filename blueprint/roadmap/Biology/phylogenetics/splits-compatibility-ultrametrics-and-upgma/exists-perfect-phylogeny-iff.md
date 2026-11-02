@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Bioinformatics.Phylogenetics.Splits.exists_perfectPhylogeny_iff
+---
+
+# Perfect phylogeny and the four-gamete condition
+
+**Perfect phylogeny and the four-gamete condition** (Estabrook, Johnson & McMorris 1976;
+Gusfield 1991): a binary character matrix on at least two taxa has a perfect phylogeny iff no
+two of its columns show all four gametes.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.Splits](../../../../sources/v2/CSLibExt.md)

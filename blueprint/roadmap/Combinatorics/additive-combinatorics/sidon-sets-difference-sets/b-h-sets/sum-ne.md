@@ -1,0 +1,22 @@
+---
+article_id: af_64257600ce83416da1ee3e95
+declaration: def
+origin: cited
+statement: formalized
+lean: AdditiveCombinatorics.sumNE
+---
+
+# Sum of a nonempty list
+
+**Sum of a nonempty list.** For a nonempty list $(a_1, \dots, a_k)$ of elements of a type with
+an addition, its sum is obtained by adding the entries from left to right starting from the head:
+it is $a_1$ when $k = 1$, and $(\cdots((a_1 + a_2) + a_3) + \cdots) + a_k$ in general. No zero
+element is needed, and the proof that the list is nonempty does not affect the value.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Additive.BhSet](../../../../../sources/v2/MathlibExt.md)

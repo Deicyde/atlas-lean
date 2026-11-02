@@ -1,0 +1,41 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Karp.EmitClique.nm_run
+---
+
+# CLIQUE emitter: reading a variable name
+
+**CLIQUE emitter: reading a variable name.** Stacks are listed top first. Let $p$ be a Boolean,
+$x \in \mathbb{N}$ with name $w$ (its binary encoding written as bit symbols) of length $\ell$, and
+$R$ a list of symbols that is empty or whose top symbol is not a bit symbol. Let $v$ be a flag,
+$o$ a list of Booleans, $d$ and $e$ lists of symbols, and $c, n \in \mathbb{N}$. Started at label
+$\mathrm{nm}(p)$ with flag $v$, the token stack $T$ holding $w$ reversed on top of $R$, empty
+stacks $A$, $B$, $X$, stacks $O$, $D$, $E$ holding $o$, $d$, $e$, and $c$ and $n$ clause markers
+on the counters $C$ and $N$, the CLIQUE emitter reaches, in exactly $\ell + 1$ steps and with
+some flag, the label $\mathrm{walk}(p, \mathrm{false})$ with $T$ holding $R$, $A$ holding $w$,
+and all other stacks as before.
+
+## Depends on
+
+- [Stacks of the SAT-to-CLIQUE emitter](../part-03/k.md)
+- [Labels of the SAT-to-CLIQUE emitter](lab.md)
+- [Name bits of a variable in the CLIQUE emitter](name.md)
+- [The CLIQUE emitter machine](prog.md)
+- [Configuration stacks of the CLIQUE emitter](st.md)
+- [Stack alphabets of the CLIQUE emitter](../part-03/untitled.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+
+## Proof depends on
+
+- [Flag bit of a machine state](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
+- [Bit blocks](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/is-bit-block.md)
+- [Running the bit-moving loop](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/move-b-run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueEmit](../../../../../../sources/v2/CSLibExt.md)

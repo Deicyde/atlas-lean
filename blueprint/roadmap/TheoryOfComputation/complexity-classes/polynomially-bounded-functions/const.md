@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.PolynomiallyBounded.const
+---
+
+# Constant functions are polynomially bounded
+
+**Constant functions are polynomially bounded.** Every constant natural-valued function is polynomially bounded.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Foundations.Data.Nat.PolynomialBound](../../../../sources/v2/CSLibExt.md)

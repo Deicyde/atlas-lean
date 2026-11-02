@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.card_perfectCover_superset_subgroup
+---
+
+# Perfect covers containing a perfect cover of a subgroup
+
+**Perfect covers containing a perfect cover of a subgroup.** Let $G$ be an abelian group of
+order $2^n$ and $H$ a subgroup of order $2^m$. Then the number of perfect covers of $G$ that
+contain a perfect cover of $H$ is $2^{m(n-m)} \cdot C(G/H) \cdot C(H)$, where $C(K)$ denotes the
+number of perfect covers of a group $K$.
+
+## Depends on
+
+- [Perfect cover](is-perfect-cover.md)
+- [Number of perfect covers](count.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Additive.PerfectSubsetSumCoverWanted](../../../../../sources/v2/WantedExt.md)
+- John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 17 (`jis-2025-25.7.8-lem-17`).

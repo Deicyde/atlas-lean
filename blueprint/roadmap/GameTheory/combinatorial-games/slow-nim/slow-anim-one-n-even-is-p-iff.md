@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.slowANim_one_n_even_isP_iff
+---
+
+# P-positions of Slow A-Nim with A = {1, n}, n even
+
+**P-positions of Slow A-Nim with A = {1, n}, n even.** Let $n \ge 1$ be even and let
+$A = \{1, n\}$. A position $p = (p_1, \dots, p_n)$ of Slow$A$-Nim on $n$ stacks is a P-position
+if and only if its total number of tokens $p_1 + \dots + p_n$ and its smallest stack
+$\min_i p_i$ are both even.
+
+## Depends on
+
+- [P-positions](../sprague-grundy-theorem/is-p.md)
+- [Slow$A$-Nim](slow-anim-game.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.SlowANimWanted](../../../../sources/v2/WantedExt.md)
+- Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 2.

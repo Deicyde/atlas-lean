@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.motzkinAlternatingSum_succ
+---
+
+# Recurrence for alternating Motzkin sums
+
+**Recurrence for alternating Motzkin sums.** Let $M_k$ denote the $k$-th Motzkin number and
+let $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. For every natural number $n$, $T_{n+1} = M_{n+1} - T_n$.
+
+## Depends on
+
+- [Alternating sums of Motzkin numbers](motzkin-alternating-sum.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../motzkin-numbers/motzkin-number.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinAlternatingSumsWanted](../../../../../sources/v2/WantedExt.md)
+- Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Equation (2).

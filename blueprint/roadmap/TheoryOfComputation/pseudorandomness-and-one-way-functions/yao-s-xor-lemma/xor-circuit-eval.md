@@ -1,0 +1,28 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.Complexity.KeyTheorems.YaoXOR.xorCircuitEval
+---
+
+# Gate values of an encoded circuit
+
+**Gate values of an encoded circuit.** For a list $C$ of encoded gates and a list $x$ of
+Booleans of length $\ell$, the gate values of $C$ on $x$ are obtained by decoding each pair of $C$
+to a gate of a flat Boolean circuit on $\ell$ inputs and evaluating the decoded circuit with the
+assignment that gives input $i$ the value $x_i$; the result lists the values of all gates in
+order. A pair referring to an input index $i \ge \ell$ decodes to the constant false.
+
+## Depends on
+
+- [Encoded gates](xorgate.md)
+
+## Proof depends on
+
+- [Gates of a flat Boolean circuit](../../complexity-classes/time-and-space-complexity-classes/acgate.md)
+- [Decoding a gate from its (kind, references) pair](../../complexity-classes/time-and-space-complexity-classes/ac-gate-of-pair.md)
+- [Evaluation of a flat Boolean circuit](../../complexity-classes/time-and-space-complexity-classes/circuit-eval.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.KeyTheorems.YaoXORWanted](../../../../sources/v2/WantedExt.md)

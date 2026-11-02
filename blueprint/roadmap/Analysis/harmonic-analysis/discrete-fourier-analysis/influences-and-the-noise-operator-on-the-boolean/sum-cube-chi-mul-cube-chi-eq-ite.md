@@ -1,0 +1,27 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BooleanCube.sum_cubeChi_mul_cubeChi_eq_ite
+---
+
+# Orthogonality of the Boolean cube characters
+
+**Orthogonality of the Boolean cube characters.** Let $n \in \mathbb{N}$, let $S$ and $T$ be
+subsets of $\{0, \dots, n-1\}$, and let $\chi_S$ and $\chi_T$ be their Fourier characters. Then
+$\sum_x \chi_S(x) \chi_T(x)$, the sum ranging over all points $x$ of the Boolean cube of dimension
+$n$, equals $2^n$ if $S = T$ and $0$ otherwise.
+
+## Depends on
+
+- [Boolean cube](../fourier-analysis-on-the-boolean-cube/bool-cube.md)
+- [Fourier character on the Boolean cube](../fourier-analysis-on-the-boolean-cube/cube-chi.md)
+
+## Proof depends on
+
+- [Sign of a Boolean coordinate](../fourier-analysis-on-the-boolean-cube/cube-val.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.BooleanCubeInfluence](../../../../../sources/v2/MathlibExt.md)

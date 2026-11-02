@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# False slice of a disjoint occurrence
+
+**False slice of a disjoint occurrence.** The `false` slice of `A □ B` is contained in the disjoint occurrence of the `false`
+slices.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.CorrelationInequalities.BK](../../../../../sources/v2/MathlibExt.md)

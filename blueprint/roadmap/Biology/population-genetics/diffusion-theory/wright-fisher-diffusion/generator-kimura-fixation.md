@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Biology.PopulationGenetics.Diffusion.generator_kimuraFixation
+---
+
+# Kimura (1962)
+
+**Kimura (1962).** The fixation probability solves the backward equation
+`x (1 - x) / 2 · u'' + σ x (1 - x) · u' = 0` (everywhere).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisher](../../../../../sources/v2/MathlibExt.md)

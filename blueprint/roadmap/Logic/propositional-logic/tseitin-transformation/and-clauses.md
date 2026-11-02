@@ -1,0 +1,26 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.SAT.Tseitin.andClauses
+---
+
+# Tseitin clauses for a conjunction
+
+**Tseitin clauses for a conjunction.** For literals $g$, $a$ and $b$, the defining clauses of
+the gate literal $g$ for the conjunction of $a$ and $b$ are, in this order, the three clauses
+$\lnot g \lor a$, $\lnot g \lor b$ and $g \lor \lnot a \lor \lnot b$, where $\lnot \ell$ denotes the
+complementary literal of $\ell$ (same variable, opposite polarity).
+
+## Depends on
+
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+
+## Proof depends on
+
+- [Complementary literal](neg-lit.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.SAT.Tseitin.Basic](../../../../sources/v2/CSLibExt.md)

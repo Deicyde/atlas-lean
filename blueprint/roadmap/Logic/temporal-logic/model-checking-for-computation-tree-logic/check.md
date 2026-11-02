@@ -1,0 +1,27 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.CTL.check
+---
+
+# The CTL model checker as a Boolean decision procedure
+
+**The CTL model checker as a Boolean decision procedure.** Let $\mathcal{T}$ be a labelled
+transition system with finitely many states and finitely many labels, decidable transitions and
+decidable equality of states, and let $V$ be a decidable valuation of atoms at states. For a state
+$s$ and a CTL formula $\varphi$, the model checker returns true exactly when $s$ belongs to the
+set of states that the satisfaction-set algorithm computes for $\varphi$ in $\mathcal{T}$ under
+$V$.
+
+## Depends on
+
+- [CTL formulas](../computation-tree-logic/formula.md)
+
+## Proof depends on
+
+- [Finite-state CTL model checking by structural recursion](sat.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Logics.CTL.ModelChecking](../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.slice_disjointOccurrence_le_of_isIncreasing
+---
+
+# Slice inequalities in the one-coordinate BK induction step
+
+**Slice inequalities in the one-coordinate BK induction step.** The slice inequalities of the one-coordinate BK induction step, with `A₀, A₁, B₀, B₁` the slices
+at the first coordinate: `P(A₀ □ B₀) ≤ P((A₀ □ B₁) ∩ (A₁ □ B₀))` and
+`P((A₀ □ B₁) ∪ (A₁ □ B₀)) ≤ P(A₁) P(B₁)`, for increasing events `A, B`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.CorrelationInequalities.ReimerSpecialCases](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Quadrant below and left of a site
+
+**Quadrant below and left of a site.** The quadrant of sites `p` with `p 0 ≤ z 0 - 1` and `p 1 ≤ z 1 - 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Lattice.JordanExteriorClosure](../../../../sources/v2/MathlibExt.md)

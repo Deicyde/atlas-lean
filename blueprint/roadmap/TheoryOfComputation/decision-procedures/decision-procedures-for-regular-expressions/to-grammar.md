@@ -1,0 +1,33 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Language.EncodedRegex.toGrammar
+---
+
+# The grammar of an encoded regular expression
+
+**The grammar of an encoded regular expression.** For an encoded regular expression $e$ with
+$n$ nodes, its grammar is the encoded context-free grammar with start nonterminal $n - 1$
+(truncated subtraction, so $0$ when $n = 0$), in which nonterminal $k$ stands for node $k$. Its
+productions are, for each node $k < n$: none if node $k$ is $0$; $k \to \varepsilon$ if it is
+$\varepsilon$; if it is the letter $a$, the production $k \to a$; if it is the sum of nodes $i$
+and $j$, the productions $k \to i$ (when $i < k$) and $k \to j$ (when $j < k$); if it is the
+product of nodes $i$ and $j$, the production $k \to i\,j$ (when $i < k$ and $j < k$); and if it
+is the star of node $i$, the productions $k \to \varepsilon$ and $k \to i\,k$ (when $i < k$).
+There are no other productions.
+
+## Depends on
+
+- [Encoded context-free grammars](../encodings-of-context-free-grammars/encoded-cfg.md)
+- [Encoded regular expressions](encoded-regex.md)
+
+## Proof depends on
+
+- [Node at an index](node.md)
+- [Productions of a node](node-rules.md)
+- [Regular-expression node](regex-node.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Decidability.RegularExpression](../../../../sources/v2/CSLibExt.md)

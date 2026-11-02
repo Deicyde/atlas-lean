@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.IsPeriodicTilingSet
+---
+
+# Periodic tiling set
+
+**Periodic tiling set.** A subset $A$ of an abelian group $G$ is periodic if there exist a
+subgroup $H$ of $G$ of finite index and a finite set $S \subseteq G$ such that $A = S + H$, that
+is, $A$ is the union of finitely many cosets of $H$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.PeriodicTilingConjectureWanted](../../../../sources/v2/WantedExt.md)

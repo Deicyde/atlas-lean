@@ -1,9 +1,0 @@
----
-article_id: af_1c85e1c7e14b788f7c035f99
-navigation: module
----
-
-# Berge Lemma
-
-- [Berge's lemma for matching subgraphs](berge-general.md)
-- [Berge's lemma](berge.md)

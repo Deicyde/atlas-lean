@@ -1,0 +1,40 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamYes
+---
+
+# Yes-instances of the 2-local Hamiltonian problem
+
+**Yes-instances of the 2-local Hamiltonian problem.** A bitstring $x$ is a yes-instance when
+decoding it under the canonical bitstring encoding gives a tuple $(n, (h_1, \dots, h_m), a, b)$ of
+a natural number $n$, a list of 2-local terms $h_1, \dots, h_m$ and two encoded rational numbers,
+whose values we also write $a$ and $b$, such that every $h_l$ is valid on $n$ qubits,
+$b - a \ge 1/(m + 1)$, and the Hamiltonian $H$ of $h_1, \dots, h_m$ on $n$ qubits is Hermitian
+and has ground energy at most $a$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Encoded rational number](../../complexity-classes/time-and-space-complexity-classes/rat-enc.md)
+- [Rational number of an encoding](../../complexity-classes/time-and-space-complexity-classes/to-rat.md)
+- [Bitstring encodings](../../complexity-classes/the-classes-p-np-and-conp/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../complexity-classes/the-classes-p-np-and-conp/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../complexity-classes/the-classes-p-np-and-conp/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../complexity-classes/the-classes-p-np-and-conp/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../complexity-classes/the-classes-p-np-and-conp/delimit.md)
+- [Parsing one self-delimiting block](../../complexity-classes/the-classes-p-np-and-conp/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../complexity-classes/the-classes-p-np-and-conp/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../complexity-classes/the-classes-p-np-and-conp/undelimit-blocks-aux.md)
+- [Encoded 2-local Hamiltonian term](local-term.md)
+- [Ground energy of a Hermitian matrix](ground-energy.md)
+- [Hamiltonian of a list of 2-local terms](hamiltonian.md)
+- [Valid 2-local Hamiltonian term](local-term-valid.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.KeyTheorems.LocalHamiltonianQMAWanted](../../../../sources/v2/WantedExt.md)

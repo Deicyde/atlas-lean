@@ -1,0 +1,26 @@
+---
+navigation: transparent
+---
+
+# Valuation term of one binomial factor to Counting small-square primes
+
+- [Valuation term of one binomial factor](u9-nu9term-eq.md)
+- [Valuation terms vanish off the prime support](u9-nu9term-zero.md)
+- [A weighted log-factor as a sum over primes](u9-q-expand.md)
+- [Prime factorization of $\log F_9(n)$](u9-bridge.md)
+- [Logarithms of primes are nonnegative](u9-logp-nonneg.md)
+- [$G$ is at most its positive part](u9-g-to-nat.md)
+- [The truncated continuous Breusch function is at most 3](u9-to-nat-le3.md)
+- [Positive lower bounds on a truncation lift to the integer](u9-of-to-nat.md)
+- [Layer-cake decomposition with three levels](u9-layercake.md)
+- [A level bound turns into a bound on the prime](u9-ple-of-g.md)
+- [Primes up to $1890n$ have $n/p \ge 1/1890$](u9-xlo.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 1](u9-ple1.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 2](u9-ple2.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 3](u9-ple3.md)
+- [The primorial as a product of primes](u9-primorial-eq.md)
+- [Chebyshev-type bound for the sum of prime logarithms](u9-theta-le.md)
+- [Prime-logarithm bound for one level of $G$](u9-bi-le.md)
+- [Contribution of primes with $p^2 > 2100n$](u9-b-le.md)
+- [Bound for one small-square prime term](u9-cterm-le.md)
+- [Counting small-square primes](u9-ccard-le.md)

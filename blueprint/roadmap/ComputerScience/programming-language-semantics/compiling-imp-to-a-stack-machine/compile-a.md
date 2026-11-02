@@ -1,0 +1,25 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.IMP.StackMachine.compileA
+---
+
+# Compilation of arithmetic expressions
+
+**Compilation of arithmetic expressions.** The compiled code of an arithmetic expression is
+the list of stack-machine instructions defined by recursion: a constant $n$ compiles to the
+single instruction push $n$, a variable $x$ to the single instruction load $x$, and the sum,
+difference or product of $a_1$ and $a_2$ to the code of $a_1$, then the code of $a_2$, then the
+single instruction add, sub or mul respectively.
+
+Running this code leaves the value of the expression on top of the stack.
+
+## Depends on
+
+- [Arithmetic expressions of IMP](../operational-semantics-of-imp/aexp.md)
+- [Stack machine instructions](instr.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Languages.IMP.StackMachine](../../../../sources/v2/CSLibExt.md)

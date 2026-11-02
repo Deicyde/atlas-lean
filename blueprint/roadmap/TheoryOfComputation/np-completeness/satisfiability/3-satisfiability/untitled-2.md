@@ -1,0 +1,26 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Complexity.Karp.TokThen.Γ
+---
+
+# Alphabets of the tokenize-then-emit machine
+
+**Alphabets of the tokenize-then-emit machine.** For an emitter $E$, every stack of the
+combined machine that comes from the SAT tokenizer has the tokenizer's symbol alphabet, and every
+stack $k$ that comes from $E$ has the alphabet of $k$ in $E$.
+
+## Depends on
+
+- [Emitter](emitter.md)
+- [Stacks of the tokenize-then-emit machine](k-3.md)
+
+## Proof depends on
+
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.TokThen](../../../../../sources/v2/CSLibExt.md)

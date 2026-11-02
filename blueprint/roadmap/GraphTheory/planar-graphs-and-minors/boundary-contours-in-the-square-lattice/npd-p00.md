@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Lower left corner of a face $f$
+
+**Lower left corner of a face $f$.** The lower left corner of the face `f`. This is `StatMech.Lattice.faceCorner00 (f 0) (f 1)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Lattice.NoPinchDual](../../../../sources/v2/MathlibExt.md)

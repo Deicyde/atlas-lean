@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# BK inequality on countable configuration spaces
+
+**BK inequality on countable configuration spaces.** The **BK inequality** on a countable configuration space: for increasing events `A, B`
+depending only on the coordinates in a finite set `F`, `P_p(A □ B) ≤ P_p(A) * P_p(B)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.CorrelationInequalities.InfiniteBK](../../../../../sources/v2/MathlibExt.md)

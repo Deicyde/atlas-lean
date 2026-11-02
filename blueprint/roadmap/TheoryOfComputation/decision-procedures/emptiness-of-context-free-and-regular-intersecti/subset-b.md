@@ -1,0 +1,26 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Language.EncodedCFG.subsetB
+---
+
+# The inclusion test for a grammar and a DFA
+
+**The inclusion test for a grammar and a DFA.** For an encoded context-free grammar $g$ and an
+encoded DFA $D$ over the same alphabet $T$, where $T$ has decidable equality, the inclusion test on
+$g$ and $D$ is the Boolean value of the emptiness test on $g$ and the complement of $D$.
+
+## Depends on
+
+- [Encoded DFA](../encoded-finite-automata/encoded-dfa.md)
+- [Encoded context-free grammars](../encodings-of-context-free-grammars/encoded-cfg.md)
+
+## Proof depends on
+
+- [Complement of an encoded DFA](../encoded-finite-automata/compl.md)
+- [The intersection-emptiness test for a grammar and a DFA](inter-empty-b.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Decidability.ContextFreeRegular](../../../../sources/v2/CSLibExt.md)

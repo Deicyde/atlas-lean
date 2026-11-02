@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.variableSFS_inv_choose_two
+---
+
+# Variable-size spectrum reduces to Fu's $\theta/i$ at constant size
+
+**Variable-size spectrum reduces to Fu's $\theta/i$ at constant size.** With the constant-size means `E T_k = 1 / C(k,2)`, the variable-size SFS is Fu's
+`θ / i`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

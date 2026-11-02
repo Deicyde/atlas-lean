@@ -1,0 +1,32 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Crypto.PublicKey.ElGamal.decrypt_encrypt
+---
+
+# Correctness of ElGamal
+
+**Correctness of ElGamal.** Let $G$ be a commutative group, $g \in G$ and $q$ a natural
+number. For $a \in \mathbb{Z}/q\mathbb{Z}$ and $c \in G$ write $c^a$ for
+$c^{\operatorname{val}(a)}$, where $\operatorname{val}(a) \in \mathbb{N}$ is the representative
+of $a$ in $\{0, \dots, q-1\}$ if $q \ge 1$ and $|a|$ if $q = 0$. For every secret key
+$x \in \mathbb{Z}/q\mathbb{Z}$, every message $m \in G$ and every encryption randomness
+$y \in \mathbb{Z}/q\mathbb{Z}$, decrypting with $x$ the ElGamal encryption of $m$ under the
+public key $g^x$ with randomness $y$ returns $m$.
+
+## Depends on
+
+- [ElGamal decryption](decrypt.md)
+- [ElGamal encryption](encrypt.md)
+- [ElGamal public key](public-key.md)
+
+## Proof depends on
+
+- [Correctness of Diffie–Hellman key agreement](../diffie-hellman-key-exchange/dh-agree.md)
+- [Group exponentiation with modular exponents](../diffie-hellman-key-exchange/gpow.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Crypto.PublicKey.ElGamal](../../../../sources/v2/CSLibExt.md)

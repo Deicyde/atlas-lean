@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_nine
+---
+
+# The value of $R(3, 9)$
+
+**The value of $R(3, 9)$.** The classical Ramsey number $R(3, 9)$ equals $36$.
+
+## Depends on
+
+- [Classical Ramsey numbers](../graph-ramsey-numbers/graph-ramsey.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted](../../../../sources/v2/WantedExt.md)
+- Kalbfleisch (1966), op. cit. (lower bound); Grinstead and Roberts (1982), op. cit. (upper bound); Radziszowski, DS1; OEIS A000791; listed in SqueezeBench `SqueezeBench/Problems/Ramsey3/README.md`.

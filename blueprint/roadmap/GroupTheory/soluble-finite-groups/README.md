@@ -1,0 +1,15 @@
+# Soluble and supersoluble finite groups
+
+Structure of finite soluble groups: supersolubility criteria, p-solubility and p-length, chief factors and their complements, σ-solubility and σ-nilpotency, Schmidt subgroups, derived length bounds for finite groups of special type, and factorized groups; classes of groups closed under operations go to Formations and Fitting classes.
+
+- [Abnormal supersoluble factorizations](abnormal-supersoluble-factorizations/README.md)
+- [Alperin groups](alperin-groups/README.md)
+- [Frattini and complemented chief factors](frattini-and-complemented-chief-factors/README.md)
+- [Products of abelian and locally quaternion groups](products-of-abelian-and-locally-quaternion-group/README.md)
+- [Products of maximal subgroups](products-of-maximal-subgroups/README.md)
+- [Schmidt subgroups](schmidt-subgroups/README.md)
+- [Supersolubility criteria](supersolubility-criteria/README.md)
+- [Supersoluble maximal subgroups](supersoluble-maximal-subgroups/README.md)
+- [Supplements of maximal subgroups of Sylow subgroups](supplements-of-maximal-subgroups-of-sylow-subgro/README.md)
+- [σ-soluble and σ-nilpotent groups](soluble-and-nilpotent-groups/README.md)
+- [σ-subnormal subgroups](subnormal-subgroups/README.md)

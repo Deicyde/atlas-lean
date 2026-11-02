@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.base_eq_two_pow_sub_one_of_palindrome
+---
+
+# Even-length palindromic powers of 2 have base one less than a power of 2
+
+**Even-length palindromic powers of 2 have base one less than a power of 2.** Let $n$ and
+$b \ge 2$ be natural numbers. If the base-$b$ representation of $2^n$ is a palindrome with an
+even number of digits, then $b = 2^x - 1$ for some natural number $x$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.Digits.MinBasePalindromeWanted](../../../../../sources/v2/WantedExt.md)
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Corollary 2 (`integers-2024-A69-cor-2`).

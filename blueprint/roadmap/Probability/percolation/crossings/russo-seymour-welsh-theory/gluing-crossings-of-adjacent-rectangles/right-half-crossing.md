@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Open path from a point to the right side of a rectangle
+
+**Open path from a point to the right side of a rectangle.** An open path inside `rect m b c d` from the point `z` (on its left side) to its right side.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Percolation.RSW.Strip](../../../../../../sources/v2/MathlibExt.md)

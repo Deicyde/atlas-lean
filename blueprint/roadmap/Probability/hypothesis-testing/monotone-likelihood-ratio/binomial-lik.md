@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: ProbabilityTheory.binomialLik
+---
+
+# Binomial likelihood
+
+**Binomial likelihood.** Binomial likelihood with `N` trials and parameter-dependent success probability `p θ`:
+`L n θ = C(N, n) p θ ^ n (1 - p θ) ^ (N - n)` (zero for `n > N`, since `C(N, n) = 0`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Statistics.MonotoneLikelihoodRatio](../../../../sources/v2/MathlibExt.md)

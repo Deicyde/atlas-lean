@@ -1,0 +1,29 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Complexity.Karp.reduceCol
+---
+
+# The SAT to 3-COLOR reduction map on bit strings
+
+**The SAT to 3-COLOR reduction map on bit strings.** The map sends a bit string $x$ that
+decodes to a CNF formula $\varphi$ to the 3-COLOR instance of $\varphi$, and sends every bit
+string that does not decode to a CNF formula to the graph encoding of the number $4$ and the
+edge list $(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)$, in that order, that is, of the
+complete graph on four vertices.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [The complete graph on four vertices as a bit string](no-col.md)
+- [The 3-COLOR instance of a CNF formula](to-col.md)
+- [Decoding a complete length-prefixed CNF formula](../../../cook-levin/binary-encoding-of-cnf-formulas/decode-cnf.md)
+- [CNF formula](../../../../../Logic/propositional-logic/conjunctive-normal-form/cnf.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.Color](../../../../../../sources/v2/CSLibExt.md)

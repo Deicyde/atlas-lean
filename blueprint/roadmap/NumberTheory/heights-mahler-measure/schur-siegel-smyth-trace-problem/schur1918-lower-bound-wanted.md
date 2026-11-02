@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.SchurSiegelSmyth.schur1918LowerBound_wanted
+---
+
+# Schur's lower bound for the Schur–Siegel–Smyth constant
+
+**Schur's lower bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth trace
+constant $C_{86}$, an extended real number, satisfies $\sqrt{e} \le C_{86}$.
+
+## Depends on
+
+- [Schur–Siegel–Smyth trace constant](schur-siegel-smyth-constant.md)
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.Height.SchurSiegelSmythWanted](../../../../sources/v2/WantedExt.md)
+- Schur (1918), lower bound `√e ≤ C₈₆`.

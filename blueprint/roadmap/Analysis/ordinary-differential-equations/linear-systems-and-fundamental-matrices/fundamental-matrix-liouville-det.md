@@ -1,0 +1,33 @@
+---
+article_id: af_800929f93d528af59339a252
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrixWanted.fundamental_matrix_liouville_det
+---
+
+# Liouville's formula for the principal matrix solution
+
+**Liouville's formula for the principal matrix solution.** Let $n \in \mathbb{N}$, let
+$A : \mathbb{R} \to \mathbb{R}^{n \times n}$ be continuous, let $t_0 \in \mathbb{R}$, write $I$ for
+the $n \times n$ identity matrix, and let $\Phi : \mathbb{R} \to \mathbb{R}^{n \times n}$ satisfy
+$\Phi(t_0) = I$ and $\Phi'(t) = A(t) \Phi(t)$ for every $t \in \mathbb{R}$. Then for every
+$t \in \mathbb{R}$,
+$\det \Phi(t) = \det \Phi(t_0) \exp\left(\int_{t_0}^{t} \operatorname{tr} A(s)\, ds\right)$.
+
+Proof: Jacobi's formula follows from the determinant's first-order term; an integrating factor then
+gives Teschl, Lemma 3.11, formula (3.91).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Jacobi's formula when the derivative is a left multiple of the matrix](det-of-mul.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrix](../../../../sources/v2/MathlibExt.md)
+- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential equations`, entry `linear differential systems` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.4; stable ref https://en.wikipedia.org/wiki/Abel%27s_identity.

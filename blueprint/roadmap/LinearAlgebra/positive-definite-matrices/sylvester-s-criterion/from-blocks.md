@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Matrix.PosDef.fromBlocks
+---
+
+# Positive definiteness of a block matrix via the Schur complement
+
+**Positive definiteness of a block matrix via the Schur complement.** A block matrix with a positive definite top-left block and a positive
+definite Schur complement is positive definite. This is the one-step
+induction step of Sylvester's criterion, stated for a `1 × 1`
+bottom-right block.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SylvesterCriterion](../../../../sources/v2/MathlibExt.md)

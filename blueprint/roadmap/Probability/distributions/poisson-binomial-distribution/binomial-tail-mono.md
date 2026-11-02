@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ProbabilityTheory.binomialTail_mono
+---
+
+# Binomial tail monotonicity
+
+**Binomial tail monotonicity**: for `0 ≤ p ≤ q ≤ 1`,
+`∑_{k ≤ j ≤ n} C(n, j) p^j (1 - p)^{n - j} ≤ ∑_{k ≤ j ≤ n} C(n, j) q^j (1 - q)^{n - j}`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Distributions.PoissonBinomial](../../../../sources/v2/MathlibExt.md)

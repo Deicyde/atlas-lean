@@ -1,0 +1,52 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Karp.SSVerify.run
+---
+
+# The SUBSET-SUM verifier machine
+
+**The SUBSET-SUM verifier machine.** Let $x$ and $w$ be lists of bits and $v$ a Boolean, and
+let $S$ assign stack contents with the bits of $x$ on $X$, the bits of $w$ on $W$ and every other
+stack empty. Started at the start label with internal state $v$ and stacks $S$, the verifier
+program reaches, within $16(|x| + |w| + 1)^3$ steps, a configuration with label $\mathsf{yes}$
+if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise.
+
+## Depends on
+
+- [Stacks of the SUBSET-SUM verifier](k-2.md)
+- [Labels of the SUBSET-SUM verifier](lab-2.md)
+- [The SUBSET-SUM verifier program](prog-2.md)
+- [The SUBSET-SUM verifier](ss-check.md)
+- [Start state of the SUBSET-SUM verifier](start-2.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
+
+## Proof depends on
+
+- [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
+- [Comparing the sum with the target](cmp-run.md)
+- [Cubic bound on the verifier's phase costs](cost-le.md)
+- [Decoding a SUBSET-SUM instance](decode-ss.md)
+- [Canonical binary strings are those not ending in zero](encode-nat-decode-nat-iff.md)
+- [Moving the final sum for the comparison](fmove-run.md)
+- [Whether a bit string ends in false](last-f.md)
+- [The summing loop of the SUBSET-SUM verifier](loop-run.md)
+- [Parsing number blocks, with fuel](nums-aux.md)
+- [Numbers chosen by a mask](pick.md)
+- [Stack contents of the SUBSET-SUM verifier](st.md)
+- [The verifier rejects an unterminated target block](tgt-fail.md)
+- [Reading the target block](tgt-run.md)
+- [The binary code of natural numbers is injective](../../cook-levin/polynomial-time-verifier-for-sat/part-04/encode-nat-inj.md)
+- [Decoding a prefix-coded natural number](../../cook-levin/binary-encoding-of-cnf-formulas/decode-nat-prefix.md)
+- [Prefix-free code of a natural number](../../cook-levin/binary-encoding-of-cnf-formulas/encode-nat-prefix.md)
+- [Parsing a self-delimiting block](../../cook-levin/binary-encoding-of-cnf-formulas/undelimit-eq-some-iff.md)
+- [Self-delimiting form of a bitstring](../../../complexity-classes/the-classes-p-np-and-conp/delimit.md)
+- [Parsing one self-delimiting block](../../../complexity-classes/the-classes-p-np-and-conp/undelimit.md)
+- [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSumVerify](../../../../../sources/v2/CSLibExt.md)

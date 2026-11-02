@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.CTL.Formula.forallFinally
+---
+
+# The CTL operator AF (inevitably)
+
+**The CTL operator AF (inevitably).** `AF φ`: every maximal path reaches a state satisfying `φ`, as
+`A[⊤ U φ]`.
+
+## Depends on
+
+- [CTL formulas](formula.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Logics.CTL.Basic](../../../../sources/v2/CSLibExt.md)

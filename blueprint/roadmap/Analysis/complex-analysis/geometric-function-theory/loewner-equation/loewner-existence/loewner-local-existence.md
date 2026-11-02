@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Local existence for the chordal Loewner equation
+
+**Local existence for the chordal Loewner equation**: for continuous `W` and `Im z > 0` there
+are `ε > 0` and `g` with `g 0 = z`, `ġ(t) = 2 / (g(t) - W_t)` on `[0, ε]` (one-sided derivatives
+at the endpoints), and `g(t) ∈ ℍ` on `[0, ε]` (Lawler 2005, Chapter 4).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.Loewner.LoewnerExistence](../../../../../../sources/v2/MathlibExt.md)

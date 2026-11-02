@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.Complexity.NPComplete.RomanDomination.romanDomination_npComplete
+---
+
+# ROMAN DOMINATION is NP-complete
+
+**ROMAN DOMINATION is NP-complete.** The decision problem ROMAN DOMINATION belongs to NP, and
+every decision problem in NP reduces to it by a polynomial-time many-one reduction.
+
+## Depends on
+
+- [Polynomial-time many-one reduction](../../cook-levin/binary-encoding-of-cnf-formulas/poly-many-one-red.md)
+- [ROMAN DOMINATION as a decision problem](roman-domination-dec.md)
+- [Complexity classes](../../../complexity-classes/the-classes-p-np-and-conp/decision-complexity-class.md)
+- [Decision problems](../../../complexity-classes/the-classes-p-np-and-conp/decision-problem.md)
+- [The complexity class NP](../../../complexity-classes/the-classes-p-np-and-conp/np.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.NPComplete.RomanDominationWanted](../../../../../sources/v2/WantedExt.md)
+- E. J. Cockayne, P. A. Dreyer Jr., S. M. Hedetniemi, and S. T. Hedetniemi, "Roman domination in graphs", Discrete Mathematics 278 (2004), 11-22.

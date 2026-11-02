@@ -1,0 +1,29 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Languages.LambdaCalculus.Stlc.normalizeTm_toTm
+---
+
+# Normalization fixes the terms of normal forms
+
+**Normalization fixes the terms of normal forms.** For every eta-long normal form $n$ of
+type $A$ in context $\Gamma$, normalizing the underlying term of $n$ returns that term
+unchanged.
+
+## Depends on
+
+- [Intrinsically typed terms of the simply typed lambda calculus](../simply-typed-lambda-calculus/tm.md)
+- [Simple types](../simply-typed-lambda-calculus/ty.md)
+- [Typed de Bruijn variables of the simply typed lambda calculus](../simply-typed-lambda-calculus/var.md)
+- [Normalization of terms](normalize-tm.md)
+
+## Proof depends on
+
+- [Normalization by evaluation](normalize-nf.md)
+- [Normal forms are fixed points of normalization](normalize-nf-to-tm.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Languages.LambdaCalculus.DeBruijn.Stlc.NbeCanonical](../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.card_unitaryDivisors
+---
+
+# Number of unitary divisors
+
+**Number of unitary divisors.** A positive integer $n$ with $m$ distinct prime factors has
+exactly $2^m$ unitary divisors.
+
+## Depends on
+
+- [Unitary divisors](../../divisor-totient-functions/part-02/unitary-divisors/unitary-divisors.md)
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.SZumkellerWanted](../../../../../sources/v2/WantedExt.md)
+- Jayanta Kalita and Helen K. Saikia, *A Study on Generalized Zumkeller Numbers*, INTEGERS 24 (2024), Article A95, Lemma 2 (quoting Bege).

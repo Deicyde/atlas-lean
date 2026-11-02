@@ -1,0 +1,27 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: AbsoluteValue.isNonarchimedean_of_natCast_le_one
+---
+
+# Absolute values bounded by one on the natural numbers are nonarchimedean
+
+**Absolute values bounded by one on the natural numbers are nonarchimedean.**
+Let $K$ be a field and $v$ a real-valued absolute value on $K$. If $v(n) \le 1$ for every natural
+number $n$, viewed as the element $n \cdot 1$ of $K$, then $v$ is nonarchimedean:
+$v(x + y) \le \max(v(x), v(y))$ for all $x, y \in K$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Nonarchimedean criterion for absolute values](is-nonarchimedean-iff-nat-cast-le-one.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.AbsoluteValue.Nonarchimedean](../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Section 1.2, backward direction of Lemma 1.4.

@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.primeCounting_lt_div_log_sub_eleven_tenths
+---
+
+# Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function
+
+**Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function.** For every
+real number $x \ge 60184$, the number $\pi(x)$ of primes at most $x$ satisfies
+$\pi(x) < x / (\log x - 1.1)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.PrimeCounting.MandlRefinementsWanted](../../../../../sources/v2/WantedExt.md)
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 3 (`integers-2025-A58-lem-3`).
