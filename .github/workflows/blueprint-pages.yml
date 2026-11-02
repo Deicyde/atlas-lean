@@ -53,7 +53,7 @@ jobs:
   # commit that fails leaves the pin and the published site as they were.
   # Reverting a pin commit doesn't hold the wiki back, since the next run tries
   # the same commit again; disable this workflow to hold it. GitHub schedules
-  # runs only on the default branch, which this branch is.
+  # runs only on the default branch, and only that branch is pinned.
   pick:
     runs-on: ubuntu-latest
     outputs:
@@ -222,7 +222,11 @@ jobs:
 
   pin:
     needs: [pick, build, deploy]
-    if: needs.pick.outputs.new == 'true' && github.ref == 'refs/heads/wiki/autoform-blueprint'
+    # Scheduled runs are on the default branch; the event carries no repository.
+    if: >-
+      needs.pick.outputs.new == 'true' &&
+      (github.event_name == 'schedule' ||
+      github.ref_name == github.event.repository.default_branch)
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -262,7 +266,7 @@ jobs:
             exit 1
           fi
           git commit --quiet -m "Build the site with Autoform ${REF:0:8}"
-          git push --quiet origin HEAD:wiki/autoform-blueprint
+          git push --quiet origin "HEAD:$GITHUB_REF_NAME"
 
   deploy:
     if: >-
