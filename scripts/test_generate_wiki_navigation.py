@@ -88,6 +88,38 @@ class NavigationTests(unittest.TestCase):
         self.assertEqual(topic.title, "Convex hulls")
         self.assertEqual([page.title for page in topic.children], ["Basic", "Graham scan"])
 
+    def test_a_heading_titles_its_page_without_code_marks(self):
+        self.assertEqual(wiki.page_title("Noncrossing partitions of `Fin n`"), "Noncrossing partitions of Fin n")
+        for heading in ("`MathlibExt.SetTheory.Tree.Basic`", "$\\kappa$-Suslin tree; Suslin tree", "lower case", "", "A" * 91):
+            self.assertIsNone(wiki.page_title(heading))
+
+    def test_a_directory_takes_the_heading_of_its_umbrella_module(self):
+        modules = ["Hull/Planar/A", "Hull/Planar/A", "Hull/Planar/B", "Hull/Planar/B", "Hull/Planar", "Hull/Graham", "Hull/Graham"]
+        targets = [_target(index, module=f"CSLibExt/Geometry/{module}") for index, module in enumerate(modules)]
+        with tempfile.TemporaryDirectory() as root:
+            umbrella = Path(root, "CSLibExt/Geometry/Hull/Planar.lean")
+            umbrella.parent.mkdir(parents=True)
+            umbrella.write_text("module\n\n/-!\n# Planar convex hulls\n-/\n")
+            with patch.object(wiki, "ROOT", Path(root)):
+                (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        (topic,) = field.children
+        self.assertEqual([page.title for page in topic.children], ["Planar convex hulls", "Graham"])
+        self.assertEqual([child.title for child in topic.children[0].children], ["Result 4", "A", "B"])
+
+    def test_a_topic_titled_like_its_field_leads_the_field(self):
+        placements = {**TAXONOMY["placements"], "MathlibExt/Geometry/Convexity": {"to": "Geometry/convex", "title": "Convex geometry"}}
+        targets = [_target(index, module=f"MathlibExt/Geometry/{module}") for index, module in enumerate(["Convexity", "Convexity", "Sofa", "Sofa"])]
+        (convex,) = wiki.subject_tree("Geometry", targets, {**TAXONOMY, "placements": placements}).children
+        self.assertEqual([child.title for child in convex.children], ["Result 0", "Result 1", "Moving sofa problem"])
+
+    def test_a_module_page_titled_like_its_topic_leads_the_topic(self):
+        modules = ["Hull/Basic", "Hull/Basic", "Hull/Graham", "Hull/Graham"]
+        targets = [_target(index, module=f"CSLibExt/Geometry/{module}") for index, module in enumerate(modules)]
+        targets[0].module_title = targets[1].module_title = "Convex hulls"
+        (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        (topic,) = field.children
+        self.assertEqual([child.title for child in topic.children], ["Result 0", "Result 1", "Graham"])
+
     def test_an_unplaced_module_is_listed_as_not_yet_classified(self):
         targets = [_target(0, module="MathlibExt/Geometry/NewTopic"), _target(1, module="MathlibExt/Geometry/NewTopic")]
         (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children

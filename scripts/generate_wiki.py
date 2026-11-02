@@ -293,6 +293,12 @@ def module_groups(items: list[Target]) -> list[str] | None:
     return None
 
 
+def module_heading(text: str) -> str:
+    """The `# ` heading of a module's docstring, or "" if it has none."""
+    heading = re.search(r"/-!\s*#[ \t]+([^\n]+)", text)
+    return heading.group(1).removesuffix("-/").strip() if heading else ""
+
+
 def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dict]:
     located = {
         (declaration.path, declaration.line): declaration
@@ -308,8 +314,7 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
         lines = text.splitlines()
         has_sorry = re.search(r"\bsorry\b", without_comments(text)) is not None
         module = relative.with_suffix("").parts
-        heading = re.search(r"/-!\s*#[ \t]+([^\n]+)", text)
-        module_title = heading.group(1).removesuffix("-/").strip() if heading else ""
+        module_title = module_heading(text)
         placed = placement(module, taxonomy["placements"])
         labels = section_labels(lines)
         summary["modules"] += 1
@@ -387,9 +392,12 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
     return targets, summary
 
 
-def readable(title: str) -> bool:
-    """Whether a module docstring's heading can title its page as it stands."""
-    return 0 < len(title) <= 60 and title[0].isupper() and "`" not in title and "$" not in title
+def page_title(heading: str) -> str | None:
+    """A module docstring's heading as a page title, code marks dropped; None if it holds math or a Lean name."""
+    if "$" in heading or re.search(r"`[^`]*\.[^`]*`", heading):
+        return None
+    title = heading.replace("`", "")
+    return title if 0 < len(title) <= 90 and title[0].isupper() else None
 
 
 def directory_pages(targets: list[Target], depth: int) -> list:
@@ -402,21 +410,24 @@ def directory_pages(targets: list[Target], depth: int) -> list:
             node = node["dirs"].setdefault(part, {"dirs": {}, "modules": defaultdict(list)})
         node["modules"][parts[-1]].append(target)
 
-    def build(node: dict) -> list:
-        children: list = [
-            chunk(topic_title(name), slugify(humanize(name)), build(node["dirs"][name])) for name in sorted(node["dirs"])
-        ]
+    def build(node: dict, at: tuple[str, ...]) -> list:
+        children: list = []
+        for name in sorted(node["dirs"]):
+            # As in Mathlib, Foo.lean beside Foo/ introduces the directory: its heading titles the page and its articles lead it.
+            umbrella = (ROOT / Path(*at, name)).with_suffix(".lean")
+            title = page_title(module_heading(umbrella.read_text())) if umbrella.is_file() else None
+            own = node["modules"].pop(name, [])
+            children.append(chunk(title or topic_title(name), slugify(humanize(name)), own + build(node["dirs"][name], (*at, name))))
         for name in sorted(node["modules"]):
             items = node["modules"][name]
             if len(items) == 1:
                 children.append(items[0])
                 continue
-            heading = items[0].module_title
-            title = heading if readable(heading) else topic_title(name)
+            title = page_title(items[0].module_title) or topic_title(name)
             children.append(module_page(title, items, module_groups(items)))
         return children
 
-    return build(root)
+    return build(root, targets[0].module[:depth])
 
 
 def module_page(title: str, items: list[Target], groups: list[str] | None) -> Container:
@@ -446,7 +457,17 @@ def topic_node(title: str, members: dict[str, list[Target]]) -> Container | Targ
     if len(children) == 1 and isinstance(children[0], Container):
         children[0].title, children[0].slug = title, slugify(title)
         return children[0]
-    return chunk(title, slugify(title), children)
+    return chunk(title, slugify(title), namesake_first(title, children))
+
+
+def same_title(a: str, b: str) -> bool:
+    return a.replace("–", "-").casefold() == b.replace("–", "-").casefold()
+
+
+def namesake_first(title: str, children: list) -> list:
+    """A child page titled like its parent is the parent's own material: its children lead the parent's."""
+    own = [node for node in children if isinstance(node, Container) and same_title(node.title, title)]
+    return [child for node in own for child in node.children] + [node for node in children if all(node is not other for other in own)]
 
 
 def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Container:
@@ -466,7 +487,7 @@ def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Contain
         at[to.split("/", 1)[1]].append(topic_node(title, members))
 
     def page(spec: dict, children: list) -> Container:
-        node = chunk(spec["title"], spec["slug"], children)
+        node = chunk(spec["title"], spec["slug"], namesake_first(spec["title"], children))
         node.prose = spec["description"]
         return node
 
