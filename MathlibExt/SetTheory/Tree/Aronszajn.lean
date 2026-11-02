@@ -19,7 +19,9 @@ public import MathlibExt.SetTheory.Tree.Basic
 -- Source: Lean Definition Library (Airtable) records: Logic 23, Logic 12, Logic 8
 
 /-!
-# $\kappa$-Aronszajn tree; Aronszajn tree; ω₁-tree
+# Aronszajn trees
+
+$\kappa$-Aronszajn trees, Aronszajn trees and $\omega_1$-trees.
 
 ## References
 

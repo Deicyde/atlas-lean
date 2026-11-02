@@ -18,7 +18,7 @@ public import Mathlib.RingTheory.Unramified.Basic
 import Mathlib.RingTheory.Filtration
 
 /-!
-# DVR residue-field functoriality: source-map stage for ATLAS N211
+# Residue-field functoriality for DVR extensions
 
 This file is a prerequisite stage for ATLAS NumberTheoryI item N211,
 Theorem 10.13 (Section 10.2), at atlas-lean revision

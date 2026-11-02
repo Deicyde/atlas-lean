@@ -10,6 +10,13 @@ module
 
 public import MathlibExt.Analysis.Fourier.TorusSobolev.Basic
 
+/-!
+# Explicit extremals and their parameters
+
+Extremal parameters, extremal coefficients and the explicit extremal functions on the
+two-dimensional torus, and when two functions lie in the same extremal orbit.
+-/
+
 @[expose] public section
 
 noncomputable section

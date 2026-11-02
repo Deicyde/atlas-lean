@@ -12,6 +12,13 @@ public import Mathlib.NumberTheory.RamificationInertia.Galois
 public import Mathlib.NumberTheory.RamificationInertia.Unramified
 public import Mathlib.RingTheory.Frobenius
 
+/-!
+# Frobenius elements and complete splitting
+
+At an unramified prime, the Frobenius element generates the decomposition group, and it is
+trivial exactly when the prime splits completely.
+-/
+
 @[expose] public section
 
 open scoped Pointwise

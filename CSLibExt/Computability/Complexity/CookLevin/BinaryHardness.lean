@@ -13,7 +13,7 @@ public import CSLibExt.Computability.Complexity.CookLevin.Hardness
 public import CSLibExt.Computability.SatTimeM
 
 /-!
-# NP-hardness of `Cslib.CookLevin.satDec`
+# NP-hardness of binary-index SAT
 
 `satDec_npHard`: every `L ∈ MetaMathlibExt.ComplexityTheory.NP` polynomial-time many-one reduces to
 `Cslib.CookLevin.satDec`, the binary-index SAT language. This is the hardness half of Cook-Levin

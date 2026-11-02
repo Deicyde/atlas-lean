@@ -15,7 +15,7 @@ import Mathlib.RingTheory.IsAdjoinRoot
 import Mathlib.RingTheory.Smooth.Flat
 
 /-!
-# DVR residue-field fullness: source-map stage for ATLAS N211
+# Fullness of the residue-field functor for DVR extensions
 
 This module is Stage C for ATLAS NumberTheoryI item N211, Theorem 10.13
 (Section 10.2), at atlas-lean revision

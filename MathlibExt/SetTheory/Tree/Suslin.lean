@@ -20,7 +20,9 @@ public import MathlibExt.SetTheory.Tree.Basic
 -- Source: Lean Definition Library (Airtable) records: Logic 24, Logic 19
 
 /-!
-# $\kappa$-Suslin tree; Suslin tree
+# Suslin trees
+
+$\kappa$-Suslin trees and Suslin trees.
 
 ## References
 

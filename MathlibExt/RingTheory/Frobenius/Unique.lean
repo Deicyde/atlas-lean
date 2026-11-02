@@ -10,6 +10,13 @@ module
 
 public import Mathlib.RingTheory.Frobenius
 
+/-!
+# Frobenius elements under trivial inertia
+
+When inertia is trivial, any two arithmetic Frobenius elements coincide, and for a finite group
+acting with finite residue field there is exactly one.
+-/
+
 @[expose] public section
 
 variable {R S G : Type*} [CommRing R] [CommRing S] [Algebra R S]

@@ -20,7 +20,9 @@ public import Mathlib.SetTheory.Ordinal.Rank
 -- Source: Lean Definition Library (Airtable) records: Logic 6, Logic 7, Logic 22, Logic 38
 
 /-!
-# `MathlibExt.SetTheory.Tree.Basic`
+# Trees in set theory
+
+Trees, the levels of a well-founded partial order, and normal trees at a cardinal.
 
 ## References
 

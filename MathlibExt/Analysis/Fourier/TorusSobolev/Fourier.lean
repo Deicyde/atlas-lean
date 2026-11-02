@@ -10,6 +10,14 @@ module
 
 public import MathlibExt.Analysis.Fourier.TorusSobolev.Basic
 
+/-!
+# Fourier coefficients and the lowest-shell witness
+
+Fourier coefficients on the two-dimensional torus, the lowest-shell witness built from the lowest
+frequency shell, its $H^2$ energies, and upper bounds for the conditional supremum and the sharp
+remainder.
+-/
+
 @[expose] public section
 
 noncomputable section
