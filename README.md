@@ -15,7 +15,7 @@
 </p>
 
 > [!TIP]
-> **[Explore ATLAS on the map →](https://deicyde.github.io/atlas-lean/)** Every result in the library on one map,
+> **[Explore ATLAS on the map →](https://deicyde.github.io/atlas-lean/)** Every documented result in the v2 libraries (MathlibExt, CSLibExt, WantedExt) on one map,
 > grouped by area and subject, with its statement, its Lean source and what it uses.
 
 ## Versions
