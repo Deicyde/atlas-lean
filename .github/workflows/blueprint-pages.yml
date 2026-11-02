@@ -143,7 +143,10 @@ jobs:
       # The generator reads the Lean sources through Autoform's index, so a newer
       # Autoform may write some pages differently. A run trying one builds from
       # the pages it writes, and hands them with the new pin to the pin job as a
-      # patch. A page it would delete stops the run for a person to look at.
+      # patch. A page it would delete stops the run for a person to look at, and
+      # so does a changed `lean:` target: lean-dependencies.json names articles
+      # by them, and only the v2 dependencies check can regenerate it, on a pull
+      # request that bumps the pin.
       - name: Regenerate the pages with the newer Autoform
         if: needs.pick.outputs.new == 'true'
         run: |
@@ -152,6 +155,10 @@ jobs:
           git add -A blueprint .github/autoform-ref
           if git diff --cached --no-renames --name-only --diff-filter=D -- blueprint | grep .; then
             echo "::error::Autoform ${AUTOFORM_REF:0:8} would delete the pages listed above."
+            exit 1
+          fi
+          if git diff --cached -U0 -- blueprint/roadmap | grep -E '^[-+]lean:'; then
+            echo "::error::Autoform ${AUTOFORM_REF:0:8} changes the lean: targets above. Bump .github/autoform-ref in a pull request, and apply the patch its v2 dependencies check makes."
             exit 1
           fi
           git diff --cached --binary > "$RUNNER_TEMP/pin.patch"
