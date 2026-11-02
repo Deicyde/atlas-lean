@@ -753,7 +753,8 @@ def generate() -> dict[Path, str]:
         if node is not every_v2:
             render = render_container if isinstance(node, Container) else render_target
             prior = previous(node.path)
-            if prior is None and isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
+            # A declaration keeps its id by Lean name, whatever page held its path before.
+            if isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
                 prior = f"article_id: {known_ids[node.lean]}\n"
             files[node.path] = render(node, prior)
     for library, (targets, summary) in v2_loaded.items():
