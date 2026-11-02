@@ -6,7 +6,17 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -/
 
-/-
+module
+
+public import Batteries.Util.ProofWanted
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.NumberTheory.Harmonic.Defs
+public import Mathlib.Data.Int.ModEq
+public import Mathlib.NumberTheory.Divisors
+public import Mathlib.Data.Nat.GCD.Basic
+public import MathlibExt.NumberTheory.CoveringSystem
+
+/-!
 # A question of Erdős and Graham on covering systems
 
 Statement from Sarosh Adenwalla, "A Question of Erdős
@@ -38,15 +48,6 @@ which are defined in the extracted statements
 and Lemma 3.1's conclusion are also garbled in the
 extraction).
 -/
-module
-
-public import Batteries.Util.ProofWanted
-public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-public import Mathlib.NumberTheory.Harmonic.Defs
-public import Mathlib.Data.Int.ModEq
-public import Mathlib.NumberTheory.Divisors
-public import Mathlib.Data.Nat.GCD.Basic
-public import MathlibExt.NumberTheory.CoveringSystem
 
 set_option autoImplicit false
 

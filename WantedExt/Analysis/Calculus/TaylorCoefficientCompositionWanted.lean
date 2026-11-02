@@ -15,6 +15,13 @@ public import Mathlib.NumberTheory.Bernoulli
 public import Mathlib.NumberTheory.LSeries.RiemannZeta
 public import MathlibExt.NumberTheory.MultipleZeta.Series
 
+/-!
+# Faà di Bruno's formula and nested sums of reciprocal squares
+
+Faà di Bruno's formula for the Taylor coefficients of a composition, and closed forms for nested
+sums of reciprocal squares and of reciprocal odd squares.
+-/
+
 namespace MetaMathlibExt
 
 @[expose] public section

@@ -22,6 +22,14 @@ public import Mathlib.Data.Fintype.Fin
 public import Mathlib.Data.Int.ModEq
 public import Mathlib.RingTheory.Ideal.Defs
 
+/-!
+# Covering systems
+
+Covering systems of a commutative semiring, finite families of cosets of nonzero proper ideals
+whose union is the whole semiring, and strict covering systems, whose ideals are pairwise
+distinct (the notion Erdős and Graham use).
+-/
+
 @[expose] public section
 
 open Pointwise
