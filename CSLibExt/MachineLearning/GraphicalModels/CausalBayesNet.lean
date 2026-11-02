@@ -227,7 +227,7 @@ theorem sum_filter_joint_eq_cpt_mul [Fintype α] [DecidableEq α] (k : Fin n) (a
   simp only [mul_one] at hQ
   rw [hQ, sum_paVal_intervene]
 
-/-- Adjustment for the direct causes when the table of node `k` gives the value `a` positive
+/-- **Adjustment for the direct causes under table positivity.** Adjustment for the direct causes when the table of node `k` gives the value `a` positive
 probability at every value of the parents. -/
 theorem sum_intervene_joint_mul_of_cpt_ne_zero [Fintype α] [DecidableEq α] (k : Fin n) (a : α)
     (f : (Fin n → α) → ℝ) (hpos : ∀ z, (b.cpt k z).weights a ≠ 0) :

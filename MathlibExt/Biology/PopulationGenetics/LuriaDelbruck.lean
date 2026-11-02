@@ -97,7 +97,7 @@ least `1`, only `k ≤ n` contribute. -/
 noncomputable def ldPmf (m : ℝ) (n : ℕ) : ℝ :=
   ∑ k ∈ range (n + 1), exp (-m) * m ^ k / k.factorial * convPow cloneProb k n
 
-/-- The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`. -/
+/-- **Closed form of the clone-size generating function.** The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`. -/
 noncomputable def clonePgf (z : ℝ) : ℝ :=
   1 + (1 / z - 1) * log (1 - z)
 

@@ -1557,7 +1557,7 @@ private theorem eq_zero_of_pred {Q : Matrix ι ι ℝ} (hQ : ProbabilityTheory.I
   · exact h0
   · exact absurd h0 hab.2.ne'
 
-/-- For an irreducible rate matrix every invariant vector is a multiple of the in-tree weights:
+/-- **Uniqueness in the Markov chain tree theorem.** For an irreducible rate matrix every invariant vector is a multiple of the in-tree weights:
 the stationary law is proportional, at each state, to the weight of the spanning in-trees
 rooted there. -/
 theorem eq_smul_treeWeight_of_vecMul_eq_zero {Q : Matrix ι ι ℝ}

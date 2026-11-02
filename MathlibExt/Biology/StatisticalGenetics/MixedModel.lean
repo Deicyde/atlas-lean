@@ -89,7 +89,7 @@ variable {n p q : Type*} [Fintype n] [DecidableEq n] [Fintype p] [DecidableEq p]
 def phenCov (Z : Matrix n q ℝ) (G : Matrix q q ℝ) (R : Matrix n n ℝ) : Matrix n n ℝ :=
   Z * G * Zᵀ + R
 
-/-- Henderson's mixed-model equations for `y = X b + Z u + e`, `Cov u = G`, `Cov e = R`:
+/-- **Solution of Henderson's mixed-model equations.** Henderson's mixed-model equations for `y = X b + Z u + e`, `Cov u = G`, `Cov e = R`:
 `[Xᵀ R⁻¹ X, Xᵀ R⁻¹ Z; Zᵀ R⁻¹ X, Zᵀ R⁻¹ Z + G⁻¹] [b; u] = [Xᵀ R⁻¹ y; Zᵀ R⁻¹ y]`. -/
 def IsMMESolution (X : Matrix n p ℝ) (Z : Matrix n q ℝ) (G : Matrix q q ℝ) (R : Matrix n n ℝ)
     (y : n → ℝ) (b : p → ℝ) (u : q → ℝ) : Prop :=

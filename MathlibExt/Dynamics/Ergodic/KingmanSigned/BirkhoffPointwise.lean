@@ -552,7 +552,7 @@ theorem fStarLow_ae_eq_fStar (hT : MeasurePreserving T μ μ) (hf : Integrable f
 almost everywhere by `tendsto_birkhoffAverage_ae`). -/
 noncomputable def birkhoffLimit (T : α → α) (f : α → ℝ) (x : α) : ℝ := (fStar T f x).toReal
 
-/-- The Birkhoff averages of an integrable `f` converge a.e. to `birkhoffLimit T f`. -/
+/-- **Birkhoff averages converge almost everywhere to the Birkhoff limit.** The Birkhoff averages of an integrable `f` converge a.e. to `birkhoffLimit T f`. -/
 theorem tendsto_birkhoffAverage_ae (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) :
     ∀ᵐ x ∂μ, Tendsto (fun n => birkhoffAverage ℝ T f n x) atTop (𝓝 (birkhoffLimit T f x)) := by
   filter_upwards [fStarLow_ae_eq_fStar hT hf, fStar_lt_top_ae hT hf, fStarLow_bot_lt_ae hT hf]

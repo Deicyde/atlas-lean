@@ -189,7 +189,7 @@ def singleGain : GainHistory := ⟨2, ![2, 1]⟩
 /-- **Copy-neutral loss of heterozygosity.** Copy-neutral loss of heterozygosity `1 + 1 → 2 + 0`: one copy duplicated, the other lost. -/
 def cnLOH : GainHistory := ⟨2, ![2, 0]⟩
 
-/-- Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`. -/
+/-- **Whole-genome doubling event.** Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`. -/
 def wgd : GainHistory := ⟨2, ![2, 2]⟩
 
 /-- **Single gain** (`2 + 1`): `t = 3 E₂ / (E₁ + 2 E₂)`, for `μ ≠ 0`. -/
