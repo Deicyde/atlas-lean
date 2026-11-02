@@ -90,7 +90,11 @@ class NavigationTests(unittest.TestCase):
 
     def test_a_heading_titles_its_page_without_code_marks(self):
         self.assertEqual(wiki.page_title("Noncrossing partitions of `Fin n`"), "Noncrossing partitions of Fin n")
-        for heading in ("`MathlibExt.SetTheory.Tree.Basic`", "$\\kappa$-Suslin tree; Suslin tree", "lower case", "", "A" * 91):
+        self.assertEqual(wiki.page_title("Graphs on `Fin n`. Paths in `V`"), "Graphs on Fin n. Paths in V")
+        self.assertEqual(wiki.page_title("A" * 90), "A" * 90)
+        self.assertEqual(wiki.page_title("A" * 87 + " `x`"), "A" * 87 + " x")
+        for heading in ("`MathlibExt.SetTheory.Tree.Basic`", "Facts about `Nat.Prime` numbers", "$\\kappa$-Suslin tree; Suslin tree",
+                        "lower case", "", "A" * 91, "A" * 89 + " `x`"):
             self.assertIsNone(wiki.page_title(heading))
 
     def test_a_directory_takes_the_heading_of_its_umbrella_module(self):
@@ -111,6 +115,28 @@ class NavigationTests(unittest.TestCase):
         targets = [_target(index, module=f"MathlibExt/Geometry/{module}") for index, module in enumerate(["Convexity", "Convexity", "Sofa", "Sofa"])]
         (convex,) = wiki.subject_tree("Geometry", targets, {**TAXONOMY, "placements": placements}).children
         self.assertEqual([child.title for child in convex.children], ["Result 0", "Result 1", "Moving sofa problem"])
+
+    def test_a_namesake_too_large_to_lead_its_field_stays_a_page(self):
+        placements = {**TAXONOMY["placements"], "MathlibExt/Geometry/Convexity": {"to": "Geometry/convex", "title": "Convex geometry"}}
+        modules = ["Convexity"] * 25 + ["Sofa", "Sofa"]
+        targets = [_target(index, module=f"MathlibExt/Geometry/{module}") for index, module in enumerate(modules)]
+        (convex,) = wiki.subject_tree("Geometry", targets, {**TAXONOMY, "placements": placements}).children
+        self.assertEqual([child.title for child in convex.children], ["Convex geometry", "Moving sofa problem"])
+
+    def test_a_namesake_from_several_modules_leads_as_a_page_per_module(self):
+        placements = {**TAXONOMY["placements"], **{f"MathlibExt/Geometry/{name}": {"to": "Geometry/convex", "title": "Convex geometry"}
+                                                   for name in ("ConvexA", "ConvexB")}}
+        modules = ["ConvexA", "ConvexA", "ConvexB", "ConvexB", "Sofa", "Sofa"]
+        targets = [_target(index, module=f"MathlibExt/Geometry/{module}") for index, module in enumerate(modules)]
+        targets[0].module_title = targets[1].module_title = "Convex sets"
+        targets[2].module_title = targets[3].module_title = "Convex functions"
+        taxonomy = {**TAXONOMY, "placements": placements}
+        (convex,) = wiki.subject_tree("Geometry", targets, taxonomy).children
+        self.assertEqual([child.title for child in convex.children], ["Convex sets", "Convex functions", "Moving sofa problem"])
+        # A module headed like the field leads it in turn.
+        targets[0].module_title = targets[1].module_title = "Convex geometry"
+        (convex,) = wiki.subject_tree("Geometry", targets, taxonomy).children
+        self.assertEqual([child.title for child in convex.children], ["Result 0", "Result 1", "Convex functions", "Moving sofa problem"])
 
     def test_a_module_page_titled_like_its_topic_leads_the_topic(self):
         modules = ["Hull/Basic", "Hull/Basic", "Hull/Graham", "Hull/Graham"]

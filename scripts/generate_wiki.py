@@ -394,7 +394,7 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
 
 def page_title(heading: str) -> str | None:
     """A module docstring's heading as a page title, code marks dropped; None if it holds math or a Lean name."""
-    if "$" in heading or re.search(r"`[^`]*\.[^`]*`", heading):
+    if "$" in heading or any("." in span for span in re.findall(r"`([^`]*)`", heading)):
         return None
     title = heading.replace("`", "")
     return title if 0 < len(title) <= 90 and title[0].isupper() else None
@@ -464,10 +464,28 @@ def same_title(a: str, b: str) -> bool:
     return a.replace("–", "-").casefold() == b.replace("–", "-").casefold()
 
 
+def module_pieces(page: Container) -> list:
+    """A page's children; for a module page merged from several modules, a page per module, as a directory shows them."""
+    if page.navigation != "module" or not all(isinstance(child, Target) for child in page.children):
+        return page.children
+    modules: dict[tuple[str, ...], list[Target]] = defaultdict(list)
+    for target in page.children:
+        modules[target.module].append(target)
+    if len(modules) == 1:
+        return page.children
+    return [
+        items[0] if len(items) == 1 else module_page(page_title(items[0].module_title) or topic_title(module[-1]), items, module_groups(items))
+        for module, items in modules.items()
+    ]
+
+
 def namesake_first(title: str, children: list) -> list:
-    """A child page titled like its parent is the parent's own material: its children lead the parent's."""
+    """A child page titled like its parent is the parent's own material: its pages lead the parent's, if they fit on it."""
     own = [node for node in children if isinstance(node, Container) and same_title(node.title, title)]
-    return [child for node in own for child in node.children] + [node for node in children if all(node is not other for other in own)]
+    if not own:
+        return children
+    led = [piece for node in own for piece in module_pieces(node)] + [node for node in children if all(node is not other for other in own)]
+    return namesake_first(title, led) if len(led) <= MAX_CHILDREN else children
 
 
 def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Container:
