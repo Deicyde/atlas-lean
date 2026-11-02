@@ -13,6 +13,7 @@ public import Mathlib.Probability.Independence.Basic
 public import Mathlib.Probability.Independence.Integration
 public import Mathlib.Probability.IdentDistrib
 public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+import Mathlib.MeasureTheory.Constructions.Polish.StronglyMeasurable
 
 /-!
 # Wald's equation
@@ -40,6 +41,8 @@ at time `k`, together with identical distribution.
 ## Main results
 
 * `MeasureTheory.wald_equation`: `E[∑_{i < T} Xᵢ] = E[X₀] · E[T]`.
+* `MeasureTheory.wald_integrable_stopped_sum`: the stopped sum is integrable under
+  the same hypotheses, using the existing summable `L¹` series.
 
 ## Proof outline
 
@@ -283,12 +286,35 @@ private theorem aesm_summand
   rw [heq]
   exact hXn_aesm.indicator hset
 
-/-- **Wald's equation.** Let $(\Omega, \mathbb{P})$ be a probability space with a filtration
-$(\mathcal{F}_k)_{k \ge 0}$, and let $X_0, X_1, \dots$ be identically distributed real random
-variables with $\mathbb{E}|X_0| < \infty$. Let $T$ be an $\mathbb{N}$-valued stopping time for
-$(\mathcal{F}_k)$ with $\mathbb{E}[T] < \infty$, and suppose each $X_k$ is independent of
-$\mathcal{F}_k$. Then $\mathbb{E}\big[\sum_{i < T} X_i\big] =
-\mathbb{E}[X_0] \cdot \mathbb{E}[T]$. -/
+/-- Under Wald's hypotheses, the stopped sum is integrable. This reuses
+Wald's summable `L¹` series and applies Mathlib's sum measurability and norm bound. -/
+theorem wald_integrable_stopped_sum
+    {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]
+    {X : ℕ → Ω → ℝ}
+    (hX_iid : ∀ i j, IdentDistrib (X i) (X j) μ μ)
+    (hX_int : Integrable (X 0) μ)
+    {f : Filtration ℕ m} {T : Ω → ℕ}
+    (hT : IsStoppingTime f (fun ω => (T ω : WithTop ℕ)))
+    (hXf : ∀ k, Indep (MeasurableSpace.comap (X k) inferInstance) (f k) μ)
+    (hT_int : Integrable (fun ω => (T ω : ℝ)) μ) :
+    Integrable (fun ω => ∑ i ∈ Finset.range (T ω), X i ω) μ := by
+  have hT_meas := measurable_of_isStoppingTime hT
+  have hmeas := fun n => aesm_summand hX_iid hX_int hT_meas n
+  have hsum := summability_condition hX_int hX_iid hT hXf hT_int
+  have hint : Integrable (fun ω => ∑' n, (if n < T ω then X n ω else 0)) μ := by
+    refine ⟨AEStronglyMeasurable.tsum hmeas, ?_⟩
+    rw [hasFiniteIntegral_iff_enorm]
+    apply lt_of_le_of_lt ?_ (lt_top_iff_ne_top.mpr hsum)
+    calc ∫⁻ ω, ‖∑' n, (if n < T ω then X n ω else 0)‖ₑ ∂μ
+        ≤ ∫⁻ ω, ∑' n, ‖(if n < T ω then X n ω else 0)‖ₑ ∂μ :=
+          lintegral_mono (fun _ => enorm_tsum_le_tsum_enorm)
+      _ = _ := lintegral_tsum (fun n => (hmeas n).enorm)
+  simpa only [sum_range_eq_tsum_ite] using hint
+
+/-- **Wald's equation.** Let `Xᵢ` be identically distributed integrable real
+random variables and `T` a stopping time with `E T < ∞`, with each `Xₖ`
+independent of the filtration at time `k`. Then `E[S_T] = E[X₁] · E[T]`,
+where `S_T = ∑_{i < T} Xᵢ`. -/
 theorem wald_equation
     {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]
     {X : ℕ → Ω → ℝ}
