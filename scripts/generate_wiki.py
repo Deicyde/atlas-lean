@@ -759,9 +759,11 @@ def ids_by_lean() -> dict[str, str]:
 
 
 def generate() -> dict[Path, str]:
-    # The archived v1 release is not part of the wiki. Indexing it would make
-    # every v2 name it also declares ambiguous, and those articles unlinked.
-    index = index_project(ROOT, exclude_roots=("v1",))
+    # The archived v1 release and the standalone code under Atlas/ are not part of
+    # the wiki, and both declare many v2 names again. Autoform selects neither
+    # declaration of a name declared twice, so indexing them would leave those
+    # articles unlinked.
+    index = index_project(ROOT, exclude_roots=("v1", "Atlas"))
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
     known_ids = ids_by_lean()
@@ -814,16 +816,11 @@ def generate() -> dict[Path, str]:
                 "declarations are not articles.",
             )
         )
-    statistical_mechanics_files = sum(1 for _ in (ROOT / "Atlas" / "StatisticalMechanics").rglob("*.lean"))
-    fc_files = sum(1 for _ in (ROOT / "Atlas" / "FC").rglob("*.lean"))
     coverage = v2_coverage + [
         ("v2 tests (MathlibExtTest, CSLibExtTest)", "OUT", "Tests and diagnostics rather than mathematical results."),
-        (
-            "Atlas/StatisticalMechanics",
-            "MAPPED",
-            f"{statistical_mechanics_files} standalone Lean files; no roadmap articles yet.",
-        ),
-        ("Atlas/FC", "MAPPED", f"{fc_files} standalone Lean files; no roadmap articles yet."),
+        # No file counts: the Pages build leaves Atlas/ out of its checkout.
+        ("Atlas/StatisticalMechanics", "MAPPED", "Standalone Lean files; no roadmap articles yet."),
+        ("Atlas/FC", "MAPPED", "Standalone Lean files; no roadmap articles yet."),
         ("Atlas/CPythonListsort", "OUT", "Maintained as its own Autoform blueprint inside Atlas/CPythonListsort."),
     ]
     root = ROADMAP / "README.md"

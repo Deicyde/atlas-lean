@@ -5,8 +5,8 @@ on:
     # wiki/** branches deploy a preview from a fork; see the deploy job.
     branches: [main, "wiki/**"]
     # Everything the build reads. generate_wiki.py and Autoform index every
-    # Lean file outside the archived v1, wherever it lives, so a change to any
-    # of them can leave the wiki out of step with the Lean.
+    # Lean file outside the archived v1 and Atlas/, wherever it lives, so a
+    # change to any of them can leave the wiki out of step with the Lean.
     paths:
       - "**/*.lean"
       - "blueprint/**"
@@ -17,6 +17,7 @@ on:
       - ".github/autoform-ref"
       - ".github/workflows/blueprint-pages.yml"
       - "!v1/**"
+      - "!Atlas/**"
   # Every pull request and merge queue group runs, whatever it changes, so the
   # wiki job can be a required check. One that changes none of the paths above
   # skips the build; see the pick job.
@@ -90,7 +91,7 @@ jobs:
         run: |
           git fetch --quiet --depth=1 origin "$BASE"
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
-          if grep -v '^v1/' "$RUNNER_TEMP/changed" | grep -qE \
+          if grep -v -e '^v1/' -e '^Atlas/' "$RUNNER_TEMP/changed" | grep -qE \
             -e '\.lean$' \
             -e '^(blueprint|scripts|theme|hooks)/' \
             -e '^mkdocs\.yml$' \
@@ -113,16 +114,17 @@ jobs:
     env:
       AUTOFORM_REF: ${{ needs.pick.outputs.ref }}
     steps:
-      # The archived v1 release is not part of the wiki, and generate_wiki.py
-      # skips it. Autoform indexes every Lean file under --lean-root, so with v1
-      # checked out each v2 name it also declares would be ambiguous and
-      # autoform check would fail on that article.
+      # The archived v1 release and the standalone code under Atlas/ are not part
+      # of the wiki, and generate_wiki.py skips both. Autoform indexes every Lean
+      # file under --lean-root, so with either checked out each v2 name it also
+      # declares would be ambiguous and autoform check would fail on that article.
       - name: Check out project
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           sparse-checkout: |
             /*
             !/v1/
+            !/Atlas/
           sparse-checkout-cone-mode: false
 
       - name: Install uv
