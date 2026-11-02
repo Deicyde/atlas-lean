@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.PRSModel.h2_nonne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
 
 ## Sources
 

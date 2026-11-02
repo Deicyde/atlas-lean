@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.likelihoodTab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+
+## Proof depends on
+
+- [Tabulated O(K) forward variables](fast-forward-tab.md)
+- [Sum of the entries of a vector](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/sum-vec.md)
 
 ## Sources
 

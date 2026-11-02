@@ -13,7 +13,14 @@ lean: ProbabilityTheory.StickBreakingProcess.IsDirichlet.integral_weight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+- [Random stick-breaking weight](weight.md)
+
+## Proof depends on
+
+- [Mean proportion of a Dirichlet process](integral.md)
+- [Mean of a stick-breaking weight](integral-weight.md)
 
 ## Sources
 

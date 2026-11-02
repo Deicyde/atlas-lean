@@ -16,6 +16,10 @@ locus in each direction (`ν = θ / 2`, `θ = 4 N u`):
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linkage disequilibrium polynomial](diseq-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.geneTreeProb_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
+- [The multispecies coalescent](gene-tree-prob.md)
 
 ## Sources
 

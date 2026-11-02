@@ -14,7 +14,11 @@ exception is not used here: the `aⁿbⁿcⁿ` grammar has `n ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](csgrammar.md)
+
+## Proof depends on
+
+- [Nonterminal grammar symbols](is-nonterminal.md)
 
 ## Sources
 

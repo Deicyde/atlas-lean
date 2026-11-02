@@ -13,6 +13,11 @@ lean: Cslib.Bioinformatics.Indexing.BWT.lf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Count of smaller letters in the FM-index](count-less.md)
+- [Rank of a letter in a prefix of the last column](rank.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Indexing.BWT](../../../../sources/v2/CSLibExt.md)

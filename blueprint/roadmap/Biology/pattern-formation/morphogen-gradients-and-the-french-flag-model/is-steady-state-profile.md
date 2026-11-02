@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.isSteadyState_profile
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded steady state of the synthesis–diffusion–degradation model](is-steady-state.md)
+- [Decay length of a morphogen gradient](decay-length.md)
+- [Steady-state exponential morphogen profile](profile.md)
+
+## Proof depends on
+
+- [Positivity of the decay length](decay-length-pos.md)
+- [Slope of the morphogen profile](has-deriv-at-profile.md)
+- [Source amplitude in terms of the decay length](sqrt-mul-eq.md)
 
 ## Sources
 

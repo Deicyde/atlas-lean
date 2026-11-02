@@ -14,6 +14,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.hasEigenvector_mul
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenvectors of fg map to eigenvectors of gf](has-eigenvector-comp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

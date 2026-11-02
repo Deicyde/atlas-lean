@@ -13,7 +13,15 @@ association statistic is `1 - h² + N h² ℓ̄ / M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Association statistic in the LD-score model](../ld-score-regression/chi-sq.md)
+- [Mean LD score](mean-ldscore.md)
+
+## Proof depends on
+
+- [LD-score regression](../ld-score-regression/integral-chi-sq-of-standardized.md)
+- [LD score of a marker](../ld-score-regression/ld-score.md)
 
 ## Sources
 

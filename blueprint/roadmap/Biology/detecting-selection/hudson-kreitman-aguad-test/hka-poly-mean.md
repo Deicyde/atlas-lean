@@ -14,6 +14,10 @@ mutation rate `θ` (use `f θ` for species `B`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.HKA](../../../../sources/v2/MathlibExt.md)

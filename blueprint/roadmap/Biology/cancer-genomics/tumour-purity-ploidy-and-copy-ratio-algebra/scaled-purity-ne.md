@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.scaledPurity_ne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rescaled purity](scaled-purity.md)
+
+## Proof depends on
+
+- [Positivity of the rescaled purity denominator](scaled-purity-denom-pos.md)
 
 ## Sources
 

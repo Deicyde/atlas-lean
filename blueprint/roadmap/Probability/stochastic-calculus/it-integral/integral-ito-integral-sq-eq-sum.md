@@ -14,7 +14,12 @@ increments `B t - B s` are independent of `F s`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Itô integral of an elementary integrand](ito-integral.md)
+
+## Proof depends on
+
+- [Second moment of a Brownian increment](integral-sub-sq.md)
 
 ## Sources
 

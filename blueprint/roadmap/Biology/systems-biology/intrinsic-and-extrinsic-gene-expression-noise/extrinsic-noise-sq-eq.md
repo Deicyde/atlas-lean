@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Dynamics.ExpressionNoise.IsIdenticalReporterPair.extrin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Identical reporter pair](is-identical-reporter-pair.md)
+- [Extrinsic noise strength](extrinsic-noise-sq.md)
+
+## Proof depends on
+
+- [Covariance of identical reporters equals extrinsic variance](covariance-eq-variance-cond-exp.md)
+- [Identical reporters have equal means](integral-eq.md)
 
 ## Sources
 

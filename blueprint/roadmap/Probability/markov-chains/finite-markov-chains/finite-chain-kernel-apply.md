@@ -13,7 +13,8 @@ transition probabilities into that set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition kernel of a stochastic matrix](finite-chain-kernel.md)
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

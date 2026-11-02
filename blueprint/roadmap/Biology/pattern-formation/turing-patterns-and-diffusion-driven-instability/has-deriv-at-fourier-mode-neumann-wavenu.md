@@ -13,7 +13,8 @@ the Fourier mode with wavenumber `k_n = n π / L` vanishes at `x = 0` and `x = L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complex Fourier mode](fourier-mode.md)
+- [Neumann wavenumber on an interval](neumann-wavenumber.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: ProbabilityTheory.poissonBinomialTail_eq_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+- [Upper tail of the Poisson-binomial law](poisson-binomial-tail.md)
+
+## Proof depends on
+
+- [Poisson-binomial mass vanishes above the number of trials](poisson-binomial-pmf-eq-zero-of-lt.md)
 
 ## Sources
 

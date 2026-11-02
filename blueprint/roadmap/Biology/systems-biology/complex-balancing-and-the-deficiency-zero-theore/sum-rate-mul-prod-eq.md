@@ -13,7 +13,9 @@ the same sum over the sources (for all real `c` and `k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Mass-action reaction rate](rate.md)
 
 ## Sources
 

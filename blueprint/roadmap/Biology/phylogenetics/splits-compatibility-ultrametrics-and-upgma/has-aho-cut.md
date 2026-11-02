@@ -13,7 +13,7 @@ edge across, i.e. the graph is disconnected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted triplet](triplet.md)
 
 ## Sources
 

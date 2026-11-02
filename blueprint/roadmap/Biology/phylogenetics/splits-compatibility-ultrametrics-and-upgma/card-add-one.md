@@ -13,7 +13,11 @@ internal clusters (stated without subtraction).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
+
+## Proof depends on
+
+- [Binary hierarchy restricted below a member is a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-filter.md)
 
 ## Sources
 

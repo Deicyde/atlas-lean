@@ -14,7 +14,12 @@ associations `γ_j`, the Egger slope of `Γ` on `γ` is `β + Cov_v(γ, α) / Va
 
 ## Depends on
 
-This node has no prerequisites.
+- [MR-Egger slope](egger-slope.md)
+- [Weighted covariance](weighted-cov.md)
+
+## Proof depends on
+
+- [Weighted mean](weighted-mean.md)
 
 ## Sources
 

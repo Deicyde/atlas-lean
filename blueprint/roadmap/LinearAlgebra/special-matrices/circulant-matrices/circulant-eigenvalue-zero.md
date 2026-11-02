@@ -12,7 +12,7 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.circulantEigenvalue_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier eigenvalue of a circulant matrix](circulant-eigenvalue.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ geometrically fast in total variation, uniformly in the starting state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total variation distance of functions on a finite set](../mixing-times-of-markov-chains/tv-dist.md)
+
+## Proof depends on
+
+- [Doeblin's argument](tv-dist-pow-le-of-minorization.md)
 
 ## Sources
 

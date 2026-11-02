@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.fastForwardTab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+
+## Proof depends on
+
+- [Li–Stephens emission probability](emit.md)
+- [Tabulated O(K) forward step](fast-step-tab.md)
 
 ## Sources
 

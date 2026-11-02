@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.DriftModel.memLp_freq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Allele frequency of a population in the drift model](freq.md)
+
+## Proof depends on
+
+- [Weighted sum of drift increments is square integrable](mem-lp-sum-incr.md)
 
 ## Sources
 

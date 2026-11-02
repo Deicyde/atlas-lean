@@ -13,7 +13,15 @@ intertwines the rate matrices of the `(n + 1)`- and `n`-coalescents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Restriction matrix on sample partitions](restrict-matrix.md)
+
+## Proof depends on
+
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Blocks of a pulled-back partition](../../../Combinatorics/set-partitions/finite-set-partitions/mem-comap-parts.md)
+- [Partition obtained by merging two blocks](is-merge.md)
 
 ## Sources
 

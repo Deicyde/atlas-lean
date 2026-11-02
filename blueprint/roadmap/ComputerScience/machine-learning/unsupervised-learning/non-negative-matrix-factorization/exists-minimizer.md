@@ -13,7 +13,7 @@ lean: Cslib.MachineLearning.NMF.exists_minimizer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
 
 ## Sources
 

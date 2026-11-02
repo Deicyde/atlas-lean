@@ -12,7 +12,8 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.circulant_mulVec_fourier
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier eigenvalue of a circulant matrix](circulant-eigenvalue.md)
+- [Fourier vector on the integers modulo n](fourier-vec.md)
 
 ## Sources
 

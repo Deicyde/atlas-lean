@@ -14,7 +14,11 @@ that is a neighborhood of `ψ`, and the means are positive and differentiable at
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson log-likelihood of counts](poisson-log-lik.md)
+
+## Proof depends on
+
+- [Derivative of the Poisson log-likelihood](has-fderiv-at-poisson-log-lik.md)
 
 ## Sources
 

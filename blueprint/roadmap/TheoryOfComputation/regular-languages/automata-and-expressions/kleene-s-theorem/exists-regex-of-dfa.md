@@ -14,6 +14,10 @@ lean: Cslib.Language.KleeneConverse.exists_regex_of_dfa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Languages of DFAs on finitely many numbered states are regex-denoted](exists-regex-of-dfa-fin.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.KleeneConverse](../../../../../sources/v2/CSLibExt.md)

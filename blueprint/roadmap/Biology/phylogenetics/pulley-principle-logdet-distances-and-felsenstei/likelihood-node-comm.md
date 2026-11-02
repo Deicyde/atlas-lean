@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinZone.likelihood_node_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Site likelihood of a phylogenetic tree](../felsenstein-s-pruning-algorithm/likelihood.md)
+
+## Proof depends on
+
+- [The site likelihood by pruning](../felsenstein-s-pruning-algorithm/likelihood-eq-sum-prune.md)
+- [Felsenstein's pruning recursion](../felsenstein-s-pruning-algorithm/prune.md)
 
 ## Sources
 

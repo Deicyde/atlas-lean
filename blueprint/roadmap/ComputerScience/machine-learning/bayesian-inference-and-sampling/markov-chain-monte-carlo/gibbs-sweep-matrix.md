@@ -14,6 +14,10 @@ sweep along `l`, as a real matrix.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Systematic-scan Gibbs sampler](gibbs-sweep.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.MCMCConvergence](../../../../../sources/v2/CSLibExt.md)

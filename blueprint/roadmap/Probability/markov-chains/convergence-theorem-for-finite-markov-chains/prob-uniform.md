@@ -12,7 +12,8 @@ lean: StochasticMatrix.prob_uniform
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Uniform Markov chain on finitely many states](uniform.md)
 
 ## Sources
 

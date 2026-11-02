@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.sum_iterate_recombine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+
+## Proof depends on
+
+- [Recombination preserves total gamete frequency](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/sum-recombine.md)
 
 ## Sources
 

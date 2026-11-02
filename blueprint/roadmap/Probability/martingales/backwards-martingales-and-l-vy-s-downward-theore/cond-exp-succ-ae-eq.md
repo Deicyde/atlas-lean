@@ -12,7 +12,7 @@ lean: MeasureTheory.IsBackwardsMartingale.condExp_succ_ae_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backwards martingale](is-backwards-martingale.md)
 
 ## Sources
 

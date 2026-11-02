@@ -13,7 +13,12 @@ injective, and its cokernel has dimension `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Dimension of the cokernel of a unilateral shift power](finrank-quotient-range-shift-clm-pow.md)
+- [Injectivity of powers of the unilateral shift](injective-shift-clm-pow.md)
 
 ## Sources
 

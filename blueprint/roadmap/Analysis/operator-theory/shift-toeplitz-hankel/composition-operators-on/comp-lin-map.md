@@ -11,7 +11,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compLinMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+
+## Proof depends on
+
+- [Precomposition of a sequence with a map](comp-fun.md)
+- [Precomposition preserves square-summability](mem-p-comp-fun.md)
 
 ## Sources
 

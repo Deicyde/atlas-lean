@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.inner_dirichletKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Dirichlet space](dirichlet-eval.md)
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.tendsto_mea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of the loss-of-function count under any demography](law.md)
+- [Mean loss-of-function frequency of a distribution](mean-freq.md)
+
+## Proof depends on
+
+- [Linear mutation–selection recursion](lin-step.md)
+- [Demography-free mean](mean-freq-law.md)
+- [Global attraction](tendsto-lin-step-iterate.md)
 
 ## Sources
 

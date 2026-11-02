@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1Conv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Translation of an $\ell^p$ sequence on the integers](shift-lp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.IntConvolution](../../../../../sources/v2/MathlibExt.md)

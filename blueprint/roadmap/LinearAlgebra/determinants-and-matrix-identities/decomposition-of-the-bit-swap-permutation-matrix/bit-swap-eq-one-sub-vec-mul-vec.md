@@ -12,7 +12,7 @@ lean: Matrix.bitSwap_eq_one_sub_vecMulVec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Antisymmetric two-bit singlet vector](bit-singlet.md)
 
 ## Sources
 

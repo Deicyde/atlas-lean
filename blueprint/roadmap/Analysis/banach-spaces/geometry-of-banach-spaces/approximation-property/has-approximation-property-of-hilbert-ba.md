@@ -14,7 +14,11 @@ property, via the associated Schauder basis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximation property](has-approximation-property.md)
+
+## Proof depends on
+
+- [Banach spaces with a Schauder basis have the approximation property](has-approximation-property-of-schauder-b.md)
 
 ## Sources
 

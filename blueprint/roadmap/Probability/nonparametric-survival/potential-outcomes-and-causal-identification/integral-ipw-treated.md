@@ -14,7 +14,13 @@ outcome `Y₁`, `E[1_T Y / e(X)] = E[Y₁]`, where `Y` is the observed outcome.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong ignorability](strongly-ignorable.md)
+- [Observed outcome from potential outcomes](observed.md)
+- [Propensity score](propensity.md)
+
+## Proof depends on
+
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ and a symmetric square-integrable kernel `h` of degree `m`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoeffding projection of a kernel](hoeffding-proj.md)
+- [U-statistic](u-statistic.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: InformationTheory.DependenceForest.sum_approx
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+- [Chow–Liu product approximation of a joint law](approx.md)
+
+## Proof depends on
+
+- [Atom mass is at most the mass of its image](../conditional-mutual-information/le-map-apply.md)
 
 ## Sources
 

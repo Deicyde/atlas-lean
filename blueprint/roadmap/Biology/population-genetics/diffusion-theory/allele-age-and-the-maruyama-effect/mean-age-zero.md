@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.meanAge_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean age of an allele at a given frequency](mean-age.md)
+
+## Proof depends on
+
+- [Closed-form sojourn density above the current frequency](maruyama-above.md)
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
 
 ## Sources
 

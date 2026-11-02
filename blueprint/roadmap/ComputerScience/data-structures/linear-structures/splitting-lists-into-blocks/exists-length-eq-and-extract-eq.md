@@ -14,6 +14,11 @@ lean: List.exists_length_eq_and_extract_eq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extracting a member from a uniform-width concatenation](extract-flat-map-range.md)
+- [Length of a concatenation of equal-length lists](length-flat-map-range.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.List.SplitLengths](../../../../../sources/v2/MathlibExt.md)

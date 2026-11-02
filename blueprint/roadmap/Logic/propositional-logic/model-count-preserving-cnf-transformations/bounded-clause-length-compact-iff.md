@@ -12,7 +12,9 @@ lean: Cslib.Logic.PL.CNF.boundedClauseLength_compact_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+- [Exact variable compaction of a CNF formula](compact.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
 
 ## Sources
 

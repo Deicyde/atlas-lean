@@ -13,7 +13,13 @@ most `M ^ 2 / (1 + N ^ 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+- [Membership in the Rellich ball via partial sums](mem-rellich-ball.md)
+- [Rellich weight](rellich-weight.md)
+
+## Proof depends on
+
+- [Tail norm identity for $\ell^2$ truncation](norm-sub-lp-trunc-sq-eq.md)
 
 ## Sources
 

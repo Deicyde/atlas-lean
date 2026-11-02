@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isDetailedBalance_f81R
 
 ## Depends on
 
-This node has no prerequisites.
+- [F81 rate matrix](f81-rate.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
+
+## Proof depends on
+
+- [GTR is reversible](is-detailed-balance-gtr-rate.md)
 
 ## Sources
 

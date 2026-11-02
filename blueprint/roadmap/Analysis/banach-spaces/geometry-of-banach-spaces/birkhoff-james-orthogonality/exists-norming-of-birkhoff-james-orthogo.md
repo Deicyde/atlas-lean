@@ -15,7 +15,11 @@ supplies an annihilating norming functional.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
+
+## Proof depends on
+
+- [Norm-one annihilating functional at positive distance](../../duality-and-weak-topologies/part-01/hahn-banach-distance-formula/exists-annihilating-norm-one.md)
 
 ## Sources
 

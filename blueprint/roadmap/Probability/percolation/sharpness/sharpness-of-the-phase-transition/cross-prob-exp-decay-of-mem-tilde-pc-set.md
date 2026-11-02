@@ -15,6 +15,10 @@ admitting a finite `S ∋ 0` with `φ_p(S) < 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential decay below `p̃_c`](../exponential-decay-below-the-critical-point/cross-prob-exp-decay-of-phi-lt-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.SharpnessTheorem](../../../../../sources/v2/MathlibExt.md)

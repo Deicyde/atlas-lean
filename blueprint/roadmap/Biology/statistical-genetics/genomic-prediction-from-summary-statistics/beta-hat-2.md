@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.StratifiedModel.b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stratified LD-score model](stratified-model.md)
+
+## Proof depends on
+
+- [Phenotype in the stratified LD-score model](pheno.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ Wiener's integration-by-parts expression `g t B t - g 0 B 0 - ∫_0^t g'(u) B u 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Left-point step approximation of a deterministic integrand](riemann.md)
+
+## Proof depends on
+
+- [Itô integral of a Riemann step approximation](ito-integral-riemann.md)
+- [Riemann–Stieltjes integration by parts, uniform partitions](tendsto-sum-mul-sub-uniform.md)
 
 ## Sources
 

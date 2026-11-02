@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.legendreTransform_extendedLogMGF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
+
+## Proof depends on
+
+- [Extended log moment vanishes at zero](extended-log-mgfvec-zero.md)
+- [Fenchel–Young inequality for the Legendre transform](../legendre-transform/le-legendre-transform.md)
 
 ## Sources
 

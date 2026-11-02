@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.GraphicalModels.condIndep_coe_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional independence for a finite weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/cond-indep.md)
+- [Marginal of a weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal.md)
 
 ## Sources
 

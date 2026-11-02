@@ -12,7 +12,12 @@ lean: Cslib.OutputReachability.runs_iff_iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded run from an input's initial state](runs.md)
+- [Input-initialized iteration with absorbing halting](run.md)
+
+## Proof depends on
+
+- [Characterization of output reachability by iterates](reaches-output-iff-iterate.md)
 
 ## Sources
 

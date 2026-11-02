@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.prop_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
 
 ## Sources
 

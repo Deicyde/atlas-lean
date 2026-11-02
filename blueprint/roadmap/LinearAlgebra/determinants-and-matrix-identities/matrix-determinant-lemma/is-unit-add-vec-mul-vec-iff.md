@@ -15,6 +15,10 @@ term is a unit; no invertibility hypothesis on `A` is needed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Matrix determinant lemma without invertibility](det-add-vec-mul-vec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.DeterminantLemma](../../../../sources/v2/MathlibExt.md)

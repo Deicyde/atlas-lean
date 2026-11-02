@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.totalLength
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
 
 ## Sources
 

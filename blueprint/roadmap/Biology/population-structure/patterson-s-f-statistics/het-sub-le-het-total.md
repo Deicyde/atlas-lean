@@ -13,7 +13,13 @@ heterozygosity, `H_S ≤ H_T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean within-subpopulation heterozygosity](het-sub.md)
+- [Total heterozygosity of the pooled population](het-total.md)
+
+## Proof depends on
+
+- [Mean allele frequency of a subdivided population](mean-freq.md)
+- [Wahlund identity](wahlund.md)
 
 ## Sources
 

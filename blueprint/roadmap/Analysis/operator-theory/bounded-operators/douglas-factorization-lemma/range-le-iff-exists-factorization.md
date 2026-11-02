@@ -15,6 +15,11 @@ bounded `C`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Canonical factor in Douglas' lemma](douglas-factor.md)
+- [Douglas factor factors A through B](eq-comp-douglas-factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

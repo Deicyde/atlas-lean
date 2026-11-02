@@ -14,7 +14,7 @@ random paths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson process](is-poisson-process.md)
 
 ## Sources
 

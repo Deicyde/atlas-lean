@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.totalValue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knapsack item with weight and value](item.md)
 
 ## Sources
 

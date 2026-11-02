@@ -14,7 +14,12 @@ over positive definite `K` supported on `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix supported on the edges of a graph](is-supported-on.md)
+- [Gaussian log-likelihood of a precision matrix](gauss-log-lik.md)
+
+## Proof depends on
+
+- [Log-determinant trace inequality](../../../LinearAlgebra/positive-definite-matrices/log-det-mul-le-trace.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ background, `∑ q a log (p a / q a)`, is nonpositive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Profile log-odds score of a residue](profile-score.md)
 
 ## Sources
 

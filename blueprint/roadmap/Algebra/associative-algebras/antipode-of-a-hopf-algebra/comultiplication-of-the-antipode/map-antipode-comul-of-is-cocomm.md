@@ -15,6 +15,10 @@ antipode.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comultiplication of the antipode](comul-antipode.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Algebra.HopfAlgebra.ComulAntipode](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,14 @@ both that development and Cochran's theorem reuse one declaration.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](chi-square-measure.md)
+
+## Proof depends on
+
+- [Exponential moments of the law of the square of a standard normal](iio-subset-integrable-exp-set-map-sq-std.md)
+- [A neighbourhood of zero of exponential integrability for the gamma distribution](../gamma-distribution/ioo-subset-interior-integrable-exp-set-g.md)
+- [Moment generating function of the gamma law with shape and rate one half](mgf-gamma-measure-half-half-eq-sqrt.md)
+- [Moment generating function of the law of the square of a standard normal](mgf-id-map-sq-std-gaussian.md)
 
 ## Sources
 

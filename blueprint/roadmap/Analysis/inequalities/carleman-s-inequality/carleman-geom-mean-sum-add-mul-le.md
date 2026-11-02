@@ -14,7 +14,7 @@ partial sum of the terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Geometric mean of the initial terms of a sequence](carleman-geom-mean.md)
 
 ## Sources
 

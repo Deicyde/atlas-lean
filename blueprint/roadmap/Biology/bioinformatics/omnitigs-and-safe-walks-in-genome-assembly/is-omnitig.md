@@ -13,7 +13,12 @@ no path from `v_j = src e_j` to `v_i = src e_i` has first edge `≠ e_j` and las
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed multigraph](multigraph.md)
+
+## Proof depends on
+
+- [Path in a directed multigraph](is-path.md)
+- [Walk in a directed multigraph](is-walk.md)
 
 ## Sources
 

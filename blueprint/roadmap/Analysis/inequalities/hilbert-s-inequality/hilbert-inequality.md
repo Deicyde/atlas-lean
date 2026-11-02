@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.hilbert_inequality
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert kernel](hilbert-kernel.md)
+
+## Proof depends on
+
+- [Nonnegativity of the Hilbert kernel](hilbert-kernel-nonneg.md)
+- [Finite Hilbert inequality](hilbert-inequality-finite.md)
 
 ## Sources
 

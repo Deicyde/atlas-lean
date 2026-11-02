@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm.ContinuousLinearMap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonzero eigenvalues of fg and gf coincide, for endomorphisms](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-of-the-products-ab-and-ba/has-eigenvalue-mul-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../../sources/v2/MathlibExt.md)

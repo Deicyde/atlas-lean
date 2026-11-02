@@ -12,7 +12,9 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.packingTable_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knapsack item with weight and value](item.md)
+- [Packing recurrence for multiple-choice knapsack](best-packing.md)
+- [Bottom-up packing table for multiple-choice knapsack](packing-table.md)
 
 ## Sources
 

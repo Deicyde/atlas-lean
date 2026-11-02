@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.ODE.DirichletSineEigenfunctions.dirichletSine_deriv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
+
+## Proof depends on
+
+- [Pointwise derivative of a Dirichlet sine eigenfunction](dirichlet-sine-has-deriv-at.md)
 
 ## Sources
 

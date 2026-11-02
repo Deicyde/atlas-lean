@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.PiecewiseHist
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
+- [Size function of a piecewise-constant history](size-fn.md)
+- [Expected time to the first coalescence](first-coal-mean.md)
+
+## Proof depends on
+
+- [Tightness of `n ≥ 2K`](exists-ne-first-coal-mean-eq-of-lt.md)
 
 ## Sources
 

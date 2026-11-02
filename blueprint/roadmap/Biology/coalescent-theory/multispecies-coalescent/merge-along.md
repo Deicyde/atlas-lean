@@ -15,7 +15,11 @@ starting lineages this is `blocksAfter` (`mergeAlong_singletons`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+
+## Proof depends on
+
+- [Merging two lineage blocks](../ranked-labeled-histories-of-coalescent-trees/merge-blocks.md)
 
 ## Sources
 

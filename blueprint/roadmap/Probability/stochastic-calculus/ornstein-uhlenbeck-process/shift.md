@@ -12,7 +12,11 @@ lean: ProbabilityTheory.IsStationaryOrnsteinUhlenbeck.shift
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

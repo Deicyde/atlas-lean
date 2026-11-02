@@ -12,7 +12,7 @@ lean: ProbabilityTheory.measurePreserving_snd_sethuramanMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sethuraman's canonical probability space](sethuraman-measure.md)
 
 ## Sources
 

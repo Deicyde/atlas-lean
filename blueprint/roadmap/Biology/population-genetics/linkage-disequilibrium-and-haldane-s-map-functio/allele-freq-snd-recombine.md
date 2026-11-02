@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Linkage.alleleFreqSnd_recombine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Allele frequency at the second locus](allele-freq-snd.md)
+- [Random mating with recombination](recombine.md)
+
+## Proof depends on
+
+- [Allele frequency at the first locus](allele-freq-fst.md)
 
 ## Sources
 

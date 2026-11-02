@@ -14,6 +14,10 @@ lean: StatMech.Universality.measurableSet_overlapConnectionEvent
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Measurability of connection inside a set](../../russo-seymour-welsh-theory/defs/measurable-set-connected-within.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.Universality.RSWStrip](../../../../../../sources/v2/MathlibExt.md)

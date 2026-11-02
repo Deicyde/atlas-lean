@@ -12,7 +12,11 @@ lineage labels): the ranked labeled history in the sense of Edwards (1970).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](ranked-history.md)
+
+## Proof depends on
+
+- [Ancestral partitions along a history, indexed by lineage label](blocks-of.md)
 
 ## Sources
 

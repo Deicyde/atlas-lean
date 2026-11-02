@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.genotypicValue_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Average effect of an allele](avg-effect.md)
+- [Dominance deviation of a genotype](dom-dev.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ a collider (a chain or a fork) and `m ∈ Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](edge.md)
+- [Descendant relation in a Bayesian network](is-descendant.md)
 
 ## Sources
 

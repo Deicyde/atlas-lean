@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Haldane.tendsto_survivalProb_div
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's survival probability of a mutant](survival-prob.md)
+
+## Proof depends on
+
+- [Haldane's equation for the survival probability](one-sub-survival-prob.md)
+- [Survival probability is less than one](survival-prob-lt-one.md)
+- [Beneficial mutant survives with positive probability](survival-prob-pos.md)
 
 ## Sources
 

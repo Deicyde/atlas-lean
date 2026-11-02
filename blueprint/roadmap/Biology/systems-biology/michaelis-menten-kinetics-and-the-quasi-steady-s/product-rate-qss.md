@@ -13,7 +13,9 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.productRate_qss
 
 ## Depends on
 
-This node has no prerequisites.
+- [Michaelis constant](michaelis-constant.md)
+- [Michaelis–Menten rate law](mm-rate.md)
+- [Quasi-steady-state value of the complex](qss-complex.md)
 
 ## Sources
 

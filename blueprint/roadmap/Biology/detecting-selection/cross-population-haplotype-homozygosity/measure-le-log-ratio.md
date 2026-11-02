@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.mea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exchangeable pair of statistics](is-exchangeable-pair.md)
+
+## Proof depends on
+
+- [Exchangeability is preserved by a common measurable map](map-comp.md)
+- [Equal tails of the difference of an exchangeable pair](measure-le-sub.md)
 
 ## Sources
 

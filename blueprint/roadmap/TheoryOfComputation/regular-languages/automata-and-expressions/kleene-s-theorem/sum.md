@@ -12,7 +12,12 @@ lean: Cslib.Language.KleeneConverse.IsRegexDenoted.sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Language denoted by a regular expression](is-regex-denoted.md)
+
+## Proof depends on
+
+- [Regex-denoted languages are closed under union](add.md)
+- [The empty language is regex-denoted](zero.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.LinearAlgebra.Matrix.PartialTrace.trace_partialTraceRight_of_tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial trace over the second factor](partial-trace-right.md)
 
 ## Sources
 

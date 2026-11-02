@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.isHilbertSchmidt_hsTr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Truncation of a matrix to its top-left block](hs-trunc.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ version. The decoder must send every admitted target name into the explicit sour
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complete-graph instance of a factored network](../equivalent-presentations-of-finite-tensor-networ/to-instance.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Alphabet padding of a tensor instance](pad.md)
+- [Half-edge factored presentation of a tensor instance](../equivalent-presentations-of-finite-tensor-networ/to-factored.md)
+
+## Proof depends on
+
+- [Membership in default-padded finite tuples](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/mem-pi-finset-on.md)
+- [Finite tuples with prescribed default values](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/pi-finset-on.md)
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
 
 ## Sources
 

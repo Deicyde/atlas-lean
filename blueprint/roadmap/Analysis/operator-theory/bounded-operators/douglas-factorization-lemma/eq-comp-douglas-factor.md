@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DouglasLemma.eq_comp_douglasFactor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical factor in Douglas' lemma](douglas-factor.md)
+
+## Proof depends on
+
+- [Douglas factor gives a preimage under B](apply-douglas-factor.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.genEigenspaceCompMap
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized eigenspace of fg maps into that of gf](maps-to-gen-eigenspace-comp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

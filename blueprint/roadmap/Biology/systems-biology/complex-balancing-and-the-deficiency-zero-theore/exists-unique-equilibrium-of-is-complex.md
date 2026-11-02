@@ -15,7 +15,16 @@ positive equilibrium. Source: Horn & Jackson (1972); Feinberg (2019), ch. 15.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Mass-action vector field](mass-action-field.md)
+- [Stoichiometric subspace](stoichiometric-subspace.md)
+
+## Proof depends on
+
+- [Horn–Jackson: the positive equilibria](positive-equilibria-eq.md)
+- [Birch's theorem, uniqueness](eq-of-sub-mem-log-orthogonal.md)
+- [Birch's theorem, existence](exists-pos-sub-mem-log-orthogonal.md)
 
 ## Sources
 

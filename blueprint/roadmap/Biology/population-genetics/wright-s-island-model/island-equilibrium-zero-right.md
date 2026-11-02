@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.IslandModel.islandEquilibrium_zero_r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium $F_{ST}$ of Wright's island model](island-equilibrium.md)
 
 ## Sources
 

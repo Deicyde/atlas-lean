@@ -13,7 +13,13 @@ acid changes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+
+## Proof depends on
+
+- [Codons differing at exactly one position](is-single-change.md)
+- [Codon change consisting of transitions](is-transition-change.md)
+- [Positions at which two codons differ](diff-positions.md)
 
 ## Sources
 

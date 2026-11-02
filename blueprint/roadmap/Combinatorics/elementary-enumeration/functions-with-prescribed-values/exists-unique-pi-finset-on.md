@@ -12,7 +12,11 @@ lean: Fintype.existsUnique_piFinsetOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite tuples with prescribed default values](pi-finset-on.md)
+
+## Proof depends on
+
+- [Membership in default-padded finite tuples](mem-pi-finset-on.md)
 
 ## Sources
 

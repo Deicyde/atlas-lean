@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzOperator_ze
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
 
 ## Sources
 

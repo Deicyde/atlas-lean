@@ -15,6 +15,10 @@ lean: ProbabilityTheory.integral_sq_gammaMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Real moments of the gamma law](integral-rpow-gamma-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GammaMoments](../../../../sources/v2/MathlibExt.md)

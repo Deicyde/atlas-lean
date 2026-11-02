@@ -14,7 +14,13 @@ product of the mean values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+- [Normalized expectation value of an observable](mean-value.md)
+
+## Proof depends on
+
+- [Flipped expectation inner product of a self-adjoint operator](inner-right-of-is-self-adjoint.md)
+- [Expectation inner product of a self-adjoint operator](inner-self-of-is-self-adjoint.md)
 
 ## Sources
 

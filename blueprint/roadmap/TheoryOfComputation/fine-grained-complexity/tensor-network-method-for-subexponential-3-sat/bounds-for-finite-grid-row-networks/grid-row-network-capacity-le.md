@@ -13,7 +13,14 @@ charged at most `2mL` and there are `g` columns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Row network of a grid tensor](../finite-row-networks-for-grid-tensors/grid-row-network.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Membership in the ordered pairs](../integer-valued-factored-tensor-networks/mem-ordered-pairs.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.bergmanEval_eq_tsum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+
+## Proof depends on
+
+- [Bergman kernel](bergman-kernel.md)
 
 ## Sources
 

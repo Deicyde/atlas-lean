@@ -18,6 +18,11 @@ preserves the finite measure `μ` and `X` is a nonnegative integrable subadditiv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrability of Birkhoff averages](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-average-of-measure-p.md)
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Ergodic.KingmanSigned](../../../../sources/v2/MathlibExt.md)

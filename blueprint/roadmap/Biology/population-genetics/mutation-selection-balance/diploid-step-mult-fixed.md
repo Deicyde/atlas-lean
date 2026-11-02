@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.diploidStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [One diploid generation of selection and mutation](diploid-step.md)
+
+## Proof depends on
+
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
+- [Mean fitness under multiplicative fitness](mean-fitness-mult.md)
+- [Loss-of-function frequency after selection](selected.md)
 
 ## Sources
 

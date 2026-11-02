@@ -13,7 +13,11 @@ Rademacher sums is at most `∑ᵢ ‖xᵢ‖²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher sign of a coordinate](rademacher-sign.md)
+
+## Proof depends on
+
+- [Average squared norm of a Rademacher sum](average-rademacher-sq-norm-eq.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Prove that $M_1 \le 2\sqrt{M_0 M_2}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Landau–Kolmogorov inequality](landau-inequality.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Calculus.LandauKolmogorov](../../../../sources/v2/MathlibExt.md)

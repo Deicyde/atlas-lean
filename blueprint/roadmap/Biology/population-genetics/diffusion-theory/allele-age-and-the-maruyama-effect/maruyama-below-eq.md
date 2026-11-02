@@ -13,7 +13,14 @@ on `(0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
+
+## Proof depends on
+
+- [Neutral fixation probability equals the initial frequency](../wright-fisher-diffusion/kimura-fixation-neutral.md)
+- [Denominator of Kimura's formula is nonzero](../wright-fisher-diffusion/one-sub-exp-ne-zero.md)
 
 ## Sources
 

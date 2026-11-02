@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm.ContinuousLinearMap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized eigenspace dimensions agree, for endomorphisms](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-of-the-products-ab-and-ba/finrank-gen-eigenspace-mul-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../../sources/v2/MathlibExt.md)

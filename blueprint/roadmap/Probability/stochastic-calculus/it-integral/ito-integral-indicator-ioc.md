@@ -15,7 +15,16 @@ Section 3.2.A).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Elementary integrands](ito-integral-single.md)
+- [Single-step elementary integrand](single.md)
+- [Elementary integrand as a process](to-process.md)
+- [Process of a single-step elementary integrand](to-process-single.md)
+- [Itô integral agrees with the elementary integral on elementary integrands](ito-integral-to-process-ae-eq.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.colocHypothesis
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
 
 ## Sources
 

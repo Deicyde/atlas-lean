@@ -13,7 +13,14 @@ selection, the returned SIS has the smallest cardinality among the sufficient on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward-selection chain of remaining feature sets](chain.md)
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+
+## Proof depends on
+
+- [Backward-selection chain at a nonempty set](chain-of-nonempty.md)
+- [Backward-selection chain at the empty set](chain-of-not-nonempty.md)
+- [Sets in the backward-selection chain are subsets of the start](subset-of-mem-chain.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.eq_of_displaysTriplet_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cluster system displaying a triplet](displays-triplet.md)
+- [Rooted triplet](triplet.md)
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
 
 ## Sources
 

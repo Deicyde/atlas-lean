@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.norm_fockKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+
+## Proof depends on
+
+- [Squared norm of the Fock kernel](norm-sq-fock-kernel.md)
 
 ## Sources
 

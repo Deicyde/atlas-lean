@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.vecMul_gtrRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+
+## Proof depends on
+
+- [GTR is reversible](is-detailed-balance-gtr-rate.md)
+- [Rows of the GTR rate matrix sum to zero](sum-gtr-rate.md)
+- [Detailed balance implies invariance for the generator](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/vec-mul-eq-zero.md)
 
 ## Sources
 

@@ -12,7 +12,17 @@ lean: Cslib.Bioinformatics.Phylogenetics.AncestralReconstruction.jointLik_pupko
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max-product pruning recursion](max-prune.md)
+- [Pupko's joint reconstruction](pupko.md)
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Weight of a tree labeling](../felsenstein-s-pruning-algorithm/weight.md)
+
+## Proof depends on
+
+- [State maximizing a function](argmax-state.md)
+- [Value at the argmax state is the maximum](sup-eq-argmax-state.md)
+- [The traced labeling attains `maxPrune`](weight-traceback.md)
 
 ## Sources
 

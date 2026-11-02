@@ -14,7 +14,12 @@ one because `G` kills the indicator of `{1, …, n}`; an identity for every real
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tavaré's formula for the number of ancestral lineages](../ancestral-lineage-counting-and-tavar-s-formula/tavare-prob.md)
+
+## Proof depends on
+
+- [Generator of Kingman's block-counting process](../ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Tavaré's formula](../ancestral-lineage-counting-and-tavar-s-formula/exp-block-counting-generator-apply.md)
 
 ## Sources
 

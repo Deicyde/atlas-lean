@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ouStationaryCovariance_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ residue field is finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue field of the completion](completion-residue-field-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FiniteResidueField](../../../../sources/v2/MathlibExt.md)

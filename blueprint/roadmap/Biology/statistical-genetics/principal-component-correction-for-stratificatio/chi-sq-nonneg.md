@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.chiSq_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [EIGENSTRAT association statistic](chi-sq.md)
+
+## Proof depends on
+
+- [Residualized vector after adjustment for a subspace](adjusted.md)
 
 ## Sources
 

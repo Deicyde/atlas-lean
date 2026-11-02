@@ -14,6 +14,10 @@ started from `μ₀`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One generation of the chain on distributions](push-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance](../../../../sources/v2/MathlibExt.md)

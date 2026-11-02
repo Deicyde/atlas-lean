@@ -14,7 +14,11 @@ by `e` times the series of the terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Geometric mean of the initial terms of a sequence](carleman-geom-mean.md)
+
+## Proof depends on
+
+- [Finite Carleman inequality](carleman-geom-mean-sum-le.md)
 
 ## Sources
 

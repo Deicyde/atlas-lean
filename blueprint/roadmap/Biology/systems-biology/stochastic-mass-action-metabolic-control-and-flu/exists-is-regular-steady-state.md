@@ -15,7 +15,8 @@ at enzyme levels `e₀`, the rate laws are continuously differentiable at `s₀`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular steady state of a metabolic network](is-regular-steady-state.md)
+- [Reaction fluxes proportional to enzyme levels](flux.md)
 
 ## Sources
 

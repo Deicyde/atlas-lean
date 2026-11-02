@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.oeUpper
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garwood's exact upper confidence bound](../../../Probability/distributions/poisson-gamma-duality/garwood-upper.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GeneConstraint](../../../../sources/v2/MathlibExt.md)

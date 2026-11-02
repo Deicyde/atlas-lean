@@ -12,7 +12,12 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.abs_integral_truncatedRV_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Truncation is bounded by the absolute cutoff](../kolmogorov-s-three-series-theorem/abs-truncated-rv-le-abs.md)
+- [Integrability of truncated random variables](integrable-truncated-rv.md)
 
 ## Sources
 

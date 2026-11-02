@@ -14,6 +14,11 @@ lean: Cslib.MachineLearning.GBLUP.transpose_mul_add_inv_mul_transpose
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Positive definiteness of the GBLUP matrix](pos-def-mul-transpose-add.md)
+- [The ridge matrix is positive definite](../least-squares-ridge-and-lasso-regression/pos-def-ridge.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Regression.GBLUP](../../../../../sources/v2/CSLibExt.md)

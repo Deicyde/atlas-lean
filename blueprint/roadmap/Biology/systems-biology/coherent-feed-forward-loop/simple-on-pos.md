@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.Dynamics.FeedForwardLoop.simple_on_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simple-regulation target after an ON step](simple-on.md)
+
+## Proof depends on
+
+- [Variation-of-constants solution of a linear relaxation equation](relaxation.md)
+- [Single-input production rate in the logic approximation](simple-gate.md)
 
 ## Sources
 

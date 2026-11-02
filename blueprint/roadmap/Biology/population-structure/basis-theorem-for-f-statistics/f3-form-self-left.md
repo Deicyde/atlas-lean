@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.f3Form_self_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f3 form](f3-form.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: ProbabilityTheory.stickyKernel_exp_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Composition](sticky-kernel-mul.md)
 
 ## Sources
 

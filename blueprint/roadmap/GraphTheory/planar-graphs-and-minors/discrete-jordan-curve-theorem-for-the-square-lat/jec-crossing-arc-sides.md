@@ -14,7 +14,7 @@ overlap separates the left side of `[α, β] × [c, d]` from its right side.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertical overlap crossings separate the sides of a rectangle](../../../Probability/percolation/crossings/box-crossing-property-for-positively-associated/vertical-crossings-separate-the-sides-of-a-recta/crossing-arc-sides.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ has a global minimizer, and it can be taken to be a kernel expansion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel expansion map centered at the sample points](kernel-expansion.md)
+- [Regularized risk in a reproducing kernel Hilbert space](regularized-risk.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.NMF.nonnegRank_le_of_mul_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative rank of a matrix](nonneg-rank.md)
 
 ## Sources
 

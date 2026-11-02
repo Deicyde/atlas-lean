@@ -15,7 +15,7 @@ processes of `u ↦ g (B u)` converge to it in `L²(P ⊗ du)` on `(0, t] × Ω`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left-point step process along a Brownian path](left-point-process.md)
 
 ## Sources
 

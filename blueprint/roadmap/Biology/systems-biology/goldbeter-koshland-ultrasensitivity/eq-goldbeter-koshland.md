@@ -14,7 +14,14 @@ function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Goldbeter–Koshland function](goldbeter-koshland.md)
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
+
+## Proof depends on
+
+- [Goldbeter–Koshland function lies strictly between 0 and 1](goldbeter-koshland-mem-ioo.md)
+- [The Goldbeter–Koshland function is a steady state](rate-ratio-goldbeter-koshland.md)
+- [Rate ratio is strictly increasing in the modified fraction](strict-mono-on-rate-ratio.md)
 
 ## Sources
 

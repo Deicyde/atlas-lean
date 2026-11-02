@@ -11,7 +11,14 @@ lean: Cslib.Language.LinearBoundedAutomaton.tailEncode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell tuple as a grammar symbol](cell-tuple-sym.md)
+- [Tail generated cells of a word](tail-cells.md)
 
 ## Sources
 

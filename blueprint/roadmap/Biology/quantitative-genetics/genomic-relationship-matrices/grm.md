@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.grm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+
+## Proof depends on
+
+- [Genotype of an individual at a biallelic locus](genotype.md)
 
 ## Sources
 

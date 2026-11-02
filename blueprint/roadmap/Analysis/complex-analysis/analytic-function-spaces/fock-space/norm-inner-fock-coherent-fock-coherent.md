@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.norm_inner_fockCoherent_fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coherent state in the Fock space](fock-coherent.md)
+
+## Proof depends on
+
+- [Inner product of two coherent states](inner-fock-coherent-fock-coherent.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: ProbabilityTheory.integral_betaPDFReal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonnegativity of the beta density](beta-pdfreal-nonneg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BetaMoments](../../../../sources/v2/MathlibExt.md)

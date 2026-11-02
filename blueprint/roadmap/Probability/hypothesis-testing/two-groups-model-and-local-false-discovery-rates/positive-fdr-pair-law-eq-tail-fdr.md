@@ -13,7 +13,18 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.positive
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Law of a test's null and rejection pair](pair-law.md)
+- [Tail-area false discovery rate](tail-fdr.md)
+- [Storey's positive false discovery rate](positive-fdr.md)
+
+## Proof depends on
+
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Joint probability of a non-null case in a set](joint-law-alt-prod.md)
+- [Joint probability of a null case in a set](joint-law-null-prod.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+- [Storey's theorem: pFDR is a posterior null probability](positive-fdr-eq.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.bdeScore_eq_of_ref
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered-edge reversal](covered-reversal.md)
+- [BDe network score](bde-score.md)
+
+## Proof depends on
+
+- [Covered-edge reversal preserves the BDe score](bde-score-covered-reversal.md)
 
 ## Sources
 

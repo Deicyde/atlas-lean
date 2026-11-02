@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.le_cramerRateFunction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+
+## Proof depends on
+
+- [Fenchel–Young inequality for the Legendre transform](../legendre-transform/le-legendre-transform.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
 
 ## Sources
 

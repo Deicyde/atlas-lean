@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.BloomFilter.card_unset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits set by the stored hash values](set-bits.md)
+
+## Proof depends on
+
+- [A Bloom filter bit is unset iff no stored hash selects it](not-mem-set-bits-iff.md)
 
 ## Sources
 

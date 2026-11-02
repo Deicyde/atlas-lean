@@ -15,6 +15,10 @@ to the first `N` coordinates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Lp.Compactness](../../../../../sources/v2/MathlibExt.md)

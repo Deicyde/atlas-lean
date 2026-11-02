@@ -13,7 +13,16 @@ including dimension zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+
+## Proof depends on
+
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [Extended log moment of a constant vector](extended-log-mgfvec-const.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
+- [Supremum formula for the Legendre transform](../legendre-transform/legendre-transform-eq-i-sup.md)
+- [Legendre transform of the zero function at the origin](../legendre-transform/legendre-transform-zero.md)
+- [Legendre transform of the zero function away from the origin](../legendre-transform/legendre-transform-zero-of-ne.md)
 
 ## Sources
 

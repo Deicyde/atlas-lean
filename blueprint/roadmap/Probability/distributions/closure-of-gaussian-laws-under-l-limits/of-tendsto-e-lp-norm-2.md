@@ -15,6 +15,10 @@ process and `X n t → Y t` in `L²(P)` for every `t`, then `Y` is a Gaussian pr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Closure of Gaussian laws under `L²` limits](of-tendsto-e-lp-norm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianL2Limit](../../../../sources/v2/MathlibExt.md)

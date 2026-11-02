@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.integral_sub_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+- [Genotype of an individual at a biallelic locus](genotype.md)
+- [Inbreeding coefficient](inbreeding.md)
+- [Kinship coefficient](kinship.md)
+
+## Proof depends on
+
+- [The KING moment](integral-sub-sq.md)
 
 ## Sources
 

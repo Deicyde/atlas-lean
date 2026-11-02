@@ -14,6 +14,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finrank_eigenspace_mul_eq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Geometric multiplicities of fg and gf agree](finrank-eigenspace-comp-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

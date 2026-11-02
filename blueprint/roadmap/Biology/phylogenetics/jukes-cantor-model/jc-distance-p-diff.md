@@ -13,7 +13,12 @@ the expected number of substitutions per site along the branch.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor distance](jc-distance.md)
+- [Probability that the ends of a branch differ](p-diff.md)
+
+## Proof depends on
+
+- [Closed form of the Jukes–Cantor difference probability](p-diff-eq.md)
 
 ## Sources
 

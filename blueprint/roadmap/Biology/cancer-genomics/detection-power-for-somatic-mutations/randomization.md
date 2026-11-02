@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.randomization
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Critical count of the mutation detection test](critical-count.md)
+- [Binomial upper tail probability](upper-tail.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.DetectionPower](../../../../sources/v2/MathlibExt.md)

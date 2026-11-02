@@ -15,6 +15,11 @@ vector `(Xᵢ - X̄)ᵢ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Group mean of observations](group-mean.md)
+- [Gaussian one-way layout](indep-fun-group-mean-residual.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.CochranIndependence](../../../../sources/v2/MathlibExt.md)

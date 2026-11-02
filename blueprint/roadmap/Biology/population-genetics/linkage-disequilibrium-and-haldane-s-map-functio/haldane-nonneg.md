@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Linkage.haldane_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](haldane.md)
 
 ## Sources
 

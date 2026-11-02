@@ -14,7 +14,11 @@ probability `0`); by the pulley principle its position does not matter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+
+## Proof depends on
+
+- [Symmetric two-state model on a branch](two-state.md)
 
 ## Sources
 

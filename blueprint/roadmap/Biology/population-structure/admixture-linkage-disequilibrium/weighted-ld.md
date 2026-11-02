@@ -18,6 +18,12 @@ frequency differences `w = p R - p S` between two reference populations `R` and 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Covariance of unphased diploid genotypes](genotype-cov.md)
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

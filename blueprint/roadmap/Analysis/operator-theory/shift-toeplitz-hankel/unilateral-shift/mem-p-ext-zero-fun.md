@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.memℓp_extZeroFu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extension of a finite tuple by zeroes](ext-zero-fun.md)
 
 ## Sources
 

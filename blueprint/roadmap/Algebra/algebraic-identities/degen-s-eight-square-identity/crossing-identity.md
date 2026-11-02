@@ -12,7 +12,7 @@ lean: Octonion.crossing_identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed structure constant of the eight-square algebra](structure-constant.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.MixedModel.condExp_mixedModel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phenotypic covariance of a linear mixed model](phen-cov.md)
+
+## Proof depends on
+
+- [BLUP as a conditional law](cond-distrib-mixed-model.md)
 
 ## Sources
 

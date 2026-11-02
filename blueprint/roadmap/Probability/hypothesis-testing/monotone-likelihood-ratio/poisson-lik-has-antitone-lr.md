@@ -13,7 +13,8 @@ ratio on `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Antitone likelihood ratio](has-antitone-likelihood-ratio-on.md)
+- [Poisson likelihood](poisson-lik.md)
 
 ## Sources
 

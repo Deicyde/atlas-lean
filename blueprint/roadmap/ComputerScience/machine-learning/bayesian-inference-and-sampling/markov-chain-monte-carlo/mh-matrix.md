@@ -14,6 +14,10 @@ matrix.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Metropolis–Hastings step](mh-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.MCMCConvergence](../../../../../sources/v2/CSLibExt.md)

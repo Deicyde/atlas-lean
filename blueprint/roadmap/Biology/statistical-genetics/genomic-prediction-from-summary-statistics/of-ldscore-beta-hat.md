@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.PRSModel.ofLDScor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Training genotype matrix with orthogonal standardized columns](has-orthogonal-columns.md)
+- [Estimated marker effects](beta-hat.md)
+- [Effect-estimate model derived from the LD-score model](of-ldscore.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Normalized marginal score in the LD-score model](../ld-score-regression/beta-hat.md)
+
+## Proof depends on
+
+- [Phenotype in the LD-score model](../ld-score-regression/pheno.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ rooted there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irreducible rate matrix](is-irreducible.md)
+- [Total weight of spanning in-trees](tree-weight.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [In-tree weights of an irreducible rate matrix are positive](tree-weight-pos.md)
+- [Markov chain tree theorem](tree-weight-vec-mul-eq-zero.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.det_modeMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dispersion polynomial](dispersion-det.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
 
 ## Sources
 

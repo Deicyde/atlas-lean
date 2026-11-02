@@ -13,7 +13,14 @@ stick tends to `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+- [Random stick-breaking weight](weight.md)
+
+## Proof depends on
+
+- [Mean proportion of a Dirichlet process](integral.md)
+- [Random stick-breaking weights sum to one almost surely](ae-has-sum-weight.md)
 
 ## Sources
 

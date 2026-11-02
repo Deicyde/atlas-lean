@@ -14,7 +14,14 @@ example a PSIC-difference bin) such that its likelihood ratio `P_D(v) / P_B(v)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
+- [Naive Bayes posterior probability of damage](posterior.md)
+
+## Proof depends on
+
+- [Log-likelihood ratio of a feature value](log-likelihood-ratio.md)
+- [Naive-Bayes posterior](posterior-eq-sigmoid.md)
+- [Naive Bayes score](score.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.one_sub_smul_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
 
 ## Sources
 

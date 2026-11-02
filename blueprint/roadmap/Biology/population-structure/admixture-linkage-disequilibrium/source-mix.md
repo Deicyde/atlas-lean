@@ -16,6 +16,10 @@ the identities below hold for all reals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli allele frequency](bern-freq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

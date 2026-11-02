@@ -13,7 +13,8 @@ lean: ProbabilityTheory.ElementaryIntegrand.itoIntegral_leftPoint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral of an elementary integrand](../it-integral/ito-integral.md)
+- [Left-point elementary integrand along a Brownian path](left-point.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.dispersionDet_criticalWavenumbe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared critical wavenumber](critical-wavenumber-sq.md)
+- [Dispersion polynomial](dispersion-det.md)
 
 ## Sources
 

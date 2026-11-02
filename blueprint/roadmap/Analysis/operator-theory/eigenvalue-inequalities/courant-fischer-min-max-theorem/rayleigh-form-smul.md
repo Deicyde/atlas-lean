@@ -13,7 +13,7 @@ square of the scalar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rayleigh form of an operator](rayleigh-form.md)
 
 ## Sources
 

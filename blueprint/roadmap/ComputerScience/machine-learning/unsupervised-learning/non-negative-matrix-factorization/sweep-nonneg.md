@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.NMF.sweep_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [One sweep of the Lee–Seung algorithm](sweep.md)
+
+## Proof depends on
+
+- [Lee–Seung multiplicative update of H](update-h.md)
+- [The Lee–Seung H update preserves nonnegativity](update-h-nonneg.md)
+- [The Lee–Seung W update preserves nonnegativity](update-w-nonneg.md)
 
 ## Sources
 

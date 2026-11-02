@@ -16,6 +16,10 @@ otherwise Lean's value `0` is a junk value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hudson's F_ST denominator at one site](hudson-den.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS](../../../../sources/v2/MathlibExt.md)

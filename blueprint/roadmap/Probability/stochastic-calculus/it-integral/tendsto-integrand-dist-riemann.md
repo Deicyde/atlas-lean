@@ -13,7 +13,14 @@ lean: ProbabilityTheory.tendsto_integrandDist_riemann
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left-point step approximation of a deterministic integrand](riemann.md)
+- [Elementary integrand as a process](to-process.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+
+## Proof depends on
+
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand on a partition interval](to-process-eq-of-mem.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ truncation consistency; holds for all real `s`, `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+
+## Proof depends on
+
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Truncation consistency](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/exp-smul-block-counting-generator-cast-l.md)
+- [The block-counting process never gains lineages](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/exp-smul-block-counting-generator-of-lt.md)
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
 
 ## Sources
 

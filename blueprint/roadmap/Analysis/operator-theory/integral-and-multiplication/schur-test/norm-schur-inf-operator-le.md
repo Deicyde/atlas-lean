@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.norm_schurInfOper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur operator on $\ell^2(\mathbb{N})$](schur-inf-operator.md)
+
+## Proof depends on
+
+- [Norm bound for the Schur linear map](norm-schur-inf-lin-map-le.md)
 
 ## Sources
 

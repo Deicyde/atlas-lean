@@ -16,6 +16,10 @@ membership is the usual numerator-denominator criterion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Localization at a height-one prime is a DVR](is-discrete-valuation-ring-of-height-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Valuation.HeightOne](../../../../sources/v2/MathlibExt.md)

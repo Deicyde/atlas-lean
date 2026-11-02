@@ -13,7 +13,15 @@ one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
+- [Species tree with nonnegative branch lengths](nonneg-lengths.md)
+- [The multispecies coalescent](gene-tree-prob.md)
+
+## Proof depends on
+
+- [Total gene-tree probability is one](gene-tree-prob-eq-one.md)
+- [Gene-tree probabilities are nonnegative](gene-tree-prob-nonneg.md)
+- [Additivity](gene-tree-prob-or.md)
 
 ## Sources
 

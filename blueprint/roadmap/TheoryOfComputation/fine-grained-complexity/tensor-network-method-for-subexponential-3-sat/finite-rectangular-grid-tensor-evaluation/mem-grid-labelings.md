@@ -13,7 +13,7 @@ respective finite choice sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed labelings of a finite grid](grid-labelings.md)
 
 ## Sources
 

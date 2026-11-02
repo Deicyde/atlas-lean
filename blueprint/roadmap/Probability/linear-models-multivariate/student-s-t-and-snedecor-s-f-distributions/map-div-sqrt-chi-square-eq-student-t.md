@@ -13,7 +13,7 @@ lean: ProbabilityTheory.NormalTheoryWanted.map_div_sqrt_chiSquare_eq_studentT
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
 
 ## Sources
 

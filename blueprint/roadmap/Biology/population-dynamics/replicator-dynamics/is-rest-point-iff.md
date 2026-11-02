@@ -13,7 +13,8 @@ then `x` is a rest point iff every strategy has fitness equal to the mean fitnes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rest point of the replicator equation](is-rest-point.md)
+- [Mean fitness of a population state](mean-fitness.md)
 
 ## Sources
 

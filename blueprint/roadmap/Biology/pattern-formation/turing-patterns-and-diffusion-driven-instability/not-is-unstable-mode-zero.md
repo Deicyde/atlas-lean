@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.not_isUnstableMode_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+
+## Proof depends on
+
+- [Determinant of the mode matrix is the dispersion polynomial](det-mode-matrix.md)
+- [Dispersion polynomial](dispersion-det.md)
+- [Instability criterion for a Fourier mode via trace and determinant](is-unstable-mode-iff.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+- [Trace of the mode matrix](trace-mode-matrix.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.sum_filter_joint_eq_cpt_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Joint distribution of a Bayesian network](../bayesian-networks/joint-2.md)
+- [Parent values of a node](pa-val.md)
+
+## Proof depends on
+
+- [The intervention `do(X_k = a)`](intervene.md)
+- [Factorization of a Bayesian network](../bayesian-networks/joint-eq-prod-2.md)
+- [The truncated factorization](joint-intervene.md)
+- [Intervention preserves the law of the parents](sum-pa-val-intervene.md)
 
 ## Sources
 

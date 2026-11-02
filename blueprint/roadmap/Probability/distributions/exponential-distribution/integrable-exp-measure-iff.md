@@ -15,6 +15,10 @@ lean: ProbabilityTheory.integrable_expMeasure_iff
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential density as an indicator on the half-line](gamma-pdfreal-one-eq-indicator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

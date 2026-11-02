@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem.posSemidef_kerne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel Gram matrix](kernel-gram.md)
 
 ## Sources
 

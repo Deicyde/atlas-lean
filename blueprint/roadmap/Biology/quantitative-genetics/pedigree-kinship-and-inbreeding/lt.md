@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.IsAncestor.lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestor relation in a pedigree](is-ancestor.md)
+
+## Proof depends on
+
+- [Parent relation in a pedigree](is-parent.md)
 
 ## Sources
 

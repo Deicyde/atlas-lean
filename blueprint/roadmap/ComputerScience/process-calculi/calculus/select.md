@@ -12,7 +12,7 @@ guarded process. Transitivity handles nested sums.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Processes of the π-calculus](proc.md)
 
 ## Sources
 

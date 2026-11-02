@@ -16,7 +16,18 @@ of patterns supporting the wrong split `AC | BD` exceeds that of the true split 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected frequency of patterns supporting a split](split-freq.md)
+
+## Proof depends on
+
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Site likelihood of a phylogenetic tree](../felsenstein-s-pruning-algorithm/likelihood.md)
+- [The site likelihood by pruning](../felsenstein-s-pruning-algorithm/likelihood-eq-sum-prune.md)
+- [Felsenstein's pruning recursion](../felsenstein-s-pruning-algorithm/prune.md)
+- [Site pattern supporting a split](supports.md)
+- [Probability of a site pattern on a quartet](pattern-prob.md)
+- [Leaf weights of a site pattern](site-obs.md)
+- [Symmetric two-state model on a branch](two-state.md)
 
 ## Sources
 

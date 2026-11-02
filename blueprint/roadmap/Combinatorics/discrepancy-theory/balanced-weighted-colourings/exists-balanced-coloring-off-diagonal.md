@@ -16,6 +16,10 @@ are unrestricted and ignored.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Balanced coloring of a weighted symmetric matrix](exists-balanced-coloring.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.WeightedColoring](../../../../sources/v2/MathlibExt.md)

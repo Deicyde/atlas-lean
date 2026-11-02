@@ -14,7 +14,14 @@ real `q₁`; it is a variance for `0 ≤ q₁ ≤ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive genetic variance](add-var.md)
+- [Allele frequencies at a biallelic locus](biallelic-freq.md)
+- [Genotypic values at a biallelic locus on Falconer's scale](biallelic-value.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
 
 ## Sources
 

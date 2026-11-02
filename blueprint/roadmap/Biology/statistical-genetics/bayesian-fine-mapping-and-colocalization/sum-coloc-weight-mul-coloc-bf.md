@@ -13,7 +13,12 @@ weight times Bayes factor over each hypothesis equals its closed form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
+- [Unnormalized colocalization configuration weight](weight.md)
+- [Bayes factor of a colocalization configuration](coloc-bf.md)
+- [Closed-form colocalization hypothesis scores](coloc-closed-form.md)
+- [Colocalization hypothesis of a causal configuration](coloc-hypothesis-2.md)
 
 ## Sources
 

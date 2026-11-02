@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.finalCopies_p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
+- [Number of amplified copies](amplified.md)
+- [Copy number after a copy-number event](final-copies.md)
 
 ## Sources
 

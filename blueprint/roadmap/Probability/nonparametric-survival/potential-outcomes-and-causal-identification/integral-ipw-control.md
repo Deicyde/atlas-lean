@@ -13,7 +13,13 @@ for `Y₀`, `E[1_{Tᶜ} Y / (1 - e(X))] = E[Y₀]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong ignorability](strongly-ignorable.md)
+- [Observed outcome from potential outcomes](observed.md)
+- [Propensity score](propensity.md)
+
+## Proof depends on
+
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
 
 ## Sources
 

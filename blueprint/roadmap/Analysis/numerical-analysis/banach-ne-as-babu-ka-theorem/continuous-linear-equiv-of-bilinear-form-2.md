@@ -12,7 +12,9 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.continuousLinearE
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+- [Banach–Nečas–Babuška theorem](continuous-linear-equiv-of-bilinear-form.md)
 
 ## Sources
 

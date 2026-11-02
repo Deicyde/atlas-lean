@@ -13,7 +13,11 @@ coefficient maps commute pairwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Lifted coefficient maps commute with the coefficient operator](comp-left-coefficient-operator.md)
 
 ## Sources
 

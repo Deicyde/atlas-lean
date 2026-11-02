@@ -13,7 +13,15 @@ off-diagonal entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ergodic finite Markov chain](is-ergodic.md)
+- [Identity Markov chain](identity.md)
+
+## Proof depends on
+
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+- [Recursive matrix power agrees with the matrix power](mat-pow-eq-pow.md)
+- [Powers of the identity chain are the identity matrix](mat-pow-identity.md)
+- [Underlying matrix of a stochastic matrix](to-matrix.md)
 
 ## Sources
 

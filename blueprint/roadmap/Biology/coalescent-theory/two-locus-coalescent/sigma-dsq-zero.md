@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.sigmaDSq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary standardized linkage disequilibrium $\sigma_d^2$](sigma-dsq.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.tikhonovOper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
 
 ## Sources
 

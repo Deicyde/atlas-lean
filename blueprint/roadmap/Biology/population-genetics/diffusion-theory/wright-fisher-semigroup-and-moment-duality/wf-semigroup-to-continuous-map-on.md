@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
+- [Convergence on polynomials](tendsto-wf-step-pow-floor-to-continuous.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources
 

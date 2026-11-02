@@ -12,7 +12,8 @@ lean: ProbabilityTheory.stickyKernel_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equal-input matrix](equal-input.md)
+- [Sticky kernel](sticky-kernel.md)
 
 ## Sources
 

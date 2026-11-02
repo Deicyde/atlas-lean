@@ -12,7 +12,7 @@ of `v_t` (`k ≥ 0`; the path `[i]` has no edge).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
 
 ## Sources
 

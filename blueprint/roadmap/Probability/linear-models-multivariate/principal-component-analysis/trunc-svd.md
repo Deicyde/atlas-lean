@@ -14,6 +14,10 @@ where `Vₖ` collects the first `k` right singular vectors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Right singular vectors of a matrix](right-singular-basis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.PCA](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ with `‖exp(t A) v‖ ≤ M e^{-α t} ‖v‖` for all `t ≥ 0` and all vector
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-hurwitz.md)
 
 ## Sources
 

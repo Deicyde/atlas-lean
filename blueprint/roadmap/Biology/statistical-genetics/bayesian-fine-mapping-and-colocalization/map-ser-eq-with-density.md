@@ -14,7 +14,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.map_ser_eq_withDensity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of the single-effect regression model](ser-cov.md)
+- [Multivariate Gaussian density function](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [Single-effect regression covariance is positive definite](pos-def-ser-cov.md)
+- [The marginal of a linear-Gaussian model](../../../Probability/distributions/gaussian-conditioning/map-linear-add-of-indep-fun.md)
+- [The multivariate Gaussian density](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-eq-with-density.md)
 
 ## Sources
 

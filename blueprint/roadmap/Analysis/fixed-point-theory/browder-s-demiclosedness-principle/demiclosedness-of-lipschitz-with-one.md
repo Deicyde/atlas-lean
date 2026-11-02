@@ -15,6 +15,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.Demiclosedness.demiclosedness_of_lip
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weakly convergent sequences are norm-bounded](../../hilbert-spaces/opial-property/bdd-above-norm-of-weakly-tendsto.md)
+- [Cross term vanishes under weak convergence](../../hilbert-spaces/opial-property/tendsto-re-inner-sub-of-weakly-tendsto.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Demiclosedness](../../../../sources/v2/MathlibExt.md)

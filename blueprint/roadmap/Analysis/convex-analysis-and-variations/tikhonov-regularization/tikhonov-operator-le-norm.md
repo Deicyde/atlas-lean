@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.tikhonovOper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Real part of the Tikhonov normal operator's quadratic form](re-inner-tikhonov-operator-self.md)
 
 ## Sources
 

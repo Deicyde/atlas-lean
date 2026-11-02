@@ -13,7 +13,11 @@ bounded by `e` times the partial sum of the terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Geometric mean of the initial terms of a sequence](carleman-geom-mean.md)
+
+## Proof depends on
+
+- [Strengthened finite Carleman inequality](carleman-geom-mean-sum-add-mul-le.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ and `x t, y t > 0`, then `t ↦ V(x t, y t)` has derivative `0` at `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First integral of the Lotka–Volterra system](first-integral.md)
 
 ## Sources
 

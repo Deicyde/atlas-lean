@@ -13,7 +13,14 @@ mating, whatever the parental genotype law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deviation from Hardy–Weinberg proportions](hw-deviation.md)
+- [Offspring genotype law under random union of gametes](offspring.md)
+
+## Proof depends on
+
+- [Law of a random gamete](gamete.md)
+- [Allele frequencies are conserved](gamete-offspring.md)
+- [Hardy–Weinberg frequency $p^2$ of the AA homozygote](offspring-true-true.md)
 
 ## Sources
 

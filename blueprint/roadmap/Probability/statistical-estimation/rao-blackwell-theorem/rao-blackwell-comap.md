@@ -16,7 +16,12 @@ same mean as `W`, and for every target `τ θ` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](../sufficient-statistics-and-the-factorization-theo/is-sufficient.md)
+
+## Proof depends on
+
+- [Common conditional expectation under a sufficient σ-algebra](../sufficient-statistics-and-the-factorization-theo/exists-common-cond-exp.md)
+- [Squared-error decomposition](integral-sq-sub-eq-add.md)
 
 ## Sources
 

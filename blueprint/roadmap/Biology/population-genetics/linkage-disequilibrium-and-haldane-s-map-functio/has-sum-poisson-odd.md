@@ -14,7 +14,7 @@ every real `d`; it is a probability for `0 ≤ d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](haldane.md)
 
 ## Sources
 

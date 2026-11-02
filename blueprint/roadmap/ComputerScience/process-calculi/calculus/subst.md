@@ -11,7 +11,12 @@ lean: Cslib.PiCalculus.subst
 
 ## Depends on
 
-This node has no prerequisites.
+- [Channel name in the π-calculus](name.md)
+- [Processes of the π-calculus](proc.md)
+
+## Proof depends on
+
+- [Substitution of a name into a π-calculus process at a cutoff](subst-proc.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcRate_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor rate matrix](jc-rate.md)
 
 ## Sources
 

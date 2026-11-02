@@ -16,6 +16,10 @@ weakly open.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Open unit ball is not weakly open in infinite dimensions](not-is-open-image-ball.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

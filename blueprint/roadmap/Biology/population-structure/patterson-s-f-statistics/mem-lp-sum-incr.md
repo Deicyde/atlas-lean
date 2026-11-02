@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.DriftModel.memLp_sum_inc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
 
 ## Sources
 

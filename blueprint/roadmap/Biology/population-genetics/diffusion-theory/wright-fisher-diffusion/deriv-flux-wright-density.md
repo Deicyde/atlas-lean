@@ -15,7 +15,7 @@ forward (Fokker–Planck) equation `½ (a π)' - b π = 0` with zero probability
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright's stationary density of the Wright–Fisher diffusion](wright-density.md)
 
 ## Sources
 

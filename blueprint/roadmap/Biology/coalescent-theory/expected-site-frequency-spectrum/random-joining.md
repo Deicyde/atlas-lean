@@ -16,6 +16,11 @@ pairs; the process stops once fewer than two blocks remain.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unordered pairs of blocks](block-pairs.md)
+- [Merging two blocks of a block-size list](merge-blocks.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.SiteFrequencySpectrum](../../../../sources/v2/MathlibExt.md)

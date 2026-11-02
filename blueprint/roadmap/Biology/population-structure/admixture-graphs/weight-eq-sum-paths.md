@@ -14,7 +14,16 @@ along the path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Edges of an admixture graph](edge.md)
+- [Probability of a root-ward path in an admixture graph](path-prob.md)
+- [Root-ward paths from a node of an admixture graph](paths.md)
+- [Lineage weight of an edge in an admixture graph](weight.md)
+
+## Proof depends on
+
+- [First-step equation for root-ward paths](paths-eq.md)
+- [First-step recursion for lineage weights](weight-eq.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ whose increments `B t - B s` are independent of `F s`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Elementary integrand as a process](to-process.md)
+
+## Proof depends on
+
+- [Itô isometry, discrete form](integral-ito-integral-sq-eq-sum.md)
+- [Time integral of a squared elementary integrand](integral-to-process-sq.md)
 
 ## Sources
 

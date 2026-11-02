@@ -13,7 +13,16 @@ lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.timing_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
+- [Number of amplified copies](amplified.md)
+- [Expected number of mutations of a given multiplicity](expected-count.md)
+- [Copy number after a copy-number event](final-copies.md)
+
+## Proof depends on
+
+- [Positive copy number after an amplifying event](final-copies-pos.md)
+- [Expected count of mutations on amplified copies](sum-expected-count-amplified.md)
+- [The multiplicity-weighted total is time-invariant](sum-mul-expected-count.md)
 
 ## Sources
 

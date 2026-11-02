@@ -16,6 +16,10 @@ Fourier normalization, the Fourier second moment about zero is `∫ ξ² * ‖�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heisenberg's uncertainty principle](heisenberg-uncertainty-complex.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

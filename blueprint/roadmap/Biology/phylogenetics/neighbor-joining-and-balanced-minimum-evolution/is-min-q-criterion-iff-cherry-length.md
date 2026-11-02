@@ -17,7 +17,14 @@ compare partially resolved trees on all taxa under the original dissimilarity `d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+- [Balanced minimum-evolution length of a cherry tree](cherry-length.md)
+
+## Proof depends on
+
+- [Neighbor joining preserves symmetry and zero diagonal](symm-diag.md)
+- [Minimizing `Q` is minimizing the local star BME length of the join](q-criterion-le-iff-cherry-length-le.md)
 
 ## Sources
 

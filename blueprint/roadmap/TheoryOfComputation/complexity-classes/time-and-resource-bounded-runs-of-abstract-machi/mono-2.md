@@ -12,7 +12,11 @@ lean: Cslib.OutputReachability.Runs.mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded run from an input's initial state](runs.md)
+
+## Proof depends on
+
+- [Monotonicity of output reachability in the bounds](mono.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ result in the ambient space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residual subspace of an isometry](residual-sub.md)
+- [Unitary part of an isometry on its residual subspace](wold-residual-equiv.md)
 
 ## Sources
 

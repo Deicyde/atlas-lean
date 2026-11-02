@@ -12,7 +12,13 @@ lean: ProbabilityTheory.ctmcPath_eq_of_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+
+## Proof depends on
+
+- [Jump times are nondecreasing](ctmc-jump-time-mono.md)
 
 ## Sources
 

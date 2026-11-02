@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.SufficientInputSubsets.exists_isGreedy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy backward-selection rule](is-greedy.md)
 
 ## Sources
 

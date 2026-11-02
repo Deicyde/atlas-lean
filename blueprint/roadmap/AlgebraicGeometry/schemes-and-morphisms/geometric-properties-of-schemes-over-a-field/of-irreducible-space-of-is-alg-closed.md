@@ -15,6 +15,10 @@ irreducible.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Field-with-domain tensor products over an algebraically closed field](../../../RingTheory/algebras-and-differentials/tensor-products-of-reduced-algebras-and-domains/is-domain-of-is-alg-closed-of-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.GeometricallyIrreducible](../../../../sources/v2/MathlibExt.md)

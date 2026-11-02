@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.fastStepTab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+
+## Proof depends on
+
+- [Li–Stephens emission probability](emit.md)
+- [Sum of the entries of a vector](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/sum-vec.md)
 
 ## Sources
 

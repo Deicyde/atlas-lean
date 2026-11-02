@@ -13,7 +13,11 @@ backward equation `q' = d - (b + d) q + b q²` with `q 0 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kendall's extinction probability for the birth–death process](extinction-prob.md)
+
+## Proof depends on
+
+- [Backward Kolmogorov equation for the extinction probability](has-deriv-at-extinction-prob.md)
 
 ## Sources
 

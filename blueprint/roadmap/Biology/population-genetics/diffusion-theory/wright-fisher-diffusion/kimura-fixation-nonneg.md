@@ -13,7 +13,7 @@ selection coefficient `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
 
 ## Sources
 

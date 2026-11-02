@@ -14,7 +14,12 @@ same-gamete terms each contribute `D` and the two cross-gamete terms vanish by i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of unphased diploid genotypes](genotype-cov.md)
+- [Linkage disequilibrium of a two-locus gamete law](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq.md)
+
+## Proof depends on
+
+- [Allele count of a gamete at one locus](allele-count.md)
 
 ## Sources
 

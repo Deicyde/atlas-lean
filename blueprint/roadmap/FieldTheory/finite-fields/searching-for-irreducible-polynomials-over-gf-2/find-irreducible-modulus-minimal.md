@@ -13,7 +13,13 @@ irreducible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exhaustive search for an irreducible binary modulus](find-irreducible-modulus.md)
+- [Monic binary modulus of a fixed-width word](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/monic-modulus.md)
+
+## Proof depends on
+
+- [Exhaustive inverse test for a binary polynomial modulus](passes-inverse-test.md)
+- [Inverse test succeeds exactly for irreducible moduli](passes-inverse-test-iff-irreducible.md)
 
 ## Sources
 

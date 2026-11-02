@@ -13,7 +13,13 @@ double centring of the pairwise-difference matrix, divided by `2 L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Double centring of a square matrix](double-center.md)
+- [Sample covariance of the centred genotype matrix](gen-cov.md)
+- [Number of pairwise differences between samples](pair-diff.md)
+
+## Proof depends on
+
+- [Column-centred genotype matrix](centered.md)
 
 ## Sources
 

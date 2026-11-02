@@ -13,7 +13,13 @@ regulation decay identically after an OFF step: `Z(t) = z₀ e^{-α_z t}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feed-forward loop target after an OFF step](ffl-off.md)
+- [Simple-regulation target after an OFF step](simple-off.md)
+
+## Proof depends on
+
+- [AND-gate production rate in the logic approximation](and-gate.md)
+- [Single-input production rate in the logic approximation](simple-gate.md)
 
 ## Sources
 

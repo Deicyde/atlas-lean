@@ -12,7 +12,12 @@ original, current, head state, and boundary tag.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell symbol of the LBA grammar](cell-sym.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.dirichletEval_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Dirichlet space](dirichlet-eval.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
 
 ## Sources
 

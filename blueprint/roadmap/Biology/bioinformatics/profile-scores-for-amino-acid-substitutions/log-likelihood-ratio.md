@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.logLikelihoodRa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
 
 ## Sources
 

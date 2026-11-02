@@ -13,7 +13,13 @@ converges to `F*` from every initial value `F₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium $F_{ST}$ of Wright's island model](island-equilibrium.md)
+- [Identity-by-descent recursion in Wright's island model](island-step.md)
+
+## Proof depends on
+
+- [Island-model contraction factor lies in (0, 1)](island-factor-mem-ico.md)
+- [Geometric approach to equilibrium](island-step-iterate-sub.md)
 
 ## Sources
 

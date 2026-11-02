@@ -15,7 +15,13 @@ Fokker–Planck equation `½ F'' - σ F' = 0` of the Wright–Fisher diffusion w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability at a point](../wright-fisher-diffusion/has-deriv-at-kimura-fixation.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
 
 ## Sources
 

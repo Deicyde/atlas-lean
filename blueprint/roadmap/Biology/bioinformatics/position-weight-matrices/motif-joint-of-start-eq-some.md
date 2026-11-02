@@ -13,7 +13,15 @@ joint is the prior times the product of `θ (k - j)` inside the window and `q` o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint likelihood of a sequence and a motif occurrence](motif-joint.md)
+
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Site likelihood under a column-independent model](site-lik.md)
+- [Sequence position of a motif column](site-pos.md)
+- [Window of a sequence at a given start](window.md)
+- [Likelihood ratio of a motif window](window-ratio.md)
 
 ## Sources
 

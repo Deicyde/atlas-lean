@@ -14,6 +14,10 @@ or its paternal allele `g.2`, each with probability `1/2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Uniform distribution on a finite type](../../../Probability/distributions/discrete-uniform-distribution/uniform-fintype.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.HardyWeinberg](../../../../sources/v2/MathlibExt.md)

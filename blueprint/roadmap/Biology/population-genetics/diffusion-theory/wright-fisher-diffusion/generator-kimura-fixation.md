@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.generator_kimuraFixation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
+- [Kimura's fixation probability](kimura-fixation.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability as a function](deriv-kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](kimura-slope.md)
 
 ## Sources
 

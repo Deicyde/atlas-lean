@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.PriorWeights.exists_wei
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
 
 ## Sources
 

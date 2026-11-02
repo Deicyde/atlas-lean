@@ -12,7 +12,7 @@ pushing a process under a binder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Channel name in the π-calculus](name.md)
 
 ## Sources
 

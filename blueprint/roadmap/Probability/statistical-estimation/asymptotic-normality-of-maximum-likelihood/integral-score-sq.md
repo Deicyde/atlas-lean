@@ -13,7 +13,9 @@ lean: MathlibExt.Probability.Statistics.MLEAsymptoticNormality.integral_score_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](score.md)
 
 ## Sources
 

@@ -15,6 +15,16 @@ on `[0, t]`, and `0` otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Elementary integrand](elementary-integrand.md)
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Elementary integrand as a process](to-process.md)
+- [Itô-approximable process](is-ito-approximable.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
+- [Function as an element of $L^2$](to-l2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ItoIntegral](../../../../sources/v2/MathlibExt.md)

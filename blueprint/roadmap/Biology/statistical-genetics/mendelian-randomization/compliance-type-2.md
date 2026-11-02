@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.complianceTy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compliance types of Angrist, Imbens and Rubin](compliance-type.md)
 
 ## Sources
 

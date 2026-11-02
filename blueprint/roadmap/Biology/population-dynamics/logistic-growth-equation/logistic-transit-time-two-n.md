@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Dynamics.Logistic.logistic_transitTime_twoN
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit solution of the logistic equation](logistic.md)
+
+## Proof depends on
+
+- [Exact deterministic transit time](logistic-transit-time.md)
 
 ## Sources
 

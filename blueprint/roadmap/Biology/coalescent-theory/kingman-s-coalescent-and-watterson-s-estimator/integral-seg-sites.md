@@ -15,7 +15,12 @@ expectation of a non-integrable function is `0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+- [Total branch length of a coalescent genealogy](total-length.md)
+
+## Proof depends on
+
+- [Expected total branch length of the coalescent](integral-total-length.md)
 
 ## Sources
 

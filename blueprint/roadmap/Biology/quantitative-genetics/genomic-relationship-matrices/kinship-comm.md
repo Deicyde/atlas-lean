@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.kinship_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+- [Kinship coefficient](kinship.md)
+
+## Proof depends on
+
+- [Symmetry of identity by descent](ibd-comm.md)
 
 ## Sources
 

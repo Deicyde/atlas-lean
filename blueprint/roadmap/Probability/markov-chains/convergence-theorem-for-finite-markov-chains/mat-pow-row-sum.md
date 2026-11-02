@@ -13,7 +13,8 @@ stochastic matrix are stochastic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.hasDerivWithinAt_selection
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Sojourn density of the Wright–Fisher diffusion with selection](selection-green.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability at a point](../wright-fisher-diffusion/has-deriv-at-kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
 
 ## Sources
 

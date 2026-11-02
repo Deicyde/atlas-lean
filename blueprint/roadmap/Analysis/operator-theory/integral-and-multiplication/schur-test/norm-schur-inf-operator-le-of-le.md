@@ -13,7 +13,11 @@ then the operator norm is at most `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur operator on $\ell^2(\mathbb{N})$](schur-inf-operator.md)
+
+## Proof depends on
+
+- [Schur's test](norm-schur-inf-operator-le.md)
 
 ## Sources
 

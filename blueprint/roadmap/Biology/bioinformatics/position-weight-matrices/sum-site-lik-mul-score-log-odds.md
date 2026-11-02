@@ -14,7 +14,11 @@ logarithms); it is an expected log-likelihood ratio for a positive background.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Information content of a position weight matrix column](info-content.md)
+- [Log-odds matrix of a site model](log-odds.md)
+- [Score of a site under a position weight matrix](score.md)
+- [Site likelihood under a column-independent model](site-lik.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ product of the tables of the nodes outside `W` on assignments agreeing with `w` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Joint distribution of a Bayesian network](../bayesian-networks/joint-2.md)
+- [Mutilated network of a set intervention](mutilate-set.md)
+- [Parent values of a node](pa-val.md)
+
+## Proof depends on
+
+- [Factorization of a Bayesian network](../bayesian-networks/joint-eq-prod-2.md)
 
 ## Sources
 

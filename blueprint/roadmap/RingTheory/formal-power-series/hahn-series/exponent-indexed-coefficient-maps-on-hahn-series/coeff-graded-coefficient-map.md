@@ -12,7 +12,7 @@ lean: HahnSeries.coeff_gradedCoefficientMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponent-indexed coefficient map on Hahn series](graded-coefficient-map.md)
 
 ## Sources
 

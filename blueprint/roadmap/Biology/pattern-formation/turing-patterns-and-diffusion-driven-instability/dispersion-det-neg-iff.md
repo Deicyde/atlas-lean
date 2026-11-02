@@ -13,7 +13,10 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.dispersionDet_neg_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discriminant of the dispersion polynomial](band-discriminant.md)
+- [Lower end of the unstable wavenumber band](band-lower.md)
+- [Upper end of the unstable wavenumber band](band-upper.md)
+- [Dispersion polynomial](dispersion-det.md)
 
 ## Sources
 

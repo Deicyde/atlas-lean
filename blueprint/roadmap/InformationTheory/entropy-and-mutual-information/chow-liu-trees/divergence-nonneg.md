@@ -13,7 +13,13 @@ lean: InformationTheory.DependenceForest.divergence_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+- [Divergence from the Chow–Liu approximation](divergence.md)
+
+## Proof depends on
+
+- [Chow–Liu approximation as a probability mass function](approx-pmf.md)
+- [Chow–Liu divergence as a Kullback–Leibler divergence](divergence-eq-kl-div.md)
 
 ## Sources
 

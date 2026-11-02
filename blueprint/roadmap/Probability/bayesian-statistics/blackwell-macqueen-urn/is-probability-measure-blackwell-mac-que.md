@@ -12,7 +12,12 @@ lean: ProbabilityTheory.isProbabilityMeasure_blackwellMacQueen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn](blackwell-mac-queen.md)
+
+## Proof depends on
+
+- [Blackwell–MacQueen predictive law is a probability measure](../dirichlet-process/is-probability-measure-polya-urn-predict.md)
+- [Blackwell–MacQueen urn predictive law](../dirichlet-process/polya-urn-predictive.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.kmMeasure_real_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Kaplan–Meier jump at an observation time](km-mass.md)
+- [Kaplan–Meier measure](km-measure.md)
+- [Kaplan–Meier mass after the last observation](km-tail.md)
+
+## Proof depends on
+
+- [Kaplan–Meier jumps are nonnegative](km-mass-nonneg.md)
+- [Leftover Kaplan–Meier mass is nonnegative](km-tail-nonneg.md)
 
 ## Sources
 

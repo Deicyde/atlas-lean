@@ -13,7 +13,11 @@ applied to `massActionField k c` (`hasDerivAt_pseudoHelmholtz`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+
+## Proof depends on
+
+- [Mass-action vector field](mass-action-field.md)
 
 ## Sources
 

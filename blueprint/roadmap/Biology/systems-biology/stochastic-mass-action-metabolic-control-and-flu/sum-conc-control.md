@@ -14,7 +14,13 @@ domain on which the scaled concentration control coefficients have their biologi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular steady state of a metabolic network](is-regular-steady-state.md)
+- [Concentration control coefficient](conc-control.md)
+
+## Proof depends on
+
+- [Reaction fluxes proportional to enzyme levels](flux.md)
+- [Steady-state fluxes along a steady-state map](steady-flux.md)
 
 ## Sources
 

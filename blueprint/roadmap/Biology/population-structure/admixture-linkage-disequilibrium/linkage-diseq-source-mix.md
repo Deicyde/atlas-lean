@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.linkageDiseq_sourceMix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+- [Linkage disequilibrium of a two-locus gamete law](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq.md)
+
+## Proof depends on
+
+- [Bernoulli allele frequency](bern-freq.md)
 
 ## Sources
 

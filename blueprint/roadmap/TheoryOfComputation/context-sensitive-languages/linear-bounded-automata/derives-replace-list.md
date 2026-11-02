@@ -13,7 +13,17 @@ and `(lhs, rhs)` is a rule, then `u` derives `p ++ rhs ++ q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](../context-sensitive-grammars/csgrammar.md)
+- [Derivation in an unrestricted grammar](../context-sensitive-grammars/derives.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+- [The grammar of an LBA](lba-grammar.md)
+
+## Proof depends on
+
+- [Derivations in a string rewriting system](../../undecidable-problems/string-rewriting-systems/derives.md)
+- [Rewriting rules](../../undecidable-problems/string-rewriting-systems/rule.md)
+- [One-step rewriting](../../undecidable-problems/string-rewriting-systems/step.md)
 
 ## Sources
 

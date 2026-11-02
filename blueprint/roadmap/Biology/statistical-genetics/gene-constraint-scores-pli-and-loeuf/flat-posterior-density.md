@@ -15,7 +15,7 @@ holds for every real `E`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson likelihood of an observed count](poisson-lik.md)
 
 ## Sources
 

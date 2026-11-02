@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.psicDifference_eq_log
 
 ## Depends on
 
-This node has no prerequisites.
+- [PSIC score difference of a substitution](psic-difference.md)
+
+## Proof depends on
+
+- [Profile log-odds score of a residue](profile-score.md)
 
 ## Sources
 

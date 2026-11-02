@@ -13,7 +13,12 @@ against Wright's stationary law `Beta(θ₁, θ₂)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
+
+## Proof depends on
+
+- [Integrability of the mutation generator against the Beta density](interval-integrable-mutation-generator-m.md)
+- [Nonnegativity of the beta density](../../../../Probability/distributions/beta-distribution/beta-pdfreal-nonneg.md)
 
 ## Sources
 

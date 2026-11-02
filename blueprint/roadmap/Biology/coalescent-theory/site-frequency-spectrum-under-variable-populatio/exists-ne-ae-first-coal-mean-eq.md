@@ -14,7 +14,7 @@ time `c_m` for every `m ≥ 2` (hence the same expected SFS for every sample siz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected time to the first coalescence](first-coal-mean.md)
 
 ## Sources
 

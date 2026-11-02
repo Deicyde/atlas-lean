@@ -17,6 +17,10 @@ and a continuous linear functional `φ`, there is exactly one `u ∈ K` with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stampacchia's theorem, operator form](exists-unique-stampacchia.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Stampacchia](../../../../sources/v2/MathlibExt.md)

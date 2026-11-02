@@ -14,6 +14,10 @@ sample: `hoppeLaw θ (n + 1) π' = ∑ π, hoppeLaw θ n π * hoppeStep θ π π
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One step of Hoppe's urn](hoppe-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Ewens](../../../../sources/v2/MathlibExt.md)

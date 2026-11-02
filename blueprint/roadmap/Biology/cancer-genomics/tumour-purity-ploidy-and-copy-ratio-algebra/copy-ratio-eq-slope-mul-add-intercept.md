@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.copyRatio_eq_slope_mul_add_inte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative copy ratio](copy-ratio.md)
+- [Copy-ratio intercept](intercept.md)
+- [Copy-ratio slope](slope.md)
+
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ maximizer over `[0, 1]` is derived here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expected allelic fraction of a somatic mutation](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.CancerCellFraction](../../../../sources/v2/MathlibExt.md)

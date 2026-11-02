@@ -13,7 +13,10 @@ continuous-time chain with rate matrix `partitionRate n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Time-t marginal of Kingman's coalescent](time-law.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.Phylogenetics.Parsimony.IsUnitCost
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Min-plus cost semiring](cost.md)
+
+## Proof depends on
+
+- [Unit substitution cost](unit-cost.md)
 
 ## Sources
 

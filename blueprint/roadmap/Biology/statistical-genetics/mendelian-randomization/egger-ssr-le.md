@@ -14,7 +14,14 @@ support of the weights), it minimizes the weighted residual sum of squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MR-Egger intercept](egger-intercept.md)
+- [Weighted residual sum of squares of a line](egger-ssr.md)
+- [MR-Egger slope](egger-slope.md)
+- [Weighted covariance](weighted-cov.md)
+
+## Proof depends on
+
+- [Weighted mean](weighted-mean.md)
 
 ## Sources
 

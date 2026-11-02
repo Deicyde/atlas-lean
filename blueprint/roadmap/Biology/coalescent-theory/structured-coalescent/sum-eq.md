@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.StructuredCoalescent.PairState.sum_e
 
 ## Depends on
 
-This node has no prerequisites.
+- [State of two lineages in the island model](pair-state.md)
 
 ## Sources
 

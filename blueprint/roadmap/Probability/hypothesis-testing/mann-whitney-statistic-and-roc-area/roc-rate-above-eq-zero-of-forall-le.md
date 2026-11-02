@@ -12,7 +12,7 @@ lean: ProbabilityTheory.rocRateAbove_eq_zero_of_forall_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical ROC rate strictly above a threshold](roc-rate-above.md)
 
 ## Sources
 

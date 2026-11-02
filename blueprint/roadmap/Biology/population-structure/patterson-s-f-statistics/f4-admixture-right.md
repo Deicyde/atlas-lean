@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.DriftModel.f4_admixture_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Allele frequency of a population in the drift model](freq.md)
+- [f4 statistic](f4.md)
+
+## Proof depends on
+
+- [f4 in the drift model](f4-freq.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ of the exponential law with rate `k.choose 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of no coalescence in one Wright–Fisher generation](no-coal-prob.md)
+
+## Proof depends on
+
+- [Kingman's coalescence rate](tendsto-coalescence-rate.md)
+- [No-coalescence probability tends to one](tendsto-no-coal-prob-one.md)
 
 ## Sources
 

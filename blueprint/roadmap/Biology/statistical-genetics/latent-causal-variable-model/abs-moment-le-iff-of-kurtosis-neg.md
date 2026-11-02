@@ -14,7 +14,18 @@ lean: MathlibExt.Biology.StatisticalGenetics.LatentCausalVariable.Model.abs_mome
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latent causal variable model](model.md)
+- [Marginal effect on the first trait in the latent causal variable model](alpha1.md)
+- [Marginal effect on the second trait in the latent causal variable model](alpha2.md)
+- [Excess kurtosis of the latent effect](kurtosis.md)
+
+## Proof depends on
+
+- [Mixed fourth moment $E(\alpha_1 \alpha_2^3)$](integral-alpha1-mul-alpha2-pow-three.md)
+- [Mixed fourth moment](integral-alpha1-pow-three-mul-alpha2.md)
+- [Excess kurtosis of the latent effect is at least −2](neg-two-le-kurtosis.md)
+- [Mediated coefficient of the first trait is at most one in size](q1-sq-le-one.md)
+- [Mediated coefficient of the second trait is at most one in size](q2-sq-le-one.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: PowerSeries.spanFinrank_maximalIdeal_le_succ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generators of the maximal ideal of a power series ring](maximal-ideal-eq-span-image-union-x.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.RegularLocalRing](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ U-statistic has mean `E h(X₁, …, X_m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [U-statistic](u-statistic.md)
 
 ## Sources
 

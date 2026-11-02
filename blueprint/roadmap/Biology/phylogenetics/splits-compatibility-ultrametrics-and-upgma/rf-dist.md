@@ -14,7 +14,11 @@ trivial splits are common to all trees and cancel. The value does not depend on 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
 
 ## Sources
 

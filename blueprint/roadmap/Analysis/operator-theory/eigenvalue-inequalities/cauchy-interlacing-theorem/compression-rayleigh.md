@@ -13,7 +13,12 @@ of the original operator at the underlying vector `(y : E)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression of an operator to a subspace](compression.md)
+- [Rayleigh form of an operator](../courant-fischer-min-max-theorem/rayleigh-form.md)
+
+## Proof depends on
+
+- [Action of the compression of an operator](compression-apply.md)
 
 ## Sources
 

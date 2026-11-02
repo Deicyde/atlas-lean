@@ -13,7 +13,9 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.complexRate_eq_zero_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mass-action rate of the enzyme–substrate complex](complex-rate.md)
+- [Michaelis constant](michaelis-constant.md)
+- [Quasi-steady-state value of the complex](qss-complex.md)
 
 ## Sources
 

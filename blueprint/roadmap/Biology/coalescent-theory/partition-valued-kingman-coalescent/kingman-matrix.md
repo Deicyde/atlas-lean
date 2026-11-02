@@ -13,7 +13,11 @@ has `k` blocks and `0` otherwise. For `1 ≤ k ≤ n`, row `k` is the law of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Kingman's formula](kingman-prob.md)
 
 ## Sources
 

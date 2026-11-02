@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.TwoLocusState.sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.kmSurvival
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+
+## Proof depends on
+
+- [Kaplan–Meier factor](km-factor.md)
 
 ## Sources
 

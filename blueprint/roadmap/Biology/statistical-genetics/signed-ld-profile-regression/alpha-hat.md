@@ -12,7 +12,11 @@ the phenotype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First-moment phenotype model of SLDP regression](model.md)
+
+## Proof depends on
+
+- [Phenotype in the SLDP regression model](pheno.md)
 
 ## Sources
 

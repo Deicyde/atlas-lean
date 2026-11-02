@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.varG
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Additive variance at a single locus](var-a.md)
+- [Dominance variance at a single locus](var-d.md)
+- [Genetic variance at a single locus](var-g.md)
+
+## Proof depends on
+
+- [Fisher's variance decomposition](../fisher-s-decomposition-of-genetic-variance/gen-var-eq-add-var-add-dom-var.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.mem_extremePoint
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extreme points of the unit ball of continuous real functions](extreme-points-closed-ball-continuous-ma.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall](../../../../../sources/v2/MathlibExt.md)

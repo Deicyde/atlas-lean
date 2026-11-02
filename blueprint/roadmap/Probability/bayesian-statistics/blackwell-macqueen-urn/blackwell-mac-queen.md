@@ -15,6 +15,10 @@ first `n` draws, where draw `n` has law `polyaUrnPredictive α H xs` given the p
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Blackwell–MacQueen urn predictive law](../dirichlet-process/polya-urn-predictive.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BlackwellMacQueen](../../../../sources/v2/MathlibExt.md)

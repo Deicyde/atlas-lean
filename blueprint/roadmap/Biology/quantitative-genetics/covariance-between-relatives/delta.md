@@ -11,7 +11,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.delt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+
+## Proof depends on
+
+- [Fisher's average effect of an allele at a single locus](alpha.md)
+- [Population mean genotypic value at a single locus](mean.md)
 
 ## Sources
 

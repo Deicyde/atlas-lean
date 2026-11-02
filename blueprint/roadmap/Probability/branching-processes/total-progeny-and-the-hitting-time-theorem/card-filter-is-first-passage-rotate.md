@@ -14,7 +14,8 @@ first-passage sequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First passage of the exploration walk](is-first-passage.md)
+- [Cyclic shift of a tuple](rotate.md)
 
 ## Sources
 

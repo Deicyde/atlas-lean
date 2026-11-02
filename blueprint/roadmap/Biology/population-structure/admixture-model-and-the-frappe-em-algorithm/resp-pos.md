@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.resp_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Ancestry responsibility of an allele copy (E-step)](resp.md)
+
+## Proof depends on
+
+- [Observation of one allele copy of a genotype](copy-allele.md)
+- [Joint weight of an allele copy and its ancestral population](joint.md)
+- [Positivity of the admixture joint weight](joint-pos.md)
+- [Marginal of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/marginal.md)
 
 ## Sources
 

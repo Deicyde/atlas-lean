@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.WoldDecomposition.inner_pow_wanderin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wandering subspace of an isometry](wandering-sub.md)
+
+## Proof depends on
+
+- [Orthogonality of pushed-forward wandering vectors](inner-pow-wandering.md)
 
 ## Sources
 

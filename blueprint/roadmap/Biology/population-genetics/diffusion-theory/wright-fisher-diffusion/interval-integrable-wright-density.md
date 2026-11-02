@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.intervalIntegrable_wrightD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright's stationary density of the Wright–Fisher diffusion](wright-density.md)
+
+## Proof depends on
+
+- [Wright's density has finite positive total mass](integral-wright-density-pos.md)
 
 ## Sources
 

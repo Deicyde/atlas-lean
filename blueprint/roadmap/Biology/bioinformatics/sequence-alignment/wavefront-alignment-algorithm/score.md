@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.LinearPenalties.score
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear gap penalties](linear-penalties.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Cslib.Language.dot_le_of_earleyChart
 
 ## Depends on
 
-This node has no prerequisites.
+- [Earley chart](earley-chart.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ lean: Cslib.Bioinformatics.Motifs.PWM.sum_targetFreq_mul_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moment generating function of a pair score](pair-mgf.md)
+- [Implicit target frequencies of a score matrix](target-freq.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ maps `g : ι → ι` whose functional graph has its cycle through `j` (Ananthara
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total weight of spanning in-trees](tree-weight.md)
+
+## Proof depends on
+
+- [Spanning in-tree rooted at a state](is-in-tree.md)
 
 ## Sources
 

@@ -13,7 +13,20 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.likelihood_le_k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Kaplan–Meier measure](km-measure.md)
+- [Likelihood of right-censored data](likelihood.md)
+
+## Proof depends on
+
+- [Number at risk at an observation time](at-risk.md)
+- [Kaplan–Meier factor](km-factor.md)
+- [Kaplan–Meier factor is nonnegative](km-factor-nonneg.md)
+- [Kaplan–Meier jump at an observation time](km-mass.md)
+- [Survival function of the Kaplan–Meier measure](km-measure-real-ioi.md)
+- [Mass of a set under the Kaplan–Meier measure](km-measure-real-apply.md)
+- [Kaplan–Meier survival estimate](km-survival.md)
+- [Kaplan–Meier mass after the last observation](km-tail.md)
 
 ## Sources
 

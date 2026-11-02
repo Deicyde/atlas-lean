@@ -13,7 +13,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.inner_fockKernel_fockKerne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Fock space](fock-kernel.md)
 
 ## Sources
 

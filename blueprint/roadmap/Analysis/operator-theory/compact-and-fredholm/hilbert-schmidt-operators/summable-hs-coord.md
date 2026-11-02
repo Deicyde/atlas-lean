@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.summable_hsCoord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Row vector of a Hilbert–Schmidt matrix](hs-row.md)
 
 ## Sources
 

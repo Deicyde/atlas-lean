@@ -13,7 +13,14 @@ probability `P_q(score M ≥ t)` when `q` is a distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Exact p-value of a score threshold](p-value.md)
+- [Score of a site under a position weight matrix](score.md)
+
+## Proof depends on
+
+- [Background score distribution of an integer matrix](score-dist.md)
+- [The column recursion computes the exact score distribution](score-dist-apply.md)
 
 ## Sources
 

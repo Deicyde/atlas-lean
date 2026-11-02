@@ -14,7 +14,11 @@ respect to the law of `ε` (null).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
+
+## Proof depends on
+
+- [Wakefield's Bayes factor as a density ratio of Gaussians](gaussian-real-eq-with-density-wakefield.md)
 
 ## Sources
 

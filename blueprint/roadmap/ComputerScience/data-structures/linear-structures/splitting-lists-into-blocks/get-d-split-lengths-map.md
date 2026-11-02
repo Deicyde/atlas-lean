@@ -14,6 +14,10 @@ lean: List.getD_splitLengths_map
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Start position of a chunk in a split list](get-d-split-lengths.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.List.SplitLengths](../../../../../sources/v2/MathlibExt.md)

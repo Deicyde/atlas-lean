@@ -18,6 +18,11 @@ splitters the loop pops, so the trace cannot drift from the loop.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One refinement round of the partition](round-p.md)
+- [One update of the waiting list](round-w.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.HopcroftCost](../../../../../sources/v2/CSLibExt.md)

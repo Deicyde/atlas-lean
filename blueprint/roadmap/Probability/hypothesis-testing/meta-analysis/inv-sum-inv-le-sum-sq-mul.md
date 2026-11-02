@@ -16,6 +16,11 @@ weights `w`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inverse-variance weights](inverse-variance-weights.md)
+- [Inverse-variance weights sum to one](sum-inverse-variance-weights.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MetaAnalysis](../../../../sources/v2/MathlibExt.md)

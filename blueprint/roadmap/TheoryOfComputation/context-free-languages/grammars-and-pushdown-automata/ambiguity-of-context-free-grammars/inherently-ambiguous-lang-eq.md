@@ -12,7 +12,12 @@ lean: Cslib.Language.inherentlyAmbiguousLang_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [The language $a^n b^n$](../../closure-and-pumping/non-closure-of-context-free-languages/eq-pow-lang.md)
+- [Canonical inherently ambiguous context-free language](inherently-ambiguous-lang.md)
+
+## Proof depends on
+
+- [The Kleene star of a one-letter word](../../closure-and-pumping/non-closure-of-context-free-languages/mem-kstar-singleton.md)
 
 ## Sources
 

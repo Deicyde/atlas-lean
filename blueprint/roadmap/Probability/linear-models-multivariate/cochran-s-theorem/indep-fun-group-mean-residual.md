@@ -14,7 +14,7 @@ lean: ProbabilityTheory.indepFun_groupMean_residual
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group mean of observations](group-mean.md)
 
 ## Sources
 

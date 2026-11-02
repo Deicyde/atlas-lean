@@ -14,7 +14,9 @@ the output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-input single-output linear time-invariant system](linear-system.md)
+- [Vector field of a linear time-invariant system](field.md)
+- [Output of a linear time-invariant system](output.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ genotype `X₁ + X₂` and equals its dominance encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dominance encoding of a biallelic genotype](dominance-encoding.md)
 
 ## Sources
 

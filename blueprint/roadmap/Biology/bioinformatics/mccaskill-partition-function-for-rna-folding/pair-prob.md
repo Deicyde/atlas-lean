@@ -16,6 +16,11 @@ is the probability of `(i, j)` under the Boltzmann distribution on structures.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

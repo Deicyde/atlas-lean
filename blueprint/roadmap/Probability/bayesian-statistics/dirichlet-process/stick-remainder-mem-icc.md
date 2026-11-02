@@ -12,7 +12,7 @@ lean: ProbabilityTheory.stickRemainder_mem_Icc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leftover stick in stick breaking](stick-remainder.md)
 
 ## Sources
 

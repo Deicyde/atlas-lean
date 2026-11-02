@@ -16,6 +16,10 @@ continuous linear Schauder projection.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lift of a coordinate function to a truncated $\ell^p$ sequence](lp-lift.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Lp.Compactness](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.backwardCLM_pow_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Backward shift of a sequence](backward-fun.md)
+- [Powers of the backward shift as iterates of the backward map](backward-clm-pow-coe.md)
+- [Iterated backward shift drops leading coordinates](backward-fun-iterate-apply.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ hull contains the original one; in particular the RSS does not increase.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible archetypes](feasible.md)
+- [Residual sum of squares in archetypal analysis](rss.md)
 
 ## Sources
 

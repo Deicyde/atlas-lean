@@ -17,6 +17,10 @@ the regression of the residualized response on the residualized regressor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frisch–Waugh–Lovell](frisch-waugh-lovell.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.FrischWaughLovell](../../../../sources/v2/MathlibExt.md)

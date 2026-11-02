@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.covHalfSibs_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive genetic variance](add-var.md)
+- [Half-sib covariance of genotypic values](cov-half-sibs.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+- [Average effects have mean zero](sum-mul-avg-effect.md)
 
 ## Sources
 

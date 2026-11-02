@@ -14,7 +14,12 @@ orthogonal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residual subspace of an isometry](residual-sub.md)
+- [Wandering subspace of an isometry](wandering-sub.md)
+
+## Proof depends on
+
+- [Orthogonality of pushed-forward wandering vectors, symmetric form](inner-pow-wandering-2.md)
 
 ## Sources
 

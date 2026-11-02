@@ -14,6 +14,11 @@ markers, `(h²(C) / h²) / (M_C / M)` with `h² = ∑_k σ²_k` (Finucane et al.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heritability of a marker category](cat-h2.md)
+- [Number of markers in a category](cat-size.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore](../../../../sources/v2/MathlibExt.md)

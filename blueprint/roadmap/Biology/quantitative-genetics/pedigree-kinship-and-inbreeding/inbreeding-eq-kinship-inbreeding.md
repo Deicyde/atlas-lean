@@ -13,7 +13,17 @@ by descent of the two copies of `i` under gene dropping.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Inbreeding coefficient under gene dropping](inbreeding.md)
+- [Inbreeding coefficient by Malécot's recursion](kinship-inbreeding.md)
+
+## Proof depends on
+
+- [Kinship coefficient under gene dropping](gene-drop-kinship.md)
+- [Malécot's recursion computes gene-dropping kinship](gene-drop-kinship-eq-kinship.md)
+- [Founders are not inbred](inbreeding-of-parents-eq-none.md)
+- [Malécot](inbreeding-of-parents-eq-some.md)
+- [Kinship coefficient by Malécot's recursion](kinship.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: ProbabilityTheory.StickBreakingProcess.weight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+
+## Proof depends on
+
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

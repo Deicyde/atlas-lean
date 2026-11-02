@@ -12,7 +12,15 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.dense_periodicPoin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [Distance from the periodic approximant to the truncation](norm-periodic-approx-sub-trunc.md)
+- [Periodic approximant of a truncated sequence](periodic-approx.md)
+- [Periodic approximant is a periodic point](periodic-approx-is-periodic-point.md)
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+- [Truncations of an $\ell^p$ vector converge to it](../../../banach-spaces/sequence-spaces/compactness-in-p/tendsto-lp-trunc.md)
 
 ## Sources
 

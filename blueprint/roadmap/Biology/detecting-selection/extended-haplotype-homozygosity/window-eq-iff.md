@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.window_eq_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haplotype window around the core](window.md)
 
 ## Sources
 

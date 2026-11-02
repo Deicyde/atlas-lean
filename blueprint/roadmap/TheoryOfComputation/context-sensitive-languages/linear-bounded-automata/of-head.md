@@ -11,7 +11,7 @@ lean: Cslib.Language.LBABoundary.ofHead
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
 
 ## Sources
 

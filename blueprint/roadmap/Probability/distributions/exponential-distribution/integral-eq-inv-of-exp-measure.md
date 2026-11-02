@@ -14,6 +14,10 @@ lean: ProbabilityTheory.HasLaw.integral_eq_inv_of_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean of the exponential law](integral-id-exp-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

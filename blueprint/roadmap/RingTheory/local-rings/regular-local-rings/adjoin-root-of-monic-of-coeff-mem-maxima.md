@@ -16,6 +16,10 @@ of the maximal ideal preserves regularity and Krull dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Injective integral maps preserve Krull dimension](../krull-dimension/ring-krull-dim-eq-of-integral-of-injecti.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.RegularLocalRing.AdjoinRoot](../../../../sources/v2/MathlibExt.md)

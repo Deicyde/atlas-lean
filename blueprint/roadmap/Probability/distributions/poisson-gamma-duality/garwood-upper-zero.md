@@ -12,7 +12,13 @@ lean: ProbabilityTheory.garwoodUpper_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garwood's exact upper confidence bound](garwood-upper.md)
+
+## Proof depends on
+
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+- [Garwood upper bound solves the distribution function equation](poisson-cdf-garwood-upper.md)
+- [Poisson distribution function at count zero](poisson-cdf-zero-right.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Epidemiology.EulerLotka.reproductionNumber_gammaMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproductive number from growth rate and generation interval](reproduction-number.md)
+
+## Proof depends on
+
+- [Moment generating function of the gamma distribution](../../../Probability/distributions/gamma-distribution/mgf-gamma-measure-of-lt.md)
 
 ## Sources
 

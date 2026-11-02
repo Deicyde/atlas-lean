@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.concaveOn_logPartia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cox log partial likelihood](log-partial-likelihood.md)
+
+## Proof depends on
+
+- [Risk set in survival analysis](risk-set.md)
+- [Risk sets are nonempty](risk-set-nonempty.md)
 
 ## Sources
 

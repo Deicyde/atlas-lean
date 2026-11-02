@@ -18,7 +18,11 @@ Theorem 4.7, which assumes `f` is `C¹` and concludes asymptotic stability).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-hurwitz.md)
+
+## Proof depends on
+
+- [Exponential decay of a Hurwitz semigroup](exists-norm-exp-smul-mul-vec-le.md)
 
 ## Sources
 

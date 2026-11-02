@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f2_eq_f4
 
 ## Depends on
 
-This node has no prerequisites.
+- [f2 statistic](f2.md)
+- [f4 statistic](f4.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: Cslib.MachineLearning.NMF.objective_sweep_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
+- [One sweep of the Lee–Seung algorithm](sweep.md)
+
+## Proof depends on
+
+- [Lee–Seung, `H` step](objective-update-h-le.md)
+- [Lee–Seung, `W` step](objective-update-w-le.md)
+- [Lee–Seung multiplicative update of H](update-h.md)
+- [The Lee–Seung H update preserves nonnegativity](update-h-nonneg.md)
+- [Lee–Seung multiplicative update of W](update-w.md)
 
 ## Sources
 

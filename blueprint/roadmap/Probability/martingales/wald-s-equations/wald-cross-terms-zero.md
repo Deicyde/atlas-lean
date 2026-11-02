@@ -17,6 +17,10 @@ with each `X_i` independent of the filtration at time `i` and measurable at time
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vanishing of a single cross term in Wald's second equation](cross-pair-integral-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.WaldCrossTerms](../../../../sources/v2/MathlibExt.md)

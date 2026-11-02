@@ -14,7 +14,23 @@ sample of size `n ≥ 2`, under the hypotheses of `variance_meanPairDiff`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Total branch length of a coalescent genealogy](../kingman-s-coalescent-and-watterson-s-estimator/total-length.md)
+- [Mean number of pairwise differences](../segregating-sites-and-pairwise-differences/mean-pair-diff.md)
+- [Pairs of genes in a sample](../segregating-sites-and-pairwise-differences/sample-pairs.md)
+- [Tajima's constant $a_1$](../segregating-sites-and-pairwise-differences/tajima-a1.md)
+- [Tajima's constant $c_1$](../segregating-sites-and-pairwise-differences/tajima-c1.md)
+- [Tajima's constant $c_2$](../segregating-sites-and-pairwise-differences/tajima-c2.md)
+
+## Proof depends on
+
+- [Covariance of `π` and `S`](covariance-mean-pair-diff-seg-sites.md)
+- [Variance of the number of segregating sites](../segregating-sites-and-pairwise-differences/variance-seg-sites.md)
+- [Tajima's $a_1$ is a harmonic number](../segregating-sites-and-pairwise-differences/tajima-a1-eq-harmonic.md)
+- [Tajima's constant $a_2$](../segregating-sites-and-pairwise-differences/tajima-a2.md)
+- [Tajima's constant $b_1$](../segregating-sites-and-pairwise-differences/tajima-b1.md)
+- [Tajima's constant $b_2$](../segregating-sites-and-pairwise-differences/tajima-b2.md)
+- [Variance of the mean number of pairwise differences](variance-mean-pair-diff.md)
 
 ## Sources
 

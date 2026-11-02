@@ -12,7 +12,7 @@ lean: StatMech.Lattice.Dart.equivSimpleGraphDart_rev
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice darts agree with graph darts of the square lattice](equiv-simple-graph-dart.md)
 
 ## Sources
 

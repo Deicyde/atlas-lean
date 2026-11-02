@@ -14,7 +14,14 @@ The number of trials may follow any natural-valued sequence tending to infinity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial point mass with success probability one half](binom-prob-half.md)
+
+## Proof depends on
+
+- [Stirling decomposition of the binomial-to-Gaussian ratio](binom-prob-div-gaussian-approx-eq.md)
+- [Cubic bound on the symmetric entropy residual](entropy-residual-bound.md)
+- [Gaussian approximation to the symmetric binomial point mass](gaussian-approx-half.md)
+- [Logarithm of the binomial power factor](log-power-factor-formula.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge lengths of the star tree matching an admixture model](star-len.md)
 
 ## Sources
 

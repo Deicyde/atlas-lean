@@ -13,7 +13,11 @@ lean: MathlibExt.Probability.GaltonWatson.iterate_pgf_mem_Icc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
+
+## Proof depends on
+
+- [Integrability of $s^X$ for $|s| \le 1$](../../characteristic-functions/probability-generating-functions/integrable-pow-of-abs-le-one.md)
 
 ## Sources
 

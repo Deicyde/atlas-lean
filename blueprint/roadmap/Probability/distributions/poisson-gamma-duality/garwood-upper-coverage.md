@@ -13,7 +13,13 @@ lean: ProbabilityTheory.garwoodUpper_coverage
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garwood's exact upper confidence bound](garwood-upper.md)
+
+## Proof depends on
+
+- [Means below the Garwood upper bound are exactly the non-rejected ones](le-garwood-upper-iff.md)
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+- [Super-uniformity of the distribution-function transform](poisson-measure-real-poisson-cdf-le.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: HahnSeries.coe_inv_variableDifferenceUnit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Laurent-coefficient Hahn series](diagonal-laurent-series.md)
+- [Variable difference as a unit of Hahn series](variable-difference-unit.md)
 
 ## Sources
 

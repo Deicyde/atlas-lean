@@ -12,7 +12,12 @@ incrementing the cutoff under binders.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Processes of the π-calculus](proc.md)
+
+## Proof depends on
+
+- [Channel name in the π-calculus](name.md)
+- [Swapping adjacent de Bruijn indices in a name](swap-name-at.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.isSingleChange_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Codons differing at exactly one position](is-single-change.md)
+
+## Proof depends on
+
+- [Positions at which two codons differ](diff-positions.md)
 
 ## Sources
 

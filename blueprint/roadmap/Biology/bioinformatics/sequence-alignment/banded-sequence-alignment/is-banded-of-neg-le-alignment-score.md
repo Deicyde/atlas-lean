@@ -13,7 +13,15 @@ most `-1`, every alignment scoring at least `-w` (cost at most `w`) is `w`-bande
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Banded alignments](is-banded.md)
+- [Score of an alignment](../pairwise-sequence-alignment/alignment-score.md)
+
+## Proof depends on
+
+- [Alignment score is at most minus the number of gap columns](alignment-score-le-neg-gap-columns.md)
+- [Number of gap columns of an alignment](gap-columns.md)
+- [An alignment with at most w gap columns is w-banded](is-banded-of-gap-columns-le.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ pairs with some later base `j` or some earlier base `j` sum to at most `1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base-pair probability](pair-prob.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Membership in the set of secondary structures](mem-structures.md)
+- [Total structure weight is at least one](one-le-sum-weight.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.poissonBinomialPMF_eq_zero_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
 
 ## Sources
 

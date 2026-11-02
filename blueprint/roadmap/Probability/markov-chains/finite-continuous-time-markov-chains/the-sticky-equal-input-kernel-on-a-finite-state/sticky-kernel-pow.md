@@ -13,7 +13,12 @@ persistence `c ^ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Composition](sticky-kernel-mul.md)
+- [Sticky kernel at persistence one is the identity](sticky-kernel-one.md)
 
 ## Sources
 

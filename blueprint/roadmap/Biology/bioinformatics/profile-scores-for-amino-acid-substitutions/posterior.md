@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.posterior
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
+
+## Proof depends on
+
+- [Joint probability of class and features in naive Bayes](joint.md)
 
 ## Sources
 

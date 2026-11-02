@@ -13,7 +13,12 @@ for `v, K₁, K₂ > 0`, `rateRatio K₁ K₂ (goldbeterKoshland v K₁ K₂) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Goldbeter–Koshland function](goldbeter-koshland.md)
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
+
+## Proof depends on
+
+- [Goldbeter–Koshland function lies strictly between 0 and 1](goldbeter-koshland-mem-ioo.md)
 
 ## Sources
 

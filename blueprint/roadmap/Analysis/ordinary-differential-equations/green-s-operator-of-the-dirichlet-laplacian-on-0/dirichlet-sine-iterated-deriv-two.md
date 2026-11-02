@@ -13,7 +13,12 @@ eigenfunction: `u_k'' = -(kπ)² u_k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet eigenvalues of the Laplacian on the unit interval](dirichlet-laplacian-eigenvalue.md)
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
+
+## Proof depends on
+
+- [Derivative function of a Dirichlet sine eigenfunction](dirichlet-sine-deriv.md)
 
 ## Sources
 

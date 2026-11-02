@@ -17,6 +17,11 @@ of `f` over the eigenvalues of `T`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convex differentiable functions lie above their tangent lines](add-deriv-mul-sub-le-of-convex-on.md)
+- [Peierls' inequality](peierls-inequality.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.PeierlsKlein](../../../../../sources/v2/MathlibExt.md)

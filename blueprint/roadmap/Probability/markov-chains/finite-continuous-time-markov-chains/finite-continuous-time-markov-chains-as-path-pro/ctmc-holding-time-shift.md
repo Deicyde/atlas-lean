@@ -12,7 +12,13 @@ lean: ProbabilityTheory.ctmcHoldingTime_shift
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of a continuous-time Markov chain](ctmc-holding-time.md)
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
+
+## Proof depends on
+
+- [Jump chain of the shifted steps](ctmc-jump-chain-shift.md)
 
 ## Sources
 

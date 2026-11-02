@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Dynamics.LotkaVolterra.firstIntegral_equilibrium_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [First integral of the Lotka–Volterra system](first-integral.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: ProbabilityTheory.IsStationaryOrnsteinUhlenbeck.condExp_natural
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Conditional expectation of a Gaussian process given its past](cond-exp-natural-eq-of-covariance.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

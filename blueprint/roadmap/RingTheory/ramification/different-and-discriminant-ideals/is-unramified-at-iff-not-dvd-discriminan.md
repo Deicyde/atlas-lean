@@ -12,7 +12,11 @@ lean: Ideal.isUnramifiedAt_iff_not_dvd_discriminantIdeal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discriminant ideal of a Dedekind extension](discriminant-ideal.md)
+
+## Proof depends on
+
+- [Unramified primes are those not dividing the discriminant](is-unramified-in-iff-not-dvd-discriminan.md)
 
 ## Sources
 

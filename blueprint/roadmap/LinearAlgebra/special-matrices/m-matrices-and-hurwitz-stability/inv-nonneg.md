@@ -13,7 +13,14 @@ nonnegative (Berman–Plemmons, Ch. 6, Theorem 2.3, (G20) ⇒ (N38)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonsingular M-matrix](is-nonsingular-mmatrix.md)
+
+## Proof depends on
+
+- [Hurwitz matrix](is-hurwitz.md)
+- [Z-matrix](is-zmatrix.md)
+- [Neumann series](inv-one-sub-nonneg.md)
+- [Invertibility of 1 − K when the spectral radius is below one](is-unit-one-sub-of-spectral-radius-lt-on.md)
 
 ## Sources
 

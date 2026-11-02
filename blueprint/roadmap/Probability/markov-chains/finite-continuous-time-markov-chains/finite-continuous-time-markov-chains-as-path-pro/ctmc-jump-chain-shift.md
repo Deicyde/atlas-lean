@@ -12,7 +12,8 @@ lean: ProbabilityTheory.ctmcJumpChain_shift
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
 
 ## Sources
 

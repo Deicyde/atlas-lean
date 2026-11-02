@@ -15,7 +15,7 @@ adapted to `F` with increments independent of the past, and a measurable weight 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted quadratic-variation error of Brownian motion](weighted-qverror.md)
 
 ## Sources
 

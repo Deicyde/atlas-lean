@@ -13,7 +13,7 @@ diagonal matrix of its (positive) marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [LogDet (paralinear) distance](paralinear.md)
 
 ## Sources
 

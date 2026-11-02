@@ -14,6 +14,12 @@ the small-parsimony score by `Parsimony.fitch_score_eq`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rooted quartet with unit costs](quartet-shape.md)
+- [Min-plus cost semiring](../small-parsimony-problem/cost.md)
+- [Fitch's algorithm](../small-parsimony-problem/fitch.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinZone](../../../../sources/v2/CSLibExt.md)

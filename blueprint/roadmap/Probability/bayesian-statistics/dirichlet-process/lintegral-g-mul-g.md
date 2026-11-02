@@ -15,7 +15,18 @@ otherwise land on two independent atoms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random measure of a stick-breaking process](g.md)
+- [Expected sum of squared stick-breaking weights](sum-sq-weight.md)
+- [Random stick-breaking weight](weight.md)
+
+## Proof depends on
+
+- [Stick-breaking random measure is almost surely a probability measure](ae-is-probability-measure-g-of-has-sum.md)
+- [Measurability of the random stick-breaking weights](measurable-weight.md)
+- [Mass of a set under the stick-breaking measure](stick-breaking-measure-apply.md)
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.AubinNitsche.aubinNitsche_core
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Aubin–Nitsche lemma, pointwise form](aubin-nitsche-pointwise.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.AubinNitsche](../../../../sources/v2/MathlibExt.md)

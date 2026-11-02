@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.finiteDimensional
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Kernel of the backward shift power as a space of finite tuples](ker-backward-clm-pow-equiv.md)
 
 ## Sources
 

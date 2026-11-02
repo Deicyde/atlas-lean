@@ -14,6 +14,10 @@ times by `O` (equation (2)).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cover count of an element under a family of overlays](cover-count.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.MaxNTimesCoverage](../../../../sources/v2/CSLibExt.md)

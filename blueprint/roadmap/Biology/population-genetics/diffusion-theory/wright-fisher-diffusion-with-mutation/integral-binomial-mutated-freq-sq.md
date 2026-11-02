@@ -17,7 +17,11 @@ not stated here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Allele frequency after one generation of two-way mutation](mutated-freq.md)
+
+## Proof depends on
+
+- [Second moment of the binomial law](../../../../Probability/distributions/binomial-distribution/integral-sq-map-cast-binomial.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ theorem).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four-point condition](four-point-condition.md)
+- [Tree metric](is-tree-metric.md)
+
+## Proof depends on
+
+- [Concatenation of paths meeting at one endpoint is a path](../../../GraphTheory/paths-cycles-connectivity/is-path-append-of-is-path.md)
 
 ## Sources
 

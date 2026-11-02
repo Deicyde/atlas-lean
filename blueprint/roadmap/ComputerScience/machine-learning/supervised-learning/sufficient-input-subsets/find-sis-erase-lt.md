@@ -13,7 +13,16 @@ additionally masked while keeping the prediction at or above the threshold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy backward-selection rule](is-greedy.md)
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+
+## Proof depends on
+
+- [Backward-selection chain of remaining feature sets](chain.md)
+- [Backward-selection chain at a nonempty set](chain-of-nonempty.md)
+- [Backward-selection chain at the empty set](chain-of-not-nonempty.md)
+- [Starting set begins the backward-selection chain](mem-chain-self.md)
+- [Sets in the backward-selection chain are subsets of the start](subset-of-mem-chain.md)
 
 ## Sources
 

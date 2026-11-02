@@ -13,7 +13,7 @@ every consuming transition from the same state and stack symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pushdown automaton](../pushdown-automata/pda.md)
 
 ## Sources
 

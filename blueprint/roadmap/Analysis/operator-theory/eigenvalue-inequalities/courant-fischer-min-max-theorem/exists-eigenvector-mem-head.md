@@ -13,7 +13,12 @@ attains the Rayleigh value `λₖ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Head of an orthonormal eigenbasis](head-family.md)
+- [Rayleigh form of an operator](rayleigh-form.md)
+
+## Proof depends on
+
+- [Eigenbasis expansion of the Rayleigh form](rayleigh-form-eq-expansion.md)
 
 ## Sources
 

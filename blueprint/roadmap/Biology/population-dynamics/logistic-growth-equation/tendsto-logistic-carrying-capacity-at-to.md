@@ -13,7 +13,7 @@ exponential-growth solution `x₀ e^{r t}` as the carrying capacity `K → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit solution of the logistic equation](logistic.md)
 
 ## Sources
 

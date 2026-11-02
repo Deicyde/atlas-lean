@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.purity_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-ratio intercept](intercept.md)
+- [Copy-ratio slope](slope.md)
+
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+- [Positivity of the mixture copy number](mix-copy-pos.md)
 
 ## Sources
 

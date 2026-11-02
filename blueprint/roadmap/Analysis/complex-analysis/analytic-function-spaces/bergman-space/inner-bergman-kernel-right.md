@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.inner_bergmanKernel_rig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+- [Bergman kernel](bergman-kernel.md)
 
 ## Sources
 

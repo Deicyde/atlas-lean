@@ -13,7 +13,8 @@ lean: MathlibExt.Probability.Statistics.PCA.sampleCov_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample mean of a data matrix column](col-mean.md)
+- [Unbiased sample covariance matrix](sample-cov.md)
 
 ## Sources
 

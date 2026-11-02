@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.mem_closedRejections
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed testing procedure](closed-rejections.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ denominator vanishes, both sides are `0` by the convention `x / 0 = 0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared correlation of case status and genotype score](corr-sq.md)
+- [Number of individuals in a case-control genotype table](total.md)
+- [Cochran–Armitage trend statistic](trend-stat.md)
+
+## Proof depends on
+
+- [Numerator of the Cochran–Armitage trend statistic](numer.md)
+- [Pooled genotype-score variance](score-var.md)
 
 ## Sources
 

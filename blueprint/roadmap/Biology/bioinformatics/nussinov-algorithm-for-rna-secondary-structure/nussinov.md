@@ -16,6 +16,10 @@ with `rest[k]` for some `k ≥ m` with `pair a rest[k]`, splitting the rest into
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Maximum of a list of natural numbers](list-max.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.Nussinov](../../../../sources/v2/CSLibExt.md)

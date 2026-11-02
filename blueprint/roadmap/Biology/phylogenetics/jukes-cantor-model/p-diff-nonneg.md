@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.pDiff_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that the ends of a branch differ](p-diff.md)
+
+## Proof depends on
+
+- [Closed form of the Jukes–Cantor difference probability](p-diff-eq.md)
 
 ## Sources
 

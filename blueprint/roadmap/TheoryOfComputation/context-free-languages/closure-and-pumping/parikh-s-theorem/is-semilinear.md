@@ -14,6 +14,10 @@ linear sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear set of vectors](is-linear.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Parikh](../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.sum_colocPosterior_eq_o
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
+- [Closed-form colocalization hypothesis scores](coloc-closed-form.md)
+
+## Proof depends on
+
+- [Positivity of colocalization evidence](coloc-evidence-pos.md)
 
 ## Sources
 

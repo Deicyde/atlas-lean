@@ -14,7 +14,11 @@ unconditional expectation of `f (X (m + n))` is the expectation of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Markov chain with respect to a filtration](is-markov-chain.md)
+
+## Proof depends on
+
+- [Chapman–Kolmogorov equations, forward (law) form](map-eq-bind-pow.md)
 
 ## Sources
 

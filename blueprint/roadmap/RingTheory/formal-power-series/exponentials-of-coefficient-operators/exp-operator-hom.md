@@ -13,6 +13,12 @@ lean: MvPowerSeries.expOperatorHom
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Formal exponential of a coefficient operator](exp-operator.md)
+- [The exponential of coefficient derivations is multiplicative](exp-operator-mul.md)
+- [The exponential of coefficient derivations preserves one](exp-operator-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.MvPowerSeries.OperatorExponentialHom](../../../../sources/v2/MathlibExt.md)

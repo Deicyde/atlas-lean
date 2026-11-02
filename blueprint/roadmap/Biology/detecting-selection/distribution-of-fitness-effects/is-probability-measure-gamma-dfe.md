@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.isProba
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
 
 ## Sources
 

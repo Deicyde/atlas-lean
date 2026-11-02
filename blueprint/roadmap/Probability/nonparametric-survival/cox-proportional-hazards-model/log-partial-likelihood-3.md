@@ -13,6 +13,10 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.logPartialLikelihoo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cox log partial likelihood](log-partial-likelihood.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Survival.CoxPartialLikelihood](../../../../sources/v2/MathlibExt.md)

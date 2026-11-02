@@ -13,6 +13,10 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.IsVStructure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjacent vertices in a network structure](adjacent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ComputerScience.BayesianNetworkEquivalenceWanted](../../../../../sources/v2/WantedExt.md)

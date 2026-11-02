@@ -14,7 +14,8 @@ Labels outside `D a b` make the corresponding directed factor zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
 
 ## Sources
 

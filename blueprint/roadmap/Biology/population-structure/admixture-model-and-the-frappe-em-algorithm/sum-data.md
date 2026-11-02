@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.sum_data
 
 ## Depends on
 
-This node has no prerequisites.
+- [Observation of one allele copy of a genotype](copy-allele.md)
+- [Allele-copy observations of a genotype matrix](data.md)
 
 ## Sources
 

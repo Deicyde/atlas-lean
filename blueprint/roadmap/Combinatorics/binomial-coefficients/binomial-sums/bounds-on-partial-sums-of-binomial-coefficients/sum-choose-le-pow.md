@@ -14,6 +14,10 @@ lean: Real.sum_choose_le_pow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted partial binomial sum bounded by the full expansion](pow-mul-sum-choose-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.BinomialPartialSum](../../../../../sources/v2/MathlibExt.md)

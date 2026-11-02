@@ -13,7 +13,12 @@ under the Möbius map `λ ↦ (λ - i) / (λ + i)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Spectral mapping for the Cayley transform, preimage direction](exists-mem-spectrum-of-mem-spectrum-cayl.md)
+- [Spectral mapping for the Cayley transform, image direction](mem-spectrum-cayley-transform-of-mem-spe.md)
 
 ## Sources
 

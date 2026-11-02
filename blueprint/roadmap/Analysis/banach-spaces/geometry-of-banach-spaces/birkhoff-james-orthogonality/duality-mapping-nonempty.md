@@ -13,7 +13,7 @@ functional and scale it by `‖x‖`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Duality mapping of a normed space](duality-mapping.md)
 
 ## Sources
 

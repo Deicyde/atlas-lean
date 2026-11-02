@@ -12,7 +12,12 @@ lean: ProbabilityTheory.IsRateMatrix.ctmcJumpMatrix_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Jump matrix of a rate matrix](ctmc-jump-matrix.md)
+
+## Proof depends on
+
+- [Diagonal entries of a rate matrix are nonpositive](../rate-matrices-of-finite-continuous-time-markov-c/diag-nonpos.md)
 
 ## Sources
 

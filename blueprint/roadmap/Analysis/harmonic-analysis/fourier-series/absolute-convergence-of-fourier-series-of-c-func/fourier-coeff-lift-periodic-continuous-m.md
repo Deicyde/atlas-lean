@@ -13,7 +13,11 @@ coefficients `fourierCoeffOn`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift of a periodic continuous function to the circle](lift-periodic-continuous-map.md)
+
+## Proof depends on
+
+- [Fourier coefficients on $(0, 0+T)$ equal those on $(0, T)$](fourier-coeff-on-zero-add.md)
 
 ## Sources
 

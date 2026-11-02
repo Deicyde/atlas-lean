@@ -14,7 +14,11 @@ defined for every real `t`; the identities below hold for every real `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
 
 ## Sources
 

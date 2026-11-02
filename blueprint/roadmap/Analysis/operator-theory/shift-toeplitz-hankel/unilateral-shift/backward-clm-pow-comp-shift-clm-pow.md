@@ -13,7 +13,13 @@ recovers the original sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Pointwise action of a power of the backward shift](backward-clm-pow-apply.md)
+- [Pointwise action of a power of the unilateral shift](shift-clm-pow-apply.md)
 
 ## Sources
 

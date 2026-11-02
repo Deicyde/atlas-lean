@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.meanLDScore
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [LD score of a marker](../ld-score-regression/ld-score.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.LDScoreInflation](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.GBLUP.kernelMatrix_markerKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear marker kernel on genotype vectors](marker-kernel.md)
+- [Kernel matrix](../gaussian-process-regression/kernel-matrix.md)
 
 ## Sources
 

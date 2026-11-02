@@ -14,6 +14,10 @@ lean: Real.exists_nat_pow_le_mul_two_rpow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Existence of a constant bounding a power by an exponential](exists-nat-pow-le-mul-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.PolynomialExponentialBound](../../../../sources/v2/MathlibExt.md)

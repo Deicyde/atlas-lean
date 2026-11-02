@@ -14,6 +14,11 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.fastTransient
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Michaelis constant](michaelis-constant.md)
+- [Quasi-steady-state value of the complex](qss-complex.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.MichaelisMenten](../../../../sources/v2/MathlibExt.md)

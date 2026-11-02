@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.eggerInterce
 
 ## Depends on
 
-This node has no prerequisites.
+- [MR-Egger intercept](egger-intercept.md)
+- [Weighted covariance](weighted-cov.md)
+- [Weighted mean](weighted-mean.md)
+
+## Proof depends on
+
+- [MR-Egger slope](egger-slope.md)
+- [MR-Egger slope under pleiotropy](egger-slope-eq.md)
 
 ## Sources
 

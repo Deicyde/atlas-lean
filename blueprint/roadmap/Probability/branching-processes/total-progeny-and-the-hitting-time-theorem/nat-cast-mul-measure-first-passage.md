@@ -16,7 +16,15 @@ measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First passage of the exploration walk](is-first-passage.md)
+
+## Proof depends on
+
+- [Hitting weight of first-passage step sequences](hitting-weight.md)
+- [Probability of first passage at time n](measure-first-passage.md)
+- [Probability of the offspring walk event as a walk weight](measure-walk.md)
+- [Hitting-time theorem](nat-cast-mul-hitting-weight.md)
+- [Walk weight of step sequences ending at zero](walk-weight.md)
 
 ## Sources
 

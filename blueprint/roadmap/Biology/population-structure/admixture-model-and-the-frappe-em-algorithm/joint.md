@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.joint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
 
 ## Sources
 

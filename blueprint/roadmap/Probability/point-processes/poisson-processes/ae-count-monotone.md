@@ -14,7 +14,11 @@ almost surely (the arrival times tend to infinity almost surely, so every arriva
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting process of interarrival times](count.md)
+
+## Proof depends on
+
+- [Arrival times from interarrival times](arrival-time.md)
 
 ## Sources
 

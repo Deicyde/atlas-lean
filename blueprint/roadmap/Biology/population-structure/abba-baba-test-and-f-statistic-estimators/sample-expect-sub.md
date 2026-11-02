@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.sampleExpect_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expectation under independent haplotype sampling](sample-expect.md)
+
+## Proof depends on
+
+- [Probability of a derived-allele configuration](config-prob.md)
 
 ## Sources
 

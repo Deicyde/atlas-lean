@@ -16,6 +16,10 @@ Proof: Multiply the rectangular-diagonal factorization on the right by `Vᴴ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unitary reduction of a complex matrix to rectangular diagonal form](exists-unitary-group-mul-eq-rectangular.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.ComplexSVD](../../../../sources/v2/MathlibExt.md)

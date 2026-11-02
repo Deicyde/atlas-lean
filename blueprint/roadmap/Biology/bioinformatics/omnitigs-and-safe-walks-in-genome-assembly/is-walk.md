@@ -11,7 +11,7 @@ lean: Cslib.Bioinformatics.Assembly.Omnitig.IsWalk
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed multigraph](multigraph.md)
 
 ## Sources
 

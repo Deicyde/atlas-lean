@@ -11,7 +11,7 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.Edge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
 
 ## Sources
 

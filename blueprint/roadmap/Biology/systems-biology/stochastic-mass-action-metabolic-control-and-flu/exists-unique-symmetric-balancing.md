@@ -16,6 +16,11 @@ Imakaev et al. 2012): a symmetric matrix with positive entries has a unique posi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Uniqueness of Sinkhorn scaling](sinkhorn-scaling-unique.md)
+- [Sinkhorn's scaling theorem](../../../LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/sinkhorn-scaling.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.PoissonPointProcess.lintegral_countingMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting measure of a finite tuple of points](counting-measure.md)
 
 ## Sources
 

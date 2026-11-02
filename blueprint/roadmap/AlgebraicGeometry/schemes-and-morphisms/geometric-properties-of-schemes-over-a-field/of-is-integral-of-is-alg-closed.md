@@ -14,6 +14,11 @@ lean: AlgebraicGeometry.GeometricallyIntegral.of_isIntegral_of_isAlgClosed
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Geometric irreducibility over an algebraically closed field](of-irreducible-space-of-is-alg-closed.md)
+- [Reduced schemes over a perfect field are geometrically reduced](of-is-reduced-of-perfect-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.GeometricallyIntegral](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Dynamics.FisherKPP.not_isFront_of_sq_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traveling front of the Fisher–KPP equation](is-front.md)
+
+## Proof depends on
+
+- [Traveling-wave profile of the Fisher–KPP equation](is-wave-profile.md)
+- [No traveling wave with `c² < 4 r D`](not-eventually-pos-of-sq-lt.md)
 
 ## Sources
 

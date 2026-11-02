@@ -13,7 +13,11 @@ homozygote `g = (a, a)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mendel's law of segregation](transmit.md)
+
+## Proof depends on
+
+- [Uniform distribution on a finite type](../../../Probability/distributions/discrete-uniform-distribution/uniform-fintype.md)
 
 ## Sources
 

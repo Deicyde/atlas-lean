@@ -15,7 +15,11 @@ freedom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Squared orthonormal coordinates of a standard Gaussian are chi-square](std-gaussian-map-sum-sq-inner.md)
 
 ## Sources
 

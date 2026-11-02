@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.integral_hetHat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased heterozygosity estimator](het-hat.md)
+
+## Proof depends on
+
+- [Sample allele frequency is unbiased](integral-div-of-has-law-binomial.md)
+- [Second factorial moment of a binomial random variable](../../../Probability/distributions/binomial-distribution/integral-mul-sub-one-of-has-law-binomial.md)
 
 ## Sources
 

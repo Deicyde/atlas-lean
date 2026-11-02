@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.norm_l1ConvCLMOf_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution by a fixed $\ell^1$ sequence as a bounded operator](l1-conv-clmof.md)
+
+## Proof depends on
+
+- [Young's inequality with one $\ell^1$ factor](norm-l1-conv-le.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ transported by the transition kernel of `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite-state Markov chain with a given transition matrix](is-finite-markov-chain.md)
+- [Transition kernel of a stochastic matrix](finite-chain-kernel.md)
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Finite Markov chains satisfy the general Markov property](to-is-markov-chain.md)
+- [Chapman–Kolmogorov equations, forward (law) form](../chapman-kolmogorov-equations/map-eq-bind-pow.md)
 
 ## Sources
 

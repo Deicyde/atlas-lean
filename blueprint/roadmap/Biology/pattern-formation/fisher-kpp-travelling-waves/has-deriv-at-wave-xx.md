@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Dynamics.FisherKPP.hasDerivAt_wave_xx
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traveling-wave profile of the Fisher–KPP equation](is-wave-profile.md)
 
 ## Sources
 

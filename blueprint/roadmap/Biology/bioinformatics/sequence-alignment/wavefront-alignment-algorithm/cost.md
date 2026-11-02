@@ -11,7 +11,12 @@ lean: Cslib.Algorithms.Lean.LinearPenalties.cost
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Linear gap penalties](linear-penalties.md)
+
+## Proof depends on
+
+- [Cost of an alignment column under linear gap penalties](column-cost.md)
 
 ## Sources
 

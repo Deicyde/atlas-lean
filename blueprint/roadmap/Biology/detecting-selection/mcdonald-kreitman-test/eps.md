@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.McDonaldKreitman.MKModel.EPs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
 
 ## Sources
 

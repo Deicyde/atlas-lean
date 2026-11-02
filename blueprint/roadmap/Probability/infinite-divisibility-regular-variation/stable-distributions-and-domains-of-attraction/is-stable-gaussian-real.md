@@ -14,7 +14,12 @@ i.i.d. `N(μ, v)` variables is `N(nμ, nv)`, which is the pushforward of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stable distribution of a given index](is-stable.md)
+
+## Proof depends on
+
+- [Convolution powers of a Gaussian are Gaussian](conv-pow-gaussian-real.md)
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
 
 ## Sources
 

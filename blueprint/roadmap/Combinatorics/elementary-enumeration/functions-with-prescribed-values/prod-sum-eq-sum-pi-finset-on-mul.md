@@ -12,7 +12,11 @@ lean: Fintype.prod_sum_eq_sum_piFinsetOn_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite tuples with prescribed default values](pi-finset-on.md)
+
+## Proof depends on
+
+- [Product of sums over default-padded tuples](sum-pi-finset-on-prod.md)
 
 ## Sources
 

@@ -18,6 +18,11 @@ of `(a, b)`, its weight, and the inside values of `[a + 1, i)` and `[j + 1, b)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complementary base pairing of two positions](can-pair.md)
+- [Inside recursion](inside.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

@@ -13,6 +13,11 @@ lean: BitVec.mulMod
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multiplication by $X$ of a binary polynomial residue](mul-xmod.md)
+- [Little-endian bits of a bitvector](../bitvectors-and-boolean-lists/to-bool-list-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.BitVec.BinaryPolynomialArithmetic](../../../../sources/v2/MathlibExt.md)

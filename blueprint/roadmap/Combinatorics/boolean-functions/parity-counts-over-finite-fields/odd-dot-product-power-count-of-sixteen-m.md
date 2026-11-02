@@ -16,6 +16,10 @@ statement.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lower bound on odd-parity pairs in a finite field](odd-dot-product-power-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.FiniteField.SmallBias](../../../../sources/v2/MathlibExt.md)

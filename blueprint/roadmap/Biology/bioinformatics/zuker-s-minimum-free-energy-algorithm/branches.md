@@ -14,6 +14,10 @@ are not strictly inside another pair of `P` strictly inside `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict enclosure of one base pair by another](encloses.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.Zuker](../../../../sources/v2/CSLibExt.md)

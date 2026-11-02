@@ -15,6 +15,11 @@ of positive probability.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Propensity score](propensity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Causality.CausalIdentification](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.card_rankedHistory_mul_tw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
+- [Ranked labeled history](ranked-history.md)
+
+## Proof depends on
+
+- [Number of ranked labeled histories](card-ranked-history.md)
+- [Product of pair counts times a power of two is $n!(n-1)!$](prod-choose-two-mul-two-pow.md)
 
 ## Sources
 

@@ -14,7 +14,16 @@ This general form includes the classical Brownian natural-filtration law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continuous process with independent increments](is-continuous-independent-increment-proc.md)
+- [Germ sigma-algebra of the natural filtration](natural-germ.md)
+
+## Proof depends on
+
+- [Coordinates of a continuous independent-increment process are measurable](measurable.md)
+- [Germ sigma-algebra lies in every positive-time level](germ-le-of-pos.md)
+- [Process is measurable for its natural filtration at later times](measurable-natural-filtration.md)
+- [Natural filtration of a process](natural-filtration.md)
+- [Natural filtration is the smallest adapted filtration](natural-filtration-le.md)
 
 ## Sources
 

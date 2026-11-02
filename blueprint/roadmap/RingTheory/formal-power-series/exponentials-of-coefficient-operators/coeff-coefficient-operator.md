@@ -12,7 +12,7 @@ lean: MvPowerSeries.coeff_coefficientOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
 
 ## Sources
 

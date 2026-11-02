@@ -14,7 +14,11 @@ coefficients vanish at and beyond `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wandering subspace of an isometry](wandering-sub.md)
+
+## Proof depends on
+
+- [One-step Wold splitting into wandering vector plus range](exists-wandering-add-range.md)
 
 ## Sources
 

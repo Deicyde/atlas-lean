@@ -13,7 +13,12 @@ surjective, and its kernel has dimension `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Dimension of the kernel of a backward shift power](finrank-ker-backward-clm-pow.md)
+- [Surjectivity of powers of the backward shift](surjective-backward-clm-pow.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ to `F` with increments independent of the past and an `F`-progressive integrand 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Density of elementary integrands](is-ito-approximable-of-is-progressive.md)
+- [Martingale property of the Itô integral](martingale-ito-integral-2.md)
 
 ## Sources
 

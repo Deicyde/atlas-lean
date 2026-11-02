@@ -13,7 +13,13 @@ both have zero flux for the same positive differentiable density differ by a con
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability flux of a diffusion](flux.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+
+## Proof depends on
+
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
+- [A zero-flux density determines the drift](pderiv-eq-of-flux-eq-zero.md)
 
 ## Sources
 

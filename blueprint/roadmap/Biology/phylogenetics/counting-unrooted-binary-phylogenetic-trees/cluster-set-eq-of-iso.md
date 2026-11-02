@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.UnrootedTreeCount.clusterSet_eq_of_iso
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](iso.md)
+- [Cluster set of a tree seen from a leaf](cluster-set.md)
+
+## Proof depends on
+
+- [Cluster of a vertex seen from a leaf](cluster.md)
 
 ## Sources
 

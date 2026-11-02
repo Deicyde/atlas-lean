@@ -11,7 +11,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.PotentialOut
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compliance types of Angrist, Imbens and Rubin](compliance-type.md)
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
+
+## Proof depends on
+
+- [Compliance type of a pair of potential treatments](compliance-type-2.md)
 
 ## Sources
 

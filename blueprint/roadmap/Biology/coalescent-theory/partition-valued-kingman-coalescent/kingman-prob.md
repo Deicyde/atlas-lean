@@ -13,7 +13,11 @@ the empty sample it gives `1` to the empty partition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
 
 ## Sources
 

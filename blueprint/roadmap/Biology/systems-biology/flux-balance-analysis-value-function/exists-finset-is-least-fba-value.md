@@ -13,7 +13,16 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.exists_finset_isLeast_fbaValue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible fluxes of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-feasible.md)
+- [Optimal value of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-value.md)
+
+## Proof depends on
+
+- [Weak duality for flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/dot-product-le-fba-dual-value.md)
+- [Feasible flux balance problem attains its optimum](../stochastic-mass-action-metabolic-control-and-flu/exists-fba-value-eq.md)
+- [Finitely many dual solutions suffice](exists-finset-optimal-fba-dual.md)
+- [Dual feasibility for flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-dual-feasible.md)
+- [Dual objective of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-dual-value.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ be arbitrary because equality with an allowed left value already forces its vert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Interaction of two states in a factored network](../integer-valued-factored-tensor-networks/interaction.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Row network of a grid tensor](grid-row-network.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Interaction between rows of the grid row network](grid-row-network-interaction.md)
 
 ## Sources
 

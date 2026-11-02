@@ -12,7 +12,7 @@ lean: FirstOrder.Language.Term.leafCount_relabel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leaf count of a first-order term](leaf-count.md)
 
 ## Sources
 

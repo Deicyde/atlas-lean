@@ -15,7 +15,12 @@ measurable coordinates and integrability of `exp ⟪ξ, X₀⟫` at this directi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of the empirical mean](empirical-mean-measure-vec.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
+
+## Proof depends on
+
+- [Chernoff bound for the empirical mean of real-valued i.i.d. variables](measure-empirical-mean-le-of-threshold.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.hasBoundedFibers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
 
 ## Sources
 

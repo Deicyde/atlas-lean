@@ -13,7 +13,14 @@ of the corresponding fiber count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+- [Fiber cardinality of a map](fiber-card.md)
+
+## Proof depends on
+
+- [Pointwise action of the bounded composition operator](comp-clm-apply.md)
+- [Fiber count agrees with set cardinality](fiber-card-eq-ncard.md)
 
 ## Sources
 

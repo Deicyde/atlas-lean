@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.GoldbeterKoshland.goldbeterKoshland_mem_Ioo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Goldbeter–Koshland function](goldbeter-koshland.md)
 
 ## Sources
 

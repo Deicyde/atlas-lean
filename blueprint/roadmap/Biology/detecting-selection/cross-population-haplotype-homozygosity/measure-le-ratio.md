@@ -13,7 +13,11 @@ that the ratio exceeds `c` equals the probability that it falls below `1 / c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exchangeable pair of statistics](is-exchangeable-pair.md)
+
+## Proof depends on
+
+- [Equal tails of the log ratio of an exchangeable pair](measure-le-log-ratio.md)
 
 ## Sources
 

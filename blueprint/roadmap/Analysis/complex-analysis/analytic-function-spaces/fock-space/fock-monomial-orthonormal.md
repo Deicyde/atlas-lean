@@ -13,7 +13,7 @@ vectors of the coefficient model, are orthonormal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized monomials in the Fock space](fock-monomial.md)
 
 ## Sources
 

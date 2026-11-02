@@ -15,6 +15,11 @@ reciprocal eigenvalues.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenvector basis equation with real eigenvalues](apply-eigenvector-basis-real.md)
+- [Eigenvalues lie within the Rayleigh quotient bounds](eigenvalue-mem-icc-of-rayleigh-bounds.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.KantorovichInequality](../../../../sources/v2/MathlibExt.md)

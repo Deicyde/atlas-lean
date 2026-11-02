@@ -13,7 +13,13 @@ inequality for `t ↦ t ^ k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Bloom filter false-positive rate under uniform hashing](false-positive-prob.md)
+
+## Proof depends on
+
+- [Expected fraction of set bits in a Bloom filter](expected-fraction-set.md)
+- [False-positive rate as the expected k-th power of the set fraction](false-positive-prob-eq.md)
+- [Bits set by the stored hash values](set-bits.md)
 
 ## Sources
 

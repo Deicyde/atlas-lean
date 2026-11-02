@@ -13,7 +13,11 @@ in general that estimate has denominator `∑ i, X i j ^ 2` instead of `N`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](model.md)
+
+## Proof depends on
+
+- [Phenotype in the LD-score model](pheno.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MvPolynomial.coeffL1Norm_eq_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient L1 norm of a multivariate polynomial](coeff-l1-norm.md)
 
 ## Sources
 

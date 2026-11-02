@@ -12,7 +12,15 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.adjoint_toeplitzOpe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute summability of the adjoint symbol](summable-norm-toeplitz-adjoint-symbol.md)
+- [Adjoint symbol of a Toeplitz operator](toeplitz-adjoint-symbol.md)
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Adjoint of a diagonal slice is the opposite slice](adjoint-toeplitz-slice.md)
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+- [Toeplitz operator as the sum of its diagonal slices](toeplitz-has-sum-slices.md)
 
 ## Sources
 

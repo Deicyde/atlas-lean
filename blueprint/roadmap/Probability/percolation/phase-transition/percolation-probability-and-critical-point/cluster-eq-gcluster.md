@@ -14,7 +14,11 @@ lean: StatMech.Percolation.cluster_eq_gcluster
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open cluster in a graph](../percolation-on-product-graphs/gcluster.md)
+
+## Proof depends on
+
+- [Open subgraph of a graph](../percolation-on-product-graphs/open-subgraph.md)
 
 ## Sources
 

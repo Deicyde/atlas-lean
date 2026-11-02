@@ -11,7 +11,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning.Tree.numInternal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
 
 ## Sources
 

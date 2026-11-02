@@ -14,7 +14,13 @@ its own breakpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid set of recombination breakpoints](is-breakpoint-set.md)
+- [Disjoint family of four-gamete intervals](is-disjoint-family.md)
+
+## Proof depends on
+
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Breakpoint separating two sites](separates.md)
 
 ## Sources
 

@@ -14,7 +14,17 @@ the treatment effect `y₁ᵢ - y₀ᵢ` is the same for all units.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite-population average treatment effect](ate.md)
+- [Difference-in-means estimator](diff-in-means.md)
+- [Neyman's variance estimator](neyman-var.md)
+- [Expectation of a statistic under complete randomization](rand-exp.md)
+
+## Proof depends on
+
+- [Mean of a finite population](pop-mean.md)
+- [Variance of a finite population](pop-var.md)
+- [Expectation of Neyman's variance estimator under complete randomization](rand-exp-neyman-var.md)
+- [Neyman (1923)](rand-exp-sq-diff-in-means-sub-ate.md)
 
 ## Sources
 

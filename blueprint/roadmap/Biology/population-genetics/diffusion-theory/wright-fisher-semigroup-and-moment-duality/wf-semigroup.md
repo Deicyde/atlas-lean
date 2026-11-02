@@ -15,6 +15,12 @@ generations: `wfSemigroup t f` is the uniform limit of `(wfStep M)^⌊tM⌋ f` a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup](../../../../../sources/v2/MathlibExt.md)

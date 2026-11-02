@@ -15,7 +15,15 @@ general not `hudsonFst`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased f2 estimator](f2-hat.md)
+- [Estimator of Hudson's F_ST denominator](hudson-den-hat.md)
+- [Hudson's F_ST (ratio of averages)](hudson-fst.md)
+
+## Proof depends on
+
+- [Hudson's F_ST denominator at one site](hudson-den.md)
+- [Unbiasedness of the summed f2 estimator](integral-sum-f2-hat.md)
+- [Unbiasedness of the summed Hudson denominator estimator](integral-sum-hudson-den-hat.md)
 
 ## Sources
 

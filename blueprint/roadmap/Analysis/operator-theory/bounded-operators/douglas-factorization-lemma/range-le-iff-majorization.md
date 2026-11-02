@@ -15,6 +15,11 @@ majorization holds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Douglas' lemma: majorization iff factorization](majorization-iff-exists-factorization.md)
+- [Douglas' lemma: range inclusion iff factorization](range-le-iff-exists-factorization.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

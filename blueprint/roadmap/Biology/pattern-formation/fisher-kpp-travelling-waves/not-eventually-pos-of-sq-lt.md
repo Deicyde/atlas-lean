@@ -14,7 +14,7 @@ tending to `0` at `+∞` is not eventually positive. (This excludes `|c| < 2 √
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traveling-wave profile of the Fisher–KPP equation](is-wave-profile.md)
 
 ## Sources
 

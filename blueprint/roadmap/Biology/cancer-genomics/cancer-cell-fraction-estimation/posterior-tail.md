@@ -16,6 +16,12 @@ purity `α`, copy number `q`, a prior `prior` on the grid points `grid k`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expected allelic fraction of a somatic mutation](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af.md)
+- [Posterior tail probability on a grid](tail-ratio.md)
+- [Binomial probability mass function](../detection-power-for-somatic-mutations/binom-pmf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.CancerCellFraction](../../../../sources/v2/MathlibExt.md)

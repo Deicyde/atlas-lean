@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.sum_ewensProb_mul_card_parts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ewens sampling formula](ewens-prob.md)
 
 ## Sources
 

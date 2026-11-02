@@ -12,7 +12,7 @@ lean: TensorNetwork.transposeRectangleKernel_transposeRectangleKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transpose of a rectangle kernel](transpose-rectangle-kernel.md)
 
 ## Sources
 

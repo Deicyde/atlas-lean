@@ -14,7 +14,7 @@ with `γ = 4Ns`; it equals `2N · maruyamaBelow (2Ns) z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
 
 ## Sources
 

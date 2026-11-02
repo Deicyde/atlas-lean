@@ -13,7 +13,12 @@ lean: MathlibExt.Probability.Statistics.ExactTests.sum_leveneProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Levene's exact Hardy–Weinberg probability](levene-prob.md)
+
+## Proof depends on
+
+- [Levene's formula is the conditional law under random union of gametes](card-het-count-div-choose.md)
+- [Number of heterozygous individuals](het-count.md)
 
 ## Sources
 

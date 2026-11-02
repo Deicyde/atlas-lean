@@ -16,6 +16,10 @@ adjusted vector is zero the ratio is the junk value `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.Eigenstrat](../../../../sources/v2/MathlibExt.md)

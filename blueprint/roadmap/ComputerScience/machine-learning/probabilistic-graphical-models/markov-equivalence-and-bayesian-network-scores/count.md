@@ -11,7 +11,7 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.count
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
 
 ## Sources
 

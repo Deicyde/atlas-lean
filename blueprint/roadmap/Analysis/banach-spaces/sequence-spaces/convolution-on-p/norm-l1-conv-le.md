@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.norm_l1Conv_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence](l1-conv.md)
+
+## Proof depends on
+
+- [Translation is an isometry of $\ell^p(\mathbb{Z})$](norm-shift-lp.md)
+- [Translation of an $\ell^p$ sequence on the integers](shift-lp.md)
+- [The $\ell^1$ norm as a sum of coordinate norms](tsum-norm-l1.md)
+- [Coordinate norms of an $\ell^1$ family are summable](../duals-of-p-and-c/summable-norm-lp-one.md)
 
 ## Sources
 

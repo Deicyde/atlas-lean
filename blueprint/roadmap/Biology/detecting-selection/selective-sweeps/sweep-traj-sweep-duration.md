@@ -13,7 +13,8 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.sweepTraj_sweepDuratio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Duration of a logistic sweep between two frequencies](sweep-duration.md)
+- [Logistic trajectory of a selective sweep](sweep-traj.md)
 
 ## Sources
 

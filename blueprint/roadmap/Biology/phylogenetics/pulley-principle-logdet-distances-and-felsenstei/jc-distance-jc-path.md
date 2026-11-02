@@ -13,7 +13,14 @@ probability that the two ends of a path differ is `μ` times the total branch le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition matrix along a path](jc-path.md)
+- [Jukes–Cantor distance](../jukes-cantor-model/jc-distance.md)
+
+## Proof depends on
+
+- [Chapman–Kolmogorov along a path](jc-path-eq.md)
+- [The Jukes–Cantor distance correction](../jukes-cantor-model/jc-distance-p-diff.md)
+- [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.RademacherTypeCotype.rademacherSign_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher sign of a coordinate](rademacher-sign.md)
 
 ## Sources
 

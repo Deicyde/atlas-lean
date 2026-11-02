@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.qValue_eq_of_monotone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Storey's q-value](q-value.md)
 
 ## Sources
 

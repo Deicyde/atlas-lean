@@ -15,6 +15,10 @@ operators on `[0, 1]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fredholm index is constant on preconnected families](index-eq-of-preconnected.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.FredholmIndexHomotopy](../../../../../sources/v2/MathlibExt.md)

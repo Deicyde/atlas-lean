@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.MetaAnalysis.sum_sq_mul_inverseVarianceW
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance weights](inverse-variance-weights.md)
 
 ## Sources
 

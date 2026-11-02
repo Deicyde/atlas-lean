@@ -14,7 +14,15 @@ right non-head cell. The first cell of a longer word is tagged `left`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell symbol of the LBA grammar](cell-sym.md)
+- [Generator symbol of the LBA grammar](gen-sym.md)
+- [Start symbol of the LBA grammar](start-sym.md)
 
 ## Sources
 

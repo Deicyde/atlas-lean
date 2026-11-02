@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.InfiniteAlleles.tendsto_iterate_homo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium homozygosity in the infinite-alleles model](eq-homozygosity.md)
+- [Homozygosity recursion in the infinite-alleles model](homozygosity-step.md)
 
 ## Sources
 

@@ -13,7 +13,18 @@ see the module docstring for the site definition), provided `ρ_S(1) > 0` and `�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Nonsynonymous substitution rate per nonsynonymous site (dN)](d-n.md)
+- [Synonymous substitution rate per synonymous site (dS)](d-s.md)
+- [Stationary rate of nonsynonymous substitutions](nonsyn-rate.md)
+- [Stationary rate of synonymous substitutions](syn-rate.md)
+
+## Proof depends on
+
+- [Nonsynonymous rate is linear in ω](nonsyn-rate-eq.md)
+- [Number of nonsynonymous sites per codon](nonsyn-sites.md)
+- [Synonymous rate does not depend on ω](syn-rate-eq.md)
+- [Number of synonymous sites per codon](syn-sites.md)
 
 ## Sources
 

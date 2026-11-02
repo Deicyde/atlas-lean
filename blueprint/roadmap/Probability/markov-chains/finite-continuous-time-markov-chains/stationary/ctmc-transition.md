@@ -14,7 +14,8 @@ vector `π` and a rate matrix `Q` this is the reversibility of the chain started
 
 ## Depends on
 
-This node has no prerequisites.
+- [Detailed balance](is-detailed-balance.md)
+- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
 
 ## Sources
 

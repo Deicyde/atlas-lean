@@ -13,7 +13,12 @@ lean: ProbabilityTheory.memLp_itoIntegral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Itô integral as an element of $L^2$](ito-integral-l2.md)
+- [Itô integral process is a version of the $L^2$ integral](ito-integral-ae-eq.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ self-adjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+
+## Proof depends on
+
+- [Adjoint of a Hankel operator](adjoint-hankel-operator.md)
+- [Anti-diagonal slice operator](hankel-slice.md)
 
 ## Sources
 

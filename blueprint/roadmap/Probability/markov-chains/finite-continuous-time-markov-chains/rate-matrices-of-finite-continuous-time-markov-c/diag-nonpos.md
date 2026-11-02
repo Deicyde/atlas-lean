@@ -12,7 +12,11 @@ lean: ProbabilityTheory.IsRateMatrix.diag_nonpos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](is-rate-matrix.md)
+
+## Proof depends on
+
+- [Diagonal of a rate matrix is minus the total jump rate](diag-eq.md)
 
 ## Sources
 

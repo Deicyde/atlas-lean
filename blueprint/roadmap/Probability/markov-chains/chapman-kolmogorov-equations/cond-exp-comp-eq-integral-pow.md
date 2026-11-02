@@ -17,7 +17,11 @@ canonical conditional-indicator formula over each past-measurable set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Markov chain with respect to a filtration](is-markov-chain.md)
+
+## Proof depends on
+
+- [Chapman–Kolmogorov equations, conditional form](cond-exp-indicator-eq.md)
 
 ## Sources
 

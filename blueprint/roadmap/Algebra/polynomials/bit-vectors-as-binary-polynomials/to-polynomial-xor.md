@@ -13,7 +13,11 @@ integer addition on bitvectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary polynomial of a bitvector](to-polynomial.md)
+
+## Proof depends on
+
+- [Coefficients of the binary polynomial of a bitvector](coeff-to-polynomial.md)
 
 ## Sources
 

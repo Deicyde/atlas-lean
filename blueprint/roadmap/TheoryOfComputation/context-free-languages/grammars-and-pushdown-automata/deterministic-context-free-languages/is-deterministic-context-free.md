@@ -16,6 +16,13 @@ exactly the end-marker encodings of its words.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pushdown automaton](../pushdown-automata/pda.md)
+- [Deterministic pushdown automaton](is-deterministic.md)
+- [Language accepted by a pushdown automaton](../pushdown-automata/accepts.md)
+- [End-marker encoding of a word](end-marker-encode.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Deterministic](../../../../../sources/v2/CSLibExt.md)

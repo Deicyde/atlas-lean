@@ -13,7 +13,8 @@ of every leaf `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](labeling.md)
+- [Rooted binary tree with transition weights](tree.md)
 
 ## Sources
 

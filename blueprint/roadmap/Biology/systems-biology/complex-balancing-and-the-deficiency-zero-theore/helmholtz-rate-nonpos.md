@@ -15,7 +15,15 @@ Feinberg (2019), ch. 15.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Rate of change of the pseudo-Helmholtz function](helmholtz-rate.md)
+
+## Proof depends on
+
+- [Mass-action vector field](mass-action-field.md)
+- [Mass-action reaction rate](rate.md)
+- [Complex balance exchanges source and product sums](sum-rate-mul-prod-eq.md)
 
 ## Sources
 

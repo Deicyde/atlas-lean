@@ -15,6 +15,10 @@ is at most `((M - m) / 2)²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bhatia–Davis inequality](weighted-bhatia-davis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.KantorovichInequality](../../../../sources/v2/MathlibExt.md)

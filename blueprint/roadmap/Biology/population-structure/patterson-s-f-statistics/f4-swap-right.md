@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f4_swap_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](f4.md)
+
+## Proof depends on
+
+- [f4 is symmetric under exchanging the two pairs](f4-comm-pairs.md)
+- [f4 changes sign when the first pair is swapped](f4-swap-left.md)
 
 ## Sources
 

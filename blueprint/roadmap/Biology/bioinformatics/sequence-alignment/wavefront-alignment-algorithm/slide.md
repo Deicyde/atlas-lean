@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.Wavefront.slide
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fuelled extension of matches along a diagonal](extend.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.WavefrontAlignment](../../../../../sources/v2/CSLibExt.md)

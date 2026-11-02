@@ -15,7 +15,11 @@ it is a covariance of a probability law when `π` is a probability vector and `0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Entries of the sticky kernel](sticky-kernel-apply.md)
 
 ## Sources
 

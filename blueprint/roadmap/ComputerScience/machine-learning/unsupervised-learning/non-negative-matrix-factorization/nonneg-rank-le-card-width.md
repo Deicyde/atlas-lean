@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.NMF.nonnegRank_le_card_width
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative rank of a matrix](nonneg-rank.md)
+
+## Proof depends on
+
+- [A nonnegative factorization bounds the nonnegative rank](nonneg-rank-le-of-mul-eq.md)
 
 ## Sources
 

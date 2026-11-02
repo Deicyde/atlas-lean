@@ -13,7 +13,11 @@ equations force every coordinate to vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Forward shift of a sequence](shift-fun.md)
 
 ## Sources
 

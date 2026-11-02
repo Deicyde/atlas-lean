@@ -12,7 +12,12 @@ lean: MvPolynomial.coeffL1Norm_sum_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient L1 norm of a multivariate polynomial](coeff-l1-norm.md)
+
+## Proof depends on
+
+- [Triangle inequality for the coefficient L1 norm](coeff-l1-norm-add-le.md)
+- [Coefficient L1 norm of the zero polynomial](coeff-l1-norm-zero.md)
 
 ## Sources
 

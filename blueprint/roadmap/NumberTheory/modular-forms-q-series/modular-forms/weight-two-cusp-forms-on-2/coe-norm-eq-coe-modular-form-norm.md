@@ -13,7 +13,7 @@ modular form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Norm of a cusp form](norm.md)
 
 ## Sources
 

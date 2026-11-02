@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning.likelihood_eq_sum_pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
+- [Site likelihood of a phylogenetic tree](likelihood.md)
+- [Tabulated Felsenstein pruning algorithm](prune-tab.md)
+
+## Proof depends on
+
+- [The site likelihood by pruning](likelihood-eq-sum-prune.md)
+- [Felsenstein's pruning recursion](prune.md)
+- [Tabulated pruning computes the pruning recursion](prune-tab-get.md)
 
 ## Sources
 

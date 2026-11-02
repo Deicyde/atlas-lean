@@ -14,6 +14,10 @@ lean: StatMech.Lattice.reachable_update
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Increasing one coordinate stays in the same component](reachable-update-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Lattice.HypercubicLattice](../../../../sources/v2/MathlibExt.md)

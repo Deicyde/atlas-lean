@@ -13,7 +13,12 @@ lean: InformationTheory.finiteConditionalMutualInformation_eq_zero_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional mutual information of a finite joint law](finite-conditional-mutual-information.md)
+
+## Proof depends on
+
+- [Atom mass is at most the mass of its image](le-map-apply.md)
+- [Kullback–Leibler divergence of finite probability laws](../shannon-entropy-and-kullback-leibler-divergence/to-real-kl-div-to-measure.md)
 
 ## Sources
 

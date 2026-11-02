@@ -13,7 +13,11 @@ fixed differences and expected polymorphisms agree iff there are no adaptive sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
+- [Expected nonsynonymous fixed differences](edn.md)
+- [Expected synonymous fixed differences](eds.md)
+- [Expected nonsynonymous polymorphisms](epn.md)
+- [Expected synonymous polymorphisms](eps.md)
 
 ## Sources
 

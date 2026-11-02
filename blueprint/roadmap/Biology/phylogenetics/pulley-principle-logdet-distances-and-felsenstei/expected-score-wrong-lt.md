@@ -15,7 +15,17 @@ model has `0 ≤ P ≤ 1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected Fitch parsimony score on a quartet](expected-score.md)
+
+## Proof depends on
+
+- [Site pattern supporting a split](supports.md)
+- [Fitch parsimony score on a quartet](parsimony-score.md)
+- [Difference of parsimony scores of two quartets](parsimony-score-sub.md)
+- [Probability of a site pattern on a quartet](pattern-prob.md)
+- [Expected frequency of patterns supporting a split](split-freq.md)
+- [Wrong split against third split frequency difference](split-freq-wrong-sub-third.md)
+- [Felsenstein (1978), the exact comparison](split-freq-wrong-sub-true.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.marginalFitness_of_symm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal fitness of an allele](marginal-fitness.md)
 
 ## Sources
 

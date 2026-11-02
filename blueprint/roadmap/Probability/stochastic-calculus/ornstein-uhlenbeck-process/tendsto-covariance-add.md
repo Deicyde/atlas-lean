@@ -13,7 +13,13 @@ lean: ProbabilityTheory.IsOrnsteinUhlenbeckFromZero.tendsto_covariance_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
+
+## Proof depends on
+
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
+- [Ornstein–Uhlenbeck covariance converges to the stationary one](tendsto-ou-covariance-add.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ haplotype per population at derived-allele frequencies `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Probability of a derived-allele configuration](config-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS](../../../../sources/v2/MathlibExt.md)

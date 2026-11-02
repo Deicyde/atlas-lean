@@ -16,7 +16,18 @@ ancestry labels obey the two-locus random-mating recursion of `Linkage.recombine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of allele counts within a gamete](allele-cov.md)
+- [Joint law of local ancestry after an admixture pulse](ancestry-pulse.md)
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+
+## Proof depends on
+
+- [Gamete allele covariance equals linkage disequilibrium](allele-cov-eq-linkage-diseq.md)
+- [Decay of admixture linkage disequilibrium over generations](linkage-diseq-admixed.md)
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+- [Recombination preserves total gamete frequency](sum-iterate-recombine.md)
+- [Pulse gamete frequencies sum to one](sum-source-mix.md)
+- [Linkage disequilibrium of a two-locus gamete law](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq.md)
 
 ## Sources
 

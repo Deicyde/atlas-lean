@@ -13,6 +13,10 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.fourierMatrix
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourier vector on the integers modulo n](fourier-vec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum](../../../../sources/v2/MathlibExt.md)

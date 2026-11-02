@@ -14,7 +14,12 @@ cone and is orthogonal to `p`. The ambient space need not be complete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-point projection onto a convex set](../../hilbert-spaces/hilbert-projection-theorem/convex-projection.md)
+
+## Proof depends on
+
+- [Nearest points coincide with the convex projection](../../hilbert-spaces/hilbert-projection-theorem/convex-projection-eq-of-is-nearest-point.md)
+- [Variational inequality for the convex projection](../../hilbert-spaces/hilbert-projection-theorem/convex-projection-variational.md)
 
 ## Sources
 

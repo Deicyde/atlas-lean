@@ -13,6 +13,10 @@ lean: HahnSeries.ofBivariateAddMonoidAlgebra
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Embedding of a finite additive monoid algebra into Hahn series](of-add-monoid-algebra.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.HahnSeries.MonoidAlgebra](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ invariant for every `P t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Detailed balance](is-detailed-balance.md)
+- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [Detailed balance implies invariance for the generator](vec-mul-eq-zero.md)
+- [Invariance under the semigroup](vec-mul-eq-zero-iff-forall-vec-mul-ctmc.md)
 
 ## Sources
 

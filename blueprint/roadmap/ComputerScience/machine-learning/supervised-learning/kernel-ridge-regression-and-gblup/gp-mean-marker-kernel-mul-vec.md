@@ -13,7 +13,14 @@ lean: Cslib.MachineLearning.GBLUP.gpMean_markerKernel_mulVec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear marker kernel on genotype vectors](marker-kernel.md)
+- [Kernel matrix](../gaussian-process-regression/kernel-matrix.md)
+- [Ridge estimate](../least-squares-ridge-and-lasso-regression/ridge-estimate.md)
+
+## Proof depends on
+
+- [GP posterior mean = GBLUP](gp-mean-marker-kernel.md)
+- [RR-BLUP = GBLUP](mul-vec-ridge-estimate.md)
 
 ## Sources
 

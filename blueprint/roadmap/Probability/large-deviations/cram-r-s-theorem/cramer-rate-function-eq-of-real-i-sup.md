@@ -13,7 +13,12 @@ The finiteness premise belongs to this corollary, not the corrected definitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
+
+## Proof depends on
+
+- [Cramér rate function as a supremum when all moments are integrable](cramer-rate-function-eq-i-sup-of-integra.md)
 
 ## Sources
 

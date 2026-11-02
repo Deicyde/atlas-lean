@@ -11,7 +11,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.ColocPrior.categoricalP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colocalization prior parameters](coloc-prior.md)
+
+## Proof depends on
+
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Null mass of the categorical colocalization prior](p0.md)
+- [Colocalization hypothesis of a causal configuration](coloc-hypothesis-2.md)
 
 ## Sources
 

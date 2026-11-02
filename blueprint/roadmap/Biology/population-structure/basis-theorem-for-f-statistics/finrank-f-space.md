@@ -13,7 +13,13 @@ on the populations, used to index the `f2` basis, is chosen in the proof.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space spanned by the per-locus f-statistics](f-space.md)
+
+## Proof depends on
+
+- [Per-locus f2 form](f2-form.md)
+- [Linear independence of Patterson's f2 basis](linear-independent-f2-form.md)
+- [Patterson's f2 basis spans the f-statistic space](span-f2-form.md)
 
 ## Sources
 

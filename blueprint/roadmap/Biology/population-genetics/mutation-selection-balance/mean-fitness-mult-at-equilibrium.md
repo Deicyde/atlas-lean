@@ -14,7 +14,11 @@ for `U = 1` the point `U / s` is not an equilibrium.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
+
+## Proof depends on
+
+- [Mean fitness under multiplicative fitness](mean-fitness-mult.md)
 
 ## Sources
 

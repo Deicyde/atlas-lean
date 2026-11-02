@@ -15,6 +15,10 @@ of `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Isomorphism of maximal ideal power quotients of a ring and its completion](quotient-maximal-ideal-pow-alg-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdicCompletion.LocalRing](../../../../../sources/v2/MathlibExt.md)

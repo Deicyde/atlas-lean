@@ -12,7 +12,12 @@ a chosen point `τ` (taken after the last observation time).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+
+## Proof depends on
+
+- [Kaplan–Meier jump at an observation time](km-mass.md)
+- [Kaplan–Meier mass after the last observation](km-tail.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: Matrix.PosSemidef.det_le_det_add
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Minkowski's determinant inequality](minkowski-det.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.MinkowskiDeterminant](../../../../sources/v2/MathlibExt.md)

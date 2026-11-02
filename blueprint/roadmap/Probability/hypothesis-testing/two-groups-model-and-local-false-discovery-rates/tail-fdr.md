@@ -12,7 +12,11 @@ the densities. Efron's `Fdr(z)` is `tailFdr (Set.Iic z)`. It is `0` when `P(Γ) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+
+## Proof depends on
+
+- [Mixture density of the two-groups model](mixture-density.md)
 
 ## Sources
 

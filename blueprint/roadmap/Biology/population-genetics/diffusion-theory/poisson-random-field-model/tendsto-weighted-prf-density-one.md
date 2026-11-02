@@ -13,7 +13,13 @@ to `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Continuity of Kimura's fixation probability](../wright-fisher-diffusion/continuous-kimura-fixation.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Kimura's fixation probability vanishes at frequency zero](../wright-fisher-diffusion/kimura-fixation-zero-right.md)
 
 ## Sources
 

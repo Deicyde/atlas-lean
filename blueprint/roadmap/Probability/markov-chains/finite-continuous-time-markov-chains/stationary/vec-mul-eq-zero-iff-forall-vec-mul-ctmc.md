@@ -13,7 +13,7 @@ lean: ProbabilityTheory.vecMul_eq_zero_iff_forall_vecMul_ctmcTransition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
 
 ## Sources
 

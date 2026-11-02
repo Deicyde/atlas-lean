@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.diploidSelect_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of diploid viability selection](diploid-select.md)
+
+## Proof depends on
+
+- [Diploid mean fitness under Hardy–Weinberg proportions](diploid-mean-fitness.md)
+- [Positivity of diploid mean fitness](diploid-mean-fitness-pos.md)
+- [Marginal fitness of an allele](marginal-fitness.md)
 
 ## Sources
 

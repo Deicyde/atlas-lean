@@ -13,7 +13,8 @@ exponential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal exponential of a coefficient operator](exp-operator.md)
+- [Exponential of coefficient derivations as a ring endomorphism](exp-operator-hom.md)
 
 ## Sources
 

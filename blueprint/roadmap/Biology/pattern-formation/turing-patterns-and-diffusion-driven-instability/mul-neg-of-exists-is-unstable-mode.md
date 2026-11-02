@@ -13,7 +13,12 @@ and `d_u, d_v ≥ 0`, diffusion-driven instability forces `f_u g_v < 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+
+## Proof depends on
+
+- [Dispersion polynomial](dispersion-det.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
 
 ## Sources
 

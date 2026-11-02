@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.maruyamaBelow_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
+
+## Proof depends on
+
+- [Hyperbolic form of the sojourn density below the current frequency](maruyama-below-eq-sinh.md)
+- [Symmetry](maruyama-below-neg.md)
 
 ## Sources
 

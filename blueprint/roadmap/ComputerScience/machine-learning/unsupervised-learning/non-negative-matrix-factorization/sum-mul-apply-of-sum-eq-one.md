@@ -17,6 +17,10 @@ equals the sum of its exposures.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column sums of a matrix product](sum-mul-apply.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Factorization.NMF](../../../../../sources/v2/CSLibExt.md)

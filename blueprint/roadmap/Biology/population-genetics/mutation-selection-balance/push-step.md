@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.pushStep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial transition kernel for loss-of-function counts](kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance](../../../../sources/v2/MathlibExt.md)

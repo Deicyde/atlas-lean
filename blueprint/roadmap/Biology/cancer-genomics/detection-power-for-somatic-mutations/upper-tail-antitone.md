@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.upperTail_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial upper tail probability](upper-tail.md)
+
+## Proof depends on
+
+- [Binomial probability mass function](binom-pmf.md)
+- [Nonnegativity of binomial probabilities](binom-pmf-nonneg.md)
+- [Recursion for the binomial upper tail](upper-tail-eq-add.md)
 
 ## Sources
 

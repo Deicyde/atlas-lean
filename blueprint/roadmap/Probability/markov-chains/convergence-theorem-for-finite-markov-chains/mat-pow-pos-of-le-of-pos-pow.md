@@ -16,7 +16,14 @@ summand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+
+## Proof depends on
+
+- [Additivity of recursive matrix powers](mat-pow-add.md)
+- [Powers of a stochastic matrix are nonnegative](../kolmogorov-s-criterion-for-reversibility/mat-pow-nonneg.md)
+- [Powers of a stochastic matrix are stochastic](mat-pow-row-sum.md)
 
 ## Sources
 

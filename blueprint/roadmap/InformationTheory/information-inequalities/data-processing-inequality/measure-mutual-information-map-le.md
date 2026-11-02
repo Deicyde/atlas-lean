@@ -12,7 +12,11 @@ lean: InformationTheory.measureMutualInformation_map_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mutual information of a joint probability measure](../../entropy-and-mutual-information/conditional-entropy-and-mutual-information/measure-mutual-information.md)
+
+## Proof depends on
+
+- [Data-processing inequality](measure-mutual-information-comp-le.md)
 
 ## Sources
 

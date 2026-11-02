@@ -14,6 +14,10 @@ lean: ProbabilityTheory.HasLaw.variance_eq_of_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Variance of the exponential law](variance-id-exp-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

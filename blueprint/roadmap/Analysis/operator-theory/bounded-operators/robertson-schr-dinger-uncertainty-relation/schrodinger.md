@@ -14,7 +14,12 @@ squared norm of the commutator expectation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+- [Normalized variance of an observable](variance.md)
+
+## Proof depends on
+
+- [Squared norm of the commutator expectation](norm-sq-commutator-inner.md)
 
 ## Sources
 

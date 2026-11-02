@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.isMinOn_tikh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tikhonov functional](tikhonov-functional.md)
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Quadratic identity for the Tikhonov functional at a normal-equation solution](tikhonov-functional-add-of-normal-equati.md)
 
 ## Sources
 

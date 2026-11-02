@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.isCoercive_restrictBilin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restriction of a bilinear form to a subspace](restrict-bilin.md)
 
 ## Sources
 

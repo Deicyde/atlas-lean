@@ -16,6 +16,10 @@ and all lie in the range of `T`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenvectors for nonzero eigenvalues lie in the range](eigenvector-mem-range-of-has-eigenvector.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.SiteFrequencySpectrum.exi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition operator of random joining](join-step.md)
+- [Random-joining law on block-size lists](random-joining.md)
+
+## Proof depends on
+
+- [Unordered pairs of blocks](block-pairs.md)
+- [Merging two blocks of a block-size list](merge-blocks.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f4_eq_f2
 
 ## Depends on
 
-This node has no prerequisites.
+- [f2 statistic](f2.md)
+- [f4 statistic](f4.md)
+
+## Proof depends on
+
+- [Square of a difference of square-integrable frequencies is integrable](integrable-sub-sq.md)
 
 ## Sources
 

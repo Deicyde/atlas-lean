@@ -13,7 +13,22 @@ customers is the law `Ewens.hoppeLaw` of Hoppe's urn on allelic partitions after
 
 ## Depends on
 
-This node has no prerequisites.
+- [Allelic partition of a set partition](block-sizes.md)
+- [Chinese restaurant process](crp.md)
+- [Law of the allelic partition from Hoppe's urn](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-law.md)
+
+## Proof depends on
+
+- [One step of the Chinese restaurant process](crp-step.md)
+- [Seating a customer at an occupied table](join-table.md)
+- [Seating a customer at a new table](new-table.md)
+- [Seating a customer by a seating choice](seat.md)
+- [Seating choice distribution of a customer](seat-choice.md)
+- [Seating probabilities in the Chinese restaurant process](seat-weight.md)
+- [Nonnegativity of seating probabilities](seat-weight-nonneg.md)
+- [Nonnegativity of the Hoppe urn law](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-law-nonneg.md)
+- [One step of Hoppe's urn](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-step.md)
+- [Hoppe urn transition probabilities are nonnegative](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-step-nonneg.md)
 
 ## Sources
 

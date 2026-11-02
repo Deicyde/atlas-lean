@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.SkylineTimes.variance_sky
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coalescent intervals under the classic skyline model](skyline-times.md)
+- [Classic skyline estimate of population size](skyline-estimate.md)
+
+## Proof depends on
+
+- [Positivity of the number of pairs](../kingman-s-coalescent-and-watterson-s-estimator/choose-two-pos.md)
+- [Variance of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/variance-eq-of-exp-measure.md)
 
 ## Sources
 

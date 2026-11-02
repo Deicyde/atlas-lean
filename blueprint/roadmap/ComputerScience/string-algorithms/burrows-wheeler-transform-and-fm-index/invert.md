@@ -14,6 +14,10 @@ lean: Cslib.Bioinformatics.Indexing.BWT.invert
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Steps of the Burrows–Wheeler inversion walk](invert-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Indexing.BWT](../../../../sources/v2/CSLibExt.md)

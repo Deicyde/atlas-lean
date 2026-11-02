@@ -14,7 +14,8 @@ one component given the total is beta-binomial and does not depend on `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beta-binomial mass function](beta-binomial-pmf.md)
+- [Negative binomial mass function with real shape](neg-binomial-pmf.md)
 
 ## Sources
 

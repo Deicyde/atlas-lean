@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.mmRate_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Michaelis–Menten rate law](mm-rate.md)
 
 ## Sources
 

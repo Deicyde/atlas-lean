@@ -13,7 +13,12 @@ coefficient L1 norms; cancellation can make this inequality strict.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient L1 norm of a multivariate polynomial](coeff-l1-norm.md)
+
+## Proof depends on
+
+- [Upper bound on the coefficient L1 norm of a monomial](coeff-l1-norm-monomial-le.md)
+- [Coefficient L1 norm of a finite sum](coeff-l1-norm-sum-le.md)
 
 ## Sources
 

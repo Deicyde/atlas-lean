@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.sum_kernel_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial transition kernel for loss-of-function counts](kernel.md)
+- [Linear mutation–selection recursion](lin-step.md)
 
 ## Sources
 

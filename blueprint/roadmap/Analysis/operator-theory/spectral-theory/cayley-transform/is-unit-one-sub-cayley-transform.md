@@ -13,7 +13,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Inverse of a self-adjoint operator plus $i$ is a unit](is-unit-ring-inverse-add-i-of-is-self-ad.md)
+- [Formula for one minus the Cayley transform](one-sub-cayley-transform.md)
 
 ## Sources
 

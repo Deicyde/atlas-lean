@@ -17,6 +17,10 @@ cross-core pairs that plain `ehh` would wrongly count as concordant.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Concordant haplotype pairs sharing a core allele](concordant-pairs-core.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.SelectionScan.ExtendedHaplotypeHomozygosity](../../../../sources/v2/MathlibExt.md)

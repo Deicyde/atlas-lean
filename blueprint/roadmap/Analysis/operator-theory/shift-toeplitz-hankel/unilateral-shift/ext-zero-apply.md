@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.extZero_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear extension-by-zero map into $\ell^2$](ext-zero.md)
+- [Extension of a finite tuple by zeroes](ext-zero-fun.md)
 
 ## Sources
 

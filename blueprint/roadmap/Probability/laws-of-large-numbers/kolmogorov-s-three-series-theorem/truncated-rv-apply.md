@@ -12,7 +12,7 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncatedRV_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](truncated-rv.md)
 
 ## Sources
 

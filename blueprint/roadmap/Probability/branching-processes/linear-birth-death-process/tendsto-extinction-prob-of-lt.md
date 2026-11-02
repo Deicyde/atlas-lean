@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.LinearBirthDeath.tendsto_extinctionProb_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kendall's extinction probability for the birth–death process](extinction-prob.md)
 
 ## Sources
 

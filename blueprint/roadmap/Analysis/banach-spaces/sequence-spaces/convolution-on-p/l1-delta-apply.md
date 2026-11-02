@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1Delta_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit sequence in $\ell^1(\mathbb{Z})$](l1-delta.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ family scores.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
+
+## Proof depends on
+
+- [Bayesian–Dirichlet family score](bd-family.md)
 
 ## Sources
 

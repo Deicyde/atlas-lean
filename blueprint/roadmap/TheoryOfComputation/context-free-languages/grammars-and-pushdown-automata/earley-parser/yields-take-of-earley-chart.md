@@ -13,7 +13,13 @@ it consumed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Earley chart](earley-chart.md)
+- [Yield of a sentential form](../context-free-grammars/yields.md)
+
+## Proof depends on
+
+- [Concatenation of yields](../context-free-grammars/append.md)
+- [Yield through one production](../context-free-grammars/yields-of-rule.md)
 
 ## Sources
 

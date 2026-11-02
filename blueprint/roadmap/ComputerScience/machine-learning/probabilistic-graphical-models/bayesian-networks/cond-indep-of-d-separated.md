@@ -15,7 +15,14 @@ law. No disjointness of `X`, `Y`, `Z` is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](bayes-net.md)
+- [d-separation](../causal-bayesian-networks/dseparated.md)
+- [Joint distribution of a Bayesian network](joint-2.md)
+- [Conditional independence for a finite weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/cond-indep.md)
+
+## Proof depends on
+
+- [Global Markov property for finite sets of nodes](cond-indep-of-d-separated-finset.md)
 
 ## Sources
 

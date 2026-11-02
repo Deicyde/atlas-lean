@@ -12,7 +12,8 @@ lean: InformationTheory.DependenceForest.approx_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+- [Chow–Liu product approximation of a joint law](approx.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.sum_mul_pairSeparateProb_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that a pair lies in separate lineages](pair-separate-prob.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ its length, including before traversal is complete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth-cut frontier of a binary branching step](leaves.md)
+- [One depth-first round of binary branching](round.md)
+
+## Proof depends on
+
+- [Enough rounds empty the stack and collect the frontier](round-iterate-of-le.md)
+- [A round does not decrease pending plus collected occurrences](total-le-round.md)
 
 ## Sources
 

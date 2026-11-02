@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.isSelfAdjoint_toepl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Characterization of self-adjoint Toeplitz operators](is-self-adjoint-toeplitz-operator-iff.md)
 
 ## Sources
 

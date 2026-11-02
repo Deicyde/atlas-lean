@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Normed.Lp.RellichKondrachov.rellichBall_abs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rellich ball of weighted square-summable sequences](rellich-ball.md)
+
+## Proof depends on
+
+- [Membership in the Rellich ball via partial sums](mem-rellich-ball.md)
+- [Rellich weight](rellich-weight.md)
 
 ## Sources
 

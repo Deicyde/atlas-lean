@@ -12,7 +12,7 @@ lean: List.takeThrough_range
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inclusive first-hit prefix of a list](take-through.md)
 
 ## Sources
 

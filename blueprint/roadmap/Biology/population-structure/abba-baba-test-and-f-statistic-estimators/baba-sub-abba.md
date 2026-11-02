@@ -13,7 +13,8 @@ configuration of derived-allele indicators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unpolarized ABBA site-pattern indicator](abba.md)
+- [Unpolarized BABA site-pattern indicator](baba.md)
 
 ## Sources
 

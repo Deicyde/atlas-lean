@@ -18,6 +18,11 @@ converges to that point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convergence of minimizing sequences in uniformly convex spaces](exists-tendsto-of-minimizing-sequence.md)
+- [Strict convexity implies uniform convexity in finite dimensions](uniform-convex-space-of-finite-dimension.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.UniformConvex](../../../../../sources/v2/MathlibExt.md)

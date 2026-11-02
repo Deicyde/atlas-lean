@@ -13,7 +13,8 @@ to `N(0, m² σ₁²)`, where `θ = E h` and `σ₁² = Var h₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoeffding projection of a kernel](../../nonparametric-survival/u-statistics/hoeffding-proj.md)
+- [U-statistic](../../nonparametric-survival/u-statistics/u-statistic.md)
 
 ## Sources
 

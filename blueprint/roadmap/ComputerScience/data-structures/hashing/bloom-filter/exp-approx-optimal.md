@@ -13,7 +13,12 @@ lean: Cslib.Algorithms.Lean.BloomFilter.expApprox_optimal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential approximation of the Bloom filter false-positive rate](exp-approx.md)
+
+## Proof depends on
+
+- [Exponential approximation at the optimal number of hash functions](exp-approx-at-optimum.md)
+- [Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the unit interval](log-mul-log-one-sub-le.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ minus its number of gap columns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Score of an alignment](../pairwise-sequence-alignment/alignment-score.md)
+- [Number of gap columns of an alignment](gap-columns.md)
+
+## Proof depends on
+
+- [Score of an alignment column](../pairwise-sequence-alignment/column-score.md)
 
 ## Sources
 

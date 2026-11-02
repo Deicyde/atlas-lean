@@ -13,7 +13,7 @@ with intensities `μ|_{A i}` (Last–Penrose Thm. 5.2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson point process with finite intensity](poisson-point-process.md)
 
 ## Sources
 

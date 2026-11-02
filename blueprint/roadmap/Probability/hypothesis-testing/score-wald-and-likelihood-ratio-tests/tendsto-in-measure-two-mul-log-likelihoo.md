@@ -21,7 +21,15 @@ derivatives, and the theorems below assume `0 < p θ x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+
+## Proof depends on
+
+- [Consistency of the observed information](tendsto-in-measure-observed-information.md)
+- [Product of a distributionally convergent and a vanishing sequence](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/mul-tendsto-in-measure-zero.md)
+- [Convergence to zero in probability by domination on likely events](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-measure-zero-of-abs-le.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.kinship_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Kinship coefficient by Malécot's recursion](kinship.md)
+
+## Proof depends on
+
+- [Tabular kinship when the first individual is a later founder](kinship-of-gt-of-parents-eq-none.md)
+- [Tabular kinship when the first individual is a later non-founder](kinship-of-gt-of-parents-eq-some.md)
+- [Tabular kinship when the second individual is a later founder](kinship-of-lt-of-parents-eq-none.md)
+- [Tabular kinship when the second individual is a later non-founder](kinship-of-lt-of-parents-eq-some.md)
 
 ## Sources
 

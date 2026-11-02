@@ -15,6 +15,10 @@ integrable loss, `∫ L(μ[W | m]) dμ ≤ ∫ L(W) dμ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrability of a convex loss of a conditional expectation](integrable-comp-cond-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Sufficiency.RaoBlackwell](../../../../sources/v2/MathlibExt.md)

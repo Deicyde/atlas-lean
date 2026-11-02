@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem.kernelExpansion_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel expansion map centered at the sample points](kernel-expansion.md)
+- [Kernel Gram matrix](kernel-gram.md)
 
 ## Sources
 

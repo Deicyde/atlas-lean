@@ -14,7 +14,12 @@ types: `EHH(d) = ∑_t c_t (c_t - 1) / (#C (#C - 1))`, where `c_t` is the number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended haplotype homozygosity (EHH)](ehh.md)
+- [Haplotype window around the core](window.md)
+
+## Proof depends on
+
+- [Concordant haplotype pairs at a given radius](concordant-pairs.md)
 
 ## Sources
 

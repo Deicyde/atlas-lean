@@ -12,7 +12,14 @@ lean: ProbabilityTheory.StickBreakingProcess.IsDirichlet.lintegral_G_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random measure of a stick-breaking process](g.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+
+## Proof depends on
+
+- [The Dirichlet-process weights sum to `1` almost surely](ae-has-sum-weight-2.md)
+- [Mean of the random measure](lintegral-g-apply.md)
 
 ## Sources
 

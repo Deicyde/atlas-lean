@@ -14,7 +14,11 @@ estimators: for every `A` with `A X = 1`, `A V Aᵀ - B V Bᵀ` is positive semi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares matrix](gls-matrix.md)
+
+## Proof depends on
+
+- [Unbiasedness of the generalized least-squares estimator](gls-matrix-mul-self.md)
 
 ## Sources
 

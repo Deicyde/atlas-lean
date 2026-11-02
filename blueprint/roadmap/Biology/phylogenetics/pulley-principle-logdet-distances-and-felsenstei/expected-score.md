@@ -13,6 +13,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinZone.expectedScore
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fitch parsimony score on a quartet](parsimony-score.md)
+- [Probability of a site pattern on a quartet](pattern-prob.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinZone](../../../../sources/v2/CSLibExt.md)

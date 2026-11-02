@@ -16,7 +16,11 @@ a recombined lineage can still carry an identical haplotype, this is a lower bou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of no recombination on a pair's genealogy](pair-no-recomb.md)
+
+## Proof depends on
+
+- [Moment generating function of the gamma distribution](../../../Probability/distributions/gamma-distribution/mgf-gamma-measure-of-lt.md)
 
 ## Sources
 

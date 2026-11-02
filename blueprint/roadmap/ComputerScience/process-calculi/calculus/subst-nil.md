@@ -13,7 +13,9 @@ constant channel stays constant, and the empty process stays empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Channel name in the π-calculus](name.md)
+- [Processes of the π-calculus](proc.md)
+- [Substitution for the innermost bound variable of a process](subst.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ allele, for each fixed panel column `col` (the emissions are conditional on the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Li–Stephens emission probability](emit.md)
 
 ## Sources
 

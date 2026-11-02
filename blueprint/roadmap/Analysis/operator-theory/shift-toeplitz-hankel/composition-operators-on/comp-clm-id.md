@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compCLM_id
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+
+## Proof depends on
+
+- [Composition operator of a pointwise identity symbol](comp-clm-eq-of-forall.md)
 
 ## Sources
 

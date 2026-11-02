@@ -13,7 +13,14 @@ null level `1 - h²` that is due to stratification is `N a / (N a + N h² ℓ̄ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Association statistic under stratification](chi-sq-strat.md)
+- [Mean LD score](mean-ldscore.md)
+
+## Proof depends on
+
+- [Mean association statistic with constant stratification](mean-integral-chi-sq-strat-of-const.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ to `F` whose increments `B t - B s` are independent of `F s`, and two elementary
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Elementary integrand as a process](to-process.md)
+
+## Proof depends on
+
+- [Second moment of a Brownian increment](integral-sub-sq.md)
 
 ## Sources
 

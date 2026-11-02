@@ -13,7 +13,11 @@ each positive stoichiometric compatibility class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Weakly reversible reaction network](is-weakly-reversible.md)
+- [Deficiency of a chemical reaction network](deficiency.md)
+- [Mass-action vector field](mass-action-field.md)
+- [Stoichiometric subspace](stoichiometric-subspace.md)
 
 ## Sources
 

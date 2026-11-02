@@ -15,6 +15,10 @@ lean: ProbabilityTheory.integrableExpSet_gammaMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Half-line of exponential integrability for the gamma distribution](iio-subset-integrable-exp-set-gamma-meas.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Gamma](../../../../sources/v2/MathlibExt.md)

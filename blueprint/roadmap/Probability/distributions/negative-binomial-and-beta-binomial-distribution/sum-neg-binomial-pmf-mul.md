@@ -14,7 +14,11 @@ shapes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative binomial mass function with real shape](neg-binomial-pmf.md)
+
+## Proof depends on
+
+- [Chu–Vandermonde identity for rising factorials](asc-pochhammer-eval-add-eq-sum.md)
 
 ## Sources
 

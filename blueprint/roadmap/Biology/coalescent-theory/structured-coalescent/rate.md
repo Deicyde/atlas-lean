@@ -15,7 +15,7 @@ rate `M / (d - 1)`; all other rates (and the diagonal) are `0`. Meaningful for `
 
 ## Depends on
 
-This node has no prerequisites.
+- [State of two lineages in the island model](pair-state.md)
 
 ## Sources
 

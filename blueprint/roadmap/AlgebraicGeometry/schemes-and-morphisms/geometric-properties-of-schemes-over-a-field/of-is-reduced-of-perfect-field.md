@@ -15,6 +15,10 @@ geometrically reduced.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced algebras stay reduced under base change over a perfect field](../../../RingTheory/algebras-and-differentials/tensor-products-of-reduced-algebras-and-domains/is-reduced-tensor-product-of-perfect-fie.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.GeometricallyReduced](../../../../sources/v2/MathlibExt.md)

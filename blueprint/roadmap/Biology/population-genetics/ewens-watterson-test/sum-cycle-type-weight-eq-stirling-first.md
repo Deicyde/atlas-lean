@@ -13,7 +13,13 @@ into `k` parts sum to the unsigned Stirling number of the first kind `|s(n, k)|`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+
+## Proof depends on
+
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+- [Factorization of the Ewens sampling formula](ewens-prob-eq-mul-cycle-type-weight.md)
+- [The Ewens sampling formula is a probability distribution](../ewens-sampling-formula-and-hoppe-s-urn/sum-ewens-prob.md)
 
 ## Sources
 

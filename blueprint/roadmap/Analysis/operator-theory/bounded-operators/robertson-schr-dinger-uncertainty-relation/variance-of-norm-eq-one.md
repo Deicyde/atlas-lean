@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty.variance_of_nor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+- [Normalized variance of an observable](variance.md)
 
 ## Sources
 

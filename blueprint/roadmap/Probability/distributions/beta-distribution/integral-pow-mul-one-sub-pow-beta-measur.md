@@ -15,6 +15,12 @@ lean: ProbabilityTheory.integral_pow_mul_one_sub_pow_betaMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beta-function identity for densities](beta-pdfreal-mul-pow.md)
+- [Integrals against the beta law](integral-beta-measure.md)
+- [Beta density integrates to one](integral-beta-pdfreal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BetaMoments](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integral_tmr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+- [Time to the most recent common ancestor](tmrca.md)
+
+## Proof depends on
+
+- [Integrability of coalescent holding times](integrable-t.md)
+- [Expected coalescent holding time](integral-t.md)
+- [Sum of reciprocals of binomial coefficients $\binom{k}{2}$](sum-inv-choose-two.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: ringKrullDim_ge_of_integral_of_injective
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime chains lift along injective integral maps](exists-lt-series-of-integral-of-injectiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Ideal.IntegralKrullDim](../../../../sources/v2/MathlibExt.md)

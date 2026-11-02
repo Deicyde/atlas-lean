@@ -13,7 +13,13 @@ equals that of the parents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of a random gamete](gamete.md)
+- [Offspring genotype law under random union of gametes](offspring.md)
+
+## Proof depends on
+
+- [Mendel's law of segregation](transmit.md)
+- [Uniform distribution on a finite type](../../../Probability/distributions/discrete-uniform-distribution/uniform-fintype.md)
 
 ## Sources
 

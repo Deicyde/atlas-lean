@@ -15,7 +15,7 @@ polynomials of degree at most `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equioscillation of a polynomial approximation](equioscillates.md)
 
 ## Sources
 

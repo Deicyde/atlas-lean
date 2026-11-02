@@ -12,7 +12,7 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.measurable_truncatedRV
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](truncated-rv.md)
 
 ## Sources
 

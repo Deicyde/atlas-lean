@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.ComplexBalanced.ReactionNetwork.massActionFiel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
 
 ## Sources
 

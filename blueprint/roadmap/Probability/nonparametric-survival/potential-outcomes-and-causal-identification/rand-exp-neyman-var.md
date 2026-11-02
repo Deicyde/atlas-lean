@@ -14,7 +14,15 @@ the population variances under sampling without replacement).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neyman's variance estimator](neyman-var.md)
+- [Variance of a finite population](pop-var.md)
+- [Expectation of a statistic under complete randomization](rand-exp.md)
+
+## Proof depends on
+
+- [Mean of a finite population](pop-mean.md)
+- [Sample mean over a set of units](sample-mean.md)
+- [Sample variance over a set of units](sample-var.md)
 
 ## Sources
 

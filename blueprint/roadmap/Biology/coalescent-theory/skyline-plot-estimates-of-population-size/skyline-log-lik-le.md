@@ -13,7 +13,7 @@ for `c, w, θ > 0`, `ℓ(θ) ≤ ℓ(c w)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log-likelihood of one coalescent interval in the skyline model](skyline-log-lik.md)
 
 ## Sources
 

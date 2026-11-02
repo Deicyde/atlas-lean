@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.StatisticalGenetics.PoissonClassEM.joint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Loss-of-function count data for a gene](gene-data.md)
+- [Strictly positive class weights summing to one](pos-weights.md)
+
+## Proof depends on
+
+- [Poisson likelihood of an observed count](../gene-constraint-scores-pli-and-loeuf/poisson-lik.md)
 
 ## Sources
 

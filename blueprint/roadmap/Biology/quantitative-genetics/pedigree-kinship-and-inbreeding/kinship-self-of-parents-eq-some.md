@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.kinship_self_of_pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Kinship coefficient by Malécot's recursion](kinship.md)
 
 ## Sources
 

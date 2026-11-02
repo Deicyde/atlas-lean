@@ -15,6 +15,10 @@ maximal-ideal adic completions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ring equivalences induce equivalences of adic completions](exists-ring-equiv-map-of-ring-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdicCompletion.Functoriality](../../../../../sources/v2/MathlibExt.md)

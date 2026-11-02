@@ -13,7 +13,7 @@ when `‖μ‖ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated geometric vector in $\ell^2$](approx-vec.md)
 
 ## Sources
 

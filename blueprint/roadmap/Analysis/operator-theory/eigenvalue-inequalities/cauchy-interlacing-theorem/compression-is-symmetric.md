@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CauchyInterlacing.compression_isSymm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression of an operator to a subspace](compression.md)
+
+## Proof depends on
+
+- [Action of the compression of an operator](compression-apply.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ is also the probability that the two draws coincide (not used here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+
+## Proof depends on
+
+- [Random stick-breaking weight](weight.md)
 
 ## Sources
 

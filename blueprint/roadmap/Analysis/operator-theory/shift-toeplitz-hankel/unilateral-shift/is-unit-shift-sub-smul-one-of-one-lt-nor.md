@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.isUnit_shift_
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [The unilateral shift has operator norm one](norm-shift-clm.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ front of speed `5 √(r D / 6)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traveling front of the Fisher–KPP equation](is-front.md)
+- [Speed of the Ablowitz–Zeppetella wave](az-speed.md)
+- [Ablowitz–Zeppetella wave profile](az-wave.md)
+- [Derivative of the Ablowitz–Zeppetella profile](az-wave-deriv.md)
+
+## Proof depends on
+
+- [Traveling-wave profile of the Fisher–KPP equation](is-wave-profile.md)
+- [Rate of the Ablowitz–Zeppetella wave](az-rate.md)
 
 ## Sources
 

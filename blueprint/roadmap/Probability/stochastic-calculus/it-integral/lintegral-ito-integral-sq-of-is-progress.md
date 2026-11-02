@@ -15,7 +15,12 @@ Section 3.2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Density of elementary integrands](is-ito-approximable-of-is-progressive.md)
+- [Itô isometry](lintegral-ito-integral-sq.md)
 
 ## Sources
 

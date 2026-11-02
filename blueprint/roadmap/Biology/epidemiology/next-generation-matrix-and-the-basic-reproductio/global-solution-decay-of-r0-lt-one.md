@@ -18,7 +18,15 @@ existence is not proved here, so this is not by itself local exponential stabili
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic reproduction number of the next-generation matrix](r0.md)
+- [Hurwitz matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-hurwitz.md)
+- [Nonsingular M-matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-nonsingular-mmatrix.md)
+
+## Proof depends on
+
+- [Lyapunov's indirect method (linearized stability), conditional decay form](../../../Analysis/ordinary-differential-equations/lyapunov-s-indirect-method/global-solution-decay-of-has-fderiv-at.md)
+- [Hurwitz criterion for block lower-triangular matrices](is-hurwitz-from-blocks-zero-iff.md)
+- [`R₀` as a threshold for the linearized infected subsystem](is-hurwitz-sub-iff-r0-lt-one.md)
 
 ## Sources
 

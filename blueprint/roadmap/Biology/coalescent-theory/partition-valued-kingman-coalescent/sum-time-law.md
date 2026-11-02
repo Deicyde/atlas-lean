@@ -13,7 +13,14 @@ real `t`, since the rows of the rate matrix sum to `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Time-t marginal of Kingman's coalescent](time-law.md)
+
+## Proof depends on
+
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Rows of the partition rate matrix sum to zero](sum-partition-rate.md)
+- [Intertwining passes to the exponential](../../../LinearAlgebra/determinants-and-matrix-identities/matrix-exponential/exp-mul-eq-mul-exp-of-mul-eq.md)
 
 ## Sources
 

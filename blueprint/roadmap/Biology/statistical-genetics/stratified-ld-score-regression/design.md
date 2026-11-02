@@ -14,6 +14,10 @@ column `none` is the intercept and column `some C` the scaled annotation LD scor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Annotation LD score of a marker](annot-ldscore.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore](../../../../sources/v2/MathlibExt.md)

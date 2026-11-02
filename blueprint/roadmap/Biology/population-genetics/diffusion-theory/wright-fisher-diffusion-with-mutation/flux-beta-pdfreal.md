@@ -17,6 +17,12 @@ satisfies `½ (x (1 - x) π)' - (θ₁ (1 - x) - θ₂ x) / 2 · π = 0`. The id
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beta density as Wright's stationary density](beta-pdfreal-eq-wright-density.md)
+- [Wright's stationary density (zero-flux form)](../wright-fisher-diffusion/deriv-flux-wright-density.md)
+- [Wright's stationary density of the Wright–Fisher diffusion](../wright-fisher-diffusion/wright-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.Mutation](../../../../../sources/v2/MathlibExt.md)

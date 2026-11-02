@@ -13,7 +13,12 @@ ordered genotypes `(A, a)` and `(a, A)`, has frequency `2pq`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of a random gamete](gamete.md)
+- [Offspring genotype law under random union of gametes](offspring.md)
+
+## Proof depends on
+
+- [Hardy–Weinberg proportions](offspring-apply.md)
 
 ## Sources
 

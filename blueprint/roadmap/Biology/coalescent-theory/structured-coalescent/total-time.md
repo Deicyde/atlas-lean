@@ -14,6 +14,11 @@ demes chosen independently and uniformly at random.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean coalescence time between demes](between-time.md)
+- [Mean coalescence time within a deme](within-time.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.StructuredCoalescent](../../../../sources/v2/MathlibExt.md)

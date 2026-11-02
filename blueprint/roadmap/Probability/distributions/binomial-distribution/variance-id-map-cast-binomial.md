@@ -14,6 +14,10 @@ lean: ProbabilityTheory.variance_id_map_cast_binomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second moment of the binomial law](integral-sq-map-cast-binomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BinomialMoments](../../../../sources/v2/MathlibExt.md)

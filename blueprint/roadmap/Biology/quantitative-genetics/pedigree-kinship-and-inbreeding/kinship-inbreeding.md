@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.kinshipInbreeding
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+
+## Proof depends on
+
+- [Kinship coefficient by Malécot's recursion](kinship.md)
 
 ## Sources
 

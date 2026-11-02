@@ -15,7 +15,15 @@ the expected statistics of all markers, whatever their values, iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of stratified LD-score regression](model.md)
+- [Association chi-squared statistic in stratified LD-score regression](chi-sq.md)
+- [Design matrix of stratified LD-score regression](design.md)
+
+## Proof depends on
+
+- [Stratified LD-score regression](integral-chi-sq-of-annot.md)
+- [Annotation LD score of a marker](annot-ldscore.md)
 
 ## Sources
 

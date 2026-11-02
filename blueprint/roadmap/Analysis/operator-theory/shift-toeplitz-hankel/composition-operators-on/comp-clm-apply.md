@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compCLM_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
 
 ## Sources
 

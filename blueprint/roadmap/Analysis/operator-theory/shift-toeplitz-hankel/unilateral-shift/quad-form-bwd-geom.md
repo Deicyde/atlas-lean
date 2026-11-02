@@ -13,7 +13,12 @@ attached to `u` is `conj u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [Geometric unit vector attached to a point of the disc](geom.md)
+
+## Proof depends on
+
+- [Quadratic form of the backward shift as a series](quad-form-bwd-shift-eq-tsum.md)
 
 ## Sources
 

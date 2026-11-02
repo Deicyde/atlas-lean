@@ -15,6 +15,10 @@ and `fderiv` of a non-differentiable map, `0`, give junk values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Steady-state fluxes along a steady-state map](steady-flux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

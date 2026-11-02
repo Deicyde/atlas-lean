@@ -12,7 +12,13 @@ lean: ParityProduct.sum_powerset_parityCoeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even indicator of a natural number](even-indicator.md)
+- [Coefficients of the even-indicator expansion](parity-coeff.md)
+
+## Proof depends on
+
+- [Twice the even indicator is one plus the parity sign](two-mul-even-indicator.md)
+- [Twice a parity coefficient is a sign coefficient](two-mul-parity-coeff.md)
 
 ## Sources
 

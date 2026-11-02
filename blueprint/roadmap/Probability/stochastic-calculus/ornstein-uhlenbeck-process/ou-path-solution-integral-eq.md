@@ -14,7 +14,11 @@ lean: ProbabilityTheory.ouPathSolution_integral_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pathwise solution of the Langevin equation](ou-path-solution.md)
+
+## Proof depends on
+
+- [Continuity of the pathwise Langevin solution](continuous-ou-path-solution.md)
 
 ## Sources
 

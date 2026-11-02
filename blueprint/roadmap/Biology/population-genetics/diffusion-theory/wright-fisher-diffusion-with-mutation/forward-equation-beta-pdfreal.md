@@ -16,6 +16,10 @@ solves the stationary Fokker–Planck equation `½ (a π)'' - (b π)' = 0` with 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zero probability flux (Wright 1931)](flux-beta-pdfreal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.Mutation](../../../../../sources/v2/MathlibExt.md)

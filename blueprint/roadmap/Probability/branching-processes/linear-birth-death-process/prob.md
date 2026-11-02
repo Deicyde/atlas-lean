@@ -14,6 +14,11 @@ lean: MathlibExt.Probability.LinearBirthDeath.prob
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kendall's extinction probability for the birth–death process](extinction-prob.md)
+- [Kendall's geometric tail ratio](geom-ratio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BranchingProcess.LinearBirthDeath](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.RieszBasisStability.norm_synthesisCL
 
 ## Depends on
 
-This node has no prerequisites.
+- [Synthesis operator of a square-summable family](synthesis-clm.md)
+
+## Proof depends on
+
+- [Norm bound for a synthesis series](norm-tsum-smul-le.md)
 
 ## Sources
 

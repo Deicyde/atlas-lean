@@ -15,7 +15,17 @@ fixation probability on `[0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
+- [Kimura's fixation probability](kimura-fixation.md)
+
+## Proof depends on
+
+- [Continuity of Kimura's fixation probability](continuous-kimura-fixation.md)
+- [Derivative of Kimura's fixation probability at a point](has-deriv-at-kimura-fixation.md)
+- [Kimura's fixation probability equals one at frequency one](kimura-fixation-one-right.md)
+- [Kimura's fixation probability vanishes at frequency zero](kimura-fixation-zero-right.md)
+- [Slope constant of Kimura's fixation probability](kimura-slope.md)
+- [Slope constant of Kimura's formula is nonzero](kimura-slope-ne-zero.md)
 
 ## Sources
 

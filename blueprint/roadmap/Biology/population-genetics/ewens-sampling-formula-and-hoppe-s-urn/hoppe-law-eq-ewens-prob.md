@@ -13,7 +13,12 @@ allelic partition has law `ewensProb θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ewens sampling formula](ewens-prob.md)
+- [Law of the allelic partition from Hoppe's urn](hoppe-law.md)
+
+## Proof depends on
+
+- [One step of Hoppe's urn](hoppe-step.md)
 
 ## Sources
 

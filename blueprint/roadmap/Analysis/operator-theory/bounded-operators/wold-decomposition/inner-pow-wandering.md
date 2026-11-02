@@ -13,7 +13,12 @@ pushed forward strictly more times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wandering subspace of an isometry](wandering-sub.md)
+
+## Proof depends on
+
+- [Powers of an isometry preserve inner products](inner-pow-pullback.md)
+- [Positive powers of an isometry land in its range](pow-mem-range.md)
 
 ## Sources
 

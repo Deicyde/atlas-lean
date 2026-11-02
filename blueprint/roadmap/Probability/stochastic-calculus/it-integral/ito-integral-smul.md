@@ -12,7 +12,11 @@ lean: ProbabilityTheory.itoIntegral_smul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Linearity (homogeneity)](ito-integral-smul-of-is-pre-brownian-rea.md)
 
 ## Sources
 

@@ -14,7 +14,19 @@ block-counting process goes from `n` to `k` lineages in time `t`, times Kingman'
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator of Kingman's block-counting process](../ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Kingman's formula](kingman-prob.md)
+- [Number of blocks of a sample partition](num-blocks.md)
+- [Time-t marginal of Kingman's coalescent](time-law.md)
+
+## Proof depends on
+
+- [Kingman's formula intertwines the block-counting generator with the partition rate matrix](block-counting-generator-mul-kingman-mat.md)
+- [Kingman's formula arranged by number of blocks](kingman-matrix.md)
+- [Last row of Kingman's matrix is the singleton point mass](kingman-matrix-last.md)
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Intertwining passes to the exponential](../../../LinearAlgebra/determinants-and-matrix-identities/matrix-exponential/exp-mul-eq-mul-exp-of-mul-eq.md)
 
 ## Sources
 

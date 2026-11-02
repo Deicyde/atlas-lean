@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.meanAbsorptionTime_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura–Ohta mean absorption time of a neutral allele](mean-absorption-time.md)
 
 ## Sources
 

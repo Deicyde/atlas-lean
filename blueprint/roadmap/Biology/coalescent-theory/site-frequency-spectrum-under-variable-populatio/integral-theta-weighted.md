@@ -14,7 +14,7 @@ constant-size spectrum, `SiteFrequencySpectrum.integral_sfs`), every weighted es
 
 ## Depends on
 
-This node has no prerequisites.
+- [Achaz's weighted estimator of $\theta$](theta-weighted.md)
 
 ## Sources
 

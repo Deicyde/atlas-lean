@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.QpGraph.scoreS1_le_of_normal_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares qpGraph score S1](score-s1.md)
 
 ## Sources
 

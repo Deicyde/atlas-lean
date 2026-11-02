@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.Breeder.Model.selectionDifferential
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear parent–offspring regression model](model.md)
+- [Selection differential](selection-differential.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.exists_fbaValue_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible fluxes of flux balance analysis](fba-feasible.md)
+- [Optimal value of flux balance analysis](fba-value.md)
 
 ## Sources
 

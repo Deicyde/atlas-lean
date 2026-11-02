@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.BloomFilter.notMem_setBits_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits set by the stored hash values](set-bits.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ every `α ≥ 0`, `P(F_r(K) ≤ α) ≤ α`. (For `α < 0` the event is empty.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+
+## Proof depends on
+
+- [Poisson distribution function is monotone in the count](poisson-cdf-mono.md)
+- [Poisson distribution function tends to one as the count grows](tendsto-poisson-cdf-nat.md)
 
 ## Sources
 

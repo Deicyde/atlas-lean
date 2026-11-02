@@ -15,7 +15,18 @@ level `t ≥ 0`, the Ewens probability that the conditional upper-tail p-value o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional upper-tail p-value of the Ewens–Watterson test](cond-upper-pvalue.md)
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+
+## Proof depends on
+
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+- [Positivity of the cycle-type weight](cycle-type-weight-pos.md)
+- [Ewens conditional probability given the number of alleles](ewens-cond-prob.md)
+- [Factorization of the Ewens sampling formula](ewens-prob-eq-mul-cycle-type-weight.md)
+- [Probability of a given number of alleles under the Ewens formula](num-alleles-prob.md)
+- [Conditional validity of the Ewens–Watterson test](sum-cond-upper-pvalue-le-cond.md)
+- [The Ewens sampling formula is a probability distribution](../ewens-sampling-formula-and-hoppe-s-urn/sum-ewens-prob.md)
 
 ## Sources
 

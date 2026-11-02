@@ -12,7 +12,14 @@ ordered rectangle, summed over all directed labelings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+
+## Proof depends on
+
+- [Directed labelings of a finite grid](grid-labelings.md)
+- [Ordered rectangles of a finite grid](grid-rectangles.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+- [Applying a rectangle kernel to its diagonal ends](rectangle-apply.md)
 
 ## Sources
 

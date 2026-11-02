@@ -14,6 +14,10 @@ lean: MathlibExt.Probability.WaldDiagonalTerms.wald_diagonal_terms
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wald's equation](wald-equation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.WaldDiagonalTerms](../../../../sources/v2/MathlibExt.md)

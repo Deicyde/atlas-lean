@@ -11,7 +11,12 @@ lean: MathlibExt.Biology.Phylogenetics.BalancedMinimumEvolution.UTree.length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary tree with edge lengths](utree.md)
+
+## Proof depends on
+
+- [Rooted binary tree with edge lengths](rtree.md)
+- [Total edge length of a rooted binary tree](length.md)
 
 ## Sources
 

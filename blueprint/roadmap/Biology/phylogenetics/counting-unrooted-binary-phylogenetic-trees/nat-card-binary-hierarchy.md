@@ -14,7 +14,18 @@ corresponds to the leaf sets of its subtrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary hierarchy on a finite set](is-binary-hierarchy.md)
+
+## Proof depends on
+
+- [Planar rooted binary tree with labeled leaves](../counting-rooted-binary-phylogenetic-trees/plane-tree.md)
+- [Planar drawings of rooted binary trees on a taxon set](../counting-rooted-binary-phylogenetic-trees/on.md)
+- [Swap of the children of an internal vertex](../counting-rooted-binary-phylogenetic-trees/swap.md)
+- [Leaf labels of a planar binary tree](../counting-rooted-binary-phylogenetic-trees/leaves.md)
+- [Every planar binary tree has a leaf](../counting-rooted-binary-phylogenetic-trees/leaves-ne-zero.md)
+- [Rooted binary phylogenetic tree](../counting-rooted-binary-phylogenetic-trees/rooted-binary-tree.md)
+- [Schröder's count of rooted binary phylogenetic trees](../counting-rooted-binary-phylogenetic-trees/nat-card-rooted-binary-tree.md)
+- [Binary hierarchy restricted below a member is a binary hierarchy](is-binary-hierarchy-filter.md)
 
 ## Sources
 

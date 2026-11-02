@@ -15,6 +15,11 @@ differential of a transcendental separable element.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Differential of a transcendental element is nonzero](d-ne-zero-of-transcendental.md)
+- [Differential of a transcendental element spans the differentials](span-d-eq-top-of-transcendental.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Kaehler.Transcendental](../../../../sources/v2/MathlibExt.md)

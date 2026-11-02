@@ -14,7 +14,11 @@ variance multiplied by `n`: the law of the sum of `n` i.i.d.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
+
+## Proof depends on
+
+- [Recursion for convolution powers](../infinitely-divisible-distributions/conv-pow-succ.md)
 
 ## Sources
 

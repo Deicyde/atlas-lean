@@ -13,7 +13,11 @@ lean: ProbabilityTheory.tendsto_eLpNorm_weightedQVError
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted quadratic-variation error of Brownian motion](weighted-qverror.md)
+
+## Proof depends on
+
+- [Second moment of the weighted quadratic-variation error](integral-weighted-qverror-sq-le.md)
 
 ## Sources
 

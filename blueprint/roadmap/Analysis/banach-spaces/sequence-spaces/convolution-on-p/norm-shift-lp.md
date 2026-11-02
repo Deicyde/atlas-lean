@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.norm_shiftLp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Translation of an $\ell^p$ sequence on the integers](shift-lp.md)
 
 ## Sources
 

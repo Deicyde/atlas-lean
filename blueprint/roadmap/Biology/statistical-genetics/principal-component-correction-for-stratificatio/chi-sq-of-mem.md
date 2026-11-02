@@ -13,7 +13,12 @@ and the statistic is the junk value `0` of the zero denominator).
 
 ## Depends on
 
-This node has no prerequisites.
+- [EIGENSTRAT association statistic](chi-sq.md)
+
+## Proof depends on
+
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+- [Residual vanishes exactly on the subspace](adjusted-eq-zero-iff.md)
 
 ## Sources
 

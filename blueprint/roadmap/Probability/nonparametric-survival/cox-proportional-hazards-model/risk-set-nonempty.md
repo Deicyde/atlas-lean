@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.riskSet_nonempty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Risk set in survival analysis](risk-set.md)
+
+## Proof depends on
+
+- [A subject belongs to its own risk set](mem-risk-set.md)
 
 ## Sources
 

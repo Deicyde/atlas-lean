@@ -13,7 +13,11 @@ shape and divides the rate by `c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
+
+## Proof depends on
+
+- [Scaling a gamma random variable](../../../Probability/distributions/gamma-distribution/gamma-measure-map-const-mul.md)
 
 ## Sources
 

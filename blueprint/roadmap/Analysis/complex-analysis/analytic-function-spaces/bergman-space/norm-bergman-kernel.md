@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.norm_bergmanKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bergman kernel](bergman-kernel.md)
+
+## Proof depends on
+
+- [Squared norm of the Bergman kernel](norm-sq-bergman-kernel.md)
 
 ## Sources
 

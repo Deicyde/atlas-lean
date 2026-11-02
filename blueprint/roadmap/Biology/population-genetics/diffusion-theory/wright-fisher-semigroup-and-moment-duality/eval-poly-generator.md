@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher generator on polynomials](poly-generator.md)
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
 
 ## Sources
 

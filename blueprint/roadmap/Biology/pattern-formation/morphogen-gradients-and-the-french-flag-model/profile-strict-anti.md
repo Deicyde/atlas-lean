@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.profile_strictAnti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steady-state exponential morphogen profile](profile.md)
+
+## Proof depends on
+
+- [Decay length of a morphogen gradient](decay-length.md)
+- [Positivity of the decay length](decay-length-pos.md)
 
 ## Sources
 

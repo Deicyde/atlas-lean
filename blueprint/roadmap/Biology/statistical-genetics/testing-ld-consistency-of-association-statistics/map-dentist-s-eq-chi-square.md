@@ -15,7 +15,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDOutlierTest.map_dentistS_eq_chiSq
 
 ## Depends on
 
-This node has no prerequisites.
+- [DENTIST-S statistic](dentist-s.md)
+- [Chi-square distribution](../../../Probability/distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [DENTIST-S is chi-squared with one degree of freedom under correct LD](map-dentist-s-eq-map-sq.md)
+- [The square of a standard normal variable is chi-square with one degree of freedom](../../../Probability/distributions/chi-square-distribution/gaussian-real-map-sq.md)
 
 ## Sources
 

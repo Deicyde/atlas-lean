@@ -14,7 +14,7 @@ lean: MathlibExt.Probability.Statistics.Sufficiency.isSufficient_of_withDensity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](is-sufficient.md)
 
 ## Sources
 

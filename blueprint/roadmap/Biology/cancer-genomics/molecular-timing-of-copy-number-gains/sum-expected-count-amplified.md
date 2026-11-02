@@ -13,7 +13,13 @@ they all arose before the event, on an amplified copy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
+- [Number of amplified copies](amplified.md)
+- [Expected number of mutations of a given multiplicity](expected-count.md)
+
+## Proof depends on
+
+- [Copy number after a copy-number event](final-copies.md)
 
 ## Sources
 

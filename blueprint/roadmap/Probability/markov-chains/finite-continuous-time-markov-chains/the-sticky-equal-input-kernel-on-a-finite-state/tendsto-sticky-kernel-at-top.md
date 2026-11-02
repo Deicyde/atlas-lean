@@ -12,7 +12,13 @@ lean: ProbabilityTheory.tendsto_stickyKernel_atTop
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equal-input matrix](equal-input.md)
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Continuity of the sticky kernel in the persistence](continuous-sticky-kernel.md)
+- [Sticky kernel at persistence zero is the equal-input matrix](sticky-kernel-zero.md)
 
 ## Sources
 

@@ -15,7 +15,21 @@ lower Lebesgue integrals of the hitting times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](../two-locus-coalescent/two-locus-state.md)
+- [Coalescence indicator at locus A](../two-locus-coalescent/coalesced-a.md)
+- [Coalescence indicator at locus B](../two-locus-coalescent/coalesced-b.md)
+- [The two-locus coalescent rate matrix is a rate matrix](../two-locus-coalescent/is-rate-matrix-two-locus-rate.md)
+- [Covariance of coalescence times at two linked loci](../two-locus-coalescent/two-locus-cov.md)
+- [Rate matrix of the two-locus coalescent](../two-locus-coalescent/two-locus-rate.md)
+- [Law of the driving step sequence of a Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/finite-continuous-time-markov-chains-as-path-pro/ctmc-input-measure.md)
+- [Path of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/finite-continuous-time-markov-chains-as-path-pro/ctmc-path.md)
+
+## Proof depends on
+
+- [Positivity of the two-locus covariance](../two-locus-coalescent/two-locus-cov-pos.md)
+- [Mean coalescence time at locus `A`, path form](lintegral-coalescence-time-a.md)
+- [Product moment of the two coalescence times, path form](lintegral-coalescence-time-a-mul-coalesc.md)
+- [Mean coalescence time at locus `B`, path form](lintegral-coalescence-time-b.md)
 
 ## Sources
 

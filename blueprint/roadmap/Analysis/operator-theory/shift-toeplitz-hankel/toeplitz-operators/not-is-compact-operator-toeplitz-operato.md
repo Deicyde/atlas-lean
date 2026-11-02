@@ -14,7 +14,11 @@ nonzero coordinate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Toeplitz operator applied to a standard basis vector](toeplitz-operator-apply-single.md)
 
 ## Sources
 

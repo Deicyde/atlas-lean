@@ -13,7 +13,13 @@ nonzero vector whose Rayleigh quotient is at least `λₖ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+- [Rayleigh quotient of a matrix](rayleigh.md)
+
+## Proof depends on
+
+- [Courant–Fischer min–max, lower-bound form](../../../Analysis/operator-theory/eigenvalue-inequalities/courant-fischer-min-max-theorem/exists-unit-ge-of-submodule.md)
+- [Rayleigh form of an operator](../../../Analysis/operator-theory/eigenvalue-inequalities/courant-fischer-min-max-theorem/rayleigh-form.md)
 
 ## Sources
 

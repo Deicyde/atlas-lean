@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.mStep_Q_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [FRAPPE update of the ancestry proportions](m-step-q.md)
+
+## Proof depends on
+
+- [Expected ancestry count of an individual](anc-count.md)
+- [Positivity of the expected ancestry counts](anc-count-pos.md)
 
 ## Sources
 

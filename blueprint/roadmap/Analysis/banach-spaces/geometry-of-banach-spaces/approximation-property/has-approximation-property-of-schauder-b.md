@@ -17,7 +17,7 @@ boundedness gives uniform convergence on compact sets via a finite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximation property](has-approximation-property.md)
 
 ## Sources
 

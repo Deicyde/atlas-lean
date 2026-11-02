@@ -14,7 +14,16 @@ positive `c` exactly when `c` is an equilibrium. Source: Horn & Jackson (1972).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Rate of change of the pseudo-Helmholtz function](helmholtz-rate.md)
+- [Mass-action vector field](mass-action-field.md)
+
+## Proof depends on
+
+- [Complex-balanced states are equilibria](mass-action-field-eq-zero-of-is-complex.md)
+- [Mass-action reaction rate](rate.md)
+- [Complex balance exchanges source and product sums](sum-rate-mul-prod-eq.md)
 
 ## Sources
 

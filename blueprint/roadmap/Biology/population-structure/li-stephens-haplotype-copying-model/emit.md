@@ -12,7 +12,7 @@ haplotype `k`, and the mismatch probability `ε` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
 
 ## Sources
 

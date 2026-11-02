@@ -14,7 +14,16 @@ power of the canonical backward shift.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+- [The unilateral shift operator](../unilateral-shift/shift-clm.md)
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Pointwise action of a power of the backward shift](../unilateral-shift/backward-clm-pow-apply.md)
+- [Pointwise action of a power of the unilateral shift](../unilateral-shift/shift-clm-pow-apply.md)
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
+- [Pointwise action of the diagonal slice operator](toeplitz-slice-apply.md)
 
 ## Sources
 

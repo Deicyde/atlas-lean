@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.WrightFisherChain.sum_matPow_mul_wri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher transition matrix](wright-fisher.md)
+- [Matrix powers of a stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+
+## Proof depends on
+
+- [One-step martingale property of the Wright–Fisher allele count](sum-prob-mul-wright-fisher.md)
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

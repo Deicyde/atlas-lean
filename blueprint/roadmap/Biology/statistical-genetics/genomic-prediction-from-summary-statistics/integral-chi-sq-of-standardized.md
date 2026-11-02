@@ -14,7 +14,14 @@ every normalized cross product in `stratLDScore` a sample correlation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stratified LD-score model](stratified-model.md)
+- [Association statistic in the stratified LD-score model](chi-sq.md)
+- [Stratified LD score](strat-ldscore.md)
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+
+## Proof depends on
+
+- [Expected association statistic in the stratified LD-score model](integral-chi-sq.md)
 
 ## Sources
 

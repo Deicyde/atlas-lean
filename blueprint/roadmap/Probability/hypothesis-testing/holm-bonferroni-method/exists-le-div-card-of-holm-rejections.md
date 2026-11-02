@@ -15,7 +15,15 @@ identifying Holm's procedure with the closure of the Bonferroni local tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypotheses rejected by Holm's step-down procedure](holm-rejections.md)
+
+## Proof depends on
+
+- [Number of hypotheses rejected by Holm's procedure](card-holm-rejections.md)
+- [Holm's step-down count](holm-index.md)
+- [Every step up to Holm's count succeeds](le-num-below-of-le-holm-index.md)
+- [Holm's rejection set is closed under smaller p-values](mem-holm-rejections-of-le.md)
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
 
 ## Sources
 

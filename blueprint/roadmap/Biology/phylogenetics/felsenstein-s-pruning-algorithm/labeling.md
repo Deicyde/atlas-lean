@@ -12,7 +12,7 @@ its two children and labelings of the two subtrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
 
 ## Sources
 

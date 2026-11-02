@@ -13,7 +13,12 @@ inf–sup condition and nondegeneracy is itself a continuous linear equivalence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+
+## Proof depends on
+
+- [Banach–Nečas–Babuška isomorphism](sharp-equiv.md)
 
 ## Sources
 

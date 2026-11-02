@@ -13,7 +13,7 @@ lean: ProbabilityTheory.localDMLIndex_ratio_half
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice index in the local De Moivre–Laplace theorem](local-dmlindex.md)
 
 ## Sources
 

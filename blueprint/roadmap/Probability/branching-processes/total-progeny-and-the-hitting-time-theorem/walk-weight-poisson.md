@@ -13,7 +13,7 @@ the sum of `n` independent Poisson(`r`) variables is Poisson(`rn`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk weight of step sequences ending at zero](walk-weight.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ lean: MathlibExt.Probability.StoppedSumMaximal.integrable_maximal_stopped_partia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Predictable filtration of a sequence](predictable-filtration.md)
+
+## Proof depends on
+
+- [Doob's L² maximal inequality, finite horizon](../doob-s-maximal-inequalities/doob-sq-maximal-ineq.md)
+- [Wald's second equation](wald-second-equation.md)
 
 ## Sources
 

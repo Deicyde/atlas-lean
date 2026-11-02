@@ -14,6 +14,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finite_genEigenspace_mul_i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized eigenspaces of fg and gf are finite-dimensional together](finite-gen-eigenspace-comp-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ lean: ProbabilityTheory.ctmcJumpTime_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+
+## Proof depends on
+
+- [Holding times of a continuous-time Markov chain](ctmc-holding-time.md)
 
 ## Sources
 

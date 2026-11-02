@@ -15,6 +15,11 @@ through `B`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Douglas' lemma: majorization gives a norm-bounded factor](exists-factorization-of-majorization.md)
+- [Factorization implies majorization](majorization-of-factorization.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

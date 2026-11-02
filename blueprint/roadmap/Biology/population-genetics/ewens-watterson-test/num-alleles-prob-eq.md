@@ -14,7 +14,14 @@ for every real `θ`; it is a probability for `θ > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of a given number of alleles under the Ewens formula](num-alleles-prob.md)
+
+## Proof depends on
+
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+- [Factorization of the Ewens sampling formula](ewens-prob-eq-mul-cycle-type-weight.md)
+- [Cauchy's count by number of cycles](sum-cycle-type-weight-eq-stirling-first.md)
 
 ## Sources
 

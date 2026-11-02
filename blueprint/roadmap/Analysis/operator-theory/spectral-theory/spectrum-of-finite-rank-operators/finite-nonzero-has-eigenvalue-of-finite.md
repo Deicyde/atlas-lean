@@ -15,6 +15,10 @@ operator has only finitely many distinct nonzero eigenvalues.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independent eigenvectors for distinct nonzero eigenvalues](exists-linear-independent-eigenvectors.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum](../../../../../sources/v2/MathlibExt.md)

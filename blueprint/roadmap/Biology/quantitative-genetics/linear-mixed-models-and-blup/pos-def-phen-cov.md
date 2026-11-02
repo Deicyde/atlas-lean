@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.MixedModel.posDef_phenCov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phenotypic covariance of a linear mixed model](phen-cov.md)
 
 ## Sources
 

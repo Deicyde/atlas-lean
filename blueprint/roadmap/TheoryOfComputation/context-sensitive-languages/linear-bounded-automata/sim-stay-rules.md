@@ -12,7 +12,14 @@ symbol and state, staying active, keeping its boundary tag.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Head move of a linear bounded automaton](lbamove.md)
+- [Cell symbol of the LBA grammar](cell-sym.md)
 
 ## Sources
 

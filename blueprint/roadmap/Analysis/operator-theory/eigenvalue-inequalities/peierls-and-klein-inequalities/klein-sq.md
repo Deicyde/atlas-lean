@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.PeierlsKlein.klein_sq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Klein's inequality](klein-inequality.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.PeierlsKlein](../../../../../sources/v2/MathlibExt.md)

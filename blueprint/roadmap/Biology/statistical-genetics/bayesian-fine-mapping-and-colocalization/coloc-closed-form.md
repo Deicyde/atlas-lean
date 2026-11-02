@@ -13,7 +13,8 @@ weights, and hence have a probability interpretation, when the Bayes factors are
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
 
 ## Sources
 

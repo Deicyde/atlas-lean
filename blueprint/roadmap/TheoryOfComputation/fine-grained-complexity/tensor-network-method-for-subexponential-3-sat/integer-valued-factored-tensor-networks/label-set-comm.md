@@ -12,7 +12,8 @@ lean: TensorNetwork.Factored.labelSet_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
+- [Label set of an unordered vertex pair](label-set.md)
 
 ## Sources
 

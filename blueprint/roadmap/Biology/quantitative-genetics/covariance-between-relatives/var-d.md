@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.varD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+
+## Proof depends on
+
+- [Dominance deviation at a single locus](delta.md)
 
 ## Sources
 

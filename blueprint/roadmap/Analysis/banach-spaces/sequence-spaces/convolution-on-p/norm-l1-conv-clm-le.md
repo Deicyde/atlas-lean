@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.norm_l1ConvCLM_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution action of $\ell^1$ on $\ell^p$ as a bounded bilinear map](l1-conv-clm.md)
+
+## Proof depends on
+
+- [Operator norm of convolution by $f$ is at most $\|f\|_1$](norm-l1-conv-clmof-le.md)
 
 ## Sources
 

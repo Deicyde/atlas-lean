@@ -13,7 +13,12 @@ the junk value `0` also lies in `[0, 1]`, so no positivity hypothesis is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hudson's F_ST (ratio of averages)](hudson-fst.md)
+
+## Proof depends on
+
+- [Hudson's F_ST denominator at one site](hudson-den.md)
+- [Hudson's numerator is at most the denominator](sq-sub-le-hudson-den.md)
 
 ## Sources
 

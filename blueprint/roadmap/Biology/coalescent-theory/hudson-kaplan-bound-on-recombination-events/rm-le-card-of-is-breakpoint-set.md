@@ -13,7 +13,15 @@ lean: Cslib.Bioinformatics.PopulationGenetics.HudsonKaplan.rm_le_card_of_isBreak
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid set of recombination breakpoints](is-breakpoint-set.md)
+- [Hudson and Kaplan's `R_m`](rm.md)
+
+## Proof depends on
+
+- [Validity of the bound](card-le-card-of-is-breakpoint-set.md)
+- [Hudson–Kaplan sweep yields disjoint four-gamete intervals](is-disjoint-family-sweep.md)
+- [Intervals kept by the Hudson–Kaplan sweep are distinct](nodup-sweep.md)
+- [Hudson–Kaplan left-to-right sweep](sweep.md)
 
 ## Sources
 

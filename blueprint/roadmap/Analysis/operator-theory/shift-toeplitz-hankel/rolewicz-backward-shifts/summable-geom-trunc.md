@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.summable_geom_trun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+
+## Proof depends on
+
+- [Geometric ratio of the periodic approximant is below 1](norm-inv-pow-lt-one.md)
 
 ## Sources
 

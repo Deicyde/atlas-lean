@@ -13,7 +13,10 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.somaticAF_eq_slope_mul_div_copy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative copy ratio](copy-ratio.md)
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+- [Copy-ratio slope](slope.md)
+- [Expected allelic fraction of a somatic mutation](somatic-af.md)
 
 ## Sources
 

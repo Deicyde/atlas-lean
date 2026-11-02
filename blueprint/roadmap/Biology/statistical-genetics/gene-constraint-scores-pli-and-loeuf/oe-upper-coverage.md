@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.oeUpper_coverage
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper confidence bound for the observed/expected ratio](oe-upper.md)
+
+## Proof depends on
+
+- [Garwood's exact upper confidence bound](../../../Probability/distributions/poisson-gamma-duality/garwood-upper.md)
+- [Exact coverage of Garwood's bound](../../../Probability/distributions/poisson-gamma-duality/garwood-upper-coverage.md)
 
 ## Sources
 

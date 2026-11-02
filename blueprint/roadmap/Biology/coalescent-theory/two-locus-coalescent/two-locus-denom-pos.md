@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.twoLocusDenom_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common denominator of the two-locus moments](two-locus-denom.md)
 
 ## Sources
 

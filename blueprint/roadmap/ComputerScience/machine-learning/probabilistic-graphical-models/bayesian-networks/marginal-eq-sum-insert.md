@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.GraphicalModels.marginal_eq_sum_insert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal of a weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal.md)
+
+## Proof depends on
+
+- [Marginal on a finite set of nodes as a filtered sum](marginal-coe.md)
 
 ## Sources
 

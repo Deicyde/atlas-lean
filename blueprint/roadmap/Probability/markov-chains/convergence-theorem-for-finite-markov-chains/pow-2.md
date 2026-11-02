@@ -12,7 +12,17 @@ lean: StochasticMatrix.IsErgodic.pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Ergodic finite Markov chain](is-ergodic.md)
+- [Power of a stochastic matrix](pow.md)
+
+## Proof depends on
+
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+- [Recursive matrix power agrees with the matrix power](mat-pow-eq-pow.md)
+- [Later powers of a positive stochastic matrix power stay positive](mat-pow-pos-of-le-of-pos-pow.md)
+- [Recursive powers of a stochastic matrix power](mat-pow-pow.md)
+- [Underlying matrix of a stochastic matrix](to-matrix.md)
 
 ## Sources
 

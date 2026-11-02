@@ -14,7 +14,15 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.sum_k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Kingman's formula](kingman-prob.md)
+
+## Proof depends on
+
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Kingman's formula for a partition with k blocks](kingman-prob-of-card.md)
+- [Splitting identity](two-mul-sum-prod-factorial-is-merge.md)
 
 ## Sources
 

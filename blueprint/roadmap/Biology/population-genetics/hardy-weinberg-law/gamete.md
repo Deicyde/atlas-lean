@@ -15,6 +15,10 @@ then one of its two alleles by `transmit`. Its mass at `a` is the frequency of a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mendel's law of segregation](transmit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.HardyWeinberg](../../../../sources/v2/MathlibExt.md)

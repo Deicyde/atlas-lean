@@ -14,7 +14,14 @@ approximate eigenvectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Truncated geometric vector in $\ell^2$](approx-vec.md)
+- [Shifted unilateral shift has trivial kernel](injective-shift-sub.md)
+- [Squared norm of the truncated geometric vector](norm-sq-approx-vec.md)
+- [Squared norm of the shifted shift on the truncated geometric vector](norm-sq-sub-smul-one-approx-vec.md)
 
 ## Sources
 

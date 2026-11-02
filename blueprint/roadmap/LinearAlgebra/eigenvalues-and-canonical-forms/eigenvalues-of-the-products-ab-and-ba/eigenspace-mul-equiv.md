@@ -13,6 +13,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.eigenspaceMulEquiv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear equivalence of eigenspaces of fg and gf](eigenspace-comp-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.dense_periodicPoin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [Dense periodic points of the Rolewicz operator for $|\mu| > 1$](dense-periodic-points-of-one-lt-norm.md)
+- [No nonzero periodic points of $\mu B$ when $|\mu| \le 1$](eq-zero-of-is-periodic-point-of-norm-le.md)
+- [Zero is a periodic point of every operator](is-periodic-point-zero.md)
 
 ## Sources
 

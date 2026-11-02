@@ -16,7 +16,11 @@ offset `j` is `ofHead (start + j) total`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+
+## Proof depends on
+
+- [Boundary tag of a head position](of-head.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ proper cone and its negative polar, and the projections are orthogonal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative polar cone](polar-cone.md)
+- [Nearest-point projection onto a convex set](../../hilbert-spaces/hilbert-projection-theorem/convex-projection.md)
+
+## Proof depends on
+
+- [Cone projection residual is orthogonal to the projection](convex-projection-inner-self.md)
+- [Moreau decomposition, polar form](convex-projection-polar-cone.md)
 
 ## Sources
 

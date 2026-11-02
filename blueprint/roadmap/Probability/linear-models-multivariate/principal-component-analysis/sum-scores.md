@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Statistics.PCA.sum_scores
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal component scores](scores.md)
+
+## Proof depends on
+
+- [Column-centered data matrix](center.md)
+- [Centered columns sum to zero](sum-center.md)
 
 ## Sources
 

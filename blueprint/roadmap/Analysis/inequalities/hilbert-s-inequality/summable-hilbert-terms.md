@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.summable_hilbert_terms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert kernel](hilbert-kernel.md)
+
+## Proof depends on
+
+- [Nonnegativity of the Hilbert kernel](hilbert-kernel-nonneg.md)
+- [Finite Hilbert inequality](hilbert-inequality-finite.md)
 
 ## Sources
 

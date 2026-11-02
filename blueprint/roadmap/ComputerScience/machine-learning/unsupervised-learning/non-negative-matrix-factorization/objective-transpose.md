@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.NMF.objective_transpose
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
 
 ## Sources
 

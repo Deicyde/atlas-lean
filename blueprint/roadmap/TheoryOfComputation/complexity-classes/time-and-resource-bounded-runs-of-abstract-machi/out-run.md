@@ -12,7 +12,13 @@ lean: Cslib.OutputReachability.Runs.out_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded run from an input's initial state](runs.md)
+- [Input-initialized iteration with absorbing halting](run.md)
+
+## Proof depends on
+
+- [Output reachability gives stable outputs and bounded iterates](iterate.md)
+- [One iteration step with absorbing halted states](next.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ under selection `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean age of an allele at a given frequency](mean-age.md)
+
+## Proof depends on
+
+- [Stronger selection, younger alleles](mean-age-lt-mean-age-of-lt.md)
+- [Symmetry](mean-age-neg.md)
 
 ## Sources
 

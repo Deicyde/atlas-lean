@@ -12,7 +12,12 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncatedRV_eq_comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+- [Scalar truncation function](truncation-fun.md)
+
+## Proof depends on
+
+- [Formula for the truncated random variable](../kolmogorov-s-three-series-theorem/truncated-rv-apply.md)
 
 ## Sources
 

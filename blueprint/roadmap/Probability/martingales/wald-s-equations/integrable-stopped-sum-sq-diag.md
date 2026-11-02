@@ -14,6 +14,10 @@ lean: MathlibExt.Probability.WaldDiagonalTerms.integrable_stopped_sum_sq_diag
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrability of the stopped sum in Wald's equation](wald-integrable-stopped-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.WaldDiagonalTerms](../../../../sources/v2/MathlibExt.md)

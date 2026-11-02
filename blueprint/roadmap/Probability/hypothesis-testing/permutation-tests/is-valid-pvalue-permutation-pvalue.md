@@ -14,7 +14,12 @@ valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Permutation p-value](permutation-pvalue.md)
+
+## Proof depends on
+
+- [Counting lemma for rank counts](card-filter-rank-count-le.md)
 
 ## Sources
 

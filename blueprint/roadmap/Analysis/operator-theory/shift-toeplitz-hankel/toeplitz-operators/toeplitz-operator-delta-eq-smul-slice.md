@@ -13,7 +13,10 @@ multiple of its diagonal slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute summability of a delta symbol](summable-norm-toeplitz-delta.md)
+- [Delta symbol for Toeplitz operators](toeplitz-delta.md)
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
 
 ## Sources
 

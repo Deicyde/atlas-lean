@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.mem_holmRejections_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypotheses rejected by Holm's step-down procedure](holm-rejections.md)
+
+## Proof depends on
+
+- [Holm's step-down count](holm-index.md)
 
 ## Sources
 

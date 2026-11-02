@@ -18,6 +18,10 @@ half of a split of the previous block containing that state.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Halving chains shrink blocks by a factor of at least $2^k$](mul-pow-le-card-of-halving-chain.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.HopcroftCost](../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ouCovariance_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
 
 ## Sources
 

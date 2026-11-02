@@ -23,6 +23,7 @@ for all states $i, j$, then $\pi(i) > 0$ for every state $i$.
 ## Proof depends on
 
 - [Matrix powers of a stochastic matrix](mat-pow.md)
+- [Powers of a stochastic matrix are nonnegative](mat-pow-nonneg.md)
 
 ## Sources
 

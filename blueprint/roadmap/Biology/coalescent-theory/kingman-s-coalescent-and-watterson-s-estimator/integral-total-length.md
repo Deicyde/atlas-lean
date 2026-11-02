@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integral_tot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+- [Total branch length of a coalescent genealogy](total-length.md)
+
+## Proof depends on
+
+- [Integrability of coalescent holding times](integrable-t.md)
+- [Expected coalescent holding time](integral-t.md)
+- [Weighted sum of reciprocals of $\binom{k}{2}$ is twice a harmonic number](sum-mul-inv-choose-two.md)
 
 ## Sources
 

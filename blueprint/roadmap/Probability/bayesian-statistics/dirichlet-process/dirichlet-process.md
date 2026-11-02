@@ -16,6 +16,11 @@ Ferguson's (1973) definition by Dirichlet marginals is the wanted statement
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sethuraman's canonical probability space](sethuraman-measure.md)
+- [Stick-breaking measure](stick-breaking-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.DirichletProcess](../../../../sources/v2/MathlibExt.md)

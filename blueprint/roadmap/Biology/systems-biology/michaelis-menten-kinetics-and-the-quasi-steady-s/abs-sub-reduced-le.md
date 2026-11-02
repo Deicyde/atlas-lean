@@ -14,7 +14,9 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.abs_sub_reduced_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Michaelis–Menten mass-action system](is-solution.md)
+- [Michaelis constant](michaelis-constant.md)
+- [Michaelis–Menten rate law](mm-rate.md)
 
 ## Sources
 

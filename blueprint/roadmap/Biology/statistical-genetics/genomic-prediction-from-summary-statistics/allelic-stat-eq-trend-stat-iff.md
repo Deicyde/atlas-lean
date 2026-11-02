@@ -13,7 +13,17 @@ proportions** (`n₁² = 4 n₀ n₂`; Sasieni 1997), whenever the trend numerat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pooled allele frequency](allele-freq.md)
+- [Allelic test statistic](allelic-stat.md)
+- [Numerator of the Cochran–Armitage trend statistic](numer.md)
+- [Pooled genotype-score variance](score-var.md)
+- [Cochran–Armitage trend statistic](trend-stat.md)
+
+## Proof depends on
+
+- [Allelic versus trend test](allelic-stat-mul-hwe-var.md)
+- [Departure of the genotype-score variance from Hardy–Weinberg](score-var-sub-hwe-var.md)
+- [Number of individuals in a case-control genotype table](total.md)
 
 ## Sources
 

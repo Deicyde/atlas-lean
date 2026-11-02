@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.StatisticalGenetics.PoissonClassEM.mass
 
 ## Depends on
 
-This node has no prerequisites.
+- [Loss-of-function count data for a gene](gene-data.md)
+- [Strictly positive class weights summing to one](pos-weights.md)
+
+## Proof depends on
+
+- [Joint likelihood of gene data and constraint class](joint.md)
+- [Posterior of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/posterior.md)
 
 ## Sources
 

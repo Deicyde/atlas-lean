@@ -13,7 +13,18 @@ a prior when `∑ x, p x = 1` — and positive equivalent sample size).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered-edge reversal](covered-reversal.md)
+- [BDe network score](bde-score.md)
+
+## Proof depends on
+
+- [Joint configurations of a set of variables](config.md)
+- [Bayesian–Dirichlet family score](bd-family.md)
+- [BDe family score as a ratio of marginal likelihoods](bd-family-bde-hyper.md)
+- [BDe hyperparameters](bde-hyper.md)
+- [Count of cases matching a configuration](count.md)
+- [BDe marginal likelihood of a variable set](marg-lik.md)
+- [Rising factorial](rising.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ then the recurrence left to right.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Auxiliary row computation for the Smith–Waterman table](next-row-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Alignment.SmithWaterman](../../../../../sources/v2/CSLibExt.md)

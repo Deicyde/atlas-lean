@@ -12,7 +12,13 @@ lean: ProbabilityTheory.exists_isStationaryOrnsteinUhlenbeck
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Construction (Doob 1942)](is-stationary-ornstein-uhlenbeck-ou-stat.md)
+- [Existence of a pre-Brownian motion on path space](exists-is-pre-brownian-real-eval.md)
+- [Doob's stationary time change of Brownian motion](ou-stationary-of-brownian.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ exactly the edges contributed by the `k`-mers of `s`, one per occurrence, in ord
 
 ## Depends on
 
-This node has no prerequisites.
+- [De Bruijn multigraph of a string](de-bruijn-edges.md)
+- [The k-mers of a string](kmers.md)
+
+## Proof depends on
+
+- [De Bruijn edge of a k-mer](kmer-edge.md)
 
 ## Sources
 

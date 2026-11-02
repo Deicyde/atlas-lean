@@ -16,6 +16,11 @@ at `j`, the shortest one is kept.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Four-gamete condition for binary characters](../../phylogenetics/splits-compatibility-ultrametrics-and-upgma/four-gametes.md)
+- [Four-gamete condition for two sites](four-gametes.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationGenetics.HudsonKaplan](../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.GaltonWatson.monotone_iterate_pgf_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
+
+## Proof depends on
+
+- [Iterates of the offspring generating function stay in (0, 1)](iterate-pgf-mem-icc.md)
+- [Integrability of $s^X$ for $|s| \le 1$](../../characteristic-functions/probability-generating-functions/integrable-pow-of-abs-le-one.md)
 
 ## Sources
 

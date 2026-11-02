@@ -12,7 +12,11 @@ lean: InformationTheory.shannonEntropy_map_equiv_comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon entropy](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
+
+## Proof depends on
+
+- [Entropy is invariant under relabeling](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy-map-equiv.md)
 
 ## Sources
 

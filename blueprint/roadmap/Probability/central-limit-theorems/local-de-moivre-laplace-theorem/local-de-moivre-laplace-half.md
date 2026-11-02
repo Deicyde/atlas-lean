@@ -15,7 +15,13 @@ Gaussian value at `x` is `local_deMoivreLaplace_half_of_tendsto`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial point mass with success probability one half](binom-prob-half.md)
+- [Gaussian approximation to the symmetric binomial point mass](gaussian-approx-half.md)
+- [Lattice index in the local De Moivre–Laplace theorem](local-dmlindex.md)
+
+## Proof depends on
+
+- [Binomial point mass is equivalent to its Gaussian approximation](binom-prob-half-is-equivalent-gaussian-a.md)
 
 ## Sources
 

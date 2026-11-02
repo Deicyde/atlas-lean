@@ -13,7 +13,13 @@ vanish because `π₀ f₀ ≤ f`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Local false discovery rate](local-fdr.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+
+## Proof depends on
+
+- [Null part of the mixture is dominated by the mixture](mul-f-le-mixture-density.md)
 
 ## Sources
 

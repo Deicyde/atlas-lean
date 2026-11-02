@@ -16,7 +16,12 @@ positivity is asked of the whole `C²` function `p t` so that `log (p t)` is `C�
 
 ## Depends on
 
-This node has no prerequisites.
+- [No-flux solution of the gradient-drift Fokker–Planck equation](is-no-flux-solution-on.md)
+- [Free energy of a Fokker–Planck density](free-energy.md)
+
+## Proof depends on
+
+- [Negative probability flux of the Fokker–Planck equation](neg-flux.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ average of `truncation (H ·) M` over `[t_{k-1}, t_k]` for `k ≥ 1`, and `0` fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+
+## Proof depends on
+
+- [Measurability of time averages of a progressive process](measurable-average-icc.md)
+- [Truncation of a progressive process is progressive](truncation.md)
 
 ## Sources
 

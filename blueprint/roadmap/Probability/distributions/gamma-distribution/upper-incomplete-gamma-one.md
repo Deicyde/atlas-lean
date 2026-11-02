@@ -12,7 +12,7 @@ lean: Real.upperIncompleteGamma_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper incomplete gamma function](upper-incomplete-gamma.md)
 
 ## Sources
 

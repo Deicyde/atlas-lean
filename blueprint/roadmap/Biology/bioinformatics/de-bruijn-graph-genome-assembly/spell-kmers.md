@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.Assembly.DeBruijn.spell_kmers
 
 ## Depends on
 
-This node has no prerequisites.
+- [The k-mers of a string](kmers.md)
+- [String spelled by a walk of (k-1)-mers](spell.md)
 
 ## Sources
 

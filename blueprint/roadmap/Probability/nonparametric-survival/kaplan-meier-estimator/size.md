@@ -11,7 +11,7 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.size
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
 
 ## Sources
 

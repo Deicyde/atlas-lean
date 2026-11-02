@@ -14,7 +14,11 @@ freedom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Sum of squares of independent standard normals is chi-square](pi-gaussian-real-map-sum-sq.md)
 
 ## Sources
 

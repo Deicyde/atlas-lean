@@ -13,7 +13,7 @@ probability), the proportion treated is `c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Propensity score](propensity.md)
 
 ## Sources
 

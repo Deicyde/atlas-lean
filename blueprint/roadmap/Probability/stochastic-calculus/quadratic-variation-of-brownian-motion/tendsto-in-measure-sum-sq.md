@@ -15,6 +15,10 @@ lean: ProbabilityTheory.IsPreBrownianReal.tendstoInMeasure_sum_sq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quadratic variation of Brownian motion](tendsto-e-lp-norm-sum-sq-sub.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BrownianQuadraticVariation](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.Motifs.PWM.sum_bgLik
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

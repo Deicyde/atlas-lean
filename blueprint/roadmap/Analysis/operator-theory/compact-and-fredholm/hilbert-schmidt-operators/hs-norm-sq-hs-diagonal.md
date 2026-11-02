@@ -13,7 +13,14 @@ diagonal entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal infinite matrix](hs-diagonal.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
+- [Diagonal matrix with square-summable diagonal is Hilbert–Schmidt](is-hilbert-schmidt-hs-diagonal.md)
+
+## Proof depends on
+
+- [Rows of a diagonal matrix are square-summable](summable-hs-diagonal-row.md)
+- [Squared row norm of a diagonal matrix](tsum-hs-diagonal-row.md)
 
 ## Sources
 

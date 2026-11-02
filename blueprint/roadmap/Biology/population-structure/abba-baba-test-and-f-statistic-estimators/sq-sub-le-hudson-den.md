@@ -13,7 +13,7 @@ difference is `p_A (1 - p_A) + p_B (1 - p_B) ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hudson's F_ST denominator at one site](hudson-den.md)
 
 ## Sources
 

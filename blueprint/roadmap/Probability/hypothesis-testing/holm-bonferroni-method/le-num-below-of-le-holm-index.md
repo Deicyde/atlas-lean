@@ -13,7 +13,8 @@ p-values are at most `α / (m - k + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holm's step-down count](holm-index.md)
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
 
 ## Sources
 

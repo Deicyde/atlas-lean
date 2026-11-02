@@ -17,7 +17,12 @@ tends to Kimura's `kimuraFixation (σ / 2) x`, which is `(1 - e^{-σ x}) / (1 - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../diffusion-theory/wright-fisher-diffusion/kimura-fixation.md)
+- [Fixation probability of the Moran process](moran-fixation.md)
+
+## Proof depends on
+
+- [Closed form of Kimura's fixation probability](kimura-fixation-half.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ is `2 ^ n * ∑ᵢ aᵢ²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rademacher sign of a coordinate](rademacher-sign.md)
+- [Second moment of a Rademacher sum in a Hilbert space](sum-rademacher-sq-norm-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RademacherTypeCotype](../../../../../sources/v2/MathlibExt.md)

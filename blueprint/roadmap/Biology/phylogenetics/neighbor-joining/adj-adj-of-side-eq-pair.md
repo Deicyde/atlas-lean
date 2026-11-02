@@ -13,7 +13,15 @@ leaves `ι x` and `ι y`: they form a cherry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Taxa on one side of a tree edge](side.md)
+
+## Proof depends on
+
+- [A singleton side is a pendant leaf side](eq-of-side-eq-singleton.md)
+- [Edge side at an internal vertex as a disjoint union](side-eq-union.md)
+- [Leaf side of a pendant edge](side-leaf.md)
+- [Every edge side of a binary phylogenetic tree is nonempty](side-nonempty.md)
 
 ## Sources
 

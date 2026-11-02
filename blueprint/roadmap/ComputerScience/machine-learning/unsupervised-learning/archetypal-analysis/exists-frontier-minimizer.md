@@ -13,7 +13,12 @@ archetype on the boundary of the convex hull of the data.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible archetypes](feasible.md)
+- [Residual sum of squares in archetypal analysis](rss.md)
+
+## Proof depends on
+
+- [Feasible archetypes can be moved to the boundary of the hull](exists-frontier-rss-le.md)
 
 ## Sources
 

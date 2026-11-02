@@ -15,6 +15,10 @@ so `|B| - 1` is never a truncated natural subtraction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ChineseRestaurant](../../../../sources/v2/MathlibExt.md)

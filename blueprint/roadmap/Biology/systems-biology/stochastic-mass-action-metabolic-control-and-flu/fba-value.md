@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.fbaValue
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Feasible fluxes of flux balance analysis](fba-feasible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

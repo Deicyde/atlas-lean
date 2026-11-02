@@ -13,7 +13,7 @@ with `h` free of `θ`, then `T` is sufficient for `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient statistic for a discrete family](is-sufficient-pmf.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Theorem 2.1.2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Transition semigroup of a continuous-time Markov chain](ctmc-transition.md)
+
+## Proof depends on
+
+- [Nonnegativity of the transition function of a rate matrix](ctmc-transition-nonneg.md)
+- [Rows of the transition function sum to one](sum-ctmc-transition.md)
 
 ## Sources
 

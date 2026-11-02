@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.dirichletEval_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Dirichlet space](dirichlet-eval.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+- [Dirichlet kernel at the origin is the first basis vector](dirichlet-kernel-zero.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.mem_part_tiePartition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tie partition of a sequence of draws](tie-partition.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ modified protein at steady state (Goldbeter–Koshland 1981).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.GoldbeterKoshland](../../../../sources/v2/MathlibExt.md)

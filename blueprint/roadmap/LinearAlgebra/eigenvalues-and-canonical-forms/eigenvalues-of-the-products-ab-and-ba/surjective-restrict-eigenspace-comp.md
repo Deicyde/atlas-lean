@@ -13,7 +13,7 @@ eigenvector `y` of `g ∘ₗ f` is the image of `μ⁻¹ • f y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenspace of fg maps into the eigenspace of gf](maps-to-eigenspace-comp.md)
 
 ## Sources
 

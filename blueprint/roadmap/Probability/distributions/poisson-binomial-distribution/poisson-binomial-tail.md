@@ -14,6 +14,10 @@ function vanishes above `m`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.PoissonBinomial](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Motifs.PWM.partitionFn_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Column partition function of an energy matrix](partition-fn.md)
 
 ## Sources
 

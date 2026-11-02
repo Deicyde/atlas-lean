@@ -12,7 +12,11 @@ lean: List.mem_of_mem_takeThroughAcc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accumulator-stopped inclusive prefix of a list](take-through-acc.md)
+
+## Proof depends on
+
+- [Accumulator-stopped list is a prefix of its source](take-through-acc-prefix.md)
 
 ## Sources
 

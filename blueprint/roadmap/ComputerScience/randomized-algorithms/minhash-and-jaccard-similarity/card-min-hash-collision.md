@@ -13,7 +13,7 @@ the same min-hash, times `|A ∪ B|`, equals `|A ∩ B|` times the number of all
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min-hash of a set under a permutation](min-hash.md)
 
 ## Sources
 

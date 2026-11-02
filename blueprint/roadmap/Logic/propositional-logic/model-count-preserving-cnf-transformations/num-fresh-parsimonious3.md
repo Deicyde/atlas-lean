@@ -11,7 +11,11 @@ lean: Cslib.Logic.PL.CNF.numFreshParsimonious3
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+
+## Proof depends on
+
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
 
 ## Sources
 

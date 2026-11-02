@@ -13,7 +13,16 @@ rectangle capacity; diagonal row capacities are excluded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed total capacity of a factored network](../integer-valued-factored-tensor-networks/total-capacity.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Ordered rectangles of a finite grid](../finite-rectangular-grid-tensor-evaluation/grid-rectangles.md)
+- [Row network of a grid tensor](../finite-row-networks-for-grid-tensors/grid-row-network.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Membership in the ordered pairs](../integer-valued-factored-tensor-networks/mem-ordered-pairs.md)
 
 ## Sources
 

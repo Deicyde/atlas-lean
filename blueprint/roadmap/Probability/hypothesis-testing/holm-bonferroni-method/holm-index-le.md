@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.holmIndex_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holm's step-down count](holm-index.md)
+
+## Proof depends on
+
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
 
 ## Sources
 

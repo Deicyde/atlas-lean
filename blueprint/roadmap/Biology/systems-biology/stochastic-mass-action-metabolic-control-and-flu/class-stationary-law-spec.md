@@ -17,7 +17,21 @@ probability vector invariant under the transition semigroup: `π P(t) = π` for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](../complex-balancing-and-the-deficiency-zero-theore/reaction-network.md)
+- [Complex-balanced concentrations](../complex-balancing-and-the-deficiency-zero-theore/is-complex-balanced.md)
+- [Generator of the mass-action chain on a finite state class](class-generator.md)
+- [Normalized Poisson stationary law on a finite state class](class-stationary-law.md)
+- [State after one reaction firing](fire.md)
+- [State before one reaction firing](unfire.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [Restricted mass-action generator is a rate matrix](is-rate-matrix-class-generator.md)
+- [Product-form Poisson weight of a state](poisson-weight.md)
+- [Anderson–Craciun–Kurtz on a finite class](poisson-weight-vec-mul-class-generator.md)
+- [Invariance under the semigroup](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/vec-mul-eq-zero-iff-forall-vec-mul-ctmc.md)
 
 ## Sources
 

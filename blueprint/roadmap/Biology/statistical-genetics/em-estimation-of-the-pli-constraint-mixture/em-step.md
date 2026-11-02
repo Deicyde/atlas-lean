@@ -11,7 +11,14 @@ lean: Cslib.Bioinformatics.StatisticalGenetics.PoissonClassEM.emStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Loss-of-function count data for a gene](gene-data.md)
+- [Strictly positive class weights summing to one](pos-weights.md)
+
+## Proof depends on
+
+- [Expected number of genes in a constraint class](mass.md)
+- [Positivity of the class masses](mass-pos.md)
+- [Class masses sum to the number of genes](sum-mass.md)
 
 ## Sources
 

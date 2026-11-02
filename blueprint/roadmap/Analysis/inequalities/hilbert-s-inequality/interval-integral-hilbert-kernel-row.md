@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.intervalIntegral_hilbertKerne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
+
+## Proof depends on
+
+- [Derivative of the arctangent antiderivative of the row integrand](has-deriv-at-hilbert-antideriv.md)
+- [Continuity of the Hilbert row integrand](hilbert-kernel-row-continuous-on.md)
 
 ## Sources
 

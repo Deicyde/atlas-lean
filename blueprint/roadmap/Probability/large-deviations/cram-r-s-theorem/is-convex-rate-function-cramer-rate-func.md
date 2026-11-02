@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.CramerRateFunction.isConvexRateFunction_cramerRateF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+- [Convex rate function](../large-deviation-principle/is-convex-rate-function.md)
+
+## Proof depends on
+
+- [Convexity of the Cramér rate function](cramer-rate-function-convex.md)
+- [Lower semicontinuity of the Cramér rate function](lower-semicontinuous-cramer-rate-functio.md)
+- [Rate function](../large-deviation-principle/is-rate-function.md)
 
 ## Sources
 

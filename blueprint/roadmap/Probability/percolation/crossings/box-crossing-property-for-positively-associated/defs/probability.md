@@ -15,6 +15,10 @@ measure.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Positive association for probability measures is the Harris–FKG inequality](positively-associated-iff-of-is-probabil.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.Universality.Defs](../../../../../../sources/v2/MathlibExt.md)

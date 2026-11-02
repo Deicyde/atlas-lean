@@ -13,7 +13,13 @@ statistic has the law of the square of a standard normal variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DENTIST-S statistic](dentist-s.md)
+
+## Proof depends on
+
+- [Mean of the standardized DENTIST difference](dentist-mean.md)
+- [Variance of the standardized DENTIST difference](dentist-variance.md)
+- [Exact law of the standardized DENTIST difference](map-standardized-eq-gaussian-real.md)
 
 ## Sources
 

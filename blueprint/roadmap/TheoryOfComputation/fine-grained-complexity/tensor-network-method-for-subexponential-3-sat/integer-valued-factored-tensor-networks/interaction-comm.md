@@ -12,7 +12,13 @@ lean: TensorNetwork.Factored.interaction_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
+- [Interaction of two states in a factored network](interaction.md)
+
+## Proof depends on
+
+- [Label set of an unordered vertex pair](label-set.md)
+- [Label set is symmetric in its endpoints](label-set-comm.md)
 
 ## Sources
 

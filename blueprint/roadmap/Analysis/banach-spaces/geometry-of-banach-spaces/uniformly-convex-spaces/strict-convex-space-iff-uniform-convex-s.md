@@ -15,6 +15,10 @@ equivalent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict convexity implies uniform convexity in finite dimensions](uniform-convex-space-of-finite-dimension.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.UniformConvex](../../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,10 @@ lean: ProbabilityTheory.ouOfBrownian
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Doob's clock for the Ornstein–Uhlenbeck process from zero](ou-clock.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.OrnsteinUhlenbeck](../../../../sources/v2/MathlibExt.md)

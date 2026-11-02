@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.f2_eq_meanHet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected heterozygosity between populations](mean-het.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+
+## Proof depends on
+
+- [Probability that two genes differ at a biallelic site](het-pair.md)
+- [Integrability of pairwise heterozygosity](integrable-het-pair.md)
+- [Squared frequency difference via pairwise heterozygosity](sq-sub-eq-het-pair.md)
 
 ## Sources
 

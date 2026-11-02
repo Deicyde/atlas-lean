@@ -17,6 +17,10 @@ the path space.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generation-size law of a Galton–Watson process](law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BranchingProcess.GaltonWatson](../../../../sources/v2/MathlibExt.md)

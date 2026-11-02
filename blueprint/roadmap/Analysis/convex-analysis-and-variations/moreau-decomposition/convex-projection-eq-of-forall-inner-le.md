@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.Convex.MoreauDecomposition.convexProjection_eq_of_fora
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-point projection onto a convex set](../../hilbert-spaces/hilbert-projection-theorem/convex-projection.md)
+
+## Proof depends on
+
+- [Variational characterization of projection onto a convex cone](convex-projection-eq-iff.md)
 
 ## Sources
 

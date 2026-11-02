@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzOperator_ap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Pointwise action of a Toeplitz operator](toeplitz-operator-apply.md)
 
 ## Sources
 

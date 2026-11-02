@@ -13,7 +13,13 @@ most `λₖ * ‖x‖²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rayleigh form of an operator](rayleigh-form.md)
+- [Tail of an orthonormal eigenbasis](tail-family.md)
+
+## Proof depends on
+
+- [Span of some eigenvectors is orthogonal to the remaining ones](inner-eigenvector-basis-eq-zero-of-mem-s.md)
+- [Eigenbasis expansion of the Rayleigh form](rayleigh-form-eq-expansion.md)
 
 ## Sources
 

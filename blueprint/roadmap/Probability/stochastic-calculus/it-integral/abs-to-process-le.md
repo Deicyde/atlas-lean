@@ -12,7 +12,8 @@ lean: ProbabilityTheory.ElementaryIntegrand.abs_toProcess_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand as a process](to-process.md)
 
 ## Sources
 

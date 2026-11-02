@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.IslandModel.islandStep_iterate_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium $F_{ST}$ of Wright's island model](island-equilibrium.md)
+- [Identity-by-descent recursion in Wright's island model](island-step.md)
+
+## Proof depends on
+
+- [Island-model equilibrium is a fixed point of the recursion](island-step-island-equilibrium.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: Cslib.Bioinformatics.Motifs.PWM.motifModel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive position weight matrices](pos-pwm.md)
+
+## Proof depends on
+
+- [Joint likelihood of a sequence and a motif occurrence](motif-joint.md)
 
 ## Sources
 

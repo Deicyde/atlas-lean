@@ -13,7 +13,15 @@ hairpin `m`, when every pair of positions may pair, is Waterman's number `S_m(n)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set of all secondary structures of a sequence](structures.md)
+- [Waterman's recursion](waterman-number.md)
+
+## Proof depends on
+
+- [Complementary base pairing of two positions](can-pair.md)
+- [Inside recursion](inside.md)
+- [Inside value sums the weights of all secondary structures](inside-eq-sum-structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ inner product with the residual `x - S.starProjection x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+
+## Proof depends on
+
+- [Strict derivative of the squared projection residual](has-strict-fderiv-at-residual-sq.md)
+- [Distance to a subspace as the norm of the projection residual](inf-dist-eq-norm-sub-star-projection.md)
 
 ## Sources
 

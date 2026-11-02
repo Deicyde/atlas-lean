@@ -12,7 +12,7 @@ the two binders at that depth exchange places.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Channel name in the π-calculus](name.md)
 
 ## Sources
 

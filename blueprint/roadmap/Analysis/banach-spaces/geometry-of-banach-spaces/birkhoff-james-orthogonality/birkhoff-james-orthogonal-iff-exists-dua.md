@@ -13,7 +13,12 @@ functional in the duality mapping at `x` that vanishes at `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
+- [Duality mapping of a normed space](duality-mapping.md)
+
+## Proof depends on
+
+- [Birkhoff–James orthogonality gives an annihilating norming functional](exists-norming-of-birkhoff-james-orthogo.md)
 
 ## Sources
 

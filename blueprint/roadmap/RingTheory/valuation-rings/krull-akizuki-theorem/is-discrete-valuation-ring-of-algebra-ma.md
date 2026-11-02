@@ -16,6 +16,10 @@ and different from the whole field, is a discrete valuation ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Krull–Akizuki theorem](is-noetherian-ring-and-dimension-leone-o.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Valuation.DVRFinite](../../../../sources/v2/MathlibExt.md)

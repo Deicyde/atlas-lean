@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.f4Matrix
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS](../../../../sources/v2/MathlibExt.md)

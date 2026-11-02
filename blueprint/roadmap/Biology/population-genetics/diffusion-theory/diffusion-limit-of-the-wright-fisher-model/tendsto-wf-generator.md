@@ -15,7 +15,12 @@ to the neutral Wright–Fisher diffusion generator `(L_0 f)(x) = x (1 - x) / 2 �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+
+## Proof depends on
+
+- [One Wright–Fisher generation as a Bernstein approximation](integral-binomial-eq-bernstein-approxima.md)
+- [Voronovskaya's theorem (1932)](../../../../Analysis/approximation-theory/bernstein-polynomials/tendsto-voronovskaya.md)
 
 ## Sources
 

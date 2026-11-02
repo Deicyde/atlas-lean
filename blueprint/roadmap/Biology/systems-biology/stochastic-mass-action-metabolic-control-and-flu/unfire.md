@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.unfire
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](../complex-balancing-and-the-deficiency-zero-theore/reaction-network.md)
 
 ## Sources
 

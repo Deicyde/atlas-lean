@@ -23,7 +23,21 @@ the laws `p θₙ ν` are probability measures because they are laws of random v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+
+## Proof depends on
+
+- [Contiguity of sequences of measures](../../statistical-estimation/contiguity-and-le-cam-s-lemmas/is-contiguous.md)
+- [Contiguity transfers convergence in probability](../../statistical-estimation/contiguity-and-le-cam-s-lemmas/tendsto-measure-abs-sub-ge.md)
+- [Le Cam's first lemma](../../statistical-estimation/contiguity-and-le-cam-s-lemmas/is-contiguous-with-density-exp.md)
+- [Le Cam's third lemma](../../statistical-estimation/contiguity-and-le-cam-s-lemmas/tendsto-in-distribution-with-density-exp.md)
+- [Reweighting an infinite product measure by a product density](map-with-density-infinite-pi-prod.md)
+- [Wilks' expansion for a triangular array](tendsto-in-distribution-two-mul-log-like.md)
+- [Local asymptotic normality of the log-likelihood ratio](tendsto-in-measure-log-likelihood-ratio.md)
+- [Consistency of the observed information](../score-wald-and-likelihood-ratio-tests/tendsto-in-measure-observed-information.md)
+- [Central limit theorem for the score](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-distribution-score.md)
 
 ## Sources
 

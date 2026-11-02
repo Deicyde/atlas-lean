@@ -13,7 +13,15 @@ number is not almost surely `1` (Athreya–Ney 1972, ch. I).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extinction probability of a Galton–Watson process](extinction-prob.md)
+- [Mean offspring number](mean.md)
+
+## Proof depends on
+
+- [Least fixed point equals one iff mean offspring is at most one](i-sup-iterate-pgf-zero-eq-one-iff.md)
+- [Generation-size law of a Galton–Watson process](law.md)
+- [Probability of extinction by generation n](law-real-zero.md)
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
 
 ## Sources
 

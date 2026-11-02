@@ -14,7 +14,13 @@ finite-dimensional range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice operator](hankel-slice.md)
+- [Hankel operator as the sum of its slices](hankel-has-sum-slices.md)
+- [Partial sums of the Hankel slice series are compact](hankel-is-compact-operator-partial-sum.md)
 
 ## Sources
 

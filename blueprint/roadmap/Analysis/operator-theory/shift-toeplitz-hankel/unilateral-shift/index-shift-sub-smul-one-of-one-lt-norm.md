@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.index_shift_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Shifted unilateral shift is invertible outside the unit disk](is-unit-shift-sub-smul-one-of-one-lt-nor.md)
 
 ## Sources
 

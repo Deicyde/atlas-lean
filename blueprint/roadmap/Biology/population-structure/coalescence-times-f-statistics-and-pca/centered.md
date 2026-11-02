@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.centered
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column mean of a genotype matrix](col-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics](../../../../sources/v2/MathlibExt.md)

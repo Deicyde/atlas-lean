@@ -15,7 +15,10 @@ every `α > 0` the test rejects with probability at most `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
+- [Tajima's constant $c_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c1.md)
+- [Tajima's constant $c_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c2.md)
+- [Chebyshev test of neutrality](tajima-chebyshev-test.md)
 
 ## Sources
 

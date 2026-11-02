@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.norm_hankelOperator_l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice operator](hankel-slice.md)
+- [Hankel operator as the sum of its slices](hankel-has-sum-slices.md)
+- [Anti-diagonal slice operator has norm at most one](norm-hankel-slice-le.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ inference, since a DVR is a regular local ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Power series over a regular local ring are regular local](power-series-over-a-regular-local-ring/is-regular-local-ring-power-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.MvPowerSeries.RegularLocalRing](../../../../sources/v2/MathlibExt.md)

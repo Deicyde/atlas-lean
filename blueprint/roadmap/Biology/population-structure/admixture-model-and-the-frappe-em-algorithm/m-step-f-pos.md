@@ -12,7 +12,16 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.mStep_F_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Polymorphic genotype data](polymorphic.md)
+- [FRAPPE update of the allele frequencies](m-step-f.md)
+
+## Proof depends on
+
+- [Expected population count of a SNP](pop-count.md)
+- [Positivity of expected population counts on polymorphic data](pop-count-pos.md)
+- [Expected reference-allele count of a SNP per population](ref-count.md)
+- [Positivity of expected reference counts on polymorphic data](ref-count-pos.md)
 
 ## Sources
 

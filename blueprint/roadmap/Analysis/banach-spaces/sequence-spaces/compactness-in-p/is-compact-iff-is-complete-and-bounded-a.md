@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.isCompact_iff_isComplete_and_bou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform vanishing of tails](uniform-tail-vanishing.md)
+
+## Proof depends on
+
+- [Riesz–Fréchet–Kolmogorov criterion for total boundedness in $\ell^p$](totally-bounded-iff-bounded-and-uniform.md)
 
 ## Sources
 

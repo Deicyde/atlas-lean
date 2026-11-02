@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Moran.kimuraFixation_half
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../diffusion-theory/wright-fisher-diffusion/kimura-fixation.md)
 
 ## Sources
 

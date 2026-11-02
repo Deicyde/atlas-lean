@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.isTransitionChange_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Codon change consisting of transitions](is-transition-change.md)
 
 ## Sources
 

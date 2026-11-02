@@ -15,7 +15,7 @@ uses Birkhoff's theorem. The converse for symmetric nonnegative `A` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total support of a square matrix](has-total-support.md)
 
 ## Sources
 

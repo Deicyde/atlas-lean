@@ -13,7 +13,11 @@ inner-product orthogonality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
+
+## Proof depends on
+
+- [Homogeneity of Birkhoff–James orthogonality](birkhoff-james-orthogonal-smul-left-righ.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ with `r` half the shortest internal edge length (`njRecoversWithin_of_le`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinZone](../../../../sources/v2/CSLibExt.md)

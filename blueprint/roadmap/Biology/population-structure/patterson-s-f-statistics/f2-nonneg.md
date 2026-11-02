@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f2_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [f2 statistic](f2.md)
 
 ## Sources
 

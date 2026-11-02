@@ -11,7 +11,7 @@ lean: TensorNetwork.Factored.totalCapacity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
 
 ## Sources
 

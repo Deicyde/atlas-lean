@@ -14,7 +14,7 @@ and `φ i i = 1 / 2` for a founder; symmetric for `j < i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
 
 ## Sources
 

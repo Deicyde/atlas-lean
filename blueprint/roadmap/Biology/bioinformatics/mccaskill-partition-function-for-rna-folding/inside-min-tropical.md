@@ -15,7 +15,18 @@ base pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The Nussinov recursion](../nussinov-algorithm-for-rna-secondary-structure/nussinov.md)
+- [Inside recursion](inside.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Soundness bound](../nussinov-algorithm-for-rna-secondary-structure/card-le-nussinov.md)
+- [Optimality](../nussinov-algorithm-for-rna-secondary-structure/exists-is-structure-card-eq.md)
+- [Inside value sums the weights of all secondary structures](inside-eq-sum-structures.md)
+- [Membership in the set of secondary structures](mem-structures.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.ArmitageTrend.all
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number of individuals in a case-control genotype table](total.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GenomicPrediction](../../../../sources/v2/MathlibExt.md)

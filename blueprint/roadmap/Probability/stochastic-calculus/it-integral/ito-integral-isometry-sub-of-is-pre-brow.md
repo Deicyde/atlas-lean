@@ -17,7 +17,17 @@ required.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Progressive processes are jointly measurable](measurable-to-nnreal.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Quasi-triangle inequality for the integrand distance](integrand-dist-le.md)
+- [Linearity (additivity)](ito-integral-add-of-is-pre-brownian-real.md)
+- [Linearity (homogeneity)](ito-integral-smul-of-is-pre-brownian-rea.md)
+- [Itô isometry for progressive integrands](lintegral-ito-integral-sq-of-is-progress.md)
+- [Square integrability of the Itô integral](mem-lp-ito-integral.md)
 
 ## Sources
 

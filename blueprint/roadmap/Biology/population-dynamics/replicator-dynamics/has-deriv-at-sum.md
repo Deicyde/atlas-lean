@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.Replicator.IsSolution.hasDerivAt_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the replicator equation](is-solution.md)
+- [Mean fitness of a population state](mean-fitness.md)
 
 ## Sources
 

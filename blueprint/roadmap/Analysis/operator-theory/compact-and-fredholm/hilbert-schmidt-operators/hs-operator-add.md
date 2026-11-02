@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Sum of Hilbert–Schmidt matrices is Hilbert–Schmidt](is-hilbert-schmidt-add.md)
+
+## Proof depends on
+
+- [Summability of the Hilbert–Schmidt coordinate series](summable-hs-coord.md)
 
 ## Sources
 

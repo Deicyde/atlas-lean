@@ -15,6 +15,10 @@ lean: Matrix.IsHermitian.le_eigenvalues₀_add
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weyl's inequality (lower bound)](le-weyl-eigenvalue-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.WeylEigenvalueSum](../../../../../sources/v2/MathlibExt.md)

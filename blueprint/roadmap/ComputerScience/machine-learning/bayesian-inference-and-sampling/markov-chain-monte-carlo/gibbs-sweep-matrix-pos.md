@@ -13,7 +13,16 @@ positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition matrix of the systematic-scan Gibbs sweep](gibbs-sweep-matrix.md)
+
+## Proof depends on
+
+- [Conditional law of a coordinate](cond-law.md)
+- [Normalizer of the conditional law](cond-norm.md)
+- [Gibbs update](gibbs-step.md)
+- [Systematic-scan Gibbs sampler](gibbs-sweep.md)
+- [First step of a Gibbs sweep](gibbs-sweep-cons-apply.md)
+- [Markov kernel of a transition rule](pmf-kernel.md)
 
 ## Sources
 

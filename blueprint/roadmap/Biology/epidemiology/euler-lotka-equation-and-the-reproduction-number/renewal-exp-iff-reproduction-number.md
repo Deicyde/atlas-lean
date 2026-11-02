@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Epidemiology.EulerLotka.renewal_exp_iff_reproductionNum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproductive number from growth rate and generation interval](reproduction-number.md)
+
+## Proof depends on
+
+- [Renewal equation for exponential growth](renewal-exp-iff.md)
 
 ## Sources
 

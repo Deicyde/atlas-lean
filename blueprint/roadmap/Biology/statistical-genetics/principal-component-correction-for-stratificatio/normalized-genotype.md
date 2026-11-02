@@ -15,6 +15,11 @@ Patterson et al. use polymorphic markers only.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Allele-frequency estimate of a marker](allele-freq.md)
+- [Column-centered data matrix](../../../Probability/linear-models-multivariate/principal-component-analysis/center.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.Eigenstrat](../../../../sources/v2/MathlibExt.md)

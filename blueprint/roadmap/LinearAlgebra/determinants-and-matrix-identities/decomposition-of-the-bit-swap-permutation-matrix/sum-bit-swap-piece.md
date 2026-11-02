@@ -12,7 +12,12 @@ lean: Matrix.sum_bitSwapPiece
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piece of an n-bit swap with i antisymmetric factors](bit-swap-piece.md)
+
+## Proof depends on
+
+- [Antisymmetric two-bit singlet vector](bit-singlet.md)
+- [One-bit swap matrix as identity minus singlet outer product](bit-swap-eq-one-sub-vec-mul-vec.md)
 
 ## Sources
 

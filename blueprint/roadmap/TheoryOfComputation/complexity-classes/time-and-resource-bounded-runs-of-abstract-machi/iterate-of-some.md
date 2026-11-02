@@ -12,7 +12,7 @@ lean: Cslib.OutputReachability.iterate_of_some
 
 ## Depends on
 
-This node has no prerequisites.
+- [One iteration step with absorbing halted states](next.md)
 
 ## Sources
 

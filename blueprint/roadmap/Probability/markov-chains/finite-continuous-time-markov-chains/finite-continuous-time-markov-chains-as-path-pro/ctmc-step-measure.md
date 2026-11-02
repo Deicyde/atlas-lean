@@ -12,7 +12,11 @@ with `ξ i ∼ Π i`, and `E` is an independent exponential clock of rate `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Row of the jump matrix as a probability mass function](ctmc-jump-pmf.md)
 
 ## Sources
 

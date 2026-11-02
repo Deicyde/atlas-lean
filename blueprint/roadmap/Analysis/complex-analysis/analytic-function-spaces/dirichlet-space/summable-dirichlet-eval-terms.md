@@ -15,6 +15,10 @@ point of the disc.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpace](../../../../../sources/v2/MathlibExt.md)

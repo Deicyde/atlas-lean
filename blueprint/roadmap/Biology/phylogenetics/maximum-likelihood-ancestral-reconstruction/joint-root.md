@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.Phylogenetics.AncestralReconstruction.jointRoot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+
+## Proof depends on
+
+- [State maximizing a function](argmax-state.md)
+- [Max-product pruning recursion](max-prune.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ before the start of the other, so no breakpoint separates both.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Four-gamete condition for two sites](four-gametes.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationGenetics.HudsonKaplan](../../../../sources/v2/CSLibExt.md)

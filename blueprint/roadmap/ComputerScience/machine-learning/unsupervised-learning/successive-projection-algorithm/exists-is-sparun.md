@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.MatrixFactorization.SuccessiveProjection.exists_isSP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run of the successive projection algorithm](is-sparun.md)
+
+## Proof depends on
+
+- [Residual of a column in the successive projection algorithm](residual.md)
 
 ## Sources
 

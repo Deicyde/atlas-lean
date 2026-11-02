@@ -14,7 +14,14 @@ most `λₖ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rayleigh form of an operator](rayleigh-form.md)
+
+## Proof depends on
+
+- [Dimension of the span of the eigenbasis tail](finrank-span-tail-family.md)
+- [Upper bound for the Rayleigh form on the eigenbasis tail](rayleigh-form-le-of-mem-tail.md)
+- [Rayleigh form scales quadratically](rayleigh-form-smul.md)
+- [Tail of an orthonormal eigenbasis](tail-family.md)
 
 ## Sources
 

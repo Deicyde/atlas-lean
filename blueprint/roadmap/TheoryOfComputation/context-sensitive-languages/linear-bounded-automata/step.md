@@ -15,7 +15,16 @@ tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration of a linear bounded automaton](lbaconfig.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Boundary tag of a head position](of-head.md)
+- [Head move of a linear bounded automaton](lbamove.md)
+- [Legal head move of a linear bounded automaton](legal.md)
+- [Head position after a move](move-head.md)
 
 ## Sources
 

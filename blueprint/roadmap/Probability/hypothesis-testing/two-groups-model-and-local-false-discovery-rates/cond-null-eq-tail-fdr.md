@@ -14,7 +14,16 @@ probability given `Z ∈ Γ` (Storey 2002, Theorem 1; Efron 2010, ch. 2). Both s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Tail-area false discovery rate](tail-fdr.md)
+
+## Proof depends on
+
+- [Joint probability of a null case in a set](joint-law-null-prod.md)
+- [z-value has the mixture law](joint-law-univ-prod.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+- [Mixture density is nonnegative](mixture-density-nonneg.md)
 
 ## Sources
 

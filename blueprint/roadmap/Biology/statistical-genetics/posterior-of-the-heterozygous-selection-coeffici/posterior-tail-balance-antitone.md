@@ -14,7 +14,14 @@ nonincreasing in the observed PTV count `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean PTV count at mutation-selection balance](balance-mean.md)
+- [Poisson likelihood](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/poisson-lik.md)
+- [Posterior tail probability](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/posterior-tail.md)
+
+## Proof depends on
+
+- [Balance mean is decreasing in the selection coefficient](balance-mean-antitone-on.md)
+- [Posterior of `s_het` is stochastically nonincreasing in the PTV count, any antitone mean](posterior-tail-antitone-of-antitone-on.md)
 
 ## Sources
 

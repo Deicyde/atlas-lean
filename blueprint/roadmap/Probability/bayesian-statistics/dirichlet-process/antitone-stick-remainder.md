@@ -12,7 +12,11 @@ lean: ProbabilityTheory.antitone_stickRemainder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leftover stick in stick breaking](stick-remainder.md)
+
+## Proof depends on
+
+- [Leftover stick lies in the unit interval](stick-remainder-mem-icc.md)
 
 ## Sources
 

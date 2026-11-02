@@ -14,7 +14,9 @@ of gap columns: an alignment starting at `(i, j)` stays in the band of width `w`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Band check from a starting offset](banded-from.md)
+- [Number of gap columns of an alignment](gap-columns.md)
 
 ## Sources
 

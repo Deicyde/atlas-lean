@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isDetailedBalance_hkyR
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKY85 rate matrix](hky-rate.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
+
+## Proof depends on
+
+- [HKY85 exchangeabilities](hky-exchangeability.md)
+- [GTR is reversible](is-detailed-balance-gtr-rate.md)
 
 ## Sources
 

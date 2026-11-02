@@ -14,7 +14,13 @@ lean: ProbabilityTheory.measure_cond_eq_betaBinomialPMF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beta-binomial mass function](beta-binomial-pmf.md)
+- [Negative binomial mass function with real shape](neg-binomial-pmf.md)
+
+## Proof depends on
+
+- [Negative binomial splitting](neg-binomial-pmf-mul-div-eq-beta-binomia.md)
+- [Convolution of negative binomial laws with a common `p`](sum-neg-binomial-pmf-mul.md)
 
 ## Sources
 

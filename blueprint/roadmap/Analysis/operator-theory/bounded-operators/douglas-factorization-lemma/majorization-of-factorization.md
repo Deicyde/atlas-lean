@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.DouglasLemma.majorization_of_factori
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjoint preserves the operator norm](norm-adjoint.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

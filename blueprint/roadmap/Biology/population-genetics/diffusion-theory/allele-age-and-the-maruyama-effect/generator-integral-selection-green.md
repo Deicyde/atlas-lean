@@ -17,7 +17,18 @@ formalized here), `v(p)` is the expected value of `∫₀^T g(X_t) dt` up to abs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+- [Sojourn density of the Wright–Fisher diffusion with selection](selection-green.md)
+
+## Proof depends on
+
+- [Continuity of Kimura's fixation probability](../wright-fisher-diffusion/continuous-kimura-fixation.md)
+- [Derivative of Kimura's fixation probability at a point](../wright-fisher-diffusion/has-deriv-at-kimura-fixation.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Kimura's fixation probability equals one at frequency one](../wright-fisher-diffusion/kimura-fixation-one-right.md)
+- [Kimura's fixation probability vanishes at frequency zero](../wright-fisher-diffusion/kimura-fixation-zero-right.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
+- [Slope constant of Kimura's formula is nonzero](../wright-fisher-diffusion/kimura-slope-ne-zero.md)
 
 ## Sources
 

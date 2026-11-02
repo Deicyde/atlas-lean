@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.integral_f4Hat
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 estimator](f4-hat.md)
+
+## Proof depends on
+
+- [Sample allele frequency is unbiased](integral-div-of-has-law-binomial.md)
 
 ## Sources
 

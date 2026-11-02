@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.genVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.FisherDecomposition](../../../../sources/v2/MathlibExt.md)

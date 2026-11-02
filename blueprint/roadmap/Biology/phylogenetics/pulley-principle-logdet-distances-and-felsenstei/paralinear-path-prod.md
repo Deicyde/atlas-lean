@@ -19,7 +19,13 @@ is rooted at one end of the path (this rerooting is not formalized here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [LogDet (paralinear) distance](paralinear.md)
+- [Product of transition matrices along a path](path-prod.md)
+
+## Proof depends on
+
+- [Additivity of the LogDet distance along a chain, one step](paralinear-chain-step.md)
+- [LogDet distance of a vertex to itself is zero](paralinear-diagonal.md)
 
 ## Sources
 

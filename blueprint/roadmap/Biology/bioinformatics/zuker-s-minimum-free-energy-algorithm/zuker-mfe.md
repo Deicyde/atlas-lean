@@ -11,7 +11,11 @@ lean: Cslib.Bioinformatics.RNA.Zuker.zukerMFE
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+
+## Proof depends on
+
+- [Zuker exterior-loop recursion](zuker-exterior.md)
 
 ## Sources
 

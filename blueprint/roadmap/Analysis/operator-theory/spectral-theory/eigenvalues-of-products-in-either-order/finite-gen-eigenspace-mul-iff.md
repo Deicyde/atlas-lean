@@ -15,6 +15,10 @@ finite-dimensional together for a nonzero scalar and every exponent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized eigenspaces finite-dimensional together, for endomorphisms](../../../../LinearAlgebra/eigenvalues-and-canonical-forms/eigenvalues-of-the-products-ab-and-ba/finite-gen-eigenspace-mul-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.EigenvalueMulComm](../../../../../sources/v2/MathlibExt.md)

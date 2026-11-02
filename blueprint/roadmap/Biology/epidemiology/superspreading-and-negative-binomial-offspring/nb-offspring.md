@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.nbOffspring
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Negative-binomial offspring probabilities](nb-pmf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Epidemiology.Superspreading](../../../../sources/v2/MathlibExt.md)

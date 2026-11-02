@@ -14,7 +14,17 @@ the strictly positive Wakefield ABFs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
+- [Marginal least-squares effect estimate](ols-effect.md)
+- [Sampling variance of the least-squares effect estimate](ols-var.md)
+- [Posterior inclusion probability](pip.md)
+- [Covariance of the single-effect regression model](ser-cov.md)
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
+- [Multivariate Gaussian density function](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [Single-effect likelihood-ratio identity](ser-likelihood-ratio-eq-normalized-weigh.md)
 
 ## Sources
 

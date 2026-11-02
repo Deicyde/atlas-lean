@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.sfsKernel_dia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
 
 ## Sources
 

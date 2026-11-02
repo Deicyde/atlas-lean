@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Lean.LinearPenalties.columnCost
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear gap penalties](linear-penalties.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.sum_finset_schurI
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted partial sums grouped by the first index](sum-finset-schur-inf-weighted-fst-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite](../../../../../sources/v2/MathlibExt.md)

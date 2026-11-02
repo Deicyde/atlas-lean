@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.ehh_zero_window
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended haplotype homozygosity (EHH)](ehh.md)
+
+## Proof depends on
+
+- [Concordant haplotype pairs at a given radius](concordant-pairs.md)
+- [Haplotype window around the core](window.md)
 
 ## Sources
 

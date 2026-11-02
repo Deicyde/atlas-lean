@@ -13,7 +13,13 @@ leaf states and `⊤` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Weight of a tree labeling](../felsenstein-s-pruning-algorithm/weight.md)
+- [Labeling agrees with the observed leaf states](agrees.md)
+- [Min-plus cost semiring](cost.md)
+- [Total substitution cost of a labeling](edge-cost.md)
+- [Tropical leaf weights of observed states](leaf-obs.md)
 
 ## Sources
 

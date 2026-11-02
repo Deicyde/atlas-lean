@@ -12,7 +12,7 @@ defiers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
 
 ## Sources
 

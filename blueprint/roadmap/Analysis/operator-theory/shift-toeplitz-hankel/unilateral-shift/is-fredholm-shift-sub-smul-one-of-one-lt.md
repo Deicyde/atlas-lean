@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.isFredholm_sh
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Invertible operators are Fredholm](is-fredholm-of-is-unit.md)
+- [Shifted unilateral shift is invertible outside the unit disk](is-unit-shift-sub-smul-one-of-one-lt-nor.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ the empty structure; so the denominator of `pairProb` is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Membership in the set of secondary structures](mem-structures.md)
 
 ## Sources
 

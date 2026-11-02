@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.Clustering.OptimalLeafOrdering.length_orderings
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+- [Number of internal nodes of a dendrogram](num-internal.md)
+- [Leaf orderings of a dendrogram](orderings.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.StableDistribution.not_isNondegenerate_dirac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegenerate measure on the real line](is-nondegenerate.md)
 
 ## Sources
 

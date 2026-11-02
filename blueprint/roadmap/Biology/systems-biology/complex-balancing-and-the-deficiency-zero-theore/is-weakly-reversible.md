@@ -12,7 +12,11 @@ reactions from `y'` back to `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+
+## Proof depends on
+
+- [Directed reaction relation on complexes](reacts.md)
 
 ## Sources
 

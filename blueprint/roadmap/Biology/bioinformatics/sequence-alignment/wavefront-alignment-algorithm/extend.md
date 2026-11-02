@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.Wavefront.extend
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Largest valid offset on a diagonal](max-offset.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.WavefrontAlignment](../../../../../sources/v2/CSLibExt.md)

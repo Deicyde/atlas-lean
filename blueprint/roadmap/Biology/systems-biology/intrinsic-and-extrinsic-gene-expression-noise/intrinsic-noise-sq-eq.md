@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Dynamics.ExpressionNoise.IsIdenticalReporterPair.intrin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Identical reporter pair](is-identical-reporter-pair.md)
+- [Intrinsic noise strength](intrinsic-noise-sq.md)
+
+## Proof depends on
+
+- [Identical reporters have equal means](integral-eq.md)
+- [Half mean squared reporter difference equals intrinsic variance](integral-sub-sq-div-two-eq.md)
 
 ## Sources
 

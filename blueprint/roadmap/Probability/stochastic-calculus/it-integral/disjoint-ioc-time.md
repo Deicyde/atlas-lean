@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ElementaryIntegrand.disjoint_Ioc_time
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
 
 ## Sources
 

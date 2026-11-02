@@ -13,7 +13,7 @@ linear polynomial `C r + X * C c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient list after multiplication by a linear polynomial](mul-linear-coeff-list.md)
 
 ## Sources
 

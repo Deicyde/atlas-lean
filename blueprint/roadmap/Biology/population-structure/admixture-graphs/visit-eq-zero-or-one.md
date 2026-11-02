@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.visit_eq_zero_or_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Tree-shaped admixture graph](is-tree.md)
+- [Probability that a lineage passes through a node](visit.md)
+
+## Proof depends on
+
+- [First-step equation for visit probabilities](visit-eq.md)
 
 ## Sources
 

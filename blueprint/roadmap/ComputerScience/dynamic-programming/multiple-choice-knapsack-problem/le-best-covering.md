@@ -13,7 +13,11 @@ value at most `bestCovering`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple-choice knapsack selection](is-selection.md)
+- [Knapsack item with weight and value](item.md)
+- [Covering recurrence for multiple-choice knapsack](best-covering.md)
+- [Total value of a knapsack selection](total-value.md)
+- [Total weight of a knapsack selection](total-weight.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.SummaryImputation.Model.integral_im
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
+- [Imputed summary statistic](imputed.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ with one of the `b` old ones (a consequence of the consistency relation).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
+- [Total merger rate of a Λ-coalescent](total-merger-rate.md)
+
+## Proof depends on
+
+- [Pitman's integral formula for merger rates when $2 \le k \le b$](merger-rate-of-le.md)
+- [Binomial identity behind the total merger rate](sq-mul-sum-choose-mul-pow.md)
 
 ## Sources
 

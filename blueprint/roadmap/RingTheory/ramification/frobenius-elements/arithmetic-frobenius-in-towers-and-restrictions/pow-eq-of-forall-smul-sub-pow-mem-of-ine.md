@@ -18,6 +18,11 @@ Frobenius premise over the intermediate ring and its residue cardinality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Elements with the same powered congruence differ by inertia](mem-inertia-of-forall-smul-sub-pow-mem.md)
+- [Powers of a Frobenius element satisfy the powered congruence](pow-smul-sub-pow-mem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.TowerRestriction](../../../../../sources/v2/MathlibExt.md)

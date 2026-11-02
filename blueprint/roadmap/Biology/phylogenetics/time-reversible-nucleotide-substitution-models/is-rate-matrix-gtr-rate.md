@@ -13,7 +13,12 @@ matrix is a rate matrix (the diagonal `s i i` is not used by `gtrRate`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Rows of the GTR rate matrix sum to zero](sum-gtr-rate.md)
 
 ## Sources
 

@@ -15,7 +15,17 @@ likelihood equation converges in distribution to `χ²₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Wald's test](tendsto-in-distribution-wald-statistic.md)
+- [Quadratic expansion of the log-likelihood ratio](tendsto-in-measure-two-mul-log-likelihoo.md)
+- [Fisher information is the second moment of the score](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/integral-score-sq.md)
+- [Asymptotic normality of a consistent root of an estimating equation](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-distribution-sqrt-mul-sub-of.md)
 
 ## Sources
 

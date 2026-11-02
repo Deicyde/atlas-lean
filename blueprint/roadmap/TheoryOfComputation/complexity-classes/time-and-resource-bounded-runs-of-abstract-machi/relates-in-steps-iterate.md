@@ -12,7 +12,12 @@ lean: Cslib.OutputReachability.relatesInSteps_iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Resource-bounded active step](bounded-step.md)
+- [One iteration step with absorbing halted states](next.md)
+
+## Proof depends on
+
+- [Iterates of a halted state are constant](iterate-of-some.md)
 
 ## Sources
 

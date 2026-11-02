@@ -12,7 +12,12 @@ lean: ProbabilityTheory.stickyKernel_mem_rowStochastic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Nonnegativity of the sticky kernel](sticky-kernel-nonneg.md)
+- [Rows of the sticky kernel sum to one](sum-sticky-kernel.md)
 
 ## Sources
 

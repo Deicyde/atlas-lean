@@ -13,7 +13,13 @@ terminal frontier occurrences have been collected in reverse order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth-cut frontier of a binary branching step](leaves.md)
+- [One depth-first round of binary branching](round.md)
+
+## Proof depends on
+
+- [Exact round count for traversing a terminal frontier](round-iterate.md)
+- [An empty work stack is fixed by every round](round-nil-iterate.md)
 
 ## Sources
 

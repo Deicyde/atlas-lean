@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.topAxesSpan
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Axes of variation](axes.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.Eigenstrat](../../../../sources/v2/MathlibExt.md)

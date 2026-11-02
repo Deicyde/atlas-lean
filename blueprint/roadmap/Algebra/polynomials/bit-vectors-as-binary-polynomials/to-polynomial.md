@@ -14,6 +14,10 @@ bit of `w`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Little-endian bits of a bitvector](../../../ComputerScience/algebraic-and-numerical-algorithms/bitvectors-and-boolean-lists/to-bool-list-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.BitVec](../../../../sources/v2/MathlibExt.md)

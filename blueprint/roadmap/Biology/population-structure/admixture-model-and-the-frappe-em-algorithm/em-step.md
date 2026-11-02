@@ -13,7 +13,17 @@ polymorphic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Polymorphic genotype data](polymorphic.md)
+
+## Proof depends on
+
+- [FRAPPE update of the allele frequencies](m-step-f.md)
+- [FRAPPE update of the ancestry proportions](m-step-q.md)
+- [Updated allele frequencies are less than one](m-step-f-lt-one.md)
+- [Positivity of the updated allele frequencies](m-step-f-pos.md)
+- [Positivity of the updated ancestry proportions](m-step-q-pos.md)
+- [Updated ancestry proportions sum to one](m-step-q-sum.md)
 
 ## Sources
 

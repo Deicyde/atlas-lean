@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncatedRV_eq_of_bdd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Truncation fixes values within the cutoff](../kolmogorov-s-three-series-theorem/truncated-rv-eq-of-abs-le.md)
 
 ## Sources
 

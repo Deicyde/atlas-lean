@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.parts_newTable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seating a customer at a new table](new-table.md)
 
 ## Sources
 

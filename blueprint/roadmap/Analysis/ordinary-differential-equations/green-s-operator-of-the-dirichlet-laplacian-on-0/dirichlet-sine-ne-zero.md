@@ -14,7 +14,7 @@ eigenfunctions, not the trivial solution). The witness point is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ the covariance transformed to `A Q Aᵀ`, the score is unchanged. (The identity 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares qpGraph score S1](score-s1.md)
 
 ## Sources
 

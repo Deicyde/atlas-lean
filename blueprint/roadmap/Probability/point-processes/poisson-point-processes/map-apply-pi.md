@@ -14,7 +14,13 @@ intensity `μ` in the sense of Last–Penrose Def. 3.1 (Last–Penrose Prop. 3.5
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson point process with finite intensity](poisson-point-process.md)
+
+## Proof depends on
+
+- [Counting measure of a finite tuple of points](counting-measure.md)
+- [Measurability of the counting measure in the points](measurable-counting-measure.md)
+- [Poisson weights sum to one](tsum-coeff-mul-pow.md)
 
 ## Sources
 

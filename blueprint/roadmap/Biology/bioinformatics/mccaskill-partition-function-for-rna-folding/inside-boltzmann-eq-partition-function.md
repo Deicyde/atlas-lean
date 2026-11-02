@@ -14,7 +14,15 @@ This is an algebraic identity valid for every real `RT`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inside recursion](inside.md)
+- [McCaskill partition function of RNA secondary structures](partition-function.md)
+
+## Proof depends on
+
+- [Additive base-pair energy model](energy.md)
+- [Inside value sums the weights of all secondary structures](inside-eq-sum-structures.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

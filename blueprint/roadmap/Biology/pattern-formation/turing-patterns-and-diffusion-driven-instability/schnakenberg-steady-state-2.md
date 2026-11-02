@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.schnakenberg_steadyState
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schnakenberg reaction kinetics](schnakenberg.md)
+- [Steady state of the Schnakenberg kinetics](schnakenberg-steady-state.md)
 
 ## Sources
 

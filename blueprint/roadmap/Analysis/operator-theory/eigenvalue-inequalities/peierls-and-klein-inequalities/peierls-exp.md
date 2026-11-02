@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.PeierlsKlein.peierls_exp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Peierls' inequality](peierls-inequality.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.PeierlsKlein](../../../../../sources/v2/MathlibExt.md)

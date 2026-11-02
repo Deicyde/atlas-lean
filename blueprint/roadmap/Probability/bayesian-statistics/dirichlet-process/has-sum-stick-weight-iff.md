@@ -12,7 +12,13 @@ lean: ProbabilityTheory.hasSum_stickWeight_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Stick-breaking weights](stick-weight.md)
+
+## Proof depends on
+
+- [Nonnegativity of stick-breaking weights](stick-weight-nonneg.md)
+- [Stick-breaking pieces and leftover make up the whole stick](sum-range-stick-weight-add-stick-remaind.md)
 
 ## Sources
 

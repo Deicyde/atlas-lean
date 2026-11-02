@@ -14,6 +14,10 @@ it stays at `i` with probability `c` and otherwise redraws the state from `π`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Equal-input matrix](equal-input.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Process.ContinuousTimeMarkovChain.StickyKernel](../../../../../sources/v2/MathlibExt.md)

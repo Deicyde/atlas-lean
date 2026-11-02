@@ -15,7 +15,12 @@ Indices outside `J₁ ∪ J₂` select only the empty subset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even indicator of a natural number](even-indicator.md)
+- [Coefficients of the even-indicator expansion](parity-coeff.md)
+
+## Proof depends on
+
+- [Subset sum of parity coefficients is the even-cardinality indicator](sum-powerset-parity-coeff.md)
 
 ## Sources
 

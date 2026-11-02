@@ -14,6 +14,11 @@ production of the initial nonterminal consumes the whole input.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Earley chart as a predicate on items](earley-chart-item.md)
+- [Earley item](earley-item.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Earley](../../../../../sources/v2/CSLibExt.md)

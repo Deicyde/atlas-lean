@@ -14,6 +14,11 @@ labeled by `X`, each taxon labeling exactly one leaf.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Planar rooted binary tree with labeled leaves](plane-tree.md)
+- [Leaf labels of a planar binary tree](leaves.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.TreeCount](../../../../sources/v2/MathlibExt.md)

@@ -30,6 +30,12 @@ Scope of the items:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Open connection within a set is monotone in the set](../../phase-transition/percolation-probability-and-critical-point/connected-within-mono-set.md)
+- [Size bound for the edge boundary](card-boundary-edges-le.md)
+- [Exponential decay of the one-arm probability below the threshold](cross-prob-exp-decay-of-mem-tilde-pc-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.SharpnessTheorem](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.exists_unique_app
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+
+## Proof depends on
+
+- [Banach–Nečas–Babuška theorem](continuous-linear-equiv-of-bilinear-form.md)
+- [Banach–Nečas–Babuška equivalence acts as the bilinear form](continuous-linear-equiv-of-bilinear-form-2.md)
 
 ## Sources
 

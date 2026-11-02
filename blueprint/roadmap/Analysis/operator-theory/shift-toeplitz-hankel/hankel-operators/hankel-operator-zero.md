@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.hankelOperator_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice operator](hankel-slice.md)
 
 ## Sources
 

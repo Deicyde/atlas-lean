@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.blockedAt_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Blocking at a node of a path](blocked-at.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](edge.md)
+- [Descendant relation in a Bayesian network](is-descendant.md)
 
 ## Sources
 

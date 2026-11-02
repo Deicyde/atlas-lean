@@ -13,7 +13,21 @@ lean: MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measureReal_exists
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher transition matrix](wright-fisher.md)
+- [Finite-state Markov chain with a given transition matrix](../../../Probability/markov-chains/finite-markov-chains/is-finite-markov-chain.md)
+
+## Proof depends on
+
+- [Limiting loss probability of the Wright–Fisher transition matrix](tendsto-mat-pow-zero.md)
+- [Loss of an allele is absorbing in the Wright–Fisher chain](wright-fisher-prob-zero-zero.md)
+- [One-step forward equation](../../../Probability/markov-chains/finite-markov-chains/map-succ-eq-bind.md)
+- [Transition kernel of a stochastic matrix](../../../Probability/markov-chains/finite-markov-chains/finite-chain-kernel.md)
+- [Transition kernel of a stochastic matrix evaluated on a set](../../../Probability/markov-chains/finite-markov-chains/finite-chain-kernel-apply.md)
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Matrix powers of a stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+- [Additivity of recursive matrix powers](../../../Probability/markov-chains/convergence-theorem-for-finite-markov-chains/mat-pow-add.md)
+- [Powers of a stochastic matrix are nonnegative](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/mat-pow-nonneg.md)
+- [First recursive power of a stochastic matrix](../../../Probability/markov-chains/convergence-theorem-for-finite-markov-chains/mat-pow-one.md)
 
 ## Sources
 

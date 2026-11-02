@@ -11,7 +11,7 @@ lean: Algebra.PointDerivations.map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point derivations of an algebra](point-derivations.md)
 
 ## Sources
 

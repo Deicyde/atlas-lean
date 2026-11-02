@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftNumericalRange.norm_geom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Geometric unit vector attached to a point of the disc](geom.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance.centredCov_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Double centring of a square matrix](../coalescence-times-f-statistics-and-pca/double-center.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [Centred leaf covariance](centred-cov.md)
+
+## Proof depends on
+
+- [f2 from the centred leaf covariance](f2-eq-centred-cov.md)
+- [Mean frequency across populations](pop-mean.md)
 
 ## Sources
 

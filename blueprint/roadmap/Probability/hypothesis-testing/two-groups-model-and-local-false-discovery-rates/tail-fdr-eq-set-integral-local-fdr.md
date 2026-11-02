@@ -13,7 +13,14 @@ the `f`-weighted average of the local false discovery rate over `Γ` (Efron 2010
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Local false discovery rate](local-fdr.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+- [Tail-area false discovery rate](tail-fdr.md)
+
+## Proof depends on
+
+- [Local fdr times mixture density equals the null part](local-fdr-mul-mixture-density.md)
 
 ## Sources
 

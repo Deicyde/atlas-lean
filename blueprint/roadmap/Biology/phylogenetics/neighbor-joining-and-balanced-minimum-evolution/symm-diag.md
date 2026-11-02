@@ -13,7 +13,13 @@ dissimilarity stays symmetric and vanishes on every current cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+
+## Proof depends on
+
+- [Initial cluster dissimilarity in neighbor joining](../neighbor-joining/initial-dist.md)
+- [Cluster dissimilarity after a neighbor-joining step](../neighbor-joining/join-dist.md)
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
 
 ## Sources
 

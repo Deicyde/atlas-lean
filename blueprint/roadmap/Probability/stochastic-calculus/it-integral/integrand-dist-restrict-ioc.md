@@ -12,7 +12,8 @@ lean: ProbabilityTheory.integrandDist_restrictIoc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
 
 ## Sources
 

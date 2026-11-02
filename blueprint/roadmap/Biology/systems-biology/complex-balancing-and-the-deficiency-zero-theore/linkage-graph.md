@@ -12,7 +12,12 @@ reacts to the other.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complexes of a chemical reaction network](complexes.md)
+
+## Proof depends on
+
+- [Directed reaction relation on complexes](reacts.md)
 
 ## Sources
 

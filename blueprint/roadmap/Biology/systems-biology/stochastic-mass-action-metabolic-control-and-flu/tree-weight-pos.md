@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.treeWeight_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irreducible rate matrix](is-irreducible.md)
+- [Total weight of spanning in-trees](tree-weight.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Spanning in-tree rooted at a state](is-in-tree.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MvPowerSeries.pderiv_coefficientOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Coefficient of a coefficient operator over any finite superset](coeff-coefficient-operator-eq-sum.md)
+- [Partial derivatives commute with coefficient lifting](pderiv-comp-left.md)
 
 ## Sources
 

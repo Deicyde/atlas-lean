@@ -16,6 +16,10 @@ uniformizer the image of `ϖ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Power series over a DVR modulo $X - \varpi^e$ form a local PID](quotient-span-x-sub-c-pow-of-irreducible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.DVRQuotient](../../../../sources/v2/MathlibExt.md)

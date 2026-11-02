@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.exists_variationalSolution
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Solution of a coercive variational problem](variational-solution.md)
+- [Variational solution satisfies the variational equation](variational-solution-spec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CeaLemma](../../../../sources/v2/MathlibExt.md)

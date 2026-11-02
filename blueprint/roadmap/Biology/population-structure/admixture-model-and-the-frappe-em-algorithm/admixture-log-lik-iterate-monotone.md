@@ -13,7 +13,18 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.admixtureLogLik_itera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Admixture log-likelihood](admixture-log-lik.md)
+- [Allele-copy observations of a genotype matrix](data.md)
+- [Joint weight of an allele copy and its ancestral population](joint.md)
+- [The EM objective](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/em-q.md)
+
+## Proof depends on
+
+- [Positivity of the admixture joint weight](joint-pos.md)
+- [The EM log-likelihood of the allele copies is the admixture log-likelihood](log-lik-eq-admixture-log-lik.md)
+- [Log-likelihood of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/log-lik.md)
+- [EM iterates have monotone likelihood](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/log-lik-iterate-monotone.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: Cslib.Language.LinearBoundedAutomaton.termSym
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Norm of a cusp form](norm.md)
+
+## Proof depends on
+
+- [Cusp form norm agrees with the modular form norm](coe-norm-eq-coe-modular-form-norm.md)
 
 ## Sources
 

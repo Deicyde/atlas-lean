@@ -16,6 +16,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.dual
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup](../../../../../sources/v2/MathlibExt.md)

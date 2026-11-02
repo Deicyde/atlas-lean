@@ -14,7 +14,12 @@ applied to `f` converge uniformly on `[0, 1]` to `wfSemigroup t f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
+## Proof depends on
+
+- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ series `∑' k, a k • toeplitzSlice k` over the diagonal slices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator](../../../../../sources/v2/MathlibExt.md)

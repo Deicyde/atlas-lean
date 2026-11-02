@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.summable_periodicA
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](../unilateral-shift/shift-clm.md)
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+
+## Proof depends on
+
+- [Norm of a term of the periodic approximant](norm-periodic-approx-term.md)
+- [Summability of the geometric bound for periodic approximants](summable-geom-trunc.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.Logistic.logistic_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit solution of the logistic equation](logistic.md)
 
 ## Sources
 

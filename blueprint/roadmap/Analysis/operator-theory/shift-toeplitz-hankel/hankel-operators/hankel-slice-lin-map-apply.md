@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.hankelSliceLinMap_app
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice of a sequence](hankel-slice-fun.md)
+- [Anti-diagonal slice as a linear map](hankel-slice-lin-map.md)
 
 ## Sources
 

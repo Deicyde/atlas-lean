@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.CramerRateFunction.logMGFVec_const
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real-valued log-MGF expression](log-mgfvec.md)
 
 ## Sources
 

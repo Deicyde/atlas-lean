@@ -15,7 +15,12 @@ under the joint law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Monte Carlo permutation p-value](monte-carlo-permutation-pvalue.md)
+
+## Proof depends on
+
+- [Counting lemma for rank counts](card-filter-rank-count-le.md)
 
 ## Sources
 

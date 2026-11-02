@@ -14,6 +14,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.tajimaChebyshevTest
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
+- [Tajima's constant $c_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c1.md)
+- [Tajima's constant $c_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.TajimaD](../../../../sources/v2/MathlibExt.md)

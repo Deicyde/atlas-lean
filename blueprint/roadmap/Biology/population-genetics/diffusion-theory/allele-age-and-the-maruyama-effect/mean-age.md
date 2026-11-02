@@ -14,6 +14,11 @@ generations: `∫₀^x Ψ₁(z) dz + ∫_x^1 Ψ₂(z) dz`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Closed-form sojourn density above the current frequency](maruyama-above.md)
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.AlleleAge](../../../../../sources/v2/MathlibExt.md)

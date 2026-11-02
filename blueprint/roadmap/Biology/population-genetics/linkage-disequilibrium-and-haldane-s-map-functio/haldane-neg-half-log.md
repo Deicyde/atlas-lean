@@ -14,7 +14,7 @@ value `log 0 = 0`. The distance is nonnegative exactly when `0 ≤ r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](haldane.md)
 
 ## Sources
 

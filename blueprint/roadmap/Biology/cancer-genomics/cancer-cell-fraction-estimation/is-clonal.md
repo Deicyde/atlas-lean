@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.CancerGenomics.CancerCellFraction.IsClonal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Posterior probability that the cancer cell fraction exceeds a threshold](posterior-tail.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.CancerCellFraction](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ iff its z-value lies in `Γ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+
+## Proof depends on
+
+- [Joint law of null indicator and z-value](joint-law.md)
 
 ## Sources
 

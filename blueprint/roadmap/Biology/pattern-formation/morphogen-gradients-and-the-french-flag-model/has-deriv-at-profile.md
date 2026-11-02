@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.hasDerivAt_profile
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decay length of a morphogen gradient](decay-length.md)
+- [Steady-state exponential morphogen profile](profile.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.norm_sq_compLinM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Composition operator as a linear map](comp-lin-map.md)
+- [Supremum of the fiber counts of a map](fiber-sup.md)
+
+## Proof depends on
+
+- [Pointwise action of the composition linear map](comp-lin-map-apply.md)
+- [Squared-norm sum bound for a precomposed sequence](tsum-comp-fun-norm-sq-le.md)
 
 ## Sources
 

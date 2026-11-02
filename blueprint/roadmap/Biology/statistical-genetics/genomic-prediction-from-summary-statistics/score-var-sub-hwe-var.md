@@ -13,7 +13,9 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.ArmitageTrend.sco
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pooled allele frequency](allele-freq.md)
+- [Pooled genotype-score variance](score-var.md)
+- [Number of individuals in a case-control genotype table](total.md)
 
 ## Sources
 

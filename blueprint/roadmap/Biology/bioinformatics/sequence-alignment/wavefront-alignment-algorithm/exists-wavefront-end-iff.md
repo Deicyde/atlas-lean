@@ -13,7 +13,17 @@ alignment of `xs` and `ys` costs at most `s`. Hence the least such `s` is the op
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Valid alignment of two sequences](../pairwise-sequence-alignment/is-alignment.md)
+- [Linear gap penalties](linear-penalties.md)
+- [Cost of an alignment under linear gap penalties](cost.md)
+- [Furthest-reaching wavefront offset](wavefront.md)
+
+## Proof depends on
+
+- [Largest valid offset on a diagonal](max-offset.md)
+- [Completeness of the wavefront algorithm](wavefront-complete.md)
+- [Soundness of the wavefront algorithm](wavefront-sound.md)
 
 ## Sources
 

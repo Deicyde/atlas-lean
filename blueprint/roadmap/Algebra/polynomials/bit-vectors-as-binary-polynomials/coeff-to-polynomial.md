@@ -13,7 +13,11 @@ indices outside the fixed width have coefficient zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary polynomial of a bitvector](to-polynomial.md)
+
+## Proof depends on
+
+- [Little-endian bits of a bitvector](../../../ComputerScience/algebraic-and-numerical-algorithms/bitvectors-and-boolean-lists/to-bool-list-le.md)
 
 ## Sources
 

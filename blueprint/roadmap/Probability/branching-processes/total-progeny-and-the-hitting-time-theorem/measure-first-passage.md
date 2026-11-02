@@ -14,7 +14,8 @@ probability `P(T = n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First passage of the exploration walk](is-first-passage.md)
+- [Hitting weight of first-passage step sequences](hitting-weight.md)
 
 ## Sources
 

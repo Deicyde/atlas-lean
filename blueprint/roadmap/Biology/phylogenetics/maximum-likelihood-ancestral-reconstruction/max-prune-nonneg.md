@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.Phylogenetics.AncestralReconstruction.maxPrune_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative transition weights on a tree](nonneg-weights.md)
+- [Max-product pruning recursion](max-prune.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.pow_one_sub_haldane
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/haldane.md)
+
+## Proof depends on
+
+- [Haldane's map function: $1 - r = e^{-d}\cosh d$](one-sub-haldane.md)
 
 ## Sources
 

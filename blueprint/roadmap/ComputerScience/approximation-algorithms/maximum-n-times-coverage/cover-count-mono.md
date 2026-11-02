@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.MaxNTimesCoverage.coverCount_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cover count of an element under a family of overlays](cover-count.md)
 
 ## Sources
 

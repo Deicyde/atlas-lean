@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationGenetics.HudsonKaplan.card_sweep_snd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hudson and Kaplan's `R_m`](rm.md)
+- [Hudson–Kaplan left-to-right sweep](sweep.md)
+
+## Proof depends on
+
+- [Four-gamete condition for binary characters](../../phylogenetics/splits-compatibility-ultrametrics-and-upgma/four-gametes.md)
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Breakpoint separating two sites](separates.md)
+- [One step of the Hudson–Kaplan sweep](sweep-step.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.f3Hat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unbiased heterozygosity estimator](het-hat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,16 @@ then every eigenvalue of `F - V` has negative real part iff `R₀ = ρ(F V⁻¹)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic reproduction number of the next-generation matrix](r0.md)
+- [Hurwitz matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-hurwitz.md)
+- [Nonsingular M-matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-nonsingular-mmatrix.md)
+
+## Proof depends on
+
+- [Inverse positivity of M-matrices](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/inv-nonneg.md)
+- [Nonsingular M-matrices are invertible](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-unit.md)
+- [Z-matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-zmatrix.md)
+- [Collatz–Wielandt lower bound](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/le-spectral-radius-of-smul-le-mul-vec.md)
 
 ## Sources
 

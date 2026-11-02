@@ -12,7 +12,11 @@ lean: AddMonoidAlgebra.weightedDerivation_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted derivation of an additive monoid algebra](weighted-derivation.md)
+
+## Proof depends on
+
+- [Coefficients of a weighted derivation](coeff-weighted-derivation.md)
 
 ## Sources
 

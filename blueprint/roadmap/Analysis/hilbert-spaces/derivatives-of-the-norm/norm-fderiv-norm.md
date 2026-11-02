@@ -16,6 +16,12 @@ product structure, so `K` is an explicit argument.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Formula for the derivative of the norm](fderiv-norm.md)
+- [Operator norm of the real inner product functional](norm-re-inner-sl.md)
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NormDerivative](../../../../sources/v2/MathlibExt.md)

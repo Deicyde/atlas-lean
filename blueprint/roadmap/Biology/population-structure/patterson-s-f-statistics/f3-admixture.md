@@ -13,7 +13,15 @@ then `f3 C A B = -α (1 - α) f2 A B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Allele frequency of a population in the drift model](freq.md)
+- [f2 statistic](f2.md)
+- [f3 statistic](f3.md)
+
+## Proof depends on
+
+- [f2 in the drift model](f2-freq.md)
+- [f3 in the drift model](f3-freq.md)
 
 ## Sources
 

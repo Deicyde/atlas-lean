@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.ewensCondProb_eq_stirlingFirst
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+- [Ewens conditional probability given the number of alleles](ewens-cond-prob.md)
+
+## Proof depends on
+
+- [`K` is sufficient for `θ`](ewens-cond-prob-eq.md)
+- [Cauchy's count by number of cycles](sum-cycle-type-weight-eq-stirling-first.md)
 
 ## Sources
 

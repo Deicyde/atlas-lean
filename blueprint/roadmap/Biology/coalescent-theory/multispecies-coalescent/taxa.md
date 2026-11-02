@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.SpeciesTree.t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
 
 ## Sources
 

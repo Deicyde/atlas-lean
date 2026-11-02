@@ -14,6 +14,10 @@ external-branch mutations are the derived singletons `ξ₁` (Fu & Li 1993).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tajima's constant $a_1$](../segregating-sites-and-pairwise-differences/tajima-a1.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.DriftModel.lineage
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
 
 ## Sources
 

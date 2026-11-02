@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.mutationGenerator_zero_zer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
 
 ## Sources
 

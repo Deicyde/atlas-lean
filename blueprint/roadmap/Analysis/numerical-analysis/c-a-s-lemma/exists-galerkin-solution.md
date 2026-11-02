@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.exists_galerkinSolution
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Galerkin solution](galerkin-solution.md)
+- [Galerkin solution satisfies the Galerkin equations](galerkin-solution-spec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CeaLemma](../../../../sources/v2/MathlibExt.md)

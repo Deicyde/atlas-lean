@@ -14,7 +14,17 @@ is nonincreasing in the dispersion `k > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial offspring law is a probability measure](is-probability-measure-nb-offspring.md)
+- [Negative-binomial offspring distribution](nb-offspring.md)
+- [Extinction probability of a Galton–Watson process](../../../Probability/branching-processes/galton-watson-process/extinction-prob.md)
+
+## Proof depends on
+
+- [Comparison principle for Galton–Watson extinction](extinction-prob-le-of-pgf-le.md)
+- [Negative-binomial probability generating function](nb-pgf.md)
+- [Monotonicity in the dispersion](nb-pgf-antitone.md)
+- [Generating function of the negative-binomial law in closed form](pgf-nb-offspring.md)
+- [Probability generating function](../../../Probability/characteristic-functions/probability-generating-functions/pgf.md)
 
 ## Sources
 

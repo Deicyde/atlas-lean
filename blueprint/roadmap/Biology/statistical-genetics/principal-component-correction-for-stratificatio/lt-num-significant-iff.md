@@ -13,7 +13,11 @@ all earlier ones exceed the threshold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sequential count of significant axes](num-significant.md)
+
+## Proof depends on
+
+- [At most K axes are declared significant](num-significant-le.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Self-adjoint operator minus a non-real scalar is invertible](is-unit-sub-smul-one-of-is-self-adjoint.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CayleyTransform](../../../../../sources/v2/MathlibExt.md)

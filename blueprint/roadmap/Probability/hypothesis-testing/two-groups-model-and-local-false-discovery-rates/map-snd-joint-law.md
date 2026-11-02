@@ -12,7 +12,15 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.map_snd_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+
+## Proof depends on
+
+- [Mixture density is integrable](integrable-mixture-density.md)
+- [z-value has the mixture law](joint-law-univ-prod.md)
+- [Mixture density is nonnegative](mixture-density-nonneg.md)
 
 ## Sources
 

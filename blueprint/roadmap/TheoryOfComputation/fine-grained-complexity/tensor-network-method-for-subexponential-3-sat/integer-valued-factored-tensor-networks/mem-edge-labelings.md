@@ -13,7 +13,12 @@ other coordinates contain the default.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge labelings of the complete graph](edge-labelings.md)
+
+## Proof depends on
+
+- [Membership in default-padded finite tuples](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/mem-pi-finset-on.md)
+- [Finite tuples with prescribed default values](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/pi-finset-on.md)
 
 ## Sources
 

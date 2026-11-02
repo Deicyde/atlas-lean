@@ -14,6 +14,11 @@ lean: Cslib.PolynomiallyBounded.pow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Constant functions are polynomially bounded](const.md)
+- [Products of polynomially bounded functions are polynomially bounded](mul.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Data.Nat.PolynomialBound](../../../../sources/v2/CSLibExt.md)

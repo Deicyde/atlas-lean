@@ -13,7 +13,15 @@ so the grammar is context-sensitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminals of the $a^n b^n c^n$ grammar](abc.md)
+- [Nonterminals of the $a^n b^n c^n$ grammar](abcnt.md)
+- [Context-sensitive grammar](is-context-sensitive.md)
+- [Context-sensitive grammar for $a^n b^n c^n$](abc-grammar.md)
+
+## Proof depends on
+
+- [Unrestricted grammar](csgrammar.md)
+- [Nonterminal grammar symbols](is-nonterminal.md)
 
 ## Sources
 

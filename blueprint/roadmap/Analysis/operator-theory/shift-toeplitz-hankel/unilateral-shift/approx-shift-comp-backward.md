@@ -14,7 +14,13 @@ after it gives `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Backward shift power is a left inverse of the shift power](backward-clm-pow-comp-shift-clm-pow.md)
+- [Finite-dimensionality of the kernel of a backward shift power](finite-dimensional-ker-backward-clm-pow.md)
 
 ## Sources
 

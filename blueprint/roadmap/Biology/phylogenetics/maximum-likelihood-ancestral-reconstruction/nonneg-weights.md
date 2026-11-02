@@ -11,7 +11,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.AncestralReconstruction.NonnegWeights
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
 
 ## Sources
 

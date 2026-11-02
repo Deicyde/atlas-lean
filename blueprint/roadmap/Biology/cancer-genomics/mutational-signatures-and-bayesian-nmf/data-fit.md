@@ -13,6 +13,11 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.dataFit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Kullback–Leibler divergence](kl-div.md)
+- [Reconstruction matrix in nonnegative matrix factorization](recon.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.MutationalSignatures.ARDNMF](../../../../sources/v2/CSLibExt.md)

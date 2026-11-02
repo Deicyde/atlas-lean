@@ -12,7 +12,7 @@ but not `z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted triplet](triplet.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ extended haplotype homozygosity at genetic distance `d` is the power law
 
 ## Depends on
 
-This node has no prerequisites.
+- [Duration of a logistic sweep between two frequencies](sweep-duration.md)
+- [EHH in the star-genealogy sweep model](sweep-ehh.md)
+
+## Proof depends on
+
+- [Duration of a complete deterministic sweep](sweep-duration-full.md)
 
 ## Sources
 

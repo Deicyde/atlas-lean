@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.numSignificant_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sequential count of significant axes](num-significant.md)
 
 ## Sources
 

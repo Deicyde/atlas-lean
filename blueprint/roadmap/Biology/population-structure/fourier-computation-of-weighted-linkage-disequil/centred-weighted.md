@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.PopulationStructure.WeightedLDFFT.centredWeighted
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample mean genotype at a SNP](mean-geno.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.WeightedLDFFT](../../../../sources/v2/CSLibExt.md)

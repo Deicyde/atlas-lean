@@ -13,7 +13,11 @@ power is at least `β` (Lawrence et al. 2014 take `β = 0.9`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Saturation power of the binomial gene discovery test](saturation-power.md)
+
+## Proof depends on
+
+- [Power tends to one](tendsto-saturation-power.md)
 
 ## Sources
 

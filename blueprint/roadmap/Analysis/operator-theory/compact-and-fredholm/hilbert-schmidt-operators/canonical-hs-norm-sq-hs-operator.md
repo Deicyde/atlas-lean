@@ -13,7 +13,16 @@ squared norm given by the finite squared norm of its matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Squared Hilbert–Schmidt norm in a family](hs-norm-sq-2.md)
+
+## Proof depends on
+
+- [Canonical Hilbert–Schmidt norm equals the matrix norm](canonical-hs-norm-sq-eq-of-real-matrix.md)
+- [Matrix of a bounded operator on $\ell^2$](hs-matrix.md)
+- [Matrix of the Hilbert–Schmidt operator of a matrix](hs-matrix-hs-operator.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ equilibrium `F*` tends to `1 / (1 + κ)` as `N → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium $F_{ST}$ of Wright's island model](island-equilibrium.md)
 
 ## Sources
 

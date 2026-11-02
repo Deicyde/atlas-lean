@@ -16,7 +16,13 @@ in which three lineages reach the root population.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tavaré's formula for the number of ancestral lineages](../ancestral-lineage-counting-and-tavar-s-formula/tavare-prob.md)
+- [Probability of no coalescence in one Wright–Fisher generation](../kingman-s-coalescent-and-watterson-s-estimator/no-coal-prob.md)
+
+## Proof depends on
+
+- [Wright–Fisher coalescence times converge to exponential laws](../kingman-s-coalescent-and-watterson-s-estimator/tendsto-no-coal-prob-pow-floor.md)
+- [Two lineages remain distinct with probability $e^{-t}$](tavare-prob-two-two.md)
 
 ## Sources
 

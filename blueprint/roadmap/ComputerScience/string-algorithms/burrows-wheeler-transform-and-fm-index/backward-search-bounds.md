@@ -13,7 +13,12 @@ lean: Cslib.Bioinformatics.Indexing.BWT.backwardSearch_bounds
 
 ## Depends on
 
-This node has no prerequisites.
+- [FM-index backward search](backward-search.md)
+
+## Proof depends on
+
+- [Count of smaller letters in the FM-index](count-less.md)
+- [Rank of a letter in a prefix of the last column](rank.md)
 
 ## Sources
 

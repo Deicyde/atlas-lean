@@ -13,7 +13,13 @@ commutes with the lawful full formal exponential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficients of a weighted rescaling of a rational power series](coeff-rescale-map-of-weight.md)
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
+
+## Proof depends on
+
+- [Filtration-preserving endomorphisms commute with the formal exponential](hom-exp-of-constant-coeff-zero.md)
+- [Coefficient ring maps commute with the formal exponential](map-exp-of-constant-coeff-zero.md)
 
 ## Sources
 

@@ -17,7 +17,18 @@ prediction `Z' β̂` (`gpMean_markerKernel_mulVec`), and covariance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear marker kernel on genotype vectors](marker-kernel.md)
+- [Joint prior covariance in Gaussian-process regression](../gaussian-process-regression/joint-cov.md)
+- [Training-target projection](../gaussian-process-regression/target-part.md)
+- [Test-value projection](../gaussian-process-regression/test-part.md)
+
+## Proof depends on
+
+- [GP posterior mean = GBLUP](gp-mean-marker-kernel.md)
+- [Kernel matrix of the marker kernel](kernel-matrix-marker-kernel.md)
+- [Positive semidefiniteness of the marker kernel matrix](kernel-matrix-marker-kernel-pos-semidef.md)
+- [The Gaussian-process posterior](../gaussian-process-regression/cond-distrib-test-given-targets.md)
+- [Kernel matrix](../gaussian-process-regression/kernel-matrix.md)
 
 ## Sources
 

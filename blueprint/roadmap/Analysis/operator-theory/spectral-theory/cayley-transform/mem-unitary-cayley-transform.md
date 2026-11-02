@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Cayley transform of a self-adjoint operator is invertible](is-unit-cayley-transform.md)
+- [Adjoint of the Cayley transform is a left inverse](star-mul-self-cayley-transform.md)
 
 ## Sources
 

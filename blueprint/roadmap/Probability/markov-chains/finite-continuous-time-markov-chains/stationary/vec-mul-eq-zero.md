@@ -13,7 +13,7 @@ lean: ProbabilityTheory.IsDetailedBalance.vecMul_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Detailed balance](is-detailed-balance.md)
 
 ## Sources
 

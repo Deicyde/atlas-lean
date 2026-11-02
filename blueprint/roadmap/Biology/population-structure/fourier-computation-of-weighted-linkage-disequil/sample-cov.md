@@ -14,6 +14,10 @@ of the genotypes at SNPs `x` and `y` (Loh et al. 2013, Eq. 5; meaningful for `m 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample mean genotype at a SNP](mean-geno.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.WeightedLDFFT](../../../../sources/v2/CSLibExt.md)

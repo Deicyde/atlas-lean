@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.domVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dominance deviation of a genotype](dom-dev.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.FisherDecomposition](../../../../sources/v2/MathlibExt.md)

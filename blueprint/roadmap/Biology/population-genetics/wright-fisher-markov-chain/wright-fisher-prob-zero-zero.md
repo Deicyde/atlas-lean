@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.WrightFisherChain.wrightFisher_prob_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher transition matrix](wright-fisher.md)
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Entries of the Wright–Fisher matrix](wright-fisher-prob.md)
 
 ## Sources
 

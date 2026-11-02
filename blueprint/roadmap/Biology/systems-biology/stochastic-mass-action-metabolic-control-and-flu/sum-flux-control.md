@@ -13,7 +13,13 @@ nonzero steady-state flux `J_j`, `∑_i C^{J_j}_{e_i} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular steady state of a metabolic network](is-regular-steady-state.md)
+- [Flux control coefficient](flux-control.md)
+- [Steady-state fluxes along a steady-state map](steady-flux.md)
+
+## Proof depends on
+
+- [Reaction fluxes proportional to enzyme levels](flux.md)
 
 ## Sources
 

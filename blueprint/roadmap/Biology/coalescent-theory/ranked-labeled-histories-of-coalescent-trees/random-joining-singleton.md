@@ -13,7 +13,14 @@ joining (Edwards 1970; Tajima 1983).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
+- [Ranked labeled history](ranked-history.md)
+- [Random joining](random-joining.md)
+
+## Proof depends on
+
+- [Product of pair counts times a power of two is $n!(n-1)!$](prod-choose-two-mul-two-pow.md)
+- [Every ranked history is equally likely under random joining](random-joining-singleton-eq-inv.md)
 
 ## Sources
 

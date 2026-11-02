@@ -19,6 +19,11 @@ are the difference of the two convergent series at a single sample point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Almost-sure convergence of L¹-bounded sums of independent centered variables](ae-tendsto-sum-of-indep-centered-l1bdd.md)
+- [$L^1$ norm bounded by the square root of the second moment](e-lp-norm-one-le-sqrt-integral-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ThreeSeriesNecessity](../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzSlice
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal slices do not increase norms](norm-toeplitz-slice-lin-map-apply-le.md)
+- [Diagonal slice as a linear map](toeplitz-slice-lin-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator](../../../../../sources/v2/MathlibExt.md)

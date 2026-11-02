@@ -13,7 +13,7 @@ probability distribution on the partitions of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ewens sampling formula](ewens-prob.md)
 
 ## Sources
 

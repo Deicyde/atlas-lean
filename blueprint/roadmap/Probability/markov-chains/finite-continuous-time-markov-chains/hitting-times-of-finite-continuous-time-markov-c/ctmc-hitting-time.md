@@ -14,6 +14,10 @@ lean: ProbabilityTheory.ctmcHittingTime
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Path of a continuous-time Markov chain](../finite-continuous-time-markov-chains-as-path-pro/ctmc-path.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Process.ContinuousTimeMarkovChain.HittingTime](../../../../../sources/v2/MathlibExt.md)

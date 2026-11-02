@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.selected
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance](../../../../sources/v2/MathlibExt.md)

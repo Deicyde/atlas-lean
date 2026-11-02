@@ -13,7 +13,7 @@ only a signed weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
 
 ## Sources
 

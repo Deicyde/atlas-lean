@@ -13,7 +13,11 @@ lean: Cslib.MachineLearning.GBLUP.ridgeEstimate_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge estimate](../least-squares-ridge-and-lasso-regression/ridge-estimate.md)
+
+## Proof depends on
+
+- [Push-through identity for ridge regression](transpose-mul-add-inv-mul-transpose.md)
 
 ## Sources
 

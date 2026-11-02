@@ -15,6 +15,10 @@ constant `c` yields a factor `C` with `A = B ∘L C` and `‖C‖ ≤ c`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjoint preserves the operator norm](norm-adjoint.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,17 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.isUnstableMode_neumannWavenumbe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Discriminant of the dispersion polynomial](band-discriminant.md)
+- [Lower end of the unstable wavenumber band](band-lower.md)
+- [Upper end of the unstable wavenumber band](band-upper.md)
+- [Neumann wavenumber on an interval](neumann-wavenumber.md)
+
+## Proof depends on
+
+- [Dispersion polynomial](dispersion-det.md)
+- [Dispersion polynomial is negative exactly on the unstable band](dispersion-det-neg-iff.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
 
 ## Sources
 

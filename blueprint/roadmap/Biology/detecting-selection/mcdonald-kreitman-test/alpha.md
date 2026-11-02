@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.PopulationGenetics.McDonaldKreitman.MKModel.alpha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
+
+## Proof depends on
+
+- [Expected nonsynonymous fixed differences](edn.md)
 
 ## Sources
 

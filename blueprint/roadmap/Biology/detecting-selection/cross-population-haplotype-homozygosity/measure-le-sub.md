@@ -13,7 +13,11 @@ at `-t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exchangeable pair of statistics](is-exchangeable-pair.md)
+
+## Proof depends on
+
+- [Difference of an exchangeable pair has a symmetric law](map-sub-neg.md)
 
 ## Sources
 

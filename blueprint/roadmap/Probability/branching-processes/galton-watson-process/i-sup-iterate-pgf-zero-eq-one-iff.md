@@ -13,7 +13,14 @@ offspring number is not almost surely `1` (Athreya–Ney 1972, ch. I).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean offspring number](mean.md)
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
+
+## Proof depends on
+
+- [Limit of generating-function iterates is the least fixed point](is-least-i-sup-iterate-pgf-zero.md)
+- [Iterates of the offspring generating function stay in (0, 1)](iterate-pgf-mem-icc.md)
+- [Integrability of $s^X$ for $|s| \le 1$](../../characteristic-functions/probability-generating-functions/integrable-pow-of-abs-le-one.md)
 
 ## Sources
 

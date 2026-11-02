@@ -13,7 +13,17 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.norm_compCLM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+- [Supremum of the fiber counts of a map](fiber-sup.md)
+
+## Proof depends on
+
+- [Fiber cardinality of a map](fiber-card.md)
+- [Fiber count agrees with set cardinality](fiber-card-eq-ncard.md)
+- [Fiber supremum as a supremum of cardinalities](fiber-sup-eq-i-sup.md)
+- [Operator-norm bound for the composition operator](norm-comp-clm-le.md)
+- [Norm of the composition operator on a basis vector](norm-comp-clm-single.md)
 
 ## Sources
 

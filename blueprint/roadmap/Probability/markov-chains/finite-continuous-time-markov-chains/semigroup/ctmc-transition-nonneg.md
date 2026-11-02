@@ -13,7 +13,14 @@ uniformization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Transition semigroup of a continuous-time Markov chain](ctmc-transition.md)
+
+## Proof depends on
+
+- [Existence of a uniformization constant for a rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/exists-add-smul-one-nonneg.md)
+- [Uniformization](ctmc-transition-eq-exp-smul-uniformized.md)
+- [Exponential of a nonnegative matrix is nonnegative](ctmc-transition-nonneg-of-nonneg.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ with nonnegative slope a point mass of the remaining trials.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+- [Upper tail of the Poisson-binomial law](poisson-binomial-tail.md)
+
+## Proof depends on
+
+- [First-step recurrence for the Poisson-binomial mass function](poisson-binomial-pmf-cons-succ.md)
+- [Poisson-binomial mass vanishes above the number of trials](poisson-binomial-pmf-eq-zero-of-lt.md)
+- [Peeling off the lowest term of the Poisson-binomial tail](poisson-binomial-tail-eq-add.md)
 
 ## Sources
 

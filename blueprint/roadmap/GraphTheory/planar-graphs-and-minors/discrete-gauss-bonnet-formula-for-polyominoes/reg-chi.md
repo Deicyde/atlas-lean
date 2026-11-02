@@ -13,7 +13,13 @@ cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+
+## Proof depends on
+
+- [Lattice point as a vertex of the cell complex](vtx.md)
+- [Edges of a union of unit cells](reg-edges.md)
+- [Vertices of a union of unit cells](reg-verts.md)
 
 ## Sources
 

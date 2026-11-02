@@ -15,6 +15,10 @@ standard errors are positive in the model; it is the junk value `0` if every `β
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MendelianRandomization](../../../../sources/v2/MathlibExt.md)

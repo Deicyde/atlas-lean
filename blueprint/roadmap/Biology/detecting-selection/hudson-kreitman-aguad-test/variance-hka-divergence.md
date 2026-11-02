@@ -15,7 +15,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.variance_hkaDivergence
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKA variance of the divergence](hka-div-var.md)
+
+## Proof depends on
+
+- [HKA expected divergence](hka-div-mean.md)
+- [Exponentially distributed random variables are integrable](../../../Probability/distributions/exponential-distribution/integrable-of-exp-measure.md)
+- [Mean of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md)
+- [Variance of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/variance-eq-of-exp-measure.md)
 
 ## Sources
 

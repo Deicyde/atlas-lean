@@ -16,7 +16,17 @@ coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Pedigree without selfing](no-selfing.md)
+- [Inbreeding coefficient under gene dropping](inbreeding.md)
+- [Ancestral paths ending at a given ancestor](paths-to.md)
+
+## Proof depends on
+
+- [Malécot's recursion computes the inbreeding coefficient](inbreeding-eq-kinship-inbreeding.md)
+- [Kinship coefficient by Malécot's recursion](kinship.md)
+- [Inbreeding coefficient by Malécot's recursion](kinship-inbreeding.md)
+- [Wright's path formula](kinship-eq-sum-paths.md)
 
 ## Sources
 

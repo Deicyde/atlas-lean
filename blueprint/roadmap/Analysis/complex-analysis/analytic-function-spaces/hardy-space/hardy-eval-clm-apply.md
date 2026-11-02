@@ -13,7 +13,8 @@ with the Szegő kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Hardy space](hardy-eval.md)
+- [Point evaluation as a bounded functional on the Hardy space](hardy-eval-clm.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ norm is at most `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate functional of a basis as a continuous linear map](coord-clm.md)
 
 ## Sources
 

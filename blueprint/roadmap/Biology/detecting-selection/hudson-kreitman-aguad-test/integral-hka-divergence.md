@@ -17,7 +17,12 @@ conditional expectation would be `0` (Mathlib's convention), and the hypothesis 
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKA expected divergence](hka-div-mean.md)
+
+## Proof depends on
+
+- [Exponentially distributed random variables are integrable](../../../Probability/distributions/exponential-distribution/integrable-of-exp-measure.md)
+- [Mean of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.ibd_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Probability of identity by descent under gene dropping](ibd.md)
+
+## Proof depends on
+
+- [Gene-dropping outcome](coins.md)
+- [Founder origin of a gene copy](origin.md)
 
 ## Sources
 

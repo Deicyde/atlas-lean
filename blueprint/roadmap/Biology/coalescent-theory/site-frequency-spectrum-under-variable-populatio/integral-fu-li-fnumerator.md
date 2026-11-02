@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.integral_fuLi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerator of Fu and Li's F](fu-li-fnumerator.md)
+
+## Proof depends on
+
+- [Achaz's unbiasedness](integral-theta-weighted.md)
+- [Tajima's $\theta_\pi$ in site frequency spectrum form](theta-pi.md)
+- [Achaz's weighted estimator of $\theta$](theta-weighted.md)
 
 ## Sources
 

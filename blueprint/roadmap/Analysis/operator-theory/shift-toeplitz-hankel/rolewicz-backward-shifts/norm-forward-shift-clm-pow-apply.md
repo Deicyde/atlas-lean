@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.Rolewicz.norm_forwardShiftCLM_pow_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](../unilateral-shift/shift-clm.md)
+
+## Proof depends on
+
+- [The unilateral shift preserves norms](../unilateral-shift/norm-shift-clm-apply.md)
 
 ## Sources
 

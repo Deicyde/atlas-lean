@@ -13,7 +13,12 @@ lean: MathlibExt.Analysis.ODE.DirichletSineEigenfunctions.neg_iteratedDeriv_two_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet eigenvalues of the Laplacian on the unit interval](dirichlet-laplacian-eigenvalue.md)
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
+
+## Proof depends on
+
+- [Second derivative of a Dirichlet sine eigenfunction](dirichlet-sine-iterated-deriv-two.md)
 
 ## Sources
 

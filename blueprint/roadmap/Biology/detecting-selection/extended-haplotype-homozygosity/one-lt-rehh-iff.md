@@ -13,7 +13,8 @@ haplotypes are the more homozygous ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended haplotype homozygosity with core-allele labels](ehh-core.md)
+- [Relative extended haplotype homozygosity (REHH)](rehh.md)
 
 ## Sources
 

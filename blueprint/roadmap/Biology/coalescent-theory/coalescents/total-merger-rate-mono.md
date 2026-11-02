@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.LambdaCoalescent.totalMer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total merger rate of a Λ-coalescent](total-merger-rate.md)
+
+## Proof depends on
+
+- [Pitman's merger rate](merger-rate.md)
+- [Nonnegativity of Λ-coalescent merger rates](merger-rate-nonneg.md)
+- [Recursion for the total merger rate](total-merger-rate-succ.md)
 
 ## Sources
 

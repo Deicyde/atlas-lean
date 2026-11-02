@@ -18,6 +18,10 @@ Only the position factor is centered.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heisenberg's uncertainty principle](heisenberg-uncertainty-shifted.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

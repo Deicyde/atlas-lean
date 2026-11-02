@@ -13,7 +13,7 @@ letters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFA recognizing end-marker encodings](end-marker-dfa.md)
 
 ## Sources
 

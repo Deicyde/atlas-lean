@@ -15,7 +15,15 @@ frequencies are square integrable, as in every `DriftModel`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected ALDER weighted linkage disequilibrium](weighted-ld.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [Covariance of unphased diploid genotypes](genotype-cov.md)
+- [Diploid genotype covariance in an admixed population](genotype-cov-admixed.md)
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ for `m ≥ 1` (`m` the mean offspring number).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean offspring number](../galton-watson-process/mean.md)
+- [Mean total progeny of a Galton–Watson process](mean-total-progeny.md)
+
+## Proof depends on
+
+- [Generation-size law of a Galton–Watson process](../galton-watson-process/law.md)
+- [Mean generation size of a Galton–Watson process](../galton-watson-process/lintegral-law.md)
 
 ## Sources
 

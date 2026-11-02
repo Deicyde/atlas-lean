@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.nonsynRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+
+## Proof depends on
+
+- [Goldman–Yang codon rate matrix](gy-rate.md)
 
 ## Sources
 

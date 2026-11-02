@@ -13,7 +13,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.dirichletEval_dirichl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Dirichlet space](dirichlet-eval.md)
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
+## Proof depends on
+
+- [Dirichlet kernel evaluated at its own point](dirichlet-eval-dirichlet-kernel.md)
+- [Squared norm of the Dirichlet kernel away from the origin](norm-sq-dirichlet-kernel-of-ne-zero.md)
 
 ## Sources
 

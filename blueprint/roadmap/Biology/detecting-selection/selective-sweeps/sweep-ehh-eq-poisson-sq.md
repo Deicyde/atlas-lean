@@ -13,7 +13,7 @@ recombination events with mean `r d T` on one lineage is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [EHH in the star-genealogy sweep model](sweep-ehh.md)
 
 ## Sources
 

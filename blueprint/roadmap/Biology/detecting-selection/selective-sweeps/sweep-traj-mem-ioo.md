@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.sweepTraj_mem_Ioo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logistic trajectory of a selective sweep](sweep-traj.md)
 
 ## Sources
 

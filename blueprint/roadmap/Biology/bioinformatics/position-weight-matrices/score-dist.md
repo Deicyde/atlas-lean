@@ -14,6 +14,10 @@ from the point mass at `0` (Staden 1989; Touzet and Varré 2007).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One column step of the score-distribution recursion](score-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

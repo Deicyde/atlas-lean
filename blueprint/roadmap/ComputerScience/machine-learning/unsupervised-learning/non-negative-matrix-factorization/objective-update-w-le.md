@@ -13,7 +13,15 @@ lean: Cslib.MachineLearning.NMF.objective_updateW_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
+- [Lee–Seung multiplicative update of W](update-w.md)
+
+## Proof depends on
+
+- [The NMF objective is invariant under transposition](objective-transpose.md)
+- [Lee–Seung, `H` step](objective-update-h-le.md)
+- [Lee–Seung multiplicative update of H](update-h.md)
+- [The W update is the H update of the transposed problem](update-w-eq-transpose.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: ProbabilityTheory.isRateMatrix_equalInputRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Equal-input generator (F81 model)](equal-input-rate.md)
+
+## Proof depends on
+
+- [Equal-input matrix](equal-input.md)
 
 ## Sources
 

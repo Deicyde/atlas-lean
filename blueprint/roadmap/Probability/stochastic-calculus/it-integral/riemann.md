@@ -14,7 +14,7 @@ elementary integrand for any filtration `F` (deterministic coefficients are meas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
 
 ## Sources
 

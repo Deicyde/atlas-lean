@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.data
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Observation of one allele copy of a genotype](copy-allele.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.AdmixtureEM](../../../../sources/v2/CSLibExt.md)

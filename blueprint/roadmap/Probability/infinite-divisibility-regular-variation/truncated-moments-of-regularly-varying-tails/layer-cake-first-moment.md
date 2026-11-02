@@ -14,7 +14,7 @@ correction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right tail of a measure](../regular-variation/right-tail.md)
 
 ## Sources
 

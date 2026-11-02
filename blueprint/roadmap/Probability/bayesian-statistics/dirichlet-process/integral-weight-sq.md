@@ -13,7 +13,13 @@ lean: ProbabilityTheory.StickBreakingProcess.integral_weight_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random stick-breaking weight](weight.md)
+
+## Proof depends on
+
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

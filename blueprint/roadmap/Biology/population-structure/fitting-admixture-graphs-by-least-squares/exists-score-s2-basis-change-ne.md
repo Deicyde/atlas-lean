@@ -14,7 +14,7 @@ for every `λ`, the score changes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Least-squares qpGraph score S2](score-s2.md)
 
 ## Sources
 

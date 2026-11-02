@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.eq_zero_of_isPerio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [Coordinate recurrence for periodic points of $\mu B$](periodic-coord-iterate.md)
+- [Coordinates of an $\ell^2$ vector tend to zero](tendsto-norm-coord.md)
 
 ## Sources
 

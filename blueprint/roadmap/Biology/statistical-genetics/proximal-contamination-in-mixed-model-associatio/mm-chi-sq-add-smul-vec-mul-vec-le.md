@@ -13,7 +13,11 @@ statistic: `χ²(V₀ + c x xᵀ) ≤ χ²(V₀)` for positive definite `V₀` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed-model association chi-squared statistic](mm-chi-sq.md)
+
+## Proof depends on
+
+- [Proximal contamination](mm-chi-sq-add-smul-vec-mul-vec.md)
 
 ## Sources
 

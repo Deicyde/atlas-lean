@@ -13,7 +13,7 @@ splits seen from a root are clusters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compatible splits](compatible.md)
 
 ## Sources
 

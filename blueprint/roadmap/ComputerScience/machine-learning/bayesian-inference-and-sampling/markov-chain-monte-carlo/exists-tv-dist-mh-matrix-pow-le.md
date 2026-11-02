@@ -14,7 +14,16 @@ start `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metropolis–Hastings transition matrix](mh-matrix.md)
+- [Total variation distance of functions on a finite set](../../../../Probability/markov-chains/mixing-times-of-markov-chains/tv-dist.md)
+
+## Proof depends on
+
+- [Primitivity of the Metropolis–Hastings matrix](is-primitive-mh-matrix.md)
+- [Metropolis–Hastings matrix is stochastic](mh-matrix-mem-row-stochastic.md)
+- [Probabilities of a finite law sum to one](sum-to-real-pmf.md)
+- [Target is stationary for the Metropolis–Hastings matrix](vec-mul-mh-matrix.md)
+- [The convergence theorem](../../../../Probability/markov-chains/convergence-theorem-for-finite-markov-chains/exists-tv-dist-pow-le.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ product `z`. (Complexes that occur in no reaction give `0 = 0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+
+## Proof depends on
+
+- [Mass-action reaction rate](rate.md)
 
 ## Sources
 

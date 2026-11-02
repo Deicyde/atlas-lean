@@ -12,7 +12,11 @@ every lineage present at some step `u ≤ t`, as the set of sampled genes it is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+
+## Proof depends on
+
+- [Lineages after the first coalescence events of a ranked history](merge-along.md)
 
 ## Sources
 

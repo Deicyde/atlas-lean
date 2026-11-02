@@ -15,7 +15,22 @@ erasing the end marker recovers the original language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deterministic context-free language](is-deterministic-context-free.md)
+
+## Proof depends on
+
+- [Pushdown automaton](../pushdown-automata/pda.md)
+- [Deterministic pushdown automaton](is-deterministic.md)
+- [Language accepted by a pushdown automaton](../pushdown-automata/accepts.md)
+- [Context-free languages are closed under homomorphic images](../../closure-and-pumping/closure-properties-of-context-free-languages/hom-image.md)
+- [Intersection of a context-free language with a regular language](../../closure-and-pumping/closure-properties-of-context-free-languages/inf-is-regular.md)
+- [Finite pushdown automata accept context-free languages](../pushdown-automata-and-context-free-grammars/is-context-free-accepts.md)
+- [Language of end-marker encoded words](encoded-words.md)
+- [End-marker encoding of a word](end-marker-encode.md)
+- [Injectivity of the end-marker encoding](end-marker-encode-injective.md)
+- [End-marker erasure](end-marker-erase.md)
+- [Erasing the end-marker encoding recovers the word](end-marker-erase-end-marker-encode.md)
+- [End-marker encodings form a regular language](is-regular-encoded-words.md)
 
 ## Sources
 

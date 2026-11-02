@@ -15,6 +15,10 @@ density. No integrability hypothesis is needed: both sides are the junk value `0
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonnegativity of the beta density](beta-pdfreal-nonneg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BetaMoments](../../../../sources/v2/MathlibExt.md)

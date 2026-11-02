@@ -13,7 +13,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.RieszBasisStability.isRieszBasis_of_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riesz basis of a Hilbert space](is-riesz-basis.md)
+
+## Proof depends on
+
+- [Operator norm bound for the synthesis operator](norm-synthesis-clm-le.md)
+- [Synthesis operator of a square-summable family](synthesis-clm.md)
+- [Synthesis operator on a basis vector](synthesis-clm-single.md)
 
 ## Sources
 

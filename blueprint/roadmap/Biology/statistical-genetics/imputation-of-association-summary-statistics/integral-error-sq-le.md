@@ -13,7 +13,13 @@ squared error `𝔼 (z_t - w'ᵀ z_o)²` over all weights `w'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
+- [Imputed summary statistic](imputed.md)
+
+## Proof depends on
+
+- [Excess error of a linear imputation](integral-error-sq-eq.md)
+- [Second moment of the imputed statistic](integral-imputed-sq.md)
 
 ## Sources
 

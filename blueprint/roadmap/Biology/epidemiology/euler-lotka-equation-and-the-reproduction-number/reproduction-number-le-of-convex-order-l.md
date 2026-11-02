@@ -14,7 +14,8 @@ with a given mean, the fixed interval maximizes `R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex order](convex-order-le.md)
+- [Reproductive number from growth rate and generation interval](reproduction-number.md)
 
 ## Sources
 

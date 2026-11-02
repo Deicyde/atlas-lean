@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.LatentCausalVariable.neg_one_le_gcp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genetic causality proportion](gcp.md)
 
 ## Sources
 

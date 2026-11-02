@@ -13,7 +13,14 @@ matrix is symmetric), hence is stationary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition matrix as a stochastic matrix](jc-stochastic-matrix.md)
+- [Detailed balance](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/detailed-balance.md)
+- [Probability distribution on a finite state space](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/distribution.md)
+
+## Proof depends on
+
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

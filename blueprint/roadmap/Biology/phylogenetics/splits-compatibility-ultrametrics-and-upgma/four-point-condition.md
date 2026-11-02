@@ -13,7 +13,8 @@ every ultrametric on a finite set is a tree metric (`IsUltrametric.isTreeMetric`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ultrametric on taxa](is-ultrametric.md)
+- [Four-point condition](../tree-metrics-and-the-four-point-condition/four-point-condition.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.notMem_of_mem_clusterSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
+
+## Proof depends on
+
+- [Clusters of an unrooted tree form a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
 
 ## Sources
 

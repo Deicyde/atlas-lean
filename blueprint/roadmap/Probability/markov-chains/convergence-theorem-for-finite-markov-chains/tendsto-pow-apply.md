@@ -15,6 +15,11 @@ converges to `π`: `Pⁿ(x, y) → π(y)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The convergence theorem](exists-tv-dist-pow-le.md)
+- [Total variation distance of functions on a finite set](../mixing-times-of-markov-chains/tv-dist.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.FiniteMarkovChainConvergence](../../../../sources/v2/MathlibExt.md)

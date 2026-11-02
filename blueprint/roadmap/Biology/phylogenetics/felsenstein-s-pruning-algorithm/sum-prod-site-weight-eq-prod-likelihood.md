@@ -15,7 +15,14 @@ per-site likelihoods.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](labeling.md)
+- [Rooted binary tree with transition weights](tree.md)
+- [Site likelihood of a phylogenetic tree](likelihood.md)
+- [Weight of a tree labeling](weight.md)
+
+## Proof depends on
+
+- [Brute-force likelihood given the root state](brute-lik.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ open unit disc.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [Numerical range](../../spectral-theory/numerical-range-and-numerical-radius/numerical-range.md)
+
+## Proof depends on
+
+- [Open unit disc lies in the backward shift's numerical range](mem-numerical-range-bwd-shift-of-norm-lt.md)
+- [Backward shift's numerical range lies in the open unit disc](norm-lt-one-of-mem-numerical-range-bwd-s.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: ProbabilityTheory.hasLaw_snd_sethuramanMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sethuraman's canonical probability space](sethuraman-measure.md)
+
+## Proof depends on
+
+- [Law of the atom coordinate of Sethuraman's space](measure-preserving-snd-sethuraman-measur.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: ProbabilityTheory.StickBreakingProcess.isDirichlet_sethuraman
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+- [Sethuraman's construction](sethuraman.md)
+- [Sethuraman's canonical probability space](sethuraman-measure.md)
+
+## Proof depends on
+
+- [Stick-breaking process](stick-breaking-process.md)
+- [Law of each proportion in Sethuraman's space](has-law-fst-sethuraman-measure.md)
 
 ## Sources
 

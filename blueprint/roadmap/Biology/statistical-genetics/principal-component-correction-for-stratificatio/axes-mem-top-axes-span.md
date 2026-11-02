@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.axes_mem_topAxesSpan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Axes of variation](axes.md)
+- [Span of the top axes of variation](top-axes-span.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.altCount
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+
+## Proof depends on
+
+- [Reference-allele indicator for a genotype copy](is-ref.md)
+- [Ancestry responsibility of an allele copy (E-step)](resp.md)
 
 ## Sources
 

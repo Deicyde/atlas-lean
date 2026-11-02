@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.round_iterate_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [One depth-first round of binary branching](round.md)
+
+## Proof depends on
+
+- [Commuting maps transport one depth-first round](round-map.md)
 
 ## Sources
 

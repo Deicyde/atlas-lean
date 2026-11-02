@@ -14,6 +14,10 @@ alleles are independent gametes of the parental generation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Law of a random gamete](gamete.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.HardyWeinberg](../../../../sources/v2/MathlibExt.md)

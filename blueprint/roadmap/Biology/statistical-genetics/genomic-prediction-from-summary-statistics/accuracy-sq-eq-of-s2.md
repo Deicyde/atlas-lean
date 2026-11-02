@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.PRSModel.accuracy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
+- [Squared accuracy of a polygenic score](accuracy-sq.md)
+
+## Proof depends on
+
+- [Polygenic-score accuracy](accuracy-sq-eq.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MvPowerSeries.expOperatorPartial_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
 
 ## Sources
 

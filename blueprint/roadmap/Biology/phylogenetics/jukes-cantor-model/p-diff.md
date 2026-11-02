@@ -14,6 +14,10 @@ base `i` at the start.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jukes–Cantor transition probability](jc-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.JukesCantor](../../../../sources/v2/MathlibExt.md)

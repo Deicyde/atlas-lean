@@ -13,6 +13,10 @@ lean: ProbabilityTheory.stickWeight
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Leftover stick in stick breaking](stick-remainder.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.DirichletProcess](../../../../sources/v2/MathlibExt.md)

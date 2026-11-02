@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.index_backwardCLM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Fredholm index of a backward shift power is $n$](index-backward-clm-pow.md)
 
 ## Sources
 

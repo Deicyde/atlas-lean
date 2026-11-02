@@ -19,7 +19,16 @@ property of that model, not proved here; it is a hypothesis of this theorem).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-joining law on block-size lists](../expected-site-frequency-spectrum/random-joining.md)
+- [Total branch length subtending i sample copies](../expected-site-frequency-spectrum/sfs-length.md)
+- [Expected site frequency spectrum under variable population size](variable-sfs.md)
+
+## Proof depends on
+
+- [Random joining has finite support and iterates the join step](../expected-site-frequency-spectrum/exists-finset-random-joining.md)
+- [Transition operator of random joining](../expected-site-frequency-spectrum/join-step.md)
+- [Expected number of blocks of size `i`](../expected-site-frequency-spectrum/join-step-iterate-count.md)
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
 
 ## Sources
 

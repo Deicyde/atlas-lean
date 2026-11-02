@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.norm_dirichletKernel_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
+## Proof depends on
+
+- [Squared norm of the Dirichlet kernel away from the origin](norm-sq-dirichlet-kernel-of-ne-zero.md)
 
 ## Sources
 

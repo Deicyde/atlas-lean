@@ -13,7 +13,8 @@ probable than `((A, C), (B, D))`: `g(x, y) < h(x, y)` (Degnan & Rosenberg 2006).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D))](dr-g.md)
+- [Degnan–Rosenberg formula h for the gene tree ((A, B), (C, D))](dr-h.md)
 
 ## Sources
 

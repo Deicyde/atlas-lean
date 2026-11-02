@@ -13,7 +13,15 @@ tape, for a nonempty input word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration of a linear bounded automaton](lbaconfig.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+- [One step of a linear bounded automaton](step.md)
+- [Initial configuration of a linear bounded automaton](init-cfg.md)
+
+## Proof depends on
+
+- [LBA steps keep the head on the tape](step-head-lt.md)
+- [LBA steps preserve tape length](step-tape-length.md)
 
 ## Sources
 

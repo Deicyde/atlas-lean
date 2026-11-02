@@ -14,7 +14,9 @@ only if `y < b(x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary for three anomalous gene trees](anomaly-b.md)
+- [Degnan–Rosenberg probability of the matching caterpillar gene tree](dr-f.md)
+- [Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D))](dr-g.md)
 
 ## Sources
 

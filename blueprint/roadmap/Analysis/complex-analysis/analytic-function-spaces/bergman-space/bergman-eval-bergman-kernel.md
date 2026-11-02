@@ -13,7 +13,12 @@ so the pointwise bound is sharp.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+- [Bergman kernel](bergman-kernel.md)
+
+## Proof depends on
+
+- [Inner product of two Bergman kernels](inner-bergman-kernel-bergman-kernel.md)
 
 ## Sources
 

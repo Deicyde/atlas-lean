@@ -12,7 +12,7 @@ lean: Polynomial.length_mulLinearCoeffList
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient list after multiplication by a linear polynomial](mul-linear-coeff-list.md)
 
 ## Sources
 

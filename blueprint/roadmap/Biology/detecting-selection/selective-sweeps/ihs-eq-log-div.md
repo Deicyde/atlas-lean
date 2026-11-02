@@ -13,7 +13,12 @@ ages, so the recombination rate cancels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integrated haplotype score (iHS)](ihs.md)
+
+## Proof depends on
+
+- [One-sided integrated haplotype homozygosity](ihh.md)
+- [One-sided iHH in the star-genealogy model](ihh-eq.md)
 
 ## Sources
 

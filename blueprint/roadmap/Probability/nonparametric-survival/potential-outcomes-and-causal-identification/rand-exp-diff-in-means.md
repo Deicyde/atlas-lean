@@ -14,7 +14,14 @@ effect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite-population average treatment effect](ate.md)
+- [Difference-in-means estimator](diff-in-means.md)
+- [Expectation of a statistic under complete randomization](rand-exp.md)
+
+## Proof depends on
+
+- [Mean of a finite population](pop-mean.md)
+- [Sample mean over a set of units](sample-mean.md)
 
 ## Sources
 

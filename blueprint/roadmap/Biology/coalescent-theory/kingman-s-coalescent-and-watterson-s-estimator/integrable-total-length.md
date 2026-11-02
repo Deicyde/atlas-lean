@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integrable_t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+- [Total branch length of a coalescent genealogy](total-length.md)
+
+## Proof depends on
+
+- [Integrability of coalescent holding times](integrable-t.md)
 
 ## Sources
 

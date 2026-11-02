@@ -13,7 +13,7 @@ one production of that nonterminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yield of a sentential form](../context-free-grammars/yields.md)
 
 ## Sources
 

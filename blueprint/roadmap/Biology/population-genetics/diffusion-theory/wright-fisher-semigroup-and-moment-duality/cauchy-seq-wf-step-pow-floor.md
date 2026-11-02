@@ -13,7 +13,13 @@ converges on the dense set of polynomials and the operators are contractions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
+## Proof depends on
+
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+- [Convergence on polynomials](tendsto-wf-step-pow-floor-to-continuous.md)
 
 ## Sources
 

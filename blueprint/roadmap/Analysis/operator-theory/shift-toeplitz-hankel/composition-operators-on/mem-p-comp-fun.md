@@ -13,7 +13,8 @@ fibers hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Precomposition of a sequence with a map](comp-fun.md)
 
 ## Sources
 

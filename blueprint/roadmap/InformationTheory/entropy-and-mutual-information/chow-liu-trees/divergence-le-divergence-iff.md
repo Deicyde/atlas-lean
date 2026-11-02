@@ -14,7 +14,14 @@ the total mutual information `∑_i I(X_i; X_{j(i)})` of their edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+- [Divergence from the Chow–Liu approximation](divergence.md)
+- [Mutual-information weight of a dependence forest](weight.md)
+
+## Proof depends on
+
+- [Chow–Liu identity](divergence-eq.md)
+- [Shannon entropy](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
 
 ## Sources
 

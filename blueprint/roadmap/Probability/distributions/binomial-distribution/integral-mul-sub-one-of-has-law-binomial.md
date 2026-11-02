@@ -15,6 +15,10 @@ then `E[X (X - 1)] = n (n - 1) p²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second factorial moment of the binomial law](integral-mul-sub-one-map-cast-binomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BinomialMoments](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Dynamics.FeedForwardLoop.hasDerivAt_yOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Intermediate factor after an ON step](y-on.md)
 
 ## Sources
 

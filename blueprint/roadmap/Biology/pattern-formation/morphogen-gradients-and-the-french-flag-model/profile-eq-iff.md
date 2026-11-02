@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.profile_eq_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steady-state exponential morphogen profile](profile.md)
+- [French-flag boundary position for a threshold](threshold-position.md)
+
+## Proof depends on
+
+- [Morphogen profile is strictly decreasing](profile-strict-anti.md)
+- [Profile equals the threshold at the French-flag boundary](profile-threshold-position.md)
 
 ## Sources
 

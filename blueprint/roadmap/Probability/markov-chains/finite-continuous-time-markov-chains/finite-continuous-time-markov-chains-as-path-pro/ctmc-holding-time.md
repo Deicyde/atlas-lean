@@ -14,6 +14,10 @@ lean: ProbabilityTheory.ctmcHoldingTime
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Process.ContinuousTimeMarkovChain.Path](../../../../../sources/v2/MathlibExt.md)

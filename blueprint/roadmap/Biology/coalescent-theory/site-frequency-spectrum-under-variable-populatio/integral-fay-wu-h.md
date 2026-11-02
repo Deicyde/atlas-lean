@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.integral_fayW
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fay and Wu's H statistic](fay-wu-h.md)
+
+## Proof depends on
+
+- [Achaz's unbiasedness](integral-theta-weighted.md)
+- [Fay and Wu's $\theta_H$](theta-h.md)
+- [Tajima's $\theta_\pi$ in site frequency spectrum form](theta-pi.md)
+- [Achaz's weighted estimator of $\theta$](theta-weighted.md)
 
 ## Sources
 

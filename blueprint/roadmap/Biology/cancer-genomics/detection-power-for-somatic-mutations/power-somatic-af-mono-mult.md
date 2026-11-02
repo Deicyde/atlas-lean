@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.power_somaticAF_mono_mult
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected allelic fraction of a somatic mutation](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af.md)
+- [Power of the randomized mutation detection test](power.md)
+
+## Proof depends on
+
+- [Somatic allelic fraction is at most one](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-le-one.md)
+- [Somatic allelic fraction increases with multiplicity](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-mono-mult.md)
+- [Nonnegativity of somatic allelic fractions](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-nonneg.md)
+- [Power increases with the allelic fraction](power-mono.md)
 
 ## Sources
 

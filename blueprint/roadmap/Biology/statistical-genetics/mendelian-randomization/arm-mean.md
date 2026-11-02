@@ -12,7 +12,7 @@ measure. It is the junk value `0` when `P(Z = z) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ samples, `m_C ≥ 2` and `m_A, m_B ≥ 1`, `E[f3Hat] = (p_C - p_A) (p_C - p_B)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased f3 estimator](f3-hat.md)
+
+## Proof depends on
+
+- [Unbiased heterozygosity estimator](het-hat.md)
+- [Sample allele frequency is unbiased](integral-div-of-has-law-binomial.md)
+- [Second factorial moment of a binomial random variable](../../../Probability/distributions/binomial-distribution/integral-mul-sub-one-of-has-law-binomial.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ not depend on `θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+- [Ewens conditional probability given the number of alleles](ewens-cond-prob.md)
+
+## Proof depends on
+
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+- [Factorization of the Ewens sampling formula](ewens-prob-eq-mul-cycle-type-weight.md)
+- [Probability of a given number of alleles under the Ewens formula](num-alleles-prob.md)
 
 ## Sources
 

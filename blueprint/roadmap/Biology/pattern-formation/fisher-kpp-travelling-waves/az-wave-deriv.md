@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.FisherKPP.azWaveDeriv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rate of the Ablowitz–Zeppetella wave](az-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.FisherKPP](../../../../sources/v2/MathlibExt.md)

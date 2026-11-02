@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Statistics.PCA.dotProduct_mulVec_eq_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered orthonormal eigenbasis of a symmetric matrix](ordered-eigenbasis.md)
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+
+## Proof depends on
+
+- [Eigenbasis expansion of the quadratic form of a self-adjoint operator](../../../Analysis/operator-theory/eigenvalue-inequalities/courant-fischer-min-max-theorem/inner-self-apply-eq-expansion.md)
 
 ## Sources
 

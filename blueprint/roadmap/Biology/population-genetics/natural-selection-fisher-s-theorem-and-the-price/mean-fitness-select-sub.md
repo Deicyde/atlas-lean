@@ -16,7 +16,9 @@ model domain is the simplex with `w > 0` (`meanFitness_pos`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Variance of fitness](fitness-variance.md)
+- [Mean fitness of a population](mean-fitness.md)
+- [One generation of haploid selection](select.md)
 
 ## Sources
 

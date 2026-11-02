@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.maruyamaBelow_eq_sinh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Normed.Lp.RellichKondrachov.rellichBall
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Membership in the Rellich ball via partial sums](mem-rellich-ball.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Lp.RellichKondrachov](../../../../sources/v2/MathlibExt.md)

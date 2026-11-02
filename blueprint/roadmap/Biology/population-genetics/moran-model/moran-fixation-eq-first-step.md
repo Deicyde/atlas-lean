@@ -15,7 +15,13 @@ chain for the interior states `0 < i < N`; the identity is algebraic (it follows
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-step probability of the Moran process](moran-down.md)
+- [Fixation probability of the Moran process](moran-fixation.md)
+- [Up-step probability of the Moran process](moran-up.md)
+
+## Proof depends on
+
+- [Ratio of Moran down- and up-step probabilities](mul-moran-down.md)
 
 ## Sources
 

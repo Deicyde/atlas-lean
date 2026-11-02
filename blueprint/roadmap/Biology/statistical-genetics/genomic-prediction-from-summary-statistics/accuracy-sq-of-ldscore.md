@@ -15,7 +15,15 @@ be `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Training genotype matrix with orthogonal standardized columns](has-orthogonal-columns.md)
+- [Squared accuracy of a polygenic score](accuracy-sq.md)
+- [Effect-estimate model derived from the LD-score model](of-ldscore.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+
+## Proof depends on
+
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
+- [Polygenic-score accuracy](accuracy-sq-eq.md)
 
 ## Sources
 

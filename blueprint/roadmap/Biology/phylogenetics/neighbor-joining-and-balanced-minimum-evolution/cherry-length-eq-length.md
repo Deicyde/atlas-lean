@@ -16,7 +16,11 @@ its path-length dissimilarity (`D a b = ℓ a + ℓ b`, `D x c = ℓ x + m + ℓ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced minimum-evolution length of a cherry tree](cherry-length.md)
+
+## Proof depends on
+
+- [Generalized Pauplin coefficient of a cherry tree](cherry-coeff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ function under selection to its score function under neutrality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.giererMeinhardt_steadyState
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gierer–Meinhardt activator-inhibitor kinetics](gierer-meinhardt.md)
+- [Steady state of the Gierer–Meinhardt kinetics](gierer-meinhardt-steady-state.md)
 
 ## Sources
 

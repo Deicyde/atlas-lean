@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.BirkhoffJames.birkhoffJamesOrthogon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
 
 ## Sources
 

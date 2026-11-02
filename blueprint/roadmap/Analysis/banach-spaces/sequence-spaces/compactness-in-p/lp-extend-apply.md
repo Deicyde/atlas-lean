@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.lpExtend_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero extension of a finite coordinate vector](lp-extend.md)
 
 ## Sources
 

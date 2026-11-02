@@ -14,6 +14,11 @@ is `K = K(π) = π.parts.card`, under the Ewens sampling formula with parameter 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+- [Probability of a given number of alleles under the Ewens formula](num-alleles-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.EwensWatterson](../../../../sources/v2/MathlibExt.md)

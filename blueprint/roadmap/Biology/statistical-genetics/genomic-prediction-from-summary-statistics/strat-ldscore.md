@@ -15,6 +15,10 @@ LD score of marker `j` with respect to annotation category `C` (Finucane et al. 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GenomicPrediction](../../../../sources/v2/MathlibExt.md)

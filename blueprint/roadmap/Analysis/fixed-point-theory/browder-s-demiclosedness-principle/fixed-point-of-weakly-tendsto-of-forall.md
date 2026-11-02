@@ -16,6 +16,10 @@ then `T x = x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Browder's demiclosedness principle](demiclosedness-of-lipschitz-with-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Demiclosedness](../../../../sources/v2/MathlibExt.md)

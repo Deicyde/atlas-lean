@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.hilbertKernel_symm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert kernel](hilbert-kernel.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ whatever the starting base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that the ends of a branch differ](p-diff.md)
+
+## Proof depends on
+
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Rows of the Jukes–Cantor transition matrix sum to one](sum-jc-prob.md)
 
 ## Sources
 

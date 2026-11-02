@@ -13,7 +13,21 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.caterpillar_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clusters of a species tree](clusters.md)
+- [Boundary for three anomalous gene trees](anomaly-b.md)
+- [Balanced four-gene tree](balanced-tree.md)
+- [Caterpillar four-species tree](caterpillar.md)
+- [The multispecies coalescent](gene-tree-prob.md)
+
+## Proof depends on
+
+- [Caterpillar four-gene tree](caterpillar-tree.md)
+- [Clusters of the caterpillar species tree](clusters-caterpillar.md)
+- [Degnan–Rosenberg probability of the matching caterpillar gene tree](dr-f.md)
+- [Degnan–Rosenberg criterion: $f(x, y) < g(x, y)$ iff $y < b(x)$](dr-f-lt-dr-g-iff.md)
+- [Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D))](dr-g.md)
+- [Probability of the gene tree ((A, C), (B, D)) on the caterpillar](gene-tree-prob-caterpillar-ac-bd.md)
+- [The matching gene tree](gene-tree-prob-caterpillar-matching.md)
 
 ## Sources
 

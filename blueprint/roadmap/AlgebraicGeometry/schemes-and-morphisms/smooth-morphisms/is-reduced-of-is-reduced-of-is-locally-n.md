@@ -14,6 +14,10 @@ lean: AlgebraicGeometry.Smooth.isReduced_of_isReduced_of_isLocallyNoetherian
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smooth schemes over a field are reduced](is-reduced-of-smooth-over-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.SmoothReducedSource](../../../../sources/v2/MathlibExt.md)

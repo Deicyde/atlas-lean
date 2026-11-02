@@ -13,7 +13,15 @@ number of nontrivial splits of two binary trees (Robinson & Foulds 1981).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Robinson–Foulds distance](rf-dist.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Number of members of a binary hierarchy](card-add-one.md)
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
+- [Clusters of an unrooted tree form a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
 
 ## Sources
 

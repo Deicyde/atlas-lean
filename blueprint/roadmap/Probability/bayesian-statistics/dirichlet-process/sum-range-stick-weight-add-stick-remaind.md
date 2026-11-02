@@ -13,7 +13,8 @@ lean: ProbabilityTheory.sum_range_stickWeight_add_stickRemainder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

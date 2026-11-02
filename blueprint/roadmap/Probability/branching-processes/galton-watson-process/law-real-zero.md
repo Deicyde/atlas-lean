@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.GaltonWatson.law_real_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generation-size law of a Galton–Watson process](law.md)
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
+
+## Proof depends on
+
+- [Generating function of the n-th generation size](pgf-law.md)
+- [The generating function at $s = 0$](../../characteristic-functions/probability-generating-functions/pgf-zero.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.tavareProb_th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tavaré's formula for the number of ancestral lineages](../ancestral-lineage-counting-and-tavar-s-formula/tavare-prob.md)
 
 ## Sources
 

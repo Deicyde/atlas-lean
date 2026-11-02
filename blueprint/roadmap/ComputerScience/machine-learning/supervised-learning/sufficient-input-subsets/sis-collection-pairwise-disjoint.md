@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.SufficientInputSubsets.sisCollection_pairwiseDisjoin
 
 ## Depends on
 
-This node has no prerequisites.
+- [SIS-collection procedure](sis-collection.md)
+
+## Proof depends on
+
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+- [FindSIS returns a sufficient subset of the features](find-sis-sufficient.md)
+- [Sets of the SIS-collection are nonempty and sufficient](sis-collection-sufficient.md)
 
 ## Sources
 

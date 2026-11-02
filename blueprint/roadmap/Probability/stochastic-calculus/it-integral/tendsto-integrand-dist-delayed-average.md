@@ -15,7 +15,17 @@ Lemma 3.2.4(b)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand as a process](to-process.md)
+- [Delayed-average approximation of a progressive process](delayed-average.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+
+## Proof depends on
+
+- [Lebesgue differentiation along shrinking off-center intervals](ae-tendsto-average-icc.md)
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrands are jointly measurable](measurable-to-process.md)
+- [Elementary integrand on a partition interval](to-process-eq-of-mem.md)
+- [Progressive processes are jointly measurable](measurable-to-nnreal.md)
 
 ## Sources
 

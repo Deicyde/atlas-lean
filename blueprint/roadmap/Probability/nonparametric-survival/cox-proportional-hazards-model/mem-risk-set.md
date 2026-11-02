@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.mem_riskSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Risk set in survival analysis](risk-set.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ composition operator of the inverse permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+- [Permutations have fibers of size one](has-bounded-fibers-equiv.md)
+
+## Proof depends on
+
+- [Adjoint of a composition operator is the fiber-sum operator](adjoint-comp-clm-apply.md)
+- [Pointwise action of the bounded composition operator](comp-clm-apply.md)
 
 ## Sources
 

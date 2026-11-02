@@ -14,6 +14,10 @@ lean: BitVec.passesInverseTest
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Modular multiplication of binary polynomial residues](../../../ComputerScience/algebraic-and-numerical-algorithms/binary-polynomial-arithmetic-on-bitvectors/mul-mod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.Finite.BinaryModulusSearch](../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,10 @@ continuous ones).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore](../../../../sources/v2/MathlibExt.md)

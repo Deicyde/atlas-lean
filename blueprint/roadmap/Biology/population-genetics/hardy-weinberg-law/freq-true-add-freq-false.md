@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.HardyWeinberg.freq_true_add_freq_fal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of a random gamete](gamete.md)
 
 ## Sources
 

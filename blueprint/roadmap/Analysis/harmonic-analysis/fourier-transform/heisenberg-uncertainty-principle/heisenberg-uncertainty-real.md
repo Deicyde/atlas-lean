@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.Fourier.HeisenbergUncertainty.heisenberg_uncertainty_r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integration-by-parts identity for Heisenberg's inequality](schwartz-integral-sq-eq-neg-two-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

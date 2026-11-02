@@ -14,7 +14,13 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.weight_admixture
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Edges of an admixture graph](edge.md)
+- [Lineage weight of an edge in an admixture graph](weight.md)
+
+## Proof depends on
+
+- [First-step recursion for lineage weights](weight-eq.md)
 
 ## Sources
 

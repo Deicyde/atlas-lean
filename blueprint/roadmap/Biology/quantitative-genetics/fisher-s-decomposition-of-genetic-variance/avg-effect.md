@@ -16,6 +16,10 @@ of the least-squares additive fit (`domVar_le_sum_sq`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.FisherDecomposition](../../../../sources/v2/MathlibExt.md)

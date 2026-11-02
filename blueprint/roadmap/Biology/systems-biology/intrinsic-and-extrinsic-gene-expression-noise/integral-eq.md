@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.ExpressionNoise.IsIdenticalReporterPair.integr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Identical reporter pair](is-identical-reporter-pair.md)
 
 ## Sources
 

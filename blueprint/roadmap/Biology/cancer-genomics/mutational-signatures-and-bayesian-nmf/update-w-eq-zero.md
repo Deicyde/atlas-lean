@@ -13,7 +13,11 @@ zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ARD multiplicative update of W](update-w.md)
+
+## Proof depends on
+
+- [Reconstruction matrix in nonnegative matrix factorization](recon.md)
 
 ## Sources
 

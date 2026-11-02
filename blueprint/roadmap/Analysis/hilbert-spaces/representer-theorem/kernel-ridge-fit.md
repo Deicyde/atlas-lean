@@ -13,6 +13,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem.kernelRidgeFit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kernel expansion map centered at the sample points](kernel-expansion.md)
+- [Kernel Gram matrix](kernel-gram.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem](../../../../sources/v2/MathlibExt.md)

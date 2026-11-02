@@ -13,7 +13,12 @@ has an Auerbach basis, indexed by `Fin (Module.finrank 𝕜 E)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Auerbach basis](is-auerbach-basis.md)
+
+## Proof depends on
+
+- [Coordinate functional of a basis as a continuous linear map](coord-clm.md)
+- [Coordinate functional of a unit basis vector has operator norm 1](norm-coord-clm-eq-one.md)
 
 ## Sources
 

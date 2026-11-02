@@ -13,7 +13,12 @@ positive background distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Information content of a position weight matrix column](info-content.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
+
+## Proof depends on
+
+- [Gibbs' inequality (evidence lower bound form)](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/sum-mul-log-sub-le.md)
 
 ## Sources
 

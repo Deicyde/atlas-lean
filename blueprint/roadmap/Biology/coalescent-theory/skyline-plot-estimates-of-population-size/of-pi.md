@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.SkylineTimes.ofPi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coalescent intervals under the classic skyline model](skyline-times.md)
+- [Canonical probability space for the skyline model](skyline-pi-measure.md)
+
+## Proof depends on
+
+- [Positivity of the number of pairs](../kingman-s-coalescent-and-watterson-s-estimator/choose-two-pos.md)
 
 ## Sources
 

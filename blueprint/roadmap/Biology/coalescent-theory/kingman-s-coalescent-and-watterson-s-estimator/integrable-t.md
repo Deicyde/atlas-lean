@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integrable_T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+
+## Proof depends on
+
+- [Positivity of the number of pairs](choose-two-pos.md)
+- [Exponentially distributed random variables are integrable](../../../Probability/distributions/exponential-distribution/integrable-of-exp-measure.md)
 
 ## Sources
 

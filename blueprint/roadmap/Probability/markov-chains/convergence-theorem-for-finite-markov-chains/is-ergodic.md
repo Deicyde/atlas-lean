@@ -12,7 +12,11 @@ lean: StochasticMatrix.IsErgodic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Underlying matrix of a stochastic matrix](to-matrix.md)
 
 ## Sources
 

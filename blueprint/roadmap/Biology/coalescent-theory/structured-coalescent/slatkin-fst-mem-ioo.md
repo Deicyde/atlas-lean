@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.StructuredCoalescent.slatkinFST_mem_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slatkin's F_ST for the finite island model](slatkin-fst.md)
+
+## Proof depends on
+
+- [Slatkin's `F_ST` for the finite island model (Slatkin 1991)](slatkin-fst-eq.md)
 
 ## Sources
 

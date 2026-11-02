@@ -14,7 +14,15 @@ the product site model with columns `boltzmannPWM`. This is an identity for ever
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boltzmann position weight matrix](boltzmann-pwm.md)
+- [Law of energy-selected background sites](selected-law.md)
+- [Site likelihood under a column-independent model](site-lik.md)
+
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Column partition function of an energy matrix](partition-fn.md)
+- [Score of a site under a position weight matrix](score.md)
 
 ## Sources
 

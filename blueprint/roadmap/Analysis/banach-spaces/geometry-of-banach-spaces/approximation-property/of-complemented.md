@@ -15,7 +15,7 @@ every point of `F`, so `P (S x) - x = P (S x - x)` for `x ∈ F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximation property](has-approximation-property.md)
 
 ## Sources
 

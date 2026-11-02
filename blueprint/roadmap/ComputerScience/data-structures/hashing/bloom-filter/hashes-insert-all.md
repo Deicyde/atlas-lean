@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.BloomFilter.hashes_insertAll
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom filter](bloom-filter.md)
+- [Inserting a list of elements into a Bloom filter](insert-all.md)
+
+## Proof depends on
+
+- [Bloom filter insertion](insert.md)
 
 ## Sources
 

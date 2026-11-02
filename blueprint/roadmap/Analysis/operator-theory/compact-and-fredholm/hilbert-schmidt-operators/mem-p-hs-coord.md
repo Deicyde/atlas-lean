@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.memℓp_hsCoord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Hilbert–Schmidt coordinates as inner products with rows](hs-coord-eq-inner.md)
+- [Row vector of a Hilbert–Schmidt matrix](hs-row.md)
+- [Square-summable sequences lie in ℓ²](mem-p-of-summable-norm-sq.md)
+- [Squared ℓ² norm as a sum of squared coordinates](norm-sq-lp-eq-tsum.md)
 
 ## Sources
 

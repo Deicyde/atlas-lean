@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.memℓp_fockKernel
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squared norms of the Fock kernel coefficients](norm-sq-fock-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.FockSpace](../../../../../sources/v2/MathlibExt.md)

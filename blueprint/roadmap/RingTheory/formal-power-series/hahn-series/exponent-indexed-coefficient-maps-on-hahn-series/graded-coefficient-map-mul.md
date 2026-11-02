@@ -13,7 +13,11 @@ rule on Hahn series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponent-indexed coefficient map on Hahn series](graded-coefficient-map.md)
+
+## Proof depends on
+
+- [Exponent-indexed coefficient maps do not enlarge the support](support-graded-coefficient-map.md)
 
 ## Sources
 

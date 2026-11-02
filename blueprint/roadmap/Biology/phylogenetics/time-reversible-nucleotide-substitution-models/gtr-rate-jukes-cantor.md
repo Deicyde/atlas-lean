@@ -13,7 +13,8 @@ exchangeabilities `4 μ / 3` give the Jukes–Cantor rate matrix `jcRateMatrix �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor rate matrix as a matrix](../jukes-cantor-model/jc-rate-matrix.md)
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
 
 ## Sources
 

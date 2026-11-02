@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.summable_hsRankOne_sq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square-summability of coordinates of an ℓ² vector](summable-norm-sq-of-mem-p.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt](../../../../../sources/v2/MathlibExt.md)

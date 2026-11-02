@@ -13,7 +13,12 @@ statistics, for square-integrable frequencies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [Per-locus f2 form](f2-form.md)
+
+## Proof depends on
+
+- [Square of a difference of square-integrable frequencies is integrable](../patterson-s-f-statistics/integrable-sub-sq.md)
 
 ## Sources
 

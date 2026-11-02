@@ -14,6 +14,10 @@ as a function of `n : ℕ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Series.HilbertInequality](../../../../sources/v2/MathlibExt.md)

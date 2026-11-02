@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Statistics.PCA.sampleVar_scores
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased sample covariance matrix](sample-cov.md)
+- [Principal component scores](scores.md)
+
+## Proof depends on
+
+- [Column-centered data matrix](center.md)
 
 ## Sources
 

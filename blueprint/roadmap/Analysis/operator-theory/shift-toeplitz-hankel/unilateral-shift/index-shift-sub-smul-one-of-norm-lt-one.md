@@ -14,7 +14,13 @@ homotopy theorem makes the index constant along `S - (t μ) • 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Shifted unilateral shift is Fredholm inside the unit disk](is-fredholm-shift-sub-smul-one-of-norm-l.md)
+- [Fredholm index of the unilateral shift is $-1$](index-shift-clm.md)
+- [Fredholm index is constant along a globally continuous path](../../compact-and-fredholm/homotopy-invariance-of-the-fredholm-index/index-eq-of-continuous-path.md)
 
 ## Sources
 

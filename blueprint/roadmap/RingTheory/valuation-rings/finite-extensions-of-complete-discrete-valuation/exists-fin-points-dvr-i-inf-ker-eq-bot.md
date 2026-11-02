@@ -17,6 +17,11 @@ denominator clearing all denominators.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Completeness passes to finite extensions of discrete valuation rings](is-adic-complete-of-finite-local-extensi.md)
+- [Finite domains over adically complete local rings are local](of-is-domain-of-module-finite-of-is-adic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.DVRPoints](../../../../sources/v2/MathlibExt.md)

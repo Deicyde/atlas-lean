@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.criticalCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial upper tail probability](upper-tail.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.DetectionPower](../../../../sources/v2/MathlibExt.md)

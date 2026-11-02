@@ -14,6 +14,10 @@ paper for a standardized genotype matrix).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized cross product of genotype markers](ld-corr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.LDScore](../../../../sources/v2/MathlibExt.md)

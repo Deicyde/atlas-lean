@@ -13,6 +13,10 @@ lean: MathlibExt.Probability.FokkerPlanck.grad
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Diffusion.FokkerPlanckGradient](../../../../sources/v2/MathlibExt.md)

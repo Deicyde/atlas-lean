@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Normed.Lp.Dual.lpDualPairing_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical duality pairing between $\ell^q$ and $\ell^p$](lp-dual-pairing.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ nonnegative and antitone on `(0, ∞)`, integrable likelihoods and positive marg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson likelihood](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/poisson-lik.md)
+- [Posterior tail probability](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/posterior-tail.md)
+
+## Proof depends on
+
+- [Poisson family with antitone mean has antitone likelihood ratio](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/poisson-lik-has-antitone-lr.md)
+- [The posterior is stochastically nonincreasing in the observation](../../../Probability/hypothesis-testing/monotone-likelihood-ratio/posterior-tail-anti-of-has-antitone-lr.md)
 
 ## Sources
 

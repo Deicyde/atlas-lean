@@ -15,6 +15,13 @@ lean: ProbabilityTheory.binomialTail_mono
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+- [Poisson-binomial law with equal probabilities is binomial](poisson-binomial-pmf-const.md)
+- [Upper tail of the Poisson-binomial law](poisson-binomial-tail.md)
+- [The burden-test p-value is monotone in every background rate](poisson-binomial-tail-mono.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.PoissonBinomial](../../../../sources/v2/MathlibExt.md)

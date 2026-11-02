@@ -13,7 +13,10 @@ site model and background, `score (logOdds p q) s = log (siteLik p s / bgLik q s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Log-odds matrix of a site model](log-odds.md)
+- [Score of a site under a position weight matrix](score.md)
+- [Site likelihood under a column-independent model](site-lik.md)
 
 ## Sources
 

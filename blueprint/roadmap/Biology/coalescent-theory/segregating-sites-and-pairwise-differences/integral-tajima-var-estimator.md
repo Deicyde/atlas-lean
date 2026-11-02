@@ -14,7 +14,20 @@ analysis `c₁ θ + c₂ θ²` is `Var(π - S / a₁)`; that identity is not pro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Total branch length of a coalescent genealogy](../kingman-s-coalescent-and-watterson-s-estimator/total-length.md)
+- [Tajima's constant $c_1$](tajima-c1.md)
+- [Tajima's constant $c_2$](tajima-c2.md)
+- [Tajima's constant $e_1$](tajima-e1.md)
+- [Tajima's constant $e_2$](tajima-e2.md)
+
+## Proof depends on
+
+- [Expected number of segregating sites](../kingman-s-coalescent-and-watterson-s-estimator/integral-seg-sites.md)
+- [Variance of the number of segregating sites](variance-seg-sites.md)
+- [Tajima's constant $a_1$](tajima-a1.md)
+- [Tajima's $a_1$ is a harmonic number](tajima-a1-eq-harmonic.md)
+- [Tajima's constant $a_2$](tajima-a2.md)
 
 ## Sources
 

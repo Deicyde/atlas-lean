@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Moran.moranDown_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-step probability of the Moran process](moran-down.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: ProbabilityTheory.StickBreakingProcess.measurable_G
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random measure of a stick-breaking process](g.md)
+
+## Proof depends on
+
+- [Measurability of the stick-breaking measure in its parameters](measurable-stick-breaking-measure.md)
+- [Stick-breaking measure](stick-breaking-measure.md)
 
 ## Sources
 

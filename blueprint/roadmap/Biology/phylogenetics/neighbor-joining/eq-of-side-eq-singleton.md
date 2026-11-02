@@ -12,7 +12,14 @@ lean: Cslib.Bioinformatics.Phylogenetics.NeighborJoining.eq_of_side_eq_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Taxa on one side of a tree edge](side.md)
+
+## Proof depends on
+
+- [Edge side at an internal vertex as a disjoint union](side-eq-union.md)
+- [Leaf side of a pendant edge](side-leaf.md)
+- [Every edge side of a binary phylogenetic tree is nonempty](side-nonempty.md)
 
 ## Sources
 

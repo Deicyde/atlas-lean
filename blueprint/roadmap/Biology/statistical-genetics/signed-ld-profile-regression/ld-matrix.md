@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.SignedLDProfile.ldMatrix
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.SignedLDProfile](../../../../sources/v2/MathlibExt.md)

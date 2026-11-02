@@ -15,7 +15,16 @@ For arbitrary real `bf1` and `bf2` these ratios need not be probabilities. See
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
+- [Unnormalized colocalization configuration weight](weight.md)
+- [Bayes factor of a colocalization configuration](coloc-bf.md)
+- [Closed-form colocalization hypothesis scores](coloc-closed-form.md)
+- [Colocalization hypothesis of a causal configuration](coloc-hypothesis-2.md)
+
+## Proof depends on
+
+- [The coloc closed forms](sum-coloc-weight-mul-coloc-bf.md)
 
 ## Sources
 

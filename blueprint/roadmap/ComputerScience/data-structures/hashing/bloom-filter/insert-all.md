@@ -11,7 +11,11 @@ lean: Cslib.Algorithms.Lean.BloomFilter.insertAll
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom filter](bloom-filter.md)
+
+## Proof depends on
+
+- [Bloom filter insertion](insert.md)
 
 ## Sources
 

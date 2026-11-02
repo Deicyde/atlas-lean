@@ -13,7 +13,7 @@ this is Vandermonde's identity `∑ₖ C(K, k) C(N - K, n - k) = C(N, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergeometric mass function](hypergeometric-real.md)
 
 ## Sources
 

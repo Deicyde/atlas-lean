@@ -14,6 +14,10 @@ lean: StatMech.pivotalProb_nonneg
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonnegativity of the configuration weight](config-weight-nonneg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.CorrelationInequalities.Russo](../../../../../sources/v2/MathlibExt.md)

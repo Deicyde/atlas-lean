@@ -19,7 +19,8 @@ gametes conditioned on `nA` is not part of this file.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of heterozygous individuals](het-count.md)
+- [Levene's exact Hardy–Weinberg probability](levene-prob.md)
 
 ## Sources
 

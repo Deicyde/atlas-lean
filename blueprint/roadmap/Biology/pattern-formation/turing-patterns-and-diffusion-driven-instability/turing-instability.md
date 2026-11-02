@@ -14,7 +14,15 @@ homogeneous mode is stable while mode `k` is unstable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+
+## Proof depends on
+
+- [Determinant of the mode matrix is the dispersion polynomial](det-mode-matrix.md)
+- [Dispersion polynomial](dispersion-det.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
+- [Homogeneous mode is stable for stable kinetics](not-is-unstable-mode-zero.md)
 
 ## Sources
 

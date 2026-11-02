@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.StructuredCoalescent.slatkinFST_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slatkin's F_ST for the finite island model](slatkin-fst.md)
+
+## Proof depends on
+
+- [Slatkin's mean total coalescence time](total-time.md)
+- [Closed form of Slatkin's mean total coalescence time](total-time-eq.md)
+- [Mean coalescence time within a deme](within-time.md)
 
 ## Sources
 

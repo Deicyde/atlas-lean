@@ -14,7 +14,11 @@ block present, either without it or together with it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
+
+## Proof depends on
+
+- [Pitman's integral formula for merger rates when $2 \le k \le b$](merger-rate-of-le.md)
 
 ## Sources
 

@@ -16,6 +16,11 @@ term below and a constant above.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential upper bound for the partition function](card-le-exp.md)
+- [Exponential lower bound for the partition function](exists-exp-div-pow-le-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.LogBounds](../../../../../sources/v2/MathlibExt.md)

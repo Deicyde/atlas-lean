@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.upperTail_eq_one_sub_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial probability mass function](binom-pmf.md)
+- [Binomial upper tail probability](upper-tail.md)
+
+## Proof depends on
+
+- [Binomial probabilities vanish above n](binom-pmf-eq-zero.md)
+- [Binomial probabilities sum to one](sum-binom-pmf.md)
+- [Binomial upper tail beyond n is zero](upper-tail-eq-zero.md)
 
 ## Sources
 

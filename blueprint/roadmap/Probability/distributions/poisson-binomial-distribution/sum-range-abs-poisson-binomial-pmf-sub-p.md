@@ -13,7 +13,13 @@ lean: ProbabilityTheory.sum_range_abs_poissonBinomialPMF_sub_poisson_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+
+## Proof depends on
+
+- [First-step recurrence for the Poisson-binomial mass function](poisson-binomial-pmf-cons-succ.md)
+- [Poisson-binomial mass at zero after adding a trial](poisson-binomial-pmf-cons-zero.md)
+- [Poisson-binomial mass vanishes above the number of trials](poisson-binomial-pmf-eq-zero-of-lt.md)
 
 ## Sources
 

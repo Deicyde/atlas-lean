@@ -15,7 +15,13 @@ generation of viability selection changes the frequency of allele `0` by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](../natural-selection-fisher-s-theorem-and-the-price/diploid-mean-fitness.md)
+- [One generation of diploid viability selection](../natural-selection-fisher-s-theorem-and-the-price/diploid-select.md)
+
+## Proof depends on
+
+- [Derivative of two-allele mean fitness](has-deriv-at-diploid-mean-fitness-two.md)
+- [Marginal fitness of an allele](../natural-selection-fisher-s-theorem-and-the-price/marginal-fitness.md)
 
 ## Sources
 

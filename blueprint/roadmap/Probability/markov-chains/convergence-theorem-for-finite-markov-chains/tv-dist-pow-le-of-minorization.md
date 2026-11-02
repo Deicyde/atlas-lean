@@ -15,7 +15,7 @@ stationary distribution `π` is at most `(1 - δ) ^ ⌊n / r⌋`. The bound is i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total variation distance of functions on a finite set](../mixing-times-of-markov-chains/tv-dist.md)
 
 ## Sources
 

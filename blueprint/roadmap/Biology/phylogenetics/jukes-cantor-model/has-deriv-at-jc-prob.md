@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.hasDerivAt_jcProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Jukes–Cantor rate matrix](jc-rate.md)
+
+## Proof depends on
+
+- [Right-hand side of the Jukes–Cantor forward equation in closed form](sum-jc-prob-mul-jc-rate.md)
 
 ## Sources
 

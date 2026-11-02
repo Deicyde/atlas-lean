@@ -13,7 +13,12 @@ equation on `[0, ∞)` from a positive master frequency, then `x t → x*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interior equilibrium of the master-sequence frequency](master-equilibrium.md)
+- [Master-sequence vector field of the single-peak quasispecies](master-field.md)
+
+## Proof depends on
+
+- [Master-sequence equation is logistic](master-field-eq.md)
 
 ## Sources
 

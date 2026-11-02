@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.edgeSide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Sources
 

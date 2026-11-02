@@ -17,7 +17,11 @@ the modeling assumption here; this statement does not derive it from a genealogy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Covariance under the sticky kernel](covariance-sticky-kernel.md)
 
 ## Sources
 

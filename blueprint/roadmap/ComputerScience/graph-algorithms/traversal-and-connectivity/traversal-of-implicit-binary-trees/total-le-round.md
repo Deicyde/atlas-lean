@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.total_le_round
 
 ## Depends on
 
-This node has no prerequisites.
+- [One depth-first round of binary branching](round.md)
 
 ## Sources
 

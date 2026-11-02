@@ -14,7 +14,10 @@ the urn law of the observations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn](../blackwell-macqueen-urn/blackwell-mac-queen.md)
+- [Dirichlet process](dirichlet-process.md)
+- [Blackwell–MacQueen predictive law is a probability measure](is-probability-measure-polya-urn-predict.md)
+- [Blackwell–MacQueen urn predictive law](polya-urn-predictive.md)
 
 ## Sources
 

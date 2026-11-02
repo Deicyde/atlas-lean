@@ -13,7 +13,14 @@ four-gamete intervals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Disjoint family of four-gamete intervals](is-disjoint-family.md)
+- [Hudson and Kaplan's `R_m`](rm.md)
+
+## Proof depends on
+
+- [Hudson–Kaplan sweep yields disjoint four-gamete intervals](is-disjoint-family-sweep.md)
+- [Intervals kept by the Hudson–Kaplan sweep are distinct](nodup-sweep.md)
+- [Hudson–Kaplan left-to-right sweep](sweep.md)
 
 ## Sources
 

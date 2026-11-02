@@ -17,7 +17,12 @@ converse (rank `k` forces `k + 1` streams) and the statistical rank test are not
 
 ## Depends on
 
-This node has no prerequisites.
+- [qpWave matrix of f4-statistics](f4-matrix.md)
+
+## Proof depends on
+
+- [Linearity of the f4-statistic in its first pair](f4-eq-sum-of-sub-eq-sum.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
 
 ## Sources
 

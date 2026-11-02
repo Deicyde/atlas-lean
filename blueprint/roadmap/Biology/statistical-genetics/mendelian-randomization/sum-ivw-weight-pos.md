@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.sum_ivwWeigh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
 
 ## Sources
 

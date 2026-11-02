@@ -13,6 +13,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.hardyEvalCLM
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Szegő kernel of the Hardy space](szego-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.HardySpace](../../../../../sources/v2/MathlibExt.md)

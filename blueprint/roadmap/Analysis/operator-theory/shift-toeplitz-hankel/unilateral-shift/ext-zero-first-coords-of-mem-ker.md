@@ -13,7 +13,15 @@ coordinates: extending those coordinates by zeroes recovers it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [Linear extension-by-zero map into $\ell^2$](ext-zero.md)
+- [First-coordinates map on square-summable sequences](first-coords.md)
+
+## Proof depends on
+
+- [Extension of a finite tuple by zeroes](ext-zero-fun.md)
+- [Pointwise action of the extension-by-zero map](ext-zero-apply.md)
+- [Kernel of a power of the backward shift](mem-ker-backward-clm-pow.md)
 
 ## Sources
 

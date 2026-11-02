@@ -15,6 +15,10 @@ distance from `A` at least the sum of the discarded squared singular values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Right singular vectors of a matrix](right-singular-basis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.PCA](../../../../sources/v2/MathlibExt.md)

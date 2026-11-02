@@ -14,6 +14,10 @@ arbitrary centering. Degenerate Dirac identities may satisfy several indices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.StableDistribution](../../../../sources/v2/MathlibExt.md)

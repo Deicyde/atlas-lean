@@ -14,7 +14,22 @@ trees can be anomalous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced gene tree on four genes](is-balanced-gene-tree.md)
+- [Caterpillar four-species tree](caterpillar.md)
+- [Caterpillar four-gene tree](caterpillar-tree.md)
+- [The multispecies coalescent](gene-tree-prob.md)
+
+## Proof depends on
+
+- [Tavaré's formula for the number of ancestral lineages](../ancestral-lineage-counting-and-tavar-s-formula/tavare-prob.md)
+- [Unordered pairs of lineages](../ranked-labeled-histories-of-coalescent-trees/lineage-pair.md)
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+- [Random joining](../ranked-labeled-histories-of-coalescent-trees/random-joining.md)
+- [Balanced four-gene tree](balanced-tree.md)
+- [Clusters formed along a ranked history](clades-along.md)
+- [Expectation under random joining as an average over histories](integral-random-joining.md)
+- [Lineages after the first coalescence events of a ranked history](merge-along.md)
+- [Tavaré's probabilities are nonnegative](tavare-prob-nonneg.md)
 
 ## Sources
 

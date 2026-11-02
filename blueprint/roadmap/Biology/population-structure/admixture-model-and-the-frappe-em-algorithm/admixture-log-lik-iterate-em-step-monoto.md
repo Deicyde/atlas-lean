@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.admixtureLogLik_itera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Polymorphic genotype data](polymorphic.md)
+- [Admixture log-likelihood](admixture-log-lik.md)
+- [The FRAPPE EM step](em-step.md)
+
+## Proof depends on
+
+- [The admixture log-likelihood is monotone along the iterates](admixture-log-lik-iterate-monotone.md)
+- [The FRAPPE update maximizes `Q(· | θ)`](em-q-le-em-step.md)
 
 ## Sources
 

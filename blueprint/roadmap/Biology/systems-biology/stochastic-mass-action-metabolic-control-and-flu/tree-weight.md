@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.treeWeight
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spanning in-tree rooted at a state](is-in-tree.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

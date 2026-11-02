@@ -11,7 +11,7 @@ lean: TensorNetwork.Instance.onGrid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
 
 ## Sources
 

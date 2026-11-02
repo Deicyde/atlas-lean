@@ -16,7 +16,14 @@ has sum of squares `N`; the rest of the standardization is what makes `ℓ j` an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](is-standardized.md)
+- [Random-effects model of LD-score regression](model.md)
+- [Association statistic in the LD-score model](chi-sq.md)
+- [LD score of a marker](ld-score.md)
+
+## Proof depends on
+
+- [Expected association statistic for an arbitrary genotype matrix](integral-chi-sq.md)
 
 ## Sources
 

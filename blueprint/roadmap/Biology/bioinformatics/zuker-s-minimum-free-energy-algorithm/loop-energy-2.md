@@ -14,7 +14,11 @@ bases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+
+## Proof depends on
+
+- [Branches of a loop closed by a base pair](branches.md)
 
 ## Sources
 

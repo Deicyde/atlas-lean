@@ -13,7 +13,11 @@ singular values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated singular value decomposition](trunc-svd.md)
+
+## Proof depends on
+
+- [Right singular vectors of a matrix](right-singular-basis.md)
 
 ## Sources
 

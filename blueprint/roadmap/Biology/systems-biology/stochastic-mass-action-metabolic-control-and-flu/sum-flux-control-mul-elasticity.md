@@ -13,7 +13,14 @@ nonzero, `∑_i C^{J_j}_{e_i} ε^{v_i}_{s_m} = 0` for every flux `J_j` and metab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular steady state of a metabolic network](is-regular-steady-state.md)
+- [Elasticity of a reaction rate](elasticity.md)
+- [Flux control coefficient](flux-control.md)
+- [Steady-state fluxes along a steady-state map](steady-flux.md)
+
+## Proof depends on
+
+- [Reaction fluxes proportional to enzyme levels](flux.md)
 
 ## Sources
 

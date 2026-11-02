@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.norm_hardyEval_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Hardy space](hardy-eval.md)
+
+## Proof depends on
+
+- [Point evaluation as a bounded functional on the Hardy space](hardy-eval-clm.md)
+- [Reproducing property of the Szegő kernel](hardy-eval-clm-apply.md)
+- [Norm of Hardy-space point evaluation](norm-hardy-eval-clm.md)
 
 ## Sources
 

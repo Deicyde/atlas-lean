@@ -36,6 +36,10 @@ e^{-2πixξ} dx`, instead of the source's helper definition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heisenberg's uncertainty principle](heisenberg-uncertainty-fourier.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

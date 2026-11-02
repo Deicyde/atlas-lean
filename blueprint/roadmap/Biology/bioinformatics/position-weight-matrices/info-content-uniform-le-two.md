@@ -13,7 +13,11 @@ and `2` bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Information content of a position weight matrix column](info-content.md)
+
+## Proof depends on
+
+- [Information content is at most the log of the alphabet size](info-content-uniform-le.md)
 
 ## Sources
 

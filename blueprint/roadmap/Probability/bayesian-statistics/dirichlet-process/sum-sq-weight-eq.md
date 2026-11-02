@@ -14,7 +14,18 @@ restaurant process with parameter `α` joins the first one's table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+- [Expected sum of squared stick-breaking weights](sum-sq-weight.md)
+
+## Proof depends on
+
+- [Random stick-breaking weights lie in the unit interval almost surely](ae-weight-mem-icc.md)
+- [Second moment of a stick-breaking weight](integral-weight-sq.md)
+- [Measurability of the random stick-breaking weights](measurable-weight.md)
+- [Random stick-breaking weight](weight.md)
+- [Second moment of $1 - X$ under $\mathrm{Beta}(1, \alpha)$](integral-one-sub-sq-beta-measure-one.md)
+- [Second moment of the beta law](../../distributions/beta-distribution/integral-sq-beta-measure.md)
 
 ## Sources
 

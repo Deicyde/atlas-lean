@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.meanTimeA
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
+
+## Proof depends on
+
+- [Coalescence indicator at locus A](coalesced-a.md)
 
 ## Sources
 

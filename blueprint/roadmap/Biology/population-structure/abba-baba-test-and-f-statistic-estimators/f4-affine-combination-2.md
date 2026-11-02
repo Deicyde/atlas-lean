@@ -14,7 +14,13 @@ sign), then `f4 T X Y Z = ∑ k, w k * f4 (S k) X Y Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [f4 in the drift model](../patterson-s-f-statistics/f4-freq.md)
 
 ## Sources
 

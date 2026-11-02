@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.RademacherTypeCotype.sqrt_average_ra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher sign of a coordinate](rademacher-sign.md)
+
+## Proof depends on
+
+- [Average squared norm of a Rademacher sum](average-rademacher-sq-norm-eq.md)
 
 ## Sources
 

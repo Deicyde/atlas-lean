@@ -18,6 +18,10 @@ all `x, y`, then `f` is within `4 * δ` of an additive map plus the constant
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hyers' theorem (Hyers–Ulam stability of the Cauchy equation)](exists-add-monoid-hom-of-additive-defect.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.HyersUlam](../../../../../sources/v2/MathlibExt.md)

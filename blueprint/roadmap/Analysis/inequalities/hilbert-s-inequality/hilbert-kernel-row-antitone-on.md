@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.hilbertKernelRow_antitoneOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
 
 ## Sources
 

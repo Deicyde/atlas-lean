@@ -15,6 +15,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.Opial.opial_liminf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weakly convergent sequences are norm-bounded](bdd-above-norm-of-weakly-tendsto.md)
+- [Opial's property, squared-norm form](opial-liminf-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Opial](../../../../sources/v2/MathlibExt.md)

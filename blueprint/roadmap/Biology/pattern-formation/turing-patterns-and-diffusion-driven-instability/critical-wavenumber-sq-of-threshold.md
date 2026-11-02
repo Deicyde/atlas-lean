@@ -13,7 +13,12 @@ squared wavenumber is `k_c² = √(det J / (d_u d_v))` and `h(k_c²) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared critical wavenumber](critical-wavenumber-sq.md)
+- [Dispersion polynomial](dispersion-det.md)
+
+## Proof depends on
+
+- [Minimum value of the dispersion polynomial](dispersion-det-critical-wavenumber-sq.md)
 
 ## Sources
 

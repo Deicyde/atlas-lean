@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.tendsto_tikh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Stability bound for Tikhonov regularized solutions](norm-le-of-tikhonov-normal-equations.md)
 
 ## Sources
 

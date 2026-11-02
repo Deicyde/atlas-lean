@@ -11,7 +11,11 @@ lean: MetaMathlibExt.Complexity.NPComplete.MaxNTimesCoverage.Feasible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instance of maximum n-times coverage](instance.md)
+
+## Proof depends on
+
+- [Weight covered at least n times](covered-weight.md)
 
 ## Sources
 

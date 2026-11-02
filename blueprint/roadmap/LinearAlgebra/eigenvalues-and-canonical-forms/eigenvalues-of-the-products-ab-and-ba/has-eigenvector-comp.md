@@ -15,6 +15,10 @@ eigenvector of `g ∘ₗ f` for the same eigenvalue.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenspace of fg maps into the eigenspace of gf](maps-to-eigenspace-comp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.Dynamics.GoldbeterKoshland.steadyState_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
 
 ## Sources
 

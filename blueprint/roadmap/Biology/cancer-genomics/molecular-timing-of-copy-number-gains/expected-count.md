@@ -13,7 +13,11 @@ normalized history `[0, 1]`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
+
+## Proof depends on
+
+- [Copy number after a copy-number event](final-copies.md)
 
 ## Sources
 

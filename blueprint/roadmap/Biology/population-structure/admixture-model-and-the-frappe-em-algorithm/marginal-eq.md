@@ -13,7 +13,10 @@ probability `1 - qf θ i j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Joint weight of an allele copy and its ancestral population](joint.md)
+- [Reference-allele probability in the admixture model](qf.md)
+- [Marginal of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/marginal.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.OutputReachability.ReachesOutput.unique
 
 ## Depends on
 
-This node has no prerequisites.
+- [Output reachability within time and resource bounds](reaches-output.md)
+
+## Proof depends on
+
+- [Output reachability gives stable outputs and bounded iterates](iterate.md)
+- [One iteration step with absorbing halted states](next.md)
 
 ## Sources
 

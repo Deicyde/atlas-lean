@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.adjusted_eq_starProjecti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residualized vector after adjustment for a subspace](adjusted.md)
 
 ## Sources
 

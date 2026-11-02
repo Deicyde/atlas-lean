@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.init_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+- [The Li–Stephens copying model](hmm.md)
+- [Hidden Markov model](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/hmm.md)
 
 ## Sources
 

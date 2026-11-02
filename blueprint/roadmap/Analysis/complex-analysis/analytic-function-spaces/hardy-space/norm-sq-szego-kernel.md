@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.norm_sq_szegoKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Szegő kernel of the Hardy space](szego-kernel.md)
+
+## Proof depends on
+
+- [Squared norms of the Szegő kernel coefficients](norm-sq-szego-coeff.md)
 
 ## Sources
 

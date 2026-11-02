@@ -13,7 +13,8 @@ lean: ProbabilityTheory.map_dirichletProcess_partition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet distribution](../../distributions/dirichlet-distribution/dirichlet-measure.md)
+- [Dirichlet process](dirichlet-process.md)
 
 ## Sources
 

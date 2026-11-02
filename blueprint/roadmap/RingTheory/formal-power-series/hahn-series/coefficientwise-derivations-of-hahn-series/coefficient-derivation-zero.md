@@ -12,7 +12,7 @@ lean: HahnSeries.coefficientDerivation_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficientwise derivation of Hahn series](coefficient-derivation.md)
 
 ## Sources
 

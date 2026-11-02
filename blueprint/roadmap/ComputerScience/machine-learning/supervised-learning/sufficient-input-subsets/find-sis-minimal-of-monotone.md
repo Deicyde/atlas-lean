@@ -14,7 +14,12 @@ only Proposition 1.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy backward-selection rule](is-greedy.md)
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+
+## Proof depends on
+
+- [Proposition 1 (first part)](find-sis-erase-lt.md)
 
 ## Sources
 

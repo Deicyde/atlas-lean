@@ -14,6 +14,10 @@ lean: Cslib.Bioinformatics.PopulationStructure.WeightedLDFFT.bruteWeightedLD
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unbiased sample covariance of genotypes](sample-cov.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.WeightedLDFFT](../../../../sources/v2/CSLibExt.md)

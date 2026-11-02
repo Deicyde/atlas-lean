@@ -14,6 +14,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.ArmitageTrend.tre
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Numerator of the Cochran–Armitage trend statistic](numer.md)
+- [Number of individuals in a case-control genotype table](total.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GenomicPrediction](../../../../sources/v2/MathlibExt.md)

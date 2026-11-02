@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.isHilbertSchmidt_hsRa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Rank-one infinite matrix](hs-rank-one.md)
+
+## Proof depends on
+
+- [Entries of a rank-one matrix are square-summable](summable-hs-rank-one-sq.md)
 
 ## Sources
 

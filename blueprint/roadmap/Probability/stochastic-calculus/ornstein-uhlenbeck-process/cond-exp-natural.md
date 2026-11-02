@@ -13,7 +13,12 @@ lean: ProbabilityTheory.IsOrnsteinUhlenbeckFromZero.condExp_natural
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+
+## Proof depends on
+
+- [Conditional expectation of a Gaussian process given its past](cond-exp-natural-eq-of-covariance.md)
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
 
 ## Sources
 

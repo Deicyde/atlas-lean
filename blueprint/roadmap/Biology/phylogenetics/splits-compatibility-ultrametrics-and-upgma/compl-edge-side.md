@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.compl_edgeSide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Side of a tree edge containing a vertex](edge-side.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
 
 ## Sources
 

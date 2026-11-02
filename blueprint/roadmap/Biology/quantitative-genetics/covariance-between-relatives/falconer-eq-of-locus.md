@@ -14,7 +14,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.falc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Population mean genotypic value at a single locus](mean.md)
+- [Mean product of genotypic values of two relatives](rel-prod.md)
+- [Additive variance at a single locus](var-a.md)
+- [Dominance variance at a single locus](var-d.md)
+
+## Proof depends on
+
+- [Covariance between relatives](rel-cov-eq.md)
 
 ## Sources
 

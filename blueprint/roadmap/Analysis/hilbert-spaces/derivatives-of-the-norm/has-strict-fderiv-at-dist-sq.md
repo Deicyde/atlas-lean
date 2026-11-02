@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormDerivative.hasStrictFDerivAt_dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+
+## Proof depends on
+
+- [Strict derivative of the squared norm](has-strict-fderiv-at-norm-sq.md)
 
 ## Sources
 

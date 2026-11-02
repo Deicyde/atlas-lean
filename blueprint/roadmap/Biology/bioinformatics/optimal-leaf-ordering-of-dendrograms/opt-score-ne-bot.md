@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.Clustering.OptimalLeafOrdering.optScore_ne_bot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+- [Optimal leaf-ordering score](opt-score.md)
+
+## Proof depends on
+
+- [Number of internal nodes of a dendrogram](num-internal.md)
+- [Leaf orderings of a dendrogram](orderings.md)
+- [Adjacent-similarity score of a leaf order](adj-score.md)
+- [A dendrogram with m internal nodes has $2^m$ leaf orders](length-orderings.md)
 
 ## Sources
 

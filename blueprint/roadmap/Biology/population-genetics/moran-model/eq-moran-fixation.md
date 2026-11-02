@@ -14,7 +14,16 @@ the first-step equation `ψ i = a_i ψ (i+1) + b_i ψ (i-1) + (1 - a_i - b_i) ψ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-step probability of the Moran process](moran-down.md)
+- [Fixation probability of the Moran process](moran-fixation.md)
+- [Up-step probability of the Moran process](moran-up.md)
+
+## Proof depends on
+
+- [First-step equation (Moran 1958)](moran-fixation-eq-first-step.md)
+- [A fixed mutant stays fixed](moran-fixation-self.md)
+- [An absent mutant is never fixed](moran-fixation-zero.md)
+- [Ratio of Moran down- and up-step probabilities](mul-moran-down.md)
 
 ## Sources
 

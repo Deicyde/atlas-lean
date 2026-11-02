@@ -16,6 +16,10 @@ most `C`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Per-row estimate in Schur's test](schur-pointwise-sq-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTest](../../../../../sources/v2/MathlibExt.md)

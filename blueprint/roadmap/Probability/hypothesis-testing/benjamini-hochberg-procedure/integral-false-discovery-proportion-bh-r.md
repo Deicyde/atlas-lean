@@ -15,7 +15,17 @@ measurability and independence. (For `m = 0` both sides are `0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Benjamini–Hochberg rejection set](bh-rejections.md)
+- [False discovery proportion](../valid-p-values-and-false-discovery-proportion/false-discovery-proportion.md)
+
+## Proof depends on
+
+- [Benjamini–Hochberg step-up index](bh-index.md)
+- [Benjamini–Hochberg index is at most the number of hypotheses](bh-index-le.md)
+- [Benjamini–Hochberg index satisfies the step-up condition](bh-index-le-num-below.md)
+- [Number of Benjamini–Hochberg rejections](card-bh-rejections.md)
+- [Maximality of the Benjamini–Hochberg index](le-bh-index.md)
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.RademacherTypeCotype.average_rademac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher sign of a coordinate](rademacher-sign.md)
+
+## Proof depends on
+
+- [Number of sign vectors of length n](card-sign-vectors.md)
+- [Second moment of a Rademacher sum in a Hilbert space](sum-rademacher-sq-norm-eq.md)
 
 ## Sources
 

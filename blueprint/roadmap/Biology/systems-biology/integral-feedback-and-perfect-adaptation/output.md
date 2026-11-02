@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.Dynamics.IntegralFeedback.LinearSystem.output
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-input single-output linear time-invariant system](linear-system.md)
 
 ## Sources
 

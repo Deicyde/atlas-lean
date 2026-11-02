@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.IsAcyclic
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Interaction graph of a Boolean network](influences.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

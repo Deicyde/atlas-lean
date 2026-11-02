@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.PotentialOut
 
 ## Depends on
 
-This node has no prerequisites.
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
+
+## Proof depends on
+
+- [Observed treatment in a potential-outcomes model](observed-treatment.md)
 
 ## Sources
 

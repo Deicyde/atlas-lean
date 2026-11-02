@@ -13,7 +13,7 @@ orthonormal eigenbasis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tail of an orthonormal eigenbasis](tail-family.md)
 
 ## Sources
 

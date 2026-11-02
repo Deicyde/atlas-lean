@@ -15,6 +15,10 @@ lean: AlgHom.natCard_eq_finrank_of_isReduced_of_isAlgClosed
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Counting algebra homomorphisms from an étale algebra](nat-card-alg-hom-eq-finrank-of-is-alg-cl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Algebra.AlgHomCount](../../../../sources/v2/MathlibExt.md)

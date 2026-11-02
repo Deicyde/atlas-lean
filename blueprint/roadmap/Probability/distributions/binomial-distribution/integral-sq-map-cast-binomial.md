@@ -14,6 +14,10 @@ lean: ProbabilityTheory.integral_sq_map_cast_binomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second factorial moment of the binomial law](integral-mul-sub-one-map-cast-binomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BinomialMoments](../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ lean: StatMech.disjointOccurrence_isIncreasing
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Occurrence of an increasing event is monotone in the configuration](mono-config.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.CorrelationInequalities.BK](../../../../../sources/v2/MathlibExt.md)

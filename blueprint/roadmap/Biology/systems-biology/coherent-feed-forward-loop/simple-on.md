@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.Dynamics.FeedForwardLoop.simpleOn
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Variation-of-constants solution of a linear relaxation equation](relaxation.md)
+- [Single-input production rate in the logic approximation](simple-gate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.FeedForwardLoop](../../../../sources/v2/MathlibExt.md)

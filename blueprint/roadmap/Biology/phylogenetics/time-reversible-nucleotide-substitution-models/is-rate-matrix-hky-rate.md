@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isRateMatrix_hkyRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKY85 rate matrix](hky-rate.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [HKY85 exchangeabilities](hky-exchangeability.md)
+- [GTR matrix is a rate matrix](is-rate-matrix-gtr-rate.md)
 
 ## Sources
 

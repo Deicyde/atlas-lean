@@ -15,7 +15,13 @@ tends to infinity, to the transition matrix `exp (t • G)` of the pure-death pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator of Kingman's block-counting process](block-counting-generator.md)
+- [Wright–Fisher transition matrix of the lineage count](wf-lineage-matrix.md)
+
+## Proof depends on
+
+- [Scaled Wright–Fisher lineage matrix converges to Kingman's generator](tendsto-smul-wf-lineage-matrix-sub-one.md)
+- [Compound-interest limit in a Banach algebra](../../../Analysis/operator-algebras/exponential-limits-and-the-lie-trotter-formula/tendsto-one-add-inv-smul-pow.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ supported in the interval `[i, i + len)`, over any commutative semiring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inside recursion](inside.md)
+- [Secondary structures within an interval](structures-in.md)
+- [Weight of a secondary structure](weight.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Complementary base pairing of two positions](can-pair.md)
 
 ## Sources
 

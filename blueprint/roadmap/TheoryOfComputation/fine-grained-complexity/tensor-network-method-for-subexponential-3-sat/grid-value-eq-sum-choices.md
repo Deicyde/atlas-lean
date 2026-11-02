@@ -14,7 +14,15 @@ original kernel, which does not affect `gridValue`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued complete-graph tensor instance](integer-valued-factored-tensor-networks/instance.md)
+- [Ordered rectangles of a finite grid](finite-rectangular-grid-tensor-evaluation/grid-rectangles.md)
+- [Finite grid tensor evaluation](finite-rectangular-grid-tensor-evaluation/grid-value.md)
+
+## Proof depends on
+
+- [Directed labelings of a finite grid](finite-rectangular-grid-tensor-evaluation/grid-labelings.md)
+- [Ordered pairs representing unordered pairs](integer-valued-factored-tensor-networks/ordered-pairs.md)
+- [Applying a rectangle kernel to its diagonal ends](finite-rectangular-grid-tensor-evaluation/rectangle-apply.md)
 
 ## Sources
 

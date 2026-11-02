@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.variableSFS_i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected site frequency spectrum under variable population size](variable-sfs.md)
+
+## Proof depends on
+
+- [Expected block counts weighted by coalescence times sum to $2/i$](../expected-site-frequency-spectrum/sum-block-count-mul-inv-choose-two.md)
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
 
 ## Sources
 

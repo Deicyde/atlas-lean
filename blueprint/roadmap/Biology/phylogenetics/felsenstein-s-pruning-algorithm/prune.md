@@ -12,7 +12,7 @@ at its root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
 
 ## Sources
 

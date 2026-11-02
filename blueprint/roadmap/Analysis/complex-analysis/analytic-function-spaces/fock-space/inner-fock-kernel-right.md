@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.inner_fockKernel_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+- [Reproducing kernel of the Fock space](fock-kernel.md)
 
 ## Sources
 

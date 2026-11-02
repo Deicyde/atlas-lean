@@ -12,7 +12,11 @@ lean: ProbabilityTheory.sum_betaBinomialPMF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beta-binomial mass function](beta-binomial-pmf.md)
+
+## Proof depends on
+
+- [Chu–Vandermonde identity for rising factorials](asc-pochhammer-eval-add-eq-sum.md)
 
 ## Sources
 

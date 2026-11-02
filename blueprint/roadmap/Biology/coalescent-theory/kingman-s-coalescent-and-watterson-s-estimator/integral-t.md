@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integral_T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+
+## Proof depends on
+
+- [Positivity of the number of pairs](choose-two-pos.md)
+- [Mean of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md)
 
 ## Sources
 

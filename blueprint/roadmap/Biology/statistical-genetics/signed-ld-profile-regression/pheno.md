@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.SignedLDProfile.Model.pheno
 
 ## Depends on
 
-This node has no prerequisites.
+- [First-moment phenotype model of SLDP regression](model.md)
 
 ## Sources
 

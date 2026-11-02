@@ -14,7 +14,13 @@ is self-adjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Tikhonov normal operator has closed range](is-closed-range-tikhonov-operator.md)
+- [Tikhonov normal operator is self-adjoint](is-self-adjoint-tikhonov-operator.md)
+- [Tikhonov normal operator has trivial kernel](ker-tikhonov-operator-eq-bot.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ contributes nothing to either side.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance-weighted estimator](ivw.md)
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
+- [Ratio estimate of a single SNP](ratio-estimate.md)
 
 ## Sources
 

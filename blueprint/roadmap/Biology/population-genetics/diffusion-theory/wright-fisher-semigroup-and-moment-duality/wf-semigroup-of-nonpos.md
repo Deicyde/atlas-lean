@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources
 

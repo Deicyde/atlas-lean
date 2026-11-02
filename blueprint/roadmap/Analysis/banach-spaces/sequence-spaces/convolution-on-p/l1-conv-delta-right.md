@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1Conv_delta_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence](l1-conv.md)
+- [Unit sequence in $\ell^1(\mathbb{Z})$](l1-delta.md)
+
+## Proof depends on
+
+- [Commutativity of $\ell^1$ convolution](l1-conv-comm.md)
+- [Unit sequence is a left identity for convolution](l1-conv-delta-left.md)
 
 ## Sources
 

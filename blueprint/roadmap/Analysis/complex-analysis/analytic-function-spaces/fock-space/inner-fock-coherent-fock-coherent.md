@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.inner_fockCoherent_fockCoh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coherent state in the Fock space](fock-coherent.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+- [Inner product of two Fock kernels is an exponential](inner-fock-kernel-fock-kernel.md)
 
 ## Sources
 

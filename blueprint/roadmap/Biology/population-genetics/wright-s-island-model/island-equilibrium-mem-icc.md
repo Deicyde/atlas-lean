@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.IslandModel.islandEquilibrium_mem_Ic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium $F_{ST}$ of Wright's island model](island-equilibrium.md)
+
+## Proof depends on
+
+- [Positivity of the island-model equilibrium denominator](island-equilibrium-denom-pos.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ in `labels`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interaction of two states in a factored network](../integer-valued-factored-tensor-networks/interaction.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Row network of a grid tensor](grid-row-network.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Label set of an unordered vertex pair](../integer-valued-factored-tensor-networks/label-set.md)
 
 ## Sources
 

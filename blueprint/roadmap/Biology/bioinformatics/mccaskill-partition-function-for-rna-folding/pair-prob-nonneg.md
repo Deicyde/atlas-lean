@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.pairProb_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base-pair probability](pair-prob.md)
+
+## Proof depends on
+
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ all `v : H`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Transpose of a coercive bilinear form is coercive](is-coercive-flip.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.AubinNitsche](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ the singletons and the full set of species.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
+
+## Proof depends on
+
+- [Species below a node of a species tree](taxa.md)
 
 ## Sources
 

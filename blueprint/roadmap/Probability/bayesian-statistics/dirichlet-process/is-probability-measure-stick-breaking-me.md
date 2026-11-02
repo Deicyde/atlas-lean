@@ -12,7 +12,13 @@ lean: ProbabilityTheory.isProbabilityMeasure_stickBreakingMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking measure](stick-breaking-measure.md)
+- [Stick-breaking weights](stick-weight.md)
+
+## Proof depends on
+
+- [Mass of a set under the stick-breaking measure](stick-breaking-measure-apply.md)
+- [Nonnegativity of stick-breaking weights](stick-weight-nonneg.md)
 
 ## Sources
 

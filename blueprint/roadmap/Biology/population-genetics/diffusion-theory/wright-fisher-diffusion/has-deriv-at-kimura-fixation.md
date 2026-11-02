@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.hasDerivAt_kimuraFixation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](kimura-slope.md)
+
+## Proof depends on
+
+- [Neutral fixation probability equals the initial frequency](kimura-fixation-neutral.md)
 
 ## Sources
 

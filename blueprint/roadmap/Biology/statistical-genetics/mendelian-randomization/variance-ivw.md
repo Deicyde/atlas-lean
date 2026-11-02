@@ -15,7 +15,12 @@ variance `(∑ w_j)⁻¹ = (∑ β̂_{Xj}² / σ_j²)⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance-weighted estimator](ivw.md)
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
+
+## Proof depends on
+
+- [Positivity of the total IVW weight](sum-ivw-weight-pos.md)
 
 ## Sources
 

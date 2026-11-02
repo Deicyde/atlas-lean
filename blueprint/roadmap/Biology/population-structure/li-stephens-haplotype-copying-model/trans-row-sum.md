@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.trans_row_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Li–Stephens copying transition probability](trans.md)
 
 ## Sources
 

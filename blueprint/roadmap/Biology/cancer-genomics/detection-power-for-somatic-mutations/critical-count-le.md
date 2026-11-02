@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.criticalCount_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Critical count of the mutation detection test](critical-count.md)
+
+## Proof depends on
+
+- [Binomial upper tail probability](upper-tail.md)
+- [Binomial upper tail beyond n is zero](upper-tail-eq-zero.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Language.LinearBoundedAutomaton.map_orig_encodeCellsAux
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Cell tuples of an LBA configuration from an offset](encode-cells-aux.md)
+- [Terminal symbol of the LBA grammar](term-sym.md)
+
+## Proof depends on
+
+- [Boundary tag of a head position](of-head.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ at most `M ^ 2`, then `x` lies in the Rellich ball.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Membership in the Rellich ball via partial sums](mem-rellich-ball.md)
+- [Rellich weight](rellich-weight.md)
 
 ## Sources
 

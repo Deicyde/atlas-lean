@@ -16,7 +16,13 @@ captured by the new binder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Channel name in the π-calculus](name.md)
+- [Processes of the π-calculus](proc.md)
+
+## Proof depends on
+
+- [Lifting free de Bruijn indices of a π-calculus name](lift-name.md)
+- [Substitution of a name into a π-calculus name](subst-name.md)
 
 ## Sources
 

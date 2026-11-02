@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.GeneralizedLeastSquares.glsMatrix_mul_mu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares matrix](gls-matrix.md)
 
 ## Sources
 

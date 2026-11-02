@@ -16,7 +16,14 @@ its edge lengths are unchanged (Felsenstein 1981).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Site likelihood of a phylogenetic tree](../felsenstein-s-pruning-algorithm/likelihood.md)
+- [Reversible semigroup of transition matrices](is-reversible-semigroup.md)
+
+## Proof depends on
+
+- [Felsenstein's pruning recursion](../felsenstein-s-pruning-algorithm/prune.md)
+- [The root can be pushed to the end of its edge](likelihood-node-eq.md)
 
 ## Sources
 

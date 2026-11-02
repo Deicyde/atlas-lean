@@ -13,6 +13,10 @@ lean: MvPowerSeries.expOperator
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.MvPowerSeries.OperatorExponential](../../../../sources/v2/MathlibExt.md)

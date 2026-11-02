@@ -14,7 +14,12 @@ the item completed by that word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Earley chart](earley-chart.md)
+- [Yield of a sentential form](../context-free-grammars/yields.md)
+
+## Proof depends on
+
+- [Earley item dot stays within its production](dot-le-of-earley-chart.md)
 
 ## Sources
 

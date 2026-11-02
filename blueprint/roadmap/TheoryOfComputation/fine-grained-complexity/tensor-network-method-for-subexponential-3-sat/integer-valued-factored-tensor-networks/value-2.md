@@ -11,7 +11,12 @@ lean: TensorNetwork.Factored.value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
+
+## Proof depends on
+
+- [Interaction of two states in a factored network](interaction.md)
+- [Ordered pairs representing unordered pairs](ordered-pairs.md)
 
 ## Sources
 

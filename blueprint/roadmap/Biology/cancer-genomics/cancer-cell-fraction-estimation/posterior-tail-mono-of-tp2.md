@@ -15,7 +15,7 @@ under `L'` as under `L` (both normalizers positive).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Posterior tail probability on a grid](tail-ratio.md)
 
 ## Sources
 

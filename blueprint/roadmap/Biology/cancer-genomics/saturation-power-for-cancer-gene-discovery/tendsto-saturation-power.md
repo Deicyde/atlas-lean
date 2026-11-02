@@ -13,7 +13,14 @@ binomial test tends to `1` as the number of patients grows.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Saturation power of the binomial gene discovery test](saturation-power.md)
+
+## Proof depends on
+
+- [Binomial probability mass function](../detection-power-for-somatic-mutations/binom-pmf.md)
+- [Nonnegativity of binomial probabilities](../detection-power-for-somatic-mutations/binom-pmf-nonneg.md)
+- [Binomial probabilities sum to one](../detection-power-for-somatic-mutations/sum-binom-pmf.md)
+- [Binomial upper tail probability](../detection-power-for-somatic-mutations/upper-tail.md)
 
 ## Sources
 

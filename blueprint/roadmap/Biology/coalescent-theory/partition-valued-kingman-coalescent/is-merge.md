@@ -13,7 +13,7 @@ block (so exactly two blocks of `π` lie in one block of `π'`, and the others a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Only capacities between distinct vertices must agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
 
 ## Sources
 

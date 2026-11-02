@@ -13,7 +13,8 @@ balance with its base frequencies, `π i Q i j = π j Q j i` (Tavaré 1986).
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
 
 ## Sources
 

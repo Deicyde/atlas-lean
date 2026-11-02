@@ -14,6 +14,10 @@ coefficients `√(n + 1) * (conj z)ⁿ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bergman kernel coefficients are square-summable](mem-p-bergman-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BergmanSpace](../../../../../sources/v2/MathlibExt.md)

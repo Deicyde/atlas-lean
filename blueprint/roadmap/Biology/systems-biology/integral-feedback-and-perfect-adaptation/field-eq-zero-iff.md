@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.IntegralFeedback.LinearSystem.field_eq_zero_if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-input single-output linear time-invariant system](linear-system.md)
+- [Vector field of a linear time-invariant system](field.md)
 
 ## Sources
 

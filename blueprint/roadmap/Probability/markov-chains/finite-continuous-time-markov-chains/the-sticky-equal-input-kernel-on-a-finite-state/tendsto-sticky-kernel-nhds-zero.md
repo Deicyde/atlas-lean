@@ -12,7 +12,12 @@ lean: ProbabilityTheory.tendsto_stickyKernel_nhds_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Continuity of the sticky kernel in the persistence](continuous-sticky-kernel.md)
+- [Sticky kernel at persistence one is the identity](sticky-kernel-one.md)
 
 ## Sources
 

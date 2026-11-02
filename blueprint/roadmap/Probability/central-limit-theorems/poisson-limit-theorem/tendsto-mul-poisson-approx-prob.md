@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.PoissonWeakConvergence.tendsto_mul_poissonApproxPro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Success probability of the binomial approximation to Poisson](poisson-approx-prob.md)
 
 ## Sources
 

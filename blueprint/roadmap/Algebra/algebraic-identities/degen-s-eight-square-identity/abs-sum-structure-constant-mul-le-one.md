@@ -12,7 +12,7 @@ lean: Octonion.abs_sum_structureConstant_mul_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed structure constant of the eight-square algebra](structure-constant.md)
 
 ## Sources
 

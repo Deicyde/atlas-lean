@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.exists_eq_of_bestPacking_eq_c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple-choice knapsack selection](is-selection.md)
+- [Knapsack item with weight and value](item.md)
+- [Packing recurrence for multiple-choice knapsack](best-packing.md)
+- [Total value of a knapsack selection](total-value.md)
+- [Total weight of a knapsack selection](total-weight.md)
 
 ## Sources
 

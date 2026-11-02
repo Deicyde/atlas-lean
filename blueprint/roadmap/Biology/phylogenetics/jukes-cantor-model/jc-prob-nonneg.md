@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcProb_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition probability](jc-prob.md)
 
 ## Sources
 

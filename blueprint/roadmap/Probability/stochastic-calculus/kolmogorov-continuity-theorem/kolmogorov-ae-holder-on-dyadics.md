@@ -14,7 +14,11 @@ the module docstring is required for this Bochner formulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic rationals](dyadic-rationals.md)
+
+## Proof depends on
+
+- [Deterministic chaining](dyadic-holder-of-increment-bound.md)
 
 ## Sources
 

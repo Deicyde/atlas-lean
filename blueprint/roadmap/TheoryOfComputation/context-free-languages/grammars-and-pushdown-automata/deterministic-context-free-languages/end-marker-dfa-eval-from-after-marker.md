@@ -13,7 +13,11 @@ accepting state on empty input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFA recognizing end-marker encodings](end-marker-dfa.md)
+
+## Proof depends on
+
+- [Dead state of the encoding DFA is absorbing](end-marker-dfa-eval-from-dead.md)
 
 ## Sources
 

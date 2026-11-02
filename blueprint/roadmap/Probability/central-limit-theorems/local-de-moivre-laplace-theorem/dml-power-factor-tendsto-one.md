@@ -14,7 +14,13 @@ This is the key analytic estimate behind the local DeMoivre–Laplace limit theo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice index in the local De Moivre–Laplace theorem](local-dmlindex.md)
+
+## Proof depends on
+
+- [Cubic bound on the symmetric entropy residual](entropy-residual-bound.md)
+- [Standardized displacement of the rounded index converges](local-dmlindex-standardized-tendsto.md)
+- [Logarithm of the binomial power factor](log-power-factor-formula.md)
 
 ## Sources
 

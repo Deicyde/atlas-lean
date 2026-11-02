@@ -15,6 +15,10 @@ written as `(x_A / m_A - x_B / m_B)² - x_A (m_A - x_A) / (m_A² (m_A - 1)) - �
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unbiased heterozygosity estimator](het-hat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS](../../../../sources/v2/MathlibExt.md)

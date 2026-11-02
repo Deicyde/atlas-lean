@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.Assembly.Omnitig.IsSafe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed multigraph](multigraph.md)
+
+## Proof depends on
+
+- [Circular edge-covering walk](is-circular-covering.md)
+- [Subwalk of a circular walk](is-circular-subwalk.md)
 
 ## Sources
 

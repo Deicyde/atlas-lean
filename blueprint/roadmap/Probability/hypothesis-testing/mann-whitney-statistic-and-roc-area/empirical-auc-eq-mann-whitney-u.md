@@ -13,7 +13,13 @@ empirical ROC curve equals `U / (m n)`, for nonempty samples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical area under the ROC curve](empirical-auc.md)
+- [Mann–Whitney U statistic](mann-whitney-u.md)
+
+## Proof depends on
+
+- [Empirical ROC rate at or above a threshold](roc-rate.md)
+- [Empirical ROC rate strictly above a threshold](roc-rate-above.md)
 
 ## Sources
 

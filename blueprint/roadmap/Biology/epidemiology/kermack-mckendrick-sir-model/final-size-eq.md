@@ -14,7 +14,12 @@ nobody is removed initially (`R(0) = 0`), `γ ≠ 0`, `S(t) → S∞` and the ep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Kermack–McKendrick SIR system](is-solution.md)
+
+## Proof depends on
+
+- [Final-size relation (Kermack–McKendrick 1927)](final-size.md)
+- [Conservation of the population](total-eq.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.loeuf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Upper confidence bound for the observed/expected ratio](oe-upper.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GeneConstraint](../../../../sources/v2/MathlibExt.md)

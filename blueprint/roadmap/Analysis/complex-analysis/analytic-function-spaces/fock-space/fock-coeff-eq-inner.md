@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.fockCoeff_eq_inner
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized monomials in the Fock space](fock-monomial.md)
 
 ## Sources
 

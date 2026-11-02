@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.restr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
 
 ## Sources
 

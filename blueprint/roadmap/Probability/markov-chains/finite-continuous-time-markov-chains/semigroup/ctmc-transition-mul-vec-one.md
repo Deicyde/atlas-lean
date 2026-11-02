@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ctmcTransition_mulVec_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition semigroup of a continuous-time Markov chain](ctmc-transition.md)
 
 ## Sources
 

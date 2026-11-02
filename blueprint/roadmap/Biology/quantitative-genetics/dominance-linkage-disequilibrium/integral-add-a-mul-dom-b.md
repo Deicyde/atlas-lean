@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.DominanceLD.RandomUnion.integral_ad
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-locus diploid genotype under random union of gametes](random-union.md)
+- [Additive coding at the first locus](add-a.md)
+- [Dominance coding at the second locus](dom-b.md)
+
+## Proof depends on
+
+- [Allele frequency at the first locus](freq-a.md)
+- [Allele frequency at the second locus](freq-b.md)
 
 ## Sources
 

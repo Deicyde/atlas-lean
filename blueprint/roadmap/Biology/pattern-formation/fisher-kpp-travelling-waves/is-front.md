@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.Dynamics.FisherKPP.IsFront
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Traveling-wave profile of the Fisher–KPP equation](is-wave-profile.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.FisherKPP](../../../../sources/v2/MathlibExt.md)

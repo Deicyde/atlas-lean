@@ -15,7 +15,7 @@ under each `P θ`, is what lets one approximating sequence serve every parameter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](is-sufficient.md)
 
 ## Sources
 

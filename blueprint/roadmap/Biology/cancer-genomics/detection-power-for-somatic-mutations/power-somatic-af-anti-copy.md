@@ -13,7 +13,15 @@ mutation of multiplicity `0 ≤ s ≤ q ≤ q'` (Carter et al. 2012, Eqs. 2, 9, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected allelic fraction of a somatic mutation](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af.md)
+- [Power of the randomized mutation detection test](power.md)
+
+## Proof depends on
+
+- [Somatic allelic fraction decreases with copy number](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-anti-copy.md)
+- [Somatic allelic fraction is at most one](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-le-one.md)
+- [Nonnegativity of somatic allelic fractions](../tumour-purity-ploidy-and-copy-ratio-algebra/somatic-af-nonneg.md)
+- [Power increases with the allelic fraction](power-mono.md)
 
 ## Sources
 

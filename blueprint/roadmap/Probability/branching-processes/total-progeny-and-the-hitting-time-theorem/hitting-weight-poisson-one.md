@@ -13,7 +13,11 @@ lean: MathlibExt.Probability.GaltonWatson.hittingWeight_poisson_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hitting weight of first-passage step sequences](hitting-weight.md)
+
+## Proof depends on
+
+- [Borel–Tanner law](nat-cast-mul-hitting-weight-poisson.md)
 
 ## Sources
 

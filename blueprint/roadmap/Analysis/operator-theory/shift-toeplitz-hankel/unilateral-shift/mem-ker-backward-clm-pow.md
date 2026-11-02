@@ -13,7 +13,11 @@ onwards all vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Pointwise action of a power of the backward shift](backward-clm-pow-apply.md)
 
 ## Sources
 

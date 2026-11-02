@@ -12,7 +12,13 @@ lean: Cslib.Language.KleeneConverse.denoted_coeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Language denoted by a regular expression](is-regex-denoted.md)
+- [Coefficient in the equation system of a DFA](coeff.md)
+
+## Proof depends on
+
+- [Single-letter languages are regex-denoted](char.md)
+- [Regex-denoted languages are closed under finite unions](sum.md)
 
 ## Sources
 

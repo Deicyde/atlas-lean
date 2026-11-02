@@ -17,6 +17,11 @@ zero or one (ZOOPS) is `Z = Option (Fin (n + 1))`, `start = id`, `prior none = 1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Likelihood ratio of a motif window](window-ratio.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

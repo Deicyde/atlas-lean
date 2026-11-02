@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.card_rankedHistory
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
+- [Ranked labeled history](ranked-history.md)
+
+## Proof depends on
+
+- [Number of pairs of lineages](card-lineage-pair.md)
+- [Reindexing the product of pair counts](prod-fin-choose-two.md)
 
 ## Sources
 

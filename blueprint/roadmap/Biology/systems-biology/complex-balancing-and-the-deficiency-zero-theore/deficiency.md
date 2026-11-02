@@ -12,7 +12,13 @@ stoichiometric subspace).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+
+## Proof depends on
+
+- [Complexes of a chemical reaction network](complexes.md)
+- [Number of linkage classes of a reaction network](num-linkage-classes.md)
+- [Stoichiometric subspace](stoichiometric-subspace.md)
 
 ## Sources
 

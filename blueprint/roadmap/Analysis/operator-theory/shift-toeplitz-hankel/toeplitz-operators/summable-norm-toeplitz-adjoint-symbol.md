@@ -13,7 +13,7 @@ summable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjoint symbol of a Toeplitz operator](toeplitz-adjoint-symbol.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.Probability.ThreeSeriesNecessity.symmRV
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pair of coordinates from two independent copies](pair-rv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ThreeSeriesNecessity](../../../../sources/v2/MathlibExt.md)

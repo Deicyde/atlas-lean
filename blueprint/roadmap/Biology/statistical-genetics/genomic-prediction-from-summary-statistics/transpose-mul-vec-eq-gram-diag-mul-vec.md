@@ -13,7 +13,8 @@ genotype matrix: a column with `x_jᵀ x_j = 0` is zero, so both sides vanish th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal of the genotype Gram matrix](gram-diag.md)
+- [Marginal least-squares estimate of a marker effect](marginal-estimate.md)
 
 ## Sources
 

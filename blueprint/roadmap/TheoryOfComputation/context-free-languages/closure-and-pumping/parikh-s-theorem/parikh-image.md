@@ -14,6 +14,10 @@ words.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Parikh vector of a word](parikh-vector.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Parikh](../../../../../sources/v2/CSLibExt.md)

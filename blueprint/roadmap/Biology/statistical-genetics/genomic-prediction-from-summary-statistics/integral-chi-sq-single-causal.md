@@ -14,7 +14,15 @@ variance `τ`, then for a marker `m` and `N ≠ 0`, `𝔼[χ² m] = N τ r m c �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stratified LD-score model](stratified-model.md)
+- [Association statistic in the stratified LD-score model](chi-sq.md)
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+
+## Proof depends on
+
+- [Stratified LD-score regression](integral-chi-sq-of-standardized.md)
+- [Stratified LD score](strat-ldscore.md)
 
 ## Sources
 

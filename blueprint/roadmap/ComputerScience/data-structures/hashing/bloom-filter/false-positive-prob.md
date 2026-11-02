@@ -14,6 +14,10 @@ values `H`, query hash values `q`) in which every query bit is set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bits set by the stored hash values](set-bits.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BloomFilterFalsePositive](../../../../../sources/v2/CSLibExt.md)

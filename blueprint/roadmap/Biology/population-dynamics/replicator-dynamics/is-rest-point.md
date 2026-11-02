@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.Replicator.IsRestPoint
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean fitness of a population state](mean-fitness.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.Replicator](../../../../sources/v2/MathlibExt.md)

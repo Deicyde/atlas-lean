@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.GaussianGraphicalModel.partialCorrelatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial correlation from the conditional covariance](partial-correlation.md)
+
+## Proof depends on
+
+- [The conditional covariance is the inverse of a precision block](inv-to-blocks-inv.md)
 
 ## Sources
 

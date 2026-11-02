@@ -13,7 +13,13 @@ pre-Brownian motion is an Ornstein–Uhlenbeck process started at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+- [Doob's time change of Brownian motion](ou-of-brownian.md)
+
+## Proof depends on
+
+- [Doob's clock for the Ornstein–Uhlenbeck process from zero](ou-clock.md)
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
 
 ## Sources
 

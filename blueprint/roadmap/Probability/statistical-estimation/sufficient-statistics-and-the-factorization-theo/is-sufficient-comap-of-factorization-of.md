@@ -21,7 +21,11 @@ stated. Removing the hypothesis would require a different proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](is-sufficient.md)
+
+## Proof depends on
+
+- [Factorization implies sufficiency](is-sufficient-of-with-density.md)
 
 ## Sources
 

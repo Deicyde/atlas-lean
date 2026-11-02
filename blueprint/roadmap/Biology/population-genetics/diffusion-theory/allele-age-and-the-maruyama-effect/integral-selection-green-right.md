@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.integral_selectionGreen_ri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sojourn density of the Wright–Fisher diffusion with selection](selection-green.md)
+
+## Proof depends on
+
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Kimura's fixation probability equals one at frequency one](../wright-fisher-diffusion/kimura-fixation-one-right.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Language.KleeneConverse.mem_coeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient in the equation system of a DFA](coeff.md)
+
+## Proof depends on
+
+- [Membership in a finite union of languages](mem-sum.md)
 
 ## Sources
 

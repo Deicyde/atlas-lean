@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.poissonLik_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson likelihood of an observed count](poisson-lik.md)
 
 ## Sources
 

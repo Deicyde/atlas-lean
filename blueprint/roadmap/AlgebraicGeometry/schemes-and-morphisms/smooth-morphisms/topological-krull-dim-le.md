@@ -15,6 +15,10 @@ Krull dimension at most `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Krull dimension of a standard smooth algebra over a field](ring-krull-dim-le-of-ring-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.SmoothKrullDim](../../../../sources/v2/MathlibExt.md)

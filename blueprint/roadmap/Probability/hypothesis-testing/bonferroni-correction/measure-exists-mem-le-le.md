@@ -14,7 +14,7 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.measure_exists_mem_le_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
 
 ## Sources
 

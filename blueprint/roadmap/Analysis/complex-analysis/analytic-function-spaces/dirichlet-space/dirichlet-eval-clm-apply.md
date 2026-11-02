@@ -13,7 +13,8 @@ with the Dirichlet kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Dirichlet space](dirichlet-eval.md)
+- [Point evaluation as a bounded functional on the Dirichlet space](dirichlet-eval-clm.md)
 
 ## Sources
 

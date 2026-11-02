@@ -12,7 +12,12 @@ lean: MvPowerSeries.expOperator_of_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Operator exponential when the square of the operator vanishes](exp-operator-of-sq-zero.md)
 
 ## Sources
 

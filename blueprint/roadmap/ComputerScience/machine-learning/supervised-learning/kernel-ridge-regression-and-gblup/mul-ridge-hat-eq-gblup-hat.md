@@ -14,6 +14,10 @@ lean: Cslib.MachineLearning.GBLUP.mul_ridgeHat_eq_gblupHat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Push-through identity for ridge regression](transpose-mul-add-inv-mul-transpose.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Regression.GBLUP](../../../../../sources/v2/CSLibExt.md)

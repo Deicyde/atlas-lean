@@ -12,7 +12,12 @@ neither locus has coalesced, `0` elsewhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
+
+## Proof depends on
+
+- [Covariance of coalescence times at two linked loci](two-locus-cov.md)
+- [Common denominator of the two-locus moments](two-locus-denom.md)
 
 ## Sources
 

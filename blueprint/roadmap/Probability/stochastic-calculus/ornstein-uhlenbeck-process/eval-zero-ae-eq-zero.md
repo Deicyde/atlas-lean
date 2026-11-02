@@ -12,7 +12,11 @@ lean: ProbabilityTheory.IsOrnsteinUhlenbeckFromZero.eval_zero_ae_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+
+## Proof depends on
+
+- [One-time law of the Ornstein–Uhlenbeck process from zero](has-law-eval.md)
 
 ## Sources
 

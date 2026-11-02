@@ -13,7 +13,13 @@ is a quasi-inverse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Backward shift](backward-clm.md)
+- [Backward shift power inverts the shift power modulo finite rank](approx-backward-comp-shift.md)
+- [Shift power inverts the backward shift power modulo finite rank](approx-shift-comp-backward.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ every `t ∈ I`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [No-flux solution of the gradient-drift Fokker–Planck equation](is-no-flux-solution-on.md)
+
+## Proof depends on
+
+- [Negative probability flux of the Fokker–Planck equation](neg-flux.md)
 
 ## Sources
 

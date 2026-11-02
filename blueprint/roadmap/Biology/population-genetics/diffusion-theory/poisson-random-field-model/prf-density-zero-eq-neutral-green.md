@@ -15,7 +15,12 @@ mutational input of frequency is `θ / 2`), the expected sojourn density at `x �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher Green's function](../sojourn-times-of-the-wright-fisher-diffusion/neutral-green.md)
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Neutral Poisson random field density](prf-density-zero.md)
 
 ## Sources
 

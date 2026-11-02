@@ -15,7 +15,7 @@ genuine Bayes posterior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
 
 ## Sources
 

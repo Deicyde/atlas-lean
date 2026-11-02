@@ -15,7 +15,12 @@ started from `n` singletons: `k · C(n-i-1, k-2) / C(n-1, k-1)` (Fu 1995; Griffi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition operator of random joining](join-step.md)
+
+## Proof depends on
+
+- [Unordered pairs of blocks](block-pairs.md)
+- [Merging two blocks of a block-size list](merge-blocks.md)
 
 ## Sources
 

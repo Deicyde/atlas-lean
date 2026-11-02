@@ -15,6 +15,10 @@ pre-Brownian motion (Kolmogorov extension of the Brownian finite-dimensional law
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kolmogorov extension theorem](../../foundations/kolmogorov-extension.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.OrnsteinUhlenbeck](../../../../sources/v2/MathlibExt.md)

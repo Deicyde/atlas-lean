@@ -13,6 +13,10 @@ lean: ProbabilityTheory.ouStationaryOfBrownian
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Doob's clock for the stationary Ornstein–Uhlenbeck process](ou-stationary-clock.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.OrnsteinUhlenbeck](../../../../sources/v2/MathlibExt.md)

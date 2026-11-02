@@ -20,7 +20,23 @@ distances returns exactly the splits of the internal edges of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neighbor joining recovers a tree within a radius](njrecovers-within.md)
+- [Jukes–Cantor corrected empirical distance](jc-hat.md)
+- [Jukes–Cantor transition matrix along a path](jc-path.md)
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+
+## Proof depends on
+
+- [Strong law for the p-distances](ae-tendsto-p-hat.md)
+- [Chapman–Kolmogorov along a path](jc-path-eq.md)
+- [Empirical p-distance](p-hat.md)
+- [Jukes–Cantor distance](../jukes-cantor-model/jc-distance.md)
+- [The Jukes–Cantor distance correction](../jukes-cantor-model/jc-distance-p-diff.md)
+- [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
+- [Probability that the ends of a branch differ](../jukes-cantor-model/p-diff.md)
+- [Closed form of the Jukes–Cantor difference probability](../jukes-cantor-model/p-diff-eq.md)
+- [Jukes–Cantor difference probability is below 3/4](../jukes-cantor-model/p-diff-lt-three-quarters.md)
 
 ## Sources
 

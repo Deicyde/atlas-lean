@@ -15,7 +15,11 @@ which singletons are measurable, e.g. `⊤`) and sets `A`, `B` with `A ∪ B` no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min-hash of a set under a permutation](min-hash.md)
+
+## Proof depends on
+
+- [MinHash, counting form](card-min-hash-collision.md)
 
 ## Sources
 

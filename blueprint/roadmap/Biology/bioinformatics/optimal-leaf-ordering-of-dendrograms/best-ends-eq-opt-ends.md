@@ -14,7 +14,17 @@ a leaf order of `t` starting at `i` and ending at `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+- [Bar-Joseph–Gifford–Jaakkola dynamic program for leaf ordering](best-ends.md)
+- [Optimal leaf-ordering score with fixed end leaves](opt-ends.md)
+
+## Proof depends on
+
+- [Leaves of a dendrogram](leaves.md)
+- [Leaf orderings of a dendrogram](orderings.md)
+- [Adjacent-similarity score of a leaf order](adj-score.md)
+- [Joining two subtree orders at an adjacent leaf pair](join-ends.md)
+- [Leaf orders are permutations of the leaves](perm-of-mem-orderings.md)
 
 ## Sources
 

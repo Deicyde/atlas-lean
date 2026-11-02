@@ -14,6 +14,10 @@ when the permutations `σ j` of the markers are independent and uniform.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Permuted GISTIC score at a marker](permuted-score.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.GisticNull](../../../../sources/v2/MathlibExt.md)

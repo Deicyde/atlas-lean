@@ -12,7 +12,11 @@ lean: Cslib.OutputReachability.iterate_stable
 
 ## Depends on
 
-This node has no prerequisites.
+- [One iteration step with absorbing halted states](next.md)
+
+## Proof depends on
+
+- [Iterates of a halted state are constant](iterate-of-some.md)
 
 ## Sources
 

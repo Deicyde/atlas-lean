@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.jointLaw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+
+## Proof depends on
+
+- [Joint probability of a non-null case in a set](joint-law-alt-prod.md)
+- [Joint probability of a null case in a set](joint-law-null-prod.md)
 
 ## Sources
 

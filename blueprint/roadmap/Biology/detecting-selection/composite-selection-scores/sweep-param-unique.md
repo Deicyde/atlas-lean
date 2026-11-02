@@ -15,7 +15,12 @@ composite likelihood of SweepFinder maximises over.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of escaping a selective sweep](escape-prob.md)
+
+## Proof depends on
+
+- [Escape profile determines sweep location and strength](escape-prob-inj.md)
+- [Uniqueness of the mixing weight of a two-component mixture](mixture-weight-unique.md)
 
 ## Sources
 

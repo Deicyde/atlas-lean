@@ -12,7 +12,7 @@ lean: ParityProduct.two_mul_evenIndicator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even indicator of a natural number](even-indicator.md)
 
 ## Sources
 

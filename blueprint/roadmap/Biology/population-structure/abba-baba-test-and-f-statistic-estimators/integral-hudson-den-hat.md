@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.integral_hudsonDenHat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hudson's F_ST denominator at one site](hudson-den.md)
+- [Estimator of Hudson's F_ST denominator](hudson-den-hat.md)
+
+## Proof depends on
+
+- [Sample allele frequency is unbiased](integral-div-of-has-law-binomial.md)
 
 ## Sources
 

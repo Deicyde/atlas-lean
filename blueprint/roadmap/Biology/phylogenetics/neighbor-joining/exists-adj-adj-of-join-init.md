@@ -15,7 +15,13 @@ two taxa with a common neighbor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Initial cluster dissimilarity in neighbor joining](initial-dist.md)
+- [Neighbor-joining Q-criterion](q-criterion.md)
+
+## Proof depends on
+
+- [On a tree metric, a pair of taxa minimizing the Q-criterion is a cherry](exists-adj-adj-of-q-criterion-min.md)
 
 ## Sources
 

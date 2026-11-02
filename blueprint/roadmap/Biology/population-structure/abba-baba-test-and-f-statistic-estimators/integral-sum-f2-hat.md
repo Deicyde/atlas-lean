@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.integral_sum_f2Hat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased f2 estimator](f2-hat.md)
+
+## Proof depends on
+
+- [Unbiased heterozygosity estimator](het-hat.md)
+- [Unbiased `f2`](integral-f2-hat.md)
 
 ## Sources
 

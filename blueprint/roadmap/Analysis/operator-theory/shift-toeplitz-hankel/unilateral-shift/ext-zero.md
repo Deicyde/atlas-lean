@@ -13,6 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.extZero
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extension of a finite tuple by zeroes](ext-zero-fun.md)
+- [Zero-extended finite tuples are square-summable](mem-p-ext-zero-fun.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex](../../../../../sources/v2/MathlibExt.md)

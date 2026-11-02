@@ -12,7 +12,8 @@ lean: Cslib.Language.LinearBoundedAutomaton.initCfg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration of a linear bounded automaton](lbaconfig.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
 
 ## Sources
 

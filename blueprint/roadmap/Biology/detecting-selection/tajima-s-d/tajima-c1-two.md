@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.tajimaC1_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tajima's constant $c_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c1.md)
+
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
 
 ## Sources
 

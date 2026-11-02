@@ -13,7 +13,17 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.pairProb_eq_outside
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complementary base pairing of two positions](can-pair.md)
+- [Inside recursion](inside.md)
+- [Outside recursion](outside.md)
+- [Base-pair probability](pair-prob.md)
+
+## Proof depends on
+
+- [Inside value sums the weights of all secondary structures](inside-eq-sum-structures.md)
+- [Outside algorithm](outside-mul-eq-sum.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
 
 ## Sources
 

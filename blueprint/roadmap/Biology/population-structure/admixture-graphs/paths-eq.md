@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.paths_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Root-ward paths from a node of an admixture graph](paths.md)
 
 ## Sources
 

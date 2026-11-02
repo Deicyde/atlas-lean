@@ -14,7 +14,14 @@ homogeneous in `q`, so only `q ≥ 0` is assumed; when `P(T ∈ Γ) = 0` both si
 
 ## Depends on
 
-This node has no prerequisites.
+- [Storey's positive false discovery rate](positive-fdr.md)
+
+## Proof depends on
+
+- [False discovery proportion](../valid-p-values-and-false-discovery-proportion/false-discovery-proportion.md)
+- [True-null set of a test outcome vector](null-set.md)
+- [Probability of a test outcome vector](outcome-weight.md)
+- [Rejection set of a test outcome vector](rejected-set.md)
 
 ## Sources
 

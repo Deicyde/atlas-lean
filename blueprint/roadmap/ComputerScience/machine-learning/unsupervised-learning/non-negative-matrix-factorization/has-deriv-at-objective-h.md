@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.NMF.hasDerivAt_objective_H
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient of the NMF objective with respect to H](grad-h.md)
+- [Objective of nonnegative matrix factorization](objective.md)
 
 ## Sources
 

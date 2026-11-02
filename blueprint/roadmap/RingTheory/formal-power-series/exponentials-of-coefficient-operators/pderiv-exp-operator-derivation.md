@@ -13,7 +13,11 @@ derivations, using their canonical rational linear maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Partial derivative of a coefficient-operator exponential](pderiv-exp-operator.md)
 
 ## Sources
 

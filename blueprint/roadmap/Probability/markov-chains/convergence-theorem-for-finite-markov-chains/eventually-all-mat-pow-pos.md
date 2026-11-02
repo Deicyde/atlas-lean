@@ -13,7 +13,15 @@ all-positive: there is a threshold `w` past which every power is all-positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Ergodic finite Markov chain](is-ergodic.md)
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+
+## Proof depends on
+
+- [Recursive matrix power agrees with the matrix power](mat-pow-eq-pow.md)
+- [Later powers of a positive stochastic matrix power stay positive](mat-pow-pos-of-le-of-pos-pow.md)
+- [Underlying matrix of a stochastic matrix](to-matrix.md)
 
 ## Sources
 

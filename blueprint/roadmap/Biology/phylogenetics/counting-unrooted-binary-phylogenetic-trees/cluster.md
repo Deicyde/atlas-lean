@@ -12,7 +12,7 @@ lies beyond `v`, i.e. `v` is on the path from the leaf `a` to the leaf `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
 
 ## Sources
 

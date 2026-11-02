@@ -15,6 +15,10 @@ unchanged if and only if `W` already equals `μ[W | m]` almost everywhere.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squared-error decomposition](integral-sq-sub-eq-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Sufficiency.RaoBlackwell](../../../../sources/v2/MathlibExt.md)

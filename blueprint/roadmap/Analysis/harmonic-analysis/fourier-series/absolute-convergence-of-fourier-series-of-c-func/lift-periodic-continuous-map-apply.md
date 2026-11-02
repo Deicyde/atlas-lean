@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable.liftPeriodicContin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift of a periodic continuous function to the circle](lift-periodic-continuous-map.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ctmcTransition_nonneg_of_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition semigroup of a continuous-time Markov chain](ctmc-transition.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.SummaryImputation.Model.imputed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
 
 ## Sources
 

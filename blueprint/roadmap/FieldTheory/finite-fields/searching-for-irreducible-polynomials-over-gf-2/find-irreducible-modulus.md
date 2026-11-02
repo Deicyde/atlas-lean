@@ -14,6 +14,10 @@ exhaustive inverse test. Width zero is deliberately reported as failure.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exhaustive inverse test for a binary polynomial modulus](passes-inverse-test.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.Finite.BinaryModulusSearch](../../../../sources/v2/MathlibExt.md)

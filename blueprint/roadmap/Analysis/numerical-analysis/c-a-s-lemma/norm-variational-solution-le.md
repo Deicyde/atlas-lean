@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.norm_variationalSolution_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of a coercive variational problem](variational-solution.md)
+
+## Proof depends on
+
+- [Variational solution satisfies the variational equation](variational-solution-spec.md)
 
 ## Sources
 

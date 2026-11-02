@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTest.norm_toEuclideanLin_le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm estimate in Schur's test](schur-apply-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTest](../../../../../sources/v2/MathlibExt.md)

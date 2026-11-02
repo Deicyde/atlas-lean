@@ -12,7 +12,7 @@ lean: Cslib.Language.parikhVector_append
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parikh vector of a word](parikh-vector.md)
 
 ## Sources
 

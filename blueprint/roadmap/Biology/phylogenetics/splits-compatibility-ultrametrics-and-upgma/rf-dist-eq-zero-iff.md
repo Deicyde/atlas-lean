@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.rfDist_eq_zero_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Robinson–Foulds distance](rf-dist.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](../counting-unrooted-binary-phylogenetic-trees/iso.md)
+
+## Proof depends on
+
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
+- [Isomorphic trees have the same clusters](../counting-unrooted-binary-phylogenetic-trees/cluster-set-eq-of-iso.md)
+- [Clusters determine an unrooted binary tree](../counting-unrooted-binary-phylogenetic-trees/iso-of-cluster-set-eq.md)
 
 ## Sources
 

@@ -14,6 +14,12 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.summable_schurInf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Row bound of a Schur matrix is nonnegative](schur-inf-nonneg-of-row.md)
+- [Weighted partial sums grouped by the first index](sum-finset-schur-inf-weighted-fst-le.md)
+- [Weighted partial sums grouped by the second index](sum-finset-schur-inf-weighted-snd-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite](../../../../../sources/v2/MathlibExt.md)

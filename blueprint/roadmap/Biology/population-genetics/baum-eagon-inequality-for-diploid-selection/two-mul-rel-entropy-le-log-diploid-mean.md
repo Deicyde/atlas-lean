@@ -21,7 +21,14 @@ which is not proved here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](../natural-selection-fisher-s-theorem-and-the-price/diploid-mean-fitness.md)
+- [One generation of diploid viability selection](../natural-selection-fisher-s-theorem-and-the-price/diploid-select.md)
+
+## Proof depends on
+
+- [Mean fitness stays positive under diploid selection](diploid-mean-fitness-diploid-select-pos.md)
+- [Marginal fitness of an allele](../natural-selection-fisher-s-theorem-and-the-price/marginal-fitness.md)
+- [Diploid selection preserves total allele frequency one](../natural-selection-fisher-s-theorem-and-the-price/sum-diploid-select.md)
 
 ## Sources
 

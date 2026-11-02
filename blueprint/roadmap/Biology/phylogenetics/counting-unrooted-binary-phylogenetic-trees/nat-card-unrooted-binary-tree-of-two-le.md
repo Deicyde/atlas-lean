@@ -14,7 +14,14 @@ value `(-1)‼ = 1`). For `n ≤ 1` there is no tree while the formula gives `1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](iso.md)
+
+## Proof depends on
+
+- [Binary hierarchy on a finite set](is-binary-hierarchy.md)
+- [The number of binary hierarchies](nat-card-binary-hierarchy.md)
+- [Unrooted binary trees correspond to binary hierarchies](quot-equiv-hierarchy.md)
 
 ## Sources
 

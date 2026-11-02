@@ -15,7 +15,13 @@ multigraph of `s`, then the `k`-mers of the spelled string are a permutation of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [De Bruijn multigraph of a string](de-bruijn-edges.md)
+- [The k-mers of a string](kmers.md)
+- [String spelled by a walk of (k-1)-mers](spell.md)
+
+## Proof depends on
+
+- [De Bruijn edge of a k-mer](kmer-edge.md)
 
 ## Sources
 

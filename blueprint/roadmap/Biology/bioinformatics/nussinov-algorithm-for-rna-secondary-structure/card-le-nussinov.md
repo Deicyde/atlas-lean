@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.RNA.Nussinov.card_le_nussinov
 
 ## Depends on
 
-This node has no prerequisites.
+- [RNA secondary structure](is-structure.md)
+- [The Nussinov recursion](nussinov.md)
+
+## Proof depends on
+
+- [Maximum of a list of natural numbers](list-max.md)
 
 ## Sources
 

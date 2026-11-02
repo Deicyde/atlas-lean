@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.betaPDFReal_eq_wrightDensi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright's stationary density of the Wright–Fisher diffusion](../wright-fisher-diffusion/wright-density.md)
 
 ## Sources
 

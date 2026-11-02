@@ -12,7 +12,7 @@ lean: ProbabilityTheory.continuous_ouPathSolution
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pathwise solution of the Langevin equation](ou-path-solution.md)
 
 ## Sources
 

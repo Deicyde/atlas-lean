@@ -16,6 +16,10 @@ the Fredholm alternative for compact operators.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite-rank operators are compact](is-compact-operator-of-finite-dimensiona.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum](../../../../../sources/v2/MathlibExt.md)

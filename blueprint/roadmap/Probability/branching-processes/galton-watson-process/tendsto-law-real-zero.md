@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.GaltonWatson.tendsto_law_real_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extinction probability of a Galton–Watson process](extinction-prob.md)
+- [Generation-size law of a Galton–Watson process](law.md)
+
+## Proof depends on
+
+- [Extinction by generation n is nondecreasing in n](monotone-law-real-zero.md)
+- [Convolution power of a measure](../../infinite-divisibility-regular-variation/infinitely-divisible-distributions/conv-pow.md)
+- [Convolution powers of a probability measure are probability measures](../../infinite-divisibility-regular-variation/infinitely-divisible-distributions/is-probability-measure-conv-pow.md)
 
 ## Sources
 

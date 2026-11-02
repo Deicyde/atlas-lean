@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraFixation_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability as a function](../wright-fisher-diffusion/deriv-kimura-fixation.md)
+- [Kimura's fixation probability vanishes at frequency zero](../wright-fisher-diffusion/kimura-fixation-zero-right.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: ProbabilityTheory.measurable_ctmcPath
 
 ## Depends on
 
-This node has no prerequisites.
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+
+## Proof depends on
+
+- [Joint measurability of the chain path in time and steps](measurable-ctmc-path-uncurry.md)
 
 ## Sources
 

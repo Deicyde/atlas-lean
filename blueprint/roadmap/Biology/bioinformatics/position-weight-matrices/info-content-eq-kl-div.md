@@ -13,7 +13,11 @@ content of `P` against `Q` is `KL(P ‖ Q) / log 2`, Mathlib's `klDiv` in bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Information content of a position weight matrix column](info-content.md)
+
+## Proof depends on
+
+- [Kullback–Leibler divergence of finite probability laws](../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/to-real-kl-div-to-measure.md)
 
 ## Sources
 

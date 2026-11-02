@@ -13,7 +13,21 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tend
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Eigenvalues of Kingman's block-counting generator](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-eigenvalue.md)
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Left eigenvectors of Kingman's block-counting generator](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-left-eigen.md)
+- [Right eigenvectors of Kingman's block-counting generator](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-right-eigen.md)
+- [Spectral decomposition of the block-counting transition matrix](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/exp-smul-block-counting-generator.md)
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Contraction](norm-wf-semigroup-le.md)
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+- [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
+- [Dual semigroup at time zero is the identity](poly-semigroup-zero.md)
+- [Diffusion semigroup agrees with the dual semigroup on polynomials](wf-semigroup-to-continuous-map-on.md)
 
 ## Sources
 

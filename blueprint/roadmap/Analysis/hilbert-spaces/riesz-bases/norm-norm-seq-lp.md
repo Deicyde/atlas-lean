@@ -13,7 +13,7 @@ sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Norm sequence of an $\ell^2$ coefficient sequence](norm-seq-lp.md)
 
 ## Sources
 

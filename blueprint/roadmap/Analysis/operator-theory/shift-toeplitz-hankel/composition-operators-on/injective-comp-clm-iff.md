@@ -14,7 +14,12 @@ be read off from the image.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+
+## Proof depends on
+
+- [Pointwise action of the bounded composition operator](comp-clm-apply.md)
 
 ## Sources
 

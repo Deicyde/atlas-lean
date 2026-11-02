@@ -15,6 +15,10 @@ variant present in `g` copies per cancer cell at a locus of copy number `q` (Car
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.Absolute](../../../../sources/v2/MathlibExt.md)

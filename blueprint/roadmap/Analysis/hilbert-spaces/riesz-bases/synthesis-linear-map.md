@@ -13,6 +13,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.RieszBasisStability.synthesisLinearM
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summability of a synthesis series](summable-synthesis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RieszBasisStability](../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.thetaH
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Achaz's weighted estimator of $\theta$](theta-weighted.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

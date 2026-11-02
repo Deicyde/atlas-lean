@@ -14,6 +14,12 @@ for the restricted form and the restricted functional.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coercivity passes to restrictions to subspaces](is-coercive-restrict-bilin.md)
+- [Restriction of a bilinear form to a subspace](restrict-bilin.md)
+- [Solution of a coercive variational problem](variational-solution.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CeaLemma](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.meanFitness
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
 
 ## Sources
 

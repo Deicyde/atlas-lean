@@ -11,7 +11,11 @@ lean: TensorNetwork.Factored.interaction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
+
+## Proof depends on
+
+- [Label set of an unordered vertex pair](label-set.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ recurrence `r * l[j] + c * l[j - 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient list after multiplication by a linear polynomial](mul-linear-coeff-list.md)
 
 ## Sources
 

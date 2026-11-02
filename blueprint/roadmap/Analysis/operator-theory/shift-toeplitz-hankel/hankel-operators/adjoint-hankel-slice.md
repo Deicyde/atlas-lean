@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.adjoint_hankelSlice
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice operator](hankel-slice.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice is symmetric](hankel-slice-inner-symm.md)
 
 ## Sources
 

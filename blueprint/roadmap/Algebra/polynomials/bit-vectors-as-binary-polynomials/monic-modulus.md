@@ -14,6 +14,10 @@ coefficients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binary polynomial of a bitvector](to-polynomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.BitVec](../../../../sources/v2/MathlibExt.md)

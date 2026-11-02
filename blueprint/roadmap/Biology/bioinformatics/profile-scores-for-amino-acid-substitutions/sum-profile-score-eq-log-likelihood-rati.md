@@ -14,7 +14,7 @@ likelihood ratio `∏ p_j(s_j) / ∏ q(s_j)` of the profile model against the ba
 
 ## Depends on
 
-This node has no prerequisites.
+- [Profile log-odds score of a residue](profile-score.md)
 
 ## Sources
 

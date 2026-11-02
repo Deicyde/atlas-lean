@@ -13,7 +13,18 @@ of the null indicator given the z-value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Local false discovery rate](local-fdr.md)
+
+## Proof depends on
+
+- [Null probability as an integral of the local fdr](joint-law-null-prod-eq-lintegral-local-f.md)
+- [z-value has the mixture law](joint-law-univ-prod.md)
+- [Local false discovery rate is at most one](local-fdr-le-one.md)
+- [Local false discovery rate is nonnegative](local-fdr-nonneg.md)
+- [Local false discovery rate is measurable](measurable-local-fdr.md)
+- [Mixture density of the two-groups model](mixture-density.md)
 
 ## Sources
 

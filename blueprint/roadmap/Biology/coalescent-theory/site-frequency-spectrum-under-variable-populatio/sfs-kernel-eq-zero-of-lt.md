@@ -13,7 +13,7 @@ exist while more than `n - i + 1` lineages remain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
 
 ## Sources
 

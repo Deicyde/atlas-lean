@@ -15,6 +15,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.wfLi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wright–Fisher transition probability of the lineage count](wf-lineage-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.BlockCounting](../../../../sources/v2/MathlibExt.md)

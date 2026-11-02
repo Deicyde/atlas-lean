@@ -13,7 +13,7 @@ a family of pairwise nested-or-disjoint nonempty subsets of a nonempty `S` gives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hierarchy on a finite set](is-hierarchy.md)
 
 ## Sources
 

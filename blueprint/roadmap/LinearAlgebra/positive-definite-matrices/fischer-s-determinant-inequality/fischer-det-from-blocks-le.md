@@ -16,6 +16,10 @@ block matrix `[[A, B], [Bᴴ, D]]` with real entries,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monotonicity of the determinant on the positive semidefinite cone](det-le-det-of-pos-semidef-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.FischerDeterminant](../../../../sources/v2/MathlibExt.md)

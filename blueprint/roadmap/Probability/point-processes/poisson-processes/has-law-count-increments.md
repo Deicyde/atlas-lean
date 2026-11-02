@@ -15,7 +15,13 @@ Karlin–Taylor 1975, ch. 4).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting process of interarrival times](count.md)
+
+## Proof depends on
+
+- [Counting process has nondecreasing paths almost surely](ae-count-monotone.md)
+- [Arrival times from interarrival times](arrival-time.md)
+- [Arrival counts of exponential interarrivals are Poisson](has-law-count.md)
 
 ## Sources
 

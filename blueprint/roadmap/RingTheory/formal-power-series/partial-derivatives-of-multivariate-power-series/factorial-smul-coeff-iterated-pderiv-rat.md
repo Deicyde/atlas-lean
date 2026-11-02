@@ -13,7 +13,11 @@ factorial product and its scalar action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated partial derivative of a multivariate power series](iterated-pderiv.md)
+
+## Proof depends on
+
+- [Factorial-weighted coefficient of an iterated partial derivative](factorial-smul-coeff-iterated-pderiv.md)
 
 ## Sources
 

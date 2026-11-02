@@ -13,7 +13,11 @@ kernels. No factorization, finiteness of the state carriers, or global injectivi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Membership in the ordered pairs](../integer-valued-factored-tensor-networks/mem-ordered-pairs.md)
 
 ## Sources
 

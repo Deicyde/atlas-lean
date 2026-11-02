@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.CompositeModel.cms_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
+- [Composite of multiple signals (CMS) score](cms.md)
+
+## Proof depends on
+
+- [Bayes factor of a component statistic](bayes-factor.md)
 
 ## Sources
 

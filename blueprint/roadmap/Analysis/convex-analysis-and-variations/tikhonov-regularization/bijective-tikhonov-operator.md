@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.bijective_ti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Tikhonov normal operator has trivial kernel](ker-tikhonov-operator-eq-bot.md)
+- [Tikhonov normal operator is surjective](range-tikhonov-operator-eq-top.md)
 
 ## Sources
 

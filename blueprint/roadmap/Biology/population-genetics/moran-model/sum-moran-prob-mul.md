@@ -14,7 +14,14 @@ vanish at `i = 0` and `i = N`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-step probability of the Moran process](moran-down.md)
+- [One-step transition probabilities of the Moran process](moran-prob.md)
+- [Up-step probability of the Moran process](moran-up.md)
+
+## Proof depends on
+
+- [No down-step from the empty state of the Moran process](moran-down-zero.md)
+- [No up-step from the fixed state of the Moran process](moran-up-last.md)
 
 ## Sources
 

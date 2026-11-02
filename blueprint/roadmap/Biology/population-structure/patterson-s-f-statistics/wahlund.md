@@ -13,7 +13,9 @@ twice the weighted variance of subpopulation frequencies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean within-subpopulation heterozygosity](het-sub.md)
+- [Total heterozygosity of the pooled population](het-total.md)
+- [Mean allele frequency of a subdivided population](mean-freq.md)
 
 ## Sources
 

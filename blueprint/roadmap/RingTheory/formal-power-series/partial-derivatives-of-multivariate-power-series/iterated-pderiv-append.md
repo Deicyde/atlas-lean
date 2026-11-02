@@ -12,7 +12,7 @@ lean: MvPowerSeries.iteratedPDeriv_append
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated partial derivative of a multivariate power series](iterated-pderiv.md)
 
 ## Sources
 

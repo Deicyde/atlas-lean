@@ -13,7 +13,16 @@ structure).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+- [Zuker minimum free energy](zuker-mfe.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Membership in the set of secondary structures](../mccaskill-partition-function-for-rna-folding/mem-structures.md)
+- [Set of all secondary structures of a sequence](../mccaskill-partition-function-for-rna-folding/structures.md)
+- [Free energy of a structure in the loop model](free-energy.md)
+- [Zuker's algorithm](zuker-mfe-eq-inf.md)
 
 ## Sources
 

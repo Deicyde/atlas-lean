@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.singleGain_ti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected number of mutations of a given multiplicity](expected-count.md)
+- [Single-copy gain](single-gain.md)
+
+## Proof depends on
+
+- [Copy-number gain history](gain-history.md)
+- [Copy number after a copy-number event](final-copies.md)
 
 ## Sources
 

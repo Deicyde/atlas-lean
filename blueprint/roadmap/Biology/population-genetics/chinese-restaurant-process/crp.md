@@ -15,6 +15,10 @@ partition of the customers `Fin n` into tables, built one customer at a time by 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One step of the Chinese restaurant process](crp-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ChineseRestaurant](../../../../sources/v2/MathlibExt.md)

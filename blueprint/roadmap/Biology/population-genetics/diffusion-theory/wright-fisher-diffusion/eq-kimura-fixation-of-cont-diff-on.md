@@ -14,7 +14,12 @@ fixation probability on `[0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
+- [Kimura's fixation probability](kimura-fixation.md)
+
+## Proof depends on
+
+- [Uniqueness of the fixation probability (Kimura 1962)](eq-kimura-fixation-of-generator-eq-zero.md)
 
 ## Sources
 

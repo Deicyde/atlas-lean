@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.IsSolution.substrate_conservat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Michaelis–Menten mass-action system](is-solution.md)
+
+## Proof depends on
+
+- [Mass-action rate of the enzyme–substrate complex](complex-rate.md)
+- [Mass-action rate of the substrate](substrate-rate.md)
 
 ## Sources
 

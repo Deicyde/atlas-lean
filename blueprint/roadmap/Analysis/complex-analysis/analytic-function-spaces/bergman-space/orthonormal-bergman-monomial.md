@@ -13,7 +13,11 @@ predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rescaled Bergman monomial](bergman-monomial.md)
+
+## Proof depends on
+
+- [Inner products of rescaled Bergman monomials are Kronecker deltas](bergman-monomial-orthonormal.md)
 
 ## Sources
 

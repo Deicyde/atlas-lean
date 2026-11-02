@@ -14,7 +14,12 @@ choices with that score, whatever the marker `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GISTIC permutation null distribution](permutation-null.md)
+- [Count of marker choices with a given score](score-count.md)
+
+## Proof depends on
+
+- [Permuted GISTIC score at a marker](permuted-score.md)
 
 ## Sources
 

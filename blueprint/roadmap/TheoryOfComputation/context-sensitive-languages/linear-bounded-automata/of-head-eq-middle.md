@@ -12,7 +12,8 @@ lean: Cslib.Language.LBABoundary.ofHead_eq_middle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Boundary tag of a head position](of-head.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.StickBreakingProcess.isProbabilityMeasure_H
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
 
 ## Sources
 

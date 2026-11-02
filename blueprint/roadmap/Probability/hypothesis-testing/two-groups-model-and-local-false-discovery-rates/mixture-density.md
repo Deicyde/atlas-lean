@@ -11,7 +11,7 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.mixtureD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
 
 ## Sources
 

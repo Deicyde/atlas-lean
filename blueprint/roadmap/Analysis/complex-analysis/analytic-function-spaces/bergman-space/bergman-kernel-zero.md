@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.bergmanKernel_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bergman kernel](bergman-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.pairNoRecomb_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of no recombination on a pair's genealogy](pair-no-recomb.md)
 
 ## Sources
 

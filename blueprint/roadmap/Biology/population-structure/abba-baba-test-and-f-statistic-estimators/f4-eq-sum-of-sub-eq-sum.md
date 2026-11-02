@@ -13,7 +13,7 @@ pointwise, then `f4 A B Y Z = ∑ l, c l * f4 (C l) (D l) Y Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
 
 ## Sources
 

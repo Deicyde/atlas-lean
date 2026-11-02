@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.profile
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decay length of a morphogen gradient](decay-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.MorphogenGradient](../../../../sources/v2/MathlibExt.md)

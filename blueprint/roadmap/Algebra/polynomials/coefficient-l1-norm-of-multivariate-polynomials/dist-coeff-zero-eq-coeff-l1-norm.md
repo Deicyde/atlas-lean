@@ -13,7 +13,7 @@ metric on the exact rational coefficient Finsupp carrier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient L1 norm of a multivariate polynomial](coeff-l1-norm.md)
 
 ## Sources
 

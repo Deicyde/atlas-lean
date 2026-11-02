@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Linkage.linkageDiseq_iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linkage disequilibrium of a two-locus gamete law](linkage-diseq.md)
+- [Random mating with recombination](recombine.md)
+
+## Proof depends on
+
+- [Linkage disequilibrium decays by the factor $1 - r$](linkage-diseq-recombine.md)
+- [Recombination preserves total gamete frequency](sum-recombine.md)
 
 ## Sources
 

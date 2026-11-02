@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.isInfSup_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+
+## Proof depends on
+
+- [Dual norm as a supremum over the unit ball](norm-apply-eq-i-sup.md)
 
 ## Sources
 

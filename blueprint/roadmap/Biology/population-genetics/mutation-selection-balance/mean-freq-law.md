@@ -14,7 +14,14 @@ real `s, U`; `law` is a probability law when `0 ≤ U ≤ s ≤ 1` and `μ₀` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of the loss-of-function count under any demography](law.md)
+- [Linear mutation–selection recursion](lin-step.md)
+- [Mean loss-of-function frequency of a distribution](mean-freq.md)
+
+## Proof depends on
+
+- [Demography-free mean, one step](mean-freq-push-step.md)
+- [Pushing a distribution forward preserves total mass](sum-push-step.md)
 
 ## Sources
 

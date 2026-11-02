@@ -14,7 +14,12 @@ infinite), `∫ f_L ≤ ∫ f_M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Value of a process at a possibly infinite time](stopped-value-at-top.md)
+
+## Proof depends on
+
+- [Stopped value as conditional expectation of the limit](stopped-value-at-top-ae-eq-cond-exp-limi.md)
+- [Conditional optional stopping for uniformly integrable submartingales](stopped-value-at-top-le-cond-exp-stopped.md)
 
 ## Sources
 

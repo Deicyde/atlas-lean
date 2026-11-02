@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.SelectionGradient.hasDerivAt_meanFi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a normally distributed trait](mean-fitness.md)
 
 ## Sources
 

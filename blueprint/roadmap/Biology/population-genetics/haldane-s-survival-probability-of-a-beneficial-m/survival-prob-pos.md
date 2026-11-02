@@ -12,7 +12,16 @@ lean: MathlibExt.Biology.PopulationGenetics.Haldane.survivalProb_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's survival probability of a mutant](survival-prob.md)
+
+## Proof depends on
+
+- [Mean of the Poisson distribution](mean-poisson-measure.md)
+- [Extinction probability of a Galton–Watson process](../../../Probability/branching-processes/galton-watson-process/extinction-prob.md)
+- [Galton–Watson extinction criterion](../../../Probability/branching-processes/galton-watson-process/extinction-prob-eq-one-iff.md)
+- [Extinction probability is the least fixed point](../../../Probability/branching-processes/galton-watson-process/is-least-extinction-prob.md)
+- [Mean offspring number](../../../Probability/branching-processes/galton-watson-process/mean.md)
+- [Probability generating function](../../../Probability/characteristic-functions/probability-generating-functions/pgf.md)
 
 ## Sources
 

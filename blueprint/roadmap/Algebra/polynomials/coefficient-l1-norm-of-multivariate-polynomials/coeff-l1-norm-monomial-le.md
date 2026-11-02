@@ -12,7 +12,11 @@ lean: MvPolynomial.coeffL1Norm_monomial_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient L1 norm of a multivariate polynomial](coeff-l1-norm.md)
+
+## Proof depends on
+
+- [Coefficient L1 norm of a monomial](coeff-l1-norm-monomial.md)
 
 ## Sources
 

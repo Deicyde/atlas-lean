@@ -12,7 +12,11 @@ lean: MathlibExt.LinearAlgebra.Matrix.PartialTrace.posSemidef_partialTraceRight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial trace over the second factor](partial-trace-right.md)
+
+## Proof depends on
+
+- [Right partial trace of a rank-one matrix](partial-trace-right-vec-mul-vec-star.md)
 
 ## Sources
 

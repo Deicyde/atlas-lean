@@ -15,6 +15,13 @@ of the eigenvalues from the Rayleigh quotient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rayleigh quotient as a weighted average of eigenvalues](rayleigh-eq-weighted-sum.md)
+- [Second moment as a weighted average of squared eigenvalues](second-moment-eq-weighted-sum.md)
+- [Eigenbasis weights sum to the squared norm](sum-weights-eq-norm-sq.md)
+- [Weighted variance as weighted squared deviation from the mean](weighted-variance-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.KantorovichInequality](../../../../sources/v2/MathlibExt.md)

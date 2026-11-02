@@ -13,7 +13,12 @@ the steady-state modified fraction is `K₂ / (K₁ + K₂)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Goldbeter–Koshland function](goldbeter-koshland.md)
+
+## Proof depends on
+
+- [Uniqueness of the steady state](eq-goldbeter-koshland.md)
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
 
 ## Sources
 

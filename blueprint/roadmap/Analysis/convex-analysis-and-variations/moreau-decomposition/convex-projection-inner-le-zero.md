@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Convex.MoreauDecomposition.convexProjection_inner_le_z
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-point projection onto a convex set](../../hilbert-spaces/hilbert-projection-theorem/convex-projection.md)
+
+## Proof depends on
+
+- [Variational characterization of projection onto a convex cone](convex-projection-eq-iff.md)
+- [The convex projection lies in the set](../../hilbert-spaces/hilbert-projection-theorem/convex-projection-mem.md)
 
 ## Sources
 

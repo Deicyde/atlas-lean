@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.WoldDecomposition.mapsTo_residual
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residual subspace of an isometry](residual-sub.md)
 
 ## Sources
 

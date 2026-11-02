@@ -12,7 +12,7 @@ lean: List.takeThroughAcc_prefix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accumulator-stopped inclusive prefix of a list](take-through-acc.md)
 
 ## Sources
 

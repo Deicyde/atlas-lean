@@ -13,7 +13,7 @@ support has a positive vector `d` with `diag(d) A diag(d)` doubly stochastic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total support of a square matrix](../../../Biology/systems-biology/stochastic-mass-action-metabolic-control-and-flu/has-total-support.md)
 
 ## Sources
 

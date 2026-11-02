@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.bergmanEval_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+
+## Proof depends on
+
+- [Bergman kernel](bergman-kernel.md)
+- [Bergman kernel at the origin](bergman-kernel-zero.md)
 
 ## Sources
 

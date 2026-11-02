@@ -12,7 +12,7 @@ lean: AddMonoidAlgebra.coeff_weightedDerivation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted derivation of an additive monoid algebra](weighted-derivation.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ column sample variances.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample mean of a data matrix column](col-mean.md)
+- [Unbiased sample covariance matrix](sample-cov.md)
+
+## Proof depends on
+
+- [Entries of the sample covariance matrix](sample-cov-apply.md)
 
 ## Sources
 

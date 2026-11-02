@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.nbPmf_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial offspring probabilities](nb-pmf.md)
 
 ## Sources
 

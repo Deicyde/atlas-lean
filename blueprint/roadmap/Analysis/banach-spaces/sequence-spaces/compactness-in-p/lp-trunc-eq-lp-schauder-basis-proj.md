@@ -13,7 +13,12 @@ Schauder-basis projection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+- [The unit vectors form a Schauder basis of ℓᵖ](../schauder-basis-of-p/lp-schauder-basis.md)
+
+## Proof depends on
+
+- [The ℓᵖ partial-sum projections are truncations](../schauder-basis-of-p/lp-schauder-basis-proj-apply.md)
 
 ## Sources
 

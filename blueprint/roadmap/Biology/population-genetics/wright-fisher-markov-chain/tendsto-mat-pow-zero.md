@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.PopulationGenetics.WrightFisherChain.tendsto_matPow_zer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher transition matrix](wright-fisher.md)
+- [Matrix powers of a stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+
+## Proof depends on
+
+- [Interior Wright–Fisher states vanish in the limit](tendsto-mat-pow-interior.md)
+- [Fixation probability in the Wright–Fisher chain](tendsto-mat-pow-last.md)
+- [Powers of a stochastic matrix are stochastic](../../../Probability/markov-chains/convergence-theorem-for-finite-markov-chains/mat-pow-row-sum.md)
 
 ## Sources
 

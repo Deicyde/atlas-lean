@@ -13,6 +13,12 @@ lean: HahnSeries.coefficientDerivation
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coefficient formula for the coefficientwise linear operator](coeff-coefficient-linear-map.md)
+- [Coefficientwise linear operator on Hahn series](coefficient-linear-map.md)
+- [Coefficientwise linear operator does not enlarge the support](support-coefficient-linear-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.HahnSeries.CoefficientDerivation](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.tendsto_lpTrunc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+
+## Proof depends on
+
+- [Truncation equals the Schauder basis projection](lp-trunc-eq-lp-schauder-basis-proj.md)
+- [The unit vectors form a Schauder basis of ℓᵖ](../schauder-basis-of-p/lp-schauder-basis.md)
 
 ## Sources
 

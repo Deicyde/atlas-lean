@@ -11,7 +11,8 @@ lean: StatMech.CellEulerChar.cellEdges
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+- [Lattice point as a vertex of the cell complex](vtx.md)
 
 ## Sources
 

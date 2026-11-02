@@ -12,7 +12,15 @@ lean: MvPowerSeries.expOperator_expOfConstantCoeffZero
 
 ## Depends on
 
-This node has no prerequisites.
+- [The operator exponential preserves the constant coefficient](constant-coeff-exp-operator.md)
+- [Exponential of a power series with zero constant coefficient](../exponential-of-multivariate-formal-power-series/exp-of-constant-coeff-zero.md)
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Operator exponential coefficients depend only on lower-degree inputs](coeff-exp-operator-congr.md)
+- [Exponential of coefficient derivations as a ring endomorphism](exp-operator-hom.md)
+- [Filtration-preserving endomorphisms commute with the formal exponential](../exponential-of-multivariate-formal-power-series/hom-exp-of-constant-coeff-zero.md)
 
 ## Sources
 

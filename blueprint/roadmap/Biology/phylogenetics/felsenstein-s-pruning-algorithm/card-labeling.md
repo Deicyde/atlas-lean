@@ -13,7 +13,9 @@ brute-force sum `bruteLik` has exponentially many terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](labeling.md)
+- [Rooted binary tree with transition weights](tree.md)
+- [Number of internal nodes of a tree](num-internal.md)
 
 ## Sources
 

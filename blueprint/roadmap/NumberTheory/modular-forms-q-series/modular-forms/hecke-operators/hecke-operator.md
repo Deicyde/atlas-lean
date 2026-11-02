@@ -13,6 +13,10 @@ lean: AbstractHeckeOperator.HeckeOperator
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hecke operator as a function on fixed points](hecke-operator-to-fun.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.HeckeOperator](../../../../../sources/v2/MathlibExt.md)

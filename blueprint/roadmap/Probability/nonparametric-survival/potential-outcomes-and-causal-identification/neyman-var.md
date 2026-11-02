@@ -13,6 +13,10 @@ lean: MathlibExt.Probability.Causality.neymanVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample variance over a set of units](sample-var.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Causality.CausalIdentification](../../../../sources/v2/MathlibExt.md)

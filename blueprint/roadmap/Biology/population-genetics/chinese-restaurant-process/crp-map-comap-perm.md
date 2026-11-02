@@ -13,7 +13,13 @@ partition relabeled by any permutation of the customers is the law of the partit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Chinese restaurant process](crp.md)
+
+## Proof depends on
+
+- [Pulling back along an equivalence and its inverse](../../../Combinatorics/set-partitions/finite-set-partitions/comap-symm-comap.md)
+- [Exchangeability](crp-comap-perm.md)
 
 ## Sources
 

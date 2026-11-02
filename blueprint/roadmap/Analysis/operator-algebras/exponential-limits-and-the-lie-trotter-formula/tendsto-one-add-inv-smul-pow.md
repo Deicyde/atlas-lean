@@ -15,6 +15,10 @@ lean: NormedSpace.tendsto_one_add_inv_smul_pow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Telescoping estimate for differences of powers in a normed ring](norm-pow-sub-pow-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Algebra.ExponentialLimit](../../../../sources/v2/MathlibExt.md)

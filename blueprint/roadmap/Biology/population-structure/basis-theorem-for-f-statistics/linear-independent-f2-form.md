@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.linearIndependent_f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f2 form](f2-form.md)
 
 ## Sources
 

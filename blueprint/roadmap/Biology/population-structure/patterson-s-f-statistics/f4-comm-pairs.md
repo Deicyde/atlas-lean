@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f4_comm_pairs
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](f4.md)
 
 ## Sources
 

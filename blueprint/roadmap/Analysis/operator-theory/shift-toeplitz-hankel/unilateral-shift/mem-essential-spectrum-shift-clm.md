@@ -13,7 +13,12 @@ iff `‖μ‖ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Essential spectrum of a bounded operator](essential-spectrum.md)
+
+## Proof depends on
+
+- [Essential spectrum of the unilateral shift is the unit circle](essential-spectrum-shift-clm.md)
 
 ## Sources
 

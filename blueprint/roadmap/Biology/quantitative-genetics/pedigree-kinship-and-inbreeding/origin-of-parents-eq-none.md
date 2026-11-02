@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.origin_of_parents_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Gene-dropping outcome](coins.md)
+- [Founder origin of a gene copy](origin.md)
 
 ## Sources
 

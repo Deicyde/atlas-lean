@@ -15,6 +15,11 @@ of the position with the velocity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chain rule for the Fréchet derivative of a norm](norm-2.md)
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NormDerivative](../../../../sources/v2/MathlibExt.md)

@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScore.Model.pheno
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](model.md)
 
 ## Sources
 

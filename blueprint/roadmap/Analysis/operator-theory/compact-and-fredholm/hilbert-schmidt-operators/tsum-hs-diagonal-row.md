@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.tsum_hsDiagonal_row
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal infinite matrix](hs-diagonal.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1Conv_delta_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence](l1-conv.md)
+- [Unit sequence in $\ell^1(\mathbb{Z})$](l1-delta.md)
+
+## Proof depends on
+
+- [Convolution of sequences on the integers](int-conv.md)
+- [Pointwise formula for $\ell^1$–$\ell^p$ convolution](l1-conv-apply.md)
+- [Pointwise values of the unit sequence](l1-delta-apply.md)
 
 ## Sources
 

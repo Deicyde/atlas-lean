@@ -14,6 +14,11 @@ lean: PowerSeries.ringKrullDim_powerSeries
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [$X$ is a regular element of the power series ring](is-smul-regular-x.md)
+- [Power series modulo $X$ recover the coefficient ring](quot-span-xequiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.RegularLocalRing](../../../../../sources/v2/MathlibExt.md)

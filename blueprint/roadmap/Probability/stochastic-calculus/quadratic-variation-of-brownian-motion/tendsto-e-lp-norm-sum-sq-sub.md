@@ -18,6 +18,13 @@ martingales in probability).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Increments are independent of the past](indep-natural.md)
+- [Processes with measurable coordinates are adapted to their natural filtration](adapted-natural-of-measurable.md)
+- [Weighted quadratic variation of Brownian motion](tendsto-e-lp-norm-weighted-qverror.md)
+- [Weighted quadratic-variation error of Brownian motion](weighted-qverror.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BrownianQuadraticVariation](../../../../sources/v2/MathlibExt.md)

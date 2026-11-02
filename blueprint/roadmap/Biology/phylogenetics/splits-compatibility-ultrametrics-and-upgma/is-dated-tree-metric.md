@@ -18,6 +18,10 @@ equidistant from the root (Semple & Steel 2003, Section 7.2).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hierarchy on a finite set](is-hierarchy.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.Splits](../../../../sources/v2/CSLibExt.md)

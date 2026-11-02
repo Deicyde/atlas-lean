@@ -14,7 +14,11 @@ i.e. of recombination between the ends of the interval, is `(1 - e^{-2d}) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](haldane.md)
+
+## Proof depends on
+
+- [Series for the probability of an odd Poisson count](has-sum-poisson-odd.md)
 
 ## Sources
 

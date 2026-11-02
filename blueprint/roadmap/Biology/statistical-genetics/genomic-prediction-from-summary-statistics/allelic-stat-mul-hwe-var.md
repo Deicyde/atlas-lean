@@ -14,7 +14,16 @@ allele frequency strictly between `0` and `1` and a positive score variance,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pooled allele frequency](allele-freq.md)
+- [Allelic test statistic](allelic-stat.md)
+- [Pooled genotype-score variance](score-var.md)
+- [Cochran–Armitage trend statistic](trend-stat.md)
+
+## Proof depends on
+
+- [Numerator of the Cochran–Armitage trend statistic](numer.md)
+- [Pearson's chi-squared statistic of a 2 × 2 table](pearson2x2.md)
+- [Number of individuals in a case-control genotype table](total.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MathlibExt.Analysis.Normed.Lp.RellichKondrachov.isCompact_rellichBall
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rellich ball of weighted square-summable sequences](rellich-ball.md)
+
+## Proof depends on
+
+- [Rellich–Kondrachov, closedness form](is-closed-rellich-ball.md)
+- [Rellich–Kondrachov, total boundedness form](totally-bounded-rellich-ball.md)
 
 ## Sources
 

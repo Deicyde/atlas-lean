@@ -14,7 +14,8 @@ difference of the marginal fitnesses. This holds for every real `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](../natural-selection-fisher-s-theorem-and-the-price/diploid-mean-fitness.md)
+- [Marginal fitness of an allele](../natural-selection-fisher-s-theorem-and-the-price/marginal-fitness.md)
 
 ## Sources
 

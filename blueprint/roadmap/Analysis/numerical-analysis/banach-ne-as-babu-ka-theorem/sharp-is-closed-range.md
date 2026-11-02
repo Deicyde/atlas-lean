@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.sharp_isClosed_ra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+- [Operator associated to a bounded bilinear form](bilinear-form-sharp.md)
+
+## Proof depends on
+
+- [Inf-sup condition makes the associated operator antilipschitz](sharp-antilipschitz.md)
 
 ## Sources
 

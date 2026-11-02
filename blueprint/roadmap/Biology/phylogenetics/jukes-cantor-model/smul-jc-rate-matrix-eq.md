@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.smul_jcRateMatrix_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Invertible Jukes–Cantor eigenbasis](jc-eigenbasis-unit.md)
+- [Jukes–Cantor rate matrix as a matrix](jc-rate-matrix.md)
+
+## Proof depends on
+
+- [Eigenbasis of the Jukes–Cantor rate matrix](jc-eigenbasis.md)
+- [Jukes–Cantor rate matrix](jc-rate.md)
 
 ## Sources
 

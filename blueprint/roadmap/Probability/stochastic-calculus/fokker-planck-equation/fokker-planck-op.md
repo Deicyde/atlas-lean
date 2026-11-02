@@ -14,6 +14,11 @@ and `p` is stationary iff this vanishes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Divergence of a vector field](divergence.md)
+- [Probability flux of a diffusion](flux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Diffusion.FokkerPlanckGradient](../../../../sources/v2/MathlibExt.md)

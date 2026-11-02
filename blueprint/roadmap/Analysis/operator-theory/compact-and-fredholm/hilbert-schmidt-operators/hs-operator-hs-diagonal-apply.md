@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator_hsDiagonal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal infinite matrix](hs-diagonal.md)
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Diagonal matrix with square-summable diagonal is Hilbert–Schmidt](is-hilbert-schmidt-hs-diagonal.md)
+
+## Proof depends on
+
+- [Pointwise action of the Hilbert–Schmidt operator](hs-operator-apply.md)
 
 ## Sources
 

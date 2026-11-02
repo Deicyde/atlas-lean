@@ -15,6 +15,10 @@ see `ihh_twoSided`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [EHH in the star-genealogy sweep model](sweep-ehh.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.SelectionScan.SelectiveSweep](../../../../sources/v2/MathlibExt.md)

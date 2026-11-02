@@ -13,7 +13,13 @@ transition matrix of the total length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition matrix along a path](jc-path.md)
+- [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
+
+## Proof depends on
+
+- [Jukes–Cantor transition matrix at time zero is the identity](../jukes-cantor-model/jc-prob-zero.md)
+- [Chapman–Kolmogorov equation](../jukes-cantor-model/sum-jc-prob-mul-jc-prob.md)
 
 ## Sources
 

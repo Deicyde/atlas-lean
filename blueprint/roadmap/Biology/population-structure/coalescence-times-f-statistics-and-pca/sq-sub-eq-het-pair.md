@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.sq_sub_eq_hetP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that two genes differ at a biallelic site](het-pair.md)
 
 ## Sources
 

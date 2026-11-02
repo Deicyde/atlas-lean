@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.memℓp_appro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated geometric sequence](approx-fun.md)
 
 ## Sources
 

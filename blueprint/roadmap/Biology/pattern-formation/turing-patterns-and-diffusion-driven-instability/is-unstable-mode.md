@@ -14,6 +14,10 @@ a complex eigenvalue `μ` with `0 < Re μ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.TuringPatterns](../../../../sources/v2/MathlibExt.md)

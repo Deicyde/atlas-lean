@@ -18,6 +18,10 @@ cross-core pairs never inflate it. This is the statistic of the long-range haplo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extended haplotype homozygosity with core-allele labels](ehh-core.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.SelectionScan.ExtendedHaplotypeHomozygosity](../../../../sources/v2/MathlibExt.md)

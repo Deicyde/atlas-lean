@@ -16,6 +16,10 @@ sums `∑_{n<N} Kⁿ`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Invertibility of 1 − K when the spectral radius is below one](is-unit-one-sub-of-spectral-radius-lt-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.MMatrix](../../../../sources/v2/MathlibExt.md)

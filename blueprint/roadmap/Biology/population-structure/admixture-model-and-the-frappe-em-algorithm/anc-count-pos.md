@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.ancCount_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Expected ancestry count of an individual](anc-count.md)
+
+## Proof depends on
+
+- [Ancestry responsibility of an allele copy (E-step)](resp.md)
+- [Positivity of the admixture responsibilities](resp-pos.md)
 
 ## Sources
 

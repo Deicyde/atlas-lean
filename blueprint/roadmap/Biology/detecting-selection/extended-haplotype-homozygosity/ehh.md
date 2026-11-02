@@ -16,6 +16,10 @@ returned; every statement below that needs the probabilistic reading assumes `2 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Concordant haplotype pairs at a given radius](concordant-pairs.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.SelectionScan.ExtendedHaplotypeHomozygosity](../../../../sources/v2/MathlibExt.md)

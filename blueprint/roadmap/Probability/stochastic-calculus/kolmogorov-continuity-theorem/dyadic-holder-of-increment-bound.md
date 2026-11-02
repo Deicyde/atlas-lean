@@ -14,7 +14,7 @@ rationals of `[0, 1]`, with an explicit constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic rationals](dyadic-rationals.md)
 
 ## Sources
 

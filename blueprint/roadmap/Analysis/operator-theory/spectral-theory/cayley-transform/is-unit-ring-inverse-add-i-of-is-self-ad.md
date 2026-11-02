@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Self-adjoint operator plus $i$ is invertible](is-unit-add-i-smul-one-of-is-self-adjoin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CayleyTransform](../../../../../sources/v2/MathlibExt.md)

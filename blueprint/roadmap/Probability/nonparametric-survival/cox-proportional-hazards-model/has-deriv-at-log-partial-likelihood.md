@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.hasDerivAt_logParti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cox score for a scalar covariate](cox-score.md)
+- [Log partial likelihood of a scalar covariate](log-partial-likelihood-3.md)
+
+## Proof depends on
+
+- [Weighted mean of a covariate over a risk set](risk-mean.md)
+- [Risk set in survival analysis](risk-set.md)
+- [Risk sets are nonempty](risk-set-nonempty.md)
 
 ## Sources
 

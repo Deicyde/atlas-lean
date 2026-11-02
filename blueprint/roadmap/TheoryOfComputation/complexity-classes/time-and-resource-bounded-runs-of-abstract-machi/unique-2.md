@@ -12,7 +12,11 @@ lean: Cslib.OutputReachability.Runs.unique
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded run from an input's initial state](runs.md)
+
+## Proof depends on
+
+- [Uniqueness of reached outputs](unique.md)
 
 ## Sources
 

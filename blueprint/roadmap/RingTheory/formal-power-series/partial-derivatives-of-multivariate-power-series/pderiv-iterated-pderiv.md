@@ -12,7 +12,11 @@ lean: MvPowerSeries.pderiv_iteratedPDeriv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated partial derivative of a multivariate power series](iterated-pderiv.md)
+
+## Proof depends on
+
+- [Formal partial derivatives commute](pderiv-pderiv.md)
 
 ## Sources
 

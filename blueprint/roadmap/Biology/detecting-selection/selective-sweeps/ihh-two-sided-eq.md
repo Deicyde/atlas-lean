@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.ihh_twoSided_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-sided integrated haplotype homozygosity](ihh-two-sided.md)
+
+## Proof depends on
+
+- [One-sided integrated haplotype homozygosity](ihh.md)
+- [One-sided iHH in the star-genealogy model](ihh-eq.md)
 
 ## Sources
 

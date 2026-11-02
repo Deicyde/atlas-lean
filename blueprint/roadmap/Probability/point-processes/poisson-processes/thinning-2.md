@@ -15,7 +15,8 @@ Poisson process of rate `p r`. The marks `B i` are i.i.d. with `P(B i) = p` and 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson process](is-poisson-process.md)
+- [Thinning of a Poisson process](thinning.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.exists_norm_sub_lpTrunc_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+
+## Proof depends on
+
+- [Truncations of an $\ell^p$ vector converge to it](tendsto-lp-trunc.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ state of the block-counting process).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
 
 ## Sources
 

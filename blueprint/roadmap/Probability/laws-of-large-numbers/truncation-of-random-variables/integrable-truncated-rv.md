@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.integrable_truncatedRV
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Truncated random variables lie in every Lp space](mem-lp-truncated-rv.md)
 
 ## Sources
 

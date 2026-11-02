@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.measurable_truncatedRV_of_measurab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Truncation preserves measurability](../kolmogorov-s-three-series-theorem/measurable-truncated-rv.md)
 
 ## Sources
 

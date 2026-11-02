@@ -12,7 +12,7 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.fourierMatrix_mulVec_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier matrix](fourier-matrix.md)
 
 ## Sources
 

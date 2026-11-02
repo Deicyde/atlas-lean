@@ -12,7 +12,8 @@ lean: ProbabilityTheory.lintegral_dirichletProcess_prod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn](../blackwell-macqueen-urn/blackwell-mac-queen.md)
+- [Dirichlet process](dirichlet-process.md)
 
 ## Sources
 

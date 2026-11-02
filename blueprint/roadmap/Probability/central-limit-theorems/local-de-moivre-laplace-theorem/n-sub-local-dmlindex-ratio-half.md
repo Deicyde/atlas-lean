@@ -13,7 +13,12 @@ also tends to `1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice index in the local De Moivre–Laplace theorem](local-dmlindex.md)
+
+## Proof depends on
+
+- [The De Moivre–Laplace index over n tends to one half](local-dmlindex-ratio-half.md)
+- [The complementary De Moivre–Laplace index tends to infinity](n-sub-local-dmlindex-tendsto-at-top.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.LatentCausalVariable.Model.neg_two_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latent causal variable model](model.md)
+- [Excess kurtosis of the latent effect](kurtosis.md)
+
+## Proof depends on
+
+- [Fourth moment of the latent effect is at least one](one-le-integral-pi-pow-four.md)
 
 ## Sources
 

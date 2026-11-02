@@ -13,7 +13,14 @@ with every tree model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Binary loadings of a drift model](has-binary-loadings.md)
+- [Allele frequency of a population in the drift model](freq.md)
+- [f3 statistic](f3.md)
+
+## Proof depends on
+
+- [f3 is nonnegative under binary loadings](f3-nonneg-of-has-binary-loadings.md)
 
 ## Sources
 

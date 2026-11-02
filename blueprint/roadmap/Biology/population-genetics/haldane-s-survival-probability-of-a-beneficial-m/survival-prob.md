@@ -16,6 +16,10 @@ mutant leaves no copies, and `π(s) = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extinction probability of a Galton–Watson process](../../../Probability/branching-processes/galton-watson-process/extinction-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Haldane](../../../../sources/v2/MathlibExt.md)

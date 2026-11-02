@@ -13,7 +13,15 @@ lean: ProbabilityTheory.poissonBinomialTail_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper tail of the Poisson-binomial law](poisson-binomial-tail.md)
+
+## Proof depends on
+
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+- [Nonnegativity of the Poisson-binomial mass function](poisson-binomial-pmf-nonneg.md)
+- [Poisson-binomial tail after adding a trial](poisson-binomial-tail-cons-succ.md)
+- [Peeling off the lowest term of the Poisson-binomial tail](poisson-binomial-tail-eq-add.md)
+- [Poisson-binomial masses sum to one](sum-poisson-binomial-pmf.md)
 
 ## Sources
 

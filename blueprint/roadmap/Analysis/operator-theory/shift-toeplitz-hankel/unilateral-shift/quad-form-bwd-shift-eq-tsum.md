@@ -13,7 +13,7 @@ coordinates: `⟪B x, x⟫ = ∑' n, conj (x (n + 1)) * x n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
 
 ## Sources
 

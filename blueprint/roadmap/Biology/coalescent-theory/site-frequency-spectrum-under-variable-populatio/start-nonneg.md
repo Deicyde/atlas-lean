@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.PiecewiseHist
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
+
+## Proof depends on
+
+- [Monotonicity of piece start times](start-mono.md)
 
 ## Sources
 

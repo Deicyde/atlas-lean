@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.ker_tikhonov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Tikhonov normal operator is bounded below by the regularization parameter](tikhonov-operator-le-norm.md)
 
 ## Sources
 

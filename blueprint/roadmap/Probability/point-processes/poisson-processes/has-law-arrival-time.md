@@ -13,7 +13,7 @@ lean: ProbabilityTheory.PoissonProcess.hasLaw_arrivalTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arrival times from interarrival times](arrival-time.md)
 
 ## Sources
 

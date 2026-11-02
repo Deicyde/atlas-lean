@@ -12,7 +12,7 @@ selected parents, relative to the population mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear parent–offspring regression model](model.md)
 
 ## Sources
 

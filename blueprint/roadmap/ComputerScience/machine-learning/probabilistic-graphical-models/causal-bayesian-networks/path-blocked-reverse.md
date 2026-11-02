@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.pathBlocked_reverse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Blocked path](path-blocked.md)
+
+## Proof depends on
+
+- [Blocking at a node of a path](blocked-at.md)
+- [Blocking at a node is independent of path direction](blocked-at-comm.md)
 
 ## Sources
 

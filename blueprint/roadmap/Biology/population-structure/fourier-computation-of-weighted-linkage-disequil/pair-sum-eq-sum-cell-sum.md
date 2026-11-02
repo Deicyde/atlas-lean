@@ -13,7 +13,8 @@ offset `j` is the lag-`j` cross-correlation of the cell totals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total of a per-SNP quantity over a grid cell](cell-sum.md)
+- [Brute-force pair sum at a cell offset](pair-sum.md)
 
 ## Sources
 

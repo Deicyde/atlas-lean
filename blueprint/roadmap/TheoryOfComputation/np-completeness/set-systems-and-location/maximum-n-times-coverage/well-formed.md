@@ -11,7 +11,7 @@ lean: MetaMathlibExt.Complexity.NPComplete.MaxNTimesCoverage.WellFormed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instance of maximum n-times coverage](instance.md)
 
 ## Sources
 

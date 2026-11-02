@@ -12,7 +12,11 @@ lean: List.takeThrough_append_of_any_eq_false
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inclusive first-hit prefix of a list](take-through.md)
+
+## Proof depends on
+
+- [Inclusive first-hit prefix when the head is not a hit](take-through-cons-of-neg.md)
 
 ## Sources
 

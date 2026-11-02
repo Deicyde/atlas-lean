@@ -13,7 +13,10 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.jacobianMatrix_giererMeinhardt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gierer–Meinhardt activator-inhibitor kinetics](gierer-meinhardt.md)
+- [Jacobian of the Gierer–Meinhardt kinetics at its steady state](gierer-meinhardt-jacobian.md)
+- [Steady state of the Gierer–Meinhardt kinetics](gierer-meinhardt-steady-state.md)
+- [Jacobian matrix](../../../Analysis/real-functions/multivariable-calculus/jacobian-matrix/jacobian-matrix.md)
 
 ## Sources
 

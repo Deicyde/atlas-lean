@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Normed.Operator.DirectSumOperators.spectrum_prodMap
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Invertibility of a direct sum operator](is-unit-prod-map-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.DirectSumOperators](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ lean: ProbabilityTheory.IsRateMatrix.sum_ctmcJumpMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Jump matrix of a rate matrix](ctmc-jump-matrix.md)
+
+## Proof depends on
+
+- [Diagonal of a rate matrix is minus the total jump rate](../rate-matrices-of-finite-continuous-time-markov-c/diag-eq.md)
 
 ## Sources
 

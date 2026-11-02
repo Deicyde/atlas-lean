@@ -15,6 +15,10 @@ the theorems below), and a representative of `itoIntegralL2 P F B H t` otherwise
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Itô integral as an element of $L^2$](ito-integral-l2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ItoIntegral](../../../../sources/v2/MathlibExt.md)

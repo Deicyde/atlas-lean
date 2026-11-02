@@ -15,7 +15,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinZone.paralinear_chain_step
 
 ## Depends on
 
-This node has no prerequisites.
+- [LogDet (paralinear) distance](paralinear.md)
+
+## Proof depends on
+
+- [Nonsingular transition matrices preserve positive distributions](vec-mul-pos.md)
 
 ## Sources
 

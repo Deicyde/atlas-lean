@@ -12,7 +12,12 @@ lean: ProbabilityTheory.IsStationaryOrnsteinUhlenbeck.hasLaw_eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
+- [Variance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance-self.md)
 
 ## Sources
 

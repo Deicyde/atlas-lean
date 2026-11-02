@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.hkyRate_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [F81 rate matrix](f81-rate.md)
+- [HKY85 rate matrix](hky-rate.md)
+
+## Proof depends on
+
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [HKY85 exchangeabilities](hky-exchangeability.md)
 
 ## Sources
 

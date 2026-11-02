@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraSlope_ne_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slope constant of Kimura's fixation probability](kimura-slope.md)
+
+## Proof depends on
+
+- [Denominator of Kimura's formula is nonzero](one-sub-exp-ne-zero.md)
 
 ## Sources
 

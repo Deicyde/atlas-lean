@@ -16,7 +16,12 @@ keep an indirect edge (see the tests).
 
 ## Depends on
 
-This node has no prerequisites.
+- [ARACNE gene network reconstruction](aracne.md)
+
+## Proof depends on
+
+- [No false positives](aracne-le-of-is-tree.md)
+- [No false negatives](le-aracne-of-is-acyclic.md)
 
 ## Sources
 

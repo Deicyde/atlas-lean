@@ -13,7 +13,12 @@ lean: MathlibExt.Probability.PoissonPointProcess.lintegral_lintegral_mecke
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson point process with finite intensity](poisson-point-process.md)
+
+## Proof depends on
+
+- [Counting measure of a finite tuple of points](counting-measure.md)
+- [Measurability of the counting measure in the points](measurable-counting-measure.md)
 
 ## Sources
 

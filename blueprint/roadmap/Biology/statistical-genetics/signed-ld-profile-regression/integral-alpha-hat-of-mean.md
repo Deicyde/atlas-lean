@@ -13,7 +13,13 @@ have mean `μ v`, then `𝔼 α̂ = μ R̂ v`, a multiple of the signed LD profi
 
 ## Depends on
 
-This node has no prerequisites.
+- [First-moment phenotype model of SLDP regression](model.md)
+- [Marginal marker-phenotype correlations in SLDP regression](alpha-hat.md)
+- [In-sample LD matrix](ld-matrix.md)
+
+## Proof depends on
+
+- [First-moment identity, exact in-sample form](integral-alpha-hat.md)
 
 ## Sources
 

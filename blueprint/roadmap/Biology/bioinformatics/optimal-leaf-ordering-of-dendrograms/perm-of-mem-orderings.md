@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.Clustering.OptimalLeafOrdering.perm_of_mem_orderings
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+- [Leaves of a dendrogram](leaves.md)
+- [Leaf orderings of a dendrogram](orderings.md)
 
 ## Sources
 

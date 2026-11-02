@@ -13,7 +13,12 @@ by `β⁻¹` when `β` is an inf–sup constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+- [Banach–Nečas–Babuška isomorphism](sharp-equiv.md)
+
+## Proof depends on
+
+- [Norm of the Banach–Nečas–Babuška isomorphism applied to a vector](norm-sharp-equiv-apply.md)
 
 ## Sources
 

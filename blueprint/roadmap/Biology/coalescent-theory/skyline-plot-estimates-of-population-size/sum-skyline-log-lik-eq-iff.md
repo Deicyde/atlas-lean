@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.sum_skylineLogLik_eq_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log-likelihood of one coalescent interval in the skyline model](skyline-log-lik.md)
+
+## Proof depends on
+
+- [Uniqueness of the skyline maximizer](skyline-log-lik-eq-iff.md)
+- [The skyline estimate maximizes the interval likelihood](skyline-log-lik-le.md)
 
 ## Sources
 

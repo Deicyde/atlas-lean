@@ -11,7 +11,13 @@ lean: StatMech.AngleDefect.wad_n3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+
+## Proof depends on
+
+- [Angle defect at a lattice vertex](defect.md)
+- [Lattice point as a vertex of the cell complex](vtx.md)
+- [Vertices of a union of unit cells](reg-verts.md)
 
 ## Sources
 

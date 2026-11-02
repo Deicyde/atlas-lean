@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.CancerGenomics.GisticNull.permutationNull_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [GISTIC permutation null distribution](permutation-null.md)
+
+## Proof depends on
+
+- [The GISTIC permutation null is the law of a sum of independent per-sample draws](permutation-null-eq-count.md)
+- [Count of marker choices with a given score](score-count.md)
 
 ## Sources
 

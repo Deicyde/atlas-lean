@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Epidemiology.EulerLotka.reproductionNumber_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproductive number from growth rate and generation interval](reproduction-number.md)
 
 ## Sources
 

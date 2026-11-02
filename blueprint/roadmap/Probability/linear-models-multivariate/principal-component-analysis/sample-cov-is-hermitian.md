@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.PCA.sampleCov_isHermitian
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbiased sample covariance matrix](sample-cov.md)
+
+## Proof depends on
+
+- [Column-centered data matrix](center.md)
 
 ## Sources
 

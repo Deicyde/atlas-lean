@@ -13,7 +13,7 @@ non-shared alleles are independent draws from `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
 
 ## Sources
 

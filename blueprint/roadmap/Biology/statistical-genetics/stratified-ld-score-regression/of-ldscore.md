@@ -12,7 +12,8 @@ variances `h² / M` and noise variance `1 - h²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Random-effects model of stratified LD-score regression](model.md)
 
 ## Sources
 

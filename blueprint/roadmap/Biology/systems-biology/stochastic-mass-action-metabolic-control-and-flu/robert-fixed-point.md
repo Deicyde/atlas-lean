@@ -14,7 +14,11 @@ within `n` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Acyclic interaction graph](is-acyclic.md)
+
+## Proof depends on
+
+- [Interaction graph of a Boolean network](influences.md)
 
 ## Sources
 

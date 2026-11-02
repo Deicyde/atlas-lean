@@ -15,6 +15,10 @@ is `∑_{u<v} cherryCoeff S a b u v * D u v` when `D` is symmetric.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Pauplin coefficient of a cherry tree](cherry-coeff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.NeighborJoiningBME](../../../../sources/v2/CSLibExt.md)

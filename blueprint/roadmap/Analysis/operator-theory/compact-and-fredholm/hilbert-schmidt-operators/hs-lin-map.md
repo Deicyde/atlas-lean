@@ -11,7 +11,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsLinMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Hilbert–Schmidt matrix maps ℓ² vectors into ℓ²](mem-p-hs-coord.md)
+- [Summability of the Hilbert–Schmidt coordinate series](summable-hs-coord.md)
 
 ## Sources
 

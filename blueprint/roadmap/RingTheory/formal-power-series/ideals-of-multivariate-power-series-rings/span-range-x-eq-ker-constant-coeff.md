@@ -15,6 +15,10 @@ is the span of the variables.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Membership in the span of a constant and initial variables](mem-span-c-sup-of-list-take-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.MvPowerSeries.Span](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.SufficientInputSubsets.findSIS_isSome
 
 ## Depends on
 
-This node has no prerequisites.
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+
+## Proof depends on
+
+- [Backward-selection chain of remaining feature sets](chain.md)
+- [Starting set begins the backward-selection chain](mem-chain-self.md)
 
 ## Sources
 

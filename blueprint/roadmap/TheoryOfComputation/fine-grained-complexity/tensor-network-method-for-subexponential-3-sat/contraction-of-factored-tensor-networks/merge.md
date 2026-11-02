@@ -12,7 +12,14 @@ other coordinates with the supplied defaults.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+
+## Proof depends on
+
+- [Finite tuples with prescribed default values](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/pi-finset-on.md)
+- [Interaction of two states in a factored network](../integer-valued-factored-tensor-networks/interaction.md)
+- [Label set of an unordered vertex pair](../integer-valued-factored-tensor-networks/label-set.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
 
 ## Sources
 

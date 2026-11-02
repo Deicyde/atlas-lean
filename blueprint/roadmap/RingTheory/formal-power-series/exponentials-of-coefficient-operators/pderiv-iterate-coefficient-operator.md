@@ -13,7 +13,12 @@ iterate of the partial derivative plus `(n + 1)` copies of the lifted coefficien
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Lifted coefficient maps commute with coefficient-operator iterates](comp-left-iterate-coefficient-operator.md)
+- [Partial derivative of a coefficient operator](pderiv-coefficient-operator.md)
 
 ## Sources
 

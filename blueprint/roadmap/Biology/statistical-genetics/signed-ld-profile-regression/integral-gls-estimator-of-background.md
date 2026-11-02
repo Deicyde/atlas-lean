@@ -18,7 +18,15 @@ estimator equals the coefficient of `R̂ v` in the joint weighted regression of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [First-moment phenotype model of SLDP regression](model.md)
+- [Marginal marker-phenotype correlations in SLDP regression](alpha-hat.md)
+- [In-sample LD matrix](ld-matrix.md)
+
+## Proof depends on
+
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+- [First-moment identity, exact in-sample form](integral-alpha-hat.md)
+- [Phenotype in the SLDP regression model](pheno.md)
 
 ## Sources
 

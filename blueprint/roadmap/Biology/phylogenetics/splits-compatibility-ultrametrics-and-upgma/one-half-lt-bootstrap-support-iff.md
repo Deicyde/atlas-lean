@@ -14,7 +14,13 @@ one tree (`exists_tree_majoritySplits_subset`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bootstrap support](bootstrap-support.md)
+- [Majority splits of a family of trees](majority-splits.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
 
 ## Sources
 

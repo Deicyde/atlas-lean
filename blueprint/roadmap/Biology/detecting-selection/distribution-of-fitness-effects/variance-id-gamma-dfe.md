@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.varianc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
+
+## Proof depends on
+
+- [Variance of the gamma law](../../../Probability/distributions/gamma-distribution/variance-id-gamma-measure.md)
 
 ## Sources
 

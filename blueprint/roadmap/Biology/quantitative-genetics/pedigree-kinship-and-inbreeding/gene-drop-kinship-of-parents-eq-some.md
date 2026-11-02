@@ -13,7 +13,14 @@ parents `f, m`, then `φ i j = (φ i f + φ i m) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestor relation in a pedigree](is-ancestor.md)
+- [Kinship coefficient under gene dropping](gene-drop-kinship.md)
+
+## Proof depends on
+
+- [Probability of identity by descent under gene dropping](ibd.md)
+- [Malécot's recursion step for identity by descent](ibd-of-parents-eq-some.md)
 
 ## Sources
 

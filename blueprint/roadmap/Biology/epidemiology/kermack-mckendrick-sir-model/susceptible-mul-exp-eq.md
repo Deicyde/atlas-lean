@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Epidemiology.SIR.IsSolution.susceptible_mul_exp_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Kermack–McKendrick SIR system](is-solution.md)
 
 ## Sources
 

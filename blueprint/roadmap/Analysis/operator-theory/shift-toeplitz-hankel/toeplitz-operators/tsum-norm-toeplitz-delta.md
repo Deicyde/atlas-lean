@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.tsum_norm_toeplitzD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delta symbol for Toeplitz operators](toeplitz-delta.md)
 
 ## Sources
 

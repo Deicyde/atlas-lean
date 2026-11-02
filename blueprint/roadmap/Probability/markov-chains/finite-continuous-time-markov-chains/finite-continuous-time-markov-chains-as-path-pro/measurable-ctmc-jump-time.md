@@ -12,7 +12,12 @@ lean: ProbabilityTheory.measurable_ctmcJumpTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+
+## Proof depends on
+
+- [Holding times of a continuous-time Markov chain](ctmc-holding-time.md)
+- [Measurability of the holding times](measurable-ctmc-holding-time.md)
 
 ## Sources
 

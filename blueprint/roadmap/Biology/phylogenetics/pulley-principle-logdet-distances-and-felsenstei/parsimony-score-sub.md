@@ -14,7 +14,8 @@ patterns supporting `AB | CD`, and `0` otherwise; likewise for `AD | BC`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site pattern supporting a split](supports.md)
+- [Fitch parsimony score on a quartet](parsimony-score.md)
 
 ## Sources
 

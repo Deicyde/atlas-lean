@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.CockerhamCompon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
 
 ## Sources
 

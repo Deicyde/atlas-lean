@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcEigenbasisUnit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenbasis of the Jukes–Cantor rate matrix](jc-eigenbasis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.JukesCantor](../../../../sources/v2/MathlibExt.md)

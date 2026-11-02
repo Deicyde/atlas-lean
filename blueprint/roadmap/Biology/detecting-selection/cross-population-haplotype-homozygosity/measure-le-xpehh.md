@@ -13,7 +13,12 @@ two-sided test carry the same probability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exchangeable pair of statistics](is-exchangeable-pair.md)
+- [Cross-population extended haplotype homozygosity (XP-EHH)](xpehh.md)
+
+## Proof depends on
+
+- [Equal tails of the log ratio of an exchangeable pair](measure-le-log-ratio.md)
 
 ## Sources
 

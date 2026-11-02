@@ -12,7 +12,13 @@ lean: Cslib.OutputReachability.ReachesOutput.iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Output reachability within time and resource bounds](reaches-output.md)
+- [One iteration step with absorbing halted states](next.md)
+
+## Proof depends on
+
+- [Resource-bounded active step](bounded-step.md)
+- [Canonical finite path to an output bounds all iterates](relates-in-steps-iterate.md)
 
 ## Sources
 

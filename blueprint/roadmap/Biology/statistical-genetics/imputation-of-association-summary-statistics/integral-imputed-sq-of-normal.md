@@ -14,7 +14,12 @@ imputed statistic has second moment `wᵀ Σ_ot = Σ_to Σ_oo⁻¹ Σ_ot`; for `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
+- [Imputed summary statistic](imputed.md)
+
+## Proof depends on
+
+- [Second moment of the imputed statistic](integral-imputed-sq.md)
 
 ## Sources
 

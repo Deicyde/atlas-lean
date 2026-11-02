@@ -13,7 +13,11 @@ rate `1`, so a partition with `k` blocks is left at total rate `k.choose 2` (tim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Partition obtained by merging two blocks](is-merge.md)
 
 ## Sources
 

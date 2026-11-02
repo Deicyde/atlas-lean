@@ -16,6 +16,10 @@ its observed value `T π`. It is written with the cycle-type weights and so does
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.EwensWatterson](../../../../sources/v2/MathlibExt.md)

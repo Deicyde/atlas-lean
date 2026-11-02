@@ -15,6 +15,10 @@ the remaining coordinates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number of dependent functions with prescribed values](card-filter-pi-finset-eq-on-of-mem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Fintype.PrescribedFunctions](../../../../sources/v2/MathlibExt.md)

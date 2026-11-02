@@ -15,7 +15,14 @@ coefficient hypothesis and `q`'s zero constant imply the required premise for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted coefficient equality transfers zero constant coefficient](constant-coeff-eq-zero-of-weight.md)
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
+
+## Proof depends on
+
+- [Coefficients of a weighted rescaling of a rational power series](coeff-rescale-map-of-weight.md)
+- [Characterization of weighted rescalings of a power series](eq-rescale-map-of-weight-iff.md)
+- [Weighted rescaling commutes with the formal exponential](exp-of-constant-coeff-zero-rescale-map-o.md)
 
 ## Sources
 

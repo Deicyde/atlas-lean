@@ -12,7 +12,15 @@ original symbols taken from the input word `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration of a linear bounded automaton](lbaconfig.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell tuple as a grammar symbol](cell-tuple-sym.md)
+- [Cell tuples of an LBA configuration from an offset](encode-cells-aux.md)
 
 ## Sources
 

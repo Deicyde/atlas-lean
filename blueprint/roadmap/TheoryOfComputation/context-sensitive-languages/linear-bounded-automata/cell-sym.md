@@ -11,7 +11,8 @@ lean: Cslib.Language.LinearBoundedAutomaton.cellSym
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
 
 ## Sources
 

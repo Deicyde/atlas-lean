@@ -12,7 +12,16 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.bestCovering_eq_bot_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple-choice knapsack selection](is-selection.md)
+- [Knapsack item with weight and value](item.md)
+- [Covering recurrence for multiple-choice knapsack](best-covering.md)
+- [Total weight of a knapsack selection](total-weight.md)
+
+## Proof depends on
+
+- [Covering recurrence is attained by a covering selection](exists-eq-of-best-covering-eq-coe.md)
+- [Covering recurrence bounds every covering selection's value](le-best-covering.md)
+- [Total value of a knapsack selection](total-value.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Matrix.leadingPrincipalSubmatrix_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leading principal submatrix](leading-principal-submatrix.md)
 
 ## Sources
 

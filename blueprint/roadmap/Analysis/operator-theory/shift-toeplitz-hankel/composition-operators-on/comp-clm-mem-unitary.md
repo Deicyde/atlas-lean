@@ -12,7 +12,15 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compCLM_mem_unit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+- [Permutations have fibers of size one](has-bounded-fibers-equiv.md)
+
+## Proof depends on
+
+- [Adjoint of a composition operator with a permutation symbol](adjoint-comp-clm-of-equiv.md)
+- [Composition of composition operators](comp-clm-comp.md)
+- [Composition operator of a pointwise identity symbol](comp-clm-eq-of-forall.md)
+- [Bounded fibers are preserved under composition](has-bounded-fibers-comp.md)
 
 ## Sources
 

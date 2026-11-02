@@ -14,6 +14,12 @@ inverse.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Double coefficients of a diagonal Laurent series](coeff-coeff-diagonal-laurent-series.md)
+- [Multiplying by the variable difference on diagonal coefficients](coeff-coeff-variable-difference-mul.md)
+- [Diagonal Laurent-coefficient Hahn series](diagonal-laurent-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.HahnSeries.DiagonalLaurent](../../../../../sources/v2/MathlibExt.md)

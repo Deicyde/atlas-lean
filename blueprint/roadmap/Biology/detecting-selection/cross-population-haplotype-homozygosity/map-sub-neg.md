@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exchangeable pair of statistics](is-exchangeable-pair.md)
 
 ## Sources
 

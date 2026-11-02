@@ -12,7 +12,16 @@ lean: ProbabilityTheory.stickBreakingMeasure_apply_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking measure](stick-breaking-measure.md)
+
+## Proof depends on
+
+- [Mass of a set under the stick-breaking measure](stick-breaking-measure-apply.md)
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Leftover stick lies in the unit interval](stick-remainder-mem-icc.md)
+- [Stick-breaking weights](stick-weight.md)
+- [Nonnegativity of stick-breaking weights](stick-weight-nonneg.md)
+- [Stick-breaking pieces and leftover make up the whole stick](sum-range-stick-weight-add-stick-remaind.md)
 
 ## Sources
 

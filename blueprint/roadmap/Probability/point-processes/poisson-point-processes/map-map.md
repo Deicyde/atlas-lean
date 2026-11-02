@@ -13,7 +13,13 @@ lean: MathlibExt.Probability.PoissonPointProcess.map_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson point process with finite intensity](poisson-point-process.md)
+
+## Proof depends on
+
+- [Counting measure of a finite tuple of points](counting-measure.md)
+- [Image of a counting measure under a map](counting-measure-comp.md)
+- [Measurability of the counting measure in the points](measurable-counting-measure.md)
 
 ## Sources
 

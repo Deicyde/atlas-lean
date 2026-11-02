@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.Fourier.HeisenbergUncertainty.heisenberg_uncertainty_c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heisenberg's uncertainty principle](heisenberg-uncertainty-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

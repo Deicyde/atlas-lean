@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.bloc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenvalues of Kingman's block-counting generator](block-counting-eigenvalue.md)
+- [Generator of Kingman's block-counting process](block-counting-generator.md)
+- [Left eigenvectors of Kingman's block-counting generator](block-counting-left-eigen.md)
 
 ## Sources
 

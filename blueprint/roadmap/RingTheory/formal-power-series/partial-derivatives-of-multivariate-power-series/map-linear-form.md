@@ -12,7 +12,11 @@ lean: MvPowerSeries.map_linearForm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal linear form in multivariate power series](linear-form.md)
+
+## Proof depends on
+
+- [Coefficient formula for a formal linear form](coeff-linear-form.md)
 
 ## Sources
 

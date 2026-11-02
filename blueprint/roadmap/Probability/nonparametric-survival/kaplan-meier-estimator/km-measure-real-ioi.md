@@ -13,7 +13,18 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.kmMeasure_real_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Kaplan–Meier measure](km-measure.md)
+- [Kaplan–Meier survival estimate](km-survival.md)
+
+## Proof depends on
+
+- [Number at risk at an observation time](at-risk.md)
+- [Kaplan–Meier factor](km-factor.md)
+- [Kaplan–Meier jump at an observation time](km-mass.md)
+- [Mass of a set under the Kaplan–Meier measure](km-measure-real-apply.md)
+- [Kaplan–Meier mass after the last observation](km-tail.md)
+- [Kaplan–Meier jumps and leftover mass sum to one](sum-km-mass-add-km-tail.md)
 
 ## Sources
 

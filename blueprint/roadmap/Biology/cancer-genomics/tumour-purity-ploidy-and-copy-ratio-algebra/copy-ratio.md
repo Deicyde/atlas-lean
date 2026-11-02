@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.copyRatio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.Absolute](../../../../sources/v2/MathlibExt.md)

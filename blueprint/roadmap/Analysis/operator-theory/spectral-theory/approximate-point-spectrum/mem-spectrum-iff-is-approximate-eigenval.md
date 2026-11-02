@@ -13,7 +13,12 @@ spectrum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximate eigenvalue of an operator](is-approximate-eigenvalue.md)
+
+## Proof depends on
+
+- [Spectral values of a normal operator are approximate eigenvalues](is-approximate-eigenvalue-of-mem-spectru.md)
+- [Approximate eigenvalues lie in the spectrum](mem-spectrum-of-is-approximate-eigenvalu.md)
 
 ## Sources
 

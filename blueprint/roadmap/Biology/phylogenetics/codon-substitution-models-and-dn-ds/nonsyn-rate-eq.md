@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.nonsynRate_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Stationary rate of nonsynonymous substitutions](nonsyn-rate.md)
+
+## Proof depends on
+
+- [Goldman–Yang codon exchangeability](gy-exchange.md)
+- [Dependence of Goldman–Yang exchangeabilities on ω](gy-exchange-eq.md)
+- [Goldman–Yang codon rate matrix](gy-rate.md)
+- [Off-diagonal entries of the Goldman–Yang rate matrix](gy-rate-of-ne.md)
 
 ## Sources
 

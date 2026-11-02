@@ -13,7 +13,19 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.jointLaw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Joint law of null indicator and z-value](joint-law.md)
+- [Local false discovery rate](local-fdr.md)
+
+## Proof depends on
+
+- [Joint probability of a null case in a set](joint-law-null-prod.md)
+- [Local fdr times mixture density equals the null part](local-fdr-mul-mixture-density.md)
+- [Marginal z-value law of the joint law is the mixture](map-snd-joint-law.md)
+- [Local false discovery rate is measurable](measurable-local-fdr.md)
+- [Mixture density is measurable](measurable-mixture-density.md)
+- [Mixture density of the two-groups model](mixture-density.md)
+- [Mixture density is nonnegative](mixture-density-nonneg.md)
 
 ## Sources
 

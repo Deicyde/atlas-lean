@@ -15,7 +15,15 @@ independence.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Measurability of the conditioning block](measurable-rest.md)
+- [Conditioning block of a vector](rest.md)
+
+## Proof depends on
+
+- [The conditional covariance is the inverse of a precision block](inv-to-blocks-inv.md)
+- [Horizontal block matrix](../../distributions/gaussian-conditioning/block-row.md)
+- [Gaussian conditioning (Schur complement)](../../distributions/gaussian-conditioning/cond-distrib-multivariate-gaussian.md)
+- [Covariances of linear functionals of a Gaussian vector](../../distributions/gaussian-conditioning/covariance-inner-of-map-eq.md)
 
 ## Sources
 

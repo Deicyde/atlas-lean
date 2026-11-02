@@ -13,7 +13,11 @@ part of the centered inner product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+
+## Proof depends on
+
+- [Squared norm of the commutator expectation](norm-sq-commutator-inner.md)
 
 ## Sources
 

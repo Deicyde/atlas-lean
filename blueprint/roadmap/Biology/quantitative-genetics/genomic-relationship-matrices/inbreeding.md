@@ -12,7 +12,7 @@ by descent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
 
 ## Sources
 

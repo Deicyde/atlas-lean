@@ -14,6 +14,10 @@ lean: ProbabilityTheory.HasLaw.integrable_of_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrability of the identity under the exponential law](integrable-id-exp-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.GraphicalModels.marginal_coe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal of a weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal.md)
 
 ## Sources
 

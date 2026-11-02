@@ -17,7 +17,15 @@ Then `f4 A B A′ B′ = f2 A″ B″`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [f2 in the drift model](../patterson-s-f-statistics/f2-freq.md)
+- [f4 in the drift model](../patterson-s-f-statistics/f4-freq.md)
 
 ## Sources
 

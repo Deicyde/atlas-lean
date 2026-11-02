@@ -15,6 +15,11 @@ transversion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [HKY85 exchangeabilities](hky-exchangeability.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.SubstitutionModels](../../../../sources/v2/MathlibExt.md)

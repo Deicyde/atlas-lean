@@ -15,6 +15,10 @@ pairwise orthogonal subspaces are mutually independent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independence of orthogonal projections of a standard Gaussian](i-indep-fun-star-projection-std-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.CochranIndependence](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,14 @@ lean: Cslib.MachineLearning.GBLUP.kernelRidgeFit_eq_mulVec_ridgeEstimate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge estimate](../least-squares-ridge-and-lasso-regression/ridge-estimate.md)
+- [Kernel Gram matrix](../../../../Analysis/hilbert-spaces/representer-theorem/kernel-gram.md)
+- [Kernel ridge regression fit](../../../../Analysis/hilbert-spaces/representer-theorem/kernel-ridge-fit.md)
+
+## Proof depends on
+
+- [RR-BLUP = GBLUP](mul-vec-ridge-estimate.md)
+- [Fitted values of kernel ridge regression](../../../../Analysis/hilbert-spaces/representer-theorem/kernel-ridge-fit-apply.md)
 
 ## Sources
 

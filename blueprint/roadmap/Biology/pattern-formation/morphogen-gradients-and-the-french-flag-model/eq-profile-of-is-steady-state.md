@@ -13,7 +13,14 @@ profile on `[0, ∞)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded steady state of the synthesis–diffusion–degradation model](is-steady-state.md)
+- [Steady-state exponential morphogen profile](profile.md)
+
+## Proof depends on
+
+- [Decay length of a morphogen gradient](decay-length.md)
+- [Positivity of the decay length](decay-length-pos.md)
+- [Source amplitude in terms of the decay length](sqrt-mul-eq.md)
 
 ## Sources
 

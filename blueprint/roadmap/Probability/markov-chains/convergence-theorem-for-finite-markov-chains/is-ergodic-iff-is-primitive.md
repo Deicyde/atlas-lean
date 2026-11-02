@@ -15,7 +15,9 @@ supplied by the `StochasticMatrix` structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Ergodic finite Markov chain](is-ergodic.md)
+- [Underlying matrix of a stochastic matrix](to-matrix.md)
 
 ## Sources
 

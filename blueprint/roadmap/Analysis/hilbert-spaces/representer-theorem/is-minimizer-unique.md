@@ -14,7 +14,7 @@ regularized risk has at most one global minimizer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regularized risk in a reproducing kernel Hilbert space](regularized-risk.md)
 
 ## Sources
 

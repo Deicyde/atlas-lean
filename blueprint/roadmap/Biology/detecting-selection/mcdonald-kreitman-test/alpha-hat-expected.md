@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.PopulationGenetics.McDonaldKreitman.MKModel.alphaHat_ex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
+- [Expected nonsynonymous fixed differences](edn.md)
+- [Expected synonymous fixed differences](eds.md)
+- [Expected nonsynonymous polymorphisms](epn.md)
+- [Expected synonymous polymorphisms](eps.md)
+- [Proportion of adaptive nonsynonymous substitutions](alpha.md)
+- [Smith–Eyre-Walker estimator of adaptive substitutions](alpha-hat.md)
 
 ## Sources
 

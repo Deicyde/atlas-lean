@@ -14,6 +14,10 @@ lean: MathlibExt.Probability.Causality.diffInMeans
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample mean over a set of units](sample-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Causality.CausalIdentification](../../../../sources/v2/MathlibExt.md)

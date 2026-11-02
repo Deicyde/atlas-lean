@@ -15,7 +15,18 @@ enclosed interval `[i + 1, j)` sums the weights of all secondary structures cont
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complementary base pairing of two positions](can-pair.md)
+- [Inside recursion](inside.md)
+- [Outside recursion](outside.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
+
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Inside algorithm](inside-eq-sum.md)
+- [Membership in the set of secondary structures](mem-structures.md)
+- [Secondary structures within an interval](structures-in.md)
 
 ## Sources
 

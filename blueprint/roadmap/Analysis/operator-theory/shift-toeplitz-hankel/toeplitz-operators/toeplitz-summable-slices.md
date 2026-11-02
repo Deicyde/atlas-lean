@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitz_summable_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Operator norm of a diagonal slice is at most one](norm-toeplitz-slice-le.md)
 
 ## Sources
 

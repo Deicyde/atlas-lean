@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.nbPgf_one_dispersion
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial probability generating function](nb-pgf.md)
 
 ## Sources
 

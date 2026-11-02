@@ -13,7 +13,8 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem.kernelRidgeRisk_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel ridge regression objective](kernel-ridge-risk.md)
+- [Regularized risk in a reproducing kernel Hilbert space](regularized-risk.md)
 
 ## Sources
 

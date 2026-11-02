@@ -14,7 +14,12 @@ overlay to the other `n - 1` gains `1`; adding it to `∅` gains `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Submodular set function](is-submodular.md)
+- [The n-times coverage function](n-coverage.md)
+
+## Proof depends on
+
+- [Cover count of an element under a family of overlays](cover-count.md)
 
 ## Sources
 

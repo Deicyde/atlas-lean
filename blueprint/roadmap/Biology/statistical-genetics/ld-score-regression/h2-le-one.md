@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScore.Model.h2_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](model.md)
 
 ## Sources
 

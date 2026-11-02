@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.PCA.sum_center
 
 ## Depends on
 
-This node has no prerequisites.
+- [Column-centered data matrix](center.md)
 
 ## Sources
 

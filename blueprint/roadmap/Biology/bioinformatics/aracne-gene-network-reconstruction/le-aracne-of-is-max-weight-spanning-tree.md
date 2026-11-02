@@ -14,7 +14,7 @@ mutual information above `I₀`, is a subnetwork of the ARACNE network.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ARACNE gene network reconstruction](aracne.md)
 
 ## Sources
 

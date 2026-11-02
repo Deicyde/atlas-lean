@@ -15,7 +15,11 @@ probability at most `1 - F t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sequential count of significant axes](num-significant.md)
+
+## Proof depends on
+
+- [Significant axes have statistics above the threshold](lt-stat-of-lt-num-significant.md)
 
 ## Sources
 

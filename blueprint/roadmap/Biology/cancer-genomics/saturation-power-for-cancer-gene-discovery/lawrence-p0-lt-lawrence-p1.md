@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.CancerGenomics.SaturationPower.lawrenceP0_lt_lawrenceP1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signal mutation probability per patient](lawrence-p1.md)
 
 ## Sources
 

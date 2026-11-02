@@ -13,7 +13,18 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.marginal_joint_eq_ancProd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](bayes-net.md)
+- [Ancestral set of nodes](is-ancestral.md)
+- [Product of the tables of an ancestral set](anc-prod.md)
+- [Joint distribution of a Bayesian network](joint-2.md)
+- [Marginal of a weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](../causal-bayesian-networks/edge.md)
+- [The ancestral product on all nodes is the joint](anc-prod-univ.md)
+- [Parent values of a node](../causal-bayesian-networks/pa-val.md)
+- [Marginal on a finite set of nodes as a filtered sum](marginal-coe.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ summable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coordinate norms of an $\ell^1$ family are summable](../duals-of-p-and-c/summable-norm-lp-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.IntConvolution](../../../../../sources/v2/MathlibExt.md)

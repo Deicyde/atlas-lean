@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.twoLocusCov_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of coalescence times at two linked loci](two-locus-cov.md)
+
+## Proof depends on
+
+- [Common denominator of the two-locus moments](two-locus-denom.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.norm_galerkinSolution_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Galerkin solution](galerkin-solution.md)
+
+## Proof depends on
+
+- [Galerkin solution satisfies the Galerkin equations](galerkin-solution-spec.md)
 
 ## Sources
 

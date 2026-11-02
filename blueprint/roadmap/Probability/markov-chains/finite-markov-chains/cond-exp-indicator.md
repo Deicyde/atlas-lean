@@ -18,7 +18,13 @@ proof only sums over the finite state space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite-state Markov chain with a given transition matrix](is-finite-markov-chain.md)
+- [Transition kernel of a stochastic matrix](finite-chain-kernel.md)
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Transition kernel of a stochastic matrix evaluated on a set](finite-chain-kernel-apply.md)
 
 ## Sources
 

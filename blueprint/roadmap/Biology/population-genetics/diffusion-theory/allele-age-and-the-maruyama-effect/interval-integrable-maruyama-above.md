@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.intervalIntegrable_maruyam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density above the current frequency](maruyama-above.md)
+
+## Proof depends on
+
+- [Maruyama effect, above the current frequency](maruyama-above-lt.md)
+- [Sojourn density above the current frequency vanishes at one](maruyama-above-one-right.md)
+- [Positivity of the sojourn density above the current frequency](maruyama-above-pos.md)
 
 ## Sources
 

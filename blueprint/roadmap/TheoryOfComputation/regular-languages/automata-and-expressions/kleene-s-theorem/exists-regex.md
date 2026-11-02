@@ -17,6 +17,10 @@ ed., Theorem 1.54.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kleene's theorem: DFA languages are regex-denoted](exists-regex-of-dfa.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.KleeneConverse](../../../../../sources/v2/CSLibExt.md)

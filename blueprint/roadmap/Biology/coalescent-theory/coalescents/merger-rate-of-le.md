@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.LambdaCoalescent.mergerRa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
 
 ## Sources
 

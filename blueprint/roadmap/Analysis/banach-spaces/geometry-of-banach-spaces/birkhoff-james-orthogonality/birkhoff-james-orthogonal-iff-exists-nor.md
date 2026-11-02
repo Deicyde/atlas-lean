@@ -13,7 +13,12 @@ existence of a norming functional of `x` vanishing at `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
+
+## Proof depends on
+
+- [Annihilating norming functional implies Birkhoff–James orthogonality](birkhoff-james-orthogonal-of-exists-norm.md)
+- [Birkhoff–James orthogonality gives an annihilating norming functional](exists-norming-of-birkhoff-james-orthogo.md)
 
 ## Sources
 

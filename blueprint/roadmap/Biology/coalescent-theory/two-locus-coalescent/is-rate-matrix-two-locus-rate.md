@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.isRateMatrix_twoL
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
+- [Rate matrix of the two-locus coalescent](two-locus-rate.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Sum over the two-locus ancestral states](sum-univ.md)
 
 ## Sources
 

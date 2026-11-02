@@ -13,7 +13,12 @@ range `0 < r ≤ 1/2`. For `r = 0` (complete linkage) `D` is constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linkage disequilibrium of a two-locus gamete law](linkage-diseq.md)
+- [Random mating with recombination](recombine.md)
+
+## Proof depends on
+
+- [Linkage disequilibrium after $t$ generations](linkage-diseq-iterate.md)
 
 ## Sources
 

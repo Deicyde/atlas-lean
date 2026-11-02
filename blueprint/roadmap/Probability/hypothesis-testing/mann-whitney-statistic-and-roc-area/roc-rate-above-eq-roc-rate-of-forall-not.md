@@ -13,7 +13,8 @@ left end of the trapezoid at `t` is the ROC point of the next larger distinct sc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical ROC rate at or above a threshold](roc-rate.md)
+- [Empirical ROC rate strictly above a threshold](roc-rate-above.md)
 
 ## Sources
 

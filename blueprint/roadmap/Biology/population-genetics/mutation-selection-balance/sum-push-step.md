@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.sum_pushSte
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of the chain on distributions](push-step.md)
+
+## Proof depends on
+
+- [Binomial transition kernel for loss-of-function counts](kernel.md)
+- [Rows of the transition kernel have total mass one](sum-kernel.md)
 
 ## Sources
 

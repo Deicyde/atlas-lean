@@ -19,6 +19,11 @@ enters every open set containing `M`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [`V` is constant on the ω-limit set](exists-forall-eq-of-mem-omega-limit.md)
+- [Omega-limit set lies in every closed set containing the orbit](omega-limit-singleton-subset-of-is-close.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.LaSalle](../../../../sources/v2/MathlibExt.md)

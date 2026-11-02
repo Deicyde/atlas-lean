@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.intervalIntegrable_maruyam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density below the current frequency](maruyama-below.md)
+
+## Proof depends on
+
+- [Maruyama effect, below the current frequency](maruyama-below-lt.md)
+- [Positivity of the sojourn density below the current frequency](maruyama-below-pos.md)
 
 ## Sources
 

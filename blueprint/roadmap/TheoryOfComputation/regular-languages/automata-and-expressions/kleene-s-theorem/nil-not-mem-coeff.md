@@ -12,7 +12,11 @@ lean: Cslib.Language.KleeneConverse.nil_notMem_coeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient in the equation system of a DFA](coeff.md)
+
+## Proof depends on
+
+- [Membership in a DFA equation coefficient](mem-coeff.md)
 
 ## Sources
 

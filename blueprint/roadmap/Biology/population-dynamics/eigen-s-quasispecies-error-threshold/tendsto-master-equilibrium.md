@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Dynamics.Quasispecies.tendsto_masterEquilibrium
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interior equilibrium of the master-sequence frequency](master-equilibrium.md)
 
 ## Sources
 

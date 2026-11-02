@@ -12,7 +12,11 @@ more than half of the trees (repetitions in the family count).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
 
 ## Sources
 

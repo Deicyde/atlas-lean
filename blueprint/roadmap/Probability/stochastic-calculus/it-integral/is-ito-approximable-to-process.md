@@ -12,7 +12,16 @@ lean: ProbabilityTheory.isItoApproximable_toProcess
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand as a process](to-process.md)
+- [Itô-approximable process](is-ito-approximable.md)
+
+## Proof depends on
+
+- [Elementary integrands are jointly measurable](measurable-to-process.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Restriction to (0, t) preserves joint measurability](measurable-restrict-ioc.md)
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
 
 ## Sources
 

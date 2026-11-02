@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.periodicApprox_ter
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](../unilateral-shift/shift-clm.md)
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Haldane.mean_poissonMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean offspring number](../../../Probability/branching-processes/galton-watson-process/mean.md)
 
 ## Sources
 

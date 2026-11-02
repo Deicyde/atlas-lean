@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.trace_modeMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
 
 ## Sources
 

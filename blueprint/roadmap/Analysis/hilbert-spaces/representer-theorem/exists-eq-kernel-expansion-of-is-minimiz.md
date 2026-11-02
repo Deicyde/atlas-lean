@@ -15,7 +15,12 @@ expansion `∑ i, kerFun H (x i) (c i)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel expansion map centered at the sample points](kernel-expansion.md)
+- [Regularized risk in a reproducing kernel Hilbert space](regularized-risk.md)
+
+## Proof depends on
+
+- [The representer theorem](mem-topological-closure-range-of-is-mini.md)
 
 ## Sources
 

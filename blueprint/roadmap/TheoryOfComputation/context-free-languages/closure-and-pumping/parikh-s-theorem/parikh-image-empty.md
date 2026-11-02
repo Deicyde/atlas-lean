@@ -12,7 +12,11 @@ lean: Cslib.Language.parikhImage_empty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parikh image of a language](parikh-image.md)
+
+## Proof depends on
+
+- [Parikh vector of a word](parikh-vector.md)
 
 ## Sources
 

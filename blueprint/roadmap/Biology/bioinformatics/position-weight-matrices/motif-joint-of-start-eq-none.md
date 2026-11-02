@@ -12,7 +12,14 @@ lean: Cslib.Bioinformatics.Motifs.PWM.motifJoint_of_start_eq_none
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Joint likelihood of a sequence and a motif occurrence](motif-joint.md)
+
+## Proof depends on
+
+- [Site likelihood under a column-independent model](site-lik.md)
+- [Window of a sequence at a given start](window.md)
+- [Likelihood ratio of a motif window](window-ratio.md)
 
 ## Sources
 

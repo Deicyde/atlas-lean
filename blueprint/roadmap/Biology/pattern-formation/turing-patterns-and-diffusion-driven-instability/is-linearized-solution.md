@@ -15,6 +15,10 @@ derivatives `wx`, `wxx`, and `w(·, x)` is differentiable with the prescribed ti
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diffusion matrix of a two-species system](diffusion-matrix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.TuringPatterns](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of a coercive variational problem](variational-solution.md)
+
+## Proof depends on
+
+- [Uniqueness for coercive variational problems](eq-of-forall-bilin.md)
+- [Variational solution satisfies the variational equation](variational-solution-spec.md)
 
 ## Sources
 

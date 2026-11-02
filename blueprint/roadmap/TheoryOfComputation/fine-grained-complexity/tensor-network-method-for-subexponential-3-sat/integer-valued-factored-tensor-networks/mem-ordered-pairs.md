@@ -12,7 +12,7 @@ lean: TensorNetwork.mem_orderedPairs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered pairs representing unordered pairs](ordered-pairs.md)
 
 ## Sources
 

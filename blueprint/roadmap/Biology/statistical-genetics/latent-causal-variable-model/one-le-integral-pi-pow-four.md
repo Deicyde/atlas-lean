@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.LatentCausalVariable.Model.one_le_i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latent causal variable model](model.md)
 
 ## Sources
 

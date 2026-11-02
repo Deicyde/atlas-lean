@@ -13,7 +13,12 @@ are valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Bonferroni local test of an intersection hypothesis](bonferroni-local-test.md)
+
+## Proof depends on
+
+- [Union bound for valid p-values](../bonferroni-correction/measure-exists-mem-le-le.md)
 
 ## Sources
 

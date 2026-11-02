@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.binomPmf_le_binomPmf_of_l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial probability mass function](binom-pmf.md)
+
+## Proof depends on
+
+- [Nonnegativity of binomial probabilities](binom-pmf-nonneg.md)
 
 ## Sources
 

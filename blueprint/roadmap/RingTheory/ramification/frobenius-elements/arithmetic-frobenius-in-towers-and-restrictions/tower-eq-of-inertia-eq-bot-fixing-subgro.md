@@ -18,6 +18,10 @@ intermediate action is `E.fixingSubgroup`; the whole `Gal(L/K)` need not fix `T`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frobenius in a tower is a power of the base Frobenius](tower-eq-of-inertia-eq-bot.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.TowerRestriction](../../../../../sources/v2/MathlibExt.md)

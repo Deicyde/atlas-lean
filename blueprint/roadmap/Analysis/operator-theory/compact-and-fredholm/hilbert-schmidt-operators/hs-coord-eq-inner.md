@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsCoord_eq_inner
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Row vector of a Hilbert–Schmidt matrix](hs-row.md)
 
 ## Sources
 

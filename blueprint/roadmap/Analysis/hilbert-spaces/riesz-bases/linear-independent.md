@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.RieszBasis.IsRieszBasis.linearIndepe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riesz basis of a Hilbert space](is-riesz-basis.md)
 
 ## Sources
 

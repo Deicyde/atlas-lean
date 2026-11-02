@@ -14,7 +14,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS_neutral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected site frequency spectrum under the Poisson random field](expected-sfs.md)
+
+## Proof depends on
+
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
 
 ## Sources
 

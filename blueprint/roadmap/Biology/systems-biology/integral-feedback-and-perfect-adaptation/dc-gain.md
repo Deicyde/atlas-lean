@@ -12,7 +12,7 @@ equilibrium for input `u` is `dcGain * u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-input single-output linear time-invariant system](linear-system.md)
 
 ## Sources
 

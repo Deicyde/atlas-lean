@@ -14,6 +14,10 @@ weighted means.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted mean](weighted-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MendelianRandomization](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [One minus the Cayley transform is invertible](is-unit-one-sub-cayley-transform.md)
 
 ## Sources
 

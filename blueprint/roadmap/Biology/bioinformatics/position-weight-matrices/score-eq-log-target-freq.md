@@ -14,7 +14,7 @@ lean: Cslib.Bioinformatics.Motifs.PWM.score_eq_log_targetFreq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Implicit target frequencies of a score matrix](target-freq.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ the mean `μ` before selection. If `w̄ = 0` it is the junk value `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean fitness of a multivariate normal trait](mean-fitness-mv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.SelectionGradientMultivariate](../../../../sources/v2/MathlibExt.md)

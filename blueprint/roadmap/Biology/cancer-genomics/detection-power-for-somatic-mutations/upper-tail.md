@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.upperTail
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial probability mass function](binom-pmf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.DetectionPower](../../../../sources/v2/MathlibExt.md)

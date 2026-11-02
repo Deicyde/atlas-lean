@@ -13,7 +13,13 @@ histories.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](../ranked-labeled-histories-of-coalescent-trees/lineage-pair.md)
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+- [Random joining](../ranked-labeled-histories-of-coalescent-trees/random-joining.md)
+
+## Proof depends on
+
+- [Every ranked history is equally likely under random joining](../ranked-labeled-histories-of-coalescent-trees/random-joining-singleton-eq-inv.md)
 
 ## Sources
 

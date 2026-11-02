@@ -12,7 +12,16 @@ lean: MathlibExt.Probability.Statistics.PCA.varianceExplained_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proportion of variance explained by principal components](variance-explained.md)
+
+## Proof depends on
+
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+- [Eigenvalues of a positive semidefinite matrix are nonnegative](ordered-eigenvalues-nonneg.md)
+- [Unbiased sample covariance matrix](sample-cov.md)
+- [Sample covariance matrix is symmetric](sample-cov-is-hermitian.md)
+- [Sample covariance matrix is positive semidefinite](sample-cov-pos-semidef.md)
+- [Ordered eigenvalues sum to the trace](sum-ordered-eigenvalues.md)
 
 ## Sources
 

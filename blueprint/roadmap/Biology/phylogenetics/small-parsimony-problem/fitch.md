@@ -13,7 +13,7 @@ once per node, so the recursion makes one call per vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
 
 ## Sources
 

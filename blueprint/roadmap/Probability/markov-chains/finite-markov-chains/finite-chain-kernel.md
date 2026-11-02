@@ -13,7 +13,7 @@ This is the kernel form of the transition matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

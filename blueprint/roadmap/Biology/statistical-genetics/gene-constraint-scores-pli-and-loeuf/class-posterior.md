@@ -16,6 +16,10 @@ rate.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poisson likelihood of an observed count](poisson-lik.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GeneConstraint](../../../../sources/v2/MathlibExt.md)

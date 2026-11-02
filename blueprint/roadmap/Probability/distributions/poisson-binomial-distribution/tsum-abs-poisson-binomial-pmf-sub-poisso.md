@@ -13,7 +13,11 @@ summable and its sum is at most `2 ∑ (p i)²`, where `λ = ∑ p i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+
+## Proof depends on
+
+- [Le Cam's inequality, finite truncations](sum-range-abs-poisson-binomial-pmf-sub-p.md)
 
 ## Sources
 

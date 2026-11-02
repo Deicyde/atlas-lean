@@ -15,6 +15,11 @@ containing `𝔠.map f`, using that `B` has Krull dimension at most one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contraction of a nonzero ideal is nonzero](comap-ne-bot-of-ne-bot.md)
+- [Prime ideals stay prime under denominator clearing](is-prime-map-of-coprime-clear-denom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Ideal.PrimeBijectionConductor](../../../../sources/v2/MathlibExt.md)

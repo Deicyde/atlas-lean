@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.div_le_relevance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relevance update in ARD-NMF](relevance.md)
 
 ## Sources
 

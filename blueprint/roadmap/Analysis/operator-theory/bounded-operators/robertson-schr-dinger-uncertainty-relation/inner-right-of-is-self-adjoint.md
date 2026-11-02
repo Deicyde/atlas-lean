@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty.inner_right_of_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized expectation value of an observable](mean-value.md)
+
+## Proof depends on
+
+- [Expectation inner product of a self-adjoint operator](inner-self-of-is-self-adjoint.md)
 
 ## Sources
 

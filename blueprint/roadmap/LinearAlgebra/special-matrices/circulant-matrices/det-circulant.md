@@ -12,7 +12,14 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.det_circulant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier eigenvalue of a circulant matrix](circulant-eigenvalue.md)
+
+## Proof depends on
+
+- [Circulant matrices are diagonalized by the Fourier matrix](circulant-mul-fourier-matrix.md)
+- [Fourier matrix](fourier-matrix.md)
+- [Inverse Fourier matrix](fourier-matrix-inv.md)
+- [Fourier matrix times its inverse is the identity](fourier-matrix-mul-inv.md)
 
 ## Sources
 

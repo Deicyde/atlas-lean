@@ -14,6 +14,10 @@ interval `[i, i + len)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

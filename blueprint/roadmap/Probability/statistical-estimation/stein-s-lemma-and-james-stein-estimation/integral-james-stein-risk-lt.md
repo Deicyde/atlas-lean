@@ -13,7 +13,12 @@ estimator has strictly smaller quadratic risk than `X` at every mean `θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [James–Stein estimator](james-stein.md)
+
+## Proof depends on
+
+- [James–Stein](integrable-and-integral-james-stein-risk.md)
+- [Quadratic risk of the usual Gaussian mean estimator](integral-sum-sq-sub-pi-gaussian-real.md)
 
 ## Sources
 

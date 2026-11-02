@@ -12,7 +12,12 @@ if every path between a node of `X` and a node of `Y` is blocked by `Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+
+## Proof depends on
+
+- [Path in the skeleton of a Bayesian network](is-path.md)
+- [Blocked path](path-blocked.md)
 
 ## Sources
 

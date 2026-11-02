@@ -15,7 +15,7 @@ condition, for `n ≤ m`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Antitone likelihood ratio](has-antitone-likelihood-ratio-on.md)
 
 ## Sources
 

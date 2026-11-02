@@ -14,6 +14,10 @@ population.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean allele frequency of a subdivided population](mean-freq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.FStatistics](../../../../sources/v2/MathlibExt.md)

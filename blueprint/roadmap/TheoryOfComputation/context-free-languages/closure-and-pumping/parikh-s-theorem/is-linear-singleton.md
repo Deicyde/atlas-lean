@@ -12,7 +12,11 @@ lean: Cslib.Language.isLinear_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear set of vectors](is-linear.md)
+
+## Proof depends on
+
+- [Linear combination of period vectors](lin-comb.md)
 
 ## Sources
 

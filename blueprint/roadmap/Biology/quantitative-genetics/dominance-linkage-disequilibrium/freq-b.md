@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.DominanceLD.RandomUnion.freqB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-locus diploid genotype under random union of gametes](random-union.md)
 
 ## Sources
 

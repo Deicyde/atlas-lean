@@ -13,7 +13,14 @@ of `A`, then `(w - i) / (w + i)` is in the spectrum of `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Resolvent factorization for the Cayley transform](algebra-map-sub-cayley-transform.md)
+- [Self-adjoint operator plus $i$ is invertible](is-unit-add-i-smul-one-of-is-self-adjoin.md)
+- [Inverse of a self-adjoint operator plus $i$ is a unit](is-unit-ring-inverse-add-i-of-is-self-ad.md)
+- [Nonzero scalar operators are units](is-unit-smul-one.md)
 
 ## Sources
 

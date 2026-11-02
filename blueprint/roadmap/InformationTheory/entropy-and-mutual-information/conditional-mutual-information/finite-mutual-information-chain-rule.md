@@ -13,7 +13,14 @@ read as a joint law of `X` and the pair `(Y, Z)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional mutual information of a finite joint law](finite-conditional-mutual-information.md)
+- [Mutual information of a finite joint law](finite-mutual-information.md)
+
+## Proof depends on
+
+- [Conditional mutual information in terms of entropies](finite-conditional-mutual-information-eq.md)
+- [Mutual information in terms of entropies](finite-mutual-information-eq.md)
+- [Shannon entropy](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormDerivative.fderiv_norm_apply_rea
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Derivative of the norm applied to a vector](fderiv-norm-apply.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NormDerivative](../../../../sources/v2/MathlibExt.md)

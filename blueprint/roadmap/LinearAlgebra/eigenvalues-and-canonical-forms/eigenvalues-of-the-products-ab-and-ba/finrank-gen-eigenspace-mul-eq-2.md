@@ -15,6 +15,10 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.Matrix.finrank_genEigenspace_m
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized eigenspaces of fg and gf have equal dimension](finrank-gen-eigenspace-comp-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

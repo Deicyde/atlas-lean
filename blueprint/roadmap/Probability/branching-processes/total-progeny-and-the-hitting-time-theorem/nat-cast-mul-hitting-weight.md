@@ -15,7 +15,14 @@ with the cycle lemma.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hitting weight of first-passage step sequences](hitting-weight.md)
+- [Walk weight of step sequences ending at zero](walk-weight.md)
+
+## Proof depends on
+
+- [First passage of the exploration walk](is-first-passage.md)
+- [Cycle lemma](card-filter-is-first-passage-rotate.md)
+- [Cyclic shift of a tuple](rotate.md)
 
 ## Sources
 

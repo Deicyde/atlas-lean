@@ -14,7 +14,18 @@ alignment exists and, by the band lemma, it is `w`-banded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banded alignment score](banded-score.md)
+- [Needleman–Wunsch score](../pairwise-sequence-alignment/nw-score.md)
+
+## Proof depends on
+
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Valid alignment of two sequences](../pairwise-sequence-alignment/is-alignment.md)
+- [Banded alignments](is-banded.md)
+- [Score of an alignment](../pairwise-sequence-alignment/alignment-score.md)
+- [Banded alignment is exact when some optimal alignment is banded](banded-score-eq-nw-score-of-banded-optim.md)
+- [Needleman–Wunsch is attained](../pairwise-sequence-alignment/exists-alignment-score-eq-nw-score.md)
+- [The band lemma](is-banded-of-neg-le-alignment-score.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ ancestral allele (`q 3 = 0`) this is `(q₁ - q₂) (q₃ - q₄)`, as in the un
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polarized ABBA site-pattern indicator](abba-pol.md)
+- [Polarized BABA site-pattern indicator](baba-pol.md)
+- [Expectation under independent haplotype sampling](sample-expect.md)
+
+## Proof depends on
+
+- [Sampling expectation of a product factorizes](sample-expect-prod.md)
+- [Sampling expectation commutes with subtraction](sample-expect-sub.md)
 
 ## Sources
 

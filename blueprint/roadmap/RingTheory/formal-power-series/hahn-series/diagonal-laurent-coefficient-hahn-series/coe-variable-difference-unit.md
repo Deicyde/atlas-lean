@@ -12,7 +12,7 @@ lean: HahnSeries.coe_variableDifferenceUnit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Variable difference as a unit of Hahn series](variable-difference-unit.md)
 
 ## Sources
 

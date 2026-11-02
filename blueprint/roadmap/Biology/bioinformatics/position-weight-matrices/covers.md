@@ -14,6 +14,10 @@ sequence has `b` at offset `i` of some possible occurrence. This keeps the M-ste
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sequence position of a motif column](site-pos.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

@@ -13,6 +13,10 @@ lean: Cslib.OutputReachability.ReachesOutput
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Resource-bounded active step](bounded-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Relation.OutputReachability](../../../../sources/v2/CSLibExt.md)

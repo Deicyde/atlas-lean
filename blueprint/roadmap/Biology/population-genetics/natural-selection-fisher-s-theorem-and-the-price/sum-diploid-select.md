@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.sum_diploidSelect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](diploid-mean-fitness.md)
+- [One generation of diploid viability selection](diploid-select.md)
+
+## Proof depends on
+
+- [Marginal fitness of an allele](marginal-fitness.md)
 
 ## Sources
 

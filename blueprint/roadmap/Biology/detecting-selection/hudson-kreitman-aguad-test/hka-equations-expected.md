@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.hkaEquations_expected
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKA expected divergence](hka-div-mean.md)
+- [HKA's estimating equations](hka-equations.md)
+- [HKA expected number of segregating sites](hka-poly-mean.md)
+
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
 
 ## Sources
 

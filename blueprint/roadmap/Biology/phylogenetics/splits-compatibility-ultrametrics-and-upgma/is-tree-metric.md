@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.IsUltrametric.isTreeMetric
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ultrametric on taxa](is-ultrametric.md)
+- [Tree metric](../tree-metrics-and-the-four-point-condition/is-tree-metric.md)
+
+## Proof depends on
+
+- [Ultrametrics satisfy the four-point condition](four-point-condition.md)
+- [Buneman's theorem, converse direction](../tree-metrics-and-the-four-point-condition/is-tree-metric-of-four-point-condition.md)
 
 ## Sources
 

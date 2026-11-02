@@ -13,7 +13,12 @@ largest valid offset of the target diagonal before sliding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear gap penalties](linear-penalties.md)
+
+## Proof depends on
+
+- [Largest valid offset on a diagonal](max-offset.md)
+- [Match extension (slide) along a diagonal](slide.md)
 
 ## Sources
 

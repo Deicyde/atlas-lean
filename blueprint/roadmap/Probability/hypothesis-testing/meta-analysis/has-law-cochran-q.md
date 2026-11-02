@@ -14,7 +14,13 @@ freedom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cochran's heterogeneity statistic Q](cochran-q.md)
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Cochran's Q as a squared projection norm](cochran-q-eq-norm-sq.md)
+- [Cochran's theorem](../../linear-models-multivariate/cochran-s-theorem/std-gaussian-map-norm-sq-star-projection.md)
 
 ## Sources
 

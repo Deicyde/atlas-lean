@@ -13,7 +13,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.norm_sub_galerkinSolution_l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Galerkin solution](galerkin-solution.md)
+- [Solution of a coercive variational problem](variational-solution.md)
+
+## Proof depends on
+
+- [Céa's lemma](norm-sub-galerkin-solution-le.md)
 
 ## Sources
 

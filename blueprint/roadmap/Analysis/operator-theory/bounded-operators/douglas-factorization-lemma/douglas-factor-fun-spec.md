@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DouglasLemma.douglasFactorFun_spec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Underlying function of the Douglas factor](douglas-factor-fun.md)
+
+## Proof depends on
+
+- [Preimages in the orthogonal complement of the kernel under range inclusion](exists-mem-orthogonal-apply.md)
 
 ## Sources
 

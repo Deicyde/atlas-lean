@@ -13,7 +13,7 @@ equivalence: conjugate a finite-rank approximant by the equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximation property](has-approximation-property.md)
 
 ## Sources
 

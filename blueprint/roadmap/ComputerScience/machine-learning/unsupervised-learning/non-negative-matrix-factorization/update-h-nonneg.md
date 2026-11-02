@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.NMF.updateH_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lee–Seung multiplicative update of H](update-h.md)
 
 ## Sources
 

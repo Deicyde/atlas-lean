@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.fockEval_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+- [Fock kernel at the origin is the first basis vector](fock-kernel-zero.md)
 
 ## Sources
 

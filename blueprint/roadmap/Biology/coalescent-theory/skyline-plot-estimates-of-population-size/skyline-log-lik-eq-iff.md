@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.skylineLogLik_eq_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log-likelihood of one coalescent interval in the skyline model](skyline-log-lik.md)
 
 ## Sources
 

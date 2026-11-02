@@ -14,6 +14,10 @@ whose top eigenvectors are the axes of variation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Patterson's normalized genotype matrix](normalized-genotype.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.Eigenstrat](../../../../sources/v2/MathlibExt.md)

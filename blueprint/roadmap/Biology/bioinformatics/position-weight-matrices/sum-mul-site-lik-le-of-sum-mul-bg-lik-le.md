@@ -14,7 +14,15 @@ threshold test `score > t` has at most its power.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Log-odds matrix of a site model](log-odds.md)
+- [Score of a site under a position weight matrix](score.md)
+- [Site likelihood under a column-independent model](site-lik.md)
+
+## Proof depends on
+
+- [The log-odds score is a log-likelihood ratio](score-log-odds.md)
+- [Neyman–Pearson lemma](../../../Probability/hypothesis-testing/neyman-pearson-dominated-two-simple.md)
 
 ## Sources
 

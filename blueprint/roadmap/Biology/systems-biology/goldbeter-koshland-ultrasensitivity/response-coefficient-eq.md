@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Dynamics.GoldbeterKoshland.responseCoefficient_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Response coefficient of a covalent modification cycle](response-coefficient.md)
+
+## Proof depends on
+
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
 
 ## Sources
 

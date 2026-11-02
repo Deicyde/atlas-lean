@@ -15,7 +15,18 @@ have expectation `0`. The integrability hypotheses make both expectations meanin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unpolarized ABBA site-pattern indicator](abba.md)
+- [Unpolarized BABA site-pattern indicator](baba.md)
+- [Expectation under independent haplotype sampling](sample-expect.md)
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+
+## Proof depends on
+
+- [ABBA–BABA equals `f4`](integral-sample-expect-baba-sub-abba.md)
+- [Sampling expectation commutes with subtraction](sample-expect-sub.md)
+- [f4 vanishes for edge-disjoint paths](../patterson-s-f-statistics/f4-eq-zero-of-disjoint.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
 
 ## Sources
 

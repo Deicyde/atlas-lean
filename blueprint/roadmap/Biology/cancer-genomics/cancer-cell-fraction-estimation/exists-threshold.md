@@ -14,7 +14,12 @@ level `γ` there is `a₀` such that, for `a ≤ n`, the mutation is called clon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid model for the cancer cell fraction](grid-model.md)
+- [Clonal call for a mutation](is-clonal.md)
+
+## Proof depends on
+
+- [The clonal call is upward closed in the read count](mono.md)
 
 ## Sources
 

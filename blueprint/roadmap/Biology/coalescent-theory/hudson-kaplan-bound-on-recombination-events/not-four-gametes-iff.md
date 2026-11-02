@@ -14,7 +14,8 @@ of one rooted tree are.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Haplotypes carrying an allele at a site](carriers.md)
 
 ## Sources
 

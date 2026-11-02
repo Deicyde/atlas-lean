@@ -19,7 +19,19 @@ points and has a nonzero constant term (the sizes at time `0` differ).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
+- [Size function of a piecewise-constant history](size-fn.md)
+- [Expected time to the first coalescence](first-coal-mean.md)
+
+## Proof depends on
+
+- [Closed form of the first-coalescence times](choose-two-mul-first-coal-mean.md)
+- [Dual cumulative rate inverts the cumulative rate](cum-rate-dual-cum-rate.md)
+- [Coalescent-time breakpoints are strictly increasing](cum-rate-start-lt.md)
+- [Dual history in coalescent time](dual.md)
+- [Size function on a piece equals the piece size](size-fn-eq.md)
+- [Nonnegativity of piece start times](start-nonneg.md)
+- [Cumulative coalescence intensity](cum-rate.md)
 
 ## Sources
 

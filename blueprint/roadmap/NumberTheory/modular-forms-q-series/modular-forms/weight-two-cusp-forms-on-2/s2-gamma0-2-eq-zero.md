@@ -16,6 +16,12 @@ level-one dimension formula, and the norm vanishes only when `f` does.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Γ₀(2) has index 3 in SL(2, ℤ)](gamma0-two-index-eq-three.md)
+- [Norm of a cusp form](norm.md)
+- [Norm of a cusp form vanishes only for the zero form](norm-eq-zero-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.CuspFormGamma0Two](../../../../../sources/v2/MathlibExt.md)

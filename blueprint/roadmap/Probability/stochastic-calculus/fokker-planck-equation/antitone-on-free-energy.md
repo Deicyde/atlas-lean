@@ -13,7 +13,12 @@ time set `I` the free energy is nonincreasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [No-flux solution of the gradient-drift Fokker–Planck equation](is-no-flux-solution-on.md)
+- [Free energy of a Fokker–Planck density](free-energy.md)
+
+## Proof depends on
+
+- [Dissipation identity](has-deriv-at-free-energy.md)
 
 ## Sources
 

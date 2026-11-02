@@ -13,7 +13,11 @@ squared imaginary part of the centered inner product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+
+## Proof depends on
+
+- [Commutator expectation as the skew part of the centered inner product](commutator-inner.md)
 
 ## Sources
 

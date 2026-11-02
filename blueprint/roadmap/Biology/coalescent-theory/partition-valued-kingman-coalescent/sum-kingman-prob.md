@@ -14,7 +14,14 @@ the Lah number `L(n, k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Kingman's formula](kingman-prob.md)
+
+## Proof depends on
+
+- [Law of Kingman's jump chain after m jumps](jump-law.md)
+- [Kingman's formula](jump-law-eq.md)
+- [Jump-chain law sums to one](sum-jump-law.md)
 
 ## Sources
 

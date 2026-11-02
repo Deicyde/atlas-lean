@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzSliceLinMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
+- [Diagonal slice as a linear map](toeplitz-slice-lin-map.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MathlibExt.Probability.PoissonWeakConvergence.tendsto_binomialPoissonAppro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial approximation to the Poisson law](binomial-poisson-approx.md)
+- [Poisson law as a probability measure](poisson-prob-measure.md)
+
+## Proof depends on
+
+- [Convergence of characteristic functions to the Poisson law](tendsto-char-fun-binomial-poisson-approx.md)
 
 ## Sources
 

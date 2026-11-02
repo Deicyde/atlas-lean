@@ -12,7 +12,13 @@ lean: ProbabilityTheory.IsRateMatrix.ctmcJumpMatrix_mem_rowStochastic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Jump matrix of a rate matrix](ctmc-jump-matrix.md)
+
+## Proof depends on
+
+- [Nonnegativity of the jump matrix](ctmc-jump-matrix-nonneg.md)
+- [Rows of the jump matrix sum to one](sum-ctmc-jump-matrix.md)
 
 ## Sources
 

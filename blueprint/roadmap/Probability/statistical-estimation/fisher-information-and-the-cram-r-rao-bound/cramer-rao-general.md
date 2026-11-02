@@ -17,7 +17,11 @@ sign at `θ`, then `g'(θ)² / I(θ) ≤ Var_θ T`. When `I(θ) = 0` the left si
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](fisher-information.md)
+
+## Proof depends on
+
+- [Cramér–Rao inequality, multiplicative form](sq-deriv-le-fisher-information-mul.md)
 
 ## Sources
 

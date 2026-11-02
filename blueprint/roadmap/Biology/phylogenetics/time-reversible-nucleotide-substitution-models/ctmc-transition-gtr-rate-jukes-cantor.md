@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.ctmcTransition_gtrRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [The Jukes–Cantor transition matrix is the matrix exponential of the rate matrix](../jukes-cantor-model/jc-prob-eq-exp.md)
+- [Jukes–Cantor rate matrix as a matrix](../jukes-cantor-model/jc-rate-matrix.md)
+- [JC69 is the equal-rates GTR model](gtr-rate-jukes-cantor.md)
 
 ## Sources
 

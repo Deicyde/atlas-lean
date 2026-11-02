@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.norm_toeplitzSlice_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Diagonal slices do not increase norms](norm-toeplitz-slice-lin-map-apply-le.md)
 
 ## Sources
 

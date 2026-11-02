@@ -13,7 +13,11 @@ or closes an exterior branch `(i, len)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+
+## Proof depends on
+
+- [Zuker's recursion](zuker-vw.md)
 
 ## Sources
 

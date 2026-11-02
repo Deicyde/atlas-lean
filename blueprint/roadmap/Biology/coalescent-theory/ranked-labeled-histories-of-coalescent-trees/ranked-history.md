@@ -15,6 +15,10 @@ merged lineage takes the smaller label; the others keep their relative order).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unordered pairs of lineages](lineage-pair.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.Topology](../../../../sources/v2/MathlibExt.md)

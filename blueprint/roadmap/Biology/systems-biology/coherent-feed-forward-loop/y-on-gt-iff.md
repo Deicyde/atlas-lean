@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Dynamics.FeedForwardLoop.yOn_gt_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [ON-step delay of the feed-forward loop](on-delay.md)
+- [Intermediate factor after an ON step](y-on.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.CramerRateFunction.le_cramerRateFunction_of_integra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
+
+## Proof depends on
+
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [Extended log moment agrees with the real one at integrable directions](extended-log-mgfvec-eq-coe-log-mgfvec.md)
+- [Extended Fenchel–Young inequality for the Cramér rate function](le-cramer-rate-function.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.exists_eq_cons_of_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestral paths from an individual](anc-paths.md)
+
+## Proof depends on
+
+- [Ancestral paths are nonempty with the starting individual as head](head-of-mem-anc-paths.md)
 
 ## Sources
 

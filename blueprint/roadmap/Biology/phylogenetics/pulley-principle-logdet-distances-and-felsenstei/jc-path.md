@@ -14,6 +14,10 @@ of the branch transition matrices `jcProb μ t`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinZone](../../../../sources/v2/CSLibExt.md)

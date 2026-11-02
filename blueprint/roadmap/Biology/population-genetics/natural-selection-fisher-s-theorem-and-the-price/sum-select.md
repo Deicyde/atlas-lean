@@ -13,7 +13,8 @@ the division by zero would give `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a population](mean-fitness.md)
+- [One generation of haploid selection](select.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ likelihood-ratio statistic `2 (sup_θ ℓₙ θ - ℓₙ θ₀)` converges in di
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Wilks' theorem (simple null)](tendsto-in-distribution-two-mul-log-like.md)
 
 ## Sources
 

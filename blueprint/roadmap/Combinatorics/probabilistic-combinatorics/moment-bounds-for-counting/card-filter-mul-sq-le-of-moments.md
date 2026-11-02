@@ -16,6 +16,10 @@ Neither the finite set nor `A`, `t`, or `s` is required to be nonzero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chebyshev-type count bound from the sum of squares](card-filter-mul-sq-le-sum-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Finset.MomentBounds](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ the logistic frequency reaches `1 - a` at time `(2 / r) log ((1 - a) / a)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit solution of the logistic equation](logistic.md)
 
 ## Sources
 

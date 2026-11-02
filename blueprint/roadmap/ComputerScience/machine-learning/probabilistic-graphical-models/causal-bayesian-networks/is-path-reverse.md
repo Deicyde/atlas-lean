@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.isPath_reverse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Path in the skeleton of a Bayesian network](is-path.md)
+
+## Proof depends on
+
+- [Adjacency in the skeleton of a Bayesian network](adj.md)
+- [Edge of a Bayesian network](edge.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: TensorNetwork.Factored.card_merge_S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Merging vertices of a factored tensor network](merge.md)
+
+## Proof depends on
+
+- [Number of default-padded finite tuples](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/card-pi-finset-on.md)
 
 ## Sources
 

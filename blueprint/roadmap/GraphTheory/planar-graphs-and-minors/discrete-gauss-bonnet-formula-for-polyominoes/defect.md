@@ -11,7 +11,13 @@ lean: StatMech.AngleDefect.defect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+- [Lattice point as a vertex of the cell complex](vtx.md)
+
+## Proof depends on
+
+- [Cell degree of a lattice vertex](cell-deg.md)
+- [Edge degree of a lattice vertex](edge-deg.md)
 
 ## Sources
 

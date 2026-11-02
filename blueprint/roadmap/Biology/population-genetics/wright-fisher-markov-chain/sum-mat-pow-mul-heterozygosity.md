@@ -14,7 +14,14 @@ lean: MathlibExt.Biology.PopulationGenetics.WrightFisherChain.sum_matPow_mul_het
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heterozygosity of a Wright–Fisher state](heterozygosity.md)
+- [Neutral Wright–Fisher transition matrix](wright-fisher.md)
+- [Matrix powers of a stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+
+## Proof depends on
+
+- [One-step decay of heterozygosity under Wright–Fisher drift](sum-prob-mul-heterozygosity.md)
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ of positive probability with the same `b` have the same propensity. (Theorem 1 i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Propensity score](propensity.md)
 
 ## Sources
 

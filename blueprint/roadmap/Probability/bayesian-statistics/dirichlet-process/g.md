@@ -11,7 +11,11 @@ lean: ProbabilityTheory.StickBreakingProcess.G
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+
+## Proof depends on
+
+- [Stick-breaking measure](stick-breaking-measure.md)
 
 ## Sources
 

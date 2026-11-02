@@ -13,7 +13,12 @@ the genotype does not change the EIGENSTRAT statistic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [EIGENSTRAT association statistic](chi-sq.md)
+
+## Proof depends on
+
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+- [Stratification within the axis span does not change the residual](adjusted-add-of-mem.md)
 
 ## Sources
 

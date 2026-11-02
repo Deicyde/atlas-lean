@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.Normed.Lp.RellichKondrachov.norm_sub_lpTrunc_sq_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+
+## Proof depends on
+
+- [Squared $\ell^2$ norm as a sum of squared coordinates](norm-sq-eq-tsum.md)
 
 ## Sources
 

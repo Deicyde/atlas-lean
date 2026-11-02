@@ -13,7 +13,7 @@ inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear combination of period vectors](lin-comb.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: MathlibExt.Probability.FokkerPlanck.fokkerPlanckOp_gibbs_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fokker–Planck operator](fokker-planck-op.md)
+- [Gibbs density](gibbs.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+
+## Proof depends on
+
+- [Divergence of a vector field](divergence.md)
+- [Probability flux of a diffusion](flux.md)
+- [The Gibbs density has zero flux](flux-gibbs-eq-zero.md)
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
 
 ## Sources
 

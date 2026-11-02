@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.MaxNTimesCoverage.nCoverage_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [The n-times coverage function](n-coverage.md)
+
+## Proof depends on
+
+- [Cover count of an element under a family of overlays](cover-count.md)
+- [Monotonicity of the cover count in the overlays](cover-count-mono.md)
 
 ## Sources
 

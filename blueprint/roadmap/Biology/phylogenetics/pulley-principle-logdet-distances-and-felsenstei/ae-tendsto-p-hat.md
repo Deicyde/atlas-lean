@@ -14,7 +14,11 @@ probability that the two taxa differ at a site.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical p-distance](p-hat.md)
+
+## Proof depends on
+
+- [The Monte Carlo estimator is consistent](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/tendsto-mc-estimate.md)
 
 ## Sources
 

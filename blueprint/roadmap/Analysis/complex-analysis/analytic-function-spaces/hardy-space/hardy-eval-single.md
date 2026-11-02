@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.hardyEval_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Hardy space](hardy-eval.md)
+
+## Proof depends on
+
+- [Szegő kernel of the Hardy space](szego-kernel.md)
 
 ## Sources
 

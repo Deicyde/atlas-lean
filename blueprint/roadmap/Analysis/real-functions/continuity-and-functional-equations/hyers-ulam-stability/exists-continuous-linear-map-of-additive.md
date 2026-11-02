@@ -19,6 +19,11 @@ at `0` by the dyadic scaling argument.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hyers' theorem (Hyers–Ulam stability of the Cauchy equation)](exists-add-monoid-hom-of-additive-defect.md)
+- [Norm of a natural-number multiple](norm-nsmul-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.HyersUlam](../../../../../sources/v2/MathlibExt.md)

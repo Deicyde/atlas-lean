@@ -15,6 +15,10 @@ domain is a domain.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tensor products of domains over an algebraically closed field](is-domain-of-is-alg-closed-of-finite-typ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.TensorProduct.Domain](../../../../sources/v2/MathlibExt.md)

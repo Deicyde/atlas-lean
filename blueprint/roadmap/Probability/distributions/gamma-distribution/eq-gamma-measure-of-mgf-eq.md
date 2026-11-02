@@ -16,6 +16,10 @@ gamma law.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential moments of the gamma law are finite exactly below the rate](integrable-exp-set-gamma-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Gamma](../../../../sources/v2/MathlibExt.md)

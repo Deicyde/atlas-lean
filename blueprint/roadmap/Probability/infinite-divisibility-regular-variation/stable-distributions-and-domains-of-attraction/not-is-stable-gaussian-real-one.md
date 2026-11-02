@@ -13,7 +13,12 @@ convolution variance is `4v`, while every such affine dilation has variance `16v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stable distribution of a given index](is-stable.md)
+
+## Proof depends on
+
+- [Convolution powers of a Gaussian are Gaussian](conv-pow-gaussian-real.md)
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
 
 ## Sources
 

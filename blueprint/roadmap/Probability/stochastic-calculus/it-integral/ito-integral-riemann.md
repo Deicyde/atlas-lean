@@ -13,7 +13,8 @@ lean: ProbabilityTheory.ElementaryIntegrand.itoIntegral_riemann
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Left-point step approximation of a deterministic integrand](riemann.md)
 
 ## Sources
 

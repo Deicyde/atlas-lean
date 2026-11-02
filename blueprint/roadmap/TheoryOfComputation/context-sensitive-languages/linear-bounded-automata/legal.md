@@ -15,7 +15,7 @@ legality requires `h < n` for left moves as well.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Head move of a linear bounded automaton](lbamove.md)
 
 ## Sources
 

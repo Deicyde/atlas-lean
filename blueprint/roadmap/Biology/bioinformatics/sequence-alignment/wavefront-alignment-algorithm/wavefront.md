@@ -11,7 +11,11 @@ lean: Cslib.Algorithms.Lean.Wavefront.wavefront
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear gap penalties](linear-penalties.md)
+
+## Proof depends on
+
+- [Fuelled wavefront recurrence](wavefront-aux.md)
 
 ## Sources
 

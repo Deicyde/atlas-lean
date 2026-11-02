@@ -15,7 +15,15 @@ stationary density, yet its flux at `(1, 0)` is nonzero, so it is not the gradie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Divergence of a vector field](divergence.md)
+- [Probability flux of a diffusion](flux.md)
+- [Gibbs density](gibbs.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+
+## Proof depends on
+
+- [Rotational drifts share the Gibbs stationary density](divergence-flux-rotational-gibbs.md)
+- [Flux of the Gibbs density under a rotational gradient drift](flux-rotational-gibbs.md)
 
 ## Sources
 

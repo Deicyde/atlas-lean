@@ -14,7 +14,8 @@ coalescent process is not formalized here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
+- [Ranked labeled history](ranked-history.md)
 
 ## Sources
 

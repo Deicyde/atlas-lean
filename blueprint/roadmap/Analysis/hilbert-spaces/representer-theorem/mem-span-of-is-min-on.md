@@ -16,6 +16,10 @@ Riesz representers of the functionals `L i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Projection onto Riesz representers with Pythagorean residual](exists-mem-span-norm-sq-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RepresenterTheorem](../../../../sources/v2/MathlibExt.md)

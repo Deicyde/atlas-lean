@@ -14,7 +14,15 @@ effect, is the ABF of the summary statistics `olsEffect x y` and `olsVar σ2 x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal least-squares effect estimate](ols-effect.md)
+- [Sampling variance of the least-squares effect estimate](ols-var.md)
+- [Covariance of the single-effect regression model](ser-cov.md)
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
+- [Multivariate Gaussian density function](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [Wakefield's closed form](wakefield-abf-eq.md)
 
 ## Sources
 

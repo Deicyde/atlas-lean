@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScore.IsStandardized.ldCorr_sq_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](is-standardized.md)
+- [Normalized cross product of genotype markers](ld-corr.md)
 
 ## Sources
 

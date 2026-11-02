@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.eq_one_of_meanTim
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
+- [Coalescence indicator at locus B](coalesced-b.md)
+- [Rate matrix of the two-locus coalescent](two-locus-rate.md)
+
+## Proof depends on
+
+- [Sum over the two-locus ancestral states](sum-univ.md)
+- [Common denominator of the two-locus moments](two-locus-denom.md)
+- [Positivity of the two-locus moment denominator](two-locus-denom-pos.md)
 
 ## Sources
 

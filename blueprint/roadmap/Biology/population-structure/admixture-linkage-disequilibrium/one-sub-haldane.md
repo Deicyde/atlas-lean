@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.one_sub_haldane
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/haldane.md)
 
 ## Sources
 

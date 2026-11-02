@@ -15,6 +15,10 @@ probability `P(T = n)` that the total progeny of `k` ancestors is `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [First passage of the exploration walk](is-first-passage.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BranchingProcess.TotalProgeny](../../../../sources/v2/MathlibExt.md)

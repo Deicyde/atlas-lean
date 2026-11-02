@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.isHilbertSchmidt_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Sum of Hilbert–Schmidt matrices is Hilbert–Schmidt](is-hilbert-schmidt-add.md)
+- [Negation preserves the Hilbert–Schmidt property](is-hilbert-schmidt-neg.md)
 
 ## Sources
 

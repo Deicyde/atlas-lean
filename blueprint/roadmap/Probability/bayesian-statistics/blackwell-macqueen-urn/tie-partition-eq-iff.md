@@ -12,7 +12,11 @@ lean: ProbabilityTheory.tiePartition_eq_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tie partition of a sequence of draws](tie-partition.md)
+
+## Proof depends on
+
+- [Blocks of the tie partition are classes of equal entries](mem-part-tie-partition.md)
 
 ## Sources
 

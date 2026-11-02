@@ -13,7 +13,12 @@ half the expected number of copies of `a` in a parental genotype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of a random gamete](gamete.md)
+
+## Proof depends on
+
+- [Mendel's law of segregation](transmit.md)
+- [Allele transmission law of a parental genotype](transmit-apply.md)
 
 ## Sources
 

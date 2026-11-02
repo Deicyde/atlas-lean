@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Lean.gapColumns
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
 
 ## Sources
 

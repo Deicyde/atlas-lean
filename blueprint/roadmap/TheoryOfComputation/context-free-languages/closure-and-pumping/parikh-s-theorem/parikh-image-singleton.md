@@ -13,7 +13,8 @@ Parikh vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parikh image of a language](parikh-image.md)
+- [Parikh vector of a word](parikh-vector.md)
 
 ## Sources
 

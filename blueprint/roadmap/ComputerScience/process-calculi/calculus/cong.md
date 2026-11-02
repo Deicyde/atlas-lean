@@ -15,7 +15,7 @@ unfolds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Processes of the π-calculus](proc.md)
 
 ## Sources
 

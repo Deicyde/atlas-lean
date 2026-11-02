@@ -13,7 +13,7 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.relevance_eq_floor_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relevance update in ARD-NMF](relevance.md)
 
 ## Sources
 

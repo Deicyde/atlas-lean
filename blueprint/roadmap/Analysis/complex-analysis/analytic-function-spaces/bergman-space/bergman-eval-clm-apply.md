@@ -13,7 +13,8 @@ with the Bergman kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+- [Bounded point-evaluation functional on the Bergman space](bergman-eval-clm.md)
 
 ## Sources
 

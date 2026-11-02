@@ -14,7 +14,7 @@ geometric size `e^{-τ} (1 - e^{-τ})^{j-1}`; mixing over the founding-time dens
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lea–Coulson clone-size law](clone-prob.md)
 
 ## Sources
 

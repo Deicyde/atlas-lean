@@ -15,6 +15,11 @@ least `1`, only `k ≤ n` contribute.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lea–Coulson clone-size law](clone-prob.md)
+- [Convolution power of a sequence on the naturals](conv-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.LuriaDelbruck](../../../../sources/v2/MathlibExt.md)

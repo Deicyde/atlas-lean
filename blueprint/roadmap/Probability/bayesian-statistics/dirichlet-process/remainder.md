@@ -11,7 +11,11 @@ lean: ProbabilityTheory.StickBreakingProcess.remainder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+
+## Proof depends on
+
+- [Leftover stick in stick breaking](stick-remainder.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ state and the tropical zero (cost `⊤`) at every other state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min-plus cost semiring](cost.md)
 
 ## Sources
 

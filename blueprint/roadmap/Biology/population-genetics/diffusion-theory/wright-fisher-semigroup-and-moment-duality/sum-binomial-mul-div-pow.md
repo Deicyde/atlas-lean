@@ -15,7 +15,7 @@ parents of `n` sampled genes. Holds for every real `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher transition probability of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-prob.md)
 
 ## Sources
 

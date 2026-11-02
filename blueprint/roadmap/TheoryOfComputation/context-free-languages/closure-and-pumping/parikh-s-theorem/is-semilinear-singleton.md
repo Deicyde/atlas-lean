@@ -12,7 +12,12 @@ lean: Cslib.Language.isSemilinear_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Semilinear set of vectors](is-semilinear.md)
+
+## Proof depends on
+
+- [Linear sets are semilinear](is-semilinear-2.md)
+- [A singleton set of vectors is linear](is-linear-singleton.md)
 
 ## Sources
 

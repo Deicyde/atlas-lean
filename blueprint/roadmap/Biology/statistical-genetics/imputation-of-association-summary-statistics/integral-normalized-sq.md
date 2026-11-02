@@ -14,7 +14,12 @@ moment `1`, so it has unit variance under the centred null.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
+- [Imputed summary statistic](imputed.md)
+
+## Proof depends on
+
+- [Second moment of the imputed statistic](integral-imputed-sq.md)
 
 ## Sources
 

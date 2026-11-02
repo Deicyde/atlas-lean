@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.mem_ancPaths_of_pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestral paths from an individual](anc-paths.md)
 
 ## Sources
 

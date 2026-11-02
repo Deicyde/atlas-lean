@@ -14,7 +14,12 @@ with respect to the trait means, `S = P ∇_μ log w̄(μ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a multivariate normal trait](mean-fitness-mv.md)
+- [Multivariate directional selection differential](selection-differential-mv.md)
+
+## Proof depends on
+
+- [Lande's gradient of mean fitness for multivariate traits](has-gradient-at-mean-fitness-mv.md)
 
 ## Sources
 

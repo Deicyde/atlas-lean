@@ -13,7 +13,12 @@ equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State of two lineages in the island model](pair-state.md)
+
+## Proof depends on
+
+- [Mean coalescence time between demes](between-time.md)
+- [Mean coalescence time within a deme](within-time.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: Matrix.frischWaughLovell_eq_div
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frisch–Waugh–Lovell, residualized form](frisch-waugh-lovell-residual.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.FrischWaughLovell](../../../../sources/v2/MathlibExt.md)

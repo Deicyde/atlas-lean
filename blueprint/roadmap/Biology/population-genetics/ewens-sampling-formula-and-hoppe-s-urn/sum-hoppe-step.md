@@ -13,7 +13,7 @@ the partitions of `k + 1` sum to one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One step of Hoppe's urn](hoppe-step.md)
 
 ## Sources
 

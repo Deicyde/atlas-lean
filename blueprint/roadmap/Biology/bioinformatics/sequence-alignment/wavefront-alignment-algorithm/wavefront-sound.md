@@ -13,7 +13,19 @@ of the corresponding prefixes with cost at most `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../pairwise-sequence-alignment/alignment.md)
+- [Valid alignment of two sequences](../pairwise-sequence-alignment/is-alignment.md)
+- [Linear gap penalties](linear-penalties.md)
+- [Cost of an alignment under linear gap penalties](cost.md)
+- [Largest valid offset on a diagonal](max-offset.md)
+- [Furthest-reaching wavefront offset](wavefront.md)
+
+## Proof depends on
+
+- [Cost of an alignment column under linear gap penalties](column-cost.md)
+- [Fuelled extension of matches along a diagonal](extend.md)
+- [Match extension (slide) along a diagonal](slide.md)
+- [Fuelled wavefront recurrence](wavefront-aux.md)
 
 ## Sources
 

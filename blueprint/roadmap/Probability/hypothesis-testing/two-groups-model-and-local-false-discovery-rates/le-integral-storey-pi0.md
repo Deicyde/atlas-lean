@@ -14,7 +14,8 @@ assumed; the non-null p-values are arbitrary measurable functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Storey's estimator of the null proportion](storey-pi0.md)
 
 ## Sources
 

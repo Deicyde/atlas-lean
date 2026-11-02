@@ -11,7 +11,11 @@ lean: Cslib.Language.LinearBoundedAutomaton.language
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Acceptance by a linear bounded automaton](accepts.md)
 
 ## Sources
 

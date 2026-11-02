@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.isValidPValue_of_hasLaw_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](is-valid-pvalue.md)
 
 ## Sources
 

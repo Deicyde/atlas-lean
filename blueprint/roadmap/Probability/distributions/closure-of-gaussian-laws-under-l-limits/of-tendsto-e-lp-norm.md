@@ -15,6 +15,10 @@ a separable Banach space `E` and `X n → Y` in `L²(P)`, then `Y` is Gaussian.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Closure of real Gaussian laws under `L²` limits](of-tendsto-e-lp-norm-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianL2Limit](../../../../sources/v2/MathlibExt.md)

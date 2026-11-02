@@ -15,6 +15,10 @@ canonical coefficient map of `q` followed by the corresponding rescaling.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coefficients of a weighted rescaling of a rational power series](coeff-rescale-map-of-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.MvPowerSeries.WeightedRescale](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Each choice pattern contributes one entry, so the list has `2 ^ numInternal t` e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
 
 ## Sources
 

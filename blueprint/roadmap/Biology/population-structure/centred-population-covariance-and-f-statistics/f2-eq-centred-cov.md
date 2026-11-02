@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance.f2_eq_centredC
 
 ## Depends on
 
-This node has no prerequisites.
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [Centred leaf covariance](centred-cov.md)
+
+## Proof depends on
+
+- [Mean frequency across populations](pop-mean.md)
 
 ## Sources
 

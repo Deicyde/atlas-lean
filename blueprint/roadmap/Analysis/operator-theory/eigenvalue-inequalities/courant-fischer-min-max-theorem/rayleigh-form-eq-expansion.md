@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CourantFischer.rayleighForm_eq_expan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rayleigh form of an operator](rayleigh-form.md)
+
+## Proof depends on
+
+- [Eigenbasis expansion of the quadratic form of a self-adjoint operator](inner-self-apply-eq-expansion.md)
 
 ## Sources
 

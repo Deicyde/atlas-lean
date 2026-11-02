@@ -13,7 +13,14 @@ distribution on the partitions of the sample.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Time-t marginal of Kingman's coalescent](time-law.md)
+
+## Proof depends on
+
+- [Partition rate matrix is a rate matrix](is-rate-matrix-partition-rate.md)
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Nonnegativity of the transition function of a rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition-nonneg.md)
 
 ## Sources
 

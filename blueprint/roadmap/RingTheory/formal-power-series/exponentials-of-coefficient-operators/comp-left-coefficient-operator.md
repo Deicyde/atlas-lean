@@ -12,7 +12,11 @@ lean: MvPowerSeries.compLeft_coefficientOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Coefficient formula for a coefficient operator](coeff-coefficient-operator.md)
 
 ## Sources
 

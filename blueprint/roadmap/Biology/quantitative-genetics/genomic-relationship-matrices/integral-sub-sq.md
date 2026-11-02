@@ -13,7 +13,16 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.integral_sub_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+- [Genotype of an individual at a biallelic locus](genotype.md)
+- [Inbreeding coefficient](inbreeding.md)
+- [Kinship coefficient](kinship.md)
+
+## Proof depends on
+
+- [Integrability of products of genotypes](integrable-genotype-mul.md)
+- [Second moment of genotypes in terms of kinship](integral-genotype-mul.md)
+- [Self-kinship equals $(1 + F_i)/2$](kinship-self.md)
 
 ## Sources
 

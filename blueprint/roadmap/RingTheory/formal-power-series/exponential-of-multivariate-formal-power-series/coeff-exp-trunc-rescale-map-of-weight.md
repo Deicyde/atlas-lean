@@ -13,7 +13,12 @@ preserves the source's degreewise expression for arbitrary input series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
+
+## Proof depends on
+
+- [Coefficients of a weighted rescaling of a rational power series](coeff-rescale-map-of-weight.md)
+- [Weighted rescaling commutes with truncated exponentials](exp-trunc-rescale-map-of-weight.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.covParentOffspr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive genetic variance](add-var.md)
+- [Parent–offspring covariance of genotypic values](cov-parent-offspring.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
 
 ## Sources
 

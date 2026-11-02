@@ -11,7 +11,12 @@ lean: StatMech.AngleDefect.cellDeg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+- [Lattice point as a vertex of the cell complex](vtx.md)
+
+## Proof depends on
+
+- [Four cells around a lattice vertex](surround-cells.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.mean_integral_chiS
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Association statistic under stratification](chi-sq-strat.md)
+- [Mean LD score](mean-ldscore.md)
+
+## Proof depends on
+
+- [LD score of a marker](../ld-score-regression/ld-score.md)
+- [LD-score regression with constant stratification](integral-chi-sq-strat-of-const.md)
 
 ## Sources
 

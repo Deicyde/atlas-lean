@@ -12,7 +12,12 @@ lean: TensorNetwork.card_gridRectangles
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered rectangles of a finite grid](grid-rectangles.md)
+
+## Proof depends on
+
+- [Membership in the ordered pairs](../integer-valued-factored-tensor-networks/mem-ordered-pairs.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
 
 ## Sources
 

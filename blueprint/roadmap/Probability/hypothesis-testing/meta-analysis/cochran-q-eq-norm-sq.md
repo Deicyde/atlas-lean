@@ -14,7 +14,12 @@ of the projection of `z` onto the orthogonal complement of that line.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cochran's heterogeneity statistic Q](cochran-q.md)
+
+## Proof depends on
+
+- [Inverse-variance weights](inverse-variance-weights.md)
+- [Inverse-variance weights sum to one](sum-inverse-variance-weights.md)
 
 ## Sources
 

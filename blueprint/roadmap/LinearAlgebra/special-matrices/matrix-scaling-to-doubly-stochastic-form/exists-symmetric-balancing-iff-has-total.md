@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.exists_symmetric_balancing_iff_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total support of a square matrix](../../../Biology/systems-biology/stochastic-mass-action-metabolic-control-and-flu/has-total-support.md)
+
+## Proof depends on
+
+- [Csima–Datta: sufficiency of total support](exists-symmetric-balancing-of-has-total.md)
+- [Necessity of total support](../../../Biology/systems-biology/stochastic-mass-action-metabolic-control-and-flu/has-total-support-of-balancing.md)
 
 ## Sources
 

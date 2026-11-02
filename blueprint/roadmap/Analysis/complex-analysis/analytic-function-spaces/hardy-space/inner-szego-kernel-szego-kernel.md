@@ -13,7 +13,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.inner_szegoKernel_szegoKe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Szegő kernel of the Hardy space](szego-kernel.md)
 
 ## Sources
 

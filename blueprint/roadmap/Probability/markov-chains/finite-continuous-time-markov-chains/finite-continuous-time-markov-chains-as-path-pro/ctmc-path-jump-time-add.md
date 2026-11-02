@@ -13,7 +13,16 @@ shifted steps: `X (T n + s) = X' s` with `X'` built from `shift n ω` started at
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
+
+## Proof depends on
+
+- [Jump chain of the shifted steps](ctmc-jump-chain-shift.md)
+- [Additivity of jump times under shifting](ctmc-jump-time-add.md)
+- [Jump times are nondecreasing](ctmc-jump-time-mono.md)
 
 ## Sources
 

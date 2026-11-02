@@ -14,6 +14,10 @@ variances `v`, where `w = inverseVarianceWeights v`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inverse-variance weights](inverse-variance-weights.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.CochranQ](../../../../sources/v2/MathlibExt.md)

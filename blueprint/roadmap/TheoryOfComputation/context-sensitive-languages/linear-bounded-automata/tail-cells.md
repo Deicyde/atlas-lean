@@ -12,7 +12,7 @@ generated word: middle cells and a final right cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ sharp.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Response coefficient of a covalent modification cycle](response-coefficient.md)
+
+## Proof depends on
+
+- [The response coefficient](response-coefficient-eq.md)
 
 ## Sources
 

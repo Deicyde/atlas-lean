@@ -15,6 +15,12 @@ when `c ≥ 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Upper tail of the gamma law](gamma-measure-real-ioi.md)
+- [Upper incomplete gamma function](upper-incomplete-gamma.md)
+- [Upper incomplete gamma function at natural shapes](upper-incomplete-gamma-nat-cast-add-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GammaMoments](../../../../sources/v2/MathlibExt.md)

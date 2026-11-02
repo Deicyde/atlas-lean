@@ -12,7 +12,8 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.mul_f₀
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Mixture density of the two-groups model](mixture-density.md)
 
 ## Sources
 

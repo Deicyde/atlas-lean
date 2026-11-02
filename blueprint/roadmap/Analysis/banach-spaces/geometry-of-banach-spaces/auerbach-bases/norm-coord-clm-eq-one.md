@@ -14,7 +14,11 @@ attains `1` at the `i`-th basis vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate functional of a basis as a continuous linear map](coord-clm.md)
+
+## Proof depends on
+
+- [Operator norm of a norm-bounded coordinate functional is at most 1](norm-coord-clm-le-one.md)
 
 ## Sources
 

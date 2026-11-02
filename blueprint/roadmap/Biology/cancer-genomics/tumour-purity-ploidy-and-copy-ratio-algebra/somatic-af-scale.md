@@ -14,7 +14,13 @@ unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rescaled purity](scaled-purity.md)
+- [Expected allelic fraction of a somatic mutation](somatic-af.md)
+
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+- [Positivity of the rescaled purity denominator](scaled-purity-denom-pos.md)
 
 ## Sources
 

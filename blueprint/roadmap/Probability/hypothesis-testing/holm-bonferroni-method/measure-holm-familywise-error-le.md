@@ -14,7 +14,13 @@ null is at most `α`. No independence is assumed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Hypotheses rejected by Holm's step-down procedure](holm-rejections.md)
+
+## Proof depends on
+
+- [Holm rejection bound for a set of hypotheses](exists-le-div-card-of-holm-rejections.md)
+- [Union bound for valid p-values](../bonferroni-correction/measure-exists-mem-le-le.md)
 
 ## Sources
 

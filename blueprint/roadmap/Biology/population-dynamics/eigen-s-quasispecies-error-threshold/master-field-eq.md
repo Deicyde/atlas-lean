@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.Quasispecies.masterField_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Master-sequence vector field of the single-peak quasispecies](master-field.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: ProbabilityTheory.integral_sq_of_hasLaw_binomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second moment of the binomial law](integral-sq-map-cast-binomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BinomialMoments](../../../../sources/v2/MathlibExt.md)

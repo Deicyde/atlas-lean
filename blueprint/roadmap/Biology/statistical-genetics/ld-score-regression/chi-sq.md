@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScore.Model.chiSq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](model.md)
+
+## Proof depends on
+
+- [Normalized marginal score in the LD-score model](beta-hat.md)
 
 ## Sources
 

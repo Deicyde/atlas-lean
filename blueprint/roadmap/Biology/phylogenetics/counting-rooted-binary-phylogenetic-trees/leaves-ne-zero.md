@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Phylogenetics.TreeCount.PlaneTree.leaves_ne_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar rooted binary tree with labeled leaves](plane-tree.md)
+- [Leaf labels of a planar binary tree](leaves.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ with their updated accumulators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inclusive first-hit prefix of a list](take-through.md)
+- [Accumulator-stopped inclusive prefix of a list](take-through-acc.md)
+
+## Proof depends on
+
+- [Inclusive first-hit prefix when the head is not a hit](take-through-cons-of-neg.md)
+- [Inclusive first-hit prefix when the head is a hit](take-through-cons-of-pos.md)
+- [Inclusive first-hit prefix of the empty list](take-through-nil.md)
 
 ## Sources
 

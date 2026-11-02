@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.integral_fuLi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerator of Fu and Li's D](fu-li-dnumerator.md)
+
+## Proof depends on
+
+- [Tajima's constant $a_1$](../segregating-sites-and-pairwise-differences/tajima-a1.md)
 
 ## Sources
 

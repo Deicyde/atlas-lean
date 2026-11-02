@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.sum_gtrRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
 
 ## Sources
 

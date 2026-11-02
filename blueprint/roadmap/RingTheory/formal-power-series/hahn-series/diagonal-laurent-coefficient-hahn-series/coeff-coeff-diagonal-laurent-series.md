@@ -12,7 +12,11 @@ lean: HahnSeries.coeff_coeff_diagonalLaurentSeries
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Laurent-coefficient Hahn series](diagonal-laurent-series.md)
+
+## Proof depends on
+
+- [Outer coefficient of a diagonal Laurent series](coeff-diagonal-laurent-series.md)
 
 ## Sources
 

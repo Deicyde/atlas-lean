@@ -13,7 +13,12 @@ the centered vectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centered state vector of an observable](centered.md)
+
+## Proof depends on
+
+- [Inner product of two centered vectors](inner-centered.md)
+- [Normalized expectation value of an observable](mean-value.md)
 
 ## Sources
 

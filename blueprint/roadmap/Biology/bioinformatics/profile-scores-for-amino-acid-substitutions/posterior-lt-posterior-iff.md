@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.posterior_lt_po
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
+- [Naive Bayes posterior probability of damage](posterior.md)
+- [Naive Bayes score](score.md)
+
+## Proof depends on
+
+- [Naive-Bayes posterior](posterior-eq-sigmoid.md)
 
 ## Sources
 

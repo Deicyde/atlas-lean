@@ -14,6 +14,10 @@ Its squared norm divided by the squared state norm is `variance`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized expectation value of an observable](mean-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ lean: ProbabilityTheory.itoIntegral_ae_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+- [Itô integral as an element of $L^2$](ito-integral-l2.md)
 
 ## Sources
 

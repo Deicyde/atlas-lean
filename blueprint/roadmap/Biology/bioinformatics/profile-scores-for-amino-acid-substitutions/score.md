@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.score
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
+
+## Proof depends on
+
+- [Log-likelihood ratio of a feature value](log-likelihood-ratio.md)
 
 ## Sources
 

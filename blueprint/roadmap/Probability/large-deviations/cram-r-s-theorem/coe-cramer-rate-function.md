@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.coe_cramerRateFunction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
+
+## Proof depends on
+
+- [Nonnegativity of the Legendre transform of the log moment](legendre-transform-extended-log-mgfvec-n.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: ProbabilityTheory.hasDerivAt_poissonCDF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+
+## Proof depends on
+
+- [Poisson distribution function at count zero](poisson-cdf-zero-right.md)
 
 ## Sources
 

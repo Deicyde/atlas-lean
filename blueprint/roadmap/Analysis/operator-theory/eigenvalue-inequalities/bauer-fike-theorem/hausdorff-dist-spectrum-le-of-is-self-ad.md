@@ -15,6 +15,10 @@ spectra is at most `‖E‖`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bauer–Fike theorem](inf-dist-le-norm-of-mem-spectrum-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BauerFike](../../../../../sources/v2/MathlibExt.md)

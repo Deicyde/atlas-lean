@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.GraphicalModels.marginal_le_of_subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal of a weight](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal.md)
+
+## Proof depends on
+
+- [Monotonicity of marginals in the fixed variables](../../../../Probability/random-fields/conditional-independence-on-finite-configuration/marginal-anti.md)
 
 ## Sources
 

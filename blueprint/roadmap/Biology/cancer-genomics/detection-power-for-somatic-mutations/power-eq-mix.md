@@ -13,7 +13,16 @@ probabilities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Critical count of the mutation detection test](critical-count.md)
+- [Power of the randomized mutation detection test](power.md)
+- [Randomization probability of the detection test](randomization.md)
+- [Binomial upper tail probability](upper-tail.md)
+
+## Proof depends on
+
+- [Binomial probability mass function](binom-pmf.md)
+- [Positivity of the critical count](critical-count-pos.md)
+- [Recursion for the binomial upper tail](upper-tail-eq-add.md)
 
 ## Sources
 

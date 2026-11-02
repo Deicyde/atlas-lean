@@ -13,7 +13,7 @@ cancelled, so this identity also holds in positive characteristic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated partial derivative of a multivariate power series](iterated-pderiv.md)
 
 ## Sources
 

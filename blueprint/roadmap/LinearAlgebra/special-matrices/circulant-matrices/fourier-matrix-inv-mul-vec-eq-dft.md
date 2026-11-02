@@ -12,7 +12,7 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.fourierMatrixInv_mulVec_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Fourier matrix](fourier-matrix-inv.md)
 
 ## Sources
 

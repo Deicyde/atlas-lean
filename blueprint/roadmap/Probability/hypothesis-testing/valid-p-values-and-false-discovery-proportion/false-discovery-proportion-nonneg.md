@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.falseDiscoveryProportion
 
 ## Depends on
 
-This node has no prerequisites.
+- [False discovery proportion](false-discovery-proportion.md)
 
 ## Sources
 

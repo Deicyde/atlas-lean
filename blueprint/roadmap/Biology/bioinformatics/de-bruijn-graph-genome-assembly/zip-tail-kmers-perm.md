@@ -13,7 +13,12 @@ permutation of the edge occurrences, each traversed once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [De Bruijn multigraph of a string](de-bruijn-edges.md)
+- [The k-mers of a string](kmers.md)
+
+## Proof depends on
+
+- [The `(k-1)`-mer walk of `s` traverses the de Bruijn multigraph in order](zip-tail-kmers.md)
 
 ## Sources
 

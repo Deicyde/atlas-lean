@@ -13,7 +13,12 @@ This is the exact finite-sum formula used by the source's degreewise constructor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
+
+## Proof depends on
+
+- [Multivariate exponential as substitution into exp](exp-of-constant-coeff-zero-eq-subst.md)
 
 ## Sources
 

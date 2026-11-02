@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.intervene_pa_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [The intervention `do(X_k = a)`](intervene.md)
 
 ## Sources
 

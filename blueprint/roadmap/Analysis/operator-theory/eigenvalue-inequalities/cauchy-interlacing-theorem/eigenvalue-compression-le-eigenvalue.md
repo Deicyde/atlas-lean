@@ -14,7 +14,16 @@ eigenvalue of the original operator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression of an operator to a subspace](compression.md)
+- [Compression of a symmetric operator is symmetric](compression-is-symmetric.md)
+
+## Proof depends on
+
+- [Rayleigh form of a compression](compression-rayleigh.md)
+- [Subspaces of every smaller dimension inside a given subspace](exists-submodule-le-finrank-eq.md)
+- [Courant–Fischer min–max, extremal subspace form](../courant-fischer-min-max-theorem/exists-tail-submodule.md)
+- [Courant–Fischer min–max, lower-bound form](../courant-fischer-min-max-theorem/exists-unit-ge-of-submodule.md)
+- [Rayleigh form of an operator](../courant-fischer-min-max-theorem/rayleigh-form.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.refCount_add_altCount
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Expected alternative-allele count of a SNP per population](alt-count.md)
+- [Expected population count of a SNP](pop-count.md)
+- [Expected reference-allele count of a SNP per population](ref-count.md)
+
+## Proof depends on
+
+- [Reference-allele indicator for a genotype copy](is-ref.md)
+- [Ancestry responsibility of an allele copy (E-step)](resp.md)
 
 ## Sources
 

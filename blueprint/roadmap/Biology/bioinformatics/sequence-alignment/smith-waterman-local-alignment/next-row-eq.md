@@ -14,7 +14,14 @@ lean: Cslib.Bioinformatics.Alignment.SmithWaterman.nextRow_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [The terminal Smith–Waterman cell](../pairwise-sequence-alignment/sw-cell-score.md)
+- [Next row of the Smith–Waterman table](next-row.md)
+
+## Proof depends on
+
+- [The Smith–Waterman recurrence](../pairwise-sequence-alignment/sw-cell-score-eq.md)
+- [The terminal cell vanishes when the second sequence is empty](../pairwise-sequence-alignment/sw-cell-score-nil-right.md)
+- [Auxiliary row computation for the Smith–Waterman table](next-row-aux.md)
 
 ## Sources
 

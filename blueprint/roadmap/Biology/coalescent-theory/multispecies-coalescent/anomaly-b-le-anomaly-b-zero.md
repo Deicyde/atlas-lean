@@ -13,7 +13,11 @@ gene tree is anomalous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary for three anomalous gene trees](anomaly-b.md)
+
+## Proof depends on
+
+- [Value $\log(7/6)$ of the three-anomaly boundary at zero](anomaly-b-zero.md)
 
 ## Sources
 

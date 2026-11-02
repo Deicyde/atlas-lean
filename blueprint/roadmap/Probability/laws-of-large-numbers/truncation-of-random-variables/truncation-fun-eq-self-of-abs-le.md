@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncationFun_eq_self_of_abs_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scalar truncation function](truncation-fun.md)
+
+## Proof depends on
+
+- [Truncation fixes values within the cutoff](../kolmogorov-s-three-series-theorem/truncated-rv-eq-of-abs-le.md)
 
 ## Sources
 

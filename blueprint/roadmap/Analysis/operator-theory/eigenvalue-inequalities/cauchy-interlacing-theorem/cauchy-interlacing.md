@@ -15,7 +15,13 @@ interlace the eigenvalues `λₖ` of `T`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression of an operator to a subspace](compression.md)
+- [Compression of a symmetric operator is symmetric](compression-is-symmetric.md)
+
+## Proof depends on
+
+- [Cauchy interlacing, upper half](eigenvalue-compression-le-eigenvalue.md)
+- [Cauchy interlacing, lower half](eigenvalue-le-eigenvalue-compression.md)
 
 ## Sources
 

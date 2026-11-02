@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.eq_of_isDescendant_mutilate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Descendant relation in a Bayesian network](is-descendant.md)
+- [Mutilated network of a set intervention](mutilate-set.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](edge.md)
+- [Arrows of the mutilated network](edge-mutilate-set-iff.md)
 
 ## Sources
 

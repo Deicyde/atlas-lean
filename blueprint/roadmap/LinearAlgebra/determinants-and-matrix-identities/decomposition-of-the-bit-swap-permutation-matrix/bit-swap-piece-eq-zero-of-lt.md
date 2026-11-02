@@ -12,7 +12,11 @@ lean: Matrix.bitSwapPiece_eq_zero_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piece of an n-bit swap with i antisymmetric factors](bit-swap-piece.md)
+
+## Proof depends on
+
+- [Antisymmetric two-bit singlet vector](bit-singlet.md)
 
 ## Sources
 

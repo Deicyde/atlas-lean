@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.Sampling.vecMul_gibbsSweepMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition matrix of the systematic-scan Gibbs sweep](gibbs-sweep-matrix.md)
+
+## Proof depends on
+
+- [Gibbs update](gibbs-step.md)
+- [Systematic-scan Gibbs sampler](gibbs-sweep.md)
+- [A full Gibbs sweep leaves the target stationary](invariant-gibbs-sweep.md)
+- [Markov kernel of a transition rule](pmf-kernel.md)
 
 ## Sources
 

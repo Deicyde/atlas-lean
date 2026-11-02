@@ -13,7 +13,13 @@ pre-Brownian motion is a stationary Ornstein–Uhlenbeck process.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+- [Doob's stationary time change of Brownian motion](ou-stationary-of-brownian.md)
+
+## Proof depends on
+
+- [Doob's clock for the stationary Ornstein–Uhlenbeck process](ou-stationary-clock.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

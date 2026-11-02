@@ -13,7 +13,11 @@ injective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restriction of g to generalized eigenspaces of fg and gf](gen-eigenspace-comp-map.md)
+
+## Proof depends on
+
+- [Kernel of g meets a generalized eigenspace of fg trivially](eq-zero-of-apply-eq-zero-of-mem-gen-eige.md)
 
 ## Sources
 

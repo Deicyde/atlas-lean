@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.isHilbertSchmidt_tran
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Conjugate transpose of an infinite matrix](hs-transpose-star.md)
 
 ## Sources
 

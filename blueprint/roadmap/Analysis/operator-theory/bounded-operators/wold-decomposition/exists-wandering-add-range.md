@@ -13,7 +13,11 @@ vector plus a vector in the range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wandering subspace of an isometry](wandering-sub.md)
+
+## Proof depends on
+
+- [Wandering subspace and range are complementary](is-compl-wandering.md)
 
 ## Sources
 

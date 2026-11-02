@@ -15,6 +15,10 @@ lean: ProbabilityTheory.variance_of_hasLaw_binomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Variance of the binomial law](variance-id-map-cast-binomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.BinomialMoments](../../../../sources/v2/MathlibExt.md)

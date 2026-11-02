@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS.sum_configProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of a derived-allele configuration](config-prob.md)
 
 ## Sources
 

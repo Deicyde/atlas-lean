@@ -12,7 +12,8 @@ lean: ProbabilityTheory.tendsto_ouCovariance_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncationFun
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Truncation](../../../../sources/v2/MathlibExt.md)

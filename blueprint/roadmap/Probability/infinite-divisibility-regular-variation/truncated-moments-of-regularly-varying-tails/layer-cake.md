@@ -14,7 +14,8 @@ from points with `|y| > x`, which lie outside the closed truncation interval.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed upper tail of a measure](tail-ge.md)
+- [Strict upper tail of a measure](tail-gt.md)
 
 ## Sources
 

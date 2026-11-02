@@ -11,7 +11,7 @@ lean: Cslib.Bioinformatics.Clustering.OptimalLeafOrdering.Dendrogram.leaves
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ so that this pair rate is `1` as in Kingman's coalescent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.measurable_ctmcJumpChain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
 
 ## Sources
 

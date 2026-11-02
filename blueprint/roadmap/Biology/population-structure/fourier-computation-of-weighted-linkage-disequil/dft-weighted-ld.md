@@ -15,6 +15,12 @@ and divided by `m - 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Autocorrelation via the discrete Fourier transform](autocorr-dft.md)
+- [Total of a per-SNP quantity over a grid cell](cell-sum.md)
+- [Centred weighted genotype](centred-weighted.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.WeightedLDFFT](../../../../sources/v2/CSLibExt.md)

@@ -23,7 +23,17 @@ In the construction, the splits are those of the edges that cut no cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Taxa on one side of a tree edge](side.md)
+
+## Proof depends on
+
+- [Split decomposition of a tree metric](dist-eq-sum-darts.md)
+- [Splits of two tree edges are compatible](side-compat.md)
+- [Edge side at an internal vertex as a disjoint union](side-eq-union.md)
+- [Leaf side of a pendant edge](side-leaf.md)
+- [Every edge side of a binary phylogenetic tree is nonempty](side-nonempty.md)
+- [Two sides of a tree edge partition the taxa](side-swap.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.GaussianGraphicalModel.sum_dotProduct_mu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample second-moment matrix](sample-cov.md)
 
 ## Sources
 

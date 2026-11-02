@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning.pruneTab_get
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
+- [Felsenstein's pruning recursion](prune.md)
+- [Tabulated Felsenstein pruning algorithm](prune-tab.md)
 
 ## Sources
 

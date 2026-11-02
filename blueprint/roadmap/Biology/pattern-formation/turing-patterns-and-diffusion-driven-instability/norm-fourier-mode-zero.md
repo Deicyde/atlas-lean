@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.norm_fourierMode_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complex Fourier mode](fourier-mode.md)
 
 ## Sources
 

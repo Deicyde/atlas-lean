@@ -12,7 +12,7 @@ lean: Cslib.Language.KleeneConverse.singletonDFA_accepts
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFA accepting the one-letter words](singleton-dfa.md)
 
 ## Sources
 

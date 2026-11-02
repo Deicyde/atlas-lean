@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.loeuf_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [LOEUF](loeuf.md)
+
+## Proof depends on
+
+- [Upper confidence bound for the observed/expected ratio](oe-upper.md)
+- [Observed/expected upper bound with no observed variants](oe-upper-zero.md)
 
 ## Sources
 

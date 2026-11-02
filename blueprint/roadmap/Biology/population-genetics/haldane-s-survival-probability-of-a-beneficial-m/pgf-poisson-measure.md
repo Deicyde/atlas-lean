@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Haldane.pgf_poissonMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability generating function](../../../Probability/characteristic-functions/probability-generating-functions/pgf.md)
 
 ## Sources
 

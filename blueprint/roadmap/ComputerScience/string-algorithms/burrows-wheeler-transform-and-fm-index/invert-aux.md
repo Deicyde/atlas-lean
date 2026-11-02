@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.Indexing.BWT.invertAux
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [LF-mapping from the last column](lf.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Indexing.BWT](../../../../sources/v2/CSLibExt.md)

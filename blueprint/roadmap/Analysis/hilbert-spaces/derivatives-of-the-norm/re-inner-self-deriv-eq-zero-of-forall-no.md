@@ -15,6 +15,10 @@ its position (in the real-inner-product sense).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Derivative of the norm along a curve](norm-3.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NormDerivative](../../../../sources/v2/MathlibExt.md)

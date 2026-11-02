@@ -13,7 +13,8 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.hasSum_nbPmf_mul_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial probability generating function](nb-pgf.md)
+- [Negative-binomial offspring probabilities](nb-pmf.md)
 
 ## Sources
 

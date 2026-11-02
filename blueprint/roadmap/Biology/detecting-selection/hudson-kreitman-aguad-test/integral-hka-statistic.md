@@ -14,7 +14,16 @@ integrable with the HKA mean and variance (as derived above under the neutral mo
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKA expected divergence](hka-div-mean.md)
+- [HKA variance of the divergence](hka-div-var.md)
+- [HKA expected number of segregating sites](hka-poly-mean.md)
+- [HKA variance of the number of segregating sites](hka-poly-var.md)
+- [Hudson–Kreitman–Aguadé statistic](hka-statistic.md)
+
+## Proof depends on
+
+- [Positivity of the HKA divergence variance](hka-div-var-pos.md)
+- [Positivity of the HKA polymorphism variance](hka-poly-var-pos.md)
 
 ## Sources
 

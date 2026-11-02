@@ -13,7 +13,14 @@ lean: Cslib.Bioinformatics.Motifs.PWM.relEntropy_eq_and_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moment generating function of a pair score](pair-mgf.md)
+- [Implicit target frequencies of a score matrix](target-freq.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
+
+## Proof depends on
+
+- [Target frequencies form a distribution on pairs](is-dist-target-freq.md)
+- [Gibbs' inequality (evidence lower bound form)](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/sum-mul-log-sub-le.md)
 
 ## Sources
 

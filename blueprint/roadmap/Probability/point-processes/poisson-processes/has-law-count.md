@@ -13,7 +13,12 @@ Poisson law of mean `r t` (Karlin–Taylor 1975, §4.2, Theorem 2.1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting process of interarrival times](count.md)
+
+## Proof depends on
+
+- [Arrival times from interarrival times](arrival-time.md)
+- [Arrival times of exponential interarrivals are Erlang](has-law-arrival-time.md)
 
 ## Sources
 

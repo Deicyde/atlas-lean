@@ -14,7 +14,14 @@ lean: MathlibExt.Probability.FokkerPlanck.divergence_flux_rotational_gibbs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Divergence of a vector field](divergence.md)
+- [Probability flux of a diffusion](flux.md)
+- [Gibbs density](gibbs.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+
+## Proof depends on
+
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
 
 ## Sources
 

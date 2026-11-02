@@ -12,7 +12,11 @@ adjacent, starting at `x` and ending at `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+
+## Proof depends on
+
+- [Adjacency in the skeleton of a Bayesian network](adj.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ frequency at time `0` has positive frequency for all `t ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the replicator equation](is-solution.md)
+
+## Proof depends on
+
+- [Mean fitness of a population state](mean-fitness.md)
 
 ## Sources
 

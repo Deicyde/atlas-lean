@@ -13,7 +13,11 @@ the approximate point spectrum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximate eigenvalue of an operator](is-approximate-eigenvalue.md)
+
+## Proof depends on
+
+- [Spectrum of a normal operator equals its approximate point spectrum](mem-spectrum-iff-is-approximate-eigenval.md)
 
 ## Sources
 

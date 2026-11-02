@@ -17,7 +17,19 @@ solutions are the path-space moments of the chain is proved in `TwoLocusCoalesce
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
+- [Coalescence indicator at locus A](coalesced-a.md)
+- [Coalescence indicator at locus B](coalesced-b.md)
+- [Covariance of coalescence times at two linked loci](two-locus-cov.md)
+- [Common denominator of the two-locus moments](two-locus-denom.md)
+- [Rate matrix of the two-locus coalescent](two-locus-rate.md)
+
+## Proof depends on
+
+- [Sum over the two-locus ancestral states](sum-univ.md)
+- [Mean coalescence time at locus `A`](eq-one-of-mean-time-a.md)
+- [Mean coalescence time at locus `B`](eq-one-of-mean-time-b.md)
+- [Positivity of the two-locus moment denominator](two-locus-denom-pos.md)
 
 ## Sources
 

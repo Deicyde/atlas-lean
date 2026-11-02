@@ -14,7 +14,7 @@ is recorded in `WantedExt/Probability/DirichletProcessWanted.lean`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
 
 ## Sources
 

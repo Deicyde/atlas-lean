@@ -13,7 +13,7 @@ lean: ProbabilityTheory.hasSum_negBinomialPMF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative binomial mass function with real shape](neg-binomial-pmf.md)
 
 ## Sources
 

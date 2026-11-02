@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RepresenterTheorem.kernelRidgeFit_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel Gram matrix](kernel-gram.md)
+- [Kernel ridge regression fit](kernel-ridge-fit.md)
+
+## Proof depends on
+
+- [Kernel expansion map centered at the sample points](kernel-expansion.md)
+- [Values of a kernel expansion at the sample points](kernel-expansion-apply-sample.md)
 
 ## Sources
 

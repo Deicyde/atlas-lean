@@ -14,7 +14,7 @@ for any path `w` and any real `θ`, `σ`, `x₀`, `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pathwise solution of the Langevin equation](../ornstein-uhlenbeck-process/ou-path-solution.md)
 
 ## Sources
 

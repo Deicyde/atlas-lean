@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.isUnstableMode_sqrt_criticalWav
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Squared critical wavenumber](critical-wavenumber-sq.md)
+
+## Proof depends on
+
+- [Dispersion polynomial](dispersion-det.md)
+- [Minimum value of the dispersion polynomial](dispersion-det-critical-wavenumber-sq.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
+- [Turing condition in squared form](two-mul-sqrt-lt-iff.md)
 
 ## Sources
 

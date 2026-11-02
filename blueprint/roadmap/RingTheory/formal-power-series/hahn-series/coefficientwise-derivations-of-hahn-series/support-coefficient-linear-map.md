@@ -12,7 +12,7 @@ lean: HahnSeries.support_coefficientLinearMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficientwise linear operator on Hahn series](coefficient-linear-map.md)
 
 ## Sources
 

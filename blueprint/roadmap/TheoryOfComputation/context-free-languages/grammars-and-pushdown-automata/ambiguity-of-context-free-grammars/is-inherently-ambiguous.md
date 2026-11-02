@@ -14,6 +14,10 @@ generating it is ambiguous.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ambiguous grammar](is-ambiguous.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.InherentAmbiguity](../../../../../sources/v2/CSLibExt.md)

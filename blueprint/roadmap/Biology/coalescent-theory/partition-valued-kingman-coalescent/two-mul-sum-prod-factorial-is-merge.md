@@ -14,7 +14,9 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.two_m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Set partitions of a labeled sample](sample-partition.md)
 
 ## Sources
 

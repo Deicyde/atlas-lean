@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.sqrt_mul_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decay length of a morphogen gradient](decay-length.md)
+
+## Proof depends on
+
+- [Positivity of the decay length](decay-length-pos.md)
 
 ## Sources
 

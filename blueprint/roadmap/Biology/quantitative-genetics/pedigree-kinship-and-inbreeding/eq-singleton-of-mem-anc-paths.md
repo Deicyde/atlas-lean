@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.eq_singleton_of_me
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestral paths from an individual](anc-paths.md)
+
+## Proof depends on
+
+- [Ancestral path as its start followed by a tail](exists-eq-cons-of-mem-anc-paths.md)
+- [Individuals on an ancestral path are its start or precede it](le-of-mem-anc-paths.md)
+- [Ancestral paths from a founder](mem-anc-paths-of-parents-eq-none.md)
+- [Ancestral paths from a non-founder](mem-anc-paths-of-parents-eq-some.md)
 
 ## Sources
 

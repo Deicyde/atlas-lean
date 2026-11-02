@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.HardySpace.memℓp_szegoKernel
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squared norms of the Szegő kernel coefficients](norm-sq-szego-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.HardySpace](../../../../../sources/v2/MathlibExt.md)

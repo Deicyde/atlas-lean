@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional.not_isCo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit sphere is not weakly closed in infinite dimensions](not-is-closed-image-sphere.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

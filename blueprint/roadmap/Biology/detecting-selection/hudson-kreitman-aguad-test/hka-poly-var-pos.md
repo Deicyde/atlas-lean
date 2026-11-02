@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.hkaPolyVar_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [HKA variance of the number of segregating sites](hka-poly-var.md)
+
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
+- [Tajima's $a_1$ is a harmonic number](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1-eq-harmonic.md)
+- [Tajima's constant $a_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a2.md)
 
 ## Sources
 

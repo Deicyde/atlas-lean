@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.ODE.DirichletSineEigenfunctions.dirichletSine_contDiff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MvPowerSeries.pderiv_expTrunc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
 
 ## Sources
 

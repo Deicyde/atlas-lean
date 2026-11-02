@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.inbreeding_of_pare
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Inbreeding coefficient under gene dropping](inbreeding.md)
+
+## Proof depends on
+
+- [Gene-dropping outcome](coins.md)
+- [Founder origin of a gene copy](origin.md)
+- [A founder gene copy is its own origin](origin-of-parents-eq-none.md)
 
 ## Sources
 

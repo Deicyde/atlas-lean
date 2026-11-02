@@ -14,7 +14,7 @@ weight of the splits `A e` separating `x` and `y`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contribution of a split to the neighbor-joining score](split-gain.md)
 
 ## Sources
 

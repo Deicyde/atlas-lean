@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.bdFamily
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
+
+## Proof depends on
+
+- [Count of cases matching a configuration](count.md)
+- [Rising factorial](rising.md)
 
 ## Sources
 

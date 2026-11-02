@@ -11,7 +11,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Parsimony.unitCost
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min-plus cost semiring](cost.md)
 
 ## Sources
 

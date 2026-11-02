@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzSlice_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
 
 ## Sources
 

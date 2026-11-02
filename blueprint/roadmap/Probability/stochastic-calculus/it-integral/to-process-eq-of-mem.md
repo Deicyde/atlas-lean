@@ -12,7 +12,12 @@ lean: ProbabilityTheory.ElementaryIntegrand.toProcess_eq_of_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand as a process](to-process.md)
+
+## Proof depends on
+
+- [Partition intervals of an elementary integrand are disjoint](disjoint-ioc-time.md)
 
 ## Sources
 

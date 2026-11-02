@@ -12,7 +12,16 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.finite_setOf_isUnstableMode_neu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Neumann wavenumber on an interval](neumann-wavenumber.md)
+
+## Proof depends on
+
+- [Determinant of the mode matrix is the dispersion polynomial](det-mode-matrix.md)
+- [Dispersion polynomial](dispersion-det.md)
+- [Instability criterion for a Fourier mode via trace and determinant](is-unstable-mode-iff.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+- [Trace of the mode matrix](trace-mode-matrix.md)
 
 ## Sources
 

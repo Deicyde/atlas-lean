@@ -14,7 +14,12 @@ additive fit `c + h a + h b` has mean squared error at least `V_D`, the error of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Dominance variance at a single locus](var-d.md)
+
+## Proof depends on
+
+- [Least squares (Fisher 1918)](../fisher-s-decomposition-of-genetic-variance/dom-var-le-sum-sq.md)
 
 ## Sources
 

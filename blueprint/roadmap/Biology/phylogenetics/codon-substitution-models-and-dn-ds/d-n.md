@@ -11,7 +11,12 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.dN
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+
+## Proof depends on
+
+- [Stationary rate of nonsynonymous substitutions](nonsyn-rate.md)
+- [Number of nonsynonymous sites per codon](nonsyn-sites.md)
 
 ## Sources
 

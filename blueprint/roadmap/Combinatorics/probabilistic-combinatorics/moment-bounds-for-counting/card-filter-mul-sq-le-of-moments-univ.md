@@ -14,6 +14,10 @@ lean: Finset.card_filter_mul_sq_le_of_moments_univ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Count bound from first and second moments](card-filter-mul-sq-le-of-moments.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Finset.MomentBounds](../../../../sources/v2/MathlibExt.md)

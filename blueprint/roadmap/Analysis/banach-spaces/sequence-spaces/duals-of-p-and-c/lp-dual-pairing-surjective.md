@@ -13,7 +13,11 @@ by pairing with some `ℓ^q` sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical duality pairing between $\ell^q$ and $\ell^p$](lp-dual-pairing.md)
+
+## Proof depends on
+
+- [Duality pairing as a sum of coordinatewise products](lp-dual-pairing-apply.md)
 
 ## Sources
 

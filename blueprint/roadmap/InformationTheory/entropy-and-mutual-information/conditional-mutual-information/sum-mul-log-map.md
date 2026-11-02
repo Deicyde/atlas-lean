@@ -12,7 +12,12 @@ lean: InformationTheory.sum_mul_log_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon entropy](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
+
+## Proof depends on
+
+- [Shannon entropy as a p log p sum](shannon-entropy-mul-log-two.md)
+- [Sums against a pushforward of a finite law](sum-to-real-mul-comp.md)
 
 ## Sources
 

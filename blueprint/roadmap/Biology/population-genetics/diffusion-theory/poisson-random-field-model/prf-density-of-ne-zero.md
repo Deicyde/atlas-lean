@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_of_ne_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
 
 ## Sources
 

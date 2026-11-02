@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.BirkhoffJames.birkhoffJamesOrthogon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
+
+## Proof depends on
+
+- [Zero is Birkhoff–James orthogonal to every vector](birkhoff-james-orthogonal-zero-left.md)
 
 ## Sources
 

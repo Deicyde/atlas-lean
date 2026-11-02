@@ -13,7 +13,12 @@ mutations with `σ < -c`, `c ≥ 0`, is the gamma tail `Γ(a, r c) / Γ(a)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
+- [Upper incomplete gamma function](../../../Probability/distributions/gamma-distribution/upper-incomplete-gamma.md)
+
+## Proof depends on
+
+- [Upper tail of the gamma law](../../../Probability/distributions/gamma-distribution/gamma-measure-real-ioi.md)
 
 ## Sources
 

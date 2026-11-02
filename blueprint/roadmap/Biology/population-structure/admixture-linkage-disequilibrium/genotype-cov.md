@@ -16,6 +16,10 @@ Eq. 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Allele count of a gamete at one locus](allele-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

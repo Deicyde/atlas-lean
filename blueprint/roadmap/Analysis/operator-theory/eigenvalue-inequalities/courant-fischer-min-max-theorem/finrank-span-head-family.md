@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CourantFischer.finrank_span_headFami
 
 ## Depends on
 
-This node has no prerequisites.
+- [Head of an orthonormal eigenbasis](head-family.md)
+
+## Proof depends on
+
+- [Linear independence of the eigenbasis head](head-family-linear-independent.md)
 
 ## Sources
 

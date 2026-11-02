@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.norm_lpTrunc_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+
+## Proof depends on
+
+- [Pointwise action of $\ell^p$ truncation](lp-trunc-apply.md)
+- [Truncation equals the Schauder basis projection](lp-trunc-eq-lp-schauder-basis-proj.md)
+- [The unit vectors form a Schauder basis of ℓᵖ](../schauder-basis-of-p/lp-schauder-basis.md)
+- [The ℓᵖ partial-sum projections are contractions](../schauder-basis-of-p/norm-lp-schauder-basis-classical-proj-ap.md)
 
 ## Sources
 

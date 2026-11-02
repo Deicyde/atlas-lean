@@ -14,7 +14,12 @@ positive, then `P(θ > t ∣ m) ≤ P(θ > t ∣ n)` for every `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Antitone likelihood ratio](has-antitone-likelihood-ratio-on.md)
+- [Posterior tail probability](posterior-tail.md)
+
+## Proof depends on
+
+- [Posterior stochastic ordering for an antitone likelihood ratio, cross-multiplied form](set-integral-ioi-mul-integral-le-of-has-2.md)
 
 ## Sources
 

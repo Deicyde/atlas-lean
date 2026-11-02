@@ -14,7 +14,11 @@ approximation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equioscillation of a polynomial approximation](equioscillates.md)
+
+## Proof depends on
+
+- [Uniqueness of the equioscillating best approximation](eq-of-equioscillates.md)
 
 ## Sources
 

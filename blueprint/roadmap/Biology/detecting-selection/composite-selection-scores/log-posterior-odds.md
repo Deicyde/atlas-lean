@@ -13,7 +13,15 @@ plus the sum of the log Bayes factors of the component statistics.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
+- [Bayes factor of a component statistic](bayes-factor.md)
+- [Normalized composite score](posterior.md)
+
+## Proof depends on
+
+- [Positivity of component Bayes factors](bayes-factor-pos.md)
+- [Composite of multiple signals (CMS) score](cms.md)
+- [Posterior odds equal prior odds times the CMS score](posterior-odds.md)
 
 ## Sources
 

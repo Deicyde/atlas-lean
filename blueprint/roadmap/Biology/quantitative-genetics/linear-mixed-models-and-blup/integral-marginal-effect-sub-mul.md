@@ -19,7 +19,8 @@ and this raw second moment is the corresponding covariance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized cross product of genotype markers](../../statistical-genetics/ld-score-regression/ld-corr.md)
+- [Marginal association estimate of a marker](marginal-effect.md)
 
 ## Sources
 

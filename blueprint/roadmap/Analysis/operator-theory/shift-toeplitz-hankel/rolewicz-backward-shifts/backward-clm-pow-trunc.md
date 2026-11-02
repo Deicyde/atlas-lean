@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.backwardCLM_pow_tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc.md)
+
+## Proof depends on
+
+- [Pointwise action of a power of the backward shift](../unilateral-shift/backward-clm-pow-apply.md)
+- [Pointwise action of $\ell^p$ truncation](../../../banach-spaces/sequence-spaces/compactness-in-p/lp-trunc-apply.md)
 
 ## Sources
 

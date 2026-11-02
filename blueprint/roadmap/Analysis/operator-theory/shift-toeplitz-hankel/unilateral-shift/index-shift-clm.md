@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.index_shiftCLM
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Fredholm index of a unilateral shift power is $-n$](index-shift-clm-pow.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ filtration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Germ sigma-algebra at time zero](germ-sigma-algebra-zero.md)
 
 ## Sources
 

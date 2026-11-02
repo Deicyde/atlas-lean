@@ -13,7 +13,7 @@ size of the piece `j` with `start j ≤ s < start (j + 1)` (the last piece has n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.toCo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
+- [Single-locus model under random union of gametes](locus-model.md)
+
+## Proof depends on
+
+- [Additive variance at a single locus](var-a.md)
+- [Nonnegativity of the single-locus additive variance](var-a-nonneg.md)
+- [Dominance variance at a single locus](var-d.md)
+- [Nonnegativity of the single-locus dominance variance](var-d-nonneg.md)
 
 ## Sources
 

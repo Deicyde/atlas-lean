@@ -15,7 +15,11 @@ together.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
+
+## Proof depends on
+
+- [Coalescence along one branch of the species tree](branch-step.md)
 
 ## Sources
 

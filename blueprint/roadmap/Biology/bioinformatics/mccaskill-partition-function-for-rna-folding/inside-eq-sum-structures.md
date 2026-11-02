@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.inside_eq_sum_structures
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inside recursion](inside.md)
+- [Set of all secondary structures of a sequence](structures.md)
+- [Weight of a secondary structure](weight.md)
+
+## Proof depends on
+
+- [Inside algorithm](inside-eq-sum.md)
 
 ## Sources
 

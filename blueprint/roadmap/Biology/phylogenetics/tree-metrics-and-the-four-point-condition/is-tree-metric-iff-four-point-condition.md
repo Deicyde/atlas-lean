@@ -13,7 +13,13 @@ the diagonal is a tree metric if and only if it satisfies the four-point conditi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four-point condition](four-point-condition.md)
+- [Tree metric](is-tree-metric.md)
+
+## Proof depends on
+
+- [Tree metrics satisfy the four-point condition](four-point-condition-2.md)
+- [Buneman's theorem, converse direction](is-tree-metric-of-four-point-condition.md)
 
 ## Sources
 

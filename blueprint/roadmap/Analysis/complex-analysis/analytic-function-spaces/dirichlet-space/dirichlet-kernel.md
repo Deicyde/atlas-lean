@@ -14,6 +14,10 @@ coefficients `(conj z)ⁿ / √(n + 1)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dirichlet kernel coefficients lie in ℓ²](mem-p-dirichlet-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpace](../../../../../sources/v2/MathlibExt.md)

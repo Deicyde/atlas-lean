@@ -14,7 +14,10 @@ with the in-sample normalized cross products `r¹`, `r²` (`sampleCorr`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate LD-score model](cross-trait-model.md)
+- [Scaled marginal score for the first trait](z1.md)
+- [Scaled marginal score for the second trait](z2.md)
+- [In-sample LD correlation](sample-corr.md)
 
 ## Sources
 

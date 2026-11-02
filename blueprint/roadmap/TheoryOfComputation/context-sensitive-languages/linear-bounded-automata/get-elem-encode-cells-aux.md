@@ -14,7 +14,10 @@ head state exactly at the head position, boundary tag of position
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Boundary tag of a head position](of-head.md)
+- [Cell tuples of an LBA configuration from an offset](encode-cells-aux.md)
+- [Length of the cell-tuple encoding](length-encode-cells-aux.md)
 
 ## Sources
 

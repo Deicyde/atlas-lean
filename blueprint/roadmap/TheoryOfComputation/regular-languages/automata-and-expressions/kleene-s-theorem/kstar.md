@@ -12,7 +12,7 @@ lean: Cslib.Language.KleeneConverse.IsRegexDenoted.kstar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Language denoted by a regular expression](is-regex-denoted.md)
 
 ## Sources
 

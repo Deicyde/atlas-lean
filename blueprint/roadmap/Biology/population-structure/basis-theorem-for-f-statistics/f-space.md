@@ -14,6 +14,10 @@ are special cases).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Per-locus f4 form](f4-form.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.FStatisticsBasis](../../../../sources/v2/MathlibExt.md)

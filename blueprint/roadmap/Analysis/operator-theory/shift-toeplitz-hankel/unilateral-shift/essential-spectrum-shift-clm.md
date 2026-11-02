@@ -13,7 +13,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.essentialSpec
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Essential spectrum of a bounded operator](essential-spectrum.md)
+
+## Proof depends on
+
+- [Shifted unilateral shift is Fredholm inside the unit disk](is-fredholm-shift-sub-smul-one-of-norm-l.md)
+- [Shifted unilateral shift is Fredholm outside the unit disk](is-fredholm-shift-sub-smul-one-of-one-lt.md)
+- [Shifted unilateral shift is not Fredholm on the unit circle](not-is-fredholm-shift-sub-smul-one-of-no.md)
 
 ## Sources
 

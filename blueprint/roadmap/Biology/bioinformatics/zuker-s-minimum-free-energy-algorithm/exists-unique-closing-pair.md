@@ -14,7 +14,13 @@ the loop it closes and exactly one enclosing loop, possibly the exterior loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Branches of a loop closed by a base pair](branches.md)
+- [Exterior branches of a secondary structure](exterior-branches.md)
+
+## Proof depends on
+
+- [Strict enclosure of one base pair by another](encloses.md)
 
 ## Sources
 

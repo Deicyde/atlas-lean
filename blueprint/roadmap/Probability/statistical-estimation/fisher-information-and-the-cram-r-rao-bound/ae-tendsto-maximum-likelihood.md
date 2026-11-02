@@ -18,7 +18,7 @@ let `θhat n ω` maximize the log-likelihood `∑_{i<n} log p θ (X i ω)` over 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability law of a density family member](law-of.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ as integration against arbitrary bounded continuous functions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.StableDistribution](../../../../sources/v2/MathlibExt.md)

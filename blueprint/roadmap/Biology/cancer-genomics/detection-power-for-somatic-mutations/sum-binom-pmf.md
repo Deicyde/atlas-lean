@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.sum_binomPmf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial probability mass function](binom-pmf.md)
 
 ## Sources
 

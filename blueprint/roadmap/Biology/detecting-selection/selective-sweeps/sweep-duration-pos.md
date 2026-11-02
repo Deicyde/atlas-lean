@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.sweepDuration_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Duration of a logistic sweep between two frequencies](sweep-duration.md)
 
 ## Sources
 

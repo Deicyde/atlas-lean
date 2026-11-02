@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.joint_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Joint weight of an allele copy and its ancestral population](joint.md)
 
 ## Sources
 

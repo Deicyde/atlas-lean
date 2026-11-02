@@ -13,7 +13,18 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.integral_chiSqStra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [LD score of a marker](../ld-score-regression/ld-score.md)
+- [Association statistic under stratification](chi-sq-strat.md)
+
+## Proof depends on
+
+- [Normalized marginal score in the LD-score model](../ld-score-regression/beta-hat.md)
+- [Association statistic in the LD-score model](../ld-score-regression/chi-sq.md)
+- [Expected association statistic for an arbitrary genotype matrix](../ld-score-regression/integral-chi-sq.md)
+- [Phenotype in the LD-score model](../ld-score-regression/pheno.md)
+- [Normalized score under stratification](beta-hat-strat.md)
+- [Phenotype with population stratification](pheno-strat.md)
 
 ## Sources
 

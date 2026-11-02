@@ -11,7 +11,7 @@ lean: StochasticMatrix.toMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

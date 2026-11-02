@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.posDef_serCov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of the single-effect regression model](ser-cov.md)
 
 ## Sources
 

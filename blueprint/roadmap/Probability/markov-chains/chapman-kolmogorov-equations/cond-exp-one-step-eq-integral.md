@@ -14,7 +14,11 @@ given `ℱ k` is the `κ`-integral of `f` evaluated at `X k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Markov chain with respect to a filtration](is-markov-chain.md)
+
+## Proof depends on
+
+- [Chapman–Kolmogorov equations for bounded measurable functions](cond-exp-comp-eq-integral-pow.md)
 
 ## Sources
 

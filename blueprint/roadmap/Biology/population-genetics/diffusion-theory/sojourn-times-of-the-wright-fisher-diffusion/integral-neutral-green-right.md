@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.integral_neutralGreen_righ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher Green's function](neutral-green.md)
 
 ## Sources
 

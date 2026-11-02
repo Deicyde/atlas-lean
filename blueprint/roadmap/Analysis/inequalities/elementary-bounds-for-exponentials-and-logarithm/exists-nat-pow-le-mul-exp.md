@@ -14,6 +14,10 @@ lean: Real.exists_nat_pow_le_mul_exp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Explicit exponential bound on a fixed power](pow-le-nat-ceil-mul-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.PolynomialExponentialBound](../../../../sources/v2/MathlibExt.md)

@@ -16,7 +16,14 @@ set of taxa (excluded here) has no tree (`isEmpty_rootedBinaryTree_empty`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary phylogenetic tree](rooted-binary-tree.md)
+
+## Proof depends on
+
+- [Planar rooted binary tree with labeled leaves](plane-tree.md)
+- [Planar drawings of rooted binary trees on a taxon set](on.md)
+- [Swap of the children of an internal vertex](swap.md)
+- [Leaf labels of a planar binary tree](leaves.md)
 
 ## Sources
 

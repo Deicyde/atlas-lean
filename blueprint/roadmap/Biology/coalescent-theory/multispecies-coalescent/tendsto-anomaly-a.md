@@ -13,7 +13,7 @@ anomalous gene tree however long the shallower branch is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary of the four-species anomaly zone](anomaly-a.md)
 
 ## Sources
 

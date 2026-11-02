@@ -14,6 +14,10 @@ lean: ProbabilityTheory.integral_sq_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Moments of the exponential law](integral-pow-exp-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

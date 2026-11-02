@@ -21,7 +21,22 @@ neighbor: they form a cherry. The bound is sharp: with `≤ μ / 2` a non-cherry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+- [Initial cluster dissimilarity in neighbor joining](../neighbor-joining/initial-dist.md)
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+
+## Proof depends on
+
+- [A two-taxon side forms a cherry](../neighbor-joining/adj-adj-of-side-eq-pair.md)
+- [Split decomposition of a tree metric](../neighbor-joining/dist-eq-sum-darts.md)
+- [Robust cherry lemma for split systems](exists-eq-pair-of-q-criterion-min-of-abs.md)
+- [Q-criterion of two singleton clusters](../neighbor-joining/q-criterion-singleton.md)
+- [Taxa on one side of a tree edge](../neighbor-joining/side.md)
+- [Splits of two tree edges are compatible](../neighbor-joining/side-compat.md)
+- [Edge side at an internal vertex as a disjoint union](../neighbor-joining/side-eq-union.md)
+- [Leaf side of a pendant edge](../neighbor-joining/side-leaf.md)
+- [Every edge side of a binary phylogenetic tree is nonempty](../neighbor-joining/side-nonempty.md)
+- [Two sides of a tree edge partition the taxa](../neighbor-joining/side-swap.md)
 
 ## Sources
 

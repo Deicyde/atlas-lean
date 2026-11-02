@@ -16,6 +16,10 @@ the sums are finite, and every term past the bound is zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vanishing of the cross terms in Wald's second equation](wald-cross-terms-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.WaldCrossTerms](../../../../sources/v2/MathlibExt.md)

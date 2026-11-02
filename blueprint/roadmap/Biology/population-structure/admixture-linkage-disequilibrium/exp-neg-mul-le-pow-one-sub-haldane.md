@@ -14,7 +14,11 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.exp_neg_mul_le_pow_one_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Haldane's map function](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/haldane.md)
+
+## Proof depends on
+
+- [Exact decay factor under Haldane's map function](pow-one-sub-haldane.md)
 
 ## Sources
 

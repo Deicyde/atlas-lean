@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.cramerRateFunction_convex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+
+## Proof depends on
+
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [The epigraph of the Legendre transform is convex](../legendre-transform/convex-epi-legendre-transform.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
 
 ## Sources
 

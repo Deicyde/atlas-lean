@@ -14,6 +14,11 @@ lean: ProbabilityTheory.integral_pow_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrals against the exponential law](integral-exp-measure-eq-set-integral.md)
+- [Power times exponential density in gamma-integrand form](pow-eq-rpow-mul-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

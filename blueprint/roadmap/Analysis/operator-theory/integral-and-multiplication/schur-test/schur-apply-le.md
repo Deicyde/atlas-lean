@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTest.schur_apply_le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squared-norm estimate in Schur's test](schur-norm-sq-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTest](../../../../../sources/v2/MathlibExt.md)

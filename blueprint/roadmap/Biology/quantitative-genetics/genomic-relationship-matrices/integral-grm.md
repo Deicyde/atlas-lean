@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.integral_grm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+- [Genetic relationship matrix entry](grm.md)
+- [Kinship coefficient](kinship.md)
+
+## Proof depends on
+
+- [Genotype of an individual at a biallelic locus](genotype.md)
+- [The genetic relationship covariance](integral-centered-mul.md)
 
 ## Sources
 

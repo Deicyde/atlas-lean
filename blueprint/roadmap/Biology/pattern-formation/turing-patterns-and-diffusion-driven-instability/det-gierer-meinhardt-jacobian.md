@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.det_giererMeinhardtJacobian
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian of the Gierer–Meinhardt kinetics at its steady state](gierer-meinhardt-jacobian.md)
 
 ## Sources
 

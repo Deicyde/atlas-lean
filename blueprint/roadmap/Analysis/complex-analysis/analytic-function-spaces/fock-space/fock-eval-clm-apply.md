@@ -13,7 +13,8 @@ with the Fock kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+- [Point evaluation as a bounded functional on the Fock space](fock-eval-clm.md)
 
 ## Sources
 

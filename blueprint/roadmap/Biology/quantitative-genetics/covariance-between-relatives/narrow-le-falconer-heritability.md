@@ -14,7 +14,14 @@ variance `V_P > 0`, the narrow-sense heritability `V_A / V_P` is at most the ACE
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
+- [Genetic covariance of relatives in Cockerham form](cov.md)
+- [Additive variance of the Cockerham components](var-a-2.md)
+
+## Proof depends on
+
+- [Falconer's estimator](falconer.md)
+- [Phantom heritability inequality](var-a-le-falconer.md)
 
 ## Sources
 

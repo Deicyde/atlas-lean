@@ -12,7 +12,7 @@ lean: ProbabilityTheory.stickyKernel_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
 
 ## Sources
 

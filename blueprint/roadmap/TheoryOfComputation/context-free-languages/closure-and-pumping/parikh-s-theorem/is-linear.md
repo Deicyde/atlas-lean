@@ -15,6 +15,10 @@ with one coefficient per position in the period list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear combination of period vectors](lin-comb.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Parikh](../../../../../sources/v2/CSLibExt.md)

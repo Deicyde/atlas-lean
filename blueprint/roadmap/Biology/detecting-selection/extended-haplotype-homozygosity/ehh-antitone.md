@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.ehh_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended haplotype homozygosity (EHH)](ehh.md)
+
+## Proof depends on
+
+- [Concordant haplotype pairs at a given radius](concordant-pairs.md)
+- [EHH is zero for a set of at most one haplotype](ehh-eq-zero-of-card-le-one.md)
+- [Haplotype window around the core](window.md)
+- [Equality of haplotype windows](window-eq-iff.md)
 
 ## Sources
 

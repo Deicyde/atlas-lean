@@ -14,7 +14,14 @@ vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [First-coordinates map on square-summable sequences](first-coords.md)
+
+## Proof depends on
+
+- [Backward shift](backward-clm.md)
+- [Pointwise action of a power of the backward shift](backward-clm-pow-apply.md)
+- [Pointwise action of a power of the unilateral shift](shift-clm-pow-apply.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ whenever `c` separates `a` from `b` in `T`, then every edge ARACNE keeps is an e
 
 ## Depends on
 
-This node has no prerequisites.
+- [ARACNE gene network reconstruction](aracne.md)
 
 ## Sources
 

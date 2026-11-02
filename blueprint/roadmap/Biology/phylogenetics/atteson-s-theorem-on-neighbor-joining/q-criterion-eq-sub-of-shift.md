@@ -15,7 +15,7 @@ both have the same minimizing pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
 
 ## Sources
 

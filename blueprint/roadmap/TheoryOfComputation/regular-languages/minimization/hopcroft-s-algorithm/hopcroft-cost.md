@@ -19,6 +19,10 @@ only `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Preimage of a set under a letter](preimage.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.HopcroftCost](../../../../../sources/v2/CSLibExt.md)

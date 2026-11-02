@@ -14,7 +14,11 @@ independence is assumed. (For `m = 0` there is no hypothesis and both sides are 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+
+## Proof depends on
+
+- [Union bound for valid p-values](measure-exists-mem-le-le.md)
 
 ## Sources
 

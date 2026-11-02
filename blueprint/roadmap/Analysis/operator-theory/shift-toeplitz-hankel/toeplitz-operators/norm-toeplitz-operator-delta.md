@@ -12,7 +12,15 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.norm_toeplitzOperat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute summability of a delta symbol](summable-norm-toeplitz-delta.md)
+- [Delta symbol for Toeplitz operators](toeplitz-delta.md)
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Operator norm bound for a Toeplitz operator](norm-toeplitz-operator-le.md)
+- [Toeplitz operator applied to a standard basis vector](toeplitz-operator-apply-single.md)
+- [$\ell^1$ norm of a delta symbol](tsum-norm-toeplitz-delta.md)
 
 ## Sources
 

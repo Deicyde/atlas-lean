@@ -14,6 +14,13 @@ test (Carter et al. 2012, Eq. 9, with the randomization at `k - 1`; see the modu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial probability mass function](binom-pmf.md)
+- [Critical count of the mutation detection test](critical-count.md)
+- [Randomization probability of the detection test](randomization.md)
+- [Binomial upper tail probability](upper-tail.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.DetectionPower](../../../../sources/v2/MathlibExt.md)

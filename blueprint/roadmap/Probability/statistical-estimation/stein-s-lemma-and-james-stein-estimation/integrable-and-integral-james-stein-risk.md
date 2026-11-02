@@ -13,7 +13,11 @@ of the James–Stein estimator is `p - (p - 2)² E[‖X‖⁻²]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [James–Stein estimator](james-stein.md)
+
+## Proof depends on
+
+- [Stein's unbiased risk estimate](integral-sum-sq-add-sub-pi-gaussian-real.md)
 
 ## Sources
 

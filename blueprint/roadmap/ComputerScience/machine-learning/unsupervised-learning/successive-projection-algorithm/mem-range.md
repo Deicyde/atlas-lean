@@ -13,7 +13,13 @@ lean: Cslib.MachineLearning.MatrixFactorization.SuccessiveProjection.IsSPARun.me
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run of the successive projection algorithm](is-sparun.md)
+- [Separable data matrix](separable.md)
+
+## Proof depends on
+
+- [Norm bound for a sub-convex combination of vectors](norm-sum-smul-le.md)
+- [Residual of a column in the successive projection algorithm](residual.md)
 
 ## Sources
 

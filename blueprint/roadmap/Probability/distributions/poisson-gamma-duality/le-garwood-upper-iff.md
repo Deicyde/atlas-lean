@@ -12,7 +12,14 @@ lean: ProbabilityTheory.le_garwoodUpper_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garwood's exact upper confidence bound](garwood-upper.md)
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+
+## Proof depends on
+
+- [Positivity of the Garwood upper bound](garwood-upper-pos.md)
+- [Garwood upper bound solves the distribution function equation](poisson-cdf-garwood-upper.md)
+- [Poisson distribution function is strictly decreasing in the mean](poisson-cdf-strict-anti-on.md)
 
 ## Sources
 

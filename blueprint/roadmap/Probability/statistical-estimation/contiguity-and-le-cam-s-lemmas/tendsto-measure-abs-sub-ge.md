@@ -14,7 +14,7 @@ measurable functions `T n` converge to `c` in `P`-probability, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contiguity of sequences of measures](is-contiguous.md)
 
 ## Sources
 

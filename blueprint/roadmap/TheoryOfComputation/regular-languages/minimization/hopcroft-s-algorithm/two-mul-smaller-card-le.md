@@ -13,7 +13,7 @@ sets, so twice its size is at most the sum of the two sizes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smaller of two finite sets of states](smaller.md)
 
 ## Sources
 

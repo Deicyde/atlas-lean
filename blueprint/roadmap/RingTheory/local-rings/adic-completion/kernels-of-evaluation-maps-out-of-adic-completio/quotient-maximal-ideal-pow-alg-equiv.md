@@ -14,6 +14,10 @@ identifies with the corresponding quotient of the ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Algebra map between maximal ideal power quotients of a ring and its completion](quotient-maximal-ideal-pow-alg-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdicCompletion.LocalRing](../../../../../sources/v2/MathlibExt.md)

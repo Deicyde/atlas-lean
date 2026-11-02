@@ -14,6 +14,10 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.updateH
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reconstruction matrix in nonnegative matrix factorization](recon.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.MutationalSignatures.ARDNMF](../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitz_hasSum_sli
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Summability of weighted diagonal slices](toeplitz-summable-slices.md)
 
 ## Sources
 

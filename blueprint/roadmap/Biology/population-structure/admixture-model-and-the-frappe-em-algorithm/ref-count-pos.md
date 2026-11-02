@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.refCount_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Polymorphic genotype data](polymorphic.md)
+- [Expected reference-allele count of a SNP per population](ref-count.md)
+
+## Proof depends on
+
+- [Reference-allele indicator for a genotype copy](is-ref.md)
+- [Ancestry responsibility of an allele copy (E-step)](resp.md)
+- [Positivity of the admixture responsibilities](resp-pos.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: DFA.Hopcroft.two_mul_smaller_card_le_of_split
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smaller of two finite sets of states](smaller.md)
+
+## Proof depends on
+
+- [The smaller of two sets has at most half their total size](two-mul-smaller-card-le.md)
 
 ## Sources
 

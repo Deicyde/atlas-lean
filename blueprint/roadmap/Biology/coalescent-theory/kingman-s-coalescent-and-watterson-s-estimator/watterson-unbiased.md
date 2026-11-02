@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.watterson_un
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](kingman-times.md)
+- [Total branch length of a coalescent genealogy](total-length.md)
+
+## Proof depends on
+
+- [Expected number of segregating sites](integral-seg-sites.md)
 
 ## Sources
 

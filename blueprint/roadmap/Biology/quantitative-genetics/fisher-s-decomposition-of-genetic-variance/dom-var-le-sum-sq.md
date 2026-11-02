@@ -14,7 +14,15 @@ minimizes the weighted squared error `∑ p i p j (G i j - c - a i - a j) ²`; i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dominance variance](dom-var.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Dominance deviation of a genotype](dom-dev.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+- [Orthogonality of dominance deviations in the first allele](sum-mul-dom-dev-left.md)
+- [Orthogonality of dominance deviations in the second allele](sum-mul-dom-dev-right.md)
 
 ## Sources
 

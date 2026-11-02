@@ -19,6 +19,10 @@ of `β` given `β̂` is `N((R + M / (N h²) · I)⁻¹ β̂, (1 / N) (R + M / (N
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bayes' theorem for a linear-Gaussian observation](../../../Probability/distributions/gaussian-conditioning/cond-distrib-linear-add-of-indep-fun.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MixedModel](../../../../sources/v2/MathlibExt.md)

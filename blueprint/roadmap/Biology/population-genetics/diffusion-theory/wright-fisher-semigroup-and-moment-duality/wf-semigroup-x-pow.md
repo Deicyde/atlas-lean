@@ -15,7 +15,15 @@ processes themselves are not constructed here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+- [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
+- [Diffusion semigroup agrees with the dual semigroup on polynomials](wf-semigroup-to-continuous-map-on.md)
 
 ## Sources
 

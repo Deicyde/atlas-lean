@@ -14,6 +14,10 @@ coefficients `(conj z)ⁿ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Szegő kernel coefficients lie in ℓ²](mem-p-szego-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.HardySpace](../../../../../sources/v2/MathlibExt.md)

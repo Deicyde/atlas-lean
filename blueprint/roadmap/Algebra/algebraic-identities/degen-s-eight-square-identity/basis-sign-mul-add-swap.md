@@ -12,7 +12,7 @@ lean: Octonion.basisSign_mul_add_swap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign of a product of octonion basis elements](basis-sign.md)
 
 ## Sources
 

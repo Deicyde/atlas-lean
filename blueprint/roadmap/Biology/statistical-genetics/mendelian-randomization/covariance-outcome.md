@@ -13,7 +13,7 @@ observational decomposition: `Cov(V, Y) = β Cov(V, X) + Cov(V, U)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear moment model for instrumental variables](linear-moment-model.md)
 
 ## Sources
 

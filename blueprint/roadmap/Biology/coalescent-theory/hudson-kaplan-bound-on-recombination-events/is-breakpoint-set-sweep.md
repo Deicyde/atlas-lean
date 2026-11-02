@@ -13,7 +13,15 @@ breakpoint set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid set of recombination breakpoints](is-breakpoint-set.md)
+- [Hudson–Kaplan left-to-right sweep](sweep.md)
+
+## Proof depends on
+
+- [Four-gamete condition for binary characters](../../phylogenetics/splits-compatibility-ultrametrics-and-upgma/four-gametes.md)
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Breakpoint separating two sites](separates.md)
+- [One step of the Hudson–Kaplan sweep](sweep-step.md)
 
 ## Sources
 

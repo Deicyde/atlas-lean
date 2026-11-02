@@ -14,6 +14,11 @@ the occupied table `B`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seating a customer at an occupied table](join-table.md)
+- [Seating a customer at a new table](new-table.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ChineseRestaurant](../../../../sources/v2/MathlibExt.md)

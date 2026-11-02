@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Phylogenetics.BalancedMinimumEvolution.RTree.kraft
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with edge lengths](rtree.md)
+- [Leaves of a rooted binary tree with root distances](leaves.md)
 
 ## Sources
 

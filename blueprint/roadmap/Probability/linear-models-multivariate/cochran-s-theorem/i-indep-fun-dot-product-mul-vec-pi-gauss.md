@@ -16,6 +16,10 @@ quadratic forms `Zᵀ (A k) Z` are mutually independent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rank criterion](cochran-rank-criterion.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.CochranIndependence](../../../../sources/v2/MathlibExt.md)

@@ -11,7 +11,11 @@ lean: InformationTheory.DependenceForest.divergence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+
+## Proof depends on
+
+- [Chow–Liu product approximation of a joint law](approx.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore.Model.integral_ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+- [Random-effects model of stratified LD-score regression](model.md)
+- [Association chi-squared statistic in stratified LD-score regression](chi-sq.md)
+
+## Proof depends on
+
+- [Normalized marker score in stratified LD-score regression](beta-hat.md)
+- [Phenotype in the stratified LD-score model](pheno.md)
 
 ## Sources
 

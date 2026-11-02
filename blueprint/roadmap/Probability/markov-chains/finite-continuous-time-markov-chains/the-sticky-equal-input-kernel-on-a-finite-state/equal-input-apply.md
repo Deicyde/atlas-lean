@@ -12,7 +12,7 @@ lean: ProbabilityTheory.equalInput_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equal-input matrix](equal-input.md)
 
 ## Sources
 

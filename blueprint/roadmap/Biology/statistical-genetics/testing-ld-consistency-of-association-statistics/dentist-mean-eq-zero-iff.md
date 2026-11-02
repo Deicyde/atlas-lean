@@ -13,7 +13,7 @@ true correlation or the lead variant has mean zero (for `r ^ 2 < 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean of the standardized DENTIST difference](dentist-mean.md)
 
 ## Sources
 

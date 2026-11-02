@@ -13,6 +13,11 @@ lean: Cslib.Bioinformatics.Indexing.BWT.bwt
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sorted rotations of a sentinel-terminated text](sorted-rotations.md)
+- [Text with an appended sentinel](with-sentinel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Indexing.BWT](../../../../sources/v2/CSLibExt.md)

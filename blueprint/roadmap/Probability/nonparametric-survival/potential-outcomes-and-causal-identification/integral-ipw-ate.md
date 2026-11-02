@@ -14,7 +14,14 @@ strong ignorability of `T` given a finitely-valued `X` for the pair `(Y₀, Y₁
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong ignorability](strongly-ignorable.md)
+- [Observed outcome from potential outcomes](observed.md)
+- [Propensity score](propensity.md)
+
+## Proof depends on
+
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Strong ignorability passes to functions of the potential outcomes](comp.md)
 
 ## Sources
 

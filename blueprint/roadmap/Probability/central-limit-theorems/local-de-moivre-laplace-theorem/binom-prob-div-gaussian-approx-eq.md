@@ -14,7 +14,12 @@ a power-of-`n` factor, and an exponential correction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial point mass with success probability one half](binom-prob-half.md)
+- [Gaussian approximation to the symmetric binomial point mass](gaussian-approx-half.md)
+
+## Proof depends on
+
+- [Factorial in terms of the Stirling sequence](factorial-eq-stirling-seq-mul.md)
 
 ## Sources
 

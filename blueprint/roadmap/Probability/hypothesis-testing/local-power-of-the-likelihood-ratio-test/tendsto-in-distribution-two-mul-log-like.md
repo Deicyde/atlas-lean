@@ -26,7 +26,12 @@ theorem; under local alternatives it gives the local power
 
 ## Depends on
 
-This node has no prerequisites.
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+
+## Proof depends on
+
+- [Product of a distributionally convergent and a vanishing sequence](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/mul-tendsto-in-measure-zero.md)
+- [Convergence to zero in probability by domination on likely events](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-measure-zero-of-abs-le.md)
 
 ## Sources
 

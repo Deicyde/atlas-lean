@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.schurInfLinMap_ap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur operator of an infinite matrix as a linear map](schur-inf-lin-map.md)
 
 ## Sources
 

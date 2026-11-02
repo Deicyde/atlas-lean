@@ -12,7 +12,7 @@ lean: ProbabilityTheory.IsRateMatrix.mulVec_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](is-rate-matrix.md)
 
 ## Sources
 

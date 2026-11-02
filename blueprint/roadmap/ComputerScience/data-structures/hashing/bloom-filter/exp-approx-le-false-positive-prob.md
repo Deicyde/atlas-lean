@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.BloomFilter.exp_approx_le_falsePositiveProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Bloom filter false-positive rate under uniform hashing](false-positive-prob.md)
+
+## Proof depends on
+
+- [Bloom's formula is a lower bound](classical-le-false-positive-prob.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ master equation on `[0, ∞)` from a positive master frequency, then `x t → 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Master-sequence vector field of the single-peak quasispecies](master-field.md)
+
+## Proof depends on
+
+- [Master-sequence equation is logistic](master-field-eq.md)
 
 ## Sources
 

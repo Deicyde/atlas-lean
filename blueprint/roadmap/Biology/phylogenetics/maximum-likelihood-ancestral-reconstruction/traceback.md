@@ -12,7 +12,13 @@ maximizing the transition weight times the child's `maxPrune`, and recurse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+
+## Proof depends on
+
+- [State maximizing a function](argmax-state.md)
+- [Max-product pruning recursion](max-prune.md)
 
 ## Sources
 

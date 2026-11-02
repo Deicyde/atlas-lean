@@ -12,7 +12,11 @@ lean: ProbabilityTheory.isProbabilityMeasure_polyaUrnPredictive
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn predictive law](polya-urn-predictive.md)
+
+## Proof depends on
+
+- [Predictive probability of a set in the Blackwell–MacQueen urn](polya-urn-predictive-apply.md)
 
 ## Sources
 

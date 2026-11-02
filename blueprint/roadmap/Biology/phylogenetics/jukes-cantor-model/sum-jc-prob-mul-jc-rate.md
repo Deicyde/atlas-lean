@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.sum_jcProb_mul_jcRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Jukes–Cantor rate matrix](jc-rate.md)
 
 ## Sources
 

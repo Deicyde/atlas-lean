@@ -15,6 +15,10 @@ of the maximal ideal of `R` together with `X`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kernel of the constant coefficient map of power series](ker-constant-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.RegularLocalRing](../../../../../sources/v2/MathlibExt.md)

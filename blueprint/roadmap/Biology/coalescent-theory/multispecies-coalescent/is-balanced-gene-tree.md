@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.IsBalancedGen
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Balanced four-gene tree](balanced-tree.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent](../../../../sources/v2/MathlibExt.md)

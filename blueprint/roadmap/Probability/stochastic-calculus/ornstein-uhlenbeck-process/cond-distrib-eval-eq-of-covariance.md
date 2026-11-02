@@ -15,6 +15,11 @@ lean: ProbabilityTheory.IsGaussianProcess.condDistrib_eval_eq_of_covariance
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gaussian conditioning](../../distributions/gaussian-conditioning/cond-distrib-of-has-gaussian-law.md)
+- [The additive-noise kernel](../../distributions/gaussian-conditioning/noise-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.OrnsteinUhlenbeck](../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,11 @@ when `τ ≤ g ∅`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+- [FindSIS returns a sufficient subset of the features](find-sis-sufficient.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.SufficientInputSubsets](../../../../../sources/v2/CSLibExt.md)

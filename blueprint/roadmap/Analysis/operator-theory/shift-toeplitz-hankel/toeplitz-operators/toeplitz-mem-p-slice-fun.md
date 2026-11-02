@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitz_memℓp_sl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.PoissonPointProcess.countingMeasure_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting measure of a finite tuple of points](counting-measure.md)
 
 ## Sources
 

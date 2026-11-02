@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.norm_sq_dirichletKern
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
+## Proof depends on
+
+- [Closed form of $\sum r^n/(n+1)$ for real $0<r<1$](has-sum-div-succ-pow-real.md)
+- [Squared norms of the Dirichlet kernel coefficients](norm-sq-dirichlet-coeff.md)
 
 ## Sources
 

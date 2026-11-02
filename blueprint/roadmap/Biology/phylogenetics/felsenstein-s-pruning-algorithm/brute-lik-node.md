@@ -13,7 +13,13 @@ behind pruning).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
+- [Brute-force likelihood given the root state](brute-lik.md)
+
+## Proof depends on
+
+- [Labeling of the non-root nodes of a tree](labeling.md)
+- [Weight of a tree labeling](weight.md)
 
 ## Sources
 

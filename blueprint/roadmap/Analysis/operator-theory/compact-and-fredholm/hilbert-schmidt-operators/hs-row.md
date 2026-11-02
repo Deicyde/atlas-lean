@@ -11,7 +11,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsRow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Square-summable sequences lie in ℓ²](mem-p-of-summable-norm-sq.md)
+- [Rows of a Hilbert–Schmidt matrix are square-summable](summable-row-of-is-hilbert-schmidt.md)
 
 ## Sources
 

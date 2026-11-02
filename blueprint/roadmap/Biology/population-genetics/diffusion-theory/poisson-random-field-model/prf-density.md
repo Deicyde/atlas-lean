@@ -19,6 +19,10 @@ value `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.PoissonRandomField](../../../../../sources/v2/MathlibExt.md)

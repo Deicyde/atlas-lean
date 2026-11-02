@@ -13,7 +13,11 @@ criterion `isUnit_one_sub_of_norm_lt_one`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [The backward shift has operator norm at most one](norm-backward-clm-le.md)
 
 ## Sources
 

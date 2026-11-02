@@ -12,7 +12,12 @@ lean: ProbabilityTheory.stickyKernel_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Equal-input matrix](equal-input.md)
+- [Equal-input matrix is idempotent](equal-input-mul-self.md)
 
 ## Sources
 

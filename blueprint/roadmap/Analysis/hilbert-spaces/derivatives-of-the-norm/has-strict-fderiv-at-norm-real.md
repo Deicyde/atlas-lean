@@ -14,6 +14,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormDerivative.hasStrictFDerivAt_nor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Fréchet derivative of the norm at a nonzero point](has-strict-fderiv-at-norm.md)
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+- [Over the reals the norming functional is the inner product](re-inner-sl-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NormDerivative](../../../../sources/v2/MathlibExt.md)

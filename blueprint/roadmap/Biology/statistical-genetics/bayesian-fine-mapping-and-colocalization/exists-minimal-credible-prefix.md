@@ -14,7 +14,13 @@ at least `k` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Credible set of variants](is-credible-set.md)
+- [Prefix of variants in a given order](sorted-prefix.md)
+
+## Proof depends on
+
+- [Cardinality of a sorted prefix](card-sorted-prefix.md)
+- [The shortest credible prefix has minimum size](le-card-of-is-credible-set.md)
 
 ## Sources
 

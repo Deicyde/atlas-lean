@@ -14,6 +14,10 @@ lean: Nat.Partition.succ_le_two_mul_card
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sum-of-parts recurrence for the partition function](mul-card-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.LinearLowerBound](../../../../../sources/v2/MathlibExt.md)

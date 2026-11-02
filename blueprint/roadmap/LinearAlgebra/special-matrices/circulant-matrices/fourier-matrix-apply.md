@@ -12,7 +12,12 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.fourierMatrix_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier matrix](fourier-matrix.md)
+- [Standard primitive n-th root of unity $e^{2\pi i/n}$](zeta.md)
+
+## Proof depends on
+
+- [Exponential formula for Fourier vectors](fourier-vec-apply.md)
 
 ## Sources
 

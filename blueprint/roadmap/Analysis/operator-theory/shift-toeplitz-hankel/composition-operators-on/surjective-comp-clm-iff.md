@@ -15,7 +15,13 @@ agree, so `e_a` is not in the range; if `ψ` is injective, the preimage of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+
+## Proof depends on
+
+- [Adjoint of a composition operator is the fiber-sum operator](adjoint-comp-clm-apply.md)
+- [Pointwise action of the bounded composition operator](comp-clm-apply.md)
 
 ## Sources
 

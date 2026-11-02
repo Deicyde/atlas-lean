@@ -14,7 +14,8 @@ ploidy is the weighted mean copy number `τ = ∑ w q`, the weighted mean copy r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative copy ratio](copy-ratio.md)
+- [Average absolute copy number of a tumor sample](mix-copy.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ the diploid map satisfies `q ≤ U / s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One diploid generation of selection and mutation](diploid-step.md)
+
+## Proof depends on
+
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
+- [Positivity of mean fitness for allele frequencies below one](mean-fitness-pos.md)
+- [Loss-of-function frequency after selection](selected.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ ball has a subsequence converging in `ℓ²(ℕ, 𝕜)` to a point of the ball.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rellich ball of weighted square-summable sequences](rellich-ball.md)
+
+## Proof depends on
+
+- [Rellich–Kondrachov, compactness form](is-compact-rellich-ball.md)
 
 ## Sources
 

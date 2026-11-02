@@ -11,7 +11,13 @@ lean: StochasticMatrix.pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Matrix powers of a stochastic matrix](../kolmogorov-s-criterion-for-reversibility/mat-pow.md)
+- [Powers of a stochastic matrix are nonnegative](../kolmogorov-s-criterion-for-reversibility/mat-pow-nonneg.md)
+- [Powers of a stochastic matrix are stochastic](mat-pow-row-sum.md)
 
 ## Sources
 

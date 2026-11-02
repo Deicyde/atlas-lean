@@ -14,7 +14,7 @@ and the vanishing would not witness a fit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residual sum of squares in archetypal analysis](rss.md)
 
 ## Sources
 

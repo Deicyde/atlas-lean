@@ -13,7 +13,7 @@ inner dual of the negated carrier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative polar cone](polar-cone.md)
 
 ## Sources
 

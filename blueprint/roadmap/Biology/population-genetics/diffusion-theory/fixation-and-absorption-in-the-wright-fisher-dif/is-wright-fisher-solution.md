@@ -17,6 +17,10 @@ adapted to `ℱ`, and for every `C²` function `f` the process
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.KimuraFixationProcess](../../../../../sources/v2/MathlibExt.md)

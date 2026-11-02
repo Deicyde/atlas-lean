@@ -14,7 +14,7 @@ every `α > 0` there is `c > 0` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Critical bond percolation measure on the square lattice](critical-bond-measure.md)
 
 ## Sources
 

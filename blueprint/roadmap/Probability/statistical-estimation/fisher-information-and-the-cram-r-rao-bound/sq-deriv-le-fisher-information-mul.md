@@ -14,7 +14,7 @@ says `g'(θ) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](fisher-information.md)
 
 ## Sources
 

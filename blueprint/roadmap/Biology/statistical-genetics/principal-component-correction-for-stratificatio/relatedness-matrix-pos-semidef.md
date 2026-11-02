@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.relatednessMatrix_posSem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Patterson's relatedness matrix](relatedness-matrix.md)
+
+## Proof depends on
+
+- [Patterson's normalized genotype matrix](normalized-genotype.md)
 
 ## Sources
 

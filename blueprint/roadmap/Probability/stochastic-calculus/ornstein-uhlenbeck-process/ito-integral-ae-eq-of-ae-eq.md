@@ -13,7 +13,8 @@ surely.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](../it-integral/elementary-integrand.md)
+- [Itô integral of an elementary integrand](../it-integral/ito-integral.md)
 
 ## Sources
 

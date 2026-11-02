@@ -13,7 +13,7 @@ lean: MathlibExt.Probability.PoissonWeakConvergence.charFun_poissonProbMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson law as a probability measure](poisson-prob-measure.md)
 
 ## Sources
 

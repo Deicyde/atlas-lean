@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum.finite_spectrum_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenvalue finiteness for finite-rank operators](finite-nonzero-has-eigenvalue-of-finite.md)
+- [Nonzero spectral values of a finite-rank operator are eigenvalues](spectrum-subset-insert-zero-has-eigenval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum](../../../../../sources/v2/MathlibExt.md)

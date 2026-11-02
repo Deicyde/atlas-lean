@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.sum_joint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
+- [Joint probability of class and features in naive Bayes](joint.md)
 
 ## Sources
 

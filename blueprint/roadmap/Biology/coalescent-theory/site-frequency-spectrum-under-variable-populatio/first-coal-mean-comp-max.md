@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.firstCoalMean
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected time to the first coalescence](first-coal-mean.md)
+
+## Proof depends on
+
+- [Cumulative coalescence intensity](cum-rate.md)
 
 ## Sources
 

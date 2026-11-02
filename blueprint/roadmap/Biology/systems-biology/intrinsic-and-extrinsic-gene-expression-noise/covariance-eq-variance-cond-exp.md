@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Dynamics.ExpressionNoise.IsIdenticalReporterPair.covari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Identical reporter pair](is-identical-reporter-pair.md)
+
+## Proof depends on
+
+- [Identical reporters have equal means](integral-eq.md)
 
 ## Sources
 

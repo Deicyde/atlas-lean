@@ -11,7 +11,7 @@ Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
 
 ## Sources
 

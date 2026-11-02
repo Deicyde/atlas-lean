@@ -19,6 +19,7 @@ element of $L^2([0, 1])$ is determined by its values almost everywhere, it is un
 ## Proof depends on
 
 - [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
+- [Orthonormality of the sine basis on the unit interval](sine-product-integral.md)
 
 ## Sources
 

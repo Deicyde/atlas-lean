@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.Dynamics.Replicator.IsSolution.sum_eq_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the replicator equation](is-solution.md)
+
+## Proof depends on
+
+- [Evolution of the total frequency under replicator dynamics](has-deriv-at-sum.md)
+- [Mean fitness of a population state](mean-fitness.md)
 
 ## Sources
 

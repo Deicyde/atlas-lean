@@ -12,7 +12,18 @@ lean: Cslib.Bioinformatics.PopulationStructure.LiStephens.likelihoodTab_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+- [The Li–Stephens copying model](hmm.md)
+- [The tabulated Li–Stephens likelihood](likelihood-tab.md)
+- [Likelihood of the observations](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/likelihood.md)
+
+## Proof depends on
+
+- [Tabulated O(K) forward variables](fast-forward-tab.md)
+- [Tabulated recursion computes the Li–Stephens forward variables](fast-forward-tab-get.md)
+- [Forward variables of a hidden Markov model](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/forward.md)
+- [The forward algorithm computes the likelihood](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/likelihood-eq-sum-forward.md)
+- [Sum of the entries of a vector](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/sum-vec.md)
 
 ## Sources
 

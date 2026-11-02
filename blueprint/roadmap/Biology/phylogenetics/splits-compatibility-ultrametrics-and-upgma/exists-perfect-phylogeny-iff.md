@@ -14,7 +14,19 @@ two of its columns show all four gametes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four-gamete condition for binary characters](four-gametes.md)
+- [Perfect phylogeny for a binary character matrix](is-perfect-phylogeny.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Compatible splits](compatible.md)
+- [Symmetry of split compatibility](symm.md)
+- [Split of a binary character](char-split.md)
+- [The four-gamete test](compatible-iff-not-four-gametes.md)
+- [Edge splits of a tree are pairwise compatible](compatible-of-mem-edge-splits.md)
+- [Edge splits of a tree](edge-splits.md)
+- [Splits-equivalence theorem](splits-equivalence.md)
 
 ## Sources
 

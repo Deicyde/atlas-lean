@@ -12,7 +12,14 @@ lean: MvPowerSeries.constantCoeff_expOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Defining coefficient formula of the operator exponential](coeff-exp-operator-def.md)
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
+- [Partial operator exponential as a sum of function iterates](exp-operator-partial-apply.md)
 
 ## Sources
 

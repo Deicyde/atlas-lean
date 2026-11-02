@@ -11,7 +11,11 @@ lean: InformationTheory.DependenceForest.weight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+
+## Proof depends on
+
+- [Mutual information of a finite joint law](../conditional-mutual-information/finite-mutual-information.md)
 
 ## Sources
 

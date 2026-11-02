@@ -15,7 +15,15 @@ i.i.d. draws from a Dirichlet process `G`, then `P(X₁ ∈ A, X₂ ∈ B) = E[G
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random measure of a stick-breaking process](g.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+- [Blackwell–MacQueen urn predictive law](polya-urn-predictive.md)
+
+## Proof depends on
+
+- [Mixed second moment of the Dirichlet process](lintegral-g-mul-g-2.md)
+- [Predictive probability of a set in the Blackwell–MacQueen urn](polya-urn-predictive-apply.md)
 
 ## Sources
 

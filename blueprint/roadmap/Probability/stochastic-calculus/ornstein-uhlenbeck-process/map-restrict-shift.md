@@ -13,7 +13,13 @@ invariant under time shifts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Gaussian process laws are determined by mean and covariance](map-restrict-eq-of-covariance-eq.md)
+- [Time shifts of a stationary Ornstein–Uhlenbeck process](shift.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
 
 ## Sources
 

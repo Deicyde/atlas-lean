@@ -17,6 +17,10 @@ avoids clashing with Mathlib's invertible version of the same name.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Matrix determinant lemma without invertibility](det-add-vec-mul-vec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.DeterminantLemma](../../../../sources/v2/MathlibExt.md)

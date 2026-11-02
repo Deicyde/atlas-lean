@@ -14,6 +14,10 @@ coordinates `√(1 - ‖u‖²) * u ^ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square-summability of the scaled geometric sequence](mem-p-geom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.ShiftNumericalRange](../../../../../sources/v2/MathlibExt.md)

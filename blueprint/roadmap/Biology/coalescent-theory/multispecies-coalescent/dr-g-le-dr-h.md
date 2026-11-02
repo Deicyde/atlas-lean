@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.drG_le_drH
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D))](dr-g.md)
+- [Degnan–Rosenberg formula h for the gene tree ((A, B), (C, D))](dr-h.md)
 
 ## Sources
 

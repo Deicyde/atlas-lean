@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance.admixWeight
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lineage weights of the three-population star tree](star-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance](../../../../sources/v2/MathlibExt.md)

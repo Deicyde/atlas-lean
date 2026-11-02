@@ -12,7 +12,12 @@ lean: ProbabilityTheory.IsRateMatrix.exists_add_smul_one_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](is-rate-matrix.md)
+
+## Proof depends on
+
+- [Uniformization](add-smul-one-nonneg.md)
+- [Diagonal entries of a rate matrix are nonpositive](diag-nonpos.md)
 
 ## Sources
 

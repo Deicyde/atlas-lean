@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.mutationGenerator_id
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
 
 ## Sources
 

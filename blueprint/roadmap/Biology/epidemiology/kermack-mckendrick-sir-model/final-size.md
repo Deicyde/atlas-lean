@@ -14,7 +14,11 @@ lean: MathlibExt.Biology.Epidemiology.SIR.IsSolution.final_size
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Kermack–McKendrick SIR system](is-solution.md)
+
+## Proof depends on
+
+- [Conserved quantity behind the final-size relation](susceptible-mul-exp-eq.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ transition and `1 / 4` for each transversion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [HKY85 rate matrix](hky-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.SubstitutionModels](../../../../sources/v2/MathlibExt.md)

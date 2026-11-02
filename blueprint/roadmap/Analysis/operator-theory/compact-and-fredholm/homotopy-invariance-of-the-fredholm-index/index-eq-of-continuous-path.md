@@ -15,6 +15,10 @@ Fredholm operators on `[0, 1]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fredholm index is constant along a path continuous on (0, 1)](index-eq-of-continuous-on-icc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.FredholmIndexHomotopy](../../../../../sources/v2/MathlibExt.md)

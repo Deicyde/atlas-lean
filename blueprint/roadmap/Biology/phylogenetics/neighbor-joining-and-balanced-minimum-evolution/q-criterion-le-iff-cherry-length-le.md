@@ -14,7 +14,12 @@ local star identity; it is not the full Gascuel–Steel comparison on all taxa.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+- [Balanced minimum-evolution length of a cherry tree](cherry-length.md)
+
+## Proof depends on
+
+- [The BME length of a join in terms of the Q-criterion](cherry-length-eq.md)
 
 ## Sources
 

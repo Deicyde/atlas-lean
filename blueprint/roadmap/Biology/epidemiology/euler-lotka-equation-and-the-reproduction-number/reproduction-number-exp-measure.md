@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Epidemiology.EulerLotka.reproductionNumber_expMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproductive number from growth rate and generation interval](reproduction-number.md)
+
+## Proof depends on
+
+- [Gamma generation interval](reproduction-number-gamma-measure.md)
 
 ## Sources
 

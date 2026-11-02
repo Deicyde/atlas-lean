@@ -12,7 +12,8 @@ lean: ProbabilityTheory.StickBreakingProcess.integral_remainder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Random leftover stick](remainder.md)
 
 ## Sources
 

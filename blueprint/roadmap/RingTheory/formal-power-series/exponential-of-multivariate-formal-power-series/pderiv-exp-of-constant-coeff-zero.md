@@ -13,7 +13,13 @@ the exponential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
+
+## Proof depends on
+
+- [Coefficients of the exponential via truncation](coeff-exp-of-constant-coeff-zero.md)
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
+- [Partial derivative of the truncated exponential](pderiv-exp-trunc.md)
 
 ## Sources
 

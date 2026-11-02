@@ -14,7 +14,14 @@ process of rate `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson process](is-poisson-process.md)
+- [Counting process of interarrival times](count.md)
+
+## Proof depends on
+
+- [Counting process has nondecreasing paths almost surely](ae-count-monotone.md)
+- [Counting process starts at zero almost surely](ae-count-zero.md)
+- [Independent Poisson increments of the counting process](has-law-count-increments.md)
 
 ## Sources
 

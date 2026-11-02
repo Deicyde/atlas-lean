@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.genCov
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column-centred genotype matrix](centered.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics](../../../../sources/v2/MathlibExt.md)

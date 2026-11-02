@@ -13,7 +13,7 @@ exactly one gene with it and `C(n - 2, 2)` are disjoint from it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs of genes in a sample](../segregating-sites-and-pairwise-differences/sample-pairs.md)
 
 ## Sources
 

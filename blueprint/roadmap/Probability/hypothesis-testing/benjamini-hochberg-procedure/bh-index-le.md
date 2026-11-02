@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.Statistics.MultipleTesting.bhIndex_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Benjamini–Hochberg step-up index](bh-index.md)
+
+## Proof depends on
+
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
 
 ## Sources
 

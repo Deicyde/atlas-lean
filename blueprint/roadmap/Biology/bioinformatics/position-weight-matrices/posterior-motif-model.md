@@ -14,7 +14,15 @@ prior times the likelihood ratio of its window (Lawrence and Reilly 1990; Bailey
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive position weight matrices](pos-pwm.md)
+- [Motif model as an EM model](motif-model.md)
+- [Likelihood ratio of a motif window](window-ratio.md)
+- [Posterior of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/posterior.md)
+
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Marginal of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/marginal.md)
 
 ## Sources
 

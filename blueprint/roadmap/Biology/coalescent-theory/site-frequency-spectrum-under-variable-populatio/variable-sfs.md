@@ -15,6 +15,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.variableSFS
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

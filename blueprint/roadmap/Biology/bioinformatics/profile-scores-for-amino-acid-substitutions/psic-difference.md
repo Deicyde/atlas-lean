@@ -14,6 +14,10 @@ residue `mt`: `profileScore p q wt - profileScore p q mt`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Profile log-odds score of a residue](profile-score.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.PolyPhen](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ bisexual population.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
 
 ## Sources
 

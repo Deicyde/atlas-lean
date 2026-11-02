@@ -13,7 +13,12 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.watermanNumber_zero_eq_motzkinN
 
 ## Depends on
 
-This node has no prerequisites.
+- [Waterman's recursion](waterman-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/motzkin-numbers/motzkin-number.md)
+
+## Proof depends on
+
+- [The Motzkin recurrence](../../../Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/motzkin-numbers/motzkin-number-succ.md)
 
 ## Sources
 

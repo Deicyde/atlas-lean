@@ -14,6 +14,10 @@ functionals all have operator norm `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coordinate functional of a basis as a continuous linear map](coord-clm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.AuerbachBasis](../../../../../sources/v2/MathlibExt.md)

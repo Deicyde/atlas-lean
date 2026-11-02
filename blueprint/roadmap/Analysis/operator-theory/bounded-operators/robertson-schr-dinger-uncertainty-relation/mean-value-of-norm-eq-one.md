@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty.meanValue_of_no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized expectation value of an observable](mean-value.md)
 
 ## Sources
 

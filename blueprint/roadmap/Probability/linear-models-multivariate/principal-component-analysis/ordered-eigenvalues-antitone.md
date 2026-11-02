@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.PCA.orderedEigenvalues_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ series `∑' k, a k • hankelSlice k` over the anti-diagonal slices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti-diagonal slice operator](hankel-slice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.HankelOperator](../../../../../sources/v2/MathlibExt.md)

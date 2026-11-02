@@ -15,6 +15,10 @@ a surjective closed immersion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Surjectivity is stable under base change](of-is-pullback-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.Immersions](../../../../sources/v2/MathlibExt.md)

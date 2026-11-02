@@ -13,7 +13,16 @@ the probability of a partition after `m` coalescences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Law of Kingman's jump chain after m jumps](jump-law.md)
+
+## Proof depends on
+
+- [Pull-back along an equivalence preserves the number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/card-parts-comap-equiv.md)
+- [Kingman's formula](jump-law-eq.md)
+- [Kingman's formula](kingman-prob.md)
+- [Kingman's formula is invariant under relabeling](kingman-prob-comap-perm.md)
 
 ## Sources
 

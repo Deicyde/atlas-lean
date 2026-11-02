@@ -14,7 +14,7 @@ on `x > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
 
 ## Sources
 

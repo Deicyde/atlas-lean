@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.StoppedSumMaximal.predictableFiltration_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Predictable filtration of a sequence](predictable-filtration.md)
 
 ## Sources
 

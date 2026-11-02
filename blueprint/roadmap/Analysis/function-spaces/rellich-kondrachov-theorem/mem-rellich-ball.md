@@ -14,6 +14,10 @@ bounded by `M ^ 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rellich weight](rellich-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Lp.RellichKondrachov](../../../../sources/v2/MathlibExt.md)

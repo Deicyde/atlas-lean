@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.memℓp_dirichletKern
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squared norms of the Dirichlet kernel coefficients](norm-sq-dirichlet-coeff.md)
+- [Square-summability of the Dirichlet kernel coefficients](summable-dirichlet-kernel-terms.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpace](../../../../../sources/v2/MathlibExt.md)

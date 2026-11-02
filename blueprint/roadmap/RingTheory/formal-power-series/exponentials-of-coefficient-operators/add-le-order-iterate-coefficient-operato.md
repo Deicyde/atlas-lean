@@ -12,7 +12,11 @@ lean: MvPowerSeries.add_le_order_iterate_coefficientOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Coefficient operators raise the order by one](add-one-le-order-coefficient-operator.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ all multiplicities up to a bound `B ≥ max(1, max_i desc i)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
+- [Expected number of mutations of a given multiplicity](expected-count.md)
+- [Copy number after a copy-number event](final-copies.md)
 
 ## Sources
 

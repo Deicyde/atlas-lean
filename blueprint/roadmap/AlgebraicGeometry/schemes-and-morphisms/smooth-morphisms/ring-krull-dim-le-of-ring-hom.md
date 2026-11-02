@@ -15,6 +15,10 @@ the relative dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Krull dimension of a standard smooth algebra](ring-krull-dim-le-of-is-standard-smooth.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.SmoothKrullDim](../../../../sources/v2/MathlibExt.md)

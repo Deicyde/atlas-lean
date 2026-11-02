@@ -13,7 +13,11 @@ exponential truncation, without a constant coefficient restriction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
+
+## Proof depends on
+
+- [Ring maps commute with truncated exponentials](map-exp-trunc.md)
 
 ## Sources
 

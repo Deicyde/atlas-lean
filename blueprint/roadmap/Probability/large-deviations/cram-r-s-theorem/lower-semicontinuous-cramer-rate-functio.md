@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.lowerSemicontinuous_cramerRateFu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cramér rate function](cramer-rate-function.md)
+
+## Proof depends on
+
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+- [Legendre transform](../legendre-transform/legendre-transform.md)
+- [Supremum formula for the Legendre transform](../legendre-transform/legendre-transform-eq-i-sup.md)
 
 ## Sources
 

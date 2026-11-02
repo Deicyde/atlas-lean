@@ -11,7 +11,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+
+## Proof depends on
+
+- [Hilbert–Schmidt operator as a linear map](hs-lin-map.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
+- [Norm bound for the Hilbert–Schmidt linear map](norm-hs-lin-map-le.md)
 
 ## Sources
 

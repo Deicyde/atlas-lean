@@ -15,7 +15,7 @@ family `L` has a monotone likelihood ratio on a set `S` carrying the prior `μ`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monotone likelihood ratio](has-monotone-likelihood-ratio-on.md)
 
 ## Sources
 

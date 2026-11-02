@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.kingm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Kingman's formula](kingman-prob.md)
+
+## Proof depends on
+
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
 
 ## Sources
 

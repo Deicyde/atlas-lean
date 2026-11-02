@@ -14,6 +14,10 @@ p-values are at most `q k / m` (`k = 0` always qualifies).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MultipleTesting.BenjaminiHochberg](../../../../sources/v2/MathlibExt.md)

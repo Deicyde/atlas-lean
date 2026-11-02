@@ -12,7 +12,11 @@ lean: ProbabilityTheory.hasLaw_fst_sethuramanMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sethuraman's canonical probability space](sethuraman-measure.md)
+
+## Proof depends on
+
+- [Law of the proportion coordinate of Sethuraman's space](measure-preserving-fst-sethuraman-measur.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: ProbabilityTheory.stickWeight_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking weights](stick-weight.md)
+
+## Proof depends on
+
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Leftover stick lies in the unit interval](stick-remainder-mem-icc.md)
 
 ## Sources
 

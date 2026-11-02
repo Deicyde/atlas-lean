@@ -13,7 +13,8 @@ products.
 
 ## Depends on
 
-This node has no prerequisites.
+- [An isometry maps its residual subspace into itself](maps-to-residual.md)
+- [Residual subspace of an isometry](residual-sub.md)
 
 ## Sources
 

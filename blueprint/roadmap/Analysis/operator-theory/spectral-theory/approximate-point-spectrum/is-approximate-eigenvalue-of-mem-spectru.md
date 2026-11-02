@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormalApproximateSpectrum.isApproxim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximate eigenvalue of an operator](is-approximate-eigenvalue.md)
+
+## Proof depends on
+
+- [Epsilon characterization of approximate eigenvalues](is-approximate-eigenvalue-iff-forall-eps.md)
+- [Scalar shifts of a normal operator are normal](is-star-normal-smul-one-sub.md)
 
 ## Sources
 

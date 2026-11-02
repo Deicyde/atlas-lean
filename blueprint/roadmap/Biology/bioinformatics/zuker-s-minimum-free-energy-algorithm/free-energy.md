@@ -12,7 +12,11 @@ closed by its pairs (the exterior loop contributes `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+
+## Proof depends on
+
+- [Energy of the loop closed by a base pair](loop-energy-2.md)
 
 ## Sources
 

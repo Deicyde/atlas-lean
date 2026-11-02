@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.CompositeModel.cms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
+
+## Proof depends on
+
+- [Bayes factor of a component statistic](bayes-factor.md)
 
 ## Sources
 

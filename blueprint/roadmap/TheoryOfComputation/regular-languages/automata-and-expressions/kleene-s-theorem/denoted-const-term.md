@@ -12,7 +12,13 @@ lean: Cslib.Language.KleeneConverse.denoted_constTerm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Language denoted by a regular expression](is-regex-denoted.md)
+- [Constant term in the equation system of a DFA](const-term.md)
+
+## Proof depends on
+
+- [The language of the empty word is regex-denoted](one.md)
+- [The empty language is regex-denoted](zero.md)
 
 ## Sources
 

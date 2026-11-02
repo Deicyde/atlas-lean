@@ -15,7 +15,13 @@ normalized score; it is a genuine Bayes rule only under the normalization hypoth
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
+- [Composite of multiple signals (CMS) score](cms.md)
+- [Normalized composite score](posterior.md)
+
+## Proof depends on
+
+- [CMS score as a ratio of joint densities](cms-eq-div.md)
 
 ## Sources
 

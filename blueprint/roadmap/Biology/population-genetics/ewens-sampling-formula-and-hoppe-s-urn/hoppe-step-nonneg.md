@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.hoppeStep_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [One step of Hoppe's urn](hoppe-step.md)
 
 ## Sources
 

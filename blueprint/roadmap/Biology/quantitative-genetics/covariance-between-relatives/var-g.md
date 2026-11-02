@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.varG
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+
+## Proof depends on
+
+- [Population mean genotypic value at a single locus](mean.md)
 
 ## Sources
 

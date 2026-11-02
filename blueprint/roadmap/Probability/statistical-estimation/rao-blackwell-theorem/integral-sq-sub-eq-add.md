@@ -17,6 +17,10 @@ lean: MathlibExt.Probability.Statistics.Sufficiency.integral_sq_sub_eq_add
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pythagorean identity for the conditional mean](../../foundations/conditional-expectation-as-the-best-predictor/integral-sq-sub-eq-integral-sq-sub-cond.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Sufficiency.RaoBlackwell](../../../../sources/v2/MathlibExt.md)

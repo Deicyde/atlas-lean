@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.profile_thresholdPosition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steady-state exponential morphogen profile](profile.md)
+- [French-flag boundary position for a threshold](threshold-position.md)
+
+## Proof depends on
+
+- [Decay length of a morphogen gradient](decay-length.md)
+- [Positivity of the decay length](decay-length-pos.md)
 
 ## Sources
 

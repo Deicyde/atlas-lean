@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.alleleCov_ancestryPulse_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance of allele counts within a gamete](allele-cov.md)
+- [Joint law of local ancestry after an admixture pulse](ancestry-pulse.md)
+- [Haldane's map function](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/haldane.md)
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+
+## Proof depends on
+
+- [Covariance of local-ancestry indicators after pulse admixture](allele-cov-ancestry-pulse.md)
+- [Exact decay factor under Haldane's map function](pow-one-sub-haldane.md)
 
 ## Sources
 

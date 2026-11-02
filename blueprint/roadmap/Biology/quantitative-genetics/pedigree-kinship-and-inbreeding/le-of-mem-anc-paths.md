@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.le_of_mem_ancPaths
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Ancestral paths from an individual](anc-paths.md)
+
+## Proof depends on
+
+- [Ancestral paths from a founder](mem-anc-paths-of-parents-eq-none.md)
+- [Ancestral paths from a non-founder](mem-anc-paths-of-parents-eq-some.md)
 
 ## Sources
 

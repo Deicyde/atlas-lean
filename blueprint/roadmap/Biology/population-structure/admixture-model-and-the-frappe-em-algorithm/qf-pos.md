@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.qf_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+- [Reference-allele probability in the admixture model](qf.md)
 
 ## Sources
 

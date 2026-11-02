@@ -12,7 +12,8 @@ lean: StochasticMatrix.matPow_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](stochastic-matrix.md)
+- [Matrix powers of a stochastic matrix](mat-pow.md)
 
 ## Sources
 

@@ -14,6 +14,12 @@ lean: Cslib.Bioinformatics.Motifs.PWM.windowRatio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Site likelihood under a column-independent model](site-lik.md)
+- [Window of a sequence at a given start](window.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

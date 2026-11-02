@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.sweepEhh_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [EHH in the star-genealogy sweep model](sweep-ehh.md)
 
 ## Sources
 

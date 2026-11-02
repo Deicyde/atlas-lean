@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.seat_injective
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seating a customer by a seating choice](seat.md)
+
+## Proof depends on
+
+- [Seating a customer at an occupied table](join-table.md)
+- [Seating a customer at a new table](new-table.md)
+- [Blocks of the partition after joining a table](parts-join-table.md)
+- [Blocks of the partition after opening a new table](parts-new-table.md)
 
 ## Sources
 

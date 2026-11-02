@@ -13,7 +13,16 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.substrateRate_qss
 
 ## Depends on
 
-This node has no prerequisites.
+- [Michaelis constant](michaelis-constant.md)
+- [Michaelis–Menten rate law](mm-rate.md)
+- [Quasi-steady-state value of the complex](qss-complex.md)
+- [Mass-action rate of the substrate](substrate-rate.md)
+
+## Proof depends on
+
+- [Mass-action rate of the enzyme–substrate complex](complex-rate.md)
+- [Quasi-steady-state manifold](complex-rate-eq-zero-iff.md)
+- [Briggs–Haldane rate law](product-rate-qss.md)
 
 ## Sources
 

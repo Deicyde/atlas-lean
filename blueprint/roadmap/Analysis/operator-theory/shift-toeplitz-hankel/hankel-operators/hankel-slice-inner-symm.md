@@ -13,7 +13,12 @@ is a finite-sum reflection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice operator](hankel-slice.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice of a sequence](hankel-slice-fun.md)
+- [Pointwise action of the anti-diagonal slice operator](hankel-slice-apply.md)
 
 ## Sources
 

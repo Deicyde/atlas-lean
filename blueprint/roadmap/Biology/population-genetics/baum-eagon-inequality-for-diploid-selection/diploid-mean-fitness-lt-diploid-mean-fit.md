@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.diploidMeanFitness_lt_dipl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](../natural-selection-fisher-s-theorem-and-the-price/diploid-mean-fitness.md)
+- [One generation of diploid viability selection](../natural-selection-fisher-s-theorem-and-the-price/diploid-select.md)
+
+## Proof depends on
+
+- [Mean fitness is unchanged exactly at selection equilibria](diploid-mean-fitness-diploid-select-eq-i.md)
+- [Mean fitness never decreases](diploid-mean-fitness-le-diploid-mean-fit.md)
 
 ## Sources
 

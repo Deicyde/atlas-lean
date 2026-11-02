@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.out_of_stack
 
 ## Depends on
 
-This node has no prerequisites.
+- [One depth-first round of binary branching](round.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ lean: TensorNetwork.Instance.value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued complete-graph tensor instance](instance.md)
+
+## Proof depends on
+
+- [Edge labelings of the complete graph](edge-labelings.md)
+- [Edge labels incident to a vertex](incident-labels.md)
 
 ## Sources
 

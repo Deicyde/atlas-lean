@@ -13,7 +13,9 @@ gradient drift `-∇Ψ` has zero flux for `p`, then `∂ᵢ Ψ = -D ∂ᵢ log p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability flux of a diffusion](flux.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ common neighbor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+- [Initial cluster dissimilarity in neighbor joining](../neighbor-joining/initial-dist.md)
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+
+## Proof depends on
+
+- [Robust cherry lemma for neighbor joining](exists-adj-adj-of-q-criterion-min-of-abs.md)
 
 ## Sources
 

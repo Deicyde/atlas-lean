@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.wakefieldABF_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
+
+## Proof depends on
+
+- [Wakefield's closed form](wakefield-abf-eq.md)
 
 ## Sources
 

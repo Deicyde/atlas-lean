@@ -15,6 +15,10 @@ closure is the whole closed unit ball.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weak closure of the unit sphere is the closed unit ball](closure-image-sphere-eq-image-closed-bal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

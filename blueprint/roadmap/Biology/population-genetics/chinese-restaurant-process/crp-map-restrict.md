@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.crp_map_restrict
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/finite-set-partitions/comap.md)
+- [Chinese restaurant process](crp.md)
+
+## Proof depends on
+
+- [Removing the last customer undoes a seating](comap-cast-succ-seat.md)
+- [One step of the Chinese restaurant process](crp-step.md)
+- [Seating a customer by a seating choice](seat.md)
+- [Seating choice distribution of a customer](seat-choice.md)
 
 ## Sources
 

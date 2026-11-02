@@ -15,6 +15,11 @@ lean: ProbabilityTheory.empiricalAUC
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Empirical ROC rate at or above a threshold](roc-rate.md)
+- [Empirical ROC rate strictly above a threshold](roc-rate-above.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MannWhitneyAUC](../../../../sources/v2/MathlibExt.md)

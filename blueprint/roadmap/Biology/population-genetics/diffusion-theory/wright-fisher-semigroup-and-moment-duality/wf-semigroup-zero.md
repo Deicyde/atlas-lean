@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Wright–Fisher semigroup at nonpositive times is the identity](wf-semigroup-of-nonpos.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ reaches a configuration in the accepting state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Configuration of a linear bounded automaton](lbaconfig.md)
+- [One step of a linear bounded automaton](step.md)
+- [Initial configuration of a linear bounded automaton](init-cfg.md)
 
 ## Sources
 

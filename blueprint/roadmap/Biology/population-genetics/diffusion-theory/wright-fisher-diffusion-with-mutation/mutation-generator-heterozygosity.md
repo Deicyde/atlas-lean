@@ -14,7 +14,7 @@ restores it).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
 
 ## Sources
 

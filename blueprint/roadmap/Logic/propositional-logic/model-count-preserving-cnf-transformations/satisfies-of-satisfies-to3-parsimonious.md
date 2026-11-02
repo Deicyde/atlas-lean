@@ -13,7 +13,16 @@ same values of the original variable names.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+- [Satisfaction of a CNF formula](../conjunctive-normal-form/satisfies-3.md)
+- [Parsimonious reduction of CNF to 3-CNF](to3-parsimonious.md)
+
+## Proof depends on
+
+- [Number of fresh variables in the parsimonious 3-CNF reduction](num-fresh-parsimonious3.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
+- [Satisfaction of a clause](../conjunctive-normal-form/satisfies-2.md)
+- [Satisfaction of a literal](../conjunctive-normal-form/satisfies.md)
 
 ## Sources
 

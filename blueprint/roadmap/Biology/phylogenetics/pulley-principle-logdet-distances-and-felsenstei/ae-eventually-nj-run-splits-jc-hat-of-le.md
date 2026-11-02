@@ -18,7 +18,15 @@ empirical distances returns exactly the splits of the internal edges of the tree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor corrected empirical distance](jc-hat.md)
+- [Jukes–Cantor transition matrix along a path](jc-path.md)
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+
+## Proof depends on
+
+- [Statistical consistency of neighbor joining under Jukes–Cantor](ae-eventually-nj-run-splits-jc-hat.md)
+- [Atteson's radius for the scaled tree metric](nj-recovers-within-of-le.md)
 
 ## Sources
 

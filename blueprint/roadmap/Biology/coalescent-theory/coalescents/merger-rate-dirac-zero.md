@@ -13,7 +13,7 @@ each pair merging at rate `1` (Pitman 1999; Berestycki 2009, §3.1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
 
 ## Sources
 

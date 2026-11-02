@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.Motifs.PWM.pValue
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Background score distribution of an integer matrix](score-dist.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.Quasispecies.masterEquilibrium_pos_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interior equilibrium of the master-sequence frequency](master-equilibrium.md)
 
 ## Sources
 

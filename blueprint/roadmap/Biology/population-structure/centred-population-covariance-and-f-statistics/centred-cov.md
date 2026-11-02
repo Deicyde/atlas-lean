@@ -14,6 +14,10 @@ frequencies centred across populations (not over `Ω`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean frequency across populations](pop-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance](../../../../sources/v2/MathlibExt.md)

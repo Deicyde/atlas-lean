@@ -12,7 +12,8 @@ lean: Cslib.Language.cnt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminals of the $a^n b^n c^n$ grammar](abc.md)
+- [Nonterminals of the $a^n b^n c^n$ grammar](abcnt.md)
 
 ## Sources
 

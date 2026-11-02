@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.integral_Ioi_hilbertKernelRow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
+
+## Proof depends on
+
+- [Integrability of the Hilbert row integrand on (1, ∞)](integrable-on-ioi-hilbert-kernel-row.md)
+- [Finite integral of the Hilbert row integrand](interval-integral-hilbert-kernel-row.md)
 
 ## Sources
 

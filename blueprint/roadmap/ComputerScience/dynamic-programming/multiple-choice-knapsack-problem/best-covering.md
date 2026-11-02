@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.bestCovering
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knapsack item with weight and value](item.md)
 
 ## Sources
 

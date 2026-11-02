@@ -12,7 +12,11 @@ also `dⱼ = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+
+## Proof depends on
+
+- [Number at risk at an observation time](at-risk.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.TruncatedMoment.tailGt_eq_combinedTail
 
 ## Depends on
 
-This node has no prerequisites.
+- [Combined tail of a measure](../regular-variation/combined-tail.md)
+- [Strict upper tail of a measure](tail-gt.md)
+
+## Proof depends on
+
+- [Left tail of a measure](../regular-variation/left-tail.md)
+- [Right tail of a measure](../regular-variation/right-tail.md)
 
 ## Sources
 

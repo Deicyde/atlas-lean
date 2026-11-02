@@ -15,6 +15,10 @@ p-values are at most `α / (m - k + 1)`. (`r = 0` always qualifies.)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number of p-values below a threshold](../valid-p-values-and-false-discovery-proportion/num-below.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MultipleTesting.Holm](../../../../sources/v2/MathlibExt.md)

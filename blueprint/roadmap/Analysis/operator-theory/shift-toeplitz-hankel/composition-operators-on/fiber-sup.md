@@ -12,7 +12,11 @@ fibers. The bound in `hψ` ensures that the real-valued family is bounded above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+
+## Proof depends on
+
+- [Fiber cardinality of a map](fiber-card.md)
 
 ## Sources
 

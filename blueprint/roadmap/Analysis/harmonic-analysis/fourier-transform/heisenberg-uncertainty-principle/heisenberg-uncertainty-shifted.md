@@ -15,6 +15,10 @@ the position second moment is measured about `a`; the derivative factor is uncha
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heisenberg's uncertainty principle](heisenberg-uncertainty-complex.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.HeisenbergUncertainty](../../../../../sources/v2/MathlibExt.md)

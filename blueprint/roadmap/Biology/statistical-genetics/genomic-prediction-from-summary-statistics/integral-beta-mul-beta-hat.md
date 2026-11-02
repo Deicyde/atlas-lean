@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.StatisticalGenetics.GenomicPrediction.PRSModel.integral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
+- [Estimated marker effects](beta-hat.md)
 
 ## Sources
 

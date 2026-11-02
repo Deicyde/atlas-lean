@@ -14,6 +14,10 @@ lean: HopfAlgebra.forall_withConv_pow_eq_one_iff_toConv_id_pow_eq_one
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convolution-power criterion for bialgebras](forall-with-conv-pow-eq-one-iff-to-conv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Algebra.HopfAlgebra.Antipode](../../../../../sources/v2/MathlibExt.md)

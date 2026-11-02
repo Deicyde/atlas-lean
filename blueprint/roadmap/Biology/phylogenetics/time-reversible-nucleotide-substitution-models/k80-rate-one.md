@@ -12,7 +12,16 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.k80Rate_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor rate matrix as a matrix](../jukes-cantor-model/jc-rate-matrix.md)
+- [K80 rate matrix](k80-rate.md)
+
+## Proof depends on
+
+- [F81 rate matrix](f81-rate.md)
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [JC69 is the equal-rates GTR model](gtr-rate-jukes-cantor.md)
+- [HKY85 rate matrix](hky-rate.md)
+- [HKY85 with κ = 1 is F81](hky-rate-one.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.Motifs.PWM.isDist_targetFreq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moment generating function of a pair score](pair-mgf.md)
+- [Implicit target frequencies of a score matrix](target-freq.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

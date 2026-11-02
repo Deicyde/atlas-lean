@@ -11,7 +11,13 @@ lean: InformationTheory.DependenceForest.approxPMF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
+
+## Proof depends on
+
+- [Chow–Liu product approximation of a joint law](approx.md)
+- [Nonnegativity of the Chow–Liu approximation](approx-nonneg.md)
+- [Chow–Liu approximation sums to one](sum-approx.md)
 
 ## Sources
 

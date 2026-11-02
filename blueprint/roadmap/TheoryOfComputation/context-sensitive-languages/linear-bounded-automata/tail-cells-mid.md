@@ -12,7 +12,7 @@ generator produces while the generator remains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
 
 ## Sources
 

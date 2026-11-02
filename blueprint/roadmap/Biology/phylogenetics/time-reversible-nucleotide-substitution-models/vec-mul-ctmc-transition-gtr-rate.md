@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.vecMul_ctmcTransition_
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [GTR is reversible](is-detailed-balance-gtr-rate.md)
+- [Rows of the GTR rate matrix sum to zero](sum-gtr-rate.md)
+- [Detailed balance implies invariance for the transition semigroup](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/vec-mul-ctmc-transition.md)
 
 ## Sources
 

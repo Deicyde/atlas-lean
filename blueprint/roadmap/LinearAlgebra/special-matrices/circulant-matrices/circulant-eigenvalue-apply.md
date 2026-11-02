@@ -12,7 +12,12 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.circulantEigenvalue_appl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier eigenvalue of a circulant matrix](circulant-eigenvalue.md)
+- [Standard primitive n-th root of unity $e^{2\pi i/n}$](zeta.md)
+
+## Proof depends on
+
+- [Exponential formula for Fourier vectors](fourier-vec-apply.md)
 
 ## Sources
 

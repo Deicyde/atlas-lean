@@ -13,7 +13,7 @@ weights, even when the frontier is cut before termination.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth-cut frontier of a binary branching step](leaves.md)
 
 ## Sources
 

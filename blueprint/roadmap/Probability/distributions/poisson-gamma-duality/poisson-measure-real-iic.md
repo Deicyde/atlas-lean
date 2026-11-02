@@ -12,7 +12,7 @@ lean: ProbabilityTheory.poissonMeasure_real_Iic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
 
 ## Sources
 

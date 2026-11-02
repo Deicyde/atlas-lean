@@ -14,6 +14,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Moran.moranProb
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Down-step probability of the Moran process](moran-down.md)
+- [Up-step probability of the Moran process](moran-up.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Moran](../../../../sources/v2/MathlibExt.md)

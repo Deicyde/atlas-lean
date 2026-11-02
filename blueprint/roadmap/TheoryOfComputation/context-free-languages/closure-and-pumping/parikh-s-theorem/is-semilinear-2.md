@@ -12,7 +12,8 @@ lean: Cslib.Language.IsLinear.isSemilinear
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear set of vectors](is-linear.md)
+- [Semilinear set of vectors](is-semilinear.md)
 
 ## Sources
 

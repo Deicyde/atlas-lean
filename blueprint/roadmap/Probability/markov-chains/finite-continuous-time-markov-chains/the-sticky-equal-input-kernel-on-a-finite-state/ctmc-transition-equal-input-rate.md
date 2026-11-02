@@ -13,7 +13,14 @@ lean: ProbabilityTheory.ctmcTransition_equalInputRate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
+- [Equal-input generator (F81 model)](equal-input-rate.md)
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Equal-input matrix](equal-input.md)
+- [Equal-input matrix is idempotent](equal-input-mul-self.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Birkhoff–James orthogonal to `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
 
 ## Sources
 

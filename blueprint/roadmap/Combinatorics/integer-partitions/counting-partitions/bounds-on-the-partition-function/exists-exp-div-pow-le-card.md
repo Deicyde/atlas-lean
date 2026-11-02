@@ -15,6 +15,10 @@ lean: Nat.Partition.exists_exp_div_pow_le_card
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sum-of-parts recurrence for the partition function](mul-card-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.ExponentialLowerBound](../../../../../sources/v2/MathlibExt.md)

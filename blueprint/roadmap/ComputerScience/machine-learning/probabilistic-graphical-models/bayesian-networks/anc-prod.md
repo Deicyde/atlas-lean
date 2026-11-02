@@ -13,7 +13,11 @@ nodes. For an ancestral `A` it has the same marginals on `A` as the joint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](bayes-net.md)
+
+## Proof depends on
+
+- [Parent values of a node](../causal-bayesian-networks/pa-val.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ lean: Cslib.Bioinformatics.Motifs.PWM.selectedLaw
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Background likelihood of a sequence](bg-lik.md)
+- [Score of a site under a position weight matrix](score.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

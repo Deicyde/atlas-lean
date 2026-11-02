@@ -14,6 +14,10 @@ blocks (Pitman 1999; Berestycki 2009, §3.1).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pitman's merger rate](merger-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.LambdaCoalescent](../../../../sources/v2/MathlibExt.md)

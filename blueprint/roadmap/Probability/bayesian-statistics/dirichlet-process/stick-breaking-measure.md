@@ -14,6 +14,10 @@ lean: ProbabilityTheory.stickBreakingMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stick-breaking weights](stick-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.DirichletProcess](../../../../sources/v2/MathlibExt.md)

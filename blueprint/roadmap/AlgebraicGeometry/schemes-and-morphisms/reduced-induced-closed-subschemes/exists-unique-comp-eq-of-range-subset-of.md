@@ -15,6 +15,10 @@ contains the image lifts uniquely.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reducedness and kernel bound for the vanishing-ideal subscheme](is-reduced-subscheme-vanishing-ideal-and.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.VanishingIdeal](../../../../sources/v2/MathlibExt.md)

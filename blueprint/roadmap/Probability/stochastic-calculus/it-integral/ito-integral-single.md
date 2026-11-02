@@ -14,7 +14,12 @@ process `B` and every `ω`, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Single-step elementary integrand](single.md)
+
+## Proof depends on
+
+- [Elementary integrand](elementary-integrand.md)
 
 ## Sources
 

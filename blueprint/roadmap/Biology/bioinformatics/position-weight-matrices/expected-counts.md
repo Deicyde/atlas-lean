@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.Motifs.PWM.expectedCounts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive position weight matrices](pos-pwm.md)
+
+## Proof depends on
+
+- [Motif model as an EM model](motif-model.md)
+- [Sequence position of a motif column](site-pos.md)
+- [Posterior of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/posterior.md)
 
 ## Sources
 

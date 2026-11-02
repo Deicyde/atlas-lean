@@ -15,7 +15,12 @@ differences has conditional mean `θ τ s` given the genealogy σ-algebra `m` (m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean number of pairwise differences](mean-pair-diff.md)
+- [Pairs of genes in a sample](sample-pairs.md)
+
+## Proof depends on
+
+- [Mean of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md)
 
 ## Sources
 

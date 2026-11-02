@@ -12,7 +12,15 @@ lean: MvPowerSeries.expOperator_of_sq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Coefficient formula for a coefficient operator](coeff-coefficient-operator.md)
+- [Coefficients of the operator exponential via partial sums](coeff-exp-operator.md)
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
+- [Partial operator exponential as a sum of function iterates](exp-operator-partial-apply.md)
 
 ## Sources
 

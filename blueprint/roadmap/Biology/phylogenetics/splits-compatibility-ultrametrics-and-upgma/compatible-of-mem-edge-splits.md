@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.compatible_of_mem_edgeSplits
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compatible splits](compatible.md)
+- [Edge splits of a tree](edge-splits.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Splits computed from a leaf are pairwise compatible](compatible-of-mem-split-set.md)
+- [Split set of a tree computed from a leaf](split-set.md)
+- [Split set from any leaf equals the edge splits](split-set-eq-edge-splits.md)
 
 ## Sources
 

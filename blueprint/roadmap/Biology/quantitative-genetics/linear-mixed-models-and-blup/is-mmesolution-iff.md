@@ -15,7 +15,12 @@ solves the generalized least-squares normal equations `Xᵀ V⁻¹ X b = Xᵀ V�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MMESolution](is-mmesolution.md)
+- [Phenotypic covariance of a linear mixed model](phen-cov.md)
+
+## Proof depends on
+
+- [Positive definiteness of the phenotypic covariance](pos-def-phen-cov.md)
 
 ## Sources
 

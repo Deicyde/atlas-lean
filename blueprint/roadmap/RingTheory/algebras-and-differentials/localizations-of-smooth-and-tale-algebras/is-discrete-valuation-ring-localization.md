@@ -15,6 +15,10 @@ relative dimension `1` over a field is a discrete valuation ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Local rings with principal regular maximal ideal are domains](is-domain-of-maximal-ideal-eq-span.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.StandardSmooth.DVR](../../../../sources/v2/MathlibExt.md)

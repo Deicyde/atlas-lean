@@ -14,7 +14,15 @@ formula** (Ewens 1972; Hoppe 1984): the multiset of block sizes after `n` custom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Allelic partition of a set partition](block-sizes.md)
+- [Chinese restaurant process](crp.md)
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+
+## Proof depends on
+
+- [The block sizes follow Hoppe's urn](crp-map-block-sizes-eq-hoppe-law.md)
+- [Law of the allelic partition from Hoppe's urn](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-law.md)
+- [Hoppe's urn generates the Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/hoppe-law-eq-ewens-prob.md)
 
 ## Sources
 

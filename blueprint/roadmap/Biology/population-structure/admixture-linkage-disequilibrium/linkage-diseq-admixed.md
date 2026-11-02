@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.linkageDiseq_admixed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+- [Linkage disequilibrium of a two-locus gamete law](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq.md)
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+
+## Proof depends on
+
+- [Admixture linkage disequilibrium right after the pulse](linkage-diseq-source-mix.md)
+- [Pulse gamete frequencies sum to one](sum-source-mix.md)
+- [Linkage disequilibrium after $t$ generations](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq-iterate.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ root state is in Fitch's set if and only if Sankoff's cost at that state is the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Min-plus cost semiring](cost.md)
+- [Tree with unit costs on every edge](is-unit-cost.md)
+- [Fitch's algorithm](fitch.md)
+- [Sankoff's algorithm](sankoff.md)
+
+## Proof depends on
+
+- [Felsenstein's pruning recursion](../felsenstein-s-pruning-algorithm/prune.md)
+- [Tropical leaf weights of observed states](leaf-obs.md)
+- [Unit substitution cost](unit-cost.md)
 
 ## Sources
 

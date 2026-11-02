@@ -15,6 +15,10 @@ probability to `0`, converges in probability to `0` (a consequence of Slutsky's 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convergence in distribution to a constant implies convergence in probability](tendsto-in-measure-of-tendsto-in-distrib.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MLEAsymptoticNormality](../../../../sources/v2/MathlibExt.md)

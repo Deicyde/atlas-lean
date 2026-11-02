@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.Rolewicz.norm_backwardShiftCLM_pow_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [The backward shift linear map does not increase norms](../unilateral-shift/norm-backward-lin-map-apply-le.md)
 
 ## Sources
 

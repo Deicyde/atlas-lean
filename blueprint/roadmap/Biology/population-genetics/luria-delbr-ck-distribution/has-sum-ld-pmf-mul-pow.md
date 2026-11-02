@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.hasSum_ldPmf_mul_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luria–Delbrück distribution](ld-pmf.md)
+
+## Proof depends on
+
+- [Clone Pgf](clone-pgf.md)
+- [Lea–Coulson clone-size law](clone-prob.md)
+- [Convolution power of a sequence on the naturals](conv-pow.md)
+- [Clone-size generating function](has-sum-clone-prob-mul-pow.md)
 
 ## Sources
 

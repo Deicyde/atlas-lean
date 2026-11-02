@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.dotProduct_le_fbaDualValue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual feasibility for flux balance analysis](fba-dual-feasible.md)
+- [Dual objective of flux balance analysis](fba-dual-value.md)
+- [Feasible fluxes of flux balance analysis](fba-feasible.md)
 
 ## Sources
 

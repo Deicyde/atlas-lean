@@ -13,7 +13,13 @@ the covariate `X`, it is strongly ignorable given any balancing score `b(X)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Strong ignorability](strongly-ignorable.md)
+
+## Proof depends on
+
+- [Rosenbaum & Rubin (1983), Theorem 2](cond-indep-discrete-comp-iff.md)
+- [Propensity score](propensity.md)
 
 ## Sources
 

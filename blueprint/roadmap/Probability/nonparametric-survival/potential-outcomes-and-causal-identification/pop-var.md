@@ -14,6 +14,10 @@ meaningful for `N ≥ 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean of a finite population](pop-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Causality.CausalIdentification](../../../../sources/v2/MathlibExt.md)

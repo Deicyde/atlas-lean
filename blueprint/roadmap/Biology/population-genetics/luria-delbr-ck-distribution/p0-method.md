@@ -13,7 +13,11 @@ from the proportion of cultures with no mutants, `m = -log p₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luria–Delbrück distribution](ld-pmf.md)
+
+## Proof depends on
+
+- [`p₀`](ld-pmf-zero.md)
 
 ## Sources
 

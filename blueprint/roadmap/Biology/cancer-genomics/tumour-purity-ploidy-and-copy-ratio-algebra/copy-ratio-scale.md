@@ -14,7 +14,13 @@ unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative copy ratio](copy-ratio.md)
+- [Rescaled purity](scaled-purity.md)
+
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+- [Positivity of the rescaled purity denominator](scaled-purity-denom-pos.md)
 
 ## Sources
 

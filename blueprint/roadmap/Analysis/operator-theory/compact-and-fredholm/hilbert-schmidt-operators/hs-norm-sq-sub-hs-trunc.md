@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsNormSq_sub_hsTrunc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
+- [Truncation of a matrix to its top-left block](hs-trunc.md)
+- [Truncated matrices are Hilbert–Schmidt](is-hilbert-schmidt-hs-trunc.md)
+- [Difference of Hilbert–Schmidt matrices is Hilbert–Schmidt](is-hilbert-schmidt-sub.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ down the integral on the whole `L²` space of progressive integrands.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Linearity (additivity)](ito-integral-add-of-is-pre-brownian-real.md)
 
 ## Sources
 

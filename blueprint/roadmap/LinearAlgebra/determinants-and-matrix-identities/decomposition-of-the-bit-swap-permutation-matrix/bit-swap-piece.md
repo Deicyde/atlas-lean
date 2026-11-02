@@ -13,6 +13,10 @@ lean: Matrix.bitSwapPiece
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Antisymmetric two-bit singlet vector](bit-singlet.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.BitSwap](../../../../sources/v2/MathlibExt.md)

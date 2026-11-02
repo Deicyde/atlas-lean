@@ -16,7 +16,11 @@ two-source drift-model instance (mixture in the second pair, one source as fourt
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [Linearity of the f4-statistic in its first pair](f4-eq-sum-of-sub-eq-sum.md)
 
 ## Sources
 

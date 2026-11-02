@@ -16,7 +16,13 @@ theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected site frequency spectrum under variable population size](variable-sfs.md)
+
+## Proof depends on
+
+- [Griffiths–Tavaré kernel](sfs-kernel.md)
+- [Positivity of the Griffiths–Tavaré kernel on the diagonal](sfs-kernel-diag-pos.md)
+- [Griffiths–Tavaré kernel vanishes beyond the diagonal](sfs-kernel-eq-zero-of-lt.md)
 
 ## Sources
 

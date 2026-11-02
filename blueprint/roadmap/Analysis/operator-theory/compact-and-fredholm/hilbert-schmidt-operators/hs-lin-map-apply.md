@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsLinMap_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Hilbert–Schmidt operator as a linear map](hs-lin-map.md)
 
 ## Sources
 

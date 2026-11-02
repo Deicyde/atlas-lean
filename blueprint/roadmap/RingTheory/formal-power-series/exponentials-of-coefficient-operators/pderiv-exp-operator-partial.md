@@ -13,7 +13,13 @@ partial sum on the derivative plus the first `N` terms on the lifted coefficient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
+
+## Proof depends on
+
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Partial operator exponential as a sum of function iterates](exp-operator-partial-apply.md)
+- [Partial derivative of a coefficient-operator iterate](pderiv-iterate-coefficient-operator.md)
 
 ## Sources
 

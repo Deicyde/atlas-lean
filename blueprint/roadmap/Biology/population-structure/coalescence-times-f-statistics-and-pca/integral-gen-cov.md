@@ -14,7 +14,14 @@ the expected pairwise coalescence times,
 
 ## Depends on
 
-This node has no prerequisites.
+- [McVean's genealogical model for PCA](mc-vean-model.md)
+- [Double centring of a square matrix](double-center.md)
+- [Sample covariance of the centred genotype matrix](gen-cov.md)
+
+## Proof depends on
+
+- [Genotype covariance as double-centred pairwise differences](gen-cov-eq-double-center.md)
+- [Number of pairwise differences between samples](pair-diff.md)
 
 ## Sources
 

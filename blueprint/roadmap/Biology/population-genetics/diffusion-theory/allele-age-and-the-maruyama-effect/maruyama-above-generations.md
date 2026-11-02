@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.maruyamaAbove_generations
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form sojourn density above the current frequency](maruyama-above.md)
 
 ## Sources
 

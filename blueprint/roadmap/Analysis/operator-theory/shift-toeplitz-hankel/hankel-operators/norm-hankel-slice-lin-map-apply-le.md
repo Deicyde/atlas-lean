@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.norm_hankelSliceLinMa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice as a linear map](hankel-slice-lin-map.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice does not increase the sum of squared norms](hankel-tsum-norm-sq-slice-le.md)
 
 ## Sources
 

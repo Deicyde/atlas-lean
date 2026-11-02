@@ -14,7 +14,7 @@ information above `I₀`, and `I a b ≤ min (I a c) (I c b)` whenever `c` separ
 
 ## Depends on
 
-This node has no prerequisites.
+- [ARACNE gene network reconstruction](aracne.md)
 
 ## Sources
 

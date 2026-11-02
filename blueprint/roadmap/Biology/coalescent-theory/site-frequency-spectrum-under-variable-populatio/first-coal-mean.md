@@ -17,6 +17,10 @@ this is Lean's junk value `0`; for piecewise-constant histories it is integrable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cumulative coalescence intensity](cum-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

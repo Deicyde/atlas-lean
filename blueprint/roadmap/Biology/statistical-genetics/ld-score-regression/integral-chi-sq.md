@@ -15,7 +15,15 @@ by the convention `x / 0 = 0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](model.md)
+- [Association statistic in the LD-score model](chi-sq.md)
+- [LD score of a marker](ld-score.md)
+
+## Proof depends on
+
+- [Normalized marginal score in the LD-score model](beta-hat.md)
+- [Phenotype in the LD-score model](pheno.md)
+- [Normalized cross product of genotype markers](ld-corr.md)
 
 ## Sources
 

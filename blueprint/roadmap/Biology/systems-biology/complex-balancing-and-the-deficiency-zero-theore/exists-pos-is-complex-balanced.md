@@ -14,7 +14,10 @@ positive complex-balanced equilibrium. Together with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Weakly reversible reaction network](is-weakly-reversible.md)
+- [Deficiency of a chemical reaction network](deficiency.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.orthonormal_fockMonomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized monomials in the Fock space](fock-monomial.md)
+
+## Proof depends on
+
+- [Normalized Fock monomials are orthonormal standard basis vectors](fock-monomial-orthonormal.md)
 
 ## Sources
 

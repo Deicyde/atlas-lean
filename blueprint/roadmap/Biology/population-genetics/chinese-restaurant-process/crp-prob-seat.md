@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.crpProb_seat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed-form law of the Chinese restaurant process](crp-prob.md)
+- [Seating a customer by a seating choice](seat.md)
+- [Seating probabilities in the Chinese restaurant process](seat-weight.md)
+
+## Proof depends on
+
+- [Product over block sizes](../../../Combinatorics/set-partitions/finite-set-partitions/card-prod.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ along decreasing sub-sigma-algebras. The nonintegrable-g convention is retained.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backwards martingale](is-backwards-martingale.md)
 
 ## Sources
 

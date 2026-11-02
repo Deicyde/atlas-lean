@@ -14,6 +14,10 @@ agree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Haplotype window around the core](window.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.SelectionScan.ExtendedHaplotypeHomozygosity](../../../../sources/v2/MathlibExt.md)

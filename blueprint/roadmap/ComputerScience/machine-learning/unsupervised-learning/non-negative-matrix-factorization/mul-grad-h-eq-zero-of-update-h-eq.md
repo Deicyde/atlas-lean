@@ -13,7 +13,8 @@ then `H a j * gradH X W H a j = 0` for every entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient of the NMF objective with respect to H](grad-h.md)
+- [Lee–Seung multiplicative update of H](update-h.md)
 
 ## Sources
 

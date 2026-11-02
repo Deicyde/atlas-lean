@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.exists_dispersionDet_neg_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dispersion polynomial](dispersion-det.md)
+
+## Proof depends on
+
+- [Turing condition in squared form](two-mul-sqrt-lt-iff.md)
 
 ## Sources
 

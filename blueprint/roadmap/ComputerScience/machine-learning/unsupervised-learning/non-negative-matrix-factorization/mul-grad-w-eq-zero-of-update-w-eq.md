@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.NMF.mul_gradW_eq_zero_of_updateW_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient of the NMF objective with respect to W](grad-w.md)
+- [Lee–Seung multiplicative update of W](update-w.md)
 
 ## Sources
 

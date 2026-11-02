@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.diploidMeanFitness_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diploid mean fitness under Hardy–Weinberg proportions](diploid-mean-fitness.md)
 
 ## Sources
 

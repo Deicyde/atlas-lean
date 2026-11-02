@@ -13,7 +13,16 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.DriftModel.weightedLD_so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected ALDER weighted linkage disequilibrium](weighted-ld.md)
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+
+## Proof depends on
+
+- [Weighted linkage disequilibrium in terms of the f4 statistic](weighted-ld-eq.md)
+- [f2 as a special case of f4](../patterson-s-f-statistics/f2-eq-f4.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
 
 ## Sources
 

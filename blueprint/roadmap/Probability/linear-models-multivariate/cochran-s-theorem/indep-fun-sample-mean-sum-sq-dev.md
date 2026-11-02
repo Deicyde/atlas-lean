@@ -15,6 +15,10 @@ squared deviations `∑ (Xᵢ - X̄)² = (n - 1) S²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independence of the Gaussian sample mean and residuals](indep-fun-sample-mean-residual.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.CochranIndependence](../../../../sources/v2/MathlibExt.md)

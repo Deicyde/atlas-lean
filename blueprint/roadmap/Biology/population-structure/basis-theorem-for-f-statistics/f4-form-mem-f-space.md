@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.f4Form_mem_fSpace
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f4 form](f4-form.md)
+- [Space spanned by the per-locus f-statistics](f-space.md)
 
 ## Sources
 

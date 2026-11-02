@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.meanFitness_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a population](mean-fitness.md)
 
 ## Sources
 

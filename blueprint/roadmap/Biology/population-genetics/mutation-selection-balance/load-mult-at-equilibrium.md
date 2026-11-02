@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.load_mult_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness under Hardy–Weinberg proportions](mean-fitness.md)
+
+## Proof depends on
+
+- [Mean fitness at the multiplicative mutation–selection equilibrium](mean-fitness-mult-at-equilibrium.md)
 
 ## Sources
 

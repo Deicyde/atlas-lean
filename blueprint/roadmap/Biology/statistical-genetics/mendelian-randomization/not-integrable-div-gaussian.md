@@ -15,6 +15,10 @@ the numerator not almost surely zero (`(mN, vN) ≠ (0, 0)`), is not integrable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ratio with a Gaussian denominator has infinite first moment](lintegral-enorm-div-eq-top.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MendelianRandomization](../../../../sources/v2/MathlibExt.md)

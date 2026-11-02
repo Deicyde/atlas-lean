@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.existsUnique
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tikhonov functional](tikhonov-functional.md)
+
+## Proof depends on
+
+- [Tikhonov minimizers solve the normal equations](eq-of-is-min-on-tikhonov-functional.md)
+- [Solvability of the Tikhonov normal equations](exists-tikhonov-normal-equations.md)
+- [Solutions of the normal equations minimize the Tikhonov functional](is-min-on-tikhonov-functional-of-normal.md)
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
 
 ## Sources
 

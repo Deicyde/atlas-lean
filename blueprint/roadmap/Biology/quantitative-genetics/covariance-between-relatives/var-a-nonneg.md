@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.varA
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Additive variance at a single locus](var-a.md)
+
+## Proof depends on
+
+- [Fisher's average effect of an allele at a single locus](alpha.md)
 
 ## Sources
 

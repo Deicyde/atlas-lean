@@ -13,7 +13,7 @@ coordinates: `⟪S x, x⟫ = ∑' n, conj (x n) * x (n + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.numSignificant_pos_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sequential count of significant axes](num-significant.md)
+
+## Proof depends on
+
+- [Characterization of the axes counted as significant](lt-num-significant-iff.md)
 
 ## Sources
 

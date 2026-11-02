@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.addVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.FisherDecomposition](../../../../sources/v2/MathlibExt.md)

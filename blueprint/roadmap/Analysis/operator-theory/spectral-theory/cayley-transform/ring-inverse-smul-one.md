@@ -15,6 +15,10 @@ inverse scalar.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonzero scalar operators are units](is-unit-smul-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.CayleyTransform](../../../../../sources/v2/MathlibExt.md)

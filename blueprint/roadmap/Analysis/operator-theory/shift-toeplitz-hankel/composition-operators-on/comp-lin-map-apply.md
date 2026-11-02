@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compLinMap_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Composition operator as a linear map](comp-lin-map.md)
 
 ## Sources
 

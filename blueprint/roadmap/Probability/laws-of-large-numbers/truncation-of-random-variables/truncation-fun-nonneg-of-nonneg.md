@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncationFun_nonneg_of_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scalar truncation function](truncation-fun.md)
+
+## Proof depends on
+
+- [Canonical truncation preserves nonnegativity](truncated-rv-nonneg-of-nonneg.md)
 
 ## Sources
 

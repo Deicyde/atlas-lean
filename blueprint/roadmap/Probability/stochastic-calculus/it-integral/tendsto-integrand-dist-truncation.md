@@ -14,7 +14,7 @@ lean: ProbabilityTheory.tendsto_integrandDist_truncation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
 
 ## Sources
 

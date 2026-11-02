@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.card_lineagePair
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
 
 ## Sources
 

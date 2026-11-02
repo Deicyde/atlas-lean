@@ -14,7 +14,13 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.objectiveH_updateH_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [H-dependent part of the ARD-NMF objective](objective-h.md)
+- [ARD multiplicative update of H](update-h.md)
+
+## Proof depends on
+
+- [Generalized Kullback–Leibler divergence](kl-div.md)
+- [Reconstruction matrix in nonnegative matrix factorization](recon.md)
 
 ## Sources
 

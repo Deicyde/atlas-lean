@@ -15,7 +15,12 @@ term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of markers in a category](cat-size.md)
+- [Heritability enrichment of a category](enrichment.md)
+
+## Proof depends on
+
+- [Heritability of a marker category](cat-h2.md)
 
 ## Sources
 

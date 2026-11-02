@@ -12,7 +12,11 @@ lean: MvPowerSeries.coeff_iterate_coefficientOperator_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+
+## Proof depends on
+
+- [Iterated coefficient operators raise the order](add-le-order-iterate-coefficient-operato.md)
 
 ## Sources
 

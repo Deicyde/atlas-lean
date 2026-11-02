@@ -12,7 +12,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.exists_upgmaReaches_univ
 
 ## Depends on
 
-This node has no prerequisites.
+- [States reachable by UPGMA](upgma-reaches.md)
+
+## Proof depends on
+
+- [Average linkage between clusters](avg-dist.md)
 
 ## Sources
 

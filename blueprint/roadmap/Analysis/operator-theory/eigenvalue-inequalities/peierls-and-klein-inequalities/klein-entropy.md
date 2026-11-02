@@ -16,6 +16,10 @@ the trace terms. In particular, its tangent correction vanishes when `T = S`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Entropy tangent bound in an arbitrary orthonormal basis](klein-entropy-tangent.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.PeierlsKlein](../../../../../sources/v2/MathlibExt.md)

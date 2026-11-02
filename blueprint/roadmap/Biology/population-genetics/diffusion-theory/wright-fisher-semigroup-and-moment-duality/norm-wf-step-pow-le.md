@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
+## Proof depends on
+
+- [One Wright–Fisher generation is a sup-norm contraction](norm-wf-step-le.md)
 
 ## Sources
 

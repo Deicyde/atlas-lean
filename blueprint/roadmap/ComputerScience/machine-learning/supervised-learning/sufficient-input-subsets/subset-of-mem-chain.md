@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.SufficientInputSubsets.subset_of_mem_chain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward-selection chain of remaining feature sets](chain.md)
+
+## Proof depends on
+
+- [Backward-selection chain at a nonempty set](chain-of-nonempty.md)
+- [Backward-selection chain at the empty set](chain-of-not-nonempty.md)
 
 ## Sources
 

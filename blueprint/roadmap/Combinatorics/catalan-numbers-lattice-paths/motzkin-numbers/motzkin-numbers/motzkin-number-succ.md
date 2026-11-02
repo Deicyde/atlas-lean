@@ -15,7 +15,7 @@ rest into two shorter Motzkin paths; that path model is not formalized here.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
 
 ## Sources
 

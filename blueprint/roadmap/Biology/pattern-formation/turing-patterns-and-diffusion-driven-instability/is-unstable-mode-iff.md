@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.isUnstableMode_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+
+## Proof depends on
+
+- [Routh–Hurwitz for `2 × 2` matrices](exists-eigenvalue-re-pos-iff.md)
 
 ## Sources
 

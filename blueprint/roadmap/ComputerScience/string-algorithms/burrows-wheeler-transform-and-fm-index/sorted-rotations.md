@@ -15,6 +15,10 @@ rotations in lexicographic order: row `r` of the Burrows–Wheeler matrix is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Text with an appended sentinel](with-sentinel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Indexing.BWT](../../../../sources/v2/CSLibExt.md)

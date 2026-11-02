@@ -13,7 +13,10 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.jacobianMatrix_schnakenberg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schnakenberg reaction kinetics](schnakenberg.md)
+- [Jacobian of the Schnakenberg kinetics at its steady state](schnakenberg-jacobian.md)
+- [Steady state of the Schnakenberg kinetics](schnakenberg-steady-state.md)
+- [Jacobian matrix](../../../Analysis/real-functions/multivariable-calculus/jacobian-matrix/jacobian-matrix.md)
 
 ## Sources
 

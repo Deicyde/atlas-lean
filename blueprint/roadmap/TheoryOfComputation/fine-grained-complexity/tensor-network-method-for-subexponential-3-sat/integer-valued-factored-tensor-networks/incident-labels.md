@@ -13,6 +13,10 @@ lean: TensorNetwork.incidentLabels
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ordered representative of an unordered pair](pair-index.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.TensorNetwork.Basic](../../../../../sources/v2/MathlibExt.md)

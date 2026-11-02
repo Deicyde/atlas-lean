@@ -12,7 +12,16 @@ lean: MathlibExt.Biology.Dynamics.IntegralFeedback.LinearSystem.hasPerfectAdapta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-input single-output linear time-invariant system](linear-system.md)
+- [Perfect adaptation](has-perfect-adaptation.md)
+- [Steady-state (DC) gain of a linear system](dc-gain.md)
+
+## Proof depends on
+
+- [Vector field of a linear time-invariant system](field.md)
+- [Unique equilibrium of a nonsingular linear system](field-eq-zero-iff.md)
+- [Output of a linear time-invariant system](output.md)
+- [Output at equilibrium equals DC gain times input](output-equilibrium.md)
 
 ## Sources
 

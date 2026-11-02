@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftEssentialSpectrum.isFredholm_on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [Invertible operators are Fredholm](is-fredholm-of-is-unit.md)
+- [One minus a small multiple of the backward shift is invertible](is-unit-one-sub-smul-backward.md)
 
 ## Sources
 

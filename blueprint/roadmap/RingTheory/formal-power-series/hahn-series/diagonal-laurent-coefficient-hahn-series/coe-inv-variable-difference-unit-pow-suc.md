@@ -13,7 +13,15 @@ coefficients on one diagonal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Laurent-coefficient Hahn series](diagonal-laurent-series.md)
+- [Variable difference as a unit of Hahn series](variable-difference-unit.md)
+
+## Proof depends on
+
+- [Inverse of the variable difference as a diagonal series](coe-inv-variable-difference-unit.md)
+- [Value of the variable difference unit](coe-variable-difference-unit.md)
+- [Double coefficients of a diagonal Laurent series](coeff-coeff-diagonal-laurent-series.md)
+- [Multiplying by the variable difference on diagonal coefficients](coeff-coeff-variable-difference-mul.md)
 
 ## Sources
 

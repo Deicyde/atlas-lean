@@ -12,7 +12,14 @@ lean: Cslib.Language.isRegular_encodedWords
 
 ## Depends on
 
-This node has no prerequisites.
+- [Language of end-marker encoded words](encoded-words.md)
+
+## Proof depends on
+
+- [DFA recognizing end-marker encodings](end-marker-dfa.md)
+- [Encoding DFA accepts every end-marker encoding](end-marker-dfa-eval-from-encode.md)
+- [End-marker encoding of a word](end-marker-encode.md)
+- [Encoding DFA accepts only end-marker encodings](exists-end-marker-encode-of-end-marker-d.md)
 
 ## Sources
 

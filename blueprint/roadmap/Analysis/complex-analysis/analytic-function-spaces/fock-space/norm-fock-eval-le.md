@@ -13,7 +13,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.norm_fockEval_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+
+## Proof depends on
+
+- [Point evaluation as a bounded functional on the Fock space](fock-eval-clm.md)
+- [Reproducing property of the Fock kernel](fock-eval-clm-apply.md)
+- [Norm of Fock-space point evaluation](norm-fock-eval-clm.md)
 
 ## Sources
 

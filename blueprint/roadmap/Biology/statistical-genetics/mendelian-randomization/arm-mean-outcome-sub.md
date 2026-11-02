@@ -14,7 +14,19 @@ mean outcomes between the arms is `𝔼[(Y(z, 1) - Y(z, 0)) 1_complier]`, for ei
 
 ## Depends on
 
-This node has no prerequisites.
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
+- [Exclusion restriction for an instrument](exclusion.md)
+- [Independence assumption for an instrument](independence.md)
+- [Monotonicity assumption (no defiers)](monotonicity.md)
+- [Mean of a variable within an instrument arm](arm-mean.md)
+- [Compliers in a potential-outcomes model](compliers.md)
+- [Observed outcome in a potential-outcomes model](observed-outcome.md)
+
+## Proof depends on
+
+- [Compliance types of Angrist, Imbens and Rubin](compliance-type.md)
+- [Observed treatment in a potential-outcomes model](observed-treatment.md)
+- [Compliance type of a pair of potential treatments](compliance-type-2.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CourantFischer.finrank_span_tailFami
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tail of an orthonormal eigenbasis](tail-family.md)
+
+## Proof depends on
+
+- [Linear independence of the eigenbasis tail](tail-family-linear-independent.md)
 
 ## Sources
 

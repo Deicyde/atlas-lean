@@ -13,7 +13,7 @@ recombination at rate `ρ / 2` for every lineage ancestral at both loci.
 
 ## Depends on
 
-This node has no prerequisites.
+- [States of the two-locus ancestral process](two-locus-state.md)
 
 ## Sources
 

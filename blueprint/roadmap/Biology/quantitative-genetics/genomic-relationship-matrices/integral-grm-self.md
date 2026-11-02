@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.integral_grm_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+- [Genetic relationship matrix entry](grm.md)
+- [Inbreeding coefficient](inbreeding.md)
+
+## Proof depends on
+
+- [The GRM is unbiased for twice the kinship](integral-grm.md)
+- [Kinship coefficient](kinship.md)
+- [Self-kinship equals $(1 + F_i)/2$](kinship-self.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ By Tonelli this is `E ∑_n Z_n` for any process with the generation laws `law �
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generation-size law of a Galton–Watson process](../galton-watson-process/law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BranchingProcess.TotalProgeny](../../../../sources/v2/MathlibExt.md)

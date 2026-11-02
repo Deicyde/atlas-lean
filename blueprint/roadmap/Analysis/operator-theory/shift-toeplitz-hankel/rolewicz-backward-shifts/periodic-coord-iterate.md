@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.periodic_coord_ite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [Coordinates of powers of a scaled backward shift](smul-backward-clm-pow-apply-coord.md)
 
 ## Sources
 

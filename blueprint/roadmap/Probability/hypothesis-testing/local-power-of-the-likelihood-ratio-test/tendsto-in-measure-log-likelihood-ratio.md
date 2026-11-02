@@ -19,7 +19,7 @@ converges to `-h² I / 2` in probability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
 
 ## Sources
 

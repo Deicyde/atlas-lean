@@ -19,7 +19,18 @@ taxa on the `a`-side of an edge `{a, b}` with both endpoints internal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+
+## Proof depends on
+
+- [Neighbor joining averages up to row shifts](exists-avg.md)
+- [Robust cherry lemma for split systems](exists-eq-pair-of-q-criterion-min-of-abs.md)
+- [The path metric on a partition into sides](../neighbor-joining/exists-split-system-of-partition.md)
+- [Neighbor joining forms the splits of a tree when every join forms a side](../neighbor-joining/nj-run-splits-of-join.md)
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+- [The shifting lemma](q-criterion-eq-sub-of-shift.md)
+- [Taxa on one side of a tree edge](../neighbor-joining/side.md)
 
 ## Sources
 

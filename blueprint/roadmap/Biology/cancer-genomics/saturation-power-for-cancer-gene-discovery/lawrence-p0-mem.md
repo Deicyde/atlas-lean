@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.CancerGenomics.SaturationPower.lawrenceP0_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background mutation probability per patient](lawrence-p0.md)
 
 ## Sources
 

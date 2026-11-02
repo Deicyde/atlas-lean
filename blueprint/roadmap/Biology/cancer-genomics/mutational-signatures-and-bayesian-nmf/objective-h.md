@@ -14,6 +14,10 @@ lean: Cslib.Bioinformatics.MutationalSignatures.ARDNMF.objectiveH
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Data-fit term of the ARD-NMF objective](data-fit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.MutationalSignatures.ARDNMF](../../../../sources/v2/CSLibExt.md)

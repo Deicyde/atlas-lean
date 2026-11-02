@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.norm_hankelSlice_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice operator](hankel-slice.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice map does not increase norms](norm-hankel-slice-lin-map-apply-le.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ the normal equations: the cross term vanishes by the normal equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tikhonov functional](tikhonov-functional.md)
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
 
 ## Sources
 

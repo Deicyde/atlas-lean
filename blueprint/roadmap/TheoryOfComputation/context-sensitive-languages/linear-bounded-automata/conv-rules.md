@@ -14,7 +14,14 @@ discarded on conversion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell symbol of the LBA grammar](cell-sym.md)
+- [Terminal symbol of the LBA grammar](term-sym.md)
 
 ## Sources
 

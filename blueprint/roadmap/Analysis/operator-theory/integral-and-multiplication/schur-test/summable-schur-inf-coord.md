@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.summable_schurInf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Absolute summability of rows of a Schur matrix](summable-schur-inf-norm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite](../../../../../sources/v2/MathlibExt.md)

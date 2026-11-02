@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.attenuationRatio_o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+- [Attenuation ratio](attenuation-ratio.md)
+- [Association statistic under stratification](chi-sq-strat.md)
+- [Mean LD score](mean-ldscore.md)
+
+## Proof depends on
+
+- [Mean association statistic with constant stratification](mean-integral-chi-sq-strat-of-const.md)
 
 ## Sources
 

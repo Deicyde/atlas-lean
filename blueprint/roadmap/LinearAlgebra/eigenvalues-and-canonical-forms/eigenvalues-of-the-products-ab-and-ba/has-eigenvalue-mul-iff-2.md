@@ -15,6 +15,10 @@ an eigenvalue of `B * A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonzero eigenvalues of fg and gf coincide](has-eigenvalue-comp-iff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

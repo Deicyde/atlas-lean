@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Moran.moranFixation_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixation probability of the Moran process](moran-fixation.md)
 
 ## Sources
 

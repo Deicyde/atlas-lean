@@ -14,7 +14,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.le_card_of_isCredibleSe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Credible set of variants](is-credible-set.md)
+- [Prefix of variants in a given order](sorted-prefix.md)
+
+## Proof depends on
+
+- [Sorted prefix carries the most posterior mass](sum-le-sum-sorted-prefix.md)
 
 ## Sources
 

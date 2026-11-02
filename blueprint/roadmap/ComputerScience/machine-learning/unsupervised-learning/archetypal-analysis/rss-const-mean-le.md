@@ -13,7 +13,9 @@ minimizes the RSS.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible archetypes](feasible.md)
+- [Sample mean of the data](mean.md)
+- [Residual sum of squares in archetypal analysis](rss.md)
 
 ## Sources
 

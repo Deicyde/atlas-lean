@@ -18,7 +18,7 @@ positive numbers (`vecMul_pos`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [LogDet (paralinear) distance](paralinear.md)
 
 ## Sources
 

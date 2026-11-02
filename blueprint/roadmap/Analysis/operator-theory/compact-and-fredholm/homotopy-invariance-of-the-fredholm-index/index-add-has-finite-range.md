@@ -16,6 +16,10 @@ continuous path of Fredholm operators.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fredholm index is constant along a globally continuous path](index-eq-of-continuous-path.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Operator.FredholmIndexHomotopy](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ lean: ProbabilityTheory.vecMul_stickyKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Reversibility](sticky-kernel-reversible.md)
+- [Rows of the sticky kernel sum to one](sum-sticky-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.roundCount_iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [One depth-first round of binary branching](round.md)
+- [Weight-counting depth-first round](round-count.md)
 
 ## Sources
 

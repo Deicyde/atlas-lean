@@ -12,7 +12,11 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.mStepQ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+
+## Proof depends on
+
+- [Expected ancestry count of an individual](anc-count.md)
 
 ## Sources
 

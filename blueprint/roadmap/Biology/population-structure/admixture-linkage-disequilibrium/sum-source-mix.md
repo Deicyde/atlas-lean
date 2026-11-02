@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureLD.sum_sourceMix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamete frequencies after an admixture pulse](source-mix.md)
 
 ## Sources
 

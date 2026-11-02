@@ -13,7 +13,7 @@ for every `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Critical bond percolation measure on the square lattice](critical-bond-measure.md)
 
 ## Sources
 

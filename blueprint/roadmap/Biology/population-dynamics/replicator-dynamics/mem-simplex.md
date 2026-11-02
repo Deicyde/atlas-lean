@@ -14,7 +14,13 @@ it for all `t ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the replicator equation](is-solution.md)
+
+## Proof depends on
+
+- [Invariance of the faces of the simplex](eq-zero-of-eq-zero.md)
+- [Present strategies stay present](pos-of-pos.md)
+- [Invariance of the simplex hyperplane](sum-eq-one.md)
 
 ## Sources
 

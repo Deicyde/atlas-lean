@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.InfiniteAlleles.tendsto_one_sub_eqHo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium homozygosity in the infinite-alleles model](eq-homozygosity.md)
+
+## Proof depends on
+
+- [Kimura–Crow limit](tendsto-eq-homozygosity.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ Methods). Time in units of `2N` generations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sojourn density of the Wright–Fisher diffusion with selection](selection-green.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.AlleleAge](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.randomJoining_singleton_e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](lineage-pair.md)
+- [Ranked labeled history](ranked-history.md)
+- [Random joining](random-joining.md)
+
+## Proof depends on
+
+- [Number of pairs of lineages](card-lineage-pair.md)
+- [Reindexing the product of pair counts](prod-fin-choose-two.md)
 
 ## Sources
 

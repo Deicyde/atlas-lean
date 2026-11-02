@@ -14,7 +14,12 @@ mean-zero errors, the IVW estimator has mean `β`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance-weighted estimator](ivw.md)
+
+## Proof depends on
+
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
+- [Positivity of the total IVW weight](sum-ivw-weight-pos.md)
 
 ## Sources
 

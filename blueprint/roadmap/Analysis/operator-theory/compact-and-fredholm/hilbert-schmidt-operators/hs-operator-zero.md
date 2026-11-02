@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Zero matrix is Hilbert–Schmidt](is-hilbert-schmidt-zero.md)
 
 ## Sources
 

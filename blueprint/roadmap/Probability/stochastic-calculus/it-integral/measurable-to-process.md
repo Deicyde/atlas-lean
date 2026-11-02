@@ -13,7 +13,8 @@ lean: ProbabilityTheory.ElementaryIntegrand.measurable_toProcess
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand as a process](to-process.md)
 
 ## Sources
 

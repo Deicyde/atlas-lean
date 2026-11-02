@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraFixation_one_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
+
+## Proof depends on
+
+- [Denominator of Kimura's formula is nonzero](one-sub-exp-ne-zero.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: StatMech.SLE.selectedLoewnerSolution
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chosen admissible Loewner duration](selected-loewner-duration.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ every prior (Milgrom 1981, Prop. 2): if `n ≤ m` and both marginal likelihoods 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monotone likelihood ratio](has-monotone-likelihood-ratio-on.md)
+- [Posterior tail probability](posterior-tail.md)
+
+## Proof depends on
+
+- [Posterior stochastic ordering, cross-multiplied form](set-integral-ioi-mul-integral-le-of-has.md)
 
 ## Sources
 

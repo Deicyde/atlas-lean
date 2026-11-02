@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.leaves_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth-cut frontier of a binary branching step](leaves.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: Ideal.isUnramifiedIn_iff_not_dvd_discriminantIdeal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discriminant ideal of a Dedekind extension](discriminant-ideal.md)
+
+## Proof depends on
+
+- [The discriminant ideal is the norm of the different](discriminant-ideal-eq-span-norm.md)
 
 ## Sources
 

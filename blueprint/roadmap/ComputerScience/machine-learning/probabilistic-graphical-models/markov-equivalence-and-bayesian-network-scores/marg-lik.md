@@ -18,6 +18,13 @@ joint distribution.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Joint configurations of a set of variables](config.md)
+- [BDe hyperparameters](bde-hyper.md)
+- [Count of cases matching a configuration](count.md)
+- [Rising factorial](rising.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.GraphicalModels.BayesianDirichletScore](../../../../../sources/v2/CSLibExt.md)

@@ -14,7 +14,17 @@ of the Wright–Fisher chain with `M` gene copies applied to `p` converge unifor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
+## Proof depends on
+
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Kingman's theorem for the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/tendsto-wf-lineage-matrix-pow-floor.md)
+- [Wright–Fisher transition matrix of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-matrix.md)
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
+- [Moment duality, `m` generations](wf-step-pow-x-pow.md)
 
 ## Sources
 

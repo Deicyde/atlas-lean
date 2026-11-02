@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.BinaryBranching.roundCount_iterate_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth-cut frontier of a binary branching step](leaves.md)
+- [Weight-counting depth-first round](round-count.md)
+
+## Proof depends on
+
+- [One depth-first round of binary branching](round.md)
+- [Counting rounds project list-output rounds](round-count-iterate.md)
+- [Enough rounds empty the stack and collect the frontier](round-iterate-of-le.md)
 
 ## Sources
 

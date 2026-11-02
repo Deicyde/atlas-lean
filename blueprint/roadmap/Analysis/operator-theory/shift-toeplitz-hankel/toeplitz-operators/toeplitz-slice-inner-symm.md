@@ -13,7 +13,12 @@ symmetry exchanges the two sides of the inner product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
+- [Pointwise action of the diagonal slice operator](toeplitz-slice-apply.md)
 
 ## Sources
 

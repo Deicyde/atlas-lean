@@ -15,7 +15,13 @@ subsequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Bounded composition operator on $\ell^2$](comp-clm.md)
+
+## Proof depends on
+
+- [Fiber cardinality of a map](fiber-card.md)
+- [Fiber count agrees with set cardinality](fiber-card-eq-ncard.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ finite alphabet carries the discrete σ-algebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mutual information of a joint probability measure](../conditional-entropy-and-mutual-information/measure-mutual-information.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.ConditionalMutualInformation](../../../../sources/v2/MathlibExt.md)

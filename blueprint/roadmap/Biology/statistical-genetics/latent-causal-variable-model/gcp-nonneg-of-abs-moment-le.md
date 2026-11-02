@@ -14,7 +14,16 @@ the sign condition `κ_π > 0` that it needs: if `ρ_g ≠ 0`, `ρ_g² < 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latent causal variable model](model.md)
+- [Marginal effect on the first trait in the latent causal variable model](alpha1.md)
+- [Marginal effect on the second trait in the latent causal variable model](alpha2.md)
+- [Excess kurtosis of the latent effect](kurtosis.md)
+- [Genetic causality proportion](gcp.md)
+
+## Proof depends on
+
+- [The paper's uncentred comparison, under its sign condition](abs-moment-le-iff-of-kurtosis-pos.md)
+- [Sign of the genetic causality proportion](gcp-nonneg-iff.md)
 
 ## Sources
 

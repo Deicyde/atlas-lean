@@ -14,7 +14,7 @@ process (jumps `n → n - 1` at rate `C(n, 2)`) applied to `n ↦ x ^ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
 
 ## Sources
 

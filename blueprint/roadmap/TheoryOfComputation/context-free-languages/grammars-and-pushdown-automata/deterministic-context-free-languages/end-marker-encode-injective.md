@@ -12,7 +12,12 @@ lean: Cslib.Language.endMarkerEncode_injective
 
 ## Depends on
 
-This node has no prerequisites.
+- [End-marker encoding of a word](end-marker-encode.md)
+
+## Proof depends on
+
+- [End-marker erasure](end-marker-erase.md)
+- [Erasing the end-marker encoding recovers the word](end-marker-erase-end-marker-encode.md)
 
 ## Sources
 

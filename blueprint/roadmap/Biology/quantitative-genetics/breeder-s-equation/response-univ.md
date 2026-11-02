@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.StatisticalGenetics.Breeder.Model.response_univ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear parent–offspring regression model](model.md)
+- [Response to selection](response.md)
+
+## Proof depends on
+
+- [Breeder's equation](response-eq.md)
+- [Selection differential](selection-differential.md)
+- [Selecting the whole population gives zero selection differential](selection-differential-univ.md)
 
 ## Sources
 

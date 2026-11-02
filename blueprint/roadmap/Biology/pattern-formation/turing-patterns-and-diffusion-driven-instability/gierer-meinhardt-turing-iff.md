@@ -14,7 +14,14 @@ unstable iff `2 √(d b) < d b (1 - a) / (1 + a) - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+- [Jacobian of the Gierer–Meinhardt kinetics at its steady state](gierer-meinhardt-jacobian.md)
+
+## Proof depends on
+
+- [Determinant of the Gierer–Meinhardt Jacobian](det-gierer-meinhardt-jacobian.md)
+- [Turing's criterion](exists-is-unstable-mode-iff.md)
+- [Stability of the Gierer–Meinhardt steady state without diffusion](trace-gierer-meinhardt-jacobian-neg-iff.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: StochasticMatrix.prob_identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+- [Identity Markov chain](identity.md)
 
 ## Sources
 

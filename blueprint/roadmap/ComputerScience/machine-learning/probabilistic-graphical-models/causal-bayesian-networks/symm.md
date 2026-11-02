@@ -12,7 +12,15 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.DSeparated.symm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [d-separation](dseparated.md)
+
+## Proof depends on
+
+- [Path in the skeleton of a Bayesian network](is-path.md)
+- [Blocked path](path-blocked.md)
+- [The reverse of a path is a path](is-path-reverse.md)
+- [Reversal preserves blocked paths](path-blocked-reverse.md)
 
 ## Sources
 

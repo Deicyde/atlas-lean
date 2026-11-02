@@ -13,7 +13,13 @@ unnormalized weight `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
+- [Closed-form colocalization hypothesis scores](coloc-closed-form.md)
+
+## Proof depends on
+
+- [Nonnegativity of closed-form colocalization scores](coloc-closed-form-nonneg.md)
 
 ## Sources
 

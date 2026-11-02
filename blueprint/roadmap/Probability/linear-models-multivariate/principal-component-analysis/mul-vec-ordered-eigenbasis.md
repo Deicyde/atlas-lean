@@ -12,7 +12,8 @@ lean: MathlibExt.Probability.Statistics.PCA.mulVec_orderedEigenbasis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered orthonormal eigenbasis of a symmetric matrix](ordered-eigenbasis.md)
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
 
 ## Sources
 

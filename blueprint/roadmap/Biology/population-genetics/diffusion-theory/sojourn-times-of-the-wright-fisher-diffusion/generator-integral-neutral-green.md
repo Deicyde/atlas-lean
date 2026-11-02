@@ -15,7 +15,8 @@ at `p`. In the diffusion reading (not formalized here), `u(p)` is the expected v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+- [Neutral Wright–Fisher Green's function](neutral-green.md)
 
 ## Sources
 

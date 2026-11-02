@@ -16,6 +16,10 @@ from `B`. This is `sourceMix` with perfectly differentiated markers (`pA = qA = 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gamete frequencies after an admixture pulse](source-mix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

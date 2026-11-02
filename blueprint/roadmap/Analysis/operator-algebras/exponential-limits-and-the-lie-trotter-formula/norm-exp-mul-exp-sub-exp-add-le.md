@@ -15,6 +15,11 @@ lean: MathlibExt.Analysis.Normed.Algebra.TrotterProductFormula.norm_exp_mul_exp_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm of the exponential is bounded by the exponential of the norm](norm-exp-le-exp-norm.md)
+- [First-order Taylor remainder bound for the exponential](norm-exp-sub-one-sub-id-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Algebra.TrotterProductFormula](../../../../sources/v2/MathlibExt.md)

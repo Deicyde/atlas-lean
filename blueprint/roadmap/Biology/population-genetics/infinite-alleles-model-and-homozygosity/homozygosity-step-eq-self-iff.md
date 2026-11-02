@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.InfiniteAlleles.homozygosityStep_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equilibrium homozygosity in the infinite-alleles model](eq-homozygosity.md)
+- [Homozygosity recursion in the infinite-alleles model](homozygosity-step.md)
+
+## Proof depends on
+
+- [Equilibrium homozygosity is a fixed point of the recursion](homozygosity-step-eq-homozygosity.md)
 
 ## Sources
 

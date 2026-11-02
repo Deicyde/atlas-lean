@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.Motifs.PWM.infoContent_uniform_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Information content of a position weight matrix column](info-content.md)
+
+## Proof depends on
+
+- [Information content against the uniform background](info-content-uniform.md)
+- [Shannon entropy](../../../InformationTheory/entropy-and-mutual-information/shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
 
 ## Sources
 

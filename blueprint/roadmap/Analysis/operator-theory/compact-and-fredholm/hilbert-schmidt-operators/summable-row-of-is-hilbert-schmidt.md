@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.summable_row_of_isHil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
 
 ## Sources
 

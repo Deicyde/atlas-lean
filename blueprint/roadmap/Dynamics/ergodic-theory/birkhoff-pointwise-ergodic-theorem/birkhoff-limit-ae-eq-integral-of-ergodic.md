@@ -16,6 +16,12 @@ lean: StatMech.BirkhoffAE.birkhoffLimit_ae_eq_integral_of_ergodic
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Birkhoff pointwise ergodic theorem (ergodic case)](birkhoff-pointwise-ergodic.md)
+- [Integrability of Birkhoff averages](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-average-of-measure-p.md)
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Ergodic.KingmanSigned.BirkhoffPointwise](../../../../sources/v2/MathlibExt.md)

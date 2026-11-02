@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.tajimaA1_eq_harmonic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tajima's constant $a_1$](tajima-a1.md)
 
 ## Sources
 

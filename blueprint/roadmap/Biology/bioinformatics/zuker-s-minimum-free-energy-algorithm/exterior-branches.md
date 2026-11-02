@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.RNA.Zuker.exteriorBranches
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict enclosure of one base pair by another](encloses.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.Zuker](../../../../sources/v2/CSLibExt.md)

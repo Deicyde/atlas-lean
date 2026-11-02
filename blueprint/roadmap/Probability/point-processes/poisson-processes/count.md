@@ -15,6 +15,10 @@ positive rate) `Set.ncard` returns `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arrival times from interarrival times](arrival-time.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Process.PoissonProcess](../../../../sources/v2/MathlibExt.md)

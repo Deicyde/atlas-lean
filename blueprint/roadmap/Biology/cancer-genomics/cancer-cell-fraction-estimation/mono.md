@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.CancerGenomics.CancerCellFraction.IsClonal.mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid model for the cancer cell fraction](grid-model.md)
+- [Clonal call for a mutation](is-clonal.md)
+
+## Proof depends on
+
+- [Posterior probability that the cancer cell fraction exceeds a threshold](posterior-tail.md)
+- [The CCF posterior is stochastically increasing in the read count](posterior-tail-mono.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ probability at every value of the parents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [The intervention `do(X_k = a)`](intervene.md)
+- [Joint distribution of a Bayesian network](../bayesian-networks/joint-2.md)
+- [Parent values of a node](pa-val.md)
+
+## Proof depends on
+
+- [A node's table is its conditional law given its parents](sum-filter-joint-eq-cpt-mul.md)
+- [Adjustment for the direct causes](sum-intervene-joint-mul.md)
 
 ## Sources
 

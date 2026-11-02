@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1Conv_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution of sequences on the integers](int-conv.md)
+- [Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence](l1-conv.md)
+
+## Proof depends on
+
+- [Translation of an $\ell^p$ sequence on the integers](shift-lp.md)
+- [Pointwise formula for translation of $\ell^p$ sequences](shift-lp-apply.md)
+- [Summability of the Banach-space series for $\ell^1$ convolution](summable-l1-conv-term.md)
 
 ## Sources
 

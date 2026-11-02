@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.isProbabilityMeasure_nbOffs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial offspring distribution](nb-offspring.md)
+
+## Proof depends on
+
+- [Generating-function identity](has-sum-nb-pmf-mul-pow.md)
+- [Negative-binomial probability generating function](nb-pgf.md)
+- [Negative-binomial offspring probabilities](nb-pmf.md)
+- [Nonnegativity of the negative-binomial probabilities](nb-pmf-nonneg.md)
 
 ## Sources
 

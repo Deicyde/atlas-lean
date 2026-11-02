@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.kingm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Kingman's formula arranged by number of blocks](kingman-matrix.md)
+
+## Proof depends on
+
+- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Kingman's formula](kingman-prob.md)
+- [Kingman's formula at the partition into singletons](kingman-prob-bot.md)
 
 ## Sources
 

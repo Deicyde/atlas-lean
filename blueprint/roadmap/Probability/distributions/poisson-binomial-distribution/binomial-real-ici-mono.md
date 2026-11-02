@@ -14,6 +14,10 @@ lean: ProbabilityTheory.binomial_real_Ici_mono
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial tail monotonicity](binomial-tail-mono.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.PoissonBinomial](../../../../sources/v2/MathlibExt.md)

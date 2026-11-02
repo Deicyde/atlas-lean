@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Series.HilbertInequality.hasDerivAt_hilbertAntideriv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ for `a ≤ a'` and `0 ≤ p ≤ p' ≤ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial probability mass function](../detection-power-for-somatic-mutations/binom-pmf.md)
+
+## Proof depends on
+
+- [Binomial probabilities vanish above n](../detection-power-for-somatic-mutations/binom-pmf-eq-zero.md)
 
 ## Sources
 

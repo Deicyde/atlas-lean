@@ -13,7 +13,7 @@ z-scores and a nonzero weight vector, the weighted z statistic is standard norma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stouffer's weighted z statistic](stouffer-statistic.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ surjective closed immersion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Separatedness descends along surjective closed immersions](of-is-pullback-4.md)
+- [Universal closedness descends along surjective closed immersions](of-is-pullback-3.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.Immersions](../../../../sources/v2/MathlibExt.md)

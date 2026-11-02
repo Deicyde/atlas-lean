@@ -12,7 +12,13 @@ between the two leaves and its number of edges `τ_ij`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary tree with edge lengths](utree.md)
+
+## Proof depends on
+
+- [Rooted binary tree with edge lengths](rtree.md)
+- [Leaves of a rooted binary tree with root distances](leaves.md)
+- [Leaf pairs of a rooted binary tree with path lengths](pairs.md)
 
 ## Sources
 

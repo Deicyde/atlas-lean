@@ -12,7 +12,7 @@ lean: ProbabilityTheory.poissonCDF_lt_poissonCDF_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
 
 ## Sources
 

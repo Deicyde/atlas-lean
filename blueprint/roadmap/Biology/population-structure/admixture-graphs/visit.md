@@ -12,7 +12,7 @@ root with parents chosen according to the admixture proportions, passes through 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
 
 ## Sources
 

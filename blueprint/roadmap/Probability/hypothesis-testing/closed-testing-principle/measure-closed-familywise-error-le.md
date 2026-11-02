@@ -16,7 +16,11 @@ tests is made.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed testing procedure](closed-rejections.md)
+
+## Proof depends on
+
+- [Closed testing rejection implies the intersection test rejects](inter-nonempty-closed-rejections.md)
 
 ## Sources
 

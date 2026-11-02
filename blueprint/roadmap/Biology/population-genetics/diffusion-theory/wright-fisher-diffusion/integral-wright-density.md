@@ -14,7 +14,7 @@ the Beta function `B(2α, 2β) = Γ(2α) Γ(2β) / Γ(2α + 2β)`, so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright's stationary density of the Wright–Fisher diffusion](wright-density.md)
 
 ## Sources
 

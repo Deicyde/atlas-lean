@@ -13,7 +13,14 @@ shift, witnessed by the geometric vector attached to `conj w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [Numerical range](../../spectral-theory/numerical-range-and-numerical-radius/numerical-range.md)
+
+## Proof depends on
+
+- [Geometric unit vector attached to a point of the disc](geom.md)
+- [Geometric vector of a point in the open disc is a unit vector](norm-geom.md)
+- [Backward shift quadratic form at a geometric vector](quad-form-bwd-geom.md)
 
 ## Sources
 

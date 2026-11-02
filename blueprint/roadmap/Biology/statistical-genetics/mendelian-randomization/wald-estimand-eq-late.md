@@ -17,7 +17,16 @@ treatment effect among compliers, `𝔼[Y(1) - Y(0) | complier]` (read at either
 
 ## Depends on
 
-This node has no prerequisites.
+- [Potential-outcomes model with binary instrument and treatment](potential-outcomes.md)
+- [Exclusion restriction for an instrument](exclusion.md)
+- [Independence assumption for an instrument](independence.md)
+- [Monotonicity assumption (no defiers)](monotonicity.md)
+- [Compliers in a potential-outcomes model](compliers.md)
+- [Wald instrumental-variable estimand](wald-estimand.md)
+
+## Proof depends on
+
+- [Unrestricted algebraic identity behind the LATE theorem](wald-estimand-eq-late-totalized.md)
 
 ## Sources
 

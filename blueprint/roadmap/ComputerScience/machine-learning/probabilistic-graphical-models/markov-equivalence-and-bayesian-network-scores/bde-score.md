@@ -13,6 +13,11 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.bdeScore
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bayesian–Dirichlet network score](bd-score.md)
+- [BDe hyperparameters](bde-hyper.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.GraphicalModels.BayesianDirichletScore](../../../../../sources/v2/CSLibExt.md)

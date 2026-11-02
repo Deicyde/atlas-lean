@@ -16,7 +16,7 @@ both blocks (the formulas agree when `X₂ᵀX₁ = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional estimate of second-block effects (COJO)](conditional-estimate.md)
 
 ## Sources
 

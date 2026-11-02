@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.cycleTypeWeight_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
 
 ## Sources
 

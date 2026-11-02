@@ -12,7 +12,7 @@ lean: ProbabilityTheory.StickBreakingProcess.ae_forall_mem_Icc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
 
 ## Sources
 

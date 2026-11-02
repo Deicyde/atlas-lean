@@ -16,6 +16,10 @@ irreducible.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Power series over a DVR modulo $X - \varpi^e$ form a DVR](is-discrete-valuation-ring-quotient-span.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.DVRQuotient](../../../../sources/v2/MathlibExt.md)

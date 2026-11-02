@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.MultipleChoiceKnapsack.bestPacking
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knapsack item with weight and value](item.md)
 
 ## Sources
 

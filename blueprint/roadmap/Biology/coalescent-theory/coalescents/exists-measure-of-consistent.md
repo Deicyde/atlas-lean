@@ -14,7 +14,7 @@ rates `λ_{b,k}` of some finite measure `Λ` on `[0, 1]`. (Uniqueness of `Λ` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pitman's merger rate](merger-rate.md)
 
 ## Sources
 

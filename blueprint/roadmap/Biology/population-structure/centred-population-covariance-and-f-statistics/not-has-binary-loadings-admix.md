@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsCovariance.not_hasBinaryL
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Binary loadings of a drift model](../patterson-s-f-statistics/has-binary-loadings.md)
+- [Lineage weights of the three-population admixture model](admix-weight.md)
+
+## Proof depends on
+
+- [Lineage weights of the three-population star tree](star-weight.md)
 
 ## Sources
 

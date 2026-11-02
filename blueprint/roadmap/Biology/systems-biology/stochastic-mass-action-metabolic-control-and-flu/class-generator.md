@@ -13,7 +13,12 @@ closed under firing (`isRateMatrix_classGenerator`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](../complex-balancing-and-the-deficiency-zero-theore/reaction-network.md)
+
+## Proof depends on
+
+- [State after one reaction firing](fire.md)
+- [Stochastic mass-action propensity](propensity.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ the linearized system `w_t = D w_xx + J w` iff `(J - k² D) v = μ v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical solution of the linearized reaction-diffusion system](is-linearized-solution.md)
+- [Complex Fourier mode](fourier-mode.md)
+- [Mode matrix of a linearized reaction-diffusion system](mode-matrix.md)
+
+## Proof depends on
+
+- [Diffusion matrix of a two-species system](diffusion-matrix.md)
 
 ## Sources
 

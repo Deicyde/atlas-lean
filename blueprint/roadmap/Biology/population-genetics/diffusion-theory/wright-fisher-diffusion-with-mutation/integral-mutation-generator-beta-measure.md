@@ -13,7 +13,12 @@ and every `f` twice continuously differentiable on `[0, 1]`, `∫ L f d(Beta(θ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
+
+## Proof depends on
+
+- [Weak stationarity of Wright's law (density form)](integral-mutation-generator-mul-beta-pdf.md)
+- [Nonnegativity of the beta density](../../../../Probability/distributions/beta-distribution/beta-pdfreal-nonneg.md)
 
 ## Sources
 

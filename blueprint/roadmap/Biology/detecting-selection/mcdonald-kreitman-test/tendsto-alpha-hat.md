@@ -16,7 +16,17 @@ the first `m` loci converges to `α = A / E D_n` as `m → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
+- [Expected nonsynonymous fixed differences](edn.md)
+- [Expected synonymous fixed differences](eds.md)
+- [Expected nonsynonymous polymorphisms](epn.md)
+- [Expected synonymous polymorphisms](eps.md)
+- [Proportion of adaptive nonsynonymous substitutions](alpha.md)
+- [Smith–Eyre-Walker estimator of adaptive substitutions](alpha-hat.md)
+
+## Proof depends on
+
+- [`α̂` at the expected counts is the proportion of adaptive substitutions](alpha-hat-expected.md)
 
 ## Sources
 

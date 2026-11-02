@@ -14,7 +14,9 @@ information identity), then `-(1/n) ∑_{i<n} ∂_θ score p θ₀ (X i) → I(�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
 
 ## Sources
 

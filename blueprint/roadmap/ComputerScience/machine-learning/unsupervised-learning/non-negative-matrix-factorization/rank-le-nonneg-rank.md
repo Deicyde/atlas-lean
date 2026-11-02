@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.NMF.rank_le_nonnegRank
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative rank of a matrix](nonneg-rank.md)
+
+## Proof depends on
+
+- [Existence of a factorization of nonnegative-rank inner dimension](exists-mul-eq-nonneg-rank.md)
 
 ## Sources
 

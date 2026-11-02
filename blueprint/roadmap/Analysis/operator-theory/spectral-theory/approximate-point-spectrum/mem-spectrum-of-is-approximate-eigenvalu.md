@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormalApproximateSpectrum.mem_spectr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approximate eigenvalue of an operator](is-approximate-eigenvalue.md)
 
 ## Sources
 

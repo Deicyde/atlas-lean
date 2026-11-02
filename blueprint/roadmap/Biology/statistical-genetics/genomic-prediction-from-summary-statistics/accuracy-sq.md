@@ -14,7 +14,11 @@ standardized uncorrelated markers. It is not the expectation of a squared correl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
+
+## Proof depends on
+
+- [Estimated marker effects](beta-hat.md)
 
 ## Sources
 

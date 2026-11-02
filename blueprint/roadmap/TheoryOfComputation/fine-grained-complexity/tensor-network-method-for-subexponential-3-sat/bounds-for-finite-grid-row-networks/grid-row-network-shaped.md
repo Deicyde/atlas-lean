@@ -13,7 +13,17 @@ lean: TensorNetwork.gridRowNetwork_shaped
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factored tensor network with shape parameter](../integer-valued-factored-tensor-networks/shaped.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Row network of a grid tensor](../finite-row-networks-for-grid-tensors/grid-row-network.md)
+- [Ordered pairs representing unordered pairs](../integer-valued-factored-tensor-networks/ordered-pairs.md)
+
+## Proof depends on
+
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Label set of an unordered vertex pair](../integer-valued-factored-tensor-networks/label-set.md)
+- [Capacity bound between grid rows](grid-row-network-capacity-le.md)
+- [Membership in the ordered pairs](../integer-valued-factored-tensor-networks/mem-ordered-pairs.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: TensorNetwork.Instance.toInstance_toFactored_univ_eq_pad
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complete-graph instance of a factored network](../equivalent-presentations-of-finite-tensor-networ/to-instance.md)
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
+- [Alphabet padding of a tensor instance](pad.md)
+- [Half-edge factored presentation of a tensor instance](../equivalent-presentations-of-finite-tensor-networ/to-factored.md)
+
+## Proof depends on
+
+- [Factoring and unfactoring a tensor instance gives its padding](to-instance-to-factored-eq-pad.md)
 
 ## Sources
 

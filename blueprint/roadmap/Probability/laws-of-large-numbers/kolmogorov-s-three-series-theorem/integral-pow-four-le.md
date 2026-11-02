@@ -16,6 +16,10 @@ identity and `E[S] = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expectation of a product of independent functions factors](integral-mul-of-indep-comp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ThreeSeriesNecessity](../../../../sources/v2/MathlibExt.md)

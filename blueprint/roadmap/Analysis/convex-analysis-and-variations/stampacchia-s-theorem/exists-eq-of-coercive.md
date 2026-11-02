@@ -16,6 +16,11 @@ Lax–Milgram theorem, which is the analogous statement for bilinear forms).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stampacchia's theorem, operator form](exists-unique-stampacchia.md)
+- [Variational inequality on the whole space reduces to an equation](stampacchia-eq-of-univ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Stampacchia](../../../../sources/v2/MathlibExt.md)

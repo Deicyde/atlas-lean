@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.ihh_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [One-sided integrated haplotype homozygosity](ihh.md)
+
+## Proof depends on
+
+- [EHH in the star-genealogy sweep model](sweep-ehh.md)
 
 ## Sources
 

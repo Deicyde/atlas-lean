@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.Clustering.OptimalLeafOrdering.optEnds
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+
+## Proof depends on
+
+- [Leaf orderings of a dendrogram](orderings.md)
+- [Adjacent-similarity score of a leaf order](adj-score.md)
 
 ## Sources
 

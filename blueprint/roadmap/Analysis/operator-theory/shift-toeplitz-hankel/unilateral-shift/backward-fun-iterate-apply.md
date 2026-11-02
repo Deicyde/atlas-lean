@@ -13,7 +13,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.backwardFun_itera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift of a sequence](backward-fun.md)
 
 ## Sources
 

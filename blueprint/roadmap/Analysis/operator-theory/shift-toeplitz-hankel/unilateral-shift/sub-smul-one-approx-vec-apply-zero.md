@@ -14,7 +14,8 @@ elsewhere, when `‖μ‖ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Truncated geometric vector in $\ell^2$](approx-vec.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.norm_fockCoherent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coherent state in the Fock space](fock-coherent.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+- [Norm of the Fock kernel](norm-fock-kernel.md)
 
 ## Sources
 

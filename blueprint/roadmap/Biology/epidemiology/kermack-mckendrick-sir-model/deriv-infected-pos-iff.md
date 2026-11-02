@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.Epidemiology.SIR.IsSolution.deriv_infected_pos_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution of the Kermack–McKendrick SIR system](is-solution.md)
 
 ## Sources
 

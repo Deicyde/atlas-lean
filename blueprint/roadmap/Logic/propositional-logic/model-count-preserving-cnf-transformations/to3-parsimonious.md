@@ -12,7 +12,12 @@ from `start`. Repeated output clauses are removed in last-occurrence order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+
+## Proof depends on
+
+- [Number of fresh variables in the parsimonious 3-CNF reduction](num-fresh-parsimonious3.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
 
 ## Sources
 

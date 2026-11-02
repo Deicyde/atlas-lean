@@ -15,6 +15,10 @@ started from one individual: `Z_0 = 1` and, given `Z_n = z`, `Z_{n+1}` has law `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convolution power of a measure](../../infinite-divisibility-regular-variation/infinitely-divisible-distributions/conv-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BranchingProcess.GaltonWatson](../../../../sources/v2/MathlibExt.md)

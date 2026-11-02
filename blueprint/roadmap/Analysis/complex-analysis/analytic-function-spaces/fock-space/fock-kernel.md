@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.fockKernel
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fock kernel coefficients lie in ℓ²](mem-p-fock-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.FockSpace](../../../../../sources/v2/MathlibExt.md)

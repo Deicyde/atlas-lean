@@ -13,7 +13,7 @@ measurable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.classStationaryLaw
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Product-form Poisson weight of a state](poisson-weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

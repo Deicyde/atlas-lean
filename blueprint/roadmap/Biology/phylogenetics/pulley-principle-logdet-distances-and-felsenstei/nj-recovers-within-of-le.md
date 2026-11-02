@@ -16,7 +16,13 @@ within radius `μ m / 2` of the scaled metric `μ d`. This is `njRun_splits_of_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neighbor joining recovers a tree within a radius](njrecovers-within.md)
+- [Binary phylogenetic tree](../neighbor-joining/is-binary-phylogenetic-tree.md)
+
+## Proof depends on
+
+- [Runs of neighbor joining](../neighbor-joining/njrun.md)
+- [Atteson's theorem: neighbor joining has `ℓ∞` radius `1/2`](../atteson-s-theorem-on-neighbor-joining/nj-run-splits-of-abs-sub-lt.md)
 
 ## Sources
 

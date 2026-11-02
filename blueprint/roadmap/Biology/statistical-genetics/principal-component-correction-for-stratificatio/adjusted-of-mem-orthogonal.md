@@ -13,7 +13,11 @@ span is not removed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+
+## Proof depends on
+
+- [Residual as projection onto the orthogonal complement](adjusted-eq-star-projection-orthogonal.md)
 
 ## Sources
 

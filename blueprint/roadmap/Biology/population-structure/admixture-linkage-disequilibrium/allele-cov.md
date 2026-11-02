@@ -14,6 +14,10 @@ frequencies `x`: `∑ g, x g a(g.1) a(g.2) - (∑ g, x g a(g.1)) (∑ g, x g a(g
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Allele count of a gamete at one locus](allele-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.AdmixtureLD](../../../../sources/v2/MathlibExt.md)

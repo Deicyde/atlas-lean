@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.norm_sharpEquiv_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+- [Banach–Nečas–Babuška isomorphism](sharp-equiv.md)
+
+## Proof depends on
+
+- [Pointwise inverse bound for the Banach–Nečas–Babuška isomorphism](norm-sharp-equiv-symm-apply-le.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ for the family of mass functions `P` if and only if there are nonnegative functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient statistic for a discrete family](is-sufficient-pmf.md)
+
+## Proof depends on
+
+- [Factorization, necessity](factorization.md)
+- [Factorization, sufficiency](is-sufficient-pmf-of-factorization.md)
 
 ## Sources
 

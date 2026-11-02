@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.RolewiczPeriodic.smul_backwardCLM_p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
+
+## Proof depends on
+
+- [Powers of a scalar multiple of the backward shift](smul-backward-shift-clm-pow-apply.md)
 
 ## Sources
 

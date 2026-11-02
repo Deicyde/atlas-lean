@@ -12,7 +12,11 @@ lean: HahnSeries.coefficientDerivation_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficientwise derivation of Hahn series](coefficient-derivation.md)
+
+## Proof depends on
+
+- [Coefficients of the coefficientwise derivation](coeff-coefficient-derivation.md)
 
 ## Sources
 

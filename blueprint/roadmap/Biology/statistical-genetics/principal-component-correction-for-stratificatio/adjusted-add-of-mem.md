@@ -13,7 +13,12 @@ residual.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+
+## Proof depends on
+
+- [Additivity of residualization](adjusted-add.md)
+- [Residual vanishes exactly on the subspace](adjusted-eq-zero-iff.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ lean: Nat.sum_stirlingFirst_mul_pow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rising factorial generates Stirling numbers of the first kind](sum-stirling-first-mul-x-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingAscPochhammer](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,15 @@ Hilbert–Schmidt norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Matrix of a bounded operator on $\ell^2$](hs-matrix.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
+
+## Proof depends on
+
+- [Operator with Hilbert–Schmidt matrix is the operator of its matrix](eq-hs-operator-of-is-hilbert-schmidt-mat.md)
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Operator norm is at most the Hilbert–Schmidt norm](norm-hs-operator-le.md)
 
 ## Sources
 

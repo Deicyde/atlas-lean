@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.CoalescentMode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coalescent model linking heterozygosity and coalescence times](coalescent-model.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [$f_2$ in terms of expected coalescence times](f2-eq.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [f4 in terms of f2](../patterson-s-f-statistics/f4-eq-f2.md)
 
 ## Sources
 

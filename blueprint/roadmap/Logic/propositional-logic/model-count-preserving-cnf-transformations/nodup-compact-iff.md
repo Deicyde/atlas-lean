@@ -12,7 +12,14 @@ lean: Cslib.Logic.PL.CNF.nodup_compact_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+- [Exact variable compaction of a CNF formula](compact.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
+
+## Proof depends on
+
+- [Variables of a CNF formula](../conjunctive-normal-form/vars-2.md)
+- [Variables of a clause](../conjunctive-normal-form/vars.md)
 
 ## Sources
 

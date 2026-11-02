@@ -16,6 +16,10 @@ cone**: if `S` and `D - S` are positive semidefinite, then
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monotonicity of the determinant on the positive semidefinite cone](../minkowski-s-determinant-inequality/det-le-det-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.FischerDeterminant](../../../../sources/v2/MathlibExt.md)

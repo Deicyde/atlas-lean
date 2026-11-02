@@ -13,7 +13,14 @@ for every real `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator of Kingman's block-counting process](block-counting-generator.md)
+
+## Proof depends on
+
+- [Eigenvalues of Kingman's block-counting generator](block-counting-eigenvalue.md)
+- [Left eigenvectors of Kingman's block-counting generator](block-counting-left-eigen.md)
+- [Right eigenvectors of Kingman's block-counting generator](block-counting-right-eigen.md)
+- [Spectral decomposition of the block-counting transition matrix](exp-smul-block-counting-generator.md)
 
 ## Sources
 

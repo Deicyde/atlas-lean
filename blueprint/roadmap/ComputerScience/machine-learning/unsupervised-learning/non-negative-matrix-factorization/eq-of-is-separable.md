@@ -20,7 +20,11 @@ block of `W'` is a nonnegative matrix with a nonnegative inverse, hence monomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Separable factor matrix](is-separable.md)
+
+## Proof depends on
+
+- [A nonnegative matrix with a nonnegative inverse is monomial](exists-perm-of-mul-eq-one.md)
 
 ## Sources
 

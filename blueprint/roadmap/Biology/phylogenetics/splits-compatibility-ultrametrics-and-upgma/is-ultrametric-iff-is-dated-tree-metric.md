@@ -14,7 +14,12 @@ metric) iff it is the metric of a dated rooted tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metric of a dated rooted tree](is-dated-tree-metric.md)
+- [Ultrametric on taxa](is-ultrametric.md)
+
+## Proof depends on
+
+- [Hierarchy on a finite set](is-hierarchy.md)
 
 ## Sources
 

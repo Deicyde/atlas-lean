@@ -15,6 +15,11 @@ lean: MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finite_genEigenspace_comp_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Restriction of g to generalized eigenspaces of fg and gf](gen-eigenspace-comp-map.md)
+- [Injectivity of g on generalized eigenspaces of fg](injective-gen-eigenspace-comp-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Eigenspace.MulComm](../../../../sources/v2/MathlibExt.md)

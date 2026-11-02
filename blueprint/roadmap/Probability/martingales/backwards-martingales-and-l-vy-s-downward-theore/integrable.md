@@ -12,7 +12,7 @@ lean: MeasureTheory.IsBackwardsMartingale.integrable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backwards martingale](is-backwards-martingale.md)
 
 ## Sources
 

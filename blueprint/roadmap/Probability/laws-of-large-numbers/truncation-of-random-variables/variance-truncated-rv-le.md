@@ -12,7 +12,12 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.variance_truncatedRV_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Truncation is bounded by the absolute cutoff](../kolmogorov-s-three-series-theorem/abs-truncated-rv-le-abs.md)
+- [Measurability of a truncated random variable](measurable-truncated-rv-of-measurable.md)
 
 ## Sources
 

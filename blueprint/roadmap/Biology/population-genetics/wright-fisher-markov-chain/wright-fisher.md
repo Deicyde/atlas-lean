@@ -15,7 +15,7 @@ number of `A` copies among `M` draws with replacement. The model needs `M ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
 
 ## Sources
 

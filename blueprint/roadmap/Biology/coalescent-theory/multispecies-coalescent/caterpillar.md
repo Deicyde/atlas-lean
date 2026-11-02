@@ -13,7 +13,7 @@ deeper internal branch (above the ancestor of `0, 1, 2`) and `y` that of the sha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
 
 ## Sources
 

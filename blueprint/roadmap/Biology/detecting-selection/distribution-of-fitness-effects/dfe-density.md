@@ -14,6 +14,10 @@ effects `μ`: `∫ φ_σ(x) dμ(σ)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sawyer–Hartl Poisson random field density](../../population-genetics/diffusion-theory/poisson-random-field-model/prf-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects](../../../../sources/v2/MathlibExt.md)

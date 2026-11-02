@@ -13,7 +13,8 @@ lean: Cslib.Bioinformatics.Phylogenetics.NeighborJoining.qCriterion_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial cluster dissimilarity in neighbor joining](initial-dist.md)
+- [Neighbor-joining Q-criterion](q-criterion.md)
 
 ## Sources
 

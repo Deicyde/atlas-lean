@@ -13,7 +13,7 @@ satisfies the resource invariant. This is a list-size bound, not a machine-space
 
 ## Depends on
 
-This node has no prerequisites.
+- [One depth-first round of binary branching](round.md)
 
 ## Sources
 

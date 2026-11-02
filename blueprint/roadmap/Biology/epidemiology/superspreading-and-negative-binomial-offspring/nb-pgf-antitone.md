@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Epidemiology.Superspreading.nbPgf_antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative-binomial probability generating function](nb-pgf.md)
 
 ## Sources
 

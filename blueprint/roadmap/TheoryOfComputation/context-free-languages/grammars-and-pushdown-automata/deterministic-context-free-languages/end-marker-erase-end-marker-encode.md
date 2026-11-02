@@ -12,7 +12,8 @@ lean: Cslib.Language.endMarkerErase_endMarkerEncode
 
 ## Depends on
 
-This node has no prerequisites.
+- [End-marker encoding of a word](end-marker-encode.md)
+- [End-marker erasure](end-marker-erase.md)
 
 ## Sources
 

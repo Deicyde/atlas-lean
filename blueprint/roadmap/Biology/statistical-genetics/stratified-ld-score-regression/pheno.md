@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore.Model.pheno
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of stratified LD-score regression](model.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.PopulationGenetics.HudsonKaplan.sweep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One step of the Hudson–Kaplan sweep](sweep-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationGenetics.HudsonKaplan](../../../../sources/v2/CSLibExt.md)

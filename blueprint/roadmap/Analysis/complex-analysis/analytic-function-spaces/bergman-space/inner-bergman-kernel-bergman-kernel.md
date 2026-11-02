@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.inner_bergmanKernel_ber
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bergman kernel](bergman-kernel.md)
+
+## Proof depends on
+
+- [Square of the complex geometric series](has-sum-succ-mul-pow-complex.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning.likelihood
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
+
+## Proof depends on
+
+- [Brute-force likelihood given the root state](brute-lik.md)
 
 ## Sources
 

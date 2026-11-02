@@ -12,7 +12,13 @@ lean: Cslib.OutputReachability.reachesOutput_iff_bounded_iterate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Output reachability within time and resource bounds](reaches-output.md)
+- [One iteration step with absorbing halted states](next.md)
+
+## Proof depends on
+
+- [Terminal iterates are stable](iterate-stable.md)
+- [Characterization of output reachability by iterates](reaches-output-iff-iterate.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.Opial.opial_liminf_sq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weakly convergent sequences are norm-bounded](bdd-above-norm-of-weakly-tendsto.md)
+- [Cross term vanishes under weak convergence](tendsto-re-inner-sub-of-weakly-tendsto.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Opial](../../../../sources/v2/MathlibExt.md)

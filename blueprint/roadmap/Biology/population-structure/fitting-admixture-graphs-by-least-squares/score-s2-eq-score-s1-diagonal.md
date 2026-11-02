@@ -13,7 +13,8 @@ lean: MathlibExt.Biology.PopulationGenetics.QpGraph.scoreS2_eq_scoreS1_diagonal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares qpGraph score S1](score-s1.md)
+- [Least-squares qpGraph score S2](score-s2.md)
 
 ## Sources
 

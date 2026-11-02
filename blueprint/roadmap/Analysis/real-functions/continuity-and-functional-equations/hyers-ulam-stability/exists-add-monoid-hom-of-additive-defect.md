@@ -19,6 +19,10 @@ approximant is the identity, at distance exactly `‖c‖`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dyadic approximants in Hyers' proof](approx.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.HyersUlam](../../../../../sources/v2/MathlibExt.md)

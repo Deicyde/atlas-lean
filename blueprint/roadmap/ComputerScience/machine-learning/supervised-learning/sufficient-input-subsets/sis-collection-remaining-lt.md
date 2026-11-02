@@ -13,7 +13,13 @@ masking every set of the SIS-collection leaves the prediction below the threshol
 
 ## Depends on
 
-This node has no prerequisites.
+- [SIS-collection procedure](sis-collection.md)
+
+## Proof depends on
+
+- [FindSIS procedure for sufficient input subsets](find-sis.md)
+- [FindSIS returns a set when the start reaches the threshold](find-sis-is-some.md)
+- [FindSIS returns a sufficient subset of the features](find-sis-sufficient.md)
 
 ## Sources
 

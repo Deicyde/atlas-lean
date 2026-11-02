@@ -14,6 +14,12 @@ lean: ProbabilityTheory.integral_one_sub_sq_betaMeasure_one
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beta law is concentrated on the unit interval](ae-mem-icc-beta-measure.md)
+- [Mean of the beta law](../../distributions/beta-distribution/integral-id-beta-measure.md)
+- [Second moment of the beta law](../../distributions/beta-distribution/integral-sq-beta-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.DirichletProcess](../../../../sources/v2/MathlibExt.md)

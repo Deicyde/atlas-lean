@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.measurable_truncationFun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scalar truncation function](truncation-fun.md)
+
+## Proof depends on
+
+- [Truncation preserves measurability](../kolmogorov-s-three-series-theorem/measurable-truncated-rv.md)
 
 ## Sources
 

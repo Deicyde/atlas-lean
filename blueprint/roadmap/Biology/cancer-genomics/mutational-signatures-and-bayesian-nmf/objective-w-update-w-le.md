@@ -14,7 +14,17 @@ and `W > 0` entrywise (the transpose of `objectiveH_updateH_le`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [W-dependent part of the ARD-NMF objective](objective-w.md)
+- [ARD multiplicative update of W](update-w.md)
+
+## Proof depends on
+
+- [Data-fit term of the ARD-NMF objective](data-fit.md)
+- [Generalized Kullback–Leibler divergence](kl-div.md)
+- [H-dependent part of the ARD-NMF objective](objective-h.md)
+- [The `H` update is monotone](objective-h-update-h-le.md)
+- [Reconstruction matrix in nonnegative matrix factorization](recon.md)
+- [ARD multiplicative update of H](update-h.md)
 
 ## Sources
 

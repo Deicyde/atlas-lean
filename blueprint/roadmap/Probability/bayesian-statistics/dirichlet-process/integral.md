@@ -12,7 +12,12 @@ lean: ProbabilityTheory.StickBreakingProcess.IsDirichlet.integral_β
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking process](stick-breaking-process.md)
+- [Sethuraman's stick-breaking representation of the Dirichlet process](is-dirichlet.md)
+
+## Proof depends on
+
+- [Mean of the beta law](../../distributions/beta-distribution/integral-id-beta-measure.md)
 
 ## Sources
 

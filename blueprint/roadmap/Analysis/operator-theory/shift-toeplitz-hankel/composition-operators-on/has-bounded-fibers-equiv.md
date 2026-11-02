@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.hasBoundedFibers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+
+## Proof depends on
+
+- [Injective maps have fibers of size at most one](has-bounded-fibers-of-injective.md)
 
 ## Sources
 

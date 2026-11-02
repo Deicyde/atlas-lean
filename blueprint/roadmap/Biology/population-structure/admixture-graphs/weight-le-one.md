@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.weight_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Edges of an admixture graph](edge.md)
+- [Lineage weight of an edge in an admixture graph](weight.md)
+
+## Proof depends on
+
+- [Admixture proportions are at most one](prop-le-one.md)
+- [Probability that a lineage passes through a node](visit.md)
+- [Visit probabilities are at most one](visit-le-one.md)
 
 ## Sources
 

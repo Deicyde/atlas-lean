@@ -13,7 +13,12 @@ domain of `jcDistance`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that the ends of a branch differ](p-diff.md)
+
+## Proof depends on
+
+- [Jukes–Cantor difference probability is below 3/4](p-diff-lt-three-quarters.md)
+- [Nonnegativity of the Jukes–Cantor difference probability](p-diff-nonneg.md)
 
 ## Sources
 

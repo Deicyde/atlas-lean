@@ -18,7 +18,18 @@ is the restricted maximizer when, for example, `ℓₙ` is concave; that is not 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../../statistical-estimation/fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/score.md)
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Quadratic expansion of the log-likelihood ratio](tendsto-in-measure-two-mul-log-likelihoo.md)
+- [Fisher information is the second moment of the score](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/integral-score-sq.md)
+- [Asymptotic normality of a consistent root of an estimating equation](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-distribution-sqrt-mul-sub-of.md)
+- [Convergence to zero in probability by domination on likely events](../../statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-measure-zero-of-abs-le.md)
+- [Law of the positive part squared of a standard normal variable](gaussian-real-map-max-zero-sq.md)
 
 ## Sources
 

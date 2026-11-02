@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.decayLength_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decay length of a morphogen gradient](decay-length.md)
 
 ## Sources
 

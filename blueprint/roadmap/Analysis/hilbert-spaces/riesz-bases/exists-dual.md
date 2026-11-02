@@ -15,7 +15,7 @@ for the operator `T` witnessing that `f` is a Riesz basis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riesz basis of a Hilbert space](is-riesz-basis.md)
 
 ## Sources
 

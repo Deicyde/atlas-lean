@@ -16,7 +16,12 @@ in the estimate (for which `ℓ θ ∘ W` is integrable).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](../sufficient-statistics-and-the-factorization-theo/is-sufficient.md)
+
+## Proof depends on
+
+- [Common conditional expectation under a sufficient σ-algebra](../sufficient-statistics-and-the-factorization-theo/exists-common-cond-exp.md)
+- [Rao–Blackwell inequality for one law](integral-comp-cond-exp-le.md)
 
 ## Sources
 

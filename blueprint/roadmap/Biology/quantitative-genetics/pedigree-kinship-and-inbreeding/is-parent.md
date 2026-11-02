@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.IsParent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
 
 ## Sources
 

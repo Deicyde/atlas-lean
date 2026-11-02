@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.Motifs.PWM.boltzmannPWM
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column partition function of an energy matrix](partition-fn.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Motifs.PWM](../../../../sources/v2/CSLibExt.md)

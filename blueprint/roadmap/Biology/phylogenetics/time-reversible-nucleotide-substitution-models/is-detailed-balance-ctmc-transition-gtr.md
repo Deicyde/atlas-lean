@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.isDetailedBalance_ctmc
 
 ## Depends on
 
-This node has no prerequisites.
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+- [Detailed balance](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/is-detailed-balance.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [GTR is reversible](is-detailed-balance-gtr-rate.md)
+- [Detailed balance propagates to the transition function](../../../Probability/markov-chains/finite-continuous-time-markov-chains/stationary/ctmc-transition.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ lean: ProbabilityTheory.ctmcPath_eq_ite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of a continuous-time Markov chain](ctmc-holding-time.md)
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
+
+## Proof depends on
+
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+- [Path value between consecutive jump times](ctmc-path-eq-of-mem.md)
+- [Path restarts at a jump time](ctmc-path-jump-time-add.md)
 
 ## Sources
 

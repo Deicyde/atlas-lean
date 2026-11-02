@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.chiSqStrat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+
+## Proof depends on
+
+- [Normalized score under stratification](beta-hat-strat.md)
 
 ## Sources
 

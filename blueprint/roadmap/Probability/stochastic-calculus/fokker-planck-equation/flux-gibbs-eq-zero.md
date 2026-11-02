@@ -13,7 +13,13 @@ lean: MathlibExt.Probability.FokkerPlanck.flux_gibbs_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability flux of a diffusion](flux.md)
+- [Gibbs density](gibbs.md)
+- [Gradient of a function on Euclidean coordinate space](grad.md)
+
+## Proof depends on
+
+- [Partial derivative on Euclidean coordinate space](pderiv.md)
 
 ## Sources
 

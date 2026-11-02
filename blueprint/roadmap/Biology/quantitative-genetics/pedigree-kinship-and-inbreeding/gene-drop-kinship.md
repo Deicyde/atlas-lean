@@ -12,7 +12,11 @@ at random from `i` and a copy drawn at random from `j` are identical by descent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+
+## Proof depends on
+
+- [Probability of identity by descent under gene dropping](ibd.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.sum_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Dominance deviation at a single locus](delta.md)
+
+## Proof depends on
+
+- [Orthogonality of dominance deviations in the second allele](../fisher-s-decomposition-of-genetic-variance/sum-mul-dom-dev-right.md)
 
 ## Sources
 

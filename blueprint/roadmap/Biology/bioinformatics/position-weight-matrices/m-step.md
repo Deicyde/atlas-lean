@@ -11,7 +11,13 @@ lean: Cslib.Bioinformatics.Motifs.PWM.mStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coverage condition for motif columns](covers.md)
+- [Positive position weight matrices](pos-pwm.md)
+
+## Proof depends on
+
+- [Expected letter counts in motif columns](expected-counts.md)
+- [Positivity of expected motif counts](expected-counts-pos.md)
 
 ## Sources
 

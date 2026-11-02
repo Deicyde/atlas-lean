@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.generator_meanAbsorptionTi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
+- [Kimura–Ohta mean absorption time of a neutral allele](mean-absorption-time.md)
+
+## Proof depends on
+
+- [Derivative of the neutral mean absorption time](has-deriv-at-mean-absorption-time.md)
 
 ## Sources
 

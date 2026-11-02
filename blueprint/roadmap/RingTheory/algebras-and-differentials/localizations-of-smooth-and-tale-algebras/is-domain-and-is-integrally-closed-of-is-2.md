@@ -15,6 +15,10 @@ integrally closed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Localizations of étale algebras are integrally closed domains](is-domain-and-is-integrally-closed-of-is.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Smooth.Localization](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,11 @@ instead of a second, incompatible copy of it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](csgrammar.md)
+
+## Proof depends on
+
+- [One-step rewriting](../../undecidable-problems/string-rewriting-systems/step.md)
 
 ## Sources
 

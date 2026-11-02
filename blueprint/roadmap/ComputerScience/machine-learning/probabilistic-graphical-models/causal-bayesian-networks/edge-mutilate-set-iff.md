@@ -12,7 +12,9 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.edge_mutilateSet_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [Edge of a Bayesian network](edge.md)
+- [Mutilated network of a set intervention](mutilate-set.md)
 
 ## Sources
 

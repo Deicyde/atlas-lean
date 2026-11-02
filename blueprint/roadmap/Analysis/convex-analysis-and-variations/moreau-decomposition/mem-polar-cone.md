@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Convex.MoreauDecomposition.mem_polarCone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Negative polar cone](polar-cone.md)
 
 ## Sources
 

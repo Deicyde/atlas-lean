@@ -13,7 +13,14 @@ so at most `N - 1` eigenvalues are nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Patterson's relatedness matrix](relatedness-matrix.md)
+
+## Proof depends on
+
+- [Allele-frequency estimate of a marker](allele-freq.md)
+- [Patterson's normalized genotype matrix](normalized-genotype.md)
+- [Column-centered data matrix](../../../Probability/linear-models-multivariate/principal-component-analysis/center.md)
+- [Centered columns sum to zero](../../../Probability/linear-models-multivariate/principal-component-analysis/sum-center.md)
 
 ## Sources
 

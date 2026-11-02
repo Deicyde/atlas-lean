@@ -12,7 +12,11 @@ lean: HahnSeries.ofBivariateAddMonoidAlgebra_injective
 
 ## Depends on
 
-This node has no prerequisites.
+- [Embedding of a bivariate monoid algebra into Hahn series](of-bivariate-add-monoid-algebra.md)
+
+## Proof depends on
+
+- [Coefficients of the bivariate monoid algebra embedding](coeff-coeff-of-bivariate-add-monoid-alge.md)
 
 ## Sources
 

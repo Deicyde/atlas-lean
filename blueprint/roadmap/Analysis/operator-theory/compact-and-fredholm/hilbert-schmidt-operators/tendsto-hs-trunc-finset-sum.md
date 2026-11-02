@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.tendsto_hsTrunc_finse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Squared Hilbert–Schmidt norm of a matrix](hs-norm-sq.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.EditScript.exists_compose
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit script](edit-script.md)
+- [An edit script transforming one list into another](transforms.md)
+- [Cost of an edit script](cost-2.md)
+
+## Proof depends on
+
+- [Running an edit script](apply.md)
+- [Edit step](edit-step.md)
 
 ## Sources
 

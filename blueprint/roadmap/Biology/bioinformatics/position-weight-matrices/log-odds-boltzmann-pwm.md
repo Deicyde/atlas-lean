@@ -13,7 +13,13 @@ Boltzmann PWM.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boltzmann position weight matrix](boltzmann-pwm.md)
+- [Log-odds matrix of a site model](log-odds.md)
+- [Column partition function of an energy matrix](partition-fn.md)
+
+## Proof depends on
+
+- [Positivity of the column partition function](partition-fn-pos.md)
 
 ## Sources
 

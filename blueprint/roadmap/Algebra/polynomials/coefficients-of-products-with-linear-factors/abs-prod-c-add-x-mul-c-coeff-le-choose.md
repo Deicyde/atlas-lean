@@ -15,6 +15,10 @@ then the absolute value of coefficient `i` is at most `S.card.choose i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coefficients of a product of affine linear polynomials](prod-c-add-x-mul-c-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.AffineProduct](../../../../sources/v2/MathlibExt.md)

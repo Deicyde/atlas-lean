@@ -12,7 +12,12 @@ lean: Cslib.Language.exists_endMarkerEncode_of_endMarkerDFA_evalFrom
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFA recognizing end-marker encodings](end-marker-dfa.md)
+- [End-marker encoding of a word](end-marker-encode.md)
+
+## Proof depends on
+
+- [Encoding DFA after the end marker accepts only the empty input](end-marker-dfa-eval-from-after-marker.md)
 
 ## Sources
 

@@ -20,6 +20,10 @@ value `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.PoissonRandomField](../../../../../sources/v2/MathlibExt.md)

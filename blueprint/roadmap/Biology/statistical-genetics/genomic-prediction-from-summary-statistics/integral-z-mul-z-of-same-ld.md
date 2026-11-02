@@ -18,7 +18,14 @@ phenotypic-correlation overlap formula or establish z-score normalization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate LD-score model](cross-trait-model.md)
+- [Scaled marginal score for the first trait](z1.md)
+- [Scaled marginal score for the second trait](z2.md)
+- [In-sample LD correlation](sample-corr.md)
+
+## Proof depends on
+
+- [Cross-trait scaled-score identity, exact form](integral-z-mul-z.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.linearIndependent_f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f3 form](f3-form.md)
+
+## Proof depends on
+
+- [Per-locus f4 form](f4-form.md)
 
 ## Sources
 

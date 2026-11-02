@@ -14,6 +14,10 @@ frequency `x`: `U / ((1 - s) x + U)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear mutation–selection recursion](lin-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance](../../../../sources/v2/MathlibExt.md)

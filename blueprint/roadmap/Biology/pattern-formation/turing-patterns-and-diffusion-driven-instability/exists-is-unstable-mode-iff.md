@@ -14,7 +14,13 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.exists_isUnstableMode_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+
+## Proof depends on
+
+- [Dispersion polynomial](dispersion-det.md)
+- [Turing's criterion for diffusion-driven instability](exists-dispersion-det-neg-iff.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
 
 ## Sources
 

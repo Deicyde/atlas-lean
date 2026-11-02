@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.FisherKPP.two_mul_sqrt_lt_azSpeed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Speed of the Ablowitz–Zeppetella wave](az-speed.md)
 
 ## Sources
 

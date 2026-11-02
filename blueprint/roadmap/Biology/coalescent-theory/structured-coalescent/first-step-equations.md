@@ -14,7 +14,11 @@ equations; this file does not construct the chain.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [State of two lineages in the island model](pair-state.md)
+
+## Proof depends on
+
+- [Transition rates of the two-lineage structured coalescent](rate.md)
 
 ## Sources
 

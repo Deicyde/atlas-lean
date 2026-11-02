@@ -14,6 +14,10 @@ in `(ker B)ᗮ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Preimages in the orthogonal complement of the kernel under range inclusion](exists-mem-orthogonal-apply.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

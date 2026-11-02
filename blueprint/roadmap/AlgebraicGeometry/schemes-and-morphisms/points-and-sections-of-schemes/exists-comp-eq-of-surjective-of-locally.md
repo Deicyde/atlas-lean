@@ -15,6 +15,10 @@ an algebraically closed field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Density of rational points over an algebraically closed field](dense-set-of-exists-section-of-is-alg-cl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.Sections](../../../../sources/v2/MathlibExt.md)

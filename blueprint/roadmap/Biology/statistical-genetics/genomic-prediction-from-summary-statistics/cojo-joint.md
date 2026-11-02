@@ -15,7 +15,12 @@ estimate when `XᵀX` is invertible.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal of the genotype Gram matrix](gram-diag.md)
+- [Marginal least-squares estimate of a marker effect](marginal-estimate.md)
+
+## Proof depends on
+
+- [Genotype-phenotype cross products from marginal estimates](transpose-mul-vec-eq-gram-diag-mul-vec.md)
 
 ## Sources
 

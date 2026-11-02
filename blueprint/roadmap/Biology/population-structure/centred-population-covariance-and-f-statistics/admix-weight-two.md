@@ -13,7 +13,11 @@ edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lineage weights of the three-population admixture model](admix-weight.md)
+
+## Proof depends on
+
+- [Lineage weights of the three-population star tree](star-weight.md)
 
 ## Sources
 

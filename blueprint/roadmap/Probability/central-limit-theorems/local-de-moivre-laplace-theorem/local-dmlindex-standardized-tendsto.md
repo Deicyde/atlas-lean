@@ -12,7 +12,11 @@ lean: ProbabilityTheory.localDMLIndex_standardized_tendsto
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice index in the local De Moivre–Laplace theorem](local-dmlindex.md)
+
+## Proof depends on
+
+- [The De Moivre–Laplace index tends to infinity](local-dmlindex-tendsto-at-top.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.dirichletKernel_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ monotone likelihood ratio on `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monotone likelihood ratio](has-monotone-likelihood-ratio-on.md)
+- [Binomial likelihood](binomial-lik.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ under `Linkage.recombine` when `ρ = 4 N r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random mating with recombination](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine.md)
+- [Generator of the two-locus Wright–Fisher diffusion](two-locus-generator.md)
+
+## Proof depends on
+
+- [Linkage disequilibrium of a two-locus gamete law](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/linkage-diseq.md)
+- [Classical form of the recombination recursion](../../population-genetics/linkage-disequilibrium-and-haldane-s-map-functio/recombine-eq-sub.md)
+- [Linkage disequilibrium polynomial](diseq-poly.md)
 
 ## Sources
 

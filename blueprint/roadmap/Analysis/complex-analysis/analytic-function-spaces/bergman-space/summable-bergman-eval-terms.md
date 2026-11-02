@@ -15,6 +15,10 @@ point of the disc.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bergman kernel](bergman-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BergmanSpace](../../../../../sources/v2/MathlibExt.md)

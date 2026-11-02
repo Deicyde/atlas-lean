@@ -12,7 +12,7 @@ off-diagonal target label is outside `D`. The diagonal coordinate is replaced by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued complete-graph tensor instance](../integer-valued-factored-tensor-networks/instance.md)
 
 ## Sources
 

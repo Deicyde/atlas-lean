@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormDerivative.HasFDerivAt.norm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
+
+## Proof depends on
+
+- [Fréchet derivative of the norm at a nonzero point](has-fderiv-at-norm.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ binary phylogenetic tree (a binary refinement of the majority-rule consensus tre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Majority splits of a family of trees](majority-splits.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Cluster set of a tree seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster-set.md)
+
+## Proof depends on
+
+- [Hierarchies are refined by binary trees](exists-is-binary-hierarchy-superset.md)
+- [Majority splits are compatible](nested-or-disjoint-of-mem-majority-split.md)
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
+- [Every binary hierarchy is a cluster set of a tree](../counting-unrooted-binary-phylogenetic-trees/exists-cluster-set-eq.md)
+- [Clusters of an unrooted tree form a binary hierarchy](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy-cluster-set.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MathlibExt.Probability.Statistics.PCA.center
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample mean of a data matrix column](col-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.PCA](../../../../sources/v2/MathlibExt.md)

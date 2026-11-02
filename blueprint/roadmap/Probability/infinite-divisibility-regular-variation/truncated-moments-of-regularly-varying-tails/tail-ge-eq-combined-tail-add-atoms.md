@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.TruncatedMoment.tailGe_eq_combinedTail_add_atoms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Combined tail of a measure](../regular-variation/combined-tail.md)
+- [Closed upper tail of a measure](tail-ge.md)
+
+## Proof depends on
+
+- [Strict upper tail of a measure](tail-gt.md)
+- [Strict absolute tail equals the combined tail](tail-gt-eq-combined-tail.md)
 
 ## Sources
 

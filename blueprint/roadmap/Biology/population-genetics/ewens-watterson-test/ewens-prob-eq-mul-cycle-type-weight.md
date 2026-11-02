@@ -13,7 +13,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.ewensProb_eq_mul_cycleTypeWeig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of permutations with a given cycle type](cycle-type-weight.md)
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
 
 ## Sources
 

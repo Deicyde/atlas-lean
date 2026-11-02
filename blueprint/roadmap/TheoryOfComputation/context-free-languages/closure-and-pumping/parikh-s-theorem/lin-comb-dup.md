@@ -13,7 +13,11 @@ lean: Cslib.Language.linComb_dup
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear combination of period vectors](lin-comb.md)
+
+## Proof depends on
+
+- [Unguarded linear combination agrees on equal lengths](lin-comb-eq-aux-of-length-eq.md)
 
 ## Sources
 

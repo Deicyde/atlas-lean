@@ -11,7 +11,12 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.jointLaw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+
+## Proof depends on
+
+- [Law of a non-null z-value](alt-law.md)
+- [Law of a null z-value](null-law.md)
 
 ## Sources
 

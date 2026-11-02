@@ -15,6 +15,13 @@ integrands. Neither condition involves the values of `H` at time `0` or after `t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Elementary integrand](elementary-integrand.md)
+- [Elementary integrand as a process](to-process.md)
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ItoIntegral](../../../../sources/v2/MathlibExt.md)

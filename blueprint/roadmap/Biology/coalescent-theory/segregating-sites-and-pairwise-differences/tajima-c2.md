@@ -13,6 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.tajimaC2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tajima's constant $a_1$](tajima-a1.md)
+- [Tajima's constant $a_2$](tajima-a2.md)
+- [Tajima's constant $b_2$](tajima-b2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.Tajima](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ by the existing extended-valued operator norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
 
 ## Sources
 

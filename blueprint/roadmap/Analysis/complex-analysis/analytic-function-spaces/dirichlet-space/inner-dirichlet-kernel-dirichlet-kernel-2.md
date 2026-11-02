@@ -13,7 +13,12 @@ function `-log (1 - z * conj w) / (z * conj w)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
+## Proof depends on
+
+- [Closed form of $\sum u^n/(n+1)$ for complex $u$ in the unit disc](has-sum-div-succ-pow-complex.md)
+- [Inner product of two Dirichlet kernels as a power series](inner-dirichlet-kernel-dirichlet-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.surjective_backwa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+
+## Proof depends on
+
+- [The unilateral shift operator](shift-clm.md)
+- [Backward shift power is a left inverse of the shift power](backward-clm-pow-comp-shift-clm-pow.md)
 
 ## Sources
 

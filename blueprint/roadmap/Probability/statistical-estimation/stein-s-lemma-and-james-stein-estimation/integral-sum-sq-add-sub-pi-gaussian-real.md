@@ -17,6 +17,11 @@ coordinate with partial derivative `dgᵢ`, the quadratic risk is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stein's lemma](integral-sub-mul-pi-gaussian-real.md)
+- [Quadratic risk of the usual Gaussian mean estimator](integral-sum-sq-sub-pi-gaussian-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.SteinLemma](../../../../sources/v2/MathlibExt.md)

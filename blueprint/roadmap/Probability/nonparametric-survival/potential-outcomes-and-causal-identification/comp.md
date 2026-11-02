@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Causality.StronglyIgnorable.comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong ignorability](strongly-ignorable.md)
+
+## Proof depends on
+
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Propensity score](propensity.md)
 
 ## Sources
 

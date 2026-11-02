@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.mem_structures
 
 ## Depends on
 
-This node has no prerequisites.
+- [RNA secondary structure](../nussinov-algorithm-for-rna-secondary-structure/is-structure.md)
+- [Set of all secondary structures of a sequence](structures.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: BitVec.monicModulus_monic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic binary modulus of a fixed-width word](monic-modulus.md)
+
+## Proof depends on
+
+- [Little-endian bits of a bitvector](../../../ComputerScience/algebraic-and-numerical-algorithms/bitvectors-and-boolean-lists/to-bool-list-le.md)
+- [Binary polynomial of a bitvector](to-polynomial.md)
+- [Degree bound for a polynomial built from a coefficient list](degree-of-coeff-list-lt.md)
 
 ## Sources
 

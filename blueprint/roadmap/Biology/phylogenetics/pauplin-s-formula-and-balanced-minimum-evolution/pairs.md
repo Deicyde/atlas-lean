@@ -12,7 +12,11 @@ two leaves and its number of edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with edge lengths](rtree.md)
+
+## Proof depends on
+
+- [Leaves of a rooted binary tree with root distances](leaves.md)
 
 ## Sources
 

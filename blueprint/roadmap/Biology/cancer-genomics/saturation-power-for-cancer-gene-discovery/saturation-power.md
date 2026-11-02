@@ -15,6 +15,11 @@ p-value `ℙ_{p₀}(X ≥ x)` is at most `γ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial probability mass function](../detection-power-for-somatic-mutations/binom-pmf.md)
+- [Binomial upper tail probability](../detection-power-for-somatic-mutations/upper-tail.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.CancerGenomics.SaturationPower](../../../../sources/v2/MathlibExt.md)

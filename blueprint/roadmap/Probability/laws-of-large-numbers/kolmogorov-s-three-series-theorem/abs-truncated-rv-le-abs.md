@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.abs_truncatedRV_le_abs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](truncated-rv.md)
+
+## Proof depends on
+
+- [Formula for the truncated random variable](truncated-rv-apply.md)
 
 ## Sources
 

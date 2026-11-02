@@ -12,7 +12,13 @@ lean: ProbabilityTheory.IsRateMatrix.sum_ctmcTransition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Transition semigroup of a continuous-time Markov chain](ctmc-transition.md)
+
+## Proof depends on
+
+- [Rate matrix annihilates the constant vector](../rate-matrices-of-finite-continuous-time-markov-c/mul-vec-one.md)
+- [Transition function fixes the constant vector](ctmc-transition-mul-vec-one.md)
 
 ## Sources
 

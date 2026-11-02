@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator_hsTrunc_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Truncation of a matrix to its top-left block](hs-trunc.md)
+- [Truncated matrices are Hilbert–Schmidt](is-hilbert-schmidt-hs-trunc.md)
+
+## Proof depends on
+
+- [Pointwise action of the Hilbert–Schmidt operator](hs-operator-apply.md)
+- [Scaled rank-one operator on standard basis vectors](rank-one-single-apply.md)
 
 ## Sources
 

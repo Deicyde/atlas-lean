@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.CancerGenomics.DetectionPower.randomization_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomization probability of the detection test](randomization.md)
+
+## Proof depends on
+
+- [Critical count of the mutation detection test](critical-count.md)
+- [Minimality of the critical count](lt-upper-tail-critical-count-sub-one.md)
+- [Binomial upper tail probability](upper-tail.md)
+- [Critical count meets the false-positive bound](upper-tail-critical-count-le.md)
 
 ## Sources
 

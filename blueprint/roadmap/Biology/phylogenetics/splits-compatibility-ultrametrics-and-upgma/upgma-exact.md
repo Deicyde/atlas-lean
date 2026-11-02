@@ -14,7 +14,12 @@ block) reconstructs `d`, i.e. the dated tree, exactly (Semple & Steel 2003, Sect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ultrametric on taxa](is-ultrametric.md)
+- [States reachable by UPGMA](upgma-reaches.md)
+
+## Proof depends on
+
+- [Average linkage between clusters](avg-dist.md)
 
 ## Sources
 

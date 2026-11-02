@@ -14,6 +14,10 @@ consisting of left letters followed by a single end marker.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [End-marker encoding of a word](end-marker-encode.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Deterministic](../../../../../sources/v2/CSLibExt.md)

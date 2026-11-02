@@ -13,7 +13,12 @@ lean: Real.upperIncompleteGamma_natCast_add_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper incomplete gamma function](upper-incomplete-gamma.md)
+
+## Proof depends on
+
+- [Recurrence for the upper incomplete gamma function](upper-incomplete-gamma-add-one.md)
+- [Upper incomplete gamma function with shape one](upper-incomplete-gamma-one.md)
 
 ## Sources
 

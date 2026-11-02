@@ -13,7 +13,7 @@ family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Synthesis operator of a square-summable family](synthesis-clm.md)
 
 ## Sources
 

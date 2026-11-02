@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.Dynamics.GoldbeterKoshland.hill_ratio_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hill response function](hill.md)
 
 ## Sources
 

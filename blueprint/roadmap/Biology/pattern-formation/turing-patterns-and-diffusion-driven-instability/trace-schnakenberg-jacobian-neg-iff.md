@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.trace_schnakenbergJacobian_neg_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian of the Schnakenberg kinetics at its steady state](schnakenberg-jacobian.md)
 
 ## Sources
 

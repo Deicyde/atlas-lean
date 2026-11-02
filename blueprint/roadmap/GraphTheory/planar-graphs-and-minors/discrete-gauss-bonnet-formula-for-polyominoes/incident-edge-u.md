@@ -11,7 +11,7 @@ lean: StatMech.AngleDefect.incidentEdgeU
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice point as a vertex of the cell complex](vtx.md)
 
 ## Sources
 

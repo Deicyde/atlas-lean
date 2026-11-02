@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.GaussianGraphicalModel.measurable_rest
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditioning block of a vector](rest.md)
 
 ## Sources
 

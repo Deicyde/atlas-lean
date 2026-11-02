@@ -15,7 +15,7 @@ refinement of a rooted tree to a binary one).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
 
 ## Sources
 

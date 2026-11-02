@@ -12,7 +12,13 @@ mismatch probability `ε`, as a hidden Markov model with a uniform initial copie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+- [Hidden Markov model](../../../ComputerScience/machine-learning/probabilistic-graphical-models/hidden-markov-models/hmm.md)
+
+## Proof depends on
+
+- [Li–Stephens emission probability](emit.md)
+- [Li–Stephens copying transition probability](trans.md)
 
 ## Sources
 

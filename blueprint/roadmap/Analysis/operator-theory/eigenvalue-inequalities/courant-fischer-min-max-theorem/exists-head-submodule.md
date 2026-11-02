@@ -14,7 +14,14 @@ quotient at least `λₖ`, and the bound is attained.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rayleigh form of an operator](rayleigh-form.md)
+
+## Proof depends on
+
+- [The k-th eigenvector attains the Rayleigh bound on the head](exists-eigenvector-mem-head.md)
+- [Dimension of the span of the eigenbasis head](finrank-span-head-family.md)
+- [Head of an orthonormal eigenbasis](head-family.md)
+- [Lower bound for the Rayleigh form on the eigenbasis head](rayleigh-form-ge-of-mem-head.md)
 
 ## Sources
 

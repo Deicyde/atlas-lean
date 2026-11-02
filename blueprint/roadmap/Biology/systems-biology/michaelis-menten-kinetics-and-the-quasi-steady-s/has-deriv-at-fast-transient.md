@@ -13,7 +13,13 @@ for `k₁ > 0` and `K_M + s̄ ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mass-action rate of the enzyme–substrate complex](complex-rate.md)
+- [Fast transient of the complex with frozen substrate](fast-transient.md)
+- [Michaelis constant](michaelis-constant.md)
+
+## Proof depends on
+
+- [Quasi-steady-state value of the complex](qss-complex.md)
 
 ## Sources
 

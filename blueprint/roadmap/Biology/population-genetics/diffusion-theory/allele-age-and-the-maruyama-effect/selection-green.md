@@ -25,6 +25,11 @@ fixation (Ewens 2004, Chapter 4; the paper's `Ψ(p, x)` divided by `2N`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.AlleleAge](../../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,10 @@ is in `ℓ²` and the synthesized family is square-summable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Absolute summability of a synthesis series](summable-norm-synthesis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RieszBasisStability](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,15 @@ root-to-`Y` paths, this is the additive tree distance between `X` and `Y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Binary loadings of a drift model](has-binary-loadings.md)
+- [Allele frequency of a population in the drift model](freq.md)
+- [Lineage of a population in the drift model](lineage.md)
+- [f2 statistic](f2.md)
+
+## Proof depends on
+
+- [f2 in the drift model](f2-freq.md)
 
 ## Sources
 

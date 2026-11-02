@@ -13,7 +13,14 @@ in `[0, 1]` (Athreya–Ney 1972, ch. I).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extinction probability of a Galton–Watson process](extinction-prob.md)
+- [Probability generating function](../../characteristic-functions/probability-generating-functions/pgf.md)
+
+## Proof depends on
+
+- [Limit of generating-function iterates is the least fixed point](is-least-i-sup-iterate-pgf-zero.md)
+- [Generation-size law of a Galton–Watson process](law.md)
+- [Probability of extinction by generation n](law-real-zero.md)
 
 ## Sources
 

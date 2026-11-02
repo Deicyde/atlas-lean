@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.det_schnakenbergJacobian
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian of the Schnakenberg kinetics at its steady state](schnakenberg-jacobian.md)
 
 ## Sources
 

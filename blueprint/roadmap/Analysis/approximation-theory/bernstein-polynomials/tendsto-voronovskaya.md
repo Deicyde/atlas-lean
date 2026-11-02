@@ -16,6 +16,11 @@ Bernstein approximations of `f` on `[0, 1]` satisfy
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourth central moment bound for Bernstein weights](fourth-moment-le.md)
+- [First central moment of the Bernstein weights](mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Bernstein.Voronovskaya](../../../../sources/v2/MathlibExt.md)

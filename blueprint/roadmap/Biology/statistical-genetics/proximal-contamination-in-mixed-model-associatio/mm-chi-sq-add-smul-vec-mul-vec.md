@@ -15,7 +15,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.ProximalContamination.mmChiSq_add_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed-model association chi-squared statistic](mm-chi-sq.md)
+
+## Proof depends on
+
+- [Sherman–Morrison applied to the candidate marker](inv-add-smul-vec-mul-vec-mul-vec.md)
 
 ## Sources
 

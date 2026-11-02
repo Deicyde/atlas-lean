@@ -12,7 +12,7 @@ lean: Fintype.card_piFinsetOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite tuples with prescribed default values](pi-finset-on.md)
 
 ## Sources
 

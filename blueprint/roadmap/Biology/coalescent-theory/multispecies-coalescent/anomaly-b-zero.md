@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.anomalyB_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary for three anomalous gene trees](anomaly-b.md)
 
 ## Sources
 

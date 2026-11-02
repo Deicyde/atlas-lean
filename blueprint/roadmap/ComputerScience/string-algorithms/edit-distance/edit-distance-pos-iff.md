@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.editDistance_pos_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit-distance cost counters](edit-distance-cost.md)
+- [Edit-distance result record](edit-distance-result.md)
+- [Edit distance algorithm](edit-distance.md)
+
+## Proof depends on
+
+- [Edit distance vanishes only on equal lists](edit-distance-eq-zero-iff.md)
 
 ## Sources
 

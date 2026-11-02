@@ -16,7 +16,14 @@ quartet `AB | CD` and the third quartet `AD | BC`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fitch parsimony score on a quartet](parsimony-score.md)
+- [Probability of a site pattern on a quartet](pattern-prob.md)
+
+## Proof depends on
+
+- [Expected Fitch parsimony score on a quartet](expected-score.md)
+- [The Felsenstein zone](expected-score-wrong-lt.md)
+- [The Monte Carlo estimator is consistent](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/tendsto-mc-estimate.md)
 
 ## Sources
 

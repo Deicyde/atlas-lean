@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.sum_mul_avgEffe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Average effect of an allele](avg-effect.md)
+
+## Proof depends on
+
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
 
 ## Sources
 

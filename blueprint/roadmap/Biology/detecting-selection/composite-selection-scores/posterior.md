@@ -14,7 +14,7 @@ observed component values when the score functions are normalized densities
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composite selection score model](composite-model.md)
 
 ## Sources
 

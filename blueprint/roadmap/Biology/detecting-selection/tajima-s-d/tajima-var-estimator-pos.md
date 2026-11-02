@@ -13,7 +13,18 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.tajimaVarEstimator_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tajima's constant $e_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-e1.md)
+- [Tajima's constant $e_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-e2.md)
+
+## Proof depends on
+
+- [Tajima's constant $a_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1.md)
+- [Tajima's $a_1$ is a harmonic number](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a1-eq-harmonic.md)
+- [Tajima's constant $a_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-a2.md)
+- [Tajima's constant $c_1$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c1.md)
+- [Positivity of Tajima's $c_1$ for at least four genes](tajima-c1-pos.md)
+- [Tajima's constant $c_2$](../../coalescent-theory/segregating-sites-and-pairwise-differences/tajima-c2.md)
+- [Positivity of Tajima's $c_2$ for at least four genes](tajima-c2-pos.md)
 
 ## Sources
 

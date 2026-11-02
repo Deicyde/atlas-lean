@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.hankel_summable_slice
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice operator](hankel-slice.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice operator has norm at most one](norm-hankel-slice-le.md)
 
 ## Sources
 

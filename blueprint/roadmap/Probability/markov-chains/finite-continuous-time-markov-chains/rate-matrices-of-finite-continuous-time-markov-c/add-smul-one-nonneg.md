@@ -13,7 +13,7 @@ nonnegative entries (Jensen 1953).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](is-rate-matrix.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.StratifiedLDScore.Model.chiSq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of stratified LD-score regression](model.md)
+
+## Proof depends on
+
+- [Normalized marker score in stratified LD-score regression](beta-hat.md)
 
 ## Sources
 

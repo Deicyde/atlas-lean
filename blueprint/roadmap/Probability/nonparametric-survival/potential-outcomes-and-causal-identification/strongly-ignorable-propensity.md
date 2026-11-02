@@ -13,7 +13,13 @@ is strongly ignorable given the covariate `X`, it is strongly ignorable given `e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong ignorability](strongly-ignorable.md)
+- [Propensity score](propensity.md)
+
+## Proof depends on
+
+- [Rosenbaum & Rubin (1983), Theorem 3](comp-of-balancing.md)
+- [Rosenbaum & Rubin (1983), Theorem 1](cond-indep-discrete-propensity.md)
 
 ## Sources
 

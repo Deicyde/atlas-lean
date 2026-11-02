@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcRateMatrix
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jukes–Cantor rate matrix](jc-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.JukesCantor](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.contDiff_kimuraFixation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+
+## Proof depends on
+
+- [Neutral fixation probability equals the initial frequency](../wright-fisher-diffusion/kimura-fixation-neutral.md)
 
 ## Sources
 

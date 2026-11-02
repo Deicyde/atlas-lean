@@ -12,7 +12,12 @@ coloc formula only in using its remaining null mass rather than the cited H0 wei
 
 ## Depends on
 
-This node has no prerequisites.
+- [The five colocalization hypotheses](coloc-hypothesis.md)
+- [Colocalization prior parameters](coloc-prior.md)
+
+## Proof depends on
+
+- [Null mass of the categorical colocalization prior](p0.md)
 
 ## Sources
 

@@ -17,7 +17,17 @@ all cases need not sum to one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
+- [Bayesian–Dirichlet network score](bd-score.md)
+- [Sequential Pólya–Dirichlet product of the data](seq-prob.md)
+
+## Proof depends on
+
+- [Bayesian–Dirichlet family score](bd-family.md)
+- [Count of cases matching a configuration](count.md)
+- [Sequential Pólya–Dirichlet prediction factor](predictive.md)
+- [Rising factorial](rising.md)
+- [Sequential Pólya–Dirichlet product after prior cases](seq-prob-after.md)
 
 ## Sources
 

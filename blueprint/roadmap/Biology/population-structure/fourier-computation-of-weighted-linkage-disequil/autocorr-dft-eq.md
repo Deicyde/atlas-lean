@@ -13,7 +13,12 @@ lean: Cslib.Bioinformatics.PopulationStructure.WeightedLDFFT.autocorrDFT_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Autocorrelation via the discrete Fourier transform](autocorr-dft.md)
+
+## Proof depends on
+
+- [Zero padding of a sequence to $\mathbb{Z}/N\mathbb{Z}$](pad.md)
+- [Convolution theorem for the discrete Fourier transform](../../../Analysis/harmonic-analysis/discrete-fourier-analysis/inv-dft-mul-dft.md)
 
 ## Sources
 

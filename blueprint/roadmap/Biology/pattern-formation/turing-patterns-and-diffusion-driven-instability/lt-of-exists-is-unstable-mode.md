@@ -14,7 +14,12 @@ kinetically stable state forces `d_u < d_v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linearly unstable Fourier mode](is-unstable-mode.md)
+
+## Proof depends on
+
+- [Dispersion polynomial](dispersion-det.md)
+- [Mode instability iff the dispersion polynomial is negative](is-unstable-mode-iff-dispersion-det-neg.md)
 
 ## Sources
 

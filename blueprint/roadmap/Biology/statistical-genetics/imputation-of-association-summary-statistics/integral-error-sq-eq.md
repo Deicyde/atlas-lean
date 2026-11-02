@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.SummaryImputation.Model.integral_er
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second-moment model for summary-statistic imputation](model.md)
+- [Imputed summary statistic](imputed.md)
+
+## Proof depends on
+
+- [Mean squared imputation error](integral-error-sq.md)
+- [Symmetry of the typed-marker moment matrix](sigma-oo-transpose.md)
 
 ## Sources
 

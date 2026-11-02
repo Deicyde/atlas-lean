@@ -14,7 +14,12 @@ hypergeometric: `P(X = k | X + Y = t) = C(n₁, k) C(n₂, t - k) / C(n₁ + n�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergeometric mass function](../../distributions/hypergeometric-distribution/hypergeometric-real.md)
+
+## Proof depends on
+
+- [Sum of independent binomials](measure-real-add-eq-binomial.md)
+- [Hypergeometric mass vanishes above the number of draws](../../distributions/hypergeometric-distribution/hypergeometric-real-of-lt.md)
 
 ## Sources
 

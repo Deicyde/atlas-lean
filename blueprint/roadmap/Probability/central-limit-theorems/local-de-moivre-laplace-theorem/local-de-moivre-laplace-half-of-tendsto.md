@@ -14,7 +14,11 @@ The scaling hypothesis itself implies that `n + kₙ` is a valid success index e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial point mass with success probability one half](binom-prob-half.md)
+
+## Proof depends on
+
+- [Binomial point mass is equivalent to a fixed Gaussian value](binom-prob-half-is-equivalent-fixed-gaus.md)
 
 ## Sources
 

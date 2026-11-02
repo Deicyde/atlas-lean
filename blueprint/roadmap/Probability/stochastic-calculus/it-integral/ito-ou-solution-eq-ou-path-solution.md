@@ -17,7 +17,13 @@ by path (`ProbabilityTheory.ouPathSolution_integral_eq`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+- [Pathwise solution of the Langevin equation](../ornstein-uhlenbeck-process/ou-path-solution.md)
+
+## Proof depends on
+
+- [Wiener's integration by parts](ito-integral-deterministic-eq.md)
+- [Ornstein–Uhlenbeck path solution by integration by parts](ou-path-solution-eq-integration-by-parts.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.BergmanSpace.norm_bergmanEval_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Bergman space](bergman-eval.md)
+
+## Proof depends on
+
+- [Bounded point-evaluation functional on the Bergman space](bergman-eval-clm.md)
+- [Bergman point evaluation is the inner product with the kernel](bergman-eval-clm-apply.md)
+- [Operator norm of Bergman point evaluation](norm-bergman-eval-clm.md)
 
 ## Sources
 

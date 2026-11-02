@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable.norm_fourierCoeffO
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coefficient identity for a `C¹` periodic function](fourier-coeff-on-eq-of-has-deriv-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable](../../../../../sources/v2/MathlibExt.md)

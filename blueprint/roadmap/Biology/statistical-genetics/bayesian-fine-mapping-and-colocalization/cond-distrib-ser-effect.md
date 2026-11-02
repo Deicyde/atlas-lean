@@ -15,7 +15,14 @@ effect is normal with mean `σ₀² / (σ₀² + s²) · β̂` and variance `σ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal least-squares effect estimate](ols-effect.md)
+- [Sampling variance of the least-squares effect estimate](ols-var.md)
+
+## Proof depends on
+
+- [Single-effect regression covariance is positive definite](pos-def-ser-cov.md)
+- [Covariance of the single-effect regression model](ser-cov.md)
+- [Bayes' theorem for a linear-Gaussian observation](../../../Probability/distributions/gaussian-conditioning/cond-distrib-linear-add-of-indep-fun.md)
 
 ## Sources
 

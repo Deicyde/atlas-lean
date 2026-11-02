@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.adjoint_toeplitzSli
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal slice as a bounded operator](toeplitz-slice.md)
+
+## Proof depends on
+
+- [Inner product symmetry of opposite diagonal slices](toeplitz-slice-inner-symm.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ the monomial basis: `polySemigroup t (X ^ n) = dualMomentPoly t n`. It is meanin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup](../../../../../sources/v2/MathlibExt.md)

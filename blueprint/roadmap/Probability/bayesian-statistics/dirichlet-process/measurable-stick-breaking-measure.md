@@ -13,7 +13,13 @@ the proportions and the atoms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking measure](stick-breaking-measure.md)
+
+## Proof depends on
+
+- [Mass of a set under the stick-breaking measure](stick-breaking-measure-apply.md)
+- [Leftover stick in stick breaking](stick-remainder.md)
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

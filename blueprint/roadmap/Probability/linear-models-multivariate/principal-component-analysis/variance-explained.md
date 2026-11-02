@@ -15,6 +15,12 @@ returned when the total variance `tr S` is `0` (constant data).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+- [Unbiased sample covariance matrix](sample-cov.md)
+- [Sample covariance matrix is symmetric](sample-cov-is-hermitian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.PCA](../../../../sources/v2/MathlibExt.md)

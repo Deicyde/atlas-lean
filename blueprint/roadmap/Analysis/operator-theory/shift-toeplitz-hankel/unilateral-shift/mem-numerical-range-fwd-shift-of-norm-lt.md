@@ -13,7 +13,14 @@ shift, witnessed by the geometric vector attached to `u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Numerical range](../../spectral-theory/numerical-range-and-numerical-radius/numerical-range.md)
+
+## Proof depends on
+
+- [Geometric unit vector attached to a point of the disc](geom.md)
+- [Geometric vector of a point in the open disc is a unit vector](norm-geom.md)
+- [Forward shift quadratic form at a geometric vector](quad-form-fwd-geom.md)
 
 ## Sources
 

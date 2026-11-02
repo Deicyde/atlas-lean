@@ -14,7 +14,8 @@ sojourn time `∫ x in 0..1, G(p, x)` is the Kimura–Ohta mean absorption time
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura–Ohta mean absorption time of a neutral allele](../wright-fisher-diffusion/mean-absorption-time.md)
+- [Neutral Wright–Fisher Green's function](neutral-green.md)
 
 ## Sources
 

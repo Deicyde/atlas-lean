@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraFixation_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
 
 ## Sources
 

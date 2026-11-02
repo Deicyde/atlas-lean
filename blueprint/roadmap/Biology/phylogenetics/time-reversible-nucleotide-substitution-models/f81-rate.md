@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.f81Rate
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [General time-reversible (GTR) rate matrix](gtr-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Phylogenetics.SubstitutionModels](../../../../sources/v2/MathlibExt.md)

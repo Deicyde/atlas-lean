@@ -12,7 +12,7 @@ lean: HahnSeries.coeff_ofAddMonoidAlgebra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Embedding of a finite additive monoid algebra into Hahn series](of-add-monoid-algebra.md)
 
 ## Sources
 

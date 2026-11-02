@@ -13,6 +13,12 @@ lean: MathlibExt.Analysis.Normed.Lp.Dual.lpDualEquiv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Canonical duality pairing between $\ell^q$ and $\ell^p$](lp-dual-pairing.md)
+- [Duality pairing is norm-preserving](lp-dual-pairing-norm.md)
+- [Every functional on $\ell^p$ comes from an $\ell^q$ sequence](lp-dual-pairing-surjective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Lp.Dual](../../../../../sources/v2/MathlibExt.md)

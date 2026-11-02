@@ -15,6 +15,10 @@ lean: bernstein.fourth_moment_le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourth central moment of the Bernstein weights](fourth-moment.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Bernstein.Voronovskaya](../../../../sources/v2/MathlibExt.md)

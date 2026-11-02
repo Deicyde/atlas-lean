@@ -13,7 +13,7 @@ orthonormal eigenbasis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Head of an orthonormal eigenbasis](head-family.md)
 
 ## Sources
 

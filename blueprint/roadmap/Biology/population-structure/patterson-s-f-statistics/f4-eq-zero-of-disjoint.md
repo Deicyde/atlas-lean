@@ -13,7 +13,13 @@ with split `AB | CD` the paths `A–B` and `C–D` share no edge, so this hypoth
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](drift-model.md)
+- [Allele frequency of a population in the drift model](freq.md)
+- [f4 statistic](f4.md)
+
+## Proof depends on
+
+- [f4 in the drift model](f4-freq.md)
 
 ## Sources
 

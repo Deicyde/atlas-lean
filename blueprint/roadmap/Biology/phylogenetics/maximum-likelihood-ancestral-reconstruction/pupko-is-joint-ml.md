@@ -14,7 +14,17 @@ weights, no root state `s` and labeling `z` of the non-root nodes has larger joi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative transition weights on a tree](nonneg-weights.md)
+- [Pupko's joint reconstruction](pupko.md)
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Weight of a tree labeling](../felsenstein-s-pruning-algorithm/weight.md)
+
+## Proof depends on
+
+- [Likelihood of Pupko's joint reconstruction](joint-lik-pupko.md)
+- [Max-product pruning recursion](max-prune.md)
+- [`maxPrune` bounds the weight of every labeling](weight-le-max-prune.md)
 
 ## Sources
 

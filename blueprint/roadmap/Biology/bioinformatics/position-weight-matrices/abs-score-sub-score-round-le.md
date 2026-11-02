@@ -13,7 +13,7 @@ every site by at most `w / (2c)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Score of a site under a position weight matrix](score.md)
 
 ## Sources
 

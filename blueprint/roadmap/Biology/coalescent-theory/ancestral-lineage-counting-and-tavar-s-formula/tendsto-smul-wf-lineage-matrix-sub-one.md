@@ -14,7 +14,16 @@ the block-counting generator: `k` lineages coalesce to `k - 1` with probability
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator of Kingman's block-counting process](block-counting-generator.md)
+- [Wright–Fisher transition matrix of the lineage count](wf-lineage-matrix.md)
+
+## Proof depends on
+
+- [Wright–Fisher transition probability of the lineage count](wf-lineage-prob.md)
+- [Probability of no coalescence in one Wright–Fisher generation](../kingman-s-coalescent-and-watterson-s-estimator/no-coal-prob.md)
+- [No-coalescence probability as a falling factorial ratio](../kingman-s-coalescent-and-watterson-s-estimator/no-coal-prob-eq-desc-factorial-div.md)
+- [Kingman's coalescence rate](../kingman-s-coalescent-and-watterson-s-estimator/tendsto-coalescence-rate.md)
+- [No-coalescence probability tends to one](../kingman-s-coalescent-and-watterson-s-estimator/tendsto-no-coal-prob-one.md)
 
 ## Sources
 

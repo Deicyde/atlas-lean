@@ -12,7 +12,8 @@ lean: Octonion.sum_structureConstant_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign of a product of octonion basis elements](basis-sign.md)
+- [Signed structure constant of the eight-square algebra](structure-constant.md)
 
 ## Sources
 

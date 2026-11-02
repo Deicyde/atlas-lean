@@ -12,7 +12,11 @@ of the data only when `Pa` is a DAG (see `predictive`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
+
+## Proof depends on
+
+- [Sequential Pólya–Dirichlet product after prior cases](seq-prob-after.md)
 
 ## Sources
 

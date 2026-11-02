@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Phylogenetics.UnrootedTreeCount.isBinaryHierarchy_filte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary hierarchy on a finite set](is-binary-hierarchy.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.integral_wrightDensity_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright's stationary density of the Wright–Fisher diffusion](wright-density.md)
+
+## Proof depends on
+
+- [Normalization of Wright's density](integral-wright-density.md)
 
 ## Sources
 

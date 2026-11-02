@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.amplified
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-number gain history](gain-history.md)
 
 ## Sources
 

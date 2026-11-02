@@ -17,7 +17,10 @@ way, splitting along any cut.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cluster system displaying a triplet](displays-triplet.md)
+- [Cut in the Aho graph](has-aho-cut.md)
+- [Rooted triplet](triplet.md)
+- [Binary hierarchy on a finite set](../counting-unrooted-binary-phylogenetic-trees/is-binary-hierarchy.md)
 
 ## Sources
 

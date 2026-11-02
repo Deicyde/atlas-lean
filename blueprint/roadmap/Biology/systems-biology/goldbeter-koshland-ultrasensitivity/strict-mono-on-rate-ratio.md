@@ -13,7 +13,7 @@ of the positive increasing functions `W / (W + K₂)` and `1 + K₁ / (1 - W)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate ratio at a given steady-state modified fraction](rate-ratio.md)
 
 ## Sources
 

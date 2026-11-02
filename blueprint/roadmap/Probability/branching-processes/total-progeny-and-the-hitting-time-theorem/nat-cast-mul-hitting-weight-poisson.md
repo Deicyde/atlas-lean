@@ -13,7 +13,13 @@ lean: MathlibExt.Probability.GaltonWatson.natCast_mul_hittingWeight_poisson
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hitting weight of first-passage step sequences](hitting-weight.md)
+
+## Proof depends on
+
+- [Hitting-time theorem](nat-cast-mul-hitting-weight.md)
+- [Walk weight of step sequences ending at zero](walk-weight.md)
+- [Walk weights for Poisson offspring](walk-weight-poisson.md)
 
 ## Sources
 

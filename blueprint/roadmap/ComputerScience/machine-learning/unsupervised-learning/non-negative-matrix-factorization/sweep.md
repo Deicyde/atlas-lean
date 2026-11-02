@@ -13,6 +13,11 @@ lean: Cslib.MachineLearning.NMF.sweep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lee–Seung multiplicative update of H](update-h.md)
+- [Lee–Seung multiplicative update of W](update-w.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Factorization.NMF](../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,24 @@ lean: Cslib.Language.LinearBoundedAutomaton.mem_rule_gen_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](../context-sensitive-grammars/csgrammar.md)
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+- [Cell symbol of the LBA grammar](cell-sym.md)
+- [The grammar of an LBA](lba-grammar.md)
+- [Start symbol of the LBA grammar](start-sym.md)
+
+## Proof depends on
+
+- [Activation rules of the LBA grammar](activate-rules.md)
+- [All rules of the LBA grammar](all-rules.md)
+- [Conversion rules of the LBA grammar](conv-rules.md)
+- [Generation rules of the LBA grammar](gen-rules.md)
+- [Generator symbol of the LBA grammar](gen-sym.md)
+- [Simulation rules for a left move](sim-left-rules.md)
+- [Simulation rules for a right move](sim-right-rules.md)
+- [Simulation rules for a stay move](sim-stay-rules.md)
 
 ## Sources
 

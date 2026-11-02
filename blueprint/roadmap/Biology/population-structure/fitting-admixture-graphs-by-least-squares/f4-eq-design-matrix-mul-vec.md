@@ -13,7 +13,14 @@ the edge lengths: `g = B ℓ` for the design matrix `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+- [qpGraph design matrix of basis f4 statistics](design-matrix.md)
+
+## Proof depends on
+
+- [f4 in the drift model](../patterson-s-f-statistics/f4-freq.md)
 
 ## Sources
 

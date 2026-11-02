@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.meanFitness_le_meanFitness
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a population](mean-fitness.md)
+- [One generation of haploid selection](select.md)
+
+## Proof depends on
+
+- [Variance of fitness](fitness-variance.md)
+- [Positivity of mean fitness on the simplex](mean-fitness-pos.md)
+- [Fisher's fundamental theorem of natural selection](mean-fitness-select-sub.md)
 
 ## Sources
 

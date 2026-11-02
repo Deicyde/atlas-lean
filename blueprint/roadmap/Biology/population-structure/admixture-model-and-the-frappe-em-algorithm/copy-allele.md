@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.copyAllele
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reference-allele indicator for a genotype copy](is-ref.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationStructure.AdmixtureEM](../../../../sources/v2/CSLibExt.md)

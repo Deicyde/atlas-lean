@@ -13,7 +13,17 @@ internal branch, each discordant gene tree is strictly less probable than the ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clusters of a species tree](clusters.md)
+- [The multispecies coalescent](gene-tree-prob.md)
+- [Three-species tree ((0, 1), 2)](triple.md)
+- [Three-gene tree with a given cherry](triple-tree.md)
+
+## Proof depends on
+
+- [Clusters of the three-species tree](clusters-triple.md)
+- [Probability of the discordant three-species gene tree with cherry {0, 2}](gene-tree-prob-triple-cherry-02.md)
+- [Probability of the discordant three-species gene tree with cherry {1, 2}](gene-tree-prob-triple-cherry-12.md)
+- [Three-species concordance](gene-tree-prob-triple-matching.md)
 
 ## Sources
 

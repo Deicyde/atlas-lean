@@ -13,7 +13,9 @@ the child's state `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Min-plus cost semiring](cost.md)
 
 ## Sources
 

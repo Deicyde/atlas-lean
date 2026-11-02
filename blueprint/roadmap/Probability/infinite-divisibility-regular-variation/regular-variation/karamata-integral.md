@@ -20,6 +20,10 @@ Potter's bound as the dominator.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Potter's bound](potter-upper.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.RegularVariationKaramata](../../../../sources/v2/MathlibExt.md)

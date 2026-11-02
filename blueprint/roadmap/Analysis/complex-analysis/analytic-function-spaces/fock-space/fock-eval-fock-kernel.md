@@ -13,7 +13,12 @@ so the pointwise bound is sharp.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+
+## Proof depends on
+
+- [Inner product of two Fock kernels is an exponential](inner-fock-kernel-fock-kernel.md)
 
 ## Sources
 

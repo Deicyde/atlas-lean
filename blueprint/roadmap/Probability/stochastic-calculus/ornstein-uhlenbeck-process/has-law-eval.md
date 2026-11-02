@@ -13,7 +13,12 @@ lean: ProbabilityTheory.IsOrnsteinUhlenbeckFromZero.hasLaw_eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+
+## Proof depends on
+
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
+- [Variance of the Ornstein–Uhlenbeck process started at zero](ou-covariance-self.md)
 
 ## Sources
 

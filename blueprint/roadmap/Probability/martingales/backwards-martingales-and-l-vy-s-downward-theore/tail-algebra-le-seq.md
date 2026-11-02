@@ -12,7 +12,7 @@ lean: MeasureTheory.Filtration.tailAlgebra_le_seq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tail sigma-algebra of a decreasing filtration](tail-algebra.md)
 
 ## Sources
 

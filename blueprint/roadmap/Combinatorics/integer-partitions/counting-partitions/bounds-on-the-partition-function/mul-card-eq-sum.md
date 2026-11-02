@@ -15,6 +15,10 @@ and then by part value and multiplicity threshold.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bijection removing $k$ copies of a part from partitions](card-count-ge.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.Counting](../../../../../sources/v2/MathlibExt.md)

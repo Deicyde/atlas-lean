@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.linStep_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear mutation–selection recursion](lin-step.md)
 
 ## Sources
 

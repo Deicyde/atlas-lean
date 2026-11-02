@@ -13,7 +13,7 @@ the identity, in the trace pairing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial trace over the first factor](partial-trace-left.md)
 
 ## Sources
 

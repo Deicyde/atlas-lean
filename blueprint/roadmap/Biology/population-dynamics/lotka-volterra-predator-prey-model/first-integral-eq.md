@@ -14,7 +14,11 @@ all `t ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First integral of the Lotka–Volterra system](first-integral.md)
+
+## Proof depends on
+
+- [Lotka–Volterra first integral](has-deriv-at-first-integral.md)
 
 ## Sources
 

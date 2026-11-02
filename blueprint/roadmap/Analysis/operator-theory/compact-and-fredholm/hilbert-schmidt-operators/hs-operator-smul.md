@@ -12,7 +12,9 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.hsOperator_smul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Hilbert–Schmidt operator on ℓ²](hs-operator.md)
+- [Scalar multiple of a Hilbert–Schmidt matrix is Hilbert–Schmidt](is-hilbert-schmidt-smul.md)
 
 ## Sources
 

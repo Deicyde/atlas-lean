@@ -13,7 +13,7 @@ with a terminal followed by nonterminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greibach normal form](is-greibach-normal-form.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: ProbabilityTheory.polyaUrnPredictive_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn predictive law](polya-urn-predictive.md)
 
 ## Sources
 

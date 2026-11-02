@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.BloomFilter.falsePositiveProb_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Bloom filter false-positive rate under uniform hashing](false-positive-prob.md)
+- [Bits set by the stored hash values](set-bits.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ lean: Cslib.Bioinformatics.RNA.Zuker.loopEnergy_eq_multiloop
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+- [Branches of a loop closed by a base pair](branches.md)
+- [Energy of the loop closed by a base pair](loop-energy-2.md)
 
 ## Sources
 

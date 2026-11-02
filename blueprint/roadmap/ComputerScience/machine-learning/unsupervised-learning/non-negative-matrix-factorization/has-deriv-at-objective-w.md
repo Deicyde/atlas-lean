@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.NMF.hasDerivAt_objective_W
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient of the NMF objective with respect to W](grad-w.md)
+- [Objective of nonnegative matrix factorization](objective.md)
+
+## Proof depends on
+
+- [Gradient of the NMF objective with respect to H](grad-h.md)
+- [Partial derivative of the NMF objective in an entry of H](has-deriv-at-objective-h.md)
+- [The NMF objective is invariant under transposition](objective-transpose.md)
 
 ## Sources
 

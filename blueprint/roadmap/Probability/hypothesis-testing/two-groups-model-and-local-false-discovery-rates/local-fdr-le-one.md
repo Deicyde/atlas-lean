@@ -12,7 +12,14 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.localFdr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Local false discovery rate](local-fdr.md)
+
+## Proof depends on
+
+- [Mixture density of the two-groups model](mixture-density.md)
+- [Mixture density is nonnegative](mixture-density-nonneg.md)
+- [Null part of the mixture is dominated by the mixture](mul-f-le-mixture-density.md)
 
 ## Sources
 

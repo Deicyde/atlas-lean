@@ -12,7 +12,11 @@ itself is the set of all other taxa, which is also the cluster of its neighbor.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Cluster of a vertex seen from a leaf](cluster.md)
 
 ## Sources
 

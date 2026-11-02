@@ -20,7 +20,11 @@ Intervals are written by start and length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest-neighbor loop energy model](loop-energy.md)
+
+## Proof depends on
+
+- [Complementary base pairing of two positions](../mccaskill-partition-function-for-rna-folding/can-pair.md)
 
 ## Sources
 

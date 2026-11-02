@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.CauchyInterlacing.compression_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression of an operator to a subspace](compression.md)
 
 ## Sources
 

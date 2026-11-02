@@ -14,7 +14,8 @@ background distribution is negative and some score is positive, there is a uniqu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moment generating function of a pair score](pair-mgf.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

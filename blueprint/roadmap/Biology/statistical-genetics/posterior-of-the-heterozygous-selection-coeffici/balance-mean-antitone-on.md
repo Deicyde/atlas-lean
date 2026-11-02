@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.ShetPosterior.balanceMean_antitoneO
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean PTV count at mutation-selection balance](balance-mean.md)
 
 ## Sources
 

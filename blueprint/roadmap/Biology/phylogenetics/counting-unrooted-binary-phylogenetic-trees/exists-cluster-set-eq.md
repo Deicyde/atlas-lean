@@ -14,7 +14,13 @@ hierarchy; each member is joined to the smallest member strictly containing it).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary hierarchy on a finite set](is-binary-hierarchy.md)
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
+- [Cluster set of a tree seen from a leaf](cluster-set.md)
+
+## Proof depends on
+
+- [Cluster of a vertex seen from a leaf](cluster.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.Dynamics.GoldbeterKoshland.michaelisMenten_ratio_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hill response function](hill.md)
+
+## Proof depends on
+
+- [Hill response coefficient](hill-ratio-eq.md)
 
 ## Sources
 

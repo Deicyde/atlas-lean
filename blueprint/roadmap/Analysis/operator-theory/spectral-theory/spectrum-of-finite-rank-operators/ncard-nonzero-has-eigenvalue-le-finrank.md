@@ -15,6 +15,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum.Module.End.ncard
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independent eigenvectors for distinct nonzero eigenvalues](exists-linear-independent-eigenvectors.md)
+- [Eigenvalue finiteness for finite-rank operators](finite-nonzero-has-eigenvalue-of-finite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.FiniteRankSpectrum](../../../../../sources/v2/MathlibExt.md)

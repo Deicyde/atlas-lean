@@ -13,7 +13,7 @@ law `N(0, V)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
 
 ## Sources
 

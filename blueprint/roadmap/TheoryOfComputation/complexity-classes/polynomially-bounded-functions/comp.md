@@ -14,6 +14,10 @@ lean: Cslib.PolynomiallyBounded.comp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Polynomial bounds with equal coefficient and exponent](polynomially-bounded-iff-le-mul-pow-self.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Data.Nat.PolynomialBound](../../../../sources/v2/CSLibExt.md)

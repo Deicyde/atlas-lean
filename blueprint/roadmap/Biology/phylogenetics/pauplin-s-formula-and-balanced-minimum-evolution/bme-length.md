@@ -15,7 +15,12 @@ a node, or the two sides of the root edge, leaves `bmeLength` unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary tree with edge lengths](utree.md)
+
+## Proof depends on
+
+- [Leaf pairs of an unrooted binary tree with path lengths](pairs-2.md)
+- [Pauplin coefficient of a pair of leaves](pauplin-coeff.md)
 
 ## Sources
 

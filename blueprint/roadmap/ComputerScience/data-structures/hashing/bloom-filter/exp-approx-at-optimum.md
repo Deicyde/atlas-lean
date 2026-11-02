@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.BloomFilter.expApprox_at_optimum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential approximation of the Bloom filter false-positive rate](exp-approx.md)
 
 ## Sources
 

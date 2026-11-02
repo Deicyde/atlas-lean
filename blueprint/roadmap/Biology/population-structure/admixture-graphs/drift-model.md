@@ -14,7 +14,13 @@ weights of the graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Edges of an admixture graph](edge.md)
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+
+## Proof depends on
+
+- [Lineage weight of an edge in an admixture graph](weight.md)
 
 ## Sources
 

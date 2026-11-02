@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.sharp_antilipschi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf-sup condition](is-inf-sup.md)
+- [Operator associated to a bounded bilinear form](bilinear-form-sharp.md)
 
 ## Sources
 

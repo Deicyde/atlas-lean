@@ -12,7 +12,11 @@ lean: Cslib.Bioinformatics.PopulationStructure.AdmixtureEM.admixtureLogLik
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parameters of the admixture model](params.md)
+
+## Proof depends on
+
+- [Reference-allele probability in the admixture model](qf.md)
 
 ## Sources
 

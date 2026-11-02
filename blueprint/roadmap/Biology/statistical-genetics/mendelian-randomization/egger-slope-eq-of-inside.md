@@ -15,7 +15,15 @@ mean pleiotropic term `ᾱ_v`. This identity alone does not encode a causal inte
 
 ## Depends on
 
-This node has no prerequisites.
+- [MR-Egger intercept](egger-intercept.md)
+- [MR-Egger slope](egger-slope.md)
+- [Weighted covariance](weighted-cov.md)
+- [Weighted mean](weighted-mean.md)
+
+## Proof depends on
+
+- [MR-Egger intercept under pleiotropy](egger-intercept-eq.md)
+- [MR-Egger slope under pleiotropy](egger-slope-eq.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: Cslib.Language.Derives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](csgrammar.md)
+
+## Proof depends on
+
+- [Derivations in a string rewriting system](../../undecidable-problems/string-rewriting-systems/derives.md)
 
 ## Sources
 

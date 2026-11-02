@@ -15,7 +15,15 @@ then for a standardized genotype matrix and `N ≠ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standardized genotype matrix](../ld-score-regression/is-standardized.md)
+- [Random-effects model of stratified LD-score regression](model.md)
+- [Association chi-squared statistic in stratified LD-score regression](chi-sq.md)
+- [Annotation LD score of a marker](annot-ldscore.md)
+
+## Proof depends on
+
+- [Normalized cross product of genotype markers](../ld-score-regression/ld-corr.md)
+- [Expected chi-squared statistic of a standardized marker](integral-chi-sq-of-standardized.md)
 
 ## Sources
 

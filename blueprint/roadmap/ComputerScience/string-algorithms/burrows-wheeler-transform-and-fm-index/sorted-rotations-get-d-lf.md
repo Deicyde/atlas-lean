@@ -13,7 +13,17 @@ row `r` rotated right by one position, i.e. starting one position earlier in the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Burrows–Wheeler transform](bwt.md)
+- [LF-mapping from the last column](lf.md)
+- [Sorted rotations of a sentinel-terminated text](sorted-rotations.md)
+
+## Proof depends on
+
+- [Count of smaller letters in the FM-index](count-less.md)
+- [Length of the Burrows–Wheeler transform](length-bwt.md)
+- [Rows of the Burrows–Wheeler matrix are sorted](pairwise-sorted-rotations.md)
+- [Rank of a letter in a prefix of the last column](rank.md)
+- [Text with an appended sentinel](with-sentinel.md)
 
 ## Sources
 

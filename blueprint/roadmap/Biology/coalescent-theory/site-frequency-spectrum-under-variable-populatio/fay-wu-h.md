@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.fayWuH
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fay and Wu's $\theta_H$](theta-h.md)
+- [Tajima's $\theta_\pi$ in site frequency spectrum form](theta-pi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

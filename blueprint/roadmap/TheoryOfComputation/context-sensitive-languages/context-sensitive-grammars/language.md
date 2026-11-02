@@ -12,7 +12,11 @@ nonterminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](csgrammar.md)
+
+## Proof depends on
+
+- [Derivation in an unrestricted grammar](derives.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.LambdaCoalescent.totalMer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total merger rate of a Λ-coalescent](total-merger-rate.md)
+
+## Proof depends on
+
+- [Pitman's merger rate](merger-rate.md)
+- [Merger rates of the Bolthausen–Sznitman coalescent](merger-rate-volume.md)
+- [Sum of reciprocals of binomial coefficients $\binom{k}{2}$](../kingman-s-coalescent-and-watterson-s-estimator/sum-inv-choose-two.md)
 
 ## Sources
 

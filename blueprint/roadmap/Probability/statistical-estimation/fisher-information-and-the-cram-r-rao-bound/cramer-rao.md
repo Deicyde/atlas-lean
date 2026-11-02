@@ -17,7 +17,11 @@ needed; see `cramerRao_general`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](fisher-information.md)
+
+## Proof depends on
+
+- [Cramér–Rao inequality](cramer-rao-general.md)
 
 ## Sources
 

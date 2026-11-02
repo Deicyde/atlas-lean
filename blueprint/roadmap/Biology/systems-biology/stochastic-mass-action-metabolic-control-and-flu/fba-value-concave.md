@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.fbaValue_concave
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible fluxes of flux balance analysis](fba-feasible.md)
+- [Optimal value of flux balance analysis](fba-value.md)
+
+## Proof depends on
+
+- [Feasible flux balance problem attains its optimum](exists-fba-value-eq.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: Cslib.OutputReachability.Runs
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Output reachability within time and resource bounds](reaches-output.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Relation.OutputReachability](../../../../sources/v2/CSLibExt.md)

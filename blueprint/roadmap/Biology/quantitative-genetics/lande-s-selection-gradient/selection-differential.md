@@ -15,6 +15,10 @@ selection. If `w̄ = 0` the division returns the junk value `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean fitness of a normally distributed trait](mean-fitness.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.SelectionGradient](../../../../sources/v2/MathlibExt.md)

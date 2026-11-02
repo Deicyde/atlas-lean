@@ -13,7 +13,11 @@ probability `1 / k.choose 2`; a partition with at most one block is absorbing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Partition obtained by merging two blocks](is-merge.md)
 
 ## Sources
 

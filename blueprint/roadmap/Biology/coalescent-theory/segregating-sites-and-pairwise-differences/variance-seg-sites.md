@@ -15,7 +15,16 @@ count with mean `θ L / 2`), then `Var S = θ a₁ + θ² a₂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Total branch length of a coalescent genealogy](../kingman-s-coalescent-and-watterson-s-estimator/total-length.md)
+- [Tajima's constant $a_1$](tajima-a1.md)
+- [Tajima's constant $a_2$](tajima-a2.md)
+
+## Proof depends on
+
+- [Expected total branch length of the coalescent](../kingman-s-coalescent-and-watterson-s-estimator/integral-total-length.md)
+- [Variance of the total branch length](variance-total-length.md)
+- [Tajima's $a_1$ is a harmonic number](tajima-a1-eq-harmonic.md)
 
 ## Sources
 

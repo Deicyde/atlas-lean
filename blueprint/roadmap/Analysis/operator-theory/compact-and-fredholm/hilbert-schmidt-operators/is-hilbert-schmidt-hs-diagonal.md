@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.isHilbertSchmidt_hsDi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Diagonal infinite matrix](hs-diagonal.md)
+
+## Proof depends on
+
+- [Rows of a diagonal matrix are square-summable](summable-hs-diagonal-row.md)
+- [Squared row norm of a diagonal matrix](tsum-hs-diagonal-row.md)
 
 ## Sources
 

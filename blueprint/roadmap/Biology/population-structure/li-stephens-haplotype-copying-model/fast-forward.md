@@ -13,7 +13,12 @@ is the `O(t K)` implementation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site observation in the Li–Stephens model](obs.md)
+
+## Proof depends on
+
+- [Li–Stephens emission probability](emit.md)
+- [One step of the collapsed forward recursion](fast-step.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.LDScoreInflation.betaHatStrat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
+
+## Proof depends on
+
+- [Phenotype with population stratification](pheno-strat.md)
 
 ## Sources
 

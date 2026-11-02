@@ -16,7 +16,12 @@ definite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leading principal submatrix](leading-principal-submatrix.md)
+
+## Proof depends on
+
+- [Positive definiteness of a block matrix via the Schur complement](from-blocks.md)
+- [Full leading principal submatrix is the matrix itself](leading-principal-submatrix-self.md)
 
 ## Sources
 

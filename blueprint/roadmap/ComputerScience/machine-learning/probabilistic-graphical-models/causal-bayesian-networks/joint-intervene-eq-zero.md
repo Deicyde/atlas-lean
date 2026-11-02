@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.joint_intervene_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [The intervention `do(X_k = a)`](intervene.md)
+- [Joint distribution of a Bayesian network](../bayesian-networks/joint-2.md)
+
+## Proof depends on
+
+- [The truncated factorization](joint-intervene.md)
+- [Parent values of a node](pa-val.md)
 
 ## Sources
 

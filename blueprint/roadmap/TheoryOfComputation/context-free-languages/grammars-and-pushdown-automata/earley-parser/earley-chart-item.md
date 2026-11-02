@@ -11,7 +11,11 @@ lean: Cslib.Language.EarleyChartItem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Earley item](earley-item.md)
+
+## Proof depends on
+
+- [Earley chart](earley-chart.md)
 
 ## Sources
 

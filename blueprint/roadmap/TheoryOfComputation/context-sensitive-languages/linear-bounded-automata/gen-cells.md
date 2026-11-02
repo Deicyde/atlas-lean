@@ -13,7 +13,12 @@ cell: the sentential form generation produces. The first cell is tagged
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [Tail generated cells of a word](tail-cells.md)
 
 ## Sources
 

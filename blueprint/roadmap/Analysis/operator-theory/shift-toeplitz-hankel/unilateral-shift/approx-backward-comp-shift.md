@@ -13,7 +13,12 @@ hence also modulo finite-rank operators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Backward shift power is a left inverse of the shift power](backward-clm-pow-comp-shift-clm-pow.md)
 
 ## Sources
 

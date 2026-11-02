@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.schurInfOperator_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur operator on $\ell^2(\mathbb{N})$](schur-inf-operator.md)
 
 ## Sources
 

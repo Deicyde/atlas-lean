@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Relatedness.IBDModel.integrable_all
 
 ## Depends on
 
-This node has no prerequisites.
+- [Malécot's identity-by-descent model](ibdmodel.md)
+
+## Proof depends on
+
+- [Integrability of allele indicators](integrable-allele.md)
 
 ## Sources
 

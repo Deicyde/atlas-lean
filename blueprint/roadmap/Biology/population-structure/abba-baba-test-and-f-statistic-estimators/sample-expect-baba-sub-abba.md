@@ -14,7 +14,16 @@ frequencies in `[0, 1]` in the biological model), `E[BABA - ABBA] = (q₁ - q₂
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unpolarized ABBA site-pattern indicator](abba.md)
+- [Unpolarized BABA site-pattern indicator](baba.md)
+- [Expectation under independent haplotype sampling](sample-expect.md)
+
+## Proof depends on
+
+- [ABBA–BABA site-pattern identity](baba-sub-abba.md)
+- [Additivity of the sampling expectation](sample-expect-add.md)
+- [Sampling expectation of a product factorizes](sample-expect-prod.md)
+- [Sampling expectation commutes with subtraction](sample-expect-sub.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ fraction `#{observations > t} / n = 1 - Fₙ(t)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Kaplan–Meier survival estimate](km-survival.md)
+- [Sample size of censored survival data](size.md)
+
+## Proof depends on
+
+- [Self-consistency](size-mul-km-survival.md)
 
 ## Sources
 

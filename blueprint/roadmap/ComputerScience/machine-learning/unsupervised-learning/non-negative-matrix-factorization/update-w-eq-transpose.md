@@ -12,7 +12,8 @@ lean: Cslib.MachineLearning.NMF.updateW_eq_transpose
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lee–Seung multiplicative update of H](update-h.md)
+- [Lee–Seung multiplicative update of W](update-w.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ its first argument: `L_σ Ψ(·, x) = 0` at every `p < x` (pointwise form of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+- [Sojourn density of the Wright–Fisher diffusion with selection](selection-green.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability at a point](../wright-fisher-diffusion/has-deriv-at-kimura-fixation.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
 
 ## Sources
 

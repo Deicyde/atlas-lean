@@ -14,7 +14,7 @@ Kullback–Leibler divergence), is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Profile log-odds score of a residue](profile-score.md)
 
 ## Sources
 

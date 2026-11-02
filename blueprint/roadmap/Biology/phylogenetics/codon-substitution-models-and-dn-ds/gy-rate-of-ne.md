@@ -12,7 +12,9 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.gyRate_of_ne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Goldman–Yang codon exchangeability](gy-exchange.md)
+- [Goldman–Yang codon rate matrix](gy-rate.md)
 
 ## Sources
 

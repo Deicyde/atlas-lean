@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.noCoalProb_eq_descFactori
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of no coalescence in one Wright–Fisher generation](no-coal-prob.md)
 
 ## Sources
 

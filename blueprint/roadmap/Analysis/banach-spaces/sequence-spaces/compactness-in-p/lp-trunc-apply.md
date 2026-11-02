@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.lpTrunc_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)
+
+## Proof depends on
+
+- [Pointwise action of the finite $\ell^p$ lift](lp-lift-apply.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ same length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary tag of a linear bounded automaton head](lbaboundary.md)
+- [Cell tuples of an LBA configuration from an offset](encode-cells-aux.md)
 
 ## Sources
 

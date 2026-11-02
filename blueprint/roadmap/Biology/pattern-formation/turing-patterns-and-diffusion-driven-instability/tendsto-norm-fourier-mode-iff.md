@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.tendsto_norm_fourierMode_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complex Fourier mode](fourier-mode.md)
+
+## Proof depends on
+
+- [Amplitude of a Fourier mode](norm-fourier-mode-zero.md)
 
 ## Sources
 

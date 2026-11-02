@@ -14,6 +14,11 @@ an arbitrary trajectory `Y` of the intermediate factor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [AND-gate production rate in the logic approximation](and-gate.md)
+- [Variation-of-constants solution of a linear relaxation equation](relaxation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.FeedForwardLoop](../../../../sources/v2/MathlibExt.md)

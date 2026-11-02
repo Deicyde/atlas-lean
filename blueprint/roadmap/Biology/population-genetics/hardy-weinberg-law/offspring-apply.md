@@ -14,7 +14,8 @@ mating the genotype law is the product `p ⊗ p` of the parental allele frequenc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of a random gamete](gamete.md)
+- [Offspring genotype law under random union of gametes](offspring.md)
 
 ## Sources
 

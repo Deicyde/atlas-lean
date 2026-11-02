@@ -13,6 +13,11 @@ lean: MathlibExt.Probability.Statistics.CoxPartialLikelihood.riskVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted mean of a covariate over a risk set](risk-mean.md)
+- [Risk set in survival analysis](risk-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Survival.CoxPartialLikelihood](../../../../sources/v2/MathlibExt.md)

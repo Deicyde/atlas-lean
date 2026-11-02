@@ -14,7 +14,7 @@ positive `f_i` and at least one count, every `θ > 0` has likelihood at most tha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson log-likelihood of counts](poisson-log-lik.md)
 
 ## Sources
 

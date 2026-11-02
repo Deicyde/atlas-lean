@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.AncestralReconstruction.le_argmaxState
 
 ## Depends on
 
-This node has no prerequisites.
+- [State maximizing a function](argmax-state.md)
 
 ## Sources
 

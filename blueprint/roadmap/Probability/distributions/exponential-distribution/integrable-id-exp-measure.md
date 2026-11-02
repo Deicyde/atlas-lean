@@ -14,6 +14,10 @@ lean: ProbabilityTheory.integrable_id_expMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finiteness of all moments of the exponential law](integrable-pow-exp-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ExponentialMoments](../../../../sources/v2/MathlibExt.md)

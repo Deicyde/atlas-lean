@@ -15,6 +15,11 @@ imaginary: its real part vanishes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Centered state vector of an observable](centered.md)
+- [Commutator expectation as the skew part of the centered inner product](commutator-inner.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty](../../../../../sources/v2/MathlibExt.md)

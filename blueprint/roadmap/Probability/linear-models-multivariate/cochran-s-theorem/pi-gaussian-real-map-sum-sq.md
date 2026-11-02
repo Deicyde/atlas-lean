@@ -13,7 +13,14 @@ nonempty finite set `s` has the chi-square law with `|s|` degrees of freedom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Moment generating function determines the gamma law](../../distributions/gamma-distribution/eq-gamma-measure-of-mgf-eq.md)
+- [Exponential moments of the gamma law are finite exactly below the rate](../../distributions/gamma-distribution/integrable-exp-set-gamma-measure.md)
+- [Moment generating function of the chi-square distribution](../../distributions/chi-square-distribution/mgf-chi-square-measure-of-lt.md)
+- [Moment generating function of the square of a standard normal](../../distributions/chi-square-distribution/mgf-sq-std-gaussian.md)
 
 ## Sources
 

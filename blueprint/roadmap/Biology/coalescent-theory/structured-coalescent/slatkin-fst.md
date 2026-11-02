@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.StructuredCoalescent.slatkinFST
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Slatkin's mean total coalescence time](total-time.md)
+- [Mean coalescence time within a deme](within-time.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.StructuredCoalescent](../../../../sources/v2/MathlibExt.md)

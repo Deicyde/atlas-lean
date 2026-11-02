@@ -13,7 +13,11 @@ all real `μ` and `t` (it is negative when `μ * t < 0`, see `pDiff_mem_Ico`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability that the ends of a branch differ](p-diff.md)
+
+## Proof depends on
+
+- [Closed form of the Jukes–Cantor difference probability](p-diff-eq.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.visit_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Probability that a lineage passes through a node](visit.md)
 
 ## Sources
 

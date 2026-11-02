@@ -13,7 +13,13 @@ neighbor `p` toward `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Side of a tree edge containing a vertex](edge-side.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+- [Cluster of a vertex seen from a leaf](../counting-unrooted-binary-phylogenetic-trees/cluster.md)
+
+## Proof depends on
+
+- [Concatenation of paths meeting at one endpoint is a path](../../../GraphTheory/paths-cycles-connectivity/is-path-append-of-is-path.md)
 
 ## Sources
 

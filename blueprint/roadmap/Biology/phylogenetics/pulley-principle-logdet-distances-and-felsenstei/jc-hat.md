@@ -13,6 +13,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinZone.jcHat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Empirical p-distance](p-hat.md)
+- [Jukes–Cantor distance](../jukes-cantor-model/jc-distance.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Phylogenetics.FelsensteinZone](../../../../sources/v2/CSLibExt.md)

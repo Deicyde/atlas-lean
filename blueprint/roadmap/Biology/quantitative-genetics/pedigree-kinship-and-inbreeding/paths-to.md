@@ -11,7 +11,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.pathsTo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+
+## Proof depends on
+
+- [Ancestral paths from an individual](anc-paths.md)
 
 ## Sources
 

@@ -12,7 +12,18 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.genVar_eq_addVa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive genetic variance](add-var.md)
+- [Dominance variance](dom-var.md)
+- [Genetic variance under Hardy–Weinberg proportions](gen-var.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Dominance deviation of a genotype](dom-dev.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+- [Average effects have mean zero](sum-mul-avg-effect.md)
+- [Orthogonality of dominance deviations in the first allele](sum-mul-dom-dev-left.md)
+- [Orthogonality of dominance deviations in the second allele](sum-mul-dom-dev-right.md)
 
 ## Sources
 

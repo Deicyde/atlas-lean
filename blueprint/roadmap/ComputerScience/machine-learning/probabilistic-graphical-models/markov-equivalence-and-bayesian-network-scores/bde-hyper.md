@@ -13,7 +13,7 @@ distribution and this is the prior probability of `c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ configurations extending it (`N_j = ∑_k N_jk`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint configurations of a set of variables](config.md)
+- [Count of cases matching a configuration](count.md)
 
 ## Sources
 

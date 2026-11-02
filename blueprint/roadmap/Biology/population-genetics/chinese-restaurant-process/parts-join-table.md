@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.parts_joinTable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seating a customer at an occupied table](join-table.md)
 
 ## Sources
 

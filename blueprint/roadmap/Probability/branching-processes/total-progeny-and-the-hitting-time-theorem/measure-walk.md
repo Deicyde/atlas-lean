@@ -14,7 +14,7 @@ lean: MathlibExt.Probability.GaltonWatson.measure_walk
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk weight of step sequences ending at zero](walk-weight.md)
 
 ## Sources
 

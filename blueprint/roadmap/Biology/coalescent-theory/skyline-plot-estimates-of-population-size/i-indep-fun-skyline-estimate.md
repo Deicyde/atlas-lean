@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.SkylineTimes.iIndepFun_sk
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coalescent intervals under the classic skyline model](skyline-times.md)
+- [Classic skyline estimate of population size](skyline-estimate.md)
 
 ## Sources
 

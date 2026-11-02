@@ -15,6 +15,10 @@ unbounded in norm.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weakly open sets contain lines through each point](exists-line-subset-of-is-open.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

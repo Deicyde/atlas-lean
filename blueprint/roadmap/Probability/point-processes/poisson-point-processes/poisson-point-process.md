@@ -15,6 +15,10 @@ lean: MathlibExt.Probability.PoissonPointProcess.poissonPointProcess
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Counting measure of a finite tuple of points](counting-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Process.PoissonPointProcess](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ lean: MathlibExt.Probability.PoissonWeakConvergence.charFun_binomialProbMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial law as a probability measure](binomial-prob-measure.md)
+
+## Proof depends on
+
+- [Characteristic function of the real-valued binomial distribution](../de-moivre-laplace-theorem/char-fun-binomial-real.md)
 
 ## Sources
 

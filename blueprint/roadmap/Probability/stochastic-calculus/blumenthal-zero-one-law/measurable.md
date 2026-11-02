@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.BlumenthalZeroOne.IsContinuousIndependentIncrementP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continuous process with independent increments](is-continuous-independent-increment-proc.md)
 
 ## Sources
 

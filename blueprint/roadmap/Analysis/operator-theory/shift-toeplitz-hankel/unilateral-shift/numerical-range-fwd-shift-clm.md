@@ -13,7 +13,13 @@ open unit disc.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Numerical range](../../spectral-theory/numerical-range-and-numerical-radius/numerical-range.md)
+
+## Proof depends on
+
+- [Open unit disc lies in the forward shift's numerical range](mem-numerical-range-fwd-shift-of-norm-lt.md)
+- [Forward shift's numerical range lies in the open unit disc](norm-lt-one-of-mem-numerical-range-fwd-s.md)
 
 ## Sources
 

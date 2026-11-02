@@ -12,7 +12,11 @@ lean: ProbabilityTheory.measurableSet_tiePartition_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tie partition of a sequence of draws](tie-partition.md)
+
+## Proof depends on
+
+- [Characterization of the tie partition](tie-partition-eq-iff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.Compatible.symm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compatible splits](compatible.md)
 
 ## Sources
 

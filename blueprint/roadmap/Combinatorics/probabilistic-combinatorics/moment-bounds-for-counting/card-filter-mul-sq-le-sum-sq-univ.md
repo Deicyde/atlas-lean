@@ -14,6 +14,10 @@ lean: Finset.card_filter_mul_sq_le_sum_sq_univ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chebyshev-type count bound from the sum of squares](card-filter-mul-sq-le-sum-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Finset.MomentBounds](../../../../sources/v2/MathlibExt.md)

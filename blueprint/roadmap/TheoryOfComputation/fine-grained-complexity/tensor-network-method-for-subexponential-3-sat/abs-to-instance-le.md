@@ -13,7 +13,13 @@ lean: TensorNetwork.Factored.abs_toInstance_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](integer-valued-factored-tensor-networks/factored.md)
+- [Shaped tensor network with bounded entries](integer-valued-factored-tensor-networks/sized.md)
+- [Complete-graph instance of a factored network](equivalent-presentations-of-finite-tensor-networ/to-instance.md)
+
+## Proof depends on
+
+- [Factored tensor network with shape parameter](integer-valued-factored-tensor-networks/shaped.md)
 
 ## Sources
 

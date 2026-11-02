@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.Phylogenetics.TreeCount.PlaneTree.Swap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar rooted binary tree with labeled leaves](plane-tree.md)
 
 ## Sources
 

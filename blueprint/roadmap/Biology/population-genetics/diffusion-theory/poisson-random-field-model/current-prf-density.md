@@ -16,7 +16,15 @@ frequency at `0`, carried through `(0, 1)` to fixation at `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slope constant of Kimura's fixation probability](../wright-fisher-diffusion/kimura-slope.md)
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability at a point](../wright-fisher-diffusion/has-deriv-at-kimura-fixation.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
+- [Neutral fixation probability equals the initial frequency](../wright-fisher-diffusion/kimura-fixation-neutral.md)
+- [Denominator of Kimura's formula is nonzero](../wright-fisher-diffusion/one-sub-exp-ne-zero.md)
 
 ## Sources
 

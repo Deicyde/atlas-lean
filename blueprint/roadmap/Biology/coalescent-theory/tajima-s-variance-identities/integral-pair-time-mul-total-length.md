@@ -17,7 +17,22 @@ be an indicator in the statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Total branch length of a coalescent genealogy](../kingman-s-coalescent-and-watterson-s-estimator/total-length.md)
+- [Probability that a pair lies in separate lineages](pair-separate-prob.md)
+- [Tajima's constant $a_1$](../segregating-sites-and-pairwise-differences/tajima-a1.md)
+
+## Proof depends on
+
+- [Positivity of the number of pairs](../kingman-s-coalescent-and-watterson-s-estimator/choose-two-pos.md)
+- [Integrability of coalescent holding times](../kingman-s-coalescent-and-watterson-s-estimator/integrable-t.md)
+- [Expected coalescent holding time](../kingman-s-coalescent-and-watterson-s-estimator/integral-t.md)
+- [Weighted sum of reciprocals of $\binom{k}{2}$ is twice a harmonic number](../kingman-s-coalescent-and-watterson-s-estimator/sum-mul-inv-choose-two.md)
+- [Sum of pair-separation probabilities over squared pair counts](sum-mul-pair-separate-prob-div-choose-sq.md)
+- [Mean coalescence time of a pair is one](sum-pair-separate-prob-div-choose.md)
+- [Tajima's $a_1$ is a harmonic number](../segregating-sites-and-pairwise-differences/tajima-a1-eq-harmonic.md)
+- [Variance of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/variance-eq-of-exp-measure.md)
+- [Finiteness of all moments of the exponential law](../../../Probability/distributions/exponential-distribution/integrable-pow-exp-measure.md)
 
 ## Sources
 

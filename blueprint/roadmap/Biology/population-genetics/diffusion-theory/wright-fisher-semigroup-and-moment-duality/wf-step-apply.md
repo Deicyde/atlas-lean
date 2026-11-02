@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSt
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources
 

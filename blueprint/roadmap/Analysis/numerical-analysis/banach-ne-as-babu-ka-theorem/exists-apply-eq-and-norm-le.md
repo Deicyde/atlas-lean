@@ -13,7 +13,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.BanachNecasBabuska.exists_apply_eq_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegeneracy in the second variable](is-nondegenerate.md)
+
+## Proof depends on
+
+- [Operator associated to a bounded bilinear form](bilinear-form-sharp.md)
+- [Pointwise inverse bound for the Banach–Nečas–Babuška isomorphism](norm-sharp-equiv-symm-apply-le.md)
+- [Banach–Nečas–Babuška isomorphism](sharp-equiv.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: StatMech.bernoulliProductMeasure_eq_gbernoulliLaw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli bond law on $V$](../../percolation/phase-transition/percolation-on-product-graphs/gbernoulli-law.md)
 
 ## Sources
 

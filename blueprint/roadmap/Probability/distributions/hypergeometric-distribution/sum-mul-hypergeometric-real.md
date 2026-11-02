@@ -12,7 +12,7 @@ lean: ProbabilityTheory.sum_mul_hypergeometricReal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergeometric mass function](hypergeometric-real.md)
 
 ## Sources
 

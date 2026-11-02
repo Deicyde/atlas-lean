@@ -12,7 +12,7 @@ product `y'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
 
 ## Sources
 

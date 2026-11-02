@@ -13,7 +13,7 @@ or equals the true correlation (for `r ^ 2 < 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Variance of the standardized DENTIST difference](dentist-variance.md)
 
 ## Sources
 

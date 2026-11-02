@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.deriv_kimuraFixation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
+- [Slope constant of Kimura's fixation probability](kimura-slope.md)
+
+## Proof depends on
+
+- [Derivative of Kimura's fixation probability at a point](has-deriv-at-kimura-fixation.md)
 
 ## Sources
 

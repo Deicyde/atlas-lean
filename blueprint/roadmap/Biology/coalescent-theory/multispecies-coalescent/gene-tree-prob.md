@@ -18,7 +18,15 @@ matching three-species gene tree gets `1 - (2/3) e < 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary species tree with branch lengths](species-tree.md)
+
+## Proof depends on
+
+- [Unordered pairs of lineages](../ranked-labeled-histories-of-coalescent-trees/lineage-pair.md)
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+- [Random joining](../ranked-labeled-histories-of-coalescent-trees/random-joining.md)
+- [Clusters formed along a ranked history](clades-along.md)
+- [Law of the lineages leaving a species-tree branch](exit-law.md)
 
 ## Sources
 

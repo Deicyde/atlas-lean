@@ -16,6 +16,10 @@ any convex function.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Schur's theorem on diagonals of self-adjoint operators](../schur-diagonal-eigenvalues-doubly-stocha.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.PeierlsKlein](../../../../../sources/v2/MathlibExt.md)

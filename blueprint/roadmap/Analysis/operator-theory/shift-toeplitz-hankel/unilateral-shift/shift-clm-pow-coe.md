@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.shiftCLM_pow_coe
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Forward shift of a sequence](shift-fun.md)
+
+## Proof depends on
+
+- [Coordinates of the unilateral shift](shift-clm-apply.md)
 
 ## Sources
 

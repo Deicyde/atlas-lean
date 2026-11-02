@@ -13,7 +13,7 @@ mean multiplied by the squared state norm. The norm factor is required off the u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized expectation value of an observable](mean-value.md)
 
 ## Sources
 

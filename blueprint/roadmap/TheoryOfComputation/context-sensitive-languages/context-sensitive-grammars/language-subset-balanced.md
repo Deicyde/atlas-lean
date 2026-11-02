@@ -13,7 +13,17 @@ lean: Cslib.Language.language_subset_balanced
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminals of the $a^n b^n c^n$ grammar](abc.md)
+- [Nonterminals of the $a^n b^n c^n$ grammar](abcnt.md)
+- [Balanced sentential form](balanced.md)
+- [Context-sensitive grammar for $a^n b^n c^n$](abc-grammar.md)
+- [Language of an unrestricted grammar](language.md)
+
+## Proof depends on
+
+- [Unrestricted grammar](csgrammar.md)
+- [The initial sentential form is balanced](balanced-initial.md)
+- [Derivations preserve balancedness](derives-balanced.md)
 
 ## Sources
 

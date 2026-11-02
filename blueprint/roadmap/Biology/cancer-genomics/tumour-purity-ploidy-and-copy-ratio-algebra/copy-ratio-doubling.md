@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.copyRatio_doubling
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative copy ratio](copy-ratio.md)
+
+## Proof depends on
+
+- [Ploidy-scaling non-identifiability, copy ratios](copy-ratio-scale.md)
+- [Rescaled purity](scaled-purity.md)
 
 ## Sources
 

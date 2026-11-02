@@ -14,6 +14,11 @@ given the partition `π` of the first `n` customers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seating a customer by a seating choice](seat.md)
+- [Seating choice distribution of a customer](seat-choice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.ChineseRestaurant](../../../../sources/v2/MathlibExt.md)

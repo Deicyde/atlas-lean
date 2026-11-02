@@ -18,7 +18,18 @@ conditional expectation of a non-integrable function is `0`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Random-joining law on block-size lists](random-joining.md)
+- [Total branch length subtending i sample copies](sfs-length.md)
+
+## Proof depends on
+
+- [Integrability of coalescent holding times](../kingman-s-coalescent-and-watterson-s-estimator/integrable-t.md)
+- [Expected coalescent holding time](../kingman-s-coalescent-and-watterson-s-estimator/integral-t.md)
+- [Random joining has finite support and iterates the join step](exists-finset-random-joining.md)
+- [Transition operator of random joining](join-step.md)
+- [Expected number of blocks of size `i`](join-step-iterate-count.md)
+- [Expected block counts weighted by coalescence times sum to $2/i$](sum-block-count-mul-inv-choose-two.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: TensorNetwork.edgeLabelings
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite tuples with prescribed default values](../../../../Combinatorics/elementary-enumeration/functions-with-prescribed-values/pi-finset-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.TensorNetwork.Basic](../../../../../sources/v2/MathlibExt.md)

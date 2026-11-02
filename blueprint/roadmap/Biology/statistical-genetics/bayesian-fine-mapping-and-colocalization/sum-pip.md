@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.sum_pip
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
+- [Posterior inclusion probability](pip.md)
+
+## Proof depends on
+
+- [Positivity of the prior-weighted marginal likelihood](evidence-pos.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ accepting state on an encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFA recognizing end-marker encodings](end-marker-dfa.md)
+- [End-marker encoding of a word](end-marker-encode.md)
+
+## Proof depends on
+
+- [Encoding DFA stays in its start state on left letters](end-marker-dfa-eval-from-inl.md)
 
 ## Sources
 

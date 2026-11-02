@@ -15,6 +15,10 @@ lean: StatMech.Percolation.theta_ge_meanField_of_tildePc_lt
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Open connection within a set is monotone in the set](../../phase-transition/percolation-probability-and-critical-point/connected-within-mono-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.DifferentialInequality](../../../../../sources/v2/MathlibExt.md)

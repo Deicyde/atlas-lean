@@ -14,7 +14,9 @@ times the selection differential, `R = h² S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear parent–offspring regression model](model.md)
+- [Response to selection](response.md)
+- [Selection differential](selection-differential.md)
 
 ## Sources
 

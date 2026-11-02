@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.SelectionGradient.hasGradientAt_mea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a multivariate normal trait](mean-fitness-mv.md)
+
+## Proof depends on
+
+- [The affine change of variables as a measurable equivalence](../../../Probability/distributions/multivariate-normal-distribution/affine-equiv.md)
+- [Lebesgue measure under an invertible affine map](../../../Probability/distributions/multivariate-normal-distribution/map-affine-equiv-volume.md)
+- [Multivariate Gaussian density function](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md)
+- [The multivariate Gaussian density](../../../Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-eq-with-density.md)
+- [Quadratic form of the inverse square root](../../../Probability/distributions/multivariate-normal-distribution/norm-sq-sqrt-inv-apply.md)
 
 ## Sources
 

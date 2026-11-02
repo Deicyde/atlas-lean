@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.select_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [One generation of haploid selection](select.md)
+
+## Proof depends on
+
+- [Mean fitness of a population](mean-fitness.md)
+- [Positivity of mean fitness on the simplex](mean-fitness-pos.md)
 
 ## Sources
 

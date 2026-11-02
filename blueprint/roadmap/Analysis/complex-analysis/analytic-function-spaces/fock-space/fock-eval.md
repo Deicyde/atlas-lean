@@ -14,6 +14,10 @@ Fock kernel.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.FockSpace](../../../../../sources/v2/MathlibExt.md)

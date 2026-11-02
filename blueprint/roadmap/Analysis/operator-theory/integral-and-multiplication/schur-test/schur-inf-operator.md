@@ -13,6 +13,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.schurInfOperator
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm bound for the Schur linear map](norm-schur-inf-lin-map-le.md)
+- [Schur operator of an infinite matrix as a linear map](schur-inf-lin-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite](../../../../../sources/v2/MathlibExt.md)

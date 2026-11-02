@@ -14,7 +14,8 @@ objective value is `K̂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix supported on the edges of a graph](is-supported-on.md)
+- [Gaussian log-likelihood of a precision matrix](gauss-log-lik.md)
 
 ## Sources
 

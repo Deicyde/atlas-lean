@@ -14,6 +14,10 @@ alleles under the Ewens sampling formula.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ewens sampling formula](../ewens-sampling-formula-and-hoppe-s-urn/ewens-prob.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.EwensWatterson](../../../../sources/v2/MathlibExt.md)

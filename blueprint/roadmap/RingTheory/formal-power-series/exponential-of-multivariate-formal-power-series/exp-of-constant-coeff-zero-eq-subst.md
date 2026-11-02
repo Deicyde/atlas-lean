@@ -12,7 +12,7 @@ lean: MvPowerSeries.expOfConstantCoeffZero_eq_subst
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
 
 ## Sources
 

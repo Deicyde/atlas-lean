@@ -13,7 +13,11 @@ means `E_i`, the log-probability of the observed counts `k` is `poissonLogLik E 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson log-likelihood of counts](poisson-log-lik.md)
+
+## Proof depends on
+
+- [Probability of a count vector under independent Poisson laws](pi-poisson-measure-real-singleton.md)
 
 ## Sources
 

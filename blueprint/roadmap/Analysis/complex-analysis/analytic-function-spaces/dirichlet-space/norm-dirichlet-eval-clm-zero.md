@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.norm_dirichletEvalCLM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation as a bounded functional on the Dirichlet space](dirichlet-eval-clm.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+- [Norm of Dirichlet-space point evaluation equals the kernel norm](norm-dirichlet-eval-clm.md)
+- [Norm of the Dirichlet kernel at the origin](norm-dirichlet-kernel-zero.md)
 
 ## Sources
 

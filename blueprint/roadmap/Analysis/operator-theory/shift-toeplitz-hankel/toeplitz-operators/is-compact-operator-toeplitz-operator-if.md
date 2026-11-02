@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.isCompactOperator_t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz operator with absolutely summable symbol](toeplitz-operator.md)
+
+## Proof depends on
+
+- [Toeplitz operators with nonzero symbol are not compact](not-is-compact-operator-toeplitz-operato.md)
+- [Toeplitz operator of the zero symbol](toeplitz-operator-zero.md)
 
 ## Sources
 

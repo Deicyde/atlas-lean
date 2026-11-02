@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.ChineseRestaurant.sum_seatWeight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seating probabilities in the Chinese restaurant process](seat-weight.md)
 
 ## Sources
 

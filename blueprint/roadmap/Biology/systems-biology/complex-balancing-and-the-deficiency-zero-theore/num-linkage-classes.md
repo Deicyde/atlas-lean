@@ -11,7 +11,12 @@ lean: MathlibExt.Biology.Dynamics.ComplexBalanced.ReactionNetwork.numLinkageClas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+
+## Proof depends on
+
+- [Complexes of a chemical reaction network](complexes.md)
+- [Linkage graph of a reaction network](linkage-graph.md)
 
 ## Sources
 

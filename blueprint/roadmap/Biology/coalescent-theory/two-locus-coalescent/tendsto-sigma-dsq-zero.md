@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.tendsto_sigmaDSq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary standardized linkage disequilibrium $\sigma_d^2$](sigma-dsq.md)
+
+## Proof depends on
+
+- [Ohta–Kimura formula for $\sigma_d^2$ without mutation](sigma-dsq-zero.md)
 
 ## Sources
 

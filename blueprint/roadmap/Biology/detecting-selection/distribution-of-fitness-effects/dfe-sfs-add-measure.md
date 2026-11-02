@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.dfeSFS_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site-frequency spectrum under a distribution of fitness effects](dfe-sfs.md)
+
+## Proof depends on
+
+- [Expected site frequency spectrum under the Poisson random field](../../population-genetics/diffusion-theory/poisson-random-field-model/expected-sfs.md)
+- [Integrability of the expected spectrum in the selection coefficient](integrable-expected-sfs.md)
 
 ## Sources
 

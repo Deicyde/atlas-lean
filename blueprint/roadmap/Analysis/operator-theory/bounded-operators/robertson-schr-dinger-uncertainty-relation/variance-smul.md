@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty.variance_smul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized variance of an observable](variance.md)
+
+## Proof depends on
+
+- [Centered state vector of an observable](centered.md)
+- [Normalized expectation value of an observable](mean-value.md)
 
 ## Sources
 

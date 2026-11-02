@@ -15,6 +15,10 @@ not test `∅` itself; the two agree whenever `g ∅ < τ`, the case the paper c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Backward-selection chain of remaining feature sets](chain.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.SufficientInputSubsets](../../../../../sources/v2/CSLibExt.md)

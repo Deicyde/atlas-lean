@@ -12,7 +12,7 @@ lean: Cslib.Language.KleeneConverse.mem_matches'_letters
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letters occurring in a regular expression](regex-letters.md)
 
 ## Sources
 

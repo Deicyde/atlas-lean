@@ -12,7 +12,15 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.serPosterior_evidence_p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
+- [Marginal least-squares effect estimate](ols-effect.md)
+- [Sampling variance of the least-squares effect estimate](ols-var.md)
+- [Wakefield's approximate Bayes factor](wakefield-abf.md)
+
+## Proof depends on
+
+- [Positivity of the prior-weighted marginal likelihood](evidence-pos.md)
+- [Positivity of Wakefield's approximate Bayes factor](wakefield-abf-pos.md)
 
 ## Sources
 

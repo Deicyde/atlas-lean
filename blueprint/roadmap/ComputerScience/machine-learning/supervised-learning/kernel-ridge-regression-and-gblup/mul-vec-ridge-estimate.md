@@ -13,7 +13,11 @@ lean: Cslib.MachineLearning.GBLUP.mulVec_ridgeEstimate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge estimate](../least-squares-ridge-and-lasso-regression/ridge-estimate.md)
+
+## Proof depends on
+
+- [Ridge marker effects are back-solved from GBLUP](ridge-estimate-eq.md)
 
 ## Sources
 

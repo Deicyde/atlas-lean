@@ -14,7 +14,16 @@ or when `t` is a single leaf whose observed state is not `s`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeling of the non-root nodes of a tree](../felsenstein-s-pruning-algorithm/labeling.md)
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Labeling agrees with the observed leaf states](agrees.md)
+- [Min-plus cost semiring](cost.md)
+- [Total substitution cost of a labeling](edge-cost.md)
+- [Sankoff's algorithm](sankoff.md)
+
+## Proof depends on
+
+- [Sankoff's algorithm computes the small-parsimony cost](sankoff-eq-inf.md)
 
 ## Sources
 

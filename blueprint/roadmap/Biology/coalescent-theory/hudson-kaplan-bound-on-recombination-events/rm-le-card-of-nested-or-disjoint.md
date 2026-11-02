@@ -15,7 +15,15 @@ one tree under the infinite-sites model). Then there are at least `R_m` breakpoi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Breakpoint separating two sites](separates.md)
+- [Haplotypes carrying an allele at a site](carriers.md)
+- [Hudson and Kaplan's `R_m`](rm.md)
+
+## Proof depends on
+
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Characterization of site pairs failing the four-gamete test](not-four-gametes-iff.md)
+- [`R_m` is a lower bound](rm-le-card-of-is-breakpoint-set.md)
 
 ## Sources
 

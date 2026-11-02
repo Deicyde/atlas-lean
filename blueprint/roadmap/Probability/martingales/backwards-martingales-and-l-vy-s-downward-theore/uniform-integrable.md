@@ -13,7 +13,7 @@ The ambient bounds suffice; representative adaptedness and antitonicity are unne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backwards martingale](is-backwards-martingale.md)
 
 ## Sources
 

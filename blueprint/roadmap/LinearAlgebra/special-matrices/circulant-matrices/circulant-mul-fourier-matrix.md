@@ -12,7 +12,13 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.circulant_mul_fourierMat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier eigenvalue of a circulant matrix](circulant-eigenvalue.md)
+- [Fourier matrix](fourier-matrix.md)
+
+## Proof depends on
+
+- [Fourier vectors are eigenvectors of circulant matrices](circulant-mul-vec-fourier-vec.md)
+- [Fourier vector on the integers modulo n](fourier-vec.md)
 
 ## Sources
 

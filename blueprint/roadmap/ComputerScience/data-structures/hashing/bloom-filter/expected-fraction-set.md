@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.BloomFilter.expected_fraction_set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits set by the stored hash values](set-bits.md)
+
+## Proof depends on
+
+- [Number of hash outcomes leaving a given bit unset](card-unset.md)
 
 ## Sources
 

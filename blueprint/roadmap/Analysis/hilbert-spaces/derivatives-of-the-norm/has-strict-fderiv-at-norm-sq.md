@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.NormDerivative.hasStrictFDerivAt_nor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real part of the inner product as a real-linear functional](re-inner-sl.md)
 
 ## Sources
 

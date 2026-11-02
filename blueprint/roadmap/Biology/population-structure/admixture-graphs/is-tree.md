@@ -11,7 +11,7 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.IsTree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
 
 ## Sources
 

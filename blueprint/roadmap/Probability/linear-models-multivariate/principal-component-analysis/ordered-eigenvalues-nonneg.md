@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.Statistics.PCA.orderedEigenvalues_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+
+## Proof depends on
+
+- [Ordered eigenbasis vectors are eigenvectors](mul-vec-ordered-eigenbasis.md)
+- [Ordered orthonormal eigenbasis of a symmetric matrix](ordered-eigenbasis.md)
 
 ## Sources
 

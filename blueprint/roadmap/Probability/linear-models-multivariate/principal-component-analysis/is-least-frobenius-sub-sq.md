@@ -16,6 +16,13 @@ is `∑_{k ≤ i < n} σᵢ²`, attained by `truncSVD A k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frobenius error of the truncated SVD](frobenius-sub-trunc-svd-sq.md)
+- [Rank of the truncated SVD is at most k](rank-trunc-svd-le.md)
+- [Eckart–Young (Frobenius norm)](sum-sq-singular-values-le-frobenius-sub.md)
+- [Truncated singular value decomposition](trunc-svd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.PCA](../../../../sources/v2/MathlibExt.md)

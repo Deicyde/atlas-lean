@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.randomJoining
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unordered pairs of lineages](../ranked-labeled-histories-of-coalescent-trees/lineage-pair.md)
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+- [Random joining](../ranked-labeled-histories-of-coalescent-trees/random-joining.md)
+- [Clade of a ranked history](is-clade.md)
+
+## Proof depends on
+
+- [Clade probability](random-joining-is-clade.md)
 
 ## Sources
 

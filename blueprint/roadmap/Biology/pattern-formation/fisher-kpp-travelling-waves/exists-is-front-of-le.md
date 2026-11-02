@@ -12,7 +12,7 @@ strictly decreasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traveling front of the Fisher–KPP equation](is-front.md)
 
 ## Sources
 

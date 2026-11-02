@@ -15,6 +15,10 @@ Noetherian local ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Completion of a Noetherian local ring is faithfully flat](faithfully-flat-adic-completion-maximal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdicCompletion.LocalRing](../../../../../sources/v2/MathlibExt.md)

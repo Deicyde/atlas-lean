@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DouglasLemma.douglasFactor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuity of the Douglas factor via the closed graph theorem](continuous-douglas-factor-lin.md)
+- [Douglas factor as a linear map](douglas-factor-lin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DouglasLemma](../../../../../sources/v2/MathlibExt.md)

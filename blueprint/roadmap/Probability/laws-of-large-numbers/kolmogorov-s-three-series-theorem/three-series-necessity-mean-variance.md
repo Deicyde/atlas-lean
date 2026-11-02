@@ -20,7 +20,18 @@ sums holds. Series (1) uses the public theorem from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](truncated-rv.md)
+
+## Proof depends on
+
+- [Three-series necessity, second half of the variance step](summable-variance-of-bounded-ae-tendsto.md)
+- [Mean step of three-series necessity](tendsto-sum-integral-of-bounded-ae-tends.md)
+- [Truncation is bounded by a nonnegative cutoff](abs-truncated-rv-le.md)
+- [Truncations eventually agree with the variables](ae-eventually-truncation-eq.md)
+- [Eventually equal series inherit almost-everywhere convergence](ae-tendsto-of-ae-eventually-eq-and-ae-te.md)
+- [Truncation preserves independence](i-indep-fun-truncated-rv.md)
+- [Truncation preserves measurability](measurable-truncated-rv.md)
+- [Kolmogorov three-series theorem, necessity, first series](summable-tail-prob-of-ae-tendsto.md)
 
 ## Sources
 

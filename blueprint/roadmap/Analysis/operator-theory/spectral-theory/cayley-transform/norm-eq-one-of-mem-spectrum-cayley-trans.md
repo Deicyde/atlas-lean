@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.CayleyTransform.ContinuousLinearMap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Cayley transform of a self-adjoint operator is unitary](mem-unitary-cayley-transform.md)
 
 ## Sources
 

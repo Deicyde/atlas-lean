@@ -15,6 +15,10 @@ at most `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Krull dimension does not increase along faithfully flat maps](ring-krull-dim-le-of-faithfully-flat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.SmoothKrullDim](../../../../sources/v2/MathlibExt.md)

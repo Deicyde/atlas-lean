@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.integra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
+
+## Proof depends on
+
+- [Mean of the gamma law](../../../Probability/distributions/gamma-distribution/integral-id-gamma-measure.md)
 
 ## Sources
 

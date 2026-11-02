@@ -12,7 +12,7 @@ increments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Head move of a linear bounded automaton](lbamove.md)
 
 ## Sources
 

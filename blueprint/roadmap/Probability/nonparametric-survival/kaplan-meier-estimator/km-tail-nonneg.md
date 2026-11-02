@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.kmTail_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Kaplan–Meier mass after the last observation](km-tail.md)
+
+## Proof depends on
+
+- [Kaplan–Meier factor](km-factor.md)
+- [Kaplan–Meier factor is nonnegative](km-factor-nonneg.md)
 
 ## Sources
 

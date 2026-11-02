@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.fiberSup_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+- [Supremum of the fiber counts of a map](fiber-sup.md)
+
+## Proof depends on
+
+- [Fiber supremum as a supremum of cardinalities](fiber-sup-eq-i-sup.md)
 
 ## Sources
 

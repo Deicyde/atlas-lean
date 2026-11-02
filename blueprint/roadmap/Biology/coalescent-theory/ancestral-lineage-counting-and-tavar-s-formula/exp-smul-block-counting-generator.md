@@ -13,7 +13,15 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.exp_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eigenvalues of Kingman's block-counting generator](block-counting-eigenvalue.md)
+- [Generator of Kingman's block-counting process](block-counting-generator.md)
+- [Left eigenvectors of Kingman's block-counting generator](block-counting-left-eigen.md)
+- [Right eigenvectors of Kingman's block-counting generator](block-counting-right-eigen.md)
+
+## Proof depends on
+
+- [Right eigenvector equation for the block-counting generator](block-counting-generator-mul-right-eigen.md)
+- [Left and right eigenvector matrices are mutually inverse](block-counting-left-eigen-mul-right-eige.md)
 
 ## Sources
 

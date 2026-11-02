@@ -12,7 +12,7 @@ lean: MvPowerSeries.coeff_linearForm_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal linear form in multivariate power series](linear-form.md)
 
 ## Sources
 

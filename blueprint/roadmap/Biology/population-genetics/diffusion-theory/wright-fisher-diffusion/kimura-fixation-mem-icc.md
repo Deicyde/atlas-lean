@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraFixation_mem_Icc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimura's fixation probability](kimura-fixation.md)
+
+## Proof depends on
+
+- [Kimura's fixation probability is at most one](kimura-fixation-le-one.md)
+- [Nonnegativity of Kimura's fixation probability](kimura-fixation-nonneg.md)
 
 ## Sources
 

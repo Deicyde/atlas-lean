@@ -13,7 +13,12 @@ the log ratio of the two ages, with the opposite sign to `ihs`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One-sided integrated haplotype homozygosity](../selective-sweeps/ihh.md)
+- [Cross-population extended haplotype homozygosity (XP-EHH)](xpehh.md)
+
+## Proof depends on
+
+- [One-sided iHH in the star-genealogy model](../selective-sweeps/ihh-eq.md)
 
 ## Sources
 

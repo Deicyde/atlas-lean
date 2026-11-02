@@ -14,7 +14,7 @@ normal equations equals `ℓ̂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized least-squares qpGraph score S1](score-s1.md)
 
 ## Sources
 

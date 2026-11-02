@@ -12,7 +12,11 @@ the first and last node may coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed multigraph](multigraph.md)
+
+## Proof depends on
+
+- [Walk in a directed multigraph](is-walk.md)
 
 ## Sources
 

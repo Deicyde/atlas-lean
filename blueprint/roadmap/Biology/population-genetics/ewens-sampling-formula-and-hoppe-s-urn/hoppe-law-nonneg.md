@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Ewens.hoppeLaw_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of the allelic partition from Hoppe's urn](hoppe-law.md)
+
+## Proof depends on
+
+- [Ewens sampling formula](ewens-prob.md)
+- [Nonnegativity of the Ewens sampling formula](ewens-prob-nonneg.md)
+- [Hoppe's urn generates the Ewens sampling formula](hoppe-law-eq-ewens-prob.md)
 
 ## Sources
 

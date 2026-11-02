@@ -13,7 +13,11 @@ intersection hypothesis `H_{H0}` rejects.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed testing procedure](closed-rejections.md)
+
+## Proof depends on
+
+- [Membership in the closed rejection set](mem-closed-rejections.md)
 
 ## Sources
 

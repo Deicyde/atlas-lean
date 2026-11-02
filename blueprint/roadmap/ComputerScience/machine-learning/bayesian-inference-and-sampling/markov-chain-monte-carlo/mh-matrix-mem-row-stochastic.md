@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.Sampling.mhMatrix_mem_rowStochastic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metropolis–Hastings transition matrix](mh-matrix.md)
+
+## Proof depends on
+
+- [Metropolis–Hastings step](mh-step.md)
+- [Probabilities of a finite law sum to one](sum-to-real-pmf.md)
 
 ## Sources
 

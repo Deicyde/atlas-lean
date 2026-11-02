@@ -13,7 +13,11 @@ to background, than the mutant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PSIC score difference of a substitution](psic-difference.md)
+
+## Proof depends on
+
+- [PSIC difference as a log ratio of likelihood ratios](psic-difference-eq-log.md)
 
 ## Sources
 

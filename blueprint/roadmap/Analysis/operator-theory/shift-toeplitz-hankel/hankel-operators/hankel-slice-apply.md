@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.hankelSlice_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti-diagonal slice operator](hankel-slice.md)
+- [Anti-diagonal slice of a sequence](hankel-slice-fun.md)
 
 ## Sources
 

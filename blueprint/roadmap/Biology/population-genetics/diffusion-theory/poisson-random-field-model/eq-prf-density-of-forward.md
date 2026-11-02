@@ -16,7 +16,13 @@ Then `φ` is the Sawyer–Hartl density on `(0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sawyer–Hartl Poisson random field density](prf-density.md)
+
+## Proof depends on
+
+- [Uniqueness of the fixation probability (Kimura 1962)](../wright-fisher-diffusion/eq-kimura-fixation-of-generator-eq-zero.md)
+- [Backward generator of the Wright–Fisher diffusion with selection](../wright-fisher-diffusion/generator.md)
+- [Kimura's fixation probability](../wright-fisher-diffusion/kimura-fixation.md)
 
 ## Sources
 

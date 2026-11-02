@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.card_sortedPrefix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix of variants in a given order](sorted-prefix.md)
 
 ## Sources
 

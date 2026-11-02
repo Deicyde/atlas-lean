@@ -15,7 +15,7 @@ residual `e` is the residual of that regression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residualized vector after adjustment for a subspace](adjusted.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ lintegral fields supply the Bochner hypotheses internally, including when
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic rationals](dyadic-rationals.md)
+
+## Proof depends on
+
+- [Almost sure Hölder bound on the dyadic rationals](kolmogorov-ae-holder-on-dyadics.md)
 
 ## Sources
 

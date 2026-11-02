@@ -13,7 +13,16 @@ complex-balanced equilibrium, then every positive equilibrium is complex balance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Complex-balanced concentrations](is-complex-balanced.md)
+- [Mass-action vector field](mass-action-field.md)
+
+## Proof depends on
+
+- [Rate of change of the pseudo-Helmholtz function](helmholtz-rate.md)
+- [Equality in the Horn–Jackson inequality](helmholtz-rate-eq-zero-iff.md)
+- [Mass-action reaction rate](rate.md)
+- [Complex balance exchanges source and product sums](sum-rate-mul-prod-eq.md)
 
 ## Sources
 

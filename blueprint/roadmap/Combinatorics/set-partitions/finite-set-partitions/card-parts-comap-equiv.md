@@ -12,7 +12,11 @@ lean: Finpartition.card_parts_comap_equiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](comap.md)
+
+## Proof depends on
+
+- [Blocks of a partition pulled back along an equivalence](parts-comap-equiv.md)
 
 ## Sources
 

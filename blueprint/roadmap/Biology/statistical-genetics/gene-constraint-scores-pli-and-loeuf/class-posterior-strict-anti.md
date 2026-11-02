@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.GeneConstraint.classPosterior_stric
 
 ## Depends on
 
-This node has no prerequisites.
+- [Posterior class probability in the Poisson mixture](class-posterior.md)
+
+## Proof depends on
+
+- [Poisson likelihood of an observed count](poisson-lik.md)
+- [Positivity of the Poisson likelihood](poisson-lik-pos.md)
+- [Recursion for the Poisson likelihood](poisson-lik-succ.md)
 
 ## Sources
 

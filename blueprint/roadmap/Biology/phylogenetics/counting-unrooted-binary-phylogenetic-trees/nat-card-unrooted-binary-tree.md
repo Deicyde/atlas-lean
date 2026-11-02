@@ -14,7 +14,12 @@ isomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
+- [Isomorphism of unrooted binary phylogenetic trees](iso.md)
+
+## Proof depends on
+
+- [Number of unrooted binary phylogenetic trees](nat-card-unrooted-binary-tree-of-two-le.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ This includes the full-iterate, exact-inverse special case by taking
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercyclic operator](is-hypercyclic.md)
 
 ## Sources
 

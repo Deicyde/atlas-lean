@@ -13,6 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.toeplitzSliceLinMap
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal slice function of a Toeplitz matrix](toeplitz-slice-fun.md)
+- [Diagonal slices preserve square-summability](toeplitz-mem-p-slice-fun.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator](../../../../../sources/v2/MathlibExt.md)

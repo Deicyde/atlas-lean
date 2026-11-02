@@ -14,6 +14,10 @@ lean: StatMech.RSW.Box.measurableSet_horizontalCrossingEvent
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Measurability of connection inside a set](measurable-set-connected-within.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Percolation.RSW.Defs](../../../../../../sources/v2/MathlibExt.md)

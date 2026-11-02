@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.finrank_topAxesSpan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Span of the top axes of variation](top-axes-span.md)
+
+## Proof depends on
+
+- [Axes of variation](axes.md)
 
 ## Sources
 

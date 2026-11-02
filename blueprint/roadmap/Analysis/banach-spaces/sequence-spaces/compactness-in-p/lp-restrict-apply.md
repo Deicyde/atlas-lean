@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.lpRestrict_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restriction of an $\ell^p$ sequence to its first coordinates](lp-restrict.md)
 
 ## Sources
 

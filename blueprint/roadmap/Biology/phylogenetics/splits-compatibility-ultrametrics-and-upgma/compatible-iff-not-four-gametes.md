@@ -13,7 +13,9 @@ show all four gametes (Buneman 1971; Estabrook, Johnson & McMorris 1976).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compatible splits](compatible.md)
+- [Four-gamete condition for binary characters](four-gametes.md)
+- [Split of a binary character](char-split.md)
 
 ## Sources
 

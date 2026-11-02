@@ -12,7 +12,13 @@ lean: MvPowerSeries.expOperator_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal exponential of a coefficient operator](exp-operator.md)
+
+## Proof depends on
+
+- [Coefficient operator on multivariate power series](coefficient-operator.md)
+- [Product rule for coefficient operators](coefficient-operator-mul.md)
+- [The operator exponential fixes series annihilated by the operator](exp-operator-of-zero.md)
 
 ## Sources
 

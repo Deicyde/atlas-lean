@@ -12,7 +12,7 @@ lean: StatMech.SLE.loewnerUnswallowedDomain_eq_setOf_hasLoewnerForwardExtension
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forward extension of a Loewner trajectory](../basic-objects-of-the-chordal-loewner-equation/has-loewner-forward-extension.md)
 
 ## Sources
 

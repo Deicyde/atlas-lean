@@ -14,7 +14,11 @@ master equilibrium converges to `(σ e^{-μ} - 1)/(σ - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interior equilibrium of the master-sequence frequency](master-equilibrium.md)
+
+## Proof depends on
+
+- [Continuity of the interior equilibrium in the copying fidelity](tendsto-master-equilibrium.md)
 
 ## Sources
 

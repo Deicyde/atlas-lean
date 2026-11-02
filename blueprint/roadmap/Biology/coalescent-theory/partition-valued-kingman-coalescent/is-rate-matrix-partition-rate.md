@@ -13,7 +13,14 @@ row sums to `0` (`sum_partitionRate`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Rate matrix of Kingman's partition-valued coalescent](partition-rate.md)
+- [Rate matrix](../../../Probability/markov-chains/finite-continuous-time-markov-chains/rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Rows of the partition rate matrix sum to zero](sum-partition-rate.md)
 
 ## Sources
 

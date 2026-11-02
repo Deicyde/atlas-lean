@@ -18,6 +18,10 @@ integrable. Unlike the one-dimensional case, this integrability does not follow 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stein's lemma](integrable-and-integral-sub-mul-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.SteinLemma](../../../../sources/v2/MathlibExt.md)

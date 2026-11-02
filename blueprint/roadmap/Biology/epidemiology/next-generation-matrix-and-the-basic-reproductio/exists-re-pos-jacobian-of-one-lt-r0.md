@@ -15,7 +15,13 @@ real part (whatever `C` and `D`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic reproduction number of the next-generation matrix](r0.md)
+- [Nonsingular M-matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-nonsingular-mmatrix.md)
+
+## Proof depends on
+
+- [`R₀ > 1` gives an unstable mode](exists-re-pos-iff-one-lt-r0.md)
+- [Eigenvalues of a block lower-triangular matrix](mem-spectrum-from-blocks-zero.md)
 
 ## Sources
 

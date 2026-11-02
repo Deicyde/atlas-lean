@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.CramerRateFunction.extendedLogMGFVec_const
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
+
+## Proof depends on
+
+- [Extended log moment agrees with the real one at integrable directions](extended-log-mgfvec-eq-coe-log-mgfvec.md)
+- [Log moment generating function of a constant vector](log-mgfvec-const.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
 
 ## Sources
 

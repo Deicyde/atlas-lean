@@ -12,7 +12,7 @@ lean: InformationTheory.shannonEntropy_mul_log_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon entropy](../shannon-entropy-and-kullback-leibler-divergence/shannon-entropy.md)
 
 ## Sources
 

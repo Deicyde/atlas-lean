@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.LinearMoment
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear moment model for instrumental variables](linear-moment-model.md)
+
+## Proof depends on
+
+- [Wald ratio identity](covariance-div-covariance.md)
 
 ## Sources
 

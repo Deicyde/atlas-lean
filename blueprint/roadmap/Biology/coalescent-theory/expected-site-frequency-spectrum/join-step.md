@@ -16,6 +16,11 @@ iterate at `b` is the expectation of `g` at step `j` of random joining started f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unordered pairs of blocks](block-pairs.md)
+- [Merging two blocks of a block-size list](merge-blocks.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.SiteFrequencySpectrum](../../../../sources/v2/MathlibExt.md)

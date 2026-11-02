@@ -16,6 +16,12 @@ in ATLAS `NumberTheoryI` Corollary 6.27.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contraction after extension fixes primes away from the conductor](comap-map-eq-of-not-le-conductor.md)
+- [Prime ideals stay prime under denominator clearing](is-prime-map-of-coprime-clear-denom.md)
+- [Extension after contraction fixes primes away from the conductor](map-comap-eq-of-not-le-map-conductor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Ideal.PrimeBijectionConductor](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,11 @@ into singletons, and otherwise the product of the one-step transition probabilit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+
+## Proof depends on
+
+- [Jump chain of Kingman's coalescent](jump-matrix.md)
 
 ## Sources
 

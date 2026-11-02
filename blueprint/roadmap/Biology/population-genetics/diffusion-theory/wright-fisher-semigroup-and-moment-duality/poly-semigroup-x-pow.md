@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.poly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
 
 ## Sources
 

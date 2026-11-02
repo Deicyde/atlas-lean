@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance.deNovoFract
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fraction of de novo loss-of-function alleles](de-novo-fraction.md)
+
+## Proof depends on
+
+- [Linear mutation–selection recursion](lin-step.md)
+- [Unique fixed point $U/s$ of the linear recursion](lin-step-eq-self-iff.md)
 
 ## Sources
 

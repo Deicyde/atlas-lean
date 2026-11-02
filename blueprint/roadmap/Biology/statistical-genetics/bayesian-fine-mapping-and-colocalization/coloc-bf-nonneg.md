@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.colocBF_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes factor of a colocalization configuration](coloc-bf.md)
 
 ## Sources
 

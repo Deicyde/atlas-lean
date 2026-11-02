@@ -12,7 +12,8 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.altLaw_a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+- [Law of a non-null z-value](alt-law.md)
 
 ## Sources
 

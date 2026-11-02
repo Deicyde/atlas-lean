@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.Normed.Lp.Dual.lpDualPairing_norm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical duality pairing between $\ell^q$ and $\ell^p$](lp-dual-pairing.md)
+
+## Proof depends on
+
+- [Duality pairing as a sum of coordinatewise products](lp-dual-pairing-apply.md)
+- [Duality pairing has operator norm at most one](norm-lp-dual-pairing-le.md)
 
 ## Sources
 

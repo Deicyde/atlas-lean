@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.Normed.Lp.Compactness.lpLift_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift of a coordinate function to a truncated $\ell^p$ sequence](lp-lift.md)
 
 ## Sources
 

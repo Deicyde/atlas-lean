@@ -13,7 +13,19 @@ quadruple of populations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+- [Lineage weights of the three-population admixture model](admix-weight.md)
+- [Edge lengths of the star tree matching an admixture model](star-len.md)
+- [Lineage weights of the three-population star tree](star-weight.md)
+
+## Proof depends on
+
+- [Population frequencies are square integrable](../patterson-s-f-statistics/mem-lp-freq.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+- [f4 in terms of f2](../patterson-s-f-statistics/f4-eq-f2.md)
+- [Star tree and admixture model have equal f2](f2-star-eq-f2-admix.md)
 
 ## Sources
 

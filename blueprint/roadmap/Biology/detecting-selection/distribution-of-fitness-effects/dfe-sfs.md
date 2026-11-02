@@ -15,6 +15,10 @@ mutation draws its own `σ` from `μ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expected site frequency spectrum under the Poisson random field](../../population-genetics/diffusion-theory/poisson-random-field-model/expected-sfs.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects](../../../../sources/v2/MathlibExt.md)

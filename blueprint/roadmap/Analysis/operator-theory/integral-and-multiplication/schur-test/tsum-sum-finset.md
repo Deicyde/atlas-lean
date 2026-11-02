@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite.tsum_sum_finset
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summability of a finite sum of summable sequences](summable-sum-finset.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTestInfinite](../../../../../sources/v2/MathlibExt.md)

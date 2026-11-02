@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.norm_inner_fockKernel_fock
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Fock space](fock-kernel.md)
+
+## Proof depends on
+
+- [Inner product of two Fock kernels is an exponential](inner-fock-kernel-fock-kernel.md)
 
 ## Sources
 

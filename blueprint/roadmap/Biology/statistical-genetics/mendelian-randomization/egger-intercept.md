@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.eggerInterce
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [MR-Egger slope](egger-slope.md)
+- [Weighted mean](weighted-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MendelianRandomization](../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.meanHet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Probability that two genes differ at a biallelic site](het-pair.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics](../../../../sources/v2/MathlibExt.md)

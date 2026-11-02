@@ -13,7 +13,13 @@ for `X ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
+- [One sweep of the Lee–Seung algorithm](sweep.md)
+
+## Proof depends on
+
+- [One Lee–Seung sweep does not increase the objective](objective-sweep-le.md)
+- [A Lee–Seung sweep preserves nonnegativity](sweep-nonneg.md)
 
 ## Sources
 

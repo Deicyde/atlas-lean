@@ -14,7 +14,12 @@ the average slope of relative fitness `W / w̄` (Lande–Arnold 1983).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a normally distributed trait](mean-fitness.md)
+- [Directional selection differential](selection-differential.md)
+
+## Proof depends on
+
+- [Stein's lemma](integral-sub-mul-gaussian-real.md)
 
 ## Sources
 

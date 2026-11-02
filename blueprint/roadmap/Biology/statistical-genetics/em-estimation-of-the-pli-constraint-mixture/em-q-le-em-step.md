@@ -12,7 +12,21 @@ lean: Cslib.Bioinformatics.StatisticalGenetics.PoissonClassEM.emQ_le_emStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Loss-of-function count data for a gene](gene-data.md)
+- [Strictly positive class weights summing to one](pos-weights.md)
+- [EM update of the Poisson mixture class weights](em-step.md)
+- [Joint likelihood of gene data and constraint class](joint.md)
+- [The EM objective](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/em-q.md)
+
+## Proof depends on
+
+- [Expected number of genes in a constraint class](mass.md)
+- [Positivity of the class masses](mass-pos.md)
+- [Class masses sum to the number of genes](sum-mass.md)
+- [The weighted log-likelihood is bounded by its value at the normalized counts](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/mixture-models/sum-mul-log-le-sum-mul-log-div.md)
+- [Posterior of a latent-variable model](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/posterior.md)
+- [Poisson likelihood of an observed count](../gene-constraint-scores-pli-and-loeuf/poisson-lik.md)
+- [Positivity of the Poisson likelihood](../gene-constraint-scores-pli-and-loeuf/poisson-lik-pos.md)
 
 ## Sources
 

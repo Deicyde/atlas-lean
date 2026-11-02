@@ -13,7 +13,8 @@ of the split by `pre`), or the smaller half.
 
 ## Depends on
 
-This node has no prerequisites.
+- [New splitters for a split block](new-splitters.md)
+- [Smaller of two finite sets of states](smaller.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.FockSpace.fockEval_eq_tsum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point evaluation on the Fock space](fock-eval.md)
+
+## Proof depends on
+
+- [Reproducing kernel of the Fock space](fock-kernel.md)
 
 ## Sources
 

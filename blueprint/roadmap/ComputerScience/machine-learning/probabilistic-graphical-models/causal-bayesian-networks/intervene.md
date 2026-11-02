@@ -15,7 +15,7 @@ parent sets.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
 
 ## Sources
 

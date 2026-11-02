@@ -16,6 +16,10 @@ is regular if and only if it is denoted by a regular expression. Source: M. Sips
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kleene's theorem, converse direction](exists-regex.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.KleeneConverse](../../../../../sources/v2/CSLibExt.md)

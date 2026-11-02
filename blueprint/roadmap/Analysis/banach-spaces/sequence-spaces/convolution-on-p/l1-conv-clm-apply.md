@@ -12,7 +12,8 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.l1ConvCLM_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence](l1-conv.md)
+- [Convolution action of $\ell^1$ on $\ell^p$ as a bounded bilinear map](l1-conv-clm.md)
 
 ## Sources
 

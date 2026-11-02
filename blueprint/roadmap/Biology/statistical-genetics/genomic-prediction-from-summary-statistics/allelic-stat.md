@@ -14,6 +14,10 @@ counts (`2N` alleles).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pearson's chi-squared statistic of a 2 × 2 table](pearson2x2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.GenomicPrediction](../../../../sources/v2/MathlibExt.md)

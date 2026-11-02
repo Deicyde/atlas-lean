@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatistics.f4_swap_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](f4.md)
 
 ## Sources
 

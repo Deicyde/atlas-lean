@@ -12,7 +12,12 @@ copies `c` and `d` are identical by descent, i.e. descend from the same founder 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+
+## Proof depends on
+
+- [Gene-dropping outcome](coins.md)
+- [Founder origin of a gene copy](origin.md)
 
 ## Sources
 

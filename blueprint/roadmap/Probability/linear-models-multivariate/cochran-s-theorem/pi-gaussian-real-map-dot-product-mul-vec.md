@@ -14,7 +14,11 @@ chi-square with `rank A` degrees of freedom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi-square distribution](../../distributions/chi-square-distribution/chi-square-measure.md)
+
+## Proof depends on
+
+- [Cochran's theorem](std-gaussian-map-norm-sq-star-projection.md)
 
 ## Sources
 

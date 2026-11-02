@@ -16,6 +16,10 @@ quadratic quantities; agreement with the original formulas is asserted only for 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Centered state vector of an observable](centered.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty](../../../../../sources/v2/MathlibExt.md)

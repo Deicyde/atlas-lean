@@ -14,7 +14,11 @@ squares `∑ᵢ (xᵢ - x̄_{grp i})²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group mean of observations](group-mean.md)
+
+## Proof depends on
+
+- [Gaussian one-way layout](indep-fun-group-mean-residual.md)
 
 ## Sources
 

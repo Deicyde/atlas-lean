@@ -12,7 +12,7 @@ the leaf with each label to the leaf with the same label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](unrooted-binary-tree.md)
 
 ## Sources
 

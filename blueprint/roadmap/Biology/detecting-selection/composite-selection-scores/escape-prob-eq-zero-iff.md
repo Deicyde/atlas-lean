@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.escapeProb_eq_zero_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of escaping a selective sweep](escape-prob.md)
 
 ## Sources
 

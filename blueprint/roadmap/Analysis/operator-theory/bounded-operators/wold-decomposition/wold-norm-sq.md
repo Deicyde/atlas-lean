@@ -14,7 +14,7 @@ the remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wandering subspace of an isometry](wandering-sub.md)
 
 ## Sources
 

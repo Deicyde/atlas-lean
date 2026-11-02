@@ -14,6 +14,12 @@ lean: ProbabilityTheory.variance_id_gammaMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean of the gamma law](integral-id-gamma-measure.md)
+- [Second moment of the gamma law](integral-sq-gamma-measure.md)
+- [Gamma law has finite second moment](mem-lp-id-gamma-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GammaMoments](../../../../sources/v2/MathlibExt.md)

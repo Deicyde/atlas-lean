@@ -15,6 +15,10 @@ sphere is the closed unit ball.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finitely many functionals have a common nonzero kernel vector](exists-ne-zero-forall-dual-apply-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

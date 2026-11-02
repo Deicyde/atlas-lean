@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.DouglasLemma.apply_douglasFactor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical factor in Douglas' lemma](douglas-factor.md)
+
+## Proof depends on
+
+- [Underlying function of the Douglas factor](douglas-factor-fun.md)
+- [Defining properties of the Douglas preimage](douglas-factor-fun-spec.md)
 
 ## Sources
 

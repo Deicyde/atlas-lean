@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.isFredholm_shift_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [The unilateral shift operator](shift-clm.md)
+
+## Proof depends on
+
+- [Powers of the backward shift are Fredholm](is-fredholm-backward-clm-pow.md)
+- [Powers of the unilateral shift are Fredholm](is-fredholm-shift-clm-pow.md)
 
 ## Sources
 

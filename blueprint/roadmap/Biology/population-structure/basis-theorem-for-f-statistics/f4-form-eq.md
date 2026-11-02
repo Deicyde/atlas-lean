@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.f4Form_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f2 form](f2-form.md)
+- [Per-locus f4 form](f4-form.md)
 
 ## Sources
 

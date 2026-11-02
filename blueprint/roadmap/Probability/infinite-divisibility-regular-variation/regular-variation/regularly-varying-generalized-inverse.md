@@ -15,7 +15,11 @@ that `n · f (a n) → 1` as `n → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regularly varying function](is-regularly-varying.md)
+
+## Proof depends on
+
+- [Slowly varying function](is-slowly-varying.md)
 
 ## Sources
 

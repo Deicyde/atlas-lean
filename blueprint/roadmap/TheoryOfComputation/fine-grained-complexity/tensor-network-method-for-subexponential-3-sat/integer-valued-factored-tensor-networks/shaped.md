@@ -12,7 +12,7 @@ capacities summing to at most `P` at each vertex, and at most `2 ^ c` labels per
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](factored.md)
 
 ## Sources
 

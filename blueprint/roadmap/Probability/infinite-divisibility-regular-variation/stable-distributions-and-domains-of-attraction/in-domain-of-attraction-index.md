@@ -14,6 +14,12 @@ The general normalized weak-limit relation alone does not assign an index.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domain of attraction](in-domain-of-attraction.md)
+- [Nondegenerate measure on the real line](is-nondegenerate.md)
+- [Stable distribution of a given index](is-stable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.StableDistribution](../../../../sources/v2/MathlibExt.md)

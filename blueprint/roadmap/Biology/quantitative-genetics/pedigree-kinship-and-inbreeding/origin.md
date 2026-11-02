@@ -13,7 +13,8 @@ outcome `ω`: a founder copy is its own origin; a copy of a non-founder descends
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Gene-dropping outcome](coins.md)
 
 ## Sources
 

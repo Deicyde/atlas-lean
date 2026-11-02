@@ -12,7 +12,11 @@ lean: ProbabilityTheory.sum_stickyKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sticky kernel](sticky-kernel.md)
+
+## Proof depends on
+
+- [Entries of the sticky kernel](sticky-kernel-apply.md)
 
 ## Sources
 

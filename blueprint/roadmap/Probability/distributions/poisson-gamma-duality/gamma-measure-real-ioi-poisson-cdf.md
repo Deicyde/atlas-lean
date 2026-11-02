@@ -15,7 +15,11 @@ lean: ProbabilityTheory.gammaMeasure_real_Ioi_poissonCDF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson distribution function as a function of the mean](poisson-cdf.md)
+
+## Proof depends on
+
+- [Erlang tail formula](../gamma-distribution/gamma-measure-real-ioi-nat-cast-add-one.md)
 
 ## Sources
 

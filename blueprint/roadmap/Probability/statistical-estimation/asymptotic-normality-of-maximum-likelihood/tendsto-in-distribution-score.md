@@ -15,7 +15,13 @@ distribution to `N(0, I(θ₀))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fisher information](../fisher-information-and-the-cram-r-rao-bound/fisher-information.md)
+- [Probability law of a density family member](../fisher-information-and-the-cram-r-rao-bound/law-of.md)
+- [Score function](score.md)
+
+## Proof depends on
+
+- [Fisher information is the second moment of the score](integral-score-sq.md)
 
 ## Sources
 

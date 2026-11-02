@@ -11,7 +11,11 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.edgeSplits
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Side of a tree edge containing a vertex](edge-side.md)
 
 ## Sources
 

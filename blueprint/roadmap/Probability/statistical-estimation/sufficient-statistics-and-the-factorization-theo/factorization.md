@@ -14,7 +14,7 @@ lean: MathlibExt.Probability.Statistics.Sufficiency.IsSufficientPMF.factorizatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient statistic for a discrete family](is-sufficient-pmf.md)
 
 ## Sources
 

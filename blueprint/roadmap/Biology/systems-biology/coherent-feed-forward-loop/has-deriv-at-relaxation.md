@@ -13,7 +13,7 @@ rate `P` is continuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Variation-of-constants solution of a linear relaxation equation](relaxation.md)
 
 ## Sources
 

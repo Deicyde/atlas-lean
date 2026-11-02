@@ -13,7 +13,12 @@ on exactly one edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Split of a binary character](char-split.md)
+- [Edge splits of a tree](edge-splits.md)
 
 ## Sources
 

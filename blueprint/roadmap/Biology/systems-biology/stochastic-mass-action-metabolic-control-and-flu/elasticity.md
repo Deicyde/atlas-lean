@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.Dynamics.SystemsBiology.elasticity
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reaction fluxes proportional to enzyme levels](flux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.SystemsBiology](../../../../sources/v2/MathlibExt.md)

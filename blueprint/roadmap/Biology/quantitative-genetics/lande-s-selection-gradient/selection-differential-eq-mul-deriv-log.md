@@ -14,7 +14,12 @@ to the trait mean, `S = v · d/dμ log w̄(μ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean fitness of a normally distributed trait](mean-fitness.md)
+- [Directional selection differential](selection-differential.md)
+
+## Proof depends on
+
+- [Derivative of mean fitness with respect to the trait mean](has-deriv-at-mean-fitness.md)
 
 ## Sources
 

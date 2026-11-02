@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncatedRV_nonneg_of_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](../kolmogorov-s-three-series-theorem/truncated-rv.md)
+
+## Proof depends on
+
+- [Formula for the truncated random variable](../kolmogorov-s-three-series-theorem/truncated-rv-apply.md)
 
 ## Sources
 

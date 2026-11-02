@@ -14,7 +14,12 @@ variance among all weighted averages `∑ cᵢ Xᵢ` with `∑ cᵢ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance weights](inverse-variance-weights.md)
+
+## Proof depends on
+
+- [Optimality of inverse-variance weights](inv-sum-inv-le-sum-sq-mul.md)
+- [Variance of the inverse-variance-weighted average](sum-sq-mul-inverse-variance-weights.md)
 
 ## Sources
 

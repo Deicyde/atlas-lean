@@ -16,7 +16,17 @@ pairs); the shared path lengths `ℓ`; `E[D s | m] = θ τ s` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean number of pairwise differences](../segregating-sites-and-pairwise-differences/mean-pair-diff.md)
+- [Pairs of genes in a sample](../segregating-sites-and-pairwise-differences/sample-pairs.md)
+- [Tajima's constant $b_1$](../segregating-sites-and-pairwise-differences/tajima-b1.md)
+- [Tajima's constant $b_2$](../segregating-sites-and-pairwise-differences/tajima-b2.md)
+
+## Proof depends on
+
+- [Counting sample pairs by overlap with a given pair](sum-sample-pairs-card-inter.md)
+- [Mean of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md)
+- [Variance of an exponentially distributed random variable](../../../Probability/distributions/exponential-distribution/variance-eq-of-exp-measure.md)
+- [Finiteness of all moments of the exponential law](../../../Probability/distributions/exponential-distribution/integrable-pow-exp-measure.md)
 
 ## Sources
 

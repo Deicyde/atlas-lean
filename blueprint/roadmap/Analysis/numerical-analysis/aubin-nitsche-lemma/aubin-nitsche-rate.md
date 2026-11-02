@@ -17,6 +17,11 @@ for some `zh ∈ Vh`, then the weak-norm error gains the factor `h`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjoint stability](adjoint-solution-norm-le.md)
+- [Aubin–Nitsche lemma, pointwise form](aubin-nitsche-pointwise.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.AubinNitsche](../../../../sources/v2/MathlibExt.md)

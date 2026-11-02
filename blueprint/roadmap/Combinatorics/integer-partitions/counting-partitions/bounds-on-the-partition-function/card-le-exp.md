@@ -15,6 +15,10 @@ lean: Nat.Partition.card_le_exp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sum-of-parts recurrence for the partition function](mul-card-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.ExponentialUpperBound](../../../../../sources/v2/MathlibExt.md)

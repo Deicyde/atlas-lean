@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.SchurTest.norm_matrix_l2_le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Schur's test for rectangular Euclidean matrix operators](norm-to-euclidean-lin-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.SchurTest](../../../../../sources/v2/MathlibExt.md)

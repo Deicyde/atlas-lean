@@ -15,7 +15,12 @@ weight `0` on both sides by Lean's `x / 0 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance-weighted estimator](ivw.md)
+- [Weighted residual sum of squares through the origin](weighted-ssr.md)
+
+## Proof depends on
+
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
 
 ## Sources
 

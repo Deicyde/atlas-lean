@@ -16,7 +16,8 @@ the quadratic term of the exact expansion is bounded by Lee and Seung's diagonal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Objective of nonnegative matrix factorization](objective.md)
+- [Lee–Seung multiplicative update of H](update-h.md)
 
 ## Sources
 

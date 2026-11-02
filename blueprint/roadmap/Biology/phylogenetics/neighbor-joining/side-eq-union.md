@@ -13,7 +13,12 @@ of the far sides of the other two edges at `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Taxa on one side of a tree edge](side.md)
+
+## Proof depends on
+
+- [Two sides of a tree edge partition the taxa](side-swap.md)
 
 ## Sources
 

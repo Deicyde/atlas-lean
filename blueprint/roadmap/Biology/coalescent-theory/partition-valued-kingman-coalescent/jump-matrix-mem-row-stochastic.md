@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent.jumpM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Jump chain of Kingman's coalescent](jump-matrix.md)
+
+## Proof depends on
+
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Mergers](card-is-merge.md)
 
 ## Sources
 

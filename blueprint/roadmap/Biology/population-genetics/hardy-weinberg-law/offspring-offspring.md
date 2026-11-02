@@ -13,7 +13,12 @@ of random mating are a fixed point of random mating.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Offspring genotype law under random union of gametes](offspring.md)
+
+## Proof depends on
+
+- [Law of a random gamete](gamete.md)
+- [Allele frequencies are conserved](gamete-offspring.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ only that much fuel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trace of splitters popped by Hopcroft's algorithm](hopcroft-splitters.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
+
+## Proof depends on
+
+- [One refinement round of the partition](round-p.md)
+- [One update of the waiting list](round-w.md)
 
 ## Sources
 

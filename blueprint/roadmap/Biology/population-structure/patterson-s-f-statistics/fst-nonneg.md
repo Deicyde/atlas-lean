@@ -13,7 +13,12 @@ is defined only when `H_T > 0` (at a fixed allele `H_T = H_S = 0`), so that is a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean within-subpopulation heterozygosity](het-sub.md)
+- [Total heterozygosity of the pooled population](het-total.md)
+
+## Proof depends on
+
+- [Wahlund effect](het-sub-le-het-total.md)
 
 ## Sources
 

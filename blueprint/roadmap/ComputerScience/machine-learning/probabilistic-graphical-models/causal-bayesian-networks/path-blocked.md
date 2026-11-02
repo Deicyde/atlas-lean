@@ -11,7 +11,11 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.PathBlocked
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+
+## Proof depends on
+
+- [Blocking at a node of a path](blocked-at.md)
 
 ## Sources
 

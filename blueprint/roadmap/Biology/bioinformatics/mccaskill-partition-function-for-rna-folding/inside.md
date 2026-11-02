@@ -18,6 +18,10 @@ values of the enclosed interval `[i + 1, i + 1 + k)` and of the outer interval
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complementary base pairing of two positions](can-pair.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

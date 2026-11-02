@@ -15,6 +15,10 @@ to the subscheme cut out by the vanishing ideal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vanishing ideal lies in the kernel of maps from reduced schemes](vanishing-ideal-le-ker.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.VanishingIdeal](../../../../sources/v2/MathlibExt.md)

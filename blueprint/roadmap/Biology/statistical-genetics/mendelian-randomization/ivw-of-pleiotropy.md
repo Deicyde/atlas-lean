@@ -15,7 +15,12 @@ biases IVW whenever `∑ γ_j σ_j⁻² ≠ 0`, whereas a constant `α` satisfie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse-variance-weighted estimator](ivw.md)
+- [Inverse-variance weight of a ratio estimate](ivw-weight.md)
+
+## Proof depends on
+
+- [Positivity of the total IVW weight](sum-ivw-weight-pos.md)
 
 ## Sources
 

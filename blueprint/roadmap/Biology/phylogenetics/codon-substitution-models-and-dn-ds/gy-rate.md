@@ -12,7 +12,12 @@ frequencies `π` and exchangeabilities `gyExchange`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+
+## Proof depends on
+
+- [Goldman–Yang codon exchangeability](gy-exchange.md)
+- [General time-reversible (GTR) rate matrix](../time-reversible-nucleotide-substitution-models/gtr-rate.md)
 
 ## Sources
 

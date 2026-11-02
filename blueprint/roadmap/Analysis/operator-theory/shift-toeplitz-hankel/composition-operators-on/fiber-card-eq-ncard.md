@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.fiberCard_eq_nca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fiber cardinality of a map](fiber-card.md)
 
 ## Sources
 

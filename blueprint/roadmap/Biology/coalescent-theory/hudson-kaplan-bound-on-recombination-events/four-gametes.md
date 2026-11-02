@@ -16,6 +16,10 @@ carries `a` at `i` and `b` at `j`. This reuses
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Four-gamete condition for binary characters](../../phylogenetics/splits-compatibility-ultrametrics-and-upgma/four-gametes.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationGenetics.HudsonKaplan](../../../../sources/v2/CSLibExt.md)

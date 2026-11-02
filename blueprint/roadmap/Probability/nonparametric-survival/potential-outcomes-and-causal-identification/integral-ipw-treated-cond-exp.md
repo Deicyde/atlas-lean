@@ -16,7 +16,7 @@ score. If `Y₁` is integrable, the treatment is mean-ignorable for `Y₁`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Observed outcome from potential outcomes](observed.md)
 
 ## Sources
 

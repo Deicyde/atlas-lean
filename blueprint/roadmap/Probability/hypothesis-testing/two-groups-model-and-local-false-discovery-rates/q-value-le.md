@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.qValue_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Storey's q-value](q-value.md)
 
 ## Sources
 

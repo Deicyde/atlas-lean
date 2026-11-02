@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.FStatisticsBasis.f4_eq_integral_f4Fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+- [Per-locus f4 form](f4-form.md)
 
 ## Sources
 

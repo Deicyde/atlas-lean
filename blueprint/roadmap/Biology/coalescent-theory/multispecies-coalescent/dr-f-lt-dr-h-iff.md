@@ -14,7 +14,9 @@ matching gene tree, `f(x, y) < h(x, y)`, if and only if `y < a(x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary of the four-species anomaly zone](anomaly-a.md)
+- [Degnan–Rosenberg probability of the matching caterpillar gene tree](dr-f.md)
+- [Degnan–Rosenberg formula h for the gene tree ((A, B), (C, D))](dr-h.md)
 
 ## Sources
 

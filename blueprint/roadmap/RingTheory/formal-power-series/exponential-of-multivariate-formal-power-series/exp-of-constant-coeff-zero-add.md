@@ -12,7 +12,13 @@ lean: MvPowerSeries.expOfConstantCoeffZero_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponential of a power series with zero constant coefficient](exp-of-constant-coeff-zero.md)
+
+## Proof depends on
+
+- [Coefficients of the exponential via truncation](coeff-exp-of-constant-coeff-zero.md)
+- [Coefficient of the exponential in a given degree](coeff-exp-of-constant-coeff-zero-degree.md)
+- [Truncated exponential of a multivariate power series](exp-trunc.md)
 
 ## Sources
 

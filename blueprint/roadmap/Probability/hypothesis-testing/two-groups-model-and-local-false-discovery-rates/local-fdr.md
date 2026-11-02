@@ -11,7 +11,11 @@ lean: MathlibExt.Probability.Statistics.TwoGroupsTesting.TwoGroupsModel.localFdr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-groups model](two-groups-model.md)
+
+## Proof depends on
+
+- [Mixture density of the two-groups model](mixture-density.md)
 
 ## Sources
 

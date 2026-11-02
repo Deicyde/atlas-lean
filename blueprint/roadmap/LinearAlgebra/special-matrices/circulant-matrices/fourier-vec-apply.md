@@ -12,7 +12,12 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.fourierVec_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier vector on the integers modulo n](fourier-vec.md)
+- [Standard primitive n-th root of unity $e^{2\pi i/n}$](zeta.md)
+
+## Proof depends on
+
+- [Standard root of unity as the standard additive character](zeta-eq-std-add-char.md)
 
 ## Sources
 

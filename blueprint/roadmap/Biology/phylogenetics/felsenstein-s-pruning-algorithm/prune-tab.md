@@ -12,7 +12,7 @@ likelihoods of each subtree is computed once, with `O(n²)` operations per inter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](tree.md)
 
 ## Sources
 

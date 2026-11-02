@@ -16,7 +16,11 @@ lean: MathlibExt.Probability.Statistics.Contiguity.isContiguous_withDensity_exp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contiguity of sequences of measures](is-contiguous.md)
+
+## Proof depends on
+
+- [Exponential tilting of a centered Gaussian](gaussian-real-with-density-exp.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Markov-chain predicate under the probability-space hypotheses of `condExp_indica
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite-state Markov chain with a given transition matrix](is-finite-markov-chain.md)
+- [Transition kernel of a stochastic matrix](finite-chain-kernel.md)
+- [Markov chain with respect to a filtration](../chapman-kolmogorov-equations/is-markov-chain.md)
+- [Stochastic matrix](../kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Bridge: finite-state Markov chains satisfy the general one-step Markov property](cond-exp-indicator.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: ProbabilityTheory.poissonBinomialPMF_cons_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
 
 ## Sources
 

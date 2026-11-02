@@ -13,7 +13,13 @@ adjoint through the finite partial sums and taking the limit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+
+## Proof depends on
+
+- [Anti-diagonal slice operator is self-adjoint](adjoint-hankel-slice.md)
+- [Anti-diagonal slice operator](hankel-slice.md)
+- [Hankel operator as the sum of its slices](hankel-has-sum-slices.md)
 
 ## Sources
 

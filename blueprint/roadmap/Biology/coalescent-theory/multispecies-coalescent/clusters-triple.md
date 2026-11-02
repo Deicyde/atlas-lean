@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent.clusters_trip
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clusters of a species tree](clusters.md)
+- [Three-species tree ((0, 1), 2)](triple.md)
+- [Three-gene tree with a given cherry](triple-tree.md)
+
+## Proof depends on
+
+- [Rooted binary species tree with branch lengths](species-tree.md)
+- [Species below a node of a species tree](taxa.md)
 
 ## Sources
 

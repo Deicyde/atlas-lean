@@ -11,7 +11,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.CompositionOperator.compCLM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly bounded fibers of a map on the naturals](has-bounded-fibers.md)
+
+## Proof depends on
+
+- [Composition operator as a linear map](comp-lin-map.md)
+- [Supremum of the fiber counts of a map](fiber-sup.md)
+- [Norm bound for the composition linear map](norm-comp-lin-map-apply-le.md)
 
 ## Sources
 

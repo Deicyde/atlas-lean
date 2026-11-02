@@ -15,7 +15,13 @@ of the frequency after `m` generations is the generating function of the number 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher transition matrix of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-matrix.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
+
+## Proof depends on
+
+- [Wright–Fisher transition probability of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-prob.md)
+- [Moment duality, one generation (polynomial identity)](sum-binomial-mul-div-pow.md)
 
 ## Sources
 

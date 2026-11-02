@@ -13,7 +13,7 @@ in front of the sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forward shift of a sequence](shift-fun.md)
 
 ## Sources
 

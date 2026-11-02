@@ -12,7 +12,17 @@ lean: MathlibExt.Biology.StatisticalGenetics.FisherDecomposition.covFullSibs_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive genetic variance](add-var.md)
+- [Full-sib covariance of genotypic values](cov-full-sibs.md)
+- [Dominance variance](dom-var.md)
+
+## Proof depends on
+
+- [Average effect of an allele](avg-effect.md)
+- [Genetic variance under Hardy–Weinberg proportions](gen-var.md)
+- [Fisher's variance decomposition](gen-var-eq-add-var-add-dom-var.md)
+- [Mean genotypic value under Hardy–Weinberg proportions](mean-value.md)
+- [Average effects have mean zero](sum-mul-avg-effect.md)
 
 ## Sources
 

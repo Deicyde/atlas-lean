@@ -12,7 +12,12 @@ from the tables of the two children, trying both child orders.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dendrogram as a leaf-labeled binary tree](dendrogram.md)
+
+## Proof depends on
+
+- [Leaves of a dendrogram](leaves.md)
+- [Joining two subtree orders at an adjacent leaf pair](join-ends.md)
 
 ## Sources
 

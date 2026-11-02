@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.Phylogenetics.CodonModel.synSites_add_nonsynSites
 
 ## Depends on
 
-This node has no prerequisites.
+- [Codon as a triple of nucleotides](codon.md)
+- [Stationary rate of nonsynonymous substitutions](nonsyn-rate.md)
+- [Number of nonsynonymous sites per codon](nonsyn-sites.md)
+- [Stationary rate of synonymous substitutions](syn-rate.md)
+- [Number of synonymous sites per codon](syn-sites.md)
 
 ## Sources
 

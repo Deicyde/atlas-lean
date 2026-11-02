@@ -16,7 +16,11 @@ that, together with the elementary-integrand formula, determines the constructio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral process](ito-integral-2.md)
+
+## Proof depends on
+
+- [Difference isometry](ito-integral-isometry-sub-of-is-pre-brow.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ within `‖E‖` of the spectrum of a normal operator `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Resolvent norm bound for a normal operator](norm-ring-inverse-sub-smul-one-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BauerFike](../../../../../sources/v2/MathlibExt.md)

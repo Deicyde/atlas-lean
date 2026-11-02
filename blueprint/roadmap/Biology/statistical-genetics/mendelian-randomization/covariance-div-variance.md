@@ -13,7 +13,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.MendelianRandomization.LinearMoment
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear moment model for instrumental variables](linear-moment-model.md)
+
+## Proof depends on
+
+- [Covariance with the outcome in a linear moment model](covariance-outcome.md)
 
 ## Sources
 

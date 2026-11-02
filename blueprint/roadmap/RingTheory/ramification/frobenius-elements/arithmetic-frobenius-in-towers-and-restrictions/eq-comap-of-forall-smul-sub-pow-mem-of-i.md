@@ -17,6 +17,11 @@ Proposition 7.22 under its unramified hypothesis.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Elements with the same powered congruence differ by inertia](mem-inertia-of-forall-smul-sub-pow-mem.md)
+- [Restriction of a Frobenius element along a compatible pair](comap.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.TowerRestriction](../../../../../sources/v2/MathlibExt.md)

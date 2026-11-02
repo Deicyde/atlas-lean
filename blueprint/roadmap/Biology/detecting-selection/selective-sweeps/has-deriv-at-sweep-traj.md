@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.SelectionScan.hasDerivAt_sweepTraj
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logistic trajectory of a selective sweep](sweep-traj.md)
 
 ## Sources
 

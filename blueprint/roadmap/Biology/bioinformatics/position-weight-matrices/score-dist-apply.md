@@ -14,7 +14,13 @@ background probability of the score `t` (the weights sum to `1` by `sum_bgLik`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Background likelihood of a sequence](bg-lik.md)
+- [Score of a site under a position weight matrix](score.md)
+- [Background score distribution of an integer matrix](score-dist.md)
+
+## Proof depends on
+
+- [One column step of the score-distribution recursion](score-step.md)
 
 ## Sources
 

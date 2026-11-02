@@ -15,6 +15,11 @@ transmission of either allele of each survivor:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diploid mean fitness under Hardy–Weinberg proportions](diploid-mean-fitness.md)
+- [Marginal fitness of an allele](marginal-fitness.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Selection](../../../../sources/v2/MathlibExt.md)

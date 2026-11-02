@@ -14,7 +14,14 @@ different contrasts `f2 A Xᵢ - f2 B Xᵢ` determine `α` from `f2` statistics.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture-graph drift model](../patterson-s-f-statistics/drift-model.md)
+- [Allele frequency of a population in the drift model](../patterson-s-f-statistics/freq.md)
+- [f2 statistic](../patterson-s-f-statistics/f2.md)
+
+## Proof depends on
+
+- [Admixed-branch identity for f2 statistics](f2-admixed-branch.md)
+- [MixMapper mixed drift](mixed-drift.md)
 
 ## Sources
 

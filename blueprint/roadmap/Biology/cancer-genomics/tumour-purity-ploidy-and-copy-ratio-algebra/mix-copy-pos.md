@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.mixCopy_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Average absolute copy number of a tumor sample](mix-copy.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.HankelOperator.hankel_hasSum_slices
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel operator with absolutely summable symbol](hankel-operator.md)
+- [Anti-diagonal slice operator](hankel-slice.md)
+
+## Proof depends on
+
+- [Summability of weighted anti-diagonal slices](hankel-summable-slices.md)
 
 ## Sources
 

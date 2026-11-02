@@ -13,7 +13,11 @@ Wright's `1 / (1 + M) = 1 / (1 + 4Nm)` for every `M > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slatkin's F_ST for the finite island model](slatkin-fst.md)
+
+## Proof depends on
+
+- [Slatkin's `F_ST` for the finite island model (Slatkin 1991)](slatkin-fst-eq.md)
 
 ## Sources
 

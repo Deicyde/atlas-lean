@@ -14,7 +14,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.MixedModel.isMMESolution_iff_gls
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MMESolution](is-mmesolution.md)
+- [Phenotypic covariance of a linear mixed model](phen-cov.md)
+- [Generalized least-squares matrix](../../../Probability/linear-models-multivariate/generalized-least-squares/gls-matrix.md)
+
+## Proof depends on
+
+- [Henderson's mixed-model equations](is-mmesolution-iff.md)
 
 ## Sources
 

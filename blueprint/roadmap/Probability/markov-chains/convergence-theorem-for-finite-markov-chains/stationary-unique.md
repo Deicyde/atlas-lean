@@ -15,6 +15,10 @@ any stationary vector of total mass `1`, not necessarily nonnegative.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convergence of matrix powers to the stationary distribution](tendsto-pow-apply.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.FiniteMarkovChainConvergence](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ lean: Cslib.OutputReachability.ReachesOutput.prepend
 
 ## Depends on
 
-This node has no prerequisites.
+- [Output reachability within time and resource bounds](reaches-output.md)
+
+## Proof depends on
+
+- [Resource-bounded active step](bounded-step.md)
 
 ## Sources
 

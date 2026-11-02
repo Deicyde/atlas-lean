@@ -13,7 +13,13 @@ symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unrestricted grammar](../context-sensitive-grammars/csgrammar.md)
+- [Nonterminals of the grammar of a linear bounded automaton](lbant.md)
+- [Linear bounded automaton](linear-bounded-automaton.md)
+
+## Proof depends on
+
+- [All rules of the LBA grammar](all-rules.md)
 
 ## Sources
 

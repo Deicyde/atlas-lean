@@ -13,7 +13,13 @@ geometric vector is `2`, when `‖μ‖ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Truncated geometric vector in $\ell^2$](approx-vec.md)
+
+## Proof depends on
+
+- [Truncated geometric sequence](approx-fun.md)
+- [Shifted unilateral shift on the truncated geometric vector](sub-smul-one-approx-vec-apply-zero.md)
 
 ## Sources
 

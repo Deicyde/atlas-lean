@@ -13,7 +13,12 @@ lean: ProbabilityTheory.integrandDist_eq_eLpNorm_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Squared $L^2$ distance between integrands](integrand-dist.md)
+- [Restriction of a process to the time interval (0, t)](restrict-ioc.md)
+
+## Proof depends on
+
+- [Integrand distance depends only on times in (0, t)](integrand-dist-restrict-ioc.md)
 
 ## Sources
 

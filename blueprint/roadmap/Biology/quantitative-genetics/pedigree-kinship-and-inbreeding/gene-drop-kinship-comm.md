@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.Kinship.Pedigree.geneDropKinship_co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pedigree](pedigree.md)
+- [Kinship coefficient under gene dropping](gene-drop-kinship.md)
+
+## Proof depends on
+
+- [Probability of identity by descent under gene dropping](ibd.md)
+- [Symmetry of identity by descent](ibd-comm.md)
 
 ## Sources
 

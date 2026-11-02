@@ -12,7 +12,14 @@ lean: Cslib.Bioinformatics.Motifs.PWM.score_logOdds_boltzmannPWM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boltzmann position weight matrix](boltzmann-pwm.md)
+- [Log-odds matrix of a site model](log-odds.md)
+- [Column partition function of an energy matrix](partition-fn.md)
+- [Score of a site under a position weight matrix](score.md)
+
+## Proof depends on
+
+- [Log-odds are affine in the energies](log-odds-boltzmann-pwm.md)
 
 ## Sources
 

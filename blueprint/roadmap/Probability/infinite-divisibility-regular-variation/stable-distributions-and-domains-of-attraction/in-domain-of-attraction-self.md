@@ -13,7 +13,12 @@ The positive-n inverse affine identity is exact; order zero uses normalizer one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domain of attraction](in-domain-of-attraction.md)
+- [Stable distribution of a given index](is-stable.md)
+
+## Proof depends on
+
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
 
 ## Sources
 

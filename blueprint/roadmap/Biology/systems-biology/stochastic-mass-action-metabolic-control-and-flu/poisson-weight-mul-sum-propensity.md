@@ -16,7 +16,16 @@ inflow `∑_{r : prod r ≤ x} π(x - prod r + src r) λ_r(x - prod r + src r)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](../complex-balancing-and-the-deficiency-zero-theore/reaction-network.md)
+- [Complex-balanced concentrations](../complex-balancing-and-the-deficiency-zero-theore/is-complex-balanced.md)
+- [Product-form Poisson weight of a state](poisson-weight.md)
+- [Stochastic mass-action propensity](propensity.md)
+- [State before one reaction firing](unfire.md)
+
+## Proof depends on
+
+- [Mass-action reaction rate](../complex-balancing-and-the-deficiency-zero-theore/rate.md)
+- [Complex balance exchanges source and product sums](../complex-balancing-and-the-deficiency-zero-theore/sum-rate-mul-prod-eq.md)
 
 ## Sources
 

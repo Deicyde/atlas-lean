@@ -13,7 +13,7 @@ densities factor as `dP_θ/dμ = g_θ(T) · h` with measurable `g_θ` and `h`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sufficient sub-σ-algebra](is-sufficient.md)
 
 ## Sources
 

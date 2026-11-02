@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.Dynamics.FeedForwardLoop.onDelay_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [ON-step delay of the feed-forward loop](on-delay.md)
 
 ## Sources
 

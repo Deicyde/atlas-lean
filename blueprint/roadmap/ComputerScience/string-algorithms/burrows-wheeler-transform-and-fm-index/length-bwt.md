@@ -12,7 +12,12 @@ lean: Cslib.Bioinformatics.Indexing.BWT.length_bwt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Burrows–Wheeler transform](bwt.md)
+
+## Proof depends on
+
+- [Sorted rotations of a sentinel-terminated text](sorted-rotations.md)
+- [Text with an appended sentinel](with-sentinel.md)
 
 ## Sources
 

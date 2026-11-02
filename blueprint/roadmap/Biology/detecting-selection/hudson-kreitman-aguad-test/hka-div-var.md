@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.hkaDivVar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [HKA expected divergence](hka-div-mean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.HKA](../../../../sources/v2/MathlibExt.md)

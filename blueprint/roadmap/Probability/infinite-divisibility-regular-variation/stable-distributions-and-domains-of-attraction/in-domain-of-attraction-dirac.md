@@ -14,7 +14,12 @@ lean: MathlibExt.Probability.StableDistribution.inDomainOfAttraction_dirac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domain of attraction](in-domain-of-attraction.md)
+
+## Proof depends on
+
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
+- [Convolution powers of a Dirac measure](../infinitely-divisible-distributions/conv-pow-dirac.md)
 
 ## Sources
 

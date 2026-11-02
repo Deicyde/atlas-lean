@@ -14,7 +14,8 @@ balancing score: given `e(X)`, the treatment is conditionally independent of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional independence given a discrete variable](cond-indep-discrete.md)
+- [Propensity score](propensity.md)
 
 ## Sources
 

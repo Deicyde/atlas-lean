@@ -16,7 +16,8 @@ with unit variances, correlation `ρ` (the covariance, as the variances are `1`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean of the standardized DENTIST difference](dentist-mean.md)
+- [Variance of the standardized DENTIST difference](dentist-variance.md)
 
 ## Sources
 

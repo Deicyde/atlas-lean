@@ -18,6 +18,10 @@ statistic jointly asymptotically normal with `Λₙ`, is not stated here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential tilting of a centered Gaussian](gaussian-real-with-density-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Contiguity](../../../../sources/v2/MathlibExt.md)

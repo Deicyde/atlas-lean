@@ -14,7 +14,13 @@ Section 5.6). No filtration and no measurability of the coordinates of `B` is as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+- [Pathwise solution of the Langevin equation](ou-path-solution.md)
+
+## Proof depends on
+
+- [The pathwise Langevin solution driven by Brownian motion is Gaussian](is-gaussian-process-ou-path-solution.md)
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
 
 ## Sources
 

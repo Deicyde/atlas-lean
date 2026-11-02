@@ -14,7 +14,16 @@ solution, then the optimal value is differentiable at `b` with derivative `b' â†
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual feasibility for flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-dual-feasible.md)
+- [Dual objective of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-dual-value.md)
+- [Feasible fluxes of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-feasible.md)
+- [Optimal value of flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/fba-value.md)
+
+## Proof depends on
+
+- [Weak duality for flux balance analysis](../stochastic-mass-action-metabolic-control-and-flu/dot-product-le-fba-dual-value.md)
+- [Feasible flux balance problem attains its optimum](../stochastic-mass-action-metabolic-control-and-flu/exists-fba-value-eq.md)
+- [Finitely many dual solutions suffice](exists-finset-optimal-fba-dual.md)
 
 ## Sources
 

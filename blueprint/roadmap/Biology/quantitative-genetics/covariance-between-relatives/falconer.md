@@ -13,7 +13,11 @@ common-environment covariance `C`; the estimator is `2 (Cov_MZ - Cov_DZ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
+
+## Proof depends on
+
+- [Genetic covariance of relatives in Cockerham form](cov.md)
 
 ## Sources
 

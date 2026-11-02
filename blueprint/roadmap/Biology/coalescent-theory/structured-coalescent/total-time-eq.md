@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.PopulationGenetics.StructuredCoalescent.totalTime_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slatkin's mean total coalescence time](total-time.md)
+
+## Proof depends on
+
+- [Mean coalescence time between demes](between-time.md)
 
 ## Sources
 

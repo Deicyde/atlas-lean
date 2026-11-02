@@ -21,6 +21,11 @@ estimators that solve `∑_{i<n} ψ θ (X i) = 0` with probability tending to on
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Product of a distributionally convergent and a vanishing sequence](mul-tendsto-in-measure-zero.md)
+- [Convergence to zero in probability by domination on likely events](tendsto-in-measure-zero-of-abs-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MLEAsymptoticNormality](../../../../sources/v2/MathlibExt.md)

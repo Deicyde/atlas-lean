@@ -13,7 +13,8 @@ from it by merging two blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Set partitions of a labeled sample](sample-partition.md)
 
 ## Sources
 

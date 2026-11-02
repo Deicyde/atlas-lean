@@ -12,7 +12,7 @@ lean: ProbabilityTheory.ElementaryIntegrand.single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
 
 ## Sources
 

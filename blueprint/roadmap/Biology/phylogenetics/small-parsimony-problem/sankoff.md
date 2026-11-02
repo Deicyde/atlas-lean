@@ -12,7 +12,13 @@ root, computed by Felsenstein's pruning recursion over the tropical semiring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Min-plus cost semiring](cost.md)
+
+## Proof depends on
+
+- [Felsenstein's pruning recursion](../felsenstein-s-pruning-algorithm/prune.md)
+- [Tropical leaf weights of observed states](leaf-obs.md)
 
 ## Sources
 

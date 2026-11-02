@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.TikhonovRegularization.exists_tikho
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Tikhonov normal operator is bijective](bijective-tikhonov-operator.md)
 
 ## Sources
 

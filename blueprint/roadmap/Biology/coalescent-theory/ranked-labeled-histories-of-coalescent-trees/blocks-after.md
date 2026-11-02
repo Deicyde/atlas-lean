@@ -12,7 +12,11 @@ coalescence events of a history, starting from the singletons `{0}, …, {n - 1}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](ranked-history.md)
+
+## Proof depends on
+
+- [Merging two lineage blocks](merge-blocks.md)
 
 ## Sources
 

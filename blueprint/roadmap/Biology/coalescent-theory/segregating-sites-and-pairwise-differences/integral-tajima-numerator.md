@@ -14,7 +14,17 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanTimes.integral_taj
 
 ## Depends on
 
-This node has no prerequisites.
+- [Holding times of Kingman's coalescent](../kingman-s-coalescent-and-watterson-s-estimator/kingman-times.md)
+- [Total branch length of a coalescent genealogy](../kingman-s-coalescent-and-watterson-s-estimator/total-length.md)
+- [Mean number of pairwise differences](mean-pair-diff.md)
+- [Pairs of genes in a sample](sample-pairs.md)
+- [Tajima's constant $a_1$](tajima-a1.md)
+
+## Proof depends on
+
+- [Watterson's estimator is unbiased](../kingman-s-coalescent-and-watterson-s-estimator/watterson-unbiased.md)
+- [Expected pairwise differences](integral-mean-pair-diff.md)
+- [Tajima's $a_1$ is a harmonic number](tajima-a1-eq-harmonic.md)
 
 ## Sources
 

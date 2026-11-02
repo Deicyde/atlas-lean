@@ -12,7 +12,12 @@ lean: ProbabilityTheory.ElementaryIntegrand.toProcess_single
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-step elementary integrand](single.md)
+- [Elementary integrand as a process](to-process.md)
+
+## Proof depends on
+
+- [Elementary integrand](elementary-integrand.md)
 
 ## Sources
 

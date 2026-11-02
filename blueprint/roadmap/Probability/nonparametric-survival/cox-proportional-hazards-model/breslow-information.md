@@ -17,6 +17,11 @@ the event times are distinct (so each risk set contributes at most one event).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number at risk at a subject's time](num-at-risk.md)
+- [Number of group-1 subjects at risk](num-at-risk-in.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.Survival.CoxPartialLikelihood](../../../../sources/v2/MathlibExt.md)

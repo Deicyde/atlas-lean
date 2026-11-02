@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.qssComplex
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Michaelis constant](michaelis-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.MichaelisMenten](../../../../sources/v2/MathlibExt.md)

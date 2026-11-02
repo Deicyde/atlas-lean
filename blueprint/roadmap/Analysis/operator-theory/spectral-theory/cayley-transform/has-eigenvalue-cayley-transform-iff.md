@@ -13,7 +13,11 @@ Cayley transform `U` iff `i * (1 + μ) / (1 - μ)` is an eigenvalue of `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cayley transform of an operator](cayley-transform.md)
+
+## Proof depends on
+
+- [Self-adjoint operator plus $i$ is invertible](is-unit-add-i-smul-one-of-is-self-adjoin.md)
 
 ## Sources
 

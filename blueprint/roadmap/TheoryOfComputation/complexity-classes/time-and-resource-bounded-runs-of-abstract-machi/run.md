@@ -13,6 +13,10 @@ lean: Cslib.OutputReachability.run
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One iteration step with absorbing halted states](next.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Relation.OutputReachability](../../../../sources/v2/CSLibExt.md)

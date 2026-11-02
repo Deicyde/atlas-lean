@@ -12,7 +12,8 @@ lean: ProbabilityTheory.hypergeometric_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergeometric distribution](hypergeometric.md)
+- [Hypergeometric mass function](hypergeometric-real.md)
 
 ## Sources
 

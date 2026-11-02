@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.Dynamics.MorphogenGradient.thresholdPosition_two_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decay length of a morphogen gradient](decay-length.md)
+- [French-flag boundary position for a threshold](threshold-position.md)
+
+## Proof depends on
+
+- [Boundary shift](threshold-position-mul.md)
 
 ## Sources
 

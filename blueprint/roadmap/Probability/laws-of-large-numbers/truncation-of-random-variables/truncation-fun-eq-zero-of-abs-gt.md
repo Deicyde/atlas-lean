@@ -12,7 +12,11 @@ lean: ProbabilityTheory.KolmogorovThreeSeries.truncationFun_eq_zero_of_abs_gt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scalar truncation function](truncation-fun.md)
+
+## Proof depends on
+
+- [Truncation vanishes outside the closed band](truncated-rv-eq-zero-of-abs-gt.md)
 
 ## Sources
 

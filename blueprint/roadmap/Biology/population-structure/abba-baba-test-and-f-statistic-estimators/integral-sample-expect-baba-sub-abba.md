@@ -14,7 +14,14 @@ frequencies, the expected `BABA - ABBA` difference is `f4 P1 P2 P3 O`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unpolarized ABBA site-pattern indicator](abba.md)
+- [Unpolarized BABA site-pattern indicator](baba.md)
+- [Expectation under independent haplotype sampling](sample-expect.md)
+- [f4 statistic](../patterson-s-f-statistics/f4.md)
+
+## Proof depends on
+
+- [ABBA–BABA identity](sample-expect-baba-sub-abba.md)
 
 ## Sources
 

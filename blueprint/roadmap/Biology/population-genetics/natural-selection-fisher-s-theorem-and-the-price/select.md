@@ -13,6 +13,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Selection.select
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mean fitness of a population](mean-fitness.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Selection](../../../../sources/v2/MathlibExt.md)

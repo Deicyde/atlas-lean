@@ -15,6 +15,10 @@ paper's weights are `v_j = σ_j⁻²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted covariance](weighted-cov.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.StatisticalGenetics.MendelianRandomization](../../../../sources/v2/MathlibExt.md)

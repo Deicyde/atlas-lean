@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.DistributionOfFitnessEffects.gammaDF
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma distribution of fitness effects](gamma-dfe.md)
+- [Upper incomplete gamma function](../../../Probability/distributions/gamma-distribution/upper-incomplete-gamma.md)
+
+## Proof depends on
+
+- [Upper tail of the gamma law](../../../Probability/distributions/gamma-distribution/gamma-measure-real-ioi.md)
 
 ## Sources
 

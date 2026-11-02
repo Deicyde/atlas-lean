@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.CeaLemma.galerkin_orthogonality
 
 ## Depends on
 
-This node has no prerequisites.
+- [Galerkin solution](galerkin-solution.md)
+- [Solution of a coercive variational problem](variational-solution.md)
+
+## Proof depends on
+
+- [Galerkin solution satisfies the Galerkin equations](galerkin-solution-spec.md)
+- [Variational solution satisfies the variational equation](variational-solution-spec.md)
 
 ## Sources
 

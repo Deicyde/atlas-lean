@@ -15,7 +15,19 @@ the back-door adjustment): for every function `f` of the variables,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+- [The intervention `do(X_k = a)`](intervene.md)
+- [Joint distribution of a Bayesian network](../bayesian-networks/joint-2.md)
+- [Parent values of a node](pa-val.md)
+
+## Proof depends on
+
+- [Factorization of a Bayesian network](../bayesian-networks/joint-eq-prod-2.md)
+- [The truncated factorization](joint-intervene.md)
+- [Intervention preserves the law of the parents](sum-pa-val-intervene.md)
+- [The chain of a Bayesian network](../bayesian-networks/to-chain.md)
+- [Chain of conditional distributions](../bayesian-networks/chain.md)
+- [Joint distribution of a chain](../bayesian-networks/joint.md)
 
 ## Sources
 

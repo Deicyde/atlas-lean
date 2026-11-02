@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.GBLUP.markerKernel_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear marker kernel on genotype vectors](marker-kernel.md)
 
 ## Sources
 

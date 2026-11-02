@@ -12,7 +12,8 @@ lean: MathlibExt.Biology.PopulationGenetics.McDonaldKreitman.alphaHat_eq_one_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smith–Eyre-Walker estimator of adaptive substitutions](alpha-hat.md)
+- [Neutrality index](neutrality-index.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.hasSum_cloneProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lea–Coulson clone-size law](clone-prob.md)
 
 ## Sources
 

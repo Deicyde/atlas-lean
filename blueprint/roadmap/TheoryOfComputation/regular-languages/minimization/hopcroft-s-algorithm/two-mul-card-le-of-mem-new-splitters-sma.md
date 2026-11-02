@@ -14,7 +14,12 @@ halves of any block partition it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [New splitters for a split block](new-splitters.md)
+
+## Proof depends on
+
+- [Smaller of two finite sets of states](smaller.md)
+- [The smaller part of a split has at most half the size](two-mul-smaller-card-le-of-split.md)
 
 ## Sources
 

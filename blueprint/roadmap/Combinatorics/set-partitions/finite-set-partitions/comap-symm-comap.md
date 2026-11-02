@@ -12,7 +12,12 @@ lean: Finpartition.comap_symm_comap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](comap.md)
+
+## Proof depends on
+
+- [Pulling back a partition along a composite](comap-comap.md)
+- [Pulling back a partition along the identity](comap-refl.md)
 
 ## Sources
 

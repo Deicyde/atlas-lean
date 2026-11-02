@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
+
+## Proof depends on
+
+- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
+- [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources
 

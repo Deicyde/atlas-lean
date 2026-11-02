@@ -14,6 +14,11 @@ lean: Cslib.Bioinformatics.PopulationGenetics.HudsonKaplan.IsBreakpointSet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Four-gamete condition for two sites](four-gametes.md)
+- [Breakpoint separating two sites](separates.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.PopulationGenetics.HudsonKaplan](../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcStochasticMatrix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stochastic matrix](../../../Probability/markov-chains/kolmogorov-s-criterion-for-reversibility/stochastic-matrix.md)
+
+## Proof depends on
+
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Nonnegativity of Jukes–Cantor transition probabilities](jc-prob-nonneg.md)
+- [Rows of the Jukes–Cantor transition matrix sum to one](sum-jc-prob.md)
 
 ## Sources
 

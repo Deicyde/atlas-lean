@@ -12,7 +12,11 @@ lean: MvPowerSeries.factorial_smul_coeff_eq_constantCoeff_iteratedPDeriv_rat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated partial derivative of a multivariate power series](iterated-pderiv.md)
+
+## Proof depends on
+
+- [Factorial times a coefficient is a constant term of an iterated derivative](factorial-smul-coeff-eq-constant-coeff-i.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ profile, and the strengths then agree by injectivity of `exp`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Probability of escaping a selective sweep](escape-prob.md)
+
+## Proof depends on
+
+- [Escape probability vanishes only at the swept site](escape-prob-eq-zero-iff.md)
 
 ## Sources
 

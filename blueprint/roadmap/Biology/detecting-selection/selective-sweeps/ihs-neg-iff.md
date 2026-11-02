@@ -13,7 +13,11 @@ genealogy is the younger one, i.e. when the derived allele swept faster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integrated haplotype score (iHS)](ihs.md)
+
+## Proof depends on
+
+- [iHS as the log ratio of genealogy ages](ihs-eq-log-div.md)
 
 ## Sources
 

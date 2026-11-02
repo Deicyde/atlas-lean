@@ -12,7 +12,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.PolyPhen.NaiveBayes.joint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two-class naive Bayes model](naive-bayes.md)
 
 ## Sources
 

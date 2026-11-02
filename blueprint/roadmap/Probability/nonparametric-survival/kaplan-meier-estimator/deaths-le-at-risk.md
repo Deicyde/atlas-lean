@@ -12,7 +12,8 @@ lean: MathlibExt.Probability.Statistics.KaplanMeier.CensoredData.deaths_le_atRis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped right-censored survival data](censored-data.md)
+- [Number at risk at an observation time](at-risk.md)
 
 ## Sources
 

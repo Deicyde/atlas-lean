@@ -13,7 +13,7 @@ later time `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural filtration of a process](natural-filtration.md)
 
 ## Sources
 

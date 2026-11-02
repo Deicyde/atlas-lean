@@ -14,7 +14,14 @@ finite sum `∑ f(x_i)` for every configuration charged by the process.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson point process with finite intensity](poisson-point-process.md)
+
+## Proof depends on
+
+- [Counting measure of a finite tuple of points](counting-measure.md)
+- [Integral against a counting measure](lintegral-counting-measure.md)
+- [Measurability of the counting measure in the points](measurable-counting-measure.md)
+- [Poisson weights sum to one](tsum-coeff-mul-pow.md)
 
 ## Sources
 

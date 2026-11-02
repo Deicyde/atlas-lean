@@ -13,7 +13,7 @@ of the rank-one positive semidefinite matrices of its slices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial trace over the second factor](partial-trace-right.md)
 
 ## Sources
 

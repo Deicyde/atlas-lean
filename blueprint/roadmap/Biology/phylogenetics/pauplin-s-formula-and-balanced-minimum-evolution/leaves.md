@@ -12,7 +12,7 @@ root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with edge lengths](rtree.md)
 
 ## Sources
 

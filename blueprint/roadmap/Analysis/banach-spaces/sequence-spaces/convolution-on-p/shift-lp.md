@@ -13,6 +13,10 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.IntConvolution.shiftLp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Translation preserves $\ell^p$ membership](mem-p-shift.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.IntConvolution](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,11 @@ the necessary moment-integrability correction to the archived v1 statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic rationals](dyadic-rationals.md)
+
+## Proof depends on
+
+- [Almost sure Hölder bound on the dyadic rationals](kolmogorov-ae-holder-on-dyadics.md)
 
 ## Sources
 

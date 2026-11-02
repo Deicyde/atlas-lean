@@ -15,7 +15,15 @@ integral defining `c_m` converges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
+- [Size function of a piecewise-constant history](size-fn.md)
+- [Cumulative coalescence intensity](cum-rate.md)
+- [Expected time to the first coalescence](first-coal-mean.md)
+
+## Proof depends on
+
+- [Cumulative rate is affine on each piece](cum-rate-piece.md)
+- [Nonnegativity of piece start times](start-nonneg.md)
 
 ## Sources
 

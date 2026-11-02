@@ -13,7 +13,12 @@ positive semidefinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear marker kernel on genotype vectors](marker-kernel.md)
+- [Kernel matrix](../gaussian-process-regression/kernel-matrix.md)
+
+## Proof depends on
+
+- [Kernel matrix of the marker kernel](kernel-matrix-marker-kernel.md)
 
 ## Sources
 

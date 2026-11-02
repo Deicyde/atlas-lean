@@ -13,7 +13,10 @@ a sequence of covered-edge reversals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacent vertices in a network structure](adjacent.md)
+- [Covered-edge reversal](covered-reversal.md)
+- [Acyclic network structure](is-acyclic.md)
+- [V-structure in a directed graph](is-vstructure.md)
 
 ## Sources
 

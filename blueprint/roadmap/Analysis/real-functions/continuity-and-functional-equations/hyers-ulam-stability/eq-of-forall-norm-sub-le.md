@@ -16,6 +16,10 @@ while staying bounded by `2 * δ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm of a natural-number multiple](norm-nsmul-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.HyersUlam](../../../../../sources/v2/MathlibExt.md)

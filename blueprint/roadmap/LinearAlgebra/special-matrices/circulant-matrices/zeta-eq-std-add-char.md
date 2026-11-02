@@ -12,7 +12,7 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.zeta_eq_stdAddChar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standard primitive n-th root of unity $e^{2\pi i/n}$](zeta.md)
 
 ## Sources
 

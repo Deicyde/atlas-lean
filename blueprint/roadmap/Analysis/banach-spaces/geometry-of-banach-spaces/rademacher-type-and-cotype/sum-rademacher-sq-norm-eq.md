@@ -15,7 +15,11 @@ two values of the last sign and applies the parallelogram law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher sign of a coordinate](rademacher-sign.md)
+
+## Proof depends on
+
+- [Number of sign vectors of length n](card-sign-vectors.md)
 
 ## Sources
 

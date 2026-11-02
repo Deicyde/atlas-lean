@@ -14,7 +14,12 @@ is at most `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid p-value](../valid-p-values-and-false-discovery-proportion/is-valid-pvalue.md)
+- [Bonferroni rejection set](bonferroni-rejections.md)
+
+## Proof depends on
+
+- [Bonferroni inequality](measure-exists-le-div-le.md)
 
 ## Sources
 

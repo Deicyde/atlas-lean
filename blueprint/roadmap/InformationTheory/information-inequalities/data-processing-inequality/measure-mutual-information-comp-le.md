@@ -14,7 +14,7 @@ lean: InformationTheory.measureMutualInformation_comp_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mutual information of a joint probability measure](../../entropy-and-mutual-information/conditional-entropy-and-mutual-information/measure-mutual-information.md)
 
 ## Sources
 

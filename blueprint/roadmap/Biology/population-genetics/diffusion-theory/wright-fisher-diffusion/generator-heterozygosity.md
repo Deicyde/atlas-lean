@@ -13,7 +13,7 @@ generator with eigenvalue `-1`, so `E[H_t] = H_0 e^{-t}` (time in units of `2N` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward generator of the Wright–Fisher diffusion with selection](generator.md)
 
 ## Sources
 

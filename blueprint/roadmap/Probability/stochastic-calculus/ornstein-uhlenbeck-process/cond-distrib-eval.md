@@ -14,7 +14,13 @@ lean: ProbabilityTheory.IsOrnsteinUhlenbeckFromZero.condDistrib_eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ornstein–Uhlenbeck process started at zero](is-ornstein-uhlenbeck-from-zero.md)
+
+## Proof depends on
+
+- [Conditional law of a Gaussian process at one time given another](cond-distrib-eval-eq-of-covariance.md)
+- [Covariance of the Ornstein–Uhlenbeck process started at zero](ou-covariance.md)
+- [Variance of the Ornstein–Uhlenbeck process started at zero](ou-covariance-self.md)
 
 ## Sources
 

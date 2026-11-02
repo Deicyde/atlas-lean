@@ -12,7 +12,15 @@ lean: Cslib.Bioinformatics.PopulationStructure.WeightedLDFFT.autocorrDFT_cellCou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Autocorrelation via the discrete Fourier transform](autocorr-dft.md)
+- [Total of a per-SNP quantity over a grid cell](cell-sum.md)
+- [Number of SNP pairs at a cell offset](pair-count.md)
+
+## Proof depends on
+
+- [Zero-padded circular autocorrelation equals linear autocorrelation](autocorr-dft-eq.md)
+- [Brute-force pair sum at a cell offset](pair-sum.md)
+- [Pair sum as cross-correlation of cell totals](pair-sum-eq-sum-cell-sum.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MathlibExt.Biology.PopulationGenetics.Linkage.linkageDiseq_recombine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linkage disequilibrium of a two-locus gamete law](linkage-diseq.md)
+- [Random mating with recombination](recombine.md)
+
+## Proof depends on
+
+- [Classical form of the recombination recursion](recombine-eq-sub.md)
 
 ## Sources
 

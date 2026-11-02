@@ -13,7 +13,13 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.CockerhamCompon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
+- [Falconer's estimator](falconer.md)
+- [Additive variance of the Cockerham components](var-a-2.md)
+
+## Proof depends on
+
+- [Genetic covariance of relatives in Cockerham form](cov.md)
 
 ## Sources
 

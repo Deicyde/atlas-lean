@@ -18,6 +18,10 @@ $b_k(x) = \sqrt{2} \sin(k\pi x)$ for almost every $x \in [0, 1]$.
 - [Sine basis functions on $(0, 1)$](sine-basis-fun.md)
 - [The sine Hilbert basis of $L^2((0, 1))$](sine-hilbert-basis.md)
 
+## Proof depends on
+
+- [Orthonormality of the sine basis on the unit interval](sine-product-integral.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.GreensOperator](../../../../sources/v2/MathlibExt.md)

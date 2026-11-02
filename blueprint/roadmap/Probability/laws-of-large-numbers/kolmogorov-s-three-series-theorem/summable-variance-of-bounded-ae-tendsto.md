@@ -19,6 +19,13 @@ measure unless the variances are summable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourth-moment bound for sums of bounded independent variables](integral-pow-four-le.md)
+- [Pair of coordinates from two independent copies](pair-rv.md)
+- [Symmetrized random variable](symm-rv.md)
+- [The Paley–Zygmund inequality](../../concentration-inequalities/paley-zygmund.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ThreeSeriesNecessity](../../../../sources/v2/MathlibExt.md)

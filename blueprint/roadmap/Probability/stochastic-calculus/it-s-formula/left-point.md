@@ -13,7 +13,7 @@ an adapted `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](../it-integral/elementary-integrand.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: ProbabilityTheory.stickBreakingMeasure_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stick-breaking measure](stick-breaking-measure.md)
+- [Stick-breaking weights](stick-weight.md)
 
 ## Sources
 

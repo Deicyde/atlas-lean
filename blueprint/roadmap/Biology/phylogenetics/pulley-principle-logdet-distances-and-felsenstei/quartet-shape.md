@@ -11,7 +11,12 @@ lean: Cslib.Bioinformatics.Phylogenetics.FelsensteinZone.quartetShape
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rooted binary tree with transition weights](../felsenstein-s-pruning-algorithm/tree.md)
+- [Min-plus cost semiring](../small-parsimony-problem/cost.md)
+
+## Proof depends on
+
+- [Unit substitution cost](../small-parsimony-problem/unit-cost.md)
 
 ## Sources
 

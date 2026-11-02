@@ -13,7 +13,8 @@ vanishes on the diagonal and satisfies the four-point condition is a tree metric
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four-point condition](four-point-condition.md)
+- [Tree metric](is-tree-metric.md)
 
 ## Sources
 

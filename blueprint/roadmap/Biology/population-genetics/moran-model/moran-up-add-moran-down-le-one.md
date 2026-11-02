@@ -13,7 +13,8 @@ the probability `1 - a_i - b_i` of staying is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-step probability of the Moran process](moran-down.md)
+- [Up-step probability of the Moran process](moran-up.md)
 
 ## Sources
 

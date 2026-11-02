@@ -13,7 +13,14 @@ between them, oriented from the first class to the second.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer-valued factored tensor network](../integer-valued-factored-tensor-networks/factored.md)
+- [Interaction of two states in a factored network](../integer-valued-factored-tensor-networks/interaction.md)
+- [Merging vertices of a factored tensor network](merge.md)
+
+## Proof depends on
+
+- [Interaction is symmetric under swapping endpoints](../integer-valued-factored-tensor-networks/interaction-comm.md)
+- [Interaction of merged classes in increasing order](merge-interaction-lt.md)
 
 ## Sources
 

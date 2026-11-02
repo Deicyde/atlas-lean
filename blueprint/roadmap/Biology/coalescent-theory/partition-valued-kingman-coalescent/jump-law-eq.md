@@ -16,7 +16,17 @@ partition.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set partitions of a labeled sample](sample-partition.md)
+- [Law of Kingman's jump chain after m jumps](jump-law.md)
+- [Kingman's formula](kingman-prob.md)
+
+## Proof depends on
+
+- [Recognizing the partition into singletons by its number of blocks](../../../Combinatorics/set-partitions/finite-set-partitions/eq-bot-iff-card-parts-eq-card.md)
+- [Partition obtained by merging two blocks](is-merge.md)
+- [Jump chain of Kingman's coalescent](jump-matrix.md)
+- [Kingman's formula at the partition into singletons](kingman-prob-bot.md)
+- [Backward equation of Kingman's formula](sum-kingman-prob-is-merge.md)
 
 ## Sources
 

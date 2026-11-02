@@ -14,6 +14,11 @@ lean: ringKrullDim_eq_of_integral_of_injective
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Krull dimension does not decrease along injective integral maps](ring-krull-dim-ge-of-integral-of-injecti.md)
+- [Krull dimension does not increase along integral algebras](ring-krull-dim-le-of-integral.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Ideal.IntegralKrullDim](../../../../sources/v2/MathlibExt.md)

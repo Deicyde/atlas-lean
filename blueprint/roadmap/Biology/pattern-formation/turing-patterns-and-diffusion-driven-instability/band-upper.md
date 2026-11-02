@@ -14,6 +14,10 @@ lean: MathlibExt.Biology.Dynamics.TuringPatterns.bandUpper
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Discriminant of the dispersion polynomial](band-discriminant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.Dynamics.TuringPatterns](../../../../sources/v2/MathlibExt.md)

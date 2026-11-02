@@ -15,6 +15,11 @@ on `s` with minimum hairpin `m`, for the additive energy `e` at thermal energy `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Additive base-pair energy model](energy.md)
+- [Set of all secondary structures of a sequence](structures.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ lean: ParityProduct.two_mul_parityCoeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coefficients of the even-indicator expansion](parity-coeff.md)
 
 ## Sources
 

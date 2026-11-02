@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS.PiecewiseHist
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piecewise-constant population-size history](piecewise-history.md)
+- [Size function of a piecewise-constant history](size-fn.md)
+
+## Proof depends on
+
+- [Every nonnegative time lies in some piece](exists-piece.md)
+- [Size function on a piece equals the piece size](size-fn-eq.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ estimate is the vector of marginal estimates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal of the genotype Gram matrix](gram-diag.md)
+- [Marginal least-squares estimate of a marker effect](marginal-estimate.md)
+
+## Proof depends on
+
+- [COJO joint estimate](cojo-joint.md)
 
 ## Sources
 

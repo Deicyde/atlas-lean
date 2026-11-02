@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.Motifs.PWM.sum_siteLik
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site likelihood under a column-independent model](site-lik.md)
+- [Probability distributions on a finite latent space](../../../ComputerScience/machine-learning/bayesian-inference-and-sampling/expectation-maximization-algorithm/is-dist.md)
 
 ## Sources
 

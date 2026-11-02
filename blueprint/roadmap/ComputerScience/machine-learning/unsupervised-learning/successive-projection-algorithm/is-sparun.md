@@ -14,6 +14,10 @@ maximizes the residual norm given the earlier picks (ties broken arbitrarily).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residual of a column in the successive projection algorithm](residual.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.MatrixFactorization.SuccessiveProjection](../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ lean: Finpartition.comap_comap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pull-back of a finite partition along a map](comap.md)
+
+## Proof depends on
+
+- [Blocks of a pulled-back partition](mem-comap-parts.md)
 
 ## Sources
 

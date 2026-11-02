@@ -13,7 +13,13 @@ the interval integrals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Row integrand for the Hilbert kernel](hilbert-kernel-row.md)
+
+## Proof depends on
+
+- [Continuity of the Hilbert row integrand](hilbert-kernel-row-continuous-on.md)
+- [Nonnegativity of the Hilbert row integrand](hilbert-kernel-row-nonneg.md)
+- [Finite integral of the Hilbert row integrand](interval-integral-hilbert-kernel-row.md)
 
 ## Sources
 

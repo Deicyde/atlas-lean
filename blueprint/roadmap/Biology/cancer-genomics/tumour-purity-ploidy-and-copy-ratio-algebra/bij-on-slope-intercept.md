@@ -14,7 +14,15 @@ lean: MathlibExt.Biology.CancerGenomics.Absolute.bijOn_slope_intercept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy-ratio intercept](intercept.md)
+- [Copy-ratio slope](slope.md)
+
+## Proof depends on
+
+- [Average absolute copy number of a tumor sample](mix-copy.md)
+- [Positivity of the mixture copy number](mix-copy-pos.md)
+- [Ploidy from copy-ratio slope and intercept](ploidy-eq.md)
+- [Purity from copy-ratio slope and intercept](purity-eq.md)
 
 ## Sources
 

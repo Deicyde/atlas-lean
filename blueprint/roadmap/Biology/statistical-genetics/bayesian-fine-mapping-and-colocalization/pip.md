@@ -13,7 +13,11 @@ positive, and `pip_nonneg` and `sum_pip` prove that these values form a probabil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
+
+## Proof depends on
+
+- [Normalized weighted evidence](normalized-weighted-evidence.md)
 
 ## Sources
 

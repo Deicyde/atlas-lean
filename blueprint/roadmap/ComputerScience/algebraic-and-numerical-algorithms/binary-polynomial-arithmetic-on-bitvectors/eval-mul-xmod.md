@@ -13,7 +13,13 @@ lean: BitVec.eval₂_mulXMod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiplication by $X$ of a binary polynomial residue](mul-xmod.md)
+- [Binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial.md)
+
+## Proof depends on
+
+- [Coefficients of the binary polynomial of a bitvector](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/coeff-to-polynomial.md)
+- [Bitwise xor corresponds to polynomial addition over $\mathbb{F}_2$](../../../Algebra/polynomials/bit-vectors-as-binary-polynomials/to-polynomial-xor.md)
 
 ## Sources
 

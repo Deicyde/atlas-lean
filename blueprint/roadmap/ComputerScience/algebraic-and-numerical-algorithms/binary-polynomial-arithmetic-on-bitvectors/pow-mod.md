@@ -13,6 +13,10 @@ lean: BitVec.powMod
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Modular multiplication of binary polynomial residues](mul-mod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.BitVec.BinaryPolynomialArithmetic](../../../../sources/v2/MathlibExt.md)

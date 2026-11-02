@@ -14,6 +14,10 @@ its SFS form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tajima's $\theta_\pi$ in site frequency spectrum form](theta-pi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.Coalescent.VariableSFS](../../../../sources/v2/MathlibExt.md)

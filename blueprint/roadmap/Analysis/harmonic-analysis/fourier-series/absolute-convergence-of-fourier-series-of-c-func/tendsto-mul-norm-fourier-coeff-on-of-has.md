@@ -14,6 +14,11 @@ lean: MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable.tendsto_mul_norm_f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm form of the coefficient identity](norm-fourier-coeff-on-eq-of-has-deriv-at.md)
+- [Riemann–Lebesgue lemma on an interval](../riemann-lebesgue-lemma/tendsto-fourier-coeff-on-cofinite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable](../../../../../sources/v2/MathlibExt.md)

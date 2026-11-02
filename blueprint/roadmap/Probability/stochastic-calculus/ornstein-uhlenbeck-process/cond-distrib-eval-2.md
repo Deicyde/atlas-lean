@@ -14,7 +14,13 @@ lean: ProbabilityTheory.IsStationaryOrnsteinUhlenbeck.condDistrib_eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stationary Ornstein–Uhlenbeck process](is-stationary-ornstein-uhlenbeck.md)
+
+## Proof depends on
+
+- [Conditional law of a Gaussian process at one time given another](cond-distrib-eval-eq-of-covariance.md)
+- [Covariance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance.md)
+- [Variance of the stationary Ornstein–Uhlenbeck process](ou-stationary-covariance-self.md)
 
 ## Sources
 

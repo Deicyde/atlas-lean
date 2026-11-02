@@ -14,7 +14,12 @@ diagonal of `S`, `|S| ≥ 3` and distinct `a, b ∈ S`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neighbor-joining Q-criterion](../neighbor-joining/q-criterion.md)
+- [Balanced minimum-evolution length of a cherry tree](cherry-length.md)
+
+## Proof depends on
+
+- [Generalized Pauplin coefficient of a cherry tree](cherry-coeff.md)
 
 ## Sources
 

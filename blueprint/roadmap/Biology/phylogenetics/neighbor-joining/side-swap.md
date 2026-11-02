@@ -12,7 +12,7 @@ lean: Cslib.Bioinformatics.Phylogenetics.NeighborJoining.side_swap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Taxa on one side of a tree edge](side.md)
 
 ## Sources
 

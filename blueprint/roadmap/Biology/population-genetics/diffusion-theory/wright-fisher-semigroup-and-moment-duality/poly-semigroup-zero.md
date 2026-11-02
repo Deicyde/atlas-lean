@@ -12,7 +12,13 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.poly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
+
+## Proof depends on
+
+- [Generator of Kingman's block-counting process](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/block-counting-generator.md)
+- [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
+- [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
 
 ## Sources
 

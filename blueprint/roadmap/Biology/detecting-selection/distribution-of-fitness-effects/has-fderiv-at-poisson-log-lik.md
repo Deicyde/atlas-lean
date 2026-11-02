@@ -13,7 +13,7 @@ positive and differentiable at `ψ`: `∑ (k_i / E_i(ψ) - 1) · DE_i(ψ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson log-likelihood of counts](poisson-log-lik.md)
 
 ## Sources
 

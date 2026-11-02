@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.FineMapping.PriorWeights.evidence_p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prior weights over the causal variant](prior-weights.md)
+
+## Proof depends on
+
+- [A normalized prior gives some variant positive weight](exists-weight-pos.md)
 
 ## Sources
 

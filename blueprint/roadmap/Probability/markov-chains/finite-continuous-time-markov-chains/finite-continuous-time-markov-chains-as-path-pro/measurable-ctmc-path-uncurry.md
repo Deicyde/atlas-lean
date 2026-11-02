@@ -12,7 +12,15 @@ lean: ProbabilityTheory.measurable_ctmcPath_uncurry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+
+## Proof depends on
+
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+- [Path value between consecutive jump times](ctmc-path-eq-of-mem.md)
+- [Measurability of the jump chain](measurable-ctmc-jump-chain.md)
+- [Measurability of the jump times](measurable-ctmc-jump-time.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Analysis.InnerProductSpace.ShiftFredholmIndex.backwardCLM_pow_c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](backward-clm.md)
+- [Backward shift of a sequence](backward-fun.md)
+
+## Proof depends on
+
+- [Coordinates of the backward shift](backward-clm-apply.md)
 
 ## Sources
 

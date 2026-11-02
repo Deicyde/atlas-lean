@@ -12,7 +12,19 @@ lean: Cslib.Language.abc_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminals of the $a^n b^n c^n$ grammar](abc.md)
+- [Nonterminals of the $a^n b^n c^n$ grammar](abcnt.md)
+- [Context-sensitive grammar for $a^n b^n c^n$](abc-grammar.md)
+- [Language of an unrestricted grammar](language.md)
+
+## Proof depends on
+
+- [Derivations in a string rewriting system](../../undecidable-problems/string-rewriting-systems/derives.md)
+- [Rewriting rules](../../undecidable-problems/string-rewriting-systems/rule.md)
+- [One-step rewriting](../../undecidable-problems/string-rewriting-systems/step.md)
+- [Unrestricted grammar](csgrammar.md)
+- [Derivation in an unrestricted grammar](derives.md)
+- [Applying a production in context is a grammar step](step.md)
 
 ## Sources
 

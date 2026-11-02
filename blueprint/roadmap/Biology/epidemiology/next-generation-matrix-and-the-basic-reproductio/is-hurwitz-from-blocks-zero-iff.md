@@ -13,7 +13,11 @@ blocks are.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz matrix](../../../LinearAlgebra/special-matrices/m-matrices-and-hurwitz-stability/is-hurwitz.md)
+
+## Proof depends on
+
+- [Eigenvalues of a block lower-triangular matrix](mem-spectrum-from-blocks-zero.md)
 
 ## Sources
 

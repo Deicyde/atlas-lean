@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional.not_isOp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weakly open sets are unbounded in infinite dimensions](exists-norm-gt-of-is-open.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.WeakTopologyInfiniteDimensional](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ lean: InformationTheory.toReal_le_map_apply
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Atom mass is at most the mass of its image](le-map-apply.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.ConditionalMutualInformation](../../../../sources/v2/MathlibExt.md)

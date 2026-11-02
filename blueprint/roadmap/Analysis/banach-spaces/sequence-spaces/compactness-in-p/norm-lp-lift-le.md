@@ -14,7 +14,11 @@ The norm on the source Pi type `Fin N → 𝕜` is the supremum norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift of a coordinate function to a truncated $\ell^p$ sequence](lp-lift.md)
+
+## Proof depends on
+
+- [Pointwise action of the finite $\ell^p$ lift](lp-lift-apply.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ some inserted element to `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom filter](bloom-filter.md)
+- [Inserting a list of elements into a Bloom filter](insert-all.md)
+
+## Proof depends on
+
+- [Bits set by an insertion](bit-insert-iff.md)
+- [Bloom filter insertion](insert.md)
 
 ## Sources
 

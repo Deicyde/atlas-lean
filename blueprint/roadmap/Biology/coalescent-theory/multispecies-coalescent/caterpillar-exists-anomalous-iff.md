@@ -15,7 +15,25 @@ tree, if and only if `y < a(x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clusters of a species tree](clusters.md)
+- [Boundary of the four-species anomaly zone](anomaly-a.md)
+- [Caterpillar four-species tree](caterpillar.md)
+- [The multispecies coalescent](gene-tree-prob.md)
+
+## Proof depends on
+
+- [Balanced gene tree on four genes](is-balanced-gene-tree.md)
+- [Balanced four-gene tree](balanced-tree.md)
+- [Caterpillar four-gene tree](caterpillar-tree.md)
+- [Anomalous gene tree on four species](caterpillar-anomalous-iff.md)
+- [Only balanced gene trees can be anomalous on the caterpillar](caterpillar-le-matching.md)
+- [Clusters of the caterpillar species tree](clusters-caterpillar.md)
+- [Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D))](dr-g.md)
+- [$g(x, y) \le h(x, y)$ for a nonnegative shallower branch](dr-g-le-dr-h.md)
+- [Degnan–Rosenberg formula h for the gene tree ((A, B), (C, D))](dr-h.md)
+- [Probability of the gene tree ((A, B), (C, D)) on the caterpillar](gene-tree-prob-caterpillar-ab-cd.md)
+- [Probability of the gene tree ((A, C), (B, D)) on the caterpillar](gene-tree-prob-caterpillar-ac-bd.md)
+- [Probability of the gene tree ((A, D), (B, C)) on the caterpillar](gene-tree-prob-caterpillar-ad-bc.md)
 
 ## Sources
 

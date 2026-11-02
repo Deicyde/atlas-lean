@@ -12,7 +12,11 @@ lean: MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum.zeta_isPrimitiveRoot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standard primitive n-th root of unity $e^{2\pi i/n}$](zeta.md)
+
+## Proof depends on
+
+- [Standard root of unity as the standard additive character](zeta-eq-std-add-char.md)
 
 ## Sources
 

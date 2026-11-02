@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.FunctionalAnalysis.Rolewicz.smul_backwardShiftCLM_pow_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Backward shift](../unilateral-shift/backward-clm.md)
 
 ## Sources
 

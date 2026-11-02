@@ -12,7 +12,11 @@ of the ancestral partitions of `h`, i.e. the set of descendants of some lineage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](../ranked-labeled-histories-of-coalescent-trees/ranked-history.md)
+
+## Proof depends on
+
+- [Ancestral partitions along a history as sets of blocks](../ranked-labeled-histories-of-coalescent-trees/partitions-of.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lineage label; entry `t` (for `t < n`) is the partition after `t` coalescence ev
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranked labeled history](ranked-history.md)
+
+## Proof depends on
+
+- [Lineage blocks after the first coalescence events](blocks-after.md)
 
 ## Sources
 

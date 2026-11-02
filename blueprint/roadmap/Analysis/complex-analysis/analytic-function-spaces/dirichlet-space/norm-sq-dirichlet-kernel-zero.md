@@ -12,7 +12,11 @@ lean: MathlibExt.Analysis.InnerProductSpace.DirichletSpace.norm_sq_dirichletKern
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reproducing kernel of the Dirichlet space](dirichlet-kernel.md)
+
+## Proof depends on
+
+- [Dirichlet kernel at the origin is the first basis vector](dirichlet-kernel-zero.md)
 
 ## Sources
 

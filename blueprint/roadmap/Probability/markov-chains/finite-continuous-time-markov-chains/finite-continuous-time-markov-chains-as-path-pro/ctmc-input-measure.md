@@ -11,7 +11,11 @@ lean: ProbabilityTheory.ctmcInputMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+
+## Proof depends on
+
+- [Law of one step of the chain construction](ctmc-step-measure.md)
 
 ## Sources
 

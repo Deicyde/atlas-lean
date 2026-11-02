@@ -13,7 +13,9 @@ the error is `e k = ∑ i, X i k ε i / N` and its sampling variance is `(1 - h�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Training genotype matrix with orthogonal standardized columns](has-orthogonal-columns.md)
+- [Effect-estimate model for polygenic score accuracy](prsmodel.md)
+- [Random-effects model of LD-score regression](../ld-score-regression/model.md)
 
 ## Sources
 

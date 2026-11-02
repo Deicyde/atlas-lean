@@ -16,7 +16,19 @@ event `{history ∈ A, Y n = k}` and distributed as the chain started at `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Law of the driving step sequence of a Markov chain](ctmc-input-measure.md)
+- [Jump chain of a continuous-time Markov chain](ctmc-jump-chain.md)
+- [Jump times of a continuous-time Markov chain](ctmc-jump-time.md)
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+
+## Proof depends on
+
+- [Row of the jump matrix as a probability mass function](ctmc-jump-pmf.md)
+- [Path restarts at a jump time](ctmc-path-jump-time-add.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
+- [Law of one step of the chain construction](ctmc-step-measure.md)
+- [Measurability of the chain state at a fixed time](measurable-ctmc-path.md)
 
 ## Sources
 

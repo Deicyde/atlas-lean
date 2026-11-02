@@ -13,6 +13,10 @@ lean: Cslib.Bioinformatics.RNA.PartitionFunction.structures
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Secondary structures within an interval](structures-in.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.RNA.PartitionFunction](../../../../sources/v2/CSLibExt.md)

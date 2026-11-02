@@ -12,7 +12,14 @@ lean: MathlibExt.Biology.PopulationGenetics.AdmixtureGraph.weight_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admixture graph](admixture-graph.md)
+- [Edges of an admixture graph](edge.md)
+- [Lineage weight of an edge in an admixture graph](weight.md)
+
+## Proof depends on
+
+- [Probability that a lineage passes through a node](visit.md)
+- [Nonnegativity of visit probabilities](visit-nonneg.md)
 
 ## Sources
 

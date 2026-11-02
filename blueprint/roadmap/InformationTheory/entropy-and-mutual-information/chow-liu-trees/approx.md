@@ -13,7 +13,7 @@ marginal `P(x_i)` for a parentless `i`. The conditional `P(x_i | x_j)` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependence forest](dependence-forest.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.sum_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Fisher's average effect of an allele at a single locus](alpha.md)
+
+## Proof depends on
+
+- [Average effects have mean zero](../fisher-s-decomposition-of-genetic-variance/sum-mul-avg-effect.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ lean: MathlibExt.Biology.Dynamics.MichaelisMenten.tendsto_fastTransient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fast transient of the complex with frozen substrate](fast-transient.md)
+- [Michaelis constant](michaelis-constant.md)
+- [Quasi-steady-state value of the complex](qss-complex.md)
 
 ## Sources
 

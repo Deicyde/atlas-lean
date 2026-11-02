@@ -18,7 +18,12 @@ the Legendre-rate Cramér upper bound requires further arguments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Law of the empirical mean](empirical-mean-measure-vec.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
+
+## Proof depends on
+
+- [Fixed-direction Chernoff bound](cramer-upper-bound.md)
 
 ## Sources
 

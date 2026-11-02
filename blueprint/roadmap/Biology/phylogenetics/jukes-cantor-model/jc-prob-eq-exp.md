@@ -13,7 +13,14 @@ lean: MathlibExt.Biology.Phylogenetics.JukesCantor.jcProb_eq_exp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jukes–Cantor transition probability](jc-prob.md)
+- [Jukes–Cantor rate matrix as a matrix](jc-rate-matrix.md)
+
+## Proof depends on
+
+- [Eigenbasis of the Jukes–Cantor rate matrix](jc-eigenbasis.md)
+- [Invertible Jukes–Cantor eigenbasis](jc-eigenbasis-unit.md)
+- [Diagonalization of the Jukes–Cantor rate matrix](smul-jc-rate-matrix-eq.md)
 
 ## Sources
 

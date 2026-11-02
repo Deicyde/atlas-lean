@@ -17,7 +17,23 @@ with respect to the natural filtration: arbitrary events of the path before `s` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rate matrix](../rate-matrices-of-finite-continuous-time-markov-c/is-rate-matrix.md)
+- [Law of the driving step sequence of a Markov chain](ctmc-input-measure.md)
+- [Path of a continuous-time Markov chain](ctmc-path.md)
+- [Transition semigroup of a continuous-time Markov chain](../semigroup/ctmc-transition.md)
+
+## Proof depends on
+
+- [Kolmogorov](ctmc-input-measure-real-ctmc-path-eq.md)
+- [Row of the jump matrix as a probability mass function](ctmc-jump-pmf.md)
+- [Diagonal entries of a rate matrix are nonpositive](../rate-matrices-of-finite-continuous-time-markov-c/diag-nonpos.md)
+- [Holding times of a continuous-time Markov chain](ctmc-holding-time.md)
+- [First-jump decomposition](ctmc-path-eq-ite.md)
+- [Shift of the step sequence of a Markov chain](ctmc-shift.md)
+- [Law of one step of the chain construction](ctmc-step-measure.md)
+- [Integrals against the exponential law](../../../distributions/exponential-distribution/integral-exp-measure-eq-set-integral.md)
+- [Measurability of the chain state at a fixed time](measurable-ctmc-path.md)
+- [Joint measurability of the chain path in time and steps](measurable-ctmc-path-uncurry.md)
 
 ## Sources
 

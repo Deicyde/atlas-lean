@@ -16,7 +16,14 @@ for every `t ≥ 0` and every initial value `X₀`, the Itô–Riemann sums
 
 ## Depends on
 
-This node has no prerequisites.
+- [Itô integral of an elementary integrand](ito-integral.md)
+- [Left-point step approximation of a deterministic integrand](riemann.md)
+- [Pathwise solution of the Langevin equation](../ornstein-uhlenbeck-process/ou-path-solution.md)
+
+## Proof depends on
+
+- [Itô–Riemann sums of a deterministic `C¹` integrand](tendsto-ito-integral-riemann.md)
+- [Ornstein–Uhlenbeck path solution by integration by parts](ou-path-solution-eq-integration-by-parts.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ p-value `P(∑ X i ≥ k)` is the Poisson-binomial tail.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli random variable](is-bernoulli-rv.md)
+- [Upper tail of the Poisson-binomial law](poisson-binomial-tail.md)
+
+## Proof depends on
+
+- [Distribution of a sum of independent Bernoulli variables](bernoulli-sum-pmf.md)
+- [Poisson-binomial mass function](poisson-binomial-pmf.md)
+- [Poisson-binomial masses sum to one](sum-poisson-binomial-pmf.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ p-value is at most `q * bhIndex q p / m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Benjamini–Hochberg step-up index](bh-index.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.MultipleTesting.BenjaminiHochberg](../../../../sources/v2/MathlibExt.md)

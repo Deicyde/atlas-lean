@@ -12,7 +12,7 @@ lean: ProbabilityTheory.gammaMeasure_real_Ioi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper incomplete gamma function](upper-incomplete-gamma.md)
 
 ## Sources
 

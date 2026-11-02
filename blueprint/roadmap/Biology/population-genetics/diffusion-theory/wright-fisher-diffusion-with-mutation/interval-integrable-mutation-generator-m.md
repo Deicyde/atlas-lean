@@ -14,7 +14,13 @@ genuine (not junk) value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher generator with two-way mutation](mutation-generator.md)
+
+## Proof depends on
+
+- [Beta density as Wright's stationary density](beta-pdfreal-eq-wright-density.md)
+- [Integrability of Wright's density on the unit interval](../wright-fisher-diffusion/interval-integrable-wright-density.md)
+- [Wright's stationary density of the Wright–Fisher diffusion](../wright-fisher-diffusion/wright-density.md)
 
 ## Sources
 

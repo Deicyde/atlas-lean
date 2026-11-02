@@ -11,7 +11,11 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.IsDescendant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](../bayesian-networks/bayes-net.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](edge.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Biology.StatisticalGenetics.Eigenstrat.inner_adjusted_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residualized vector after adjustment for a subspace](adjusted.md)
+
+## Proof depends on
+
+- [Residuals lie in the orthogonal complement](adjusted-mem-orthogonal.md)
 
 ## Sources
 

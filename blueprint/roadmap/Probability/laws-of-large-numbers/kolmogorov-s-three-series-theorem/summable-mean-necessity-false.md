@@ -23,7 +23,11 @@ form is what the corrected assembly theorem needs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncation of a random variable](truncated-rv.md)
+
+## Proof depends on
+
+- [Formula for the truncated random variable](truncated-rv-apply.md)
 
 ## Sources
 

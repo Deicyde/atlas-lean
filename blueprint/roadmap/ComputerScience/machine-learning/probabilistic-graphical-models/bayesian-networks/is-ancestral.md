@@ -11,7 +11,11 @@ lean: Cslib.MachineLearning.GraphicalModels.BayesNet.IsAncestral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayesian network](bayes-net.md)
+
+## Proof depends on
+
+- [Edge of a Bayesian network](../causal-bayesian-networks/edge.md)
 
 ## Sources
 

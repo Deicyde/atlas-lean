@@ -14,6 +14,11 @@ occurrences: one edge per `k`-mer occurrence, in order of position.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [De Bruijn edge of a k-mer](kmer-edge.md)
+- [The k-mers of a string](kmers.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Bioinformatics.Assembly.DeBruijn](../../../../sources/v2/CSLibExt.md)

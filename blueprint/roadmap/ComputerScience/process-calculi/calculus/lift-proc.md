@@ -12,7 +12,12 @@ increased cutoff.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Processes of the π-calculus](proc.md)
+
+## Proof depends on
+
+- [Channel name in the π-calculus](name.md)
+- [Lifting free de Bruijn indices of a π-calculus name](lift-name.md)
 
 ## Sources
 

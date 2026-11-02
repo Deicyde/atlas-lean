@@ -12,7 +12,12 @@ lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.ldPmf_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luria–Delbrück distribution](ld-pmf.md)
+
+## Proof depends on
+
+- [Lea–Coulson clone-size law](clone-prob.md)
+- [Convolution power of a sequence on the naturals](conv-pow.md)
 
 ## Sources
 

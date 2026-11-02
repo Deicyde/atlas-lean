@@ -12,7 +12,20 @@ lean: MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives.LocusModel.relC
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genetic covariance of relatives in Cockerham form](cov.md)
+- [Single-locus model under random union of gametes](locus-model.md)
+- [Population mean genotypic value at a single locus](mean.md)
+- [Mean product of genotypic values of two relatives](rel-prod.md)
+- [Single-locus model as Cockerham components](to-components.md)
+
+## Proof depends on
+
+- [Cockerham–Kempthorne variance components](cockerham-components.md)
+- [Covariance between relatives](rel-cov-eq.md)
+- [Additive variance at a single locus](var-a.md)
+- [Nonnegativity of the single-locus additive variance](var-a-nonneg.md)
+- [Dominance variance at a single locus](var-d.md)
+- [Nonnegativity of the single-locus dominance variance](var-d-nonneg.md)
 
 ## Sources
 

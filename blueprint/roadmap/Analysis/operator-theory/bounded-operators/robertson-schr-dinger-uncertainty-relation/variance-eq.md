@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.InnerProductSpace.RobertsonUncertainty.variance_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized expectation value of an observable](mean-value.md)
+- [Normalized variance of an observable](variance.md)
+
+## Proof depends on
+
+- [Centered state vector of an observable](centered.md)
+- [Flipped expectation inner product of a self-adjoint operator](inner-right-of-is-self-adjoint.md)
+- [Expectation inner product of a self-adjoint operator](inner-self-of-is-self-adjoint.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: ProbabilityTheory.blackwellMacQueen_succ_pi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blackwell–MacQueen urn](blackwell-mac-queen.md)
+- [Blackwell–MacQueen urn predictive law](../dirichlet-process/polya-urn-predictive.md)
 
 ## Sources
 

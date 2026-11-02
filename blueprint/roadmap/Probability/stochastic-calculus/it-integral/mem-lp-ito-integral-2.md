@@ -12,7 +12,8 @@ lean: ProbabilityTheory.ElementaryIntegrand.memLp_itoIntegral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elementary integrand](elementary-integrand.md)
+- [Itô integral of an elementary integrand](ito-integral.md)
 
 ## Sources
 

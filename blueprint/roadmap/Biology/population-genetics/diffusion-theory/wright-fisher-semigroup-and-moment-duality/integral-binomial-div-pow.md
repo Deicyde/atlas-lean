@@ -15,7 +15,11 @@ generation with `M ≥ 1` gene copies is `Bin(M, x)`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wright–Fisher transition probability of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-prob.md)
+
+## Proof depends on
+
+- [Moment duality, one generation (polynomial identity)](sum-binomial-mul-div-pow.md)
 
 ## Sources
 

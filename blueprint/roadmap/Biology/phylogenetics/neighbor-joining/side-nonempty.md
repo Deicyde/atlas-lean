@@ -12,7 +12,8 @@ lean: Cslib.Bioinformatics.Phylogenetics.NeighborJoining.side_nonempty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary phylogenetic tree](is-binary-phylogenetic-tree.md)
+- [Taxa on one side of a tree edge](side.md)
 
 ## Sources
 

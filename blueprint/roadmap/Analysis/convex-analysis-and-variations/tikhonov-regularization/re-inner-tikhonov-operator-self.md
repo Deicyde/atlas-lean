@@ -13,7 +13,11 @@ with `x` itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal operator of the Tikhonov problem](tikhonov-operator.md)
+
+## Proof depends on
+
+- [Inner product of the Tikhonov normal operator with its argument](tikhonov-operator-inner-self.md)
 
 ## Sources
 

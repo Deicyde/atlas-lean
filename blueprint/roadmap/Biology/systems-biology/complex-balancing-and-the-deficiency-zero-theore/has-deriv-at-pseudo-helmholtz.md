@@ -13,7 +13,10 @@ mass-action system, at any time where the solution is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chemical reaction network](reaction-network.md)
+- [Rate of change of the pseudo-Helmholtz function](helmholtz-rate.md)
+- [Mass-action vector field](mass-action-field.md)
+- [Pseudo-Helmholtz function](pseudo-helmholtz.md)
 
 ## Sources
 

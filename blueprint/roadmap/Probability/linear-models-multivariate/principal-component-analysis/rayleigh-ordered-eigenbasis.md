@@ -12,7 +12,13 @@ lean: MathlibExt.Probability.Statistics.PCA.rayleigh_orderedEigenbasis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered orthonormal eigenbasis of a symmetric matrix](ordered-eigenbasis.md)
+- [Eigenvalues of a symmetric matrix in decreasing order](ordered-eigenvalues.md)
+- [Rayleigh quotient of a matrix](rayleigh.md)
+
+## Proof depends on
+
+- [Quadratic form expanded in the ordered eigenbasis](dot-product-mul-vec-eq-sum.md)
 
 ## Sources
 

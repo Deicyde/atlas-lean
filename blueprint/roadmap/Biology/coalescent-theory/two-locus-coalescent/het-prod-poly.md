@@ -13,6 +13,11 @@ lean: MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent.hetProdPoly
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frequency of allele A as a polynomial](freq-fst-poly.md)
+- [Frequency of allele B as a polynomial](freq-snd-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent](../../../../sources/v2/MathlibExt.md)

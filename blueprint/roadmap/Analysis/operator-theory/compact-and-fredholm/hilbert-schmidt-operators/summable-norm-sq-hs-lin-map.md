@@ -12,7 +12,13 @@ lean: MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.summable_norm_sq_hsLi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert–Schmidt matrix](is-hilbert-schmidt.md)
+- [Hilbert–Schmidt operator as a linear map](hs-lin-map.md)
+
+## Proof depends on
+
+- [Hilbert–Schmidt matrix maps ℓ² vectors into ℓ²](mem-p-hs-coord.md)
+- [Square-summability of coordinates of an ℓ² vector](summable-norm-sq-of-mem-p.md)
 
 ## Sources
 

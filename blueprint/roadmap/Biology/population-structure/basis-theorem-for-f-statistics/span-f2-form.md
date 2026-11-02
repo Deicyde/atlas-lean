@@ -13,7 +13,16 @@ f-statistic is a linear combination of the `f2 Pᵢ Pⱼ`, `i < j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Per-locus f2 form](f2-form.md)
+- [Space spanned by the per-locus f-statistics](f-space.md)
+
+## Proof depends on
+
+- [Symmetry of the per-locus f2 form](f2-form-comm.md)
+- [Every f2 form lies in the f-statistic space](f2-form-mem-f-space.md)
+- [Per-locus f2 form of a population with itself is zero](f2-form-self.md)
+- [Per-locus f4 form](f4-form.md)
+- [Polarization identity for the per-locus f4 form](f4-form-eq.md)
 
 ## Sources
 

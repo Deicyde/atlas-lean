@@ -12,7 +12,8 @@ lean: MvPowerSeries.coeff_expOperator_def
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal exponential of a coefficient operator](exp-operator.md)
+- [Partial sums of the exponential of a coefficient operator](exp-operator-partial.md)
 
 ## Sources
 

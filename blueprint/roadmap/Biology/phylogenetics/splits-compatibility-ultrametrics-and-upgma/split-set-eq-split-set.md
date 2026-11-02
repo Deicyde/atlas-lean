@@ -12,7 +12,13 @@ lean: Cslib.Bioinformatics.Phylogenetics.Splits.splitSet_eq_splitSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Split set of a tree computed from a leaf](split-set.md)
+- [Unrooted binary phylogenetic tree](../counting-unrooted-binary-phylogenetic-trees/unrooted-binary-tree.md)
+
+## Proof depends on
+
+- [Edge splits of a tree](edge-splits.md)
+- [Split set from any leaf equals the edge splits](split-set-eq-edge-splits.md)
 
 ## Sources
 

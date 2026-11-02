@@ -22,6 +22,10 @@ of the codomain, as in the proof of S. Axler, Linear Algebra Done Right,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complex SVD with nonincreasing singular values](exists-unitary-group-rectangular-diagona.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.ComplexSVD](../../../../sources/v2/MathlibExt.md)

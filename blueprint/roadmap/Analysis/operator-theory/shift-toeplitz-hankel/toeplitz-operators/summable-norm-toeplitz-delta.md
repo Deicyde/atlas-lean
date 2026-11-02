@@ -12,7 +12,7 @@ lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzOperator.summable_norm_toepl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delta symbol for Toeplitz operators](toeplitz-delta.md)
 
 ## Sources
 

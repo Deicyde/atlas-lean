@@ -12,7 +12,12 @@ lean: MathlibExt.Probability.LinearBirthDeath.hasDerivAt_prob_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kendall's law of the linear birth–death process](prob.md)
+
+## Proof depends on
+
+- [Kendall's extinction probability for the birth–death process](extinction-prob.md)
+- [Kendall's geometric tail ratio](geom-ratio.md)
 
 ## Sources
 

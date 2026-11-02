@@ -15,6 +15,10 @@ the sum over the `i` factors from which the linear term is selected.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expansion of a product of affine linear polynomials](prod-c-add-x-mul-c-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.AffineProduct](../../../../sources/v2/MathlibExt.md)

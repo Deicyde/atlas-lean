@@ -12,7 +12,13 @@ lean: Cslib.Logic.PL.CNF.isThreeCNF_to3Parsimonious
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF formula](../conjunctive-normal-form/cnf.md)
+- [Parsimonious reduction of CNF to 3-CNF](to3-parsimonious.md)
+- [CNF clause](../conjunctive-normal-form/cnfclause.md)
+
+## Proof depends on
+
+- [Number of fresh variables in the parsimonious 3-CNF reduction](num-fresh-parsimonious3.md)
 
 ## Sources
 

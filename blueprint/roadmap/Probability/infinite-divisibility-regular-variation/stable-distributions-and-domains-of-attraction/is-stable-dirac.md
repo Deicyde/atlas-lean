@@ -13,7 +13,12 @@ These are degenerate rescaling identities, with centering `na - n^(1/α)a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stable distribution of a given index](is-stable.md)
+
+## Proof depends on
+
+- [Convolution power of a measure](../infinitely-divisible-distributions/conv-pow.md)
+- [Convolution powers of a Dirac measure](../infinitely-divisible-distributions/conv-pow-dirac.md)
 
 ## Sources
 

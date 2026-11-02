@@ -13,7 +13,12 @@ attached to `u` is `u` itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The unilateral shift operator](shift-clm.md)
+- [Geometric unit vector attached to a point of the disc](geom.md)
+
+## Proof depends on
+
+- [Quadratic form of the forward shift as a series](quad-form-fwd-shift-eq-tsum.md)
 
 ## Sources
 
