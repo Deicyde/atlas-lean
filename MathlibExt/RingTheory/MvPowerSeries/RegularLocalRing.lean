@@ -44,7 +44,7 @@ local ring are regular local.
 
 @[expose] public section
 
-/-- Multivariable power series over a regular local ring form a
+/-- **Multivariable power series over a regular local ring are regular local.** Multivariable power series over a regular local ring form a
 regular local ring. The discrete-valuation-ring case follows by typeclass
 inference, since a DVR is a regular local ring. -/
 theorem IsRegularLocalRing.mvPowerSeries_fin (𝓞 : Type*) [CommRing 𝓞]

@@ -956,7 +956,7 @@ theorem run (m : Mode) (x w : List Bool) (v : Bool) (St : ∀ _ : K, List Sym)
         have hk : k ≤ L := by omega
         nlinarith
 
-/-- Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`). -/
+/-- **Distinctness of CLIQUE verifier pairs (moved alias).** Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`). -/
 @[deprecated Karp.pairs_nodup (since := "2026-10-15")]
 theorem pairs_nodup (n : ℕ) : (pairs n).Nodup := Karp.pairs_nodup n
 

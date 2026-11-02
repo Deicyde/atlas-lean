@@ -41,7 +41,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- The closed walk of faces to the left of the darts in one period of the boundary orbit of `a`. -/
+/-- **Face loop left of one period of a boundary orbit.** The closed walk of faces to the left of the darts in one period of the boundary orbit of `a`. -/
 noncomputable def mpl_orbitFaceLoop (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     (faceBoundaryGraph K).Walk (dartFace a.1) (dartFace a.1) :=
   (dartOrbitFaceWalk K a.1 a.2 (dartOrbitPeriod K a)).copy rfl
@@ -62,7 +62,7 @@ theorem mpl_orbitFaceLoop_edges_bdEdge (K : Set (Site 2))
   rw [mpl_orbitFaceLoop, SimpleGraph.Walk.edges_copy] at h
   exact dartOrbitFaceWalk_edges_bdEdge K a.1 a.2 _ h
 
-/-- The closed face walk of one period of the orbit of `a`, as a walk in the square lattice. -/
+/-- **Minimal-period orbit loop as a lattice walk.** The closed face walk of one period of the orbit of `a`, as a walk in the square lattice. -/
 noncomputable def mpl_orbitLoop (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     (hypercubicLattice 2).Walk (dartFace a.1) (dartFace a.1) :=
   (mpl_orbitFaceLoop K a).mapLe (faceBoundaryGraph_le K)

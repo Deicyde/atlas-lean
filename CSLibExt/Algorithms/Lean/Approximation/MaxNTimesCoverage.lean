@@ -53,25 +53,25 @@ open Finset
 
 variable {A X : Type*}
 
-/-- The number of times the overlays `O` cover the element `i` (equation (1)). -/
+/-- **Cover count of an element under a family of overlays.** The number of times the overlays `O` cover the element `i` (equation (1)). -/
 def coverCount (c : A → X → ℕ) (O : Finset A) (i : X) : ℕ := ∑ j ∈ O, c j i
 
-/-- The `n`-times coverage function: the total weight of the elements covered at least `n`
+/-- **The n-times coverage function.** The `n`-times coverage function: the total weight of the elements covered at least `n`
 times by `O` (equation (2)). -/
 def nCoverage [Fintype X] (w : X → ℝ) (c : A → X → ℕ) (n : ℕ) (O : Finset A) : ℝ :=
   ∑ i, if n ≤ coverCount c O i then w i else 0
 
-/-- A set function is submodular if adding an element to a larger set gains at most as much
+/-- **Submodular set function.** A set function is submodular if adding an element to a larger set gains at most as much
 as adding it to a smaller set (the diminishing-returns form, Definition 2 of the paper). -/
 def IsSubmodular [DecidableEq A] (f : Finset A → ℝ) : Prop :=
   ∀ S T : Finset A, ∀ x, S ⊆ T → x ∉ T → f (insert x T) - f T ≤ f (insert x S) - f S
 
-/-- More overlays cover every element at least as often. -/
+/-- **Monotonicity of the cover count in the overlays.** More overlays cover every element at least as often. -/
 theorem coverCount_mono (c : A → X → ℕ) {O O' : Finset A} (h : O ⊆ O') (i : X) :
     coverCount c O i ≤ coverCount c O' i :=
   sum_le_sum_of_subset h
 
-/-- For nonnegative weights the `n`-times coverage function is monotone. -/
+/-- **Monotonicity of n-times coverage for nonnegative weights.** For nonnegative weights the `n`-times coverage function is monotone. -/
 theorem nCoverage_mono [Fintype X] {w : X → ℝ} (hw : ∀ i, 0 ≤ w i) (c : A → X → ℕ) (n : ℕ)
     {O O' : Finset A} (h : O ⊆ O') : nCoverage w c n O ≤ nCoverage w c n O' := by
   refine sum_le_sum fun i _ => ?_
@@ -95,7 +95,7 @@ theorem not_isSubmodular_nCoverage {n : ℕ} (hn : 2 ≤ n) :
   simp [show ¬n ≤ n - 1 by omega, show ¬n ≤ 1 by omega, show ¬n ≤ 0 by omega] at key
   linarith
 
-/-- For `n = 1` (weighted maximum coverage) and nonnegative weights, the objective is
+/-- **Weighted maximum coverage is submodular.** For `n = 1` (weighted maximum coverage) and nonnegative weights, the objective is
 submodular. -/
 theorem isSubmodular_nCoverage_one [Fintype X] [DecidableEq A] {w : X → ℝ}
     (hw : ∀ i, 0 ≤ w i) (c : A → X → ℕ) : IsSubmodular (nCoverage w c 1) := by

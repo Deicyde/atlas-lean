@@ -400,7 +400,7 @@ theorem sum_pivotalClosed_eq (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) :
   refine Finset.sum_congr rfl (fun e _ => ?_)
   rw [pivotalProb_closed_factor p hp n (↑e : Sym2 (Site d))]; ring
 
-/-- The **Duminil-Copin–Tassion differential inequality**: if `φ_p(S) ≥ m` for every finite
+/-- **Duminil-Copin–Tassion differential inequality.** The **Duminil-Copin–Tassion differential inequality**: if `φ_p(S) ≥ m` for every finite
 `S ∋ 0`, then `d/dp ℙ_p(A_n) ≥ (p(1 - p))⁻¹ m (1 - ℙ_p(A_n))` for `0 < p < 1` and `n ≥ 1`
 (Duminil-Copin–Tassion 2016). -/
 theorem dct_differential_inequality (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) (hn : 1 ≤ n)
@@ -562,7 +562,7 @@ theorem crossProbReal_eq_prob (n : ℕ) {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1
   rw [hcr, crossProb_eq_boxCrossProb _ _ _ (by omega), boxCrossProb_eq_prob,
       Real.coe_toNNReal t ht0]
 
-/-- The polynomial `t ↦ ℙ_t(A_{n+1})` (the box-crossing probability as a polynomial in the
+/-- **Box-crossing probability as a polynomial in the density.** The polynomial `t ↦ ℙ_t(A_{n+1})` (the box-crossing probability as a polynomial in the
 density), defined for all real `t`. -/
 noncomputable def crossPoly (d n : ℕ) (t : ℝ) : ℝ :=
   prob t ((boxEdgeFinset d (n + 1)).restrict '' (boxCrossingEvent d (n + 1)))

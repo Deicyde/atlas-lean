@@ -281,7 +281,7 @@ end MvPowerSeriesAdicCompleteAux
 
 namespace MvPowerSeries
 
-/-- If `R` is adically complete at its maximal ideal, then `MvPowerSeries σ R`
+/-- **Adic completeness of multivariate power series.** If `R` is adically complete at its maximal ideal, then `MvPowerSeries σ R`
 is adically complete at its maximal ideal. -/
 theorem isAdicComplete_maximalIdeal {σ : Type u} {R : Type v} [Finite σ] [CommRing R]
     [IsLocalRing R] [IsAdicComplete (IsLocalRing.maximalIdeal R) R] :

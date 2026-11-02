@@ -28,7 +28,7 @@ namespace Nat.Partition
 
 open Finset
 
-/-- Removing `k` copies of the positive part `v` gives a bijection from partitions of `E`
+/-- **Bijection removing $k$ copies of a part from partitions.** Removing `k` copies of the positive part `v` gives a bijection from partitions of `E`
 containing at least `k` copies of `v` to partitions of `E - k * v`. -/
 theorem card_count_ge {E v k : ℕ} (hv : 1 ≤ v) (hkv : k * v ≤ E) :
     Fintype.card {p : Partition E // k ≤ p.parts.count v} =
@@ -64,7 +64,7 @@ theorem card_count_ge {E v k : ℕ} (hv : 1 ≤ v) (hkv : k * v ≤ E) :
       right_inv := fun p => Partition.ext Multiset.add_sub_cancel_right }
   exact Fintype.card_congr e
 
-/-- The number of integer partitions is monotone in the integer being partitioned. -/
+/-- **Monotonicity of the partition function.** The number of integer partitions is monotone in the integer being partitioned. -/
 theorem card_monotone : Monotone fun E => Fintype.card (Partition E) := by
   intro E E' hEE'
   have hcount := card_count_ge (E := E') (v := 1) (k := E' - E) (by omega) (by omega)
@@ -97,7 +97,7 @@ private theorem card_filter_Icc_le_count {E : ℕ} (p : Partition E) {v : ℕ}
     omega
   rw [heq, Nat.card_Icc, Nat.add_sub_cancel]
 
-/-- A recurrence obtained by summing all parts of all partitions of `E`, first by partition
+/-- **Sum-of-parts recurrence for the partition function.** A recurrence obtained by summing all parts of all partitions of `E`, first by partition
 and then by part value and multiplicity threshold. -/
 theorem mul_card_eq_sum (E : ℕ) :
     E * Fintype.card (Partition E) =

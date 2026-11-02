@@ -48,7 +48,7 @@ namespace Kingman
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α}
 
-/-- The integral is invariant under a measure-preserving map: `∫ g ∘ T dμ = ∫ g dμ` for
+/-- **Integral is invariant under a measure-preserving map.** The integral is invariant under a measure-preserving map: `∫ g ∘ T dμ = ∫ g dμ` for
 a.e.-strongly measurable `g`. -/
 theorem integral_comp_measurePreserving (T : α → α) (hT : MeasurePreserving T μ μ)
     (g : α → ℝ) (hg : AEStronglyMeasurable g μ) :
@@ -56,7 +56,7 @@ theorem integral_comp_measurePreserving (T : α → α) (hT : MeasurePreserving 
   rw [← hT.map_eq] at hg ⊢
   rw [integral_map hT.aemeasurable hg, hT.map_eq]
 
-/-- The integral is invariant under iterates of a measure-preserving map:
+/-- **Integral is invariant under iterates of a measure-preserving map.** The integral is invariant under iterates of a measure-preserving map:
 `∫ g ∘ T^[m] dμ = ∫ g dμ` for a.e.-strongly measurable `g`. See also
 `MathlibExt.Probability.BirkhoffErgodicL1.integral_comp_iterate_of_measurePreserving`, which
 assumes `g` integrable. -/
@@ -66,7 +66,7 @@ theorem integral_comp_iterate (T : α → α) (hT : MeasurePreserving T μ μ)
   rw [← (hT.iterate m).map_eq] at hg ⊢
   rw [integral_map (hT.iterate m).aemeasurable hg, (hT.iterate m).map_eq]
 
-/-- `X` is a subadditive cocycle over `T`: `T` preserves `μ`, every `X n` is integrable, and
+/-- **Subadditive cocycle over a measure-preserving map.** `X` is a subadditive cocycle over `T`: `T` preserves `μ`, every `X n` is integrable, and
 `X (m + n) ≤ X m + X n ∘ T^[m]` almost everywhere. -/
 structure SubadditiveCocycle (T : α → α) (μ : Measure α) (X : ℕ → α → ℝ) : Prop where
   /-- `T` preserves `μ`. -/
@@ -80,10 +80,10 @@ namespace SubadditiveCocycle
 
 variable {T : α → α} {X : ℕ → α → ℝ}
 
-/-- The expectation `∫ X n dμ` of the `n`-th term. -/
+/-- **Expectation sequence of a cocycle.** The expectation `∫ X n dμ` of the `n`-th term. -/
 noncomputable def expSeq (X : ℕ → α → ℝ) (μ : Measure α) (n : ℕ) : ℝ := ∫ x, X n x ∂μ
 
-/-- The expectations of a subadditive cocycle are subadditive. -/
+/-- **Expectations of a subadditive cocycle are subadditive.** The expectations of a subadditive cocycle are subadditive. -/
 theorem expSeq_subadditive (h : SubadditiveCocycle T μ X) (m n : ℕ) :
     expSeq X μ (m + n) ≤ expSeq X μ m + expSeq X μ n := by
   have hint : ∫ x, X (m + n) x ∂μ ≤ ∫ x, (X m x + X n (T^[m] x)) ∂μ := by
@@ -100,11 +100,11 @@ theorem expSeq_subadditive (h : SubadditiveCocycle T μ X) (m n : ℕ) :
           (h.integrable n).aestronglyMeasurable]
         rfl
 
-/-- The expectations of a subadditive cocycle form a `Subadditive` sequence. -/
+/-- **Expectations of a subadditive cocycle form a subadditive sequence.** The expectations of a subadditive cocycle form a `Subadditive` sequence. -/
 theorem subadditive_expSeq (h : SubadditiveCocycle T μ X) :
     Subadditive (expSeq X μ) := h.expSeq_subadditive
 
-/-- Iterating subadditivity: `X n ≤ ∑_{k<n} X 1 ∘ T^[k]` almost everywhere, for all `n ≥ 1`. -/
+/-- **Subadditive cocycle bounded by Birkhoff sums of its first term.** Iterating subadditivity: `X n ≤ ∑_{k<n} X 1 ∘ T^[k]` almost everywhere, for all `n ≥ 1`. -/
 theorem ae_le_birkhoffSum (h : SubadditiveCocycle T μ X) :
     ∀ᵐ x ∂μ, ∀ n, 1 ≤ n → X n x ≤ birkhoffSum T (X 1) n x := by
   have hstep : ∀ᵐ x ∂μ, ∀ n, X (n + 1) x ≤ X n x + X 1 (T^[n] x) := by
@@ -122,7 +122,7 @@ theorem ae_le_birkhoffSum (h : SubadditiveCocycle T μ X) :
         _ ≤ birkhoffSum T (X 1) k x + X 1 (T^[k] x) := by gcongr; exact ih hk
         _ = birkhoffSum T (X 1) (k + 1) x := (congrFun (birkhoffSum_succ T (X 1) k) x).symm
 
-/-- `∫ X n dμ ≤ n ∫ X 1 dμ` for `n ≥ 1`. -/
+/-- **Expectation of a subadditive cocycle grows at most linearly.** `∫ X n dμ ≤ n ∫ X 1 dμ` for `n ≥ 1`. -/
 theorem expSeq_le_nsmul (h : SubadditiveCocycle T μ X) {n : ℕ} (hn : 1 ≤ n) :
     expSeq X μ n ≤ n • expSeq X μ 1 := by
   calc expSeq X μ n = ∫ x, X n x ∂μ := rfl
@@ -143,31 +143,31 @@ theorem expSeq_le_nsmul (h : SubadditiveCocycle T μ X) {n : ℕ} (hn : 1 ≤ n)
         rfl
     _ = n • expSeq X μ 1 := by rw [Finset.sum_const, Finset.card_range]
 
-/-- The time constant `lim_n (∫ X n dμ) / n = inf_n (∫ X n dμ) / n` (Fekete's lemma); it is
+/-- **Time constant of a subadditive cocycle.** The time constant `lim_n (∫ X n dμ) / n = inf_n (∫ X n dμ) / n` (Fekete's lemma); it is
 meaningful when `expSeq n / n` is bounded below. -/
 noncomputable def gamma (h : SubadditiveCocycle T μ X) : ℝ :=
   (subadditive_expSeq h).lim
 
-/-- Fekete's lemma for the expectations: `expSeq n / n → gamma` when bounded below. -/
+/-- **Fekete's lemma for the expectations of a subadditive cocycle.** Fekete's lemma for the expectations: `expSeq n / n → gamma` when bounded below. -/
 theorem tendsto_expSeq_div (h : SubadditiveCocycle T μ X)
     (hbdd : BddBelow (Set.range fun n => expSeq X μ n / n)) :
     Tendsto (fun n => expSeq X μ n / n) atTop (𝓝 (gamma h)) :=
   (subadditive_expSeq h).tendsto_lim hbdd
 
-/-- `gamma ≤ expSeq n / n` for every `n ≠ 0`. -/
+/-- **Time constant is a lower bound for normalized expectations.** `gamma ≤ expSeq n / n` for every `n ≠ 0`. -/
 theorem gamma_le_div (h : SubadditiveCocycle T μ X)
     (hbdd : BddBelow (Set.range fun n => expSeq X μ n / n)) {n : ℕ} (hn : n ≠ 0) :
     gamma h ≤ expSeq X μ n / n :=
   (subadditive_expSeq h).lim_le_div hbdd hn
 
-/-- `gamma ≤ ∫ X 1 dμ`. -/
+/-- **Time constant is at most the first expectation.** `gamma ≤ ∫ X 1 dμ`. -/
 theorem gamma_le_expSeq_one (h : SubadditiveCocycle T μ X)
     (hbdd : BddBelow (Set.range fun n => expSeq X μ n / n)) :
     gamma h ≤ expSeq X μ 1 := by
   refine le_trans (gamma_le_div h hbdd (n := 1) one_ne_zero) ?_
   simp
 
-/-- For a nonnegative cocycle, `expSeq n / n` is bounded below by `0`. -/
+/-- **Normalized expectations of a nonnegative cocycle are bounded below.** For a nonnegative cocycle, `expSeq n / n` is bounded below by `0`. -/
 theorem bddBelow_of_nonneg (_h : SubadditiveCocycle T μ X)
     (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
     BddBelow (Set.range fun n => expSeq X μ n / n) := by

@@ -77,27 +77,27 @@ namespace ProbabilityTheory
 
 variable {ι : Type*}
 
-/-- The **equal-input matrix** `𝟙 πᵀ`: every row equals `π`. -/
+/-- **Equal-input matrix.** The **equal-input matrix** `𝟙 πᵀ`: every row equals `π`. -/
 def equalInput (π : ι → ℝ) : Matrix ι ι ℝ :=
   Matrix.of fun _ j => π j
 
-/-- The **sticky kernel** with persistence `c`: `c • 1 + (1 - c) • 𝟙 πᵀ`. Started from `i`,
+/-- **Sticky kernel.** The **sticky kernel** with persistence `c`: `c • 1 + (1 - c) • 𝟙 πᵀ`. Started from `i`,
 it stays at `i` with probability `c` and otherwise redraws the state from `π`. -/
 noncomputable def stickyKernel [DecidableEq ι] (π : ι → ℝ) (c : ℝ) : Matrix ι ι ℝ :=
   c • (1 : Matrix ι ι ℝ) + (1 - c) • equalInput π
 
-/-- The **equal-input generator** `κ • (𝟙 πᵀ - 1)` with rate `κ` (Felsenstein's F81 model on
+/-- **Equal-input generator (F81 model).** The **equal-input generator** `κ • (𝟙 πᵀ - 1)` with rate `κ` (Felsenstein's F81 model on
 an arbitrary finite state space): jumps at rate `κ` to a state drawn from `π`. -/
 noncomputable def equalInputRate [DecidableEq ι] (π : ι → ℝ) (κ : ℝ) : Matrix ι ι ℝ :=
   κ • (equalInput π - 1)
 
 variable {π : ι → ℝ}
 
-/-- Entrywise form of the equal-input matrix. -/
+/-- **Entries of the equal-input matrix.** Entrywise form of the equal-input matrix. -/
 @[simp]
 theorem equalInput_apply (π : ι → ℝ) (i j : ι) : equalInput π i j = π j := rfl
 
-/-- With `∑ π = 1`, `𝟙 πᵀ` is idempotent. -/
+/-- **Equal-input matrix is idempotent.** With `∑ π = 1`, `𝟙 πᵀ` is idempotent. -/
 theorem equalInput_mul_self [Fintype ι] (hπ : ∑ i, π i = 1) :
     equalInput π * equalInput π = equalInput π := by
   ext i j
@@ -107,22 +107,22 @@ section DecidableEq
 
 variable [DecidableEq ι]
 
-/-- Entrywise form of the sticky kernel. -/
+/-- **Entries of the sticky kernel.** Entrywise form of the sticky kernel. -/
 theorem stickyKernel_apply (π : ι → ℝ) (c : ℝ) (i j : ι) :
     stickyKernel π c i j = c * (if i = j then 1 else 0) + (1 - c) * π j := by
   simp [stickyKernel, Matrix.one_apply]
 
-/-- The sticky kernel at persistence `1` is the identity. -/
+/-- **Sticky kernel at persistence one is the identity.** The sticky kernel at persistence `1` is the identity. -/
 @[simp]
 theorem stickyKernel_one (π : ι → ℝ) : stickyKernel π 1 = 1 := by
   simp [stickyKernel]
 
-/-- The sticky kernel at persistence `0` is `𝟙 πᵀ`. -/
+/-- **Sticky kernel at persistence zero is the equal-input matrix.** The sticky kernel at persistence `0` is `𝟙 πᵀ`. -/
 @[simp]
 theorem stickyKernel_zero (π : ι → ℝ) : stickyKernel π 0 = equalInput π := by
   simp [stickyKernel]
 
-/-- For `0 ≤ c ≤ 1` and `π ≥ 0` the entries of the sticky kernel are nonnegative. -/
+/-- **Nonnegativity of the sticky kernel.** For `0 ≤ c ≤ 1` and `π ≥ 0` the entries of the sticky kernel are nonnegative. -/
 theorem stickyKernel_nonneg (hπ : ∀ i, 0 ≤ π i) {c : ℝ} (hc0 : 0 ≤ c) (hc1 : c ≤ 1)
     (i j : ι) : 0 ≤ stickyKernel π c i j := by
   rw [stickyKernel_apply]
@@ -137,7 +137,7 @@ theorem stickyKernel_reversible (π : ι → ℝ) (c : ℝ) (i j : ι) :
   · subst h; ring
   · simp [h, Ne.symm h]; ring
 
-/-- The sticky kernel depends continuously on the persistence. -/
+/-- **Continuity of the sticky kernel in the persistence.** The sticky kernel depends continuously on the persistence. -/
 theorem continuous_stickyKernel (π : ι → ℝ) : Continuous (stickyKernel π) := by
   unfold stickyKernel
   fun_prop
@@ -161,18 +161,18 @@ theorem tendsto_stickyKernel_nhds_zero (π : ι → ℝ) (κ : ℝ) :
 
 variable [Fintype ι]
 
-/-- With `∑ π = 1`, the rows of the sticky kernel sum to `1` (for every real `c`). -/
+/-- **Rows of the sticky kernel sum to one.** With `∑ π = 1`, the rows of the sticky kernel sum to `1` (for every real `c`). -/
 theorem sum_stickyKernel (hπ : ∑ i, π i = 1) (c : ℝ) (i : ι) :
     ∑ j, stickyKernel π c i j = 1 := by
   simp [stickyKernel_apply, Finset.sum_add_distrib, ← Finset.mul_sum, hπ]
 
-/-- For `0 ≤ c ≤ 1`, `π ≥ 0` and `∑ π = 1` the sticky kernel is row-stochastic. -/
+/-- **Sticky kernel is row-stochastic.** For `0 ≤ c ≤ 1`, `π ≥ 0` and `∑ π = 1` the sticky kernel is row-stochastic. -/
 theorem stickyKernel_mem_rowStochastic (hπ0 : ∀ i, 0 ≤ π i) (hπ : ∑ i, π i = 1) {c : ℝ}
     (hc0 : 0 ≤ c) (hc1 : c ≤ 1) : stickyKernel π c ∈ rowStochastic ℝ ι := by
   rw [mem_rowStochastic_iff_sum]
   exact ⟨stickyKernel_nonneg hπ0 hc0 hc1, sum_stickyKernel hπ c⟩
 
-/-- With `∑ π = 1`, `π` is a stationary vector of the sticky kernel: `π K = π`. -/
+/-- **Stationary vector of the sticky kernel.** With `∑ π = 1`, `π` is a stationary vector of the sticky kernel: `π K = π`. -/
 theorem vecMul_stickyKernel (hπ : ∑ i, π i = 1) (c : ℝ) : π ᵥ* stickyKernel π c = π := by
   ext j
   simp only [vecMul, dotProduct]
@@ -189,7 +189,7 @@ theorem stickyKernel_mul (hπ : ∑ i, π i = 1) (c c' : ℝ) :
   simp only [Matrix.add_apply, Matrix.smul_apply, smul_eq_mul]
   ring
 
-/-- With `∑ π = 1`, `K c ^ n = K (c ^ n)`: `n` steps of the sticky kernel are one step with
+/-- **Powers of the sticky kernel.** With `∑ π = 1`, `K c ^ n = K (c ^ n)`: `n` steps of the sticky kernel are one step with
 persistence `c ^ n`. -/
 theorem stickyKernel_pow (hπ : ∑ i, π i = 1) (c : ℝ) (n : ℕ) :
     stickyKernel π c ^ n = stickyKernel π (c ^ n) := by
@@ -197,7 +197,7 @@ theorem stickyKernel_pow (hπ : ∑ i, π i = 1) (c : ℝ) (n : ℕ) :
   | zero => simp
   | succ n ih => rw [pow_succ, ih, stickyKernel_mul hπ, pow_succ]
 
-/-- For `κ ≥ 0`, `π ≥ 0` and `∑ π = 1`, the equal-input generator is a rate matrix. -/
+/-- **Equal-input generator is a rate matrix.** For `κ ≥ 0`, `π ≥ 0` and `∑ π = 1`, the equal-input generator is a rate matrix. -/
 theorem isRateMatrix_equalInputRate (hπ0 : ∀ i, 0 ≤ π i) (hπ : ∑ i, π i = 1) {κ : ℝ}
     (hκ : 0 ≤ κ) : IsRateMatrix (equalInputRate π κ) where
   nonneg_of_ne i j h := by

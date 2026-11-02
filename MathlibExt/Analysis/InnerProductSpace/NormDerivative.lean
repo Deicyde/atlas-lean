@@ -59,7 +59,7 @@ namespace MathlibExt.Analysis.InnerProductSpace.NormDerivative
 variable {K E : Type*} [RCLike K] [NormedAddCommGroup E] [InnerProductSpace K E]
   [NormedSpace ℝ E]
 
-/-- The real-linear functional `y ↦ re ⟪x, y⟫`, the unnormalized gradient of
+/-- **Real part of the inner product as a real-linear functional.** The real-linear functional `y ↦ re ⟪x, y⟫`, the unnormalized gradient of
 the norm at `x`. The scalar field `K` is an explicit argument because the
 type `E →L[ℝ] ℝ` does not determine it. -/
 noncomputable def reInnerSL (K : Type*) [RCLike K] {E : Type*} [NormedAddCommGroup E]
@@ -69,7 +69,7 @@ noncomputable def reInnerSL (K : Type*) [RCLike K] {E : Type*} [NormedAddCommGro
 @[simp]
 theorem reInnerSL_apply (x y : E) : reInnerSL K x y = RCLike.re (inner K x y) := rfl
 
-/-- The derivative of the squared norm is twice the real inner product with `x`. -/
+/-- **Strict derivative of the squared norm.** The derivative of the squared norm is twice the real inner product with `x`. -/
 theorem hasStrictFDerivAt_norm_sq (x : E) : HasStrictFDerivAt (fun y : E => ‖y‖ ^ 2)
     (2 • reInnerSL K x) x := by
   have h := (hasStrictFDerivAt_id x).inner K (hasStrictFDerivAt_id x)
@@ -82,7 +82,7 @@ theorem hasStrictFDerivAt_norm_sq (x : E) : HasStrictFDerivAt (fun y : E => ‖y
       ContinuousLinearMap.prod_apply]
     rw [← inner_conj_symm, RCLike.conj_re]
 
-/-- The Fréchet derivative of the norm at a nonzero point `x` is the norming
+/-- **Strict Fréchet derivative of the norm at a nonzero point.** The Fréchet derivative of the norm at a nonzero point `x` is the norming
 functional `y ↦ re ⟪x, y⟫ / ‖x‖`. -/
 theorem hasStrictFDerivAt_norm {x : E} (hx : x ≠ 0) :
     HasStrictFDerivAt (fun y : E => ‖y‖) ((‖x‖⁻¹ : ℝ) • reInnerSL K x) x := by
@@ -97,23 +97,23 @@ theorem hasStrictFDerivAt_norm {x : E} (hx : x ≠ 0) :
   field_simp
   ring
 
-/-- The non-strict form of `hasStrictFDerivAt_norm`. -/
+/-- **Fréchet derivative of the norm at a nonzero point.** The non-strict form of `hasStrictFDerivAt_norm`. -/
 theorem hasFDerivAt_norm {x : E} (hx : x ≠ 0) :
     HasFDerivAt (fun y : E => ‖y‖) ((‖x‖⁻¹ : ℝ) • reInnerSL K x) x :=
   (hasStrictFDerivAt_norm hx).hasFDerivAt
 
-/-- The `fderiv` of the norm at a nonzero point. -/
+/-- **Formula for the derivative of the norm.** The `fderiv` of the norm at a nonzero point. -/
 theorem fderiv_norm {x : E} (hx : x ≠ 0) :
     fderiv ℝ (fun y : E => ‖y‖) x = (‖x‖⁻¹ : ℝ) • reInnerSL K x :=
   (hasFDerivAt_norm (K := K) (E := E) hx).fderiv
 
-/-- The `fderiv` of the norm at a nonzero point, applied to a vector. -/
+/-- **Derivative of the norm applied to a vector.** The `fderiv` of the norm at a nonzero point, applied to a vector. -/
 theorem fderiv_norm_apply {x y : E} (hx : x ≠ 0) :
     fderiv ℝ (fun z : E => ‖z‖) x y = RCLike.re (inner K x y) / ‖x‖ := by
   rw [fderiv_norm (K := K) (E := E) hx]
   simp [smul_eq_mul, div_eq_mul_inv, mul_comm]
 
-/-- The norming functional `reInnerSL K x` has operator norm `‖x‖` (it attains
+/-- **Operator norm of the real inner product functional.** The norming functional `reInnerSL K x` has operator norm `‖x‖` (it attains
 `‖x‖` at `‖x‖⁻¹ • x`). -/
 theorem norm_reInnerSL (x : E) : ‖reInnerSL K x‖ = ‖x‖ := by
   apply le_antisymm
@@ -140,7 +140,7 @@ theorem norm_reInnerSL (x : E) : ‖reInnerSL K x‖ = ‖x‖ := by
       rw [h3, mul_one] at h2
       exact h2
 
-/-- The Fréchet derivative of the norm at a nonzero point has operator norm `1`:
+/-- **Derivative of the norm has operator norm one.** The Fréchet derivative of the norm at a nonzero point has operator norm `1`:
 the norming functional is a norming functional. This statement needs the inner
 product structure, so `K` is an explicit argument. -/
 theorem norm_fderiv_norm (K : Type*) [RCLike K] [InnerProductSpace K E] {x : E}
@@ -149,20 +149,20 @@ theorem norm_fderiv_norm (K : Type*) [RCLike K] [InnerProductSpace K E] {x : E}
   rw [fderiv_norm (K := K) (E := E) hx, norm_smul, norm_inv, norm_norm, norm_reInnerSL,
     inv_mul_cancel₀ (norm_pos_iff.mpr hx).ne']
 
-/-- Over `ℝ`, the norming functional is just `innerSL ℝ x`. -/
+/-- **Over the reals the norming functional is the inner product.** Over `ℝ`, the norming functional is just `innerSL ℝ x`. -/
 theorem reInnerSL_real {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
     (x : E) : reInnerSL ℝ x = innerSL ℝ x := by
   ext y
   rfl
 
-/-- The Fréchet derivative of the norm in a real inner product space. -/
+/-- **Strict derivative of the norm in a real inner product space.** The Fréchet derivative of the norm in a real inner product space. -/
 theorem hasStrictFDerivAt_norm_real {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] {x : E} (hx : x ≠ 0) :
     HasStrictFDerivAt (fun y : E => ‖y‖) ((‖x‖⁻¹ : ℝ) • innerSL ℝ x) x := by
   have h := hasStrictFDerivAt_norm (K := ℝ) (E := E) hx
   rwa [reInnerSL_real] at h
 
-/-- The `fderiv` of the norm in a real inner product space, applied to a vector. -/
+/-- **Derivative of the norm in a real space applied to a vector.** The `fderiv` of the norm in a real inner product space, applied to a vector. -/
 theorem fderiv_norm_apply_real {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
     {x y : E} (hx : x ≠ 0) :
     fderiv ℝ (fun z : E => ‖z‖) x y = inner ℝ x y / ‖x‖ := by
@@ -170,7 +170,7 @@ theorem fderiv_norm_apply_real {E : Type*} [NormedAddCommGroup E] [InnerProductS
   rw [show RCLike.re (inner ℝ x y) = inner ℝ x y from rfl] at h
   exact h
 
-/-- Chain rule: the derivative of the norm of a differentiable map. -/
+/-- **Chain rule for the strict derivative of a norm.** Chain rule: the derivative of the norm of a differentiable map. -/
 theorem HasStrictFDerivAt.norm {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G]
     {f : G → E} {f' : G →L[ℝ] E} {x : G} (hf : HasStrictFDerivAt f f' x)
     (h0 : f x ≠ 0) :
@@ -178,7 +178,7 @@ theorem HasStrictFDerivAt.norm {G : Type*} [NormedAddCommGroup G] [NormedSpace �
       (((‖f x‖⁻¹ : ℝ) • reInnerSL K (f x)).comp f') x :=
   (hasStrictFDerivAt_norm (K := K) (E := E) h0).comp x hf
 
-/-- Chain rule: the non-strict derivative of the norm of a differentiable map. -/
+/-- **Chain rule for the Fréchet derivative of a norm.** Chain rule: the non-strict derivative of the norm of a differentiable map. -/
 theorem HasFDerivAt.norm {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G]
     {f : G → E} {f' : G →L[ℝ] E} {x : G} (hf : HasFDerivAt f f' x)
     (h0 : f x ≠ 0) :
@@ -186,7 +186,7 @@ theorem HasFDerivAt.norm {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G]
       (((‖f x‖⁻¹ : ℝ) • reInnerSL K (f x)).comp f') x :=
   (hasFDerivAt_norm (K := K) (E := E) h0).comp x hf
 
-/-- The derivative of the norm along a curve is the normalized real inner product
+/-- **Derivative of the norm along a curve.** The derivative of the norm along a curve is the normalized real inner product
 of the position with the velocity. -/
 theorem HasDerivAt.norm {f : ℝ → E} {f' : E} {t : ℝ} (hf : HasDerivAt f f' t)
     (h0 : f t ≠ 0) :
@@ -195,7 +195,7 @@ theorem HasDerivAt.norm {f : ℝ → E} {f' : E} {t : ℝ} (hf : HasDerivAt f f'
   convert h using 1
   simp [smul_eq_mul, div_eq_mul_inv, mul_comm]
 
-/-- A differentiable curve lying on the unit sphere has velocity orthogonal to
+/-- **Curves on the unit sphere have velocity orthogonal to position.** A differentiable curve lying on the unit sphere has velocity orthogonal to
 its position (in the real-inner-product sense). -/
 theorem re_inner_self_deriv_eq_zero_of_forall_norm_eq_one {γ : ℝ → E}
     (hγ : Differentiable ℝ γ) (h1 : ∀ t, ‖γ t‖ = 1) (t : ℝ) :
@@ -215,7 +215,7 @@ theorem re_inner_self_deriv_eq_zero_of_forall_norm_eq_one {γ : ℝ → E}
   rw [h1 t] at hderiv
   simpa using hderiv
 
-/-- The gradient of the squared distance to a point `a` is `2 • reInnerSL K (x - a)`. -/
+/-- **Strict derivative of the squared distance to a point.** The gradient of the squared distance to a point `a` is `2 • reInnerSL K (x - a)`. -/
 theorem hasStrictFDerivAt_dist_sq {x a : E} :
     HasStrictFDerivAt (fun y : E => dist y a ^ 2) (2 • reInnerSL K (x - a)) x := by
   have h := (hasStrictFDerivAt_norm_sq (K := K) (E := E) (x - a)).comp x
@@ -225,7 +225,7 @@ theorem hasStrictFDerivAt_dist_sq {x a : E} :
   rw [← hfun]
   simpa using h
 
-/-- The `fderiv` of the squared distance to a point, applied to a vector. -/
+/-- **Derivative of the squared distance to a point applied to a vector.** The `fderiv` of the squared distance to a point, applied to a vector. -/
 theorem fderiv_dist_sq_apply {x a y : E} :
     fderiv ℝ (fun z : E => dist z a ^ 2) x y = 2 * RCLike.re (inner K (x - a) y) := by
   rw [(hasStrictFDerivAt_dist_sq (K := K) (E := E) (x := x) (a := a)).hasFDerivAt.fderiv]
@@ -233,7 +233,7 @@ theorem fderiv_dist_sq_apply {x a y : E} :
   rw [two_smul, two_mul]
 
 omit [NormedSpace ℝ E] in
-/-- The distance from `y` to a subspace with an orthogonal projection is the
+/-- **Distance to a subspace as the norm of the projection residual.** The distance from `y` to a subspace with an orthogonal projection is the
 norm of the residual `y - S.starProjection y`. -/
 theorem infDist_eq_norm_sub_starProjection {S : Submodule K E} [S.HasOrthogonalProjection]
     (y : E) :
@@ -247,7 +247,7 @@ theorem infDist_eq_norm_sub_starProjection {S : Submodule K E} [S.HasOrthogonalP
     exact ciInf_le (f := fun x : ↥S => ‖y - (x : E)‖)
       ⟨0, by rintro _ ⟨x, rfl⟩; exact norm_nonneg _⟩ ⟨w, hw⟩
 
-/-- The gradient of the squared residual `‖y - S.starProjection y‖ ^ 2` is
+/-- **Strict derivative of the squared projection residual.** The gradient of the squared residual `‖y - S.starProjection y‖ ^ 2` is
 `2 • reInnerSL K (x - S.starProjection x)`, using that the residual operator
 `1 - S.starProjection` is self-adjoint and idempotent. -/
 theorem hasStrictFDerivAt_residual_sq {S : Submodule K E} [S.HasOrthogonalProjection]
@@ -292,7 +292,7 @@ theorem hasStrictFDerivAt_residual_sq {S : Submodule K E} [S.HasOrthogonalProjec
   rw [← hfun, ← hderiv]
   exact hcomp
 
-/-- The gradient of the squared distance to a subspace `S` is twice the real
+/-- **Strict derivative of the squared distance to a subspace.** The gradient of the squared distance to a subspace `S` is twice the real
 inner product with the residual `x - S.starProjection x`. -/
 theorem hasStrictFDerivAt_infDist_sq {S : Submodule K E} [S.HasOrthogonalProjection]
     (x : E) :

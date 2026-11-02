@@ -48,7 +48,7 @@ open StatMech.Percolation (origin)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- The four unit vectors of `ℤ²`. -/
+/-- **Four unit vectors of $\mathbb{Z}^2$.** The four unit vectors of `ℤ²`. -/
 noncomputable def usc_fourDirs : Finset (Site 2) :=
   {![1, 0], ![-1, 0], ![0, 1], ![0, -1]}
 
@@ -66,7 +66,7 @@ theorem usc_dir_injOn_of_face_eq (f : Site 2) (T : Set Dart) (hT : ∀ e ∈ T, 
   simp only at hdir
   exact dartFace_eq_of_dir_eq hdir (by rw [hT e₁ he₁, hT e₂ he₂])
 
-/-- The times `i` in one period of the orbit of `a` at which the dart has face `f`. -/
+/-- **Visit times of a boundary orbit to a face.** The times `i` in one period of the orbit of `a` at which the dart has face `f`. -/
 noncomputable def usc_visitSet (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e})
     (f : Site 2) : Finset ℕ := by
   classical
@@ -128,7 +128,7 @@ theorem usc_noPinch_iff_singleVisit (K : Set (Site 2))
   rw [← orbitFace_injOn_iff_dir_collision K a]
   exact usc_faceInjOn_iff_visit_le_one K a
 
-/-- Every face visited by the orbit of `a` is visited exactly once per period. -/
+/-- **Each face visited once per period by a boundary orbit.** Every face visited by the orbit of `a` is visited exactly once per period. -/
 def usc_FaceMultiplicityOne (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) : Prop :=
   ∀ f : Site 2, 1 ≤ (usc_visitSet K a f).card → (usc_visitSet K a f).card = 1
 
@@ -145,12 +145,12 @@ theorem usc_faceMultiplicityOne_iff_noPinch (K : Set (Site 2))
     have := h f
     omega
 
-/-- The sum of the turns `turnZ` at the visits of the orbit of `a` to the face `f`. -/
+/-- **Local turn of a boundary orbit at a face.** The sum of the turns `turnZ` at the visits of the orbit of `a` to the face `f`. -/
 noncomputable def usc_localTurn (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e})
     (f : Site 2) : ℤ :=
   ∑ i ∈ usc_visitSet K a f, turnZ K ((dartNext K)^[i] a.1)
 
-/-- The set of faces visited in one period of the orbit of `a`. -/
+/-- **Faces visited by a boundary orbit in one period.** The set of faces visited in one period of the orbit of `a`. -/
 noncomputable def usc_orbitFaces (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     Finset (Site 2) := by
   classical
@@ -203,7 +203,7 @@ theorem usc_exitMinFaceLoop_isCycle (hfin : (cluster 2 ω (origin 2)).Finite)
     (exitMinFaceLoop (ω := ω) hfin).IsCycle :=
   exitMinFaceLoop_isCycle (ω := ω) hfin (usc_orbitFaceSimple_of_noPinch (ω := ω) hfin hp hnp)
 
-/-- `p_c(ℤ²) < 1`, under the hypothesis that for every configuration with a finite origin cluster
+/-- **$p_c(\mathbb{Z}^2) < 1$ under a no-pinch hypothesis.** `p_c(ℤ²) < 1`, under the hypothesis that for every configuration with a finite origin cluster
 the boundary orbit of the exit dart has period at least three, has no pinch, and contains the
 left exit dart. The hypothesis is not proved here. -/
 theorem usc_pc_lt_one_of_noPinch

@@ -34,7 +34,7 @@ Mazurov). UnsolvedMath record UM-00701369 (`KOU-17.67`), dataset ulamai/Unsolved
 `MonoidAlgebra.single g ε` with `ε = ±1`.
 -/
 
-/-- Kourovka 17.67 (H. Zassenhaus's conjecture, recorded by V. D. Mazurov): every unit of finite
+/-- **Zassenhaus conjecture on torsion units.** Kourovka 17.67 (H. Zassenhaus's conjecture, recorded by V. D. Mazurov): every unit of finite
 order of the integral group ring `ℤG` of a finite group `G` is conjugate, by a unit of the rational
 group ring `ℚG`, to an element `±g` with `g ∈ G`. -/
 def zassenhausConjecture : Prop :=

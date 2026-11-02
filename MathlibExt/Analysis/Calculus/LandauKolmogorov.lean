@@ -197,7 +197,7 @@ theorem landau_inequality {f : ℝ → ℝ} (hf : ContDiff ℝ 2 f) {M₀ M₂ :
     have hfactor : (4 * 2 * 1 / (2:ℝ) ^ 2) * M₀ * M₂ = 2 * M₀ * M₂ := by ring
     rwa [hfactor] at h
 
-/-- Square-root form of the Landau–Kolmogorov inequality. -/
+/-- **Landau–Kolmogorov inequality, square-root form.** Square-root form of the Landau–Kolmogorov inequality. -/
 theorem landau_inequality_abs {f : ℝ → ℝ} (hf : ContDiff ℝ 2 f) {M₀ M₂ : ℝ}
     (hM₀ : ∀ x, |f x| ≤ M₀) (hM₂ : ∀ x, |deriv (deriv f) x| ≤ M₂) (x : ℝ) :
     |deriv f x| ≤ Real.sqrt (2 * M₀ * M₂) := by
@@ -342,7 +342,7 @@ place of the former full Mathlib/ProofWanted imports and supplies the proof belo
 
 namespace MathlibExt.Analysis.Calculus.LandauKolmogorovSecondOrderWanted
 
-/-- For $f \in C^2(\mathbb{R})$, let $M_k = \sup_x |f^{(k)}(x)|$.
+/-- **Landau's inequality $M_1 \le 2\sqrt{M_0 M_2}$.** For $f \in C^2(\mathbb{R})$, let $M_k = \sup_x |f^{(k)}(x)|$.
 Prove that $M_1 \le 2\sqrt{M_0 M_2}$.
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities

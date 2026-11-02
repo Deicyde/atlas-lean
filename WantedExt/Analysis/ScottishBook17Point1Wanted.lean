@@ -21,7 +21,7 @@ nonempty, and has no isolated points: every $x \in s$ lies in the closure of $s 
 def IsPerfectSet (s : Set ℝ) : Prop :=
   IsClosed s ∧ s.Nonempty ∧ ∀ x ∈ s, x ∈ closure (s \ {x})
 
-/-- Ulam's Problem 17.1 from the Scottish Book: for every continuous `f` on
+/-- **Ulam's problem on analytic agreement on a perfect set.** Ulam's Problem 17.1 from the Scottish Book: for every continuous `f` on
 `[0, 1]`, do there exist a perfect set `C` in `[0, 1]` and an analytic
 function `φ` with `f x = φ x` for every `x ∈ C`? The claim is stated for
 `C ^ ∞` functions, which is the case refuted by Zahorski's construction. -/
@@ -31,7 +31,7 @@ def ScottishBookProblem17Point1Claim : Prop :=
       AnalyticOn ℝ φ (Set.Icc (0 : ℝ) 1) ∧ ∀ x ∈ C, f x = φ x
 
 /--
-Problem 17.1 is false: the answer is negative. Source: S. Ulam, Problem 17.1
+**Zahorski's negative answer to Ulam's perfect set problem.** Problem 17.1 is false: the answer is negative. Source: S. Ulam, Problem 17.1
 of the Scottish Book; Z. Zahorski gave a negative answer by constructing a
 `C ^ ∞` function that agrees with every real-analytic function on at most
 finitely many points, so no nonempty perfect set `C` can work for it: Z.

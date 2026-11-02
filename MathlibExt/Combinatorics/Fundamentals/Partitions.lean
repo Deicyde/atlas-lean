@@ -36,7 +36,7 @@ namespace MetaMathlibExt
 
 -- Combinatorics 27: Weak Composition
 
-/-- Let n,k∈ℕ. A weak composition of n into
+/-- **Weak composition.** Let n,k∈ℕ. A weak composition of n into
 k parts is a function
 
   a:{i∈ℕ∣ i<k}→ℕ
@@ -56,7 +56,7 @@ def WeakComposition (n k : ℕ) :=
 
 -- Combinatorics 28: Ordered Set Partition
 
-/-- Let S be a finite set and let k∈ℕ. An
+/-- **Ordered set partition.** Let S be a finite set and let k∈ℕ. An
 ordered set partition of S into k blocks is an ordered
 tuple
 

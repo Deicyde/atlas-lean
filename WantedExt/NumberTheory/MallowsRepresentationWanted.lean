@@ -793,7 +793,7 @@ public theorem_wanted bijOn_mallowsT :
     Set.BijOn mallowsT mallowsAdmissible
       ((fun α => mallowsRep α) '' {α : ℝ | α ∈ Set.Ioo 0 1 ∧ Irrational α})
 
-/-- For irrational `α ∈ (0, 1)` and `i ≥ 1`, `φ_SBT(f_{o(i)}(α)) = pf_i(α)`. The vertex
+/-- **Stern–Brocot labels of the Mallows representation vertices.** For irrational `α ∈ (0, 1)` and `i ≥ 1`, `φ_SBT(f_{o(i)}(α)) = pf_i(α)`. The vertex
 `f_{o(i)}(α)` is encoded by its gap, `pf_i(α)` is the label `⟨p, q⟩` inserted in the gap
 `mallowsInterval α (i - 1)`, written as the list `[p, q]`, and `o` is computed on `Q(SB(α))`.
 

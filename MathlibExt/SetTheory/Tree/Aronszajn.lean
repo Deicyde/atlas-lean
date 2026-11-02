@@ -33,7 +33,7 @@ namespace MetaMathlibExt
 
 open Cardinal in
 
-/-- A κ-Aronszajn tree is a κ-tree such that there are no cofinal branch through the tree. -/
+/-- **$\kappa$-Aronszajn tree.** A κ-Aronszajn tree is a κ-tree such that there are no cofinal branch through the tree. -/
 def IsAronszajnTreeAt.{u} (κ : Cardinal.{u}) (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
     IsTreeAt κ α ∧ ∀ C : Set α, IsChain (· ≤ ·) C → #C < κ
 
@@ -41,7 +41,7 @@ def IsAronszajnTreeAt.{u} (κ : Cardinal.{u}) (α : Type u) [PartialOrder α] [W
 
 open Cardinal in
 
-/-- An *Aronszajn tree* is a tree of height $\aleph_1}$ all of whose levels are at most countable
+/-- **Aronszajn tree.** An *Aronszajn tree* is a tree of height $\aleph_1}$ all of whose levels are at most countable
 and which has no uncountable branches.
 -/
 def IsAronszajnTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
@@ -51,7 +51,7 @@ def IsAronszajnTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Pro
 
 open Cardinal in
 
-/-- An *ω₁-tree* is a tree of height ω₁ all of whose levels are countable: every node has height <
+/-- **$\omega_1$-tree.** An *ω₁-tree* is a tree of height ω₁ all of whose levels are countable: every node has height <
 ω₁, every level Lev_α(T) with α < ω₁ is nonempty, and every such level is countable.
 -/
 def IsOmega1Tree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=

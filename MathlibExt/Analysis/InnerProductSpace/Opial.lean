@@ -62,7 +62,7 @@ variable {𝕜 : Type*} [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E]
   [InnerProductSpace 𝕜 E] [CompleteSpace E]
 
 omit [CompleteSpace E] in
-/-- A weakly convergent sequence is norm-bounded (Banach–Steinhaus applied
+/-- **Weakly convergent sequences are norm-bounded.** A weakly convergent sequence is norm-bounded (Banach–Steinhaus applied
 to the evaluation maps on the dual space). -/
 theorem bddAbove_norm_of_weakly_tendsto (u : ℕ → E) (x : E)
     (hw : ∀ f : E →L[𝕜] 𝕜, Tendsto (fun n => f (u n)) atTop (𝓝 (f x))) :
@@ -92,7 +92,7 @@ theorem bddAbove_norm_of_weakly_tendsto (u : ℕ → E) (x : E)
   rw [← hn]
   exact hC' n
 
-/-- The cross term in the squared-norm identity tends to `0` under weak
+/-- **Cross term vanishes under weak convergence.** The cross term in the squared-norm identity tends to `0` under weak
 convergence, via the Fréchet–Riesz representation of the functional
 `z ↦ ⟪x - y, z⟫`. -/
 theorem tendsto_re_inner_sub_of_weakly_tendsto (u : ℕ → E) (x : E)

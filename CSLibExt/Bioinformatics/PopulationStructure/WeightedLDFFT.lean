@@ -66,14 +66,14 @@ variable {S : Type*} [Fintype S] (c : S → ℕ)
 
 /-! ### Binning by grid-cell offset -/
 
-/-- The total `U k = ∑_{x : c x = k} u x` of a per-SNP quantity `u` over grid cell `k`. -/
+/-- **Total of a per-SNP quantity over a grid cell.** The total `U k = ∑_{x : c x = k} u x` of a per-SNP quantity `u` over grid cell `k`. -/
 def cellSum (u : S → ℝ) (k : ℕ) : ℝ := ∑ x with c x = k, u x
 
-/-- The brute-force sum `∑_{x, y : c y = c x + j} u x v y` over ordered SNP pairs whose grid
+/-- **Brute-force pair sum at a cell offset.** The brute-force sum `∑_{x, y : c y = c x + j} u x v y` over ordered SNP pairs whose grid
 cells differ by `j`. -/
 def pairSum (u v : S → ℝ) (j : ℕ) : ℝ := ∑ x, ∑ y, if c y = c x + j then u x * v y else 0
 
-/-- Grouping pairs by cell offset: if every SNP lies in a cell `c x < K`, the pair sum at
+/-- **Pair sum as cross-correlation of cell totals.** Grouping pairs by cell offset: if every SNP lies in a cell `c x < K`, the pair sum at
 offset `j` is the lag-`j` cross-correlation of the cell totals. -/
 theorem pairSum_eq_sum_cellSum {K : ℕ} (hc : ∀ x, c x < K) (u v : S → ℝ) (j : ℕ) :
     pairSum c u v j = ∑ k ∈ Finset.range K, cellSum c u k * cellSum c v (k + j) := by
@@ -89,11 +89,11 @@ theorem pairSum_eq_sum_cellSum {K : ℕ} (hc : ∀ x, c x < K) (u v : S → ℝ)
 
 /-! ### Autocorrelation through the discrete Fourier transform -/
 
-/-- Zero padding: the sequence `U` read on `ZMod N` through `k ↦ U k.val`. When `U` vanishes
+/-- **Zero padding of a sequence to $\mathbb{Z}/N\mathbb{Z}$.** Zero padding: the sequence `U` read on `ZMod N` through `k ↦ U k.val`. When `U` vanishes
 from `K` on and `K ≤ N`, this is `U` followed by `N - K` zeros. -/
 def pad (N : ℕ) (U : ℕ → ℝ) : ZMod N → ℂ := fun k => (U k.val : ℂ)
 
-/-- The transform computation of the lag-`j` autocorrelation: the inverse discrete Fourier
+/-- **Autocorrelation via the discrete Fourier transform.** The transform computation of the lag-`j` autocorrelation: the inverse discrete Fourier
 transform of the power spectrum `|𝓕 Ũ|^2` of the zero-padded sequence, read at `j`. -/
 noncomputable def autocorrDFT (N : ℕ) [NeZero N] (U : ℕ → ℝ) (j : ℕ) : ℂ :=
   𝓕⁻ (fun ξ => (Complex.normSq (𝓕 (pad N U) ξ) : ℂ)) (j : ZMod N)
@@ -109,7 +109,7 @@ private theorem conj_dft_pad (N : ℕ) [NeZero N] (U : ℕ → ℝ) (ξ : ZMod N
   congr 2
   ring
 
-/-- Zero-padded circular autocorrelation equals the linear one: if `U k = 0` for `k ≥ K`,
+/-- **Zero-padded circular autocorrelation equals linear autocorrelation.** Zero-padded circular autocorrelation equals the linear one: if `U k = 0` for `k ≥ K`,
 `2 K ≤ N + 1` and `j < K`, then `𝓕⁻(|𝓕 Ũ|^2)(j) = ∑_{k < K} U k U (k + j)`. -/
 theorem autocorrDFT_eq {N K : ℕ} [NeZero N] {U : ℕ → ℝ} (hU : ∀ k, K ≤ k → U k = 0)
     (hN : 2 * K ≤ N + 1) {j : ℕ} (hj : j < K) :
@@ -148,15 +148,15 @@ theorem autocorrDFT_eq {N K : ℕ} [NeZero N] {U : ℕ → ℝ} (hU : ∀ k, K �
 
 variable {m : ℕ} (g : Fin m → S → ℝ) (w : S → ℝ)
 
-/-- The sample mean genotype `ḡ(x) = (1/m) ∑ i, g i x` at SNP `x` over `m` individuals. -/
+/-- **Sample mean genotype at a SNP.** The sample mean genotype `ḡ(x) = (1/m) ∑ i, g i x` at SNP `x` over `m` individuals. -/
 noncomputable def meanGeno (x : S) : ℝ := (∑ i, g i x) / m
 
-/-- The unbiased sample covariance `ẑ(x, y) = (1/(m - 1)) ∑ i, (g i x - ḡ x) (g i y - ḡ y)`
+/-- **Unbiased sample covariance of genotypes.** The unbiased sample covariance `ẑ(x, y) = (1/(m - 1)) ∑ i, (g i x - ḡ x) (g i y - ḡ y)`
 of the genotypes at SNPs `x` and `y` (Loh et al. 2013, Eq. 5; meaningful for `m ≥ 2`). -/
 noncomputable def sampleCov (x y : S) : ℝ :=
   (∑ i, (g i x - meanGeno g x) * (g i y - meanGeno g y)) / ((m : ℝ) - 1)
 
-/-- The brute-force weighted-LD sum at cell offset `j`:
+/-- **Brute-force weighted linkage disequilibrium sum.** The brute-force weighted-LD sum at cell offset `j`:
 `∑_{x, y : c y = c x + j} ẑ(x, y) w(x) w(y)`, costing a pass over all pairs. -/
 noncomputable def bruteWeightedLD (j : ℕ) : ℝ :=
   ∑ x, ∑ y, if c y = c x + j then sampleCov g x y * w x * w y else 0
@@ -165,16 +165,16 @@ private theorem cellSum_eq_zero {K : ℕ} (hc : ∀ x, c x < K) (u : S → ℝ) 
     (hk : K ≤ k) : cellSum c u k = 0 :=
   Finset.sum_eq_zero fun x hx => absurd (Finset.mem_filter.1 hx).2 (by have := hc x; omega)
 
-/-- The centred weighted genotype `(g i x - ḡ x) w x` of individual `i` at SNP `x`. -/
+/-- **Centred weighted genotype.** The centred weighted genotype `(g i x - ḡ x) w x` of individual `i` at SNP `x`. -/
 noncomputable def centredWeighted (i : Fin m) (x : S) : ℝ := (g i x - meanGeno g x) * w x
 
-/-- ALDER's transform algorithm: for each individual, the zero-padded autocorrelation of the
+/-- **ALDER's Fourier-transform weighted LD computation.** ALDER's transform algorithm: for each individual, the zero-padded autocorrelation of the
 cell totals of its centred weighted genotypes, computed through `𝓕`; summed over individuals
 and divided by `m - 1`. -/
 noncomputable def dftWeightedLD (N : ℕ) [NeZero N] (j : ℕ) : ℂ :=
   (∑ i, autocorrDFT N (cellSum c (centredWeighted g w i)) j) / ((m : ℂ) - 1)
 
-/-- The transform algorithm computes the brute-force weighted-LD sum exactly, for every lag
+/-- **ALDER's transform algorithm equals the brute-force weighted LD.** The transform algorithm computes the brute-force weighted-LD sum exactly, for every lag
 `j < K`, when all SNPs lie in cells `c x < K` and the transform length satisfies
 `2 K ≤ N + 1`. -/
 theorem dftWeightedLD_eq_bruteWeightedLD {N K : ℕ} [NeZero N] (hc : ∀ x, c x < K)
@@ -201,11 +201,11 @@ theorem dftWeightedLD_eq_bruteWeightedLD {N K : ℕ} [NeZero N] (hc : ∀ x, c x
   push_cast
   rfl
 
-/-- The number of ordered SNP pairs at cell offset `j`, by which ALDER divides the weighted
+/-- **Number of SNP pairs at a cell offset.** The number of ordered SNP pairs at cell offset `j`, by which ALDER divides the weighted
 sum. -/
 def pairCount (j : ℕ) : ℕ := ∑ x, ∑ y, if c y = c x + j then 1 else 0
 
-/-- The pair count is the zero-padded autocorrelation of the cell occupancy counts. -/
+/-- **Pair count as autocorrelation of cell occupancy counts.** The pair count is the zero-padded autocorrelation of the cell occupancy counts. -/
 theorem autocorrDFT_cellCount {N K : ℕ} [NeZero N] (hc : ∀ x, c x < K)
     (hN : 2 * K ≤ N + 1) {j : ℕ} (hj : j < K) :
     autocorrDFT N (cellSum c fun _ => 1) j = (pairCount c j : ℂ) := by

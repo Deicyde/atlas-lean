@@ -51,7 +51,7 @@ every $x \in \partial I^2$. -/
 def boundaryFixingHomeomorphisms : Subgroup (Square ≃ₜ Square) :=
   fixingSubgroup (Square ≃ₜ Square) squareBoundary
 
-/-- The right orders of `G`: linear orders (as relations) invariant under right multiplication. -/
+/-- **Right orders of a group.** The right orders of `G`: linear orders (as relations) invariant under right multiplication. -/
 def rightOrders (G : Type*) [Group G] : Set (G → G → Prop) :=
   {r | IsLinearOrder G r ∧ ∀ a b c : G, r a b → r (a * c) (b * c)}
 

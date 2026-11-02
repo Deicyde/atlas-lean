@@ -42,7 +42,7 @@ Z-group whose exponent equals its cardinality is cyclic.
 
 @[expose] public section
 
-/-- An additive commutative group of squarefree cardinality is additively
+/-- **Additive groups of squarefree order are cyclic.** An additive commutative group of squarefree cardinality is additively
 cyclic. -/
 theorem IsAddCyclic.of_squarefree_natCard {A : Type*} [AddCommGroup A]
     (hA : Squarefree (Nat.card A)) : IsAddCyclic A := by

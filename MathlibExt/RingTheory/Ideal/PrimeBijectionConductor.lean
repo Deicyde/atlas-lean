@@ -75,7 +75,7 @@ private lemma conductor_span_helper
     rw [hfq, hr]
     ring
 
-/-- Contraction after extension is the identity on primes not containing `𝔠`. -/
+/-- **Contraction after extension fixes primes away from the conductor.** Contraction after extension is the identity on primes not containing `𝔠`. -/
 lemma comap_map_eq_of_not_le_conductor
     {O B : Type*} [CommRing O] [CommRing B] [Algebra O B]
     {𝔠 𝔭 : Ideal O}
@@ -96,7 +96,7 @@ lemma comap_map_eq_of_not_le_conductor
       (mt (Ideal.IsPrime.mem_of_pow_mem h𝔭 n) hs𝔭)
   · exact Ideal.le_comap_map
 
-/-- Contraction of a nonzero ideal is nonzero when `𝔠` is nonzero: a
+/-- **Contraction of a nonzero ideal is nonzero.** Contraction of a nonzero ideal is nonzero when `𝔠` is nonzero: a
 nonzero element of `𝔠` clears a nonzero element of `𝔮` back to a nonzero
 element of the contraction. -/
 lemma comap_ne_bot_of_ne_bot
@@ -127,7 +127,7 @@ lemma comap_ne_bot_of_ne_bot
   exact hb_ne ((mul_eq_zero.mp ha.symm).resolve_left
     fun h => hc_ne (hf (by simpa using h)))
 
-/-- Extension after contraction is the identity on primes of `B` not
+/-- **Extension after contraction fixes primes away from the conductor.** Extension after contraction is the identity on primes of `B` not
 containing `𝔠.map f`, using that `B` has Krull dimension at most one. -/
 lemma map_comap_eq_of_not_le_map_conductor
     {O B : Type*} [CommRing O] [CommRing B] [IsDedekindDomain B] [Algebra O B]
@@ -155,7 +155,7 @@ lemma map_comap_eq_of_not_le_map_conductor
     exact h𝔭_ne
   exact (Ring.DimensionLeOne.prime_le_prime_iff_eq hP0).mp Ideal.map_comap_le
 
-/-- Contraction and extension give an equivalence between all primes of `B`
+/-- **Bijection of primes away from the conductor.** Contraction and extension give an equivalence between all primes of `B`
 not containing `𝔠.map (algebraMap O B)` and all primes of `O` not containing
 `𝔠`, including the zero prime on both sides. This restores the full spectra
 in ATLAS `NumberTheoryI` Corollary 6.27. -/
@@ -219,7 +219,7 @@ theorem primeEquivOfNotLeConductor_symm_apply
       𝔭.1.map (algebraMap O B) := by
   rfl
 
-/-- Contraction and extension give an equivalence between the nonzero primes
+/-- **Bijection of nonzero primes away from the conductor.** Contraction and extension give an equivalence between the nonzero primes
 of `B` not containing `𝔠.map (algebraMap O B)` and the nonzero primes of `O`
 not containing `𝔠`. This is the restriction of
 `Ideal.primeEquivOfNotLeConductor` to nonzero prime ideals. -/

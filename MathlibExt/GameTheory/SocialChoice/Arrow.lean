@@ -73,7 +73,7 @@ end StrictTotalOrder
 order on the alternatives. -/
 abbrev Profile (Alt Voter : Type*) := Voter → StrictTotalOrder Alt
 
-/-- A social welfare function maps each unrestricted profile to a social strict total order. -/
+/-- **Social welfare function.** A social welfare function maps each unrestricted profile to a social strict total order. -/
 abbrev SocialWelfareFunction (Alt Voter : Type*) := Profile Alt Voter → StrictTotalOrder Alt
 
 /-- **Pareto condition.** A social welfare function $F$ satisfies the Pareto condition if for

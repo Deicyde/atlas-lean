@@ -60,7 +60,7 @@ namespace MathlibExt.Probability.StableDistribution
 ### Convolution powers
 -/
 
-/-- The convolution power of a Gaussian is Gaussian with the mean and the
+/-- **Convolution powers of a Gaussian are Gaussian.** The convolution power of a Gaussian is Gaussian with the mean and the
 variance multiplied by `n`: the law of the sum of `n` i.i.d.
 `N(μ, v)` variables is `N(nμ, nv)`. -/
 theorem convPow_gaussianReal (μ : ℝ) (v : ℝ≥0) (n : ℕ) :
@@ -81,14 +81,14 @@ theorem convPow_gaussianReal (μ : ℝ) (v : ℝ≥0) (n : ℕ) :
 ### Stable laws
 -/
 
-/-- Indexed stability fixes the positive-n dilation to `n^(1/α)` and allows
+/-- **Stable distribution of a given index.** Indexed stability fixes the positive-n dilation to `n^(1/α)` and allows
 arbitrary centering. Degenerate Dirac identities may satisfy several indices. -/
 def IsStable (μ : Measure ℝ) (α : ℝ) : Prop :=
   IsProbabilityMeasure μ ∧ 0 < α ∧ α ≤ 2 ∧
   ∀ n : ℕ, 0 < n → ∃ b : ℝ,
     μ.convPow n = μ.map (fun x => (n : ℝ) ^ (1 / α) * x + b)
 
-/-- A Dirac law satisfies the fixed-dilation identity at every admissible index.
+/-- **Dirac measures are stable of every index.** A Dirac law satisfies the fixed-dilation identity at every admissible index.
 These are degenerate rescaling identities, with centering `na - n^(1/α)a`. -/
 theorem isStable_dirac (a : ℝ) {α : ℝ} (hα0 : 0 < α) (hα2 : α ≤ 2) :
     IsStable (dirac a) α := by
@@ -99,7 +99,7 @@ theorem isStable_dirac (a : ℝ) {α : ℝ} (hα0 : 0 < α) (hα2 : α ≤ 2) :
   simp only [nsmul_eq_mul]
   ring
 
-/-- Every real Gaussian measure is stable of index `2`: the sum of `n`
+/-- **Gaussian measures are stable of index 2.** Every real Gaussian measure is stable of index `2`: the sum of `n`
 i.i.d. `N(μ, v)` variables is `N(nμ, nv)`, which is the pushforward of
 `N(μ, v)` under `x ↦ √n · x + (n - √n) μ`. -/
 theorem isStable_gaussianReal (μ : ℝ) (v : ℝ≥0) :
@@ -122,7 +122,7 @@ theorem isStable_gaussianReal (μ : ℝ) (v : ℝ≥0) :
   congr 1
   ring
 
-/-- A nondegenerate Gaussian cannot have fixed stability index one. The n=4
+/-- **Nondegenerate Gaussian is not stable of index 1.** A nondegenerate Gaussian cannot have fixed stability index one. The n=4
 convolution variance is `4v`, while every such affine dilation has variance `16v`. -/
 theorem not_isStable_gaussianReal_one {μ : ℝ} {v : ℝ≥0} (hv : v ≠ 0) :
     ¬ IsStable (gaussianReal μ v) 1 := by
@@ -142,12 +142,12 @@ theorem not_isStable_gaussianReal_one {μ : ℝ} {v : ℝ≥0} (hv : v ≠ 0) :
   have hz : (v : ℝ) = 0 := by nlinarith
   exact hv (NNReal.coe_injective hz)
 
-/-- A measure `μ` on `ℝ` is *nondegenerate* if it is not a point mass
+/-- **Nondegenerate measure on the real line.** A measure `μ` on `ℝ` is *nondegenerate* if it is not a point mass
 `δ_a` for any `a`. -/
 def IsNondegenerate (μ : Measure ℝ) : Prop :=
   ¬ ∃ a : ℝ, μ = Measure.dirac a
 
-/-- A Gaussian with nonzero variance is nondegenerate: it gives mass `0`
+/-- **Gaussian with nonzero variance is nondegenerate.** A Gaussian with nonzero variance is nondegenerate: it gives mass `0`
 to every singleton, while `δ_a` gives mass `1` to `{a}`. -/
 theorem isNondegenerate_gaussianReal {μ : ℝ} {v : ℝ≥0} (hv : v ≠ 0) :
     IsNondegenerate (gaussianReal μ v) := by
@@ -158,7 +158,7 @@ theorem isNondegenerate_gaussianReal {μ : ℝ} {v : ℝ≥0} (hv : v ≠ 0) :
   rw [ha] at h0
   simp at h0
 
-/-- A Dirac measure is degenerate, by definition. -/
+/-- **Dirac measure is degenerate.** A Dirac measure is degenerate, by definition. -/
 theorem not_isNondegenerate_dirac (a : ℝ) :
     ¬ IsNondegenerate (Measure.dirac a) :=
   fun h => h ⟨a, rfl⟩
@@ -167,7 +167,7 @@ theorem not_isNondegenerate_dirac (a : ℝ) :
 ### Domains of attraction
 -/
 
-/-- The probability measure `μ` is *in the domain of attraction* of `G`
+/-- **Domain of attraction.** The probability measure `μ` is *in the domain of attraction* of `G`
 if there exist sequences of normalizing constants `a n > 0` and
 centering constants `b n` such that the law of `(S_n - b n) / a n`
 (where `S_n` has law `μ^{*n}`) converges weakly to `G`, expressed here
@@ -182,7 +182,7 @@ def InDomainOfAttraction (μ G : Measure ℝ) : Prop :=
           (Measure.convPow μ n)))
         atTop (𝓝 (∫ x, f x ∂G))
 
-/-- A stable law is a normalized weak limit of its own convolution powers.
+/-- **Stable law lies in its own domain of attraction.** A stable law is a normalized weak limit of its own convolution powers.
 The positive-n inverse affine identity is exact; order zero uses normalizer one. -/
 theorem IsStable.inDomainOfAttraction_self {μ : Measure ℝ} {α : ℝ}
     (h : IsStable μ α) : InDomainOfAttraction μ μ := by
@@ -218,12 +218,12 @@ theorem IsStable.inDomainOfAttraction_self {μ : Measure ℝ} {α : ℝ}
   filter_upwards [heq] with n hn
   rw [hn]
 
-/-- Indexed attraction requires a nondegenerate stable limit of that index.
+/-- **Domain of attraction of a given index.** Indexed attraction requires a nondegenerate stable limit of that index.
 The general normalized weak-limit relation alone does not assign an index. -/
 def InDomainOfAttractionIndex (μ : Measure ℝ) (α : ℝ) : Prop :=
   ∃ G : Measure ℝ, IsStable G α ∧ IsNondegenerate G ∧ InDomainOfAttraction μ G
 
-/-- The Dirac measure is in its own domain of attraction: with
+/-- **Dirac measure lies in its own domain of attraction.** The Dirac measure is in its own domain of attraction: with
 `a n = 1` and `b n = (n - 1) a`, the normalized law of `S_n` is
 `δ_a` for every `n`. -/
 theorem inDomainOfAttraction_dirac (a : ℝ) :

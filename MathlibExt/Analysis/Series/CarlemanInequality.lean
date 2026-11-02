@@ -45,7 +45,7 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- The geometric mean of the first `n + 1` terms of a sequence `a`. -/
+/-- **Geometric mean of the initial terms of a sequence.** The geometric mean of the first `n + 1` terms of a sequence `a`. -/
 noncomputable def carlemanGeomMean (a : ℕ → ℝ) (n : ℕ) : ℝ :=
   (∏ k ∈ Finset.range (n + 1), a k) ^ ((((n + 1 : ℕ) : ℝ))⁻¹)
 
@@ -203,7 +203,7 @@ private lemma carleman_step {n : ℕ} (hn : 1 ≤ n) {x y : ℝ} (hx : 0 ≤ x) 
     _ = (n : ℝ) * (y * u ^ (n + 1)) + Real.exp 1 * y := by ring
     _ = (n : ℝ) * x + Real.exp 1 * y := by rw [← hx_eq]
 
-/-- Strengthened finite Carleman inequality: the partial sum of the geometric
+/-- **Strengthened finite Carleman inequality.** Strengthened finite Carleman inequality: the partial sum of the geometric
 means plus `(M + 1)` times the last geometric mean is bounded by `e` times the
 partial sum of the terms. -/
 theorem carlemanGeomMean_sum_add_mul_le {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (M : ℕ) :
@@ -229,7 +229,7 @@ theorem carlemanGeomMean_sum_add_mul_le {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n
     push_cast at hstep IH ⊢
     linarith [IH, hstep]
 
-/-- Finite Carleman inequality: the partial sum of the geometric means is
+/-- **Finite Carleman inequality.** Finite Carleman inequality: the partial sum of the geometric means is
 bounded by `e` times the partial sum of the terms. -/
 theorem carlemanGeomMean_sum_le {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (N : ℕ) :
     (∑ n ∈ Finset.range N, carlemanGeomMean a n) ≤
@@ -242,7 +242,7 @@ theorem carlemanGeomMean_sum_le {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (N : �
       mul_nonneg (by positivity) (carlemanGeomMean_nonneg ha M)
     linarith
 
-/-- Carleman's inequality (sharp form): for a summable nonnegative sequence,
+/-- **Carleman's inequality.** Carleman's inequality (sharp form): for a summable nonnegative sequence,
 the series of geometric means of the initial products is summable and bounded
 by `e` times the series of the terms. -/
 theorem carleman_inequality {a : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hsumm : Summable a) :

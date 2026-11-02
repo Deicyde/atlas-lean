@@ -159,7 +159,7 @@ end ParabolicClassificationAux
 
 namespace ModularGroup
 
-/-- Every element of `SL(2, ℤ)` whose trace squares to `4` is, up to a sign,
+/-- **Parabolic elements of SL(2, ℤ) are conjugate to ± powers of T.** Every element of `SL(2, ℤ)` whose trace squares to `4` is, up to a sign,
 conjugate to a power of the translation `T`. -/
 theorem exists_eq_conj_T_zpow_of_trace_sq_eq_four (γ : SL(2, ℤ))
     (hγ : ((γ : Matrix (Fin 2) (Fin 2) ℤ).trace) ^ 2 = 4) :

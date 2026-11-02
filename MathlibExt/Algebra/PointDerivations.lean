@@ -43,7 +43,7 @@ universe u v w w' w''
 
 namespace Algebra
 
-/-- Point derivations at a `k`-point `ev` of a `k`-algebra `A` with values
+/-- **Point derivations of an algebra.** Point derivations at a `k`-point `ev` of a `k`-algebra `A` with values
 in a `k`-module `M`. -/
 def PointDerivations (k : Type u) (A : Type v) [Field k] [CommRing A] [Algebra k A]
     (ev : A →ₐ[k] k) (M : Type w) [AddCommGroup M] [Module k M] : Submodule k (A →ₗ[k] M) where
@@ -81,7 +81,7 @@ theorem apply_algebraMap {D : A →ₗ[k] M} (hD : D ∈ PointDerivations k A ev
     D (algebraMap k A c) = 0 := by
   rw [Algebra.algebraMap_eq_smul_one, LinearMap.map_smul, apply_one hD, smul_zero]
 
-/-- Functoriality of point derivations in the coefficient module. -/
+/-- **Functoriality of point derivations in the coefficient module.** Functoriality of point derivations in the coefficient module. -/
 def map (ev : A →ₐ[k] k) (φ : M →ₗ[k] M') :
     ↥(PointDerivations k A ev M) →ₗ[k] ↥(PointDerivations k A ev M') where
   toFun D := ⟨φ.comp D.1, fun a b => by

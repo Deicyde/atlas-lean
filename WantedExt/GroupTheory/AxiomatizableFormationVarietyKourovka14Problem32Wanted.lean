@@ -42,7 +42,7 @@ satisfying a set of laws.
 
 open FirstOrder FirstOrder.Language
 
-/-- A class of groups, as a predicate on groups in `Type`. -/
+/-- **Class of groups.** A class of groups, as a predicate on groups in `Type`. -/
 abbrev GroupClass : Type 1 := ∀ (G : Type) [Group G], Prop
 
 /-- **Formations of groups in the sense of Gaglione and Spellman.** A class $\mathfrak{F}$ of

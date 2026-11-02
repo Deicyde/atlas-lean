@@ -38,14 +38,14 @@ Chickering 1995).
 
 variable {V : Type*}
 
-/-- The structure has no directed cycle. -/
+/-- **Acyclic network structure.** The structure has no directed cycle. -/
 def IsAcyclic (Pa : V → Finset V) : Prop :=
   ∀ v, ¬Relation.TransGen (fun u w => u ∈ Pa w) v v
 
-/-- `u` and `w` are adjacent (joined by an edge in either direction). -/
+/-- **Adjacent vertices in a network structure.** `u` and `w` are adjacent (joined by an edge in either direction). -/
 def Adjacent (Pa : V → Finset V) (u w : V) : Prop := u ∈ Pa w ∨ w ∈ Pa u
 
-/-- `u → w ← z` is a v-structure: two non-adjacent distinct parents of a common child. -/
+/-- **V-structure in a directed graph.** `u → w ← z` is a v-structure: two non-adjacent distinct parents of a common child. -/
 def IsVStructure (Pa : V → Finset V) (u w z : V) : Prop :=
   u ≠ z ∧ u ∈ Pa w ∧ z ∈ Pa w ∧ ¬Adjacent Pa u z
 

@@ -45,14 +45,14 @@ namespace StatMech
 
 namespace Lattice
 
-/-- A radius `R` such that the image of `P` lies in `box 2 R`. -/
+/-- **Radius of a box containing a planar lattice subgraph.** A radius `R` such that the image of `P` lies in `box 2 R`. -/
 noncomputable def outerBoxRadius (P : PlanarZ2Subgraph) : ℕ := (image_subset_box P).choose
 
 theorem outerBoxRadius_spec (P : PlanarZ2Subgraph) :
     ∀ v : P.V, P.emb v ∈ box 2 (outerBoxRadius P) :=
   (image_subset_box P).choose_spec
 
-/-- The outer region: the component of the region graph containing the far site `beacon 2 R`. -/
+/-- **Outer region of the rotated region graph.** The outer region: the component of the region graph containing the far site `beacon 2 R`. -/
 noncomputable def outerRegion (P : PlanarZ2Subgraph) :
     (regionGraph (imageGraph P)).ConnectedComponent :=
   (regionGraph (imageGraph P)).connectedComponentMk (beacon 2 (outerBoxRadius P))
@@ -119,7 +119,7 @@ theorem boundedRegion_iff_ne_outer (P : PlanarZ2Subgraph)
     rw [Set.not_finite] at hinf
     exact hne (outerRegion_eq_of_infinite P hinf)
 
-/-- The finite components of the region graph are exactly the components other than the outer
+/-- **Bounded regions are the components other than the outer one.** The finite components of the region graph are exactly the components other than the outer
 region. -/
 def boundedRegionEquivNeOuter (P : PlanarZ2Subgraph) :
     {C : (regionGraph (imageGraph P)).ConnectedComponent // C.supp.Finite} ≃

@@ -152,7 +152,7 @@ private theorem heightOne_isUnramifiedAt_of_not_dvd_core
   exact dvd_trans h1 h2
 
 
-/-- Theorem 12.19, discriminant half, in Mathlib's standard predicate:
+/-- **Unramified primes are those not dividing the discriminant.** Theorem 12.19, discriminant half, in Mathlib's standard predicate:
 `𝔭` is unramified in `B` exactly when it does not divide the discriminant ideal. -/
 theorem isUnramifiedIn_iff_not_dvd_discriminantIdeal
     (𝔭 : IsDedekindDomain.HeightOneSpectrum A) :
@@ -163,7 +163,7 @@ theorem isUnramifiedIn_iff_not_dvd_discriminantIdeal
      fun hndvd 𝔮 hlies =>
        heightOne_isUnramifiedAt_of_not_dvd_core A B 𝔭 hndvd 𝔮 hlies⟩
 
-/-- Height-one compatibility: derive nondivisibility from the standard
+/-- **Unramified at a height-one prime implies not dividing discriminant.** Height-one compatibility: derive nondivisibility from the standard
 unramified-in criterion after converting the original height-one premise. -/
 theorem not_dvd_discriminantIdeal_of_isUnramifiedAt
     (𝔭 : IsDedekindDomain.HeightOneSpectrum A)
@@ -173,7 +173,7 @@ theorem not_dvd_discriminantIdeal_of_isUnramifiedAt
   (isUnramifiedIn_iff_not_dvd_discriminantIdeal A B 𝔭).mp
     ((isUnramifiedIn_iff_forall_heightOne A B 𝔭).mpr hall)
 
-/-- Height-one compatibility: evaluate the standard unramified-in conclusion
+/-- **Not dividing the discriminant implies unramified at a prime.** Height-one compatibility: evaluate the standard unramified-in conclusion
 at the particular height-one prime supplied by an original client. -/
 theorem isUnramifiedAt_of_not_dvd_discriminantIdeal
     (𝔭 : IsDedekindDomain.HeightOneSpectrum A)
@@ -183,7 +183,7 @@ theorem isUnramifiedAt_of_not_dvd_discriminantIdeal
   (isUnramifiedIn_iff_not_dvd_discriminantIdeal A B 𝔭).mpr hndvd
     𝔮.asIdeal 𝔮.isPrime hlies
 
-/-- The original height-one formulation, derived from the standard primary criterion. -/
+/-- **Height-one form of the discriminant ramification criterion.** The original height-one formulation, derived from the standard primary criterion. -/
 theorem isUnramifiedAt_iff_not_dvd_discriminantIdeal
     (𝔭 : IsDedekindDomain.HeightOneSpectrum A) :
     (∀ 𝔮 : IsDedekindDomain.HeightOneSpectrum B, 𝔮.asIdeal.LiesOver 𝔭.asIdeal →

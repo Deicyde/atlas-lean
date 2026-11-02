@@ -146,7 +146,7 @@ private theorem eigenvalues_ge_one_of_posSemidef_sub_one {n : Type*} [Fintype n]
   simp only [hre]
   linarith [hnn]
 
-/-- If `W - 1` is positive semidefinite, then `1 ≤ det W`, since every
+/-- **Determinant at least one when W minus identity is positive semidefinite.** If `W - 1` is positive semidefinite, then `1 ≤ det W`, since every
 eigenvalue of `W` is at least `1`. -/
 theorem one_le_det_of_posSemidef_sub_one {n : Type*} [Fintype n] [DecidableEq n]
     {W : Matrix n n ℝ} (hW : W.IsHermitian) (h : (W - 1).PosSemidef) :

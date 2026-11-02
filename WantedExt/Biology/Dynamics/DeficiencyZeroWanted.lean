@@ -69,31 +69,31 @@ namespace ReactionNetwork
 
 variable (N : ReactionNetwork S ρ)
 
-/-- The complexes of the network: the sources and products of its reactions. -/
+/-- **Complexes of a chemical reaction network.** The complexes of the network: the sources and products of its reactions. -/
 def complexes : Set (S → ℕ) :=
   Set.range N.src ∪ Set.range N.prod
 
-/-- The directed reaction relation on complexes: `y ⟶ y'` if some reaction has source `y` and
+/-- **Directed reaction relation on complexes.** The directed reaction relation on complexes: `y ⟶ y'` if some reaction has source `y` and
 product `y'`. -/
 def Reacts (y y' : S → ℕ) : Prop :=
   ∃ r, N.src r = y ∧ N.prod r = y'
 
-/-- The undirected reaction graph on the complexes: distinct complexes are adjacent when one
+/-- **Linkage graph of a reaction network.** The undirected reaction graph on the complexes: distinct complexes are adjacent when one
 reacts to the other. -/
 def linkageGraph : SimpleGraph N.complexes :=
   SimpleGraph.fromRel fun c c' => N.Reacts c c'
 
-/-- The number of linkage classes: connected components of the undirected reaction graph. -/
+/-- **Number of linkage classes of a reaction network.** The number of linkage classes: connected components of the undirected reaction graph. -/
 noncomputable def numLinkageClasses : ℕ :=
   Nat.card N.linkageGraph.ConnectedComponent
 
-/-- The deficiency `δ = n - ℓ - s` (number of complexes, linkage classes, dimension of the
+/-- **Deficiency of a chemical reaction network.** The deficiency `δ = n - ℓ - s` (number of complexes, linkage classes, dimension of the
 stoichiometric subspace). -/
 noncomputable def deficiency : ℤ :=
   (Nat.card N.complexes : ℤ) - N.numLinkageClasses -
     Module.finrank ℝ N.stoichiometricSubspace
 
-/-- The network is weakly reversible: for every reaction `y → y'` there is a directed path of
+/-- **Weakly reversible reaction network.** The network is weakly reversible: for every reaction `y → y'` there is a directed path of
 reactions from `y'` back to `y`. -/
 def IsWeaklyReversible : Prop :=
   ∀ r, Relation.ReflTransGen N.Reacts (N.prod r) (N.src r)

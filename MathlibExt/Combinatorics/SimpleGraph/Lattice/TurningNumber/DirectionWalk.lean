@@ -44,7 +44,7 @@ namespace StatMech.Onsager.BaseCase
 open Finset
 open Fin.NatCast
 
-/-- The unit step of `ℤ²` in direction `w`: `0 ↦ (1, 0)` (east), `1 ↦ (0, 1)` (north), `2 ↦ (-1, 0)`
+/-- **Unit lattice step in a given direction.** The unit step of `ℤ²` in direction `w`: `0 ↦ (1, 0)` (east), `1 ↦ (0, 1)` (north), `2 ↦ (-1, 0)`
   (west), `3 ↦ (0, -1)` (south). -/
 def stepOf : Fin 4 → ℤ × ℤ
   | 0 => (1, 0)
@@ -52,17 +52,17 @@ def stepOf : Fin 4 → ℤ × ℤ
   | 2 => (-1, 0)
   | 3 => (0, -1)
 
-/-- The `k`-th vertex of the lattice walk with step directions `d`: the sum of the steps `stepOf (d
+/-- **Vertices of a lattice walk from its step directions.** The `k`-th vertex of the lattice walk with step directions `d`: the sum of the steps `stepOf (d
   i)` for `i < k`, so that `pos d 0 = 0`. -/
 def pos {n : ℕ} [NeZero n] (d : Fin n → Fin 4) (k : Fin n) : ℤ × ℤ :=
   ∑ i ∈ Finset.filter (· < k) Finset.univ, stepOf (d i)
 
-/-- The number of counterclockwise (left) quarter turns of the cyclic direction sequence `d`, i.e.
+/-- **Number of left turns of a direction sequence.** The number of counterclockwise (left) quarter turns of the cyclic direction sequence `d`, i.e.
   of indices `i` with `d (i + 1) - d i = 1`. -/
 def cc {n : ℕ} [NeZero n] (d : Fin n → Fin 4) : ℕ :=
   (Finset.univ.filter (fun i : Fin n => d (i + 1) - d i = 1)).card
 
-/-- The turns of a cyclic direction sequence sum to zero in `Fin 4`. -/
+/-- **Turns of a cyclic direction sequence sum to zero.** The turns of a cyclic direction sequence sum to zero in `Fin 4`. -/
 theorem sum_turns_zero {n : ℕ} [NeZero n] (d : Fin n → Fin 4) :
     (∑ i : Fin n, (d (i + 1) - d i)) = 0 := by
   rw [Finset.sum_sub_distrib]
@@ -85,7 +85,7 @@ theorem sum_turns_eq_smul {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     · exact absurd h (Finset.mem_filter.1 hi).2
   rw [hP, hNP, add_zero]
 
-/-- If every turn is straight or left, the number of left turns is divisible by `4`. -/
+/-- **Without right turns, the number of left turns is divisible by four.** If every turn is straight or left, the number of left turns is divisible by `4`. -/
 theorem four_dvd_cc {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
     4 ∣ cc d := by
@@ -98,7 +98,7 @@ theorem four_dvd_cc {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
 theorem stepOf_ne_zero (w : Fin 4) : stepOf w ≠ 0 := by
   fin_cases w <;> decide
 
-/-- A closed walk with only straight steps and left turns turns at least once. -/
+/-- **A closed walk without right turns turns at least once.** A closed walk with only straight steps and left turns turns at least once. -/
 theorem cc_pos {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -139,14 +139,14 @@ theorem cc_pos {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     · exact stepOf_ne_zero (d 0) hv
   · exact h
 
-/-- A closed walk with only straight steps and left turns has at least four left turns. -/
+/-- **A closed walk without right turns has at least four left turns.** A closed walk with only straight steps and left turns has at least four left turns. -/
 theorem four_le_cc {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
     4 ≤ cc d :=
   Nat.le_of_dvd (cc_pos d hclosed hreflexfree) (four_dvd_cc d hreflexfree)
 
-/-- A closed walk with only straight steps and left turns has exactly four left turns, provided
+/-- **Exactly four left turns when simplicity rules out eight.** A closed walk with only straight steps and left turns has exactly four left turns, provided
   simplicity rules out eight or more. -/
 theorem base_cc_eq_four {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)

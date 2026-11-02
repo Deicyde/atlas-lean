@@ -56,33 +56,33 @@ open Finset
 variable {𝕜 : Type*} [RCLike 𝕜]
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
 
-/-- The Rademacher sign attached to a coordinate: `1` for `true`, `-1`
+/-- **Rademacher sign of a coordinate.** The Rademacher sign attached to a coordinate: `1` for `true`, `-1`
 for `false`. -/
 def rademacherSign (𝕜 : Type*) [RCLike 𝕜] {n : ℕ} (ε : Fin n → Bool) (i : Fin n) : 𝕜 :=
   if ε i then 1 else -1
 
-/-- The sign is `1` on a `true` coordinate. -/
+/-- **Rademacher sign on a true coordinate is one.** The sign is `1` on a `true` coordinate. -/
 theorem rademacherSign_eq_one_of {n : ℕ} {ε : Fin n → Bool} {i : Fin n}
     (h : ε i = true) : rademacherSign 𝕜 ε i = (1 : 𝕜) := by
   simp [rademacherSign, h]
 
-/-- The sign is `-1` on a `false` coordinate. -/
+/-- **Rademacher sign on a false coordinate is minus one.** The sign is `-1` on a `false` coordinate. -/
 theorem rademacherSign_eq_neg_one_of {n : ℕ} {ε : Fin n → Bool} {i : Fin n}
     (h : ε i = false) : rademacherSign 𝕜 ε i = (-1 : 𝕜) := by
   simp [rademacherSign, h]
 
-/-- Every Rademacher sign has norm `1`. -/
+/-- **Rademacher signs have norm one.** Every Rademacher sign has norm `1`. -/
 theorem norm_rademacherSign {n : ℕ} (ε : Fin n → Bool) (i : Fin n) :
     ‖rademacherSign 𝕜 ε i‖ = 1 := by
   unfold rademacherSign
   split <;> simp
 
-/-- Number of sign vectors: `Fin n → Bool` has `2 ^ n` elements. -/
+/-- **Number of sign vectors of length n.** Number of sign vectors: `Fin n → Bool` has `2 ^ n` elements. -/
 theorem card_sign_vectors (n : ℕ) :
     Fintype.card (Fin n → Bool) = 2 ^ n := by
   rw [Fintype.card_pi_const, Fintype.card_bool]
 
-/-- Exact second moment of a Rademacher sum in a Hilbert space:
+/-- **Second moment of a Rademacher sum in a Hilbert space.** Exact second moment of a Rademacher sum in a Hilbert space:
 the sum over all sign vectors of `‖∑ᵢ εᵢ • xᵢ‖²` equals
 `2 ^ n * ∑ᵢ ‖xᵢ‖²`. Cross terms cancel: the induction step pairs the
 two values of the last sign and applies the parallelogram law. -/
@@ -174,7 +174,7 @@ theorem sum_rademacher_sq_norm_eq (n : ℕ) (x : Fin n → E) :
     rw [htotal, pow_succ]
     ring
 
-/-- The average (uniform over sign vectors) of `‖∑ᵢ εᵢ • xᵢ‖²` is exactly
+/-- **Average squared norm of a Rademacher sum.** The average (uniform over sign vectors) of `‖∑ᵢ εᵢ • xᵢ‖²` is exactly
 `∑ᵢ ‖xᵢ‖²`. -/
 theorem average_rademacher_sq_norm_eq (n : ℕ) (x : Fin n → E) :
     ((2 : ℝ) ^ n) ⁻¹ * ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖ ^ 2
@@ -182,28 +182,28 @@ theorem average_rademacher_sq_norm_eq (n : ℕ) (x : Fin n → E) :
   rw [sum_rademacher_sq_norm_eq, ← mul_assoc,
     inv_mul_cancel₀ (pow_ne_zero n (two_ne_zero : (2 : ℝ) ≠ 0)), one_mul]
 
-/-- Rademacher type 2 with constant `1`: the average of the squared
+/-- **Hilbert spaces have Rademacher type 2.** Rademacher type 2 with constant `1`: the average of the squared
 Rademacher sums is at most `∑ᵢ ‖xᵢ‖²`. -/
 theorem rademacher_type_two (n : ℕ) (x : Fin n → E) :
     ((2 : ℝ) ^ n) ⁻¹ * ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖ ^ 2
       ≤ ∑ i, ‖x i‖ ^ 2 :=
   le_of_eq (average_rademacher_sq_norm_eq n x)
 
-/-- Rademacher cotype 2 with constant `1`: `∑ᵢ ‖xᵢ‖²` is at most the
+/-- **Hilbert spaces have Rademacher cotype 2.** Rademacher cotype 2 with constant `1`: `∑ᵢ ‖xᵢ‖²` is at most the
 average of the squared Rademacher sums. -/
 theorem rademacher_cotype_two (n : ℕ) (x : Fin n → E) :
     ∑ i, ‖x i‖ ^ 2
       ≤ ((2 : ℝ) ^ n) ⁻¹ * ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖ ^ 2 :=
   le_of_eq (average_rademacher_sq_norm_eq n x).symm
 
-/-- Square-root form of the exact second moment. -/
+/-- **Square-root form of the Rademacher second moment.** Square-root form of the exact second moment. -/
 theorem sqrt_average_rademacher_sq_norm_eq (n : ℕ) (x : Fin n → E) :
     Real.sqrt (((2 : ℝ) ^ n) ⁻¹ *
         ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖ ^ 2)
       = Real.sqrt (∑ i, ‖x i‖ ^ 2) := by
   rw [average_rademacher_sq_norm_eq]
 
-/-- The average Rademacher norm is at most `(∑ᵢ ‖xᵢ‖²)^{1/2}`
+/-- **Bound on the average Rademacher norm.** The average Rademacher norm is at most `(∑ᵢ ‖xᵢ‖²)^{1/2}`
 (Cauchy–Schwarz for the finite average, plus the exact second moment). -/
 theorem average_rademacher_norm_le (n : ℕ) (x : Fin n → E) :
     ((2 : ℝ) ^ n) ⁻¹ * ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖
@@ -237,7 +237,7 @@ theorem average_rademacher_norm_le (n : ℕ) (x : Fin n → E) :
     _ = ∑ i, ‖x i‖ ^ 2 := by
         field_simp
 
-/-- For unit vectors, the average squared Rademacher sum equals `n`. -/
+/-- **Average squared Rademacher sum of unit vectors.** For unit vectors, the average squared Rademacher sum equals `n`. -/
 theorem average_rademacher_sq_norm_eq_of_norm_eq_one {n : ℕ} {x : Fin n → E}
     (hx : ∀ i, ‖x i‖ = 1) :
     ((2 : ℝ) ^ n) ⁻¹ * ∑ ε : Fin n → Bool, ‖∑ i, rademacherSign 𝕜 ε i • x i‖ ^ 2
@@ -245,7 +245,7 @@ theorem average_rademacher_sq_norm_eq_of_norm_eq_one {n : ℕ} {x : Fin n → E}
   rw [average_rademacher_sq_norm_eq]
   simp [hx]
 
-/-- Scalar real form: the second moment of `∑ᵢ ±aᵢ` over all sign choices
+/-- **Second moment of a real Rademacher sum.** Scalar real form: the second moment of `∑ᵢ ±aᵢ` over all sign choices
 is `2 ^ n * ∑ᵢ aᵢ²`. -/
 theorem sum_rademacher_sq_real (n : ℕ) (a : Fin n → ℝ) :
     ∑ ε : Fin n → Bool, (∑ i, (if ε i then a i else -a i)) ^ 2

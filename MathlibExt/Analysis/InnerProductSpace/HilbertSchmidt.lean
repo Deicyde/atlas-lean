@@ -73,7 +73,7 @@ open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal NNRea
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- Norm squared of an `ℓ²(ℕ, 𝕜)` vector is the sum of the squared coordinate norms. -/
+/-- **Squared ℓ² norm as a sum of squared coordinates.** Norm squared of an `ℓ²(ℕ, 𝕜)` vector is the sum of the squared coordinate norms. -/
 theorem norm_sq_lp_eq_tsum (f : ℓ²(ℕ, 𝕜)) :
     ‖f‖ ^ 2 = ∑' i, ‖f i‖ ^ 2 := by
   have h := lp.norm_rpow_eq_tsum (p := (2 : ℝ≥0∞)) (by norm_num : (0 : ℝ) < (2 : ℝ≥0∞).toReal) (E := fun _ : ℕ => 𝕜) f
@@ -85,23 +85,23 @@ theorem norm_sq_lp_eq_tsum (f : ℓ²(ℕ, 𝕜)) :
   intro i
   rw [Real.rpow_two]
 
-/-- Summability of squared coordinate norms from `Memℓp`. -/
+/-- **Square-summability of coordinates of an ℓ² vector.** Summability of squared coordinate norms from `Memℓp`. -/
 theorem summable_norm_sq_of_memℓp {f : ℕ → 𝕜} (hf : Memℓp f 2) :
     Summable fun i => ‖f i‖ ^ 2 := by
   have h := (memℓp_gen_iff (p := (2 : ℝ≥0∞)) (by norm_num : (0 : ℝ) < (2 : ℝ≥0∞).toReal)).mp hf
   simpa using h
 
-/-- `Memℓp` at `2` from summability of squared norms. -/
+/-- **Square-summable sequences lie in ℓ².** `Memℓp` at `2` from summability of squared norms. -/
 theorem memℓp_of_summable_norm_sq {f : ℕ → 𝕜} (hf : Summable fun i => ‖f i‖ ^ 2) :
     Memℓp f 2 := by
   apply (memℓp_gen_iff (p := (2 : ℝ≥0∞)) (by norm_num : (0 : ℝ) < (2 : ℝ≥0∞).toReal)).mpr
   simpa using hf
 
-/-- A matrix is Hilbert–Schmidt if the squared norms of its entries are summable. -/
+/-- **Hilbert–Schmidt matrix.** A matrix is Hilbert–Schmidt if the squared norms of its entries are summable. -/
 def IsHilbertSchmidt (a : ℕ → ℕ → 𝕜) : Prop :=
   Summable fun p : ℕ × ℕ => ‖a p.1 p.2‖ ^ 2
 
-/-- The finite squared Hilbert–Schmidt norm: the sum of the squared entry norms.
+/-- **Squared Hilbert–Schmidt norm of a matrix.** The finite squared Hilbert–Schmidt norm: the sum of the squared entry norms.
 The witness restricts this real quantity to summable matrices, avoiding the
 zero default of a nonsummable real `tsum`. Divergent operators are handled
 by the existing extended-valued operator norm. -/
@@ -111,14 +111,14 @@ noncomputable def hsNormSq (a : ℕ → ℕ → 𝕜) (_ha : IsHilbertSchmidt a)
 theorem isHilbertSchmidt_iff {a : ℕ → ℕ → 𝕜} :
     IsHilbertSchmidt a ↔ Summable fun p : ℕ × ℕ => ‖a p.1 p.2‖ ^ 2 := Iff.rfl
 
-/-- Fiber summability: each row of a Hilbert–Schmidt matrix is square-summable. -/
+/-- **Rows of a Hilbert–Schmidt matrix are square-summable.** Fiber summability: each row of a Hilbert–Schmidt matrix is square-summable. -/
 theorem summable_row_of_isHilbertSchmidt {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (i : ℕ) :
     Summable fun j => ‖a i j‖ ^ 2 := by
   have h : Summable ((fun p : ℕ × ℕ => ‖a p.1 p.2‖ ^ 2) ∘ fun j => (i, j)) :=
     ha.comp_injective (fun j₁ j₂ h => by simpa using congrArg Prod.snd h)
   exact h
 
-/-- The row vector of a Hilbert–Schmidt matrix, as an `ℓ²` element (conjugated). -/
+/-- **Row vector of a Hilbert–Schmidt matrix.** The row vector of a Hilbert–Schmidt matrix, as an `ℓ²` element (conjugated). -/
 noncomputable def hsRow (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (i : ℕ) : ℓ²(ℕ, 𝕜) :=
   ⟨fun j => star (a i j), by
     apply memℓp_of_summable_norm_sq
@@ -140,21 +140,21 @@ theorem summable_norm_sq_hsRow (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt
   refine h.congr (fun i => ?_)
   rw [norm_sq_hsRow]
 
-/-- The coordinate series defining the Hilbert–Schmidt operator is summable. -/
+/-- **Summability of the Hilbert–Schmidt coordinate series.** The coordinate series defining the Hilbert–Schmidt operator is summable. -/
 theorem summable_hsCoord {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     Summable fun j => a i j * x j := by
   have h := lp.summable_inner (𝕜 := 𝕜) (hsRow a ha i) x
   refine h.congr (fun j => ?_)
   rw [hsRow_apply, RCLike.inner_apply', starRingEnd_apply, star_star]
 
-/-- The coordinate series is the inner product with the row vector. -/
+/-- **Hilbert–Schmidt coordinates as inner products with rows.** The coordinate series is the inner product with the row vector. -/
 theorem hsCoord_eq_inner {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     (∑' j, a i j * x j) = ⟪hsRow a ha i, x⟫_𝕜 := by
   rw [lp.inner_eq_tsum]
   refine tsum_congr (fun j => ?_)
   rw [hsRow_apply, RCLike.inner_apply', starRingEnd_apply, star_star]
 
-/-- The coordinate series of a Hilbert–Schmidt matrix applied to an `ℓ²` vector is in `ℓ²`. -/
+/-- **Hilbert–Schmidt matrix maps ℓ² vectors into ℓ².** The coordinate series of a Hilbert–Schmidt matrix applied to an `ℓ²` vector is in `ℓ²`. -/
 theorem memℓp_hsCoord {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) :
     Memℓp (fun i => ∑' j, a i j * x j) 2 := by
   apply memℓp_of_summable_norm_sq
@@ -166,7 +166,7 @@ theorem memℓp_hsCoord {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (x 
       _ = ‖hsRow a ha i‖ ^ 2 * ‖x‖ ^ 2 := mul_pow _ _ _
   · exact (summable_norm_sq_hsRow a ha).mul_right _
 
-/-- The Hilbert–Schmidt operator of a matrix, as a linear map. -/
+/-- **Hilbert–Schmidt operator as a linear map.** The Hilbert–Schmidt operator of a matrix, as a linear map. -/
 noncomputable def hsLinMap (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜) where
   toFun x := ⟨fun i => ∑' j, a i j * x j, memℓp_hsCoord ha x⟩
@@ -185,17 +185,17 @@ noncomputable def hsLinMap (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) 
     refine tsum_congr (fun j => ?_)
     rw [lp.coeFn_smul, Pi.smul_apply, smul_eq_mul, mul_left_comm]
 
-/-- The squared norms of the coordinates of a Hilbert–Schmidt image are summable. -/
+/-- **Square-summability of a Hilbert–Schmidt image.** The squared norms of the coordinates of a Hilbert–Schmidt image are summable. -/
 theorem summable_norm_sq_hsLinMap (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) :
     Summable fun i => ‖hsLinMap a ha x i‖ ^ 2 :=
   summable_norm_sq_of_memℓp (memℓp_hsCoord ha x)
 
-/-- Pointwise action of the Hilbert–Schmidt linear map. -/
+/-- **Pointwise action of the Hilbert–Schmidt linear map.** Pointwise action of the Hilbert–Schmidt linear map. -/
 theorem hsLinMap_apply (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hsLinMap a ha x i = ∑' j, a i j * x j :=
   rfl
 
-/-- The Hilbert–Schmidt operator is bounded by the square root of `hsNormSq`. -/
+/-- **Norm bound for the Hilbert–Schmidt linear map.** The Hilbert–Schmidt operator is bounded by the square root of `hsNormSq`. -/
 theorem norm_hsLinMap_le (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) :
     ‖hsLinMap a ha x‖ ≤ Real.sqrt (hsNormSq a ha) * ‖x‖ := by
   have hsq : ‖hsLinMap a ha x‖ ^ 2 ≤ hsNormSq a ha * ‖x‖ ^ 2 := by
@@ -225,22 +225,22 @@ theorem norm_hsLinMap_le (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (x
     _ = Real.sqrt (hsNormSq a ha) * ‖x‖ := by
         rw [Real.sqrt_mul hnn, Real.sqrt_sq (norm_nonneg _)]
 
-/-- The Hilbert–Schmidt operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
+/-- **Hilbert–Schmidt operator on ℓ².** The Hilbert–Schmidt operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
 noncomputable def hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   (hsLinMap a ha).mkContinuous (Real.sqrt (hsNormSq a ha)) (norm_hsLinMap_le a ha)
 
-/-- Pointwise action of the Hilbert–Schmidt operator. -/
+/-- **Pointwise action of the Hilbert–Schmidt operator.** Pointwise action of the Hilbert–Schmidt operator. -/
 theorem hsOperator_apply (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hsOperator a ha x i = ∑' j, a i j * x j :=
   rfl
 
-/-- The operator norm of a Hilbert–Schmidt operator is at most its Hilbert–Schmidt norm. -/
+/-- **Operator norm is at most the Hilbert–Schmidt norm.** The operator norm of a Hilbert–Schmidt operator is at most its Hilbert–Schmidt norm. -/
 theorem norm_hsOperator_le (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     ‖hsOperator a ha‖ ≤ Real.sqrt (hsNormSq a ha) :=
   ContinuousLinearMap.opNorm_le_bound _ (Real.sqrt_nonneg _) (norm_hsLinMap_le a ha)
 
-/-- The zero matrix is Hilbert–Schmidt. -/
+/-- **Zero matrix is Hilbert–Schmidt.** The zero matrix is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_zero : IsHilbertSchmidt (0 : ℕ → ℕ → 𝕜) := by
   show Summable (fun p : ℕ × ℕ => ‖(0 : ℕ → ℕ → 𝕜) p.1 p.2‖ ^ 2)
   have h0 : (fun p : ℕ × ℕ => ‖(0 : ℕ → ℕ → 𝕜) p.1 p.2‖ ^ 2) = 0 := by
@@ -249,18 +249,18 @@ theorem isHilbertSchmidt_zero : IsHilbertSchmidt (0 : ℕ → ℕ → 𝕜) := b
   rw [h0]
   exact summable_zero
 
-/-- The Hilbert–Schmidt operator of the zero matrix is zero. -/
+/-- **Hilbert–Schmidt operator of the zero matrix is zero.** The Hilbert–Schmidt operator of the zero matrix is zero. -/
 theorem hsOperator_zero : hsOperator (0 : ℕ → ℕ → 𝕜) isHilbertSchmidt_zero = 0 := by
   ext x i
   simp [hsOperator_apply]
 
-/-- The negative of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
+/-- **Negation preserves the Hilbert–Schmidt property.** The negative of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_neg {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) :
     IsHilbertSchmidt (-a) := by
   refine ha.congr (fun p => ?_)
   simp [norm_neg]
 
-/-- The sum of Hilbert–Schmidt matrices is Hilbert–Schmidt. -/
+/-- **Sum of Hilbert–Schmidt matrices is Hilbert–Schmidt.** The sum of Hilbert–Schmidt matrices is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_add {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a)
     (hb : IsHilbertSchmidt b) : IsHilbertSchmidt (a + b) := by
   refine Summable.of_nonneg_of_le (f := fun p => 2 * ‖a p.1 p.2‖ ^ 2 + 2 * ‖b p.1 p.2‖ ^ 2) (fun p => by positivity) (fun p => ?_) ?_
@@ -273,7 +273,7 @@ theorem isHilbertSchmidt_add {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt
             norm_nonneg (a p.1 p.2), norm_nonneg (b p.1 p.2)]
   · exact (ha.mul_left 2).add (hb.mul_left 2)
 
-/-- The difference of Hilbert–Schmidt matrices is Hilbert–Schmidt. -/
+/-- **Difference of Hilbert–Schmidt matrices is Hilbert–Schmidt.** The difference of Hilbert–Schmidt matrices is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_sub {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a)
     (hb : IsHilbertSchmidt b) : IsHilbertSchmidt (a - b) := by
   have h := isHilbertSchmidt_add ha (isHilbertSchmidt_neg hb)
@@ -281,13 +281,13 @@ theorem isHilbertSchmidt_sub {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt
   funext i j
   simp [sub_eq_add_neg]
 
-/-- A scalar multiple of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
+/-- **Scalar multiple of a Hilbert–Schmidt matrix is Hilbert–Schmidt.** A scalar multiple of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_smul {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (c : 𝕜) :
     IsHilbertSchmidt (c • a) := by
   refine (ha.mul_left (‖c‖ ^ 2)).congr (fun p => ?_)
   simp [Pi.smul_apply, mul_pow]
 
-/-- The Hilbert–Schmidt operator of a sum is the sum of the operators. -/
+/-- **Additivity of the Hilbert–Schmidt operator.** The Hilbert–Schmidt operator of a sum is the sum of the operators. -/
 theorem hsOperator_add {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (hb : IsHilbertSchmidt b) :
     hsOperator (a + b) (isHilbertSchmidt_add ha hb) = hsOperator a ha + hsOperator b hb := by
   ext x i
@@ -296,7 +296,7 @@ theorem hsOperator_add {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (h
   refine tsum_congr (fun j => ?_)
   rw [add_mul]
 
-/-- The Hilbert–Schmidt operator of a difference is the difference of the operators. -/
+/-- **Hilbert–Schmidt operator of a difference of matrices.** The Hilbert–Schmidt operator of a difference is the difference of the operators. -/
 theorem hsOperator_sub {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (hb : IsHilbertSchmidt b) :
     hsOperator (a - b) (isHilbertSchmidt_sub ha hb) = hsOperator a ha - hsOperator b hb := by
   ext x i
@@ -305,7 +305,7 @@ theorem hsOperator_sub {a b : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (h
   refine tsum_congr (fun j => ?_)
   rw [sub_mul]
 
-/-- The Hilbert–Schmidt operator of a scalar multiple is the scalar multiple of the operator. -/
+/-- **Hilbert–Schmidt operator of a scalar multiple of a matrix.** The Hilbert–Schmidt operator of a scalar multiple is the scalar multiple of the operator. -/
 theorem hsOperator_smul {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (c : 𝕜) :
     hsOperator (c • a) (isHilbertSchmidt_smul ha c) = c • hsOperator a ha := by
   ext x i
@@ -315,13 +315,13 @@ theorem hsOperator_smul {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) (c 
   refine tsum_congr (fun j => ?_)
   rw [mul_assoc]
 
-/-- The conjugate transpose of a matrix: `(aᵀ*) i j = star (a j i)`. -/
+/-- **Conjugate transpose of an infinite matrix.** The conjugate transpose of a matrix: `(aᵀ*) i j = star (a j i)`. -/
 def hsTransposeStar (a : ℕ → ℕ → 𝕜) : ℕ → ℕ → 𝕜 := fun i j => star (a j i)
 
 theorem hsTransposeStar_apply (a : ℕ → ℕ → 𝕜) (i j : ℕ) :
     hsTransposeStar a i j = star (a j i) := rfl
 
-/-- The conjugate transpose of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
+/-- **Conjugate transpose of a Hilbert–Schmidt matrix is Hilbert–Schmidt.** The conjugate transpose of a Hilbert–Schmidt matrix is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_transposeStar {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) :
     IsHilbertSchmidt (hsTransposeStar a) := by
   have h := ha.comp_injective (Equiv.injective (Equiv.prodComm ℕ ℕ))
@@ -329,7 +329,7 @@ theorem isHilbertSchmidt_transposeStar {a : ℕ → ℕ → 𝕜} (ha : IsHilber
   simp only [Function.comp_apply, Equiv.prodComm_apply, Prod.fst_swap, Prod.snd_swap,
     hsTransposeStar, norm_star]
 
-/-- The matrix of a bounded operator on `ℓ²(ℕ, 𝕜)`: entry `(i, j)` is the `i`-th
+/-- **Matrix of a bounded operator on $\ell^2$.** The matrix of a bounded operator on `ℓ²(ℕ, 𝕜)`: entry `(i, j)` is the `i`-th
 coordinate of the image of the `j`-th standard basis vector. -/
 def hsMatrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) (i j : ℕ) : 𝕜 :=
   T (lp.single 2 j (1 : 𝕜)) i
@@ -337,7 +337,7 @@ def hsMatrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) (i j : ℕ) : �
 theorem hsMatrix_apply (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) (i j : ℕ) :
     hsMatrix T i j = T (lp.single 2 j (1 : 𝕜)) i := rfl
 
-/-- A bounded operator whose matrix is Hilbert–Schmidt is the Hilbert–Schmidt
+/-- **Operator with Hilbert–Schmidt matrix is the operator of its matrix.** A bounded operator whose matrix is Hilbert–Schmidt is the Hilbert–Schmidt
 operator of its matrix. -/
 theorem eq_hsOperator_of_isHilbertSchmidt_matrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜))
     (hT : IsHilbertSchmidt (hsMatrix T)) :
@@ -353,7 +353,7 @@ theorem eq_hsOperator_of_isHilbertSchmidt_matrix (T : ℓ²(ℕ, 𝕜) →L[𝕜
     ContinuousLinearMap.adjoint_inner_left, ← h1 (T (lp.single 2 j (1 : 𝕜))) i]
   exact mul_comm _ _
 
-/-- The matrix of a Hilbert–Schmidt operator is the matrix itself. -/
+/-- **Matrix of the Hilbert–Schmidt operator of a matrix.** The matrix of a Hilbert–Schmidt operator is the matrix itself. -/
 theorem hsMatrix_hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     hsMatrix (hsOperator a ha) = a := by
   funext i j
@@ -366,14 +366,14 @@ theorem hsMatrix_hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a)
   rw [lp.single_apply_self, mul_one] at h
   exact h
 
-/-- The Hilbert–Schmidt operator depends only on the matrix, not on the summability proof. -/
+/-- **Hilbert–Schmidt operator is independent of the summability proof.** The Hilbert–Schmidt operator depends only on the matrix, not on the summability proof. -/
 theorem hsOperator_congr {m m' : ℕ → ℕ → 𝕜} (h : m = m') (hm : IsHilbertSchmidt m)
     (hm' : IsHilbertSchmidt m') :
     hsOperator m hm = hsOperator m' hm' := by
   subst h
   rfl
 
-/-- The adjoint of a Hilbert–Schmidt operator is the Hilbert–Schmidt operator
+/-- **Adjoint of a Hilbert–Schmidt operator.** The adjoint of a Hilbert–Schmidt operator is the Hilbert–Schmidt operator
 of the conjugate-transpose matrix. -/
 theorem adjoint_hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     (hsOperator a ha)† =
@@ -397,14 +397,14 @@ theorem adjoint_hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) 
     _ = hsOperator (hsTransposeStar a) (isHilbertSchmidt_transposeStar ha) :=
         hsOperator_congr h1 _ _
 
-/-- The truncation of a matrix to the top-left `N × N` block. -/
+/-- **Truncation of a matrix to its top-left block.** The truncation of a matrix to the top-left `N × N` block. -/
 def hsTrunc (a : ℕ → ℕ → 𝕜) (N : ℕ) : ℕ → ℕ → 𝕜 :=
   fun i j => if i < N ∧ j < N then a i j else 0
 
 theorem hsTrunc_apply (a : ℕ → ℕ → 𝕜) (N : ℕ) (i j : ℕ) :
     hsTrunc a N i j = if i < N ∧ j < N then a i j else 0 := rfl
 
-/-- A truncation of any matrix is Hilbert–Schmidt: it is supported on a finite set. -/
+/-- **Truncated matrices are Hilbert–Schmidt.** A truncation of any matrix is Hilbert–Schmidt: it is supported on a finite set. -/
 theorem isHilbertSchmidt_hsTrunc (a : ℕ → ℕ → 𝕜) (N : ℕ) :
     IsHilbertSchmidt (hsTrunc a N) := by
   refine summable_of_ne_finset_zero (s := Finset.range N ×ˢ Finset.range N) (fun p hp => ?_)
@@ -425,14 +425,14 @@ private theorem isCompactOperator_finset_sum {S : Finset ℕ}
       exact (hT _ (Finset.mem_insert_self _ _)).add
         (ih (fun i hi' => hT i (Finset.mem_insert_of_mem hi')))
 
-/-- A rank-one operator on `ℓ²` is compact: it factors through the one-dimensional space `𝕜`. -/
+/-- **Rank-one operators on $\ell^2$ are compact.** A rank-one operator on `ℓ²` is compact: it factors through the one-dimensional space `𝕜`. -/
 theorem isCompactOperator_rankOne (x y : ℓ²(ℕ, 𝕜)) :
     IsCompactOperator (InnerProductSpace.rankOne 𝕜 x y) := by
   rw [InnerProductSpace.rankOne_def']
   exact (isCompactOperator_of_locallyCompactSpace_rng
     (ContinuousLinearMap.toSpanSingleton 𝕜 x)).comp_clm (innerSL 𝕜 y)
 
-/-- The action of a scaled rank-one operator on standard basis vectors, pointwise. -/
+/-- **Scaled rank-one operator on standard basis vectors.** The action of a scaled rank-one operator on standard basis vectors, pointwise. -/
 theorem rankOne_single_apply (b : 𝕜) (i j : ℕ) (x : ℓ²(ℕ, 𝕜)) (k : ℕ) :
     ((b • InnerProductSpace.rankOne 𝕜 (lp.single (E := fun _ : ℕ => 𝕜) 2 i (1 : 𝕜))
       (lp.single (E := fun _ : ℕ => 𝕜) 2 j (1 : 𝕜))) x) k =
@@ -446,7 +446,7 @@ theorem rankOne_single_apply (b : 𝕜) (i j : ℕ) (x : ℓ²(ℕ, 𝕜)) (k : 
     simp [lp.inner_single_left]
   · rw [ite_eq_right h, Pi.single_eq_of_ne h, mul_zero, mul_zero]
 
-/-- A truncated Hilbert–Schmidt operator is a finite sum of rank-one operators. -/
+/-- **Truncated Hilbert–Schmidt operator as a sum of rank-one operators.** A truncated Hilbert–Schmidt operator is a finite sum of rank-one operators. -/
 theorem hsOperator_hsTrunc_eq_sum (a : ℕ → ℕ → 𝕜) (N : ℕ) :
     hsOperator (hsTrunc a N) (isHilbertSchmidt_hsTrunc a N) =
       ∑ i ∈ Finset.range N, ∑ j ∈ Finset.range N,
@@ -482,7 +482,7 @@ theorem hsOperator_hsTrunc_eq_sum (a : ℕ → ℕ → 𝕜) (N : ℕ) :
       simp [hsTrunc, hk]
     rw [hzero, tsum_zero]
 
-/-- A truncated Hilbert–Schmidt operator is compact. -/
+/-- **Truncated Hilbert–Schmidt operators are compact.** A truncated Hilbert–Schmidt operator is compact. -/
 theorem isCompactOperator_hsOperator_hsTrunc (a : ℕ → ℕ → 𝕜) (N : ℕ) :
     IsCompactOperator (hsOperator (hsTrunc a N) (isHilbertSchmidt_hsTrunc a N)) := by
   rw [hsOperator_hsTrunc_eq_sum]
@@ -495,7 +495,7 @@ theorem isCompactOperator_hsOperator_hsTrunc (a : ℕ → ℕ → 𝕜) (N : ℕ
     (lp.single (E := fun _ : ℕ => 𝕜) 2 j (1 : 𝕜))))
   exact (isCompactOperator_rankOne _ _).smul _
 
-/-- The squared Hilbert–Schmidt norm of the truncation error is the tail sum. -/
+/-- **Hilbert–Schmidt norm of the truncation error as a tail sum.** The squared Hilbert–Schmidt norm of the truncation error is the tail sum. -/
 theorem hsNormSq_sub_hsTrunc (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) (N : ℕ) :
     hsNormSq (a - hsTrunc a N)
       (isHilbertSchmidt_sub ha (isHilbertSchmidt_hsTrunc a N)) =
@@ -549,7 +549,7 @@ theorem hsNormSq_sub_hsTrunc (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a
   unfold hsNormSq
   linarith [htsum, hsum_g]
 
-/-- The partial sums of the squared norms over expanding squares converge to `hsNormSq`. -/
+/-- **Square partial sums converge to the squared Hilbert–Schmidt norm.** The partial sums of the squared norms over expanding squares converge to `hsNormSq`. -/
 theorem tendsto_hsTrunc_finset_sum {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) :
     Tendsto (fun N => ∑ p ∈ Finset.range N ×ˢ Finset.range N, ‖a p.1 p.2‖ ^ 2) atTop
       (𝓝 (hsNormSq a ha)) := by
@@ -569,7 +569,7 @@ theorem tendsto_hsTrunc_finset_sum {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSch
       (𝓝 (∑' p : ℕ × ℕ, ‖a p.1 p.2‖ ^ 2)) := ha.hasSum
   exact h.comp htoptop
 
-/-- The squared Hilbert–Schmidt norm of the truncation error tends to zero. -/
+/-- **Hilbert–Schmidt norm of the truncation error tends to zero.** The squared Hilbert–Schmidt norm of the truncation error tends to zero. -/
 theorem tendsto_hsNormSq_sub_hsTrunc {a : ℕ → ℕ → 𝕜} (ha : IsHilbertSchmidt a) :
     Tendsto (fun N => hsNormSq (a - hsTrunc a N)
       (isHilbertSchmidt_sub ha (isHilbertSchmidt_hsTrunc a N))) atTop (𝓝 0) := by
@@ -585,7 +585,7 @@ theorem tendsto_hsNormSq_sub_hsTrunc {a : ℕ → ℕ → 𝕜} (ha : IsHilbertS
       (𝓝 (hsNormSq a ha - hsNormSq a ha)) := tendsto_const_nhds.sub h
   rwa [sub_self] at h2
 
-/-- The truncated operators converge in norm to the Hilbert–Schmidt operator. -/
+/-- **Truncated operators converge in norm to the Hilbert–Schmidt operator.** The truncated operators converge in norm to the Hilbert–Schmidt operator. -/
 theorem tendsto_hsOperator_hsTrunc (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     Tendsto (fun N => hsOperator (hsTrunc a N) (isHilbertSchmidt_hsTrunc a N)) atTop
       (𝓝 (hsOperator a ha)) := by
@@ -605,19 +605,19 @@ theorem tendsto_hsOperator_hsTrunc (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSch
     rw [Real.sqrt_zero] at h
     exact h
 
-/-- Every Hilbert–Schmidt operator on `ℓ²(ℕ, 𝕜)` is compact. -/
+/-- **Hilbert–Schmidt operators on $\ell^2$ are compact.** Every Hilbert–Schmidt operator on `ℓ²(ℕ, 𝕜)` is compact. -/
 theorem isCompactOperator_hsOperator (a : ℕ → ℕ → 𝕜) (ha : IsHilbertSchmidt a) :
     IsCompactOperator (hsOperator a ha) := by
   refine isCompactOperator_of_tendsto (tendsto_hsOperator_hsTrunc a ha) ?_
   exact Filter.Eventually.of_forall (fun N => isCompactOperator_hsOperator_hsTrunc a N)
 
-/-- A bounded operator whose matrix is Hilbert–Schmidt is compact. -/
+/-- **Bounded operator with Hilbert–Schmidt matrix is compact.** A bounded operator whose matrix is Hilbert–Schmidt is compact. -/
 theorem isCompactOperator_of_isHilbertSchmidt_matrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜))
     (hT : IsHilbertSchmidt (hsMatrix T)) : IsCompactOperator T := by
   rw [eq_hsOperator_of_isHilbertSchmidt_matrix T hT]
   exact isCompactOperator_hsOperator _ hT
 
-/-- A bounded operator whose matrix is Hilbert–Schmidt has norm at most its
+/-- **Operator norm bounded by the Hilbert–Schmidt norm.** A bounded operator whose matrix is Hilbert–Schmidt has norm at most its
 Hilbert–Schmidt norm. -/
 theorem norm_le_of_isHilbertSchmidt_matrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜))
     (hT : IsHilbertSchmidt (hsMatrix T)) :
@@ -625,10 +625,10 @@ theorem norm_le_of_isHilbertSchmidt_matrix (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ�
   conv_lhs => rw [eq_hsOperator_of_isHilbertSchmidt_matrix T hT]
   exact norm_hsOperator_le _ hT
 
-/-- The diagonal matrix with diagonal `d`. -/
+/-- **Diagonal infinite matrix.** The diagonal matrix with diagonal `d`. -/
 def hsDiagonal (d : ℕ → 𝕜) : ℕ → ℕ → 𝕜 := fun i j => if i = j then d i else 0
 
-/-- A row of a diagonal matrix is square-summable. -/
+/-- **Rows of a diagonal matrix are square-summable.** A row of a diagonal matrix is square-summable. -/
 theorem summable_hsDiagonal_row (d : ℕ → 𝕜) (i : ℕ) :
     Summable fun j => ‖hsDiagonal d i j‖ ^ 2 := by
   have h : (fun j => ‖hsDiagonal d i j‖ ^ 2) = fun j => if j = i then ‖d i‖ ^ 2 else 0 := by
@@ -641,7 +641,7 @@ theorem summable_hsDiagonal_row (d : ℕ → 𝕜) (i : ℕ) :
   have hf : ∀ j, j ≠ i → (if j = i then ‖d i‖ ^ 2 else 0) = 0 := fun j hj => ite_eq_right hj
   exact (hasSum_single i hf).summable
 
-/-- The squared norms in a row of a diagonal matrix sum to the squared diagonal entry. -/
+/-- **Squared row norm of a diagonal matrix.** The squared norms in a row of a diagonal matrix sum to the squared diagonal entry. -/
 theorem tsum_hsDiagonal_row (d : ℕ → 𝕜) (i : ℕ) :
     ∑' j, ‖hsDiagonal d i j‖ ^ 2 = ‖d i‖ ^ 2 := by
   have h : (fun j => ‖hsDiagonal d i j‖ ^ 2) = fun j => if j = i then ‖d i‖ ^ 2 else 0 := by
@@ -654,14 +654,14 @@ theorem tsum_hsDiagonal_row (d : ℕ → 𝕜) (i : ℕ) :
   have hf : ∀ j, j ≠ i → (if j = i then ‖d i‖ ^ 2 else 0) = 0 := fun j hj => ite_eq_right hj
   simp
 
-/-- A diagonal matrix with square-summable diagonal is Hilbert–Schmidt. -/
+/-- **Diagonal matrix with square-summable diagonal is Hilbert–Schmidt.** A diagonal matrix with square-summable diagonal is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_hsDiagonal {d : ℕ → 𝕜} (hd : Summable fun i => ‖d i‖ ^ 2) :
     IsHilbertSchmidt (hsDiagonal d) := by
   refine summable_prod_of_nonneg (fun p => by positivity) |>.mpr
     ⟨fun i => summable_hsDiagonal_row d i, ?_⟩
   exact hd.congr (fun i => (tsum_hsDiagonal_row d i).symm)
 
-/-- The squared Hilbert–Schmidt norm of a diagonal matrix is the sum of the squared
+/-- **Hilbert–Schmidt norm of a diagonal matrix.** The squared Hilbert–Schmidt norm of a diagonal matrix is the sum of the squared
 diagonal entries. -/
 theorem hsNormSq_hsDiagonal {d : ℕ → 𝕜} (hd : Summable fun i => ‖d i‖ ^ 2) :
     hsNormSq (hsDiagonal d) (isHilbertSchmidt_hsDiagonal hd) = ∑' i, ‖d i‖ ^ 2 := by
@@ -669,7 +669,7 @@ theorem hsNormSq_hsDiagonal {d : ℕ → 𝕜} (hd : Summable fun i => ‖d i‖
   rw [(isHilbertSchmidt_hsDiagonal hd).tsum_prod' (fun i => summable_hsDiagonal_row d i)]
   exact tsum_congr fun i => tsum_hsDiagonal_row d i
 
-/-- A diagonal Hilbert–Schmidt operator acts by pointwise multiplication by the diagonal. -/
+/-- **Diagonal Hilbert–Schmidt operator acts by pointwise multiplication.** A diagonal Hilbert–Schmidt operator acts by pointwise multiplication by the diagonal. -/
 theorem hsOperator_hsDiagonal_apply {d : ℕ → 𝕜} (hd : Summable fun i => ‖d i‖ ^ 2)
     (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hsOperator (hsDiagonal d) (isHilbertSchmidt_hsDiagonal hd) x i = d i * x i := by
@@ -685,10 +685,10 @@ theorem hsOperator_hsDiagonal_apply {d : ℕ → 𝕜} (hd : Summable fun i => �
     fun j hj => ite_eq_right (fun h => hj h.symm)
   simp
 
-/-- The rank-one matrix `u i * star (v j)`. -/
+/-- **Rank-one infinite matrix.** The rank-one matrix `u i * star (v j)`. -/
 def hsRankOne (u v : ℕ → 𝕜) : ℕ → ℕ → 𝕜 := fun i j => u i * star (v j)
 
-/-- The squared norms of the entries of a rank-one matrix are summable over the product. -/
+/-- **Entries of a rank-one matrix are square-summable.** The squared norms of the entries of a rank-one matrix are summable over the product. -/
 theorem summable_hsRankOne_sq {u v : ℓ²(ℕ, 𝕜)} :
     Summable fun p : ℕ × ℕ => ‖u p.1‖ ^ 2 * ‖v p.2‖ ^ 2 := by
   refine summable_prod_of_nonneg (fun p => by positivity) |>.mpr ⟨fun i => ?_, ?_⟩
@@ -700,13 +700,13 @@ theorem summable_hsRankOne_sq {u v : ℓ²(ℕ, 𝕜)} :
     rw [h]
     exact (summable_norm_sq_of_memℓp u.2).mul_right (∑' j, ‖v j‖ ^ 2)
 
-/-- A rank-one matrix with `ℓ²` vectors is Hilbert–Schmidt. -/
+/-- **Rank-one matrix of $\ell^2$ vectors is Hilbert–Schmidt.** A rank-one matrix with `ℓ²` vectors is Hilbert–Schmidt. -/
 theorem isHilbertSchmidt_hsRankOne {u v : ℓ²(ℕ, 𝕜)} :
     IsHilbertSchmidt (hsRankOne u v) := by
   refine summable_hsRankOne_sq (𝕜 := 𝕜) (u := u) (v := v) |>.congr (fun p => ?_)
   simp [hsRankOne, norm_mul, mul_pow]
 
-/-- A rank-one Hilbert–Schmidt operator acts as the inner product with `v` times `u`. -/
+/-- **Action of a rank-one Hilbert–Schmidt operator.** A rank-one Hilbert–Schmidt operator acts as the inner product with `v` times `u`. -/
 theorem hsOperator_hsRankOne_apply {u v : ℓ²(ℕ, 𝕜)} (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hsOperator (hsRankOne u v) isHilbertSchmidt_hsRankOne x i =
       u i * ⟪v, x⟫_𝕜 := by
@@ -717,7 +717,7 @@ theorem hsOperator_hsRankOne_apply {u v : ℓ²(ℕ, 𝕜)} (x : ℓ²(ℕ, 𝕜
   show (u i * star (v j)) * x j = u i * ⟪v j, x j⟫_𝕜
   rw [mul_assoc, RCLike.inner_apply, starRingEnd_apply, mul_comm (star (v j)) (x j)]
 
-/-- The squared Hilbert–Schmidt norm of a rank-one matrix is `‖u‖² * ‖v‖²`. -/
+/-- **Hilbert–Schmidt norm of a rank-one matrix.** The squared Hilbert–Schmidt norm of a rank-one matrix is `‖u‖² * ‖v‖²`. -/
 theorem hsNormSq_hsRankOne {u v : ℓ²(ℕ, 𝕜)} :
     hsNormSq (hsRankOne u v) isHilbertSchmidt_hsRankOne = ‖u‖ ^ 2 * ‖v‖ ^ 2 := by
   have hu : Summable fun i => ‖u i‖ ^ 2 := summable_norm_sq_of_memℓp u.2
@@ -737,7 +737,7 @@ private theorem ofReal_norm_sq_lp_eq_tsum (f : ℓ²(ℕ, ℝ)) :
   rw [norm_sq_lp_eq_tsum,
     ENNReal.ofReal_tsum_of_nonneg (fun i => sq_nonneg _) (summable_norm_sq_of_memℓp f.2)]
 
-/-- In the standard `ℓ²` basis, the existing extended operator squared norm
+/-- **Canonical Hilbert–Schmidt norm equals the matrix norm.** In the standard `ℓ²` basis, the existing extended operator squared norm
 equals the finite matrix squared norm. This bridge is specialized to real
 scalars because the canonical operator norm API is real-only. -/
 theorem canonical_hsNormSq_eq_ofReal_matrix (T : ℓ²(ℕ, ℝ) →L[ℝ] ℓ²(ℕ, ℝ))
@@ -751,7 +751,7 @@ theorem canonical_hsNormSq_eq_ofReal_matrix (T : ℓ²(ℕ, ℝ) →L[ℝ] ℓ²
   rw [hprod, ENNReal.tsum_comm]
   exact tsum_congr (fun j => ofReal_norm_sq_lp_eq_tsum (T (lp.single 2 j (1 : ℝ))))
 
-/-- The constructed real Hilbert–Schmidt operator has the canonical extended
+/-- **Canonical Hilbert–Schmidt norm of the constructed operator.** The constructed real Hilbert–Schmidt operator has the canonical extended
 squared norm given by the finite squared norm of its matrix. -/
 theorem canonical_hsNormSq_hsOperator (a : ℕ → ℕ → ℝ) (ha : IsHilbertSchmidt a) :
     MathlibExt.Analysis.OperatorTheory.HilbertSchmidtNorm.hsNormSq (hsOperator a ha)

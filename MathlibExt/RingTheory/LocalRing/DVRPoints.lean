@@ -203,7 +203,7 @@ private theorem exists_algHom_dvr_of_isDomain
   exact ⟨C, inferInstance, inferInstance, inferInstance, inferInstance, inferInstance,
     inferInstance, χ, hχinj, hint.isLocalHom hχinj, htors⟩
 
-/-- A finite torsion-free local reduced algebra over an adically complete DVR
+/-- **Finitely many DVR points with trivial common kernel.** A finite torsion-free local reduced algebra over an adically complete DVR
 with finite residue field and characteristic zero admits finitely many
 adically complete DVR points whose kernels intersect to `⊥`, with a common
 denominator clearing all denominators. -/

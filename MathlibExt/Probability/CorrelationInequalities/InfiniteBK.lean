@@ -47,7 +47,7 @@ namespace StatMech
 variable {E : Type*} [Countable E] [DecidableEq E]
 
 omit [Countable E] [DecidableEq E] in
-/-- If `A` depends only on `F` and occurs on `K` at `ω`, then it occurs on `K ∩ F` at every
+/-- **Occurrence of a finitely dependent event within its window.** If `A` depends only on `F` and occurs on `K` at `ω`, then it occurs on `K ∩ F` at every
 configuration agreeing with `ω` on `F`. -/
 theorem ibk_occursOn_inter_finite {A : Set (ConfigSpace E)} {F : Finset E}
     {K : Set E} {omega omega' : ConfigSpace E}
@@ -69,7 +69,7 @@ theorem ibk_occursOn_inter_finite {A : Set (ConfigSpace E)} {F : Finset E}
     simp [z', heF'])).mp hz'mem
 
 omit [Countable E] [DecidableEq E] in
-/-- If `A` and `B` depend only on the coordinates in `F`, so does `A □ B`. -/
+/-- **Disjoint occurrence preserves finite dependence.** If `A` and `B` depend only on the coordinates in `F`, so does `A □ B`. -/
 theorem ibk_disjointOccurrence_dependsOn {A B : Set (ConfigSpace E)} {F : Finset E}
     (hA : DependsOn A (F : Set E)) (hB : DependsOn B (F : Set E)) :
     DependsOn (disjointOccurrence A B) (F : Set E) := by
@@ -89,7 +89,7 @@ theorem ibk_disjointOccurrence_dependsOn {A B : Set (ConfigSpace E)} {F : Finset
       ibk_occursOn_inter_finite hB hBL hagree'⟩
 
 omit [Countable E] in
-/-- The section on `F` of `A □ B` is contained in the disjoint occurrence of the sections. -/
+/-- **Section of a disjoint occurrence.** The section on `F` of `A □ B` is contained in the disjoint occurrence of the sections. -/
 theorem ibk_section_disjointOccurrence_subset (A B : Set (ConfigSpace E))
     (F : Finset E) :
     ih_section (disjointOccurrence A B) F ⊆
@@ -119,7 +119,7 @@ theorem ibk_section_disjointOccurrence_subset (A B : Set (ConfigSpace E))
     · simp [ih_fill, heF]
 
 omit [DecidableEq E] in
-/-- The **BK inequality** on a countable configuration space: for increasing events `A, B`
+/-- **BK inequality on countable configuration spaces.** The **BK inequality** on a countable configuration space: for increasing events `A, B`
 depending only on the coordinates in a finite set `F`, `P_p(A □ B) ≤ P_p(A) * P_p(B)`. -/
 theorem ibk_inequality_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
     {A B : Set (ConfigSpace E)} (F : Finset E)
@@ -177,7 +177,7 @@ theorem ibk_inequality_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
       (congrArg₂ (· * ·) hAprob hBprob).symm
 
 omit [DecidableEq E] in
-/-- The BK inequality for three increasing events depending on finitely many coordinates:
+/-- **BK inequality for three increasing events.** The BK inequality for three increasing events depending on finitely many coordinates:
 `P_p(P □ (Q □ R)) ≤ P_p(P) * P_p(Q) * P_p(R)`. -/
 theorem ibk_triple_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
     {P Q R : Set (ConfigSpace E)} (F : Finset E)
@@ -204,7 +204,7 @@ theorem ibk_triple_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
     _ = mu.real P * mu.real Q * mu.real R := by ring
 
 omit [DecidableEq E] in
-/-- Union bound from the three-event BK inequality: if `C ⊆ ⋃ i ∈ s, P i □ (Q i □ R i)` with
+/-- **Union bound from the three-event BK inequality.** Union bound from the three-event BK inequality: if `C ⊆ ⋃ i ∈ s, P i □ (Q i □ R i)` with
 all events increasing and depending on a common finite window, then
 `P_p(C) ≤ ∑ i ∈ s, P_p(P i) * P_p(Q i) * P_p(R i)`. -/
 theorem ibk_criterion_of_finite_dependsOn {I : Type*} {p : ℝ≥0} (hp : p ≤ 1)
@@ -235,7 +235,7 @@ theorem ibk_criterion_of_finite_dependsOn {I : Type*} {p : ℝ≥0} (hp : p ≤ 
           (hRdep i hi) (hP i hi) (hQ i hi) (hR i hi)
 
 omit [DecidableEq E] in
-/-- Monotonicity in the parameter: for an increasing event `A` depending only on a finite set of
+/-- **Increasing-event probabilities are monotone in the parameter.** Monotonicity in the parameter: for an increasing event `A` depending only on a finite set of
 coordinates and `p ≤ q`, `P_p(A) ≤ P_q(A)`. The proof uses Russo's formula. -/
 theorem ibk_measure_mono_parameter {p q : ℝ≥0} (hp : p ≤ 1) (hq : q ≤ 1)
     (hpq : p ≤ q) {A : Set (ConfigSpace E)} (F : Finset E)

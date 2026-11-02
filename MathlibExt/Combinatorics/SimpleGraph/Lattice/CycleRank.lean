@@ -91,7 +91,7 @@ theorem reachable_sup_edge (G : SimpleGraph V) (a b x y : V) :
     · exact (h1.mono hle).trans (hab.trans (h2.mono hle))
     · exact (h1.mono hle).trans (hab.symm.trans (h2.mono hle))
 
-/-- Removing one element from a finite type lowers its cardinality by one. See also Mathlib's
+/-- **Removing one element lowers cardinality by one.** Removing one element from a finite type lowers its cardinality by one. See also Mathlib's
 `Fintype.card_subtype_compl`. -/
 theorem card_subtype_ne_add_one {α : Type*} [Finite α] (a : α) :
     Nat.card {x : α // x ≠ a} + 1 = Nat.card α := by
@@ -201,7 +201,7 @@ theorem card_edgeSet_deleteEdges_add_one (G : SimpleGraph V) (a b : V)
   exact Set.ncard_sdiff_singleton_add_one he (Set.toFinite _)
 
 omit [DecidableEq V] in
-/-- Adding a new edge increases the number of edges by one. This is the `Set.ncard` form of
+/-- **Adding a new edge increases the edge count by one.** Adding a new edge increases the number of edges by one. This is the `Set.ncard` form of
 Mathlib's `SimpleGraph.card_edgeFinset_sup_edge`. -/
 theorem card_edgeSet_sup_edge (G : SimpleGraph V) {a b : V} (hne : a ≠ b)
     (hadj : ¬ G.Adj a b) :
@@ -222,7 +222,7 @@ theorem card_edgeSet_sup_edge (G : SimpleGraph V) {a b : V} (hne : a ≠ b)
     (Set.toFinite _)]
 
 omit [DecidableEq V] in
-/-- The edgeless graph has one component per vertex. -/
+/-- **Edgeless graph has one component per vertex.** The edgeless graph has one component per vertex. -/
 theorem card_components_bot :
     Nat.card (⊥ : SimpleGraph V).ConnectedComponent = Nat.card V := by
   classical
@@ -262,12 +262,12 @@ theorem card_le_edgeSet_add_components (G : SimpleGraph V) :
       · have hc := card_components_sup_edge_of_not_reachable G' a b hr
         rw [hGeq] at hdrop ⊢; omega
 
-/-- The cycle rank (nullity, first Betti number) `|E| + c - |V|` of a finite graph, where `c` is the
+/-- **Cycle rank of a finite graph.** The cycle rank (nullity, first Betti number) `|E| + c - |V|` of a finite graph, where `c` is the
 number of connected components. -/
 noncomputable def nullity (G : SimpleGraph V) : ℕ :=
   (G.edgeSet.ncard + Nat.card G.ConnectedComponent) - Nat.card V
 
-/-- The face count `nullity G + 1`. For a finite subgraph of `ℤ²` it is the number of faces,
+/-- **Face count of a finite graph from its cycle rank.** The face count `nullity G + 1`. For a finite subgraph of `ℤ²` it is the number of faces,
 including the unbounded one (`StatMech.Lattice.jed_faithfulDiscreteJordan` counts the bounded
 ones); as a definition it is purely combinatorial. -/
 noncomputable def faceCount (G : SimpleGraph V) : ℕ := nullity G + 1
@@ -295,7 +295,7 @@ theorem faceCount_sup_edge_of_not_reachable (G : SimpleGraph V) {a b : V} (hne :
   omega
 
 omit [DecidableEq V] in
-/-- The combinatorial Euler relation `|V| + F = |E| + c + 1` for a finite graph, where `F =
+/-- **Combinatorial Euler relation for finite graphs.** The combinatorial Euler relation `|V| + F = |E| + c + 1` for a finite graph, where `F =
 faceCount G` is defined from the cycle rank. -/
 theorem euler_relation (G : SimpleGraph V) :
     Nat.card V + faceCount G = G.edgeSet.ncard + Nat.card G.ConnectedComponent + 1 := by

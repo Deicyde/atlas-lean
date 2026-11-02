@@ -199,7 +199,7 @@ section Counts
 variable {F : Type*} [Field F] [Fintype F] [Algebra (ZMod 2) F]
   {m s : ℕ}
 
-/-- Let a finite field be written as `s` binary coordinates.  For a nonempty
+/-- **Lower bound on odd-parity pairs in a finite field.** Let a finite field be written as `s` binary coordinates.  For a nonempty
 set `V` of exponents below `m`, the number of pairs `(a, b)` for which an odd
 number of the dot products `bits (a ^ E) ⬝ᵥ bits b` equal one satisfies the
 cleared-denominator lower bound
@@ -246,7 +246,7 @@ theorem odd_dotProduct_power_count
     _ ≤ _ := Nat.add_le_add_left
       (Nat.mul_le_mul_right _ (card_exponent_sum_eq_zero_le V hV)) _
 
-/-- Under `16 * m ≤ 2 ^ s`, at least `15 / 32` of the field pairs have odd
+/-- **At least 15/32 of field pairs have odd parity.** Under `16 * m ≤ 2 ^ s`, at least `15 / 32` of the field pairs have odd
 parity across any nonempty exponent set `V`.  Fractions are cleared in the
 statement. -/
 theorem odd_dotProduct_power_count_of_sixteen_mul_le
@@ -264,7 +264,7 @@ theorem odd_dotProduct_power_count_of_sixteen_mul_le
     exact Nat.mul_le_mul_right _ (le_trans (by omega) h16)
   omega
 
-/-- For one exponent `E`, at most half of all field pairs satisfy
+/-- **At most half of field pairs have dot product one.** For one exponent `E`, at most half of all field pairs satisfy
 `dotProduct (bits (a ^ E)) (bits b) = 1`. -/
 theorem dotProduct_power_count_le_half
     (bits : F ≃ₗ[ZMod 2] (Fin s → ZMod 2)) (E : Fin m) :

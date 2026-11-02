@@ -43,7 +43,7 @@ section Weighted
 
 variable [Fintype α]
 
-/-- The deficit `fmarg w 𝒜 * fmarg w ℬ - wdpairs w 𝒜 ℬ` expanded over coordinate `i`. -/
+/-- **Expansion of the Reimer deficit over one coordinate.** The deficit `fmarg w 𝒜 * fmarg w ℬ - wdpairs w 𝒜 ℬ` expanded over coordinate `i`. -/
 theorem wbutterfly_deficit_identity (w : α → Bool → ℝ) (𝒜 ℬ : Finset (Finset α)) (i : α) :
     fmarg w 𝒜 * fmarg w ℬ - wdpairs w 𝒜 ℬ
       = w i true * w i true
@@ -118,7 +118,7 @@ theorem wdpairs_symm_le_mul {w : α → Bool → ℝ} (hsym : ∀ x, w x false =
         exact mul_le_mul_of_nonneg_left hcount hc
     _ = (∏ x, w x true) * (𝒜.card : ℝ) * ((∏ x, w x true) * (ℬ.card : ℝ)) := by ring
 
-/-- `(∏ x, w x true)^2 * #𝒰`: for a symmetric weight, the weight of a doubled family. -/
+/-- **Box value of a doubled family under a symmetric weight.** `(∏ x, w x true)^2 * #𝒰`: for a symmetric weight, the weight of a doubled family. -/
 noncomputable def wboxValue (w : α → Bool → ℝ) (𝒰 : Finset (Finset (α ⊕ α))) : ℝ :=
   (∏ x, w x true) ^ 2 * (𝒰.card : ℝ)
 
@@ -140,7 +140,7 @@ theorem wdpairs_symm_compress_invariant {w : α → Bool → ℝ} (hsym : ∀ x,
 
 section RefutationFixedConstant
 
-/-- For a non-symmetric weight, `wdpairs w 𝒜 ℬ ≤ wboxValue w (boxDoubled 𝒜 ℬ)` can fail. -/
+/-- **Box-value bound fails for non-symmetric weights.** For a non-symmetric weight, `wdpairs w 𝒜 ℬ ≤ wboxValue w (boxDoubled 𝒜 ℬ)` can fail. -/
 theorem wdpairs_not_le_wboxValue_general :
     ∃ (w : Fin 1 → Bool → ℝ),
       (∀ x b, 0 ≤ w x b) ∧

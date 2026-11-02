@@ -80,12 +80,12 @@ variable {V : Type*} [NormedAddCommGroup V] [InnerProductSpace 𝕜 V] [Complete
 variable (H : Type*) [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
 variable [RKHS 𝕜 H X V] {n : ℕ}
 
-/-- The regularized risk `L (f x₁, …, f xₙ) + Ω ‖f‖` of `f` in the RKHS `H`. -/
+/-- **Regularized risk in a reproducing kernel Hilbert space.** The regularized risk `L (f x₁, …, f xₙ) + Ω ‖f‖` of `f` in the RKHS `H`. -/
 noncomputable def regularizedRisk (x : Fin n → X) (L : (Fin n → V) → ℝ) (Ω : ℝ → ℝ) (f : H) :
     ℝ :=
   L (fun i => f (x i)) + Ω ‖f‖
 
-/-- The kernel expansion map `c ↦ ∑ i, kerFun H (x i) (c i)`. Its range is the span of the
+/-- **Kernel expansion map centered at the sample points.** The kernel expansion map `c ↦ ∑ i, kerFun H (x i) (c i)`. Its range is the span of the
 kernel functions at the sample points `x i`. -/
 noncomputable def kernelExpansion (x : Fin n → X) : (Fin n → V) →L[𝕜] H :=
   ∑ i, kerFun H (x i) ∘L ContinuousLinearMap.proj i
@@ -283,23 +283,23 @@ variable {X : Type*}
 variable (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
 variable [RKHS ℝ H X ℝ] {n : ℕ}
 
-/-- The Gram matrix `K i j = k(x i, x j)` of a real scalar kernel at the sample points, where
+/-- **Kernel Gram matrix.** The Gram matrix `K i j = k(x i, x j)` of a real scalar kernel at the sample points, where
 `k(x, y) = kernel H x y 1`. -/
 noncomputable def kernelGram (x : Fin n → X) : Matrix (Fin n) (Fin n) ℝ :=
   Matrix.of fun i j => kernel H (x i) (x j) 1
 
-/-- The kernel ridge objective `∑ i, (y i - f (x i))² + λ ‖f‖²`. -/
+/-- **Kernel ridge regression objective.** The kernel ridge objective `∑ i, (y i - f (x i))² + λ ‖f‖²`. -/
 noncomputable def kernelRidgeRisk (x : Fin n → X) (y : Fin n → ℝ) (lam : ℝ) (f : H) : ℝ :=
   ∑ i, (y i - f (x i)) ^ 2 + lam * ‖f‖ ^ 2
 
-/-- The kernel ridge fit: the kernel expansion with coefficients `(K + λ I)⁻¹ y`. -/
+/-- **Kernel ridge regression fit.** The kernel ridge fit: the kernel expansion with coefficients `(K + λ I)⁻¹ y`. -/
 noncomputable def kernelRidgeFit (x : Fin n → X) (y : Fin n → ℝ) (lam : ℝ) : H :=
   kernelExpansion H x ((kernelGram H x + lam • (1 : Matrix (Fin n) (Fin n) ℝ))⁻¹ *ᵥ y)
 
 variable {H}
 
 omit [CompleteSpace H] in
-/-- The kernel ridge objective is the regularized risk with the squared loss and
+/-- **Kernel ridge objective as a regularized risk.** The kernel ridge objective is the regularized risk with the squared loss and
 `Ω t = λ t²`. -/
 theorem kernelRidgeRisk_eq_regularizedRisk (x : Fin n → X) (y : Fin n → ℝ) (lam : ℝ) (f : H) :
     kernelRidgeRisk H x y lam f =
@@ -316,7 +316,7 @@ private theorem kernelExpansion_apply (x : Fin n → X) (c : Fin n → ℝ) (z :
   refine Finset.sum_congr rfl fun i _ => ?_
   rw [eval_apply, kerFun_apply, mul_comm, ← smul_eq_mul, ← map_smul, smul_eq_mul, mul_one]
 
-/-- The values of a kernel expansion at the sample points are `K c`. -/
+/-- **Values of a kernel expansion at the sample points.** The values of a kernel expansion at the sample points are `K c`. -/
 theorem kernelExpansion_apply_sample (x : Fin n → X) (c : Fin n → ℝ) (j : Fin n) :
     kernelExpansion H x c (x j) = (kernelGram H x *ᵥ c) j := by
   rw [kernelExpansion_apply]
@@ -328,7 +328,7 @@ private theorem inner_kernelExpansion (x : Fin n → X) (c : Fin n → ℝ) (h :
   refine Finset.sum_congr rfl fun i _ => ?_
   rw [kerFun_inner, Real.inner_apply]
 
-/-- The kernel Gram matrix is positive semidefinite. -/
+/-- **Kernel Gram matrix is positive semidefinite.** The kernel Gram matrix is positive semidefinite. -/
 theorem posSemidef_kernelGram (x : Fin n → X) : (kernelGram H x).PosSemidef := by
   have h : kernelGram H x = Matrix.gram ℝ (fun i => kerFun H (x i) (1 : ℝ)) := by
     ext i j
@@ -341,7 +341,7 @@ private theorem isUnit_det_kernelGram_add (x : Fin n → X) {lam : ℝ} (hlam : 
     IsUnit (kernelGram H x + lam • (1 : Matrix (Fin n) (Fin n) ℝ)).det :=
   (PosDef.posSemidef_add (posSemidef_kernelGram x) (PosDef.one.smul hlam)).det_pos.ne'.isUnit
 
-/-- The fitted values of kernel ridge regression are `K (K + λ I)⁻¹ y`. -/
+/-- **Fitted values of kernel ridge regression.** The fitted values of kernel ridge regression are `K (K + λ I)⁻¹ y`. -/
 theorem kernelRidgeFit_apply (x : Fin n → X) (y : Fin n → ℝ) (lam : ℝ) (j : Fin n) :
     kernelRidgeFit H x y lam (x j) =
       ((kernelGram H x * (kernelGram H x + lam • (1 : Matrix (Fin n) (Fin n) ℝ))⁻¹) *ᵥ y) j := by
@@ -396,7 +396,7 @@ theorem kernelRidgeRisk_kernelRidgeFit_le (x : Fin n → X) (y : Fin n → ℝ) 
     Finset.sum_nonneg fun i _ => sq_nonneg _
   nlinarith [sq_nonneg ‖g - kernelRidgeFit H x y lam‖]
 
-/-- The kernel ridge fit is the unique minimizer for `λ > 0`. -/
+/-- **Kernel ridge fit is the unique minimizer.** The kernel ridge fit is the unique minimizer for `λ > 0`. -/
 theorem eq_kernelRidgeFit_of_le (x : Fin n → X) (y : Fin n → ℝ) {lam : ℝ} (hlam : 0 < lam)
     {g : H}
     (hg : kernelRidgeRisk H x y lam g ≤ kernelRidgeRisk H x y lam (kernelRidgeFit H x y lam)) :

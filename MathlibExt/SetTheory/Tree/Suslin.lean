@@ -34,13 +34,13 @@ namespace MetaMathlibExt
 
 -- Logic 24: $\kappa$-Suslin tree
 
-/-- A κ-Suslin tree is a κ-Aronszajn tree with no antichains of size κ. -/
+/-- **$\kappa$-Suslin tree.** A κ-Suslin tree is a κ-Aronszajn tree with no antichains of size κ. -/
 def IsSuslinTreeAt.{u} (κ : Cardinal.{u}) (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
     IsAronszajnTreeAt κ α ∧ ∀ A : Set α, IsAntichain (· ≤ ·) A → #A < κ
 
 -- Logic 19: Suslin tree
 
-/-- A *Suslin tree* is a tree of height $\aleph_1}$ with no uncountable branches and no uncountable
+/-- **Suslin tree.** A *Suslin tree* is a tree of height $\aleph_1}$ with no uncountable branches and no uncountable
 antichains.
 -/
 def IsSuslinTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=

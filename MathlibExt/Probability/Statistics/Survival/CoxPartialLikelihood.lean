@@ -68,15 +68,15 @@ open Finset Real
 
 variable {n p : ℕ}
 
-/-- The risk set at the observed time of subject `i`: subjects still under observation,
+/-- **Risk set in survival analysis.** The risk set at the observed time of subject `i`: subjects still under observation,
 `{l : T_l ≥ Tᵢ}`. -/
 noncomputable def riskSet (T : Fin n → ℝ) (i : Fin n) : Finset (Fin n) := {l | T i ≤ T l}
 
-/-- Subject `i` is in its own risk set. -/
+/-- **A subject belongs to its own risk set.** Subject `i` is in its own risk set. -/
 theorem mem_riskSet (T : Fin n → ℝ) (i : Fin n) : i ∈ riskSet T i := by
   simp [riskSet]
 
-/-- The risk set of subject `i` is nonempty. -/
+/-- **Risk sets are nonempty.** The risk set of subject `i` is nonempty. -/
 theorem riskSet_nonempty (T : Fin n → ℝ) (i : Fin n) : (riskSet T i).Nonempty :=
   ⟨i, mem_riskSet T i⟩
 
@@ -84,17 +84,17 @@ private lemma sum_pos_exp (T : Fin n → ℝ) (x : Fin n → Fin p → ℝ) (β 
     0 < ∑ l ∈ riskSet T i, exp (β ⬝ᵥ x l) :=
   sum_pos (fun _ _ => exp_pos _) (riskSet_nonempty T i)
 
-/-- Cox's partial likelihood `∏_{i : δᵢ} exp ⟪β, xᵢ⟫ / ∑_{l ∈ R(Tᵢ)} exp ⟪β, x_l⟫`. -/
+/-- **Cox partial likelihood.** Cox's partial likelihood `∏_{i : δᵢ} exp ⟪β, xᵢ⟫ / ∑_{l ∈ R(Tᵢ)} exp ⟪β, x_l⟫`. -/
 noncomputable def partialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool) (x : Fin n → Fin p → ℝ)
     (β : Fin p → ℝ) : ℝ :=
   ∏ i with δ i = true, exp (β ⬝ᵥ x i) / ∑ l ∈ riskSet T i, exp (β ⬝ᵥ x l)
 
-/-- The log partial likelihood `∑_{i : δᵢ} (⟪β, xᵢ⟫ - log ∑_{l ∈ R(Tᵢ)} exp ⟪β, x_l⟫)`. -/
+/-- **Cox log partial likelihood.** The log partial likelihood `∑_{i : δᵢ} (⟪β, xᵢ⟫ - log ∑_{l ∈ R(Tᵢ)} exp ⟪β, x_l⟫)`. -/
 noncomputable def logPartialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool)
     (x : Fin n → Fin p → ℝ) (β : Fin p → ℝ) : ℝ :=
   ∑ i with δ i = true, (β ⬝ᵥ x i - log (∑ l ∈ riskSet T i, exp (β ⬝ᵥ x l)))
 
-/-- The logarithm of the partial likelihood is the log partial likelihood. -/
+/-- **Log of the Cox partial likelihood is the log partial likelihood.** The logarithm of the partial likelihood is the log partial likelihood. -/
 theorem log_partialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool) (x : Fin n → Fin p → ℝ)
     (β : Fin p → ℝ) : log (partialLikelihood T δ x β) = logPartialLikelihood T δ x β := by
   rw [partialLikelihood, logPartialLikelihood, log_prod]
@@ -143,25 +143,25 @@ theorem concaveOn_logPartialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool)
   simp only [add_dotProduct, smul_dotProduct, smul_eq_mul]
   linarith
 
-/-- The `exp (b z)`-weighted mean of a scalar covariate `z` over the risk set of subject `i`. -/
+/-- **Weighted mean of a covariate over a risk set.** The `exp (b z)`-weighted mean of a scalar covariate `z` over the risk set of subject `i`. -/
 noncomputable def riskMean (T : Fin n → ℝ) (z : Fin n → ℝ) (b : ℝ) (i : Fin n) : ℝ :=
   (∑ l ∈ riskSet T i, z l * exp (b * z l)) / ∑ l ∈ riskSet T i, exp (b * z l)
 
-/-- The `exp (b z)`-weighted variance of a scalar covariate over the risk set of subject `i`. -/
+/-- **Weighted variance of a covariate over a risk set.** The `exp (b z)`-weighted variance of a scalar covariate over the risk set of subject `i`. -/
 noncomputable def riskVar (T : Fin n → ℝ) (z : Fin n → ℝ) (b : ℝ) (i : Fin n) : ℝ :=
   (∑ l ∈ riskSet T i, z l ^ 2 * exp (b * z l)) / (∑ l ∈ riskSet T i, exp (b * z l)) -
     riskMean T z b i ^ 2
 
-/-- The Cox score for a scalar covariate: `∑_{i : δᵢ} (zᵢ - z̄ᵢ(b))`. -/
+/-- **Cox score for a scalar covariate.** The Cox score for a scalar covariate: `∑_{i : δᵢ} (zᵢ - z̄ᵢ(b))`. -/
 noncomputable def coxScore (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n → ℝ) (b : ℝ) : ℝ :=
   ∑ i with δ i = true, (z i - riskMean T z b i)
 
-/-- The Cox observed information for a scalar covariate: `∑_{i : δᵢ} Varᵢ(b)`. -/
+/-- **Cox observed information for a scalar covariate.** The Cox observed information for a scalar covariate: `∑_{i : δᵢ} Varᵢ(b)`. -/
 noncomputable def coxInformation (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n → ℝ) (b : ℝ) :
     ℝ :=
   ∑ i with δ i = true, riskVar T z b i
 
-/-- The log partial likelihood of a scalar covariate `z` as a function of `b ∈ ℝ`. -/
+/-- **Log partial likelihood of a scalar covariate.** The log partial likelihood of a scalar covariate `z` as a function of `b ∈ ℝ`. -/
 noncomputable def logPartialLikelihood₁ (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n → ℝ)
     (b : ℝ) : ℝ :=
   logPartialLikelihood T δ (fun i _ => z i) (fun _ : Fin 1 => b)
@@ -176,7 +176,7 @@ private lemma sum_pos_exp₁ (T : Fin n → ℝ) (z : Fin n → ℝ) (b : ℝ) (
     0 < ∑ l ∈ riskSet T i, exp (b * z l) :=
   sum_pos (fun _ _ => exp_pos _) (riskSet_nonempty T i)
 
-/-- The derivative of the scalar log partial likelihood is the Cox score. -/
+/-- **Derivative of the log partial likelihood is the Cox score.** The derivative of the scalar log partial likelihood is the Cox score. -/
 theorem hasDerivAt_logPartialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n → ℝ)
     (b : ℝ) : HasDerivAt (logPartialLikelihood₁ T δ z) (coxScore T δ z b) b := by
   have hfun : logPartialLikelihood₁ T δ z = fun b => ∑ i with δ i = true,
@@ -190,7 +190,7 @@ theorem hasDerivAt_logPartialLikelihood (T : Fin n → ℝ) (δ : Fin n → Bool
   convert (hasDerivAt_mul_const (z i)).fun_sub (hS.log (sum_pos_exp₁ T z b i).ne') using 1
   simp [riskMean]
 
-/-- The derivative of the Cox score is minus the observed information. -/
+/-- **Derivative of the Cox score is minus the information.** The derivative of the Cox score is minus the observed information. -/
 theorem hasDerivAt_coxScore (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n → ℝ) (b : ℝ) :
     HasDerivAt (coxScore T δ z) (-coxInformation T δ z b) b := by
   unfold coxScore coxInformation
@@ -209,23 +209,23 @@ theorem hasDerivAt_coxScore (T : Fin n → ℝ) (δ : Fin n → Bool) (z : Fin n
     simp only [hc]
     ring
 
-/-- The number at risk at the time of subject `i`. -/
+/-- **Number at risk at a subject's time.** The number at risk at the time of subject `i`. -/
 noncomputable def numAtRisk (T : Fin n → ℝ) (i : Fin n) : ℕ := #(riskSet T i)
 
-/-- The number of group-1 subjects at risk at the time of subject `i`. -/
+/-- **Number of group-1 subjects at risk.** The number of group-1 subjects at risk at the time of subject `i`. -/
 noncomputable def numAtRiskIn (T : Fin n → ℝ) (g : Fin n → Bool) (i : Fin n) : ℕ :=
   #{l ∈ riskSet T i | g l = true}
 
-/-- The group indicator `zᵢ = 1` for group 1 (`g i = true`) and `0` otherwise. -/
+/-- **Group indicator covariate.** The group indicator `zᵢ = 1` for group 1 (`g i = true`) and `0` otherwise. -/
 def groupIndicator (g : Fin n → Bool) (i : Fin n) : ℝ := if g i = true then 1 else 0
 
-/-- The log-rank numerator `O - E`: observed minus expected group-1 events,
+/-- **Log-rank numerator: observed minus expected events.** The log-rank numerator `O - E`: observed minus expected group-1 events,
 `∑_{i : δᵢ} (zᵢ - n₁(Tᵢ) / n(Tᵢ))`. -/
 noncomputable def observedMinusExpected (T : Fin n → ℝ) (δ : Fin n → Bool) (g : Fin n → Bool) :
     ℝ :=
   ∑ i with δ i = true, (groupIndicator g i - (numAtRiskIn T g i : ℝ) / numAtRisk T i)
 
-/-- The Breslow (Cox) information `∑_{i : δᵢ} n₁ n₀ / n²` at the risk sets of the events.
+/-- **Breslow information.** The Breslow (Cox) information `∑_{i : δᵢ} n₁ n₀ / n²` at the risk sets of the events.
 This is `-ℓ''(0)` for a group indicator, not the tied log-rank variance: for one tied
 risk set with `n = 4`, `n₁ = 2` and `d = 2` events it gives `1 / 2`, while the
 hypergeometric log-rank variance is `1 / 3`. It equals the log-rank variance only when

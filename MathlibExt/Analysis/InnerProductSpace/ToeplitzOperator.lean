@@ -110,7 +110,7 @@ private theorem toeplitz_memℓp_of_summable_normSq {f : ℕ → 𝕜}
     (by norm_num : (0 : ℝ) < (2 : ℝ≥0∞).toReal)).mpr
   simpa using hf
 
-/-- The `k`-th diagonal slice function: shift coordinates by `k`, killing
+/-- **Diagonal slice function of a Toeplitz matrix.** The `k`-th diagonal slice function: shift coordinates by `k`, killing
 the coordinates that fall off the end. For `k ≥ 0` this is the `k`-fold
 forward shift; for `k < 0` it is the `(-k)`-fold backward shift. -/
 def toeplitzSliceFun (k : ℤ) (x : ℕ → 𝕜) (i : ℕ) : 𝕜 :=
@@ -233,12 +233,12 @@ private theorem toeplitz_tsum_normSq_slice_le {k : ℤ} (x : ℓ²(ℕ, 𝕜)) :
           le_add_of_nonneg_left (Finset.sum_nonneg fun i _ => by positivity)
       _ = ∑' i, ‖(x : ℕ → 𝕜) i‖ ^ 2 := h
 
-/-- The slice of an `ℓ²` sequence is in `ℓ²`. -/
+/-- **Diagonal slices preserve square-summability.** The slice of an `ℓ²` sequence is in `ℓ²`. -/
 theorem toeplitz_memℓp_sliceFun {k : ℤ} {x : ℓ²(ℕ, 𝕜)} :
     Memℓp (toeplitzSliceFun k (x : ℕ → 𝕜)) 2 :=
   toeplitz_memℓp_of_summable_normSq toeplitz_summable_normSq_sliceFun
 
-/-- The `k`-th diagonal slice as a linear map. -/
+/-- **Diagonal slice as a linear map.** The `k`-th diagonal slice as a linear map. -/
 noncomputable def toeplitzSliceLinMap (k : ℤ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜) where
   toFun x := ⟨toeplitzSliceFun k (x : ℕ → 𝕜), toeplitz_memℓp_sliceFun⟩
   map_add' x y := by
@@ -253,11 +253,11 @@ noncomputable def toeplitzSliceLinMap (k : ℤ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] 
       RingHom.id_apply]
     split_ifs with hi <;> simp
 
-/-- Pointwise action of the slice linear map. -/
+/-- **Pointwise action of the diagonal slice linear map.** Pointwise action of the slice linear map. -/
 theorem toeplitzSliceLinMap_apply (k : ℤ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     toeplitzSliceLinMap k x i = toeplitzSliceFun k (x : ℕ → 𝕜) i := rfl
 
-/-- A slice does not increase norms. -/
+/-- **Diagonal slices do not increase norms.** A slice does not increase norms. -/
 theorem norm_toeplitzSliceLinMap_apply_le (k : ℤ) (x : ℓ²(ℕ, 𝕜)) :
     ‖toeplitzSliceLinMap k x‖ ≤ ‖x‖ := by
   have hpow : ‖toeplitzSliceLinMap k x‖ ^ 2 ≤ ‖x‖ ^ 2 := by
@@ -265,17 +265,17 @@ theorem norm_toeplitzSliceLinMap_apply_le (k : ℤ) (x : ℓ²(ℕ, 𝕜)) :
     exact toeplitz_tsum_normSq_slice_le x
   exact le_of_sq_le_sq hpow (norm_nonneg _)
 
-/-- The `k`-th diagonal slice as a bounded operator. -/
+/-- **Diagonal slice as a bounded operator.** The `k`-th diagonal slice as a bounded operator. -/
 noncomputable def toeplitzSlice (k : ℤ) : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   (toeplitzSliceLinMap k).mkContinuous 1 (fun x => by
     rw [one_mul]
     exact norm_toeplitzSliceLinMap_apply_le k x)
 
-/-- Pointwise action of the slice operator. -/
+/-- **Pointwise action of the diagonal slice operator.** Pointwise action of the slice operator. -/
 theorem toeplitzSlice_apply (k : ℤ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     toeplitzSlice k x i = toeplitzSliceFun k (x : ℕ → 𝕜) i := rfl
 
-/-- Every nonnegative Toeplitz slice is the corresponding power of the
+/-- **Diagonal slices are powers of the forward or backward shift.** Every nonnegative Toeplitz slice is the corresponding power of the
 canonical unilateral shift, and every negative slice is the corresponding
 power of the canonical backward shift. -/
 theorem toeplitzSlice_eq_shiftCLM_pow_or_backwardCLM_pow (k : ℤ) :
@@ -304,13 +304,13 @@ theorem toeplitzSlice_eq_shiftCLM_pow_or_backwardCLM_pow (k : ℤ) :
   · rw [ite_eq_right hk, ShiftFredholmIndex.backwardCLM_pow_apply]
     exact toeplitzSliceFun_of_nonpos (le_of_lt (not_le.mp hk)) _ _
 
-/-- The operator norm of a slice is at most `1`. -/
+/-- **Operator norm of a diagonal slice is at most one.** The operator norm of a slice is at most `1`. -/
 theorem norm_toeplitzSlice_le (k : ℤ) : ‖toeplitzSlice (𝕜 := 𝕜) k‖ ≤ 1 :=
   ContinuousLinearMap.opNorm_le_bound _ zero_le_one (fun x => by
     rw [one_mul]
     exact norm_toeplitzSliceLinMap_apply_le k x)
 
-/-- A slice is adjoint to the slice at the negated index: the diagonal
+/-- **Inner product symmetry of opposite diagonal slices.** A slice is adjoint to the slice at the negated index: the diagonal
 symmetry exchanges the two sides of the inner product. -/
 theorem toeplitzSlice_inner_symm (k : ℤ) (x y : ℓ²(ℕ, 𝕜)) :
     ⟪toeplitzSlice k x, y⟫_𝕜 = ⟪x, toeplitzSlice (-k) y⟫_𝕜 := by
@@ -375,7 +375,7 @@ theorem toeplitzSlice_inner_symm (k : ℤ) (x y : ℓ²(ℕ, 𝕜)) :
     intro j
     rw [toeplitzSlice_apply, toeplitzSliceFun_add_of_nonneg (neg_nonneg.mpr hk')]
 
-/-- A slice is adjoint to the slice at the negated index. -/
+/-- **Adjoint of a diagonal slice is the opposite slice.** A slice is adjoint to the slice at the negated index. -/
 theorem adjoint_toeplitzSlice (k : ℤ) :
     (toeplitzSlice (𝕜 := 𝕜) k)† = toeplitzSlice (𝕜 := 𝕜) (-k) := by
   exact ((ContinuousLinearMap.eq_adjoint_iff (toeplitzSlice (𝕜 := 𝕜) (-k))
@@ -383,7 +383,7 @@ theorem adjoint_toeplitzSlice (k : ℤ) :
       rw [toeplitzSlice_inner_symm (-k)]
       simp only [neg_neg])).symm
 
-/-- The slice operators weighted by `a` are summable in operator norm when
+/-- **Summability of weighted diagonal slices.** The slice operators weighted by `a` are summable in operator norm when
 `a` is absolutely summable. -/
 theorem toeplitz_summable_slices {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     Summable fun k => (a k) • toeplitzSlice (𝕜 := 𝕜) k := by
@@ -395,18 +395,18 @@ theorem toeplitz_summable_slices {a : ℤ → 𝕜} (ha : Summable fun k => ‖a
         exact mul_le_mul_of_nonneg_left (norm_toeplitzSlice_le k) (norm_nonneg _)
     _ = ‖a k‖ := mul_one _
 
-/-- The Toeplitz operator with symbol `a`. Defined as the norm-convergent
+/-- **Toeplitz operator with absolutely summable symbol.** The Toeplitz operator with symbol `a`. Defined as the norm-convergent
 series `∑' k, a k • toeplitzSlice k` over the diagonal slices. -/
 noncomputable def toeplitzOperator (a : ℤ → 𝕜) (_ha : Summable fun k => ‖a k‖) :
     ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   ∑' k, (a k) • toeplitzSlice (𝕜 := 𝕜) k
 
-/-- The Toeplitz operator is the sum of its slices. -/
+/-- **Toeplitz operator as the sum of its diagonal slices.** The Toeplitz operator is the sum of its slices. -/
 theorem toeplitz_hasSum_slices {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     HasSum (fun k => (a k) • toeplitzSlice (𝕜 := 𝕜) k) (toeplitzOperator a ha) :=
   (toeplitz_summable_slices ha).hasSum
 
-/-- Pointwise action of the Toeplitz operator:
+/-- **Pointwise action of a Toeplitz operator.** Pointwise action of the Toeplitz operator:
 `(Tₐ x) i = ∑' j, a (i - j) * x j`. -/
 theorem toeplitzOperator_apply {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖)
     (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
@@ -488,7 +488,7 @@ theorem toeplitzOperator_apply {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k
         · rw [toeplitzSliceFun_eq_zero_of_not_le hle, mul_zero])).mpr hHasF
   exact hHasF.tsum_eq.trans hReindex.tsum_eq.symm
 
-/-- The zero symbol gives the zero operator. -/
+/-- **Toeplitz operator of the zero symbol.** The zero symbol gives the zero operator. -/
 theorem toeplitzOperator_zero : toeplitzOperator (0 : ℤ → 𝕜) (by simp) = 0 := by
   show (∑' k, (0 : ℤ → 𝕜) k • toeplitzSlice (𝕜 := 𝕜) k) = 0
   have hfun : (fun k => (0 : ℤ → 𝕜) k • toeplitzSlice (𝕜 := 𝕜) k) =
@@ -498,7 +498,7 @@ theorem toeplitzOperator_zero : toeplitzOperator (0 : ℤ → 𝕜) (by simp) = 
     exact zero_smul 𝕜 (toeplitzSlice (𝕜 := 𝕜) k)
   rw [hfun, tsum_zero]
 
-/-- Operator-norm bound: `‖Tₐ‖ ≤ ∑' k, ‖a k‖`. -/
+/-- **Operator norm bound for a Toeplitz operator.** Operator-norm bound: `‖Tₐ‖ ≤ ∑' k, ‖a k‖`. -/
 theorem norm_toeplitzOperator_le {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     ‖toeplitzOperator a ha‖ ≤ ∑' k, ‖a k‖ :=
   (toeplitz_hasSum_slices ha).norm_le_of_bounded ha.hasSum (fun k => by
@@ -508,17 +508,17 @@ theorem norm_toeplitzOperator_le {a : ℤ → 𝕜} (ha : Summable fun k => ‖a
           mul_le_mul_of_nonneg_left (norm_toeplitzSlice_le k) (norm_nonneg _)
       _ = ‖a k‖ := mul_one _)
 
-/-- The adjoint symbol: `a* k = star (a (-k))`. -/
+/-- **Adjoint symbol of a Toeplitz operator.** The adjoint symbol: `a* k = star (a (-k))`. -/
 def toeplitzAdjointSymbol (a : ℤ → 𝕜) : ℤ → 𝕜 := fun k => star (a (-k))
 
-/-- The adjoint symbol of an absolutely summable symbol is absolutely
+/-- **Absolute summability of the adjoint symbol.** The adjoint symbol of an absolutely summable symbol is absolutely
 summable. -/
 theorem summable_norm_toeplitzAdjointSymbol {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     Summable fun k => ‖toeplitzAdjointSymbol a k‖ := by
   have h := ha.comp_injective (Equiv.neg ℤ).injective
   simpa [toeplitzAdjointSymbol, Function.comp_def, norm_star] using h
 
-/-- Adjoint of a Toeplitz operator: `(Tₐ)† = T_{a*}`. -/
+/-- **Adjoint of a Toeplitz operator.** Adjoint of a Toeplitz operator: `(Tₐ)† = T_{a*}`. -/
 theorem adjoint_toeplitzOperator {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     (toeplitzOperator (𝕜 := 𝕜) a ha)† =
       toeplitzOperator (toeplitzAdjointSymbol a)
@@ -546,7 +546,7 @@ theorem adjoint_toeplitzOperator {a : ℤ → 𝕜} (ha : Summable fun k => ‖a
     _ = toeplitzOperator (toeplitzAdjointSymbol a)
           (summable_norm_toeplitzAdjointSymbol ha) := rfl
 
-/-- The Toeplitz operator applied to a standard basis vector. -/
+/-- **Toeplitz operator applied to a standard basis vector.** The Toeplitz operator applied to a standard basis vector. -/
 theorem toeplitzOperator_apply_single {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖)
     (j i : ℕ) :
     toeplitzOperator a ha (lp.single 2 j (1 : 𝕜)) i = a ((i : ℤ) - (j : ℤ)) := by
@@ -554,7 +554,7 @@ theorem toeplitzOperator_apply_single {a : ℤ → 𝕜} (ha : Summable fun k =>
     tsum_eq_single j (fun j' hj' => by simp [lp.single_apply, hj'])]
   simp [lp.single_apply]
 
-/-- Self-adjointness of a Toeplitz operator iff the symbol satisfies
+/-- **Characterization of self-adjoint Toeplitz operators.** Self-adjointness of a Toeplitz operator iff the symbol satisfies
 `star (a (-k)) = a k` for all `k`. -/
 theorem isSelfAdjoint_toeplitzOperator_iff {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     IsSelfAdjoint (toeplitzOperator a ha) ↔ ∀ k : ℤ, star (a (-k)) = a k := by
@@ -605,7 +605,7 @@ theorem isSelfAdjoint_toeplitzOperator_iff {a : ℤ → 𝕜} (ha : Summable fun
     show star (a (-((i : ℤ) - (j : ℤ)))) * x j = a ((i : ℤ) - (j : ℤ)) * x j
     rw [hsym]
 
-/-- A Toeplitz operator with a `star`-fixed adjoint symbol is self-adjoint. -/
+/-- **Toeplitz operators with self-adjoint symbol are self-adjoint.** A Toeplitz operator with a `star`-fixed adjoint symbol is self-adjoint. -/
 theorem isSelfAdjoint_toeplitzOperator_of_forall_star {a : ℤ → 𝕜}
     (ha : Summable fun k => ‖a k‖) (hstar : ∀ k, star (a (-k)) = a k) :
     IsSelfAdjoint (toeplitzOperator a ha) :=
@@ -635,7 +635,7 @@ private theorem tendsto_toeplitzSymbol_sub_nat {a : ℤ → 𝕜} (ha : Summable
   have hkey : (i : ℤ) - (n : ℤ) < B := by omega
   exact (lt_irrefl B (hle.trans_lt hkey))
 
-/-- A Toeplitz operator with a nonzero symbol is not compact: the images
+/-- **Toeplitz operators with nonzero symbol are not compact.** A Toeplitz operator with a nonzero symbol is not compact: the images
 of the standard basis vectors converge coordinatewise to `0` but keep a
 nonzero coordinate. -/
 theorem not_isCompactOperator_toeplitzOperator_of_ne {a : ℤ → 𝕜}
@@ -723,7 +723,7 @@ theorem not_isCompactOperator_toeplitzOperator_of_ne {a : ℤ → 𝕜}
   have hsq : ‖a k₀‖ ^ 2 = 0 := le_antisymm hnorm (by positivity)
   exact hk₀ (norm_eq_zero.mp ((pow_eq_zero_iff (by norm_num : (2 : ℕ) ≠ 0)).mp hsq))
 
-/-- A Toeplitz operator is compact iff its symbol is zero. -/
+/-- **A Toeplitz operator is compact iff its symbol is zero.** A Toeplitz operator is compact iff its symbol is zero. -/
 theorem isCompactOperator_toeplitzOperator_iff {a : ℤ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     IsCompactOperator (toeplitzOperator a ha) ↔ a = 0 := by
   constructor
@@ -739,10 +739,10 @@ theorem isCompactOperator_toeplitzOperator_iff {a : ℤ → 𝕜} (ha : Summable
       ext x; simp]
     exact Filter.univ_mem
 
-/-- The delta symbol at `m` with value `c`. -/
+/-- **Delta symbol for Toeplitz operators.** The delta symbol at `m` with value `c`. -/
 def toeplitzDelta (m : ℤ) (c : 𝕜) : ℤ → 𝕜 := fun k => if k = m then c else 0
 
-/-- A delta symbol is absolutely summable. -/
+/-- **Absolute summability of a delta symbol.** A delta symbol is absolutely summable. -/
 theorem summable_norm_toeplitzDelta (m : ℤ) (c : 𝕜) :
     Summable fun k => ‖toeplitzDelta m c k‖ := by
   refine summable_of_ne_finset_zero (s := {m}) ?_
@@ -750,7 +750,7 @@ theorem summable_norm_toeplitzDelta (m : ℤ) (c : 𝕜) :
   simp only [Finset.mem_singleton] at hk
   simp [toeplitzDelta, hk]
 
-/-- A Toeplitz operator with a delta symbol is the corresponding scalar
+/-- **Toeplitz operator of a delta symbol is a scaled slice.** A Toeplitz operator with a delta symbol is the corresponding scalar
 multiple of its diagonal slice. -/
 theorem toeplitzOperator_delta_eq_smul_slice (m : ℤ) (c : 𝕜) :
     toeplitzOperator (toeplitzDelta m c) (summable_norm_toeplitzDelta m c) =
@@ -763,7 +763,7 @@ theorem toeplitzOperator_delta_eq_smul_slice (m : ℤ) (c : 𝕜) :
     rw [toeplitzDelta, ite_eq_right hk]
     exact zero_smul 𝕜 (toeplitzSlice (𝕜 := 𝕜) k)
 
-/-- The `ℓ¹` norm of a delta symbol is `‖c‖`. -/
+/-- **$\ell^1$ norm of a delta symbol.** The `ℓ¹` norm of a delta symbol is `‖c‖`. -/
 theorem tsum_norm_toeplitzDelta (m : ℤ) (c : 𝕜) :
     ∑' k, ‖toeplitzDelta m c k‖ = ‖c‖ := by
   rw [tsum_eq_single m]
@@ -771,7 +771,7 @@ theorem tsum_norm_toeplitzDelta (m : ℤ) (c : 𝕜) :
   · intro k hk
     simp [toeplitzDelta, hk]
 
-/-- The operator norm of a Toeplitz operator with a delta symbol is `‖c‖`. -/
+/-- **Operator norm of a Toeplitz operator with delta symbol.** The operator norm of a Toeplitz operator with a delta symbol is `‖c‖`. -/
 theorem norm_toeplitzOperator_delta (m : ℤ) (c : 𝕜) :
     ‖toeplitzOperator (toeplitzDelta m c) (summable_norm_toeplitzDelta m c)‖ = ‖c‖ := by
   apply le_antisymm

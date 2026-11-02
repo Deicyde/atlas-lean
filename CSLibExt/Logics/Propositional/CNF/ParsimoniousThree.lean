@@ -29,11 +29,11 @@ namespace Cslib.Logic.PL
 
 namespace CNF
 
-/-- The number of fresh variables used by the parsimonious width-three reduction. -/
+/-- **Number of fresh variables in the parsimonious 3-CNF reduction.** The number of fresh variables used by the parsimonious width-three reduction. -/
 def numFreshParsimonious3 (formula : CNF) : Nat :=
   (formula.map fun clause => clause.length - 3).sum
 
-/-- Reduce a CNF to clauses of length at most three, allocating fresh variables consecutively
+/-- **Parsimonious reduction of CNF to 3-CNF.** Reduce a CNF to clauses of length at most three, allocating fresh variables consecutively
 from `start`. Repeated output clauses are removed in last-occurrence order. -/
 def to3Parsimonious (formula : CNF) (start : Nat) : CNF :=
   (splitAll ((List.range formula.numFreshParsimonious3).map fun offset => start + offset)
@@ -537,7 +537,7 @@ private theorem satisfies_dedup {assignment : Nat → Bool} {formula : CNF} :
     CNF.Satisfies assignment formula.dedup ↔ CNF.Satisfies assignment formula := by
   simp [CNF.Satisfies]
 
-/-- Satisfaction of the reduced formula implies satisfaction of the original formula under the
+/-- **Soundness of the parsimonious 3-CNF reduction.** Satisfaction of the reduced formula implies satisfaction of the original formula under the
 same values of the original variable names. -/
 theorem satisfies_of_satisfies_to3Parsimonious {formula : CNF} {start : Nat}
     {assignment : Nat → Bool}
@@ -575,7 +575,7 @@ private theorem mem_vars_to3Parsimonious (formula : CNF) (start x : Nat)
     have hpair : sourceLiteral = (x, sourceLiteral.2) := Prod.ext heq rfl
     exact hpair ▸ hliteral
 
-/-- Every output clause has length at most three, and duplicate clauses have been removed. -/
+/-- **The parsimonious reduction outputs a duplicate-free 3-CNF.** Every output clause has length at most three, and duplicate clauses have been removed. -/
 theorem isThreeCNF_to3Parsimonious (formula : CNF) (start : Nat) :
     (∀ clause ∈ formula.to3Parsimonious start, clause.length ≤ 3) ∧
       (formula.to3Parsimonious start).Nodup := by
@@ -586,7 +586,7 @@ theorem isThreeCNF_to3Parsimonious (formula : CNF) (start : Nat) :
   · rw [to3Parsimonious_eq]
     exact List.nodup_dedup _
 
-/-- A width bound on the input gives the source bounds on allocated fresh variables and output
+/-- **Size bounds for the parsimonious 3-CNF reduction.** A width bound on the input gives the source bounds on allocated fresh variables and output
 clauses. -/
 theorem size_to3Parsimonious (formula : CNF) (start k : Nat)
     (hbound : ∀ clause ∈ formula, clause.length ≤ k) :
@@ -604,7 +604,7 @@ theorem size_to3Parsimonious (formula : CNF) (start k : Nat)
       length_splitAll formula _ (by rw [length_freshNames])
     _ ≤ formula.length + 3 * ((k - 3) * formula.length) := by omega
 
-/-- Every satisfying assignment of the original formula has exactly one satisfying extension that
+/-- **Unique satisfying extension in the parsimonious 3-CNF reduction.** Every satisfying assignment of the original formula has exactly one satisfying extension that
 can differ only on the allocated fresh-variable interval. -/
 theorem existsUnique_satisfies_to3Parsimonious {formula : CNF} {start : Nat}
     {assignment : Nat → Bool}
@@ -655,7 +655,7 @@ theorem existsUnique_satisfies_to3Parsimonious {formula : CNF} {start : Nat}
           omega
       rw [hotherAgrees x houtside, hagrees x hx]
 
-/-- The parsimonious reduction preserves the number of assignments to the variables occurring in
+/-- **The parsimonious 3-CNF reduction preserves the model count.** The parsimonious reduction preserves the number of assignments to the variables occurring in
 the formula. -/
 theorem modelCount_to3Parsimonious (formula : CNF) (start : Nat)
     (hstart : ∀ x ∈ formula.vars, x < start) :

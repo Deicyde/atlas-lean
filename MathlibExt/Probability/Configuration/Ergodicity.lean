@@ -49,14 +49,14 @@ section Group
 
 variable [Group G] [MulAction G E]
 
-/-- The shift of a configuration by `g : G`: `(shift g ω) e = ω (g⁻¹ • e)`. This is the action
+/-- **Shift of a configuration by a group element.** The shift of a configuration by `g : G`: `(shift g ω) e = ω (g⁻¹ • e)`. This is the action
 `arrowAction` of Mathlib on functions out of `E`. -/
 def shift (g : G) (ω : ConfigSpace E) : ConfigSpace E := fun e => ω (g⁻¹ • e)
 
 @[simp] lemma shift_apply (g : G) (ω : ConfigSpace E) (e : E) :
     shift g ω e = ω (g⁻¹ • e) := rfl
 
-/-- `shift` is Mathlib's `arrowAction` of `G` on functions `E → Bool`. -/
+/-- **Configuration shift is the action on functions.** `shift` is Mathlib's `arrowAction` of `G` on functions `E → Bool`. -/
 lemma shift_eq_arrowAction_smul (g : G) (ω : ConfigSpace E) :
     letI := arrowAction (G := G) (A := E) (B := Bool)
     shift g ω = g • ω := rfl
@@ -84,12 +84,12 @@ theorem continuous_shift (g : G) : Continuous (shift g : ConfigSpace E → Confi
     (shift g : ConfigSpace E → ConfigSpace E) ∘ shift g⁻¹ = id := by
   rw [← shift_mul]; simp
 
-/-- A measure on `ConfigSpace E` is translation invariant if every shift `shift g`, `g : G`,
+/-- **Translation-invariant measure on configuration space.** A measure on `ConfigSpace E` is translation invariant if every shift `shift g`, `g : G`,
 preserves it. -/
 def IsTranslationInvariant (μ : Measure (ConfigSpace E)) : Prop :=
   ∀ g : G, MeasureTheory.MeasurePreserving (shift g : ConfigSpace E → ConfigSpace E) μ μ
 
-/-- A measure on `ConfigSpace E` is ergodic for the shift action of `G` if it is translation
+/-- **Ergodic measure on configuration space.** A measure on `ConfigSpace E` is ergodic for the shift action of `G` if it is translation
 invariant and every measurable set with `shift g ⁻¹' s = s` for all `g` has measure `0` or
 `μ univ`. See also Mathlib's `ErgodicSMul`, which asks the same for a.e.-invariant sets. -/
 def IsErgodic (μ : Measure (ConfigSpace E)) : Prop :=

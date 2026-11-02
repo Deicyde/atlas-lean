@@ -690,13 +690,13 @@ theorem ramanujan_part1_ch7_entry10_zetaviabernoulli
 
 end
 
-/-- Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible`.
+/-- **Admissibility alias for the corollary of Ramanujan's Entry 10.** Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible` directly. -/
 abbrev chapter7Admissible (x : ℂ) : Prop :=
   MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible x
 
-/-- Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm`.
+/-- **Power difference term alias for the corollary of Entry 10.** Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`
 directly. -/

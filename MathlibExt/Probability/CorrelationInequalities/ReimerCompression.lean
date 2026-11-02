@@ -50,11 +50,11 @@ open ConfigSpace
 
 variable {E : Type*}
 
-/-- The support `{i | ω i = true}` of a configuration, as a finset. -/
+/-- **Support of a configuration as a finset.** The support `{i | ω i = true}` of a configuration, as a finset. -/
 def cfgSupport [Fintype E] [DecidableEq E] (ω : ConfigSpace E) : Finset E :=
   Finset.univ.filter (fun i => ω i = true)
 
-/-- The configuration whose open coordinates are exactly the elements of `s`. -/
+/-- **Configuration with a given support.** The configuration whose open coordinates are exactly the elements of `s`. -/
 def supportCfg [DecidableEq E] (s : Finset E) : ConfigSpace E := fun i => decide (i ∈ s)
 
 @[simp] lemma mem_cfgSupport [Fintype E] [DecidableEq E] (ω : ConfigSpace E) (i : E) :
@@ -75,7 +75,7 @@ lemma cfgSupport_supportCfg [Fintype E] [DecidableEq E] (s : Finset E) :
   ext i
   simp only [mem_cfgSupport, supportCfg_apply, decide_eq_true_eq]
 
-/-- Configurations on a finite set are the same as finsets (their supports). -/
+/-- **Configurations on a finite set as finsets.** Configurations on a finite set are the same as finsets (their supports). -/
 def cfgEquivFinset [Fintype E] [DecidableEq E] : ConfigSpace E ≃ Finset E where
   toFun := cfgSupport
   invFun := supportCfg
@@ -88,7 +88,7 @@ def cfgEquivFinset [Fintype E] [DecidableEq E] : ConfigSpace E ≃ Finset E wher
 @[simp] lemma cfgEquivFinset_symm_apply [Fintype E] [DecidableEq E] (s : Finset E) :
     cfgEquivFinset.symm s = supportCfg s := rfl
 
-/-- Down-compression at `i` of a family of configurations, through `cfgEquivFinset`. -/
+/-- **Down-compression of a family of configurations.** Down-compression at `i` of a family of configurations, through `cfgEquivFinset`. -/
 noncomputable def downCompress [Fintype E] [DecidableEq E] (i : E)
     (𝒜 : Finset (ConfigSpace E)) : Finset (ConfigSpace E) :=
   (Down.compression i (𝒜.image cfgSupport)).image supportCfg
@@ -192,7 +192,7 @@ lemma wprob_fin1 (φ : Fin 1 → Bool → ℝ) (S : Set (ConfigSpace (Fin 1))) :
         = {(fun _ => false), (fun _ => true)} from by decide]
   rw [Finset.sum_insert (by decide), Finset.sum_singleton, pweight_fin1, pweight_fin1]
 
-/-- Reimer's inequality on one coordinate, for all events. -/
+/-- **Reimer's inequality on one coordinate.** Reimer's inequality on one coordinate, for all events. -/
 theorem reimer_wprob_one (φ : Fin 1 → Bool → ℝ)
     (hφ0 : ∀ i b, 0 ≤ φ i b) (hφ1 : ∀ i, φ i false + φ i true = 1)
     (A B : Set (ConfigSpace (Fin 1))) :
@@ -209,7 +209,7 @@ theorem reimer_wprob_one (φ : Fin 1 → Bool → ℝ)
       ite_true, ite_false, and_self] <;>
     nlinarith [hq0, hp0, hqp]
 
-/-- `DependsOn A S`: whether a configuration lies in `A` depends only on its values on `S`.
+/-- **Event depending only on a set of coordinates.** `DependsOn A S`: whether a configuration lies in `A` depends only on its values on `S`.
 This is Mathlib's `DependsOn` for the membership predicate of `A`. -/
 def DependsOn (A : Set (ConfigSpace E)) (S : Set E) : Prop :=
   ∀ ω ω', agreeOn S ω ω' → (ω ∈ A ↔ ω' ∈ A)
@@ -222,7 +222,7 @@ lemma DependsOn.occursOn_iff {A : Set (ConfigSpace E)} {S : Set E} (h : DependsO
     (ω : ConfigSpace E) : OccursOn A S ω ↔ ω ∈ A :=
   ⟨OccursOn.mem_self, fun hω ω' hω' => (h ω ω' hω').mp hω⟩
 
-/-- If `A` depends only on `S`, `B` only on `T`, and `S, T` are disjoint, then
+/-- **Disjoint occurrence equals intersection for disjoint dependence sets.** If `A` depends only on `S`, `B` only on `T`, and `S, T` are disjoint, then
 `A □ B = A ∩ B`. -/
 theorem disjointOccurrence_eq_inter_of_dependsOn {A B : Set (ConfigSpace E)} {S T : Set E}
     (hA : DependsOn A S) (hB : DependsOn B T) (hST : Disjoint S T) :
@@ -286,7 +286,7 @@ lemma indicator_indep_pred {B : Set (ConfigSpace E)} (P : E → Prop) [Decidable
   · rw [Set.indicator_of_mem h, Set.indicator_of_mem (this.mp h)]
   · rw [Set.indicator_of_notMem h, Set.indicator_of_notMem (fun hc => h (this.mpr hc))]
 
-/-- Events depending on complementary coordinate sets are independent under a product
+/-- **Independence of events on complementary coordinate sets.** Events depending on complementary coordinate sets are independent under a product
 probability weight. -/
 theorem wprob_inter_mul_of_split [Fintype E] [DecidableEq E] (P : E → Prop)
     (φ : E → Bool → ℝ) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -339,7 +339,7 @@ theorem wprob_inter_mul_of_split [Fintype E] [DecidableEq E] (P : E → Prop)
       _ = IB a0 b * WQ b := by rw [← Finset.mul_sum, hsumWP, mul_one]
   rw [hwAB, hwA, hwB]
 
-/-- Reimer's inequality, with equality, for events depending on disjoint coordinate sets. -/
+/-- **Reimer's inequality for events on disjoint coordinate sets.** Reimer's inequality, with equality, for events depending on disjoint coordinate sets. -/
 theorem reimer_wprob_of_disjoint_support [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (hφ1 : ∀ x, φ x false + φ x true = 1)
     {A B : Set (ConfigSpace E)} {S T : Set E}

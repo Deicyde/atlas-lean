@@ -24,37 +24,37 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace List
 
-/-- The prefix through the first element satisfying `p`, including that element. If no element
+/-- **Inclusive first-hit prefix of a list.** The prefix through the first element satisfying `p`, including that element. If no element
 satisfies `p`, this is the whole list. -/
 def takeThrough {α : Type*} (p : α → Bool) (xs : List α) : List α :=
   xs.take (xs.findIdx p + 1)
 
-/-- The inclusive first-hit prefix of an empty list is empty. -/
+/-- **Inclusive first-hit prefix of the empty list.** The inclusive first-hit prefix of an empty list is empty. -/
 @[simp] theorem takeThrough_nil {α : Type*} (p : α → Bool) : takeThrough p [] = [] := by
   simp [takeThrough]
 
-/-- If the head satisfies the predicate, it is the whole inclusive first-hit prefix. -/
+/-- **Inclusive first-hit prefix when the head is a hit.** If the head satisfies the predicate, it is the whole inclusive first-hit prefix. -/
 @[simp] theorem takeThrough_cons_of_pos {α : Type*} {p : α → Bool} {x : α}
     (h : p x = true) (xs : List α) : takeThrough p (x :: xs) = [x] := by
   simp [takeThrough, List.findIdx_cons, h]
 
-/-- If the head does not satisfy the predicate, the search continues through the tail. -/
+/-- **Inclusive first-hit prefix when the head is not a hit.** If the head does not satisfy the predicate, the search continues through the tail. -/
 @[simp] theorem takeThrough_cons_of_neg {α : Type*} {p : α → Bool} {x : α}
     (h : p x = false) (xs : List α) :
     takeThrough p (x :: xs) = x :: takeThrough p xs := by
   simp [takeThrough, List.findIdx_cons, h]
 
-/-- A singleton is its own inclusive first-hit prefix. -/
+/-- **Inclusive first-hit prefix of a singleton.** A singleton is its own inclusive first-hit prefix. -/
 @[simp] theorem takeThrough_singleton {α : Type*} (p : α → Bool) (x : α) :
     takeThrough p [x] = [x] := by
   cases h : p x <;> simp [h]
 
-/-- Every member of an inclusive first-hit prefix belongs to the source list. -/
+/-- **Members of an inclusive first-hit prefix lie in the list.** Every member of an inclusive first-hit prefix belongs to the source list. -/
 theorem mem_of_mem_takeThrough {α : Type*} {p : α → Bool} {xs : List α} {x : α}
     (h : x ∈ takeThrough p xs) : x ∈ xs :=
   List.mem_of_mem_take h
 
-/-- If no element satisfies the predicate, the inclusive first-hit prefix is the whole list. -/
+/-- **Inclusive first-hit prefix of a list with no hit.** If no element satisfies the predicate, the inclusive first-hit prefix is the whole list. -/
 theorem takeThrough_eq_self_of_any_eq_false {α : Type*} {p : α → Bool} {xs : List α}
     (h : xs.any p = false) : takeThrough p xs = xs := by
   induction xs with
@@ -63,7 +63,7 @@ theorem takeThrough_eq_self_of_any_eq_false {α : Type*} {p : α → Bool} {xs :
     rw [List.any_cons, Bool.or_eq_false_iff] at h
     rw [takeThrough_cons_of_neg h.1, ih h.2]
 
-/-- Once the left list has a hit, appending another list does not change the prefix. -/
+/-- **Inclusive first-hit prefix of an append with a hit on the left.** Once the left list has a hit, appending another list does not change the prefix. -/
 theorem takeThrough_append_of_any_eq_true {α : Type*} {p : α → Bool} {xs : List α}
     (h : xs.any p = true) (ys : List α) : takeThrough p (xs ++ ys) = takeThrough p xs := by
   induction xs with
@@ -75,7 +75,7 @@ theorem takeThrough_append_of_any_eq_true {α : Type*} {p : α → Bool} {xs : L
       rw [List.any_cons, hx, Bool.false_or] at h
       rw [List.cons_append, takeThrough_cons_of_neg hx, takeThrough_cons_of_neg hx, ih h]
 
-/-- If the left list has no hit, the prefix contains all of it and continues into the right list. -/
+/-- **Inclusive first-hit prefix of an append with no hit on the left.** If the left list has no hit, the prefix contains all of it and continues into the right list. -/
 theorem takeThrough_append_of_any_eq_false {α : Type*} {p : α → Bool} {xs : List α}
     (h : xs.any p = false) (ys : List α) :
     takeThrough p (xs ++ ys) = xs ++ takeThrough p ys := by
@@ -85,7 +85,7 @@ theorem takeThrough_append_of_any_eq_false {α : Type*} {p : α → Bool} {xs : 
     rw [List.any_cons, Bool.or_eq_false_iff] at h
     rw [List.cons_append, takeThrough_cons_of_neg h.1, ih h.2, List.cons_append]
 
-/-- The inclusive first-hit prefix has a hit exactly when the source list has one. -/
+/-- **Inclusive first-hit prefix has a hit iff the list does.** The inclusive first-hit prefix has a hit exactly when the source list has one. -/
 theorem any_takeThrough {α : Type*} (p : α → Bool) (xs : List α) :
     (takeThrough p xs).any p = xs.any p := by
   induction xs with
@@ -95,7 +95,7 @@ theorem any_takeThrough {α : Type*} (p : α → Bool) (xs : List α) :
     | true => rw [takeThrough_cons_of_pos hx]; simp [hx]
     | false => rw [takeThrough_cons_of_neg hx, List.any_cons, List.any_cons, ih]
 
-/-- On `range n`, the prefix ends one past the first hit, or at `n` if there is no hit. -/
+/-- **Inclusive first-hit prefix of a range of naturals.** On `range n`, the prefix ends one past the first hit, or at `n` if there is no hit. -/
 theorem takeThrough_range (q : Nat → Bool) (n : Nat) :
     takeThrough q (range n) =
       range (match (range n).find? q with | some i => i + 1 | none => n) := by
@@ -117,7 +117,7 @@ theorem takeThrough_range (q : Nat → Bool) (n : Nat) :
     change min (i + 1) n = i + 1
     omega
 
-/-- Filtering selected elements from an inclusive prefix commutes with taking the corresponding
+/-- **Inclusive first-hit prefix commutes with filter-map.** Filtering selected elements from an inclusive prefix commutes with taking the corresponding
 inclusive prefix of the selected elements. -/
 theorem filterMap_takeThrough {α β : Type*} (sel : α → Option β) (p : β → Bool)
     (xs : List α) :

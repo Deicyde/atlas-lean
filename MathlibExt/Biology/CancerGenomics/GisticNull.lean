@@ -65,18 +65,18 @@ the resulting p-values.
 
 namespace MathlibExt.Biology.CancerGenomics.GisticNull
 
-/-- The permuted score at marker `m`: `∑ j, x j (σ j m)`. -/
+/-- **Permuted GISTIC score at a marker.** The permuted score at marker `m`: `∑ j, x j (σ j m)`. -/
 def permutedScore {S M : ℕ} (x : Fin S → Fin M → ℝ) (m : Fin M)
     (σ : Fin S → Equiv.Perm (Fin M)) : ℝ :=
   ∑ j, x j (σ j m)
 
-/-- The GISTIC permutation null at marker `m`: the probability that `∑ j, x j (σ j m) = g`
+/-- **GISTIC permutation null distribution.** The GISTIC permutation null at marker `m`: the probability that `∑ j, x j (σ j m) = g`
 when the permutations `σ j` of the markers are independent and uniform. -/
 noncomputable def permutationNull {S M : ℕ} (x : Fin S → Fin M → ℝ) (m : Fin M) (g : ℝ) : ℝ :=
   ((Finset.univ.filter fun σ : Fin S → Equiv.Perm (Fin M) => permutedScore x m σ = g).card :
     ℝ) / Fintype.card (Fin S → Equiv.Perm (Fin M))
 
-/-- The number of marker choices `u : Fin S → Fin M` (one marker per sample) with
+/-- **Count of marker choices with a given score.** The number of marker choices `u : Fin S → Fin M` (one marker per sample) with
 `∑ j, x j (u j) = g`. -/
 noncomputable def scoreCount {S M : ℕ} (x : Fin S → Fin M → ℝ) (g : ℝ) : ℕ :=
   (Finset.univ.filter fun u : Fin S → Fin M => ∑ j, x j (u j) = g).card
@@ -167,7 +167,7 @@ theorem permutationNull_eq_count {S M : ℕ} (x : Fin S → Fin M → ℝ) (m : 
   simpa [mul_comm] using
     (mul_div_mul_right (scoreCount x g : ℝ) ((M : ℝ) ^ S) (pow_ne_zero S hcR))
 
-/-- With no samples the null is the point mass at `0`. -/
+/-- **GISTIC null with no samples is a point mass at zero.** With no samples the null is the point mass at `0`. -/
 theorem permutationNull_zero {M : ℕ} (x : Fin 0 → Fin M → ℝ) (m : Fin M) (g : ℝ) :
     permutationNull x m g = if g = 0 then 1 else 0 := by
   classical
@@ -203,7 +203,7 @@ theorem permutationNull_succ {S M : ℕ} (x : Fin (S + 1) → Fin M → ℝ) (m 
   intro v _
   simp [pow_succ, div_eq_mul_inv, mul_comm, mul_assoc]
 
-/-- The minimum of `y` over the window of `n + 1` consecutive markers starting at `i`
+/-- **Window minimum over consecutive markers.** The minimum of `y` over the window of `n + 1` consecutive markers starting at `i`
 (GeneGISTIC's per-sample gene-level value for a gene covering those markers). -/
 noncomputable def windowMin {W n : ℕ} (y : Fin (W + n) → ℝ) (i : Fin W) : ℝ :=
   Finset.univ.inf' Finset.univ_nonempty fun k : Fin (n + 1) =>

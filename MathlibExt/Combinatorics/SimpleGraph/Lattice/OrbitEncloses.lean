@@ -66,7 +66,7 @@ open StatMech.Percolation (origin)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- The walk in the face-boundary graph of `K` through the faces of `e` and its first `n`
+/-- **Face walk along a boundary orbit.** The walk in the face-boundary graph of `K` through the faces of `e` and its first `n`
 successors. -/
 noncomputable def dartOrbitFaceWalk (K : Set (Site 2)) (e : Dart) (he : IsBoundaryDart K e) :
     (n : ℕ) → (faceBoundaryGraph K).Walk (dartFace e) (dartFace ((dartNext K)^[n] e))
@@ -106,7 +106,7 @@ theorem dartOrbitFaceWalk_edges_bdEdge (K : Set (Site 2)) (e : Dart) (he : IsBou
   have hadj : (faceBoundaryGraph K).Adj f g := (dartOrbitFaceWalk K e he n).adj_of_mem_edges h
   exact faceBoundaryGraph_sharedPrimalEdge_bdEdge K hadj
 
-/-- The closed walk of faces along one period of the boundary orbit of `e`, for finite `K`. -/
+/-- **Face loop of a boundary orbit in the face-boundary graph.** The closed walk of faces along one period of the boundary orbit of `e`, for finite `K`. -/
 noncomputable def dartOrbitFaceLoop (K : Set (Site 2)) (hK : K.Finite) (e : Dart)
     (he : IsBoundaryDart K e) : (faceBoundaryGraph K).Walk (dartFace e) (dartFace e) :=
   (dartOrbitFaceWalk K e he (dartNext_periodic K hK e he).choose).copy rfl (by
@@ -123,7 +123,7 @@ theorem dartOrbitFaceLoop_edges_bdEdge (K : Set (Site 2)) (hK : K.Finite) (e : D
   rw [dartOrbitFaceLoop, SimpleGraph.Walk.edges_copy] at h
   exact dartOrbitFaceWalk_edges_bdEdge K e he _ h
 
-/-- The closed face walk of the exit orbit of a finite origin cluster, based at the upper exit
+/-- **Face loop of the exit orbit of a finite cluster.** The closed face walk of the exit orbit of a finite origin cluster, based at the upper exit
 face. -/
 noncomputable def exitOrbitFaceLoop (hfin : (cluster 2 ω (origin 2)).Finite) :
     (faceBoundaryGraph (cluster 2 ω (origin 2))).Walk
@@ -188,7 +188,7 @@ theorem exitOrbitFaceLoop_exists_leftFace (hfin : (cluster 2 ω (origin 2)).Fini
   ⟨leftExitFaceDown (ω := ω) hfin, exitOrbitFaceLoop_mem_leftFace (ω := ω) hfin h,
     leftExitFaceDown_coord0_nonpos (ω := ω) hfin⟩
 
-/-- The face loop of the exit orbit is a cycle, and the left exit dart lies in the exit orbit. -/
+/-- **Canonical orbit cycle condition.** The face loop of the exit orbit is a cycle, and the left exit dart lies in the exit orbit. -/
 def CanonicalOrbitCycle (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
   (exitOrbitFaceLoop (ω := ω) hfin).IsCycle ∧ ExitDartsSameOrbit ω hfin
@@ -206,7 +206,7 @@ theorem pcAnchoredEnclosure_of_canonicalOrbit
   pcAnchoredEnclosure_of_cycleHasLeftFace
     (fun ω hfin => cycleHasLeftFace_of_canonicalOrbit (ω := ω) hfin (h ω hfin))
 
-/-- `p_c(ℤ²) < 1`, under the hypothesis that `CanonicalOrbitCycle` holds for every configuration
+/-- **$p_c(\mathbb{Z}^2) < 1$ assuming a canonical orbit cycle.** `p_c(ℤ²) < 1`, under the hypothesis that `CanonicalOrbitCycle` holds for every configuration
 with a finite origin cluster. The hypothesis is not proved here. -/
 theorem pc_lt_one_orbit
     (h : ∀ (ω : ConfigSpace (Sym2 (Site 2))) (hfin : (cluster 2 ω (origin 2)).Finite),

@@ -67,7 +67,7 @@ section Scalar
 
 variable {n : ℕ} {w lam : Fin n → ℝ} {m M : ℝ}
 
-/-- The weighted variance equals the weighted squared deviation from the
+/-- **Weighted variance as weighted squared deviation from the mean.** The weighted variance equals the weighted squared deviation from the
 weighted mean. -/
 theorem weighted_variance_eq (hw_sum : ∑ i, w i = 1) :
     (∑ i, w i * lam i ^ 2) - (∑ i, w i * lam i) ^ 2
@@ -183,14 +183,14 @@ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
   [FiniteDimensional ℝ E]
 variable {T S : E →ₗ[ℝ] E} {n : ℕ} {m M : ℝ}
 
-/-- Real-valued form of `LinearMap.IsSymmetric.apply_eigenvectorBasis`: the
+/-- **Eigenvector basis equation with real eigenvalues.** Real-valued form of `LinearMap.IsSymmetric.apply_eigenvectorBasis`: the
 eigenvalue is a plain real scalar, with no `ℝ → 𝕜` coercion. -/
 theorem apply_eigenvectorBasis_real (hT : T.IsSymmetric)
     (hn : Module.finrank ℝ E = n) (i : Fin n) :
     T ((hT.eigenvectorBasis hn) i) = (hT.eigenvalues hn i) • (hT.eigenvectorBasis hn) i := by
   simp [hT.apply_eigenvectorBasis hn i]
 
-/-- The eigenvalues of a symmetric operator lie in `[m, M]` whenever its
+/-- **Eigenvalues lie within the Rayleigh quotient bounds.** The eigenvalues of a symmetric operator lie in `[m, M]` whenever its
 Rayleigh quotients do. -/
 theorem eigenvalue_mem_Icc_of_rayleigh_bounds (hT : T.IsSymmetric)
     (hn : Module.finrank ℝ E = n)
@@ -207,7 +207,7 @@ theorem eigenvalue_mem_Icc_of_rayleigh_bounds (hT : T.IsSymmetric)
   simp only [one_pow, mul_one] at h1 h2
   exact ⟨h1, h2⟩
 
-/-- The eigenbasis weights sum to `‖x‖²`. -/
+/-- **Eigenbasis weights sum to the squared norm.** The eigenbasis weights sum to `‖x‖²`. -/
 theorem sum_weights_eq_norm_sq (hT : T.IsSymmetric) (hn : Module.finrank ℝ E = n)
     (x : E) :
     ∑ i, ((hT.eigenvectorBasis hn).repr x i) ^ 2 = ‖x‖ ^ 2 := by
@@ -218,7 +218,7 @@ theorem sum_weights_eq_norm_sq (hT : T.IsSymmetric) (hn : Module.finrank ℝ E =
   intro i _
   rw [← b.repr_apply_apply x i, Real.norm_eq_abs, sq_abs]
 
-/-- The Rayleigh quotient is the weighted average of the eigenvalues, with
+/-- **Rayleigh quotient as a weighted average of eigenvalues.** The Rayleigh quotient is the weighted average of the eigenvalues, with
 weights `((eigenvectorBasis).repr x i)²`. -/
 theorem rayleigh_eq_weighted_sum (hT : T.IsSymmetric) (hn : Module.finrank ℝ E = n)
     (x : E) :
@@ -243,7 +243,7 @@ theorem rayleigh_eq_weighted_sum (hT : T.IsSymmetric) (hn : Module.finrank ℝ E
         simp [hc, b.repr_apply_apply x i]
         try ring
 
-/-- The second-moment quadratic form is the weighted average of the squared
+/-- **Second moment as a weighted average of squared eigenvalues.** The second-moment quadratic form is the weighted average of the squared
 eigenvalues. -/
 theorem second_moment_eq_weighted_sum (hT : T.IsSymmetric)
     (hn : Module.finrank ℝ E = n) (x : E) :
@@ -277,7 +277,7 @@ theorem second_moment_eq_weighted_sum (hT : T.IsSymmetric)
         simp [hc, b.repr_apply_apply x i]
         try ring
 
-/-- The quadratic form of a two-sided inverse is the weighted average of the
+/-- **Inverse quadratic form as a weighted average of reciprocal eigenvalues.** The quadratic form of a two-sided inverse is the weighted average of the
 reciprocal eigenvalues. -/
 theorem inv_rayleigh_eq_weighted_sum_div (hT : T.IsSymmetric)
     (hn : Module.finrank ℝ E = n) (hm : 0 < m)
@@ -315,7 +315,7 @@ theorem inv_rayleigh_eq_weighted_sum_div (hT : T.IsSymmetric)
         simp [hc, b.repr_apply_apply x i]
         try ring
 
-/-- The variance of `T` at a unit vector is the weighted squared deviation
+/-- **Operator variance as weighted squared deviation of eigenvalues.** The variance of `T` at a unit vector is the weighted squared deviation
 of the eigenvalues from the Rayleigh quotient. -/
 theorem variance_eq_weighted_sum_sq (hT : T.IsSymmetric)
     (hn : Module.finrank ℝ E = n) (x : E) (hx : ‖x‖ = 1) :

@@ -51,7 +51,7 @@ private theorem prod_pow_single_weight {X R : Type*} [CommMonoid R]
           simp
         _ = ε ^ wt (Finsupp.single i n + d) := by rw [map_add]
 
-/-- Mapping rational coefficients and rescaling variable `i` by
+/-- **Coefficients of a weighted rescaling of a rational power series.** Mapping rational coefficients and rescaling variable `i` by
 `ε ^ wt (Finsupp.single i 1)` multiplies coefficient `d` by `ε ^ wt d`. -/
 theorem coeff_rescale_map_of_weight {X R : Type*} [CommRing R] [Algebra ℚ R]
     (wt : (X →₀ ℕ) →+ ℕ) (ε : R) (q : MvPowerSeries X ℚ) (d : X →₀ ℕ) :
@@ -61,7 +61,7 @@ theorem coeff_rescale_map_of_weight {X R : Type*} [CommRing R] [Algebra ℚ R]
       algebraMap ℚ R (coeff d q) * ε ^ wt d := by
   rw [coeff_rescale, coeff_map, prod_pow_single_weight, mul_comm]
 
-/-- A series has the weighted coefficients of `q` exactly when it is the
+/-- **Characterization of weighted rescalings of a power series.** A series has the weighted coefficients of `q` exactly when it is the
 canonical coefficient map of `q` followed by the corresponding rescaling. -/
 theorem eq_rescale_map_of_weight_iff {X R : Type*} [CommRing R] [Algebra ℚ R]
     (wt : (X →₀ ℕ) →+ ℕ) (ε : R) (q : MvPowerSeries X ℚ) (w : MvPowerSeries X R) :

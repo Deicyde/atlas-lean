@@ -142,7 +142,7 @@ theorem orbitFaceWalk_isCycle (K : Set (Site 2)) (e : Dart) (he : IsBoundaryDart
     rw [hrw]
     exact polygon_support_tail_nodup g p (by omega) hper hinj
 
-/-- The exit dart of a finite origin cluster, as an element of the subtype of boundary darts. -/
+/-- **Exit dart of a finite origin cluster.** The exit dart of a finite origin cluster, as an element of the subtype of boundary darts. -/
 noncomputable def exitBaseSub (hfin : (cluster 2 ω (origin 2)).Finite) :
     {d : Dart // IsBoundaryDart (cluster 2 ω (origin 2)) d} :=
   ⟨exitDart (ω := ω) hfin, exitDart_isBoundaryDart (ω := ω) hfin⟩
@@ -152,7 +152,7 @@ theorem exit_period_closure (hfin : (cluster 2 ω (origin 2)).Finite) :
       (exitBaseSub (ω := ω) hfin)] (exitDart (ω := ω) hfin) = exitDart (ω := ω) hfin :=
   orbit_iterate_period_eq (cluster 2 ω (origin 2)) (exitBaseSub (ω := ω) hfin)
 
-/-- The closed walk of faces along one period of the exit orbit, based at the upper exit face. -/
+/-- **Minimal-period face loop of the exit orbit.** The closed walk of faces along one period of the exit orbit, based at the upper exit face. -/
 noncomputable def exitMinFaceLoop (hfin : (cluster 2 ω (origin 2)).Finite) :
     (faceBoundaryGraph (cluster 2 ω (origin 2))).Walk
       (exitFaceUp (ω := ω) hfin) (exitFaceUp (ω := ω) hfin) :=
@@ -184,7 +184,7 @@ theorem exitMinFaceLoop_mem_leftFace (hfin : (cluster 2 ω (origin 2)).Finite)
     List.mem_range.mpr (by have := Nat.mod_lt n hppos; omega), ?_⟩
   rw [← hmod, hface]
 
-/-- The exit orbit has period at least three and visits distinct faces during one period. -/
+/-- **Simplicity of the exit orbit's face walk.** The exit orbit has period at least three and visits distinct faces during one period. -/
 def OrbitFaceSimple (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
   3 ≤ dartOrbitPeriod (cluster 2 ω (origin 2)) (exitBaseSub (ω := ω) hfin) ∧
@@ -214,7 +214,7 @@ theorem pcAnchoredEnclosure_of_orbitFaceSimple
   pcAnchoredEnclosure_of_cycleHasLeftFace
     (fun ω hfin => cycleHasLeftFace_of_orbitFaceSimple (ω := ω) hfin (h ω hfin).1 (h ω hfin).2)
 
-/-- `p_c(ℤ²) < 1`, under the hypothesis that for every configuration with a finite origin cluster
+/-- **$p_c(\mathbb{Z}^2) < 1$ assuming simple exit orbits.** `p_c(ℤ²) < 1`, under the hypothesis that for every configuration with a finite origin cluster
 the exit orbit is simple (`OrbitFaceSimple`) and contains the left exit dart. The hypothesis
 is not proved here. -/
 theorem pc_lt_one_of_orbitFaceSimple

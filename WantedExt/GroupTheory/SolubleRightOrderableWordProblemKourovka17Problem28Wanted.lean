@@ -55,7 +55,7 @@ solvable word problem. -/
 def IsRecursivelyPresented {G : Type*} [Group G] {k : ℕ} (φ : FreeGroup (Fin k) →* G) : Prop :=
   REPred (fun w : List (Fin k × Bool) => φ (FreeGroup.mk w) = 1)
 
-/-- The right orders of `G`: linear orders (as relations) invariant under right multiplication. -/
+/-- **Right orders of a group.** The right orders of `G`: linear orders (as relations) invariant under right multiplication. -/
 def rightOrders (G : Type*) [Group G] : Set (G → G → Prop) :=
   {r | IsLinearOrder G r ∧ ∀ a b c : G, r a b → r (a * c) (b * c)}
 

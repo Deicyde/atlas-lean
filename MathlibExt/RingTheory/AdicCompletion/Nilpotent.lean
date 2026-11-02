@@ -34,7 +34,7 @@ discrete, so every Cauchy sequence is eventually constant.
 
 universe u
 
-/-- A ring is adically complete at a nilpotent ideal. -/
+/-- **Adic completeness at a nilpotent ideal.** A ring is adically complete at a nilpotent ideal. -/
 theorem IsAdicComplete.of_isNilpotent {R : Type u} [CommRing R] {I : Ideal R}
     (hI : IsNilpotent I) : IsAdicComplete I R := by
   obtain ⟨N, hN⟩ := hI

@@ -48,7 +48,7 @@ namespace StatMech
 
 variable {E : Type*} [Countable E] [DecidableEq E]
 
-/-- The mass of a point under the Bernoulli distribution: `p` at `true`, `1 - p` at `false`. -/
+/-- **Point masses of the Bernoulli distribution.** The mass of a point under the Bernoulli distribution: `p` at `true`, `1 - p` at `false`. -/
 lemma bernoulliMeasure_real_singleton (p : ℝ≥0) (hp : p ≤ 1) (b : Bool) :
     (bernoulliMeasure p hp).real {b} = if b then (p : ℝ) else 1 - p := by
   cases b with
@@ -58,7 +58,7 @@ lemma bernoulliMeasure_real_singleton (p : ℝ≥0) (hp : p ≤ 1) (b : Bool) :
       simp
 
 omit [Countable E] [DecidableEq E] in
-/-- On a finite index set, the mass of a configuration is its product weight `configWeight`. -/
+/-- **Mass of a configuration on a finite index set is its product weight.** On a finite index set, the mass of a configuration is its product weight `configWeight`. -/
 lemma realSingleton_eq_configWeight [Fintype E] (p : ℝ≥0) (hp : p ≤ 1)
     (ω : ConfigSpace E) :
     (bernoulliProductMeasure (E := E) p hp).real {ω} = configWeight (p : ℝ) ω := by
@@ -67,7 +67,7 @@ lemma realSingleton_eq_configWeight [Fintype E] (p : ℝ≥0) (hp : p ≤ 1)
   exact Finset.prod_congr rfl (fun e _ => bernoulliMeasure_real_singleton p hp (ω e))
 
 omit [Countable E] in
-/-- On a finite index set, the Bernoulli product measure of an event is its weight `prob p`. -/
+/-- **Bernoulli product measure of an event on a finite index set.** On a finite index set, the Bernoulli product measure of an event is its weight `prob p`. -/
 lemma finiteRealProb_eq_prob [Fintype E] (p : ℝ≥0) (hp : p ≤ 1)
     (S : Set (ConfigSpace E)) :
     (bernoulliProductMeasure (E := E) p hp).real S = prob (p : ℝ) S := by
@@ -76,7 +76,7 @@ lemma finiteRealProb_eq_prob [Fintype E] (p : ℝ≥0) (hp : p ≤ 1)
   exact Finset.sum_congr rfl
     (fun ω _ => by rw [realSingleton_eq_configWeight p hp ω])
 
-/-- The configuration that agrees with `η` on the finite set `F` and with `ω` off `F`. -/
+/-- **Configuration patched from one configuration on a finite set and another off it.** The configuration that agrees with `η` on the finite set `F` and with `ω` off `F`. -/
 noncomputable def extendOff (F : Finset E) (ω : ConfigSpace E) (η : ConfigSpace ↥F) :
     ConfigSpace E := fun j => if h : j ∈ F then η ⟨j, h⟩ else ω j
 
@@ -86,7 +86,7 @@ omit [Countable E] in
   funext j; simp [Finset.restrict, extendOff, j.2]
 
 omit [Countable E] [DecidableEq E] in
-/-- An event whose indicator depends only on the coordinates in `F` is the cylinder over its
+/-- **Events depending on finitely many coordinates are cylinders.** An event whose indicator depends only on the coordinates in `F` is the cylinder over its
 projection onto `F`. -/
 lemma eq_cylinder_restrict_image (A : Set (ConfigSpace E)) (F : Finset E)
     (hA : DependsOn (A.indicator (fun _ => (1 : ℝ))) (F : Set E)) :
@@ -105,7 +105,7 @@ lemma eq_cylinder_restrict_image (A : Set (ConfigSpace E)) (F : Finset E)
   norm_num at hind
 
 omit [DecidableEq E] in
-/-- The infinite Bernoulli product measure of a cylinder over `F` is the finite Bernoulli product
+/-- **Bernoulli product measure of a cylinder event.** The infinite Bernoulli product measure of a cylinder over `F` is the finite Bernoulli product
 measure of its base. -/
 lemma bernoulliProductMeasure_cylinder (p : ℝ≥0) (hp : p ≤ 1) (F : Finset E)
     (S : Set (ConfigSpace ↥F)) :
@@ -117,14 +117,14 @@ lemma bernoulliProductMeasure_cylinder (p : ℝ≥0) (hp : p ≤ 1) (F : Finset 
       ← Measure.infinitePi_eq_pi]
 
 omit [DecidableEq E] in
-/-- Real-valued form of `bernoulliProductMeasure_cylinder`. -/
+/-- **Bernoulli product measure of a cylinder event, real-valued form.** Real-valued form of `bernoulliProductMeasure_cylinder`. -/
 lemma realProb_cylinder (p : ℝ≥0) (hp : p ≤ 1) (F : Finset E)
     (S : Set (ConfigSpace ↥F)) :
     (bernoulliProductMeasure (E := E) p hp).real (cylinder F S)
       = (bernoulliProductMeasure (E := ↥F) p hp).real S := by
   rw [Measure.real, Measure.real, bernoulliProductMeasure_cylinder]
 
-/-- The probability of an event depending only on the coordinates in `F` is the finite weight
+/-- **Probability of a finitely dependent event as a finite weight.** The probability of an event depending only on the coordinates in `F` is the finite weight
 `prob p` of its projection onto `F`. -/
 theorem realProb_cylinder_eq_prob (p : ℝ≥0) (hp : p ≤ 1)
     (A : Set (ConfigSpace E)) (F : Finset E)
@@ -134,7 +134,7 @@ theorem realProb_cylinder_eq_prob (p : ℝ≥0) (hp : p ≤ 1)
   conv_lhs => rw [eq_cylinder_restrict_image A F hA]
   rw [realProb_cylinder, finiteRealProb_eq_prob]
 
-/-- The probability of an event depending only on the coordinates in `F`, as an explicit
+/-- **Probability of a finitely dependent event as a polynomial in $p$.** The probability of an event depending only on the coordinates in `F`, as an explicit
 polynomial in `p`. -/
 theorem realProb_cylinder_eq_finsum (p : ℝ≥0) (hp : p ≤ 1)
     (A : Set (ConfigSpace E)) (F : Finset E)
@@ -148,7 +148,7 @@ theorem realProb_cylinder_eq_finsum (p : ℝ≥0) (hp : p ≤ 1)
   rfl
 
 omit [Countable E] in
-/-- The weight of the projection of an event onto finitely many coordinates is differentiable
+/-- **Differentiability in $p$ of the probability of a cylinder event.** The weight of the projection of an event onto finitely many coordinates is differentiable
 in `p`. -/
 theorem differentiable_realProb_cylinder
     (A : Set (ConfigSpace E)) (F : Finset E) :
@@ -156,7 +156,7 @@ theorem differentiable_realProb_cylinder
   fun q => (hasDerivAt_prob (F.restrict '' A) q).differentiableAt
 
 omit [Countable E] [DecidableEq E] in
-/-- The projection of an increasing event onto finitely many coordinates is increasing. -/
+/-- **Finite projections of increasing events are increasing.** The projection of an increasing event onto finitely many coordinates is increasing. -/
 lemma isIncreasing_restrict_image (A : Set (ConfigSpace E)) (hA : IsIncreasing A)
     (F : Finset E) : IsIncreasing (F.restrict '' A) := by
   classical

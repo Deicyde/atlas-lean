@@ -38,7 +38,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- The face loop of the boundary orbit of `e`, as a closed walk in the square lattice. -/
+/-- **Boundary orbit face loop as a lattice walk.** The face loop of the boundary orbit of `e`, as a closed walk in the square lattice. -/
 noncomputable def olb_orbitLoop (K : Set (Site 2)) (hK : K.Finite) (e : Dart)
     (he : IsBoundaryDart K e) : (hypercubicLattice 2).Walk (dartFace e) (dartFace e) :=
   (dartOrbitFaceLoop K hK e he).mapLe (faceBoundaryGraph_le K)

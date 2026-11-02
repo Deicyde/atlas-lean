@@ -144,7 +144,7 @@ lemma eq_finsum_quotient_out_of_bijOn' (a : fixedPoints V A)
     rw [hv, mul_smul, (show (v : G) • (a : A) = a from a.2 v)]
   exact finsum_mem_eq_of_bijOn e he₀ he₁
 
-/-- The Hecke operator `T(g)` as a function on fixed points. -/
+/-- **Hecke operator as a function on fixed points.** The Hecke operator `T(g)` as a function on fixed points. -/
 noncomputable def HeckeOperator_toFun (a : fixedPoints V A) : fixedPoints U A :=
   ⟨∑ᶠ gᵢ ∈ Quotient.out '' (QuotientGroup.mk '' (U * {g}) : Set (G ⧸ V)), gᵢ • a.1, by
   rintro ⟨u, huU⟩
@@ -165,7 +165,7 @@ noncomputable def HeckeOperator_toFun (a : fixedPoints V A) : fixedPoints U A :=
       exact Function.Injective.injOn Function.injective_id
     ⟩
 
-/-- The Hecke operator `T(g)` as an additive monoid homomorphism. -/
+/-- **Hecke operator as an additive homomorphism.** The Hecke operator `T(g)` as an additive monoid homomorphism. -/
 noncomputable def HeckeOperator_addMonoidHom : fixedPoints V A →+ fixedPoints U A where
   toFun := HeckeOperator_toFun h
   map_zero' := by
@@ -179,7 +179,7 @@ noncomputable def HeckeOperator_addMonoidHom : fixedPoints V A →+ fixedPoints 
 variable {R : Type*} [Semiring R] [Module R A] [SMulCommClass G R A]
 
 variable (g U V) in
-/-- The Hecke operator `T(g)` as a linear map on fixed points. -/
+/-- **Hecke operator.** The Hecke operator `T(g)` as a linear map on fixed points. -/
 noncomputable def HeckeOperator : fixedPoints V A →ₗ[R] fixedPoints U A where
   toFun := HeckeOperator_toFun h
   map_add' a b := by

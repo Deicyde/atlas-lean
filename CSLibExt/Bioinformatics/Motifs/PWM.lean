@@ -101,19 +101,19 @@ variable {α : Type*} [Fintype α] {w : ℕ}
 
 /-! ## Scores and likelihoods -/
 
-/-- The score `∑ᵢ W i (s i)` of a site `s` of width `w` under a position weight matrix `W`. -/
+/-- **Score of a site under a position weight matrix.** The score `∑ᵢ W i (s i)` of a site `s` of width `w` under a position weight matrix `W`. -/
 def score {R : Type*} [AddCommMonoid R] (W : Fin w → α → R) (s : Fin w → α) : R :=
   ∑ i, W i (s i)
 
-/-- The likelihood `∏ᵢ p i (s i)` of a site under the product (column-independent) site model
+/-- **Site likelihood under a column-independent model.** The likelihood `∏ᵢ p i (s i)` of a site under the product (column-independent) site model
 `p`. -/
 def siteLik (p : Fin w → α → ℝ) (s : Fin w → α) : ℝ := ∏ i, p i (s i)
 
-/-- The likelihood `∏ₖ q (x k)` of a sequence of length `m` under the background of independent
+/-- **Background likelihood of a sequence.** The likelihood `∏ₖ q (x k)` of a sequence of length `m` under the background of independent
 letters with law `q`. -/
 def bgLik {m : ℕ} (q : α → ℝ) (x : Fin m → α) : ℝ := ∏ k, q (x k)
 
-/-- The log-odds matrix `log (p i b / q b)` of a site model against a background (natural
+/-- **Log-odds matrix of a site model.** The log-odds matrix `log (p i b / q b)` of a site model against a background (natural
 logarithm). -/
 noncomputable def logOdds (p : Fin w → α → ℝ) (q : α → ℝ) : Fin w → α → ℝ :=
   fun i b => log (p i b / q b)
@@ -130,14 +130,14 @@ theorem score_logOdds {p : Fin w → α → ℝ} {q : α → ℝ} (hp : ∀ i b,
     log_prod hbg, ← sum_sub_distrib]
   exact sum_congr rfl fun i _ => log_div (hp i (s i)).ne' (hq (s i)).ne'
 
-/-- A product of column distributions is a distribution on sites. -/
+/-- **Product site likelihoods form a distribution.** A product of column distributions is a distribution on sites. -/
 theorem sum_siteLik {p : Fin w → α → ℝ} (hp : ∀ i, IsDist (p i)) :
     ∑ s, siteLik p s = 1 := by
   simp only [siteLik]
   rw [← Fintype.prod_sum]
   simp [fun i => (hp i).2]
 
-/-- The background law of independent letters is a distribution on sequences. -/
+/-- **Background likelihoods form a distribution.** The background law of independent letters is a distribution on sequences. -/
 theorem sum_bgLik {m : ℕ} {q : α → ℝ} (hq : IsDist q) : ∑ x : Fin m → α, bgLik q x = 1 := by
   simp only [bgLik]
   rw [← Fintype.prod_sum]
@@ -183,7 +183,7 @@ theorem sum_mul_siteLik_le_of_sum_mul_bgLik_le {p : Fin w → α → ℝ} {q : �
 
 /-! ## Information content -/
 
-/-- The information content `∑_b p b log₂ (p b / q b)` (in bits) of a PWM column `p` against
+/-- **Information content of a position weight matrix column.** The information content `∑_b p b log₂ (p b / q b)` (in bits) of a PWM column `p` against
 the background `q` (Schneider et al. 1986). Letters with `p b = 0` contribute `0`. -/
 noncomputable def infoContent (p q : α → ℝ) : ℝ := (∑ b, p b * log (p b / q b)) / log 2
 
@@ -230,14 +230,14 @@ theorem infoContent_uniform [Nonempty α] (P : PMF α) :
   congr 1
   rw [sum_congr rfl fun b _ => hterm b, sum_sub_distrib, ← sum_mul, hsum, one_mul]
 
-/-- Against the uniform background, a column carries at most `log₂ |α|` bits. -/
+/-- **Information content is at most the log of the alphabet size.** Against the uniform background, a column carries at most `log₂ |α|` bits. -/
 theorem infoContent_uniform_le [Nonempty α] (P : PMF α) :
     infoContent (fun b => (P b).toReal) (fun _ => ((Fintype.card α : ℝ))⁻¹) ≤
       logb 2 (Fintype.card α) := by
   rw [infoContent_uniform]
   linarith [InformationTheory.shannonEntropy_nonneg P]
 
-/-- For a four-letter alphabet (DNA) and the uniform background, a column carries between `0`
+/-- **A DNA column carries at most two bits.** For a four-letter alphabet (DNA) and the uniform background, a column carries between `0`
 and `2` bits. -/
 theorem infoContent_uniform_le_two [Nonempty α] (h4 : Fintype.card α = 4) (P : PMF α) :
     infoContent (fun b => (P b).toReal) (fun _ => ((Fintype.card α : ℝ))⁻¹) ≤ 2 := by
@@ -281,13 +281,13 @@ theorem sum_siteLik_mul_score_logOdds {p : Fin w → α → ℝ} {q : α → ℝ
 
 /-! ## Exact score distribution of an integer matrix -/
 
-/-- One column of the score-distribution recursion: from the distribution `d` of the score of
+/-- **One column step of the score-distribution recursion.** One column of the score-distribution recursion: from the distribution `d` of the score of
 the first columns, the distribution after adding a column `c` with background `q`,
 `∑_b q b · (d shifted by c b)`. -/
 noncomputable def scoreStep (q : α → ℝ) (d : ℤ →₀ ℝ) (c : α → ℤ) : ℤ →₀ ℝ :=
   ∑ b, q b • d.mapDomain (· + c b)
 
-/-- The background distribution of the score of an integer matrix `M`, computed column by column
+/-- **Background score distribution of an integer matrix.** The background distribution of the score of an integer matrix `M`, computed column by column
 from the point mass at `0` (Staden 1989; Touzet and Varré 2007). -/
 noncomputable def scoreDist (q : α → ℝ) (M : Fin w → α → ℤ) : ℤ →₀ ℝ :=
   (List.ofFn M).foldl (scoreStep q) (Finsupp.single 0 1)
@@ -327,7 +327,7 @@ theorem scoreDist_apply (q : α → ℝ) (M : Fin w → α → ℤ) (t : ℤ) :
   · simp [h]
   · rw [ite_eq_right (fun h' => h (by omega)), ite_eq_right h, mul_zero]
 
-/-- The exact p-value of the score threshold `t`, summed over the computed distribution. -/
+/-- **Exact p-value of a score threshold.** The exact p-value of the score threshold `t`, summed over the computed distribution. -/
 noncomputable def pValue (q : α → ℝ) (M : Fin w → α → ℤ) (t : ℤ) : ℝ :=
   ∑ u ∈ (scoreDist q M).support with t ≤ u, scoreDist q M u
 
@@ -383,25 +383,25 @@ theorem abs_score_sub_score_round_le (W : Fin w → α → ℝ) {c : ℝ} (hc : 
 
 /-! ## Berg–von Hippel: Boltzmann selection gives a PWM -/
 
-/-- The column partition function `Z = ∑_b q b e^{-λ ε b}` of energies `ε` at inverse
+/-- **Column partition function of an energy matrix.** The column partition function `Z = ∑_b q b e^{-λ ε b}` of energies `ε` at inverse
 temperature `λ`. -/
 noncomputable def partitionFn (q ε : α → ℝ) (lam : ℝ) : ℝ := ∑ b, q b * exp (-lam * ε b)
 
-/-- The Boltzmann PWM `q b e^{-λ ε i b} / Zᵢ` of an energy matrix `ε`. -/
+/-- **Boltzmann position weight matrix.** The Boltzmann PWM `q b e^{-λ ε i b} / Zᵢ` of an energy matrix `ε`. -/
 noncomputable def boltzmannPWM (q : α → ℝ) (ε : Fin w → α → ℝ) (lam : ℝ) : Fin w → α → ℝ :=
   fun i b => q b * exp (-lam * ε i b) / partitionFn q (ε i) lam
 
-/-- The law of background sites selected with weight `e^{-λ E(s)}` for the additive energy
+/-- **Law of energy-selected background sites.** The law of background sites selected with weight `e^{-λ E(s)}` for the additive energy
 `E s = score ε s = ∑ᵢ ε i (s i)`: `q(s) e^{-λ E(s)} / ∑_{s'} q(s') e^{-λ E(s')}`. -/
 noncomputable def selectedLaw (q : α → ℝ) (ε : Fin w → α → ℝ) (lam : ℝ) (s : Fin w → α) : ℝ :=
   bgLik q s * exp (-lam * score ε s) / ∑ s', bgLik q s' * exp (-lam * score ε s')
 
-/-- The partition function of a positive background is positive. -/
+/-- **Positivity of the column partition function.** The partition function of a positive background is positive. -/
 theorem partitionFn_pos [Nonempty α] {q : α → ℝ} (hq : ∀ b, 0 < q b) (ε : α → ℝ) (lam : ℝ) :
     0 < partitionFn q ε lam := by
   exact sum_pos (fun b _ => mul_pos (hq b) (exp_pos _)) univ_nonempty
 
-/-- Each column of the Boltzmann PWM is a distribution. -/
+/-- **Columns of the Boltzmann matrix are distributions.** Each column of the Boltzmann PWM is a distribution. -/
 theorem isDist_boltzmannPWM [Nonempty α] {q : α → ℝ} (hq : ∀ b, 0 < q b)
     (ε : Fin w → α → ℝ) (lam : ℝ) (i : Fin w) : IsDist (boltzmannPWM q ε lam i) := by
   have hZ := partitionFn_pos hq (ε i) lam
@@ -437,7 +437,7 @@ theorem logOdds_boltzmannPWM [Nonempty α] {q : α → ℝ} (hq : ∀ b, 0 < q b
       exp (-lam * ε i b) / partitionFn q (ε i) lam by field_simp [(hq b).ne'],
     log_div (exp_pos _).ne' hZ.ne', log_exp]
 
-/-- The log-odds score of a selected site is `-λ E(s)` up to the constant `∑ᵢ log Zᵢ`. -/
+/-- **Log-odds score of a selected site is its scaled energy up to a constant.** The log-odds score of a selected site is `-λ E(s)` up to the constant `∑ᵢ log Zᵢ`. -/
 theorem score_logOdds_boltzmannPWM [Nonempty α] {q : α → ℝ} (hq : ∀ b, 0 < q b)
     (ε : Fin w → α → ℝ) (lam : ℝ) (s : Fin w → α) :
     score (logOdds (boltzmannPWM q ε lam) q) s =
@@ -451,21 +451,21 @@ section EM
 
 variable {n : ℕ} {Z : Type*} [Fintype Z] [DecidableEq α]
 
-/-- The position `j + i` of motif column `i` for a motif starting at `j`, in a sequence of
+/-- **Sequence position of a motif column.** The position `j + i` of motif column `i` for a motif starting at `j`, in a sequence of
 length `n + w` (so `n + 1` possible starts). -/
 def sitePos (j : Fin (n + 1)) (i : Fin w) : Fin (n + w) := ⟨j + i, by omega⟩
 
-/-- The window of width `w` of `x` starting at `j`. -/
+/-- **Window of a sequence at a given start.** The window of width `w` of `x` starting at `j`. -/
 def window (x : Fin (n + w) → α) (j : Fin (n + 1)) : Fin w → α := fun i => x (sitePos j i)
 
-/-- The likelihood ratio of the window at `j` under the site model `θ` against the background
+/-- **Likelihood ratio of a motif window.** The likelihood ratio of the window at `j` under the site model `θ` against the background
 `q`, and `1` when there is no motif occurrence. -/
 noncomputable def windowRatio (q : α → ℝ) (θ : Fin w → α → ℝ) (x : Fin (n + w) → α) :
     Option (Fin (n + 1)) → ℝ
   | none => 1
   | some j => siteLik θ (window x j) / bgLik q (window x j)
 
-/-- The joint likelihood of a sequence `x` and a latent occurrence `z` with prior `prior z` and
+/-- **Joint likelihood of a sequence and a motif occurrence.** The joint likelihood of a sequence `x` and a latent occurrence `z` with prior `prior z` and
 start `start z` (`none`: no occurrence): background letters outside the window, site-model letters
 inside. One occurrence per sequence (OOPS) is `Z = Fin (n + 1)`, `start = some`, `prior` uniform;
 zero or one (ZOOPS) is `Z = Option (Fin (n + 1))`, `start = id`, `prior none = 1 - γ` and
@@ -516,23 +516,23 @@ theorem motifJoint_of_start_eq_some {q : α → ℝ} (hq : ∀ b, 0 < q b) (prio
   field_simp
 
 omit [Fintype α] [Fintype Z] [DecidableEq α] in
-/-- With no occurrence, the joint is the prior times the background likelihood. -/
+/-- **Joint likelihood with no motif occurrence.** With no occurrence, the joint is the prior times the background likelihood. -/
 theorem motifJoint_of_start_eq_none (q : α → ℝ) (prior : Z → ℝ)
     (start : Z → Option (Fin (n + 1))) (θ : Fin w → α → ℝ) (x : Fin (n + w) → α) {z : Z}
     (hz : start z = none) : motifJoint q prior start θ x z = prior z * bgLik q x := by
   simp [motifJoint, hz, windowRatio]
 
-/-- PWMs with positive entries and columns summing to `1`: the EM parameter space. -/
+/-- **Positive position weight matrices.** PWMs with positive entries and columns summing to `1`: the EM parameter space. -/
 abbrev PosPWM (w : ℕ) (α : Type*) [Fintype α] : Type _ :=
   {θ : Fin w → α → ℝ // (∀ i b, 0 < θ i b) ∧ ∀ i, ∑ b, θ i b = 1}
 
-/-- The motif model as an EM model on `PosPWM`. -/
+/-- **Motif model as an EM model.** The motif model as an EM model on `PosPWM`. -/
 noncomputable def motifModel (q : α → ℝ) (prior : Z → ℝ) (start : Z → Option (Fin (n + 1))) :
     PosPWM w α → (Fin (n + w) → α) → Z → ℝ :=
   fun θ => motifJoint q prior start θ.1
 
 omit [Fintype Z] [DecidableEq α] in
-/-- The motif model is positive for a positive background and a positive prior. -/
+/-- **Positivity of the motif model.** The motif model is positive for a positive background and a positive prior. -/
 theorem motifModel_pos {q : α → ℝ} (hq : ∀ b, 0 < q b) {prior : Z → ℝ} (hprior : ∀ z, 0 < prior z)
     (start : Z → Option (Fin (n + 1))) (θ : PosPWM w α) (x : Fin (n + w) → α) (z : Z) :
     0 < motifModel q prior start θ x z := by
@@ -562,7 +562,7 @@ theorem posterior_motifModel {q : α → ℝ} (hq : ∀ b, 0 < q b) (prior : Z �
 
 variable {N : ℕ}
 
-/-- The expected count of letter `b` in motif column `i` under the posteriors at `θ`:
+/-- **Expected letter counts in motif columns.** The expected count of letter `b` in motif column `i` under the posteriors at `θ`:
 `∑ₘ ∑_z P(z | xₘ, θ) [start z = some j ∧ xₘ (j + i) = b]`. -/
 noncomputable def expectedCounts (q : α → ℝ) (prior : Z → ℝ) (start : Z → Option (Fin (n + 1)))
     (xs : Fin N → Fin (n + w) → α) (θ : PosPWM w α) (i : Fin w) (b : α) : ℝ :=
@@ -571,12 +571,12 @@ noncomputable def expectedCounts (q : α → ℝ) (prior : Z → ℝ) (start : Z
       | none => 0
       | some j => if xs m (sitePos j i) = b then 1 else 0)
 
-/-- Every letter can occur in every motif column: for each column `i` and letter `b` some
+/-- **Coverage condition for motif columns.** Every letter can occur in every motif column: for each column `i` and letter `b` some
 sequence has `b` at offset `i` of some possible occurrence. This keeps the M-step positive. -/
 def Covers (start : Z → Option (Fin (n + 1))) (xs : Fin N → Fin (n + w) → α) : Prop :=
   ∀ (i : Fin w) (b : α), ∃ m z j, start z = some j ∧ xs m (sitePos j i) = b
 
-/-- Under `Covers`, every expected count is positive. -/
+/-- **Positivity of expected motif counts.** Under `Covers`, every expected count is positive. -/
 theorem expectedCounts_pos [Nonempty Z] {q : α → ℝ} (hq : ∀ b, 0 < q b) {prior : Z → ℝ}
     (hprior : ∀ z, 0 < prior z) {start : Z → Option (Fin (n + 1))}
     {xs : Fin N → Fin (n + w) → α} (hcov : Covers start xs) (θ : PosPWM w α) (i : Fin w)
@@ -599,7 +599,7 @@ theorem expectedCounts_pos [Nonempty Z] {q : α → ℝ} (hq : ∀ b, 0 < q b) {
   simp only [hb, ite_true, mul_one]
   exact hpost m z
 
-/-- The M-step: normalized expected letter counts, `θ' i b = c i b / ∑_{b'} c i b'`. -/
+/-- **M-step for position weight matrices.** The M-step: normalized expected letter counts, `θ' i b = c i b / ∑_{b'} c i b'`. -/
 noncomputable def mStep [Nonempty α] [Nonempty Z] {q : α → ℝ} (hq : ∀ b, 0 < q b) {prior : Z → ℝ}
     (hprior : ∀ z, 0 < prior z) {start : Z → Option (Fin (n + 1))}
     {xs : Fin N → Fin (n + w) → α} (hcov : Covers start xs) (θ : PosPWM w α) : PosPWM w α :=
@@ -703,7 +703,7 @@ end EM
 
 /-! ## The Karlin–Altschul `λ` -/
 
-/-- The moment generating function `∑ₐ ∑_b pₐ p_b e^{λ s_{ab}}` of a pair score under independent
+/-- **Moment generating function of a pair score.** The moment generating function `∑ₐ ∑_b pₐ p_b e^{λ s_{ab}}` of a pair score under independent
 letters with law `p`. -/
 noncomputable def pairMGF (p : α → ℝ) (s : α → α → ℝ) (lam : ℝ) : ℝ :=
   ∑ a, ∑ b, p a * p b * exp (lam * s a b)
@@ -816,11 +816,11 @@ theorem existsUnique_pairMGF_eq_one {p : α → ℝ} {s : α → α → ℝ} (hp
   · exact h
   · exact absurd hfl (pairMGF_lt_one hp hp0 hne hlpos h hfμ).ne
 
-/-- The implicit target frequencies `q_{ab} = pₐ p_b e^{λ s_{ab}}` of a score matrix. -/
+/-- **Implicit target frequencies of a score matrix.** The implicit target frequencies `q_{ab} = pₐ p_b e^{λ s_{ab}}` of a score matrix. -/
 noncomputable def targetFreq (p : α → ℝ) (s : α → α → ℝ) (lam : ℝ) (ab : α × α) : ℝ :=
   p ab.1 * p ab.2 * exp (lam * s ab.1 ab.2)
 
-/-- At a root of `pairMGF p s λ = 1` the target frequencies form a distribution on pairs. -/
+/-- **Target frequencies form a distribution on pairs.** At a root of `pairMGF p s λ = 1` the target frequencies form a distribution on pairs. -/
 theorem isDist_targetFreq {p : α → ℝ} {s : α → α → ℝ} (hp0 : ∀ a, 0 < p a) {lam : ℝ}
     (hlam : pairMGF p s lam = 1) : IsDist (targetFreq p s lam) := by
   refine ⟨fun ab => (mul_pos (mul_pos (hp0 _) (hp0 _)) (exp_pos _)).le, ?_⟩

@@ -51,7 +51,7 @@ namespace ProbabilityTheory
 
 noncomputable section
 
-/-- The rate-`r` exponential density times `f`, as an indicator on `Ici 0`. -/
+/-- **Exponential density as an indicator on the half-line.** The rate-`r` exponential density times `f`, as an indicator on `Ici 0`. -/
 lemma gammaPDFReal_one_eq_indicator {r : ℝ} (f : ℝ → ℝ) :
     (fun x => gammaPDFReal 1 r x * f x)
       = (Ici (0 : ℝ)).indicator (fun x => r * exp (-(r * x)) * f x) := by
@@ -60,7 +60,7 @@ lemma gammaPDFReal_one_eq_indicator {r : ℝ} (f : ℝ → ℝ) :
   · simp [gammaPDFReal, hx]
   · simp [gammaPDFReal, hx]
 
-/-- Integrals against the exponential law of rate `r > 0` are integrals of
+/-- **Integrals against the exponential law.** Integrals against the exponential law of rate `r > 0` are integrals of
 `r * exp (-(r * x)) * f x` over `(0, ∞)`. -/
 theorem integral_expMeasure_eq_setIntegral {r : ℝ} (hr : 0 < r) (f : ℝ → ℝ) :
     ∫ x, f x ∂(expMeasure r) = ∫ x in Ioi 0, r * exp (-(r * x)) * f x := by
@@ -69,7 +69,7 @@ theorem integral_expMeasure_eq_setIntegral {r : ℝ} (hr : 0 < r) (f : ℝ → �
   rw [gammaPDFReal_one_eq_indicator, integral_indicator measurableSet_Ici,
     integral_Ici_eq_integral_Ioi]
 
-/-- A function is integrable against the exponential law of rate `r > 0` iff
+/-- **Integrability criterion for the exponential law.** A function is integrable against the exponential law of rate `r > 0` iff
 `r * exp (-(r * x)) * f x` is integrable on `(0, ∞)`. -/
 theorem integrable_expMeasure_iff {r : ℝ} (hr : 0 < r) {f : ℝ → ℝ} :
     Integrable f (expMeasure r)
@@ -79,13 +79,13 @@ theorem integrable_expMeasure_iff {r : ℝ} (hr : 0 < r) {f : ℝ → ℝ} :
   rw [gammaPDFReal_one_eq_indicator, integrable_indicator_iff measurableSet_Ici,
     integrableOn_Ici_iff_integrableOn_Ioi]
 
-/-- Rewriting `x ^ n` times the exponential density in the gamma-integrand form. -/
+/-- **Power times exponential density in gamma-integrand form.** Rewriting `x ^ n` times the exponential density in the gamma-integrand form. -/
 lemma pow_eq_rpow_mul_exp (r x : ℝ) (n : ℕ) :
     r * exp (-(r * x)) * x ^ n = r * (x ^ (((n + 1 : ℕ) : ℝ) - 1) * exp (-(r * x))) := by
   rw [Nat.cast_add, Nat.cast_one, add_sub_cancel_right, rpow_natCast]
   ring
 
-/-- All moments of the exponential law are finite. -/
+/-- **Finiteness of all moments of the exponential law.** All moments of the exponential law are finite. -/
 theorem integrable_pow_expMeasure {r : ℝ} (hr : 0 < r) (n : ℕ) :
     Integrable (fun x => x ^ n) (expMeasure r) := by
   rw [integrable_expMeasure_iff hr]
@@ -94,7 +94,7 @@ theorem integrable_pow_expMeasure {r : ℝ} (hr : 0 < r) (n : ℕ) :
     (integrableOn_rpow_mul_exp_neg_mul_Ioi (a := ((n + 1 : ℕ) : ℝ)) (by positivity) hr).const_mul r
   exact h.congr_fun (fun x _ => (pow_eq_rpow_mul_exp r x n).symm) measurableSet_Ioi
 
-/-- The `n`-th moment of the exponential law of rate `r > 0` is `n! / r ^ n`. -/
+/-- **Moments of the exponential law.** The `n`-th moment of the exponential law of rate `r > 0` is `n! / r ^ n`. -/
 theorem integral_pow_expMeasure {r : ℝ} (hr : 0 < r) (n : ℕ) :
     ∫ x, x ^ n ∂(expMeasure r) = n ! / r ^ n := by
   rw [integral_expMeasure_eq_setIntegral hr,
@@ -104,20 +104,20 @@ theorem integral_pow_expMeasure {r : ℝ} (hr : 0 < r) (n : ℕ) :
   rw [one_div, inv_pow, pow_succ]
   field_simp
 
-/-- The identity is integrable against the exponential law. -/
+/-- **Integrability of the identity under the exponential law.** The identity is integrable against the exponential law. -/
 theorem integrable_id_expMeasure {r : ℝ} (hr : 0 < r) : Integrable id (expMeasure r) := by
   simpa [Function.id_def] using integrable_pow_expMeasure hr 1
 
-/-- The mean of the exponential law of rate `r > 0` is `r⁻¹`. -/
+/-- **Mean of the exponential law.** The mean of the exponential law of rate `r > 0` is `r⁻¹`. -/
 theorem integral_id_expMeasure {r : ℝ} (hr : 0 < r) : ∫ x, x ∂(expMeasure r) = r⁻¹ := by
   simpa using integral_pow_expMeasure hr 1
 
-/-- The second moment of the exponential law of rate `r > 0` is `2 / r ^ 2`. -/
+/-- **Second moment of the exponential law.** The second moment of the exponential law of rate `r > 0` is `2 / r ^ 2`. -/
 theorem integral_sq_expMeasure {r : ℝ} (hr : 0 < r) :
     ∫ x, x ^ 2 ∂(expMeasure r) = 2 / r ^ 2 := by
   simpa using integral_pow_expMeasure hr 2
 
-/-- The variance of the exponential law of rate `r > 0` is `r⁻¹ ^ 2`. -/
+/-- **Variance of the exponential law.** The variance of the exponential law of rate `r > 0` is `r⁻¹ ^ 2`. -/
 theorem variance_id_expMeasure {r : ℝ} (hr : 0 < r) : Var[id; expMeasure r] = r⁻¹ ^ 2 := by
   have := isProbabilityMeasure_expMeasure hr
   have hm : MemLp id 2 (expMeasure r) :=
@@ -131,17 +131,17 @@ theorem variance_id_expMeasure {r : ℝ} (hr : 0 < r) : Var[id; expMeasure r] = 
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {μ : Measure Ω} {X : Ω → ℝ} {r : ℝ}
 
-/-- A random variable with exponential law of rate `r > 0` is integrable. -/
+/-- **Exponentially distributed random variables are integrable.** A random variable with exponential law of rate `r > 0` is integrable. -/
 theorem HasLaw.integrable_of_expMeasure (hX : HasLaw X (expMeasure r) μ) (hr : 0 < r) :
     Integrable X μ :=
   hX.integrable (integrable_id_expMeasure hr)
 
-/-- A random variable with exponential law of rate `r > 0` has mean `r⁻¹`. -/
+/-- **Mean of an exponentially distributed random variable.** A random variable with exponential law of rate `r > 0` has mean `r⁻¹`. -/
 theorem HasLaw.integral_eq_inv_of_expMeasure (hX : HasLaw X (expMeasure r) μ) (hr : 0 < r) :
     μ[X] = r⁻¹ := by
   rw [hX.integral_eq, integral_id_expMeasure hr]
 
-/-- A random variable with exponential law of rate `r > 0` has variance `r⁻¹ ^ 2`. -/
+/-- **Variance of an exponentially distributed random variable.** A random variable with exponential law of rate `r > 0` has variance `r⁻¹ ^ 2`. -/
 theorem HasLaw.variance_eq_of_expMeasure (hX : HasLaw X (expMeasure r) μ) (hr : 0 < r) :
     Var[X; μ] = r⁻¹ ^ 2 := by
   rw [hX.variance_eq, variance_id_expMeasure hr]

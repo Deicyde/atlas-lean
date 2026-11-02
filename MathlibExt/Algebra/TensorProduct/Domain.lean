@@ -88,7 +88,7 @@ namespace Algebra.TensorProduct
 
 variable {K : Type u} [Field K] [IsAlgClosed K]
 
-/-- Over an algebraically closed field, the tensor product of a finite-type
+/-- **Tensor products of domains over an algebraically closed field.** Over an algebraically closed field, the tensor product of a finite-type
 domain with a domain is a domain. -/
 theorem isDomain_of_isAlgClosed_of_finiteType (A : Type v) (B : Type w)
     [CommRing A] [Algebra K A] [Algebra.FiniteType K A] [IsDomain A]
@@ -147,7 +147,7 @@ theorem isDomain_of_isAlgClosed_of_finiteType (A : Type v) (B : Type w)
   · exact Or.inl (hI x h)
   · exact Or.inr (hI y h)
 
-/-- Over an algebraically closed field, the tensor product of a field with a
+/-- **Field-with-domain tensor products over an algebraically closed field.** Over an algebraically closed field, the tensor product of a field with a
 domain is a domain. -/
 theorem isDomain_of_isAlgClosed_of_field (F : Type v) (B : Type w) [Field F] [Algebra K F]
     [CommRing B] [Algebra K B] [IsDomain B] : IsDomain (F ⊗[K] B) := by

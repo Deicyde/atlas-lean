@@ -64,13 +64,13 @@ open MeasureTheory ProbabilityTheory Filter Topology
 
 variable {𝓧 : Type*} [MeasurableSpace 𝓧]
 
-/-- The **Fisher information** at `θ` of the one-parameter family of densities `p θ` with
+/-- **Fisher information.** The **Fisher information** at `θ` of the one-parameter family of densities `p θ` with
 respect to `ν`: `∫ (∂_θ p θ x)² / p θ x dν(x)`. Points with `p θ x = 0` contribute `0` (for a
 nonnegative family, `∂_θ p θ x = 0` there). -/
 noncomputable def fisherInformation (ν : Measure 𝓧) (p : ℝ → 𝓧 → ℝ) (θ : ℝ) : ℝ :=
   ∫ x, deriv (fun θ' => p θ' x) θ ^ 2 / p θ x ∂ν
 
-/-- The probability law with density `p θ` with respect to `ν`. -/
+/-- **Probability law of a density family member.** The probability law with density `p θ` with respect to `ν`. -/
 noncomputable def lawOf {Θ : Type*} (ν : Measure 𝓧) (p : Θ → 𝓧 → ℝ) (θ : Θ) : Measure 𝓧 :=
   ν.withDensity fun x => ENNReal.ofReal (p θ x)
 

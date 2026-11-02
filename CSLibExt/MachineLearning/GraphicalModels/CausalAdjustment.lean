@@ -104,7 +104,7 @@ variable {n : ℕ} [Nonempty α] (b : BayesNet α n)
 
 /-! ### Interventions on a set of nodes -/
 
-/-- The network of the intervention `do(X_W = w)` with the arrows into `W` removed: every node
+/-- **Mutilated network of a set intervention.** The network of the intervention `do(X_W = w)` with the arrows into `W` removed: every node
 `j ∈ W` has no parents and the point mass at `w j` as its table. -/
 noncomputable def mutilateSet (W : Finset (Fin n)) (w : Fin n → α) : BayesNet α n where
   pa j := if j ∈ W then ∅ else b.pa j
@@ -127,7 +127,7 @@ theorem joint_mutilateSet [DecidableEq α] (W : Finset (Fin n)) (w x : Fin n →
     rfl
 
 omit [Nonempty α] in
-/-- The arrows of `b.mutilateSet W w` are those of `b` not pointing into `W`. -/
+/-- **Arrows of the mutilated network.** The arrows of `b.mutilateSet W w` are those of `b` not pointing into `W`. -/
 theorem edge_mutilateSet_iff (W : Finset (Fin n)) (w : Fin n → α) {i j : Fin n} :
     (b.mutilateSet W w).Edge i j ↔ b.Edge i j ∧ j ∉ W := by
   by_cases h : j ∈ W
@@ -135,7 +135,7 @@ theorem edge_mutilateSet_iff (W : Finset (Fin n)) (w : Fin n → α) {i j : Fin 
   · simp [Edge, mutilateSet, h]
 
 omit [Nonempty α] in
-/-- A descendant after removing the arrows into `W` is a descendant in `b`. -/
+/-- **Descendants in the mutilated network are descendants in the original.** A descendant after removing the arrows into `W` is a descendant in `b`. -/
 theorem IsDescendant.of_mutilateSet {W : Finset (Fin n)} {w : Fin n → α} {i j : Fin n}
     (h : (b.mutilateSet W w).IsDescendant i j) : b.IsDescendant i j := by
   unfold IsDescendant at h ⊢
@@ -144,7 +144,7 @@ theorem IsDescendant.of_mutilateSet {W : Finset (Fin n)} {w : Fin n → α} {i j
   | tail _ hst ih => exact ih.tail ((b.edge_mutilateSet_iff W w).1 hst).1
 
 omit [Nonempty α] in
-/-- After removing the arrows into `W`, a node of `W` is a descendant only of itself. -/
+/-- **Intervened nodes descend only from themselves.** After removing the arrows into `W`, a node of `W` is a descendant only of itself. -/
 theorem eq_of_isDescendant_mutilateSet {W : Finset (Fin n)} {w : Fin n → α} {i j : Fin n}
     (h : (b.mutilateSet W w).IsDescendant i j) (hj : j ∈ W) : i = j := by
   unfold IsDescendant at h
@@ -415,13 +415,13 @@ private lemma marginal_mutilateSet_self [Fintype α] (W : Finset (Fin n))
 
 /-! ### Interventions on one node -/
 
-/-- After `do(X_k = a)`, assignments with `x k ≠ a` have probability `0`. -/
+/-- **Assignments contradicting an intervention have probability zero.** After `do(X_k = a)`, assignments with `x k ≠ a` have probability `0`. -/
 theorem joint_intervene_eq_zero {k : Fin n} {a : α} {x : Fin n → α}
     (hx : x k ≠ a) : (b.intervene k a).joint x = 0 := by
   classical
   rw [joint_intervene, ite_eq_right hx]
 
-/-- For `x k = a`, `P(x) = P(x | do(X_k = a)) · p_k(a | x_{pa k})`. -/
+/-- **Joint law as interventional law times the node's table.** For `x k = a`, `P(x) = P(x | do(X_k = a)) · p_k(a | x_{pa k})`. -/
 theorem joint_eq_intervene_mul_cpt {k : Fin n} {a : α} {x : Fin n → α}
     (hx : x k = a) :
     b.joint x = (b.intervene k a).joint x * (b.cpt k (b.paVal k x)).weights a := by

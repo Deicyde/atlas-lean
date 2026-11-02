@@ -59,7 +59,7 @@ noncomputable section
 
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 
-/-- Variational characterization of the projection onto a cone with complete carrier:
+/-- **Variational characterization of projection onto a convex cone.** Variational characterization of the projection onto a cone with complete carrier:
 `p` is the projection of `x` iff the residual pairs nonpositively with the
 cone and is orthogonal to `p`. The ambient space need not be complete. -/
 theorem convexProjection_eq_iff (C : PointedCone ℝ E) (hC : IsComplete (C : Set E))
@@ -92,34 +92,34 @@ theorem convexProjection_eq_iff (C : PointedCone ℝ E) (hC : IsComplete (C : Se
       exact h1 w hw
     exact convexProjection_eq_of_isNearestPoint C.nonempty hC C.convex hp hpmin
 
-/-- The residual of the cone projection pairs nonpositively with every point of the cone. -/
+/-- **Cone projection residual pairs nonpositively with the cone.** The residual of the cone projection pairs nonpositively with every point of the cone. -/
 theorem convexProjection_inner_le_zero (C : PointedCone ℝ E)
     (hC : IsComplete (C : Set E)) (x y : E) (hy : y ∈ C) :
     ⟪x - convexProjection (C : Set E) x, y⟫_ℝ ≤ 0 :=
   ((convexProjection_eq_iff C hC x _
     (convexProjection_mem C.nonempty hC C.convex x)).1 rfl).1 y hy
 
-/-- The residual of the cone projection is orthogonal to the projection. -/
+/-- **Cone projection residual is orthogonal to the projection.** The residual of the cone projection is orthogonal to the projection. -/
 theorem convexProjection_inner_self (C : PointedCone ℝ E) (hC : IsComplete (C : Set E))
     (x : E) :
     ⟪x - convexProjection (C : Set E) x, convexProjection (C : Set E) x⟫_ℝ = 0 :=
   ((convexProjection_eq_iff C hC x _
     (convexProjection_mem C.nonempty hC C.convex x)).1 rfl).2
 
-/-- A point satisfying the cone variational characterization is the projection. -/
+/-- **Variational characterization determines the cone projection.** A point satisfying the cone variational characterization is the projection. -/
 theorem convexProjection_eq_of_forall_inner_le_zero (C : PointedCone ℝ E)
     (hC : IsComplete (C : Set E)) {x p : E} (hp : p ∈ C)
     (h1 : ∀ y ∈ C, ⟪x - p, y⟫_ℝ ≤ 0) (h2 : ⟪x - p, p⟫_ℝ = 0) :
     convexProjection (C : Set E) x = p :=
   (convexProjection_eq_iff C hC x p hp).2 ⟨h1, h2⟩
 
-/-- The negative polar is the standard dual cone of the negated set. Continuity
+/-- **Negative polar cone.** The negative polar is the standard dual cone of the negated set. Continuity
 makes its carrier closed without requiring completeness of the ambient space. -/
 def polarCone (K : Set E) : ProperCone ℝ E where
   toSubmodule := PointedCone.dual (innerₗ E) (-K)
   isClosed' := PointedCone.isClosed_dual fun x => (innerSL ℝ x).continuous
 
-/-- Membership in the negative polar uses the nonpositive inner-product convention. -/
+/-- **Membership in the negative polar cone.** Membership in the negative polar uses the nonpositive inner-product convention. -/
 theorem mem_polarCone {K : Set E} {y : E} :
     y ∈ polarCone K ↔ ∀ x ∈ K, ⟪x, y⟫_ℝ ≤ 0 := by
   change (∀ ⦃z⦄, z ∈ -K → 0 ≤ ⟪z, y⟫_ℝ) ↔ _
@@ -133,7 +133,7 @@ theorem mem_polarCone {K : Set E} {y : E} :
     rw [inner_neg_left] at h
     exact neg_nonpos.mp h
 
-/-- The residual of a cone projection lies in its negative polar. -/
+/-- **Cone projection residual lies in the negative polar.** The residual of a cone projection lies in its negative polar. -/
 theorem sub_convexProjection_mem_polarCone (C : PointedCone ℝ E)
     (hC : IsComplete (C : Set E)) (x : E) :
     x - convexProjection (C : Set E) x ∈ polarCone (C : Set E) := by
@@ -145,7 +145,7 @@ section CompleteSpace
 
 variable [CompleteSpace E]
 
-/-- In a complete ambient space, the negative polar agrees with Mathlib's
+/-- **Negative polar agrees with the inner dual of the negated cone.** In a complete ambient space, the negative polar agrees with Mathlib's
 inner dual of the negated carrier. -/
 theorem polarCone_eq_innerDual_neg (K : Set E) :
     polarCone K = ProperCone.innerDual (-K) := rfl
@@ -178,7 +178,7 @@ private theorem neg_mem_polarCone_iff_innerDual {K : Set E} {y : E} :
   rw [mem_polarCone, ProperCone.mem_innerDual]
   simp only [inner_neg_right, neg_nonpos]
 
-/-- The negative bipolar of a proper cone is itself, by Mathlib's inner-dual bipolar theorem. -/
+/-- **Bipolar theorem for closed convex cones.** The negative bipolar of a proper cone is itself, by Mathlib's inner-dual bipolar theorem. -/
 theorem polarCone_polarCone (C : ProperCone ℝ E) :
     polarCone (polarCone (C : Set E) : Set E) = C := by
   have h : polarCone (polarCone (C : Set E) : Set E) =

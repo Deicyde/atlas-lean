@@ -82,16 +82,16 @@ namespace StochasticMatrix
 
 variable {M : ℕ}
 
-/-- Underlying matrix of probabilities of a `StochasticMatrix`. -/
+/-- **Underlying matrix of a stochastic matrix.** Underlying matrix of probabilities of a `StochasticMatrix`. -/
 def toMatrix (P : StochasticMatrix M) : Matrix (Fin (M + 1)) (Fin (M + 1)) ℝ :=
   P.prob
 
-/-- A finite-state Markov chain (given by its stochastic transition matrix `P`) is
+/-- **Ergodic finite Markov chain.** A finite-state Markov chain (given by its stochastic transition matrix `P`) is
 *ergodic* if some positive power `P^n` has all strictly positive entries. -/
 def IsErgodic (P : StochasticMatrix M) : Prop :=
   ∃ n : ℕ, 0 < n ∧ ∀ i j : Fin (M + 1), (P.toMatrix ^ n) i j > 0
 
-/-- The recursively defined power `matPow` agrees with the ordinary matrix power. -/
+/-- **Recursive matrix power agrees with the matrix power.** The recursively defined power `matPow` agrees with the ordinary matrix power. -/
 theorem matPow_eq_pow (P : StochasticMatrix M) : ∀ (n : ℕ) (i j : Fin (M + 1)),
     P.matPow n i j = (P.toMatrix ^ n) i j := by
   intro n
@@ -110,7 +110,7 @@ theorem matPow_eq_pow (P : StochasticMatrix M) : ∀ (n : ℕ) (i j : Fin (M + 1
       _ = (P.toMatrix * P.toMatrix ^ k) i j := Matrix.mul_apply.symm
       _ = (P.toMatrix ^ (k + 1)) i j := by rw [pow_succ']
 
-/-- Ergodicity is exactly primitivity of the transition matrix. This is the
+/-- **Ergodicity is primitivity of the transition matrix.** Ergodicity is exactly primitivity of the transition matrix. This is the
 bridge to Mathlib: `Matrix.IsPrimitive` is the same condition for a bare
 matrix, while `IsErgodic` is the stochastic-matrix form, with nonnegativity
 supplied by the `StochasticMatrix` structure. -/
@@ -122,7 +122,7 @@ theorem isErgodic_iff_isPrimitive (P : StochasticMatrix M) :
   · rintro ⟨-, n, hn, h⟩
     exact ⟨n, hn, h⟩
 
-/-- Every row of every power of a stochastic matrix sums to `1`: powers of a
+/-- **Powers of a stochastic matrix are stochastic.** Every row of every power of a stochastic matrix sums to `1`: powers of a
 stochastic matrix are stochastic. -/
 theorem matPow_row_sum (P : StochasticMatrix M) : ∀ (n : ℕ) (i : Fin (M + 1)),
     ∑ j, P.matPow n i j = 1 := by
@@ -140,7 +140,7 @@ theorem matPow_row_sum (P : StochasticMatrix M) : ∀ (n : ℕ) (i : Fin (M + 1)
         Finset.sum_congr rfl fun k' _ => by rw [ih k']
       _ = 1 := by simp [P.row_sum i]
 
-/-- One step of the power recursion: `matPow 1` is the matrix itself. -/
+/-- **First recursive power of a stochastic matrix.** One step of the power recursion: `matPow 1` is the matrix itself. -/
 theorem matPow_one (P : StochasticMatrix M) (i j : Fin (M + 1)) :
     P.matPow 1 i j = P.prob i j := by
   simp only [matPow]
@@ -151,7 +151,7 @@ theorem matPow_one (P : StochasticMatrix M) (i j : Fin (M + 1)) :
   · intro hj
     exact absurd (Finset.mem_univ j) hj
 
-/-- Powers add: `matPow (a + b)` is the matrix product of `matPow a` and `matPow b`. -/
+/-- **Additivity of recursive matrix powers.** Powers add: `matPow (a + b)` is the matrix product of `matPow a` and `matPow b`. -/
 theorem matPow_add (P : StochasticMatrix M) (a b : ℕ) (i j : Fin (M + 1)) :
     P.matPow (a + b) i j = ∑ k, P.matPow a i k * P.matPow b k j := by
   calc P.matPow (a + b) i j = (P.toMatrix ^ (a + b)) i j :=
@@ -162,7 +162,7 @@ theorem matPow_add (P : StochasticMatrix M) (a b : ℕ) (i j : Fin (M + 1)) :
       Finset.sum_congr rfl fun k _ => by
         rw [← matPow_eq_pow P a i k, ← matPow_eq_pow P b k j]
 
-/-- If some power `w` of a stochastic matrix is all-positive, then every later
+/-- **Later powers of a positive stochastic matrix power stay positive.** If some power `w` of a stochastic matrix is all-positive, then every later
 power `m ≥ w` is all-positive: write `m = (m - w) + w`, use `matPow_add`, and
 note that row `i` of `matPow (m - w)` sums to `1`, so some entry of that row is
 positive, and that entry times the positive `matPow w` entry gives a positive
@@ -180,7 +180,7 @@ theorem matPow_pos_of_le_of_pos_pow {P : StochasticMatrix M} {w m : ℕ}
     (fun k' _ => mul_nonneg (matPow_nonneg P (m - w) i k') (le_of_lt (hw k' j)))]
   exact ⟨k, Finset.mem_univ k, mul_pos hk (hw k j)⟩
 
-/-- An ergodic chain has, for every pair of states, some positive power with
+/-- **Pairwise positive powers of an ergodic chain.** An ergodic chain has, for every pair of states, some positive power with
 a positive `(i, j)`-entry. (This is the per-pair form; it is strictly weaker
 than ergodicity, which asks for one power working for all pairs at once.) -/
 theorem IsErgodic.exists_matPow_pos {P : StochasticMatrix M} (h : P.IsErgodic)
@@ -188,7 +188,7 @@ theorem IsErgodic.exists_matPow_pos {P : StochasticMatrix M} (h : P.IsErgodic)
   obtain ⟨n, hn, hpos⟩ := h
   exact ⟨n, hn, by rw [matPow_eq_pow]; exact hpos i j⟩
 
-/-- Once a power of an ergodic chain is all-positive, every later power is
+/-- **Powers of an ergodic chain are eventually all positive.** Once a power of an ergodic chain is all-positive, every later power is
 all-positive: there is a threshold `w` past which every power is all-positive. -/
 theorem IsErgodic.eventually_all_matPow_pos {P : StochasticMatrix M} (h : P.IsErgodic) :
     ∃ w, 0 < w ∧ ∀ m, w ≤ m → ∀ i j : Fin (M + 1), 0 < P.matPow m i j := by
@@ -197,24 +197,24 @@ theorem IsErgodic.eventually_all_matPow_pos {P : StochasticMatrix M} (h : P.IsEr
     matPow_pos_of_le_of_pos_pow
       (fun k j' => by rw [matPow_eq_pow]; exact hpos k j') hwm i j⟩
 
-/-- The `p`-th power of a stochastic matrix, as a stochastic matrix. -/
+/-- **Power of a stochastic matrix.** The `p`-th power of a stochastic matrix, as a stochastic matrix. -/
 def pow (P : StochasticMatrix M) (p : ℕ) : StochasticMatrix M where
   prob := P.matPow p
   nonneg := fun i j => matPow_nonneg P p i j
   row_sum := fun i => matPow_row_sum P p i
 
-/-- The underlying matrix of `P.pow p` is the `p`-th matrix power of `P`. -/
+/-- **Underlying matrix of a stochastic matrix power.** The underlying matrix of `P.pow p` is the `p`-th matrix power of `P`. -/
 theorem toMatrix_pow (P : StochasticMatrix M) (p : ℕ) :
     (P.pow p).toMatrix = P.toMatrix ^ p := by
   funext i j
   exact matPow_eq_pow P p i j
 
-/-- Powers of a power: `(P.pow p).matPow n = P.matPow (p * n)`. -/
+/-- **Recursive powers of a stochastic matrix power.** Powers of a power: `(P.pow p).matPow n = P.matPow (p * n)`. -/
 theorem matPow_pow (P : StochasticMatrix M) (p n : ℕ) (i j : Fin (M + 1)) :
     (P.pow p).matPow n i j = P.matPow (p * n) i j := by
   rw [matPow_eq_pow, toMatrix_pow, ← pow_mul, ← matPow_eq_pow]
 
-/-- Every positive power of an ergodic chain is ergodic. -/
+/-- **Powers of an ergodic Markov chain are ergodic.** Every positive power of an ergodic chain is ergodic. -/
 theorem IsErgodic.pow {P : StochasticMatrix M} (h : P.IsErgodic) {p : ℕ}
     (hp : 0 < p) : (P.pow p).IsErgodic := by
   obtain ⟨w, hw, hpos⟩ := h
@@ -228,7 +228,7 @@ theorem IsErgodic.pow {P : StochasticMatrix M} (h : P.IsErgodic) {p : ℕ}
   rw [← matPow_eq_pow]
   exact hpos'
 
-/-- The uniform chain: every transition has probability `1 / (M + 1)`. -/
+/-- **Uniform Markov chain on finitely many states.** The uniform chain: every transition has probability `1 / (M + 1)`. -/
 noncomputable def uniform (M : ℕ) : StochasticMatrix M where
   prob := fun _ _ => ((M + 1 : ℕ) : ℝ)⁻¹
   nonneg := fun _ _ => by positivity
@@ -236,29 +236,29 @@ noncomputable def uniform (M : ℕ) : StochasticMatrix M where
     simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
     exact mul_inv_cancel₀ (by positivity)
 
-/-- The uniform chain has constant transition probabilities `1 / (M + 1)`. -/
+/-- **Transition probabilities of the uniform chain.** The uniform chain has constant transition probabilities `1 / (M + 1)`. -/
 theorem prob_uniform (M : ℕ) (i j : Fin (M + 1)) :
     (uniform M).prob i j = ((M + 1 : ℕ) : ℝ)⁻¹ :=
   rfl
 
-/-- The uniform chain is ergodic, with witness `n = 1`. -/
+/-- **The uniform Markov chain is ergodic.** The uniform chain is ergodic, with witness `n = 1`. -/
 theorem isErgodic_uniform (M : ℕ) : (uniform M).IsErgodic := by
   refine ⟨1, one_pos, fun i j => ?_⟩
   rw [← matPow_eq_pow, matPow_one, prob_uniform]
   positivity
 
-/-- The identity chain: `prob i j` is `1` on the diagonal and `0` elsewhere. -/
+/-- **Identity Markov chain.** The identity chain: `prob i j` is `1` on the diagonal and `0` elsewhere. -/
 def identity (M : ℕ) : StochasticMatrix M where
   prob := fun i j => if i = j then 1 else 0
   nonneg := fun i j => by split_ifs <;> norm_num
   row_sum := fun i => by simp
 
-/-- The identity chain has the displayed transition probabilities. -/
+/-- **Transition probabilities of the identity chain.** The identity chain has the displayed transition probabilities. -/
 theorem prob_identity (M : ℕ) (i j : Fin (M + 1)) :
     (identity M).prob i j = if i = j then 1 else 0 :=
   rfl
 
-/-- Every power of the identity chain is the identity matrix. -/
+/-- **Powers of the identity chain are the identity matrix.** Every power of the identity chain is the identity matrix. -/
 theorem matPow_identity (M : ℕ) : ∀ (n : ℕ) (i j : Fin (M + 1)),
     (identity M).matPow n i j = if i = j then 1 else 0 := by
   intro n
@@ -275,7 +275,7 @@ theorem matPow_identity (M : ℕ) : ∀ (n : ℕ) (i j : Fin (M + 1)),
     · intro hi
       exact absurd (Finset.mem_univ i) hi
 
-/-- The identity chain is not ergodic (for `M ≥ 1`): every power has a zero
+/-- **The identity Markov chain is not ergodic.** The identity chain is not ergodic (for `M ≥ 1`): every power has a zero
 off-diagonal entry. -/
 theorem not_isErgodic_identity {M : ℕ} (hM : 1 ≤ M) : ¬ (identity M).IsErgodic := by
   rintro ⟨n, -, h⟩

@@ -30,7 +30,7 @@ namespace MetaMathlibExt
 
 -- Logic 17: $\Square_\kappa$ sequence
 
-/-- Jensen's square principle sequence:  C = (C_α : α < κ⁺) is a □_κ-sequence: for every limit
+/-- **Square sequence.** Jensen's square principle sequence:  C = (C_α : α < κ⁺) is a □_κ-sequence: for every limit
   α < κ⁺, C_α is club in α of order type at most κ, and the family coheres —
   C_β = C_α ∩ β whenever β is a limit point of C_α.
 -/
@@ -46,7 +46,7 @@ def IsSquareSequence.{u} (κ : Cardinal.{u})
 
 -- Logic 18: $\Square_\kappa$ sequence exists
 
-/-- □_κ: a □_κ-sequence exists -/
+/-- **Jensen's square principle.** □_κ: a □_κ-sequence exists -/
 def Square.{u} (κ : Cardinal.{u}) : Prop :=
     ∃ C : (Order.succ κ).ord.ToType → Set ((Order.succ κ).ord.ToType), IsSquareSequence κ C
 

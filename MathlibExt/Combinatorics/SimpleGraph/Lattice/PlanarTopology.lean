@@ -52,15 +52,15 @@ instance instDecidableRelNearestNeighbour (d : ℕ) : DecidableRel (NearestNeigh
 instance instDecidableRelAdj (d : ℕ) : DecidableRel (hypercubicLattice d).Adj :=
   instDecidableRelNearestNeighbour d
 
-/-- The site obtained from `x` by adding `s` to its `j`-th coordinate. -/
+/-- **Shift of a site along a coordinate.** The site obtained from `x` by adding `s` to its `j`-th coordinate. -/
 def shift (d : ℕ) (x : Site d) (j : Fin d) (s : ℤ) : Site d :=
   Function.update x j (x j + s)
 
-/-- The neighbour of `x` in direction `j`, positive if the flag is `true` and negative otherwise. -/
+/-- **Neighbour of a site in a coordinate direction.** The neighbour of `x` in direction `j`, positive if the flag is `true` and negative otherwise. -/
 def candMap (d : ℕ) (x : Site d) : Fin d × Bool → Site d :=
   fun p => shift d x p.1 (if p.2 then 1 else -1)
 
-/-- The finite set of the `2d` nearest neighbours of `x`. -/
+/-- **Nearest neighbours of a lattice site.** The finite set of the `2d` nearest neighbours of `x`. -/
 def candFinset (d : ℕ) (x : Site d) : Finset (Site d) :=
   Finset.univ.image (candMap d x)
 
@@ -241,7 +241,7 @@ theorem card_dual_circuits_le_pow (n : ℕ) (v : Site 2) :
     card_circuits_le_pow 2 n v
   simpa using h
 
-/-- The `ℓ¹` (graph) distance `∑ i, |x i - y i|` between two sites. -/
+/-- **$\ell^1$ distance on $\mathbb{Z}^d$.** The `ℓ¹` (graph) distance `∑ i, |x i - y i|` between two sites. -/
 def l1dist (d : ℕ) (x y : Site d) : ℕ := ∑ i, (x i - y i).natAbs
 
 @[simp] theorem l1dist_self (d : ℕ) (x : Site d) : l1dist d x x = 0 := by

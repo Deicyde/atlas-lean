@@ -70,7 +70,7 @@ theorem jcu_walk_meets_innerBoundary (S : Set (Site 2)) {x y : Site 2} (hx : x �
   · have hbS : b ∈ S := by by_contra hbS; exact haS (by tauto)
     exact ⟨b, a, hb, ha, hadj.symm, hbS, fun haS' => (hbd.mp haS') hbS⟩
 
-/-- Some set `S` contains `inside`, misses `outside`, and every lattice edge between sites of `D`
+/-- **Separating side between inside and outside sites.** Some set `S` contains `inside`, misses `outside`, and every lattice edge between sites of `D`
 that leaves `S` has an endpoint in `B`. -/
 def jcu_HasSeparatingSide (D B inside outside : Set (Site 2)) : Prop :=
   ∃ S : Set (Site 2),

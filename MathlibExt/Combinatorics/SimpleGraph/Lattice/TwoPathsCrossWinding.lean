@@ -130,7 +130,7 @@ theorem tpc_meets_of_separating_set {P S : Set (Site 2)} {x y : Site 2}
     · exact ⟨u, hu, h⟩
     · exact ⟨v, hv, h⟩
 
-/-- There is a set containing the left side of `[α, β] × [c, d]` and disjoint from its right side
+/-- **Separating set for a lattice rectangle.** There is a set containing the left side of `[α, β] × [c, d]` and disjoint from its right side
 such that every lattice edge of the rectangle crossing its boundary has an endpoint in `P`. -/
 def ArcSeparatingSet (P : Set (Site 2)) (α β c d : ℤ) : Prop :=
   ∃ S : Set (Site 2),

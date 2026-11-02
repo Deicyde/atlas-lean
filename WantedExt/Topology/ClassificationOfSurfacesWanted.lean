@@ -54,7 +54,7 @@ https://www.cis.upenn.edu/~jean/surfclassif-root.pdf
 
 namespace Complex
 
-/-- The closed unit disc in the complex plane. -/
+/-- **Closed unit disc in the complex plane.** The closed unit disc in the complex plane. -/
 abbrev ClosedUnitDisc : Type := Metric.closedBall (0 : ℂ) 1
 
 /-- **Boundary point of the unit disc at a real parameter.** For a real number $r$, this is the

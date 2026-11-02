@@ -34,7 +34,7 @@ namespace Fintype
 variable {ι : Type*} {α : ι → Type*} [Fintype ι] [DecidableEq ι]
   [(i : ι) → DecidableEq (α i)]
 
-/-- The number of dependent functions in `piFinset s` with prescribed values on `S` is the
+/-- **Number of dependent functions with prescribed values.** The number of dependent functions in `piFinset s` with prescribed values on `S` is the
 product of the numbers of choices outside `S`. -/
 theorem card_filter_piFinset_eqOn_of_mem (s : (i : ι) → Finset (α i)) (S : Finset ι)
     (f : (i : {i // i ∈ S}) → α i.1) (hf : ∀ i, f i ∈ s i.1) :
@@ -74,7 +74,7 @@ theorem card_filter_piFinset_eqOn_of_mem (s : (i : ι) → Finset (α i)) (S : F
 
 variable {κ : Type*} [Fintype κ] [DecidableEq κ]
 
-/-- The number of functions agreeing with `f` on `S` is the number of unrestricted choices on
+/-- **Number of functions agreeing with a given one on a set.** The number of functions agreeing with `f` on `S` is the number of unrestricted choices on
 the remaining coordinates. -/
 theorem card_filter_univ_eqOn (S : Finset ι) (f : {i // i ∈ S} → κ) :
     (Finset.univ.filter fun g : ι → κ => ∀ i, g i.1 = f i).card =
@@ -82,7 +82,7 @@ theorem card_filter_univ_eqOn (S : Finset ι) (f : {i // i ∈ S} → κ) :
   simpa [Finset.card_sdiff] using
     card_filter_piFinset_eqOn_of_mem (fun _ => (Finset.univ : Finset κ)) S f (by simp)
 
-/-- Division-free count of finite functions with prescribed values on a set of coordinates. -/
+/-- **Division-free count of functions with prescribed values.** Division-free count of finite functions with prescribed values on a set of coordinates. -/
 theorem card_filter_univ_eqOn_mul_pow_card (S : Finset ι) (f : {i // i ∈ S} → κ) :
     (Finset.univ.filter fun g : ι → κ => ∀ i, g i.1 = f i).card *
       Fintype.card κ ^ S.card =

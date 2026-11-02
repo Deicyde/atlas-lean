@@ -169,7 +169,7 @@ inductive Step {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
       (hw : s.work = Frame.exit v :: work) :
       Step adj roots s { s with work := work, postorderRev := v :: s.postorderRev }
 
-/-- Zero or more independent DFS machine steps. -/
+/-- **Sequences of depth-first search machine steps.** Zero or more independent DFS machine steps. -/
 abbrev Steps {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (adj : DirectedAdjacency V) (roots : List V) :=
   Relation.ReflTransGen (Step adj roots)

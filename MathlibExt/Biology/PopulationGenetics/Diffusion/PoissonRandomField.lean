@@ -66,7 +66,7 @@ open scoped Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- The Sawyer–Hartl (1992) Poisson-random-field density: the expected number of sites per unit
+/-- **Sawyer–Hartl Poisson random field density.** The Sawyer–Hartl (1992) Poisson-random-field density: the expected number of sites per unit
 frequency at which the derived allele has frequency `x`, for scaled mutation rate `θ = 4Nu`
 and scaled genic selection `σ = 2Ns`:
 `θ · u_σ(1 - x) / (x (1 - x))` with `u_σ = kimuraFixation σ`, i.e.
@@ -76,14 +76,14 @@ value `0`. -/
 noncomputable def prfDensity (θ σ x : ℝ) : ℝ :=
   θ * kimuraFixation σ (1 - x) / (x * (1 - x))
 
-/-- The Poisson-random-field density with selection, explicitly:
+/-- **Closed form of the Poisson random field density with selection.** The Poisson-random-field density with selection, explicitly:
 `θ (1 - e^{-2σ(1 - x)}) / ((1 - e^{-2σ}) x (1 - x))` for `σ ≠ 0`. -/
 theorem prfDensity_of_ne_zero (θ : ℝ) {σ : ℝ} (hσ : σ ≠ 0) (x : ℝ) :
     prfDensity θ σ x = θ * (1 - exp (-2 * σ * (1 - x))) / ((1 - exp (-2 * σ)) * x * (1 - x)) := by
   simp only [prfDensity, kimuraFixation, hσ, ↓reduceIte]
   rw [mul_div_assoc', div_div, ← mul_assoc]
 
-/-- The neutral Poisson-random-field density is `θ / x` (for `x ≠ 1`). -/
+/-- **Neutral Poisson random field density.** The neutral Poisson-random-field density is `θ / x` (for `x ≠ 1`). -/
 theorem prfDensity_zero (θ : ℝ) {x : ℝ} (hx : x ≠ 1) : prfDensity θ 0 x = θ / x := by
   have h1 : 1 - x ≠ 0 := sub_ne_zero.2 (Ne.symm hx)
   simp only [prfDensity, kimuraFixation_neutral]
@@ -232,7 +232,7 @@ theorem eq_prfDensity_of_forward {θ σ : ℝ} (hθ : θ ≠ 0) {φ F : ℝ → 
   simp only [hu, sub_sub_cancel] at hk
   rw [prfDensity, ← hk, mul_div_cancel₀ _ hθ, hF x hx, mul_div_cancel_left₀ _ hx0]
 
-/-- The expected unfolded site-frequency spectrum of a sample of `n` gene copies under the
+/-- **Expected site frequency spectrum under the Poisson random field.** The expected unfolded site-frequency spectrum of a sample of `n` gene copies under the
 Poisson random field: the expected number of sites where exactly `i` of the `n` sampled copies
 carry the derived allele, `E ξ_i = ∫ x in 0..1, C(n, i) x ^ i (1 - x) ^ (n - i) φ(x)`.
 The site-frequency spectrum consists of the segregating classes `1 ≤ i < n`. The value at
@@ -309,7 +309,7 @@ theorem expectedSFS_neutral (θ : ℝ) {n i : ℕ} (hi : 0 < i) (hin : i < n) :
     expectedSFS θ 0 n i = θ / i :=
   expectedSFS_neutral_of_le θ hi hin.le
 
-/-- With `σ = 0` the expected number of sites at which all `n ≥ 1` sampled copies carry the
+/-- **Expected number of sites derived in the whole neutral sample.** With `σ = 0` the expected number of sites at which all `n ≥ 1` sampled copies carry the
 derived allele is `θ / n`. These sites are monomorphic in the sample, so this is not a class of
 the site-frequency spectrum. -/
 theorem expectedSFS_neutral_self (θ : ℝ) {n : ℕ} (hn : 0 < n) :

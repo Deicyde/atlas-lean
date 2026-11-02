@@ -69,13 +69,13 @@ private theorem one_ne_zero_ennreal : (1 : ℝ≥0∞) ≠ 0 := by norm_num
 private theorem ne_zero_of_fact {p : ℝ≥0∞} [Fact (1 ≤ p)] : p ≠ 0 :=
   zero_lt_one.trans_le Fact.out |>.ne'
 
-/-- Convolution of two complex sequences on `ℤ`, as a series. The series is
+/-- **Convolution of sequences on the integers.** Convolution of two complex sequences on `ℤ`, as a series. The series is
 `0` when it does not converge; for `f ∈ ℓ¹` and `g ∈ ℓ^p` it always
 converges (see `summable_intConv_term`). -/
 noncomputable def intConv (f g : ℤ → ℂ) (n : ℤ) : ℂ :=
   ∑' m, f m * g (n - m)
 
-/-- The `ℓ¹` norm is the sum of the coordinate norms. -/
+/-- **The $\ell^1$ norm as a sum of coordinate norms.** The `ℓ¹` norm is the sum of the coordinate norms. -/
 theorem tsum_norm_l1 (f : ℓ¹(ℤ, ℂ)) : ∑' m, ‖(f : ℤ → ℂ) m‖ = ‖f‖ := by
   have h : ‖f‖
       = (∑' m, ‖(f : ℤ → ℂ) m‖ ^ (1 : ℝ≥0∞).toReal) ^ (1 / (1 : ℝ≥0∞).toReal) :=
@@ -83,7 +83,7 @@ theorem tsum_norm_l1 (f : ℓ¹(ℤ, ℂ)) : ∑' m, ‖(f : ℤ → ℂ) m‖ =
   rw [ENNReal.toReal_one] at h
   simpa using h.symm
 
-/-- The terms of a convolution of an `ℓ¹` sequence with an `ℓ^p` sequence are
+/-- **Summability of convolution terms for $\ell^1$ and $\ell^p$ sequences.** The terms of a convolution of an `ℓ¹` sequence with an `ℓ^p` sequence are
 summable. -/
 theorem summable_intConv_term {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) (n : ℤ) :
@@ -95,7 +95,7 @@ theorem summable_intConv_term {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, 
   exact mul_le_mul_of_nonneg_left
     (lp.norm_apply_le_norm ne_zero_of_fact g (n - m)) (norm_nonneg _)
 
-/-- Translating an `ℓ^p` sequence on `ℤ` preserves `ℓ^p` membership. -/
+/-- **Translation preserves $\ell^p$ membership.** Translating an `ℓ^p` sequence on `ℤ` preserves `ℓ^p` membership. -/
 theorem memℓp_shift {p : ℝ≥0∞} [Fact (1 ≤ p)] {g : ℤ → ℂ} (hg : Memℓp g p)
     (m : ℤ) : Memℓp (fun n => g (n - m)) p := by
   rcases eq_or_ne p ⊤ with rfl | hpT
@@ -111,17 +111,17 @@ theorem memℓp_shift {p : ℝ≥0∞} [Fact (1 ≤ p)] {g : ℤ → ℂ} (hg : 
       (a := ∑' k, ‖g k‖ ^ p.toReal)).mpr h.hasSum
     simpa [Function.comp_def, Equiv.subRight_apply] using h2.summable
 
-/-- Translation of an `ℓ^p` sequence on `ℤ` by `m`. -/
+/-- **Translation of an $\ell^p$ sequence on the integers.** Translation of an `ℓ^p` sequence on `ℤ` by `m`. -/
 noncomputable def shiftLp {p : ℝ≥0∞} [Fact (1 ≤ p)] (m : ℤ)
     (g : ℓ^p(ℤ, ℂ)) : ℓ^p(ℤ, ℂ) :=
   ⟨fun n => g (n - m), memℓp_shift g.2 m⟩
 
-/-- Pointwise action of a translation. -/
+/-- **Pointwise formula for translation of $\ell^p$ sequences.** Pointwise action of a translation. -/
 theorem shiftLp_apply {p : ℝ≥0∞} [Fact (1 ≤ p)] (m : ℤ) (g : ℓ^p(ℤ, ℂ))
     (n : ℤ) : shiftLp m g n = g (n - m) :=
   rfl
 
-/-- Translation is an isometry of `ℓ^p(ℤ, ℂ)`. -/
+/-- **Translation is an isometry of $\ell^p(\mathbb{Z})$.** Translation is an isometry of `ℓ^p(ℤ, ℂ)`. -/
 theorem norm_shiftLp {p : ℝ≥0∞} [Fact (1 ≤ p)] (m : ℤ)
     (g : ℓ^p(ℤ, ℂ)) : ‖shiftLp m g‖ = ‖g‖ := by
   rcases eq_or_ne p ⊤ with rfl | hpT
@@ -134,7 +134,7 @@ theorem norm_shiftLp {p : ℝ≥0∞} [Fact (1 ≤ p)] (m : ℤ)
     have h := (Equiv.subRight m).tsum_eq (fun k => ‖(g : ℤ → ℂ) k‖ ^ p.toReal)
     simpa [Equiv.subRight_apply, shiftLp_apply] using h
 
-/-- The terms of the Banach-space series defining `l1Conv` are summable. -/
+/-- **Summability of the Banach-space series for $\ell^1$ convolution.** The terms of the Banach-space series defining `l1Conv` are summable. -/
 theorem summable_l1Conv_term {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) :
     Summable fun m => (f : ℤ → ℂ) m • shiftLp m g := by
@@ -143,13 +143,13 @@ theorem summable_l1Conv_term {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, �
     (fun m => ?_)
   rw [norm_smul, norm_shiftLp]
 
-/-- Convolution of an `ℓ¹` sequence with an `ℓ^p` sequence, as an element of
+/-- **Convolution of an $\ell^1$ sequence with an $\ell^p$ sequence.** Convolution of an `ℓ¹` sequence with an `ℓ^p` sequence, as an element of
 `ℓ^p(ℤ, ℂ)`: the Banach-space sum `∑' m, f m • shift m g`. -/
 noncomputable def l1Conv {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) : ℓ^p(ℤ, ℂ) :=
   ∑' m : ℤ, (f : ℤ → ℂ) m • shiftLp m g
 
-/-- Pointwise formula for convolution. -/
+/-- **Pointwise formula for $\ell^1$–$\ell^p$ convolution.** Pointwise formula for convolution. -/
 theorem l1Conv_apply {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) (n : ℤ) :
     l1Conv f g n = intConv (f : ℤ → ℂ) (g : ℤ → ℂ) n := by
@@ -163,7 +163,7 @@ theorem l1Conv_apply {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
   rw [show ((f : ℤ → ℂ) m • shiftLp m g) n
       = (f : ℤ → ℂ) m * (shiftLp m g) n from rfl, shiftLp_apply]
 
-/-- Young's inequality for convolution with one `ℓ¹` factor. -/
+/-- **Young's inequality with one $\ell^1$ factor.** Young's inequality for convolution with one `ℓ¹` factor. -/
 theorem norm_l1Conv_le {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) :
     ‖l1Conv f g‖ ≤ ‖f‖ * ‖g‖ := by
@@ -183,7 +183,7 @@ theorem norm_l1Conv_le {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     _ = (∑' m, ‖(f : ℤ → ℂ) m‖) * ‖g‖ := tsum_mul_right
     _ = ‖f‖ * ‖g‖ := by rw [tsum_norm_l1 f]
 
-/-- Convolution is additive in the `ℓ¹` argument. -/
+/-- **Convolution is additive in the $\ell^1$ argument.** Convolution is additive in the `ℓ¹` argument. -/
 theorem l1Conv_add_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (f₁ f₂ : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) :
     l1Conv (f₁ + f₂) g = l1Conv f₁ g + l1Conv f₂ g := by
@@ -201,7 +201,7 @@ theorem l1Conv_add_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (f₁ f₂ : ℓ¹(ℤ
       = (f₁ : ℤ → ℂ) m * g (n - m) + (f₂ : ℤ → ℂ) m * g (n - m)
   rw [add_mul]
 
-/-- Convolution is additive in the `ℓ^p` argument. -/
+/-- **Convolution is additive in the $\ell^p$ argument.** Convolution is additive in the `ℓ^p` argument. -/
 theorem l1Conv_add_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g₁ g₂ : ℓ^p(ℤ, ℂ)) :
     l1Conv f (g₁ + g₂) = l1Conv f g₁ + l1Conv f g₂ := by
@@ -219,7 +219,7 @@ theorem l1Conv_add_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
       = (f : ℤ → ℂ) m * g₁ (n - m) + (f : ℤ → ℂ) m * g₂ (n - m)
   rw [mul_add]
 
-/-- Convolution commutes with scalar multiplication in the `ℓ¹` argument. -/
+/-- **Convolution is homogeneous in the $\ell^1$ argument.** Convolution commutes with scalar multiplication in the `ℓ¹` argument. -/
 theorem l1Conv_smul_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (c : ℂ) (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) :
     l1Conv (c • f) g = c • l1Conv f g := by
@@ -235,7 +235,7 @@ theorem l1Conv_smul_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (c : ℂ) (f : ℓ¹(
   show (c * (f : ℤ → ℂ) m) * g (n - m) = c * ((f : ℤ → ℂ) m * g (n - m))
   rw [mul_assoc]
 
-/-- Convolution commutes with scalar multiplication in the `ℓ^p` argument. -/
+/-- **Convolution is homogeneous in the $\ell^p$ argument.** Convolution commutes with scalar multiplication in the `ℓ^p` argument. -/
 theorem l1Conv_smul_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (c : ℂ) (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) :
     l1Conv f (c • g) = c • l1Conv f g := by
@@ -251,7 +251,7 @@ theorem l1Conv_smul_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (c : ℂ) (f : ℓ¹
   show (f : ℤ → ℂ) m * (c * g (n - m)) = c * ((f : ℤ → ℂ) m * g (n - m))
   rw [mul_left_comm]
 
-/-- Convolution with `0` on the left is `0`. -/
+/-- **Convolution with zero on the left.** Convolution with `0` on the left is `0`. -/
 theorem l1Conv_zero_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (g : ℓ^p(ℤ, ℂ)) :
     l1Conv (p := p) 0 g = 0 := by
   apply lp.ext
@@ -261,7 +261,7 @@ theorem l1Conv_zero_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (g : ℓ^p(ℤ, ℂ))
   have h0 : ∀ m, ((0 : ℓ¹(ℤ, ℂ)) : ℤ → ℂ) m = 0 := fun _ => rfl
   simp only [h0, zero_mul, tsum_zero]
 
-/-- Convolution with `0` on the right is `0`. -/
+/-- **Convolution with zero on the right.** Convolution with `0` on the right is `0`. -/
 theorem l1Conv_zero_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ)) :
     l1Conv (p := p) f 0 = 0 := by
   apply lp.ext
@@ -271,7 +271,7 @@ theorem l1Conv_zero_right {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ)
   have h0 : ∀ m, ((0 : ℓ^p(ℤ, ℂ)) : ℤ → ℂ) m = 0 := fun _ => rfl
   simp only [h0, mul_zero, tsum_zero]
 
-/-- For fixed `f ∈ ℓ¹`, convolution by `f` as a bounded operator on `ℓ^p`. -/
+/-- **Convolution by a fixed $\ell^1$ sequence as a bounded operator.** For fixed `f ∈ ℓ¹`, convolution by `f` as a bounded operator on `ℓ^p`. -/
 noncomputable def l1ConvCLMOf {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ)) :
     ℓ^p(ℤ, ℂ) →L[ℂ] ℓ^p(ℤ, ℂ) :=
   ({ toFun := l1Conv f
@@ -279,17 +279,17 @@ noncomputable def l1ConvCLMOf {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, 
      map_smul' := fun c g => l1Conv_smul_right c f g } :
     ℓ^p(ℤ, ℂ) →ₗ[ℂ] ℓ^p(ℤ, ℂ)).mkContinuous ‖f‖ (fun g => norm_l1Conv_le f g)
 
-/-- Pointwise action of the convolution operator. -/
+/-- **Pointwise action of the convolution operator.** Pointwise action of the convolution operator. -/
 theorem l1ConvCLMOf_apply {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) : l1ConvCLMOf f g = l1Conv f g :=
   rfl
 
-/-- The operator norm of convolution by `f` is at most `‖f‖`. -/
+/-- **Operator norm of convolution by $f$ is at most $\|f\|_1$.** The operator norm of convolution by `f` is at most `‖f‖`. -/
 theorem norm_l1ConvCLMOf_le {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ)) :
     ‖l1ConvCLMOf (p := p) f‖ ≤ ‖f‖ :=
   ContinuousLinearMap.opNorm_le_bound _ (norm_nonneg f) (fun g => norm_l1Conv_le f g)
 
-/-- The convolution action as a bounded linear map
+/-- **Convolution action of $\ell^1$ on $\ell^p$ as a bounded bilinear map.** The convolution action as a bounded linear map
 `ℓ¹(ℤ, ℂ) →L[ℂ] (ℓ^p(ℤ, ℂ) →L[ℂ] ℓ^p(ℤ, ℂ))`. -/
 noncomputable def l1ConvCLM {p : ℝ≥0∞} [Fact (1 ≤ p)] :
     ℓ¹(ℤ, ℂ) →L[ℂ] (ℓ^p(ℤ, ℂ) →L[ℂ] ℓ^p(ℤ, ℂ)) :=
@@ -307,17 +307,17 @@ noncomputable def l1ConvCLM {p : ℝ≥0∞} [Fact (1 ≤ p)] :
     ℓ¹(ℤ, ℂ) →ₗ[ℂ] (ℓ^p(ℤ, ℂ) →L[ℂ] ℓ^p(ℤ, ℂ))).mkContinuous 1
     (fun f => by rw [one_mul]; exact norm_l1ConvCLMOf_le f)
 
-/-- Pointwise action of the convolution action. -/
+/-- **Pointwise action of the bundled convolution action.** Pointwise action of the convolution action. -/
 theorem l1ConvCLM_apply {p : ℝ≥0∞} [Fact (1 ≤ p)] (f : ℓ¹(ℤ, ℂ))
     (g : ℓ^p(ℤ, ℂ)) : l1ConvCLM f g = l1Conv f g :=
   rfl
 
-/-- The convolution action has operator norm at most `1`. -/
+/-- **Convolution action has operator norm at most 1.** The convolution action has operator norm at most `1`. -/
 theorem norm_l1ConvCLM_le {p : ℝ≥0∞} [Fact (1 ≤ p)] : ‖l1ConvCLM (p := p)‖ ≤ 1 :=
   ContinuousLinearMap.opNorm_le_bound _ zero_le_one (fun f => by
     rw [one_mul]; exact norm_l1ConvCLMOf_le f)
 
-/-- Convolution of `ℓ¹` sequences is commutative. -/
+/-- **Commutativity of $\ell^1$ convolution.** Convolution of `ℓ¹` sequences is commutative. -/
 theorem l1Conv_comm (f g : ℓ¹(ℤ, ℂ)) : l1Conv f g = l1Conv g f := by
   apply lp.ext
   funext n
@@ -395,7 +395,7 @@ private theorem summable_double_norm (f g h : ℓ¹(ℤ, ℂ)) (n : ℤ) :
   rw [Real.norm_eq_abs, abs_of_nonneg (tsum_nonneg fun m => by positivity)]
   exact hinner_le k
 
-/-- Convolution of `ℓ¹` sequences is associative. -/
+/-- **Associativity of $\ell^1$ convolution.** Convolution of `ℓ¹` sequences is associative. -/
 theorem l1Conv_assoc (f g h : ℓ¹(ℤ, ℂ)) : l1Conv (l1Conv f g) h = l1Conv f (l1Conv g h) := by
   apply lp.ext
   funext n
@@ -453,10 +453,10 @@ theorem l1Conv_assoc (f g h : ℓ¹(ℤ, ℂ)) : l1Conv (l1Conv f g) h = l1Conv 
     rw [norm_mul, norm_mul]
   exact (Summable.tsum_comm hsum).symm
 
-/-- The unit sequence `δ` at `0` in `ℓ¹(ℤ, ℂ)`. -/
+/-- **Unit sequence in $\ell^1(\mathbb{Z})$.** The unit sequence `δ` at `0` in `ℓ¹(ℤ, ℂ)`. -/
 noncomputable def l1Delta : ℓ¹(ℤ, ℂ) := lp.single (E := fun _ : ℤ => ℂ) 1 0 1
 
-/-- Pointwise values of the unit sequence. -/
+/-- **Pointwise values of the unit sequence.** Pointwise values of the unit sequence. -/
 theorem l1Delta_apply (n : ℤ) : l1Delta n = if n = 0 then 1 else 0 := by
   by_cases h : n = 0
   · subst h
@@ -466,12 +466,12 @@ theorem l1Delta_apply (n : ℤ) : l1Delta n = if n = 0 then 1 else 0 := by
   · have h2 : l1Delta n = 0 := lp.single_apply_ne _ _ _ h
     rw [h2, ite_eq_right h]
 
-/-- The norm of the unit sequence is `1`. -/
+/-- **Norm of the unit sequence is 1.** The norm of the unit sequence is `1`. -/
 theorem norm_l1Delta : ‖l1Delta‖ = 1 := by
   rw [l1Delta, lp.norm_single (by norm_num : (0 : ℝ≥0∞) < 1)]
   norm_num
 
-/-- The unit sequence is a left unit for convolution. -/
+/-- **Unit sequence is a left identity for convolution.** The unit sequence is a left unit for convolution. -/
 theorem l1Conv_delta_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (g : ℓ^p(ℤ, ℂ)) :
     l1Conv l1Delta g = g := by
   apply lp.ext
@@ -484,11 +484,11 @@ theorem l1Conv_delta_left {p : ℝ≥0∞} [Fact (1 ≤ p)] (g : ℓ^p(ℤ, ℂ)
   · intro m hm
     rw [l1Delta_apply, ite_eq_right hm, zero_mul]
 
-/-- The unit sequence is a right unit for convolution on `ℓ¹`. -/
+/-- **Unit sequence is a right identity for $\ell^1$ convolution.** The unit sequence is a right unit for convolution on `ℓ¹`. -/
 theorem l1Conv_delta_right (f : ℓ¹(ℤ, ℂ)) : l1Conv f l1Delta = f := by
   rw [l1Conv_comm f l1Delta, l1Conv_delta_left]
 
-/-- Convolution of two coordinate vectors: positions add, coefficients
+/-- **Convolution of coordinate vectors.** Convolution of two coordinate vectors: positions add, coefficients
 multiply. -/
 theorem l1Conv_single_single {p : ℝ≥0∞} [Fact (1 ≤ p)] (i j : ℤ) (a b : ℂ) :
     l1Conv (lp.single (E := fun _ : ℤ => ℂ) 1 i a)

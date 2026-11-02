@@ -83,20 +83,20 @@ namespace MathlibExt.Biology.Phylogenetics.SubstitutionModels
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- The **GTR rate matrix** (Tavaré 1986) with base frequencies `π` and exchangeabilities `s`:
+/-- **General time-reversible (GTR) rate matrix.** The **GTR rate matrix** (Tavaré 1986) with base frequencies `π` and exchangeabilities `s`:
 `s i j * π j` off the diagonal and minus the off-diagonal row sum on it. The diagonal of `s` is
 not used. -/
 noncomputable def gtrRate (π : ι → ℝ) (s : Matrix ι ι ℝ) : Matrix ι ι ℝ :=
   Matrix.of fun i j => if i = j then -∑ k ∈ univ.erase i, s i k * π k else s i j * π j
 
-/-- The rows of the GTR matrix sum to `0`, for all parameters. -/
+/-- **Rows of the GTR rate matrix sum to zero.** The rows of the GTR matrix sum to `0`, for all parameters. -/
 theorem sum_gtrRate (π : ι → ℝ) (s : Matrix ι ι ℝ) (i : ι) : ∑ j, gtrRate π s i j = 0 := by
   have h : ∑ j ∈ univ.erase i, gtrRate π s i j = ∑ k ∈ univ.erase i, s i k * π k :=
     sum_congr rfl fun j hj => by simp [gtrRate, (ne_of_mem_erase hj).symm]
   rw [← add_sum_erase _ _ (mem_univ i), h]
   simp [gtrRate]
 
-/-- With nonnegative base frequencies and nonnegative off-diagonal exchangeabilities, the GTR
+/-- **GTR matrix is a rate matrix.** With nonnegative base frequencies and nonnegative off-diagonal exchangeabilities, the GTR
 matrix is a rate matrix (the diagonal `s i i` is not used by `gtrRate`). -/
 theorem isRateMatrix_gtrRate {π : ι → ℝ} {s : Matrix ι ι ℝ} (hπ : ∀ i, 0 ≤ π i)
     (hs : ∀ i j, i ≠ j → 0 ≤ s i j) : IsRateMatrix (gtrRate π s) := by
@@ -115,17 +115,17 @@ theorem isDetailedBalance_gtrRate (π : ι → ℝ) {s : Matrix ι ι ℝ} (hs :
     rw [hs i j]
     ring
 
-/-- The base frequencies are invariant for the GTR generator: `π Q = 0`. -/
+/-- **Base frequencies are invariant for the GTR generator.** The base frequencies are invariant for the GTR generator: `π Q = 0`. -/
 theorem vecMul_gtrRate (π : ι → ℝ) {s : Matrix ι ι ℝ} (hs : ∀ i j, s i j = s j i) :
     π ᵥ* gtrRate π s = 0 :=
   (isDetailedBalance_gtrRate π hs).vecMul_eq_zero (sum_gtrRate π s)
 
-/-- The base frequencies are stationary for the GTR transition function at every time. -/
+/-- **Base frequencies are stationary for the GTR chain.** The base frequencies are stationary for the GTR transition function at every time. -/
 theorem vecMul_ctmcTransition_gtrRate (π : ι → ℝ) {s : Matrix ι ι ℝ}
     (hs : ∀ i j, s i j = s j i) (t : ℝ) : π ᵥ* ctmcTransition (gtrRate π s) t = π :=
   (isDetailedBalance_gtrRate π hs).vecMul_ctmcTransition (sum_gtrRate π s) t
 
-/-- Detailed balance of the GTR transition function with the base frequencies,
+/-- **Time-reversibility of the GTR chain.** Detailed balance of the GTR transition function with the base frequencies,
 `π i P t i j = π j P t j i` for every `t` (time-reversibility of the GTR chain). -/
 theorem isDetailedBalance_ctmcTransition_gtrRate (π : ι → ℝ) {s : Matrix ι ι ℝ}
     (hs : ∀ i j, s i j = s j i) (t : ℝ) :
@@ -134,53 +134,53 @@ theorem isDetailedBalance_ctmcTransition_gtrRate (π : ι → ℝ) {s : Matrix �
 
 /-! ## Nucleotide models on `Fin 4` (order `A, C, G, T`) -/
 
-/-- The HKY85 exchangeabilities: `κ` for a transition (indices of equal parity: `A ↔ G`,
+/-- **HKY85 exchangeabilities.** The HKY85 exchangeabilities: `κ` for a transition (indices of equal parity: `A ↔ G`,
 `C ↔ T` in the order `A, C, G, T`), `1` for a transversion. The diagonal (also `κ`) is not
 used by `gtrRate`. -/
 def hkyExchangeability (κ : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
   Matrix.of fun i j => if (i : ℕ) % 2 = (j : ℕ) % 2 then κ else 1
 
-/-- The **HKY85 rate matrix** (Hasegawa–Kishino–Yano 1985) with base frequencies `π` and
+/-- **HKY85 rate matrix.** The **HKY85 rate matrix** (Hasegawa–Kishino–Yano 1985) with base frequencies `π` and
 transition/transversion ratio `κ`: rate `κ π j` for a transition to `j`, `π j` for a
 transversion. -/
 noncomputable def hkyRate (π : Fin 4 → ℝ) (κ : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
   gtrRate π (hkyExchangeability κ)
 
-/-- The **F81 rate matrix** (Felsenstein 1981): rate `π j` to every other base `j`. -/
+/-- **F81 rate matrix.** The **F81 rate matrix** (Felsenstein 1981): rate `π j` to every other base `j`. -/
 noncomputable def f81Rate (π : Fin 4 → ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
   gtrRate π (Matrix.of fun _ _ => 1)
 
-/-- The **K80 rate matrix** (Kimura 1980): equal base frequencies `1/4`, rate `κ / 4` for a
+/-- **K80 rate matrix.** The **K80 rate matrix** (Kimura 1980): equal base frequencies `1/4`, rate `κ / 4` for a
 transition and `1 / 4` for each transversion. -/
 noncomputable def k80Rate (κ : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
   hkyRate (fun _ => 1 / 4) κ
 
-/-- With nonnegative base frequencies and `κ ≥ 0`, the HKY85 matrix is a rate matrix. -/
+/-- **HKY85 matrix is a rate matrix.** With nonnegative base frequencies and `κ ≥ 0`, the HKY85 matrix is a rate matrix. -/
 theorem isRateMatrix_hkyRate {π : Fin 4 → ℝ} {κ : ℝ} (hπ : ∀ i, 0 ≤ π i) (hκ : 0 ≤ κ) :
     IsRateMatrix (hkyRate π κ) := by
   refine isRateMatrix_gtrRate hπ fun i j _ => ?_
   simp only [hkyExchangeability, of_apply]
   split_ifs <;> linarith
 
-/-- With nonnegative base frequencies, the F81 matrix is a rate matrix. -/
+/-- **F81 matrix is a rate matrix.** With nonnegative base frequencies, the F81 matrix is a rate matrix. -/
 theorem isRateMatrix_f81Rate {π : Fin 4 → ℝ} (hπ : ∀ i, 0 ≤ π i) : IsRateMatrix (f81Rate π) :=
   isRateMatrix_gtrRate hπ fun _ _ _ => zero_le_one
 
-/-- With `κ ≥ 0`, the K80 matrix is a rate matrix. -/
+/-- **K80 matrix is a rate matrix.** With `κ ≥ 0`, the K80 matrix is a rate matrix. -/
 theorem isRateMatrix_k80Rate {κ : ℝ} (hκ : 0 ≤ κ) : IsRateMatrix (k80Rate κ) :=
   isRateMatrix_hkyRate (fun _ => by norm_num) hκ
 
-/-- HKY85 is in detailed balance with its base frequencies. -/
+/-- **Detailed balance of the HKY85 model.** HKY85 is in detailed balance with its base frequencies. -/
 theorem isDetailedBalance_hkyRate (π : Fin 4 → ℝ) (κ : ℝ) :
     IsDetailedBalance π (hkyRate π κ) := by
   refine isDetailedBalance_gtrRate π fun i j => ?_
   simp only [hkyExchangeability, of_apply, eq_comm]
 
-/-- F81 is in detailed balance with its base frequencies. -/
+/-- **Detailed balance of the F81 model.** F81 is in detailed balance with its base frequencies. -/
 theorem isDetailedBalance_f81Rate (π : Fin 4 → ℝ) : IsDetailedBalance π (f81Rate π) :=
   isDetailedBalance_gtrRate π fun _ _ => rfl
 
-/-- HKY85 with `κ = 1` is F81. -/
+/-- **HKY85 with κ = 1 is F81.** HKY85 with `κ = 1` is F81. -/
 theorem hkyRate_one (π : Fin 4 → ℝ) : hkyRate π 1 = f81Rate π := by
   unfold hkyRate f81Rate hkyExchangeability
   simp only [ite_self]
@@ -199,7 +199,7 @@ theorem gtrRate_jukesCantor (μ : ℝ) :
   · simp [gtrRate, jcRateMatrix, jcRate, h]
     ring
 
-/-- The equal-rates GTR transition function is the Jukes–Cantor transition probability
+/-- **Equal-rates GTR chain is the Jukes–Cantor model.** The equal-rates GTR transition function is the Jukes–Cantor transition probability
 `jcProb μ t` (by `JukesCantor.jcProb_eq_exp`). -/
 theorem ctmcTransition_gtrRate_jukesCantor (μ t : ℝ) (i j : Fin 4) :
     ctmcTransition (gtrRate (fun _ : Fin 4 => 1 / 4) (Matrix.of fun _ _ => 4 * μ / 3)) t i j =
@@ -208,11 +208,11 @@ theorem ctmcTransition_gtrRate_jukesCantor (μ t : ℝ) (i j : Fin 4) :
   rw [gtrRate_jukesCantor]
   exact (jcProb_eq_exp μ t i j).symm
 
-/-- For `μ ≥ 0` the Jukes–Cantor matrix is a rate matrix. -/
+/-- **Jukes–Cantor matrix is a rate matrix.** For `μ ≥ 0` the Jukes–Cantor matrix is a rate matrix. -/
 theorem isRateMatrix_jcRateMatrix {μ : ℝ} (hμ : 0 ≤ μ) : IsRateMatrix (jcRateMatrix μ) :=
   ⟨fun _ _ h => jcRate_nonneg hμ h, sum_jcRate μ⟩
 
-/-- K80 with `κ = 1` is JC69 with substitution rate `μ = 3/4`. -/
+/-- **K80 with κ = 1 is the Jukes–Cantor model.** K80 with `κ = 1` is JC69 with substitution rate `μ = 3/4`. -/
 theorem k80Rate_one : k80Rate 1 = jcRateMatrix (3 / 4) := by
   rw [← gtrRate_jukesCantor, k80Rate, hkyRate_one, f81Rate]
   norm_num

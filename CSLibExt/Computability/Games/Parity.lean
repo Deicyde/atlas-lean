@@ -135,7 +135,7 @@ moves of $G$. -/
 def WonBy (p : Player) (π : ωSequence Pos) : Prop :=
   p.Wins (π.map G.priority)
 
-/-- A positional (memoryless) strategy for player `p`: a choice of successor at each position,
+/-- **Positional strategy in a parity game.** A positional (memoryless) strategy for player `p`: a choice of successor at each position,
 legal at the positions `p` owns. Its values elsewhere are irrelevant. -/
 structure PositionalStrategy (p : Player) where
   /-- The chosen successor. -/
@@ -165,7 +165,7 @@ def WinsFrom {p : Player} (σ : G.PositionalStrategy p) (v : Pos) : Prop :=
 
 variable (G)
 
-/-- The positions from which player `p` has a winning positional strategy. -/
+/-- **Winning region of a parity game.** The positions from which player `p` has a winning positional strategy. -/
 def WinningRegion (p : Player) : Set Pos :=
   { v | ∃ σ : G.PositionalStrategy p, WinsFrom σ v }
 

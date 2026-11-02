@@ -94,19 +94,19 @@ open Cslib.MachineLearning.Sequence.HiddenMarkov
 
 variable {A R : Type*} [DecidableEq A] [Field R] {K : ℕ}
 
-/-- The observation at a site: the column of reference alleles and the target allele. -/
+/-- **Site observation in the Li–Stephens model.** The observation at a site: the column of reference alleles and the target allele. -/
 abbrev Obs (K : ℕ) (A : Type*) := (Fin K → A) × A
 
-/-- The observation sequence for the reference panel `H` (haplotype `k` carries allele
+/-- **Observation sequence of a reference panel and target haplotype.** The observation sequence for the reference panel `H` (haplotype `k` carries allele
 `H k t` at site `t`) and the target haplotype `x`. -/
 def obs (H : Fin K → ℕ → A) (x : ℕ → A) (t : ℕ) : Obs K A := (fun k => H k t, x t)
 
-/-- The copying transition probability: switch with probability `ρ` to a uniformly random
+/-- **Li–Stephens copying transition probability.** The copying transition probability: switch with probability `ρ` to a uniformly random
 reference haplotype (possibly the same one), otherwise keep copying `k`:
 `(1 - ρ) [k = k'] + ρ / K`. -/
 def trans (ρ : R) (k k' : Fin K) : R := (1 - ρ) * (if k = k' then 1 else 0) + ρ / K
 
-/-- The emission probability: `1 - ε` if the target allele equals the allele of the copied
+/-- **Li–Stephens emission probability.** The emission probability: `1 - ε` if the target allele equals the allele of the copied
 haplotype `k`, and the mismatch probability `ε` otherwise. -/
 def emit (ε : R) (k : Fin K) (o : Obs K A) : R := if o.1 k = o.2 then 1 - ε else ε
 
@@ -117,40 +117,40 @@ def hmm (K : ℕ) (ρ ε : R) : HMM (Fin K) (Obs K A) R where
   trans := trans ρ
   emit := emit ε
 
-/-- Each transition row sums to `1` (when `K` is invertible in `R`, e.g. `K ≠ 0` over `ℝ`). -/
+/-- **Li–Stephens transition rows sum to one.** Each transition row sums to `1` (when `K` is invertible in `R`, e.g. `K ≠ 0` over `ℝ`). -/
 theorem trans_row_sum (hK : (K : R) ≠ 0) (ρ : R) (k : Fin K) : ∑ k', trans ρ k k' = 1 := by
   simp only [trans, Finset.sum_add_distrib, mul_ite, mul_one, mul_zero, Finset.sum_ite_eq,
     Finset.mem_univ, ite_true, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   field_simp
   ring
 
-/-- The initial law (uniform over the `K` haplotypes) sums to `1`. -/
+/-- **Uniform initial law over haplotypes sums to one.** The initial law (uniform over the `K` haplotypes) sums to `1`. -/
 theorem init_sum (hK : (K : R) ≠ 0) (ρ ε : R) :
     ∑ k, (hmm (A := A) K ρ ε).init k = 1 := by
   simp only [hmm, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   field_simp
 
-/-- With biallelic sites, the two emission probabilities at a site sum to `1` over the target
+/-- **Biallelic emission probabilities sum to one.** With biallelic sites, the two emission probabilities at a site sum to `1` over the target
 allele, for each fixed panel column `col` (the emissions are conditional on the panel). -/
 theorem emit_sum_bool (ε : R) (k : Fin K) (col : Fin K → Bool) :
     ∑ a : Bool, emit ε k (col, a) = 1 := by
   cases h : col k <;> simp [emit, h]
 
-/-- One step of the collapsed forward recursion on the previous site's forward variables `v`,
+/-- **One step of the collapsed forward recursion.** One step of the collapsed forward recursion on the previous site's forward variables `v`,
 at output state `k`: `e_k ((1 - ρ) v k + ρ (∑ j, v j) / K)`. This is the pointwise
 specification; each call evaluates the length-`K` sum, so use `fastStepTab` for the `O(K)`
 per-site step. -/
 def fastStep (ρ ε : R) (o : Obs K A) (v : Fin K → R) (k : Fin K) : R :=
   emit ε k o * ((1 - ρ) * v k + ρ * (∑ j, v j) / K)
 
-/-- The forward variables of the collapsed recursion, as a function of site and state. This is
+/-- **Forward variables of the collapsed recursion.** The forward variables of the collapsed recursion, as a function of site and state. This is
 the untabulated specification (it re-evaluates earlier sites inside each sum); `fastForwardTab`
 is the `O(t K)` implementation. -/
 def fastForward (ρ ε : R) (y : ℕ → Obs K A) : ℕ → Fin K → R
   | 0, k => 1 / K * emit ε k (y 0)
   | t + 1, k => fastStep ρ ε (y (t + 1)) (fastForward ρ ε y t) k
 
-/-- The sum over predecessors collapses: `∑ j, v j * trans ρ j k = (1 - ρ) v k + ρ (∑ v) / K`. -/
+/-- **Collapse of the sum over predecessor haplotypes.** The sum over predecessors collapses: `∑ j, v j * trans ρ j k = (1 - ρ) v k + ρ (∑ v) / K`. -/
 theorem sum_mul_trans (ρ : R) (v : Fin K → R) (k : Fin K) :
     ∑ j, v j * trans ρ j k = (1 - ρ) * v k + ρ * (∑ j, v j) / K := by
   simp only [trans, mul_add, Finset.sum_add_distrib, mul_ite, mul_one, mul_zero,
@@ -176,17 +176,17 @@ theorem likelihood_eq_sum_fastForward (ρ ε : R) (y : ℕ → Obs K A) (t : ℕ
   rw [likelihood_eq_sum_forward]
   exact Finset.sum_congr rfl fun k _ => (fastForward_eq_forward ρ ε y t k).symm
 
-/-- One tabulated `O(K)` step: the total of the previous table is computed once. -/
+/-- **Tabulated O(K) forward step.** One tabulated `O(K)` step: the total of the previous table is computed once. -/
 def fastStepTab (ρ ε : R) (o : Obs K A) (v : Vector R K) : Vector R K :=
   let S := sumVec v
   Vector.ofFn fun k => emit ε k o * ((1 - ρ) * v[k] + ρ * S / K)
 
-/-- The `O(K)` forward variables, tabulated site by site: `O(t K)` operations in total. -/
+/-- **Tabulated O(K) forward variables.** The `O(K)` forward variables, tabulated site by site: `O(t K)` operations in total. -/
 def fastForwardTab (ρ ε : R) (y : ℕ → Obs K A) : ℕ → Vector R K
   | 0 => Vector.ofFn fun k => 1 / K * emit ε k (y 0)
   | t + 1 => fastStepTab ρ ε (y (t + 1)) (fastForwardTab ρ ε y t)
 
-/-- The tabulated `O(K)` recursion computes the forward variables of the Li–Stephens HMM. -/
+/-- **Tabulated recursion computes the Li–Stephens forward variables.** The tabulated `O(K)` recursion computes the forward variables of the Li–Stephens HMM. -/
 theorem fastForwardTab_get (ρ ε : R) (y : ℕ → Obs K A) :
     ∀ (t : ℕ) (k : Fin K), (fastForwardTab ρ ε y t)[k] = forward (hmm K ρ ε) y t k
   | 0, k => by simp [fastForwardTab, ← fastForward_eq_forward, fastForward]
@@ -198,7 +198,7 @@ theorem fastForwardTab_get (ρ ε : R) (y : ℕ → Obs K A) :
 /-- **The tabulated Li–Stephens likelihood** in `O(t K)` operations. -/
 def likelihoodTab (ρ ε : R) (y : ℕ → Obs K A) (t : ℕ) : R := sumVec (fastForwardTab ρ ε y t)
 
-/-- The tabulated `O(K)` recursion computes the likelihood of the target haplotype. -/
+/-- **Tabulated recursion computes the haplotype likelihood.** The tabulated `O(K)` recursion computes the likelihood of the target haplotype. -/
 theorem likelihoodTab_eq (ρ ε : R) (y : ℕ → Obs K A) (t : ℕ) :
     likelihoodTab ρ ε y t = likelihood (hmm K ρ ε) y t := by
   rw [likelihood_eq_sum_forward, likelihoodTab, sumVec]

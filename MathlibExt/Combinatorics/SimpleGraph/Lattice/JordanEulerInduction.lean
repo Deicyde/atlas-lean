@@ -105,7 +105,7 @@ theorem jei_regionComponents_finite (H : SimpleGraph (Site 2)) (hfin : H.edgeSet
     show RG.connectedComponentMk (beacon 2 R) = c
     rw [← hExtMk x hxext]; exact hx
 
-/-- The image in `ℤ²` of a subgraph `K` of a `PlanarZ2Subgraph` `P`. -/
+/-- **Pushforward of a subgraph into the square lattice.** The image in `ℤ²` of a subgraph `K` of a `PlanarZ2Subgraph` `P`. -/
 noncomputable def jei_pushGraph (P : PlanarZ2Subgraph) (K : SimpleGraph P.V) :
     SimpleGraph (Site 2) where
   Adj a b := ∃ x y : P.V, K.Adj x y ∧ P.emb x = a ∧ P.emb y = b

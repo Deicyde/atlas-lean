@@ -328,7 +328,7 @@ private theorem isCompactOperator_finset_sum {S : Finset ι}
 private noncomputable def truncCoeff (a : ι → 𝕜) (n : ℕ) (i : ι) : 𝕜 :=
   if (1 : ℝ) / (n + 1) ≤ ‖a i‖ then a i else 0
 
-/-- A rank-one term of the finite-support decomposition, evaluated pointwise. -/
+/-- **Rank-one term of the finite-support decomposition on $\ell^2$.** A rank-one term of the finite-support decomposition, evaluated pointwise. -/
 theorem singleCLM_comp_evalCLM_apply [DecidableEq ι] (b : ι → 𝕜) (i : ι) (x : ℓ²(ι, 𝕜)) :
     (lp.singleContinuousLinearMap 𝕜 (fun _ : ι => 𝕜) 2 i ∘L
         ((b i) • lp.evalCLM 𝕜 (fun _ : ι => 𝕜) 2 i)) x

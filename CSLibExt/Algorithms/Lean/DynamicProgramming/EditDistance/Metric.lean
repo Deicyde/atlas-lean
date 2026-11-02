@@ -130,7 +130,7 @@ private theorem Execution.of_transforms {α : Type u} [BEq α] [LawfulBEq α]
                     exact .substitute a b (ih he)
               next => simp at h
 
-/-- Every script has an inverse of the same cost (swap insertions and deletions, reverse
+/-- **Every edit script has an inverse of the same cost.** Every script has an inverse of the same cost (swap insertions and deletions, reverse
 substitutions). -/
 theorem EditScript.exists_inverse [BEq α] [LawfulBEq α] {script : EditScript α}
     {source target : List α} (h : script.Transforms source target) :
@@ -225,7 +225,7 @@ private theorem Execution.compose {α : Type u} {first second : EditScript α}
 termination_by first.length + second.length
 decreasing_by all_goals simp_all only [List.length_cons]; omega
 
-/-- Two scripts compose into one whose cost is at most the sum of their costs. -/
+/-- **Composition of edit scripts is subadditive in cost.** Two scripts compose into one whose cost is at most the sum of their costs. -/
 theorem EditScript.exists_compose [BEq α] [LawfulBEq α] {first second : EditScript α}
     {source middle target : List α} (h₁ : first.Transforms source middle)
     (h₂ : second.Transforms middle target) :
@@ -258,7 +258,7 @@ theorem editDistance_triangle [BEq α] [LawfulBEq α] (x y z : List α) :
         editDistance_minimal x z composed hcomp
     _ ≤ _ := by rwa [editDistance_script_cost, editDistance_script_cost] at hcost
 
-/-- Distinct lists are at positive distance. -/
+/-- **Edit distance between distinct lists is positive.** Distinct lists are at positive distance. -/
 theorem editDistance_pos_iff [BEq α] [LawfulBEq α] (x y : List α) :
     0 < (editDistance x y).ret.distance ↔ x ≠ y := by
   rw [Nat.pos_iff_ne_zero, ne_eq, editDistance_eq_zero_iff]

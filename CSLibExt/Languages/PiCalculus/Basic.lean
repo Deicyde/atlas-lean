@@ -40,14 +40,14 @@ are checked in `CSLibExtTest.Languages.PiCalculus.BasicTests`.
 namespace Cslib
 namespace PiCalculus
 
-/-- A channel name: a free channel `const n`, or the `i`-th enclosing
+/-- **Channel name in the π-calculus.** A channel name: a free channel `const n`, or the `i`-th enclosing
 binder `var i`. -/
 inductive Name where
   | const (n : ℕ) : Name
   | var (i : ℕ) : Name
   deriving DecidableEq, Repr
 
-/-- Processes of the π-calculus. `inp a p` binds variable `0` in `p`;
+/-- **Processes of the π-calculus.** Processes of the π-calculus. `inp a p` binds variable `0` in `p`;
 `nu p` binds variable `0` in `p` as a fresh channel. -/
 inductive Proc where
   | nil : Proc
@@ -59,13 +59,13 @@ inductive Proc where
   | sum (p q : Proc) : Proc
   deriving DecidableEq, Repr
 
-/-- Shift free variables at or above `cutoff` up by one, e.g. when
+/-- **Lifting free de Bruijn indices of a π-calculus name.** Shift free variables at or above `cutoff` up by one, e.g. when
 pushing a process under a binder. -/
 def liftName (cutoff : ℕ) : Name → Name
   | .const n => .const n
   | .var i => if cutoff ≤ i then .var (i + 1) else .var i
 
-/-- Shift free variables of a process, entering binders with an
+/-- **Lifting free de Bruijn indices of a π-calculus process.** Shift free variables of a process, entering binders with an
 increased cutoff. -/
 def liftProc (cutoff : ℕ) : Proc → Proc
   | .nil => .nil
@@ -76,7 +76,7 @@ def liftProc (cutoff : ℕ) : Proc → Proc
   | .repl p => .repl (liftProc cutoff p)
   | .sum p q => .sum (liftProc cutoff p) (liftProc cutoff q)
 
-/-- Substitute the name `n` for the variable at `cutoff`: variables
+/-- **Substitution of a name into a π-calculus name.** Substitute the name `n` for the variable at `cutoff`: variables
 below the cutoff are bound by inner binders and untouched, the variable
 at the cutoff is replaced by `n`, and variables above shift down by
 one. -/
@@ -87,7 +87,7 @@ def substName (n : Name) : ℕ → Name → Name
       else if i = cutoff then n
       else .var (i - 1)
 
-/-- Substitute the name `n` for the variable at `cutoff` in a
+/-- **Substitution of a name into a π-calculus process at a cutoff.** Substitute the name `n` for the variable at `cutoff` in a
 process. Under a binder, `n` is lifted by one at cutoff `0` so it
 keeps referring to the same outer names: every free index of `n`
 refers to a binder above the substitution point, so all of them shift.
@@ -104,17 +104,17 @@ def substProc (n : Name) : ℕ → Proc → Proc
   | cutoff, .repl p => .repl (substProc n cutoff p)
   | cutoff, .sum p q => .sum (substProc n cutoff p) (substProc n cutoff q)
 
-/-- Substitute the name `n` for the innermost bound variable of `p`. -/
+/-- **Substitution for the innermost bound variable of a process.** Substitute the name `n` for the innermost bound variable of `p`. -/
 def subst (p : Proc) (n : Name) : Proc := substProc n 0 p
 
-/-- Swap the two de Bruijn indices `cutoff` and `cutoff + 1` in a name:
+/-- **Swapping adjacent de Bruijn indices in a name.** Swap the two de Bruijn indices `cutoff` and `cutoff + 1` in a name:
 the two binders at that depth exchange places. -/
 def swapNameAt (cutoff : ℕ) : Name → Name
   | .var i => if i = cutoff then .var (cutoff + 1)
       else if i = cutoff + 1 then .var cutoff else .var i
   | .const n => .const n
 
-/-- Swap the two binders at depth `cutoff` throughout a process,
+/-- **Swapping adjacent binders throughout a process.** Swap the two binders at depth `cutoff` throughout a process,
 incrementing the cutoff under binders. -/
 def swapProc (cutoff : ℕ) : Proc → Proc
   | .nil => .nil
@@ -125,11 +125,11 @@ def swapProc (cutoff : ℕ) : Proc → Proc
   | .repl p => .repl (swapProc cutoff p)
   | .sum p q => .sum (swapProc cutoff p) (swapProc cutoff q)
 
-/-- Substitution leaves a process with no `var 0` untouched: a
+/-- **Substitution leaves constant channels and the empty process unchanged.** Substitution leaves a process with no `var 0` untouched: a
 constant channel stays constant, and the empty process stays empty. -/
 theorem subst_nil (n : Name) : subst .nil n = .nil := rfl
 
-/-- Structural congruence: `|` is commutative and associative with
+/-- **Structural congruence of π-calculus processes.** Structural congruence: `|` is commutative and associative with
 unit `nil`, `ν` extrudes over `|` (lifting the other side, which cannot
 mention the fresh name), restriction of `nil` is `nil`, nested
 restrictions commute (swapping the two bound indices), and replication
@@ -157,7 +157,7 @@ inductive Cong : Proc → Proc → Prop
   | nu_swap (p : Proc) : Cong (.nu (.nu p)) (.nu (.nu (swapProc 0 p)))
   | repl_unfold (p : Proc) : Cong (.repl p) (.par p (.repl p))
 
-/-- Guarded-choice resolution: discard sum branches to reach a
+/-- **Guarded-choice resolution in the π-calculus.** Guarded-choice resolution: discard sum branches to reach a
 guarded process. Transitivity handles nested sums. -/
 inductive Select : Proc → Proc → Prop
   | refl (p : Proc) : Select p p
@@ -165,7 +165,7 @@ inductive Select : Proc → Proc → Prop
   | right (p q : Proc) : Select (.sum p q) q
   | trans {p q r : Proc} : Select p q → Select q r → Select p r
 
-/-- Reduction: communication (substituting the sent channel for the
+/-- **Reduction relation of the π-calculus.** Reduction: communication (substituting the sent channel for the
 input variable) between any selected output and input guards,
 reduction under `|` and `ν`, and reduction up to structural
 congruence. -/

@@ -50,7 +50,7 @@ open Real Set
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- The neutral Wright–Fisher Green's function (sojourn density), time in units of `2N`
+/-- **Neutral Wright–Fisher Green's function.** The neutral Wright–Fisher Green's function (sojourn density), time in units of `2N`
 generations (Ewens 2004, Chapter 4): `G(p, x) = 2 (1 - p) / (1 - x)` for `x ≤ p` and
 `G(p, x) = 2 p / x` for `p < x`. In the diffusion reading (not formalized here), for
 `0 < x < 1`, `G(p, x) dx` is the expected time a neutral allele started at frequency `p` spends
@@ -155,7 +155,7 @@ theorem generator_integral_neutralGreen {g : ℝ → ℝ} (hg : Continuous g) {p
   field_simp
   ring
 
-/-- Boundary value at `0`: an allele that is absent spends no time in `(0, 1)`, so
+/-- **Sojourn integral vanishes for an absent allele.** Boundary value at `0`: an allele that is absent spends no time in `(0, 1)`, so
 `∫ x in 0..1, G(0, x) g(x) = 0`. -/
 theorem integral_neutralGreen_left (g : ℝ → ℝ) :
     ∫ x in (0 : ℝ)..1, neutralGreen 0 x * g x = 0 := by
@@ -164,7 +164,7 @@ theorem integral_neutralGreen_left (g : ℝ → ℝ) :
   rw [uIoc_of_le zero_le_one] at hx
   simp [neutralGreen, not_le.2 hx.1]
 
-/-- Boundary value at `1`: a fixed allele spends no time in `(0, 1)`, so
+/-- **Sojourn integral vanishes for a fixed allele.** Boundary value at `1`: a fixed allele spends no time in `(0, 1)`, so
 `∫ x in 0..1, G(1, x) g(x) = 0`. -/
 theorem integral_neutralGreen_right (g : ℝ → ℝ) :
     ∫ x in (0 : ℝ)..1, neutralGreen 1 x * g x = 0 := by

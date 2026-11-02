@@ -34,7 +34,7 @@ open IsDedekindDomain
 
 namespace NumberField
 
-/-- Only finitely many height-one primes of a number field ramify
+/-- **Only finitely many primes ramify in a number field extension.** Only finitely many height-one primes of a number field ramify
 in a number-field extension. -/
 theorem finite_ramified_primes
     (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]

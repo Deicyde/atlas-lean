@@ -52,7 +52,7 @@ open Cslib.Algorithms.Lean.OfflineCaching
 
 /-! ## Online pagers and the adversary -/
 
-/-- A deterministic online paging algorithm with cache size `k`: a state machine whose cache
+/-- **Deterministic online paging algorithm.** A deterministic online paging algorithm with cache size `k`: a state machine whose cache
 never holds more than `k` pages. Its moves need not be legal transitions; the lower bound holds
 for any such machine. -/
 structure OnlinePager.{u, v} (α : Type u) (k : ℕ) where
@@ -81,7 +81,7 @@ def misses : A.State → List α → ℕ
 
 end OnlinePager
 
-/-- LRU as an online pager. -/
+/-- **LRU as an online pager.** LRU as an online pager. -/
 def lruPager.{u} (α : Type u) [DecidableEq α] (k : ℕ) : OnlinePager.{u, u} α k where
   State := {c : List α // c.length ≤ k}
   init := ⟨[], Nat.zero_le _⟩

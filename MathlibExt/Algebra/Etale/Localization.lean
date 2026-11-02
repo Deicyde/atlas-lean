@@ -149,7 +149,7 @@ private theorem isIntegrallyClosed_of_integralClosure_eq_bot (T A : Type*) [Comm
 end EtaleLocNormalAux
 
 open EtaleLocNormalAux in
-/-- The localization of an étale algebra at a prime is a domain and
+/-- **Localizations of étale algebras are integrally closed domains.** The localization of an étale algebra at a prime is a domain and
 integrally closed. -/
 theorem Algebra.Etale.isDomain_and_isIntegrallyClosed_of_isLocalization_atPrime
     (P : Type u) [CommRing P] [IsDomain P] [IsIntegrallyClosed P]

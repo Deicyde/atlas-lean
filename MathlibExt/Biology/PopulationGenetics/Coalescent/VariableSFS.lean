@@ -109,14 +109,14 @@ open MathlibExt.Biology.PopulationGenetics.Coalescent.SiteFrequencySpectrum
 
 /-! ### The variable-size expected SFS -/
 
-/-- The **Griffiths–Tavaré kernel** `k C(n-i-1, k-2) / C(n-1, k-1)`: the expected number of
+/-- **Griffiths–Tavaré kernel.** The **Griffiths–Tavaré kernel** `k C(n-i-1, k-2) / C(n-1, k-1)`: the expected number of
 branches subtending exactly `i` of the `n` sample copies while `k` lineages remain
 (`SiteFrequencySpectrum.joinStep_iterate_count`). Meaningful for `1 ≤ i < n`, `2 ≤ k ≤ n`;
 outside that range the natural-number subtractions give junk values. -/
 def sfsKernel (n i k : ℕ) : ℝ :=
   k * ((n - i - 1).choose (k - 2) : ℝ) / ((n - 1).choose (k - 1) : ℝ)
 
-/-- The expected SFS entry `(θ / 2) ∑_{k=2}^{n} sfsKernel n i k · t k` of a sample of size
+/-- **Expected site frequency spectrum under variable population size.** The expected SFS entry `(θ / 2) ∑_{k=2}^{n} sfsKernel n i k · t k` of a sample of size
 `n` whose mean holding times are `t k = E T_k` (Griffiths & Tavaré 1998, Polanski & Kimmel
 2003). -/
 def variableSFS (θ : ℝ) (n : ℕ) (t : ℕ → ℝ) (i : ℕ) : ℝ :=
@@ -219,7 +219,7 @@ theorem integral_sfs_of_indep {μ : Measure Ω} [IsProbabilityMeasure μ] {n : �
 
 end Integral
 
-/-- With the constant-size means `E T_k = 1 / C(k,2)`, the variable-size SFS is Fu's
+/-- **Variable-size spectrum reduces to Fu's $\theta/i$ at constant size.** With the constant-size means `E T_k = 1 / C(k,2)`, the variable-size SFS is Fu's
 `θ / i`. -/
 theorem variableSFS_inv_choose_two (θ : ℝ) {n i : ℕ} (hi : 1 ≤ i) (hin : i < n) :
     variableSFS θ n (fun k => ((k.choose 2 : ℕ) : ℝ)⁻¹) i = θ / i := by
@@ -231,14 +231,14 @@ theorem variableSFS_inv_choose_two (θ : ℝ) {n i : ℕ} (hi : 1 ≤ i) (hin : 
 
 /-! ### Inversion: the expected SFS determines the mean holding times -/
 
-/-- The kernel row `i` vanishes beyond `k = n - i + 1`: a branch subtending `i` copies cannot
+/-- **Griffiths–Tavaré kernel vanishes beyond the diagonal.** The kernel row `i` vanishes beyond `k = n - i + 1`: a branch subtending `i` copies cannot
 exist while more than `n - i + 1` lineages remain. -/
 theorem sfsKernel_eq_zero_of_lt {n i k : ℕ} (hin : i < n) (hk : n - i + 1 < k) :
     sfsKernel n i k = 0 := by
   rw [sfsKernel, Nat.choose_eq_zero_of_lt (by omega)]
   simp
 
-/-- The kernel entry at `k = n - i + 1` is `(n - i + 1) / C(n-1, i-1) > 0`. -/
+/-- **Positivity of the Griffiths–Tavaré kernel on the diagonal.** The kernel entry at `k = n - i + 1` is `(n - i + 1) / C(n-1, i-1) > 0`. -/
 theorem sfsKernel_diag_pos {n i : ℕ} (hi : 1 ≤ i) (hin : i < n) :
     0 < sfsKernel n i (n - i + 1) := by
   rw [sfsKernel, show n - i + 1 - 2 = n - i - 1 by omega, Nat.choose_self]
@@ -281,28 +281,28 @@ section Estimators
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- Achaz's weighted estimator `θ_ω = ∑_{i=1}^{n-1} ω_i i ξ_i` (Achaz 2009, with the
+/-- **Achaz's weighted estimator of $\theta$.** Achaz's weighted estimator `θ_ω = ∑_{i=1}^{n-1} ω_i i ξ_i` (Achaz 2009, with the
 weights already normalized). -/
 def thetaWeighted (n : ℕ) (w : ℕ → ℝ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ :=
   fun ω => ∑ i ∈ Ico 1 n, w i * i * ξ i ω
 
-/-- Tajima's `θ_π` in its SFS form `∑_i i (n - i) ξ_i / C(n,2)` (weights `(n - i) / C(n,2)`). -/
+/-- **Tajima's $\theta_\pi$ in site frequency spectrum form.** Tajima's `θ_π` in its SFS form `∑_i i (n - i) ξ_i / C(n,2)` (weights `(n - i) / C(n,2)`). -/
 def thetaPi (n : ℕ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ :=
   thetaWeighted n (fun i => ((n : ℝ) - i) / (n.choose 2 : ℝ)) ξ
 
-/-- Fay & Wu's `θ_H = ∑_i i² ξ_i / C(n,2)` (weights `i / C(n,2)`). -/
+/-- **Fay and Wu's $\theta_H$.** Fay & Wu's `θ_H = ∑_i i² ξ_i / C(n,2)` (weights `i / C(n,2)`). -/
 def thetaH (n : ℕ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ :=
   thetaWeighted n (fun i => (i : ℝ) / (n.choose 2 : ℝ)) ξ
 
-/-- Fay & Wu's `H = θ_π - θ_H` (Fay & Wu 2000). -/
+/-- **Fay and Wu's H statistic.** Fay & Wu's `H = θ_π - θ_H` (Fay & Wu 2000). -/
 def fayWuH (n : ℕ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ := fun ω => thetaPi n ξ ω - thetaH n ξ ω
 
-/-- The numerator `S - a₁ ξ₁` of Fu & Li's `D` with an outgroup, where `S = ∑_i ξ_i` and the
+/-- **Numerator of Fu and Li's D.** The numerator `S - a₁ ξ₁` of Fu & Li's `D` with an outgroup, where `S = ∑_i ξ_i` and the
 external-branch mutations are the derived singletons `ξ₁` (Fu & Li 1993). -/
 def fuLiDNumerator (n : ℕ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ :=
   fun ω => ∑ i ∈ Ico 1 n, ξ i ω - tajimaA1 n * ξ 1 ω
 
-/-- The numerator `θ_π - ξ₁` of Fu & Li's `F` with an outgroup (Fu & Li 1993), with `θ_π` in
+/-- **Numerator of Fu and Li's F.** The numerator `θ_π - ξ₁` of Fu & Li's `F` with an outgroup (Fu & Li 1993), with `θ_π` in
 its SFS form. -/
 def fuLiFNumerator (n : ℕ) (ξ : ℕ → Ω → ℝ) : Ω → ℝ := fun ω => thetaPi n ξ ω - ξ 1 ω
 
@@ -352,7 +352,7 @@ theorem integral_thetaWeighted (hξ_int : ∀ i, Integrable (ξ i) μ)
     field_simp
   rw [sum_congr rfl h, ← mul_sum, hw, mul_one]
 
-/-- Fay & Wu's `H` has mean zero under the constant-size spectrum (`n ≥ 2`). -/
+/-- **Fay and Wu's H has mean zero at constant size.** Fay & Wu's `H` has mean zero under the constant-size spectrum (`n ≥ 2`). -/
 theorem integral_fayWuH (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ i) μ)
     (hξ : ∀ i ∈ Ico 1 n, μ[ξ i] = θ / i) : μ[fayWuH n ξ] = 0 := by
   unfold fayWuH thetaPi thetaH
@@ -360,7 +360,7 @@ theorem integral_fayWuH (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ i) μ)
     integral_thetaWeighted hξ_int hξ (sum_weight_pi hn),
     integral_thetaWeighted hξ_int hξ (sum_weight_H hn), sub_self]
 
-/-- The numerator of Fu & Li's `D` has mean zero under the constant-size spectrum
+/-- **Numerator of Fu and Li's D has mean zero at constant size.** The numerator of Fu & Li's `D` has mean zero under the constant-size spectrum
 (`n ≥ 2`). -/
 theorem integral_fuLiDNumerator (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ i) μ)
     (hξ : ∀ i ∈ Ico 1 n, μ[ξ i] = θ / i) : μ[fuLiDNumerator n ξ] = 0 := by
@@ -372,7 +372,7 @@ theorem integral_fuLiDNumerator (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ 
   push_cast
   ring
 
-/-- The numerator of Fu & Li's `F` has mean zero under the constant-size spectrum
+/-- **Numerator of Fu and Li's F has mean zero at constant size.** The numerator of Fu & Li's `F` has mean zero under the constant-size spectrum
 (`n ≥ 2`). -/
 theorem integral_fuLiFNumerator (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ i) μ)
     (hξ : ∀ i ∈ Ico 1 n, μ[ξ i] = θ / i) : μ[fuLiFNumerator n ξ] = 0 := by
@@ -381,7 +381,7 @@ theorem integral_fuLiFNumerator (hn : 2 ≤ n) (hξ_int : ∀ i, Integrable (ξ 
     integral_thetaWeighted hξ_int hξ (sum_weight_pi hn), hξ 1 (mem_Ico.2 ⟨le_rfl, by omega⟩)]
   simp
 
-/-- Achaz's unbiasedness under Kingman's coalescent, with the hypotheses of
+/-- **Achaz's estimator is unbiased under Kingman's coalescent.** Achaz's unbiasedness under Kingman's coalescent, with the hypotheses of
 `SiteFrequencySpectrum.integral_sfs`. -/
 theorem integral_thetaWeighted_kingman [IsProbabilityMeasure μ]
     (K : KingmanTimes μ n) (hT : ∀ k, Measurable (K.T k))
@@ -403,12 +403,12 @@ end Estimators
 
 /-! ### Piecewise-constant histories and their first-coalescence times -/
 
-/-- The cumulative coalescence intensity `R(s) = ∫_0^s 1/η` of a relative population-size
+/-- **Cumulative coalescence intensity.** The cumulative coalescence intensity `R(s) = ∫_0^s 1/η` of a relative population-size
 function `η` (pairs coalesce at rate `1/η(s)` at time `s` before the present). Meaningful for
 positive `η` with `1/η` locally integrable. -/
 def cumRate (η : ℝ → ℝ) (s : ℝ) : ℝ := ∫ r in (0 : ℝ)..s, (η r)⁻¹
 
-/-- The expected time to the first coalescence among `m` lineages,
+/-- **Expected time to the first coalescence.** The expected time to the first coalescence among `m` lineages,
 `c_m = ∫_0^∞ exp(-C(m,2) R(s)) ds`, in a population of relative size `η`
 (Bhaskar & Song's `E[T_{m,m}]`). When the integrand is not integrable (for example `η ≡ 0`),
 this is Lean's junk value `0`; for piecewise-constant histories it is integrable
@@ -416,7 +416,7 @@ this is Lean's junk value `0`; for piecewise-constant histories it is integrable
 def firstCoalMean (η : ℝ → ℝ) (m : ℕ) : ℝ :=
   ∫ s in Set.Ioi 0, Real.exp (-((m.choose 2 : ℕ) : ℝ) * cumRate η s)
 
-/-- A **piecewise-constant population-size history with `K` pieces**: piece `j < K` starts at
+/-- **Piecewise-constant population-size history.** A **piecewise-constant population-size history with `K` pieces**: piece `j < K` starts at
 time `start j` (backward from the present, `start 0 = 0`, strictly increasing) and has
 relative size `size j > 0`; the last piece extends to infinity. Adjacent pieces may have equal
 sizes, so this also covers histories with fewer than `K` distinct pieces. Values at indices
@@ -438,13 +438,13 @@ namespace PiecewiseHistory
 
 variable {K : ℕ}
 
-/-- The population-size function of a piecewise-constant history: at time `s ≥ 0` it is the
+/-- **Size function of a piecewise-constant history.** The population-size function of a piecewise-constant history: at time `s ≥ 0` it is the
 size of the piece `j` with `start j ≤ s < start (j + 1)` (the last piece has no end). Equal to
 `0` for `s < 0` (junk; only `s ≥ 0` is meaningful). -/
 def sizeFn (h : PiecewiseHistory K) (s : ℝ) : ℝ :=
   ∑ j ∈ range K, if h.start j ≤ s ∧ (j + 1 < K → s < h.start (j + 1)) then h.size j else 0
 
-/-- The start times are monotone on the pieces. -/
+/-- **Monotonicity of piece start times.** The start times are monotone on the pieces. -/
 theorem start_mono (h : PiecewiseHistory K) {i j : ℕ} (hij : i ≤ j) (hj : j < K) :
     h.start i ≤ h.start j := by
   induction j with
@@ -454,11 +454,11 @@ theorem start_mono (h : PiecewiseHistory K) {i j : ℕ} (hij : i ≤ j) (hj : j 
     · exact (ih (by omega) (by omega)).trans (h.start_lt j hj).le
     · rw [show i = j + 1 by omega]
 
-/-- Every piece starts at a nonnegative time. -/
+/-- **Nonnegativity of piece start times.** Every piece starts at a nonnegative time. -/
 theorem start_nonneg (h : PiecewiseHistory K) {j : ℕ} (hj : j < K) : 0 ≤ h.start j := by
   rw [← h.start_zero]; exact h.start_mono (Nat.zero_le _) hj
 
-/-- On piece `j` the size function equals `size j`. -/
+/-- **Size function on a piece equals the piece size.** On piece `j` the size function equals `size j`. -/
 theorem sizeFn_eq (h : PiecewiseHistory K) {j : ℕ} {s : ℝ} (hj : j < K) (hs : h.start j ≤ s)
     (hs' : j + 1 < K → s < h.start (j + 1)) : h.sizeFn s = h.size j := by
   unfold sizeFn
@@ -495,7 +495,7 @@ private lemma piece_integral (h : PiecewiseHistory K) {j : ℕ} (hj : j < K) {s 
   rw [← intervalIntegral.integral_congr_uIoo heq, intervalIntegral.integral_const, smul_eq_mul,
     div_eq_mul_inv]
 
-/-- On piece `j` (including its right end), `1 / sizeFn` is integrable on `[0, s]` and the
+/-- **Cumulative rate is affine on each piece.** On piece `j` (including its right end), `1 / sizeFn` is integrable on `[0, s]` and the
 cumulative rate is affine: `R(s) = R(start j) + (s - start j) / size j`. -/
 theorem cumRate_piece (h : PiecewiseHistory K) :
     ∀ j < K, ∀ s, h.start j ≤ s → (j + 1 < K → s ≤ h.start (j + 1)) →
@@ -635,7 +635,7 @@ theorem choose_two_mul_firstCoalMean (h : PiecewiseHistory K) (hK : 0 < K) {m : 
     field_simp
   · field_simp
 
-/-- Every time `s ≥ 0` lies in some piece. -/
+/-- **Every nonnegative time lies in some piece.** Every time `s ≥ 0` lies in some piece. -/
 theorem exists_piece (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤ s) :
     ∃ j < K, h.start j ≤ s ∧ (j + 1 < K → s < h.start (j + 1)) := by
   set F := (range K).filter fun i => h.start i ≤ s
@@ -647,14 +647,14 @@ theorem exists_piece (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤
   have := F.le_max' (j + 1) (mem_filter.2 ⟨mem_range.2 hk, not_lt.1 hc⟩)
   omega
 
-/-- The size function is positive on `[0, ∞)`. -/
+/-- **Positivity of the piecewise size function.** The size function is positive on `[0, ∞)`. -/
 theorem sizeFn_pos (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤ s) :
     0 < h.sizeFn s := by
   obtain ⟨j, hj, h1, h2⟩ := h.exists_piece hK hs
   rw [h.sizeFn_eq hj h1 h2]
   exact h.size_pos j hj
 
-/-- The coalescent-time breakpoints `R(start j)` are strictly increasing. -/
+/-- **Coalescent-time breakpoints are strictly increasing.** The coalescent-time breakpoints `R(start j)` are strictly increasing. -/
 theorem cumRate_start_lt (h : PiecewiseHistory K) {j : ℕ} (hj : j + 1 < K) :
     cumRate h.sizeFn (h.start j) < cumRate h.sizeFn (h.start (j + 1)) := by
   rw [(h.cumRate_piece j (by omega) _ (h.start_lt j hj).le fun _ => le_rfl).2]
@@ -662,7 +662,7 @@ theorem cumRate_start_lt (h : PiecewiseHistory K) {j : ℕ} (hj : j + 1 < K) :
   have := sub_pos.2 (h.start_lt j hj)
   linarith [div_pos ‹0 < h.start (j + 1) - h.start j› ‹0 < h.size j›]
 
-/-- The dual history in coalescent time: piece `j` starts at `R(start j)` and has size
+/-- **Dual history in coalescent time.** The dual history in coalescent time: piece `j` starts at `R(start j)` and has size
 `1 / size j`. -/
 def dual (h : PiecewiseHistory K) : PiecewiseHistory K where
   size j := (h.size j)⁻¹
@@ -686,7 +686,7 @@ private lemma cumRate_mem_piece (h : PiecewiseHistory K) {j : ℕ} (hj : j < K) 
     have := div_lt_div_of_pos_right (sub_lt_sub_right (h2 hk) (h.start j)) hη
     linarith
 
-/-- The size at time `s` is the inverse of the dual history's size at coalescent time
+/-- **Size function is the inverse of the dual size in coalescent time.** The size at time `s` is the inverse of the dual history's size at coalescent time
 `R(s)`. -/
 theorem sizeFn_eq_inv_dual (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤ s) :
     h.sizeFn s = (h.dual.sizeFn (cumRate h.sizeFn s))⁻¹ := by
@@ -695,7 +695,7 @@ theorem sizeFn_eq_inv_dual (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs :
   rw [h.sizeFn_eq hj h1 h2, h.dual.sizeFn_eq hj d1 d2]
   simp [dual]
 
-/-- The dual cumulative rate inverts the cumulative rate. -/
+/-- **Dual cumulative rate inverts the cumulative rate.** The dual cumulative rate inverts the cumulative rate. -/
 theorem cumRate_dual_cumRate (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤ s) :
     cumRate h.dual.sizeFn (cumRate h.sizeFn s) = s := by
   have key : ∀ j < K, ∀ s, h.start j ≤ s → (j + 1 < K → s ≤ h.start (j + 1)) →
@@ -739,7 +739,7 @@ theorem cumRate_dual_cumRate (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs
   obtain ⟨j, hj, h1, h2⟩ := h.exists_piece hK hs
   exact key j hj s h1 fun hk => (h2 hk).le
 
-/-- The cumulative rate is strictly increasing on `[0, ∞)`. -/
+/-- **Cumulative rate is strictly increasing.** The cumulative rate is strictly increasing on `[0, ∞)`. -/
 theorem cumRate_strictMonoOn (h : PiecewiseHistory K) (hK : 0 < K) :
     StrictMonoOn (cumRate h.sizeFn) (Set.Ici 0) := by
   have hint : ∀ s, 0 ≤ s → IntervalIntegrable (fun r => (h.sizeFn r)⁻¹) volume 0 s := by
@@ -1026,7 +1026,7 @@ theorem exists_ne_firstCoalMean_eq_of_lt (K : ℕ) (hK : 2 ≤ K) :
       mul_one] at key ⊢
     linear_combination key
 
-/-- The size function is measurable. -/
+/-- **Measurability of the piecewise size function.** The size function is measurable. -/
 theorem measurable_sizeFn (h : PiecewiseHistory K) : Measurable h.sizeFn := by
   refine Finset.measurable_sum _ fun j _ => Measurable.ite ?_ measurable_const measurable_const
   by_cases hj : j + 1 < K
@@ -1037,7 +1037,7 @@ theorem measurable_sizeFn (h : PiecewiseHistory K) : Measurable h.sizeFn := by
       ext; simp [hj]
     exact e ▸ measurableSet_Ici
 
-/-- On `[0, ∞)` the size function lies between the smallest and the largest piece size. -/
+/-- **Size function lies between the extreme piece sizes.** On `[0, ∞)` the size function lies between the smallest and the largest piece size. -/
 theorem exists_le_sizeFn_le (h : PiecewiseHistory K) (hK : 0 < K) :
     ∃ a b : ℝ, 0 < a ∧ ∀ s, 0 ≤ s → a ≤ h.sizeFn s ∧ h.sizeFn s ≤ b := by
   have hne : (range K).Nonempty := ⟨0, mem_range.2 hK⟩
@@ -1048,7 +1048,7 @@ theorem exists_le_sizeFn_le (h : PiecewiseHistory K) (hK : 0 < K) :
     rw [h.sizeFn_eq hj h1 h2]
     exact ⟨inf'_le _ (mem_range.2 hj), le_sup' _ (mem_range.2 hj)⟩
 
-/-- The size function is constant on an interval to the right of every `s ≥ 0`. -/
+/-- **Size function is locally constant to the right.** The size function is constant on an interval to the right of every `s ≥ 0`. -/
 theorem exists_sizeFn_eq_Ico (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs : 0 ≤ s) :
     ∃ ε > 0, ∀ r ∈ Set.Ico s (s + ε), h.sizeFn r = h.sizeFn s := by
   obtain ⟨j, hj, h1, h2⟩ := h.exists_piece hK hs
@@ -1058,7 +1058,7 @@ theorem exists_sizeFn_eq_Ico (h : PiecewiseHistory K) (hK : 0 < K) {s : ℝ} (hs
   · refine ⟨1, one_pos, fun r hr => ?_⟩
     rw [h.sizeFn_eq hj (h1.trans hr.1) fun hk' => absurd hk' hk, h.sizeFn_eq hj h1 h2]
 
-/-- The two-piece case of `exists_ne_firstCoalMean_eq_of_lt`. -/
+/-- **Distinct two-piece histories with equal first-coalescence times.** The two-piece case of `exists_ne_firstCoalMean_eq_of_lt`. -/
 @[deprecated "Use `exists_ne_firstCoalMean_eq_of_lt 2`." (since := "2026-11-02")]
 theorem exists_ne_firstCoalMean_eq_two :
     ∃ h h' : PiecewiseHistory 2, (∃ s, 0 ≤ s ∧ h.sizeFn s ≠ h'.sizeFn s) ∧
@@ -1067,7 +1067,7 @@ theorem exists_ne_firstCoalMean_eq_two :
 
 end PiecewiseHistory
 
-/-- Only the values on `[0, ∞)` enter the first-coalescence times. -/
+/-- **First-coalescence times depend only on sizes at nonnegative times.** Only the values on `[0, ∞)` enter the first-coalescence times. -/
 theorem firstCoalMean_comp_max (η : ℝ → ℝ) (m : ℕ) :
     firstCoalMean (fun s => η (max s 0)) m = firstCoalMean η m := by
   refine setIntegral_congr_fun measurableSet_Ioi fun s hs => ?_

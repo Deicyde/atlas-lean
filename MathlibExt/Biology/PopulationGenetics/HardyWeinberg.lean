@@ -54,22 +54,22 @@ namespace MathlibExt.Biology.PopulationGenetics.HardyWeinberg
 
 variable {A : Type*}
 
-/-- Mendel's law of segregation: a parent with genotype `g` transmits its maternal allele `g.1`
+/-- **Mendel's law of segregation.** Mendel's law of segregation: a parent with genotype `g` transmits its maternal allele `g.1`
 or its paternal allele `g.2`, each with probability `1/2`. -/
 noncomputable def transmit (g : A × A) : PMF A :=
   (PMF.uniformFintype Bool).map fun b => cond b g.1 g.2
 
-/-- The law of a random gamete of a generation with genotype law `G`: pick a parent from `G`,
+/-- **Law of a random gamete.** The law of a random gamete of a generation with genotype law `G`: pick a parent from `G`,
 then one of its two alleles by `transmit`. Its mass at `a` is the frequency of allele `a`
 (`gamete_apply`). -/
 noncomputable def gamete (G : PMF (A × A)) : PMF A := G.bind transmit
 
-/-- The offspring genotype law under random union of gametes: the maternal and paternal
+/-- **Offspring genotype law under random union of gametes.** The offspring genotype law under random union of gametes: the maternal and paternal
 alleles are independent gametes of the parental generation. -/
 noncomputable def offspring (G : PMF (A × A)) : PMF (A × A) :=
   (gamete G).bind fun a => (gamete G).map (Prod.mk a)
 
-/-- `transmit g` puts mass `1/2` on each of the two alleles of `g` (mass `1` on `a` for a
+/-- **Allele transmission law of a parental genotype.** `transmit g` puts mass `1/2` on each of the two alleles of `g` (mass `1` on `a` for a
 homozygote `g = (a, a)`). -/
 theorem transmit_apply [DecidableEq A] (g : A × A) (a : A) :
     transmit g a = (if g.1 = a then 2⁻¹ else 0) + (if g.2 = a then 2⁻¹ else 0) := by
@@ -77,7 +77,7 @@ theorem transmit_apply [DecidableEq A] (g : A × A) (a : A) :
     Bool.cond_false, PMF.uniformFintype_apply, Fintype.card_bool, Nat.cast_ofNat]
   congr 1 <;> split_ifs <;> simp_all [eq_comm]
 
-/-- The gamete law is the allele frequency: `gamete G a = ½ ∑ b, G (a, b) + ½ ∑ b, G (b, a)`,
+/-- **Gamete law equals the allele frequency.** The gamete law is the allele frequency: `gamete G a = ½ ∑ b, G (a, b) + ½ ∑ b, G (b, a)`,
 half the expected number of copies of `a` in a parental genotype. -/
 theorem gamete_apply [Fintype A] (G : PMF (A × A)) (a : A) :
     gamete G a = 2⁻¹ * ∑ b, G (a, b) + 2⁻¹ * ∑ b, G (b, a) := by
@@ -143,24 +143,24 @@ theorem offspring_offspring (G : PMF (A × A)) : offspring (offspring G) = offsp
 Alleles are `Bool`: `true` is allele `A` with frequency `p = (gamete G true).toReal` and
 `false` is allele `a` with frequency `q = (gamete G false).toReal`. -/
 
-/-- The two allele frequencies sum to one: `p + q = 1`. -/
+/-- **The two allele frequencies sum to one.** The two allele frequencies sum to one: `p + q = 1`. -/
 theorem freq_true_add_freq_false (G : PMF (Bool × Bool)) :
     (gamete G true).toReal + (gamete G false).toReal = 1 := by
   have h := (gamete G).tsum_coe
   rw [tsum_fintype, Fintype.sum_bool] at h
   rw [← ENNReal.toReal_add (PMF.apply_ne_top _ _) (PMF.apply_ne_top _ _), h, ENNReal.toReal_one]
 
-/-- After one generation of random mating the homozygote `AA` has frequency `p²`. -/
+/-- **Hardy–Weinberg frequency $p^2$ of the AA homozygote.** After one generation of random mating the homozygote `AA` has frequency `p²`. -/
 theorem offspring_true_true (G : PMF (Bool × Bool)) :
     (offspring G (true, true)).toReal = (gamete G true).toReal ^ 2 := by
   rw [offspring_apply, ENNReal.toReal_mul, sq]
 
-/-- After one generation of random mating the homozygote `aa` has frequency `q²`. -/
+/-- **Hardy–Weinberg frequency $q^2$ of the aa homozygote.** After one generation of random mating the homozygote `aa` has frequency `q²`. -/
 theorem offspring_false_false (G : PMF (Bool × Bool)) :
     (offspring G (false, false)).toReal = (gamete G false).toReal ^ 2 := by
   rw [offspring_apply, ENNReal.toReal_mul, sq]
 
-/-- After one generation of random mating the (unordered) heterozygote `Aa`, i.e. the two
+/-- **Hardy–Weinberg frequency $2pq$ of the heterozygote.** After one generation of random mating the (unordered) heterozygote `Aa`, i.e. the two
 ordered genotypes `(A, a)` and `(a, A)`, has frequency `2pq`. -/
 theorem offspring_heterozygote (G : PMF (Bool × Bool)) :
     (offspring G (true, false)).toReal + (offspring G (false, true)).toReal =
@@ -168,12 +168,12 @@ theorem offspring_heterozygote (G : PMF (Bool × Bool)) :
   rw [offspring_apply, offspring_apply, ENNReal.toReal_mul, ENNReal.toReal_mul]
   ring
 
-/-- The deviation `D = P(AA) - p²` of a biallelic genotype law from Hardy–Weinberg
+/-- **Deviation from Hardy–Weinberg proportions.** The deviation `D = P(AA) - p²` of a biallelic genotype law from Hardy–Weinberg
 proportions, where `p` is the frequency of allele `A` (`true`). -/
 noncomputable def hwDeviation (G : PMF (Bool × Bool)) : ℝ :=
   (G (true, true)).toReal - (gamete G true).toReal ^ 2
 
-/-- The deviation from Hardy–Weinberg proportions vanishes after one generation of random
+/-- **Hardy–Weinberg proportions after one generation of random mating.** The deviation from Hardy–Weinberg proportions vanishes after one generation of random
 mating, whatever the parental genotype law. -/
 theorem hwDeviation_offspring (G : PMF (Bool × Bool)) : hwDeviation (offspring G) = 0 := by
   rw [hwDeviation, gamete_offspring, offspring_true_true, sub_self]

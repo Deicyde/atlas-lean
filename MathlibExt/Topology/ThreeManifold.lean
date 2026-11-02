@@ -40,7 +40,7 @@ class IsThreeManifold (M : Type*) [TopologicalSpace M]
     [ChartedSpace (EuclideanSpace ℝ (Fin 3)) M] : Prop
     extends T2Space M, SecondCountableTopology M
 
-/-- A **topological 3-manifold with boundary**: a Hausdorff, second-countable topological space
+/-- **Topological 3-manifold with boundary.** A **topological 3-manifold with boundary**: a Hausdorff, second-countable topological space
 locally homeomorphic to the Euclidean half-space `EuclideanHalfSpace 2`. -/
 class IsThreeManifoldWithBoundary (M : Type*) [TopologicalSpace M]
     [ChartedSpace (EuclideanHalfSpace 2) M] : Prop

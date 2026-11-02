@@ -58,7 +58,7 @@ instance (F : Type*) [Field F] [NumberField F] : Infinite (𝓞 F) :=
     intro a b h
     exact Int.cast_injective (by exact_mod_cast h))
 
-/-- For `σ > 1`, the Dedekind zeta terms `(N v) ^ (-σ)` are summable over
+/-- **Summability of Dedekind zeta terms for σ > 1.** For `σ > 1`, the Dedekind zeta terms `(N v) ^ (-σ)` are summable over
 the height-one primes of the ring of integers. -/
 theorem summable_heightOneSpectrum_absNorm_rpow_neg_of_one_lt
     (F : Type*) [Field F] [NumberField F] {σ : ℝ} (hσ : 1 < σ) :

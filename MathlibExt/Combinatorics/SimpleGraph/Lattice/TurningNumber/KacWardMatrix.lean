@@ -48,10 +48,10 @@ namespace StatMech.Onsager
 
 /-! ### Sites, directions and darts -/
 
-/-- The sites `ℤ_L × ℤ_L` of the `L × L` square-lattice torus. -/
+/-- **Sites of the square-lattice torus.** The sites `ℤ_L × ℤ_L` of the `L × L` square-lattice torus. -/
 abbrev ons_V (L : ℕ) := ZMod L × ZMod L
 
-/-- The neighbor of a site in direction `μ`: `0` east, `1` north, `2` west, `3` south. -/
+/-- **Neighbouring site in a given direction on the torus.** The neighbor of a site in direction `μ`: `0` east, `1` north, `2` west, `3` south. -/
 def ons_dirStep (L : ℕ) (μ : Fin 4) (s : ZMod L × ZMod L) : ZMod L × ZMod L :=
   match μ with
   | 0 => (s.1 + 1, s.2)
@@ -59,12 +59,12 @@ def ons_dirStep (L : ℕ) (μ : Fin 4) (s : ZMod L × ZMod L) : ZMod L × ZMod L
   | 2 => (s.1 - 1, s.2)
   | 3 => (s.1, s.2 - 1)
 
-/-- Darts (directed edges) of the torus: a starting site and a direction. -/
+/-- **Darts of the square-lattice torus.** Darts (directed edges) of the torus: a starting site and a direction. -/
 abbrev ons_Dart (L : ℕ) := (ZMod L × ZMod L) × Fin 4
 
 /-! ### Turn weights and the Kac-Ward matrix -/
 
-/-- The turn weight from direction `μ` to direction `ν`: `1` straight, `ω` for a left turn, `0` for
+/-- **Turn weight between two lattice directions.** The turn weight from direction `μ` to direction `ν`: `1` straight, `ω` for a left turn, `0` for
 a U-turn, `ω⁻¹` for a right turn. -/
 noncomputable def ons_turnW (ω : ℂ) (μ ν : Fin 4) : ℂ :=
   if ν = μ then 1
@@ -72,12 +72,12 @@ noncomputable def ons_turnW (ω : ℂ) (μ ν : Fin 4) : ℂ :=
   else if ν = μ + 2 then 0
   else ω⁻¹
 
-/-- The Kac-Ward matrix: the entry from `d₁` to `d₂` is `x * ons_turnW ω d₁.2 d₂.2` when `d₂` starts
+/-- **Kac–Ward matrix of the square-lattice torus.** The Kac-Ward matrix: the entry from `d₁` to `d₂` is `x * ons_turnW ω d₁.2 d₂.2` when `d₂` starts
 at the head of `d₁`, and `0` otherwise. -/
 noncomputable def ons_KWmat (L : ℕ) (x ω : ℂ) : Matrix (ons_Dart L) (ons_Dart L) ℂ :=
   fun d₂ d₁ => if d₂.1 = ons_dirStep L d₁.2 d₁.1 then x * ons_turnW ω d₁.2 d₂.2 else 0
 
-/-- Translation of a dart by a lattice vector `t`. -/
+/-- **Translation of a dart by a lattice vector.** Translation of a dart by a lattice vector `t`. -/
 def ons_shiftDart (L : ℕ) (t : ZMod L × ZMod L) (d : ons_Dart L) : ons_Dart L :=
   ((d.1.1 + t.1, d.1.2 + t.2), d.2)
 

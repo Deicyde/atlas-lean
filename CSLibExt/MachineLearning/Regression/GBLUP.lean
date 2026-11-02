@@ -76,7 +76,7 @@ open Cslib.MachineLearning.LeastSquares Cslib.MachineLearning.GaussianProcessReg
 variable {ι : Type*} [Fintype ι] [DecidableEq ι] {m : ℕ}
 
 omit [DecidableEq ι] in
-/-- For `λ > 0` the GBLUP matrix `ZZᵀ + λI` is positive definite. -/
+/-- **Positive definiteness of the GBLUP matrix.** For `λ > 0` the GBLUP matrix `ZZᵀ + λI` is positive definite. -/
 theorem posDef_mul_transpose_add (Z : Matrix (Fin m) ι ℝ) {lam : ℝ} (hlam : 0 < lam) :
     (Z * Zᵀ + lam • (1 : Matrix (Fin m) (Fin m) ℝ)).PosDef := by
   have h1 : (Z * Zᵀ).PosSemidef := by
@@ -84,7 +84,7 @@ theorem posDef_mul_transpose_add (Z : Matrix (Fin m) ι ℝ) {lam : ℝ} (hlam :
     rwa [conjTranspose_eq_transpose_of_trivial] at this
   exact PosDef.posSemidef_add h1 (PosDef.one.smul hlam)
 
-/-- The **push-through identity** `(ZᵀZ + λI)⁻¹ Zᵀ = Zᵀ (ZZᵀ + λI)⁻¹` for `λ > 0`. -/
+/-- **Push-through identity for ridge regression.** The **push-through identity** `(ZᵀZ + λI)⁻¹ Zᵀ = Zᵀ (ZZᵀ + λI)⁻¹` for `λ > 0`. -/
 theorem transpose_mul_add_inv_mul_transpose (Z : Matrix (Fin m) ι ℝ) {lam : ℝ} (hlam : 0 < lam) :
     (Zᵀ * Z + lam • (1 : Matrix ι ι ℝ))⁻¹ * Zᵀ =
       Zᵀ * (Z * Zᵀ + lam • (1 : Matrix (Fin m) (Fin m) ℝ))⁻¹ := by
@@ -106,7 +106,7 @@ theorem mul_ridgeHat_eq_gblupHat (Z : Matrix (Fin m) ι ℝ) {lam : ℝ} (hlam :
       Z * Zᵀ * (Z * Zᵀ + lam • (1 : Matrix (Fin m) (Fin m) ℝ))⁻¹ := by
   rw [Matrix.mul_assoc, transpose_mul_add_inv_mul_transpose Z hlam, Matrix.mul_assoc]
 
-/-- The ridge marker effects are back-solved from GBLUP:
+/-- **Ridge marker effects are back-solved from GBLUP.** The ridge marker effects are back-solved from GBLUP:
 `(ZᵀZ + λI)⁻¹ Zᵀ y = Zᵀ (ZZᵀ + λI)⁻¹ y`. -/
 theorem ridgeEstimate_eq (Z : Matrix (Fin m) ι ℝ) (y : Fin m → ℝ) {lam : ℝ} (hlam : 0 < lam) :
     ridgeEstimate Z y lam =
@@ -123,25 +123,25 @@ theorem mulVec_ridgeEstimate {τ : Type*} (Z' : Matrix τ ι ℝ)
 
 /-! ### The Gaussian-process view -/
 
-/-- The linear marker kernel `k(a, b) = s ⟪a, b⟫ = s ∑ⱼ aⱼ bⱼ` on genotype vectors: the
+/-- **Linear marker kernel on genotype vectors.** The linear marker kernel `k(a, b) = s ⟪a, b⟫ = s ∑ⱼ aⱼ bⱼ` on genotype vectors: the
 covariance of genetic values `aᵀβ` and `bᵀβ` when the marker effects `β` are independent with
 variance `s`. -/
 noncomputable def markerKernel (s : ℝ) (a b : ι → ℝ) : ℝ :=
   s * (a ⬝ᵥ b)
 
 omit [DecidableEq ι] in
-/-- Unfolding `markerKernel`. -/
+/-- **Formula for the linear marker kernel.** Unfolding `markerKernel`. -/
 theorem markerKernel_apply (s : ℝ) (a b : ι → ℝ) : markerKernel s a b = s * (a ⬝ᵥ b) := rfl
 
 omit [DecidableEq ι] in
-/-- The kernel matrix of the marker kernel between genotypes `Z'` and `Z` is `s Z' Zᵀ`. -/
+/-- **Kernel matrix of the marker kernel.** The kernel matrix of the marker kernel between genotypes `Z'` and `Z` is `s Z' Zᵀ`. -/
 theorem kernelMatrix_markerKernel {τ ν : Type*} (s : ℝ) (Z' : Matrix τ ι ℝ) (Z : Matrix ν ι ℝ) :
     kernelMatrix (markerKernel s) Z' Z = s • (Z' * Zᵀ) := by
   ext i j
   simp [kernelMatrix, markerKernel, Matrix.mul_apply, dotProduct]
 
 omit [DecidableEq ι] in
-/-- For `s ≥ 0` the marker kernel is a covariance kernel: its kernel matrix on any inputs is
+/-- **Positive semidefiniteness of the marker kernel matrix.** For `s ≥ 0` the marker kernel is a covariance kernel: its kernel matrix on any inputs is
 positive semidefinite. -/
 theorem kernelMatrix_markerKernel_posSemidef {ν : Type*} [Finite ν] {s : ℝ} (hs : 0 ≤ s)
     (Z : Matrix ν ι ℝ) : (kernelMatrix (markerKernel s) Z Z).PosSemidef := by

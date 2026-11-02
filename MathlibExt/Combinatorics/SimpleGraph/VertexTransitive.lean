@@ -14,7 +14,7 @@ public import Mathlib.Combinatorics.SimpleGraph.Maps
 
 namespace SimpleGraph
 
-/-- A graph is vertex-transitive when its automorphism group acts transitively
+/-- **Vertex-transitive graph.** A graph is vertex-transitive when its automorphism group acts transitively
 on vertices. -/
 def IsVertexTransitive {V : Type*} (G : SimpleGraph V) : Prop :=
   ∀ u v : V, ∃ e : G ≃g G, e u = v

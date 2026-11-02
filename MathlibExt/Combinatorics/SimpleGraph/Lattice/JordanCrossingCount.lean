@@ -44,7 +44,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- Every vertex of `K` has even degree. -/
+/-- **Even-degree condition on a subgraph.** Every vertex of `K` has even degree. -/
 def jcx_IsEven {V : Type*} (K : SimpleGraph V) : Prop :=
   ∀ v : V, Even (Nat.card (K.neighborSet v))
 
@@ -361,7 +361,7 @@ theorem jcx_faceCount_deleteCycle {V : Type*} [Finite V]
     faceCount_sup_edge_of_reachable Kq hvzne hvznadj hvz
   rw [hKeq2, hclose, hKq, hqface]
 
-/-- `K` reduces to the empty graph by repeatedly deleting a cycle through a base vertex `v` such
+/-- **Even-peelable graph.** `K` reduces to the empty graph by repeatedly deleting a cycle through a base vertex `v` such
 that, after the deletion, the other vertices of the cycle are isolated. -/
 inductive jcx_IsEvenPeelable {V : Type*} : SimpleGraph V → Prop where
   | bot : jcx_IsEvenPeelable (⊥ : SimpleGraph V)
@@ -465,7 +465,7 @@ theorem jcx_isEvenPeelable_of_isCycles {V : Type*} [Finite V]
       exact jcx_IsEvenPeelable.cycle (jcx_isEven_of_isCycles hcyc) p hpc hiso
         (ih _ (by omega) _ hK'cyc rfl)
 
-/-- The vertices of two unit squares `[0, 1]²` and `[1, 2]²` sharing the corner `(1, 1)`. -/
+/-- **Vertices of two unit squares sharing a corner.** The vertices of two unit squares `[0, 1]²` and `[1, 2]²` sharing the corner `(1, 1)`. -/
 def jcx_cross_emb (i : Fin 7) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![1, 1] | 3 => ![0, 1]
@@ -473,14 +473,14 @@ def jcx_cross_emb (i : Fin 7) : Site 2 :=
 
 theorem jcx_cross_emb_inj : Function.Injective jcx_cross_emb := by decide +kernel
 
-/-- Adjacency of the two squares sharing a corner, as a Boolean relation. -/
+/-- **Adjacency relation of two corner-sharing squares.** Adjacency of the two squares sharing a corner, as a Boolean relation. -/
 def jcx_cross_rel (i j : Fin 7) : Bool :=
   (i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||
   (i == 2 && j == 3) || (i == 3 && j == 2) || (i == 3 && j == 0) || (i == 0 && j == 3) ||
   (i == 2 && j == 4) || (i == 4 && j == 2) || (i == 4 && j == 5) || (i == 5 && j == 4) ||
   (i == 5 && j == 6) || (i == 6 && j == 5) || (i == 6 && j == 2) || (i == 2 && j == 6)
 
-/-- Two 4-cycles sharing the vertex `2`, on `Fin 7`. -/
+/-- **Two 4-cycles sharing a vertex.** Two 4-cycles sharing the vertex `2`, on `Fin 7`. -/
 def jcx_cross_G : SimpleGraph (Fin 7) where
   Adj i j := jcx_cross_rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -494,7 +494,7 @@ theorem jcx_cross_isSub : ∀ ⦃i j : Fin 7⦄, jcx_cross_G.Adj i j →
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jcx_cross_rel, jcx_cross_emb]
 
-/-- Two unit squares sharing a corner as a `PlanarZ2Subgraph`. -/
+/-- **Two corner-sharing unit squares as a planar lattice subgraph.** Two unit squares sharing a corner as a `PlanarZ2Subgraph`. -/
 noncomputable def jcx_cross_P : PlanarZ2Subgraph where
   V := Fin 7
   finV := inferInstance
@@ -550,7 +550,7 @@ theorem jcx_cross_isEven : jcx_IsEven jcx_cross_G := by
       exact Set.ncard_pair (by decide)
   rcases key with h | h <;> rw [h] <;> decide
 
-/-- The 4-cycle of the upper square, based at the shared vertex. -/
+/-- **Upper 4-cycle based at the shared vertex.** The 4-cycle of the upper square, based at the shared vertex. -/
 def jcx_cross_cycB : jcx_cross_G.Walk 2 2 :=
   Walk.cons (by rw [jcx_cross_G_adj]; decide : jcx_cross_G.Adj 2 4)
     (Walk.cons (by rw [jcx_cross_G_adj]; decide : jcx_cross_G.Adj 4 5)
@@ -561,12 +561,12 @@ theorem jcx_cross_cycB_isCycle : jcx_cross_cycB.IsCycle := by
   rw [jcx_cross_cycB, Walk.cons_isCycle_iff]
   exact ⟨by rw [Walk.isPath_def]; decide, by decide⟩
 
-/-- Adjacency of the lower 4-cycle, as a Boolean relation. -/
+/-- **Adjacency relation of the lower 4-cycle.** Adjacency of the lower 4-cycle, as a Boolean relation. -/
 def jcx_cross_A_rel (i j : Fin 7) : Bool :=
   (i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||
   (i == 2 && j == 3) || (i == 3 && j == 2) || (i == 3 && j == 0) || (i == 0 && j == 3)
 
-/-- The lower 4-cycle, which remains after deleting the upper one. -/
+/-- **Lower 4-cycle left after deleting the upper one.** The lower 4-cycle, which remains after deleting the upper one. -/
 def jcx_cross_A : SimpleGraph (Fin 7) where
   Adj i j := jcx_cross_A_rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩

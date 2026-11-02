@@ -33,14 +33,14 @@ namespace ParityProduct
 
 open Finset
 
-/-- The integer indicator that a natural number is even. -/
+/-- **Even indicator of a natural number.** The integer indicator that a natural number is even. -/
 def evenIndicator (q : ℕ) : ℤ := if Even q then 1 else 0
 
-/-- The coefficients of the even-indicator expansion: one at zero and
+/-- **Coefficients of the even-indicator expansion.** The coefficients of the even-indicator expansion: one at zero and
 `(-1) ^ i * 2 ^ (i - 1)` at positive indices. -/
 def parityCoeff (i : ℕ) : ℤ := if i = 0 then 1 else (-1) ^ i * 2 ^ (i - 1)
 
-/-- Twice the parity coefficient is the sign coefficient, with a correction at zero. -/
+/-- **Twice a parity coefficient is a sign coefficient.** Twice the parity coefficient is the sign coefficient, with a correction at zero. -/
 theorem two_mul_parityCoeff (i : ℕ) :
     2 * parityCoeff i = (-2) ^ i + if i = 0 then 1 else 0 := by
   unfold parityCoeff
@@ -52,7 +52,7 @@ theorem two_mul_parityCoeff (i : ℕ) :
       pow_succ (2 : ℤ) k]
     simp [mul_assoc, mul_comm]
 
-/-- Twice the even indicator is one plus the parity sign. -/
+/-- **Twice the even indicator is one plus the parity sign.** Twice the even indicator is one plus the parity sign. -/
 theorem two_mul_evenIndicator (q : ℕ) : 2 * evenIndicator q = 1 + (-1) ^ q := by
   unfold evenIndicator
   by_cases h : Even q
@@ -65,7 +65,7 @@ private theorem sum_powerset_neg_two {E : Type*} (A : Finset E) :
     ∑ s ∈ A.powerset, (-2 : ℤ) ^ #s = (-1) ^ #A := by
   simpa using sum_pow_mul_eq_add_pow (-2 : ℤ) 1 A
 
-/-- Summing parity coefficients over all subsets gives the even-cardinality indicator. -/
+/-- **Subset sum of parity coefficients is the even-cardinality indicator.** Summing parity coefficients over all subsets gives the even-cardinality indicator. -/
 theorem sum_powerset_parityCoeff {E : Type*} (A : Finset E) :
     ∑ s ∈ A.powerset, parityCoeff #s = evenIndicator #A := by
   classical
@@ -158,7 +158,7 @@ private theorem dvd_term {J₁ J₂ : Finset (Fin r)} (A : Fin r → Finset E)
   rw [← prod_pow_eq_pow_sum]
   exact prod_dvd_prod_of_dvd _ _ fun j _ => dvd_factor A hS j
 
-/-- A product of even-cardinality indicators and parity signs is congruent to its finite
+/-- **Truncated subset expansion of parity products modulo powers of two.** A product of even-cardinality indicators and parity signs is congruent to its finite
 subset expansion cut off at total degree `M`. Each even-indicator factor costs at most one
 power of two, so the cutoff must satisfy `ν - 1 + #J₁ ≤ M`, with `1 ≤ ν`.
 Indices outside `J₁ ∪ J₂` select only the empty subset. -/

@@ -58,7 +58,7 @@ statement does not hide interpolation basis functions in trusted definitions.
 open Filter Topology
 open scoped FourierTransform SchwartzMap
 
-/-- A function is radial if it takes the same value at points with the same norm. -/
+/-- **Radial function.** A function is radial if it takes the same value at points with the same norm. -/
 def Radial {E F : Type*} [Norm E] (f : E → F) : Prop :=
   ∀ e e' : E, ‖e‖ = ‖e'‖ → f e = f e'
 

@@ -63,7 +63,7 @@ open scoped Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.IslandModel
 
-/-- One generation of Wright's island-model identity-by-descent recursion for a deme of `M`
+/-- **Identity-by-descent recursion in Wright's island model.** One generation of Wright's island-model identity-by-descent recursion for a deme of `M`
 gene copies (`M = 2N` for `N` diploids) receiving a fraction `m` of migrants from an infinite
 pool: `F' = (1 - m) ^ 2 * (1 / M + (1 - 1 / M) * F)`. Biologically meaningful for `M ≥ 2`
 and `0 ≤ m ≤ 1`; `M = 1` is an algebraic extension (no pair of distinct copies exists), and at
@@ -71,14 +71,14 @@ and `0 ≤ m ≤ 1`; `M = 1` is an algebraic extension (no pair of distinct copi
 noncomputable def islandStep (M : ℕ) (m F : ℝ) : ℝ :=
   (1 - m) ^ 2 * (1 / M + (1 - 1 / M) * F)
 
-/-- The equilibrium identity-by-descent probability (Wright's `F_ST`) of the island model:
+/-- **Equilibrium $F_{ST}$ of Wright's island model.** The equilibrium identity-by-descent probability (Wright's `F_ST`) of the island model:
 `F* = (1 - m) ^ 2 / (M - (M - 1) (1 - m) ^ 2)`. Biologically meaningful for `M ≥ 2` and
 `0 ≤ m ≤ 1`; the denominator is positive already for `M ≥ 1` (`islandEquilibrium_denom_pos`),
 where `M = 1` is an algebraic extension. -/
 noncomputable def islandEquilibrium (M : ℕ) (m : ℝ) : ℝ :=
   (1 - m) ^ 2 / (M - (M - 1) * (1 - m) ^ 2)
 
-/-- For `M ≥ 1` and `0 ≤ m ≤ 1`, the per-generation contraction factor
+/-- **Island-model contraction factor lies in [0, 1).** For `M ≥ 1` and `0 ≤ m ≤ 1`, the per-generation contraction factor
 `(1 - m) ^ 2 (1 - 1 / M)` lies in `[0, 1)`. -/
 theorem islandFactor_mem_Ico {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Icc (0 : ℝ) 1) :
     (1 - m) ^ 2 * (1 - 1 / M) ∈ Ico (0 : ℝ) 1 := by
@@ -94,7 +94,7 @@ theorem islandFactor_mem_Ico {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Icc (0
         mul_le_mul_of_nonneg_right h3 h1
     _ < 1 := by rw [one_mul]; exact h2
 
-/-- The denominator `M - (M - 1) (1 - m) ^ 2` of the equilibrium is positive (at least `1`) for
+/-- **Positivity of the island-model equilibrium denominator.** The denominator `M - (M - 1) (1 - m) ^ 2` of the equilibrium is positive (at least `1`) for
 `M ≥ 1` and `0 ≤ m ≤ 1`. -/
 theorem islandEquilibrium_denom_pos {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Icc (0 : ℝ) 1) :
     0 < (M : ℝ) - (M - 1) * (1 - m) ^ 2 := by
@@ -102,7 +102,7 @@ theorem islandEquilibrium_denom_pos {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈
   have h3 : (1 - m) ^ 2 ≤ 1 := by nlinarith [hm.1, hm.2]
   nlinarith [sq_nonneg (1 - m)]
 
-/-- `F*` is a fixed point of the island-model recursion. -/
+/-- **Island-model equilibrium is a fixed point of the recursion.** `F*` is a fixed point of the island-model recursion. -/
 theorem islandStep_islandEquilibrium {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Icc (0 : ℝ) 1) :
     islandStep M m (islandEquilibrium M m) = islandEquilibrium M m := by
   have hD := (islandEquilibrium_denom_pos hM hm).ne'
@@ -115,7 +115,7 @@ theorem islandStep_islandEquilibrium {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m �
     ring
   rw [key, mul_one_div]
 
-/-- `F*` is the only fixed point of the island-model recursion. -/
+/-- **Uniqueness of the island-model fixed point.** `F*` is the only fixed point of the island-model recursion. -/
 theorem eq_islandEquilibrium_of_islandStep_eq {M : ℕ} (hM : 0 < M) {m : ℝ}
     (hm : m ∈ Icc (0 : ℝ) 1) {F : ℝ} (hF : islandStep M m F = F) : F = islandEquilibrium M m := by
   have hD := (islandEquilibrium_denom_pos hM hm).ne'
@@ -155,7 +155,7 @@ theorem tendsto_islandStep_iterate {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ 
   rw [← islandStep_iterate_sub hM hm]
   ring
 
-/-- The equilibrium identity-by-descent probability lies in `[0, 1]`. -/
+/-- **Island-model equilibrium lies in [0, 1].** The equilibrium identity-by-descent probability lies in `[0, 1]`. -/
 theorem islandEquilibrium_mem_Icc {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Icc (0 : ℝ) 1) :
     islandEquilibrium M m ∈ Icc (0 : ℝ) 1 := by
   have hD := islandEquilibrium_denom_pos hM hm
@@ -164,7 +164,7 @@ theorem islandEquilibrium_mem_Icc {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ I
   refine ⟨div_nonneg (sq_nonneg _) hD.le, (div_le_one hD).2 ?_⟩
   nlinarith
 
-/-- With migration (`0 < m ≤ 1`) the equilibrium identity-by-descent probability lies in
+/-- **Island-model equilibrium is below one under migration.** With migration (`0 < m ≤ 1`) the equilibrium identity-by-descent probability lies in
 `[0, 1)`. -/
 theorem islandEquilibrium_mem_Ico {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ Ioc (0 : ℝ) 1) :
     islandEquilibrium M m ∈ Ico (0 : ℝ) 1 := by
@@ -174,7 +174,7 @@ theorem islandEquilibrium_mem_Ico {M : ℕ} (hM : 0 < M) {m : ℝ} (hm : m ∈ I
   refine ⟨div_nonneg (sq_nonneg _) hD.le, (div_lt_one hD).2 ?_⟩
   nlinarith
 
-/-- Isolated demes (`m = 0`): the equilibrium is complete identity by descent, `F* = 1`. -/
+/-- **Complete identity by descent in isolated demes.** Isolated demes (`m = 0`): the equilibrium is complete identity by descent, `F* = 1`. -/
 @[simp]
 theorem islandEquilibrium_zero_right (M : ℕ) : islandEquilibrium M 0 = 1 := by
   simp [islandEquilibrium]

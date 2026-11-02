@@ -48,7 +48,7 @@ namespace Metric
 
 variable {X : Type*} [PseudoMetricSpace X]
 
-/-- A pseudometric space `X` is `δ`-hyperbolic (in the sense of Gromov) if `0 ≤ δ` and the
+/-- **Gromov $\delta$-hyperbolic space.** A pseudometric space `X` is `δ`-hyperbolic (in the sense of Gromov) if `0 ≤ δ` and the
 Gromov product satisfies the four-point inequality
 `(x ∣ z)_w ≥ min (x ∣ y)_w (y ∣ z)_w - δ` for all points `w x y z`, where
 `(x ∣ y)_w = Metric.gromovProduct w x y` (basepoint first, as in Mathlib). -/
@@ -59,7 +59,7 @@ def IsDeltaHyperbolic (X : Type*) [PseudoMetricSpace X] (δ : ℝ) : Prop :=
 real number $\delta$ such that $X$ is $\delta$-hyperbolic. -/
 def IsGromovHyperbolic (X : Type*) [PseudoMetricSpace X] : Prop := ∃ δ : ℝ, IsDeltaHyperbolic X δ
 
-/-- The defining four-point inequality of a `δ`-hyperbolic space. -/
+/-- **Four-point inequality of a $\delta$-hyperbolic space.** The defining four-point inequality of a `δ`-hyperbolic space. -/
 theorem IsDeltaHyperbolic.four_point {δ : ℝ} (h : IsDeltaHyperbolic X δ) (w x y z : X) :
     min (gromovProduct w x y) (gromovProduct w y z) - δ ≤ gromovProduct w x z :=
   h.2 w x y z

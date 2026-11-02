@@ -41,7 +41,7 @@ means every complex root of the characteristic polynomial of the integer adjacen
 (0 1)(1 k)` with `2 ≤ k < n`, and `n ≥ 3`.
 -/
 
-/-- A square integer matrix is integral: every complex root of its characteristic polynomial (every
+/-- **Integer matrix with integral spectrum.** A square integer matrix is integral: every complex root of its characteristic polynomial (every
 eigenvalue) is an integer. -/
 def HasIntegralSpectrum {n : Type*} [Fintype n] [DecidableEq n] (A : Matrix n n ℤ) : Prop :=
   ∀ μ : ℂ, (A.map (Int.castRingHom ℂ)).charpoly.IsRoot μ → ∃ k : ℤ, (k : ℂ) = μ

@@ -35,12 +35,12 @@ namespace StatMech.Onsager.CellConnect2
 open Finset StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
   StatMech.Onsager.CellGaussBonnet StatMech.Onsager.CellConnect
 
-/-- `cornerWeight` agrees with its integer version `icw`. -/
+/-- **Corner weight agrees with its integer version.** `cornerWeight` agrees with its integer version `icw`. -/
 theorem cornerWeight_eq_icw (m : ℕ) : cornerWeight m = icw (m : ℤ) := by
   unfold cornerWeight icw
   split_ifs <;> omega
 
-/-- The change of a vertex weight when one more cell becomes incident. -/
+/-- **Change of a vertex weight when one more cell is incident.** The change of a vertex weight when one more cell becomes incident. -/
 theorem cornerWeight_jump (m : ℕ) :
     cornerWeight (m + 1) - cornerWeight m = ijump (m : ℤ) := by
   unfold ijump
@@ -48,12 +48,12 @@ theorem cornerWeight_jump (m : ℕ) :
   push_cast
   ring
 
-/-- The indicator `bI` of a decided proposition. -/
+/-- **Boolean indicator of a decided proposition.** The indicator `bI` of a decided proposition. -/
 theorem bI_decide (p : Prop) [Decidable p] : bI (decide p) = if p then 1 else 0 := by
   unfold bI
   by_cases h : p <;> simp [h]
 
-/-- The change of the corner defect when the cell `(x, y)` is added, in terms of its eight
+/-- **Change of the corner defect in terms of eight neighbours.** The change of the corner defect when the cell `(x, y)` is added, in terms of its eight
   neighbours. -/
 theorem cornerDiff_jump_sum (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (∑ v ∈ cornersOf (x, y),
@@ -74,17 +74,17 @@ theorem cornerDiff_jump_sum (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) �
   simp only [decide_eq_true_eq]
   ring
 
-/-- A lattice point is not a vertex of `S` iff no cell of `S` is incident to it. -/
+/-- **Non-vertices are the points with no incident cell.** A lattice point is not a vertex of `S` iff no cell of `S` is incident to it. -/
 theorem notMem_cellVerts_iff_cornerCount_zero (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     v ∉ cellVerts S ↔ cornerCount S v = 0 := by
   rw [← cornerCount_pos_iff_mem]; omega
 
-/-- The size of `s \ t` as a sum of indicators. -/
+/-- **Cardinality of a set difference as a sum of indicators.** The size of `s \ t` as a sum of indicators. -/
 theorem card_sdiff_eq_sum (s t : Finset (ℤ × ℤ)) :
     ((s \ t).card : ℤ) = ∑ v ∈ s, (if v ∉ t then (1 : ℤ) else 0) := by
   rw [Finset.sum_boole, Finset.sdiff_eq_filter]
 
-/-- The number of new vertices when the cell `(x, y)` is added. -/
+/-- **New vertices of an added cell match the local count.** The number of new vertices when the cell `(x, y)` is added. -/
 theorem sdiff_cellVerts_card_eq_deltaV (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     ((cornersOf (x, y) \ cellVerts S).card : ℤ)
       = deltaV (decide ((x + 1, y) ∈ S)) (decide ((x - 1, y) ∈ S)) (decide ((x, y + 1) ∈ S))
@@ -112,7 +112,7 @@ theorem sdiff_cellVerts_card_eq_deltaV (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc
   simp only [decide_eq_true_eq]
   ring
 
-/-- The horizontal edge with doubled midpoint `(2x + 1, 2y)` belongs to `S` iff one of the two cells
+/-- **Membership of a cell's bottom edge in the cell complex.** The horizontal edge with doubled midpoint `(2x + 1, 2y)` belongs to `S` iff one of the two cells
   it bounds does. -/
 theorem mem_cellEdges_bottom (S : Finset (ℤ × ℤ)) (x y : ℤ) :
     ((2 * x + 1, 2 * y) : ℤ × ℤ) ∈ cellEdges S ↔ (x, y) ∈ S ∨ (x, y - 1) ∈ S := by
@@ -133,7 +133,7 @@ theorem mem_cellEdges_bottom (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         dsimp only [edgesOf]
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; try omega⟩
 
-/-- The horizontal edge with doubled midpoint `(2x + 1, 2y + 2)` belongs to `S` iff one of the two
+/-- **Membership of a cell's top edge in the cell complex.** The horizontal edge with doubled midpoint `(2x + 1, 2y + 2)` belongs to `S` iff one of the two
   cells it bounds does. -/
 theorem mem_cellEdges_top (S : Finset (ℤ × ℤ)) (x y : ℤ) :
     ((2 * x + 1, 2 * y + 2) : ℤ × ℤ) ∈ cellEdges S ↔ (x, y) ∈ S ∨ (x, y + 1) ∈ S := by
@@ -154,7 +154,7 @@ theorem mem_cellEdges_top (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         dsimp only [edgesOf]
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, true_and]; try omega⟩
 
-/-- The vertical edge with doubled midpoint `(2x, 2y + 1)` belongs to `S` iff one of the two cells
+/-- **Membership of a cell's left edge in the cell complex.** The vertical edge with doubled midpoint `(2x, 2y + 1)` belongs to `S` iff one of the two cells
   it bounds does. -/
 theorem mem_cellEdges_left (S : Finset (ℤ × ℤ)) (x y : ℤ) :
     ((2 * x, 2 * y + 1) : ℤ × ℤ) ∈ cellEdges S ↔ (x, y) ∈ S ∨ (x - 1, y) ∈ S := by
@@ -175,7 +175,7 @@ theorem mem_cellEdges_left (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         dsimp only [edgesOf]
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; try omega⟩
 
-/-- The vertical edge with doubled midpoint `(2x + 2, 2y + 1)` belongs to `S` iff one of the two
+/-- **Membership of a cell's right edge in the cell complex.** The vertical edge with doubled midpoint `(2x + 2, 2y + 1)` belongs to `S` iff one of the two
   cells it bounds does. -/
 theorem mem_cellEdges_right (S : Finset (ℤ × ℤ)) (x y : ℤ) :
     ((2 * x + 2, 2 * y + 1) : ℤ × ℤ) ∈ cellEdges S ↔ (x, y) ∈ S ∨ (x + 1, y) ∈ S := by
@@ -196,7 +196,7 @@ theorem mem_cellEdges_right (S : Finset (ℤ × ℤ)) (x y : ℤ) :
         dsimp only [edgesOf]
         simp only [mem_insert, mem_singleton, Prod.mk.injEq, and_true]; try omega⟩
 
-/-- The number of new edges when the cell `(x, y)` is added. -/
+/-- **New edges of an added cell match the local count.** The number of new edges when the cell `(x, y)` is added. -/
 theorem sdiff_cellEdges_card_eq_deltaE (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     ((edgesOf (x, y) \ cellEdges S).card : ℤ)
       = deltaE (decide ((x + 1, y) ∈ S)) (decide ((x - 1, y) ∈ S)) (decide ((x, y + 1) ∈ S))

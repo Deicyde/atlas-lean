@@ -55,13 +55,13 @@ namespace Lattice
 
 open StatMech.RSW.Box
 
-/-- The quadrant of sites `p` with `p 0 ≤ z 0 - 1` and `p 1 ≤ z 1 - 1`. -/
+/-- **Quadrant below and left of a site.** The quadrant of sites `p` with `p 0 ≤ z 0 - 1` and `p 1 ≤ z 1 - 1`. -/
 def jec_quad (z : Site 2) : Set (Site 2) := {p | p 0 ≤ z 0 - 1 ∧ p 1 ≤ z 1 - 1}
 
 @[simp] theorem jec_mem_quad (z p : Site 2) :
     p ∈ jec_quad z ↔ p 0 ≤ z 0 - 1 ∧ p 1 ≤ z 1 - 1 := Iff.rfl
 
-/-- The vertical lattice edges in a column left of `z` joining rows `z 1 - 1` and `z 1`: the
+/-- **Ray edges left of a site.** The vertical lattice edges in a column left of `z` joining rows `z 1 - 1` and `z 1`: the
 edges crossed by a horizontal ray going left from the face corner of `z`. -/
 def jec_rayEdge (z : Site 2) (e : Sym2 (Site 2)) : Prop := by
   classical
@@ -79,7 +79,7 @@ def jec_rayEdge (z : Site 2) (e : Sym2 (Site 2)) : Prop := by
       ((x 1 = z 1 - 1 ∧ y 1 = z 1) ∨ (y 1 = z 1 - 1 ∧ x 1 = z 1)) := by
   unfold jec_rayEdge; rfl
 
-/-- The horizontal lattice edges in a row below `z` joining columns `z 0 - 1` and `z 0`: the
+/-- **Wall edges below a site.** The horizontal lattice edges in a row below `z` joining columns `z 0 - 1` and `z 0`: the
 edges crossed by a vertical ray going down from the face corner of `z`. -/
 def jec_wallEdge (z : Site 2) (e : Sym2 (Site 2)) : Prop := by
   classical
@@ -109,13 +109,13 @@ theorem jec_ray_wall_excl (z u v : Site 2) :
   rw [jec_rayEdge_mk, jec_wallEdge_mk]; omega
 
 open Classical in
-/-- The number of ray edges of `z` traversed by the walk `w`. -/
+/-- **Ray-crossing count of a walk.** The number of ray edges of `z` traversed by the walk `w`. -/
 noncomputable def jec_rayCount (z : Site 2) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ :=
   w.edges.countP (fun e => decide (jec_rayEdge z e))
 
 open Classical in
-/-- The number of wall edges of `z` traversed by the walk `w`. -/
+/-- **Wall-crossing count of a walk.** The number of wall edges of `z` traversed by the walk `w`. -/
 noncomputable def jec_wallCount (z : Site 2) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ :=
   w.edges.countP (fun e => decide (jec_wallEdge z e))
@@ -277,7 +277,7 @@ theorem jec_localConstancy {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a)
         jec_rayCount_horizontalStep u v (by omega) (by omega) Vc hu
       rw [hray]
 
-/-- The inside of a closed walk `Vc` by the even–odd rule: sites whose ray count with respect to
+/-- **Inside of a closed walk by the even-odd rule.** The inside of a closed walk `Vc` by the even–odd rule: sites whose ray count with respect to
 `Vc` is odd. -/
 def jec_leftRegion {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) : Set (Site 2) :=
   {z | ¬ Even (jec_rayCount z Vc)}
@@ -297,7 +297,7 @@ theorem jec_leftRegion_bdEdge_support {a : Site 2} (Vc : (hypercubicLattice 2).W
   have hpar := jec_localConstancy Vc hadj hu hv
   tauto
 
-/-- The vertical lattice path from `(col, r)` up to `(col, r + k)`. -/
+/-- **Vertical lattice path upward.** The vertical lattice path from `(col, r)` up to `(col, r + k)`. -/
 def jec_vsegUp (col : ℤ) : (r : ℤ) → (k : ℕ) →
     (hypercubicLattice 2).Walk ![col, r] ![col, r + (k:ℤ)]
   | r, 0 => (SimpleGraph.Walk.nil).copy rfl (by norm_num)
@@ -306,7 +306,7 @@ def jec_vsegUp (col : ℤ) : (r : ℤ) → (k : ℕ) →
         simp [hypercubicLattice_adj, Fin.sum_univ_two]
       exact (SimpleGraph.Walk.cons hadj (jec_vsegUp col (r+1) k)).copy rfl (by push_cast; ring_nf)
 
-/-- The horizontal lattice path from `(t, row)` right to `(t + k, row)`. -/
+/-- **Horizontal lattice path rightward.** The horizontal lattice path from `(t, row)` right to `(t + k, row)`. -/
 def jec_hsegRight (row : ℤ) : (t : ℤ) → (k : ℕ) →
     (hypercubicLattice 2).Walk ![t, row] ![t + (k:ℤ), row]
   | t, 0 => (SimpleGraph.Walk.nil).copy rfl (by norm_num)
@@ -396,7 +396,7 @@ theorem jec_hsegRight_support (row t : ℤ) (k : ℕ) {p : Site 2}
     · obtain ⟨h1, h0a, h0b⟩ := ih (t+1) hp
       refine ⟨h1, by omega, by push_cast at h0b ⊢; omega⟩
 
-/-- A lattice path from `(b0, d)` back to `(a0, c)` running outside the rectangle `[α, β] × [c,
+/-- **Return path around a rectangle.** A lattice path from `(b0, d)` back to `(a0, c)` running outside the rectangle `[α, β] × [c,
 d]`: up, left to column `α - 1`, down to row `c - 1`, right, and up. -/
 def jec_retPath (α a0 b0 c d : ℤ) (_ha : α ≤ a0) (_hb : α ≤ b0) (_hcd : c ≤ d) :
     (hypercubicLattice 2).Walk ![b0, d] ![a0, c] :=
@@ -482,7 +482,7 @@ theorem jec_retPath_col (α β a0 b0 c d : ℤ) (ha : α ≤ a0) (hb : α ≤ b0
     rw [show ((a0 - (α-1)).toNat : ℤ) = a0 - (α-1) by omega] at h0b; omega
   · obtain ⟨h0, _, _⟩ := jec_vsegUp_support a0 (c-1) 1 h; omega
 
-/-- The half-plane of sites in rows below `y`. -/
+/-- **Half-plane below a row.** The half-plane of sites in rows below `y`. -/
 def jec_belowSet (y : ℤ) : Set (Site 2) := {p | p 1 ≤ y - 1}
 
 @[simp] theorem jec_mem_belowSet (y : ℤ) (p : Site 2) :
@@ -637,7 +637,7 @@ theorem jec_arcSeparatingSet (α β c d a0 b0 : ℤ)
       · exact Or.inl (hVP u h)
 
 open StatMech.Universality in
-/-- For every configuration, every overlap rectangle, and every `α < β`, `c ≤ d`, the arc-side
+/-- **Open vertical crossings separate the sides of a rectangle.** For every configuration, every overlap rectangle, and every `α < β`, `c ≤ d`, the arc-side
 property `StatMech.Universality.CrossingArcSides` holds: an open vertical crossing of the
 overlap separates the left side of `[α, β] × [c, d]` from its right side. -/
 theorem jec_crossingArcSides (ω : ConfigSpace (Sym2 (Site 2))) {α β m m' c d : ℤ}

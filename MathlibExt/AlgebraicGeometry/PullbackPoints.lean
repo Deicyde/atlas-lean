@@ -50,7 +50,7 @@ open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 
 universe u
 
-/-- Two points of a pullback with the same first and second projections are
+/-- **Pullback points determined by projections given a residue isomorphism.** Two points of a pullback with the same first and second projections are
 equal, when the residue field map at the second point's first projection is
 an isomorphism. -/
 theorem AlgebraicGeometry.Scheme.Pullback.eq_of_fst_eq_of_snd_eq_of_isIso_residueFieldMap

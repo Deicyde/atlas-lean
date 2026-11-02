@@ -81,30 +81,30 @@ open Finset
 variable {V : Type*} [DecidableEq V] {σ : V → Type*} [∀ v, Fintype (σ v)]
   [∀ v, DecidableEq (σ v)]
 
-/-- The joint values of the variables in `S`. -/
+/-- **Joint configurations of a set of variables.** The joint values of the variables in `S`. -/
 abbrev Config (σ : V → Type*) (S : Finset V) := (u : S) → σ u
 
-/-- The rising factorial `a (a + 1) ⋯ (a + n - 1)`, equal to `Γ(a + n) / Γ(a)` for `a > 0`. -/
+/-- **Rising factorial.** The rising factorial `a (a + 1) ⋯ (a + n - 1)`, equal to `Γ(a + n) / Γ(a)` for `a > 0`. -/
 noncomputable def rising (a : ℝ) (n : ℕ) : ℝ := (ascPochhammer ℝ n).eval a
 
-/-- The number of cases in `D` that take the values `c` on the variables `S`. -/
+/-- **Count of cases matching a configuration.** The number of cases in `D` that take the values `c` on the variables `S`. -/
 def count (D : List ((v : V) → σ v)) (S : Finset V) (c : Config σ S) : ℕ :=
   D.countP fun x => S.restrict x = c
 
-/-- The Bayesian–Dirichlet score of a family `F` with parent set `P ⊆ F` and hyperparameters
+/-- **Bayesian–Dirichlet family score.** The Bayesian–Dirichlet score of a family `F` with parent set `P ⊆ F` and hyperparameters
 `α` on the configurations of `F`. -/
 noncomputable def bdFamily (D : List ((v : V) → σ v)) {P F : Finset V} (hPF : P ⊆ F)
     (α : Config σ F → ℝ) : ℝ :=
   (∏ c : Config σ F, rising (α c) (count D F c)) /
     ∏ j : Config σ P, rising (∑ c with Finset.restrict₂ hPF c = j, α c) (count D P j)
 
-/-- The BD score of the structure `Pa` with family hyperparameters `α`: the product of the
+/-- **Bayesian–Dirichlet network score.** The BD score of the structure `Pa` with family hyperparameters `α`: the product of the
 family scores. -/
 noncomputable def bdScore [Fintype V] (D : List ((v : V) → σ v)) (Pa : V → Finset V)
     (α : (v : V) → Config σ (insert v (Pa v)) → ℝ) : ℝ :=
   ∏ v, bdFamily D (subset_insert v (Pa v)) (α v)
 
-/-- The sequential Pólya–Dirichlet prediction factor for the case `x` after the cases `D`:
+/-- **Sequential Pólya–Dirichlet prediction factor.** The sequential Pólya–Dirichlet prediction factor for the case `x` after the cases `D`:
 `∏_v (α_{v,c} + n_{v,c}) / (α_{v,j} + n_{v,j})`, with `c`, `j` the family and parent values of
 `x` and `n` the counts in `D`. This is a genuine conditional probability only when `Pa` is a
 DAG; for arbitrary parent maps (e.g. cycles or self-parents) the factors over all cases need
@@ -116,7 +116,7 @@ noncomputable def predictive [Fintype V] (Pa : V → Finset V)
     ((∑ c with Finset.restrict₂ (subset_insert v (Pa v)) c = (Pa v).restrict x, α v c) +
       count D (Pa v) ((Pa v).restrict x))
 
-/-- The sequential Pólya–Dirichlet product for the cases `D`, in order, after the cases `E`:
+/-- **Sequential Pólya–Dirichlet product after prior cases.** The sequential Pólya–Dirichlet product for the cases `D`, in order, after the cases `E`:
 each case contributes its `predictive` factor given all cases before it. A genuine probability
 of the data only when `Pa` is a DAG (see `predictive`). -/
 noncomputable def seqProbAfter [Fintype V] (Pa : V → Finset V)
@@ -125,13 +125,13 @@ noncomputable def seqProbAfter [Fintype V] (Pa : V → Finset V)
   | _, [] => 1
   | E, x :: D => predictive Pa α E x * seqProbAfter Pa α (E ++ [x]) D
 
-/-- The sequential Pólya–Dirichlet product for the cases of `D`, in order. A genuine probability
+/-- **Sequential Pólya–Dirichlet product of the data.** The sequential Pólya–Dirichlet product for the cases of `D`, in order. A genuine probability
 of the data only when `Pa` is a DAG (see `predictive`). -/
 noncomputable def seqProb [Fintype V] (Pa : V → Finset V)
     (α : (v : V) → Config σ (insert v (Pa v)) → ℝ) (D : List ((v : V) → σ v)) : ℝ :=
   seqProbAfter Pa α [] D
 
-/-- The number of cases matching a parent configuration is the sum over the family
+/-- **Parent configuration counts sum over family configurations.** The number of cases matching a parent configuration is the sum over the family
 configurations extending it (`N_j = ∑_k N_jk`). -/
 theorem sum_count_restrict₂ (D : List ((v : V) → σ v)) {P F : Finset V} (hPF : P ⊆ F)
     (j : Config σ P) :
@@ -210,14 +210,14 @@ theorem seqProb_eq_bdScore [Fintype V] (Pa : V → Finset V)
   rw [seqProb, ← mul_one (seqProbAfter Pa α [] D), ← h0, seqProbAfter_mul_bdScore,
     List.nil_append]
 
-/-- BDe hyperparameters (Heckerman, Geiger and Chickering): `ess` times the weight
+/-- **BDe hyperparameters.** BDe hyperparameters (Heckerman, Geiger and Chickering): `ess` times the weight
 `∑_{x ↦ c} p x` of the configuration `c` of `S`. When `∑ x, p x = 1`, `p` is a prior joint
 distribution and this is the prior probability of `c`. -/
 noncomputable def bdeHyper [Fintype V] (p : ((v : V) → σ v) → ℝ) (ess : ℝ) (S : Finset V)
     (c : Config σ S) : ℝ :=
   ess * ∑ x with S.restrict x = c, p x
 
-/-- The (unnormalized) marginal likelihood of the data restricted to the variables `S` under
+/-- **BDe marginal likelihood of a variable set.** The (unnormalized) marginal likelihood of the data restricted to the variables `S` under
 the BDe Dirichlet prior on the joint values of `S`. `p` is treated as generalized weights
 here: the total Dirichlet mass over configurations is `ess * ∑ x, p x`, so the omitted
 normalizing factor is `1 / rising (ess * ∑ x, p x) D.length`, the same for every `S`. When
@@ -227,7 +227,7 @@ noncomputable def margLik [Fintype V] (p : ((v : V) → σ v) → ℝ) (ess : �
     (D : List ((v : V) → σ v)) (S : Finset V) : ℝ :=
   ∏ c : Config σ S, rising (bdeHyper p ess S c) (count D S c)
 
-/-- With BDe hyperparameters, a family score is a ratio of set marginal likelihoods. -/
+/-- **BDe family score as a ratio of marginal likelihoods.** With BDe hyperparameters, a family score is a ratio of set marginal likelihoods. -/
 theorem bdFamily_bdeHyper [Fintype V] (p : ((v : V) → σ v) → ℝ) (ess : ℝ)
     (D : List ((v : V) → σ v)) {P F : Finset V} (hPF : P ⊆ F) :
     bdFamily D hPF (bdeHyper p ess F) = margLik p ess D F / margLik p ess D P := by
@@ -250,12 +250,12 @@ theorem bdFamily_bdeHyper [Fintype V] (p : ((v : V) → σ v) → ℝ) (ess : �
       exact hx
   simp only [bdFamily, margLik, hfib]
 
-/-- The BDe score of the structure `Pa`. -/
+/-- **BDe network score.** The BDe score of the structure `Pa`. -/
 noncomputable def bdeScore [Fintype V] (p : ((v : V) → σ v) → ℝ) (ess : ℝ)
     (D : List ((v : V) → σ v)) (Pa : V → Finset V) : ℝ :=
   bdScore D Pa fun v => bdeHyper p ess (insert v (Pa v))
 
-/-- `Pa'` is obtained from `Pa` by reversing a covered edge `x → y` (Chickering 1995): `x` is a
+/-- **Covered-edge reversal.** `Pa'` is obtained from `Pa` by reversing a covered edge `x → y` (Chickering 1995): `x` is a
 parent of `y` and `y`'s other parents are exactly `x`'s parents (`Pa y = insert x (Pa x)`);
 after the reversal `y` has parents `Pa x` and `x` has parents `insert y (Pa x)`. Acyclicity
 is not required: the score identity holds for any parent-set maps (on a DAG, `x ∉ Pa x` and
@@ -299,7 +299,7 @@ theorem bdeScore_coveredReversal [Fintype V] [∀ v, Nonempty (σ v)]
     have hvx : v ≠ x := (Finset.mem_erase.1 (Finset.mem_erase.1 hv).2).1
     simp only [Function.update_of_ne hvx, Function.update_of_ne hvy]
 
-/-- Structures connected by a sequence of covered-edge reversals have the same BDe score. -/
+/-- **Covered-edge reversals preserve the BDe score.** Structures connected by a sequence of covered-edge reversals have the same BDe score. -/
 theorem bdeScore_eq_of_reflTransGen [Fintype V] [∀ v, Nonempty (σ v)]
     (p : ((v : V) → σ v) → ℝ) (hp : ∀ x, 0 < p x) {ess : ℝ} (hess : 0 < ess)
     (D : List ((v : V) → σ v)) {Pa Pa' : V → Finset V}

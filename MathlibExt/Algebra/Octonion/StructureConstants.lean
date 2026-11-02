@@ -76,7 +76,7 @@ private theorem sourceXor_eq_iff (p q k : BitVec 3) :
   rw [← sourceBlock_xor]
   exact sourceBlock_injective.eq_iff
 
-/-- The sign of the product of basis elements indexed by `p` and `q`.
+/-- **Sign of a product of octonion basis elements.** The sign of the product of basis elements indexed by `p` and `q`.
 
 The output basis index is `p ^^^ q`. Bits are read least-significant first, so
 bits 0, 1, and 2 correspond to the source coordinates 1, 2, and 3. -/
@@ -90,7 +90,7 @@ def basisSign (p q : BitVec 3) : Int :=
   (-1) ^ (p₁ * q₁ + p₁ * q₂ + p₁ * q₃ + p₂ * q₂ + p₂ * q₃ + p₃ * q₃ +
     q₁ * p₂ * p₃ + p₁ * q₂ * p₃ + p₁ * p₂ * q₃)
 
-/-- The signed structure constant for the basis product indexed by `p` and `q`. -/
+/-- **Signed structure constant of the eight-square algebra.** The signed structure constant for the basis product indexed by `p` and `q`. -/
 def structureConstant (p q k : BitVec 3) : Int :=
   if p ^^^ q = k then basisSign p q else 0
 
@@ -109,13 +109,13 @@ private theorem structureConstant_eq_sourcePsi (p q k : BitVec 3) :
       fun h' => h (hx.mp h')
     simp only [h, hs, ite_false]
 
-/-- Every basis multiplication sign squares to one. -/
+/-- **Basis multiplication signs square to one.** Every basis multiplication sign squares to one. -/
 @[simp] theorem basisSign_mul_self (p q : BitVec 3) :
     basisSign p q * basisSign p q = 1 := by
   revert p q
   decide
 
-/-- The cancellation rule of signs for two distinct decompositions of one xor index. -/
+/-- **Sign cancellation for two decompositions of an xor index.** The cancellation rule of signs for two distinct decompositions of one xor index. -/
 theorem basisSign_mul_add_swap {p q p' q' : BitVec 3}
     (hxor : p ^^^ q = p' ^^^ q') (hne : q ≠ q') :
     basisSign p q * basisSign p' q' +
@@ -123,14 +123,14 @@ theorem basisSign_mul_add_swap {p q p' q' : BitVec 3}
   revert p q p' q'
   decide
 
-/-- Contracting two structure constants leaves their common xor component. -/
+/-- **Contraction of two structure constants.** Contracting two structure constants leaves their common xor component. -/
 theorem sum_structureConstant_mul (p q p' q' : BitVec 3) :
     (∑ k : BitVec 3, structureConstant p q k * structureConstant p' q' k) =
       (if p ^^^ q = p' ^^^ q' then basisSign p q * basisSign p' q' else 0) := by
   revert p q p' q'
   decide
 
-/-- The two contractions in the eight-square crossing decomposition. -/
+/-- **Eight-square crossing identity.** The two contractions in the eight-square crossing decomposition. -/
 theorem crossing_identity (x y u v : BitVec 3) :
     (∑ k : BitVec 3, structureConstant x y k * structureConstant v u k) +
       (∑ k : BitVec 3, structureConstant x u k * structureConstant v y k) =
@@ -138,13 +138,13 @@ theorem crossing_identity (x y u v : BitVec 3) :
   revert x y u v
   decide
 
-/-- A structure constant has absolute value at most one. -/
+/-- **Structure constants are bounded by one.** A structure constant has absolute value at most one. -/
 theorem abs_structureConstant_le_one (p q k : BitVec 3) :
     abs (structureConstant p q k) ≤ 1 := by
   revert p q k
   decide
 
-/-- A contraction of two structure constants has absolute value at most one. -/
+/-- **Contractions of structure constants are bounded by one.** A contraction of two structure constants has absolute value at most one. -/
 theorem abs_sum_structureConstant_mul_le_one (p q p' q' : BitVec 3) :
     abs (∑ k : BitVec 3, structureConstant p q k * structureConstant p' q' k) ≤ 1 := by
   revert p q p' q'

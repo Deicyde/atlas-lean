@@ -68,7 +68,7 @@ private theorem isPrincipalIdealRing_of_maximalIdeal_eq_bot (S : Type*) [CommRin
 
 end RegularUFDaux
 
-/-- A regular local ring of Krull dimension at most two is a unique
+/-- **Regular local rings of dimension at most two are UFDs.** A regular local ring of Krull dimension at most two is a unique
 factorization monoid. -/
 theorem IsRegularLocalRing.uniqueFactorizationMonoid_of_ringKrullDim_le_two
     (R : Type*) [CommRing R] [IsRegularLocalRing R]

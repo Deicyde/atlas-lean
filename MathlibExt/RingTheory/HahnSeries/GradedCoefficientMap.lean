@@ -32,7 +32,7 @@ namespace HahnSeries
 variable {Γ R : Type*} [AddCommMonoid Γ] [PartialOrder Γ]
   [IsOrderedCancelAddMonoid Γ] [CommRing R]
 
-/-- Apply the map indexed by each exponent to the coefficient at that exponent. -/
+/-- **Exponent-indexed coefficient map on Hahn series.** Apply the map indexed by each exponent to the coefficient at that exponent. -/
 noncomputable def gradedCoefficientMap (D : Γ → R →+ R) :
     HahnSeries Γ R →+ HahnSeries Γ R where
   toFun f :=
@@ -46,25 +46,25 @@ noncomputable def gradedCoefficientMap (D : Γ → R →+ R) :
     simp
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- The coefficient formula for an exponent-indexed coefficient map. -/
+/-- **Coefficient formula for an exponent-indexed coefficient map.** The coefficient formula for an exponent-indexed coefficient map. -/
 @[simp] theorem coeff_gradedCoefficientMap (D : Γ → R →+ R) (f : HahnSeries Γ R) (y : Γ) :
     (gradedCoefficientMap D f).coeff y = D y (f.coeff y) := rfl
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- Acting coefficientwise cannot introduce new exponents into the support. -/
+/-- **Exponent-indexed coefficient maps do not enlarge the support.** Acting coefficientwise cannot introduce new exponents into the support. -/
 theorem support_gradedCoefficientMap (D : Γ → R →+ R) (f : HahnSeries Γ R) :
     (gradedCoefficientMap D f).support ⊆ f.support :=
   fun y hy h => hy (by simp [h])
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- The family consisting of zero maps induces the zero additive map. -/
+/-- **Exponent-indexed coefficient map of the zero family.** The family consisting of zero maps induces the zero additive map. -/
 @[simp] theorem gradedCoefficientMap_zero_family :
     gradedCoefficientMap (Γ := Γ) (fun _ => (0 : R →+ R)) = 0 := by
   ext f y
   simp
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- A one-term series keeps its exponent and applies the map indexed by that exponent. -/
+/-- **Exponent-indexed coefficient map on a single-term series.** A one-term series keeps its exponent and applies the map indexed by that exponent. -/
 @[simp] theorem gradedCoefficientMap_single (D : Γ → R →+ R) (y : Γ) (a : R) :
     gradedCoefficientMap D (single y a) = single y (D y a) := by
   ext z
@@ -73,12 +73,12 @@ omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
     simp
   · simp [h]
 
-/-- On a constant series, the map indexed by zero acts on the constant coefficient. -/
+/-- **Exponent-indexed coefficient map on a constant series.** On a constant series, the map indexed by zero acts on the constant coefficient. -/
 @[simp] theorem gradedCoefficientMap_C (D : Γ → R →+ R) (a : R) :
     gradedCoefficientMap D (HahnSeries.C a) = HahnSeries.C (D 0 a) :=
   gradedCoefficientMap_single D 0 a
 
-/-- An exponent-indexed coefficient map satisfying the graded Leibniz identity obeys the product
+/-- **Product rule for graded Leibniz coefficient maps.** An exponent-indexed coefficient map satisfying the graded Leibniz identity obeys the product
 rule on Hahn series. -/
 theorem gradedCoefficientMap_mul (D : Γ → R →+ R)
     (hD : ∀ i j a b, D (i + j) (a * b) = D i a * b + a * D j b)

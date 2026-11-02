@@ -85,7 +85,7 @@ variable {I J K : Type*} [Fintype K]
 /-! ## The model -/
 
 variable (I J K) in
-/-- Parameters `θ = (Q, F)` of the admixture model: positive ancestry proportions `Q i k` summing
+/-- **Parameters of the admixture model.** Parameters `θ = (Q, F)` of the admixture model: positive ancestry proportions `Q i k` summing
 to one over `k`, and reference-allele frequencies `F k j` strictly between `0` and `1`. -/
 structure Params where
   /-- The ancestry proportion of population `k` in individual `i`. -/
@@ -101,16 +101,16 @@ structure Params where
   /-- Allele frequencies are below one. -/
   F_lt_one : ∀ k j, F k j < 1
 
-/-- The reference-allele probability `qf θ i j = ∑ k, Q i k * F k j` of a copy of SNP `j` in
+/-- **Reference-allele probability in the admixture model.** The reference-allele probability `qf θ i j = ∑ k, Q i k * F k j` of a copy of SNP `j` in
 individual `i`. -/
 noncomputable def qf (θ : Params I J K) (i : I) (j : J) : ℝ := ∑ k, θ.Q i k * θ.F k j
 
-/-- The joint weight of an allele copy `(i, j, a)` and its ancestral population `k`:
+/-- **Joint weight of an allele copy and its ancestral population.** The joint weight of an allele copy `(i, j, a)` and its ancestral population `k`:
 `Q i k * (if a then F k j else 1 - F k j)`. -/
 noncomputable def joint (θ : Params I J K) (x : I × J × Bool) (k : K) : ℝ :=
   θ.Q x.1 k * if x.2.2 then θ.F k x.2.1 else 1 - θ.F k x.2.1
 
-/-- The joint weight is positive (the standing hypothesis of the generic EM). -/
+/-- **Positivity of the admixture joint weight.** The joint weight is positive (the standing hypothesis of the generic EM). -/
 theorem joint_pos (θ : Params I J K) (x : I × J × Bool) (k : K) : 0 < joint θ x k := by
   refine mul_pos (θ.Q_pos _ k) ?_
   split_ifs
@@ -126,11 +126,11 @@ theorem marginal_eq (θ : Params I J K) (i : I) (j : J) (a : Bool) :
       Finset.sum_sub_distrib, θ.Q_sum]
   · simp [marginal, joint, qf]
 
-/-- The reference-allele probability is positive. -/
+/-- **Positivity of the reference-allele probability.** The reference-allele probability is positive. -/
 theorem qf_pos [Nonempty K] (θ : Params I J K) (i : I) (j : J) : 0 < qf θ i j :=
   Finset.sum_pos (fun k _ => mul_pos (θ.Q_pos i k) (θ.F_pos k j)) Finset.univ_nonempty
 
-/-- The reference-allele probability is below one. -/
+/-- **Reference-allele probability is less than one.** The reference-allele probability is below one. -/
 theorem qf_lt_one [Nonempty K] (θ : Params I J K) (i : I) (j : J) : qf θ i j < 1 := by
   have h : 0 < marginal joint θ (i, j, false) :=
     Finset.sum_pos (fun k _ => joint_pos θ _ k) Finset.univ_nonempty
@@ -140,15 +140,15 @@ theorem qf_lt_one [Nonempty K] (θ : Params I J K) (i : I) (j : J) : qf θ i j <
 
 /-! ## The data: two allele copies per genotype -/
 
-/-- Whether copy `c` of the genotype `g i j` (with `g i j` reference copies) carries the
+/-- **Reference-allele indicator for a genotype copy.** Whether copy `c` of the genotype `g i j` (with `g i j` reference copies) carries the
 reference allele: copies `c < g i j` do. -/
 def isRef (g : I → J → Fin 3) (i : I) (j : J) (c : Fin 2) : Bool := decide (c.val < (g i j).val)
 
-/-- The observation `(i, j, a)` of copy `c` of genotype `g i j`. -/
+/-- **Observation of one allele copy of a genotype.** The observation `(i, j, a)` of copy `c` of genotype `g i j`. -/
 def copyAllele (g : I → J → Fin 3) (x : I × J × Fin 2) : I × J × Bool :=
   (x.1, x.2.1, isRef g x.1 x.2.1 x.2.2)
 
-/-- Every SNP is polymorphic in the sample: some individual carries a reference allele and some
+/-- **Polymorphic genotype data.** Every SNP is polymorphic in the sample: some individual carries a reference allele and some
 individual carries an alternative allele. Without it the M-step frequency is `0` or `1`. -/
 def Polymorphic (g : I → J → Fin 3) : Prop := ∀ j, (∃ i, g i j ≠ 0) ∧ ∃ i, g i j ≠ 2
 
@@ -156,12 +156,12 @@ section Data
 
 variable [Fintype I] [Fintype J]
 
-/-- The `2 |I| |J|` allele-copy observations of the genotype matrix `g`, indexed by `Fin`. -/
+/-- **Allele-copy observations of a genotype matrix.** The `2 |I| |J|` allele-copy observations of the genotype matrix `g`, indexed by `Fin`. -/
 noncomputable def data (g : I → J → Fin 3) :
     Fin (Fintype.card (I × J × Fin 2)) → I × J × Bool :=
   fun n => copyAllele g ((Fintype.equivFin _).symm n)
 
-/-- A sum over the indexed data is a sum over individuals, SNPs and copies. -/
+/-- **Sum over allele-copy data as a triple sum.** A sum over the indexed data is a sum over individuals, SNPs and copies. -/
 theorem sum_data (g : I → J → Fin 3) (f : I × J × Bool → ℝ) :
     ∑ n, f (data g n) = ∑ i, ∑ j, ∑ c : Fin 2, f (copyAllele g (i, j, c)) := by
   simp only [data]
@@ -169,7 +169,7 @@ theorem sum_data (g : I → J → Fin 3) (f : I × J × Bool → ℝ) :
     Fintype.sum_prod_type]
   exact Finset.sum_congr rfl fun i _ => Fintype.sum_prod_type _
 
-/-- The admixture log-likelihood
+/-- **Admixture log-likelihood.** The admixture log-likelihood
 `ℓ(Q, F) = ∑ i, ∑ j, (g i j * log (qf θ i j) + (2 - g i j) * log (1 - qf θ i j))`. -/
 noncomputable def admixtureLogLik (g : I → J → Fin 3) (θ : Params I J K) : ℝ :=
   ∑ i, ∑ j, (((g i j).val : ℝ) * log (qf θ i j) + (2 - ((g i j).val : ℝ)) * log (1 - qf θ i j))
@@ -208,18 +208,18 @@ end Data
 
 variable (g : I → J → Fin 3)
 
-/-- The responsibility `r = P(z = k | copy c of (i, j))` (the E-step). -/
+/-- **Ancestry responsibility of an allele copy (E-step).** The responsibility `r = P(z = k | copy c of (i, j))` (the E-step). -/
 noncomputable def resp (θ : Params I J K) (i : I) (j : J) (c : Fin 2) (k : K) : ℝ :=
   posterior joint θ (copyAllele g (i, j, c)) k
 
 variable {g}
 
-/-- The responsibilities are positive. -/
+/-- **Positivity of the admixture responsibilities.** The responsibilities are positive. -/
 theorem resp_pos (θ : Params I J K) (i : I) (j : J) (c : Fin 2) (k : K) :
     0 < resp g θ i j c k :=
   div_pos (joint_pos θ _ k) (Finset.sum_pos (fun k _ => joint_pos θ _ k) ⟨k, Finset.mem_univ k⟩)
 
-/-- The responsibilities of a copy sum to one over the populations. -/
+/-- **Admixture responsibilities sum to one.** The responsibilities of a copy sum to one over the populations. -/
 theorem sum_resp [Nonempty K] (θ : Params I J K) (i : I) (j : J) (c : Fin 2) :
     ∑ k, resp g θ i j c k = 1 :=
   (isDist_posterior (fun θ x k => joint_pos θ x k) θ _).2
@@ -229,17 +229,17 @@ section AncestryUpdate
 variable [Fintype J]
 
 variable (g) in
-/-- The expected number of allele copies of individual `i` from population `k`. -/
+/-- **Expected ancestry count of an individual.** The expected number of allele copies of individual `i` from population `k`. -/
 noncomputable def ancCount (θ : Params I J K) (i : I) (k : K) : ℝ :=
   ∑ j, ∑ c, resp g θ i j c k
 
 variable (g) in
-/-- The FRAPPE update of the ancestry proportions,
+/-- **FRAPPE update of the ancestry proportions.** The FRAPPE update of the ancestry proportions,
 `Q' i k = (∑ j, ∑ c, r) / (2 J)`. -/
 noncomputable def mStepQ (θ : Params I J K) (i : I) (k : K) : ℝ :=
   ancCount g θ i k / (2 * Fintype.card J)
 
-/-- The expected ancestry counts of an individual sum to its `2 J` allele copies. -/
+/-- **Expected ancestry counts sum to the number of allele copies.** The expected ancestry counts of an individual sum to its `2 J` allele copies. -/
 theorem sum_ancCount [Nonempty K] (θ : Params I J K) (i : I) :
     ∑ k, ancCount g θ i k = 2 * Fintype.card J := by
   simp only [ancCount]
@@ -247,17 +247,17 @@ theorem sum_ancCount [Nonempty K] (θ : Params I J K) (i : I) :
   simp_rw [Finset.sum_comm (γ := K) (s := Finset.univ) (t := Finset.univ), sum_resp]
   simp [mul_comm]
 
-/-- The expected ancestry counts are positive when there is at least one SNP. -/
+/-- **Positivity of the expected ancestry counts.** The expected ancestry counts are positive when there is at least one SNP. -/
 theorem ancCount_pos [Nonempty J] (θ : Params I J K) (i : I) (k : K) : 0 < ancCount g θ i k :=
   Finset.sum_pos (fun j _ => Finset.sum_pos (fun c _ => resp_pos θ i j c k)
     Finset.univ_nonempty) Finset.univ_nonempty
 
-/-- The updated ancestry proportions are positive. -/
+/-- **Positivity of the updated ancestry proportions.** The updated ancestry proportions are positive. -/
 theorem mStep_Q_pos [Nonempty J] (θ : Params I J K) (i : I) (k : K) : 0 < mStepQ g θ i k := by
   have := Fintype.card_pos (α := J)
   exact div_pos (ancCount_pos θ i k) (by positivity)
 
-/-- The updated ancestry proportions of each individual sum to one. -/
+/-- **Updated ancestry proportions sum to one.** The updated ancestry proportions of each individual sum to one. -/
 theorem mStep_Q_sum [Nonempty J] [Nonempty K] (θ : Params I J K) (i : I) :
     ∑ k, mStepQ g θ i k = 1 := by
   simp only [mStepQ]
@@ -271,27 +271,27 @@ section FrequencyUpdate
 variable [Fintype I]
 
 variable (g) in
-/-- The expected number of allele copies of SNP `j` from population `k`. -/
+/-- **Expected population count of a SNP.** The expected number of allele copies of SNP `j` from population `k`. -/
 noncomputable def popCount (θ : Params I J K) (k : K) (j : J) : ℝ :=
   ∑ i, ∑ c, resp g θ i j c k
 
 variable (g) in
-/-- The expected number of reference copies of SNP `j` from population `k`. -/
+/-- **Expected reference-allele count of a SNP per population.** The expected number of reference copies of SNP `j` from population `k`. -/
 noncomputable def refCount (θ : Params I J K) (k : K) (j : J) : ℝ :=
   ∑ i, ∑ c, if isRef g i j c then resp g θ i j c k else 0
 
 variable (g) in
-/-- The expected number of alternative copies of SNP `j` from population `k`. -/
+/-- **Expected alternative-allele count of a SNP per population.** The expected number of alternative copies of SNP `j` from population `k`. -/
 noncomputable def altCount (θ : Params I J K) (k : K) (j : J) : ℝ :=
   ∑ i, ∑ c, if isRef g i j c then 0 else resp g θ i j c k
 
 variable (g) in
-/-- The FRAPPE update of the allele frequencies,
+/-- **FRAPPE update of the allele frequencies.** The FRAPPE update of the allele frequencies,
 `F' k j = (∑ i, ∑ c reference, r) / (∑ i, ∑ c, r)`. -/
 noncomputable def mStepF (θ : Params I J K) (k : K) (j : J) : ℝ :=
   refCount g θ k j / popCount g θ k j
 
-/-- Reference plus alternative expected counts give the population's expected count. -/
+/-- **Reference and alternative counts add to the population count.** Reference plus alternative expected counts give the population's expected count. -/
 theorem refCount_add_altCount (θ : Params I J K) (k : K) (j : J) :
     refCount g θ k j + altCount g θ k j = popCount g θ k j := by
   rw [refCount, altCount, popCount, ← Finset.sum_add_distrib]
@@ -299,7 +299,7 @@ theorem refCount_add_altCount (θ : Params I J K) (k : K) (j : J) :
   rw [← Finset.sum_add_distrib]
   exact Finset.sum_congr rfl fun c _ => by split_ifs <;> simp
 
-/-- On polymorphic data the expected reference counts are positive. -/
+/-- **Positivity of expected reference counts on polymorphic data.** On polymorphic data the expected reference counts are positive. -/
 theorem refCount_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
     0 < refCount g θ k j := by
   obtain ⟨i, hi⟩ := (hg j).1
@@ -315,7 +315,7 @@ theorem refCount_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
   simp only [hc, ↓reduceIte]
   exact resp_pos θ i j 0 k
 
-/-- On polymorphic data the expected alternative counts are positive. -/
+/-- **Positivity of expected alternative counts on polymorphic data.** On polymorphic data the expected alternative counts are positive. -/
 theorem altCount_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
     0 < altCount g θ k j := by
   obtain ⟨i, hi⟩ := (hg j).2
@@ -333,18 +333,18 @@ theorem altCount_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
   simp only [hc, Bool.false_eq_true, ↓reduceIte]
   exact resp_pos θ i j 1 k
 
-/-- On polymorphic data the expected population counts are positive. -/
+/-- **Positivity of expected population counts on polymorphic data.** On polymorphic data the expected population counts are positive. -/
 theorem popCount_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
     0 < popCount g θ k j := by
   rw [← refCount_add_altCount]
   linarith [refCount_pos hg θ k j, altCount_pos hg θ k j]
 
-/-- On polymorphic data the updated allele frequencies are positive. -/
+/-- **Positivity of the updated allele frequencies.** On polymorphic data the updated allele frequencies are positive. -/
 theorem mStep_F_pos (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
     0 < mStepF g θ k j :=
   div_pos (refCount_pos hg θ k j) (popCount_pos hg θ k j)
 
-/-- On polymorphic data the updated allele frequencies are below one. -/
+/-- **Updated allele frequencies are less than one.** On polymorphic data the updated allele frequencies are below one. -/
 theorem mStep_F_lt_one (hg : Polymorphic g) (θ : Params I J K) (k : K) (j : J) :
     mStepF g θ k j < 1 := by
   rw [mStepF, div_lt_one (popCount_pos hg θ k j), ← refCount_add_altCount]
@@ -384,7 +384,7 @@ private theorem sum_comm_four (f : I → J → Fin 2 → K → ℝ) :
     _ = ∑ k, ∑ j, ∑ i, ∑ c, f i j c k := Finset.sum_congr rfl fun _ _ => Finset.sum_comm
 
 variable (g) in
-/-- `Q(θ' | θ)` splits into an ancestry term per individual and a two-point term per population
+/-- **Decomposition of the admixture EM objective.** `Q(θ' | θ)` splits into an ancestry term per individual and a two-point term per population
 and SNP. -/
 theorem emQ_eq (θ' θ : Params I J K) :
     emQ joint (data g) θ' θ = ∑ i, ∑ k, ancCount g θ i k * log (θ'.Q i k) +

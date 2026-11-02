@@ -41,7 +41,7 @@ norm on a subsingleton algebra is constantly `1`.
 
 @[expose] public section
 
-/-- The norm of a product algebra is the product of the norms of the
+/-- **Norm in a product algebra is the product of norms.** The norm of a product algebra is the product of the norms of the
 components: left multiplication by `(x₁, x₂)` is the product map of the
 left multiplications, and the determinant of a product map is the product
 of the determinants. -/
@@ -55,7 +55,7 @@ theorem Algebra.norm_prod {R A B : Type*} [CommRing R] [Ring A] [Ring B]
   rw [Algebra.norm_apply, Algebra.norm_apply, Algebra.norm_apply, lmul_prod,
     LinearMap.det_prodMap]
 
-/-- The norm on a subsingleton algebra is `1`: left multiplication by any
+/-- **Norm on a subsingleton algebra is one.** The norm on a subsingleton algebra is `1`: left multiplication by any
 element is the identity map on a subsingleton module, hence has determinant
 `1`. -/
 theorem Algebra.norm_of_subsingleton {R A : Type*} [CommRing R] [Ring A]

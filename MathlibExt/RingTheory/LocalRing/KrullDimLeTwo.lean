@@ -55,7 +55,7 @@ open IsLocalRing
 
 namespace IsLocalRing
 
-/-- In a Noetherian local domain whose adic completion has Krull dimension
+/-- **Short prime chains when the completion has dimension at most two.** In a Noetherian local domain whose adic completion has Krull dimension
 at most `2`, any prime strictly below a non-maximal prime is `⊥`. -/
 theorem eq_bot_of_lt_of_ne_maximalIdeal_of_ringKrullDim_le_two
     {B : Type u} [CommRing B] [IsDomain B] [IsLocalRing B] [IsNoetherianRing B]

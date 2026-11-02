@@ -48,7 +48,7 @@ namespace Percolation
 
 variable {E : Type*} [Fintype E] [DecidableEq E]
 
-/-- The probability `ℙ_p(A)` of `A` under the Bernoulli(`p`) product measure on `{0, 1}^E` for
+/-- **Probability of an event under Bernoulli product measure.** The probability `ℙ_p(A)` of `A` under the Bernoulli(`p`) product measure on `{0, 1}^E` for
 `p ∈ [0, 1]`; outside `[0, 1]` it is the polynomial `StatMech.prob p A`, so that the function is
 defined on all of `ℝ`. -/
 noncomputable def measureProb (A : Set (ConfigSpace E)) (p : ℝ) : ℝ :=
@@ -94,7 +94,7 @@ theorem russo_formula (A : Set (ConfigSpace E)) (hA : IsIncreasing A)
     deriv (fun p => measureProb A p) p = ∑ e, pivotalProb p A e :=
   (russo_derivative A hA h0 h1).deriv
 
-/-- Russo's formula for `p : ℝ≥0`, packaged with the identification of `measureProb A p` with
+/-- **Russo's formula for the Bernoulli product measure.** Russo's formula for `p : ℝ≥0`, packaged with the identification of `measureProb A p` with
 `(bernoulliProductMeasure p hp).real A`. -/
 theorem russo_derivative_measure (A : Set (ConfigSpace E)) (hA : IsIncreasing A)
     (p : ℝ≥0) (hp : p ≤ 1) (h0 : 0 < (p : ℝ)) (h1 : (p : ℝ) < 1) :

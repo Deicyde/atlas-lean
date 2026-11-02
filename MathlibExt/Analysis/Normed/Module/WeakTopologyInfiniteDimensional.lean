@@ -78,7 +78,7 @@ private theorem exists_ne_zero_of_not_finiteDimensional (hInf : ¬ FiniteDimensi
     rw [ha, hb]⟩
   exact Module.finite_of_rank_eq_zero (rank_subsingleton' 𝕜 E)
 
-/-- Finitely many continuous linear functionals on an infinite-dimensional
+/-- **Finitely many functionals have a common nonzero kernel vector.** Finitely many continuous linear functionals on an infinite-dimensional
 normed space have a common nonzero kernel vector. -/
 theorem exists_ne_zero_forall_dual_apply_eq_zero (hInf : ¬ FiniteDimensional 𝕜 E)
     (S : Finset (E →L[𝕜] 𝕜)) :
@@ -104,7 +104,7 @@ theorem exists_ne_zero_forall_dual_apply_eq_zero (hInf : ¬ FiniteDimensional �
   have h2 := congrFun (LinearMap.mem_ker.mp hvker) ⟨f, hf⟩
   simpa [T] using h2
 
-/-- Every nonempty weakly open set contains a whole line through each of its
+/-- **Weakly open sets contain lines through each point.** Every nonempty weakly open set contains a whole line through each of its
 points: if `U` is weakly open and `x ∈ U`, then `x + t • v ∈ U` for all scalars
 `t` and some nonzero `v` (a common kernel vector of the finitely many
 functionals constraining a basic weak neighbourhood of `x`). -/
@@ -145,7 +145,7 @@ theorem exists_line_subset_of_isOpen (hInf : ¬ FiniteDimensional 𝕜 E)
     exact hεball f hf (Metric.mem_ball_self (hεpos f hf))
   exact hpi hmem
 
-/-- Every nonempty weakly open set in an infinite-dimensional normed space is
+/-- **Weakly open sets are unbounded in infinite dimensions.** Every nonempty weakly open set in an infinite-dimensional normed space is
 unbounded in norm. -/
 theorem exists_norm_gt_of_isOpen (hInf : ¬ FiniteDimensional 𝕜 E)
     {U : Set (WeakSpace 𝕜 E)} (hU : IsOpen U) (hne : U.Nonempty) (R : ℝ) :
@@ -166,7 +166,7 @@ theorem exists_norm_gt_of_isOpen (hInf : ¬ FiniteDimensional 𝕜 E)
     rw [hT]; field_simp
   linarith [le_abs_self R]
 
-/-- The open unit ball is not weakly open in infinite dimensions. -/
+/-- **Open unit ball is not weakly open in infinite dimensions.** The open unit ball is not weakly open in infinite dimensions. -/
 theorem not_isOpen_image_ball (hInf : ¬ FiniteDimensional 𝕜 E) :
     ¬ IsOpen ((toWeakSpace 𝕜 E) '' Metric.ball (0 : E) 1) := by
   intro h
@@ -183,7 +183,7 @@ theorem not_isOpen_image_ball (hInf : ¬ FiniteDimensional 𝕜 E) :
   rw [hsymm] at hyR
   linarith
 
-/-- The unit sphere is not weakly open in infinite dimensions. -/
+/-- **Unit sphere is not weakly open in infinite dimensions.** The unit sphere is not weakly open in infinite dimensions. -/
 theorem not_isOpen_image_sphere (hInf : ¬ FiniteDimensional 𝕜 E) :
     ¬ IsOpen ((toWeakSpace 𝕜 E) '' Metric.sphere (0 : E) 1) := by
   intro h
@@ -205,7 +205,7 @@ theorem not_isOpen_image_sphere (hInf : ¬ FiniteDimensional 𝕜 E) :
   rw [hsymm, hz1] at hyR
   norm_num at hyR
 
-/-- In an infinite-dimensional normed space, the weak closure of the unit
+/-- **Weak closure of the unit sphere is the closed unit ball.** In an infinite-dimensional normed space, the weak closure of the unit
 sphere is the closed unit ball. -/
 theorem closure_image_sphere_eq_image_closedBall (hInf : ¬ FiniteDimensional 𝕜 E) :
     closure ((toWeakSpace 𝕜 E) '' Metric.sphere (0 : E) 1)
@@ -283,7 +283,7 @@ theorem closure_image_sphere_eq_image_closedBall (hInf : ¬ FiniteDimensional �
         rw [Metric.mem_sphere, dist_zero_right]
         exact hseq
 
-/-- The unit sphere is not weakly closed in infinite dimensions: its weak
+/-- **Unit sphere is not weakly closed in infinite dimensions.** The unit sphere is not weakly closed in infinite dimensions: its weak
 closure is the whole closed unit ball. -/
 theorem not_isClosed_image_sphere (hInf : ¬ FiniteDimensional 𝕜 E) :
     ¬ IsClosed ((toWeakSpace 𝕜 E) '' Metric.sphere (0 : E) 1) := by
@@ -299,12 +299,12 @@ theorem not_isClosed_image_sphere (hInf : ¬ FiniteDimensional 𝕜 E) :
   rw [Metric.mem_sphere, dist_zero_right] at hz
   simp at hz
 
-/-- The unit sphere is not weakly compact in infinite dimensions. -/
+/-- **Unit sphere is not weakly compact in infinite dimensions.** The unit sphere is not weakly compact in infinite dimensions. -/
 theorem not_isCompact_image_sphere (hInf : ¬ FiniteDimensional 𝕜 E) :
     ¬ IsCompact ((toWeakSpace 𝕜 E) '' Metric.sphere (0 : E) 1) :=
   fun h => not_isClosed_image_sphere hInf h.isClosed
 
-/-- In finite dimensions the identity map from the norm topology to the weak
+/-- **Weak topology equals norm topology in finite dimensions.** In finite dimensions the identity map from the norm topology to the weak
 topology is an open map: the weak topology agrees with the norm topology. -/
 theorem isOpenMap_toWeakSpaceCLM_of_finiteDimensional [FiniteDimensional 𝕜 E] :
     IsOpenMap (toWeakSpaceCLM 𝕜 E) := by
@@ -317,7 +317,7 @@ theorem isOpenMap_toWeakSpaceCLM_of_finiteDimensional [FiniteDimensional 𝕜 E]
       continuous_invFun := hcont }
   exact e.toHomeomorph.isOpenMap
 
-/-- In infinite dimensions the identity map from the norm topology to the weak
+/-- **Weak topology is strictly coarser in infinite dimensions.** In infinite dimensions the identity map from the norm topology to the weak
 topology is not an open map: the open unit ball is norm-open but not
 weakly open. -/
 theorem not_isOpenMap_toWeakSpaceCLM_of_infiniteDimensional

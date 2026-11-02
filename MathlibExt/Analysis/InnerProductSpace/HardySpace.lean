@@ -75,13 +75,13 @@ open Filter Topology Set
 open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 open scoped ComplexInnerProductSpace
 
-/-- The squared norms of the Szegő kernel coefficients form a geometric
+/-- **Squared norms of the Szegő kernel coefficients.** The squared norms of the Szegő kernel coefficients form a geometric
 progression with ratio `‖z‖²`. -/
 theorem norm_sq_szego_coeff (z : ℂ) (n : ℕ) :
     ‖(starRingEnd ℂ z) ^ n‖ ^ (2 : ℝ) = (‖z‖ ^ 2) ^ n := by
   rw [Real.rpow_two, norm_pow, RCLike.norm_conj, ← pow_mul, mul_comm n 2, pow_mul]
 
-/-- The Szegő kernel coefficients are in `ℓ²` when `z` is in the disc. -/
+/-- **Szegő kernel coefficients lie in ℓ².** The Szegő kernel coefficients are in `ℓ²` when `z` is in the disc. -/
 theorem memℓp_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
     Memℓp (fun n => (starRingEnd ℂ z) ^ n) 2 := by
   apply memℓp_gen
@@ -92,7 +92,7 @@ theorem memℓp_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
     simpa using h
   exact summable_geometric_of_lt_one (by positivity) h1
 
-/-- The **Szegő kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
+/-- **Szegő kernel of the Hardy space.** The **Szegő kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
 coefficients `(conj z)ⁿ`. -/
 noncomputable def szegoKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) :=
   ⟨fun n => (starRingEnd ℂ z) ^ n, memℓp_szegoKernel z hz⟩
@@ -101,7 +101,7 @@ noncomputable def szegoKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) :=
     szegoKernel z hz n = (starRingEnd ℂ z) ^ n :=
   rfl
 
-/-- The Szegő kernel at `0` is the first standard basis vector. -/
+/-- **Szegő kernel at the origin is the first basis vector.** The Szegő kernel at `0` is the first standard basis vector. -/
 theorem szegoKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
     szegoKernel 0 hz = lp.single 2 0 (1 : ℂ) := by
   apply lp.ext
@@ -113,7 +113,7 @@ theorem szegoKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
   · rw [Pi.single_eq_of_ne hn, map_zero]
     exact zero_pow hn
 
-/-- The squared norm of the Szegő kernel is `1 / (1 - ‖z‖²)`. -/
+/-- **Squared norm of the Szegő kernel.** The squared norm of the Szegő kernel is `1 / (1 - ‖z‖²)`. -/
 theorem norm_sq_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
     ‖szegoKernel z hz‖ ^ 2 = 1 / (1 - ‖z‖ ^ 2) := by
   have h1 : ‖z‖ ^ 2 < 1 := by
@@ -129,7 +129,7 @@ theorem norm_sq_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
   rw [h2', Real.rpow_two] at hpow
   exact hpow
 
-/-- The norm of the Szegő kernel is `1 / √(1 - ‖z‖²)`. -/
+/-- **Norm of the Szegő kernel.** The norm of the Szegő kernel is `1 / √(1 - ‖z‖²)`. -/
 theorem norm_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
     ‖szegoKernel z hz‖ = 1 / Real.sqrt (1 - ‖z‖ ^ 2) := by
   have hsq := norm_sq_szegoKernel z hz
@@ -137,11 +137,11 @@ theorem norm_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) :
     rw [← hsq, Real.sqrt_sq (norm_nonneg _)]
   rw [hnorm, Real.sqrt_div (by norm_num : (0 : ℝ) ≤ 1), Real.sqrt_one]
 
-/-- Point evaluation on `H²(𝔻)`: the inner product with the Szegő kernel. -/
+/-- **Point evaluation on the Hardy space.** Point evaluation on `H²(𝔻)`: the inner product with the Szegő kernel. -/
 noncomputable def hardyEval (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) : ℂ :=
   ⟪szegoKernel z hz, a⟫
 
-/-- Point evaluation is the Taylor series `∑' n, a n * zⁿ`. -/
+/-- **Hardy-space point evaluation as a Taylor series.** Point evaluation is the Taylor series `∑' n, a n * zⁿ`. -/
 theorem hardyEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     hardyEval z hz a = ∑' n, a n * z ^ n := by
   unfold hardyEval
@@ -151,7 +151,7 @@ theorem hardyEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
   rw [szegoKernel_apply, RCLike.inner_apply', map_pow, RCLike.conj_conj,
     mul_comm (z ^ n) (a n)]
 
-/-- The Taylor series of an `H²` function converges absolutely at every
+/-- **Absolute convergence of Taylor series in the Hardy space.** The Taylor series of an `H²` function converges absolutely at every
 point of the disc. -/
 theorem summable_hardyEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     Summable (fun n => a n * z ^ n) := by
@@ -161,23 +161,23 @@ theorem summable_hardyEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, �
   rw [szegoKernel_apply, RCLike.inner_apply', map_pow, RCLike.conj_conj,
     mul_comm (z ^ n) (a n)]
 
-/-- Point evaluation as a bounded linear functional on `H²(𝔻)`. -/
+/-- **Point evaluation as a bounded functional on the Hardy space.** Point evaluation as a bounded linear functional on `H²(𝔻)`. -/
 noncomputable def hardyEvalCLM (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) →L[ℂ] ℂ :=
   innerSL ℂ (szegoKernel z hz)
 
-/-- The bounded point-evaluation functional acts by the inner product
+/-- **Reproducing property of the Szegő kernel.** The bounded point-evaluation functional acts by the inner product
 with the Szegő kernel. -/
 theorem hardyEvalCLM_apply (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     hardyEvalCLM z hz a = hardyEval z hz a :=
   rfl
 
-/-- The operator norm of point evaluation is `1 / √(1 - ‖z‖²)`. -/
+/-- **Norm of Hardy-space point evaluation.** The operator norm of point evaluation is `1 / √(1 - ‖z‖²)`. -/
 theorem norm_hardyEvalCLM (z : ℂ) (hz : ‖z‖ < 1) :
     ‖hardyEvalCLM z hz‖ = 1 / Real.sqrt (1 - ‖z‖ ^ 2) := by
   show ‖innerSL ℂ (szegoKernel z hz)‖ = 1 / Real.sqrt (1 - ‖z‖ ^ 2)
   rw [innerSL_apply_norm, norm_szegoKernel]
 
-/-- The pointwise bound for `H²` functions: `‖f(z)‖ ≤ ‖f‖ / √(1 - ‖z‖²)`. -/
+/-- **Pointwise bound for Hardy-space functions.** The pointwise bound for `H²` functions: `‖f(z)‖ ≤ ‖f‖ / √(1 - ‖z‖²)`. -/
 theorem norm_hardyEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ‖hardyEval z hz a‖ ≤ ‖a‖ / Real.sqrt (1 - ‖z‖ ^ 2) := by
   calc ‖hardyEval z hz a‖ = ‖hardyEvalCLM z hz a‖ := by
@@ -187,27 +187,27 @@ theorem norm_hardyEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
         rw [norm_hardyEvalCLM]
         ring
 
-/-- Evaluation at `0` is the constant Taylor coefficient. -/
+/-- **Hardy-space evaluation at the origin is the constant coefficient.** Evaluation at `0` is the constant Taylor coefficient. -/
 theorem hardyEval_zero (a : ℓ²(ℕ, ℂ)) (hz : ‖(0 : ℂ)‖ < 1) :
     hardyEval 0 hz a = a 0 := by
   unfold hardyEval
   rw [szegoKernel_zero hz, lp.inner_single_left, RCLike.inner_apply']
   simp
 
-/-- Evaluation of a monomial `c * zⁿ` (a single Taylor coefficient). -/
+/-- **Hardy-space evaluation of a single monomial.** Evaluation of a monomial `c * zⁿ` (a single Taylor coefficient). -/
 theorem hardyEval_single (z : ℂ) (hz : ‖z‖ < 1) (n : ℕ) (c : ℂ) :
     hardyEval z hz (lp.single 2 n c) = c * z ^ n := by
   unfold hardyEval
   rw [lp.inner_single_right, RCLike.inner_apply', szegoKernel_apply,
     map_pow, RCLike.conj_conj, mul_comm (z ^ n) c]
 
-/-- The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
+/-- **Conjugate reproducing property of the Szegő kernel.** The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
 theorem inner_szegoKernel_right (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ⟪a, szegoKernel z hz⟫ = (starRingEnd ℂ) (hardyEval z hz a) := by
   unfold hardyEval
   rw [← inner_conj_symm]
 
-/-- The inner product of two Szegő kernels is the Szegő kernel function
+/-- **Inner product of two Szegő kernels.** The inner product of two Szegő kernels is the Szegő kernel function
 `1 / (1 - z * conj w)`. -/
 theorem inner_szegoKernel_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
     (hw : ‖w‖ < 1) :
@@ -225,7 +225,7 @@ theorem inner_szegoKernel_szegoKernel (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
         mul_lt_mul'' hz hw (norm_nonneg z) (norm_nonneg w)
     _ = 1 := one_mul 1
 
-/-- Taylor coefficients of an `H²` function are bounded by its norm: a
+/-- **Taylor coefficients of a Hardy-space function are bounded by its norm.** Taylor coefficients of an `H²` function are bounded by its norm: a
 single squared coefficient is at most the sum of all of them. -/
 theorem abs_coeff_le_norm (a : ℓ²(ℕ, ℂ)) (n : ℕ) : ‖a n‖ ≤ ‖a‖ := by
   have hs : Summable (fun i => ‖a i‖ ^ (2 : ℝ≥0∞).toReal) :=

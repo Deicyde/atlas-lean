@@ -106,14 +106,14 @@ section Hierarchy
 
 variable {α : Type*} [DecidableEq α]
 
-/-- A **hierarchy** on a finite set `S`: a family of nonempty subsets of `S` containing `S` and
+/-- **Hierarchy on a finite set.** A **hierarchy** on a finite set `S`: a family of nonempty subsets of `S` containing `S` and
 every singleton, any two members nested or disjoint. These are the cluster systems of the rooted
 phylogenetic trees on `S` (Semple & Steel 2003, Section 3.5). -/
 def IsHierarchy (S : Finset α) (H : Finset (Finset α)) : Prop :=
   S ∈ H ∧ (∀ C ∈ H, C.Nonempty ∧ C ⊆ S) ∧ (∀ x ∈ S, {x} ∈ H) ∧
     ∀ C ∈ H, ∀ D ∈ H, C ⊆ D ∨ D ⊆ C ∨ Disjoint C D
 
-/-- A binary hierarchy is a hierarchy. -/
+/-- **A binary hierarchy is a hierarchy.** A binary hierarchy is a hierarchy. -/
 theorem IsBinaryHierarchy.isHierarchy {S : Finset α} {H : Finset (Finset α)}
     (h : IsBinaryHierarchy S H) : IsHierarchy S H :=
   ⟨h.1, h.2.1, h.2.2.1, h.2.2.2.1⟩
@@ -315,7 +315,7 @@ theorem exists_isBinaryHierarchy_superset {S : Finset α} (hS : S.Nonempty)
     rw [Finset.mem_singleton]
     exact (Finset.Nonempty.subset_singleton_iff (hF C hC).1).mp (hF C hC).2
 
-/-- A binary hierarchy on `S` has `2 |S| - 1` members: the `|S|` singletons and `|S| - 1`
+/-- **Number of members of a binary hierarchy.** A binary hierarchy on `S` has `2 |S| - 1` members: the `|S|` singletons and `|S| - 1`
 internal clusters (stated without subtraction). -/
 theorem IsBinaryHierarchy.card_add_one {S : Finset α} {H : Finset (Finset α)}
     (h : IsBinaryHierarchy S H) : H.card + 1 = 2 * S.card := by
@@ -397,12 +397,12 @@ section Compatibility
 
 variable {X : Type} [Fintype X] [DecidableEq X]
 
-/-- The splits `A | Aᶜ` and `B | Bᶜ` are **compatible**: one of `A ∩ B`, `A ∩ Bᶜ`, `Aᶜ ∩ B`,
+/-- **Compatible splits.** The splits `A | Aᶜ` and `B | Bᶜ` are **compatible**: one of `A ∩ B`, `A ∩ Bᶜ`, `Aᶜ ∩ B`,
 `Aᶜ ∩ Bᶜ` is empty (Semple & Steel 2003, Section 3.1). -/
 def Compatible (A B : Finset X) : Prop :=
   Disjoint A B ∨ Disjoint A Bᶜ ∨ Disjoint Aᶜ B ∨ Disjoint Aᶜ Bᶜ
 
-/-- Compatibility is symmetric. -/
+/-- **Symmetry of split compatibility.** Compatibility is symmetric. -/
 theorem Compatible.symm {A B : Finset X} (h : Compatible A B) : Compatible B A := by
   unfold Compatible at *
   rcases h with h | h | h | h
@@ -411,19 +411,19 @@ theorem Compatible.symm {A B : Finset X} (h : Compatible A B) : Compatible B A :
   · exact Or.inr (Or.inl h.symm)
   · exact Or.inr (Or.inr (Or.inr h.symm))
 
-/-- Compatibility depends only on the split, not on the side used to store it. -/
+/-- **Compatibility is unchanged by complementing the first split.** Compatibility depends only on the split, not on the side used to store it. -/
 theorem compatible_compl_left {A B : Finset X} : Compatible Aᶜ B ↔ Compatible A B := by
   unfold Compatible
   rw [compl_compl]
   tauto
 
-/-- Compatibility depends only on the split, not on the side used to store it. -/
+/-- **Compatibility is unchanged by complementing the second split.** Compatibility depends only on the split, not on the side used to store it. -/
 theorem compatible_compl_right {A B : Finset X} : Compatible A Bᶜ ↔ Compatible A B := by
   unfold Compatible
   rw [compl_compl]
   tauto
 
-/-- For the sides not containing a fixed taxon `a`, compatibility is being nested or disjoint:
+/-- **Compatible clusters are nested or disjoint.** For the sides not containing a fixed taxon `a`, compatibility is being nested or disjoint:
 splits seen from a root are clusters. -/
 theorem compatible_iff_nested_or_disjoint {a : X} {A B : Finset X} (hA : a ∉ A) (hB : a ∉ B) :
     Compatible A B ↔ A ⊆ B ∨ B ⊆ A ∨ Disjoint A B := by
@@ -433,12 +433,12 @@ theorem compatible_iff_nested_or_disjoint {a : X} {A B : Finset X} (hA : a ∉ A
   rw [disjoint_compl_right_iff, disjoint_compl_left_iff]
   tauto
 
-/-- The binary characters `χ` and `ψ` show **all four gametes** `(0,0), (0,1), (1,0), (1,1)`
+/-- **Four-gamete condition for binary characters.** The binary characters `χ` and `ψ` show **all four gametes** `(0,0), (0,1), (1,0), (1,1)`
 on the taxa. -/
 def FourGametes (χ ψ : X → Bool) : Prop :=
   ∀ b c : Bool, ∃ x, χ x = b ∧ ψ x = c
 
-/-- The split of a binary character: the taxa in state `true`. -/
+/-- **Split of a binary character.** The split of a binary character: the taxa in state `true`. -/
 def charSplit (χ : X → Bool) : Finset X :=
   Finset.univ.filter fun x => χ x = true
 
@@ -475,12 +475,12 @@ section Trees
 
 variable {X : Type} [Fintype X] [DecidableEq X]
 
-/-- The split set of `T` computed from the leaf `a`: both sides of every cluster of `T` seen
+/-- **Split set of a tree computed from a leaf.** The split set of `T` computed from the leaf `a`: both sides of every cluster of `T` seen
 from `a`. It equals `edgeSplits T` for every `a` (`splitSet_eq_edgeSplits`). -/
 noncomputable def splitSet (T : UnrootedBinaryTree X) (a : X) : Finset (Finset X) :=
   clusterSet T a ∪ (clusterSet T a).image (·ᶜ)
 
-/-- The clusters seen from `a` do not contain `a`. -/
+/-- **Clusters seen from a leaf omit that leaf.** The clusters seen from `a` do not contain `a`. -/
 theorem notMem_of_mem_clusterSet (T : UnrootedBinaryTree X) (a : X) {C : Finset X}
     (hC : C ∈ clusterSet T a) : a ∉ C := by
   have := ((isBinaryHierarchy_clusterSet T a).2.1 C hC).2
@@ -531,24 +531,24 @@ private theorem dist_add_dist_of_cross {V : Type} {G : SimpleGraph V} (hG : G.Is
   omega
 
 
-/-- The side of the edge `p – v` containing `v`: the taxa whose leaf is closer to `v` than to
+/-- **Side of a tree edge containing a vertex.** The side of the edge `p – v` containing `v`: the taxa whose leaf is closer to `v` than to
 `p`. -/
 noncomputable def edgeSide (T : UnrootedBinaryTree X) (p v : T.V) : Finset X :=
   Finset.univ.filter fun x => T.G.dist (T.label x) v < T.G.dist (T.label x) p
 
-/-- The **edge splits** of `T`: the sides of all its edges (both sides of every edge). -/
+/-- **Edge splits of a tree.** The **edge splits** of `T`: the sides of all its edges (both sides of every edge). -/
 noncomputable def edgeSplits (T : UnrootedBinaryTree X) : Finset (Finset X) :=
   ((Finset.univ ×ˢ Finset.univ).filter fun e : T.V × T.V => T.G.Adj e.1 e.2).image
     fun e => edgeSide T e.1 e.2
 
-/-- The two sides of an edge are complementary. -/
+/-- **The two sides of a tree edge are complementary.** The two sides of an edge are complementary. -/
 theorem compl_edgeSide (T : UnrootedBinaryTree X) {p v : T.V} (hpv : T.G.Adj p v) :
     (edgeSide T p v)ᶜ = edgeSide T v p := by
   ext x
   simp only [edgeSide, Finset.mem_compl, Finset.mem_filter, Finset.mem_univ, true_and, not_lt]
   rcases T.isTree.dist_eq_dist_add_one_of_adj (T.label x) hpv with h | h <;> omega
 
-/-- The cluster of a vertex `v` seen from `a` is the side of `v` of the edge from `v` to its
+/-- **Clusters seen from a leaf are edge sides.** The cluster of a vertex `v` seen from `a` is the side of `v` of the edge from `v` to its
 neighbor `p` toward `a`. -/
 theorem cluster_eq_edgeSide (T : UnrootedBinaryTree X) (a : X) {p v : T.V} (hpv : T.G.Adj p v)
     (hd : T.G.dist (T.label a) v = T.G.dist (T.label a) p + 1) :
@@ -600,7 +600,7 @@ private theorem cluster_label_mem_edgeSplits (T : UnrootedBinaryTree X) (a : X) 
   rw [hside]
   exact Finset.mem_image.mpr ⟨(T.label a, r), Finset.mem_filter.mpr ⟨by simp, hra⟩, rfl⟩
 
-/-- The split set computed from any leaf is the set of edge splits. -/
+/-- **Split set from any leaf equals the edge splits.** The split set computed from any leaf is the set of edge splits. -/
 theorem splitSet_eq_edgeSplits (T : UnrootedBinaryTree X) (a : X) :
     splitSet T a = edgeSplits T := by
   have hmem : ∀ {p v : T.V}, T.G.Adj p v → edgeSide T p v ∈ edgeSplits T := fun h =>
@@ -643,7 +643,7 @@ theorem splitSet_eq_splitSet (T : UnrootedBinaryTree X) (a b : X) :
     splitSet T a = splitSet T b := by
   rw [splitSet_eq_edgeSplits, splitSet_eq_edgeSplits]
 
-/-- Any two splits of one tree are compatible. -/
+/-- **Splits computed from a leaf are pairwise compatible.** Any two splits of one tree are compatible. -/
 theorem compatible_of_mem_splitSet {T : UnrootedBinaryTree X} {a : X} {A B : Finset X}
     (hA : A ∈ splitSet T a) (hB : B ∈ splitSet T a) : Compatible A B := by
   have hcl : ∀ {C D : Finset X}, C ∈ clusterSet T a → D ∈ clusterSet T a → Compatible C D :=
@@ -695,7 +695,7 @@ private theorem splits_equivalence_aux (a : X) (hX : (Finset.univ.erase a).Nonem
   · exact Or.inr ⟨Aᶜ, by simpa [hnorm, h] using hm, compl_compl A⟩
   · exact Or.inl (by simpa [hnorm, h] using hm)
 
-/-- Any two splits of one tree are compatible. -/
+/-- **Edge splits of a tree are pairwise compatible.** Any two splits of one tree are compatible. -/
 theorem compatible_of_mem_edgeSplits {T : UnrootedBinaryTree X} {A B : Finset X}
     (hA : A ∈ edgeSplits T) (hB : B ∈ edgeSplits T) : Compatible A B := by
   rcases isEmpty_or_nonempty X with hX | ⟨⟨a⟩⟩
@@ -718,7 +718,7 @@ theorem splits_equivalence (hX : 1 < Fintype.card X) (F : Finset (Finset X))
   simp only [← splitSet_eq_edgeSplits _ a]
   exact splits_equivalence_aux a hX' F hne
 
-/-- `T` is a **perfect phylogeny** for the binary character matrix `M` (taxa by characters):
+/-- **Perfect phylogeny for a binary character matrix.** `T` is a **perfect phylogeny** for the binary character matrix `M` (taxa by characters):
 the split of every non-constant column is a split of `T`, i.e. every character changes state
 on exactly one edge. -/
 def IsPerfectPhylogeny {ι : Type} (T : UnrootedBinaryTree X) (M : X → ι → Bool) : Prop :=
@@ -773,14 +773,14 @@ section RobinsonFoulds
 
 variable {X : Type} [Fintype X] [DecidableEq X]
 
-/-- The **Robinson–Foulds distance**: the number of splits in exactly one of the two trees.
+/-- **Robinson–Foulds distance.** The **Robinson–Foulds distance**: the number of splits in exactly one of the two trees.
 Each split is counted once, by its side away from the leaf `a` (its cluster seen from `a`);
 trivial splits are common to all trees and cancel. The value does not depend on `a`
 (`rfDist_eq_rfDist`). -/
 noncomputable def rfDist (a : X) (T T' : UnrootedBinaryTree X) : ℕ :=
   (clusterSet T a ∆ clusterSet T' a).card
 
-/-- Each split is counted twice in the symmetric difference of the split sets (once per side),
+/-- **Robinson–Foulds distance as half the split symmetric difference.** Each split is counted twice in the symmetric difference of the split sets (once per side),
 so the Robinson–Foulds distance is half of it. -/
 theorem two_mul_rfDist (a : X) (T T' : UnrootedBinaryTree X) :
     2 * rfDist a T T' = (splitSet T a ∆ splitSet T' a).card := by
@@ -830,7 +830,7 @@ theorem two_mul_rfDist (a : X) (T T' : UnrootedBinaryTree X) :
     Finset.card_image_of_injective _ compl_injective, rfDist]
   ring
 
-/-- The Robinson–Foulds distance does not depend on the leaf used to compute it. -/
+/-- **Robinson–Foulds distance is independent of the base leaf.** The Robinson–Foulds distance does not depend on the leaf used to compute it. -/
 theorem rfDist_eq_rfDist (a b : X) (T T' : UnrootedBinaryTree X) :
     rfDist a T T' = rfDist b T T' := by
   have h1 := two_mul_rfDist a T T'
@@ -838,22 +838,22 @@ theorem rfDist_eq_rfDist (a b : X) (T T' : UnrootedBinaryTree X) :
   rw [splitSet_eq_splitSet T a b, splitSet_eq_splitSet T' a b] at h1
   omega
 
-/-- The Robinson–Foulds distance from a tree to itself is zero. -/
+/-- **Robinson–Foulds distance from a tree to itself is zero.** The Robinson–Foulds distance from a tree to itself is zero. -/
 theorem rfDist_self (a : X) (T : UnrootedBinaryTree X) : rfDist a T T = 0 := by
   simp [rfDist]
 
-/-- The Robinson–Foulds distance is symmetric. -/
+/-- **Symmetry of the Robinson–Foulds distance.** The Robinson–Foulds distance is symmetric. -/
 theorem rfDist_comm (a : X) (T T' : UnrootedBinaryTree X) : rfDist a T T' = rfDist a T' T := by
   rw [rfDist, rfDist, symmDiff_comm]
 
-/-- The Robinson–Foulds distance satisfies the triangle inequality. -/
+/-- **Triangle inequality for the Robinson–Foulds distance.** The Robinson–Foulds distance satisfies the triangle inequality. -/
 theorem rfDist_triangle (a : X) (T₁ T₂ T₃ : UnrootedBinaryTree X) :
     rfDist a T₁ T₃ ≤ rfDist a T₁ T₂ + rfDist a T₂ T₃ := by
   unfold rfDist
   exact (Finset.card_le_card (symmDiff_triangle (clusterSet T₁ a) (clusterSet T₂ a)
     (clusterSet T₃ a))).trans (Finset.card_union_le _ _)
 
-/-- The Robinson–Foulds distance vanishes exactly on isomorphic trees (Robinson & Foulds 1981). -/
+/-- **Robinson–Foulds distance vanishes exactly on isomorphic trees.** The Robinson–Foulds distance vanishes exactly on isomorphic trees (Robinson & Foulds 1981). -/
 theorem rfDist_eq_zero_iff (a : X) (T T' : UnrootedBinaryTree X) :
     rfDist a T T' = 0 ↔ T.Iso T' := by
   rw [rfDist, Finset.card_eq_zero]
@@ -864,7 +864,7 @@ theorem rfDist_eq_zero_iff (a : X) (T T' : UnrootedBinaryTree X) :
     rw [clusterSet_eq_of_iso h a]
     exact symmDiff_self _
 
-/-- The Robinson–Foulds distance is invariant under isomorphism, so it is a metric on the trees
+/-- **Isomorphism invariance of the Robinson–Foulds distance.** The Robinson–Foulds distance is invariant under isomorphism, so it is a metric on the trees
 up to isomorphism. -/
 theorem rfDist_congr {a : X} {T₁ T₂ T' : UnrootedBinaryTree X} (h : T₁.Iso T₂) :
     rfDist a T₁ T' = rfDist a T₂ T' := by
@@ -923,7 +923,7 @@ section Consensus
 
 variable {X : Type} [Fintype X] [DecidableEq X]
 
-/-- The **majority splits** of a finite family of trees `T i`: the clusters, seen from `a`, of
+/-- **Majority splits of a family of trees.** The **majority splits** of a finite family of trees `T i`: the clusters, seen from `a`, of
 more than half of the trees (repetitions in the family count). -/
 noncomputable def majoritySplits {ι : Type} [Fintype ι] (T : ι → UnrootedBinaryTree X) (a : X) :
     Finset (Finset X) :=
@@ -976,7 +976,7 @@ noncomputable def bootstrapSupport {σ : Type} {m : ℕ}
   ((Finset.univ.filter fun w : Fin m → Fin m => A ∈ clusterSet (est (M ∘ w)) a).card : ℝ) /
     ((m ^ m : ℕ) : ℝ)
 
-/-- Bootstrap support is a frequency: it lies in `[0, 1]`. -/
+/-- **Bootstrap support lies in the unit interval.** Bootstrap support is a frequency: it lies in `[0, 1]`. -/
 theorem bootstrapSupport_mem_Icc {σ : Type} {m : ℕ}
     (est : (Fin m → X → σ) → UnrootedBinaryTree X) (a : X) (M : Fin m → X → σ)
     (A : Finset X) : bootstrapSupport est a M A ∈ Set.Icc 0 1 := by
@@ -989,7 +989,7 @@ theorem bootstrapSupport_mem_Icc {σ : Type} {m : ℕ}
   refine ⟨div_nonneg (Nat.cast_nonneg _) hpos.le, (div_le_one hpos).mpr ?_⟩
   exact_mod_cast Finset.card_le_univ _
 
-/-- A split has bootstrap support above one half iff it is a majority split of the bootstrap
+/-- **Bootstrap support above one half means a majority split.** A split has bootstrap support above one half iff it is a majority split of the bootstrap
 replicate trees; so the splits with support above one half are pairwise compatible and form
 one tree (`exists_tree_majoritySplits_subset`). -/
 theorem one_half_lt_bootstrapSupport_iff {σ : Type} {m : ℕ}
@@ -1023,7 +1023,7 @@ section Ultrametric
 
 variable {X : Type} [Fintype X]
 
-/-- `d` is an **ultrametric** on the taxa: symmetric, zero exactly on the diagonal, and
+/-- **Ultrametric on taxa.** `d` is an **ultrametric** on the taxa: symmetric, zero exactly on the diagonal, and
 satisfying the **three-point condition** `d x z ≤ max (d x y) (d y z)` (equivalently, of the
 three distances among any three taxa the two largest are equal). -/
 structure IsUltrametric (d : X → X → ℝ) : Prop where
@@ -1036,7 +1036,7 @@ structure IsUltrametric (d : X → X → ℝ) : Prop where
   /-- The three-point condition. -/
   three_point : ∀ x y z, d x z ≤ max (d x y) (d y z)
 
-/-- `d` is the metric of a **dated rooted tree**, encoded by its clusters: a hierarchy `H` on
+/-- **Metric of a dated rooted tree.** `d` is the metric of a **dated rooted tree**, encoded by its clusters: a hierarchy `H` on
 the taxa with dates `h` (`0` at the leaves, strictly increasing from a cluster to any cluster
 strictly containing it) such that `d x y` is the date of the smallest cluster containing `x`
 and `y` (their most recent common ancestor). With edge lengths `(h D - h C) / 2` from each
@@ -1082,7 +1082,7 @@ theorem IsUltrametric.fourPointCondition {d : X → X → ℝ} (hd : IsUltrametr
     first | (left; linarith) | (right; linarith)
 
 omit [Fintype X] in
-/-- Every ultrametric on a finite set is a tree metric (via Buneman's four-point theorem). -/
+/-- **Every ultrametric is a tree metric.** Every ultrametric on a finite set is a tree metric (via Buneman's four-point theorem). -/
 theorem IsUltrametric.isTreeMetric [Finite X] {d : X → X → ℝ} (hd : IsUltrametric d) :
     MathlibExt.Biology.Phylogenetics.Buneman.IsTreeMetric d :=
   MathlibExt.Biology.Phylogenetics.Buneman.isTreeMetric_of_fourPointCondition d hd.self hd.symm
@@ -1254,12 +1254,12 @@ theorem isUltrametric_iff_isDatedTreeMetric [Nonempty X] (d : X → X → ℝ) :
 
 variable [DecidableEq X]
 
-/-- The **average linkage** between two clusters: the mean of `d x y` over `x ∈ C`, `y ∈ D`.
+/-- **Average linkage between clusters.** The **average linkage** between two clusters: the mean of `d x y` over `x ∈ C`, `y ∈ D`.
 -/
 noncomputable def avgDist (d : X → X → ℝ) (C D : Finset X) : ℝ :=
   (∑ x ∈ C, ∑ y ∈ D, d x y) / (C.card * D.card : ℝ)
 
-/-- The states reachable by **UPGMA** (Sokal & Michener 1958) on `d`: a partition `P` of the
+/-- **States reachable by UPGMA.** The states reachable by **UPGMA** (Sokal & Michener 1958) on `d`: a partition `P` of the
 taxa into blocks and the heights `c x y` recorded so far. It starts from the singletons; each
 step merges two distinct blocks `C`, `D` of least average linkage (ties broken arbitrarily) and
 records `avgDist d C D` as the height at which every `x ∈ C` and `y ∈ D` are joined (the
@@ -1435,7 +1435,7 @@ theorem upgma_exact {d : X → X → ℝ} (hd : IsUltrametric d) {P : Finset (Fi
     (hx : x ∈ B) (hy : y ∈ B) : c x y = d x y := by
   exact (upgma_inv hd h).2 B hB x hx y hy
 
-/-- UPGMA always completes: from the singletons it reaches the single block `univ`. -/
+/-- **UPGMA always completes.** UPGMA always completes: from the singletons it reaches the single block `univ`. -/
 theorem exists_upgmaReaches_univ [Nonempty X] (d : X → X → ℝ) :
     ∃ c, UpgmaReaches d {Finset.univ} c := by
   have main : ∀ n (P : Finset (Finset X)) (c : X → X → ℝ), UpgmaReaches d P c → P.card = n →
@@ -1490,7 +1490,7 @@ section Triplets
 
 variable {α : Type*} [DecidableEq α]
 
-/-- A **rooted triplet** `xy|z`: `x` and `y` are closer to each other than to `z`. -/
+/-- **Rooted triplet.** A **rooted triplet** `xy|z`: `x` and `y` are closer to each other than to `z`. -/
 structure Triplet (α : Type*) where
   /-- The first taxon of the cherry. -/
   x : α
@@ -1499,12 +1499,12 @@ structure Triplet (α : Type*) where
   /-- The outgroup. -/
   z : α
 
-/-- The cluster system `H` **displays** the triplet `xy|z`: some cluster contains `x` and `y`
+/-- **Cluster system displaying a triplet.** The cluster system `H` **displays** the triplet `xy|z`: some cluster contains `x` and `y`
 but not `z`. -/
 def DisplaysTriplet (H : Finset (Finset α)) (t : Triplet α) : Prop :=
   ∃ C ∈ H, t.x ∈ C ∧ t.y ∈ C ∧ t.z ∉ C
 
-/-- The **Aho graph** of the triplets `R` on `S'` (vertices `S'`, an edge `x y` for each
+/-- **Cut in the Aho graph.** The **Aho graph** of the triplets `R` on `S'` (vertices `S'`, an edge `x y` for each
 `xy|z ∈ R` with `x, y, z ∈ S'`) has a cut: a partition of `S'` into two nonempty parts with no
 edge across, i.e. the graph is disconnected. -/
 def HasAhoCut (R : Finset (Triplet α)) (S' : Finset α) : Prop :=
@@ -1704,7 +1704,7 @@ section Quartets
 
 variable {X : Type} [Fintype X] [DecidableEq X]
 
-/-- `T` **displays the quartet** `xy|zw`: some edge split of `T` has `x, y` on one side and
+/-- **Tree displaying a quartet.** `T` **displays the quartet** `xy|zw`: some edge split of `T` has `x, y` on one side and
 `z, w` on the other. -/
 def DisplaysQuartet (T : UnrootedBinaryTree X) (x y z w : X) : Prop :=
   ∃ A ∈ edgeSplits T, x ∈ A ∧ y ∈ A ∧ z ∉ A ∧ w ∉ A

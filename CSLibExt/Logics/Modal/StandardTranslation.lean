@@ -55,7 +55,7 @@ open FirstOrder FirstOrder.Language
 
 variable {Atom : Type u}
 
-/-- Relation symbols of the modal first-order language: accessibility `R` (binary) and a
+/-- **Relation symbols of the modal first-order language.** Relation symbols of the modal first-order language: accessibility `R` (binary) and a
 unary predicate `P_a` for each atom `a`. -/
 inductive ModalRelations (Atom : Type u) : ℕ → Type u
   /-- Accessibility, binary. -/
@@ -77,7 +77,7 @@ inductive FrameRelations : ℕ → Type
   /-- Accessibility, binary. -/
   | relR : FrameRelations 2
 
-/-- The first-order language of frames: no function symbols, one binary relation `R`. -/
+/-- **First-order language of Kripke frames.** The first-order language of frames: no function symbols, one binary relation `R`. -/
 def frameLanguage : FirstOrder.Language where
   Functions := fun _ => PEmpty
   Relations := FrameRelations

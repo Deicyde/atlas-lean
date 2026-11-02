@@ -64,7 +64,7 @@ namespace MetaMathlibExt
 
 -- Logic 37: Countable subsets of $\alpha$
 
-/-- [α]^ω or P_{ω₁}(α) is the set of countable subsets of α -/
+/-- **Countable subsets of a set.** [α]^ω or P_{ω₁}(α) is the set of countable subsets of α -/
 def CountableSubsets.{u} (α : Type u) : Set (Set α) := {x | x.Countable}
 
 -- Logic 39: Club in $[X]^\omega$
@@ -131,7 +131,7 @@ def ClosurePointsSeq {α : Type*} (F : ℕ → Finset α → α) : Set (Set α) 
       [α]^ω.
 -/
 
-/-- 1. Let F : Finset(α) → α. Then ClosurePointsSeq(λ n : ℕ,, F) =      ClosurePoints(F).   2. For
+/-- **Closure points and clubs of countable subsets.** 1. Let F : Finset(α) → α. Then ClosurePointsSeq(λ n : ℕ,, F) =      ClosurePoints(F).   2. For
    every finitary operation F, ∅ ∉ ClosurePoints(F).   3. Let f : ℕ → 𝒫(α) with each f(n) countable.
    Then ⋃_{n ∈ ℕ} f(n)      is countable.   4. [α]^ω is club in [α]^ω.   5. ∅ is not stationary in
    [α]^ω.   6. If S is stationary in [α]^ω then S ≠ ∅.   7.

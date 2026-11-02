@@ -59,7 +59,7 @@ of $R$ is finitely presented as an $R$-module. -/
 def Ring.Coherent (R : Type*) [Semiring R] : Prop :=
   ∀ I : Ideal R, I.FG → Module.FinitePresentation R I
 
-/-- A group `G` is called one-relator if it has a presentation with a single relation. -/
+/-- **One-relator group.** A group `G` is called one-relator if it has a presentation with a single relation. -/
 def Group.OneRelator.{u} (G : Type u) [Group G] : Prop :=
   ∃ n : ℕ, ∃ rel : FreeGroup (Fin n), Nonempty (PresentedGroup {rel} ≃* G)
 

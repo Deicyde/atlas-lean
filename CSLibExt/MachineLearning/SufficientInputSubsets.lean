@@ -59,19 +59,19 @@ open Finset
 
 variable {ι : Type*} [DecidableEq ι]
 
-/-- `pick` is a greedy backward-selection rule for `g`: from a nonempty remaining set `R` it
+/-- **Greedy backward-selection rule.** `pick` is a greedy backward-selection rule for `g`: from a nonempty remaining set `R` it
 masks a feature `i ∈ R` maximizing `g (R.erase i)`. -/
 def IsGreedy (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R) : Prop :=
   ∀ (R : Finset ι) (h : R.Nonempty), ∀ i ∈ R, g (R.erase i) ≤ g (R.erase (pick R h))
 
-/-- Greedy rules exist for every `g`. -/
+/-- **Existence of greedy backward-selection rules.** Greedy rules exist for every `g`. -/
 theorem exists_isGreedy (g : Finset ι → ℝ) :
     ∃ pick : (R : Finset ι) → R.Nonempty → R, IsGreedy g pick := by
   choose f hf using fun (R : Finset ι) (h : R.Nonempty) =>
     R.exists_max_image (fun i => g (R.erase i)) h
   exact ⟨fun R h => ⟨f R h, (hf R h).1⟩, fun R h i hi => (hf R h).2 i hi⟩
 
-/-- Backward selection: the list of remaining sets `R₀ = R, R₁, …, ∅`, where `R_{t+1}` is
+/-- **Backward-selection chain of remaining feature sets.** Backward selection: the list of remaining sets `R₀ = R, R₁, …, ∅`, where `R_{t+1}` is
 `R_t` with the feature chosen by `pick` masked. -/
 def chain (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R) (R : Finset ι) :
     List (Finset ι) :=
@@ -79,7 +79,7 @@ def chain (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R) 
 termination_by R.card
 decreasing_by exact card_erase_lt_of_mem (pick R h).2
 
-/-- `FindSIS`: un-mask features in reverse order of masking (start from `∅`) and return the
+/-- **FindSIS procedure for sufficient input subsets.** `FindSIS`: un-mask features in reverse order of masking (start from `∅`) and return the
 first set on which the prediction reaches the threshold, or `none`. The paper's procedure does
 not test `∅` itself; the two agree whenever `g ∅ < τ`, the case the paper considers. -/
 noncomputable def findSIS (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R) (τ : ℝ)
@@ -88,18 +88,18 @@ noncomputable def findSIS (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.
 
 variable {g : Finset ι → ℝ} {pick : (R : Finset ι) → R.Nonempty → R} {τ : ℝ}
 
-/-- Unfolding `chain` at a nonempty set. -/
+/-- **Backward-selection chain at a nonempty set.** Unfolding `chain` at a nonempty set. -/
 theorem chain_of_nonempty (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R)
     {R : Finset ι} (h : R.Nonempty) :
     chain g pick R = R :: chain g pick (R.erase (pick R h)) := by
   rw [chain]; simp [h]
 
-/-- Unfolding `chain` at the empty set (the chain stops). -/
+/-- **Backward-selection chain at the empty set.** Unfolding `chain` at the empty set (the chain stops). -/
 theorem chain_of_not_nonempty (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R)
     {R : Finset ι} (h : ¬R.Nonempty) : chain g pick R = [R] := by
   rw [chain]; simp [h]
 
-/-- Every set in the backward-selection chain is a subset of the starting set. -/
+/-- **Sets in the backward-selection chain are subsets of the start.** Every set in the backward-selection chain is a subset of the starting set. -/
 theorem subset_of_mem_chain {R S : Finset ι} (h : S ∈ chain g pick R) : S ⊆ R := by
   induction R using Finset.strongInduction generalizing S with
   | H R ih =>
@@ -111,7 +111,7 @@ theorem subset_of_mem_chain {R S : Finset ι} (h : S ∈ chain g pick R) : S ⊆
     · rw [chain_of_not_nonempty g pick hR, List.mem_singleton] at h
       exact h ▸ subset_rfl
 
-/-- The starting set is the first set of the chain. -/
+/-- **Starting set begins the backward-selection chain.** The starting set is the first set of the chain. -/
 theorem mem_chain_self (R : Finset ι) : R ∈ chain g pick R := by
   by_cases hR : R.Nonempty
   · rw [chain_of_nonempty g pick hR]; exact List.mem_cons_self
@@ -196,12 +196,12 @@ private theorem findSIS_spec {R S : Finset ι} (h : findSIS g pick τ R = some S
     · rw [List.pairwise_append, List.pairwise_cons] at hpr
       exact absurd (hpr.2.1.1 T hTb) (asymm hTS)
 
-/-- If the prediction on the starting set reaches the threshold, `findSIS` returns a set. -/
+/-- **FindSIS returns a set when the start reaches the threshold.** If the prediction on the starting set reaches the threshold, `findSIS` returns a set. -/
 theorem findSIS_isSome {R : Finset ι} (hR : τ ≤ g R) : (findSIS g pick τ R).isSome := by
   rw [findSIS, List.find?_isSome]
   exact ⟨R, List.mem_reverse.2 (mem_chain_self R), by simpa using hR⟩
 
-/-- Criterion (1): the returned SIS is a subset of the starting features and is sufficient. -/
+/-- **FindSIS returns a sufficient subset of the features.** Criterion (1): the returned SIS is a subset of the starting features and is sufficient. -/
 theorem findSIS_sufficient {R S : Finset ι} (h : findSIS g pick τ R = some S) :
     S ⊆ R ∧ τ ≤ g S :=
   ⟨subset_of_mem_chain (findSIS_spec h).1, (findSIS_spec h).2.1⟩
@@ -222,7 +222,7 @@ theorem findSIS_card_le {R S T : Finset ι} (h : findSIS g pick τ R = some S)
   · exact (card_lt_card hST).le
   · exact absurd hTτ (not_le.2 (hmin T hT hTS))
 
-/-- For a monotone set function (masking more features never raises the prediction), the
+/-- **Minimality of FindSIS for monotone set functions.** For a monotone set function (masking more features never raises the prediction), the
 returned SIS is inclusion-minimal: no proper subset is sufficient. (Derived; the paper states
 only Proposition 1.) -/
 theorem findSIS_minimal_of_monotone (hpick : IsGreedy g pick) (hg : Monotone g)
@@ -231,7 +231,7 @@ theorem findSIS_minimal_of_monotone (hpick : IsGreedy g pick) (hg : Monotone g)
   obtain ⟨s, hsS, hsT⟩ := exists_of_ssubset hT
   exact (hg (subset_erase.2 ⟨hT.subset, hsT⟩)).trans_lt (findSIS_erase_lt hpick h s hsS)
 
-/-- `SIScollection`: while the remaining features `R` are sufficient (`τ ≤ g R`), find a SIS
+/-- **SIS-collection procedure.** `SIScollection`: while the remaining features `R` are sufficient (`τ ≤ g R`), find a SIS
 among them, record it and mask it. Stops if `findSIS` returns an empty set (only possible
 when `τ ≤ g ∅`). -/
 noncomputable def sisCollection (g : Finset ι → ℝ) (pick : (R : Finset ι) → R.Nonempty → R)
@@ -249,7 +249,7 @@ noncomputable def sisCollection (g : Finset ι → ℝ) (pick : (R : Finset ι) 
 termination_by R.card
 decreasing_by assumption
 
-/-- Every set of the SIS-collection is a nonempty sufficient subset of the starting features. -/
+/-- **Sets of the SIS-collection are nonempty and sufficient.** Every set of the SIS-collection is a nonempty sufficient subset of the starting features. -/
 theorem sisCollection_sufficient {R S : Finset ι} (h : S ∈ sisCollection g pick τ R) :
     S.Nonempty ∧ S ⊆ R ∧ τ ≤ g S := by
   induction R using Finset.strongInduction with
@@ -267,7 +267,7 @@ theorem sisCollection_sufficient {R S : Finset ι} (h : S ∈ sisCollection g pi
       next => simp at h
     · simp at h
 
-/-- The sets of the SIS-collection are pairwise disjoint. -/
+/-- **Sets of the SIS-collection are pairwise disjoint.** The sets of the SIS-collection are pairwise disjoint. -/
 theorem sisCollection_pairwiseDisjoint (R : Finset ι) :
     (sisCollection g pick τ R).Pairwise Disjoint := by
   induction R using Finset.strongInduction with

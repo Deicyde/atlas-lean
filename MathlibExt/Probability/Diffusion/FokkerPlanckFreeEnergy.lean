@@ -142,17 +142,17 @@ private theorem integral_hasDerivAt_local (F F' : ℝ → ℝ → ℝ) (a b t δ
       MeasureTheory.volume a b)
     (MeasureTheory.ae_of_all _ fun x hx s hs => hderiv s hs x (uIoc_subset_uIcc hx))).2
 
-/-- The **free energy** `F(t) = ∫ₐᵇ (Ψ p + D p log p) dx` of the density `p(t, ·)` on
+/-- **Free energy of a Fokker–Planck density.** The **free energy** `F(t) = ∫ₐᵇ (Ψ p + D p log p) dx` of the density `p(t, ·)` on
 `[a, b]` (potential `Ψ`, diffusion coefficient `D`). -/
 noncomputable def freeEnergy (Ψ : ℝ → ℝ) (D a b : ℝ) (p : ℝ → ℝ → ℝ) (t : ℝ) : ℝ :=
   ∫ x in a..b, (Ψ x * p t x + D * (p t x * Real.log (p t x)))
 
-/-- The (negative) probability flux `p Ψ' + D ∂ₓ p` of the gradient-drift Fokker–Planck
+/-- **Negative probability flux of the Fokker–Planck equation.** The (negative) probability flux `p Ψ' + D ∂ₓ p` of the gradient-drift Fokker–Planck
 equation at `(t, x)`; the flux itself is `-(p Ψ' + D ∂ₓ p)`. -/
 noncomputable def negFlux (Ψ : ℝ → ℝ) (D : ℝ) (p : ℝ → ℝ → ℝ) (t x : ℝ) : ℝ :=
   p t x * deriv Ψ x + D * deriv (fun y => p t y) x
 
-/-- `p` solves the **gradient-drift Fokker–Planck equation** `∂ₜ p = ∂ₓ (p Ψ' + D ∂ₓ p)` on
+/-- **No-flux solution of the gradient-drift Fokker–Planck equation.** `p` solves the **gradient-drift Fokker–Planck equation** `∂ₜ p = ∂ₓ (p Ψ' + D ∂ₓ p)` on
 `[a, b]` with **zero flux** at both ends, for times `t ∈ I`. -/
 structure IsNoFluxSolutionOn (Ψ : ℝ → ℝ) (D a b : ℝ) (I : Set ℝ) (p : ℝ → ℝ → ℝ) : Prop where
   /-- The Fokker–Planck equation on `[a, b]`. -/

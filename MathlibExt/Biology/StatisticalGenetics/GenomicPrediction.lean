@@ -111,7 +111,7 @@ section PRS
 
 variable {Ω : Type*} {m : MeasurableSpace Ω} {M : ℕ}
 
-/-- In a target population whose marker genotypes `x j` have raw second moments
+/-- **Cross moment of two polygenic scores.** In a target population whose marker genotypes `x j` have raw second moments
 `∫ x j * x k = [j = k]` (standardized, uncorrelated markers), the scores `xᵀ a` and `xᵀ b` of two
 effect vectors have raw cross moment `aᵀ b`. With mean-zero genotypes and a probability measure
 this is the covariance of the genetic value `xᵀ β` and the polygenic score `xᵀ β̂`. -/
@@ -122,7 +122,7 @@ theorem integral_score_mul_score {Ξ : Type*} {mΞ : MeasurableSpace Ξ} {ν : M
   rw [integral_sum_mul_sum x x a b hx hx]
   simp [hxx]
 
-/-- The effect-estimate model behind polygenic-score accuracy (Daetwyler et al. 2008;
+/-- **Effect-estimate model for polygenic score accuracy.** The effect-estimate model behind polygenic-score accuracy (Daetwyler et al. 2008;
 Dudbridge 2013), at the level of raw second moments, for `M` independent markers: true effects
 `beta k` with `∫ β k β l = (h² / M) [k = l]`, estimation errors `err k` with
 `∫ e k e l = s² [k = l]`, orthogonal to the effects. The estimates are `β̂ = β + e`
@@ -153,7 +153,7 @@ namespace PRSModel
 
 variable {μ : Measure Ω} (D : PRSModel μ M)
 
-/-- The model forces `h² ≥ 0` when there is at least one marker. -/
+/-- **Nonnegativity of heritability in the effect-estimate model.** The model forces `h² ≥ 0` when there is at least one marker. -/
 theorem h2_nonneg (hM : 0 < M) : 0 ≤ D.h2 := by
   have h := D.integral_beta_mul ⟨0, hM⟩ ⟨0, hM⟩
   rw [ite_eq_left rfl] at h
@@ -163,17 +163,17 @@ theorem h2_nonneg (hM : 0 < M) : 0 ≤ D.h2 := by
   exact (div_nonneg_iff.1 h0).elim (fun h => h.1) fun h =>
     absurd h.2 (not_le.2 (Nat.cast_pos.2 hM))
 
-/-- The model forces `s² ≥ 0` when there is at least one marker. -/
+/-- **Nonnegativity of the sampling error variance of effect estimates.** The model forces `s² ≥ 0` when there is at least one marker. -/
 theorem s2_nonneg (hM : 0 < M) : 0 ≤ D.s2 := by
   have h := D.integral_err_mul ⟨0, hM⟩ ⟨0, hM⟩
   rw [ite_eq_left rfl] at h
   rw [← h]
   exact integral_nonneg fun ω => mul_self_nonneg _
 
-/-- The estimated effects `β̂ = β + e`. -/
+/-- **Estimated marker effects.** The estimated effects `β̂ = β + e`. -/
 def betaHat (k : Fin M) (ω : Ω) : ℝ := D.beta k ω + D.err k ω
 
-/-- The squared correlation of the genetic value and the polygenic score as a ratio of
+/-- **Squared accuracy of a polygenic score.** The squared correlation of the genetic value and the polygenic score as a ratio of
 expectations, `𝔼[βᵀβ̂]² / (𝔼[βᵀβ] 𝔼[β̂ᵀβ̂])`: by `integral_score_mul_score`, `βᵀβ̂`, `βᵀβ` and
 `β̂ᵀβ̂` are the covariance and variances of `xᵀβ` and `xᵀβ̂` over a target population of
 standardized uncorrelated markers. It is not the expectation of a squared correlation. -/
@@ -181,7 +181,7 @@ noncomputable def accuracySq : ℝ :=
   (∫ ω, ∑ k, D.beta k ω * D.betaHat k ω ∂μ) ^ 2 /
     ((∫ ω, ∑ k, D.beta k ω ^ 2 ∂μ) * ∫ ω, ∑ k, D.betaHat k ω ^ 2 ∂μ)
 
-/-- `𝔼[βᵀβ̂] = h²` (for at least one marker). -/
+/-- **Expected cross product of true and estimated effects.** `𝔼[βᵀβ̂] = h²` (for at least one marker). -/
 theorem integral_beta_mul_betaHat (hM : M ≠ 0) :
     ∫ ω, ∑ k, D.beta k ω * D.betaHat k ω ∂μ = D.h2 := by
   have hi (k : Fin M) : Integrable (fun ω => D.beta k ω * D.beta k ω) μ :=
@@ -200,7 +200,7 @@ theorem integral_beta_mul_betaHat (hM : M ≠ 0) :
   simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   field_simp
 
-/-- `𝔼[βᵀβ] = h²` (for at least one marker). -/
+/-- **Expected squared norm of the true effects.** `𝔼[βᵀβ] = h²` (for at least one marker). -/
 theorem integral_beta_sq (hM : M ≠ 0) : ∫ ω, ∑ k, D.beta k ω ^ 2 ∂μ = D.h2 := by
   have hs (k : Fin M) : Integrable (fun ω => D.beta k ω * D.beta k ω) μ :=
     (D.memLp_beta k).integrable_mul (D.memLp_beta k)
@@ -210,7 +210,7 @@ theorem integral_beta_sq (hM : M ≠ 0) : ∫ ω, ∑ k, D.beta k ω ^ 2 ∂μ =
     Fintype.card_fin, nsmul_eq_mul]
   field_simp
 
-/-- `𝔼[β̂ᵀβ̂] = h² + M s²` (for at least one marker). -/
+/-- **Expected squared norm of the estimated effects.** `𝔼[β̂ᵀβ̂] = h² + M s²` (for at least one marker). -/
 theorem integral_betaHat_sq (hM : M ≠ 0) :
     ∫ ω, ∑ k, D.betaHat k ω ^ 2 ∂μ = D.h2 + M * D.s2 := by
   have hi (k : Fin M) : Integrable (fun ω => D.beta k ω * D.beta k ω) μ :=
@@ -258,7 +258,7 @@ theorem accuracySq_eq_of_s2 {N : ℕ} (hM : M ≠ 0) (hN : N ≠ 0) (hs : D.s2 =
 
 end PRSModel
 
-/-- The training genotype matrix has orthogonal columns with sum of squares `N`,
+/-- **Training genotype matrix with orthogonal standardized columns.** The training genotype matrix has orthogonal columns with sum of squares `N`,
 `∑ i, X i k * X i l = N [k = l]`; for centered columns this says that the markers are
 uncorrelated, with unit sample variance, in the training sample. -/
 def HasOrthogonalColumns {N : ℕ} (X : Matrix (Fin N) (Fin M) ℝ) : Prop :=
@@ -268,7 +268,7 @@ namespace PRSModel
 
 variable {N : ℕ} {μ : Measure Ω}
 
-/-- The effect-estimate model obtained from the LD-score model when the effects are estimated by
+/-- **Effect-estimate model derived from the LD-score model.** The effect-estimate model obtained from the LD-score model when the effects are estimated by
 the normalized scores `β̂ = Xᵀ y / N` on a training matrix with orthogonal standardized columns:
 the error is `e k = ∑ i, X i k ε i / N` and its sampling variance is `(1 - h²) / N`. -/
 noncomputable def ofLDScore (D : LDScore.Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ)
@@ -307,7 +307,7 @@ noncomputable def ofLDScore (D : LDScore.Model μ N M) (X : Matrix (Fin N) (Fin 
     rw [integral_finsetSum _ fun i _ => hi i]
     simp [h]
 
-/-- The estimates of `ofLDScore` are the normalized scores `Xᵀ y / N` of the LD-score model. -/
+/-- **Estimates of the derived model are normalized scores.** The estimates of `ofLDScore` are the normalized scores `Xᵀ y / N` of the LD-score model. -/
 theorem ofLDScore_betaHat (D : LDScore.Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ)
     (hX : HasOrthogonalColumns X) (hN : N ≠ 0) (k : Fin M) (ω : Ω) :
     (ofLDScore D X hX).betaHat k ω = D.betaHat X k ω := by
@@ -348,16 +348,16 @@ section COJO
 variable {n : ℕ} {ι ι₁ ι₂ : Type*} [Fintype ι] [DecidableEq ι] [Fintype ι₁] [DecidableEq ι₁]
   [Fintype ι₂] [DecidableEq ι₂]
 
-/-- The marginal least-squares estimate `x_jᵀ y / x_jᵀ x_j` of marker `j` (single-marker
+/-- **Marginal least-squares estimate of a marker effect.** The marginal least-squares estimate `x_jᵀ y / x_jᵀ x_j` of marker `j` (single-marker
 regression without intercept, on centered genotypes and phenotype as in Yang et al. 2012). -/
 noncomputable def marginalEstimate (X : Matrix (Fin n) ι ℝ) (y : Fin n → ℝ) (j : ι) : ℝ :=
   (Xᵀ *ᵥ y) j / (Xᵀ * X) j j
 
-/-- The diagonal `D = diag(XᵀX)` of the Gram matrix. -/
+/-- **Diagonal of the genotype Gram matrix.** The diagonal `D = diag(XᵀX)` of the Gram matrix. -/
 noncomputable def gramDiag (X : Matrix (Fin n) ι ℝ) : Matrix ι ι ℝ :=
   diagonal fun j => (Xᵀ * X) j j
 
-/-- `Xᵀ y = D β̂` for the marginal estimates `β̂` (Yang et al. 2012). This holds for every
+/-- **Genotype-phenotype cross products from marginal estimates.** `Xᵀ y = D β̂` for the marginal estimates `β̂` (Yang et al. 2012). This holds for every
 genotype matrix: a column with `x_jᵀ x_j = 0` is zero, so both sides vanish there. -/
 theorem transpose_mulVec_eq_gramDiag_mulVec (X : Matrix (Fin n) ι ℝ) (y : Fin n → ℝ) :
     Xᵀ *ᵥ y = gramDiag X *ᵥ marginalEstimate X y := by
@@ -380,7 +380,7 @@ theorem cojo_joint (X : Matrix (Fin n) ι ℝ) (y : Fin n → ℝ) :
     (Xᵀ * X)⁻¹ *ᵥ (Xᵀ *ᵥ y) = (Xᵀ * X)⁻¹ *ᵥ (gramDiag X *ᵥ marginalEstimate X y) := by
   rw [transpose_mulVec_eq_gramDiag_mulVec]
 
-/-- For markers uncorrelated in the sample (`XᵀX` diagonal) without zero columns, the joint
+/-- **Joint estimate equals marginal estimates for uncorrelated markers.** For markers uncorrelated in the sample (`XᵀX` diagonal) without zero columns, the joint
 estimate is the vector of marginal estimates. -/
 theorem cojo_joint_of_diagonal (X : Matrix (Fin n) ι ℝ) (y : Fin n → ℝ)
     (hX : Xᵀ * X = gramDiag X) (hD : ∀ j, (Xᵀ * X) j j ≠ 0) :
@@ -390,7 +390,7 @@ theorem cojo_joint_of_diagonal (X : Matrix (Fin n) ι ℝ) (y : Fin n → ℝ)
     exact (Finset.prod_ne_zero_iff.mpr fun j _ => hD j).isUnit
   rw [cojo_joint, hX, mulVec_mulVec, nonsing_inv_mul _ hdet, one_mulVec]
 
-/-- The unconditional algebraic formula from Yang et al. 2012, eq. (15):
+/-- **Conditional estimate of second-block effects (COJO).** The unconditional algebraic formula from Yang et al. 2012, eq. (15):
 `(X₂ᵀX₂)⁻¹ X₂ᵀ y - (X₂ᵀX₂)⁻¹ X₂ᵀX₁ (X₁ᵀX₁)⁻¹ X₁ᵀ y`. When both Gram determinants are units,
 this has the usual interpretation as the block-2 fit conditional on the block-1 fit. For a
 singular Gram matrix, Mathlib's nonsingular inverse is zero and the value can be a junk value. -/
@@ -408,7 +408,7 @@ theorem conditionalEstimate_eq_summary (X₁ : Matrix (Fin n) ι₁ ℝ) (X₂ :
   rw [conditionalEstimate, transpose_mulVec_eq_gramDiag_mulVec X₂,
     transpose_mulVec_eq_gramDiag_mulVec X₁]
 
-/-- Unconditionally, the conditional formula equals the nonsingular-inverse formula applied to
+/-- **Conditional estimate as a fit to the first-block residual.** Unconditionally, the conditional formula equals the nonsingular-inverse formula applied to
 the algebraic residual `y - X₁ ((X₁ᵀX₁)⁻¹ X₁ᵀ y)`. If both Gram determinants are units, these
 are the successive least-squares fits on blocks 1 and 2. With a singular Gram matrix they need
 not minimize residual error. This is in general not the block-2 part of the joint formula on
@@ -427,14 +427,14 @@ section Stratified
 
 variable {Ω : Type*} {m : MeasurableSpace Ω} {N M : ℕ}
 
-/-- The stratified normalized-cross-product score
+/-- **Stratified LD score.** The stratified normalized-cross-product score
 `ℓ(j, C) = ∑_{k ∈ C} (X_jᵀ X_k / N)²`. For a standardized genotype matrix this is the stratified
 LD score of marker `j` with respect to annotation category `C` (Finucane et al. 2015). -/
 noncomputable def stratLDScore (X : Matrix (Fin N) (Fin M) ℝ) (C : Finset (Fin M)) (j : Fin M) :
     ℝ :=
   ∑ k ∈ C, ldCorr X j k ^ 2
 
-/-- The stratified LD-score model (Finucane et al. 2015), at the level of raw second moments:
+/-- **Stratified LD-score model.** The stratified LD-score model (Finucane et al. 2015), at the level of raw second moments:
 annotation categories `cat c ⊆ {markers}` (possibly overlapping), per-category contributions
 `tau c`, effects with `∫ β k β l = [k = l] ∑_c τ_c [k ∈ cat c]`, noise with
 `∫ ε i ε i' = σ²_e [i = i']`, effects orthogonal to noise. The cited model normalizes the
@@ -467,13 +467,13 @@ namespace StratifiedModel
 variable {C : Type*} [Fintype C] {μ : Measure Ω} (D : StratifiedModel μ N M C)
   (X : Matrix (Fin N) (Fin M) ℝ)
 
-/-- The phenotype `y = X β + ε`. -/
+/-- **Phenotype in the stratified LD-score model.** The phenotype `y = X β + ε`. -/
 def pheno (i : Fin N) (ω : Ω) : ℝ := ∑ k, X i k * D.beta k ω + D.eps i ω
 
-/-- The `N`-normalized score `β̂ j = X_jᵀ y / N`. -/
+/-- **Normalized score in the stratified LD-score model.** The `N`-normalized score `β̂ j = X_jᵀ y / N`. -/
 noncomputable def betaHat (j : Fin M) (ω : Ω) : ℝ := (∑ i, X i j * D.pheno X i ω) / N
 
-/-- The association statistic `χ² j = N β̂ j ²`. -/
+/-- **Association statistic in the stratified LD-score model.** The association statistic `χ² j = N β̂ j ²`. -/
 noncomputable def chiSq (j : Fin M) (ω : Ω) : ℝ := N * D.betaHat X j ω ^ 2
 
 private theorem betaHat_eq_sum (j : Fin M) (ω : Ω) :
@@ -483,7 +483,7 @@ private theorem betaHat_eq_sum (j : Fin M) (ω : Ω) :
   rw [Finset.sum_comm]
   simp_rw [← Finset.sum_mul, div_mul_eq_mul_div, Finset.sum_div]
 
-/-- The exact expectation of the association statistic in the stratified model, for any
+/-- **Expected association statistic in the stratified LD-score model.** The exact expectation of the association statistic in the stratified model, for any
 genotype matrix: `𝔼[χ² j] = N ∑_c τ_c ℓ(j, cat c) + σ²_e (∑ i, X i j ²) / N`. -/
 theorem integral_chiSq (j : Fin M) :
     ∫ ω, D.chiSq X j ω ∂μ =
@@ -550,14 +550,14 @@ section CrossTrait
 
 variable {Ω : Type*} {m : MeasurableSpace Ω} {n M : ℕ}
 
-/-- The in-sample normalized cross product `∑_{i ∈ S} X i j X i k / |S|` of markers `j`, `k` in
+/-- **In-sample LD correlation.** The in-sample normalized cross product `∑_{i ∈ S} X i j X i k / |S|` of markers `j`, `k` in
 the sample `S` of a pool of individuals (the sample LD correlation for a matrix standardized
 within `S`). -/
 noncomputable def sampleCorr (X : Matrix (Fin n) (Fin M) ℝ) (S : Finset (Fin n)) (j k : Fin M) :
     ℝ :=
   (∑ i ∈ S, X i j * X i k) / S.card
 
-/-- The bivariate LD-score model (Bulik-Sullivan et al. 2015b), at the level of the cross
+/-- **Bivariate LD-score model.** The bivariate LD-score model (Bulik-Sullivan et al. 2015b), at the level of the cross
 second moments that enter `𝔼[z₁ z₂]`: a pool of `n` genotyped individuals with genotype matrix
 `X`, two GWAS samples `S₁`, `S₂` of the pool (possibly overlapping), effects `β₁`, `β₂` with
 `∫ β₁ k β₂ l = (ρ_g / M) [k = l]` (genetic covariance `ρ_g`), noises `ε₁`, `ε₂` with
@@ -604,12 +604,12 @@ namespace CrossTraitModel
 
 variable {μ : Measure Ω} (D : CrossTraitModel μ n M) (X : Matrix (Fin n) (Fin M) ℝ)
 
-/-- The scaled marginal score `z₁ j = √N₁ X_jᵀ y₁ / N₁` of marker `j` for trait 1, computed on
+/-- **Scaled marginal score for the first trait.** The scaled marginal score `z₁ j = √N₁ X_jᵀ y₁ / N₁` of marker `j` for trait 1, computed on
 `S₁` with `y₁ = X β₁ + ε₁`. The model does not assert the normalization needed for a z-score. -/
 noncomputable def z1 (j : Fin M) (ω : Ω) : ℝ :=
   √(D.S1.card : ℝ) * ((∑ i ∈ D.S1, X i j * (∑ k, X i k * D.beta1 k ω + D.eps1 i ω)) / D.S1.card)
 
-/-- The analogous scaled marginal score `z₂ j` of marker `j` for trait 2, computed on `S₂`. -/
+/-- **Scaled marginal score for the second trait.** The analogous scaled marginal score `z₂ j` of marker `j` for trait 2, computed on `S₂`. -/
 noncomputable def z2 (j : Fin M) (ω : Ω) : ℝ :=
   √(D.S2.card : ℝ) * ((∑ i ∈ D.S2, X i j * (∑ k, X i k * D.beta2 k ω + D.eps2 i ω)) / D.S2.card)
 
@@ -726,41 +726,41 @@ the counted allele (real-valued counts). The genotype score is the allele count 
 
 variable (r s : Fin 3 → ℝ)
 
-/-- The number of individuals `N = ∑ (r i + s i)`. -/
+/-- **Number of individuals in a case-control genotype table.** The number of individuals `N = ∑ (r i + s i)`. -/
 def total : ℝ := ∑ i, (r i + s i)
 
-/-- The trend numerator `U = ∑ i, i (r i S - s i R)` with `R = ∑ r`, `S = ∑ s`. -/
+/-- **Numerator of the Cochran–Armitage trend statistic.** The trend numerator `U = ∑ i, i (r i S - s i R)` with `R = ∑ r`, `S = ∑ s`. -/
 def numer : ℝ := ∑ i : Fin 3, ((i : ℕ) : ℝ) * (r i * ∑ j, s j - s i * ∑ j, r j)
 
-/-- The pooled genotype-score variance `∑ i² n_i / N - (∑ i n_i / N)²`, `n_i = r i + s i`. -/
+/-- **Pooled genotype-score variance.** The pooled genotype-score variance `∑ i² n_i / N - (∑ i n_i / N)²`, `n_i = r i + s i`. -/
 noncomputable def scoreVar : ℝ :=
   (∑ i : Fin 3, ((i : ℕ) : ℝ) ^ 2 * (r i + s i)) / total r s -
     ((∑ i : Fin 3, ((i : ℕ) : ℝ) * (r i + s i)) / total r s) ^ 2
 
-/-- The **Cochran–Armitage trend statistic** with scores `0, 1, 2` (Armitage 1955):
+/-- **Cochran–Armitage trend statistic.** The **Cochran–Armitage trend statistic** with scores `0, 1, 2` (Armitage 1955):
 `N U² / (R S (N ∑ i² n_i - (∑ i n_i)²))`. -/
 noncomputable def trendStat : ℝ :=
   total r s * numer r s ^ 2 / ((∑ i, r i) * (∑ i, s i) *
     (total r s * ∑ i : Fin 3, ((i : ℕ) : ℝ) ^ 2 * (r i + s i) -
       (∑ i : Fin 3, ((i : ℕ) : ℝ) * (r i + s i)) ^ 2))
 
-/-- The squared sample correlation of case status (`1` for cases, `0` for controls) and the
+/-- **Squared correlation of case status and genotype score.** The squared sample correlation of case status (`1` for cases, `0` for controls) and the
 genotype score over the `N` individuals of the table. -/
 noncomputable def corrSq : ℝ :=
   ((∑ i : Fin 3, ((i : ℕ) : ℝ) * r i) / total r s -
       (∑ i, r i) / total r s * ((∑ i : Fin 3, ((i : ℕ) : ℝ) * (r i + s i)) / total r s)) ^ 2 /
     (((∑ i, r i) / total r s - ((∑ i, r i) / total r s) ^ 2) * scoreVar r s)
 
-/-- The pooled frequency `p = ∑ i n_i / (2 N)` of the counted allele. -/
+/-- **Pooled allele frequency.** The pooled frequency `p = ∑ i n_i / (2 N)` of the counted allele. -/
 noncomputable def alleleFreq : ℝ :=
   (∑ i : Fin 3, ((i : ℕ) : ℝ) * (r i + s i)) / (2 * total r s)
 
-/-- Pearson's statistic `n (a d - b c)² / ((a + b)(c + d)(a + c)(b + d))` of a `2 × 2` table
+/-- **Pearson's chi-squared statistic of a 2 × 2 table.** Pearson's statistic `n (a d - b c)² / ((a + b)(c + d)(a + c)(b + d))` of a `2 × 2` table
 `[[a, b], [c, d]]` with `n = a + b + c + d`. -/
 noncomputable def pearson2x2 (a b c d : ℝ) : ℝ :=
   (a + b + c + d) * (a * d - b * c) ^ 2 / ((a + b) * (c + d) * (a + c) * (b + d))
 
-/-- The **allelic test**: Pearson's statistic of the `2 × 2` table of case and control allele
+/-- **Allelic test statistic.** The **allelic test**: Pearson's statistic of the `2 × 2` table of case and control allele
 counts (`2N` alleles). -/
 noncomputable def allelicStat : ℝ :=
   pearson2x2 (∑ i : Fin 3, ((i : ℕ) : ℝ) * r i) (2 * ∑ i, r i - ∑ i : Fin 3, ((i : ℕ) : ℝ) * r i)
@@ -803,7 +803,7 @@ theorem trendStat_eq_total_mul_corrSq : trendStat r s = total r s * corrSq r s :
     ring
   rw [e1, e2, div_div_div_cancel_right₀ (pow_ne_zero 4 hT'), mul_div_assoc]
 
-/-- The observed score variance minus the Hardy–Weinberg score variance `2 p q`:
+/-- **Departure of the genotype-score variance from Hardy–Weinberg.** The observed score variance minus the Hardy–Weinberg score variance `2 p q`:
 `Var - 2 p (1 - p) = (4 n₀ n₂ - n₁²) / (2 N²)`. -/
 theorem scoreVar_sub_hweVar (hN : total r s ≠ 0) :
     scoreVar r s - 2 * alleleFreq r s * (1 - alleleFreq r s) =

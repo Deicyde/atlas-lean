@@ -116,7 +116,7 @@ theorem dartNext_consecutive (K : Set (Site 2)) (e : Dart) :
     · exact Or.inr (Or.inl ⟨dartNext_straight_tail K e hA hB, dartNext_straight_head K e hA hB⟩)
     · exact Or.inr (Or.inr (dartNext_left_tail K e hA hB))
 
-/-- The successor map restricted to boundary darts of `K`. -/
+/-- **Successor map on boundary darts.** The successor map restricted to boundary darts of `K`. -/
 noncomputable def dartNextSub (K : Set (Site 2)) :
     {e : Dart // IsBoundaryDart K e} → {e : Dart // IsBoundaryDart K e} :=
   fun e => ⟨dartNext K e.1, dartNext_isBoundaryDart K e.1 e.2⟩
@@ -151,7 +151,7 @@ theorem dartNext_periodic (K : Set (Site 2)) (hK : K.Finite) (e : Dart)
   have := congrArg Subtype.val hper
   rwa [dartNextSub_iterate_val] at this
 
-/-- The graph on boundary darts of `K` in which each dart is adjacent to its successor. -/
+/-- **Successor graph on boundary darts.** The graph on boundary darts of `K` in which each dart is adjacent to its successor. -/
 noncomputable def dartSuccGraph (K : Set (Site 2)) :
     SimpleGraph {e : Dart // IsBoundaryDart K e} where
   Adj a b := a ≠ b ∧ (dartNextSub K a = b ∨ dartNextSub K b = a)
@@ -164,7 +164,7 @@ theorem dartSuccGraph_adj_next (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDa
   intro h
   exact dartNextSub_ne_self K a h.symm
 
-/-- The walk `a, next a, …, next^[n] a` in `dartSuccGraph K`. -/
+/-- **Walk along the first iterates of a boundary dart.** The walk `a, next a, …, next^[n] a` in `dartSuccGraph K`. -/
 noncomputable def orbitWalkAux (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     (n : ℕ) → (dartSuccGraph K).Walk a ((dartNextSub K)^[n] a)
   | 0 => SimpleGraph.Walk.nil
@@ -189,7 +189,7 @@ theorem orbitWalkAux_support (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart
     rw [SimpleGraph.Walk.support_concat, ih, List.range_succ (n := m + 1), List.map_append]
     simp
 
-/-- The minimal period of the boundary dart `a` under the successor map. -/
+/-- **Minimal period of a boundary dart.** The minimal period of the boundary dart `a` under the successor map. -/
 noncomputable def dartOrbitPeriod (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     ℕ := Function.minimalPeriod (dartNextSub K) a
 
@@ -214,7 +214,7 @@ theorem dartOrbitPeriod_iterate (K : Set (Site 2)) (a : {e : Dart // IsBoundaryD
     (dartNextSub K)^[dartOrbitPeriod K a] a = a :=
   Function.iterate_minimalPeriod
 
-/-- The closed walk in `dartSuccGraph K` that runs once around the orbit of `a`. -/
+/-- **Closed walk around a boundary dart orbit.** The closed walk in `dartSuccGraph K` that runs once around the orbit of `a`. -/
 noncomputable def dartOrbitWalk (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     (dartSuccGraph K).Walk a a :=
   (orbitWalkAux K a (dartOrbitPeriod K a)).copy rfl (dartOrbitPeriod_iterate K a)
@@ -241,7 +241,7 @@ theorem dartOrbitWalk_support (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDar
   unfold dartOrbitWalk
   rw [SimpleGraph.Walk.support_copy, orbitWalkAux_support]
 
-/-- The iterates `f^[j] x` for `1 ≤ j ≤ minimalPeriod f x` are distinct. See also Mathlib's
+/-- **Iterates up to the minimal period are distinct.** The iterates `f^[j] x` for `1 ≤ j ≤ minimalPeriod f x` are distinct. See also Mathlib's
 `Function.iterate_injOn_Iio_minimalPeriod`, the same statement for `0 ≤ j < minimalPeriod f x`. -/
 theorem iterate_inj_on_Icc_minimalPeriod {α : Type*} (f : α → α) (x : α) {j k : ℕ}
     (hpos : 0 < Function.minimalPeriod f x)

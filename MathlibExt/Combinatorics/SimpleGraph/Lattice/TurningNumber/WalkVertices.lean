@@ -34,7 +34,7 @@ open StatMech.Onsager.BaseCase
 
 variable {n : ℕ} [NeZero n]
 
-/-- The walk starts at the origin. -/
+/-- **Closed lattice walk starts at the origin.** The walk starts at the origin. -/
 theorem pos_zero (d : Fin n → Fin 4) : pos d 0 = 0 := by
   have h0 : (Finset.univ.filter (· < (0 : Fin n))) = ∅ := by
     apply Finset.filter_eq_empty_iff.2
@@ -42,7 +42,7 @@ theorem pos_zero (d : Fin n → Fin 4) : pos d 0 = 0 := by
     exact Fin.not_lt_zero i
   rw [pos, h0, Finset.sum_empty]
 
-/-- Vertex recursion of a closed walk: the next vertex is the current one plus the current step
+/-- **Forward vertex recursion of a closed lattice walk.** Vertex recursion of a closed walk: the next vertex is the current one plus the current step
   (indices taken cyclically). -/
 theorem pos_succ (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     pos d (k + 1) = pos d k + stepOf (d k) := by
@@ -88,19 +88,19 @@ theorem pos_succ (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : 
     rw [pos, hfilter, Finset.sum_insert hnotmem, add_comm]
     rfl
 
-/-- Vertex recursion of a closed walk read backwards from vertex `M`. -/
+/-- **Backward vertex recursion of a closed lattice walk.** Vertex recursion of a closed walk read backwards from vertex `M`. -/
 theorem pos_pred (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (M : Fin n) :
     pos d M = pos d (M - 1) + stepOf (d (M - 1)) := by
   have h := pos_succ d hclosed (M - 1)
   rwa [sub_add_cancel] at h
 
-/-- The four lattice steps, case by case. -/
+/-- **Coordinates of the four lattice steps.** The four lattice steps, case by case. -/
 theorem stepOf_coords (w : Fin 4) :
     (w = 0 ∧ stepOf w = (1, 0)) ∨ (w = 1 ∧ stepOf w = (0, 1)) ∨
     (w = 2 ∧ stepOf w = (-1, 0)) ∨ (w = 3 ∧ stepOf w = (0, -1)) := by
   fin_cases w <;> simp [stepOf]
 
-/-- A closed walk with only straight steps and left turns has a north step immediately followed by a
+/-- **North step followed by west step at the top corner of a walk.** A closed walk with only straight steps and left turns has a north step immediately followed by a
   west step (at its lexicographically largest vertex). -/
 theorem lexmax_corner (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)

@@ -36,7 +36,7 @@ Prentice Hall, 1989, Chapters 2--3 (ISBN 978-0-13-115007-2).
 
 namespace Cslib.CCS
 
-/-- A visible CCS label, excluding the silent action. -/
+/-- **Visible CCS label.** A visible CCS label, excluding the silent action. -/
 inductive VisibleLabel (Name : Type*) where
   | input (name : Name)
   | output (name : Name)

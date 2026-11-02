@@ -59,7 +59,7 @@ namespace ConfigSpace
 variable {E G : Type*} [Group G] [MulAction G E]
 variable {μ : Measure (ConfigSpace E)}
 
-/-- A measurable function with countable values that is invariant under all shifts is almost
+/-- **Shift-invariant countably valued functions are a.s. constant under ergodicity.** A measurable function with countable values that is invariant under all shifts is almost
 surely constant under an ergodic probability measure. See also Mathlib's `ErgodicSMul` and
 `aeconst_of_forall_preimage_smul_ae_eq`, which state ergodicity of a group action through
 a.e.-invariant sets. -/
@@ -158,14 +158,14 @@ lemma openSubgraph_adj_shift (g : Multiplicative (Site d))
   simp only [openSubgraph_adj]
   rw [hyper_adj_smul, shift_apply_smul]
 
-/-- Translation by `g` as a graph homomorphism between the open subgraphs of `ω` and of its
+/-- **Translation of the open subgraph as a graph homomorphism.** Translation by `g` as a graph homomorphism between the open subgraphs of `ω` and of its
 shift. -/
 def translateHom (g : Multiplicative (Site d)) (ω : ConfigSpace (Sym2 (Site d))) :
     openSubgraph d ω →g openSubgraph d (shift g ω) where
   toFun x := g • x
   map_rel' {x y} h := (openSubgraph_adj_shift g ω x y).mpr h
 
-/-- The inverse of `translateHom`. -/
+/-- **Inverse translation of the open subgraph.** The inverse of `translateHom`. -/
 def translateHomInv (g : Multiplicative (Site d)) (ω : ConfigSpace (Sym2 (Site d))) :
     openSubgraph d (shift g ω) →g openSubgraph d ω where
   toFun a := g⁻¹ • a
@@ -201,11 +201,11 @@ lemma cluster_shift (g : Multiplicative (Site d)) (ω : ConfigSpace (Sym2 (Site 
   · rintro ⟨y, hy, rfl⟩
     exact (connected_shift g ω x y).mpr hy
 
-/-- The set of infinite open clusters of `ω`. -/
+/-- **Set of infinite open clusters.** The set of infinite open clusters of `ω`. -/
 def infiniteClusters (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) : Set (Set (Site d)) :=
   {C | C.Infinite ∧ ∃ x, C = cluster d ω x}
 
-/-- The number `N(ω) ∈ ℕ∞` of infinite open clusters of `ω`. -/
+/-- **Number of infinite open clusters.** The number `N(ω) ∈ ℕ∞` of infinite open clusters of `ω`. -/
 noncomputable def numInfiniteClusters (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) : ℕ∞ :=
   (infiniteClusters d ω).encard
 
@@ -323,7 +323,7 @@ lemma measurableSet_connected (x y : Site d) :
   · rw [ite_eq_left hh]; exact MeasurableSet.univ
   · rw [ite_eq_right hh]; exact MeasurableSet.empty
 
-/-- The one-arm event `crossingEvent d n` (the origin is connected to a site outside
+/-- **Measurability of the one-arm event.** The one-arm event `crossingEvent d n` (the origin is connected to a site outside
 `box d (n - 1)`) is measurable. -/
 theorem measurableSet_crossingEvent (n : ℕ) : MeasurableSet (crossingEvent d n) := by
   have hrw : crossingEvent d n
@@ -377,7 +377,7 @@ lemma exists_encode_min (S : Set (Site d)) (hne : S.Nonempty) :
   obtain ⟨x, hxS, hxm⟩ := hmT
   exact ⟨x, hxS, fun y hy => hxm ▸ Nat.sInf_le ⟨y, hy, rfl⟩⟩
 
-/-- The set of sites `x` in an infinite cluster that are the `Encodable`-least site of their
+/-- **Representative sites of the infinite clusters.** The set of sites `x` in an infinite cluster that are the `Encodable`-least site of their
 cluster (one representative per infinite cluster). -/
 def repSet (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) : Set (Site d) :=
   {x | (cluster d ω x).Infinite ∧
@@ -455,7 +455,7 @@ theorem measurable_numInfiniteClusters :
   refine measurable_encard_setOf (fun ω x => x ∈ repSet d ω) (fun x => ?_)
   exact measurable_mem.mpr (measurableSet_repSet x)
 
-/-- The number of infinite clusters is almost surely constant (Newman–Schulman 1981) for any
+/-- **Number of infinite clusters is almost surely constant.** The number of infinite clusters is almost surely constant (Newman–Schulman 1981) for any
 translation-ergodic probability measure on bond configurations of `ℤ^d`. -/
 theorem numInfiniteClusters_ae_const
     (μ : Measure (ConfigSpace (Sym2 (Site d)))) [IsProbabilityMeasure μ]

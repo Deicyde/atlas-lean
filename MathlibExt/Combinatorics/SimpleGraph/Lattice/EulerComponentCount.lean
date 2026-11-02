@@ -124,7 +124,7 @@ theorem ecc_bridge_adds_one_component (A : SimpleGraph V) (B' : Set (Sym2 V)) {a
       = Nat.card (A.deleteEdges B').ConnectedComponent + 1 :=
   ecc_deleteEdge_card_bridge (A.deleteEdges B') he hbridge
 
-/-- After deleting the edges `B'`, the graph `A` is connected and `{a, b}` is one of its bridges. -/
+/-- **Graph stays connected with a given bridge after deleting edges.** After deleting the edges `B'`, the graph `A` is connected and `{a, b}` is one of its bridges. -/
 def ecc_DualCutModel (A : SimpleGraph V) (B' : Set (Sym2 V)) (a b : V) : Prop :=
   (A.deleteEdges B').Connected ∧
     s(a, b) ∈ (A.deleteEdges B').edgeSet ∧

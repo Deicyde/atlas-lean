@@ -50,7 +50,7 @@ namespace MathlibExt.Analysis.FunctionalAnalysis.SchurTest
 
 variable {𝕜 : Type*} [RCLike 𝕜] {m n : Type*} [Fintype n] [DecidableEq n]
 
-/-- The per-row estimate in Schur's test: the `i`-th coordinate of `A x`
+/-- **Per-row estimate in Schur's test.** The per-row estimate in Schur's test: the `i`-th coordinate of `A x`
 satisfies `‖(A x) i‖² ≤ R * ∑ j, ‖A i j‖ * ‖x j‖²` when every row sum of
 `‖A i j‖` is at most `R`. -/
 theorem schur_pointwise_sq_le (A : Matrix m n 𝕜) {R : ℝ}
@@ -90,7 +90,7 @@ theorem schur_pointwise_sq_le (A : Matrix m n 𝕜) {R : ℝ}
 
 variable [Fintype m]
 
-/-- The squared-norm estimate in Schur's test: `‖A x‖² ≤ R * C * ‖x‖²`
+/-- **Squared-norm estimate in Schur's test.** The squared-norm estimate in Schur's test: `‖A x‖² ≤ R * C * ‖x‖²`
 when every row sum of `‖A i j‖` is at most `R` and every column sum is at
 most `C`. -/
 theorem schur_norm_sq_le (A : Matrix m n 𝕜) {R C : ℝ} (hR : 0 ≤ R)
@@ -120,7 +120,7 @@ theorem schur_norm_sq_le (A : Matrix m n 𝕜) {R C : ℝ} (hR : 0 ≤ R)
         intro j _
         ring
 
-/-- The unsquared estimate in Schur's test: `‖A x‖ ≤ √(R * C) * ‖x‖`. -/
+/-- **Norm estimate in Schur's test.** The unsquared estimate in Schur's test: `‖A x‖ ≤ √(R * C) * ‖x‖`. -/
 theorem schur_apply_le (A : Matrix m n 𝕜) {R C : ℝ} (hR : 0 ≤ R) (hC : 0 ≤ C)
     (hrow : ∀ i, ∑ j, ‖A i j‖ ≤ R) (hcol : ∀ j, ∑ i, ‖A i j‖ ≤ C)
     (x : EuclideanSpace 𝕜 n) :
@@ -133,7 +133,7 @@ theorem schur_apply_le (A : Matrix m n 𝕜) {R C : ℝ} (hR : 0 ≤ R) (hC : 0 
     _ = Real.sqrt (R * C) * ‖x‖ := by
         rw [Real.sqrt_mul hnn, Real.sqrt_sq (norm_nonneg _)]
 
-/-- Schur's test for the canonical rectangular Euclidean matrix operator. -/
+/-- **Schur's test for rectangular Euclidean matrix operators.** Schur's test for the canonical rectangular Euclidean matrix operator. -/
 theorem norm_toEuclideanLin_le (A : Matrix m n 𝕜) {R C : ℝ}
     (hR : 0 ≤ R) (hC : 0 ≤ C)
     (hrow : ∀ i, ∑ j, ‖A i j‖ ≤ R) (hcol : ∀ j, ∑ i, ‖A i j‖ ≤ C) :
@@ -142,7 +142,7 @@ theorem norm_toEuclideanLin_le (A : Matrix m n 𝕜) {R C : ℝ}
   intro x
   exact schur_apply_le A hR hC hrow hcol x
 
-/-- Schur's test for Mathlib's square Euclidean continuous linear map. -/
+/-- **Schur's test for square Euclidean continuous linear maps.** Schur's test for Mathlib's square Euclidean continuous linear map. -/
 theorem norm_toEuclideanCLM_le (A : Matrix n n 𝕜) {R C : ℝ}
     (hR : 0 ≤ R) (hC : 0 ≤ C)
     (hrow : ∀ i, ∑ j, ‖A i j‖ ≤ R) (hcol : ∀ j, ∑ i, ‖A i j‖ ≤ C) :
@@ -150,7 +150,7 @@ theorem norm_toEuclideanCLM_le (A : Matrix n n 𝕜) {R C : ℝ}
   exact norm_toEuclideanLin_le A hR hC hrow hcol
 
 open scoped Matrix.Norms.L2Operator in
-/-- Schur's test for the actual scoped L2 operator norm of a matrix. -/
+/-- **Schur's test for the $L^2$ operator norm of a matrix.** Schur's test for the actual scoped L2 operator norm of a matrix. -/
 theorem norm_matrix_l2_le (A : Matrix m n 𝕜) {R C : ℝ}
     (hR : 0 ≤ R) (hC : 0 ≤ C)
     (hrow : ∀ i, ∑ j, ‖A i j‖ ≤ R) (hcol : ∀ j, ∑ i, ‖A i j‖ ≤ C) :

@@ -75,7 +75,7 @@ public theorem_wanted prime_modEq_one_of_dvd_cyclotomic_eval {ρ p : ℕ} (hρ :
     (hp : p.Prime) (hne : ρ ≠ p) {x : ℤ} (hx : 0 < x)
     (h : (ρ : ℤ) ∣ (cyclotomic p ℤ).eval x) : Nat.ModEq p ρ 1
 
-/-- The hybrid bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with distinct primes `p_i` (in any order),
+/-- **Hybrid bound for prime divisors of $x^n - 1$.** The hybrid bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with distinct primes `p_i` (in any order),
 `x > 1`, and `ω_n = ω(x^n - 1)`. With `p_0 := 1`, let
 `Π^j = {ρ prime : ρ ≡ 1 (mod p_j), ρ ≢ 1 (mod p_s) for j < s ≤ m}` and `r_{i,j}` its `i`-th
 element (`Nat.nth`, `0`-indexed here). The source's
@@ -100,7 +100,7 @@ public theorem_wanted hybrid_bound_prime_divisors (m : ℕ) (p a : ℕ → ℕ)
                 ∀ s ∈ Finset.Ioc j m, ¬ Nat.ModEq (p s) ρ 1) i ≤
             x ^ ∏ s ∈ Finset.Icc 1 t, p s ^ a s
 
-/-- The `p`-hybrid bound (Theorem 1 for prime `n = p`). For a prime `p`, `x > 1` and
+/-- **Hybrid bound for prime divisors of $x^p - 1$.** The `p`-hybrid bound (Theorem 1 for prime `n = p`). For a prime `p`, `x > 1` and
 `ω_p = ω(x^p - 1)`, let `r_{i,0}` and `r_{j,1}` enumerate the primes `≢ 1` and `≡ 1 (mod p)`
 (`Nat.nth`, `0`-indexed here). The source's
 `x ≥ min_{0 ≤ k < ω_p} max(1 + ∏_{i ≤ k} r_{i,0}, (1 + ∏_{i ≤ k} r_{i,0} ∏_{j ≤ ω_p - k} r_{j,1})^{1/p})`
@@ -158,7 +158,7 @@ Article A95, Proposition 10 (`integers-2026-A95-prop-10`). -/
 public theorem_wanted lt_sixteen_iff_prod_first_primes_lt {w : ℕ} (hw : 0 < w) :
     w < 16 ↔ ∏ i ∈ Finset.range w, Nat.nth Nat.Prime i < 16 ^ w
 
-/-- The ramified bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with primes `p_1 < ⋯ < p_m` (the ordering
+/-- **Ramified bound on the number of prime divisors of $x^n - 1$.** The ramified bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with primes `p_1 < ⋯ < p_m` (the ordering
 the source fixes at the start of its Section 5), `x > 1`, `ω_n = ω(x^n - 1)`, and, with
 `p_0 := 1`, let `r_{i,j}` be the `i`-th element (`Nat.nth`, `0`-indexed here) of
 `Π^j = {ρ prime : ρ ≡ 1 (mod p_j), ρ ≢ 1 (mod p_s) for j < s ≤ m}`. Fix a prime factor `p_α` of
@@ -199,7 +199,7 @@ public theorem_wanted ramified_bound_prime_divisors (m : ℕ) (p a : ℕ → ℕ
                   else R j (k j)) ≤
               x ^ ∏ s ∈ Finset.Icc 1 t, p s ^ a s
 
-/-- The `p`-ramified bound (Theorem 2 for prime `n = p`). For a prime `p`, `x > 1` and
+/-- **Ramified bound on prime divisors of $x^p - 1$ for prime $p$.** The `p`-ramified bound (Theorem 2 for prime `n = p`). For a prime `p`, `x > 1` and
 `ω_p = ω(x^p - 1)`, let `r_{i,0}` and `r_{j,1}` enumerate the primes `≢ 1` and `≡ 1 (mod p)`
 (`Nat.nth`, `0`-indexed here), `p = r_{b,0}`, `R^0_k = ∏_{i < k} r_{i,0}` and
 `R^1_k = ∏_{j < ω_p - k} r_{j,1}`. The source's minima over `k ∈ [0, k') ∪ [k', ω_p)` (with

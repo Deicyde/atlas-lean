@@ -40,17 +40,17 @@ in which every index $|H_{i+1} : H_i|$ is infinite. -/
 def WeakMaximalCondition (G : Type*) [Group G] : Prop :=
   ¬ ∃ H : ℕ → Subgroup G, ∀ i, H i ≤ H (i + 1) ∧ (H i).relIndex (H (i + 1)) = 0
 
-/-- The weak minimal condition on subgroups: there is no infinite descending chain
+/-- **Weak minimal condition on subgroups.** The weak minimal condition on subgroups: there is no infinite descending chain
 `H₀ ≥ H₁ ≥ ⋯` of subgroups with every index `|Hᵢ : Hᵢ₊₁|` infinite. -/
 def WeakMinimalCondition (G : Type*) [Group G] : Prop :=
   ¬ ∃ H : ℕ → Subgroup G, ∀ i, H (i + 1) ≤ H i ∧ (H (i + 1)).relIndex (H i) = 0
 
-/-- Kourovka 10.14(a) (D. I. Zaitsev): every group with the minimal condition on subgroups
+/-- **Minimal condition implies weak maximal condition.** Kourovka 10.14(a) (D. I. Zaitsev): every group with the minimal condition on subgroups
 satisfies the weak maximal condition on subgroups. -/
 def minimalImpliesWeakMaximal : Prop :=
   ∀ (G : Type) [Group G], WellFoundedLT (Subgroup G) → WeakMaximalCondition G
 
-/-- Kourovka 10.14(b): every group with the maximal condition on subgroups satisfies the weak
+/-- **Maximal condition implies weak minimal condition.** Kourovka 10.14(b): every group with the maximal condition on subgroups satisfies the weak
 minimal condition on subgroups. -/
 def maximalImpliesWeakMinimal : Prop :=
   ∀ (G : Type) [Group G], WellFoundedGT (Subgroup G) → WeakMinimalCondition G

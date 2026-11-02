@@ -69,7 +69,7 @@ private noncomputable def stampacchiaPhi (K : Set E) (A : E →L[ℝ] E) (ρ : �
     (x : E) : E :=
   convexProjection K (x - ρ • (A x - f))
 
-/-- On the whole space, a variational-inequality solution satisfies `A u = f`. -/
+/-- **Variational inequality on the whole space reduces to an equation.** On the whole space, a variational-inequality solution satisfies `A u = f`. -/
 theorem stampacchia_eq_of_univ (A : E →L[ℝ] E) (f : E) (u : E)
     (h : ∀ v ∈ (Set.univ : Set E), 0 ≤ ⟪A u - f, v - u⟫_ℝ) : A u = f := by
   have h1 := h (u + (A u - f)) (Set.mem_univ _)
@@ -273,7 +273,7 @@ theorem exists_unique_stampacchia_bilinear {K : Set E} (hKne : K.Nonempty)
     linarith [h]
 
 
-/-- A coercive bounded linear operator on a real Hilbert space is surjective.
+/-- **Coercive bounded operators on a real Hilbert space are surjective.** A coercive bounded linear operator on a real Hilbert space is surjective.
 This is the whole-space case of Stampacchia's theorem (compare Mathlib's
 Lax–Milgram theorem, which is the analogous statement for bilinear forms). -/
 theorem exists_eq_of_coercive (A : E →L[ℝ] E) {α : ℝ} (hα : 0 < α)

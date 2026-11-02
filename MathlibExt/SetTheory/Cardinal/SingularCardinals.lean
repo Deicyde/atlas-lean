@@ -33,7 +33,7 @@ namespace MetaMathlibExt
 
 -- Logic 358: Singular Cardinal Hypothesis
 
-/-- For all singular cardinal $\kappa$, if $2^{cof(\kappa)}<\kappa, then $\kappa^{cof(\kappa)} =
+/-- **Singular cardinals hypothesis.** For all singular cardinal $\kappa$, if $2^{cof(\kappa)}<\kappa, then $\kappa^{cof(\kappa)} =
 \kappa^+$.
 -/
 def SingularCardinalsHypothesis.{u} : Prop :=

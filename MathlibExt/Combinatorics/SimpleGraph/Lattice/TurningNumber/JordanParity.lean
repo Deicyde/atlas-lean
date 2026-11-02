@@ -41,7 +41,7 @@ namespace StatMech.Onsager.JordanParity
 open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Onsager.WalkCrossing
 variable {n : ℕ} [NeZero n]
 
-/-- The number of horizontal steps of the walk on the column `[a, a + 1]` strictly above the cell
+/-- **Upward ray crossings above a cell.** The number of horizontal steps of the walk on the column `[a, a + 1]` strictly above the cell
   `(a, b)`: the crossings of the upward vertical ray from the center of that cell. -/
 def upCross (d : Fin n → Fin 4) (a b : ℤ) : ℕ :=
   (Finset.univ.filter
@@ -50,11 +50,11 @@ def upCross (d : Fin n → Fin 4) (a b : ℤ) : ℕ :=
       min ((pos d k).1) ((pos d (k+1)).1) = a ∧
       b < (pos d k).2)).card
 
-/-- The parity of the number of crossings of the upward ray from the center of cell `(a, b)` with
+/-- **Ray-crossing parity of a lattice cell.** The parity of the number of crossings of the upward ray from the center of cell `(a, b)` with
   the walk; cells with parity `1` are inside the walk. -/
 def rayParity (d : Fin n → Fin 4) (a b : ℤ) : ZMod 2 := (upCross d a b : ZMod 2)
 
-/-- The upward crossing count is the same for cells `(a, b)` and `(a, b + 1)` when no horizontal
+/-- **Upward crossing count is unchanged across a vertical move.** The upward crossing count is the same for cells `(a, b)` and `(a, b + 1)` when no horizontal
   step lies between them. -/
 lemma upCross_vstep (d : Fin n → Fin 4) (a b : ℤ)
     (h : ∀ k : Fin n, isHorizEdge (d k) →
@@ -74,7 +74,7 @@ lemma upCross_vstep (d : Fin n → Fin 4) (a b : ℤ)
     · rintro ⟨a1, a2, _⟩; exact absurd ⟨a1, a2⟩ hh
     · rintro ⟨a1, a2, _⟩; exact absurd ⟨a1, a2⟩ hh
 
-/-- The ray parity is the same for cells `(a, b)` and `(a, b + 1)` when no horizontal step lies
+/-- **Ray parity is unchanged across a vertical move.** The ray parity is the same for cells `(a, b)` and `(a, b + 1)` when no horizontal step lies
   between them. -/
 lemma rayParity_vstep (d : Fin n → Fin 4) (a b : ℤ)
     (h : ∀ k : Fin n, isHorizEdge (d k) →
@@ -83,7 +83,7 @@ lemma rayParity_vstep (d : Fin n → Fin 4) (a b : ℤ)
   unfold rayParity
   rw [upCross_vstep d a b h]
 
-/-- Cells at or above the top height of the walk have no upward crossings. -/
+/-- **No upward crossings for cells above a walk.** Cells at or above the top height of the walk have no upward crossings. -/
 lemma upCross_topOutside (d : Fin n → Fin 4) (a b T : ℤ)
     (hT : ∀ j : Fin n, (pos d j).2 ≤ T) (hb : T ≤ b) :
     upCross d a b = 0 := by
@@ -94,7 +94,7 @@ lemma upCross_topOutside (d : Fin n → Fin 4) (a b T : ℤ)
   have := hT k
   omega
 
-/-- Cells at or above the top height of the walk are outside. -/
+/-- **Cells above a walk are outside.** Cells at or above the top height of the walk are outside. -/
 lemma rayParity_topOutside (d : Fin n → Fin 4) (a b T : ℤ)
     (hT : ∀ j : Fin n, (pos d j).2 ≤ T) (hb : T ≤ b) :
     rayParity d a b = 0 := by
@@ -102,7 +102,7 @@ lemma rayParity_topOutside (d : Fin n → Fin 4) (a b T : ℤ)
   rw [upCross_topOutside d a b T hT hb]
   simp
 
-/-- When no vertical step separates the cells `(a, b)` and `(a + 1, b)`, their upward crossing
+/-- **Upward crossing counts of horizontal neighbours sum to an even number.** When no vertical step separates the cells `(a, b)` and `(a + 1, b)`, their upward crossing
   counts add up to an even number. -/
 lemma upCross_hstep (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (hstr : ∀ k : Fin n, isVertEdge (d k) → (pos d k).1 = a + 1 →
@@ -200,7 +200,7 @@ lemma upCross_hstep (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a
     Finset.card_union_of_disjoint hdisjEE, hentexit]
   ring
 
-/-- The ray parity is the same for cells `(a, b)` and `(a + 1, b)` when no vertical step lies
+/-- **Ray parity is unchanged across a horizontal move.** The ray parity is the same for cells `(a, b)` and `(a + 1, b)` when no vertical step lies
   between them. -/
 lemma rayParity_hstep (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (hstr : ∀ k : Fin n, isVertEdge (d k) → (pos d k).1 = a + 1 →

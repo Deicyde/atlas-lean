@@ -122,7 +122,7 @@ vacuously at a deadlocked state. -/
 def forallNext (φ : Formula Atom) : Formula Atom :=
   .not (.existsNext (.not φ))
 
-/-- `AF φ`: every maximal path reaches a state satisfying `φ`, as
+/-- **The CTL operator AF (inevitably).** `AF φ`: every maximal path reaches a state satisfying `φ`, as
 `A[⊤ U φ]`. -/
 def forallFinally (φ : Formula Atom) : Formula Atom :=
   .forallUntil .top φ

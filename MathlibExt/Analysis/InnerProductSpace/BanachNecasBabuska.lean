@@ -93,7 +93,7 @@ section Normed
 
 variable [NormedSpace ℝ F]
 
-/-- The **inf–sup condition**: there is `β > 0` such that
+/-- **Inf-sup condition.** The **inf–sup condition**: there is `β > 0` such that
 `β * ‖x‖ ≤ ‖B x‖` for every `x`. The right-hand side is the dual norm of the
 functional `B x`, i.e. `sup_{‖y‖ ≤ 1} |B x y|` (see `norm_apply_eq_iSup`). -/
 abbrev IsInfSup (B : E →L[ℝ] F →L[ℝ] ℝ) : Prop :=
@@ -104,7 +104,7 @@ abbrev IsInfSup (B : E →L[ℝ] F →L[ℝ] ℝ) : Prop :=
 abbrev IsNondegenerate (B : E →L[ℝ] F →L[ℝ] ℝ) : Prop :=
   ∀ y : F, (∀ x : E, B x y = 0) → y = 0
 
-/-- The dual norm is the supremum over the closed unit ball. -/
+/-- **Dual norm as a supremum over the unit ball.** The dual norm is the supremum over the closed unit ball. -/
 theorem norm_apply_eq_iSup (B : E →L[ℝ] F →L[ℝ] ℝ) (x : E) :
     ‖B x‖ = ⨆ y : {y : F // ‖y‖ ≤ 1}, ‖B x y‖ := by
   have hball : BddAbove (Set.range fun y : {y : F // ‖y‖ ≤ 1} => ‖B x (y : F)‖) := by
@@ -144,7 +144,7 @@ theorem norm_apply_eq_iSup (B : E →L[ℝ] F →L[ℝ] ℝ) (x : E) :
           apply mul_le_mul_of_nonneg_left y.2 (norm_nonneg _)
       _ = ‖B x‖ := mul_one _
 
-/-- The inf–sup condition in classical supremum form. -/
+/-- **Inf-sup condition in supremum form.** The inf–sup condition in classical supremum form. -/
 theorem isInfSup_iff (B : E →L[ℝ] F →L[ℝ] ℝ) :
     IsInfSup B ↔ ∃ β : ℝ, 0 < β ∧
       ∀ x : E, β * ‖x‖ ≤ ⨆ y : {y : F // ‖y‖ ≤ 1}, ‖B x y‖ := by
@@ -160,7 +160,7 @@ variable [InnerProductSpace ℝ F]
 
 variable [CompleteSpace E] [CompleteSpace F]
 
-/-- The operator `E →L[ℝ] F` associated to a bounded bilinear form
+/-- **Operator associated to a bounded bilinear form.** The operator `E →L[ℝ] F` associated to a bounded bilinear form
 `B : E →L[ℝ] F →L[ℝ] ℝ`, characterized by `⟪bilinearFormSharp B x, y⟫ = B x y`.
 This is the two-space analogue of Mathlib's `continuousLinearMapOfBilin`
 (which is stated for `E = F`). -/
@@ -187,7 +187,7 @@ theorem toDual_bilinearFormSharp (B : E →L[ℝ] F →L[ℝ] ℝ) (x : E) :
   simp [bilinearFormSharp]
 
 omit [CompleteSpace E] in
-/-- The inf–sup condition makes `bilinearFormSharp B` antilipschitz. -/
+/-- **Inf-sup condition makes the associated operator antilipschitz.** The inf–sup condition makes `bilinearFormSharp B` antilipschitz. -/
 theorem sharp_antilipschitz {B : E →L[ℝ] F →L[ℝ] ℝ} (hB : IsInfSup B) :
     ∃ C : ℝ≥0, 0 < C ∧ AntilipschitzWith C (bilinearFormSharp B) := by
   obtain ⟨β, hβ, hβx⟩ := hB
@@ -199,20 +199,20 @@ theorem sharp_antilipschitz {B : E →L[ℝ] F →L[ℝ] ℝ} (hB : IsInfSup B) 
   exact (le_inv_mul_iff₀ hβ).mpr hbound
 
 omit [CompleteSpace E] in
-/-- The inf–sup condition makes `bilinearFormSharp B` injective. -/
+/-- **Inf-sup condition makes the associated operator injective.** The inf–sup condition makes `bilinearFormSharp B` injective. -/
 theorem sharp_ker_eq_bot {B : E →L[ℝ] F →L[ℝ] ℝ} (hB : IsInfSup B) :
     (bilinearFormSharp B).ker = ⊥ := by
   obtain ⟨_, _, hAnti⟩ := sharp_antilipschitz hB
   rw [LinearMap.ker_eq_bot]
   exact hAnti.injective
 
-/-- The inf–sup condition makes the range of `bilinearFormSharp B` closed. -/
+/-- **Inf-sup condition makes the associated operator's range closed.** The inf–sup condition makes the range of `bilinearFormSharp B` closed. -/
 theorem sharp_isClosed_range {B : E →L[ℝ] F →L[ℝ] ℝ} (hB : IsInfSup B) :
     IsClosed ((bilinearFormSharp B).range : Set F) := by
   obtain ⟨_, _, hAnti⟩ := sharp_antilipschitz hB
   exact hAnti.isClosed_range (bilinearFormSharp B).uniformContinuous
 
-/-- The inf–sup condition plus nondegeneracy make `bilinearFormSharp B`
+/-- **Inf-sup and nondegeneracy make the associated operator surjective.** The inf–sup condition plus nondegeneracy make `bilinearFormSharp B`
 surjective: the orthogonal complement of its range is trivial, and a closed
 subspace of a Hilbert space with trivial orthogonal complement is everything. -/
 theorem sharp_range_eq_top {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
@@ -233,7 +233,7 @@ theorem sharp_range_eq_top {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
     _ = (⊥ : Submodule ℝ F)ᗮ := by rw [horth]
     _ = ⊤ := Submodule.bot_orthogonal_eq_top
 
-/-- The **Banach–Nečas–Babuška isomorphism**: the operator associated to a
+/-- **Banach–Nečas–Babuška isomorphism.** The **Banach–Nečas–Babuška isomorphism**: the operator associated to a
 bilinear form satisfying the inf–sup condition and nondegeneracy is a
 continuous linear equivalence. -/
 noncomputable def sharpEquiv {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
@@ -241,7 +241,7 @@ noncomputable def sharpEquiv {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup 
   ContinuousLinearEquiv.ofBijective (bilinearFormSharp B)
     (sharp_ker_eq_bot hInf) (sharp_range_eq_top hInf hNondeg)
 
-/-- The equivalence `sharpEquiv` is characterized by the bilinear form. -/
+/-- **Banach–Nečas–Babuška isomorphism is characterized by the form.** The equivalence `sharpEquiv` is characterized by the bilinear form. -/
 @[simp]
 theorem sharpEquiv_apply {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
     (hNondeg : IsNondegenerate B) (x : E) (y : F) :
@@ -249,14 +249,14 @@ theorem sharpEquiv_apply {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
   simp only [sharpEquiv, ContinuousLinearEquiv.coeFn_ofBijective]
   exact bilinearFormSharp_apply B x y
 
-/-- The norm of `sharpEquiv` applied to `x` is the dual norm of `B x`. -/
+/-- **Norm of the Banach–Nečas–Babuška isomorphism applied to a vector.** The norm of `sharpEquiv` applied to `x` is the dual norm of `B x`. -/
 theorem norm_sharpEquiv_apply {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
     (hNondeg : IsNondegenerate B) (x : E) :
     ‖sharpEquiv hInf hNondeg x‖ = ‖B x‖ := by
   simp only [sharpEquiv, ContinuousLinearEquiv.coeFn_ofBijective]
   exact norm_bilinearFormSharp_apply B x
 
-/-- Pointwise inverse bound for `sharpEquiv`: the inverse operator is bounded
+/-- **Pointwise inverse bound for the Banach–Nečas–Babuška isomorphism.** Pointwise inverse bound for `sharpEquiv`: the inverse operator is bounded
 by `β⁻¹` when `β` is an inf–sup constant. -/
 theorem norm_sharpEquiv_symm_apply_le {B : E →L[ℝ] F →L[ℝ] ℝ} {β : ℝ} (hβ : 0 < β)
     (hB : ∀ x : E, β * ‖x‖ ≤ ‖B x‖) (hNondeg : IsNondegenerate B) (y : F) :
@@ -270,28 +270,28 @@ theorem norm_sharpEquiv_symm_apply_le {B : E →L[ℝ] F →L[ℝ] ℝ} {β : �
         (le_inv_mul_iff₀ hβ).mpr hbound
     _ = β⁻¹ * ‖y‖ := by rw [hxy]
 
-/-- Operator-norm bound for the inverse: `‖(sharpEquiv)⁻¹‖ ≤ β⁻¹`. -/
+/-- **Operator-norm bound for the inverse Banach–Nečas–Babuška isomorphism.** Operator-norm bound for the inverse: `‖(sharpEquiv)⁻¹‖ ≤ β⁻¹`. -/
 theorem norm_sharpEquiv_symm_le {B : E →L[ℝ] F →L[ℝ] ℝ} {β : ℝ} (hβ : 0 < β)
     (hB : ∀ x : E, β * ‖x‖ ≤ ‖B x‖) (hNondeg : IsNondegenerate B) :
     ‖((sharpEquiv ⟨β, hβ, hB⟩ hNondeg).symm : F →L[ℝ] E)‖ ≤ β⁻¹ :=
   ContinuousLinearMap.opNorm_le_bound _ (inv_nonneg.mpr hβ.le)
     (norm_sharpEquiv_symm_apply_le hβ hB hNondeg)
 
-/-- The **Banach–Nečas–Babuška theorem**: a bilinear form satisfying the
+/-- **Banach–Nečas–Babuška theorem.** The **Banach–Nečas–Babuška theorem**: a bilinear form satisfying the
 inf–sup condition and nondegeneracy is itself a continuous linear equivalence
 `E ≃L[ℝ] (F →L[ℝ] ℝ)`. -/
 noncomputable def continuousLinearEquivOfBilinearForm {B : E →L[ℝ] F →L[ℝ] ℝ}
     (hInf : IsInfSup B) (hNondeg : IsNondegenerate B) : E ≃L[ℝ] (F →L[ℝ] ℝ) :=
   (sharpEquiv hInf hNondeg).trans (InnerProductSpace.toDual ℝ F).toContinuousLinearEquiv
 
-/-- The equivalence `continuousLinearEquivOfBilinearForm` acts as `B`. -/
+/-- **Banach–Nečas–Babuška equivalence acts as the bilinear form.** The equivalence `continuousLinearEquivOfBilinearForm` acts as `B`. -/
 @[simp]
 theorem continuousLinearEquivOfBilinearForm_apply {B : E →L[ℝ] F →L[ℝ] ℝ}
     (hInf : IsInfSup B) (hNondeg : IsNondegenerate B) (x : E) :
     continuousLinearEquivOfBilinearForm hInf hNondeg x = B x := by
   simp [continuousLinearEquivOfBilinearForm, sharpEquiv, bilinearFormSharp]
 
-/-- The variational problem `B x y = φ y` for all `y` has a unique solution. -/
+/-- **Unique solvability of the inf-sup variational problem.** The variational problem `B x y = φ y` for all `y` has a unique solution. -/
 theorem exists_unique_apply_eq {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSup B)
     (hNondeg : IsNondegenerate B) (φ : F →L[ℝ] ℝ) :
     ∃! x : E, ∀ y : F, B x y = φ y := by
@@ -309,7 +309,7 @@ theorem exists_unique_apply_eq {B : E →L[ℝ] F →L[ℝ] ℝ} (hInf : IsInfSu
     rw [← heq]
     exact (ContinuousLinearEquiv.symm_apply_apply _ _).symm
 
-/-- The variational problem has a solution with the stability bound
+/-- **Stability bound for the inf-sup variational problem.** The variational problem has a solution with the stability bound
 `‖x‖ ≤ β⁻¹ * ‖φ‖`. -/
 theorem exists_apply_eq_and_norm_le {B : E →L[ℝ] F →L[ℝ] ℝ} {β : ℝ} (hβ : 0 < β)
     (hB : ∀ x : E, β * ‖x‖ ≤ ‖B x‖) (hNondeg : IsNondegenerate B)

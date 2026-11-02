@@ -48,7 +48,7 @@ $D$. -/
 def IsDirectedPath {V : Type} (D : Digraph V) (p : List V) : Prop :=
   p.Nodup ∧ p.IsChain D.Adj
 
-/-- The internal vertices of a path given as a vertex list (all but the first and the last). -/
+/-- **Internal vertices of a path.** The internal vertices of a path given as a vertex list (all but the first and the last). -/
 def internalVertices {V : Type} (p : List V) : List V :=
   p.tail.dropLast
 

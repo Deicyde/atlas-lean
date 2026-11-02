@@ -96,7 +96,7 @@ def axiomFive (phi : Formula Atom) : Formula Atom := .imp (dia phi) (.box (dia p
 
 end Formula
 
-/-- A Kripke model consists of a nonempty collection of worlds, an accessibility relation,
+/-- **Kripke model.** A Kripke model consists of a nonempty collection of worlds, an accessibility relation,
 and an atom valuation. -/
 structure KripkeModel (World : Type u) (Atom : Type v) where
   /-- There is at least one world. -/
@@ -205,7 +205,7 @@ theorem satisfies_dia (model : KripkeModel World Atom) (world : World)
   · rintro ⟨next, hNext, hPhi⟩ h
     exact h next hNext hPhi
 
-/-- The K axiom is valid on every Kripke model. -/
+/-- **Validity of axiom K on Kripke models.** The K axiom is valid on every Kripke model. -/
 theorem valid_axiomK (model : KripkeModel World Atom) (phi psi : Formula Atom) :
     model.Valid (Formula.axiomK phi psi) := by
   intro world hImp hPhi next hNext

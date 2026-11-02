@@ -56,7 +56,7 @@ namespace MathlibExt.Biology.PopulationGenetics.Coalescent
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- The coalescent intervals of a sample of `n` genes under the classic skyline model with
+/-- **Coalescent intervals under the classic skyline model.** The coalescent intervals of a sample of `n` genes under the classic skyline model with
 piecewise-constant population-size parameter `θ k` while there are `k` lineages: `T k` is
 exponential with rate `C(k, 2) / θ k`, independently over `2 ≤ k ≤ n`. -/
 structure SkylineTimes (μ : Measure Ω) (n : ℕ) (θ : ℕ → ℝ) where
@@ -69,7 +69,7 @@ structure SkylineTimes (μ : Measure Ω) (n : ℕ) (θ : ℕ → ℝ) where
   /-- The interval lengths are mutually independent. -/
   indep : iIndepFun (fun k : Icc 2 n => T k) μ
 
-/-- The log-likelihood of `θ` for one coalescent interval of length `w` with `c = C(k, 2)`
+/-- **Log-likelihood of one coalescent interval in the skyline model.** The log-likelihood of `θ` for one coalescent interval of length `w` with `c = C(k, 2)`
 pairs of lineages: the log-density `log (c / θ) - c w / θ` of `Exp(c / θ)` at `w`. -/
 def skylineLogLik (c w θ : ℝ) : ℝ := Real.log (c / θ) - c * w / θ
 
@@ -123,7 +123,7 @@ theorem sum_skylineLogLik_eq_iff {ι : Type*} (s : Finset ι) {c w θ : ι → �
   rw [sum_eq_sum_iff_of_le fun i hi => skylineLogLik_le (hc i hi) (hw i hi) (hθ i hi)]
   exact forall₂_congr fun i hi => skylineLogLik_eq_iff (hc i hi) (hw i hi) (hθ i hi)
 
-/-- The classic skyline estimate `θ̂_k = C(k, 2) w_k` for the interval with `k` lineages. -/
+/-- **Classic skyline estimate of population size.** The classic skyline estimate `θ̂_k = C(k, 2) w_k` for the interval with `k` lineages. -/
 def skylineEstimate (k : ℕ) (w : ℝ) : ℝ := ((k.choose 2 : ℕ) : ℝ) * w
 
 namespace SkylineTimes
@@ -158,7 +158,7 @@ theorem iIndepFun_skylineEstimate :
 
 end SkylineTimes
 
-/-- The canonical probability space for the skyline model: the product of the exponential laws
+/-- **Canonical probability space for the skyline model.** The canonical probability space for the skyline model: the product of the exponential laws
 `Exp(C(k, 2) / θ k)`, `2 ≤ k ≤ n`. -/
 def skylinePiMeasure (n : ℕ) (θ : ℕ → ℝ) (hθ : ∀ k ∈ Icc 2 n, 0 < θ k) :
     Measure (Icc 2 n → ℝ) :=
@@ -167,7 +167,7 @@ def skylinePiMeasure (n : ℕ) (θ : ℕ → ℝ) (hθ : ∀ k ∈ Icc 2 n, 0 < 
       (div_pos (KingmanTimes.choose_two_pos k.2) (hθ k k.2))
   Measure.pi fun k : Icc 2 n => expMeasure (((k : ℕ).choose 2 : ℕ) / θ k)
 
-/-- The coordinate projections of `skylinePiMeasure n θ` form a skyline model whenever the
+/-- **Coordinate projections form a skyline model.** The coordinate projections of `skylinePiMeasure n θ` form a skyline model whenever the
 `θ k` are positive; in particular `SkylineTimes` is inhabited. -/
 def SkylineTimes.ofPi (n : ℕ) {θ : ℕ → ℝ} (hθ : ∀ k ∈ Icc 2 n, 0 < θ k) :
     SkylineTimes (skylinePiMeasure n θ hθ) n θ :=

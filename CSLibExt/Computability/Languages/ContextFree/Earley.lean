@@ -49,7 +49,7 @@ namespace Cslib.Language
 
 variable {T : Type*} {g : ContextFreeGrammar T}
 
-/-- An Earley item: a production with a dot after `dot` symbols of its
+/-- **Earley item.** An Earley item: a production with a dot after `dot` symbols of its
 output, recognizing input that starts at the end of `pre` and whose
 recognized prefix is `consumed`. The full input is `pre ++ consumed
 ++ rest` for some `rest`. -/
@@ -63,7 +63,7 @@ structure EarleyItem (T : Type*) (N : Type*) where
   /-- The input consumed by the recognized prefix `rule.output.take dot`. -/
   consumed : List T
 
-/-- The Earley chart for input `w`: the least set of items closed
+/-- **Earley chart.** The Earley chart for input `w`: the least set of items closed
 under initialization, prediction, scanning, and completion.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
@@ -92,14 +92,14 @@ inductive EarleyChart (g : ContextFreeGrammar T) (w : List T) :
         consumed') :
       EarleyChart g w r (k + 1) pre (consumed ++ consumed')
 
-/-- The chart as a predicate on `EarleyItem`s.
+/-- **Earley chart as a predicate on items.** The chart as a predicate on `EarleyItem`s.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
 def EarleyChartItem (g : ContextFreeGrammar T) (w : List T)
     (item : EarleyItem T g.NT) : Prop :=
   EarleyChart g w item.rule item.dot item.pre item.consumed
 
-/-- Acceptance by the Earley recognizer: some completed item for a
+/-- **Acceptance by the Earley recognizer.** Acceptance by the Earley recognizer: some completed item for a
 production of the initial nonterminal consumes the whole input.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
@@ -175,7 +175,7 @@ private theorem take_succ_eq_of_getElem? {α : Type*} {l : List α}
       change b :: l.take (k + 1) = (b :: l.take k) ++ [s]
       rw [ih h, List.cons_append]
 
-/-- The dot of a chart item never passes the end of its production.
+/-- **Earley item dot stays within its production.** The dot of a chart item never passes the end of its production.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
 theorem dot_le_of_earleyChart {w : List T} {r : ContextFreeRule T g.NT}
@@ -189,7 +189,7 @@ theorem dot_le_of_earleyChart {w : List T} {r : ContextFreeRule T g.NT}
   | complete h hnext hr' hinput hcomp ih ihcomp =>
     exact Nat.succ_le_of_lt (lt_length_of_getElem?_eq_some hnext)
 
-/-- Soundness: the recognized prefix of a chart item yields the input
+/-- **Soundness of the Earley chart.** Soundness: the recognized prefix of a chart item yields the input
 it consumed.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
@@ -210,7 +210,7 @@ theorem yields_take_of_earleyChart {w : List T} {r : ContextFreeRule T g.NT}
     have hy := yields_of_rule hr' ihcomp
     rwa [hinput] at hy
 
-/-- Completeness: if a chart item waits on a sentential form and that
+/-- **Completeness of the Earley chart.** Completeness: if a chart item waits on a sentential form and that
 form yields a word fitting in the remaining input, the chart contains
 the item completed by that word.
 Source: Earley, "An efficient context-free parsing algorithm",
@@ -263,7 +263,7 @@ theorem earleyChart_complete_of_yields {w : List T}
       (by rw [hw]; simp [List.append_assoc])
     simpa [List.append_assoc] using hdone
 
-/-- Inversion of a yield from a single nonterminal: it begins with
+/-- **A yield from one nonterminal starts with one of its productions.** Inversion of a yield from a single nonterminal: it begins with
 one production of that nonterminal.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
@@ -276,7 +276,7 @@ theorem exists_rule_of_yields_singleton {A : g.NT} {w : List T}
     cases hrest with
     | nil => exact ⟨_, hr, rfl, by simpa using hout⟩
 
-/-- The Earley recognizer accepts exactly the grammar's language.
+/-- **Correctness of the Earley recognizer.** The Earley recognizer accepts exactly the grammar's language.
 Source: Earley, "An efficient context-free parsing algorithm",
 Communications of the ACM 13 (1970), 94-102. -/
 theorem earleyAccepts_iff {w : List T} :

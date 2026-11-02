@@ -21,7 +21,7 @@ public import Mathlib.Topology.Connected.Basic
 namespace MathlibExt.Algebra.Polynomial.ScottishBook148Wanted
 
 /--
-Let `P` be a nonzero real polynomial in `n` variables. Its zero set does
+**Auerbach's problem on zero sets of real polynomials.** Let `P` be a nonzero real polynomial in `n` variables. Its zero set does
 not cut (separate) Euclidean space, i.e. the complement of the zero set is
 connected, if and only if every irreducible factor of `P` over the reals is
 always nonnegative or always nonpositive (as a function). The complement of

@@ -51,43 +51,43 @@ namespace KleeneConverse
 
 variable {α : Type*}
 
-/-- A language is denoted by a regular expression when it is `r.matches'` for some `r`. -/
+/-- **Language denoted by a regular expression.** A language is denoted by a regular expression when it is `r.matches'` for some `r`. -/
 def IsRegexDenoted (L : Language α) : Prop :=
   ∃ r : RegularExpression α, r.matches' = L
 
-/-- The empty language is denoted by `0`. -/
+/-- **The empty language is regex-denoted.** The empty language is denoted by `0`. -/
 theorem IsRegexDenoted.zero : IsRegexDenoted (0 : Language α) :=
   ⟨0, RegularExpression.matches'_zero⟩
 
-/-- The language `{[]}` is denoted by `1`. -/
+/-- **The language of the empty word is regex-denoted.** The language `{[]}` is denoted by `1`. -/
 theorem IsRegexDenoted.one : IsRegexDenoted (1 : Language α) :=
   ⟨1, RegularExpression.matches'_epsilon⟩
 
-/-- A singleton `{[a]}` is denoted by `char a`. -/
+/-- **Single-letter languages are regex-denoted.** A singleton `{[a]}` is denoted by `char a`. -/
 theorem IsRegexDenoted.char (a : α) : IsRegexDenoted ({[a]} : Language α) :=
   ⟨RegularExpression.char a, RegularExpression.matches'_char a⟩
 
-/-- Denoted languages are closed under union. -/
+/-- **Regex-denoted languages are closed under union.** Denoted languages are closed under union. -/
 theorem IsRegexDenoted.add {L K : Language α} (hL : IsRegexDenoted L) (hK : IsRegexDenoted K) :
     IsRegexDenoted (L + K) := by
   obtain ⟨r, hr⟩ := hL
   obtain ⟨s, hs⟩ := hK
   exact ⟨r + s, by rw [RegularExpression.matches'_add, hr, hs]⟩
 
-/-- Denoted languages are closed under concatenation. -/
+/-- **Regex-denoted languages are closed under concatenation.** Denoted languages are closed under concatenation. -/
 theorem IsRegexDenoted.mul {L K : Language α} (hL : IsRegexDenoted L) (hK : IsRegexDenoted K) :
     IsRegexDenoted (L * K) := by
   obtain ⟨r, hr⟩ := hL
   obtain ⟨s, hs⟩ := hK
   exact ⟨r * s, by rw [RegularExpression.matches'_mul, hr, hs]⟩
 
-/-- Denoted languages are closed under Kleene star. -/
+/-- **Regex-denoted languages are closed under Kleene star.** Denoted languages are closed under Kleene star. -/
 theorem IsRegexDenoted.kstar {L : Language α} (hL : IsRegexDenoted L) :
     IsRegexDenoted (L∗) := by
   obtain ⟨r, hr⟩ := hL
   exact ⟨r.star, by rw [RegularExpression.matches'_star, hr]⟩
 
-/-- Denoted languages are closed under finite unions. -/
+/-- **Regex-denoted languages are closed under finite unions.** Denoted languages are closed under finite unions. -/
 theorem IsRegexDenoted.sum {ι : Type*} {s : Finset ι} {f : ι → Language α}
     (h : ∀ i ∈ s, IsRegexDenoted (f i)) : IsRegexDenoted (∑ i ∈ s, f i) := by
   classical
@@ -98,7 +98,7 @@ theorem IsRegexDenoted.sum {ι : Type*} {s : Finset ι} {f : ι → Language α}
       exact (h a (Finset.mem_insert_self a s)).add
         (ih fun i hi => h i (Finset.mem_insert_of_mem hi))
 
-/-- Membership in a finite union of languages. -/
+/-- **Membership in a finite union of languages.** Membership in a finite union of languages. -/
 theorem mem_sum {ι : Type*} {s : Finset ι} {f : ι → Language α} {w : List α} :
     w ∈ ∑ i ∈ s, f i ↔ ∃ i ∈ s, w ∈ f i := by
   classical
@@ -116,7 +116,7 @@ theorem mem_sum {ι : Type*} {s : Finset ι} {f : ι → Language α} {w : List 
         · exact Or.inl hw
         · exact Or.inr (ih.mpr ⟨i, hi, hw⟩)
 
-/-- The empty word is not in a concatenation whose right factor excludes it. -/
+/-- **Empty word outside a concatenation.** The empty word is not in a concatenation whose right factor excludes it. -/
 theorem nil_notMem_mul_of_nil_notMem_right {L K : Language α} (hK : [] ∉ K) :
     [] ∉ L * K := by
   intro hmem
@@ -124,22 +124,22 @@ theorem nil_notMem_mul_of_nil_notMem_right {L K : Language α} (hK : [] ∉ K) :
   have h2 : a = [] ∧ b = [] := List.append_eq_nil_iff.mp hab
   exact hK (h2.2 ▸ hb)
 
-/-- The system of equations of a DFA at a state: the coefficient of `X j` in the
+/-- **Coefficient in the equation system of a DFA.** The system of equations of a DFA at a state: the coefficient of `X j` in the
 equation for `X q`, the finite union of the singletons `{[a]}` over the letters taking
 `q` to `j`. -/
 def coeff {σ : Type*} [DecidableEq σ] [Fintype α] (M : DFA α σ) (q j : σ) : Language α :=
   ∑ a ∈ Finset.univ.filter (fun a => M.step q a = j), ({[a]} : Language α)
 
-/-- The constant term of the equation for `X q`: `1` on accepting states, `0` otherwise. -/
+/-- **Constant term in the equation system of a DFA.** The constant term of the equation for `X q`: `1` on accepting states, `0` otherwise. -/
 def constTerm {σ : Type*} (M : DFA α σ) (q : σ) : Language α := by
   classical
   exact if q ∈ M.accept then 1 else 0
 
-/-- The language accepted from a state: the unknown `X q` of the system. -/
+/-- **Language accepted from a DFA state.** The language accepted from a state: the unknown `X q` of the system. -/
 def fromState {σ : Type*} (M : DFA α σ) (q : σ) : Language α :=
   M.acceptsFrom q
 
-/-- Membership in a coefficient: the word is a single letter taking `q` to `j`. -/
+/-- **Membership in a DFA equation coefficient.** Membership in a coefficient: the word is a single letter taking `q` to `j`. -/
 theorem mem_coeff {σ : Type*} [DecidableEq σ] [Fintype α] {M : DFA α σ} {q j : σ} {w : List α} :
     w ∈ coeff M q j ↔ ∃ a, M.step q a = j ∧ w = [a] := by
   unfold coeff
@@ -151,14 +151,14 @@ theorem mem_coeff {σ : Type*} [DecidableEq σ] [Fintype α] {M : DFA α σ} {q 
   · rintro ⟨a, ha, rfl⟩
     exact ⟨a, Finset.mem_filter.2 ⟨Finset.mem_univ a, ha⟩, rfl⟩
 
-/-- No coefficient contains the empty word. -/
+/-- **DFA equation coefficients exclude the empty word.** No coefficient contains the empty word. -/
 theorem nil_notMem_coeff {σ : Type*} [DecidableEq σ] [Fintype α] {M : DFA α σ} {q j : σ} :
     [] ∉ coeff M q j := by
   rw [mem_coeff]
   rintro ⟨a, _, h⟩
   exact List.cons_ne_self a [] h.symm
 
-/-- Every coefficient is denoted by a regular expression. -/
+/-- **DFA equation coefficients are regex-denoted.** Every coefficient is denoted by a regular expression. -/
 theorem denoted_coeff {σ : Type*} [DecidableEq σ] [Fintype α] {M : DFA α σ} {q j : σ} :
     IsRegexDenoted (coeff M q j) := by
   unfold coeff
@@ -166,7 +166,7 @@ theorem denoted_coeff {σ : Type*} [DecidableEq σ] [Fintype α] {M : DFA α σ}
   intro a _
   exact IsRegexDenoted.char a
 
-/-- Every constant term is denoted by a regular expression. -/
+/-- **DFA equation constant terms are regex-denoted.** Every constant term is denoted by a regular expression. -/
 theorem denoted_constTerm {σ : Type*} {M : DFA α σ} {q : σ} :
     IsRegexDenoted (constTerm M q) := by
   unfold constTerm
@@ -174,7 +174,7 @@ theorem denoted_constTerm {σ : Type*} {M : DFA α σ} {q : σ} :
   · exact IsRegexDenoted.one
   · exact IsRegexDenoted.zero
 
-/-- The DFA equations: from `q`, either step on a letter and continue, or stop if `q`
+/-- **Equation system satisfied by DFA state languages.** The DFA equations: from `q`, either step on a letter and continue, or stop if `q`
 accepts. -/
 theorem fromState_eq {σ : Type*} [DecidableEq σ] [Fintype σ] [Fintype α] {M : DFA α σ} {q : σ} :
     fromState M q = (∑ j, coeff M q j * fromState M j) + constTerm M q := by
@@ -229,7 +229,7 @@ theorem fromState_eq {σ : Type*} [DecidableEq σ] [Fintype σ] [Fintype α] {M 
           exact hv
         · exact absurd h hconst
 
-/-- The coefficient of the reduced system obtained by eliminating the last state: the old
+/-- **Coefficient after eliminating the last state.** The coefficient of the reduced system obtained by eliminating the last state: the old
 coefficient, plus the detour through the last state, which may loop there any number of
 times. -/
 def elimCoeff {n : ℕ} (A : Fin (n + 1) → Fin (n + 1) → Language α) :
@@ -239,7 +239,7 @@ def elimCoeff {n : ℕ} (A : Fin (n + 1) → Fin (n + 1) → Language α) :
       A (Fin.castSucc i) (Fin.last n) * (A (Fin.last n) (Fin.last n))∗ *
         A (Fin.last n) (Fin.castSucc j)
 
-/-- The constant term of the reduced system obtained by eliminating the last state. -/
+/-- **Constant term after eliminating the last state.** The constant term of the reduced system obtained by eliminating the last state. -/
 def elimConst {n : ℕ} (A : Fin (n + 1) → Fin (n + 1) → Language α)
     (B : Fin (n + 1) → Language α) : Fin n → Language α :=
   fun i =>
@@ -330,7 +330,7 @@ theorem exists_regex_of_system (n : ℕ) :
             (f := fun j => A (Fin.last n) (Fin.castSucc j) * X (Fin.castSucc j))
             (fun j _ => (hA _ _).mul (hDen j))).add (hB _))
 
-/-- The language of a DFA with `Fin n` states is denoted by a regular expression. -/
+/-- **Languages of DFAs on finitely many numbered states are regex-denoted.** The language of a DFA with `Fin n` states is denoted by a regular expression. -/
 theorem exists_regex_of_dfa_fin {n : ℕ} [Finite α] (M : DFA α (Fin n)) :
     ∃ r : RegularExpression α, r.matches' = M.accepts := by
   classical
@@ -341,7 +341,7 @@ theorem exists_regex_of_dfa_fin {n : ℕ} [Finite α] (M : DFA α (Fin n)) :
   obtain ⟨r, hr⟩ := hDen M.start
   exact ⟨r, hr⟩
 
-/-- The language of a DFA over a finite state type is denoted by a regular expression. -/
+/-- **Kleene's theorem: DFA languages are regex-denoted.** The language of a DFA over a finite state type is denoted by a regular expression. -/
 theorem exists_regex_of_dfa {σ : Type*} [Finite σ] [Finite α] (M : DFA α σ) :
     ∃ r : RegularExpression α, r.matches' = M.accepts := by
   have := Fintype.ofFinite σ
@@ -349,7 +349,7 @@ theorem exists_regex_of_dfa {σ : Type*} [Finite σ] [Finite α] (M : DFA α σ)
   obtain ⟨r, hr⟩ := exists_regex_of_dfa_fin (M.reindex (Fintype.equivFin σ))
   exact ⟨r, by rw [hr, DFA.accepts_reindex]⟩
 
-/-- The letters occurring in a regular expression. -/
+/-- **Letters occurring in a regular expression.** The letters occurring in a regular expression. -/
 def regexLetters [DecidableEq α] : RegularExpression α → Finset α
   | .zero => ∅
   | .epsilon => ∅
@@ -358,7 +358,7 @@ def regexLetters [DecidableEq α] : RegularExpression α → Finset α
   | .comp P Q => regexLetters P ∪ regexLetters Q
   | .star P => regexLetters P
 
-/-- Every letter of a word matched by `r` occurs in `r`. -/
+/-- **Letters of matched words occur in the regular expression.** Every letter of a word matched by `r` occurs in `r`. -/
 theorem mem_matches'_letters [DecidableEq α] {r : RegularExpression α} {w : List α}
     (hw : w ∈ r.matches') {a : α} (ha : a ∈ w) : a ∈ regexLetters r := by
   induction r generalizing w with
@@ -386,13 +386,13 @@ theorem mem_matches'_letters [DecidableEq α] {r : RegularExpression α} {w : Li
       obtain ⟨y, hy, hay⟩ := List.mem_flatten.mp ha
       exact ihP (hL y hy) hay
 
-/-- The three-state DFA accepting exactly the one-letter words. -/
+/-- **DFA accepting the one-letter words.** The three-state DFA accepting exactly the one-letter words. -/
 def singletonDFA : DFA α (Fin 3) where
   step q _ := if q = 0 then 1 else 2
   start := 0
   accept := {1}
 
-/-- The one-letter-word DFA accepts exactly the words of length one. -/
+/-- **The one-letter-word DFA accepts exactly words of length one.** The one-letter-word DFA accepts exactly the words of length one. -/
 theorem singletonDFA_accepts :
     (singletonDFA : DFA α (Fin 3)).accepts = {w : List α | w.length = 1} := by
   have step_zero : ∀ a : α, (singletonDFA : DFA α (Fin 3)).step 0 a = 1 :=

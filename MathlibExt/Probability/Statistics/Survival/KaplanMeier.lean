@@ -63,7 +63,7 @@ namespace MathlibExt.Probability.Statistics.KaplanMeier
 
 open MeasureTheory Finset
 
-/-- Right-censored survival data grouped at `k` distinct, increasing observation times: `deaths j`
+/-- **Grouped right-censored survival data.** Right-censored survival data grouped at `k` distinct, increasing observation times: `deaths j`
 subjects die and `censored j` subjects are censored at `time j`. -/
 structure CensoredData (k : ℕ) where
   /-- The distinct observation times, in increasing order. -/
@@ -79,58 +79,58 @@ namespace CensoredData
 
 variable {k : ℕ} (D : CensoredData k)
 
-/-- The number of subjects in the sample. -/
+/-- **Sample size of censored survival data.** The number of subjects in the sample. -/
 def size : ℕ := ∑ j, (D.deaths j + D.censored j)
 
-/-- The number at risk at `time j`: subjects whose observation time is at least `time j`. -/
+/-- **Number at risk at an observation time.** The number at risk at `time j`: subjects whose observation time is at least `time j`. -/
 def atRisk (j : Fin k) : ℕ := ∑ l with j ≤ l, (D.deaths l + D.censored l)
 
-/-- The Kaplan–Meier factor `1 - dⱼ / nⱼ` at `time j` (it is `1` if nobody is at risk, where
+/-- **Kaplan–Meier factor.** The Kaplan–Meier factor `1 - dⱼ / nⱼ` at `time j` (it is `1` if nobody is at risk, where
 also `dⱼ = 0`). -/
 noncomputable def kmFactor (j : Fin k) : ℝ := 1 - (D.deaths j : ℝ) / D.atRisk j
 
-/-- The Kaplan–Meier estimate `Ŝ(t) = ∏_{tⱼ ≤ t} (1 - dⱼ / nⱼ)` of the survival function. -/
+/-- **Kaplan–Meier survival estimate.** The Kaplan–Meier estimate `Ŝ(t) = ∏_{tⱼ ≤ t} (1 - dⱼ / nⱼ)` of the survival function. -/
 noncomputable def kmSurvival (t : ℝ) : ℝ := ∏ j with D.time j ≤ t, D.kmFactor j
 
-/-- The Kaplan–Meier jump at `time j`: `Ŝ(tⱼ₋) · dⱼ / nⱼ`. -/
+/-- **Kaplan–Meier jump at an observation time.** The Kaplan–Meier jump at `time j`: `Ŝ(tⱼ₋) · dⱼ / nⱼ`. -/
 noncomputable def kmMass (j : Fin k) : ℝ :=
   (∏ l with l < j, D.kmFactor l) * ((D.deaths j : ℝ) / D.atRisk j)
 
-/-- The Kaplan–Meier mass left after the last observation time, `∏ⱼ (1 - dⱼ / nⱼ)`. -/
+/-- **Kaplan–Meier mass after the last observation.** The Kaplan–Meier mass left after the last observation time, `∏ⱼ (1 - dⱼ / nⱼ)`. -/
 noncomputable def kmTail : ℝ := ∏ j, D.kmFactor j
 
-/-- The Kaplan–Meier measure: the jumps `kmMass j` at `time j` and the leftover mass `kmTail` at
+/-- **Kaplan–Meier measure.** The Kaplan–Meier measure: the jumps `kmMass j` at `time j` and the leftover mass `kmTail` at
 a chosen point `τ` (taken after the last observation time). -/
 noncomputable def kmMeasure (τ : ℝ) : Measure ℝ :=
   ∑ j, ENNReal.ofReal (D.kmMass j) • Measure.dirac (D.time j) +
     ENNReal.ofReal D.kmTail • Measure.dirac τ
 
-/-- The censored-data likelihood of a law `μ` of the survival time:
+/-- **Likelihood of right-censored data.** The censored-data likelihood of a law `μ` of the survival time:
 `∏ⱼ μ{tⱼ}^{dⱼ} · μ(tⱼ, ∞)^{cⱼ}`. -/
 noncomputable def likelihood (μ : Measure ℝ) : ℝ :=
   ∏ j, μ.real {D.time j} ^ D.deaths j * μ.real (Set.Ioi (D.time j)) ^ D.censored j
 
-/-- The deaths at a time are among those at risk. -/
+/-- **Deaths at a time are among those at risk.** The deaths at a time are among those at risk. -/
 theorem deaths_le_atRisk (j : Fin k) : D.deaths j ≤ D.atRisk j :=
   (Nat.le_add_right _ _).trans
     (single_le_sum (f := fun l => D.deaths l + D.censored l) (fun _ _ => Nat.zero_le _)
       (by simp))
 
-/-- The Kaplan–Meier factor is at most `1`. -/
+/-- **Kaplan–Meier factor is at most one.** The Kaplan–Meier factor is at most `1`. -/
 theorem kmFactor_le_one (j : Fin k) : D.kmFactor j ≤ 1 := by
   have : (0 : ℝ) ≤ D.deaths j / D.atRisk j := by positivity
   rw [kmFactor]; linarith
 
-/-- The Kaplan–Meier factor is non-negative. -/
+/-- **Kaplan–Meier factor is nonnegative.** The Kaplan–Meier factor is non-negative. -/
 theorem kmFactor_nonneg (j : Fin k) : 0 ≤ D.kmFactor j := by
   rw [kmFactor, sub_nonneg]
   exact div_le_one_of_le₀ (by exact_mod_cast D.deaths_le_atRisk j) (Nat.cast_nonneg _)
 
-/-- The Kaplan–Meier jumps are non-negative. -/
+/-- **Kaplan–Meier jumps are nonnegative.** The Kaplan–Meier jumps are non-negative. -/
 theorem kmMass_nonneg (j : Fin k) : 0 ≤ D.kmMass j :=
   mul_nonneg (prod_nonneg fun l _ => D.kmFactor_nonneg l) (by positivity)
 
-/-- The leftover Kaplan–Meier mass is non-negative. -/
+/-- **Leftover Kaplan–Meier mass is nonnegative.** The leftover Kaplan–Meier mass is non-negative. -/
 theorem kmTail_nonneg : 0 ≤ D.kmTail := prod_nonneg fun l _ => D.kmFactor_nonneg l
 
 /-- The Kaplan–Meier jumps over an initial segment `A` add up to `1 - ∏_{l ∈ A} (1 - d_l / n_l)`. -/
@@ -155,13 +155,13 @@ private lemma sum_kmMass_of_downClosed (A : Finset (Fin k))
     rw [sum_insert has, prod_insert has, ih hs, kmMass, hlt', kmFactor]
     ring
 
-/-- The Kaplan–Meier jumps and the leftover mass add up to `1`. -/
+/-- **Kaplan–Meier jumps and leftover mass sum to one.** The Kaplan–Meier jumps and the leftover mass add up to `1`. -/
 theorem sum_kmMass_add_kmTail : ∑ j, D.kmMass j + D.kmTail = 1 := by
   rw [D.sum_kmMass_of_downClosed univ (fun _ _ _ _ => mem_univ _), kmTail]
   ring
 
 open Classical in
-/-- The mass of a measurable set under the Kaplan–Meier measure. -/
+/-- **Mass of a set under the Kaplan–Meier measure.** The mass of a measurable set under the Kaplan–Meier measure. -/
 theorem kmMeasure_real_apply (τ : ℝ) {B : Set ℝ} (hB : MeasurableSet B) :
     (D.kmMeasure τ).real B =
       ∑ j, (if D.time j ∈ B then D.kmMass j else 0) + if τ ∈ B then D.kmTail else 0 := by
@@ -180,7 +180,7 @@ theorem kmMeasure_real_apply (τ : ℝ) {B : Set ℝ} (hB : MeasurableSet B) :
   · by_cases h : τ ∈ B <;>
       simp [Measure.smul_apply, Measure.dirac_apply' _ hB, h, D.kmTail_nonneg]
 
-/-- The Kaplan–Meier measure is a probability measure. -/
+/-- **Kaplan–Meier measure is a probability measure.** The Kaplan–Meier measure is a probability measure. -/
 theorem kmMeasure_isProbabilityMeasure (τ : ℝ) : IsProbabilityMeasure (D.kmMeasure τ) := by
   have hfin : D.kmMeasure τ Set.univ ≠ ⊤ := by
     simp [kmMeasure, Measure.add_apply, Measure.smul_apply]
@@ -190,7 +190,7 @@ theorem kmMeasure_isProbabilityMeasure (τ : ℝ) : IsProbabilityMeasure (D.kmMe
   rw [measureReal_def] at h
   exact (ENNReal.toReal_eq_one_iff _).1 h
 
-/-- The survival function of the Kaplan–Meier measure is the Kaplan–Meier estimate on
+/-- **Survival function of the Kaplan–Meier measure.** The survival function of the Kaplan–Meier measure is the Kaplan–Meier estimate on
 `(-∞, τ)`: `P(T > t) = Ŝ(t)` for `t < τ`. -/
 theorem kmMeasure_real_Ioi {τ : ℝ} {t : ℝ} (ht : t < τ) :
     (D.kmMeasure τ).real (Set.Ioi t) = D.kmSurvival t := by
@@ -378,7 +378,7 @@ theorem likelihood_le_kmMeasure (μ : Measure ℝ) [IsProbabilityMeasure μ] {τ
   rw [D.likelihood_kmMeasure hτ]
   exact h
 
-/-- A time at which some subject is censored has positive Kaplan–Meier survival. -/
+/-- **Kaplan–Meier survival is positive at a censoring time.** A time at which some subject is censored has positive Kaplan–Meier survival. -/
 theorem kmSurvival_pos_of_censored_pos {j : Fin k} (hj : 0 < D.censored j) :
     0 < D.kmSurvival (D.time j) := by
   refine prod_pos fun l hl => ?_
@@ -495,7 +495,7 @@ theorem size_mul_kmSurvival (t : ℝ) :
   refine sum_congr rfl fun j _ => ?_
   simp [not_le]
 
-/-- Without censoring, the Kaplan–Meier estimate is the empirical survival function: the
+/-- **Kaplan–Meier estimate without censoring is the empirical survival.** Without censoring, the Kaplan–Meier estimate is the empirical survival function: the
 fraction `#{observations > t} / n = 1 - Fₙ(t)`. -/
 theorem kmSurvival_of_censored_eq_zero (hc : ∀ j, D.censored j = 0) (hn : 0 < D.size)
     (t : ℝ) : D.kmSurvival t = (∑ j with t < D.time j, (D.deaths j : ℝ)) / D.size := by

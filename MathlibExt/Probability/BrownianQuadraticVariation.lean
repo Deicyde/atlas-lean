@@ -64,7 +64,7 @@ open scoped NNReal ENNReal ProbabilityTheory
 
 namespace ProbabilityTheory
 
-/-- The weighted quadratic-variation error along the uniform partition of `[0, t]` into `n`
+/-- **Weighted quadratic-variation error of Brownian motion.** The weighted quadratic-variation error along the uniform partition of `[0, t]` into `n`
 cells: `∑_{k < n} φ(B (t k / n)) ((B (t (k + 1) / n) - B (t k / n))² - t / n)`. -/
 noncomputable def weightedQVError {Ω : Type*} (φ : ℝ → ℝ) (B : ℝ≥0 → Ω → ℝ) (t : ℝ≥0)
     (n : ℕ) (ω : Ω) : ℝ :=
@@ -379,7 +379,7 @@ theorem IsPreBrownianReal.indep_natural {Ω : Type*} {mΩ : MeasurableSpace Ω} 
     rw [heq, ← MeasurableSpace.comap_comp]
     exact MeasurableSpace.comap_mono (measurable_pi_apply _).comap_le
 
-/-- A process with measurable coordinates is adapted to its natural filtration. -/
+/-- **Processes with measurable coordinates are adapted to their natural filtration.** A process with measurable coordinates is adapted to its natural filtration. -/
 theorem adapted_natural_of_measurable {Ω : Type*} {mΩ : MeasurableSpace Ω}
     {B : ℝ≥0 → Ω → ℝ} (hBm : ∀ t, Measurable (B t)) :
     Adapted (Filtration.natural B (fun t ↦ (hBm t).stronglyMeasurable)) B := fun i ↦

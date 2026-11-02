@@ -130,7 +130,7 @@ private def brouwerPref (σ : ℕ → Bool) (n : ℕ) : List Bool :=
   (List.range n).map σ
 
 /--
-Every nonempty compact metrizable perfect totally disconnected space is homeomorphic to the Cantor
+**Brouwer's characterization of the Cantor space.** Every nonempty compact metrizable perfect totally disconnected space is homeomorphic to the Cantor
 space.
 Source: L. E. J. Brouwer, Proc. Kon. Ned. Akad. Wet. 12 (1910), 785-794.
 

@@ -104,7 +104,7 @@ private theorem exists_basis_D {K F : Type*} [Field K] [Field F]
     KaehlerDifferential.tensorKaehlerEquivOfFormallyEtale_apply,
     KaehlerDifferential.mapBaseChange_tmul, one_smul, KaehlerDifferential.map_D, hX]
 
-/-- The differential of a transcendental separable element is nonzero. -/
+/-- **Differential of a transcendental element is nonzero.** The differential of a transcendental separable element is nonzero. -/
 theorem D_ne_zero_of_transcendental (K : Type*) [Field K] {F : Type*} [Field F]
     [Algebra K F] (x : F) (hx : Transcendental K x)
     [Algebra.IsSeparable (IntermediateField.adjoin K ({x} : Set F)) F] :
@@ -112,7 +112,7 @@ theorem D_ne_zero_of_transcendental (K : Type*) [Field K] {F : Type*} [Field F]
   obtain ⟨b, hb⟩ := exists_basis_D hx
   simpa [hb] using b.ne_zero ()
 
-/-- The differential of a transcendental separable element spans the Kähler
+/-- **Differential of a transcendental element spans the differentials.** The differential of a transcendental separable element spans the Kähler
 differentials. -/
 theorem span_D_eq_top_of_transcendental (K : Type*) [Field K] {F : Type*} [Field F]
     [Algebra K F] (x : F) (hx : Transcendental K x)
@@ -123,7 +123,7 @@ theorem span_D_eq_top_of_transcendental (K : Type*) [Field K] {F : Type*} [Field
   rwa [show Set.range b = {KaehlerDifferential.D K F x} by
     ext ω; simp [Set.range_unique, hb]] at h
 
-/-- Every Kähler differential is uniquely a scalar multiple of the
+/-- **Kähler differentials are unique multiples of dt for transcendental t.** Every Kähler differential is uniquely a scalar multiple of the
 differential of a transcendental separable element. -/
 theorem exists_unique_smul_D_of_transcendental (K : Type*) [Field K] {F : Type*}
     [Field F] [Algebra K F] (x : F) (hx : Transcendental K x)

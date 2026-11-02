@@ -86,23 +86,23 @@ noncomputable section
 
 namespace ProbabilityTheory
 
-/-- The point mass `P(B_n = k) = C(n,k) / 2ⁿ` for a `Binomial(n, 1/2)` success count `B_n`. -/
+/-- **Binomial point mass with success probability one half.** The point mass `P(B_n = k) = C(n,k) / 2ⁿ` for a `Binomial(n, 1/2)` success count `B_n`. -/
 def binomProbHalf (n k : ℕ) : ℝ :=
   (Nat.choose n k : ℝ) / (2 : ℝ) ^ n
 
-/-- The Gaussian (local CLT) approximation to `binomProbHalf n k`,
+/-- **Gaussian approximation to the symmetric binomial point mass.** The Gaussian (local CLT) approximation to `binomProbHalf n k`,
 `√(2/(π n)) · exp(-(k - n/2)² / (n/2))`. -/
 def gaussianApproxHalf (n : ℕ) (k : ℕ) : ℝ :=
   Real.sqrt (2 / (Real.pi * (n : ℝ))) *
     Real.exp (-(((k : ℝ) - (n : ℝ) / 2) ^ 2 / ((n : ℝ) / 2)))
 
-/-- The integer index `k = ⌊n/2 + x·√n/2⌋` corresponding to the parameter `x` in the local
+/-- **Lattice index in the local De Moivre–Laplace theorem.** The integer index `k = ⌊n/2 + x·√n/2⌋` corresponding to the parameter `x` in the local
 DeMoivre–Laplace statement: it picks the lattice point near `n/2 + x √n / 2`, so that
 `(2k - n)/√n ≈ x`. -/
 def localDMLIndex (x : ℝ) (n : ℕ) : ℕ :=
   ⌊(n : ℝ) / 2 + x * Real.sqrt (n : ℝ) / 2⌋₊
 
-/-- The index `localDMLIndex x n` tends to infinity as `n → ∞`, for any fixed `x : ℝ`. -/
+/-- **The De Moivre–Laplace index tends to infinity.** The index `localDMLIndex x n` tends to infinity as `n → ∞`, for any fixed `x : ℝ`. -/
 lemma localDMLIndex_tendsto_atTop (x : ℝ) :
     Tendsto (localDMLIndex x) atTop atTop := by
   apply tendsto_atTop.mpr; intro b; rw [eventually_atTop]
@@ -114,7 +114,7 @@ lemma localDMLIndex_tendsto_atTop (x : ℝ) :
     linarith [Nat.le_ceil (4 * (b : ℝ) + x ^ 2 + 4)]
   exact Nat.le_floor (by nlinarith [sq_nonneg (Real.sqrt n + x), Real.sq_sqrt h_nn])
 
-/-- The complementary index `n - localDMLIndex x n` also tends to infinity, so both `k` and
+/-- **The complementary De Moivre–Laplace index tends to infinity.** The complementary index `n - localDMLIndex x n` also tends to infinity, so both `k` and
 `n - k` are eventually arbitrarily large. -/
 lemma n_sub_localDMLIndex_tendsto_atTop (x : ℝ) :
     Tendsto (fun n => n - localDMLIndex x n) atTop atTop := by
@@ -139,7 +139,7 @@ lemma n_sub_localDMLIndex_tendsto_atTop (x : ℝ) :
     omega
 
 set_option maxHeartbeats 800000 in
-/-- The ratio `localDMLIndex x n / n` tends to `1/2` as `n → ∞`, because the correction
+/-- **The De Moivre–Laplace index over n tends to one half.** The ratio `localDMLIndex x n / n` tends to `1/2` as `n → ∞`, because the correction
 `x √n / 2` is `o(n)`. -/
 lemma localDMLIndex_ratio_half (x : ℝ) :
     Tendsto (fun n => (localDMLIndex x n : ℝ) / (n : ℝ)) atTop (nhds (1/2)) := by
@@ -192,7 +192,7 @@ lemma localDMLIndex_ratio_half (x : ℝ) :
     simp only [localDMLIndex]
     exact (div_le_div_iff_of_pos_right hnn).mpr (by exact_mod_cast Nat.floor_le hy)
 
-/-- Rewriting of `m!` in terms of Mathlib's `Stirling.stirlingSeq`:
+/-- **Factorial in terms of the Stirling sequence.** Rewriting of `m!` in terms of Mathlib's `Stirling.stirlingSeq`:
 `m! = stirlingSeq(m) · √(2m) · (m/e)^m`. -/
 lemma factorial_eq_stirlingSeq_mul (m : ℕ) (hm : 0 < m) :
     (m ! : ℝ) = Stirling.stirlingSeq m * Real.sqrt (2 * (m : ℝ)) *
@@ -205,7 +205,7 @@ lemma factorial_eq_stirlingSeq_mul (m : ℕ) (hm : 0 < m) :
   rw [Stirling.stirlingSeq]
   field_simp
 
-/-- Algebraic rewriting of the ratio `binomProbHalf n k / gaussianApproxHalf n k` using
+/-- **Stirling decomposition of the binomial-to-Gaussian ratio.** Algebraic rewriting of the ratio `binomProbHalf n k / gaussianApproxHalf n k` using
 Stirling's formula, separating it into a Stirling-sequence factor, a square-root factor,
 a power-of-`n` factor, and an exponential correction. -/
 lemma binomProb_div_gaussianApprox_eq (n k : ℕ) (hn : 0 < n) (hk : 0 < k) (hkn : k < n) :
@@ -330,7 +330,7 @@ lemma binomProb_div_gaussianApprox_eq (n k : ℕ) (hn : 0 < n) (hk : 0 < k) (hkn
   field_simp
 
 set_option maxHeartbeats 800000 in
-/-- Third-order Taylor bound for the symmetric entropy expansion:
+/-- **Cubic bound on the symmetric entropy residual.** Third-order Taylor bound for the symmetric entropy expansion:
 `|(1+u) log(1+u) + (1-u) log(1-u) - u²| ≤ 6 |u|³` whenever `|u| < 1/2`. Used to control the
 deviation of the binomial coefficient from its Gaussian approximation. -/
 lemma entropy_residual_bound {u : ℝ} (hu : |u| < 1 / 2) :
@@ -374,7 +374,7 @@ lemma entropy_residual_bound {u : ℝ} (hu : |u| < 1 / 2) :
     _ = 6 * |u| ^ 3 := by ring
 
 set_option maxHeartbeats 800000 in
-/-- Eventually, the deviation `|2k - n|` for `k = localDMLIndex x n` is at most `|x| √n + 2`,
+/-- **Deviation bound for the De Moivre–Laplace index.** Eventually, the deviation `|2k - n|` for `k = localDMLIndex x n` is at most `|x| √n + 2`,
 since `k = ⌊n/2 + x √n / 2⌋`. -/
 lemma localDMLIndex_deviation_bound (x : ℝ) :
     ∀ᶠ n in atTop, |(2 : ℝ) * (localDMLIndex x n : ℝ) - (n : ℝ)| ≤ |x| * Real.sqrt n + 2 := by
@@ -398,7 +398,7 @@ lemma localDMLIndex_deviation_bound (x : ℝ) :
     nlinarith [neg_le_abs x, Real.sqrt_nonneg (n : ℝ)]
 
 set_option maxHeartbeats 4000000 in
-/-- Identity rewriting the logarithm of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` plus the
+/-- **Logarithm of the binomial power factor.** Identity rewriting the logarithm of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` plus the
 Gaussian exponent `(k - n/2)² / (n/2)` as `-(n/2) · ((1+u) log(1+u) + (1-u) log(1-u) - u²)`,
 where `u = (2k - n)/n`. This combines the log-binomial expansion with the Gaussian correction. -/
 lemma log_power_factor_formula (n k : ℕ) (hk : 0 < k) (hkn : k < n) :
@@ -649,7 +649,7 @@ private lemma dml_gaussian_fixed_ratio_tendsto_one {m j : ℕ → ℕ} {x : ℝ}
   rw [gaussianApproxHalf, heq]
   field_simp
 
-/-- For any binomial success-index sequence whose standardized displacement converges to
+/-- **Binomial point mass is equivalent to a fixed Gaussian value.** For any binomial success-index sequence whose standardized displacement converges to
 `x`, the point mass is equivalent to the Gaussian expression evaluated at the fixed limit `x`.
 The number of trials may follow any natural-valued sequence tending to infinity. -/
 theorem binomProbHalf_isEquivalent_fixedGaussian {m j : ℕ → ℕ} {x : ℝ}
@@ -674,7 +674,7 @@ theorem binomProbHalf_isEquivalent_fixedGaussian {m j : ℕ → ℕ} {x : ℝ}
     have hn_pos : (0 : ℝ) < (m n : ℝ) := by exact_mod_cast hn
     exact mul_ne_zero (Real.sqrt_ne_zero'.mpr (by positivity)) (Real.exp_ne_zero _)
 
-/-- The source's random-walk local limit theorem: every integer displacement sequence with
+/-- **Local limit theorem for the simple random walk.** The source's random-walk local limit theorem: every integer displacement sequence with
 `2 kₙ / √(2n) → x` has point mass equivalent to `(√(π n))⁻¹ exp(-x²/2)`.
 The scaling hypothesis itself implies that `n + kₙ` is a valid success index eventually. -/
 theorem local_deMoivreLaplace_half_of_tendsto {k : ℕ → ℤ} {x : ℝ}
@@ -723,7 +723,7 @@ theorem local_deMoivreLaplace_half_of_tendsto {k : ℕ → ℤ} {x : ℝ}
     field_simp
   rw [hfrac, Real.sqrt_inv]
 
-/-- The rounded success index has standardized displacement converging to `x`. -/
+/-- **Standardized displacement of the rounded index converges.** The rounded success index has standardized displacement converging to `x`. -/
 lemma localDMLIndex_standardized_tendsto (x : ℝ) :
     Tendsto (fun n => (2 * (localDMLIndex x n : ℝ) - (n : ℝ)) / Real.sqrt (n : ℝ))
       atTop (𝓝 x) := by
@@ -753,7 +753,7 @@ lemma localDMLIndex_standardized_tendsto (x : ℝ) :
 
 
 set_option maxHeartbeats 8000000 in
-/-- The product of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` with the Gaussian correction
+/-- **The corrected binomial power factor tends to one.** The product of the power factor `nⁿ / (kᵏ (n-k)^{n-k} 2ⁿ)` with the Gaussian correction
 `exp((k - n/2)² / (n/2))`, evaluated at `k = localDMLIndex x n`, tends to `1` as `n → ∞`.
 This is the key analytic estimate behind the local DeMoivre–Laplace limit theorem. -/
 lemma dml_power_factor_tendsto_one (x : ℝ) :
@@ -764,7 +764,7 @@ lemma dml_power_factor_tendsto_one (x : ℝ) :
     atTop (nhds 1) := by
   exact dml_power_factor_tendsto_one_of_scale tendsto_id (localDMLIndex_standardized_tendsto x)
 
-/-- Companion to `localDMLIndex_ratio_half`: the ratio `(n - k) / n` for `k = localDMLIndex x n`
+/-- **The complementary index over n tends to one half.** Companion to `localDMLIndex_ratio_half`: the ratio `(n - k) / n` for `k = localDMLIndex x n`
 also tends to `1/2`. -/
 lemma n_sub_localDMLIndex_ratio_half (x : ℝ) :
     Tendsto (fun n => ((n - localDMLIndex x n : ℕ) : ℝ) / (n : ℝ)) atTop (nhds (1/2)) := by
@@ -781,7 +781,7 @@ lemma n_sub_localDMLIndex_ratio_half (x : ℝ) :
   simpa only [show (1 : ℝ) - 1 / 2 = 1 / 2 from by ring] using h
 
 set_option maxHeartbeats 3200000 in
-/-- The binomial point mass and its Gaussian approximation are asymptotically equivalent along
+/-- **Binomial point mass is equivalent to its Gaussian approximation.** The binomial point mass and its Gaussian approximation are asymptotically equivalent along
 the sequence `k = localDMLIndex x n`:
 `binomProbHalf n k ~ gaussianApproxHalf n k` as `n → ∞`. Combines Stirling's formula with the
 power-factor and entropy estimates. -/
@@ -797,7 +797,7 @@ theorem binomProbHalf_isEquivalent_gaussianApproxHalf (x : ℝ) :
         (mul_pos Real.pi_pos (by exact_mod_cast hn)))
     · exact (Real.exp_pos _).ne'
 
-/-- Canonical rounded-sequence corollary of the local De Moivre–Laplace theorem: for any
+/-- **Local De Moivre–Laplace theorem for $p = 1/2$.** Canonical rounded-sequence corollary of the local De Moivre–Laplace theorem: for any
 `x ∈ ℝ`, the binomial point mass divided by its moving Gaussian approximation along
 `localDMLIndex x` tends to `1`. The arbitrary integer-displacement statement with the fixed
 Gaussian value at `x` is `local_deMoivreLaplace_half_of_tendsto`. -/

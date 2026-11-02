@@ -27,7 +27,7 @@ The construction is adapted from `Field/Defs.lean`, `Field/Quot.lean`, and `Fiel
 
 namespace Polynomial
 
-/-- Over `ZMod 2`, there is a monic irreducible polynomial of every positive degree. -/
+/-- **Monic irreducible binary polynomials exist in every degree.** Over `ZMod 2`, there is a monic irreducible polynomial of every positive degree. -/
 theorem exists_monic_irreducible_zmod_two (s : Nat) (hs : 0 < s) :
     ∃ f : Polynomial (ZMod 2), f.Monic ∧ Irreducible f ∧ f.natDegree = s := by
   have : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
@@ -42,7 +42,7 @@ end Polynomial
 
 namespace BitVec
 
-/-- Test exhaustively whether every nonzero word has a multiplicative inverse modulo
+/-- **Exhaustive inverse test for a binary polynomial modulus.** Test exhaustively whether every nonzero word has a multiplicative inverse modulo
 `g.monicModulus`. -/
 def passesInverseTest {s : Nat} (g : BitVec s) : Bool :=
   let words := (List.range (2 ^ s)).map (BitVec.ofNat s)
@@ -93,7 +93,7 @@ private theorem adjoinRootEquiv_one {s : Nat} (g : BitVec s) (hs : 0 < s) :
     g.adjoinRootEquiv (1#s) = 1 := by
   rw [BitVec.adjoinRootEquiv_apply, one_toPolynomial hs, map_one]
 
-/-- At positive width, the exhaustive inverse test succeeds exactly for irreducible monic
+/-- **Inverse test succeeds exactly for irreducible moduli.** At positive width, the exhaustive inverse test succeeds exactly for irreducible monic
 moduli. -/
 theorem passesInverseTest_iff_irreducible {s : Nat} (g : BitVec s) (hs : 0 < s) :
     g.passesInverseTest = true ↔ Irreducible g.monicModulus := by
@@ -177,7 +177,7 @@ private theorem monicModulus_toBitVec {s : Nat} (f : Polynomial (ZMod 2))
       rw [ite_eq_right hsn.ne', BitVec.getLsbD_of_ge _ _ hsn.le]
       simp [Polynomial.coeff_eq_zero_of_natDegree_lt (hd.trans_lt hsn)]
 
-/-- Search the lower coefficient words in ascending order for the first word passing the
+/-- **Exhaustive search for an irreducible binary modulus.** Search the lower coefficient words in ascending order for the first word passing the
 exhaustive inverse test. Width zero is deliberately reported as failure. -/
 def findIrreducibleModulus (s : Nat) : Option (BitVec s) :=
   if 0 < s then
@@ -185,7 +185,7 @@ def findIrreducibleModulus (s : Nat) : Option (BitVec s) :=
   else
     none
 
-/-- At every positive width, exhaustive search returns an irreducible binary modulus. -/
+/-- **Exhaustive search returns an irreducible binary modulus.** At every positive width, exhaustive search returns an irreducible binary modulus. -/
 theorem findIrreducibleModulus_spec (s : Nat) (hs : 0 < s) :
     ∃ g : BitVec s, findIrreducibleModulus s = some g ∧
       Irreducible g.monicModulus := by
@@ -204,7 +204,7 @@ theorem findIrreducibleModulus_spec (s : Nat) (hs : 0 < s) :
         (List.find?_some hfind)⟩
       simpa [findIrreducibleModulus, hs, binaryWords] using hfind
 
-/-- The returned modulus is no larger than any lower coefficient word whose monic modulus is
+/-- **Minimality of the binary modulus found by exhaustive search.** The returned modulus is no larger than any lower coefficient word whose monic modulus is
 irreducible. -/
 theorem findIrreducibleModulus_minimal {s : Nat} (g : BitVec s)
     (h : findIrreducibleModulus s = some g) :

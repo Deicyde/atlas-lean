@@ -44,7 +44,7 @@ open CategoryTheory AlgebraicGeometry
 
 universe u
 
-/-- A geometrically irreducible morphism is geometrically connected. -/
+/-- **Geometrically irreducible morphisms are geometrically connected.** A geometrically irreducible morphism is geometrically connected. -/
 theorem AlgebraicGeometry.GeometricallyIrreducible.geometricallyConnected
     {X Y : Scheme.{u}} (f : X ⟶ Y) [GeometricallyIrreducible f] :
     GeometricallyConnected f := by

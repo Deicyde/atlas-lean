@@ -66,7 +66,7 @@ def denseHypergraphPerfectMatchingInP : Prop :=
   ∀ (k : ℕ) (c : ℚ), 2 ≤ k → 1 / (k : ℚ) ≤ c → c < 1 / 2 → perfectMatchingProblem k c ∈ P
 
 /--
-Resolved true: Keevash, Knox and Mycroft give a polynomial-time algorithm when the minimum codegree
+**Perfect matchings in dense hypergraphs are decidable in polynomial time.** Resolved true: Keevash, Knox and Mycroft give a polynomial-time algorithm when the minimum codegree
 is at least `n/k + γn` for a fixed `γ > 0`, and Han extends it to minimum codegree at least `n/k`,
 so the problem is in `P` for every `1/k ≤ c < 1/2`. Inputs whose edge count is below what the
 codegree condition forces are rejected first, so `n` is polynomial in the input size whenever the

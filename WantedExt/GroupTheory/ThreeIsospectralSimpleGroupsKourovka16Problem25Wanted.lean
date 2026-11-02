@@ -37,7 +37,7 @@ elements, where an element of infinite order is counted as having order $0$. -/
 def spectrum (G : Type*) [Group G] : Set ℕ :=
   Set.range (orderOf : G → ℕ)
 
-/-- Kourovka 16.25 (A. V. Vasil'ev): there are three pairwise non-isomorphic finite non-abelian
+/-- **Three isospectral finite simple groups.** Kourovka 16.25 (A. V. Vasil'ev): there are three pairwise non-isomorphic finite non-abelian
 simple groups with the same spectrum. -/
 def threeIsospectralSimpleGroups : Prop :=
   ∃ (G₁ G₂ G₃ : Type) (_ : Group G₁) (_ : Group G₂) (_ : Group G₃)

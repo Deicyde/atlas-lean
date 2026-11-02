@@ -48,7 +48,7 @@ open ConfigSpace Function Finset
 
 variable {E : Type*} [Fintype E] [DecidableEq E]
 
-/-- The event `{ω_e = 1}` that the edge `e` is open. -/
+/-- **Event that an edge is open.** The event `{ω_e = 1}` that the edge `e` is open. -/
 def openEdge (e : E) : Set (ConfigSpace E) := {ω | ω e = true}
 
 omit [Fintype E] [DecidableEq E] in
@@ -193,7 +193,7 @@ theorem russoFormula (p : ℝ) (A : Set (ConfigSpace E)) (hA : IsIncreasing A)
   have hne : p * (1 - p) ≠ 0 := mul_ne_zero hp0 (by intro h; exact hp1 (by linarith))
   field_simp
 
-/-- The influence `I_e^p(A) = ℙ_p(e is pivotal for A)` of the coordinate `e` on the event `A`
+/-- **Influence of an edge on an event.** The influence `I_e^p(A) = ℙ_p(e is pivotal for A)` of the coordinate `e` on the event `A`
 under the `p`-biased product measure.
 
 See also `MathlibExt.Analysis.Fourier.BooleanCubeInfluence.boolInfluence`, the influence of a

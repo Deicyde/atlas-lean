@@ -60,7 +60,7 @@ open Finset
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 variable {ι : Type*} [DecidableEq ι]
 
-/-- A separable data matrix: columns `m j` are sub-convex combinations of `r` linearly
+/-- **Separable data matrix.** A separable data matrix: columns `m j` are sub-convex combinations of `r` linearly
 independent archetypes `w k`, and every archetype is a column (Gillis–Vavasis Assumption 1). -/
 structure Separable (m : ι → E) (r : ℕ) where
   /-- The archetypes (columns of `W`). -/
@@ -78,19 +78,19 @@ structure Separable (m : ι → E) (r : ℕ) where
   /-- Every archetype is one of the columns (separability). -/
   pure : ∀ k, ∃ j, m j = w k
 
-/-- The residual of column `j`: its projection onto the orthogonal complement of the span of
+/-- **Residual of a column in the successive projection algorithm.** The residual of column `j`: its projection onto the orthogonal complement of the span of
 the columns indexed by `S`. -/
 noncomputable def residual (m : ι → E) (S : Finset ι) (j : ι) : E :=
   haveI := Classical.decEq E
   m j - (Submodule.span ℝ ((S.image m : Finset E) : Set E)).starProjection (m j)
 
-/-- `S` (most recent pick first) is a run of the successive projection algorithm: each pick
+/-- **Run of the successive projection algorithm.** `S` (most recent pick first) is a run of the successive projection algorithm: each pick
 maximizes the residual norm given the earlier picks (ties broken arbitrarily). -/
 def IsSPARun (m : ι → E) : List ι → Prop
   | [] => True
   | j :: S => IsSPARun m S ∧ ∀ i, ‖residual m S.toFinset i‖ ≤ ‖residual m S.toFinset j‖
 
-/-- Gillis–Vavasis Lemma 1 (`f = ‖·‖²`), bound: a sub-convex combination of vectors of norm
+/-- **Norm bound for a sub-convex combination of vectors.** Gillis–Vavasis Lemma 1 (`f = ‖·‖²`), bound: a sub-convex combination of vectors of norm
 at most `M` has norm at most `M`. -/
 theorem norm_sum_smul_le {r : ℕ} (w : Fin r → E) (h : Fin r → ℝ) {M : ℝ} (hM : 0 ≤ M)
     (hw : ∀ k, ‖w k‖ ≤ M) (hh : ∀ k, 0 ≤ h k) (hsum : ∑ k, h k ≤ 1) :
@@ -165,7 +165,7 @@ private theorem single_of_max_norm {E : Type*} [NormedAddCommGroup E]
   · subst l; simp [hk1]
   · simp [hl, hz l hl]
 
-/-- Gillis–Vavasis Lemma 1 (`f = ‖·‖²`), equality case: for linearly independent vectors of
+/-- **Equality case of the sub-convex combination norm bound.** Gillis–Vavasis Lemma 1 (`f = ‖·‖²`), equality case: for linearly independent vectors of
 norm at most `M > 0`, a sub-convex combination of norm `M` is a vertex `w k` with
 `‖w k‖ = M`. -/
 theorem eq_single_of_norm_sum_smul_eq {r : ℕ} {w : Fin r → E} (hli : LinearIndependent ℝ w)
@@ -280,7 +280,7 @@ theorem IsSPARun.mem_range {m : ι → E} {r : ℕ} (hm : Separable m r) {S : Li
     (hS : IsSPARun m S) (hlen : S.length ≤ r) : ∀ j ∈ S, m j ∈ Set.range hm.w := by
   exact (run_invariant hm S hS hlen).2
 
-/-- After exactly `r` picks, SPA has found every archetype. -/
+/-- **Successive projection finds every archetype after r picks.** After exactly `r` picks, SPA has found every archetype. -/
 theorem IsSPARun.range_eq {m : ι → E} {r : ℕ} (hm : Separable m r) {S : List ι}
     (hS : IsSPARun m S) (hlen : S.length = r) : {e | ∃ j ∈ S, m j = e} = Set.range hm.w := by
   classical
@@ -302,7 +302,7 @@ theorem IsSPARun.range_eq {m : ι → E} {r : ℕ} (hm : Separable m r) {S : Lis
   rw [← hmem, heq]
   simp
 
-/-- SPA runs of every length exist (on a nonempty set of columns). -/
+/-- **Existence of successive projection runs of every length.** SPA runs of every length exist (on a nonempty set of columns). -/
 theorem exists_isSPARun [Finite ι] [Nonempty ι] (m : ι → E) (n : ℕ) :
     ∃ S : List ι, S.length = n ∧ IsSPARun m S := by
   classical

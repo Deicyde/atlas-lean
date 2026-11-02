@@ -66,7 +66,7 @@ set_option autoImplicit false
 
 namespace Cslib.Bioinformatics.Assembly.Omnitig
 
-/-- A directed multigraph given by the source and target of each edge. -/
+/-- **Directed multigraph.** A directed multigraph given by the source and target of each edge. -/
 structure Multigraph (V : Type*) (E : Type*) where
   /-- The source (tail) of an edge. -/
   src : E → V
@@ -75,29 +75,29 @@ structure Multigraph (V : Type*) (E : Type*) where
 
 variable {V E : Type*} (G : Multigraph V E)
 
-/-- A list of edges is a walk when consecutive edges are incident (head to tail). -/
+/-- **Walk in a directed multigraph.** A list of edges is a walk when consecutive edges are incident (head to tail). -/
 def IsWalk (w : List E) : Prop := w.IsChain (fun e f => G.tgt e = G.src f)
 
-/-- A path: a nonempty walk whose nodes `src e₀, tgt e₀, …, tgt e_ℓ` are distinct, except that
+/-- **Path in a directed multigraph.** A path: a nonempty walk whose nodes `src e₀, tgt e₀, …, tgt e_ℓ` are distinct, except that
 the first and last node may coincide. -/
 def IsPath (p : List E) : Prop :=
   p ≠ [] ∧ IsWalk G p ∧ (p.map G.tgt).Nodup ∧
     ∀ e₀ ∈ p.head?, G.src e₀ ∉ (p.map G.tgt).dropLast
 
-/-- A circular edge-covering walk: a nonempty closed walk through every edge. -/
+/-- **Circular edge-covering walk.** A circular edge-covering walk: a nonempty closed walk through every edge. -/
 def IsCircularCovering (A : List E) : Prop :=
   A ≠ [] ∧ IsWalk G A ∧ (∀ a ∈ A.getLast?, ∀ b ∈ A.head?, G.tgt a = G.src b) ∧ ∀ e, e ∈ A
 
-/-- `w` is a subwalk of the circular walk `A`: it is read off `A` from some start position,
+/-- **Subwalk of a circular walk.** `w` is a subwalk of the circular walk `A`: it is read off `A` from some start position,
 wrapping around (possibly several times). -/
 def IsCircularSubwalk (w A : List E) : Prop :=
   ∃ p : ℕ, ∀ (i : ℕ) (hi : i < w.length), A[(p + i) % A.length]? = some w[i]
 
-/-- Safe walk: a subwalk of every circular edge-covering walk. -/
+/-- **Safe walk in a multigraph.** Safe walk: a subwalk of every circular edge-covering walk. -/
 def IsSafe (w : List E) : Prop :=
   ∀ A, IsCircularCovering G A → IsCircularSubwalk w A
 
-/-- Omnitig (Tomescu–Medvedev, Definition 5): for all `1 ≤ i ≤ j ≤ t` (`t + 1 = w.length`),
+/-- **Omnitig.** Omnitig (Tomescu–Medvedev, Definition 5): for all `1 ≤ i ≤ j ≤ t` (`t + 1 = w.length`),
 no path from `v_j = src e_j` to `v_i = src e_i` has first edge `≠ e_j` and last edge
 `≠ e_{i-1}`. -/
 def IsOmnitig (w : List E) : Prop :=
@@ -781,7 +781,7 @@ private theorem omnitig_extend_prefix {V E : Type*} (G : Multigraph V E)
     exact ⟨Nat.mod_lt _ (List.length_pos_iff.mpr hA.1),
       by simpa only [cyclicAt, List.getElem_take] using he'⟩
 
-/-- Omnitigs are safe (Theorem 1, (2) ⇒ (1)). -/
+/-- **Omnitigs are safe walks.** Omnitigs are safe (Theorem 1, (2) ⇒ (1)). -/
 theorem IsOmnitig.isSafe {w : List E} (hw : IsOmnitig G w) : IsSafe G w := by
   intro A hA
   have hprefix : ∀ n, n ≤ w.length → IsCircularSubwalk (w.take n) A := by
@@ -798,7 +798,7 @@ theorem IsOmnitig.isSafe {w : List E} (hw : IsOmnitig G w) : IsSafe G w := by
       · exact omnitig_extend_prefix G w hw A hA n (by omega) (by omega) (ih (by omega))
   simpa using hprefix w.length (by omega)
 
-/-- Safe walks are omnitigs (Theorem 1, (1) ⇒ (2)), when a circular edge-covering walk exists
+/-- **Safe walks are omnitigs.** Safe walks are omnitigs (Theorem 1, (1) ⇒ (2)), when a circular edge-covering walk exists
 (otherwise every walk is vacuously safe). -/
 theorem isOmnitig_of_isSafe {w : List E} (hne : w ≠ []) (hwalk : IsWalk G w)
     (hA : ∃ A, IsCircularCovering G A) (hs : IsSafe G w) : IsOmnitig G w := by

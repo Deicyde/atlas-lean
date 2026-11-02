@@ -75,16 +75,16 @@ noncomputable section
 
 namespace MathlibExt.Biology.Phylogenetics.CodonModel
 
-/-- A codon: three nucleotides, each in `Fin 4` (order `A, C, G, T`). -/
+/-- **Codon as a triple of nucleotides.** A codon: three nucleotides, each in `Fin 4` (order `A, C, G, T`). -/
 abbrev Codon := Fin 3 → Fin 4
 
-/-- The positions at which two codons differ. -/
+/-- **Positions at which two codons differ.** The positions at which two codons differ. -/
 def diffPositions (c c' : Codon) : Finset (Fin 3) := univ.filter fun k => c k ≠ c' k
 
-/-- Two codons differ at exactly one position. -/
+/-- **Codons differing at exactly one position.** Two codons differ at exactly one position. -/
 def IsSingleChange (c c' : Codon) : Prop := (diffPositions c c').card = 1
 
-/-- Every differing position is a transition (same parity: `A ↔ G` or `C ↔ T`). -/
+/-- **Codon change consisting of transitions.** Every differing position is a transition (same parity: `A ↔ G` or `C ↔ T`). -/
 def IsTransitionChange (c c' : Codon) : Prop :=
   ∀ k, c k ≠ c' k → (c k : ℕ) % 2 = (c' k : ℕ) % 2
 
@@ -96,12 +96,12 @@ instance (c c' : Codon) : Decidable (IsTransitionChange c c') := by
   unfold IsTransitionChange
   infer_instance
 
-/-- Differing at exactly one position is symmetric. -/
+/-- **Symmetry of single-position codon changes.** Differing at exactly one position is symmetric. -/
 theorem isSingleChange_comm (c c' : Codon) : IsSingleChange c c' ↔ IsSingleChange c' c := by
   unfold IsSingleChange diffPositions
   simp_rw [ne_comm]
 
-/-- Being a transition change is symmetric. -/
+/-- **Symmetry of transition codon changes.** Being a transition change is symmetric. -/
 theorem isTransitionChange_comm (c c' : Codon) :
     IsTransitionChange c c' ↔ IsTransitionChange c' c := by
   unfold IsTransitionChange
@@ -109,7 +109,7 @@ theorem isTransitionChange_comm (c c' : Codon) :
 
 variable {ι α : Type*} [DecidableEq α]
 
-/-- The **Goldman–Yang exchangeability** between codons `i` and `j`: `0` unless they differ at
+/-- **Goldman–Yang codon exchangeability.** The **Goldman–Yang exchangeability** between codons `i` and `j`: `0` unless they differ at
 one position; otherwise `κ` for a transition (`1` for a transversion), times `ω` if the amino
 acid changes. -/
 def gyExchange (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : Matrix ι ι ℝ :=
@@ -118,13 +118,13 @@ def gyExchange (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : Matrix ι �
       (if IsTransitionChange (nuc i) (nuc j) then κ else 1) * (if aa i = aa j then 1 else ω)
     else 0
 
-/-- The Goldman–Yang exchangeabilities are symmetric. -/
+/-- **Symmetry of Goldman–Yang exchangeabilities.** The Goldman–Yang exchangeabilities are symmetric. -/
 theorem gyExchange_symm (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) (i j : ι) :
     gyExchange nuc aa κ ω i j = gyExchange nuc aa κ ω j i := by
   simp only [gyExchange, Matrix.of_apply, isSingleChange_comm (nuc i),
     isTransitionChange_comm (nuc i), eq_comm (a := aa i)]
 
-/-- The nonsynonymous exchangeabilities are linear in `ω`, the synonymous ones do not
+/-- **Dependence of Goldman–Yang exchangeabilities on ω.** The nonsynonymous exchangeabilities are linear in `ω`, the synonymous ones do not
 involve it. -/
 theorem gyExchange_eq (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) (i j : ι) :
     gyExchange nuc aa κ ω i j =
@@ -134,49 +134,49 @@ theorem gyExchange_eq (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) (i j :
 
 variable [Fintype ι] [DecidableEq ι]
 
-/-- The **Goldman–Yang rate matrix** (Goldman & Yang 1994): the GTR matrix with codon
+/-- **Goldman–Yang codon rate matrix.** The **Goldman–Yang rate matrix** (Goldman & Yang 1994): the GTR matrix with codon
 frequencies `π` and exchangeabilities `gyExchange`. -/
 def gyRate (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : Matrix ι ι ℝ :=
   gtrRate π (gyExchange nuc aa κ ω)
 
-/-- The stationary **rate of synonymous substitutions** per codon,
+/-- **Stationary rate of synonymous substitutions.** The stationary **rate of synonymous substitutions** per codon,
 `ρ_S = ∑_{i ≠ j, aa i = aa j} π_i Q_ij`. This is the stationary rate when
 `∑ i, π i = 1`; for unnormalized weights it is scaled by `(∑ i, π i) ^ 2`. -/
 def synRate (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : ℝ :=
   ∑ i, ∑ j ∈ univ.filter fun j => j ≠ i ∧ aa j = aa i, π i * gyRate π nuc aa κ ω i j
 
-/-- The stationary **rate of nonsynonymous substitutions** per codon,
+/-- **Stationary rate of nonsynonymous substitutions.** The stationary **rate of nonsynonymous substitutions** per codon,
 `ρ_N = ∑_{aa i ≠ aa j} π_i Q_ij`. This is the stationary rate when
 `∑ i, π i = 1`; for unnormalized weights it is scaled by `(∑ i, π i) ^ 2`. -/
 def nonsynRate (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : ℝ :=
   ∑ i, ∑ j ∈ univ.filter fun j => aa j ≠ aa i, π i * gyRate π nuc aa κ ω i j
 
-/-- The number of **synonymous sites** per codon, counted under `ω = 1`:
+/-- **Number of synonymous sites per codon.** The number of **synonymous sites** per codon, counted under `ω = 1`:
 `S = 3 ρ_S(1) / (ρ_S(1) + ρ_N(1))`. -/
 def synSites (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ : ℝ) : ℝ :=
   3 * synRate π nuc aa κ 1 / (synRate π nuc aa κ 1 + nonsynRate π nuc aa κ 1)
 
-/-- The number of **nonsynonymous sites** per codon, counted under `ω = 1`:
+/-- **Number of nonsynonymous sites per codon.** The number of **nonsynonymous sites** per codon, counted under `ω = 1`:
 `N = 3 ρ_N(1) / (ρ_S(1) + ρ_N(1))`. -/
 def nonsynSites (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ : ℝ) : ℝ :=
   3 * nonsynRate π nuc aa κ 1 / (synRate π nuc aa κ 1 + nonsynRate π nuc aa κ 1)
 
-/-- The synonymous rate per synonymous site, `dS = ρ_S(ω) / S`. -/
+/-- **Synonymous substitution rate per synonymous site (dS).** The synonymous rate per synonymous site, `dS = ρ_S(ω) / S`. -/
 def dS (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : ℝ :=
   synRate π nuc aa κ ω / synSites π nuc aa κ
 
-/-- The nonsynonymous rate per nonsynonymous site, `dN = ρ_N(ω) / N`. -/
+/-- **Nonsynonymous substitution rate per nonsynonymous site (dN).** The nonsynonymous rate per nonsynonymous site, `dN = ρ_N(ω) / N`. -/
 def dN (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ) : ℝ :=
   nonsynRate π nuc aa κ ω / nonsynSites π nuc aa κ
 
 variable (π : ι → ℝ) (nuc : ι → Codon) (aa : ι → α) (κ ω : ℝ)
 
-/-- Off the diagonal the Goldman–Yang rate is `gyExchange i j * π j`. -/
+/-- **Off-diagonal entries of the Goldman–Yang rate matrix.** Off the diagonal the Goldman–Yang rate is `gyExchange i j * π j`. -/
 theorem gyRate_of_ne {i j : ι} (h : i ≠ j) :
     gyRate π nuc aa κ ω i j = gyExchange nuc aa κ ω i j * π j := by
   simp [gyRate, gtrRate, h]
 
-/-- With nonnegative frequencies, `κ ≥ 0` and `ω ≥ 0`, the Goldman–Yang matrix is a rate
+/-- **Goldman–Yang matrix is a rate matrix.** With nonnegative frequencies, `κ ≥ 0` and `ω ≥ 0`, the Goldman–Yang matrix is a rate
 matrix. -/
 theorem isRateMatrix_gyRate {π : ι → ℝ} (hπ : ∀ i, 0 ≤ π i) {κ ω : ℝ} (hκ : 0 ≤ κ)
     (hω : 0 ≤ ω) : IsRateMatrix (gyRate π nuc aa κ ω) := by
@@ -189,7 +189,7 @@ frequencies. -/
 theorem isDetailedBalance_gyRate : IsDetailedBalance π (gyRate π nuc aa κ ω) :=
   isDetailedBalance_gtrRate π (gyExchange_symm nuc aa κ ω)
 
-/-- The synonymous rate does not depend on `ω`: `ρ_S(ω) = ρ_S(1)`. -/
+/-- **Synonymous rate does not depend on ω.** The synonymous rate does not depend on `ω`: `ρ_S(ω) = ρ_S(1)`. -/
 theorem synRate_eq : synRate π nuc aa κ ω = synRate π nuc aa κ 1 := by
   refine sum_congr rfl fun i _ => sum_congr rfl fun j hj => ?_
   obtain ⟨hji, haa⟩ := (mem_filter.mp hj).2
@@ -197,7 +197,7 @@ theorem synRate_eq : synRate π nuc aa κ ω = synRate π nuc aa κ 1 := by
     gyExchange_eq]
   simp only [haa.symm, ↓reduceIte, one_mul]
 
-/-- The nonsynonymous rate is linear in `ω`: `ρ_N(ω) = ω ρ_N(1)`. -/
+/-- **Nonsynonymous rate is linear in ω.** The nonsynonymous rate is linear in `ω`: `ρ_N(ω) = ω ρ_N(1)`. -/
 theorem nonsynRate_eq : nonsynRate π nuc aa κ ω = ω * nonsynRate π nuc aa κ 1 := by
   rw [nonsynRate, nonsynRate, mul_sum]
   refine sum_congr rfl fun i _ => ?_
@@ -209,7 +209,7 @@ theorem nonsynRate_eq : nonsynRate π nuc aa κ ω = ω * nonsynRate π nuc aa �
   simp only [Ne.symm haa, ↓reduceIte]
   ring
 
-/-- There are three sites per codon: `S + N = 3` when `ρ_S(1) + ρ_N(1) ≠ 0`. -/
+/-- **Synonymous and nonsynonymous sites sum to three.** There are three sites per codon: `S + N = 3` when `ρ_S(1) + ρ_N(1) ≠ 0`. -/
 theorem synSites_add_nonsynSites (h : synRate π nuc aa κ 1 + nonsynRate π nuc aa κ 1 ≠ 0) :
     synSites π nuc aa κ + nonsynSites π nuc aa κ = 3 := by
   unfold synSites nonsynSites
@@ -224,7 +224,7 @@ theorem dN_div_dS (hS : 0 < synRate π nuc aa κ 1) (hN : 0 < nonsynRate π nuc 
   have hsum : 0 < synRate π nuc aa κ 1 + nonsynRate π nuc aa κ 1 := add_pos hS hN
   field_simp
 
-/-- `ρ_S(1) > 0` if the frequencies are nonnegative, `κ > 0`, and some synonymous single
+/-- **Positivity of the synonymous rate.** `ρ_S(1) > 0` if the frequencies are nonnegative, `κ > 0`, and some synonymous single
 change joins two codons of positive frequency. -/
 theorem synRate_pos_of_mem {π : ι → ℝ} (hπ : ∀ i, 0 ≤ π i) {κ : ℝ} (hκ : 0 < κ) {i j : ι}
     (hij : i ≠ j) (haa : aa i = aa j) (hs : IsSingleChange (nuc i) (nuc j)) (hi : 0 < π i)
@@ -245,7 +245,7 @@ theorem synRate_pos_of_mem {π : ι → ℝ} (hπ : ∀ i, 0 ≤ π i) {κ : ℝ
   exact sum_pos' (fun j' hj' => hterm i j' (Ne.symm (mem_filter.mp hj').2.1))
     ⟨j, mem_filter.mpr ⟨mem_univ j, Ne.symm hij, haa.symm⟩, hij'⟩
 
-/-- `ρ_N(1) > 0` if the frequencies are nonnegative, `κ > 0`, and some nonsynonymous single
+/-- **Positivity of the nonsynonymous rate.** `ρ_N(1) > 0` if the frequencies are nonnegative, `κ > 0`, and some nonsynonymous single
 change joins two codons of positive frequency. -/
 theorem nonsynRate_pos_of_mem {π : ι → ℝ} (hπ : ∀ i, 0 ≤ π i) {κ : ℝ} (hκ : 0 < κ) {i j : ι}
     (haa : aa i ≠ aa j) (hs : IsSingleChange (nuc i) (nuc j)) (hi : 0 < π i)

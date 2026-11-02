@@ -54,12 +54,12 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- The Peierls series `∑_ℓ ℓ 4^ℓ (1 - p)^ℓ` bounding the probability of a closed dual circuit
+/-- **Peierls series bounding closed dual circuits.** The Peierls series `∑_ℓ ℓ 4^ℓ (1 - p)^ℓ` bounding the probability of a closed dual circuit
 around the origin. -/
 noncomputable def pcUpperBound (p : ℝ) : ℝ :=
   ∑' ℓ : ℕ, (ℓ : ℝ) * (4 : ℝ) ^ ℓ * (1 - p) ^ ℓ
 
-/-- The ratio `4(1 - p)` of the geometric part of `pcUpperBound`. -/
+/-- **Geometric ratio of the Peierls series.** The ratio `4(1 - p)` of the geometric part of `pcUpperBound`. -/
 noncomputable def pcRatio (p : ℝ) : ℝ := 4 * (1 - p)
 
 @[simp] lemma pcRatio_def (p : ℝ) : pcRatio p = 4 * (1 - p) := rfl
@@ -139,7 +139,7 @@ lemma pcContour_card_le_summand {p : ℝ} (hp : p ≤ 1) (B : Finset (Site 2)) (
     positivity
   exact mul_le_mul_of_nonneg_right (pcContour_card_le B ℓ hB) hpow
 
-/-- The Peierls contour bound `1 - θ_2(p) ≤ pcUpperBound p` at density `p`. -/
+/-- **Peierls contour bound on the percolation probability.** The Peierls contour bound `1 - θ_2(p) ≤ pcUpperBound p` at density `p`. -/
 def PcContourBound (p : ℝ≥0) (hp : p ≤ 1) : Prop :=
   1 - theta 2 p hp ≤ pcUpperBound (p : ℝ)
 
@@ -156,7 +156,7 @@ theorem not_mem_subcriticalSet_of_theta_pos {p : ℝ≥0} (hp : p ≤ 1)
   rw [show hp' = hp from rfl] at hzero
   exact (ne_of_gt hθ) hzero
 
-/-- `p_c(2) < 1`, assuming the Peierls contour bound `PcContourBound` for all `p` above some
+/-- **$p_c(2) < 1$ from the Peierls contour bound.** `p_c(2) < 1`, assuming the Peierls contour bound `PcContourBound` for all `p` above some
 `p₀ < 1`. -/
 theorem pc_lt_one
     (hGeom : ∃ p₀ : ℝ, p₀ < 1 ∧

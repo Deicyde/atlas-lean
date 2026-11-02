@@ -58,7 +58,7 @@ universe u
 
 variable {α : Type u}
 
-/-- The number of gap columns of an alignment: columns with exactly one letter. -/
+/-- **Number of gap columns of an alignment.** The number of gap columns of an alignment: columns with exactly one letter. -/
 def gapColumns : Alignment α → ℕ
   | [] => 0
   | (some _, some _) :: A => gapColumns A
@@ -66,7 +66,7 @@ def gapColumns : Alignment α → ℕ
   | (none, some _) :: A => gapColumns A + 1
   | (none, none) :: A => gapColumns A
 
-/-- Along every prefix, the offset difference is at most the starting difference plus the number
+/-- **An alignment with few gap columns stays in the band from its start.** Along every prefix, the offset difference is at most the starting difference plus the number
 of gap columns: an alignment starting at `(i, j)` stays in the band of width `w` as soon as
 `|i - j| + gapColumns A ≤ w`. -/
 theorem bandedFrom_of_abs_add_gapColumns_le (w : ℕ) :
@@ -109,12 +109,12 @@ theorem bandedFrom_of_abs_add_gapColumns_le (w : ℕ) :
       refine ⟨by have := (gapColumns A).cast_nonneg (α := ℤ); linarith, ?_⟩
       exact bandedFrom_of_abs_add_gapColumns_le w A i j h
 
-/-- An alignment with at most `w` gap columns is `w`-banded. -/
+/-- **An alignment with at most w gap columns is w-banded.** An alignment with at most `w` gap columns is `w`-banded. -/
 theorem isBanded_of_gapColumns_le {w : ℕ} {A : Alignment α} (h : gapColumns A ≤ w) :
     IsBanded w A :=
   bandedFrom_of_abs_add_gapColumns_le w A 0 0 (by simpa using h)
 
-/-- With nonpositive substitution scores and gap score at most `-1`, an alignment scores at most
+/-- **Alignment score is at most minus the number of gap columns.** With nonpositive substitution scores and gap score at most `-1`, an alignment scores at most
 minus its number of gap columns. -/
 theorem alignmentScore_le_neg_gapColumns {σ : α → α → ℤ} {gap : ℤ}
     (hσ : ∀ a b, σ a b ≤ 0) (hgap : gap ≤ -1) :

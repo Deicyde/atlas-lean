@@ -28,7 +28,7 @@ open Topology
 namespace MathlibExt.Topology.Continuum.PeanoCurveWanted
 
 /--
-There exists a continuous surjection from the closed unit interval to its square.
+**Peano's space-filling curve.** There exists a continuous surjection from the closed unit interval to its square.
 Source: G. Peano, "Sur une courbe, qui remplit toute une aire plane",
 Mathematische Annalen 36 (1890), 157-160.
 

@@ -33,7 +33,7 @@ namespace HahnSeries
 variable {Γ R A : Type*} [AddCommMonoid Γ] [PartialOrder Γ]
   [IsOrderedCancelAddMonoid Γ] [CommRing R] [CommRing A] [Algebra R A]
 
-/-- Apply a coefficient derivation to a Hahn series as an `R`-linear operator. -/
+/-- **Coefficientwise linear operator on Hahn series.** Apply a coefficient derivation to a Hahn series as an `R`-linear operator. -/
 noncomputable def coefficientLinearMap (d : Derivation R A A) :
     HahnSeries Γ A →ₗ[R] HahnSeries Γ A where
   toFun f := f.map d
@@ -45,18 +45,18 @@ noncomputable def coefficientLinearMap (d : Derivation R A A) :
     simp
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- The coefficient formula for the linear operator underlying the lifted derivation. -/
+/-- **Coefficient formula for the coefficientwise linear operator.** The coefficient formula for the linear operator underlying the lifted derivation. -/
 @[simp] theorem coeff_coefficientLinearMap (d : Derivation R A A)
     (f : HahnSeries Γ A) (y : Γ) :
     (coefficientLinearMap d f).coeff y = d (f.coeff y) := rfl
 
 omit [AddCommMonoid Γ] [IsOrderedCancelAddMonoid Γ] in
-/-- Acting on coefficients cannot introduce new exponents into the support. -/
+/-- **Coefficientwise linear operator does not enlarge the support.** Acting on coefficients cannot introduce new exponents into the support. -/
 theorem support_coefficientLinearMap (d : Derivation R A A)
     (f : HahnSeries Γ A) : (coefficientLinearMap d f).support ⊆ f.support :=
   support_map_subset f ⟨d, map_zero d⟩
 
-/-- Extend a derivation of the coefficient algebra by applying it to each coefficient. -/
+/-- **Coefficientwise derivation of Hahn series.** Extend a derivation of the coefficient algebra by applying it to each coefficient. -/
 noncomputable def coefficientDerivation (d : Derivation R A A) :
     Derivation R (HahnSeries Γ A) (HahnSeries Γ A) :=
   Derivation.mk' (coefficientLinearMap d) fun f g => by
@@ -69,18 +69,18 @@ noncomputable def coefficientDerivation (d : Derivation R A A) :
     rw [Derivation.leibniz, smul_eq_mul, smul_eq_mul, coeff_coefficientLinearMap,
       coeff_coefficientLinearMap, mul_comm (g.coeff p.2)]
 
-/-- The coefficient of the lifted derivation is the derivative of that coefficient. -/
+/-- **Coefficients of the coefficientwise derivation.** The coefficient of the lifted derivation is the derivative of that coefficient. -/
 @[simp] theorem coeff_coefficientDerivation (d : Derivation R A A)
     (f : HahnSeries Γ A) (y : Γ) :
     (coefficientDerivation d f).coeff y = d (f.coeff y) := rfl
 
-/-- The lift of the zero derivation is zero. -/
+/-- **Coefficientwise lift of the zero derivation.** The lift of the zero derivation is zero. -/
 @[simp] theorem coefficientDerivation_zero :
     coefficientDerivation (Γ := Γ) (0 : Derivation R A A) = 0 := by
   ext f y
   simp
 
-/-- A one-term series keeps its exponent and differentiates its coefficient. -/
+/-- **Coefficientwise derivation of a single-term series.** A one-term series keeps its exponent and differentiates its coefficient. -/
 @[simp] theorem coefficientDerivation_single (d : Derivation R A A) (y : Γ) (a : A) :
     coefficientDerivation d (single y a) = single y (d a) := by
   ext z
@@ -89,12 +89,12 @@ noncomputable def coefficientDerivation (d : Derivation R A A) :
   · rw [h, coeff_single_same, coeff_single_same]
   · rw [coeff_single_of_ne h, coeff_single_of_ne h, map_zero]
 
-/-- On a constant series, the lift acts on its constant coefficient. -/
+/-- **Coefficientwise derivation of a constant series.** On a constant series, the lift acts on its constant coefficient. -/
 @[simp] theorem coefficientDerivation_C (d : Derivation R A A) (a : A) :
     coefficientDerivation (Γ := Γ) d (HahnSeries.C a) = HahnSeries.C (d a) :=
   coefficientDerivation_single d 0 a
 
-/-- Commuting coefficient derivations lift to commuting derivations of Hahn series. -/
+/-- **Commuting derivations lift to commuting coefficientwise derivations.** Commuting coefficient derivations lift to commuting derivations of Hahn series. -/
 theorem coefficientDerivation_commute {d d' : Derivation R A A}
     (h : Function.Commute d d') :
     Function.Commute (coefficientDerivation (Γ := Γ) d) (coefficientDerivation d') := by

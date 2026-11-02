@@ -63,10 +63,10 @@ open scoped NNReal Nat
 
 namespace MathlibExt.Biology.StatisticalGenetics.GeneConstraint
 
-/-- The Poisson likelihood `e^{-μ} μ^o / (o!)` of an observed count `o` at mean `μ`. -/
+/-- **Poisson likelihood of an observed count.** The Poisson likelihood `e^{-μ} μ^o / (o!)` of an observed count `o` at mean `μ`. -/
 noncomputable def poissonLik (μ : ℝ) (o : ℕ) : ℝ := exp (-μ) * μ ^ o / (o ! : ℝ)
 
-/-- The likelihood is positive at a positive mean. -/
+/-- **Positivity of the Poisson likelihood.** The likelihood is positive at a positive mean. -/
 theorem poissonLik_pos {μ : ℝ} (hμ : 0 < μ) (o : ℕ) : 0 < poissonLik μ o := by
   unfold poissonLik; positivity
 
@@ -85,7 +85,7 @@ theorem flatPosterior_density (E : ℝ) {γ : ℝ} (hγ : 0 ≤ γ) (o : ℕ) :
   rw [mul_pow, pow_succ, mul_comm γ E]
   ring
 
-/-- The upper confidence bound for the observed/expected ratio at level `α`:
+/-- **Upper confidence bound for the observed/expected ratio.** The upper confidence bound for the observed/expected ratio at level `α`:
 `u_α(o) / E`, with `u_α` Garwood's bound for the Poisson mean. -/
 noncomputable def oeUpper (α E : ℝ) (o : ℕ) : ℝ := garwoodUpper α o / E
 
@@ -114,7 +114,7 @@ theorem oeUpper_coverage {α E : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (hE : 0 < 
     rfl
   rwa [hset]
 
-/-- With no observed variants the bound is `log (1 / α) / E`. -/
+/-- **Observed/expected upper bound with no observed variants.** With no observed variants the bound is `log (1 / α) / E`. -/
 theorem oeUpper_zero {α E : ℝ} (hα0 : 0 < α) (hα1 : α < 1) :
     oeUpper α E 0 = log (1 / α) / E := by
   rw [oeUpper, garwoodUpper_zero hα0 hα1]
@@ -124,12 +124,12 @@ theorem loeuf_zero (E : ℝ) : loeuf E 0 = log 20 / E := by
   rw [loeuf, oeUpper_zero (by norm_num) (by norm_num)]
   norm_num
 
-/-- The bound is strictly increasing in the observed count. -/
+/-- **Observed/expected upper bound increases with the observed count.** The bound is strictly increasing in the observed count. -/
 theorem oeUpper_strictMono {α E : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (hE : 0 < E) :
     StrictMono (oeUpper α E) := fun _ _ h =>
   div_lt_div_of_pos_right (garwoodUpper_strictMono hα0 hα1 h) hE
 
-/-- The bound is strictly decreasing in the expected count `E > 0`. -/
+/-- **Observed/expected upper bound decreases with the expected count.** The bound is strictly decreasing in the expected count `E > 0`. -/
 theorem oeUpper_strictAntiOn {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (o : ℕ) :
     StrictAntiOn (fun E => oeUpper α E o) (Ioi 0) := fun _ ha _ _ h =>
   div_lt_div_of_pos_left (garwoodUpper_pos hα0 hα1 o) ha h
@@ -138,14 +138,14 @@ theorem oeUpper_strictAntiOn {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (o : ℕ
 
 variable {ι : Type*} [Fintype ι]
 
-/-- The posterior probability of class `c` for a gene with `o` observed and `E` expected LoF
+/-- **Posterior class probability in the Poisson mixture.** The posterior probability of class `c` for a gene with `o` observed and `E` expected LoF
 variants, in the Poisson mixture with prior weights `w` and class rates `rate`:
 `w_c P(o | rate_c E) / ∑_{c'} w_{c'} P(o | rate_{c'} E)`. pLI is this at the class with the smallest
 rate. -/
 noncomputable def classPosterior (w rate : ι → ℝ) (E : ℝ) (o : ℕ) (c : ι) : ℝ :=
   w c * poissonLik (rate c * E) o / ∑ c', w c' * poissonLik (rate c' * E) o
 
-/-- The class posteriors sum to one. -/
+/-- **Class posteriors sum to one.** The class posteriors sum to one. -/
 theorem sum_classPosterior {w rate : ι → ℝ} {E : ℝ} (hw : ∀ c, 0 < w c) (hrate : ∀ c, 0 < rate c)
     (hE : 0 < E) [Nonempty ι] (o : ℕ) : ∑ c, classPosterior w rate E o c = 1 := by
   have hpos : 0 < ∑ c', w c' * poissonLik (rate c' * E) o := Finset.sum_pos
@@ -153,7 +153,7 @@ theorem sum_classPosterior {w rate : ι → ℝ} {E : ℝ} (hw : ∀ c, 0 < w c)
   unfold classPosterior
   rw [← Finset.sum_div, div_self hpos.ne']
 
-/-- The likelihood recursion `P(o + 1 | μ) = P(o | μ) μ / (o + 1)`. -/
+/-- **Recursion for the Poisson likelihood.** The likelihood recursion `P(o + 1 | μ) = P(o | μ) μ / (o + 1)`. -/
 theorem poissonLik_succ (μ : ℝ) (o : ℕ) :
     poissonLik μ (o + 1) = poissonLik μ o * μ / (o + 1) := by
   unfold poissonLik
@@ -226,7 +226,7 @@ theorem classPosterior_antitone {w rate : ι → ℝ} {E : ℝ} (hw : ∀ c, 0 <
   antitone_nat_of_succ_le fun o =>
     (classPosterior_succ_le hw hrate hE hmin o).1
 
-/-- Strictly antitone when some class has a strictly larger rate. -/
+/-- **Class posterior is strictly antitone in the observed count.** Strictly antitone when some class has a strictly larger rate. -/
 theorem classPosterior_strictAnti {w rate : ι → ℝ} {E : ℝ} (hw : ∀ c, 0 < w c)
     (hrate : ∀ c, 0 < rate c) (hE : 0 < E) {c₀ : ι} (hmin : ∀ c, rate c₀ ≤ rate c)
     (hlt : ∃ c, rate c₀ < rate c) : StrictAnti fun o => classPosterior w rate E o c₀ :=

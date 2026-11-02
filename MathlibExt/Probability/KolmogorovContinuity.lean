@@ -92,7 +92,7 @@ open scoped ENNReal NNReal
 
 namespace MathlibExt.Probability.KolmogorovContinuity
 
-/-- The set of **dyadic rationals**: real numbers of the form `k / 2 ^ n`
+/-- **Dyadic rationals.** The set of **dyadic rationals**: real numbers of the form `k / 2 ^ n`
 for some integer `k` and natural number `n`. -/
 def dyadicRationals : Set ℝ :=
   {x : ℝ | ∃ k : ℤ, ∃ n : ℕ, x = k / (2 : ℝ) ^ n}
@@ -738,7 +738,7 @@ private lemma goodSet_ae {μ : Measure Ω} [IsProbabilityMeasure μ]
 
 /-! ### Main theorem -/
 
-/-- A single full-measure set carries a Hölder bound for the original process
+/-- **Almost sure Hölder bound on the dyadic rationals.** A single full-measure set carries a Hölder bound for the original process
 on the dyadic rationals of `[0, 1]`. The moment-integrability correction in
 the module docstring is required for this Bochner formulation. -/
 theorem kolmogorov_ae_holder_on_dyadics {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω}
@@ -919,7 +919,7 @@ private theorem kolmogorov_integral_moment_le {Ω : Type*} [MeasurableSpace Ω] 
     (Real.rpow_nonneg (abs_nonneg _) _))).mp hle
 
 
-/-- The canonical Kolmogorov-process condition implies a common a.e. Hölder
+/-- **Hölder bound on dyadics for a Kolmogorov process.** The canonical Kolmogorov-process condition implies a common a.e. Hölder
 bound for `X` on the dyadics of `[0, 1]`. Its measurable-pair and finite
 lintegral fields supply the Bochner hypotheses internally, including when
 `M = 0`. No claim is made about the raw paths at every real time. -/

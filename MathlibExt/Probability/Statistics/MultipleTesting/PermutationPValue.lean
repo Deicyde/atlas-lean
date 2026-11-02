@@ -51,13 +51,13 @@ open MeasureTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] (G : Type*) [Group G] [Fintype G] [MulAction G Ω]
 
-/-- The permutation (group-invariance) p-value of the statistic `T` at `ω`: the fraction of
+/-- **Permutation p-value.** The permutation (group-invariance) p-value of the statistic `T` at `ω`: the fraction of
 group elements `g` with `T (g • ω) ≥ T ω`. -/
 noncomputable def permutationPValue (T : Ω → ℝ) (ω : Ω) : ℝ :=
   ((Finset.univ.filter fun g : G => T ω ≤ T (g • ω)).card : ℝ) / Fintype.card G
 
 omit [Group G] in
-/-- Counting lemma: for any family of reals `t` indexed by `G` and any `k`, at most `k`
+/-- **Counting lemma for rank counts.** Counting lemma: for any family of reals `t` indexed by `G` and any `k`, at most `k`
 elements `h` have rank count `#{g | t h ≤ t g}` at most `k`. -/
 theorem card_filter_rankCount_le (t : G → ℝ) (k : ℕ) :
     (Finset.univ.filter fun h : G =>
@@ -95,7 +95,7 @@ private theorem measurable_permutationPValue (hsmul : ∀ g : G, Measurable fun 
   refine Measurable.div_const (Finset.measurable_sum _ fun g _ => ?_) _
   exact measurable_const.indicator (measurableSet_le hT (hT.comp (hsmul g)))
 
-/-- Lehmann and Romano (2005), §15.2; Hemerik and Goeman (2018): if the law `μ` is invariant
+/-- **Validity of permutation p-values.** Lehmann and Romano (2005), §15.2; Hemerik and Goeman (2018): if the law `μ` is invariant
 under the action of a finite group `G`, the permutation p-value of any measurable statistic is
 valid. -/
 theorem isValidPValue_permutationPValue (μ : Measure Ω) [IsProbabilityMeasure μ]

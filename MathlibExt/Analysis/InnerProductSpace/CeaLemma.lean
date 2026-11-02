@@ -54,7 +54,7 @@ private theorem le_norm_self_real (a : ℝ) : a ≤ ‖a‖ := by
   rw [Real.norm_eq_abs]
   exact le_abs_self a
 
-/-- Restriction of a bounded bilinear form to a submodule. -/
+/-- **Restriction of a bilinear form to a subspace.** Restriction of a bounded bilinear form to a submodule. -/
 noncomputable def restrictBilin (B : V →L[ℝ] V →L[ℝ] ℝ) (W : Submodule ℝ V) :
     W →L[ℝ] W →L[ℝ] ℝ where
   toFun x := (B x).comp W.subtypeL
@@ -71,20 +71,20 @@ noncomputable def restrictBilin (B : V →L[ℝ] V →L[ℝ] ℝ) (W : Submodule
 theorem restrictBilin_apply (B : V →L[ℝ] V →L[ℝ] ℝ) (W : Submodule ℝ V)
     (x y : W) : restrictBilin B W x y = B (x : V) (y : V) := rfl
 
-/-- Coercivity is inherited by restriction to a submodule. -/
+/-- **Coercivity passes to restrictions to subspaces.** Coercivity is inherited by restriction to a submodule. -/
 theorem isCoercive_restrictBilin {B : V →L[ℝ] V →L[ℝ] ℝ} {W : Submodule ℝ V}
     (hB : IsCoercive B) : IsCoercive (restrictBilin B W) := by
   obtain ⟨C, hC, hco⟩ := hB
   exact ⟨C, hC, fun x => by simpa [restrictBilin_apply] using hco (x : V)⟩
 
-/-- The solution of the variational problem `B u w = L w` for all `w`,
+/-- **Solution of a coercive variational problem.** The solution of the variational problem `B u w = L w` for all `w`,
 obtained from the Lax–Milgram equivalence and the Riesz representation. -/
 noncomputable def variationalSolution {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [CompleteSpace E] {B : E →L[ℝ] E →L[ℝ] ℝ}
     (hB : IsCoercive B) (L : E →L[ℝ] ℝ) : E :=
   hB.continuousLinearEquivOfBilin.symm ((InnerProductSpace.toDual ℝ E).symm L)
 
-/-- The variational solution satisfies the variational equation. -/
+/-- **Variational solution satisfies the variational equation.** The variational solution satisfies the variational equation. -/
 theorem variationalSolution_spec {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [CompleteSpace E] {B : E →L[ℝ] E →L[ℝ] ℝ}
     (hB : IsCoercive B) (L : E →L[ℝ] ℝ) (w : E) :
@@ -99,7 +99,7 @@ theorem variationalSolution_spec {E : Type*} [NormedAddCommGroup E]
   rw [← h2]
   exact InnerProductSpace.toDual_symm_apply
 
-/-- Uniqueness for the variational problem: two vectors satisfying the same
+/-- **Uniqueness for coercive variational problems.** Uniqueness for the variational problem: two vectors satisfying the same
 variational equation agree, by coercivity. -/
 theorem eq_of_forall_bilin {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] {B : E →L[ℝ] E →L[ℝ] ℝ}
@@ -127,7 +127,7 @@ theorem eq_of_forall_bilin {E : Type*} [NormedAddCommGroup E]
   have hnorm : ‖x - y‖ = 0 := mul_self_eq_zero.mp hzero
   exact sub_eq_zero.mp (norm_eq_zero.mp hnorm)
 
-/-- The variational solution is the unique solution of the variational
+/-- **Variational solution is the unique solution.** The variational solution is the unique solution of the variational
 equation. -/
 theorem variationalSolution_eq_of_forall {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [CompleteSpace E] {B : E →L[ℝ] E →L[ℝ] ℝ}
@@ -135,7 +135,7 @@ theorem variationalSolution_eq_of_forall {E : Type*} [NormedAddCommGroup E]
     (hx : ∀ w, B x w = L w) : x = variationalSolution hB L :=
   eq_of_forall_bilin hB hx (variationalSolution_spec hB L)
 
-/-- Existence for the variational problem, in bare existential form. -/
+/-- **Existence of a variational solution.** Existence for the variational problem, in bare existential form. -/
 theorem exists_variationalSolution {E : Type*} [NormedAddCommGroup E]
     [InnerProductSpace ℝ E] [CompleteSpace E] {B : E →L[ℝ] E →L[ℝ] ℝ}
     (hB : IsCoercive B) (L : E →L[ℝ] ℝ) : ∃ u, ∀ w, B u w = L w :=
@@ -159,14 +159,14 @@ private theorem norm_le_div_of_sq_le {E : Type*} [NormedAddCommGroup E]
     calc ‖x‖ * α = α * ‖x‖ := mul_comm _ _
       _ ≤ M := h1
 
-/-- The Galerkin solution in `W`: the solution of the variational problem
+/-- **Galerkin solution.** The Galerkin solution in `W`: the solution of the variational problem
 for the restricted form and the restricted functional. -/
 noncomputable def galerkinSolution {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) (L : V →L[ℝ] ℝ) : W :=
   @variationalSolution W _ _ hW.completeSpace_coe _
     (isCoercive_restrictBilin hB) (L.comp W.subtypeL)
 
-/-- The Galerkin solution satisfies the Galerkin equations. -/
+/-- **Galerkin solution satisfies the Galerkin equations.** The Galerkin solution satisfies the Galerkin equations. -/
 theorem galerkinSolution_spec {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) (L : V →L[ℝ] ℝ) (w : W) :
     B (galerkinSolution hB hW L : V) (w : V) = L (w : V) := by
@@ -174,7 +174,7 @@ theorem galerkinSolution_spec {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive
     (isCoercive_restrictBilin (B := B) (W := W) hB) (L.comp W.subtypeL) w
   simpa [galerkinSolution, restrictBilin_apply] using h
 
-/-- The Galerkin solution is the unique element of `W` satisfying the
+/-- **Galerkin solution is the unique solution of the Galerkin equations.** The Galerkin solution is the unique element of `W` satisfying the
 Galerkin equations. -/
 theorem galerkinSolution_eq_of_forall {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) {L : V →L[ℝ] ℝ} {x : W}
@@ -189,7 +189,7 @@ theorem galerkinSolution_eq_of_forall {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : Is
   exact @eq_of_forall_bilin W _ _ _ (isCoercive_restrictBilin hB)
     (L.comp W.subtypeL) _ _ h1 h2
 
-/-- Existence for the Galerkin problem, in bare existential form. -/
+/-- **Existence of a Galerkin solution.** Existence for the Galerkin problem, in bare existential form. -/
 theorem exists_galerkinSolution {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) (L : V →L[ℝ] ℝ) :
     ∃ uh ∈ W, ∀ w ∈ W, B uh w = L w := by
@@ -198,7 +198,7 @@ theorem exists_galerkinSolution {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoerci
 
 variable [CompleteSpace V]
 
-/-- Galerkin orthogonality: the error `u - u_h` is `B`-orthogonal to `W`. -/
+/-- **Galerkin orthogonality.** Galerkin orthogonality: the error `u - u_h` is `B`-orthogonal to `W`. -/
 theorem galerkin_orthogonality {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) (L : V →L[ℝ] ℝ) (w : W) :
     B (variationalSolution hB L - (galerkinSolution hB hW L : V)) (w : V) = 0 := by
@@ -255,7 +255,7 @@ theorem norm_sub_galerkinSolution_le_iInf {B : V →L[ℝ] V →L[ℝ] ℝ} (hB 
   refine le_ciInf fun v => ?_
   exact norm_sub_galerkinSolution_le hB hW L hα hco (v : V) v.2
 
-/-- Stability of the variational solution: `‖u‖ ≤ ‖L‖ / α`. -/
+/-- **Stability bound for the variational solution.** Stability of the variational solution: `‖u‖ ≤ ‖L‖ / α`. -/
 theorem norm_variationalSolution_le {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     (L : V →L[ℝ] ℝ) {α : ℝ} (hα : 0 < α) (hco : ∀ v, α * ‖v‖ * ‖v‖ ≤ B v v) :
     ‖variationalSolution hB L‖ ≤ ‖L‖ / α := by
@@ -269,7 +269,7 @@ theorem norm_variationalSolution_le {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCo
   exact norm_le_div_of_sq_le (M := ‖L‖) hα (norm_nonneg _) hmain
 
 omit [CompleteSpace V] in
-/-- Stability of the Galerkin solution: `‖u_h‖ ≤ ‖L‖ / α`. -/
+/-- **Stability bound for the Galerkin solution.** Stability of the Galerkin solution: `‖u_h‖ ≤ ‖L‖ / α`. -/
 theorem norm_galerkinSolution_le {B : V →L[ℝ] V →L[ℝ] ℝ} (hB : IsCoercive B)
     {W : Submodule ℝ V} (hW : IsComplete (W : Set V)) (L : V →L[ℝ] ℝ)
     {α : ℝ} (hα : 0 < α) (hco : ∀ v, α * ‖v‖ * ‖v‖ ≤ B v v) :

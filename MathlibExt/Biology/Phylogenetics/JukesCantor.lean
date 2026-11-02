@@ -74,40 +74,40 @@ open Real Finset Matrix
 
 namespace MathlibExt.Biology.Phylogenetics.JukesCantor
 
-/-- The Jukes–Cantor transition probability from base `i` to base `j` over a branch of length
+/-- **Jukes–Cantor transition probability.** The Jukes–Cantor transition probability from base `i` to base `j` over a branch of length
 `t`, with substitution rate `μ`. -/
 noncomputable def jcProb (μ t : ℝ) (i j : Fin 4) : ℝ :=
   if i = j then 1 / 4 + 3 / 4 * exp (-4 * μ * t / 3) else 1 / 4 - 1 / 4 * exp (-4 * μ * t / 3)
 
-/-- The Jukes–Cantor rate matrix: rate `μ / 3` to each other base, `-μ` on the diagonal. -/
+/-- **Jukes–Cantor rate matrix.** The Jukes–Cantor rate matrix: rate `μ / 3` to each other base, `-μ` on the diagonal. -/
 noncomputable def jcRate (μ : ℝ) (k j : Fin 4) : ℝ :=
   if k = j then -μ else μ / 3
 
-/-- The probability that the two ends of a branch of length `t` carry different bases, given
+/-- **Probability that the ends of a branch differ.** The probability that the two ends of a branch of length `t` carry different bases, given
 base `i` at the start. -/
 noncomputable def pDiff (μ t : ℝ) (i : Fin 4) : ℝ :=
   ∑ j ∈ univ.erase i, jcProb μ t i j
 
-/-- The Jukes–Cantor distance: the expected number of substitutions per site corresponding to a
+/-- **Jukes–Cantor distance.** The Jukes–Cantor distance: the expected number of substitutions per site corresponding to a
 proportion `p` of differing sites. Meaningful only for `0 ≤ p < 3/4`; outside that range the
 value is Lean's totalized logarithm, not a distance (at `p = 3/4` it is `0`). -/
 noncomputable def jcDistance (p : ℝ) : ℝ :=
   -(3 / 4) * log (1 - 4 / 3 * p)
 
-/-- Off-diagonal Jukes–Cantor rates are nonnegative when `0 ≤ μ`. -/
+/-- **Nonnegativity of off-diagonal Jukes–Cantor rates.** Off-diagonal Jukes–Cantor rates are nonnegative when `0 ≤ μ`. -/
 theorem jcRate_nonneg {μ : ℝ} (hμ : 0 ≤ μ) {k j : Fin 4} (h : k ≠ j) : 0 ≤ jcRate μ k j := by
   simp only [jcRate, h, ite_false]
   positivity
 
-/-- Each row of the Jukes–Cantor rate matrix sums to `0`. -/
+/-- **Rows of the Jukes–Cantor rate matrix sum to zero.** Each row of the Jukes–Cantor rate matrix sums to `0`. -/
 theorem sum_jcRate (μ : ℝ) (k : Fin 4) : ∑ j, jcRate μ k j = 0 := by
   fin_cases k <;> simp [Fin.sum_univ_four, jcRate] <;> ring
 
-/-- Each row of the Jukes–Cantor transition matrix sums to `1`. -/
+/-- **Rows of the Jukes–Cantor transition matrix sum to one.** Each row of the Jukes–Cantor transition matrix sums to `1`. -/
 theorem sum_jcProb (μ t : ℝ) (i : Fin 4) : ∑ j, jcProb μ t i j = 1 := by
   fin_cases i <;> simp [Fin.sum_univ_four, jcProb] <;> ring
 
-/-- The Jukes–Cantor transition probabilities are nonnegative when `0 ≤ μ * t`. -/
+/-- **Nonnegativity of Jukes–Cantor transition probabilities.** The Jukes–Cantor transition probabilities are nonnegative when `0 ≤ μ * t`. -/
 theorem jcProb_nonneg {μ t : ℝ} (h : 0 ≤ μ * t) (i j : Fin 4) : 0 ≤ jcProb μ t i j := by
   have he : exp (-4 * μ * t / 3) ≤ 1 :=
     exp_le_one_iff.mpr (by nlinarith)
@@ -115,7 +115,7 @@ theorem jcProb_nonneg {μ t : ℝ} (h : 0 ≤ μ * t) (i j : Fin 4) : 0 ≤ jcPr
   unfold jcProb
   split_ifs <;> linarith
 
-/-- At time `0` the Jukes–Cantor transition matrix is the identity. -/
+/-- **Jukes–Cantor transition matrix at time zero is the identity.** At time `0` the Jukes–Cantor transition matrix is the identity. -/
 theorem jcProb_zero (μ : ℝ) (i j : Fin 4) : jcProb μ 0 i j = if i = j then 1 else 0 := by
   unfold jcProb
   split_ifs <;> norm_num
@@ -130,7 +130,7 @@ theorem sum_jcProb_mul_jcProb (μ s t : ℝ) (i j : Fin 4) :
   generalize exp (-4 * μ * t / 3) = b
   fin_cases i <;> fin_cases j <;> simp [Fin.sum_univ_four] <;> ring
 
-/-- The right-hand side of the forward equation, in closed form. -/
+/-- **Right-hand side of the Jukes–Cantor forward equation in closed form.** The right-hand side of the forward equation, in closed form. -/
 theorem sum_jcProb_mul_jcRate (μ t : ℝ) (i j : Fin 4) :
     ∑ k, jcProb μ t i k * jcRate μ k j =
       if i = j then -μ * exp (-4 * μ * t / 3) else μ / 3 * exp (-4 * μ * t / 3) := by
@@ -154,7 +154,7 @@ theorem hasDerivAt_jcProb (μ t : ℝ) (i j : Fin 4) :
     convert (hexp.const_mul (1 / 4)).const_sub (1 / 4) using 1
     ring
 
-/-- The probability that the two ends of a branch differ is `3/4 · (1 - exp (-4 μ t / 3))`,
+/-- **Closed form of the Jukes–Cantor difference probability.** The probability that the two ends of a branch differ is `3/4 · (1 - exp (-4 μ t / 3))`,
 whatever the starting base. -/
 theorem pDiff_eq (μ t : ℝ) (i : Fin 4) :
     pDiff μ t i = 3 / 4 * (1 - exp (-4 * μ * t / 3)) := by
@@ -162,7 +162,7 @@ theorem pDiff_eq (μ t : ℝ) (i : Fin 4) :
   simp only [jcProb, ite_true]
   ring
 
-/-- The Jukes–Cantor transition matrix over a branch with `0 ≤ μ * t`, packaged as a
+/-- **Jukes–Cantor transition matrix as a stochastic matrix.** The Jukes–Cantor transition matrix over a branch with `0 ≤ μ * t`, packaged as a
 `StochasticMatrix` on the four states `Fin (3 + 1)` so that the finite Markov-chain API
 (matrix powers, stationarity, detailed balance) applies to it. -/
 noncomputable def jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) : StochasticMatrix 3 where
@@ -170,7 +170,7 @@ noncomputable def jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) : Stochasti
   nonneg := jcProb_nonneg h
   row_sum := sum_jcProb μ t
 
-/-- The `n`-step matrix of the Jukes–Cantor chain observed every `t` time units is the
+/-- **Chapman–Kolmogorov equation for the Jukes–Cantor chain.** The `n`-step matrix of the Jukes–Cantor chain observed every `t` time units is the
 transition matrix over the branch length `n * t` (Chapman–Kolmogorov). -/
 theorem matPow_jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) (n : ℕ) (i j : Fin 4) :
     (jcStochasticMatrix μ t h).matPow n i j = jcProb μ (n * t) i j := by
@@ -184,7 +184,7 @@ theorem matPow_jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) (n : ℕ) (i j
     push_cast
     ring
 
-/-- The uniform distribution satisfies detailed balance with the Jukes–Cantor matrix (the
+/-- **Detailed balance of the Jukes–Cantor chain.** The uniform distribution satisfies detailed balance with the Jukes–Cantor matrix (the
 matrix is symmetric), hence is stationary. -/
 theorem detailedBalance_jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) :
     (jcStochasticMatrix μ t h).DetailedBalance
@@ -196,20 +196,20 @@ theorem detailedBalance_jcStochasticMatrix (μ t : ℝ) (h : 0 ≤ μ * t) :
   · subst hij; rfl
   · simp [hij, Ne.symm hij]
 
-/-- The probability that the ends of a branch differ is nonnegative when `0 ≤ μ * t`. -/
+/-- **Nonnegativity of the Jukes–Cantor difference probability.** The probability that the ends of a branch differ is nonnegative when `0 ≤ μ * t`. -/
 theorem pDiff_nonneg {μ t : ℝ} (h : 0 ≤ μ * t) (i : Fin 4) : 0 ≤ pDiff μ t i := by
   have he : exp (-4 * μ * t / 3) ≤ 1 := exp_le_one_iff.mpr (by nlinarith)
   rw [pDiff_eq]
   nlinarith
 
-/-- The probability that the ends of a branch differ is below the saturation value `3/4`, for
+/-- **Jukes–Cantor difference probability is below 3/4.** The probability that the ends of a branch differ is below the saturation value `3/4`, for
 all real `μ` and `t` (it is negative when `μ * t < 0`, see `pDiff_mem_Ico`). -/
 theorem pDiff_lt_three_quarters (μ t : ℝ) (i : Fin 4) : pDiff μ t i < 3 / 4 := by
   have he := exp_pos (-4 * μ * t / 3)
   rw [pDiff_eq]
   nlinarith
 
-/-- For `0 ≤ μ * t` the probability that the ends of a branch differ lies in `[0, 3/4)`, the
+/-- **Jukes–Cantor difference probability lies in [0, 3/4).** For `0 ≤ μ * t` the probability that the ends of a branch differ lies in `[0, 3/4)`, the
 domain of `jcDistance`. -/
 theorem pDiff_mem_Ico {μ t : ℝ} (h : 0 ≤ μ * t) (i : Fin 4) :
     pDiff μ t i ∈ Set.Ico 0 (3 / 4) :=
@@ -225,16 +225,16 @@ theorem jcDistance_pDiff (μ t : ℝ) (i : Fin 4) : jcDistance (pDiff μ t i) = 
 
 /-! ## The transition matrix as a matrix exponential -/
 
-/-- The Jukes–Cantor rate matrix as a `Matrix`. -/
+/-- **Jukes–Cantor rate matrix as a matrix.** The Jukes–Cantor rate matrix as a `Matrix`. -/
 noncomputable def jcRateMatrix (μ : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
   Matrix.of (jcRate μ)
 
-/-- An eigenbasis of the Jukes–Cantor rate matrix, as columns: the constant vector (eigenvalue
+/-- **Eigenbasis of the Jukes–Cantor rate matrix.** An eigenbasis of the Jukes–Cantor rate matrix, as columns: the constant vector (eigenvalue
 `0`) and three vectors with zero sum (eigenvalue `-4 μ / 3`). -/
 def jcEigenbasis : Matrix (Fin 4) (Fin 4) ℝ :=
   !![1, 1, 1, 1; 1, -1, 0, 0; 1, 0, -1, 0; 1, 0, 0, -1]
 
-/-- The eigenbasis as a unit, with its explicit inverse. -/
+/-- **Invertible Jukes–Cantor eigenbasis.** The eigenbasis as a unit, with its explicit inverse. -/
 noncomputable def jcEigenbasisUnit : (Matrix (Fin 4) (Fin 4) ℝ)ˣ where
   val := jcEigenbasis
   inv := !![1/4, 1/4, 1/4, 1/4; 1/4, -3/4, 1/4, 1/4; 1/4, 1/4, -3/4, 1/4; 1/4, 1/4, 1/4, -3/4]
@@ -245,7 +245,7 @@ noncomputable def jcEigenbasisUnit : (Matrix (Fin 4) (Fin 4) ℝ)ˣ where
     ext i j
     fin_cases i <;> fin_cases j <;> norm_num [jcEigenbasis, mul_apply, Fin.sum_univ_four]
 
-/-- Diagonalization of `t • jcRateMatrix μ`. -/
+/-- **Diagonalization of the Jukes–Cantor rate matrix.** Diagonalization of `t • jcRateMatrix μ`. -/
 theorem smul_jcRateMatrix_eq (μ t : ℝ) :
     t • jcRateMatrix μ =
       (jcEigenbasisUnit : Matrix (Fin 4) (Fin 4) ℝ) *

@@ -34,7 +34,7 @@ open Finset
 
 variable {ρ γ A T : Type*}
 
-/-- Merge every grid row into one vertex of a factored tensor network. The state and label
+/-- **Row network of a grid tensor.** Merge every grid row into one vertex of a factored tensor network. The state and label
 carriers may be infinite; only the supplied alphabets are enumerated. Capacity metadata charges
 `L` per vertical edge and the supplied cut capacity for each active rectangle. -/
 def gridRowNetwork [Fintype ρ] [LinearOrder ρ] [Fintype γ] [LinearOrder γ]
@@ -80,7 +80,7 @@ private theorem sum_eq_and_mem [DecidableEq A] (labels : Finset A) (x y : A) :
     simp
   · simp [hxy]
 
-/-- The interaction between increasing rows is the rectangle-kernel product times vertical
+/-- **Interaction between rows of the grid row network.** The interaction between increasing rows is the rectangle-kernel product times vertical
 equality indicators. For finite alphabets, an equal vertical value contributes only when it is
 in `labels`. -/
 theorem gridRowNetwork_interaction [Fintype ρ] [LinearOrder ρ]
@@ -164,7 +164,7 @@ theorem gridRowNetwork_interaction [Fintype ρ] [LinearOrder ρ]
       exact sum_congr rfl fun _ _ => sum_congr rfl fun _ _ => by ring
     _ = _ := by rw [hvertical, hcut]
 
-/-- When the left state is enumerated by the row network, the alphabet-membership condition is
+/-- **Row interaction for enumerated left states.** When the left state is enumerated by the row network, the alphabet-membership condition is
 automatic, so the interaction recovers the source vertical-equality formula. The right state may
 be arbitrary because equality with an allowed left value already forces its vertical value. -/
 theorem gridRowNetwork_interaction_of_mem [Fintype ρ] [LinearOrder ρ]
@@ -197,7 +197,7 @@ theorem gridRowNetwork_interaction_of_mem [Fintype ρ] [LinearOrder ρ]
   simp [hba] at hmem
   simp [hmem]
 
-/-- If each rectangle kernel is the finite sum of its top and bottom factors, contracting the
+/-- **Grid row network computes the grid value.** If each rectangle kernel is the finite sum of its top and bottom factors, contracting the
 constructed row network gives the canonical finite grid value. -/
 theorem gridRowNetwork_value [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] [DecidableEq A]

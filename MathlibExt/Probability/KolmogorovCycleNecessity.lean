@@ -139,7 +139,7 @@ theorem detailedBalance_isStationary (P : StochasticMatrix M) (π : Distribution
     _ = π.val j * 1 := by rw [P.row_sum j]
     _ = π.val j := mul_one _
 
-/-- Every entry of every power of a stochastic matrix is nonnegative. -/
+/-- **Powers of a stochastic matrix are nonnegative.** Every entry of every power of a stochastic matrix is nonnegative. -/
 lemma matPow_nonneg (P : StochasticMatrix M) : ∀ (n : ℕ) (i j : Fin (M + 1)),
     0 ≤ P.matPow n i j := by
   intro n

@@ -71,14 +71,14 @@ namespace MathlibExt.Biology.Dynamics.FisherKPP
 
 open Real Filter Topology
 
-/-- `U` is a traveling-wave profile of speed `c` for `∂u/∂t = D ∂²u/∂x² + r u (1 - u)`: it is
+/-- **Traveling-wave profile of the Fisher–KPP equation.** `U` is a traveling-wave profile of speed `c` for `∂u/∂t = D ∂²u/∂x² + r u (1 - u)`: it is
 twice differentiable with first derivative `U'` and `U'' = -(c U' + r U (1 - U)) / D`, which for
 `D ≠ 0` is the profile equation `D U'' + c U' + r U (1 - U) = 0`. -/
 def IsWaveProfile (D r c : ℝ) (U U' : ℝ → ℝ) : Prop :=
   ∀ z, HasDerivAt U (U' z) z ∧
     HasDerivAt U' ((-(c * U' z) - r * U z * (1 - U z)) / D) z
 
-/-- A traveling front of speed `c`: a wave profile with `0 < U < 1`, `U → 1` at `-∞` and
+/-- **Traveling front of the Fisher–KPP equation.** A traveling front of speed `c`: a wave profile with `0 < U < 1`, `U → 1` at `-∞` and
 `U → 0` at `+∞`. -/
 def IsFront (D r c : ℝ) (U U' : ℝ → ℝ) : Prop :=
   IsWaveProfile D r c U U' ∧ (∀ z, 0 < U z ∧ U z < 1) ∧ Tendsto U atBot (𝓝 1) ∧
@@ -88,7 +88,7 @@ section PDE
 
 variable {D r c : ℝ} {U U' : ℝ → ℝ}
 
-/-- Time derivative of the wave `u(x, t) = U(x - c t)`: `∂u/∂t = -c U'(x - c t)`. -/
+/-- **Time derivative of a traveling wave.** Time derivative of the wave `u(x, t) = U(x - c t)`: `∂u/∂t = -c U'(x - c t)`. -/
 theorem hasDerivAt_wave_t (h : IsWaveProfile D r c U U') (x t : ℝ) :
     HasDerivAt (fun s => U (x - c * s)) (-c * U' (x - c * t)) t := by
   have hl : HasDerivAt (fun s => x - c * s) (-c) t := by
@@ -98,12 +98,12 @@ theorem hasDerivAt_wave_t (h : IsWaveProfile D r c U U') (x t : ℝ) :
   convert h' using 1
   ring
 
-/-- Space derivative of the wave: `∂u/∂x = U'(x - c t)`. -/
+/-- **Space derivative of a traveling wave.** Space derivative of the wave: `∂u/∂x = U'(x - c t)`. -/
 theorem hasDerivAt_wave_x (h : IsWaveProfile D r c U U') (x t : ℝ) :
     HasDerivAt (fun y => U (y - c * t)) (U' (x - c * t)) x := by
   exact HasDerivAt.comp_sub_const x (c * t) (h (x - c * t)).1
 
-/-- Second space derivative of the wave; with `hD : D ≠ 0` it gives the PDE
+/-- **Traveling wave solves the Fisher–KPP equation.** Second space derivative of the wave; with `hD : D ≠ 0` it gives the PDE
 `-c U' = D U'' + r U (1 - U)`, i.e. `∂u/∂t = D ∂²u/∂x² + r u (1 - u)`. -/
 theorem hasDerivAt_wave_xx (h : IsWaveProfile D r c U U') (hD : D ≠ 0) (x t : ℝ) :
     ∃ U'' : ℝ, HasDerivAt (fun y => U' (y - c * t)) U'' x ∧
@@ -205,21 +205,21 @@ theorem not_eventually_pos_of_sq_lt {D r c : ℝ} {U U' : ℝ → ℝ} (hD : 0 <
   rw [hWZ, hWb] at hWle
   nlinarith [mul_pos hkpos hwZ, mul_pos hkpos hwb]
 
-/-- A front of speed `c` needs `c² ≥ 4 r D`; for `c ≥ 0` this is `c ≥ 2 √(r D)`. -/
+/-- **Minimal speed of Fisher–KPP traveling fronts.** A front of speed `c` needs `c² ≥ 4 r D`; for `c ≥ 0` this is `c ≥ 2 √(r D)`. -/
 theorem not_isFront_of_sq_lt {D r c : ℝ} {U U' : ℝ → ℝ} (hD : 0 < D) (hr : 0 < r)
     (hc : c ^ 2 < 4 * r * D) : ¬ IsFront D r c U U' := fun h =>
   not_eventually_pos_of_sq_lt hD hr hc h.1 h.2.2.2 (Eventually.of_forall fun z => (h.2.1 z).1)
 
-/-- The rate `κ = √(r / (6 D))` of the Ablowitz–Zeppetella wave. -/
+/-- **Rate of the Ablowitz–Zeppetella wave.** The rate `κ = √(r / (6 D))` of the Ablowitz–Zeppetella wave. -/
 noncomputable def azRate (D r : ℝ) : ℝ := √(r / (6 * D))
 
-/-- The Ablowitz–Zeppetella speed `c = 5 √(r D / 6)` (`5 / √6` when `D = r = 1`). -/
+/-- **Speed of the Ablowitz–Zeppetella wave.** The Ablowitz–Zeppetella speed `c = 5 √(r D / 6)` (`5 / √6` when `D = r = 1`). -/
 noncomputable def azSpeed (D r : ℝ) : ℝ := 5 * √(r * D / 6)
 
-/-- The Ablowitz–Zeppetella profile `U(z) = (1 + C exp (κ z))⁻²`. -/
+/-- **Ablowitz–Zeppetella wave profile.** The Ablowitz–Zeppetella profile `U(z) = (1 + C exp (κ z))⁻²`. -/
 noncomputable def azWave (D r C : ℝ) (z : ℝ) : ℝ := (1 + C * exp (azRate D r * z))⁻¹ ^ 2
 
-/-- The derivative of the Ablowitz–Zeppetella profile, `-2 κ C e^{κ z} (1 + C e^{κ z})⁻³`. -/
+/-- **Derivative of the Ablowitz–Zeppetella profile.** The derivative of the Ablowitz–Zeppetella profile, `-2 κ C e^{κ z} (1 + C e^{κ z})⁻³`. -/
 noncomputable def azWaveDeriv (D r C : ℝ) (z : ℝ) : ℝ :=
   -2 * azRate D r * C * exp (azRate D r * z) * (1 + C * exp (azRate D r * z))⁻¹ ^ 3
 
@@ -287,7 +287,7 @@ theorem isFront_azWave {D r C : ℝ} (hD : 0 < D) (hr : 0 < r) (hC : 0 < C) :
         ((tendsto_exp_atTop.comp (tendsto_id.const_mul_atTop hs)).const_mul_atTop hC)
     simpa using (tendsto_inv_atTop_zero.comp h0).pow 2
 
-/-- The Ablowitz–Zeppetella speed exceeds the minimal speed: `2 √(r D) < 5 √(r D / 6)`. -/
+/-- **Ablowitz–Zeppetella speed exceeds the minimal front speed.** The Ablowitz–Zeppetella speed exceeds the minimal speed: `2 √(r D) < 5 √(r D / 6)`. -/
 theorem two_mul_sqrt_lt_azSpeed {D r : ℝ} (hD : 0 < D) (hr : 0 < r) :
     2 * √(r * D) < azSpeed D r := by
   have h1 := Real.sq_sqrt (by positivity : 0 ≤ r * D)

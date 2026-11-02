@@ -58,13 +58,13 @@ namespace StatMech
 
 namespace Lattice
 
-/-- Four counterclockwise quarter turns are the identity, i.e. every site is a periodic point of
+/-- **Four quarter turns of the square lattice are the identity.** Four counterclockwise quarter turns are the identity, i.e. every site is a periodic point of
   `rot90Fun` of period `4`. -/
 theorem rot90Fun_iterate_four_eq (x : Site 2) : rot90Fun^[4] x = x := by
   simp only [Function.iterate_succ, Function.iterate_zero, Function.comp_apply, id]
   exact rot90Fun_four x
 
-/-- Rotation of `ℤ²` by `s` counterclockwise quarter turns, `s : ZMod 4`. -/
+/-- **Rotation of $\mathbb{Z}^2$ by a number of quarter turns.** Rotation of `ℤ²` by `s` counterclockwise quarter turns, `s : ZMod 4`. -/
 noncomputable def rotPow (s : ZMod 4) (x : Site 2) : Site 2 := rot90Fun^[s.val] x
 
 @[simp] theorem rotPow_zero (x : Site 2) : rotPow 0 x = x := rfl
@@ -82,7 +82,7 @@ theorem rotPow_three (x : Site 2) : rotPow 3 x = -rot90Fun x := by
   rw [h]; change rot90Fun (rot90Fun (rot90Fun x)) = -rot90Fun x
   rw [rot90Fun_rot90Fun]
 
-/-- `rotPow` is an action of the additive group `ZMod 4`. -/
+/-- **Quarter-turn rotations form an action of $\mathbb{Z}/4$.** `rotPow` is an action of the additive group `ZMod 4`. -/
 theorem rotPow_add (a b : ZMod 4) (x : Site 2) :
     rotPow (a + b) x = rotPow a (rotPow b x) := by
   have hp : Function.IsPeriodicPt rot90Fun 4 x := rot90Fun_iterate_four_eq x
@@ -99,7 +99,7 @@ theorem neg_dartDir_ne_dartDir (e : Dart) : -e.dir ≠ e.dir := by
 
 theorem zmod4_cases (s : ZMod 4) : s = 0 ∨ s = 1 ∨ s = 2 ∨ s = 3 := by decide +revert
 
-/-- A nontrivial rotation moves every lattice direction: `rotPow s` fixes the direction of a dart
+/-- **Nontrivial quarter-turn rotations fix no lattice direction.** A nontrivial rotation moves every lattice direction: `rotPow s` fixes the direction of a dart
   only for `s = 0`. -/
 theorem rotPow_dir_eq_iff (e : Dart) (s : ZMod 4) :
     rotPow s e.dir = e.dir ↔ s = 0 := by
@@ -112,7 +112,7 @@ theorem rotPow_dir_eq_iff (e : Dart) (s : ZMod 4) :
     · subst h3; rw [rotPow_three] at h; exact absurd h (neg_rot90Fun_dartDir_ne_dartDir e)
   · rintro rfl; rfl
 
-/-- The quarter turn, as an element of `ZMod 4`, from the boundary dart `e` of `K` to its successor
+/-- **Quarter turn between consecutive boundary darts modulo 4.** The quarter turn, as an element of `ZMod 4`, from the boundary dart `e` of `K` to its successor
   `dartNext K e`: `1` for a counterclockwise (left) turn, `0` for going straight, `3` for a
   clockwise (right) turn. -/
 noncomputable def turn (K : Set (Site 2)) (e : Dart) : ZMod 4 := by
@@ -122,7 +122,7 @@ noncomputable def turn (K : Set (Site 2)) (e : Dart) : ZMod 4 := by
     else if e.tail + (-rot90Fun e.dir) ∈ K then 0
     else 3
 
-/-- The signed quarter turn from `e` to `dartNext K e`: `1` counterclockwise, `0` straight, `-1`
+/-- **Signed quarter turn between consecutive boundary darts.** The signed quarter turn from `e` to `dartNext K e`: `1` counterclockwise, `0` straight, `-1`
   clockwise. Its reduction mod `4` is `turn K e`. -/
 noncomputable def turnZ (K : Set (Site 2)) (e : Dart) : ℤ := by
   classical
@@ -146,7 +146,7 @@ theorem turnZ_cast_eq_turn (K : Set (Site 2)) (e : Dart) :
   unfold turnZ turn
   split_ifs <;> decide
 
-/-- The direction of `dartNext K e` is the direction of `e` rotated by `turn K e` quarter turns. -/
+/-- **Next boundary dart direction is rotated by the turn.** The direction of `dartNext K e` is the direction of `e` rotated by `turn K e` quarter turns. -/
 theorem dartNext_dir_eq_rotPow_turn (K : Set (Site 2)) (e : Dart) :
     (dartNext K e).dir = rotPow (turn K e) e.dir := by
   classical
@@ -158,7 +158,7 @@ theorem dartNext_dir_eq_rotPow_turn (K : Set (Site 2)) (e : Dart) :
     · rw [ite_eq_left hB, dartNext_straight_dir K e hA hB]; rfl
     · rw [ite_eq_right hB, dartNext_left_dir K e hA hB, rotPow_three]
 
-/-- The cumulative turn, in `ZMod 4`, over the first `k` steps of the `dartNext K`-orbit of `e`. -/
+/-- **Cumulative turn along a boundary-tracing orbit.** The cumulative turn, in `ZMod 4`, over the first `k` steps of the `dartNext K`-orbit of `e`. -/
 noncomputable def cumTurn (K : Set (Site 2)) (e : Dart) (k : ℕ) : ZMod 4 :=
   ∑ i ∈ Finset.range k, turn K ((dartNext K)^[i] e)
 
@@ -169,7 +169,7 @@ theorem cumTurn_succ (K : Set (Site 2)) (e : Dart) (k : ℕ) :
     cumTurn K e (k + 1) = turn K ((dartNext K)^[k] e) + cumTurn K e k := by
   unfold cumTurn; rw [Finset.sum_range_succ]; ring
 
-/-- After `k` boundary-tracing steps the direction of a dart is its initial direction rotated by the
+/-- **Dart direction after k steps is rotated by the cumulative turn.** After `k` boundary-tracing steps the direction of a dart is its initial direction rotated by the
   cumulative turn `cumTurn K e k`. -/
 theorem dir_iterate_eq_rotPow_cumTurn (K : Set (Site 2)) (e : Dart) (k : ℕ) :
     ((dartNext K)^[k] e).dir = rotPow (cumTurn K e k) e.dir := by
@@ -179,7 +179,7 @@ theorem dir_iterate_eq_rotPow_cumTurn (K : Set (Site 2)) (e : Dart) (k : ℕ) :
     rw [Function.iterate_succ_apply', dartNext_dir_eq_rotPow_turn, ih, cumTurn_succ,
       rotPow_add]
 
-/-- The total signed turning (in quarter turns) over the first `p` steps of the `dartNext K`-orbit
+/-- **Total signed turning along a boundary orbit.** The total signed turning (in quarter turns) over the first `p` steps of the `dartNext K`-orbit
   of `e`. -/
 noncomputable def totalTurnZ (K : Set (Site 2)) (e : Dart) (p : ℕ) : ℤ :=
   ∑ i ∈ Finset.range p, turnZ K ((dartNext K)^[i] e)
@@ -209,7 +209,7 @@ theorem cumTurn_eq_zero_of_iterate_eq (K : Set (Site 2)) (e : Dart) (p : ℕ)
   rw [dir_iterate_eq_rotPow_cumTurn] at hdir
   exact (rotPow_dir_eq_iff e (cumTurn K e p)).mp hdir
 
-/-- If the orbit of `e` closes after `p` steps, the total signed turning over these steps is
+/-- **Total turning of a closed orbit segment is divisible by four.** If the orbit of `e` closes after `p` steps, the total signed turning over these steps is
   divisible by `4`. -/
 theorem four_dvd_totalTurnZ_of_iterate_eq (K : Set (Site 2)) (e : Dart) (p : ℕ)
     (hp : (dartNext K)^[p] e = e) : (4 : ℤ) ∣ totalTurnZ K e p := by
@@ -231,28 +231,28 @@ theorem dartOrbitPeriod_cumTurn_eq_zero (K : Set (Site 2))
     cumTurn K a.1 (dartOrbitPeriod K a) = 0 :=
   cumTurn_eq_zero_of_iterate_eq K a.1 (dartOrbitPeriod K a) (orbit_iterate_period_eq K a)
 
-/-- The total signed turning around a boundary orbit, taken over its minimal period, is divisible by
+/-- **Total turning over the minimal period is divisible by four.** The total signed turning around a boundary orbit, taken over its minimal period, is divisible by
   `4`. -/
 theorem four_dvd_orbit_totalTurnZ (K : Set (Site 2))
     (a : {e : Dart // IsBoundaryDart K e}) :
     (4 : ℤ) ∣ totalTurnZ K a.1 (dartOrbitPeriod K a) :=
   four_dvd_totalTurnZ_of_iterate_eq K a.1 (dartOrbitPeriod K a) (orbit_iterate_period_eq K a)
 
-/-- The total signed turning around a boundary orbit is at most the orbit length in absolute
+/-- **Total turning of a boundary orbit is bounded by its length.** The total signed turning around a boundary orbit is at most the orbit length in absolute
   value. -/
 theorem abs_orbit_totalTurnZ_le (K : Set (Site 2))
     (a : {e : Dart // IsBoundaryDart K e}) :
     |totalTurnZ K a.1 (dartOrbitPeriod K a)| ≤ (dartOrbitPeriod K a : ℤ) :=
   abs_totalTurnZ_le K a.1 (dartOrbitPeriod K a)
 
-/-- The boundary orbit through `a` turns by exactly one full revolution, i.e. its total signed
+/-- **Boundary orbit making exactly one full revolution.** The boundary orbit through `a` turns by exactly one full revolution, i.e. its total signed
   turning is `4` or `-4` quarter turns. -/
 def TurningIsFullRevolution (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     Prop :=
   totalTurnZ K a.1 (dartOrbitPeriod K a) = 4 ∨
     totalTurnZ K a.1 (dartOrbitPeriod K a) = -4
 
-/-- A boundary orbit that makes a full revolution has length at least `4`. -/
+/-- **Boundary orbit with a full revolution has length at least four.** A boundary orbit that makes a full revolution has length at least `4`. -/
 theorem orbitPeriod_ge_four_of_fullRevolution (K : Set (Site 2))
     (a : {e : Dart // IsBoundaryDart K e}) (h : TurningIsFullRevolution K a) :
     4 ≤ dartOrbitPeriod K a := by

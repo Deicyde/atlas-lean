@@ -55,7 +55,7 @@ whatever the labels. The running-time analysis of the paper (`O(n⁴)` for the p
 
 namespace Cslib.Bioinformatics.Clustering.OptimalLeafOrdering
 
-/-- A rooted binary tree whose leaves are labeled by `α`: the shape of a dendrogram
+/-- **Dendrogram as a leaf-labeled binary tree.** A rooted binary tree whose leaves are labeled by `α`: the shape of a dendrogram
 (merge heights are irrelevant for leaf ordering). -/
 inductive Dendrogram (α : Type*) where
   /-- A single object. -/
@@ -67,17 +67,17 @@ namespace Dendrogram
 
 variable {α : Type*}
 
-/-- The leaves of a dendrogram, left to right. -/
+/-- **Leaves of a dendrogram.** The leaves of a dendrogram, left to right. -/
 def leaves : Dendrogram α → List α
   | leaf a => [a]
   | node l r => leaves l ++ leaves r
 
-/-- The number of internal (merge) nodes. -/
+/-- **Number of internal nodes of a dendrogram.** The number of internal (merge) nodes. -/
 def numInternal : Dendrogram α → ℕ
   | leaf _ => 0
   | node l r => numInternal l + numInternal r + 1
 
-/-- The leaf orders obtained by choosing, at each internal node, which child is drawn first.
+/-- **Leaf orderings of a dendrogram.** The leaf orders obtained by choosing, at each internal node, which child is drawn first.
 Each choice pattern contributes one entry, so the list has `2 ^ numInternal t` entries. -/
 def orderings : Dendrogram α → List (List α)
   | leaf a => [[a]]
@@ -91,23 +91,23 @@ open Dendrogram
 
 variable {α : Type*}
 
-/-- The score of a leaf order: the sum of the similarities of adjacent leaves. -/
+/-- **Adjacent-similarity score of a leaf order.** The score of a leaf order: the sum of the similarities of adjacent leaves. -/
 def adjScore (S : α → α → ℝ) : List α → ℝ
   | a :: b :: t => S a b + adjScore S (b :: t)
   | _ => 0
 
-/-- The best score among the leaf orders of `t` (never `⊥`: `optScore_ne_bot`). -/
+/-- **Optimal leaf-ordering score.** The best score among the leaf orders of `t` (never `⊥`: `optScore_ne_bot`). -/
 noncomputable def optScore (S : α → α → ℝ) (t : Dendrogram α) : WithBot ℝ :=
   ((orderings t).map (adjScore S)).maximum
 
-/-- The best score among the leaf orders of `t` that start with `i` and end with `j`
+/-- **Optimal leaf-ordering score with fixed end leaves.** The best score among the leaf orders of `t` that start with `i` and end with `j`
 (`⊥` if there is none). -/
 noncomputable def optEnds [DecidableEq α] (S : α → α → ℝ) (t : Dendrogram α) (i j : α) :
     WithBot ℝ :=
   (((orderings t).filter (fun o => o.head? = some i ∧ o.getLast? = some j)).map
     (adjScore S)).maximum
 
-/-- One side of the recursion: the left part ranges over orders of a subtree with leaves `Ll`
+/-- **Joining two subtree orders at an adjacent leaf pair.** One side of the recursion: the left part ranges over orders of a subtree with leaves `Ll`
 and best-score table `Ml`, the right part over a subtree with leaves `Lr` and table `Mr`; the
 two are joined at the adjacent pair `(k, l)`. -/
 noncomputable def joinEnds (S : α → α → ℝ) (Ml Mr : α → α → WithBot ℝ) (Ll Lr : List α)
@@ -115,7 +115,7 @@ noncomputable def joinEnds (S : α → α → ℝ) (Ml Mr : α → α → WithBo
   (Ll.flatMap fun k => Lr.map fun l => Ml i k + ((S k l : ℝ) : WithBot ℝ) + Mr l j).foldr
     max ⊥
 
-/-- The dynamic program of Bar-Joseph, Gifford and Jaakkola: `bestEnds S t i j` is computed
+/-- **Bar-Joseph–Gifford–Jaakkola dynamic program for leaf ordering.** The dynamic program of Bar-Joseph, Gifford and Jaakkola: `bestEnds S t i j` is computed
 from the tables of the two children, trying both child orders. -/
 noncomputable def bestEnds [DecidableEq α] (S : α → α → ℝ) : Dendrogram α → α → α → WithBot ℝ
   | leaf a, i, j => if i = a ∧ j = a then 0 else ⊥
@@ -123,7 +123,7 @@ noncomputable def bestEnds [DecidableEq α] (S : α → α → ℝ) : Dendrogram
       max (joinEnds S (bestEnds S l) (bestEnds S r) (leaves l) (leaves r) i j)
         (joinEnds S (bestEnds S r) (bestEnds S l) (leaves r) (leaves l) i j)
 
-/-- A dendrogram with `m` internal nodes has `2 ^ m` leaf orders (one per flip pattern). -/
+/-- **A dendrogram with m internal nodes has $2^m$ leaf orders.** A dendrogram with `m` internal nodes has `2 ^ m` leaf orders (one per flip pattern). -/
 theorem length_orderings (t : Dendrogram α) : (orderings t).length = 2 ^ numInternal t := by
   induction t with
   | leaf a => simp [orderings, numInternal]
@@ -131,7 +131,7 @@ theorem length_orderings (t : Dendrogram α) : (orderings t).length = 2 ^ numInt
       simp [orderings, numInternal, List.length_flatMap, hl, hr, pow_add, pow_succ]
       ring
 
-/-- Every leaf order of `t` is a permutation of its leaves. -/
+/-- **Leaf orders are permutations of the leaves.** Every leaf order of `t` is a permutation of its leaves. -/
 theorem perm_of_mem_orderings {t : Dendrogram α} {o : List α} (h : o ∈ orderings t) :
     o.Perm (leaves t) := by
   induction t generalizing o with
@@ -323,7 +323,7 @@ theorem bestEnds_eq_optEnds [DecidableEq α] (S : α → α → ℝ) (t : Dendro
           rw [List.getLast?_append_of_ne_nil v (ordering_ne_nil l u hu)] at hj
           exact (score_le_join S r l v u i j hv hu hi hj).trans (le_max_right _ _)
 
-/-- The optimal leaf-ordering score is the best `bestEnds` value over end pairs of leaves. -/
+/-- **Optimal leaf-ordering score via the dynamic program.** The optimal leaf-ordering score is the best `bestEnds` value over end pairs of leaves. -/
 theorem optScore_eq_sup_bestEnds [DecidableEq α] (S : α → α → ℝ) (t : Dendrogram α) :
     optScore S t =
       ((leaves t).flatMap fun i => (leaves t).map fun j => bestEnds S t i j).foldr max ⊥ := by
@@ -343,7 +343,7 @@ theorem optScore_eq_sup_bestEnds [DecidableEq α] (S : α → α → ℝ) (t : D
     intro o ho _ _
     exact List.le_maximum_of_mem' (List.mem_map.mpr ⟨o, ho, rfl⟩)
 
-/-- Every dendrogram has a leaf order, so the optimal score is a real number. -/
+/-- **Optimal leaf-ordering score is finite.** Every dendrogram has a leaf order, so the optimal score is a real number. -/
 theorem optScore_ne_bot (S : α → α → ℝ) (t : Dendrogram α) : optScore S t ≠ ⊥ := by
   rw [optScore, Ne, List.maximum_eq_bot, List.map_eq_nil_iff, ← List.length_eq_zero_iff,
     length_orderings]

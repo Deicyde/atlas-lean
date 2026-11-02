@@ -33,7 +33,7 @@ namespace MetaMathlibExt
 
 -- Logic 25: Almost disjoint family
 
-/-- A family F ⊆ 𝒫(I) is *κ-almost disjoint* if |A| = κ for every A ∈ F and |A ∩ B| < κ for all
+/-- **$\kappa$-almost disjoint family of sets.** A family F ⊆ 𝒫(I) is *κ-almost disjoint* if |A| = κ for every A ∈ F and |A ∩ B| < κ for all
 distinct A, B ∈ F.
 -/
 def IsAlmostDisjointFamilyKappa.{u} {I : Type u} (κ : Cardinal) (F : Set (Set I)) : Prop :=
@@ -42,7 +42,7 @@ def IsAlmostDisjointFamilyKappa.{u} {I : Type u} (κ : Cardinal) (F : Set (Set I
 
 -- Logic 21: Almost disjoint modulo the nonstationary ideal
 
-/-- Functions f, g ∈ ∏_{α<ω₁} A_α are *almost disjoint mod the nonstationary ideal* if the set {  α
+/-- **Functions almost disjoint modulo the nonstationary ideal.** Functions f, g ∈ ∏_{α<ω₁} A_α are *almost disjoint mod the nonstationary ideal* if the set {  α
 < ω₁ : f(α) = g(α)  } on which they agree is nonstationary in ω₁.
 -/
 def AlmostDisjointModNS.{u} {A : Set.Iio (aleph 1 : Cardinal.{u}).ord → Type u}
@@ -51,7 +51,7 @@ def AlmostDisjointModNS.{u} {A : Set.Iio (aleph 1 : Cardinal.{u}).ord → Type u
 
 -- Logic 54: Almost disjoint family of functions
 
-/-- Let κ be a regular cardinal. A family of functions κ → κ is *almost disjoint* if for all f and g
+/-- **Almost disjoint family of functions on a regular cardinal.** Let κ be a regular cardinal. A family of functions κ → κ is *almost disjoint* if for all f and g
 in the family with f≠ g, |{ α ∣ f(α ) = g(α ) }|<κ..
 -/
 def IsAlmostDisjointFunFamily.{u} {κ : Cardinal.{u}}

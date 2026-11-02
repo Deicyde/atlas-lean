@@ -126,7 +126,7 @@ theorem sat_le_card_of_isSaturated (n : ℕ) (G : SimpleGraph (Fin n))
     H.IsSaturated G' ∧ G'.edgeFinset.card = G.edgeFinset.card
   exact ⟨G, inferInstance, h, rfl⟩
 
-/-- Attainment: when a saturated graph exists, some saturated graph has exactly
+/-- **Saturation number is attained by a saturated graph.** Attainment: when a saturated graph exists, some saturated graph has exactly
 `sat(n, H)` edges. -/
 theorem exists_isSaturated_card_eq_sat (n : ℕ) (h : (H.satCounts n).Nonempty) :
     ∃ G : SimpleGraph (Fin n), ∃ _ : DecidableRel G.Adj, H.IsSaturated G ∧

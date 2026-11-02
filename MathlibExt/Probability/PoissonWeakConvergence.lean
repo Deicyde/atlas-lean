@@ -50,15 +50,15 @@ open scoped ENNReal NNReal unitInterval
 
 namespace MathlibExt.Probability.PoissonWeakConvergence
 
-/-- The binomial law `Bin(n, p)` on `ℝ`, bundled as a probability measure. -/
+/-- **Binomial law as a probability measure.** The binomial law `Bin(n, p)` on `ℝ`, bundled as a probability measure. -/
 noncomputable def binomialProbMeasure (n : ℕ) (p : I) : ProbabilityMeasure ℝ :=
   ⟨Bin(ℝ, n, p), inferInstance⟩
 
-/-- The Poisson law of rate `λ` on `ℝ`, bundled as a probability measure. -/
+/-- **Poisson law as a probability measure.** The Poisson law of rate `λ` on `ℝ`, bundled as a probability measure. -/
 noncomputable def poissonProbMeasure (lam : ℝ≥0) : ProbabilityMeasure ℝ :=
   ⟨Po(ℝ, lam), inferInstance⟩
 
-/-- The success probability `λ / (n + λ)` used in the binomial approximation to
+/-- **Success probability of the binomial approximation to Poisson.** The success probability `λ / (n + λ)` used in the binomial approximation to
 the Poisson law. It lies in `[0, 1]` for every `n`, and `n * pₙ → λ`. -/
 noncomputable def poissonApproxProb (lam : ℝ≥0) (n : ℕ) : I :=
   ⟨(lam : ℝ) / ((n : ℝ) + (lam : ℝ)),
@@ -67,7 +67,7 @@ noncomputable def poissonApproxProb (lam : ℝ≥0) (n : ℕ) : I :=
        have h : (0 : ℝ) ≤ (n : ℝ) := Nat.cast_nonneg n
        linarith) (by positivity)⟩⟩
 
-/-- The binomial law `Bin(n, λ / (n + λ))` on `ℝ`. -/
+/-- **Binomial approximation to the Poisson law.** The binomial law `Bin(n, λ / (n + λ))` on `ℝ`. -/
 noncomputable def binomialPoissonApprox (lam : ℝ≥0) (n : ℕ) : ProbabilityMeasure ℝ :=
   binomialProbMeasure n (poissonApproxProb lam n)
 
@@ -86,7 +86,7 @@ theorem charFun_poissonProbMeasure (lam : ℝ≥0) (t : ℝ) :
       Complex.exp (↑lam * (Complex.exp (↑t * Complex.I) - 1)) :=
   charFun_map_cast_poissonMeasure lam t
 
-/-- The expected number of successes tends to the rate: `n * (λ / (n + λ)) → λ`. -/
+/-- **Mean of the binomial approximation tends to the Poisson rate.** The expected number of successes tends to the rate: `n * (λ / (n + λ)) → λ`. -/
 theorem tendsto_mul_poissonApproxProb (lam : ℝ≥0) :
     Tendsto (fun n : ℕ => (n : ℝ) * (poissonApproxProb lam n : ℝ)) atTop
       (𝓝 (lam : ℝ)) := by
@@ -114,7 +114,7 @@ theorem tendsto_mul_poissonApproxProb (lam : ℝ≥0) :
   · field_simp
     ring
 
-/-- The characteristic functions of the approximating binomial laws converge
+/-- **Convergence of characteristic functions to the Poisson law.** The characteristic functions of the approximating binomial laws converge
 pointwise to the characteristic function of the Poisson law. -/
 theorem tendsto_charFun_binomialPoissonApprox (lam : ℝ≥0) (t : ℝ) :
     Tendsto (fun n => charFun (binomialPoissonApprox lam n : Measure ℝ) t) atTop

@@ -215,11 +215,11 @@ theorem card_nerodeClass_lt_card_state [Fintype (NerodeClass L)] [Fintype State]
   Fintype.card_lt_of_injective_not_surjective _
     (NerodeClass.toDFAState_injective M hM) hred
 
-/-- A state is reachable when some input word reaches it from the start state. -/
+/-- **Reachable state of a DFA.** A state is reachable when some input word reaches it from the start state. -/
 def ReachableState (M : DFA Symbol State) (q : State) : Prop :=
   ∃ x, M.eval x = q
 
-/-- A DFA is accessible when every state is reachable. -/
+/-- **Accessible DFA.** A DFA is accessible when every state is reachable. -/
 def Accessible (M : DFA Symbol State) : Prop :=
   ∀ q, ReachableState M q
 

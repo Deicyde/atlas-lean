@@ -36,7 +36,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- In `Fin n` with `n ≥ 3`, `k + 2 ≠ k`. -/
+/-- **$k + 2 \ne k$ in $\mathrm{Fin}\, n$ for $n \ge 3$.** In `Fin n` with `n ≥ 3`, `k + 2 ≠ k`. -/
 theorem not_add_two_self (hn : 3 ≤ n) (k : Fin n) : k + 1 + 1 ≠ k := by
   intro h
   have hcancel : (1 + 1 : Fin n) = 0 := by
@@ -47,7 +47,7 @@ theorem not_add_two_self (hn : 3 ≤ n) (k : Fin n) : k + 1 + 1 ≠ k := by
     Nat.mod_eq_of_lt (by omega : 1 + 1 < n)] at hv
   omega
 
-/-- A step on the horizontal segment `[a, a + 1] × {b}` goes from one endpoint to the other. -/
+/-- **Steps on a horizontal unit segment join its endpoints.** A step on the horizontal segment `[a, a + 1] × {b}` goes from one endpoint to the other. -/
 theorem midSet_endpoints (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (k : Fin n) (hk : k ∈ midSet d a b) :
     (pos d k = (a, b) ∧ pos d (k + 1) = (a + 1, b))
@@ -59,7 +59,7 @@ theorem midSet_endpoints (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 
   · left; exact ⟨Prod.ext (by omega) hy, Prod.ext (by omega) (by rw [hyc, hy])⟩
   · right; exact ⟨Prod.ext (by omega) hy, Prod.ext (by omega) (by rw [hyc, hy])⟩
 
-/-- A step on the vertical segment `{a + 1} × [b, b + 1]` goes from one endpoint to the other. -/
+/-- **Steps on a vertical unit segment join its endpoints.** A step on the vertical segment `{a + 1} × [b, b + 1]` goes from one endpoint to the other. -/
 theorem straddleSet_endpoints (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (k : Fin n) (hk : k ∈ straddleSet d a b) :
     (pos d k = (a + 1, b) ∧ pos d (k + 1) = (a + 1, b + 1))
@@ -71,7 +71,7 @@ theorem straddleSet_endpoints (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d 
   · left; exact ⟨Prod.ext hx (by omega), Prod.ext (by rw [hxc, hx]) (by omega)⟩
   · right; exact ⟨Prod.ext hx (by omega), Prod.ext (by rw [hxc, hx]) (by omega)⟩
 
-/-- A simple closed walk traverses each horizontal unit segment at most once. -/
+/-- **A simple closed walk traverses each horizontal segment at most once.** A simple closed walk traverses each horizontal unit segment at most once. -/
 theorem midSet_card_le_one (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n) (a b : ℤ) :
     (midSet d a b).card ≤ 1 := by
@@ -88,7 +88,7 @@ theorem midSet_card_le_one (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) 
     exact absurd (by rw [e1] at e2; exact e2) (not_add_two_self hn k')
   · exact hsimple (hk1.trans hk1'.symm)
 
-/-- A simple closed walk traverses each vertical unit segment at most once. -/
+/-- **A simple closed walk traverses each vertical segment at most once.** A simple closed walk traverses each vertical unit segment at most once. -/
 theorem straddleSet_card_le_one (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n) (a b : ℤ) :
     (straddleSet d a b).card ≤ 1 := by

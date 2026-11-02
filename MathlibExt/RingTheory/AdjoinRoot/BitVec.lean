@@ -35,7 +35,7 @@ private theorem degree_toPolynomial_lt {s : Nat} (w : BitVec s) :
   simpa [toPolynomial] using Polynomial.degree_ofCoeffList_lt
     (w.toBoolListLE.map fun b => if b then (1 : ZMod 2) else 0)
 
-/-- Fixed-width binary words are in bijection with residues modulo their associated monic
+/-- **Fixed-width binary words as residues modulo a monic polynomial.** Fixed-width binary words are in bijection with residues modulo their associated monic
 polynomial. This is an ordinary equivalence because builtin bitvector addition has carries. -/
 noncomputable def adjoinRootEquiv {s : Nat} (g : BitVec s) :
     BitVec s ≃ AdjoinRoot g.monicModulus where
@@ -67,13 +67,13 @@ noncomputable def adjoinRootEquiv {s : Nat} (g : BitVec s) :
     simpa using AdjoinRoot.mk_leftInverse g.monicModulus_monic
       (AdjoinRoot.mk g.monicModulus p)
 
-/-- The forward equivalence is the canonical quotient constructor applied to the polynomial
+/-- **Forward map of the binary word residue equivalence.** The forward equivalence is the canonical quotient constructor applied to the polynomial
 encoding. -/
 @[simp] theorem adjoinRootEquiv_apply {s : Nat} (g w : BitVec s) :
     g.adjoinRootEquiv w = AdjoinRoot.mk g.monicModulus w.toPolynomial :=
   rfl
 
-/-- The inverse equivalence extracts the canonical remainder's lowest `s` binary
+/-- **Inverse map of the binary word residue equivalence.** The inverse equivalence extracts the canonical remainder's lowest `s` binary
 coefficients. -/
 @[simp] theorem adjoinRootEquiv_symm_apply {s : Nat} (g : BitVec s)
     (z : AdjoinRoot g.monicModulus) :
@@ -81,7 +81,7 @@ coefficients. -/
       (AdjoinRoot.modByMonicHom g.monicModulus_monic z).toBitVec s :=
   rfl
 
-/-- The canonical remainder coordinates of an encoded word are exactly its low-first bits. -/
+/-- **Remainder coefficients of an encoded binary word are its bits.** The canonical remainder coordinates of an encoded word are exactly its low-first bits. -/
 theorem adjoinRootEquiv_coeff {s : Nat} (g w : BitVec s) (i : Fin s) :
     (AdjoinRoot.modByMonicHom g.monicModulus_monic
       (g.adjoinRootEquiv w)).coeff i.val = if w.getLsbD i.val then 1 else 0 := by
@@ -92,13 +92,13 @@ theorem adjoinRootEquiv_coeff {s : Nat} (g w : BitVec s) (i : Fin s) :
     g.monicModulus_natDegree]
   exact degree_toPolynomial_lt w
 
-/-- Bitwise xor corresponds to quotient addition; builtin bitvector addition does not. -/
+/-- **Bitwise xor corresponds to residue addition.** Bitwise xor corresponds to quotient addition; builtin bitvector addition does not. -/
 theorem adjoinRootEquiv_xor {s : Nat} (g x y : BitVec s) :
     g.adjoinRootEquiv (x ^^^ y) = g.adjoinRootEquiv x + g.adjoinRootEquiv y := by
   rw [adjoinRootEquiv_apply, adjoinRootEquiv_apply, adjoinRootEquiv_apply,
     toPolynomial_xor, map_add]
 
-/-- The defining quotient equation reduces `root ^ s` to the encoded lower coefficients. -/
+/-- **Reduction of the root power in a binary residue ring.** The defining quotient equation reduces `root ^ s` to the encoded lower coefficients. -/
 theorem adjoinRoot_root_pow {s : Nat} (g : BitVec s) :
     AdjoinRoot.root g.monicModulus ^ s = g.adjoinRootEquiv g := by
   have hmod : AdjoinRoot.root g.monicModulus ^ s + g.adjoinRootEquiv g = 0 := by

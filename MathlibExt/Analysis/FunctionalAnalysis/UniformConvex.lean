@@ -93,7 +93,7 @@ namespace MathlibExt.Analysis.FunctionalAnalysis.UniformConvex
 
 variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
 
-/-- In a finite-dimensional real normed space, strict convexity implies
+/-- **Strict convexity implies uniform convexity in finite dimensions.** In a finite-dimensional real normed space, strict convexity implies
 uniform convexity. The proof maximizes `‖x + y‖` over the compact set of
 pairs of unit vectors at distance at least `ε`; strict convexity says the
 maximum is `< 2`, and the gap is the required `δ`. -/
@@ -138,7 +138,7 @@ theorem uniformConvexSpace_of_finiteDimensional_strictConvexSpace
       hxy⟩
     exact (hSne ⟨(x, y), hmem⟩).elim
 
-/-- In finite dimensions, strict convexity and uniform convexity are
+/-- **Strict and uniform convexity agree in finite dimensions.** In finite dimensions, strict convexity and uniform convexity are
 equivalent. -/
 theorem strictConvexSpace_iff_uniformConvexSpace_of_finiteDimensional
     [FiniteDimensional ℝ E] :
@@ -150,7 +150,7 @@ section MinimizingSequence
 
 variable [CompleteSpace E] [UniformConvexSpace E]
 
-/-- In a complete uniformly convex space, a minimizing sequence for the
+/-- **Convergence of minimizing sequences in uniformly convex spaces.** In a complete uniformly convex space, a minimizing sequence for the
 distance from a point `x` to a closed convex set `K` converges to a point
 of `K` attaining that distance. The argument is the usual one: if the
 sequence were not Cauchy, two far-apart almost-minimizing terms would have
@@ -330,7 +330,7 @@ theorem exists_tendsto_of_minimizingSequence {K : Set E} (hKconv : Convex ℝ K)
 
 end MinimizingSequence
 
-/-- In a finite-dimensional strictly convex space, a minimizing sequence for
+/-- **Unique nearest point from a minimizing sequence in finite dimensions.** In a finite-dimensional strictly convex space, a minimizing sequence for
 the distance to a closed convex set supplies a unique nearest point. The
 uniqueness clause only assumes that a second point belongs to the set and
 attains the distance; it does not assume that the minimizing sequence
@@ -379,7 +379,7 @@ theorem exists_unique_nearestPoint_of_minimizingSequence_of_finiteDimensional
       eq_of_norm_eq_of_norm_add_eq (by rw [hynorm, hznorm]) hsum
     exact (sub_left_inj.1 hab).symm
 
-/-- In a finite-dimensional strictly convex space, a minimizing sequence for
+/-- **Minimizing sequences converge to the unique nearest point.** In a finite-dimensional strictly convex space, a minimizing sequence for
 the distance to a closed convex set converges to the unique point of the
 set attaining that distance. This preserves the original combined API as a
 corollary of nearest-point uniqueness and minimizing-sequence convergence. -/

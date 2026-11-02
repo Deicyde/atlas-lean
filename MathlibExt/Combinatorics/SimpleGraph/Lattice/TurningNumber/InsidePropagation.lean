@@ -39,7 +39,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.WalkCrossing
   StatMech.Onsager.NoDoubleWind StatMech.Onsager.JordanParity
 variable {n : ℕ} [NeZero n]
 
-/-- If cell `(a, b)` is inside and no vertical step separates it from `(a + 1, b)`, then `(a + 1,
+/-- **Moving horizontally inside a closed walk.** If cell `(a, b)` is inside and no vertical step separates it from `(a + 1, b)`, then `(a + 1,
   b)` is inside. -/
 theorem inside_climb_x (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (hinside : rayParity d a b = 1)
@@ -49,7 +49,7 @@ theorem inside_climb_x (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     rayParity d (a + 1) b = 1 := by
   rw [← rayParity_hstep d hclosed a b hstr]; exact hinside
 
-/-- If cell `(a, b)` is inside and no horizontal step separates it from `(a, b + 1)`, then `(a, b +
+/-- **Moving vertically inside a closed walk.** If cell `(a, b)` is inside and no horizontal step separates it from `(a, b + 1)`, then `(a, b +
   1)` is inside. -/
 theorem inside_climb_y (d : Fin n → Fin 4) (a b : ℤ)
     (hinside : rayParity d a b = 1)
@@ -58,7 +58,7 @@ theorem inside_climb_y (d : Fin n → Fin 4) (a b : ℤ)
     rayParity d a (b + 1) = 1 := by
   rw [← rayParity_vstep d a b h]; exact hinside
 
-/-- The vertices before and after a north-then-west corner. -/
+/-- **Coordinates of the vertices around a north-then-west corner.** The vertices before and after a north-then-west corner. -/
 theorem nw_corner_coords (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (i : Fin n) (hN : d i = 1) (hW : d (i + 1) = 2) :
     pos d i = ((pos d (i + 1)).1, (pos d (i + 1)).2 - 1) ∧
@@ -79,7 +79,7 @@ theorem nw_corner_coords (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 
     have hy : (pos d (i + 1 + 1)).2 = (pos d (i + 1)).2 := by rw [hs2]; simp
     ext <;> simp only <;> omega
 
-/-- At a north-then-west corner, the north step separates the cell below-left of the corner from its
+/-- **The north step at a corner blocks horizontal movement.** At a north-then-west corner, the north step separates the cell below-left of the corner from its
   right neighbour. -/
 theorem nw_corner_not_climbable_x (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (i : Fin n) (hN : d i = 1) (hW : d (i + 1) = 2) :
@@ -94,7 +94,7 @@ theorem nw_corner_not_climbable_x (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf
   refine hstr i hvert hcol ?_
   refine ⟨?_, ?_⟩ <;> rw [hpi2] <;> omega
 
-/-- At a north-then-west corner, the west step separates the cell below-left of the corner from its
+/-- **The west step at a corner blocks vertical movement.** At a north-then-west corner, the west step separates the cell below-left of the corner from its
   top neighbour. -/
 theorem nw_corner_not_climbable_y (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (i : Fin n) (hN : d i = 1) (hW : d (i + 1) = 2) :
@@ -109,7 +109,7 @@ theorem nw_corner_not_climbable_y (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf
   have hht : (pos d (i + 1)).2 = ((pos d (i + 1)).2 - 1) + 1 := by omega
   exact h (i + 1) hhoriz hcol hht
 
-/-- In a simple walk the lexicographically largest vertex is attained at a unique index. -/
+/-- **Uniqueness of the lexicographically largest vertex.** In a simple walk the lexicographically largest vertex is attained at a unique index. -/
 theorem lexmax_unique (d : Fin n → Fin 4) (hsimple : Function.Injective (pos d))
     {M M' : Fin n} (hM : ∀ j : Fin n, toLex (pos d j) ≤ toLex (pos d M))
     (hM' : ∀ j : Fin n, toLex (pos d j) ≤ toLex (pos d M')) :
@@ -119,19 +119,19 @@ theorem lexmax_unique (d : Fin n → Fin 4) (hsimple : Function.Injective (pos d
   have heq : toLex (pos d M) = toLex (pos d M') := le_antisymm h1 h2
   exact hsimple (toLex_inj.mp heq)
 
-/-- A closed walk without right turns has a north-then-west corner. -/
+/-- **Existence of a north-then-west corner.** A closed walk without right turns has a north-then-west corner. -/
 theorem exists_lexmax_nw_corner (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
     ∃ i : Fin n, d i = 1 ∧ d (i + 1) = 2 := by
   obtain ⟨M, hin, hout⟩ := lexmax_corner d hclosed hreflexfree
   exact ⟨M - 1, hin, by rw [sub_add_cancel]; exact hout⟩
 
-/-- Any two distinct north-then-west corners of `d` force `pos d` to be non-injective. -/
+/-- **Two north-then-west corners force a self-intersection.** Any two distinct north-then-west corners of `d` force `pos d` to be non-injective. -/
 def two_nw_corners_not_injective (d : Fin n → Fin 4) : Prop :=
   ∀ i j : Fin n, i ≠ j → d i = 1 → d (i + 1) = 2 → d j = 1 → d (j + 1) = 2 →
     ¬ Function.Injective (pos d)
 
-/-- A simple closed walk without right turns has four left turns, assuming that two distinct
+/-- **Four left turns, given that two corners force a self-intersection.** A simple closed walk without right turns has four left turns, assuming that two distinct
   north-then-west corners force a self-intersection. -/
 theorem cc_eq_four_of_selfAvoidanceWall (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))

@@ -82,7 +82,7 @@ namespace ProbabilityTheory
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω}
 
-/-- `N : ℝ≥0 → Ω → ℕ` is a **Poisson process of rate `r`** under `P` (Kingman 1993, ch. 4;
+/-- **Poisson process.** `N : ℝ≥0 → Ω → ℕ` is a **Poisson process of rate `r`** under `P` (Kingman 1993, ch. 4;
 Karlin–Taylor 1975, ch. 4): `N 0 = 0` and the paths are nondecreasing almost surely, the
 increments over consecutive intervals are independent, and for `s ≤ t` the increment `N t - N s`
 has the Poisson law of mean `r (t - s)`. -/
@@ -100,11 +100,11 @@ structure IsPoissonProcess (N : ℝ≥0 → Ω → ℕ) (r : ℝ≥0) (P : Measu
 
 namespace PoissonProcess
 
-/-- The `n`-th arrival time `S n = T 0 + ⋯ + T (n - 1)` of the interarrival times `T`. -/
+/-- **Arrival times from interarrival times.** The `n`-th arrival time `S n = T 0 + ⋯ + T (n - 1)` of the interarrival times `T`. -/
 noncomputable def arrivalTime (T : ℕ → Ω → ℝ) (n : ℕ) (ω : Ω) : ℝ :=
   ∑ i ∈ Finset.range n, T i ω
 
-/-- The counting process of the interarrival times `T`: `count T t ω` is the number of arrivals
+/-- **Counting process of interarrival times.** The counting process of the interarrival times `T`: `count T t ω` is the number of arrivals
 `n ≥ 1` with `S n ≤ t`. When that set is infinite (a null event for exponential interarrivals of
 positive rate) `Set.ncard` returns `0`. -/
 noncomputable def count (T : ℕ → Ω → ℝ) (t : ℝ≥0) (ω : Ω) : ℕ :=
@@ -174,7 +174,7 @@ private lemma erlang_conv (n : ℕ) (r : ℝ) (hr : 0 < r) :
   apply withDensity_congr_ae
   exact Filter.Eventually.of_forall fun x ↦ erlang_density_conv n r x hr
 
-/-- The `(n + 1)`-th arrival time of i.i.d. rate-`r` exponential interarrivals has the Gamma
+/-- **Arrival times of exponential interarrivals are Erlang.** The `(n + 1)`-th arrival time of i.i.d. rate-`r` exponential interarrivals has the Gamma
 (Erlang) law with shape `n + 1` and rate `r` (Karlin–Taylor 1975, §4.2). -/
 theorem hasLaw_arrivalTime {T : ℕ → Ω → ℝ} {r : ℝ≥0} (hr : 0 < r)
     (hT : ∀ i, HasLaw (T i) (expMeasure r) P) (hind : iIndepFun T P) (n : ℕ) :
@@ -340,7 +340,7 @@ private lemma gap_probability {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measu
       simp [arrivalTime, Finset.sum_range_succ]
     · simp
 
-/-- The number of arrivals in `[0, t]` of i.i.d. rate-`r` exponential interarrivals has the
+/-- **Arrival counts of exponential interarrivals are Poisson.** The number of arrivals in `[0, t]` of i.i.d. rate-`r` exponential interarrivals has the
 Poisson law of mean `r t` (Karlin–Taylor 1975, §4.2, Theorem 2.1). -/
 theorem hasLaw_count {T : ℕ → Ω → ℝ} {r : ℝ≥0} (hr : 0 < r)
     (hT : ∀ i, HasLaw (T i) (expMeasure r) P) (hind : iIndepFun T P) (t : ℝ≥0) :
@@ -438,7 +438,7 @@ private theorem arrivalTime_strictMono {T : ℕ → Ω → ℝ} {ω : Ω}
   rw [arrivalTime_succ]
   exact lt_add_of_pos_right _ (hω n)
 
-/-- The counting process of i.i.d. rate-`r` exponential interarrivals starts at `0` almost
+/-- **Counting process starts at zero almost surely.** The counting process of i.i.d. rate-`r` exponential interarrivals starts at `0` almost
 surely (all interarrival times are positive almost surely). -/
 theorem ae_count_zero {T : ℕ → Ω → ℝ} {r : ℝ≥0} (hr : 0 < r)
     (hT : ∀ i, HasLaw (T i) (expMeasure r) P) : ∀ᵐ ω ∂P, count T 0 ω = 0 := by
@@ -502,7 +502,7 @@ private theorem finite_arrivals {T : ℕ → Ω → ℝ} {ω : Ω}
   have hlt := hm (n + 1) (by omega)
   exact (not_le.mpr hlt) hn
 
-/-- The counting process of i.i.d. rate-`r` exponential interarrivals has nondecreasing paths
+/-- **Counting process has nondecreasing paths almost surely.** The counting process of i.i.d. rate-`r` exponential interarrivals has nondecreasing paths
 almost surely (the arrival times tend to infinity almost surely, so every arrival set in
 `[0, t]` is finite). -/
 theorem ae_count_monotone {T : ℕ → Ω → ℝ} {r : ℝ≥0} (hr : 0 < r)
@@ -874,7 +874,7 @@ private lemma marked_prefix_sub (B : ℕ → Bool) {a b : ℕ} (hab : a ≤ b) :
   simp only [Finset.mem_sdiff, Finset.mem_filter, Finset.mem_range, Finset.mem_Ico]
   by_cases hBi : B i = true <;> simp [hBi, not_lt, and_comm]
 
-/-- The thinning of `N` by the marks `B`: the number of indices `i < N t` with `B i`, i.e. the
+/-- **Thinning of a Poisson process.** The thinning of `N` by the marks `B`: the number of indices `i < N t` with `B i`, i.e. the
 number of points of `N` in `[0, t]` that are kept when the `i`-th point (in time order, from
 `0`) is kept iff `B i`. -/
 noncomputable def PoissonProcess.thinning (N : ℝ≥0 → Ω → ℕ) (B : ℕ → Ω → Bool) (t : ℝ≥0)
@@ -1481,7 +1481,7 @@ private theorem measure_increments_eq {T : ℕ → Ω → ℝ} {r : ℝ≥0} (hr
     exact hX.nullMeasurableSet_preimage (measurableSet_inGaps (0 : ℝ) 0
       ((t 0, k₀) :: List.ofFn fun i ↦ (t i.succ - t i.castSucc, k i)))
 
-/-- The increments of the counting process of i.i.d. rate-`r` exponential interarrivals over
+/-- **Independent Poisson increments of the counting process.** The increments of the counting process of i.i.d. rate-`r` exponential interarrivals over
 consecutive intervals `(t i, t (i + 1)]` are independent with the Poisson laws of means
 `r (t (i + 1) - t i)`: the increment vector has the product law (Kingman 1993, ch. 4;
 Karlin–Taylor 1975, ch. 4). -/

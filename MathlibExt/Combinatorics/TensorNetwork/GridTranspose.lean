@@ -34,7 +34,7 @@ variable {ρ γ A : Type*}
 
 namespace Instance
 
-/-- Swap the row and column coordinates of a grid tensor instance. -/
+/-- **Transpose of a grid tensor instance.** Swap the row and column coordinates of a grid tensor instance. -/
 def transpose (R : Instance (ρ × γ) A) : Instance (γ × ρ) A :=
   fun w h => R w.swap fun w' => h w'.swap
 
@@ -42,14 +42,14 @@ def transpose (R : Instance (ρ × γ) A) : Instance (γ × ρ) A :=
     (h : γ × ρ → A) :
     R.transpose w h = R w.swap (fun w' => h w'.swap) := rfl
 
-/-- Transposing a grid tensor instance twice recovers the original instance. -/
+/-- **Transposing a grid tensor instance is an involution.** Transposing a grid tensor instance twice recovers the original instance. -/
 @[simp] theorem transpose_transpose (R : Instance (ρ × γ) A) : R.transpose.transpose = R := by
   funext w h
   rfl
 
 end Instance
 
-/-- Transpose a rectangle kernel, exchanging the `y` and `u` directed diagonal ends. -/
+/-- **Transpose of a rectangle kernel.** Transpose a rectangle kernel, exchanging the `y` and `u` directed diagonal ends. -/
 def transposeRectangleKernel
     (G : ((ρ × ρ) × (γ × γ)) → A → A → A → A → ℤ) :
     ((γ × γ) × (ρ × ρ)) → A → A → A → A → ℤ :=
@@ -60,14 +60,14 @@ def transposeRectangleKernel
     (ω : (γ × γ) × (ρ × ρ)) (x y u v : A) :
     transposeRectangleKernel G ω x y u v = G (ω.2, ω.1) x u y v := rfl
 
-/-- Transposing a rectangle kernel twice recovers the original kernel. -/
+/-- **Transposing a rectangle kernel is an involution.** Transposing a rectangle kernel twice recovers the original kernel. -/
 @[simp] theorem transposeRectangleKernel_transposeRectangleKernel
     (G : ((ρ × ρ) × (γ × γ)) → A → A → A → A → ℤ) :
     transposeRectangleKernel (transposeRectangleKernel G) = G := by
   funext ω x y u v
   rfl
 
-/-- Transposing the grid coordinates, local tensors, and rectangle kernels preserves the finite
+/-- **Transposition preserves the grid evaluation.** Transposing the grid coordinates, local tensors, and rectangle kernels preserves the finite
 grid evaluation. Edge and diagonal label choices remain independent. -/
 theorem gridValue_transpose [Fintype ρ] [LinearOrder ρ] [Fintype γ] [LinearOrder γ]
     [DecidableEq A] (labels diagonalLabels : Finset A) (R : Instance (ρ × γ) A)

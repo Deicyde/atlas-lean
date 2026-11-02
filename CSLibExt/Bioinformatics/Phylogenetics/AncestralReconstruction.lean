@@ -66,7 +66,7 @@ universe u v w
 
 variable {L : Type u} {S : Type v} {R : Type w}
 
-/-- All transition weights in the tree are nonnegative. -/
+/-- **Nonnegative transition weights on a tree.** All transition weights in the tree are nonnegative. -/
 def NonnegWeights [Zero R] [LE R] : Tree L S R → Prop
   | leaf _ => True
   | node P l Q r => (∀ a b, 0 ≤ P a b) ∧ (∀ a b, 0 ≤ Q a b) ∧ NonnegWeights l ∧ NonnegWeights r
@@ -75,15 +75,15 @@ section Argmax
 
 variable [LinearOrder R] [Finite S] [Nonempty S]
 
-/-- A state maximizing `f` (ties broken by choice). -/
+/-- **State maximizing a function.** A state maximizing `f` (ties broken by choice). -/
 noncomputable def argmaxState (f : S → R) : S :=
   (Finite.exists_max f).choose
 
-/-- `argmaxState f` maximizes `f`. -/
+/-- **The argmax state maximizes the function.** `argmaxState f` maximizes `f`. -/
 theorem le_argmaxState (f : S → R) (a : S) : f a ≤ f (argmaxState f) :=
   (Finite.exists_max f).choose_spec a
 
-/-- The value at `argmaxState f` is the maximum `univ.sup'` of `f`. -/
+/-- **Value at the argmax state is the maximum.** The value at `argmaxState f` is the maximum `univ.sup'` of `f`. -/
 theorem sup'_eq_argmaxState [Fintype S] (f : S → R) :
     univ.sup' univ_nonempty f = f (argmaxState f) :=
   le_antisymm (sup'_le _ _ fun a _ => le_argmaxState f a) (le_sup' f (mem_univ _))
@@ -94,7 +94,7 @@ variable [CommSemiring R] [LinearOrder R] [IsOrderedRing R] [Fintype S] [Nonempt
 
 variable (obs : L → S → R)
 
-/-- The max-product (Viterbi) form of Felsenstein's pruning recursion: the largest weight of a
+/-- **Max-product pruning recursion.** The max-product (Viterbi) form of Felsenstein's pruning recursion: the largest weight of a
 labeling of the subtree `t` given state `s` at its root. -/
 def maxPrune : Tree L S R → S → R
   | leaf l, s => obs l s
@@ -102,7 +102,7 @@ def maxPrune : Tree L S R → S → R
     (univ.sup' univ_nonempty fun a => P s a * maxPrune l a) *
       (univ.sup' univ_nonempty fun b => Q s b * maxPrune r b)
 
-/-- Pupko's traceback: given the state `s` of the root of `t`, label each child with a state
+/-- **Pupko's traceback.** Pupko's traceback: given the state `s` of the root of `t`, label each child with a state
 maximizing the transition weight times the child's `maxPrune`, and recurse. -/
 noncomputable def traceback : (t : Tree L S R) → S → Labeling t
   | leaf _, _ => PUnit.unit
@@ -111,7 +111,7 @@ noncomputable def traceback : (t : Tree L S R) → S → Labeling t
     let b := argmaxState fun b => Q s b * maxPrune obs r b
     ((a, traceback l a), (b, traceback r b))
 
-/-- With nonnegative weights, `maxPrune` is nonnegative. -/
+/-- **Nonnegativity of max-product pruning.** With nonnegative weights, `maxPrune` is nonnegative. -/
 theorem maxPrune_nonneg (hobs : ∀ l s, 0 ≤ obs l s) :
     ∀ (t : Tree L S R), NonnegWeights t → ∀ s, 0 ≤ maxPrune obs t s := by
   intro t
@@ -138,7 +138,7 @@ theorem weight_traceback :
       sup'_eq_argmaxState (fun b => Q s b * maxPrune obs r b)]
 
 omit [Fintype S] [Nonempty S] in
-/-- With nonnegative weights, every labeling has nonnegative weight. -/
+/-- **Nonnegativity of labeling weights.** With nonnegative weights, every labeling has nonnegative weight. -/
 theorem weight_nonneg (hobs : ∀ l s, 0 ≤ obs l s) :
     ∀ (t : Tree L S R), NonnegWeights t → ∀ (s : S) (z : Labeling t), 0 ≤ weight obs t s z
   | leaf l, _, s, _ => hobs l s
@@ -173,7 +173,7 @@ theorem maxPrune_eq_sup' (hobs : ∀ l s, 0 ≤ obs l s) (t : Tree L S R) (ht : 
   rw [← weight_traceback obs t s]
   exact le_sup' (weight obs t s) (mem_univ _)
 
-/-- The root state of Pupko's reconstruction: it maximizes `π s * maxPrune obs t s`. -/
+/-- **Root state of Pupko's reconstruction.** The root state of Pupko's reconstruction: it maximizes `π s * maxPrune obs t s`. -/
 noncomputable def jointRoot (t : Tree L S R) (π : S → R) : S :=
   argmaxState fun s => π s * maxPrune obs t s
 
@@ -182,7 +182,7 @@ noncomputable def pupko (t : Tree L S R) (π : S → R) : S × Labeling t :=
   (jointRoot obs t π, traceback obs t (jointRoot obs t π))
 
 omit [IsOrderedRing R] in
-/-- The likelihood of Pupko's reconstruction is `max_s π s * maxPrune obs t s`. -/
+/-- **Likelihood of Pupko's joint reconstruction.** The likelihood of Pupko's reconstruction is `max_s π s * maxPrune obs t s`. -/
 theorem jointLik_pupko (t : Tree L S R) (π : S → R) :
     π (pupko obs t π).1 * weight obs t (pupko obs t π).1 (pupko obs t π).2 =
       univ.sup' univ_nonempty fun s => π s * maxPrune obs t s := by

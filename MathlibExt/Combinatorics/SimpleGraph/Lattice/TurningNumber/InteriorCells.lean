@@ -40,14 +40,14 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind
 
 variable {n : ℕ} [NeZero n]
 
-/-- The cells inside the walk by the even-odd rule: those with ray parity `1`. -/
+/-- **Interior cells by the even-odd rule.** The cells inside the walk by the even-odd rule: those with ray parity `1`. -/
 def interiorSet (d : Fin n → Fin 4) : Set (ℤ × ℤ) := {c | rayParity d c.1 c.2 = 1}
 
-/-- The minimal height of a vertex of the walk. -/
+/-- **Minimal height of a walk.** The minimal height of a vertex of the walk. -/
 noncomputable def yInf (d : Fin n → Fin 4) : ℤ :=
   Finset.univ.inf' Finset.univ_nonempty (fun k => (pos d k).2)
 
-/-- The maximal height of a vertex of the walk. -/
+/-- **Maximal height of a walk.** The maximal height of a vertex of the walk. -/
 noncomputable def ySup (d : Fin n → Fin 4) : ℤ :=
   Finset.univ.sup' Finset.univ_nonempty (fun k => (pos d k).2)
 
@@ -57,7 +57,7 @@ theorem yInf_le (d : Fin n → Fin 4) (k : Fin n) : yInf d ≤ (pos d k).2 :=
 theorem le_ySup (d : Fin n → Fin 4) (k : Fin n) : (pos d k).2 ≤ ySup d :=
   Finset.le_sup' (fun k => (pos d k).2) (Finset.mem_univ k)
 
-/-- An inside cell lies directly below some horizontal step of the walk. -/
+/-- **An inside cell lies below a horizontal step.** An inside cell lies directly below some horizontal step of the walk. -/
 theorem exists_edge_of_rayParity (d : Fin n → Fin 4) (a b : ℤ) (h : rayParity d a b = 1) :
     ∃ k : Fin n, isHorizEdge (d k) ∧ min ((pos d k).1) ((pos d (k + 1)).1) = a ∧
         b < (pos d k).2 := by
@@ -72,7 +72,7 @@ theorem exists_edge_of_rayParity (d : Fin n → Fin 4) (a b : ℤ) (h : rayParit
   rw [rayParity, hz] at h
   simp at h
 
-/-- Cells below the walk are outside. -/
+/-- **Cells below a walk are outside.** Cells below the walk are outside. -/
 theorem rayParity_zero_of_lt_yInf (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (a b : ℤ) (hb : b < yInf d) : rayParity d a b = 0 := by
   have heq : upCross d a b = vertColCross d a := by
@@ -89,7 +89,7 @@ theorem rayParity_zero_of_lt_yInf (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf
   push_cast
   rw [← two_mul, show (2 : ZMod 2) = 0 from by decide, zero_mul]
 
-/-- A closed walk has finitely many inside cells. -/
+/-- **Finiteness of the interior of a closed walk.** A closed walk has finitely many inside cells. -/
 theorem interiorSet_finite (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) :
     (interiorSet d).Finite := by
   apply Set.Finite.subset
@@ -108,7 +108,7 @@ theorem interiorSet_finite (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) 
       exact absurd (rayParity_zero_of_lt_yInf d hclosed c.1 c.2 hlt) (by rw [hc]; decide)
     · exact lt_of_lt_of_le hb (le_ySup d k)
 
-/-- The finite set of cells inside a closed walk (ray parity `1`). See also
+/-- **Finite set of interior cells of a closed walk.** The finite set of cells inside a closed walk (ray parity `1`). See also
   `StatMech.Onsager.WalkCellRegion.interiorCells`, the bounded face of the walk; the two agree for
   simple walks without right turns (`StatMech.Onsager.UmlaufsatzFinal.interiorCells_bridge`). -/
 noncomputable def interiorCells (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) :

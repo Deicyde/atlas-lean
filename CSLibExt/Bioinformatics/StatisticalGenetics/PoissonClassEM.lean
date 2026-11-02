@@ -52,11 +52,11 @@ namespace Cslib.Bioinformatics.StatisticalGenetics.PoissonClassEM
 
 variable {ι : Type*} [Fintype ι] {N : ℕ}
 
-/-- Strictly positive class weights summing to one. -/
+/-- **Strictly positive class weights summing to one.** Strictly positive class weights summing to one. -/
 def PosWeights (ι : Type*) [Fintype ι] : Type _ :=
   {w : ι → ℝ // (∀ c, 0 < w c) ∧ ∑ c, w c = 1}
 
-/-- A gene's data: observed LoF count `o` and positive expected count `E`. -/
+/-- **Loss-of-function count data for a gene.** A gene's data: observed LoF count `o` and positive expected count `E`. -/
 structure GeneData where
   /-- Observed LoF count. -/
   o : ℕ
@@ -64,16 +64,16 @@ structure GeneData where
   E : ℝ
   E_pos : 0 < E
 
-/-- The joint likelihood of a gene's data and class `z`: `w_z P(o | rate_z E)`. -/
+/-- **Joint likelihood of gene data and constraint class.** The joint likelihood of a gene's data and class `z`: `w_z P(o | rate_z E)`. -/
 noncomputable def joint (rate : ι → ℝ) (w : PosWeights ι) (x : GeneData) (z : ι) : ℝ :=
   w.1 z * poissonLik (rate z * x.E) x.o
 
-/-- The joint likelihood is positive for positive rates. -/
+/-- **Positivity of the Poisson mixture joint likelihood.** The joint likelihood is positive for positive rates. -/
 theorem joint_pos {rate : ι → ℝ} (hrate : ∀ c, 0 < rate c) (w : PosWeights ι) (x : GeneData)
     (z : ι) : 0 < joint rate w x z :=
   mul_pos (w.2.1 z) (poissonLik_pos (mul_pos (hrate z) x.E_pos) _)
 
-/-- The expected number of genes in class `z` under the posteriors at weights `w`:
+/-- **Expected number of genes in a constraint class.** The expected number of genes in class `z` under the posteriors at weights `w`:
 `∑_n P_w(z | o_n)`. -/
 noncomputable def mass (rate : ι → ℝ) (xs : Fin N → GeneData) (w : PosWeights ι) (z : ι) : ℝ :=
   ∑ n, posterior (joint rate) w (xs n) z
@@ -83,20 +83,20 @@ private theorem posterior_pos [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c, 
   div_pos (joint_pos hrate w x z)
     (Finset.sum_pos (fun z _ => joint_pos hrate w x z) Finset.univ_nonempty)
 
-/-- The class masses are positive when there is at least one gene. -/
+/-- **Positivity of the class masses.** The class masses are positive when there is at least one gene. -/
 theorem mass_pos [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c, 0 < rate c)
     (xs : Fin N → GeneData) (hN : 0 < N) (w : PosWeights ι) (z : ι) : 0 < mass rate xs w z := by
   have : Nonempty (Fin N) := ⟨⟨0, hN⟩⟩
   exact Finset.sum_pos (fun n _ => posterior_pos hrate w (xs n) z) Finset.univ_nonempty
 
-/-- The class masses add up to the number of genes. -/
+/-- **Class masses sum to the number of genes.** The class masses add up to the number of genes. -/
 theorem sum_mass [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c, 0 < rate c)
     (xs : Fin N → GeneData) (w : PosWeights ι) : ∑ z, mass rate xs w z = N := by
   unfold mass
   rw [Finset.sum_comm]
   simp [(isDist_posterior (fun w x z => joint_pos hrate w x z) w _).2]
 
-/-- The EM update `w'_z = (1/N) ∑_n P_w(z | o_n)`, for `N > 0` genes and positive rates. -/
+/-- **EM update of the Poisson mixture class weights.** The EM update `w'_z = (1/N) ∑_n P_w(z | o_n)`, for `N > 0` genes and positive rates. -/
 noncomputable def emStep [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c, 0 < rate c)
     (xs : Fin N → GeneData) (hN : 0 < N) (w : PosWeights ι) : PosWeights ι :=
   ⟨fun z => mass rate xs w z / N, fun z => div_pos (mass_pos hrate xs hN w z)
@@ -136,7 +136,7 @@ theorem logLik_le_logLik_emStep [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c
     logLik (joint rate) xs w ≤ logLik (joint rate) xs (emStep hrate xs hN w) :=
   logLik_le_of_emQ_le (fun w x z => joint_pos hrate w x z) xs (emQ_le_emStep hrate xs hN w w)
 
-/-- The log-likelihood is monotone along the EM iterates. -/
+/-- **Monotonicity of the log-likelihood along the class-weight EM iterates.** The log-likelihood is monotone along the EM iterates. -/
 theorem logLik_iterate_emStep_monotone [Nonempty ι] {rate : ι → ℝ} (hrate : ∀ c, 0 < rate c)
     (xs : Fin N → GeneData) (hN : 0 < N) (w₀ : PosWeights ι) :
     Monotone fun k => logLik (joint rate) xs ((emStep hrate xs hN)^[k] w₀) :=

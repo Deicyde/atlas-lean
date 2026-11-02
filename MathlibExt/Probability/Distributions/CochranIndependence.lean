@@ -141,7 +141,7 @@ namespace ProbabilityTheory
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
   [MeasurableSpace E] [BorelSpace E]
 
-/-- Under the standard Gaussian law, orthogonal projections onto pairwise orthogonal subspaces are
+/-- **Independence of orthogonal projections of a standard Gaussian.** Under the standard Gaussian law, orthogonal projections onto pairwise orthogonal subspaces are
 mutually independent. -/
 theorem iIndepFun_starProjection_stdGaussian {κ : Type*} [Finite κ] (K : κ → Submodule ℝ E)
     (hK : Pairwise fun k l => K k ⟂ K l) :
@@ -159,14 +159,14 @@ theorem iIndepFun_starProjection_stdGaussian {κ : Type*} [Finite κ] (K : κ �
     covarianceBilin_stdGaussian, innerSL_apply_apply]
   exact (hK hkl).inner_eq ((K k).starProjection_apply_mem x) ((K l).starProjection_apply_mem y)
 
-/-- Under the standard Gaussian law, the squared lengths `‖P_{K k} Z‖²` of the projections onto
+/-- **Independence of squared lengths of orthogonal Gaussian projections.** Under the standard Gaussian law, the squared lengths `‖P_{K k} Z‖²` of the projections onto
 pairwise orthogonal subspaces are mutually independent. -/
 theorem iIndepFun_norm_sq_starProjection_stdGaussian {κ : Type*} [Finite κ]
     (K : κ → Submodule ℝ E) (hK : Pairwise fun k l => K k ⟂ K l) :
     iIndepFun (fun k x => ‖(K k).starProjection x‖ ^ 2) (stdGaussian E) :=
   (iIndepFun_starProjection_stdGaussian K hK).comp (fun _ v => ‖v‖ ^ 2) fun _ => by fun_prop
 
-/-- The mean of the observations `x i` with `grp i = g` (`0` for an empty group). -/
+/-- **Group mean of observations.** The mean of the observations `x i` with `grp i = g` (`0` for an empty group). -/
 noncomputable def groupMean {ι G : Type*} [Fintype ι] [DecidableEq G] (grp : ι → G)
     (x : ι → ℝ) (g : G) : ℝ :=
   (∑ i with grp i = g, x i) / (#{i | grp i = g} : ℕ)
@@ -310,7 +310,7 @@ theorem indepFun_sumSqBetween_sumSqWithin {G : Type*} [Finite G] [DecidableEq G]
     (ψ := fun r : ι → ℝ => ∑ i, r i ^ 2) (by fun_prop) (by fun_prop)
   simpa [Function.comp_def, sum_groupMean] using h
 
-/-- For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)` with `n ≥ 1`, the sample mean has the law
+/-- **Law of the Gaussian sample mean.** For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)` with `n ≥ 1`, the sample mean has the law
 `N(μ, v / n)`. -/
 theorem hasLaw_sampleMean {n : ℕ} (hn : 0 < n) (μ : ℝ) (v : NNReal) :
     HasLaw (fun x : Fin n → ℝ => (∑ i, x i) / n) (gaussianReal μ (v / n))
@@ -407,7 +407,7 @@ theorem iIndepFun_dotProduct_mulVec_pi_gaussianReal {ι : Type*} [Fintype ι] [D
   exact hq k x
 
 
-/-- For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)`, the sample mean is independent of the residual
+/-- **Independence of the Gaussian sample mean and residuals.** For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)`, the sample mean is independent of the residual
 vector `(Xᵢ - X̄)ᵢ`. -/
 theorem indepFun_sampleMean_residual {n : ℕ} (μ : ℝ) (v : NNReal) :
     IndepFun (fun x : Fin n → ℝ => (∑ i, x i) / n)
@@ -421,7 +421,7 @@ theorem indepFun_sampleMean_residual {n : ℕ} (μ : ℝ) (v : NNReal) :
   simp only [hgm] at h'
   exact h'
 
-/-- For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)`, the sample mean `X̄` is independent of the sum of
+/-- **Independence of the Gaussian sample mean and sum of squared deviations.** For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)`, the sample mean `X̄` is independent of the sum of
 squared deviations `∑ (Xᵢ - X̄)² = (n - 1) S²`. -/
 theorem indepFun_sampleMean_sumSqDev {n : ℕ} (μ : ℝ) (v : NNReal) :
     IndepFun (fun x : Fin n → ℝ => (∑ i, x i) / n)

@@ -103,12 +103,12 @@ namespace Game
 
 variable {World Atom : Type u}
 
-/-- A position of the μ-calculus model-checking game: the formula, the world, and
+/-- **Position of the μ-calculus model-checking game.** A position of the μ-calculus model-checking game: the formula, the world, and
 the stack of enclosing fixpoint binders, innermost first. -/
 abbrev GamePosition (Atom World : Type u) :=
   MuFormula Atom × World × List (MuFormula Atom)
 
-/-- The player to move: `true` is Verifier, `false` is Refuter. -/
+/-- **Player of the μ-calculus model-checking game.** The player to move: `true` is Verifier, `false` is Refuter. -/
 abbrev Player := Bool
 
 /-- **Moves of the μ-calculus model-checking game.** Fix a Kripke model $M$ with accessibility
@@ -1172,7 +1172,7 @@ theorem strategyWins_of_move {M : KripkeModel World Atom} {env : ℕ → World �
       have : (fun n => match n with | 0 => p | n + 1 => play n) (n + 1) = play n := rfl
       rwa [this] at h2
 
-/-- The Wins-guided strategy wins every complete finite play from a winning
+/-- **Wins-guided strategy wins finite plays (auxiliary induction).** The Wins-guided strategy wins every complete finite play from a winning
 fragment position. -/
 theorem winsStrategy_wins_finite_aux (M : KripkeModel World Atom)
     {env : ℕ → World → Prop} {p : GamePosition Atom World}
@@ -1240,7 +1240,7 @@ theorem winsStrategy_wins_finite_aux (M : KripkeModel World Atom)
       rw [playLast_cons hps.ne_nil]
       exact hlast'
 
-/-- The Wins-guided strategy wins every complete finite play from a winning
+/-- **Wins-guided strategy wins every complete finite play.** The Wins-guided strategy wins every complete finite play from a winning
 fragment position. -/
 theorem winsStrategy_wins_finite (M : KripkeModel World Atom)
     {env : ℕ → World → Prop} :
@@ -1686,7 +1686,7 @@ theorem canonicalNext_pos_of_owner {M : KripkeModel World Atom}
   rw [dite_eq_left hExists, ite_eq_left hOwn, heq]
   exact fragOfGamePos_toMu φ' w'
 
-/-- The canonical positional strategy induced by a bespoke strategy. -/
+/-- **Positional strategy induced by a bespoke strategy.** The canonical positional strategy induced by a bespoke strategy. -/
 noncomputable def fragStrategy (M : KripkeModel World Atom)
     (env : ℕ → World → Prop) (σ : Strategy M) :
     (fragmentGame M env).PositionalStrategy Cslib.Games.Player.even where

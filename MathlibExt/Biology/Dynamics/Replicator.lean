@@ -55,18 +55,18 @@ namespace MathlibExt.Biology.Dynamics.Replicator
 
 variable {ι : Type*} [Fintype ι]
 
-/-- The mean fitness `f̄(x) = ∑ i, x i * f x i` of the population state `x` for the fitness
+/-- **Mean fitness of a population state.** The mean fitness `f̄(x) = ∑ i, x i * f x i` of the population state `x` for the fitness
 function `f`. -/
 def meanFitness (f : (ι → ℝ) → ι → ℝ) (x : ι → ℝ) : ℝ :=
   ∑ i, x i * f x i
 
-/-- `x` solves the replicator equation `x_i' = x_i (f_i(x) - f̄(x))` for all times `t ≥ 0`. -/
+/-- **Solution of the replicator equation.** `x` solves the replicator equation `x_i' = x_i (f_i(x) - f̄(x))` for all times `t ≥ 0`. -/
 structure IsSolution (f : (ι → ℝ) → ι → ℝ) (x : ℝ → ι → ℝ) : Prop where
   /-- Each frequency grows at the rate of its excess fitness. -/
   hasDerivAt : ∀ i t, 0 ≤ t →
     HasDerivAt (fun s => x s i) (x t i * (f (x t) i - meanFitness f (x t))) t
 
-/-- `x` is a rest point of the replicator equation: `x_i (f_i(x) - f̄(x)) = 0` for all `i`. -/
+/-- **Rest point of the replicator equation.** `x` is a rest point of the replicator equation: `x_i (f_i(x) - f̄(x)) = 0` for all `i`. -/
 def IsRestPoint (f : (ι → ℝ) → ι → ℝ) (x : ι → ℝ) : Prop :=
   ∀ i, x i * (f x i - meanFitness f x) = 0
 
@@ -81,7 +81,7 @@ namespace IsSolution
 
 variable {f : (ι → ℝ) → ι → ℝ} {x : ℝ → ι → ℝ}
 
-/-- The total frequency `∑ x_i` evolves by `(∑ x_i)' = f̄(x) (1 - ∑ x_i)`. -/
+/-- **Evolution of the total frequency under replicator dynamics.** The total frequency `∑ x_i` evolves by `(∑ x_i)' = f̄(x) (1 - ∑ x_i)`. -/
 theorem hasDerivAt_sum (h : IsSolution f x) {t : ℝ} (ht : 0 ≤ t) :
     HasDerivAt (fun s => ∑ i, x s i) (meanFitness f (x t) * (1 - ∑ i, x t i)) t := by
   have hs := HasDerivAt.fun_sum (u := Finset.univ) fun i _ => h.hasDerivAt i t ht

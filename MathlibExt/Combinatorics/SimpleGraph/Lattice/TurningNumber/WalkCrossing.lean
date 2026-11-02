@@ -48,10 +48,10 @@ open StatMech.Onsager.NoDoubleWind
 
 variable {n : ℕ} [NeZero n]
 
-/-- The direction `w` is vertical (north or south). -/
+/-- **Vertical lattice direction.** The direction `w` is vertical (north or south). -/
 def isVertEdge (w : Fin 4) : Prop := w = 1 ∨ w = 3
 
-/-- The direction `w` is horizontal (east or west). -/
+/-- **Horizontal lattice direction.** The direction `w` is horizontal (east or west). -/
 def isHorizEdge (w : Fin 4) : Prop := w = 0 ∨ w = 2
 
 /-- Verticality of a direction is decidable. -/
@@ -59,13 +59,13 @@ instance decVert (w : Fin 4) : Decidable (isVertEdge w) := by unfold isVertEdge;
 /-- Horizontality of a direction is decidable. -/
 instance decHoriz (w : Fin 4) : Decidable (isHorizEdge w) := by unfold isHorizEdge; infer_instance
 
-/-- The `y`-coordinate recursion of a closed walk. See also
+/-- **Recursion for the y-coordinate of a walk step.** The `y`-coordinate recursion of a closed walk. See also
   `StatMech.Onsager.NoDoubleWind2.yco_succ`. -/
 theorem snd_step (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     (pos d (k + 1)).2 = (pos d k).2 + (stepOf (d k)).2 := by
   rw [pos_succ d hclosed k, Prod.snd_add]
 
-/-- The `x`-coordinate recursion of a closed walk. See also
+/-- **Recursion for the x-coordinate of a walk step.** The `x`-coordinate recursion of a closed walk. See also
   `StatMech.Onsager.NoDoubleWind2.xco_succ`. -/
 theorem fst_step (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     (pos d (k + 1)).1 = (pos d k).1 + (stepOf (d k)).1 := by
@@ -111,13 +111,13 @@ theorem snd_step_bound (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
   have h := stepOf_snd (d k)
   rw [snd_step d hclosed k]; omega
 
-/-- The number of vertical steps of the walk crossing the horizontal line `y = m + 1/2`, i.e.
+/-- **Number of crossings of a horizontal line.** The number of vertical steps of the walk crossing the horizontal line `y = m + 1/2`, i.e.
   vertical steps between heights `m` and `m + 1`. -/
 def fullLineCross (d : Fin n → Fin 4) (m : ℤ) : ℕ :=
   (Finset.univ.filter (fun k : Fin n =>
     isVertEdge (d k) ∧ min ((pos d k).2) ((pos d (k + 1)).2) = m)).card
 
-/-- A closed walk crosses the line `y = m + 1/2` upwards as often as downwards. -/
+/-- **A closed walk crosses a horizontal line equally often up and down.** A closed walk crosses the line `y = m + 1/2` upwards as often as downwards. -/
 theorem upDown_card_eq (d : Fin n → Fin 4) (_hclosed : ∑ i, stepOf (d i) = 0) (m : ℤ) :
     (Finset.univ.filter
         (fun k : Fin n => (pos d k).2 ≤ m ∧ m + 1 ≤ (pos d (k + 1)).2)).card
@@ -147,7 +147,7 @@ theorem upDown_card_eq (d : Fin n → Fin 4) (_hclosed : ∑ i, stepOf (d i) = 0
   rw [Finset.sum_sub_distrib, Finset.sum_boole, Finset.sum_boole, sub_eq_zero] at hsum
   exact_mod_cast hsum
 
-/-- A closed walk crosses each horizontal line `y = m + 1/2` an even number of times. -/
+/-- **A closed walk crosses each horizontal line an even number of times.** A closed walk crosses each horizontal line `y = m + 1/2` an even number of times. -/
 theorem fullLineCross_even (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (m : ℤ) :
     Even (fullLineCross d m) := by
   classical
@@ -200,7 +200,7 @@ theorem fullLineCross_even (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) 
   rw [fullLineCross, hsplit, Finset.card_union_of_disjoint hdisj, heq]
   exact ⟨_, rfl⟩
 
-/-- The lattice point `p` lies on the closed segment traversed by step `k`. -/
+/-- **A lattice point lies on a walk step.** The lattice point `p` lies on the closed segment traversed by step `k`. -/
 def onEdge (d : Fin n → Fin 4) (k : Fin n) (p : ℤ × ℤ) : Prop :=
   (min (pos d k).1 (pos d (k + 1)).1 ≤ p.1 ∧ p.1 ≤ max (pos d k).1 (pos d (k + 1)).1) ∧
     (min (pos d k).2 (pos d (k + 1)).2 ≤ p.2 ∧ p.2 ≤ max (pos d k).2 (pos d (k + 1)).2)
@@ -237,7 +237,7 @@ theorem horiz_vert_cross_shared_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, s
     (p = pos d k ∨ p = pos d (k + 1)) ∧ (p = pos d j ∨ p = pos d (j + 1)) :=
   ⟨onEdge_horiz_endpoint d hclosed k hk p hpk, onEdge_vert_endpoint d hclosed j hj p hpj⟩
 
-/-- If a horizontal and a vertical step that share no index endpoint meet at a point, the walk
+/-- **Crossing steps force a repeated vertex.** If a horizontal and a vertical step that share no index endpoint meet at a point, the walk
   visits some vertex twice. -/
 theorem edges_cross_not_injective (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (k j : Fin n) (hk : isHorizEdge (d k)) (hj : isVertEdge (d j))
@@ -252,7 +252,7 @@ theorem edges_cross_not_injective (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf
   · exact hne2 (hinj (hak.symm.trans hbj))
   · exact hne4 (hinj (hak.symm.trans hbj))
 
-/-- The number of vertical steps crossing the line `y = m + 1/2` strictly to the right of `x =
+/-- **Number of crossings of a horizontal ray.** The number of vertical steps crossing the line `y = m + 1/2` strictly to the right of `x =
   qx`. -/
 def rayCross (d : Fin n → Fin 4) (m qx : ℤ) : ℕ :=
   (Finset.univ.filter (fun k : Fin n =>

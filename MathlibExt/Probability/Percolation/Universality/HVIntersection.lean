@@ -47,7 +47,7 @@ open StatMech.Lattice
 open StatMech.RSW.Box
 open StatMech.RSW.Strip
 
-/-- For the configuration `ω`: whenever `x_L` (left side of `[α, β] × [c, d]`) is joined to the
+/-- **Horizontal and vertical crossings meet.** For the configuration `ω`: whenever `x_L` (left side of `[α, β] × [c, d]`) is joined to the
 right side and `x_B` (bottom of the overlap `[m, m'] × [c, d]`) is joined to its top, there is a
 point `z` of the overlap reached from `x_L` inside `[α, β] × [c, d]` and from `x_B` inside the
 overlap. -/
@@ -84,12 +84,12 @@ theorem hvIntersection_of_meet (ω : ConfigSpace (Sym2 (Site 2)))
       ⟨(yR : Site 2), rightSide_subset yR.2⟩ := hcRq.symm.trans hcR
   exact hv_glue ham hm'b xL.2 hpO hpL hcLp hqO hcPQ yR.2 hqR hcQyR
 
-/-- The open cluster of `x_B` inside the overlap rectangle `[m, m'] × [c, d]`. -/
+/-- **Open cluster inside the overlap rectangle.** The open cluster of `x_B` inside the overlap rectangle `[m, m'] × [c, d]`. -/
 def overlapComp (ω : ConfigSpace (Sym2 (Site 2))) (m m' c d : ℤ)
     (xB : Site 2) (hxB : xB ∈ rect m m' c d) : Set (Site 2) :=
   {z | ∃ hz : z ∈ rect m m' c d, ConnectedWithin 2 ω (rect m m' c d) ⟨xB, hxB⟩ ⟨z, hz⟩}
 
-/-- For the configuration `ω` and every point `x_B` of the overlap `[m, m'] × [c, d]`, every open
+/-- **Every overlap cluster meets every horizontal crossing.** For the configuration `ω` and every point `x_B` of the overlap `[m, m'] × [c, d]`, every open
 left–right path of `[α, β] × [c, d]` meets the open cluster of `x_B` inside the overlap.
 For `c < d` this fails for some `ω`; see `CrossingSeparatesH` for the version that only
 concerns bottom points `x_B` joined to the top. -/

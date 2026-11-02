@@ -128,7 +128,7 @@ namespace MeasureTheory
 
 universe uX vM vP vE
 
-/-- The integral `p ↦ ∫ x, w x • Ψ (c x, p) ∂μ` of a smooth compactly
+/-- **Smoothness of compactly supported parameter integrals.** The integral `p ↦ ∫ x, w x • Ψ (c x, p) ∂μ` of a smooth compactly
 supported function is smooth in the parameter `p`. -/
 theorem contDiff_integral_smul_comp_of_contDiff_of_hasCompactSupport
     {X : Type uX} [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X]

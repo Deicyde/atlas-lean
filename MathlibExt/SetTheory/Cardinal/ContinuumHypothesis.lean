@@ -24,7 +24,7 @@ namespace MetaMathlibExt
 
 -- Logic 3: Continuum Hypothesis (CH)
 
-/-- CH: 2^{ℵ₀}=ℵ₁ -/
+/-- **Continuum hypothesis.** CH: 2^{ℵ₀}=ℵ₁ -/
 def ContinuumHypothesis.{u} : Prop := (2 : Cardinal.{u}) ^ ℵ₀ = ℵ₁
 
 -- Logic 483: Theorems concerning the Continuum Hypothesis
@@ -50,7 +50,7 @@ def ContinuumHypothesis.{u} : Prop := (2 : Cardinal.{u}) ^ ℵ₀ = ℵ₁
       cardinality continuum.
 -/
 
-/-- 1. The continuum hypothesis holds if and only if the continuum equals ℵ₁.   2. The continuum
+/-- **Equivalent forms of the continuum hypothesis.** 1. The continuum hypothesis holds if and only if the continuum equals ℵ₁.   2. The continuum
    hypothesis holds if and only if the continuum is at most ℵ₁.   3. The continuum hypothesis holds
    if and only if the reals have cardinality ℵ₁, i.e. |ℝ| =      ℵ₁.   4. The continuum hypothesis
    holds if and only if there is no cardinal strictly between ℵ₀ and the continuum.   5.

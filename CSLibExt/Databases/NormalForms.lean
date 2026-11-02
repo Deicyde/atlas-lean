@@ -249,7 +249,7 @@ theorem losslessJoin_iff {F : Finset (FD A)} {R₁ R₂ : Finset A} {d₀ d₁ :
 /-! ### Joins of projections -/
 
 variable (D) in
-/-- The relation containing only the empty tuple, the unit of the natural join. -/
+/-- **Unit relation of the natural join.** The relation containing only the empty tuple, the unit of the natural join. -/
 def joinUnit : Finset (Tuple A D) := {fun _ => none}
 
 omit [DecidableEq A] in

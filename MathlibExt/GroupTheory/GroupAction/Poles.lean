@@ -40,7 +40,7 @@ namespace MulAction
 
 variable {G X : Type*} [Group G] [MulAction G X]
 
-/-- A pole of a group action is a point fixed by some nonidentity element. -/
+/-- **Poles of a group action.** A pole of a group action is a point fixed by some nonidentity element. -/
 def poles (G : Type*) (X : Type*) [Group G] [MulAction G X] : Set X :=
   {x : X | ∃ g : G, g ≠ 1 ∧ g • x = x}
 

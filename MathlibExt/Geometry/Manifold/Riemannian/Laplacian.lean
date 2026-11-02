@@ -60,7 +60,7 @@ variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimension
   [RiemannianBundle (fun x : M ↦ TangentSpace I x)]
   [IsContMDiffRiemannianBundle I ∞ E (fun x : M ↦ TangentSpace I x)]
 
-/-- The Laplace-Beltrami operator applied to `f : M → ℝ` at `x`: `Δf(x)` is the metric
+/-- **Laplace–Beltrami operator.** The Laplace-Beltrami operator applied to `f : M → ℝ` at `x`: `Δf(x)` is the metric
 trace `∑ i, hessian I f x (e i) (e i)` over the orthonormal basis
 `e = stdOrthonormalBasis ℝ (TangentSpace I x)`, the same basis convention as
 `Manifold.scalarCurvature`. For the textbook Hessian, which is bilinear, this trace

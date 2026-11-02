@@ -53,7 +53,7 @@ namespace StatMech.SLE
 
 @[simp] lemma mem_upperHalfPlane {z : ℂ} : z ∈ upperHalfPlaneSet ↔ 0 < z.im := Iff.rfl
 
-/-- The closed upper half-plane `{z : 0 ≤ Im z}`. -/
+/-- **Closed upper half-plane.** The closed upper half-plane `{z : 0 ≤ Im z}`. -/
 def closedUpperHalfPlane : Set ℂ := {z : ℂ | 0 ≤ z.im}
 
 @[simp] lemma mem_closedUpperHalfPlane {z : ℂ} : z ∈ closedUpperHalfPlane ↔ 0 ≤ z.im := Iff.rfl
@@ -64,14 +64,14 @@ lemma isClosed_closedUpperHalfPlane : IsClosed closedUpperHalfPlane := by
 lemma upperHalfPlane_subset_closed : upperHalfPlaneSet ⊆ closedUpperHalfPlane :=
   fun _ hz => le_of_lt (mem_upperHalfPlane.mp hz)
 
-/-- The real axis `{z : Im z = 0}` in `ℂ`. -/
+/-- **Real axis in the complex plane.** The real axis `{z : Im z = 0}` in `ℂ`. -/
 def realLine : Set ℂ := {z : ℂ | z.im = 0}
 
 @[simp] lemma mem_realLine {z : ℂ} : z ∈ realLine ↔ z.im = 0 := Iff.rfl
 
 lemma ofReal_mem_realLine (x : ℝ) : (x : ℂ) ∈ realLine := by simp [realLine]
 
-/-- A compact `ℍ`-hull: a bounded subset `K` of `ℍ`, relatively closed in `ℍ`, whose complement
+/-- **Compact hull in the upper half-plane.** A compact `ℍ`-hull: a bounded subset `K` of `ℍ`, relatively closed in `ℍ`, whose complement
 `ℍ \ K` is open and simply connected. -/
 structure IsCompactHull (K : Set ℂ) : Prop where
   subset : K ⊆ upperHalfPlaneSet
@@ -80,12 +80,12 @@ structure IsCompactHull (K : Set ℂ) : Prop where
   complement_open : IsOpen (upperHalfPlaneSet \ K)
   complement_simplyConnected : IsSimplyConnected (upperHalfPlaneSet \ K)
 
-/-- The complement of a compact `ℍ`-hull is connected. -/
+/-- **Complement of a compact hull is connected.** The complement of a compact `ℍ`-hull is connected. -/
 lemma IsCompactHull.complement_connected {K : Set ℂ} (hK : IsCompactHull K) :
     IsConnected (upperHalfPlaneSet \ K) :=
   hK.complement_simplyConnected.isPathConnected.isConnected
 
-/-- The complex upper half-plane is simply connected. -/
+/-- **The upper half-plane is simply connected.** The complex upper half-plane is simply connected. -/
 lemma isSimplyConnected_upperHalfPlane : IsSimplyConnected upperHalfPlaneSet := by
   let e : UpperHalfPlane ≃ₜ upperHalfPlaneSet :=
     UpperHalfPlane.isEmbedding_coe.toHomeomorph.trans
@@ -100,7 +100,7 @@ lemma isCompactHull_empty : IsCompactHull (∅ : Set ℂ) where
   complement_simplyConnected := by
     simpa only [Set.sdiff_empty] using isSimplyConnected_upperHalfPlane
 
-/-- `g` is hydrodynamically normalized at infinity with half-plane capacity `a`: `g(z) - z → 0`
+/-- **Hydrodynamic normalization with half-plane capacity.** `g` is hydrodynamically normalized at infinity with half-plane capacity `a`: `g(z) - z → 0`
 and `z (g(z) - z) → a` as `z → ∞`, i.e. `g(z) = z + a/z + o(1/z)`. -/
 def HasHalfPlaneCapacity (g : ℂ → ℂ) (a : ℝ) : Prop :=
   Tendsto (fun z => g z - z) (cocompact ℂ) (𝓝 0) ∧
@@ -119,21 +119,21 @@ lemma HasHalfPlaneCapacity.unique {g : ℂ → ℂ} {a b : ℝ}
   have := tendsto_nhds_unique ha.2 hb.2
   exact_mod_cast this
 
-/-- The chordal Loewner vector field `w ↦ 2 / (w - W_t)` at time `t`. -/
+/-- **Chordal Loewner vector field.** The chordal Loewner vector field `w ↦ 2 / (w - W_t)` at time `t`. -/
 noncomputable def loewnerField (W : ℝ → ℝ) (t : ℝ) (w : ℂ) : ℂ := 2 / (w - (W t : ℂ))
 
 @[simp] lemma loewnerField_apply (W : ℝ → ℝ) (t : ℝ) (w : ℂ) :
     loewnerField W t w = 2 / (w - (W t : ℂ)) := rfl
 
-/-- `t ↦ g_t(z)` satisfies the Loewner equation `∂_t g_t(z) = 2 / (g_t(z) - W_t)` at time `t`. -/
+/-- **Solution of the Loewner equation at a time.** `t ↦ g_t(z)` satisfies the Loewner equation `∂_t g_t(z) = 2 / (g_t(z) - W_t)` at time `t`. -/
 def IsLoewnerSolutionAt (W : ℝ → ℝ) (g : ℝ → ℂ → ℂ) (z : ℂ) (t : ℝ) : Prop :=
   HasDerivAt (fun s => g s z) (loewnerField W t (g t z)) t
 
-/-- `t ↦ g_t(z)` satisfies the Loewner equation on `s` (derivatives within `s`). -/
+/-- **Solution of the Loewner equation on a set of times.** `t ↦ g_t(z)` satisfies the Loewner equation on `s` (derivatives within `s`). -/
 def IsLoewnerSolutionOn (W : ℝ → ℝ) (g : ℝ → ℂ → ℂ) (z : ℂ) (s : Set ℝ) : Prop :=
   ∀ t ∈ s, HasDerivWithinAt (fun u => g u z) (loewnerField W t (g t z)) s t
 
-/-- The Loewner trajectory from `z` extends in `ℍ` beyond time `t`. This is the intrinsic
+/-- **Forward extension of a Loewner trajectory.** The Loewner trajectory from `z` extends in `ℍ` beyond time `t`. This is the intrinsic
 maximal-lifetime condition used to determine the unswallowed domain. -/
 def HasLoewnerForwardExtension (W : ℝ → ℝ) (z : ℂ) (t : ℝ) : Prop :=
   z ∈ upperHalfPlaneSet ∧ ∃ T, t < T ∧ ∃ γ : ℝ → ℂ,
@@ -142,13 +142,13 @@ def HasLoewnerForwardExtension (W : ℝ → ℝ) (z : ℂ) (t : ℝ) : Prop :=
         HasDerivWithinAt γ (loewnerField W s (γ s)) (Set.Icc (0 : ℝ) T) s) ∧
       ∀ s ∈ Set.Icc (0 : ℝ) T, γ s ∈ upperHalfPlaneSet
 
-/-- `g_0 = id` and `t ↦ g_t(z)` solves the Loewner equation for every `z ∈ ℂ` and every `t ≥ 0`,
+/-- **Loewner equation without domain restriction.** `g_0 = id` and `t ↦ g_t(z)` solves the Loewner equation for every `z ∈ ℂ` and every `t ≥ 0`,
 with no domain restriction (compare `SatisfiesMaximalLoewnerEquation`, where `z` ranges over the
 unswallowed domain `D_t`). -/
 def SatisfiesLoewnerEquation (W : ℝ → ℝ) (g : ℝ → ℂ → ℂ) : Prop :=
   (∀ z, g 0 z = z) ∧ ∀ z, ∀ t ∈ Set.Ici (0 : ℝ), IsLoewnerSolutionAt W g z t
 
-/-- The maximal chordal Loewner evolution with domains `D_t`. The domains are exactly the points
+/-- **Maximal chordal Loewner evolution.** The maximal chordal Loewner evolution with domains `D_t`. The domains are exactly the points
 whose trajectories extend beyond `t`, and `g_t : D_t → ℍ` is a conformal bijection. -/
 def SatisfiesMaximalLoewnerEquation
     (W : ℝ → ℝ) (D : ℝ → Set ℂ) (g : ℝ → ℂ → ℂ) : Prop :=
@@ -194,7 +194,7 @@ lemma conformalAt (h : SatisfiesMaximalLoewnerEquation W D g)
 
 end SatisfiesMaximalLoewnerEquation
 
-/-- A standard real Brownian motion indexed by `ℝ` (used for `t ≥ 0`): `B_0 = 0` a.s., continuous
+/-- **Standard real Brownian motion.** A standard real Brownian motion indexed by `ℝ` (used for `t ≥ 0`): `B_0 = 0` a.s., continuous
 paths a.s., Gaussian, with independent increments `B_t - B_s ~ N(0, t - s)`.
 
 See also Mathlib's `ProbabilityTheory.IsPreBrownianReal` (time `ℝ≥0`, finite-dimensional laws). -/
@@ -209,14 +209,14 @@ structure IsStandardBrownianMotion {Ω : Type*} [MeasurableSpace Ω]
   indep_increments : ∀ s t u v : ℝ, s ≤ t → t ≤ u → u ≤ v →
     IndepFun (fun ω => B t ω - B s ω) (fun ω => B v ω - B u ω) P
 
-/-- The SLE`_κ` driving function `W_t = √κ B_t(ω)`. -/
+/-- **SLE driving function.** The SLE`_κ` driving function `W_t = √κ B_t(ω)`. -/
 noncomputable def sleDriving {Ω : Type*} (κ : ℝ) (B : ℝ → Ω → ℝ) (ω : Ω) : ℝ → ℝ :=
   fun t => Real.sqrt κ * B t ω
 
 @[simp] lemma sleDriving_apply {Ω : Type*} (κ : ℝ) (B : ℝ → Ω → ℝ) (ω : Ω) (t : ℝ) :
     sleDriving κ B ω t = Real.sqrt κ * B t ω := rfl
 
-/-- `(D, g)` is chordal SLE`_κ` in `ℍ` from `0` to `∞`: `κ ≥ 0`, `B` is a standard Brownian
+/-- **Chordal Schramm–Loewner evolution.** `(D, g)` is chordal SLE`_κ` in `ℍ` from `0` to `∞`: `κ ≥ 0`, `B` is a standard Brownian
 motion and almost surely `g` solves the maximal Loewner equation with driving function `√κ B`.
 This is a definition only; existence of SLE is not proved. -/
 structure IsChordalSLE {Ω : Type*} [MeasurableSpace Ω]

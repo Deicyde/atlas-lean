@@ -62,7 +62,7 @@ lemma re_loewnerField (W : ℝ → ℝ) (t : ℝ) (w : ℂ) :
   rw [loewnerField_apply, Complex.div_re]
   simp [Complex.normSq]
 
-/-- The reflection `z ↦ -z̄` across the imaginary axis. -/
+/-- **Reflection across the imaginary axis.** The reflection `z ↦ -z̄` across the imaginary axis. -/
 def loewnerReflection (z : ℂ) : ℂ := -conj z
 
 @[simp] lemma loewnerReflection_re (z : ℂ) : (loewnerReflection z).re = -z.re := by
@@ -270,7 +270,7 @@ lemma tendsto_self_div_cocompact {f : ℂ → ℂ}
   apply hinv.congr'
   filter_upwards with z; rw [inv_div]
 
-/-- Half-plane capacity is additive under composition: `hcap(f ∘ g) = hcap(f) + hcap(g)`. -/
+/-- **Additivity of half-plane capacity under composition.** Half-plane capacity is additive under composition: `hcap(f ∘ g) = hcap(f) + hcap(g)`. -/
 theorem hasHalfPlaneCapacity_comp {f g : ℂ → ℂ} {a b : ℝ}
     (hf : HasHalfPlaneCapacity f a) (hg : HasHalfPlaneCapacity g b) :
     HasHalfPlaneCapacity (g ∘ f) (a + b) := by
@@ -312,7 +312,7 @@ theorem hasHalfPlaneCapacity_comp_id_left {f : ℂ → ℂ} {a : ℝ}
   have := hasHalfPlaneCapacity_comp hf hasHalfPlaneCapacity_id
   rwa [add_zero] at this
 
-/-- The family `g_t` has half-plane capacity `a t` for every `t ≥ 0`. -/
+/-- **Half-plane capacity rate of a Loewner family.** The family `g_t` has half-plane capacity `a t` for every `t ≥ 0`. -/
 def HasCapacityRate (g : ℝ → ℂ → ℂ) (a : ℝ) : Prop :=
   ∀ t ∈ Set.Ici (0 : ℝ), HasHalfPlaneCapacity (g t) (a * t)
 
@@ -329,7 +329,7 @@ theorem hcap_linear_of_decomposition {gs gincr gt : ℂ → ℂ} {cs ct : ℝ}
   have := hasHalfPlaneCapacity_comp hs hincr
   rwa [add_sub_cancel] at this
 
-/-- An increasing family `(K_t)` of compact `ℍ`-hulls. -/
+/-- **Increasing family of compact hulls.** An increasing family `(K_t)` of compact `ℍ`-hulls. -/
 def MonotoneHullFamily (K : ℝ → Set ℂ) : Prop :=
   (∀ t, IsCompactHull (K t)) ∧ Monotone K
 

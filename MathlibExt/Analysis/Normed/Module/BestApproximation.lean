@@ -70,7 +70,7 @@ Analysis, Sobolev Spaces and Partial Differential Equations*, Chapter 5
 
 namespace MathlibExt.Analysis.Normed.Module.BestApproximation
 
-/-- Every point of a normed space has a nearest point in a
+/-- **Existence of best approximations in finite-dimensional subspaces.** Every point of a normed space has a nearest point in a
 finite-dimensional subspace (proximinality). No completeness hypothesis on
 the ambient space is needed: completeness enters only through the
 finite-dimensional subspace, whose closed balls are compact. -/
@@ -129,7 +129,7 @@ theorem exists_bestApproximation_of_finiteDimensional {𝕜 : Type*} [RCLike �
   rw [le_antisymm hle hge0]
   exact hge
 
-/-- In a strictly convex real normed space, a convex set contains at most one
+/-- **Uniqueness of best approximation in strictly convex spaces.** In a strictly convex real normed space, a convex set contains at most one
 point nearest to a given point: the midpoint of two distinct nearest points
 would be strictly closer, by `norm_midpoint_lt_iff`. -/
 theorem eq_of_isBestApproximation_of_strictConvexSpace {E : Type*}
@@ -149,7 +149,7 @@ theorem eq_of_isBestApproximation_of_strictConvexSpace {E : Type*}
     exact (norm_midpoint_lt_iff hd).mpr huv
   exact (not_lt_of_ge (h₁ _ hmid)) hlt
 
-/-- Existence plus uniqueness: a finite-dimensional subspace of a strictly
+/-- **Unique best approximation in finite-dimensional subspaces.** Existence plus uniqueness: a finite-dimensional subspace of a strictly
 convex real normed space admits a unique best approximation to every
 point. -/
 theorem exists_unique_bestApproximation_of_finiteDimensional {E : Type*}

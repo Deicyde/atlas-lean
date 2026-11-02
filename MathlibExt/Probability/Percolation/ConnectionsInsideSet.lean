@@ -51,7 +51,7 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- The event `{o ↔ x inside S}`: `o` and `x` lie in `S` and are joined by an open path in `S`. -/
+/-- **Event of a connection inside a finite set.** The event `{o ↔ x inside S}`: `o` and `x` lie in `S` and are joined by an open path in `S`. -/
 def withinConnEvent (d : ℕ) (S : Set (Site d)) (o x : Site d) :
     Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | ∃ (ho : o ∈ S) (hx : x ∈ S), ConnectedWithin d ω S ⟨o, ho⟩ ⟨x, hx⟩}
@@ -63,7 +63,7 @@ theorem mem_withinConnEvent {S : Set (Site d)} {o x : Site d}
       ∃ (ho : o ∈ S) (hx : x ∈ S), ConnectedWithin d ω S ⟨o, ho⟩ ⟨x, hx⟩ :=
   Iff.rfl
 
-/-- All unordered pairs of sites of the finite set `S`. -/
+/-- **Pairs of sites of a finite set.** All unordered pairs of sites of the finite set `S`. -/
 noncomputable def edgesWithinFinset (S : Finset (Site d)) : Finset (Sym2 (Site d)) :=
   (S ×ˢ S).image (fun p => s(p.1, p.2))
 

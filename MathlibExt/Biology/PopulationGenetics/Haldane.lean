@@ -134,7 +134,7 @@ private lemma root_coarse_bound (s q : ℝ) (hs : 0 < s) (hs' : s < 1 / 2)
 
 /-! ### The Poisson offspring law -/
 
-/-- The Poisson(`r`) generating function: `∑ e^{-r} r^k / k! x^k = exp (r (x - 1))`. -/
+/-- **Generating function of the Poisson distribution.** The Poisson(`r`) generating function: `∑ e^{-r} r^k / k! x^k = exp (r (x - 1))`. -/
 theorem pgf_poissonMeasure (r : ℝ≥0) (x : ℝ) :
     pgf id (poissonMeasure r) x = exp (r * (x - 1)) := by
   have hint : Integrable (fun n : ℕ => x ^ n) (poissonMeasure r) := by
@@ -162,7 +162,7 @@ theorem pgf_poissonMeasure (r : ℝ≥0) (x : ℝ) :
       congr 1
       ring
 
-/-- The Poisson(`r`) law has mean `r`. -/
+/-- **Mean of the Poisson distribution.** The Poisson(`r`) law has mean `r`. -/
 theorem mean_poissonMeasure (r : ℝ≥0) : GaltonWatson.mean (poissonMeasure r) = r := by
   have hsum : HasSum (fun n : ℕ => (n : ℝ) * (exp (-r) * r ^ n / (n)!)) r := by
     rw [← hasSum_nat_add_iff' 1]
@@ -186,14 +186,14 @@ theorem mean_poissonMeasure (r : ℝ≥0) : GaltonWatson.mean (poissonMeasure r)
         rw [← ENNReal.ofReal_tsum_of_nonneg hnn hsum.summable, hsum.tsum_eq]
     _ = r := ENNReal.ofReal_coe_nnreal
 
-/-- Haldane's survival probability `π(s) = 1 - q(s)` of a mutant with selective advantage `s`
+/-- **Haldane's survival probability of a mutant.** Haldane's survival probability `π(s) = 1 - q(s)` of a mutant with selective advantage `s`
 per generation, whose number of copies in the next generation is Poisson with mean `1 + s`.
 The model needs `s ≥ -1`; for `s < -1` the mean is truncated to `0` (`Real.toNNReal`), the
 mutant leaves no copies, and `π(s) = 0`. -/
 noncomputable def survivalProb (s : ℝ) : ℝ :=
   1 - GaltonWatson.extinctionProb (poissonMeasure (1 + s).toNNReal)
 
-/-- `π(s)` solves Haldane's equation `1 - π = exp (-(1 + s) π)`. -/
+/-- **Haldane's equation for the survival probability.** `π(s)` solves Haldane's equation `1 - π = exp (-(1 + s) π)`. -/
 theorem one_sub_survivalProb {s : ℝ} (hs : -1 ≤ s) :
     1 - survivalProb s = exp (-(1 + s) * survivalProb s) := by
   have hfix := (GaltonWatson.isLeast_extinctionProb (poissonMeasure (1 + s).toNNReal)).1.2
@@ -203,7 +203,7 @@ theorem one_sub_survivalProb {s : ℝ} (hs : -1 ≤ s) :
   congr 1
   ring
 
-/-- A beneficial mutant survives with positive probability. -/
+/-- **Beneficial mutant survives with positive probability.** A beneficial mutant survives with positive probability. -/
 theorem survivalProb_pos {s : ℝ} (hs : 0 < s) : 0 < survivalProb s := by
   set ν := poissonMeasure (1 + s).toNNReal
   have hr : ((1 + s).toNNReal : ℝ) = 1 + s := Real.coe_toNNReal _ (by linarith)
@@ -224,7 +224,7 @@ theorem survivalProb_pos {s : ℝ} (hs : 0 < s) : 0 < survivalProb s := by
   rw [survivalProb, sub_pos]
   exact lt_of_le_of_ne hq.2 hne
 
-/-- The survival probability is less than `1`: the mutant leaves no copies with positive
+/-- **Survival probability is less than one.** The survival probability is less than `1`: the mutant leaves no copies with positive
 probability `exp (-(1 + s))`. (For `s < -1`, outside the model, `π(s) = 0`.) -/
 theorem survivalProb_lt_one (s : ℝ) : survivalProb s < 1 := by
   have hfix := (GaltonWatson.isLeast_extinctionProb (poissonMeasure (1 + s).toNNReal)).1.2
@@ -232,7 +232,7 @@ theorem survivalProb_lt_one (s : ℝ) : survivalProb s < 1 := by
   rw [survivalProb, sub_lt_self_iff, ← hfix]
   exact exp_pos _
 
-/-- The survival probability is non-negative. -/
+/-- **Nonnegativity of the survival probability.** The survival probability is non-negative. -/
 theorem survivalProb_nonneg (s : ℝ) : 0 ≤ survivalProb s := by
   rw [survivalProb, sub_nonneg]
   exact (GaltonWatson.isLeast_extinctionProb _).1.1.2
@@ -288,7 +288,7 @@ private theorem tendsto_div_of_one_sub_eq_exp (p : ℝ → ℝ) (hpos : ∀ s, 0
     have := (root_bounds s (p s) hs' (hpos s hs') (heq s hs')).2
     nlinarith only [this]
 
-/-- Haldane's approximation (Haldane 1927): `π(s) / s → 2` as `s → 0⁺`. -/
+/-- **Haldane's approximation $\pi(s) \approx 2s$.** Haldane's approximation (Haldane 1927): `π(s) / s → 2` as `s → 0⁺`. -/
 theorem tendsto_survivalProb_div :
     Tendsto (fun s => survivalProb s / s) (𝓝[>] 0) (𝓝 2) :=
   tendsto_div_of_one_sub_eq_exp survivalProb (fun _ hs => survivalProb_pos hs)

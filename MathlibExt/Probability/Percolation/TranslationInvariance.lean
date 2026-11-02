@@ -62,7 +62,7 @@ theorem shift_eq_piCongrLeft (g : G) :
     Equiv.piCongrLeft_apply_apply (a := e₁.symm b)]
   rw [shift_apply, he₁, MulAction.toPerm_symm_apply]
 
-/-- The Bernoulli product measure on `{0, 1}^E` is invariant under the shift action of `G`. -/
+/-- **Translation invariance of the Bernoulli product measure.** The Bernoulli product measure on `{0, 1}^E` is invariant under the shift action of `G`. -/
 theorem bernoulli_translationInvariant (p : ℝ≥0) (hp : p ≤ 1) [Countable E] :
     IsTranslationInvariant (G := G) (bernoulliProductMeasure (E := E) p hp) := by
   intro g
@@ -76,7 +76,7 @@ end TranslationInvariance
 
 variable {d : ℕ}
 
-/-- The event that `y` is joined by an open path to a site outside `Λ_{n-1}`. -/
+/-- **One-arm event from a shifted origin.** The event that `y` is joined by an open path to a site outside `Λ_{n-1}`. -/
 def crossingEventFrom (d : ℕ) (y : Site d) (n : ℕ) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | ∃ v, Connected d ω y v ∧ v ∉ box d (n - 1)}
 

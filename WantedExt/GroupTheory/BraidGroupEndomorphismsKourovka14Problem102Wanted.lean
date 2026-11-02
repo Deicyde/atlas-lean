@@ -39,7 +39,7 @@ with `N ≠ 1`; torsion-free means no nontrivial element of finite order.
 
 open FreeGroup
 
-/-- Artin's relators for the braid group on `n` strands, in the free group on the generators
+/-- **Artin's braid relators.** Artin's relators for the braid group on `n` strands, in the free group on the generators
 `σ₀, …, σ_{n-2}` (indexed by `Fin (n - 1)`): `σᵢ σⱼ = σⱼ σᵢ` when `j ≥ i + 2`, and
 `σᵢ σᵢ₊₁ σᵢ = σᵢ₊₁ σᵢ σᵢ₊₁`. -/
 def braidRelators (n : ℕ) : Set (FreeGroup (Fin (n - 1))) :=
@@ -47,7 +47,7 @@ def braidRelators (n : ℕ) : Set (FreeGroup (Fin (n - 1))) :=
     (i.val + 2 ≤ j.val ∧ r = of i * of j * (of i)⁻¹ * (of j)⁻¹) ∨
     (i.val + 1 = j.val ∧ r = of i * of j * of i * (of j * of i * of j)⁻¹)}
 
-/-- The braid group `Bₙ` on `n` strands, by Artin's presentation. -/
+/-- **Braid group on n strands.** The braid group `Bₙ` on `n` strands, by Artin's presentation. -/
 abbrev BraidGroup (n : ℕ) : Type := PresentedGroup (braidRelators n)
 
 /-- **Kourovka Problem 14.102(a): non-injective braid endomorphisms with non-cyclic image.** The

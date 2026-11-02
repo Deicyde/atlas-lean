@@ -55,29 +55,29 @@ open Finset
 
 namespace ProbabilityTheory
 
-/-- Empirical rate `#{i | t ≤ z i} / k` of scores at or above the threshold `t` (the true- or
+/-- **Empirical ROC rate at or above a threshold.** Empirical rate `#{i | t ≤ z i} / k` of scores at or above the threshold `t` (the true- or
 false-positive rate when `z` are the positive or negative scores). -/
 noncomputable def rocRate {k : ℕ} (z : Fin k → ℝ) (t : ℝ) : ℝ :=
   (#{i | t ≤ z i} : ℝ) / k
 
-/-- Empirical rate `#{i | t < z i} / k` of scores strictly above `t`: the ROC coordinate at the
+/-- **Empirical ROC rate strictly above a threshold.** Empirical rate `#{i | t < z i} / k` of scores strictly above `t`: the ROC coordinate at the
 next larger distinct score. -/
 noncomputable def rocRateAbove {k : ℕ} (z : Fin k → ℝ) (t : ℝ) : ℝ :=
   (#{i | t < z i} : ℝ) / k
 
-/-- Trapezoidal area under the empirical ROC curve of positive scores `x` and negative scores
+/-- **Empirical area under the ROC curve.** Trapezoidal area under the empirical ROC curve of positive scores `x` and negative scores
 `y`: the sum over the distinct observed scores `t` of the trapezoid from the point
 `(rocRateAbove y t, rocRateAbove x t)` to `(rocRate y t, rocRate x t)`. -/
 noncomputable def empiricalAUC {m n : ℕ} (x : Fin m → ℝ) (y : Fin n → ℝ) : ℝ :=
   ∑ t ∈ univ.image x ∪ univ.image y,
     (rocRate y t - rocRateAbove y t) * (rocRate x t + rocRateAbove x t) / 2
 
-/-- Mann–Whitney count `U = ∑ᵢ ∑ⱼ (1[y j < x i] + ½ 1[y j = x i])` of (positive, negative)
+/-- **Mann–Whitney U statistic.** Mann–Whitney count `U = ∑ᵢ ∑ⱼ (1[y j < x i] + ½ 1[y j = x i])` of (positive, negative)
 pairs ranked correctly, with ties counted one half. -/
 noncomputable def mannWhitneyU {m n : ℕ} (x : Fin m → ℝ) (y : Fin n → ℝ) : ℝ :=
   ∑ i, ∑ j, if y j < x i then 1 else if y j = x i then 1 / 2 else 0
 
-/-- If no score lies strictly between `t < t'`, the strict rate at `t` is the rate at `t'`: the
+/-- **Strict ROC rate equals the rate at the next score.** If no score lies strictly between `t < t'`, the strict rate at `t` is the rate at `t'`: the
 left end of the trapezoid at `t` is the ROC point of the next larger distinct score. -/
 theorem rocRateAbove_eq_rocRate_of_forall_not_mem_Ioo {k : ℕ} {z : Fin k → ℝ} {t t' : ℝ}
     (htt' : t < t') (h : ∀ i, z i ∉ Set.Ioo t t') : rocRateAbove z t = rocRate z t' := by
@@ -92,7 +92,7 @@ theorem rocRateAbove_eq_rocRate_of_forall_not_mem_Ioo {k : ℕ} {z : Fin k → �
   · intro hi
     exact htt'.trans_le hi
 
-/-- Above the largest score the strict rate is zero: the first trapezoid starts at `(0, 0)`. -/
+/-- **Strict ROC rate vanishes above the largest score.** Above the largest score the strict rate is zero: the first trapezoid starts at `(0, 0)`. -/
 theorem rocRateAbove_eq_zero_of_forall_le {k : ℕ} {z : Fin k → ℝ} {t : ℝ}
     (h : ∀ i, z i ≤ t) : rocRateAbove z t = 0 := by
   unfold rocRateAbove

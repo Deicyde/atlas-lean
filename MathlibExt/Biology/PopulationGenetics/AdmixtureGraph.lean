@@ -62,7 +62,7 @@ open MeasureTheory MathlibExt.Biology.PopulationGenetics.FStatistics
 
 namespace MathlibExt.Biology.PopulationGenetics
 
-/-- An admixture graph on the nodes `V` (Patterson et al. 2012): a rooted directed acyclic
+/-- **Admixture graph.** An admixture graph on the nodes `V` (Patterson et al. 2012): a rooted directed acyclic
 graph in which every non-root node has one or two parents, with admixture proportions.
 
 * `parents X` are the parents of `X`, the root has none, every other node has one or two;
@@ -94,33 +94,33 @@ namespace AdmixtureGraph
 
 variable {V : Type*} [DecidableEq V] (G : AdmixtureGraph V)
 
-/-- The edges `(child, parent)` of the graph. -/
+/-- **Edges of an admixture graph.** The edges `(child, parent)` of the graph. -/
 abbrev Edge : Type _ := {e : V × V // e.2 ∈ G.parents e.1}
 
-/-- `visit X c` is the probability that the lineage of a gene sampled in `X`, traced toward the
+/-- **Probability that a lineage passes through a node.** `visit X c` is the probability that the lineage of a gene sampled in `X`, traced toward the
 root with parents chosen according to the admixture proportions, passes through `c`. -/
 noncomputable def visit (X c : V) : ℝ :=
   G.wf.fix (C := fun _ => ℝ)
     (fun X ih => if X = c then 1 else ∑ Y ∈ (G.parents X).attach, G.prop X Y * ih Y Y.2) X
 
-/-- `weight X e` is the probability that the lineage of a gene sampled in `X` traverses the edge
+/-- **Lineage weight of an edge in an admixture graph.** `weight X e` is the probability that the lineage of a gene sampled in `X` traverses the edge
 `e = (c, p)`: it reaches `c` and then descends from `p`. -/
 noncomputable def weight (X : V) (e : G.Edge) : ℝ := G.visit X e.1.1 * G.prop e.1.1 e.1.2
 
-/-- The probability of a root-ward path `[v₀, v₁, …, v_k]`: the product of the proportions
+/-- **Probability of a root-ward path in an admixture graph.** The probability of a root-ward path `[v₀, v₁, …, v_k]`: the product of the proportions
 `prop vᵢ vᵢ₊₁`. -/
 def pathProb : List V → ℝ
   | a :: b :: l => G.prop a b * pathProb (b :: l)
   | _ => 1
 
-/-- The root-ward paths from `X`: the lists `[X = v₀, v₁, …, v_k = root]` with each `vᵢ₊₁` a
+/-- **Root-ward paths from a node of an admixture graph.** The root-ward paths from `X`: the lists `[X = v₀, v₁, …, v_k = root]` with each `vᵢ₊₁` a
 parent of `vᵢ`. -/
 noncomputable def paths (X : V) : Finset (List V) :=
   G.wf.fix (C := fun _ => Finset (List V))
     (fun X ih => if G.parents X = ∅ then {[X]} else
       (G.parents X).attach.biUnion fun Y => (ih Y Y.2).image (List.cons X)) X
 
-/-- First-step equation for `visit`. -/
+/-- **First-step equation for visit probabilities.** First-step equation for `visit`. -/
 theorem visit_eq (X c : V) :
     G.visit X c = if X = c then 1 else ∑ Y ∈ G.parents X, G.prop X Y * G.visit Y c := by
   rw [visit, WellFounded.fix_eq]
@@ -128,11 +128,11 @@ theorem visit_eq (X c : V) :
   · rfl
   · exact Finset.sum_attach (G.parents X) fun Y => G.prop X Y * G.visit Y c
 
-/-- A lineage passes through its own node with probability `1`. -/
+/-- **A lineage visits its own node with probability one.** A lineage passes through its own node with probability `1`. -/
 @[simp] theorem visit_self (X : V) : G.visit X X = 1 := by
   simp [visit_eq G X X]
 
-/-- Visit probabilities are nonnegative. -/
+/-- **Nonnegativity of visit probabilities.** Visit probabilities are nonnegative. -/
 theorem visit_nonneg (X c : V) : 0 ≤ G.visit X c := by
   induction X using G.wf.induction with
   | _ X ih =>
@@ -141,7 +141,7 @@ theorem visit_nonneg (X c : V) : 0 ≤ G.visit X c := by
     · exact zero_le_one
     · exact Finset.sum_nonneg fun Y hY => mul_nonneg (G.prop_nonneg X Y) (ih Y hY)
 
-/-- Visit probabilities are at most `1`. -/
+/-- **Visit probabilities are at most one.** Visit probabilities are at most `1`. -/
 theorem visit_le_one (X c : V) : G.visit X c ≤ 1 := by
   induction X using G.wf.induction with
   | _ X ih =>
@@ -155,7 +155,7 @@ theorem visit_le_one (X c : V) : G.visit X c ≤ 1 := by
               mul_le_of_le_one_right (G.prop_nonneg X Y) (ih Y hY)
           _ = 1 := G.sum_prop X hX
 
-/-- Every lineage reaches the root. -/
+/-- **Every lineage reaches the root.** Every lineage reaches the root. -/
 theorem visit_root (X : V) : G.visit X G.root = 1 := by
   induction X using G.wf.induction with
   | _ X ih =>
@@ -165,7 +165,7 @@ theorem visit_root (X : V) : G.visit X G.root = 1 := by
     · rw [← G.sum_prop X hX]
       exact Finset.sum_congr rfl fun Y hY => by rw [ih Y hY, mul_one]
 
-/-- First-step equation for `paths`. -/
+/-- **First-step equation for root-ward paths.** First-step equation for `paths`. -/
 theorem paths_eq (X : V) :
     G.paths X = if G.parents X = ∅ then {[X]} else
       (G.parents X).biUnion fun Y => (G.paths Y).image (List.cons X) := by
@@ -177,7 +177,7 @@ theorem paths_eq (X : V) :
     rfl
 
 omit [DecidableEq V] in
-/-- Admixture proportions are at most `1`. -/
+/-- **Admixture proportions are at most one.** Admixture proportions are at most `1`. -/
 theorem prop_le_one (X Y : V) : G.prop X Y ≤ 1 := by
   by_cases hY : Y ∈ G.parents X
   · have hX : X ≠ G.root := by
@@ -200,20 +200,20 @@ private theorem visit_eq_zero_of_transGen {V : Type*} [DecidableEq V]
     exact Finset.sum_eq_zero fun Z hZ => by
       rw [ih Z hZ (Relation.TransGen.head hZ h), mul_zero]
 
-/-- Acyclicity: a lineage from a parent `Y` of `X` never passes through `X`. -/
+/-- **A lineage from a parent never passes through its child.** Acyclicity: a lineage from a parent `Y` of `X` never passes through `X`. -/
 theorem visit_eq_zero_of_mem_parents {X Y : V} (h : Y ∈ G.parents X) : G.visit Y X = 0 := by
   exact visit_eq_zero_of_transGen G (Relation.TransGen.single h)
 
-/-- Lineage weights are nonnegative. -/
+/-- **Nonnegativity of lineage weights.** Lineage weights are nonnegative. -/
 theorem weight_nonneg (X : V) (e : G.Edge) : 0 ≤ G.weight X e := by
   exact mul_nonneg (G.visit_nonneg _ _) (G.prop_nonneg _ _)
 
-/-- Lineage weights are at most `1`. -/
+/-- **Lineage weights are at most one.** Lineage weights are at most `1`. -/
 theorem weight_le_one (X : V) (e : G.Edge) : G.weight X e ≤ 1 := by
   simpa [weight] using mul_le_mul (G.visit_le_one X e.1.1) (G.prop_le_one e.1.1 e.1.2)
     (G.prop_nonneg _ _) zero_le_one
 
-/-- First-step recursion for lineage weights: a lineage from `X` traverses `e` either as its
+/-- **First-step recursion for lineage weights.** First-step recursion for lineage weights: a lineage from `X` traverses `e` either as its
 first step (if `e` starts at `X`) or after moving to a parent `Y`, chosen with probability
 `prop X Y`. -/
 theorem weight_eq (X : V) (e : G.Edge) :
@@ -228,7 +228,7 @@ theorem weight_eq (X : V) (e : G.Edge) :
   · rw [visit_eq, ite_eq_right fun h => hc h.symm, ite_eq_right hc, Finset.sum_mul, add_zero]
     exact Finset.sum_congr rfl fun Y _ => by ring
 
-/-- The recursion at an admixture node `X` with parents `A ≠ B`: with `α = prop X A`,
+/-- **Lineage weight recursion at an admixture node.** The recursion at an admixture node `X` with parents `A ≠ B`: with `α = prop X A`,
 `w X = α w A + (1 - α) w B + w₀`, where `w₀` puts weight `α` on the edge `(X, A)`,
 `1 - α` on `(X, B)` and `0` elsewhere. -/
 theorem weight_admixture {X A B : V} (hX : G.parents X = {A, B}) (hAB : A ≠ B) :
@@ -244,7 +244,7 @@ theorem weight_admixture {X A B : V} (hX : G.parents X = {A, B}) (hAB : A ≠ B)
   simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul]
   rw [show G.prop X B = 1 - G.prop X A by linarith]
 
-/-- The recursion at a tree node `X` with the single parent `Y`: `w X = w Y + 1_{(X, Y)}`. -/
+/-- **Lineage weight recursion at a tree node.** The recursion at a tree node `X` with the single parent `Y`: `w X = w Y + 1_{(X, Y)}`. -/
 theorem weight_tree {X Y : V} (hX : G.parents X = {Y}) :
     G.weight X = G.weight Y + fun e => if e.1.1 = X then 1 else 0 := by
   have hXr : X ≠ G.root := by
@@ -385,7 +385,7 @@ private theorem sum_first_edge {V : Type*} [DecidableEq V] (G : AdmixtureGraph V
       exact hc (congrArg Prod.fst he)
     simp [he]
 
-/-- Path-sum form of the lineage weights (Patterson et al. 2012): `weight X e` is the sum, over
+/-- **Path-sum formula for lineage weights.** Path-sum form of the lineage weights (Patterson et al. 2012): `weight X e` is the sum, over
 the root-ward paths from `X` that traverse `e`, of the products of the admixture proportions
 along the path. -/
 theorem weight_eq_sum_paths (X : V) (e : G.Edge) :
@@ -421,10 +421,10 @@ theorem weight_eq_sum_paths (X : V) (e : G.Edge) :
       · intro Y _ Z _ hYZ
         exact path_images_disjoint G X hYZ
 
-/-- The graph is a tree: no node has two parents. -/
+/-- **Tree-shaped admixture graph.** The graph is a tree: no node has two parents. -/
 def IsTree : Prop := ∀ X, (G.parents X).card ≤ 1
 
-/-- On a tree every visit probability is `0` or `1`. -/
+/-- **Visit probabilities on a tree are zero or one.** On a tree every visit probability is `0` or `1`. -/
 theorem visit_eq_zero_or_one (hG : G.IsTree) (X c : V) :
     G.visit X c = 0 ∨ G.visit X c = 1 := by
   induction X using G.wf.induction with
@@ -444,7 +444,7 @@ theorem visit_eq_zero_or_one (hG : G.IsTree) (X c : V) :
         rw [hY, Finset.sum_singleton, hp, one_mul]
         exact ih Y (by simp [hY])
 
-/-- On a tree every lineage weight is `0` or `1`. -/
+/-- **Lineage weights on a tree are zero or one.** On a tree every lineage weight is `0` or `1`. -/
 theorem weight_eq_zero_or_one (hG : G.IsTree) (X : V) (e : G.Edge) :
     G.weight X e = 0 ∨ G.weight X e = 1 := by
   have hc : e.1.1 ≠ G.root := by
@@ -466,7 +466,7 @@ theorem weight_eq_zero_or_one (hG : G.IsTree) (X : V) (e : G.Edge) :
 
 variable [Fintype V] {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
 
-/-- The drift model of an admixture graph: the populations are the nodes, the root frequency is
+/-- **Drift model of an admixture graph.** The drift model of an admixture graph: the populations are the nodes, the root frequency is
 `root`, the edge increments are `incr` (square integrable and pairwise uncorrelated), the drift
 length of an edge is the second moment of its increment, and the weights are the lineage
 weights of the graph. -/
@@ -482,7 +482,7 @@ noncomputable def driftModel (root : Ω → ℝ) (incr : G.Edge → Ω → ℝ) 
   inner_incr := hinner
   sq_incr _ := rfl
 
-/-- A tree-shaped admixture graph induces a drift model with binary loadings (all weights `0` or
+/-- **A tree-shaped admixture graph has binary loadings.** A tree-shaped admixture graph induces a drift model with binary loadings (all weights `0` or
 `1`). -/
 theorem hasBinaryLoadings_of_isTree (hG : G.IsTree) {M : DriftModel μ G.Edge V}
     (hM : M.weight = G.weight) : M.HasBinaryLoadings := by
@@ -490,12 +490,12 @@ theorem hasBinaryLoadings_of_isTree (hG : G.IsTree) {M : DriftModel μ G.Edge V}
   rw [hM]
   exact G.weight_eq_zero_or_one hG X e
 
-/-- The three-population test on a tree-shaped admixture graph: `f3 C A B ≥ 0`. -/
+/-- **Three-population test is nonnegative on a tree.** The three-population test on a tree-shaped admixture graph: `f3 C A B ≥ 0`. -/
 theorem f3_nonneg_of_isTree (hG : G.IsTree) {M : DriftModel μ G.Edge V}
     (hM : M.weight = G.weight) (C A B : V) : 0 ≤ f3 μ M.freq C A B :=
   M.f3_nonneg_of_hasBinaryLoadings (G.hasBinaryLoadings_of_isTree hG hM) C A B
 
-/-- The three-population statistic at an admixture node `X` with parents `A ≠ B`, proportions
+/-- **Three-population statistic at an admixture node.** The three-population statistic at an admixture node `X` with parents `A ≠ B`, proportions
 `α = prop X A` and `β = prop X B` (`α + β = 1`), in a drift model with the graph's weights:
 `f3 X A B = α² ℓ_{XA} + β² ℓ_{XB} - α β f2 A B`, where `ℓ_{XA}`, `ℓ_{XB}` are the drift
 lengths of the two admixture edges. -/
@@ -545,7 +545,7 @@ theorem f3_admixture {M : DriftModel μ G.Edge V} (hM : M.weight = G.weight) {X 
   simp_rw [key, Finset.sum_sub_distrib, Finset.sum_add_distrib]
   simp
 
-/-- With no drift on the admixture edges, an admixture node `X` with parents `A ≠ B` and
+/-- **Three-population statistic at an admixture node without edge drift.** With no drift on the admixture edges, an admixture node `X` with parents `A ≠ B` and
 proportion `α = prop X A` has `f3 X A B = -α (1 - α) f2 A B` (the hypothesis of the seed's
 `DriftModel.f3_admixture`, here derived from the graph). -/
 theorem f3_admixture_of_len_eq_zero {M : DriftModel μ G.Edge V} (hM : M.weight = G.weight)

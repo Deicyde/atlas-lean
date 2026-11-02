@@ -48,18 +48,18 @@ namespace ProbabilityTheory.KolmogorovThreeSeries
 
 variable {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω}
 
-/-- Scalar truncation is canonical truncation of the identity sequence. -/
+/-- **Scalar truncation function.** Scalar truncation is canonical truncation of the identity sequence. -/
 abbrev truncationFun (A : ℝ) : ℝ → ℝ :=
   truncatedRV (fun _ => id) A 0
 
 omit [MeasurableSpace Ω] in
-/-- Truncation of a value strictly outside the closed band is zero. -/
+/-- **Truncation vanishes outside the closed band.** Truncation of a value strictly outside the closed band is zero. -/
 theorem truncatedRV_eq_zero_of_abs_gt {X : ℕ → Ω → ℝ} {A : ℝ} {n : ℕ} {ω : Ω}
     (h : A < |X n ω|) : truncatedRV X A n ω = 0 := by
   rw [truncatedRV_apply, ite_eq_right (not_le.mpr h)]
 
 omit [MeasurableSpace Ω] in
-/-- Canonical truncation preserves nonnegativity. -/
+/-- **Canonical truncation preserves nonnegativity.** Canonical truncation preserves nonnegativity. -/
 theorem truncatedRV_nonneg_of_nonneg {X : ℕ → Ω → ℝ} {A : ℝ} {n : ℕ} {ω : Ω}
     (h : 0 ≤ X n ω) : 0 ≤ truncatedRV X A n ω := by
   rw [truncatedRV_apply]
@@ -67,47 +67,47 @@ theorem truncatedRV_nonneg_of_nonneg {X : ℕ → Ω → ℝ} {A : ℝ} {n : ℕ
   · exact h
   · exact le_rfl
 
-/-- Scalar truncation fixes values inside or on the cutoff. -/
+/-- **Scalar truncation fixes values within the cutoff.** Scalar truncation fixes values inside or on the cutoff. -/
 theorem truncationFun_eq_self_of_abs_le {A x : ℝ} (hx : |x| ≤ A) :
     truncationFun A x = x :=
   truncatedRV_eq_of_abs_le hx
 
-/-- Scalar truncation kills values strictly outside the cutoff. -/
+/-- **Scalar truncation vanishes beyond the cutoff.** Scalar truncation kills values strictly outside the cutoff. -/
 theorem truncationFun_eq_zero_of_abs_gt {A x : ℝ} (hx : A < |x|) :
     truncationFun A x = 0 :=
   truncatedRV_eq_zero_of_abs_gt hx
 
-/-- Scalar truncation preserves nonnegativity. -/
+/-- **Scalar truncation preserves nonnegativity.** Scalar truncation preserves nonnegativity. -/
 theorem truncationFun_nonneg_of_nonneg {A x : ℝ} (hx : 0 ≤ x) :
     0 ≤ truncationFun A x :=
   truncatedRV_nonneg_of_nonneg hx
 
 omit [MeasurableSpace Ω] in
-/-- Canonical truncation factors through its scalar specialization. -/
+/-- **Canonical truncation factors through scalar truncation.** Canonical truncation factors through its scalar specialization. -/
 theorem truncatedRV_eq_comp (X : ℕ → Ω → ℝ) (A : ℝ) (n : ℕ) :
     truncatedRV X A n = truncationFun A ∘ X n := by
   funext ω
   simp only [truncationFun, truncatedRV_apply, Function.comp_apply, id_eq]
 
-/-- The scalar specialization of canonical truncation is measurable. -/
+/-- **Measurability of scalar truncation.** The scalar specialization of canonical truncation is measurable. -/
 theorem measurable_truncationFun (A : ℝ) : Measurable (truncationFun A) :=
   measurable_truncatedRV (fun _ => measurable_id) A 0
 
-/-- Canonical truncation needs measurability only of the selected variable. -/
+/-- **Measurability of a truncated random variable.** Canonical truncation needs measurability only of the selected variable. -/
 theorem measurable_truncatedRV_of_measurable {X : ℕ → Ω → ℝ}
     (n : ℕ) (hX : Measurable (X n)) (A : ℝ) :
     Measurable (truncatedRV X A n) :=
   measurable_truncatedRV (X := fun _ => X n) (fun _ => hX) A 0
 
 omit [MeasurableSpace Ω] in
-/-- A family bounded by the cutoff is unchanged by canonical truncation. -/
+/-- **Truncation leaves a family bounded by the cutoff unchanged.** A family bounded by the cutoff is unchanged by canonical truncation. -/
 theorem truncatedRV_eq_of_bdd
     {Y : ℕ → Ω → ℝ} {A : ℝ} (hY : ∀ n ω, |Y n ω| ≤ A) (n : ℕ) :
     truncatedRV Y A n = Y n := by
   funext ω
   exact truncatedRV_eq_of_abs_le (hY n ω)
 
-/-- A uniformly bounded family keeps its almost-sure partial-sum limit under
+/-- **Truncation preserves almost-sure limits of bounded partial sums.** A uniformly bounded family keeps its almost-sure partial-sum limit under
 canonical truncation, on the same measure. -/
 theorem ae_tendsto_truncatedRV_of_bdd
     {Y : ℕ → Ω → ℝ} {A : ℝ} (hY : ∀ n ω, |Y n ω| ≤ A)
@@ -119,7 +119,7 @@ theorem ae_tendsto_truncatedRV_of_bdd
     (Eventually.of_forall fun ω => Eventually.of_forall fun n =>
       (truncatedRV_eq_of_abs_le (hY n ω)).symm) hY_tend
 
-/-- Canonical truncation is in every `Lᵖ` on a finite measure space. -/
+/-- **Truncated random variables lie in every Lp space.** Canonical truncation is in every `Lᵖ` on a finite measure space. -/
 theorem memLp_truncatedRV [IsFiniteMeasure μ] {X : ℕ → Ω → ℝ}
     (n : ℕ) (hX : Measurable (X n)) (A : ℝ) (p : ℝ≥0∞) :
     MemLp (truncatedRV X A n) p μ :=
@@ -128,13 +128,13 @@ theorem memLp_truncatedRV [IsFiniteMeasure μ] {X : ℕ → Ω → ℝ}
       rw [Real.norm_eq_abs]
       exact abs_truncatedRV_le_abs A n ω)
 
-/-- Canonical truncation is integrable on a finite measure space. -/
+/-- **Integrability of truncated random variables.** Canonical truncation is integrable on a finite measure space. -/
 theorem integrable_truncatedRV [IsFiniteMeasure μ] {X : ℕ → Ω → ℝ}
     (n : ℕ) (hX : Measurable (X n)) (A : ℝ) :
     Integrable (truncatedRV X A n) μ :=
   (memLp_truncatedRV n hX A 1).integrable le_rfl
 
-/-- The variance of canonical truncation is at most `A²`. -/
+/-- **Variance bound for a truncated random variable.** The variance of canonical truncation is at most `A²`. -/
 theorem variance_truncatedRV_le [IsProbabilityMeasure μ] {X : ℕ → Ω → ℝ}
     (n : ℕ) (hX : Measurable (X n)) (A : ℝ) :
     variance (truncatedRV X A n) μ ≤ A ^ 2 := by
@@ -147,7 +147,7 @@ theorem variance_truncatedRV_le [IsProbabilityMeasure μ] {X : ℕ → Ω → �
     _ = A ^ 2 := by
         rw [sub_neg_eq_add, ← two_mul, mul_div_cancel_left₀ _ (two_ne_zero), sq_abs]
 
-/-- The absolute mean of canonical truncation is at most `|A|`. -/
+/-- **Mean bound for a truncated random variable.** The absolute mean of canonical truncation is at most `|A|`. -/
 theorem abs_integral_truncatedRV_le [IsProbabilityMeasure μ] {X : ℕ → Ω → ℝ}
     (n : ℕ) (hX : Measurable (X n)) (A : ℝ) :
     |∫ ω, truncatedRV X A n ω ∂μ| ≤ |A| := by

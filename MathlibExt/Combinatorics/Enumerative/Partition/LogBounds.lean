@@ -38,7 +38,7 @@ private theorem leading_mul (x : ℝ) :
       Real.pi * Real.sqrt ((2 : ℝ) / 3) * x / Real.log 2 := by
   ring
 
-/-- There are constants `B` and `C` such that the base-two logarithm of the number of integer
+/-- **Logarithmic bounds for the partition function.** There are constants `B` and `C` such that the base-two logarithm of the number of integer
 partitions of `n` differs from its leading square-root term by at most a logarithmic lower-order
 term below and a constant above. -/
 theorem exists_logb_card_bounds :

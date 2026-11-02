@@ -57,7 +57,7 @@ namespace ProbabilityTheory
 
 variable {ι : Type*} [Fintype ι]
 
-/-- The row vector `π` is in **detailed balance** with the matrix `Q`:
+/-- **Detailed balance.** The row vector `π` is in **detailed balance** with the matrix `Q`:
 `π i * Q i j = π j * Q j i` for all `i j` (Norris 1997, §3.7). This is only the algebraic
 equation: it holds for `π = 0` and every `Q`. For a probability vector `π` and a stochastic
 matrix it is the reversibility of the chain started from `π`. -/
@@ -93,7 +93,7 @@ namespace IsDetailedBalance
 
 variable {π : ι → ℝ} {Q : Matrix ι ι ℝ}
 
-/-- Detailed balance with a matrix whose rows sum to `0` implies invariance `π Q = 0`
+/-- **Detailed balance implies invariance for the generator.** Detailed balance with a matrix whose rows sum to `0` implies invariance `π Q = 0`
 (Norris 1997, §3.7). -/
 theorem vecMul_eq_zero (h : IsDetailedBalance π Q) (hQ : ∀ i, ∑ j, Q i j = 0) :
     π ᵥ* Q = 0 := by
@@ -119,7 +119,7 @@ theorem ctmcTransition [DecidableEq ι] (h : IsDetailedBalance π Q) (t : ℝ) :
   simpa [ProbabilityTheory.ctmcTransition, Matrix.mul_diagonal, Matrix.diagonal_mul,
     mul_comm] using congrFun (congrFun he i) j
 
-/-- Detailed balance with a matrix whose rows sum to `0` (for instance a rate matrix) makes `π`
+/-- **Detailed balance implies invariance for the transition semigroup.** Detailed balance with a matrix whose rows sum to `0` (for instance a rate matrix) makes `π`
 invariant for every `P t`. -/
 theorem vecMul_ctmcTransition [DecidableEq ι] (h : IsDetailedBalance π Q)
     (hQ : ∀ i, ∑ j, Q i j = 0) (t : ℝ) :

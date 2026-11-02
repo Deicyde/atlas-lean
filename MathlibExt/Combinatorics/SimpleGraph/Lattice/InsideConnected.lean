@@ -42,7 +42,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- The square lattice with the vertices of the closed walk `Vc` removed. It is the same graph as
+/-- **Square lattice with a closed walk's vertices removed.** The square lattice with the vertices of the closed walk `Vc` removed. It is the same graph as
 `StatMech.Lattice.ffc_offSupportLattice {z | z ∈ Vc.support}`. -/
 noncomputable def offSupport {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) :
     SimpleGraph (Site 2) where
@@ -209,7 +209,7 @@ theorem minimalLoop_two_components_of_hubs (K : Set (Site 2))
     Nat.card (latticeMinusBarrier (jec_leftRegion (mpl_orbitLoop K a))).ConnectedComponent = 2 :=
   two_components_of_hubs (mpl_orbitLoop K a) hp hq hoffIn hoffOut hubIn hubOut
 
-/-- The sites reachable from `seed` in the lattice with the vertices of `Vc` removed. -/
+/-- **Component off a closed walk containing a seed.** The sites reachable from `seed` in the lattice with the vertices of `Vc` removed. -/
 def offSupportComponent {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) (seed : Site 2) :
     Set (Site 2) :=
   {z | (offSupport Vc).Reachable seed z}

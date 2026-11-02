@@ -49,7 +49,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- The corner weight of the interior at the vertex after step `i` is `±1` (sign given by the
+/-- **Corner weights at the turns of a walk without right turns.** The corner weight of the interior at the vertex after step `i` is `±1` (sign given by the
   orientation) at a left turn and `0` at a straight step. -/
 theorem cornerWeight_master (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n)
@@ -73,7 +73,7 @@ theorem cornerWeight_master (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i)
     · rw [cornerWeight_leftTurn_W d hclosed hsimple hn i (by rw [hei, hd]; decide) hd, hlp]
     · rw [cornerWeight_leftTurn_S d hclosed hsimple hn i (by rw [hei, hd]; decide) hd, hlp]
 
-/-- The corner defect of the interior equals `±cc d`, the sign given by the orientation of the
+/-- **Corner defect of the interior is the number of left turns up to sign.** The corner defect of the interior equals `±cc d`, the sign given by the orientation of the
   walk. -/
 theorem cornerDiff_eq_weight_mul_cc (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n)
@@ -90,7 +90,7 @@ theorem cornerDiff_eq_weight_mul_cc (d : Fin n → Fin 4) (hclosed : ∑ i, step
   rw [Finset.sum_boole]
   rfl
 
-/-- A simple closed walk without right turns whose interior is pinch-free with Euler characteristic
+/-- **Four left turns from a pinch-free interior of Euler characteristic 1.** A simple closed walk without right turns whose interior is pinch-free with Euler characteristic
   `1` has four left turns. -/
 theorem cc_eq_four (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n)

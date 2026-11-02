@@ -63,19 +63,19 @@ open Filter Topology Real Set
 
 namespace MathlibExt.Biology.Dynamics.MichaelisMenten
 
-/-- The Michaelis constant `K_M = (kb + k₂)/k₁` (Briggs–Haldane). Meaningful for `k₁ > 0`. -/
+/-- **Michaelis constant.** The Michaelis constant `K_M = (kb + k₂)/k₁` (Briggs–Haldane). Meaningful for `k₁ > 0`. -/
 noncomputable def michaelisConstant (k₁ kb k₂ : ℝ) : ℝ :=
   (kb + k₂) / k₁
 
-/-- The mass-action rate of the substrate, `s' = -k₁ e s + kb c`. -/
+/-- **Mass-action rate of the substrate.** The mass-action rate of the substrate, `s' = -k₁ e s + kb c`. -/
 def substrateRate (k₁ kb s c e : ℝ) : ℝ :=
   -k₁ * e * s + kb * c
 
-/-- The mass-action rate of the complex, `c' = k₁ e s - (kb + k₂) c`. -/
+/-- **Mass-action rate of the enzyme–substrate complex.** The mass-action rate of the complex, `c' = k₁ e s - (kb + k₂) c`. -/
 def complexRate (k₁ kb k₂ s c e : ℝ) : ℝ :=
   k₁ * e * s - (kb + k₂) * c
 
-/-- A solution of the Michaelis–Menten mass-action system on `[0, ∞)`:
+/-- **Solution of the Michaelis–Menten mass-action system.** A solution of the Michaelis–Menten mass-action system on `[0, ∞)`:
 `s' = -k₁ e s + kb c`, `c' = k₁ e s - (kb + k₂) c`, `e' = -c'`, `p' = k₂ c`. -/
 structure IsSolution (k₁ kb k₂ : ℝ) (s c e p : ℝ → ℝ) : Prop where
   hasDerivAt_substrate : ∀ t, 0 ≤ t → HasDerivAt s (substrateRate k₁ kb (s t) (c t) (e t)) t
@@ -106,11 +106,11 @@ theorem IsSolution.substrate_conservation {k₁ kb k₂ : ℝ} {s c e p : ℝ �
     (h.hasDerivAt_product x hx) using 1
   simp only [substrateRate, complexRate]; ring
 
-/-- The quasi-steady-state value of the complex, `c = e₀ s / (K_M + s)`. -/
+/-- **Quasi-steady-state value of the complex.** The quasi-steady-state value of the complex, `c = e₀ s / (K_M + s)`. -/
 noncomputable def qssComplex (k₁ kb k₂ e₀ s : ℝ) : ℝ :=
   e₀ * s / (michaelisConstant k₁ kb k₂ + s)
 
-/-- The Michaelis–Menten rate law `v(s) = V_max s / (K_M + s)`. -/
+/-- **Michaelis–Menten rate law.** The Michaelis–Menten rate law `v(s) = V_max s / (K_M + s)`. -/
 noncomputable def mmRate (Vmax KM s : ℝ) : ℝ :=
   Vmax * s / (KM + s)
 
@@ -133,7 +133,7 @@ theorem productRate_qss (k₁ kb k₂ e₀ s : ℝ) :
     k₂ * qssComplex k₁ kb k₂ e₀ s = mmRate (k₂ * e₀) (michaelisConstant k₁ kb k₂) s := by
   unfold qssComplex mmRate; ring
 
-/-- On the quasi-steady-state manifold the substrate is consumed at the Michaelis–Menten rate:
+/-- **Substrate consumption at the Michaelis–Menten rate under QSSA.** On the quasi-steady-state manifold the substrate is consumed at the Michaelis–Menten rate:
 `s' = -V_max s / (K_M + s)`. -/
 theorem substrateRate_qss {k₁ kb k₂ e₀ s : ℝ} (hk₁ : 0 < k₁)
     (hs : michaelisConstant k₁ kb k₂ + s ≠ 0) :
@@ -145,7 +145,7 @@ theorem substrateRate_qss {k₁ kb k₂ e₀ s : ℝ} (hk₁ : 0 < k₁)
   unfold substrateRate
   linarith
 
-/-- The rate law is strictly increasing on `s ≥ 0` for `V_max, K_M > 0`. -/
+/-- **Michaelis–Menten rate is strictly increasing.** The rate law is strictly increasing on `s ≥ 0` for `V_max, K_M > 0`. -/
 theorem mmRate_strictMono {Vmax KM : ℝ} (hV : 0 < Vmax) (hK : 0 < KM) :
     StrictMonoOn (mmRate Vmax KM) (Ici 0) := by
   intro x hx y hy hxy
@@ -154,21 +154,21 @@ theorem mmRate_strictMono {Vmax KM : ℝ} (hV : 0 < Vmax) (hK : 0 < KM) :
   rw [div_lt_div_iff₀ (by linarith) (by linarith)]
   nlinarith [mul_pos (mul_pos hV hK) (sub_pos.2 hxy)]
 
-/-- The Michaelis constant is the half-saturation substrate level: `v(K_M) = V_max / 2`. -/
+/-- **Michaelis constant is the half-saturation substrate level.** The Michaelis constant is the half-saturation substrate level: `v(K_M) = V_max / 2`. -/
 theorem mmRate_michaelisConstant {Vmax KM : ℝ} (hK : KM ≠ 0) :
     mmRate Vmax KM KM = Vmax / 2 := by
   unfold mmRate
   rw [div_eq_div_iff (by intro h; apply hK; linarith) two_ne_zero]
   ring
 
-/-- The rate law is below its maximum: `v(s) < V_max` for `s ≥ 0`, `V_max, K_M > 0`. -/
+/-- **Michaelis–Menten rate stays below its maximum.** The rate law is below its maximum: `v(s) < V_max` for `s ≥ 0`, `V_max, K_M > 0`. -/
 theorem mmRate_lt {Vmax KM s : ℝ} (hV : 0 < Vmax) (hK : 0 < KM) (hs : 0 ≤ s) :
     mmRate Vmax KM s < Vmax := by
   unfold mmRate
   rw [div_lt_iff₀ (by linarith)]
   nlinarith
 
-/-- Saturation: `v(s) → V_max` as `s → ∞`. -/
+/-- **Saturation of the Michaelis–Menten rate.** Saturation: `v(s) → V_max` as `s → ∞`. -/
 theorem tendsto_mmRate (Vmax KM : ℝ) :
     Tendsto (mmRate Vmax KM) atTop (𝓝 Vmax) := by
   have h1 : Tendsto (fun s : ℝ ↦ KM + s) atTop atTop := tendsto_atTop_add_const_left _ _ tendsto_id
@@ -183,13 +183,13 @@ theorem tendsto_mmRate (Vmax KM : ℝ) :
   field_simp
   ring
 
-/-- The fast transient of the complex with the substrate frozen at `s̄`:
+/-- **Fast transient of the complex with frozen substrate.** The fast transient of the complex with the substrate frozen at `s̄`:
 `c(t) = c* + (c₀ - c*) e^{-k₁ (s̄ + K_M) t}`, where `c* = e₀ s̄ / (K_M + s̄)`. -/
 noncomputable def fastTransient (k₁ kb k₂ e₀ s c₀ t : ℝ) : ℝ :=
   qssComplex k₁ kb k₂ e₀ s + (c₀ - qssComplex k₁ kb k₂ e₀ s) *
     exp (-(k₁ * (s + michaelisConstant k₁ kb k₂)) * t)
 
-/-- The fast transient solves the boundary-layer equation `c' = k₁ (e₀ - c) s̄ - (kb + k₂) c`
+/-- **Fast transient solves the boundary-layer equation.** The fast transient solves the boundary-layer equation `c' = k₁ (e₀ - c) s̄ - (kb + k₂) c`
 for `k₁ > 0` and `K_M + s̄ ≠ 0`. -/
 theorem hasDerivAt_fastTransient {k₁ kb k₂ e₀ s : ℝ} (hk₁ : 0 < k₁)
     (hs : michaelisConstant k₁ kb k₂ + s ≠ 0) (c₀ t : ℝ) :
@@ -210,7 +210,7 @@ theorem hasDerivAt_fastTransient {k₁ kb k₂ e₀ s : ℝ} (hk₁ : 0 < k₁)
   unfold complexRate
   linear_combination (-1 : ℝ) * hQ + (Q + (c₀ - Q) * E) * hr
 
-/-- The fast transient converges to the quasi-steady-state value for `k₁ > 0` and
+/-- **Fast transient converges to the quasi-steady state.** The fast transient converges to the quasi-steady-state value for `k₁ > 0` and
 `s̄ + K_M > 0`. -/
 theorem tendsto_fastTransient {k₁ kb k₂ e₀ s : ℝ} (hk₁ : 0 < k₁)
     (hs : 0 < s + michaelisConstant k₁ kb k₂) (c₀ : ℝ) :

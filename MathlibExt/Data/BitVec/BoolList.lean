@@ -27,7 +27,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace BitVec
 
-/-- The bits of a bitvector in little-endian order, least significant bit first. -/
+/-- **Little-endian bits of a bitvector.** The bits of a bitvector in little-endian order, least significant bit first. -/
 def toBoolListLE {n : Nat} (x : BitVec n) : List Bool :=
   List.ofFn fun i : Fin n => x.getLsbD i
 
@@ -45,7 +45,7 @@ def toBoolListLE {n : Nat} (x : BitVec n) : List Bool :=
   · simp [toBoolListLE, h]
   · simp [toBoolListLE, h, BitVec.getLsbD_of_ge x i (Nat.le_of_not_gt h)]
 
-/-- Fixed-width little-endian Boolean lists are equivalent to bitvectors of the same width. -/
+/-- **Little-endian Boolean lists are equivalent to bitvectors.** Fixed-width little-endian Boolean lists are equivalent to bitvectors of the same width. -/
 def equivBoolListLE (n : Nat) : BitVec n ≃ {w : List Bool // w.length = n} where
   toFun x := ⟨x.toBoolListLE, x.length_toBoolListLE⟩
   invFun w := (BitVec.ofBoolListLE w).cast w.property

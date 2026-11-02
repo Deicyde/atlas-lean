@@ -41,16 +41,16 @@ open Real Set
 
 namespace StatMech.Probability
 
-/-- The mean `(1-p) + p z` of the `p`-biased two-valued function with values `1` and `z`. -/
+/-- **Mean of a p-biased two-valued function.** The mean `(1-p) + p z` of the `p`-biased two-valued function with values `1` and `z`. -/
 def pih_m (p z : ℝ) : ℝ := (1 - p) + p * z
 
-/-- The variance term `4(q-1) p²(1-p)²(z - 1)²`. -/
+/-- **Variance term in the p-biased inequality.** The variance term `4(q-1) p²(1-p)²(z - 1)²`. -/
 def pih_V (p q z : ℝ) : ℝ := 4 * (q - 1) * p ^ 2 * (1 - p) ^ 2 * (z - 1) ^ 2
 
 theorem pih_g_eq (p q z : ℝ) : pbt_g p q z = (pih_m p z) ^ 2 + pih_V p q z := by
   unfold pbt_g pih_m pih_V; ring
 
-/-- The pointwise bound `(q/2) m^(q-2) V ≤ (1-p) + p z^q - m^q` for all `z ≥ 0`, with
+/-- **Pointwise bound behind the p-biased inequality.** The pointwise bound `(q/2) m^(q-2) V ≤ (1-p) + p z^q - m^q` for all `z ≥ 0`, with
 `m = pih_m p z`, `V = pih_V p q z`. -/
 def pih_KEY (p q : ℝ) : Prop :=
   ∀ z : ℝ, 0 ≤ z →
@@ -86,7 +86,7 @@ theorem pih_bernoulli {p q z : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) 
           rw [hsub, Real.rpow_neg hm.le, Real.rpow_two]
         rw [hmq2]; field_simp
 
-/-- The pointwise bound `pih_KEY p q` implies the one-variable inequality `pbt_OneVarCore p q`. -/
+/-- **Pointwise bound implies the one-variable p-biased inequality.** The pointwise bound `pih_KEY p q` implies the one-variable inequality `pbt_OneVarCore p q`. -/
 theorem pih_core_of_KEY {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq2 : q ≤ 2)
     (HKEY : pih_KEY p q) : pbt_OneVarCore p q := by
   intro z hz
@@ -158,7 +158,7 @@ theorem pih_slack_crux {p q z : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q)
         = (pih_m p z) ^ (2 - q) / z ^ (2 - q) by ring, le_div_iff₀ hzp]
   exact hkey2
 
-/-- The `p`-biased two-point inequality from `pih_KEY p q` and `pih_KEY (1 - p) q`. -/
+/-- **p-biased two-point inequality from the pointwise bound.** The `p`-biased two-point inequality from `pih_KEY p q` and `pih_KEY (1 - p) q`. -/
 theorem pih_two_point_value_of_KEY {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1)
     (hq1 : 1 ≤ q) (hq2 : q ≤ 2)
     (HKEY : pih_KEY p q) (HKEY' : pih_KEY (1 - p) q) (u v : ℝ) :

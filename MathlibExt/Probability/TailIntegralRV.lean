@@ -505,7 +505,7 @@ private theorem karamata_integral_zero {W : ℝ → ℝ} {ρ : ℝ}
       (fun x => (∫ t in (0:ℝ)..x, W t) / (x * W x)) := Filter.EventuallyEq.symm hEq
   exact Filter.Tendsto.congr' hEq' hDCT
 
-/-- Antitone bounded functions are interval-integrable. -/
+/-- **Antitone bounded functions are interval integrable.** Antitone bounded functions are interval-integrable. -/
 theorem intervalIntegrable_of_antitone_bdd {W : ℝ → ℝ} (hW : Antitone W)
     (hWnn : ∀ t, 0 ≤ W t) (hWbdd : ∃ B, ∀ t, W t ≤ B) {a b : ℝ} (hab : a ≤ b) :
     IntervalIntegrable W volume a b := by
@@ -518,7 +518,7 @@ theorem intervalIntegrable_of_antitone_bdd {W : ℝ → ℝ} (hW : Antitone W)
   rw [Real.norm_eq_abs, abs_of_nonneg (hWnn t)]
   exact hB t
 
-/-- Layer-cake formula for the first moment on `(0, a]`: the integral of `y`
+/-- **Layer-cake formula for the first moment.** Layer-cake formula for the first moment on `(0, a]`: the integral of `y`
 over `(0, a]` equals the integral of the right tail minus the endpoint
 correction. -/
 theorem layerCake_firstMoment {μ : Measure ℝ} [IsProbabilityMeasure μ] {a : ℝ} (ha : 0 ≤ a) :

@@ -42,13 +42,13 @@ following the template of `LUDecomposition.lean`.
 
 namespace Matrix
 
-/-- The leading `k × k` principal submatrix of `A`: the submatrix on the
+/-- **Leading principal submatrix.** The leading `k × k` principal submatrix of `A`: the submatrix on the
 first `k` rows and columns. -/
 def leadingPrincipalSubmatrix {α : Type*} {n : ℕ} (A : Matrix (Fin n) (Fin n) α)
     (k : ℕ) (hk : k ≤ n) : Matrix (Fin k) (Fin k) α :=
   A.submatrix (Fin.castLE hk) (Fin.castLE hk)
 
-/-- The full leading principal submatrix is the matrix itself. -/
+/-- **Full leading principal submatrix is the matrix itself.** The full leading principal submatrix is the matrix itself. -/
 theorem leadingPrincipalSubmatrix_self {α : Type*} {n : ℕ}
     (A : Matrix (Fin n) (Fin n) α) :
     leadingPrincipalSubmatrix A n (Nat.le_refl n) = A := by
@@ -80,7 +80,7 @@ private theorem posDef_fin_one {S : Matrix (Fin 1) (Fin 1) ℝ}
   rw [hform]
   exact mul_pos h (mul_self_pos.mpr hx0)
 
-/-- A block matrix with a positive definite top-left block and a positive
+/-- **Positive definiteness of a block matrix via the Schur complement.** A block matrix with a positive definite top-left block and a positive
 definite Schur complement is positive definite. This is the one-step
 induction step of Sylvester's criterion, stated for a `1 × 1`
 bottom-right block. -/

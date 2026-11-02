@@ -59,40 +59,40 @@ namespace ProbabilityTheory
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- The transition function `P t = exp (t • Q)` of the finite continuous-time Markov chain
+/-- **Transition semigroup of a continuous-time Markov chain.** The transition function `P t = exp (t • Q)` of the finite continuous-time Markov chain
 with generator `Q` (Norris 1997, Theorem 2.1.1). -/
 noncomputable def ctmcTransition (Q : Matrix ι ι ℝ) (t : ℝ) : Matrix ι ι ℝ :=
   exp (t • Q)
 
 variable (Q : Matrix ι ι ℝ)
 
-/-- At time `0` the transition function is the identity. -/
+/-- **Transition function at time zero is the identity.** At time `0` the transition function is the identity. -/
 @[simp]
 theorem ctmcTransition_zero : ctmcTransition Q 0 = 1 := by
   simp [ctmcTransition]
 
-/-- The **semigroup property** (Chapman–Kolmogorov equation): `P (s + t) = P s * P t`. -/
+/-- **Chapman–Kolmogorov equation for the transition semigroup.** The **semigroup property** (Chapman–Kolmogorov equation): `P (s + t) = P s * P t`. -/
 theorem ctmcTransition_add (s t : ℝ) :
     ctmcTransition Q (s + t) = ctmcTransition Q s * ctmcTransition Q t := by
   rw [ctmcTransition, ctmcTransition, ctmcTransition, add_smul]
   exact Matrix.exp_add_of_commute _ _ (((Commute.refl Q).smul_left s).smul_right t)
 
-/-- Rescaling the generator rescales time: `exp (t • (a • Q)) = exp ((a * t) • Q)`. -/
+/-- **Rescaling the generator rescales time.** Rescaling the generator rescales time: `exp (t • (a • Q)) = exp ((a * t) • Q)`. -/
 theorem ctmcTransition_smul (a t : ℝ) : ctmcTransition (a • Q) t = ctmcTransition Q (a * t) := by
   simp only [ctmcTransition, smul_smul, mul_comm t a]
 
-/-- The generator commutes with the transition function. -/
+/-- **Generator commutes with the transition function.** The generator commutes with the transition function. -/
 theorem commute_ctmcTransition (t : ℝ) : Commute Q (ctmcTransition Q t) :=
   ((Commute.refl Q).smul_right t).exp_right
 
-/-- The **Kolmogorov backward equation** `P' t = Q * P t` (Norris 1997, Theorem 2.1.1). -/
+/-- **Kolmogorov backward equation.** The **Kolmogorov backward equation** `P' t = Q * P t` (Norris 1997, Theorem 2.1.1). -/
 theorem hasDerivAt_ctmcTransition_backward (t : ℝ) :
     HasDerivAt (ctmcTransition Q) (Q * ctmcTransition Q t) t := by
   let _ : NormedRing (Matrix ι ι ℝ) := Matrix.linftyOpNormedRing
   let _ : NormedAlgebra ℝ (Matrix ι ι ℝ) := Matrix.linftyOpNormedAlgebra
   exact hasDerivAt_exp_smul_const' Q t
 
-/-- The **Kolmogorov forward equation** `P' t = P t * Q` (Norris 1997, Theorem 2.1.1). -/
+/-- **Kolmogorov forward equation.** The **Kolmogorov forward equation** `P' t = P t * Q` (Norris 1997, Theorem 2.1.1). -/
 theorem hasDerivAt_ctmcTransition_forward (t : ℝ) :
     HasDerivAt (ctmcTransition Q) (ctmcTransition Q t * Q) t := by
   let _ : NormedRing (Matrix ι ι ℝ) := Matrix.linftyOpNormedRing
@@ -116,7 +116,7 @@ theorem ctmcTransition_eq_exp_smul_uniformized (c t : ℝ) :
   rw [hsplit, Matrix.exp_add_of_commute _ _ ((Commute.one_left _).smul_left _),
     hexp, smul_mul_assoc, one_mul]
 
-/-- If `A` has nonnegative entries, so does `exp (t • A)` for `t ≥ 0`. -/
+/-- **Exponential of a nonnegative matrix is nonnegative.** If `A` has nonnegative entries, so does `exp (t • A)` for `t ≥ 0`. -/
 theorem ctmcTransition_nonneg_of_nonneg {A : Matrix ι ι ℝ} (hA : ∀ i j, 0 ≤ A i j) {t : ℝ}
     (ht : 0 ≤ t) (i j : ι) : 0 ≤ ctmcTransition A t i j := by
   let := Matrix.linftyOpNormedRing (n := ι) (α := ℝ)
@@ -136,7 +136,7 @@ theorem ctmcTransition_nonneg_of_nonneg {A : Matrix ι ι ℝ} (hA : ∀ i j, 0 
   simp only [Matrix.smul_apply, smul_eq_mul]
   exact mul_nonneg (inv_nonneg.mpr (Nat.cast_nonneg _)) (hp n i j)
 
-/-- If `Q` annihilates the constant vector `1`, then `P t` fixes it: `P t *ᵥ 1 = 1`. -/
+/-- **Transition function fixes the constant vector.** If `Q` annihilates the constant vector `1`, then `P t` fixes it: `P t *ᵥ 1 = 1`. -/
 theorem ctmcTransition_mulVec_one {Q : Matrix ι ι ℝ} (hQ : Q *ᵥ 1 = 0) (t : ℝ) :
     ctmcTransition Q t *ᵥ 1 = 1 := by
   let _ : NormedRing (Matrix ι ι ℝ) := Matrix.linftyOpNormedRing
@@ -161,12 +161,12 @@ namespace IsRateMatrix
 
 variable {Q}
 
-/-- The rows of the transition function of a rate matrix sum to `1`, for every real `t`. -/
+/-- **Rows of the transition function sum to one.** The rows of the transition function of a rate matrix sum to `1`, for every real `t`. -/
 theorem sum_ctmcTransition (hQ : IsRateMatrix Q) (t : ℝ) (i : ι) :
     ∑ j, ctmcTransition Q t i j = 1 := by
   simpa [mulVec, dotProduct] using congrFun (ctmcTransition_mulVec_one hQ.mulVec_one t) i
 
-/-- The transition function of a rate matrix has nonnegative entries for `t ≥ 0`, by
+/-- **Nonnegativity of the transition function of a rate matrix.** The transition function of a rate matrix has nonnegative entries for `t ≥ 0`, by
 uniformization. -/
 theorem ctmcTransition_nonneg (hQ : IsRateMatrix Q) {t : ℝ} (ht : 0 ≤ t) (i j : ι) :
     0 ≤ ctmcTransition Q t i j := by
@@ -174,7 +174,7 @@ theorem ctmcTransition_nonneg (hQ : IsRateMatrix Q) {t : ℝ} (ht : 0 ≤ t) (i 
   rw [ctmcTransition_eq_exp_smul_uniformized Q c t]
   exact mul_nonneg (Real.exp_pos _).le (ctmcTransition_nonneg_of_nonneg hc ht i j)
 
-/-- The transition function of a rate matrix is row-stochastic for `t ≥ 0` (Norris 1997,
+/-- **Transition function of a rate matrix is row-stochastic.** The transition function of a rate matrix is row-stochastic for `t ≥ 0` (Norris 1997,
 Theorem 2.1.2). -/
 theorem ctmcTransition_mem_rowStochastic (hQ : IsRateMatrix Q) {t : ℝ} (ht : 0 ≤ t) :
     ctmcTransition Q t ∈ rowStochastic ℝ ι :=

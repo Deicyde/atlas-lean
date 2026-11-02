@@ -39,23 +39,23 @@ variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω}
 
 namespace Filtration
 
-/-- The tail sigma-algebra of a decreasing filtration, the intersection of its levels. -/
+/-- **Tail sigma-algebra of a decreasing filtration.** The tail sigma-algebra of a decreasing filtration, the intersection of its levels. -/
 @[reducible]
 def tailAlgebra (ℱ : Filtration ℕᵒᵈ m0) : MeasurableSpace Ω := ⨅ n, ℱ n
 
-/-- The tail sigma-algebra lies in the ambient sigma-algebra. -/
+/-- **Tail sigma-algebra lies in the ambient sigma-algebra.** The tail sigma-algebra lies in the ambient sigma-algebra. -/
 theorem tailAlgebra_le (ℱ : Filtration ℕᵒᵈ m0) : ℱ.tailAlgebra ≤ m0 :=
   le_trans (iInf_le _ 0) (ℱ.le' 0)
 
-/-- The tail sigma-algebra lies in every level of the decreasing filtration. -/
+/-- **Tail sigma-algebra lies in every level of the filtration.** The tail sigma-algebra lies in every level of the decreasing filtration. -/
 theorem tailAlgebra_le_seq (ℱ : Filtration ℕᵒᵈ m0) (n : ℕᵒᵈ) :
     ℱ.tailAlgebra ≤ ℱ n := iInf_le _ n
 
-/-- A constant decreasing filtration has its constant value as tail algebra. -/
+/-- **Tail sigma-algebra of a constant filtration.** A constant decreasing filtration has its constant value as tail algebra. -/
 theorem tailAlgebra_const (m : MeasurableSpace Ω) (hm : m ≤ m0) :
     (Filtration.const ℕᵒᵈ m hm).tailAlgebra = m := iInf_const
 
-/-- Conditional-expectation representatives are strongly adapted separately
+/-- **Conditional expectations along a filtration are strongly adapted.** Conditional-expectation representatives are strongly adapted separately
 from their canonical backwards-martingale membership. No integrability of g is needed. -/
 theorem stronglyAdapted_condExp (ℱ : Filtration ℕᵒᵈ m0) (g : Ω → ℝ) (μ : Measure Ω) :
     StronglyAdapted ℱ (fun n => μ[g | ℱ n]) := fun _ => stronglyMeasurable_condExp
@@ -64,12 +64,12 @@ end Filtration
 
 namespace IsBackwardsMartingale
 
-/-- Every term is integrable by its canonical conditional-expectation representation. -/
+/-- **Terms of a backwards martingale are integrable.** Every term is integrable by its canonical conditional-expectation representation. -/
 theorem integrable {M : ℕ → Ω → ℝ} {m : ℕ → MeasurableSpace Ω}
     (hM : IsBackwardsMartingale M m μ) (n : ℕ) : Integrable (M n) μ :=
   integrable_condExp.congr (hM.2 n).symm
 
-/-- Canonical backwards membership is uniformly integrable in L1 on a finite measure.
+/-- **Backwards martingales are uniformly integrable.** Canonical backwards membership is uniformly integrable in L1 on a finite measure.
 The ambient bounds suffice; representative adaptedness and antitonicity are unnecessary. -/
 theorem uniformIntegrable [IsFiniteMeasure μ]
     {M : ℕ → Ω → ℝ} {m : ℕ → MeasurableSpace Ω}
@@ -77,7 +77,7 @@ theorem uniformIntegrable [IsFiniteMeasure μ]
     UniformIntegrable M 1 μ :=
   (hM.1.uniformIntegrable_condExp hm0).ae_eq (fun n => (hM.2 n).symm)
 
-/-- Conditioning a term on the next, smaller level gives the next term a.e. -/
+/-- **Conditioning a backwards martingale on the next level.** Conditioning a term on the next, smaller level gives the next term a.e. -/
 theorem condExp_succ_ae_eq [IsFiniteMeasure μ]
     {M : ℕ → Ω → ℝ} {m : ℕ → MeasurableSpace Ω}
     (hM : IsBackwardsMartingale M m μ) (hm : Antitone m)
@@ -90,7 +90,7 @@ theorem condExp_succ_ae_eq [IsFiniteMeasure μ]
 
 end IsBackwardsMartingale
 
-/-- Conditional expectations of arbitrary g form a canonical backwards martingale
+/-- **Conditional expectations form a backwards martingale.** Conditional expectations of arbitrary g form a canonical backwards martingale
 along decreasing sub-sigma-algebras. The nonintegrable-g convention is retained. -/
 theorem isBackwardsMartingale_condExp [IsFiniteMeasure μ] (g : Ω → ℝ)
     (m : ℕ → MeasurableSpace Ω) (hm : Antitone m) (hm0 : ∀ n, m n ≤ m0) :

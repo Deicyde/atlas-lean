@@ -55,7 +55,7 @@ namespace StatMech.Onsager
 
 /-! ### Dart reversal -/
 
-/-- The reverse of a dart: it starts at the head of `d` and points in the opposite direction. -/
+/-- **Reverse of a dart.** The reverse of a dart: it starts at the head of `d` and points in the opposite direction. -/
 def ons_dartRev (L : ℕ) (d : ons_Dart L) : ons_Dart L :=
   (ons_dirStep L d.2 d.1, d.2 + 2)
 
@@ -83,7 +83,7 @@ theorem ons_dartRev_ne (L : ℕ) [Fact (2 < L)] (d : ons_Dart L) :
 
 /-! ### Turn exponents -/
 
-/-- The turn from direction `μ` to `ν` as an element of `ZMod 4`. -/
+/-- **Turn between two directions as an element of $\mathbb{Z}/4$.** The turn from direction `μ` to `ν` as an element of `ZMod 4`. -/
 def ons_turnZ (μ ν : Fin 4) : ZMod 4 := (ν : ZMod 4) - (μ : ZMod 4)
 
 theorem ons_turnZ_telescope (n : ℕ) (d : Fin (n + 1) → Fin 4) :
@@ -115,7 +115,7 @@ theorem ons_turnZ_telescope (n : ℕ) (d : Fin (n + 1) → Fin 4) :
     heN, he0]
   rfl
 
-/-- The integer turn exponent from `μ` to `ν`: `1` for a left turn, `-1` for a right turn, `0` for
+/-- **Integer turn exponent between two directions.** The integer turn exponent from `μ` to `ν`: `1` for a left turn, `-1` for a right turn, `0` for
 going straight (and, by convention, for a U-turn). -/
 def ons_turnPow (μ ν : Fin 4) : ℤ :=
   if ν = μ then 0 else if ν = μ + 1 then 1 else if ν = μ + 2 then 0 else -1

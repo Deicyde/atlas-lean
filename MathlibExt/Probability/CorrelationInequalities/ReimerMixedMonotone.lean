@@ -75,7 +75,7 @@ lemma pweight_fkgLatticeCondition [Fintype E] (φ : E → Bool → ℝ) :
   simp only [Pi.sup_apply, Pi.inf_apply]
   cases ω x <;> cases ω' x <;> first | rfl | (simp; ring)
 
-/-- The Harris–FKG inequality for a product probability weight: increasing events are positively
+/-- **Harris–FKG inequality for increasing events.** The Harris–FKG inequality for a product probability weight: increasing events are positively
 correlated. -/
 theorem wprob_fkg_pos [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (hφ0 : ∀ x b, 0 ≤ φ x b) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -88,7 +88,7 @@ theorem wprob_fkg_pos [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     wprob_eq_mass_mul_indicator φ (A ∩ B)]
   exact hfkg
 
-/-- The Harris–FKG inequality for an increasing and a decreasing event: they are negatively
+/-- **Harris–FKG inequality for an increasing and a decreasing event.** The Harris–FKG inequality for an increasing and a decreasing event: they are negatively
 correlated. -/
 theorem wprob_fkg_neg [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (hφ0 : ∀ x b, 0 ≤ φ x b) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -124,7 +124,7 @@ lemma disjoint_support_cosupport (ω : ConfigSpace E) :
   simp only [Set.mem_ofPred_eq] at he hf
   rw [he] at hf; exact Bool.noConfusion hf
 
-/-- For `A` increasing and `B` decreasing, `A □ B = A ∩ B`. -/
+/-- **Disjoint occurrence of an increasing and a decreasing event.** For `A` increasing and `B` decreasing, `A □ B = A ∩ B`. -/
 theorem disjointOccurrence_eq_inter_of_mixed {A B : Set (ConfigSpace E)}
     (hA : IsIncreasing A) (hB : IsDecreasing B) :
     disjointOccurrence A B = A ∩ B := by
@@ -133,7 +133,7 @@ theorem disjointOccurrence_eq_inter_of_mixed {A B : Set (ConfigSpace E)}
   exact ⟨{e | ω e = true}, {e | ω e = false}, disjoint_support_cosupport ω,
     occursOn_support_of_increasing hA hAω, occursOn_cosupport_of_decreasing hB hBω⟩
 
-/-- Reimer's inequality for an increasing and a decreasing event under a product probability
+/-- **Reimer's inequality for mixed monotone events, product weights.** Reimer's inequality for an increasing and a decreasing event under a product probability
 weight. -/
 theorem reimerMixed_wprob [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (hφ0 : ∀ x b, 0 ≤ φ x b) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -144,7 +144,7 @@ theorem reimerMixed_wprob [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- Reimer's inequality for an increasing and a decreasing event under the product Bernoulli
+/-- **Reimer's inequality for mixed monotone events, Bernoulli measure.** Reimer's inequality for an increasing and a decreasing event under the product Bernoulli
 measure. -/
 theorem reimerMixed_inequality [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : p ≤ 1)
     {A B : Set (ConfigSpace E)} (hA : IsIncreasing A) (hB : IsDecreasing B) :

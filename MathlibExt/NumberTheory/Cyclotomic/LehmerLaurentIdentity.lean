@@ -633,7 +633,7 @@ private lemma natDegree_psi_eq (n : ℕ) (hn : 2 < n) :
   rw [← natDegree_psi_rat n (by omega), he]
   omega
 
-/-- For `2 < n`, `n.totient` is even and the `natDegree` of the real cyclotomic
+/-- **Real cyclotomic polynomial has degree half the totient.** For `2 < n`, `n.totient` is even and the `natDegree` of the real cyclotomic
 polynomial `realCyclotomicPolynomial n` equals `n.totient / 2`. The `Even`
 conjunct makes the source's exact half machine-visible under natural-number
 division.

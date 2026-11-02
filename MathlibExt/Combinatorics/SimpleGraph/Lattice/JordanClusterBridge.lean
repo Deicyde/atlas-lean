@@ -49,11 +49,11 @@ namespace StatMech
 
 namespace Lattice
 
-/-- The bounded (finite) connected components of the face-region graph of `P`. -/
+/-- **Bounded regions of a planar lattice subgraph.** The bounded (finite) connected components of the face-region graph of `P`. -/
 abbrev jcb_BoundedRegion (P : PlanarZ2Subgraph) : Type :=
   {c : (whb_faceRegion (imageGraph P)).ConnectedComponent // c.supp.Finite}
 
-/-- The bijection between bounded regions of `P` and `Fin (nullity P.G)` given by the discrete
+/-- **Bounded regions indexed by the cycle rank.** The bijection between bounded regions of `P` and `Fin (nullity P.G)` given by the discrete
 Jordan–Euler theorem. -/
 noncomputable def jcb_boundedRegionEquiv (P : PlanarZ2Subgraph) :
     jcb_BoundedRegion P ≃ Fin (nullity P.G) :=
@@ -84,7 +84,7 @@ noncomputable instance jcb_boundedRegion_finite (P : PlanarZ2Subgraph) :
     jfc_whb_regionComponents_finite (imageGraph P) (Set.toFinite (imageGraph P).edgeSet)
   infer_instance
 
-/-- A `PlanarZ2Subgraph` of cycle rank one has exactly one bounded region. -/
+/-- **Cycle rank one gives a unique bounded region.** A `PlanarZ2Subgraph` of cycle rank one has exactly one bounded region. -/
 @[reducible] noncomputable def jcb_uniqueBoundedRegion_of_nullity_one (P : PlanarZ2Subgraph)
     (h1 : nullity P.G = 1) : Unique (jcb_BoundedRegion P) := by
   have hcard : Nat.card (jcb_BoundedRegion P) = 1 := by
@@ -137,7 +137,7 @@ theorem jcb_square_nullity_one : nullity jbc_Pce.G = 1 := by
 theorem jcb_square_uniqueBoundedRegion : Nat.card (jcb_BoundedRegion jbc_Pce) = 1 :=
   jcb_boundedRegion_card_eq_one_of_nullity_one jbc_Pce jcb_square_nullity_one
 
-/-- The eight lattice points around the L-shaped tromino, in cyclic order. -/
+/-- **Lattice points around the L-shaped tromino.** The eight lattice points around the L-shaped tromino, in cyclic order. -/
 def jcb_Lemb (i : Fin 8) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![2, 0] | 3 => ![2, 1]
@@ -145,10 +145,10 @@ def jcb_Lemb (i : Fin 8) : Site 2 :=
 
 theorem jcb_Lemb_inj : Function.Injective jcb_Lemb := by decide +kernel
 
-/-- Adjacency of the 8-cycle on `Fin 8`, as a Boolean relation. -/
+/-- **Adjacency relation of the 8-cycle.** Adjacency of the 8-cycle on `Fin 8`, as a Boolean relation. -/
 def jcb_LcycRel (i j : Fin 8) : Bool := (i + 1 == j) || (j + 1 == i)
 
-/-- The 8-cycle on `Fin 8`. -/
+/-- **The 8-cycle graph.** The 8-cycle on `Fin 8`. -/
 def jcb_Lcyc : SimpleGraph (Fin 8) where
   Adj i j := jcb_LcycRel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -167,7 +167,7 @@ theorem jcb_Lemb_isSub :
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jcb_LcycRel, jcb_Lemb]
 
-/-- The 8-cycle around the L-shaped tromino as a `PlanarZ2Subgraph`. -/
+/-- **8-cycle around the L-tromino as a planar lattice subgraph.** The 8-cycle around the L-shaped tromino as a `PlanarZ2Subgraph`. -/
 noncomputable def jcb_LPce : PlanarZ2Subgraph where
   V := Fin 8
   finV := inferInstance
@@ -214,7 +214,7 @@ theorem jcb_Lshape_nullity_one : nullity jcb_LPce.G = 1 := by
 theorem jcb_Lshape_uniqueBoundedRegion : Nat.card (jcb_BoundedRegion jcb_LPce) = 1 :=
   jcb_boundedRegion_card_eq_one_of_nullity_one jcb_LPce jcb_Lshape_nullity_one
 
-/-- The two-site set `{(0, 0), (1, 1)}`, which touches diagonally. -/
+/-- **Two diagonally touching sites.** The two-site set `{(0, 0), (1, 1)}`, which touches diagonally. -/
 def jcb_diagK : Set (Site 2) := {![0, 0], ![1, 1]}
 
 theorem jcb_diagK_not_kingSat : ¬ npm_KingSaturated jcb_diagK := by

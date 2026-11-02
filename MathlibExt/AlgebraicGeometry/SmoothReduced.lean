@@ -95,7 +95,7 @@ end IsReducedOfSmoothFieldAux
 
 open AlgebraicGeometry CategoryTheory
 
-/-- A scheme smooth over a field is reduced. -/
+/-- **Smooth schemes over a field are reduced.** A scheme smooth over a field is reduced. -/
 theorem AlgebraicGeometry.isReduced_of_smooth_over_field {k : Type u} [Field k]
     {Z : Scheme.{u}} {g : Z ⟶ Spec (.of k)} (hg : Smooth g) : IsReduced Z := by
   have := hg

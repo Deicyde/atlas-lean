@@ -166,7 +166,7 @@ theorem cochromaticNumber_toNat_eq_sInf [Fintype V] (G : SimpleGraph V) :
     G.cochromaticNumber.toNat = sInf {n : ℕ | G.Cocolorable n} := by
   rw [(cocolorable_of_fintype G).cochromaticNumber_eq_sInf, ENat.toNat_natCast]
 
-/-- The chromatic cardinal is the minimal number of colors need to color it. In contrast to
+/-- **Chromatic cardinal of a graph.** The chromatic cardinal is the minimal number of colors need to color it. In contrast to
 `chromaticNumber`, which assigns `⊤ : ℕ∞` to all non-finitely colorable graphs, this definition
 returns a `Cardinal` and can therefore distinguish between different infinite chromatic numbers. -/
 noncomputable def chromaticCardinal.{u} {V : Type u} (G : SimpleGraph V) : Cardinal :=

@@ -176,7 +176,7 @@ theorem fourth_moment {n : ℕ} (hn : n ≠ 0) (x : I) :
     field_simp
   · field_simp
 
-/-- The fourth central moment of the Bernstein weights is at most `1 / n ^ 2`, uniformly in
+/-- **Fourth central moment bound for Bernstein weights.** The fourth central moment of the Bernstein weights is at most `1 / n ^ 2`, uniformly in
 `x ∈ [0, 1]`. -/
 theorem fourth_moment_le {n : ℕ} (hn : n ≠ 0) (x : I) :
     (∑ k : Fin (n + 1), ((x : ℝ) - z k) ^ 4 * bernstein n k x) ≤ 1 / (n : ℝ) ^ 2 := by

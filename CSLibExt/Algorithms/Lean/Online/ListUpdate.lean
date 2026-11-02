@@ -517,7 +517,7 @@ theorem mtfCost_le_static (σ : List α) {M L : List α} (hnd : M.Nodup) (hL : L
 
 /-! ## The lower bound for deterministic online algorithms -/
 
-/-- A deterministic online list-update algorithm on the items of `M`: a state machine whose list
+/-- **Deterministic online list-update algorithm.** A deterministic online list-update algorithm on the items of `M`: a state machine whose list
 is always a rearrangement of `M`. Its rearrangements are free, which only strengthens the lower
 bound. -/
 structure OnlineListUpdate.{u, v} (α : Type u) (M : List α) where

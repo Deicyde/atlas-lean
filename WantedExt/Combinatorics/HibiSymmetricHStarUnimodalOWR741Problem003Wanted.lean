@@ -42,7 +42,7 @@ becomes one in a basis of that lattice). The `h*`-polynomial is `MetaMathlibExt.
 
 open MetaMathlibExt
 
-/-- The lattice polytope in `ℝ^d` spanned by the finite set `S ⊆ ℤ^d` of integer points. -/
+/-- **Lattice polytope spanned by integer points.** The lattice polytope in `ℝ^d` spanned by the finite set `S ⊆ ℤ^d` of integer points. -/
 def latticePolytope {d : ℕ} (S : Finset (Fin d → ℤ)) : Set (Fin d → ℝ) :=
   convexHull ℝ ((fun v : Fin d → ℤ => fun i => (v i : ℝ)) '' (S : Set (Fin d → ℤ)))
 

@@ -59,7 +59,7 @@ The natural germ of the same process is trivial. The theorem below keeps the
 natural-filtration scope and the complete original proof of that valid result.
 -/
 
-/-- The *germ σ-algebra at `0`* of a filtration `𝓕` indexed by `NNReal`,
+/-- **Germ sigma-algebra at time zero.** The *germ σ-algebra at `0`* of a filtration `𝓕` indexed by `NNReal`,
 defined as the intersection `⨅_{t > 0} 𝓕_t`. For Brownian motion this is the
 `𝓕_0^+` σ-algebra of events observable "immediately after" time `0`. Ported
 verbatim from `v1/Atlas/TheoryOfProbability/code/Blumenthal01.lean`. -/
@@ -68,7 +68,7 @@ def germSigmaAlgebraZero {Ω : Type*} {m : MeasurableSpace Ω} (𝓕 : Filtratio
     MeasurableSpace Ω :=
   ⨅ t > (0 : NNReal), 𝓕 t
 
-/-- A continuous process `B : NNReal → Ω → E` with independent increments,
+/-- **Continuous process with independent increments.** A continuous process `B : NNReal → Ω → E` with independent increments,
 started at `x` and adapted to `𝓕`. The measure is a probability measure,
 `B 0 = x` a.e., each increment after `s` is independent of `𝓕 s`, and a.e.
 paths are continuous. These are the five meaningful fields of the archived
@@ -85,7 +85,7 @@ structure IsContinuousIndependentIncrementProcess
     Indep (𝓕 s) (MeasurableSpace.comap (fun ω => B t ω - B s ω) inferInstance) μ
   continuous_path : ∀ᵐ ω ∂μ, Continuous (fun t : NNReal => B t ω)
 
-/-- Each coordinate of the adapted continuous process is measurable. -/
+/-- **Coordinates of a continuous independent-increment process are measurable.** Each coordinate of the adapted continuous process is measurable. -/
 theorem IsContinuousIndependentIncrementProcess.measurable
     {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*}
     [MeasurableSpace E] [AddCommGroup E] [TopologicalSpace E]
@@ -225,7 +225,7 @@ private theorem iIndep_incrSigma {Ω : Type*} {m : MeasurableSpace Ω} {E : Type
       · simp
       · simp
 
-/-- The natural filtration of a process: `𝓕^nat_t = σ(B_u : u ≤ t)`. Unlike
+/-- **Natural filtration of a process.** The natural filtration of a process: `𝓕^nat_t = σ(B_u : u ≤ t)`. Unlike
 Mathlib's `Filtration.natural`, this is built from measurability rather than
 strong measurability, which is all that is available from adaptedness. -/
 def naturalFiltration {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*} [MeasurableSpace E]
@@ -243,13 +243,13 @@ def naturalFiltration {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*} [Measura
     intro u hu
     exact measurable_iff_comap_le.mp (hB u)
 
-/-- The germ σ-algebra of the natural filtration of `B`. -/
+/-- **Germ sigma-algebra of the natural filtration.** The germ σ-algebra of the natural filtration of `B`. -/
 @[instance_reducible]
 def naturalGerm {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*} [MeasurableSpace E]
     (B : NNReal → Ω → E) (hB : ∀ t, Measurable (B t)) : MeasurableSpace Ω :=
   germSigmaAlgebraZero (naturalFiltration B hB)
 
-/-- Each `B u` is measurable with respect to the natural filtration at any
+/-- **Process is measurable for its natural filtration at later times.** Each `B u` is measurable with respect to the natural filtration at any
 later time `t`. -/
 theorem measurable_naturalFiltration {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*}
     [MeasurableSpace E] {B : NNReal → Ω → E} (hB : ∀ t, Measurable (B t)) {t u : NNReal}
@@ -257,7 +257,7 @@ theorem measurable_naturalFiltration {Ω : Type*} {m : MeasurableSpace Ω} {E : 
   rw [measurable_iff_comap_le]
   exact le_iSup_of_le u (le_iSup_of_le hu le_rfl)
 
-/-- The natural filtration is contained in any filtration to which `B` is
+/-- **Natural filtration is the smallest adapted filtration.** The natural filtration is contained in any filtration to which `B` is
 adapted. -/
 theorem naturalFiltration_le {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*}
     [MeasurableSpace E] [AddCommGroup E] [TopologicalSpace E]
@@ -269,7 +269,7 @@ theorem naturalFiltration_le {Ω : Type*} {m : MeasurableSpace Ω} {E : Type*}
   intro u hu
   exact le_trans (measurable_iff_comap_le.mp (hBM.adapted u)) (𝓕.mono hu)
 
-/-- The germ σ-algebra is contained in every positive-time component of the
+/-- **Germ sigma-algebra lies in every positive-time level.** The germ σ-algebra is contained in every positive-time component of the
 filtration. -/
 theorem germ_le_of_pos {Ω : Type*} {m : MeasurableSpace Ω} (𝓕 : Filtration NNReal m)
     {t : NNReal} (ht : 0 < t) : germSigmaAlgebraZero 𝓕 ≤ 𝓕 t :=
@@ -1008,7 +1008,7 @@ private theorem measure_inter_of_naturalFiltration
         (fun i => ((naturalFiltration B hB).le s) _ (hfm i)) ih
   exact hP C hC
 
-/-- Every event in the natural germ of a continuous process with independent
+/-- **Blumenthal zero-one law.** Every event in the natural germ of a continuous process with independent
 increments and a deterministic a.e. initial value has probability `0` or `1`.
 This general form includes the classical Brownian natural-filtration law. -/
 theorem zero_one_naturalGerm

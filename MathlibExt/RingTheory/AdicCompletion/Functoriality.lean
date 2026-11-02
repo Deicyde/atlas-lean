@@ -113,7 +113,7 @@ private theorem exists_monotone_modulus {B : Type*} [CommRing B] (𝔪 : Ideal B
 end AdicCompletionFunctorialityAux
 
 open AdicCompletionFunctorialityAux in
-/-- A ring homomorphism compatible with the adic topologies lifts to a map
+/-- **Lifting compatible ring maps to adic completions.** A ring homomorphism compatible with the adic topologies lifts to a map
 from the adic completion into an adically complete target. -/
 theorem AdicCompletion.exists_ringHom_comp_algebraMap_eq_of_forall_exists_pow_le_comap
     {B : Type*} [CommRing B] (𝔪 : Ideal B) {S : Type*} [CommRing S] (J : Ideal S)
@@ -152,7 +152,7 @@ theorem AdicCompletion.exists_ringHom_comp_algebraMap_eq_of_forall_exists_pow_le
     RingHom.id_apply, AdicCompletion.evalₐ_of, Ideal.quotientMap_mk]
 
 open AdicCompletionFunctorialityAux in
-/-- A ring equivalence induces an equivalence of adic completions. -/
+/-- **Ring equivalences induce equivalences of adic completions.** A ring equivalence induces an equivalence of adic completions. -/
 theorem AdicCompletion.exists_ringEquiv_map_of_ringEquiv
     {R : Type u} {S : Type v} [CommRing R] [CommRing S] (I : Ideal R) (e : R ≃+* S) :
     ∃ ê : AdicCompletion I R ≃+* AdicCompletion (I.map e) S,
@@ -200,7 +200,7 @@ theorem AdicCompletion.exists_ringEquiv_map_of_ringEquiv
     AdicCompletion.evalₐ_of, AdicCompletion.evalₐ_of, Ideal.quotientMap_mk]
   rfl
 
-/-- A ring equivalence between local rings induces an equivalence of their
+/-- **Ring equivalences of local rings induce equivalent completions.** A ring equivalence between local rings induces an equivalence of their
 maximal-ideal adic completions. -/
 theorem IsLocalRing.exists_ringEquiv_adicCompletion_maximalIdeal_comp_algebraMap_of_ringEquiv
     {R : Type u} {S : Type v} [CommRing R] [CommRing S]

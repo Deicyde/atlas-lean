@@ -76,18 +76,18 @@ section Insert
 
 variable {α : Type u} {m : ℕ}
 
-/-- Insert every element of a list, left to right. -/
+/-- **Inserting a list of elements into a Bloom filter.** Insert every element of a list, left to right. -/
 def insertAll (filter : BloomFilter α m) (xs : List α) : BloomFilter α m :=
   xs.foldl BloomFilter.insert filter
 
-/-- Insertion keeps the hash functions. -/
+/-- **Bloom filter insertion keeps the hash functions.** Insertion keeps the hash functions. -/
 theorem hashes_insertAll (filter : BloomFilter α m) (xs : List α) :
     (filter.insertAll xs).hashes = filter.hashes := by
   induction xs generalizing filter with
   | nil => rfl
   | cons x xs ih => exact ih (filter.insert x)
 
-/-- After inserting a list, bit `i` is set iff it was set before or some hash function sends
+/-- **Bits set after inserting a list into a Bloom filter.** After inserting a list, bit `i` is set iff it was set before or some hash function sends
 some inserted element to `i`. -/
 theorem bit_insertAll_iff (filter : BloomFilter α m) (xs : List α) (i : Fin m) :
     (filter.insertAll xs).bits[i] = true ↔
@@ -102,7 +102,7 @@ theorem bit_insertAll_iff (filter : BloomFilter α m) (xs : List α) (i : Fin m)
       simp only [List.mem_cons, exists_eq_or_imp]
       rw [or_assoc]
 
-/-- The false-positive event: after inserting `xs` into an empty filter, `y` is reported
+/-- **Characterization of the Bloom filter false-positive event.** The false-positive event: after inserting `xs` into an empty filter, `y` is reported
 present iff every bit selected by `y` is selected by some stored element. -/
 theorem mayContain_insertAll_empty_iff (hashes : List (α → Fin m)) (xs : List α) (y : α) :
     ((empty hashes).insertAll xs).mayContain y = true ↔
@@ -118,23 +118,23 @@ section Uniform
 
 variable {m n k : ℕ}
 
-/-- The bits set by the stored hash values `H a j` (element `a`, hash function `j`). -/
+/-- **Bits set by the stored hash values.** The bits set by the stored hash values `H a j` (element `a`, hash function `j`). -/
 def setBits (H : Fin n → Fin k → Fin m) : Finset (Fin m) :=
   univ.image fun p : Fin n × Fin k => H p.1 p.2
 
-/-- A bit is unset iff no stored hash value selects it. -/
+/-- **A Bloom filter bit is unset iff no stored hash selects it.** A bit is unset iff no stored hash value selects it. -/
 theorem notMem_setBits_iff (H : Fin n → Fin k → Fin m) (i : Fin m) :
     i ∉ setBits H ↔ ∀ a j, H a j ≠ i := by
   simp [setBits]
 
 variable (m n k) in
-/-- The exact false-positive rate under uniform hashing: the fraction of outcomes (stored hash
+/-- **Exact Bloom filter false-positive rate under uniform hashing.** The exact false-positive rate under uniform hashing: the fraction of outcomes (stored hash
 values `H`, query hash values `q`) in which every query bit is set. -/
 noncomputable def falsePositiveProb : ℝ :=
   (#{Hq : (Fin n → Fin k → Fin m) × (Fin k → Fin m) | ∀ j, Hq.2 j ∈ setBits Hq.1} : ℝ) /
     Fintype.card ((Fin n → Fin k → Fin m) × (Fin k → Fin m))
 
-/-- Exactly `(m - 1) ^ (n * k)` outcomes of the stored hash values leave bit `i` unset. -/
+/-- **Number of hash outcomes leaving a given bit unset.** Exactly `(m - 1) ^ (n * k)` outcomes of the stored hash values leave bit `i` unset. -/
 theorem card_unset (i : Fin m) :
     #{H : Fin n → Fin k → Fin m | i ∉ setBits H} = (m - 1) ^ (n * k) := by
   have : ({H : Fin n → Fin k → Fin m | i ∉ setBits H} : Finset _) =
@@ -144,7 +144,7 @@ theorem card_unset (i : Fin m) :
   rw [this, Fintype.card_piFinset]
   simp [Fintype.card_piFinset, card_erase_of_mem, ← pow_mul, mul_comm]
 
-/-- A given bit is unset with probability `(1 - 1/m) ^ (n * k)`. -/
+/-- **Probability that a given Bloom filter bit is unset.** A given bit is unset with probability `(1 - 1/m) ^ (n * k)`. -/
 theorem prob_unset (hm : 0 < m) (i : Fin m) :
     (#{H : Fin n → Fin k → Fin m | i ∉ setBits H} : ℝ) /
       Fintype.card (Fin n → Fin k → Fin m) = (1 - 1 / (m : ℝ)) ^ (n * k) := by
@@ -180,7 +180,7 @@ private theorem sum_card_setBits :
   simp_rw [hin]
   simp only [sum_const, card_univ, Fintype.card_fin, nsmul_eq_mul]
 
-/-- The expected fraction of set bits is `1 - (1 - 1/m) ^ (n * k)`. -/
+/-- **Expected fraction of set bits in a Bloom filter.** The expected fraction of set bits is `1 - (1 - 1/m) ^ (n * k)`. -/
 theorem expected_fraction_set (hm : 0 < m) :
     (∑ H : Fin n → Fin k → Fin m, (#(setBits H) : ℝ) / m) /
       Fintype.card (Fin n → Fin k → Fin m) = 1 - (1 - 1 / (m : ℝ)) ^ (n * k) := by
@@ -191,7 +191,7 @@ theorem expected_fraction_set (hm : 0 < m) :
   rw [← pow_mul, mul_comm k n, one_sub_div hm', div_pow]
   field_simp
 
-/-- The exact false-positive rate is the expectation of `(fraction of set bits) ^ k`. -/
+/-- **False-positive rate as the expected k-th power of the set fraction.** The exact false-positive rate is the expectation of `(fraction of set bits) ^ k`. -/
 theorem falsePositiveProb_eq (hm : 0 < m) :
     falsePositiveProb m n k =
       (∑ H : Fin n → Fin k → Fin m, ((#(setBits H) : ℝ) / m) ^ k) /
@@ -240,7 +240,7 @@ theorem classical_le_falsePositiveProb (hm : 0 < m) :
       _ ≤ (∑ H, ((#(setBits H) : ℝ) / m) ^ (j + 1)) * N ^ (j + 1) := by
           gcongr
 
-/-- The exponential approximation `(1 - exp (-(k n) / m)) ^ k` is also a lower bound. -/
+/-- **Exponential approximation is a lower bound on the false-positive rate.** The exponential approximation `(1 - exp (-(k n) / m)) ^ k` is also a lower bound. -/
 theorem exp_approx_le_falsePositiveProb (hm : 0 < m) :
     (1 - Real.exp (-((n * k : ℕ) : ℝ) / m)) ^ k ≤ falsePositiveProb m n k := by
   refine le_trans ?_ (classical_le_falsePositiveProb hm)
@@ -355,7 +355,7 @@ private lemma log_product_lt {t : ℝ} (ht0 : 0 < t) (ht1 : t < 1)
           (by constructor <;> norm_num) (by linarith)
       _ = Real.log 2 ^ 2 := log_product_half
 
-/-- `log t * log (1 - t) ≤ (log 2) ^ 2` on `(0, 1)`. -/
+/-- **Bound $\log t \cdot \log(1-t) \le (\log 2)^2$ on the unit interval.** `log t * log (1 - t) ≤ (log 2) ^ 2` on `(0, 1)`. -/
 theorem log_mul_log_one_sub_le {t : ℝ} (ht0 : 0 < t) (ht1 : t < 1) :
     Real.log t * Real.log (1 - t) ≤ Real.log 2 ^ 2 := by
   by_cases ht : t = 1 / 2
@@ -363,7 +363,7 @@ theorem log_mul_log_one_sub_le {t : ℝ} (ht0 : 0 < t) (ht1 : t < 1) :
     exact log_product_half.le
   · exact (log_product_lt ht0 ht1 ht).le
 
-/-- Equality holds only at `t = 1 / 2`. -/
+/-- **Equality in the log-product bound holds only at $t = 1/2$.** Equality holds only at `t = 1 / 2`. -/
 theorem log_mul_log_one_sub_eq_iff {t : ℝ} (ht0 : 0 < t) (ht1 : t < 1) :
     Real.log t * Real.log (1 - t) = Real.log 2 ^ 2 ↔ t = 1 / 2 := by
   constructor
@@ -374,11 +374,11 @@ theorem log_mul_log_one_sub_eq_iff {t : ℝ} (ht0 : 0 < t) (ht1 : t < 1) :
     exact log_product_half
 
 
-/-- The exponential approximation `(1 - exp (-κ n / m)) ^ κ` of the false-positive rate, as a
+/-- **Exponential approximation of the Bloom filter false-positive rate.** The exponential approximation `(1 - exp (-κ n / m)) ^ κ` of the false-positive rate, as a
 function of a real number `κ` of hash functions. -/
 noncomputable def expApprox (m n : ℕ) (κ : ℝ) : ℝ := (1 - Real.exp (-κ * n / m)) ^ κ
 
-/-- At `κ = (m / n) log 2` half of the bits are expected to be set and the approximation is
+/-- **Exponential approximation at the optimal number of hash functions.** At `κ = (m / n) log 2` half of the bits are expected to be set and the approximation is
 `(1 / 2) ^ κ`. -/
 theorem expApprox_at_optimum {m n : ℕ} (hm : 0 < m) (hn : 0 < n) :
     expApprox m n (m / n * Real.log 2) = (1 / 2) ^ ((m : ℝ) / n * Real.log 2) := by

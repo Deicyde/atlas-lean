@@ -76,7 +76,7 @@ namespace MathlibExt.Biology.PopulationGenetics.Moran
 
 open MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- Probability that one step of the Moran process with `N` individuals and mutant relative
+/-- **Up-step probability of the Moran process.** Probability that one step of the Moran process with `N` individuals and mutant relative
 fitness `r` takes the mutant count from `i` to `i + 1`: a mutant is chosen to reproduce
 (probability `r i / (r i + N - i)`) and a wild type is chosen to die (probability
 `(N - i) / N`). Meaningful for `0 < r` and `i ≤ N` (the real subtraction `N - i` is negative
@@ -84,20 +84,20 @@ for `i > N`). -/
 noncomputable def moranUp (r : ℝ) (N i : ℕ) : ℝ :=
   r * i / (r * i + (N - i)) * ((N - i) / N)
 
-/-- Probability that one step of the Moran process takes the mutant count from `i` to `i - 1`:
+/-- **Down-step probability of the Moran process.** Probability that one step of the Moran process takes the mutant count from `i` to `i - 1`:
 a wild type is chosen to reproduce (probability `(N - i) / (r i + N - i)`) and a mutant is
 chosen to die (probability `i / N`). Meaningful for `0 < r` and `i ≤ N`. -/
 noncomputable def moranDown (r : ℝ) (N i : ℕ) : ℝ :=
   (N - i) / (r * i + (N - i)) * (i / N)
 
-/-- The fixation probability of the Moran process started from `i` mutants out of `N`:
+/-- **Fixation probability of the Moran process.** The fixation probability of the Moran process started from `i` mutants out of `N`:
 `(1 - r⁻¹ ^ i) / (1 - r⁻¹ ^ N)` for `r ≠ 1`, and `i / N` in the neutral case `r = 1`.
 The model's domain is `0 < r`, `N ≥ 1`, `i ≤ N`; outside it the value is the closed formula
 evaluated with Lean's total division (e.g. `x / 0 = 0`) and carries no meaning. -/
 noncomputable def moranFixation (r : ℝ) (N i : ℕ) : ℝ :=
   if r = 1 then i / N else (1 - r⁻¹ ^ i) / (1 - r⁻¹ ^ N)
 
-/-- One-step transition probabilities of the Moran process on the states `Fin (N + 1)`:
+/-- **One-step transition probabilities of the Moran process.** One-step transition probabilities of the Moran process on the states `Fin (N + 1)`:
 `a_i` to `i + 1`, `b_i` to `i - 1`, `1 - a_i - b_i` to `i`, and `0` elsewhere. -/
 noncomputable def moranProb (r : ℝ) (N : ℕ) (i j : Fin (N + 1)) : ℝ :=
   if (j : ℕ) = i + 1 then moranUp r N i
@@ -105,29 +105,29 @@ noncomputable def moranProb (r : ℝ) (N : ℕ) (i j : Fin (N + 1)) : ℝ :=
   else if j = i then 1 - moranUp r N i - moranDown r N i
   else 0
 
-/-- No mutant can be added when the mutant type is fixed. -/
+/-- **No up-step from the fixed state of the Moran process.** No mutant can be added when the mutant type is fixed. -/
 @[simp]
 theorem moranUp_last (r : ℝ) (N : ℕ) : moranUp r N N = 0 := by
   simp [moranUp]
 
-/-- No mutant can be removed when the mutant type is absent. -/
+/-- **No down-step from the empty state of the Moran process.** No mutant can be removed when the mutant type is absent. -/
 @[simp]
 theorem moranDown_zero (r : ℝ) (N : ℕ) : moranDown r N 0 = 0 := by
   simp [moranDown]
 
-/-- The ratio of the down- and up-step probabilities is `1 / r`: `r · b_i = a_i`. -/
+/-- **Ratio of Moran down- and up-step probabilities.** The ratio of the down- and up-step probabilities is `1 / r`: `r · b_i = a_i`. -/
 theorem mul_moranDown (r : ℝ) (N i : ℕ) : r * moranDown r N i = moranUp r N i := by
   unfold moranDown moranUp
   ring
 
-/-- The up-step probability is nonnegative on the states `0 ≤ i ≤ N`. -/
+/-- **Nonnegativity of the Moran up-step probability.** The up-step probability is nonnegative on the states `0 ≤ i ≤ N`. -/
 theorem moranUp_nonneg {r : ℝ} (hr : 0 < r) {N i : ℕ} (hi : i ≤ N) : 0 ≤ moranUp r N i := by
   have : (i : ℝ) ≤ N := by exact_mod_cast hi
   unfold moranUp
   have h1 : 0 ≤ (N : ℝ) - i := by linarith
   positivity
 
-/-- The down-step probability is nonnegative on the states `0 ≤ i ≤ N`. -/
+/-- **Nonnegativity of the Moran down-step probability.** The down-step probability is nonnegative on the states `0 ≤ i ≤ N`. -/
 theorem moranDown_nonneg {r : ℝ} (hr : 0 < r) {N i : ℕ} (hi : i ≤ N) :
     0 ≤ moranDown r N i := by
   have : (i : ℝ) ≤ N := by exact_mod_cast hi
@@ -135,7 +135,7 @@ theorem moranDown_nonneg {r : ℝ} (hr : 0 < r) {N i : ℕ} (hi : i ≤ N) :
   have h1 : 0 ≤ (N : ℝ) - i := by linarith
   positivity
 
-/-- On the states `0 ≤ i ≤ N` the up- and down-step probabilities sum to at most `1`, so
+/-- **Moran up- and down-step probabilities sum to at most one.** On the states `0 ≤ i ≤ N` the up- and down-step probabilities sum to at most `1`, so
 the probability `1 - a_i - b_i` of staying is nonnegative. -/
 theorem moranUp_add_moranDown_le_one {r : ℝ} (hr : 0 < r) {N i : ℕ} (hi : i ≤ N) :
     moranUp r N i + moranDown r N i ≤ 1 := by
@@ -153,7 +153,7 @@ theorem moranUp_add_moranDown_le_one {r : ℝ} (hr : 0 < r) {N i : ℕ} (hi : i 
   rw [div_mul_div_comm, div_mul_div_comm, ← add_div, div_le_one (by positivity)]
   nlinarith [sq_nonneg ((N : ℝ) - i), mul_nonneg hr.le (sq_nonneg (i : ℝ))]
 
-/-- One-step expectation of a function `f` of the mutant count from state `i`:
+/-- **One-step expectation under the Moran process.** One-step expectation of a function `f` of the mutant count from state `i`:
 `∑ j, P i j f j = a_i f (i + 1) + b_i f (i - 1) + (1 - a_i - b_i) f i` (the boundary terms
 vanish at `i = 0` and `i = N`). -/
 theorem sum_moranProb_mul (r : ℝ) (N : ℕ) (i : Fin (N + 1)) (f : ℕ → ℝ) :
@@ -184,7 +184,7 @@ theorem sum_moranProb_mul (r : ℝ) (N : ℕ) (i : Fin (N + 1)) (f : ℕ → ℝ
   · have : (i : ℕ) = N := by omega
     simp [this, moranUp_last]
 
-/-- The Moran process with `N` individuals and mutant relative fitness `r > 0`, as a stochastic
+/-- **Moran process as a stochastic matrix.** The Moran process with `N` individuals and mutant relative fitness `r > 0`, as a stochastic
 matrix on the mutant counts `Fin (N + 1)`. -/
 noncomputable def moranMatrix (N : ℕ) {r : ℝ} (hr : 0 < r) : StochasticMatrix N where
   prob := moranProb r N
@@ -199,12 +199,12 @@ noncomputable def moranMatrix (N : ℕ) {r : ℝ} (hr : 0 < r) : StochasticMatri
   row_sum i := by
     simpa using sum_moranProb_mul r N i (fun _ => 1)
 
-/-- A mutant that is absent is never fixed: `φ_0 = 0`. -/
+/-- **An absent mutant is never fixed.** A mutant that is absent is never fixed: `φ_0 = 0`. -/
 @[simp]
 theorem moranFixation_zero (r : ℝ) (N : ℕ) : moranFixation r N 0 = 0 := by
   simp [moranFixation]
 
-/-- A mutant that is already fixed stays fixed: `φ_N = 1` (for `N ≠ 0`). -/
+/-- **A fixed mutant stays fixed.** A mutant that is already fixed stays fixed: `φ_N = 1` (for `N ≠ 0`). -/
 theorem moranFixation_self {r : ℝ} (hr : 0 < r) {N : ℕ} (hN : N ≠ 0) :
     moranFixation r N N = 1 := by
   unfold moranFixation
@@ -453,7 +453,7 @@ theorem tendsto_matPow_moranMatrix_zero {r : ℝ} (hr : 0 < r) {N : ℕ} (hN : N
   simpa only [hi] using hf i
 
 
-/-- Kimura's diffusion fixation probability at scaled selection `σ / 2` is
+/-- **Closed form of Kimura's fixation probability.** Kimura's diffusion fixation probability at scaled selection `σ / 2` is
 `(1 - e^{-σ x}) / (1 - e^{-σ})` (for `σ ≠ 0`). -/
 theorem kimuraFixation_half {σ : ℝ} (hσ : σ ≠ 0) (x : ℝ) :
     kimuraFixation (σ / 2) x = (1 - exp (-σ * x)) / (1 - exp (-σ)) := by

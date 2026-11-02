@@ -112,7 +112,7 @@ theorem jcs_cycle_nullity_eq_one {V : Type*} {G : SimpleGraph V} {v : V}
   rw [hccard, hecard, hvcard]
   omega
 
-/-- A cycle, as a graph on its own vertices, has face count two: the combinatorial form of the
+/-- **Jordan curve theorem for cycles: face count two.** A cycle, as a graph on its own vertices, has face count two: the combinatorial form of the
 **Jordan curve theorem** for cycles (C. Jordan, *Cours d'analyse*, 1887). -/
 theorem jcs_cycle_faceCount_eq_two {V : Type*} {G : SimpleGraph V} {v : V}
     (c : G.Walk v v) (hc : c.IsCycle) :
@@ -156,7 +156,7 @@ theorem jcs_two_components_of_sides (S : Set (Site 2)) {x y : Site 2} (hx : x �
       | false => exact ⟨L.connectedComponentMk y, by rw [hf_mk]; simp [hy]⟩
   rw [Nat.card_eq_of_bijective f hbij, Nat.card_eq_fintype_card, Fintype.card_bool]
 
-/-- `S` and its complement are nonempty, and any two sites on the same side of `S` are connected
+/-- **Jordan region of the cut lattice.** `S` and its complement are nonempty, and any two sites on the same side of `S` are connected
 in the lattice with the boundary edges of `S` removed. -/
 def jcs_JordanRegion (S : Set (Site 2)) : Prop :=
   (∃ x, x ∈ S) ∧ (∃ y, y ∉ S) ∧

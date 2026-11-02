@@ -40,7 +40,7 @@ namespace NormedSpace
 
 variable {𝔸 : Type*} [NormedRing 𝔸] [NormOneClass 𝔸]
 
-/-- Telescoping estimate for powers in a normed ring with `‖1‖ = 1`:
+/-- **Telescoping estimate for differences of powers in a normed ring.** Telescoping estimate for powers in a normed ring with `‖1‖ = 1`:
 `‖a ^ m - b ^ m‖ ≤ m ‖a - b‖ max(‖a‖, ‖b‖) ^ (m - 1)`. -/
 theorem norm_pow_sub_pow_le (a b : 𝔸) (m : ℕ) :
     ‖a ^ m - b ^ m‖ ≤ m * ‖a - b‖ * max ‖a‖ ‖b‖ ^ (m - 1) := by

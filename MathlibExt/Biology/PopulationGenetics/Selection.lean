@@ -65,18 +65,18 @@ variable {ι : Type*} [Fintype ι]
 
 /-! ### Haploid selection -/
 
-/-- The mean fitness `w̄ = ∑ i, p i * w i` of a population with type frequencies `p` and
+/-- **Mean fitness of a population.** The mean fitness `w̄ = ∑ i, p i * w i` of a population with type frequencies `p` and
 fitnesses `w`. -/
 def meanFitness (p w : ι → ℝ) : ℝ := ∑ i, p i * w i
 
-/-- The variance of fitness `Var_p(w) = ∑ i, p i * (w i - w̄) ^ 2` under the type frequencies
+/-- **Variance of fitness.** The variance of fitness `Var_p(w) = ∑ i, p i * (w i - w̄) ^ 2` under the type frequencies
 `p`. -/
 def fitnessVariance (p w : ι → ℝ) : ℝ := ∑ i, p i * (w i - meanFitness p w) ^ 2
 
-/-- One generation of haploid selection: `select p w i = p i * w i / w̄`. -/
+/-- **One generation of haploid selection.** One generation of haploid selection: `select p w i = p i * w i / w̄`. -/
 noncomputable def select (p w : ι → ℝ) (i : ι) : ℝ := p i * w i / meanFitness p w
 
-/-- Fisher's fundamental theorem of natural selection in its exact haploid, discrete-generation
+/-- **Fisher's fundamental theorem of natural selection.** Fisher's fundamental theorem of natural selection in its exact haploid, discrete-generation
 form: the change in mean fitness over one generation of selection is the variance of fitness
 divided by the mean fitness, `w̄(p') - w̄(p) = Var_p(w) / w̄(p)` (cf. Fisher 1930, who states the
 theorem for the additive genetic variance). The identity needs only `∑ p = 1` and `w̄ ≠ 0`; the
@@ -108,7 +108,7 @@ theorem meanFitness_select_sub {p w : ι → ℝ} (hp : ∑ i, p i = 1) (hw : me
   rw [hsel, hvar]
   field_simp [hw]
 
-/-- Mean fitness is positive on the simplex when every fitness is positive. -/
+/-- **Positivity of mean fitness on the simplex.** Mean fitness is positive on the simplex when every fitness is positive. -/
 theorem meanFitness_pos {p w : ι → ℝ} (hp0 : ∀ i, 0 ≤ p i) (hp : ∑ i, p i = 1)
     (hw : ∀ i, 0 < w i) : 0 < meanFitness p w := by
   classical
@@ -117,7 +117,7 @@ theorem meanFitness_pos {p w : ι → ℝ} (hp0 : ∀ i, 0 ≤ p i) (hp : ∑ i,
   exact sum_pos' (fun j _ => mul_nonneg (hp0 j) (hw j).le)
     ⟨i, hi, mul_pos (lt_of_le_of_ne (hp0 i) hpi.symm) (hw i)⟩
 
-/-- Mean fitness never decreases under haploid selection (corollary of Fisher's theorem). -/
+/-- **Mean fitness never decreases under haploid selection.** Mean fitness never decreases under haploid selection (corollary of Fisher's theorem). -/
 theorem meanFitness_le_meanFitness_select {p w : ι → ℝ} (hp0 : ∀ i, 0 ≤ p i)
     (hp : ∑ i, p i = 1) (hw : ∀ i, 0 < w i) : meanFitness p w ≤ meanFitness (select p w) w := by
   have hm := meanFitness_pos hp0 hp hw
@@ -127,12 +127,12 @@ theorem meanFitness_le_meanFitness_select {p w : ι → ℝ} (hp0 : ∀ i, 0 ≤
   rw [meanFitness_select_sub hp hm.ne']
   exact div_nonneg hv hm.le
 
-/-- Haploid selection keeps frequencies nonnegative. -/
+/-- **Haploid selection preserves nonnegative frequencies.** Haploid selection keeps frequencies nonnegative. -/
 theorem select_nonneg {p w : ι → ℝ} (hp0 : ∀ i, 0 ≤ p i) (hp : ∑ i, p i = 1)
     (hw : ∀ i, 0 < w i) (i : ι) : 0 ≤ select p w i :=
   div_nonneg (mul_nonneg (hp0 i) (hw i).le) (meanFitness_pos hp0 hp hw).le
 
-/-- Haploid selection keeps the frequencies summing to `1` whenever `w̄ ≠ 0` (for `w̄ = 0`
+/-- **Haploid selection preserves total frequency one.** Haploid selection keeps the frequencies summing to `1` whenever `w̄ ≠ 0` (for `w̄ = 0`
 the division by zero would give `0`). -/
 theorem sum_select {p w : ι → ℝ} (hw : meanFitness p w ≠ 0) : ∑ i, select p w i = 1 := by
   simp only [select]
@@ -140,13 +140,13 @@ theorem sum_select {p w : ι → ℝ} (hw : meanFitness p w ≠ 0) : ∑ i, sele
 
 /-! ### Diploid viability selection under Hardy–Weinberg proportions -/
 
-/-- The marginal fitness `∑ j, (w i j + w j i) / 2 * p j` of allele `i`: the mean fitness of a
+/-- **Marginal fitness of an allele.** The marginal fitness `∑ j, (w i j + w j i) / 2 * p j` of allele `i`: the mean fitness of a
 genotype carrying `i` whose other allele is drawn from the frequencies `p`, averaging the two
 positions at which `i` can sit in the ordered genotype. -/
 noncomputable def marginalFitness (p : ι → ℝ) (w : ι → ι → ℝ) (i : ι) : ℝ :=
   ∑ j, (w i j + w j i) / 2 * p j
 
-/-- For symmetric genotype fitnesses the marginal fitness is the row marginal
+/-- **Marginal fitness for symmetric genotype fitnesses.** For symmetric genotype fitnesses the marginal fitness is the row marginal
 `∑ j, w i j * p j`. -/
 theorem marginalFitness_of_symm {p : ι → ℝ} {w : ι → ι → ℝ} (hw : ∀ i j, w i j = w j i)
     (i : ι) : marginalFitness p w i = ∑ j, w i j * p j := by
@@ -154,17 +154,17 @@ theorem marginalFitness_of_symm {p : ι → ℝ} {w : ι → ι → ℝ} (hw : �
   rw [hw j i]
   ring
 
-/-- The mean fitness `w̄ = ∑ i, ∑ j, p i * p j * w i j` of a population in Hardy–Weinberg
+/-- **Diploid mean fitness under Hardy–Weinberg proportions.** The mean fitness `w̄ = ∑ i, ∑ j, p i * p j * w i j` of a population in Hardy–Weinberg
 proportions with allele frequencies `p` and genotype fitnesses `w`. -/
 def diploidMeanFitness (p : ι → ℝ) (w : ι → ι → ℝ) : ℝ := ∑ i, ∑ j, p i * p j * w i j
 
-/-- One generation of diploid viability selection under random mating, followed by Mendelian
+/-- **One generation of diploid viability selection.** One generation of diploid viability selection under random mating, followed by Mendelian
 transmission of either allele of each survivor:
 `diploidSelect p w i = p i * (∑ j, (w i j + w j i) / 2 * p j) / w̄`. -/
 noncomputable def diploidSelect (p : ι → ℝ) (w : ι → ι → ℝ) (i : ι) : ℝ :=
   p i * marginalFitness p w i / diploidMeanFitness p w
 
-/-- Diploid mean fitness is positive on the simplex when every genotype fitness is positive. -/
+/-- **Positivity of diploid mean fitness.** Diploid mean fitness is positive on the simplex when every genotype fitness is positive. -/
 theorem diploidMeanFitness_pos {p : ι → ℝ} {w : ι → ι → ℝ} (hp0 : ∀ i, 0 ≤ p i)
     (hp : ∑ i, p i = 1) (hw : ∀ i j, 0 < w i j) : 0 < diploidMeanFitness p w := by
   obtain ⟨i, -, hi⟩ := Finset.exists_ne_zero_of_sum_ne_zero (hp.trans_ne one_ne_zero)
@@ -177,14 +177,14 @@ theorem diploidMeanFitness_pos {p : ι → ℝ} {w : ι → ι → ℝ} (hp0 : �
           mul_nonneg (mul_nonneg (hp0 k) (hp0 j)) (hw k j).le) (Finset.mem_univ i))
   exact (mul_pos (mul_pos hi' hi') (hw i i)).trans_le hle
 
-/-- Diploid viability selection keeps allele frequencies nonnegative. -/
+/-- **Diploid selection preserves nonnegative allele frequencies.** Diploid viability selection keeps allele frequencies nonnegative. -/
 theorem diploidSelect_nonneg {p : ι → ℝ} {w : ι → ι → ℝ} (hp0 : ∀ i, 0 ≤ p i)
     (hp : ∑ i, p i = 1) (hw : ∀ i j, 0 < w i j) (i : ι) : 0 ≤ diploidSelect p w i :=
   div_nonneg (mul_nonneg (hp0 i) (Finset.sum_nonneg fun j _ =>
     mul_nonneg (div_nonneg (add_nonneg (hw i j).le (hw j i).le) zero_le_two) (hp0 j)))
     (diploidMeanFitness_pos hp0 hp hw).le
 
-/-- Diploid viability selection keeps allele frequencies summing to `1`. -/
+/-- **Diploid selection preserves total allele frequency one.** Diploid viability selection keeps allele frequencies summing to `1`. -/
 theorem sum_diploidSelect {p : ι → ℝ} {w : ι → ι → ℝ} (hw : diploidMeanFitness p w ≠ 0) :
     ∑ i, diploidSelect p w i = 1 := by
   have hs : ∑ i, ∑ j, p i * p j * w j i = diploidMeanFitness p w := by
@@ -203,7 +203,7 @@ theorem sum_diploidSelect {p : ι → ℝ} {w : ι → ι → ℝ} (hw : diploid
 
 /-! ### The Price equation -/
 
-/-- The Price equation (exact, finite population). Individual `i` has fitness `w i` (number of
+/-- **Price equation.** The Price equation (exact, finite population). Individual `i` has fitness `w i` (number of
 offspring), trait value `z i`, and mean offspring trait value `z' i`. With population means
 `w̄ = 𝔼 i, w i`, `z̄ = 𝔼 i, z i` and offspring mean trait `z̄' = ∑ i, w i * z' i / ∑ i, w i`,
 `w̄ (z̄' - z̄) = Cov(w, z) + E[w (z' - z)]`, where `Cov` is the population covariance

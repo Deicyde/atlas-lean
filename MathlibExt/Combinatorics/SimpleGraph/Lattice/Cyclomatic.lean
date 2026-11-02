@@ -41,14 +41,14 @@ open SimpleGraph
 
 variable {V : Type*}
 
-/-- A connected finite graph has at least `|V| - 1` edges. This is the `Fintype` form of Mathlib's
+/-- **Connected finite graph has at least $|V| - 1$ edges.** A connected finite graph has at least `|V| - 1` edges. This is the `Fintype` form of Mathlib's
 `SimpleGraph.Connected.card_vert_le_card_edgeSet_add_one`. -/
 theorem connected_card_edges_ge {G : SimpleGraph V} [Fintype V] [Fintype G.edgeSet]
     (hG : G.Connected) : Fintype.card V ≤ G.edgeFinset.card + 1 := by
   have h := hG.card_vert_le_card_edgeSet_add_one
   rwa [Nat.card_eq_fintype_card, Nat.card_eq_fintype_card, ← edgeFinset_card] at h
 
-/-- A connected finite graph has exactly `|V| - 1` edges iff it is acyclic. See also Mathlib's
+/-- **Connected graph with $|V| - 1$ edges is acyclic, and conversely.** A connected finite graph has exactly `|V| - 1` edges iff it is acyclic. See also Mathlib's
 `SimpleGraph.isTree_iff_connected_and_card` and `SimpleGraph.IsTree.card_edgeFinset`. -/
 theorem connected_card_edges_eq_iff_isAcyclic {G : SimpleGraph V} [Fintype V]
     [Fintype G.edgeSet] (hG : G.Connected) :
@@ -74,7 +74,7 @@ theorem exists_spanning_tree_card {G : SimpleGraph V} [Finite V]
   obtain ⟨T, hle, hT⟩ := hG.exists_isTree_le
   exact ⟨T, hle, hT, ((isTree_iff_connected_and_card).mp hT).2⟩
 
-/-- The cyclomatic number `|E| + 1 - |V|` of a finite graph. For a connected graph it is the
+/-- **Cyclomatic number $|E| + 1 - |V|$ of a finite graph.** The cyclomatic number `|E| + 1 - |V|` of a finite graph. For a connected graph it is the
 dimension of the cycle space. See `StatMech.Lattice.nullity` for the version for arbitrary
 finite graphs. -/
 def cyclomaticNumber (G : SimpleGraph V) [Fintype V] [Fintype G.edgeSet] : ℕ :=

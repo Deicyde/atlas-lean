@@ -73,7 +73,7 @@ theorem phi_le_mul_card (p : ℝ≥0) (hp : p ≤ 1) (S : Finset (Site d)) :
         Finset.sum_le_sum (fun e _ => connWithinProb_le_one p hp S e.1)
     _ = (boundaryEdges d S).card := by rw [Finset.sum_const, nsmul_eq_mul, mul_one]
 
-/-- `p̃_c(d) > 0` for `d ≥ 1`: at `p = 1/(4d + 1)`, `φ_p({0}) ≤ 2dp < 1`. -/
+/-- **Positivity of the Duminil-Copin–Tassion threshold.** `p̃_c(d) > 0` for `d ≥ 1`: at `p = 1/(4d + 1)`, `φ_p({0}) ≤ 2dp < 1`. -/
 theorem tildePc_pos (hd : 0 < d) : 0 < (tildePc d : ℝ) := by
   classical
   have hdR : (0 : ℝ) < d := by exact_mod_cast hd
@@ -121,7 +121,7 @@ theorem wordEvent_connected (g : ℕ → Fin d × Bool) (n : ℕ)
       fun j hj => hω j (by simp only [Finset.mem_range] at hj ⊢; omega)
     exact (ih hωk).trans (SimpleGraph.Adj.reachable (wordEvent_adj g (k + 1) hω k (by omega)))
 
-/-- The direction sequence of the straight path from the origin along the first coordinate axis. -/
+/-- **Straight path along the first coordinate axis.** The direction sequence of the straight path from the origin along the first coordinate axis. -/
 noncomputable def lineWord (hd : 0 < d) : ℕ → Fin d × Bool := fun _ => (⟨0, hd⟩, true)
 
 theorem lineWord_coord0 (hd : 0 < d) (k : ℕ) :
@@ -167,7 +167,7 @@ theorem theta_one_eq_one (hd : 0 < d) (h1 : (1 : ℝ≥0) ≤ 1) : theta d 1 h1 
 theorem theta_one_ne_zero (hd : 0 < d) : ∀ h1 : (1 : ℝ≥0) ≤ 1, theta d 1 h1 ≠ 0 := by
   intro h1; rw [theta_one_eq_one hd h1]; norm_num
 
-/-- Exponential decay of the one-arm probability for every `p ∈ tildePcSet d`, i.e. every `p`
+/-- **Exponential decay of the one-arm probability below the threshold.** Exponential decay of the one-arm probability for every `p ∈ tildePcSet d`, i.e. every `p`
 admitting a finite `S ∋ 0` with `φ_p(S) < 1`. -/
 theorem crossProb_exp_decay_of_mem_tildePcSet :
     ∀ p ∈ tildePcSet d, ∀ hp : p ≤ 1,

@@ -66,14 +66,14 @@ namespace MathlibExt.Analysis.InnerProductSpace.NormalApproximateSpectrum
 variable {𝕜 : Type*} [RCLike 𝕜]
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace 𝕜 E] [CompleteSpace E]
 
-/-- `μ` is an **approximate eigenvalue** of `T` if there is a sequence of
+/-- **Approximate eigenvalue of an operator.** `μ` is an **approximate eigenvalue** of `T` if there is a sequence of
 unit vectors `xₙ` with `(μ • 1 - T) xₙ → 0`. -/
 def IsApproximateEigenvalue (T : E →L[𝕜] E) (μ : 𝕜) : Prop :=
   ∃ x : ℕ → E, (∀ n, ‖x n‖ = 1) ∧
     Tendsto (fun n => (μ • (1 : E →L[𝕜] E) - T) (x n)) atTop (𝓝 0)
 
 omit [CompleteSpace E] in
-/-- The `∀ ε > 0` characterization of approximate eigenvalues. -/
+/-- **Epsilon characterization of approximate eigenvalues.** The `∀ ε > 0` characterization of approximate eigenvalues. -/
 theorem isApproximateEigenvalue_iff_forall_eps (T : E →L[𝕜] E) (μ : 𝕜) :
     IsApproximateEigenvalue T μ ↔
       ∀ ε : ℝ, 0 < ε → ∃ x : E, ‖x‖ = 1 ∧
@@ -99,7 +99,7 @@ theorem isApproximateEigenvalue_iff_forall_eps (T : E →L[𝕜] E) (μ : 𝕜) 
     exact tendsto_of_tendsto_of_tendsto_of_le_of_le tendsto_const_nhds hlim
       (fun n => (hle n).1) (fun n => (hle n).2)
 
-/-- Shifting by a scalar preserves normality. -/
+/-- **Scalar shifts of a normal operator are normal.** Shifting by a scalar preserves normality. -/
 theorem isStarNormal_smul_one_sub (T : E →L[𝕜] E) (hT : IsStarNormal T) (μ : 𝕜) :
     IsStarNormal (μ • (1 : E →L[𝕜] E) - T) := by
   rw [isStarNormal_iff]
@@ -111,7 +111,7 @@ theorem isStarNormal_smul_one_sub (T : E →L[𝕜] E) (hT : IsStarNormal T) (μ
     · exact (Commute.one_right _).smul_right _
     · exact (isStarNormal_iff T).mp hT
 
-/-- Every spectral value of a normal operator is an approximate eigenvalue. -/
+/-- **Spectral values of a normal operator are approximate eigenvalues.** Every spectral value of a normal operator is an approximate eigenvalue. -/
 theorem isApproximateEigenvalue_of_mem_spectrum {T : E →L[𝕜] E} (hT : IsStarNormal T)
     {μ : 𝕜} (hμ : μ ∈ spectrum 𝕜 T) : IsApproximateEigenvalue T μ := by
   rw [isApproximateEigenvalue_iff_forall_eps]
@@ -163,7 +163,7 @@ theorem isApproximateEigenvalue_of_mem_spectrum {T : E →L[𝕜] E} (hT : IsSta
             rw [inv_mul_cancel₀ (norm_ne_zero_iff.mpr hx0), mul_one]
 
 omit [CompleteSpace E] in
-/-- Every approximate eigenvalue is a spectral value (no normality needed). -/
+/-- **Approximate eigenvalues lie in the spectrum.** Every approximate eigenvalue is a spectral value (no normality needed). -/
 theorem mem_spectrum_of_isApproximateEigenvalue {T : E →L[𝕜] E} {μ : 𝕜}
     (h : IsApproximateEigenvalue T μ) : μ ∈ spectrum 𝕜 T := by
   rw [spectrum.mem_iff, Algebra.algebraMap_eq_smul_one]
@@ -198,14 +198,14 @@ theorem mem_spectrum_of_isApproximateEigenvalue {T : E →L[𝕜] E} {μ : 𝕜}
     exact tendsto_nhds_unique h1 hlim0
   exact one_ne_zero h10
 
-/-- For a normal operator, the spectrum is exactly the approximate point
+/-- **Spectrum of a normal operator equals its approximate point spectrum.** For a normal operator, the spectrum is exactly the approximate point
 spectrum. -/
 theorem mem_spectrum_iff_isApproximateEigenvalue {T : E →L[𝕜] E} (hT : IsStarNormal T)
     {μ : 𝕜} : μ ∈ spectrum 𝕜 T ↔ IsApproximateEigenvalue T μ :=
   ⟨isApproximateEigenvalue_of_mem_spectrum hT,
     mem_spectrum_of_isApproximateEigenvalue⟩
 
-/-- Weyl's criterion: for a self-adjoint operator, the spectrum is exactly
+/-- **Weyl's criterion for self-adjoint operators.** Weyl's criterion: for a self-adjoint operator, the spectrum is exactly
 the approximate point spectrum. -/
 theorem mem_spectrum_iff_isApproximateEigenvalue_of_isSelfAdjoint {T : E →L[𝕜] E}
     (hT : IsSelfAdjoint T) {μ : 𝕜} :
@@ -213,7 +213,7 @@ theorem mem_spectrum_iff_isApproximateEigenvalue_of_isSelfAdjoint {T : E →L[�
   mem_spectrum_iff_isApproximateEigenvalue hT.isStarNormal
 
 omit [CompleteSpace E] in
-/-- Exact eigenvalues are approximate eigenvalues. -/
+/-- **Eigenvalues are approximate eigenvalues.** Exact eigenvalues are approximate eigenvalues. -/
 theorem isApproximateEigenvalue_of_hasEigenvalue {T : E →L[𝕜] E} {μ : 𝕜}
     (h : Module.End.HasEigenvalue (T.toLinearMap) μ) : IsApproximateEigenvalue T μ := by
   rw [Module.End.hasEigenvalue_iff] at h
@@ -238,7 +238,7 @@ theorem isApproximateEigenvalue_of_hasEigenvalue {T : E →L[𝕜] E} {μ : 𝕜
     rw [hfun]
     exact tendsto_const_nhds
 
-/-- A normal operator with trivial kernel has dense range: the residual
+/-- **Normal operator with trivial kernel has dense range.** A normal operator with trivial kernel has dense range: the residual
 spectrum of a normal operator is empty. -/
 theorem denseRange_of_isStarNormal_of_ker_eq_bot {T : E →L[𝕜] E} (hT : IsStarNormal T)
     (hker : T.ker = ⊥) : DenseRange (T : E → E) := by

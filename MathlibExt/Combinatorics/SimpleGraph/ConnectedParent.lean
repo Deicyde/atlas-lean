@@ -23,7 +23,7 @@ it is generic graph theory, so it lives here.
 
 namespace SimpleGraph
 
-/-- In a connected graph every vertex `v ≠ s` has a neighbor `p` one step closer to `s`
+/-- **Parent vertex towards a root in a connected graph.** In a connected graph every vertex `v ≠ s` has a neighbor `p` one step closer to `s`
 (a parent of `v` in a breadth-first tree rooted at `s`). -/
 theorem exists_parent {V : Type*} {G : SimpleGraph V} (hG : G.Connected) {s v : V}
     (hv : v ≠ s) : ∃ p, G.Adj v p ∧ G.dist s p + 1 = G.dist s v := by

@@ -72,12 +72,12 @@ open Real Set MeasureTheory intervalIntegral
 
 namespace MathlibExt.Biology.Dynamics.FeedForwardLoop
 
-/-- The variation-of-constants solution of `z' = P(t) - α z`, `z(0) = z₀`:
+/-- **Variation-of-constants solution of a linear relaxation equation.** The variation-of-constants solution of `z' = P(t) - α z`, `z(0) = z₀`:
 `z(t) = z₀ e^{-α t} + ∫₀ᵗ e^{-α (t - s)} P(s) ds`. Used for `t ≥ 0`. -/
 noncomputable def relaxation (α : ℝ) (P : ℝ → ℝ) (z₀ t : ℝ) : ℝ :=
   z₀ * exp (-α * t) + ∫ s in (0)..t, exp (-α * (t - s)) * P s
 
-/-- The relaxation solves `z' = P - α z` at every time where the (locally integrable) production
+/-- **Relaxation solution satisfies its differential equation.** The relaxation solves `z' = P - α z` at every time where the (locally integrable) production
 rate `P` is continuous. -/
 theorem hasDerivAt_relaxation {α : ℝ} {P : ℝ → ℝ} (z₀ : ℝ)
     (hP : ∀ a b, IntervalIntegrable P volume a b) {t : ℝ} (ht : ContinuousAt P t) :
@@ -114,26 +114,26 @@ theorem hasDerivAt_relaxation {α : ℝ} {P : ℝ → ℝ} (z₀ : ℝ)
       simp
     linear_combination -P t * he
 
-/-- AND-gate production in the logic approximation: rate `β` when `K_x < x` and `K_y < y`,
+/-- **AND-gate production rate in the logic approximation.** AND-gate production in the logic approximation: rate `β` when `K_x < x` and `K_y < y`,
 else `0`. -/
 noncomputable def andGate (Kx Ky β x y : ℝ) : ℝ :=
   if Kx < x ∧ Ky < y then β else 0
 
-/-- Single-input production in the logic approximation: rate `β` when `K_x < x`, else `0`. -/
+/-- **Single-input production rate in the logic approximation.** Single-input production in the logic approximation: rate `β` when `K_x < x`, else `0`. -/
 noncomputable def simpleGate (Kx β x : ℝ) : ℝ :=
   if Kx < x then β else 0
 
-/-- `Y` after an ON step of `Sx` from `Y(0) = 0`: `Y(t) = (β_y/α_y)(1 - e^{-α_y t})`. -/
+/-- **Intermediate factor after an ON step.** `Y` after an ON step of `Sx` from `Y(0) = 0`: `Y(t) = (β_y/α_y)(1 - e^{-α_y t})`. -/
 noncomputable def yOn (αy βy t : ℝ) : ℝ :=
   βy / αy * (1 - exp (-αy * t))
 
-/-- The ON-step delay `T_on = (1/α_y) log(1 / (1 - K_yz / Y_st))`, `Y_st = β_y/α_y`: the time
+/-- **ON-step delay of the feed-forward loop.** The ON-step delay `T_on = (1/α_y) log(1 / (1 - K_yz / Y_st))`, `Y_st = β_y/α_y`: the time
 at which `Y` crosses the activation threshold `K_yz` of `Z`. Meaningful for
 `0 < K_yz < Y_st`. -/
 noncomputable def onDelay (αy βy Kyz : ℝ) : ℝ :=
   1 / αy * log (1 / (1 - Kyz / (βy / αy)))
 
-/-- `yOn` solves `Y' = β_y - α_y Y` with `Y(0) = 0` (for `α_y ≠ 0`; at `α_y = 0` Lean's
+/-- **Intermediate factor solves its production–decay equation.** `yOn` solves `Y' = β_y - α_y Y` with `Y(0) = 0` (for `α_y ≠ 0`; at `α_y = 0` Lean's
 `β_y / 0 = 0` makes `yOn` identically `0`, which is not a solution). -/
 theorem hasDerivAt_yOn {αy : ℝ} (hα : αy ≠ 0) (βy t : ℝ) :
     HasDerivAt (yOn αy βy) (βy - αy * yOn αy βy t) t ∧ yOn αy βy 0 = 0 := by
@@ -144,7 +144,7 @@ theorem hasDerivAt_yOn {αy : ℝ} (hα : αy ≠ 0) (βy t : ℝ) :
   field_simp
   ring
 
-/-- The ON delay is positive. -/
+/-- **Positivity of the ON delay.** The ON delay is positive. -/
 theorem onDelay_pos {αy βy Kyz : ℝ} (hα : 0 < αy) (hβ : 0 < βy) (hK : 0 < Kyz)
     (hKs : Kyz < βy / αy) : 0 < onDelay αy βy Kyz := by
   have hY : 0 < βy / αy := div_pos hβ hα
@@ -152,7 +152,7 @@ theorem onDelay_pos {αy βy Kyz : ℝ} (hα : 0 < αy) (hβ : 0 < βy) (hK : 0 
   have hc1 : 1 - Kyz / (βy / αy) < 1 := by have := div_pos hK hY; linarith
   exact mul_pos (one_div_pos.2 hα) (log_pos (one_lt_one_div hc0 hc1))
 
-/-- `Y` exceeds `K_yz` exactly after the ON delay: `K_yz < Y(t) ↔ T_on < t`. -/
+/-- **Intermediate factor exceeds the threshold exactly after the ON delay.** `Y` exceeds `K_yz` exactly after the ON delay: `K_yz < Y(t) ↔ T_on < t`. -/
 theorem yOn_gt_iff {αy βy Kyz : ℝ} (hα : 0 < αy) (hβ : 0 < βy)
     (hKs : Kyz < βy / αy) (t : ℝ) : Kyz < yOn αy βy t ↔ onDelay αy βy Kyz < t := by
   have hY : 0 < βy / αy := div_pos hβ hα
@@ -165,12 +165,12 @@ theorem yOn_gt_iff {αy βy Kyz : ℝ} (hα : 0 < αy) (hβ : 0 < βy)
   rw [one_div_mul_eq_div, div_lt_iff₀ hα]
   constructor <;> intro h <;> linarith
 
-/-- The FFL target after an ON step of `Sx` at `t = 0` from `Y(0) = Z(0) = 0`, with `X* = 1`
+/-- **Feed-forward loop target after an ON step.** The FFL target after an ON step of `Sx` at `t = 0` from `Y(0) = Z(0) = 0`, with `X* = 1`
 and `K_xz < 1`. -/
 noncomputable def fflOn (αy βy αz βz Kxz Kyz t : ℝ) : ℝ :=
   relaxation αz (fun s ↦ andGate Kxz Kyz βz 1 (yOn αy βy s)) 0 t
 
-/-- The simple-regulation target after an ON step of `Sx` at `t = 0` from `Z(0) = 0`. -/
+/-- **Simple-regulation target after an ON step.** The simple-regulation target after an ON step of `Sx` at `t = 0` from `Z(0) = 0`. -/
 noncomputable def simpleOn (αz βz Kxz t : ℝ) : ℝ :=
   relaxation αz (fun _ ↦ simpleGate Kxz βz 1) 0 t
 
@@ -230,7 +230,7 @@ theorem ffl_on_eq {αy βy αz βz Kxz Kyz : ℝ} (hα : 0 < αy) (hβ : 0 < βy
   simp only [sub_self, mul_zero, exp_zero, mul_one]
   ring
 
-/-- Simple regulation responds without delay: `Z(t) = (β_z/α_z)(1 - e^{-α_z t}) > 0` for all
+/-- **Simple regulation responds without delay.** Simple regulation responds without delay: `Z(t) = (β_z/α_z)(1 - e^{-α_z t}) > 0` for all
 `t > 0`. -/
 theorem simple_on_pos {αz βz Kxz : ℝ} (hαz : 0 < αz) (hβz : 0 < βz) (hKxz : Kxz < 1) {t : ℝ}
     (ht : 0 < t) : 0 < simpleOn αz βz Kxz t := by
@@ -250,12 +250,12 @@ theorem simple_on_pos {αz βz Kxz : ℝ} (hαz : 0 < αz) (hβz : 0 < βz) (hKx
   have he : exp (-αz * t) < 1 := exp_lt_one_iff.mpr (by nlinarith [mul_pos hαz ht])
   nlinarith [mul_pos (div_pos hβz hαz) (sub_pos.mpr he)]
 
-/-- The FFL target after `Sx` is removed at `t = 0` (`X* = 0`), starting from `Z(0) = z₀`, for
+/-- **Feed-forward loop target after an OFF step.** The FFL target after `Sx` is removed at `t = 0` (`X* = 0`), starting from `Z(0) = z₀`, for
 an arbitrary trajectory `Y` of the intermediate factor. -/
 noncomputable def fflOff (αz βz Kxz Kyz z₀ : ℝ) (Y : ℝ → ℝ) (t : ℝ) : ℝ :=
   relaxation αz (fun s ↦ andGate Kxz Kyz βz 0 (Y s)) z₀ t
 
-/-- The simple-regulation target after `Sx` is removed at `t = 0`, from `Z(0) = z₀`. -/
+/-- **Simple-regulation target after an OFF step.** The simple-regulation target after `Sx` is removed at `t = 0`, from `Z(0) = z₀`. -/
 noncomputable def simpleOff (αz βz Kxz z₀ t : ℝ) : ℝ :=
   relaxation αz (fun _ ↦ simpleGate Kxz βz 0) z₀ t
 

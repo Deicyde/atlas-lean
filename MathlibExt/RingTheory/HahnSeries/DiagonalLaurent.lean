@@ -34,7 +34,7 @@ namespace HahnSeries
 
 open LaurentPolynomial
 
-/-- The Hahn series with coefficient `c y` at inner exponent `d - y` and outer exponent `y`
+/-- **Diagonal Laurent-coefficient Hahn series.** The Hahn series with coefficient `c y` at inner exponent `d - y` and outer exponent `y`
 for every `y ≥ j₀`. -/
 noncomputable def diagonalLaurentSeries {R : Type*} [CommSemiring R]
     (d : ℤ) (c : ℤ → R) (j₀ : ℤ) : HahnSeries ℤ (LaurentPolynomial R) :=
@@ -44,14 +44,14 @@ noncomputable def diagonalLaurentSeries {R : Type*} [CommSemiring R]
       by_contra h
       simp [h] at hj⟩
 
-/-- The outer coefficient of a diagonal Laurent series. -/
+/-- **Outer coefficient of a diagonal Laurent series.** The outer coefficient of a diagonal Laurent series. -/
 @[simp] theorem coeff_diagonalLaurentSeries {R : Type*} [CommSemiring R]
     (d : ℤ) (c : ℤ → R) (j₀ y : ℤ) :
     (diagonalLaurentSeries d c j₀).coeff y =
       if j₀ ≤ y then AddMonoidAlgebra.single (d - y) (c y) else 0 := by
   rfl
 
-/-- Both coefficients of a diagonal Laurent series, exposing its cutoff and diagonal equation. -/
+/-- **Double coefficients of a diagonal Laurent series.** Both coefficients of a diagonal Laurent series, exposing its cutoff and diagonal equation. -/
 theorem coeff_coeff_diagonalLaurentSeries {R : Type*} [CommSemiring R]
     (d : ℤ) (c : ℤ → R) (j₀ x y : ℤ) :
     ((diagonalLaurentSeries d c j₀).coeff y).coeff x =
@@ -64,7 +64,7 @@ theorem coeff_coeff_diagonalLaurentSeries {R : Type*} [CommSemiring R]
     simp [hdiag]
   · simp [h]
 
-/-- Multiplication by the difference of the two variables takes a difference of adjacent
+/-- **Multiplying by the variable difference on diagonal coefficients.** Multiplication by the difference of the two variables takes a difference of adjacent
 diagonal coefficients. -/
 theorem coeff_coeff_variableDifference_mul {R : Type*} [CommRing R]
     (f : HahnSeries ℤ (LaurentPolynomial R)) (x y : ℤ) :
@@ -76,7 +76,7 @@ theorem coeff_coeff_variableDifference_mul {R : Type*} [CommRing R]
   rw [AddMonoidAlgebra.coeff_single_mul_eq_mul_coeff (x - 1)
     (fun m _ => by constructor <;> intro hm <;> omega), one_mul]
 
-/-- The formal difference of the inner and outer variables, bundled with its diagonal-series
+/-- **Variable difference as a unit of Hahn series.** The formal difference of the inner and outer variables, bundled with its diagonal-series
 inverse. -/
 noncomputable def variableDifferenceUnit {R : Type*} [CommRing R] :
     (HahnSeries ℤ (LaurentPolynomial R))ˣ := by
@@ -102,19 +102,19 @@ noncomputable def variableDifferenceUnit {R : Type*} [CommRing R] :
       val_inv := h
       inv_val := by simpa only [mul_comm] using h }
 
-/-- The value of `variableDifferenceUnit` is the difference of the two formal variables. -/
+/-- **Value of the variable difference unit.** The value of `variableDifferenceUnit` is the difference of the two formal variables. -/
 @[simp] theorem coe_variableDifferenceUnit {R : Type*} [CommRing R] :
     (variableDifferenceUnit (R := R) : HahnSeries ℤ (LaurentPolynomial R)) =
       single 0 (T 1) - single 1 1 := by
   rfl
 
-/-- The inverse of the formal variable difference is its infinite diagonal Laurent series. -/
+/-- **Inverse of the variable difference as a diagonal series.** The inverse of the formal variable difference is its infinite diagonal Laurent series. -/
 @[simp] theorem coe_inv_variableDifferenceUnit {R : Type*} [CommRing R] :
     (↑((variableDifferenceUnit (R := R))⁻¹) : HahnSeries ℤ (LaurentPolynomial R)) =
       diagonalLaurentSeries (-1) (fun _ => 1) 0 := by
   rfl
 
-/-- The `(N + 1)`-st power of the inverse variable difference has negative-binomial
+/-- **Powers of the inverse variable difference have binomial coefficients.** The `(N + 1)`-st power of the inverse variable difference has negative-binomial
 coefficients on one diagonal. -/
 theorem coe_inv_variableDifferenceUnit_pow_succ {R : Type*} [CommRing R] (N : ℕ) :
     (↑((variableDifferenceUnit (R := R))⁻¹) : HahnSeries ℤ (LaurentPolynomial R)) ^

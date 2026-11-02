@@ -49,7 +49,7 @@ private theorem indep_sq_of_filtration
     (MeasurableSpace.comap_le_comap_of_eq_comp (fun x : ℝ => x^2)
       (measurable_id.pow_const 2) rfl)
 
-/-- The stopped sum of squares is integrable under the stated diagonal hypotheses. -/
+/-- **Integrability of the stopped sum of squares.** The stopped sum of squares is integrable under the stated diagonal hypotheses. -/
 theorem integrable_stopped_sum_sq_diag
     {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]
     {X : ℕ → Ω → ℝ}
@@ -64,7 +64,7 @@ theorem integrable_stopped_sum_sq_diag
     (fun i j => (hX_iid i j).comp (measurable_id.pow_const 2)) hX_sq_int hT
     (indep_sq_of_filtration hXf) hT_int
 
-/-- Wald's equation applied to the squared increments gives the diagonal identity. -/
+/-- **Diagonal identity in Wald's second equation.** Wald's equation applied to the squared increments gives the diagonal identity. -/
 theorem wald_diagonal_terms
     {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]
     {X : ℕ → Ω → ℝ}

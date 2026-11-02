@@ -158,7 +158,7 @@ theorem bts_even_convex_ge {g : ℝ → ℝ} (hconv : ConvexOn ℝ (Set.Icc (-1 
   rw [hpt, heven t] at hmid
   linarith
 
-/-- For `1 ≤ q ≤ 2` and `|t| ≤ 1`, `2 + q(q-1) t² ≤ (1 + t)^q + (1 - t)^q`. -/
+/-- **Taylor lower bound for $(1+t)^q + (1-t)^q$.** For `1 ≤ q ≤ 2` and `|t| ≤ 1`, `2 + q(q-1) t² ≤ (1 + t)^q + (1 - t)^q`. -/
 theorem bts_taylor_lower {q t : ℝ} (hq1 : 1 ≤ q) (hq2 : q ≤ 2) (ht : |t| ≤ 1) :
     2 + q * (q - 1) * t ^ 2 ≤ (1 + t) ^ q + (1 - t) ^ q := by
   set g : ℝ → ℝ := fun s => (1 + s) ^ q + (1 - s) ^ q - 2 - q * (q - 1) * s ^ 2 with hg
@@ -273,7 +273,7 @@ theorem bts_abs_sum_eq (a b q : ℝ) :
   · rw [h1, h2]
   · rw [h1, h2]; ring
 
-/-- The **two-point Bonami inequality** (Bonami 1970; Beckner 1975): for `0 ≤ ρ ≤ 1` and real
+/-- **Two-point Bonami inequality.** The **two-point Bonami inequality** (Bonami 1970; Beckner 1975): for `0 ≤ ρ ≤ 1` and real
 `a, b`, with `q = 1 + ρ²`, `a² + ρ² b² ≤ ((|a + b|^q + |a - b|^q) / 2)^(2/q)`, i.e.
 `‖a + ρ b x‖₂ ≤ ‖a + b x‖_q` for a uniform random sign `x`. -/
 theorem bts_twoPointScalar {ρ : ℝ} (h0 : 0 ≤ ρ) (h1 : ρ ≤ 1) (a b : ℝ) :

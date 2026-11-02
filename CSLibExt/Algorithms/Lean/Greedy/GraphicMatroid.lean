@@ -284,7 +284,7 @@ noncomputable def graphicMatroid [Finite V] (G : SimpleGraph V) : Matroid (Sym2 
 
 variable [Fintype V] [DecidableEq V]
 
-/-- The graph of a finite edge set, with decidable adjacency. -/
+/-- **Graph of a finite edge set.** The graph of a finite edge set, with decidable adjacency. -/
 def chosen (T : Finset (Sym2 V)) : SimpleGraph V := fromEdgeSet ↑T
 
 omit [Fintype V] [DecidableEq V] in

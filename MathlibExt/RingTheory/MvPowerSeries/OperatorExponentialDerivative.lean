@@ -34,7 +34,7 @@ private theorem inv_cast_factorial_succ_mul (n : ℕ) :
   have h : (n : ℚ) + 1 ≠ 0 := by positivity
   rw [mul_inv_rev, mul_assoc, inv_mul_cancel₀ h, mul_one]
 
-/-- A lifted coefficient map commutes with every coefficient-operator iterate when the
+/-- **Lifted coefficient maps commute with coefficient-operator iterates.** A lifted coefficient map commutes with every coefficient-operator iterate when the
 coefficient maps commute pairwise. -/
 theorem compLeft_iterate_coefficientOperator {O : σ → A →ₗ[ℚ] A}
     (hc : ∀ i j a, O i (O j a) = O j (O i a)) (i : σ) (n : ℕ)
@@ -47,7 +47,7 @@ theorem compLeft_iterate_coefficientOperator {O : σ → A →ₗ[ℚ] A}
     fun g => compLeft_coefficientOperator hc i g
   exact hcomm.iterate_right n f
 
-/-- The partial derivative of the `(n + 1)`st coefficient-operator iterate is the
+/-- **Partial derivative of a coefficient-operator iterate.** The partial derivative of the `(n + 1)`st coefficient-operator iterate is the
 iterate of the partial derivative plus `(n + 1)` copies of the lifted coefficient map. -/
 theorem pderiv_iterate_coefficientOperator {O : σ → A →ₗ[ℚ] A}
     (hc : ∀ i j a, O i (O j a) = O j (O i a)) (i : σ) (n : ℕ)
@@ -72,7 +72,7 @@ theorem pderiv_iterate_coefficientOperator {O : σ → A →ₗ[ℚ] A}
       ← Function.iterate_succ_apply' (coefficientOperator O),
       ← Function.iterate_succ_apply' (coefficientOperator O), add_assoc, ← succ_nsmul]
 
-/-- The partial derivative of the first `N + 1` exponential terms is the corresponding
+/-- **Partial derivative of partial sums of the operator exponential.** The partial derivative of the first `N + 1` exponential terms is the corresponding
 partial sum on the derivative plus the first `N` terms on the lifted coefficient map. -/
 theorem pderiv_expOperatorPartial {O : σ → A →ₗ[ℚ] A}
     (hc : ∀ i j a, O i (O j a) = O j (O i a)) (i : σ) (N : ℕ)
@@ -98,7 +98,7 @@ theorem pderiv_expOperatorPartial {O : σ → A →ₗ[ℚ] A}
   · rw [Derivation.map_smul_of_tower]
     rfl
 
-/-- The partial derivative of a formal coefficient-operator exponential is the exponential
+/-- **Partial derivative of a coefficient-operator exponential.** The partial derivative of a formal coefficient-operator exponential is the exponential
 of the input derivative plus the exponential of the lifted coefficient map. -/
 theorem pderiv_expOperator {O : σ → A →ₗ[ℚ] A}
     (hc : ∀ i j a, O i (O j a) = O j (O i a)) (i : σ)
@@ -119,7 +119,7 @@ theorem pderiv_expOperator {O : σ → A →ₗ[ℚ] A}
   rw [show ((O i).compLeft (σ →₀ ℕ) f : MvPowerSeries σ A) = g from rfl,
     ← coeff_expOperator O _ (by omega)]
 
-/-- The exponential gradient law specialized to a pairwise commuting family of coefficient
+/-- **Gradient law for the exponential of commuting coefficient derivations.** The exponential gradient law specialized to a pairwise commuting family of coefficient
 derivations, using their canonical rational linear maps. -/
 theorem pderiv_expOperator_derivation {D : σ → Derivation ℚ A A}
     (hc : ∀ i j a, D i (D j a) = D j (D i a)) (i : σ)

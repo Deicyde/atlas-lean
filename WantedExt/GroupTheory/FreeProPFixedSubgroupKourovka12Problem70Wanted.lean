@@ -72,7 +72,7 @@ def fixedSubgroupFinitelyGenerated : Prop :=
         ((Subgroup.closure (S : Set F)).topologicalClosure : Set F) = {z | Δ z = z}
 
 /--
-Resolved true: the Kourovka Archive answers 12.70 "Yes, it is finite" (C. Scheiderer, 1999);
+**Fixed subgroup of a free pro-p group is finitely generated.** Resolved true: the Kourovka Archive answers 12.70 "Yes, it is finite" (C. Scheiderer, 1999);
 moreover, the fixed points of a finite `p`-group of automorphisms of a free pro-`p` group form a
 free factor (Herfort, Ribes and Zalesskii, 1999), which has finite rank when `F` does. Source: E. I.
 Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st

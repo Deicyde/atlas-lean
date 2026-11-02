@@ -49,7 +49,7 @@ open StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind
   StatMech.Onsager.WalkCrossing StatMech.Onsager.JordanParity
   StatMech.Onsager.InsideConnected StatMech.Onsager.JedBridge
 
-/-- The unit cell with lower-left corner `p`, viewed as a face of the square lattice, i.e. as the
+/-- **Unit cell as a face of the square lattice.** The unit cell with lower-left corner `p`, viewed as a face of the square lattice, i.e. as the
   site `![p.1, p.2]` of the dual lattice. -/
 def cellFace : (ℤ × ℤ) ≃ Site 2 where
   toFun p := ![p.1, p.2]
@@ -65,18 +65,18 @@ section Walk
 
 variable {m : ℕ}
 
-/-- A simple closed walk as a planar subgraph of `ℤ²`. -/
+/-- **Simple closed walk as a planar subgraph.** A simple closed walk as a planar subgraph of `ℤ²`. -/
 noncomputable abbrev walkP (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) :
     PlanarZ2Subgraph := walkSubgraph d hclosed hsimple
 
-/-- The face graph of the walk: adjacent faces of the square lattice whose common side is not an
+/-- **Face graph of a closed walk.** The face graph of the walk: adjacent faces of the square lattice whose common side is not an
   edge of the walk. -/
 noncomputable abbrev walkRegionGraph (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) :
     SimpleGraph (Site 2) := whb_faceRegion (imageGraph (walkP d hclosed hsimple))
 
-/-- Each step of the walk is an edge of its image graph. -/
+/-- **Each walk step is an edge of the image graph.** Each step of the walk is an edge of its image graph. -/
 theorem walkEdge_mem_imageGraph (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (k : Fin (m + 3)) :
@@ -88,7 +88,7 @@ theorem walkEdge_mem_imageGraph (d : Fin (m + 3) → Fin 4)
   right
   simp
 
-/-- In the image graph of a simple closed walk, the neighbours of a vertex are its predecessor and
+/-- **Neighbours in the image graph are walk predecessor and successor.** In the image graph of a simple closed walk, the neighbours of a vertex are its predecessor and
   successor on the walk. -/
 theorem imageGraph_adj_pos_iff (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
@@ -123,7 +123,7 @@ theorem imageGraph_adj_pos_iff (d : Fin (m + 3) → Fin 4)
     · rw [← SimpleGraph.mem_edgeSet]
       exact walkEdge_mem_imageGraph d hclosed hsimple k
 
-/-- Horizontally adjacent cells joined in the face graph have the same ray parity. -/
+/-- **Horizontally face-adjacent cells have the same ray parity.** Horizontally adjacent cells joined in the face graph have the same ray parity. -/
 theorem rayParity_eq_of_faceAdj_right (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (a b : ℤ)
@@ -155,7 +155,7 @@ theorem rayParity_eq_of_faceAdj_right (d : Fin (m + 3) → Fin 4)
   rw [whb_faceRegion_adj] at hadj
   exact hadj.2 (hedge ▸ walkEdge_mem_imageGraph d hclosed hsimple k)
 
-/-- Vertically adjacent cells joined in the face graph have the same ray parity. -/
+/-- **Vertically face-adjacent cells have the same ray parity.** Vertically adjacent cells joined in the face graph have the same ray parity. -/
 theorem rayParity_eq_of_faceAdj_top (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (a b : ℤ)
@@ -187,7 +187,7 @@ theorem rayParity_eq_of_faceAdj_top (d : Fin (m + 3) → Fin 4)
   rw [whb_faceRegion_adj] at hadj
   exact hadj.2 (hedge ▸ walkEdge_mem_imageGraph d hclosed hsimple k)
 
-/-- Cells adjacent in the face graph have the same ray parity. -/
+/-- **Face-adjacent cells have the same ray parity.** Cells adjacent in the face graph have the same ray parity. -/
 theorem rayParity_eq_of_faceAdj (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     {f g : Site 2} (hadj : (walkRegionGraph d hclosed hsimple).Adj f g) :
@@ -223,7 +223,7 @@ theorem rayParity_eq_of_faceAdj (d : Fin (m + 3) → Fin 4)
         convert hadj using 1 <;> funext i <;> fin_cases i <;> simp_all
       simpa [hy, hx'] using rayParity_eq_of_faceAdj_right d hclosed hsimple (f 0) (f 1) hadj'
 
-/-- Ray parity is constant on connected components of the face graph. -/
+/-- **Ray parity is constant on face-graph components.** Ray parity is constant on connected components of the face graph. -/
 theorem rayParity_eq_of_reachable (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     {f g : Site 2} (hreach : (walkRegionGraph d hclosed hsimple).Reachable f g) :
@@ -238,12 +238,12 @@ variable (d : Fin (m + 3) → Fin 4)
   (hsimple : Function.Injective (pos d))
   (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
 
-/-- A vertex `M` at which the walk turns from north to west and whose below-left cell is inside
+/-- **Top corner with an inside cell below it.** A vertex `M` at which the walk turns from north to west and whose below-left cell is inside
   (chosen from `StatMech.Onsager.InsideConnected.lexmax_corner_cell_inside`). -/
 noncomputable def lexInteriorIndex : Fin (m + 3) :=
   (lexmax_corner_cell_inside d hclosed hsimple hreflexfree).choose
 
-/-- The defining property of `lexInteriorIndex`. -/
+/-- **Defining property of the inside top corner.** The defining property of `lexInteriorIndex`. -/
 theorem lexInteriorIndex_spec :
     d (lexInteriorIndex d hclosed hsimple hreflexfree - 1) = 1 ∧
       d (lexInteriorIndex d hclosed hsimple hreflexfree) = 2 ∧
@@ -252,25 +252,25 @@ theorem lexInteriorIndex_spec :
         ((pos d (lexInteriorIndex d hclosed hsimple hreflexfree)).2 - 1) = 1 :=
   (lexmax_corner_cell_inside d hclosed hsimple hreflexfree).choose_spec
 
-/-- The face of the cell below-left of the corner `lexInteriorIndex`. -/
+/-- **Face below-left of the inside top corner.** The face of the cell below-left of the corner `lexInteriorIndex`. -/
 noncomputable def lexInteriorFace : Site 2 :=
   cellFace
     ((pos d (lexInteriorIndex d hclosed hsimple hreflexfree)).1 - 1,
       (pos d (lexInteriorIndex d hclosed hsimple hreflexfree)).2 - 1)
 
-/-- The face `lexInteriorFace` is inside the walk. -/
+/-- **The face below the inside top corner is inside.** The face `lexInteriorFace` is inside the walk. -/
 theorem lexInteriorFace_parity :
     rayParity d (lexInteriorFace d hclosed hsimple hreflexfree 0)
       (lexInteriorFace d hclosed hsimple hreflexfree 1) = 1 := by
   exact (lexInteriorIndex_spec d hclosed hsimple hreflexfree).2.2
 
-/-- The connected component of the face graph containing `lexInteriorFace`. -/
+/-- **Inner component of the face graph.** The connected component of the face graph containing `lexInteriorFace`. -/
 noncomputable def innerComponent :
     (walkRegionGraph d hclosed hsimple).ConnectedComponent :=
   (walkRegionGraph d hclosed hsimple).connectedComponentMk
     (lexInteriorFace d hclosed hsimple hreflexfree)
 
-/-- A face far outside the bounding box of the walk has ray parity `0`. -/
+/-- **A face far outside the walk has ray parity zero.** A face far outside the bounding box of the walk has ray parity `0`. -/
 theorem outerBeacon_parity :
     rayParity d
       (beacon 2 (outerBoxRadius (walkP d hclosed hsimple) + 1) 0)
@@ -286,7 +286,7 @@ theorem outerBeacon_parity :
       (outerBoxRadius (walkP d hclosed hsimple) : ℤ) + 1 + 1
     omega
 
-/-- The component `innerComponent` is bounded. -/
+/-- **The inner face component is finite.** The component `innerComponent` is bounded. -/
 theorem innerComponent_finite :
     (innerComponent d hclosed hsimple hreflexfree).supp.Finite := by
   apply (jfc_whb_bounded_iff_ne_outer (walkP d hclosed hsimple)
@@ -307,30 +307,30 @@ theorem innerComponent_finite :
     outerBeacon_parity d hclosed hsimple] at hp
   exact one_ne_zero hp
 
-/-- The cells whose faces lie in `innerComponent`. -/
+/-- **Cells of the inner face component.** The cells whose faces lie in `innerComponent`. -/
 def componentCellSet : Set (ℤ × ℤ) :=
   {p | cellFace p ∈ (innerComponent d hclosed hsimple hreflexfree).supp}
 
-/-- There are finitely many such cells. -/
+/-- **The inner component has finitely many cells.** There are finitely many such cells. -/
 theorem componentCellSet_finite :
     (componentCellSet d hclosed hsimple hreflexfree).Finite := by
   exact (innerComponent_finite d hclosed hsimple hreflexfree).preimage
     cellFace.injective.injOn
 
-/-- The cells of the bounded face of a simple closed walk without right turns. See also
+/-- **Cells of the bounded face of a simple closed walk.** The cells of the bounded face of a simple closed walk without right turns. See also
   `StatMech.Onsager.InteriorCells.interiorCells`, the ray-parity interior; they agree by
   `mem_interiorCells_iff_rayParity`. -/
 noncomputable def interiorCells : Finset (ℤ × ℤ) :=
   (componentCellSet_finite d hclosed hsimple hreflexfree).toFinset
 
-/-- Membership in the bounded face. -/
+/-- **Membership in the bounded face.** Membership in the bounded face. -/
 @[simp] theorem mem_interiorCells (p : ℤ × ℤ) :
     p ∈ interiorCells d hclosed hsimple hreflexfree ↔
       cellFace p ∈ (innerComponent d hclosed hsimple hreflexfree).supp := by
   rw [interiorCells, Set.Finite.mem_toFinset]
   rfl
 
-/-- Lattice Jordan curve theorem, even-odd form: a cell lies in the bounded face of a simple closed
+/-- **Lattice Jordan curve theorem, even-odd form.** Lattice Jordan curve theorem, even-odd form: a cell lies in the bounded face of a simple closed
   walk without right turns iff its ray parity is `1`. -/
 theorem mem_interiorCells_iff_rayParity (p : ℤ × ℤ) :
     p ∈ interiorCells d hclosed hsimple hreflexfree ↔ rayParity d p.1 p.2 = 1 := by

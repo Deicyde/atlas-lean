@@ -46,7 +46,7 @@ open StatMech.Lattice
 
 variable {a b : ℤ}
 
-/-- The rectangle `[0, a] × [0, b]` in `ℤ²`. -/
+/-- **Rectangle at the origin in the plane lattice.** The rectangle `[0, a] × [0, b]` in `ℤ²`. -/
 def rectangle (a b : ℤ) : Set (Site 2) :=
   {x | 0 ≤ x 0 ∧ x 0 ≤ a ∧ 0 ≤ x 1 ∧ x 1 ≤ b}
 
@@ -62,16 +62,16 @@ theorem rectangle_finite (a b : ℤ) : (rectangle a b).Finite := by
   · simpa only [Set.mem_Icc] using ⟨hx.1, le_trans hx.2.1 (le_max_left a b)⟩
   · simpa only [Set.mem_Icc] using ⟨hx.2.2.1, le_trans hx.2.2.2 (le_max_right a b)⟩
 
-/-- The left side `{0} × [0, b]` of `rectangle a b`. -/
+/-- **Left side of a rectangle at the origin.** The left side `{0} × [0, b]` of `rectangle a b`. -/
 def leftSide (a b : ℤ) : Set (Site 2) := {x | x ∈ rectangle a b ∧ x 0 = 0}
 
-/-- The right side `{a} × [0, b]` of `rectangle a b`. -/
+/-- **Right side of a rectangle at the origin.** The right side `{a} × [0, b]` of `rectangle a b`. -/
 def rightSide (a b : ℤ) : Set (Site 2) := {x | x ∈ rectangle a b ∧ x 0 = a}
 
-/-- The bottom side `[0, a] × {0}` of `rectangle a b`. -/
+/-- **Bottom side of a rectangle at the origin.** The bottom side `[0, a] × {0}` of `rectangle a b`. -/
 def bottomSide (a b : ℤ) : Set (Site 2) := {x | x ∈ rectangle a b ∧ x 1 = 0}
 
-/-- The top side `[0, a] × {b}` of `rectangle a b`. -/
+/-- **Top side of a rectangle at the origin.** The top side `[0, a] × {b}` of `rectangle a b`. -/
 def topSide (a b : ℤ) : Set (Site 2) := {x | x ∈ rectangle a b ∧ x 1 = b}
 
 @[simp] theorem mem_leftSide {x : Site 2} :
@@ -88,14 +88,14 @@ theorem rightSide_subset : rightSide a b ⊆ rectangle a b := fun _ hx => hx.1
 theorem bottomSide_subset : bottomSide a b ⊆ rectangle a b := fun _ hx => hx.1
 theorem topSide_subset : topSide a b ⊆ rectangle a b := fun _ hx => hx.1
 
-/-- `ω` has an open left–right crossing of `rectangle a b`: an open path inside the rectangle from
+/-- **Open left–right crossing of a rectangle at the origin.** `ω` has an open left–right crossing of `rectangle a b`: an open path inside the rectangle from
 its left side to its right side. -/
 def HorizontalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b : ℤ) : Prop :=
   ∃ (x : leftSide a b) (y : rightSide a b),
     ConnectedWithin 2 ω (rectangle a b)
       ⟨(x : Site 2), leftSide_subset x.2⟩ ⟨(y : Site 2), rightSide_subset y.2⟩
 
-/-- The event that `rectangle a b` has an open left–right crossing. -/
+/-- **Left–right crossing event of a rectangle at the origin.** The event that `rectangle a b` has an open left–right crossing. -/
 def horizontalCrossingEvent (a b : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | HorizontalCrossing ω a b}
 
@@ -103,14 +103,14 @@ def horizontalCrossingEvent (a b : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
 theorem mem_horizontalCrossingEvent {ω : ConfigSpace (Sym2 (Site 2))} :
     ω ∈ horizontalCrossingEvent a b ↔ HorizontalCrossing ω a b := Iff.rfl
 
-/-- `ω` has an open bottom–top crossing of `rectangle a b`: an open path inside the rectangle from
+/-- **Open bottom–top crossing of a rectangle at the origin.** `ω` has an open bottom–top crossing of `rectangle a b`: an open path inside the rectangle from
 its bottom side to its top side. -/
 def VerticalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b : ℤ) : Prop :=
   ∃ (x : bottomSide a b) (y : topSide a b),
     ConnectedWithin 2 ω (rectangle a b)
       ⟨(x : Site 2), bottomSide_subset x.2⟩ ⟨(y : Site 2), topSide_subset y.2⟩
 
-/-- The event that `rectangle a b` has an open bottom–top crossing. -/
+/-- **Bottom–top crossing event of a rectangle at the origin.** The event that `rectangle a b` has an open bottom–top crossing. -/
 def verticalCrossingEvent (a b : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | VerticalCrossing ω a b}
 
@@ -130,7 +130,7 @@ theorem VerticalCrossing.connected {ω : ConfigSpace (Sym2 (Site 2))}
   obtain ⟨x, y, hxy⟩ := h
   exact ⟨x, y, x.2, y.2, hxy.connected⟩
 
-/-- The open subgraph is monotone in the configuration (`d = 2` case of
+/-- **Monotonicity of the open subgraph in the plane.** The open subgraph is monotone in the configuration (`d = 2` case of
 `StatMech.Universality.openSubgraph_mono_dim`). -/
 theorem openSubgraph_mono {ω ω' : ConfigSpace (Sym2 (Site 2))} (h : ω ≤ ω') :
     openSubgraph 2 ω ≤ openSubgraph 2 ω' := by

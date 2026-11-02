@@ -140,7 +140,7 @@ theorem satisfiesAt_toLTL (φ : PropFormula Atom) (w : ωSequence (Set Atom)) (k
 
 /-! ## The `always` automaton -/
 
-/-- The one-state Büchi automaton for `G φ` with `φ` propositional: it stays
+/-- **One-state Büchi automaton for always φ.** The one-state Büchi automaton for `G φ` with `φ` propositional: it stays
 forever, requiring every letter to satisfy `φ`. -/
 def alwaysNa (φ : PropFormula Atom) : Buchi Unit (Set Atom) where
   Tr _ s _ := φ.eval s

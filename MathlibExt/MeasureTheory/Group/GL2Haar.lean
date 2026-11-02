@@ -335,14 +335,14 @@ end GL2HaarAux
 
 namespace Matrix.GeneralLinearGroup
 
-/-- The modular character of `GL (2, F)` is trivial: `GL (2, F)` is unimodular. -/
+/-- **GL(2, F) is unimodular.** The modular character of `GL (2, F)` is trivial: `GL (2, F)` is unimodular. -/
 theorem modularCharacter_fin_two_eq_one
     {F : Type*} [Field F] [TopologicalSpace F] [IsTopologicalRing F]
     [LocallyCompactSpace (GL (Fin 2) F)] (g : GL (Fin 2) F) :
     MeasureTheory.Measure.modularCharacter g = 1 :=
   GL2HaarAux.modularCharacter_eq_one g
 
-/-- Every Haar measure on `GL (2, F)` is right-invariant and inversion-invariant. -/
+/-- **Haar measures on GL(2, F) are right- and inversion-invariant.** Every Haar measure on `GL (2, F)` is right-invariant and inversion-invariant. -/
 theorem isMulRightInvariant_and_isInvInvariant_of_isHaarMeasure_fin_two
     {F : Type*} [Field F] [TopologicalSpace F] [IsTopologicalRing F]
     [LocallyCompactSpace (GL (Fin 2) F)] [SecondCountableTopology (GL (Fin 2) F)]

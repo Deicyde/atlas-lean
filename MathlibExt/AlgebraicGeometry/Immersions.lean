@@ -59,7 +59,7 @@ open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 
 universe u
 
-/-- Two reduced closed immersions with the same range are isomorphic over
+/-- **Reduced closed immersions with equal range are isomorphic.** Two reduced closed immersions with the same range are isomorphic over
 the target. -/
 theorem AlgebraicGeometry.IsClosedImmersion.exists_iso_hom_comp_eq_of_range_eq
     {A B X : Scheme.{u}} (f : A ⟶ X) (g : B ⟶ X) [IsClosedImmersion f]
@@ -76,7 +76,7 @@ theorem AlgebraicGeometry.IsClosedImmersion.exists_iso_hom_comp_eq_of_range_eq
   simp only [Iso.trans_hom, Iso.symm_hom, asIso_inv, asIso_hom, Category.assoc]
   rw [IsIso.inv_comp_eq, pullback.condition]
 
-/-- A closed immersion whose composite with an étale map is flat and
+/-- **Closed immersions flat over the base of an étale map are open.** A closed immersion whose composite with an étale map is flat and
 locally of finite presentation is open. -/
 theorem AlgebraicGeometry.IsOpenImmersion.of_isClosedImmersion_of_flat_comp_of_etale
     {Z X Y : Scheme.{u}} (i : Z ⟶ X) (g : X ⟶ Y) [IsClosedImmersion i] [Etale g]
@@ -94,21 +94,21 @@ theorem AlgebraicGeometry.IsOpenImmersion.of_isClosedImmersion_of_flat_comp_of_e
     (Etale.iff_flat_and_formallyUnramified.mp heti).2.2
   exact ⟨IsOpenImmersion.of_flat_of_mono i, het⟩
 
-/-- Closed immersions transfer along pullback squares. -/
+/-- **Closed immersions are stable under base change.** Closed immersions transfer along pullback squares. -/
 theorem AlgebraicGeometry.IsClosedImmersion.of_isPullback
     {S S₀ X X₀ : Scheme.{u}} (i : S₀ ⟶ S) [IsClosedImmersion i]
     {f : X ⟶ S} {f₀ : X₀ ⟶ S₀} {g : X₀ ⟶ X} (hg : IsPullback g f₀ f i) :
     IsClosedImmersion g :=
   MorphismProperty.of_isPullback (P := @IsClosedImmersion) hg.flip inferInstance
 
-/-- Surjectivity transfers along pullback squares. -/
+/-- **Surjectivity is stable under base change.** Surjectivity transfers along pullback squares. -/
 theorem AlgebraicGeometry.Surjective.of_isPullback
     {S S₀ X X₀ : Scheme.{u}} (i : S₀ ⟶ S) [Surjective i]
     {f : X ⟶ S} {f₀ : X₀ ⟶ S₀} {g : X₀ ⟶ X} (hg : IsPullback g f₀ f i) :
     Surjective g :=
   MorphismProperty.of_isPullback (P := @Surjective) hg.flip inferInstance
 
-/-- Universal closedness transfers along a pullback square whose base map is
+/-- **Universal closedness descends along surjective closed immersions.** Universal closedness transfers along a pullback square whose base map is
 a surjective closed immersion. -/
 theorem AlgebraicGeometry.UniversallyClosed.of_isPullback
     {S S₀ X X₀ : Scheme.{u}} (i : S₀ ⟶ S) [IsClosedImmersion i] [Surjective i]
@@ -118,7 +118,7 @@ theorem AlgebraicGeometry.UniversallyClosed.of_isPullback
   have : UniversallyClosed (g ≫ f) := by rw [hg.w]; infer_instance
   exact UniversallyClosed.of_comp_surjective g f
 
-/-- Separatedness transfers along a pullback square whose base map is a
+/-- **Separatedness descends along surjective closed immersions.** Separatedness transfers along a pullback square whose base map is a
 surjective closed immersion. -/
 theorem AlgebraicGeometry.IsSeparated.of_isPullback
     {S S₀ X X₀ : Scheme.{u}} (i : S₀ ⟶ S) [IsClosedImmersion i] [Surjective i]
@@ -163,7 +163,7 @@ theorem AlgebraicGeometry.IsSeparated.of_isPullback
     exact hclosedcomp.isClosedEmbedding.isClosed_range
   exact ⟨IsClosedImmersion.of_isPreimmersion _ hclosed⟩
 
-/-- Properness transfers along a pullback square whose base map is a
+/-- **Properness descends along surjective closed immersions.** Properness transfers along a pullback square whose base map is a
 surjective closed immersion. -/
 theorem AlgebraicGeometry.IsProper.of_isPullback
     {S S₀ X X₀ : Scheme.{u}} (i : S₀ ⟶ S) [IsClosedImmersion i] [Surjective i]

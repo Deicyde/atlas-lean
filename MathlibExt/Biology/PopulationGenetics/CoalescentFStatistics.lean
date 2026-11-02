@@ -75,11 +75,11 @@ namespace MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics
 
 /-! ### f-statistics from heterozygosities and coalescence times -/
 
-/-- The probability `a (1 - b) + b (1 - a)` that a gene from a population with allele frequency
+/-- **Probability that two genes differ at a biallelic site.** The probability `a (1 - b) + b (1 - a)` that a gene from a population with allele frequency
 `a` and a gene from a population with allele frequency `b` differ at a biallelic site. -/
 def hetPair (a b : ℝ) : ℝ := a * (1 - b) + b * (1 - a)
 
-/-- `(a - b) ^ 2 = hetPair a b - (hetPair a a + hetPair b b) / 2`. -/
+/-- **Squared frequency difference via pairwise heterozygosity.** `(a - b) ^ 2 = hetPair a b - (hetPair a a + hetPair b b) / 2`. -/
 theorem sq_sub_eq_hetPair (a b : ℝ) :
     (a - b) ^ 2 = hetPair a b - (hetPair a a + hetPair b b) / 2 := by
   unfold hetPair
@@ -87,12 +87,12 @@ theorem sq_sub_eq_hetPair (a b : ℝ) :
 
 variable {Ω P : Type*} {m : MeasurableSpace Ω}
 
-/-- The expected heterozygosity `π X Y = 𝔼[hetPair (p X) (p Y)]` between populations `X` and
+/-- **Expected heterozygosity between populations.** The expected heterozygosity `π X Y = 𝔼[hetPair (p X) (p Y)]` between populations `X` and
 `Y` (within population `X` when `Y = X`). -/
 noncomputable def meanHet (μ : Measure Ω) (p : P → Ω → ℝ) (X Y : P) : ℝ :=
   ∫ ω, hetPair (p X ω) (p Y ω) ∂μ
 
-/-- `hetPair` of square-integrable frequencies is integrable on a finite measure space. -/
+/-- **Integrability of pairwise heterozygosity.** `hetPair` of square-integrable frequencies is integrable on a finite measure space. -/
 theorem integrable_hetPair {μ : Measure Ω} [IsFiniteMeasure μ] {p : P → Ω → ℝ}
     (hp : ∀ X, MemLp (p X) 2 μ) (X Y : P) :
     Integrable (fun ω => hetPair (p X ω) (p Y ω)) μ := by
@@ -105,7 +105,7 @@ theorem integrable_hetPair {μ : Measure Ω} [IsFiniteMeasure μ] {p : P → Ω 
   exact (((hp X).integrable one_le_two).add ((hp Y).integrable one_le_two)).sub
     (((hp X).integrable_mul (hp Y)).const_mul 2)
 
-/-- Peter (2016): `f2 A B = π A B - (π A A + π B B) / 2`. -/
+/-- **Peter's formula for $f_2$ via expected heterozygosity.** Peter (2016): `f2 A B = π A B - (π A A + π B B) / 2`. -/
 theorem f2_eq_meanHet {μ : Measure Ω} [IsFiniteMeasure μ] {p : P → Ω → ℝ}
     (hp : ∀ X, MemLp (p X) 2 μ) (A B : P) :
     f2 μ p A B = meanHet μ p A B - (meanHet μ p A A + meanHet μ p B B) / 2 := by
@@ -116,7 +116,7 @@ theorem f2_eq_meanHet {μ : Measure Ω} [IsFiniteMeasure μ] {p : P → Ω → �
   rw [integral_sub (integrable_hetPair hp A B) h, integral_div,
     integral_add (integrable_hetPair hp A A) (integrable_hetPair hp B B)]
 
-/-- The relation between allele frequencies and coalescence times under neutral
+/-- **Coalescent model linking heterozygosity and coalescence times.** The relation between allele frequencies and coalescence times under neutral
 infinite-sites mutation, taken as the model assumption: the expected heterozygosity between
 populations `X` and `Y` is `θ` times the expected coalescence time `coalTime X Y` of a gene
 from `X` and a gene from `Y` (two genes drawn independently, so with replacement, when
@@ -140,21 +140,21 @@ namespace CoalescentModel
 
 variable {μ : Measure Ω} [IsFiniteMeasure μ] (M : CoalescentModel μ P)
 
-/-- `f2 A B = θ (𝔼 T_AB - (𝔼 T_AA + 𝔼 T_BB) / 2)`. -/
+/-- **$f_2$ in terms of expected coalescence times.** `f2 A B = θ (𝔼 T_AB - (𝔼 T_AA + 𝔼 T_BB) / 2)`. -/
 theorem f2_eq (A B : P) :
     f2 μ M.freq A B =
       M.theta * (M.coalTime A B - (M.coalTime A A + M.coalTime B B) / 2) := by
   rw [f2_eq_meanHet M.memLp_freq, M.meanHet_eq, M.meanHet_eq, M.meanHet_eq]
   ring
 
-/-- `f3 C A B = θ / 2 * (𝔼 T_CA + 𝔼 T_CB - 𝔼 T_AB - 𝔼 T_CC)`. -/
+/-- **$f_3$ in terms of expected coalescence times.** `f3 C A B = θ / 2 * (𝔼 T_CA + 𝔼 T_CB - 𝔼 T_AB - 𝔼 T_CC)`. -/
 theorem f3_eq (C A B : P) :
     f3 μ M.freq C A B =
       M.theta / 2 * (M.coalTime C A + M.coalTime C B - M.coalTime A B - M.coalTime C C) := by
   rw [f3_eq_f2 M.memLp_freq, M.f2_eq, M.f2_eq, M.f2_eq]
   ring
 
-/-- `f4 A B C D = θ / 2 * (𝔼 T_AD + 𝔼 T_BC - 𝔼 T_AC - 𝔼 T_BD)`. -/
+/-- **$f_4$ in terms of expected coalescence times.** `f4 A B C D = θ / 2 * (𝔼 T_AD + 𝔼 T_BC - 𝔼 T_AC - 𝔼 T_BD)`. -/
 theorem f4_eq (A B C D : P) :
     f4 μ M.freq A B C D =
       M.theta / 2 * (M.coalTime A D + M.coalTime B C - M.coalTime A C - M.coalTime B D) := by
@@ -169,22 +169,22 @@ section PCA
 
 variable {ι S : Type*} [Fintype ι] [Fintype S]
 
-/-- The column mean `(1 / n) ∑ i, Z i s` of locus `s` over the `n` samples. -/
+/-- **Column mean of a genotype matrix.** The column mean `(1 / n) ∑ i, Z i s` of locus `s` over the `n` samples. -/
 noncomputable def colMean (Z : ι → S → ℝ) (s : S) : ℝ := (∑ i, Z i s) / Fintype.card ι
 
-/-- The genotype matrix with columns centred over the samples. -/
+/-- **Column-centred genotype matrix.** The genotype matrix with columns centred over the samples. -/
 noncomputable def centered (Z : ι → S → ℝ) (i : ι) (s : S) : ℝ := Z i s - colMean Z s
 
-/-- The sample covariance `C i j = (1 / L) ∑ s, X i s * X j s` of the centred genotype matrix
+/-- **Sample covariance of the centred genotype matrix.** The sample covariance `C i j = (1 / L) ∑ s, X i s * X j s` of the centred genotype matrix
 `X` over the `L` loci. -/
 noncomputable def genCov (Z : ι → S → ℝ) (i j : ι) : ℝ :=
   (∑ s, centered Z i s * centered Z j s) / Fintype.card S
 
-/-- The number of pairwise differences `d i j = ∑ s, (Z i s - Z j s) ^ 2` (for `0`/`1`
+/-- **Number of pairwise differences between samples.** The number of pairwise differences `d i j = ∑ s, (Z i s - Z j s) ^ 2` (for `0`/`1`
 haplotypes, the number of loci at which samples `i` and `j` differ). -/
 def pairDiff (Z : ι → S → ℝ) (i j : ι) : ℝ := ∑ s, (Z i s - Z j s) ^ 2
 
-/-- The double centring `t̄ i· + t̄ ·j - t i j - t̄ ··` of a square matrix `t` (row, column and
+/-- **Double centring of a square matrix.** The double centring `t̄ i· + t̄ ·j - t i j - t̄ ··` of a square matrix `t` (row, column and
 grand means over the `n` indices). -/
 noncomputable def doubleCenter (t : ι → ι → ℝ) (i j : ι) : ℝ :=
   (∑ k, t i k) / Fintype.card ι + (∑ k, t k j) / Fintype.card ι - t i j -
@@ -242,7 +242,7 @@ private theorem doubleCenter_sum {ι S : Type*} [Fintype ι] [Fintype S]
   simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib, Finset.sum_div]
   congr 3 <;> exact Finset.sum_comm
 
-/-- McVean (2009), deterministic form: the covariance of the centred genotype matrix is the
+/-- **Genotype covariance as double-centred pairwise differences.** McVean (2009), deterministic form: the covariance of the centred genotype matrix is the
 double centring of the pairwise-difference matrix, divided by `2 L`. -/
 theorem genCov_eq_doubleCenter (Z : ι → S → ℝ) (i j : ι) :
     genCov Z i j = doubleCenter (pairDiff Z) i j / (2 * Fintype.card S) := by
@@ -257,7 +257,7 @@ theorem genCov_eq_doubleCenter (Z : ι → S → ℝ) (i j : ι) :
 
 variable {Ω : Type*} {m : MeasurableSpace Ω}
 
-/-- McVean's genealogical setting for PCA, taken as the model assumption: random genotypes
+/-- **McVean's genealogical model for PCA.** McVean's genealogical setting for PCA, taken as the model assumption: random genotypes
 `Z i s` (sample `i`, locus `s`), square integrable, whose expected numbers of pairwise
 differences are `θ` times the expected pairwise coalescence times `coalTime i j` (neutral
 infinite sites, time in units of `2N` generations, `θ` the total scaled mutation rate of the
@@ -274,7 +274,7 @@ structure McVeanModel (μ : Measure Ω) (ι S : Type*) [Fintype ι] [Fintype S] 
   /-- Infinite sites: `𝔼[d i j] = θ t i j`. -/
   integral_pairDiff : ∀ i j, ∫ ω, pairDiff (fun k s => geno k s ω) i j ∂μ = theta * coalTime i j
 
-/-- McVean (2009): the expected genotype covariance is `θ / (2 L)` times the double centring of
+/-- **McVean's theorem on expected genotype covariance.** McVean (2009): the expected genotype covariance is `θ / (2 L)` times the double centring of
 the expected pairwise coalescence times,
 `𝔼[C i j] = θ / (2 L) * (t̄ i· + t̄ ·j - t i j - t̄ ··)`. -/
 theorem McVeanModel.integral_genCov {μ : Measure Ω} (M : McVeanModel μ ι S) (i j : ι) :

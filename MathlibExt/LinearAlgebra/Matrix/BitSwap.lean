@@ -35,18 +35,18 @@ namespace Matrix
 
 open Finset
 
-/-- The unnormalized antisymmetric two-bit vector, in order `00, 01, 10, 11`. -/
+/-- **Antisymmetric two-bit singlet vector.** The unnormalized antisymmetric two-bit vector, in order `00, 01, 10, 11`. -/
 def bitSinglet (p : Bool × Bool) : ℤ :=
   if p.1 = p.2 then 0 else if p.1 then -1 else 1
 
-/-- The one-bit swap matrix is the identity minus the singlet outer product. -/
+/-- **One-bit swap matrix as identity minus singlet outer product.** The one-bit swap matrix is the identity minus the singlet outer product. -/
 theorem bitSwap_eq_one_sub_vecMulVec :
     (Equiv.prodComm Bool Bool).toPEquiv.toMatrix =
       (1 : Matrix (Bool × Bool) (Bool × Bool) ℤ) - vecMulVec bitSinglet bitSinglet := by
   ext ⟨x, y⟩ ⟨u, v⟩
   cases x <;> cases y <;> cases u <;> cases v <;> decide
 
-/-- The part of an `n`-bit swap with exactly `i` antisymmetric factors. -/
+/-- **Piece of an n-bit swap with i antisymmetric factors.** The part of an `n`-bit swap with exactly `i` antisymmetric factors. -/
 def bitSwapPiece (n i : ℕ) :
     Matrix ((Fin n → Bool) × (Fin n → Bool)) ((Fin n → Bool) × (Fin n → Bool)) ℤ :=
   fun p q => ∑ S ∈ powersetCard i (univ : Finset (Fin n)),
@@ -74,7 +74,7 @@ private theorem swap_entry_eq_prod {n : ℕ} (x y u v : Fin n → Bool) :
     obtain ⟨k, hk⟩ := hex
     exact (prod_eq_zero (mem_univ k) (by simp only [ite_eq_right hk])).symm
 
-/-- The `n + 1` grouped pieces sum to the permutation matrix swapping the two bit strings. -/
+/-- **Bit-swap pieces sum to the swap permutation matrix.** The `n + 1` grouped pieces sum to the permutation matrix swapping the two bit strings. -/
 theorem sum_bitSwapPiece (n : ℕ) (p q : (Fin n → Bool) × (Fin n → Bool)) :
     ∑ i ∈ range (n + 1), bitSwapPiece n i p q =
       (Equiv.prodComm (Fin n → Bool) (Fin n → Bool)).toPEquiv.toMatrix p q := by
@@ -92,7 +92,7 @@ theorem sum_bitSwapPiece (n : ℕ) (p q : (Fin n → Bool) × (Fin n → Bool)) 
   rw [prod_add, sum_powerset, card_univ, Fintype.card_fin]
   simp only [bitSwapPiece, compl_eq_univ_sdiff]
 
-/-- There is no piece containing more antisymmetric factors than bit positions. -/
+/-- **Bit-swap pieces vanish beyond the number of bits.** There is no piece containing more antisymmetric factors than bit positions. -/
 theorem bitSwapPiece_eq_zero_of_lt {n i : ℕ} (h : n < i) : bitSwapPiece n i = 0 := by
   have hs : powersetCard i (univ : Finset (Fin n)) = ∅ :=
     powersetCard_eq_empty.mpr (by simpa using h)
@@ -108,7 +108,7 @@ private theorem abs_prod_le_one {ι : Type*} (S : Finset ι) (f : ι → ℤ)
     rw [prod_insert hk, abs_mul]
     simpa using mul_le_mul (h k) ih (abs_nonneg _) (by decide : (0 : ℤ) ≤ 1)
 
-/-- Each entry of the `i`th piece is bounded by the number of `i`-subsets of the bit positions. -/
+/-- **Binomial entry bound for bit-swap pieces.** Each entry of the `i`th piece is bounded by the number of `i`-subsets of the bit positions. -/
 theorem abs_bitSwapPiece_le_choose (n i : ℕ) (p q : (Fin n → Bool) × (Fin n → Bool)) :
     |bitSwapPiece n i p q| ≤ (n.choose i : ℤ) := by
   have h1 : ∀ a b : Bool × Bool, |-(bitSinglet a * bitSinglet b)| ≤ 1 := by decide
@@ -127,7 +127,7 @@ theorem abs_bitSwapPiece_le_choose (n i : ℕ) (p q : (Fin n → Bool) × (Fin n
         (abs_prod_le_one Sᶜ _ (fun k => h0 _ _)) (abs_nonneg _) (by decide : (0 : ℤ) ≤ 1)
     _ = (n.choose i : ℤ) := by simp
 
-/-- The uniform entry bound used in the source: every piece has absolute value at most `2 ^ n`. -/
+/-- **Uniform power-of-two entry bound for bit-swap pieces.** The uniform entry bound used in the source: every piece has absolute value at most `2 ^ n`. -/
 theorem abs_bitSwapPiece_le_two_pow (n i : ℕ)
     (p q : (Fin n → Bool) × (Fin n → Bool)) : |bitSwapPiece n i p q| ≤ 2 ^ n :=
   (abs_bitSwapPiece_le_choose n i p q).trans (by exact_mod_cast Nat.choose_le_two_pow n i)

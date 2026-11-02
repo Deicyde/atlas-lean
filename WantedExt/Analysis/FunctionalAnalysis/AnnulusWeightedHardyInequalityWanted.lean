@@ -44,7 +44,7 @@ open MeasureTheory
 
 namespace MathlibExt.Analysis.FunctionalAnalysis.AnnulusWeightedHardyInequalityWanted
 
-/-- The Euclidean plane. -/
+/-- **Euclidean plane.** The Euclidean plane. -/
 abbrev R2 : Type := EuclideanSpace ℝ (Fin 2)
 
 /-- **Open discs about the origin for the annulus Hardy inequality.** For a real number $r$,

@@ -85,7 +85,7 @@ open scoped Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.StructuredCoalescent
 
-/-- The state of two ancestral lineages in the island model: in the same deme, in different
+/-- **State of two lineages in the island model.** The state of two ancestral lineages in the island model: in the same deme, in different
 demes, or coalesced (absorbing). -/
 inductive PairState
   /-- Both lineages are in the same deme. -/
@@ -101,7 +101,7 @@ namespace PairState
 instance : Fintype PairState :=
   ⟨{same, different, coalesced}, fun x => by cases x <;> simp⟩
 
-/-- A sum over the three states. -/
+/-- **Sum over the island-model pair states.** A sum over the three states. -/
 theorem sum_eq {β : Type*} [AddCommMonoid β] (f : PairState → β) :
     ∑ t, f t = f same + f different + f coalesced := by
   change ∑ t ∈ {same, different, coalesced}, f t = _
@@ -112,7 +112,7 @@ end PairState
 
 open PairState
 
-/-- The transition rates `q(s, t)` (`s ≠ t`) of the two-lineage structured coalescent in the
+/-- **Transition rates of the two-lineage structured coalescent.** The transition rates `q(s, t)` (`s ≠ t`) of the two-lineage structured coalescent in the
 finite island model with `d` demes and `M = 4Nm`, time in units of `2N` generations: same deme →
 coalesced at rate `1`, same deme → different demes at rate `M`, different demes → same deme at
 rate `M / (d - 1)`; all other rates (and the diagonal) are `0`. Meaningful for `d ≥ 2` and
@@ -123,26 +123,26 @@ noncomputable def rate (d : ℕ) (M : ℝ) : PairState → PairState → ℝ
   | different, same => M / (d - 1)
   | _, _ => 0
 
-/-- The total rate `qₛ = ∑ₜ q(s, t)` of leaving the state `s`. -/
+/-- **Exit rate of a structured-coalescent state.** The total rate `qₛ = ∑ₜ q(s, t)` of leaving the state `s`. -/
 noncomputable def exitRate (d : ℕ) (M : ℝ) (s : PairState) : ℝ := ∑ t, rate d M s t
 
-/-- The first-step (backward Kolmogorov) equations for the mean time to coalescence:
+/-- **First-step equations for mean coalescence time.** The first-step (backward Kolmogorov) equations for the mean time to coalescence:
 `h coalesced = 0`, and at each transient state `s`, `∑ₜ q(s, t) (h t - h s) = -1`. (The vector
 of mean absorption times of a finite absorbing continuous-time Markov chain satisfies these
 equations; this file does not construct the chain.) -/
 def FirstStepEquations (d : ℕ) (M : ℝ) (h : PairState → ℝ) : Prop :=
   h coalesced = 0 ∧ ∀ s, s ≠ coalesced → ∑ t, rate d M s t * (h t - h s) = -1
 
-/-- The mean coalescence time `T₀ = d` of two lineages in the same deme (units of `2N`
+/-- **Mean coalescence time within a deme.** The mean coalescence time `T₀ = d` of two lineages in the same deme (units of `2N`
 generations). -/
 def withinTime (d : ℕ) : ℝ := d
 
-/-- The mean coalescence time `T₁ = d + (d - 1) / M` of two lineages in different demes (units of
+/-- **Mean coalescence time between demes.** The mean coalescence time `T₁ = d + (d - 1) / M` of two lineages in different demes (units of
 `2N` generations). Meaningful for `M > 0`; `betweenTime d 0 = d` is a junk value (the true mean
 is infinite). -/
 noncomputable def betweenTime (d : ℕ) (M : ℝ) : ℝ := d + (d - 1) / M
 
-/-- The closed-form mean time to coalescence from each state: `T₀`, `T₁`, and `0` once
+/-- **Closed-form mean coalescence times in the island model.** The closed-form mean time to coalescence from each state: `T₀`, `T₁`, and `0` once
 coalesced. `firstStepEquations_iff` shows it is the unique solution of the first-step
 equations. -/
 noncomputable def meanCoalescenceTime (d : ℕ) (M : ℝ) : PairState → ℝ
@@ -211,16 +211,16 @@ theorem meanCoalescenceTime_eq_firstStep {d : ℕ} (hd : 2 ≤ d) {M : ℝ} (hM 
   field_simp
   linear_combination -h
 
-/-- Slatkin's mean coalescence time `T̄ = T₀ / d + (d - 1) T₁ / d` of two genes drawn from two
+/-- **Slatkin's mean total coalescence time.** Slatkin's mean coalescence time `T̄ = T₀ / d + (d - 1) T₁ / d` of two genes drawn from two
 demes chosen independently and uniformly at random. -/
 noncomputable def totalTime (d : ℕ) (M : ℝ) : ℝ :=
   withinTime d / d + (d - 1) / d * betweenTime d M
 
-/-- Slatkin's (1991) `F_ST = (T̄ - T₀) / T̄` for the finite island model. -/
+/-- **Slatkin's F_ST for the finite island model.** Slatkin's (1991) `F_ST = (T̄ - T₀) / T̄` for the finite island model. -/
 noncomputable def slatkinFST (d : ℕ) (M : ℝ) : ℝ :=
   (totalTime d M - withinTime d) / totalTime d M
 
-/-- `T̄ = d + (d - 1)² / (d M)` for `d ≥ 1`. -/
+/-- **Closed form of Slatkin's mean total coalescence time.** `T̄ = d + (d - 1)² / (d M)` for `d ≥ 1`. -/
 theorem totalTime_eq {d : ℕ} (hd : 1 ≤ d) (M : ℝ) :
     totalTime d M = d + (d - 1) ^ 2 / (d * M) := by
   have hd0 : (d : ℝ) ≠ 0 := by positivity
@@ -232,7 +232,7 @@ theorem totalTime_eq {d : ℕ} (hd : 1 ≤ d) (M : ℝ) :
     field_simp
     ring
 
-/-- The denominator of Slatkin's `F_ST` is positive: `0 < T̄` for `d ≥ 1` and `M > 0`. -/
+/-- **Positivity of Slatkin's mean total coalescence time.** The denominator of Slatkin's `F_ST` is positive: `0 < T̄` for `d ≥ 1` and `M > 0`. -/
 theorem totalTime_pos {d : ℕ} (hd : 1 ≤ d) {M : ℝ} (hM : 0 < M) : 0 < totalTime d M := by
   rw [totalTime_eq hd]
   have : (0 : ℝ) < d := by exact_mod_cast hd
@@ -250,7 +250,7 @@ theorem slatkinFST_eq {d : ℕ} (hd : 2 ≤ d) {M : ℝ} (hM : 0 < M) :
   field_simp
   ring
 
-/-- Slatkin's `F_ST` lies in `(0, 1)` for `d ≥ 2` and `M > 0`. -/
+/-- **Slatkin's F_ST lies strictly between 0 and 1.** Slatkin's `F_ST` lies in `(0, 1)` for `d ≥ 2` and `M > 0`. -/
 theorem slatkinFST_mem_Ioo {d : ℕ} (hd : 2 ≤ d) {M : ℝ} (hM : 0 < M) :
     slatkinFST d M ∈ Set.Ioo (0 : ℝ) 1 := by
   have hd1 : (0 : ℝ) < (d : ℝ) - 1 := by

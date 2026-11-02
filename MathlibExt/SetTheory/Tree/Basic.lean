@@ -32,7 +32,7 @@ namespace MetaMathlibExt
 
 -- Logic 6: Tree
 
-/-- A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y
+/-- **Tree (set theory).** A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y
 ∈ T : y < x  } of all predecessors of x is well-ordered by <).
 -/
 def IsTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
@@ -40,7 +40,7 @@ def IsTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
 
 -- Logic 7: Level of a well-founded partial ordering
 
-/-- For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T
+/-- **Level of a well-founded partial order.** For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T
 : ht(x) = α  }, the set of elements whose height equals α.
 -/
 def level.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] (a : Ordinal.{u}) : Set α :=
@@ -58,7 +58,7 @@ open Cardinal in
 
 -- Logic 38: Normal tree
 
-/-- Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
+/-- **Normal tree at a cardinal.** Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
 of x in the well-founded relation <. α is a *normal tree at κ* if:
 
 \begin{enumerate}

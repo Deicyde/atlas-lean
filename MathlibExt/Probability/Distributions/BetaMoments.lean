@@ -56,14 +56,14 @@ open MeasureTheory Real
 
 namespace ProbabilityTheory
 
-/-- The beta density is nonnegative for positive shape parameters. -/
+/-- **Nonnegativity of the beta density.** The beta density is nonnegative for positive shape parameters. -/
 theorem betaPDFReal_nonneg {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) (x : ℝ) :
     0 ≤ betaPDFReal α β x := by
   by_cases hx : 0 < x ∧ x < 1
   · exact (betaPDFReal_pos hx.1 hx.2 hα hβ).le
   · simp [betaPDFReal, hx]
 
-/-- The beta density integrates to `1` (the Bochner-integral form of
+/-- **Beta density integrates to one.** The beta density integrates to `1` (the Bochner-integral form of
 `lintegral_betaPDF_eq_one`). -/
 theorem integral_betaPDFReal {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     ∫ x, betaPDFReal α β x = 1 := by
@@ -73,7 +73,7 @@ theorem integral_betaPDFReal {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
   simp only [betaPDF] at h
   rw [h, ENNReal.toReal_one]
 
-/-- An integral against `betaMeasure α β` is the integral of the function times the beta
+/-- **Integrals against the beta law.** An integral against `betaMeasure α β` is the integral of the function times the beta
 density. No integrability hypothesis is needed: both sides are the junk value `0` together. -/
 theorem integral_betaMeasure {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) (g : ℝ → ℝ) :
     ∫ x, g x ∂betaMeasure α β = ∫ x, betaPDFReal α β x * g x := by
@@ -82,7 +82,7 @@ theorem integral_betaMeasure {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) (g : �
       (ae_of_all _ fun _ => ENNReal.ofReal_lt_top)]
   simp_rw [ENNReal.toReal_ofReal (betaPDFReal_nonneg hα hβ _), smul_eq_mul]
 
-/-- `B(α + 1, β) = B(α, β) · α / (α + β)`. -/
+/-- **Recurrence of the beta function in the first argument.** `B(α + 1, β) = B(α, β) · α / (α + β)`. -/
 theorem beta_add_one_left {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     beta (α + 1) β = beta α β * (α / (α + β)) := by
   have hαβ : 0 < α + β := add_pos hα hβ
@@ -92,7 +92,7 @@ theorem beta_add_one_left {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
   have := Real.Gamma_pos_of_pos hαβ
   field_simp
 
-/-- The beta function is symmetric. -/
+/-- **Symmetry of the beta function.** The beta function is symmetric. -/
 theorem beta_comm (α β : ℝ) : beta α β = beta β α := by
   simp only [beta, mul_comm, add_comm]
 
@@ -141,7 +141,7 @@ theorem integral_sq_betaMeasure {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
   field_simp
   ring
 
-/-- For `α, β > 0`, `E[X (1 - X)] = α β / ((α + β) (α + β + 1))` (half the expected
+/-- **Mean of $X(1 - X)$ under a beta law.** For `α, β > 0`, `E[X (1 - X)] = α β / ((α + β) (α + β + 1))` (half the expected
 heterozygosity of a `Beta(α, β)` allele frequency). -/
 theorem integral_mul_one_sub_betaMeasure {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     ∫ x, x * (1 - x) ∂betaMeasure α β = α * β / ((α + β) * (α + β + 1)) := by

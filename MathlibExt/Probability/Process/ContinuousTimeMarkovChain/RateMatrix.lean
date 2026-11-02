@@ -52,7 +52,7 @@ namespace ProbabilityTheory
 
 variable {ι : Type*} [Fintype ι]
 
-/-- A real square matrix `Q` is a **rate matrix** (a `Q`-matrix in Norris's terminology) if its
+/-- **Rate matrix.** A real square matrix `Q` is a **rate matrix** (a `Q`-matrix in Norris's terminology) if its
 off-diagonal entries are nonnegative and each of its rows sums to `0` (Norris 1997, §2.1). -/
 structure IsRateMatrix (Q : Matrix ι ι ℝ) : Prop where
   /-- The jump rates `Q i j`, `i ≠ j`, are nonnegative. -/
@@ -64,20 +64,20 @@ namespace IsRateMatrix
 
 variable {Q : Matrix ι ι ℝ}
 
-/-- The diagonal entry of a rate matrix is minus the total jump rate out of the state. -/
+/-- **Diagonal of a rate matrix is minus the total jump rate.** The diagonal entry of a rate matrix is minus the total jump rate out of the state. -/
 theorem diag_eq [DecidableEq ι] (hQ : IsRateMatrix Q) (i : ι) :
     Q i i = -∑ j ∈ univ.erase i, Q i j := by
   have h := hQ.sum_row i
   rw [← add_sum_erase _ _ (mem_univ i)] at h
   linarith
 
-/-- The diagonal entries of a rate matrix are nonpositive. -/
+/-- **Diagonal entries of a rate matrix are nonpositive.** The diagonal entries of a rate matrix are nonpositive. -/
 theorem diag_nonpos (hQ : IsRateMatrix Q) (i : ι) : Q i i ≤ 0 := by
   classical
   rw [hQ.diag_eq i, neg_nonpos]
   exact sum_nonneg fun j hj => hQ.nonneg_of_ne (ne_of_mem_erase hj).symm
 
-/-- A rate matrix annihilates the constant vector `1`. -/
+/-- **Rate matrix annihilates the constant vector.** A rate matrix annihilates the constant vector `1`. -/
 theorem mulVec_one (hQ : IsRateMatrix Q) : Q *ᵥ 1 = 0 := by
   ext i
   simp [mulVec, dotProduct, hQ.sum_row i]
@@ -94,7 +94,7 @@ theorem add_smul_one_nonneg [DecidableEq ι] (hQ : IsRateMatrix Q) {c : ℝ}
     linarith
   · simpa [one_apply_ne h] using hQ.nonneg_of_ne h
 
-/-- Every rate matrix admits a uniformization constant `c ≥ 0`. -/
+/-- **Existence of a uniformization constant for a rate matrix.** Every rate matrix admits a uniformization constant `c ≥ 0`. -/
 theorem exists_add_smul_one_nonneg [DecidableEq ι] (hQ : IsRateMatrix Q) :
     ∃ c : ℝ, 0 ≤ c ∧ ∀ i j, 0 ≤ (Q + c • (1 : Matrix ι ι ℝ)) i j := by
   refine ⟨∑ k, -Q k k, sum_nonneg fun k _ => neg_nonneg.mpr (hQ.diag_nonpos k),

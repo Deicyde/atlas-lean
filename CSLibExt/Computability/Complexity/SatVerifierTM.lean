@@ -875,18 +875,18 @@ theorem sat3Dec_mem_NP : Karp.sat3Dec ∈ ComplexityTheory.NP := by
         simp only [Karp.sat3Dec, decide_eq_true_eq]
         exact ⟨φ, rfl, hr.1, hs⟩
 
-/-- Moved to `SatVerifier.toks_length_le` (`SatVerifierSpec`). -/
+/-- **Token length bound for the SAT verifier (moved alias).** Moved to `SatVerifier.toks_length_le` (`SatVerifierSpec`). -/
 @[deprecated SatVerifier.toks_length_le (since := "2026-10-15")]
 theorem toks_length_le (φ : CNF) : (toks φ).length ≤ (encodeCNF φ).length :=
   SatVerifier.toks_length_le φ
 
-/-- Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`). -/
+/-- **Clause token length bound for the SAT verifier (moved alias).** Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`). -/
 @[deprecated SatVerifier.clauseToks_length_le (since := "2026-10-15")]
 theorem clauseToks_length_le (C : CNFClause) :
     (clauseToks C).length ≤ (encodeClause C).length :=
   SatVerifier.clauseToks_length_le C
 
-/-- Moved to the instance `SatVerifier.Sym.instFintype` (`SatVerifierSpec`); kept as a
+/-- **Finiteness of the SAT verifier alphabet (moved alias).** Moved to the instance `SatVerifier.Sym.instFintype` (`SatVerifierSpec`); kept as a
 definition, not an instance, so instance search sees one `Fintype Sym`. -/
 @[deprecated SatVerifier.Sym.instFintype (since := "2026-10-15")]
 abbrev Sym.instFintype : Fintype Sym := SatVerifier.Sym.instFintype

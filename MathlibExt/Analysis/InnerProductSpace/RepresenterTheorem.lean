@@ -71,7 +71,7 @@ private theorem completeSpace_span_range_toDual_symm {ι : Type*} [Fintype ι]
   exact completeSpace_coe_iff_isComplete.2
     (Submodule.span ℝ (Set.range fun i => (InnerProductSpace.toDual ℝ H).symm (L i))).complete_of_finiteDimensional
 
-/-- Orthogonal projection onto the span of the Riesz representers preserves
+/-- **Projection onto Riesz representers with Pythagorean residual.** Orthogonal projection onto the span of the Riesz representers preserves
 the values of the functionals, and the Pythagorean identity holds for the
 residual. -/
 theorem exists_mem_span_norm_sq_add {ι : Type*} [Fintype ι]
@@ -97,7 +97,7 @@ theorem exists_mem_span_norm_sq_add {ι : Type*} [Fintype ι]
     simp only [← pow_two] at h
     exact h
 
-/-- Orthogonal projection onto the span of the Riesz representers does not
+/-- **Projection onto Riesz representers does not increase the norm.** Orthogonal projection onto the span of the Riesz representers does not
 increase the norm. -/
 theorem exists_mem_span_values_eq_norm_le {ι : Type*} [Fintype ι]
     (L : ι → (H →L[ℝ] ℝ)) (g : H) :

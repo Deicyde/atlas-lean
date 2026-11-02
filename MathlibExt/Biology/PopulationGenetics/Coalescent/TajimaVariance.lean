@@ -117,7 +117,7 @@ private theorem pair_symmDiff {n : ℕ} {s t : Finset (Fin n)}
     card_sdiff, card_sdiff]
   rw [inter_comm t s, h, pair_card hs, pair_card ht]
 
-/-- Among the pairs of a sample of size `n`, one equals a given pair `s`, `2 (n - 2)` share
+/-- **Counting sample pairs by overlap with a given pair.** Among the pairs of a sample of size `n`, one equals a given pair `s`, `2 (n - 2)` share
 exactly one gene with it and `C(n - 2, 2)` are disjoint from it. -/
 theorem sum_samplePairs_card_inter {n : ℕ} {s : Finset (Fin n)} (hs : s ∈ samplePairs n)
     (f : ℕ → ℝ) :
@@ -460,7 +460,7 @@ private theorem memLp_meanPairDiff {Ω : Type*} {mΩ : MeasurableSpace Ω} {μ :
 
 /-! ### The probability that a pair is still separate -/
 
-/-- The probability `(k - 1) (n + 1) / ((n - 1) (k + 1))` that a given pair of a sample of
+/-- **Probability that a pair lies in separate lineages.** The probability `(k - 1) (n + 1) / ((n - 1) (k + 1))` that a given pair of a sample of
 size `n` is still in two distinct lineages while the genealogy has `k` lineages
 (`2 ≤ k ≤ n`, `n ≥ 2`; at `n = 1` the definition divides by zero and returns `0`). -/
 def pairSeparateProb (n k : ℕ) : ℝ :=
@@ -496,7 +496,7 @@ private theorem sum_recip_pred_mul_succ (n : ℕ) (hn : 2 ≤ n) :
     field_simp [h0, h1, h2]
     ring
 
-/-- `∑_{k=2}^n p_k / C(k, 2) = 1`: the mean coalescence time of a pair is `1`. -/
+/-- **Mean coalescence time of a pair is one.** `∑_{k=2}^n p_k / C(k, 2) = 1`: the mean coalescence time of a pair is `1`. -/
 theorem sum_pairSeparateProb_div_choose {n : ℕ} (hn : 2 ≤ n) :
     ∑ k ∈ Icc 2 n, pairSeparateProb n k * ((k.choose 2 : ℕ) : ℝ)⁻¹ = 1 := by
   have hn' : (2 : ℝ) ≤ n := by exact_mod_cast hn
@@ -521,7 +521,7 @@ theorem sum_pairSeparateProb_div_choose {n : ℕ} (hn : 2 ≤ n) :
       field_simp [hn1, hn2]
       ring
 
-/-- `∑_{k=2}^n k p_k / C(k, 2)² = (n + 2) / n`. -/
+/-- **Sum of pair-separation probabilities over squared pair counts.** `∑_{k=2}^n k p_k / C(k, 2)² = (n + 2) / n`. -/
 theorem sum_mul_pairSeparateProb_div_choose_sq {n : ℕ} (hn : 2 ≤ n) :
     ∑ k ∈ Icc 2 n, (k : ℝ) * pairSeparateProb n k * (((k.choose 2 : ℕ) : ℝ)⁻¹) ^ 2 =
       ((n : ℝ) + 2) / n := by

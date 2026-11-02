@@ -165,7 +165,7 @@ end AdicCompletionNoetherian
 
 universe u
 
-/-- The adic completion of a Noetherian ring is Noetherian. -/
+/-- **Adic completion of a Noetherian ring is Noetherian.** The adic completion of a Noetherian ring is Noetherian. -/
 theorem AdicCompletion.isNoetherianRing_of_isNoetherianRing {R : Type u} [CommRing R]
     [IsNoetherianRing R] (I : Ideal R) : IsNoetherianRing (AdicCompletion I R) := by
   obtain ⟨n, f, hf⟩ := Submodule.fg_iff_exists_fin_generating_family.mp (IsNoetherian.noetherian I)

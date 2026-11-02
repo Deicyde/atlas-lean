@@ -152,7 +152,7 @@ private theorem henselianLocalRing : HenselianLocalRing A where
 
 end HenselianValuationAux
 
-/-- A valuation subring of an algebraically closed field is Henselian. -/
+/-- **Valuation subrings of algebraically closed fields are Henselian.** A valuation subring of an algebraically closed field is Henselian. -/
 theorem ValuationSubring.henselianLocalRing_of_isAlgClosed {L : Type*} [Field L]
     [IsAlgClosed L] (A : ValuationSubring L) : HenselianLocalRing A :=
   HenselianValuationAux.henselianLocalRing A

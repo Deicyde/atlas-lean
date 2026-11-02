@@ -61,7 +61,7 @@ open UpperHalfPlane (upperHalfPlaneSet isOpen_upperHalfPlaneSet)
 
 namespace StatMech.SLE
 
-/-- A continuous function on `[0, T]` that is positive at `0` and has a nonnegative derivative at
+/-- **Positivity persists under a nonnegative derivative.** A continuous function on `[0, T]` that is positive at `0` and has a nonnegative derivative at
 every interior point where it is positive stays positive on `[0, T]`. -/
 theorem positiveOn_Icc_of_deriv_nonneg_while_pos
     {T : ℝ} {f : ℝ → ℝ}
@@ -125,7 +125,7 @@ theorem positiveOn_Icc_of_deriv_nonneg_while_pos
   rw [hr₀Z.2] at this
   linarith
 
-/-- A solution `t ↦ g_t(z)` of the Loewner equation on `[0, T]` (one-sided derivatives at the
+/-- **Forward solution of the Loewner equation.** A solution `t ↦ g_t(z)` of the Loewner equation on `[0, T]` (one-sided derivatives at the
 endpoints) with `g_0(z) = z` and `g_t(z) ∈ ℍ` for `t ∈ [0, T]`. -/
 structure LoewnerForwardSolution (W : ℝ → ℝ) (z : ℂ) (T : ℝ) where
   curve : ℝ → ℂ
@@ -134,7 +134,7 @@ structure LoewnerForwardSolution (W : ℝ → ℝ) (z : ℂ) (T : ℝ) where
     HasDerivWithinAt curve (loewnerField W t (curve t)) (Icc (0 : ℝ) T) t
   upper : ∀ t ∈ Icc (0 : ℝ) T, curve t ∈ upperHalfPlaneSet
 
-/-- The restriction of a forward solution to `[0, S]`, `S ≤ T`. -/
+/-- **Restriction of a Loewner forward solution.** The restriction of a forward solution to `[0, S]`, `S ≤ T`. -/
 def LoewnerForwardSolution.restrict {W : ℝ → ℝ} {z : ℂ} {T : ℝ}
     (g : LoewnerForwardSolution W z T) {S : ℝ} (hST : S ≤ T) :
     LoewnerForwardSolution W z S where
@@ -151,7 +151,7 @@ theorem LoewnerForwardSolution.continuousOn {W : ℝ → ℝ} {z : ℂ} {T : ℝ
     (g : LoewnerForwardSolution W z T) : ContinuousOn g.curve (Icc (0 : ℝ) T) :=
   fun t ht ↦ (g.deriv t ht).continuousWithinAt
 
-/-- The reflected solution `-conj g_t(z)`, a forward solution for the driving function `-W`. -/
+/-- **Reflection of a Loewner forward solution.** The reflected solution `-conj g_t(z)`, a forward solution for the driving function `-W`. -/
 def LoewnerForwardSolution.reflect {W : ℝ → ℝ} {z : ℂ} {T : ℝ}
     (g : LoewnerForwardSolution W z T) :
     LoewnerForwardSolution (fun t ↦ -W t) (loewnerReflection z) T where
@@ -329,7 +329,7 @@ theorem LoewnerForwardSolution.initial_eq_of_eq_at
     _ = h'.curve 0 := heqClosed ⟨le_rfl, hU.le⟩
     _ = w := h'.initial
 
-/-- The solution restarted at time `s`: `u ↦ g_{s+u}(z)`, for the driving function
+/-- **Time shift of a Loewner forward solution.** The solution restarted at time `s`: `u ↦ g_{s+u}(z)`, for the driving function
 `u ↦ W(s + u)`. -/
 def LoewnerForwardSolution.timeShift
     {W : ℝ → ℝ} {z : ℂ} {T : ℝ}
@@ -385,14 +385,14 @@ theorem exists_loewnerBackwardSegment
   refine ⟨x, g, ?_⟩
   simpa [g] using hendpoint
 
-/-- The concatenation of `g` on `[0, S]` with a solution `h` started from `g_S(z)` at time `S`. -/
+/-- **Concatenated curve of two Loewner solutions.** The concatenation of `g` on `[0, S]` with a solution `h` started from `g_S(z)` at time `S`. -/
 noncomputable def LoewnerForwardSolution.appendCurve
     {W : ℝ → ℝ} {z : ℂ} {S T : ℝ}
     (g : LoewnerForwardSolution W z S)
     (h : LoewnerForwardSolution (fun u ↦ W (S + u)) (g.curve S) T) :
     ℝ → ℂ := fun t ↦ if t ≤ S then g.curve t else h.curve (t - S)
 
-/-- The concatenation of two forward solutions, a forward solution on `[0, S + T]`. -/
+/-- **Concatenation of Loewner forward solutions.** The concatenation of two forward solutions, a forward solution on `[0, S + T]`. -/
 noncomputable def LoewnerForwardSolution.append
     {W : ℝ → ℝ} {z : ℂ} {S T : ℝ}
     (g : LoewnerForwardSolution W z S)
@@ -740,7 +740,7 @@ theorem exists_loewnerForwardSolution_of_driverLowerBarrier
   refine ⟨?_⟩
   simpa only [neg_neg, loewnerReflection_involutive] using g.reflect
 
-/-- `T > 0` and there is a forward solution from `z` on `[0, T]`. -/
+/-- **Admissible duration for the Loewner equation.** `T > 0` and there is a forward solution from `z` on `[0, T]`. -/
 def IsLoewnerAdmissibleDuration (W : ℝ → ℝ) (z : ℂ) (T : ℝ) : Prop :=
   0 < T ∧ Nonempty (LoewnerForwardSolution W z T)
 
@@ -755,7 +755,7 @@ theorem IsLoewnerAdmissibleDuration.mono {W : ℝ → ℝ} {z : ℂ} {S T : ℝ}
   rcases hT with ⟨_, ⟨g⟩⟩
   exact ⟨hS, ⟨g.restrict hST⟩⟩
 
-/-- The lifetime `T_z ∈ [0, ∞]` of `z`: the supremum of admissible durations. -/
+/-- **Lifetime of a point under the Loewner flow.** The lifetime `T_z ∈ [0, ∞]` of `z`: the supremum of admissible durations. -/
 noncomputable def loewnerLifetime (W : ℝ → ℝ) (z : ℂ) : ENNReal :=
   ⨆ T : {T : ℝ // IsLoewnerAdmissibleDuration W z T}, ENNReal.ofReal T.1
 
@@ -790,7 +790,7 @@ theorem exists_admissibleDuration_gt_of_ofReal_lt_lifetime
   refine ⟨T.1, T.2, ?_⟩
   exact ENNReal.ofReal_lt_ofReal_iff T.2.1 |>.mp hT
 
-/-- `0 ≤ t < T_z`. -/
+/-- **Times before the Loewner lifetime.** `0 ≤ t < T_z`. -/
 def IsBeforeLoewnerLifetime (W : ℝ → ℝ) (z : ℂ) (t : ℝ) : Prop :=
   0 ≤ t ∧ ENNReal.ofReal t < loewnerLifetime W z
 
@@ -806,7 +806,7 @@ theorem isBeforeLoewnerLifetime_iff_exists_admissible
     exact ((ENNReal.ofReal_lt_ofReal_iff hT.1).2 htT).trans_le
       (ofReal_le_loewnerLifetime hT)
 
-/-- A chosen admissible duration exceeding `t`, for `t` before the lifetime. -/
+/-- **Chosen admissible Loewner duration.** A chosen admissible duration exceeding `t`, for `t` before the lifetime. -/
 noncomputable def selectedLoewnerDuration {W : ℝ → ℝ} {z : ℂ} {t : ℝ}
     (ht : IsBeforeLoewnerLifetime W z t) : ℝ :=
   Classical.choose (exists_admissibleDuration_gt_of_ofReal_lt_lifetime ht.2)
@@ -817,13 +817,13 @@ theorem selectedLoewnerDuration_spec {W : ℝ → ℝ} {z : ℂ} {t : ℝ}
       t < selectedLoewnerDuration ht :=
   Classical.choose_spec (exists_admissibleDuration_gt_of_ofReal_lt_lifetime ht.2)
 
-/-- A chosen forward solution on `[0, selectedLoewnerDuration ht]`. -/
+/-- **Chosen Loewner forward solution.** A chosen forward solution on `[0, selectedLoewnerDuration ht]`. -/
 noncomputable def selectedLoewnerSolution {W : ℝ → ℝ} {z : ℂ} {t : ℝ}
     (ht : IsBeforeLoewnerLifetime W z t) :
     LoewnerForwardSolution W z (selectedLoewnerDuration ht) :=
   Classical.choice (selectedLoewnerDuration_spec ht).1.2
 
-/-- The maximal solution `t ↦ g_t(z)` for `0 ≤ t < T_z` (independent of choices by uniqueness);
+/-- **Maximal Loewner trajectory.** The maximal solution `t ↦ g_t(z)` for `0 ≤ t < T_z` (independent of choices by uniqueness);
 it is `z` outside `[0, T_z)`. -/
 noncomputable def loewnerMaximalCurve (W : ℝ → ℝ) (z : ℂ) (t : ℝ) : ℂ :=
   by
@@ -960,7 +960,7 @@ theorem loewner_maximal_forward_exists {W : ℝ → ℝ} (hW : Continuous W) {z 
     loewnerMaximalCurve_hasDerivWithinAt_zero hW hz,
     fun _ ht htLife ↦ loewnerMaximalCurve_hasDerivAt ht htLife⟩
 
-/-- The domain `H_t = {z ∈ ℍ : t < T_z}` of points not swallowed by time `t`. -/
+/-- **Unswallowed domain of the Loewner flow.** The domain `H_t = {z ∈ ℍ : t < T_z}` of points not swallowed by time `t`. -/
 def loewnerUnswallowedDomain (W : ℝ → ℝ) (t : ℝ) : Set ℂ :=
   {z | z ∈ upperHalfPlaneSet ∧ IsBeforeLoewnerLifetime W z t}
 
@@ -1029,7 +1029,7 @@ theorem loewnerUnswallowedDomain_nonempty {W : ℝ → ℝ} (hW : Continuous W)
   exact ⟨z, mem_loewnerUnswallowedDomain_of_lt_im_sq_div_eight
     hW ht (mem_upperHalfPlane.mpr hzpos) hlt⟩
 
-/-- The Loewner map `g_t(z)`, the maximal solution at time `t`. -/
+/-- **Maximal Loewner maps.** The Loewner map `g_t(z)`, the maximal solution at time `t`. -/
 noncomputable def loewnerMaximalMaps (W : ℝ → ℝ) (t : ℝ) (z : ℂ) : ℂ :=
   loewnerMaximalCurve W z t
 
@@ -1161,7 +1161,7 @@ theorem loewnerMaximalMaps_bijOn_upperHalfPlane
   intro z hz
   exact loewnerMaximalMaps_mem_upperHalfPlane hz
 
-/-- The inverse `g_t⁻¹ : ℍ → H_t` (`0` outside `ℍ`). -/
+/-- **Inverse of the maximal Loewner map.** The inverse `g_t⁻¹ : ℍ → H_t` (`0` outside `ℍ`). -/
 noncomputable def loewnerMaximalMapsInverse
     {W : ℝ → ℝ} (hW : Continuous W) {t : ℝ} (ht : 0 ≤ t) (y : ℂ) : ℂ := by
   classical
@@ -1349,7 +1349,7 @@ theorem loewnerUnswallowedDomain_zero {W : ℝ → ℝ} (hW : Continuous W) :
   · exact fun hz ↦ hz.1
   · exact fun hz ↦ mem_loewnerUnswallowedDomain_zero hW hz
 
-/-- The lifetime-defined unswallowed domain is exactly the intrinsic forward-extension domain. -/
+/-- **Unswallowed domain equals the forward-extension domain.** The lifetime-defined unswallowed domain is exactly the intrinsic forward-extension domain. -/
 theorem loewnerUnswallowedDomain_eq_setOf_hasLoewnerForwardExtension
     {W : ℝ → ℝ} {t : ℝ} (ht : 0 ≤ t) :
     loewnerUnswallowedDomain W t = {z | HasLoewnerForwardExtension W z t} := by
@@ -1686,7 +1686,7 @@ theorem continuousOn_loewnerMaximalMapsInverse
   intro y hy
   exact (continuousAt_loewnerMaximalMapsInverse hW ht hy).continuousWithinAt
 
-/-- `g_t` as a homeomorphism `H_t ≃ₜ ℍ`. -/
+/-- **Loewner map as a homeomorphism onto the half-plane.** `g_t` as a homeomorphism `H_t ≃ₜ ℍ`. -/
 noncomputable def loewnerMaximalMapsHomeomorph
     {W : ℝ → ℝ} (hW : Continuous W) {t : ℝ} (ht : 0 ≤ t) :
     loewnerUnswallowedDomain W t ≃ₜ upperHalfPlaneSet where
@@ -1734,7 +1734,7 @@ theorem isConnected_loewnerUnswallowedDomain
       exact (eq_loewnerMaximalMapsInverse_of_mapsTo hW ht hx hy rfl).symm
   rwa [heq] at himage
 
-/-- The unswallowed domain is simply connected. -/
+/-- **The unswallowed domain is simply connected.** The unswallowed domain is simply connected. -/
 theorem isSimplyConnected_loewnerUnswallowedDomain
     {W : ℝ → ℝ} (hW : Continuous W) {t : ℝ} (ht : 0 ≤ t) :
     IsSimplyConnected (loewnerUnswallowedDomain W t) := by
@@ -2183,7 +2183,7 @@ theorem loewnerMaximalMaps_conformalOn
   intro z hz
   exact loewnerMaximalMaps_conformalAt hW ht hz
 
-/-- The canonical maximal family has the exact lifetime domains and conformal Loewner maps. -/
+/-- **Maximal Loewner maps solve the maximal Loewner equation.** The canonical maximal family has the exact lifetime domains and conformal Loewner maps. -/
 theorem loewnerMaximalMaps_satisfiesMaximalLoewnerEquation
     {W : ℝ → ℝ} (hW : Continuous W) :
     SatisfiesMaximalLoewnerEquation W (loewnerUnswallowedDomain W)
@@ -2222,7 +2222,7 @@ theorem isBeforeLoewnerLifetime_add_iff_shifted
           loewnerUnswallowedDomain (fun r ↦ W (s + r)) u := ⟨hzs, hshift⟩
     exact ((Set.ext_iff.mp (loewnerUnswallowedDomain_add_eq W hs hu) z).mpr hrhs).2
 
-/-- The Loewner hull `K_t = ℍ \ H_t` of points swallowed by time `t`. -/
+/-- **Loewner hull.** The Loewner hull `K_t = ℍ \ H_t` of points swallowed by time `t`. -/
 def loewnerSwallowedSet (W : ℝ → ℝ) (t : ℝ) : Set ℂ :=
   upperHalfPlaneSet \ loewnerUnswallowedDomain W t
 
@@ -2355,7 +2355,7 @@ theorem loewnerSwallowedSet_isCompactHull_of_re_bound
   loewnerSwallowedSet_isCompactHull_of_bounded hW ht
     (loewnerSwallowedSet_isBounded_of_re_bound hW ht hre)
 
-/-- For continuous `W` and `t ≥ 0`, the Loewner hull `K_t` is a compact `ℍ`-hull (Lawler 2005,
+/-- **Loewner hulls are compact hulls.** For continuous `W` and `t ≥ 0`, the Loewner hull `K_t` is a compact `ℍ`-hull (Lawler 2005,
 Chapter 4; the capacity normalization is not proved). -/
 theorem loewnerSwallowedSet_isCompactHull
     {W : ℝ → ℝ} (hW : Continuous W) {t : ℝ} (ht : 0 ≤ t) :

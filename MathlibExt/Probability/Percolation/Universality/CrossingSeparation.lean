@@ -63,7 +63,7 @@ open StatMech.Lattice
 open StatMech.RSW.Box
 open StatMech.RSW.Strip
 
-/-- For the configuration `ω`: whenever `x_B` on the bottom side of the overlap
+/-- **Vertical overlap crossings meet every horizontal crossing.** For the configuration `ω`: whenever `x_B` on the bottom side of the overlap
 `[m, m'] × [c, d]` is joined to the top side inside the overlap, every open left–right path of
 `[α, β] × [c, d]` meets the open cluster of `x_B` inside the overlap. -/
 def CrossingSeparatesH (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d : ℤ) : Prop :=
@@ -113,7 +113,7 @@ theorem rsw_strip_glue_of_crossingSeparatesH (μ : Measure (ConfigSpace (Sym2 (S
   rsw_strip_glue_of_intersection μ hpa
     (fun ω => hvIntersection_of_crossingSeparatesH ω ham hmm' hm'b (hsepL ω) (hsepR ω))
 
-/-- For the configuration `ω`: whenever `x_B` on the bottom of the overlap is joined to its top,
+/-- **Vertical overlap crossings separate the sides of a rectangle.** For the configuration `ω`: whenever `x_B` on the bottom of the overlap is joined to its top,
 there is a set `L` containing the left side of `[α, β] × [c, d]` and disjoint from its right side
 such that every lattice edge of the rectangle crossing the boundary of `L` has an endpoint in the
 open cluster of `x_B` inside the overlap. -/
@@ -167,7 +167,7 @@ theorem crossingSeparatesH_of_crossingArcSides (ω : ConfigSpace (Sym2 (Site 2))
     · exact ⟨u', hu'_mem, hu'_eq ▸ hUcomp⟩
     · exact ⟨v', hv'_mem, hv'_eq ▸ hVcomp⟩
 
-/-- RSW gluing: for a positively associated probability measure `μ`, if `CrossingArcSides` holds
+/-- **RSW gluing from side separation.** RSW gluing: for a positively associated probability measure `μ`, if `CrossingArcSides` holds
 for every configuration, then `μ(H_{[a, m']}) μ(V_{[m, m']}) μ(H_{[m, b]}) ≤ μ(H_{[a, b]})`. -/
 theorem rsw_strip_glue_of_crossingArcSides (μ : Measure (ConfigSpace (Sym2 (Site 2))))
     [IsProbabilityMeasure μ] (hpa : PositivelyAssociated μ)

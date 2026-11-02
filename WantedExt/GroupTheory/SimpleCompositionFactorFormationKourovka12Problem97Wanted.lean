@@ -84,7 +84,7 @@ def AllCompositionFactorsIso (T : Type) [Group T] (G : Type) [Group G] : Prop :=
       ∃ _ : ((H i.castSucc).subgroupOf (H i.succ)).Normal,
         Nonempty ((H i.succ ⧸ (H i.castSucc).subgroupOf (H i.succ)) ≃* T)
 
-/-- `X` is a proper subclass of `𝔉_T`: some finite group of `𝔉_T` does not belong to `X`. -/
+/-- **Proper subclass of a formation.** `X` is a proper subclass of `𝔉_T`: some finite group of `𝔉_T` does not belong to `X`. -/
 def IsProperIn (T : Type) [Group T] (X : GroupClass) : Prop :=
   ∃ (G : Type) (_ : Group G) (_ : Finite G), AllCompositionFactorsIso T G ∧ ¬ X.mem G
 

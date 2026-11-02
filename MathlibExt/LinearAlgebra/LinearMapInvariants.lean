@@ -49,7 +49,7 @@ dimension of the kernel of the dual map.
 
 @[expose] public section
 
-/-- The characteristic polynomial of an endomorphism of a free rank-two
+/-- **Characteristic polynomial of a rank-two endomorphism.** The characteristic polynomial of an endomorphism of a free rank-two
 module is `X² - tr f · X + det f`, the familiar quadratic formula. -/
 theorem LinearMap.charpoly_of_finrank_eq_two {R : Type*} {M : Type*} [CommRing R]
     [Nontrivial R] [AddCommGroup M] [Module R M] [Module.Free R M] [Module.Finite R M]
@@ -60,7 +60,7 @@ theorem LinearMap.charpoly_of_finrank_eq_two {R : Type*} {M : Type*} [CommRing R
   rw [← f.charpoly_toMatrix b, Matrix.charpoly_fin_two,
     ← LinearMap.trace_eq_matrix_trace R b f, LinearMap.det_toMatrix b f]
 
-/-- Trace and determinant are preserved under semiconjugacy: if `e` intertwines
+/-- **Trace and determinant are invariant under semiconjugacy.** Trace and determinant are preserved under semiconjugacy: if `e` intertwines
 `f` and `g`, then `g` is the conjugate of `f` by `e`, so both invariants agree. -/
 theorem LinearMap.trace_eq_and_det_eq_of_semiconj {R : Type*} {M : Type*} {N : Type*}
     [CommRing R] [AddCommGroup M] [Module R M] [AddCommGroup N] [Module R N]
@@ -74,7 +74,7 @@ theorem LinearMap.trace_eq_and_det_eq_of_semiconj {R : Type*} {M : Type*} {N : T
   subst hg
   exact ⟨(LinearMap.trace_conj' f e).symm, (LinearMap.det_conj f e).symm⟩
 
-/-- The kernel of the dual map has the same finite dimension as the kernel:
+/-- **Kernel of the dual map has the same dimension as the kernel.** The kernel of the dual map has the same finite dimension as the kernel:
 both are complementary to the range, by rank-nullity and the
 dual-annihilator dimension formula. -/
 theorem LinearMap.finrank_ker_dualMap_eq_finrank_ker {K V : Type*} [Field K]

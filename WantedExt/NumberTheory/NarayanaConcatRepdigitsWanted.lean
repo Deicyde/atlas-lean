@@ -83,7 +83,7 @@ public theorem_wanted narayanaCowsSequence_isConcatTwoRepdigitsBase_iff {n b : �
         (12, 3), (12, 4), (12, 7), (12, 8), (12, 9), (13, 2), (13, 4), (13, 5), (13, 7),
         (13, 8), (14, 6), (17, 7), (17, 9), (18, 5)} : Finset (ℕ × ℕ))
 
-/-- Lemma 3 (Guzmán Sánchez and Luca): for real `r ≥ 1` and `H` with `H > (4r²)^r` and
+/-- **Guzmán Sánchez–Luca lemma: $L < 2^r H (\log H)^r$.** Lemma 3 (Guzmán Sánchez and Luca): for real `r ≥ 1` and `H` with `H > (4r²)^r` and
 `H > L / (log L)^r`, we have `L < 2^r H (log H)^r`. The hypothesis `H > 0` is implied by
 `H > (4r²)^r` and is dropped.
 

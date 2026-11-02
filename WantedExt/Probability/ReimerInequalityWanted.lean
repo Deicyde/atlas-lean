@@ -56,7 +56,7 @@ public theorem_wanted reimer_inequality :
       ∀ (A B : Set (ConfigSpace (Fin n))),
         wprob φ (disjointOccurrence A B) ≤ wprob φ A * wprob φ B
 
-/-- Reimer's inequality in the form of the ported hypothesis `StatMech.ReimerWprobCore`
+/-- **Reimer's inequality, ported hypothesis form.** Reimer's inequality in the form of the ported hypothesis `StatMech.ReimerWprobCore`
 (definitionally `reimer_inequality`).
 
 Source: D. Reimer, *Proof of the van den Berg–Kesten conjecture*, Combin. Probab. Comput. 9

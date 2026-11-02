@@ -137,7 +137,7 @@ $\mathrm{CPre}_p^U(X)$ is the controllable predecessor of $X$ for $p$ inside $U$
 def attractorIn (p : Bool) (T U : Finset (Fin n)) : Finset (Fin n) :=
   (fun X => (T ∩ U) ∪ cpreIn G p U X)^[n] ∅
 
-/-- The rank of a priority `p` among the distinct priorities occurring in
+/-- **Rank of a priority in a parity game.** The rank of a priority `p` among the distinct priorities occurring in
 the game: the number of distinct priorities `q < p` that occur. -/
 def priorityRank (p : ℕ) : ℕ :=
   ((Finset.univ : Finset (Fin n)).image G.priority).filter (· < p) |>.card

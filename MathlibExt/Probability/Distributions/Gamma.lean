@@ -284,7 +284,7 @@ theorem not_integrable_exp_mul_gammaMeasure {a r t : ℝ} (ha : 0 < a) (hr : 0 <
   have := (integrableOn_Ioi_rpow_iff one_pos).1 hon
   linarith
 
-/-- The exponential moment `E[exp (t X)]` of a gamma `(a, r)` law is finite exactly for
+/-- **Exponential moments of the gamma law are finite exactly below the rate.** The exponential moment `E[exp (t X)]` of a gamma `(a, r)` law is finite exactly for
 `t < r`. -/
 theorem integrableExpSet_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     integrableExpSet id (gammaMeasure a r) = Iio r := by
@@ -293,7 +293,7 @@ theorem integrableExpSet_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
   by_contra h'
   exact not_integrable_exp_mul_gammaMeasure ha hr (not_lt.1 h') h
 
-/-- MGF uniqueness for gamma laws: a real probability law whose MGF equals the gamma `(a, r)`
+/-- **Moment generating function determines the gamma law.** MGF uniqueness for gamma laws: a real probability law whose MGF equals the gamma `(a, r)`
 MGF as a function on all of `ℝ` (both vanish where the exponential moment is infinite) is that
 gamma law. -/
 theorem eq_gammaMeasure_of_mgf_eq {a r : ℝ} (ha : 0 < a) (hr : 0 < r) {ν : Measure ℝ}

@@ -84,7 +84,7 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 
 section Iterates
 
-/-- Iterating the forward-shift function `n` times inserts `n` zeroes
+/-- **Iterated forward shift inserts leading zeroes.** Iterating the forward-shift function `n` times inserts `n` zeroes
 in front of the sequence. -/
 theorem shiftFun_iterate_apply (n : ℕ) (x : ℕ → 𝕜) (i : ℕ) :
     (shiftFun^[n]) x i = if i < n then 0 else x (i - n) := by
@@ -104,7 +104,7 @@ theorem shiftFun_iterate_apply (n : ℕ) (x : ℕ → 𝕜) (i : ℕ) :
           rfl
 
 set_option linter.unusedSectionVars false in
-/-- Iterating the backward-shift function `n` times drops the first
+/-- **Iterated backward shift drops leading coordinates.** Iterating the backward-shift function `n` times drops the first
 `n` coordinates. -/
 theorem backwardFun_iterate_apply (n : ℕ) (x : ℕ → 𝕜) (i : ℕ) :
     (backwardFun^[n]) x i = x (i + n) := by
@@ -115,7 +115,7 @@ theorem backwardFun_iterate_apply (n : ℕ) (x : ℕ → 𝕜) (i : ℕ) :
       congr 1
       omega
 
-/-- The coercion of `S ^ n` is the `n`-fold iterate of `shiftFun`. -/
+/-- **Powers of the unilateral shift as iterates of the shift map.** The coercion of `S ^ n` is the `n`-fold iterate of `shiftFun`. -/
 theorem shiftCLM_pow_coe (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     ((shiftCLM (𝕜 := 𝕜) ^ n) x : ℕ → 𝕜) = (shiftFun^[n]) (x : ℕ → 𝕜) := by
   induction n generalizing x with
@@ -126,7 +126,7 @@ theorem shiftCLM_pow_coe (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
         funext fun i => shiftCLM_apply x i
       rw [hcoe, Function.iterate_succ_apply]
 
-/-- The coercion of `B ^ n` is the `n`-fold iterate of `backwardFun`. -/
+/-- **Powers of the backward shift as iterates of the backward map.** The coercion of `B ^ n` is the `n`-fold iterate of `backwardFun`. -/
 theorem backwardCLM_pow_coe (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     ((backwardCLM (𝕜 := 𝕜) ^ n) x : ℕ → 𝕜) = (backwardFun^[n]) (x : ℕ → 𝕜) := by
   induction n generalizing x with
@@ -137,12 +137,12 @@ theorem backwardCLM_pow_coe (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
         funext fun i => backwardCLM_apply x i
       rw [hcoe, Function.iterate_succ_apply]
 
-/-- Pointwise action of `S ^ n`: it inserts `n` zeroes in front. -/
+/-- **Pointwise action of a power of the unilateral shift.** Pointwise action of `S ^ n`: it inserts `n` zeroes in front. -/
 theorem shiftCLM_pow_apply (n : ℕ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     (shiftCLM (𝕜 := 𝕜) ^ n) x i = if i < n then 0 else x (i - n) := by
   rw [shiftCLM_pow_coe, shiftFun_iterate_apply]
 
-/-- Pointwise action of `B ^ n`: it drops the first `n` coordinates. -/
+/-- **Pointwise action of a power of the backward shift.** Pointwise action of `B ^ n`: it drops the first `n` coordinates. -/
 theorem backwardCLM_pow_apply (n : ℕ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     (backwardCLM (𝕜 := 𝕜) ^ n) x i = x (i + n) := by
   rw [backwardCLM_pow_coe, backwardFun_iterate_apply]
@@ -151,7 +151,7 @@ end Iterates
 
 section Composition
 
-/-- `B ^ n` is a left inverse of `S ^ n`: shifting up then down
+/-- **Backward shift power is a left inverse of the shift power.** `B ^ n` is a left inverse of `S ^ n`: shifting up then down
 recovers the original sequence. -/
 theorem backwardCLM_pow_comp_shiftCLM_pow (n : ℕ) :
     (backwardCLM (𝕜 := 𝕜) ^ n) ∘L (shiftCLM (𝕜 := 𝕜) ^ n) = (1 : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) := by
@@ -160,21 +160,21 @@ theorem backwardCLM_pow_comp_shiftCLM_pow (n : ℕ) :
     one_apply_eq_self]
   rw [ite_eq_right (by omega : ¬ i + n < n), Nat.add_sub_cancel]
 
-/-- The unilateral shift power is injective. -/
+/-- **Injectivity of powers of the unilateral shift.** The unilateral shift power is injective. -/
 theorem injective_shiftCLM_pow (n : ℕ) :
     Function.Injective ⇑(shiftCLM (𝕜 := 𝕜) ^ n) := by
   apply Function.LeftInverse.injective (g := ⇑(backwardCLM (𝕜 := 𝕜) ^ n))
   intro x
   simpa using DFunLike.congr_fun (backwardCLM_pow_comp_shiftCLM_pow n) x
 
-/-- The backward shift power is surjective. -/
+/-- **Surjectivity of powers of the backward shift.** The backward shift power is surjective. -/
 theorem surjective_backwardCLM_pow (n : ℕ) :
     Function.Surjective ⇑(backwardCLM (𝕜 := 𝕜) ^ n) := by
   intro y
   exact ⟨(shiftCLM (𝕜 := 𝕜) ^ n) y,
     by simpa using DFunLike.congr_fun (backwardCLM_pow_comp_shiftCLM_pow n) y⟩
 
-/-- A vector is in the kernel of `B ^ n` iff its coordinates from `n`
+/-- **Kernel of a power of the backward shift.** A vector is in the kernel of `B ^ n` iff its coordinates from `n`
 onwards all vanish. -/
 theorem mem_ker_backwardCLM_pow (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     (backwardCLM (𝕜 := 𝕜) ^ n) x = 0 ↔ ∀ i, x (i + n) = 0 := by
@@ -188,7 +188,7 @@ theorem mem_ker_backwardCLM_pow (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     funext i
     simp only [backwardCLM_pow_apply, h i, lp.coeFn_zero, Pi.zero_apply]
 
-/-- A vector is in the range of `S ^ n` iff its first `n` coordinates
+/-- **Range of a power of the unilateral shift.** A vector is in the range of `S ^ n` iff its first `n` coordinates
 vanish. -/
 theorem mem_range_shiftCLM_pow (n : ℕ) (y : ℓ²(ℕ, 𝕜)) :
     (∃ x, (shiftCLM (𝕜 := 𝕜) ^ n) x = y) ↔ ∀ i < n, y i = 0 := by
@@ -209,7 +209,7 @@ end Composition
 
 section FirstCoordinates
 
-/-- The map taking a sequence to its first `n` coordinates. -/
+/-- **First-coordinates map on square-summable sequences.** The map taking a sequence to its first `n` coordinates. -/
 noncomputable def firstCoords (n : ℕ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] (Fin n → 𝕜) where
   toFun x i := (x : ℕ → 𝕜) (i : ℕ)
   map_add' x y := by
@@ -219,7 +219,7 @@ noncomputable def firstCoords (n : ℕ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] (Fin n �
     funext i
     simp [lp.coeFn_smul]
 
-/-- The extension of a tuple of `n` coordinates by zeroes. -/
+/-- **Extension of a finite tuple by zeroes.** The extension of a tuple of `n` coordinates by zeroes. -/
 def extZeroFun {n : ℕ} (v : Fin n → 𝕜) (j : ℕ) : 𝕜 :=
   if h : j < n then v ⟨j, h⟩ else 0
 
@@ -231,7 +231,7 @@ theorem extZeroFun_apply_of_ge {n : ℕ} (v : Fin n → 𝕜) {j : ℕ} (hj : ¬
     extZeroFun v j = 0 :=
   dite_eq_right hj
 
-/-- A finitely supported sequence is in `ℓ²`. -/
+/-- **Zero-extended finite tuples are square-summable.** A finitely supported sequence is in `ℓ²`. -/
 theorem memℓp_extZeroFun {n : ℕ} (v : Fin n → 𝕜) : Memℓp (extZeroFun v) 2 := by
   apply memℓp_gen
   apply summable_of_ne_finset_zero (s := Finset.range n)
@@ -240,7 +240,7 @@ theorem memℓp_extZeroFun {n : ℕ} (v : Fin n → 𝕜) : Memℓp (extZeroFun 
   rw [extZeroFun_apply_of_ge v hj]
   simp
 
-/-- The linear extension-by-zero map `(Fin n → 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)`. -/
+/-- **Linear extension-by-zero map into $\ell^2$.** The linear extension-by-zero map `(Fin n → 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)`. -/
 noncomputable def extZero (n : ℕ) : (Fin n → 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜) where
   toFun v := ⟨extZeroFun v, memℓp_extZeroFun v⟩
   map_add' v w := by
@@ -260,19 +260,19 @@ noncomputable def extZero (n : ℕ) : (Fin n → 𝕜) →ₗ[𝕜] ℓ²(ℕ, �
     · rw [extZeroFun_apply_of_lt (c • v) hj, extZeroFun_apply_of_lt v hj, Pi.smul_apply]
     · rw [extZeroFun_apply_of_ge (c • v) hj, extZeroFun_apply_of_ge v hj, smul_zero]
 
-/-- Pointwise action of the extension-by-zero map. -/
+/-- **Pointwise action of the extension-by-zero map.** Pointwise action of the extension-by-zero map. -/
 theorem extZero_apply (n : ℕ) (v : Fin n → 𝕜) (j : ℕ) :
     (extZero n v : ℕ → 𝕜) j = extZeroFun v j :=
   rfl
 
-/-- Taking first coordinates after extension by zeroes is the identity. -/
+/-- **First coordinates of a zero extension recover the tuple.** Taking first coordinates after extension by zeroes is the identity. -/
 theorem firstCoords_extZero (n : ℕ) (v : Fin n → 𝕜) :
     firstCoords n (extZero n v) = v := by
   funext i
   show (extZero n v : ℕ → 𝕜) (i : ℕ) = v i
   rw [extZero_apply, extZeroFun_apply_of_lt _ i.isLt]
 
-/-- A vector in the kernel of `B ^ n` is determined by its first `n`
+/-- **Kernel vectors of a backward shift power are zero-extended tuples.** A vector in the kernel of `B ^ n` is determined by its first `n`
 coordinates: extending those coordinates by zeroes recovers it. -/
 theorem extZero_firstCoords_of_mem_ker (n : ℕ) {x : ℓ²(ℕ, 𝕜)}
     (hx : x ∈ (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)).ker) :
@@ -290,7 +290,7 @@ theorem extZero_firstCoords_of_mem_ker (n : ℕ) {x : ℓ²(ℕ, 𝕜)}
     rw [Nat.sub_add_cancel (by omega : n ≤ j)] at hx'
     exact hx'.symm
 
-/-- The kernel of `B ^ n` is linearly equivalent to `Fin n → 𝕜`: a
+/-- **Kernel of the backward shift power as a space of finite tuples.** The kernel of `B ^ n` is linearly equivalent to `Fin n → 𝕜`: a
 vector in the kernel is exactly its first `n` coordinates. -/
 noncomputable def kerBackwardCLM_powEquiv (n : ℕ) :
     (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)).ker ≃ₗ[𝕜] (Fin n → 𝕜) where
@@ -306,18 +306,18 @@ noncomputable def kerBackwardCLM_powEquiv (n : ℕ) :
   map_add' x y := by simp
   map_smul' c x := by simp
 
-/-- The kernel of `B ^ n` is finite-dimensional. -/
+/-- **Finite-dimensionality of the kernel of a backward shift power.** The kernel of `B ^ n` is finite-dimensional. -/
 theorem finiteDimensional_ker_backwardCLM_pow (n : ℕ) :
     FiniteDimensional 𝕜 (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)).ker := by
   exact Module.Finite.equiv (kerBackwardCLM_powEquiv n).symm
 
-/-- The kernel of `B ^ n` has dimension `n`. -/
+/-- **Dimension of the kernel of a backward shift power.** The kernel of `B ^ n` has dimension `n`. -/
 theorem finrank_ker_backwardCLM_pow (n : ℕ) :
     Module.finrank 𝕜 (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)).ker = n := by
   rw [LinearEquiv.finrank_eq (kerBackwardCLM_powEquiv n),
     Module.finrank_fintype_fun_eq_card 𝕜, Fintype.card_fin]
 
-/-- The kernel of the first-`n`-coordinates map is the range of
+/-- **Kernel of the first-coordinates map is the range of the shift power.** The kernel of the first-`n`-coordinates map is the range of
 `S ^ n`: both consist of the sequences whose first `n` coordinates
 vanish. -/
 theorem ker_firstCoords_eq_range_shiftCLM_pow (n : ℕ) :
@@ -346,7 +346,7 @@ theorem ker_firstCoords_eq_range_shiftCLM_pow (n : ℕ) :
     rw [shiftCLM_pow_apply, ite_eq_left i.isLt]
     rfl
 
-/-- The cokernel of `S ^ n` has dimension `n`: the quotient of `ℓ²`
+/-- **Dimension of the cokernel of a unilateral shift power.** The cokernel of `S ^ n` has dimension `n`: the quotient of `ℓ²`
 by the range of `S ^ n` is equivalent to `Fin n → 𝕜` via the first
 `n` coordinates. -/
 theorem finrank_quotient_range_shiftCLM_pow (n : ℕ) :
@@ -362,7 +362,7 @@ end FirstCoordinates
 
 section Fredholm
 
-/-- The quasi-inverse relation `B ^ n ∘L S ^ n = 1` holds exactly,
+/-- **Backward shift power inverts the shift power modulo finite rank.** The quasi-inverse relation `B ^ n ∘L S ^ n = 1` holds exactly,
 hence also modulo finite-rank operators. -/
 theorem approx_backward_comp_shift (n : ℕ) :
     (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)) ∘ₗ ↑(shiftCLM (𝕜 := 𝕜) ^ n) ≈
@@ -377,7 +377,7 @@ theorem approx_backward_comp_shift (n : ℕ) :
   rw [hcomp, sub_self]
   exact LinearMap.HasFiniteRange.zero
 
-/-- The defect `S ^ n ∘L B ^ n - 1` has finite rank: its range lies in
+/-- **Shift power inverts the backward shift power modulo finite rank.** The defect `S ^ n ∘L B ^ n - 1` has finite rank: its range lies in
 the finite-dimensional kernel of `B ^ n`, since applying `B ^ n`
 after it gives `0`. -/
 theorem approx_shift_comp_backward (n : ℕ) :
@@ -404,19 +404,19 @@ theorem approx_shift_comp_backward (n : ℕ) :
     finiteDimensional_ker_backwardCLM_pow n
   exact Submodule.finiteDimensional_of_le hle
 
-/-- Every power of the unilateral shift is a Fredholm operator: `B ^ n`
+/-- **Powers of the unilateral shift are Fredholm.** Every power of the unilateral shift is a Fredholm operator: `B ^ n`
 is a quasi-inverse. -/
 theorem isFredholm_shiftCLM_pow (n : ℕ) : (shiftCLM (𝕜 := 𝕜) ^ n).IsFredholm := by
   apply ContinuousLinearMap.IsFredholm.of_isQuasiInverse (v := backwardCLM (𝕜 := 𝕜) ^ n)
   exact ⟨approx_backward_comp_shift n, approx_shift_comp_backward n⟩
 
-/-- Every power of the backward shift is a Fredholm operator: `S ^ n`
+/-- **Powers of the backward shift are Fredholm.** Every power of the backward shift is a Fredholm operator: `S ^ n`
 is a quasi-inverse. -/
 theorem isFredholm_backwardCLM_pow (n : ℕ) : (backwardCLM (𝕜 := 𝕜) ^ n).IsFredholm := by
   apply ContinuousLinearMap.IsFredholm.of_isQuasiInverse (v := shiftCLM (𝕜 := 𝕜) ^ n)
   exact ⟨approx_shift_comp_backward n, approx_backward_comp_shift n⟩
 
-/-- The Fredholm index of `S ^ n` is `-n`: the shift power is
+/-- **Fredholm index of a unilateral shift power is $-n$.** The Fredholm index of `S ^ n` is `-n`: the shift power is
 injective, and its cokernel has dimension `n`. -/
 theorem index_shiftCLM_pow (n : ℕ) : (shiftCLM (𝕜 := 𝕜) ^ n).index = -(n : ℤ) := by
   have hinj : Function.Injective (↑(shiftCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)) :=
@@ -424,7 +424,7 @@ theorem index_shiftCLM_pow (n : ℕ) : (shiftCLM (𝕜 := 𝕜) ^ n).index = -(n
   have hfin := finrank_quotient_range_shiftCLM_pow (𝕜 := 𝕜) n
   rw [LinearMap.index_of_injective hinj, hfin]
 
-/-- The Fredholm index of `B ^ n` is `n`: the backward shift power is
+/-- **Fredholm index of a backward shift power is $n$.** The Fredholm index of `B ^ n` is `n`: the backward shift power is
 surjective, and its kernel has dimension `n`. -/
 theorem index_backwardCLM_pow (n : ℕ) : (backwardCLM (𝕜 := 𝕜) ^ n).index = (n : ℤ) := by
   have hsurj : Function.Surjective (↑(backwardCLM (𝕜 := 𝕜) ^ n) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜)) :=
@@ -432,20 +432,20 @@ theorem index_backwardCLM_pow (n : ℕ) : (backwardCLM (𝕜 := 𝕜) ^ n).index
   have hfin := finrank_ker_backwardCLM_pow (𝕜 := 𝕜) n
   rw [LinearMap.index_of_surjective hsurj, hfin]
 
-/-- The Fredholm index of the unilateral shift is `-1`. -/
+/-- **Fredholm index of the unilateral shift is $-1$.** The Fredholm index of the unilateral shift is `-1`. -/
 theorem index_shiftCLM : (shiftCLM : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)).index = -1 := by
   simpa using index_shiftCLM_pow (𝕜 := 𝕜) 1
 
-/-- The Fredholm index of the backward shift is `1`. -/
+/-- **Fredholm index of the backward shift is $1$.** The Fredholm index of the backward shift is `1`. -/
 theorem index_backwardCLM : (backwardCLM : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)).index = 1 := by
   simpa using index_backwardCLM_pow (𝕜 := 𝕜) 1
 
-/-- `S ∘L B` is Fredholm: it is the composite of two Fredholm operators. -/
+/-- **Shift composed with backward shift is Fredholm.** `S ∘L B` is Fredholm: it is the composite of two Fredholm operators. -/
 theorem isFredholm_shift_comp_backward : (shiftCLM (𝕜 := 𝕜) ∘L backwardCLM (𝕜 := 𝕜)).IsFredholm := by
   have h := (isFredholm_shiftCLM_pow (𝕜 := 𝕜) 1).comp (isFredholm_backwardCLM_pow (𝕜 := 𝕜) 1)
   simpa using h
 
-/-- `S ∘L B` has Fredholm index `0`, as index additivity under
+/-- **Shift composed with backward shift has Fredholm index zero.** `S ∘L B` has Fredholm index `0`, as index additivity under
 composition demands: `(-1) + 1 = 0`. -/
 theorem index_shift_comp_backward : (shiftCLM (𝕜 := 𝕜) ∘L backwardCLM (𝕜 := 𝕜)).index = 0 := by
   have hcomp := ContinuousLinearMap.IsFredholm.index_comp (isFredholm_shiftCLM_pow (𝕜 := 𝕜) 1)

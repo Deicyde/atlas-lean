@@ -79,7 +79,7 @@ private theorem mgf_chiSquareMeasure_eq_pow {p : ℕ} (hp : 0 < p) (t : ℝ) :
         (by positivity) (by norm_num)] at hmem
     exact absurd hmem (not_lt.2 ht)
 
-/-- For independent standard normal coordinates, the sum of the squares of the coordinates in a
+/-- **Sum of squares of independent standard normals is chi-square.** For independent standard normal coordinates, the sum of the squares of the coordinates in a
 nonempty finite set `s` has the chi-square law with `|s|` degrees of freedom. -/
 theorem pi_gaussianReal_map_sum_sq {ι : Type*} [Fintype ι] {s : Finset ι} (hs : s.Nonempty) :
     (Measure.pi fun _ : ι => gaussianReal 0 1).map (fun x => ∑ i ∈ s, x i ^ 2) =
@@ -109,7 +109,7 @@ theorem pi_gaussianReal_map_sum_sq {ι : Type*} [Fintype ι] {s : Finset ι} (hs
           exact mgf_sq_stdGaussian t
   simp [hone]
 
-/-- Coordinates of the standard Gaussian law in an orthonormal basis `b`: the sum of the squared
+/-- **Squared orthonormal coordinates of a standard Gaussian are chi-square.** Coordinates of the standard Gaussian law in an orthonormal basis `b`: the sum of the squared
 coordinates `⟪b i, x⟫` over a nonempty set `s` of indices is chi-square with `|s|` degrees of
 freedom. -/
 theorem stdGaussian_map_sum_sq_inner {E : Type*} [NormedAddCommGroup E]

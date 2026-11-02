@@ -85,7 +85,7 @@ open RankCountAux
 
 namespace AlgebraicGeometry
 
-/-- A closed immersion between maps of constant fibre rank is an
+/-- **Closed immersions of constant fibre rank are isomorphisms.** A closed immersion between maps of constant fibre rank is an
 isomorphism. -/
 theorem isIso_of_isClosedImmersion_of_finrank_comp_eq
     {X Y S : Scheme.{u}} (i : X ⟶ Y) (g : Y ⟶ S) (f : X ⟶ S) (w : i ≫ g = f)

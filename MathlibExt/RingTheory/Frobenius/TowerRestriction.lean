@@ -60,7 +60,7 @@ private theorem pow_sub_pow_mem (I : Ideal S) {a b : S} (h : a - b ∈ I)
     simp only [map_sub, map_pow, Ideal.Quotient.eq.mpr h, sub_self]
   exact Ideal.Quotient.eq_zero_iff_mem.mp h0
 
-/-- Two elements satisfying the same powered congruence differ by an
+/-- **Elements with the same powered congruence differ by inertia.** Two elements satisfying the same powered congruence differ by an
 element of the inertia subgroup of `Q`. -/
 theorem mem_inertia_of_forall_smul_sub_pow_mem
     (hσ : ∀ x : S, σ • x - x ^ r ∈ Q) (hτ : ∀ x : S, τ • x - x ^ r ∈ Q) :
@@ -86,7 +86,7 @@ namespace AlgHom.IsArithFrobAt
 variable {R S : Type*} [CommRing R] [CommRing S] [Algebra R S]
   {φ : S →ₐ[R] S} {Q : Ideal S}
 
-/-- Powers of an arithmetic Frobenius map satisfy the powered congruence:
+/-- **Powers of a Frobenius map satisfy the powered congruence.** Powers of an arithmetic Frobenius map satisfy the powered congruence:
 if `φ x - x ^ q ∈ Q` for all `x`, then `(φ ^ f) x - x ^ q ^ f ∈ Q`. -/
 theorem pow_apply_sub_pow_mem (h : φ.IsArithFrobAt Q) :
     ∀ (f : ℕ) (x : S),
@@ -125,7 +125,7 @@ variable {R B C : Type*} [CommRing R] [CommRing B] [CommRing C]
   [MulSemiringAction H C] [SMulCommClass H R C]
   {σ : G} {Q : Ideal B}
 
-/-- Powers of an arithmetic Frobenius element satisfy the powered
+/-- **Powers of a Frobenius element satisfy the powered congruence.** Powers of an arithmetic Frobenius element satisfy the powered
 congruence: if `σ • x - x ^ q ∈ Q` for all `x`, with
 `q = Nat.card (R ⧸ Q.under R)`, then
 `(σ ^ f) • x - x ^ q ^ f ∈ Q`. -/
@@ -157,7 +157,7 @@ theorem pow_smul_sub_pow_mem (h : IsArithFrobAt R σ Q) :
     convert hsum using 1
     abel
 
-/-- A Frobenius congruence restricts along a compatible pair: if
+/-- **Restriction of a Frobenius element along a compatible pair.** A Frobenius congruence restricts along a compatible pair: if
 `ι : C →ₐ[R] B` and `ρ : G →* H` satisfy `ι (ρ g • c) = g • ι c`, and `σ`
 is a Frobenius at `Q`, then `ρ σ` is a Frobenius at `Q.comap ι`. -/
 theorem comap (ι : C →ₐ[R] B) (ρ : G →* H)
@@ -176,7 +176,7 @@ theorem comap (ι : C →ₐ[R] B) (ρ : G →* H)
   rw [hmap]
   exact h (ι c)
 
-/-- If `σ` is a Frobenius at `Q` and `τ` satisfies the powered congruence
+/-- **Uniqueness of Frobenius powers with trivial inertia.** If `σ` is a Frobenius at `Q` and `τ` satisfies the powered congruence
 with exponent `q ^ f`, then `σ ^ f = τ` when the inertia subgroup of `Q` is
 trivial. This is a uniqueness helper for an already supplied powered
 congruence. The actual tower theorem below derives that congruence from the
@@ -191,7 +191,7 @@ theorem pow_eq_of_forall_smul_sub_pow_mem_of_inertia_eq_bot
   rw [hbot] at hmem
   exact mul_inv_eq_one.mp (Subgroup.mem_bot.mp hmem)
 
-/-- If `σ` is a Frobenius at `Q` and `τ` satisfies the Frobenius congruence
+/-- **Restriction of Frobenius equals Frobenius with trivial inertia.** If `σ` is a Frobenius at `Q` and `τ` satisfies the Frobenius congruence
 at `Q.comap ι`, then `ρ σ = τ` when the inertia subgroup of `Q.comap ι` is
 trivial. This is the equality form of the restriction statement of
 Proposition 7.22 under its unramified hypothesis. -/
@@ -214,7 +214,7 @@ end IsArithFrobAt
 
 namespace Ideal
 
-/-- In a finite ring tower `R → T → B`, the intermediate prime residue quotient
+/-- **Intermediate residue cardinality as a power of the base residue cardinality.** In a finite ring tower `R → T → B`, the intermediate prime residue quotient
 has cardinality equal to the base residue cardinality raised to its canonical
 inertia degree. The cardinality theorem is Mathlib's `cardQuot_pow_inertiaDeg`. -/
 theorem natCard_quotient_under_eq_pow_inertiaDeg
@@ -238,7 +238,7 @@ end Ideal
 
 namespace IsArithFrobAt
 
-/-- In a finite ring tower `R → T → B`, the Frobenius over `T`, embedded into
+/-- **Frobenius in a tower is a power of the base Frobenius.** In a finite ring tower `R → T → B`, the Frobenius over `T`, embedded into
 an action over `R`, equals the Frobenius over `R` raised to the intermediate
 residue degree when the inertia subgroup is trivial. Only `H` must fix `T`. -/
 theorem tower_eq_of_inertia_eq_bot
@@ -266,7 +266,7 @@ end IsArithFrobAt
 
 namespace IsArithFrobAt
 
-/-- For algebra automorphisms in a finite ring tower, the inclusion of the
+/-- **Frobenius tower equality for algebra automorphisms.** For algebra automorphisms in a finite ring tower, the inclusion of the
 intermediate Frobenius is the canonical `AlgEquiv.restrictScalars`. -/
 theorem tower_eq_of_inertia_eq_bot_algEquiv
     {R T B : Type*} [CommRing R] [CommRing T] [CommRing B]
@@ -286,7 +286,7 @@ end IsArithFrobAt
 
 namespace IsArithFrobAt
 
-/-- The tower equality for the source's intermediate field `E ⊂ L`.
+/-- **Frobenius tower equality for an intermediate field.** The tower equality for the source's intermediate field `E ⊂ L`.
 Here `K` is the fraction field of the base ring `R`, `T` is the integral
 closure of `R` in `E`, and `B` is its integral closure in `L`. In the
 number-field application these are the three rings of integers. The

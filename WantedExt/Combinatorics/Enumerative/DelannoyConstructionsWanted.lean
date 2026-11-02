@@ -168,7 +168,7 @@ of Integer Sequences 27 (2024), Article 24.1.8, Corollary 6
 public theorem_wanted genDelannoyUpper_succ_left_sub (k m n : ℕ) (hk : 1 ≤ k) :
     (genDelannoyUpper k (m + 1) n : ℤ) - genDelannoyUpper k m n = genDelannoyUpper (k - 1) (m + 1) n
 
-/-- The four relationship identities for `D_k` (`k ≥ 1`, `m, n ≥ k`):
+/-- **Relationship identities for generalized Delannoy numbers.** The four relationship identities for `D_k` (`k ≥ 1`, `m, n ≥ k`):
 `D_k(m, n) + D_k(m, n + 1) = 2 D_(k-1)(m, n)`, `D_k(m, n) + D_k(m + 1, n) = D_(k+1)(m + 1, n + 1)`,
 `D_k(m, n + 1) - D_k(m, n) = 2 D_(k-1)(m - 1, n)`, `D_k(m + 1, n) - D_k(m, n) = D_(k+1)(m + 1, n)`.
 

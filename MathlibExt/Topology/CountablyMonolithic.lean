@@ -39,7 +39,7 @@ theorem hasCountableNetwork_of_secondCountable (X : Type*) [TopologicalSpace X]
   intro U hU x hx
   exact h𝒩_basis.exists_subset_of_mem_open hx hU
 
-/-- A topological space is countably monolithic (ω-monolithic) if the closure
+/-- **Countably monolithic space.** A topological space is countably monolithic (ω-monolithic) if the closure
 of every countable subspace has a countable network. -/
 class CountablyMonolithicSpace (X : Type*) [TopologicalSpace X] : Prop where
   hasCountableNetwork_closure_of_countable :

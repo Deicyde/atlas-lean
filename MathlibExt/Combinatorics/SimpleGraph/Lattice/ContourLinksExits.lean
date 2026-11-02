@@ -52,7 +52,7 @@ open StatMech.Percolation (origin)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- The boundary dart of the origin cluster across the exit edge on the positive horizontal axis. -/
+/-- **Exit dart on the positive horizontal axis.** The boundary dart of the origin cluster across the exit edge on the positive horizontal axis. -/
 noncomputable def exitDart (hfin : (cluster 2 ω (origin 2)).Finite) : Dart where
   tail := axisSite (exitIndex (ω := ω) hfin)
   head := axisSite (exitIndex (ω := ω) hfin + 1)
@@ -73,7 +73,7 @@ theorem exitDart_dir (hfin : (cluster 2 ω (origin 2)).Finite) :
   rw [Dart.dir_def, exitDart_head, exitDart_tail]
   funext i; fin_cases i <;> simp [axisSite]
 
-/-- The boundary dart of the origin cluster across the exit edge on the negative horizontal axis. -/
+/-- **Exit dart on the negative horizontal axis.** The boundary dart of the origin cluster across the exit edge on the negative horizontal axis. -/
 noncomputable def leftExitDart (hfin : (cluster 2 ω (origin 2)).Finite) : Dart where
   tail := leftAxisSite (leftExitIndex (ω := ω) hfin)
   head := leftAxisSite (leftExitIndex (ω := ω) hfin + 1)
@@ -113,10 +113,10 @@ theorem dartDir_cases (e : Dart) :
   · exact Or.inr (Or.inr (Or.inl rfl))
   · exact Or.inr (Or.inr (Or.inr rfl))
 
-/-- The negative part `min z 0` of an integer. -/
+/-- **Negative part of an integer.** The negative part `min z 0` of an integer. -/
 noncomputable def negPart (z : ℤ) : ℤ := if z < 0 then z else 0
 
-/-- The unit face to the left of the dart `e`, labelled by its lower left corner. -/
+/-- **Unit face to the left of a dart.** The unit face to the left of the dart `e`, labelled by its lower left corner. -/
 noncomputable def dartFace (e : Dart) : Site 2 :=
   ![ e.tail 0 + negPart (e.dir 0) + negPart (rot90Fun e.dir 0),
      e.tail 1 + negPart (e.dir 1) + negPart (rot90Fun e.dir 1) ]
@@ -335,7 +335,7 @@ theorem dartFace_reachable_of_orbit (K : Set (Site 2)) (e f : Dart) (he : IsBoun
     (faceBoundaryGraph K).Reachable (dartFace e) (dartFace f) := by
   rw [← hf]; exact dartFace_iterate_reachable K e he n
 
-/-- The left exit dart lies in the boundary orbit of the right exit dart. -/
+/-- **Left and right exit darts lie in the same boundary orbit.** The left exit dart lies in the boundary orbit of the right exit dart. -/
 def ExitDartsSameOrbit (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
   ∃ n : ℕ, (dartNext (cluster 2 ω (origin 2)))^[n] (exitDart (ω := ω) hfin)
@@ -351,7 +351,7 @@ theorem exitFaces_reachable_of_sameOrbit (hfin : (cluster 2 ω (origin 2)).Finit
     (exitDart_isBoundaryDart (ω := ω) hfin) hn
   rwa [dartFace_exitDart (ω := ω) hfin, dartFace_leftExitDart (ω := ω) hfin] at hr
 
-/-- `p_c(ℤ²) < 1`, under the hypothesis that `EnclosingContourLinksExits` holds for every
+/-- **$p_c(\mathbb{Z}^2) < 1$ via exit dart orbits, assuming linked exits.** `p_c(ℤ²) < 1`, under the hypothesis that `EnclosingContourLinksExits` holds for every
 configuration with a finite origin cluster. The hypothesis is not proved here. -/
 theorem pc_lt_one_via_dartOrbit
     (h : ∀ (ω : ConfigSpace (Sym2 (Site 2))) (hfin : (cluster 2 ω (origin 2)).Finite),

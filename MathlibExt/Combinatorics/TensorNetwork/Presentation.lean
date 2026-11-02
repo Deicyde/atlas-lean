@@ -70,7 +70,7 @@ private theorem sum_renamed [DecidableEq A] (labels D : Finset A) (dec : A → �
 
 namespace Factored
 
-/-- Turn a factored network into a complete-graph tensor instance.
+/-- **Complete-graph instance of a factored network.** Turn a factored network into a complete-graph tensor instance.
 
 The finite set `D a b` names the source labels on the edge `{a, b}` through `dec a b`.
 Labels outside `D a b` make the corresponding directed factor zero. -/
@@ -82,7 +82,7 @@ def toInstance [Fintype J] [LinearOrder J] [DecidableEq A] (N : Factored J σ τ
         N.f a b z (dec (min a b) (max a b) (θ b))
       else 0
 
-/-- Naming every source edge alphabet bijectively inside `labels` preserves network value. -/
+/-- **Converting a factored network to an instance preserves value.** Naming every source edge alphabet bijectively inside `labels` preserves network value. -/
 theorem value_toInstance [Fintype J] [LinearOrder J] [DecidableEq A]
     (N : Factored J σ τ) (labels : Finset A) (default : A)
     (D : J → J → Finset A) (dec : J → J → A → τ)
@@ -132,7 +132,7 @@ end Factored
 
 namespace Instance
 
-/-- Present an instance as a half-edge network.
+/-- **Half-edge factored presentation of a tensor instance.** Present an instance as a half-edge network.
 
 A state at `v` chooses one label for every off-diagonal half-edge from `v`; the two sides of
 each edge are constrained to agree. The capacities are zero because this construction makes no
@@ -146,7 +146,7 @@ def toFactored [Fintype J] [DecidableEq J] [DecidableEq A]
   f _ w z θ := if z w = θ then 1 else 0
   c _ _ := 0
 
-/-- The half-edge presentation of an instance has the same value. -/
+/-- **Half-edge presentation preserves instance value.** The half-edge presentation of an instance has the same value. -/
 theorem value_toFactored [Fintype J] [LinearOrder J] [DecidableEq A]
     (R : Instance J A) (labels : Finset A) (default : A) :
     R.value labels default = (R.toFactored labels default).value := by
@@ -204,7 +204,7 @@ theorem value_toFactored [Fintype J] [LinearOrder J] [DecidableEq A]
       exact ((mem_edgeLabelings labels default labeling).mp hlabeling
         (pairIndex v v)).2 (by simp [pairIndex])
 
-/-- Expand an instance value as a sum over directed half-edge vectors with equality factors. -/
+/-- **Instance value as a sum over half-edge vectors.** Expand an instance value as a sum over directed half-edge vectors with equality factors. -/
 theorem value_eq_halfEdges [Fintype J] [LinearOrder J] [DecidableEq A]
     (R : Instance J A) (labels : Finset A) (default : A) :
     R.value labels default =

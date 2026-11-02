@@ -352,20 +352,20 @@ theorem ramanujan_part1_ch7_entry9_bernoulligrowth
 
 end
 
-/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7Admissible`.
+/-- **Admissibility alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7Admissible`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible` directly. -/
 abbrev chapter7Admissible (x : ℂ) : Prop :=
   MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible x
 
-/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`.
+/-- **Power difference term alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`
 directly. -/
 noncomputable abbrev chapter7PowerDifferenceTerm (r x : ℂ) (j : ℕ) : ℂ :=
   MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm r x j
 
-/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
+/-- **Power difference sum alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`
 directly. -/

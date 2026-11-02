@@ -99,7 +99,7 @@ namespace ProbabilityTheory
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- The **jump matrix** `Π` of a matrix `Q` (Norris 1997, §2.6): for a state with exit rate
+/-- **Jump matrix of a rate matrix.** The **jump matrix** `Π` of a matrix `Q` (Norris 1997, §2.6): for a state with exit rate
 `q i = -Q i i ≠ 0`, `Π i j = Q i j / q i` for `j ≠ i` and `Π i i = 0`; a state with `q i = 0`
 is absorbing, `Π i j = δ i j`. -/
 noncomputable def ctmcJumpMatrix (Q : Matrix ι ι ℝ) : Matrix ι ι ℝ := fun i j =>
@@ -109,7 +109,7 @@ namespace IsRateMatrix
 
 variable {Q : Matrix ι ι ℝ}
 
-/-- The entries of the jump matrix of a rate matrix are nonnegative. -/
+/-- **Nonnegativity of the jump matrix.** The entries of the jump matrix of a rate matrix are nonnegative. -/
 theorem ctmcJumpMatrix_nonneg (hQ : IsRateMatrix Q) (i j : ι) : 0 ≤ ctmcJumpMatrix Q i j := by
   unfold ctmcJumpMatrix
   have hq : 0 ≤ -Q i i := neg_nonneg.mpr (hQ.diag_nonpos i)
@@ -119,7 +119,7 @@ theorem ctmcJumpMatrix_nonneg (hQ : IsRateMatrix Q) (i j : ι) : 0 ≤ ctmcJumpM
   · norm_num
   · exact div_nonneg (hQ.nonneg_of_ne hij) hq
 
-/-- The rows of the jump matrix of a rate matrix sum to `1`. -/
+/-- **Rows of the jump matrix sum to one.** The rows of the jump matrix of a rate matrix sum to `1`. -/
 theorem sum_ctmcJumpMatrix (hQ : IsRateMatrix Q) (i : ι) : ∑ j, ctmcJumpMatrix Q i j = 1 := by
   by_cases h0 : Q i i = 0
   · simp [ctmcJumpMatrix, h0]
@@ -131,12 +131,12 @@ theorem sum_ctmcJumpMatrix (hQ : IsRateMatrix Q) (i : ι) : ∑ j, ctmcJumpMatri
     rw [← add_sum_erase _ _ (mem_univ i), hs, ← sum_div, hii, zero_add, div_eq_one_iff_eq hne]
     linarith
 
-/-- The jump matrix of a rate matrix is row-stochastic. -/
+/-- **Jump matrix is row-stochastic.** The jump matrix of a rate matrix is row-stochastic. -/
 theorem ctmcJumpMatrix_mem_rowStochastic (hQ : IsRateMatrix Q) :
     ctmcJumpMatrix Q ∈ Matrix.rowStochastic ℝ ι :=
   Matrix.mem_rowStochastic_iff_sum.mpr ⟨hQ.ctmcJumpMatrix_nonneg, hQ.sum_ctmcJumpMatrix⟩
 
-/-- Row `i` of the jump matrix of a rate matrix, as a probability mass function on `ι`. -/
+/-- **Row of the jump matrix as a probability mass function.** Row `i` of the jump matrix of a rate matrix, as a probability mass function on `ι`. -/
 noncomputable def ctmcJumpPMF (hQ : IsRateMatrix Q) (i : ι) : PMF ι :=
   PMF.ofFintype (fun j => ENNReal.ofReal (ctmcJumpMatrix Q i j)) (by
     rw [← ENNReal.ofReal_sum_of_nonneg fun j _ => hQ.ctmcJumpMatrix_nonneg i j,
@@ -148,7 +148,7 @@ section Measure
 
 variable [MeasurableSpace ι] [DiscreteMeasurableSpace ι] {Q : Matrix ι ι ℝ}
 
-/-- The law of one step `(ξ, E)` of the construction: `ξ : ι → ι` has independent coordinates
+/-- **Law of one step of the chain construction.** The law of one step `(ξ, E)` of the construction: `ξ : ι → ι` has independent coordinates
 with `ξ i ∼ Π i`, and `E` is an independent exponential clock of rate `1`. -/
 noncomputable def ctmcStepMeasure (hQ : IsRateMatrix Q) : Measure ((ι → ι) × ℝ) :=
   (Measure.pi fun i => (hQ.ctmcJumpPMF i).toMeasure).prod (expMeasure 1)
@@ -159,7 +159,7 @@ instance (hQ : IsRateMatrix Q) : IsProbabilityMeasure (ctmcStepMeasure hQ) := by
   unfold ctmcStepMeasure
   infer_instance
 
-/-- The law of the i.i.d. step sequence `ω : ℕ → (ι → ι) × ℝ` driving the chain. -/
+/-- **Law of the driving step sequence of a Markov chain.** The law of the i.i.d. step sequence `ω : ℕ → (ι → ι) × ℝ` driving the chain. -/
 noncomputable def ctmcInputMeasure (hQ : IsRateMatrix Q) : Measure (ℕ → (ι → ι) × ℝ) :=
   Measure.infinitePi fun _ => ctmcStepMeasure hQ
 
@@ -174,25 +174,25 @@ section Path
 
 variable {ι : Type*} {Q : Matrix ι ι ℝ}
 
-/-- The **jump chain** started at `i`: `Y 0 = i` and `Y (n + 1) = ξ n (Y n)`. -/
+/-- **Jump chain of a continuous-time Markov chain.** The **jump chain** started at `i`: `Y 0 = i` and `Y (n + 1) = ξ n (Y n)`. -/
 def ctmcJumpChain (i : ι) (ω : ℕ → (ι → ι) × ℝ) : ℕ → ι
   | 0 => i
   | n + 1 => (ω n).1 (ctmcJumpChain i ω n)
 
-/-- The `n`-th **holding time** `S n = E n / q (Y n)`, where `q k = -Q k k`; it is `∞` when
+/-- **Holding times of a continuous-time Markov chain.** The `n`-th **holding time** `S n = E n / q (Y n)`, where `q k = -Q k k`; it is `∞` when
 `Y n` is absorbing (`q (Y n) = 0`). Negative clock values, a null event, give `S n = 0`. -/
 noncomputable def ctmcHoldingTime (Q : Matrix ι ι ℝ) (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n : ℕ) :
     ℝ≥0∞ :=
   if Q (ctmcJumpChain i ω n) (ctmcJumpChain i ω n) = 0 then ∞
   else ENNReal.ofReal ((ω n).2 / -Q (ctmcJumpChain i ω n) (ctmcJumpChain i ω n))
 
-/-- The `n`-th **jump time** `T n = S 0 + ⋯ + S (n - 1)`, with `T 0 = 0`. -/
+/-- **Jump times of a continuous-time Markov chain.** The `n`-th **jump time** `T n = S 0 + ⋯ + S (n - 1)`, with `T 0 = 0`. -/
 noncomputable def ctmcJumpTime (Q : Matrix ι ι ℝ) (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n : ℕ) :
     ℝ≥0∞ :=
   ∑ k ∈ range n, ctmcHoldingTime Q i ω k
 
 open scoped Classical in
-/-- The **path** of the chain started at `i`: `X t = Y n` for the `n` with
+/-- **Path of a continuous-time Markov chain.** The **path** of the chain started at `i`: `X t = Y n` for the `n` with
 `T n ≤ t < T (n + 1)`. If `t` is at or after the explosion time `sup T n` (a null event, by
 `IsRateMatrix.ae_tendsto_ctmcJumpTime`), the value is an arbitrary state that does not depend
 on `i`, `Q` or `ω`. -/
@@ -201,15 +201,15 @@ noncomputable def ctmcPath (Q : Matrix ι ι ℝ) (i : ι) (ω : ℕ → (ι →
   if h : ∃ n, (t : ℝ≥0∞) < ctmcJumpTime Q i ω (n + 1) then ctmcJumpChain i ω (Nat.find h)
   else Classical.ofNonempty
 
-/-- The shift of the step sequence by `n`: `(shift n ω) m = ω (n + m)`. -/
+/-- **Shift of the step sequence of a Markov chain.** The shift of the step sequence by `n`: `(shift n ω) m = ω (n + m)`. -/
 def ctmcShift (n : ℕ) (ω : ℕ → (ι → ι) × ℝ) : ℕ → (ι → ι) × ℝ := fun m => ω (n + m)
 
-/-- The jump times are nondecreasing. -/
+/-- **Jump times are nondecreasing.** The jump times are nondecreasing. -/
 theorem ctmcJumpTime_mono (i : ι) (ω : ℕ → (ι → ι) × ℝ) : Monotone (ctmcJumpTime Q i ω) := by
   intro m n hmn
   exact sum_le_sum_of_subset (range_mono hmn)
 
-/-- If `T n ≤ t < T (n + 1)`, then `X t = Y n`. -/
+/-- **Path value between consecutive jump times.** If `T n ≤ t < T (n + 1)`, then `X t = Y n`. -/
 theorem ctmcPath_eq_of_mem (i : ι) (ω : ℕ → (ι → ι) × ℝ) {t : ℝ≥0} {n : ℕ}
     (h₁ : ctmcJumpTime Q i ω n ≤ t) (h₂ : (t : ℝ≥0∞) < ctmcJumpTime Q i ω (n + 1)) :
     ctmcPath Q i ω t = ctmcJumpChain i ω n := by
@@ -222,27 +222,27 @@ theorem ctmcPath_eq_of_mem (i : ι) (ω : ℕ → (ι → ι) × ℝ) {t : ℝ�
   have hmono := ctmcJumpTime_mono (Q := Q) i ω (Nat.succ_le_of_lt hlt)
   exact absurd (lt_of_lt_of_le this hmono) (not_lt.mpr h₁)
 
-/-- The jump chain of the shifted steps started at `Y n` is the jump chain after `n`. -/
+/-- **Jump chain of the shifted steps.** The jump chain of the shifted steps started at `Y n` is the jump chain after `n`. -/
 theorem ctmcJumpChain_shift (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n m : ℕ) :
     ctmcJumpChain (ctmcJumpChain i ω n) (ctmcShift n ω) m = ctmcJumpChain i ω (n + m) := by
   induction m with
   | zero => rfl
   | succ m ih => simp [ctmcJumpChain, ih, ctmcShift]
 
-/-- The holding times of the shifted steps started at `Y n` are the holding times after `n`. -/
+/-- **Holding times of the shifted steps.** The holding times of the shifted steps started at `Y n` are the holding times after `n`. -/
 theorem ctmcHoldingTime_shift (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n m : ℕ) :
     ctmcHoldingTime Q (ctmcJumpChain i ω n) (ctmcShift n ω) m =
       ctmcHoldingTime Q i ω (n + m) := by
   simp only [ctmcHoldingTime, ctmcJumpChain_shift, ctmcShift]
 
-/-- `T (n + m) = T n + T' m`, where `T'` are the jump times of the shifted steps started at
+/-- **Additivity of jump times under shifting.** `T (n + m) = T n + T' m`, where `T'` are the jump times of the shifted steps started at
 `Y n`. -/
 theorem ctmcJumpTime_add (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n m : ℕ) :
     ctmcJumpTime Q i ω (n + m) =
       ctmcJumpTime Q i ω n + ctmcJumpTime Q (ctmcJumpChain i ω n) (ctmcShift n ω) m := by
   simp only [ctmcJumpTime, sum_range_add, ctmcHoldingTime_shift]
 
-/-- After a finite jump time `T n`, the path is the path started at `Y n` driven by the
+/-- **Path restarts at a jump time.** After a finite jump time `T n`, the path is the path started at `Y n` driven by the
 shifted steps: `X (T n + s) = X' s` with `X'` built from `shift n ω` started at `Y n`. -/
 theorem ctmcPath_jumpTime_add (i : ι) (ω : ℕ → (ι → ι) × ℝ) (n : ℕ)
     (hn : ctmcJumpTime Q i ω n ≠ ∞) (s : ℝ≥0) :
@@ -380,7 +380,7 @@ section Measurable
 
 variable [Finite ι] [MeasurableSpace ι] [DiscreteMeasurableSpace ι]
 
-/-- The jump chain `Y n` is a measurable function of the steps. -/
+/-- **Measurability of the jump chain.** The jump chain `Y n` is a measurable function of the steps. -/
 theorem measurable_ctmcJumpChain (i : ι) (n : ℕ) :
     Measurable fun ω => ctmcJumpChain i ω n := by
   induction n with
@@ -389,7 +389,7 @@ theorem measurable_ctmcJumpChain (i : ι) (n : ℕ) :
     have he : Measurable fun p : (ι → ι) × ι => p.1 p.2 := Measurable.of_discrete
     exact he.comp (((measurable_pi_apply n).fst).prodMk ih)
 
-/-- The holding time `S n` is a measurable function of the steps. -/
+/-- **Measurability of the holding times.** The holding time `S n` is a measurable function of the steps. -/
 theorem measurable_ctmcHoldingTime (i : ι) (n : ℕ) :
     Measurable fun ω => ctmcHoldingTime Q i ω n := by
   have hY := measurable_ctmcJumpChain i n
@@ -399,12 +399,12 @@ theorem measurable_ctmcHoldingTime (i : ι) (n : ℕ) :
     (ENNReal.measurable_ofReal.comp (((measurable_pi_apply n).snd).div hq))
   exact hY (DiscreteMeasurableSpace.forall_measurableSet {k : ι | Q k k = 0})
 
-/-- The jump time `T n` is a measurable function of the steps. -/
+/-- **Measurability of the jump times.** The jump time `T n` is a measurable function of the steps. -/
 theorem measurable_ctmcJumpTime (i : ι) (n : ℕ) :
     Measurable fun ω => ctmcJumpTime Q i ω n :=
   Finset.measurable_sum _ fun k _ => measurable_ctmcHoldingTime i k
 
-/-- The path `(t, ω) ↦ X t` is jointly measurable in the time and the steps. -/
+/-- **Joint measurability of the chain path in time and steps.** The path `(t, ω) ↦ X t` is jointly measurable in the time and the steps. -/
 theorem measurable_ctmcPath_uncurry (i : ι) :
     Measurable fun p : ℝ≥0 × (ℕ → (ι → ι) × ℝ) => ctmcPath Q i p.2 p.1 := by
   classical
@@ -448,7 +448,7 @@ theorem measurable_ctmcPath_uncurry (i : ι) :
     simp only [Set.ofPred_forall]
     exact MeasurableSet.iInter fun n => (measurableSet_lt ht (hT (n + 1))).compl
 
-/-- The state `X t` is a measurable function of the steps. -/
+/-- **Measurability of the chain state at a fixed time.** The state `X t` is a measurable function of the steps. -/
 theorem measurable_ctmcPath (i : ι) (t : ℝ≥0) : Measurable fun ω => ctmcPath Q i ω t :=
   (measurable_ctmcPath_uncurry i).comp (measurable_const.prodMk measurable_id)
 

@@ -58,7 +58,7 @@ namespace Flow
 
 variable {X : Type*} [TopologicalSpace X]
 
-/-- The ω-limit set of a point under a semiflow is contained in every closed set that contains
+/-- **Omega-limit set lies in every closed set containing the orbit.** The ω-limit set of a point under a semiflow is contained in every closed set that contains
 the forward orbit. -/
 theorem omegaLimit_singleton_subset_of_isClosed (ϕ : Flow ℝ≥0 X) {x : X} {K : Set X}
     (hK : IsClosed K) (hxK : ∀ t, ϕ t x ∈ K) : ω⁺ ϕ {x} ⊆ K := by

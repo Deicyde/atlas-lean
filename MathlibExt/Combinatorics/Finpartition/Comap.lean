@@ -41,7 +41,7 @@ namespace Finpartition
 variable {α β γ : Type*} [Fintype α] [DecidableEq α] [Fintype β] [DecidableEq β]
   [Fintype γ] [DecidableEq γ]
 
-/-- The pull-back of a partition `P` of the finite type `β` along a map `f : α → β`:
+/-- **Pull-back of a finite partition along a map.** The pull-back of a partition `P` of the finite type `β` along a map `f : α → β`:
 the blocks are the nonempty preimages `f ⁻¹' B` of the blocks `B` of `P`. -/
 def comap (f : α → β) (P : Finpartition (univ : Finset β)) : Finpartition (univ : Finset α) :=
   ofExistsUnique ((P.parts.image fun B ↦ univ.filter fun a ↦ f a ∈ B).erase ∅)
@@ -56,13 +56,13 @@ def comap (f : α → β) (P : Finpartition (univ : Finset β)) : Finpartition (
         rw [this])
     (by simp)
 
-/-- The blocks of `P.comap f` are the nonempty preimages of the blocks of `P`. -/
+/-- **Blocks of a pulled-back partition.** The blocks of `P.comap f` are the nonempty preimages of the blocks of `P`. -/
 theorem mem_comap_parts {f : α → β} {P : Finpartition (univ : Finset β)} {C : Finset α} :
     C ∈ (P.comap f).parts ↔
       C.Nonempty ∧ ∃ B ∈ P.parts, (univ.filter fun a ↦ f a ∈ B) = C := by
   simp [comap, nonempty_iff_ne_empty]
 
-/-- Pulling back along the identity does nothing. -/
+/-- **Pulling back a partition along the identity.** Pulling back along the identity does nothing. -/
 @[simp]
 theorem comap_refl (P : Finpartition (univ : Finset α)) :
     P.comap id = P := by
@@ -74,7 +74,7 @@ theorem comap_refl (P : Finpartition (univ : Finset α)) :
   · intro hC
     exact ⟨P.nonempty_of_mem_parts hC, C, hC, rfl⟩
 
-/-- Pulling back along a composite is pulling back twice. -/
+/-- **Pulling back a partition along a composite.** Pulling back along a composite is pulling back twice. -/
 theorem comap_comap (f : α → β) (g : β → γ) (P : Finpartition (univ : Finset γ)) :
     (P.comap g).comap f = P.comap (g ∘ f) := by
   ext C
@@ -88,7 +88,7 @@ theorem comap_comap (f : α → β) (g : β → γ) (P : Finpartition (univ : Fi
     ext
     simp
 
-/-- Along an equivalence `e`, the blocks of `P.comap e` are the images of the blocks of `P`
+/-- **Blocks of a partition pulled back along an equivalence.** Along an equivalence `e`, the blocks of `P.comap e` are the images of the blocks of `P`
 under `e.symm`. -/
 theorem parts_comap_equiv (e : α ≃ β) (P : Finpartition (univ : Finset β)) :
     (P.comap e).parts = P.parts.map (mapEmbedding e.symm.toEmbedding).toEmbedding := by
@@ -104,18 +104,18 @@ theorem parts_comap_equiv (e : α ≃ β) (P : Finpartition (univ : Finset β)) 
   · rintro ⟨B, hB, rfl⟩
     exact ⟨(P.nonempty_of_mem_parts hB).map, B, hB, rfl⟩
 
-/-- Pulling back along an equivalence preserves the number of blocks. -/
+/-- **Pull-back along an equivalence preserves the number of blocks.** Pulling back along an equivalence preserves the number of blocks. -/
 theorem card_parts_comap_equiv (e : α ≃ β) (P : Finpartition (univ : Finset β)) :
     #(P.comap e).parts = #P.parts := by
   rw [parts_comap_equiv, card_map]
 
-/-- Pulling back along an equivalence preserves every product over the block sizes. -/
+/-- **Pull-back along an equivalence preserves block-size products.** Pulling back along an equivalence preserves every product over the block sizes. -/
 theorem cardProd_comap_equiv {R : Type*} [CommMonoid R] (e : α ≃ β)
     (P : Finpartition (univ : Finset β)) (g : ℕ → R) :
     (P.comap e).cardProd g = P.cardProd g := by
   simp [cardProd, parts_comap_equiv]
 
-/-- Pulling back along `e` and then along `e.symm` gives back the partition. -/
+/-- **Pulling back along an equivalence and its inverse.** Pulling back along `e` and then along `e.symm` gives back the partition. -/
 @[simp]
 theorem comap_symm_comap (e : α ≃ β) (P : Finpartition (univ : Finset β)) :
     (P.comap e).comap e.symm = P := by

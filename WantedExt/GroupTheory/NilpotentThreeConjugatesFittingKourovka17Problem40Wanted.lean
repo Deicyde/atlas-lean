@@ -34,7 +34,7 @@ normal subgroup); `N^x` is the image of `N` under conjugation by `x` (the direct
 `x` ranges over `G`).
 -/
 
-/-- The Fitting subgroup `F(G)`: the join of the nilpotent normal subgroups of `G` (for finite `G`
+/-- **Fitting subgroup.** The Fitting subgroup `F(G)`: the join of the nilpotent normal subgroups of `G` (for finite `G`
 the largest nilpotent normal subgroup). -/
 def fittingSubgroup (G : Type*) [Group G] : Subgroup G :=
   ⨆ (N : Subgroup G) (_ : N.Normal) (_ : Group.IsNilpotent N), N

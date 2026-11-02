@@ -401,7 +401,7 @@ theorem satDec_eq_cliqueDec_reduceClique (x : List Bool) :
     simp [cliqueBits]
   next h => rw [DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none h, cliqueDec_noKG]
 
-/-- Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`). -/
+/-- **SAT decision on undecodable input (moved alias).** Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`). -/
 @[deprecated DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none (since := "2026-10-15")]
 theorem satDec_of_decodeCNF_eq_none {x : List Bool} (h : decodeCNF x = none) :
     satDec x = false :=

@@ -115,13 +115,13 @@ theorem lattice_lastExit (ω : ConfigSpace (Sym2 (Site d))) (K : Set (Site d)) (
   obtain ⟨x, y, hx, hy, hadj, ⟨w⟩⟩ := exists_lastExit p K ho hv
   exact ⟨x, y, hx, hy, hadj, ⟨w⟩⟩
 
-/-- `y ∉ C` is joined by an open path avoiding `C` to a site outside `Λ_{n-1}`. -/
+/-- **Crossing to the box exterior that avoids a cluster.** `y ∉ C` is joined by an open path avoiding `C` to a site outside `Λ_{n-1}`. -/
 def offClusterCrossing (d : ℕ) (C : Set (Site d)) (y : Site d) (n : ℕ)
     (ω : ConfigSpace (Sym2 (Site d))) : Prop :=
   ∃ v, v ∉ box d (n - 1) ∧ ∃ (hy : y ∉ C) (hv : v ∉ C),
     ConnectedWithin d ω {z | z ∉ C} ⟨y, hy⟩ ⟨v, hv⟩
 
-/-- The edge `{x, y}` is open, with `x ∈ C` and `y ∉ C`. -/
+/-- **Open boundary edge of a cluster.** The edge `{x, y}` is open, with `x ∈ C` and `y ∉ C`. -/
 def boundaryOpen (d : ℕ) (C : Set (Site d)) (x y : Site d)
     (ω : ConfigSpace (Sym2 (Site d))) : Prop :=
   x ∈ C ∧ y ∉ C ∧ IsOpenEdge d ω x y

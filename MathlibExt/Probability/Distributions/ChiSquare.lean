@@ -238,7 +238,7 @@ theorem gaussianReal_map_sq :
   rw [← complexMGF_id_mul_I, ← complexMGF_id_mul_I]
   exact heq (by simp [hS])
 
-/-- Chi-square MGFs multiply by adding degrees, below `1/2`. Requires a
+/-- **Chi-square moment generating functions multiply by adding degrees.** Chi-square MGFs multiply by adding degrees, below `1/2`. Requires a
 nonempty index set so the summed degree stays positive. -/
 theorem prod_mgf_chiSquareMeasure_eq_mgf_sum {ι : Type*} {s : Finset ι}
     {p : ι → ℕ} (hs : s.Nonempty) (hp : ∀ i ∈ s, 0 < p i) {t : ℝ}

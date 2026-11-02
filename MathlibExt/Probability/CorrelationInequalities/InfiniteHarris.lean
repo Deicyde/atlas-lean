@@ -53,7 +53,7 @@ namespace StatMech
 variable {E : Type*} [Countable E] [DecidableEq E]
 
 omit [Countable E] [DecidableEq E] in
-/-- If the indicator of `A` depends only on the coordinates in `S` (Mathlib's `DependsOn`), so
+/-- **An event depends on the coordinates its indicator depends on.** If the indicator of `A` depends only on the coordinates in `S` (Mathlib's `DependsOn`), so
 does the event `A` (`StatMech.DependsOn`). -/
 theorem ih_event_dependsOn_of_indicator {A : Set (ConfigSpace E)} {S : Set E}
     (h : _root_.DependsOn (A.indicator (fun _ => (1 : ℝ))) S) :
@@ -71,7 +71,7 @@ theorem ih_event_dependsOn_of_indicator {A : Set (ConfigSpace E)} {S : Set E}
     norm_num at hi
 
 omit [Countable E] [DecidableEq E] in
-/-- If the event `A` depends only on `S`, so does its indicator function. -/
+/-- **Indicator of an event depends on the coordinates the event depends on.** If the event `A` depends only on `S`, so does its indicator function. -/
 theorem ih_indicator_dependsOn_of_event {A : Set (ConfigSpace E)} {S : Set E}
     (h : StatMech.DependsOn A S) :
     _root_.DependsOn (A.indicator (fun _ => (1 : ℝ))) S := by
@@ -83,7 +83,7 @@ theorem ih_indicator_dependsOn_of_event {A : Set (ConfigSpace E)} {S : Set E}
       Set.indicator_of_notMem (fun hw' => hw (hiff.mpr hw'))]
 
 omit [Countable E] [DecidableEq E] in
-/-- Events depending only on `S` are closed under intersection. -/
+/-- **Events depending on a coordinate set are closed under intersection.** Events depending only on `S` are closed under intersection. -/
 theorem ih_dependsOn_inter {A B : Set (ConfigSpace E)} {S : Set E}
     (hA : StatMech.DependsOn A S) (hB : StatMech.DependsOn B S) :
     StatMech.DependsOn (A ∩ B) S := by
@@ -91,7 +91,7 @@ theorem ih_dependsOn_inter {A B : Set (ConfigSpace E)} {S : Set E}
   simp only [Set.mem_inter_iff, hA omega omega' hagree, hB omega omega' hagree]
 
 omit [Countable E] [DecidableEq E] in
-/-- Events depending only on `S` are closed under arbitrary unions. -/
+/-- **Events depending on a coordinate set are closed under unions.** Events depending only on `S` are closed under arbitrary unions. -/
 theorem ih_dependsOn_iUnion {ι : Sort*} {S : Set E} {A : ι → Set (ConfigSpace E)}
     (hA : ∀ i, StatMech.DependsOn (A i) S) :
     StatMech.DependsOn (⋃ i, A i) S := by
@@ -99,12 +99,12 @@ theorem ih_dependsOn_iUnion {ι : Sort*} {S : Set E} {A : ι → Set (ConfigSpac
   simp only [Set.mem_iUnion]
   exact exists_congr (fun i => hA i omega omega' hagree)
 
-/-- The configuration on `E` equal to `η` on the finite set `F` and closed (`false`) off `F`. -/
+/-- **Filling a finite configuration with closed coordinates.** The configuration on `E` equal to `η` on the finite set `F` and closed (`false`) off `F`. -/
 def ih_fill (F : Finset E) (eta : ConfigSpace F) : ConfigSpace E :=
   fun e => if h : e ∈ F then eta ⟨e, h⟩ else false
 
 omit [Countable E] in
-/-- `ih_fill F` is monotone. -/
+/-- **Monotonicity of the closed filling map.** `ih_fill F` is monotone. -/
 theorem ih_fill_mono (F : Finset E) : Monotone (ih_fill F) := by
   intro eta eta' h e
   simp only [ih_fill]
@@ -112,19 +112,19 @@ theorem ih_fill_mono (F : Finset E) : Monotone (ih_fill F) := by
   · exact h _
   · exact le_rfl
 
-/-- The section of an event `A` on `F`: the configurations `η` on `F` with `ih_fill F η ∈ A`. -/
+/-- **Section of an event on a finite coordinate set.** The section of an event `A` on `F`: the configurations `η` on `F` with `ih_fill F η ∈ A`. -/
 def ih_section (A : Set (ConfigSpace E)) (F : Finset E) : Set (ConfigSpace F) :=
   {eta | ih_fill F eta ∈ A}
 
 omit [Countable E] in
-/-- The section of an increasing event is increasing. -/
+/-- **Section of an increasing event is increasing.** The section of an increasing event is increasing. -/
 theorem ih_section_isIncreasing {A : Set (ConfigSpace E)} (hA : IsIncreasing A)
     (F : Finset E) : IsIncreasing (ih_section A F) := by
   intro eta eta' h hmem
   exact hA (ih_fill_mono F h) hmem
 
 omit [Countable E] in
-/-- An event depending only on the coordinates in `F` is the cylinder over its section on `F`. -/
+/-- **Finitely dependent event is a cylinder over its section.** An event depending only on the coordinates in `F` is the cylinder over its section on `F`. -/
 theorem ih_eq_cylinder_of_dependsOn {A : Set (ConfigSpace E)} (F : Finset E)
     (hA : DependsOn A (F : Set E)) :
     A = MeasureTheory.cylinder F (ih_section A F) := by
@@ -137,7 +137,7 @@ theorem ih_eq_cylinder_of_dependsOn {A : Set (ConfigSpace E)} (F : Finset E)
     rfl)
 
 omit [DecidableEq E] in
-/-- The **Harris inequality** on a countable configuration space for increasing events that
+/-- **Harris inequality for finitely dependent increasing events.** The **Harris inequality** on a countable configuration space for increasing events that
 depend on finitely many coordinates: `P_p(A) * P_p(B) ≤ P_p(A ∩ B)`. -/
 theorem ih_harris_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
     {A B : Set (ConfigSpace E)} (F : Finset E)
@@ -165,7 +165,7 @@ theorem ih_harris_of_finite_dependsOn {p : ℝ≥0} (hp : p ≤ 1)
     (ih_section_isIncreasing hBinc F)
 
 omit [Countable E] [DecidableEq E] in
-/-- Positive correlation passes to limits of decreasing sequences of measurable events: if
+/-- **Positive correlation passes to decreasing intersections.** Positive correlation passes to limits of decreasing sequences of measurable events: if
 `μ(A n) μ(B n) ≤ μ(A n ∩ B n)` for all `n`, the same holds for `⋂ n, A n` and `⋂ n, B n`. -/
 theorem ih_harris_iInter_of_antitone
     (mu : Measure (ConfigSpace E)) [IsProbabilityMeasure mu]
@@ -196,7 +196,7 @@ theorem ih_harris_iInter_of_antitone
   rw [iInter_inter_distrib] at hlim
   exact hlim
 
-/-- Continuity from above of a finite measure, real-valued form: `μ.real (A n)` tends to
+/-- **Continuity from above of a finite measure, real-valued form.** Continuity from above of a finite measure, real-valued form: `μ.real (A n)` tends to
 `μ.real (⋂ n, A n)` for a decreasing sequence of measurable sets. -/
 theorem ih_tendsto_measureReal_iInter {Ω : Type*} [MeasurableSpace Ω]
     (mu : Measure Ω) [IsFiniteMeasure mu]

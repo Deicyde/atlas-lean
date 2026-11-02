@@ -95,41 +95,41 @@ namespace MathlibExt.Biology.PopulationGenetics.ADMIXTOOLS
 
 section Patterns
 
-/-- Probability of the derived/ancestral configuration `x` when haplotype `i` is sampled
+/-- **Probability of a derived-allele configuration.** Probability of the derived/ancestral configuration `x` when haplotype `i` is sampled
 independently and carries the derived allele with probability `q i`. -/
 def configProb {n : ℕ} (q : Fin n → ℝ) (x : Fin n → Bool) : ℝ :=
   ∏ i, if x i then q i else 1 - q i
 
-/-- Expectation of a function `g` of the configuration under independent sampling of one
+/-- **Expectation under independent haplotype sampling.** Expectation of a function `g` of the configuration under independent sampling of one
 haplotype per population at derived-allele frequencies `q`. -/
 def sampleExpect {n : ℕ} (g : (Fin n → Bool) → ℝ) (q : Fin n → ℝ) : ℝ :=
   ∑ x, g x * configProb q x
 
-/-- Unpolarized `ABBA` indicator for populations `(P1, P2, P3, O)`: `P1` agrees with `O`, `P2`
+/-- **Unpolarized ABBA site-pattern indicator.** Unpolarized `ABBA` indicator for populations `(P1, P2, P3, O)`: `P1` agrees with `O`, `P2`
 with `P3`, and `P1` differs from `P2` (the patterns `ABBA` and `BAAB`). -/
 def abba (x : Fin 4 → Bool) : ℝ := if x 0 = x 3 ∧ x 1 = x 2 ∧ x 0 ≠ x 1 then 1 else 0
 
-/-- Unpolarized `BABA` indicator for populations `(P1, P2, P3, O)`: `P1` agrees with `P3`, `P2`
+/-- **Unpolarized BABA site-pattern indicator.** Unpolarized `BABA` indicator for populations `(P1, P2, P3, O)`: `P1` agrees with `P3`, `P2`
 with `O`, and `P1` differs from `P2` (the patterns `BABA` and `ABAB`). -/
 def baba (x : Fin 4 → Bool) : ℝ := if x 0 = x 2 ∧ x 1 = x 3 ∧ x 0 ≠ x 1 then 1 else 0
 
-/-- Polarized `ABBA` indicator (Durand et al. 2011): `P1` and `O` ancestral, `P2` and `P3`
+/-- **Polarized ABBA site-pattern indicator.** Polarized `ABBA` indicator (Durand et al. 2011): `P1` and `O` ancestral, `P2` and `P3`
 derived. -/
 def abbaPol (x : Fin 4 → Bool) : ℝ :=
   if x 0 = false ∧ x 1 = true ∧ x 2 = true ∧ x 3 = false then 1 else 0
 
-/-- Polarized `BABA` indicator (Durand et al. 2011): `P1` and `P3` derived, `P2` and `O`
+/-- **Polarized BABA site-pattern indicator.** Polarized `BABA` indicator (Durand et al. 2011): `P1` and `P3` derived, `P2` and `O`
 ancestral. -/
 def babaPol (x : Fin 4 → Bool) : ℝ :=
   if x 0 = true ∧ x 1 = false ∧ x 2 = true ∧ x 3 = false then 1 else 0
 
-/-- The configuration probabilities sum to `1`. -/
+/-- **Configuration probabilities sum to one.** The configuration probabilities sum to `1`. -/
 theorem sum_configProb {n : ℕ} (q : Fin n → ℝ) : ∑ x, configProb q x = 1 := by
   unfold configProb
   rw [← Fintype.prod_sum (fun i (b : Bool) => if b then q i else 1 - q i)]
   simp
 
-/-- `sampleExpect` of a product of functions of single coordinates factorizes:
+/-- **Sampling expectation of a product factorizes.** `sampleExpect` of a product of functions of single coordinates factorizes:
 `E[∏ i, g i (x i)] = ∏ i, (g i true * q i + g i false * (1 - q i))`. -/
 theorem sampleExpect_prod {n : ℕ} (g : Fin n → Bool → ℝ) (q : Fin n → ℝ) :
     sampleExpect (fun x => ∏ i, g i (x i)) q =
@@ -139,17 +139,17 @@ theorem sampleExpect_prod {n : ℕ} (g : Fin n → Bool → ℝ) (q : Fin n → 
   rw [← Fintype.prod_sum (fun i (b : Bool) => g i b * if b then q i else 1 - q i)]
   simp
 
-/-- `sampleExpect` is additive in the function. -/
+/-- **Additivity of the sampling expectation.** `sampleExpect` is additive in the function. -/
 theorem sampleExpect_add {n : ℕ} (f g : (Fin n → Bool) → ℝ) (q : Fin n → ℝ) :
     sampleExpect (fun x => f x + g x) q = sampleExpect f q + sampleExpect g q := by
   simp [sampleExpect, add_mul, Finset.sum_add_distrib]
 
-/-- `sampleExpect` commutes with subtraction of functions. -/
+/-- **Sampling expectation commutes with subtraction.** `sampleExpect` commutes with subtraction of functions. -/
 theorem sampleExpect_sub {n : ℕ} (f g : (Fin n → Bool) → ℝ) (q : Fin n → ℝ) :
     sampleExpect (fun x => f x - g x) q = sampleExpect f q - sampleExpect g q := by
   simp [sampleExpect, sub_mul, Finset.sum_sub_distrib]
 
-/-- `sampleExpect` is the expectation under independent sampling: if the derived-allele
+/-- **Sampling expectation is an expectation of independent indicators.** `sampleExpect` is the expectation under independent sampling: if the derived-allele
 indicators `X i` are independent random variables with `P(X i = true) = q i`, then
 `E[g (X 0, …, X (n - 1))] = sampleExpect g q`. -/
 theorem integral_eq_sampleExpect {Ω : Type*} {mΩ : MeasurableSpace Ω} {ν : Measure Ω}
@@ -181,7 +181,7 @@ theorem integral_eq_sampleExpect {Ω : Type*} {mΩ : MeasurableSpace Ω} {ν : M
   · simp only [ite_true]
     exact hq i
 
-/-- The site-pattern identity: `1[BABA] - 1[ABBA] = (x₁ - x₂) (x₃ - x₄)` for every
+/-- **ABBA–BABA site-pattern identity.** The site-pattern identity: `1[BABA] - 1[ABBA] = (x₁ - x₂) (x₃ - x₄)` for every
 configuration of derived-allele indicators. -/
 theorem baba_sub_abba (x : Fin 4 → Bool) :
     baba x - abba x =
@@ -215,7 +215,7 @@ theorem sampleExpect_baba_sub_abba (q : Fin 4 → ℝ) :
   simp [tn]
   ring
 
-/-- Polarized form (Durand et al. 2011, with `q 3` the derived-allele frequency in the
+/-- **Expected polarized ABBA–BABA difference.** Polarized form (Durand et al. 2011, with `q 3` the derived-allele frequency in the
 outgroup): `E[BABA_pol - ABBA_pol] = (q₁ - q₂) q₃ (1 - q₄)`. When the outgroup is fixed for the
 ancestral allele (`q 3 = 0`) this is `(q₁ - q₂) (q₃ - q₄)`, as in the unpolarized identity. -/
 theorem sampleExpect_babaPol_sub_abbaPol (q : Fin 4 → ℝ) :
@@ -251,7 +251,7 @@ section QpAdm
 
 variable {Ω P : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} {p : P → Ω → ℝ}
 
-/-- Linearity of `f4` in its first pair: if `p A - p B = ∑ l, c l * (p (C l) - p (D l))`
+/-- **Linearity of the f4-statistic in its first pair.** Linearity of `f4` in its first pair: if `p A - p B = ∑ l, c l * (p (C l) - p (D l))`
 pointwise, then `f4 A B Y Z = ∑ l, c l * f4 (C l) (D l) Y Z`. -/
 theorem f4_eq_sum_of_sub_eq_sum (hp : ∀ X, MemLp (p X) 2 μ) {ι : Type*} [Fintype ι]
     {A B Y Z : P} (C D : ι → P) (c : ι → ℝ)
@@ -279,7 +279,7 @@ theorem f4_affine_combination (hp : ∀ X, MemLp (p X) 2 μ) {ι : Type*} [Finty
 /-! ### The qpWave rank bound -/
 
 variable (μ p) in
-/-- The qpWave matrix of left populations `L 0, …, L n` and right populations
+/-- **qpWave matrix of f4-statistics.** The qpWave matrix of left populations `L 0, …, L n` and right populations
 `R 0, …, R r`: entry `(i, j)` is `f4 (L (i + 1)) (L 0) (R (j + 1)) (R 0)`. -/
 noncomputable def f4Matrix {n r : ℕ} (L : Fin (n + 1) → P) (R : Fin (r + 1) → P) :
     Matrix (Fin n) (Fin r) ℝ :=
@@ -317,50 +317,50 @@ end QpAdm
 
 section Estimators
 
-/-- Unbiased estimator of `p (1 - p)` from `x` derived copies among `m` sampled copies:
+/-- **Unbiased heterozygosity estimator.** Unbiased estimator of `p (1 - p)` from `x` derived copies among `m` sampled copies:
 `x (m - x) / (m (m - 1))` (meaningful for `m ≥ 2`). -/
 noncomputable def hetHat (m : ℕ) (x : ℝ) : ℝ := x * (m - x) / (m * (m - 1))
 
-/-- The unbiased `f2` estimator of Patterson et al. (2012), Appendix:
+/-- **Unbiased f2 estimator.** The unbiased `f2` estimator of Patterson et al. (2012), Appendix:
 `(â - b̂)² - â (1 - â) / (m_A - 1) - b̂ (1 - b̂) / (m_B - 1)` with `â = x_A / m_A`,
 written as `(x_A / m_A - x_B / m_B)² - x_A (m_A - x_A) / (m_A² (m_A - 1)) - …`. -/
 noncomputable def f2Hat (mA mB : ℕ) (xA xB : ℝ) : ℝ :=
   (xA / mA - xB / mB) ^ 2 - hetHat mA xA / mA - hetHat mB xB / mB
 
-/-- The unbiased `f3` estimator of Patterson et al. (2012), Appendix:
+/-- **Unbiased f3 estimator.** The unbiased `f3` estimator of Patterson et al. (2012), Appendix:
 `(ĉ - â) (ĉ - b̂) - ĉ (1 - ĉ) / (m_C - 1)`. -/
 noncomputable def f3Hat (mC mA mB : ℕ) (xC xA xB : ℝ) : ℝ :=
   (xC / mC - xA / mA) * (xC / mC - xB / mB) - hetHat mC xC / mC
 
-/-- The `f4` estimator `(â - b̂) (ĉ - d̂)`; it needs no correction for four distinct
+/-- **f4 estimator.** The `f4` estimator `(â - b̂) (ĉ - d̂)`; it needs no correction for four distinct
 populations. -/
 noncomputable def f4Hat (mA mB mC mD : ℕ) (xA xB xC xD : ℝ) : ℝ :=
   (xA / mA - xB / mB) * (xC / mC - xD / mD)
 
-/-- Hudson's `F_ST` denominator estimator `â (1 - b̂) + b̂ (1 - â)` (Bhatia et al. 2013); the
+/-- **Estimator of Hudson's F_ST denominator.** Hudson's `F_ST` denominator estimator `â (1 - b̂) + b̂ (1 - â)` (Bhatia et al. 2013); the
 numerator estimator is `f2Hat`. -/
 noncomputable def hudsonDenHat (mA mB : ℕ) (xA xB : ℝ) : ℝ :=
   xA / mA * (1 - xB / mB) + xB / mB * (1 - xA / mA)
 
-/-- Hudson's `F_ST` denominator at one site: `p_A (1 - p_B) + p_B (1 - p_A)`, the probability
+/-- **Hudson's F_ST denominator at one site.** Hudson's `F_ST` denominator at one site: `p_A (1 - p_B) + p_B (1 - p_A)`, the probability
 that two copies, one from each population, differ. The numerator is `(p_A - p_B) ^ 2`. -/
 def hudsonDen (pA pB : ℝ) : ℝ := pA * (1 - pB) + pB * (1 - pA)
 
-/-- Hudson's `F_ST` over sites `s` in the ratio-of-averages form of Bhatia et al. (2013):
+/-- **Hudson's F_ST (ratio of averages).** Hudson's `F_ST` over sites `s` in the ratio-of-averages form of Bhatia et al. (2013):
 `∑ s, (p_A s - p_B s) ^ 2 / ∑ s, hudsonDen (p_A s) (p_B s)`. It is defined when the denominator
 is positive (it vanishes only if every site is fixed for the same allele in both populations);
 otherwise Lean's value `0` is a junk value. -/
 noncomputable def hudsonFst {ι : Type*} (s : Finset ι) (pA pB : ι → ℝ) : ℝ :=
   (∑ i ∈ s, (pA i - pB i) ^ 2) / ∑ i ∈ s, hudsonDen (pA i) (pB i)
 
-/-- At each site Hudson's numerator is at most the denominator for frequencies in `[0, 1]`: the
+/-- **Hudson's numerator is at most the denominator.** At each site Hudson's numerator is at most the denominator for frequencies in `[0, 1]`: the
 difference is `p_A (1 - p_A) + p_B (1 - p_B) ≥ 0`. -/
 theorem sq_sub_le_hudsonDen {pA pB : ℝ} (hA0 : 0 ≤ pA) (hA1 : pA ≤ 1) (hB0 : 0 ≤ pB)
     (hB1 : pB ≤ 1) : (pA - pB) ^ 2 ≤ hudsonDen pA pB := by
   unfold hudsonDen
   nlinarith [mul_nonneg hA0 (sub_nonneg.2 hA1), mul_nonneg hB0 (sub_nonneg.2 hB1)]
 
-/-- Hudson's `F_ST` lies in `[0, 1]` for frequencies in `[0, 1]`. (When the denominator vanishes
+/-- **Hudson's F_ST lies between 0 and 1.** Hudson's `F_ST` lies in `[0, 1]` for frequencies in `[0, 1]`. (When the denominator vanishes
 the junk value `0` also lies in `[0, 1]`, so no positivity hypothesis is needed.) -/
 theorem hudsonFst_mem_Icc {ι : Type*} (s : Finset ι) (pA pB : ι → ℝ)
     (hA : ∀ i ∈ s, pA i ∈ Set.Icc (0 : ℝ) 1) (hB : ∀ i ∈ s, pB i ∈ Set.Icc (0 : ℝ) 1) :
@@ -378,7 +378,7 @@ private lemma integrable_comp_bin {X : Ω → ℝ} {m : ℕ} {q : I} (hX : HasLa
     Integrable (fun ω => g (X ω)) μ :=
   hX.integrable_comp (integrable_map_cast_binomial g)
 
-/-- The sample frequency is unbiased: for `X ~ Bin(m, p)` with `m ≥ 1`, `E[X / m] = p`. (For
+/-- **Sample allele frequency is unbiased.** The sample frequency is unbiased: for `X ~ Bin(m, p)` with `m ≥ 1`, `E[X / m] = p`. (For
 `m = 0`, `X / 0 = 0` is a junk value, hence `m ≥ 1`.) -/
 theorem integral_div_of_hasLaw_binomial {X : Ω → ℝ} {m : ℕ} {q : I}
     (hX : HasLaw X Bin(ℝ, m, q) μ) (hm : 1 ≤ m) : μ[fun ω => X ω / m] = (q : ℝ) := by
@@ -565,7 +565,7 @@ theorem integral_hudsonDenHat {XA XB : Ω → ℝ} {mA mB : ℕ} {qA qB : I}
 
 variable {ι : Type*} (s : Finset ι) {XA XB : ι → Ω → ℝ} {mA mB : ι → ℕ} {qA qB : ι → I}
 
-/-- Summed over sites, Hudson's numerator estimator `∑ s, f2Hat` is unbiased for
+/-- **Unbiasedness of the summed f2 estimator.** Summed over sites, Hudson's numerator estimator `∑ s, f2Hat` is unbiased for
 `∑ s, (p_A s - p_B s) ^ 2` (independence is needed only within each site). -/
 theorem integral_sum_f2Hat (hA : ∀ i ∈ s, HasLaw (XA i) Bin(ℝ, mA i, qA i) μ)
     (hB : ∀ i ∈ s, HasLaw (XB i) Bin(ℝ, mB i, qB i) μ)
@@ -578,7 +578,7 @@ theorem integral_sum_f2Hat (hA : ∀ i ∈ s, HasLaw (XA i) Bin(ℝ, mA i, qA i)
       integral_f2Hat (hA i hi) (hB i hi) (hAB i hi) (hmA i hi) (hmB i hi)
   · exact fun i hi => integrable_f2Hat (hA i hi) (hB i hi) (hAB i hi)
 
-/-- Summed over sites, Hudson's denominator estimator is unbiased for
+/-- **Unbiasedness of the summed Hudson denominator estimator.** Summed over sites, Hudson's denominator estimator is unbiased for
 `∑ s, hudsonDen (p_A s) (p_B s)`. -/
 theorem integral_sum_hudsonDenHat (hA : ∀ i ∈ s, HasLaw (XA i) Bin(ℝ, mA i, qA i) μ)
     (hB : ∀ i ∈ s, HasLaw (XB i) Bin(ℝ, mB i, qB i) μ)

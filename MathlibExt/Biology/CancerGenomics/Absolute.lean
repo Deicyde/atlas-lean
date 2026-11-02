@@ -70,40 +70,40 @@ genome-doubled solutions) but do not state this formula.
 
 namespace MathlibExt.Biology.CancerGenomics.Absolute
 
-/-- Average absolute copy number `α q + 2 (1 - α)` of a locus with copy number `q` in the cancer
+/-- **Average absolute copy number of a tumor sample.** Average absolute copy number `α q + 2 (1 - α)` of a locus with copy number `q` in the cancer
 cells, in a sample of purity `α` whose normal cells are diploid (Carter et al. 2012). With
 `q = τ` this is the sample ploidy `D` of Eq. 1; with the local copy number it is `D_s` of
 Eq. 2. -/
 def mixCopy (α q : ℝ) : ℝ := α * q + 2 * (1 - α)
 
-/-- Relative copy ratio `R = (α q + 2 (1 - α)) / (α τ + 2 (1 - α))` of a locus with copy number
+/-- **Relative copy ratio.** Relative copy ratio `R = (α q + 2 (1 - α)) / (α τ + 2 (1 - α))` of a locus with copy number
 `q`, purity `α` and cancer-cell ploidy `τ` (Carter et al. 2012, Eq. 1). -/
 noncomputable def copyRatio (α τ q : ℝ) : ℝ := mixCopy α q / mixCopy α τ
 
-/-- The copy-ratio slope `α / D` of Eq. 1 (Carter et al. 2012), the copy ratio of one extra
+/-- **Copy-ratio slope.** The copy-ratio slope `α / D` of Eq. 1 (Carter et al. 2012), the copy ratio of one extra
 copy per cancer cell. -/
 noncomputable def slope (α τ : ℝ) : ℝ := α / mixCopy α τ
 
-/-- The copy-ratio intercept `2 (1 - α) / D` of Eq. 1 (Carter et al. 2012), the copy ratio of a
+/-- **Copy-ratio intercept.** The copy-ratio intercept `2 (1 - α) / D` of Eq. 1 (Carter et al. 2012), the copy ratio of a
 homozygously deleted locus. -/
 noncomputable def intercept (α τ : ℝ) : ℝ := 2 * (1 - α) / mixCopy α τ
 
-/-- Expected allelic fraction `α s / (α q + 2 (1 - α))` of a clonal somatic point mutation with
+/-- **Expected allelic fraction of a somatic mutation.** Expected allelic fraction `α s / (α q + 2 (1 - α))` of a clonal somatic point mutation with
 multiplicity `s` (copies per cancer cell) at a locus of copy number `q` (Carter et al. 2012,
 Eq. 2; Eq. 10 is `s = 1`). -/
 noncomputable def somaticAF (α q s : ℝ) : ℝ := α * s / mixCopy α q
 
-/-- Expected allelic fraction `((1 - α) + α g) / (α q + 2 (1 - α))` of a heterozygous germline
+/-- **Expected allelic fraction of a germline variant.** Expected allelic fraction `((1 - α) + α g) / (α q + 2 (1 - α))` of a heterozygous germline
 variant present in `g` copies per cancer cell at a locus of copy number `q` (Carter et al.
 2012, Eq. 11). -/
 noncomputable def germlineAF (α q g : ℝ) : ℝ := ((1 - α) + α * g) / mixCopy α q
 
-/-- The purity `α / (m - (m - 1) α)` that, together with all copy numbers multiplied by `m`,
+/-- **Rescaled purity.** The purity `α / (m - (m - 1) α)` that, together with all copy numbers multiplied by `m`,
 reproduces the copy ratios and allelic fractions of purity `α` (derived from Carter et al.
 2012, Eqs. 1, 2, 11). -/
 noncomputable def scaledPurity (m α : ℝ) : ℝ := α / (m - (m - 1) * α)
 
-/-- The mixture copy number is positive in the biological domain `0 ≤ α ≤ 1`, `0 < q`. -/
+/-- **Positivity of the mixture copy number.** The mixture copy number is positive in the biological domain `0 ≤ α ≤ 1`, `0 < q`. -/
 theorem mixCopy_pos {α q : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq : 0 < q) :
     0 < mixCopy α q := by
   unfold mixCopy
@@ -139,7 +139,7 @@ theorem somaticAF_eq_slope_mul_div_copyRatio {α τ q : ℝ} (s : ℝ) (hD : mix
   unfold somaticAF slope copyRatio
   rw [div_mul_eq_mul_div, div_div_div_cancel_right₀ hD]
 
-/-- Inverse of Eq. 1, purity: `α = 2 b / (2 b + δ)` for the slope `b` and intercept `δ`, when
+/-- **Purity from copy-ratio slope and intercept.** Inverse of Eq. 1, purity: `α = 2 b / (2 b + δ)` for the slope `b` and intercept `δ`, when
 `0 < α ≤ 1` and `0 < τ`. -/
 theorem purity_eq {α τ : ℝ} (hα0 : 0 < α) (hα1 : α ≤ 1) (hτ : 0 < τ) :
     α = 2 * slope α τ / (2 * slope α τ + intercept α τ) := by
@@ -148,7 +148,7 @@ theorem purity_eq {α τ : ℝ} (hα0 : 0 < α) (hα1 : α ≤ 1) (hτ : 0 < τ)
   field_simp
   ring
 
-/-- Inverse of Eq. 1, ploidy: `τ = (1 - δ) / b` for the slope `b` and intercept `δ`, when
+/-- **Ploidy from copy-ratio slope and intercept.** Inverse of Eq. 1, ploidy: `τ = (1 - δ) / b` for the slope `b` and intercept `δ`, when
 `0 < α ≤ 1` and `0 < τ`. -/
 theorem ploidy_eq {α τ : ℝ} (hα0 : 0 < α) (hα1 : α ≤ 1) (hτ : 0 < τ) :
     τ = (1 - intercept α τ) / slope α τ := by
@@ -200,7 +200,7 @@ theorem bijOn_slope_intercept :
       · field_simp
         ring
 
-/-- The denominator `m - (m - 1) α = m (1 - α) + α` of the rescaled purity is positive for
+/-- **Positivity of the rescaled purity denominator.** The denominator `m - (m - 1) α = m (1 - α) + α` of the rescaled purity is positive for
 `m > 0` and `0 ≤ α ≤ 1`. -/
 theorem scaledPurity_denom_pos {m α : ℝ} (hm : 0 < m) (hα0 : 0 ≤ α) (hα1 : α ≤ 1) :
     0 < m - (m - 1) * α := by
@@ -208,7 +208,7 @@ theorem scaledPurity_denom_pos {m α : ℝ} (hm : 0 < m) (hα0 : 0 ≤ α) (hα1
   · nlinarith [mul_nonneg hm.le (sub_nonneg.2 hα1)]
   · subst h; simpa using hm
 
-/-- The rescaled purity is again a purity: `0 ≤ α / (m - (m - 1) α) ≤ 1` for `m > 0` and
+/-- **Rescaled purity lies in [0, 1].** The rescaled purity is again a purity: `0 ≤ α / (m - (m - 1) α) ≤ 1` for `m > 0` and
 `0 ≤ α ≤ 1`. -/
 theorem scaledPurity_mem {m α : ℝ} (hm : 0 < m) (hα0 : 0 ≤ α) (hα1 : α ≤ 1) :
     0 ≤ scaledPurity m α ∧ scaledPurity m α ≤ 1 := by
@@ -271,7 +271,7 @@ theorem germlineAF_scale {m α : ℝ} (hm : 0 < m) (hα0 : 0 ≤ α) (hα1 : α 
     rw [hdef]
     ring
 
-/-- The rescaled solution is a genuinely different purity: for `0 < α < 1` and `m ≠ 1`,
+/-- **Rescaled purity differs from the original purity.** The rescaled solution is a genuinely different purity: for `0 < α < 1` and `m ≠ 1`,
 `α / (m - (m - 1) α) ≠ α`. -/
 theorem scaledPurity_ne {m α : ℝ} (hm : 0 < m) (hm1 : m ≠ 1) (hα0 : 0 < α) (hα1 : α < 1) :
     scaledPurity m α ≠ α := by
@@ -295,12 +295,12 @@ theorem copyRatio_doubling {α : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (τ q 
   norm_num at this
   exact this
 
-/-- Somatic allelic fractions are nonnegative in the biological domain. -/
+/-- **Nonnegativity of somatic allelic fractions.** Somatic allelic fractions are nonnegative in the biological domain. -/
 theorem somaticAF_nonneg {α q s : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq : 0 < q) (hs : 0 ≤ s) :
     0 ≤ somaticAF α q s :=
   div_nonneg (mul_nonneg hα0 hs) (mixCopy_pos hα0 hα1 hq).le
 
-/-- A somatic allelic fraction is at most one when the multiplicity does not exceed the copy
+/-- **Somatic allelic fraction is at most one.** A somatic allelic fraction is at most one when the multiplicity does not exceed the copy
 number (`s ≤ q`). -/
 theorem somaticAF_le_one {α q s : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq : 0 < q) (hsq : s ≤ q) :
     somaticAF α q s ≤ 1 := by
@@ -310,7 +310,7 @@ theorem somaticAF_le_one {α q s : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq 
   unfold mixCopy
   nlinarith [mul_le_mul_of_nonneg_left hsq hα0]
 
-/-- The somatic allelic fraction increases with the purity (`0 ≤ s`, `0 < q`). -/
+/-- **Somatic allelic fraction increases with purity.** The somatic allelic fraction increases with the purity (`0 ≤ s`, `0 < q`). -/
 theorem somaticAF_mono_purity {α α' q s : ℝ} (hα0 : 0 ≤ α) (hαα' : α ≤ α') (hα1 : α' ≤ 1)
     (hq : 0 < q) (hs : 0 ≤ s) : somaticAF α q s ≤ somaticAF α' q s := by
   have hD := mixCopy_pos hα0 (hαα'.trans hα1) hq
@@ -320,7 +320,7 @@ theorem somaticAF_mono_purity {α α' q s : ℝ} (hα0 : 0 ≤ α) (hαα' : α 
   unfold mixCopy
   nlinarith [mul_le_mul_of_nonneg_right hαα' hs]
 
-/-- The somatic allelic fraction decreases with the local copy number (`0 ≤ α ≤ 1`,
+/-- **Somatic allelic fraction decreases with copy number.** The somatic allelic fraction decreases with the local copy number (`0 ≤ α ≤ 1`,
 `0 ≤ s`, `0 < q ≤ q'`). -/
 theorem somaticAF_anti_copy {α q q' s : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq : 0 < q)
     (hqq' : q ≤ q') (hs : 0 ≤ s) : somaticAF α q' s ≤ somaticAF α q s := by
@@ -330,7 +330,7 @@ theorem somaticAF_anti_copy {α q q' s : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1
   unfold mixCopy
   nlinarith [mul_le_mul_of_nonneg_left hqq' hα0]
 
-/-- The somatic allelic fraction increases with the multiplicity (`0 ≤ α ≤ 1`, `0 < q`). -/
+/-- **Somatic allelic fraction increases with multiplicity.** The somatic allelic fraction increases with the multiplicity (`0 ≤ α ≤ 1`, `0 < q`). -/
 theorem somaticAF_mono_mult {α q s s' : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (hq : 0 < q)
     (hss' : s ≤ s') : somaticAF α q s ≤ somaticAF α q s' := by
   unfold somaticAF

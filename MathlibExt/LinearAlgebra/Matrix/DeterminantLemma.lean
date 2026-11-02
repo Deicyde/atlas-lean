@@ -103,7 +103,7 @@ private theorem det_eq_det_add_sum_updateRow (A : Matrix n n R) (u v : n → R)
       Finset.sum_insert hi]
     ring
 
-/-- The **matrix determinant lemma**, without any invertibility hypothesis:
+/-- **Matrix determinant lemma without invertibility.** The **matrix determinant lemma**, without any invertibility hypothesis:
 the determinant of a rank-one update of `A` is `det A` plus the adjugate
 pairing `v ⬝ᵥ (adjugate A *ᵥ u)`. This is the general version left as a TODO
 in Mathlib's `Matrix.det_add_replicateCol_mul_replicateRow`. -/
@@ -118,7 +118,7 @@ theorem det_add_vecMulVec (A : Matrix n n R) (u v : n → R) :
   congr 1
   exact sum_mul_det_updateRow A u v
 
-/-- The matrix determinant lemma in the `replicateCol` / `replicateRow`
+/-- **Matrix determinant lemma in column-times-row form.** The matrix determinant lemma in the `replicateCol` / `replicateRow`
 form stated in Mathlib's TODO for
 `Matrix.det_add_replicateCol_mul_replicateRow`. The `_general` suffix
 avoids clashing with Mathlib's invertible version of the same name. -/
@@ -129,14 +129,14 @@ theorem det_add_replicateCol_mul_replicateRow_general {ι : Type*} [Unique ι]
   rw [← vecMulVec_eq ι u v]
   exact det_add_vecMulVec A u v
 
-/-- A rank-one update of `A` is a unit exactly when the adjugate correction
+/-- **Invertibility criterion for a rank-one update.** A rank-one update of `A` is a unit exactly when the adjugate correction
 term is a unit; no invertibility hypothesis on `A` is needed. -/
 theorem isUnit_add_vecMulVec_iff (A : Matrix n n R) (u v : n → R) :
     IsUnit (A + vecMulVec u v) ↔
       IsUnit (A.det + v ⬝ᵥ (adjugate A *ᵥ u)) := by
   rw [isUnit_iff_isUnit_det, det_add_vecMulVec]
 
-/-- The matrix determinant lemma in multiplicative form, when `A.det` is a
+/-- **Multiplicative matrix determinant lemma for invertible matrices.** The matrix determinant lemma in multiplicative form, when `A.det` is a
 unit: this recovers Mathlib's
 `Matrix.det_add_replicateCol_mul_replicateRow` from the general version. -/
 theorem det_add_vecMulVec_of_isUnit_det (A : Matrix n n R) (u v : n → R)

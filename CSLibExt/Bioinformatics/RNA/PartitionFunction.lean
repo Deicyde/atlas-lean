@@ -109,7 +109,7 @@ open Cslib.Bioinformatics.RNA.Nussinov
 
 variable {B : Type*} (pair : B → B → Prop) (m : ℕ) (s : List B)
 
-/-- Positions `i` and `j` of `s` both lie in `s` and carry complementary bases. -/
+/-- **Complementary base pairing of two positions.** Positions `i` and `j` of `s` both lie in `s` and carry complementary bases. -/
 def CanPair (i j : ℕ) : Prop :=
   ∃ a b, s[i]? = some a ∧ s[j]? = some b ∧ pair a b
 
@@ -152,21 +152,21 @@ def outside [DecidableRel pair] {R : Type*} [CommSemiring R] (w : ℕ → ℕ �
   decreasing_by omega
 
 open Classical in
-/-- The secondary structures on `s` (`IsStructure pair m s`) all of whose pairs lie in the
+/-- **Secondary structures within an interval.** The secondary structures on `s` (`IsStructure pair m s`) all of whose pairs lie in the
 interval `[i, i + len)`. -/
 noncomputable def structuresIn (i len : ℕ) : Finset (Finset (ℕ × ℕ)) :=
   ((Finset.Ico i (i + len) ×ˢ Finset.Ico i (i + len)).powerset).filter
     fun P => IsStructure pair m s P
 
-/-- All secondary structures on `s` with minimum hairpin `m` (see `mem_structures`). -/
+/-- **Set of all secondary structures of a sequence.** All secondary structures on `s` with minimum hairpin `m` (see `mem_structures`). -/
 noncomputable def structures : Finset (Finset (ℕ × ℕ)) :=
   structuresIn pair m s 0 s.length
 
-/-- The weight of a structure: the product of the weights of its base pairs. -/
+/-- **Weight of a secondary structure.** The weight of a structure: the product of the weights of its base pairs. -/
 def weight {R : Type*} [CommMonoid R] (w : ℕ → ℕ → R) (P : Finset (ℕ × ℕ)) : R :=
   ∏ p ∈ P, w p.1 p.2
 
-/-- `structures` is exactly the set of secondary structures on `s`. -/
+/-- **Membership in the set of secondary structures.** `structures` is exactly the set of secondary structures on `s`. -/
 theorem mem_structures (P : Finset (ℕ × ℕ)) :
     P ∈ structures pair m s ↔ IsStructure pair m s P := by
   classical
@@ -629,7 +629,7 @@ theorem inside_eq_sum [DecidableRel pair] {R : Type*} [CommSemiring R] (w : ℕ 
           ih (n - 1 - k.val) (by omega)]
       · simp only [ite_eq_right hc]
 
-/-- The inside value of the whole sequence sums the weights of all its secondary structures. -/
+/-- **Inside value sums the weights of all secondary structures.** The inside value of the whole sequence sums the weights of all its secondary structures. -/
 theorem inside_eq_sum_structures [DecidableRel pair] {R : Type*} [CommSemiring R]
     (w : ℕ → ℕ → R) :
     inside pair m s w 0 s.length = ∑ P ∈ structures pair m s, weight w P :=
@@ -1537,7 +1537,7 @@ theorem card_structures_eq_watermanNumber (m n : ℕ) :
   rw [hcard, key _ 0 (by simp)]
   simp
 
-/-- For `m = 0` (no hairpin constraint) Waterman's numbers are the Motzkin numbers
+/-- **Waterman numbers with no hairpin constraint are Motzkin numbers.** For `m = 0` (no hairpin constraint) Waterman's numbers are the Motzkin numbers
 `M(n) = ∑_k C(n, 2k) C(k)`: the number of non-crossing partial matchings on `n` points. -/
 theorem watermanNumber_zero_eq_motzkinNumber (n : ℕ) :
     watermanNumber 0 n = MetaMathlibExt.motzkinNumber n := by
@@ -1557,12 +1557,12 @@ theorem watermanNumber_zero_eq_motzkinNumber (n : ℕ) :
 
 /-! ### Sum-product: the McCaskill partition function -/
 
-/-- An **additive base-pair energy model**: the free energy of a structure is the sum of the
+/-- **Additive base-pair energy model.** An **additive base-pair energy model**: the free energy of a structure is the sum of the
 energies `e i j` of its base pairs (in the same units as `RT`). -/
 def energy (e : ℕ → ℕ → ℝ) (P : Finset (ℕ × ℕ)) : ℝ :=
   ∑ p ∈ P, e p.1 p.2
 
-/-- The **partition function** `Z = ∑_S exp (-E(S) / RT)` over all secondary structures `S`
+/-- **McCaskill partition function of RNA secondary structures.** The **partition function** `Z = ∑_S exp (-E(S) / RT)` over all secondary structures `S`
 on `s` with minimum hairpin `m`, for the additive energy `e` at thermal energy `RT`
 (physically `0 < RT`; the identities below hold for every real `RT`). -/
 noncomputable def partitionFunction (e : ℕ → ℕ → ℝ) (RT : ℝ) : ℝ :=
@@ -1578,7 +1578,7 @@ theorem inside_boltzmann_eq_partitionFunction [DecidableRel pair] (e : ℕ → �
   refine Finset.sum_congr rfl fun P _ => ?_
   rw [weight, ← Real.exp_sum, energy, ← Finset.sum_neg_distrib, Finset.sum_div]
 
-/-- The **base-pair probability** `P(i, j)`: the total weight of the structures containing the
+/-- **Base-pair probability.** The **base-pair probability** `P(i, j)`: the total weight of the structures containing the
 pair `(i, j)`, divided by the total weight `Z` of all structures. For nonnegative weights `Z ≥ 1`
 (the empty structure has weight `1`), so the denominator is positive; for Boltzmann weights this
 is the probability of `(i, j)` under the Boltzmann distribution on structures. -/
@@ -1595,7 +1595,7 @@ theorem pairProb_eq_outside [DecidableRel pair] (w : ℕ → ℕ → ℝ) (i j :
         inside pair m s w 0 s.length := by
   rw [pairProb, outside_mul_eq_sum pair m s w i j hij hc, inside_eq_sum_structures]
 
-/-- For nonnegative weights the total weight of all structures is at least `1`, the weight of
+/-- **Total structure weight is at least one.** For nonnegative weights the total weight of all structures is at least `1`, the weight of
 the empty structure; so the denominator of `pairProb` is positive. -/
 theorem one_le_sum_weight (w : ℕ → ℕ → ℝ) (hw : ∀ i j, 0 ≤ w i j) :
     1 ≤ ∑ P ∈ structures pair m s, weight w P := by
@@ -1606,7 +1606,7 @@ theorem one_le_sum_weight (w : ℕ → ℕ → ℝ) (hw : ∀ i j, 0 ≤ w i j) 
       Finset.single_le_sum (f := weight w)
         (fun P _ => Finset.prod_nonneg fun p _ => hw p.1 p.2) he
 
-/-- Base-pair probabilities are nonnegative for nonnegative weights. -/
+/-- **Nonnegativity of base-pair probabilities.** Base-pair probabilities are nonnegative for nonnegative weights. -/
 theorem pairProb_nonneg (w : ℕ → ℕ → ℝ) (hw : ∀ i j, 0 ≤ w i j) (i j : ℕ) :
     0 ≤ pairProb pair m s w i j := by
   exact div_nonneg (Finset.sum_nonneg fun P _ => Finset.prod_nonneg fun p _ => hw _ _)

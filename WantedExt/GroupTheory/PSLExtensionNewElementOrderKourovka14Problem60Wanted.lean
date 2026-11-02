@@ -51,7 +51,7 @@ def extensionOfPSLHasNewElementOrder : Prop :=
       ∃ g : G, ∀ y : G ⧸ H, orderOf y ≠ orderOf g
 
 /--
-Resolved true: the Kourovka Archive answers 14.60 "Yes, it is true": Zavarnitsine proved it for `n ≠
+**Extensions of PSL have a new element order.** Resolved true: the Kourovka Archive answers 14.60 "Yes, it is true": Zavarnitsine proved it for `n ≠
 4` and Grechkoseeva and Skresanov for `n = 4` (the editors note that an earlier claim of failure for
 `n = 4` was erroneous). Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group
 Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems,

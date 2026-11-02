@@ -204,7 +204,7 @@ end GammaReductionAux
 
 namespace CongruenceSubgroup
 
-/-- If `p` does not divide `N`, then reduction modulo `p` maps `Γ(N)` onto
+/-- **Reduction mod p maps Γ(N) onto SL(2, ℤ/pℤ) when p does not divide N.** If `p` does not divide `N`, then reduction modulo `p` maps `Γ(N)` onto
 `SL(2, ZMod p)`. -/
 theorem exists_mem_Gamma_map_eq_of_not_dvd
     (N p : ℕ) [NeZero N] [Fact p.Prime] (hpN : ¬ p ∣ N) :
@@ -216,7 +216,7 @@ theorem exists_mem_Gamma_map_eq_of_not_dvd
   obtain ⟨γ, hγ, hγg⟩ := h
   exact ⟨γ, hγ, hγg⟩
 
-/-- `-1` lies in `Γ₁(N)` if and only if `N ≤ 2`. -/
+/-- **−1 lies in Γ₁(N) exactly when N ≤ 2.** `-1` lies in `Γ₁(N)` if and only if `N ≤ 2`. -/
 theorem neg_one_mem_Gamma1_iff (N : ℕ) [NeZero N] :
     (-1 : SL(2, ℤ)) ∈ CongruenceSubgroup.Gamma1 N ↔ N ≤ 2 := by
   rw [CongruenceSubgroup.Gamma1_mem]

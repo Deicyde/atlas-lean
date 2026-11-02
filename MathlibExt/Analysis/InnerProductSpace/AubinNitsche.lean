@@ -77,7 +77,7 @@ private theorem le_norm_self_real (a : ℝ) : a ≤ ‖a‖ := by
   rw [Real.norm_eq_abs]
   exact le_abs_self a
 
-/-- The transpose of a coercive bilinear form is coercive with the
+/-- **Transpose of a coercive bilinear form is coercive.** The transpose of a coercive bilinear form is coercive with the
 same constant, since `B.flip u u = B u u`. -/
 theorem isCoercive_flip {B : H →L[ℝ] H →L[ℝ] ℝ} (hB : IsCoercive B) :
     IsCoercive B.flip := by

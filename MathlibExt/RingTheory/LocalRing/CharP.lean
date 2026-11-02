@@ -40,7 +40,7 @@ has characteristic `p`.
 
 @[expose] public section
 
-/-- If `(p : A)` lies in the maximal ideal of a local ring `A`, the residue
+/-- **Characteristic of the residue field of a local ring.** If `(p : A)` lies in the maximal ideal of a local ring `A`, the residue
 field has characteristic `p`: `p` maps to zero in the residue field. -/
 theorem IsLocalRing.charP_residueField_of_natCast_mem_maximalIdeal
     (A : Type*) [CommRing A] [IsLocalRing A] (p : ℕ) [Fact p.Prime]

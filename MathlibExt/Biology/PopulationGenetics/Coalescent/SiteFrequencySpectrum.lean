@@ -68,16 +68,16 @@ namespace MathlibExt.Biology.PopulationGenetics.Coalescent.SiteFrequencySpectrum
 
 /-! ### Random joining on block sizes -/
 
-/-- Merge the blocks at positions `i < j` of the block-size list `b`: remove both and append a
+/-- **Merging two blocks of a block-size list.** Merge the blocks at positions `i < j` of the block-size list `b`: remove both and append a
 block of size `b[i] + b[j]`. -/
 def mergeBlocks (b : List ℕ) (i j : ℕ) : List ℕ :=
   ((b.eraseIdx j).eraseIdx i) ++ [b.getD i 0 + b.getD j 0]
 
-/-- The unordered pairs of positions `i < j` among `k` blocks. -/
+/-- **Unordered pairs of blocks.** The unordered pairs of positions `i < j` among `k` blocks. -/
 def blockPairs (k : ℕ) : Finset (ℕ × ℕ) :=
   (range k ×ˢ range k).filter fun p => p.1 < p.2
 
-/-- The **random-joining** law: `randomJoining m b ps` is the probability that `m` steps of
+/-- **Random-joining law on block-size lists.** The **random-joining** law: `randomJoining m b ps` is the probability that `m` steps of
 random joining started from the block-size list `b` visit the list of block-size lists `ps`
 (starting with `b` itself). Each step merges a pair of blocks chosen uniformly among all
 pairs; the process stops once fewer than two blocks remain. -/
@@ -93,7 +93,7 @@ noncomputable def randomJoining : ℕ → List ℕ → List (List ℕ) → ℝ
             (blockPairs b.length).card
         else 0
 
-/-- The transition operator of random joining acting on a statistic `g` of block-size lists:
+/-- **Transition operator of random joining.** The transition operator of random joining acting on a statistic `g` of block-size lists:
 the average of `g` over the lists obtained from `b` by merging a uniformly chosen pair of
 blocks (`g []` once fewer than two blocks remain). By `exists_finset_randomJoining`, its `j`-th
 iterate at `b` is the expectation of `g` at step `j` of random joining started from `b`. -/
@@ -101,7 +101,7 @@ noncomputable def joinStep (g : List ℕ → ℝ) (b : List ℕ) : ℝ :=
   if (blockPairs b.length).card = 0 then g []
   else (∑ p ∈ blockPairs b.length, g (mergeBlocks b p.1 p.2)) / (blockPairs b.length).card
 
-/-- The total length of the branches subtending exactly `i` of the `n` sample copies, for the
+/-- **Total branch length subtending i sample copies.** The total length of the branches subtending exactly `i` of the `n` sample copies, for the
 block-size history `ps` (entry `n - k` lists the block sizes while there are `k` lineages)
 and holding times `T`: `∑_{k=2}^{n} #{blocks of size i among k} · T k`. -/
 def sfsLength (n i : ℕ) (ps : List (List ℕ)) (T : ℕ → ℝ) : ℝ :=
@@ -124,7 +124,7 @@ private lemma randomJoining_cons {m : ℕ} {b : List ℕ} (hb : (blockPairs b.le
   rw [randomJoining]
   simp only [hb, ↓reduceIte]
 
-/-- The random-joining law has finite support, and the expectation of a statistic of the
+/-- **Random joining has finite support and iterates the join step.** The random-joining law has finite support, and the expectation of a statistic of the
 `j`-th visited list (`j ≤ m`) is the `j`-th iterate of `joinStep`. -/
 theorem exists_finset_randomJoining (m : ℕ) (b : List ℕ) :
     ∃ F : Finset (List (List ℕ)), (∀ ps ∉ F, randomJoining m b ps = 0) ∧
@@ -584,7 +584,7 @@ private lemma sum_choose_div_choose {m a : ℕ} (ha : a ≤ m) :
   have := Nat.add_one_mul_choose_eq m a
   exact_mod_cast this.symm
 
-/-- Summing the expected block counts against `E T_k = (k.choose 2)⁻¹` gives `2 / i`:
+/-- **Expected block counts weighted by coalescence times sum to $2/i$.** Summing the expected block counts against `E T_k = (k.choose 2)⁻¹` gives `2 / i`:
 `∑_{k=2}^{n} k C(n-i-1, k-2) / C(n-1, k-1) · (k.choose 2)⁻¹ = 2 / i` for `1 ≤ i < n`. -/
 theorem sum_blockCount_mul_inv_choose_two {n i : ℕ} (hi : 1 ≤ i) (hin : i < n) :
     ∑ k ∈ Icc 2 n, k * ((n - i - 1).choose (k - 2) : ℝ) / ((n - 1).choose (k - 1) : ℝ) *

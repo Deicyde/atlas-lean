@@ -100,7 +100,7 @@ def _root_.SimpleGraph.IsSimpleFolding.{u} {V W : Type u} (G : SimpleGraph V) (H
   ∃ a b : V, a ≠ b ∧ G.edist a b = 2 ∧ f a = f b ∧
     ∀ x y : V, f x = f y → x = y ∨ (x = a ∧ y = b) ∨ (x = b ∧ y = a)
 
-/-- A homomorphism from X to Y is a *simple folding* if it has one fibre consisting of two vertices
+/-- **Folding of a graph homomorphism.** A homomorphism from X to Y is a *simple folding* if it has one fibre consisting of two vertices
 at distance two, and all other fibres are singletons. A homomorphism is a *folding* if it is the
 composition of a non-negative number of simple foldings.
 -/

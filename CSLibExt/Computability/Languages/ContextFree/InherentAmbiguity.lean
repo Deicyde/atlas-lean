@@ -38,7 +38,7 @@ namespace Cslib.Language
 
 variable {T : Type*}
 
-/-- The language `{a ^ i b ^ j c ^ k | i = j or j = k}` over the alphabet `Fin 3`
+/-- **Canonical inherently ambiguous context-free language.** The language `{a ^ i b ^ j c ^ k | i = j or j = k}` over the alphabet `Fin 3`
 (`0, 1, 2` for `a, b, c`): the standard inherently ambiguous context-free language.
 Source: S. Ginsburg, The Mathematical Theory of Context-Free Languages, McGraw-Hill, 1966;
 J. E. Hopcroft and J. D. Ullman, Introduction to Automata Theory, Languages, and
@@ -47,12 +47,12 @@ def inherentlyAmbiguousLang : Language (Fin 3) :=
   {w | ∃ i j k, (i = j ∨ j = k) ∧
     w = List.replicate i 0 ++ List.replicate j 1 ++ List.replicate k 2}
 
-/-- A language is inherently ambiguous when it is context-free and every grammar
+/-- **Inherently ambiguous language.** A language is inherently ambiguous when it is context-free and every grammar
 generating it is ambiguous. -/
 def IsInherentlyAmbiguous (L : Language T) : Prop :=
   L.IsContextFree ∧ ∀ g : ContextFreeGrammar T, g.language = L → IsAmbiguous g
 
-/-- The example language is the union of `a ^ n b ^ n c ^ *` and `a ^ * b ^ n c ^ n`. -/
+/-- **Inherently ambiguous example as a union of two languages.** The example language is the union of `a ^ n b ^ n c ^ *` and `a ^ * b ^ n c ^ n`. -/
 theorem inherentlyAmbiguousLang_eq :
     inherentlyAmbiguousLang =
       eqPowLang (0 : Fin 3) 1 * KStar.kstar ({[(2 : Fin 3)]} : Language (Fin 3)) +

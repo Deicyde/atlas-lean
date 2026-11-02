@@ -42,7 +42,7 @@ namespace StatMech
 
 variable {α : Type*} [DecidableEq α]
 
-/-- The members of `𝒜 ○ ℬ` avoiding `i` are exactly the disjoint unions of members of `𝒜` and
+/-- **Members of a disjoint-union family avoiding a coordinate.** The members of `𝒜 ○ ℬ` avoiding `i` are exactly the disjoint unions of members of `𝒜` and
 `ℬ` avoiding `i`. -/
 theorem boxFamily_filter_notMem_coord (i : α) (𝒜 ℬ : Finset (Finset α)) :
     (𝒜 ○ ℬ).filter (fun U => i ∉ U)
@@ -57,7 +57,7 @@ theorem boxFamily_filter_notMem_coord (i : α) (𝒜 ℬ : Finset (Finset α)) :
     refine ⟨⟨S, hS, T, hT, hd, rfl⟩, ?_⟩
     rw [mem_union, not_or]; exact ⟨hiS, hiT⟩
 
-/-- `IsDownAtCoord i 𝒜`: the family `𝒜` is closed under erasing `i`. -/
+/-- **Family closed under erasing a coordinate.** `IsDownAtCoord i 𝒜`: the family `𝒜` is closed under erasing `i`. -/
 def IsDownAtCoord (i : α) (𝒜 : Finset (Finset α)) : Prop := ∀ s ∈ 𝒜, s.erase i ∈ 𝒜
 
 theorem downCompressFamily_eq_self_of_isDownAt (i : α) {𝒜 : Finset (Finset α)}
@@ -78,11 +78,11 @@ theorem boxFamily_downCompress_eq_of_isDownAt (i : α) {𝒜 ℬ : Finset (Finse
   rw [downCompressFamily_eq_self_of_isDownAt i h𝒜,
       downCompressFamily_eq_self_of_isDownAt i hℬ]
 
-/-- The family `{∅, {1}}` on `Fin 2`, the first family of the counterexample
+/-- **First family in the box-compression counterexample.** The family `{∅, {1}}` on `Fin 2`, the first family of the counterexample
 `StatMech.reimerStep_box_compression_false`. -/
 def reimerStepCexA : Finset (Finset (Fin 2)) := {∅, {1}}
 
-/-- The family `{∅, {0, 1}}` on `Fin 2`, the second family of the counterexample
+/-- **Second family in the box-compression counterexample.** The family `{∅, {0, 1}}` on `Fin 2`, the second family of the counterexample
 `StatMech.reimerStep_box_compression_false`. -/
 def reimerStepCexB : Finset (Finset (Fin 2)) := {∅, {0, 1}}
 
@@ -93,7 +93,7 @@ lemma reimerStep_card_box_compressed :
     (Down.compression 0 reimerStepCexA ○ Down.compression 0 reimerStepCexB).card = 2 := by
   decide
 
-/-- Down-compressing both families at the same coordinate can strictly decrease the size of
+/-- **Down-compression can shrink the disjoint-union family.** Down-compressing both families at the same coordinate can strictly decrease the size of
 `𝒜 ○ ℬ`. -/
 theorem reimerStep_box_compression_false :
     ∃ (𝒜 ℬ : Finset (Finset (Fin 2))) (i : Fin 2),

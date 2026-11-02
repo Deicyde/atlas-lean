@@ -115,7 +115,7 @@ variable {Q Γ : Type*}
 
 /-! ### The nondeterministic linear bounded automaton -/
 
-/-- Where the head sits relative to the tape boundaries: strictly inside
+/-- **Boundary tag of a linear bounded automaton head.** Where the head sits relative to the tape boundaries: strictly inside
 the tape, on the first cell, on the last cell, or on the only cell of a
 one-cell tape. The transition function observes this tag, so the machine
 can tell the two ends of its tape apart from interior cells. -/
@@ -135,32 +135,32 @@ instance : Fintype LBABoundary where
   elems := {LBABoundary.middle, LBABoundary.left, LBABoundary.right, LBABoundary.both}
   complete := by intro x; cases x <;> simp
 
-/-- The boundary tag of head position `h` on a tape of length `n`. -/
+/-- **Boundary tag of a head position.** The boundary tag of head position `h` on a tape of length `n`. -/
 def LBABoundary.ofHead (h n : ℕ) : LBABoundary :=
   if h = 0 then (if n = 1 then .both else .left)
   else if h + 1 = n then .right else .middle
 
-/-- The boundary tag at the head of a one-cell tape. -/
+/-- **Boundary tag on a one-cell tape.** The boundary tag at the head of a one-cell tape. -/
 theorem LBABoundary.ofHead_eq_both {h n : ℕ} (h0 : h = 0) (hn : n = 1) :
     LBABoundary.ofHead h n = .both := by
   simp [LBABoundary.ofHead, h0, hn]
 
-/-- The boundary tag at the head of the first cell of a longer tape. -/
+/-- **Boundary tag on the first cell of a longer tape.** The boundary tag at the head of the first cell of a longer tape. -/
 theorem LBABoundary.ofHead_eq_left {h n : ℕ} (h0 : h = 0) (hn : n ≠ 1) :
     LBABoundary.ofHead h n = .left := by
   simp [LBABoundary.ofHead, h0, hn]
 
-/-- The boundary tag at the head of the last cell of a longer tape. -/
+/-- **Boundary tag on the last cell of a longer tape.** The boundary tag at the head of the last cell of a longer tape. -/
 theorem LBABoundary.ofHead_eq_right {h n : ℕ} (h0 : h ≠ 0) (hn : h + 1 = n) :
     LBABoundary.ofHead h n = .right := by
   simp [LBABoundary.ofHead, h0, hn]
 
-/-- The boundary tag at an interior head position. -/
+/-- **Boundary tag at an interior head position.** The boundary tag at an interior head position. -/
 theorem LBABoundary.ofHead_eq_middle {h n : ℕ} (h0 : h ≠ 0) (hn : h + 1 ≠ n) :
     LBABoundary.ofHead h n = .middle := by
   simp [LBABoundary.ofHead, h0, hn]
 
-/-- A head move of a linear bounded automaton: left, stay, or right. -/
+/-- **Head move of a linear bounded automaton.** A head move of a linear bounded automaton: left, stay, or right. -/
 inductive LBAMove where
   /-- Move the head one cell to the left. -/
   | left : LBAMove
@@ -170,7 +170,7 @@ inductive LBAMove where
   | right : LBAMove
   deriving DecidableEq
 
-/-- The head position after a move: left decrements, stay keeps, right
+/-- **Head position after a move.** The head position after a move: left decrements, stay keeps, right
 increments. -/
 def LBAMove.moveHead (mv : LBAMove) (h : ℕ) : ℕ :=
   match mv with
@@ -178,7 +178,7 @@ def LBAMove.moveHead (mv : LBAMove) (h : ℕ) : ℕ :=
   | .stay => h
   | .right => h + 1
 
-/-- A move is legal from the head position `h` on a tape of length `n` when
+/-- **Legal head move of a linear bounded automaton.** A move is legal from the head position `h` on a tape of length `n` when
 the source head is on the tape and the new head position is still on the
 tape. In particular a left move from an out-of-bounds head is illegal,
 even though the truncated new head `h - 1` would still be out of bounds:
@@ -189,7 +189,7 @@ def LBAMove.legal (mv : LBAMove) (h n : ℕ) : Prop :=
   | .stay => h < n
   | .right => h + 1 < n
 
-/-- A **linear bounded automaton**: a nondeterministic Turing machine whose
+/-- **Linear bounded automaton.** A **linear bounded automaton**: a nondeterministic Turing machine whose
 tape is the input word. The transition function gives, for a state, the
 symbol under the head (`none` for a blank cell), and the boundary tag of
 the head position, the finite set of possible next states, symbols to
@@ -207,7 +207,7 @@ structure LinearBoundedAutomaton (Q Γ : Type*) where
   (next state, written symbol, head move) triples. -/
   delta : Q → Option Γ → LBABoundary → Finset (Q × Option Γ × LBAMove)
 
-/-- A configuration of a linear bounded automaton: the state, the tape
+/-- **Configuration of a linear bounded automaton.** A configuration of a linear bounded automaton: the state, the tape
 (a list of cells, one per input cell; `none` is a blank), and the head
 position. -/
 structure LBAConfig (Q Γ : Type*) where
@@ -222,12 +222,12 @@ namespace LinearBoundedAutomaton
 
 variable {M : LinearBoundedAutomaton Q Γ}
 
-/-- The initial configuration on the input `w`: the initial state, the tape
+/-- **Initial configuration of a linear bounded automaton.** The initial configuration on the input `w`: the initial state, the tape
 `w` itself (no blanks), the head on the first cell. -/
 def initCfg (w : List Γ) : LBAConfig Q Γ :=
   ⟨M.q₀, w.map some, 0⟩
 
-/-- One step of the machine: choose a transition for the current state,
+/-- **One step of a linear bounded automaton.** One step of the machine: choose a transition for the current state,
 the symbol under the head, and its boundary tag, write the symbol, move
 the head legally. A step from a configuration whose head is off the
 tape is impossible: legality requires the source head to be on the
@@ -240,13 +240,13 @@ def Step (c c' : LBAConfig Q Γ) : Prop :=
     c' = ⟨q', c.tape.set c.head b', mv.moveHead c.head⟩ ∧
     mv.legal c.head c.tape.length
 
-/-- `M` **accepts** `w` when some run from the initial configuration on `w`
+/-- **Acceptance by a linear bounded automaton.** `M` **accepts** `w` when some run from the initial configuration on `w`
 reaches a configuration in the accepting state. -/
 def Accepts (w : List Γ) : Prop :=
   ∃ c : LBAConfig Q Γ, Relation.ReflTransGen M.Step (M.initCfg w) c ∧
     c.state = M.qAcc
 
-/-- The language of `M`: the words it accepts. -/
+/-- **Language of a linear bounded automaton.** The language of `M`: the words it accepts. -/
 def language : Set (List Γ) :=
   {w | M.Accepts w}
 
@@ -254,7 +254,7 @@ end LinearBoundedAutomaton
 
 /-! ### The grammar nonterminals -/
 
-/-- The nonterminals of the grammar of an LBA: a cell, a generator, and the
+/-- **Nonterminals of the grammar of a linear bounded automaton.** The nonterminals of the grammar of an LBA: a cell, a generator, and the
 start symbol. A cell records the original input symbol, the current tape
 symbol, the head state if the head is on the cell, whether the cell is
 active (simulation acts only on active cells), and the boundary tag of
@@ -276,26 +276,26 @@ variable {M : LinearBoundedAutomaton Q Γ} [_instFintypeQ : Fintype Q]
   [_instFintypeG : Fintype Γ] [_instDecidableEqQ : DecidableEq Q]
   [_instDecidableEqG : DecidableEq Γ]
 
-/-- A grammar symbol for the LBA grammar: a cell as a nonterminal. -/
+/-- **Cell symbol of the LBA grammar.** A grammar symbol for the LBA grammar: a cell as a nonterminal. -/
 abbrev cellSym (orig : Γ) (cur : Option Γ) (st : Option Q) (active : Bool)
     (bnd : LBABoundary) : Symbol Γ (LBANT Γ Q) :=
   .nonterminal (.cell orig cur st active bnd)
 
-/-- The start symbol as a grammar symbol. -/
+/-- **Start symbol of the LBA grammar.** The start symbol as a grammar symbol. -/
 abbrev startSym : Symbol Γ (LBANT Γ Q) :=
   .nonterminal .start
 
-/-- The generator as a grammar symbol. -/
+/-- **Generator symbol of the LBA grammar.** The generator as a grammar symbol. -/
 abbrev genSym : Symbol Γ (LBANT Γ Q) :=
   .nonterminal .gen
 
-/-- A terminal symbol of the grammar. -/
+/-- **Terminal symbol of the LBA grammar.** A terminal symbol of the grammar. -/
 abbrev termSym (a : Γ) : Symbol Γ (LBANT Γ Q) :=
   .terminal a
 
 /-! ### The grammar rules -/
 
-/-- The generation rules: the start symbol produces the first cell and the
+/-- **Generation rules of the LBA grammar.** The generation rules: the start symbol produces the first cell and the
 generator (or, for a one-cell word, the first cell alone, tagged `both`);
 the generator produces a middle non-head cell and itself, or a final
 right non-head cell. The first cell of a longer word is tagged `left`. -/
@@ -310,7 +310,7 @@ noncomputable def genRules (M : LinearBoundedAutomaton Q Γ) : List (List (Symbo
      ([genSym (Γ := Γ) (Q := Q)],
        [cellSym a (some a) none false .right])]
 
-/-- The activation rules: an inactive cell becomes active, keeping its
+/-- **Activation rules of the LBA grammar.** The activation rules: an inactive cell becomes active, keeping its
 original, current, head state, and boundary tag. -/
 noncomputable def activateRules :
     List (List (Symbol Γ (LBANT Γ Q)) × List (Symbol Γ (LBANT Γ Q))) :=
@@ -318,7 +318,7 @@ noncomputable def activateRules :
     fun ⟨a, cur, st, bnd⟩ ↦
       [([cellSym a cur st false bnd], [cellSym a cur st true bnd])]
 
-/-- The simulation rules for a stay move: the head cell rewrites its current
+/-- **Simulation rules for a stay move.** The simulation rules for a stay move: the head cell rewrites its current
 symbol and state, staying active, keeping its boundary tag. -/
 noncomputable def simStayRules (M : LinearBoundedAutomaton Q Γ) :
     List (List (Symbol Γ (LBANT Γ Q)) × List (Symbol Γ (LBANT Γ Q))) :=
@@ -330,7 +330,7 @@ noncomputable def simStayRules (M : LinearBoundedAutomaton Q Γ) :
             [cellSym orig write (some q') true bnd])]
         | _ => []
 
-/-- The simulation rules for a right move: the head cell rewrites its current
+/-- **Simulation rules for a right move.** The simulation rules for a right move: the head cell rewrites its current
 symbol and loses the head; the neighbouring cell gains the head. Both cells
 keep their boundary tags. -/
 noncomputable def simRightRules (M : LinearBoundedAutomaton Q Γ) :
@@ -346,7 +346,7 @@ noncomputable def simRightRules (M : LinearBoundedAutomaton Q Γ) :
               cellSym orig₂ cur₂ (some q') true bnd₂])]
         | _ => []
 
-/-- The simulation rules for a left move: the neighbouring cell gains the head;
+/-- **Simulation rules for a left move.** The simulation rules for a left move: the neighbouring cell gains the head;
 the head cell rewrites its current symbol and loses the head. Both cells
 keep their boundary tags. -/
 noncomputable def simLeftRules (M : LinearBoundedAutomaton Q Γ) :
@@ -362,7 +362,7 @@ noncomputable def simLeftRules (M : LinearBoundedAutomaton Q Γ) :
               cellSym orig write none true bnd])]
         | _ => []
 
-/-- The conversion rules: an active cell becomes its original terminal. The
+/-- **Conversion rules of the LBA grammar.** The conversion rules: an active cell becomes its original terminal. The
 head cell converts only in the accepting state, so a terminal word is
 produced only from an accepting configuration. The boundary tag is
 discarded on conversion. -/
@@ -373,7 +373,7 @@ noncomputable def convRules (M : LinearBoundedAutomaton Q Γ) :
       [([cellSym a cur (some M.qAcc) true bnd], [termSym a]),
        ([cellSym a cur none true bnd], [termSym a])]
 
-/-- All the rules of the grammar. -/
+/-- **All rules of the LBA grammar.** All the rules of the grammar. -/
 noncomputable def allRules (M : LinearBoundedAutomaton Q Γ) : List (List (Symbol Γ (LBANT Γ Q)) × List (Symbol Γ (LBANT Γ Q))) :=
   genRules M ++ activateRules ++ simStayRules M ++ simRightRules M ++
     simLeftRules M ++ convRules M
@@ -385,7 +385,7 @@ noncomputable def lbaGrammar (M : LinearBoundedAutomaton Q Γ) : CSGrammar Γ (L
   rules := allRules M
   initial := .start
 
-/-- The first generation rule is a rule of the grammar. -/
+/-- **The start rule is a generation rule of the LBA grammar.** The first generation rule is a rule of the grammar. -/
 theorem mem_genRules_start (a : Γ) :
     ([startSym (Γ := Γ) (Q := Q)],
       [cellSym a (some a) (some M.q₀) false .left, genSym (Γ := Γ) (Q := Q)]) ∈
@@ -453,7 +453,7 @@ theorem lbaGrammar_contextSensitive : IsContextSensitive M.lbaGrammar := by
 
 /-! ### Configurations as sentential forms -/
 
-/-- The cells of a configuration, as a list of cell tuples: original symbol,
+/-- **Cell tuples of an LBA configuration from an offset.** The cells of a configuration, as a list of cell tuples: original symbol,
 current symbol, head state, active, boundary tag. The head is given as
 `some i` for the head position, or `none` once it has been passed. The
 `start` index is the position of the first cell in the whole word and
@@ -473,32 +473,32 @@ def encodeCellsAux : List Γ → List (Option Γ) → Option ℕ → Q → ℕ �
       (a, cur, none, true, LBABoundary.ofHead i total) ::
         encodeCellsAux w tape none q (i + 1) total
 
-/-- A cell tuple as a grammar symbol. -/
+/-- **Cell tuple as a grammar symbol.** A cell tuple as a grammar symbol. -/
 def cellTupleSym : Γ × Option Γ × Option Q × Bool × LBABoundary →
     Symbol Γ (LBANT Γ Q)
   | ⟨orig, cur, st, active, bnd⟩ => cellSym orig cur st active bnd
 
-/-- A configuration as a sentential form: the cells of its tape, with the
+/-- **Configuration encoded as a sentential form.** A configuration as a sentential form: the cells of its tape, with the
 original symbols taken from the input word `w`. -/
 def encodeCfg (_M : LinearBoundedAutomaton Q Γ) (w : List Γ) (cfg : LBAConfig Q Γ) :
     List (Symbol Γ (LBANT Γ Q)) :=
   (encodeCellsAux w cfg.tape (if cfg.head < w.length then some cfg.head else none)
     cfg.state 0 w.length).map cellTupleSym
 
-/-- The middle non-head generated cells of a word, inactive: the cells the
+/-- **Middle generated cells of a word.** The middle non-head generated cells of a word, inactive: the cells the
 generator produces while the generator remains. -/
 def tailCellsMid : List Γ → List (Γ × Option Γ × Option Q × Bool × LBABoundary)
   | [] => []
   | a :: w => (a, some a, none, false, .middle) :: tailCellsMid w
 
-/-- The non-head generated cells of a word, inactive, as the tail of a
+/-- **Tail generated cells of a word.** The non-head generated cells of a word, inactive, as the tail of a
 generated word: middle cells and a final right cell. -/
 def tailCells : List Γ → List (Γ × Option Γ × Option Q × Bool × LBABoundary)
   | [] => []
   | [a] => [(a, some a, none, false, .right)]
   | a :: b :: w => (a, some a, none, false, .middle) :: tailCells (b :: w)
 
-/-- The generated cells of a word, inactive, with the head state on the first
+/-- **Generated cells of a word.** The generated cells of a word, inactive, with the head state on the first
 cell: the sentential form generation produces. The first cell is tagged
 `both` for a one-cell word and `left` otherwise; the tail is `tailCells`. -/
 def genCells (M : LinearBoundedAutomaton Q Γ) :
@@ -507,17 +507,17 @@ def genCells (M : LinearBoundedAutomaton Q Γ) :
   | [a] => [(a, some a, some M.q₀, false, .both)]
   | a :: b :: w => (a, some a, some M.q₀, false, .left) :: tailCells (b :: w)
 
-/-- The generated sentential form of a word. -/
+/-- **Generated sentential form of a word.** The generated sentential form of a word. -/
 def genEncode (M : LinearBoundedAutomaton Q Γ) (w : List Γ) :
     List (Symbol Γ (LBANT Γ Q)) :=
   (genCells (M := M) w).map cellTupleSym
 
-/-- The non-head generated sentential form of a word. -/
+/-- **Tail generated sentential form of a word.** The non-head generated sentential form of a word. -/
 def tailEncode (_M : LinearBoundedAutomaton Q Γ) (w : List Γ) :
     List (Symbol Γ (LBANT Γ Q)) :=
   (tailCells w).map cellTupleSym
 
-/-- The middle non-head generated sentential form of a word: every cell
+/-- **Middle generated sentential form of a word.** The middle non-head generated sentential form of a word: every cell
 tagged `middle`, for the generator's intermediate stage. -/
 def tailEncodeMid (_M : LinearBoundedAutomaton Q Γ) (w : List Γ) :
     List (Symbol Γ (LBANT Γ Q)) :=
@@ -525,7 +525,7 @@ def tailEncodeMid (_M : LinearBoundedAutomaton Q Γ) (w : List Γ) :
 
 /-! ### Lemmas about the encoding -/
 
-/-- The encoding has as many cells as the input word, when the tape has the
+/-- **Length of the cell-tuple encoding.** The encoding has as many cells as the input word, when the tape has the
 same length. -/
 theorem length_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Option ℕ} {q : Q}
     {start total : ℕ} (hl : w.length = tape.length) :
@@ -545,7 +545,7 @@ theorem length_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Optio
         | zero => simp only [encodeCellsAux, List.length_cons, ih hl']
         | succ n => simp only [encodeCellsAux, List.length_cons, ih hl']
 
-/-- The `i`-th cell of the encoding: original `w[i]`, current `tape[i]`,
+/-- **Entries of the cell-tuple encoding.** The `i`-th cell of the encoding: original `w[i]`, current `tape[i]`,
 head state exactly at the head position, boundary tag of position
 `start + i` in a word of length `total`. -/
 theorem getElem_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Option ℕ} {q : Q}
@@ -597,7 +597,7 @@ theorem getElem_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Opti
             rw [hIH]
             simp only [Option.some.injEq, Nat.succ.injEq, List.getElem?_cons_succ]
 
-/-- One grammar step replacing a block: if `u` splits as `p ++ lhs ++ q`
+/-- **Replacing a block by a rule is a derivation step.** One grammar step replacing a block: if `u` splits as `p ++ lhs ++ q`
 and `(lhs, rhs)` is a rule, then `u` derives `p ++ rhs ++ q`. -/
 theorem derives_replace_list {u p q lhs rhs : List (Symbol Γ (LBANT Γ Q))}
     (hu : u = p ++ lhs ++ q) (hrule : (lhs, rhs) ∈ M.lbaGrammar.rules) :
@@ -606,46 +606,46 @@ theorem derives_replace_list {u p q lhs rhs : List (Symbol Γ (LBANT Γ Q))}
   exact Cslib.Decidability.Rewriting.Derives.single
     (Cslib.Decidability.Rewriting.Step.mk p q (by simpa [lbaGrammar] using hrule))
 
-/-- One grammar step replacing a single cell by a single cell. -/
+/-- **Replacing a single cell is a derivation step.** One grammar step replacing a single cell by a single cell. -/
 theorem derives_single_cell {u p q : List (Symbol Γ (LBANT Γ Q))}
     {x y : Symbol Γ (LBANT Γ Q)} (hu : u = p ++ [x] ++ q)
     (hrule : ([x], [y]) ∈ M.lbaGrammar.rules) :
     Derives M.lbaGrammar u (p ++ [y] ++ q) :=
   derives_replace_list hu hrule
 
-/-- One grammar step replacing two consecutive cells. -/
+/-- **Replacing two consecutive cells is a derivation step.** One grammar step replacing two consecutive cells. -/
 theorem derives_two_cells {u p q : List (Symbol Γ (LBANT Γ Q))}
     {x₁ x₂ y₁ y₂ : Symbol Γ (LBANT Γ Q)} (hu : u = p ++ [x₁, x₂] ++ q)
     (hrule : ([x₁, x₂], [y₁, y₂]) ∈ M.lbaGrammar.rules) :
     Derives M.lbaGrammar u (p ++ [y₁, y₂] ++ q) :=
   derives_replace_list hu hrule
 
-/-- A singleton-to-singleton production is a derivation step. -/
+/-- **Singleton-to-singleton productions are derivation steps.** A singleton-to-singleton production is a derivation step. -/
 theorem derives_singleton_cell {x y : Symbol Γ (LBANT Γ Q)}
     (hrule : ([x], [y]) ∈ M.lbaGrammar.rules) :
     Derives M.lbaGrammar [x] [y] :=
   derives_replace_list (u := [x]) (p := []) (q := []) (lhs := [x]) (rhs := [y])
     (hu := by rfl) hrule
 
-/-- A derivation may be appended on the left. -/
+/-- **Derivations extend by a left context.** A derivation may be appended on the left. -/
 theorem derives_append_left {u v : List (Symbol Γ (LBANT Γ Q))}
     (p : List (Symbol Γ (LBANT Γ Q))) (h : Derives M.lbaGrammar u v) :
     Derives M.lbaGrammar (p ++ u) (p ++ v) :=
   Cslib.Decidability.Rewriting.Derives.append_left h p
 
-/-- A derivation may be appended on the right. -/
+/-- **Derivations extend by a right context.** A derivation may be appended on the right. -/
 theorem derives_append_right {u v : List (Symbol Γ (LBANT Γ Q))}
     (p : List (Symbol Γ (LBANT Γ Q))) (h : Derives M.lbaGrammar u v) :
     Derives M.lbaGrammar (u ++ p) (v ++ p) :=
   Cslib.Decidability.Rewriting.Derives.append_right h p
 
-/-- Derivations compose under append. -/
+/-- **Derivations compose under concatenation.** Derivations compose under append. -/
 theorem derives_append {a b c d : List (Symbol Γ (LBANT Γ Q))}
     (h₁ : Derives M.lbaGrammar a b) (h₂ : Derives M.lbaGrammar c d) :
     Derives M.lbaGrammar (a ++ c) (b ++ d) :=
   Cslib.Decidability.Rewriting.Derives.append h₁ h₂
 
-/-- Derivations are transitive. -/
+/-- **Transitivity of grammar derivations.** Derivations are transitive. -/
 theorem derives_trans {a b c : List (Symbol Γ (LBANT Γ Q))}
     (h₁ : Derives M.lbaGrammar a b) (h₂ : Derives M.lbaGrammar b c) :
     Derives M.lbaGrammar a c :=
@@ -653,41 +653,41 @@ theorem derives_trans {a b c : List (Symbol Γ (LBANT Γ Q))}
 
 /-! ### Rule membership -/
 
-/-- The first generation rule is a rule of the grammar. -/
+/-- **The first generation rule belongs to the LBA grammar.** The first generation rule is a rule of the grammar. -/
 theorem mem_rule_gen_start (a : Γ) :
     ([startSym (Γ := Γ) (Q := Q)],
       [cellSym a (some a) (some M.q₀) false .left, genSym (Γ := Γ) (Q := Q)]) ∈
       M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, genRules]
 
-/-- The one-cell generation rule is a rule of the grammar. -/
+/-- **The one-cell generation rule belongs to the LBA grammar.** The one-cell generation rule is a rule of the grammar. -/
 theorem mem_rule_gen_single (a : Γ) :
     ([startSym (Γ := Γ) (Q := Q)],
       [cellSym a (some a) (some M.q₀) false .both]) ∈
       M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, genRules]
 
-/-- The generator step rule is a rule of the grammar. -/
+/-- **The generator step rule belongs to the LBA grammar.** The generator step rule is a rule of the grammar. -/
 theorem mem_rule_gen_step (a : Γ) :
     ([genSym (Γ := Γ) (Q := Q)],
       [cellSym a (some a) none false .middle, genSym (Γ := Γ) (Q := Q)]) ∈
       M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, genRules]
 
-/-- The final generation rule is a rule of the grammar. -/
+/-- **The final generation rule belongs to the LBA grammar.** The final generation rule is a rule of the grammar. -/
 theorem mem_rule_gen_last (a : Γ) :
     ([genSym (Γ := Γ) (Q := Q)], [cellSym a (some a) none false .right]) ∈
       M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, genRules]
 
-/-- The activation rule is a rule of the grammar. -/
+/-- **The activation rule belongs to the LBA grammar.** The activation rule is a rule of the grammar. -/
 theorem mem_rule_activate (a : Γ) (cur : Option Γ) (st : Option Q)
     (bnd : LBABoundary) :
     ([cellSym a cur st false bnd], [cellSym a cur st true bnd]) ∈
       M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, activateRules]
 
-/-- A stay transition gives a simulation rule. -/
+/-- **Stay transitions give simulation rules.** A stay transition gives a simulation rule. -/
 theorem mem_rule_sim_stay {q q' : Q} {read write : Option Γ} {orig : Γ}
     {bnd : LBABoundary}
     (h : (q', write, LBAMove.stay) ∈ M.delta q read bnd) :
@@ -703,7 +703,7 @@ theorem mem_rule_sim_stay {q q' : Q} {read write : Option Γ} {orig : Γ}
   apply List.mem_flatMap.mpr
   exact ⟨⟨q', write, LBAMove.stay⟩, Finset.mem_toList.mpr h, by simp⟩
 
-/-- A right transition gives a simulation rule. -/
+/-- **Right transitions give simulation rules.** A right transition gives a simulation rule. -/
 theorem mem_rule_sim_right {q q' : Q} {read write : Option Γ} {orig orig₂ : Γ}
     {cur₂ : Option Γ} {bnd bnd₂ : LBABoundary}
     (h : (q', write, LBAMove.right) ∈ M.delta q read bnd) :
@@ -720,7 +720,7 @@ theorem mem_rule_sim_right {q q' : Q} {read write : Option Γ} {orig orig₂ : �
   apply List.mem_flatMap.mpr
   exact ⟨⟨q', write, LBAMove.right⟩, Finset.mem_toList.mpr h, by simp⟩
 
-/-- A left transition gives a simulation rule. -/
+/-- **Left transitions give simulation rules.** A left transition gives a simulation rule. -/
 theorem mem_rule_sim_left {q q' : Q} {read write : Option Γ} {orig orig₂ : Γ}
     {cur₂ : Option Γ} {bnd bnd₂ : LBABoundary}
     (h : (q', write, LBAMove.left) ∈ M.delta q read bnd) :
@@ -737,19 +737,19 @@ theorem mem_rule_sim_left {q q' : Q} {read write : Option Γ} {orig orig₂ : Γ
   apply List.mem_flatMap.mpr
   exact ⟨⟨q', write, LBAMove.left⟩, Finset.mem_toList.mpr h, by simp⟩
 
-/-- The accepting conversion rule is a rule of the grammar. -/
+/-- **The accepting conversion rule belongs to the LBA grammar.** The accepting conversion rule is a rule of the grammar. -/
 theorem mem_rule_conv_acc (a : Γ) (cur : Option Γ) (bnd : LBABoundary) :
     ([cellSym a cur (some M.qAcc) true bnd], [termSym a]) ∈ M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, convRules]
 
-/-- The non-head conversion rule is a rule of the grammar. -/
+/-- **The non-head conversion rule belongs to the LBA grammar.** The non-head conversion rule is a rule of the grammar. -/
 theorem mem_rule_conv_none (a : Γ) (cur : Option Γ) (bnd : LBABoundary) :
     ([cellSym a cur none true bnd], [termSym a]) ∈ M.lbaGrammar.rules := by
   simp [lbaGrammar, allRules, convRules]
 
 /-! ### Generation and activation -/
 
-/-- The generator derives the middle tail cells followed by itself. -/
+/-- **The generator derives the middle cells and itself.** The generator derives the middle tail cells followed by itself. -/
 theorem derives_gen_tail : ∀ w : List Γ,
     Derives M.lbaGrammar [genSym (Γ := Γ) (Q := Q)]
       (tailEncodeMid M w ++ [genSym]) := by
@@ -766,7 +766,7 @@ theorem derives_gen_tail : ∀ w : List Γ,
     exact derives_trans hstep
       (derives_append_left [cellSym a (some a) none false .middle] ih)
 
-/-- The generator derives the tail cells, ending the generation. -/
+/-- **The generator derives the full tail of cells.** The generator derives the tail cells, ending the generation. -/
 theorem derives_gen_tail_last : ∀ w : List Γ, w ≠ [] →
     Derives M.lbaGrammar [genSym (Γ := Γ) (Q := Q)] (tailEncode M w) := by
   intro w _
@@ -788,7 +788,7 @@ theorem derives_gen_tail_last : ∀ w : List Γ, w ≠ [] →
       exact derives_trans hstep
         (derives_append_left [cellSym a (some a) none false .middle] ih')
 
-/-- The start symbol derives the generated sentential form of a word. -/
+/-- **The start symbol derives the generated form of a word.** The start symbol derives the generated sentential form of a word. -/
 theorem derives_start_genEncode : ∀ w : List Γ, w ≠ [] →
     Derives M.lbaGrammar [startSym (Γ := Γ) (Q := Q)] (genEncode M w) := by
   intro w _
@@ -810,7 +810,7 @@ theorem derives_start_genEncode : ∀ w : List Γ, w ≠ [] →
       exact derives_trans hstep
         (derives_append_left [cellSym a (some a) (some M.q₀) false .left] htail)
 
-/-- The tail cells, sitting at offset `start ≥ 1` in a word of total length
+/-- **Tail cells derive their activated encoding.** The tail cells, sitting at offset `start ≥ 1` in a word of total length
 `start + w.length`, derive their activated encoding. The offset stays
 `≥ 1` in the induction step, so the first tail cell is never tagged
 `left`: it is `right` when it is the last cell and `middle` otherwise. -/
@@ -855,7 +855,7 @@ theorem derives_tail_activate : ∀ (w : List Γ) (start : ℕ), 1 ≤ start →
         derives_singleton_cell (mem_rule_activate a (some a) none .middle)
       exact derives_append hstep (ih (start + 1) (by omega))
 
-/-- The generated form derives the encoding of the initial configuration. -/
+/-- **Generated form derives the initial configuration encoding.** The generated form derives the encoding of the initial configuration. -/
 theorem derives_gen_activate : ∀ w : List Γ,
     Derives M.lbaGrammar (genEncode M w) (encodeCfg M w (M.initCfg w)) := by
   intro w
@@ -897,7 +897,7 @@ theorem derives_gen_activate : ∀ w : List Γ,
 
 /-! ### Derivations by setting cells -/
 
-/-- A list splits at two consecutive positions. -/
+/-- **Splitting a list at two consecutive positions.** A list splits at two consecutive positions. -/
 theorem take_append_two {α : Type*} {l : List α} {i : ℕ} (hi : i + 1 < l.length) :
     l = List.take i l ++ [l[i]'(by omega), l[i + 1]'hi] ++ List.drop (i + 2) l := by
   have h1 : l = List.take i l ++ [l[i]'(by omega)] ++ List.drop (i + 1) l := by
@@ -907,7 +907,7 @@ theorem take_append_two {α : Type*} {l : List α} {i : ℕ} (hi : i + 1 < l.len
   rw [h2] at h1
   exact h1.trans (by simp only [List.append_assoc, List.cons_append, List.nil_append])
 
-/-- A single-cell replacement that is a production is a derivation step. -/
+/-- **Setting one list position by a production is a derivation step.** A single-cell replacement that is a production is a derivation step. -/
 theorem derives_set_single {u : List (Symbol Γ (LBANT Γ Q))} {i : ℕ}
     {y : Symbol Γ (LBANT Γ Q)} (hi : i < u.length)
     (hrule : ([u[i]'hi], [y]) ∈ M.lbaGrammar.rules) :
@@ -920,7 +920,7 @@ theorem derives_set_single {u : List (Symbol Γ (LBANT Γ Q))} {i : ℕ}
   exact derives_replace_list (p := List.take i u) (q := List.drop (i + 1) u)
     (lhs := [u[i]'hi]) (rhs := [y]) (hu := hdec) hrule
 
-/-- Dropping past a set position is unaffected by the set. -/
+/-- **Dropping past an updated list position.** Dropping past a set position is unaffected by the set. -/
 theorem drop_set_of_gt {α : Type*} {l : List α} {i : ℕ} {y : α} (hi : i < l.length) :
     List.drop (i + 2) (l.set i y) = List.drop (i + 2) l := by
   induction l generalizing i with
@@ -932,7 +932,7 @@ theorem drop_set_of_gt {α : Type*} {l : List α} {i : ℕ} {y : α} (hi : i < l
       change List.drop (j + 2) (l.set j y) = List.drop (j + 2) l
       exact ih (i := j) (by simp only [List.length_cons] at hi; omega)
 
-/-- Taking past a set position keeps the new value at that position. -/
+/-- **Taking past an updated list position.** Taking past a set position keeps the new value at that position. -/
 theorem take_set {α : Type*} {l : List α} {i : ℕ} {y : α} (hi : i < l.length) :
     List.take (i + 1) (l.set i y) = List.take i l ++ [y] := by
   induction l generalizing i with
@@ -944,7 +944,7 @@ theorem take_set {α : Type*} {l : List α} {i : ℕ} {y : α} (hi : i < l.lengt
       change x :: List.take (j + 1) (l.set j y) = (x :: List.take j l) ++ [y]
       rw [ih (i := j) (by simp only [List.length_cons] at hi; omega), List.cons_append]
 
-/-- A two-cell replacement that is a production is a derivation step. -/
+/-- **Setting two adjacent list positions by a production is a derivation step.** A two-cell replacement that is a production is a derivation step. -/
 theorem derives_set_two {u : List (Symbol Γ (LBANT Γ Q))} {i : ℕ}
     {y₁ y₂ : Symbol Γ (LBANT Γ Q)} (hi : i + 1 < u.length)
     (hrule : ([u[i]'(by omega), u[i + 1]'hi], [y₁, y₂]) ∈ M.lbaGrammar.rules) :
@@ -967,7 +967,7 @@ theorem derives_set_two {u : List (Symbol Γ (LBANT Γ Q))} {i : ℕ}
   exact derives_replace_list (p := List.take i u) (q := List.drop (i + 2) u)
     (lhs := [u[i]'(by omega), u[i + 1]'hi]) (rhs := [y₁, y₂]) (hu := hdec) hrule
 
-/-- A two-cell replacement at positions `i` and `j = i + 1`. -/
+/-- **Two-cell replacement at indices $i$ and $j = i + 1$.** A two-cell replacement at positions `i` and `j = i + 1`. -/
 theorem derives_set_two' {u : List (Symbol Γ (LBANT Γ Q))} {i j : ℕ}
     {y₁ y₂ : Symbol Γ (LBANT Γ Q)} (hi : i + 1 < u.length) (hj : j = i + 1)
     (hrule : ([u[i]'(by omega), u[j]'(by omega)], [y₁, y₂]) ∈ M.lbaGrammar.rules) :
@@ -977,13 +977,13 @@ theorem derives_set_two' {u : List (Symbol Γ (LBANT Γ Q))} {i j : ℕ}
 
 /-! ### Encoding lemmas -/
 
-/-- The encoding of a configuration has as many cells as the input word. -/
+/-- **Length of a configuration encoding.** The encoding of a configuration has as many cells as the input word. -/
 theorem length_encodeCfg {w : List Γ} {cfg : LBAConfig Q Γ}
     (hl : cfg.tape.length = w.length) : (encodeCfg M w cfg).length = w.length := by
   simp only [encodeCfg, List.length_map,
     length_encodeCellsAux (by rw [hl] : w.length = cfg.tape.length)]
 
-/-- The `i`-th cell of the encoding. -/
+/-- **Entries of a configuration encoding.** The `i`-th cell of the encoding. -/
 theorem getElem_encodeCfg {w : List Γ} {cfg : LBAConfig Q Γ} {i : ℕ}
     (hl : cfg.tape.length = w.length) (hhead : cfg.head < w.length)
     (hi : i < w.length) :
@@ -1009,20 +1009,20 @@ theorem getElem_encodeCfg {w : List Γ} {cfg : LBAConfig Q Γ} {i : ℕ}
     have hne2 : i ≠ cfg.head := hihead
     simp only [cellTupleSym, if_neg hne1, if_neg hne2, Nat.zero_add]
 
-/-- One step preserves the tape length. -/
+/-- **LBA steps preserve tape length.** One step preserves the tape length. -/
 theorem step_tape_length {c c' : LBAConfig Q Γ} (h : M.Step c c') :
     c'.tape.length = c.tape.length := by
   obtain ⟨q', b', mv, -, rfl, -⟩ := h
   simp [List.length_set]
 
-/-- One step keeps the head on the tape, when the source head is on the tape. -/
+/-- **LBA steps keep the head on the tape.** One step keeps the head on the tape, when the source head is on the tape. -/
 theorem step_head_lt {c c' : LBAConfig Q Γ} (h : M.Step c c')
     (hhead : c.head < c.tape.length) : c'.head < c'.tape.length := by
   obtain ⟨q', b', mv, -, rfl, hlegal⟩ := h
   rw [List.length_set]
   cases mv <;> simp only [LBAMove.moveHead, LBAMove.legal] at hlegal ⊢ <;> omega
 
-/-- Reachable configurations have the input tape length and the head on the
+/-- **Reachable LBA configurations keep the tape length and the head on the tape.** Reachable configurations have the input tape length and the head on the
 tape, for a nonempty input word. -/
 theorem reachable_tape_length {w : List Γ} {c : LBAConfig Q Γ} (hw : w ≠ [])
     (h : Relation.ReflTransGen M.Step (M.initCfg w) c) :
@@ -1041,7 +1041,7 @@ theorem reachable_tape_length {w : List Γ} {c : LBAConfig Q Γ} (hw : w ≠ [])
     refine ⟨(step_tape_length hstep).trans hl, ?_⟩
     exact step_head_lt hstep hhead
 
-/-- One machine step is one grammar derivation step on encodings. -/
+/-- **An LBA step is a grammar derivation step on encodings.** One machine step is one grammar derivation step on encodings. -/
 theorem derives_encodeCfg_step {w : List Γ} {c c' : LBAConfig Q Γ}
     (_hw : w ≠ []) (hstep : M.Step c c')
     (hl : c.tape.length = w.length) (hhead : c.head < c.tape.length) :
@@ -1252,7 +1252,7 @@ theorem derives_encodeCfg_step {w : List Γ} {c c' : LBAConfig Q Γ}
 
 /-! ### Conversion and completeness -/
 
-/-- Every cell of an encoding has head state `none` or the given state. -/
+/-- **Head states in a configuration encoding.** Every cell of an encoding has head state `none` or the given state. -/
 theorem encodeCellsAux_state {w : List Γ} {tape : List (Option Γ)} {h : Option ℕ} {q : Q}
     {start total : ℕ}
     {cell : Γ × Option Γ × Option Q × Bool × LBABoundary}
@@ -1283,7 +1283,7 @@ theorem encodeCellsAux_state {w : List Γ} {tape : List (Option Γ)} {h : Option
           · exact Or.inl rfl
           · exact ih hmem
 
-/-- Every cell of an encoding is active. -/
+/-- **Every cell of a configuration encoding is active.** Every cell of an encoding is active. -/
 theorem encodeCellsAux_active {w : List Γ} {tape : List (Option Γ)} {h : Option ℕ} {q : Q}
     {start total : ℕ}
     {cell : Γ × Option Γ × Option Q × Bool × LBABoundary}
@@ -1314,7 +1314,7 @@ theorem encodeCellsAux_active {w : List Γ} {tape : List (Option Γ)} {h : Optio
           · rfl
           · exact ih hmem
 
-/-- The original symbols of an encoding are the input word. -/
+/-- **Original symbols of an encoding are the input word.** The original symbols of an encoding are the input word. -/
 theorem map_orig_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Option ℕ} {q : Q}
     {start total : ℕ} (hl : w.length = tape.length) :
     (encodeCellsAux w tape h q start total).map (fun cell ↦ termSym (Q := Q) cell.1) =
@@ -1346,7 +1346,7 @@ theorem map_orig_encodeCellsAux {w : List Γ} {tape : List (Option Γ)} {h : Opt
                 encodeCellsAux w tape (some n) q (start + 1) total from rfl,
             List.map_cons, List.map_cons, ih (tape := tape) hl' (h := some n)]
 
-/-- A list of cells, each non-head or accepting, converts to its original
+/-- **Non-head or accepting cells convert to terminals.** A list of cells, each non-head or accepting, converts to its original
 terminals. -/
 theorem derives_convert_cells :
     ∀ (cells : List (Γ × Option Γ × Option Q × Bool × LBABoundary)),
@@ -1378,7 +1378,7 @@ theorem derives_convert_cells :
       · exact derives_singleton_cell (mem_rule_conv_acc a cur bnd)
     exact derives_append hstep (ih htail)
 
-/-- Derivations along a run, keeping the tape length and head on the tape. -/
+/-- **Runs of an LBA give grammar derivations.** Derivations along a run, keeping the tape length and head on the tape. -/
 theorem derives_encodeCfg_reflTransGen {w : List Γ} {c : LBAConfig Q Γ} (hw : w ≠ [])
     (h : Relation.ReflTransGen M.Step (M.initCfg w) c) :
     c.tape.length = w.length ∧ c.head < c.tape.length ∧

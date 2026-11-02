@@ -77,7 +77,7 @@ variable {k : ℕ}
 
 /-! ### Actions and codes -/
 
-/-- Decode a head move: `0` moves left, `1` stays, anything else moves right. -/
+/-- **Decoding a Turing machine head move.** Decode a head move: `0` moves left, `1` stays, anything else moves right. -/
 def decodeMove (m : ℕ) : SignType :=
   if m = 0 then -1 else if m = 1 then 0 else 1
 

@@ -510,7 +510,7 @@ public theorem_wanted ascendingNaplesCount_eq_card_dyckPath {n k : ℕ} (hn : 1 
             ∃ j, i + 1 < j ∧ j ≤ i + 1 + 2 * k ∧ j ≤ 2 * (n + k) ∧
               (k : ℤ) < dyckStepHeight p.1.toList j).card
 
-/-- The number of nodes on the left spine of a binary tree: the root, its left child, that
+/-- **Left spine length of a binary tree.** The number of nodes on the left spine of a binary tree: the root, its left child, that
 child's left child, and so on (`0` for the empty tree).
 
 Source: J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez,

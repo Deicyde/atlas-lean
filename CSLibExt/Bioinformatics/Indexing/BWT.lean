@@ -73,39 +73,39 @@ set_option autoImplicit false
 
 namespace Cslib.Bioinformatics.Indexing.BWT
 
-/-- The text `t` with the sentinel `⊥` appended: `t.map (↑) ++ [⊥]`. The sentinel is the unique
+/-- **Text with an appended sentinel.** The text `t` with the sentinel `⊥` appended: `t.map (↑) ++ [⊥]`. The sentinel is the unique
 occurrence of `⊥` and is smaller than every letter. -/
 def withSentinel {α : Type*} (t : List α) : List (WithBot α) := t.map (↑) ++ [⊥]
 
-/-- The starting positions `0, …, |t|` of the rotations of `withSentinel t`, sorted by their
+/-- **Sorted rotations of a sentinel-terminated text.** The starting positions `0, …, |t|` of the rotations of `withSentinel t`, sorted by their
 rotations in lexicographic order: row `r` of the Burrows–Wheeler matrix is
 `(withSentinel t).rotate ((sortedRotations t)[r])`. -/
 def sortedRotations {α : Type*} [LinearOrder α] (t : List α) : List ℕ :=
   (List.range (t.length + 1)).mergeSort
     (fun i j => decide ((withSentinel t).rotate i ≤ (withSentinel t).rotate j))
 
-/-- The Burrows–Wheeler transform: the last column of the sorted rotation matrix. -/
+/-- **Burrows–Wheeler transform.** The Burrows–Wheeler transform: the last column of the sorted rotation matrix. -/
 def bwt {α : Type*} [LinearOrder α] (t : List α) : List (WithBot α) :=
   (sortedRotations t).map fun i => ((withSentinel t).rotate i).getLastD ⊥
 
-/-- `C[c]`: the number of letters of `L` smaller than `c`. -/
+/-- **Count of smaller letters in the FM-index.** `C[c]`: the number of letters of `L` smaller than `c`. -/
 def countLess {α : Type*} [LinearOrder α] (L : List (WithBot α)) (c : WithBot α) : ℕ :=
   L.countP (· < c)
 
-/-- `rank_c(L, r)`: the number of occurrences of `c` among the first `r` letters of `L`. -/
+/-- **Rank of a letter in a prefix of the last column.** `rank_c(L, r)`: the number of occurrences of `c` among the first `r` letters of `L`. -/
 def rank {α : Type*} [LinearOrder α] (L : List (WithBot α)) (c : WithBot α) (r : ℕ) : ℕ :=
   (L.take r).count c
 
-/-- The LF-mapping computed from the last column alone: `LF(r) = C[L[r]] + rank_{L[r]}(L, r)`. -/
+/-- **LF-mapping from the last column.** The LF-mapping computed from the last column alone: `LF(r) = C[L[r]] + rank_{L[r]}(L, r)`. -/
 def lf {α : Type*} [LinearOrder α] (L : List (WithBot α)) (r : ℕ) : ℕ :=
   countLess L (L.getD r ⊥) + rank L (L.getD r ⊥) r
 
-/-- `k` steps of the inversion walk from row `r`: the letters `L[r], L[LF r], …`. -/
+/-- **Steps of the Burrows–Wheeler inversion walk.** `k` steps of the inversion walk from row `r`: the letters `L[r], L[LF r], …`. -/
 def invertAux {α : Type*} [LinearOrder α] (L : List (WithBot α)) : ℕ → ℕ → List (WithBot α)
   | 0, _ => []
   | k + 1, r => L.getD r ⊥ :: invertAux L k (lf L r)
 
-/-- Inversion of the Burrows–Wheeler transform: walk the LF-mapping `|L| - 1` times from row `0`
+/-- **Inversion of the Burrows–Wheeler transform.** Inversion of the Burrows–Wheeler transform: walk the LF-mapping `|L| - 1` times from row `0`
 (the rotation that starts with the sentinel) and reverse the letters read. -/
 def invert {α : Type*} [LinearOrder α] (L : List (WithBot α)) : List (WithBot α) :=
   (invertAux L (L.length - 1) 0).reverse
@@ -118,7 +118,7 @@ private theorem sortedRotations_length {α : Type*} [LinearOrder α] (t : List �
     (sortedRotations t).length = t.length + 1 := by
   simpa using (sortedRotations_perm t).length_eq
 
-/-- The Burrows–Wheeler transform of `t` has length `|t| + 1` (the sentinel adds one letter). -/
+/-- **Length of the Burrows–Wheeler transform.** The Burrows–Wheeler transform of `t` has length `|t| + 1` (the sentinel adds one letter). -/
 theorem length_bwt {α : Type*} [LinearOrder α] (t : List α) :
     (bwt t).length = t.length + 1 := by
   simp [bwt, sortedRotations_length]
@@ -160,7 +160,7 @@ private theorem lf_bound {α : Type*} [LinearOrder α] (L : List (WithBot α))
   unfold lf rank
   omega
 
-/-- A sentinel-free word `P` is a prefix of `u ++ ⊥ :: v` (letters lifted to `WithBot α`) exactly
+/-- **The sentinel stops every prefix match.** A sentinel-free word `P` is a prefix of `u ++ ⊥ :: v` (letters lifted to `WithBot α`) exactly
 when it is a prefix of `u`: the sentinel `⊥` stops every match. -/
 theorem map_coe_prefix_append_bot_cons_iff {α : Type*} (P u : List α)
     (v : List (WithBot α)) :
@@ -205,7 +205,7 @@ private theorem sentinel_rotation_lt {α : Type*} [LinearOrder α] (t : List α)
   rw [he]
   exact List.Lex.rel (WithBot.bot_lt_coe a)
 
-/-- The rows of the Burrows–Wheeler matrix are sorted: the rotations listed by
+/-- **Rows of the Burrows–Wheeler matrix are sorted.** The rows of the Burrows–Wheeler matrix are sorted: the rotations listed by
 `sortedRotations t` are in lexicographically nondecreasing order. -/
 theorem pairwise_sortedRotations {α : Type*} [LinearOrder α] (t : List α) :
     (sortedRotations t).Pairwise
@@ -546,7 +546,7 @@ theorem invert_bwt {α : Type*} [LinearOrder α] (t : List α) : invert (bwt t) 
     (by omega) (sortedRotations_zero t)]
   simp
 
-/-- FM-index backward search: the half-open row interval `[sp, ep)` for a pattern, computed from
+/-- **FM-index backward search.** FM-index backward search: the half-open row interval `[sp, ep)` for a pattern, computed from
 the last column alone, processing the pattern from its last letter to its first. The interval for
 the suffix and `C[c]` are each computed once per letter, so a pattern of length `m` makes `m`
 recursive calls. -/
@@ -682,7 +682,7 @@ private theorem prefix_dropLast_rotation {α : Type*} (t P : List α) (i : ℕ) 
     simp only [List.length_dropLast]
     omega
 
-/-- Backward search always returns a genuine interval of rows, `sp ≤ ep ≤ |L|`, on any list `L`
+/-- **Backward search returns a genuine row interval.** Backward search always returns a genuine interval of rows, `sp ≤ ep ≤ |L|`, on any list `L`
 (so the difference in `backwardSearch_count` involves no truncated subtraction). -/
 theorem backwardSearch_bounds {α : Type*} [LinearOrder α]
     (L : List (WithBot α)) (P : List α) :

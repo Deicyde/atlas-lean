@@ -58,44 +58,44 @@ namespace MathlibExt.Biology.PopulationGenetics.FStatisticsBasis
 
 variable {P : Type*}
 
-/-- The per-locus `f4` form `x ↦ (x A - x B) * (x C - x D)` on frequency vectors `x : P → ℝ`. -/
+/-- **Per-locus f4 form.** The per-locus `f4` form `x ↦ (x A - x B) * (x C - x D)` on frequency vectors `x : P → ℝ`. -/
 def f4Form (A B C D : P) : (P → ℝ) → ℝ := fun x => (x A - x B) * (x C - x D)
 
-/-- The per-locus `f2` form `x ↦ (x A - x B) ^ 2`. -/
+/-- **Per-locus f2 form.** The per-locus `f2` form `x ↦ (x A - x B) ^ 2`. -/
 def f2Form (A B : P) : (P → ℝ) → ℝ := fun x => (x A - x B) ^ 2
 
-/-- The per-locus `f3` form `x ↦ (x C - x A) * (x C - x B)`. -/
+/-- **Per-locus f3 form.** The per-locus `f3` form `x ↦ (x C - x A) * (x C - x B)`. -/
 def f3Form (C A B : P) : (P → ℝ) → ℝ := f4Form C A C B
 
-/-- `f2Form A B = f4Form A B A B`. -/
+/-- **Per-locus f2 form as a special f4 form.** `f2Form A B = f4Form A B A B`. -/
 theorem f2Form_eq_f4Form (A B : P) : f2Form A B = f4Form A B A B := by
   funext x
   simp [f2Form, f4Form, sq]
 
-/-- The space `V_F` spanned by all per-locus f-statistics (all `f4Form`; `f2Form` and `f3Form`
+/-- **Space spanned by the per-locus f-statistics.** The space `V_F` spanned by all per-locus f-statistics (all `f4Form`; `f2Form` and `f3Form`
 are special cases). -/
 noncomputable def fSpace (P : Type*) : Submodule ℝ ((P → ℝ) → ℝ) :=
   Submodule.span ℝ (Set.range fun q : P × P × P × P => f4Form q.1 q.2.1 q.2.2.1 q.2.2.2)
 
-/-- Every `f4Form` lies in `V_F`. -/
+/-- **Every f4 form lies in the f-statistic space.** Every `f4Form` lies in `V_F`. -/
 theorem f4Form_mem_fSpace (A B C D : P) : f4Form A B C D ∈ fSpace P :=
   Submodule.subset_span ⟨(A, B, C, D), rfl⟩
 
-/-- Every `f2Form` lies in `V_F`. -/
+/-- **Every f2 form lies in the f-statistic space.** Every `f2Form` lies in `V_F`. -/
 theorem f2Form_mem_fSpace (A B : P) : f2Form A B ∈ fSpace P := by
   rw [f2Form_eq_f4Form]
   exact f4Form_mem_fSpace A B A B
 
-/-- Every `f3Form` lies in `V_F`. -/
+/-- **Every f3 form lies in the f-statistic space.** Every `f3Form` lies in `V_F`. -/
 theorem f3Form_mem_fSpace (C A B : P) : f3Form C A B ∈ fSpace P :=
   f4Form_mem_fSpace C A C B
 
-/-- The `f4` statistic is the integral of the `f4` form of the frequency vector. -/
+/-- **f4 statistic as the integral of the f4 form.** The `f4` statistic is the integral of the `f4` form of the frequency vector. -/
 theorem f4_eq_integral_f4Form {Ω : Type*} {m : MeasurableSpace Ω} (μ : Measure Ω)
     (p : P → Ω → ℝ) (A B C D : P) :
     f4 μ p A B C D = ∫ ω, f4Form A B C D (fun X => p X ω) ∂μ := rfl
 
-/-- A linear combination of `f2` forms integrates to the same linear combination of `f2`
+/-- **Integral of a linear combination of f2 forms.** A linear combination of `f2` forms integrates to the same linear combination of `f2`
 statistics, for square-integrable frequencies. -/
 theorem integral_sum_smul_f2Form {Ω ι : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
     {p : P → Ω → ℝ} (hp : ∀ X, MemLp (p X) 2 μ) (s : Finset ι) (c : ι → ℝ) (A B : ι → P) :
@@ -105,36 +105,36 @@ theorem integral_sum_smul_f2Form {Ω ι : Type*} {m : MeasurableSpace Ω} {μ : 
   rw [integral_finsetSum _ fun i _ => (integrable_sub_sq hp (A i) (B i)).const_mul (c i)]
   simp only [integral_const_mul, f2]
 
-/-- `f2Form` is symmetric. -/
+/-- **Symmetry of the per-locus f2 form.** `f2Form` is symmetric. -/
 theorem f2Form_comm (A B : P) : f2Form A B = f2Form B A := by
   funext x
   simp only [f2Form]
   ring
 
-/-- `f2Form A A = 0`. -/
+/-- **Per-locus f2 form of a population with itself is zero.** `f2Form A A = 0`. -/
 @[simp] theorem f2Form_self (A : P) : f2Form A A = 0 := by
   funext x
   simp [f2Form]
 
-/-- `f3Form` is symmetric in its last two arguments. -/
+/-- **Per-locus f3 form is symmetric in its sources.** `f3Form` is symmetric in its last two arguments. -/
 theorem f3Form_comm (C A B : P) : f3Form C A B = f3Form C B A := by
   funext x
   simp only [f3Form, f4Form]
   ring
 
-/-- `f3Form C C B = 0`. -/
+/-- **Per-locus f3 form vanishes when target equals first source.** `f3Form C C B = 0`. -/
 @[simp] theorem f3Form_self_left (C B : P) : f3Form C C B = 0 := by
   funext x
   simp [f3Form, f4Form]
 
-/-- `f4Form` in terms of `f2Form`: the polarization identity behind `f4_eq_f2`. -/
+/-- **Polarization identity for the per-locus f4 form.** `f4Form` in terms of `f2Form`: the polarization identity behind `f4_eq_f2`. -/
 theorem f4Form_eq (A B C D : P) :
     f4Form A B C D = (1 / 2 : ℝ) • (f2Form A D + f2Form B C - f2Form A C - f2Form B D) := by
   funext x
   simp only [f4Form, f2Form, Pi.smul_apply, Pi.add_apply, Pi.sub_apply, smul_eq_mul]
   ring
 
-/-- `f2Form` in terms of the `f3` forms with base `o`. -/
+/-- **Per-locus f2 form in terms of f3 forms with a base population.** `f2Form` in terms of the `f3` forms with base `o`. -/
 theorem f2Form_eq_f3Form (o A B : P) :
     f2Form A B = f3Form o A A + f3Form o B B - (2 : ℝ) • f3Form o A B := by
   funext x
@@ -145,7 +145,7 @@ section Ordered
 
 variable [LinearOrder P]
 
-/-- Patterson's `f2` basis: the forms `f2Form i j`, `i < j`, are linearly independent. -/
+/-- **Linear independence of Patterson's f2 basis.** Patterson's `f2` basis: the forms `f2Form i j`, `i < j`, are linearly independent. -/
 theorem linearIndependent_f2Form :
     LinearIndependent ℝ (fun q : {q : P × P // q.1 < q.2} => f2Form q.1.1 q.1.2) := by
   classical
@@ -195,7 +195,7 @@ theorem linearIndependent_f2Form :
       have := Ne.symm h2
       simp_all
 
-/-- Patterson's `f2` basis: the forms `f2Form i j`, `i < j`, span `V_F`, i.e. every
+/-- **Patterson's f2 basis spans the f-statistic space.** Patterson's `f2` basis: the forms `f2Form i j`, `i < j`, span `V_F`, i.e. every
 f-statistic is a linear combination of the `f2 Pᵢ Pⱼ`, `i < j`. -/
 theorem span_f2Form :
     Submodule.span ℝ (Set.range fun q : {q : P × P // q.1 < q.2} => f2Form q.1.1 q.1.2) =
@@ -217,7 +217,7 @@ theorem span_f2Form :
     exact S.smul_mem _ (S.sub_mem (S.sub_mem (S.add_mem (hmem _ _) (hmem _ _)) (hmem _ _))
       (hmem _ _))
 
-/-- Patterson's `f3` basis with base population `o`: the forms `f3Form o i j` with
+/-- **Linear independence of Patterson's f3 basis.** Patterson's `f3` basis with base population `o`: the forms `f3Form o i j` with
 `i ≤ j`, `i ≠ o`, `j ≠ o` are linearly independent. -/
 theorem linearIndependent_f3Form (o : P) :
     LinearIndependent ℝ
@@ -254,7 +254,7 @@ theorem linearIndependent_f3Form (o : P) :
     clear Φ e hr1 hr2 hq1 hq2
     split_ifs <;> subst_vars <;> norm_num <;> first | order | simp_all
 
-/-- Patterson's `f3` basis with base population `o`: the forms `f3Form o i j` with
+/-- **Patterson's f3 basis spans the f-statistic space.** Patterson's `f3` basis with base population `o`: the forms `f3Form o i j` with
 `i ≤ j`, `i ≠ o`, `j ≠ o` span `V_F`. -/
 theorem span_f3Form (o : P) :
     Submodule.span ℝ
@@ -285,7 +285,7 @@ theorem span_f3Form (o : P) :
 
 end Ordered
 
-/-- The f-statistics of `n` populations span a space of dimension `n choose 2`. (A linear order
+/-- **Dimension of the f-statistic space is n choose 2.** The f-statistics of `n` populations span a space of dimension `n choose 2`. (A linear order
 on the populations, used to index the `f2` basis, is chosen in the proof.) -/
 theorem finrank_fSpace [Fintype P] : Module.finrank ℝ (fSpace P) = (Fintype.card P).choose 2 := by
   classical

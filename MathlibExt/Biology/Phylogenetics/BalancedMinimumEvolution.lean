@@ -72,7 +72,7 @@ namespace MathlibExt.Biology.Phylogenetics.BalancedMinimumEvolution
 
 universe u
 
-/-- A rooted binary tree with leaf labels in `X`; `node a l b r` has the child `l` at the end of
+/-- **Rooted binary tree with edge lengths.** A rooted binary tree with leaf labels in `X`; `node a l b r` has the child `l` at the end of
 an edge of length `a` and the child `r` at the end of an edge of length `b`. -/
 inductive RTree (X : Type u) where
   /-- A leaf with label `x`. -/
@@ -80,7 +80,7 @@ inductive RTree (X : Type u) where
   /-- An internal vertex with children `l` and `r` on edges of lengths `a` and `b`. -/
   | node : ℝ → RTree X → ℝ → RTree X → RTree X
 
-/-- An unrooted binary tree, rooted at its edge of length `len` that joins the roots of the
+/-- **Unrooted binary tree with edge lengths.** An unrooted binary tree, rooted at its edge of length `len` that joins the roots of the
 rooted binary trees `left` and `right`. -/
 structure UTree (X : Type u) where
   /-- The subtree on one side of the root edge. -/
@@ -92,7 +92,7 @@ structure UTree (X : Type u) where
 
 variable {X : Type u}
 
-/-- The Pauplin coefficient `2 ^ (1 - τ)` of a pair of leaves at topological distance `τ`. -/
+/-- **Pauplin coefficient of a pair of leaves.** The Pauplin coefficient `2 ^ (1 - τ)` of a pair of leaves at topological distance `τ`. -/
 noncomputable def pauplinCoeff (τ : ℕ) : ℝ :=
   2 / 2 ^ τ
 
@@ -118,12 +118,12 @@ private theorem pauplinCoeff_add_one (m n : ℕ) :
 
 namespace RTree
 
-/-- The total length of the edges. -/
+/-- **Total edge length of a rooted binary tree.** The total length of the edges. -/
 def length : RTree X → ℝ
   | leaf _ => 0
   | node a l b r => a + length l + b + length r
 
-/-- The leaves, each with its label, its distance to the root and its number of edges to the
+/-- **Leaves of a rooted binary tree with root distances.** The leaves, each with its label, its distance to the root and its number of edges to the
 root. -/
 def leaves : RTree X → List (X × ℝ × ℕ)
   | leaf x => [(x, 0, 0)]
@@ -131,7 +131,7 @@ def leaves : RTree X → List (X × ℝ × ℕ)
     (leaves l).map (fun p => (p.1, p.2.1 + a, p.2.2 + 1)) ++
       (leaves r).map (fun p => (p.1, p.2.1 + b, p.2.2 + 1))
 
-/-- The unordered pairs of leaves, each with the two labels, the length of the path between the
+/-- **Leaf pairs of a rooted binary tree with path lengths.** The unordered pairs of leaves, each with the two labels, the length of the path between the
 two leaves and its number of edges. -/
 def pairs : RTree X → List (X × X × ℝ × ℕ)
   | leaf _ => []
@@ -314,22 +314,22 @@ end KraftLeaf
 
 namespace UTree
 
-/-- The total length of the edges. -/
+/-- **Total edge length of an unrooted binary tree.** The total length of the edges. -/
 def length (T : UTree X) : ℝ :=
   T.left.length + T.len + T.right.length
 
-/-- The leaf labels (with multiplicity). -/
+/-- **Leaf labels of an unrooted binary tree.** The leaf labels (with multiplicity). -/
 def labels (T : UTree X) : List X :=
   T.left.leaves.map Prod.fst ++ T.right.leaves.map Prod.fst
 
-/-- The unordered pairs of leaves, each with the two labels, the length `d_T(i, j)` of the path
+/-- **Leaf pairs of an unrooted binary tree with path lengths.** The unordered pairs of leaves, each with the two labels, the length `d_T(i, j)` of the path
 between the two leaves and its number of edges `τ_ij`. -/
 def pairs (T : UTree X) : List (X × X × ℝ × ℕ) :=
   T.left.pairs ++ T.right.pairs ++
     T.left.leaves.flatMap fun p =>
       T.right.leaves.map fun q => (p.1, q.1, p.2.1 + T.len + q.2.1, p.2.2 + q.2.2 + 1)
 
-/-- The **balanced minimum-evolution length** of the topology of `T` for a dissimilarity `d`
+/-- **Balanced minimum-evolution length.** The **balanced minimum-evolution length** of the topology of `T` for a dissimilarity `d`
 (Desper and Gascuel 2002): `∑_{i<j} 2^{1-τ_ij} (d(i, j) + d(j, i)) / 2`. It depends on `T`
 only through the topological distances `τ_ij`. Each term is symmetrized, so the value does
 not depend on the orientation `T.pairs` happens to assign to a pair: swapping the children of

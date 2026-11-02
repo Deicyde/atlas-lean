@@ -79,7 +79,7 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 
 /-! ### Norms and scalar multiples of canonical shift powers -/
 
-/-- Powers of the forward shift preserve norms. -/
+/-- **Powers of the forward shift preserve norms.** Powers of the forward shift preserve norms. -/
 theorem norm_forwardShiftCLM_pow_apply (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     ‖(LpShiftOperator.shiftCLM ^ n) x‖ = ‖x‖ := by
   induction n generalizing x with
@@ -87,7 +87,7 @@ theorem norm_forwardShiftCLM_pow_apply (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
   | succ n ih =>
     rw [pow_succ, mul_apply_eq_comp, ih, LpShiftOperator.norm_shiftCLM_apply]
 
-/-- Powers of the backward shift do not increase norms. -/
+/-- **Powers of the backward shift do not increase norms.** Powers of the backward shift do not increase norms. -/
 theorem norm_backwardShiftCLM_pow_apply_le (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     ‖(LpShiftOperator.backwardCLM ^ n) x‖ ≤ ‖x‖ := by
   induction n generalizing x with
@@ -97,7 +97,7 @@ theorem norm_backwardShiftCLM_pow_apply_le (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     exact le_trans (ih (LpShiftOperator.backwardCLM x))
       (LpShiftOperator.norm_backwardLinMap_apply_le x)
 
-/-- Powers of a scalar multiple of the backward shift, applied pointwise. -/
+/-- **Powers of a scalar multiple of the backward shift.** Powers of a scalar multiple of the backward shift, applied pointwise. -/
 theorem smul_backwardShiftCLM_pow_apply (μ : 𝕜) (n : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     (((μ • LpShiftOperator.backwardCLM) ^ n) x) = μ ^ n • (LpShiftOperator.backwardCLM ^ n) x := by
   induction n generalizing x with
@@ -122,7 +122,7 @@ theorem smul_backwardShiftCLM_pow_apply (μ : 𝕜) (n : ℕ) (x : ℓ²(ℕ, �
 
 /-! ### Finitely supported vectors -/
 
-/-- The span of the single-coordinate vectors is dense in `ℓ²(ℕ, 𝕜)`:
+/-- **Finitely supported vectors are dense in $\ell^2(\mathbb{N})$.** The span of the single-coordinate vectors is dense in `ℓ²(ℕ, 𝕜)`:
 every vector is the sum of its canonical series. -/
 theorem dense_span_single :
     Dense (↑(Submodule.span 𝕜
@@ -140,7 +140,7 @@ theorem dense_span_single :
     rw [h]
     exact Submodule.smul_mem _ _ (Submodule.subset_span ⟨i, rfl⟩)
 
-/-- Every vector in the span of the single-coordinate vectors is
+/-- **Vectors in the span of coordinate vectors have finite support.** Every vector in the span of the single-coordinate vectors is
 eventually zero: it has finite support. -/
 theorem exists_forall_eq_zero_of_mem_span_single {x : ℓ²(ℕ, 𝕜)}
     (hx : x ∈ Submodule.span 𝕜 (Set.range fun i => lp.single 2 i (1 : 𝕜))) :

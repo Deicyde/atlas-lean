@@ -45,7 +45,7 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
 variable {ι : Type*}
 
-/-- The bounded diagonal continuous linear map with coefficients `a` in the
+/-- **Bounded diagonal operator on a Hilbert basis.** The bounded diagonal continuous linear map with coefficients `a` in the
 Hilbert basis `b`. Its uniform coefficient bound is part of the constructor. -/
 noncomputable def diagonalOperator (b : HilbertBasis ι 𝕜 H) (a : ι → 𝕜) {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) : H →L[𝕜] H :=

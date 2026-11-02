@@ -54,7 +54,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.Breeder
 
 variable {Ω : Type*} {m : MeasurableSpace Ω}
 
-/-- The linear parent–offspring model on a population described by a probability measure `μ`:
+/-- **Linear parent–offspring regression model.** The linear parent–offspring model on a population described by a probability measure `μ`:
 the parental (mid-parent) value `parent` and the offspring value `offspring` are integrable,
 `mean` is the population mean of the parental value, and the offspring value regresses linearly
 on the parental value, `𝔼[O | P] = mean + h2 * (P - mean)` (equivalently
@@ -84,14 +84,14 @@ namespace Model
 
 variable {μ : Measure Ω} [IsProbabilityMeasure μ] (M : Model μ)
 
-/-- The selection differential `S = 𝔼[P | selected] - μ` of the selected group `s`. -/
+/-- **Selection differential.** The selection differential `S = 𝔼[P | selected] - μ` of the selected group `s`. -/
 noncomputable def selectionDifferential (s : Set Ω) : ℝ := ∫ ω, M.parent ω ∂μ[|s] - M.mean
 
-/-- The response to selection `R = 𝔼[O | selected] - μ`: the mean offspring value of the
+/-- **Response to selection.** The response to selection `R = 𝔼[O | selected] - μ`: the mean offspring value of the
 selected parents, relative to the population mean. -/
 noncomputable def response (s : Set Ω) : ℝ := ∫ ω, M.offspring ω ∂μ[|s] - M.mean
 
-/-- The breeder's equation (Lush 1937): if the selected group `s` is determined by the parental
+/-- **Breeder's equation.** The breeder's equation (Lush 1937): if the selected group `s` is determined by the parental
 value (an event of `σ(P)`) and has positive mass, the response to selection is the heritability
 times the selection differential, `R = h² S`. -/
 theorem response_eq {s : Set Ω}
@@ -113,11 +113,11 @@ theorem response_eq {s : Set Ω}
     integral_const_mul, integral_sub hP (integrable_const _), integral_const]
   simp
 
-/-- Selecting the whole population gives no selection differential, `S = 0`. -/
+/-- **Selecting the whole population gives zero selection differential.** Selecting the whole population gives no selection differential, `S = 0`. -/
 theorem selectionDifferential_univ : M.selectionDifferential Set.univ = 0 := by
   rw [selectionDifferential, cond_univ, M.integral_parent, sub_self]
 
-/-- Selecting the whole population gives no response, `R = 0`. -/
+/-- **Selecting the whole population gives zero response.** Selecting the whole population gives no response, `R = 0`. -/
 theorem response_univ : M.response Set.univ = 0 := by
   rw [M.response_eq MeasurableSet.univ (by simp), selectionDifferential_univ, mul_zero]
 

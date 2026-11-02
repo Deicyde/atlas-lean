@@ -132,12 +132,12 @@ theorem vtp_vectorTwoPoint_aux {ρ : ℝ} (h0 : 0 ≤ ρ) (h1 : ρ ≤ 1)
       ≤ ((p + s) / 2) ^ 2 + ρ ^ 2 * ((p - s) / 2) ^ 2 := by rw [← halg]; exact hbound
     _ ≤ ((p ^ (1 + ρ ^ 2) + s ^ (1 + ρ ^ 2)) / 2) ^ (2 / (1 + ρ ^ 2)) := key
 
-/-- The vector two-point inequality holds for `0 ≤ ρ ≤ 1`. -/
+/-- **Vector two-point inequality for nonnegative noise.** The vector two-point inequality holds for `0 ≤ ρ ≤ 1`. -/
 theorem vtp_vectorTwoPoint {ρ : ℝ} (h0 : 0 ≤ ρ) (h1 : ρ ≤ 1) :
     bnt_VectorTwoPoint ρ :=
   fun n u v => vtp_vectorTwoPoint_aux h0 h1 n u v
 
-/-- The **Bonami–Beckner hypercontractive inequality** (Bonami 1970; Beckner 1975): for
+/-- **Bonami–Beckner hypercontractive inequality.** The **Bonami–Beckner hypercontractive inequality** (Bonami 1970; Beckner 1975): for
 `0 ≤ ρ ≤ 1` and `f : (Fin n → Bool) → ℝ`, `‖T_ρ f‖₂ ≤ ‖f‖_(1 + ρ²)` under the uniform measure. -/
 theorem vtp_hypercontractivity {ρ : ℝ} (h0 : 0 ≤ ρ) (h1 : ρ ≤ 1)
     (n : ℕ) (f : (Fin n → Bool) → ℝ) :

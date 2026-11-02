@@ -33,7 +33,7 @@ def IsProperEdgeColoring {V K : Type*} {G : _root_.SimpleGraph V}
   ∀ {v w₁ w₂ : V} (h₁ : G.Adj v w₁) (h₂ : G.Adj v w₂), w₁ ≠ w₂ →
     C ⟨Sym2.mk v w₁, G.mem_edgeSet.mpr h₁⟩ ≠ C ⟨Sym2.mk v w₂, G.mem_edgeSet.mpr h₂⟩
 
-/-- König's line coloring, regular multigraph case: a `d`-regular bipartite
+/-- **König's edge coloring theorem for regular bipartite multigraphs.** König's line coloring, regular multigraph case: a `d`-regular bipartite
 multigraph (given by endpoint projections) is `d`-edge-colorable. The proof
 extracts a perfect matching by Hall's theorem and inducts. Shared API also
 used by the multigraph Galvin development. -/
@@ -303,7 +303,7 @@ theorem multigraph_regular_color.{u, v} (d : ℕ) (A B : Type u) (E : Type v)
         exact congrArg Subtype.val hsub
 
 
-/-- König's line coloring, bounded-degree multigraph case: a bipartite
+/-- **König's edge coloring theorem for bounded-degree bipartite multigraphs.** König's line coloring, bounded-degree multigraph case: a bipartite
 multigraph of maximum degree at most `d` is `d`-edge-colorable. The proof
 pads both sides with dummy edges to reach the regular case. Shared API also
 used by the multigraph Galvin development. -/

@@ -90,7 +90,7 @@ private theorem isIntegral_of_norm_le_one {p : ℕ} [Fact p.Prime] {x : PadicAlg
   rw [← aeval_def, ← minpoly.aeval ℚ_[p] x, aeval_def, aeval_def,
     IsScalarTower.algebraMap_eq ℤ_[p] ℚ_[p] (PadicAlgCl p), ← eval₂_map, hgmap]
 
-/-- An element of the algebraic closure of `ℚ_[p]` is integral over `ℤ_[p]`
+/-- **p-adic integrality is equivalent to norm at most one.** An element of the algebraic closure of `ℚ_[p]` is integral over `ℤ_[p]`
 if and only if its norm is at most one. -/
 theorem isIntegral_padicInt_iff_norm_le_one (p : ℕ) [Fact p.Prime] (x : PadicAlgCl p) :
     IsIntegral ℤ_[p] x ↔ ‖x‖ ≤ 1 :=

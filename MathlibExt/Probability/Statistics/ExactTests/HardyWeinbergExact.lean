@@ -65,7 +65,7 @@ open Finset
 
 namespace MathlibExt.Probability.Statistics.ExactTests
 
-/-- Levene's conditional probability of `h` heterozygotes among `N` diploid individuals given
+/-- **Levene's exact Hardy–Weinberg probability.** Levene's conditional probability of `h` heterozygotes among `N` diploid individuals given
 `nA` copies of allele `A` (and `nB = 2N - nA` of `B`) under Hardy–Weinberg equilibrium:
 `N! nA! nB! 2^h / (nAA! h! nBB! (2N)!)` with `nAA = (nA - h) / 2`, `nBB = (nB - h) / 2`, when
 `h ≤ nA`, `h ≤ nB` and `nA - h` is even, and `0` otherwise. The parameter domain is
@@ -77,7 +77,7 @@ noncomputable def leveneProb (N nA h : ℕ) : ℝ :=
         (2 * N).factorial)
   else 0
 
-/-- The number of heterozygous individuals when the `A` gametes occupy the slots `s`:
+/-- **Number of heterozygous individuals.** The number of heterozygous individuals when the `A` gametes occupy the slots `s`:
 individuals `j` carrying exactly one of the slots `(j, 0)`, `(j, 1)`. -/
 def hetCount {N : ℕ} (s : Finset (Fin N × Fin 2)) : ℕ :=
   (univ.filter fun j : Fin N => ¬((j, 0) ∈ s ↔ (j, 1) ∈ s)).card

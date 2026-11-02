@@ -196,18 +196,18 @@ theorem integral_sub_mul_gaussianReal {μ : ℝ} {v : ℝ≥0} (hv : v ≠ 0) {g
   have h2 := congrArg (fun a : ℝ => (v : ℝ) * a) h
   simpa only [← mul_assoc, mul_inv_cancel₀ hvR, one_mul] using h2
 
-/-- The mean fitness `w̄(μ) = 𝔼[W z]` of a population whose trait is distributed as
+/-- **Mean fitness of a normally distributed trait.** The mean fitness `w̄(μ) = 𝔼[W z]` of a population whose trait is distributed as
 `N(μ, v)`. -/
 noncomputable def meanFitness (W : ℝ → ℝ) (μ : ℝ) (v : ℝ≥0) : ℝ :=
   ∫ z, W z ∂gaussianReal μ v
 
-/-- The directional selection differential `S = 𝔼[(z - μ) W z] / w̄`: the mean trait of the
+/-- **Directional selection differential.** The directional selection differential `S = 𝔼[(z - μ) W z] / w̄`: the mean trait of the
 selected parents, weighting each individual by its fitness, minus the mean trait `μ` before
 selection. If `w̄ = 0` the division returns the junk value `0`. -/
 noncomputable def selectionDifferential (W : ℝ → ℝ) (μ : ℝ) (v : ℝ≥0) : ℝ :=
   (∫ z, (z - μ) * W z ∂gaussianReal μ v) / meanFitness W μ v
 
-/-- The derivative of mean fitness with respect to the trait mean is
+/-- **Derivative of mean fitness with respect to the trait mean.** The derivative of mean fitness with respect to the trait mean is
 `d/dμ w̄(μ) = 𝔼[(z - μ) W z] / v`, for bounded measurable fitness and `v > 0`. -/
 theorem hasDerivAt_meanFitness {W : ℝ → ℝ} (hWm : Measurable W) (hWb : ∃ C, ∀ z, |W z| ≤ C)
     {v : ℝ≥0} (hv : v ≠ 0) (μ : ℝ) :

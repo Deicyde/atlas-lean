@@ -77,27 +77,27 @@ open Filter Topology Matrix
 
 namespace MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting
 
-/-- One-generation transition probability of the ancestral lineage count in a neutral
+/-- **Wright–Fisher transition probability of the lineage count.** One-generation transition probability of the ancestral lineage count in a neutral
 Wright–Fisher population of `M` gene copies: `k` lineages pick their parents uniformly and
 independently among `M` copies, and `j` distinct parents occur with probability
 `stirlingSecond k j * M.descFactorial j / M ^ k`. -/
 noncomputable def wfLineageProb (M k j : ℕ) : ℝ :=
   (Nat.stirlingSecond k j : ℝ) * (M.descFactorial j : ℝ) / (M : ℝ) ^ k
 
-/-- The one-generation transition matrix of the ancestral lineage count of a sample of at most
+/-- **Wright–Fisher transition matrix of the lineage count.** The one-generation transition matrix of the ancestral lineage count of a sample of at most
 `n` gene copies in a Wright–Fisher population of `M` copies; row `k`, column `j` is
 `wfLineageProb M k j`. -/
 noncomputable def wfLineageMatrix (n M : ℕ) : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ :=
   Matrix.of fun k j => wfLineageProb M k j
 
-/-- The rate matrix of Kingman's block-counting (pure-death) process on `{0, …, n}`: `k`
+/-- **Generator of Kingman's block-counting process.** The rate matrix of Kingman's block-counting (pure-death) process on `{0, …, n}`: `k`
 lineages become `k - 1` at rate `k.choose 2`, time in units of `M = 2N` generations. -/
 noncomputable def blockCountingGenerator (n : ℕ) : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ :=
   Matrix.of fun k j =>
     if (j : ℕ) + 1 = k then ((k : ℕ).choose 2 : ℝ)
     else if j = k then -((k : ℕ).choose 2 : ℝ) else 0
 
-/-- Tavaré's closed form for the probability that `i` lineages of Kingman's coalescent have
+/-- **Tavaré's formula for the number of ancestral lineages.** Tavaré's closed form for the probability that `i` lineages of Kingman's coalescent have
 `j` ancestors `t` time units (`2N` generations each) earlier, for `1 ≤ j ≤ i`. -/
 noncomputable def tavareProb (i j : ℕ) (t : ℝ) : ℝ :=
   ∑ k ∈ Finset.Icc j i,
@@ -157,7 +157,7 @@ private theorem tendsto_entry (a b : ℕ) :
       mul_zero]
     exact tendsto_const_nhds
 
-/-- The scaled one-generation increment `M • (wfLineageMatrix n M - 1)` converges entrywise to
+/-- **Scaled Wright–Fisher lineage matrix converges to Kingman's generator.** The scaled one-generation increment `M • (wfLineageMatrix n M - 1)` converges entrywise to
 the block-counting generator: `k` lineages coalesce to `k - 1` with probability
 `(k.choose 2) / M + o(1/M)`, and to fewer with probability `O(1/M²)`. -/
 theorem tendsto_smul_wfLineageMatrix_sub_one (n : ℕ) :
@@ -191,12 +191,12 @@ theorem tendsto_wfLineageMatrix_pow_floor (n : ℕ) {t : ℝ} (ht : 0 ≤ t) :
 
 /-! ### Tavaré's formula -/
 
-/-- Right eigenvectors of the block-counting generator, as columns: column `k` has entries
+/-- **Right eigenvectors of Kingman's block-counting generator.** Right eigenvectors of the block-counting generator, as columns: column `k` has entries
 `i_{(k)} / i^{(k)}` (falling over rising factorial) and eigenvalue `-(k.choose 2)`. -/
 noncomputable def blockCountingRightEigen (n : ℕ) : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ :=
   Matrix.of fun i k => ((i : ℕ).descFactorial k : ℝ) / ((i : ℕ).ascFactorial k : ℝ)
 
-/-- Left eigenvectors of the block-counting generator, as rows: row `0` is the indicator of
+/-- **Left eigenvectors of Kingman's block-counting generator.** Left eigenvectors of the block-counting generator, as rows: row `0` is the indicator of
 state `0`, and for `1 ≤ k` row `k` has entries `(2k-1) (-1)^{k-j} j^{(k-1)} / (j! (k-j)!)` for
 `j ≤ k` and `0` for `j > k`; the eigenvalue is `-(k.choose 2)`. -/
 noncomputable def blockCountingLeftEigen (n : ℕ) : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ :=
@@ -207,7 +207,7 @@ noncomputable def blockCountingLeftEigen (n : ℕ) : Matrix (Fin (n + 1)) (Fin (
         (((j : ℕ).factorial : ℝ) * (((k : ℕ) - j).factorial : ℝ))
     else 0
 
-/-- The eigenvalues of the block-counting generator, `-(k.choose 2)`. -/
+/-- **Eigenvalues of Kingman's block-counting generator.** The eigenvalues of the block-counting generator, `-(k.choose 2)`. -/
 noncomputable def blockCountingEigenvalue (n : ℕ) (k : Fin (n + 1)) : ℝ :=
   -((k : ℕ).choose 2 : ℝ)
 
@@ -387,7 +387,7 @@ private theorem mul_generator_apply_last (n : ℕ) (A : Matrix (Fin (n + 1)) (Fi
     have h1 : (j : ℕ) + 1 ≠ l := by have := l.isLt; omega
     simp [blockCountingGenerator, h1, Ne.symm hl]
 
-/-- The columns of `blockCountingRightEigen n` are right eigenvectors: `G V = V D`. -/
+/-- **Right eigenvector equation for the block-counting generator.** The columns of `blockCountingRightEigen n` are right eigenvectors: `G V = V D`. -/
 theorem blockCountingGenerator_mul_rightEigen (n : ℕ) :
     blockCountingGenerator n * blockCountingRightEigen n =
       blockCountingRightEigen n * diagonal (blockCountingEigenvalue n) := by
@@ -405,7 +405,7 @@ theorem blockCountingGenerator_mul_rightEigen (n : ℕ) :
     rw [hp] at h
     linear_combination -h
 
-/-- The rows of `blockCountingLeftEigen n` are left eigenvectors: `W G = D W`. -/
+/-- **Left eigenvector equation for the block-counting generator.** The rows of `blockCountingLeftEigen n` are left eigenvectors: `W G = D W`. -/
 theorem blockCountingLeftEigen_mul_generator (n : ℕ) :
     blockCountingLeftEigen n * blockCountingGenerator n =
       diagonal (blockCountingEigenvalue n) * blockCountingLeftEigen n := by
@@ -424,7 +424,7 @@ theorem blockCountingLeftEigen_mul_generator (n : ℕ) :
     rw [hjn]
     linear_combination -h
 
-/-- The left and right eigenvector matrices are mutually inverse: `W V = 1`. -/
+/-- **Left and right eigenvector matrices are mutually inverse.** The left and right eigenvector matrices are mutually inverse: `W V = 1`. -/
 theorem blockCountingLeftEigen_mul_rightEigen (n : ℕ) :
     blockCountingLeftEigen n * blockCountingRightEigen n = 1 := by
   -- `W V` commutes with the diagonal matrix of eigenvalues.
@@ -483,7 +483,7 @@ theorem blockCountingLeftEigen_mul_rightEigen (n : ℕ) :
         linear_combination h
       exact (mul_eq_zero.1 this).resolve_right (sub_ne_zero.2 hd.symm)
 
-/-- The spectral decomposition of the transition matrix of the block-counting process:
+/-- **Spectral decomposition of the block-counting transition matrix.** The spectral decomposition of the transition matrix of the block-counting process:
 `exp (t • G) = V diag(exp (-(k.choose 2) t)) W`. -/
 theorem exp_smul_blockCountingGenerator (n : ℕ) (t : ℝ) :
     NormedSpace.exp (t • blockCountingGenerator n) =
@@ -574,7 +574,7 @@ theorem exp_smul_blockCountingGenerator_castLE {n N : ℕ} (h : n ≤ N) (t : �
     omega
   simp [f, Nat.descFactorial_eq_zero_iff_lt.mpr hik]
 
-/-- The block-counting process never gains lineages: `exp (t • G) i j = 0` for `i < j`. Holds
+/-- **The block-counting process never gains lineages.** The block-counting process never gains lineages: `exp (t • G) i j = 0` for `i < j`. Holds
 for every real `t`. -/
 theorem exp_smul_blockCountingGenerator_of_lt {n : ℕ} (t : ℝ) {i j : Fin (n + 1)} (h : i < j) :
     NormedSpace.exp (t • blockCountingGenerator n) i j = 0 := by

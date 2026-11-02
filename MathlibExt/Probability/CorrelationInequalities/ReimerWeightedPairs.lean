@@ -74,10 +74,10 @@ theorem rby_mul_sub_dpairsCount_ge_member (𝒜 ℬ : Finset (Finset α)) (i : �
   have h := rby_dpairsCount_add_member_le_mul 𝒜 ℬ i
   omega
 
-/-- The family `{∅, {0}}` on `Fin 2`, used in the counterexamples of this file. -/
+/-- **First family in the weighted-pair counterexamples.** The family `{∅, {0}}` on `Fin 2`, used in the counterexamples of this file. -/
 def rbyCexA : Finset (Finset (Fin 2)) := {∅, {0}}
 
-/-- The family `{∅}` on `Fin 2`, used in the counterexamples of this file. -/
+/-- **Second family in the weighted-pair counterexamples.** The family `{∅}` on `Fin 2`, used in the counterexamples of this file. -/
 def rbyCexB : Finset (Finset (Fin 2)) := {∅}
 
 theorem rby_downCompress_cexA : Down.compression (0 : Fin 2) rbyCexA = {∅, {0}} := by decide
@@ -93,7 +93,7 @@ theorem rby_card_boxDoubled_cex_compressed :
       (UV.compression ({0} : Finset (Fin 2)) ∅ rbyCexB)).card = 1 := by
   rw [rby_downCompress_cexA, rby_upCompress_cexB, card_boxDoubled_eq_dpairsCount]; decide
 
-/-- Down-compressing `𝒜` and up-compressing `ℬ` at the same coordinate can strictly decrease
+/-- **Down- and up-compressing two families can decrease disjoint pairs.** Down-compressing `𝒜` and up-compressing `ℬ` at the same coordinate can strictly decrease
 the number of disjoint pairs. -/
 theorem rby_separate_compression_strictly_decreases :
     ∃ (𝒜 ℬ : Finset (Finset (Fin 2))) (i : Fin 2),
@@ -117,11 +117,11 @@ section Weighted
 
 variable [Fintype α]
 
-/-- The product weight `∏ x, w x (x ∈ S)` of the configuration with support `S`. -/
+/-- **Product weight of a finset.** The product weight `∏ x, w x (x ∈ S)` of the configuration with support `S`. -/
 noncomputable def fwt (w : α → Bool → ℝ) (S : Finset α) : ℝ :=
   ∏ x, w x (decide (x ∈ S))
 
-/-- The product weight of `S` over all coordinates except `i`. -/
+/-- **Product weight of a finset off one coordinate.** The product weight of `S` over all coordinates except `i`. -/
 noncomputable def fwt' (w : α → Bool → ℝ) (i : α) (S : Finset α) : ℝ :=
   ∏ x ∈ univ.erase i, w x (decide (x ∈ S))
 
@@ -151,24 +151,24 @@ lemma fwt_of_notMem (w : α → Bool → ℝ) {S : Finset α} {i : α} (hi : i �
   rw [decide_eq_false (by simpa using hi : i ∉ S)]
   ring
 
-/-- The weighted number of disjoint pairs: `∑ fwt w S * fwt w T` over disjoint
+/-- **Weighted number of disjoint pairs.** The weighted number of disjoint pairs: `∑ fwt w S * fwt w T` over disjoint
 `(S, T) ∈ 𝒜 × ℬ`. -/
 noncomputable def wdpairs (w : α → Bool → ℝ) (𝒜 ℬ : Finset (Finset α)) : ℝ :=
   ∑ p ∈ (𝒜 ×ˢ ℬ).filter (fun p => Disjoint p.1 p.2), fwt w p.1 * fwt w p.2
 
-/-- `wdpairs` with coordinate `i` omitted from the weights. -/
+/-- **Weighted number of disjoint pairs off one coordinate.** `wdpairs` with coordinate `i` omitted from the weights. -/
 noncomputable def wdpairs' (w : α → Bool → ℝ) (i : α) (𝒜 ℬ : Finset (Finset α)) : ℝ :=
   ∑ p ∈ (𝒜 ×ˢ ℬ).filter (fun p => Disjoint p.1 p.2), fwt' w i p.1 * fwt' w i p.2
 
-/-- The weight `∑ S ∈ 𝒜, fwt w S` of a family. -/
+/-- **Weight of a family of finsets.** The weight `∑ S ∈ 𝒜, fwt w S` of a family. -/
 noncomputable def fmarg (w : α → Bool → ℝ) (𝒜 : Finset (Finset α)) : ℝ :=
   ∑ S ∈ 𝒜, fwt w S
 
-/-- `fmarg` with coordinate `i` omitted from the weights. -/
+/-- **Weight of a family off one coordinate.** `fmarg` with coordinate `i` omitted from the weights. -/
 noncomputable def fmarg' (w : α → Bool → ℝ) (i : α) (𝒜 : Finset (Finset α)) : ℝ :=
   ∑ S ∈ 𝒜, fwt' w i S
 
-/-- For nonnegative weights, `wdpairs w 𝒜 ℬ ≤ fmarg w 𝒜 * fmarg w ℬ` (drop the disjointness
+/-- **Weighted disjoint pairs bounded by the product of family weights.** For nonnegative weights, `wdpairs w 𝒜 ℬ ≤ fmarg w 𝒜 * fmarg w ℬ` (drop the disjointness
 constraint). -/
 theorem wdpairs_le_mul {w : α → Bool → ℝ} (hw : ∀ x b, 0 ≤ w x b) (𝒜 ℬ : Finset (Finset α)) :
     wdpairs w 𝒜 ℬ ≤ fmarg w 𝒜 * fmarg w ℬ := by

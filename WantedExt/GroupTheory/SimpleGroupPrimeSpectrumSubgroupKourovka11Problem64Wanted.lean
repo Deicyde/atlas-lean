@@ -48,7 +48,7 @@ def finitelyManySimpleWithFullSpectrumSubgroup : Prop :=
     Nat.card G ≤ N
 
 /--
-Resolved false: the Kourovka Archive records (V. I. Zenkov) that the symplectic groups `G =
+**Infinitely many simple groups with proper subgroups of equal prime set.** Resolved false: the Kourovka Archive records (V. I. Zenkov) that the symplectic groups `G =
 S_{4k}(2^s)` have proper subgroups `H ≅ Ω⁻_{4k}(2^s)` with `π(H) = π(G)`, an infinite family of
 non-alternating finite simple groups. Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
 Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of

@@ -29,7 +29,7 @@ totient `n.totient`.
 
 namespace MetaMathlibExt
 
-/-- For `2 < n`, `n.totient` is even and the `natDegree` of the real cyclotomic
+/-- **Degree of the real cyclotomic polynomial.** For `2 < n`, `n.totient` is even and the `natDegree` of the real cyclotomic
 polynomial `realCyclotomicPolynomial n` equals `n.totient / 2`. The `Even`
 conjunct makes the source's exact half machine-visible under natural-number
 division.

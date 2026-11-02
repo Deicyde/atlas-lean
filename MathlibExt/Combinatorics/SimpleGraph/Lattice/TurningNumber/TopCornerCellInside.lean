@@ -30,7 +30,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.WalkCrossing
   StatMech.Onsager.InsideClimb
 variable {n : ℕ} [NeZero n]
 
-/-- A simple closed walk without right turns has a north-then-west corner `M` whose below-left cell
+/-- **Some north-then-west corner has its below-left cell inside.** A simple closed walk without right turns has a north-then-west corner `M` whose below-left cell
   `((pos d M).1 - 1, (pos d M).2 - 1)` has ray parity `1`. -/
 theorem lexmax_corner_cell_inside
     (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)

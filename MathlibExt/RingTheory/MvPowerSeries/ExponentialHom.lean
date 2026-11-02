@@ -31,7 +31,7 @@ open Finset
 
 variable {σ R : Type*} [CommRing R] [Algebra ℚ R]
 
-/-- A ring homomorphism between multivariate power-series rings commutes with
+/-- **Ring maps commute with truncated exponentials.** A ring homomorphism between multivariate power-series rings commutes with
 finite exponential truncations. -/
 theorem map_expTrunc {τ S : Type*} [CommRing S] [Algebra ℚ S]
     (Φ : MvPowerSeries σ R →+* MvPowerSeries τ S) (N : ℕ) (w : MvPowerSeries σ R) :
@@ -40,7 +40,7 @@ theorem map_expTrunc {τ S : Type*} [CommRing S] [Algebra ℚ S]
   rw [map_sum]
   exact sum_congr rfl fun n _ => by rw [map_rat_smul, map_pow]
 
-/-- A ring endomorphism preserving the total-degree coefficient filtration
+/-- **Filtration-preserving endomorphisms commute with the formal exponential.** A ring endomorphism preserving the total-degree coefficient filtration
 commutes with the formal exponential. The filtration premise itself implies
 that the image of a zero-constant series again has zero constant coefficient. -/
 theorem hom_expOfConstantCoeffZero

@@ -42,7 +42,7 @@ namespace Lattice
 
 variable {d : ℕ}
 
-/-- The exterior of the box `[-R, R]^d`: sites with some coordinate of absolute value greater than
+/-- **Exterior of a box in $\mathbb{Z}^d$.** The exterior of the box `[-R, R]^d`: sites with some coordinate of absolute value greater than
 `R`. -/
 def exterior (d R : ℕ) : Set (Site d) := {x | ∃ i, R < (x i).natAbs}
 
@@ -101,7 +101,7 @@ theorem segment_gen (S : Set (Site d)) (j : Fin d) (p : Site d) (c : ℤ)
     convert key using 2
     rw [hupd]
 
-/-- The site obtained from `p` by setting every coordinate in `T` to `v`. -/
+/-- **Setting a set of coordinates of a lattice site.** The site obtained from `p` by setting every coordinate in `T` to `v`. -/
 def setOn (p : Site d) (T : Finset (Fin d)) (v : ℤ) : Site d :=
   fun k => if k ∈ T then v else p k
 
@@ -149,7 +149,7 @@ theorem exterior_reachable_setOn (R : ℕ) (p : Site d) (i0 : Fin d)
         = ⟨Function.update q j ((R : ℤ) + 1), hstep_tgt⟩ := Subtype.ext hval
     rw [heq]; exact hchain
 
-/-- The site `(R + 1, …, R + 1)`, a fixed base point of the exterior of `box d R`. -/
+/-- **Base point of the exterior of a box.** The site `(R + 1, …, R + 1)`, a fixed base point of the exterior of `box d R`. -/
 def beacon (d R : ℕ) : Site d := fun _ => (R : ℤ) + 1
 
 theorem beacon_natAbs (R : ℕ) (k : Fin d) : ((beacon d R) k).natAbs = R + 1 := by
@@ -233,7 +233,7 @@ theorem exterior_reachable_compl (F : Set (Site d)) (R : ℕ) (hd : 2 ≤ d)
   have h := box_exterior_connected R hd x y hx hy
   exact h.map ((hypercubicLattice d).induceHomOfLE hsub).toHom
 
-/-- For `d ≥ 2`, the complement of a finite set of sites of `ℤ^d` has exactly one infinite connected
+/-- **Complement of a finite set in $\mathbb{Z}^d$ has one infinite component.** For `d ≥ 2`, the complement of a finite set of sites of `ℤ^d` has exactly one infinite connected
 component. -/
 theorem unique_infinite_component (hd : 2 ≤ d) (F : Set (Site d)) (hF : F.Finite) :
     ∃! C : ((hypercubicLattice d).induce Fᶜ).ConnectedComponent, C.supp.Infinite := by

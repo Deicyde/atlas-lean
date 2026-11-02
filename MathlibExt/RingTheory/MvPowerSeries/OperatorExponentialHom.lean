@@ -89,7 +89,7 @@ private theorem coeff_iterate_mul_iterate_eq_zero (O : σ → A →ₗ[ℚ] A)
   · rw [coeff_iterate_coefficientOperator_eq_zero O f hi, zero_mul]
   · rw [coeff_iterate_coefficientOperator_eq_zero O g (by omega), mul_zero]
 
-/-- The formal exponential of a family of coefficient derivations preserves products.
+/-- **The exponential of coefficient derivations is multiplicative.** The formal exponential of a family of coefficient derivations preserves products.
 No pairwise commutation or finiteness hypothesis on the family is needed. -/
 theorem expOperator_mul (D : σ → Derivation ℚ A A) (f g : MvPowerSeries σ A) :
     expOperator (fun i => (D i).toLinearMap) (f * g) =
@@ -124,14 +124,14 @@ theorem expOperator_mul (D : σ → Derivation ℚ A A) (f g : MvPowerSeries σ 
   intro i j hij
   rw [map_rat_smul, coeff_iterate_mul_iterate_eq_zero O f g (by omega), smul_zero]
 
-/-- The formal exponential of a family of coefficient derivations preserves one. -/
+/-- **The exponential of coefficient derivations preserves one.** The formal exponential of a family of coefficient derivations preserves one. -/
 @[simp] theorem expOperator_one (D : σ → Derivation ℚ A A) :
     expOperator (fun i => (D i).toLinearMap) (1 : MvPowerSeries σ A) = 1 := by
   apply expOperator_of_zero
   simpa only [coefficientOperatorDerivation, Derivation.coe_mk'] using
     (coefficientOperatorDerivation D).map_one_eq_zero
 
-/-- The formal exponential of coefficient derivations as a ring endomorphism. -/
+/-- **Exponential of coefficient derivations as a ring endomorphism.** The formal exponential of coefficient derivations as a ring endomorphism. -/
 noncomputable def expOperatorHom (D : σ → Derivation ℚ A A) :
     MvPowerSeries σ A →+* MvPowerSeries σ A where
   toFun := expOperator fun i => (D i).toLinearMap
@@ -140,13 +140,13 @@ noncomputable def expOperatorHom (D : σ → Derivation ℚ A A) :
   map_zero' := map_zero _
   map_add' := map_add _
 
-/-- Applying the operator-exponential ring homomorphism is the existing formal operator
+/-- **Evaluation of the operator-exponential ring homomorphism.** Applying the operator-exponential ring homomorphism is the existing formal operator
 exponential. -/
 @[simp] theorem expOperatorHom_apply (D : σ → Derivation ℚ A A)
     (f : MvPowerSeries σ A) :
     expOperatorHom D f = expOperator (fun i => (D i).toLinearMap) f := rfl
 
-/-- A coefficient of the operator exponential depends only on input coefficients of no
+/-- **Operator exponential coefficients depend only on lower-degree inputs.** A coefficient of the operator exponential depends only on input coefficients of no
 greater total degree. -/
 theorem coeff_expOperator_congr (O : σ → A →ₗ[ℚ] A) (d : σ →₀ ℕ)
     (f g : MvPowerSeries σ A)
@@ -167,7 +167,7 @@ theorem coeff_expOperator_congr (O : σ → A →ₗ[ℚ] A) (d : σ →₀ ℕ)
   have hfg : f = (f - g) + g := (sub_add_cancel f g).symm
   rw [hfg, map_add, map_add, hzero, zero_add]
 
-/-- The operator exponential commutes with the lawful ordinary formal exponential. -/
+/-- **The operator exponential commutes with the formal exponential.** The operator exponential commutes with the lawful ordinary formal exponential. -/
 theorem expOperator_expOfConstantCoeffZero (D : σ → Derivation ℚ A A)
     {w : MvPowerSeries σ A} (hw : constantCoeff w = 0) :
     expOperator (fun i => (D i).toLinearMap) (expOfConstantCoeffZero w hw) =

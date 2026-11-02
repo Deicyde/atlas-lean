@@ -54,7 +54,7 @@ namespace MathlibExt.Analysis.InnerProductSpace.RieszBasisStability
 
 open MathlibExt.Analysis.InnerProductSpace.RieszBasis
 
-/-- The sequence of norms of a square-summable family, as an element of
+/-- **Norm sequence of a square-summable family.** The sequence of norms of a square-summable family, as an element of
 `ℓ²(ι, ℝ)`. -/
 noncomputable def normSeq (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2) :
     ℓ²(ι, ℝ) :=
@@ -84,7 +84,7 @@ theorem norm_normSeq (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2) :
   rw [lp.norm_eq_tsum_rpow (by simp : (0 : ℝ) < (2 : ℝ≥0∞).toReal), htsum,
     show (1 : ℝ) / (2 : ℝ≥0∞).toReal = 1 / 2 by simp, Real.sqrt_eq_rpow]
 
-/-- The sequence of norms of an `ℓ²` coefficient sequence, as an element of
+/-- **Norm sequence of an $\ell^2$ coefficient sequence.** The sequence of norms of an `ℓ²` coefficient sequence, as an element of
 `ℓ²(ι, ℝ)`. -/
 noncomputable def normSeqLp (c : ℓ²(ι, 𝕜)) : ℓ²(ι, ℝ) :=
   ⟨fun i => ‖c i‖, (lp.memℓp c).norm⟩
@@ -93,7 +93,7 @@ theorem normSeqLp_apply (c : ℓ²(ι, 𝕜)) (i : ι) :
     (normSeqLp c) i = ‖c i‖ :=
   rfl
 
-/-- The `ℓ²` norm of the norms of a coefficient sequence is the norm of the
+/-- **$\ell^2$ norm of the norm sequence.** The `ℓ²` norm of the norms of a coefficient sequence is the norm of the
 sequence. -/
 theorem norm_normSeqLp (c : ℓ²(ι, 𝕜)) : ‖normSeqLp c‖ = ‖c‖ := by
   rw [lp.norm_eq_tsum_rpow (by simp : (0 : ℝ) < (2 : ℝ≥0∞).toReal) (normSeqLp c),
@@ -104,7 +104,7 @@ theorem norm_normSeqLp (c : ℓ²(ι, 𝕜)) : ‖normSeqLp c‖ = ‖c‖ := by
   rw [Real.norm_of_nonneg (norm_nonneg _)]
 
 omit [CompleteSpace E] in
-/-- The norms of the terms of a synthesis series are summable when the
+/-- **Absolute summability of a synthesis series.** The norms of the terms of a synthesis series are summable when the
 coefficient sequence is in `ℓ²` and the synthesized family is square-summable:
 this is Cauchy–Schwarz for `ℓ²`, via `lp.tsum_mul_le_mul_norm` applied to the
 two real `ℓ²` sequences of norms. -/
@@ -122,14 +122,14 @@ theorem summable_norm_synthesis (d : ι → E)
   rw [h2]
   exact h
 
-/-- The terms of a synthesis series are summable when the coefficient sequence
+/-- **Summability of a synthesis series.** The terms of a synthesis series are summable when the coefficient sequence
 is in `ℓ²` and the synthesized family is square-summable. -/
 theorem summable_synthesis (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2)
     (c : ℓ²(ι, 𝕜)) : Summable fun i => c i • d i :=
   Summable.of_norm (summable_norm_synthesis d hd c)
 
 omit [CompleteSpace E] in
-/-- Norm bound for a synthesis series, by Cauchy–Schwarz for `ℓ²`. -/
+/-- **Norm bound for a synthesis series.** Norm bound for a synthesis series, by Cauchy–Schwarz for `ℓ²`. -/
 theorem norm_tsum_smul_le (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2)
     (c : ℓ²(ι, 𝕜)) :
     ‖∑' i, c i • d i‖ ≤ Real.sqrt (∑' i, ‖d i‖ ^ 2) * ‖c‖ := by
@@ -147,7 +147,7 @@ theorem norm_tsum_smul_le (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2)
         rw [norm_normSeq, norm_normSeqLp]
         ring
 
-/-- The linear map underlying the synthesis operator. -/
+/-- **Linear map underlying the synthesis operator.** The linear map underlying the synthesis operator. -/
 noncomputable def synthesisLinearMap (d : ι → E)
     (hd : Summable fun i => ‖d i‖ ^ 2) :
     ℓ²(ι, 𝕜) →ₗ[𝕜] E where
@@ -162,7 +162,7 @@ noncomputable def synthesisLinearMap (d : ι → E)
     refine tsum_congr fun i => ?_
     simp [lp.coeFn_smul, Pi.smul_apply, smul_eq_mul, mul_smul]
 
-/-- The **synthesis operator**: for a square-summable family `d : ι → E`, the
+/-- **Synthesis operator of a square-summable family.** The **synthesis operator**: for a square-summable family `d : ι → E`, the
 bounded operator `ℓ²(ι, 𝕜) →L[𝕜] E` sending `c` to `∑' i, c i • d i`. -/
 noncomputable def synthesisCLM (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2) :
     ℓ²(ι, 𝕜) →L[𝕜] E :=
@@ -174,7 +174,7 @@ theorem synthesisCLM_apply (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2)
     (c : ℓ²(ι, 𝕜)) : synthesisCLM (𝕜 := 𝕜) d hd c = ∑' i, c i • d i :=
   rfl
 
-/-- The operator norm of the synthesis operator is at most
+/-- **Operator norm bound for the synthesis operator.** The operator norm of the synthesis operator is at most
 `√(∑' i, ‖d i‖ ^ 2)`. -/
 theorem norm_synthesisCLM_le (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2) :
     ‖synthesisCLM (𝕜 := 𝕜) d hd‖ ≤ Real.sqrt (∑' i, ‖d i‖ ^ 2) := by
@@ -183,7 +183,7 @@ theorem norm_synthesisCLM_le (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 
   rw [synthesisCLM_apply]
   exact norm_tsum_smul_le d hd c
 
-/-- The synthesis operator at a basis vector picks out one term of the
+/-- **Synthesis operator on a basis vector.** The synthesis operator at a basis vector picks out one term of the
 family. -/
 theorem synthesisCLM_single (d : ι → E) (hd : Summable fun i => ‖d i‖ ^ 2)
     [DecidableEq ι] (i : ι) :

@@ -48,7 +48,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.WalkCrossing
 open StatMech.Lattice
 open SimpleGraph
 
-/-- The `i`-th vertex of the walk as a site of `ℤ²`. -/
+/-- **Vertex of a walk as a lattice site.** The `i`-th vertex of the walk as a site of `ℤ²`. -/
 def posSite {m : ℕ} (d : Fin (m + 3) → Fin 4) (i : Fin (m + 3)) : Site 2 :=
   ![(pos d i).1, (pos d i).2]
 
@@ -58,7 +58,7 @@ def posSite {m : ℕ} (d : Fin (m + 3) → Fin 4) (i : Fin (m + 3)) : Site 2 :=
 @[simp] theorem posSite_one {m : ℕ} (d : Fin (m + 3) → Fin 4) (i : Fin (m + 3)) :
     (posSite d i) 1 = (pos d i).2 := rfl
 
-/-- The vertices of a simple walk are distinct sites. -/
+/-- **Vertices of a simple walk are distinct sites.** The vertices of a simple walk are distinct sites. -/
 theorem posSite_injective {m : ℕ} (d : Fin (m + 3) → Fin 4)
     (hsimple : Function.Injective (pos d)) : Function.Injective (posSite d) := by
   intro i j h
@@ -68,12 +68,12 @@ theorem posSite_injective {m : ℕ} (d : Fin (m + 3) → Fin 4)
   rw [posSite_one, posSite_one] at h1
   exact hsimple (Prod.ext h0 h1)
 
-/-- Each step has `ℓ¹`-length `1`. -/
+/-- **Each lattice step has $\ell^1$-length one.** Each step has `ℓ¹`-length `1`. -/
 theorem stepOf_natAbs_sum (w : Fin 4) :
     (stepOf w).1.natAbs + (stepOf w).2.natAbs = 1 := by
   fin_cases w <;> rfl
 
-/-- Consecutive vertices of the walk are adjacent in the square lattice. -/
+/-- **Consecutive walk vertices are adjacent in the square lattice.** Consecutive vertices of the walk are adjacent in the square lattice. -/
 theorem walk_isSub {m : ℕ} (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     ⦃i j : Fin (m + 3)⦄ (hadj : (cycleGraph (m + 3)).Adj i j) :
     (hypercubicLattice 2).Adj (posSite d i) (posSite d j) := by
@@ -97,7 +97,7 @@ theorem walk_isSub {m : ℕ} (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepO
       rw [posSite_one, posSite_one, hs, Prod.snd_add]; ring
     rw [e0, e1, Int.natAbs_neg, Int.natAbs_neg]; exact stepOf_natAbs_sum (d i)
 
-/-- A simple closed walk as a planar subgraph of `ℤ²`: the cycle graph `cycleGraph (m + 3)` embedded
+/-- **Simple closed walk as an embedded cycle graph.** A simple closed walk as a planar subgraph of `ℤ²`: the cycle graph `cycleGraph (m + 3)` embedded
   by its vertex positions. -/
 noncomputable def walkSubgraph {m : ℕ} (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) :
@@ -109,7 +109,7 @@ noncomputable def walkSubgraph {m : ℕ} (d : Fin (m + 3) → Fin 4)
   emb := ⟨posSite d, posSite_injective d hsimple⟩
   isSub := walk_isSub d hclosed
 
-/-- A cycle graph has one connected component. A specialization of
+/-- **A cycle graph has one connected component.** A cycle graph has one connected component. A specialization of
   `SimpleGraph.Preconnected.subsingleton_connectedComponent`. -/
 theorem cycleGraph_card_components_one (m : ℕ) :
     Nat.card (cycleGraph (m + 3)).ConnectedComponent = 1 :=
@@ -117,7 +117,7 @@ theorem cycleGraph_card_components_one (m : ℕ) :
     ⟨connected_cycleGraph_add_one.preconnected.subsingleton_connectedComponent,
       ⟨(cycleGraph (m + 3)).connectedComponentMk 0⟩⟩
 
-/-- The cycle graph on `m + 3` vertices has `m + 3` edges. -/
+/-- **Number of edges of a cycle graph.** The cycle graph on `m + 3` vertices has `m + 3` edges. -/
 theorem cycleGraph_card_edges (m : ℕ) :
     (cycleGraph (m + 3)).edgeSet.ncard = m + 3 := by
   have hsum : ∑ v : Fin (m + 3), (cycleGraph (m + 3)).degree v
@@ -130,21 +130,21 @@ theorem cycleGraph_card_edges (m : ℕ) :
   have hcard : (cycleGraph (m + 3)).edgeFinset.card = m + 3 := by omega
   rw [← Nat.card_coe_set_eq, Nat.card_eq_fintype_card, ← SimpleGraph.edgeFinset_card, hcard]
 
-/-- The cycle graph has nullity (cycle rank) `1`. -/
+/-- **Cycle graph has cycle rank one.** The cycle graph has nullity (cycle rank) `1`. -/
 theorem cycle_nullity_one (m : ℕ) : nullity (cycleGraph (m + 3)) = 1 := by
   unfold nullity
   rw [cycleGraph_card_edges m, cycleGraph_card_components_one m,
     Nat.card_eq_fintype_card, Fintype.card_fin]
   omega
 
-/-- The planar subgraph of a simple closed walk has nullity `1`. -/
+/-- **Subgraph of a simple closed lattice walk has cycle rank one.** The planar subgraph of a simple closed walk has nullity `1`. -/
 theorem walkSubgraph_nullity_one {m : ℕ} (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) :
     nullity (walkSubgraph d hclosed hsimple).G = 1 := by
   change nullity (cycleGraph (m + 3)) = 1
   exact cycle_nullity_one m
 
-/-- Lattice Jordan curve theorem for a simple closed walk: its complement in the face graph of `ℤ²`
+/-- **Lattice Jordan curve theorem for simple closed walks.** Lattice Jordan curve theorem for a simple closed walk: its complement in the face graph of `ℤ²`
   has exactly one bounded connected component. -/
 theorem walk_one_bounded_region {m : ℕ} (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) :
@@ -154,7 +154,7 @@ theorem walk_one_bounded_region {m : ℕ} (d : Fin (m + 3) → Fin 4)
   rw [Nat.card_congr e, Nat.card_eq_fintype_card, Fintype.card_fin,
     walkSubgraph_nullity_one d hclosed hsimple]
 
-/-- The ray-parity interior of the walk coincides with the union of bounded face components. Not
+/-- **Ray-parity interior equals the bounded face components.** The ray-parity interior of the walk coincides with the union of bounded face components. Not
   used in this development; the corresponding statement is proved as
   `StatMech.Onsager.WalkCellRegion.mem_interiorCells_iff_rayParity` for walks without right
   turns. -/
@@ -164,7 +164,7 @@ def BridgeParityMembership {m : ℕ} (d : Fin (m + 3) → Fin 4)
     ((whb_faceRegion (imageGraph (walkSubgraph d hclosed hsimple))).connectedComponentMk
       ![a, b]).supp.Finite
 
-/-- Adjacency in the face graph of the walk is the absence of a walk step on the common side of two
+/-- **Face-graph adjacency as absence of a walk step between cells.** Adjacency in the face graph of the walk is the absence of a walk step on the common side of two
   cells. Not used in this development. -/
 def BridgeAdjacencyClimb {m : ℕ} (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d)) : Prop :=

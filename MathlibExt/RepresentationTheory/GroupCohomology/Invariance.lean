@@ -48,7 +48,7 @@ namespace groupCohomology
 
 universe u
 
-/-- Group cohomology is invariant under group isomorphism. -/
+/-- **Invariance of group cohomology under group isomorphism.** Group cohomology is invariant under group isomorphism. -/
 theorem nonempty_linearEquiv_of_iso_res_mulEquiv
     {k G H : Type u} [CommRing k] [Group G] [Group H]
     (e : G ≃* H) (A : Rep k G) (B : Rep k H) (φ : A ≅ Rep.res e.toMonoidHom B) (n : ℕ) :

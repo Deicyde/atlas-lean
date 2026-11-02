@@ -61,21 +61,21 @@ open Set Metric
 
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] {n p : ℕ}
 
-/-- The residual sum of squares of archetypes `z` for the data `x`: each data point is
+/-- **Residual sum of squares in archetypal analysis.** The residual sum of squares of archetypes `z` for the data `x`: each data point is
 replaced by the closest point of the convex hull of the archetypes. This is only meaningful
 for `0 < p`: for `p = 0` the hull is empty and `infDist` to the empty set is `0` by
 convention, so `rss` is `0` vacuously and must not be read as a perfect fit. -/
 noncomputable def rss (x : Fin n → E) (z : Fin p → E) : ℝ :=
   ∑ i, infDist (x i) (convexHull ℝ (range z)) ^ 2
 
-/-- Archetypes are feasible if each is a mixture of the data points. -/
+/-- **Feasible archetypes.** Archetypes are feasible if each is a mixture of the data points. -/
 def Feasible (x : Fin n → E) (z : Fin p → E) : Prop :=
   ∀ k, z k ∈ convexHull ℝ (range x)
 
-/-- The sample mean of the data. -/
+/-- **Sample mean of the data.** The sample mean of the data. -/
 noncomputable def mean (x : Fin n → E) : E := (n : ℝ)⁻¹ • ∑ i, x i
 
-/-- Cutler–Breiman Proposition 1(i): with a single archetype, the sample mean is feasible and
+/-- **The sample mean is the optimal single archetype.** Cutler–Breiman Proposition 1(i): with a single archetype, the sample mean is feasible and
 minimizes the RSS. -/
 theorem rss_const_mean_le (x : Fin n → E) (hn : 0 < n) (z : Fin 1 → E) :
     Feasible x (fun _ : Fin 1 => mean x) ∧ rss x (fun _ : Fin 1 => mean x) ≤ rss x z := by
@@ -103,7 +103,7 @@ theorem rss_const_mean_le (x : Fin n → E) (hn : 0 < n) (z : Fin 1 → E) :
     have : 0 ≤ ∑ _i : Fin n, ‖mean x - z 0‖ ^ 2 := Finset.sum_nonneg fun _ _ => sq_nonneg _
     linarith
 
-/-- Cutler–Breiman Proposition 1(ii): for at least two archetypes, any feasible archetypes can
+/-- **Feasible archetypes can be moved to the boundary of the hull.** Cutler–Breiman Proposition 1(ii): for at least two archetypes, any feasible archetypes can
 be replaced by feasible archetypes on the boundary of the convex hull of the data whose convex
 hull contains the original one; in particular the RSS does not increase. -/
 theorem exists_frontier_rss_le [Nontrivial E] (x : Fin n → E) (hp : 2 ≤ p) (z : Fin p → E)
@@ -216,7 +216,7 @@ theorem exists_frontier_rss_le [Nontrivial E] (x : Fin n → E) (hp : 2 ≤ p) (
   refine Finset.sum_le_sum fun i _ => ?_
   exact pow_le_pow_left₀ infDist_nonneg (infDist_le_infDist_of_subset hsub hne) 2
 
-/-- If the RSS has a feasible minimizer with `p ≥ 2` archetypes, it has one with every
+/-- **Existence of an archetype minimizer on the hull boundary.** If the RSS has a feasible minimizer with `p ≥ 2` archetypes, it has one with every
 archetype on the boundary of the convex hull of the data. -/
 theorem exists_frontier_minimizer [Nontrivial E] (x : Fin n → E) (hp : 2 ≤ p) (z : Fin p → E)
     (hz : Feasible x z) (hmin : ∀ z' : Fin p → E, Feasible x z' → rss x z ≤ rss x z') :
@@ -225,7 +225,7 @@ theorem exists_frontier_minimizer [Nontrivial E] (x : Fin n → E) (hp : 2 ≤ p
   obtain ⟨z', hz', hfr, -, hle⟩ := exists_frontier_rss_le x hp z hz
   exact ⟨z', hz', hfr, fun z'' hz'' => hle.trans (hmin z'' hz'')⟩
 
-/-- Cutler–Breiman Proposition 1(iii): if every data point is a mixture of the archetypes, the
+/-- **The RSS vanishes when the archetypes' convex hull contains the data.** Cutler–Breiman Proposition 1(iii): if every data point is a mixture of the archetypes, the
 RSS vanishes. Requires `0 < p`: for `p = 0` the hull is empty, so `rss` is `0` vacuously
 and the vanishing would not witness a fit. -/
 theorem rss_eq_zero_of_subset (x : Fin n → E) (z : Fin p → E) (hp : 0 < p)

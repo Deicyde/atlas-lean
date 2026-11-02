@@ -89,7 +89,7 @@ theorem whb_square_faceCount : faceCount jbc_cyc4 = 2 := by
   unfold faceCount nullity
   rw [hE, hC, hV]
 
-/-- The face-region graph of `G`: two adjacent faces of `ℤ²` are joined unless the primal edge
+/-- **Face-region graph of a square-lattice subgraph.** The face-region graph of `G`: two adjacent faces of `ℤ²` are joined unless the primal edge
 between them (`sharedPrimalEdge`) is an edge of `G`. This is the faithful planar dual
 complement of `G`. -/
 noncomputable def whb_faceRegion (G : SimpleGraph (Site 2)) : SimpleGraph (Site 2) where

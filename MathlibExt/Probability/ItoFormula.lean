@@ -286,7 +286,7 @@ theorem tendsto_sum_riemann_uniform {g : ℝ → ℝ} (hg : Continuous g) {t : �
 
 /-! ### Left-point approximation of `g ∘ B` -/
 
-/-- The left-point step process `∑_{k < n} g(B (t k / n)) 1_{(t k / n, t (k + 1) / n]}` of
+/-- **Left-point step process along a Brownian path.** The left-point step process `∑_{k < n} g(B (t k / n)) 1_{(t k / n, t (k + 1) / n]}` of
 `u ↦ g (B u)` on the uniform partition of `[0, t]` into `n` cells. -/
 noncomputable def leftPointProcess {Ω : Type*} (g : ℝ → ℝ) (B : ℝ≥0 → Ω → ℝ) (t : ℝ≥0)
     (n : ℕ) (u : ℝ≥0) (ω : Ω) : ℝ :=
@@ -446,7 +446,7 @@ theorem tendsto_lintegral_leftPointProcess_sub_sq
 
 namespace ElementaryIntegrand
 
-/-- The left-point elementary integrand `∑_{k < n} g(B (t k / n)) 1_{(t k / n, t (k + 1) / n]}`
+/-- **Left-point elementary integrand along a Brownian path.** The left-point elementary integrand `∑_{k < n} g(B (t k / n)) 1_{(t k / n, t (k + 1) / n]}`
 of `u ↦ g (B u)` on the uniform partition of `[0, t]`, for a measurable `g` bounded by `C` and
 an adapted `B`. -/
 noncomputable def leftPoint {Ω : Type*} {mΩ : MeasurableSpace Ω} (F : Filtration ℝ≥0 mΩ)
@@ -469,7 +469,7 @@ private theorem time_le' {t : ℝ≥0} {n k : ℕ} (hk : k ≤ n) : t * k / n �
   · rw [div_le_iff₀ (by exact_mod_cast hn)]
     exact mul_le_mul_of_nonneg_left (by exact_mod_cast hk) bot_le
 
-/-- The elementary Itô integral of `leftPoint` at time `t` is the left-point Itô sum
+/-- **Itô integral of the left-point integrand is the left-point sum.** The elementary Itô integral of `leftPoint` at time `t` is the left-point Itô sum
 `∑_{k < n} g(B (t k / n)) (B (t (k + 1) / n) - B (t k / n))`. -/
 theorem itoIntegral_leftPoint {Ω : Type*} {mΩ : MeasurableSpace Ω} (F : Filtration ℝ≥0 mΩ)
     {B : ℝ≥0 → Ω → ℝ} (hBF : Adapted F B) {g : ℝ → ℝ} (hg : Measurable g) {C : ℝ}
@@ -484,7 +484,7 @@ theorem itoIntegral_leftPoint {Ω : Type*} {mΩ : MeasurableSpace Ω} (F : Filtr
   push_cast
   rfl
 
-/-- The process of `leftPoint` is `leftPointProcess`. -/
+/-- **Process of the left-point integrand is the left-point step process.** The process of `leftPoint` is `leftPointProcess`. -/
 theorem toProcess_leftPoint {Ω : Type*} {mΩ : MeasurableSpace Ω} (F : Filtration ℝ≥0 mΩ)
     {B : ℝ≥0 → Ω → ℝ} (hBF : Adapted F B) {g : ℝ → ℝ} (hg : Measurable g) {C : ℝ}
     (hgC : ∀ x, |g x| ≤ C) (t : ℝ≥0) (n : ℕ) :

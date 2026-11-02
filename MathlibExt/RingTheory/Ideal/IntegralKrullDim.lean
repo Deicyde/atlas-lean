@@ -29,7 +29,7 @@ theorem ringKrullDim_le_of_integral {A B : Type*} [CommRing A] [CommRing B]
   Order.krullDim_le_of_strictMono (PrimeSpectrum.comap (algebraMap A B))
     (fun _ _ h => Ideal.IsIntegral.under_lt_under h)
 
-/-- Every finite chain of prime ideals lifts along an injective integral algebra map. -/
+/-- **Prime chains lift along injective integral maps.** Every finite chain of prime ideals lifts along an injective integral algebra map. -/
 theorem exists_ltSeries_of_integral_of_injective {A B : Type*} [CommRing A] [CommRing B]
     [Algebra A B] [Algebra.IsIntegral A B] (hinj : Function.Injective (algebraMap A B))
     (p : LTSeries (PrimeSpectrum A)) :
@@ -48,7 +48,7 @@ theorem exists_ltSeries_of_integral_of_injective {A B : Type*} [CommRing A] [Com
   obtain ⟨q, hlength, -, hmap⟩ := Ideal.exists_ltSeries_of_hasGoingUp p Q
   exact ⟨q, hlength, hmap⟩
 
-/-- Krull dimension cannot decrease along an injective integral algebra map. -/
+/-- **Krull dimension does not decrease along injective integral maps.** Krull dimension cannot decrease along an injective integral algebra map. -/
 theorem ringKrullDim_ge_of_integral_of_injective {A B : Type*} [CommRing A] [CommRing B]
     [Algebra A B] [Algebra.IsIntegral A B] (hinj : Function.Injective (algebraMap A B)) :
     ringKrullDim A ≤ ringKrullDim B := by
@@ -58,7 +58,7 @@ theorem ringKrullDim_ge_of_integral_of_injective {A B : Type*} [CommRing A] [Com
   rw [← hq]
   exact le_iSup (fun q : LTSeries (PrimeSpectrum B) => (q.length : WithBot ℕ∞)) q
 
-/-- An injective integral algebra map preserves Krull dimension. -/
+/-- **Injective integral maps preserve Krull dimension.** An injective integral algebra map preserves Krull dimension. -/
 theorem ringKrullDim_eq_of_integral_of_injective {A B : Type*} [CommRing A] [CommRing B]
     [Algebra A B] [Algebra.IsIntegral A B] (hinj : Function.Injective (algebraMap A B)) :
     ringKrullDim B = ringKrullDim A :=

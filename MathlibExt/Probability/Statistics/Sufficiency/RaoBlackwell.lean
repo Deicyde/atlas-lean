@@ -96,7 +96,7 @@ private theorem exists_sub_mul_abs_le_of_convexOn_univ {L : ℝ → ℝ}
       nlinarith [neg_abs_le d₁]
     nlinarith [abs_nonneg d₂, abs_nonneg x]
 
-/-- For a convex loss `L`, `L ∘ μ[W | m]` is integrable whenever `W` and `L ∘ W` are. -/
+/-- **Integrability of a convex loss of a conditional expectation.** For a convex loss `L`, `L ∘ μ[W | m]` is integrable whenever `W` and `L ∘ W` are. -/
 theorem integrable_comp_condExp {m m₀ : MeasurableSpace Ω} (hm : m ≤ m₀)
     (μ : Measure[m₀] Ω) [IsProbabilityMeasure μ] {L : ℝ → ℝ} (hL : ConvexOn ℝ Set.univ L)
     {W : Ω → ℝ} (hW : Integrable W μ) (hLW : Integrable (fun ω => L (W ω)) μ) :

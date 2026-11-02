@@ -46,7 +46,7 @@ def IsInClassS (G : Type) [Group G] [TopologicalSpace G] : Prop :=
     ¬ DiscreteTopology G ∧ (∃ K : Set G, IsCompact K ∧ Subgroup.closure K = ⊤) ∧ Nontrivial G ∧
     ∀ N : Subgroup G, N.Normal → IsClosed (N : Set G) → N = ⊥ ∨ N = ⊤
 
-/-- Two topological groups are locally isomorphic: they contain open subgroups that are isomorphic
+/-- **Locally isomorphic topological groups.** Two topological groups are locally isomorphic: they contain open subgroups that are isomorphic
 as topological groups. -/
 def LocallyIsomorphic (G H : Type) [Group G] [TopologicalSpace G] [Group H] [TopologicalSpace H] :
     Prop :=

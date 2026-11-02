@@ -75,11 +75,11 @@ section Sample
 
 variable {ι α : Type*}
 
-/-- The window of radius `d` of haplotype `i`: its alleles at the `d` sites closest to the
+/-- **Haplotype window around the core.** The window of radius `d` of haplotype `i`: its alleles at the `d` sites closest to the
 core, in the direction indexed by `ℕ`. -/
 def window (h : ι → ℕ → α) (d : ℕ) (i : ι) : Fin d → α := fun k => h i k
 
-/-- Two haplotypes have the same window of radius `d` exactly when they agree at every site
+/-- **Equality of haplotype windows.** Two haplotypes have the same window of radius `d` exactly when they agree at every site
 `k < d`. -/
 theorem window_eq_iff (h : ι → ℕ → α) (d : ℕ) (i j : ι) :
     window h d i = window h d j ↔ ∀ k < d, h i k = h j k := by
@@ -92,19 +92,19 @@ theorem window_eq_iff (h : ι → ℕ → α) (d : ℕ) (i j : ι) :
 
 variable [DecidableEq ι] [DecidableEq α]
 
-/-- The number of ordered pairs of distinct haplotypes of `C` whose windows of radius `d`
+/-- **Concordant haplotype pairs at a given radius.** The number of ordered pairs of distinct haplotypes of `C` whose windows of radius `d`
 agree. -/
 def concordantPairs (h : ι → ℕ → α) (C : Finset ι) (d : ℕ) : ℕ :=
   ((C ×ˢ C).filter fun p => p.1 ≠ p.2 ∧ window h d p.1 = window h d p.2).card
 
-/-- Extended haplotype homozygosity at radius `d` of the haplotype set `C`: the probability
+/-- **Extended haplotype homozygosity (EHH).** Extended haplotype homozygosity at radius `d` of the haplotype set `C`: the probability
 that two distinct haplotypes drawn from `C` without replacement agree at all `d` sites nearest
 the core (Sabeti et al. 2002). For `#C ≤ 1` the denominator vanishes and the junk value `0` is
 returned; every statement below that needs the probabilistic reading assumes `2 ≤ #C`. -/
 noncomputable def ehh (h : ι → ℕ → α) (C : Finset ι) (d : ℕ) : ℝ :=
   (concordantPairs h C d : ℝ) / ((C.card : ℝ) * ((C.card : ℝ) - 1))
 
-/-- Outside the domain `2 ≤ #C` the definition returns the junk value `0`. -/
+/-- **EHH is zero for a set of at most one haplotype.** Outside the domain `2 ≤ #C` the definition returns the junk value `0`. -/
 theorem ehh_eq_zero_of_card_le_one (h : ι → ℕ → α) {C : Finset ι} (hC : C.card ≤ 1) (d : ℕ) :
     ehh h C d = 0 := by
   have hzero : ((C.card : ℝ)) * ((C.card : ℝ) - 1) = 0 := by
@@ -144,7 +144,7 @@ theorem ehh_le_one (h : ι → ℕ → α) (C : Finset ι) (d : ℕ) : ehh h C d
           push_cast [Nat.cast_sub h1]
           ring
 
-/-- At radius `0` every pair of haplotypes agrees, so `EHH(0) = 1`. -/
+/-- **EHH at radius zero equals one.** At radius `0` every pair of haplotypes agrees, so `EHH(0) = 1`. -/
 theorem ehh_zero_window (h : ι → ℕ → α) {C : Finset ι} (hC : 2 ≤ C.card) :
     ehh h C 0 = 1 := by
   have hw : ∀ i j : ι, window h 0 i = window h 0 j := fun i j => funext fun k => k.elim0
@@ -164,7 +164,7 @@ theorem ehh_zero_window (h : ι → ℕ → α) {C : Finset ι} (hC : 2 ≤ C.ca
   push_cast [Nat.cast_sub h1]
   ring
 
-/-- EHH is nonincreasing in the radius: widening the window can only break ties. -/
+/-- **EHH is nonincreasing in the radius.** EHH is nonincreasing in the radius: widening the window can only break ties. -/
 theorem ehh_antitone (h : ι → ℕ → α) (C : Finset ι) {d d' : ℕ} (hd : d ≤ d') :
     ehh h C d' ≤ ehh h C d := by
   rcases le_or_gt C.card 1 with hc | hc
@@ -184,7 +184,7 @@ theorem ehh_antitone (h : ι → ℕ → α) (C : Finset ι) {d d' : ℕ} (hd : 
     rw [ehh, ehh]
     gcongr
 
-/-- EHH as the sampling-without-replacement homozygosity of the partition of `C` into window
+/-- **EHH as homozygosity of window-type counts.** EHH as the sampling-without-replacement homozygosity of the partition of `C` into window
 types: `EHH(d) = ∑_t c_t (c_t - 1) / (#C (#C - 1))`, where `c_t` is the number of haplotypes of
 `C` with window `t`. This is the form in which EHH is usually defined. -/
 theorem ehh_eq_sum_counts (h : ι → ℕ → α) (C : Finset ι) (d : ℕ) :
@@ -223,7 +223,7 @@ theorem ehh_eq_sum_counts (h : ι → ℕ → α) (C : Finset ι) (d : ℕ) :
   push_cast [Nat.cast_sub hc1]
   ring
 
-/-- The number of ordered pairs of distinct haplotypes of `C` whose core alleles (under
+/-- **Concordant haplotype pairs sharing a core allele.** The number of ordered pairs of distinct haplotypes of `C` whose core alleles (under
 `core`) agree and whose windows of radius `d` agree. The extended haplotype includes the
 core, so pairs carrying different core alleles are never concordant, even when their
 outward windows match. -/
@@ -232,7 +232,7 @@ def concordantPairsCore {β : Type*} [DecidableEq β] (core : ι → β) (h : ι
   ((C ×ˢ C).filter fun p =>
     p.1 ≠ p.2 ∧ core p.1 = core p.2 ∧ window h d p.1 = window h d p.2).card
 
-/-- Extended haplotype homozygosity with core-allele labels: the probability that two
+/-- **Extended haplotype homozygosity with core-allele labels.** Extended haplotype homozygosity with core-allele labels: the probability that two
 distinct haplotypes drawn from `C` without replacement share both their core allele and
 their window of radius `d`. For a set `C` of carriers of a single core allele this is the
 same count as `ehh`; for a pooled set `D` carrying several core alleles it excludes the
@@ -241,7 +241,7 @@ noncomputable def ehhCore {β : Type*} [DecidableEq β] (core : ι → β) (h : 
     (C : Finset ι) (d : ℕ) : ℝ :=
   (concordantPairsCore core h C d : ℝ) / ((C.card : ℝ) * ((C.card : ℝ) - 1))
 
-/-- Relative extended haplotype homozygosity: the core-labelled EHH of the core-allele
+/-- **Relative extended haplotype homozygosity (REHH).** Relative extended haplotype homozygosity: the core-labelled EHH of the core-allele
 carriers `C` divided by the core-labelled EHH of the pooled set `D` of haplotypes carrying
 the other core alleles. The denominator counts only pairs sharing a core allele, so
 cross-core pairs never inflate it. This is the statistic of the long-range haplotype test
@@ -251,7 +251,7 @@ noncomputable def rehh {β : Type*} [DecidableEq β] (core : ι → β) (h : ι 
     (C D : Finset ι) (d : ℕ) : ℝ :=
   ehhCore core h C d / ehhCore core h D d
 
-/-- With a positive reference EHH, the relative EHH exceeds `1` exactly when the core allele's
+/-- **Criterion for relative EHH to exceed one.** With a positive reference EHH, the relative EHH exceeds `1` exactly when the core allele's
 haplotypes are the more homozygous ones. -/
 theorem one_lt_rehh_iff {β : Type*} [DecidableEq β] (core : ι → β) (h : ι → ℕ → α)
     (C D : Finset ι) {d : ℕ} (hD : 0 < ehhCore core h D d) :
@@ -262,7 +262,7 @@ end Sample
 
 section Neutral
 
-/-- The probability that no recombination falls on the genealogy of a pair of lineages within
+/-- **Probability of no recombination on a pair's genealogy.** The probability that no recombination falls on the genealogy of a pair of lineages within
 genetic distance `d` of the core, given that the pair coalesces at time `t` (time in units of
 `2N` generations, `ρ = 4Nr` the scaled recombination rate per site): the two lineages carry
 recombination events at total rate `ρ * d` until they coalesce.
@@ -282,7 +282,7 @@ theorem pairNoRecomb_le_one {ρ d t : ℝ} (hρ : 0 ≤ ρ) (hd : 0 ≤ d) (ht :
   rw [pairNoRecomb, exp_le_one_iff]
   nlinarith [mul_nonneg (mul_nonneg hρ hd) ht]
 
-/-- The no-recombination probability decays in the distance from the core. -/
+/-- **No-recombination probability decays with distance.** The no-recombination probability decays in the distance from the core. -/
 theorem pairNoRecomb_antitone {ρ t : ℝ} (hρ : 0 ≤ ρ) (ht : 0 ≤ t) {d d' : ℝ} (hd : d ≤ d') :
     pairNoRecomb ρ d' t ≤ pairNoRecomb ρ d t := by
   rw [pairNoRecomb, pairNoRecomb, exp_le_exp]
@@ -295,7 +295,7 @@ theorem integrable_pairNoRecomb {ρ d : ℝ} (hρ : 0 ≤ ρ) (hd : 0 ≤ d) :
   change Integrable (pairNoRecomb ρ d) (gammaMeasure 1 1)
   exact h
 
-/-- Averaging over the pair coalescence time `T₂`, which is exponential of rate `1` in units of
+/-- **Mean no-recombination probability under the neutral coalescent.** Averaging over the pair coalescence time `T₂`, which is exponential of rate `1` in units of
 `2N` generations under the neutral coalescent, the probability that no recombination falls on
 the pair's genealogy within distance `d` is `1 / (1 + ρ d)`. In a mutation-free model, since
 a recombined lineage can still carry an identical haplotype, this is a lower bound for

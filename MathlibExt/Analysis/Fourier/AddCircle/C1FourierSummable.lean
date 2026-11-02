@@ -42,7 +42,7 @@ namespace MathlibExt.Analysis.Fourier.AddCircle.C1FourierSummable
 
 open MeasureTheory Filter Topology
 
-/-- A continuous function on `ℝ` is square-integrable on one period. -/
+/-- **Continuous functions are square-integrable on one period.** A continuous function on `ℝ` is square-integrable on one period. -/
 theorem memLp_of_continuousOn_Ioc {T : ℝ} {g : ℝ → ℂ}
     (hg : Continuous g) : MemLp g 2 (volume.restrict (Set.Ioc 0 T)) := by
   obtain ⟨C, hC⟩ := isCompact_Icc.exists_bound_of_continuousOn hg.continuousOn
@@ -51,7 +51,7 @@ theorem memLp_of_continuousOn_Ioc {T : ℝ} {g : ℝ → ℂ}
     exact hC x (Set.Ioc_subset_Icc_self hx)
   · exact hg.aestronglyMeasurable.restrict
 
-/-- A `T`-periodic continuous function descends to a continuous function on the
+/-- **Lift of a periodic continuous function to the circle.** A `T`-periodic continuous function descends to a continuous function on the
 circle `AddCircle T`, via `AddCircle.liftIoc`. -/
 noncomputable def liftPeriodicContinuousMap {T : ℝ} [hT' : Fact (0 < T)]
     {f : ℝ → ℂ}
@@ -59,7 +59,7 @@ noncomputable def liftPeriodicContinuousMap {T : ℝ} [hT' : Fact (0 < T)]
   ⟨AddCircle.liftIoc T 0 f,
     AddCircle.liftIoc_continuous (hper 0).symm hfcont.continuousOn⟩
 
-/-- The descended function agrees with `f` on the period `(0, T]`. -/
+/-- **Lifted periodic function agrees with the original on a period.** The descended function agrees with `f` on the period `(0, T]`. -/
 theorem liftPeriodicContinuousMap_apply {T : ℝ} [hT' : Fact (0 < T)]
     {f : ℝ → ℂ}
     (hper : Function.Periodic f T) (hfcont : Continuous f) {x : ℝ}
@@ -67,7 +67,7 @@ theorem liftPeriodicContinuousMap_apply {T : ℝ} [hT' : Fact (0 < T)]
     liftPeriodicContinuousMap hper hfcont (x : AddCircle T) = f x :=
   AddCircle.liftIoc_zero_coe_apply hx
 
-/-- The interval coefficients on `(0, 0 + T]` agree with those on `(0, T]`; this
+/-- **Fourier coefficients on $(0, 0+T]$ equal those on $(0, T]$.** The interval coefficients on `(0, 0 + T]` agree with those on `(0, T]`; this
 bridges Mathlib's `fourierCoeff_liftIoc_eq`, which is stated on `(a, a + T]`. -/
 theorem fourierCoeffOn_zero_add {T : ℝ} [hT' : Fact (0 < T)] {f : ℝ → ℂ} (hT : 0 < T) :
     fourierCoeffOn (lt_add_of_pos_right (0 : ℝ) (Fact.out : (0 : ℝ) < T)) f =
@@ -76,7 +76,7 @@ theorem fourierCoeffOn_zero_add {T : ℝ} [hT' : Fact (0 < T)] {f : ℝ → ℂ}
   rw [fourierCoeffOn_eq_integral, fourierCoeffOn_eq_integral]
   simp only [fourier_coe_apply, zero_add, sub_zero]
 
-/-- The Fourier coefficients of the descended function are the interval
+/-- **Fourier coefficients of the lifted periodic function.** The Fourier coefficients of the descended function are the interval
 coefficients `fourierCoeffOn`. -/
 theorem fourierCoeff_liftPeriodicContinuousMap {T : ℝ} (hT : 0 < T) [hT' : Fact (0 < T)]
     {f : ℝ → ℂ}
@@ -86,7 +86,7 @@ theorem fourierCoeff_liftPeriodicContinuousMap {T : ℝ} (hT : 0 < T) [hT' : Fac
   rw [← fourierCoeffOn_zero_add hT]
   exact fourierCoeff_liftIoc_eq (T := T) (a := 0) f n
 
-/-- A Fourier coefficient bounded by the sup norm on one period. -/
+/-- **Fourier coefficient bounded by the sup norm on a period.** A Fourier coefficient bounded by the sup norm on one period. -/
 theorem norm_fourierCoeffOn_le_of_bound {a b : ℝ} (hab : a < b) {f : ℝ → ℂ} {C : ℝ}
     (hC : ∀ x ∈ Set.Icc a b, ‖f x‖ ≤ C) (n : ℤ) :
     ‖fourierCoeffOn hab f n‖ ≤ max C 0 := by

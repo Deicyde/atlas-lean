@@ -40,7 +40,7 @@ namespace Cslib.Language
 
 variable {T : Type*} {g : ContextFreeGrammar T}
 
-/-- A grammar is in Greibach normal form when every production has
+/-- **Greibach normal form.** A grammar is in Greibach normal form when every production has
 output either a single terminal followed by nonterminals, or the
 empty word with the initial nonterminal on the left; and either the
 initial nonterminal occurs in no output (so an empty production
@@ -58,7 +58,7 @@ def IsGreibachNormalForm (g : ContextFreeGrammar T) : Prop :=
   ((∀ r ∈ g.rules, Symbol.nonterminal g.initial ∉ r.output) ∨
     ∀ r ∈ g.rules, r.output ≠ [])
 
-/-- In Greibach normal form, every nonempty production output begins
+/-- **Nonempty Greibach productions begin with a terminal.** In Greibach normal form, every nonempty production output begins
 with a terminal followed by nonterminals.
 Source: Hopcroft and Ullman, Introduction to Automata Theory,
 Languages, and Computation, Addison-Wesley, 1979, Chapter 7

@@ -102,32 +102,32 @@ variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω}
 
 /-! ### Covariance functions -/
 
-/-- The covariance function of the Ornstein–Uhlenbeck process started at `0`:
+/-- **Covariance of the Ornstein–Uhlenbeck process started at zero.** The covariance function of the Ornstein–Uhlenbeck process started at `0`:
 `(σ² / (2θ)) (e^{-θ|t-s|} - e^{-θ(t+s)})` (Karatzas–Shreve 1991, Section 5.6). It is meant
 for `θ > 0` and times `s, t ≥ 0`; at `θ = 0` the division by zero makes it `0`. -/
 noncomputable def ouCovariance (θ σ s t : ℝ) : ℝ :=
   σ ^ 2 / (2 * θ) * (exp (-θ * |t - s|) - exp (-θ * (t + s)))
 
-/-- The covariance function of the stationary Ornstein–Uhlenbeck process:
+/-- **Covariance of the stationary Ornstein–Uhlenbeck process.** The covariance function of the stationary Ornstein–Uhlenbeck process:
 `(σ² / (2θ)) e^{-θ|t-s|}` (Uhlenbeck–Ornstein 1930). It is meant for `θ > 0`. -/
 noncomputable def ouStationaryCovariance (θ σ s t : ℝ) : ℝ :=
   σ ^ 2 / (2 * θ) * exp (-θ * |t - s|)
 
-/-- The OU covariance is symmetric. -/
+/-- **Symmetry of the Ornstein–Uhlenbeck covariance.** The OU covariance is symmetric. -/
 theorem ouCovariance_comm (θ σ s t : ℝ) : ouCovariance θ σ s t = ouCovariance θ σ t s := by
   simp only [ouCovariance, abs_sub_comm t s, add_comm t s]
 
-/-- The variance of the OU process started at `0`: `(σ² / (2θ)) (1 - e^{-2θt})`. -/
+/-- **Variance of the Ornstein–Uhlenbeck process started at zero.** The variance of the OU process started at `0`: `(σ² / (2θ)) (1 - e^{-2θt})`. -/
 theorem ouCovariance_self (θ σ t : ℝ) :
     ouCovariance θ σ t t = σ ^ 2 / (2 * θ) * (1 - exp (-2 * θ * t)) := by
   rw [ouCovariance, sub_self, abs_zero, mul_zero, exp_zero, show -θ * (t + t) = -2 * θ * t by ring]
 
-/-- The stationary variance `σ² / (2θ)`. -/
+/-- **Variance of the stationary Ornstein–Uhlenbeck process.** The stationary variance `σ² / (2θ)`. -/
 theorem ouStationaryCovariance_self (θ σ t : ℝ) :
     ouStationaryCovariance θ σ t t = σ ^ 2 / (2 * θ) := by
   simp [ouStationaryCovariance]
 
-/-- Shifting both times by `h → ∞` turns `ouCovariance` into `ouStationaryCovariance`. -/
+/-- **Ornstein–Uhlenbeck covariance converges to the stationary one.** Shifting both times by `h → ∞` turns `ouCovariance` into `ouStationaryCovariance`. -/
 theorem tendsto_ouCovariance_add {θ : ℝ} (hθ : 0 < θ) (σ s t : ℝ) :
     Tendsto (fun h : ℝ ↦ ouCovariance θ σ (s + h) (t + h)) atTop
       (𝓝 (ouStationaryCovariance θ σ s t)) := by
@@ -144,7 +144,7 @@ theorem tendsto_ouCovariance_add {θ : ℝ} (hθ : 0 < θ) (σ s t : ℝ) :
 
 /-! ### The processes -/
 
-/-- `X` is an **Ornstein–Uhlenbeck process started at `0`** with rate `θ > 0` and noise
+/-- **Ornstein–Uhlenbeck process started at zero.** `X` is an **Ornstein–Uhlenbeck process started at `0`** with rate `θ > 0` and noise
 amplitude `σ` under `P`: a centered Gaussian process with covariance `ouCovariance θ σ`.
 Only the finite-dimensional laws are fixed (no path regularity). -/
 structure IsOrnsteinUhlenbeckFromZero (θ σ : ℝ) (X : ℝ≥0 → Ω → ℝ) (P : Measure Ω := by volume_tac) :
@@ -154,7 +154,7 @@ structure IsOrnsteinUhlenbeckFromZero (θ σ : ℝ) (X : ℝ≥0 → Ω → ℝ)
   integral_eval : ∀ t, P[X t] = 0
   covariance_eval : ∀ s t, cov[X s, X t; P] = ouCovariance θ σ s t
 
-/-- `X` is a **stationary Ornstein–Uhlenbeck process** with rate `θ > 0` and noise
+/-- **Stationary Ornstein–Uhlenbeck process.** `X` is a **stationary Ornstein–Uhlenbeck process** with rate `θ > 0` and noise
 amplitude `σ` under `P`: a centered Gaussian process with covariance
 `ouStationaryCovariance θ σ`. Only the finite-dimensional laws are fixed. -/
 structure IsStationaryOrnsteinUhlenbeck (θ σ : ℝ) (X : ℝ≥0 → Ω → ℝ)
@@ -164,20 +164,20 @@ structure IsStationaryOrnsteinUhlenbeck (θ σ : ℝ) (X : ℝ≥0 → Ω → �
   integral_eval : ∀ t, P[X t] = 0
   covariance_eval : ∀ s t, cov[X s, X t; P] = ouStationaryCovariance θ σ s t
 
-/-- Doob's clock `τ t = (e^{2θt} - 1)/(2θ)` for the process started at `0`. The value is
+/-- **Doob's clock for the Ornstein–Uhlenbeck process from zero.** Doob's clock `τ t = (e^{2θt} - 1)/(2θ)` for the process started at `0`. The value is
 nonnegative for every real `θ`, so `Real.toNNReal` only changes its type. -/
 noncomputable def ouClock (θ : ℝ) (t : ℝ≥0) : ℝ≥0 :=
   Real.toNNReal ((exp (2 * θ * t) - 1) / (2 * θ))
 
-/-- Doob's clock `t ↦ e^{2θt}/(2θ)` for the stationary process (positive for `θ > 0`). -/
+/-- **Doob's clock for the stationary Ornstein–Uhlenbeck process.** Doob's clock `t ↦ e^{2θt}/(2θ)` for the stationary process (positive for `θ > 0`). -/
 noncomputable def ouStationaryClock (θ : ℝ) (t : ℝ≥0) : ℝ≥0 :=
   Real.toNNReal (exp (2 * θ * t) / (2 * θ))
 
-/-- Doob's time change `t ↦ σ e^{-θt} B(τ t)` of a process `B`, with `τ = ouClock θ`. -/
+/-- **Doob's time change of Brownian motion.** Doob's time change `t ↦ σ e^{-θt} B(τ t)` of a process `B`, with `τ = ouClock θ`. -/
 noncomputable def ouOfBrownian (θ σ : ℝ) (B : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) (ω : Ω) : ℝ :=
   σ * exp (-θ * t) * B (ouClock θ t) ω
 
-/-- Doob's stationary time change `t ↦ σ e^{-θt} B(e^{2θt}/(2θ))` of a process `B`. -/
+/-- **Doob's stationary time change of Brownian motion.** Doob's stationary time change `t ↦ σ e^{-θt} B(e^{2θt}/(2θ))` of a process `B`. -/
 noncomputable def ouStationaryOfBrownian (θ σ : ℝ) (B : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) (ω : Ω) : ℝ :=
   σ * exp (-θ * t) * B (ouStationaryClock θ t) ω
 
@@ -268,7 +268,7 @@ theorem IsPreBrownianReal.isStationaryOrnsteinUhlenbeck_ouStationaryOfBrownian
           (exp (-θ * s) * exp (-θ * t) * exp (2 * θ * min (s : ℝ) (t : ℝ))) := by ring
       _ = _ := by rw [ou_exp_min]
 
-/-- There is a probability measure on paths `ℝ≥0 → ℝ` under which the coordinate process is a
+/-- **Existence of a pre-Brownian motion on path space.** There is a probability measure on paths `ℝ≥0 → ℝ` under which the coordinate process is a
 pre-Brownian motion (Kolmogorov extension of the Brownian finite-dimensional laws). -/
 theorem exists_isPreBrownianReal_eval :
     ∃ μ : Measure (ℝ≥0 → ℝ), IsPreBrownianReal (fun t f ↦ f t) μ := by
@@ -277,13 +277,13 @@ theorem exists_isPreBrownianReal_eval :
     BrownianReal.isProjectiveMeasureFamily_projectiveFamily
   exact ⟨μ, ⟨fun I ↦ ⟨(Finset.measurable_restrict I).aemeasurable, hμ I⟩⟩⟩
 
-/-- An Ornstein–Uhlenbeck process started at `0` exists for every `θ > 0` and `σ`. -/
+/-- **Existence of the Ornstein–Uhlenbeck process started at zero.** An Ornstein–Uhlenbeck process started at `0` exists for every `θ > 0` and `σ`. -/
 theorem exists_isOrnsteinUhlenbeckFromZero {θ : ℝ} (hθ : 0 < θ) (σ : ℝ) :
     ∃ μ : Measure (ℝ≥0 → ℝ), ∃ X : ℝ≥0 → (ℝ≥0 → ℝ) → ℝ, IsOrnsteinUhlenbeckFromZero θ σ X μ := by
   obtain ⟨μ, hB⟩ := exists_isPreBrownianReal_eval
   exact ⟨μ, _, hB.isOrnsteinUhlenbeckFromZero_ouOfBrownian hθ σ⟩
 
-/-- A stationary Ornstein–Uhlenbeck process exists for every `θ > 0` and `σ`. -/
+/-- **Existence of the stationary Ornstein–Uhlenbeck process.** A stationary Ornstein–Uhlenbeck process exists for every `θ > 0` and `σ`. -/
 theorem exists_isStationaryOrnsteinUhlenbeck {θ : ℝ} (hθ : 0 < θ) (σ : ℝ) :
     ∃ μ : Measure (ℝ≥0 → ℝ), ∃ X : ℝ≥0 → (ℝ≥0 → ℝ) → ℝ,
       IsStationaryOrnsteinUhlenbeck θ σ X μ := by
@@ -292,7 +292,7 @@ theorem exists_isStationaryOrnsteinUhlenbeck {θ : ℝ} (hθ : 0 < θ) (σ : ℝ
 
 /-! ### Laws -/
 
-/-- The one-time law of the OU process started at `0`:
+/-- **One-time law of the Ornstein–Uhlenbeck process from zero.** The one-time law of the OU process started at `0`:
 `X t ~ N(0, (σ² / (2θ)) (1 - e^{-2θt}))`. -/
 theorem IsOrnsteinUhlenbeckFromZero.hasLaw_eval {θ σ : ℝ} {X : ℝ≥0 → Ω → ℝ}
     (hX : IsOrnsteinUhlenbeckFromZero θ σ X P) (t : ℝ≥0) :
@@ -302,7 +302,7 @@ theorem IsOrnsteinUhlenbeckFromZero.hasLaw_eval {θ σ : ℝ} {X : ℝ≥0 → �
   rw [hG.map_eq_gaussianReal, hX.integral_eval, ← covariance_self hG.aemeasurable,
     hX.covariance_eval, ouCovariance_self]
 
-/-- The OU process of `IsOrnsteinUhlenbeckFromZero` starts at `0` almost surely. -/
+/-- **The Ornstein–Uhlenbeck process from zero starts at zero.** The OU process of `IsOrnsteinUhlenbeckFromZero` starts at `0` almost surely. -/
 theorem IsOrnsteinUhlenbeckFromZero.eval_zero_ae_eq_zero {θ σ : ℝ} {X : ℝ≥0 → Ω → ℝ}
     (hX : IsOrnsteinUhlenbeckFromZero θ σ X P) : ∀ᵐ ω ∂P, X 0 ω = 0 := by
   have h := hX.hasLaw_eval 0
@@ -331,7 +331,7 @@ theorem IsStationaryOrnsteinUhlenbeck.hasLaw_eval {θ σ : ℝ} {X : ℝ≥0 →
   rw [hG.map_eq_gaussianReal, hX.integral_eval, ← covariance_self hG.aemeasurable,
     hX.covariance_eval, ouStationaryCovariance_self]
 
-/-- The finite-dimensional laws of a real Gaussian process are determined by its mean and
+/-- **Gaussian process laws are determined by mean and covariance.** The finite-dimensional laws of a real Gaussian process are determined by its mean and
 covariance functions: two Gaussian processes with the same means and covariances (possibly on
 different probability spaces) have the same finite-dimensional laws. -/
 theorem IsGaussianProcess.map_restrict_eq_of_covariance_eq {T Ω' : Type*}
@@ -370,7 +370,7 @@ theorem IsGaussianProcess.map_restrict_eq_of_covariance_eq {T Ω' : Type*}
     · exact fun i ↦ (hY.hasGaussianLaw_eval i).memLp_two
     · exact fun i ↦ (hX.hasGaussianLaw_eval i).memLp_two
 
-/-- A time shift of a stationary OU process is a stationary OU process. -/
+/-- **Time shifts of a stationary Ornstein–Uhlenbeck process.** A time shift of a stationary OU process is a stationary OU process. -/
 theorem IsStationaryOrnsteinUhlenbeck.shift {θ σ : ℝ} {X : ℝ≥0 → Ω → ℝ}
     (hX : IsStationaryOrnsteinUhlenbeck θ σ X P) (h : ℝ≥0) :
     IsStationaryOrnsteinUhlenbeck θ σ (fun t ↦ X (t + h)) P := by
@@ -391,7 +391,7 @@ theorem IsStationaryOrnsteinUhlenbeck.map_restrict_shift {θ σ : ℝ} {X : ℝ�
 
 /-! ### Mean reversion and the transition law -/
 
-/-- For a centered Gaussian process with `cov(X u, X t) = c cov(X u, X s)` for all `u ≤ s`,
+/-- **Conditional expectation of a Gaussian process given its past.** For a centered Gaussian process with `cov(X u, X t) = c cov(X u, X s)` for all `u ≤ s`,
 the conditional expectation of `X t` given the natural filtration at `s` is `c X s`. -/
 theorem IsGaussianProcess.condExp_natural_eq_of_covariance {X : ℝ≥0 → Ω → ℝ}
     (hX : IsGaussianProcess X P) (hm : ∀ t, StronglyMeasurable (X t))
@@ -459,7 +459,7 @@ theorem IsGaussianProcess.condExp_natural_eq_of_covariance {X : ℝ≥0 → Ω �
     P[X t | Filtration.natural X hm s] ω - c * X s ω at hsub
   linarith
 
-/-- For a centered Gaussian process with `cov(X s, X t) = c Var(X s)`, the conditional law of
+/-- **Conditional law of a Gaussian process at one time given another.** For a centered Gaussian process with `cov(X s, X t) = c Var(X s)`, the conditional law of
 `X t` given `X s = x` is `N(c x, Var(X t) - c² Var(X s))` for almost every `x`. -/
 theorem IsGaussianProcess.condDistrib_eval_eq_of_covariance {T : Type*}
     {X : T → Ω → ℝ} (hX : IsGaussianProcess X P) (hm : ∀ t, Measurable (X t))
@@ -593,7 +593,7 @@ theorem IsStationaryOrnsteinUhlenbeck.condDistrib_eval {θ σ : ℝ}
 
 /-! ### Pathwise Langevin equation -/
 
-/-- The explicit solution of the pathwise Langevin equation driven by a path `w`:
+/-- **Pathwise solution of the Langevin equation.** The explicit solution of the pathwise Langevin equation driven by a path `w`:
 `e^{-θt} x₀ + σ (w t - e^{-θt} w 0 - θ ∫_0^t e^{-θ(t-u)} w u du)`. This is
 `e^{-θt} x₀ + σ ∫_0^t e^{-θ(t-u)} dw(u)` after integration by parts (the Itô-integral form for a
 Brownian path is a wanted statement). -/
@@ -617,7 +617,7 @@ private theorem ouPathSolution_eq (θ σ x₀ : ℝ) (w : ℝ → ℝ) (t : ℝ)
   rw [hk]
   ring
 
-/-- The pathwise solution is continuous when the driving path is. -/
+/-- **Continuity of the pathwise Langevin solution.** The pathwise solution is continuous when the driving path is. -/
 theorem continuous_ouPathSolution (θ σ x₀ : ℝ) {w : ℝ → ℝ} (hw : Continuous w) :
     Continuous (ouPathSolution θ σ x₀ w) := by
   have hf : Continuous (fun u => exp (θ * u) * w u) := by fun_prop

@@ -63,11 +63,11 @@ open LDScore
 
 variable {N M : ℕ} {Ω : Type*} {m : MeasurableSpace Ω}
 
-/-- The in-sample LD matrix `R̂ = Xᵀ X / N`, with entries `ldCorr X j k`. -/
+/-- **In-sample LD matrix.** The in-sample LD matrix `R̂ = Xᵀ X / N`, with entries `ldCorr X j k`. -/
 noncomputable def ldMatrix (X : Matrix (Fin N) (Fin M) ℝ) : Matrix (Fin M) (Fin M) ℝ :=
   Matrix.of (ldCorr X)
 
-/-- The linear phenotype model of SLDP regression at the level of first moments: integrable
+/-- **First-moment phenotype model of SLDP regression.** The linear phenotype model of SLDP regression at the level of first moments: integrable
 random effects `β` with means `meanBeta` and integrable noise `ε` of mean zero. (SLDP's model
 takes `meanBeta = μ v` for a signed annotation `v`; second moments are not needed for the
 first-moment identity.) -/
@@ -91,10 +91,10 @@ namespace Model
 
 variable {P : Measure Ω} (D : Model P N M) (X : Matrix (Fin N) (Fin M) ℝ)
 
-/-- The phenotype `y = X β + ε`. -/
+/-- **Phenotype in the SLDP regression model.** The phenotype `y = X β + ε`. -/
 def pheno (i : Fin N) (ω : Ω) : ℝ := ∑ k, X i k * D.beta k ω + D.eps i ω
 
-/-- The vector `α̂ = Xᵀ y / N` of marginal correlations between the (standardized) markers and
+/-- **Marginal marker-phenotype correlations in SLDP regression.** The vector `α̂ = Xᵀ y / N` of marginal correlations between the (standardized) markers and
 the phenotype. -/
 noncomputable def alphaHat (ω : Ω) (j : Fin M) : ℝ := (∑ i, X i j * D.pheno X i ω) / N
 

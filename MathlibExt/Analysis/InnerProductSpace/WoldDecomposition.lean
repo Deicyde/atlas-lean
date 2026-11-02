@@ -68,12 +68,12 @@ section Basic
 variable {𝕜 : Type*} [RCLike 𝕜] {H : Type*} [NormedAddCommGroup H]
   [InnerProductSpace 𝕜 H]
 
-/-- The **wandering subspace** of an isometry `V`: the orthogonal complement of
+/-- **Wandering subspace of an isometry.** The **wandering subspace** of an isometry `V`: the orthogonal complement of
 its range. Vectors here are orthogonal to every vector in the range of `V`. -/
 noncomputable def wanderingSub (V : H →ₗᵢ[𝕜] H) : Submodule 𝕜 H :=
   (LinearMap.range (V : H →ₗ[𝕜] H))ᗮ
 
-/-- Pulling inner products back along powers of an isometry. -/
+/-- **Powers of an isometry preserve inner products.** Pulling inner products back along powers of an isometry. -/
 theorem inner_pow_pullback (V : H →ₗᵢ[𝕜] H) (k d : ℕ) (a b : H) :
     ⟪(V ^ k) a, (V ^ (k + d)) b⟫_𝕜 = ⟪a, (V ^ d) b⟫_𝕜 := by
   induction k generalizing a b with
@@ -85,14 +85,14 @@ theorem inner_pow_pullback (V : H →ₗᵢ[𝕜] H) (k d : ℕ) (a b : H) :
       LinearIsometry.inner_map_map]
     exact ih a b
 
-/-- A positive power of an isometry lands in the range of the isometry. -/
+/-- **Positive powers of an isometry land in its range.** A positive power of an isometry lands in the range of the isometry. -/
 theorem pow_mem_range (V : H →ₗᵢ[𝕜] H) {d : ℕ} (hd : 0 < d) (b : H) :
     (V ^ d) b ∈ LinearMap.range (V : H →ₗ[𝕜] H) := by
   obtain ⟨d', rfl⟩ := Nat.exists_eq_succ_of_ne_zero (Nat.ne_of_gt hd)
   rw [pow_succ', LinearIsometry.coe_mul]
   exact ⟨(V ^ d') b, by simp [Function.comp_apply]⟩
 
-/-- A wandering vector, pushed forward `k` times, is orthogonal to any vector
+/-- **Orthogonality of pushed-forward wandering vectors.** A wandering vector, pushed forward `k` times, is orthogonal to any vector
 pushed forward strictly more times. -/
 theorem inner_pow_wandering (V : H →ₗᵢ[𝕜] H) {k l : ℕ} (hkl : k < l) (a : H)
     (ha : a ∈ wanderingSub V) (b : H) :
@@ -108,7 +108,7 @@ theorem inner_pow_wandering (V : H →ₗᵢ[𝕜] H) {k l : ℕ} (hkl : k < l) 
   rw [hs, h0]
   exact map_zero _
 
-/-- The symmetric form of `inner_pow_wandering`. -/
+/-- **Orthogonality of pushed-forward wandering vectors, symmetric form.** The symmetric form of `inner_pow_wandering`. -/
 theorem inner_pow_wandering' (V : H →ₗᵢ[𝕜] H) {k l : ℕ} (hkl : k < l) (a : H)
     (ha : a ∈ wanderingSub V) (b : H) :
     ⟪(V ^ l) b, (V ^ k) a⟫_𝕜 = 0 := by
@@ -138,12 +138,12 @@ instance (V : H →ₗᵢ[𝕜] H) :
     (LinearMap.range (V : H →ₗ[𝕜] H)).HasOrthogonalProjection :=
   Submodule.HasOrthogonalProjection.ofCompleteSpace _
 
-/-- The ambient space splits as the wandering subspace plus the range. -/
+/-- **Wandering subspace and range are complementary.** The ambient space splits as the wandering subspace plus the range. -/
 theorem isCompl_wandering (V : H →ₗᵢ[𝕜] H) :
     IsCompl (wanderingSub V) (LinearMap.range (V : H →ₗ[𝕜] H)) :=
   (LinearMap.range (V : H →ₗ[𝕜] H)).isCompl_orthogonal.symm
 
-/-- One step of the Wold decomposition: every vector splits as a wandering
+/-- **One-step Wold splitting into wandering vector plus range.** One step of the Wold decomposition: every vector splits as a wandering
 vector plus a vector in the range. -/
 theorem exists_wandering_add_range (V : H →ₗᵢ[𝕜] H) (x : H) :
     ∃ w ∈ wanderingSub V, ∃ y : H, x = w + V y := by
@@ -154,7 +154,7 @@ theorem exists_wandering_add_range (V : H →ₗᵢ[𝕜] H) (x : H) :
   exact ⟨w, hw, y', by calc x = w + y := hxy.symm
                             _ = w + V y' := by rw [hy'']⟩
 
-/-- Finite Wold decomposition: every vector is a finite sum of pushed-forward
+/-- **Finite Wold decomposition.** Finite Wold decomposition: every vector is a finite sum of pushed-forward
 wandering vectors plus a remainder in the range of `V ^ n`. The wandering
 coefficients vanish at and beyond `n`. -/
 theorem exists_wold_decomposition (V : H →ₗᵢ[𝕜] H) (x : H) (n : ℕ) :
@@ -198,7 +198,7 @@ theorem exists_wold_decomposition (V : H →ₗᵢ[𝕜] H) (x : H) (n : ℕ) :
             rw [Finset.sum_range_succ, Function.update_self, hsum]
 
 omit [CompleteSpace H] in
-/-- Pythagoras for a Wold decomposition: the squared norm of a vector is the sum
+/-- **Pythagorean identity for the Wold decomposition.** Pythagoras for a Wold decomposition: the squared norm of a vector is the sum
 of the squared norms of its wandering coefficients plus the squared norm of
 the remainder. -/
 theorem wold_norm_sq (V : H →ₗᵢ[𝕜] H) (n : ℕ) (w : ℕ → H)
@@ -231,7 +231,7 @@ theorem wold_norm_sq (V : H →ₗᵢ[𝕜] H) (n : ℕ) (w : ℕ → H)
     ring
 
 omit [CompleteSpace H] in
-/-- Uniqueness of the Wold decomposition at level `n`: the remainder and the
+/-- **Uniqueness of the finite Wold decomposition.** Uniqueness of the Wold decomposition at level `n`: the remainder and the
 finite wandering sum are uniquely determined. -/
 theorem wold_decomposition_unique (V : H →ₗᵢ[𝕜] H) (n : ℕ) (w₁ w₂ : ℕ → H)
     (hw₁ : ∀ k, w₁ k ∈ wanderingSub V) (hw₂ : ∀ k, w₂ k ∈ wanderingSub V)
@@ -287,13 +287,13 @@ theorem wold_decomposition_unique (V : H →ₗᵢ[𝕜] H) (n : ℕ) (w₁ w₂
   exact eq_of_sub_eq_zero hsum
 
 omit [CompleteSpace H] in
-/-- The **residual subspace** of an isometry: vectors in the range of every
+/-- **Residual subspace of an isometry.** The **residual subspace** of an isometry: vectors in the range of every
 power of `V`. -/
 noncomputable def residualSub (V : H →ₗᵢ[𝕜] H) : Submodule 𝕜 H :=
   ⨅ n, LinearMap.range ((V ^ n : H →ₗᵢ[𝕜] H) : H →ₗ[𝕜] H)
 
 omit [CompleteSpace H] in
-/-- The isometry maps its residual subspace into itself. -/
+/-- **An isometry maps its residual subspace into itself.** The isometry maps its residual subspace into itself. -/
 theorem mapsTo_residual (V : H →ₗᵢ[𝕜] H) :
     ∀ x ∈ residualSub V, V x ∈ residualSub V := by
   intro x hx
@@ -313,7 +313,7 @@ theorem mapsTo_residual (V : H →ₗᵢ[𝕜] H) :
     rw [pow_succ', LinearIsometry.coe_mul, Function.comp_apply, hz']
 
 omit [CompleteSpace H] in
-/-- The residual subspace is orthogonal to every pushed-forward wandering
+/-- **Residual subspace is orthogonal to the wandering part.** The residual subspace is orthogonal to every pushed-forward wandering
 vector: the wandering part and the residual part of Wold's decomposition are
 orthogonal. -/
 theorem inner_residual_wandering (V : H →ₗᵢ[𝕜] H) (x : H) (hx : x ∈ residualSub V)
@@ -326,7 +326,7 @@ theorem inner_residual_wandering (V : H →ₗᵢ[𝕜] H) (x : H) (hx : x ∈ r
   exact inner_pow_wandering' V (by omega : k < k + 1) a ha z
 
 omit [CompleteSpace H] in
-/-- The restriction of an isometry to its residual subspace is bijective. -/
+/-- **Isometry restricted to the residual subspace is bijective.** The restriction of an isometry to its residual subspace is bijective. -/
 theorem restrict_residual_bijective (V : H →ₗᵢ[𝕜] H) :
     Function.Bijective (((V : H →ₗ[𝕜] H).restrict (mapsTo_residual V) :
       residualSub V →ₗ[𝕜] residualSub V)) := by
@@ -362,7 +362,7 @@ theorem restrict_residual_bijective (V : H →ₗᵢ[𝕜] H) :
     exact hx₀'
 
 omit [CompleteSpace H] in
-/-- The restriction of an isometry to its residual subspace preserves inner
+/-- **Isometry restricted to the residual subspace preserves inner products.** The restriction of an isometry to its residual subspace preserves inner
 products. -/
 theorem inner_restrict_residual (V : H →ₗᵢ[𝕜] H) (x y : residualSub V) :
     ⟪((V : H →ₗ[𝕜] H).restrict (mapsTo_residual V) x : H),
@@ -372,7 +372,7 @@ theorem inner_restrict_residual (V : H →ₗᵢ[𝕜] H) (x y : residualSub V) 
   exact LinearIsometry.inner_map_map V _ _
 
 omit [CompleteSpace H] in
-/-- The isometry restricts to a unitary operator (a linear isometric
+/-- **Unitary part of an isometry on its residual subspace.** The isometry restricts to a unitary operator (a linear isometric
 equivalence) on its residual subspace. -/
 noncomputable def woldResidualEquiv (V : H →ₗᵢ[𝕜] H) :
     residualSub V ≃ₗᵢ[𝕜] residualSub V :=
@@ -382,7 +382,7 @@ noncomputable def woldResidualEquiv (V : H →ₗᵢ[𝕜] H) :
     (inner_restrict_residual V)
 
 omit [CompleteSpace H] in
-/-- Applying the residual unitary is the same as applying `V` and viewing the
+/-- **Action of the residual unitary of an isometry.** Applying the residual unitary is the same as applying `V` and viewing the
 result in the ambient space. -/
 @[simp]
 theorem woldResidualEquiv_apply_coe (V : H →ₗᵢ[𝕜] H) (x : residualSub V) :

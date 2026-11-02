@@ -34,7 +34,7 @@ group all of whose elements have `p`-power order (`IsPGroup`). The target asks f
 some prime `p`, so its refutation covers every prime. Groups are taken in `Type`.
 -/
 
-/-- A group is locally nilpotent if every finitely generated subgroup is nilpotent. -/
+/-- **Locally nilpotent group.** A group is locally nilpotent if every finitely generated subgroup is nilpotent. -/
 def IsLocallyNilpotent (G : Type*) [Group G] : Prop :=
   ∀ H : Subgroup G, H.FG → Group.IsNilpotent H
 

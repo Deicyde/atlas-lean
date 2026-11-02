@@ -43,7 +43,7 @@ and using an étale presentation over a polynomial ring.
 
 universe u
 
-/-- The localization of a smooth algebra at a prime is a domain and
+/-- **Localizations of smooth algebras are integrally closed domains.** The localization of a smooth algebra at a prime is a domain and
 integrally closed. -/
 theorem Algebra.Smooth.isDomain_and_isIntegrallyClosed_of_isLocalization_atPrime
     (R : Type u) [CommRing R] [IsDomain R] [UniqueFactorizationMonoid R]

@@ -64,7 +64,7 @@ open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 
 universe u
 
-/-- A section over a valuation ring factors through a universally closed
+/-- **Valuative criterion for factoring sections through an open subscheme.** A section over a valuation ring factors through a universally closed
 open subscheme exactly when the generic point does. -/
 theorem AlgebraicGeometry.exists_section_comp_eq_iff_factors_of_universallyClosed_of_valuationRing
     (R : Type u) [CommRing R] [IsDomain R] [ValuationRing R]
@@ -107,7 +107,7 @@ theorem AlgebraicGeometry.exists_section_comp_eq_iff_factors_of_universallyClose
     dsimp only [S] at hl₁ hl₂
     exact ⟨l ≫ i, by simpa using hl₂, by rw [← Category.assoc, hl₁]⟩
 
-/-- Rational points over an algebraically closed field are dense. -/
+/-- **Density of rational points over an algebraically closed field.** Rational points over an algebraically closed field are dense. -/
 theorem AlgebraicGeometry.dense_setOf_exists_section_of_isAlgClosed
     {k : Type u} [Field k] [IsAlgClosed k] {X : Scheme.{u}} (f : X ⟶ Spec (.of k))
     [LocallyOfFiniteType f] :
@@ -121,7 +121,7 @@ theorem AlgebraicGeometry.dense_setOf_exists_section_of_isAlgClosed
       pointOfClosedPoint_apply f x hx _⟩
   exact Dense.mono hsub (dense_iff_closure_eq.mpr (closure_closedPoints (X := X)))
 
-/-- Two morphisms over an algebraically closed field agreeing on all
+/-- **Morphisms are determined by their values on rational points.** Two morphisms over an algebraically closed field agreeing on all
 rational points are equal. -/
 theorem AlgebraicGeometry.ext_of_forall_comp_eq_of_isAlgClosed
     {κ : Type u} [Field κ] [IsAlgClosed κ] {X Y : Scheme.{u}}
@@ -179,7 +179,7 @@ theorem AlgebraicGeometry.ext_of_forall_comp_eq_of_isAlgClosed
     rw [Category.assoc, Category.assoc] at hx₀'
     exact (cancel_epi (Spec.map ψ)).1 hx₀'
 
-/-- A surjective morphism locally of finite type lifts rational points over
+/-- **Surjective morphisms of finite type lift rational points.** A surjective morphism locally of finite type lifts rational points over
 an algebraically closed field. -/
 theorem AlgebraicGeometry.exists_comp_eq_of_surjective_of_locallyOfFiniteType_of_isAlgClosed
     {K : Type u} [Field K] [IsAlgClosed K] {X Y : Scheme.{u}} (f : X ⟶ Y)

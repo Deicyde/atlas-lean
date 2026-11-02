@@ -49,7 +49,7 @@ universe u
 
 namespace AlgebraicGeometry
 
-/-- A closed point of a scheme of finite type over an algebraically
+/-- **Closed points of finite-type schemes over algebraically closed fields.** A closed point of a scheme of finite type over an algebraically
 closed field lifts to a point over the base. -/
 theorem exists_over_hom_base_closedPoint_eq_of_isClosed_singleton
     (k : Type u) [Field k] [IsAlgClosed k] {X : Scheme.{u}} (t : X ⟶ Spec (CommRingCat.of k))

@@ -31,7 +31,7 @@ open Polynomial
 
 namespace Finset
 
-/-- Expand a product of affine linear polynomials by the subset of factors
+/-- **Expansion of a product of affine linear polynomials.** Expand a product of affine linear polynomials by the subset of factors
 from which the linear term is selected. -/
 theorem prod_C_add_X_mul_C_eq_sum {ι R : Type*} [DecidableEq ι]
     [CommSemiring R]
@@ -49,7 +49,7 @@ theorem prod_C_add_X_mul_C_eq_sum {ι R : Type*} [DecidableEq ι]
     map_prod]
   ring
 
-/-- The coefficient of degree `i` in a product of affine linear polynomials is
+/-- **Coefficients of a product of affine linear polynomials.** The coefficient of degree `i` in a product of affine linear polynomials is
 the sum over the `i` factors from which the linear term is selected. -/
 theorem prod_C_add_X_mul_C_coeff {ι R : Type*} [DecidableEq ι]
     [CommSemiring R] (S : Finset ι) (r c : ι → R) (i : ℕ) :
@@ -62,7 +62,7 @@ theorem prod_C_add_X_mul_C_coeff {ι R : Type*} [DecidableEq ι]
   rw [coeff_C_mul_X_pow]
   simp only [eq_comm]
 
-/-- A product of affine linear polynomials has degree at most the number of
+/-- **Degree bound for a product of affine linear polynomials.** A product of affine linear polynomials has degree at most the number of
 factors. -/
 theorem prod_C_add_X_mul_C_natDegree_le {ι R : Type*} [CommSemiring R]
     (S : Finset ι) (r c : ι → R) :
@@ -74,7 +74,7 @@ theorem prod_C_add_X_mul_C_natDegree_le {ι R : Type*} [CommSemiring R]
       (natDegree_linear_le (a := c s) (b := r s))
   simpa using sum_le_card_nsmul S _ 1 h
 
-/-- If every constant and linear coefficient is at most one in absolute value,
+/-- **Binomial bound on coefficients of a product of affine polynomials.** If every constant and linear coefficient is at most one in absolute value,
 then the absolute value of coefficient `i` is at most `S.card.choose i`. -/
 theorem abs_prod_C_add_X_mul_C_coeff_le_choose {ι : Type*} [DecidableEq ι]
     (S : Finset ι) (r c : ι → ℤ) (i : ℕ)

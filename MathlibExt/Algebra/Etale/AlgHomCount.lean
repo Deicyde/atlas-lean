@@ -41,7 +41,7 @@ homomorphisms to the base field as its rank.
 
 @[expose] public section
 
-/-- Over an algebraically closed field, the number of algebra homomorphisms
+/-- **Counting algebra homomorphisms from an étale algebra.** Over an algebraically closed field, the number of algebra homomorphisms
 from an étale algebra to the base field equals its rank. -/
 theorem Algebra.Etale.natCard_algHom_eq_finrank_of_isAlgClosed
     (k : Type*) [Field k] [IsAlgClosed k] (R : Type*) [CommRing R] [Algebra k R]

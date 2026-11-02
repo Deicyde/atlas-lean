@@ -137,7 +137,7 @@ theorem Polynomial.addVal_sub_le_addVal_eval_sub (p : A[X]) (a a₀ : A) :
   exact le_add_right (le_refl _)
 
 omit [IsAdicComplete (maximalIdeal A) A] in
-/-- A root sufficiently close to the approximation has the same derivative valuation. -/
+/-- **Nearby roots share the derivative valuation.** A root sufficiently close to the approximation has the same derivative valuation. -/
 theorem Polynomial.addVal_derivative_eval_eq_of_lt_addVal_sub
     (f : A[X]) (a a₀ : A)
     (hva : IsDiscreteValuationRing.addVal A (f.derivative.eval a₀) <

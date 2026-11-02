@@ -70,7 +70,7 @@ theorem jwc_faceAdj_SE_NE (c d : ℤ) :
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   simp only [Matrix.cons_val_zero, Matrix.cons_val_one]; omega
 
-/-- The closed walk through the four faces having the site `(c, d)` as a corner. -/
+/-- **Closed face walk around a lattice vertex.** The closed walk through the four faces having the site `(c, d)` as a corner. -/
 noncomputable def jwc_vertexLoop (c d : ℤ) :
     (hypercubicLattice 2).Walk ![c, d] ![c, d] :=
   .cons (jwc_faceAdj_NE_NW c d)
@@ -238,7 +238,7 @@ theorem jwc_pushGraph_mono (P : PlanarZ2Subgraph) {A B : SimpleGraph P.V} (h : A
   rintro a b ⟨x, y, hxy, hx, hy⟩
   exact ⟨x, y, h hxy, hx, hy⟩
 
-/-- The spanning subgraph formed by a path from `y` to `x` in `K`. -/
+/-- **Spanning subgraph formed by a path.** The spanning subgraph formed by a path from `y` to `x` in `K`. -/
 noncomputable def jwc_cyclePath {V : Type*} [DecidableEq V] {K : SimpleGraph V} {x y : V}
     (hreach : K.Reachable x y) : SimpleGraph V :=
   (hreach.symm).some.toPath.val.toSubgraph.spanningCoe
@@ -329,7 +329,7 @@ theorem jwc_syncMerge (P : PlanarZ2Subgraph) (K : SimpleGraph P.V) (hKle : K ≤
   have hsepCw := jwc_syncMerge_of_closedContour P Cw hCwG hfg hccFinset
   exact jwc_separated_mono (jwc_pushGraph_mono P hCwle) hsepCw
 
-/-- Whitney's duality in the bridge direction for `P`: for every subgraph `K` of `P` and edge
+/-- **Whitney duality in the bridge direction.** Whitney's duality in the bridge direction for `P`: for every subgraph `K` of `P` and edge
 `xy` of `P` not in `K` with dual edge `f0g0`, if `x` and `y` are disconnected in `K`, then
 `f0` and `g0` are connected in the face-region graph of `K` with `f0g0` deleted. -/
 def jwc_KeepResidue (P : PlanarZ2Subgraph) : Prop :=

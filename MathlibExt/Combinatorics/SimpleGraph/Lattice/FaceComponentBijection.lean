@@ -42,7 +42,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- The subgraph of the square lattice induced on the sites not visited by `Vc`. -/
+/-- **Lattice off a closed walk.** The subgraph of the square lattice induced on the sites not visited by `Vc`. -/
 noncomputable def fcb_offComplGraph {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) :
     SimpleGraph {z : Site 2 // z ∉ Vc.support} :=
   (ffc_offSupportLattice {z | z ∈ Vc.support}).induce {z : Site 2 | z ∉ Vc.support}
@@ -186,7 +186,7 @@ theorem fcb_offComplComponentCount_eq_two_of_covers {a : Site 2}
     (fcb_inside_conn_of_covers Vc hoffIn hcovIn)
     (fcb_outside_conn_of_covers Vc hcovOut)
 
-/-- Both sides of `Vc` contain sites off `Vc`, and any two sites off `Vc` on the same side are
+/-- **Jordan region property off a closed walk.** Both sides of `Vc` contain sites off `Vc`, and any two sites off `Vc` on the same side are
 joined by a lattice path avoiding `Vc`. -/
 def fcb_OffComplJordanRegion {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) : Prop :=
   (∃ x, x ∈ jec_leftRegion Vc ∧ x ∉ Vc.support) ∧

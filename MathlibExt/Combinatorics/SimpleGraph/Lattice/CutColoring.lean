@@ -68,7 +68,7 @@ theorem whc_deleted_le_latticeMinusBarrier (H : SimpleGraph (Site 2)) (f g : Sit
   · exact (hcon.mp hx) (hx.trans hr)
   · exact hx (hcon.mpr (fun h => hx (h.trans hr.symm)))
 
-/-- The number of steps of the face walk `w` across an edge of `H`. -/
+/-- **Number of edge crossings of a face walk.** The number of steps of the face walk `w` across an edge of `H`. -/
 noncomputable def whc_dualCross (H : SimpleGraph (Site 2)) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ := by
   classical
@@ -76,7 +76,7 @@ noncomputable def whc_dualCross (H : SimpleGraph (Site 2)) {x y : Site 2}
       sharedPrimalEdge a b ∈ H.edgeSet ∨ sharedPrimalEdge b a ∈ H.edgeSet, by
     intro a b; simp only [eq_iff_iff]; tauto⟩ e))
 
-/-- The primal edge between the faces `a` and `b` is an edge of `H`. -/
+/-- **Primal edge between two faces lies in a subgraph.** The primal edge between the faces `a` and `b` is an edge of `H`. -/
 def whc_isCross (H : SimpleGraph (Site 2)) (a b : Site 2) : Prop :=
   sharedPrimalEdge a b ∈ H.edgeSet ∨ sharedPrimalEdge b a ∈ H.edgeSet
 
@@ -96,7 +96,7 @@ theorem whc_dualCross_cons (H : SimpleGraph (Site 2)) {a b c : Site 2}
   · rw [ite_eq_right (by simp only [Sym2.lift_mk]; exact fun h' => h (decide_eq_true_iff.mp h')),
       ite_eq_right h]; ring
 
-/-- `φ` changes value exactly across the dual edges of `H`. -/
+/-- **Face coloring compatible with a subgraph.** `φ` changes value exactly across the dual edges of `H`. -/
 def whc_CompatColoring (H : SimpleGraph (Site 2)) (φ : Site 2 → Prop) : Prop :=
   ∀ a b, (hypercubicLattice 2).Adj a b → (whc_isCross H a b ↔ (φ a ↔ ¬ φ b))
 
@@ -117,7 +117,7 @@ theorem whc_dualCross_parity (H : SimpleGraph (Site 2)) (φ : Site 2 → Prop)
       have := (fun hh => hcr ((hcompat a b hab).mpr hh))
       by_cases ha : φ a <;> by_cases hb : φ b <;> by_cases hc : φ c <;> simp_all
 
-/-- `φ` changes value exactly across the dual edges of `H` and the extra dual edge `f0g0`. -/
+/-- **Cut coloring of a subgraph with an extra dual edge.** `φ` changes value exactly across the dual edges of `H` and the extra dual edge `f0g0`. -/
 def whc_CutColoring (H : SimpleGraph (Site 2)) (f0 g0 : Site 2) (φ : Site 2 → Prop) : Prop :=
   ∀ a b, (hypercubicLattice 2).Adj a b →
     ((whc_isCross H a b ∨ s(a, b) = s(f0, g0)) ↔ (φ a ↔ ¬ φ b))
@@ -198,11 +198,11 @@ theorem whc_inv_left (a b : Site 2) (hab : (hypercubicLattice 2).Adj a b) :
     sharedPrimalEdge a b = s(![(0:ℤ), 1], ![0, 0]) ↔ s(a, b) = s(![(0 : ℤ), 0], ![(-1:ℤ), 0]) := by
   whc_prove_inv
 
-/-- The unit square with its bottom edge removed. -/
+/-- **Unit square with its bottom edge removed.** The unit square with its bottom edge removed. -/
 noncomputable def whc_Htest : SimpleGraph (Site 2) :=
   (imageGraph jbc_Pce).deleteEdges {s(![(0 : ℤ), 0], ![1, 0])}
 
-/-- The face coloring that is true only at the face `(0, 0)`. -/
+/-- **Face coloring supported at a single face.** The face coloring that is true only at the face `(0, 0)`. -/
 def whc_phiWitness : Site 2 → Prop := fun f => f = ![(0:ℤ), 0]
 
 theorem whc_phiWitness_iff (x : Site 2) : whc_phiWitness x ↔ (x 0 = 0 ∧ x 1 = 0) := by
@@ -342,11 +342,11 @@ theorem whc_residue_witness :
     unfold faceCorner00 faceCorner10; norm_num
   · exact ⟨fun _ => whc_phiWitness_diff, fun _ => whc_Htest_reach_pq⟩
 
-/-- The number of finite components of the face-region graph of `P`: the bounded faces of `P`. -/
+/-- **Number of bounded faces of a lattice subgraph.** The number of finite components of the face-region graph of `P`: the bounded faces of `P`. -/
 noncomputable def whc_faithfulRegionCount (P : PlanarZ2Subgraph) : ℕ :=
   Nat.card {c : (whb_faceRegion (imageGraph P)).ConnectedComponent // c.supp.Finite}
 
-/-- The face count of a finite subgraph of `ℤ²`: the bounded components of its face-region graph
+/-- **Faithful discrete Jordan statement for the face count.** The face count of a finite subgraph of `ℤ²`: the bounded components of its face-region graph
 are equinumerous with `Fin (nullity P.G)`, so the number of bounded faces is the cycle rank. Only
 the number of faces is asserted, not which cycle bounds which face. -/
 def whc_FaithfulDiscreteJordan (P : PlanarZ2Subgraph) : Prop :=

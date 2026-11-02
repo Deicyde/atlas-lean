@@ -61,13 +61,13 @@ theorem wprob_disjointOccurrence_le_inter [Fintype E] [DecidableEq E] {φ : E �
     wprob φ (disjointOccurrence A B) ≤ wprob φ (A ∩ B) :=
   wprob_mono hφ0 (disjointOccurrence_subset_inter A B)
 
-/-- `A` and `B` are negatively correlated under the weight `φ`:
+/-- **Negatively correlated events.** `A` and `B` are negatively correlated under the weight `φ`:
 `wprob φ (A ∩ B) ≤ wprob φ A * wprob φ B`. -/
 def NegativelyCorrelated [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (A B : Set (ConfigSpace E)) : Prop :=
   wprob φ (A ∩ B) ≤ wprob φ A * wprob φ B
 
-/-- Reimer's inequality for negatively correlated events (since `A □ B ⊆ A ∩ B`). -/
+/-- **Reimer's inequality for negatively correlated events.** Reimer's inequality for negatively correlated events (since `A □ B ⊆ A ∩ B`). -/
 theorem reimer_wprob_of_negCorr [Fintype E] [DecidableEq E] {φ : E → Bool → ℝ}
     (hφ0 : ∀ x b, 0 ≤ φ x b) {A B : Set (ConfigSpace E)} (h : NegativelyCorrelated φ A B) :
     wprob φ (disjointOccurrence A B) ≤ wprob φ A * wprob φ B :=
@@ -85,7 +85,7 @@ theorem reimer_wprob_of_inter_empty [Fintype E] [DecidableEq E] {φ : E → Bool
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- Reimer's inequality for disjoint events under the product Bernoulli measure: both sides
+/-- **Reimer's inequality for disjoint events.** Reimer's inequality for disjoint events under the product Bernoulli measure: both sides
 are compared with `P(A □ B) = 0`. -/
 theorem reimer_inequality_of_inter_empty [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : p ≤ 1)
     {A B : Set (ConfigSpace E)} (h : A ∩ B = ∅) :
@@ -98,10 +98,10 @@ theorem reimer_inequality_of_inter_empty [Fintype E] [DecidableEq E] {p : ℝ≥
     bernoulli_real_eq_wprob hp B]
   exact reimer_wprob_of_inter_empty hφ0 h
 
-/-- The event `ω 0 ≠ ω 1` on two coordinates. -/
+/-- **Event that two coordinates differ.** The event `ω 0 ≠ ω 1` on two coordinates. -/
 def evXor : Set (ConfigSpace (Fin 2)) := {ω | ω 0 ≠ ω 1}
 
-/-- The event `ω 0 = ω 1` on two coordinates. -/
+/-- **Event that two coordinates agree.** The event `ω 0 = ω 1` on two coordinates. -/
 def evXnor : Set (ConfigSpace (Fin 2)) := {ω | ω 0 = ω 1}
 
 lemma evXor_inter_evXnor : evXor ∩ evXnor = ∅ := by
@@ -131,7 +131,7 @@ lemma not_isDecreasing_evXor : ¬ IsDecreasing evXor := by
   exact hcontra rfl
 
 set_option linter.unusedSectionVars false in
-/-- Reimer's inequality for `evXor` and `evXnor`, which are neither increasing nor decreasing
+/-- **Reimer's inequality for the XOR and XNOR events.** Reimer's inequality for `evXor` and `evXnor`, which are neither increasing nor decreasing
 (and are disjoint). -/
 theorem reimer_xor_xnor_inequality {p : ℝ≥0} (hp : p ≤ 1) :
     (bernoulliProductMeasure (E := Fin 2) p hp).real (disjointOccurrence evXor evXnor)
@@ -139,7 +139,7 @@ theorem reimer_xor_xnor_inequality {p : ℝ≥0} (hp : p ≤ 1) :
         * (bernoulliProductMeasure (E := Fin 2) p hp).real evXnor :=
   reimer_inequality_of_inter_empty hp evXor_inter_evXnor
 
-/-- The slice inequalities of the one-coordinate BK induction step, with `A₀, A₁, B₀, B₁` the slices
+/-- **Slice inequalities in the one-coordinate BK induction step.** The slice inequalities of the one-coordinate BK induction step, with `A₀, A₁, B₀, B₁` the slices
 at the first coordinate: `P(A₀ □ B₀) ≤ P((A₀ □ B₁) ∩ (A₁ □ B₀))` and
 `P((A₀ □ B₁) ∪ (A₁ □ B₀)) ≤ P(A₁) P(B₁)`, for increasing events `A, B`. -/
 theorem slice_disjointOccurrence_le_of_isIncreasing (n : ℕ) (ψ : Fin n → Bool → ℝ)

@@ -84,7 +84,7 @@ namespace MathlibExt.Biology.PopulationGenetics.SelectionScan
 
 /-! ### The deterministic logistic sweep -/
 
-/-- The logistic trajectory of a favourable allele with genic selection coefficient `s`,
+/-- **Logistic trajectory of a selective sweep.** The logistic trajectory of a favourable allele with genic selection coefficient `s`,
 starting from frequency `x₀`: the solution of `x' = s x (1 - x)` with `x 0 = x₀`
 (Maynard Smith and Haigh 1974). -/
 noncomputable def sweepTraj (s x₀ t : ℝ) : ℝ := x₀ * exp (s * t) / (1 - x₀ + x₀ * exp (s * t))
@@ -97,7 +97,7 @@ theorem sweepTraj_denom_pos {x₀ : ℝ} (h₀ : 0 < x₀) (h₁ : x₀ < 1) (s 
   rw [sweepTraj, mul_zero, Real.exp_zero, mul_one,
     show 1 - x₀ + x₀ = 1 by ring, div_one]
 
-/-- The trajectory stays strictly between `0` and `1`. -/
+/-- **Sweep trajectory stays strictly between 0 and 1.** The trajectory stays strictly between `0` and `1`. -/
 theorem sweepTraj_mem_Ioo {x₀ : ℝ} (h₀ : 0 < x₀) (h₁ : x₀ < 1) (s t : ℝ) :
     sweepTraj s x₀ t ∈ Ioo (0 : ℝ) 1 := by
   have hden := sweepTraj_denom_pos h₀ h₁ s t
@@ -107,7 +107,7 @@ theorem sweepTraj_mem_Ioo {x₀ : ℝ} (h₀ : 0 < x₀) (h₁ : x₀ < 1) (s t 
   · rw [sweepTraj, div_lt_one hden]
     linarith
 
-/-- The logistic equation: `x'(t) = s x(t) (1 - x(t))`. -/
+/-- **Sweep trajectory solves the logistic equation.** The logistic equation: `x'(t) = s x(t) (1 - x(t))`. -/
 theorem hasDerivAt_sweepTraj {x₀ : ℝ} (h₀ : 0 < x₀) (h₁ : x₀ < 1) (s t : ℝ) :
     HasDerivAt (sweepTraj s x₀) (s * sweepTraj s x₀ t * (1 - sweepTraj s x₀ t)) t := by
   have hden := sweepTraj_denom_pos h₀ h₁ s t
@@ -135,12 +135,12 @@ theorem sweepTraj_strictMono {s x₀ : ℝ} (hs : 0 < s) (h₀ : 0 < x₀) (h₁
   rw [sweepTraj, sweepTraj, div_lt_div_iff₀ hda hdb]
   nlinarith [mul_pos h₀ (sub_pos.mpr h₁), Real.exp_pos (s * a), Real.exp_pos (s * b)]
 
-/-- The time the logistic trajectory with selection coefficient `s` takes to go from frequency
+/-- **Duration of a logistic sweep between two frequencies.** The time the logistic trajectory with selection coefficient `s` takes to go from frequency
 `a` to frequency `b`: `(1/s) log (b (1 - a) / (a (1 - b)))`, the difference of the logits
 divided by `s`. -/
 noncomputable def sweepDuration (s a b : ℝ) : ℝ := (1 / s) * log (b * (1 - a) / (a * (1 - b)))
 
-/-- `sweepDuration s a b` is the exact time at which the trajectory started at `a` reaches
+/-- **Sweep trajectory reaches its target at the sweep duration.** `sweepDuration s a b` is the exact time at which the trajectory started at `a` reaches
 `b`. -/
 theorem sweepTraj_sweepDuration {s a b : ℝ} (hs : s ≠ 0) (ha₀ : 0 < a) (ha₁ : a < 1)
     (hb₀ : 0 < b) (hb₁ : b < 1) : sweepTraj s a (sweepDuration s a b) = b := by
@@ -152,7 +152,7 @@ theorem sweepTraj_sweepDuration {s a b : ℝ} (hs : s ≠ 0) (ha₀ : 0 < a) (ha
   field_simp
   ring
 
-/-- The time to reach a higher frequency is positive. -/
+/-- **Positivity of the sweep duration.** The time to reach a higher frequency is positive. -/
 theorem sweepDuration_pos {s a b : ℝ} (hs : 0 < s) (ha₀ : 0 < a) (hab : a < b) (hb₁ : b < 1) :
     0 < sweepDuration s a b := by
   have h1b : 0 < 1 - b := by linarith
@@ -164,7 +164,7 @@ theorem sweepDuration_pos {s a b : ℝ} (hs : 0 < s) (ha₀ : 0 < a) (hab : a < 
   have hs' : 0 < 1 / s := by positivity
   exact mul_pos hs' hlog
 
-/-- A complete sweep in a population of `N` diploids, from a single copy `1 / (2N)` to
+/-- **Duration of a complete deterministic sweep.** A complete sweep in a population of `N` diploids, from a single copy `1 / (2N)` to
 `1 - 1 / (2N)`, takes exactly `(2 / s) log (2N - 1)` generations in the deterministic logistic
 model. (The familiar `(2 / s) log (2Ns)` is the conditional expected duration of the
 corresponding stochastic sweep, a different quantity.) -/
@@ -182,13 +182,13 @@ theorem sweepDuration_full {s N : ℝ} (hs : s ≠ 0) (hN : 1 < N) :
 
 /-! ### Extended haplotype homozygosity under a star-shaped sweep genealogy -/
 
-/-- The probability that two carriers of a swept allele are identical over a window of genetic
+/-- **EHH in the star-genealogy sweep model.** The probability that two carriers of a swept allele are identical over a window of genetic
 length `d`, in the star-genealogy model of Voight et al. (2006): all carriers coalesce at the
 start of the sweep, a time `T` ago, and the pair is identical exactly when neither of its two
 lineages recombined, each at rate `r * d` per unit time. -/
 noncomputable def sweepEhh (r T d : ℝ) : ℝ := exp (-2 * (r * d) * T)
 
-/-- The star-genealogy EHH is the square of the probability that a Poisson number of
+/-- **Star-genealogy EHH as a squared Poisson zero probability.** The star-genealogy EHH is the square of the probability that a Poisson number of
 recombination events with mean `r d T` on one lineage is zero. -/
 theorem sweepEhh_eq_poisson_sq (r T d : ℝ≥0) :
     sweepEhh r T d = ((poissonMeasure (r * d * T)).real {0}) ^ 2 := by
@@ -208,7 +208,7 @@ theorem sweepEhh_le_one {r T d : ℝ} (hr : 0 ≤ r) (hT : 0 ≤ T) (hd : 0 ≤ 
 @[simp] theorem sweepEhh_zero (r T : ℝ) : sweepEhh r T 0 = 1 := by
   simp [sweepEhh]
 
-/-- Haplotype homozygosity decays with the window length. -/
+/-- **Star-genealogy EHH decays with window length.** Haplotype homozygosity decays with the window length. -/
 theorem sweepEhh_antitone {r T : ℝ} (hr : 0 ≤ r) (hT : 0 ≤ T) {d d' : ℝ} (hd : d ≤ d') :
     sweepEhh r T d' ≤ sweepEhh r T d := by
   rw [sweepEhh, sweepEhh, exp_le_exp]
@@ -228,16 +228,16 @@ theorem tendsto_sweepEhh_atTop {r T : ℝ} (hr : 0 < r) (hT : 0 < T) :
   congr 1
   ring
 
-/-- The one-sided integrated haplotype homozygosity: the area under the EHH decay curve
+/-- **One-sided integrated haplotype homozygosity.** The one-sided integrated haplotype homozygosity: the area under the EHH decay curve
 in one direction from the focal site. Voight et al.'s iHH integrates in both directions;
 see `ihh_twoSided`. -/
 noncomputable def ihh (r T : ℝ) : ℝ := ∫ d in Ioi (0 : ℝ), sweepEhh r T d
 
-/-- The two-sided integrated haplotype homozygosity of Voight et al.: the sum of the
+/-- **Two-sided integrated haplotype homozygosity.** The two-sided integrated haplotype homozygosity of Voight et al.: the sum of the
 one-sided integrals in the two chromosome directions. -/
 noncomputable def ihh_twoSided (r T : ℝ) : ℝ := 2 * ihh r T
 
-/-- In the star-genealogy model the one-sided integrated haplotype homozygosity is
+/-- **One-sided iHH in the star-genealogy model.** In the star-genealogy model the one-sided integrated haplotype homozygosity is
 `1 / (2 r T)`. -/
 theorem ihh_eq {r T : ℝ} (hr : 0 < r) (hT : 0 < T) : ihh r T = (2 * r * T)⁻¹ := by
   have hb : (0 : ℝ) < 2 * r * T := by positivity
@@ -249,7 +249,7 @@ theorem ihh_eq {r T : ℝ} (hr : 0 < r) (hT : 0 < T) : ihh r T = (2 * r * T)⁻�
     integral_comp_mul_left_Ioi (fun y : ℝ => exp (-y)) 0 hb, mul_zero,
     integral_exp_neg_Ioi_zero, smul_eq_mul, mul_one]
 
-/-- In the star-genealogy model the two-sided integrated haplotype homozygosity is
+/-- **Two-sided iHH in the star-genealogy model.** In the star-genealogy model the two-sided integrated haplotype homozygosity is
 `1 / (r T)`. -/
 theorem ihh_twoSided_eq {r T : ℝ} (hr : 0 < r) (hT : 0 < T) : ihh_twoSided r T = (r * T)⁻¹ := by
   rw [ihh_twoSided, ihh_eq hr hT, show (2 : ℝ) * r * T = 2 * (r * T) by ring, mul_inv,
@@ -259,13 +259,13 @@ theorem ihh_pos {r T : ℝ} (hr : 0 < r) (hT : 0 < T) : 0 < ihh r T := by
   rw [ihh_eq hr hT]
   positivity
 
-/-- The integrated haplotype score of Voight et al. (2006): the log ratio of the integrated
+/-- **Integrated haplotype score (iHS).** The integrated haplotype score of Voight et al. (2006): the log ratio of the integrated
 haplotype homozygosities of the ancestral and the derived allele, whose star genealogies have
 ages `T_A` and `T_D`. The factor of two between the one-sided and two-sided integrals
 cancels in this ratio. -/
 noncomputable def ihs (r T_A T_D : ℝ) : ℝ := log (ihh r T_A / ihh r T_D)
 
-/-- In the star-genealogy model the integrated haplotype score is the log ratio of the two
+/-- **iHS as the log ratio of genealogy ages.** In the star-genealogy model the integrated haplotype score is the log ratio of the two
 ages, so the recombination rate cancels. -/
 theorem ihs_eq_log_div {r T_A T_D : ℝ} (hr : 0 < r) (hA : 0 < T_A) (hD : 0 < T_D) :
     ihs r T_A T_D = log (T_D / T_A) := by
@@ -273,14 +273,14 @@ theorem ihs_eq_log_div {r T_A T_D : ℝ} (hr : 0 < r) (hA : 0 < T_A) (hD : 0 < T
   congr 1
   field_simp
 
-/-- The integrated haplotype score is negative exactly when the derived allele's star
+/-- **iHS is negative exactly when the derived allele is younger.** The integrated haplotype score is negative exactly when the derived allele's star
 genealogy is the younger one, i.e. when the derived allele swept faster. -/
 theorem ihs_neg_iff {r T_A T_D : ℝ} (hr : 0 < r) (hA : 0 < T_A) (hD : 0 < T_D) :
     ihs r T_A T_D < 0 ↔ T_D < T_A := by
   rw [ihs_eq_log_div hr hA hD, Real.log_neg_iff (by positivity)]
   rw [div_lt_one hA]
 
-/-- Combining the exact sweep duration with the star-genealogy decay: after a complete sweep
+/-- **Power-law EHH after a complete sweep.** Combining the exact sweep duration with the star-genealogy decay: after a complete sweep
 of a favourable allele with selection coefficient `s` in a population of `N` diploids, the
 extended haplotype homozygosity at genetic distance `d` is the power law
 `(2N - 1) ^ (-(4 r d / s))`. -/

@@ -225,7 +225,7 @@ $\mathrm{NP}$ are equal. -/
 def Algorithmica : Prop :=
   MetaMathlibExt.ComplexityTheory.P = MetaMathlibExt.ComplexityTheory.NP
 
-/-- Heuristica: `P ≠ NP`, but every NP problem is easy on average for every samplable
+/-- **Heuristica.** Heuristica: `P ≠ NP`, but every NP problem is easy on average for every samplable
 distribution. -/
 def Heuristica : Prop :=
   MetaMathlibExt.ComplexityTheory.P ≠ MetaMathlibExt.ComplexityTheory.NP ∧
@@ -245,7 +245,7 @@ def Pessiland : Prop :=
       ∃ (p : Polynomial ℕ) (S : (n : ℕ) → (Fin (p.eval n) → Bool) → List Bool),
         L ∈ MetaMathlibExt.ComplexityTheory.NP ∧ Samplable p S ∧ AvgHard p L S
 
-/-- Minicrypt: one-way functions exist, but public-key cryptography does not. -/
+/-- **Minicrypt.** Minicrypt: one-way functions exist, but public-key cryptography does not. -/
 def Minicrypt : Prop := OWFExists ∧ ¬ PKExists
 
 /-- **Cryptomania.** Cryptomania is the statement that public-key cryptography exists: there

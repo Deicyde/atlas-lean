@@ -51,12 +51,12 @@ namespace MathlibExt.LinearAlgebra.Matrix.PartialTrace
 
 variable {m n : Type*} {𝕜 : Type*} [RCLike 𝕜]
 
-/-- The partial trace over the first factor: `∑ i, A (i, j) (i, j')`. -/
+/-- **Partial trace over the first factor.** The partial trace over the first factor: `∑ i, A (i, j) (i, j')`. -/
 def partialTraceLeft [Fintype m] [Fintype n]
     (A : Matrix (m × n) (m × n) 𝕜) : Matrix n n 𝕜 :=
   Matrix.of fun j j' => ∑ i, A (i, j) (i, j')
 
-/-- The partial trace over the second factor: `∑ j, A (i, j) (i', j)`. -/
+/-- **Partial trace over the second factor.** The partial trace over the second factor: `∑ j, A (i, j) (i', j)`. -/
 def partialTraceRight [Fintype m] [Fintype n]
     (A : Matrix (m × n) (m × n) 𝕜) : Matrix m m 𝕜 :=
   Matrix.of fun i i' => ∑ j, A (i, j) (i', j)
@@ -143,13 +143,13 @@ theorem trace_partialTraceRight [Fintype m] [Fintype n] (A : Matrix (m × n) (m 
   show (∑ i, ∑ j, A (i, j) (i, j)) = ∑ x : m × n, A x x
   rw [Fintype.sum_prod_type]
 
-/-- The partial trace of a density matrix has trace `1`. -/
+/-- **Left partial trace of a density matrix has trace one.** The partial trace of a density matrix has trace `1`. -/
 theorem trace_partialTraceLeft_of_trace_eq_one [Fintype m] [Fintype n]
     {A : Matrix (m × n) (m × n) 𝕜}
     (hA : Matrix.trace A = 1) : Matrix.trace (partialTraceLeft A) = 1 := by
   rw [trace_partialTraceLeft, hA]
 
-/-- The partial trace of a density matrix has trace `1`. -/
+/-- **Right partial trace of a density matrix has trace one.** The partial trace of a density matrix has trace `1`. -/
 theorem trace_partialTraceRight_of_trace_eq_one [Fintype m] [Fintype n]
     {A : Matrix (m × n) (m × n) 𝕜}
     (hA : Matrix.trace A = 1) : Matrix.trace (partialTraceRight A) = 1 := by
@@ -186,7 +186,7 @@ theorem partialTraceRight_one [Fintype m] [Fintype n] [DecidableEq m] [Decidable
   ext i i'
   by_cases hi : i = i' <;> simp [partialTraceRight, hi]
 
-/-- The partial trace of a rank-one positive semidefinite matrix is the sum
+/-- **Left partial trace of a rank-one matrix.** The partial trace of a rank-one positive semidefinite matrix is the sum
 of the rank-one positive semidefinite matrices of its slices. -/
 theorem partialTraceLeft_vecMulVec_star [Fintype m] [Fintype n] (u : m × n → 𝕜) :
     partialTraceLeft (Matrix.vecMulVec u (star u)) =
@@ -194,7 +194,7 @@ theorem partialTraceLeft_vecMulVec_star [Fintype m] [Fintype n] (u : m × n → 
   ext j j'
   simp [partialTraceLeft, Matrix.vecMulVec_apply, Matrix.sum_apply]
 
-/-- The partial trace of a rank-one positive semidefinite matrix is the sum
+/-- **Right partial trace of a rank-one matrix.** The partial trace of a rank-one positive semidefinite matrix is the sum
 of the rank-one positive semidefinite matrices of its slices. -/
 theorem partialTraceRight_vecMulVec_star [Fintype m] [Fintype n] (u : m × n → 𝕜) :
     partialTraceRight (Matrix.vecMulVec u (star u)) =
@@ -202,7 +202,7 @@ theorem partialTraceRight_vecMulVec_star [Fintype m] [Fintype n] (u : m × n →
   ext i i'
   simp [partialTraceRight, Matrix.vecMulVec_apply, Matrix.sum_apply]
 
-/-- The partial trace over the first factor preserves positive semidefiniteness. -/
+/-- **Left partial trace preserves positive semidefiniteness.** The partial trace over the first factor preserves positive semidefiniteness. -/
 theorem posSemidef_partialTraceLeft [Fintype m] [Fintype n]
     {A : Matrix (m × n) (m × n) 𝕜}
     (hA : A.PosSemidef) : (partialTraceLeft A).PosSemidef := by
@@ -213,7 +213,7 @@ theorem posSemidef_partialTraceLeft [Fintype m] [Fintype n]
     exact Matrix.posSemidef_sum Finset.univ fun i _ =>
       Matrix.posSemidef_vecMulVec_self_star _
 
-/-- The partial trace over the second factor preserves positive semidefiniteness. -/
+/-- **Right partial trace preserves positive semidefiniteness.** The partial trace over the second factor preserves positive semidefiniteness. -/
 theorem posSemidef_partialTraceRight [Fintype m] [Fintype n]
     {A : Matrix (m × n) (m × n) 𝕜}
     (hA : A.PosSemidef) : (partialTraceRight A).PosSemidef := by
@@ -224,7 +224,7 @@ theorem posSemidef_partialTraceRight [Fintype m] [Fintype n]
     exact Matrix.posSemidef_sum Finset.univ fun j _ =>
       Matrix.posSemidef_vecMulVec_self_star _
 
-/-- The partial trace over the first factor is adjoint to amplification by
+/-- **Left partial trace is adjoint to identity amplification.** The partial trace over the first factor is adjoint to amplification by
 the identity, in the trace pairing. -/
 theorem trace_partialTraceLeft_mul [Fintype m] [Fintype n] [DecidableEq m] [DecidableEq n]
     (A : Matrix (m × n) (m × n) 𝕜) (B : Matrix n n 𝕜) :
@@ -255,7 +255,7 @@ theorem trace_partialTraceLeft_mul [Fintype m] [Fintype n] [DecidableEq m] [Deci
     · simp
   rw [hL, hR]
 
-/-- The partial trace over the second factor is adjoint to amplification by
+/-- **Right partial trace is adjoint to identity amplification.** The partial trace over the second factor is adjoint to amplification by
 the identity, in the trace pairing. -/
 theorem trace_partialTraceRight_mul [Fintype m] [Fintype n] [DecidableEq m] [DecidableEq n]
     (A : Matrix (m × n) (m × n) 𝕜) (C : Matrix m m 𝕜) :

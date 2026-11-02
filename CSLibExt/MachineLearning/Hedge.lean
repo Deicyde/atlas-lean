@@ -58,7 +58,7 @@ open Finset Real
 
 variable {n : ℕ}
 
-/-- After a round with losses `ℓ`, each expert's weight is multiplied by `exp (-η ℓ i)`. -/
+/-- **Hedge weight update.** After a round with losses `ℓ`, each expert's weight is multiplied by `exp (-η ℓ i)`. -/
 noncomputable def update (η : ℝ) (w ℓ : Fin n → ℝ) : Fin n → ℝ := fun i => w i * exp (-η * ℓ i)
 
 /-- **Hedge weights after a sequence of rounds.** Let $\eta \in \mathbb{R}$ be a learning rate,

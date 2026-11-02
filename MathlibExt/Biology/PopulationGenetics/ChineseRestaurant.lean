@@ -83,7 +83,7 @@ namespace MathlibExt.Biology.PopulationGenetics.ChineseRestaurant
 
 open Ewens
 
-/-- Seat customer `n` at a new table: the partition of `Fin (n + 1)` whose blocks are the
+/-- **Seating a customer at a new table.** Seat customer `n` at a new table: the partition of `Fin (n + 1)` whose blocks are the
 blocks of `π` (relabeled into `Fin (n + 1)`) together with the singleton `{n}`. -/
 def newTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     Finpartition (univ : Finset (Fin (n + 1))) :=
@@ -116,7 +116,7 @@ def newTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
       rintro ⟨B, hB, h⟩
       exact π.ne_empty hB (map_eq_empty.1 h))
 
-/-- Seat customer `n` at the occupied table `B` of `π`: the block `B` becomes `B ∪ {n}` and
+/-- **Seating a customer at an occupied table.** Seat customer `n` at the occupied table `B` of `π`: the block `B` becomes `B ∪ {n}` and
 the other blocks are unchanged. -/
 def joinTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) (B : Finset (Fin n))
     (hB : B ∈ π.parts) : Finpartition (univ : Finset (Fin (n + 1))) :=
@@ -160,14 +160,14 @@ def joinTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) (B : Finset 
       rintro ⟨C, ⟨-, hC⟩, h⟩
       exact π.ne_empty hC (map_eq_empty.1 h))
 
-/-- The blocks of `newTable π`. -/
+/-- **Blocks of the partition after opening a new table.** The blocks of `newTable π`. -/
 @[simp]
 theorem parts_newTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     (newTable π).parts =
       insert {Fin.last n} (π.parts.map (mapEmbedding Fin.castSuccEmb).toEmbedding) :=
   rfl
 
-/-- The blocks of `joinTable π B hB`. -/
+/-- **Blocks of the partition after joining a table.** The blocks of `joinTable π B hB`. -/
 @[simp]
 theorem parts_joinTable {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) (B : Finset (Fin n))
     (hB : B ∈ π.parts) :
@@ -199,27 +199,27 @@ private lemma filter_castSucc_insert_last {n : ℕ} (S : Finset (Fin (n + 1))) :
   ext i
   simp [Fin.castSucc_ne_last]
 
-/-- Seat customer `n` according to the choice `c`: `none` opens a new table, `some B` joins
+/-- **Seating a customer by a seating choice.** Seat customer `n` according to the choice `c`: `none` opens a new table, `some B` joins
 the occupied table `B`. -/
 def seat {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     Option π.parts → Finpartition (univ : Finset (Fin (n + 1)))
   | none => newTable π
   | some B => joinTable π B.1 B.2
 
-/-- The probability of each seating choice for customer `n` given the partition `π` of the
+/-- **Seating probabilities in the Chinese restaurant process.** The probability of each seating choice for customer `n` given the partition `π` of the
 first `n` customers: `θ / (n + θ)` for a new table, `|B| / (n + θ)` for the table `B`. -/
 def seatWeight (θ : ℝ) {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     Option π.parts → ℝ
   | none => θ / (n + θ)
   | some B => #B.1 / (n + θ)
 
-/-- The seating probabilities are nonnegative for `θ > 0`. -/
+/-- **Nonnegativity of seating probabilities.** The seating probabilities are nonnegative for `θ > 0`. -/
 theorem seatWeight_nonneg {θ : ℝ} (hθ : 0 < θ) {n : ℕ}
     (π : Finpartition (univ : Finset (Fin n))) (c : Option π.parts) :
     0 ≤ seatWeight θ π c := by
   cases c <;> simp only [seatWeight] <;> positivity
 
-/-- The seating probabilities sum to one for `θ > 0`. -/
+/-- **Seating probabilities sum to one.** The seating probabilities sum to one for `θ > 0`. -/
 theorem sum_seatWeight {θ : ℝ} (hθ : 0 < θ) {n : ℕ}
     (π : Finpartition (univ : Finset (Fin n))) :
     ∑ c, seatWeight θ π c = 1 := by
@@ -231,33 +231,33 @@ theorem sum_seatWeight {θ : ℝ} (hθ : 0 < θ) {n : ℕ}
   simp only [seatWeight]
   rw [← sum_div, hsum, ← add_div, add_comm, div_self hn]
 
-/-- The seating choice of customer `n`, as a probability distribution. -/
+/-- **Seating choice distribution of a customer.** The seating choice of customer `n`, as a probability distribution. -/
 def seatChoice (θ : ℝ) (hθ : 0 < θ) {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     PMF (Option π.parts) :=
   PMF.ofFintype (fun c ↦ ENNReal.ofReal (seatWeight θ π c)) (by
     rw [← ENNReal.ofReal_sum_of_nonneg (fun c _ ↦ seatWeight_nonneg hθ π c),
       sum_seatWeight hθ, ENNReal.ofReal_one])
 
-/-- One step of the Chinese restaurant process: the law of the partition of `Fin (n + 1)`
+/-- **One step of the Chinese restaurant process.** One step of the Chinese restaurant process: the law of the partition of `Fin (n + 1)`
 given the partition `π` of the first `n` customers. -/
 def crpStep (θ : ℝ) (hθ : 0 < θ) {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     PMF (Finpartition (univ : Finset (Fin (n + 1)))) :=
   (seatChoice θ hθ π).map (seat π)
 
-/-- The **Chinese restaurant process** with parameter `θ > 0`: the law of the random
+/-- **Chinese restaurant process.** The **Chinese restaurant process** with parameter `θ > 0`: the law of the random
 partition of the customers `Fin n` into tables, built one customer at a time by `crpStep`
 (Aldous 1985, §11; Pitman 2006, ch. 3). -/
 def crp (θ : ℝ) (hθ : 0 < θ) : (n : ℕ) → PMF (Finpartition (univ : Finset (Fin n)))
   | 0 => PMF.pure ⊥
   | n + 1 => (crp θ hθ n).bind (crpStep θ hθ)
 
-/-- The closed-form law of the Chinese restaurant process,
+/-- **Closed-form law of the Chinese restaurant process.** The closed-form law of the Chinese restaurant process,
 `θ^{|π|} ∏_{B ∈ π} (|B| - 1)! / θ^{(n)}` (Pitman 2006, §3.1). Every block is nonempty,
 so `|B| - 1` is never a truncated natural subtraction. -/
 def crpProb (θ : ℝ) {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) : ℝ :=
   θ ^ #π.parts * π.cardProd (fun k ↦ ((k - 1).factorial : ℝ)) / (ascPochhammer ℝ n).eval θ
 
-/-- Removing the last customer undoes every seating: restricting `seat π c` to the first `n`
+/-- **Removing the last customer undoes a seating.** Removing the last customer undoes every seating: restricting `seat π c` to the first `n`
 customers gives back `π`. -/
 theorem comap_castSucc_seat {n : ℕ} (π : Finpartition (univ : Finset (Fin n)))
     (c : Option π.parts) : (seat π c).comap Fin.castSucc = π := by
@@ -292,7 +292,7 @@ theorem comap_castSucc_seat {n : ℕ} (π : Finpartition (univ : Finset (Fin n))
       · exact ⟨C.map Fin.castSuccEmb, mem_insert_of_mem (mem_map_of_mem _
           (mem_erase.2 ⟨hCB, hC⟩)), filter_castSucc_map C⟩
 
-/-- Different seating choices give different partitions. -/
+/-- **Injectivity of seating.** Different seating choices give different partitions. -/
 theorem seat_injective {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     Function.Injective (seat π) := by
   have hlast : ∀ (B : Finset (Fin n)) (hB : B ∈ π.parts) (D : Finset (Fin (n + 1))),
@@ -328,7 +328,7 @@ theorem seat_injective {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     simp only [filter_castSucc_insert_last, filter_castSucc_map] at h1
     simp [h1]
 
-/-- Every partition of `Fin (n + 1)` arises by seating customer `n` into its restriction to
+/-- **Every partition arises from seating the last customer.** Every partition of `Fin (n + 1)` arises by seating customer `n` into its restriction to
 the first `n` customers. -/
 theorem exists_seat_eq {n : ℕ} (π' : Finpartition (univ : Finset (Fin (n + 1)))) :
     ∃ c, seat (π'.comap Fin.castSucc) c = π' := by
@@ -438,7 +438,7 @@ private lemma insert_last_notMem {n : ℕ} (π : Finpartition (univ : Finset (Fi
   rw [RelEmbedding.coe_toEmbedding, mapEmbedding_apply] at hC
   exact last_notMem_map C (hC ▸ mem_insert_self _ _)
 
-/-- One seating multiplies the closed-form law by the seating probability. -/
+/-- **Seating multiplies the closed-form law by the seating probability.** One seating multiplies the closed-form law by the seating probability. -/
 lemma crpProb_seat {θ : ℝ} (hθ : 0 < θ) {n : ℕ}
     (π : Finpartition (univ : Finset (Fin n))) (c : Option π.parts) :
     crpProb θ (seat π c) = crpProb θ π * seatWeight θ π c := by
@@ -512,7 +512,7 @@ theorem crp_apply {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (π : Finpartition (univ :
     obtain ⟨c, hc⟩ := exists_seat_eq π
     rw [← hc, crp_seat, ih, ← ENNReal.ofReal_mul (crpProb_nonneg hθ _), crpProb_seat hθ]
 
-/-- The law of the Chinese restaurant process as a real number. -/
+/-- **Chinese restaurant process law as a real number.** The law of the Chinese restaurant process as a real number. -/
 theorem crp_toReal {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     (crp θ hθ n π).toReal = crpProb θ π := by
   rw [crp_apply, ENNReal.toReal_ofReal (crpProb_nonneg hθ π)]
@@ -578,7 +578,7 @@ theorem crp_map_restrict_castLE {θ : ℝ} (hθ : 0 < θ) {m n : ℕ} (h : m ≤
       funext fun P ↦ (Finpartition.comap_comap _ _ P).symm
     rw [hc, hf, ← PMF.map_comp, crp_map_restrict, ih]
 
-/-- The allelic partition of a set partition of `Fin n`: the multiset of its block sizes, a
+/-- **Allelic partition of a set partition.** The allelic partition of a set partition of `Fin n`: the multiset of its block sizes, a
 partition of the integer `n`. -/
 def blockSizes {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) : n.Partition where
   parts := π.parts.val.map card

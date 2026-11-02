@@ -59,15 +59,15 @@ namespace Matrix
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- A real square matrix is **Hurwitz** if every complex eigenvalue has negative real part. -/
+/-- **Hurwitz matrix.** A real square matrix is **Hurwitz** if every complex eigenvalue has negative real part. -/
 def IsHurwitz (A : Matrix ι ι ℝ) : Prop :=
   ∀ μ ∈ spectrum ℂ (A.map (algebraMap ℝ ℂ)), μ.re < 0
 
-/-- A **Z-matrix** has nonpositive off-diagonal entries. -/
+/-- **Z-matrix.** A **Z-matrix** has nonpositive off-diagonal entries. -/
 def IsZMatrix (A : Matrix ι ι ℝ) : Prop :=
   ∀ i j, i ≠ j → A i j ≤ 0
 
-/-- A **nonsingular M-matrix** is a Z-matrix all of whose complex eigenvalues have positive
+/-- **Nonsingular M-matrix.** A **nonsingular M-matrix** is a Z-matrix all of whose complex eigenvalues have positive
 real part (Berman–Plemmons, Ch. 6, Theorem 2.3, condition (G20)). -/
 def IsNonsingularMMatrix (A : Matrix ι ι ℝ) : Prop :=
   A.IsZMatrix ∧ (-A).IsHurwitz
@@ -115,7 +115,7 @@ private theorem tendsto_smul_pow_zero_real (K : Matrix ι ι ℝ) {r : ℝ≥0} 
   simp only [Function.comp_def, e, Matrix.smul_apply, Matrix.map_apply] at this
   simpa [← Complex.ofReal_inv, ← Complex.ofReal_pow] using this
 
-/-- If the spectral radius of `K` is `< 1`, then `1` is not an eigenvalue of `K`, so `1 - K`
+/-- **Invertibility of 1 − K when the spectral radius is below one.** If the spectral radius of `K` is `< 1`, then `1` is not an eigenvalue of `K`, so `1 - K`
 is invertible. -/
 theorem isUnit_one_sub_of_spectralRadius_lt_one {K : Matrix ι ι ℝ}
     (hK : spectralRadius ℂ (K.map (algebraMap ℝ ℂ)) < 1) : IsUnit (1 - K) := by
@@ -284,7 +284,7 @@ private theorem exists_one_sub_smul_nonneg {A : Matrix ι ι ℝ} (hA : A.IsNons
     · rw [Set.mem_singleton_iff] at hν
       simp [hν]
 
-/-- A nonsingular M-matrix is invertible. -/
+/-- **Nonsingular M-matrices are invertible.** A nonsingular M-matrix is invertible. -/
 theorem IsNonsingularMMatrix.isUnit {A : Matrix ι ι ℝ} (hA : A.IsNonsingularMMatrix) :
     IsUnit A := by
   obtain ⟨h, hh, -, hBρ⟩ := exists_one_sub_smul_nonneg hA

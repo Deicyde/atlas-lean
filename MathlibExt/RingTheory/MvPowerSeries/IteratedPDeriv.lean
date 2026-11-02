@@ -27,7 +27,7 @@ namespace MvPowerSeries
 
 variable {σ R : Type*} [CommRing R]
 
-/-- Partial derivatives in list order, with the first entry applied first, as a linear map. -/
+/-- **Iterated partial derivative of a multivariate power series.** Partial derivatives in list order, with the first entry applied first, as a linear map. -/
 noncomputable def iteratedPDeriv (L : List σ) :
     MvPowerSeries σ R →ₗ[R] MvPowerSeries σ R :=
   L.foldr (fun i D => D.comp (pderiv i).toLinearMap) LinearMap.id
@@ -40,14 +40,14 @@ theorem iteratedPDeriv_nil : iteratedPDeriv ([] : List σ) =
 theorem iteratedPDeriv_cons (i : σ) (L : List σ) :
     iteratedPDeriv (R := R) (i :: L) = (iteratedPDeriv L).comp (pderiv i).toLinearMap := rfl
 
-/-- Concatenating lists composes the second iterated derivative after the first. -/
+/-- **Iterated partial derivatives along concatenated lists compose.** Concatenating lists composes the second iterated derivative after the first. -/
 theorem iteratedPDeriv_append (L K : List σ) :
     iteratedPDeriv (R := R) (L ++ K) = (iteratedPDeriv K).comp (iteratedPDeriv L) := by
   induction L with
   | nil => simp
   | cons i L ih => simp only [List.cons_append, iteratedPDeriv_cons, ih, LinearMap.comp_assoc]
 
-/-- Two formal partial derivatives commute. -/
+/-- **Formal partial derivatives commute.** Two formal partial derivatives commute. -/
 theorem pderiv_pderiv (i j : σ) (F : MvPowerSeries σ R) :
     pderiv i (pderiv j F) = pderiv j (pderiv i F) := by
   by_cases h : i = j
@@ -58,7 +58,7 @@ theorem pderiv_pderiv (i j : σ) (F : MvPowerSeries σ R) :
       Finsupp.single_eq_of_ne h, add_zero, add_zero]
     ring
 
-/-- A partial derivative commutes with any list of partial derivatives. -/
+/-- **A partial derivative commutes with iterated partial derivatives.** A partial derivative commutes with any list of partial derivatives. -/
 theorem pderiv_iteratedPDeriv (i : σ) (L : List σ) (F : MvPowerSeries σ R) :
     pderiv i (iteratedPDeriv L F) = iteratedPDeriv L (pderiv i F) := by
   induction L generalizing F with
@@ -70,7 +70,7 @@ theorem pderiv_iteratedPDeriv (i : σ) (L : List σ) (F : MvPowerSeries σ R) :
 
 end MvPowerSeries
 
-/-- List variable multiplicities equal the sum of singleton multi-indices. -/
+/-- **Variable multiplicities of a list as a sum of singleton multi-indices.** List variable multiplicities equal the sum of singleton multi-indices. -/
 theorem Multiset.toFinsupp_coe_list_eq_sum {σ : Type*} [DecidableEq σ] (L : List σ) :
     Multiset.toFinsupp (L : Multiset σ) = (L.map fun i => Finsupp.single i 1).sum := by
   induction L with
@@ -116,7 +116,7 @@ private theorem factorial_smul_coeff_pderiv (β : σ →₀ ℕ) (i : σ)
   ring
 
 open Classical in
-/-- The factorial-weighted coefficient after iterated differentiation. No factorial is
+/-- **Factorial-weighted coefficient of an iterated partial derivative.** The factorial-weighted coefficient after iterated differentiation. No factorial is
 cancelled, so this identity also holds in positive characteristic. -/
 theorem factorial_smul_coeff_iteratedPDeriv (L : List σ) (β : σ →₀ ℕ)
     (F : MvPowerSeries σ R) :
@@ -133,7 +133,7 @@ theorem factorial_smul_coeff_iteratedPDeriv (L : List σ) (β : σ →₀ ℕ)
     rfl
 
 open Classical in
-/-- A monomial's factorial times its coefficient is the constant coefficient of the
+/-- **Factorial times a coefficient is a constant term of an iterated derivative.** A monomial's factorial times its coefficient is the constant coefficient of the
 corresponding iterated partial derivative. -/
 theorem factorial_smul_coeff_eq_constantCoeff_iteratedPDeriv (L : List σ)
     (F : MvPowerSeries σ R) :
@@ -146,7 +146,7 @@ theorem factorial_smul_coeff_eq_constantCoeff_iteratedPDeriv (L : List σ)
 variable [Algebra ℚ R]
 
 open Classical in
-/-- The source rational-factorial scalar equation, obtained by casting the natural
+/-- **Rational factorial-weighted coefficient of an iterated derivative.** The source rational-factorial scalar equation, obtained by casting the natural
 factorial product and its scalar action. -/
 theorem factorial_smul_coeff_iteratedPDeriv_rat (L : List σ) (β : σ →₀ ℕ)
     (F : MvPowerSeries σ R) :
@@ -157,7 +157,7 @@ theorem factorial_smul_coeff_iteratedPDeriv_rat (L : List σ) (β : σ →₀ �
     factorial_smul_coeff_iteratedPDeriv L β F
 
 open Classical in
-/-- The source rational-factorial constant coefficient equation. -/
+/-- **Rational factorial coefficient as a constant term of an iterated derivative.** The source rational-factorial constant coefficient equation. -/
 theorem factorial_smul_coeff_eq_constantCoeff_iteratedPDeriv_rat (L : List σ)
     (F : MvPowerSeries σ R) :
     (Multiset.toFinsupp (L : Multiset σ)).prod (fun _ n => (n.factorial : ℚ)) •

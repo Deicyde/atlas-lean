@@ -107,7 +107,7 @@ theorem isUnit_localizeAtPrime_of_isUnit
     IsUnit (I.localizeAtPrime 𝔪) :=
   hI.map (extendedHom (FractionRing A) (Localization.AtPrime 𝔪))
 
-/-- Localization commutes with inversion of fractional ideals. -/
+/-- **Localization commutes with inverting fractional ideals.** Localization commutes with inversion of fractional ideals. -/
 @[simp] theorem localizeAtPrime_inv
     [IsNoetherianRing A]
     (𝔪 : Ideal A) [𝔪.IsPrime]
@@ -118,7 +118,7 @@ theorem isUnit_localizeAtPrime_of_isUnit
   simpa only [localizeAtPrime, inv_eq, map_one] using
     extendedHom_div (B := Localization.AtPrime 𝔪) 𝔪.primeCompl 1 I hI0
 
-/-- The inverse/localization inequality follows from equality. -/
+/-- **Inverse of a localized fractional ideal is bounded by localization.** The inverse/localization inequality follows from equality. -/
 theorem inv_localizeAtPrime_le
     [IsNoetherianRing A]
     (𝔪 : Ideal A) [𝔪.IsPrime]

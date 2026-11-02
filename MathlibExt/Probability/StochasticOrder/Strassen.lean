@@ -42,10 +42,10 @@ namespace StatMech
 
 variable {E : Type*}
 
-/-- The set of ordered pairs `(ω, ω')` of configurations with `ω ≤ ω'` coordinatewise. -/
+/-- **Set of coordinatewise ordered configuration pairs.** The set of ordered pairs `(ω, ω')` of configurations with `ω ≤ ω'` coordinatewise. -/
 def orderSet (E : Type*) : Set (ConfigSpace E × ConfigSpace E) := {p | p.1 ≤ p.2}
 
-/-- `κ` is a monotone coupling of `μ` and `ν`: a measure on pairs of configurations with first
+/-- **Monotone coupling of two measures.** `κ` is a monotone coupling of `μ` and `ν`: a measure on pairs of configurations with first
 marginal `μ`, second marginal `ν`, and no mass off the ordered pairs `ω ≤ ω'`. -/
 structure MonotoneCoupling (μ ν : Measure (ConfigSpace E))
     (κ : Measure (ConfigSpace E × ConfigSpace E)) : Prop where
@@ -61,7 +61,7 @@ namespace MonotoneCoupling
 variable {μ ν : Measure (ConfigSpace E)}
   {κ : Measure (ConfigSpace E × ConfigSpace E)}
 
-/-- The two marginals of a coupling have the same total mass. -/
+/-- **Marginals of a coupling have equal total mass.** The two marginals of a coupling have the same total mass. -/
 theorem total_mass_eq (h : MonotoneCoupling μ ν κ) : μ Set.univ = ν Set.univ := by
   rw [← h.fst_eq, ← h.snd_eq, Measure.fst_univ, Measure.snd_univ]
 
@@ -95,7 +95,7 @@ namespace MonotoneCoupling
 variable {μ ν : Measure (ConfigSpace E)}
   {κ : Measure (ConfigSpace E × ConfigSpace E)}
 
-/-- A finite monotone coupling of `μ` and `ν` shows `μ ≼ ν`: the easy direction of Strassen's
+/-- **Strassen's theorem, easy direction.** A finite monotone coupling of `μ` and `ν` shows `μ ≼ ν`: the easy direction of Strassen's
 theorem. -/
 theorem stochasticallyDominated (h : MonotoneCoupling μ ν κ)
     [IsFiniteMeasure κ] : μ ≼ ν := by
@@ -116,7 +116,7 @@ theorem stochasticallyDominated (h : MonotoneCoupling μ ν κ)
 
 end MonotoneCoupling
 
-/-- If a finite monotone coupling of `μ` and `ν` exists, then `μ ≼ ν`. -/
+/-- **Existence of a monotone coupling implies stochastic domination.** If a finite monotone coupling of `μ` and `ν` exists, then `μ ≼ ν`. -/
 theorem stochasticallyDominated_of_exists_monotoneCoupling
     {μ ν : Measure (ConfigSpace E)}
     (h : ∃ κ : Measure (ConfigSpace E × ConfigSpace E),

@@ -30,16 +30,16 @@ recurrence, avoiding a materialized list of unused indices.
 
 namespace BitVec
 
-/-- Multiply a binary residue by `X`, reducing by `X ^ s + g` when its top bit is set. -/
+/-- **Multiplication by $X$ of a binary polynomial residue.** Multiply a binary residue by `X`, reducing by `X ^ s + g` when its top bit is set. -/
 def mulXMod {s : Nat} (g w : BitVec s) : BitVec s :=
   if w.getMsbD 0 then w.shiftLeft 1 ^^^ g else w.shiftLeft 1
 
-/-- Multiply binary residues by low-first Horner evaluation of the second operand's bits. -/
+/-- **Modular multiplication of binary polynomial residues.** Multiply binary residues by low-first Horner evaluation of the second operand's bits. -/
 def mulMod {s t : Nat} (g x : BitVec s) (y : BitVec t) : BitVec s :=
   y.toBoolListLE.foldr
     (fun b c => if b then x ^^^ g.mulXMod c else g.mulXMod c) (0#s)
 
-/-- Raise a binary residue to a natural power by tail-recursive repeated multiplication. -/
+/-- **Modular powering of binary polynomial residues.** Raise a binary residue to a natural power by tail-recursive repeated multiplication. -/
 def powMod {s t : Nat} (g : BitVec s) (u : BitVec t) (e : Nat) : BitVec s :=
   Nat.foldTR e (fun _ _ c => g.mulMod c u) (1#s)
 
@@ -82,7 +82,7 @@ private theorem toPolynomial_shiftLeft_add_high {s : Nat} (w : BitVec s) :
           BitVec.getMsbD_eq_getLsbD, hjs, hge]
         split <;> simp_all [Polynomial.coeff_X_pow]
 
-/-- Multiplication by `X` has its expected evaluation in every commutative ring receiving
+/-- **Evaluation of modular multiplication by $X$.** Multiplication by `X` has its expected evaluation in every commutative ring receiving
 `ZMod 2`. -/
 theorem eval₂_mulXMod {s : Nat} {R : Type*} [CommRing R]
     (φ : ZMod 2 →+* R) (r : R) (g w : BitVec s)
@@ -142,7 +142,7 @@ private theorem eval₂_mulModAux {s : Nat} {R : Type*} [CommRing R]
         simp [evalBits]
         ring
 
-/-- Horner multiplication has its expected evaluation in every commutative ring receiving
+/-- **Evaluation of modular Horner multiplication.** Horner multiplication has its expected evaluation in every commutative ring receiving
 `ZMod 2`; the second operand may have any width. -/
 theorem eval₂_mulMod {s t : Nat} {R : Type*} [CommRing R]
     (φ : ZMod 2 →+* R) (r : R) (g x : BitVec s) (y : BitVec t)
@@ -164,7 +164,7 @@ private theorem powMod_succ {s t : Nat} (g : BitVec s) (u : BitVec t) (e : Nat) 
     g.powMod u (e + 1) = g.mulMod (g.powMod u e) u := by
   simp [powMod, ← Nat.fold_eq_foldTR, Nat.fold_succ]
 
-/-- Repeated multiplication has its expected power evaluation for positive result width. -/
+/-- **Evaluation of modular powering.** Repeated multiplication has its expected power evaluation for positive result width. -/
 theorem eval₂_powMod {s t : Nat} {R : Type*} [CommRing R]
     (φ : ZMod 2 →+* R) (r : R) (g : BitVec s) (u : BitVec t) (e : Nat)
     (hs : 0 < s) (hr : r ^ s = g.toPolynomial.eval₂ φ r) :
@@ -183,7 +183,7 @@ private theorem eval₂_adjoinRoot {s : Nat} (g : BitVec s)
       AdjoinRoot.mk g.monicModulus p := by
   rw [← Polynomial.aeval_def, AdjoinRoot.aeval_eq]
 
-/-- Modular multiplication by `X` agrees with multiplication by the quotient root. -/
+/-- **Modular multiplication by $X$ matches the quotient root.** Modular multiplication by `X` agrees with multiplication by the quotient root. -/
 theorem adjoinRootEquiv_mulXMod {s : Nat} (g w : BitVec s) :
     g.adjoinRootEquiv (g.mulXMod w) =
       AdjoinRoot.root g.monicModulus * g.adjoinRootEquiv w := by
@@ -202,7 +202,7 @@ theorem adjoinRootEquiv_mulXMod {s : Nat} (g w : BitVec s) :
       eval₂_mulXMod _ _ g w hr
     _ = _ := by rw [eval₂_adjoinRoot, ← adjoinRootEquiv_apply]
 
-/-- Modular Horner multiplication agrees with multiplication in the polynomial quotient. -/
+/-- **Modular multiplication matches the polynomial quotient.** Modular Horner multiplication agrees with multiplication in the polynomial quotient. -/
 theorem adjoinRootEquiv_mulMod {s t : Nat} (g x : BitVec s) (y : BitVec t) :
     g.adjoinRootEquiv (g.mulMod x y) =
       g.adjoinRootEquiv x * AdjoinRoot.mk g.monicModulus y.toPolynomial := by
@@ -222,7 +222,7 @@ theorem adjoinRootEquiv_mulMod {s t : Nat} (g x : BitVec s) (y : BitVec t) :
       eval₂_mulMod _ _ g x y hr
     _ = _ := by rw [eval₂_adjoinRoot, eval₂_adjoinRoot, ← adjoinRootEquiv_apply]
 
-/-- Modular powering agrees with powering in the polynomial quotient, including width zero. -/
+/-- **Modular powering matches the polynomial quotient.** Modular powering agrees with powering in the polynomial quotient, including width zero. -/
 theorem adjoinRootEquiv_powMod {s t : Nat} (g : BitVec s) (u : BitVec t) (e : Nat) :
     g.adjoinRootEquiv (g.powMod u e) =
       (AdjoinRoot.mk g.monicModulus u.toPolynomial) ^ e := by

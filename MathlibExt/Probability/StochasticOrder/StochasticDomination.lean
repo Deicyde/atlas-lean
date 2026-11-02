@@ -44,7 +44,7 @@ namespace StatMech
 
 variable {E : Type*}
 
-/-- `μ` is stochastically dominated by `ν` if their actual `ENNReal` masses satisfy
+/-- **Stochastic domination of measures on configurations.** `μ` is stochastically dominated by `ν` if their actual `ENNReal` masses satisfy
 `μ(A) ≤ ν(A)` for every measurable increasing event `A ⊆ ConfigSpace E`. -/
 def StochasticallyDominated (μ ν : Measure (ConfigSpace E)) : Prop :=
   ∀ A : Set (ConfigSpace E), MeasurableSet A → IsIncreasing A → μ A ≤ ν A
@@ -52,16 +52,16 @@ def StochasticallyDominated (μ ν : Measure (ConfigSpace E)) : Prop :=
 @[inherit_doc]
 scoped infix:50 " ≼ " => StochasticallyDominated
 
-/-- Stochastic domination is reflexive. -/
+/-- **Stochastic domination is reflexive.** Stochastic domination is reflexive. -/
 @[refl] theorem StochasticallyDominated.refl (μ : Measure (ConfigSpace E)) : μ ≼ μ :=
   fun _ _ _ => le_refl _
 
-/-- Stochastic domination is transitive. -/
+/-- **Stochastic domination is transitive.** Stochastic domination is transitive. -/
 theorem StochasticallyDominated.trans {μ ν ρ : Measure (ConfigSpace E)}
     (h₁ : μ ≼ ν) (h₂ : ν ≼ ρ) : μ ≼ ρ :=
   fun A hA hAinc => (h₁ A hA hAinc).trans (h₂ A hA hAinc)
 
-/-- For a finite upper measure, stochastic domination also compares real-valued masses. -/
+/-- **Stochastic domination compares real-valued masses.** For a finite upper measure, stochastic domination also compares real-valued masses. -/
 theorem StochasticallyDominated.real {μ ν : Measure (ConfigSpace E)} (h : μ ≼ ν)
     [IsFiniteMeasure ν] (A : Set (ConfigSpace E)) (hAm : MeasurableSet A)
     (hA : IsIncreasing A) : μ.real A ≤ ν.real A := by

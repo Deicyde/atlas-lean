@@ -60,7 +60,7 @@ isomorphic). -/
 def ContainsQuasicyclicSquare (G : Type*) [Group G] : Prop :=
   ∃ (Q : Type) (_ : Group Q), IsQuasicyclic Q ∧ ∃ f : Q × Q →* G, Function.Injective f
 
-/-- A partially ordered set has finite (order) dimension: its order relation is the intersection
+/-- **Poset of finite order dimension.** A partially ordered set has finite (order) dimension: its order relation is the intersection
 of finitely many linear orders on the same set. -/
 def HasFiniteOrderDimension (P : Type*) [PartialOrder P] : Prop :=
   ∃ (n : ℕ) (L : Fin n → LinearOrder P), ∀ x y : P, x ≤ y ↔ ∀ i, (L i).le x y

@@ -28,7 +28,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace Real
 
-/-- An explicit natural multiple of a positive-rate exponential bounds a fixed power. -/
+/-- **Explicit exponential bound on a fixed power.** An explicit natural multiple of a positive-rate exponential bounds a fixed power. -/
 theorem pow_le_natCeil_mul_exp (n : ℕ) {c x : ℝ} (hc : 0 < c) (hx : 0 ≤ x) :
     x ^ n ≤ (⌈(n.factorial : ℝ) / c ^ n⌉₊ : ℝ) * exp (c * x) := by
   have h := pow_div_factorial_le_exp (x := c * x) (by positivity) n
@@ -39,12 +39,12 @@ theorem pow_le_natCeil_mul_exp (n : ℕ) {c x : ℝ} (hc : 0 < c) (hx : 0 ≤ x)
   rw [heq]
   exact mul_le_mul (Nat.le_ceil _) h (by positivity) (by positivity)
 
-/-- A single natural constant bounds a fixed power by a positive-rate exponential. -/
+/-- **Existence of a constant bounding a power by an exponential.** A single natural constant bounds a fixed power by a positive-rate exponential. -/
 theorem exists_nat_pow_le_mul_exp (n : ℕ) {c : ℝ} (hc : 0 < c) :
     ∃ C : ℕ, ∀ x : ℝ, 0 ≤ x → x ^ n ≤ C * exp (c * x) :=
   ⟨⌈(n.factorial : ℝ) / c ^ n⌉₊, fun _ hx => pow_le_natCeil_mul_exp n hc hx⟩
 
-/-- The source estimate: a natural-input polynomial is bounded by a base-two exponential. -/
+/-- **Polynomial bounded by a base-two exponential.** The source estimate: a natural-input polynomial is bounded by a base-two exponential. -/
 theorem exists_nat_pow_le_mul_two_rpow (n : ℕ) {c : ℝ} (hc : 0 < c) :
     ∃ C : ℕ, ∀ x : ℕ, (x : ℝ) ^ n ≤ C * (2 : ℝ) ^ (c * x) := by
   have hk : 0 < c * log 2 := mul_pos hc (log_pos one_lt_two)

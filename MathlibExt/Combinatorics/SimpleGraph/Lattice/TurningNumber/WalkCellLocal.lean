@@ -48,7 +48,7 @@ local notation "S" => interiorCells d hclosed hsimple hreflexfree
 local notation "P" => walkP d hclosed hsimple
 local notation "R" => walkRegionGraph d hclosed hsimple
 
-/-- A side shared by an interior and an exterior cell is an edge of the walk. -/
+/-- **A side between interior and exterior cells is a walk edge.** A side shared by an interior and an exterior cell is an edge of the walk. -/
 theorem sharedPrimalEdge_mem_of_membership_diff (p q : ℤ × ℤ)
     (hlat : (hypercubicLattice 2).Adj (cellFace p) (cellFace q))
     (hdiff : (p ∈ S ∧ q ∉ S) ∨ (q ∈ S ∧ p ∉ S)) :
@@ -67,7 +67,7 @@ theorem sharedPrimalEdge_mem_of_membership_diff (p q : ℤ × ℤ)
     change rayParity d p.1 p.2 = rayParity d q.1 q.2 at hpar
     exact hpS (hp.mpr (hpar.trans hq1))
 
-/-- Three walk edges cannot meet at one vertex of a simple closed walk. -/
+/-- **Three walk edges cannot meet at a vertex.** Three walk edges cannot meet at one vertex of a simple closed walk. -/
 theorem pinch_four_edges_impossible (x y : ℤ)
     (hU : sharedPrimalEdge (cellFace (x, y)) (cellFace (x - 1, y)) ∈
       (imageGraph P).edgeSet)
@@ -124,7 +124,7 @@ theorem pinch_four_edges_impossible (x y : ℤ)
       · exact neUL (cU.trans cL.symm)
     · exact neUR (cU.trans cR.symm)
 
-/-- The bounded face of the walk has no pinch points. -/
+/-- **Bounded face of a simple closed walk has no pinch points.** The bounded face of the walk has no pinch points. -/
 theorem not_pinchAt_interiorCells (v : ℤ × ℤ) : ¬ pinchAt S v := by
   rintro (hpin | hpin)
   all_goals
@@ -163,7 +163,7 @@ theorem not_pinchAt_interiorCells (v : ℤ × ℤ) : ¬ pinchAt S v := by
       (by rw [hypercubicLattice_adj, Fin.sum_univ_two]; norm_num) dLSW
     exact pinch_four_edges_impossible d hclosed hsimple x y hU hR hL
 
-/-- The bounded face of the walk has pinch count `0`. See also
+/-- **Pinch count of the bounded face is zero.** The bounded face of the walk has pinch count `0`. See also
   `StatMech.Onsager.PinchFree.pinchCount_eq_zero`. -/
 theorem pinchCount_interiorCells_eq_zero : pinchCount S = 0 := by
   unfold pinchCount

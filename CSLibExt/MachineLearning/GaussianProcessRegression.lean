@@ -52,7 +52,7 @@ $K(a, b)$ is the $\alpha \times \beta$ real matrix with entries $K(a, b)_{ij} = 
 def kernelMatrix (k : X → X → ℝ) {α β : Type*} (a : α → X) (b : β → X) : Matrix α β ℝ :=
   Matrix.of fun i j => k (a i) (b j)
 
-/-- The joint prior covariance of the test values `f(x*)` and the noisy training targets
+/-- **Joint prior covariance in Gaussian-process regression.** The joint prior covariance of the test values `f(x*)` and the noisy training targets
 `y = f(x) + ε`, `ε ~ N(0, σ² I)`: `[[K(x*, x*), K(x*, x)], [K(x, x*), K(x, x) + σ² I]]`. -/
 def jointCov (k : X → X → ℝ) (σ2 : ℝ) (xt : τ → X) (xs : ν → X) :
     Matrix (τ ⊕ ν) (τ ⊕ ν) ℝ :=

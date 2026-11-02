@@ -98,7 +98,7 @@ private theorem main (hZ : IsIrreducible Z) (hY : IsClosed Y) (hYZ : Y ⊆ Z) (h
 
 end KrullDimAux
 
-/-- A proper closed subset of an irreducible set has Krull dimension at
+/-- **Krull dimension drops on proper closed subsets of irreducible sets.** A proper closed subset of an irreducible set has Krull dimension at
 least one less than the ambient set. -/
 theorem IsIrreducible.topologicalKrullDim_add_one_le_of_isClosed_of_ne
     {X : Type u} [TopologicalSpace X] {Y Z : Set X}

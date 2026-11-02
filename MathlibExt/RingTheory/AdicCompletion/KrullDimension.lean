@@ -43,7 +43,7 @@ going-down.
 
 @[expose] public section
 
-/-- A Noetherian local ring of Krull dimension at least two has an adic
+/-- **Adic completion preserves Krull dimension at least two.** A Noetherian local ring of Krull dimension at least two has an adic
 completion of Krull dimension at least two. -/
 theorem IsLocalRing.two_le_ringKrullDim_adicCompletion_of_two_le
     (R : Type*) [CommRing R] [IsNoetherianRing R] [IsLocalRing R]

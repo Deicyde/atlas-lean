@@ -65,7 +65,7 @@ theorem npm_diagTouch_outCorners_kingAdj {K : Set (Site 2)} {f : Site 2}
   · exact Or.inl ⟨npm_kingAdj_P10_P01 f, h10, h01⟩
   · exact Or.inr ⟨npm_kingAdj_P00_P11 f, h00, h11⟩
 
-/-- Whenever `K` contains two opposite corners of a face, it contains one of the other two
+/-- **King-saturated set.** Whenever `K` contains two opposite corners of a face, it contains one of the other two
 corners. -/
 def npm_KingSaturated (K : Set (Site 2)) : Prop :=
   ∀ f : Site 2,

@@ -96,7 +96,7 @@ namespace BayesNet
 
 variable {n : ℕ} [Nonempty α] (b : BayesNet α n)
 
-/-- The values of the parents of node `k` in a full assignment `x`. -/
+/-- **Parent values of a node.** The values of the parents of node `k` in a full assignment `x`. -/
 def paVal (k : Fin n) (x : Fin n → α) : b.pa k → α :=
   fun j => x (Fin.castLE k.2.le j)
 
@@ -110,11 +110,11 @@ noncomputable def intervene (k : Fin n) (a : α) : BayesNet α n where
   cpt j z := if h : j = k then StdSimplex.single a
     else b.cpt j fun i => z ⟨i.1, by rw [if_neg h]; exact i.2⟩
 
-/-- The parents of the intervened node are deleted. -/
+/-- **Intervention deletes the parents of the intervened node.** The parents of the intervened node are deleted. -/
 theorem intervene_pa_self (k : Fin n) (a : α) : (b.intervene k a).pa k = ∅ := by
   simp [intervene]
 
-/-- The parents of every other node are unchanged by the intervention. -/
+/-- **Intervention leaves the parents of other nodes unchanged.** The parents of every other node are unchanged by the intervention. -/
 theorem intervene_pa_of_ne {j k : Fin n} (hj : j ≠ k) (a : α) :
     (b.intervene k a).pa j = b.pa j := by
   simp [intervene, hj]
@@ -146,7 +146,7 @@ private lemma toChain_intervene_joint (k : Fin n) (a : α) :
   have hne : (⟨j, hjn⟩ : Fin n) ≠ k := fun h => (Fin.ext_iff.1 h ▸ hj).false
   simp [toChain, hjn, intervene, hne]
 
-/-- The intervention `do(X_k = a)` does not change the law of the parents of node `k`. -/
+/-- **Intervention preserves the law of the parents.** The intervention `do(X_k = a)` does not change the law of the parents of node `k`. -/
 theorem sum_paVal_intervene [Fintype α] [DecidableEq α] (k : Fin n) (a : α)
     (z : b.pa k → α) :
     ∑ x with b.paVal k x = z, (b.intervene k a).joint x = ∑ x with b.paVal k x = z, b.joint x := by
@@ -217,7 +217,7 @@ theorem sum_intervene_joint_mul [Fintype α] [DecidableEq α] (k : Fin n) (a : �
       intro hw; apply hpos z hP; rw [hQ, hw, zero_mul]
     field_simp
 
-/-- The table of node `k` is the conditional law of `X_k` given its parents:
+/-- **A node's table is its conditional law given its parents.** The table of node `k` is the conditional law of `X_k` given its parents:
 `P(X_k = a, pa_k = z) = p_k (a | z) P(pa_k = z)`. -/
 theorem sum_filter_joint_eq_cpt_mul [Fintype α] [DecidableEq α] (k : Fin n) (a : α)
     (z : b.pa k → α) :
@@ -315,7 +315,7 @@ theorem sum_intervene_joint_mul_of_pred [Fintype α] [DecidableEq α] (k : Fin n
       intro hw; apply hpos z hP; rw [hQ, hw, zero_mul]
     field_simp
 
-/-- For a set `Z` of predecessors of `k` containing its parents, the table of `k` is its
+/-- **A node's table is its conditional law given a predecessor set.** For a set `Z` of predecessors of `k` containing its parents, the table of `k` is its
 conditional law given `Z`: `P(X_k = a, Z = z) = p_k (a | z_{pa k}) P(Z = z)`. -/
 theorem sum_filter_restrict_joint_eq_cpt_mul [Fintype α] [DecidableEq α] (k : Fin n) (a : α)
     (Z : Finset (Fin n)) (hZk : ∀ i ∈ Z, i < k) (hpaZ : ∀ j ∈ b.pa k, Fin.castLE k.2.le j ∈ Z)
@@ -335,7 +335,7 @@ theorem sum_filter_restrict_joint_eq_cpt_mul [Fintype α] [DecidableEq α] (k : 
   · rw [joint_intervene]
     simp [hk]
 
-/-- Back-door adjustment for a set of predecessors containing the parents, when the table of
+/-- **Back-door adjustment for a set of predecessors.** Back-door adjustment for a set of predecessors containing the parents, when the table of
 node `k` gives the value `a` positive probability at every value of the parents. -/
 theorem sum_intervene_joint_mul_of_pred_of_cpt_ne_zero [Fintype α] [DecidableEq α] (k : Fin n)
     (a : α) (Z : Finset (Fin n)) (hZk : ∀ i ∈ Z, i < k)
@@ -357,31 +357,31 @@ variable {n : ℕ} (b : BayesNet α n)
 
 /-! ### The graph of a network and d-separation -/
 
-/-- The edge `i → j` of the network's graph: `i` is a parent of `j`. -/
+/-- **Edge of a Bayesian network.** The edge `i → j` of the network's graph: `i` is a parent of `j`. -/
 def Edge (i j : Fin n) : Prop :=
   ∃ h : i.val < j.val, (⟨i.val, h⟩ : Fin j) ∈ b.pa j
 
-/-- `j` is a descendant of `i` (every node is its own descendant). -/
+/-- **Descendant relation in a Bayesian network.** `j` is a descendant of `i` (every node is its own descendant). -/
 def IsDescendant (i j : Fin n) : Prop :=
   Relation.ReflTransGen b.Edge i j
 
-/-- `i` and `j` are adjacent in the skeleton of the graph. -/
+/-- **Adjacency in the skeleton of a Bayesian network.** `i` and `j` are adjacent in the skeleton of the graph. -/
 def Adj (i j : Fin n) : Prop :=
   b.Edge i j ∨ b.Edge j i
 
-/-- A path of the skeleton from `x` to `y`: a list of distinct nodes, consecutive ones
+/-- **Path in the skeleton of a Bayesian network.** A path of the skeleton from `x` to `y`: a list of distinct nodes, consecutive ones
 adjacent, starting at `x` and ending at `y`. -/
 def IsPath (x y : Fin n) (p : List (Fin n)) : Prop :=
   p.Nodup ∧ p.IsChain b.Adj ∧ p.head? = some x ∧ p.getLast? = some y
 
-/-- The consecutive nodes `u, m, w` of a path are blocked by `Z` (Pearl 2009, Definition
+/-- **Blocking at a node of a path.** The consecutive nodes `u, m, w` of a path are blocked by `Z` (Pearl 2009, Definition
 1.2.3): either `m` is a collider `u → m ← w` none of whose descendants is in `Z`, or `m` is not
 a collider (a chain or a fork) and `m ∈ Z`. -/
 def BlockedAt (Z : Set (Fin n)) (u m w : Fin n) : Prop :=
   (b.Edge u m ∧ b.Edge w m ∧ ∀ d, b.IsDescendant m d → d ∉ Z) ∨
     (¬(b.Edge u m ∧ b.Edge w m) ∧ m ∈ Z)
 
-/-- A path is blocked by `Z` if some three consecutive nodes of it are. -/
+/-- **Blocked path.** A path is blocked by `Z` if some three consecutive nodes of it are. -/
 def PathBlocked (Z : Set (Fin n)) (p : List (Fin n)) : Prop :=
   ∃ (i : ℕ) (h : i + 2 < p.length), b.BlockedAt Z p[i] p[i + 1] p[i + 2]
 
@@ -390,7 +390,7 @@ if every path between a node of `X` and a node of `Y` is blocked by `Z`. -/
 def DSeparated (X Y Z : Set (Fin n)) : Prop :=
   ∀ x ∈ X, ∀ y ∈ Y, ∀ p, b.IsPath x y p → b.PathBlocked Z p
 
-/-- Blocking at a node does not depend on the direction in which the path is read. -/
+/-- **Blocking at a node is independent of path direction.** Blocking at a node does not depend on the direction in which the path is read. -/
 theorem blockedAt_comm {Z : Set (Fin n)} {u m w : Fin n} :
     b.BlockedAt Z u m w ↔ b.BlockedAt Z w m u := by
   unfold BlockedAt
@@ -400,7 +400,7 @@ theorem blockedAt_comm {Z : Set (Fin n)} {u m w : Fin n} :
   · exact Or.inl ⟨h2, h1, h3⟩
   · exact Or.inr ⟨fun h => h1 ⟨h.2, h.1⟩, h2⟩
 
-/-- The reverse of a path from `x` to `y` is a path from `y` to `x`. -/
+/-- **The reverse of a path is a path.** The reverse of a path from `x` to `y` is a path from `y` to `x`. -/
 theorem isPath_reverse {x y : Fin n} {p : List (Fin n)} (h : b.IsPath x y p) :
     b.IsPath y x p.reverse := by
   obtain ⟨h1, h2, h3, h4⟩ := h
@@ -408,7 +408,7 @@ theorem isPath_reverse {x y : Fin n} {p : List (Fin n)} (h : b.IsPath x y p) :
   rw [List.isChain_reverse]
   exact h2.imp fun a b hab => hab.symm
 
-/-- If a path is blocked by `Z`, so is its reverse. -/
+/-- **Reversal preserves blocked paths.** If a path is blocked by `Z`, so is its reverse. -/
 theorem pathBlocked_reverse {Z : Set (Fin n)} {p : List (Fin n)} (h : b.PathBlocked Z p) :
     b.PathBlocked Z p.reverse := by
   obtain ⟨i, hi, hb⟩ := h
@@ -417,7 +417,7 @@ theorem pathBlocked_reverse {Z : Set (Fin n)} {p : List (Fin n)} (h : b.PathBloc
   simp only [List.getElem_reverse]
   convert hb using 3 <;> omega
 
-/-- d-separation is symmetric. -/
+/-- **Symmetry of d-separation.** d-separation is symmetric. -/
 theorem DSeparated.symm {X Y Z : Set (Fin n)} (h : b.DSeparated X Y Z) : b.DSeparated Y X Z :=
   fun y hy x hx p hp => by
     simpa using b.pathBlocked_reverse (h x hx y hy p.reverse (b.isPath_reverse hp))

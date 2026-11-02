@@ -73,7 +73,7 @@ theorem exitIndex_le_l1dist_of_leftFace (hfin : (cluster 2 ω (origin 2)).Finite
   rw [Fin.sum_univ_two, enclExitFaceUp_coord0 (ω := ω) hfin]
   omega
 
-/-- Some cycle of the face-boundary graph of the origin cluster, based at the upper exit face,
+/-- **Dual cycle reaching the left half-plane.** Some cycle of the face-boundary graph of the origin cluster, based at the upper exit face,
 visits a face whose first coordinate is at most zero. -/
 def CycleHasLeftFace (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=

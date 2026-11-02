@@ -37,25 +37,25 @@ open Finset
 
 variable {σ : Type*}
 
-/-- The rational sum of the absolute values of a polynomial's coefficients. -/
+/-- **Coefficient L1 norm of a multivariate polynomial.** The rational sum of the absolute values of a polynomial's coefficients. -/
 noncomputable def coeffL1Norm (p : MvPolynomial σ ℚ) : ℚ :=
   ∑ m ∈ p.support, |p.coeff m|
 
-/-- Enlarging the summation set beyond the support does not change the sum. -/
+/-- **Coefficient L1 norm as a sum over a larger index set.** Enlarging the summation set beyond the support does not change the sum. -/
 theorem coeffL1Norm_eq_sum {p : MvPolynomial σ ℚ} {S : Finset (σ →₀ ℕ)}
     (hS : p.support ⊆ S) : coeffL1Norm p = ∑ m ∈ S, |p.coeff m| :=
   sum_subset hS fun m _ hm ↦ by rw [notMem_support_iff.1 hm, abs_zero]
 
-/-- The coefficient L1 norm is nonnegative. -/
+/-- **Nonnegativity of the coefficient L1 norm.** The coefficient L1 norm is nonnegative. -/
 theorem coeffL1Norm_nonneg (p : MvPolynomial σ ℚ) : 0 ≤ coeffL1Norm p :=
   sum_nonneg fun _ _ ↦ abs_nonneg _
 
-/-- The zero polynomial has coefficient L1 norm zero. -/
+/-- **Coefficient L1 norm of the zero polynomial.** The zero polynomial has coefficient L1 norm zero. -/
 @[simp]
 theorem coeffL1Norm_zero : coeffL1Norm (0 : MvPolynomial σ ℚ) = 0 := by
   simp [coeffL1Norm]
 
-/-- Adding polynomials increases the coefficient L1 norm by at most the sum. -/
+/-- **Triangle inequality for the coefficient L1 norm.** Adding polynomials increases the coefficient L1 norm by at most the sum. -/
 theorem coeffL1Norm_add_le (p q : MvPolynomial σ ℚ) :
     coeffL1Norm (p + q) ≤ coeffL1Norm p + coeffL1Norm q := by
   classical
@@ -67,7 +67,7 @@ theorem coeffL1Norm_add_le (p q : MvPolynomial σ ℚ) :
     simp only [AddMonoidAlgebra.coeff_add, Finsupp.add_apply]
     exact abs_add_le _ _
 
-/-- The norm of a finite sum is bounded by the sum of the coefficient norms. -/
+/-- **Coefficient L1 norm of a finite sum.** The norm of a finite sum is bounded by the sum of the coefficient norms. -/
 theorem coeffL1Norm_sum_le {ι : Type*} (s : Finset ι) (f : ι → MvPolynomial σ ℚ) :
     coeffL1Norm (∑ i ∈ s, f i) ≤ ∑ i ∈ s, coeffL1Norm (f i) := by
   classical
@@ -78,14 +78,14 @@ theorem coeffL1Norm_sum_le {ι : Type*} (s : Finset ι) (f : ι → MvPolynomial
     exact (coeffL1Norm_add_le (f i) (∑ j ∈ s, f j)).trans
       (add_le_add le_rfl ih)
 
-/-- Rational scalar multiplication scales the norm by the scalar's absolute value. -/
+/-- **Coefficient L1 norm of a scalar multiple.** Rational scalar multiplication scales the norm by the scalar's absolute value. -/
 @[simp]
 theorem coeffL1Norm_smul (a : ℚ) (p : MvPolynomial σ ℚ) :
     coeffL1Norm (a • p) = |a| * coeffL1Norm p := by
   rw [coeffL1Norm_eq_sum (support_smul (a := a) (f := p)), coeffL1Norm, mul_sum]
   exact sum_congr rfl fun m _ ↦ by rw [MvPolynomial.coeff_smul, smul_eq_mul, abs_mul]
 
-/-- A monomial's coefficient L1 norm is the absolute value of its coefficient,
+/-- **Coefficient L1 norm of a monomial.** A monomial's coefficient L1 norm is the absolute value of its coefficient,
 including when the coefficient is zero. -/
 @[simp]
 theorem coeffL1Norm_monomial (m : σ →₀ ℕ) (a : ℚ) :
@@ -94,12 +94,12 @@ theorem coeffL1Norm_monomial (m : σ →₀ ℕ) (a : ℚ) :
   rw [coeffL1Norm_eq_sum (support_monomial_subset (s := m) (a := a)), sum_singleton]
   simp only [MvPolynomial.coeff_monomial, ite_true]
 
-/-- The coefficient L1 norm of a monomial is at most its absolute coefficient. -/
+/-- **Upper bound on the coefficient L1 norm of a monomial.** The coefficient L1 norm of a monomial is at most its absolute coefficient. -/
 theorem coeffL1Norm_monomial_le (m : σ →₀ ℕ) (a : ℚ) :
     coeffL1Norm (monomial m a) ≤ |a| :=
   (coeffL1Norm_monomial m a).le
 
-/-- The coefficient convolution in a product is bounded by the product of the
+/-- **Submultiplicativity of the coefficient L1 norm.** The coefficient convolution in a product is bounded by the product of the
 coefficient L1 norms; cancellation can make this inequality strict. -/
 theorem coeffL1Norm_mul_le (p q : MvPolynomial σ ℚ) :
     coeffL1Norm (p * q) ≤ coeffL1Norm p * coeffL1Norm q := by
@@ -123,7 +123,7 @@ theorem coeffL1Norm_mul_le (p q : MvPolynomial σ ℚ) :
 -- The metric needs the tautological exponent side condition, not a new hypothesis.
 local instance : Fact ((1 : NNReal) ≤ 1) := ⟨le_rfl⟩
 
-/-- The real cast of the coefficient L1 norm agrees with the explicit exponent-one
+/-- **Coefficient L1 norm as an $\ell^1$ distance.** The real cast of the coefficient L1 norm agrees with the explicit exponent-one
 metric on the exact rational coefficient Finsupp carrier. -/
 theorem dist_coeff_zero_eq_coeffL1Norm (p : MvPolynomial σ ℚ) :
     dist (WithLp.toLp ((1 : NNReal) : ENNReal) p.coeff)

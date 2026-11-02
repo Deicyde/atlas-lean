@@ -67,7 +67,7 @@ namespace MathlibExt.Biology.PopulationGenetics.SelectionScan
 
 variable {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} {X Y : Ω → ℝ}
 
-/-- The pair of statistics `(X, Y)` is exchangeable under `μ`: the joint law is unchanged by
+/-- **Exchangeable pair of statistics.** The pair of statistics `(X, Y)` is exchangeable under `μ`: the joint law is unchanged by
 swapping the two coordinates. This is an additional calibration assumption for a two-group
 haplotype test, stronger than the ordinary neutral null.
 Defined as `IdentDistrib` of the two orderings, so the measurability of the joint laws is
@@ -79,7 +79,7 @@ namespace IsExchangeablePair
 
 theorem swap (h : IsExchangeablePair μ X Y) : IsExchangeablePair μ Y X := ProbabilityTheory.IdentDistrib.symm h
 
-/-- Applying the same measurable function to both statistics preserves exchangeability. -/
+/-- **Exchangeability is preserved by a common measurable map.** Applying the same measurable function to both statistics preserves exchangeability. -/
 theorem map_comp (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measurable Y)
     {f : ℝ → ℝ} (hf : Measurable f) :
     IsExchangeablePair μ (fun ω => f (X ω)) (fun ω => f (Y ω)) := by
@@ -87,7 +87,7 @@ theorem map_comp (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measu
     (hf.comp measurable_fst).prodMk (hf.comp measurable_snd)
   exact ProbabilityTheory.IdentDistrib.comp h hff
 
-/-- The difference of an exchangeable pair has a symmetric law. -/
+/-- **Difference of an exchangeable pair has a symmetric law.** The difference of an exchangeable pair has a symmetric law. -/
 theorem map_sub_neg (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measurable Y) :
     μ.map (fun ω => X ω - Y ω) = μ.map (fun ω => -(X ω - Y ω)) := by
   have hg : Measurable fun p : ℝ × ℝ => p.1 - p.2 := measurable_fst.sub measurable_snd
@@ -98,7 +98,7 @@ theorem map_sub_neg (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Me
     _ = μ.map (fun ω => Y ω - X ω) := Measure.map_map hg (hY.prodMk hX)
     _ = μ.map (fun ω => -(X ω - Y ω)) := by simp [neg_sub]
 
-/-- Equal tails: the upper tail of `X - Y` at `t` has the same probability as the lower tail
+/-- **Equal tails of the difference of an exchangeable pair.** Equal tails: the upper tail of `X - Y` at `t` has the same probability as the lower tail
 at `-t`. -/
 theorem measure_le_sub (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measurable Y)
     (t : ℝ) : μ {ω | t ≤ X ω - Y ω} = μ {ω | X ω - Y ω ≤ -t} := by
@@ -115,7 +115,7 @@ theorem measure_le_sub (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY :
   rw [e2] at h1
   exact h1
 
-/-- A two-sided rejection region splits into two tails of equal probability. -/
+/-- **Two-sided rejection region splits into equal tails.** A two-sided rejection region splits into two tails of equal probability. -/
 theorem measure_abs_sub (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measurable Y)
     {t : ℝ} (ht : 0 < t) :
     μ {ω | t ≤ |X ω - Y ω|} = 2 * μ {ω | t ≤ X ω - Y ω} := by
@@ -139,13 +139,13 @@ theorem measure_abs_sub (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY 
   rw [hsplit, measure_union hdisj (measurableSet_le hZ measurable_const),
     ← h.measure_le_sub hX hY t, two_mul]
 
-/-- For positive statistics, the log ratio — the XP-EHH form — has equal tails. -/
+/-- **Equal tails of the log ratio of an exchangeable pair.** For positive statistics, the log ratio — the XP-EHH form — has equal tails. -/
 theorem measure_le_logRatio (h : IsExchangeablePair μ X Y) (hX : Measurable X)
     (hY : Measurable Y) (t : ℝ) :
     μ {ω | t ≤ log (X ω) - log (Y ω)} = μ {ω | log (X ω) - log (Y ω) ≤ -t} :=
   (h.map_comp hX hY Real.measurable_log).measure_le_sub hX.log hY.log t
 
-/-- The same statement for the ratio itself, the form used for relative EHH: the probability
+/-- **Equal tails of the ratio of an exchangeable pair.** The same statement for the ratio itself, the form used for relative EHH: the probability
 that the ratio exceeds `c` equals the probability that it falls below `1 / c`. -/
 theorem measure_le_ratio (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY : Measurable Y)
     (hXpos : ∀ ω, 0 < X ω) (hYpos : ∀ ω, 0 < Y ω) {c : ℝ} (hc : 0 < c) :
@@ -165,14 +165,14 @@ theorem measure_le_ratio (h : IsExchangeablePair μ X Y) (hX : Measurable X) (hY
 
 end IsExchangeablePair
 
-/-- The cross-population extended haplotype homozygosity score (Sabeti et al. 2007): the log
+/-- **Cross-population extended haplotype homozygosity (XP-EHH).** The cross-population extended haplotype homozygosity score (Sabeti et al. 2007): the log
 ratio of the integrated haplotype homozygosities of the same core region in two populations.
 Both arguments must be positive for the score to be meaningful. Outside that domain
 `Real.log` is totalized by Mathlib, not by the stated junk value: `Real.log 0 = 0` and
 `Real.log (-x) = Real.log x`, so for example `xpehh (-2) 1 = log 2`. -/
 noncomputable def xpehh (iA iB : ℝ) : ℝ := log iA - log iB
 
-/-- XP-EHH computed from two star-genealogy sweep models with the same recombination rate is
+/-- **XP-EHH in star-genealogy sweep models.** XP-EHH computed from two star-genealogy sweep models with the same recombination rate is
 the log ratio of the two ages, with the opposite sign to `ihs`. -/
 theorem xpehh_ihh {r T₁ T₂ : ℝ} (hr : 0 < r) (h₁ : 0 < T₁) (h₂ : 0 < T₂) :
     xpehh (ihh r T₁) (ihh r T₂) = log (T₂ / T₁) := by
@@ -180,7 +180,7 @@ theorem xpehh_ihh {r T₁ T₂ : ℝ} (hr : 0 < r) (h₁ : 0 < T₁) (h₂ : 0 <
   congr 1
   field_simp
 
-/-- Under exchangeability, the XP-EHH score has a symmetric law: the two tails of the
+/-- **Symmetry of the XP-EHH law under exchangeability.** Under exchangeability, the XP-EHH score has a symmetric law: the two tails of the
 two-sided test carry the same probability. -/
 theorem measure_le_xpehh {I₁ I₂ : Ω → ℝ} (h : IsExchangeablePair μ I₁ I₂) (h₁ : Measurable I₁)
     (h₂ : Measurable I₂) (t : ℝ) :

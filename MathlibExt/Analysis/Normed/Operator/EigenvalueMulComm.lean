@@ -51,7 +51,7 @@ namespace ContinuousLinearMap
 variable {𝕜 E : Type*} [NontriviallyNormedField 𝕜] [NormedAddCommGroup E]
   [NormedSpace 𝕜 E] {S T : E →L[𝕜] E} {μ : 𝕜}
 
-/-- A nonzero scalar is an eigenvalue of `S * T` iff it is an eigenvalue of
+/-- **Nonzero eigenvalues of ST and TS coincide.** A nonzero scalar is an eigenvalue of `S * T` iff it is an eigenvalue of
 `T * S`, for bounded operators. -/
 theorem hasEigenvalue_mul_iff (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ ≠ 0) :
     Module.End.HasEigenvalue ((S * T : E →L[𝕜] E) : Module.End 𝕜 E) μ ↔
@@ -60,7 +60,7 @@ theorem hasEigenvalue_mul_iff (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ ≠ 0
   exact MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.hasEigenvalue_mul_iff
     (S : Module.End 𝕜 E) (T : Module.End 𝕜 E) hμ
 
-/-- The geometric multiplicities of a nonzero eigenvalue of `S * T` and of
+/-- **Equal geometric multiplicities of nonzero eigenvalues of ST and TS.** The geometric multiplicities of a nonzero eigenvalue of `S * T` and of
 `T * S` agree, for bounded operators. -/
 theorem finrank_eigenspace_mul_eq (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ ≠ 0) :
     Module.finrank 𝕜
@@ -71,7 +71,7 @@ theorem finrank_eigenspace_mul_eq (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ �
   exact MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finrank_eigenspace_mul_eq
     (S : Module.End 𝕜 E) (T : Module.End 𝕜 E) hμ
 
-/-- The generalized `μ`-eigenspaces of `S * T` and of `T * S` have equal
+/-- **Equal dimensions of generalized eigenspaces of ST and TS.** The generalized `μ`-eigenspaces of `S * T` and of `T * S` have equal
 `Module.finrank`, for every exponent `k : ℕ∞`, for bounded operators. -/
 theorem finrank_genEigenspace_mul_eq (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ ≠ 0)
     (k : ℕ∞) :
@@ -83,7 +83,7 @@ theorem finrank_genEigenspace_mul_eq (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : �
   exact MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finrank_genEigenspace_mul_eq
     (S : Module.End 𝕜 E) (T : Module.End 𝕜 E) hμ k
 
-/-- Generalized eigenspaces of reversed bounded-operator products are
+/-- **Finite-dimensionality of generalized eigenspaces of ST and TS.** Generalized eigenspaces of reversed bounded-operator products are
 finite-dimensional together for a nonzero scalar and every exponent. -/
 theorem finite_genEigenspace_mul_iff (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : μ ≠ 0)
     (k : ℕ∞) :
@@ -95,7 +95,7 @@ theorem finite_genEigenspace_mul_iff (S T : E →L[𝕜] E) {μ : 𝕜} (hμ : �
   exact MathlibExt.LinearAlgebra.Eigenspace.MulComm.End.finite_genEigenspace_mul_iff
     (S : Module.End 𝕜 E) (T : Module.End 𝕜 E) hμ k
 
-/-- A nonzero scalar is an eigenvalue of `T† * T` iff it is an eigenvalue of
+/-- **Nonzero eigenvalues of an operator times its adjoint, in either order.** A nonzero scalar is an eigenvalue of `T† * T` iff it is an eigenvalue of
 `T * T†`, on a Hilbert space. -/
 theorem hasEigenvalue_adjoint_mul_self_iff {𝕜 E : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [InnerProductSpace 𝕜 E] [CompleteSpace E]

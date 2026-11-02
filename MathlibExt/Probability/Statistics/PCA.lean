@@ -74,26 +74,26 @@ section SampleCovariance
 
 variable {n p : ℕ}
 
-/-- The sample mean of column `j` of an `n × p` data matrix (rows are observations). For
+/-- **Sample mean of a data matrix column.** The sample mean of column `j` of an `n × p` data matrix (rows are observations). For
 `n = 0` it is the junk value `0`. -/
 noncomputable def colMean (X : Matrix (Fin n) (Fin p) ℝ) (j : Fin p) : ℝ :=
   (∑ i, X i j) / n
 
-/-- The column-centered data matrix `X i j - x̄ⱼ`. -/
+/-- **Column-centered data matrix.** The column-centered data matrix `X i j - x̄ⱼ`. -/
 noncomputable def center (X : Matrix (Fin n) (Fin p) ℝ) : Matrix (Fin n) (Fin p) ℝ :=
   Matrix.of fun i j => X i j - colMean X j
 
-/-- The unbiased sample covariance matrix `(n - 1)⁻¹ (X - x̄)ᵀ (X - x̄)` of an `n × p` data
+/-- **Unbiased sample covariance matrix.** The unbiased sample covariance matrix `(n - 1)⁻¹ (X - x̄)ᵀ (X - x̄)` of an `n × p` data
 matrix. The divisor needs `2 ≤ n`; for `n = 1` the factor is the junk value `(0 : ℝ)⁻¹ = 0`
 (and for `n = 0` the product is the zero matrix). -/
 noncomputable def sampleCov (X : Matrix (Fin n) (Fin p) ℝ) : Matrix (Fin p) (Fin p) ℝ :=
   ((n : ℝ) - 1)⁻¹ • ((center X)ᵀ * center X)
 
-/-- The principal-component scores `(X - x̄) w` of the observations along a direction `w`. -/
+/-- **Principal component scores.** The principal-component scores `(X - x̄) w` of the observations along a direction `w`. -/
 noncomputable def scores (X : Matrix (Fin n) (Fin p) ℝ) (w : Fin p → ℝ) : Fin n → ℝ :=
   center X *ᵥ w
 
-/-- The centered columns sum to zero (for at least one observation). -/
+/-- **Centered columns sum to zero.** The centered columns sum to zero (for at least one observation). -/
 theorem sum_center (X : Matrix (Fin n) (Fin p) ℝ) (hn : 0 < n) (j : Fin p) :
     ∑ i, center X i j = 0 := by
   simp only [center, Matrix.of_apply, Finset.sum_sub_distrib, Finset.sum_const,
@@ -102,21 +102,21 @@ theorem sum_center (X : Matrix (Fin n) (Fin p) ℝ) (hn : 0 < n) (j : Fin p) :
   field_simp
   ring
 
-/-- Entries of the sample covariance matrix:
+/-- **Entries of the sample covariance matrix.** Entries of the sample covariance matrix:
 `Sⱼₖ = (n - 1)⁻¹ ∑ᵢ (Xᵢⱼ - x̄ⱼ)(Xᵢₖ - x̄ₖ)`. -/
 theorem sampleCov_apply (X : Matrix (Fin n) (Fin p) ℝ) (j k : Fin p) :
     sampleCov X j k =
       ((n : ℝ) - 1)⁻¹ * ∑ i, (X i j - colMean X j) * (X i k - colMean X k) := by
   simp [sampleCov, Matrix.mul_apply, center]
 
-/-- The sample covariance matrix is symmetric. -/
+/-- **Sample covariance matrix is symmetric.** The sample covariance matrix is symmetric. -/
 theorem sampleCov_isHermitian (X : Matrix (Fin n) (Fin p) ℝ) : (sampleCov X).IsHermitian := by
   unfold sampleCov
   refine IsHermitian.smul ?_ (IsSelfAdjoint.all _)
   have h := Matrix.isHermitian_conjTranspose_mul_self (center X)
   rwa [conjTranspose_eq_transpose_of_trivial] at h
 
-/-- The sample covariance matrix is positive semidefinite (for every `n`). -/
+/-- **Sample covariance matrix is positive semidefinite.** The sample covariance matrix is positive semidefinite (for every `n`). -/
 theorem sampleCov_posSemidef (X : Matrix (Fin n) (Fin p) ℝ) : (sampleCov X).PosSemidef := by
   unfold sampleCov
   rcases Nat.eq_zero_or_pos n with rfl | hn
@@ -132,20 +132,20 @@ theorem sampleCov_posSemidef (X : Matrix (Fin n) (Fin p) ℝ) : (sampleCov X).Po
     rw [conjTranspose_eq_transpose_of_trivial] at h
     exact h.smul h0
 
-/-- The trace of the sample covariance matrix is the total sample variance, the sum of the
+/-- **Trace of the sample covariance is the total sample variance.** The trace of the sample covariance matrix is the total sample variance, the sum of the
 column sample variances. -/
 theorem trace_sampleCov (X : Matrix (Fin n) (Fin p) ℝ) :
     (sampleCov X).trace = ∑ j, ((n : ℝ) - 1)⁻¹ * ∑ i, (X i j - colMean X j) ^ 2 := by
   simp only [Matrix.trace, Matrix.diag, sampleCov_apply, sq]
 
-/-- The scores along any direction have sample mean zero. -/
+/-- **Principal component scores have sample mean zero.** The scores along any direction have sample mean zero. -/
 theorem sum_scores (X : Matrix (Fin n) (Fin p) ℝ) (hn : 0 < n) (w : Fin p → ℝ) :
     ∑ i, scores X w i = 0 := by
   simp only [scores, Matrix.mulVec, dotProduct]
   rw [Finset.sum_comm]
   simp [← Finset.sum_mul, sum_center X hn]
 
-/-- The sample variance of the scores along `w` is the quadratic form `wᵀ S w`. -/
+/-- **Sample variance of scores is a quadratic form.** The sample variance of the scores along `w` is the quadratic form `wᵀ S w`. -/
 theorem sampleVar_scores (X : Matrix (Fin n) (Fin p) ℝ) (w : Fin p → ℝ) :
     ((n : ℝ) - 1)⁻¹ * ∑ i, scores X w i ^ 2 = w ⬝ᵥ sampleCov X *ᵥ w := by
   simp only [sampleCov, scores, Matrix.smul_mulVec, dotProduct_smul, smul_eq_mul,
@@ -161,26 +161,26 @@ section Ordered
 
 variable {p : ℕ} {S : Matrix (Fin p) (Fin p) ℝ}
 
-/-- The eigenvalues `λ₀ ≥ λ₁ ≥ ⋯ ≥ λ_{p-1}` of a real symmetric `p × p` matrix, in decreasing
+/-- **Eigenvalues of a symmetric matrix in decreasing order.** The eigenvalues `λ₀ ≥ λ₁ ≥ ⋯ ≥ λ_{p-1}` of a real symmetric `p × p` matrix, in decreasing
 order (Mathlib's `LinearMap.IsSymmetric.eigenvalues` of `Matrix.toEuclideanLin S`). -/
 noncomputable def orderedEigenvalues (hS : S.IsHermitian) : Fin p → ℝ :=
   (isSymmetric_toEuclideanLin_iff.mpr hS).eigenvalues finrank_euclideanSpace_fin
 
-/-- An orthonormal eigenbasis of a real symmetric matrix, ordered to match
+/-- **Ordered orthonormal eigenbasis of a symmetric matrix.** An orthonormal eigenbasis of a real symmetric matrix, ordered to match
 `orderedEigenvalues`; for a covariance matrix these are the principal axes. -/
 noncomputable def orderedEigenbasis (hS : S.IsHermitian) :
     OrthonormalBasis (Fin p) ℝ (EuclideanSpace ℝ (Fin p)) :=
   (isSymmetric_toEuclideanLin_iff.mpr hS).eigenvectorBasis finrank_euclideanSpace_fin
 
-/-- The Rayleigh quotient `wᵀ S w / wᵀ w` of a real matrix (junk value `0` at `w = 0`). -/
+/-- **Rayleigh quotient of a matrix.** The Rayleigh quotient `wᵀ S w / wᵀ w` of a real matrix (junk value `0` at `w = 0`). -/
 noncomputable def rayleigh (S : Matrix (Fin p) (Fin p) ℝ) (w : Fin p → ℝ) : ℝ :=
   (w ⬝ᵥ S *ᵥ w) / (w ⬝ᵥ w)
 
-/-- The ordered eigenvalues are decreasing. -/
+/-- **Ordered eigenvalues are decreasing.** The ordered eigenvalues are decreasing. -/
 theorem orderedEigenvalues_antitone (hS : S.IsHermitian) : Antitone (orderedEigenvalues hS) :=
   LinearMap.IsSymmetric.eigenvalues_antitone _ _
 
-/-- The `k`-th basis vector is an eigenvector for the `k`-th eigenvalue. -/
+/-- **Ordered eigenbasis vectors are eigenvectors.** The `k`-th basis vector is an eigenvector for the `k`-th eigenvalue. -/
 theorem mulVec_orderedEigenbasis (hS : S.IsHermitian) (k : Fin p) :
     S *ᵥ ⇑(orderedEigenbasis hS k) = orderedEigenvalues hS k • ⇑(orderedEigenbasis hS k) := by
   have h := (isSymmetric_toEuclideanLin_iff.mpr hS).apply_eigenvectorBasis
@@ -202,7 +202,7 @@ private theorem dotProduct_self_eq_norm_sq (x : EuclideanSpace ℝ (Fin p)) :
   rw [← real_inner_self_eq_norm_sq, EuclideanSpace.inner_eq_star_dotProduct]
   simp
 
-/-- The quadratic form expanded in the ordered eigenbasis: `xᵀ S x = ∑ λᵢ ⟪vᵢ, x⟫²`. -/
+/-- **Quadratic form expanded in the ordered eigenbasis.** The quadratic form expanded in the ordered eigenbasis: `xᵀ S x = ∑ λᵢ ⟪vᵢ, x⟫²`. -/
 theorem dotProduct_mulVec_eq_sum (hS : S.IsHermitian) (x : EuclideanSpace ℝ (Fin p)) :
     (⇑x ⬝ᵥ S *ᵥ ⇑x) = ∑ i, orderedEigenvalues hS i * ⟪orderedEigenbasis hS i, x⟫_ℝ ^ 2 := by
   rw [dotProduct_mulVec_eq_inner,
@@ -210,7 +210,7 @@ theorem dotProduct_mulVec_eq_sum (hS : S.IsHermitian) (x : EuclideanSpace ℝ (F
       finrank_euclideanSpace_fin x]
   simp [orderedEigenvalues, orderedEigenbasis]
 
-/-- The ordered eigenvalues sum to the trace. -/
+/-- **Ordered eigenvalues sum to the trace.** The ordered eigenvalues sum to the trace. -/
 theorem sum_orderedEigenvalues (hS : S.IsHermitian) :
     ∑ i, orderedEigenvalues hS i = S.trace := by
   have h := (isSymmetric_toEuclideanLin_iff.mpr hS).trace_eq_sum_eigenvalues
@@ -222,7 +222,7 @@ theorem sum_orderedEigenvalues (hS : S.IsHermitian) :
   ext i j
   simp [LinearMap.toMatrix_apply, toLpLin_apply]
 
-/-- The eigenvalues of a positive semidefinite matrix are nonnegative. -/
+/-- **Eigenvalues of a positive semidefinite matrix are nonnegative.** The eigenvalues of a positive semidefinite matrix are nonnegative. -/
 theorem orderedEigenvalues_nonneg (hS : S.PosSemidef) (k : Fin p) :
     0 ≤ orderedEigenvalues hS.isHermitian k := by
   have h2 := hS.dotProduct_mulVec_nonneg (⇑(orderedEigenbasis hS.isHermitian k))
@@ -230,7 +230,7 @@ theorem orderedEigenvalues_nonneg (hS : S.PosSemidef) (k : Fin p) :
     (orderedEigenbasis hS.isHermitian).orthonormal.1 k, one_pow, smul_eq_mul, mul_one] at h2
   exact h2
 
-/-- The Rayleigh quotient of the `k`-th eigenvector is the `k`-th eigenvalue. -/
+/-- **Rayleigh quotient of an eigenvector is its eigenvalue.** The Rayleigh quotient of the `k`-th eigenvector is the `k`-th eigenvalue. -/
 theorem rayleigh_orderedEigenbasis (hS : S.IsHermitian) (k : Fin p) :
     rayleigh S ⇑(orderedEigenbasis hS k) = orderedEigenvalues hS k := by
   rw [rayleigh, dotProduct_self_eq_norm_sq, (orderedEigenbasis hS).orthonormal.1 k,
@@ -256,7 +256,7 @@ theorem rayleigh_le_of_orthogonal (hS : S.IsHermitian) (k : Fin p) (w : Euclidea
   · simp [horth i hik]
   · exact mul_le_mul_of_nonneg_right (orderedEigenvalues_antitone hS hik) (sq_nonneg _)
 
-/-- Dual of `rayleigh_le_of_orthogonal`: on nonzero directions orthogonal to the eigenvectors
+/-- **Lower bound on the Rayleigh quotient for orthogonal directions.** Dual of `rayleigh_le_of_orthogonal`: on nonzero directions orthogonal to the eigenvectors
 after index `k`, the Rayleigh quotient is at least the `k`-th eigenvalue. -/
 theorem le_rayleigh_of_orthogonal (hS : S.IsHermitian) (k : Fin p) (w : EuclideanSpace ℝ (Fin p))
     (hw : w ≠ 0) (horth : ∀ i : Fin p, k < i → ⟪orderedEigenbasis hS i, w⟫_ℝ = 0) :
@@ -307,7 +307,7 @@ section Explained
 
 variable {n p : ℕ}
 
-/-- The proportion of total sample variance explained by the first `k` principal components:
+/-- **Proportion of variance explained by principal components.** The proportion of total sample variance explained by the first `k` principal components:
 `(λ₀ + ⋯ + λ_{k-1}) / tr S` for the sample covariance matrix `S`. The junk value `0` is
 returned when the total variance `tr S` is `0` (constant data). -/
 noncomputable def varianceExplained (X : Matrix (Fin n) (Fin p) ℝ) (k : ℕ) : ℝ :=
@@ -325,18 +325,18 @@ private theorem partial_le_trace (X : Matrix (Fin n) (Fin p) ℝ) (k : ℕ) :
   rw [← sum_orderedEigenvalues (sampleCov_isHermitian X)]
   exact Finset.sum_le_sum_of_subset_of_nonneg (Finset.filter_subset _ _) fun i _ _ => hnn i
 
-/-- The proportion of variance explained is nonnegative. -/
+/-- **Proportion of variance explained is nonnegative.** The proportion of variance explained is nonnegative. -/
 theorem varianceExplained_nonneg (X : Matrix (Fin n) (Fin p) ℝ) (k : ℕ) :
     0 ≤ varianceExplained X k :=
   div_nonneg (partial_le_trace X k).1 ((partial_le_trace X k).1.trans (partial_le_trace X k).2)
 
-/-- The proportion of variance explained is at most one. -/
+/-- **Proportion of variance explained is at most one.** The proportion of variance explained is at most one. -/
 theorem varianceExplained_le_one (X : Matrix (Fin n) (Fin p) ℝ) (k : ℕ) :
     varianceExplained X k ≤ 1 :=
   div_le_one_of_le₀ (partial_le_trace X k).2
     ((partial_le_trace X k).1.trans (partial_le_trace X k).2)
 
-/-- Keeping more components explains more variance. -/
+/-- **More components explain more variance.** Keeping more components explains more variance. -/
 theorem varianceExplained_mono (X : Matrix (Fin n) (Fin p) ℝ) :
     Monotone (varianceExplained X) := by
   intro k l hkl
@@ -347,7 +347,7 @@ theorem varianceExplained_mono (X : Matrix (Fin n) (Fin p) ℝ) :
   simp only [Finset.mem_filter, Finset.mem_univ, true_and]
   omega
 
-/-- All `p` components explain all of the variance, when the total variance is positive. -/
+/-- **All components explain all of the variance.** All `p` components explain all of the variance, when the total variance is positive. -/
 theorem varianceExplained_of_le (X : Matrix (Fin n) (Fin p) ℝ) {k : ℕ} (hk : p ≤ k)
     (htr : 0 < (sampleCov X).trace) : varianceExplained X k = 1 := by
   unfold varianceExplained
@@ -365,14 +365,14 @@ open scoped Matrix.Norms.Frobenius
 
 variable {m n : ℕ}
 
-/-- Right singular vectors of `A`: an orthonormal eigenbasis of `Aᵀ A`, ordered so that the
+/-- **Right singular vectors of a matrix.** Right singular vectors of `A`: an orthonormal eigenbasis of `Aᵀ A`, ordered so that the
 `i`-th vector has eigenvalue `σᵢ²` with `σ₀ ≥ σ₁ ≥ ⋯` the singular values. -/
 noncomputable def rightSingularBasis (A : Matrix (Fin m) (Fin n) ℝ) :
     OrthonormalBasis (Fin n) ℝ (EuclideanSpace ℝ (Fin n)) :=
   (Matrix.toEuclideanLin A).isSymmetric_adjoint_comp_self.eigenvectorBasis
     finrank_euclideanSpace_fin
 
-/-- The rank-`k` truncated singular value decomposition `A Vₖ Vₖᵀ = ∑_{i<k} σᵢ uᵢ vᵢᵀ`,
+/-- **Truncated singular value decomposition.** The rank-`k` truncated singular value decomposition `A Vₖ Vₖᵀ = ∑_{i<k} σᵢ uᵢ vᵢᵀ`,
 where `Vₖ` collects the first `k` right singular vectors. -/
 noncomputable def truncSVD (A : Matrix (Fin m) (Fin n) ℝ) (k : ℕ) : Matrix (Fin m) (Fin n) ℝ :=
   A * ∑ i : Fin n with i.val < k,
@@ -569,7 +569,7 @@ private theorem weighted_tail_le {b : ℕ} (k : ℕ) (hk : k < b)
   have := mul_nonneg ht (sub_nonneg.mpr hc)
   linarith
 
-/-- The truncated SVD has rank at most `k`. -/
+/-- **Rank of the truncated SVD is at most k.** The truncated SVD has rank at most `k`. -/
 theorem rank_truncSVD_le (A : Matrix (Fin m) (Fin n) ℝ) (k : ℕ) : (truncSVD A k).rank ≤ k := by
   classical
   unfold truncSVD
@@ -583,7 +583,7 @@ theorem rank_truncSVD_le (A : Matrix (Fin m) (Fin n) ℝ) (k : ℕ) : (truncSVD 
           (fun i _ j _ hij => Fin.ext hij)
       _ = k := Finset.card_range k
 
-/-- The squared Frobenius error of the truncated SVD is the sum of the discarded squared
+/-- **Frobenius error of the truncated SVD.** The squared Frobenius error of the truncated SVD is the sum of the discarded squared
 singular values. -/
 theorem frobenius_sub_truncSVD_sq (A : Matrix (Fin m) (Fin n) ℝ) (k : ℕ) :
     ‖A - truncSVD A k‖ ^ 2 =

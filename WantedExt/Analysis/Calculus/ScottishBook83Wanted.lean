@@ -19,7 +19,7 @@ public import Mathlib.Topology.MetricSpace.Pseudo.Defs
 
 namespace MathlibExt.Analysis.Calculus.ScottishBook83Wanted
 
-/-- Auerbach's Problem 83 from the Scottish Book: if a continuous
+/-- **Auerbach's Hölder condition problem (Scottish Book 83).** Auerbach's Problem 83 from the Scottish Book: if a continuous
 function `f` satisfies, at every point `x`, that the difference
 quotients `|f (x + h) - f x| / |h| ^ a` stay below a constant `M` for
 all sufficiently small nonzero `h` — that is, if the limsup of the
@@ -34,7 +34,7 @@ def ScottishBookProblem83Claim : Prop :=
     ∃ C : ℝ, ∀ x y : ℝ, |f x - f y| ≤ C * Real.rpow |x - y| a
 
 /--
-Auerbach's Problem 83 is false: the pointwise limsup condition does
+**Pointwise difference-quotient bounds do not imply Hölder continuity.** Auerbach's Problem 83 is false: the pointwise limsup condition does
 not imply a Hölder condition. Source: H. Auerbach, Problem 83 of the
 Scottish Book; typescript Ad 83 records the negative answer, with
 Marcinkiewicz's counterexample: a triangular function on intervals

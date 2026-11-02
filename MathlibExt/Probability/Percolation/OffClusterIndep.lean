@@ -141,7 +141,7 @@ theorem adj_box_step {m : ℕ} {x z : Site d} (hx : x ∈ box d m)
       _ ≤ (x i).natAbs + (z i - x i).natAbs := Int.natAbs_add_le _ _
   omega
 
-/-- `y ∈ Λ_n \ C` is joined by an open path inside `Λ_n \ C` to a site outside `Λ_{n-1}`. -/
+/-- **Crossing inside the box that avoids a cluster.** `y ∈ Λ_n \ C` is joined by an open path inside `Λ_n \ C` to a site outside `Λ_{n-1}`. -/
 def offClusterBoxCrossing (d : ℕ) (C : Set (Site d)) (y : Site d) (n : ℕ)
     (ω : ConfigSpace (Sym2 (Site d))) : Prop :=
   ∃ z, z ∉ box d (n - 1) ∧ ∃ (hy : y ∈ box d n \ C) (hz : z ∈ box d n \ C),
@@ -191,7 +191,7 @@ theorem connWithinR_congr (R : Set (Site d)) {a b : Site d} (ha : a ∈ R) (hb :
   unfold ConnectedWithin
   rw [hG]
 
-/-- The edges of `Λ_n` with no endpoint in `C`. -/
+/-- **Box edges with no endpoint in a cluster.** The edges of `Λ_n` with no endpoint in `C`. -/
 noncomputable def boxOffCEdges (d : ℕ) (C : Set (Site d)) (n : ℕ) :
     Finset (Sym2 (Site d)) := by
   classical

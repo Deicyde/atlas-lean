@@ -197,7 +197,7 @@ theorem exists_tvDist_pow_le {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ 
     linarith
   linarith
 
-/-- For a primitive stochastic matrix with stationary distribution `π`, every row of `Pⁿ`
+/-- **Convergence of matrix powers to the stationary distribution.** For a primitive stochastic matrix with stationary distribution `π`, every row of `Pⁿ`
 converges to `π`: `Pⁿ(x, y) → π(y)`. -/
 theorem tendsto_pow_apply {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
     (hprim : P.IsPrimitive) {π : S → ℝ} (hπ0 : ∀ y, 0 ≤ π y) (hπ1 : ∑ y, π y = 1)
@@ -215,7 +215,7 @@ theorem tendsto_pow_apply {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
   unfold tvDist at h2
   linarith
 
-/-- A primitive stochastic matrix has at most one stationary distribution. In fact `π'` may be
+/-- **Uniqueness of the stationary distribution of a primitive chain.** A primitive stochastic matrix has at most one stationary distribution. In fact `π'` may be
 any stationary vector of total mass `1`, not necessarily nonnegative. -/
 theorem stationary_unique {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
     (hprim : P.IsPrimitive) {π π' : S → ℝ} (hπ0 : ∀ y, 0 ≤ π y) (hπ1 : ∑ y, π y = 1)
@@ -232,7 +232,7 @@ theorem stationary_unique {P : Matrix S S ℝ} (hP : P ∈ rowStochastic ℝ S)
   rw [hconst, ← Finset.sum_mul, hπ1', one_mul] at hlim
   exact tendsto_nhds_unique hlim tendsto_const_nhds
 
-/-- The stationary distribution of a primitive stochastic matrix has full support. -/
+/-- **Stationary distribution of a primitive chain has full support.** The stationary distribution of a primitive stochastic matrix has full support. -/
 theorem stationary_pos {P : Matrix S S ℝ} (hprim : P.IsPrimitive) {π : S → ℝ}
     (hπ0 : ∀ y, 0 ≤ π y) (hπ1 : ∑ y, π y = 1) (hstat : π ᵥ* P = π) (y : S) : 0 < π y := by
   obtain ⟨-, r, -, hpos⟩ := hprim

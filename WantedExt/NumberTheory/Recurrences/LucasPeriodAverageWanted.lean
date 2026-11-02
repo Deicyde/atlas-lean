@@ -573,7 +573,7 @@ public theorem_wanted lucasAllAveragesIntegral_of_dvd_q (params : LucasSequenceP
     (hp : params.p ≡ 1 [ZMOD n] ∨ (Even n ∧ params.p ≡ -1 [ZMOD n])) :
     lucasAllAveragesIntegral params n ∧ lucasAllAveragesIntegral params (m * n)
 
-/-- Theorem 2.13: for nondegenerate `U(a, b)` with `d = gcd(a, b) > 1` and
+/-- **Non-integer period average of a Lucas sequence when $\gcd(n, a, b) > 1$.** Theorem 2.13: for nondegenerate `U(a, b)` with `d = gcd(a, b) > 1` and
 `gcd(n, d) > 1`, `A_U(n)` is not an integer.
 
 Source: Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of

@@ -248,7 +248,7 @@ private theorem nnnorm_le_spectralRadius {M : Matrix ι ι ℂ} {k : ℂ} (hk : 
   le_iSup₂ (f := fun k (_ : k ∈ quasispectrum ℂ M) => (‖k‖₊ : ℝ≥0∞)) k
     (spectrum_subset_quasispectrum ℂ _ hk)
 
-/-- The **basic reproduction number** `R₀ = ρ(F V⁻¹)`: the spectral radius (largest modulus of
+/-- **Basic reproduction number of the next-generation matrix.** The **basic reproduction number** `R₀ = ρ(F V⁻¹)`: the spectral radius (largest modulus of
 a complex eigenvalue) of the next-generation matrix `F V⁻¹` (van den Driessche–Watmough 2002,
 Eq. (4)). It is meaningful when `V` is invertible (for a nonsingular M-matrix it is). -/
 noncomputable def R0 (F V : Matrix ι ι ℝ) : ℝ :=
@@ -439,7 +439,7 @@ theorem exists_re_pos_iff_one_lt_R0 {F V : Matrix ι ι ℝ} (hF : ∀ i j, 0 �
         nlinarith
     exact absVec_ne_zero hx0 (eq_zero_of_le_mulVec hF hVε hHε hz hzle)
 
-/-- The complex eigenvalues of a block lower-triangular real matrix `[[A, 0], [C, D]]` are
+/-- **Eigenvalues of a block lower-triangular matrix.** The complex eigenvalues of a block lower-triangular real matrix `[[A, 0], [C, D]]` are
 those of `A` together with those of `D`. -/
 theorem mem_spectrum_fromBlocks_zero₁₂ {A : Matrix ι ι ℝ} {C : Matrix κ ι ℝ}
     {D : Matrix κ κ ℝ} {μ : ℂ} :
@@ -450,7 +450,7 @@ theorem mem_spectrum_fromBlocks_zero₁₂ {A : Matrix ι ι ℝ} {C : Matrix κ
     mem_spectrum_iff_isRoot_charpoly, mem_spectrum_iff_isRoot_charpoly]
   rfl
 
-/-- A block lower-triangular real matrix `[[A, 0], [C, D]]` is Hurwitz iff both diagonal
+/-- **Hurwitz criterion for block lower-triangular matrices.** A block lower-triangular real matrix `[[A, 0], [C, D]]` is Hurwitz iff both diagonal
 blocks are. -/
 theorem isHurwitz_fromBlocks_zero₁₂_iff {A : Matrix ι ι ℝ} {C : Matrix κ ι ℝ}
     {D : Matrix κ κ ℝ} : (fromBlocks A 0 C D).IsHurwitz ↔ A.IsHurwitz ∧ D.IsHurwitz := by

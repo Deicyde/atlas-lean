@@ -79,7 +79,7 @@ private theorem isAdicComplete_pi_of_fintype {A : Type*} [CommRing A] {I : Ideal
     exact Function.Bijective.piMap fun i => AdicCompletion.of_bijective I (M i)
   exact (Function.Bijective.of_comp_iff' (AdicCompletion.piEquivOfFintype I M).bijective _).1 hb
 
-/-- If `𝓞` is adically complete at `(p)` and `R` is finite free over `𝓞`,
+/-- **Finite free modules over adically complete rings are complete.** If `𝓞` is adically complete at `(p)` and `R` is finite free over `𝓞`,
 then `R` is adically complete at `(p)`. -/
 theorem IsAdicComplete.of_module_finite_free_span_natCast
     {𝓞 : Type u} [CommRing 𝓞] (p : ℕ) [IsAdicComplete (Ideal.span {(p : 𝓞)}) 𝓞]

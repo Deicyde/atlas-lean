@@ -70,25 +70,25 @@ open scoped _root_.InnerProductSpace InnerProduct
 
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
 
-/-- The normalized real expectation is Mathlib's canonical Rayleigh quotient.
+/-- **Normalized expectation value of an observable.** The normalized real expectation is Mathlib's canonical Rayleigh quotient.
 For a nonzero state and self-adjoint observable it is the physical expectation.
 At zero this total definition is zero; zero is not a physical state. -/
 noncomputable def meanValue (A : E →L[ℂ] E) (x : E) : ℝ :=
   A.rayleighQuotient x
 
 omit [CompleteSpace E] in
-/-- On a unit vector, normalized expectation equals the original quadratic mean. -/
+/-- **Normalized expectation on a unit vector.** On a unit vector, normalized expectation equals the original quadratic mean. -/
 theorem meanValue_of_norm_eq_one (A : E →L[ℂ] E) {x : E} (hx : ‖x‖ = 1) :
     meanValue A x = (⟪A x, x⟫_ℂ).re := by
   simp [meanValue, ContinuousLinearMap.rayleighQuotient,
     ContinuousLinearMap.reApplyInnerSelf_apply, hx]
 
-/-- The centered vector subtracts the normalized real expectation times the state.
+/-- **Centered state vector of an observable.** The centered vector subtracts the normalized real expectation times the state.
 Its squared norm divided by the squared state norm is `variance`. -/
 noncomputable def centered (A : E →L[ℂ] E) (x : E) : E :=
   A x - (meanValue A x : ℂ) • x
 
-/-- Normalized variance is the centered squared norm divided by the squared state norm.
+/-- **Normalized variance of an observable.** Normalized variance is the centered squared norm divided by the squared state norm.
 For a nonzero state and self-adjoint observable it is the physical variance.
 The totalized value at zero is zero. Off the unit sphere this corrects the raw
 quadratic quantities; agreement with the original formulas is asserted only for unit states. -/
@@ -96,7 +96,7 @@ noncomputable def variance (A : E →L[ℂ] E) (x : E) : ℝ :=
   ‖centered A x‖ ^ 2 / ‖x‖ ^ 2
 
 omit [CompleteSpace E] in
-/-- On the unit sphere, normalized variance is the centered squared norm. -/
+/-- **Normalized variance on the unit sphere.** On the unit sphere, normalized variance is the centered squared norm. -/
 theorem variance_of_norm_eq_one (A : E →L[ℂ] E) {x : E} (hx : ‖x‖ = 1) :
     variance A x = ‖centered A x‖ ^ 2 := by
   simp [variance, hx]
@@ -106,7 +106,7 @@ theorem variance_nonneg (A : E →L[ℂ] E) (x : E) : 0 ≤ variance A x :=
   div_nonneg (sq_nonneg _) (sq_nonneg _)
 
 omit [CompleteSpace E] in
-/-- Nonzero scalar multiplication does not change normalized variance. -/
+/-- **Normalized variance is invariant under nonzero scaling.** Nonzero scalar multiplication does not change normalized variance. -/
 theorem variance_smul (A : E →L[ℂ] E) (x : E) {c : ℂ} (hc : c ≠ 0) :
     variance A (c • x) = variance A x := by
   have hcenter : centered A (c • x) = c • centered A x := by
@@ -116,7 +116,7 @@ theorem variance_smul (A : E →L[ℂ] E) (x : E) {c : ℂ} (hc : c ≠ 0) :
   rw [variance, variance, hcenter, norm_smul, norm_smul, mul_pow, mul_pow]
   exact mul_div_mul_left _ _ (pow_ne_zero 2 (norm_ne_zero_iff.mpr hc))
 
-/-- For a self-adjoint operator, the expectation inner product is the normalized
+/-- **Expectation inner product of a self-adjoint operator.** For a self-adjoint operator, the expectation inner product is the normalized
 mean multiplied by the squared state norm. The norm factor is required off the unit sphere. -/
 theorem inner_self_of_isSelfAdjoint {A : E →L[ℂ] E} (hA : IsSelfAdjoint A) (x : E) :
     ⟪A x, x⟫_ℂ = ((meanValue A x * ‖x‖ ^ 2 : ℝ) : ℂ) := by
@@ -129,12 +129,12 @@ theorem inner_self_of_isSelfAdjoint {A : E →L[ℂ] E} (hA : IsSelfAdjoint A) (
   · simp [meanValue, ContinuousLinearMap.rayleighQuotient,
       div_mul_cancel₀ _ (pow_ne_zero 2 (norm_ne_zero_iff.mpr hx))]
 
-/-- The flipped expectation has the same necessary squared-state-norm factor. -/
+/-- **Flipped expectation inner product of a self-adjoint operator.** The flipped expectation has the same necessary squared-state-norm factor. -/
 theorem inner_right_of_isSelfAdjoint {A : E →L[ℂ] E} (hA : IsSelfAdjoint A) (x : E) :
     ⟪x, A x⟫_ℂ = ((meanValue A x * ‖x‖ ^ 2 : ℝ) : ℂ) := by
   rw [← hA.isSymmetric.apply_clm x x, inner_self_of_isSelfAdjoint hA x]
 
-/-- The inner product of two centered vectors, for self-adjoint
+/-- **Inner product of two centered vectors.** The inner product of two centered vectors, for self-adjoint
 operators at a unit vector: the uncentered inner product minus the
 product of the mean values. -/
 theorem inner_centered {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelfAdjoint B)
@@ -148,7 +148,7 @@ theorem inner_centered {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelf
   simp [Complex.conj_ofReal]
   ring
 
-/-- The commutator expectation is the skew part of the inner product of
+/-- **Commutator expectation as the skew part of the centered inner product.** The commutator expectation is the skew part of the inner product of
 the centered vectors. -/
 theorem commutator_inner {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelfAdjoint B)
     {x : E} (hx : ‖x‖ = 1) :
@@ -160,7 +160,7 @@ theorem commutator_inner {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSe
     inner_centered hB hA hx, inner_centered hA hB hx]
   ring
 
-/-- The commutator expectation of two self-adjoint operators is purely
+/-- **Commutator expectation of self-adjoint operators is purely imaginary.** The commutator expectation of two self-adjoint operators is purely
 imaginary: its real part vanishes. -/
 theorem commutator_inner_re {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelfAdjoint B)
     {x : E} (hx : ‖x‖ = 1) :
@@ -172,7 +172,7 @@ theorem commutator_inner_re {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : I
   rw [h]
   exact sub_self _
 
-/-- The squared norm of the commutator expectation is four times the
+/-- **Squared norm of the commutator expectation.** The squared norm of the commutator expectation is four times the
 squared imaginary part of the centered inner product. -/
 theorem norm_sq_commutator_inner {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A)
     (hB : IsSelfAdjoint B) {x : E} (hx : ‖x‖ = 1) :
@@ -186,7 +186,7 @@ theorem norm_sq_commutator_inner {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A)
     Complex.conj_im]
   ring
 
-/-- The commutator expectation has norm twice the absolute imaginary
+/-- **Norm of the commutator expectation.** The commutator expectation has norm twice the absolute imaginary
 part of the centered inner product. -/
 theorem norm_commutator_inner_eq {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A)
     (hB : IsSelfAdjoint B) {x : E} (hx : ‖x‖ = 1) :
@@ -199,7 +199,7 @@ theorem norm_commutator_inner_eq {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A)
     norm_num
   exact (sq_eq_sq₀ (norm_nonneg _) (by positivity)).mp (hsq.trans h2.symm)
 
-/-- The **Robertson–Schrödinger uncertainty principle**: the product of
+/-- **Robertson–Schrödinger uncertainty principle.** The **Robertson–Schrödinger uncertainty principle**: the product of
 the variances is at least the squared covariance plus a quarter of the
 squared norm of the commutator expectation. -/
 theorem schrodinger {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelfAdjoint B)
@@ -232,7 +232,7 @@ theorem robertson {A B : E →L[ℂ] E} (hA : IsSelfAdjoint A) (hB : IsSelfAdjoi
   linarith
 
 omit [CompleteSpace E] in
-/-- The commutator of commuting operators vanishes. -/
+/-- **Commutator of commuting operators vanishes.** The commutator of commuting operators vanishes. -/
 theorem commutator_eq_zero_of_commute {A B : E →L[ℂ] E} (h : Commute A B) :
     A ∘L B - B ∘L A = 0 := by
   rw [sub_eq_zero]
@@ -243,7 +243,7 @@ theorem commutator_eq_zero_of_commute {A B : E →L[ℂ] E} (h : Commute A B) :
   rw [ContinuousLinearMap.comp_apply, ContinuousLinearMap.comp_apply]
   exact h2
 
-/-- The variance is the second moment minus the squared mean. -/
+/-- **Variance as second moment minus squared mean.** The variance is the second moment minus the squared mean. -/
 theorem variance_eq {A : E →L[ℂ] E} (hA : IsSelfAdjoint A) {x : E} (hx : ‖x‖ = 1) :
     variance A x = (⟪(A * A) x, x⟫_ℂ).re - (meanValue A x) ^ 2 := by
   have hAA : ⟪A x, A x⟫_ℂ = ⟪(A * A) x, x⟫_ℂ := by

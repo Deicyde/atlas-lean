@@ -135,7 +135,7 @@ public noncomputable def MultigradedFreeResolution.baseChangedDegreeInclusion
       intro x
       simp)
 
-/-- Each component of the degree inclusion is injective. Source:
+/-- **Injectivity of the base-changed degree inclusion.** Each component of the degree inclusion is injective. Source:
 Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of
 Integer Sequences 23 (2020), lines 864–867,
 `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`.
@@ -156,7 +156,7 @@ public theorem
         targetGraded resolution ι res α).f i)) :=
   Submodule.injective_subtype _
 
-/-- Each component of the degree inclusion has range exactly the
+/-- **Range of the base-changed degree inclusion.** Each component of the degree inclusion has range exactly the
 degree piece `baseChangedDegreePiece`. Source: Benjamin Braun and
 Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23
 (2020), lines 864–867,

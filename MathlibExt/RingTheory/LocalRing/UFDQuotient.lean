@@ -44,7 +44,7 @@ every prime ideal is principal by Nakayama, via the chosen generator.
 
 @[expose] public section
 
-/-- A Noetherian local domain is a unique factorization monoid when
+/-- **Unique factorization from a principal ideal ring quotient.** A Noetherian local domain is a unique factorization monoid when
 quotienting by a principal prime ideal gives a principal ideal ring. -/
 theorem IsLocalRing.uniqueFactorizationMonoid_of_isPrincipalIdealRing_quotient
     {A : Type*} [CommRing A] [IsDomain A] [IsNoetherianRing A] [IsLocalRing A] (t : A)

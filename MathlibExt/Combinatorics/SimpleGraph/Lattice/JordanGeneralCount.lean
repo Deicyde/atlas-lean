@@ -83,7 +83,7 @@ theorem jgc_tc_deleteLeaf (P : PlanarZ2Subgraph) (K : SimpleGraph P.V) (hKle : K
   have hkeep := jic_tc_sup_edge_keep P K' hxz hlat hiso
   rw [hKeq, hkeep]
 
-/-- `K` reduces to the empty graph by repeatedly deleting a leaf edge or, when `K` is a union of
+/-- **Cactus graph, defined by peeling leaves and cycles.** `K` reduces to the empty graph by repeatedly deleting a leaf edge or, when `K` is a union of
 cycles, one of its cycles. -/
 inductive jgc_IsCactus {V : Type*} : SimpleGraph V → Prop where
   | bot : jgc_IsCactus (⊥ : SimpleGraph V)
@@ -231,21 +231,21 @@ theorem jgc_isCactus_of_isAcyclic {V : Type*} [Finite V]
         exact Set.ncard_lt_ncard hssub (Set.toFinite _)
       exact jgc_IsCactus.leaf hadjuz huniq (ih _ (by omega) _ hK'acyc rfl)
 
-/-- The corners of the unit square together with the site `(-1, 0)`. -/
+/-- **Unit square corners with a pendant site.** The corners of the unit square together with the site `(-1, 0)`. -/
 def jgc_pend_emb (i : Fin 5) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![1, 1] | 3 => ![0, 1] | 4 => ![-1, 0]
 
 theorem jgc_pend_emb_inj : Function.Injective jgc_pend_emb := by decide +kernel
 
-/-- Adjacency of the 4-cycle on `0, 1, 2, 3` with the pendant edge `{0, 4}`, as a Boolean
+/-- **Adjacency relation of a 4-cycle with a pendant edge.** Adjacency of the 4-cycle on `0, 1, 2, 3` with the pendant edge `{0, 4}`, as a Boolean
 relation. -/
 def jgc_pend_rel (i j : Fin 5) : Bool :=
   (i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||
   (i == 2 && j == 3) || (i == 3 && j == 2) || (i == 3 && j == 0) || (i == 0 && j == 3) ||
   (i == 0 && j == 4) || (i == 4 && j == 0)
 
-/-- The 4-cycle with a pendant edge, on `Fin 5`. -/
+/-- **4-cycle with a pendant edge.** The 4-cycle with a pendant edge, on `Fin 5`. -/
 def jgc_pend_G : SimpleGraph (Fin 5) where
   Adj i j := jgc_pend_rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -260,7 +260,7 @@ theorem jgc_pend_isSub : ∀ ⦃i j : Fin 5⦄, jgc_pend_G.Adj i j →
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jgc_pend_rel, jgc_pend_emb]
 
-/-- The unit square with a pendant edge as a `PlanarZ2Subgraph`. -/
+/-- **Unit square with a pendant edge as a planar lattice subgraph.** The unit square with a pendant edge as a `PlanarZ2Subgraph`. -/
 noncomputable def jgc_pend_P : PlanarZ2Subgraph where
   V := Fin 5
   finV := inferInstance
@@ -269,7 +269,7 @@ noncomputable def jgc_pend_P : PlanarZ2Subgraph where
   emb := ⟨jgc_pend_emb, jgc_pend_emb_inj⟩
   isSub := jgc_pend_isSub
 
-/-- The 4-cycle on `0, 1, 2, 3` inside `Fin 5`. -/
+/-- **4-cycle core of the pendant example.** The 4-cycle on `0, 1, 2, 3` inside `Fin 5`. -/
 def jgc_pend_core : SimpleGraph (Fin 5) where
   Adj i j :=
     ((i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||

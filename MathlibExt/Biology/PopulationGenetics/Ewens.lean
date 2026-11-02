@@ -72,7 +72,7 @@ open Finset
 
 namespace MathlibExt.Biology.PopulationGenetics.Ewens
 
-/-- The **Ewens sampling formula**: the probability, under the neutral infinite-alleles model
+/-- **Ewens sampling formula.** The **Ewens sampling formula**: the probability, under the neutral infinite-alleles model
 with scaled mutation rate `θ = 4Nu`, that a sample of `n` genes has allelic partition `π`
 (`π.parts.count j` alleles carried by exactly `j` genes each):
 `n! * (∏ j, (θ / j) ^ (a j) / (a j)!) / θ^{(n)}` (Ewens 1972), for `θ > 0`. -/
@@ -275,7 +275,7 @@ theorem sum_ewensProb (θ : ℝ) (hθ : 0 < θ) (n : ℕ) :
   simp only [weightedSum, mul_one] at hs
   rw [hs, div_self hpos]
 
-/-- The Ewens sampling formula is nonnegative for `θ > 0`; with `sum_ewensProb` it is a
+/-- **Nonnegativity of the Ewens sampling formula.** The Ewens sampling formula is nonnegative for `θ > 0`; with `sum_ewensProb` it is a
 probability distribution on the partitions of `n`. -/
 theorem ewensProb_nonneg {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (π : n.Partition) :
     0 ≤ ewensProb θ π := by
@@ -300,7 +300,7 @@ theorem sum_ewensProb_mul_card_parts (θ : ℝ) (hθ : 0 < θ) (n : ℕ) :
     (ascPochhammer ℝ n).eval θ = _
   rw [(weighted_totals θ hθ n).2, mul_div_cancel_left₀ _ hpos]
 
-/-- One step of **Hoppe's urn** on allelic partitions (Hoppe 1984): from a partition `π` of
+/-- **One step of Hoppe's urn.** One step of **Hoppe's urn** on allelic partitions (Hoppe 1984): from a partition `π` of
 `k`, the next gene carries a new allele with probability `θ / (θ + k)` (target parts
 `1 ::ₘ π.parts`), and copies an allele carried by `j` genes with probability
 `j * a j / (θ + k)`, where `a j = π.parts.count j` (target parts
@@ -311,13 +311,13 @@ def hoppeStep (θ : ℝ) {k : ℕ} (π : k.Partition) (π' : (k + 1).Partition) 
       if π'.parts = (j + 1) ::ₘ π.parts.erase j then
         (j * π.parts.count j : ℝ) / (θ + k) else 0
 
-/-- The law of the allelic partition after `n` draws from Hoppe's urn, started from the empty
+/-- **Law of the allelic partition from Hoppe's urn.** The law of the allelic partition after `n` draws from Hoppe's urn, started from the empty
 sample: `hoppeLaw θ (n + 1) π' = ∑ π, hoppeLaw θ n π * hoppeStep θ π π'`. -/
 def hoppeLaw (θ : ℝ) : (n : ℕ) → n.Partition → ℝ
   | 0, _ => 1
   | n + 1, π' => ∑ π : n.Partition, hoppeLaw θ n π * hoppeStep θ π π'
 
-/-- Hoppe-urn transition probabilities are nonnegative. -/
+/-- **Hoppe urn transition probabilities are nonnegative.** Hoppe-urn transition probabilities are nonnegative. -/
 theorem hoppeStep_nonneg {θ : ℝ} (hθ : 0 < θ) {k : ℕ} (π : k.Partition)
     (π' : (k + 1).Partition) : 0 ≤ hoppeStep θ π π' := by
   unfold hoppeStep
@@ -358,7 +358,7 @@ private theorem sum_size_count {k : ℕ} (π : k.Partition) :
     simpa [nsmul_eq_mul] using (Finset.sum_multiset_count π.parts).symm.trans π.parts_sum
   exact_mod_cast (by simpa only [Nat.mul_comm] using hs)
 
-/-- The Hoppe-urn transition is stochastic: from every partition of `k` the probabilities of
+/-- **Hoppe urn transition is stochastic.** The Hoppe-urn transition is stochastic: from every partition of `k` the probabilities of
 the partitions of `k + 1` sum to one. -/
 theorem sum_hoppeStep {θ : ℝ} (hθ : 0 < θ) {k : ℕ} (π : k.Partition) :
     ∑ π' : (k + 1).Partition, hoppeStep θ π π' = 1 := by
@@ -588,7 +588,7 @@ theorem hoppeLaw_eq_ewensProb {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (π : n.Partit
     have hd : θ + (n : ℝ) ≠ 0 := by positivity
     field_simp
 
-/-- The law of Hoppe's urn after `n` draws is nonnegative for `θ > 0`. -/
+/-- **Nonnegativity of the Hoppe urn law.** The law of Hoppe's urn after `n` draws is nonnegative for `θ > 0`. -/
 theorem hoppeLaw_nonneg {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (π : n.Partition) :
     0 ≤ hoppeLaw θ n π := by
   rw [hoppeLaw_eq_ewensProb hθ]

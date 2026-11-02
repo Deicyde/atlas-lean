@@ -43,7 +43,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- Boundary conditions for a bond model on a finite graph. -/
+/-- **Boundary conditions for a bond model.** Boundary conditions for a bond model on a finite graph. -/
 inductive BoundaryCondition
   | free
   | wired
@@ -66,7 +66,7 @@ end BoundaryCondition
 variable {V : Type*} [Fintype V] [DecidableEq V]
   (G : SimpleGraph V) [DecidableRel G.Adj]
 
-/-- The edge `{x, y}` of `G` is open in the configuration `ω`. -/
+/-- **Open edge in a bond configuration.** The edge `{x, y}` of `G` is open in the configuration `ω`. -/
 def IsOpen (ω : Sym2 V → Bool) (x y : V) : Prop :=
   G.Adj x y ∧ ω s(x, y) = true
 
@@ -83,7 +83,7 @@ theorem isOpen_irrefl {ω : Sym2 V → Bool} (x : V) : ¬ IsOpen G ω x x :=
 instance (ω : Sym2 V → Bool) : DecidableRel (IsOpen G ω) :=
   fun x y => inferInstanceAs (Decidable (G.Adj x y ∧ ω s(x, y) = true))
 
-/-- The spanning subgraph of `G` consisting of the open edges of `ω`. -/
+/-- **Open subgraph of a bond configuration.** The spanning subgraph of `G` consisting of the open edges of `ω`. -/
 def openGraph (ω : Sym2 V → Bool) : SimpleGraph V where
   Adj x y := IsOpen G ω x y
   symm := ⟨fun _ _ h => isOpen_symm G h⟩
@@ -99,7 +99,7 @@ instance (ω : Sym2 V → Bool) : DecidableRel (openGraph G ω).Adj :=
 
 theorem openGraph_le (ω : Sym2 V → Bool) : openGraph G ω ≤ G := fun _ _ h => h.1
 
-/-- The number of open clusters (connected components of the open graph) with free boundary
+/-- **Number of open clusters with free boundary conditions.** The number of open clusters (connected components of the open graph) with free boundary
 conditions. -/
 noncomputable def numClustersFree (ω : Sym2 V → Bool) : ℕ :=
   Nat.card (openGraph G ω).ConnectedComponent
@@ -110,14 +110,14 @@ theorem numClustersFree_eq_card (ω : Sym2 V → Bool) :
 
 variable (bdry : V → Prop) [DecidablePred bdry]
 
-/-- Both vertices lie on the boundary. -/
+/-- **Boundary wiring relation.** Both vertices lie on the boundary. -/
 def wireRel (x y : V) : Prop := bdry x ∧ bdry y
 
 /-- Decidability of `wireRel`. -/
 instance : DecidableRel (wireRel bdry) :=
   fun x y => inferInstanceAs (Decidable (bdry x ∧ bdry y))
 
-/-- The complete graph on the boundary vertices, used to wire the boundary together. -/
+/-- **Complete graph on the boundary vertices.** The complete graph on the boundary vertices, used to wire the boundary together. -/
 def boundaryCliqueGraph : SimpleGraph V := SimpleGraph.fromRel (wireRel bdry)
 
 @[simp]
@@ -133,7 +133,7 @@ theorem boundaryCliqueGraph_adj (x y : V) :
 instance : DecidableRel (boundaryCliqueGraph bdry).Adj :=
   fun x y => inferInstanceAs (Decidable ((SimpleGraph.fromRel (wireRel bdry)).Adj x y))
 
-/-- The wired open graph: the open edges of `ω` together with an edge between every two distinct
+/-- **Wired open graph.** The wired open graph: the open edges of `ω` together with an edge between every two distinct
 boundary vertices. -/
 def wiredGraph (ω : Sym2 V → Bool) : SimpleGraph V :=
   openGraph G ω ⊔ boundaryCliqueGraph bdry
@@ -157,7 +157,7 @@ theorem wiredGraph_adj_of_bdry {ω : Sym2 V → Bool} {x y : V}
   rw [wiredGraph_adj]
   exact Or.inr ⟨hne, hx, hy⟩
 
-/-- The number of open clusters with wired boundary conditions: all boundary vertices lie in a
+/-- **Number of open clusters with wired boundary conditions.** The number of open clusters with wired boundary conditions: all boundary vertices lie in a
 single cluster. -/
 noncomputable def numClustersWired (ω : Sym2 V → Bool) : ℕ :=
   Nat.card (wiredGraph G bdry ω).ConnectedComponent
@@ -171,7 +171,7 @@ theorem numClustersWired_le_numClustersFree (ω : Sym2 V → Bool) :
     numClustersWired G bdry ω ≤ numClustersFree G ω :=
   SimpleGraph.ConnectedComponent.card_le_card_of_le (openGraph_le_wiredGraph G bdry ω)
 
-/-- The number of open clusters under a boundary condition. The periodic case uses the free count:
+/-- **Number of open clusters under a boundary condition.** The number of open clusters under a boundary condition. The periodic case uses the free count:
 the periodic identification is built into the graph `G`. -/
 noncomputable def numClusters (bc : BoundaryCondition) (ω : Sym2 V → Bool) : ℕ :=
   match bc with

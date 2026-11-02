@@ -80,7 +80,7 @@ open scoped Topology ENNReal NNReal
 
 namespace MathlibExt.Probability.RegularVariation
 
-/-- A regularly varying function has the expected ratio limit. -/
+/-- **Ratio limit of a regularly varying function.** A regularly varying function has the expected ratio limit. -/
 theorem IsRegularlyVarying.ratio_tendsto {T : ℝ → ℝ} {ρ : ℝ}
     (hT : IsRegularlyVarying T ρ) {c : ℝ} (hc : 0 < c) :
     Tendsto (fun x => T (c * x) / T x) atTop (𝓝 (c ^ ρ)) := by

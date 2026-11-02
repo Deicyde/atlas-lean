@@ -55,10 +55,10 @@ namespace Transport
 
 variable {P : Type*} [Fintype P] [DecidableEq P] [PartialOrder P]
 
-/-- `D` is a down-set of `P`: `x ≤ y` and `y ∈ D` imply `x ∈ D`. -/
+/-- **Down-set of a partial order.** `D` is a down-set of `P`: `x ≤ y` and `y ∈ D` imply `x ∈ D`. -/
 def IsDown (D : Finset P) : Prop := ∀ x y, x ≤ y → y ∈ D → x ∈ D
 
-/-- The ordered pairs `(x, y)` with `x ≤ y`; couplings supported on the order are vectors indexed
+/-- **Ordered pairs of a partial order.** The ordered pairs `(x, y)` with `x ≤ y`; couplings supported on the order are vectors indexed
 by `OrderPairs P`. -/
 abbrev OrderPairs (P : Type*) [PartialOrder P] := {p : P × P // p.1 ≤ p.2}
 
@@ -215,7 +215,7 @@ private theorem mass_down_dom [Finite E] (μ ν : Measure (ConfigSpace E))
   rw [hsplit μ, hsplit ν] at hle
   linarith
 
-/-- The measure on pairs of configurations that puts mass `c q` on each ordered pair `q`. -/
+/-- **Measure on ordered pairs from a mass vector.** The measure on pairs of configurations that puts mass `c q` on each ordered pair `q`. -/
 noncomputable def kappaOfVec
     (c : {p : ConfigSpace E × ConfigSpace E // p.1 ≤ p.2} → ℝ) :
     Measure (ConfigSpace E × ConfigSpace E) :=

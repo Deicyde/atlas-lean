@@ -51,7 +51,7 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- The event `{0 ↔ ℤ^d \ Λ_{n-1}}` that the origin is joined by an open path to a site outside
+/-- **One-arm event from the origin.** The event `{0 ↔ ℤ^d \ Λ_{n-1}}` that the origin is joined by an open path to a site outside
 `Λ_{n-1}`. -/
 def crossingEvent (d n : ℕ) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | ∃ v, Connected d ω (origin d) v ∧ v ∉ box d (n - 1)}
@@ -67,7 +67,7 @@ theorem crossingEvent_antitone (m n : ℕ) (hmn : m ≤ n) :
   obtain ⟨v, hconn, hv⟩ := hω
   exact ⟨v, hconn, fun hvm => hv (box_mono d (by omega) hvm)⟩
 
-/-- The one-arm probability `ℙ_p(0 ↔ ℤ^d \ Λ_{n-1})`. -/
+/-- **One-arm probability.** The one-arm probability `ℙ_p(0 ↔ ℤ^d \ Λ_{n-1})`. -/
 noncomputable def crossProb (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) : ℝ :=
   (bernoulliProductMeasure (E := Sym2 (Site d)) p hp).real (crossingEvent d n)
 
@@ -133,7 +133,7 @@ theorem step_with_pos_ratio {f : ℕ → ℝ} {r₀ : ℝ} (hfnn : ∀ k, 0 ≤ 
     _ ≤ max r₀ (1 / 2) * f k :=
         mul_le_mul_of_nonneg_right (le_max_left _ _) (hfnn k)
 
-/-- If `φ_p(S) < 1` and `crossProb((k + 1)L) ≤ φ_p(S) · crossProb(kL)` for all `k`, then
+/-- **Exponential decay from a one-step recursion.** If `φ_p(S) < 1` and `crossProb((k + 1)L) ≤ φ_p(S) · crossProb(kL)` for all `k`, then
 `crossProb d p n ≤ C e^{-cn}` for some `c, C > 0`. -/
 theorem subcritical_decay (p : ℝ≥0) (hp : p ≤ 1) (S : Finset (Site d))
     (_hS0 : origin d ∈ S) (hphi : phi d p hp S < 1)

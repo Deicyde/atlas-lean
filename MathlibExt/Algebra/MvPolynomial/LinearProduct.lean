@@ -31,7 +31,7 @@ set_option autoImplicit false
 
 namespace MvPolynomial
 
-/-- The coefficient of `p * q`, when `p` is homogeneous of degree one, is the
+/-- **Coefficients of a product with a homogeneous linear polynomial.** The coefficient of `p * q`, when `p` is homogeneous of degree one, is the
 sum obtained by removing one occurrence of each variable in the monomial. -/
 public theorem IsHomogeneous.coeff_mul_eq_sum_support {σ R : Type*} [CommSemiring R]
     {p : MvPolynomial σ R} (hp : p.IsHomogeneous 1) (q : MvPolynomial σ R)

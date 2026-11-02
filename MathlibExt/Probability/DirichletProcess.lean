@@ -120,21 +120,21 @@ variable {Ω X : Type*} [MeasurableSpace Ω] [MeasurableSpace X]
 
 /-! ### Deterministic stick breaking -/
 
-/-- The stick left after breaking off the first `k` pieces at proportions `b`:
+/-- **Leftover stick in stick breaking.** The stick left after breaking off the first `k` pieces at proportions `b`:
 `∏_{j<k} (1 - bⱼ)`. -/
 def stickRemainder (b : ℕ → ℝ) (k : ℕ) : ℝ :=
   ∏ j ∈ range k, (1 - b j)
 
-/-- The `k`-th piece of a stick broken at proportions `b`: `bₖ ∏_{j<k} (1 - bⱼ)`. -/
+/-- **Stick-breaking weights.** The `k`-th piece of a stick broken at proportions `b`: `bₖ ∏_{j<k} (1 - bⱼ)`. -/
 def stickWeight (b : ℕ → ℝ) (k : ℕ) : ℝ :=
   b k * stickRemainder b k
 
-/-- The discrete measure `∑ₖ πₖ δ_{θₖ}` with the stick-breaking weights `πₖ = stickWeight b k`
+/-- **Stick-breaking measure.** The discrete measure `∑ₖ πₖ δ_{θₖ}` with the stick-breaking weights `πₖ = stickWeight b k`
 (negative weights, which do not occur for proportions in `[0, 1]`, are read as `0`). -/
 noncomputable def stickBreakingMeasure (b : ℕ → ℝ) (θ : ℕ → X) : Measure X :=
   Measure.sum fun k ↦ ENNReal.ofReal (stickWeight b k) • Measure.dirac (θ k)
 
-/-- The first `n` pieces and the leftover stick make up the whole stick. Holds for all real
+/-- **Stick-breaking pieces and leftover make up the whole stick.** The first `n` pieces and the leftover stick make up the whole stick. Holds for all real
 `b`. -/
 theorem sum_range_stickWeight_add_stickRemainder (b : ℕ → ℝ) (n : ℕ) :
     ∑ k ∈ range n, stickWeight b k + stickRemainder b n = 1 := by
@@ -144,18 +144,18 @@ theorem sum_range_stickWeight_add_stickRemainder (b : ℕ → ℝ) (n : ℕ) :
     rw [sum_range_succ, stickRemainder, prod_range_succ, ← stickRemainder, stickWeight]
     linear_combination ih
 
-/-- The leftover stick is in `[0, 1]` for proportions in `[0, 1]`. -/
+/-- **Leftover stick lies in the unit interval.** The leftover stick is in `[0, 1]` for proportions in `[0, 1]`. -/
 theorem stickRemainder_mem_Icc {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1) (k : ℕ) :
     stickRemainder b k ∈ Set.Icc 0 1 :=
   ⟨prod_nonneg fun j _ ↦ sub_nonneg.2 (hb j).2,
     prod_le_one₀ (fun j _ ↦ sub_nonneg.2 (hb j).2) fun j _ ↦ by linarith [(hb j).1]⟩
 
-/-- The pieces are nonnegative for proportions in `[0, 1]`. -/
+/-- **Nonnegativity of stick-breaking weights.** The pieces are nonnegative for proportions in `[0, 1]`. -/
 theorem stickWeight_nonneg {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1) (k : ℕ) :
     0 ≤ stickWeight b k :=
   mul_nonneg (hb k).1 (stickRemainder_mem_Icc hb k).1
 
-/-- The leftover stick shrinks for proportions in `[0, 1]`. -/
+/-- **Leftover stick is decreasing.** The leftover stick shrinks for proportions in `[0, 1]`. -/
 theorem antitone_stickRemainder {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1) :
     Antitone (stickRemainder b) := by
   refine antitone_nat_of_succ_le fun k ↦ ?_
@@ -163,7 +163,7 @@ theorem antitone_stickRemainder {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0
   have := (stickRemainder_mem_Icc hb k).1
   nlinarith [(hb k).1]
 
-/-- For proportions in `[0, 1]`, the pieces sum to `1` iff the leftover stick tends to `0`. -/
+/-- **Stick-breaking weights sum to one iff the leftover stick tends to zero.** For proportions in `[0, 1]`, the pieces sum to `1` iff the leftover stick tends to `0`. -/
 theorem hasSum_stickWeight_iff {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1) :
     HasSum (stickWeight b) 1 ↔ Tendsto (stickRemainder b) atTop (𝓝 0) := by
   rw [hasSum_iff_tendsto_nat_of_nonneg (stickWeight_nonneg hb)]
@@ -176,12 +176,12 @@ theorem hasSum_stickWeight_iff {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 
   · intro h1
     simpa using (tendsto_const_nhds (x := (1 : ℝ))).sub h1
 
-/-- The mass of a measurable set under the stick-breaking measure. -/
+/-- **Mass of a set under the stick-breaking measure.** The mass of a measurable set under the stick-breaking measure. -/
 theorem stickBreakingMeasure_apply (b : ℕ → ℝ) (θ : ℕ → X) {A : Set X} (hA : MeasurableSet A) :
     stickBreakingMeasure b θ A = ∑' k, ENNReal.ofReal (stickWeight b k) * A.indicator 1 (θ k) := by
   simp [stickBreakingMeasure, Measure.sum_apply _ hA, Measure.dirac_apply' _ hA]
 
-/-- The stick-breaking measure is a probability measure when the pieces sum to `1`. -/
+/-- **Stick-breaking measure is a probability measure.** The stick-breaking measure is a probability measure when the pieces sum to `1`. -/
 theorem isProbabilityMeasure_stickBreakingMeasure {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1)
     (h : HasSum (stickWeight b) 1) (θ : ℕ → X) :
     IsProbabilityMeasure (stickBreakingMeasure b θ) := by
@@ -191,7 +191,7 @@ theorem isProbabilityMeasure_stickBreakingMeasure {b : ℕ → ℝ} (hb : ∀ k,
   rw [← ENNReal.ofReal_tsum_of_nonneg (stickWeight_nonneg hb) h.summable, h.tsum_eq,
     ENNReal.ofReal_one]
 
-/-- The stick-breaking measure has total mass at most `1` for proportions in `[0, 1]`. -/
+/-- **Stick-breaking measure has total mass at most one.** The stick-breaking measure has total mass at most `1` for proportions in `[0, 1]`. -/
 theorem stickBreakingMeasure_apply_le_one {b : ℕ → ℝ} (hb : ∀ k, b k ∈ Set.Icc 0 1)
     (θ : ℕ → X) (A : Set X) : stickBreakingMeasure b θ A ≤ 1 := by
   refine (measure_mono (Set.subset_univ A)).trans ?_
@@ -202,7 +202,7 @@ theorem stickBreakingMeasure_apply_le_one {b : ℕ → ℝ} (hb : ∀ k, b k ∈
   refine ENNReal.ofReal_le_ofReal ?_
   linarith [sum_range_stickWeight_add_stickRemainder b n, (stickRemainder_mem_Icc hb n).1]
 
-/-- The stick-breaking measure depends measurably (for the Giry σ-algebra on `Measure X`) on
+/-- **Measurability of the stick-breaking measure in its parameters.** The stick-breaking measure depends measurably (for the Giry σ-algebra on `Measure X`) on
 the proportions and the atoms. -/
 theorem measurable_stickBreakingMeasure :
     Measurable fun p : (ℕ → ℝ) × (ℕ → X) ↦ stickBreakingMeasure p.1 p.2 := by
@@ -217,7 +217,7 @@ theorem measurable_stickBreakingMeasure :
 
 /-! ### Stick-breaking processes -/
 
-/-- A **stick-breaking process** on the probability space `(Ω, μ)`: independent proportions
+/-- **Stick-breaking process.** A **stick-breaking process** on the probability space `(Ω, μ)`: independent proportions
 `βₖ ∈ [0, 1]` (almost surely, with arbitrary laws), i.i.d. atoms `atom k` with law `H`, and the
 proportion sequence independent of the atom sequence. Ishwaran–James (2001) take
 `βₖ ∼ Beta(aₖ, bₖ)`; Sethuraman's Dirichlet process is `IsDirichlet`. -/
@@ -247,34 +247,34 @@ namespace StickBreakingProcess
 
 variable {μ : Measure Ω} (P : StickBreakingProcess μ X)
 
-/-- The random piece `πₖ = βₖ ∏_{j<k} (1 - βⱼ)`. -/
+/-- **Random stick-breaking weight.** The random piece `πₖ = βₖ ∏_{j<k} (1 - βⱼ)`. -/
 def weight (k : ℕ) (ω : Ω) : ℝ :=
   stickWeight (fun j ↦ P.β j ω) k
 
-/-- The random leftover stick `∏_{j<k} (1 - βⱼ)`. -/
+/-- **Random leftover stick.** The random leftover stick `∏_{j<k} (1 - βⱼ)`. -/
 def remainder (k : ℕ) (ω : Ω) : ℝ :=
   stickRemainder (fun j ↦ P.β j ω) k
 
-/-- The random measure `G = ∑ₖ πₖ δ_{θₖ}`. -/
+/-- **Random measure of a stick-breaking process.** The random measure `G = ∑ₖ πₖ δ_{θₖ}`. -/
 noncomputable def G (ω : Ω) : Measure X :=
   stickBreakingMeasure (fun j ↦ P.β j ω) (fun j ↦ P.atom j ω)
 
-/-- `∑ₖ E[πₖ²]`: given `G`, two independent draws from `G` pick the same piece `k` with
+/-- **Expected sum of squared stick-breaking weights.** `∑ₖ E[πₖ²]`: given `G`, two independent draws from `G` pick the same piece `k` with
 probability `∑ₖ πₖ²`. For an atomless base measure the atoms are almost surely distinct, so this
 is also the probability that the two draws coincide (not used here). -/
 noncomputable def sumSqWeight : ℝ≥0∞ :=
   ∑' k, ∫⁻ ω, ENNReal.ofReal (P.weight k ω) ^ 2 ∂μ
 
-/-- The pieces are measurable. -/
+/-- **Measurability of the random stick-breaking weights.** The pieces are measurable. -/
 theorem measurable_weight (k : ℕ) : Measurable (P.weight k) :=
   (P.measurable_β k).mul
     (Finset.measurable_prod _ fun j _ ↦ measurable_const.sub (P.measurable_β j))
 
-/-- Almost surely every proportion is in `[0, 1]`. -/
+/-- **Stick-breaking proportions lie in the unit interval almost surely.** Almost surely every proportion is in `[0, 1]`. -/
 theorem ae_forall_mem_Icc : ∀ᵐ ω ∂μ, ∀ k, P.β k ω ∈ Set.Icc 0 1 :=
   ae_all_iff.2 P.ae_mem_Icc
 
-/-- Almost surely every piece is in `[0, 1]`. -/
+/-- **Random stick-breaking weights lie in the unit interval almost surely.** Almost surely every piece is in `[0, 1]`. -/
 theorem ae_weight_mem_Icc : ∀ᵐ ω ∂μ, ∀ k, P.weight k ω ∈ Set.Icc 0 1 := by
   filter_upwards [P.ae_forall_mem_Icc] with ω h k
   have h1 := h k
@@ -283,12 +283,12 @@ theorem ae_weight_mem_Icc : ∀ᵐ ω ∂μ, ∀ k, P.weight k ω ∈ Set.Icc 0 
   change P.β k ω * stickRemainder (fun j ↦ P.β j ω) k ≤ 1
   nlinarith [h1.1, h1.2, h2.1, h2.2]
 
-/-- The random measure depends measurably on `ω`. -/
+/-- **Measurability of the random stick-breaking measure.** The random measure depends measurably on `ω`. -/
 theorem measurable_G : Measurable P.G :=
   measurable_stickBreakingMeasure.comp (Measurable.prodMk (measurable_pi_iff.2 P.measurable_β)
     (measurable_pi_iff.2 P.measurable_atom))
 
-/-- The base measure is a probability measure. -/
+/-- **Base measure of a stick-breaking process is a probability measure.** The base measure is a probability measure. -/
 theorem isProbabilityMeasure_H [IsProbabilityMeasure μ] : IsProbabilityMeasure P.H :=
   (P.hasLaw_atom 0).isProbabilityMeasure_iff.1 inferInstance
 
@@ -322,7 +322,7 @@ private theorem iIndepFun_comp_β (g : ℕ → ℝ → ℝ) (hg : ∀ j, Measura
     iIndepFun (fun j ω ↦ g j (P.β j ω)) μ :=
   P.iIndepFun_β.comp g hg
 
-/-- `E[∏_{j<k} (1 - βⱼ)] = ∏_{j<k} (1 - E[βⱼ])`. -/
+/-- **Expected leftover stick is the product of expected complements.** `E[∏_{j<k} (1 - βⱼ)] = ∏_{j<k} (1 - E[βⱼ])`. -/
 theorem integral_remainder [IsProbabilityMeasure μ] (k : ℕ) :
     μ[P.remainder k] = ∏ j ∈ range k, (1 - μ[P.β j]) := by
   have h := integral_prod_range (P.iIndepFun_comp_β (fun _ x ↦ 1 - x) fun _ ↦ by fun_prop)
@@ -372,7 +372,7 @@ theorem integral_weight_sq [IsProbabilityMeasure μ] (k : ℕ) :
   congr 1
   exact prod_congr rfl fun j hj ↦ by simp only [(mem_range.1 hj).ne, ite_false]
 
-/-- If the expected leftover stick `∏_{j<k} (1 - E[βⱼ])` tends to `0`, the pieces sum to `1`
+/-- **Random stick-breaking weights sum to one almost surely.** If the expected leftover stick `∏_{j<k} (1 - E[βⱼ])` tends to `0`, the pieces sum to `1`
 almost surely. -/
 theorem ae_hasSum_weight [IsProbabilityMeasure μ]
     (h : Tendsto (fun k ↦ ∏ j ∈ range k, (1 - μ[P.β j])) atTop (𝓝 0)) :
@@ -439,7 +439,7 @@ private theorem tsum_lintegral_weight [IsProbabilityMeasure μ]
   rw [← ENNReal.ofReal_tsum_of_nonneg (fun k ↦ (h2 k).1) h1.summable, h1.tsum_eq,
     ENNReal.ofReal_one]
 
-/-- When the pieces sum to `1` almost surely, `G` is almost surely a probability measure. -/
+/-- **Stick-breaking random measure is almost surely a probability measure.** When the pieces sum to `1` almost surely, `G` is almost surely a probability measure. -/
 theorem ae_isProbabilityMeasure_G_of_hasSum (h : ∀ᵐ ω ∂μ, HasSum (fun k ↦ P.weight k ω) 1) :
     ∀ᵐ ω ∂μ, IsProbabilityMeasure (P.G ω) := by
   filter_upwards [h, P.ae_forall_mem_Icc] with ω h1 h2
@@ -592,7 +592,7 @@ structure IsDirichlet (α : ℝ) : Prop where
 
 end StickBreakingProcess
 
-/-- The predictive law in the **Blackwell–MacQueen urn**: after observations `x₀, …, x_{n-1}`,
+/-- **Blackwell–MacQueen urn predictive law.** The predictive law in the **Blackwell–MacQueen urn**: after observations `x₀, …, x_{n-1}`,
 the next observation has law `(α H + ∑ᵢ δ_{xᵢ}) / (α + n)`. It is a probability measure for
 `α > 0` and a probability measure `H` (`isProbabilityMeasure_polyaUrnPredictive`); outside that
 domain the definition is total but meaningless (e.g. `α = n = 0` gives the zero measure). -/
@@ -601,7 +601,7 @@ noncomputable def polyaUrnPredictive (α : ℝ) (H : Measure X) {n : ℕ} (xs : 
   (ENNReal.ofReal (α + n))⁻¹ • (ENNReal.ofReal α • H + ∑ i, Measure.dirac (xs i))
 
 open scoped Classical in
-/-- The predictive probability of a measurable set: `(α H(A) + #{i | xᵢ ∈ A}) / (α + n)`. -/
+/-- **Predictive probability of a set in the Blackwell–MacQueen urn.** The predictive probability of a measurable set: `(α H(A) + #{i | xᵢ ∈ A}) / (α + n)`. -/
 theorem polyaUrnPredictive_apply (α : ℝ) (H : Measure X) {n : ℕ} (xs : Fin n → X) {A : Set X}
     (hA : MeasurableSet A) :
     polyaUrnPredictive α H xs A =
@@ -613,7 +613,7 @@ theorem polyaUrnPredictive_apply (α : ℝ) (H : Measure X) {n : ℕ} (xs : Fin 
   simp_rw [Measure.dirac_apply' _ hA, Set.indicator_apply, Pi.one_apply]
   rw [Finset.sum_boole]
 
-/-- The predictive law is a probability measure for `α > 0` and a probability measure `H`. -/
+/-- **Blackwell–MacQueen predictive law is a probability measure.** The predictive law is a probability measure for `α > 0` and a probability measure `H`. -/
 theorem isProbabilityMeasure_polyaUrnPredictive {α : ℝ} (hα : 0 < α) {H : Measure X}
     [IsProbabilityMeasure H] {n : ℕ} (xs : Fin n → X) :
     IsProbabilityMeasure (polyaUrnPredictive α H xs) := by
@@ -627,7 +627,7 @@ theorem isProbabilityMeasure_polyaUrnPredictive {α : ℝ} (hα : 0 < α) {H : M
 
 /-! ### Moments of `Beta(1, α)` -/
 
-/-- The Beta law is concentrated on `[0, 1]`. -/
+/-- **Beta law is concentrated on the unit interval.** The Beta law is concentrated on `[0, 1]`. -/
 theorem ae_mem_Icc_betaMeasure (a b : ℝ) : ∀ᵐ x ∂betaMeasure a b, x ∈ Set.Icc (0 : ℝ) 1 := by
   have hs : MeasurableSet {x : ℝ | ¬x ∈ Set.Icc (0 : ℝ) 1} := measurableSet_Icc.compl
   rw [ae_iff, betaMeasure, withDensity_apply _ hs]
@@ -645,7 +645,7 @@ private theorem integrable_betaMeasure_of_bound {a b : ℝ} (ha : 0 < a) (hb : 0
   filter_upwards [ae_mem_Icc_betaMeasure a b] with x hx
   exact (Real.norm_eq_abs _).trans_le (hC x hx)
 
-/-- `E[(1 - x)²] = α / (α + 2)` under `Beta(1, α)`. -/
+/-- **Second moment of $1 - X$ under $\mathrm{Beta}(1, \alpha)$.** `E[(1 - x)²] = α / (α + 2)` under `Beta(1, α)`. -/
 theorem integral_one_sub_sq_betaMeasure_one {α : ℝ} (hα : 0 < α) :
     ∫ x, (1 - x) ^ 2 ∂betaMeasure 1 α = α / (α + 2) := by
   have := isProbabilityMeasureBeta zero_lt_one hα
@@ -681,7 +681,7 @@ variable {μ : Measure Ω} {P : StickBreakingProcess μ X} {α : ℝ}
 
 namespace IsDirichlet
 
-/-- The proportions of a Dirichlet process have mean `1 / (1 + α)`. -/
+/-- **Mean proportion of a Dirichlet process.** The proportions of a Dirichlet process have mean `1 / (1 + α)`. -/
 theorem integral_β (hP : P.IsDirichlet α) (k : ℕ) : μ[P.β k] = 1 / (1 + α) := by
   rw [(hP.hasLaw_β k).integral_eq,
     integral_id_betaMeasure zero_lt_one hP.pos]
@@ -710,7 +710,7 @@ theorem ae_hasSum_weight [IsProbabilityMeasure μ] (hP : P.IsDirichlet α) :
   · rw [sub_lt_self_iff]
     positivity
 
-/-- A Dirichlet process is almost surely a probability measure. -/
+/-- **Dirichlet process is almost surely a probability measure.** A Dirichlet process is almost surely a probability measure. -/
 theorem ae_isProbabilityMeasure_G [IsProbabilityMeasure μ] (hP : P.IsDirichlet α) :
     ∀ᵐ ω ∂μ, IsProbabilityMeasure (P.G ω) := by
   filter_upwards [hP.ae_hasSum_weight, P.ae_forall_mem_Icc] with ω h1 h2
@@ -721,7 +721,7 @@ theorem lintegral_G_apply [IsProbabilityMeasure μ] (hP : P.IsDirichlet α) {A :
     (hA : MeasurableSet A) : ∫⁻ ω, P.G ω A ∂μ = P.H A :=
   P.lintegral_G_apply hP.ae_hasSum_weight hA
 
-/-- Two draws from a Dirichlet process pick the same piece with probability `1 / (1 + α)`:
+/-- **Probability that two Dirichlet process draws pick the same piece.** Two draws from a Dirichlet process pick the same piece with probability `1 / (1 + α)`:
 `∑ₖ E[πₖ²] = 1 / (1 + α)`. This is the probability that the second customer of the Chinese
 restaurant process with parameter `α` joins the first one's table. -/
 theorem sumSqWeight_eq [IsProbabilityMeasure μ] (hP : P.IsDirichlet α) :
@@ -854,7 +854,7 @@ end StickBreakingProcess
 
 /-! ### The canonical model and the law of the Dirichlet process -/
 
-/-- The product probability space `(ℕ → ℝ) × (ℕ → X)` carrying i.i.d. `Beta(1, α)` proportions
+/-- **Sethuraman's canonical probability space.** The product probability space `(ℕ → ℝ) × (ℕ → X)` carrying i.i.d. `Beta(1, α)` proportions
 and, independently, i.i.d. `H` atoms. -/
 noncomputable def sethuramanMeasure (α : ℝ) (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] : Measure ((ℕ → ℝ) × (ℕ → X)) :=
@@ -867,7 +867,7 @@ instance isProbabilityMeasure_sethuramanMeasure (α : ℝ) (hα : 0 < α) (H : M
   simp only [sethuramanMeasure]
   infer_instance
 
-/-- The proportion coordinate of the canonical space has law `⊗ₖ Beta(1, α)`. -/
+/-- **Law of the proportion coordinate of Sethuraman's space.** The proportion coordinate of the canonical space has law `⊗ₖ Beta(1, α)`. -/
 theorem measurePreserving_fst_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] :
     haveI := isProbabilityMeasureBeta zero_lt_one hα
@@ -876,14 +876,14 @@ theorem measurePreserving_fst_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : M
   have := isProbabilityMeasureBeta zero_lt_one hα
   exact ⟨measurable_fst, by simp [sethuramanMeasure]⟩
 
-/-- The atom coordinate of the canonical space has law `⊗ₖ H`. -/
+/-- **Law of the atom coordinate of Sethuraman's space.** The atom coordinate of the canonical space has law `⊗ₖ H`. -/
 theorem measurePreserving_snd_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] :
     MeasurePreserving Prod.snd (sethuramanMeasure α hα H) (Measure.infinitePi fun _ : ℕ ↦ H) := by
   have := isProbabilityMeasureBeta zero_lt_one hα
   exact ⟨measurable_snd, by simp [sethuramanMeasure]⟩
 
-/-- Each proportion of the canonical space has law `Beta(1, α)`. -/
+/-- **Law of each proportion in Sethuraman's space.** Each proportion of the canonical space has law `Beta(1, α)`. -/
 theorem hasLaw_fst_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] (k : ℕ) :
     HasLaw (fun p : (ℕ → ℝ) × (ℕ → X) ↦ p.1 k) (betaMeasure 1 α) (sethuramanMeasure α hα H) := by
@@ -891,7 +891,7 @@ theorem hasLaw_fst_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : Measure X)
   exact ((measurePreserving_eval_infinitePi _ k).comp
     (measurePreserving_fst_sethuramanMeasure hα H)).hasLaw
 
-/-- Each atom of the canonical space has law `H`. -/
+/-- **Law of each atom in Sethuraman's space.** Each atom of the canonical space has law `H`. -/
 theorem hasLaw_snd_sethuramanMeasure {α : ℝ} (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] (k : ℕ) :
     HasLaw (fun p : (ℕ → ℝ) × (ℕ → X) ↦ p.2 k) H (sethuramanMeasure α hα H) :=
@@ -924,12 +924,12 @@ noncomputable def sethuraman (α : ℝ) (hα : 0 < α) (H : Measure X) [IsProbab
       (measurePreserving_snd_sethuramanMeasure hα H).map_eq]
     exact Measure.map_id
 
-/-- The canonical model is a Dirichlet process. -/
+/-- **Sethuraman's canonical model is a Dirichlet process.** The canonical model is a Dirichlet process. -/
 theorem StickBreakingProcess.isDirichlet_sethuraman (α : ℝ) (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] : (sethuraman α hα H).IsDirichlet α :=
   ⟨hα, hasLaw_fst_sethuramanMeasure hα H⟩
 
-/-- The **Dirichlet process** `DP(α, H)` as a law on `Measure X`, defined as the law of
+/-- **Dirichlet process.** The **Dirichlet process** `DP(α, H)` as a law on `Measure X`, defined as the law of
 Sethuraman's (1994) stick-breaking measure with `Beta(1, α)` proportions and `H` atoms.
 Ferguson's (1973) definition by Dirichlet marginals is the wanted statement
 `map_dirichletProcess_partition`. -/

@@ -73,14 +73,14 @@ open scoped _root_.lp ENNReal BigOperators _root_.InnerProductSpace _root_.Inner
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- A single entry of a Schur matrix is bounded by the row bound. -/
+/-- **Entries of a Schur matrix are bounded by the row bound.** A single entry of a Schur matrix is bounded by the row bound. -/
 theorem schurInf_single_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (i j : ℕ) : ‖a i j‖ ≤ R := by
   have h := (hrow i).sum_le_tsum {j} (fun k _ => norm_nonneg _)
   simpa using le_trans h (hrow_le i)
 
-/-- Summability of a finite sum of summable sequences. -/
+/-- **Summability of a finite sum of summable sequences.** Summability of a finite sum of summable sequences. -/
 theorem summable_sum_finset {f : ℕ → ℕ → ℝ} (hf : ∀ i, Summable fun j => f i j)
     (s : Finset ℕ) : Summable fun j => ∑ i ∈ s, f i j := by
   induction s using Finset.induction with
@@ -92,7 +92,7 @@ theorem summable_sum_finset {f : ℕ → ℕ → ℝ} (hf : ∀ i, Summable fun 
       rw [hfun]
       exact (hf a).add ih
 
-/-- Swapping a `tsum` with a finite sum. -/
+/-- **Interchange of an infinite sum with a finite sum.** Swapping a `tsum` with a finite sum. -/
 theorem tsum_sum_finset {f : ℕ → ℕ → ℝ} (hf : ∀ i, Summable fun j => f i j)
     (s : Finset ℕ) : ∑' j, ∑ i ∈ s, f i j = ∑ i ∈ s, ∑' j, f i j := by
   induction s using Finset.induction with
@@ -107,12 +107,12 @@ theorem tsum_sum_finset {f : ℕ → ℕ → ℝ} (hf : ∀ i, Summable fun j =>
         _ = ∑ i ∈ insert a s, ∑' j, f i j :=
             (Finset.sum_insert (f := fun i => ∑' j, f i j) ha).symm
 
-/-- A single row bound: the row bound `R` is nonnegative. -/
+/-- **Row bound of a Schur matrix is nonnegative.** A single row bound: the row bound `R` is nonnegative. -/
 theorem schurInf_nonneg_of_row {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) : 0 ≤ R :=
   le_trans (tsum_nonneg fun _ => norm_nonneg _) (hrow_le 0)
 
-/-- Finite weighted Cauchy–Schwarz for one row. -/
+/-- **Weighted Cauchy–Schwarz for one row of a Schur matrix.** Finite weighted Cauchy–Schwarz for one row. -/
 theorem schurInf_finset_cs {a : ℕ → ℕ → 𝕜} (s : Finset ℕ) (x : ℕ → 𝕜) (i : ℕ) :
     (∑ j ∈ s, ‖a i j‖ * ‖x j‖) ^ 2 ≤
       (∑ j ∈ s, ‖a i j‖) * (∑ j ∈ s, ‖a i j‖ * ‖x j‖ ^ 2) := by
@@ -135,7 +135,7 @@ theorem schurInf_finset_cs {a : ℕ → ℕ → 𝕜} (s : Finset ℕ) (x : ℕ 
   rw [h1, h2, h3] at h
   exact h
 
-/-- Weighted summability for one row: `∑' j, ‖a i j‖ * ‖x j‖²` converges. -/
+/-- **Summability of the weighted row series in Schur's test.** Weighted summability for one row: `∑' j, ‖a i j‖ * ‖x j‖²` converges. -/
 theorem summable_schurInf_weighted {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
@@ -145,7 +145,7 @@ theorem summable_schurInf_weighted {a : ℕ → ℕ → 𝕜} {R : ℝ}
   · exact (MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.summable_norm_sq_of_memℓp
       x.2).mul_left R
 
-/-- A finite partial sum of the weighted series is bounded by `R * ‖x‖²`. -/
+/-- **Partial sums of the weighted row series in Schur's test.** A finite partial sum of the weighted series is bounded by `R * ‖x‖²`. -/
 theorem sum_range_schurInf_weighted_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) (N : ℕ) :
@@ -165,7 +165,7 @@ theorem sum_range_schurInf_weighted_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
         rw [tsum_mul_left,
           MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.norm_sq_lp_eq_tsum]
 
-/-- Summability of the row series of absolute values. -/
+/-- **Absolute summability of rows of a Schur matrix.** Summability of the row series of absolute values. -/
 theorem summable_schurInf_norm {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
@@ -187,7 +187,7 @@ theorem summable_schurInf_norm {a : ℕ → ℕ → 𝕜} {R : ℝ}
   have h := Real.sqrt_le_sqrt hsq
   rwa [Real.sqrt_sq (by positivity), Real.sqrt_sq (mul_nonneg hR (norm_nonneg _))] at h
 
-/-- Summability of the row series defining one coordinate of the operator. -/
+/-- **Summability of the row series defining a Schur coordinate.** Summability of the row series defining one coordinate of the operator. -/
 theorem summable_schurInf_coord {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
@@ -196,7 +196,7 @@ theorem summable_schurInf_coord {a : ℕ → ℕ → 𝕜} {R : ℝ}
   intro j
   rw [norm_mul]
 
-/-- The per-row estimate: `‖(T x) i‖² ≤ R * ∑' j, ‖a i j‖ * ‖x j‖²`. -/
+/-- **Per-row estimate in Schur's test on $\ell^2$.** The per-row estimate: `‖(T x) i‖² ≤ R * ∑' j, ‖a i j‖ * ‖x j‖²`. -/
 theorem schurInf_pointwise_sq_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
@@ -236,7 +236,7 @@ theorem schurInf_pointwise_sq_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
         pow_le_pow_left₀ (norm_nonneg _) hnorm 2
     _ ≤ R * ∑' j, ‖a i j‖ * ‖x j‖ ^ 2 := hlim
 
-/-- Summability of the double weighted series `∑' i, ∑' j, ‖a i j‖ * ‖x j‖²`. -/
+/-- **Summability of the double weighted series in Schur's test.** Summability of the double weighted series `∑' i, ∑' j, ‖a i j‖ * ‖x j‖²`. -/
 theorem summable_schurInf_weighted_tsum {a : ℕ → ℕ → 𝕜} {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -274,7 +274,7 @@ theorem summable_schurInf_weighted_tsum {a : ℕ → ℕ → 𝕜} {R C : ℝ}
         rw [tsum_mul_right,
           MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.norm_sq_lp_eq_tsum, mul_comm]
 
-/-- The double weighted series is bounded by `C * ‖x‖²`, via the `tsum` interchange. -/
+/-- **Bound on the double weighted series in Schur's test.** The double weighted series is bounded by `C * ‖x‖²`, via the `tsum` interchange. -/
 theorem schurInf_tsum_weighted_le {a : ℕ → ℕ → 𝕜} {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -316,7 +316,7 @@ theorem schurInf_tsum_weighted_le {a : ℕ → ℕ → 𝕜} {R C : ℝ}
         rw [tsum_mul_right,
           MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.norm_sq_lp_eq_tsum, mul_comm]
 
-/-- Summability of the squared coordinates of a Schur image. -/
+/-- **Squared coordinates of a Schur image are summable.** Summability of the squared coordinates of a Schur image. -/
 theorem summable_schurInf_coordSq {a : ℕ → ℕ → 𝕜} {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -328,7 +328,7 @@ theorem summable_schurInf_coordSq {a : ℕ → ℕ → 𝕜} {R C : ℝ}
   · exact schurInf_pointwise_sq_le hrow hrow_le x i
   · exact (summable_schurInf_weighted_tsum hrow hrow_le hcol hcol_le x).mul_left R
 
-/-- The coordinates of a Schur image are in `ℓ²`. -/
+/-- **Coordinates of a Schur image lie in $\ell^2$.** The coordinates of a Schur image are in `ℓ²`. -/
 theorem memℓp_schurInfCoord {a : ℕ → ℕ → 𝕜} {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -338,7 +338,7 @@ theorem memℓp_schurInfCoord {a : ℕ → ℕ → 𝕜} {R C : ℝ}
   MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.memℓp_of_summable_norm_sq
     (summable_schurInf_coordSq hrow hrow_le hcol hcol_le x)
 
-/-- The Schur operator of a matrix, as a linear map. -/
+/-- **Schur operator of an infinite matrix as a linear map.** The Schur operator of a matrix, as a linear map. -/
 noncomputable def schurInfLinMap (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -362,7 +362,7 @@ noncomputable def schurInfLinMap (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     refine tsum_congr (fun j => ?_)
     rw [lp.coeFn_smul, Pi.smul_apply, smul_eq_mul, mul_left_comm]
 
-/-- Pointwise action of the Schur linear map. -/
+/-- **Pointwise action of the Schur linear map.** Pointwise action of the Schur linear map. -/
 theorem schurInfLinMap_apply (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -371,7 +371,7 @@ theorem schurInfLinMap_apply (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     schurInfLinMap a hrow hrow_le hcol hcol_le x i = ∑' j, a i j * x j :=
   rfl
 
-/-- The Schur operator is bounded by `√(R * C)`. -/
+/-- **Norm bound for the Schur linear map.** The Schur operator is bounded by `√(R * C)`. -/
 theorem norm_schurInfLinMap_le (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -400,7 +400,7 @@ theorem norm_schurInfLinMap_le (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     _ = Real.sqrt (R * C) * ‖x‖ := by
         rw [Real.sqrt_mul (mul_nonneg hR hC), Real.sqrt_sq (norm_nonneg _)]
 
-/-- The Schur operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
+/-- **Schur operator on $\ell^2(\mathbb{N})$.** The Schur operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
 noncomputable def schurInfOperator (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -410,7 +410,7 @@ noncomputable def schurInfOperator (a : ℕ → ℕ → 𝕜) {R C : ℝ}
   (schurInfLinMap a hrow hrow_le hcol hcol_le).mkContinuous
     (Real.sqrt (R * C)) (norm_schurInfLinMap_le a hrow hrow_le hcol hcol_le)
 
-/-- Pointwise action of the Schur operator. -/
+/-- **Pointwise action of the Schur operator.** Pointwise action of the Schur operator. -/
 theorem schurInfOperator_apply (a : ℕ → ℕ → 𝕜) {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -429,7 +429,7 @@ theorem norm_schurInfOperator_le (a : ℕ → ℕ → 𝕜) {R C : ℝ}
   ContinuousLinearMap.opNorm_le_bound _
     (Real.sqrt_nonneg _) (norm_schurInfLinMap_le a hrow hrow_le hcol hcol_le)
 
-/-- The single-bound form: if all row and column sums are at most `B`,
+/-- **Schur's test with a single row and column bound.** The single-bound form: if all row and column sums are at most `B`,
 then the operator norm is at most `B`. -/
 theorem norm_schurInfOperator_le_of_le (a : ℕ → ℕ → 𝕜) {B : ℝ} (hB : 0 ≤ B)
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
@@ -440,7 +440,7 @@ theorem norm_schurInfOperator_le_of_le (a : ℕ → ℕ → 𝕜) {B : ℝ} (hB 
   have h := norm_schurInfOperator_le a hrow hrow_le hcol hcol_le
   rwa [Real.sqrt_mul_self hB] at h
 
-/-- The Schur operator depends only on the matrix, not on the bounds or proofs. -/
+/-- **Schur operator depends only on the matrix.** The Schur operator depends only on the matrix, not on the bounds or proofs. -/
 theorem schurInfOperator_congr {a b : ℕ → ℕ → 𝕜} {R C R' C' : ℝ} (h : a = b)
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -455,7 +455,7 @@ theorem schurInfOperator_congr {a b : ℕ → ℕ → 𝕜} {R C R' C' : ℝ} (h
   subst h
   rfl
 
-/-- A finite partial sum of the weighted series, grouped by the first index. -/
+/-- **Weighted partial sums grouped by the first index.** A finite partial sum of the weighted series, grouped by the first index. -/
 theorem sum_finset_schurInf_weighted_fst_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (x : ℓ²(ℕ, 𝕜)) (S : Finset (ℕ × ℕ)) :
@@ -511,7 +511,7 @@ theorem sum_finset_schurInf_weighted_fst_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
         rw [tsum_mul_right,
           MathlibExt.Analysis.InnerProductSpace.HilbertSchmidt.norm_sq_lp_eq_tsum, mul_comm]
 
-/-- A finite partial sum of the weighted series, grouped by the second index. -/
+/-- **Weighted partial sums grouped by the second index.** A finite partial sum of the weighted series, grouped by the second index. -/
 theorem sum_finset_schurInf_weighted_snd_le {a : ℕ → ℕ → 𝕜} {C : ℝ}
     (hcol : ∀ j, Summable fun i => ‖a i j‖)
     (hcol_le : ∀ j, ∑' i, ‖a i j‖ ≤ C) (v : ℓ²(ℕ, 𝕜)) (S : Finset (ℕ × ℕ)) :
@@ -527,7 +527,7 @@ theorem sum_finset_schurInf_weighted_snd_le {a : ℕ → ℕ → 𝕜} {C : ℝ}
   rw [himg] at h
   exact h
 
-/-- Product summability for the bilinear form of a Schur matrix. -/
+/-- **Product summability for the Schur bilinear form.** Product summability for the bilinear form of a Schur matrix. -/
 theorem summable_schurInf_prod {a : ℕ → ℕ → 𝕜} {R C : ℝ}
     (hrow : ∀ i, Summable fun j => ‖a i j‖)
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R)
@@ -578,26 +578,26 @@ theorem summable_schurInf_prod {a : ℕ → ℕ → 𝕜} {R C : ℝ}
   have h := Real.sqrt_le_sqrt hsq
   rwa [Real.sqrt_sq (by positivity), Real.sqrt_sq (by positivity)] at h
 
-/-- Row summability for the conjugate-transpose matrix. -/
+/-- **Row summability of the conjugate-transpose Schur matrix.** Row summability for the conjugate-transpose matrix. -/
 theorem summable_schurInf_transposeStar_row {a : ℕ → ℕ → 𝕜}
     (hcol : ∀ j, Summable fun i => ‖a i j‖) (i : ℕ) :
     Summable fun j => ‖star (a j i)‖ :=
   (hcol i).congr fun _ => (norm_star _).symm
 
-/-- Row bounds for the conjugate-transpose matrix. -/
+/-- **Row bounds for the conjugate-transpose Schur matrix.** Row bounds for the conjugate-transpose matrix. -/
 theorem schurInf_transposeStar_row_le {a : ℕ → ℕ → 𝕜} {C : ℝ}
     (hcol_le : ∀ j, ∑' i, ‖a i j‖ ≤ C) (i : ℕ) :
     ∑' j, ‖star (a j i)‖ ≤ C := by
   rw [tsum_congr fun j => norm_star (a j i)]
   exact hcol_le i
 
-/-- Column summability for the conjugate-transpose matrix. -/
+/-- **Column summability for the conjugate-transpose matrix in Schur's test.** Column summability for the conjugate-transpose matrix. -/
 theorem summable_schurInf_transposeStar_col {a : ℕ → ℕ → 𝕜}
     (hrow : ∀ i, Summable fun j => ‖a i j‖) (j : ℕ) :
     Summable fun i => ‖star (a j i)‖ :=
   (hrow j).congr fun _ => (norm_star _).symm
 
-/-- Column bounds for the conjugate-transpose matrix. -/
+/-- **Column bounds for the conjugate-transpose matrix in Schur's test.** Column bounds for the conjugate-transpose matrix. -/
 theorem schurInf_transposeStar_col_le {a : ℕ → ℕ → 𝕜} {R : ℝ}
     (hrow_le : ∀ i, ∑' j, ‖a i j‖ ≤ R) (j : ℕ) :
     ∑' i, ‖star (a j i)‖ ≤ R := by

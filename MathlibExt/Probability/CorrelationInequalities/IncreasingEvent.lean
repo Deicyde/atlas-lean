@@ -50,38 +50,38 @@ open ConfigSpace
 
 variable {E : Type*}
 
-/-- An event `A ⊆ ConfigSpace E` is *increasing* if it is an upper set for the coordinatewise
+/-- **Increasing event.** An event `A ⊆ ConfigSpace E` is *increasing* if it is an upper set for the coordinatewise
 order: `ω ∈ A` and `ω ≤ ω'` imply `ω' ∈ A`. This is `IsUpperSet A`. -/
 def IsIncreasing (A : Set (ConfigSpace E)) : Prop := IsUpperSet A
 
-/-- An event `A ⊆ ConfigSpace E` is *decreasing* if it is a lower set for the coordinatewise
+/-- **Decreasing event.** An event `A ⊆ ConfigSpace E` is *decreasing* if it is a lower set for the coordinatewise
 order. This is `IsLowerSet A`. -/
 def IsDecreasing (A : Set (ConfigSpace E)) : Prop := IsLowerSet A
 
-/-- The complement of an increasing event is decreasing (`IsUpperSet.compl`). -/
+/-- **Complement of an increasing event is decreasing.** The complement of an increasing event is decreasing (`IsUpperSet.compl`). -/
 lemma IsIncreasing.compl {A : Set (ConfigSpace E)} (hA : IsIncreasing A) :
     IsDecreasing Aᶜ := IsUpperSet.compl hA
 
-/-- The complement of a decreasing event is increasing (`IsLowerSet.compl`). -/
+/-- **Complement of a decreasing event is increasing.** The complement of a decreasing event is increasing (`IsLowerSet.compl`). -/
 lemma IsDecreasing.compl {A : Set (ConfigSpace E)} (hA : IsDecreasing A) :
     IsIncreasing Aᶜ := IsLowerSet.compl hA
 
-/-- The intersection of two increasing events is increasing (`IsUpperSet.inter`). -/
+/-- **Intersection of two increasing events is increasing.** The intersection of two increasing events is increasing (`IsUpperSet.inter`). -/
 lemma IsIncreasing.inter {A B : Set (ConfigSpace E)}
     (hA : IsIncreasing A) (hB : IsIncreasing B) : IsIncreasing (A ∩ B) :=
   IsUpperSet.inter hA hB
 
-/-- The union of two increasing events is increasing (`IsUpperSet.union`). -/
+/-- **Union of two increasing events is increasing.** The union of two increasing events is increasing (`IsUpperSet.union`). -/
 lemma IsIncreasing.union {A B : Set (ConfigSpace E)}
     (hA : IsIncreasing A) (hB : IsIncreasing B) : IsIncreasing (A ∪ B) :=
   IsUpperSet.union hA hB
 
-/-- An intersection of increasing events is increasing (`isUpperSet_iInter`). -/
+/-- **Arbitrary intersections of increasing events are increasing.** An intersection of increasing events is increasing (`isUpperSet_iInter`). -/
 lemma isIncreasing_iInter {ι : Sort*} {A : ι → Set (ConfigSpace E)}
     (hA : ∀ i, IsIncreasing (A i)) : IsIncreasing (⋂ i, A i) :=
   isUpperSet_iInter hA
 
-/-- The real indicator function of an increasing event is monotone. -/
+/-- **Indicator of an increasing event is monotone.** The real indicator function of an increasing event is monotone. -/
 lemma IsIncreasing.indicator_monotone {A : Set (ConfigSpace E)} (hA : IsIncreasing A) :
     Monotone (A.indicator (fun _ => (1 : ℝ))) := by
   intro x y hxy
@@ -92,7 +92,7 @@ lemma IsIncreasing.indicator_monotone {A : Set (ConfigSpace E)} (hA : IsIncreasi
   · exact zero_le_one
   · exact le_refl _
 
-/-- An event is increasing iff its real indicator function is monotone. See also
+/-- **An event is increasing iff its indicator is monotone.** An event is increasing iff its real indicator function is monotone. See also
 `Set.monotone_mem`, the analogous statement for the `Prop`-valued membership predicate. -/
 theorem isIncreasing_iff_indicator_monotone {A : Set (ConfigSpace E)} :
     IsIncreasing A ↔ Monotone (A.indicator (fun _ => (1 : ℝ))) := by
@@ -104,14 +104,14 @@ theorem isIncreasing_iff_indicator_monotone {A : Set (ConfigSpace E)} :
   rw [Set.indicator_of_notMem hy] at hle
   linarith
 
-/-- The *FKG lattice condition* on a weight `π : ConfigSpace E → ℝ`:
+/-- **FKG lattice condition.** The *FKG lattice condition* on a weight `π : ConfigSpace E → ℝ`:
 `π ω * π ω' ≤ π (ω ⊔ ω') * π (ω ⊓ ω')` for all configurations `ω ω'`. For a positive weight this
 is log-supermodularity. Mathlib's `fkg` and `holley` state it in the form
 `π a * π b ≤ π (a ⊓ b) * π (a ⊔ b)`. -/
 def FKGLatticeCondition (π : ConfigSpace E → ℝ) : Prop :=
   ∀ ω ω', π ω * π ω' ≤ π (ω ⊔ ω') * π (ω ⊓ ω')
 
-/-- A log-modular weight, `π ω * π ω' = π (ω ⊔ ω') * π (ω ⊓ ω')`, satisfies the FKG lattice
+/-- **Log-modular weights satisfy the FKG lattice condition.** A log-modular weight, `π ω * π ω' = π (ω ⊔ ω') * π (ω ⊓ ω')`, satisfies the FKG lattice
 condition. -/
 lemma FKGLatticeCondition.of_logModular {π : ConfigSpace E → ℝ}
     (h : ∀ ω ω', π ω * π ω' = π (ω ⊔ ω') * π (ω ⊓ ω')) : FKGLatticeCondition π :=

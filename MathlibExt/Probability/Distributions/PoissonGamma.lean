@@ -61,12 +61,12 @@ open scoped NNReal Nat
 
 namespace ProbabilityTheory
 
-/-- The Poisson distribution function `F_k(x) = ∑_{j ≤ k} e^{-x} x^j / (j!)` as a function of
+/-- **Poisson distribution function as a function of the mean.** The Poisson distribution function `F_k(x) = ∑_{j ≤ k} e^{-x} x^j / (j!)` as a function of
 the mean `x` (defined for every real `x`; it is a probability only for `0 ≤ x`). -/
 noncomputable def poissonCDF (x : ℝ) (k : ℕ) : ℝ :=
   ∑ j ∈ range (k + 1), exp (-x) * x ^ j / (j ! : ℝ)
 
-/-- `poissonCDF r k` is the distribution function of Mathlib's `poissonMeasure r` at `k`. -/
+/-- **Poisson distribution function agrees with the Poisson law.** `poissonCDF r k` is the distribution function of Mathlib's `poissonMeasure r` at `k`. -/
 theorem poissonMeasure_real_Iic (r : ℝ≥0) (k : ℕ) :
     (poissonMeasure r).real (Set.Iic k) = poissonCDF r k := by
   have hset : Set.Iic k = (Finset.range (k + 1) : Set ℕ) := by
@@ -75,24 +75,24 @@ theorem poissonMeasure_real_Iic (r : ℝ≥0) (k : ℕ) :
   rw [hset, ← sum_measureReal_singleton]
   simp only [poissonMeasure_real_singleton, poissonCDF]
 
-/-- At mean `0` the Poisson law is the point mass at `0`: `F_k(0) = 1`. -/
+/-- **Poisson distribution function at mean zero.** At mean `0` the Poisson law is the point mass at `0`: `F_k(0) = 1`. -/
 theorem poissonCDF_zero_left (k : ℕ) : poissonCDF 0 k = 1 := by
   induction k with
   | zero => simp [poissonCDF]
   | succ k ih => simpa [poissonCDF, sum_range_succ] using ih
 
-/-- `F_0(x) = e^{-x}`. -/
+/-- **Poisson distribution function at count zero.** `F_0(x) = e^{-x}`. -/
 theorem poissonCDF_zero_right (x : ℝ) : poissonCDF x 0 = exp (-x) := by
   simp [poissonCDF]
 
-/-- The distribution function is positive at every nonnegative real mean. -/
+/-- **Positivity of the Poisson distribution function.** The distribution function is positive at every nonnegative real mean. -/
 theorem poissonCDF_pos {x : ℝ} (hx : 0 ≤ x) (k : ℕ) : 0 < poissonCDF x k := by
   apply sum_pos'
   · intro j hj
     positivity
   · exact ⟨0, by simp, by simpa using exp_pos (-x)⟩
 
-/-- The derivative in the mean telescopes: `∂_x F_k(x) = -e^{-x} x^k / (k!)`. -/
+/-- **Derivative of the Poisson distribution function in the mean.** The derivative in the mean telescopes: `∂_x F_k(x) = -e^{-x} x^k / (k!)`. -/
 theorem hasDerivAt_poissonCDF (k : ℕ) (x : ℝ) :
     HasDerivAt (fun y => poissonCDF y k) (-(exp (-x) * x ^ k / (k ! : ℝ))) x := by
   have he : HasDerivAt (fun y : ℝ => exp (-y)) (-exp (-x)) x := by
@@ -116,7 +116,7 @@ theorem hasDerivAt_poissonCDF (k : ℕ) (x : ℝ) :
         field_simp
         ring
 
-/-- The distribution function is continuous in the mean. -/
+/-- **Continuity of the Poisson distribution function in the mean.** The distribution function is continuous in the mean. -/
 theorem continuous_poissonCDF (k : ℕ) : Continuous fun x => poissonCDF x k := by
   exact continuous_iff_continuousAt.mpr fun x => (hasDerivAt_poissonCDF k x).continuousAt
 
@@ -131,7 +131,7 @@ theorem gammaMeasure_real_Ioi_poissonCDF (k : ℕ) {r x : ℝ} (hr : 0 < r) (hx 
   refine Finset.sum_congr rfl fun j _ => ?_
   rw [mul_div_assoc]
 
-/-- The distribution function is strictly decreasing in the mean on `[0, ∞)`. -/
+/-- **Poisson distribution function is strictly decreasing in the mean.** The distribution function is strictly decreasing in the mean on `[0, ∞)`. -/
 theorem poissonCDF_strictAntiOn (k : ℕ) : StrictAntiOn (fun x => poissonCDF x k) (Ici 0) := by
   apply strictAntiOn_of_deriv_neg (convex_Ici 0) (continuous_poissonCDF k).continuousOn
   intro x hx
@@ -139,19 +139,19 @@ theorem poissonCDF_strictAntiOn (k : ℕ) : StrictAntiOn (fun x => poissonCDF x 
   rw [(hasDerivAt_poissonCDF k x).deriv]
   exact neg_neg_of_pos (by positivity)
 
-/-- The distribution function is strictly increasing in `k` at every positive mean. -/
+/-- **Poisson distribution function is strictly increasing in the count.** The distribution function is strictly increasing in `k` at every positive mean. -/
 theorem poissonCDF_lt_poissonCDF_succ {x : ℝ} (hx : 0 < x) (k : ℕ) :
     poissonCDF x k < poissonCDF x (k + 1) := by
   simp only [poissonCDF, sum_range_succ]
   exact lt_add_of_pos_right _ (by positivity)
 
-/-- The distribution function is monotone in `k` at every nonnegative mean. -/
+/-- **Poisson distribution function is monotone in the count.** The distribution function is monotone in `k` at every nonnegative mean. -/
 theorem poissonCDF_mono {x : ℝ} (hx : 0 ≤ x) : Monotone fun k => poissonCDF x k := by
   intro j k hjk
   exact Finset.sum_le_sum_of_subset_of_nonneg (Finset.range_subset_range.mpr (by omega))
     fun i _ _ => by positivity
 
-/-- For fixed `k`, `F_k(x) → 0` as the mean `x → ∞`. -/
+/-- **Poisson distribution function vanishes as the mean grows.** For fixed `k`, `F_k(x) → 0` as the mean `x → ∞`. -/
 theorem tendsto_poissonCDF_atTop (k : ℕ) :
     Tendsto (fun x => poissonCDF x k) atTop (𝓝 0) := by
   have ht : ∀ j ∈ range (k + 1),
@@ -161,7 +161,7 @@ theorem tendsto_poissonCDF_atTop (k : ℕ) :
       (Real.tendsto_pow_mul_exp_neg_atTop_nhds_zero j).div_const (j ! : ℝ)
   simpa only [poissonCDF, sum_const_zero] using tendsto_finsetSum (range (k + 1)) ht
 
-/-- For a fixed nonnegative mean, `F_k(x) → 1` as `k → ∞`. -/
+/-- **Poisson distribution function tends to one as the count grows.** For a fixed nonnegative mean, `F_k(x) → 1` as `k → ∞`. -/
 theorem tendsto_poissonCDF_nat {x : ℝ} (hx : 0 ≤ x) :
     Tendsto (fun k => poissonCDF x k) atTop (𝓝 1) := by
   simpa [poissonCDF, Function.comp_def, NNReal.coe_mk] using
@@ -208,21 +208,21 @@ private theorem garwoodUpper_eq_root (α : ℝ) (k : ℕ) (u : ℝ) (hu : 0 ≤ 
       simpa only [hroot] using (poissonCDF_strictAntiOn k).antitoneOn hx.1 hu hx.2
   rw [garwoodUpper, hs, csSup_Icc hu]
 
-/-- The bound is positive for `0 < α < 1`. -/
+/-- **Positivity of the Garwood upper bound.** The bound is positive for `0 < α < 1`. -/
 theorem garwoodUpper_pos {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (k : ℕ) :
     0 < garwoodUpper α k := by
   obtain ⟨u, hu, hr⟩ := poissonCDF_root_exists α hα0 hα1 k
   rw [garwoodUpper_eq_root α k u hu.le hr]
   exact hu
 
-/-- The bound solves `F_k(u_α(k)) = α`. -/
+/-- **Garwood upper bound solves the distribution function equation.** The bound solves `F_k(u_α(k)) = α`. -/
 theorem poissonCDF_garwoodUpper {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (k : ℕ) :
     poissonCDF (garwoodUpper α k) k = α := by
   obtain ⟨u, hu, hr⟩ := poissonCDF_root_exists α hα0 hα1 k
   rw [garwoodUpper_eq_root α k u hu.le hr]
   exact hr
 
-/-- A nonnegative mean lies below the bound iff it is not rejected: `x ≤ u_α(k) ↔ α ≤ F_k(x)`.
+/-- **Means below the Garwood upper bound are exactly the non-rejected ones.** A nonnegative mean lies below the bound iff it is not rejected: `x ≤ u_α(k) ↔ α ≤ F_k(x)`.
 -/
 theorem le_garwoodUpper_iff {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (k : ℕ) {x : ℝ}
     (hx : 0 ≤ x) : x ≤ garwoodUpper α k ↔ α ≤ poissonCDF x k := by
@@ -238,7 +238,7 @@ theorem le_garwoodUpper_iff {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) (k : ℕ)
     rw [hr] at hlt
     exact (not_lt_of_ge h) hlt
 
-/-- The bound is strictly increasing in the observed count. -/
+/-- **Garwood upper bound is strictly increasing in the count.** The bound is strictly increasing in the observed count. -/
 theorem garwoodUpper_strictMono {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) :
     StrictMono (garwoodUpper α) := by
   apply strictMono_nat_of_lt_succ
@@ -254,7 +254,7 @@ theorem garwoodUpper_strictMono {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) :
   rw [heq, poissonCDF_garwoodUpper hα0 hα1 (k + 1)] at hlt
   exact lt_irrefl _ hlt
 
-/-- After observing `0` the bound is `u_α(0) = log (1 / α)` (`e^{-u} = α`). -/
+/-- **Garwood upper bound after observing zero.** After observing `0` the bound is `u_α(0) = log (1 / α)` (`e^{-u} = α`). -/
 theorem garwoodUpper_zero {α : ℝ} (hα0 : 0 < α) (hα1 : α < 1) :
     garwoodUpper α 0 = log (1 / α) := by
   have hr := poissonCDF_garwoodUpper hα0 hα1 0

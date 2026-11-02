@@ -33,7 +33,7 @@ namespace StatMech.Onsager.CellConnect
 
 open Finset StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
 
-/-- The size of `S ∩ T` as the sum over `T` of the indicator of `S`. See also `Finset.sum_boole`. -/
+/-- **Cardinality of an intersection as a sum of indicators.** The size of `S ∩ T` as the sum over `T` of the indicator of `S`. See also `Finset.sum_boole`. -/
 theorem card_inter_eq_sum (S T : Finset (ℤ × ℤ)) :
     ((S ∩ T).card : ℤ) = ∑ t ∈ T, (if t ∈ S then (1 : ℤ) else 0) := by
   rw [Finset.sum_boole, Finset.filter_mem_eq_inter, Finset.inter_comm]
@@ -49,7 +49,7 @@ private theorem sum_ite_quad (S : Finset (ℤ × ℤ)) (a b c d : ℤ × ℤ)
       Finset.sum_singleton]
   ring
 
-/-- The corner count at the bottom-left corner of a cell `(x, y) ∉ S`. -/
+/-- **Corner count at the bottom-left corner of a new cell.** The corner count at the bottom-left corner of a cell `(x, y) ∉ S`. -/
 theorem cornerCount_BL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (cornerCount S (x, y) : ℤ)
       = (if (x - 1, y) ∈ S then 1 else 0) + (if (x, y - 1) ∈ S then 1 else 0)
@@ -65,7 +65,7 @@ theorem cornerCount_BL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S)
       ite_eq_right hc]
   ring
 
-/-- The corner count at the bottom-right corner of a cell `(x, y) ∉ S`. -/
+/-- **Corner count at the bottom-right corner of a new cell.** The corner count at the bottom-right corner of a cell `(x, y) ∉ S`. -/
 theorem cornerCount_BR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (cornerCount S (x + 1, y) : ℤ)
       = (if (x + 1, y) ∈ S then 1 else 0) + (if (x + 1, y - 1) ∈ S then 1 else 0)
@@ -81,7 +81,7 @@ theorem cornerCount_BR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S)
       ite_eq_right hc]
   ring
 
-/-- The corner count at the top-left corner of a cell `(x, y) ∉ S`. -/
+/-- **Corner count at the top-left corner of a new cell.** The corner count at the top-left corner of a cell `(x, y) ∉ S`. -/
 theorem cornerCount_TL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (cornerCount S (x, y + 1) : ℤ)
       = (if (x, y + 1) ∈ S then 1 else 0) + (if (x - 1, y + 1) ∈ S then 1 else 0)
@@ -97,7 +97,7 @@ theorem cornerCount_TL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S)
       ite_eq_right hc]
   ring
 
-/-- The corner count at the top-right corner of a cell `(x, y) ∉ S`. -/
+/-- **Corner count at the top-right corner of a new cell.** The corner count at the top-right corner of a cell `(x, y) ∉ S`. -/
 theorem cornerCount_TR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (cornerCount S (x + 1, y + 1) : ℤ)
       = (if (x + 1, y + 1) ∈ S then 1 else 0) + (if (x, y + 1) ∈ S then 1 else 0)

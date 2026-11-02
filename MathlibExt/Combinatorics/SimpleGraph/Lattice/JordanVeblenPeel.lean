@@ -121,14 +121,14 @@ theorem jvp_abstract_even_of_closedContour (P : PlanarZ2Subgraph) (K : SimpleGra
   rw [hdt] at hcorner
   exact hcorner
 
-/-- Every nonempty subgraph `K` of `P` with even-degree image contains an even-degree subgraph
+/-- **Veblen step property for even-degree subgraphs.** Every nonempty subgraph `K` of `P` with even-degree image contains an even-degree subgraph
 with fewer edges and face count one less. -/
 def jvp_VeblenStep (P : PlanarZ2Subgraph) : Prop :=
   ∀ (K : SimpleGraph P.V), K ≤ P.G → jce_ClosedContour (jei_pushGraph P K).edgeSet → K ≠ ⊥ →
     ∃ K' : SimpleGraph P.V, K' ≤ K ∧ jce_ClosedContour (jei_pushGraph P K').edgeSet ∧
       K'.edgeSet.ncard < K.edgeSet.ncard ∧ faceCount K' + 1 = faceCount K
 
-/-- Whenever `K' ≤ K` are even-degree subgraphs of `P` with fewer edges and face count one less,
+/-- **Region step property for even-degree subgraphs.** Whenever `K' ≤ K` are even-degree subgraphs of `P` with fewer edges and face count one less,
 the face-region graph of `K` has one more component than that of `K'`. -/
 def jvp_RegionStep (P : PlanarZ2Subgraph) : Prop :=
   ∀ (K K' : SimpleGraph P.V), K ≤ P.G → K' ≤ K →

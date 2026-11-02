@@ -48,13 +48,13 @@ namespace StatMech
 
 variable {E : Type*}
 
-/-- The Bernoulli distribution on `Bool` with success probability `p`: mass `p` on `true` and
+/-- **Bernoulli distribution on the Booleans.** The Bernoulli distribution on `Bool` with success probability `p`: mass `p` on `true` and
 `1 - p` on `false`. This is Mathlib's `ProbabilityTheory.bernoulliMeasure true false p`, with the
 parameter given as an `ℝ≥0` bounded by `1`. -/
 noncomputable def bernoulliMeasure (p : ℝ≥0) (hp : p ≤ 1) : Measure Bool :=
   ProbabilityTheory.bernoulliMeasure true false ⟨p, p.2, hp⟩
 
-/-- `bernoulliMeasure p hp` is Mathlib's `ProbabilityTheory.bernoulliMeasure true false p`. -/
+/-- **Bernoulli distribution agrees with the library Bernoulli measure.** `bernoulliMeasure p hp` is Mathlib's `ProbabilityTheory.bernoulliMeasure true false p`. -/
 lemma bernoulliMeasure_eq (p : ℝ≥0) (hp : p ≤ 1) :
     bernoulliMeasure p hp = ProbabilityTheory.bernoulliMeasure true false ⟨p, p.2, hp⟩ := rfl
 
@@ -79,7 +79,7 @@ instance (p : ℝ≥0) (hp : p ≤ 1) : IsProbabilityMeasure (bernoulliMeasure p
   rw [NNReal.coe_sub hp]
   rfl
 
-/-- The Bernoulli product measure on `ConfigSpace E`: the coordinates are independent and each is
+/-- **Bernoulli product measure on configuration space.** The Bernoulli product measure on `ConfigSpace E`: the coordinates are independent and each is
 `true` with probability `p` (`Measure.infinitePi` of `bernoulliMeasure p hp`). See also Mathlib's
 `ProbabilityTheory.setBernoulli`, the same product measure on `Set E`. -/
 noncomputable def bernoulliProductMeasure (p : ℝ≥0) (hp : p ≤ 1) :
@@ -91,7 +91,7 @@ instance (p : ℝ≥0) (hp : p ≤ 1) :
     IsProbabilityMeasure (bernoulliProductMeasure (E := E) p hp) := by
   unfold bernoulliProductMeasure; infer_instance
 
-/-- On bond configurations `Sym2 V → Bool`, `bernoulliProductMeasure` is the bond percolation law
+/-- **Bernoulli product measure on bonds is the bond percolation law.** On bond configurations `Sym2 V → Bool`, `bernoulliProductMeasure` is the bond percolation law
 `MathlibExt.Probability.ProductBondPercolation.gbernoulliLaw`. -/
 lemma bernoulliProductMeasure_eq_gbernoulliLaw {V : Type*} (p : ℝ≥0) (hp : p ≤ 1) :
     bernoulliProductMeasure (E := Sym2 V) p hp
@@ -101,20 +101,20 @@ namespace bernoulliProductMeasure
 
 variable {p : ℝ≥0} {hp : p ≤ 1}
 
-/-- For finite `E`, the mass of a configuration is the product of its coordinate masses. -/
+/-- **Mass of a configuration under a finite Bernoulli product measure.** For finite `E`, the mass of a configuration is the product of its coordinate masses. -/
 theorem apply_singleton [Fintype E] (ω : ConfigSpace E) :
     bernoulliProductMeasure (E := E) p hp {ω} = ∏ e, bernoulliMeasure p hp {ω e} := by
   unfold bernoulliProductMeasure
   rw [Measure.infinitePi_singleton_of_fintype]
 
-/-- For finite `E`, the mass of a configuration is the product of its coordinate masses. -/
+/-- **Mass of a configuration under a finite Bernoulli product measure, real form.** For finite `E`, the mass of a configuration is the product of its coordinate masses. -/
 theorem real_singleton [Fintype E] (ω : ConfigSpace E) :
     (bernoulliProductMeasure (E := E) p hp).real {ω}
       = ∏ e, (bernoulliMeasure p hp).real {ω e} := by
   rw [Measure.real, apply_singleton, ENNReal.toReal_prod]
   rfl
 
-/-- For finite `E`, the probability of an event is the sum of the masses of its configurations. -/
+/-- **Probability of an event as a sum of configuration masses.** For finite `E`, the probability of an event is the sum of the masses of its configurations. -/
 theorem real_eq_sum [Fintype E] [DecidableEq E] (S : Set (ConfigSpace E)) :
     (bernoulliProductMeasure (E := E) p hp).real S
       = ∑ ω : ConfigSpace E,
@@ -132,12 +132,12 @@ theorem real_eq_sum [Fintype E] [DecidableEq E] (S : Set (ConfigSpace E)) :
   · rw [ite_eq_left h, Set.indicator_of_mem h]; ring
   · rw [ite_eq_right h, Set.indicator_of_notMem h]; ring
 
-/-- Configuration masses are nonnegative. -/
+/-- **Nonnegativity of configuration masses.** Configuration masses are nonnegative. -/
 theorem real_singleton_nonneg (ω : ConfigSpace E) :
     0 ≤ (bernoulliProductMeasure (E := E) p hp).real {ω} :=
   ENNReal.toReal_nonneg
 
-/-- For finite `E`, the configuration masses sum to `1`. -/
+/-- **Configuration masses sum to one.** For finite `E`, the configuration masses sum to `1`. -/
 theorem sum_real_singleton [Fintype E] [DecidableEq E] :
     ∑ ω : ConfigSpace E, (bernoulliProductMeasure (E := E) p hp).real {ω} = 1 := by
   classical
@@ -150,7 +150,7 @@ theorem sum_real_singleton [Fintype E] [DecidableEq E] :
   rw [h2, measure_univ, ENNReal.toReal_one]
 
 set_option linter.unusedFintypeInType false in
-/-- The configuration weights of a Bernoulli product measure are log-modular:
+/-- **Log-modularity of Bernoulli product weights.** The configuration weights of a Bernoulli product measure are log-modular:
 `w(a) w(b) = w(a ⊔ b) w(a ⊓ b)`. In particular they satisfy the FKG lattice condition. -/
 theorem real_singleton_logModular [Fintype E] (a b : ConfigSpace E) :
     (bernoulliProductMeasure (E := E) p hp).real {a}

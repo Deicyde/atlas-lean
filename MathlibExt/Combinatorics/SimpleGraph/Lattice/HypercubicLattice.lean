@@ -51,10 +51,10 @@ namespace StatMech
 
 namespace Lattice
 
-/-- A site of the `d`-dimensional hypercubic lattice `ℤ^d`, encoded as an integer vector. -/
+/-- **Site of the hypercubic lattice.** A site of the `d`-dimensional hypercubic lattice `ℤ^d`, encoded as an integer vector. -/
 abbrev Site (d : ℕ) : Type := Fin d → ℤ
 
-/-- Two sites are nearest neighbours when their `ℓ¹` distance `∑ i, |x i - y i|` equals one. -/
+/-- **Nearest neighbours in $\mathbb{Z}^d$.** Two sites are nearest neighbours when their `ℓ¹` distance `∑ i, |x i - y i|` equals one. -/
 def NearestNeighbour (d : ℕ) (x y : Site d) : Prop :=
   (∑ i, (x i - y i).natAbs) = 1
 
@@ -70,7 +70,7 @@ theorem nearestNeighbour_irrefl (d : ℕ) : Std.Irrefl (NearestNeighbour d) := b
   simp only [NearestNeighbour, sub_self, Int.natAbs_zero, Finset.sum_const_zero] at h
   exact absurd h (by norm_num)
 
-/-- The hypercubic lattice `ℤ^d`: the simple graph on `Site d` whose edges join
+/-- **Hypercubic lattice $\mathbb{Z}^d$.** The hypercubic lattice `ℤ^d`: the simple graph on `Site d` whose edges join
 nearest
 neighbours. -/
 def hypercubicLattice (d : ℕ) : SimpleGraph (Site d) where
@@ -82,7 +82,7 @@ def hypercubicLattice (d : ℕ) : SimpleGraph (Site d) where
 theorem hypercubicLattice_adj (d : ℕ) (x y : Site d) :
     (hypercubicLattice d).Adj x y ↔ (∑ i, (x i - y i).natAbs) = 1 := Iff.rfl
 
-/-- The box `[-n, n]^d` of sites whose coordinates all have absolute value at most `n`. -/
+/-- **Box $[-n, n]^d$ in the hypercubic lattice.** The box `[-n, n]^d` of sites whose coordinates all have absolute value at most `n`. -/
 def box (d n : ℕ) : Set (Site d) := {x | ∀ i, (x i).natAbs ≤ n}
 
 @[simp]
@@ -98,7 +98,7 @@ theorem box_finite (d n : ℕ) : (box d n).Finite := by
     rw [Int.abs_eq_natAbs]; exact_mod_cast hx'
   exact abs_le.mp habs
 
-/-- The inner vertex boundary of `box d n`: sites of `box d n` that are not in `box d (n - 1)`. -/
+/-- **Inner vertex boundary of a box.** The inner vertex boundary of `box d n`: sites of `box d n` that are not in `box d (n - 1)`. -/
 def vertexBoundary (d n : ℕ) : Set (Site d) := box d n \ box d (n - 1)
 
 @[simp]
@@ -108,7 +108,7 @@ theorem mem_vertexBoundary {d n : ℕ} {x : Site d} :
 theorem vertexBoundary_finite (d n : ℕ) : (vertexBoundary d n).Finite :=
   (box_finite d n).subset (Set.sdiff_subset)
 
-/-- The edge boundary of a set `S` of sites: ordered nearest-neighbour pairs with exactly one
+/-- **Edge boundary of a set of sites.** The edge boundary of a set `S` of sites: ordered nearest-neighbour pairs with exactly one
 endpoint in `S`. -/
 def edgeBoundary (d : ℕ) (S : Set (Site d)) : Set (Site d × Site d) :=
   {p | (hypercubicLattice d).Adj p.1 p.2 ∧ (p.1 ∈ S ↔ p.2 ∉ S)}
@@ -139,7 +139,7 @@ theorem iUnion_box (d : ℕ) : (⋃ n, box d n) = Set.univ := by
   refine ⟨Finset.univ.sup (fun i => (x i).natAbs), fun i => ?_⟩
   exact Finset.le_sup (f := fun i => (x i).natAbs) (Finset.mem_univ i)
 
-/-- Every finite set of sites lies in some box `box d R`. -/
+/-- **Every finite set of sites lies in a box.** Every finite set of sites lies in some box `box d R`. -/
 theorem finite_subset_box {d : ℕ} (F : Set (Site d)) (hF : F.Finite) : ∃ R : ℕ, F ⊆ box d R := by
   classical
   set g : Site d → ℕ := fun x => Finset.univ.sup (fun i => (x i).natAbs) with hg
@@ -150,7 +150,7 @@ theorem finite_subset_box {d : ℕ} (F : Set (Site d)) (hF : F.Finite) : ∃ R :
   have h2 : g x ≤ hF.toFinset.sup g := Finset.le_sup hxF
   exact h1.trans h2
 
-/-- In `ℤ²`, increasing one coordinate by `n` stays in the same component. -/
+/-- **Increasing one coordinate stays in the same component.** In `ℤ²`, increasing one coordinate by `n` stays in the same component. -/
 theorem reachable_update_add (x : Site 2) (j : Fin 2) (a : ℤ) (n : ℕ) :
     (hypercubicLattice 2).Reachable (Function.update x j a) (Function.update x j (a + n)) := by
   induction n with
@@ -164,14 +164,14 @@ theorem reachable_update_add (x : Site 2) (j : Fin 2) (a : ℤ) (n : ℕ) :
     · intro b _ hb; rw [Function.update_of_ne hb, Function.update_of_ne hb]; simp
     · intro h; exact absurd (Finset.mem_univ j) h
 
-/-- In `ℤ²`, changing one coordinate stays in the same component. -/
+/-- **Changing one coordinate stays in the same component.** In `ℤ²`, changing one coordinate stays in the same component. -/
 theorem reachable_update (x : Site 2) (j : Fin 2) (a b : ℤ) :
     (hypercubicLattice 2).Reachable (Function.update x j a) (Function.update x j b) := by
   rcases le_total a b with hab | hab
   · obtain ⟨n, rfl⟩ := Int.le.dest hab; exact reachable_update_add x j a n
   · obtain ⟨n, rfl⟩ := Int.le.dest hab; exact (reachable_update_add x j b n).symm
 
-/-- The square lattice `ℤ²` is connected. -/
+/-- **Square lattice is connected.** The square lattice `ℤ²` is connected. -/
 theorem hypercubicLattice_two_reachable (x y : Site 2) : (hypercubicLattice 2).Reachable x y := by
   have h1 : (hypercubicLattice 2).Reachable x (Function.update x 0 (y 0)) := by
     have := reachable_update x 0 (x 0) (y 0); rwa [Function.update_eq_self] at this

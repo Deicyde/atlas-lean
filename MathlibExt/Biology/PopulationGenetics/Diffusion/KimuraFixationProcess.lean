@@ -86,7 +86,7 @@ open MathlibExt.Biology.PopulationGenetics.Diffusion (generator kimuraFixation
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- `X` solves the **martingale problem for the Wright–Fisher diffusion** with scaled genic
+/-- **Martingale problem for the Wright–Fisher diffusion.** `X` solves the **martingale problem for the Wright–Fisher diffusion** with scaled genic
 selection coefficient `σ = 2Ns` (time in units of `2N` generations) with respect to the
 filtration `ℱ` and the measure `μ`: `X` takes values in `[0, 1]`, has continuous paths, is
 adapted to `ℱ`, and for every `C²` function `f` the process
@@ -99,7 +99,7 @@ def IsWrightFisherSolution (σ : ℝ) (ℱ : Filtration ℝ≥0 mΩ) (μ : Measu
       Martingale (fun t ω => f (X t ω) - f (X 0 ω) -
         ∫ s in (0 : ℝ)..(t : ℝ), generator σ f (X (Real.toNNReal s) ω)) ℱ μ
 
-/-- The absorption time of a `[0, 1]`-valued path: the first time it is at `0` or `1`
+/-- **Absorption time of a frequency path.** The absorption time of a `[0, 1]`-valued path: the first time it is at `0` or `1`
 (the infimum of the empty set is `0` in `ℝ≥0`; the path is absorbed almost surely, see
 `ae_exists_absorbed`). -/
 noncomputable def absorptionTime (X : ℝ≥0 → Ω → ℝ) (ω : Ω) : ℝ≥0 :=
@@ -107,7 +107,7 @@ noncomputable def absorptionTime (X : ℝ≥0 → Ω → ℝ) (ω : Ω) : ℝ≥
 
 /-! ### Analytic lemmas -/
 
-/-- Kimura's fixation probability is a `C²` function of the initial frequency on all of `ℝ`. -/
+/-- **Kimura's fixation probability is twice continuously differentiable.** Kimura's fixation probability is a `C²` function of the initial frequency on all of `ℝ`. -/
 theorem _root_.MathlibExt.Biology.PopulationGenetics.Diffusion.contDiff_kimuraFixation
     (σ : ℝ) : ContDiff ℝ 2 (kimuraFixation σ) := by
   by_cases h : σ = 0
@@ -120,7 +120,7 @@ theorem _root_.MathlibExt.Biology.PopulationGenetics.Diffusion.contDiff_kimuraFi
     rw [hk]
     exact (contDiff_const.sub ((contDiff_const.mul contDiff_id).exp)).div_const _
 
-/-- The slope constant of Kimura's formula is positive. -/
+/-- **Positivity of Kimura's slope constant.** The slope constant of Kimura's formula is positive. -/
 theorem _root_.MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraSlope_pos (σ : ℝ) :
     0 < kimuraSlope σ := by
   unfold kimuraSlope
@@ -132,7 +132,7 @@ theorem _root_.MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraSlope_pos (
   · have : Real.exp (-2 * σ) < 1 := Real.exp_lt_one_iff.2 (by linarith)
     exact div_pos (by linarith) (by linarith)
 
-/-- Kimura's fixation probability is strictly increasing in the initial frequency. -/
+/-- **Strict monotonicity of Kimura's fixation probability.** Kimura's fixation probability is strictly increasing in the initial frequency. -/
 theorem _root_.MathlibExt.Biology.PopulationGenetics.Diffusion.strictMono_kimuraFixation
     (σ : ℝ) : StrictMono (kimuraFixation σ) :=
   strictMono_of_deriv_pos fun x => by

@@ -115,12 +115,12 @@ theorem sharedPrimalEdge_uncrossInj {f g f' g' : Site 2}
                 sharedPrimalEdge_bottom', Sym2.eq_iff, site2_eq] at heq ⊢;
      omega)
 
-/-- The set of primal edges crossed by the darts of a walk `c` in the dual (face) lattice. -/
+/-- **Primal edges crossed by a dual walk.** The set of primal edges crossed by the darts of a walk `c` in the dual (face) lattice. -/
 noncomputable def primalEdgeFinset {u v : Site 2} (c : (hypercubicLattice 2).Walk u v) :
     Finset (Sym2 (Site 2)) :=
   (c.darts.map (fun D => sharedPrimalEdge D.fst D.snd)).toFinset
 
-/-- The event that every primal edge crossed by the dual walk `c` is closed. -/
+/-- **Event that a dual circuit is closed.** The event that every primal edge crossed by the dual walk `c` is closed. -/
 def closedCircuitEvent {u v : Site 2} (c : (hypercubicLattice 2).Walk u v) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | ∀ D ∈ c.darts, ω (sharedPrimalEdge D.fst D.snd) = false}
@@ -167,7 +167,7 @@ theorem measure_closedCircuitEvent_cycle (p : ℝ≥0) (hp : p ≤ 1) {u : Site 
       = ((1 - p : ℝ≥0) : ℝ≥0∞) ^ c.length := by
   rw [measure_closedCircuitEvent p hp c, primalEdgeFinset_card_cycle c hc]
 
-/-- The `2ℓ` anchor sites `(j, 0)` and `(j, -1)`, `0 ≤ j < ℓ`. -/
+/-- **Anchor sites for dual circuits.** The `2ℓ` anchor sites `(j, 0)` and `(j, -1)`, `0 ≤ j < ℓ`. -/
 noncomputable def anchorFinset (ℓ : ℕ) : Finset (Site 2) :=
   ((Finset.range ℓ).image (fun j : ℕ => (![ (j : ℤ), 0] : Site 2))) ∪
   ((Finset.range ℓ).image (fun j : ℕ => (![ (j : ℤ), -1] : Site 2)))
@@ -183,7 +183,7 @@ theorem anchorFinset_card (ℓ : ℕ) : (anchorFinset ℓ).card ≤ 2 * ℓ := b
     _ = 2 * ℓ := by ring
 
 open Classical in
-/-- The finite set of dual cycles of length `ℓ` based at an anchor site of `anchorFinset ℓ`. -/
+/-- **Anchored dual cycles of a given length.** The finite set of dual cycles of length `ℓ` based at an anchor site of `anchorFinset ℓ`. -/
 noncomputable def cyclesAtLen (ℓ : ℕ) :
     Finset (Σ u : Site 2, (hypercubicLattice 2).Walk u u) :=
   (anchorFinset ℓ).sigma
@@ -226,7 +226,7 @@ theorem measure_cyclesAtLen_le (p : ℝ≥0) (hp : p ≤ 1) (ℓ : ℕ) :
         apply mul_le_mul' _ (le_refl _)
         exact_mod_cast cyclesAtLen_card ℓ
 
-/-- The summand `2ℓ · 4^ℓ · (1 - p)^ℓ`. -/
+/-- **Summand of the anchored Peierls series.** The summand `2ℓ · 4^ℓ · (1 - p)^ℓ`. -/
 noncomputable def pcSummandTwo (p : ℝ) (ℓ : ℕ) : ℝ := (2 * ℓ * 4 ^ ℓ : ℕ) * ((1 - p) ^ ℓ)
 
 theorem pcSummandTwo_eq (p : ℝ) (ℓ : ℕ) :
@@ -266,7 +266,7 @@ theorem ennSummand_eq_ofReal (p : ℝ≥0) (hp : p ≤ 1) (ℓ : ℕ) :
   unfold pcSummandTwo
   rw [ENNReal.ofReal_mul (by positivity), ENNReal.ofReal_natCast, hpow]
 
-/-- Every finite cluster of the origin is enclosed by a cycle of its face-boundary graph based at
+/-- **Anchored dual-circuit enclosure property.** Every finite cluster of the origin is enclosed by a cycle of its face-boundary graph based at
 an anchor site of `anchorFinset ℓ`, where `ℓ` is the cycle length. -/
 def PcAnchoredEnclosure : Prop :=
   ∀ ω : ConfigSpace (Sym2 (Site 2)), (cluster 2 ω (origin 2)).Finite →
@@ -371,7 +371,7 @@ theorem one_sub_theta_le (henc : PcAnchoredEnclosure) (p : ℝ≥0) (hp : p ≤ 
     exact ENNReal.toReal_le_of_le_ofReal hb (measure_compl_percolationEvent_le henc p hp hsum)
   linarith
 
-/-- `p_c(2) < 1`, assuming the anchored enclosure property `PcAnchoredEnclosure`. -/
+/-- **$p_c(2) < 1$ from anchored dual-circuit enclosure.** `p_c(2) < 1`, assuming the anchored enclosure property `PcAnchoredEnclosure`. -/
 theorem pc_lt_one_of_enclosure (henc : PcAnchoredEnclosure) : pc 2 < 1 := by
   have htail := pcUpperBound_tendsto_one
   have hhalf : ∀ᶠ p in nhds (1 : ℝ), pcUpperBound p < 1 / 2 :=
