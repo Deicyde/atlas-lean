@@ -20,7 +20,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import re
 from pathlib import Path
 
 
@@ -29,20 +28,19 @@ DERIVED = ("lint", "signature_mentions")
 POSITIONAL = ("lean_line", "docstring_lines", "docstring_insert_line")
 # Edges come from compiled Lean dependencies, which no docstring fix changes.
 NOT_DOCSTRING_LINT = ("edge-missing",)
-# A linked article's title changes whenever that article is fixed; only the link itself counts.
+# Pages move whenever the map is reorganized or a folder gains or loses pages.
+LOCATION = ("article", "article_id", "subject")
+# A linked article's title changes whenever that article is fixed, and its page can move;
+# only which article it links counts.
 LINKS = ("depends_on", "proof_depends_on")
-# Pages move between part-NN folders whenever their directory gains or loses pages.
-PAGINATION = re.compile(r"/part-\d+(?=/)")
 
 
 def digest(packet: dict) -> str:
-    """Hash of what the audit judged; a lint change, a shifted line, a retitled link or a page
-    moved between part-NN folders re-audits nothing."""
-    content = {key: value for key, value in packet.items() if key not in DERIVED + POSITIONAL}
-    if "article" in packet:
-        content["article"] = PAGINATION.sub("", packet["article"])
+    """Hash of what the audit judged; a lint change, a shifted line, a retitled link or a moved
+    page re-audits nothing."""
+    content = {key: value for key, value in packet.items() if key not in DERIVED + POSITIONAL + LOCATION}
     for key in LINKS:
-        content[key] = [PAGINATION.sub("", link["path"]) for link in packet.get(key, [])]
+        content[key] = [link.get("article_id", link["path"]) for link in packet.get(key, [])]
     return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 

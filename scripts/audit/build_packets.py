@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 V2_DECLARATION = re.compile(
@@ -198,7 +199,15 @@ def mark_statement_edges(packets: list[dict], index_path: Path) -> None:
 
 def main() -> int:
     repo, lint_path, out_path = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
+    index_path = Path(sys.argv[4]) if len(sys.argv) > 4 else lint_path
     roadmap = repo / "blueprint" / "roadmap"
+    index = [json.loads(line) for line in index_path.read_text().splitlines()]
+    leans = Counter(row["lean"] for row in index)
+    # Most articles have no article_id; a Lean name keys them wherever the page moves.
+    keys = {
+        row["path"]: row["article_id"] or (f"lean:{row['lean']}" if row["lean"] and leans[row["lean"]] == 1 else f"path:{row['path']}")
+        for row in index
+    }
     packets, missing = [], []
     for row in map(json.loads, lint_path.read_text().splitlines()):
         article = roadmap / row["path"]
@@ -206,8 +215,7 @@ def main() -> int:
         parts = sections(text)
         packet = {
             "article": f"blueprint/roadmap/{row['path']}",
-            # Recently generated articles have no article_id yet; key them by path.
-            "article_id": row["article_id"] or f"path:{row['path']}",
+            "article_id": keys[row["path"]],
             "track": row["track"],
             "subject": row["subject"],
             "title": row["title"],
@@ -239,8 +247,11 @@ def main() -> int:
                 if insert is not None:
                     packet["docstring_insert_line"] = insert + 1
                     packet["docstring_insert_before"] = lines[insert]
+        for link in packet["depends_on"] + packet["proof_depends_on"]:
+            if link["path"] in keys:
+                link["article_id"] = keys[link["path"]]
         packets.append(packet)
-    mark_statement_edges(packets, Path(sys.argv[4]) if len(sys.argv) > 4 else lint_path)
+    mark_statement_edges(packets, index_path)
     out_path.write_text("".join(json.dumps(packet) + "\n" for packet in packets))
     print(f"{len(packets)} packets, {len(missing)} without a located declaration")
     for path in missing[:20]:

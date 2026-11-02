@@ -19,7 +19,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
-V2_LIBRARIES = ("MathlibExt", "CSLibExt", "WantedExt")
+# An article's first source names its v2 library and module.
+LIBRARY_SOURCE = re.compile(r"^- \[(MathlibExt|CSLibExt|WantedExt), ", re.M)
 
 
 def humanize(name: str) -> str:
@@ -49,12 +50,10 @@ def parse(path: Path) -> dict | None:
     return {"front": front, "title": title_match.group(1).strip(), "statement": statement, "sections": sections}
 
 
-def track(relative: Path) -> str | None:
-    """The v2 library an article belongs to; None for a file outside them, which is not an article."""
-    for library in V2_LIBRARIES:
-        if library in relative.parts:
-            return library
-    return None
+def track(article: dict) -> str | None:
+    """The v2 library an article belongs to; None for a page that cites none, which is not an article."""
+    match = LIBRARY_SOURCE.search(article["sections"].get("Sources", ""))
+    return match.group(1) if match else None
 
 
 def lint(roadmap: Path, subject: str | None) -> list[dict]:
@@ -65,9 +64,9 @@ def lint(roadmap: Path, subject: str | None) -> list[dict]:
         relative = path.relative_to(roadmap)
         if subject and relative.parts[0] != subject:
             continue
-        kind = track(relative)
         article = parse(path)
-        if kind is None or article is None:
+        kind = track(article) if article else None
+        if kind is None:
             continue
         front, title, statement = article["front"], article["title"], article["statement"]
         lean = front.get("lean", "")
