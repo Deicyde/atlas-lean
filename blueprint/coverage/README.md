@@ -12,9 +12,9 @@ cover only the decomposed rows below; they are not repository-wide coverage.
 
 | Area | Coverage | Evidence |
 | --- | --- | --- |
-| v2 / MathlibExt | DECOMPOSED | [14503 documented public declarations](../roadmap/README.md) across 26 subjects; 265 instances and 4425 undocumented public declarations are not articles. |
-| v2 / CSLibExt | DECOMPOSED | [11438 documented public declarations](../roadmap/README.md) across 6 subjects; 251 instances and 3906 undocumented public declarations are not articles. |
-| v2 / WantedExt | DECOMPOSED | [15294 documented public declarations](../roadmap/README.md) across 25 subjects; 179 instances and 202 undocumented public declarations are not articles. |
+| v2 / MathlibExt | DECOMPOSED | [14575 documented public declarations](../roadmap/README.md) across 26 subjects; 273 instances and 4438 undocumented public declarations are not articles. |
+| v2 / CSLibExt | DECOMPOSED | [11541 documented public declarations](../roadmap/README.md) across 6 subjects; 257 instances and 3919 undocumented public declarations are not articles. |
+| v2 / WantedExt | DECOMPOSED | [15304 documented public declarations](../roadmap/README.md) across 25 subjects; 179 instances and 202 undocumented public declarations are not articles. |
 | v2 tests (MathlibExtTest, CSLibExtTest) | OUT | Tests and diagnostics rather than mathematical results. |
 | Atlas/StatisticalMechanics | MAPPED | Standalone Lean files; no roadmap articles yet. |
 | Atlas/FC | MAPPED | Standalone Lean files; no roadmap articles yet. |

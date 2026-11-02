@@ -21,7 +21,7 @@ of the frequency after `m` generations is the generating function of the number 
 ## Proof depends on
 
 - [Wright–Fisher transition probability of the lineage count](../../../coalescent-theory/ancestral-lineage-counting-and-tavar-s-formula/wf-lineage-prob.md)
-- [Moment duality, one generation (polynomial identity)](sum-binomial-mul-div-pow.md)
+- [Wf Step X pow](wf-step-x-pow.md)
 
 ## Sources
 

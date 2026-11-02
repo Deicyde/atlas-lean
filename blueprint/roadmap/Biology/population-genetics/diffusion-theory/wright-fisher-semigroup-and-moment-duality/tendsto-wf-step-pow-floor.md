@@ -19,7 +19,7 @@ applied to `f` converge uniformly on `[0, 1]` to `wfSemigroup t f`.
 
 ## Proof depends on
 
-- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
+- [Cauchy Seq wf Step pow floor](cauchy-seq-wf-step-pow-floor.md)
 
 ## Sources
 

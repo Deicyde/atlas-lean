@@ -16,6 +16,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Proof depends on
 
+- [Dense polynomial Functions](../../../not-yet-classified/chain-limit/dense-polynomial-functions.md)
 - [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
 - [Semigroup law](poly-semigroup-add.md)
 - [Diffusion semigroup agrees with the dual semigroup on polynomials](wf-semigroup-to-continuous-map-on.md)

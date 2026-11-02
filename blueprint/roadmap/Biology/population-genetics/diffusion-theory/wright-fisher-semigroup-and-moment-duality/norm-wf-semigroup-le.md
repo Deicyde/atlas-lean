@@ -16,8 +16,8 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm
 
 ## Proof depends on
 
-- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
-- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
+- [Cauchy Seq wf Step pow floor](cauchy-seq-wf-step-pow-floor.md)
+- [Norm wf Step pow le](norm-wf-step-pow-le.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources

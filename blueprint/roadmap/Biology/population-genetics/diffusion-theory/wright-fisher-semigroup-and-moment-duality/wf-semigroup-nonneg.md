@@ -16,8 +16,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Proof depends on
 
+- [Pow nonneg](../../../not-yet-classified/chain-limit/pow-nonneg.md)
 - [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
+- [Wf Step nonneg](wf-step-nonneg.md)
 
 ## Sources
 

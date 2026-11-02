@@ -6410,6 +6410,16 @@
    ],
    "statement": []
   },
+  "ContinuousLinearMap.pow_apply_one": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
+  "ContinuousLinearMap.pow_nonneg": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
   "ContinuousLinearMap.range_comp_subtypeL_orthogonalComplement_ker": {
    "module": "MathlibExt.Analysis.InnerProductSpace.ClosedRangeAdjoint",
    "proof": [],
@@ -125117,6 +125127,394 @@
     "Cslib.Modal.KripkeModel.toModel"
    ]
   },
+  "Cslib.Modal.LinearMuCalculus.F": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.F_iff": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.mu_induction",
+    "Cslib.Modal.LinearMuCalculus.sat_mu_unfold"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.F",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.G": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.G_iff": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.nu_coinduction",
+    "Cslib.Modal.LinearMuCalculus.sat_nu_unfold"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.G",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": []
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula.Closed": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.ClosedAt"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula.ClosedAt": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula.depth": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula.neg": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.LinearMuFormula.neg_neg": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.neg"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.compl_compl": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": []
+  },
+  "Cslib.Modal.LinearMuCalculus.extendEnv": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": []
+  },
+  "Cslib.Modal.LinearMuCalculus.extendEnv_compl": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearDepth_le_code": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.depth",
+    "Cslib.Modal.LinearMuCalculus.linearMuCode"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuCode": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuCode_injective": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.linearMuCode"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecode": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeFuel"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecodeFuel": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecodeFuel_linearMuCode": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.depth",
+    "Cslib.Modal.LinearMuCalculus.linearMuCode",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeFuel"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecodeList": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.linearMuParseFuel"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecodeList_tokens": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.linearMuParseFuel",
+    "Cslib.Modal.LinearMuCalculus.linearMuParseFuel_tokens"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeList",
+    "Cslib.Modal.LinearMuCalculus.linearMuTokens"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuDecode_linearMuCode": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.linearDepth_le_code",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeFuel_linearMuCode"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.linearMuCode",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecode"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuParseFuel": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuParseFuel_tokens": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.linearMuParseFuel",
+    "Cslib.Modal.LinearMuCalculus.linearMuTokens"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.linearMuTokens": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.muOp": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat",
+    "Cslib.Modal.LinearMuCalculus.sat_mono_extend"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.mu_induction": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.mu_le_fixed": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.mu_pre_fixed",
+    "Cslib.Modal.LinearMuCalculus.sat_mono_extend"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.mu_pre_fixed": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat_mono_extend"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.nu_coinduction": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.nu_le_post_fixed": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.nu_post_fixed",
+    "Cslib.Modal.LinearMuCalculus.sat_mono_extend"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.nu_post_fixed": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat_mono_extend"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_closed_env": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.muOp",
+    "Cslib.Modal.LinearMuCalculus.sat_mu_eq_lfp",
+    "Cslib.Modal.LinearMuCalculus.sat_nu_eq_gfp"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.ClosedAt",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_mono_env": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_mono_extend": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat_mono_env"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_mu_eq_lfp": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.mu_pre_fixed"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.muOp",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_mu_unfold": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.mu_le_fixed",
+    "Cslib.Modal.LinearMuCalculus.mu_pre_fixed"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_neg": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.compl_compl",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.extendEnv_compl",
+    "Cslib.Modal.LinearMuCalculus.mu_induction",
+    "Cslib.Modal.LinearMuCalculus.nu_coinduction",
+    "Cslib.Modal.LinearMuCalculus.sat_mu_unfold",
+    "Cslib.Modal.LinearMuCalculus.sat_nu_unfold"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.neg",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_nu_eq_gfp": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.extendEnv"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.muOp",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
+  "Cslib.Modal.LinearMuCalculus.sat_nu_unfold": {
+   "module": "CSLibExt.Logics.Modal.LinearMuCalculus",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.nu_le_post_fixed",
+    "Cslib.Modal.LinearMuCalculus.nu_post_fixed"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.extendEnv",
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ]
+  },
   "Cslib.Modal.LocallyEntails": {
    "module": "CSLibExt.Logics.Modal.Canonical",
    "proof": [
@@ -126521,6 +126919,29 @@
    "proof": [],
    "statement": []
   },
+  "Cslib.Modal.MuCalculus.MuFormula.Closed": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.MuFormula.ClosedAt"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.MuFormula.ClosedAt": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.MuFormula.depth": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
   "Cslib.Modal.MuCalculus.MuFormula.neg": {
    "module": "CSLibExt.Logics.Modal.MuCalculus",
    "proof": [],
@@ -126541,6 +126962,15 @@
    "proof": [],
    "statement": []
   },
+  "Cslib.Modal.MuCalculus.depth_le_code": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.MuFormula.depth",
+    "Cslib.Modal.MuCalculus.muCode"
+   ]
+  },
   "Cslib.Modal.MuCalculus.extendEnv": {
    "module": "CSLibExt.Logics.Modal.MuCalculus",
    "proof": [],
@@ -126553,6 +126983,83 @@
     "Cslib.Modal.MuCalculus.extendEnv"
    ]
   },
+  "Cslib.Modal.MuCalculus.muCode": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muCode_injective": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.muDecode",
+    "Cslib.Modal.MuCalculus.muDecode_muCode"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.muCode"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecode": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.muDecodeFuel"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecodeFuel": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecodeFuel_muCode": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.MuFormula.depth",
+    "Cslib.Modal.MuCalculus.muCode",
+    "Cslib.Modal.MuCalculus.muDecodeFuel"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecodeList": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.muParseFuel"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecodeList_muTokens": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.muParseFuel",
+    "Cslib.Modal.MuCalculus.muParseFuel_muTokens"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.muDecodeList",
+    "Cslib.Modal.MuCalculus.muTokens"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muDecode_muCode": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.depth_le_code",
+    "Cslib.Modal.MuCalculus.muDecodeFuel_muCode"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.muCode",
+    "Cslib.Modal.MuCalculus.muDecode"
+   ]
+  },
   "Cslib.Modal.MuCalculus.muOp": {
    "module": "CSLibExt.Logics.Modal.MuCalculus",
    "proof": [
@@ -126562,6 +127069,29 @@
    ],
    "statement": [
     "Cslib.Modal.KripkeModel",
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muParseFuel": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muParseFuel_muTokens": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.muParseFuel",
+    "Cslib.Modal.MuCalculus.muTokens"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.muTokens": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [],
+   "statement": [
     "Cslib.Modal.MuCalculus.MuFormula"
    ]
   },
@@ -126667,6 +127197,21 @@
    "statement": [
     "Cslib.Modal.KripkeModel",
     "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "Cslib.Modal.MuCalculus.sat_closed_env": {
+   "module": "CSLibExt.Logics.Modal.MuCalculusEncoding",
+   "proof": [
+    "Cslib.Modal.MuCalculus.extendEnv",
+    "Cslib.Modal.MuCalculus.muOp",
+    "Cslib.Modal.MuCalculus.sat_mu_eq_lfp",
+    "Cslib.Modal.MuCalculus.sat_nu_eq_gfp"
+   ],
+   "statement": [
+    "Cslib.Modal.KripkeModel",
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.MuFormula.ClosedAt",
+    "Cslib.Modal.MuCalculus.sat"
    ]
   },
   "Cslib.Modal.MuCalculus.sat_mono_env": {
@@ -127952,6 +128497,582 @@
    "statement": [
     "Cslib.Modal.Formula",
     "Cslib.Modal.KripkeModel"
+   ]
+  },
+  "Cslib.Nominal.Abs": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.absSetoid"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.AbsRel": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.swap"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.FinPerm": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.finPermSubgroup"
+   ],
+   "statement": []
+  },
+  "Cslib.Nominal.Fresh": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.IsEquivariant": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.NominalSet": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.Supports": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.Supports.image": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.Supports.inter": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.smul_eq_of_fresh"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.Supports.mono": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.Supports.prod": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.abs": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.absSetoid"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.absRel_refl": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.swap"
+   ],
+   "statement": [
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.absRel_symm": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.fresh_iff_not_mem_supp",
+    "Cslib.Nominal.supp",
+    "Cslib.Nominal.supp_smul",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_comm",
+    "Cslib.Nominal.swap_mul_self",
+    "Cslib.Nominal.swap_smul"
+   ],
+   "statement": [
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.absRel_trans": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.fresh_iff_not_mem_supp",
+    "Cslib.Nominal.smul_eq_of_agree_on_supp",
+    "Cslib.Nominal.supp",
+    "Cslib.Nominal.supp_smul",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_comm",
+    "Cslib.Nominal.swap_mul_self",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.absSetoid": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.absRel_refl",
+    "Cslib.Nominal.absRel_symm",
+    "Cslib.Nominal.absRel_trans"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.absSmul": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.absSetoid",
+    "Cslib.Nominal.fresh_iff_not_mem_supp",
+    "Cslib.Nominal.supp",
+    "Cslib.Nominal.supp_smul",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_conj"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.abs_eq_iff": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.absSetoid"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.abs",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.abs_eq_of_same_atom": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.AbsRel",
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.abs_eq_iff",
+    "Cslib.Nominal.swap"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.abs",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.exists_fresh": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.exists_least_support": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports.inter"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.finPermSubgroup": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": []
+  },
+  "Cslib.Nominal.fresh_iff_not_mem_supp": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.mem_supp_iff",
+    "Cslib.Nominal.supp_subset"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.mem_supp_iff": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.supp_subset",
+    "Cslib.Nominal.supp_supports"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.smul_abs": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.abs",
+    "Cslib.Nominal.absSetoid",
+    "Cslib.Nominal.absSmul",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.smul_eq_of_agree_on_supp": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.supp_supports"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.smul_eq_of_fresh": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_mul_self",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_fresh_fresh",
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.supp": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.exists_least_support"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.supp_abs": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.abs_eq_of_same_atom",
+    "Cslib.Nominal.mem_supp_iff",
+    "Cslib.Nominal.smul_abs",
+    "Cslib.Nominal.supp_smul",
+    "Cslib.Nominal.supp_subset",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.abs",
+    "Cslib.Nominal.absSetoid",
+    "Cslib.Nominal.absSmul",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp",
+    "Cslib.Nominal.supports_erase_abs"
+   ]
+  },
+  "Cslib.Nominal.supp_atom": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.mem_supp_iff",
+    "Cslib.Nominal.supp_subset",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.supp_eq_empty_of_equivariant": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.supp_subset",
+    "Cslib.Nominal.supports_empty_of_equivariant"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.IsEquivariant",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.supp_smul": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.Supports.image",
+    "Cslib.Nominal.supp_subset",
+    "Cslib.Nominal.supp_supports"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.supp_subset": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.exists_least_support"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.supp_supports": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.exists_least_support"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.supports_empty_of_equivariant": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.IsEquivariant",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup"
+   ]
+  },
+  "Cslib.Nominal.supports_erase_abs": {
+   "module": "CSLibExt.Foundations.Nominal.Abstraction",
+   "proof": [
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.fresh_iff_not_mem_supp",
+    "Cslib.Nominal.smul_abs",
+    "Cslib.Nominal.smul_eq_of_agree_on_supp",
+    "Cslib.Nominal.supp_supports",
+    "Cslib.Nominal.swap",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.Abs",
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.NominalSet",
+    "Cslib.Nominal.abs",
+    "Cslib.Nominal.absSetoid",
+    "Cslib.Nominal.absSmul",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.supp"
+   ]
+  },
+  "Cslib.Nominal.swap": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.finPermSubgroup"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm"
+   ]
+  },
+  "Cslib.Nominal.swap_comm": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.finPermSubgroup"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_conj": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_inv": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.swap_mul_self"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_mul_self": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_self": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_smul": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_smul_of_fresh_fresh": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.swap_comm",
+    "Cslib.Nominal.swap_conj",
+    "Cslib.Nominal.swap_inv",
+    "Cslib.Nominal.swap_self",
+    "Cslib.Nominal.swap_smul",
+    "Cslib.Nominal.swap_smul_of_supports_not_mem"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Fresh",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_smul_of_ne_of_ne": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.swap_smul"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
+   ]
+  },
+  "Cslib.Nominal.swap_smul_of_supports_not_mem": {
+   "module": "CSLibExt.Foundations.Nominal.Basic",
+   "proof": [
+    "Cslib.Nominal.swap_smul_of_ne_of_ne"
+   ],
+   "statement": [
+    "Cslib.Nominal.FinPerm",
+    "Cslib.Nominal.Supports",
+    "Cslib.Nominal.finPermSubgroup",
+    "Cslib.Nominal.swap"
    ]
   },
   "Cslib.OutputReachability.ReachesOutput": {
@@ -171003,6 +172124,26 @@
     "MathlibExt.Biology.PopulationGenetics.CoalescentFStatistics.hetPair"
    ]
   },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.cauchySeq_apply_of_dense": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.dense_polynomialFunctions": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.floor_mul_eq_zero": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.tendsto_apply_of_dense": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit",
+   "proof": [],
+   "statement": []
+  },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.KimuraFixationProcess.IsWrightFisherSolution": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.KimuraFixationProcess",
    "proof": [
@@ -171076,9 +172217,228 @@
     "MathlibExt.Biology.PopulationGenetics.Diffusion.kimuraFixation"
    ]
   },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.ContinuousRealization": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.continuousRealization": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.isKolmogorovProcess_rawProcess",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.kolmogorovConstant",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel",
+    "MathlibExt.Probability.KolmogorovContinuousModification.exists_continuous_modification",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveLimit_pathMeasure",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.ContinuousRealization"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.isKolmogorovProcess_rawProcess": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_pair_rawMeasure_of_lt",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess_ae_eq_coordinate",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_wfTransitionKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_fourth_increment_le",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveLimit_pathMeasure",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.kolmogorovConstant",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.kolmogorovConstant": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_eval_rawMeasure": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw_map_strictMono",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.map_restrict_pathMeasure",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_eval_zero_rawMeasure": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_eval_rawMeasure",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_zero"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_pair_rawMeasure_of_lt": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw_map_strictMono",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.map_restrict_pathMeasure",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_restrict_modified_eq_coordinate": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.ContinuousRealization",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.continuousRealization",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess_ae_eq_coordinate"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.modifiedProcess",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_restrict_modified_eq_raw": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.ContinuousRealization",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.continuousRealization"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.modifiedProcess",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.modifiedProcess": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.ContinuousRealization",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.continuousRealization"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_add"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.neutralKernel_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess_ae_eq_coordinate": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.map_eval_zero_rawMeasure"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.SamplePath",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawMeasure",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.NeutralWrightFisherRaw.rawProcess"
+   ]
+  },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.cauchySeq_wfStep_pow_floor": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.cauchySeq_apply_of_dense",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.dense_polynomialFunctions",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.floor_mul_eq_zero",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm_wfStep_pow_le",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polySemigroup",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfStep_pow_floor_toContinuousMapOn"
@@ -171102,6 +172462,19 @@
     "MathlibExt.Biology.PopulationGenetics.Diffusion.generator"
    ]
   },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.hasDerivAt_wfSemigroup_toContinuousMapOn": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.SemigroupMoments",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm_wfSemigroup_le",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfSemigroup_nhdsGE_zero",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfSemigroup_sub_div",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_add"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polyGenerator",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
+   ]
+  },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_binomial_div_pow": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
@@ -171109,6 +172482,32 @@
    ],
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.wfLineageProb"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_wfTransitionKernel": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Probability.PositiveOperatorKernel.integral_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_wfTransitionKernel_X_pow": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_wfTransitionKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_X_pow"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.blockCountingGenerator",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
    ]
   },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm_wfSemigroup_le": {
@@ -171208,6 +172607,8 @@
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.blockCountingLeftEigen",
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.blockCountingRightEigen",
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.exp_smul_blockCountingGenerator",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.dense_polynomialFunctions",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.tendsto_apply_of_dense",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.dualMomentPoly",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm_wfSemigroup_le",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polySemigroup",
@@ -171277,6 +172678,41 @@
    ],
    "statement": []
   },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_nonneg"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_add": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_add"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_apply_one"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive"
+   ]
+  },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_X_pow": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
@@ -171293,6 +172729,7 @@
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_add": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.dense_polynomialFunctions",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polySemigroup",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polySemigroup_add",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_toContinuousMapOn"
@@ -171304,8 +172741,24 @@
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_apply_one": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
+    "ContinuousLinearMap.pow_apply_one",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfStep_pow_floor",
-    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_apply_one"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_fourth_increment_le": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.SemigroupMoments",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.hasDerivAt_wfSemigroup_toContinuousMapOn",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polyGenerator",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfSemigroup_nhdsGE_zero",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_nonneg",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_second_increment_le",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_zero"
    ],
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
@@ -171314,8 +172767,10 @@
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_nonneg": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
+    "ContinuousLinearMap.pow_nonneg",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfStep_pow_floor",
-    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_nonneg"
    ],
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
@@ -171324,8 +172779,23 @@
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_of_nonpos": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit.floor_mul_eq_zero",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfStep_pow_floor",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_second_increment_le": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.SemigroupMoments",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.hasDerivAt_wfSemigroup_toContinuousMapOn",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.polyGenerator",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.tendsto_wfSemigroup_nhdsGE_zero",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_nonneg",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_zero"
    ],
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup"
@@ -171357,7 +172827,31 @@
    "proof": [],
    "statement": []
   },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_X_pow": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.sum_binomial_mul_div_pow"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.wfLineageProb",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+   ]
+  },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_apply": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
+   "proof": [],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_apply_one": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
+   "proof": [],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_nonneg": {
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [],
    "statement": [
@@ -171368,11 +172862,67 @@
    "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.Semigroup",
    "proof": [
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.wfLineageProb",
-    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.sum_binomial_mul_div_pow"
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_X_pow"
    ],
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting.wfLineageMatrix",
     "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_add": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_add",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator_comp"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_of_nonpos": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.integral_wfTransitionKernel",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroupPositive_apply_one",
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSemigroup_of_nonpos",
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.kernel_ext_of_forall_integral_continuous_eq",
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_zero": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_of_nonpos"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_zero_apply": {
+   "module": "MathlibExt.Biology.PopulationGenetics.Diffusion.TransitionKernel",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel_zero"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfTransitionKernel"
    ]
   },
   "MathlibExt.Biology.PopulationGenetics.Diffusion.ageDensity": {
@@ -176956,6 +178506,36 @@
     "MathlibExt.Probability.FiniteMarkovChain.IsFiniteMarkovChain"
    ]
   },
+  "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measureReal_markovChainMeasure_exists_eq_last": {
+   "module": "MathlibExt.Biology.PopulationGenetics.WrightFisherChainConstruction",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measureReal_exists_eq_last",
+    "MathlibExt.Probability.FiniteMarkovChain.ae_eval_zero_markovChainMeasure",
+    "MathlibExt.Probability.FiniteMarkovChain.isFiniteMarkovChain_markovChainMeasure",
+    "MathlibExt.Probability.MarkovChainConstruction.markovLiftKernel"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.wrightFisher",
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure",
+    "StochasticMatrix"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measureReal_markovChainMeasure_exists_eq_zero": {
+   "module": "MathlibExt.Biology.PopulationGenetics.WrightFisherChainConstruction",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measureReal_exists_eq_zero",
+    "MathlibExt.Probability.FiniteMarkovChain.ae_eval_zero_markovChainMeasure",
+    "MathlibExt.Probability.FiniteMarkovChain.isFiniteMarkovChain_markovChainMeasure",
+    "MathlibExt.Probability.MarkovChainConstruction.markovLiftKernel"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.wrightFisher",
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure",
+    "StochasticMatrix"
+   ]
+  },
   "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measure_exists_absorbed": {
    "module": "MathlibExt.Biology.PopulationGenetics.WrightFisherChain",
    "proof": [
@@ -176973,6 +178553,21 @@
    "statement": [
     "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.wrightFisher",
     "MathlibExt.Probability.FiniteMarkovChain.IsFiniteMarkovChain"
+   ]
+  },
+  "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measure_markovChainMeasure_exists_absorbed": {
+   "module": "MathlibExt.Biology.PopulationGenetics.WrightFisherChainConstruction",
+   "proof": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.measure_exists_absorbed",
+    "MathlibExt.Probability.FiniteMarkovChain.ae_eval_zero_markovChainMeasure",
+    "MathlibExt.Probability.FiniteMarkovChain.isFiniteMarkovChain_markovChainMeasure",
+    "MathlibExt.Probability.MarkovChainConstruction.markovLiftKernel"
+   ],
+   "statement": [
+    "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.wrightFisher",
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure",
+    "StochasticMatrix"
    ]
   },
   "MathlibExt.Biology.PopulationGenetics.WrightFisherChain.sum_matPow_mul_heterozygosity": {
@@ -217381,6 +218976,18 @@
    "proof": [],
    "statement": []
   },
+  "MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval": {
+   "module": "MathlibExt.Probability.ContinuousPathConvergence",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.ContinuousPathConvergence.tendsto_continuousPath_of_tight_of_finset_eval": {
+   "module": "MathlibExt.Probability.ContinuousPathConvergence",
+   "proof": [
+    "MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval"
+   ],
+   "statement": []
+  },
   "MathlibExt.Probability.ConvergenceInProbability.convergence_in_probability_iff_subsequential_ae_convergence": {
    "module": "MathlibExt.Probability.ConvergenceInProbability",
    "proof": [
@@ -217869,7 +219476,9 @@
   },
   "MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval": {
    "module": "MathlibExt.Probability.Donsker",
-   "proof": [],
+   "proof": [
+    "MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval"
+   ],
    "statement": []
   },
   "MathlibExt.Probability.DonskerWanted.donskerClamp": {
@@ -217912,7 +219521,7 @@
   "MathlibExt.Probability.DonskerWanted.donsker_invariance_principle": {
    "module": "MathlibExt.Probability.Donsker",
    "proof": [
-    "MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval",
+    "MathlibExt.Probability.ContinuousPathConvergence.tendsto_continuousPath_of_tight_of_finset_eval",
     "MathlibExt.Probability.DonskerWanted.donskerProcess_apply_eq",
     "MathlibExt.Probability.DonskerWanted.donskerWeightCM",
     "MathlibExt.Probability.DonskerWanted.etemadi_maximal_inequality"
@@ -217998,6 +219607,17 @@
     "StochasticMatrix"
    ]
   },
+  "MathlibExt.Probability.FiniteMarkovChain.ae_eval_zero_markovChainMeasure": {
+   "module": "MathlibExt.Probability.FiniteMarkovChainConstruction",
+   "proof": [
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure_initial_distribution"
+   ],
+   "statement": [
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure",
+    "StochasticMatrix"
+   ]
+  },
   "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel": {
    "module": "MathlibExt.Probability.FiniteMarkovChain",
    "proof": [],
@@ -218010,6 +219630,20 @@
    "proof": [],
    "statement": [
     "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "StochasticMatrix"
+   ]
+  },
+  "MathlibExt.Probability.FiniteMarkovChain.isFiniteMarkovChain_markovChainMeasure": {
+   "module": "MathlibExt.Probability.FiniteMarkovChainConstruction",
+   "proof": [
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel_apply",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure_condDistrib",
+    "MathlibExt.Probability.MarkovChainConstruction.markovLiftKernel"
+   ],
+   "statement": [
+    "MathlibExt.Probability.FiniteMarkovChain.IsFiniteMarkovChain",
+    "MathlibExt.Probability.FiniteMarkovChain.finiteChainKernel",
+    "MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure",
     "StochasticMatrix"
    ]
   },
@@ -219574,6 +221208,14 @@
     "MathlibExt.Probability.KolmogorovContinuity.dyadicRationals"
    ]
   },
+  "MathlibExt.Probability.KolmogorovContinuousModification.exists_continuous_modification": {
+   "module": "MathlibExt.Probability.KolmogorovContinuousModification",
+   "proof": [
+    "MathlibExt.Probability.KolmogorovContinuity.dyadicRationals",
+    "MathlibExt.Probability.KolmogorovContinuity.kolmogorov_ae_holder_on_dyadics_of_isKolmogorovProcess"
+   ],
+   "statement": []
+  },
   "MathlibExt.Probability.KolmogorovExtensionWanted.kolmogorov_extension": {
    "module": "MathlibExt.Probability.KolmogorovExtension",
    "proof": [],
@@ -220291,6 +221933,153 @@
     "MathlibExt.Probability.MarkovChainPath.shiftPath"
    ]
   },
+  "MathlibExt.Probability.MarkovSemigroupProjective.eraseCoordinate": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.exists_projectiveLimit": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.KolmogorovExtensionWanted.kolmogorov_extension",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveMeasureFamily_finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_comp": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_eraseCoordinate": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_eraseCoordinate_zero"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.eraseCoordinate",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_eraseCoordinate_zero": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_comp"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.eraseCoordinate",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_strictMono": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.eraseCoordinate",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_eraseCoordinate"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw_map_strictMono": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainKernel_map_strictMono"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveLimit_pathMeasure": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.exists_projectiveLimit"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveMeasureFamily_finiteLaw": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw_map_strictMono",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderRestriction"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.map_ordered_pathMeasure": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.map_restrict_pathMeasure",
+    "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteChainLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.map_restrict_pathMeasure": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.isProjectiveLimit_pathMeasure"
+   ],
+   "statement": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw",
+    "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure"
+   ]
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.orderMeasurableEquiv": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.orderRestriction": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.MarkovSemigroupProjective.pathMeasure": {
+   "module": "MathlibExt.Probability.MarkovSemigroupProjective",
+   "proof": [
+    "MathlibExt.Probability.MarkovSemigroupProjective.exists_projectiveLimit",
+    "MathlibExt.Probability.MarkovSemigroupProjective.finiteLaw"
+   ],
+   "statement": []
+  },
   "MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid": {
    "module": "MathlibExt.Probability.McDiarmid",
    "proof": [
@@ -220546,6 +222335,70 @@
    "proof": [],
    "statement": [
     "MathlibExt.Probability.PoissonWeakConvergence.poissonApproxProb"
+   ]
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveLinearMap": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveLinearMap"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.integral_markovKernelOfPositiveOperator": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator"
+   ],
+   "statement": [
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ]
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.kernel_ext_of_forall_integral_continuous_eq": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [],
+   "statement": []
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator"
+   ],
+   "statement": []
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator_comp": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.integral_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.kernel_ext_of_forall_integral_continuous_eq"
+   ],
+   "statement": [
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ]
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator_id": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.exists_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.integral_markovKernelOfPositiveOperator",
+    "MathlibExt.Probability.PositiveOperatorKernel.kernel_ext_of_forall_integral_continuous_eq"
+   ],
+   "statement": [
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
+   ]
+  },
+  "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator_id_apply": {
+   "module": "MathlibExt.Probability.PositiveOperatorKernel",
+   "proof": [
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator_id"
+   ],
+   "statement": [
+    "MathlibExt.Probability.PositiveOperatorKernel.markovKernelOfPositiveOperator"
    ]
   },
   "MathlibExt.Probability.ProductBondPercolation.AlmostSurely": {
@@ -231837,6 +233690,106 @@
     "MetaMathlibExt.ComplexityTheory.P"
    ]
   },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuModelCheck": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuModelCheckDec": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.Closed",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeList",
+    "MetaMathlibExt.BitstringEncoding",
+    "MetaMathlibExt.BitstringEncoding.bitDecode",
+    "MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode",
+    "MetaMathlibExt.BitstringEncoding.bitEncode",
+    "MetaMathlibExt.BitstringEncoding.delimit",
+    "MetaMathlibExt.BitstringEncoding.undelimit",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocks",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocksAux",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuModelCheck"
+   ],
+   "statement": [
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuSat": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuSatDec": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.Closed",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeList",
+    "MetaMathlibExt.BitstringEncoding",
+    "MetaMathlibExt.BitstringEncoding.bitDecode",
+    "MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode",
+    "MetaMathlibExt.BitstringEncoding.bitEncode",
+    "MetaMathlibExt.BitstringEncoding.delimit",
+    "MetaMathlibExt.BitstringEncoding.undelimit",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocks",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocksAux",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuSat"
+   ],
+   "statement": [
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuValid": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.sat"
+   ],
+   "statement": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuValidDec": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula",
+    "Cslib.Modal.LinearMuCalculus.LinearMuFormula.Closed",
+    "Cslib.Modal.LinearMuCalculus.linearMuDecodeList",
+    "MetaMathlibExt.BitstringEncoding",
+    "MetaMathlibExt.BitstringEncoding.bitDecode",
+    "MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode",
+    "MetaMathlibExt.BitstringEncoding.bitEncode",
+    "MetaMathlibExt.BitstringEncoding.delimit",
+    "MetaMathlibExt.BitstringEncoding.undelimit",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocks",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocksAux",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuValid"
+   ],
+   "statement": [
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linear_mu_calculus_pspace_complete": {
+   "module": "WantedExt.Complexity.KeyTheorems.LinearMuCalculusPSPACECompleteWanted",
+   "proof": [],
+   "statement": [
+    "Cslib.Complexity.Classes.PSPACE",
+    "Cslib.CookLevin.PolyManyOneRed",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuModelCheckDec",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuSatDec",
+    "MetaMathlibExt.Complexity.KeyTheorems.LinearMuCalculusPSPACEComplete.linearMuValidDec",
+    "MetaMathlibExt.ComplexityTheory.DecisionComplexityClass",
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
+   ]
+  },
   "MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamNo": {
    "module": "WantedExt.Complexity.KeyTheorems.LocalHamiltonianQMAWanted",
    "proof": [
@@ -232247,6 +234200,47 @@
    "proof": [],
    "statement": [
     "MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.NPOProblem"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.MuCalculusEXPTIMEComplete.muCalculusSatDec": {
+   "module": "WantedExt.Complexity.KeyTheorems.MuCalculusEXPTIMECompleteWanted",
+   "proof": [
+    "Cslib.Modal.MuCalculus.MuFormula",
+    "Cslib.Modal.MuCalculus.MuFormula.Closed",
+    "Cslib.Modal.MuCalculus.muDecodeList",
+    "MetaMathlibExt.BitstringEncoding",
+    "MetaMathlibExt.BitstringEncoding.bitDecode",
+    "MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode",
+    "MetaMathlibExt.BitstringEncoding.bitEncode",
+    "MetaMathlibExt.BitstringEncoding.delimit",
+    "MetaMathlibExt.BitstringEncoding.undelimit",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocks",
+    "MetaMathlibExt.BitstringEncoding.undelimitBlocksAux",
+    "MetaMathlibExt.Complexity.KeyTheorems.MuCalculusEXPTIMEComplete.muSat"
+   ],
+   "statement": [
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.MuCalculusEXPTIMEComplete.muSat": {
+   "module": "WantedExt.Complexity.KeyTheorems.MuCalculusEXPTIMECompleteWanted",
+   "proof": [
+    "Cslib.Modal.KripkeModel",
+    "Cslib.Modal.MuCalculus.sat"
+   ],
+   "statement": [
+    "Cslib.Modal.MuCalculus.MuFormula"
+   ]
+  },
+  "MetaMathlibExt.Complexity.KeyTheorems.MuCalculusEXPTIMEComplete.mu_calculus_sat_exp_complete": {
+   "module": "WantedExt.Complexity.KeyTheorems.MuCalculusEXPTIMECompleteWanted",
+   "proof": [],
+   "statement": [
+    "Cslib.Complexity.Classes.EXP",
+    "Cslib.CookLevin.PolyManyOneRed",
+    "MetaMathlibExt.Complexity.KeyTheorems.MuCalculusEXPTIMEComplete.muCalculusSatDec",
+    "MetaMathlibExt.ComplexityTheory.DecisionComplexityClass",
+    "MetaMathlibExt.ComplexityTheory.DecisionProblem"
    ]
   },
   "MetaMathlibExt.Complexity.KeyTheorems.NC1SubsetL.nc1_subset_logspace": {

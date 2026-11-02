@@ -15,3 +15,4 @@ Mathematical biology models populations, genomes, and biochemical networks, from
 - [Population and evolutionary dynamics](population-dynamics/README.md)
 - [Reaction–diffusion and pattern formation](pattern-formation/README.md)
 - [Mathematical epidemiology](epidemiology/README.md)
+- [Not yet classified](not-yet-classified/README.md)

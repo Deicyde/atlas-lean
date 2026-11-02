@@ -7,17 +7,20 @@ proof: formalized
 lean: MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval
 ---
 
-# Probability measures on continuous paths are determined by finite-dimensional distributions
+# Continuous Map measure ext of finset eval
 
-**Probability measures on continuous paths are determined by finite-dimensional
-distributions.** Let $\mu$ and $\nu$ be probability measures on the space $C([0,1], \mathbb{R})$
-of continuous real functions on $[0,1]$, with its Borel $\sigma$-algebra for the topology of
-uniform convergence. If for every finite set $I \subseteq [0,1]$ the image measures of $\mu$ and
-$\nu$ under the restriction map $f \mapsto f|_I$ to $\mathbb{R}^I$ coincide, then $\mu = \nu$.
+Probability measures on `C([0,1], ℝ)` are determined by their finite-dimensional
+distributions. Compatibility wrapper around
+`MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval`
+at `T = 1`; the projective-limit argument lives there, not here.
 
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Continuous Path measure ext of finset eval](../../not-yet-classified/continuous-path-convergence/continuous-path-measure-ext-of-finset-ev.md)
 
 ## Sources
 

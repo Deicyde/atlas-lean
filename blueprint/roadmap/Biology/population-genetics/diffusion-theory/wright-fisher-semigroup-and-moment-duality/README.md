@@ -9,12 +9,15 @@ navigation: module
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
 - [Wright–Fisher step is the Bernstein operator](wf-step-apply.md)
 - [One Wright–Fisher generation is a sup-norm contraction](norm-wf-step-le.md)
-- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
+- [Wf Step apply one](wf-step-apply-one.md)
+- [Wf Step nonneg](wf-step-nonneg.md)
+- [Norm wf Step pow le](norm-wf-step-pow-le.md)
 
 ## Moment duality for the chain
 
 - [Moment duality, one generation (polynomial identity)](sum-binomial-mul-div-pow.md)
 - [Moment duality, one generation](integral-binomial-div-pow.md)
+- [Wf Step X pow](wf-step-x-pow.md)
 - [Moment duality, `m` generations](wf-step-pow-x-pow.md)
 
 ## The dual semigroup on polynomials
@@ -29,7 +32,7 @@ navigation: module
 
 ## The semigroup on continuous functions
 
-- [Iterated Wright–Fisher steps form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
+- [Cauchy Seq wf Step pow floor](cauchy-seq-wf-step-pow-floor.md)
 - [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
 - [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
 - [Contraction](norm-wf-semigroup-le.md)

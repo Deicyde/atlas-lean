@@ -33,7 +33,7 @@ and uniqueness of laws on $C([0,1], \mathbb{R})$ from finite-dimensional distrib
 
 ## Proof depends on
 
-- [Probability measures on continuous paths are determined by finite-dimensional distributions](continuous-map-measure-ext-of-finset-eva.md)
+- [Tendsto continuous Path of tight of finset eval](../../not-yet-classified/continuous-path-convergence/tendsto-continuous-path-of-tight-of-fins.md)
 - [Explicit formula for the polygonal partial-sum process](donsker-process-apply-eq.md)
 - [Polygonal interpolation weight as a continuous function](donsker-weight-cm.md)
 - [Etemadi's maximal inequality](etemadi-maximal-inequality.md)

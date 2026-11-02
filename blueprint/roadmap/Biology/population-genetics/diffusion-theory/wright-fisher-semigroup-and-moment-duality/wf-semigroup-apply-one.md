@@ -16,8 +16,10 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Proof depends on
 
+- [Pow apply one](../../../not-yet-classified/chain-limit/pow-apply-one.md)
 - [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
+- [Wf Step apply one](wf-step-apply-one.md)
 
 ## Sources
 
