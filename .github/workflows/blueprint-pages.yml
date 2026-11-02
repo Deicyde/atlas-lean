@@ -100,12 +100,12 @@ jobs:
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
-  build:
-    # ci.yml has a job named build too, and required checks are matched by name.
-    name: build the wiki
+  # Check and audit read the pages but write nothing the site needs, so they
+  # run beside the build, and a deploy waits for the longer of the two jobs
+  # rather than for both in turn.
+  check:
+    name: check the wiki
     needs: pick
-    # A daily run with nothing new to try builds nothing, and neither does a
-    # change that touches nothing the build reads.
     if: >-
       (github.event_name != 'schedule' || needs.pick.outputs.new == 'true') &&
       needs.pick.outputs.skip != 'true'
@@ -140,6 +140,56 @@ jobs:
             exit 1
           }
 
+      # A run trying a newer Autoform checks the pages that Autoform writes, which
+      # are the ones the build publishes and the pin job commits.
+      - name: Regenerate the pages with the newer Autoform
+        if: needs.pick.outputs.new == 'true'
+        run: >-
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          python scripts/generate_wiki.py
+
+      # Rejects cycles and dangling links, and fails when a node names a Lean
+      # declaration that is not in the sources.
+      - name: Validate the theorem DAG and its declarations
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform check blueprint --lean-root .
+
+      # Audit findings are quality debt rather than publication syntax errors.
+      # Keep them visible on every build without hiding a usable in-progress wiki.
+      - name: Report roadmap quality findings
+        continue-on-error: true
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform audit blueprint --lean-root .
+
+  build:
+    # ci.yml has a job named build too, and required checks are matched by name.
+    name: build the wiki
+    needs: pick
+    # A daily run with nothing new to try builds nothing, and neither does a
+    # change that touches nothing the build reads.
+    if: >-
+      (github.event_name != 'schedule' || needs.pick.outputs.new == 'true') &&
+      needs.pick.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    env:
+      AUTOFORM_REF: ${{ needs.pick.outputs.ref }}
+    steps:
+      # Render indexes the Lean sources as check does, so v1 stays out here too.
+      - name: Check out project
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: |
+            /*
+            !/v1/
+          sparse-checkout-cone-mode: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
       # The generator reads the Lean sources through Autoform's index, so a newer
       # Autoform may write some pages differently. A run trying one builds from
       # the pages it writes, and hands them with the new pin to the pin job as a
@@ -171,21 +221,6 @@ jobs:
           path: ${{ runner.temp }}/pin.patch
           if-no-files-found: error
           retention-days: 1
-
-      # Rejects cycles and dangling links, and fails when a node names a Lean
-      # declaration that is not in the sources.
-      - name: Validate the theorem DAG and its declarations
-        run: >-
-          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          autoform check blueprint --lean-root .
-
-      # Audit findings are quality debt rather than publication syntax errors.
-      # Keep them visible on every build without hiding a usable in-progress wiki.
-      - name: Report roadmap quality findings
-        continue-on-error: true
-        run: >-
-          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          autoform audit blueprint --lean-root .
 
       # Writes site-src/: statement boxes, derived statuses, the shared DAG viewer,
       # and permalinks into the Lean code at this exact commit.
@@ -220,20 +255,23 @@ jobs:
   # The check to require before merging. A skipped job counts as passing, so
   # the build alone would pass when the pick job failed and skipped it.
   wiki:
-    needs: [pick, build]
+    needs: [pick, check, build]
     if: always()
     runs-on: ubuntu-latest
     steps:
-      - name: Require a build that passed or had nothing to check
+      - name: Require checks and a build that passed or had nothing to check
         env:
           PICK: ${{ needs.pick.result }}
+          CHECK: ${{ needs.check.result }}
           BUILD: ${{ needs.build.result }}
         run: |
-          echo "pick: $PICK, build: $BUILD"
-          [ "$PICK" = success ] && { [ "$BUILD" = success ] || [ "$BUILD" = skipped ]; }
+          echo "pick: $PICK, check: $CHECK, build: $BUILD"
+          [ "$PICK" = success ] &&
+            { [ "$CHECK" = success ] || [ "$CHECK" = skipped ]; } &&
+            { [ "$BUILD" = success ] || [ "$BUILD" = skipped ]; }
 
   pin:
-    needs: [pick, build, deploy]
+    needs: [pick, check, build, deploy]
     # Scheduled runs are on the default branch; the event carries no repository.
     if: >-
       needs.pick.outputs.new == 'true' &&
@@ -285,7 +323,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (github.event_name != 'pull_request' &&
       (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/wiki/')))
-    needs: build
+    needs: [check, build]
     runs-on: ubuntu-latest
     permissions:
       pages: write
