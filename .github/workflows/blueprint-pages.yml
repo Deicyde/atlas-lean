@@ -17,19 +17,11 @@ on:
       - ".github/autoform-ref"
       - ".github/workflows/blueprint-pages.yml"
       - "!v1/**"
-  # The same paths, so a pull request that changes the Lean is checked against
-  # the wiki before it merges.
+  # Every pull request and merge queue group runs, whatever it changes, so the
+  # wiki job can be a required check. One that changes none of the paths above
+  # skips the build; see the pick job.
   pull_request:
-    paths:
-      - "**/*.lean"
-      - "blueprint/**"
-      - "scripts/**"
-      - "mkdocs.yml"
-      - "theme/**"
-      - "hooks/**"
-      - ".github/autoform-ref"
-      - ".github/workflows/blueprint-pages.yml"
-      - "!v1/**"
+  merge_group:
   workflow_dispatch:
     inputs:
       newest:
@@ -45,11 +37,12 @@ permissions:
 env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
 
-# Runs that publish queue one behind another, so deploys and pins land in
-# order. Each pull request gets a group of its own, where a newer push replaces
-# its run, so pull requests don't cancel each other's checks or a waiting deploy.
+# Runs that publish share one group, so no two deploy or pin at once, and a
+# newer one replaces any still waiting. Each pull request and merge queue group
+# gets a group of its own, where a newer push to the pull request replaces its
+# run, so checks don't cancel each other or a waiting deploy.
 concurrency:
-  group: blueprint-pages-${{ github.event_name == 'pull_request' && github.ref || 'publish' }}
+  group: blueprint-pages-${{ (github.event_name == 'pull_request' || github.event_name == 'merge_group') && github.ref || 'publish' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
@@ -60,12 +53,13 @@ jobs:
   # commit that fails leaves the pin and the published site as they were.
   # Reverting a pin commit doesn't hold the wiki back, since the next run tries
   # the same commit again; disable this workflow to hold it. GitHub schedules
-  # runs only on the default branch, which this branch is.
+  # runs only on the default branch, and only that branch is pinned.
   pick:
     runs-on: ubuntu-latest
     outputs:
       ref: ${{ steps.pick.outputs.ref }}
       new: ${{ steps.pick.outputs.new }}
+      skip: ${{ steps.changes.outputs.skip }}
     steps:
       - name: Check out project
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -85,10 +79,36 @@ jobs:
           fi
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
 
+      # The paths the push trigger lists, as one pattern. Both sides of a rename
+      # are listed, and names aren't quoted, so a path that leaves the list or
+      # holds a non-ASCII character still counts.
+      - name: Check whether the change touches what the build reads
+        id: changes
+        if: github.event_name == 'pull_request' || github.event_name == 'merge_group'
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
+        run: |
+          git fetch --quiet --depth=1 origin "$BASE"
+          git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
+          if grep -v '^v1/' "$RUNNER_TEMP/changed" | grep -qE \
+            -e '\.lean$' \
+            -e '^(blueprint|scripts|theme|hooks)/' \
+            -e '^mkdocs\.yml$' \
+            -e '^\.github/(autoform-ref|workflows/blueprint-pages\.yml)$'; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    # ci.yml has a job named build too, and required checks are matched by name.
+    name: build the wiki
     needs: pick
-    # A daily run with nothing new to try builds nothing.
-    if: github.event_name != 'schedule' || needs.pick.outputs.new == 'true'
+    # A daily run with nothing new to try builds nothing, and neither does a
+    # change that touches nothing the build reads.
+    if: >-
+      (github.event_name != 'schedule' || needs.pick.outputs.new == 'true') &&
+      needs.pick.outputs.skip != 'true'
     runs-on: ubuntu-latest
     env:
       AUTOFORM_REF: ${{ needs.pick.outputs.ref }}
@@ -123,7 +143,10 @@ jobs:
       # The generator reads the Lean sources through Autoform's index, so a newer
       # Autoform may write some pages differently. A run trying one builds from
       # the pages it writes, and hands them with the new pin to the pin job as a
-      # patch. A page it would delete stops the run for a person to look at.
+      # patch. A page it would delete stops the run for a person to look at, and
+      # so does a changed `lean:` target: lean-dependencies.json names articles
+      # by them, and only the v2 dependencies check can regenerate it, on a pull
+      # request that bumps the pin.
       - name: Regenerate the pages with the newer Autoform
         if: needs.pick.outputs.new == 'true'
         run: |
@@ -132,6 +155,10 @@ jobs:
           git add -A blueprint .github/autoform-ref
           if git diff --cached --no-renames --name-only --diff-filter=D -- blueprint | grep .; then
             echo "::error::Autoform ${AUTOFORM_REF:0:8} would delete the pages listed above."
+            exit 1
+          fi
+          if git diff --cached -U0 -- blueprint/roadmap | grep -E '^[-+]lean:'; then
+            echo "::error::Autoform ${AUTOFORM_REF:0:8} changes the lean: targets above. Bump .github/autoform-ref in a pull request, and apply the patch its v2 dependencies check makes."
             exit 1
           fi
           git diff --cached --binary > "$RUNNER_TEMP/pin.patch"
@@ -190,9 +217,28 @@ jobs:
         with:
           path: site
 
+  # The check to require before merging. A skipped job counts as passing, so
+  # the build alone would pass when the pick job failed and skipped it.
+  wiki:
+    needs: [pick, build]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require a build that passed or had nothing to check
+        env:
+          PICK: ${{ needs.pick.result }}
+          BUILD: ${{ needs.build.result }}
+        run: |
+          echo "pick: $PICK, build: $BUILD"
+          [ "$PICK" = success ] && { [ "$BUILD" = success ] || [ "$BUILD" = skipped ]; }
+
   pin:
     needs: [pick, build, deploy]
-    if: needs.pick.outputs.new == 'true' && github.ref == 'refs/heads/wiki/autoform-blueprint'
+    # Scheduled runs are on the default branch; the event carries no repository.
+    if: >-
+      needs.pick.outputs.new == 'true' &&
+      (github.event_name == 'schedule' ||
+      github.ref_name == github.event.repository.default_branch)
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -232,7 +278,7 @@ jobs:
             exit 1
           fi
           git commit --quiet -m "Build the site with Autoform ${REF:0:8}"
-          git push --quiet origin HEAD:wiki/autoform-blueprint
+          git push --quiet origin "HEAD:$GITHUB_REF_NAME"
 
   deploy:
     if: >-

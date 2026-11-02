@@ -14,7 +14,11 @@ density $1/2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Density of a set](has-density.md)
+
+## Proof depends on
+
+- [Partial density](partial-density.md)
 
 ## Sources
 
