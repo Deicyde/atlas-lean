@@ -6,8 +6,8 @@
 #
 # Run from a clean atlas-lean checkout of the wiki branch without v1/, as the
 # Pages workflow checks it out (git sparse-checkout set --no-cone '/*' '!/v1/').
-# PYTHON must import Autoform from a git checkout at the AUTOFORM_REF the
-# workflow pins (the run checks), and
+# PYTHON must import Autoform from a git checkout at the commit in
+# .github/autoform-ref, the one the workflow builds with (the run checks), and
 # MKDOCS must run the site build the workflow pins (a command with arguments,
 # such as a uvx line, is fine); `claude` must be on PATH. LIMIT caps the
 # articles audited in one run (default 600). JOBS sets agent concurrency.
@@ -48,13 +48,15 @@ replay() {
 }
 # The checks must run with the Autoform the workflow pins.
 pinned_autoform() {
-  want=$(sed -n 's/^ *AUTOFORM_REF: "\([0-9a-f]*\)".*/\1/p' .github/workflows/blueprint-pages.yml)
+  want=$(cat .github/autoform-ref)
   here=$("$PYTHON" -c 'import autoform_cli, pathlib; print(pathlib.Path(autoform_cli.__file__).resolve().parents[1])')
   if [ -z "$want" ] || [ "$(git -C "$here" rev-parse HEAD 2>/dev/null)" != "$want" ]; then
-    echo "the Autoform in $here is not AUTOFORM_REF ${want:-?}; check that out, and the next run replays any unpushed commits" >&2
+    echo "the Autoform in $here is not ${want:-?} from .github/autoform-ref; check that out, and the next run replays any unpushed commits" >&2
     exit 1
   fi
 }
+# A hash of the pinned tools: the Autoform commit and the workflow that pins the site build.
+tools() { cat .github/autoform-ref .github/workflows/blueprint-pages.yml | git hash-object --stdin; }
 # Regenerates the wiki and runs the checks the Pages workflow requires.
 gates() {
   "$PYTHON" scripts/generate_wiki.py
@@ -118,10 +120,10 @@ for attempt in 1 2 3; do
     exit 0
   fi
   # The branch moved during the run: replay this run's commits on top and check them again.
-  workflow=$(git hash-object .github/workflows/blueprint-pages.yml)
+  pinned=$(tools)
   replay
-  if [ "$(git hash-object .github/workflows/blueprint-pages.yml)" != "$workflow" ]; then
-    echo "origin/$BRANCH changed the Pages workflow; update the tools it pins, and the next run replays the commits" >&2
+  if [ "$(tools)" != "$pinned" ]; then
+    echo "origin/$BRANCH changed the Autoform pin or the Pages workflow; update the tools they pin, and the next run replays the commits" >&2
     exit 1
   fi
   gates
