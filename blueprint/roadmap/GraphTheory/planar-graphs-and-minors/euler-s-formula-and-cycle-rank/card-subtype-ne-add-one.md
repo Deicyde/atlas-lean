@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.card_subtype_ne_add_one
 ---
 
 # Removing one element lowers cardinality by one

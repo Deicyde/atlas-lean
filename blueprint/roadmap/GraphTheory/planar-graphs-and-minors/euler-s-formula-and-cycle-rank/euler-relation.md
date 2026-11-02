@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.euler_relation
 ---
 
 # Combinatorial Euler relation for finite graphs
@@ -10,7 +13,13 @@ faceCount G` is defined from the cycle rank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Face count of a finite graph from its cycle rank](face-count.md)
+
+## Proof depends on
+
+- [Edgeless graph has one component per vertex](card-components-bot.md)
+- [Removing one element lowers cardinality by one](card-subtype-ne-add-one.md)
+- [Cycle rank of a finite graph](nullity.md)
 
 ## Sources
 

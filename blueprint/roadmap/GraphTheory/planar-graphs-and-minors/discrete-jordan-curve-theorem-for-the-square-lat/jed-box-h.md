@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jed_boxH
 ---
 
 # Boundary of a 3 by 3 rectangle as a graph
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Twelve boundary edges of a 3 by 3 rectangle](jed-box-edges.md)
+- [Lattice graph spanned by an edge set](jed-primal-graph.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellGaussBonnet.deltaE
 ---
 
 # Number of new edges when a cell is added
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Indicator of a Boolean](b-i.md)
 
 ## Sources
 

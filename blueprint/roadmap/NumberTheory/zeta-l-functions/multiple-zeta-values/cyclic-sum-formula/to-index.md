@@ -14,7 +14,7 @@ its weight is $l_1 + \cdots + l_r$.
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Sources
 

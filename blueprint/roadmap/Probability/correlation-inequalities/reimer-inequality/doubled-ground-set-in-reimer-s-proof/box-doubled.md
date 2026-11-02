@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.boxDoubled
 ---
 
 # Doubled family of disjoint pairs
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Encoding a pair of finsets in the doubled ground set](dbl.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.wcl_CorrectColoringResidue
 ---
 
 # Cut coloring separating the ends of a dual edge
@@ -12,6 +14,15 @@ in the face-region graph of `H` with `f0g0` deleted.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Even-flip condition on closed lattice walks](wcl-closed-even.md)
+- [Cut flip relation of a lattice graph and a dual edge](wcl-cut-flip.md)
+- [Face-region graph of a square-lattice subgraph](whb-face-region.md)
+- [Cut coloring of a subgraph with an extra dual edge](whc-cut-coloring.md)
 
 ## Sources
 

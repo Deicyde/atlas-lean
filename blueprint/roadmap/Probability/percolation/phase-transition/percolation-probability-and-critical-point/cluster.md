@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.cluster
 ---
 
 # Open cluster of a site
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Connection by an open path](connected.md)
 
 ## Sources
 

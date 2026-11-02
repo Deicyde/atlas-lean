@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.dbl
 ---
 
 # Encoding a pair of finsets in the doubled ground set

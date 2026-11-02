@@ -13,7 +13,7 @@ lean: StatMech.BirkhoffAE.isInvariantSet_iff_preimage_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Invariant set of a map](is-invariant-set.md)
 
 ## Sources
 

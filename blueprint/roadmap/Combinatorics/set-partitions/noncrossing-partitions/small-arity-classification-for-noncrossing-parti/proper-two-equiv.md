@@ -14,7 +14,7 @@ partition; in particular the discrete partition is the only proper one.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
 - [The indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete.md)
 
 ## Proof depends on

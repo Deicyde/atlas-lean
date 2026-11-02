@@ -17,10 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Noncrossing partition](../noncrossing-partitions/basic/noncrossing-partition.md)
-- [Crossing in a set partition](../noncrossing-partitions/basic/has-crossing.md)
-- [Noncrossing set partition](../noncrossing-partitions/basic/is-noncrossing.md)
-- [Set partition](../noncrossing-partitions/basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Crossing in a set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/has-crossing.md)
+- [Noncrossing set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Sources
 

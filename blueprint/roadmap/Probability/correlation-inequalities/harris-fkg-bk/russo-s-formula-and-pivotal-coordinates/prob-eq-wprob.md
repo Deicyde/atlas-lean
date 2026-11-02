@@ -12,7 +12,9 @@ lean: StatMech.prob_eq_wprob
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli weight of an event](prob.md)
+- [Weighted probability of an event](../van-den-berg-kesten-inequality/wprob.md)
 
 ## Sources
 

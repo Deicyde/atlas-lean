@@ -22,7 +22,7 @@ bit string $x$, $L$ accepts $x$ exactly when HAMPATH accepts $f(x)$.
 
 ## Proof depends on
 
-- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/cook-levin-theorem/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/np-hardness-of-binary-index-sat/sat-dec-np-hard.md)
 - [SAT ≤ HAMPATH is polynomial-time](is-poly-time-reduce-ham.md)
 - [NP-hardness transfers along reductions](../../../satisfiability/3-satisfiability/np-hard-of-poly-many-one-red.md)
 - [The SAT-to-HAMPATH reduction map](../part-01/reduce-ham.md)

@@ -17,11 +17,11 @@ from $\sigma$ (no variables when $m \le n$), where $t(\tau)$ is the value of $t$
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Diagrams ordered from a variable](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from.md)
 - [Variables below a bound](vars-lt.md)
 - [Model count by enumeration](count-models.md)
-- [Evaluation of a binary decision diagram](../basic/eval.md)
+- [Evaluation of a binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/eval.md)
 - [One-pass satisfy-count from a variable](sat-count-from.md)
 
 ## Proof depends on

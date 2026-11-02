@@ -16,12 +16,12 @@ For $n = 0$ there is no such $a$, so the statement is vacuous.
 
 ## Depends on
 
-- [Block of a noncrossing partition](../basic/block.md)
+- [Block of a noncrossing partition](../noncrossing-partitions-and-the-refinement-order/block.md)
 - [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Proof depends on
 
-- [Set partition](../basic/set-partition.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Sources
 

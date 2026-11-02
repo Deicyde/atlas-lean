@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellPinch.pinchCount_insert
 ---
 
 # Pinch count changes only at the corners of a new cell
@@ -9,7 +12,17 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four corners of a unit cell](corners-of.md)
+- [Number of pinch points](pinch-count.md)
+- [Pinch point indicator](pinch-w.md)
+
+## Proof depends on
+
+- [Vertices of a cell complex](cell-verts-2.md)
+- [Characterization of the corners of a unit cell](mem-corners-of-iff.md)
+- [Vertices of a cell complex after adding a cell](cell-verts-insert.md)
+- [Pinch point of a set of unit cells](pinch-at.md)
+- [A pinch point is a vertex](pinch-at-mem-cell-verts.md)
 
 ## Sources
 

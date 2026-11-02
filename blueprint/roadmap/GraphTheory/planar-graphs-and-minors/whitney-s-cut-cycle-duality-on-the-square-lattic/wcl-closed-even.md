@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.wcl_ClosedEven
 ---
 
 # Even-flip condition on closed lattice walks
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Number of flips along a lattice walk](wcl-flip-count.md)
 
 ## Sources
 

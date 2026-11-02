@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.whc_CutColoring
 ---
 
 # Cut coloring of a subgraph with an extra dual edge
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Primal edge between two faces lies in a subgraph](whc-is-cross.md)
 
 ## Sources
 

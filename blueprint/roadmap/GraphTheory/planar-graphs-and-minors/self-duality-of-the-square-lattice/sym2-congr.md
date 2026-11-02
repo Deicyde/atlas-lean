@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.sym2Congr
 ---
 
 # Unordered pairs under an equivalence

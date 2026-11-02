@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.dualLattice
 ---
 
 # Dual square lattice
@@ -10,7 +12,11 @@ points, so as a graph it is `hypercubicLattice 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
 
 ## Sources
 

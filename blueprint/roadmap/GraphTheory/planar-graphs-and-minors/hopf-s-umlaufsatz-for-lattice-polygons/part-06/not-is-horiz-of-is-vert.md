@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.StraightCorner.not_isHoriz_of_isVert
 ---
 
 # A vertical direction is not horizontal
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
+- [Vertical lattice direction](../part-10/is-vert-edge.md)
 
 ## Sources
 

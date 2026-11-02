@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellEulerBound.topEdges
 ---
 
 # Top edges of a set of cells
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit cell of the plane](cell.md)
+- [Lattice point as a vertex of the cell complex](vtx.md)
+
+## Proof depends on
+
+- [Top edge of a unit cell](top-edge.md)
 
 ## Sources
 

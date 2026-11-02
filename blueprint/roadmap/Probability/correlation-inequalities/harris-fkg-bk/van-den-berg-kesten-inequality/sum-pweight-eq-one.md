@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.sum_pweight_eq_one
 ---
 
 # Product probability weight has total mass one
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Product weight of a configuration](pweight.md)
 
 ## Sources
 

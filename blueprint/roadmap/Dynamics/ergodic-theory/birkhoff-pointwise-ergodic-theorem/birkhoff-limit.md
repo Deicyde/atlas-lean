@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.BirkhoffAE.birkhoffLimit
 ---
 
 # Birkhoff limit of a function
@@ -11,6 +13,10 @@ almost everywhere by `tendsto_birkhoffAverage_ae`).
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Upper limit of Birkhoff averages](f-star.md)
 
 ## Sources
 

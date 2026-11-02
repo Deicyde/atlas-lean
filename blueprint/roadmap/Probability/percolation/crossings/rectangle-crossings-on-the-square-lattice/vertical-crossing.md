@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.TwoDim.VerticalCrossing
 ---
 
 # Open bottom–top crossing of a rectangle at the origin
@@ -10,7 +12,15 @@ its bottom side to its top side.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Connection by an open path within a set](../../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Bottom side of a rectangle at the origin](bottom-side.md)
+- [Rectangle at the origin in the plane lattice](rectangle.md)
+- [Top side of a rectangle at the origin](top-side.md)
 
 ## Sources
 

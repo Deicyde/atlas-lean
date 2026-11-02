@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.nullity
 ---
 
 # Cycle rank of a finite graph

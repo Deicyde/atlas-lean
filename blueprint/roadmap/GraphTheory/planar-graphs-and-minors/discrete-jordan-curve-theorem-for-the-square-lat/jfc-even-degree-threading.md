@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jfc_EvenDegreeThreading
 ---
 
 # Whitney duality for even-degree planar lattice subgraphs
@@ -10,6 +12,12 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Planar lattice subgraph of the square lattice](planar-z2-subgraph.md)
+- [Even-degree image of a planar lattice subgraph](../whitney-s-cut-cycle-duality-on-the-square-lattic/jeb-even-degree-subgraph.md)
+- [Whitney cut-cycle duality for a planar lattice subgraph](jfc-whb-sync.md)
 
 ## Sources
 

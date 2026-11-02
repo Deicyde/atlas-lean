@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCrossingV.vertColCross
 ---
 
 # Number of crossings of a vertical line
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.bddBelow_of_nonneg
 ---
 
 # Normalized expectations of a nonnegative cocycle are bounded below
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Expectation sequence of a cocycle](exp-seq.md)
 
 ## Sources
 

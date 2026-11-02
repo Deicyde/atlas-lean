@@ -1,6 +1,8 @@
 ---
 declaration: inductive
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ndt_StarHullMem
 ---
 
 # Membership in the star hull
@@ -11,7 +13,7 @@ a face whose lower right and upper left corners are members.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ otherwise. The run $k_{j+1}, \dots, k_{j+l-1}$ is empty when $l = 1$.
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Proof depends on
 

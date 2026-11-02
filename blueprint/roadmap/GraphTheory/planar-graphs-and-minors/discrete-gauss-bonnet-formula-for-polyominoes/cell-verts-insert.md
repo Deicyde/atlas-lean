@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellEuler.cellVerts_insert
 ---
 
 # Vertices of a cell complex after adding a cell
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a cell complex](cell-verts-2.md)
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

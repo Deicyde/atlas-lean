@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jes_boundedRegionCount
 ---
 
 # Bounded region count as cycle rank
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Cycle rank of a finite graph](../euler-s-formula-and-cycle-rank/nullity.md)
 
 ## Sources
 

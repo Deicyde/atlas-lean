@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanAE.tendsto_div_kingmanLimit_ae
 ---
 
 # Almost-everywhere convergence to the Kingman limit
@@ -10,7 +13,14 @@ everywhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Upper limit of a normalized subadditive cocycle](g-star.md)
+- [Lower limit of a normalized subadditive cocycle](g-star-low.md)
+- [Kingman limit of a subadditive cocycle](kingman-limit.md)
+
+## Proof depends on
+
+- [Upper limit of a normalized cocycle is finite almost everywhere](g-star-lt-top-ae.md)
 
 ## Sources
 

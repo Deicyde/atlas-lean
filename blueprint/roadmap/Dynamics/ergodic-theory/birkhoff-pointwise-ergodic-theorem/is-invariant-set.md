@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.BirkhoffAE.IsInvariantSet
 ---
 
 # Invariant set of a map

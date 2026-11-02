@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.cumTurn
 ---
 
 # Cumulative turn along a boundary-tracing orbit
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](dart.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Successor of a boundary dart](dart-next.md)
+- [Quarter turn between consecutive boundary darts modulo 4](turn.md)
 
 ## Sources
 

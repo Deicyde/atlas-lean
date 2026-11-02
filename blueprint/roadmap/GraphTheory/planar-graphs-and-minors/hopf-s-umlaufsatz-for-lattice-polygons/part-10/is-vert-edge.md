@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCrossing.isVertEdge
 ---
 
 # Vertical lattice direction

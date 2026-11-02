@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lucky car under greedy parking](is-lucky-car.md)
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

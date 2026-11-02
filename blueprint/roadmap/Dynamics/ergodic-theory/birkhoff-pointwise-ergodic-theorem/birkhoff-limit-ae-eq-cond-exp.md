@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.BirkhoffAE.birkhoffLimit_ae_eq_condExp
 ---
 
 # Birkhoff limit is a conditional expectation on invariant sets
@@ -9,7 +12,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birkhoff limit of a function](birkhoff-limit.md)
+
+## Proof depends on
+
+- [Invariant set of a map](is-invariant-set.md)
+- [Upper limit of Birkhoff averages](f-star.md)
+- [Upper limit of Birkhoff averages is invariant](f-star-comp.md)
+- [Integrability of the Birkhoff limit](integrable-birkhoff-limit.md)
+- [Birkhoff limit preserves integrals over invariant sets](set-integral-birkhoff-limit.md)
 
 ## Sources
 

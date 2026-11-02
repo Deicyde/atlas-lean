@@ -16,7 +16,7 @@ when $n = 0$) is the statistic encoding of some parking function of length $n$.
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

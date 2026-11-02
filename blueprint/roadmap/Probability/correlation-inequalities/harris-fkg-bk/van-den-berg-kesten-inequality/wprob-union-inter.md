@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.wprob_union_inter
 ---
 
 # Inclusion–exclusion for the weighted probability
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Weighted probability of an event](wprob.md)
+
+## Proof depends on
+
+- [Product weight of a configuration](pweight.md)
 
 ## Sources
 

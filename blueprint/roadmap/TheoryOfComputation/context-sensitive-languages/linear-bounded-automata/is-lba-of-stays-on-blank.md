@@ -19,7 +19,7 @@ on a blank cell, or halt there.
 
 ## Proof depends on
 
-- [One step of a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/step-some.md)
+- [One step of a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/step-some.md)
 - [Tail of a stack tape, on cell lists](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/to-list-tail.md)
 
 ## Sources

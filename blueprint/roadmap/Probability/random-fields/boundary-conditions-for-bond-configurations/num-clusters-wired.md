@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.numClustersWired
 ---
 
 # Number of open clusters with wired boundary conditions
@@ -11,6 +13,10 @@ single cluster.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Wired open graph](wired-graph.md)
 
 ## Sources
 

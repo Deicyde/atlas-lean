@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellCount.cornersOf_card
 ---
 
 # A unit cell has four distinct corners
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

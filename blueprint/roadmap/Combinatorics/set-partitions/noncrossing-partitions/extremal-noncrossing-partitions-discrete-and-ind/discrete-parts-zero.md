@@ -14,8 +14,8 @@ empty.
 
 ## Depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [Discrete noncrossing partition](discrete.md)
 
 ## Sources

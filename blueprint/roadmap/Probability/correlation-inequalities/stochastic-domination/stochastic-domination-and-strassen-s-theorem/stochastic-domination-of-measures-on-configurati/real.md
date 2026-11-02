@@ -12,7 +12,9 @@ lean: StatMech.StochasticallyDominated.real
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../../../harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Stochastic domination of measures on configurations](stochastically-dominated.md)
 
 ## Sources
 

@@ -24,20 +24,20 @@ $$
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
-- [Admissible or empty index](../multiple-zeta-values/is-admissible-or-empty.md)
-- [Entries of an index](../multiple-zeta-values/entries.md)
-- [Multiple zeta-star value](../multiple-zeta-values/star-value.md)
-- [Multiple zeta value](../multiple-zeta-values/strict-value.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
+- [Admissible or empty index](../multiple-zeta-and-multiple-zeta-star-series/is-admissible-or-empty.md)
+- [Entries of an index](../multiple-zeta-indices/entries.md)
+- [Multiple zeta-star value](../multiple-zeta-and-multiple-zeta-star-series/star-value.md)
+- [Multiple zeta value](../multiple-zeta-and-multiple-zeta-star-series/strict-value.md)
 
 ## Proof depends on
 
-- [Depth of an index](../multiple-zeta-values/depth.md)
-- [Entry of a multiple-zeta index](../multiple-zeta-values/entry.md)
-- [Strictly decreasing tuples](../multiple-zeta-values/strict-decreasing-tuple.md)
-- [Weakly decreasing tuples](../multiple-zeta-values/weakly-decreasing-tuple.md)
-- [Multiple-zeta-star summand](../multiple-zeta-values/star-summand.md)
-- [Multiple zeta summand](../multiple-zeta-values/strict-summand.md)
+- [Depth of an index](../multiple-zeta-indices/depth.md)
+- [Entry of a multiple-zeta index](../multiple-zeta-and-multiple-zeta-star-series/entry.md)
+- [Strictly decreasing tuples](../multiple-zeta-and-multiple-zeta-star-series/strict-decreasing-tuple.md)
+- [Weakly decreasing tuples](../multiple-zeta-and-multiple-zeta-star-series/weakly-decreasing-tuple.md)
+- [Multiple-zeta-star summand](../multiple-zeta-and-multiple-zeta-star-series/star-summand.md)
+- [Multiple zeta summand](../multiple-zeta-and-multiple-zeta-star-series/strict-summand.md)
 
 ## Sources
 

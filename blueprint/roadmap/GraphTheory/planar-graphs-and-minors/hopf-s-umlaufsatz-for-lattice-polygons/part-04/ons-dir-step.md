@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_dirStep
 ---
 
 # Neighbouring site in a given direction on the torus

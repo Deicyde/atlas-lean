@@ -36,7 +36,7 @@ This node has no prerequisites.
 - [Large prime divisor of the block binomial coefficient from the smooth-number count](block-level-reductions-for-the-sylvester-schur-t/exists-prime-dvd-choose-of-smooth-count.md)
 - [Large prime divisor of the block binomial coefficient from the square-root primorial bound](block-level-reductions-for-the-sylvester-schur-t/exists-prime-dvd-choose-of-sqrt-primoria.md)
 - [A prime divisor of $\binom{2n+2}{n}$ above $n$ for small $n$](finite-residual-checks-for-the-sylvester-schur-t/exists-prime-dvd-choose-two-mul-add-two.md)
-- [Scaled ternary bound for the first residual estimate](residual-large/scaled-ternary-bound/first-residual-large-scaled-ternary-boun.md)
+- [Scaled ternary bound for the first residual estimate](residual-large/scaled-ternary-bound-for-the-sylvester-schur-lar/first-residual-large-scaled-ternary-boun.md)
 - [Primes above $n$ in the block divide the block binomial coefficient](block-level-reductions-for-the-sylvester-schur-t/prime-dvd-choose-of-mem-interval.md)
 - [Prime divisors above $n$ of a block term divide the binomial coefficient](block-level-reductions-for-the-sylvester-schur-t/prime-dvd-seq-implies-choose.md)
 - [Central-offset residual bound](residual-large/second-residual-large-central-offset-bou.md)

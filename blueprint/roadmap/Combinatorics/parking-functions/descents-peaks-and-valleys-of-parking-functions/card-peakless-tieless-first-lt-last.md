@@ -17,8 +17,8 @@ In the indexing of OEIS A000957, $F(n + 1)$ is the term of index $n + 2$.
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 - [Fine numbers](../../catalan-numbers-lattice-paths/catalan-numbers/fine-numbers/fine-number.md)
 
 ## Sources

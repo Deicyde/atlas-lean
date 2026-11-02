@@ -19,12 +19,12 @@ is injective.
 ## Depends on
 
 - [The completion tensor product map](../finite-place-completion-tensor-product-maps/completion-tensor-product-map.md)
-- [Finite places lying over a finite place](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../places-of-a-number-field-extension-lying-over-a/places-over.md)
 
 ## Proof depends on
 
 - [Dimension count for the base change to a finite completion](finrank-completion-tensor-product-eq-pi.md)
-- [Places over a finite place correspond to primes over it](../finite-places-over/places-over-equiv-primes-over.md)
+- [Places over a finite place correspond to primes over it](../places-of-a-number-field-extension-lying-over-a/places-over-equiv-primes-over.md)
 
 ## Sources
 

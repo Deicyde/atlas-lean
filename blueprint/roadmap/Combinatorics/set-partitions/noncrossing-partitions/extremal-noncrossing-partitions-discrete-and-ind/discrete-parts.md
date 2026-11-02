@@ -14,8 +14,8 @@ the set of singletons $\{a\}$ with $a \in \{0, \dots, n-1\}$.
 
 ## Depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [Discrete noncrossing partition](discrete.md)
 
 ## Sources

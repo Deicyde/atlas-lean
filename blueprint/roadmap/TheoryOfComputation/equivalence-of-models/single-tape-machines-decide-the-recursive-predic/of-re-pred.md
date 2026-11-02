@@ -12,11 +12,11 @@ lean: Cslib.Decidability.SingleTapeRecognizable.of_rePred
 
 ## Depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-recognizable.md)
 
 ## Proof depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on.md)
 - [Non-blank symbols](../../turing-machines/single-tape/equivalent-tape-representations/non-blank.md)
 - [The recognizer halts iff the multi-stack machine does](halts-on-recognizer-tm-iff.md)
 - [Input cell of a bit](in-cell.md)

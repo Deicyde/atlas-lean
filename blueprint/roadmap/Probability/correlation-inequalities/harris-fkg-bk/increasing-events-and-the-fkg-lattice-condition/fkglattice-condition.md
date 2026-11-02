@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.FKGLatticeCondition
 ---
 
 # FKG lattice condition
@@ -12,7 +14,7 @@ is log-supermodularity. Mathlib's `fkg` and `holley` state it in the form
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

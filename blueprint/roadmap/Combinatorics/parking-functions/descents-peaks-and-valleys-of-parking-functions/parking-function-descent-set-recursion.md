@@ -21,8 +21,8 @@ number of words of length $m$ whose multiset of letters is $X$ and whose descent
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

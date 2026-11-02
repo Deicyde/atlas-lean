@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.disjointOccurrence_comm
 ---
 
 # Disjoint occurrence is symmetric
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Disjoint occurrence of events](disjoint-occurrence.md)
+
+## Proof depends on
+
+- [Occurrence of an event on a coordinate set](occurs-on.md)
 
 ## Sources
 

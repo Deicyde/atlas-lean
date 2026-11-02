@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanAE.kingmanLimit
 ---
 
 # Kingman limit of a subadditive cocycle
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Upper limit of a normalized subadditive cocycle](g-star.md)
 
 ## Sources
 

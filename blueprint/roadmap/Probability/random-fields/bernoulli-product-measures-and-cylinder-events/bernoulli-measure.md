@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.bernoulliMeasure
 ---
 
 # Bernoulli distribution on the Booleans

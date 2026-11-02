@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.IsPivotal
 ---
 
 # Pivotal coordinate for an event
@@ -10,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Closing a coordinate of a configuration](set-closed.md)
+- [Opening a coordinate of a configuration](set-open.md)
 
 ## Sources
 

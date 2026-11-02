@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellEulerBound.edgeCode
 ---
 
 # Midpoint encoding of a lattice edge

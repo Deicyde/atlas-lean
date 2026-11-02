@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.tnse_IsNonBridgeEdge
 ---
 
 # Non-bridge edge of a graph

@@ -16,7 +16,7 @@ machine.
 
 ## Depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-recognizable.md)
 
 ## Proof depends on
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.wprob
 ---
 
 # Weighted probability of an event
@@ -11,7 +13,11 @@ whose coordinate `x` has law `φ x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Product weight of a configuration](pweight.md)
 
 ## Sources
 

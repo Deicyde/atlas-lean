@@ -13,7 +13,7 @@ that the partition obtained from $P$ by joining them into the block $\{i, j\}$ h
 
 ## Depends on
 
-- [Set partition](../noncrossing-partitions/basic/set-partition.md)
+- [Set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Proof depends on
 

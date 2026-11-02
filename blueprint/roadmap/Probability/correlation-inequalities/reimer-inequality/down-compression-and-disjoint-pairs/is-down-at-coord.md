@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.IsDownAtCoord
 ---
 
 # Family closed under erasing a coordinate

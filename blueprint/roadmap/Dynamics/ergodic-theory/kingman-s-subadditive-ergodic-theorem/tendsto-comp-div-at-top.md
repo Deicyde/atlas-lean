@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanAE.tendsto_comp_div_atTop
 ---
 
 # Integrable function along an orbit divided by time tends to zero
@@ -10,6 +13,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
+- [Tendsto birkhoff Average ae](../birkhoff-pointwise-ergodic-theorem/tendsto-birkhoff-average-ae.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCellRegion.lexInteriorFace
 ---
 
 # Face below-left of the inside top corner
@@ -9,7 +11,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Unit cell as a face of the square lattice](cell-face.md)
+- [Top corner with an inside cell below it](lex-interior-index.md)
 
 ## Sources
 

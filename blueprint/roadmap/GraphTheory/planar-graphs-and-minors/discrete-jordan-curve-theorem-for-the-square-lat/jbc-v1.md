@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jbc_v1
 ---
 
 # Vertex 1 of the 4-cycle

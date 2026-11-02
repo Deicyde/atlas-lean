@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Transport.exists_coupling_vec
 ---
 
 # Strassen's theorem
@@ -13,7 +16,13 @@ vector form of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down-set of a partial order](is-down.md)
+- [Ordered pairs of a partial order](order-pairs.md)
+
+## Proof depends on
+
+- [Finite upper sets](../finite-strassen-stochastic-domination/is-upper-set.md)
+- [Strassen's theorem on a finite poset, equal-mass form](../finite-strassen-stochastic-domination/forall-is-upper-set-sum-le-iff-exists-co.md)
 
 ## Sources
 

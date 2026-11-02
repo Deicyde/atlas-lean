@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.occursOn_slice_false_notmem
 ---
 
 # Occurrence avoiding the first coordinate passes to the false slice
@@ -10,7 +13,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Occurrence of an event on a coordinate set](occurs-on.md)
+- [Slice of an event at the first coordinate](slice.md)
+- [Coordinate set with the first coordinate removed](slice-set.md)
+
+## Proof depends on
+
+- [Agreement of configurations on a set](agree-on.md)
 
 ## Sources
 

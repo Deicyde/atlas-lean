@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jkd_gr9rel
 ---
 
 # Adjacency relation of the 3 by 3 grid

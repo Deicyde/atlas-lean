@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.fmarg'
 ---
 
 # Weight of a family off one coordinate
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Product weight of a finset off one coordinate](fwt-2.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.StochasticallyDominated
 ---
 
 # Stochastic domination of measures on configurations
@@ -10,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Increasing event](../../../harris-fkg-bk/increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
 
 ## Sources
 

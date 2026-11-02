@@ -22,22 +22,22 @@ index $\mathbf{k}$ is $z_{\mathbf{k}}$.
 ## Depends on
 
 - [The type of empty or admissible indices](hzero-index.md)
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 - [Empty or admissible indices](is-hzero-index.md)
 - [The subalgebra $\mathfrak{H}^0$](h-zero.md)
 - [Hoffman monomial of an index](z-monomial.md)
 
 ## Proof depends on
 
-- [Admissible index](../multiple-zeta-values/is-admissible.md)
-- [Entries of an index](../multiple-zeta-values/entries.md)
-- [Admissibility of an index via its entries](../multiple-zeta-values/is-admissible-iff.md)
+- [Admissible index](../multiple-zeta-indices/is-admissible.md)
+- [Entries of an index](../multiple-zeta-indices/entries.md)
+- [Admissibility of an index via its entries](../multiple-zeta-indices/is-admissible-iff.md)
 - [Entries of an index as positive integers](pnat-entries.md)
-- [Admissible list](../multiple-zeta-values/is-admissible-2.md)
+- [Admissible list](../multiple-zeta-indices/is-admissible-2.md)
 - [Words of $\mathfrak{H}^1$](is-hone-word.md)
 - [Words of $\mathfrak{H}^0$](is-hzero-word.md)
-- [Hoffman block](../multiple-zeta-values/hoffman-block.md)
-- [Hoffman block as a list](../multiple-zeta-values/to-list-hoffman-block.md)
+- [Hoffman block](../multiple-zeta-indices/hoffman-block.md)
+- [Hoffman block as a list](../multiple-zeta-indices/to-list-hoffman-block.md)
 - [The monoid of $\mathfrak{H}^1$-words](word-submonoid-hone.md)
 - [The monoid of $\mathfrak{H}^0$-words](word-submonoid-hzero.md)
 - [The letter $x$ as a word](x-word.md)

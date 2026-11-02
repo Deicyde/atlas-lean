@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellPinch.pinchCount
 ---
 
 # Number of pinch points
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Vertices of a cell complex](cell-verts-2.md)
+- [Pinch point indicator](pinch-w.md)
 
 ## Sources
 

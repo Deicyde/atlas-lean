@@ -18,8 +18,8 @@ of lucky cars, which equals the expected number of lucky spots.
 ## Depends on
 
 - [Number of lucky cars](lucky-count.md)
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

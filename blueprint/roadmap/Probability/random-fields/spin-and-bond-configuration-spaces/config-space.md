@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.ConfigSpace
 ---
 
 # Configuration space of a statistical-mechanics model

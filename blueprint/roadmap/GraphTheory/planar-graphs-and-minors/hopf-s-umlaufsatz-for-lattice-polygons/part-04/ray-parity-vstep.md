@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JordanParity.rayParity_vstep
 ---
 
 # Ray parity is unchanged across a vertical move
@@ -10,7 +13,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Ray-crossing parity of a lattice cell](../part-03/ray-parity.md)
+- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
+
+## Proof depends on
+
+- [Upward ray crossings above a cell](../part-03/up-cross.md)
+- [Upward crossing count is unchanged across a vertical move](up-cross-vstep.md)
 
 ## Sources
 

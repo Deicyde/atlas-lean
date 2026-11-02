@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.bernoulliProductMeasure.apply_singleton
 ---
 
 # Mass of a configuration under a finite Bernoulli product measure
@@ -9,7 +12,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli distribution on the Booleans](bernoulli-measure.md)
+- [Bernoulli product measure on configuration space](bernoulli-product-measure.md)
 
 ## Sources
 

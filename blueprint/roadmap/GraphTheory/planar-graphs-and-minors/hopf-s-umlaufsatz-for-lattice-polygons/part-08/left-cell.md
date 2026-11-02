@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCellBoundary.leftCell
 ---
 
 # Cell to the left of a walk step
@@ -11,6 +13,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
 
 ## Sources
 

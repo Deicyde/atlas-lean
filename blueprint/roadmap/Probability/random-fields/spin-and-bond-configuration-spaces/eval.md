@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.ConfigSpace.eval
 ---
 
 # Coordinate projection of a configuration
@@ -9,7 +11,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](config-space.md)
 
 ## Sources
 

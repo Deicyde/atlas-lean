@@ -1,7 +1,7 @@
 # Loewner equation
 
 - [Basic objects of the chordal Loewner equation](basic-objects-of-the-chordal-loewner-equation/README.md)
-- [Loewner Existence](loewner-existence/README.md)
-- [Loewner Maximal](loewner-maximal/README.md)
+- [Local existence and uniqueness for the chordal Loewner equation](local-existence-and-uniqueness-for-the-chordal-l/README.md)
+- [Maximal solutions of the chordal Loewner equation and the Loewner hulls](maximal-solutions-of-the-chordal-loewner-equatio/README.md)
 - [Closed half-plane above a horizontal line](loewner-strip.md)
-- [Loewner Props](loewner-props/README.md)
+- [Elementary properties of Loewner solutions and of half-plane capacity](elementary-properties-of-loewner-solutions-and-o/README.md)

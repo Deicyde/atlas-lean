@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ih_fill_mono
 ---
 
 # Monotonicity of the closed filling map
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Filling a finite configuration with closed coordinates](ih-fill.md)
 
 ## Sources
 

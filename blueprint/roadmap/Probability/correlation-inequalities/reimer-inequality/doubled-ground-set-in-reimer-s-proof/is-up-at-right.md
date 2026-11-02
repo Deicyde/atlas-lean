@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.IsUpAtRight
 ---
 
 # Family closed under inserting the right copy

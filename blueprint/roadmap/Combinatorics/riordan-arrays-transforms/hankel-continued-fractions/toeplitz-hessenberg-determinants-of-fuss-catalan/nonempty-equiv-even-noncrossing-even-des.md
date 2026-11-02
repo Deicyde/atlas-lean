@@ -16,9 +16,9 @@ for each peak $UD$: the run of down steps starting at the $D$ of that peak.
 ## Depends on
 
 - [Peak descents](../../../catalan-numbers-lattice-paths/dyck-paths-lattice-walks/peak-descents-of-dyck-paths/dyck-peak-descents.md)
-- [Noncrossing partition](../../../set-partitions/noncrossing-partitions/basic/noncrossing-partition.md)
-- [Noncrossing set partition](../../../set-partitions/noncrossing-partitions/basic/is-noncrossing.md)
-- [Set partition](../../../set-partitions/noncrossing-partitions/basic/set-partition.md)
+- [Noncrossing partition](../../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Noncrossing set partition](../../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Sources
 

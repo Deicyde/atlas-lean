@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.Orientation.leftCell
 ---
 
 # Unit cell to the left of a lattice step

@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.Dart
 ---
 
 # Dart of the square lattice

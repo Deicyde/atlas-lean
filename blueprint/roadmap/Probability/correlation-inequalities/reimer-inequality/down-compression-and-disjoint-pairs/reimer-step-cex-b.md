@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.reimerStepCexB
 ---
 
 # Second family in the box-compression counterexample

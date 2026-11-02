@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.dualConfig
 ---
 
 # Rotated dual configuration
@@ -11,7 +13,12 @@ gives the half-turn of `ω` (`dualConfig_dualConfig`), not `ω`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../Probability/random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Quarter-turn rotation of unordered site pairs](cross-edge.md)
 
 ## Sources
 

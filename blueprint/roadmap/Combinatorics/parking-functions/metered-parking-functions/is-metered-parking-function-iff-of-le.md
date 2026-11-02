@@ -14,7 +14,7 @@ function if and only if it is a partial parking function with $m$ cars and $n$ s
 ## Depends on
 
 - [Metered parking function](is-metered-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Sources
 

@@ -15,11 +15,11 @@ the codes whose program does not halt on input $n$.
 
 ## Depends on
 
-- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-co-recognizable.md)
+- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-co-recognizable.md)
 
 ## Proof depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-recognizable.md)
 - [Recognizability by multi-stack machines](../../computability/decidable-and-recognizable-predicates/tm2-recognizable.md)
 - [The halting problem is not co-recognizable by multi-stack machines](../../computability/halting-problem-and-rice-s-theorem/not-tm2-co-recognizable-halting.md)
 - [Single-tape and multi-stack machines recognize the same predicates](single-tape-recognizable-iff-tm2-recogni.md)

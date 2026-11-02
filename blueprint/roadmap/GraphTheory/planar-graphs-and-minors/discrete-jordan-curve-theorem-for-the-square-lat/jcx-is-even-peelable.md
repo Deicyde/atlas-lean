@@ -1,6 +1,8 @@
 ---
 declaration: inductive
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcx_IsEvenPeelable
 ---
 
 # Even-peelable graph

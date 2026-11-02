@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcx_cross_cycB
 ---
 
 # Upper 4-cycle based at the shared vertex
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two 4-cycles sharing a vertex](jcx-cross-g.md)
+
+## Proof depends on
+
+- [Adjacency relation of two corner-sharing squares](jcx-cross-rel.md)
 
 ## Sources
 

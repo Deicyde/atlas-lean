@@ -18,7 +18,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} x^k a(0, n - k) = \sum_{m=0}^{n} (-1)^m m! {n \bra
 
 ## Depends on
 
-- [Generalized Stirling numbers of the second kind](../generalized-stirling-numbers/generalized-stirling-second.md)
+- [Generalized Stirling numbers of the second kind](../generalized-stirling-second.md)
 
 ## Proof depends on
 

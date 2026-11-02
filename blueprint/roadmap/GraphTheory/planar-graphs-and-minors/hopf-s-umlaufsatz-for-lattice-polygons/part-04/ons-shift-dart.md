@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_shiftDart
 ---
 
 # Translation of a dart by a lattice vector
@@ -9,7 +11,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Darts of the square-lattice torus](ons-dart.md)
 
 ## Sources
 

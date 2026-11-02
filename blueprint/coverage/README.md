@@ -16,6 +16,6 @@ cover only the decomposed rows below; they are not repository-wide coverage.
 | v2 / CSLibExt | DECOMPOSED | [11438 documented public declarations](../roadmap/README.md) across 6 subjects; 251 instances and 3906 undocumented public declarations are not articles. |
 | v2 / WantedExt | DECOMPOSED | [15294 documented public declarations](../roadmap/README.md) across 25 subjects; 179 instances and 202 undocumented public declarations are not articles. |
 | v2 tests (MathlibExtTest, CSLibExtTest) | OUT | Tests and diagnostics rather than mathematical results. |
-| Atlas/StatisticalMechanics | MAPPED | 6971 standalone Lean files; no roadmap articles yet. |
-| Atlas/FC | MAPPED | 9 standalone Lean files; no roadmap articles yet. |
+| Atlas/StatisticalMechanics | MAPPED | Standalone Lean files; no roadmap articles yet. |
+| Atlas/FC | MAPPED | Standalone Lean files; no roadmap articles yet. |
 | Atlas/CPythonListsort | OUT | Maintained as its own Autoform blueprint inside Atlas/CPythonListsort. |

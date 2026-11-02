@@ -14,12 +14,12 @@ partition of $\{0, \dots, n-1\}$ is the singleton $\{a\}$.
 
 ## Depends on
 
-- [Block of a noncrossing partition](../basic/block.md)
+- [Block of a noncrossing partition](../noncrossing-partitions-and-the-refinement-order/block.md)
 - [Discrete noncrossing partition](discrete.md)
 
 ## Proof depends on
 
-- [Set partition](../basic/set-partition.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Sources
 

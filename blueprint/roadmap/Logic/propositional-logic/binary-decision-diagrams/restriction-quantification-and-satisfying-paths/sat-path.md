@@ -15,7 +15,7 @@ $\mathrm{true}$), and the search returns nothing when the diagram has no leaf $\
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.BaseCase.base_cc_eq_four
 ---
 
 # Exactly four left turns when simplicity rules out eight
@@ -10,7 +13,14 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](cc.md)
+- [Vertices of a lattice walk from its step directions](pos.md)
+- [Unit lattice step in a given direction](step-of.md)
+
+## Proof depends on
+
+- [Without right turns, the number of left turns is divisible by four](four-dvd-cc.md)
+- [A closed walk without right turns has at least four left turns](four-le-cc.md)
 
 ## Sources
 

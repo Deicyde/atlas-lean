@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.card_boxFamily_le_boxDoubled
 ---
 
 # Disjoint-union family is no larger than the doubled family
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Doubled family of disjoint pairs](box-doubled.md)
+
+## Proof depends on
+
+- [Encoding a pair of finsets in the doubled ground set](dbl.md)
 
 ## Sources
 

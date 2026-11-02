@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.bdEdgeSet2
 ---
 
 # Boundary edges of a set of sites in $\mathbb{Z}^2$, as unordered pairs
@@ -9,7 +11,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
 
 ## Sources
 

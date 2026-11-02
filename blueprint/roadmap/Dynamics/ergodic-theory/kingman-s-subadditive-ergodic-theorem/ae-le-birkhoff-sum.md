@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.ae_le_birkhoffSum
 ---
 
 # Subadditive cocycle bounded by Birkhoff sums of its first term
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
 
 ## Sources
 

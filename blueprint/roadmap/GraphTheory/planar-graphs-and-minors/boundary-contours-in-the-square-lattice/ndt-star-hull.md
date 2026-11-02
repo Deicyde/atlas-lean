@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.ndt_StarHull
 ---
 
 # Star hull of a set of lattice sites
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Membership in the star hull](ndt-star-hull-mem.md)
 
 ## Sources
 

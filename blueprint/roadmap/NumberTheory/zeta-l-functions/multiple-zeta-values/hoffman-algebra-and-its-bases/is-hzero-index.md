@@ -13,12 +13,12 @@ is, nonempty with first entry at least $2$, or when it has no entries.
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Proof depends on
 
-- [Admissible index](../multiple-zeta-values/is-admissible.md)
-- [Entries of an index](../multiple-zeta-values/entries.md)
+- [Admissible index](../multiple-zeta-indices/is-admissible.md)
+- [Entries of an index](../multiple-zeta-indices/entries.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnet.gaussBonnet_stated_false
 ---
 
 # Failure of the cell Gauss–Bonnet formula without a pinch term
@@ -11,7 +14,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner defect of a set of unit cells](corner-diff.md)
+- [Euler characteristic of a cell complex](euler-char.md)
+
+## Proof depends on
+
+- [Corner defect of two diagonally touching cells](corner-diff-cex.md)
+- [Euler characteristic of two diagonally touching cells](euler-char-cex.md)
 
 ## Sources
 

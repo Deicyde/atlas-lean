@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.pcUpperBound
 ---
 
 # Peierls series bounding closed dual circuits

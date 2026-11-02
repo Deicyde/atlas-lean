@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.surfaceSet
 ---
 
 # Set of sites not connected to the box boundary
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Lattice box as a finite set](../../phase-transition/percolation-probability-and-critical-point/box-finset.md)
+- [Connection of a site to the box boundary](conn-bdry.md)
 
 ## Sources
 

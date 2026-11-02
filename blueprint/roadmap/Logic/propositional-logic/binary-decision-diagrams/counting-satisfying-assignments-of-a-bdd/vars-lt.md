@@ -12,7 +12,7 @@ when every variable tested at a node of the diagram is less than $m$.
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
 
 ## Sources
 

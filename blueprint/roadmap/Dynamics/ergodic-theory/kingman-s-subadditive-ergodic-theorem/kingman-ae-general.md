@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanSigned.kingman_ae_general
 ---
 
 # Kingman's subadditive ergodic theorem
@@ -15,7 +18,14 @@ nonnegative cocycles see `exists_invariant_limit_of_nonneg`, which contains
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Expectation sequence of a cocycle](exp-seq.md)
+- [Kingman limit of a subadditive cocycle](kingman-limit.md)
+
+## Proof depends on
+
+- [Upper limit of a normalized subadditive cocycle](g-star.md)
+- [Kingman's theorem: normalized cocycle converges almost everywhere](ae-tendsto-x-div.md)
 
 ## Sources
 

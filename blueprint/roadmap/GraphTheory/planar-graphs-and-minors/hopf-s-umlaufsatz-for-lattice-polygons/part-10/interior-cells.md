@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCellRegion.interiorCells
 ---
 
 # Cells of the bounded face of a simple closed walk
@@ -11,7 +13,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Cells of the inner face component](component-cell-set.md)
+- [The inner component has finitely many cells](component-cell-set-finite.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.gibbsConditional
 ---
 
 # Conditional distribution given the outside of a region
@@ -12,7 +14,8 @@ configuration outside `Λ`: a regular version of `μ(· | outsideSigma Λ)`, nam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [σ-algebra of the configuration outside a region](outside-sigma.md)
 
 ## Sources
 

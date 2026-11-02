@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanAE.ae_all_subadditive
 ---
 
 # Cocycle inequality holds for all indices almost everywhere
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
 
 ## Sources
 

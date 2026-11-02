@@ -15,7 +15,7 @@ lean: MathlibExt.Biology.Phylogenetics.SubstitutionModels.ctmcTransition_gtrRate
 
 - [Jukes–Cantor transition probability](../jukes-cantor-model/jc-prob.md)
 - [General time-reversible (GTR) rate matrix](gtr-rate.md)
-- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/semigroup/ctmc-transition.md)
+- [Transition semigroup of a continuous-time Markov chain](../../../Probability/markov-chains/finite-continuous-time-markov-chains/the-transition-semigroup-of-a-finite-continuous/ctmc-transition.md)
 
 ## Proof depends on
 

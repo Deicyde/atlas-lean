@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind2.cc_eq_four_mul_tcount
 ---
 
 # Left turns are four times the north-to-west turns
@@ -10,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](../part-01/cc.md)
+- [Number of left turns out of a given direction](tcount.md)
+
+## Proof depends on
+
+- [Every direction is left by equally many left turns](tcount-shift.md)
 
 ## Sources
 

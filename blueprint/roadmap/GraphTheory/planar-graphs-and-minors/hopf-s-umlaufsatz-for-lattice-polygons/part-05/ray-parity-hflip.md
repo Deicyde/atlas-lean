@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.RayFlipH.rayParity_hflip
 ---
 
 # An odd number of vertical steps flips the ray parity
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+- [Ray-crossing parity of a lattice cell](../part-03/ray-parity.md)
+- [Vertical steps separating two horizontal neighbour cells](straddle-set.md)
+
+## Proof depends on
+
+- [Ray parity across a vertical segment counts separating steps](ray-parity-hstep-gen.md)
 
 ## Sources
 

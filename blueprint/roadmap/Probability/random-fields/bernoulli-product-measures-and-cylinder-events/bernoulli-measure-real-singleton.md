@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.bernoulliMeasure_real_singleton
 ---
 
 # Point masses of the Bernoulli distribution
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli distribution on the Booleans](bernoulli-measure.md)
 
 ## Sources
 

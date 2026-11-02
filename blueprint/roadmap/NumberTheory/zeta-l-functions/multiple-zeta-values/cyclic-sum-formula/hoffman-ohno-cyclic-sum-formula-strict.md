@@ -30,19 +30,19 @@ where the inner sum is empty when $k_j = 1$.
 - [Left-hand indices of the cyclic sum formula are admissible or empty](left-index-is-admissible-or-empty.md)
 - [Right-hand indices of the cyclic sum formula](right-index.md)
 - [Right-hand indices of the cyclic sum formula are admissible or empty](right-index-is-admissible-or-empty.md)
-- [Multiple zeta value](../multiple-zeta-values/strict-value.md)
+- [Multiple zeta value](../multiple-zeta-and-multiple-zeta-star-series/strict-value.md)
 
 ## Proof depends on
 
 - [The index of a list of positive integers](to-index.md)
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
-- [Admissible index](../multiple-zeta-values/is-admissible.md)
-- [Admissible or empty index](../multiple-zeta-values/is-admissible-or-empty.md)
-- [Depth of an index](../multiple-zeta-values/depth.md)
-- [Entry of a multiple-zeta index](../multiple-zeta-values/entry.md)
-- [Strictly decreasing tuples](../multiple-zeta-values/strict-decreasing-tuple.md)
-- [Multiple zeta summand](../multiple-zeta-values/strict-summand.md)
-- [Convergence of multiple zeta series](../multiple-zeta-values/summable-strict-summand.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
+- [Admissible index](../multiple-zeta-indices/is-admissible.md)
+- [Admissible or empty index](../multiple-zeta-and-multiple-zeta-star-series/is-admissible-or-empty.md)
+- [Depth of an index](../multiple-zeta-indices/depth.md)
+- [Entry of a multiple-zeta index](../multiple-zeta-and-multiple-zeta-star-series/entry.md)
+- [Strictly decreasing tuples](../multiple-zeta-and-multiple-zeta-star-series/strict-decreasing-tuple.md)
+- [Multiple zeta summand](../multiple-zeta-and-multiple-zeta-star-series/strict-summand.md)
+- [Convergence of multiple zeta series](../summable-strict-summand.md)
 
 ## Sources
 

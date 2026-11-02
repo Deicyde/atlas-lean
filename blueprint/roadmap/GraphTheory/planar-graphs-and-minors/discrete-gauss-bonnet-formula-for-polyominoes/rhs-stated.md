@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellGaussBonnet.rhsStated
 ---
 
 # Four times the local change of the Euler characteristic
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Number of new edges when a cell is added](delta-e.md)
+- [Number of new vertices when a cell is added](delta-v.md)
 
 ## Sources
 

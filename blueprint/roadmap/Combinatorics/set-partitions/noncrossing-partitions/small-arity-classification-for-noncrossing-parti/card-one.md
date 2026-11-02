@@ -13,10 +13,10 @@ of $\{0\}$.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
-- [Crossing in a set partition](../basic/has-crossing.md)
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Crossing in a set partition](../noncrossing-partitions-and-the-refinement-order/has-crossing.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Proof depends on
 

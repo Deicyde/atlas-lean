@@ -19,17 +19,17 @@ over $\mathbb{Q}$.
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 - [The subalgebra $\mathfrak{H}^1$](h-one.md)
 - [Hoffman monomial of an index](z-monomial.md)
 
 ## Proof depends on
 
-- [Entries of an index](../multiple-zeta-values/entries.md)
+- [Entries of an index](../multiple-zeta-indices/entries.md)
 - [Entries of an index as positive integers](pnat-entries.md)
 - [Words of $\mathfrak{H}^1$](is-hone-word.md)
-- [Hoffman block](../multiple-zeta-values/hoffman-block.md)
-- [Hoffman block as a list](../multiple-zeta-values/to-list-hoffman-block.md)
+- [Hoffman block](../multiple-zeta-indices/hoffman-block.md)
+- [Hoffman block as a list](../multiple-zeta-indices/to-list-hoffman-block.md)
 - [The monoid of $\mathfrak{H}^1$-words](word-submonoid-hone.md)
 - [The letter $y$ as a word](y-word.md)
 - [Hoffman word of an index](z-word.md)

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.whb_CorrectWhitney
 ---
 
 # Whitney's cut–cycle duality
@@ -13,6 +15,13 @@ face-region graph of `H` with `fg` deleted.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Primal edge shared by adjacent faces](../discrete-jordan-curve-theorem-for-the-square-lat/shared-primal-edge.md)
+- [Face-region graph of a square-lattice subgraph](whb-face-region.md)
 
 ## Sources
 

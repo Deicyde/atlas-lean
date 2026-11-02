@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanSigned.addCoc
 ---
 
 # Additive cocycle of Birkhoff sums of the first term

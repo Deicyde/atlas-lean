@@ -20,12 +20,12 @@ $f(i)$ are at least $k$. This is equivalent to the source's sorted-preference fo
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
-- [Partial parking function](../parking-functions/is-partial-parking-function.md)
+- [Parking function](../is-parking-function.md)
+- [Partial parking function](../is-partial-parking-function.md)
 
 ## Proof depends on
 
-- [Lower-tail characterization of parking functions](../parking-functions/is-parking-function-iff-card-filter-le.md)
+- [Lower-tail characterization of parking functions](../is-parking-function-iff-card-filter-le.md)
 
 ## Sources
 

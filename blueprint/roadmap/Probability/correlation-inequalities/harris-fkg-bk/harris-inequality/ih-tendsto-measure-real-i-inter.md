@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ih_tendsto_measureReal_iInter
 ---
 
 # Continuity from above of a finite measure, real-valued form

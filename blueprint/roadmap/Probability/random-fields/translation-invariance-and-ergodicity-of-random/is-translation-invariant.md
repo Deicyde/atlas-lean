@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.ConfigSpace.IsTranslationInvariant
 ---
 
 # Translation-invariant measure on configuration space
@@ -10,7 +12,11 @@ preserves it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Shift of a configuration by a group element](shift.md)
 
 ## Sources
 

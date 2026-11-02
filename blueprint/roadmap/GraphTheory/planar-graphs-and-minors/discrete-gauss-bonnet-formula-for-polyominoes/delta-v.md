@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellGaussBonnet.deltaV
 ---
 
 # Number of new vertices when a cell is added
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Indicator of a Boolean](b-i.md)
+- [Indicator of zero](is-zero.md)
 
 ## Sources
 

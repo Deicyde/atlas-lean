@@ -18,24 +18,24 @@ proposition over atoms indexed by natural numbers is satisfied by the all-true v
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Diagram of a proposition](../basic/of-proposition.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Diagram of a proposition](../reduced-ordered-binary-decision-diagrams-canonic/of-proposition.md)
 - [Restriction of a binary decision diagram](restrict.md)
 - [Truth-table evaluation](../../propositional-natural-deduction/eval-bool.md)
 
 ## Proof depends on
 
-- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
-- [Diagrams ordered from a variable](../basic/ordered-from.md)
-- [Reduced diagrams](../basic/reduced.md)
-- [Bryant's apply operation](../basic/apply.md)
-- [Unsatisfiable reduced ordered diagrams](../basic/eq-leaf-false-iff.md)
-- [Evaluation of a binary decision diagram](../basic/eval.md)
-- [Apply computes the operation pointwise](../basic/eval-apply.md)
+- [Reduced ordered binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/is-robdd.md)
+- [Diagrams ordered from a variable](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from.md)
+- [Reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced.md)
+- [Bryant's apply operation](../reduced-ordered-binary-decision-diagrams-canonic/apply.md)
+- [Unsatisfiable reduced ordered diagrams](../reduced-ordered-binary-decision-diagrams-canonic/eq-leaf-false-iff.md)
+- [Evaluation of a binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/eval.md)
+- [Apply computes the operation pointwise](../reduced-ordered-binary-decision-diagrams-canonic/eval-apply.md)
 - [Restriction yields an ROBDD](is-robdd-restrict.md)
-- [Node constructor removing a redundant test](../basic/mk.md)
-- [Apply preserves orderedness](../basic/ordered-from-apply.md)
-- [Apply returns reduced diagrams](../basic/reduced-apply.md)
+- [Node constructor removing a redundant test](../reduced-ordered-binary-decision-diagrams-canonic/mk.md)
+- [Apply preserves orderedness](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from-apply.md)
+- [Apply returns reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced-apply.md)
 
 ## Sources
 

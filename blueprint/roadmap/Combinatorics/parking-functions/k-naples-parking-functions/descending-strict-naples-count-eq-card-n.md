@@ -16,11 +16,11 @@ has exactly $2k + 2$ elements.
 ## Depends on
 
 - [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
-- [Noncrossing partition](../../set-partitions/noncrossing-partitions/basic/noncrossing-partition.md)
-- [Crossing in a set partition](../../set-partitions/noncrossing-partitions/basic/has-crossing.md)
-- [Noncrossing set partition](../../set-partitions/noncrossing-partitions/basic/is-noncrossing.md)
-- [Set partition](../../set-partitions/noncrossing-partitions/basic/set-partition.md)
-- [Block of a noncrossing partition](../../set-partitions/noncrossing-partitions/basic/block.md)
+- [Noncrossing partition](../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Crossing in a set partition](../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/has-crossing.md)
+- [Noncrossing set partition](../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/set-partition.md)
+- [Block of a noncrossing partition](../../set-partitions/noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/block.md)
 
 ## Sources
 

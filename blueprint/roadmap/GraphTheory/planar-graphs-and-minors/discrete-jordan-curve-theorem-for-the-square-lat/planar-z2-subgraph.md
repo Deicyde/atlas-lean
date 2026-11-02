@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.PlanarZ2Subgraph
 ---
 
 # Planar lattice subgraph of the square lattice

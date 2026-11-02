@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.faceBoundaryDegree
 ---
 
 # Boundary degree of a unit face
@@ -11,7 +13,15 @@ in `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Boundary indicator of an edge](bd-ind.md)
+- [Lower left corner of the unit face at $(a, b)$](face-corner00.md)
+- [Upper left corner of the unit face at $(a, b)$](face-corner01.md)
+- [Lower right corner of the unit face at $(a, b)$](face-corner10.md)
+- [Upper right corner of the unit face at $(a, b)$](face-corner11.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.rot90Equiv
 ---
 
 # Quarter-turn rotation as a permutation
@@ -9,7 +11,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Quarter-turn rotation of the square lattice](rot90-fun.md)
+- [Inverse quarter-turn rotation](rot90-inv.md)
 
 ## Sources
 

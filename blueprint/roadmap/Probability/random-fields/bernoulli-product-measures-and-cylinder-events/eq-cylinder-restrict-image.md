@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.eq_cylinder_restrict_image
 ---
 
 # Events depending on finitely many coordinates are cylinders
@@ -10,7 +13,7 @@ projection onto `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

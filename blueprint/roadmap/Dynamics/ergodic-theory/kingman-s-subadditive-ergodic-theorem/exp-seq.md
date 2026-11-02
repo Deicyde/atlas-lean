@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.expSeq
 ---
 
 # Expectation sequence of a cocycle

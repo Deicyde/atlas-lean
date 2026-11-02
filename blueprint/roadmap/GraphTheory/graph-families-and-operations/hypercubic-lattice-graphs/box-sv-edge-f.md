@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.boxSV_edgeF
 ---
 
 # Nearest-neighbour pairs inside the box $(-n, n)^d$
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](site.md)
+
+## Proof depends on
+
+- [Box $(-n, n)^d$ as a finite set of sites](box-sv-box-f.md)
 
 ## Sources
 

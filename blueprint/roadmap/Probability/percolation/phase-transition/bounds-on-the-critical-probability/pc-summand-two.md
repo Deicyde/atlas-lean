@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.pcSummandTwo
 ---
 
 # Summand of the anchored Peierls series

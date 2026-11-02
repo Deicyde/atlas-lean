@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.boxEdgeFinset
 ---
 
 # Pairs of sites of a lattice box
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Lattice box as a finite set](../../phase-transition/percolation-probability-and-critical-point/box-finset.md)
 
 ## Sources
 

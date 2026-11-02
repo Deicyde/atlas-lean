@@ -35,7 +35,7 @@ $C t (|w| + 1 + C t + 1) + 4$ steps.
 - [States of the single-tape emulation](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/emu-support.md)
 - [Finite single-tape emulation of a multi-stack machine](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/emu-tm.md)
 - [The bottom cell followed by the input word is the emulation's start tape](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/map-val-bot-cell-cons.md)
-- [Timed outputs compose](../../turing-machines/single-tape/single-tape-turing-machines/comp-computer-2.md)
+- [Timed outputs compose](../../turing-machines/single-tape/running-two-single-tape-machines-one-after-the-o/comp-computer-2.md)
 - [The machine that prepends a symbol](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/cons-computer.md)
 - [Prepending a symbol takes at most two steps](../../equivalence-of-models/single-tape-machines-decide-the-recursive-predic/cons-computer-outputs-within-time.md)
 - [The single-tape simulation outputs within one extra step](../../turing-machines/single-tape/equivalent-tape-representations/outputs-within-time-of-tm0.md)

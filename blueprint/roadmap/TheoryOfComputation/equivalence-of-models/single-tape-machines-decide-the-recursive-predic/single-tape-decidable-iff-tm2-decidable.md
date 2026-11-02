@@ -12,7 +12,7 @@ lean: Cslib.Decidability.singleTapeDecidable_iff_tm2Decidable
 
 ## Depends on
 
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-decidable.md)
 - [Decidability by multi-stack machines](../../computability/decidable-and-recognizable-predicates/tm2-decidable.md)
 
 ## Proof depends on

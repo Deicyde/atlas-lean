@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JedBridge.cycleGraph_card_edges
 ---
 
 # Number of edges of a cycle graph

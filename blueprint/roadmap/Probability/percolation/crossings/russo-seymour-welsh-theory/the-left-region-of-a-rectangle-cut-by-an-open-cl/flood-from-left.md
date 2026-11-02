@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.floodFromLeft
 ---
 
 # Sites reachable from the left side of a rectangle
@@ -10,7 +12,14 @@ touching the open cluster of `x_B` in the overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Integer rectangle in the plane lattice](../rectangles-crossings-annuli-and-the-box-crossing/rect.md)
+
+## Proof depends on
+
+- [Rectangle lattice with an open cluster removed](box-minus-p.md)
+- [Open cluster inside the overlap rectangle](../../box-crossing-property-for-positively-associated/horizontal-and-vertical-crossings-meet/overlap-comp.md)
 
 ## Sources
 

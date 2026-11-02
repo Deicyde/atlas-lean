@@ -19,7 +19,7 @@ $v$.
 
 ## Depends on
 
-- [Finite places lying over a finite place](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../places-of-a-number-field-extension-lying-over-a/places-over.md)
 
 ## Proof depends on
 

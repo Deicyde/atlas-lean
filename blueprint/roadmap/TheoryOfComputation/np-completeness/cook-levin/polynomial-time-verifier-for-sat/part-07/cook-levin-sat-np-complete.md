@@ -22,7 +22,7 @@ problem in NP has a polynomial-time many-one reduction to it.
 
 ## Proof depends on
 
-- [Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier](../../cook-levin-theorem/binary-hardness/cook-levin-sat-np-complete-of-is-poly-ti.md)
+- [Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier](../../np-hardness-of-binary-index-sat/cook-levin-sat-np-complete-of-is-poly-ti.md)
 - [The SAT verifier is polynomial-time](../part-06/is-poly-time-sat-verifier.md)
 
 ## Sources

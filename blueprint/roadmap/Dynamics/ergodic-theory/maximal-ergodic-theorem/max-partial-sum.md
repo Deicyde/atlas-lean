@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.GarsiaMax.maxPartialSum
 ---
 
 # Maximal Birkhoff partial sum

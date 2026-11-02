@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.holley_dominates
 ---
 
 # Holley inequality for increasing events
@@ -11,7 +14,12 @@ increasing event `A`. This is Mathlib's `holley` applied to the indicator of `A`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+
+## Proof depends on
+
+- [Indicator of an increasing event is monotone](../increasing-events-and-the-fkg-lattice-condition/indicator-monotone.md)
 
 ## Sources
 

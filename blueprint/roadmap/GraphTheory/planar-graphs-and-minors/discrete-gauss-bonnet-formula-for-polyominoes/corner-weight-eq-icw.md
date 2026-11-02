@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect2.cornerWeight_eq_icw
 ---
 
 # Corner weight agrees with its integer version
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner weight of a vertex](corner-weight.md)
+- [Integer-valued corner weight](icw.md)
 
 ## Sources
 

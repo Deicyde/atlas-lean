@@ -12,11 +12,11 @@ lean: Cslib.Decidability.SingleTapeRecognizable.rePred
 
 ## Depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-recognizable.md)
 
 ## Proof depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on.md)
 - [The halting set of a single-tape machine on binary inputs is r.e](re-pred-halts-on-encode-nat.md)
 
 ## Sources

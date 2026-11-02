@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jkd_r0
 ---
 
 # Grid vertex $(0, 0)$

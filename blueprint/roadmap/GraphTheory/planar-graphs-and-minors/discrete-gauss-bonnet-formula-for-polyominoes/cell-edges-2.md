@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellEuler.cellEdges
 ---
 
 # Edges of a cell complex
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Four edges of a unit cell](edges-of.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.BaseCase.four_dvd_cc
 ---
 
 # Without right turns, the number of left turns is divisible by four
@@ -9,7 +12,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](cc.md)
+
+## Proof depends on
+
+- [Turns of a cyclic direction sequence sum to zero](sum-turns-zero.md)
 
 ## Sources
 

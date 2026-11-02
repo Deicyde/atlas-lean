@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.weakConvergesTo_of_forall_tendsto_integral
 ---
 
 # Convergence of integrals implies weak convergence
@@ -10,7 +13,8 @@ weakly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Weak convergence of probability measures on configuration space](weak-converges-to.md)
 
 ## Sources
 

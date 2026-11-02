@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.pc
 ---
 
 # Critical probability of bond percolation on the hypercubic lattice
@@ -14,6 +16,10 @@ agree for `ℤ^d` by translation invariance, but that identification is not prov
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Set of densities with no percolation](subcritical-set.md)
 
 ## Sources
 

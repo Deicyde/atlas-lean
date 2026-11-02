@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect2.bI_decide
 ---
 
 # Boolean indicator of a decided proposition
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indicator of a Boolean](b-i.md)
 
 ## Sources
 

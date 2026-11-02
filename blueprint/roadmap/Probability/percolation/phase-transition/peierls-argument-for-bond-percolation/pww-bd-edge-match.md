@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.pww_BdEdgeMatch
 ---
 
 # Set and walk interior share boundary edges
@@ -10,7 +12,13 @@ edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+
+## Proof depends on
+
+- [Boundary edge of a set](../../../../GraphTheory/planar-graphs-and-minors/discrete-jordan-curve-theorem-for-the-square-lat/bd-edge.md)
+- [Inside of a closed walk by the even-odd rule](../../../../GraphTheory/planar-graphs-and-minors/discrete-jordan-curve-theorem-for-the-square-lat/jec-left-region.md)
 
 ## Sources
 

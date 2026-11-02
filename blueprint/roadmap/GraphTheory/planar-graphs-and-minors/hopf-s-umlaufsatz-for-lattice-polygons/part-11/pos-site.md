@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.JedBridge.posSite
 ---
 
 # Vertex of a walk as a lattice site
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
 
 ## Sources
 

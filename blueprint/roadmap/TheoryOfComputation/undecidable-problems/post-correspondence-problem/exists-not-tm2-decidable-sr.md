@@ -29,8 +29,8 @@ and $x$ rewrites to $y$ in zero or more steps of $R$.
 - [The halting problem for single-tape machines is undecidable](../../computability/halting-problem-for-single-tape-turing-machines/exists-not-tm2-decidable-tm0-halts-on.md)
 - [Primitive recursive coding of a finite type](../../computability/halting-problem-for-single-tape-turing-machines/primcodable-of-fintype.md)
 - [Decidability transfers along mapping reductions](../../computability/halting-problem-and-rice-s-theorem/tm2-decidable-of-many-one-reducible.md)
-- [The restricted machine evaluates like the original](../../turing-machines/single-tape/single-tape-turing-machines/eval-restrict.md)
-- [Restriction of a single-tape machine to a supporting set of states](../../turing-machines/single-tape/single-tape-turing-machines/restrict.md)
+- [The restricted machine evaluates like the original](../../turing-machines/single-tape/restricting-a-single-tape-machine-to-a-supportin/eval-restrict.md)
+- [Restriction of a single-tape machine to a supporting set of states](../../turing-machines/single-tape/restricting-a-single-tape-machine-to-a-supportin/restrict.md)
 
 ## Sources
 

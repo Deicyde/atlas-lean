@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.bernoulliProductMeasure
 ---
 
 # Bernoulli product measure on configuration space
@@ -11,7 +13,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Bernoulli distribution on the Booleans](bernoulli-measure.md)
 
 ## Sources
 

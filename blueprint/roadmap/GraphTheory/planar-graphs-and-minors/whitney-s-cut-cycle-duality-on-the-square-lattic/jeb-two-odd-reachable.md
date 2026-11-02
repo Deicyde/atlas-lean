@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.jeb_two_odd_reachable
 ---
 
 # Two odd-degree vertices lie in one component

@@ -12,7 +12,7 @@ lean: Cslib.URM.Decidable.singleTapeDecidable
 
 ## Depends on
 
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-decidable.md)
 - [URM-decidable predicate](decidable.md)
 
 ## Proof depends on

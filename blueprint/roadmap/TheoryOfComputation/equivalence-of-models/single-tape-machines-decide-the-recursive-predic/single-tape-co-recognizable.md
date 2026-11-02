@@ -16,12 +16,12 @@ single-tape machine.
 
 ## Depends on
 
-- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-co-recognizable.md)
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
+- [Co-recognizability by single-tape machines](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-co-recognizable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-recognizable.md)
 - [Post's theorem](single-tape-decidable-iff-single-tape-re.md)
 
 ## Sources

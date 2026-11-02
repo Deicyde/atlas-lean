@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanSigned.Vc
 ---
 
 # Truncated subadditivity defect of a cocycle
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Shifted subadditivity defect of a cocycle](sc.md)
 
 ## Sources
 

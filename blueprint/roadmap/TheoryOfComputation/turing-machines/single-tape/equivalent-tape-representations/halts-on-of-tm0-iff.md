@@ -16,7 +16,7 @@ started on $l$, halts.
 
 ## Depends on
 
-- [Halting on an input](../single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../decidable-and-recognizable-predicates-on-single/halts-on.md)
 - [Non-blank symbols](non-blank.md)
 - [Single-tape simulation of a Post–Turing machine](of-tm0.md)
 

@@ -25,9 +25,9 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [A power comparison for the central-offset estimate](power-bounds-for-large-residual-sylvester-schur/four-pow-mul-two-pow-mul-four-pow-lt-thr.md)
-- [Cube root times logarithm on a linear range](scaled-ternary-bound/nth-root-three-mul-log-le-one-fifth-of-l.md)
+- [Cube root times logarithm on a linear range](scaled-ternary-bound-for-the-sylvester-schur-lar/nth-root-three-mul-log-le-one-fifth-of-l.md)
 - [A linear bound by a power of four](power-bounds-for-large-residual-sylvester-schur/self-le-four-pow-div-one-twenty-eight-ad.md)
-- [Square root bound on a linear range](scaled-ternary-bound/sqrt-le-div-fifteen-of-le-four-mul.md)
+- [Square root bound on a linear range](scaled-ternary-bound-for-the-sylvester-schur-lar/sqrt-le-div-fifteen-of-le-four-mul.md)
 - [Three-layer power-of-four bound for the Erdős layer product](../power-of-four-bounds-for-sylvester-schur/erdos-layers-le-four-pow-three-layers.md)
 
 ## Sources

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.weightOff
 ---
 
 # Product of coordinate weights off one coordinate
@@ -9,7 +11,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Bernoulli weight of a single coordinate](edge-weight.md)
 
 ## Sources
 

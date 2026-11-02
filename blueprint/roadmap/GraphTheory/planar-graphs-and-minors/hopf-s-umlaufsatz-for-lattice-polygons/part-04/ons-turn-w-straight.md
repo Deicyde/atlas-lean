@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.ons_turnW_straight
 ---
 
 # Translation of a dart by a lattice vector
@@ -13,7 +16,7 @@ def ons_shiftDart (L : ℕ) (t : ZMod L × ZMod L) (d : ons_Dart L) : ons_Dart L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Turn weight between two lattice directions](ons-turn-w.md)
 
 ## Sources
 

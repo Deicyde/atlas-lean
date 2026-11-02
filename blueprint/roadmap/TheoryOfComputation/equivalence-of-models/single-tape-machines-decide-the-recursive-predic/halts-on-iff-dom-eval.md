@@ -14,7 +14,7 @@ configuration with no successor is reached, terminates.
 
 ## Depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on.md)
 
 ## Sources
 

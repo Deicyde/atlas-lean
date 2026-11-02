@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jgc_pend_rel
 ---
 
 # Adjacency relation of a 4-cycle with a pendant edge

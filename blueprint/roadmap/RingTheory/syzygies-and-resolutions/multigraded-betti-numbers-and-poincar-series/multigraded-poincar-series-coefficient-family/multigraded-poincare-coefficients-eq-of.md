@@ -21,12 +21,12 @@ Poincaré coefficient families of $D$ and $D'$ are equal.
 - [Multigraded base change data](../multigraded-betti-numbers-after-residue-field-ba/multigraded-base-change.md)
 - [Multigraded free resolution](../multigraded-free-modules-and-graded-free-resolut/multigraded-free-resolution.md)
 - [Multigraded modules over a polynomial ring](../multigraded-polynomial-modules/multigraded-polynomial-module.md)
-- [Multigraded resolution comparison](../multigraded-betti-resolution-invariance/multigraded-resolution-comparison.md)
+- [Multigraded resolution comparison](../invariance-of-multigraded-betti-numbers-across-g/multigraded-resolution-comparison.md)
 - [Multigraded Poincaré coefficients](multigraded-poincare-coefficients.md)
 
 ## Proof depends on
 
-- [Betti numbers agree across comparable resolutions](../multigraded-betti-resolution-invariance/multigraded-betti-number-eq-of-resolutio.md)
+- [Betti numbers agree across comparable resolutions](../invariance-of-multigraded-betti-numbers-across-g/multigraded-betti-number-eq-of-resolutio.md)
 
 ## Sources
 

@@ -14,6 +14,8 @@ lean: StatMech.bernoulliProductMeasure_eq_gbernoulliLaw
 ## Depends on
 
 - [Bernoulli bond law on $V$](../../percolation/phase-transition/percolation-on-product-graphs/gbernoulli-law.md)
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product measure on configuration space](bernoulli-product-measure.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jbc_cyc4
 ---
 
 # The 4-cycle graph
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Adjacency relation of the 4-cycle](jbc-cyc4-rel.md)
 
 ## Sources
 

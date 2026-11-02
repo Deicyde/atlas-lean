@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Universality.HVMeetProperty
 ---
 
 # Horizontal and vertical crossings meet
@@ -12,7 +14,17 @@ overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+
+## Proof depends on
+
+- [Connection by an open path within a set](../../../phase-transition/percolation-probability-and-critical-point/connected-within.md)
+- [Bottom side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/bottom-side.md)
+- [Left side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/left-side.md)
+- [Integer rectangle in the plane lattice](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/rect.md)
+- [Right side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/right-side.md)
+- [Top side of a general lattice rectangle](../../russo-seymour-welsh-theory/rectangles-crossings-annuli-and-the-box-crossing/top-side.md)
 
 ## Sources
 

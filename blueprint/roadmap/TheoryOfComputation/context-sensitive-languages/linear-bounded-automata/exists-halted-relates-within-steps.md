@@ -19,7 +19,7 @@ halting.
 
 ## Depends on
 
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on.md)
 - [Space-bounded single-tape machines](space-bounded-by.md)
 - [Configuration bound](cfg-bound.md)
 

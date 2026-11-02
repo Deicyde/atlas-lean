@@ -1,0 +1,67 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.CookLevin.Shift.tbody_run
+---
+
+# One iteration of the time loop of the shift generator
+
+**One iteration of the time loop of the shift generator.** Let $L$ be a layout with $g$ symbol
+codes, let $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables, let
+$N, T, H, t \in \mathbb{N}$ with $t < T$, and suppose the tables are well formed for $N$
+situations at height $H$. Write $W$ for the number of variables per time step at height $H$ and
+$V = (T + 1) W$ for the number of variables. Let $F$ be counter values of the cell-shift generator
+with empty scratch counters, with $\mathrm{Vc} = V$, $\mathrm{Gc} = g$, $\mathrm{Wc} = W$,
+$\mathrm{Tn} = t$, $\mathrm{HG} = H g$ and $\mathrm{Hs} = H$, and with $\mathrm{P}$,
+$\mathrm{TW}$, $\mathrm{TW1}$, $\mathrm{KB}$, $\mathrm{U}$, $\mathrm{Ui}$, $\mathrm{R}$,
+$\mathrm{Ri}$, $\mathrm{Ka}$, $\mathrm{CB}$ and $\mathrm{CW}$ all $0$. Then for every output list
+$o$ and every Boolean state $v$ there is a Boolean state $v'$ such that the generator, started at
+the label $\mathrm{tw}(\mathrm{head})$ (the first stage of the time-loop multiplication) in state
+$v$ with counters $F$ and output $o$, reaches the time-loop head $\mathrm{tHead}$ within at most
+the step budget for one time step of the shift generator for $L$, $N$, $T$, $H$, in state $v'$
+with counters $F$ and output the encoded blocks of time step $t$ followed by $o$.
+
+## Depends on
+
+- [Stages of the multiplication routine](../cook-levin-the-counter-machine-view-shared-by-th/ms.md)
+- [Stacks of a counter machine](../cook-levin-the-counter-machine-view-shared-by-th/sk.md)
+- [Alphabets of a counter machine](../cook-levin-the-counter-machine-view-shared-by-th/s.md)
+- [Stacks holding given counter values](../cook-levin-the-counter-machine-view-shared-by-th/st.md)
+- [Variable layout of the transition clauses](../cook-levin-generator-machine-for-the-transition/layout.md)
+- [Number of variables of the transition-clause formula](../cook-levin-generator-machine-for-the-transition/num-vars.md)
+- [Variables per time step](../cook-levin-generator-machine-for-the-transition/row-w.md)
+- [Counters of the cell-shift generator](ck.md)
+- [Labels of the cell-shift generator](gl.md)
+- [Labels of the shift generator](lab.md)
+- [Empty scratch counters of the shift generator](rest.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
+- [Encoded blocks of one time step](blk-t.md)
+- [The cell-shift generator](prog.md)
+- [Step budget for one time step of the shift generator](t-body-b.md)
+- [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
+
+## Proof depends on
+
+- [Budgeted runs transport along equal counter values](../cook-levin-the-counter-machine-view-shared-by-th/bud-st.md)
+- [The multiplication routine of a counter machine](../cook-levin-the-counter-machine-view-shared-by-th/mul-s.md)
+- [Counter state at the start of a block](blk.md)
+- [Counter state of a loop body](body.md)
+- [Entry label of the situation chain](i-from.md)
+- [Encoded blocks of one situation](blk-i.md)
+- [Step budget for one block of the shift generator](ik-b.md)
+- [Correctness of the shift generator on the situation chain](is-run.md)
+- [Budgeted run](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bud.md)
+- [Flag bit of a machine state](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
+- [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+- [Adding units to target stacks](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/add-u.md)
+- [Unary counter](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
+- [Copying a counter through a scratch stack](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/copy-run.md)
+- [Multiplying unary counters](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/mul-run.md)
+- [Counter transfer loop](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/xfer.md)
+- [Running a counter transfer](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/xfer-run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Shift](../../../../../sources/v2/CSLibExt.md)

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.WalkCellRegion.componentCellSet
 ---
 
 # Cells of the inner face component
@@ -9,7 +11,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Unit cell as a face of the square lattice](../part-09/cell-face.md)
+- [Inner component of the face graph](../part-09/inner-component.md)
+- [Face graph of a closed walk](../part-09/walk-region-graph.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.card_components_bot
 ---
 
 # Edgeless graph has one component per vertex

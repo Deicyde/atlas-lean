@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hoffman block](../multiple-zeta-values/hoffman-block.md)
+- [Hoffman block](../multiple-zeta-indices/hoffman-block.md)
 
 ## Sources
 

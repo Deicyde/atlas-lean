@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellGaussBonnet.cornerDiff_cex
 ---
 
 # Corner defect of two diagonally touching cells
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner defect of a set of unit cells](corner-diff.md)
 
 ## Sources
 

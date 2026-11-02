@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.connected_card_edges_eq_iff_isAcyclic
 ---
 
 # Connected graph with $|V| - 1$ edges is acyclic, and conversely

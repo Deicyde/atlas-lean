@@ -20,8 +20,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrability of Birkhoff averages](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-average-of-measure-p.md)
-- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Upper limit of a normalized subadditive cocycle](g-star.md)
+- [Integrability of the Kingman limit for nonnegative cocycles](integrable-kingman-limit.md)
+- [Kingman limit of a subadditive cocycle](kingman-limit.md)
+- [Invariance of the Kingman limit](kingman-limit-comp-ae.md)
+- [Upper and lower limits of a nonnegative cocycle agree](g-star-le-g-star-low-ae.md)
+- [Kingman's subadditive ergodic theorem](tendsto-div-kingman-limit-ae-of-nonneg.md)
 
 ## Sources
 

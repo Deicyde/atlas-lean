@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.BirkhoffAE.fStar
 ---
 
 # Upper limit of Birkhoff averages

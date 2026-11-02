@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.mkDart
 ---
 
 # Dart from a site in a unit direction
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](dart.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [$\ell^1$ norm of a vector in $\mathbb{Z}^2$](unit-wt.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.Site
 ---
 
 # Site of the hypercubic lattice

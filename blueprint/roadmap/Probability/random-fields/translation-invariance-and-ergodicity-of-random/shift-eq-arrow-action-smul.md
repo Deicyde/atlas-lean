@@ -12,7 +12,8 @@ lean: StatMech.ConfigSpace.shift_eq_arrowAction_smul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Shift of a configuration by a group element](shift.md)
 
 ## Sources
 

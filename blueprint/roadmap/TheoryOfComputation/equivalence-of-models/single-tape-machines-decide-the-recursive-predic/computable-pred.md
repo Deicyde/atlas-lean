@@ -13,7 +13,7 @@ symbol under the head of its final tape.
 
 ## Depends on
 
-- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/single-tape-decidable.md)
 
 ## Proof depends on
 

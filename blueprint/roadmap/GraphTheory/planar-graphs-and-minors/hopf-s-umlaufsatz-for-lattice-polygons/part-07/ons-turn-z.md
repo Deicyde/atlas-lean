@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.ons_turnZ
 ---
 
 # Turn between two directions as an element of $\mathbb{Z}/4$

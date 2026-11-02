@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.InsideClimb.nw_corner_not_climbable_x
 ---
 
 # The north step at a corner blocks horizontal movement
@@ -10,7 +13,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Unit lattice step in a given direction](../part-01/step-of.md)
+- [Vertical lattice direction](../part-10/is-vert-edge.md)
+
+## Proof depends on
+
+- [Coordinates of the vertices around a north-then-west corner](nw-corner-coords.md)
 
 ## Sources
 

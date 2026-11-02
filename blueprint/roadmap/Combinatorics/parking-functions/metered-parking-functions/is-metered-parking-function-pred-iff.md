@@ -20,7 +20,7 @@ $\pi_0, \dots, \pi_{n-1}, \pi_0, \dots$ in turn.
 ## Depends on
 
 - [Metered parking function](is-metered-parking-function.md)
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 - [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources

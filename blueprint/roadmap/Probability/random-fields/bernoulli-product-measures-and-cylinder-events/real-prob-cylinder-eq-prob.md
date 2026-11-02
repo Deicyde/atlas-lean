@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.realProb_cylinder_eq_prob
 ---
 
 # Probability of a finitely dependent event as a finite weight
@@ -10,7 +13,15 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product measure on configuration space](bernoulli-product-measure.md)
+- [Bernoulli weight of an event](../../correlation-inequalities/harris-fkg-bk/russo-s-formula-and-pivotal-coordinates/prob.md)
+
+## Proof depends on
+
+- [Events depending on finitely many coordinates are cylinders](eq-cylinder-restrict-image.md)
+- [Bernoulli product measure of an event on a finite index set](finite-real-prob-eq-prob.md)
+- [Bernoulli product measure of a cylinder event, real-valued form](real-prob-cylinder.md)
 
 ## Sources
 

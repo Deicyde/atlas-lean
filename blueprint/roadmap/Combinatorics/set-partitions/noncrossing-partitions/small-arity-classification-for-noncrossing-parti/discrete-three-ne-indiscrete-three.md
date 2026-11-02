@@ -14,14 +14,14 @@ $\{0, 1, 2\}$.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
 - [Discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/discrete.md)
 - [The indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete.md)
 
 ## Proof depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [The discrete noncrossing partition consists of the singletons](../extremal-noncrossing-partitions-discrete-and-ind/discrete-parts.md)
 - [The indiscrete partition of a nonempty set has a single block](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete-parts-pos.md)
 

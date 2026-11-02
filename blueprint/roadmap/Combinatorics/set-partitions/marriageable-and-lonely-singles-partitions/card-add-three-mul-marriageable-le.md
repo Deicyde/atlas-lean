@@ -14,10 +14,10 @@ $\{0, \dots, n-1\}$ and $M_n$ is the number of those that are marriageable singl
 ## Depends on
 
 - [Number of marriageable singles partitions](marriageable-singles-count.md)
-- [Noncrossing partition](../noncrossing-partitions/basic/noncrossing-partition.md)
-- [Crossing in a set partition](../noncrossing-partitions/basic/has-crossing.md)
-- [Noncrossing set partition](../noncrossing-partitions/basic/is-noncrossing.md)
-- [Set partition](../noncrossing-partitions/basic/set-partition.md)
+- [Noncrossing partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Crossing in a set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/has-crossing.md)
+- [Noncrossing set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions/noncrossing-partitions-and-the-refinement-order/set-partition.md)
 
 ## Sources
 

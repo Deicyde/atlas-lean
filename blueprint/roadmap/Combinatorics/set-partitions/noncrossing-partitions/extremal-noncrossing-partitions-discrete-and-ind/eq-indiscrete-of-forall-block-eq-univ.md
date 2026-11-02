@@ -15,15 +15,15 @@ then $P$ is the indiscrete noncrossing partition.
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
-- [Block of a noncrossing partition](../basic/block.md)
+- [Noncrossing partition](../noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
+- [Block of a noncrossing partition](../noncrossing-partitions-and-the-refinement-order/block.md)
 - [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Proof depends on
 
 - [Blocks of a partition other than the coarsest are smaller than the ground set](../../finite-set-partitions/card-lt-of-ne-top.md)
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [Characterization of the indiscrete noncrossing partition](eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources

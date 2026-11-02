@@ -16,7 +16,7 @@ as an element of $\mathbb{Q}\langle x, y \rangle$. The empty index gives $1$.
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Proof depends on
 

@@ -12,7 +12,9 @@ lean: StatMech.inhomBernoulliProductMeasure_const
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Bernoulli product measure on configuration space](../../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-product-measure.md)
+- [Inhomogeneous Bernoulli product measure](inhom-bernoulli-product-measure.md)
 
 ## Sources
 

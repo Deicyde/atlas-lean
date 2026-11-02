@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.sliceSet
 ---
 
 # Coordinate set with the first coordinate removed

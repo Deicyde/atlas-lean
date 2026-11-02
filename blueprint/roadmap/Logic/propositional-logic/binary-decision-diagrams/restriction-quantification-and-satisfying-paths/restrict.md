@@ -16,11 +16,11 @@ which returns the common child when the two are equal and a node testing $v$ oth
 
 ## Depends on
 
-- [Binary decision diagram](../basic/bdd.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
 
 ## Proof depends on
 
-- [Node constructor removing a redundant test](../basic/mk.md)
+- [Node constructor removing a redundant test](../reduced-ordered-binary-decision-diagrams-canonic/mk.md)
 
 ## Sources
 

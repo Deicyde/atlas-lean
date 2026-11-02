@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.sleDriving
 ---
 
 # SLE driving function

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.isClopen_apply_eq_of_subseq_tendsto
 ---
 
 # Subsequential weak limits are determined by clopen-event limits
@@ -10,7 +13,7 @@ satisfies `ξ(A) = L(A)` on clopen `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

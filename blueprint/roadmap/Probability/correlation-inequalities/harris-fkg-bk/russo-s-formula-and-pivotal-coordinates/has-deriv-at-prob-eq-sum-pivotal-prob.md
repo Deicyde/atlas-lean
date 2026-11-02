@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.hasDerivAt_prob_eq_sum_pivotalProb
 ---
 
 # Russo's formula
@@ -10,7 +13,16 @@ set of coordinates, `p ↦ prob p A` has derivative `∑ e, pivotalProb p A e` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Weight of the event that a coordinate is pivotal](pivotal-prob.md)
+- [Bernoulli weight of an event](prob.md)
+
+## Proof depends on
+
+- [Derivative of the event weight before grouping](has-deriv-at-prob.md)
+- [Contribution of one coordinate to Russo's formula](russo-per-edge.md)
+- [Product of coordinate weights off one coordinate](weight-off.md)
 
 ## Sources
 

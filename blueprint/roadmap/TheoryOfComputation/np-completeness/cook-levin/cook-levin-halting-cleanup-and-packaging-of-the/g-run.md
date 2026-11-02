@@ -1,0 +1,96 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.CookLevin.Package.g_run
+---
+
+# The reduction machine halts with the emitted formula
+
+**The reduction machine halts with the emitted formula.** Fix $r \in \mathbb{N}$, a finite TM2
+machine $M$ with an encoding $E$, a list $Y$ of input symbols of $M$, an output symbol $a$, a map
+$\iota$ from $\{0, \dots, r-1\}$ to input symbols, an input symbol $\mathit{sep}$, a polynomial
+$k$ with coefficients in $\mathbb{N}$ and $c, e \in \mathbb{N}$. For every raw input $s$, a list
+over $\{0, \dots, r-1\}$, the program of the reduction machine goes in at most $g_B(|s|)$ steps
+from the initial configuration on input $s$ to the halting configuration with output the emitted
+formula for $s$ (no label, the initial state, that formula on the output stack and every other
+stack empty), where $g_B$ is the step bound of the composed machine.
+
+No assumption on the verifier data is needed.
+
+## Depends on
+
+- [Step bound of the composed machine](g-b.md)
+- [The reduction machine](g-tm.md)
+- [The formula emitted on a raw input](phi-of.md)
+- [Encoding data for a finite TM2 machine](../cook-levin-situation-tables-of-a-multi-stack-mac/part-01/enc.md)
+- [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
+
+## Proof depends on
+
+- [Clause kinds of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ak.md)
+- [Counters of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ck.md)
+- [Labels of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/gl.md)
+- [Stages of the accept generator's literal routine](../cook-levin-generator-machine-for-the-accept-fami/ls.md)
+- [Precomputation stages of the accept generator](../cook-levin-generator-machine-for-the-accept-fami/ps.md)
+- [Stacks of the Cook–Levin host machine](../cook-levin-the-five-generators-as-sub-machines-o/hk.md)
+- [Labels of the Cook–Levin host machine](../cook-levin-the-five-generators-as-sub-machines-o/hl.md)
+- [The formula emitted by the host](../cook-levin-the-five-generators-as-sub-machines-o/phi.md)
+- [Stages of the multiplication routine](../cook-levin-the-counter-machine-view-shared-by-th/ms.md)
+- [Counters of the transition-family generator](../cook-levin-generator-machine-for-the-transition/ck.md)
+- [Labels of the clause-family generator](../cook-levin-generator-machine-for-the-transition/gl.md)
+- [Stages of the transition-clause generator's literal routine](../cook-levin-generator-machine-for-the-transition/ls.md)
+- [Variable layout of the transition clauses](../cook-levin-generator-machine-for-the-transition/layout.md)
+- [Number of literals of a transition clause](../cook-levin-generator-machine-for-the-transition/n-lits.md)
+- [Stages of the transition-clause generator's precomputation](../cook-levin-generator-machine-for-the-transition/ps.md)
+- [Counters of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/ck.md)
+- [Clause kinds of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/cl.md)
+- [Labels of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/gl.md)
+- [Stages of the literal routine (initial-row generator)](../cook-levin-generator-machine-for-the-initial-row/ls.md)
+- [Loop phases of the initial-row generator](../cook-levin-generator-machine-for-the-initial-row/ph.md)
+- [Labels of the first precomputation part](../cook-levin-generator-machine-for-the-initial-row/ps1.md)
+- [Labels of the second precomputation part](../cook-levin-generator-machine-for-the-initial-row/ps2.md)
+- [Sorted certificate code list](../cook-levin-generator-machine-for-the-initial-row/ycs.md)
+- [Labels of the composed machine](dl.md)
+- [Stacks to drain](dks.md)
+- [Drain step count](drain-b.md)
+- [Step bound for draining bounded stacks](drain-b-le.md)
+- [Only the output stack survives the drain](drained.md)
+- [Running a program, then the drain](g-run-gen.md)
+- [The composed program](gprog.md)
+- [Stacks of the full machine](../cook-levin-the-precomputation-composed-with-the/fk.md)
+- [Labels of the full machine](../cook-levin-the-precomputation-composed-with-the/fl.md)
+- [Alphabets of the full machine](../cook-levin-the-precomputation-composed-with-the/f.md)
+- [Stages of a Horner round](../cook-levin-the-precomputation-composed-with-the/hw.md)
+- [Labels of the counter program](../cook-levin-the-precomputation-composed-with-the/pl.md)
+- [Scratch counters of the counter program](../cook-levin-the-precomputation-composed-with-the/ps.md)
+- [Stages of the power loop](../cook-levin-the-precomputation-composed-with-the/pw.md)
+- [The precomputed time bound](../cook-levin-the-precomputation-composed-with-the/tof.md)
+- [Coefficient list of a polynomial](../cook-levin-the-precomputation-composed-with-the/coeffs.md)
+- [Stacks during the read loop](../cook-levin-the-precomputation-composed-with-the/fst.md)
+- [Step bound of the full machine](../cook-levin-the-precomputation-composed-with-the/full-b.md)
+- [The full program on the real generators](../cook-levin-the-precomputation-composed-with-the/full-prog.md)
+- [The full machine as a finite multi-stack Turing machine](../cook-levin-the-precomputation-composed-with-the/full-tm.md)
+- [The composed machine, raw input to formula](../cook-levin-the-precomputation-composed-with-the/full-run.md)
+- [Initial configuration of the full machine](../cook-levin-the-precomputation-composed-with-the/init-list-full.md)
+- [Total length bound](../cook-levin-the-precomputation-composed-with-the/m-of.md)
+- [Loop-body stages of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/bd.md)
+- [Counters of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/ck.md)
+- [Clause kinds of the cell-shift family](../cook-levin-generator-machine-for-the-cell-shift/cl.md)
+- [Labels of the cell-shift generator](../cook-levin-generator-machine-for-the-cell-shift/gl.md)
+- [Stages of the cell-shift literal routine](../cook-levin-generator-machine-for-the-cell-shift/ls.md)
+- [Precomputation stages of the shift generator](../cook-levin-generator-machine-for-the-cell-shift/ps.md)
+- [Setup and loop stages of a cell-shift block](../cook-levin-generator-machine-for-the-cell-shift/st.md)
+- [Number of situations](../cook-levin-situation-tables-of-a-multi-stack-mac/part-01/n.md)
+- [Clause layout of a machine encoding](../cook-levin-situation-tables-of-a-multi-stack-mac/part-01/layout.md)
+- [Window depth of a machine](../cook-levin-situation-tables-of-a-multi-stack-mac/part-01/depth.md)
+- [Idle-extended run](../cook-levin-situation-tables-of-a-multi-stack-mac/part-03/run-i.md)
+- [Stack heights along a run](../cook-levin-situation-tables-of-a-multi-stack-mac/part-05/run-i-height.md)
+- [The idle-extended run follows the real run](../cook-levin-situation-tables-of-a-multi-stack-mac/part-08/run-i-of-iterate.md)
+- [Dense encoding of a CNF formula](../dense-cnf-encoding-of-sat/encode-cnf.md)
+- [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Package](../../../../../sources/v2/CSLibExt.md)

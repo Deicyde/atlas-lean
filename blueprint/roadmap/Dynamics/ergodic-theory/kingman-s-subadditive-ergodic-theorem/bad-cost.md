@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.KingmanFilling.badCost
 ---
 
 # Cost of a bad step in the greedy decomposition
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Bad set in the greedy decomposition for Kingman's theorem](bad-set.md)
 
 ## Sources
 

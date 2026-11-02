@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.WalkCellBoundary.cornerCount_eq_indicators
 ---
 
 # Corner count as a sum of four indicators
@@ -10,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner count of a lattice point](../../discrete-gauss-bonnet-formula-for-polyominoes/corner-count.md)
+
+## Proof depends on
+
+- [Cardinality of an intersection as a sum of indicators](../../discrete-gauss-bonnet-formula-for-polyominoes/card-inter-eq-sum.md)
+- [Corner count as a count of the four surrounding cells](../../discrete-gauss-bonnet-formula-for-polyominoes/corner-count-eq-inter.md)
 
 ## Sources
 

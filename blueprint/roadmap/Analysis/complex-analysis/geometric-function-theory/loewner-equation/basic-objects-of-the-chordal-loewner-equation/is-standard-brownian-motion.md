@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: StatMech.SLE.IsStandardBrownianMotion
 ---
 
 # Standard real Brownian motion

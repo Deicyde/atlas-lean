@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.goodWord
 ---
 
 # Self-avoiding initial segment of an encoded lattice path
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Vertices of a lattice path encoded by a step sequence](vert-of.md)
 
 ## Sources
 

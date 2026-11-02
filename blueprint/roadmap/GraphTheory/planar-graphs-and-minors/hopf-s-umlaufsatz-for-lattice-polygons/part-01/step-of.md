@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.BaseCase.stepOf
 ---
 
 # Unit lattice step in a given direction

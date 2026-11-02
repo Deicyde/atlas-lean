@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JedBridge.posSite_injective
 ---
 
 # Vertices of a simple walk are distinct sites
@@ -9,7 +12,9 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Vertex of a walk as a lattice site](pos-site.md)
 
 ## Sources
 

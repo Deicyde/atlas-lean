@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellCount.cellVerts
 ---
 
 # Vertices of a cell complex
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

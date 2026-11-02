@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.ibk_criterion_of_finite_dependsOn
 ---
 
 # Union bound from the three-event BK inequality
@@ -11,7 +14,16 @@ all events increasing and depending on a common finite window, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Event depending only on a set of coordinates](../../reimer-inequality/down-compression-and-disjoint-pairs/depends-on.md)
+- [Increasing event](../increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Bernoulli product measure on configuration space](../../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-product-measure.md)
+- [Disjoint occurrence of events](disjoint-occurrence.md)
+
+## Proof depends on
+
+- [Bernoulli distribution on the Booleans](../../../random-fields/bernoulli-product-measures-and-cylinder-events/bernoulli-measure.md)
+- [BK inequality for three increasing events](ibk-triple-of-finite-depends-on.md)
 
 ## Sources
 

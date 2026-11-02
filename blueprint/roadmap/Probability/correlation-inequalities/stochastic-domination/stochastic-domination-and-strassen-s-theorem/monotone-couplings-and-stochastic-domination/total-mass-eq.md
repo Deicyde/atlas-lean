@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.MonotoneCoupling.total_mass_eq
 ---
 
 # Marginals of a coupling have equal total mass
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Monotone coupling of two measures](monotone-coupling.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind2.exists_two_top_corners
 ---
 
 # Eight left turns give two north-then-west corners
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns of a direction sequence](../part-01/cc.md)
+
+## Proof depends on
+
+- [Left turns are four times the north-to-west turns](cc-eq-four-mul-tcount.md)
+- [Number of left turns out of a given direction](tcount.md)
 
 ## Sources
 

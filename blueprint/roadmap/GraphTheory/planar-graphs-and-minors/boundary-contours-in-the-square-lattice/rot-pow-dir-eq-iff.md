@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Lattice.rotPow_dir_eq_iff
 ---
 
 # Nontrivial quarter-turn rotations fix no lattice direction
@@ -10,7 +13,16 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart of the square lattice](dart.md)
+- [Direction of a lattice dart](dir.md)
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Rotation of $\mathbb{Z}^2$ by a number of quarter turns](rot-pow.md)
+
+## Proof depends on
+
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+- [Quarter-turn rotation of the square lattice](../self-duality-of-the-square-lattice/rot90-fun.md)
+- [$\ell^1$ norm of a vector in $\mathbb{Z}^2$](unit-wt.md)
 
 ## Sources
 

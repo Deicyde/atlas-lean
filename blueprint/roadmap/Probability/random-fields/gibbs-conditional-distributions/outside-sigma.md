@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.outsideSigma
 ---
 
 # σ-algebra of the configuration outside a region
@@ -10,7 +12,11 @@ about a configuration that is visible from outside the region `Λ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Coordinate projection of a configuration](../spin-and-bond-configuration-spaces/eval.md)
 
 ## Sources
 

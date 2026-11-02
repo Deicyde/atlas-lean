@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.tnse_HasTreeFreeDetour
 ---
 
 # Three-step detour avoiding an edge

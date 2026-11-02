@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.NoDoubleWind2.tcount_shift
 ---
 
 # Every direction is left by equally many left turns
@@ -10,7 +13,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number of left turns out of a given direction](tcount.md)
+
+## Proof depends on
+
+- [Number of straight continuations in a given direction](scount.md)
 
 ## Sources
 

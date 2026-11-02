@@ -13,7 +13,7 @@ list $(k_1, \dots, k_r)$ of its entries in order, each regarded as a positive in
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Sources
 

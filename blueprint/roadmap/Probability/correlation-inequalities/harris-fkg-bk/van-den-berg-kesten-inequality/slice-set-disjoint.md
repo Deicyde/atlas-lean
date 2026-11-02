@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.sliceSet_disjoint
 ---
 
 # Removing the first coordinate preserves disjointness
@@ -9,7 +12,7 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate set with the first coordinate removed](slice-set.md)
 
 ## Sources
 

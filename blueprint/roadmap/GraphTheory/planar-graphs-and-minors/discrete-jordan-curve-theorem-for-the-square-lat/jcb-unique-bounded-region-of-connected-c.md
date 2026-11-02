@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.jcb_uniqueBoundedRegion_of_connected_cycle
 ---
 
 # Jordan curve theorem
@@ -12,7 +14,15 @@ classification of surfaces* (1992).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar lattice subgraph of the square lattice](planar-z2-subgraph.md)
+- [Bounded regions of a planar lattice subgraph](jcb-bounded-region.md)
+
+## Proof depends on
+
+- [Edgeless graph has one component per vertex](../euler-s-formula-and-cycle-rank/card-components-bot.md)
+- [Removing one element lowers cardinality by one](../euler-s-formula-and-cycle-rank/card-subtype-ne-add-one.md)
+- [Cycle rank one gives a unique bounded region](jcb-unique-bounded-region-of-nullity-one.md)
+- [Cycle rank of a finite graph](../euler-s-formula-and-cycle-rank/nullity.md)
 
 ## Sources
 

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellEuler.edgesOf
 ---
 
 # Four edges of a unit cell

@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Percolation.PcContourBound
 ---
 
 # Peierls contour bound on the percolation probability
@@ -10,6 +12,11 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Peierls series bounding closed dual circuits](pc-upper-bound.md)
+- [Percolation probability of bond percolation](../percolation-probability-and-critical-point/theta.md)
 
 ## Sources
 

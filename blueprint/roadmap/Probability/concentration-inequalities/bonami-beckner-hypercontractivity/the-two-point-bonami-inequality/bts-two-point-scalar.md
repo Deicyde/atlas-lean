@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Probability.bts_twoPointScalar
 ---
 
 # Two-point Bonami inequality
@@ -12,6 +15,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Taylor lower bound for $(1+t)^q + (1-t)^q$](bts-taylor-lower.md)
 
 ## Sources
 

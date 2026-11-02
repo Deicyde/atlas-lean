@@ -20,7 +20,7 @@ In the paper's numbering of cars from $1$, the factors are $n + 2 - i$ and $i - 
 ## Depends on
 
 - [Lucky car under greedy parking](is-lucky-car.md)
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

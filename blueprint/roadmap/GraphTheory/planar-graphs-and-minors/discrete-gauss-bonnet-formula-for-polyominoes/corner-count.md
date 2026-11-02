@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellCount.cornerCount
 ---
 
 # Corner count of a lattice point
@@ -10,6 +12,10 @@ origin: cited
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Four corners of a unit cell](corners-of.md)
 
 ## Sources
 

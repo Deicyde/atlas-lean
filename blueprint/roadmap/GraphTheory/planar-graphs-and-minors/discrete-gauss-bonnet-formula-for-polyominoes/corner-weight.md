@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Onsager.CellEuler.cornerWeight
 ---
 
 # Corner weight of a vertex

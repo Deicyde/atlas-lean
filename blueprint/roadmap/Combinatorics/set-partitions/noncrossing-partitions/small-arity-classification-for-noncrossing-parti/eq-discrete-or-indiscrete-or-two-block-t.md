@@ -15,15 +15,15 @@ two-block noncrossing partition whose blocks are $\{a\}$ and $\{0, 1, 2\} \setmi
 
 ## Depends on
 
-- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../noncrossing-partitions-and-the-refinement-order/noncrossing-partition.md)
 - [Discrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/discrete.md)
 - [The indiscrete noncrossing partition](../extremal-noncrossing-partitions-discrete-and-ind/indiscrete.md)
 - [Two-block partition of three points](two-block-partition.md)
 
 ## Proof depends on
 
-- [Noncrossing set partition](../basic/is-noncrossing.md)
-- [Set partition](../basic/set-partition.md)
+- [Noncrossing set partition](../noncrossing-partitions-and-the-refinement-order/is-noncrossing.md)
+- [Set partition](../noncrossing-partitions-and-the-refinement-order/set-partition.md)
 - [A noncrossing partition of three points with three blocks is discrete](eq-discrete-of-card-three-three.md)
 - [A noncrossing partition of three points with one block is indiscrete](eq-indiscrete-of-card-one-three.md)
 - [Noncrossing partitions of three points have one, two or three blocks](three-card-one-two-three.md)

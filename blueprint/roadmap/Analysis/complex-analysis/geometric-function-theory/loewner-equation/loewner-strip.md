@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.SLE.loewnerStrip
 ---
 
 # Closed half-plane above a horizontal line

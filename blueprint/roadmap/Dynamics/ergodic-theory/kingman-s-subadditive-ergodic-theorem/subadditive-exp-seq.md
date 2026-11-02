@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Kingman.SubadditiveCocycle.subadditive_expSeq
 ---
 
 # Expectations of a subadditive cocycle form a subadditive sequence
@@ -9,7 +12,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Expectation sequence of a cocycle](exp-seq.md)
+
+## Proof depends on
+
+- [Expectations of a subadditive cocycle are subadditive](exp-seq-subadditive.md)
 
 ## Sources
 

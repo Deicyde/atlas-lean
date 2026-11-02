@@ -20,7 +20,7 @@ fenced machine halts only by simulating a halting run of $M$.
 ## Depends on
 
 - [Fenced alphabet](fence-symbol.md)
-- [Halting on an input](../../turing-machines/single-tape/single-tape-turing-machines/halts-on.md)
+- [Halting on an input](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on.md)
 - [The fenced machine](fence.md)
 - [Fenced input](fence-input.md)
 
@@ -38,14 +38,14 @@ fenced machine halts only by simulating a halting run of $M$.
 - [Simulated cell of a fenced cell](read.md)
 - [Reading back a copied cell](read-map-sym.md)
 - [Reading back a fenced cell of a write](read-of-cell.md)
-- [Halting from a configuration](../../turing-machines/single-tape/single-tape-turing-machines/halts-from.md)
+- [Halting from a configuration](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-from.md)
 - [A transition lifted to the fenced machine](fence-lift.md)
 - [The running transition of the fenced machine](fence-run.md)
 - [Cells of a fenced input](get-elem-fence-input.md)
-- [Halting from a configuration is invariant along a run](../../turing-machines/single-tape/single-tape-turing-machines/halts-from-iff-of-refl-trans-gen.md)
-- [Configurations with the same successor halt together](../../turing-machines/single-tape/single-tape-turing-machines/halts-from-iff-of-step-eq.md)
-- [Halting on an input is halting from the initial configuration](../../turing-machines/single-tape/single-tape-turing-machines/halts-on-iff-halts-from.md)
-- [One step of a single-tape Turing machine](../../turing-machines/single-tape/single-tape-turing-machines/step-some.md)
+- [Halting from a configuration is invariant along a run](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-from-iff-of-refl-trans-gen.md)
+- [Configurations with the same successor halt together](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-from-iff-of-step-eq.md)
+- [Halting on an input is halting from the initial configuration](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/halts-on-iff-halts-from.md)
+- [One step of a single-tape Turing machine](../../turing-machines/single-tape/decidable-and-recognizable-predicates-on-single/step-some.md)
 
 ## Sources
 

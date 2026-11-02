@@ -21,7 +21,7 @@ the image of $y$ in $L_w$.
 ## Depends on
 
 - [Tensor product decomposition at a finite place](completion-tensor-product-right-alg-equi.md)
-- [Finite places lying over a finite place](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../places-of-a-number-field-extension-lying-over-a/places-over.md)
 
 ## Proof depends on
 

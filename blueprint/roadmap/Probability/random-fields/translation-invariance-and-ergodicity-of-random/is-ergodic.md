@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.ConfigSpace.IsErgodic
 ---
 
 # Ergodic measure on configuration space
@@ -11,7 +13,12 @@ invariant and every measurable set with `shift g ⁻¹' s = s` for all `g` has m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../spin-and-bond-configuration-spaces/config-space.md)
+
+## Proof depends on
+
+- [Translation-invariant measure on configuration space](is-translation-invariant.md)
+- [Shift of a configuration by a group element](shift.md)
 
 ## Sources
 

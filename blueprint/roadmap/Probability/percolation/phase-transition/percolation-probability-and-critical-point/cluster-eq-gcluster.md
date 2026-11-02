@@ -15,10 +15,16 @@ lean: StatMech.Percolation.cluster_eq_gcluster
 ## Depends on
 
 - [Open cluster in a graph](../percolation-on-product-graphs/gcluster.md)
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Site of the hypercubic lattice](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Open cluster of a site](cluster.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../../../GraphTheory/graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
 
 ## Proof depends on
 
 - [Open subgraph of a graph](../percolation-on-product-graphs/open-subgraph.md)
+- [Connection by an open path](connected.md)
+- [Open subgraph of a bond configuration](open-subgraph.md)
 
 ## Sources
 

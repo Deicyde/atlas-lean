@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.wprob_slice
 ---
 
 # Weighted probability by conditioning on the first coordinate
@@ -11,7 +14,14 @@ where `ψ` is `φ` on the remaining coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Slice of an event at the first coordinate](slice.md)
+- [Weighted probability of an event](wprob.md)
+
+## Proof depends on
+
+- [Product weight of a configuration](pweight.md)
+- [Product weight factors over the first coordinate](pweight-cons.md)
 
 ## Sources
 

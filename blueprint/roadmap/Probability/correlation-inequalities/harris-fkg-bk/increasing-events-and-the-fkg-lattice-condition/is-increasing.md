@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.IsIncreasing
 ---
 
 # Increasing event
@@ -10,7 +12,7 @@ order: `ω ∈ A` and `ω ≤ ω'` imply `ω' ∈ A`. This is `IsUpperSet A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
 
 ## Sources
 

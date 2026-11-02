@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Lattice.rot90Iso
 ---
 
 # Quarter-turn rotation as a lattice automorphism
@@ -9,7 +11,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site of the hypercubic lattice](../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
+- [Hypercubic lattice $\mathbb{Z}^d$](../../graph-families-and-operations/hypercubic-lattice-graphs/hypercubic-lattice.md)
+
+## Proof depends on
+
+- [Quarter-turn rotation as a permutation](rot90-equiv.md)
+- [Quarter-turn rotation of the square lattice](rot90-fun.md)
 
 ## Sources
 

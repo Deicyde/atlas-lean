@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.bk_wprob_general
 ---
 
 # BK inequality for product weights on a finite set
@@ -11,7 +14,18 @@ all increasing events `A, B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](../increasing-events-and-the-fkg-lattice-condition/is-increasing.md)
+- [Disjoint occurrence of events](disjoint-occurrence.md)
+- [Weighted probability of an event](wprob.md)
+
+## Proof depends on
+
+- [BK inequality for product weights on $n$ ordered coordinates](bk-wprob.md)
+- [Relabeling configurations along a bijection](cfg-equiv.md)
+- [Monotonicity of configuration relabeling](cfg-equiv-mono.md)
+- [Disjoint occurrence commutes with relabeling coordinates](preimage-disjoint-occurrence.md)
+- [Weighted probability is invariant under relabeling coordinates](wprob-transfer.md)
 
 ## Sources
 

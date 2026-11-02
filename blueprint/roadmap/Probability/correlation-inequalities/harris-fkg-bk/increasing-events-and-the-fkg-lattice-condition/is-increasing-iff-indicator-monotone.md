@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.isIncreasing_iff_indicator_monotone
 ---
 
 # An event is increasing iff its indicator is monotone
@@ -10,7 +13,12 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Configuration space of a statistical-mechanics model](../../../random-fields/spin-and-bond-configuration-spaces/config-space.md)
+- [Increasing event](is-increasing.md)
+
+## Proof depends on
+
+- [Indicator of an increasing event is monotone](indicator-monotone.md)
 
 ## Sources
 

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect2.cornerWeight_jump
 ---
 
 # Change of a vertex weight when one more cell is incident
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corner weight of a vertex](corner-weight.md)
+- [Integer jump of the corner weight](ijump.md)
+
+## Proof depends on
+
+- [Corner weight agrees with its integer version](corner-weight-eq-icw.md)
+- [Integer-valued corner weight](icw.md)
 
 ## Sources
 

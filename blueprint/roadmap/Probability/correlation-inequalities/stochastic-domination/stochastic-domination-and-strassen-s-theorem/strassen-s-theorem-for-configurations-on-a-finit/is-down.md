@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: StatMech.Transport.IsDown
 ---
 
 # Down-set of a partial order

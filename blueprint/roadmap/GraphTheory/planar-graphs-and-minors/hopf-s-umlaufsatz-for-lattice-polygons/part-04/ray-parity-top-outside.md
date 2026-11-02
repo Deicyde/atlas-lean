@@ -1,6 +1,9 @@
 ---
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.JordanParity.rayParity_topOutside
 ---
 
 # Cells above a walk are outside
@@ -9,7 +12,13 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertices of a lattice walk from its step directions](../part-01/pos.md)
+- [Ray-crossing parity of a lattice cell](../part-03/ray-parity.md)
+
+## Proof depends on
+
+- [Upward ray crossings above a cell](../part-03/up-cross.md)
+- [No upward crossings for cells above a walk](up-cross-top-outside.md)
 
 ## Sources
 

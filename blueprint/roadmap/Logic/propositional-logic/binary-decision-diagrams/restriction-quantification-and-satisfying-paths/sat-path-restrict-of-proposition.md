@@ -18,26 +18,26 @@ to $\mathrm{false}$, satisfies $A$.
 ## Depends on
 
 - [Assignment read off a path](of-path.md)
-- [Diagram of a proposition](../basic/of-proposition.md)
+- [Diagram of a proposition](../reduced-ordered-binary-decision-diagrams-canonic/of-proposition.md)
 - [Restriction of a binary decision diagram](restrict.md)
 - [Satisfying path of a binary decision diagram](sat-path.md)
 - [Truth-table evaluation](../../propositional-natural-deduction/eval-bool.md)
 
 ## Proof depends on
 
-- [Binary decision diagram](../basic/bdd.md)
-- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
-- [Diagrams ordered from a variable](../basic/ordered-from.md)
-- [Reduced diagrams](../basic/reduced.md)
-- [Bryant's apply operation](../basic/apply.md)
-- [Evaluation of a binary decision diagram](../basic/eval.md)
-- [Apply computes the operation pointwise](../basic/eval-apply.md)
+- [Binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/bdd.md)
+- [Reduced ordered binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/is-robdd.md)
+- [Diagrams ordered from a variable](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from.md)
+- [Reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced.md)
+- [Bryant's apply operation](../reduced-ordered-binary-decision-diagrams-canonic/apply.md)
+- [Evaluation of a binary decision diagram](../reduced-ordered-binary-decision-diagrams-canonic/eval.md)
+- [Apply computes the operation pointwise](../reduced-ordered-binary-decision-diagrams-canonic/eval-apply.md)
 - [The path assignment satisfies an ordered diagram](eval-of-path-sat-path.md)
 - [Satisfiability with one variable fixed to false](exists-eval-bool-eq-false-at-iff.md)
 - [Restriction yields an ROBDD](is-robdd-restrict.md)
-- [Node constructor removing a redundant test](../basic/mk.md)
-- [Apply preserves orderedness](../basic/ordered-from-apply.md)
-- [Apply returns reduced diagrams](../basic/reduced-apply.md)
+- [Node constructor removing a redundant test](../reduced-ordered-binary-decision-diagrams-canonic/mk.md)
+- [Apply preserves orderedness](../reduced-ordered-binary-decision-diagrams-canonic/ordered-from-apply.md)
+- [Apply returns reduced diagrams](../reduced-ordered-binary-decision-diagrams-canonic/reduced-apply.md)
 - [Reduced diagrams other than false have a satisfying path](sat-path-is-some-of-ne.md)
 
 ## Sources

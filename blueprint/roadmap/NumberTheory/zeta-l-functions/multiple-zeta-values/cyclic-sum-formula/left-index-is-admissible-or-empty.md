@@ -16,17 +16,17 @@ the left-hand index of the cyclic sum formula of $k$ at $(j, i)$ is admissible o
 ## Depends on
 
 - [Left-hand indices of the cyclic sum formula](left-index.md)
-- [Admissible or empty index](../multiple-zeta-values/is-admissible-or-empty.md)
+- [Admissible or empty index](../multiple-zeta-and-multiple-zeta-star-series/is-admissible-or-empty.md)
 
 ## Proof depends on
 
 - [The index of a list of positive integers](to-index.md)
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
-- [Admissible index](../multiple-zeta-values/is-admissible.md)
-- [Depth of an index](../multiple-zeta-values/depth.md)
-- [Entries of an index](../multiple-zeta-values/entries.md)
-- [Admissibility of an index via its entries](../multiple-zeta-values/is-admissible-iff.md)
-- [Admissible list](../multiple-zeta-values/is-admissible-2.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
+- [Admissible index](../multiple-zeta-indices/is-admissible.md)
+- [Depth of an index](../multiple-zeta-indices/depth.md)
+- [Entries of an index](../multiple-zeta-indices/entries.md)
+- [Admissibility of an index via its entries](../multiple-zeta-indices/is-admissible-iff.md)
+- [Admissible list](../multiple-zeta-indices/is-admissible-2.md)
 
 ## Sources
 

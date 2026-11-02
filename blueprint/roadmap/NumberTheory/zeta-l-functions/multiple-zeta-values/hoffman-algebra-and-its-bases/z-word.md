@@ -14,7 +14,7 @@ the two letters $x$ and $y$, where $z_k = x^{k-1} y$. The empty index gives the 
 
 ## Depends on
 
-- [Multiple-zeta index](../multiple-zeta-values/index.md)
+- [Multiple-zeta index](../multiple-zeta-indices/index.md)
 
 ## Proof depends on
 

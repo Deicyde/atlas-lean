@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.isClopen_cylinderEvent
 ---
 
 # Cylinder events are clopen

@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.Onsager.CellConnect2.mem_cellEdges_top
 ---
 
 # Membership of a cell's top edge in the cell complex
@@ -10,7 +13,11 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edges of a cell complex](cell-edges-2.md)
+
+## Proof depends on
+
+- [Four edges of a unit cell](edges-of.md)
 
 ## Sources
 

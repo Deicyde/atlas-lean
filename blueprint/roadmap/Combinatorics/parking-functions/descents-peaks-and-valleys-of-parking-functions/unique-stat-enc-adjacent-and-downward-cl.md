@@ -17,7 +17,7 @@ if $p$ is a value of $f$ then so is $q$.
 
 ## Depends on
 
-- [Parking function](../parking-functions/is-parking-function.md)
+- [Parking function](../is-parking-function.md)
 
 ## Sources
 

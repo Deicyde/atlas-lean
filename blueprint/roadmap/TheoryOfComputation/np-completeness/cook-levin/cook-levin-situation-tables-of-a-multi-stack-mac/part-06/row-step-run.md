@@ -1,0 +1,54 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.CookLevin.Situation.Enc.row_step_run
+---
+
+# One-step invariant
+
+**One-step invariant.** Fix an encoding $E$ of a machine $M$ with $K$ stacks, window depth $d$
+and $N$ situations, natural numbers $T$, $H$, $t$ with $t < T$ and $d \le H$, an assignment $a$
+and an input list $s$, and let $c_t$ be the configuration at time $t$ of the idle-extended run of
+$M$ from the start configuration on $s$.
+Suppose $a$ satisfies the transition clause families of the layout of $E$ with tables
+$(\mathrm{la}, \mathrm{na}, \mathrm{wa})$ and $(\mathrm{la}, \mathrm{sa}, \mathrm{wa})$ and the
+cell-shift clause family with tables $(\mathrm{sa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu})$, all
+for time bound $T$, height $H$ and $N$ situations.
+Say that a configuration $c$ is tracked in row $t$ when, in the layout of $E$ at height $H$, the
+literal of the (label, state) code of $c$ in row $t$ is true under $a$ and, for every stack number
+$k < K$ and depth $j < H$, the literal of the cell code of $c$ at stack $k$ and depth $j$ in row
+$t$ is true under $a$.
+If every stack of $c_t$ has length at most $H - d$ and $c_t$ is tracked in row $t$, then
+$c_{t+1}$ is tracked in row $t + 1$.
+
+## Depends on
+
+- [The transition clause family](../../cook-levin-generator-machine-for-the-transition/family.md)
+- [The cell-shift clause family](../../cook-levin-generator-machine-for-the-cell-shift/sh-family.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [Cell literals of an array hold in a row](../part-04/cells-hold.md)
+- [The code of a configuration holds in a row](../part-05/code-holds.md)
+- [Number of situations](../part-01/n.md)
+- [Cell code of a configuration](../part-03/cell.md)
+- [Consumption table of a situation](../part-02/cn.md)
+- [Label/state code of a situation](../part-01/la.md)
+- [Clause layout of a machine encoding](../part-01/layout.md)
+- [Next label/state code of a situation](../part-01/na.md)
+- [Push-count table of a situation](../part-02/pl.md)
+- [Pushed-symbol table of a situation](../part-02/pu.md)
+- [Position of a situation's variable](../part-01/sa.md)
+- [Window symbol code of a situation](../part-01/wa.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [Idle-extended run](../part-03/run-i.md)
+- [Satisfaction of a dense CNF formula](../../dense-cnf-encoding-of-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Cell literals propagate one step along the real run](cells-step-run.md)
+- [Update forcing, real run](../part-05/upd-step-run.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Situation](../../../../../../sources/v2/CSLibExt.md)

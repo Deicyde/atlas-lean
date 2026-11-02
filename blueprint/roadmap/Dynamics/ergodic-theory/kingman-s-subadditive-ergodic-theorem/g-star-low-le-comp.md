@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: StatMech.KingmanFilling.gStarLow_le_comp
 ---
 
 # Lower limit of a cocycle is nondecreasing along the map
@@ -9,7 +12,8 @@ origin: cited
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
+- [Lower limit of a normalized subadditive cocycle](g-star-low.md)
 
 ## Sources
 
