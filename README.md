@@ -14,10 +14,9 @@
   A large-scale Lean 4 library of textbook mathematics formalized with LLMs.
 </p>
 
-> [!NOTE]
-> **ATLAS v2 is coming.** The original release is preserved in [`v1/`](v1/),
-> while the repository root is being prepared for the next generation of the
-> project.
+> [!TIP]
+> **[Explore ATLAS on the map →](https://deicyde.github.io/atlas-lean/)** Every result in the library on one map,
+> grouped by area and subject, with its statement, its Lean source and what it uses.
 
 ## Versions
 
