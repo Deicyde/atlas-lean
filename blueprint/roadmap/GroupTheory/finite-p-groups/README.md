@@ -11,7 +11,6 @@ Groups of prime-power order: composition series, Frattini subgroups and Φ-exten
 - [Conjugacy class sizes of p-groups](conjugacy-class-sizes-of-p-groups/README.md)
 - [Derived and Frattini subgroups of p-groups](derived-and-frattini-subgroups-of-p-groups/README.md)
 - [Derived length of p-groups via 2-generator subgroups](derived-length-of-p-groups-via-2-generator-subgr/README.md)
-- [Generalized quaternion group](is-generalized-quaternion.md)
 - [Generating p-groups by elements of equal order](generating-p-groups-by-elements-of-equal-order/README.md)
 - [Large automorphism groups of p-groups](large-automorphism-groups-of-p-groups/README.md)
 - [Normal subgroups of exponent p in p-groups](normal-subgroups-of-exponent-p-in-p-groups/README.md)
@@ -20,3 +19,4 @@ Groups of prime-power order: composition series, Frattini subgroups and Φ-exten
 - [Partitions of p-groups](partitions-of-p-groups/README.md)
 - [Powerful p-groups](powerful-p-groups/README.md)
 - [Φ-extensions of p-groups](extensions-of-p-groups/README.md)
+- [Generalized quaternion group](is-generalized-quaternion.md)

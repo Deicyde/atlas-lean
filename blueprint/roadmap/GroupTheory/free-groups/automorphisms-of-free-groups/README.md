@@ -8,5 +8,5 @@ The groups Aut(F_n) and Out(F_n): fixed points and fixed subgroups of automorphi
 - [Fixed subgroups of free group automorphisms](fixed-subgroups-of-free-group-automorphisms/README.md)
 - [Free products in automorphism groups of free groups](free-products-in-automorphism-groups-of-free-gro/README.md)
 - [Linearity of IA-automorphism groups](linearity-of-ia-automorphism-groups/README.md)
-- [Outer automorphism group of a free group](out-free-group.md)
 - [Word problem for automorphism groups of free groups](word-problem-for-automorphism-groups-of-free-gro/README.md)
+- [Outer automorphism group of a free group](out-free-group.md)

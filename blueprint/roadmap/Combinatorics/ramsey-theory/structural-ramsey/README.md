@@ -4,7 +4,6 @@ Ramsey's theorem for sets and hypergraphs (including size Ramsey numbers and Par
 
 - [Arithmetic progressions in CR-sets](arithmetic-progressions-in-cr-sets/README.md)
 - [Density Hales–Jewett theorem](density-hales-jewett-theorem/README.md)
-- [Finite Ramsey theorem for pairs](ramsey-two-uniform.md)
 - [Homogeneous sets of large logarithmic weight](homogeneous-sets-of-large-logarithmic-weight/README.md)
 - [Infinitary Hales–Jewett theorem](infinitary-hales-jewett-theorem/README.md)
 - [Large sets in semigroups](large-sets-in-semigroups/README.md)
@@ -13,4 +12,5 @@ Ramsey's theorem for sets and hypergraphs (including size Ramsey numbers and Par
 - [Pairwise sum theorem](pairwise-sum-theorem/README.md)
 - [Piecewise syndetic sets](piecewise-syndetic-sets/README.md)
 - [Size Ramsey numbers of hypergraphs](size-ramsey-numbers-of-hypergraphs/README.md)
+- [Finite Ramsey theorem for pairs](ramsey-two-uniform.md)
 - [Strengthened finite Ramsey theorem (Paris–Harrington principle)](paris-harrington.md)

@@ -8,6 +8,6 @@ Extensions and complements (Schur–Zassenhaus), splitting of extensions, homolo
 - [Homology of finitely generated metabelian groups](homology-of-finitely-generated-metabelian-groups/README.md)
 - [Integrable groups](integrable-groups/README.md)
 - [Ranks in elementary abelian extensions](ranks-in-elementary-abelian-extensions/README.md)
-- [Schur–Zassenhaus theorem: conjugacy of complements](schur-zassenhaus-conjugate-complements.md)
 - [Self-extensions of groups](self-extensions-of-groups/README.md)
 - [Surjections injective on no nontrivial subgroup](surjections-injective-on-no-nontrivial-subgroup/README.md)
+- [Schur–Zassenhaus theorem: conjugacy of complements](schur-zassenhaus-conjugate-complements.md)

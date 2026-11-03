@@ -3,7 +3,6 @@
 Walks, paths and cycles in graphs, Eulerian and Hamiltonian cycles, and vertex and edge connectivity, including Menger's theorem and Fleischner's theorem on squares of 2-connected graphs.
 
 - [Bridges and bridgeless graphs](bridges-and-bridgeless-graphs/README.md)
-- [Concatenation of paths meeting at one endpoint is a path](is-path-append-of-is-path.md)
 - [Cycle covers](cycle-covers/README.md)
 - [Cycle lengths and circumference](cycle-lengths-and-circumference/README.md)
 - [Eulerian circuits](eulerian-circuits/README.md)
@@ -14,3 +13,4 @@ Walks, paths and cycles in graphs, Eulerian and Hamiltonian cycles, and vertex a
 - [Square of a graph](square-of-a-graph/README.md)
 - [Vertex connectivity](vertex-connectivity/README.md)
 - [Říha's cycle lemma](ha-s-cycle-lemma/README.md)
+- [Concatenation of paths meeting at one endpoint is a path](is-path-append-of-is-path.md)

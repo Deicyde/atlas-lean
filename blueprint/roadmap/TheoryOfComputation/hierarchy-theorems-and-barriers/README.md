@@ -4,7 +4,7 @@ Time and space hierarchy theorems and diagonalization against time-bounded machi
 
 - [Algebrization barrier](algebrization-barrier/README.md)
 - [Natural proofs barrier](natural-proofs-barrier/README.md)
-- [Nondeterministic time hierarchy](nondet-time-hierarchy.md)
 - [Relativization and oracle separations](relativization-and-oracle-separations/README.md)
 - [Space hierarchy theorem](space-hierarchy-theorem/README.md)
 - [Time hierarchy theorem](time-hierarchy-theorem/README.md)
+- [Nondeterministic time hierarchy](nondet-time-hierarchy.md)

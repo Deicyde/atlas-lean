@@ -4,5 +4,5 @@ The arithmetic of infinite cardinals, including the continuum hypothesis and the
 
 - [Bounding number](bounding-number/README.md)
 - [Continuum hypothesis](continuum-hypothesis/README.md)
-- [Singular cardinals hypothesis](singular-cardinals-hypothesis.md)
 - [Tukey reducibility and cofinal types](tukey-reducibility-and-cofinal-types/README.md)
+- [Singular cardinals hypothesis](singular-cardinals-hypothesis.md)

@@ -18,5 +18,5 @@ Univariate and multivariate polynomials and formal power series as algebraic obj
 - [Polynomials with coefficients in arithmetic progression](polynomials-with-coefficients-in-arithmetic-prog/README.md)
 - [Reciprocal 0,1-polynomials](reciprocal-0-1-polynomials/README.md)
 - [Squares of sparse polynomials](squares-of-sparse-polynomials/README.md)
-- [Symmetric polynomials in the roots are polynomials in the coefficients](symmetric-polynomial-in-esymm.md)
 - [Weighted derivations of monoid algebras](weighted-derivations-of-monoid-algebras/README.md)
+- [Symmetric polynomials in the roots are polynomials in the coefficients](symmetric-polynomial-in-esymm.md)

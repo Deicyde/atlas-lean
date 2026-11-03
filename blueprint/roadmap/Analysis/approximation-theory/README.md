@@ -8,7 +8,7 @@ Approximation and interpolation of functions: Chebyshev equioscillation, best ap
 - [Kolmogorov superposition theorem](kolmogorov-superposition-theorem/README.md)
 - [Korovkin's theorem](korovkin-s-theorem/README.md)
 - [Lagrange interpolation](lagrange-interpolation/README.md)
+- [Uniform approximation by partial sums of one power series](uniform-approximation-by-partial-sums-of-one-pow/README.md)
 - [Müntz–Szász theorem for integer exponents](muntz-szasz-nat.md)
 - [Runge's theorem](runge.md)
-- [Uniform approximation by partial sums of one power series](uniform-approximation-by-partial-sums-of-one-pow/README.md)
 - [Universal approximation theorem](universal-approximation.md)

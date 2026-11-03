@@ -4,8 +4,8 @@ Numerical and polynomial invariants of graphs such as degree sequences, arborici
 
 - [Chromatic symmetric function](chromatic-symmetric-function/README.md)
 - [Edge-graceful labelings](edge-graceful-labelings/README.md)
-- [Erdős–Gallai theorem](erdos-gallai.md)
 - [Induced forest number](induced-forest-number/README.md)
 - [Nash-Williams arboricity theorem](nash-williams-arboricity-theorem/README.md)
 - [Prime labelings of ladder graphs](prime-labelings-of-ladder-graphs/README.md)
 - [Shannon capacity of a graph](shannon-capacity-of-a-graph/README.md)
+- [Erdős–Gallai theorem](erdos-gallai.md)

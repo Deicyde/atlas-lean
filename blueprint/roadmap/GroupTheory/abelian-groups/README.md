@@ -8,6 +8,6 @@ Structure of abelian groups: finite and finitely generated abelian groups (invar
 - [Dual groups of finite abelian groups](dual-groups-of-finite-abelian-groups/README.md)
 - [Homomorphic images of ultraproducts of groups](homomorphic-images-of-ultraproducts-of-groups/README.md)
 - [Increasing unions of isomorphic subgroups](increasing-unions-of-isomorphic-subgroups/README.md)
-- [Pure subgroups of abelian groups](is-pure-subgroup.md)
 - [Structure of finitely generated abelian groups](structure-of-finitely-generated-abelian-groups/README.md)
 - [Two-power ranks of finite abelian groups](two-power-ranks-of-finite-abelian-groups/README.md)
+- [Pure subgroups of abelian groups](is-pure-subgroup.md)

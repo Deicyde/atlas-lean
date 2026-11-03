@@ -4,7 +4,7 @@ Almost-sure behaviour of sums of independent variables: strong and weak laws of 
 
 - [Kolmogorov's maximal inequality for finitely-valued variables](kolmogorov-maximal-inequality.md)
 - [Kolmogorov's three-series theorem](kolmogorov-s-three-series-theorem/README.md)
-- [Large deviations of mean-zero sums on the cube have vanishing measure](tendsto-volume-abs-sum-ge-mul-sqrt.md)
 - [Law of the iterated logarithm](law-of-the-iterated-logarithm/README.md)
 - [Strong law of large numbers](strong-law-of-large-numbers/README.md)
+- [Large deviations of mean-zero sums on the cube have vanishing measure](tendsto-volume-abs-sum-ge-mul-sqrt.md)
 - [Variance of the sample mean of i.i.d. samples](variance-sample-mean-of-iid.md)

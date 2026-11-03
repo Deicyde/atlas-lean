@@ -5,5 +5,5 @@ Analytic behaviour of complex polynomials: location of zeros (Eneström–Kakeya
 - [Complementary polynomial on the unit circle](exists-complementary-polynomial-on-unit.md)
 - [Eneström–Kakeya theorem](enestrom-kakeya-zero-localization.md)
 - [Flat Littlewood polynomials](flat-littlewood-polynomials/README.md)
-- [Jentzsch's theorem](jentzsch-zeros-of-power-series-sections.md)
 - [Sendov's conjecture](sendov-s-conjecture/README.md)
+- [Jentzsch's theorem](jentzsch-zeros-of-power-series-sections.md)

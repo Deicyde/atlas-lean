@@ -4,8 +4,8 @@ Operators on integer sequences and coefficient extraction: binomial, multiple an
 
 - [Barry's Catalan transform and its inverse](catalan-transform-pair.md)
 - [Binomial transforms](binomial-transforms/README.md)
-- [C-finite polynomial sequences](is-cfinite-sequence.md)
-- [Hadamard product of two Fibonacci-type series](hadamard-fibonacci-product.md)
 - [Hypersequences](hypersequences/README.md)
 - [INVERT transform](invert-transform/README.md)
+- [C-finite polynomial sequences](is-cfinite-sequence.md)
+- [Hadamard product of two Fibonacci-type series](hadamard-fibonacci-product.md)
 - [Recovering a sequence term from its generating function](generating-function-term-extraction.md)

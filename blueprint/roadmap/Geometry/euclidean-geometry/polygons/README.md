@@ -5,6 +5,6 @@ Theorems about quadrilaterals, cyclic polygons and squares erected on polygon si
 - [Brahmagupta's formula](brahmagupta-area.md)
 - [Euler's quadrilateral theorem](euler-quadrilateral.md)
 - [Finsler–Hadwiger theorem](finsler-hadwiger-theorem/README.md)
-- [Japanese theorem for concyclic quadrilaterals](japanese-theorem-concyclic-quadrilateral.md)
 - [Van Aubel's theorem](van-aubel-s-theorem/README.md)
+- [Japanese theorem for concyclic quadrilaterals](japanese-theorem-concyclic-quadrilateral.md)
 - [Varignon's theorem](varignon.md)

@@ -7,5 +7,5 @@ Topological dynamics studies continuous maps of topological spaces through orbit
 - [Eventually periodic sequences](eventually-periodic-sequences/README.md)
 - [Full shift and cellular automata](full-shift-and-cellular-automata/README.md)
 - [Preperiodic points and grand orbits](preperiodic-points-and-grand-orbits/README.md)
-- [Realizable span of a nondegenerate binary recurrence](binaryrec-realizable-subspace-dim.md)
 - [Topological multiple recurrence](topological-multiple-recurrence/README.md)
+- [Realizable span of a nondegenerate binary recurrence](binaryrec-realizable-subspace-dim.md)

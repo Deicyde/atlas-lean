@@ -13,5 +13,5 @@ Squares, perfect powers, repdigits, factorials and powers of two among terms of 
 - [Repdigit products of k-Fibonacci numbers](repdigit-products-of-k-fibonacci-numbers/README.md)
 - [Squares among Pell–Lucas numbers](squares-among-pell-lucas-numbers/README.md)
 - [Squares in Fibonacci and Lucas sequences](squares-in-fibonacci-and-lucas-sequences/README.md)
-- [Tribonacci numbers that are products of factorials](tribonacci-factorial-product-index-mem.md)
 - [Weighted power sums and perfect powers in Lucas sequences](weighted-power-sums-and-perfect-powers-in-lucas/README.md)
+- [Tribonacci numbers that are products of factorials](tribonacci-factorial-product-index-mem.md)

@@ -8,6 +8,6 @@ Conjugacy classes of groups as a structural invariant: class sizes and breadth, 
 - [Largest conjugacy class of perfect groups](largest-conjugacy-class-of-perfect-groups/README.md)
 - [p-parts of conjugacy class sizes](p-parts-of-conjugacy-class-sizes/README.md)
 - [Products of conjugacy classes in alternating groups](products-of-conjugacy-classes-in-alternating-gro/README.md)
-- [The set of commuting probabilities is closed](comm-prob-closed.md)
 - [Thompson's conjecture on conjugacy class sizes](thompson-s-conjecture-on-conjugacy-class-sizes/README.md)
 - [Torsion-free groups with three conjugacy classes](torsion-free-groups-with-three-conjugacy-classes/README.md)
+- [The set of commuting probabilities is closed](comm-prob-closed.md)

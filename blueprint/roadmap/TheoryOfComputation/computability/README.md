@@ -11,7 +11,7 @@ Recursive and recursively enumerable predicates and their closure properties, th
 - [Halting problem for single-tape Turing machines](halting-problem-for-single-tape-turing-machines/README.md)
 - [Kleene's recursion theorem](kleene-s-recursion-theorem/README.md)
 - [Minimal programs](minimal-programs/README.md)
-- [Parametrized s-m-n theorem](exists-computable-code.md)
 - [Rice's theorem for acceptable numberings](rice-s-theorem-for-acceptable-numberings/README.md)
 - [Rice–Shapiro theorem](rice-shapiro-theorem/README.md)
 - [Totality problem for programs](totality-problem-for-programs/README.md)
+- [Parametrized s-m-n theorem](exists-computable-code.md)

@@ -5,7 +5,6 @@ Pell, Pell–Lucas, Jacobsthal, gibonacci, Horadam, Leonardo, Oresme, bi-periodi
 - [(a, b)-Fibonacci and (a, b)-Lucas numbers](a-b-fibonacci-and-a-b-lucas-numbers/README.md)
 - [Binomial sums with second-order recurrences](binomial-sums-with-second-order-recurrences/README.md)
 - [Brousseau sums of k-Fibonacci numbers](brousseau-sums-of-k-fibonacci-numbers/README.md)
-- [Cassini's identity for associated Pell numbers](associated-pell-cassini-identity.md)
 - [Gibonacci numbers](gibonacci-numbers/README.md)
 - [Horadam and generalized Fibonacci sequences](horadam-and-generalized-fibonacci-sequences/README.md)
 - [Hyper-Leonardo numbers](hyper-leonardo-numbers/README.md)
@@ -17,3 +16,4 @@ Pell, Pell–Lucas, Jacobsthal, gibonacci, Horadam, Leonardo, Oresme, bi-periodi
 - [Oresme numbers](oresme-numbers/README.md)
 - [Pell and Pell–Lucas numbers](pell-and-pell-lucas-numbers/README.md)
 - [Toeplitz–Hessenberg determinants of recurrences](toeplitz-hessenberg-determinants-of-recurrences/README.md)
+- [Cassini's identity for associated Pell numbers](associated-pell-cassini-identity.md)

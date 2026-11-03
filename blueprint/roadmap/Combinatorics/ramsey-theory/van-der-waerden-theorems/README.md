@@ -9,5 +9,5 @@ Monochromatic arithmetic progressions: van der Waerden's theorem and van der Wae
 - [Monochromatic progressions with large common difference](monochromatic-progressions-with-large-common-dif/README.md)
 - [Progression-free Ramsey sets](progression-free-ramsey-sets/README.md)
 - [Van der Waerden numbers W(3, k)](van-der-waerden-numbers-w-3-k/README.md)
-- [Van der Waerden's theorem](van-der-waerden.md)
 - [Zero-sum van der Waerden theorems for symmetric functions](zero-sum-van-der-waerden-theorems-for-symmetric/README.md)
+- [Van der Waerden's theorem](van-der-waerden.md)

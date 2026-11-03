@@ -5,5 +5,5 @@ Laplace, Mellin and Radon transforms (Ramanujan's master theorem, Fourier slice 
 - [Hausdorff moment problem](hausdorff-moment-problem/README.md)
 - [Laplace transform](laplace-transform/README.md)
 - [Radon transform](radon-transform/README.md)
-- [Ramanujan's master theorem](ramanujan-master-theorem.md)
 - [Stieltjes moment problem](stieltjes-moment-problem/README.md)
+- [Ramanujan's master theorem](ramanujan-master-theorem.md)

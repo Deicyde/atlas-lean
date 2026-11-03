@@ -7,5 +7,5 @@ Bilinear and quadratic forms on vector spaces and modules: rank, orthogonal sums
 - [Orthogonal product of bilinear forms](orthogonal-product-of-bilinear-forms/README.md)
 - [Rank of a bilinear form](rank-of-a-bilinear-form/README.md)
 - [Simultaneous diagonalization by congruence](simultaneous-diagonalization-by-congruence/README.md)
-- [Sylvester's law of inertia](sylvester-law-of-inertia.md)
 - [Systems of quadratic forms](systems-of-quadratic-forms/README.md)
+- [Sylvester's law of inertia](sylvester-law-of-inertia.md)

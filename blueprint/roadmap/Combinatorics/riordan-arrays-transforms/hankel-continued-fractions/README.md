@@ -5,6 +5,6 @@ Hankel transforms of sequences and their invariance under binomial transforms, H
 - [Hankel determinants of Catalan sums](hankel-determinants-of-catalan-sums/README.md)
 - [Hankel transforms and Jacobi continued fractions](hankel-transforms-and-jacobi-continued-fractions/README.md)
 - [Heilermann's formula](heilermann-s-formula/README.md)
-- [Layman's theorem: the binomial transform preserves the Hankel transform](layman-binomial-transform-hankel-invaria.md)
 - [Stieltjes production matrices](stieltjes-production-matrices/README.md)
 - [Toeplitz–Hessenberg determinants of Fuss–Catalan numbers](toeplitz-hessenberg-determinants-of-fuss-catalan/README.md)
+- [Layman's theorem: the binomial transform preserves the Hankel transform](layman-binomial-transform-hankel-invaria.md)

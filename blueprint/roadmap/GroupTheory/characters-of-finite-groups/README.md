@@ -9,7 +9,6 @@ Complex characters and representations used to study finite groups: class functi
 - [Character degrees of symmetric groups](character-degrees-of-symmetric-groups/README.md)
 - [Character values of simple groups](character-values-of-simple-groups/README.md)
 - [Convolution on finite groups](convolution-on-finite-groups/README.md)
-- [Four isotypic components in a tensor square for a simple group of order 10200960](m23-irrep-tensor-square-decomp.md)
 - [Frobenius group determinant](frobenius-group-determinant/README.md)
 - [Integer group determinants](integer-group-determinants/README.md)
 - [Irreducible characters and class functions](irreducible-characters-and-class-functions/README.md)
@@ -17,3 +16,4 @@ Complex characters and representations used to study finite groups: class functi
 - [Permutation characters](permutation-characters/README.md)
 - [Rational groups](rational-groups/README.md)
 - [Simply reducible groups](simply-reducible-groups/README.md)
+- [Four isotypic components in a tensor square for a simple group of order 10200960](m23-irrep-tensor-square-decomp.md)

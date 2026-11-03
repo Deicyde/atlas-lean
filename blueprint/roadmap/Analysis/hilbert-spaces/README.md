@@ -4,7 +4,6 @@ Geometry of inner product spaces: nearest-point projections, orthonormal and Hil
 
 - [Derivatives of the norm](derivatives-of-the-norm/README.md)
 - [Frames in Hilbert spaces](frames-in-hilbert-spaces/README.md)
-- [Hilbert basis of orthogonal polynomials on $(-1, 1)$](orthogonal-polynomial-hilbert-basis.md)
 - [Hilbert projection theorem](hilbert-projection-theorem/README.md)
 - [Kirszbraun theorem](kirszbraun-theorem/README.md)
 - [Opial property](opial-property/README.md)
@@ -14,3 +13,4 @@ Geometry of inner product spaces: nearest-point projections, orthonormal and Hil
 - [Riesz bases](riesz-bases/README.md)
 - [Separable Hilbert spaces](separable-hilbert-spaces/README.md)
 - [Weak convergence of orthonormal sequences](weak-convergence-of-orthonormal-sequences/README.md)
+- [Hilbert basis of orthogonal polynomials on $(-1, 1)$](orthogonal-polynomial-hilbert-basis.md)

@@ -6,6 +6,6 @@ Non-asymptotic tail and moment bounds: Hoeffding, McDiarmid, Efron–Stein, Khin
 - [Convex comparison under sub-Gaussian tails](convex-comparison-under-sub-gaussian-tails/README.md)
 - [Efron–Stein inequality](efron-stein-inequality/README.md)
 - [Hoeffding's inequality](hoeffding-s-inequality/README.md)
-- [Khintchine inequality](khintchine-inequality.md)
 - [McDiarmid's inequality](mcdiarmid-s-inequality/README.md)
+- [Khintchine inequality](khintchine-inequality.md)
 - [The Paley–Zygmund inequality](paley-zygmund.md)

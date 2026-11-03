@@ -11,6 +11,6 @@ Density versions: Szemerédi's and Roth's theorems and Roth-number bounds, Sárk
 - [Progressions with differences from a difference set](progressions-with-differences-from-a-difference/README.md)
 - [Small values of cap set sizes and Roth numbers](small-values-of-cap-set-sizes-and-roth-numbers/README.md)
 - [Squares in dense subsets of the grid](squares-in-dense-subsets-of-the-grid/README.md)
-- [Szemerédi's theorem](szemeredi.md)
 - [Three-term progressions in unit-step walks](three-term-progressions-in-unit-step-walks/README.md)
 - [Unions of progression-free sets](unions-of-progression-free-sets/README.md)
+- [Szemerédi's theorem](szemeredi.md)

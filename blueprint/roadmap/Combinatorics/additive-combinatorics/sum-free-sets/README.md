@@ -6,6 +6,6 @@ Sets with no solution to x+y=z or similar: sum-free sets in abelian groups and i
 - [Large sum-free subsets](large-sum-free-subsets/README.md)
 - [Non-averaging sets](non-averaging-sets/README.md)
 - [Number of sum-free sets](number-of-sum-free-sets/README.md)
-- [Product-free set](is-product-free.md)
 - [Square-sum-free sets](square-sum-free-sets/README.md)
 - [Sum-free sets in abelian groups](sum-free-sets-in-abelian-groups/README.md)
+- [Product-free set](is-product-free.md)

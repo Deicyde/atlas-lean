@@ -3,7 +3,6 @@
 C-finite, P-recursive and MC-finite sequences, Binet formulas, Skolem–Mahler–Lech, growth, generating functions and decomposable forms.
 
 - [Annihilators and recursions of the circuit array](annihilators-and-recursions-of-the-circuit-array/README.md)
-- [Binet formula for second-order linear recurrences](binet-closed-form-second-order.md)
 - [C-finite sequences](c-finite-sequences/README.md)
 - [Decomposable forms on linear recurrences](decomposable-forms-on-linear-recurrences/README.md)
 - [Divisibility runs between recurrence sequences](divisibility-runs-between-recurrence-sequences/README.md)
@@ -14,6 +13,7 @@ C-finite, P-recursive and MC-finite sequences, Binet formulas, Skolem–Mahler�
 - [MC-finite sequences](mc-finite-sequences/README.md)
 - [Mod-mod representations of C-recursive sequences](mod-mod-representations-of-c-recursive-sequences/README.md)
 - [Nonlinear floor recurrences satisfying linear recurrences](nonlinear-floor-recurrences-satisfying-linear-re/README.md)
-- [P-recursive sequences](is-precursive-sequence.md)
 - [Second-order recurrences from seed triples](second-order-recurrences-from-seed-triples/README.md)
+- [Binet formula for second-order linear recurrences](binet-closed-form-second-order.md)
+- [P-recursive sequences](is-precursive-sequence.md)
 - [Skolem–Mahler–Lech theorem](skolem-mahler-lech.md)

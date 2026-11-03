@@ -7,7 +7,6 @@ Representing integers as sums from special sets, and the density of integer sets
 - [Erdős minimum overlap problem](erd-s-minimum-overlap-problem/README.md)
 - [Geometric-progression-free sets of Hurwitz quaternions](geometric-progression-free-sets-of-hurwitz-quate/README.md)
 - [Natural and logarithmic density](natural-and-logarithmic-density/README.md)
-- [Odd numbers $1 < n < 2^{50}$ are squarefree plus a power of two](exists-squarefree-add-two-pow-of-odd-lt.md)
 - [Primitive sets](primitive-sets/README.md)
 - [Quotients a/gcd(a, b) in sets of integers](quotients-a-gcd-a-b-in-sets-of-integers/README.md)
 - [Reciprocal lcm sums of integer sets](reciprocal-lcm-sums-of-integer-sets/README.md)
@@ -18,3 +17,4 @@ Representing integers as sums from special sets, and the density of integer sets
 - [Sums of numbers of the form 2^k 3^l](sums-of-numbers-of-the-form-2-k-3-l/README.md)
 - [Sums of powers of consecutive primes](sums-of-powers-of-consecutive-primes/README.md)
 - [Sums of practical and polygonal numbers](sums-of-practical-and-polygonal-numbers/README.md)
+- [Odd numbers $1 < n < 2^{50}$ are squarefree plus a power of two](exists-squarefree-add-two-pow-of-odd-lt.md)

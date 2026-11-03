@@ -6,7 +6,7 @@ Algebraic field extensions and closures: minimal polynomials, separable and pure
 - [Finite separable extensions are quotients by separable irreducible polynomials](is-separable-iff-exists-monic-irreducibl.md)
 - [Minimal polynomials and integrality](minimal-polynomials-and-integrality/README.md)
 - [Puiseux's theorem](puiseux-s-theorem/README.md)
-- [Purely inseparable extensions of prime degree](exists-minpoly-x-pow-sub-c-of-finrank-eq.md)
 - [Separable contraction of irreducible polynomials](separable-contraction-of-irreducible-polynomials/README.md)
 - [Separable extensions over separably closed fields](separable-extensions-over-separably-closed-field/README.md)
+- [Purely inseparable extensions of prime degree](exists-minpoly-x-pow-sub-c-of-finrank-eq.md)
 - [Tsen's theorem](tsen.md)

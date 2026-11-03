@@ -9,7 +9,7 @@ Statistics and structure of a single partition: conjugation, hook lengths, s-cor
 - [Lit cells in integer partitions](lit-cells-in-integer-partitions/README.md)
 - [Max-rook numbers of partitions](max-rook-numbers-of-partitions/README.md)
 - [Number of values of diversity indices](number-of-values-of-diversity-indices/README.md)
-- [Partitions with non-negative crank](crank-nonneg-partition-count.md)
 - [Perfect and double-perfect partitions](perfect-and-double-perfect-partitions/README.md)
 - [Reconstructing partitions from pairwise products](reconstructing-partitions-from-pairwise-products/README.md)
 - [Simultaneous core partitions](simultaneous-core-partitions/README.md)
+- [Partitions with non-negative crank](crank-nonneg-partition-count.md)

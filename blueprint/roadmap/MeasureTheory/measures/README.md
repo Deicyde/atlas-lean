@@ -9,6 +9,6 @@ Construction and uniqueness of measures, atomless and vector measures, measures 
 - [Independent bases of atomless measures](independent-bases-of-atomless-measures/README.md)
 - [Lyapunov convexity theorem](lyapunov-convexity-theorem/README.md)
 - [Measures on complete Boolean algebras](measures-on-complete-boolean-algebras/README.md)
-- [Szpilrajn's Problem 170: plane sets with measurable homeomorphic copies](szpilrajn170-homeomorphic-images-measura.md)
 - [Uniqueness of measures on Euclidean space](uniqueness-of-measures-on-euclidean-space/README.md)
+- [Szpilrajn's Problem 170: plane sets with measurable homeomorphic copies](szpilrajn170-homeomorphic-images-measura.md)
 - [Vitali's theorem](vitali-nonmeasurable.md)

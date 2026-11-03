@@ -13,5 +13,5 @@ Sidon and B_h-sets (bounds, counts, greedy and thick constructions, isolated sum
 - [Sidon sets](sidon-sets/README.md)
 - [Sidon sets and perfect difference sets](sidon-sets-and-perfect-difference-sets/README.md)
 - [Sidon sets meeting every infinite progression](sidon-sets-meeting-every-infinite-progression/README.md)
-- [Singer's difference set theorem](singer-cyclic-difference-set-exists.md)
 - [Upper bounds for Sidon sets](upper-bounds-for-sidon-sets/README.md)
+- [Singer's difference set theorem](singer-cyclic-difference-set-exists.md)
