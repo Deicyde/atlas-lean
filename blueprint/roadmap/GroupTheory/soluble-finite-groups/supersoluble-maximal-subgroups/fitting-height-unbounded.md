@@ -19,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Monakhov's condition](maximal-full-prime-supersoluble.md)
-- [Groups of Fitting height at most $h$](../soluble-and-nilpotent-groups/fitting-height-le.md)
+- [Groups of Fitting height at most $h$](../solubility-nilpotency-and-subnormality/fitting-height-le.md)
 
 ## Sources
 

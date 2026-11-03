@@ -17,7 +17,7 @@ lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.hasSum_ldPmf_mul_pow
 
 ## Proof depends on
 
-- [Clone Pgf](clone-pgf.md)
+- [Closed form of the clone-size generating function](clone-pgf.md)
 - [Lea–Coulson clone-size law](clone-prob.md)
 - [Convolution power of a sequence on the naturals](conv-pow.md)
 - [Clone-size generating function](has-sum-clone-prob-mul-pow.md)

@@ -20,7 +20,7 @@ whose value is the optimal value.
 
 ## Proof depends on
 
-- [Strong linear programming duality](../../../Analysis/convex-analysis-and-variations/strong-linear-programming-duality.md)
+- [Strong linear programming duality](../../../Geometry/convex-geometry/linear-programming/strong-linear-programming-duality.md)
 - [Weak duality for flux balance analysis](dot-product-le-fba-dual-value.md)
 - [Feasible flux balance problem attains its optimum](exists-fba-value-eq.md)
 

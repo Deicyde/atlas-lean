@@ -22,7 +22,7 @@ navigation: module
 - [Intervention preserves the law of the parents](sum-pa-val-intervene.md)
 - [Adjustment for the direct causes](sum-intervene-joint-mul.md)
 - [A node's table is its conditional law given its parents](sum-filter-joint-eq-cpt-mul.md)
-- [Sum intervene joint mul of cpt ne zero](sum-intervene-joint-mul-of-cpt-ne-zero.md)
+- [Adjustment for the direct causes under table positivity](sum-intervene-joint-mul-of-cpt-ne-zero.md)
 - [Back-door adjustment for a set of predecessors containing the parents](sum-intervene-joint-mul-of-pred.md)
 - [A node's table is its conditional law given a predecessor set](sum-filter-restrict-joint-eq-cpt-mul.md)
 - [Back-door adjustment for a set of predecessors](sum-intervene-joint-mul-of-pred-of-cpt-n.md)

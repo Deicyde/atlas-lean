@@ -1,9 +1,7 @@
 # Binomial coefficients and factorials
 
-Divisibility and valuations of binomial coefficients, Lucas-type theorems, factorial ratios, b-nomial, Fibonomial and totienomial coefficients.
+Divisibility and valuations of binomial coefficients, Lucas-type theorems, factorial ratios and Fibonomial coefficients; b-nomial, totienomial and other generalized binomial coefficients go to Combinatorics.
 
-- [b-ary multinomial coefficients](b-ary-multinomial-coefficients/README.md)
-- [b-nomial coefficients](b-nomial-coefficients/README.md)
 - [Binomial coefficient sums modulo 2](binomial-coefficient-sums-modulo-2/README.md)
 - [Binomid indices and generalized binomial coefficients](binomid-indices-and-generalized-binomial-coeffic/README.md)
 - [Cubed central binomial coefficients](cubed-central-binomial-coefficients/README.md)

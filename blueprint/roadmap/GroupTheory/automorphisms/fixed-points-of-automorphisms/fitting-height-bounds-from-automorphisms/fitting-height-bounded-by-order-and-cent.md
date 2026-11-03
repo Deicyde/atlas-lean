@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Groups of Fitting height at most $h$](../../../soluble-finite-groups/soluble-and-nilpotent-groups/fitting-height-le.md)
+- [Groups of Fitting height at most $h$](../../../soluble-finite-groups/solubility-nilpotency-and-subnormality/fitting-height-le.md)
 
 ## Sources
 

@@ -9,7 +9,6 @@ Statistical methods for genome-wide association studies, heritability estimation
 - [Latent causal variable model](latent-causal-variable-model/README.md)
 - [LD-score regression](ld-score-regression/README.md)
 - [Mendelian randomization](mendelian-randomization/README.md)
-- [Polygenic inflation and the attenuation ratio](polygenic-inflation-and-the-attenuation-ratio/README.md)
 - [Posterior of the heterozygous selection coefficient](posterior-of-the-heterozygous-selection-coeffici/README.md)
 - [Principal-component correction for stratification](principal-component-correction-for-stratificatio/README.md)
 - [Proximal contamination in mixed-model association](proximal-contamination-in-mixed-model-associatio/README.md)

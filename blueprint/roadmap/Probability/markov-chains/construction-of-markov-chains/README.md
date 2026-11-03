@@ -4,6 +4,8 @@ navigation: module
 
 # Construction of Markov chains
 
+- [Canonical Markov law started from a point starts there almost surely](ae-eval-zero-markov-chain-measure.md)
+- [Canonical Markov law satisfies the finite Markov chain specification](is-finite-markov-chain-markov-chain-meas.md)
 - [Lifting a kernel to histories](markov-lift-kernel.md)
 - [Canonical Markov chain measure](markov-chain-measure.md)
 - [Initial distribution of the canonical Markov chain measure](markov-chain-measure-initial-distributio.md)

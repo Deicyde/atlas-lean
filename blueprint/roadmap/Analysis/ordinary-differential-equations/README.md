@@ -8,6 +8,7 @@ Existence and uniqueness (Cauchy–Peano, Picard, maximal solutions), linear sys
 - [Dirichlet eigenvalues of $-y'' = \lambda y$ on $(0, \pi)$](dirichlet-eigenvalues-eq-nat-sq.md)
 - [Duhamel's formula (variation of constants)](duhamel-variation-of-constants.md)
 - [Green's operator of the Dirichlet Laplacian on \[0, 1\]](green-s-operator-of-the-dirichlet-laplacian-on-0/README.md)
+- [Hyperbolic motions in the N-body problem](hyperbolic-motions-in-the-n-body-problem/README.md)
 - [Linear systems and fundamental matrices](linear-systems-and-fundamental-matrices/README.md)
 - [Lyapunov's indirect method](lyapunov-s-indirect-method/README.md)
 - [Maximal solutions and global existence](maximal-solutions-and-global-existence/README.md)

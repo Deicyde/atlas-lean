@@ -17,7 +17,7 @@ lean: StatMech.KingmanAE.gStar_lt_top_ae
 
 ## Proof depends on
 
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
 - [Upper limit of a cocycle bounded by Birkhoff limits of blocks](g-star-le.md)
 
 ## Sources

@@ -22,3 +22,6 @@ navigation: module
 - [Almost-sure absorption of the Wright–Fisher chain](measure-exists-absorbed.md)
 - [Fixation probability of a Wright–Fisher chain](measure-real-exists-eq-last.md)
 - [Loss probability of a Wright–Fisher chain](measure-real-exists-eq-zero.md)
+- [Finite Wright–Fisher chain is absorbed almost surely](measure-markov-chain-measure-exists-abso.md)
+- [Fixation probability of the finite Wright–Fisher chain](measure-real-markov-chain-measure-exists.md)
+- [Loss probability of an allele in the finite Wright–Fisher chain](measure-real-markov-chain-measure-exists-2.md)

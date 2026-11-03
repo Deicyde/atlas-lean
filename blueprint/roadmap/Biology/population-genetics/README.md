@@ -4,9 +4,7 @@ Mathematical models of allele frequencies in populations under random mating, se
 
 - [Diffusion theory](diffusion-theory/README.md)
 - [Baum–Eagon inequality for diploid selection](baum-eagon-inequality-for-diploid-selection/README.md)
-- [Chinese restaurant process](chinese-restaurant-process/README.md)
-- [Ewens sampling formula and Hoppe's urn](ewens-sampling-formula-and-hoppe-s-urn/README.md)
-- [Ewens–Watterson test](ewens-watterson-test/README.md)
+- [Ewens sampling formula and the Chinese restaurant process](ewens-sampling-formula-and-the-chinese-restauran/README.md)
 - [Haldane's survival probability of a beneficial mutation](haldane-s-survival-probability-of-a-beneficial-m/README.md)
 - [Hardy–Weinberg law](hardy-weinberg-law/README.md)
 - [Infinite-alleles model and homozygosity](infinite-alleles-model-and-homozygosity/README.md)

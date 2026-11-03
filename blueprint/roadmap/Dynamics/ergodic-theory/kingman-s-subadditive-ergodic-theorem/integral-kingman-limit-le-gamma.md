@@ -18,10 +18,10 @@ lean: StatMech.KingmanAE.integral_kingmanLimit_le_gamma
 
 ## Proof depends on
 
-- [Invariant set of a map](../birkhoff-pointwise-ergodic-theorem/is-invariant-set.md)
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
-- [Integrability of the Birkhoff limit](../birkhoff-pointwise-ergodic-theorem/integrable-birkhoff-limit.md)
-- [Birkhoff limit preserves integrals over invariant sets](../birkhoff-pointwise-ergodic-theorem/set-integral-birkhoff-limit.md)
+- [Invariant set of a map](../birkhoff-ergodic-theorem/is-invariant-set.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
+- [Integrability of the Birkhoff limit](../birkhoff-ergodic-theorem/integrable-birkhoff-limit.md)
+- [Birkhoff limit preserves integrals over invariant sets](../birkhoff-ergodic-theorem/set-integral-birkhoff-limit.md)
 - [Expectation sequence of a cocycle](exp-seq.md)
 - [Expectations of a subadditive cocycle form a subadditive sequence](subadditive-exp-seq.md)
 - [Upper limit of a normalized subadditive cocycle](g-star.md)

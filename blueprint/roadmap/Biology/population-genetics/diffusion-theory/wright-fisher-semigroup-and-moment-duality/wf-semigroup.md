@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cauchy Seq wf Step pow floor](cauchy-seq-wf-step-pow-floor.md)
-- [Norm wf Step pow le](norm-wf-step-pow-le.md)
+- [Rescaled Wright–Fisher iterates form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
 
 ## Sources

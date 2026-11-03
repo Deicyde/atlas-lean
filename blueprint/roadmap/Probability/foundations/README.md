@@ -6,4 +6,5 @@ Construction of probability measures and processes (Kolmogorov extension, measur
 - [De Finetti's theorem for binary sequences](de-finetti-binary.md)
 - [Hewitt–Savage zero–one law](hewitt-savage-zero-one-law/README.md)
 - [Kolmogorov extension theorem](kolmogorov-extension.md)
+- [Probability measures from distribution functions](probability-measures-from-distribution-functions/README.md)
 - [Regular conditional distributions](regular-conditional-distributions/README.md)

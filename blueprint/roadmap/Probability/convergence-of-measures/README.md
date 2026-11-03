@@ -10,3 +10,4 @@ Weak convergence and convergence in probability, tightness and Prokhorov's theor
 - [Skorokhod representation theorem](skorokhod-representation.md)
 - [Tightness of probability measures](tightness-of-probability-measures/README.md)
 - [Total variation distance](total-variation-distance/README.md)
+- [Weak convergence in the space of continuous functions](weak-convergence-in-the-space-of-continuous-func/README.md)

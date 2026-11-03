@@ -4,6 +4,7 @@ navigation: module
 
 # Fuss–Catalan numbers
 
+- [Integrality of the Fuss–Catalan numbers](fuss-catalan-dvd-choose.md)
 - [Fuss–Catalan numbers](fuss-catalan-number.md)
 - [Prime divisibility of generalized Catalan numbers](generalized-catalan-prime-dvd-iff-not-ge.md)
 - [Generalized Fuss–Catalan number](generalized-fuss-catalan-number.md)

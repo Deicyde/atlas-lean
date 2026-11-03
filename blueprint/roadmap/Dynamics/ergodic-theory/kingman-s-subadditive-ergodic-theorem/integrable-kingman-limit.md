@@ -17,8 +17,8 @@ lean: StatMech.KingmanAE.integrable_kingmanLimit
 
 ## Proof depends on
 
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
-- [Integrability of the Birkhoff limit](../birkhoff-pointwise-ergodic-theorem/integrable-birkhoff-limit.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
+- [Integrability of the Birkhoff limit](../birkhoff-ergodic-theorem/integrable-birkhoff-limit.md)
 - [Upper limit of a normalized subadditive cocycle](g-star.md)
 - [Upper limit of a cocycle bounded by Birkhoff limits of blocks](g-star-le.md)
 

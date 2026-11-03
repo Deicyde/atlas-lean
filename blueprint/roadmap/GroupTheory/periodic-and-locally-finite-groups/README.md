@@ -15,5 +15,6 @@ Infinite groups defined by torsion and finiteness conditions: Burnside problems 
 - [Monsters of the first kind](monsters-of-the-first-kind/README.md)
 - [Periodic Frobenius groups](periodic-frobenius-groups/README.md)
 - [Periodic groups with {3, 5}-involutions](periodic-groups-with-3-5-involutions/README.md)
+- [Products of abelian and locally quaternion groups](products-of-abelian-and-locally-quaternion-group/README.md)
 - [Products of periodic subgroups](products-of-periodic-subgroups/README.md)
 - [Weak chain conditions on subgroups](weak-chain-conditions-on-subgroups/README.md)

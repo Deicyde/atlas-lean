@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Composition factors via subnormal subgroups](../../../soluble-finite-groups/soluble-and-nilpotent-groups/is-composition-factor.md)
+- [Composition factors via subnormal subgroups](../../../soluble-finite-groups/solubility-nilpotency-and-subnormality/is-composition-factor.md)
 - [The $2$-closure of a permutation group](two-closure.md)
 
 ## Sources

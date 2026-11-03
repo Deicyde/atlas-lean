@@ -19,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partitions of the primes](../soluble-and-nilpotent-groups/is-prime-partition.md)
-- [$\sigma$-nilpotent groups](../soluble-and-nilpotent-groups/is-sigma-nilpotent.md)
-- [$\sigma$-subnormal subgroups](../soluble-and-nilpotent-groups/is-sigma-subnormal.md)
+- [Partitions of the primes](../solubility-nilpotency-and-subnormality/is-prime-partition.md)
+- [$\sigma$-nilpotent groups](../solubility-nilpotency-and-subnormality/is-sigma-nilpotent.md)
+- [$\sigma$-subnormal subgroups](../solubility-nilpotency-and-subnormality/is-sigma-subnormal.md)
 - [Schmidt subgroup](is-schmidt-subgroup.md)
 
 ## Sources

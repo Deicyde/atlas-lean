@@ -22,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partitions of the primes](../soluble-and-nilpotent-groups/is-prime-partition.md)
-- [$\sigma$-soluble groups](../soluble-and-nilpotent-groups/is-sigma-soluble.md)
+- [Partitions of the primes](../solubility-nilpotency-and-subnormality/is-prime-partition.md)
+- [$\sigma$-soluble groups](../solubility-nilpotency-and-subnormality/is-sigma-soluble.md)
 
 ## Sources
 

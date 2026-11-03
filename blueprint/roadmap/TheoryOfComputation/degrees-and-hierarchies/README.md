@@ -4,7 +4,7 @@ Turing and many-one reducibility, Turing degrees and the jump, recursive isomorp
 
 - [Arithmetical hierarchy](arithmetical-hierarchy/README.md)
 - [Completeness of the halting set](completeness-of-the-halting-set/README.md)
-- [Myhill isomorphism theorem](myhill-isomorphism-theorem/README.md)
 - [Productive, creative, simple and immune sets](productive-creative-simple-and-immune-sets/README.md)
+- [Recursive isomorphism and 1-equivalence](recursive-isomorphism-and-1-equivalence/README.md)
 - [Turing degrees and the Turing jump](turing-degrees-and-the-turing-jump/README.md)
 - [Turing reducibility](turing-reducibility/README.md)

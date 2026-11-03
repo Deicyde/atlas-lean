@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.clonePgf
 ---
 
-# Clone Pgf
+# Closed form of the clone-size generating function
 
-The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`.
+**Closed form of the clone-size generating function.** The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`.
 
 ## Depends on
 

@@ -10,7 +10,6 @@ Size and structure of A+B, hA and restricted or signed sumsets: Cauchy–Davenpo
 - [Max-min indecomposable sequences and lunar primes](max-min-indecomposable-sequences-and-lunar-prime/README.md)
 - [Polynomial Freiman–Ruzsa theorem](polynomial-freiman-ruzsa-theorem/README.md)
 - [Possible sizes of h-fold sumsets](possible-sizes-of-h-fold-sumsets/README.md)
-- [Product growth in special linear groups over finite fields](product-growth-in-special-linear-groups-over-fin/README.md)
 - [Progressions in sets of small doubling](progressions-in-sets-of-small-doubling/README.md)
 - [Restricted signed sumsets](restricted-signed-sumsets/README.md)
 - [Sets determined by their k-sums](sets-determined-by-their-k-sums/README.md)

@@ -17,7 +17,7 @@ lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfSe
 
 ## Proof depends on
 
-- [Floor mul eq zero](../../../not-yet-classified/chain-limit/floor-mul-eq-zero.md)
+- [Natural floor of a nonpositive multiple is zero](floor-mul-eq-zero.md)
 - [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
 

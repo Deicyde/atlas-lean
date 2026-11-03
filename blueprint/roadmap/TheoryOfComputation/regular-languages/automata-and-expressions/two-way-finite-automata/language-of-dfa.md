@@ -19,7 +19,7 @@ right has exactly the language accepted by $M$.
 
 ## Proof depends on
 
-- [Mathlib DFAs as CSLib automata](../deterministic-finite-automata/of-dfa.md)
+- [Mathlib DFAs as CSLib automata](../../minimization/minimal-deterministic-automaton/of-dfa.md)
 - [A deterministic two-way automaton as a nondeterministic one](to-two-way-na.md)
 - [The two-way simulation of a DFA agrees with that of its NFA](to-two-way-na-of-dfa.md)
 

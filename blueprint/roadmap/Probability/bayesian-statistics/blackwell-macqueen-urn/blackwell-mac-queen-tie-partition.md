@@ -14,7 +14,7 @@ equal values has the law `α^{|π|} ∏_{B ∈ π} (|B| - 1)! / α^{(n)}`.
 
 ## Depends on
 
-- [Closed-form law of the Chinese restaurant process](../../../Biology/population-genetics/chinese-restaurant-process/crp-prob.md)
+- [Closed-form law of the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/crp-prob.md)
 - [Blackwell–MacQueen urn](blackwell-mac-queen.md)
 - [Tie partition of a sequence of draws](tie-partition.md)
 
@@ -22,13 +22,13 @@ equal values has the law `α^{|π|} ∏_{B ∈ π} (|B| - 1)! / α^{(n)}`.
 
 - [Product over block sizes](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/card-prod.md)
 - [Pull-back of a finite partition along a map](../../../Combinatorics/set-partitions/block-sizes-and-pullbacks-of-set-partitions/comap.md)
-- [Removing the last customer undoes a seating](../../../Biology/population-genetics/chinese-restaurant-process/comap-cast-succ-seat.md)
-- [Chinese restaurant process](../../../Biology/population-genetics/chinese-restaurant-process/crp.md)
-- [Seating multiplies the closed-form law by the seating probability](../../../Biology/population-genetics/chinese-restaurant-process/crp-prob-seat.md)
-- [Chinese restaurant process law as a real number](../../../Biology/population-genetics/chinese-restaurant-process/crp-to-real.md)
-- [Every partition arises from seating the last customer](../../../Biology/population-genetics/chinese-restaurant-process/exists-seat-eq.md)
-- [Seating a customer by a seating choice](../../../Biology/population-genetics/chinese-restaurant-process/seat.md)
-- [Seating probabilities in the Chinese restaurant process](../../../Biology/population-genetics/chinese-restaurant-process/seat-weight.md)
+- [Removing the last customer undoes a seating](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/comap-cast-succ-seat.md)
+- [Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/crp.md)
+- [Seating multiplies the closed-form law by the seating probability](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/crp-prob-seat.md)
+- [Chinese restaurant process law as a real number](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/crp-to-real.md)
+- [Every partition arises from seating the last customer](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/exists-seat-eq.md)
+- [Seating a customer by a seating choice](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/seat.md)
+- [Seating probabilities in the Chinese restaurant process](../../../Biology/population-genetics/ewens-sampling-formula-and-the-chinese-restauran/seat-weight.md)
 - [Tie partition after forgetting the last draw](comap-cast-succ-tie-partition-snoc.md)
 - [Measurability of the tie partition event](measurable-set-tie-partition-eq.md)
 - [Blocks of the tie partition are classes of equal entries](mem-part-tie-partition.md)

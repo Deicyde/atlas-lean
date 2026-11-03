@@ -17,7 +17,7 @@ lean: StatMech.Kingman.SubadditiveCocycle.expSeq_le_nsmul
 
 ## Proof depends on
 
-- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem/integrable-birkhoff-sum-of-measure-prese.md)
 - [Subadditive cocycle bounded by Birkhoff sums of its first term](ae-le-birkhoff-sum.md)
 - [Integral is invariant under iterates of a measure-preserving map](integral-comp-iterate.md)
 

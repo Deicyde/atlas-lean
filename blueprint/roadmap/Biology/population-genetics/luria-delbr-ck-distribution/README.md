@@ -7,7 +7,7 @@ navigation: module
 - [Lea–Coulson clone-size law](clone-prob.md)
 - [Convolution power of a sequence on the naturals](conv-pow.md)
 - [Luria–Delbrück distribution](ld-pmf.md)
-- [Clone Pgf](clone-pgf.md)
+- [Closed form of the clone-size generating function](clone-pgf.md)
 - [Clone-size law from the founding-time density](integral-clone-size.md)
 - [The clone-size law sums to one](has-sum-clone-prob.md)
 - [Clone-size generating function](has-sum-clone-prob-mul-pow.md)

@@ -4,24 +4,22 @@ navigation: module
 
 # Wright–Fisher semigroup and moment duality
 
-## The Wright–Fisher chain as an operator on continuous functions
-
+- [Cauchy property of uniform contractions extends from a dense set](cauchy-seq-apply-of-dense.md)
+- [Limits of uniform contractions extend from a dense set](tendsto-apply-of-dense.md)
+- [Weierstrass approximation theorem on the unit interval](dense-polynomial-functions.md)
+- [Natural floor of a nonpositive multiple is zero](floor-mul-eq-zero.md)
+- [Powers of a unital endomorphism fix the constant function](pow-apply-one.md)
+- [Powers of a positive endomorphism are positive](pow-nonneg.md)
 - [One generation of the neutral Wright–Fisher chain](wf-step.md)
 - [Wright–Fisher step is the Bernstein operator](wf-step-apply.md)
 - [One Wright–Fisher generation is a sup-norm contraction](norm-wf-step-le.md)
-- [Wf Step apply one](wf-step-apply-one.md)
-- [Wf Step nonneg](wf-step-nonneg.md)
-- [Norm wf Step pow le](norm-wf-step-pow-le.md)
-
-## Moment duality for the chain
-
+- [One Wright–Fisher generation fixes constants](wf-step-apply-one.md)
+- [One Wright–Fisher generation preserves nonnegativity](wf-step-nonneg.md)
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
 - [Moment duality, one generation (polynomial identity)](sum-binomial-mul-div-pow.md)
 - [Moment duality, one generation](integral-binomial-div-pow.md)
-- [Wf Step X pow](wf-step-x-pow.md)
+- [One Wright–Fisher generation acting on monomials](wf-step-x-pow.md)
 - [Moment duality, `m` generations](wf-step-pow-x-pow.md)
-
-## The dual semigroup on polynomials
-
 - [Dual moment polynomial of Kingman's coalescent](dual-moment-poly.md)
 - [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
 - [Dual semigroup on a monomial](poly-semigroup-x-pow.md)
@@ -29,10 +27,7 @@ navigation: module
 - [Semigroup law](poly-semigroup-add.md)
 - [Dual semigroup fixes the constant polynomial one](poly-semigroup-one.md)
 - [Convergence on polynomials](tendsto-wf-step-pow-floor-to-continuous.md)
-
-## The semigroup on continuous functions
-
-- [Cauchy Seq wf Step pow floor](cauchy-seq-wf-step-pow-floor.md)
+- [Rescaled Wright–Fisher iterates form a Cauchy sequence](cauchy-seq-wf-step-pow-floor.md)
 - [Neutral Wright–Fisher diffusion semigroup](wf-semigroup.md)
 - [Diffusion approximation of the transition operators (Trotter–Kato, concrete form)](tendsto-wf-step-pow-floor.md)
 - [Contraction](norm-wf-semigroup-le.md)
@@ -47,3 +42,17 @@ navigation: module
 - [Neutral Wright–Fisher generator on polynomials](poly-generator.md)
 - [Polynomial generator agrees with the neutral Wright–Fisher generator](eval-poly-generator.md)
 - [Generator on polynomials](tendsto-wf-semigroup-sub-div.md)
+- [Polynomial semigroup dynamics](has-deriv-at-wf-semigroup-to-continuous.md)
+- [Second-moment bound for the Wright–Fisher semigroup](wf-semigroup-second-increment-le.md)
+- [Fourth-moment Kolmogorov bound for the Wright–Fisher semigroup](wf-semigroup-fourth-increment-le.md)
+- [Wright–Fisher semigroup as a positive operator](wf-semigroup-positive.md)
+- [Action of the positive Wright–Fisher operator](wf-semigroup-positive-apply.md)
+- [Positive Wright–Fisher operator fixes constants](wf-semigroup-positive-apply-one.md)
+- [Semigroup law for the positive Wright–Fisher operator](wf-semigroup-positive-add.md)
+- [Transition kernel of the neutral Wright–Fisher diffusion](wf-transition-kernel.md)
+- [Wright–Fisher transition kernel represents the semigroup](integral-wf-transition-kernel.md)
+- [Wright–Fisher transition kernel is the identity at nonpositive times](wf-transition-kernel-of-nonpos.md)
+- [Wright–Fisher transition kernel is the identity at time zero](wf-transition-kernel-zero.md)
+- [Wright–Fisher transitions at time zero are Dirac masses](wf-transition-kernel-zero-apply.md)
+- [Chapman–Kolmogorov equation for the Wright–Fisher diffusion](wf-transition-kernel-add.md)
+- [Kernel form of Wright–Fisher moment duality](integral-wf-transition-kernel-x-pow.md)

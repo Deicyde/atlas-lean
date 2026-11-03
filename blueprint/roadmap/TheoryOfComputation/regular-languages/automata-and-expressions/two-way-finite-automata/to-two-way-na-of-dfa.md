@@ -15,7 +15,7 @@ letting that NFA always move its head one symbol to the right.
 
 ## Depends on
 
-- [Mathlib DFAs as CSLib automata](../deterministic-finite-automata/of-dfa.md)
+- [Mathlib DFAs as CSLib automata](../../minimization/minimal-deterministic-automaton/of-dfa.md)
 - [A DFA as a two-way deterministic automaton](of-dfa.md)
 - [A deterministic two-way automaton as a nondeterministic one](to-two-way-na.md)
 

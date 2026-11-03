@@ -14,7 +14,7 @@ lean: MathlibExt.Biology.StatisticalGenetics.MixedModel.isMMESolution_iff_gls
 
 ## Depends on
 
-- [Is MMESolution](is-mmesolution.md)
+- [Solution of Henderson's mixed-model equations](is-mmesolution.md)
 - [Phenotypic covariance of a linear mixed model](phen-cov.md)
 - [Generalized least-squares matrix](../../../Probability/linear-models-multivariate/generalized-least-squares/gls-matrix.md)
 

@@ -4,7 +4,7 @@ Comparison of |A+A| with |A−A|: sum-dominant (MSTD) and difference-dominated s
 
 - [Alternating sum- and difference-dominated sets](alternating-sum-and-difference-dominated-sets/README.md)
 - [Chu's constructions of sum-dominant sets](chu-s-constructions-of-sum-dominant-sets/README.md)
+- [Minimum size of a sum-dominant set](minimum-size-of-a-sum-dominant-set/README.md)
 - [Sets with more products than quotients](sets-with-more-products-than-quotients/README.md)
 - [Sum-difference exponent of a single set](sum-difference-exponent-of-a-single-set/README.md)
-- [Sum-dominant sets](sum-dominant-sets/README.md)
 - [Unions of two progressions are not sum-dominant](unions-of-two-progressions-are-not-sum-dominant/README.md)

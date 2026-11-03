@@ -15,7 +15,7 @@ solves the generalized least-squares normal equations `Xᵀ V⁻¹ X b = Xᵀ V�
 
 ## Depends on
 
-- [Is MMESolution](is-mmesolution.md)
+- [Solution of Henderson's mixed-model equations](is-mmesolution.md)
 - [Phenotypic covariance of a linear mixed model](phen-cov.md)
 
 ## Proof depends on

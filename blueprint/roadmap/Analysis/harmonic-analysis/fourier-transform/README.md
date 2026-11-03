@@ -4,7 +4,6 @@ The Fourier transform on R^n and Schwartz functions: convolution, Bochner, Hausd
 
 - [Bernstein inequalities for band-limited functions](bernstein-inequalities-for-band-limited-function/README.md)
 - [Beurling–Ahlfors transform](beurling-ahlfors-transform/README.md)
-- [Bochner's theorem](bochner.md)
 - [Convolution of two square-integrable functions is continuous and vanishes at infinity](continuous-and-tendsto-cocompact-convolu.md)
 - [Convolution theorem](convolution-theorem.md)
 - [Fourier interpolation in dimensions 8 and 24](fourier-interpolation-in-dimensions-8-and-24/README.md)

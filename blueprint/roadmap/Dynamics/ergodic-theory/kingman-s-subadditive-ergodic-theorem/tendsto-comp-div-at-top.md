@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
-- [Tendsto birkhoff Average ae](../birkhoff-pointwise-ergodic-theorem/tendsto-birkhoff-average-ae.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
+- [Birkhoff averages converge almost everywhere to the Birkhoff limit](../birkhoff-ergodic-theorem/tendsto-birkhoff-average-ae.md)
 
 ## Sources
 

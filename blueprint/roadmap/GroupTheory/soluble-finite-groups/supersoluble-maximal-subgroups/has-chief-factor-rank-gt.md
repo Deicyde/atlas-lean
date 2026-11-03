@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chief factors](../soluble-and-nilpotent-groups/is-chief-factor.md)
+- [Chief factors](../solubility-nilpotency-and-subnormality/is-chief-factor.md)
 
 ## Sources
 

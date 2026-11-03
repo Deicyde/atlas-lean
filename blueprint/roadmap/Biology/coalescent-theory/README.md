@@ -13,6 +13,5 @@ Backward-in-time models of the genealogy of a sample of genes, from Kingman's co
 - [Site frequency spectrum under variable population size](site-frequency-spectrum-under-variable-populatio/README.md)
 - [Skyline plot estimates of population size](skyline-plot-estimates-of-population-size/README.md)
 - [Structured coalescent](structured-coalescent/README.md)
-- [Tajima's variance identities](tajima-s-variance-identities/README.md)
 - [Two-locus coalescent](two-locus-coalescent/README.md)
 - [Λ-coalescents](coalescents/README.md)

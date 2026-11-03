@@ -6,9 +6,9 @@ proof: formalized
 lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.cauchySeq_wfStep_pow_floor
 ---
 
-# Cauchy Seq wf Step pow floor
+# Rescaled Wright–Fisher iterates form a Cauchy sequence
 
-For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
+**Rescaled Wright–Fisher iterates form a Cauchy sequence.** For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
 converges on the dense set of polynomials and the operators are contractions.
 
 ## Depends on
@@ -17,10 +17,10 @@ converges on the dense set of polynomials and the operators are contractions.
 
 ## Proof depends on
 
-- [Cauchy Seq apply of dense](../../../not-yet-classified/chain-limit/cauchy-seq-apply-of-dense.md)
-- [Dense polynomial Functions](../../../not-yet-classified/chain-limit/dense-polynomial-functions.md)
-- [Floor mul eq zero](../../../not-yet-classified/chain-limit/floor-mul-eq-zero.md)
-- [Norm wf Step pow le](norm-wf-step-pow-le.md)
+- [Cauchy property of uniform contractions extends from a dense set](cauchy-seq-apply-of-dense.md)
+- [Weierstrass approximation theorem on the unit interval](dense-polynomial-functions.md)
+- [Natural floor of a nonpositive multiple is zero](floor-mul-eq-zero.md)
+- [Iterated Wright–Fisher generations are sup-norm contractions](norm-wf-step-pow-le.md)
 - [Wright–Fisher semigroup on polynomials by moment duality](poly-semigroup.md)
 - [Convergence on polynomials](tendsto-wf-step-pow-floor-to-continuous.md)
 

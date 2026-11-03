@@ -7,5 +7,4 @@ Almost-sure behaviour of sums of independent variables: strong and weak laws of 
 - [Large deviations of mean-zero sums on the cube have vanishing measure](tendsto-volume-abs-sum-ge-mul-sqrt.md)
 - [Law of the iterated logarithm](law-of-the-iterated-logarithm/README.md)
 - [Strong law of large numbers](strong-law-of-large-numbers/README.md)
-- [Truncation of random variables](truncation-of-random-variables/README.md)
 - [Variance of the sample mean of i.i.d. samples](variance-sample-mean-of-iid.md)

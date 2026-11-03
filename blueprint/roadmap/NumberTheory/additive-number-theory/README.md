@@ -1,12 +1,11 @@
 # Additive number theory
 
-Representing integers as sums from special sets: additive bases and complements, sumsets of integers, subset sums, primitive sets, zero-sum constants.
+Representing integers as sums from special sets, and the density of integer sets: sumsets of integers, subset sums and complete sequences, primitive sets, natural and logarithmic density, Romanoff's theorem; additive bases and complements and zero-sum constants go to additive combinatorics.
 
 - [Disproof of Erdős Problem 1 on distinct subset sums](conjecture-refuted.md)
 - [Distinct multiples in an interval](distinct-multiples-in-an-interval/README.md)
 - [Erdős minimum overlap problem](erd-s-minimum-overlap-problem/README.md)
 - [Geometric-progression-free sets of Hurwitz quaternions](geometric-progression-free-sets-of-hurwitz-quate/README.md)
-- [Lorentz's theorem on additive complements (Erdős Problem 31)](conjecture-holds.md)
 - [Natural and logarithmic density](natural-and-logarithmic-density/README.md)
 - [Odd numbers $1 < n < 2^{50}$ are squarefree plus a power of two](exists-squarefree-add-two-pow-of-odd-lt.md)
 - [Primitive sets](primitive-sets/README.md)

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Conjugacy separable groups](../../soluble-finite-groups/soluble-and-nilpotent-groups/is-conjugacy-separable.md)
+- [Conjugacy separable groups](../../soluble-finite-groups/solubility-nilpotency-and-subnormality/is-conjugacy-separable.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Residually finite $p$-groups](../../soluble-finite-groups/soluble-and-nilpotent-groups/is-residually-finite-p.md)
+- [Residually finite $p$-groups](../../soluble-finite-groups/solubility-nilpotency-and-subnormality/is-residually-finite-p.md)
 - [Right-orderable groups](is-right-orderable.md)
 
 ## Sources

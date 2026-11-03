@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.wgd_timing
 ## Depends on
 
 - [Expected number of mutations of a given multiplicity](expected-count.md)
-- [Wgd](wgd.md)
+- [Whole-genome doubling event](wgd.md)
 
 ## Proof depends on
 

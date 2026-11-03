@@ -5,7 +5,6 @@ Group rings and group algebras: unit and zero-divisor questions (Kaplansky unit 
 - [Augmentation right ideal of a subset](augmentation-right-ideal.md)
 - [Dimension subgroups](dimension-subgroups/README.md)
 - [Group-ring powers in fields](group-ring-powers-in-fields/README.md)
-- [Integer group determinants](integer-group-determinants/README.md)
 - [Inversion on commutative group rings](inversion-on-commutative-group-rings/README.md)
 - [Jordan decomposition in integral group rings](jordan-decomposition-in-integral-group-rings/README.md)
 - [Kaplansky's unit conjecture](kaplansky-s-unit-conjecture/README.md)

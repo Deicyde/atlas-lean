@@ -11,6 +11,7 @@ Complex characters and representations used to study finite groups: class functi
 - [Convolution on finite groups](convolution-on-finite-groups/README.md)
 - [Four isotypic components in a tensor square for a simple group of order 10200960](m23-irrep-tensor-square-decomp.md)
 - [Frobenius group determinant](frobenius-group-determinant/README.md)
+- [Integer group determinants](integer-group-determinants/README.md)
 - [Irreducible characters and class functions](irreducible-characters-and-class-functions/README.md)
 - [McKay conjecture](mckay-conjecture/README.md)
 - [Permutation characters](permutation-characters/README.md)

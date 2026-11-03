@@ -17,7 +17,7 @@ lean: StatMech.KingmanSigned.Wc_subaddCocycle
 
 ## Proof depends on
 
-- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem-in-l/integrable-birkhoff-sum-of-measure-prese.md)
+- [Integrability of Birkhoff sums](../birkhoff-ergodic-theorem/integrable-birkhoff-sum-of-measure-prese.md)
 - [Additive cocycle of Birkhoff sums of the first term](add-coc.md)
 
 ## Sources

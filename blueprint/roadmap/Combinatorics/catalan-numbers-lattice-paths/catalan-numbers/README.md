@@ -7,7 +7,6 @@ Catalan numbers and generalizations defined by formulas or recurrences: Fuss–C
 - [Closed form of the Eloe–Kublik gamma array](gamma-closed-form.md)
 - [Fine numbers](fine-numbers/README.md)
 - [Generalized Catalan–Schröder numbers](generalized-catalan-schr-der-numbers/README.md)
-- [Integrality of the Fuss–Catalan numbers](fuss-catalan-dvd-choose.md)
 - [Narayana numbers and polynomials](narayana-numbers-and-polynomials/README.md)
 - [Palindromic Narayana numbers](palindromic-narayana-number.md)
 - [Patalan numbers](patalan-numbers/README.md)

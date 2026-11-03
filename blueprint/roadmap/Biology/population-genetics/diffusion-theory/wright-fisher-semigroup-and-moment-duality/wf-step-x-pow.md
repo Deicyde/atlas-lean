@@ -6,9 +6,9 @@ proof: formalized
 lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_X_pow
 ---
 
-# Wf Step X pow
+# One Wright–Fisher generation acting on monomials
 
-One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`.
+**One Wright–Fisher generation acting on monomials.** One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`.
 
 ## Depends on
 

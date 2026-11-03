@@ -3,6 +3,7 @@
 The Wright–Fisher diffusion as the continuum limit of allele-frequency dynamics: generator and semigroup, fixation probabilities, absorption and sojourn times, mutation and stationary laws, allele age and the Poisson random field.
 
 - [Allele age and the Maruyama effect](allele-age-and-the-maruyama-effect/README.md)
+- [Construction of the neutral Wright–Fisher diffusion](construction-of-the-neutral-wright-fisher-diffus/README.md)
 - [Diffusion limit of the Wright–Fisher model](diffusion-limit-of-the-wright-fisher-model/README.md)
 - [Fixation and absorption in the Wright–Fisher diffusion](fixation-and-absorption-in-the-wright-fisher-dif/README.md)
 - [Poisson random field model](poisson-random-field-model/README.md)

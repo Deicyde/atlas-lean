@@ -3,7 +3,6 @@
 DFA, NFA, ε-NFA and two-way automata, sequential transducers and Mealy and Moore machines, regular expressions, Thompson's construction and Kleene's theorem, star height, and closure of regular languages under homomorphism, quotient, shuffle and substitution.
 
 - [Closure properties of regular languages](closure-properties-of-regular-languages/README.md)
-- [Deterministic finite automata](deterministic-finite-automata/README.md)
 - [Finite languages](finite-languages/README.md)
 - [Kleene's theorem](kleene-s-theorem/README.md)
 - [Sequential transducers, Mealy and Moore machines](sequential-transducers-mealy-and-moore-machines/README.md)

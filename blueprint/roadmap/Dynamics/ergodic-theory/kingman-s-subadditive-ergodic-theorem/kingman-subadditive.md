@@ -24,13 +24,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maximal divergence set](../birkhoff-pointwise-ergodic-theorem/dick-set.md)
-- [Invariance of the maximal divergence set under iterates](../birkhoff-pointwise-ergodic-theorem/dick-iter.md)
-- [Measurability of the maximal divergence set](../birkhoff-pointwise-ergodic-theorem/dick-measurable.md)
-- [Membership in the maximal divergence set](../birkhoff-pointwise-ergodic-theorem/dick-mem.md)
-- [Birkhoff sums of a function cut off to an invariant set, inside the set](../birkhoff-pointwise-ergodic-theorem/dick-sum-in.md)
-- [Birkhoff sums of a function cut off to an invariant set, outside the set](../birkhoff-pointwise-ergodic-theorem/dick-sum-out.md)
-- [Hopf maximal ergodic theorem](../birkhoff-pointwise-ergodic-theorem/maximal-ergodic.md)
+- [Maximal divergence set](../birkhoff-ergodic-theorem/dick-set.md)
+- [Invariance of the maximal divergence set under iterates](../birkhoff-ergodic-theorem/dick-iter.md)
+- [Measurability of the maximal divergence set](../birkhoff-ergodic-theorem/dick-measurable.md)
+- [Membership in the maximal divergence set](../birkhoff-ergodic-theorem/dick-mem.md)
+- [Birkhoff sums of a function cut off to an invariant set, inside the set](../birkhoff-ergodic-theorem/dick-sum-in.md)
+- [Birkhoff sums of a function cut off to an invariant set, outside the set](../birkhoff-ergodic-theorem/dick-sum-out.md)
+- [Hopf maximal ergodic theorem](../birkhoff-ergodic-theorem/maximal-ergodic.md)
 
 ## Sources
 

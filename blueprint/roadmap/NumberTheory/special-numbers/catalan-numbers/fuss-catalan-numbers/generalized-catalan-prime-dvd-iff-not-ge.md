@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrality of the Fuss–Catalan numbers](../../../../Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/fuss-catalan-dvd-choose.md)
+- [Integrality of the Fuss–Catalan numbers](fuss-catalan-dvd-choose.md)
 
 ## Sources
 

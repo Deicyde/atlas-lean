@@ -7,7 +7,6 @@ Congruences for factorials, quotients and power sums (Wilson, Wolstenholme, Ferm
 - [Euler–Fermat congruences modulo prime powers](euler-fermat-congruences-modulo-prime-powers/README.md)
 - [Fermat quotients](fermat-quotients/README.md)
 - [Lifting the exponent lemma](lifting-the-exponent-lemma/README.md)
-- [Locally nilpotent polynomials](locally-nilpotent-polynomials/README.md)
 - [Modular inverses from the Euclidean algorithm](modular-inverses-from-the-euclidean-algorithm/README.md)
 - [Power sums vanish modulo a prime](power-sum-vanishing-mod-prime.md)
 - [Primitive roots modulo prime powers](primitive-roots-modulo-prime-powers/README.md)

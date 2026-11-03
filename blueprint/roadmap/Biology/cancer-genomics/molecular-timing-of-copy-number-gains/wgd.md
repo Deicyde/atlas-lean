@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Biology.CancerGenomics.MutationTiming.GainHistory.wgd
 ---
 
-# Wgd
+# Whole-genome doubling event
 
-Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`.
+**Whole-genome doubling event.** Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`.
 
 ## Depends on
 

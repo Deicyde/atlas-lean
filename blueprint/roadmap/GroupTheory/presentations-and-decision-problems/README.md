@@ -7,7 +7,7 @@ Combinatorial group theory: presentations, one-relator groups, HNN extensions an
 - [Baumslag–Gersten group](baumslag-gersten-group/README.md)
 - [Boone–Higman theorem](boone-higman-theorem/README.md)
 - [Coherence of one-relator groups](coherence-of-one-relator-groups/README.md)
-- [Decision problems in metabelian quotients](decision-problems-in-metabelian-quotients/README.md)
+- [Decision problems in free abelianized extensions](decision-problems-in-free-abelianized-extensions/README.md)
 - [Finite quotients of one-relator groups](finite-quotients-of-one-relator-groups/README.md)
 - [Finitely presented soluble groups](finitely-presented-soluble-groups/README.md)
 - [Free subgroups of one-relator groups](free-subgroups-of-one-relator-groups/README.md)

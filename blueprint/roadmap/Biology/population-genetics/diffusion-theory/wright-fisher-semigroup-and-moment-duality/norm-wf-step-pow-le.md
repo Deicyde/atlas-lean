@@ -6,9 +6,9 @@ proof: formalized
 lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.norm_wfStep_pow_le
 ---
 
-# Norm wf Step pow le
+# Iterated Wright–Fisher generations are sup-norm contractions
 
-Any number of Wright–Fisher generations is a contraction for the sup norm.
+**Iterated Wright–Fisher generations are sup-norm contractions.** Any number of Wright–Fisher generations is a contraction for the sup norm.
 
 ## Depends on
 

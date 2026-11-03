@@ -19,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Monakhov's condition](maximal-full-prime-supersoluble.md)
-- [Composition factors via subnormal subgroups](../soluble-and-nilpotent-groups/is-composition-factor.md)
+- [Composition factors via subnormal subgroups](../solubility-nilpotency-and-subnormality/is-composition-factor.md)
 
 ## Sources
 

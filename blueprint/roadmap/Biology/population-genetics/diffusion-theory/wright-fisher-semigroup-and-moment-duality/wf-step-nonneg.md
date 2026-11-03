@@ -6,9 +6,9 @@ proof: formalized
 lean: MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup.wfStep_nonneg
 ---
 
-# Wf Step nonneg
+# One Wright–Fisher generation preserves nonnegativity
 
-One Wright–Fisher generation maps nonnegative functions to nonnegative functions.
+**One Wright–Fisher generation preserves nonnegativity.** One Wright–Fisher generation maps nonnegative functions to nonnegative functions.
 
 ## Depends on
 

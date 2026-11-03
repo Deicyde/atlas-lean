@@ -4,8 +4,6 @@ navigation: module
 
 # Segregating sites and pairwise differences
 
-## Tajima's constants
-
 - [Tajima's constant $a_1$](tajima-a1.md)
 - [Tajima's constant $a_2$](tajima-a2.md)
 - [Tajima's constant $b_1$](tajima-b1.md)
@@ -17,11 +15,16 @@ navigation: module
 - [Tajima's $a_1$ is a harmonic number](tajima-a1-eq-harmonic.md)
 - [Variance of the total branch length](variance-total-length.md)
 - [Variance of the number of segregating sites](variance-seg-sites.md)
-
-## Pairwise differences and Tajima's numerator
-
 - [Pairs of genes in a sample](sample-pairs.md)
 - [Mean number of pairwise differences](mean-pair-diff.md)
 - [Expected pairwise differences](integral-mean-pair-diff.md)
 - [Tajima's numerator has mean zero](integral-tajima-numerator.md)
 - [Unbiased estimator of Tajima's variance term](integral-tajima-var-estimator.md)
+- [Counting sample pairs by overlap with a given pair](sum-sample-pairs-card-inter.md)
+- [Variance of the mean number of pairwise differences](variance-mean-pair-diff.md)
+- [Probability that a pair lies in separate lineages](pair-separate-prob.md)
+- [Mean coalescence time of a pair is one](sum-pair-separate-prob-div-choose.md)
+- [Sum of pair-separation probabilities over squared pair counts](sum-mul-pair-separate-prob-div-choose-sq.md)
+- [Covariance of `π` and `S`](covariance-mean-pair-diff-seg-sites.md)
+- [Tajima's variance identity](variance-tajima-numerator.md)
+- [Pair coalescence time against the total branch length](integral-pair-time-mul-total-length.md)

@@ -33,7 +33,7 @@ and uniqueness of laws on $C([0,1], \mathbb{R})$ from finite-dimensional distrib
 
 ## Proof depends on
 
-- [Tendsto continuous Path of tight of finset eval](../../not-yet-classified/continuous-path-convergence/tendsto-continuous-path-of-tight-of-fins.md)
+- [Tightness plus finite-dimensional convergence gives weak convergence](../../convergence-of-measures/weak-convergence-in-the-space-of-continuous-func/tendsto-continuous-path-of-tight-of-fins.md)
 - [Explicit formula for the polygonal partial-sum process](donsker-process-apply-eq.md)
 - [Polygonal interpolation weight as a continuous function](donsker-weight-cm.md)
 - [Etemadi's maximal inequality](etemadi-maximal-inequality.md)

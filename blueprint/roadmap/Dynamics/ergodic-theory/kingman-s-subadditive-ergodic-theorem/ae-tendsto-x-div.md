@@ -17,8 +17,8 @@ lean: StatMech.KingmanSigned.ae_tendsto_X_div
 
 ## Proof depends on
 
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
-- [Tendsto birkhoff Average ae](../birkhoff-pointwise-ergodic-theorem/tendsto-birkhoff-average-ae.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
+- [Birkhoff averages converge almost everywhere to the Birkhoff limit](../birkhoff-ergodic-theorem/tendsto-birkhoff-average-ae.md)
 - [Kingman limit of a subadditive cocycle](kingman-limit.md)
 - [Kingman's subadditive ergodic theorem](tendsto-div-kingman-limit-ae-of-nonneg.md)
 - [Shifted subadditivity defect of a cocycle](sc.md)

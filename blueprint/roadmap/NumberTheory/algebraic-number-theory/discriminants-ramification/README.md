@@ -15,6 +15,5 @@ Discriminants and their bounds, ramification and inertia, orders, units, ideal c
 - [Orders in number fields](orders-in-number-fields/README.md)
 - [Ramification in extensions of number fields](ramification-in-extensions-of-number-fields/README.md)
 - [Residue maps of singly generated algebras](residue-maps-of-singly-generated-algebras/README.md)
-- [Tame and wild ramification](tame-and-wild-ramification/README.md)
 - [Units small away from the diagonal generate a subgroup of finite index](finite-index-closure-range-of-lt-one-off.md)
 - [Van der Waerden's conjecture on Galois groups](van-der-waerden-s-conjecture-on-galois-groups/README.md)

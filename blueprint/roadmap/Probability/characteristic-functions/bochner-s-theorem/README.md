@@ -4,6 +4,7 @@ navigation: module
 
 # Bochner's theorem
 
+- [Bochner's theorem](bochner.md)
 - [Positive definite functions](is-positive-definite.md)
 - [Positive definite real-valued functions](is-positive-definite-real.md)
 - [Characteristic functions](is-characteristic-fun.md)

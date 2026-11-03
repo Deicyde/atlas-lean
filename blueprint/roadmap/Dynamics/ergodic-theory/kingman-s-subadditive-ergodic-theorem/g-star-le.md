@@ -12,12 +12,12 @@ lean: StatMech.KingmanAE.gStar_le
 
 ## Depends on
 
-- [Birkhoff limit of a function](../birkhoff-pointwise-ergodic-theorem/birkhoff-limit.md)
+- [Birkhoff limit of a function](../birkhoff-ergodic-theorem/birkhoff-limit.md)
 - [Subadditive cocycle over a measure-preserving map](subadditive-cocycle.md)
 
 ## Proof depends on
 
-- [Tendsto birkhoff Average ae](../birkhoff-pointwise-ergodic-theorem/tendsto-birkhoff-average-ae.md)
+- [Birkhoff averages converge almost everywhere to the Birkhoff limit](../birkhoff-ergodic-theorem/tendsto-birkhoff-average-ae.md)
 - [Cocycle inequality holds for all indices almost everywhere](ae-all-subadditive.md)
 - [Block decomposition bound for a subadditive cocycle](ae-le-block-birkhoff-sum.md)
 - [Dominating function for remainder terms in Kingman's theorem](rem-dom.md)

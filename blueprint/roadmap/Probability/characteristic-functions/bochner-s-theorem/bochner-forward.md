@@ -19,7 +19,7 @@ positive definite, and satisfies $\varphi(0) = 1$.
 
 ## Proof depends on
 
-- [Bochner's theorem](../../../Analysis/harmonic-analysis/fourier-transform/bochner.md)
+- [Bochner's theorem](bochner.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MathlibExt.Biology.PopulationGenetics.LuriaDelbruck.hasSum_cloneProb_mul_p
 
 ## Depends on
 
-- [Clone Pgf](clone-pgf.md)
+- [Closed form of the clone-size generating function](clone-pgf.md)
 - [Lea–Coulson clone-size law](clone-prob.md)
 
 ## Sources

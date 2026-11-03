@@ -21,7 +21,7 @@ navigation: module
 - [Identifiability](expected-count-injective.md)
 - [Single-copy gain](single-gain.md)
 - [Copy-neutral loss of heterozygosity](cn-loh.md)
-- [Wgd](wgd.md)
+- [Whole-genome doubling event](wgd.md)
 - [Single gain](single-gain-timing.md)
 - [Copy-neutral LOH](cn-loh-timing.md)
 - [Whole-genome doubling](wgd-timing.md)

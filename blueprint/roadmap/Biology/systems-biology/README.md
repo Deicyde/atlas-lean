@@ -4,7 +4,6 @@ Dynamics of biochemical reaction networks and gene regulatory circuits: mass-act
 
 - [Coherent feed-forward loop](coherent-feed-forward-loop/README.md)
 - [Complex balancing and the deficiency-zero theorem](complex-balancing-and-the-deficiency-zero-theore/README.md)
-- [Flux balance analysis value function](flux-balance-analysis-value-function/README.md)
 - [Goldbeter–Koshland ultrasensitivity](goldbeter-koshland-ultrasensitivity/README.md)
 - [Integral feedback and perfect adaptation](integral-feedback-and-perfect-adaptation/README.md)
 - [Intrinsic and extrinsic gene expression noise](intrinsic-and-extrinsic-gene-expression-noise/README.md)

@@ -7,7 +7,7 @@ navigation: module
 ## MME
 
 - [Phenotypic covariance of a linear mixed model](phen-cov.md)
-- [Is MMESolution](is-mmesolution.md)
+- [Solution of Henderson's mixed-model equations](is-mmesolution.md)
 - [Positive definiteness of the phenotypic covariance](pos-def-phen-cov.md)
 - [Henderson's mixed-model equations](is-mmesolution-iff.md)
 - [The MME solution is the GLS estimate and the BLUP](is-mmesolution-iff-gls.md)

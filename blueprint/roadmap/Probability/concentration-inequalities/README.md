@@ -5,7 +5,6 @@ Non-asymptotic tail and moment bounds: Hoeffding, McDiarmid, Efron–Stein, Khin
 - [Bonami–Beckner hypercontractivity](bonami-beckner-hypercontractivity/README.md)
 - [Convex comparison under sub-Gaussian tails](convex-comparison-under-sub-gaussian-tails/README.md)
 - [Efron–Stein inequality](efron-stein-inequality/README.md)
-- [Hoeffding's bound for sampling without replacement](card-sample-tail-le.md)
 - [Hoeffding's inequality](hoeffding-s-inequality/README.md)
 - [Khintchine inequality](khintchine-inequality.md)
 - [McDiarmid's inequality](mcdiarmid-s-inequality/README.md)

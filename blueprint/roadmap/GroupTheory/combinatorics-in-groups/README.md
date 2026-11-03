@@ -12,6 +12,7 @@ Additive and Ramsey-type combinatorics inside groups: approximate subgroups and 
 - [Nilpotent pairs in finite subsets of groups](nilpotent-pairs-in-finite-subsets-of-groups/README.md)
 - [Partitions meeting every infinite coset](partitions-meeting-every-infinite-coset/README.md)
 - [Partitions of groups of singular cardinality](partitions-of-groups-of-singular-cardinality/README.md)
+- [Product growth in special linear groups over finite fields](product-growth-in-special-linear-groups-over-fin/README.md)
 - [Product theorem for special linear groups](product-theorem-special-linear.md)
 - [Products of large normal subsets](products-of-large-normal-subsets/README.md)
 - [Products of permuted sequences in groups](products-of-permuted-sequences-in-groups/README.md)

@@ -4,8 +4,9 @@ navigation: module
 
 # Stochastic mass action, metabolic control and flux balance
 
-## Stochastic mass-action kinetics
-
+- [Finitely many dual solutions suffice](exists-finset-optimal-fba-dual.md)
+- [The FBA value is piecewise linear](exists-finset-is-least-fba-value.md)
+- [Shadow prices are derivatives when unique](has-fderiv-at-fba-value-of-unique.md)
 - [Stochastic mass-action propensity](propensity.md)
 - [State after one reaction firing](fire.md)
 - [State before one reaction firing](unfire.md)
@@ -16,9 +17,6 @@ navigation: module
 - [Anderson–Craciun–Kurtz on a finite class](poisson-weight-vec-mul-class-generator.md)
 - [Normalized Poisson stationary law on a finite state class](class-stationary-law.md)
 - [Stationary law of the stochastic mass-action chain on a finite class](class-stationary-law-spec.md)
-
-## Metabolic control analysis
-
 - [Reaction fluxes proportional to enzyme levels](flux.md)
 - [Steady-state fluxes along a steady-state map](steady-flux.md)
 - [Flux control coefficient](flux-control.md)
@@ -29,9 +27,6 @@ navigation: module
 - [Concentration summation theorem](sum-conc-control.md)
 - [Flux summation theorem](sum-flux-control.md)
 - [Flux connectivity theorem](sum-flux-control-mul-elasticity.md)
-
-## Flux balance analysis
-
 - [Feasible fluxes of flux balance analysis](fba-feasible.md)
 - [Optimal value of flux balance analysis](fba-value.md)
 - [Dual feasibility for flux balance analysis](fba-dual-feasible.md)
@@ -41,25 +36,16 @@ navigation: module
 - [Strong duality for flux balance analysis](exists-fba-dual-value-eq.md)
 - [Concavity of the flux balance optimum in the right-hand side](fba-value-concave.md)
 - [Shadow prices](exists-optimal-dual-iff-supergradient.md)
-
-## Symmetric matrix balancing
-
 - [Uniqueness of Sinkhorn scaling](sinkhorn-scaling-unique.md)
 - [Symmetric matrix balancing](exists-unique-symmetric-balancing.md)
 - [Total support of a square matrix](has-total-support.md)
 - [Necessity of total support](has-total-support-of-balancing.md)
-
-## Boolean networks
-
 - [Interaction graph of a Boolean network](influences.md)
 - [Acyclic interaction graph](is-acyclic.md)
 - [Robert's theorem](robert-fixed-point.md)
-
-## The Markov chain tree theorem
-
 - [Spanning in-tree rooted at a state](is-in-tree.md)
 - [Total weight of spanning in-trees](tree-weight.md)
 - [Irreducible rate matrix](is-irreducible.md)
 - [Markov chain tree theorem](tree-weight-vec-mul-eq-zero.md)
 - [In-tree weights of an irreducible rate matrix are positive](tree-weight-pos.md)
-- [Eq smul tree Weight of vec Mul eq zero](eq-smul-tree-weight-of-vec-mul-eq-zero.md)
+- [Uniqueness in the Markov chain tree theorem](eq-smul-tree-weight-of-vec-mul-eq-zero.md)

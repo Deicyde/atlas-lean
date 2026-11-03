@@ -10,4 +10,5 @@ Discrete-time Markov chains (construction, path measures, finite-dimensional dis
 - [Finite-dimensional distributions of Markov chains](finite-dimensional-distributions-of-markov-chain/README.md)
 - [Kolmogorov's criterion for reversibility](kolmogorov-s-criterion-for-reversibility/README.md)
 - [Markov and strong Markov properties](markov-and-strong-markov-properties/README.md)
+- [Markov processes from transition semigroups](markov-processes-from-transition-semigroups/README.md)
 - [Mixing times of Markov chains](mixing-times-of-markov-chains/README.md)
