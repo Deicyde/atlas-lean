@@ -235,6 +235,25 @@ This section studies the distances determined by finite point configurations.
             "## Thresholds\n\n- [Result 1](result-1.md)\n- [Result 2](result-2.md)\n",
         )
 
+    def test_articles_among_sub_pages_follow_them_and_a_leading_run_stays(self):
+        children = [_target(5), wiki.Container("D", "d", [_target(0)]), _target(3), wiki.Container("B", "b", [_target(2)]), _target(1)]
+        page = wiki.Container("Sum-free sets", "sum-free-sets", children)
+        wiki.assign_paths(page, wiki.ROADMAP / "Combinatorics/sum-free-sets")
+        self.assertEqual(
+            wiki.render_container(page, None),
+            "# Sum-free sets\n\n- [Result 5](result-5.md)\n- [D](d/README.md)\n- [B](b/README.md)\n"
+            "- [Result 3](result-3.md)\n- [Result 1](result-1.md)\n",
+        )
+
+    def test_a_pagination_part_lists_its_children_alike_on_both_pages(self):
+        part = wiki.Container("B to D", "part-01", [wiki.Container("B", "b", [_target(0)]), _target(1), wiki.Container("D", "d", [_target(2)])],
+                              navigation="transparent")
+        root = wiki.Container("Geometry", "geometry", [part])
+        wiki.assign_paths(root, wiki.ROADMAP / "Geometry")
+        self.assertIn("## [B to D](part-01/README.md)\n\n- [B](part-01/b/README.md)\n- [D](part-01/d/README.md)\n"
+                      "- [Result 1](part-01/result-1.md)\n", wiki.render_container(root, None))
+        self.assertIn("- [B](b/README.md)\n- [D](d/README.md)\n- [Result 1](result-1.md)\n", wiki.render_container(part, None))
+
     def test_pagination_parts_render_as_sections_of_the_parent_page(self):
         root = wiki.chunk("Geometry", "geometry", [_target(index) for index in range(41)])
         wiki.assign_paths(root, wiki.ROADMAP / "Geometry")

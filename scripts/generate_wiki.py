@@ -621,6 +621,19 @@ def frontmatter(fields: list[tuple[str, str]], previous: str | None) -> str:
     return "---\n" + "\n".join(lines) + "\n---\n\n" if lines else ""
 
 
+def listed(children: list) -> list:
+    """A page's children in the order its list shows them.
+
+    Render turns a bullet that links one of the page's own articles into the
+    article's card, so an article among the sub-pages would split their list:
+    articles after the first sub-page follow the last one. A leading run of
+    articles, an umbrella's or namesake's own, still leads.
+    """
+    first = next((index for index, child in enumerate(children) if isinstance(child, Container)), len(children))
+    rest = children[first:]
+    return children[:first] + [child for child in rest if isinstance(child, Container)] + [child for child in rest if isinstance(child, Target)]
+
+
 def render_container(node: Container, previous: str | None, extra: str = "") -> str:
     vault_path = node.path.relative_to(VAULT)
     lines = [f"# {node.title}", ""]
@@ -650,7 +663,7 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
         # depth of its children, in the site navigation built from these links.
         for part in node.children:
             heading = f"[{link_text(part.title)}]({rel(vault_path, part.path.relative_to(VAULT))})"
-            lines += [f"{level} {heading}", "", *(link(child) for child in part.children), ""]
+            lines += [f"{level} {heading}", "", *(link(child) for child in listed(part.children)), ""]
         lines.pop()
     elif node.groups:
         current = None
@@ -662,7 +675,7 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
             current = group or current
             lines.append(link(child))
     else:
-        lines += [link(child) for child in node.children]
+        lines += [link(child) for child in listed(node.children)]
     fields = [("navigation", node.navigation)] if node.navigation else []
     header = (previous or "").split("---", 2)
     if len(header) == 3 and not header[0].strip():
