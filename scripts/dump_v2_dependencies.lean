@@ -11,7 +11,8 @@ import Lean
 /-!
 Dump, for every constant declared in the given ATLAS v2 modules, the v2 constants
 its type and its value (including theorem proofs) use, and whether it is private,
-documented or an instance. One JSON object per line;
+documented or an instance. An inductive type has no value, so its constructors'
+types stand in for one: they hold a structure's fields and a class's parents. One JSON object per line;
 `scripts/extract_v2_lean_dependencies.py` collapses the result onto wiki articles.
 
     lake env lean --run scripts/dump_v2_dependencies.lean MODULE_LIST > OUT.jsonl
@@ -46,12 +47,15 @@ def main (args : List String) : IO UInt32 := do
   let moduleOf (n : Name) : Option Name :=
     (env.getModuleIdxFor? n).map (moduleNames[·]!)
   let inMine (n : Name) : Bool := (moduleOf n).any mine.contains
-  let uses (e : Expr) : Json := Json.arr ((e.getUsedConstants.filter inMine).map (toJson ·.toString))
+  let uses (es : Array Expr) : Json :=
+    Json.arr (((es.flatMap (·.getUsedConstants)).filter inMine).map (toJson ·.toString))
   let stdout ← IO.getStdout
   for (name, info) in env.constants.toList do
     let some module := moduleOf name | continue
     unless mine.contains module do continue
-    let value := (info.value? (allowOpaque := true)).map uses |>.getD (Json.arr #[])
+    let value := match info with
+      | .inductInfo val => uses (val.ctors.filterMap fun ctor => (env.find? ctor).map (·.type)).toArray
+      | _ => uses ((info.value? (allowOpaque := true)).map (#[·]) |>.getD #[])
     let doc := (← findDocString? env name).isSome
     stdout.putStrLn (Json.mkObj [
       ("name", toJson name.toString),
@@ -60,6 +64,6 @@ def main (args : List String) : IO UInt32 := do
       ("private", toJson (isPrivateName name)),
       ("doc", toJson doc),
       ("instance", toJson (Meta.isInstanceCore env name)),
-      ("type", uses info.type),
+      ("type", uses #[info.type]),
       ("value", value)]).compress
   return 0

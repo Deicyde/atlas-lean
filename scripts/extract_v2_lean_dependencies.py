@@ -10,8 +10,10 @@ generated v2 roadmap, so source-level commands and compiled constants cannot
 disagree about projections, wrappers, wanted declarations, or docstrings. An
 article's statement dependencies are the articles its type reaches through
 non-article constants (private helpers, auxiliary declarations, undocumented
-definitions); its proof dependencies are those its value reaches the same way,
-minus the statement ones. Writes
+definitions), together with what its value reaches when it is a definition (its
+body) or an inductive type (its constructors' types). A theorem's proof
+dependencies are those its value reaches the same way, minus the statement
+ones. Writes
 blueprint/sources/v2/lean-dependencies.json, which scripts/generate_wiki.py
 reads.
 """
@@ -29,6 +31,8 @@ OUTPUT = ROOT / "blueprint" / "sources" / "v2" / "lean-dependencies.json"
 ROADMAP = ROOT / "blueprint" / "roadmap"
 LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "WantedExt"})
 LEAN = re.compile(r"^lean:\s*(.+?)\s*$", re.MULTILINE)
+# A definition is its body and an inductive type its constructors, so their values are part of the statement.
+STATEMENT_VALUE = frozenset({"def", "inductive"})
 
 
 def read_dump(path: Path) -> dict[str, dict]:
@@ -140,8 +144,11 @@ def main() -> int:
     result = {}
     for name in sorted(articles):
         row = rows[name]
-        statement = collapse(name, row["type"])
-        proof = collapse(name, row["value"]) - statement
+        if row["kind"] in STATEMENT_VALUE:
+            statement, proof = collapse(name, row["type"] + row["value"]), set()
+        else:
+            statement = collapse(name, row["type"])
+            proof = collapse(name, row["value"]) - statement
         result[name] = {
             "module": row["module"],
             "statement": sorted(statement),
