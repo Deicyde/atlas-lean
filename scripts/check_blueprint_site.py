@@ -112,6 +112,9 @@ def main() -> int:
         return frozenset(parse(path).ids)
 
     pages = sorted(site.rglob("*.html"))
+    # A missing or empty tree passes every check here, so a broken build would look clean.
+    if not pages or not cards:
+        issues.append(f"{len(pages)} HTML pages under {site} and {cards} article cards from {docs}; a built site has both")
     links = 0
     for page in pages:
         for href in parse(page).hrefs:

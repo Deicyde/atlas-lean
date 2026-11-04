@@ -74,6 +74,11 @@ class NavigationPayloadTests(unittest.TestCase):
                 self.assertIn(expected, stderr)
                 self.assertIn(href, stderr)
 
+    def test_empty_site_fails(self) -> None:
+        result, _stdout, stderr = self.check()
+        self.assertEqual(result, 1)
+        self.assertIn("0 HTML pages", stderr)
+
     def test_broken_root_dependency_target_is_checked(self) -> None:
         self.write_json(self.docs / "dependencies.json", {"nodes": []})
         self.write_json(self.site / "dependencies.json", {"nodes": [{"data_url": "missing-root.json"}]})
@@ -86,7 +91,9 @@ class NavigationPayloadTests(unittest.TestCase):
         self.assertIn("targets missing", stderr)
 
     def test_valid_navigation_targets_and_book_fragments_succeed(self) -> None:
-        self.write(self.site / "roadmap/topic/index.html", '<h1 id="lemma">Lemma</h1>')
+        card = '<div class="bp-thmwrapper" data-autoform-node-id="lemma"></div>'
+        self.write(self.docs / "roadmap/topic/README.md", card)
+        self.write(self.site / "roadmap/topic/index.html", '<h1 id="lemma">Lemma</h1>' + card)
         self.write(self.site / "dependencies/topic.html", "<h1>Topic</h1>")
         self.write_json(self.site / "dependencies/topic.json", {"nodes": []})
         self.write_json(self.site / "dependencies/index.json", {
