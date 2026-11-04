@@ -127880,9 +127880,7 @@
   "Cslib.PDL.Formula": {
    "module": "CSLibExt.Logics.PDL.Basic",
    "proof": [],
-   "statement": [
-    "Cslib.PDL.Program"
-   ]
+   "statement": []
   },
   "Cslib.PDL.Formula.dia": {
    "module": "CSLibExt.Logics.PDL.Basic",
@@ -127909,9 +127907,7 @@
   "Cslib.PDL.Program": {
    "module": "CSLibExt.Logics.PDL.Basic",
    "proof": [],
-   "statement": [
-    "Cslib.PDL.Formula"
-   ]
+   "statement": []
   },
   "Cslib.PDL.Sat": {
    "module": "CSLibExt.Logics.PDL.Basic",
@@ -224981,7 +224977,6 @@
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Rl",
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Srt",
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Tm",
-    "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Wf",
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.lift",
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.subst"
    ]
@@ -224991,8 +224986,7 @@
    "proof": [],
    "statement": [
     "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Srt",
-    "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Tm",
-    "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Typing"
+    "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Tm"
    ]
   },
   "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.consistency": {
@@ -229845,8 +229839,7 @@
    "module": "WantedExt.Combinatorics.AcceleratedZeckendorfGameWanted",
    "proof": [],
    "statement": [
-    "MetaMathlibExt.AccelZeckMove",
-    "MetaMathlibExt.AccelZeckWinning"
+    "MetaMathlibExt.AccelZeckMove"
    ]
   },
   "MetaMathlibExt.AccelZeckMove": {
@@ -229858,7 +229851,6 @@
    "module": "WantedExt.Combinatorics.AcceleratedZeckendorfGameWanted",
    "proof": [],
    "statement": [
-    "MetaMathlibExt.AccelZeckLosing",
     "MetaMathlibExt.AccelZeckMove"
    ]
   },
@@ -243767,7 +243759,6 @@
    "module": "WantedExt.Combinatorics.SylverCoinageFourWanted",
    "proof": [],
    "statement": [
-    "MetaMathlibExt.IsSylverPPosition",
     "MetaMathlibExt.sylverLegalMoves"
    ]
   },
@@ -243775,7 +243766,6 @@
    "module": "WantedExt.Combinatorics.SylverCoinageFourWanted",
    "proof": [],
    "statement": [
-    "MetaMathlibExt.IsSylverNPosition",
     "MetaMathlibExt.sylverLegalMoves"
    ]
   },
@@ -358792,5 +358782,23 @@
   "MathlibExt": [],
   "WantedExt": []
  },
+ "mutual": [
+  [
+   "Cslib.PDL.Formula",
+   "Cslib.PDL.Program"
+  ],
+  [
+   "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Typing",
+   "MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Wf"
+  ],
+  [
+   "MetaMathlibExt.AccelZeckLosing",
+   "MetaMathlibExt.AccelZeckWinning"
+  ],
+  [
+   "MetaMathlibExt.IsSylverNPosition",
+   "MetaMathlibExt.IsSylverPPosition"
+  ]
+ ],
  "source": ".github/workflows/v2-dependencies.yml"
 }

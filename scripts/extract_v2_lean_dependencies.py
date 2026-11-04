@@ -14,7 +14,9 @@ non-article constants (private helpers, auxiliary declarations, undocumented
 definitions), together with what its value reaches when it is a definition (its
 body) or an inductive type (its constructors' types). A theorem's proof
 dependencies are those its value reaches the same way, minus the statement
-ones. Writes
+ones. Mutually recursive definitions and mutual inductive types depend on each
+other, which a dependency DAG can't show, so statement edges inside such a group
+are left out and the group is listed under "mutual". Writes
 blueprint/sources/v2/lean-dependencies.json, which scripts/generate_wiki.py
 reads. --check-targets fails when the generated roadmap's `lean:` targets are not
 the articles that file covers.
@@ -134,6 +136,48 @@ def check_targets() -> int:
     return 0 if manifest == covered else 1
 
 
+def mutual_groups(edges: dict[str, set[str]]) -> list[list[str]]:
+    """The groups of two or more articles whose statement edges reach each other (Tarjan's algorithm)."""
+    index: dict[str, int] = {}
+    low: dict[str, int] = {}
+    stack: list[str] = []
+    on_stack: set[str] = set()
+    groups: list[list[str]] = []
+    for root in sorted(edges):
+        if root in index:
+            continue
+        work = [(root, iter(sorted(edges[root])))]
+        index[root] = low[root] = len(index)
+        stack.append(root)
+        on_stack.add(root)
+        while work:
+            node, children = work[-1]
+            child = next(children, None)
+            if child is not None:
+                if child not in index:
+                    index[child] = low[child] = len(index)
+                    stack.append(child)
+                    on_stack.add(child)
+                    work.append((child, iter(sorted(edges.get(child, ())))))
+                elif child in on_stack:
+                    low[node] = min(low[node], index[child])
+                continue
+            work.pop()
+            if work:
+                low[work[-1][0]] = min(low[work[-1][0]], low[node])
+            if low[node] == index[node]:
+                group = []
+                while True:
+                    member = stack.pop()
+                    on_stack.discard(member)
+                    group.append(member)
+                    if member == node:
+                        break
+                if len(group) > 1:
+                    groups.append(sorted(group))
+    return sorted(groups)
+
+
 def main() -> int:
     if sys.argv[1:] == ["--check-targets"]:
         return check_targets()
@@ -170,6 +214,10 @@ def main() -> int:
             "statement": sorted(statement),
             "proof": sorted(proof),
         }
+    groups = mutual_groups({name: set(entry["statement"]) for name, entry in result.items()})
+    for group in groups:
+        for name in group:
+            result[name]["statement"] = [use for use in result[name]["statement"] if use not in group]
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     # A target with no compiled row has no module to name its library, so its own name has to.
     missing_by_library = {
@@ -185,6 +233,7 @@ def main() -> int:
                 "source": sys.argv[2],
                 "article_manifest": "blueprint/roadmap lean targets",
                 "missing_articles": missing_by_library,
+                "mutual": groups,
                 "articles": result,
             },
             indent=1,
