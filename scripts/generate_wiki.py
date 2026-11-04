@@ -1014,6 +1014,8 @@ def generate() -> dict[Path, str]:
         ("Atlas/FC", "MAPPED", "Standalone Lean files; no roadmap articles yet."),
         ("Atlas/CPythonListsort", "OUT", "Maintained as its own Autoform blueprint inside Atlas/CPythonListsort."),
     ]
+    if (ROOT / "PhyslibExt").is_dir():
+        coverage.append(("v2 / PhyslibExt", "MAPPED", "A v2 library the wiki does not cover yet; its articles need taxonomy placements."))
     root = ROADMAP / "README.md"
     files[root] = render_roadmap_root(taxonomy, subjects, previous(root))
     # The map draws one region per area, with its subjects inside.
