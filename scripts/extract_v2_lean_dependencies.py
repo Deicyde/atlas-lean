@@ -2,6 +2,7 @@
 """Collapse the v2 declaration dump onto wiki articles.
 
     scripts/extract_v2_lean_dependencies.py DUMP.jsonl[.gz] SOURCE_URL
+    scripts/extract_v2_lean_dependencies.py --check-targets
 
 The dump (from scripts/dump_v2_dependencies.lean, run by the v2-dependencies
 workflow) lists, for every constant in the v2 modules, the v2 constants its
@@ -15,7 +16,8 @@ body) or an inductive type (its constructors' types). A theorem's proof
 dependencies are those its value reaches the same way, minus the statement
 ones. Writes
 blueprint/sources/v2/lean-dependencies.json, which scripts/generate_wiki.py
-reads.
+reads. --check-targets fails when the generated roadmap's `lean:` targets are not
+the articles that file covers.
 """
 
 from __future__ import annotations
@@ -120,7 +122,21 @@ def frontiers(rows: dict[str, dict], articles: set[str]) -> dict[str, frozenset[
     return memo
 
 
+def check_targets() -> int:
+    """Whether the generated roadmap names exactly the articles lean-dependencies.json covers."""
+    data = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    covered = set(data["articles"]) | {name for names in data["missing_articles"].values() for name in names}
+    manifest = article_manifest()
+    for name in sorted(manifest - covered)[:20]:
+        print(f"new lean: target: {name}", file=sys.stderr)
+    for name in sorted(covered - manifest)[:20]:
+        print(f"lean: target gone: {name}", file=sys.stderr)
+    return 0 if manifest == covered else 1
+
+
 def main() -> int:
+    if sys.argv[1:] == ["--check-targets"]:
+        return check_targets()
     if len(sys.argv) != 3:
         print(__doc__.strip(), file=sys.stderr)
         return 2

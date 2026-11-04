@@ -54,5 +54,26 @@ class Buckets(unittest.TestCase):
         self.assertEqual(found["D"]["statement"], ["E"])
 
 
+class CheckTargets(unittest.TestCase):
+    def check(self, covered: dict, articles: list[str]) -> int:
+        with tempfile.TemporaryDirectory() as directory:
+            roadmap = Path(directory) / "roadmap"
+            roadmap.mkdir()
+            for name in articles:
+                (roadmap / f"{name}.md").write_text(f"---\nlean: {name}\n---\n")
+            output = Path(directory) / "lean-dependencies.json"
+            output.write_text(json.dumps(covered))
+            with patch.object(extract, "ROADMAP", roadmap), patch.object(extract, "OUTPUT", output), \
+                    patch("sys.argv", ["extract", "--check-targets"]):
+                return extract.main()
+
+    def test_same_targets_pass(self) -> None:
+        self.assertEqual(self.check({"articles": {"A": {}}, "missing_articles": {"WantedExt": ["B"]}}, ["A", "B"]), 0)
+
+    def test_a_new_or_gone_target_fails(self) -> None:
+        self.assertEqual(self.check({"articles": {"A": {}}, "missing_articles": {}}, ["A", "B"]), 1)
+        self.assertEqual(self.check({"articles": {"A": {}, "B": {}}, "missing_articles": {}}, ["A"]), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

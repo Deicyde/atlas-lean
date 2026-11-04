@@ -3,3 +3,10 @@
 dependencies.md
 dependencies.html
 graph.html
+# scripts/generate_wiki.py writes these from the Lean sources, and the Pages
+# build runs it; blueprint/pages.json, which keeps their URLs, is committed.
+roadmap/
+atlas.json
+coverage/
+sources/README.md
+sources/v2/*.md

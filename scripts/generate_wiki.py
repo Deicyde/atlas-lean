@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Generate the ATLAS wiki under blueprint/.
 
-    python scripts/generate_wiki.py          rewrite the generated pages
-    python scripts/generate_wiki.py --check  fail if any generated page is stale
+    python scripts/generate_wiki.py    write the pages and blueprint/pages.json
 
 ATLAS v2 is the root Lake package: every public MathlibExt, CSLibExt
 and WantedExt declaration with a docstring becomes one article whose statement
@@ -16,12 +15,17 @@ subjects inside them, each subject's fields and subfields, and where each Lean
 module or directory sits among them, under what title. Lean paths do not decide
 where an article appears.
 
+The pages are not committed; the Pages build writes them from the Lean sources.
+blueprint/pages.json is, and records each page's path with its Lean name (or,
+without one, its source and title) and article id, so that a regeneration keeps
+a declaration's URL and id when the pages around it change. Commit it after
+generating when it changes.
+
 Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 """
 
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import sys
@@ -37,6 +41,7 @@ ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
 SOURCES = VAULT / "sources"
+PAGE_MAP = VAULT / "pages.json"
 REPOSITORY_URL = "https://github.com/facebookresearch/atlas-lean"
 MAX_CHILDREN = 20  # `autoform audit` reports containers above 24.
 # A `navigation: module` page may hold as many articles as the explorer maps.
@@ -880,17 +885,46 @@ def regions(taxonomy: dict, subjects: list[str]) -> dict[str, list[str]]:
     return {region: members for region, members in out.items() if members}
 
 
+def page_entry(text: str) -> dict[str, str]:
+    """What a regeneration keeps from a page: its article id, and its Lean name or, without one, its source and title."""
+    header = text.split("---", 2)
+    if len(header) != 3 or header[0].strip():
+        return {}
+    entry = {}
+    article = ARTICLE_ID.search(header[1])
+    if article:
+        entry["article_id"] = article.group(1)
+    lean = re.search(r"(?m)^lean: (\S+)$", header[1])
+    source = re.search(r"(?m)^## Sources\n\n- \[(.*)\]\(", header[2])
+    title = re.search(r"(?m)^# (.*)$", header[2])
+    if lean:
+        entry["lean"] = lean.group(1)
+    elif source and title:
+        entry["label"] = f"{source.group(1)}\n{title.group(1)}"
+    return entry
+
+
+def render_page_map(files: dict[Path, str]) -> str:
+    """blueprint/pages.json: the entry of every generated page that has one, by its path in the roadmap, a line each."""
+    entries = {path.relative_to(ROADMAP).as_posix(): page_entry(text) for path, text in files.items() if path.is_relative_to(ROADMAP)}
+    lines = [f"{json.dumps(path, ensure_ascii=False)}: {json.dumps(entry, ensure_ascii=False, sort_keys=True)}"
+             for path, entry in sorted(entries.items()) if entry]
+    return "{\n" + ",\n".join(lines) + "\n}\n"
+
+
+def committed_pages() -> dict[Path, dict[str, str]]:
+    """Each page's entry in blueprint/pages.json, as the last regeneration left it."""
+    if not PAGE_MAP.is_file():
+        return {}
+    return {ROADMAP / path: entry for path, entry in json.loads(PAGE_MAP.read_text()).items()}
+
+
 def ids_by_lean() -> dict[str, str]:
-    """Article ids of the current pages by Lean name, so a page that moves keeps its id."""
+    """Article ids by Lean name, so a page that moves keeps its id."""
     found: dict[str, set[str]] = defaultdict(set)
-    for path in owned():
-        header = path.read_text().split("---", 2)
-        if len(header) != 3 or header[0].strip():
-            continue
-        article = ARTICLE_ID.search(header[1])
-        lean = re.search(r"(?m)^lean: (\S+)$", header[1])
-        if article and lean:
-            found[lean.group(1)].add(article.group(1))
+    for entry in committed_pages().values():
+        if "article_id" in entry and "lean" in entry:
+            found[entry["lean"]].add(entry["article_id"])
     return {name: next(iter(ids)) for name, ids in found.items() if len(ids) == 1}
 
 
@@ -904,17 +938,10 @@ def page_key(target: Target) -> str | None:
 def pages_by_lean() -> dict[str, Path]:
     """The current page of each declaration, by page_key, so a declaration that stays in its folder keeps its file name."""
     found: dict[str, set[Path]] = defaultdict(set)
-    for path in owned():
-        header = path.read_text().split("---", 2)
-        if len(header) != 3 or header[0].strip():
-            continue
-        lean = re.search(r"(?m)^lean: (\S+)$", header[1])
-        source = re.search(r"(?m)^## Sources\n\n- \[(.*)\]\(", header[2])
-        title = re.search(r"(?m)^# (.*)$", header[2])
-        if lean:
-            found[lean.group(1)].add(path)
-        elif source and title:
-            found[f"{source.group(1)}\n{title.group(1)}"].add(path)
+    for path, entry in committed_pages().items():
+        key = entry.get("lean") or entry.get("label")
+        if key:
+            found[key].add(path)
     return {key: next(iter(paths)) for key, paths in found.items() if len(paths) == 1}
 
 
@@ -925,7 +952,9 @@ def generate() -> dict[Path, str]:
     # articles unlinked.
     index = index_project(ROOT, exclude_roots=("v1", "Atlas"))
     files: dict[Path, str] = {}
-    previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
+    # A page keeps the article id it had at its path, which is all the renderers take from the page before.
+    ids_at = {path: entry["article_id"] for path, entry in committed_pages().items() if "article_id" in entry}
+    previous = lambda path: f"---\narticle_id: {ids_at[path]}\n---\n" if path in ids_at else None  # noqa: E731
     known_ids = ids_by_lean()
     kept = pages_by_lean()
     v2_coverage = []
@@ -994,6 +1023,7 @@ def generate() -> dict[Path, str]:
     sources = ["# ATLAS source catalog", "", "## ATLAS v2", ""]
     sources += [f"- [{library}](v2/{library}.md)" for library in LIBRARIES]
     files[SOURCES / "README.md"] = "\n".join(sources) + "\n"
+    files[PAGE_MAP] = render_page_map(files)
     return files
 
 
@@ -1003,16 +1033,9 @@ def owned() -> set[Path]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--check", action="store_true", help="fail if any generated page is stale")
-    args = parser.parse_args()
     files = generate()
     stale = sorted(owned() - set(files))
     changed = sorted(path for path, text in files.items() if not path.is_file() or path.read_text() != text)
-    if args.check:
-        for path in changed + stale:
-            print(f"stale: {path.relative_to(ROOT)}", file=sys.stderr)
-        return 1 if changed or stale else 0
     for path in stale:
         path.unlink()
     for path in changed:

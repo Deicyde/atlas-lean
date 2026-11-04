@@ -4,7 +4,7 @@
 # blueprint/sources/v2/lean-dependencies.json, which gives the wiki its
 # "Depends on" lists. The run fails when the committed file differs from what
 # this Lean gives, and its lean-dependencies artifact then holds a patch with
-# the file and the pages regenerated from it.
+# the file and the page map written with it.
 
 name: v2 dependencies
 
@@ -20,7 +20,6 @@ on:
       - "scripts/dump_v2_dependencies.lean"
       - "scripts/extract_v2_lean_dependencies.py"
       - "scripts/generate_wiki.py"
-      - "blueprint/roadmap/**"
       - "blueprint/sources/v2/lean-dependencies.json"
       - "MathlibExt/**"
       - "CSLibExt/**"
@@ -71,7 +70,7 @@ jobs:
           git fetch --quiet --depth=1 origin "$BASE"
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
           if grep -qE \
-            -e '^(MathlibExt|CSLibExt|WantedExt|blueprint/roadmap)/' \
+            -e '^(MathlibExt|CSLibExt|WantedExt)/' \
             -e '^blueprint/sources/v2/lean-dependencies\.json$' \
             -e '^scripts/(dump_v2_dependencies\.lean|extract_v2_lean_dependencies\.py|generate_wiki\.py)$' \
             -e '^\.github/(autoform-ref|workflows/v2-dependencies\.yml)$' \
@@ -208,8 +207,8 @@ jobs:
           version: "0.12.1"
 
       # The articles are the roadmap's `lean:` targets, which generate_wiki.py
-      # writes from the Lean sources, so the pages are regenerated first.
-      - name: Regenerate the pages
+      # writes from the Lean sources, so the pages are generated first.
+      - name: Generate the pages
         run: uv run --no-project --with "git+${AUTOFORM_SOURCE}@$(cat .github/autoform-ref)" python scripts/generate_wiki.py
 
       # The file names this workflow as its source, not this run: a run's URL
@@ -221,13 +220,14 @@ jobs:
           v2-dependencies.jsonl.gz
           .github/workflows/v2-dependencies.yml
 
-      - name: Regenerate the pages with these edges
+      # Edges order the topics, so the page map is written again with them.
+      - name: Generate the pages with these edges
         run: uv run --no-project --with "git+${AUTOFORM_SOURCE}@$(cat .github/autoform-ref)" python scripts/generate_wiki.py
 
-      # The patch holds the file and every page the generator writes differently
-      # from the committed one. A pull request's run checks its merge with the
-      # base, so the patch fits that merge, and the author merges the same base
-      # before applying it.
+      # The patch holds the file and blueprint/pages.json, the page map written
+      # with it, which a change that adds articles also has to commit. A pull
+      # request's run checks its merge with the base, so the patch fits that
+      # merge, and the author merges the same base before applying it.
       - name: Compare the edges with the committed ones
         run: |
           if [ -s build-failures.txt ]; then
@@ -239,14 +239,14 @@ jobs:
             exit 0
           fi
           head -n 200 edges.diff
-          git add -A blueprint
+          git add blueprint/sources/v2/lean-dependencies.json blueprint/pages.json
           git diff --cached --binary > lean-dependencies.patch
           apply="gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n lean-dependencies && git apply lean-dependencies.patch"
           if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
             base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
             apply="git fetch ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY} ${base} && git merge --no-edit ${base} && ${apply}"
           fi
-          echo "::error::blueprint/sources/v2/lean-dependencies.json differs from this Lean's edges (diff above). Apply the patch this run made, with the file and the pages generated from it: ${apply}"
+          echo "::error::blueprint/sources/v2/lean-dependencies.json differs from this Lean's edges (diff above). Apply the patch this run made, with the file and the page map written with it: ${apply}"
           exit 1
 
       - name: Keep the patch

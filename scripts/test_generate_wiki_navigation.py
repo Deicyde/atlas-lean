@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 import tempfile
 import unittest
 from pathlib import Path
@@ -16,6 +17,15 @@ def _target(index: int, sections: tuple[str, str, str] = ("", "", ""), module: s
         description="", declaration="theorem", lean=f"Falconer.result{index}", statement=True, proof=True,
         names=[f"Falconer.result{index}"], module=tuple(module.split("/")), sections=sections,
     )
+
+
+@contextlib.contextmanager
+def _committed(folder: str, pages: dict[Path, str]):
+    """blueprint/pages.json as generating these pages under folder/roadmap writes it, read back by the generator."""
+    roadmap, page_map = Path(folder) / "roadmap", Path(folder) / "pages.json"
+    with patch.object(wiki, "ROADMAP", roadmap), patch.object(wiki, "PAGE_MAP", page_map):
+        page_map.write_text(wiki.render_page_map(pages))
+        yield
 
 
 TAXONOMY = {
@@ -329,9 +339,7 @@ This section studies the distances determined by finite point configurations.
         with tempfile.TemporaryDirectory() as folder:
             roadmap = Path(folder) / "roadmap"
             old = roadmap / "Geometry/MathlibExt/falconer/part-01/result-0.md"
-            old.parent.mkdir(parents=True)
-            old.write_text("---\narticle_id: af_000000000000000000000002\ndeclaration: theorem\nlean: Falconer.result0\n---\n# Result 0\n")
-            with patch.object(wiki, "ROADMAP", roadmap):
+            with _committed(folder, {old: "---\narticle_id: af_000000000000000000000002\ndeclaration: theorem\nlean: Falconer.result0\n---\n# Result 0\n"}):
                 self.assertEqual(wiki.ids_by_lean(), {"Falconer.result0": "af_000000000000000000000002"})
 
 
@@ -354,12 +362,9 @@ This section studies the distances determined by finite point configurations.
         with tempfile.TemporaryDirectory() as folder:
             roadmap = Path(folder) / "roadmap"
             page = roadmap / "Geometry/MathlibExt/falconer/result-0-2.md"
-            page.parent.mkdir(parents=True)
-            page.write_text("---\ndeclaration: theorem\nlean: Falconer.result0\n---\n# Result 0\n")
-            for twice in ("a.md", "b.md"):
-                (page.parent / twice).write_text("---\nlean: Falconer.result1\n---\n# Result 1\n")
-            (page.parent / "README.md").write_text("# Falconer\n")
-            with patch.object(wiki, "ROADMAP", roadmap):
+            pages = {page: "---\ndeclaration: theorem\nlean: Falconer.result0\n---\n# Result 0\n", page.parent / "README.md": "# Falconer\n"}
+            pages.update({page.parent / twice: "---\nlean: Falconer.result1\n---\n# Result 1\n" for twice in ("a.md", "b.md")})
+            with _committed(folder, pages):
                 self.assertEqual(wiki.pages_by_lean(), {"Falconer.result0": page})
 
     def test_a_page_is_found_again_by_its_lean_name_or_else_its_source_and_title(self):
@@ -369,11 +374,12 @@ This section studies the distances determined by finite point configurations.
         for target, module in ((named, "A"), (unnamed, "B"), (twin, "C")):
             target.source = (f"MathlibExt, MathlibExt.{module}", Path("sources/v2/MathlibExt.md"))
         with tempfile.TemporaryDirectory() as folder:
-            with patch.object(wiki, "VAULT", Path(folder)), patch.object(wiki, "ROADMAP", Path(folder) / "roadmap"):
-                for target in (named, unnamed, twin):
-                    target.path = wiki.ROADMAP / f"Geometry/{target.slug}.md"
-                    target.path.parent.mkdir(parents=True, exist_ok=True)
-                    target.path.write_text(wiki.render_target(target, None))
+            roadmap = Path(folder) / "roadmap"
+            for target in (named, unnamed, twin):
+                target.path = roadmap / f"Geometry/{target.slug}.md"
+            with patch.object(wiki, "VAULT", Path(folder)), patch.object(wiki, "ROADMAP", roadmap):
+                pages = {target.path: wiki.render_target(target, None) for target in (named, unnamed, twin)}
+            with _committed(folder, pages):
                 self.assertEqual(wiki.pages_by_lean(), {wiki.page_key(target): target.path for target in (named, unnamed, twin)})
 
 if __name__ == "__main__":
