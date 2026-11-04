@@ -137,6 +137,15 @@ jobs:
         with:
           version: "0.12.1"
 
+      - name: Test the wiki scripts
+        run: >-
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          python -m unittest
+          scripts.test_generate_wiki_navigation
+          scripts.test_generate_wiki_docstrings
+          scripts.test_extract_v2_lean_dependencies
+          scripts.test_check_blueprint_site_navigation
+
       # The roadmap is generated from the v2 library sources here, not committed.
       # blueprint/pages.json, which is, keeps each declaration's URL and article
       # id; a Lean change that adds or moves articles should commit its update,
