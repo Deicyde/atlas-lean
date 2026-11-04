@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Vertices of a lattice walk from its step directions](../part-01/pos.md)
-- [Vertical lattice direction](../part-10/is-vert-edge.md)
+- [Vertical lattice direction](../part-03/is-vert-edge.md)
 
 ## Sources
 

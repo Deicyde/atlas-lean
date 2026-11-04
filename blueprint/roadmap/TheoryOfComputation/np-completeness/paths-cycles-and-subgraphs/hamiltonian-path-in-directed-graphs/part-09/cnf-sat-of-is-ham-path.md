@@ -32,14 +32,14 @@ left to right.
 
 ## Proof depends on
 
-- [Deleting the clause vertices from a path](drop-clauses.md)
+- [Deleting the clause vertices from a path](../part-08/drop-clauses.md)
 - [Every top but the last is followed by an end of its row](exists-top-succ.md)
-- [Consecutive vertices of a Hamiltonian path of Sipser's graph form arcs](../part-04/ham-edges-of-infix.md)
+- [Consecutive vertices of a Hamiltonian path of Sipser's graph form arcs](../part-03/ham-edges-of-infix.md)
 - [Row vertices of a diamond](../part-01/hp-r.md)
-- [Arcs from a row into a clause vertex](hp-r-arc-clause.md)
-- [Row vertices counted from either end](hp-ro.md)
+- [Arcs from a row into a clause vertex](../part-08/hp-r-arc-clause.md)
+- [Row vertices counted from either end](../part-08/hp-ro.md)
 - [Positions in the list of distinct variables](idx-of-get-d-ham-vars.md)
-- [Contracting a clause detour](infix-drop-clauses.md)
+- [Contracting a clause detour](../part-08/infix-drop-clauses.md)
 - [A row entered at one end is run to the other end](row-run.md)
 - [Arcs of the PATH digraph](../../../../polynomial-time-problems/graph-reachability/arc.md)
 

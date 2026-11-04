@@ -4,9 +4,6 @@ navigation: module
 
 # (q, r)-Whitney and Dowling numbers
 
-- [(q, r)-Whitney numbers of the second kind through q-Stirling numbers](whitney-second-eq-sum-q-stirling-second.md)
-- [Expansion of the (q, r)-Dowling polynomial in q-Stirling numbers](eval-qr-dowling-polynomial-whitney-secon.md)
-- [(q, r)-Dowling polynomial expansion from the defining recurrences](q-r-dowling-polynomial-q-stirling-expans.md)
 - [Complex q-integers](q-brack.md)
 - [(q, r)-Whitney numbers of the first kind](whitney-first.md)
 - [(q, r)-Whitney numbers of the second kind](whitney-second.md)
@@ -25,3 +22,6 @@ navigation: module
 - [$(q, r)$-Dowling polynomial](qr-dowling-polynomial.md)
 - [$(q, r)$-Dowling number](qr-dowling-number.md)
 - [$(q, r)$-Dowling numbers as sums of coefficients](qr-dowling-number-eq-sum.md)
+- [(q, r)-Whitney numbers of the second kind through q-Stirling numbers](whitney-second-eq-sum-q-stirling-second.md)
+- [Expansion of the (q, r)-Dowling polynomial in q-Stirling numbers](eval-qr-dowling-polynomial-whitney-secon.md)
+- [(q, r)-Dowling polynomial expansion from the defining recurrences](q-r-dowling-polynomial-q-stirling-expans.md)

@@ -14,7 +14,7 @@ between vertex steps for $es, s, t, n, c, b, q$, except that stack $A$ holds $a$
 ## Depends on
 
 - [Stacks of the Hamiltonian path verifier](../part-09/k.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 

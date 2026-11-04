@@ -4,11 +4,6 @@ navigation: module
 
 # Kadison–Singer problem
 
-- [Paving projection](paving-proj.md)
-- [Anderson paving theorem](kadison-singer-paving.md)
-- [Marcus--Spielman--Srivastava barrier bound](mixed-characteristic-polynomial-max-real.md)
-- [An outcome bounded by the mixed characteristic polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
-- [Marcus--Spielman--Srivastava bound, finite-support form](finite-mssbound.md)
 - [Mixed determinant polynomial](mixed-det-polynomial.md)
 - [Values of the mixed determinant polynomial](eval-mixed-det-polynomial.md)
 - [Rank-one coefficients make the mixed determinant polynomial affine](mixed-det-polynomial-pderiv-sq-eq-zero-o.md)
@@ -25,3 +20,8 @@ navigation: module
 - [Mixed characteristic polynomials are monic](mixed-characteristic-polynomial-monic.md)
 - [Degree of a mixed characteristic polynomial](mixed-characteristic-polynomial-nat-degr.md)
 - [Mixed characteristic polynomials of positive semidefinite matrices are real-rooted](mixed-characteristic-polynomial-is-real.md)
+- [Marcus--Spielman--Srivastava barrier bound](mixed-characteristic-polynomial-max-real.md)
+- [An outcome bounded by the mixed characteristic polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
+- [Marcus--Spielman--Srivastava bound, finite-support form](finite-mssbound.md)
+- [Paving projection](paving-proj.md)
+- [Anderson paving theorem](kadison-singer-paving.md)

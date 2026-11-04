@@ -23,7 +23,7 @@ $S$. That is, each popped bit $b$ is written as $b$ and then $\mathrm{true}$.
 - [Labels of the subset-sum emitter](lab.md)
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

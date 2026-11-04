@@ -20,8 +20,8 @@ restores the color stack otherwise.
 - [Stacks of the 3-COLOR verifier](../part-07/k.md)
 - [Labels of the 3-COLOR verifier](../part-07/lab.md)
 - [Moving one color code in the 3-COLOR verifier](../part-07/mv-p.md)
-- [One step of the walk towards the farther endpoint](walk1-s.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [One step of the walk towards the farther endpoint](../part-07/walk1-s.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

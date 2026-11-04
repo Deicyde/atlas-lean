@@ -17,9 +17,9 @@ to label $ne$ otherwise, in some internal state and with the stacks unchanged.
 
 - [Stacks of the Hamiltonian path verifier](../part-09/k.md)
 - [Labels of the Hamiltonian path verifier](../part-09/lab.md)
-- [Emptiness test](if-e.md)
+- [Emptiness test](../part-09/if-e.md)
 - [The Hamiltonian path verifier machine](prog.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

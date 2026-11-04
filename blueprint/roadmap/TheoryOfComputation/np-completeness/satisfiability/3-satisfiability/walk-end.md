@@ -21,7 +21,7 @@ variable true, empty token stack and side stack $U$.
 - [The clause-length filter program](prog-2.md)
 - [Filter stacks from two lists](st-2.md)
 - [Walking label for a literal count](wl.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

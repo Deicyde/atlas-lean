@@ -25,8 +25,8 @@ token stack $X$ on top of $R$, and side stack $U$.
 - [The clause-length filter program](prog-2.md)
 - [Filter stacks from two lists](st-2.md)
 - [Walking label for a literal count](wl.md)
-- [A clause's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/cl-rev.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [A clause's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/cl-rev.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [CNF clause](../../../../Logic/propositional-logic/conjunctive-normal-form/cnfclause.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 

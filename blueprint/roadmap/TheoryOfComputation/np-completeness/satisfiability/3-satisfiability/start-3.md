@@ -17,8 +17,8 @@ starts at the start label of the SAT tokenizer.
 
 ## Proof depends on
 
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
-- [Start label of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/start.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
+- [Start label of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/start-2.md)
 
 ## Sources
 

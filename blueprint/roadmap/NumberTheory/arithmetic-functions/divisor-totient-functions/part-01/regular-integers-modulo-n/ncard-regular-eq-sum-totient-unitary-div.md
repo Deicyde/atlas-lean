@@ -17,7 +17,7 @@ totient function.
 
 ## Depends on
 
-- [Unitary divisors](../../part-02/unitary-divisors/unitary-divisors.md)
+- [Unitary divisors](../unitary-divisors/unitary-divisors.md)
 
 ## Sources
 

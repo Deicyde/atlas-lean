@@ -4,6 +4,8 @@ navigation: module
 
 # Tribonacci numbers
 
+- [Tribonacci sequence](tribonacci.md)
+- [Tribonacci sequence with initial values 1, 1, 1](tribonacci-with-initial-values111.md)
 - [Generalized Tribonacci sequence](generalized-tribonacci.md)
 - [Initial value $T_0 = s_0$ of the generalized Tribonacci sequence](generalized-tribonacci-zero.md)
 - [Initial value $T_1 = s_1$ of the generalized Tribonacci sequence](generalized-tribonacci-one.md)
@@ -23,5 +25,3 @@ navigation: module
 - [The two-sided Tribonacci sequence at $-7$](tribonacci-int-neg-seven.md)
 - [Tribonacci recurrence for the two-sided sequence](tribonacci-int-add-three.md)
 - [On nonnegative indices the two-sided Tribonacci sequence is the shifted Tribonacci sequence](tribonacci-int-nat-eq.md)
-- [Tribonacci sequence](tribonacci.md)
-- [Tribonacci sequence with initial values 1, 1, 1](tribonacci-with-initial-values111.md)

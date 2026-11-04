@@ -19,13 +19,13 @@ $2100n < p^2$, then $\nu_p(n) = G(n/p)$.
 
 ## Depends on
 
-- [Continuous Breusch function](../part-07/g9r.md)
+- [Continuous Breusch function](../part-06/g9r.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
-- [The $p$-adic valuation of the weighted product](nu9.md)
+- [The $p$-adic valuation of the weighted product](../part-07/nu9.md)
 
 ## Proof depends on
 
-- [The continuous Breusch function vanishes at small ratios](g9r-vanish-of.md)
+- [The continuous Breusch function vanishes at small ratios](../part-07/g9r-vanish-of.md)
 - [Valuation identity for the weighted product](nu9-eq-sum-g.md)
 
 ## Sources

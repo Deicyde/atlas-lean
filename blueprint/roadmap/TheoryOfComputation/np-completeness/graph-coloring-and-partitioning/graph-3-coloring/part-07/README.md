@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# Length of a flattening to Moving one color code in the 3-COLOR verifier
+# Edge verdict to Interleaved updates of two stacks of the 3-COLOR verifier
 
-- [Length of a flattening](length-flat.md)
-- [Color codes of flattened pairs](col-flat.md)
-- [Color codes of a flattened coloring](col-flat-of-fn.md)
-- [3-colorability by witness bits](colorable-iff.md)
-- [3-COLOR is verified by the witness check](col3-dec-iff.md)
-- [Witness colors of the first $n$ vertices](cols.md)
 - [Edge verdict](edge-ok.md)
 - [Edge-loop verdict](edges-ok.md)
 - [Number of witness colors](length-cols.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Load step of the 3-COLOR verifier](load-s.md)
 - [Edge-loop start of the 3-COLOR verifier](edge-s.md)
 - [Moving one color code in the 3-COLOR verifier](mv-p.md)
+- [One step of the joint walk of the 3-COLOR verifier](walk-s.md)
+- [One step of the walk towards the farther endpoint](walk1-s.md)
+- [The 3-COLOR verifier machine](prog.md)
+- [Start label of the 3-coloring verifier](start.md)
+- [One step of the 3-COLOR verifier](run-one.md)
+- [Interleaved updates of two stacks of the 3-COLOR verifier](update-update-update-update.md)

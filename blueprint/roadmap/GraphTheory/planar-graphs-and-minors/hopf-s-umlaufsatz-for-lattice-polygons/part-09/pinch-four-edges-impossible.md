@@ -17,8 +17,8 @@ lean: StatMech.Onsager.WalkCellLocal.pinch_four_edges_impossible
 - [Primal edge shared by adjacent faces](../../discrete-jordan-curve-theorem-for-the-square-lat/shared-primal-edge.md)
 - [Vertices of a lattice walk from its step directions](../part-01/pos.md)
 - [Unit lattice step in a given direction](../part-01/step-of.md)
-- [Unit cell as a face of the square lattice](cell-face.md)
-- [Simple closed walk as a planar subgraph](walk-p.md)
+- [Unit cell as a face of the square lattice](../part-08/cell-face.md)
+- [Simple closed walk as a planar subgraph](../part-08/walk-p.md)
 
 ## Proof depends on
 
@@ -26,8 +26,8 @@ lean: StatMech.Onsager.WalkCellLocal.pinch_four_edges_impossible
 - [Lower left corner of the unit face at $(a, b)$](../../boundary-contours-in-the-square-lattice/face-corner00.md)
 - [Upper left corner of the unit face at $(a, b)$](../../boundary-contours-in-the-square-lattice/face-corner01.md)
 - [Lower right corner of the unit face at $(a, b)$](../../boundary-contours-in-the-square-lattice/face-corner10.md)
-- [Vertex of a walk as a lattice site](../part-11/pos-site.md)
-- [Neighbours in the image graph are walk predecessor and successor](image-graph-adj-pos-iff.md)
+- [Vertex of a walk as a lattice site](../part-07/pos-site.md)
+- [Neighbours in the image graph are walk predecessor and successor](../part-08/image-graph-adj-pos-iff.md)
 
 ## Sources
 

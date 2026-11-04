@@ -23,7 +23,7 @@ stack unchanged.
 - [The counter unit of the PATH marking machine](one.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 - [Unary counter](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
 
@@ -36,7 +36,7 @@ stack unchanged.
 - [A walk step with an exhausted counter](step-aux-walk-s-nil.md)
 - [Walk step of the PATH marking machine](walk-s.md)
 - [Walking along the marks of the PATH marking machine](walk-run.md)
-- [Reading a symbol as a name bit](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [A single step executes the statement at the current label](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 - [Bit on top of a stack](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bit-of.md)

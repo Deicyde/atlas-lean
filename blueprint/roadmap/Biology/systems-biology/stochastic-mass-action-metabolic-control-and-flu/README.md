@@ -4,9 +4,6 @@ navigation: module
 
 # Stochastic mass action, metabolic control and flux balance
 
-- [Finitely many dual solutions suffice](exists-finset-optimal-fba-dual.md)
-- [The FBA value is piecewise linear](exists-finset-is-least-fba-value.md)
-- [Shadow prices are derivatives when unique](has-fderiv-at-fba-value-of-unique.md)
 - [Stochastic mass-action propensity](propensity.md)
 - [State after one reaction firing](fire.md)
 - [State before one reaction firing](unfire.md)
@@ -49,3 +46,6 @@ navigation: module
 - [Markov chain tree theorem](tree-weight-vec-mul-eq-zero.md)
 - [In-tree weights of an irreducible rate matrix are positive](tree-weight-pos.md)
 - [Uniqueness in the Markov chain tree theorem](eq-smul-tree-weight-of-vec-mul-eq-zero.md)
+- [Finitely many dual solutions suffice](exists-finset-optimal-fba-dual.md)
+- [The FBA value is piecewise linear](exists-finset-is-least-fba-value.md)
+- [Shadow prices are derivatives when unique](has-fderiv-at-fba-value-of-unique.md)

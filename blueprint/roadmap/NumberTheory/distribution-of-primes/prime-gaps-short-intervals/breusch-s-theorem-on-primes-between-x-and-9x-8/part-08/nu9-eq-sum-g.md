@@ -20,25 +20,25 @@ $n = 0$, then $\nu_p(n) = \sum_{j=1}^{b-1} G(n/p^j)$.
 
 ## Depends on
 
-- [Continuous Breusch function](../part-07/g9r.md)
+- [Continuous Breusch function](../part-06/g9r.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
-- [The $p$-adic valuation of the weighted product](nu9.md)
+- [The $p$-adic valuation of the weighted product](../part-07/nu9.md)
 
 ## Proof depends on
 
 - [Upper bound for the scaled factorial argument $N_{10}$](../part-03/n10-le.md)
-- [Scaled factorial argument $N_{10}$](../part-03/n10m.md)
-- [Upper bound for the scaled factorial argument $N_1$](../part-04/n1-le.md)
-- [Scaled factorial argument $N_1$](../part-03/n1m.md)
+- [Scaled factorial argument $N_{10}$](../part-02/n10m.md)
+- [Upper bound for the scaled factorial argument $N_1$](../part-03/n1-le.md)
+- [Scaled factorial argument $N_1$](../part-02/n1m.md)
 - [Upper bound for the scaled factorial argument $N_9$](../part-03/n9-le.md)
-- [Scaled factorial argument N₉](../part-03/n9m.md)
-- [Legendre terms of $N_1$ as real floors](floor-n1.md)
-- [Legendre terms of $N_{10}$ as real floors](floor-n10.md)
-- [Legendre terms of $N_9$ as real floors](floor-n9.md)
-- [Legendre's formula with integer summands](legendre-sum9.md)
-- [One divisor's contribution to the valuation](nu9term.md)
+- [Scaled factorial argument N₉](../part-02/n9m.md)
+- [Legendre terms of $N_1$ as real floors](../part-07/floor-n1.md)
+- [Legendre terms of $N_{10}$ as real floors](../part-07/floor-n10.md)
+- [Legendre terms of $N_9$ as real floors](../part-07/floor-n9.md)
+- [Legendre's formula with integer summands](../part-07/legendre-sum9.md)
+- [One divisor's contribution to the valuation](../part-07/nu9term.md)
 - [The Möbius divisor table for $210$](../part-01/w9.md)
-- [Entries of the divisor table for $210$ divide $210$](../part-02/w9-dvd.md)
+- [Entries of the divisor table for $210$ divide $210$](../part-01/w9-dvd.md)
 - [Divisors in the table for $210$ are positive](../part-01/w9-pos.md)
 
 ## Sources

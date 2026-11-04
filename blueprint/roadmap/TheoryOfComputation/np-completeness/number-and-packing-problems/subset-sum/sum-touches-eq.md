@@ -22,7 +22,7 @@ $0$ otherwise (an index past the end of $b$ counts as an unset bit).
 
 ## Proof depends on
 
-- [Membership in the vertex pairs](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/mem-pairs.md)
+- [Membership in the vertex pairs](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/mem-pairs.md)
 
 ## Sources
 

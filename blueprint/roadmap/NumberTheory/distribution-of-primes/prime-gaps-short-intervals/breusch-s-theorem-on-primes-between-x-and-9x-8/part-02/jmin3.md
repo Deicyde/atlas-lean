@@ -14,7 +14,7 @@ $G_9(963) \ge 3$, and $G_9(j) < 3$ for every natural number $j$ with $10 \le j <
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Proof depends on
 

@@ -4,13 +4,6 @@ navigation: module
 
 # Matroid greedy algorithm
 
-- [Independence system](is-indep-system.md)
-- [A scan inside an independent set keeps everything](matroid-greedy-scan-of-subset.md)
-- [A scan that accepts nothing](matroid-greedy-scan-of-forall-not.md)
-- [Greedy optimality](greedy-optimal.md)
-- [Greedy optimality gives the augmentation axiom](augment-of-greedy-optimal.md)
-- [Greedy-optimal independence systems are matroids](exists-matroid-of-greedy-optimal.md)
-- [Rado–Edmonds theorem](greedy-optimal-iff-exists-matroid.md)
 - [Greedy scan with an independence oracle](matroid-greedy-scan.md)
 - [Greedy algorithm on a matroid](matroid-greedy.md)
 - [Running time of the greedy scan](matroid-greedy-scan-time.md)
@@ -21,3 +14,10 @@ navigation: module
 - [The matroid greedy result is a base](matroid-greedy-is-base.md)
 - [Threshold counts of the matroid greedy result](card-filter-le-matroid-greedy.md)
 - [Optimality of the matroid greedy algorithm](matroid-greedy-optimal.md)
+- [Independence system](is-indep-system.md)
+- [A scan inside an independent set keeps everything](matroid-greedy-scan-of-subset.md)
+- [A scan that accepts nothing](matroid-greedy-scan-of-forall-not.md)
+- [Greedy optimality](greedy-optimal.md)
+- [Greedy optimality gives the augmentation axiom](augment-of-greedy-optimal.md)
+- [Greedy-optimal independence systems are matroids](exists-matroid-of-greedy-optimal.md)
+- [Rado–Edmonds theorem](greedy-optimal-iff-exists-matroid.md)

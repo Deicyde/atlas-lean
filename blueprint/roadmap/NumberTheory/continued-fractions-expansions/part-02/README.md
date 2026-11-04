@@ -4,4 +4,4 @@ navigation: transparent
 
 # Part 2 of 2
 
-- [TRIP-Stern sequences](trip-stern-sequences/README.md)
+- [Strict growth of continued-fraction denominators](of-den-succ-lt-succ-succ.md)

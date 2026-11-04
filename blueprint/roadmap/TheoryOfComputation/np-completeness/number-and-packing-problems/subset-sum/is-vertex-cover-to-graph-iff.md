@@ -25,8 +25,8 @@ $(i_q, j_q)$ satisfies $i_q \in S$ or $j_q \in S$.
 
 - [Adjacency bit of a vertex pair](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/adj-bits.md)
 - [Pair bits are read off by position](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/adj-bits-eq-get-elem.md)
-- [Membership in the vertex pairs](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/mem-pairs.md)
-- [The vertex pairs are listed without repetition](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/pairs-nodup.md)
+- [Membership in the vertex pairs](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/mem-pairs.md)
+- [The vertex pairs are listed without repetition](../../graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/pairs-nodup.md)
 
 ## Sources
 

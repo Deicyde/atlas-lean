@@ -19,7 +19,7 @@ $R$.
 ## Depends on
 
 - [The visit of a diamond](../part-07/hf-diamond.md)
-- [The forward path through the diamonds](hf-path.md)
+- [The forward path through the diamonds](../part-07/hf-path.md)
 - [Tops of the diamonds](../part-01/hp-t.md)
 
 ## Sources

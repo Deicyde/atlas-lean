@@ -11,7 +11,7 @@ lean: Cslib.Complexity.Karp.KGMap.start
 
 ## Depends on
 
-- [Labels of the KG-map machine](lab.md)
+- [Labels of the KG-map machine](../part-06/lab.md)
 
 ## Sources
 

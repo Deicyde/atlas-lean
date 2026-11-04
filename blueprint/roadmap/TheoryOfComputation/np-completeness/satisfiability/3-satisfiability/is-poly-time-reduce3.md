@@ -37,7 +37,7 @@ computable in polynomial time.
 - [The SAT-to-3SAT emitter](emit3.md)
 - [The stacks of the 3SAT emitter](emit3-ks.md)
 - [The SAT-to-3SAT translation](to3.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/binary-encoding-of-cnf-formulas/decode-cnf.md)
 - [Length-prefixed binary code of a CNF formula](../../cook-levin/binary-encoding-of-cnf-formulas/encode-cnf.md)
 - [CNF formula](../../../../Logic/propositional-logic/conjunctive-normal-form/cnf.md)

@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Complexity.SatVerifier.Lookup.stk
+---
+
+# Stack contents of the lookup machine
+
+**Stack contents of the lookup machine.** For lists of symbols $t$, $b$, $s$, $a$, $c$, $v$,
+the assignment of contents to the six stacks of the lookup machine that gives $T$ the list $t$,
+$B$ the list $b$, $S$ the list $s$, $A$ the list $a$, $C$ the list $c$ and $V$ the list $v$.
+
+## Depends on
+
+- [Stacks of the lookup machine](../part-03/k-2.md)
+- [Stack alphabet of the SAT verifier](../part-02/sym.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.SatLookup](../../../../../../sources/v2/CSLibExt.md)

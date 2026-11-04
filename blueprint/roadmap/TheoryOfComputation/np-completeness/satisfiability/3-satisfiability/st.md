@@ -17,7 +17,7 @@ $\mathrm{cl}$, and the two scratch counters are empty.
 
 - [Stacks of the 3SAT emitter](k.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 

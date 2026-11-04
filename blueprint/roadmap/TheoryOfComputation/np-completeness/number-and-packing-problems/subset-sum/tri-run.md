@@ -24,7 +24,7 @@ than $\mathsf{N}$ and $\mathsf{M}$ is as in $S$.
 - [The subset-sum emitter machine](prog.md)
 - [Triangular numbers](tri.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [Unary counter](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
 

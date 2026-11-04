@@ -4,9 +4,6 @@ navigation: module
 
 # Meta-analysis
 
-- [Cochran's heterogeneity statistic Q](cochran-q.md)
-- [Cochran's Q as a squared projection norm](cochran-q-eq-norm-sq.md)
-- [Cochran (1954)](has-law-cochran-q.md)
 - [Fisher's combined statistic](fisher-statistic.md)
 - [Minus twice the log of a uniform variable is chi-square](has-law-neg-two-mul-log-uniform.md)
 - [Fisher's method for combining p-values](has-law-fisher-statistic.md)
@@ -17,3 +14,6 @@ navigation: module
 - [Variance of the inverse-variance-weighted average](sum-sq-mul-inverse-variance-weights.md)
 - [Optimality of inverse-variance weights](inv-sum-inv-le-sum-sq-mul.md)
 - [Cochran's minimum-variance theorem for weighted averages](variance-inverse-variance-le.md)
+- [Cochran's heterogeneity statistic Q](cochran-q.md)
+- [Cochran's Q as a squared projection norm](cochran-q-eq-norm-sq.md)
+- [Cochran (1954)](has-law-cochran-q.md)

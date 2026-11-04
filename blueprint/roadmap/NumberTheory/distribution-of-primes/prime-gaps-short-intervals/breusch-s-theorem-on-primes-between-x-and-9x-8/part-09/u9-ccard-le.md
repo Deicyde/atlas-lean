@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime-counting bound $\pi(x) \le x/3$ for real $x \ge 36$](../part-07/pi-third.md)
+- [Prime-counting bound $\pi(x) \le x/3$ for real $x \ge 36$](../part-06/pi-third.md)
 
 ## Sources
 

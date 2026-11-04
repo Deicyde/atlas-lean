@@ -28,9 +28,9 @@ next one.
 ## Proof depends on
 
 - [A row ends at its right end](get-last-hf-row.md)
-- [A row starts at its left end](head-hf-row.md)
+- [A row starts at its left end](../part-07/head-hf-row.md)
 - [The row of a diamond with its clauses inserted](../part-07/hf-row.md)
-- [Chain condition for a diamond row](is-chain-hf-row.md)
+- [Chain condition for a diamond row](../part-07/is-chain-hf-row.md)
 
 ## Sources
 

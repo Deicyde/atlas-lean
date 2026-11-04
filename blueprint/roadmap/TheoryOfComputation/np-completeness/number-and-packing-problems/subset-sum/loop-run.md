@@ -31,7 +31,7 @@ $Q$.
 - [Numbers chosen by a mask](pick.md)
 - [The SUBSET-SUM verifier program](prog-2.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
@@ -49,7 +49,7 @@ $Q$.
 - [Whether a bit string ends in false](last-f.md)
 - [The verifier rejects an unterminated skipped block](skip-fail.md)
 - [Skipping a number block](skip-run.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Decoding a prefix-coded natural number](../../cook-levin/binary-encoding-of-cnf-formulas/decode-nat-prefix.md)
 - [Prefix-free code of a natural number](../../cook-levin/binary-encoding-of-cnf-formulas/encode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../cook-levin/binary-encoding-of-cnf-formulas/undelimit-eq-some-iff.md)

@@ -13,7 +13,7 @@ lean: StatMech.Onsager.SingleTopRunProof.singleTopRun_of_runCoversTop
 ## Depends on
 
 - [Vertices of a lattice walk from its step directions](../part-01/pos.md)
-- [Single west run covering the top row](single-top-run.md)
+- [Single west run covering the top row](../part-05/single-top-run.md)
 
 ## Sources
 

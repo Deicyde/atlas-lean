@@ -23,7 +23,7 @@ decision problem in NP has a polynomial-time many-one reduction to 3SAT.
 ## Proof depends on
 
 - [3SAT is NP-hard](sat3-dec-np-hard.md)
-- [3SAT is in NP](../../cook-levin/polynomial-time-verifier-for-sat/part-07/sat3-dec-mem-np.md)
+- [3SAT is in NP](../../cook-levin/polynomial-time-verifier-for-sat/part-08/sat3-dec-mem-np.md)
 
 ## Sources
 

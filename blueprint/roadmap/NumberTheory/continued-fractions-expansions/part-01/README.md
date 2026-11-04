@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Continued fractions of alternating series to Strict growth of continued-fraction denominators
+# Part 1 of 2
 
 - [Continued fractions of alternating series](continued-fractions-of-alternating-series/README.md)
 - [Continued fractions of Laurent series](continued-fractions-of-laurent-series/README.md)
@@ -17,10 +17,10 @@ navigation: transparent
 - [Gauss–Kuzmin–Wirsing operator](gauss-kuzmin-wirsing-operator/README.md)
 - [Hata's Farey formula for Euler's constant](hata-s-farey-formula-for-euler-s-constant/README.md)
 - [Lüroth series](l-roth-series/README.md)
-- [Mallows representation of irrational numbers](mallows-representation-of-irrational-numbers/README.md)
 - [Periodic continued fractions](periodic-continued-fractions/README.md)
+- [Mallows representation of irrational numbers](mallows-representation-of-irrational-numbers/README.md)
 - [Pierce expansions](pierce-expansions/README.md)
 - [Polynomial continued fractions and Farey paths](polynomial-continued-fractions-and-farey-paths/README.md)
+- [TRIP-Stern sequences](trip-stern-sequences/README.md)
 - [Laplace Q-polynomial families](is-laplace-qfamily.md)
 - [Solutions of $P u^2 + Q u y + R y^2 = 1$ give convergents of $-Q/(2P)$](lagrange-quadratic-convergent.md)
-- [Strict growth of continued-fraction denominators](of-den-succ-lt-succ-succ.md)

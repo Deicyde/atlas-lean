@@ -23,7 +23,7 @@ complementing map from CLIQUE to INDEPENDENT-SET instances.
 - [Decoding a graph instance](../part-01/decode-kg.md)
 - [Encoding of a graph instance](../part-01/encode-kg.md)
 - [Language of graph instances with a property](../part-01/kg-dec.md)
-- [Unparsable input is rejected](kg-dec-of-decode-kg-eq-none.md)
+- [Unparsable input is rejected](../part-01/kg-dec-of-decode-kg-eq-none.md)
 - [Fixed no-instance](../part-01/no-kg.md)
 - [Vertex pairs in encoding order](../part-01/pairs.md)
 - [The graph encoded by pair bits](../part-01/to-graph.md)

@@ -16,7 +16,7 @@ $CC$, $LC$) to its own copy among the tokenizer stacks of the combined machine.
 
 - [Emitter](emitter.md)
 - [Stacks of the tokenize-then-emit machine](k-3.md)
-- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/k.md)
 
 ## Sources
 

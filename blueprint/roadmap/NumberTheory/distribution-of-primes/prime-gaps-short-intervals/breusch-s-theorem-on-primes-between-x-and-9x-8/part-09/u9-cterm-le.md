@@ -17,16 +17,16 @@ $\nu_9(p, n) \log p \le 3 \log(2100n)$.
 
 ## Depends on
 
-- [The $p$-adic valuation of the weighted product](../part-08/nu9.md)
+- [The $p$-adic valuation of the weighted product](../part-07/nu9.md)
 
 ## Proof depends on
 
-- [Continuous Breusch function](../part-07/g9r.md)
-- [The continuous Breusch function is at most 3](../part-08/g9r-le3.md)
-- [The continuous Breusch function vanishes at small ratios](../part-08/g9r-vanish-of.md)
+- [Continuous Breusch function](../part-06/g9r.md)
+- [The continuous Breusch function is at most 3](../part-07/g9r-le3.md)
+- [The continuous Breusch function vanishes at small ratios](../part-07/g9r-vanish-of.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 - [Value of $10Qn$](../part-08/u9-10-q9.md)
-- [Logarithms of primes are nonnegative](u9-logp-nonneg.md)
+- [Logarithms of primes are nonnegative](../part-08/u9-logp-nonneg.md)
 - [Valuation identity for the weighted product](../part-08/nu9-eq-sum-g.md)
 
 ## Sources

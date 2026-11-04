@@ -12,8 +12,8 @@ hold $x$, as bit symbols, on the formula-bit stack $X$ and leave every other sta
 
 ## Depends on
 
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/k.md)
 
 ## Sources
 

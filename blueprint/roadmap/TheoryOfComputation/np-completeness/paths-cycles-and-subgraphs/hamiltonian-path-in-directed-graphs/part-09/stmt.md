@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 - [Stacks of the Hamiltonian path verifier](k.md)
 - [Labels of the Hamiltonian path verifier](lab.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

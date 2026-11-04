@@ -20,7 +20,7 @@ lean: StatMech.Onsager.SingleTopRunProof.exists_west_run_end
 
 - [A closed walk is not all west steps](exists-step-ne-west.md)
 - [A west step on the top row is followed by west or south](top-west-next.md)
-- [Position after a run of west steps](forward-west-run.md)
+- [Position after a run of west steps](../part-05/forward-west-run.md)
 
 ## Sources
 

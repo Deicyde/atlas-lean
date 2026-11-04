@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Decoding one pair, then the rest to Extending a state makes it grow
+# Decoding one pair, then the rest to Correctness of the reduction from SAT to 3-coloring
 
 - [Decoding one pair, then the rest](decode-es-of-some-some.md)
 - [Decoding the bits of an edge list](decode-es-edge-bits.md)
@@ -10,12 +10,6 @@ navigation: transparent
 - [Graph encoding as vertex count plus edge bits](encode-e-eq.md)
 - [Graph decoding inverts graph encoding](decode-e-encode-e.md)
 - [Graph decoding succeeds only on encodings](encode-e-of-decode-e.md)
-- [The 3-COLOR verifier as a host component](col-verify-comp.md)
-- [3-COLOR is in NP](col3-dec-mem-np.md)
-- [The 3-COLOR emitter](emit-color.md)
-- [The SAT-to-3-COLOR reduction is polynomial-time](is-poly-time-reduce-col.md)
-- [3-COLOR is NP-hard](col3-dec-np-hard.md)
-- [3-COLOR is NP-complete](col3-dec-np-complete.md)
 - [The complete graph on four vertices is not 3-colorable](not-colorable-no-col.md)
 - [Proper 3-colorings of an edge list](col-proper.md)
 - [3-colorability through colorings of the natural numbers](colorable-iff-exists-col-proper.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Adding a literal occurrence takes two new vertices](col-occ-next.md)
 - [Growth of construction states](col-grows.md)
 - [Extending a state makes it grow](col-grows-extend.md)
+- [Well-formed construction states](col-good.md)
+- [Extending a well-formed state keeps it well formed](extend.md)
+- [The construction's edges lie below its vertex count](col-st-em-lt.md)
+- [Colorings that follow an assignment](col-colored.md)
+- [Output of the OR gadget under a proper 3-coloring](sound-col-or.md)
+- [Correctness of the reduction from SAT to 3-coloring](cnf-sat-iff-colorable.md)

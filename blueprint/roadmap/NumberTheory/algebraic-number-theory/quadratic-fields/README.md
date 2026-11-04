@@ -3,9 +3,9 @@
 Gaussian, Eisenstein and ℤ[√d] integers, prime factorization there, imaginary quadratic discriminants, class numbers, Stark–Heegner.
 
 - [Class number congruences for imaginary quadratic fields](class-number-congruences-for-imaginary-quadratic/README.md)
-- [Gaussian primes](gaussian-primes/README.md)
 - [Imaginary quadratic discriminants](imaginary-quadratic-discriminants/README.md)
 - [Norms in imaginary quadratic integer rings](norms-in-imaginary-quadratic-integer-rings/README.md)
+- [Gaussian primes](gaussian-primes/README.md)
 - [Schatunowsky-type theorems](schatunowsky-type-theorems/README.md)
 - [The ring ℤ\[√−2\]](the-ring-2/README.md)
 - [Stark–Heegner theorem](stark-heegner-theorem.md)

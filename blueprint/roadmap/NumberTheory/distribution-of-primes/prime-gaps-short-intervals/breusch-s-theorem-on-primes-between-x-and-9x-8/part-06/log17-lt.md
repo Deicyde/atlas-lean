@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bounding a logarithm above by the exponential](log-lt-of-exp-gt.md)
-- [Exponential lower bound from a power comparison](lt-exp-of-pow-lt.md)
+- [Bounding a logarithm above by the exponential](../part-05/log-lt-of-exp-gt.md)
+- [Exponential lower bound from a power comparison](../part-05/lt-exp-of-pow-lt.md)
 
 ## Sources
 

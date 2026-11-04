@@ -4,7 +4,7 @@ Algebraic models of concurrent processes: labelled transition systems and their 
 
 - [Bisimulation](bisimulation/README.md)
 - [Calculus of communicating systems](calculus-of-communicating-systems/README.md)
-- [Finite-state CCS agents](finite-state-ccs-agents/README.md)
 - [Labelled transition systems](labelled-transition-systems/README.md)
 - [Observational congruence](observational-congruence/README.md)
+- [Finite-state CCS agents](finite-state-ccs-agents/README.md)
 - [π-calculus](calculus/README.md)

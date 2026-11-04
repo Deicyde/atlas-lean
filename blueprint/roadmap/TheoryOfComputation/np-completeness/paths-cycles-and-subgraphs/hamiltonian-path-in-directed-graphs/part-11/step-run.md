@@ -28,14 +28,14 @@ previous vertex $a$ and remaining vertices $q$.
 - [The Hamiltonian path verifier machine](../part-10/prog.md)
 - [One step of the HAMPATH walk](../part-03/step-ok.md)
 - [Bit encoding of an edge list](../../../graph-coloring-and-partitioning/graph-3-coloring/part-01/edge-bits.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
 
 - [Counter comparisons of the HAMPATH verifier](../part-09/ci.md)
-- [First counter of a HAMPATH-verifier comparison](../part-10/ca.md)
-- [Second counter of a HAMPATH-verifier comparison](../part-10/cb.md)
+- [First counter of a HAMPATH-verifier comparison](../part-09/ca.md)
+- [Second counter of a HAMPATH-verifier comparison](../part-09/cb.md)
 - [Run of a HAMPATH-verifier counter comparison](../part-10/cmp-i-run.md)
 - [Exit labels of the counter comparisons](../part-10/cout.md)
 - [Outcome of the HAMPATH verifier's vertex-range comparison](../part-10/cout-an.md)

@@ -4,10 +4,6 @@ navigation: module
 
 # Continued fractions of quadratic irrationals
 
-- [Parity criterion for $\sqrt{d}$ with a given symmetric period](sqrt-has-periodic-cf-exists-iff-parity.md)
-- [Parity criterion for $(1 + \sqrt{d})/2$ with a given symmetric period](half-one-add-sqrt-has-periodic-cf-exists.md)
-- [Existence of $(1 + \sqrt{d})/2$ with a given symmetric period](half-one-add-sqrt-has-periodic-cf-exists-2.md)
-- [Fundamental unit from the period of $\sqrt{d}$](fundamental-unit-eq-convergent-or-cube.md)
 - [Convergent denominators as continuants](convergent-den.md)
 - [The convergent denominator $q_0$ equals $1$](convergent-den-zero.md)
 - [The convergent denominator $q_1$ equals $a_1$](convergent-den-one.md)
@@ -27,3 +23,7 @@ navigation: module
 - [Number of unrealizable parity patterns for $\sqrt{d}$, even length](sqrt-periodic-cf-obstruction-count-of-ev.md)
 - [Every parity pattern is realized by $(1 + \sqrt{d})/2$ for odd period length](half-one-add-sqrt-periodic-cf-obstructio.md)
 - [Unrealizable parity patterns for $(1 + \sqrt d)/2$ with even $l$](half-one-add-sqrt-periodic-cf-obstructio-2.md)
+- [Parity criterion for $\sqrt{d}$ with a given symmetric period](sqrt-has-periodic-cf-exists-iff-parity.md)
+- [Parity criterion for $(1 + \sqrt{d})/2$ with a given symmetric period](half-one-add-sqrt-has-periodic-cf-exists.md)
+- [Existence of $(1 + \sqrt{d})/2$ with a given symmetric period](half-one-add-sqrt-has-periodic-cf-exists-2.md)
+- [Fundamental unit from the period of $\sqrt{d}$](fundamental-unit-eq-convergent-or-cube.md)

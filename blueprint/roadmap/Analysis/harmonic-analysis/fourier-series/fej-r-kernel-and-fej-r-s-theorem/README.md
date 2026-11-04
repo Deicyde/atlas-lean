@@ -4,13 +4,6 @@ navigation: module
 
 # Fejér kernel and Fejér's theorem
 
-- [Partial Fourier sums](partial-fourier-sum.md)
-- [Cesàro–Fourier means](cesaro-fourier-mean.md)
-- [Fourier characters at a difference](fourier-sub-eq.md)
-- [Integrability of a function twisted by a Fourier character](fourier-smul-integrable.md)
-- [Convolution of a function with a Fourier character](fourier-integral-convolution.md)
-- [Cesàro–Fourier means are convolutions with the Fejér kernel](cesaro-mean-eq-fejer-convolution.md)
-- [The Fejér kernel has $L^1$ norm one](integral-norm-fejer-kernel.md)
 - [The Fejér kernel](fejer-kernel.md)
 - [Integrability of Fourier characters](fourier-integrable.md)
 - [Integral of a Fourier character](integral-fourier.md)
@@ -27,5 +20,12 @@ navigation: module
 - [Nonnegativity of the Fejér kernel](fejer-kernel-nonneg.md)
 - [The Fejér kernel as a squared modulus](fejer-kernel-eq-of-real.md)
 - [Properties of the Fejér kernel](fejer-kernel-properties.md)
+- [Partial Fourier sums](partial-fourier-sum.md)
+- [Cesàro–Fourier means](cesaro-fourier-mean.md)
+- [Fourier characters at a difference](fourier-sub-eq.md)
+- [Integrability of a function twisted by a Fourier character](fourier-smul-integrable.md)
+- [Convolution of a function with a Fourier character](fourier-integral-convolution.md)
+- [Cesàro–Fourier means are convolutions with the Fejér kernel](cesaro-mean-eq-fejer-convolution.md)
+- [The Fejér kernel has $L^1$ norm one](integral-norm-fejer-kernel.md)
 - [Quantitative Fejér theorem](cesaro-mean-uniform-bound.md)
 - [Fejér's theorem: uniform convergence of Cesàro–Fourier means](fejer-uniform-convergence.md)

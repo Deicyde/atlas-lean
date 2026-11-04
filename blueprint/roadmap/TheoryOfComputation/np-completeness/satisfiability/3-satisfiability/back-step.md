@@ -21,7 +21,7 @@ stack $s$ on top of $R$, and side stack $M$.
 - [Labels of the 3SAT clause-length filter](lab-2.md)
 - [The clause-length filter program](prog-2.md)
 - [Filter stacks from two lists](st-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

@@ -16,8 +16,8 @@ and in the vertex-cover mode $D$ holds $n - k$ by then.
 
 ## Depends on
 
-- [Stacks of the CLIQUE to VERTEX-COVER reduction machine](k.md)
-- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
+- [Stacks of the CLIQUE to VERTEX-COVER reduction machine](../part-06/k.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](../part-06/mode.md)
 
 ## Sources
 

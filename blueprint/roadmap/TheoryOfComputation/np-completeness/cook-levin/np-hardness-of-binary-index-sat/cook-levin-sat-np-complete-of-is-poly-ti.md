@@ -18,7 +18,7 @@ reduction to it.
 
 - [Polynomial-time many-one reduction](../binary-encoding-of-cnf-formulas/poly-many-one-red.md)
 - [SAT as a decision problem](../binary-encoding-of-cnf-formulas/sat-dec.md)
-- [The SAT verifier](../polynomial-time-verifier-for-sat/part-07/sat-verifier.md)
+- [The SAT verifier](../polynomial-time-verifier-for-sat/part-01/sat-verifier.md)
 - [Bitstring encodings](../../../complexity-classes/the-classes-p-np-and-conp/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../complexity-classes/the-classes-p-np-and-conp/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../complexity-classes/the-classes-p-np-and-conp/bit-decode-bit-encode.md)
@@ -35,7 +35,7 @@ reduction to it.
 ## Proof depends on
 
 - [Every NP problem reduces to binary-index CNF-SAT](sat-dec-np-hard.md)
-- [SAT is in NP if its verifier is polynomial-time](../polynomial-time-verifier-for-sat/part-08/sat-dec-mem-np-of-is-poly-time.md)
+- [SAT is in NP if its verifier is polynomial-time](../polynomial-time-verifier-for-sat/part-01/sat-dec-mem-np-of-is-poly-time.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ in its place; in either case it then goes to $\ell$.
 
 - [Stacks of the PATH marking machine](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

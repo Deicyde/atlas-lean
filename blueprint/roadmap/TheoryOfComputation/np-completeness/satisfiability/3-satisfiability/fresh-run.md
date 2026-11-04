@@ -33,7 +33,7 @@ $\mathrm{true}, \mathrm{true}$, and for $s$ true adds one to $U$.
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
 - [Fresh variable indices](fresh.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Binary code of a literal](../../cook-levin/binary-encoding-of-cnf-formulas/encode-lit.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 

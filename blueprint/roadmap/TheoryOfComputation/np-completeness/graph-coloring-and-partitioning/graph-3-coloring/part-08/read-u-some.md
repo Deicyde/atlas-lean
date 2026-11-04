@@ -19,15 +19,15 @@ exactly $k + j$ units, and every other stack as at the start.
 
 - [Stacks of the 3-COLOR verifier](../part-07/k.md)
 - [Labels of the 3-COLOR verifier](../part-07/lab.md)
-- [The 3-COLOR verifier machine](prog.md)
+- [The 3-COLOR verifier machine](../part-07/prog.md)
 - [Unary reader of the 3-COLOR verifier](../part-07/read-u.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [Unary counter](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
 
 ## Proof depends on
 
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 
 ## Sources

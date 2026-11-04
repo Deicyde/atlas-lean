@@ -26,8 +26,8 @@ The clause marker resets the literal count, and each literal then advances it.
 - [The clause-length filter program](prog-2.md)
 - [Filter stacks from two lists](st-2.md)
 - [Walking label for a literal count](wl.md)
-- [A clause's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/cl-rev.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [A clause's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/cl-rev.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [CNF clause](../../../../Logic/propositional-logic/conjunctive-normal-form/cnfclause.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
@@ -37,7 +37,7 @@ The clause marker resets the literal count, and each literal then advances it.
 - [The filter walks a clause's literals within the cap](lits-ok.md)
 - [Label after a token](tgt.md)
 - [One step of the clause-length walk on a token](walk-step.md)
-- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/lit-rev.md)
+- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/lit-rev.md)
 
 ## Sources
 

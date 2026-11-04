@@ -26,13 +26,13 @@ encoding of $d$ followed by $q$, and $\mathsf{Z}$ is empty.
 - [Labels of the Hamiltonian path verifier](../part-09/lab.md)
 - [Witness encoding](../part-01/enc-w.md)
 - [The Hamiltonian path verifier machine](../part-10/prog.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 - [Unary counter](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
 
 ## Proof depends on
 
-- [HAMPATH-verifier unary comparison with the counter restored](cmp-n-run.md)
+- [HAMPATH-verifier unary comparison with the counter restored](../part-10/cmp-n-run.md)
 - [The witness encoding respects concatenation](../part-02/enc-w-append.md)
 - [Witness encoding of a nonempty list](../part-01/enc-w-cons.md)
 - [One step of the emptiness test](../part-10/if-e-run.md)

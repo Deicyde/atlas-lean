@@ -14,7 +14,7 @@ SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, re
 ## Depends on
 
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

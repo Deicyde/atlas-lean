@@ -14,11 +14,11 @@ grid $G$-function for $k = 9$ satisfies $G_9(18900\,o + r) = G_9(r)$.
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](../part-02/g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Proof depends on
 
-- [One-period shift of $G_9$](g9-shift.md)
+- [One-period shift of $G_9$](../part-06/g9-shift.md)
 
 ## Sources
 

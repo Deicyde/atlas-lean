@@ -2,8 +2,6 @@
 
 Fine structure of real functions: Blumberg's theorem, continuous nowhere-differentiable functions (Weierstrass, Takagi), the rising sun lemma, approximate continuity, midpoint convexity, and the Cauchy, exponential and almost-additive functional equations including Hyers–Ulam stability.
 
-- [A continuous nowhere differentiable function](exists-continuous-nowhere-differentiable.md)
-- [A strict liminf gap at every finite value forces countably many finite values](countable-set-of-lt-top-of-lt-liminf.md)
 - [Almost additive functions](almost-additive-functions/README.md)
 - [Approximate derivatives and monotonicity](approximate-derivatives-and-monotonicity/README.md)
 - [Exponential functional equation](exponential-functional-equation/README.md)
@@ -16,6 +14,8 @@ Fine structure of real functions: Blumberg's theorem, continuous nowhere-differe
 - [Takagi function](takagi-function/README.md)
 - [Trapezoidal cutoff functions](trapezoidal-cutoff-functions/README.md)
 - [Weierstrass function](weierstrass-function/README.md)
+- [A continuous nowhere differentiable function](exists-continuous-nowhere-differentiable.md)
+- [A strict liminf gap at every finite value forces countably many finite values](countable-set-of-lt-top-of-lt-liminf.md)
 - [Blumberg's theorem](blumberg-theorem.md)
 - [Continuous midpoint-convex functions are convex](convex-on-ioo-of-continuous-on-of-midpoi.md)
 - [Discontinuous subadditive multiplicative functions on $\mathbb{C}$](exists-discontinuous-subadditive-multipl.md)

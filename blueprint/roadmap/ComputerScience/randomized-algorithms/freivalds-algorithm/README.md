@@ -4,12 +4,6 @@ navigation: module
 
 # Freivalds' algorithm
 
-- [Output distribution of repeated Freivalds trials](freivalds-repeat-law.md)
-- [Uniform mass of a Freivalds seed history](freivalds-history-point-mass.md)
-- [Counting accepted histories of repeated Freivalds trials](freivalds-repeat-acceptance-card.md)
-- [Acceptance probability of repeated Freivalds trials](freivalds-repeat-law-acceptance-power.md)
-- [Completeness of repeated Freivalds trials](freivalds-repeat-law-complete.md)
-- [Soundness of repeated Freivalds trials](freivalds-repeat-law-sound.md)
 - [Freivalds trial](freivalds-trial.md)
 - [Cost of the Freivalds trial](freivalds-trial-time.md)
 - [Matrix of a Freivalds input](freivalds-matrix.md)
@@ -29,6 +23,12 @@ navigation: module
 - [Completeness of the repeated Freivalds test on fixed seeds](freivalds-repeat-complete.md)
 - [Repeated Freivalds test with no trials](freivalds-repeat-zero.md)
 - [Repeated Freivalds test on empty matrices](freivalds-repeat-empty.md)
+- [Output distribution of repeated Freivalds trials](freivalds-repeat-law.md)
+- [Uniform mass of a Freivalds seed history](freivalds-history-point-mass.md)
+- [Counting accepted histories of repeated Freivalds trials](freivalds-repeat-acceptance-card.md)
+- [Acceptance probability of repeated Freivalds trials](freivalds-repeat-law-acceptance-power.md)
+- [Completeness of repeated Freivalds trials](freivalds-repeat-law-complete.md)
+- [Soundness of repeated Freivalds trials](freivalds-repeat-law-sound.md)
 - [The sharp Freivalds example has a wrong product](freivalds-one-wrong.md)
 - [The sharp Freivalds example accepts exactly the zero seed](freivalds-trial-one-accept-iff.md)
 - [The sharp Freivalds example has exactly one accepted seed](freivalds-trial-one-acceptance-card.md)

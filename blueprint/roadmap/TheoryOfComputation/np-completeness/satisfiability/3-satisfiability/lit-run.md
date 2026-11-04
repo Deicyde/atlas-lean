@@ -32,9 +32,9 @@ stacks, top first.
 - [The SAT-to-3SAT emitter machine](prog.md)
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
-- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/lit-rev.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/lit-rev.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/binary-encoding-of-cnf-formulas/encode-clause.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 

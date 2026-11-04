@@ -1,0 +1,30 @@
+---
+article_id: af_5f098eee1d18430a95fe0985
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.theta34_base
+---
+
+# Primorial bound $3.4^m$ below $133$
+
+**Primorial bound $3.4^m$ below $133$.** For a natural number $n$ let $n\#$ be the
+primorial, the product of the primes $p \le n$. For every natural number $m < 133$,
+$10^m \cdot m\# \le 34^m$.
+
+Proved by covering $0 \le m \le 132$ with finitely many intervals $[a, b]$ and checking
+$10^a \cdot b\# \le 34^a$ for each; this gives the bound on $[a, b]$ because $n\#$ is
+nondecreasing in $n$ and $10 \le 34$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Extending the primorial bound leftward across an interval](../part-04/theta34-of-interval.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../sources/v2/MathlibExt.md)

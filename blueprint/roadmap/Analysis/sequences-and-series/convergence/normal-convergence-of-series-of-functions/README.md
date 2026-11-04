@@ -4,13 +4,6 @@ navigation: module
 
 # Normal convergence of series of functions
 
-- [Normal convergence gives summable real sup norms](summable-to-real-sup-norm-on.md)
-- [Normal convergence implies pointwise absolute convergence](summable-norm.md)
-- [Local normal convergence implies pointwise absolute convergence](summable-norm-2.md)
-- [Weierstrass M-test: normal convergence implies uniform convergence](tendsto-uniformly-on-tsum-nat.md)
-- [Derivative series of a locally normally convergent holomorphic series](deriv.md)
-- [Local normal convergence implies locally uniform convergence](tendsto-locally-uniformly-on-tsum-nat.md)
-- [Termwise differentiation of locally normally convergent holomorphic series](has-deriv-at-tsum.md)
 - [Extended supremum norm on a set](sup-norm-on.md)
 - [Normal convergence of a series of functions on a set](converges-normally-on.md)
 - [Supremum norm over the empty set](sup-norm-on-empty.md)
@@ -24,3 +17,10 @@ navigation: module
 - [Local normal convergence on the empty set](converges-locally-normally-on-empty.md)
 - [Local normal convergence of the zero series](converges-locally-normally-on-zero.md)
 - [Local normal convergence passes to subsets](mono-2.md)
+- [Normal convergence gives summable real sup norms](summable-to-real-sup-norm-on.md)
+- [Normal convergence implies pointwise absolute convergence](summable-norm.md)
+- [Local normal convergence implies pointwise absolute convergence](summable-norm-2.md)
+- [Weierstrass M-test: normal convergence implies uniform convergence](tendsto-uniformly-on-tsum-nat.md)
+- [Derivative series of a locally normally convergent holomorphic series](deriv.md)
+- [Local normal convergence implies locally uniform convergence](tendsto-locally-uniformly-on-tsum-nat.md)
+- [Termwise differentiation of locally normally convergent holomorphic series](has-deriv-at-tsum.md)

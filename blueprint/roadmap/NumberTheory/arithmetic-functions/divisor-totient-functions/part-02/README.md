@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Unitary divisors to Values of n + φ(n)
+# Part 2 of 2
 
-- [Unitary divisors](unitary-divisors/README.md)
-- [Values of n + φ(n)](values-of-n-n/README.md)
+- [Gronwall's theorem](gronwall-sigma-limsup.md)
+- [Relatively prime subset counts](mobius-formula-relatively-prime-subset-c.md)

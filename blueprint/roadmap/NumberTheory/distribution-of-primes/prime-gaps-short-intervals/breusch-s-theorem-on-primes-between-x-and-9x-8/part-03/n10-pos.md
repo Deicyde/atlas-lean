@@ -15,12 +15,12 @@ and $m$ divides $Q_9$, then $N_{10}(m, n) \ge 1$.
 
 ## Depends on
 
-- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Scaled factorial argument $N_{10}$](../part-02/n10m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 
 ## Proof depends on
 
-- [Quotients of Q₉ by its divisors are positive](q9div-pos.md)
+- [Quotients of Q₉ by its divisors are positive](../part-02/q9div-pos.md)
 
 ## Sources
 

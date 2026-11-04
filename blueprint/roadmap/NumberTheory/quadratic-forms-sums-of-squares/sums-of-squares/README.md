@@ -3,8 +3,8 @@
 Two-, three- and four-square theorems, Jacobi-type counts, Gaussian and Hurwitz integer methods, x²+2y² and similar representations.
 
 - [Geometric sums as sums of two squares](geometric-sums-as-sums-of-two-squares/README.md)
-- [Jacobi's two-square theorem](jacobi-s-two-square-theorem/README.md)
 - [Representation numbers of sums of squares](representation-numbers-of-sums-of-squares/README.md)
+- [Jacobi's two-square theorem](jacobi-s-two-square-theorem/README.md)
 - [Representations by squares and triangular numbers](representations-by-squares-and-triangular-number/README.md)
 - [Representations by x² + 2y²](representations-by-x-2y/README.md)
 - [Sums of four squares via Hurwitz continued fractions](sums-of-four-squares-via-hurwitz-continued-fract/README.md)

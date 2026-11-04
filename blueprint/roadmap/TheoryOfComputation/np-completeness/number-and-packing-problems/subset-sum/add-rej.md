@@ -24,7 +24,7 @@ the machine reaches the rejecting label within $|p| + 1$ steps.
 - [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [Whether a bit string ends in false](last-f.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Self-delimiting form of a bitstring](../../../complexity-classes/the-classes-p-np-and-conp/delimit.md)
 
 ## Proof depends on
@@ -34,7 +34,7 @@ the machine reaches the rejecting label within $|p| + 1$ steps.
 - [Carry bit of a full adder](carry.md)
 - [The SUBSET-SUM verifier program](prog-2.md)
 - [Rejecting in one step](rej-one.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [A single step executes the statement at the current label](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)

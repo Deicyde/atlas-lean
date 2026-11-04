@@ -26,7 +26,7 @@ $c + 1$, previous vertex $a$ and remaining vertices $q$.
 - [Stack layout between vertex steps](lay.md)
 - [Stack layout during a vertex step](mid.md)
 - [The Hamiltonian path verifier machine](../part-10/prog.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on

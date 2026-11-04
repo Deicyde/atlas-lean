@@ -20,17 +20,17 @@ replacing the occurrence stack $D$ by the reverse of $L$ followed by the old con
 
 - [Stacks of the 3-coloring emitter](../part-03/k.md)
 - [Control labels of the 3-coloring emitter](../part-03/lab.md)
-- [Quiescent states of the 3-COLOR emitter](../part-04/ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Stacks of a quiescent state](../part-04/stk.md)
 - [Walk tokens](../part-04/is-tok.md)
-- [The 3-COLOR emitter machine](../part-04/prog.md)
+- [The 3-COLOR emitter machine](../part-03/prog.md)
 - [Stack alphabets of the 3-coloring emitter](../part-03/untitled.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on
 
-- [Literal-marker test](../part-04/is-lit.md)
+- [Literal-marker test](../part-03/is-lit.md)
 - [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 
 ## Sources

@@ -14,7 +14,7 @@ Breusch grid function $G_9$ satisfies $G_9(j) = 0$.
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](../part-02/g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Sources
 

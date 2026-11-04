@@ -18,7 +18,7 @@ followed in $p'$ by some vertex $w$.
 ## Depends on
 
 - [Hamiltonian paths](../part-01/is-ham-path.md)
-- [Deleting the clause vertices from a path](drop-clauses.md)
+- [Deleting the clause vertices from a path](../part-08/drop-clauses.md)
 - [Arcs of the HAMPATH construction](../part-01/ham-edges.md)
 - [Distinct variables of a formula](../part-01/ham-vars.md)
 - [Tops of the diamonds](../part-01/hp-t.md)

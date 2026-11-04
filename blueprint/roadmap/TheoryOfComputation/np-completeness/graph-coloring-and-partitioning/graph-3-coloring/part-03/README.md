@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# Well-formed construction states to Successor label of a copy site
+# Correctness of the SAT to 3-COLOR map on bit strings to Quiescent states of the 3-COLOR emitter
 
-- [Well-formed construction states](col-good.md)
-- [Extending a well-formed state keeps it well formed](extend.md)
-- [The construction's edges lie below its vertex count](col-st-em-lt.md)
-- [Colorings that follow an assignment](col-colored.md)
-- [Output of the OR gadget under a proper 3-coloring](sound-col-or.md)
-- [Correctness of the reduction from SAT to 3-coloring](cnf-sat-iff-colorable.md)
 - [Correctness of the SAT to 3-COLOR map on bit strings](sat-dec-eq-col3-dec-reduce-col.md)
 - [Bit encoding of an edge](e-b.md)
 - [Bits pushed for a list of edges](out.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Constant block of a copy site](top.md)
 - [Control labels of the 3-coloring emitter](lab.md)
 - [Successor label of a copy site](nxt.md)
+- [Literal-marker test](is-lit.md)
+- [Reading unary units](unit-of.md)
+- [Bits of the palette triangle](pal.md)
+- [The 3-COLOR emitter machine](prog.md)
+- [Start label of the 3-coloring emitter](start.md)
+- [Quiescent states of the 3-COLOR emitter](ms.md)

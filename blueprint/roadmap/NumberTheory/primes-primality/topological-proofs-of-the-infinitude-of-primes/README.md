@@ -4,8 +4,6 @@ navigation: module
 
 # Topological proofs of the infinitude of primes
 
-- [A nonempty set of primes is dense in the comaximal space iff it is infinite](infinite-iff-dense-macias-topology-of-su.md)
-- [Coprime arithmetic progressions are dense in the comaximal space](dense-macias-topology-arithmetic-progres.md)
 - [Positive integers coprime to a given integer](coprime-set.md)
 - [Macías's coprime basis](macias-basis.md)
 - [Macías's coprime topology](macias-topology.md)
@@ -17,3 +15,5 @@ navigation: module
 - [Infinitude of the primes as density](infinite-primes-iff-dense-prime-set.md)
 - [Density of the primes passes from the subspace without 1](dense-prime-set-of-dense-prime-set.md)
 - [The primes are dense in the coprime topology without 1](dense-prime-set.md)
+- [A nonempty set of primes is dense in the comaximal space iff it is infinite](infinite-iff-dense-macias-topology-of-su.md)
+- [Coprime arithmetic progressions are dense in the comaximal space](dense-macias-topology-arithmetic-progres.md)

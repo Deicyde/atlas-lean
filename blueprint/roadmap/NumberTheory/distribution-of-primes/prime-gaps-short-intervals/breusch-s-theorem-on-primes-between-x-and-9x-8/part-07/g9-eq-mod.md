@@ -14,7 +14,7 @@ $G$-function for $k = 9$ satisfies $G_9(j) = G_9(j \bmod 18900)$.
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](../part-02/g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Proof depends on
 

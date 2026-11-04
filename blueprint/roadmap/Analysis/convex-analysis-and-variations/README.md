@@ -2,7 +2,6 @@
 
 Convex functions and sets in analysis and optimization: Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry.
 
-- [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
 - [Ekeland variational principle](ekeland-variational-principle/README.md)
 - [Euler–Lagrange equation](euler-lagrange-equation/README.md)
 - [Fenchel–Moreau theorem](fenchel-moreau-theorem/README.md)
@@ -13,4 +12,5 @@ Convex functions and sets in analysis and optimization: Fenchel conjugates, pola
 - [Polar sets](polar-sets/README.md)
 - [Stampacchia's theorem](stampacchia-s-theorem/README.md)
 - [Tikhonov regularization](tikhonov-regularization/README.md)
+- [Convexity via the tangent-plane inequality](convex-on-iff-forall-le-add-fderiv-withi.md)
 - [Karush–Kuhn–Tucker conditions for inequality constraints](karush-kuhn-tucker-inequality.md)

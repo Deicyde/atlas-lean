@@ -38,7 +38,7 @@ target $1$, is computable in polynomial time.
 - [Start label of the subset-sum emitter](start.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [The VERTEX-COVER to SUBSET-SUM machine as a host component](emit-sscomp.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 

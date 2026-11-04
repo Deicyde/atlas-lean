@@ -23,7 +23,7 @@ parked marks.
 - [Labels of the PATH marking machine](lab.md)
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

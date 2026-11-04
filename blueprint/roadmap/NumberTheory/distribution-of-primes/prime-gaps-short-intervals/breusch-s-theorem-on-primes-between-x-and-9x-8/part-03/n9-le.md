@@ -15,7 +15,7 @@ is taken to be $0$. Then $N_9(m, n) \le 10 Q_9 n$ for all natural numbers $m$ an
 
 ## Depends on
 
-- [Scaled factorial argument N₉](n9m.md)
+- [Scaled factorial argument N₉](../part-02/n9m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 
 ## Sources

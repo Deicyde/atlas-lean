@@ -6,8 +6,6 @@ navigation: module
 
 - [Dirichlet series of the gcd-sum function](dirichlet-series-gcd-sum.md)
 - [The gcd-sum as a divisor sum of totients](gcd-sum-eq-totient-sum.md)
-- [Mean square of the error term for gcd-sum moments under RH](gcd-sum-mean-pow-error-sq-integral-le.md)
-- [Integral of the error term for gcd-sum moments under RH](gcd-sum-mean-pow-error-integral-le.md)
 - [The mean gcd-sum function](gcd-sum-mean.md)
 - [The mean gcd-sum function at $1$](gcd-sum-mean-one.md)
 - [The mean gcd-sum function at $2$](gcd-sum-mean-two.md)
@@ -23,3 +21,5 @@ navigation: module
 - [Lemma 3](riemann-zeta-twelfth-moment-asymptotic.md)
 - [A weighted fourth-moment bound for $\zeta$ on the critical line](riemann-zeta-fourth-moment-div-le.md)
 - [Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height](exists-riemann-zeta-norm-le-exp-loglog-s.md)
+- [Mean square of the error term for gcd-sum moments under RH](gcd-sum-mean-pow-error-sq-integral-le.md)
+- [Integral of the error term for gcd-sum moments under RH](gcd-sum-mean-pow-error-integral-le.md)

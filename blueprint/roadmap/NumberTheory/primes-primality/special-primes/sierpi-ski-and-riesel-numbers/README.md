@@ -4,8 +4,6 @@ navigation: module
 
 # Sierpiński and Riesel numbers
 
-- [Narayana numbers that are Riesel numbers](is-riesel-number-narayana-cows-sequence.md)
-- [Infinitely many Narayana numbers are Sierpiński numbers](infinite-set-of-is-sierpinski-number-nar.md)
 - [Composite numbers from Mersenne shifts of an arithmetic progression](exists-arith-prog-sierpinski-add-mersenn.md)
 - [Sierpiński number](is-sierpinski-number.md)
 - [Riesel number](is-riesel-number.md)
@@ -34,3 +32,5 @@ navigation: module
 - [Binary repstrings of 659 that are Sierpiński numbers](is-sierpinski-number-repstring-659.md)
 - [Binary repstrings of 659 that are Riesel numbers](is-riesel-number-repstring-659.md)
 - [Theorem 4.6 (Sierpiński and Riesel repstring coverings correspond)](sierpinski-covering-data-repstring-iff-r.md)
+- [Narayana numbers that are Riesel numbers](is-riesel-number-narayana-cows-sequence.md)
+- [Infinitely many Narayana numbers are Sierpiński numbers](infinite-set-of-is-sierpinski-number-nar.md)

@@ -18,7 +18,7 @@ numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ divides 
 ## Proof depends on
 
 - [The greatest common unitary divisor is a common unitary divisor](gcd-unitary-mem-unitary-divisors.md)
-- [Unitary divisors](../../part-02/unitary-divisors/unitary-divisors.md)
+- [Unitary divisors](../unitary-divisors/unitary-divisors.md)
 
 ## Sources
 

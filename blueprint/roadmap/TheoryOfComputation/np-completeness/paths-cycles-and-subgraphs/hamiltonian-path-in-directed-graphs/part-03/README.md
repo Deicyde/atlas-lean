@@ -2,25 +2,25 @@
 navigation: transparent
 ---
 
-# HAMPATH is verified with quadratic-size witnesses to Out-neighbours of a row vertex in Sipser's graph
+# HAMPATH is verified with quadratic-size witnesses to The frame of a diamond
 
 - [HAMPATH is verified with quadratic-size witnesses](ham-path-dec-iff.md)
 - [One step of the HAMPATH walk](step-ok.md)
 - [The walk check of the HAMPATH verifier](walk-ok.md)
 - [The walk check after the first vertex](walk-ok-iff.md)
 - [The machine's walk is the check](walk-ok-eq.md)
-- [The HAMPATH verifier as a host component](ham-verify-comp.md)
-- [HAMPATH is in NP](ham-path-dec-mem-np.md)
-- [The HAMPATH emitter](emit-ham.md)
-- [SAT ≤ HAMPATH is polynomial-time](is-poly-time-reduce-ham.md)
-- [HAMPATH is NP-hard](ham-path-dec-np-hard.md)
-- [HAMPATH is NP-complete](ham-path-dec-np-complete.md)
-- [The construction has a Hamiltonian path iff the formula is satisfiable](exists-is-ham-path-iff-cnf-sat.md)
-- [HAMPATH on an encoded instance](ham-path-dec-encode-p.md)
-- [HAMPATH rejects the fixed no-instance](ham-path-dec-no-ham.md)
-- [SAT ≤ HAMPATH preserves membership](sat-dec-eq-ham-path-dec-reduce-ham.md)
 - [Tops of distinct diamonds are at least $3m + 2$ apart](hp-t-sep.md)
 - [Arcs of the Hamiltonian path construction](mem-ham-edges.md)
 - [Classification of the arcs of Sipser's graph](ham-edges-cases.md)
 - [In-neighbours of a row vertex in Sipser's graph](ham-edges-to-hp-r.md)
 - [Out-neighbours of a row vertex in Sipser's graph](ham-edges-from-hp-r.md)
+- [In-neighbours of a clause vertex in Sipser's graph](ham-edges-to-clause.md)
+- [Out-neighbours of a clause vertex in Sipser's graph](ham-edges-from-clause.md)
+- [A Hamiltonian path visits every vertex](mem-of-is-ham-path.md)
+- [Consecutive vertices of a Hamiltonian path of Sipser's graph form arcs](ham-edges-of-infix.md)
+- [A Hamiltonian path of Sipser's graph does not cross a diamond through one row end](ham-path-row-end-false.md)
+- [A separator is next to each of its row neighbours on a Hamiltonian path](ham-path-separator-false.md)
+- [A clause detour returns to its own pair (Sipser's separator argument)](ham-path-pair-false.md)
+- [Hamiltonian paths of Sipser's graph have normal detours](detours-normal-of-is-ham-path.md)
+- [The HAMPATH instance as unary blocks and arc bits](to-ham-eq.md)
+- [The frame of a diamond](frame-e.md)

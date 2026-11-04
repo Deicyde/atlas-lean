@@ -18,7 +18,7 @@ the booleans; the exit label is the extra label indexed by true.
 
 ## Proof depends on
 
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
 
 ## Sources
 

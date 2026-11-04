@@ -4,6 +4,14 @@ navigation: module
 
 # Halting problem and Rice's theorem
 
+- [The halting problem is undecidable by multi-stack machines](not-tm2-decidable-halting.md)
+- [The halting problem is recognizable by multi-stack machines](tm2-recognizable-halting.md)
+- [The halting problem is not co-recognizable by multi-stack machines](not-tm2-co-recognizable-halting.md)
+- [Some multi-stack machine has an undecidable halting set](exists-not-tm2-decidable-tm2-halts-on.md)
+- [Rice's theorem for multi-stack machines](rice-tm2.md)
+- [Mapping reductions are computed by multi-stack machines](many-one-reducible-iff-exists-tm2.md)
+- [Decidability transfers along mapping reductions](tm2-decidable-of-many-one-reducible.md)
+- [Recognizability transfers along mapping reductions](tm2-recognizable-of-many-one-reducible.md)
 - [Rice's theorem for partial recursive codes](not-tm2-decidable-of-nontrivial.md)
 - [Rice's theorem for languages](not-tm2-decidable-language.md)
 - [Acceptance by a code](accepts.md)
@@ -20,11 +28,3 @@ navigation: module
 - [A single code for the regularity reduction function](exists-code-regular-red-fun.md)
 - [Halting reduces to regularity of halting sets](many-one-reducible-halts-regular-domain.md)
 - [Regularity of halting sets is undecidable](not-tm2-decidable-regular-domain.md)
-- [The halting problem is undecidable by multi-stack machines](not-tm2-decidable-halting.md)
-- [The halting problem is recognizable by multi-stack machines](tm2-recognizable-halting.md)
-- [The halting problem is not co-recognizable by multi-stack machines](not-tm2-co-recognizable-halting.md)
-- [Some multi-stack machine has an undecidable halting set](exists-not-tm2-decidable-tm2-halts-on.md)
-- [Rice's theorem for multi-stack machines](rice-tm2.md)
-- [Mapping reductions are computed by multi-stack machines](many-one-reducible-iff-exists-tm2.md)
-- [Decidability transfers along mapping reductions](tm2-decidable-of-many-one-reducible.md)
-- [Recognizability transfers along mapping reductions](tm2-recognizable-of-many-one-reducible.md)

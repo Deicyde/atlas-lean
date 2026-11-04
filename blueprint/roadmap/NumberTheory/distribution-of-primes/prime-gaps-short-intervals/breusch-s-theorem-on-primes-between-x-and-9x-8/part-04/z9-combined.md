@@ -19,15 +19,15 @@ $\sum_{(d, \mu(d)) \in w_9} \mu(d) \bigl(f(10N/d) - f(9N/d) - f(N/d)\bigr) =
 ## Depends on
 
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
-- [Main Stirling term](fmain.md)
+- [Main Stirling term](../part-03/fmain.md)
 - [The Möbius divisor table for $210$](../part-01/w9.md)
 
 ## Proof depends on
 
-- [The constant $K_9$](k9.md)
-- [Value of Q₉](../part-03/q9-eq.md)
-- [Q₉ is positive](../part-03/q9-pos.md)
-- [Closed form of the Möbius-weighted main-term sum](z9-value.md)
+- [The constant $K_9$](../part-03/k9.md)
+- [Value of Q₉](../part-02/q9-eq.md)
+- [Q₉ is positive](../part-02/q9-pos.md)
+- [Closed form of the Möbius-weighted main-term sum](../part-03/z9-value.md)
 
 ## Sources
 

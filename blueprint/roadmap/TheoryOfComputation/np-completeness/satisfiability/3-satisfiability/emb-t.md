@@ -18,8 +18,8 @@ stacks of the combined machine, with symbols left unchanged.
 - [Emitter](emitter.md)
 - [Stacks of the tokenize-then-emit machine](k-3.md)
 - [Alphabets of the tokenize-then-emit machine](untitled-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/k.md)
 - [Stack embedding](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/semb.md)
 
 ## Proof depends on

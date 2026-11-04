@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Brooks' theorem to Petersen coloring conjecture
+# Part 1 of 2
 
-- [Brooks' theorem](brooks.md)
 - [Centered colorings](centered-colorings/README.md)
 - [Chromatic number of (0,2)-graphs](chromatic-number-of-0-2-graphs/README.md)
 - [Chromatic number of wheel-free graphs](chromatic-number-of-wheel-free-graphs/README.md)
@@ -21,6 +20,7 @@ navigation: transparent
 - [Odd distance graph](odd-distance-graph/README.md)
 - [Perfect graphs](perfect-graphs/README.md)
 - [Petersen coloring conjecture](petersen-coloring-conjecture/README.md)
+- [Subgraphs of large cochromatic number](subgraphs-of-large-cochromatic-number/README.md)
+- [Triangle-free subgraphs of large chromatic number](triangle-free-subgraphs-of-large-chromatic-numbe/README.md)
+- [Brooks' theorem](brooks.md)
 - [Erdős's theorem on graphs of high girth and high chromatic number](erdos-high-girth-chromatic.md)
-- [Five color theorem](five-color-theorem.md)
-- [Mycielski's theorem](mycielski-theorem.md)

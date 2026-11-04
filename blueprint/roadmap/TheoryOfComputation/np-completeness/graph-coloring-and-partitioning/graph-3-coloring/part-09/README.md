@@ -2,10 +2,10 @@
 navigation: transparent
 ---
 
-# Run of the load phase of the 3-COLOR verifier to Correctness and time bound of the 3-coloring verifier machine
+# 3-COLOR is in NP to 3-COLOR is NP-complete
 
-- [Run of the load phase of the 3-COLOR verifier](load-run.md)
-- [Edge-loop verdict after one parsed edge](edges-ok-of-some-some.md)
-- [Restoring the color stack in the 3-COLOR verifier](back-run.md)
-- [Correctness and running time of the edge loop](edges-run.md)
-- [Correctness and time bound of the 3-coloring verifier machine](run.md)
+- [3-COLOR is in NP](col3-dec-mem-np.md)
+- [The 3-COLOR emitter](emit-color.md)
+- [The SAT-to-3-COLOR reduction is polynomial-time](is-poly-time-reduce-col.md)
+- [3-COLOR is NP-hard](col3-dec-np-hard.md)
+- [3-COLOR is NP-complete](col3-dec-np-complete.md)

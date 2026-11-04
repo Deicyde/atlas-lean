@@ -29,7 +29,7 @@ $M$, $U$, $V$ and $P$ holds the same list in $S'$ as in $S$.
 - [The marking machine for PATH](prog.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [One marking pass](mark-pass.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on

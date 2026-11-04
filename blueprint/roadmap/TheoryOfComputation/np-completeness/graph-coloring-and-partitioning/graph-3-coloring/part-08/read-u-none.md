@@ -18,16 +18,16 @@ any other stacks, the verifier reaches the rejecting label within at most $|l| +
 
 - [Stacks of the 3-COLOR verifier](../part-07/k.md)
 - [Labels of the 3-COLOR verifier](../part-07/lab.md)
-- [The 3-COLOR verifier machine](prog.md)
+- [The 3-COLOR verifier machine](../part-07/prog.md)
 - [Unary reader of the 3-COLOR verifier](../part-07/read-u.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Reading a unary length prefix](../../../cook-levin/binary-encoding-of-cnf-formulas/read-unary-length.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
 
-- [One step of the 3-COLOR verifier](run-one.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [One step of the 3-COLOR verifier](../part-07/run-one.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 - [Bit on top of a stack](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bit-of.md)

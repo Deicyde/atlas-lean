@@ -3,7 +3,6 @@
 Dirichlet and unitary convolution, completely multiplicative and additive functions, Wintner and Euler-product mean values, additive uniqueness sets, Mertens bounds.
 
 - [Additive uniqueness of multiplicative functions](additive-uniqueness-of-multiplicative-functions/README.md)
-- [Antimultiplicative arithmetic functions](antimultiplicative-arithmetic-functions/README.md)
 - [Completely additive height functions](completely-additive-height-functions/README.md)
 - [Completely multiplicative functions](completely-multiplicative-functions/README.md)
 - [Hyperbolic floor sums of arithmetic functions](hyperbolic-floor-sums-of-arithmetic-functions/README.md)
@@ -11,6 +10,7 @@ Dirichlet and unitary convolution, completely multiplicative and additive functi
 - [Möbius–Fermat function](m-bius-fermat-function/README.md)
 - [Random multiplicative functions](random-multiplicative-functions/README.md)
 - [Rearick logarithm](rearick-logarithm/README.md)
+- [Antimultiplicative arithmetic functions](antimultiplicative-arithmetic-functions/README.md)
 - [Square-splitting convolution](square-splitting-convolution/README.md)
 - [Tuples coprime along the edges of a graph](tuples-coprime-along-the-edges-of-a-graph/README.md)
 - [Unitary convolution](unitary-convolution/README.md)

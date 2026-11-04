@@ -16,7 +16,7 @@ $\varphi$, in order of occurrence in $\varphi$, with each variable kept at its l
 
 ## Proof depends on
 
-- [Occurrence list of a CNF formula](../../../cook-levin/polynomial-time-verifier-for-sat/part-07/vars-of.md)
+- [Occurrence list of a CNF formula](../../../cook-levin/polynomial-time-verifier-for-sat/part-01/vars-of.md)
 
 ## Sources
 

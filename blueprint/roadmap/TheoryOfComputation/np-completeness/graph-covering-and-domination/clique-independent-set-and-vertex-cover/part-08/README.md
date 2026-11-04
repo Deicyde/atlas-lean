@@ -2,16 +2,16 @@
 navigation: transparent
 ---
 
-# Reading the first unary number in the KG-map machine to Correctness and running time of the KG-map machine
+# CLIQUE is NP-hard to VERTEX-COVER (exact size `k`) is NP-complete
 
-- [Reading the first unary number in the KG-map machine](rd-k-some.md)
-- [Unterminated first unary number in the KG-map machine](rd-k-none.md)
-- [Reading the second unary number in the KG-map machine](rd-n-some.md)
-- [Unterminated second unary number in the KG-map machine](rd-n-none.md)
-- [Moving the pair bits onto stack $Y$](mv-run.md)
-- [Subtraction loop of the clique reduction machine](sub-le.md)
-- [Failed subtraction in the KG-map machine](sub-gt.md)
-- [Output loop for the pair bits of the KG-map machine](out-y-run.md)
-- [Number output of the clique reduction machine](tail-run.md)
-- [Output phase of the KG-map machine](out-run.md)
-- [Correctness and running time of the KG-map machine](run.md)
+- [CLIQUE is NP-hard](clique-dec-np-hard.md)
+- [INDEPENDENT-SET is NP-hard](ind-set-dec-np-hard.md)
+- [VERTEX-COVER (exact size `k`) is NP-hard](vertex-cover-dec-np-hard.md)
+- [The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component](kg-verify-comp.md)
+- [NP membership from the CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier](mem-np-of-kg-check.md)
+- [CLIQUE is in NP](clique-dec-mem-np.md)
+- [INDEPENDENT-SET is in NP](ind-set-dec-mem-np.md)
+- [VERTEX-COVER (exact size `k`) is in NP](vertex-cover-dec-mem-np.md)
+- [CLIQUE is NP-complete](clique-dec-np-complete.md)
+- [INDEPENDENT-SET is NP-complete](ind-set-dec-np-complete.md)
+- [VERTEX-COVER (exact size `k`) is NP-complete](vertex-cover-dec-np-complete.md)

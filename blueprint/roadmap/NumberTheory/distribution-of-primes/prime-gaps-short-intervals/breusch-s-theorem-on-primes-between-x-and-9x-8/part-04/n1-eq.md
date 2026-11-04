@@ -15,7 +15,7 @@ $Q_9$, then $N_1(m, n) = \lfloor Q_9 n / m \rfloor$.
 
 ## Depends on
 
-- [Scaled factorial argument $N_1$](../part-03/n1m.md)
+- [Scaled factorial argument $N_1$](../part-02/n1m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 
 ## Sources

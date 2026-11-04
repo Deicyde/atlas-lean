@@ -34,7 +34,7 @@ exactly when $R(x, w)$ holds for some bit string $w$ with $|w| \le p(|x|)$.
 - [Start state of the SUBSET-SUM verifier](start-2.md)
 - [SUBSET-SUM is characterized by its verifier](subset-sum-dec-iff.md)
 - [The SUBSET-SUM verifier machine as a host component](ss-verify-comp.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Bitstring encodings](../../../complexity-classes/the-classes-p-np-and-conp/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../complexity-classes/the-classes-p-np-and-conp/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../complexity-classes/the-classes-p-np-and-conp/bit-decode-bit-encode.md)

@@ -25,23 +25,23 @@ $l$, with literal vertex $n$ and negation vertex $n + 1$, with $q_1, \dots, q_k$
 
 - [Stacks of the 3-coloring emitter](../part-03/k.md)
 - [Control labels of the 3-coloring emitter](../part-03/lab.md)
-- [Quiescent states of the 3-COLOR emitter](../part-04/ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Stacks of a quiescent state](../part-04/stk.md)
 - [Encoding of an earlier occurrence on stack $D$](../part-04/d-tok.md)
 - [Name of a variable](../part-04/name.md)
 - [Bits pushed for a list of edges](../part-03/out.md)
-- [The 3-COLOR emitter machine](../part-04/prog.md)
+- [The 3-COLOR emitter machine](../part-03/prog.md)
 - [Stack alphabets of the 3-coloring emitter](../part-03/untitled.md)
 - [Consistency edges between two occurrences of a variable](../part-01/cons-edges.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
 
 - [Bit encoding of an edge](../part-03/e-b.md)
 - [One step of the walk over earlier occurrences](ent-run.md)
-- [Reading unary units](../part-04/unit-of.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading unary units](../part-03/unit-of.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 - [Unary counter](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)

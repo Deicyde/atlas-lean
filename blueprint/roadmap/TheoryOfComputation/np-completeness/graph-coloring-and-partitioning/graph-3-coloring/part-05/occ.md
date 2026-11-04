@@ -20,8 +20,8 @@ stack.
 
 - [State of the SAT-to-3-COLOR construction](../part-01/col-st.md)
 - [Size invariant of the 3-coloring emitter](inv.md)
-- [A literal's tokens on the token stack](../../../cook-levin/polynomial-time-verifier-for-sat/part-01/lit-rev.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [A literal's tokens on the token stack](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/lit-rev.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 

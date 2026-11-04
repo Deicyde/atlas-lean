@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# Per-token step budget of the 3-COLOR emitter to Flattening a concatenation
+# Correctness and step bound of the 3-COLOR emitter to Witness colors of the first $n$ vertices
 
-- [Per-token step budget of the 3-COLOR emitter](budget.md)
-- [The emitter state of a construction state](enc.md)
-- [Step budget for one literal](lit-cost.md)
-- [The emitter processes the remaining literals of a clause](lits-run.md)
-- [The 3-COLOR emitter processes one clause](clause-run.md)
-- [The emitter on a list of clauses](formula-run.md)
 - [Correctness and step bound of the 3-COLOR emitter](run.md)
 - [Color code of a vertex in a witness](col.md)
 - [Valid color code](ok-col.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Flattening the empty list](flat-nil.md)
 - [Flattening a nonempty list](flat-cons.md)
 - [Flattening a concatenation](flat-append.md)
+- [Length of a flattening](length-flat.md)
+- [Color codes of flattened pairs](col-flat.md)
+- [Color codes of a flattened coloring](col-flat-of-fn.md)
+- [3-colorability by witness bits](colorable-iff.md)
+- [3-COLOR is verified by the witness check](col3-dec-iff.md)
+- [Witness colors of the first $n$ vertices](cols.md)

@@ -19,12 +19,12 @@ $\max(G(n/p), 0) \ge i$ is at most $(18900n/j) \log 3.4$.
 
 ## Depends on
 
-- [Continuous Breusch function](../part-07/g9r.md)
+- [Continuous Breusch function](../part-06/g9r.md)
 
 ## Proof depends on
 
-- [Logarithms of primes are nonnegative](u9-logp-nonneg.md)
-- [Positive lower bounds on a truncation lift to the integer](u9-of-to-nat.md)
+- [Logarithms of primes are nonnegative](../part-08/u9-logp-nonneg.md)
+- [Positive lower bounds on a truncation lift to the integer](../part-08/u9-of-to-nat.md)
 - [Chebyshev-type bound for the sum of prime logarithms](u9-theta-le.md)
 
 ## Sources

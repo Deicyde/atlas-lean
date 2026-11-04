@@ -2,8 +2,8 @@
 
 Collatz problem, EKG, Stern diatomic, Hofstadter, Golomb, Ulam, Ducci, Josephus and Conway-type sequences.
 
-- [Arithmetic derivative and the Collatz map](arithmetic-derivative-and-the-collatz-map/README.md)
 - [Collatz problem](collatz-problem/README.md)
+- [Arithmetic derivative and the Collatz map](arithmetic-derivative-and-the-collatz-map/README.md)
 - [Conway–Hofstadter sequences](conway-hofstadter-sequences/README.md)
 - [Ducci sequences](ducci-sequences/README.md)
 - [Generalized Hofstadter functions](generalized-hofstadter-functions/README.md)

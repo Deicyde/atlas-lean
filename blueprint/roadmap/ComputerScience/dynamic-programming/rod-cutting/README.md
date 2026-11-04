@@ -4,9 +4,6 @@ navigation: module
 
 # Rod cutting
 
-- [Recursive CUT-ROD](recursive-cut-rod.md)
-- [Correctness of recursive CUT-ROD](recursive-cut-rod-correct.md)
-- [Running time of recursive CUT-ROD](recursive-cut-rod-time.md)
 - [Revenue of a rod composition](composition-revenue.md)
 - [The empty rod earns nothing](composition-revenue-zero.md)
 - [Revenue of an uncut rod](composition-revenue-single.md)
@@ -30,6 +27,9 @@ navigation: module
 - [Reconstruction earns the final saved revenue](cut-rod-solution-revenue.md)
 - [Rod-cutting reconstruction is optimal](cut-rod-solution-correct.md)
 - [Rod-cutting reconstruction on the empty rod](cut-rod-solution-zero.md)
+- [Recursive CUT-ROD](recursive-cut-rod.md)
+- [Correctness of recursive CUT-ROD](recursive-cut-rod-correct.md)
+- [Running time of recursive CUT-ROD](recursive-cut-rod-time.md)
 - [Memoized rod-cutting auxiliary (CLRS MEMOIZED-CUT-ROD-AUX)](memoized-cut-rod-aux.md)
 - [The memoized cut-rod procedure (CLRS MEMOIZED-CUT-ROD)](memoized-cut-rod.md)
 - [A cache hit in memoized rod cutting returns at once](memoized-cut-rod-aux-hit.md)

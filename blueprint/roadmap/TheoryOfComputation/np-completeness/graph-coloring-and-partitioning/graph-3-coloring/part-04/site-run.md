@@ -19,16 +19,16 @@ $j$.
 
 - [Stacks of the 3-coloring emitter](../part-03/k.md)
 - [Control labels of the 3-coloring emitter](../part-03/lab.md)
-- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Stacks of a quiescent state](stk.md)
 - [Counter values of a quiescent state](val.md)
 - [Copy sites of the 3-COLOR emitter](../part-03/site.md)
 - [Successor label of a copy site](../part-03/nxt.md)
 - [Counter copied by a copy site](../part-03/src-2.md)
 - [Bit list of a copy site of the 3-COLOR emitter](atom.md)
-- [The 3-COLOR emitter machine](prog.md)
+- [The 3-COLOR emitter machine](../part-03/prog.md)
 - [Stack alphabets of the 3-coloring emitter](../part-03/untitled.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

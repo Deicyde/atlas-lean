@@ -4,6 +4,9 @@ navigation: module
 
 # Weak and monotone limits on configuration space
 
+- [Weak convergence of probability measures on configuration space](weak-converges-to.md)
+- [Weak convergence implies convergence of integrals](tendsto-integral.md)
+- [Convergence of integrals implies weak convergence](weak-converges-to-of-forall-tendsto-inte.md)
 - [Cylinder events are clopen](is-clopen-cylinder-event.md)
 - [Portmanteau theorem for clopen events](tendsto-real-of-is-clopen.md)
 - [Increasing-event probabilities along an increasing chain are monotone](monotone-real-of-chain.md)
@@ -18,6 +21,3 @@ navigation: module
 - [Subsequential weak limits are determined by clopen-event limits](is-clopen-apply-eq-of-subseq-tendsto.md)
 - [Convergence on clopen events implies weak convergence](tendsto-weakly-of-forall-is-clopen-tends.md)
 - [Convergence of increasing-event probabilities along an increasing chain](tendsto-nnreal-of-monotone-is-increasing.md)
-- [Weak convergence of probability measures on configuration space](weak-converges-to.md)
-- [Weak convergence implies convergence of integrals](tendsto-integral.md)
-- [Convergence of integrals implies weak convergence](weak-converges-to-of-forall-tendsto-inte.md)

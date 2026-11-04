@@ -34,21 +34,21 @@ bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit s
 
 ## Depends on
 
-- [Stacks of the CLIQUE to VERTEX-COVER reduction machine](k.md)
-- [Labels of the KG-map machine](lab.md)
-- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
-- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Stacks of the CLIQUE to VERTEX-COVER reduction machine](../part-06/k.md)
+- [Labels of the KG-map machine](../part-06/lab.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](../part-06/mode.md)
+- [Stack alphabets of the clique reduction machine](../part-06/untitled.md)
 
 ## Proof depends on
 
 - [Counter of the first output number of the KG-map machine](ctr.md)
-- [Pair-bit transform of each mode](fb.md)
+- [Pair-bit transform of each mode](../part-06/fb.md)
 - [Label after the move phase of the KG-map machine](next.md)
-- [Counter unit symbol of the clique reduction machine](u.md)
-- [Test for the input bit true](is-t.md)
-- [Test for the moved bit true](is-v.md)
+- [Counter unit symbol of the clique reduction machine](../part-06/u.md)
+- [Test for the input bit true](../part-06/is-t.md)
+- [Test for the moved bit true](../part-06/is-v.md)
 - [Fixed no-instance](../part-01/no-kg.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Flag bit of a machine state](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
 - [Pushing a constant list](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/emit.md)
 - [Prepending a constant list](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/emit-r.md)

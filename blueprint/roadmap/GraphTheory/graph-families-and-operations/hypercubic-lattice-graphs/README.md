@@ -4,12 +4,6 @@ navigation: module
 
 # Hypercubic lattice graphs
 
-- [Box $(-n, n)^d$ as a finite set of sites](box-sv-box-f.md)
-- [Vertex boundary of the box $(-n, n)^d$ as a finite set](box-sv-vb-f.md)
-- [Size of the vertex boundary of the box $(-n, n)^d$](box-sv-boundary-card.md)
-- [Nearest-neighbour pairs inside the box $(-n, n)^d$](box-sv-edge-f.md)
-- [Number of nearest-neighbour pairs inside the box $(-n, n)^d$](box-sv-edge-card.md)
-- [Box sites with a forward neighbour in the box](box-sv-fwd-dom.md)
 - [Site of the hypercubic lattice](site.md)
 - [Nearest neighbours in $\mathbb{Z}^d$](nearest-neighbour.md)
 - [Hypercubic lattice $\mathbb{Z}^d$](hypercubic-lattice.md)
@@ -20,6 +14,12 @@ navigation: module
 - [Increasing one coordinate stays in the same component](reachable-update-add.md)
 - [Changing one coordinate stays in the same component](reachable-update.md)
 - [Square lattice is connected](hypercubic-lattice-two-reachable.md)
+- [Box $(-n, n)^d$ as a finite set of sites](box-sv-box-f.md)
+- [Vertex boundary of the box $(-n, n)^d$ as a finite set](box-sv-vb-f.md)
+- [Size of the vertex boundary of the box $(-n, n)^d$](box-sv-boundary-card.md)
+- [Nearest-neighbour pairs inside the box $(-n, n)^d$](box-sv-edge-f.md)
+- [Number of nearest-neighbour pairs inside the box $(-n, n)^d$](box-sv-edge-card.md)
+- [Box sites with a forward neighbour in the box](box-sv-fwd-dom.md)
 - [First index where a walk reaches a coordinate value](pvr-first-idx-at-coord.md)
 - [Shift of a site along a coordinate](shift.md)
 - [Neighbour of a site in a coordinate direction](cand-map.md)

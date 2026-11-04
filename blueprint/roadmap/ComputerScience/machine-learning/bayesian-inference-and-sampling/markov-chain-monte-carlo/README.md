@@ -4,6 +4,15 @@ navigation: module
 
 # Markov chain Monte Carlo
 
+- [Markov kernel of a transition rule](pmf-kernel.md)
+- [Detailed balance implies reversibility](is-reversible-pmf-kernel.md)
+- [Detailed balance implies invariance](invariant-pmf-kernel.md)
+- [Detailed balance gives a stationary distribution](bind-eq-of-detailed-balance.md)
+- [Metropolis–Hastings acceptance probability](mh-accept.md)
+- [Metropolis–Hastings step](mh-step.md)
+- [Detailed balance for Metropolis–Hastings](mh-detailed-balance.md)
+- [The Metropolis–Hastings kernel is reversible](is-reversible-mh-kernel.md)
+- [The target is stationary for Metropolis–Hastings](invariant-mh-kernel.md)
 - [Normalizer of the conditional law](cond-norm.md)
 - [Conditional law of a coordinate](cond-law.md)
 - [Gibbs update](gibbs-step.md)
@@ -25,12 +34,3 @@ navigation: module
 - [Target is stationary for the Gibbs sweep matrix](vec-mul-gibbs-sweep-matrix.md)
 - [Positivity of Gibbs sweep transition probabilities](gibbs-sweep-matrix-pos.md)
 - [The systematic-scan Gibbs sampler converges to its target](exists-tv-dist-gibbs-sweep-matrix-pow-le.md)
-- [Markov kernel of a transition rule](pmf-kernel.md)
-- [Detailed balance implies reversibility](is-reversible-pmf-kernel.md)
-- [Detailed balance implies invariance](invariant-pmf-kernel.md)
-- [Detailed balance gives a stationary distribution](bind-eq-of-detailed-balance.md)
-- [Metropolis–Hastings acceptance probability](mh-accept.md)
-- [Metropolis–Hastings step](mh-step.md)
-- [Detailed balance for Metropolis–Hastings](mh-detailed-balance.md)
-- [The Metropolis–Hastings kernel is reversible](is-reversible-mh-kernel.md)
-- [The target is stationary for Metropolis–Hastings](invariant-mh-kernel.md)

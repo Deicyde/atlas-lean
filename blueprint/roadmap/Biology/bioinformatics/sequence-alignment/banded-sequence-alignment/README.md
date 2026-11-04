@@ -4,12 +4,6 @@ navigation: module
 
 # Banded sequence alignment
 
-- [Number of gap columns of an alignment](gap-columns.md)
-- [An alignment with few gap columns stays in the band from its start](banded-from-of-abs-add-gap-columns-le.md)
-- [An alignment with at most w gap columns is w-banded](is-banded-of-gap-columns-le.md)
-- [Alignment score is at most minus the number of gap columns](alignment-score-le-neg-gap-columns.md)
-- [The band lemma](is-banded-of-neg-le-alignment-score.md)
-- [The banded optimum is exact](banded-score-eq-nw-score-of-neg-le.md)
 - [Band check from a starting offset](banded-from.md)
 - [Banded alignments](is-banded.md)
 - [Bound at an intermediate point, difference form](abs-le-of-between.md)
@@ -27,3 +21,9 @@ navigation: module
 - [Banded alignment is exact when some optimal alignment is banded](banded-score-eq-nw-score-of-banded-optim.md)
 - [No banded score when the lengths differ by more than the band width](banded-score-none-of-length-diff-gt.md)
 - [The banded score is defined when the lengths are close](banded-score-some-of-length-diff-le.md)
+- [Number of gap columns of an alignment](gap-columns.md)
+- [An alignment with few gap columns stays in the band from its start](banded-from-of-abs-add-gap-columns-le.md)
+- [An alignment with at most w gap columns is w-banded](is-banded-of-gap-columns-le.md)
+- [Alignment score is at most minus the number of gap columns](alignment-score-le-neg-gap-columns.md)
+- [The band lemma](is-banded-of-neg-le-alignment-score.md)
+- [The banded optimum is exact](banded-score-eq-nw-score-of-neg-le.md)

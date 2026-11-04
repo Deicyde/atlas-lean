@@ -24,7 +24,7 @@ records its outcome in the internal state.
 - [Stacks of the 3SAT clause-length filter](k-2.md)
 - [Conditional move between stacks](mv-if.md)
 - [One step of the clause-length walk](walk.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

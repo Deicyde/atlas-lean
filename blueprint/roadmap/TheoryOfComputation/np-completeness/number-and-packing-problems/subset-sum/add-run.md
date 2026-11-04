@@ -29,7 +29,7 @@ $\mathit{acc}$.
 - [Whether a bit string ends in false](last-f.md)
 - [The SUBSET-SUM verifier program](prog-2.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Self-delimiting form of a bitstring](../../../complexity-classes/the-classes-p-np-and-conp/delimit.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
@@ -40,7 +40,7 @@ $\mathit{acc}$.
 - [Carry bit of a full adder](carry.md)
 - [Carry phase of the SUBSET-SUM verifier](fin-run.md)
 - [Adding a carry bit](inc-b.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [Bit on top of a stack](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bit-of.md)
 

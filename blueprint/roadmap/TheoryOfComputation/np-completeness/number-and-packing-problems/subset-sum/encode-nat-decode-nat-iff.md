@@ -19,7 +19,7 @@ in $0$; that is, $p$ is empty or its last bit is $1$.
 
 ## Proof depends on
 
-- [Canonical binary names](../../cook-levin/polynomial-time-verifier-for-sat/part-04/encode-nat-decode-nat-eq-iff.md)
+- [Canonical binary names](../../cook-levin/polynomial-time-verifier-for-sat/part-02/encode-nat-decode-nat-eq-iff.md)
 
 ## Sources
 

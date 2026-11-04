@@ -23,7 +23,7 @@ top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to 
 - [Start label of the subset-sum emitter](start.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Reduction from VERTEX-COVER to SUBSET-SUM](reduce-ss.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on

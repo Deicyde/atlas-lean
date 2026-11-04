@@ -16,7 +16,7 @@ valid (not $11$), and the edge loop accepts $r$ with the vertex colors $c_0, \do
 ## Depends on
 
 - [The 3-COLOR verifier](../part-06/col-check.md)
-- [Witness colors of the first $n$ vertices](cols.md)
+- [Witness colors of the first $n$ vertices](../part-06/cols.md)
 - [Edge-loop verdict](edges-ok.md)
 - [Valid color code](../part-06/ok-col.md)
 - [Reading a unary length prefix](../../../cook-levin/binary-encoding-of-cnf-formulas/read-unary-length.md)

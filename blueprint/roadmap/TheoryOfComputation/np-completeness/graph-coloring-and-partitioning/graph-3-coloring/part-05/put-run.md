@@ -21,13 +21,13 @@ name bits of $x$ above $n$ units.
 
 - [Stacks of the 3-coloring emitter](../part-03/k.md)
 - [Control labels of the 3-coloring emitter](../part-03/lab.md)
-- [Quiescent states of the 3-COLOR emitter](../part-04/ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Stacks of a quiescent state](../part-04/stk.md)
 - [Encoding of an earlier occurrence on stack $D$](../part-04/d-tok.md)
 - [Name of a variable](../part-04/name.md)
-- [The 3-COLOR emitter machine](../part-04/prog.md)
+- [The 3-COLOR emitter machine](../part-03/prog.md)
 - [Stack alphabets of the 3-coloring emitter](../part-03/untitled.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on
@@ -35,7 +35,7 @@ name bits of $x$ above $n$ units.
 - [Counters read by copy sites of the 3-COLOR emitter](../part-03/src.md)
 - [Stack of a counter](../part-03/k-2.md)
 - [Copying a counter through $W$](../part-04/dup-run.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Flag bit of a machine state](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
 - [Bit blocks](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/is-bit-block.md)
 - [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)

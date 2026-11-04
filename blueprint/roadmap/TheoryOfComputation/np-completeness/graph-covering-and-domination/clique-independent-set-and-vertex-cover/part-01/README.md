@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Vertex pairs in encoding order to INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time
+# Vertex pairs in encoding order to The vertex pairs are listed without repetition
 
 - [Vertex pairs in encoding order](pairs.md)
 - [Adjacency bit of a vertex pair](adj-bits.md)
@@ -21,6 +21,6 @@ navigation: transparent
 - [Karp's SAT-to-CLIQUE map on bit strings](reduce-clique.md)
 - [Complementing map from CLIQUE to INDEPENDENT-SET instances](flip-kg.md)
 - [Map from INDEPENDENT-SET to VERTEX-COVER instances](is-to-vc.md)
-- [The CLIQUE-to-INDEPENDENT-SET and INDEPENDENT-SET-to-VERTEX-COVER map as a host component](kg-map-comp.md)
-- [CLIQUE ≤ INDEPENDENT-SET is polynomial-time](is-poly-time-flip-kg.md)
-- [INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time](is-poly-time-is-to-vc.md)
+- [Unparsable input is rejected](kg-dec-of-decode-kg-eq-none.md)
+- [Membership in the vertex pairs](mem-pairs.md)
+- [The vertex pairs are listed without repetition](pairs-nodup.md)

@@ -35,8 +35,8 @@ concatenation of stacks, top first.
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Output clauses of a walked list of literals](walk-f.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
-- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/lit-rev.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/lit-rev.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/binary-encoding-of-cnf-formulas/encode-clause.md)
 - [CNF clause](../../../../Logic/propositional-logic/conjunctive-normal-form/cnfclause.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
@@ -45,7 +45,7 @@ concatenation of stacks, top first.
 
 - [Output clause of one literal](lit-cl.md)
 - [One literal of the emitter](lit-run.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [CNF formula](../../../../Logic/propositional-logic/conjunctive-normal-form/cnf.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 

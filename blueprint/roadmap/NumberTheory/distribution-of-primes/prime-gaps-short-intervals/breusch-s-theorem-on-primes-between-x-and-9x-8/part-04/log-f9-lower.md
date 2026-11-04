@@ -21,33 +21,33 @@ $$48 n (10 \log 10 - 9 \log 9) - 16 - 48 \log(2100 n) \le \log F_9(n).$$
 
 ## Depends on
 
-- [Logarithm of Breusch's product $F_9(n)$](../part-03/log-f9.md)
+- [Logarithm of Breusch's product $F_9(n)$](../part-02/log-f9.md)
 
 ## Proof depends on
 
-- [Exact formula for the scaled factorial argument $N_{10}$](n10-eq.md)
+- [Exact formula for the scaled factorial argument $N_{10}$](../part-03/n10-eq.md)
 - [Upper bound for the scaled factorial argument $N_{10}$](../part-03/n10-le.md)
 - [Positivity of the scaled factorial argument $N_{10}$](../part-03/n10-pos.md)
-- [Scaled factorial argument $N_{10}$](../part-03/n10m.md)
+- [Scaled factorial argument $N_{10}$](../part-02/n10m.md)
 - [Exact formula for the scaled factorial argument $N_1$](n1-eq.md)
-- [Upper bound for the scaled factorial argument $N_1$](n1-le.md)
+- [Upper bound for the scaled factorial argument $N_1$](../part-03/n1-le.md)
 - [Positivity of the scaled factorial argument $N_1$](../part-03/n1-pos.md)
-- [Scaled factorial argument $N_1$](../part-03/n1m.md)
+- [Scaled factorial argument $N_1$](../part-02/n1m.md)
 - [Exact formula for the scaled factorial argument $N_9$](n9-eq.md)
 - [Upper bound for the scaled factorial argument $N_9$](../part-03/n9-le.md)
 - [Positivity of the scaled argument N₉](../part-03/n9-pos.md)
-- [Scaled factorial argument N₉](../part-03/n9m.md)
+- [Scaled factorial argument N₉](../part-02/n9m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
-- [Value of Q₉](../part-03/q9-eq.md)
+- [Value of Q₉](../part-02/q9-eq.md)
 - [Combined main term of the Möbius-weighted Stirling sums](z9-combined.md)
-- [Main Stirling term](fmain.md)
-- [Termwise Stirling lower bound in Breusch's argument](log-f9-term-lower.md)
-- [Logarithm of the binomial factor](log-ratio9.md)
-- [Binomial factor ratio₉](../part-03/ratio9.md)
+- [Main Stirling term](../part-03/fmain.md)
+- [Termwise Stirling lower bound in Breusch's argument](../part-03/log-f9-term-lower.md)
+- [Logarithm of the binomial factor](../part-03/log-ratio9.md)
+- [Binomial factor ratio₉](../part-02/ratio9.md)
 - [The Möbius divisor table for $210$](../part-01/w9.md)
-- [Entries of the divisor table for $210$ divide $210$](../part-02/w9-dvd.md)
+- [Entries of the divisor table for $210$ divide $210$](../part-01/w9-dvd.md)
 - [The divisor table for $210$ has 16 entries](../part-01/w9-length.md)
-- [The divisor table for $210$ has no repeated entries](../part-03/w9-nodup.md)
+- [The divisor table for $210$ has no repeated entries](../part-02/w9-nodup.md)
 - [Divisors in the table for $210$ are positive](../part-01/w9-pos.md)
 
 ## Sources

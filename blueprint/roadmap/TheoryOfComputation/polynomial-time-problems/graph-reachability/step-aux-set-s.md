@@ -21,7 +21,7 @@ state and the stacks $S$ with $M$ replaced by the bits of $l$ with its first ent
 - [Setting the first mark](set-head.md)
 - [Mark-setting step](set-s.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

@@ -4,7 +4,6 @@ navigation: module
 
 # Riemann integral
 
-- [Common refinement of two tagged partitions](exists-common-refinement.md)
 - [Partition of an interval](partition.md)
 - [Tagged partition](tagged-partition.md)
 - [Mesh of a partition](mesh.md)
@@ -27,3 +26,4 @@ navigation: module
 - [Riemann sums under refinement, given refinement data](riemann-sum-sub-le-of-is-tagged-refineme.md)
 - [Riemann sums under refinement](riemann-sum-sub-le-of-is-refinement.md)
 - [Riemann sums of two partitions with a common refinement](riemann-sum-sub-le-of-common-refinement.md)
+- [Common refinement of two tagged partitions](exists-common-refinement.md)

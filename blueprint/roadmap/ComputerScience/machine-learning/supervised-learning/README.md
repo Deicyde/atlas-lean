@@ -9,6 +9,6 @@ Prediction from labelled data: least squares, ridge, lasso and kernel or Gaussia
 - [Cross-entropy loss](cross-entropy-loss/README.md)
 - [Gaussian process regression](gaussian-process-regression/README.md)
 - [Information gain in decision trees](information-gain-in-decision-trees/README.md)
-- [Kernel ridge regression and GBLUP](kernel-ridge-regression-and-gblup/README.md)
 - [Least squares, ridge and lasso regression](least-squares-ridge-and-lasso-regression/README.md)
+- [Kernel ridge regression and GBLUP](kernel-ridge-regression-and-gblup/README.md)
 - [Sufficient input subsets](sufficient-input-subsets/README.md)

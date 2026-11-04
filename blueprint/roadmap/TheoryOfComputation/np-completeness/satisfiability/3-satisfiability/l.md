@@ -18,7 +18,7 @@ is the exit label.
 
 ## Proof depends on
 
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
 
 ## Sources
 

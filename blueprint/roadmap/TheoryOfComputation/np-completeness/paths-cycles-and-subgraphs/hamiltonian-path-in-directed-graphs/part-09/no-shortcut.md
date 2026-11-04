@@ -23,23 +23,23 @@ followed by $e$ and $e$ is immediately followed by $t_{i+1}$.
 
 - [Normal clause detours](../part-01/detours-normal.md)
 - [Hamiltonian paths](../part-01/is-ham-path.md)
-- [Deleting the clause vertices from a path](drop-clauses.md)
+- [Deleting the clause vertices from a path](../part-08/drop-clauses.md)
 - [Arcs of the HAMPATH construction](../part-01/ham-edges.md)
 - [Distinct variables of a formula](../part-01/ham-vars.md)
-- [Row vertices counted from either end](hp-ro.md)
+- [Row vertices counted from either end](../part-08/hp-ro.md)
 - [Tops of the diamonds](../part-01/hp-t.md)
 - [CNF formula](../../../../../Logic/propositional-logic/conjunctive-normal-form/cnf.md)
 - [CNF clause](../../../../../Logic/propositional-logic/conjunctive-normal-form/cnfclause.md)
 
 ## Proof depends on
 
-- [In-neighbours of a row vertex outside the clause vertices](arc-hp-ro.md)
-- [Consecutive vertices of the contracted path are joined by arcs](arc-of-infix-drop-clauses.md)
+- [In-neighbours of a row vertex outside the clause vertices](../part-08/arc-hp-ro.md)
+- [Consecutive vertices of the contracted path are joined by arcs](../part-08/arc-of-infix-drop-clauses.md)
 - [Row vertices of a diamond](../part-01/hp-r.md)
 - [Row vertices lie below the next top](../part-01/hp-r-lt-hp-t-succ.md)
 - [Tops are monotone in the diamond index](../part-01/hp-t-mono.md)
 - [Tops of distinct diamonds are at least $3m + 2$ apart](../part-03/hp-t-sep.md)
-- [A Hamiltonian path visits every vertex](../part-04/mem-of-is-ham-path.md)
+- [A Hamiltonian path visits every vertex](../part-03/mem-of-is-ham-path.md)
 - [Arcs of the PATH digraph](../../../../polynomial-time-problems/graph-reachability/arc.md)
 
 ## Sources

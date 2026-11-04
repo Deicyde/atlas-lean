@@ -2,14 +2,15 @@
 declaration: inductive
 origin: cited
 statement: formalized
-lean: Cslib.Complexity.Karp.EmitClique.K
+lean: Cslib.Complexity.Karp.KGVerify.K
 ---
 
-# Stacks of the SAT-to-CLIQUE emitter
+# Stacks of the CLIQUE verifier
 
-**Stacks of the SAT-to-CLIQUE emitter.** The emitter has nine stacks: $T$ (tokens), $O$
-(output), $A$ (the current name), $B$ (scratch), $D$ (walked occurrences), $E$ (the walk's other
-side), $X$ (scratch), $C$ (the clause count) and $N$ (the occurrence count).
+**Stacks of the CLIQUE verifier.** The verifier machine for CLIQUE, INDEPENDENT-SET and
+VERTEX-COVER, run on an instance with target size $k$ and $n$ vertices, has six stacks: the
+input $X$, the witness $W$, the counter $C$ (holding $k$), the counter $N$ (holding $n$), the
+vertex stack $V$ and its scratch stack $T$.
 
 ## Depends on
 
@@ -17,4 +18,4 @@ This node has no prerequisites.
 
 ## Sources
 
-- [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueEmit](../../../../../../sources/v2/CSLibExt.md)
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueVerify](../../../../../../sources/v2/CSLibExt.md)

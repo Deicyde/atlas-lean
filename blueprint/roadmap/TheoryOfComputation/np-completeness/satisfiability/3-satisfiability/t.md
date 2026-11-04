@@ -16,7 +16,7 @@ copy among the combined machine's labels.
 
 - [Emitter](emitter.md)
 - [Labels of the tokenize-then-emit machine](l.md)
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
 
 ## Sources
 

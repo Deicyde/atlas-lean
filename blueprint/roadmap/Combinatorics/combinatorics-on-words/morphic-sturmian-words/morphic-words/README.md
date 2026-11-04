@@ -4,11 +4,6 @@ navigation: module
 
 # Morphic words
 
-- [Morphic words via a coding](is-morphic.md)
-- [Building a morphic word from its generator](intro.md)
-- [The generator of a morphic word is pure morphic](pure.md)
-- [A morphic word is the coding of its generator](coding-eq.md)
-- [Pure morphic words are morphic](of-pure-morphic.md)
 - [Extension of a letter map to finite words](morph-extend.md)
 - [Iterates of a letter map](morph-iterate.md)
 - [Extended letter maps preserve concatenation](morph-extend-append.md)
@@ -17,3 +12,8 @@ navigation: module
 - [Prolongable letter maps](is-prefix-preserving.md)
 - [Infinite word as the limit of iterates](is-omega-limit.md)
 - [Pure morphic words](is-pure-morphic.md)
+- [Morphic words via a coding](is-morphic.md)
+- [Building a morphic word from its generator](intro.md)
+- [The generator of a morphic word is pure morphic](pure.md)
+- [A morphic word is the coding of its generator](coding-eq.md)
+- [Pure morphic words are morphic](of-pure-morphic.md)

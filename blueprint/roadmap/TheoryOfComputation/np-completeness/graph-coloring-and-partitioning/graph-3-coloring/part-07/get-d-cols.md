@@ -16,7 +16,7 @@ $c_w(j)$ for the color code of vertex $j$ in $w$: the pair of bits $2j$ and $2j 
 ## Depends on
 
 - [Color code of a vertex in a witness](../part-06/col.md)
-- [Witness colors of the first $n$ vertices](cols.md)
+- [Witness colors of the first $n$ vertices](../part-06/cols.md)
 
 ## Sources
 

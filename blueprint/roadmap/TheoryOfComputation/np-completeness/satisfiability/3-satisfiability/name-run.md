@@ -27,8 +27,8 @@ stacks, top first.
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
 - [Renaming a literal](ren-lit.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Binary code of a literal](../../cook-levin/binary-encoding-of-cnf-formulas/encode-lit.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 

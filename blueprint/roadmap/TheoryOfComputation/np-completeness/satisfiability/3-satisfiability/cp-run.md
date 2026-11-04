@@ -29,8 +29,8 @@ $\mathrm{true}, \mathrm{false}$ codes the low bit $0$ of a renamed name $2n$.
 - [The SAT-to-3SAT emitter machine](prog.md)
 - [Stack contents of the SAT-to-3SAT emitter](st.md)
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Breusch's theorem on primes between $x$ and $9x/8$](breusch-s-theorem-on-primes-between-x-and-9x-8/part-01/breusch-prime-interval.md)
+- [Breusch's theorem on primes between $x$ and $9x/8$](breusch-s-theorem-on-primes-between-x-and-9x-8/part-10/breusch-prime-interval.md)
 
 ## Sources
 

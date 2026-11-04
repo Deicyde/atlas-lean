@@ -15,11 +15,11 @@ $10 \le j < 657$. So $657$ is the least $j \ge 10$ with $G_9(j) \ge 2$.
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Proof depends on
 
-- [The grid function reaches $2$ at $657$](jmin2-attained.md)
+- [The grid function reaches $2$ at $657$](../part-01/jmin2-attained.md)
 - [The grid function stays below $2$ on $(10, 657)$](jmin2-core.md)
 
 ## Sources

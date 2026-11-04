@@ -4,6 +4,9 @@ navigation: module
 
 # Curvature of Riemannian manifolds
 
+- [Curvature expression of a covariant derivative on extensions](extend-curvature.md)
+- [Antisymmetry of the curvature expression](extend-curvature-antisymm.md)
+- [Ricci contraction of the curvature expression](extend-ricci.md)
 - [Riemann curvature endomorphism](riemann-curvature.md)
 - [Antisymmetry of the Riemann curvature](riemann-curvature-antisymm.md)
 - [Sectional curvature](sectional-curvature.md)
@@ -24,6 +27,3 @@ navigation: module
 - [Euclidean space has zero sectional curvature](sectional-curvature-vector-space.md)
 - [Euclidean space is Ricci-flat](ricci-vector-space.md)
 - [Euclidean space has zero scalar curvature](scalar-curvature-vector-space.md)
-- [Curvature expression of a covariant derivative on extensions](extend-curvature.md)
-- [Antisymmetry of the curvature expression](extend-curvature-antisymm.md)
-- [Ricci contraction of the curvature expression](extend-ricci.md)

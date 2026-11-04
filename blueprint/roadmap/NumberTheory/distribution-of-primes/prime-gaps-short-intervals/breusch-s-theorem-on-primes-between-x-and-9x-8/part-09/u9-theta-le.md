@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [The primorial as a product of primes](u9-primorial-eq.md)
-- [Primorial bound by powers of 3.4, real form](../part-06/theta34-real.md)
+- [The primorial as a product of primes](../part-08/u9-primorial-eq.md)
+- [Primorial bound by powers of 3.4, real form](../part-05/theta34-real.md)
 
 ## Sources
 

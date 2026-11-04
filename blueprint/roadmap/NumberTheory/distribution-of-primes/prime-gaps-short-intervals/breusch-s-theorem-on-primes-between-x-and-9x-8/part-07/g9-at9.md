@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_at9
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](../part-02/g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Sources
 

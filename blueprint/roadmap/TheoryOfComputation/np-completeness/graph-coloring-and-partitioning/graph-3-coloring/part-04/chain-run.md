@@ -21,13 +21,13 @@ $j_1, \dots, j_k$ at $m$ placed on top of the output stack.
 - [Copy sites of the 3-COLOR emitter running in sequence](chain.md)
 - [Stacks of the 3-coloring emitter](../part-03/k.md)
 - [Control labels of the 3-coloring emitter](../part-03/lab.md)
-- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Stacks of a quiescent state](stk.md)
 - [Copy sites of the 3-COLOR emitter](../part-03/site.md)
 - [Bits pushed by a sequence of copy sites of the 3-COLOR emitter](chain-out.md)
-- [The 3-COLOR emitter machine](prog.md)
+- [The 3-COLOR emitter machine](../part-03/prog.md)
 - [Stack alphabets of the 3-coloring emitter](../part-03/untitled.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on

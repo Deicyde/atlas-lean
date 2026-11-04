@@ -20,11 +20,11 @@ lean: StatMech.Onsager.RayFlipH.upCross_hstep_gen
 
 ## Proof depends on
 
-- [Coordinates of the four lattice steps](../part-11/step-of-coords.md)
-- [Recursion for the x-coordinate of a walk step](../part-10/fst-step.md)
-- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
-- [Vertical lattice direction](../part-10/is-vert-edge.md)
-- [Recursion for the y-coordinate of a walk step](../part-10/snd-step.md)
+- [Coordinates of the four lattice steps](../part-02/step-of-coords.md)
+- [Recursion for the x-coordinate of a walk step](../part-03/fst-step.md)
+- [Horizontal lattice direction](../part-03/is-horiz-edge.md)
+- [Vertical lattice direction](../part-03/is-vert-edge.md)
+- [Recursion for the y-coordinate of a walk step](../part-03/snd-step.md)
 
 ## Sources
 

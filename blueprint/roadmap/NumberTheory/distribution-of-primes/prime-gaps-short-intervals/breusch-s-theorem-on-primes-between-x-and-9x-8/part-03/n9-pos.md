@@ -15,12 +15,12 @@ $N_9(m, n) = 9n \lfloor Q_9 / m \rfloor$ satisfies $N_9(m, n) \ge 1$.
 
 ## Depends on
 
-- [Scaled factorial argument N₉](n9m.md)
+- [Scaled factorial argument N₉](../part-02/n9m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 
 ## Proof depends on
 
-- [Quotients of Q₉ by its divisors are positive](q9div-pos.md)
+- [Quotients of Q₉ by its divisors are positive](../part-02/q9div-pos.md)
 
 ## Sources
 

@@ -4,7 +4,6 @@ navigation: module
 
 # Hasse bound
 
-- [Hasse bound](hasse-bound.md)
 - [Primitive triple of polynomials](primitive-triple.md)
 - [Polynomials with no common irreducible factor form a primitive triple](primitive-triple-of-no-common-irreducibl.md)
 - [Numerator degrees from a primitive presentation of product and sum](projective-first-nat-degree.md)
@@ -22,3 +21,4 @@ navigation: module
 - [Hasse bound for the characteristic-two normal forms](hasse-bound-of-is-char-two-nf.md)
 - [Hasse bound for the ordinary characteristic-two normal form](hasse-bound-of-is-char-two-jne-zero-nf.md)
 - [Hasse bound for the supersingular characteristic-two normal form](hasse-bound-of-is-char-two-jeq-zero-nf.md)
+- [Hasse bound](hasse-bound.md)

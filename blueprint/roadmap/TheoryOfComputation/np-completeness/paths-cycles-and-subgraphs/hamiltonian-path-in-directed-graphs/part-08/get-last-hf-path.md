@@ -14,7 +14,7 @@ diamonds in directions $d$ with clause choice $c$ ends at the top $T_k = m + k(3
 
 ## Depends on
 
-- [The forward path through the diamonds](hf-path.md)
+- [The forward path through the diamonds](../part-07/hf-path.md)
 - [Tops of the diamonds](../part-01/hp-t.md)
 
 ## Proof depends on

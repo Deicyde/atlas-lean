@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 - [Stacks of the SUBSET-SUM verifier](k-2.md)
 - [Labels of the SUBSET-SUM verifier](lab-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

@@ -4,14 +4,6 @@ navigation: module
 
 # Leonardo numbers
 
-- [Log-concavity propagates along a linear recurrence](log-concave-of-linear-recurrence-of-init.md)
-- [Log-convexity propagates along a linear recurrence](log-convex-of-linear-recurrence-of-initi.md)
-- [Log-balancedness of reciprocals along a three-term recurrence](inv-log-balanced-of-recurrence-of-initia.md)
-- [Log-balancedness of the reciprocals of generalized Leonardo numbers](inv-gen-leonardo-log-balanced.md)
-- [Log-convexity of the n-th roots of generalized Leonardo numbers](gen-leonardo-rpow-inv-log-convex.md)
-- [Log-concavity of partial sums of generalized Leonardo numbers](gen-leonardo-partial-sum-log-concave.md)
-- [Log-balancedness of the n-th roots of generalized Leonardo numbers](gen-leonardo-rpow-inv-log-balanced.md)
-- [Log-convexity of the self-powers of generalized Leonardo numbers](gen-leonardo-pow-self-log-convex.md)
 - [Generalized Leonardo numbers](gen-leonardo.md)
 - [Generalized Leonardo number of index two](gen-leonardo-two.md)
 - [Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$](gen-leonardo-eq-leonardo-pk-one.md)
@@ -26,3 +18,11 @@ navigation: module
 - [Even-order binomial identities for generalized Leonardo numbers](gen-leonardo-binomial-sum-two-mul.md)
 - [Alternating binomial identities for generalized Leonardo numbers](gen-leonardo-binomial-alternating.md)
 - [Binomial identities with steps three and four for generalized Leonardo numbers](gen-leonardo-binomial-steps.md)
+- [Log-concavity propagates along a linear recurrence](log-concave-of-linear-recurrence-of-init.md)
+- [Log-convexity propagates along a linear recurrence](log-convex-of-linear-recurrence-of-initi.md)
+- [Log-balancedness of reciprocals along a three-term recurrence](inv-log-balanced-of-recurrence-of-initia.md)
+- [Log-balancedness of the reciprocals of generalized Leonardo numbers](inv-gen-leonardo-log-balanced.md)
+- [Log-convexity of the n-th roots of generalized Leonardo numbers](gen-leonardo-rpow-inv-log-convex.md)
+- [Log-concavity of partial sums of generalized Leonardo numbers](gen-leonardo-partial-sum-log-concave.md)
+- [Log-balancedness of the n-th roots of generalized Leonardo numbers](gen-leonardo-rpow-inv-log-balanced.md)
+- [Log-convexity of the self-powers of generalized Leonardo numbers](gen-leonardo-pow-self-log-convex.md)

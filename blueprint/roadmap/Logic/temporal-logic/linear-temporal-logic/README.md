@@ -4,6 +4,14 @@ navigation: module
 
 # Linear temporal logic
 
+- [Formulas of linear temporal logic](formula.md)
+- [Falsity in LTL](bot.md)
+- [Disjunction in LTL](or.md)
+- [Implication in LTL](imp.md)
+- [Bi-implication in LTL](iff.md)
+- [The eventually operator of LTL](eventually.md)
+- [The always operator of LTL](always.md)
+- [The release operator of LTL](release.md)
 - [Satisfaction of LTL formulas on ω-words](satisfies.md)
 - [Satisfaction at a position](satisfies-at.md)
 - [Language of an LTL formula](language.md)
@@ -22,11 +30,3 @@ navigation: module
 - [Satisfaction of an atom at a position](satisfies-at-atom.md)
 - [Relabelling the letters of an ω-word](satisfies-map.md)
 - [Membership in the language of a formula](mem-language.md)
-- [Formulas of linear temporal logic](formula.md)
-- [Falsity in LTL](bot.md)
-- [Disjunction in LTL](or.md)
-- [Implication in LTL](imp.md)
-- [Bi-implication in LTL](iff.md)
-- [The eventually operator of LTL](eventually.md)
-- [The always operator of LTL](always.md)
-- [The release operator of LTL](release.md)

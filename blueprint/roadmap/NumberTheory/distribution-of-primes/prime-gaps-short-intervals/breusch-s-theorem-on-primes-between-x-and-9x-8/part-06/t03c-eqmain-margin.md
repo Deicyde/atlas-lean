@@ -22,10 +22,10 @@ This node has no prerequisites.
 - [Evaluation of a three-term rational sum](c9-eq.md)
 - [Logarithm of 10](log10-eq.md)
 - [Upper bound for log 17](log17-lt.md)
-- [Lower bound for log 2](log2-gt.md)
+- [Lower bound for log 2](../part-05/log2-gt.md)
 - [Logarithm of 3.4](log34div10-eq.md)
-- [Upper bound for log 3](log3-lt.md)
-- [Lower bound for log 5](log5-gt.md)
+- [Upper bound for log 3](../part-05/log3-lt.md)
+- [Lower bound for log 5](../part-05/log5-gt.md)
 - [Logarithm of 9](log9-eq.md)
 
 ## Sources

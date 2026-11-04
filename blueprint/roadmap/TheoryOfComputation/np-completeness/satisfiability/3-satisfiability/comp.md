@@ -25,9 +25,9 @@ as the SAT tokenizer's six stacks followed by the given list of $E$'s stacks.
 - [Program of the tokenize-then-emit machine](prog-3.md)
 - [List of the tokenizer's stacks](tok-ks.md)
 - [Alphabets of the tokenize-then-emit machine](untitled-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/k.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
 
 ## Sources
 

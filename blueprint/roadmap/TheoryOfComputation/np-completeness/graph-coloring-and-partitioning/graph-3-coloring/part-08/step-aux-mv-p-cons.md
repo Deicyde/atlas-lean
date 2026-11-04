@@ -20,12 +20,12 @@ gets $c_1$ and then $c_2$ pushed on top (so $c_2$ is on top).
 - [Stacks of the 3-COLOR verifier](../part-07/k.md)
 - [Labels of the 3-COLOR verifier](../part-07/lab.md)
 - [Moving one color code in the 3-COLOR verifier](../part-07/mv-p.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 
-- [Interleaved updates of two stacks of the 3-COLOR verifier](update-update-update-update.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Interleaved updates of two stacks of the 3-COLOR verifier](../part-07/update-update-update-update.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 
 ## Sources
 

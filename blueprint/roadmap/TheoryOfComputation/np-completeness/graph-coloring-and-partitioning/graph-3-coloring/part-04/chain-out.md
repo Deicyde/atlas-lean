@@ -14,7 +14,7 @@ bits of the last site lie on top.
 
 ## Depends on
 
-- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Copy sites of the 3-COLOR emitter](../part-03/site.md)
 
 ## Proof depends on

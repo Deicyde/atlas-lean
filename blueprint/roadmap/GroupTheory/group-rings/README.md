@@ -2,7 +2,6 @@
 
 Group rings and group algebras: unit and zero-divisor questions (Kaplansky unit conjecture), Zassenhaus conjectures, augmentation and dimension subgroups, Ore conditions, Jordan decomposition, projective modules over group rings.
 
-- [Augmentation right ideal of a subset](augmentation-right-ideal.md)
 - [Dimension subgroups](dimension-subgroups/README.md)
 - [Group-ring powers in fields](group-ring-powers-in-fields/README.md)
 - [Inversion on commutative group rings](inversion-on-commutative-group-rings/README.md)
@@ -13,3 +12,4 @@ Group rings and group algebras: unit and zero-divisor questions (Kaplansky unit 
 - [Right ideals of free group algebras](right-ideals-of-free-group-algebras/README.md)
 - [Units of integral group rings](units-of-integral-group-rings/README.md)
 - [Zassenhaus conjectures](zassenhaus-conjectures/README.md)
+- [Augmentation right ideal of a subset](augmentation-right-ideal.md)

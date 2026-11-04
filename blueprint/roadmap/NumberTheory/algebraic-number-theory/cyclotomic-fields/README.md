@@ -2,7 +2,6 @@
 
 Cyclotomic fields and polynomials, real cyclotomic polynomials, 2cos(2πk/n), cyclotomic units, ramification and inertness in cyclotomic fields.
 
-- [Embedding a cyclotomic extension of the rationals](exists-ring-hom-zeta-eq-of-is-cyclotomic.md)
 - [Homogenized cyclotomic polynomials](homogenized-cyclotomic-polynomials/README.md)
 - [Infinite cyclotomic products](infinite-cyclotomic-products/README.md)
 - [Prime divisor bounds for cyclotomic values](prime-divisor-bounds-for-cyclotomic-values/README.md)
@@ -10,3 +9,4 @@ Cyclotomic fields and polynomials, real cyclotomic polynomials, 2cos(2πk/n), cy
 - [Real cyclotomic polynomials and 2cos(2πk/n)](real-cyclotomic-polynomials-and-2cos-2-k-n/README.md)
 - [Subfields of cyclotomic fields](subfields-of-cyclotomic-fields/README.md)
 - [Trace metric on cyclotomic fields](trace-metric-on-cyclotomic-fields/README.md)
+- [Embedding a cyclotomic extension of the rationals](exists-ring-hom-zeta-eq-of-is-cyclotomic.md)

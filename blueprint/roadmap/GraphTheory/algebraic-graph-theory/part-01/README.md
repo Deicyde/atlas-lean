@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Andrásfai graph to Vertex-transitive graph
+# Part 1 of 2
 
-- [Andrásfai graph](andrasfai-graph.md)
 - [Arc-transitive graphs](arc-transitive-graphs/README.md)
 - [Arithmetical structures on graphs](arithmetical-structures-on-graphs/README.md)
 - [Cycle-continuous maps](cycle-continuous-maps/README.md)
@@ -15,6 +14,8 @@ navigation: transparent
 - [Johnson graphs](johnson-graphs/README.md)
 - [Kirchhoff's matrix-tree theorem](kirchhoff-s-matrix-tree-theorem/README.md)
 - [Strongly regular graphs](strongly-regular-graphs/README.md)
+- [ε-light vertex sets](light-vertex-sets/README.md)
+- [Andrásfai graph](andrasfai-graph.md)
 - [Cayley digraph](directed-cayley-graph.md)
 - [Cayley's formula](cayley-formula.md)
 - [Coxeter graph](coxeter-graph.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Moore graph](is-moore-graph.md)
 - [Petersen graph](petersen-graph.md)
 - [Powers of a weighted adjacency matrix sum the weights of walks](adj-matrix-pow-weighted-walk-sum.md)
-- [Vertex-transitive graph](is-vertex-transitive.md)

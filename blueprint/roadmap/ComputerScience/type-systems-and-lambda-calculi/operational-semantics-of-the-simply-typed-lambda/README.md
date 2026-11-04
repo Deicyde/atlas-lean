@@ -4,6 +4,15 @@ navigation: module
 
 # Operational semantics of the simply typed lambda calculus
 
+- [Values of STLC](value-2.md)
+- [Small-step call-by-value reduction in STLC](step.md)
+- [Values are irreducible](value-irreducible.md)
+- [Canonical forms for closed function values](closed-function-value-is-lam.md)
+- [Progress for closed STLC terms](progress.md)
+- [Small-step call-by-value reduction in STLC is deterministic](deterministic-2.md)
+- [Normal forms for call-by-value reduction in STLC](normal-form.md)
+- [Closed normal forms are exactly the values](closed-normal-form-iff-value.md)
+- [Multi-step call-by-value reduction in STLC](steps.md)
 - [Big-step call-by-value evaluation in the simply typed lambda calculus](eval.md)
 - [Big-step evaluation produces values](value.md)
 - [Values evaluate to themselves](value-self.md)
@@ -15,12 +24,3 @@ navigation: module
 - [Determinism of big-step evaluation in the simply typed lambda calculus](deterministic.md)
 - [Closed simply typed terms have a big-step evaluation](exists-closed.md)
 - [Termination in terms of big-step evaluation](terminates-iff-eval.md)
-- [Values of STLC](value-2.md)
-- [Small-step call-by-value reduction in STLC](step.md)
-- [Values are irreducible](value-irreducible.md)
-- [Canonical forms for closed function values](closed-function-value-is-lam.md)
-- [Progress for closed STLC terms](progress.md)
-- [Small-step call-by-value reduction in STLC is deterministic](deterministic-2.md)
-- [Normal forms for call-by-value reduction in STLC](normal-form.md)
-- [Closed normal forms are exactly the values](closed-normal-form-iff-value.md)
-- [Multi-step call-by-value reduction in STLC](steps.md)

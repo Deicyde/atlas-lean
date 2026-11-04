@@ -20,8 +20,8 @@ label whatever color it moves.
 - [Stacks of the 3-COLOR verifier](../part-07/k.md)
 - [Labels of the 3-COLOR verifier](../part-07/lab.md)
 - [Moving one color code in the 3-COLOR verifier](../part-07/mv-p.md)
-- [One step of the joint walk of the 3-COLOR verifier](walk-s.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [One step of the joint walk of the 3-COLOR verifier](../part-07/walk-s.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Unary counter](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
 
 ## Sources

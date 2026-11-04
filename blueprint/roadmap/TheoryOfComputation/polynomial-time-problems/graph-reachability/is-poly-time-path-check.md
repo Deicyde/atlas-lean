@@ -36,7 +36,7 @@ to the canonical bitstring encodings of lists of booleans and of booleans.
 - [Start label of the PATH marking machine](start.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [The marking machine as a host component](path-comp.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 - [Runs within a step budget](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 

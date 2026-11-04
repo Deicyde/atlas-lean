@@ -19,7 +19,7 @@ $\mathsf{no}$ from the configuration $(l, v, S)$ within one step.
 - [Labels of the SUBSET-SUM verifier](lab-2.md)
 - [Rejection by the SUBSET-SUM verifier within a step bound](rej.md)
 - [The SUBSET-SUM verifier program](prog-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 

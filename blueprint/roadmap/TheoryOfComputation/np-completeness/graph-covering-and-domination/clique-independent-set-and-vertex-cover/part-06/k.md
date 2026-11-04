@@ -2,15 +2,13 @@
 declaration: inductive
 origin: cited
 statement: formalized
-lean: Cslib.Complexity.Karp.KGVerify.K
+lean: Cslib.Complexity.Karp.KGMap.K
 ---
 
-# Stacks of the CLIQUE verifier
+# Stacks of the CLIQUE to VERTEX-COVER reduction machine
 
-**Stacks of the CLIQUE verifier.** The verifier machine for CLIQUE, INDEPENDENT-SET and
-VERTEX-COVER, run on an instance with target size $k$ and $n$ vertices, has six stacks: the
-input $X$, the witness $W$, the counter $C$ (holding $k$), the counter $N$ (holding $n$), the
-vertex stack $V$ and its scratch stack $T$.
+**Stacks of the CLIQUE to VERTEX-COVER reduction machine.** Stacks: input `X`, output `O`, counters `A` (`k`), `B` (`n`), `D` (`n`, then `n - k`), and
+the reversed pair bits `Y`.
 
 ## Depends on
 
@@ -18,4 +16,4 @@ This node has no prerequisites.
 
 ## Sources
 
-- [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueVerify](../../../../../../sources/v2/CSLibExt.md)
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.KGMap](../../../../../../sources/v2/CSLibExt.md)

@@ -87,7 +87,7 @@ instance with no numbers and target $1$ to $O$ and go to $\mathrm{done}$. $\math
 - [Test for the value symbol true (SUBSET-SUM reduction machine)](is-v.md)
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Fixed no-instance of SUBSET-SUM](no-ss.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Flag bit of a machine state](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
 - [One round of counter comparison](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cmp-step.md)
 - [Decrement](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/decr.md)

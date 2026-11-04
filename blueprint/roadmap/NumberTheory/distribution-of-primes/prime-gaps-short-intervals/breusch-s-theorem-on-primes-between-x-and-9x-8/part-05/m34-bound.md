@@ -19,8 +19,8 @@ $10^{5t-5} \cdot M(t) \le 34^{5t-5}$, that is, $M(t) \le 3.4^{5t-5}$.
 
 ## Proof depends on
 
-- [Power bound for the multinomial coefficient $M(t)$, large $t$](m34-bound-large.md)
-- [Power bound for the multinomial coefficient $M(t)$, small $t$](m34-bound-small.md)
+- [Power bound for the multinomial coefficient $M(t)$, large $t$](../part-04/m34-bound-large.md)
+- [Power bound for the multinomial coefficient $M(t)$, small $t$](../part-04/m34-bound-small.md)
 
 ## Sources
 

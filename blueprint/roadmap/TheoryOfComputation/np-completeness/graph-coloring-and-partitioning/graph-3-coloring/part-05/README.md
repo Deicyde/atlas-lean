@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# Moving an earlier name from $D$ to $E$ to The size invariant survives a new literal occurrence
+# 3-COLOR emitter: moving the walk side back to The emitter on a list of clauses
 
-- [Moving an earlier name from $D$ to $E$](mv-n-run.md)
-- [Skipping an earlier literal vertex](sk-u-run.md)
-- [Moving an earlier literal vertex from $D$ to $U$](mv-u-run.md)
-- [Moving $U$ onto $E$](dr-run.md)
-- [The 3-COLOR emitter clears its OR-output counter](clr-run.md)
-- [Adding the vertex counter to the OR output](f-ab-run.md)
 - [3-COLOR emitter: moving the walk side back](back-run.md)
 - [Recording the current occurrence](put-run.md)
 - [Copy sites of the occurrence triangle](occ-sites.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Size invariant of the 3-coloring emitter](inv.md)
 - [One more token preserves the 3-COLOR emitter's size invariant](bump.md)
 - [The size invariant survives a new literal occurrence](occ.md)
+- [Per-token step budget of the 3-COLOR emitter](budget.md)
+- [The emitter state of a construction state](enc.md)
+- [Step budget for one literal](lit-cost.md)
+- [The emitter processes the remaining literals of a clause](lits-run.md)
+- [The 3-COLOR emitter processes one clause](clause-run.md)
+- [The emitter on a list of clauses](formula-run.md)

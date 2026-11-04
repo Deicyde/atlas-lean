@@ -4,6 +4,11 @@ navigation: module
 
 # Cramér's theorem
 
+- [Law of the empirical mean](empirical-mean-measure-vec.md)
+- [Real-valued log-MGF expression](log-mgfvec.md)
+- [Chernoff bound for the empirical mean of real-valued i.i.d. variables](measure-empirical-mean-le-of-threshold.md)
+- [Fixed-direction Chernoff bound](cramer-upper-bound.md)
+- [Fixed-direction Chernoff bound, rate form](cramer-upper-bound-rate.md)
 - [Extended log moment generating function of a random vector](extended-log-mgfvec.md)
 - [Cramér rate function](cramer-rate-function.md)
 - [Log moment generating function vanishes at zero](log-mgfvec-zero.md)
@@ -24,8 +29,3 @@ navigation: module
 - [Cramér rate function as a real supremum under finite moments](cramer-rate-function-eq-of-real-i-sup.md)
 - [Cramér rate function vanishes at the mean](cramer-rate-function-eq-zero-at-mean.md)
 - [Cramér rate function of a constant law](cramer-rate-function-const.md)
-- [Law of the empirical mean](empirical-mean-measure-vec.md)
-- [Real-valued log-MGF expression](log-mgfvec.md)
-- [Chernoff bound for the empirical mean of real-valued i.i.d. variables](measure-empirical-mean-le-of-threshold.md)
-- [Fixed-direction Chernoff bound](cramer-upper-bound.md)
-- [Fixed-direction Chernoff bound, rate form](cramer-upper-bound-rate.md)

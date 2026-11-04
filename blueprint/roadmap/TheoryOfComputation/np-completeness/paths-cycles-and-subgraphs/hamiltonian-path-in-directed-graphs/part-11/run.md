@@ -24,7 +24,7 @@ The machine in fact takes quadratically many steps; the theorem states only the 
 - [The HAMPATH verifier](../part-02/ham-check.md)
 - [The Hamiltonian path verifier machine](../part-10/prog.md)
 - [Start label of the Hamiltonian-path verifier](../part-10/start.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
@@ -42,8 +42,8 @@ The machine in fact takes quadratically many steps; the theorem states only the 
 - [Moving a stack of bits](../part-10/mv-run.md)
 - [The unary reader of the Hamiltonian path verifier rejects an unterminated number](../part-10/read-u-none.md)
 - [The unary reader of the Hamiltonian path verifier reads a terminated number](../part-10/read-u-run.md)
-- [The edge-list check of the Hamiltonian-path verifier](val-e-run.md)
-- [The witness check of the Hamiltonian-path verifier](val-w-run.md)
+- [The edge-list check of the Hamiltonian-path verifier](../part-10/val-e-run.md)
+- [The witness check of the Hamiltonian-path verifier](../part-10/val-w-run.md)
 - [The walk check of the HAMPATH verifier](../part-03/walk-ok.md)
 - [The machine's walk is the check](../part-03/walk-ok-eq.md)
 - [Decoding a graph](../../../graph-coloring-and-partitioning/graph-3-coloring/part-01/decode-e.md)

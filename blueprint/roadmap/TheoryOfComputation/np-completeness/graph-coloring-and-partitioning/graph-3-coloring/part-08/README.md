@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# One step of the joint walk of the 3-COLOR verifier to The unary reader rejects an unterminated number
+# Moving one color code from the color stack to The 3-COLOR verifier as a host component
 
-- [One step of the joint walk of the 3-COLOR verifier](walk-s.md)
-- [One step of the walk towards the farther endpoint](walk1-s.md)
-- [The 3-COLOR verifier machine](prog.md)
-- [Start label of the 3-coloring verifier](start.md)
-- [One step of the 3-COLOR verifier](run-one.md)
-- [Interleaved updates of two stacks of the 3-COLOR verifier](update-update-update-update.md)
 - [Moving one color code from the color stack](step-aux-mv-p-cons.md)
 - [The color-moving block rejects on an empty color stack](step-aux-mv-p-nil.md)
 - [Walk-on step with the counter exhausted](step-aux-walk1-s-nil.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [The joint walk of the 3-COLOR verifier decides one edge](walk-run.md)
 - [The unary reader on a terminated number](read-u-some.md)
 - [The unary reader rejects an unterminated number](read-u-none.md)
+- [Run of the load phase of the 3-COLOR verifier](load-run.md)
+- [Edge-loop verdict after one parsed edge](edges-ok-of-some-some.md)
+- [Restoring the color stack in the 3-COLOR verifier](back-run.md)
+- [Correctness and running time of the edge loop](edges-run.md)
+- [Correctness and time bound of the 3-coloring verifier machine](run.md)
+- [The 3-COLOR verifier as a host component](col-verify-comp.md)

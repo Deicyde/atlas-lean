@@ -15,7 +15,7 @@ $0, \dots, n-1$ read from $w$.
 
 ## Depends on
 
-- [Witness colors of the first $n$ vertices](cols.md)
+- [Witness colors of the first $n$ vertices](../part-06/cols.md)
 
 ## Proof depends on
 

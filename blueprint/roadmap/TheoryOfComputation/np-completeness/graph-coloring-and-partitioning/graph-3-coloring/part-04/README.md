@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# Literal-marker test to Name comparison in the 3-COLOR emitter
+# Stacks of a quiescent state to Adding the vertex counter to the OR output
 
-- [Literal-marker test](is-lit.md)
-- [Reading unary units](unit-of.md)
-- [Bits of the palette triangle](pal.md)
-- [The 3-COLOR emitter machine](prog.md)
-- [Start label of the 3-coloring emitter](start.md)
-- [Quiescent states of the 3-COLOR emitter](ms.md)
 - [Stacks of a quiescent state](stk.md)
 - [Counter values of a quiescent state](val.md)
 - [Counters are not held on the output stack](k-ne-o.md)
@@ -24,3 +18,9 @@ navigation: transparent
 - [Encoding of an earlier occurrence on stack $D$](d-tok.md)
 - [Moving the current name from $T$ to $A$](nm-run.md)
 - [Name comparison in the 3-COLOR emitter](cmp-run.md)
+- [Moving an earlier name from $D$ to $E$](mv-n-run.md)
+- [Skipping an earlier literal vertex](sk-u-run.md)
+- [Moving an earlier literal vertex from $D$ to $U$](mv-u-run.md)
+- [Moving $U$ onto $E$](dr-run.md)
+- [The 3-COLOR emitter clears its OR-output counter](clr-run.md)
+- [Adding the vertex counter to the OR output](f-ab-run.md)

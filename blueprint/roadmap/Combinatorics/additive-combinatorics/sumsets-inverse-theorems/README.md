@@ -2,7 +2,6 @@
 
 Size and structure of A+B, hA and restricted or signed sumsets: Cauchy–Davenport and Vosper, Freiman-type and polynomial Freiman–Ruzsa theorems, small doubling, sums of dilates, h-fold sumsets with distinct terms, rectification, sets determined by k-sums, max-min (lunar) decompositions, and sum-product and product-set growth.
 
-- [Cauchy–Davenport–Chowla theorem](cauchy-davenport-chowla.md)
 - [Difference sets of full-dimensional lattice sets](difference-sets-of-full-dimensional-lattice-sets/README.md)
 - [Distinct consecutive sums](distinct-consecutive-sums/README.md)
 - [Explicit sum-product expanders over prime fields](explicit-sum-product-expanders-over-prime-fields/README.md)
@@ -20,3 +19,4 @@ Size and structure of A+B, hA and restricted or signed sumsets: Cauchy–Davenpo
 - [Sums of dilates](sums-of-dilates/README.md)
 - [Sumsets with at least r distinct terms](sumsets-with-at-least-r-distinct-terms/README.md)
 - [Vosper's theorem](vosper-s-theorem/README.md)
+- [Cauchy–Davenport–Chowla theorem](cauchy-davenport-chowla.md)

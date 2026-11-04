@@ -27,8 +27,8 @@ $\mathrm{bit}(e_1), \dots, \mathrm{bit}(e_k), \mathrm{lit}(p)$ on top of $U$.
 - [The clause-length filter program](prog-2.md)
 - [Filter stacks from two lists](st-2.md)
 - [Walking label for a literal count](wl.md)
-- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-01/lit-rev.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [A literal's tokens on the token stack](../../cook-levin/polynomial-time-verifier-for-sat/part-03/lit-rev.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

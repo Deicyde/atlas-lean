@@ -2,11 +2,10 @@
 navigation: transparent
 ---
 
-# Alder's totient function to Totient of the sum of divisors
+# Part 1 of 2
 
 - [Alder's totient function](alder-s-totient-function/README.md)
 - [Average and divisibility of the divisor sum](average-and-divisibility-of-the-divisor-sum/README.md)
-- [Biunitary divisors](biunitary-divisors/README.md)
 - [Dedekind psi function](dedekind-psi-function/README.md)
 - [Divisor-power sums](divisor-power-sums/README.md)
 - [Divisors in short intervals](divisors-in-short-intervals/README.md)
@@ -18,9 +17,10 @@ navigation: transparent
 - [Parity of divisor counts](parity-of-divisor-counts/README.md)
 - [Pillai's gcd-sum function](pillai-s-gcd-sum-function/README.md)
 - [Ramanujan sums](ramanujan-sums/README.md)
-- [Regular integers modulo n](regular-integers-modulo-n/README.md)
 - [Residues of rounded quotients n/k](residues-of-rounded-quotients-n-k/README.md)
 - [Totient of the sum of divisors](totient-of-the-sum-of-divisors/README.md)
+- [Unitary divisors](unitary-divisors/README.md)
+- [Biunitary divisors](biunitary-divisors/README.md)
+- [Regular integers modulo n](regular-integers-modulo-n/README.md)
+- [Values of n + φ(n)](values-of-n-n/README.md)
 - [Ford's theorem on totient multiplicities](ford-totient-multiplicity.md)
-- [Gronwall's theorem](gronwall-sigma-limsup.md)
-- [Relatively prime subset counts](mobius-formula-relatively-prime-subset-c.md)

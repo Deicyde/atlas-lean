@@ -5,5 +5,5 @@ Search and decision procedures from artificial intelligence: A* search, game-tre
 - [A* search algorithm](a-search-algorithm/README.md)
 - [AC-3 algorithm](ac-3-algorithm/README.md)
 - [Alpha–beta pruning](alpha-beta-pruning/README.md)
-- [Policy iteration](policy-iteration/README.md)
 - [Value iteration](value-iteration/README.md)
+- [Policy iteration](policy-iteration/README.md)

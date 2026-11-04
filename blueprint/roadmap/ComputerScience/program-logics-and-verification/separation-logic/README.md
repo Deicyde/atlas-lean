@@ -4,13 +4,6 @@ navigation: module
 
 # Separation logic
 
-- [Store-irrelevant heap assertions](store-irrel.md)
-- [Store-irrelevant frames satisfy the frame-rule side condition](frame-of-store-irrel.md)
-- [Pulling a store fact out of a separating conjunction](star-and-left.md)
-- [Rearranging a separating conjunction](star-swap-right.md)
-- [Local rule for a heap read](read-local.md)
-- [Assignment rule with a store-irrelevant heap assertion](assign-step.md)
-- [Existential rule for separation-logic triples](exists.md)
 - [Heap assertion](hassertion.md)
 - [Entailment of heap assertions](entails.md)
 - [Empty-heap assertion](emp.md)
@@ -24,3 +17,10 @@ navigation: module
 - [Frame rule](frame.md)
 - [Hoare validity embeds into separation validity](of-valid.md)
 - [Framed embedding of Hoare validity](of-valid-frame.md)
+- [Store-irrelevant heap assertions](store-irrel.md)
+- [Store-irrelevant frames satisfy the frame-rule side condition](frame-of-store-irrel.md)
+- [Pulling a store fact out of a separating conjunction](star-and-left.md)
+- [Rearranging a separating conjunction](star-swap-right.md)
+- [Local rule for a heap read](read-local.md)
+- [Assignment rule with a store-irrelevant heap assertion](assign-step.md)
+- [Existential rule for separation-logic triples](exists.md)

@@ -5,5 +5,5 @@ Single-tape machines: configurations, steps, halting, composition of machines, t
 - [Restricting a single-tape machine to a supporting set of states](restricting-a-single-tape-machine-to-a-supportin/README.md)
 - [Decidable and recognizable predicates on single-tape Turing machines](decidable-and-recognizable-predicates-on-single/README.md)
 - [Running two single-tape machines one after the other](running-two-single-tape-machines-one-after-the-o/README.md)
-- [Equivalent tape representations](equivalent-tape-representations/README.md)
 - [Simulating multi-stack machines on a single tape](simulating-multi-stack-machines-on-a-single-tape/README.md)
+- [Equivalent tape representations](equivalent-tape-representations/README.md)

@@ -22,21 +22,21 @@ $$
 
 ## Depends on
 
-- [The $p$-adic valuation of the weighted product](../part-08/nu9.md)
+- [The $p$-adic valuation of the weighted product](../part-07/nu9.md)
 
 ## Proof depends on
 
-- [Continuous Breusch function](../part-07/g9r.md)
+- [Continuous Breusch function](../part-06/g9r.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 - [Value of $10Qn$](../part-08/u9-10-q9.md)
 - [Prime-logarithm bound for one level of $G$](u9-bi-le.md)
-- [$G$ is at most its positive part](u9-g-to-nat.md)
-- [Layer-cake decomposition with three levels](u9-layercake.md)
-- [Logarithms of primes are nonnegative](u9-logp-nonneg.md)
-- [Upper bound for primes where a Möbius-weighted floor sum is at least 1](u9-ple1.md)
-- [Upper bound for primes where a Möbius-weighted floor sum is at least 2](u9-ple2.md)
-- [Upper bound for primes where a Möbius-weighted floor sum is at least 3](u9-ple3.md)
-- [The truncated continuous Breusch function is at most 3](u9-to-nat-le3.md)
+- [$G$ is at most its positive part](../part-08/u9-g-to-nat.md)
+- [Layer-cake decomposition with three levels](../part-08/u9-layercake.md)
+- [Logarithms of primes are nonnegative](../part-08/u9-logp-nonneg.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 1](../part-08/u9-ple1.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 2](../part-08/u9-ple2.md)
+- [Upper bound for primes where a Möbius-weighted floor sum is at least 3](../part-08/u9-ple3.md)
+- [The truncated continuous Breusch function is at most 3](../part-08/u9-to-nat-le3.md)
 - [Single-term valuation identity for large primes](../part-08/nu9-eq-single.md)
 
 ## Sources

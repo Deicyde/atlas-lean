@@ -2,18 +2,8 @@
 navigation: transparent
 ---
 
-# The forward path through the diamonds to The detour arcs of a negative occurrence
+# A row ends at its right end to Consecutive vertices of the contracted path are joined by arcs
 
-- [The forward path through the diamonds](hf-path.md)
-- [Clause vertices picked up by a row](mem-hf-picks.md)
-- [The clause vertices of a row are distinct](nodup-hf-picks.md)
-- [Each clause is picked up by exactly one row](flat-map-hf-picks-perm.md)
-- [The vertices of a diamond row](hf-row-perm.md)
-- [A diamond visit is a block of consecutive vertices plus its clauses](hf-diamond-perm.md)
-- [The first $t$ diamonds occupy consecutive vertices](flat-map-range-hp-t.md)
-- [The forward path visits every vertex once](hf-path-perm.md)
-- [Chain condition for a diamond row](is-chain-hf-row.md)
-- [A row starts at its left end](head-hf-row.md)
 - [A row ends at its right end](get-last-hf-row.md)
 - [Chain condition for a diamond traversal](is-chain-hf-diamond.md)
 - [Chain condition for the forward path](is-chain-hf-path.md)
@@ -24,3 +14,13 @@ navigation: transparent
 - [Row arcs of a diamond](mem-diamond-edges-row.md)
 - [Positive detour arcs of a diamond](mem-diamond-edges-pos.md)
 - [The detour arcs of a negative occurrence](mem-diamond-edges-neg.md)
+- [A satisfying choice gives a Hamiltonian path](is-ham-path-hf-path.md)
+- [Satisfiable formulas give Hamiltonian paths (SAT ≤ HAMPATH, forward direction)](exists-is-ham-path-of-cnf-sat.md)
+- [Out-neighbours of a top](hp-t-arc.md)
+- [Arcs from a row into a clause vertex](hp-r-arc-clause.md)
+- [Row vertices counted from either end](hp-ro.md)
+- [Out-neighbours of a row vertex outside the clause vertices](hp-ro-arc.md)
+- [In-neighbours of a row vertex outside the clause vertices](arc-hp-ro.md)
+- [Deleting the clause vertices from a path](drop-clauses.md)
+- [Contracting a clause detour](infix-drop-clauses.md)
+- [Consecutive vertices of the contracted path are joined by arcs](arc-of-infix-drop-clauses.md)

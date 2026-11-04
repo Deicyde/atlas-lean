@@ -2,14 +2,13 @@
 navigation: transparent
 ---
 
-# A discrete subgroup is a lattice iff it has full rank to Squaring the square with distinct squares
+# Part 1 of 2
 
-- [A discrete subgroup is a lattice iff it has full rank](discrete-full-rank-iff-is-zlattice.md)
 - [Blumenthal's minimax angle problem](blumenthal-s-minimax-angle-problem/README.md)
 - [Continuous Turán numbers of planar patterns](continuous-tur-n-numbers-of-planar-patterns/README.md)
-- [Convex and general position of point sets](convex-and-general-position-of-point-sets/README.md)
 - [Dehn invariant](dehn-invariant/README.md)
 - [Distinct and unit distances](distinct-and-unit-distances/README.md)
+- [Convex and general position of point sets](convex-and-general-position-of-point-sets/README.md)
 - [Equiangular lines](equiangular-lines/README.md)
 - [Equilateral triangles in planar point sets](equilateral-triangles-in-planar-point-sets/README.md)
 - [Kakeya sets in finite fields](kakeya-sets-in-finite-fields/README.md)
@@ -20,7 +19,8 @@ navigation: transparent
 - [Platonic solids and regular polytopes](platonic-solids-and-regular-polytopes/README.md)
 - [Points and spanned hyperplanes](points-and-spanned-hyperplanes/README.md)
 - [Point–line incidences](point-line-incidences/README.md)
+- [Steiner ratio](steiner-ratio/README.md)
+- [A discrete subgroup is a lattice iff it has full rank](discrete-full-rank-iff-is-zlattice.md)
 - [Erdős–Anning theorem](erdos-anning.md)
 - [Euler's polyhedron formula](euler-polyhedron-formula.md)
 - [Monsky's theorem](monsky-theorem.md)
-- [Squaring the square with distinct squares](squaring-the-square-distinct-squares.md)

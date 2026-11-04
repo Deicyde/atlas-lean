@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Contribution of the small-square primes to Upper bound for $\log F_9(n)$ when $(1890n, 2100n)$ has no prime
+# Breusch's theorem from the upper bound to Breusch's theorem on primes between $x$ and $9x/8$
 
-- [Contribution of the small-square primes](u9-c-le.md)
-- [Upper bound for $\log F_9(n)$ when $(1890n, 2100n)$ has no prime](log-f9-upper.md)
+- [Breusch's theorem from the upper bound](breusch-prime-interval-of-upper.md)
+- [Breusch's theorem on primes between $x$ and $9x/8$](breusch-prime-interval.md)

@@ -22,8 +22,8 @@ $P$ as that bit. If $c$ was empty, it runs $f$.
 ## Proof depends on
 
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Reading a symbol as a name bit](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Stack alphabet of the SAT verifier](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Reading a symbol as a name bit](../../np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Bit on top of a stack](../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bit-of.md)
 
 ## Sources

@@ -4,6 +4,11 @@ navigation: module
 
 # Median of medians
 
+- [Group medians for median-of-medians selection](median-of-medians-groups.md)
+- [Comparison cost of the group medians](median-of-medians-groups-time.md)
+- [Group medians come from the input](median-of-medians-groups-mem.md)
+- [Group medians are lower medians of their blocks](median-of-medians-groups-correct.md)
+- [Number of group medians](median-of-medians-groups-length.md)
 - [Median-of-medians selection](median-of-medians.md)
 - [Median-of-medians selection is quickselect on short lists](median-of-medians-eq-quickselect-of-leng.md)
 - [Out-of-range ranks cost no comparisons](median-of-medians-eq-pure-none-of-length.md)
@@ -22,8 +27,3 @@ navigation: module
 - [Cost budget for one median-of-medians step](median-of-medians-combine-time.md)
 - [Median of medians makes linearly many comparisons](median-of-medians-time.md)
 - [Linear solution of the median-of-medians recurrence](median-of-medians-linear-recurrence.md)
-- [Group medians for median-of-medians selection](median-of-medians-groups.md)
-- [Comparison cost of the group medians](median-of-medians-groups-time.md)
-- [Group medians come from the input](median-of-medians-groups-mem.md)
-- [Group medians are lower medians of their blocks](median-of-medians-groups-correct.md)
-- [Number of group medians](median-of-medians-groups-length.md)

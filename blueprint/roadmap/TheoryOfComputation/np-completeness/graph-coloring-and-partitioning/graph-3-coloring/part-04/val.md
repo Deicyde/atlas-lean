@@ -14,7 +14,7 @@ earlier literal vertex $u$ of $m$.
 
 ## Depends on
 
-- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Quiescent states of the 3-COLOR emitter](../part-03/ms.md)
 - [Counters read by copy sites of the 3-COLOR emitter](../part-03/src.md)
 
 ## Sources

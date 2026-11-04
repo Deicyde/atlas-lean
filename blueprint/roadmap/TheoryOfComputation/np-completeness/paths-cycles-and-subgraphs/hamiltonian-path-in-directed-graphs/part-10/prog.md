@@ -70,19 +70,19 @@ The verifier parses and validates the input and the witness, then walks the vert
 
 - [Stacks of the Hamiltonian path verifier](../part-09/k.md)
 - [Labels of the Hamiltonian path verifier](../part-09/lab.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 
 - [Counter comparisons of the HAMPATH verifier](../part-09/ci.md)
-- [First counter of a HAMPATH-verifier comparison](ca.md)
-- [Second counter of a HAMPATH-verifier comparison](cb.md)
-- [Step of the HAMPATH verifier's unary comparison loop](cb-s.md)
+- [First counter of a HAMPATH-verifier comparison](../part-09/ca.md)
+- [Second counter of a HAMPATH-verifier comparison](../part-09/cb.md)
+- [Step of the HAMPATH verifier's unary comparison loop](../part-09/cb-s.md)
 - [Exit labels of the counter comparisons](cout.md)
-- [Emptiness test](if-e.md)
-- [The unary reader of the Hamiltonian path verifier](read-u.md)
-- [The unary mover of the Hamiltonian path verifier](skip-u.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Emptiness test](../part-09/if-e.md)
+- [The unary reader of the Hamiltonian path verifier](../part-09/read-u.md)
+- [The unary mover of the Hamiltonian path verifier](../part-09/skip-u.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Flag bit of a machine state](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
 - [One round of counter comparison](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cmp-step.md)
 - [Counter increment](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/incr.md)

@@ -19,7 +19,7 @@ machine's exit label, and every other label of $E$ to its own copy among the emi
 ## Proof depends on
 
 - [Exit label of the tokenize-then-emit machine](fin.md)
-- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/lab.md)
+- [Labels of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/lab.md)
 
 ## Sources
 

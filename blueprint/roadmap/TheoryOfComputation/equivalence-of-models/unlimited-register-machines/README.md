@@ -4,9 +4,6 @@ navigation: module
 
 # Unlimited register machines
 
-- [A URM-computable total function is computed by a multi-stack Turing machine](urm-computable-to-tm2.md)
-- [URM-decidability implies multi-stack decidability](urm-decidable-to-tm2-decidable.md)
-- [URM-recognizability implies multi-stack recognizability](urm-recognizable-to-tm2-recognizable.md)
 - [Code of a URM instruction](encode-instr.md)
 - [Tag of an instruction code](encode-instr-unpair-fst.md)
 - [Payload of an instruction code](encode-instr-unpair-snd.md)
@@ -51,3 +48,6 @@ navigation: module
 - [A URM-decidable predicate is decidable by a multi-stack Turing machine](tm2-decidable.md)
 - [A URM-recognizable predicate is recognizable by a single-tape Turing machine](single-tape-recognizable.md)
 - [A URM-recognizable predicate is recognizable by a multi-stack Turing machine](tm2-recognizable.md)
+- [A URM-computable total function is computed by a multi-stack Turing machine](urm-computable-to-tm2.md)
+- [URM-decidability implies multi-stack decidability](urm-decidable-to-tm2-decidable.md)
+- [URM-recognizability implies multi-stack recognizability](urm-recognizable-to-tm2-recognizable.md)

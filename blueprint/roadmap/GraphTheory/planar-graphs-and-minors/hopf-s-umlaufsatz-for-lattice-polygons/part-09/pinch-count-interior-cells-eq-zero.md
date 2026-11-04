@@ -16,7 +16,7 @@ lean: StatMech.Onsager.WalkCellLocal.pinchCount_interiorCells_eq_zero
 - [Vertices of a lattice walk from its step directions](../part-01/pos.md)
 - [Unit lattice step in a given direction](../part-01/step-of.md)
 - [Number of pinch points](../../discrete-gauss-bonnet-formula-for-polyominoes/pinch-count.md)
-- [Cells of the bounded face of a simple closed walk](../part-10/interior-cells.md)
+- [Cells of the bounded face of a simple closed walk](interior-cells.md)
 
 ## Proof depends on
 

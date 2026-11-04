@@ -16,7 +16,7 @@ numbers $m$ and $n$.
 
 ## Depends on
 
-- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Scaled factorial argument $N_{10}$](../part-02/n10m.md)
 - [The modulus $Q_9 = 210$](../part-01/q9.md)
 
 ## Sources

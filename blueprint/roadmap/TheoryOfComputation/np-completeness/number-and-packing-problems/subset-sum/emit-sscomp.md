@@ -23,7 +23,7 @@ the list of its stacks names each of the fifteen stacks exactly once.
 - [Labels of the subset-sum emitter](lab.md)
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Sources
 

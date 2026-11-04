@@ -3,47 +3,54 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Cslib.Complexity.Karp.KGVerify.run
+lean: Cslib.Complexity.Karp.KGMap.run
 ---
 
-# The verifier machine for clique, independent set and vertex cover
+# Correctness and running time of the KG-map machine
 
-**The verifier machine for clique, independent set and vertex cover.** Let $m$ be a
-mode, $x$ and $w$ lists of bits, $v$ a state and $S$ stack contents in which the input
-stack $X$ holds the bits of $x$, the witness stack $W$ holds the bits of $w$, and every other
-stack is empty. Then there are a state $v'$ and stack contents $S'$ such that within at most
-$8(|x| + |w| + 1)^3$ steps the verifier program of mode $m$ goes from the start label with
-state $v$ and stacks $S$ to state $v'$ and stacks $S'$ at the accepting label if the
-verifier check of mode $m$ accepts $x$ with witness $w$, and at the rejecting label
-otherwise.
+**Correctness and running time of the KG-map machine.** Let $m$ be a mode and $x$ a list of
+bits, and let $F_m$ be the clique-to-independent-set map on bit strings for flip and the
+independent-set-to-vertex-cover map for vc. From any configuration of the KG-map machine $M_m$
+at its start label, with any internal bit, in which stack $X$ holds the input symbols
+$\mathrm{bit}(b)$ for the bits $b$ of $x$, top first, and every other stack is empty, $M_m$
+reaches the halting label in at most $3(|x| + 1)$ steps with the output stack $O$ equal to
+$F_m(x)$, top first.
 
 ## Depends on
 
-- [Stacks of the CLIQUE verifier](../part-06/k.md)
-- [Labels of the CLIQUE verifier](../part-06/lab.md)
-- [Modes of the clique verifier](../part-05/mode.md)
-- [The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER](../part-05/kg-check.md)
-- [Program of the clique verifier](../part-06/prog.md)
-- [Start label of the clique verifier](../part-06/start.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stacks of the CLIQUE to VERTEX-COVER reduction machine](../part-06/k.md)
+- [Labels of the KG-map machine](../part-06/lab.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](../part-06/mode.md)
+- [Reduction computed in each mode](../part-06/f.md)
+- [The KG-map machine](prog.md)
+- [Start label of the KG-map machine](start.md)
+- [Stack alphabets of the clique reduction machine](../part-06/untitled.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
 
-- [Pair condition of the clique verifier](../part-05/ok.md)
-- [The verifier as a row-by-row check](../part-05/kg-check-eq-rows-ok.md)
-- [Run of the load phase](load-run.md)
-- [Reading an unterminated unary number rejects](read-u-none.md)
-- [The clique verifier's unary reader succeeds](../part-06/read-u-some.md)
-- [The row-by-row check of the clique verifier](../part-05/rows-ok.md)
-- [All rows of the clique verifier's walk](rows-run.md)
-- [Decoding a graph instance](../part-01/decode-kg.md)
+- [Pair-bit transform of each mode](../part-06/fb.md)
+- [Label after the move phase of the KG-map machine](next.md)
+- [Counter unit symbol of the clique reduction machine](../part-06/u.md)
+- [Moving the pair bits onto stack $Y$](mv-run.md)
+- [Output phase of the KG-map machine](out-run.md)
+- [Unterminated first unary number in the KG-map machine](rd-k-none.md)
+- [Reading the first unary number in the KG-map machine](rd-k-some.md)
+- [Unterminated second unary number in the KG-map machine](rd-n-none.md)
+- [Reading the second unary number in the KG-map machine](rd-n-some.md)
+- [Failed subtraction in the KG-map machine](sub-gt.md)
+- [Subtraction loop of the clique reduction machine](sub-le.md)
 - [Encoding of a graph instance](../part-01/encode-kg.md)
-- [Vertex pairs in encoding order](../part-01/pairs.md)
+- [Fixed no-instance](../part-01/no-kg.md)
 - [Reading a unary length prefix](../../../cook-levin/binary-encoding-of-cnf-formulas/read-unary-length.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
+- [A single step executes the statement at the current label](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/single.md)
 - [Unary counter](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cnt.md)
+- [Pushing a constant list](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/emit.md)
+- [Prepending a constant list](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/push-list.md)
 
 ## Sources
 
-- [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueVerify](../../../../../../sources/v2/CSLibExt.md)
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.KGMap](../../../../../../sources/v2/CSLibExt.md)

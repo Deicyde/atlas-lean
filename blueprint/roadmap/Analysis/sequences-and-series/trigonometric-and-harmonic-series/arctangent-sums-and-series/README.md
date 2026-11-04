@@ -4,9 +4,9 @@ navigation: module
 
 # Arctangent sums and series
 
-- [Ramanujan's arctangent series for $\log 3 - \pi/4$](ramanujan-part1-ch2-entry3-infinite-eval.md)
 - [Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$, $n \ge 0$](ramanujan-part1-ch2-entry3-general.md)
 - [Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$](ramanujan-part1-ch2-entry3.md)
+- [Ramanujan's arctangent series for $\log 3 - \pi/4$](ramanujan-part1-ch2-entry3-infinite-eval.md)
 - [Ramanujan's finite arctangent sum (Entry 7)](ramanujan-part1-ch2-entry7.md)
 - [Ramanujan's infinite arctangent series (corollary to Entry 7)](ramanujan-part1-ch2-entry7-corollary.md)
 - [Arctangent series over consecutive shifts (Entry 7, Example 1)](ramanujan-part1-ch2-entry7-example1.md)

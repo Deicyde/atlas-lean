@@ -14,11 +14,11 @@ lean: StatMech.Onsager.WalkCellRegion.innerComponent
 - [Site of the hypercubic lattice](../../../graph-families-and-operations/hypercubic-lattice-graphs/site.md)
 - [Vertices of a lattice walk from its step directions](../part-01/pos.md)
 - [Unit lattice step in a given direction](../part-01/step-of.md)
-- [Face graph of a closed walk](walk-region-graph.md)
+- [Face graph of a closed walk](../part-08/walk-region-graph.md)
 
 ## Proof depends on
 
-- [Face below-left of the inside top corner](lex-interior-face.md)
+- [Face below-left of the inside top corner](../part-08/lex-interior-face.md)
 
 ## Sources
 

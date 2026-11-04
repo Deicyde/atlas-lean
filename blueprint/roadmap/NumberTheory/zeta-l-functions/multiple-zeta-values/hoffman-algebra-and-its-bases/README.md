@@ -4,8 +4,6 @@ navigation: module
 
 # Hoffman algebra and its bases
 
-- [Hoffman basis of $\mathfrak{H}^1$](h-one-basis.md)
-- [Hoffman monomial basis of $\mathfrak{H}^0$](h-zero-basis.md)
 - [The letter $x$ as a word](x-word.md)
 - [The letter $y$ as a word](y-word.md)
 - [Entries of an index as positive integers](pnat-entries.md)
@@ -20,3 +18,5 @@ navigation: module
 - [The subalgebra $\mathfrak{H}^0$](h-zero.md)
 - [Empty or admissible indices](is-hzero-index.md)
 - [The type of empty or admissible indices](hzero-index.md)
+- [Hoffman basis of $\mathfrak{H}^1$](h-one-basis.md)
+- [Hoffman monomial basis of $\mathfrak{H}^0$](h-zero-basis.md)

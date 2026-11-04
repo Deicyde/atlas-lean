@@ -23,8 +23,8 @@ previous contents, and with every other stack unchanged.
 - [Stacks of the Hamiltonian path verifier](../part-09/k.md)
 - [Labels of the Hamiltonian path verifier](../part-09/lab.md)
 - [The Hamiltonian path verifier machine](prog.md)
-- [The unary mover of the Hamiltonian path verifier](skip-u.md)
-- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [The unary mover of the Hamiltonian path verifier](../part-09/skip-u.md)
+- [Stack alphabet of the SAT verifier](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on
@@ -32,7 +32,7 @@ previous contents, and with every other stack unchanged.
 - [Extending a reversed unary block](blk-succ.md)
 - [A single step of the Hamiltonian-path verifier](step1.md)
 - [Interleaved stack updates in the Hamiltonian-path verifier](update-update-update-update.md)
-- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 
 ## Sources
 

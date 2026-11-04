@@ -4,8 +4,6 @@ navigation: module
 
 # Representations by x² + 2y²
 
-- [Representations by $x^2 + 2y^2$ as elements of $\mathbb{Z}(\sqrt{-2})$](pair-equiv-sqrt-neg-two-norm-fiber.md)
-- [Number of representations by $x^2 + 2y^2$](x2-add-two-sq-count.md)
 - [The character $\chi_{-2}$ takes the value $1$ at $1$](chi-neg2-one.md)
 - [Divisor sum of the character $\chi_{-2}$](div-chi-neg2-sum.md)
 - [Multiplicativity of the divisor sum of $\chi_{-2}$](div-chi-neg2-sum-mul-of-coprime.md)
@@ -22,3 +20,5 @@ navigation: module
 - [Coordinates of an element of norm $N$ in $\mathbb{Z}(\sqrt{-2})$](re-mul-re-add-two-mul-im-mul-im.md)
 - [Counting representations by $x^2 + 2y^2$ through positive solutions](rep-x2-y2-count-eq-four-mul-pos.md)
 - [Doubling an odd argument leaves the divisor sum of $\chi_{-2}$ unchanged](div-chi-neg2-sum-two-mul-of-odd.md)
+- [Representations by $x^2 + 2y^2$ as elements of $\mathbb{Z}(\sqrt{-2})$](pair-equiv-sqrt-neg-two-norm-fiber.md)
+- [Number of representations by $x^2 + 2y^2$](x2-add-two-sq-count.md)

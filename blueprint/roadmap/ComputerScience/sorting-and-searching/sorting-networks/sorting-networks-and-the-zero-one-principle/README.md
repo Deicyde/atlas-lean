@@ -4,12 +4,6 @@ navigation: module
 
 # Sorting networks and the zero-one principle
 
-- [Spread of a Boolean input](spread.md)
-- [A Boolean input is a threshold of its spread](decide-le-spread.md)
-- [Sorting distinct inputs suffices](sorts-of-sorts-injective.md)
-- [Rank among the values of an input](rank.md)
-- [The ranking permutation](rank-perm.md)
-- [The permutation principle](sorts-of-sorts-perm.md)
 - [Comparator network](network.md)
 - [Comparator](comparator.md)
 - [Running a comparator network](run.md)
@@ -22,3 +16,9 @@ navigation: module
 - [Boolean sorting test](sorts-bool.md)
 - [The Boolean sorting test is correct](sorts-bool-eq-true-iff.md)
 - [A network that passes the Boolean sorting test sorts over every linear order](sorts-of-sorts-bool-2.md)
+- [Spread of a Boolean input](spread.md)
+- [A Boolean input is a threshold of its spread](decide-le-spread.md)
+- [Sorting distinct inputs suffices](sorts-of-sorts-injective.md)
+- [Rank among the values of an input](rank.md)
+- [The ranking permutation](rank-perm.md)
+- [The permutation principle](sorts-of-sorts-perm.md)

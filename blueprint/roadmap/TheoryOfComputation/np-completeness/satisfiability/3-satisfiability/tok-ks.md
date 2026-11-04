@@ -13,7 +13,7 @@ the clause counter $CC$ and the literal counter $LC$.
 
 ## Depends on
 
-- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-02/k.md)
+- [Stacks of the SAT tokenizer](../../cook-levin/polynomial-time-verifier-for-sat/part-04/k.md)
 
 ## Sources
 

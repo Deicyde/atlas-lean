@@ -4,6 +4,7 @@ navigation: module
 
 # Lyndon and primitive words
 
+- [Primitive word](is-primitive-word.md)
 - [Content of a word](witt-word-content.md)
 - [Lyndon word](is-lyndon-word.md)
 - [Content is additive under concatenation](witt-word-content-append.md)
@@ -18,4 +19,3 @@ navigation: module
 - [Primitive words of given content](primitive-words-of-content.md)
 - [Lyndon words are primitive](is-primitive-word-of-is-lyndon-word.md)
 - [Witt's formula for the number of Lyndon words of given content](card-lyndon-words-of-content-eq-witt-mul.md)
-- [Primitive word](is-primitive-word.md)

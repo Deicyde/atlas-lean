@@ -14,8 +14,8 @@ bits.
 
 ## Depends on
 
-- [Labels of the KG-map machine](lab.md)
-- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
+- [Labels of the KG-map machine](../part-06/lab.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](../part-06/mode.md)
 
 ## Sources
 

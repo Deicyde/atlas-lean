@@ -4,6 +4,8 @@ navigation: module
 
 # Hilbert–Schmidt operators
 
+- [Squared Hilbert–Schmidt norm in a family](hs-norm-sq-2.md)
+- [Extended Hilbert–Schmidt norm in a family](hs-ennnorm.md)
 - [Squared ℓ² norm as a sum of squared coordinates](norm-sq-lp-eq-tsum.md)
 - [Square-summability of coordinates of an ℓ² vector](summable-norm-sq-of-mem-p.md)
 - [Square-summable sequences lie in ℓ²](mem-p-of-summable-norm-sq.md)
@@ -63,7 +65,5 @@ navigation: module
 - [Hilbert–Schmidt norm of a rank-one matrix](hs-norm-sq-hs-rank-one.md)
 - [Canonical Hilbert–Schmidt norm equals the matrix norm](canonical-hs-norm-sq-eq-of-real-matrix.md)
 - [Canonical Hilbert–Schmidt norm of the constructed operator](canonical-hs-norm-sq-hs-operator.md)
-- [Squared Hilbert–Schmidt norm in a family](hs-norm-sq-2.md)
-- [Extended Hilbert–Schmidt norm in a family](hs-ennnorm.md)
 - [The Hilbert–Schmidt norm of a finite-rank operator is controlled by its operator norm](exists-hs-norm-le-mul-op-norm-of-finite.md)
 - [The Hilbert–Schmidt norm bounds an operator on unit vectors](norm-apply-le-hs-norm-of-norm-eq-one.md)

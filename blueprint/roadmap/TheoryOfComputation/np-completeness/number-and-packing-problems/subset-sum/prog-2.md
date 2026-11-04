@@ -37,7 +37,7 @@ true it reads a payload bit $b$, going to $\mathsf{no}$ if $X$ has ended.
 
 - [Stacks of the SUBSET-SUM verifier](k-2.md)
 - [Labels of the SUBSET-SUM verifier](lab-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 
 ## Proof depends on
 
@@ -45,7 +45,7 @@ true it reads a payload bit $b$, going to $\mathsf{no}$ if $X$ has ended.
 - [Carry step of the SUBSET-SUM verifier](fin-s.md)
 - [Starting the next number](next-s.md)
 - [Reading one pair of a block](rd-s.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Flag bit of a machine state](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/flag.md)
 - [Bit-block comparison statement](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/cmp-b.md)
 - [Bit-moving loop](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/move-b.md)

@@ -17,8 +17,8 @@ lean: StatMech.Onsager.SingleTopRunProof.top_west_next
 
 ## Proof depends on
 
-- [Horizontal lattice direction](../part-10/is-horiz-edge.md)
-- [Recursion for the y-coordinate of a walk step](../part-10/snd-step.md)
+- [Horizontal lattice direction](../part-03/is-horiz-edge.md)
+- [Recursion for the y-coordinate of a walk step](../part-03/snd-step.md)
 
 ## Sources
 

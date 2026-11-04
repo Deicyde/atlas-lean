@@ -4,15 +4,6 @@ navigation: module
 
 # Weighted shifts
 
-- [Truncated weights](trunc-weights.md)
-- [Truncated weights agree with the weights below the cutoff](trunc-weights-apply-lt.md)
-- [Truncated weights vanish from the cutoff on](trunc-weights-apply-ge.md)
-- [Truncated weights are bounded](bdd-above-trunc-weights.md)
-- [Differences of bounded sequences are bounded](bdd-above-sub.md)
-- [Weighted shift of a difference of weights](weighted-shift-clm-sub.md)
-- [Weighted shifts with truncated weights converge in operator norm](tendsto-weighted-shift-clm-trunc.md)
-- [Compactness criterion for weighted shifts](is-compact-operator-weighted-shift-clm-i.md)
-- [Weighted shifts with eventually vanishing weights are compact](is-compact-operator-weighted-shift-of-fo.md)
 - [Weighted forward shift of a sequence](weighted-shift-fun.md)
 - [Weighted backward shift of a sequence](weighted-backward-fun.md)
 - [Weighted forward shift at index zero](weighted-shift-fun-zero.md)
@@ -46,3 +37,12 @@ navigation: module
 - [Isometric weighted shifts](isometry-weighted-shift-clm-iff.md)
 - [The weighted forward shift with unit weights is the unilateral shift](weighted-shift-clm-one.md)
 - [Unit weights give the plain backward shift](weighted-backward-clm-one.md)
+- [Truncated weights](trunc-weights.md)
+- [Truncated weights agree with the weights below the cutoff](trunc-weights-apply-lt.md)
+- [Truncated weights vanish from the cutoff on](trunc-weights-apply-ge.md)
+- [Truncated weights are bounded](bdd-above-trunc-weights.md)
+- [Differences of bounded sequences are bounded](bdd-above-sub.md)
+- [Weighted shift of a difference of weights](weighted-shift-clm-sub.md)
+- [Weighted shifts with truncated weights converge in operator norm](tendsto-weighted-shift-clm-trunc.md)
+- [Compactness criterion for weighted shifts](is-compact-operator-weighted-shift-clm-i.md)
+- [Weighted shifts with eventually vanishing weights are compact](is-compact-operator-weighted-shift-of-fo.md)

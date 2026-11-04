@@ -26,7 +26,7 @@ to label $t$, local variable true, token stack $R$ and side stack $s$ on top of 
 - [Filter stacks from two lists](st-2.md)
 - [Label after a token](tgt.md)
 - [Walking label for a literal count](wl.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Exact-length runs of a TM2 machine](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run.md)
 
 ## Proof depends on

@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Steiner ratio to Sylvester–Gallai theorem
+# Part 2 of 2
 
-- [Steiner ratio](steiner-ratio/README.md)
+- [Squaring the square with distinct squares](squaring-the-square-distinct-squares.md)
 - [Sylvester–Gallai theorem](sylvester-gallai.md)

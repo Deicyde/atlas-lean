@@ -21,7 +21,7 @@ if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise
 - [The SUBSET-SUM verifier program](prog-2.md)
 - [The SUBSET-SUM verifier](ss-check.md)
 - [Start state of the SUBSET-SUM verifier](start-2.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Runs within a step budget](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/run-le.md)
 
 ## Proof depends on
@@ -39,7 +39,7 @@ if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [The verifier rejects an unterminated target block](tgt-fail.md)
 - [Reading the target block](tgt-run.md)
-- [The binary code of natural numbers is injective](../../cook-levin/polynomial-time-verifier-for-sat/part-04/encode-nat-inj.md)
+- [The binary code of natural numbers is injective](../../cook-levin/polynomial-time-verifier-for-sat/part-02/encode-nat-inj.md)
 - [Decoding a prefix-coded natural number](../../cook-levin/binary-encoding-of-cnf-formulas/decode-nat-prefix.md)
 - [Prefix-free code of a natural number](../../cook-levin/binary-encoding-of-cnf-formulas/encode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../cook-levin/binary-encoding-of-cnf-formulas/undelimit-eq-some-iff.md)

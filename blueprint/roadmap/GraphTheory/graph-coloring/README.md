@@ -2,9 +2,8 @@
 
 Vertex, edge, list and fractional colorings of graphs and the chromatic number, from Brooks' and Vizing's theorems to perfect graphs and the four color theorem.
 
-## [Brooks' theorem to Petersen coloring conjecture](part-01/README.md)
+## [Part 1 of 2](part-01/README.md)
 
-- [Brooks' theorem](part-01/brooks.md)
 - [Centered colorings](part-01/centered-colorings/README.md)
 - [Chromatic number of (0,2)-graphs](part-01/chromatic-number-of-0-2-graphs/README.md)
 - [Chromatic number of wheel-free graphs](part-01/chromatic-number-of-wheel-free-graphs/README.md)
@@ -21,11 +20,12 @@ Vertex, edge, list and fractional colorings of graphs and the chromatic number, 
 - [Odd distance graph](part-01/odd-distance-graph/README.md)
 - [Perfect graphs](part-01/perfect-graphs/README.md)
 - [Petersen coloring conjecture](part-01/petersen-coloring-conjecture/README.md)
+- [Subgraphs of large cochromatic number](part-01/subgraphs-of-large-cochromatic-number/README.md)
+- [Triangle-free subgraphs of large chromatic number](part-01/triangle-free-subgraphs-of-large-chromatic-numbe/README.md)
+- [Brooks' theorem](part-01/brooks.md)
 - [Erdős's theorem on graphs of high girth and high chromatic number](part-01/erdos-high-girth-chromatic.md)
-- [Five color theorem](part-01/five-color-theorem.md)
-- [Mycielski's theorem](part-01/mycielski-theorem.md)
 
-## [Subgraphs of large cochromatic number to Triangle-free subgraphs of large chromatic number](part-02/README.md)
+## [Part 2 of 2](part-02/README.md)
 
-- [Subgraphs of large cochromatic number](part-02/subgraphs-of-large-cochromatic-number/README.md)
-- [Triangle-free subgraphs of large chromatic number](part-02/triangle-free-subgraphs-of-large-chromatic-numbe/README.md)
+- [Five color theorem](part-02/five-color-theorem.md)
+- [Mycielski's theorem](part-02/mycielski-theorem.md)

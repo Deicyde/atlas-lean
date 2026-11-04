@@ -22,8 +22,8 @@ records whether the bits of the block read so far end in false).
 - [Stacks of the SUBSET-SUM verifier](k-2.md)
 - [Labels of the SUBSET-SUM verifier](lab-2.md)
 - [Carry bit of a full adder](carry.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
-- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-03/bit.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
+- [Reading a symbol as a name bit](../../cook-levin/polynomial-time-verifier-for-sat/part-02/bit.md)
 - [Bit on top of a stack](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/bit-of.md)
 
 ## Sources

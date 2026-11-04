@@ -14,7 +14,7 @@ SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, re
 ## Depends on
 
 - [Reading a pair bit or vertex mark](val-of.md)
-- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-03/sym.md)
+- [Stack alphabet of the SAT verifier](../../cook-levin/polynomial-time-verifier-for-sat/part-02/sym.md)
 - [Bit blocks](../../../turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/is-bit-block.md)
 
 ## Sources

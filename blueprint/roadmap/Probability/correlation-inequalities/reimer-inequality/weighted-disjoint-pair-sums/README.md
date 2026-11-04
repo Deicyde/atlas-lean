@@ -4,9 +4,6 @@ navigation: module
 
 # Weighted disjoint-pair sums
 
-- [Expansion of the Reimer deficit over one coordinate](wbutterfly-deficit-identity.md)
-- [Box value of a doubled family under a symmetric weight](wbox-value.md)
-- [Box-value bound fails for non-symmetric weights](wdpairs-not-le-wbox-value-general.md)
 - [First family in the weighted-pair counterexamples](rby-cex-a.md)
 - [Second family in the weighted-pair counterexamples](rby-cex-b.md)
 - [Down- and up-compressing two families can decrease disjoint pairs](rby-separate-compression-strictly-decrea.md)
@@ -17,3 +14,6 @@ navigation: module
 - [Weight of a family of finsets](fmarg.md)
 - [Weight of a family off one coordinate](fmarg-2.md)
 - [Weighted disjoint pairs bounded by the product of family weights](wdpairs-le-mul.md)
+- [Expansion of the Reimer deficit over one coordinate](wbutterfly-deficit-identity.md)
+- [Box value of a doubled family under a symmetric weight](wbox-value.md)
+- [Box-value bound fails for non-symmetric weights](wdpairs-not-le-wbox-value-general.md)

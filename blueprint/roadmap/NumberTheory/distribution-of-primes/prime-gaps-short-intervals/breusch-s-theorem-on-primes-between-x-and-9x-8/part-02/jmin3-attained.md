@@ -14,7 +14,7 @@ satisfies $G_9(963) \ge 3$.
 
 ## Depends on
 
-- [Breusch grid function for $k = 9$](g9.md)
+- [Breusch grid function for $k = 9$](../part-01/g9.md)
 
 ## Sources
 
