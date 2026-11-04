@@ -146,8 +146,13 @@ def link_text(text: str) -> str:
     return text.replace("[", "\\[").replace("]", "\\]")
 
 
-def chunk(title: str, slug: str, children: list) -> Container:
-    """Nest children under parts so that no container exceeds MAX_CHILDREN."""
+def chunk(title: str, slug: str, children: list, ranges: bool = True) -> Container:
+    """Nest children under parts so that no container exceeds MAX_CHILDREN.
+
+    A part is named by its first and last child, from one to the other; a list
+    in dependency order names its parts by number, since such a name would read
+    as a range of titles.
+    """
     if len(children) <= MAX_CHILDREN:
         return Container(title, slug, children)
     size = MAX_CHILDREN
@@ -156,11 +161,11 @@ def chunk(title: str, slug: str, children: list) -> Container:
     parts = [children[start : start + size] for start in range(0, len(children), size)]
     nested = []
     for number, part in enumerate(parts, 1):
-        if len(part) > 1:
+        if len(part) > 1 and ranges:
             name = f"{part[0].title} to {part[-1].title}"
         else:
             name = f"Part {number} of {len(parts)}"
-        page = chunk(name, f"part-{number:02d}", part)
+        page = chunk(name, f"part-{number:02d}", part, ranges)
         page.navigation = "transparent"
         nested.append(page)
     return Container(title, slug, nested)
@@ -400,6 +405,99 @@ def page_title(heading: str) -> str | None:
     return title if 0 < len(title) <= 90 and title[0].isupper() else None
 
 
+def articles(node: Container | Target) -> list[Target]:
+    return [node] if isinstance(node, Target) else [child for child in walk(node) if isinstance(child, Target)]
+
+
+def strongly_connected(nodes: list[int], uses: list[Counter]) -> list[set[int]]:
+    """The strongly connected groups of ``nodes`` under ``uses`` (Tarjan), groups that use no others first."""
+    inside = set(nodes)
+    index: dict[int, int] = {}
+    low: dict[int, int] = {}
+    stack: list[int] = []
+    groups: list[set[int]] = []
+    for root in nodes:
+        if root in index:
+            continue
+        index[root] = low[root] = len(index)
+        stack.append(root)
+        work = [(root, iter([used for used in uses[root] if used in inside]))]
+        while work:
+            node, edges = work[-1]
+            for used in edges:
+                if used not in index:
+                    index[used] = low[used] = len(index)
+                    stack.append(used)
+                    work.append((used, iter([other for other in uses[used] if other in inside])))
+                    break
+                if used in stack:
+                    low[node] = min(low[node], index[used])
+            else:
+                work.pop()
+                if work:
+                    low[work[-1][0]] = min(low[work[-1][0]], low[node])
+                if low[node] == index[node]:
+                    group = set()
+                    while not group or node not in group:
+                        group.add(stack.pop())
+                    groups.append(group)
+    return groups
+
+
+def dependency_order(nodes: list, lead: tuple = ()) -> list:
+    """Siblings in reading order: each after the siblings its articles use.
+
+    A sibling uses another when one of its articles depends, in statement or
+    proof, on one of the other's. Single articles that a sibling page uses lead,
+    with those in ``lead``, then the pages, then the other articles, so the list
+    that shows them never puts an article between two sub-pages. A single that
+    uses a page, or a single that does, follows the pages instead. Ties keep the
+    given order; within a cycle, the sibling that uses the least of it goes first.
+    """
+    owner = {id(target): position for position, node in enumerate(nodes) for target in articles(node)}
+    uses: list[Counter] = [Counter() for _ in nodes]
+    for position, node in enumerate(nodes):
+        for target in articles(node):
+            for other in (*target.depends, *target.proof_depends):
+                used = owner.get(id(other), position)
+                if used != position:
+                    uses[position][used] += 1
+    pages = [position for position, node in enumerate(nodes) if isinstance(node, Container)]
+    chosen = {id(node) for node in lead}
+    leading: set[int] = set()
+    frontier = [used for page in pages for used in uses[page] if isinstance(nodes[used], Target)]
+    frontier += [position for position, node in enumerate(nodes) if id(node) in chosen and isinstance(node, Target)]
+    while frontier:
+        position = frontier.pop()
+        if position not in leading:
+            leading.add(position)
+            frontier += [used for used in uses[position] if isinstance(nodes[used], Target)]
+    blocked = {position for position in leading if any(used in pages for used in uses[position])}
+    while more := {position for position in leading - blocked if any(used in blocked for used in uses[position])}:
+        blocked |= more
+    leading -= blocked
+
+    def ordered(group: list[int]) -> list[int]:
+        rest, result = list(group), []
+        while rest:
+            inside = set(rest)
+            waiting = {position: sum(count for used, count in uses[position].items() if used in inside) for position in rest}
+            pick = next((position for position in rest if not waiting[position]), None)
+            if pick is None:
+                # A cycle: the first group that uses nothing else left, and in it the sibling that uses the least of it.
+                cycles = [group for group in strongly_connected(rest, uses) if all(used in group for position in group for used in uses[position] if used in inside)]
+                cycle = min(cycles, key=lambda group: min(rest.index(position) for position in group))
+                pick = min((position for position in rest if position in cycle),
+                           key=lambda position: sum(count for used, count in uses[position].items() if used in cycle))
+            result.append(pick)
+            rest.remove(pick)
+        return result
+
+    singles = [position for position, node in enumerate(nodes) if isinstance(node, Target)]
+    order = ordered([p for p in singles if p in leading]) + ordered(pages) + ordered([p for p in singles if p not in leading])
+    return [nodes[position] for position in order]
+
+
 def directory_pages(targets: list[Target], depth: int) -> list:
     """The directories and modules below a placed path, as pages, the way the Lean lays them out."""
     root: dict = {"dirs": {}, "modules": defaultdict(list)}
@@ -417,7 +515,7 @@ def directory_pages(targets: list[Target], depth: int) -> list:
             umbrella = (ROOT / Path(*at, name)).with_suffix(".lean")
             title = page_title(module_heading(umbrella.read_text())) if umbrella.is_file() else None
             own = node["modules"].pop(name, [])
-            children.append(chunk(title or topic_title(name), slugify(humanize(name)), own + build(node["dirs"][name], (*at, name))))
+            children.append(chunk(title or topic_title(name), slugify(humanize(name)), own + build(node["dirs"][name], (*at, name)), ranges=False))
         for name in sorted(node["modules"]):
             items = node["modules"][name]
             if len(items) == 1:
@@ -425,7 +523,7 @@ def directory_pages(targets: list[Target], depth: int) -> list:
                 continue
             title = page_title(items[0].module_title) or topic_title(name)
             children.append(module_page(title, items, module_groups(items)))
-        return children
+        return dependency_order(children)
 
     return build(root, targets[0].module[:depth])
 
@@ -449,15 +547,17 @@ def topic_node(title: str, members: dict[str, list[Target]]) -> Container | Targ
     order = list(LIBRARIES)
     keys = sorted(members, key=lambda key: (order.index(key.split("/")[0]), key))
     if all(len(key.split("/")) == len(target.module) for key in keys for target in members[key]):
+        # Modules follow the modules they use; declarations keep their source order.
+        keys = [group.title for group in dependency_order([Container(key, key, members[key]) for key in keys])]
         items = [target for key in keys for target in members[key]]
         if len(items) == 1:
             return items[0]
         return module_page(title, items, module_groups(items) if len(keys) == 1 else None)
-    children = [page for key in keys for page in directory_pages(members[key], len(key.split("/")))]
+    children = dependency_order([page for key in keys for page in directory_pages(members[key], len(key.split("/")))])
     if len(children) == 1 and isinstance(children[0], Container):
         children[0].title, children[0].slug = title, slugify(title)
         return children[0]
-    return chunk(title, slugify(title), namesake_first(title, children))
+    return chunk(title, slugify(title), namesake_first(title, children), ranges=False)
 
 
 def same_title(a: str, b: str) -> bool:
@@ -484,7 +584,8 @@ def namesake_first(title: str, children: list) -> list:
     own = [node for node in children if isinstance(node, Container) and same_title(node.title, title)]
     if not own:
         return children
-    led = [piece for node in own for piece in module_pieces(node)] + [node for node in children if all(node is not other for other in own)]
+    pieces = [piece for node in own for piece in module_pieces(node)]
+    led = dependency_order(pieces + [node for node in children if all(node is not other for other in own)], lead=tuple(pieces))
     return namesake_first(title, led) if len(led) <= MAX_CHILDREN else children
 
 
@@ -505,18 +606,19 @@ def subject_tree(subject: str, targets: list[Target], taxonomy: dict) -> Contain
         at[to.split("/", 1)[1]].append(topic_node(title, members))
 
     def page(spec: dict, children: list) -> Container:
-        node = chunk(spec["title"], spec["slug"], namesake_first(spec["title"], children))
+        node = chunk(spec["title"], spec["slug"], namesake_first(spec["title"], children), ranges=False)
         node.prose = spec["description"]
         return node
 
     fields = []
     for spec in [*entry["fields"], UNPLACED]:
         inner = []
+        # The taxonomy orders fields and subfields; topics follow the topics they use, then their titles.
         for sub in spec["subfields"]:
-            members = sorted(at.pop(f"{spec['slug']}/{sub['slug']}", []), key=lambda node: node.title.casefold())
+            members = dependency_order(sorted(at.pop(f"{spec['slug']}/{sub['slug']}", []), key=lambda node: node.title.casefold()))
             if members:
                 inner.append(page(sub, members))
-        inner += sorted(at.pop(spec["slug"], []), key=lambda node: node.title.casefold())
+        inner += dependency_order(sorted(at.pop(spec["slug"], []), key=lambda node: node.title.casefold()))
         if inner:
             fields.append(page(spec, inner))
     if at:
@@ -589,17 +691,28 @@ def render_library_source(library: str, summary: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def assign_paths(node: Container, directory: Path) -> None:
+def assign_paths(node: Container, directory: Path, kept: dict[str, Path] | None = None) -> None:
+    """Paths for a page's children. Siblings that share a slug are numbered, but a
+    declaration that stays in its folder keeps its file name (``kept``, by Lean
+    name), so reordering siblings never hands its URL to another."""
     node.path = directory / "README.md"
     taken: set[str] = set()
+    staying: set[int] = set()
     for child in node.children:
-        base, number = child.slug, 1
-        while child.slug in taken:
-            number += 1
-            child.slug = f"{base}-{number}"
-        taken.add(child.slug)
+        before = (kept or {}).get(page_key(child)) if isinstance(child, Target) else None
+        if before and before.parent == directory and before.stem not in taken and re.fullmatch(re.escape(child.slug) + r"(?:-\d+)?", before.stem):
+            child.slug = before.stem
+            taken.add(child.slug)
+            staying.add(id(child))
+    for child in node.children:
+        if id(child) not in staying:
+            base, number = child.slug, 1
+            while child.slug in taken:
+                number += 1
+                child.slug = f"{base}-{number}"
+            taken.add(child.slug)
         if isinstance(child, Container):
-            assign_paths(child, directory / child.slug)
+            assign_paths(child, directory / child.slug, kept)
         else:
             child.path = directory / f"{child.slug}.md"
 
@@ -771,6 +884,30 @@ def ids_by_lean() -> dict[str, str]:
     return {name: next(iter(ids)) for name, ids in found.items() if len(ids) == 1}
 
 
+def page_key(target: Target) -> str | None:
+    """How regeneration finds a declaration's current page: its Lean name, or else its source and title."""
+    if target.lean:
+        return target.lean
+    return f"{link_text(target.source[0])}\n{target.title}" if target.source else None
+
+
+def pages_by_lean() -> dict[str, Path]:
+    """The current page of each declaration, by page_key, so a declaration that stays in its folder keeps its file name."""
+    found: dict[str, set[Path]] = defaultdict(set)
+    for path in owned():
+        header = path.read_text().split("---", 2)
+        if len(header) != 3 or header[0].strip():
+            continue
+        lean = re.search(r"(?m)^lean: (\S+)$", header[1])
+        source = re.search(r"(?m)^## Sources\n\n- \[(.*)\]\(", header[2])
+        title = re.search(r"(?m)^# (.*)$", header[2])
+        if lean:
+            found[lean.group(1)].add(path)
+        elif source and title:
+            found[f"{source.group(1)}\n{title.group(1)}"].add(path)
+    return {key: next(iter(paths)) for key, paths in found.items() if len(paths) == 1}
+
+
 def generate() -> dict[Path, str]:
     # The archived v1 release and the standalone code under Atlas/ are not part of
     # the wiki, and both declare many v2 names again. Autoform selects neither
@@ -780,6 +917,7 @@ def generate() -> dict[Path, str]:
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
     known_ids = ids_by_lean()
+    kept = pages_by_lean()
     v2_coverage = []
     taxonomy = load_taxonomy()
     v2_loaded = {library: load_library(library, index, taxonomy) for library in LIBRARIES}
@@ -792,11 +930,7 @@ def generate() -> dict[Path, str]:
     if unplaced:
         print(f"note: {len(unplaced)} modules have no place in {TAXONOMY.relative_to(ROOT)} yet, so their subjects list them "
               f"as not yet classified: {', '.join(unplaced[:5])}{', ...' if len(unplaced) > 5 else ''}", file=sys.stderr)
-    trees = []
-    for subject in subjects:
-        tree = subject_tree(subject, v2_by_subject[subject], taxonomy)
-        assign_paths(tree, ROADMAP / subject)
-        trees.append(tree)
+    # Dependencies come first: they order the topics.
     dependency_file = SOURCES / "v2" / "lean-dependencies.json"
     dependency_data = None
     if dependency_file.is_file():
@@ -805,6 +939,11 @@ def generate() -> dict[Path, str]:
             [target for targets, _ in v2_loaded.values() for target in targets],
             dependency_data["articles"],
         )
+    trees = []
+    for subject in subjects:
+        tree = subject_tree(subject, v2_by_subject[subject], taxonomy)
+        assign_paths(tree, ROADMAP / subject, kept)
+        trees.append(tree)
     every_v2 = Container("v2", "v2", trees)
     lean_counts = Counter(node.lean for node in walk(every_v2) if isinstance(node, Target) and node.lean)
     for node in walk(every_v2):

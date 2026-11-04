@@ -146,6 +146,70 @@ class NavigationTests(unittest.TestCase):
         (topic,) = field.children
         self.assertEqual([child.title for child in topic.children], ["Result 0", "Result 1", "Graham"])
 
+    def test_siblings_follow_the_siblings_their_articles_use(self):
+        a, b, c = (wiki.Container(name, name.lower(), [_target(index)]) for index, name in enumerate("ABC"))
+        a.children[0].depends.append(c.children[0])
+        self.assertEqual([node.title for node in wiki.dependency_order([a, b, c])], ["B", "C", "A"])
+
+    def test_a_single_article_a_page_uses_leads_and_the_others_follow_the_pages(self):
+        page, unused, used = wiki.Container("P", "p", [_target(0)]), _target(2), _target(1)
+        page.children[0].proof_depends.append(used)
+        self.assertEqual([node.title for node in wiki.dependency_order([page, unused, used])], ["Result 1", "P", "Result 2"])
+
+    def test_a_cycle_starts_with_the_sibling_that_uses_least_of_the_rest(self):
+        a, b = wiki.Container("A", "a", [_target(0), _target(1)]), wiki.Container("B", "b", [_target(2)])
+        a.children[0].depends.append(b.children[0])
+        a.children[1].depends.append(b.children[0])
+        b.children[0].depends.append(a.children[0])
+        self.assertEqual([node.title for node in wiki.dependency_order([a, b])], ["B", "A"])
+
+    def test_a_field_lists_a_topic_after_the_topics_it_uses(self):
+        modules = ["CSLibExt/Geometry/Hull/Basic", "CSLibExt/Geometry/Hull/Basic", "MathlibExt/Geometry/Sofa", "MathlibExt/Geometry/Sofa"]
+        targets = [_target(index, module=module) for index, module in enumerate(modules)]
+        (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        self.assertEqual([topic.title for topic in field.children], ["Convex hulls", "Moving sofa problem"])
+        targets[0].depends.append(targets[3])
+        (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+        self.assertEqual([topic.title for topic in field.children], ["Moving sofa problem", "Convex hulls"])
+
+    def test_a_sibling_that_uses_a_cycle_follows_the_whole_cycle(self):
+        a = wiki.Container("A", "a", [_target(0)])
+        b, c = (wiki.Container(name, name.lower(), [_target(index), _target(index + 1)]) for index, name in ((1, "B"), (3, "C")))
+        a.children[0].depends.append(c.children[0])
+        for user, used in ((b, c), (c, b)):
+            for mine, theirs in zip(user.children, used.children):
+                mine.depends.append(theirs)
+        self.assertEqual([node.title for node in wiki.dependency_order([a, b, c])], ["B", "C", "A"])
+
+    def test_a_single_article_that_needs_a_sub_page_follows_the_pages(self):
+        p, q = (wiki.Container(name, name.lower(), [_target(index)]) for index, name in enumerate("PQ"))
+        s, t, u = _target(2), _target(3), _target(4)
+        p.children[0].depends += [s, t, u]
+        s.depends.append(q.children[0])
+        t.depends.append(s)
+        self.assertEqual([node.title for node in wiki.dependency_order([p, q, s, t, u])], ["Result 4", "P", "Q", "Result 2", "Result 3"])
+
+    def test_a_namesake_article_that_uses_a_sibling_topic_follows_it(self):
+        placements = {**TAXONOMY["placements"], "MathlibExt/Geometry/Convexity": {"to": "Geometry/convex", "title": "Convex geometry"}}
+        targets = [_target(index, module=f"MathlibExt/Geometry/{module}") for index, module in enumerate(["Convexity", "Convexity", "Sofa", "Sofa"])]
+        targets[1].depends.append(targets[2])
+        (convex,) = wiki.subject_tree("Geometry", targets, {**TAXONOMY, "placements": placements}).children
+        self.assertEqual([child.title for child in convex.children], ["Result 0", "Moving sofa problem", "Result 1"])
+
+    def test_lists_in_dependency_order_number_their_parts(self):
+        for directory in ("Hull", "Hull/Planar"):
+            with self.subTest(directory=directory):
+                targets = [_target(2 * index + half, module=f"CSLibExt/Geometry/{directory}/M{index:02d}") for index in range(21) for half in (0, 1)]
+                (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
+                (topic,) = field.children
+                self.assertEqual([part.title for part in topic.children], ["Part 1 of 2", "Part 2 of 2"])
+        placements = {f"MathlibExt/Geometry/T{index:02d}": {"to": "Geometry/convex", "title": f"Topic {index:02d}"} for index in range(21)}
+        targets = [_target(2 * index + half, module=f"MathlibExt/Geometry/T{index:02d}") for index in range(21) for half in (0, 1)]
+        (convex,) = wiki.subject_tree("Geometry", targets, {**TAXONOMY, "placements": placements}).children
+        self.assertEqual([part.title for part in convex.children], ["Part 1 of 2", "Part 2 of 2"])
+        nested = wiki.chunk("Geometry", "geometry", [_target(index) for index in range(401)], ranges=False)
+        self.assertEqual(nested.children[0].children[0].title, "Part 1 of 20")
+
     def test_an_unplaced_module_is_listed_as_not_yet_classified(self):
         targets = [_target(0, module="MathlibExt/Geometry/NewTopic"), _target(1, module="MathlibExt/Geometry/NewTopic")]
         (field,) = wiki.subject_tree("Geometry", targets, TAXONOMY).children
@@ -270,6 +334,47 @@ This section studies the distances determined by finite point configurations.
             with patch.object(wiki, "ROADMAP", roadmap):
                 self.assertEqual(wiki.ids_by_lean(), {"Falconer.result0": "af_000000000000000000000002"})
 
+
+    def test_a_declaration_that_stays_in_its_folder_keeps_its_file_name(self):
+        # first has no Lean name, so it goes by source and title; twin repeats second's Lean name.
+        first, second, moved, renamed, twin = _target(0), _target(1), _target(2), _target(3), _target(1)
+        first.lean, first.source = None, ("MathlibExt, MathlibExt.HasseBoundWanted", Path("sources/v2/MathlibExt.md"))
+        for target in (first, second, moved, twin):
+            target.slug = "hasse-bound"
+        renamed.slug = "kraft"
+        directory = wiki.ROADMAP / "AlgebraicGeometry/hasse-bound"
+        kept = {wiki.page_key(first): directory / "hasse-bound-3.md", second.lean: directory / "hasse-bound.md",
+                moved.lean: wiki.ROADMAP / "Elsewhere/hasse-bound-5.md", renamed.lean: directory / "hasse-bound-4.md"}
+        page = wiki.Container("Hasse bound", "hasse-bound", [first, second, moved, renamed, twin])
+        wiki.assign_paths(page, directory, kept)
+        self.assertEqual([target.path.name for target in (first, second, moved, renamed, twin)],
+                         ["hasse-bound-3.md", "hasse-bound.md", "hasse-bound-2.md", "kraft.md", "hasse-bound-4.md"])
+
+    def test_pages_are_found_by_lean_name(self):
+        with tempfile.TemporaryDirectory() as folder:
+            roadmap = Path(folder) / "roadmap"
+            page = roadmap / "Geometry/MathlibExt/falconer/result-0-2.md"
+            page.parent.mkdir(parents=True)
+            page.write_text("---\ndeclaration: theorem\nlean: Falconer.result0\n---\n# Result 0\n")
+            for twice in ("a.md", "b.md"):
+                (page.parent / twice).write_text("---\nlean: Falconer.result1\n---\n# Result 1\n")
+            (page.parent / "README.md").write_text("# Falconer\n")
+            with patch.object(wiki, "ROADMAP", roadmap):
+                self.assertEqual(wiki.pages_by_lean(), {"Falconer.result0": page})
+
+    def test_a_page_is_found_again_by_its_lean_name_or_else_its_source_and_title(self):
+        named, unnamed, twin = _target(0), _target(1), _target(2)
+        unnamed.lean = twin.lean = None
+        twin.title = unnamed.title
+        for target, module in ((named, "A"), (unnamed, "B"), (twin, "C")):
+            target.source = (f"MathlibExt, MathlibExt.{module}", Path("sources/v2/MathlibExt.md"))
+        with tempfile.TemporaryDirectory() as folder:
+            with patch.object(wiki, "VAULT", Path(folder)), patch.object(wiki, "ROADMAP", Path(folder) / "roadmap"):
+                for target in (named, unnamed, twin):
+                    target.path = wiki.ROADMAP / f"Geometry/{target.slug}.md"
+                    target.path.parent.mkdir(parents=True, exist_ok=True)
+                    target.path.write_text(wiki.render_target(target, None))
+                self.assertEqual(wiki.pages_by_lean(), {wiki.page_key(target): target.path for target in (named, unnamed, twin)})
 
 if __name__ == "__main__":
     unittest.main()
