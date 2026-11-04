@@ -92,6 +92,7 @@ WANTED = {"theorem_wanted": "theorem", "def_wanted": "def"}
 # A bold name may hold a lone asterisk, as in "A\* search" or "$c_0^*$"; it ends at the first "**".
 BOLD_TITLE = re.compile(r"^\*\*(?P<title>(?:[^*]|\*(?!\*))+)\*\*")
 ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
+COMMENT_DELIMITER = re.compile(r"/-|-/")
 MATH_SPAN = re.compile(
     r"(?s)(?<!\\)(?P<dollars>\${1,2}).*?(?<!\\)(?P=dollars)|\\\(.*?\\\)|\\\[.*?\\\]"
 )
@@ -185,19 +186,28 @@ def without_comments(text: str) -> str:
 
 
 def docstring_before(lines: list[str], number: int) -> str | None:
-    """The `/-- ... -/` docstring attached to the declaration on line `number`."""
+    """The `/-- ... -/` docstring attached to the declaration on line `number`.
+
+    Only the comment that closes just above the declaration counts, found by
+    matching nested `/-` and `-/` as Lean does: a `/-!` heading or a plain
+    comment there means the declaration has no docstring, and the search must
+    not run past it to an earlier docstring.
+    """
     end = number - 1
     while end >= 0 and (not lines[end].strip() or lines[end].lstrip().startswith("@[")):
         end -= 1
     if end < 0 or not lines[end].rstrip().endswith("-/"):
         return None
-    start = end
-    while start >= 0 and "/--" not in lines[start]:
-        start -= 1
-    if start < 0:
-        return None
-    block = "\n".join(lines[start : end + 1])
-    return textwrap.dedent(block[block.index("/--") + 3 : block.rindex("-/")]).strip() or None
+    depth = 0
+    for start in range(end, -1, -1):
+        for match in reversed(list(COMMENT_DELIMITER.finditer(lines[start]))):
+            depth += 1 if match.group() == "-/" else -1
+            if depth == 0:
+                if not lines[start].startswith("/--", match.start()):
+                    return None
+                block = "\n".join(lines[start : end + 1])
+                return textwrap.dedent(block[match.start() + 3 : block.rindex("-/")]).strip() or None
+    return None
 
 
 def humanize(name: str) -> str:
