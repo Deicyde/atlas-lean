@@ -58,7 +58,7 @@ class Buckets(unittest.TestCase):
 class Mutual(unittest.TestCase):
     def test_mutual_definitions_drop_their_edges_to_each_other(self) -> None:
         found = run_extract(
-                            [row("E", "def", [], []), row("Win", "def", [], ["Lose", "E"]), row("Lose", "def", [], ["Win"])],
+            [row("E", "def", [], []), row("Win", "def", [], ["Lose", "E"]), row("Lose", "def", [], ["Win"])],
             ["E", "Win", "Lose"])
         self.assertEqual((found["Win"]["statement"], found["Lose"]["statement"]), (["E"], []))
 
