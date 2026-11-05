@@ -38,5 +38,18 @@ class DocstringBefore(unittest.TestCase):
         self.assertIsNone(doc("def a := 1\n\ndef b := 2"))
 
 
+class SafeMathMarkdown(unittest.TestCase):
+    def test_plain_text_math_is_not_a_link(self) -> None:
+        self.assertEqual(wiki.safe_math_markdown("⟨f,g⟩ = ∑ [x^{λ+δ}](a_δ f) [x^{λ+δ}](a_δ g)."),
+                         "⟨f,g⟩ = ∑ [x^{λ+δ}]&#40;a_δ f) [x^{λ+δ}]&#40;a_δ g).")
+
+    def test_links_stay_links(self) -> None:
+        text = "See [the paper](https://arxiv.org/abs/1), [above](#proof) and [the group](../groups/group.md#def)."
+        self.assertEqual(wiki.safe_math_markdown(text), text)
+
+    def test_math_spans_are_left_to_the_math_renderer(self) -> None:
+        self.assertEqual(wiki.safe_math_markdown("$[a](b) <c$"), "$[a](b) \\lt c$")
+
+
 if __name__ == "__main__":
     unittest.main()

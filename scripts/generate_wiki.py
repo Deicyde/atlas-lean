@@ -98,6 +98,8 @@ WANTED = {"theorem_wanted": "theorem", "def_wanted": "def"}
 BOLD_TITLE = re.compile(r"^\*\*(?P<title>(?:[^*]|\*(?!\*))+)\*\*")
 ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
 COMMENT_DELIMITER = re.compile(r"/-|-/")
+LINK_SYNTAX = re.compile(r"\[([^\]\n]*)\]\(([^)\n]*)\)")
+LINK_TARGET = re.compile(r"(?:[a-z][a-z0-9+.-]*:|#)\S*|[^\s()]+\.(?:md|html)(?:#\S*)?")
 MATH_SPAN = re.compile(
     r"(?s)(?<!\\)(?P<dollars>\${1,2}).*?(?<!\\)(?P=dollars)|\\\(.*?\\\)|\\\[.*?\\\]"
 )
@@ -178,12 +180,20 @@ def chunk(title: str, slug: str, children: list, ranges: bool = True) -> Contain
 
 
 def safe_math_markdown(text: str) -> str:
-    """Keep TeX comparisons from opening raw-HTML tags inside site cards."""
+    """Keep TeX comparisons from opening raw-HTML tags inside site cards, and plain-text
+    math that reads as Markdown link syntax, such as [x^{λ+δ}](a_δ f), from becoming a link."""
 
-    return MATH_SPAN.sub(
-        lambda span: re.sub(r"<(?=[A-Za-z_\\])", r"\\lt ", span.group()),
-        text,
-    )
+    out, at = [], 0
+    for span in MATH_SPAN.finditer(text):
+        out += [not_a_link(text[at : span.start()]), re.sub(r"<(?=[A-Za-z_\\])", r"\\lt ", span.group())]
+        at = span.end()
+    return "".join(out) + not_a_link(text[at:])
+
+
+def not_a_link(text: str) -> str:
+    """Keep [text](target) a link only when the target is a URL, a fragment or a page. A backslash
+    can't escape it: \\[ and \\( open math here, so the parenthesis becomes an entity."""
+    return LINK_SYNTAX.sub(lambda m: m.group() if LINK_TARGET.fullmatch(m.group(2)) else f"[{m.group(1)}]&#40;{m.group(2)})", text)
 
 
 def without_comments(text: str) -> str:
