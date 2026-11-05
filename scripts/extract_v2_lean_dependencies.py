@@ -33,7 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "blueprint" / "sources" / "v2" / "lean-dependencies.json"
 ROADMAP = ROOT / "blueprint" / "roadmap"
-LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "WantedExt"})
+LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "PhyslibExt", "WantedExt"})
 LEAN = re.compile(r"^lean:\s*(.+?)\s*$", re.MULTILINE)
 # A definition is its body and an inductive type its constructors, so their values are part of the statement.
 STATEMENT_VALUE = frozenset({"def", "inductive"})

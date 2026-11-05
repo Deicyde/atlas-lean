@@ -3,9 +3,9 @@
 
     python scripts/generate_wiki.py    write the pages and blueprint/pages.json
 
-ATLAS v2 is the root Lake package: every public MathlibExt, CSLibExt
-and WantedExt declaration with a docstring becomes one article whose statement
-is that docstring. Theorems are proved and definitions defined unless their
+ATLAS v2 is the root Lake package: every public MathlibExt, CSLibExt,
+PhyslibExt and WantedExt declaration with a docstring becomes one article whose
+statement is that docstring. Theorems are proved and definitions defined unless their
 module contains `sorry`; `theorem_wanted` entries are stated results waiting
 for a proof, and `def_wanted` entries stay unstated, because Autoform counts a
 stated definition as defined.
@@ -82,6 +82,10 @@ LIBRARIES = {
             "Logics": "Logic",
             "MachineLearning": "ComputerScience",
         },
+    ),
+    "PhyslibExt": (
+        "Reusable, fully proved physics developments that extend Physlib.",
+        {"CondensedMatter": "StatisticalMechanics", "StatisticalMechanics": "StatisticalMechanics"},
     ),
     "WantedExt": (
         "Established results whose Lean implementation or proof is deferred.",
@@ -1018,14 +1022,12 @@ def generate() -> dict[Path, str]:
             )
         )
     coverage = v2_coverage + [
-        ("v2 tests (MathlibExtTest, CSLibExtTest)", "OUT", "Tests and diagnostics rather than mathematical results."),
+        ("v2 tests (MathlibExtTest, CSLibExtTest, PhyslibExtTest)", "OUT", "Tests and diagnostics rather than mathematical results."),
         # No file counts: the Pages build leaves Atlas/ out of its checkout.
         ("Atlas/StatisticalMechanics", "MAPPED", "Standalone Lean files; no roadmap articles yet."),
         ("Atlas/FC", "MAPPED", "Standalone Lean files; no roadmap articles yet."),
         ("Atlas/CPythonListsort", "OUT", "Maintained as its own Autoform blueprint inside Atlas/CPythonListsort."),
     ]
-    if (ROOT / "PhyslibExt").is_dir():
-        coverage.append(("v2 / PhyslibExt", "MAPPED", "A v2 library the wiki does not cover yet; its articles need taxonomy placements."))
     root = ROADMAP / "README.md"
     files[root] = render_roadmap_root(taxonomy, subjects, previous(root))
     # The map draws one region per area, with its subjects inside.

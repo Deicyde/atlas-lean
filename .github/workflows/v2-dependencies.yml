@@ -23,6 +23,7 @@ on:
       - "blueprint/sources/v2/lean-dependencies.json"
       - "MathlibExt/**"
       - "CSLibExt/**"
+      - "PhyslibExt/**"
       - "WantedExt/**"
       - "lake-manifest.json"
       - "lean-toolchain"
@@ -70,7 +71,7 @@ jobs:
           git fetch --quiet --depth=1 origin "$BASE"
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
           if grep -qE \
-            -e '^(MathlibExt|CSLibExt|WantedExt)/' \
+            -e '^(MathlibExt|CSLibExt|PhyslibExt|WantedExt)/' \
             -e '^blueprint/sources/v2/lean-dependencies\.json$' \
             -e '^scripts/(dump_v2_dependencies\.lean|extract_v2_lean_dependencies\.py|generate_wiki\.py)$' \
             -e '^\.github/(autoform-ref|workflows/v2-dependencies\.yml)$' \
@@ -141,7 +142,7 @@ jobs:
           # The runner's shell has -e on; turn it off so a failed module still
           # lets the dump step run.
           set +e -uo pipefail
-          lake build MathlibExt CSLibExt WantedExt 2>&1 | tee build.log
+          lake build MathlibExt CSLibExt PhyslibExt WantedExt 2>&1 | tee build.log
           echo "lake build exit: ${PIPESTATUS[0]}"
           grep -E '^(✖|error:)' build.log > build-failures.txt || true
           cat build-failures.txt
@@ -165,7 +166,7 @@ jobs:
           [ -d "$olean_root" ] || olean_root=.lake/build/lib
           : > v2-modules.txt
           : > v2-unbuilt.txt
-          for source in $(git ls-files 'MathlibExt/*.lean' 'CSLibExt/*.lean' 'WantedExt/*.lean'); do
+          for source in $(git ls-files 'MathlibExt/*.lean' 'CSLibExt/*.lean' 'PhyslibExt/*.lean' 'WantedExt/*.lean'); do
             module=$(echo "${source%.lean}" | tr / .)
             if [ -f "$olean_root/${source%.lean}.olean" ]; then
               echo "$module" >> v2-modules.txt
