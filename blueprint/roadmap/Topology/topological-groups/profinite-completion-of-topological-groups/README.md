@@ -1,6 +1,6 @@
 # Profinite completion of topological groups
 
-- [Open finite-index normal subgroups](index.md)
+- [Open finite-index normal subgroups](index-2.md)
 - [Diagram of finite quotients](finite-grp-diagram.md)
 - [Diagram of finite quotients as profinite groups](diagram.md)
 - [Open profinite completion of a group](completion.md)

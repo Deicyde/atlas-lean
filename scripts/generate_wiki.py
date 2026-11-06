@@ -131,6 +131,11 @@ class Container:
     groups: list[str] | None = None
 
 
+# MkDocs serves a folder's README.md as its index.md, and a case-insensitive disk
+# holds readme.md and README.md as one file, so no page takes either name.
+RESERVED_SLUGS = frozenset({"index", "readme"})
+
+
 def slugify(text: str, limit: int = 48) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
     return slug[:limit].rstrip("-") or "untitled"
@@ -682,7 +687,7 @@ def assign_paths(node: Container, directory: Path, kept: dict[str, Path] | None 
     declaration that stays in its folder keeps its file name (``kept``, by Lean
     name), so reordering siblings never hands its URL to another."""
     node.path = directory / "README.md"
-    taken: set[str] = set()
+    taken: set[str] = set(RESERVED_SLUGS)
     staying: set[int] = set()
     for child in node.children:
         before = (kept or {}).get(page_key(child)) if isinstance(child, Target) else None

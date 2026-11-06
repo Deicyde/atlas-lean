@@ -354,7 +354,7 @@ def apply_declarations(targets: list, index) -> dict[str, list[str]]:
             while not (folder / "README.md").is_file() and folder != wiki.ROADMAP:
                 folder = folder.parent
         name, number = target.slug, 1
-        while (folder / f"{name}.md").exists():
+        while name in wiki.RESERVED_SLUGS or (folder / f"{name}.md").exists():
             number += 1
             name = f"{target.slug}-{number}"
         target.path = folder / f"{name}.md"

@@ -233,6 +233,14 @@ class Declarations(Vault):
         self.assertEqual(rows["wanted.md"]["extensions"],
                          {"org.atlas-wiki": {"from": "docstring", "module": "Ext.Groups", "name": "wanted"}})
 
+    def test_a_new_page_never_takes_the_name_of_its_folder_page(self) -> None:
+        self.page("Algebra/groups/README.md", "# Groups\n")
+        self.page("Algebra/groups/old.md", "# Old\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.old"}}])])
+        index = SimpleNamespace(declarations={"Ext.old": None, "Ext.index": None})
+        targets = [declaration("Ext.old", "old", "Old", "Old."), declaration("Ext.index", "index", "Index", "An index.")]
+        self.assertEqual(sync.apply_declarations(targets, index)["added"], ["Ext.index -> Algebra/groups/index-2.md"])
+
     def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
         self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")

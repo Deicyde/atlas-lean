@@ -358,6 +358,14 @@ This section studies the distances determined by finite point configurations.
         self.assertEqual([target.path.name for target in (first, second, moved, renamed, twin)],
                          ["hasse-bound-3.md", "hasse-bound.md", "hasse-bound-2.md", "kraft.md", "hasse-bound-4.md"])
 
+    def test_no_page_takes_the_name_of_its_folder_page(self):
+        index, readme = _target(0), _target(1)
+        index.slug, readme.slug = "index", "readme"
+        directory = wiki.ROADMAP / "NumberTheory/multiple-zeta-indices"
+        page = wiki.Container("Multiple-zeta indices", "multiple-zeta-indices", [index, readme])
+        wiki.assign_paths(page, directory, {index.lean: directory / "index.md"})
+        self.assertEqual([index.path.name, readme.path.name], ["index-2.md", "readme-2.md"])
+
     def test_pages_are_found_by_lean_name(self):
         with tempfile.TemporaryDirectory() as folder:
             roadmap = Path(folder) / "roadmap"

@@ -1,6 +1,6 @@
 # Multiple-zeta indices
 
-- [Multiple-zeta index](index.md)
+- [Multiple-zeta index](index-2.md)
 - [Entries of an index](entries.md)
 - [Weight of an index](weight.md)
 - [Depth of an index](depth.md)

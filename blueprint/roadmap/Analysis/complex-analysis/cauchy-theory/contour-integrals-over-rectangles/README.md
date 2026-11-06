@@ -28,6 +28,6 @@
 - [Cauchy–Goursat theorem for rectilinear cycles](integral-eq-zero-of-filling-supported-in.md)
 - [Rectilinear cycles homologous in a set](homologous-in.md)
 - [Homologous rectilinear cycles have equal integrals](integral-eq-of-homologous-in.md)
-- [Index of a rectilinear cycle](index.md)
+- [Index of a rectilinear cycle](index-2.md)
 - [Winding index as an additive map](index-add-hom.md)
 - [Rectangle index vanishes outside the rectangle](index-of-rectangle-eq-zero-of-not-mem-ca.md)
