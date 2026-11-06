@@ -301,6 +301,7 @@ jobs:
           python -m unittest
           scripts.test_generate_wiki_navigation
           scripts.test_generate_wiki_docstrings
+          scripts.test_sync_wiki
           scripts.test_extract_v2_lean_dependencies
           scripts.test_check_blueprint_site_navigation
 
