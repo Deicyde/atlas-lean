@@ -18,9 +18,11 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from autoform_cli.lean import index_project
+
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
-# An article's first source names its v2 library and module.
-LIBRARY_SOURCE = re.compile(r"^- \[(MathlibExt|CSLibExt|WantedExt), ", re.M)
+# The v2 libraries the audit covers.
+TRACKS = {"MathlibExt", "CSLibExt", "WantedExt"}
 
 
 def humanize(name: str) -> str:
@@ -50,13 +52,14 @@ def parse(path: Path) -> dict | None:
     return {"front": front, "title": title_match.group(1).strip(), "statement": statement, "sections": sections}
 
 
-def track(article: dict) -> str | None:
-    """The v2 library an article belongs to; None for a page that cites none, which is not an article."""
-    match = LIBRARY_SOURCE.search(article["sections"].get("Sources", ""))
-    return match.group(1) if match else None
+def libraries(repo: Path) -> dict[str, str]:
+    """Each declaration's v2 library: the top directory of the file Autoform's index finds it in."""
+    index = index_project(repo, exclude_roots=("v1", "Atlas"))
+    return {name: declaration.path.parts[0] for name, declaration in index.declarations.items()}
 
 
-def lint(roadmap: Path, subject: str | None) -> list[dict]:
+def lint(roadmap: Path, subject: str | None, library: dict[str, str]) -> list[dict]:
+    """library maps a Lean name to its v2 library; an article whose declaration is in none of TRACKS is skipped."""
     records = []
     for path in sorted(roadmap.rglob("*.md")):
         if path.name == "README.md":
@@ -65,11 +68,13 @@ def lint(roadmap: Path, subject: str | None) -> list[dict]:
         if subject and relative.parts[0] != subject:
             continue
         article = parse(path)
-        kind = track(article) if article else None
-        if kind is None:
+        if article is None:
             continue
         front, title, statement = article["front"], article["title"], article["statement"]
         lean = front.get("lean", "")
+        kind = library.get(lean)
+        if kind not in TRACKS:
+            continue
         short = lean.rsplit(".", 1)[-1] if lean else ""
         flags = []
         plain = " ".join(statement.split())
@@ -128,7 +133,7 @@ def main() -> int:
     parser.add_argument("--subject")
     parser.add_argument("--json", type=Path)
     args = parser.parse_args()
-    records = lint(args.roadmap, args.subject)
+    records = lint(args.roadmap, args.subject, libraries(args.roadmap.resolve().parents[1]))
     if args.json:
         args.json.write_text("".join(json.dumps(record) + "\n" for record in records))
     per_track = Counter(record["track"] for record in records)
