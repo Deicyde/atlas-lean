@@ -1,6 +1,6 @@
 # Counting complexity
 
-#P and PP: #P-completeness (counting SAT, permanent), PP-completeness, Toda's theorem, threshold languages, and approximate counting algorithms and schemes (Stockmeyer, Karp–Luby, Jerrum–Sinclair–Vigoda).
+\#P and PP: #P-completeness (counting SAT, permanent), PP-completeness, Toda's theorem, threshold languages, and approximate counting algorithms and schemes (Stockmeyer, Karp–Luby, Jerrum–Sinclair–Vigoda).
 
 - [Complexity of the permanent](complexity-of-the-permanent/README.md)
 - [Counting satisfiability (#SAT)](counting-satisfiability-sat/README.md)
